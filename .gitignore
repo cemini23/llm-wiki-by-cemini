@@ -1,0 +1,42 @@
+# =============================================================================
+# Cemini OSINT Research Workspace — .gitignore
+# =============================================================================
+# Tracked: CLAUDE.md, LESSONS.md, README.md, wiki/, scripts/, .gitignore
+# Untracked: raw sources, market data, briefs, server credentials, OS cruft
+# =============================================================================
+
+# --- Raw sources (large, copyrighted, immutable; live local only) ------------
+research for cemini/
+research to be indexed/
+market dataset/
+
+# --- Outputs staged for distribution (operational; contain server IPs) -------
+briefs/
+
+# --- Server credentials & connection details (local-only) --------------------
+.local/
+
+# --- Claude Code per-project settings (contains allow-listed IPs) ------------
+.claude/settings.local.json
+
+# --- macOS / editor cruft -----------------------------------------------------
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# --- Temp scratch -------------------------------------------------------------
+/tmp_*.txt
+/tmp_*.md
+*.tmp
