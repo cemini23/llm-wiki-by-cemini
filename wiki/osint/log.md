@@ -8,6 +8,85 @@ Newest entries on top.
 
 ---
 
+## [2026-04-25] capability | Exa MCP wired in — external research now first-class
+
+The wiki gains an external-research tool path. Until today, "search the
+wiki first, raw sources second, external sources last" had no defined
+external-source mechanism — `WebFetch` / `WebSearch` were available but
+not part of the schema. Now they are, via Exa MCP, with `crawling_exa`
+giving us LLM-clean primary-source text on demand.
+
+### What was actually done
+
+1. **Plugin install** — `claude plugin marketplace update claude-plugins-official`
+   then `claude plugin i exa@claude-plugins-official` (v3.3.8, scope: user,
+   status: enabled). Provides the `exa:search` orchestrator skill.
+2. **MCP server registration via API key** — the plugin's MCP server
+   stayed stuck in `mcp-needs-auth-cache.json` (OAuth flow not completed).
+   Bypassed via `claude mcp add --transport http exa "https://mcp.exa.ai/mcp?exaApiKey=...&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,company_research_exa,people_search_exa,deep_researcher_start,deep_researcher_check"`.
+   Registration landed in `~/.claude/.claude.json` user-scope, project-
+   pinned to this workspace path. After Claude Code restart, all 8
+   `mcp__exa__*` tools surfaced in the deferred-tool registry. The
+   plugin's OAuth-required server still appears in `claude mcp list` as
+   `plugin:exa:exa` (status: needs auth) — harmless duplicate listing.
+3. **Smoke test** — `mcp__exa__web_search_exa` query on "CFTC Enforcement
+   Advisory issued February 25 2026 regarding material non-public
+   information MNPI" returned the **primary-source URL**
+   `https://www.cftc.gov/media/13351/Enf_AdvisoryKalshi022526/download` for
+   the exact advisory cited in `sources/3-19-compliance-research.md`.
+   The wiki had the date and topic but not the document URL — Exa
+   discovered it on query #1. Candidate follow-up: `crawling_exa` that
+   URL into the compliance source's `## Snippets` to convert the
+   currently-paraphrased CFTC claim into verifiable text.
+4. **`CLAUDE.md` schema update** — new section `## External research —
+   Exa MCP` inserted between Lint and Distribution rules. Maps each of
+   the 8 tools to its workflow role, then describes integration into
+   each operation (Ingest / Query OOD signal / Lint NEEDS-VERIFICATION
+   tag resolution). Cost-discipline note: default `numResults: 3–5`,
+   reserve `deep_researcher_*` for legitimate multi-source synthesis.
+5. **Working-method rule update** — "External sources last" amended to
+   "External sources last (via Exa MCP — see External research section)"
+   so the rule now points to the mechanism.
+6. **Path correction** — `/tmp/index_tickers.py` reference in the per-
+   ticker research thread updated to `scripts/index_tickers.py`
+   (script was relocated yesterday).
+
+### Why this matters
+
+Three workflow upgrades, in increasing order of leverage:
+
+1. **URL-cited claims become verifiable**. Today many `## Snippets`
+   sections cite URLs but contain only paraphrased text. With
+   `crawling_exa` we can populate verbatim primary-source text for any
+   URL-cited claim at the cost of one MCP call.
+2. **OOD answers stop being terminal**. Previously, when a query hit a
+   wiki gap, the response was "we don't have that, want to ingest?"
+   Now the response can be "we don't have that — Exa returned X, here's
+   the synthesis, want me to file it as a new source page?"
+3. **`[NEEDS VERIFICATION]` tags become resolvable in-loop**. Lint
+   passes can now upgrade or retract claims live, rather than queueing
+   them as future work.
+
+### Lint state delta
+
+| Metric | Before | After | Δ |
+| --- | --- | --- | --- |
+| Tracked schema operations | 3 (Ingest / Query / Lint) | 4 (+ External research) | +1 |
+| Available MCP tools (Exa) | 0 | 8 | +8 |
+| Workflow rules referencing Exa | 0 | 4 (Ingest / Query / Lint / Working method) | +4 |
+
+### Candidate follow-ups (deferred)
+
+- `crawling_exa` the CFTC Kalshi MNPI advisory URL into
+  `sources/3-19-compliance-research.md` `## Snippets` and bump the
+  cite from paraphrase to verbatim.
+- Audit `wiki/sources/*.md` for URL-cited claims with no corresponding
+  `## Snippets` entries; queue a batch `crawling_exa` pass.
+- Extend `scripts/wiki_lint.py` to flag `[NEEDS VERIFICATION]` claims
+  older than N days as Exa-resolution candidates.
+
+---
+
 ## [2026-04-25] structural | git scaffold — workspace now version-controlled
 
 User approved turning the workspace into a private GitHub repo for backup

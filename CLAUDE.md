@@ -198,6 +198,30 @@ Run on request. Look for:
 - **Bidirectional gaps** — A lists B as related but B doesn't list A. Fix both sides.
 - **Unread source stubs** that keep getting cited — promote with a real read pass.
 
+## External research — Exa MCP
+
+When the wiki + raw sources can't answer a query, or when a source cites URLs that haven't been verified, the **Exa MCP server** is the canonical external-research path. Eight tools available, scoped by purpose:
+
+| Tool | When to use |
+| --- | --- |
+| `mcp__exa__web_search_exa` | Quick targeted lookup — fact-check, find a primary source URL, news monitoring. |
+| `mcp__exa__web_search_advanced_exa` | Date-bounded, domain-scoped, or category-filtered (papers, news). Use when `web_search_exa` returns too much noise. |
+| `mcp__exa__crawling_exa` | Pull clean LLM-friendly content from a known URL — turns `[Source: https://...]` into verifiable text suitable for `## Snippets`. |
+| `mcp__exa__company_research_exa` | Ticker watchlist gap-fills and entity expansion. Supplements (does not replace) the Gemini Deep Research canonical narrative. |
+| `mcp__exa__people_search_exa` | Founder, exec, key-personnel discovery for ticker / company entity pages. |
+| `mcp__exa__deep_researcher_start` / `_check` | Async multi-step research jobs — useful for novel concept-page bootstrapping when many search angles are needed. |
+| `mcp__exa__get_code_context_exa` | Library / SDK source-code context — useful when fleshing out Cemini-stack entity pages (FastAPI patterns, pykalshi internals, etc.). |
+
+Workflow integration:
+
+- **Ingest** — when a source cites a URL, prefer `crawling_exa` to pull the cited page directly into the source page's `## Snippets` rather than paraphrasing from memory. URL-cited claims gain their primary-source text inline.
+- **Query (OOD signal)** — before declaring a wiki gap, run a `web_search_exa`. If results converge, ingest the best 1-2 hits as new source pages and answer from those. If they diverge, file a brief noting the disagreement and offer an ingest plan.
+- **Lint** — `[NEEDS VERIFICATION]` tags should trigger an Exa cross-check before being upgraded to `[CONFIRMED]` or moved to `[RETRACTED]`. `web_search_exa` for the claim text first; if a primary URL turns up, follow with `crawling_exa` for verifiable text.
+
+Cost discipline: Exa is a paid API (key in `~/.claude/.claude.json` user-scope, never committed). Default `numResults: 3–5` for routine queries; scale up only when a single sweep clearly under-covers the question. The `deep_researcher_*` tools spend more — reserve for legitimate multi-source synthesis tasks, not single-fact lookups.
+
+The `exa:search` skill (from the `exa@claude-plugins-official` plugin) is a higher-level orchestrator that fans out across parallel subagents — use it for genuinely complex research questions where the workflow above isn't enough.
+
 ## Distribution rules
 
 Material ready to leave the wiki goes through `briefs/` first:
@@ -207,7 +231,7 @@ Material ready to leave the wiki goes through `briefs/` first:
 
 ## Working method
 
-- Search the wiki first. Raw sources second. External sources last.
+- Search the wiki first. Raw sources second. External sources last (via Exa MCP — see "External research" section).
 - Prefer paraphrase + cite over raw quote. Quotes go in `## Snippets` with full citation.
 - When stress-testing a claim, actively look for disconfirming evidence.
 - Flag single-source claims explicitly.
@@ -215,7 +239,7 @@ Material ready to leave the wiki goes through `briefs/` first:
 
 ## Active research threads
 
-- **CeminiSuite per-ticker research** — active. Canonical format is the **Gemini Deep Research template** (six sections: Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context). Watchlist (30 tickers — 2026-04-24 even +5 / −5 rebalance against the server baseline: added ASTS, GLW, INTC, PL, SOFI; removed MARA, JPM, BAC, GS, UBER with Financials category sunset, new Fintech category) at `wiki/entities/ticker-watchlist.md`. Indexed reports at `wiki/entities/tickers/<symbol>.md`. **Progress: 21 / 30** (AAPL, AMD, AMZN, ASTS, AVGO, BTC, COIN, DIS, ETH, GLW, GOOGL, INTC, META, MSFT, MSTR, NFLX, NVDA, PL, PLTR, SMCI, TSLA). Ingest workflow: user drops `<SYMBOL> <date>.docx` into `research to be indexed/` → Claude runs `/tmp/index_tickers.py` → moves source into `research for cemini/` → flips the status row in the watchlist table. **Divergence-from-server rule**: wiki-tracked additions/removals lead the server's `tickers.json`; annotate divergence in the watchlist's "Wiki-tracked divergence" section, apply the combined diff server-side, then re-pull config to restore parity.
+- **CeminiSuite per-ticker research** — active. Canonical format is the **Gemini Deep Research template** (six sections: Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context). Watchlist (30 tickers — 2026-04-24 even +5 / −5 rebalance against the server baseline: added ASTS, GLW, INTC, PL, SOFI; removed MARA, JPM, BAC, GS, UBER with Financials category sunset, new Fintech category) at `wiki/entities/ticker-watchlist.md`. Indexed reports at `wiki/entities/tickers/<symbol>.md`. **Progress: 21 / 30** (AAPL, AMD, AMZN, ASTS, AVGO, BTC, COIN, DIS, ETH, GLW, GOOGL, INTC, META, MSFT, MSTR, NFLX, NVDA, PL, PLTR, SMCI, TSLA). Ingest workflow: user drops `<SYMBOL> <date>.docx` into `research to be indexed/` → Claude runs `scripts/index_tickers.py` → moves source into `research for cemini/` → flips the status row in the watchlist table. **Divergence-from-server rule**: wiki-tracked additions/removals lead the server's `tickers.json`; annotate divergence in the watchlist's "Wiki-tracked divergence" section, apply the combined diff server-side, then re-pull config to restore parity.
 - **Corpus inventory** — 230 stubs generated from `research for cemini/`. Clusters skew heavily to RL/MARL (108) and LLM agents (59). Corpus is research-methodology heavy — math, portfolio strategy, Cemini-internal audits — not ticker- or event-driven.
 
 ## Related — read-only from this workspace
