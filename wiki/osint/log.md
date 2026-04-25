@@ -8,6 +8,65 @@ Newest entries on top.
 
 ---
 
+## [2026-04-25] ingest+structural | G+H: post-Kalshi regulatory ingest + publisher's-exclusion APA/IAA disambiguation split
+
+Combined commit (`8f21f64`) covering two intertwined wiki threads from the same session: (G) ingest-back of the C brief into the wiki proper, and (H) splitting `concepts/publishers-exclusion.md` into APA-sense vs IAA-sense disambiguation per the long-standing Soon-row. Combined because 4 files (`entities/platforms/polymarket.md`, `concepts/ip-sale-readiness.md`, `sources/3-19-compliance-research.md`, `wiki/index.md`) carry hunks from both threads — per-hunk staging would be brittle.
+
+### G — Post-Kalshi-advisory regulatory follow-up
+
+The C brief (`briefs/2026-04-25_post-kalshi-advisory-regulatory-update.md`, gitignored) was a doctrine pressure-test synthesizing 4 parallel date-bounded `web_search_advanced_exa` queries. This pass promotes the load-bearing primary sources into the wiki so future queries can cite them inline.
+
+**4 new pages**:
+- `sources/cftc-anprm-prediction-markets-2026-03-16.md` — RIN 3038-AF65 / FR Doc 2026-05105 / 91 FR 12516, issued Mar 12 (PR 9194-26), FR-published Mar 16, comments due Apr 30. CEA §5c(c)(5)(C) framework with 5 enumerated public-interest activities; Question 19 asks public to define "gaming". Companion DMO Staff Letter 26-08. MindCast public comment explicitly invokes *Loper Bright* against any tightened restriction.
+- `sources/cftc-selig-house-ag-testimony-2026-04-16.md` — Selig prepared remarks (enforcement absolutism, federal counter-suit confirmation) + 4 Q&A lines: Trump-family insider trading (McGovern), sports/event conflation (Vasquez), war contracts (Costa), Hyperliquid retail perp-futures availability (Scott).
+- `sources/cftc-v-arizona-tro-liburdi-2026-04-10.md` — first federal-court ruling in this cycle finding CFTC "likely to ultimately win" on preemption; rejected *Younger* abstention because the United States is itself a party. TRO expired Apr 24; Rule 65 preliminary-injunction phase next.
+- `concepts/dcm-state-preemption.md` — synthesis of the swap-vs-wager structural dispute. 3 verbatim snippets (Liburdi quote, Selig federal counter-suit confirmation, MindCast *Loper Bright* concession), current circuit alignment table, forward-path timeline, architectural significance for Cemini's compliance-leverage-point thesis.
+
+**Modified pages**:
+- `sources/3-19-compliance-research.md` — appended **S20** (CFTC ANPRM primary-source corroboration) after S19 with full FR docket citation, Question 19 framing, ~30 questions across 6 themes, 45-day comment window, 3 architectural-implications bullets including the MindCast *Loper Bright* concession quote, sources block with 4 URLs.
+- `entities/platforms/kalshi.md` — role 3 ("compliance leverage point") expanded with "actively defended by federal counter-suit" qualifier paragraph citing AZ/CT/IL declaratory actions, Liburdi TRO, and the conditional thesis (strengthens conditional on preemption holding through SCOTUS, weakens to state-by-state cascade if SCOTUS sides with states).
+- `entities/platforms/hyperliquid.md` — Selig testimony added with annotation on Rep. Austin Scott (R-GA) Q&A about offshore perp-futures availability (forward-looking commentary, not regulatory action).
+- `entities/platforms/polymarket.md` — 3 new related (cftc-anprm, cftc-selig, dcm-state-preemption) with annotations about Question 19 / Trump-family proximity / federal-vs-state preemption fight extending beyond Kalshi.
+
+### H — Publisher's exclusion APA/IAA split
+
+Long-standing Soon-row from ROADMAP. The phrase "publisher's exclusion" carries two unrelated legal meanings across the corpus: the M&A APA exclusion-schedule mechanic for cherry-picking what gets transferred at acquisition (`@sources/3-19-ip-sale-research.md` body), and the IAA §202(a)(11) bona-fide-publication registration exemption (`@sources/3-19-compliance-research.md` S4). Maintaining one page conflated the two; the split was overdue.
+
+**Operations**:
+- `git mv concepts/publishers-exclusion.md concepts/publishers-exclusion-apa.md` (history preserved). Cleaned up the [NEEDS VERIFICATION 2026-04-24] block on the renamed file — replaced with [RESOLVED 2026-04-25] note pointing to the IAA-sense page and the disambig stub.
+- New `concepts/publishers-exclusion-iaa.md` — IAA §202(a)(11) bona-fide-publication registration exemption with three conditions, *Lowe v. SEC* 472 U.S. 181 (1985) precedent, parallel CFTC Reg 4.14 CTA exemption (15-or-fewer rule), Cemini IP-sale relevance, distinction-from-APA-sense table.
+- New disambig stub at the vacated `concepts/publishers-exclusion.md` path — frontmatter only + routing table between the two senses + quick-routing guidance + history note documenting the 2026-04-25 split.
+- 7 caller pages re-pointed: `entities/data-sources/finnhub.md`, `entities/data-sources/telethon.md`, `sources/3-19-ip-sale-research.md` (simple replace_all to `-apa.md` since the contexts are all APA-carve-out candidates); `entities/platforms/polymarket.md` (-apa rename + G additions); `sources/3-19-compliance-research.md` (renamed to `-iaa.md` since S4 is the IAA citation; `-apa.md` added back to satisfy bidirectional discipline since `-apa.md` keeps compliance-research as its origin source); `concepts/ip-sale-readiness.md` (renamed to `-apa.md`, added `-iaa.md`, §1235 callout updated to mention both senses).
+
+### Index + lint
+
+- `wiki/index.md`: quant-finance cluster `(4)` → `(7)` with 3 CFTC source rows (alphabetically between CEMINI and EBI). M&A / legal section: split single Publisher's exclusion row into 3 (disambig stub + -apa + -iaa) and added new dcm-state-preemption row.
+- `wiki_lint.py` re-run: 1 bidirectional gap surfaced (`-apa.md → 3-19-compliance-research.md` had no matching backlink because the rename only added `-iaa.md`); fixed by adding `-apa.md` to compliance-research's frontmatter `related:` and a parallel Relations bullet. Final state: 0 bidirectional gaps, 0 dangling related links, 0 missing @path body mentions.
+
+### Files (16 total)
+
+```
+A wiki/concepts/dcm-state-preemption.md
+M wiki/concepts/ip-sale-readiness.md
+A wiki/concepts/publishers-exclusion-apa.md  (was: publishers-exclusion.md, via git mv + edits)
+A wiki/concepts/publishers-exclusion-iaa.md
+M wiki/concepts/publishers-exclusion.md      (now disambig stub at vacated path)
+M wiki/entities/data-sources/finnhub.md
+M wiki/entities/data-sources/telethon.md
+M wiki/entities/platforms/hyperliquid.md
+M wiki/entities/platforms/kalshi.md
+M wiki/entities/platforms/polymarket.md
+M wiki/index.md
+M wiki/sources/3-19-compliance-research.md
+M wiki/sources/3-19-ip-sale-research.md
+A wiki/sources/cftc-anprm-prediction-markets-2026-03-16.md
+A wiki/sources/cftc-selig-house-ag-testimony-2026-04-16.md
+A wiki/sources/cftc-v-arizona-tro-liburdi-2026-04-10.md
+```
+554 insertions, 67 deletions. (Note: git lost the rename detection of `publishers-exclusion.md → -apa.md` because the old path got new content immediately; `git log --follow` may not trace through. Acceptable archaeology cost.)
+
+---
+
 ## [2026-04-25] query+brief | C: post-Kalshi-advisory regulatory landscape — Exa pressure-test end-to-end
 
 Closed roadmap item C. Exercised Exa MCP on a substantive research question — *"regulatory developments for prediction-market DCMs since the Feb 25 2026 CFTC Kalshi advisory"* — and filed the synthesis as `briefs/2026-04-25_post-kalshi-advisory-regulatory-update.md` (target: claude.ai).
