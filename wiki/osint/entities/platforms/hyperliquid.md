@@ -8,12 +8,13 @@ related:
   - sources/3-19-compliance-research.md
   - sources/3-19-ip-sale-research.md
   - sources/3-19-langgraph-scatter-gather-financial-analysis.md
+  - sources/cftc-selig-house-ag-testimony-2026-04-16.md
   - concepts/cryptographic-audit-trail.md
   - concepts/ip-sale-readiness.md
   - entities/frameworks/ccxt.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-25
 ---
 
 ## Relations
@@ -22,6 +23,7 @@ updated: 2026-04-23
 - @sources/3-19-compliance-research.md
 - @sources/3-19-ip-sale-research.md
 - @sources/3-19-langgraph-scatter-gather-financial-analysis.md
+- @sources/cftc-selig-house-ag-testimony-2026-04-16.md — Rep. Austin Scott (R-GA) pressed Selig on offshore perpetual-futures availability; Selig signaled CFTC plan to expand perp-futures availability to retail (forward-looking commentary, not regulatory action)
 - @concepts/cryptographic-audit-trail.md
 - @concepts/ip-sale-readiness.md
 - @entities/frameworks/ccxt.md

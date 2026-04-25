@@ -16,15 +16,19 @@ related:
   - sources/kalshi-3-3-29.md
   - sources/kalshi-4-3-29.md
   - sources/osint-prediction-markets-trading-architecture.md
+  - sources/cftc-anprm-prediction-markets-2026-03-16.md
+  - sources/cftc-selig-house-ag-testimony-2026-04-16.md
+  - sources/cftc-v-arizona-tro-liburdi-2026-04-10.md
   - concepts/favorite-longshot-bias.md
   - concepts/macro-weather-regime.md
   - concepts/ip-sale-readiness.md
+  - concepts/dcm-state-preemption.md
   - entities/platforms/polymarket.md
   - entities/data-sources/open-meteo.md
   - concepts/ensemble-weather-forecasting.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-25
 ---
 
 ## Relations
@@ -41,9 +45,13 @@ updated: 2026-04-23
 - @sources/kalshi-3-3-29.md
 - @sources/kalshi-4-3-29.md
 - @sources/osint-prediction-markets-trading-architecture.md
+- @sources/cftc-anprm-prediction-markets-2026-03-16.md — March 12 2026 ANPRM (RIN 3038-AF65); the regulatory signal cascading to DCM Core Principles 3 & 4
+- @sources/cftc-selig-house-ag-testimony-2026-04-16.md — Chairman defended ANPRM agenda + confirmed federal counter-suits vs AZ/CT/IL on the public record
+- @sources/cftc-v-arizona-tro-liburdi-2026-04-10.md — first federal-court ruling in this cycle finding CFTC "likely to ultimately win" on preemption
 - @concepts/favorite-longshot-bias.md
 - @concepts/macro-weather-regime.md
 - @concepts/ip-sale-readiness.md
+- @concepts/dcm-state-preemption.md — the swap-vs-gambling structural dispute that determines whether role 3 (compliance-leverage) survives
 - @entities/platforms/polymarket.md
 - @entities/data-sources/open-meteo.md
 - @concepts/ensemble-weather-forecasting.md
@@ -69,7 +77,17 @@ Cemini it occupies three roles:
 3. **Compliance leverage point** — Kalshi's DCM status means event-contract
    trading sits under CFTC jurisdiction, which is structurally cleaner for
    an IP-sale-to-institutional-buyer story than operating on an unregistered
-   offshore exchange.
+   offshore exchange. **As of 2026-04-25 this status is actively defended by
+   federal counter-suit**: the CFTC has filed declaratory-judgment actions
+   vs. Arizona, Connecticut, and Illinois (confirmed by Chairman Selig in
+   House Ag testimony Apr 16; see `@sources/cftc-selig-house-ag-testimony-2026-04-16.md`),
+   and a D. Ariz. TRO (Liburdi, Apr 10; see `@sources/cftc-v-arizona-tro-liburdi-2026-04-10.md`)
+   found CFTC "likely to ultimately win" on preemption. The thesis
+   strengthens conditional on preemption holding through SCOTUS and weakens
+   to a state-by-state cascade if SCOTUS sides with states. See
+   `@concepts/dcm-state-preemption.md` for the full structural framing and
+   the brief at `briefs/2026-04-25_post-kalshi-advisory-regulatory-update.md`
+   for the synthesis.
 
 Key microstructure facts documented across the corpus: the 2024 election-
 contract ruling cemented Kalshi's regulatory moat; tick sizes are \$0.01 on

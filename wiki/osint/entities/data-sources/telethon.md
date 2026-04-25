@@ -7,7 +7,7 @@ related:
   - sources/3-19-alternative-data-for-prediction-markets-research.md
   - sources/3-19-telegram-discord-research.md
   - entities/frameworks/finbert.md
-  - concepts/publishers-exclusion.md
+  - concepts/publishers-exclusion-apa.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
@@ -18,7 +18,7 @@ updated: 2026-04-23
 - @sources/3-19-alternative-data-for-prediction-markets-research.md
 - @sources/3-19-telegram-discord-research.md
 - @entities/frameworks/finbert.md
-- @concepts/publishers-exclusion.md
+- @concepts/publishers-exclusion-apa.md
 
 ## Raw Concept
 

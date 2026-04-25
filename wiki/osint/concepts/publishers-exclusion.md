@@ -1,63 +1,48 @@
 ---
-title: Publisher's exclusion
+title: "Publisher's exclusion (disambiguation)"
 type: concept
-tags: [concept, legal, m-and-a, licensing]
-keywords: []
+tags: [concept, legal, disambiguation]
+keywords: [publisher's exclusion]
 related:
-  - sources/3-19-compliance-research.md
-  - sources/3-19-ip-sale-research.md
-  - concepts/ip-sale-readiness.md
-  - entities/data-sources/telethon.md
-  - entities/data-sources/finnhub.md
-  - entities/platforms/polymarket.md
+  - concepts/publishers-exclusion-apa.md
+  - concepts/publishers-exclusion-iaa.md
 maturity: validated
-created: 2026-04-23
-updated: 2026-04-24
-disambiguation_pending: true
+created: 2026-04-25
+updated: 2026-04-25
 ---
 
 ## Relations
 
-- @sources/3-19-compliance-research.md
-- @sources/3-19-ip-sale-research.md
-- @concepts/ip-sale-readiness.md
-- @entities/data-sources/telethon.md
-- @entities/data-sources/finnhub.md
-- @entities/platforms/polymarket.md
+- @concepts/publishers-exclusion-apa.md — APA exclusion-schedule sense (M&A contract drafting)
+- @concepts/publishers-exclusion-iaa.md — IAA §202(a)(11) bona-fide-publication sense (registration exemption)
 
 ## Raw Concept
 
-Synthesized across 2 source(s) in the Cemini research corpus that reference this concept directly or by equivalent terminology.
+Disambiguation landing page. The phrase "publisher's exclusion" appears in two distinct legal contexts in the Cemini research corpus, and prior to the 2026-04-25 split a single page was conflating both. This stub routes the reader to whichever sense their query is targeting.
 
 ## Narrative
 
-**[NEEDS VERIFICATION — 2026-04-24 deep-read of `sources/3-19-compliance-research.md`]** This page's title and content document one meaning of the phrase — the **APA exclusion schedule** mechanic for cherry-picking what gets transferred at acquisition. The 3-19 compliance research source uses the same phrase in a **different, distinct legal sense**: the **Investment Advisers Act §202(a)(11) "publisher's exclusion"** that exempts publishers of bona fide financial publications of general and regular circulation from RIA registration when they don't offer individualized advice (with parallel relief under CFTC Regulation 4.14 for CTA registration). These are two different concepts sharing a name. Decision pending: split into two pages (`apa-exclusion-schedule.md` for current content + a new `iaa-publishers-exclusion.md`), or rename + co-locate. See `wiki/sources/3-19-compliance-research.md` § Snippets S4 for the IAA-sense quote.
+Two distinct legal concepts share the surface phrase "publisher's exclusion":
 
-**[CONFIRMED — 2026-04-24 Track C audit] doc-only** — APA legal deliverable (exclusion schedule), not software. No engineering milestone. Gap memo: `briefs/track-c-walk-results.md`.
+| Sense | Page | Legal home | Mechanism | Cemini relevance |
+|---|---|---|---|---|
+| **APA exclusion schedule** | `@concepts/publishers-exclusion-apa.md` | M&A Asset Purchase Agreement contract drafting | Carve-out clause excluding specific components from the asset transfer | Protects deal value by pre-identifying problematic components for exclusion (Telegram alt-data, Finnhub commercial-license features, founder's personal Twitter scraping notes, Polymarket execution layer) |
+| **IAA §202(a)(11)** | `@concepts/publishers-exclusion-iaa.md` | Investment Advisers Act 1940 + parallel CFTC Reg 4.14 | Registration exemption for non-personalized financial publications | Avoids RIA + CTA registration on outright IP sale (see `@sources/3-19-compliance-research.md` S4) |
 
-**Publisher's exclusion** _(APA-schedule sense)_ is the Asset Purchase Agreement mechanism by
-which specific components of the selling entity's stack can be
-**excluded** from the transfer without devaluing the core IP — the
-seller either keeps ownership or shuts the feature down pre-close,
-and the APA explicitly carves it out.
+Both senses share vocabulary ("exclusion" / "exclude") but operate at different layers of the IP-sale stack — the IAA exclusion is a *regulatory* posture (who needs to register), the APA exclusion is a *contractual* mechanic (what gets transferred). They co-exist in the deal architecture without conflict.
 
-### Cemini-specific candidates flagged in the 3-19 compliance research
-1. **Telegram-channel alt-data** (Telethon pipeline) — reputational
-   and user-consent concerns; the acquirer may refuse to inherit.
-2. **Finnhub commercial-license-dependent features** — per-entity
-   license means the acquirer would re-negotiate, which is
-   friction; may be excluded and the feature rebuilt post-close.
-3. **Cemini founder's personal Twitter-scraping research notes** —
-   clearly personal-IP-adjacent; excluded by default.
-4. **Prediction-market execution on Polymarket** — on-chain venue
-   with US-retail-access ambiguity; excluded until the acquirer
-   decides whether to restructure.
+### Quick routing
 
-### How it protects deal value
-Without publisher's exclusion, any problematic component risks being
-used as a price-haircut lever during diligence. Pre-identifying and
-carving out lets the core platform be transferred at full value.
+- If your question is about **registration burden** (RIA, CTA, software-vendor exemption) → `@concepts/publishers-exclusion-iaa.md`
+- If your question is about **what gets sold at acquisition** (asset transfer scope, deal-value protection) → `@concepts/publishers-exclusion-apa.md`
+
+### History
+
+The original `concepts/publishers-exclusion.md` page (created 2026-04-23, validated 2026-04-24) documented only the APA-schedule sense. A `[NEEDS VERIFICATION 2026-04-24]` deep-read note in that page flagged the IAA-sense conflict against `@sources/3-19-compliance-research.md` S4. The 2026-04-25 split:
+1. Renamed the original to `publishers-exclusion-apa.md` (preserves history via `git mv`)
+2. Created the new IAA page at `publishers-exclusion-iaa.md`
+3. Repurposed the original slug as this disambiguation stub
 
 ## Snippets
 
-*(populate as source stubs are deep-read.)*
+*(none — disambiguation stub; substantive snippets live on the two specific-sense pages)*

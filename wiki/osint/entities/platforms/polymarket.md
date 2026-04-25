@@ -9,12 +9,15 @@ related:
   - sources/kalshi-3-3-29.md
   - sources/kalshi-4-3-29.md
   - sources/osint-prediction-markets-trading-architecture.md
+  - sources/cftc-anprm-prediction-markets-2026-03-16.md
+  - sources/cftc-selig-house-ag-testimony-2026-04-16.md
   - concepts/favorite-longshot-bias.md
-  - concepts/publishers-exclusion.md
+  - concepts/publishers-exclusion-apa.md
+  - concepts/dcm-state-preemption.md
   - entities/platforms/kalshi.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-25
 ---
 
 ## Relations
@@ -24,8 +27,11 @@ updated: 2026-04-23
 - @sources/kalshi-3-3-29.md
 - @sources/kalshi-4-3-29.md
 - @sources/osint-prediction-markets-trading-architecture.md
+- @sources/cftc-anprm-prediction-markets-2026-03-16.md — March 12 2026 ANPRM Question 19 will define "gaming" under CEA §5c(c)(5)(C); outcome shapes whether sports-event contracts (Polymarket included) survive at federal level
+- @sources/cftc-selig-house-ag-testimony-2026-04-16.md — Polymarket-Trump-family proximity (Trump Jr. advisor + investor; Truth Social launching competing Truth Predict) raised by Rep. McGovern (D-MA) during testimony
 - @concepts/favorite-longshot-bias.md
-- @concepts/publishers-exclusion.md
+- @concepts/publishers-exclusion-apa.md
+- @concepts/dcm-state-preemption.md — federal-vs-state preemption fight extends beyond Kalshi; Polymarket's on-chain non-DCM status is structurally weaker than Kalshi's
 - @entities/platforms/kalshi.md
 
 ## Raw Concept

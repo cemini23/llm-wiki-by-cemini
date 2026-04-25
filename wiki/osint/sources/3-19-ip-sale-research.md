@@ -32,7 +32,7 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/mappo.md
   - concepts/sbom.md
-  - concepts/publishers-exclusion.md
+  - concepts/publishers-exclusion-apa.md
   - concepts/irc-1235-capital-gains-safe-harbor.md
   - concepts/cryptographic-audit-trail.md
   - concepts/replacement-cost-valuation.md
@@ -73,7 +73,7 @@ updated: 2026-04-24
 - @concepts/ip-sale-readiness.md — top-level synthesis target
 - @concepts/mappo.md
 - @concepts/sbom.md — Open-Source License Compliance Certificate prerequisite
-- @concepts/publishers-exclusion.md — APA-exclusion-schedule sense; the §1221(a)(3) architecture+goodwill framing implicitly requires careful APA exclusion design
+- @concepts/publishers-exclusion-apa.md — APA-exclusion-schedule sense; the §1221(a)(3) architecture+goodwill framing implicitly requires careful APA exclusion design
 - @concepts/irc-1235-capital-gains-safe-harbor.md — this source provides the architecture+goodwill framing; the compliance-research source provides the provisional-patent framing
 - @concepts/cryptographic-audit-trail.md — explicit cite as trust-deficit mitigator for paper-trading results
 - @concepts/replacement-cost-valuation.md — primary valuation methodology recommended for pre-revenue quant IP

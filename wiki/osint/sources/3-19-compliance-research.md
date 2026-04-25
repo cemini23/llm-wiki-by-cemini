@@ -35,14 +35,19 @@ related:
   - concepts/cryptographic-audit-trail.md
   - concepts/macro-weather-regime.md
   - concepts/milestone-ledger.md
-  - concepts/publishers-exclusion.md
+  - concepts/publishers-exclusion-iaa.md
+  - concepts/publishers-exclusion-apa.md
   - concepts/irc-1235-capital-gains-safe-harbor.md
   - concepts/sbom.md
   - concepts/skill-vetting.md
+  - concepts/dcm-state-preemption.md
+  - sources/cftc-anprm-prediction-markets-2026-03-16.md
+  - sources/cftc-selig-house-ag-testimony-2026-04-16.md
+  - sources/cftc-v-arizona-tro-liburdi-2026-04-10.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-25
 ---
 
 ## Relations
@@ -78,10 +83,15 @@ updated: 2026-04-24
 - @concepts/cryptographic-audit-trail.md — pymerkle + OpenTimestamps Bitcoin anchoring of debate logs
 - @concepts/macro-weather-regime.md
 - @concepts/milestone-ledger.md
-- @concepts/publishers-exclusion.md `[NEEDS VERIFICATION 2026-04-24]` — page currently documents APA exclusion-schedule mechanics; this source uses the term in the IAA §202(a)(11) bona-fide-publication sense. Disambiguation pending — see deep-read note below.
+- @concepts/publishers-exclusion-iaa.md `[RESOLVED 2026-04-25]` — disambiguation completed; this source's S4 is the canonical statutory citation for the IAA-sense page. The APA-exclusion-schedule sense now lives at `@concepts/publishers-exclusion-apa.md`; the disambig landing is `@concepts/publishers-exclusion.md`.
+- @concepts/publishers-exclusion-apa.md — APA-sense companion page; this source originally flagged the disambiguation problem (S4 documents both senses sharing the phrase), and the four Cemini-specific APA-carve-out candidates (Telethon / Finnhub / personal Twitter notes / Polymarket) live there.
 - @concepts/irc-1235-capital-gains-safe-harbor.md — patent-anchor + SMLLC disregarded-entity stack
 - @concepts/sbom.md — clean dependency tree as deal-killer mitigation
 - @concepts/skill-vetting.md
+- @concepts/dcm-state-preemption.md — synthesizes the federal-vs-state preemption fight that emerged Feb-Apr 2026; this source's S7 (March 2026 ANPRM) is the precursor signal
+- @sources/cftc-anprm-prediction-markets-2026-03-16.md — primary-source FR docket for the ANPRM this source's S7 references; matched-pair closure
+- @sources/cftc-selig-house-ag-testimony-2026-04-16.md — Chairman's on-the-record defense of the ANPRM agenda + AZ/CT/IL counter-suit confirmation
+- @sources/cftc-v-arizona-tro-liburdi-2026-04-10.md — first federal-court ruling in this cycle finding CFTC "likely to ultimately win" on preemption
 
 ## Raw Concept
 
@@ -234,3 +244,22 @@ Verbatim pulls from the docx body. Each snippet is anchored to its parent sectio
 **Architectural implications corroborated by this primary source:**
 - DCM Core Principle audit-trail mandate (Section 5(d) of CEA) is now actively-enforced, not theoretical → strengthens the Cemini pymerkle + OpenTimestamps anchoring case (S13) as compliance evidence rather than mere best practice.
 - CFTC asserts concurrent enforcement authority alongside DCM internal actions → the source's framing that compliance burden cascades to API participants (S8) is reinforced by federal-level enforcement risk for any participant whose system enables MNPI-tainted trades.
+
+### S20 — CFTC ANPRM primary-source corroboration: March 12 2026 RIN 3038-AF65 / 91 FR 12516 `[CONFIRMED]`
+*Closes the matched-pair with S7. The "March 2026 ANPRM" reference in S7 is the same instrument as Federal Register Vol. 91 No. 50 pp. 12516 (March 16 2026 publication of the March 12 2026 CFTC action), RIN 3038-AF65, FR Doc 2026-05105. Promoted from S7's contextual reference to [CONFIRMED] with full FR docket via Exa retrieval 2026-04-25. Companion DMO Staff Letter 26-08 (CFTC Press Release 9193-26) issued same day.*
+
+The ANPRM operates under 17 CFR Chapter I and asks ~30 numbered questions including **Question 19 — what factors should the Commission consider in determining the scope and public-interest implications of "gaming" activity under CEA Section 5c(c)(5)(C)?** Public-interest review under §5c(c)(5)(C) is the statutory hook for prohibiting an event contract as contrary to public interest; the enumerated activities are *gaming, terrorism, assassination, war, or activity unlawful under federal or state law*. Comment window: **45 days, closing April 30 2026**. The ANPRM is **pre-rulemaking** — no proposed rule text yet; that comes at the NPRM stage conditional on the comment record.
+
+Chairman Selig framed the rulemaking as *"the process of new rulemaking grounded in a rational and coherent interpretation of the Commodity Exchange Act"* (Prokopiev 2026-03-16) and defended the agenda before House Agriculture on April 16 2026 (see `@sources/cftc-selig-house-ag-testimony-2026-04-16.md`).
+
+[Sources:
+- CFTC Press Release 9194-26 (March 12 2026): https://www.cftc.gov/PressRoom/PressReleases/9194-26
+- Federal Register Vol. 91 No. 50, pp. 12516 (March 16 2026): https://www.govinfo.gov/content/pkg/FR-2026-03-16/html/2026-05105.htm
+- Lexology / Willkie Farr & Gallagher (2026-03-23): https://www.lexology.com/library/detail.aspx?g=1d09673b-149f-4da3-a11e-268b92334ae6
+- Prokopiev Law (2026-03-16): https://www.prokopievlaw.com/post/cftc-issues-prediction-markets-anprm-opens-45-day-comment-period-march-2026
+- All retrieved 2026-04-25 via Exa MCP — see brief at `briefs/2026-04-25_post-kalshi-advisory-regulatory-update.md` §1]
+
+**Architectural implications corroborated by this primary source:**
+- The ANPRM's Question 19 (gaming definition) is now the formal regulatory hinge of the swap-vs-wager structural dispute — see `@concepts/dcm-state-preemption.md`. The compliance-leverage thesis at `@entities/platforms/kalshi.md` role 3 is binary on the eventual definition: tight = sports-event contracts survive on Kalshi; broad = sports-event contracts revert to state gambling licensing.
+- **Filing public comments by April 30 2026 is itself an architectural lever** for any platform with skin in the outcome. Substantive comments already filed include MindCast AI's Rule 40.11 amendment proposal (2026-04-17) which flagged *"deference vulnerabilities under Loper Bright that could undermine the Commission's preemption cases in the Ninth and Fourth Circuits"* — a candid concession that even pro-CFTC commenters see exposure.
+- The cascade from S7/S8 (DCM Core Principles 3 & 4 + Premier/Prime API technical-competency mandates) **gains regulatory specificity** with this matched-pair closure: the Commission has now formally proposed to define the scope of the public-interest review that would condition any DCM's listing of contested event-contract types.
