@@ -6,16 +6,18 @@ category: crypto_native
 ticker: SOL
 related:
   - entities/ticker-watchlist.md
+  - concepts/crypto-asset-taxonomy.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-24
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 ---
 
 ## Relations
 
 - @entities/ticker-watchlist.md — parent watchlist page
+- @concepts/crypto-asset-taxonomy.md — functional category: programmable Layer-1 smart-contract platform (monolithic high-throughput)
 
 ## Raw Concept
 

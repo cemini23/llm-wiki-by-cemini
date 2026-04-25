@@ -5,9 +5,11 @@ tags: [reference, ticker, watchlist, cemini-suite, harvester-config]
 keywords: [watchlist, tickers, equities, crypto, polygon, harvester, sp500]
 related:
   - entities/tickers/aapl.md
+  - entities/tickers/ada.md
   - entities/tickers/amd.md
   - entities/tickers/amzn.md
   - entities/tickers/asts.md
+  - entities/tickers/avax.md
   - entities/tickers/avgo.md
   - entities/tickers/btc.md
   - entities/tickers/coin.md
@@ -17,6 +19,7 @@ related:
   - entities/tickers/glw.md
   - entities/tickers/googl.md
   - entities/tickers/intc.md
+  - entities/tickers/link.md
   - entities/tickers/meta.md
   - entities/tickers/msft.md
   - entities/tickers/mstr.md
@@ -31,18 +34,22 @@ related:
   - entities/platforms/polygon.md
   - entities/infrastructure/yfinance.md
   - concepts/equity-intraday-backfill-gap.md
+  - concepts/crypto-asset-taxonomy.md
+  - concepts/oracle-networks.md
 maturity: core
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-25
 ---
 
 ## Relations
 
-Per-ticker entity pages (reports committed as of 2026-04-24):
+Per-ticker entity pages (reports committed as of 2026-04-25):
 - @entities/tickers/aapl.md — AAPL
+- @entities/tickers/ada.md — ADA (added 2026-04-25)
 - @entities/tickers/amd.md — AMD
 - @entities/tickers/amzn.md — AMZN
 - @entities/tickers/asts.md — ASTS (added 2026-04-24)
+- @entities/tickers/avax.md — AVAX (added 2026-04-25)
 - @entities/tickers/avgo.md — AVGO
 - @entities/tickers/btc.md — BTC
 - @entities/tickers/coin.md — COIN
@@ -52,6 +59,7 @@ Per-ticker entity pages (reports committed as of 2026-04-24):
 - @entities/tickers/glw.md — GLW (added 2026-04-24)
 - @entities/tickers/googl.md — GOOGL
 - @entities/tickers/intc.md — INTC (added 2026-04-24)
+- @entities/tickers/link.md — LINK (added 2026-04-25)
 - @entities/tickers/meta.md — META
 - @entities/tickers/msft.md — MSFT
 - @entities/tickers/mstr.md — MSTR
@@ -63,6 +71,11 @@ Per-ticker entity pages (reports committed as of 2026-04-24):
 - @entities/tickers/sofi.md — SOFI (added 2026-04-24)
 - @entities/tickers/sol.md — SOL (added 2026-04-24)
 - @entities/tickers/tsla.md — TSLA
+
+Cross-cutting concept pages organizing the watchlist:
+- @concepts/crypto-asset-taxonomy.md — functional taxonomy of the 7 crypto-native assets (4 categories: store-of-value, programmable L1, memecoin/payments PoW, oracle middleware)
+- @concepts/oracle-networks.md — deeper treatment of the oracle/middleware category (LINK is the canonical implementation)
+- @concepts/equity-intraday-backfill-gap.md — equity intraday data-completeness caveat across all equity tickers (Polygon → yfinance EOD self-heal)
 
 ## Raw Concept
 

@@ -14,8 +14,7 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 | Item | Status | Model | Notes |
 |---|---|---|---|
-| **A** Crypto concept scaffold + cross-link 7 ticker reports | in progress | Opus | Stand up `concepts/crypto-asset-taxonomy.md` (unifies all 7) and `concepts/oracle-networks.md` (LINK-focused). Add `related:` edges from BTC/ETH/SOL/DOGE/ADA/AVAX/LINK → these concepts. Removes 3+ orphans, creates discoverability by topic. Optional Tier-2: `concepts/blockchain-l1-comparison.md` if scope permits. |
-| **B** Three loop-closers | queued | Sonnet | (1) Local-PDF extraction for SSRN 3000747 → resolves the partial from follow-up #2. (2) Add dates to 3 undated `[NEEDS VERIFICATION]` tags in `deepseek-api.md`. (3) Add `related:` backlinks for ada/avax/link → ticker-watchlist (always-on minimum cross-link). |
+| **B** Two loop-closers | queued | Sonnet | (1) Local-PDF extraction for SSRN 3000747 → resolves the partial from follow-up #2. (2) Add dates to 3 undated `[NEEDS VERIFICATION]` tags in `deepseek-api.md`. *(Original B.3 — ada/avax/link → ticker-watchlist backlinks — folded into A.)* |
 | **B′** Interlude: GitHub lint workflow + pre-commit hook | queued | Opus | `.github/workflows/lint.yml` runs `wiki_lint.py` on push to `main` + weekly cron Monday noon UTC. Pre-commit hook blocks server IP / `.env` / `.DS_Store` from being committed. Non-gating, informational only. |
 | **C** Exercise Exa on a real research question | queued | Opus | Pick a substantive question (e.g. "regulatory developments for prediction-market DCMs since the Feb 25 Kalshi advisory"), run through `web_search_advanced_exa`, file the synthesis as a brief. Pressure-tests the doctrine end-to-end. |
 
@@ -64,4 +63,7 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 ## Done — this session
 
-(Empty so far. Items move here as they ship, with commit SHA.)
+| Item | Commit | Notes |
+|---|---|---|
+| ROADMAP.md created | `526b174` | Forward-looking project plan; companion to `wiki/log.md` (chronological) and `LESSONS.md` (meta-lessons). |
+| **A** Crypto concept scaffold + cross-link 7 ticker reports | _pending commit_ | Created `wiki/concepts/crypto-asset-taxonomy.md` (4 categories: store-of-value, programmable L1, memecoin/PoW, oracle middleware) and `wiki/concepts/oracle-networks.md` (LINK-focused). Added bidirectional `related:` edges across all 7 crypto ticker pages (btc/eth/sol/doge/ada/avax/link), the watchlist, and `wiki/index.md`. Folded original B.3 (ada/avax/link → watchlist backlinks) into this work. |

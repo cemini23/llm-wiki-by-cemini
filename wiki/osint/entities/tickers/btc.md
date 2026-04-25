@@ -6,16 +6,18 @@ category: crypto_native
 ticker: BTC
 related:
   - entities/ticker-watchlist.md
+  - concepts/crypto-asset-taxonomy.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-23
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-25
 ---
 
 ## Relations
 
 - @entities/ticker-watchlist.md — parent watchlist page
+- @concepts/crypto-asset-taxonomy.md — functional category: store-of-value blockchain (non-programmable)
 
 ## Raw Concept
 

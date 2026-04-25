@@ -6,16 +6,20 @@ category: crypto_native
 ticker: LINK
 related:
   - entities/ticker-watchlist.md
+  - concepts/crypto-asset-taxonomy.md
+  - concepts/oracle-networks.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-24
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-04-25
 ---
 
 ## Relations
 
 - @entities/ticker-watchlist.md — parent watchlist page
+- @concepts/crypto-asset-taxonomy.md — functional category: middleware / oracle network (the only non-blockchain asset in the watchlist)
+- @concepts/oracle-networks.md — sister concept page; deeper treatment of the oracle-problem framing and Chainlink's DON architecture
 
 ## Raw Concept
 

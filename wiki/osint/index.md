@@ -426,6 +426,11 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Publisher's exclusion](concepts/publishers-exclusion.md) `[Cd]` — APA mechanism to carve out problematic components pre-close (legal deliverable) — concept, legal, m-and-a
 - [IRC §1235 capital-gains safe harbor](concepts/irc-1235-capital-gains-safe-harbor.md) `[Cd]` — Statutory LTCG treatment for inventor patent sales (CPA deliverable) — concept, tax, legal
 
+### Crypto / blockchain
+
+- [Crypto asset taxonomy](concepts/crypto-asset-taxonomy.md) — Functional categorization of the 7 crypto-native watchlist tickers into 4 categories: store-of-value (BTC), programmable L1 smart-contract platforms (ETH/SOL/ADA/AVAX), memecoin/payments PoW (DOGE), oracle middleware (LINK). Cross-cutting axes: programmability, consensus, throughput posture, regulatory exposure. — concept, crypto-native, taxonomy
+- [Oracle networks](concepts/oracle-networks.md) — Decentralized Oracle Networks (DONs); the oracle problem, consensus computing, major use cases (price feeds, CCIP, VRF, proof-of-reserves), failure modes, and Cemini strategy implications. LINK is the canonical implementation. — concept, crypto-native, middleware, oracle-networks
+
 ### Alt-data taxonomy (stubs)
 
 - [Carry trade](concepts/carry-trade.md) ⚠ — Low-rate→high-rate FX borrow/invest; Macro-Weather gated — stub, forex

@@ -8,6 +8,41 @@ Newest entries on top.
 
 ---
 
+## [2026-04-25] structural | Crypto concept scaffold + cross-link 7 ticker reports
+
+Removed the topical gap in the wiki between the 7 crypto ticker reports (BTC, ETH, SOL, DOGE, ADA, AVAX, LINK) and their lack of any synthesizing concept page. Until today crypto tickers were only related-back to `entities/ticker-watchlist.md` — there was no topic-first discoverability path for "what kind of asset is each of these?" or "what's an oracle?" Two new concept pages close that gap and net the orphan count from 201 → 198.
+
+### What was created
+
+1. **`wiki/concepts/crypto-asset-taxonomy.md`** — `validated`, four functional categories:
+   - **Store-of-value (programmable scarcity)** — BTC
+   - **Programmable L1 / smart-contract platform** — ETH, SOL, ADA, AVAX (with comparison table: consensus / execution / architectural posture)
+   - **Memecoin (PoW, no smart contracts)** — DOGE
+   - **Oracle middleware** — LINK
+   - Synthesis section addresses why the 4-axis cut matters (trade-offs aren't 1D), what's *not* on the watchlist (no privacy coins, no L2s, no DeFi blue chips), and how each category's failure modes differ.
+
+2. **`wiki/concepts/oracle-networks.md`** — `validated`, LINK-focused deep dive:
+   - Sections: oracle problem / decentralized oracle networks (DONs) / major use cases (DeFi price feeds, VRF, automation, CCIP cross-chain) / failure modes / competitor oracles (Pyth, API3, RedStone, UMA) / Cemini strategy implications.
+   - Several use-case-specific facts tagged `[NEEDS VERIFICATION 2026-04-25]` — these are the lint section 7 escalation candidates.
+
+### Cross-linking executed
+
+- **7 crypto ticker pages** (`btc/eth/sol/doge/ada/avax/link.md`): each got `concepts/crypto-asset-taxonomy.md` added to `related:` frontmatter + a `## Relations` body section block. `link.md` additionally got `concepts/oracle-networks.md`. All `updated:` bumped to 2026-04-25.
+- **`wiki/entities/ticker-watchlist.md`**: ada/avax/link added to frontmatter `related:` (alphabetical), plus the 2 new concept pages. Body Relations section gained a new "Cross-cutting concept pages" subsection.
+- **`wiki/index.md`**: new "### Crypto / blockchain" subsection added under Concepts (between "M&A / legal" and "Alt-data taxonomy (stubs)") listing the 2 new pages.
+
+### Lint result post-edit
+
+- 0 bidirectional gaps, 0 dangling links, 0 missing `@path` mentions — all `related:` edges resolve cleanly.
+- Orphans: 201 → 198. The 2 new concept pages picked up enough inbound coverage from the 7 ticker pages + watchlist that neither is an orphan itself.
+- 3 undated `[NEEDS VERIFICATION]` tags still flagged in `entities/infrastructure/deepseek-api.md` — that's the next-up B.2 item.
+
+### Roadmap entry
+
+`ROADMAP.md` created earlier this session as a forward-looking project plan companion to this log file. A is the first item moved to its "Done — this session" table. Original B.3 (ada/avax/link → ticker-watchlist backlinks) folded into A — separate roadmap line was redundant once the watchlist edit became part of the concept-scaffold cross-linking.
+
+---
+
 ## [2026-04-25] ingest+lint | Exa follow-ups complete + 3 crypto tickers indexed
 
 Closed out the three Exa-MCP follow-ups flagged in the prior entry, then absorbed three new ticker DOCXs from the inbox. One commit's worth of work, but it touches three distinct surfaces (lint script, source-page provenance, ticker corpus).
