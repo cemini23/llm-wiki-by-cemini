@@ -8,6 +8,77 @@ Newest entries on top.
 
 ---
 
+## [2026-04-25] structural | git scaffold — workspace now version-controlled
+
+User approved turning the workspace into a private GitHub repo for backup
+and versioning. Initial commit `d2564c0` ("Initial commit: wiki, scripts,
+schema baseline"). The push to a remote is the user's next step; this
+log entry covers the local scaffold only.
+
+### What was actually done
+
+1. **`scripts/`** — created at workspace root; copied 11 Python helpers
+   from `/tmp/` into it (`bootstrap_extract.py`, `extract_docx.py`,
+   `generate_stubs.py`, `index_tickers.py`, `partition_phase1.py`,
+   `phase2_aggregate.py`, `phase2_enrich_docx.py`, `phase2_spawn.py`,
+   `phase3_lint.py`, `phase3_lint_fix.py`, `wiki_lint.py`). They were
+   ephemeral in `/tmp/` and would have been lost on next macOS reboot;
+   now durable.
+2. **`.local/`** — created at workspace root; populated with `server.md`
+   holding the Hetzner SSH target, server root path, allowed/disallowed
+   operations from this workspace. Gitignored — never committed.
+3. **Server-IP scrub** — replaced inline `5.161.53.103` with pointer-to-
+   `.local/server.md` in three tracked files:
+   - `CLAUDE.md` line 222 ("Related — read-only" section)
+   - `wiki/entities/infrastructure/hetzner.md` line 40 (server-reference bullet)
+   - `wiki/log.md` line 390 (brief-transfer scp entry)
+   Remaining IP occurrences in `briefs/*.md` (5 files) and
+   `.claude/settings.local.json` are gitignored, so untouched.
+4. **`.gitignore`** — created. Excludes raw sources (`research for cemini/`,
+   `market dataset/`, `research to be indexed/`), operational outputs
+   (`briefs/`), credentials (`.local/`, `.claude/settings.local.json`),
+   OS/editor cruft (`.DS_Store`, `__pycache__/`, etc.).
+5. **`README.md`** — created at workspace root. One-page orientation:
+   what's tracked, what's not (and why), three-layer architecture
+   reminder, distribution targets, getting-started snippet.
+6. **`git init` + initial commit** — 325 files staged, all under
+   `CLAUDE.md`, `LESSONS.md`, `README.md`, `wiki/`, `scripts/`, and
+   `.gitignore`. Verified the gitignored paths (briefs, .local, .claude,
+   research for cemini, market dataset, research to be indexed) are
+   absent from `git ls-files --cached`.
+
+### Decisions worth remembering
+
+- **`briefs/` is gitignored** (revised from earlier plan to commit).
+  Briefs are operational/throwaway and contained five inline server-IP
+  references. The wiki + `log.md` entries already document everything
+  durable about each brief; the brief files themselves are point-in-time
+  artifacts.
+- **`.claude/settings.local.json` is gitignored** by the established
+  `.local.json` Claude Code convention. Contained 8+ allow-listed bash
+  commands embedding the server IP.
+- **No remote configured.** User creates the private GitHub repo at
+  their leisure and runs `git remote add origin … && git push -u origin
+  main` themselves.
+
+### Lint state delta
+
+| signal | before | after |
+| --- | --- | --- |
+| version-controlled | no | yes (local) |
+| inline server-IP occurrences in tracked files | 8 | 0 |
+| Python scripts surviving `/tmp/` cleanup | 0 | 11 (in `scripts/`) |
+
+### Followups
+
+- Push to a private GitHub repo (user-side action).
+- Periodic `git status` discipline at the end of ingest passes — they're
+  natural commit boundaries now.
+- If the script directory ever grows a runtime/`venv/`, add a `setup.md`
+  or `requirements.txt` rather than relying on the README's pip hint.
+
+---
+
 ## [2026-04-24] deep-read | sources/3-19-kalshi-trading-strategy-research.md — verified, snippeted, drift-corrected
 
 Third source in the deep-read pass triggered by the 2026-04-24 lint scan (was 19 inbound; now 24 inbound after this pass added 5 new cross-links). Closes the original "top 3 cited-unread sources" pass.
