@@ -1,34 +1,36 @@
 ---
-title: "Electronic copy available at: http://ssrn.com/abstract=2654872"
+title: "Comparable Stocks, Boundedly Rational Stock Markets and IPO Entry Rates"
 type: source
-tags: [pdf, unread-stub, needs-review]
+tags: [pdf, unread-stub, ipo, behavioral-finance, bounded-rationality, nasdaq]
 clusters: [uncategorized]
 related: []
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-25
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+*(No cross-references yet — stub. Provenance enriched 2026-04-25 via Exa web_search; deep read still pending.)*
 
 ## Raw Concept
 
-- **Original title**: Electronic copy available at: http://ssrn.com/abstract=2654872
-- **Author(s)**: _unknown (stub — not yet read)_
+- **Original title**: Comparable Stocks, Boundedly Rational Stock Markets and IPO Entry Rates
+- **Author(s)**: Jay Inghwee Chok (Keck Graduate Institute) + Jifeng Qian (Illumina)
 - **Type**: PDF
 - **Location**: research for cemini/stock 6 4:5.pdf
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
+- **Published**: 2 Sept 2015 (SSRN posting); journal version PLoS ONE 8(5):e61474 (2013)
+- **External IDs**: SSRN 2654872; JEL R53
 - **Length**: 8p
-- **Read status**: unread-stub
+- **Read status**: unread-stub (provenance only — body not yet ingested)
 - **Primary cluster**: uncategorized
-- **All clusters**: _none matched_
+- **All clusters**: _none matched — candidate cluster: behavioral-finance / IPO-microstructure_
 - **Quality flags**: no-cluster-match — review on first read
 
 ## Narrative
 
-In this study, we examine how initial public offerings (IPO) entry rates are affected when stock markets are boundedly rational and IPO firms infer information from their counterparts in the market. We hypothesize a curvilinear relationship between the number of comparable stocks and initial public offerings (IPO) entry rates into the NASDAQ Stock Exchange.
+In this study, we examine how initial public offerings (IPO) entry rates are affected when stock markets are boundedly rational and IPO firms infer information from their counterparts in the market. We hypothesize a curvilinear relationship between the number of comparable stocks and initial public offerings (IPO) entry rates into the NASDAQ Stock Exchange [Source: https://ssrn.com/abstract=2654872 (retrieved 2026-04-25)].
 
 ## Snippets
 

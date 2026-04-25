@@ -124,16 +124,16 @@ Per-ticker equity research reports are being commissioned via the Gemini Deep Re
 | Crypto native | ETH | ✅ [eth.md](tickers/eth.md) (2026-04-24) |
 | Crypto native | SOL | ✅ [sol.md](tickers/sol.md) (2026-04-24) |
 | Crypto native | DOGE | ✅ [doge.md](tickers/doge.md) (2026-04-24) |
-| Crypto native | ADA | _pending_ |
-| Crypto native | AVAX | _pending_ |
-| Crypto native | LINK | _pending_ |
+| Crypto native | ADA | ✅ [ada.md](tickers/ada.md) (2026-04-25) |
+| Crypto native | AVAX | ✅ [avax.md](tickers/avax.md) (2026-04-25) |
+| Crypto native | LINK | ✅ [link.md](tickers/link.md) (2026-04-25) |
 | Space tech | ASTS | ✅ [asts.md](tickers/asts.md) (2026-04-24) |
 | Space tech | PL | ✅ [pl.md](tickers/pl.md) (2026-04-24) |
 | Industrials | GLW | ✅ [glw.md](tickers/glw.md) (2026-04-24) |
 | Mega cap | INTC | ✅ [intc.md](tickers/intc.md) (2026-04-24) |
 | Fintech | SOFI | ✅ [sofi.md](tickers/sofi.md) (2026-04-24) |
 
-**Progress**: 24 / 30 indexed (2026-04-24 ingest: SOFI, SOL, DOGE added — filename convention reminder: `<TICKER> <date>.docx`, not company-name or leading-underscore forms; script `/tmp/index_tickers.py` regex expects a leading uppercase token). 2026-04-24 watchlist rebalance (even +5 / −5 swap, size preserved at 30): **added** ASTS, GLW, INTC, PL, SOFI; **removed** MARA, JPM, BAC, GS, UBER (UBER's entity page deleted; source docx `UBER 3_24.docx` retained in `research for cemini/` as historical record). Drop new reports into `research to be indexed/` as `<SYMBOL> <date>.docx`, then ask Claude to index them. The ingest workflow: extract docx → create `wiki/entities/tickers/<symbol>.md` → flip this table's row → move source docx into `research for cemini/`.
+**Progress**: 27 / 30 indexed (2026-04-25 ingest: ADA, AVAX, LINK added — completes the 7-coin crypto-native bench. Filename convention reminder: `<TICKER> <date>.docx`, not company-name or leading-underscore/parens forms; the regex in `scripts/index_tickers.py` expects a leading uppercase token. ADA dropped as `_(ADA)3_24.docx`, renamed in-place before re-running. Remaining pending: SPY, QQQ, IWM — the three index ETFs). 2026-04-24 watchlist rebalance (even +5 / −5 swap, size preserved at 30): **added** ASTS, GLW, INTC, PL, SOFI; **removed** MARA, JPM, BAC, GS, UBER (UBER's entity page deleted; source docx `UBER 3_24.docx` retained in `research for cemini/` as historical record). Drop new reports into `research to be indexed/` as `<SYMBOL> <date>.docx`, then ask Claude to index them. The ingest workflow: extract docx → create `wiki/entities/tickers/<symbol>.md` → flip this table's row → move source docx into `research for cemini/`.
 
 ### Notes
 

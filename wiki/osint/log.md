@@ -8,6 +8,55 @@ Newest entries on top.
 
 ---
 
+## [2026-04-25] ingest+lint | Exa follow-ups complete + 3 crypto tickers indexed
+
+Closed out the three Exa-MCP follow-ups flagged in the prior entry, then absorbed three new ticker DOCXs from the inbox. One commit's worth of work, but it touches three distinct surfaces (lint script, source-page provenance, ticker corpus).
+
+### Follow-up #1 — CFTC primary-source corroboration `[CONFIRMED]`
+
+- Crawled `https://www.cftc.gov/media/13351/Enf_AdvisoryKalshi022526/download` via `mcp__exa__crawling_exa`, added as snippet **S19** to `wiki/sources/3-19-compliance-research.md`.
+- Material upgrade: the existing `[NEEDS VERIFICATION]` flag on the Feb 25 2026 Kalshi MNPI Enforcement Advisory citation now becomes `[CONFIRMED]` — primary source text matches the secondary-source paraphrase, including the Section 5(d) DCM Core Principles audit-trail framing and CFTC's assertion of concurrent enforcement authority alongside DCM internal actions.
+- Pattern worth keeping: `[NEEDS VERIFICATION]` → Exa crawl primary source → upgrade to `[CONFIRMED]` is now a documented escalation path.
+
+### Follow-up #2 — URL-snippet audit (small scope, 5 hits)
+
+The audit revealed the corpus is overwhelmingly built from local DOCX/PDF research, not URL-cited material — only ~8 source pages contained external URLs at all, and most of those were already-populated (e.g. `4-14-lang.md` had a GitHub repo URL but no crawl candidate; `4-5-links-2.md` was a multi-topic aggregate, not a target). The 5 actionable pages were all "literally unknown" SSRN/arXiv stubs whose titles were the URLs themselves.
+
+| Page | Resolved title (Exa) | Confidence |
+|---|---|---|
+| `sources/3-26-git-re.md` | arXiv:2603.19461 = *Hyperagents* (Zhang, 19 Mar 2026). Prior "anomalous arXiv ID, possibly typo for 2503.19461" caveat **[RETRACTED]** — YYMM.NNNNN format = March 2026, valid. | `[CONFIRMED]` |
+| `sources/stocks-4-4-5.md` | SSRN 2512437 = *Crossing Stocks and the Positive Grassmannian I* (Racorean, Government of Romania, Feb 2014, also arXiv:1402.1281) | `[CONFIRMED]` |
+| `sources/stock-6-4-5.md` | SSRN 2654872 = *Comparable Stocks, Boundedly Rational Stock Markets and IPO Entry Rates* (Chok+Qian, Sept 2015, PLoS ONE 8(5):e61474) | `[CONFIRMED]` |
+| `sources/hedgge-fund-1-4-5.md` | SSRN 2449165 = *Do Hedge Funds Prefer Safe Stocks?* (Cao+Green+Li, June 2014, 50p) | `[CONFIRMED]` |
+| `sources/stock-7-4-5.md` | SSRN 3000747 — `crawling_exa` returned `SOURCE_NOT_AVAILABLE`, refined `web_search_exa` did not surface the specific abstract. Page diction ("Stock is one securities among other securities") suggests regional / non-native-English authored work, possibly an Indonesian SSRN posting. | partial — flagged `[NEEDS VERIFICATION 2026-04-25]`, resolution path is local PDF cover-page extraction |
+
+`wiki/index.md` ticker entries also rewritten — same 5 pages had verbatim "Electronic copy available at:..." titles in the catalog, now show real titles + provenance metadata + SSRN/arXiv IDs.
+
+**Operational lesson**: `crawling_exa` cannot reach SSRN abstract pages directly (whether via `ssrn.com/abstract=N` or `papers.ssrn.com/sol3/papers.cfm?abstract_id=N`) — both URL forms returned `SOURCE_NOT_AVAILABLE`. `web_search_exa` is the working fallback and resolved 4 of 5. For the one miss, the resolution path drops back to opening the local PDF.
+
+### Follow-up #3 — `wiki_lint.py` extended with verification-age check
+
+- Added section 7: scans every page body for `[NEEDS VERIFICATION YYYY-MM-DD]` and surfaces tags older than `--verify-age-days` (default 7).
+- Also surfaces *undated* `[NEEDS VERIFICATION]` tags as a separate "add-a-date" category — can't compute age without one.
+- Implementation: argparse for the threshold, `datetime.strptime` for the date, line-number tracking so the report points to the exact spot.
+- Smoke-test result: 0 stale dated tags, 3 undated tags surfaced (all in `entities/infrastructure/deepseek-api.md`) — pre-existing follow-up, not in scope today.
+
+### Ticker indexing — ADA, AVAX, LINK (completes the 7-coin crypto-native bench)
+
+- Ran `scripts/index_tickers.py` against `research to be indexed/` — picked up `AVAX 3_24.docx` and `LINK 3_24.docx` first pass; **skipped** `_(ADA)3_24.docx` because the script's regex `^([A-Z]+)\s` requires a leading uppercase token followed by whitespace.
+- Renamed `_(ADA)3_24.docx` → `ADA 3_24.docx` in-place, re-ran the script, ADA indexed cleanly.
+- All 3 source DOCXs moved from `research to be indexed/` → `research for cemini/`. Inbox now empty.
+- `wiki/entities/tickers/ada.md` (46K) + `avax.md` (59K) + `link.md` (50K) created from the standard 6-section Gemini Deep Research template.
+- Watchlist `wiki/entities/ticker-watchlist.md` status rows flipped to ✅; **Progress: 27 / 30** (was 24/30 — pending: SPY, QQQ, IWM, the three index ETFs).
+- `wiki/index.md` ticker block: alphabetically inserted ADA between AAPL and AMD, AVAX between ASTS and AVGO, LINK between INTC and META.
+- `CLAUDE.md` Active research threads bullet bumped from "21 / 30" → "27 / 30" with the full updated ticker list.
+
+### Reminder for next ingest
+
+Filename convention is **`<TICKER> <date>.docx`** — leading-underscore-and-parens forms (`_(ADA)3_24.docx`) get skipped by the regex. The script's diagnostic message ("SKIP unknown filename pattern") is clear enough that rename-and-rerun is a 2-step fix, but worth surfacing the rule each time the watchlist gets touched.
+
+---
+
 ## [2026-04-25] capability | Exa MCP wired in — external research now first-class
 
 The wiki gains an external-research tool path. Until today, "search the

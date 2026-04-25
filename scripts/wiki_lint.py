@@ -8,13 +8,23 @@ Reports:
   4. Missing pages        — `@path` mentions in body where the file doesn't exist
   5. Cited unread stubs   — source pages with read_status=unread-stub but ≥1 inbound related: edge
   6. Frontmatter quality  — missing `type` / `maturity` / mismatched `updated:`
+  7. Stale verification   — `[NEEDS VERIFICATION YYYY-MM-DD]` tags older than --verify-age-days
+                            (default 7) — Exa-resolution candidates per CLAUDE.md "External research"
 """
 
+import argparse
 import os
 import re
 import sys
+from datetime import date, datetime
 from pathlib import Path
 from collections import defaultdict
+
+parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+parser.add_argument("--verify-age-days", type=int, default=7,
+                    help="Flag [NEEDS VERIFICATION YYYY-MM-DD] tags older than this many days (default: 7)")
+args = parser.parse_args()
+TODAY = date.today()
 
 WIKI = Path("/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki")
 
@@ -143,6 +153,34 @@ no_maturity = sorted(p for p, fm in pages.items()
                      if not fm.get("_no_frontmatter") and not fm.get("maturity")
                      and fm.get("type") in ("source", "entity", "concept"))
 
+# -- 7: stale [NEEDS VERIFICATION YYYY-MM-DD] tags -----------------------
+
+# Match [NEEDS VERIFICATION YYYY-MM-DD] with optional date. Date is required for staleness check;
+# tags without a date are flagged separately as "undated" (can't compute age).
+NEEDS_VERIFY_DATED_RE = re.compile(r"\[NEEDS VERIFICATION\s+(\d{4}-\d{2}-\d{2})\]")
+NEEDS_VERIFY_BARE_RE = re.compile(r"\[NEEDS VERIFICATION\](?!\s+\d{4})")
+
+stale_verifications = []  # (page, date_str, age_days, line_num, line_text)
+undated_verifications = []  # (page, line_num, line_text)
+
+for src, fm in pages.items():
+    body = fm.get("_body", "")
+    if not body:
+        continue
+    for line_num, line in enumerate(body.splitlines(), start=1):
+        for m in NEEDS_VERIFY_DATED_RE.finditer(line):
+            try:
+                tag_date = datetime.strptime(m.group(1), "%Y-%m-%d").date()
+            except ValueError:
+                continue
+            age = (TODAY - tag_date).days
+            if age >= args.verify_age_days:
+                stale_verifications.append((src, m.group(1), age, line_num, line.strip()))
+        if NEEDS_VERIFY_BARE_RE.search(line):
+            undated_verifications.append((src, line_num, line.strip()))
+
+stale_verifications.sort(key=lambda x: -x[2])  # oldest first
+
 # -- print report --------------------------------------------------------
 
 def header(s):
@@ -204,3 +242,23 @@ for p in no_type[:20]:
 print(f"  missing 'maturity' field (source/entity/concept only): {len(no_maturity)}")
 for p in no_maturity[:20]:
     print(f"    - {p}")
+
+header(f"7. Stale [NEEDS VERIFICATION] tags — {len(stale_verifications)} dated tag(s) "
+       f"≥{args.verify_age_days} days old (Exa-resolution candidates)")
+if not stale_verifications:
+    print(f"  (none — all dated NEEDS VERIFICATION tags are within the {args.verify_age_days}-day window)")
+for page, date_str, age, line_num, line_text in stale_verifications[:30]:
+    print(f"  [{age:>4}d old, tagged {date_str}] {page}:{line_num}")
+    snippet = line_text if len(line_text) <= 140 else line_text[:137] + "..."
+    print(f"      {snippet}")
+if len(stale_verifications) > 30:
+    print(f"  ... and {len(stale_verifications)-30} more (showing top 30 by age)")
+
+if undated_verifications:
+    print(f"\n  Also: {len(undated_verifications)} undated [NEEDS VERIFICATION] tag(s) "
+          f"— add a date so age can be tracked:")
+    for page, line_num, line_text in undated_verifications[:20]:
+        snippet = line_text if len(line_text) <= 140 else line_text[:137] + "..."
+        print(f"    - {page}:{line_num}  {snippet}")
+    if len(undated_verifications) > 20:
+        print(f"    ... and {len(undated_verifications)-20} more")
