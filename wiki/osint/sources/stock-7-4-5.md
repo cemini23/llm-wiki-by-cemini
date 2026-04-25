@@ -1,36 +1,60 @@
 ---
-title: "[SSRN 3000747 — title not resolved] Stock as a high-risk instrument paper"
+title: "The Influence of Financial Distress Using Altman Z-Score, The Beta of Stocks and Inflation To The Stock Return"
 type: source
-tags: [pdf, unread-stub, ssrn-resolution-failed, equity-risk, candidate-regional-journal]
-clusters: [uncategorized]
+tags: [pdf, skimmed, quant-finance, altman-z-score, capm, systematic-risk, indonesian-equities, academic-journal, gatr-journals]
+clusters: [quant-finance]
+keywords: [altman-z-score, financial-distress, beta-stocks, inflation, stock-return, panel-data-regression, indonesia-stock-exchange, capm, systematic-risk, manufacturing-sector]
 related: []
-maturity: draft
+maturity: validated
 created: 2026-04-23
 updated: 2026-04-25
 ---
 
 ## Relations
 
-*(No cross-references yet — stub. Exa enrichment attempted 2026-04-25; SSRN abstract page returned `SOURCE_NOT_AVAILABLE` and refined web_search did not surface the specific abstract. Provenance still partial.)*
+*(No cross-references to current wiki entities/concepts — Indonesia-focused quant-finance empirical paper. Cross-link if a Financial Distress or Altman Z-Score concept page is created.)*
 
 ## Raw Concept
 
-- **Original title**: _unresolved_ (cover page only shows "Electronic copy available at: https://ssrn.com/abstract=3000747"; SSRN page not crawlable via Exa, refined web_search did not match)
-- **Author(s)**: _unknown — Exa retry pending or local PDF deep-read needed_
-- **Type**: PDF
+- **Original title**: The Influence of Financial Distress Using Altman Z-Score, The Beta of Stocks and Inflation To The Stock Return
+- **Author(s)**: Mathius Tandiontong (1) and Margaretha Sitompul (2) — Maranatha Christian University, Jl. Prof. Drg. Suria Sumantri M.P.H No. 65, 40164, Bandung, Indonesia
+- **Type**: PDF (academic journal article, empirical)
 - **Location**: research for cemini/stock 7 4:5.pdf
-- **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
+- **Journal**: Journal of Finance and Banking Review (GATR Journals) — J. Bank. Fin. Review 2(2): 21–27 (2017)
+- **Publisher**: Global Academy of Training & Research (GATR) Enterprise
+- **ISSN**: 0128-3103
+- **Retrieved**: 2026-04-23 (filename date reflects download date)
 - **External IDs**: SSRN 3000747
-- **Length**: 7p
-- **Read status**: unread-stub (provenance enrichment attempted 2026-04-25, partial)
-- **Primary cluster**: uncategorized
-- **All clusters**: _none matched_
-- **Quality flags**: no-cluster-match; ssrn-resolution-failed — narrative phrasing ("Stock is one securities among other securities") suggests a regional / non-native-English authored paper, possibly Indonesian SSRN posting given diction. **Resolution path: open the local PDF and read the cover/header for author + journal name** (Exa cannot reach the SSRN page directly) [NEEDS VERIFICATION 2026-04-25]
+- **Pages**: 7 (pp. 21–27 within the journal)
+- **Read status**: skimmed (cover + abstract + body extracted 2026-04-25 via `pypdf` local extraction)
+- **Resolution note**: SSRN abstract page not crawlable via Exa (`SOURCE_NOT_AVAILABLE` for both URL forms; `web_search_exa` did not match the abstract). Resolved 2026-04-25 via local PDF extraction — `[CONFIRMED]`
 
 ## Narrative
 
-Objective – Stock is one securities among other securities, as a high risk instrument. Stock classified as high risk due to reflection in the uncertainty of the rate of return to be received by investors in the future.
+Empirical study testing whether three factors — **financial distress** (proxied by Altman Z-Score), **systematic risk** (beta stocks), and **inflation** — jointly and partially affect stock returns for Indonesian manufacturing companies listed on the Indonesia Stock Exchange (BEI), 2008–2012.
+
+**Key parameters:**
+- Population: 133 manufacturing companies listed on BEI in 2012
+- Sample: 75 companies selected by purposive sampling
+- Method: panel data regression
+- Overall explanatory power: R² = 28.7%
+
+**Findings:**
+- All three independent variables (Altman Z-Score / financial distress, beta stocks, inflation) partially affect stock returns — consistent with CAPM-grounded priors
+- Hypothesis 1 confirmed: financial distress (Altman Z-Score) has a positive influence on stock return
+- Hypothesis 2 confirmed: beta stocks have a positive effect on stock returns
+- Hypothesis 3 confirmed: inflation has a negative effect on stock returns
+- Hypothesis 4 confirmed: all three jointly affect stock returns
+
+**Context:** Regional emerging-market application of standard Western quant-finance constructs (Altman 1968 Z-Score, Beaver 1966 financial distress model, CAPM beta) to Indonesian equities. The non-native-English diction in the abstract (noted during prior Exa enrichment pass) is consistent with the Indonesian institutional affiliation — not a quality flag.
 
 ## Snippets
 
-*(None yet — populate on first deep read. Local PDF body extraction is the next step here, since SSRN 3000747 is not externally crawlable.)*
+> "Stock is one securities among other securities, as a high risk instrument. Stock classified as high risk due to reflection in the uncertainty of the rate of return to be received by investors in the future."
+— Abstract opening, p. 21 [Source: research for cemini/stock 7 4:5.pdf p.1]
+
+> "Panel data regression analysis shows that the overall effect of variables is equal to 28.7%."
+— Abstract, p. 21 [Source: research for cemini/stock 7 4:5.pdf p.1]
+
+> "Systematic risk is the risk that cannot be diversified (avoided). These risks are related to conditions prevailing in the market in general, such as changes in the macro economy, interest rate risk, etc."
+— Section 2.2, p. 23 [Source: research for cemini/stock 7 4:5.pdf p.3]

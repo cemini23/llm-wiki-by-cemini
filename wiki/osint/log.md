@@ -8,6 +8,30 @@ Newest entries on top.
 
 ---
 
+## [2026-04-25] lint+ingest | B loop-closers: SSRN 3000747 resolved + deepseek-api dates added
+
+Two mechanical follow-ups from prior sessions closed.
+
+### B.1 — SSRN 3000747 provenance resolved via local PDF extraction
+
+`wiki/sources/stock-7-4-5.md` was a stub with `[NEEDS VERIFICATION 2026-04-25]` on its provenance — the SSRN abstract page is not crawlable via Exa (`SOURCE_NOT_AVAILABLE` on both URL forms), and a prior `web_search_exa` pass didn't surface the specific abstract. Resolved by `pypdf` extraction of the local PDF.
+
+**Confirmed identity:**
+- **Title**: The Influence of Financial Distress Using Altman Z-Score, The Beta of Stocks and Inflation To The Stock Return
+- **Authors**: Mathius Tandiontong and Margaretha Sitompul (Maranatha Christian University, Bandung, Indonesia)
+- **Journal**: Journal of Finance and Banking Review (GATR Journals), ISSN 0128-3103, Vol. 2(2): 21–27, 2017
+- **Content**: Empirical panel regression (75 Indonesian manufacturing companies, BEI 2008–2012). All three hypotheses confirmed: Altman Z-Score, beta stocks, and inflation each partially affect stock returns. R² = 28.7%.
+
+Prior diction note ("Stock is one securities among other securities") was correctly flagged as regional/non-native-English — this is an Indonesian institutional paper, not a quality issue. Cluster updated `uncategorized → quant-finance`. `maturity: draft → validated`. Three verbatim snippets populated. `wiki/index.md` title entry replaced — removed the `⚠ SSRN page not crawlable` placeholder with real title + provenance metadata.
+
+### B.2 — Undated `[NEEDS VERIFICATION]` tags in `deepseek-api.md` dated
+
+Lint section 7 surfaced 3 undated `[NEEDS VERIFICATION]` tags (lines 39, 48, 62) in `wiki/entities/infrastructure/deepseek-api.md`. All three stamped with `2026-04-25` so the 7-day staleness clock can now track them. No semantic change — these are server-side verification items (Hetzner RAM spec, cost/rate-limit envelope, API key presence) whose resolution path is a future server-Claude workstream.
+
+**Post-edit lint state**: 0 bidirectional gaps, 0 dangling links, 0 undated `[NEEDS VERIFICATION]` tags.
+
+---
+
 ## [2026-04-25] structural | Crypto concept scaffold + cross-link 7 ticker reports
 
 Removed the topical gap in the wiki between the 7 crypto ticker reports (BTC, ETH, SOL, DOGE, ADA, AVAX, LINK) and their lack of any synthesizing concept page. Until today crypto tickers were only related-back to `entities/ticker-watchlist.md` — there was no topic-first discoverability path for "what kind of asset is each of these?" or "what's an oracle?" Two new concept pages close that gap and net the orphan count from 201 → 198.
