@@ -12,15 +12,14 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 ## Now — current session (2026-04-25)
 
-| Item | Status | Model | Notes |
-|---|---|---|---|
-| **C** Exercise Exa on a real research question | queued | Opus | Pick a substantive question (e.g. "regulatory developments for prediction-market DCMs since the Feb 25 Kalshi advisory"), run through `web_search_advanced_exa`, file the synthesis as a brief. Pressure-tests the doctrine end-to-end. |
+*(empty — C just shipped; see Done.)*
 
 ## Next session — break-and-resume
 
 | Item | Status | Model | Notes |
 |---|---|---|---|
-| **D** Big orphan sweep | queued | mixed | 201 of 311 pages have zero inbound `related:` edges (post-A this drops by ~7-10). A focused sweep would file each orphan under the right entity/concept. Opus for categorization decisions, Sonnet for bulk re-linking. Multi-hour, deserves its own session. |
+| **D** Big orphan sweep | queued | mixed | 198 of 313 pages have zero inbound `related:` edges (post-A baseline; brief in `briefs/` doesn't change this). A focused sweep would file each orphan under the right entity/concept. Opus for categorization decisions, Sonnet for bulk re-linking. Multi-hour, deserves its own session. |
+| **F** Per-ticker Exa research briefs + cross-link to research corpus | queued | mixed | Run an Exa pass per indexed ticker (27 today; 30 once SPY/QQQ/IWM land). File each as `briefs/2026-MM-DD_<symbol>-exa-deep-dive.md`. Cross-reference back to (a) `wiki/entities/tickers/<symbol>.md` and (b) any matching Gemini DR-derived `wiki/sources/` pages. Format suggestion: 6-section structure mirroring the existing ticker reports (Business / Competitive / Financial / Recent Events / Forward Catalysts / Analyst & Sell-Side) but **forward-looking only — last 90-180 days**, since the Gemini DR pass covers the historical baseline. Opus for synthesis sections, Sonnet for the mechanical Exa-search-and-extract step. Each brief ~15-30 min focused work; full sweep ~7-15 hours, naturally batched in 5-7 tickers per sub-session. |
 
 ## Soon — small carryover items
 
@@ -67,3 +66,4 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 | **A** Crypto concept scaffold + cross-link 7 ticker reports | `4c6aa85` | Created `wiki/concepts/crypto-asset-taxonomy.md` (4 categories: store-of-value, programmable L1, memecoin/PoW, oracle middleware) and `wiki/concepts/oracle-networks.md` (LINK-focused). Added bidirectional `related:` edges across all 7 crypto ticker pages (btc/eth/sol/doge/ada/avax/link), the watchlist, and `wiki/index.md`. Folded original B.3 (ada/avax/link → watchlist backlinks) into this work. Lint clean; orphans 201 → 198. |
 | **B** Two loop-closers | `0d59a60` | (1) `stock-7-4-5.md` resolved: Tandiontong + Sitompul, GATR J. Bank. Fin. Review 2(2):21–27 (2017), Altman Z-Score + beta + inflation on Indonesian BEI, cluster `uncategorized→quant-finance`. (2) 3 undated `[NEEDS VERIFICATION]` in `deepseek-api.md` stamped `2026-04-25`. |
 | **B′** GitHub Actions lint workflow + local pre-commit hook | `33aca6c` | `.github/workflows/lint.yml` (push + Mon 12:00 UTC cron + manual dispatch). `scripts/pre-commit.sh` blocks server IP / `sk-…` keys / `.env*` / `.DS_Store`. `scripts/install-hooks.sh` symlinks the hook into `.git/hooks/`. Made `wiki_lint.py` portable (`__file__`-relative `WIKI` path) so CI can find the wiki. Hook validated against 5-pattern matrix + caught its own first commit attempt. Also moves the GitHub-specific dev infra "Pre-commit hook" + "lint workflow" rows out of the "under consideration" table. |
+| **C** Exa pressure-test brief: post-Kalshi-advisory regulatory landscape | _pending commit_ | `briefs/2026-04-25_post-kalshi-advisory-regulatory-update.md` — synthesis of CFTC ANPRM (RIN 3038-AF65, 91 FR 12516, comments due Apr 30) + state enforcement track (MI civil, AZ 20 misdemeanor counts, NV TRO, NY cease-and-desist) + federal preemption counter-suit (CFTC sued AZ+CT+IL, Liburdi TRO Apr 10 expired Apr 24, Third Circuit upheld NJ, Sixth Circuit split → SCOTUS path) + Selig House Ag testimony. 4 parallel `web_search_advanced_exa` queries date-bounded `2026-02-25 → 2026-04-25`, all primary-doc-corroborated. Doctrine pressure-test passed; ingest-back-to-wiki plan deferred (~4-6 page mini-cluster). Lint clean. |

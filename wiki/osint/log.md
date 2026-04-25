@@ -8,6 +8,34 @@ Newest entries on top.
 
 ---
 
+## [2026-04-25] query+brief | C: post-Kalshi-advisory regulatory landscape — Exa pressure-test end-to-end
+
+Closed roadmap item C. Exercised Exa MCP on a substantive research question — *"regulatory developments for prediction-market DCMs since the Feb 25 2026 CFTC Kalshi advisory"* — and filed the synthesis as `briefs/2026-04-25_post-kalshi-advisory-regulatory-update.md` (target: claude.ai).
+
+### Doctrine pressure-test result
+
+The doctrine in `CLAUDE.md` § "External research — Exa MCP" worked end-to-end:
+
+1. **Wiki-first** — read `@sources/3-19-compliance-research.md` (S7, S8, S19 already populated with the Feb 25 advisory primary-source crawl from yesterday) + `@entities/platforms/kalshi.md` (3-role framing) before going external.
+2. **Date-bounded `web_search_advanced_exa`** — 4 parallel queries, all bounded `2026-02-25 → 2026-04-25`, each ≤8 results. Persisted JSON outputs (Exa returned >50KB on 4 of 4) routed to disk by the harness; extracted via `python3 json.load` rather than re-querying.
+3. **Cross-source corroboration** — every claim in the brief is sourced to either (a) primary federal docs (CFTC press releases, FR docket, Selig testimony transcript on cftc.gov), (b) state AG official press releases, or (c) ≥2-source corroborated press coverage of court orders.
+4. **OOD signal honored** — when Selig testimony quoted an FR publication date that disagreed with my pre-summary memory (March 16 actual vs. March 12 in my notes), the brief uses the verified docket date and notes the distinction (CFTC announced March 12 / Press Release 9194-26; FR-published March 16 as 91 FR 12516, FR Doc 2026-05105).
+5. **Filed back** — synthesis is in `briefs/`, not lost in chat. Ingest-back-to-wiki plan is documented in §6 of the brief but not executed (those are 3-4 separate small ingests; deferred).
+
+### Brief content (one-paragraph summary)
+
+Two months after the Feb 25 advisory, the prediction-market DCM regime moved from "advisory + cascading API-participant obligations" to a live federal-vs-state preemption fight. The CFTC issued a coordinated ANPRM (RIN 3038-AF65, 91 FR 12516, March 16) + DMO Staff Letter 26-08, opening a 45-day comment window closing **April 30 2026** (5 days from the brief). State enforcement clustered on sports + election contracts (MI civil March 5, AZ 20 misdemeanor criminal counts March 17, NV state-court TRO March 21, NY cease-and-desist reissued April 20). The federal government counter-sued AZ + CT + IL early April; Judge Liburdi (D. Ariz.) granted a TRO blocking AZ's criminal prosecution April 10, ruling CFTC "likely to ultimately win" on preemption (TRO expired April 24 — yesterday). Third Circuit upheld Kalshi's NJ injunction 2-1; a Sixth Circuit / Tennessee split signals a SCOTUS path. Selig testified before House Ag April 16 — held the line on exclusive jurisdiction but took bipartisan grilling on Trump-family insider-trading proximity. Implication for the Cemini compliance-leverage thesis (`@sources/3-19-compliance-research.md`): Kalshi's DCM-status as IP-sale leverage point **strengthens** if preemption holds (CFTC has demonstrated willingness to sue states to defend it) and **weakens** binarily if SCOTUS sides with states.
+
+### Cost discipline
+
+Exa spend: 4 advanced searches × `numResults` 5-8 each. No `deep_researcher_*`, no `crawling_exa` calls — yesterday's 2-URL crawl in S19 (CFTC Feb 25 advisory + govinfo FR ANPRM) already covered the primary-document layer. Estimated: well under $0.10 of API spend.
+
+### Wiki-side follow-ups (queued, not blocking)
+
+The brief flags 4 small ingests in §6 that would propagate the new findings back into the wiki (promote S7's ANPRM reference to S20 with full FR citation; new `concepts/dcm-state-preemption.md`; Selig testimony + Liburdi TRO as new source pages; update `kalshi.md` role 3 with the federal-counter-suit qualifier). Deferred — not executed in this session. They're a coherent ~4-6 page mini-cluster and should be one ingest, not folded into this commit.
+
+---
+
 ## [2026-04-25] devinfra | B′: GitHub Actions lint workflow + local pre-commit hook
 
 Closed the dev-infra gap on the GitHub side. The wiki now has a CI lint pass and the local repo blocks the most likely accidental leaks before they leave the laptop.
