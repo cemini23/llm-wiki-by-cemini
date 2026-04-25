@@ -26,7 +26,9 @@ parser.add_argument("--verify-age-days", type=int, default=7,
 args = parser.parse_args()
 TODAY = date.today()
 
-WIKI = Path("/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki")
+# Resolve WIKI relative to this script (scripts/wiki_lint.py → repo root → wiki/),
+# with WIKI_DIR env-var override for non-standard layouts (e.g. CI checkout paths).
+WIKI = Path(os.environ.get("WIKI_DIR", Path(__file__).resolve().parent.parent / "wiki"))
 
 # -- frontmatter parsing (no PyYAML dep) ----------------------------------
 

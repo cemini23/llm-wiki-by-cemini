@@ -277,7 +277,7 @@ Documented architectural facts across the corpus:
 - **CPU-only constraint** drives the choice of local LLM inference
   (DeepSeek-R1-14B on Ollama) over GPU-heavy alternatives; quant
   strategies rely on Polars/NumPy/CPU-native ML not on GPU acceleration.
-- Server reference: `root@5.161.53.103`, path `/opt/cemini`.
+- Server reference: `root@<see .local/server.md>`, path `/opt/cemini`.
 - TimescaleDB + PostgreSQL + Redis + the LangGraph orchestrator +
   Prometheus/Loki/Grafana/Tempo stack + FastAPI app containers all co-
   tenant on the same host.

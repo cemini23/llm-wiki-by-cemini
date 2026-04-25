@@ -8,6 +8,54 @@ Newest entries on top.
 
 ---
 
+## [2026-04-25] devinfra | B′: GitHub Actions lint workflow + local pre-commit hook
+
+Closed the dev-infra gap on the GitHub side. The wiki now has a CI lint pass and the local repo blocks the most likely accidental leaks before they leave the laptop.
+
+### Three new artifacts
+
+1. **`.github/workflows/lint.yml`** — runs `scripts/wiki_lint.py` on:
+   - every push to `main`
+   - weekly cron (Monday 12:00 UTC)
+   - manual `workflow_dispatch`
+
+   Output is `tee`'d to a file and posted to `$GITHUB_STEP_SUMMARY` so the lint report renders as a markdown panel on the workflow run page (no need to dig into raw logs). Informational only — the lint script always exits 0, so the workflow is non-gating by design.
+
+2. **`scripts/pre-commit.sh`** — bash hook that scans staged content and filenames before each commit. Blocks:
+   - **Filenames**: `.env` / `.env.*` / `.DS_Store` at any depth
+   - **Content (added lines only)**: literal Hetzner server IP (constructed from string parts so the hook source itself doesn't trip), `sk-[A-Za-z0-9_-]{20,}` API key prefix (catches OpenAI / DeepSeek / Anthropic-style keys ≥20 chars after the `sk-`)
+
+   Only ADDED lines (`git diff --cached -U0 | grep '^+'`) are scanned, so historical IP/key occurrences in untouched parts of files don't false-positive. The hook itself is excluded from content scanning via `:(exclude)scripts/pre-commit.sh`. Bypass when intentional: `git commit --no-verify`.
+
+3. **`scripts/install-hooks.sh`** — idempotent installer that symlinks `.git/hooks/pre-commit → ../../scripts/pre-commit.sh`. Run once after fresh clone. Hooks live outside the repo's tracked tree, so this is the only way to propagate the hook to other machines / clones.
+
+### Plumbing fix: `wiki_lint.py` made portable
+
+`WIKI = Path("/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki")` was hardcoded — would have broken in CI on push #1. Replaced with `Path(os.environ.get("WIKI_DIR", Path(__file__).resolve().parent.parent / "wiki"))` — auto-resolves from the script's own location, with `WIKI_DIR` env-var override for non-standard layouts. Verified working from arbitrary `cwd`.
+
+### IP-redaction sweep (pre-hook prep)
+
+Two tracked files contained the literal Hetzner IP and would have been false-positive blocked by the new hook on subsequent edits:
+- **`ROADMAP.md` line 55** (dev-infra table documenting the hook itself) — replaced literal IP with `<server-ip>`.
+- **`scripts/phase2_spawn.py` line 280** (legacy entity-spawn narrative) — replaced `root@<literal-ip>` with `root@<see .local/server.md>`, matching the pattern from the prior 2026-04-24 IP-scrub on `CLAUDE.md` + `wiki/entities/infrastructure/hetzner.md`.
+- **`wiki/log.md` line 217** (historical log entry documenting the prior scrub) — left intact. The hook scans only added lines, so this never trips on routine log appends near the top of the file.
+
+### Hook validation (4-pattern test matrix)
+
+| Test | Input | Expected | Got |
+|---|---|---|---|
+| Positive | Stage the legitimate B′ files | exit 0 | ✅ exit 0 |
+| Server IP | `_leak_test.md` containing `ssh root@<literal-ip>` | block | ✅ blocked |
+| API key | `_leak_test.md` containing a 28-char `sk-…` token | block | ✅ blocked |
+| `.env*` filename | `git add -f .env.test` | block | ✅ blocked |
+| `.DS_Store` filename | `git add -f .DS_Store` | block | ✅ blocked |
+
+All test artifacts cleaned up; staged tree returned to just the legitimate B′ changes before commit.
+
+**Self-meta validation**: the hook tripped a sixth time — on the first attempt to commit *this very entry*, because the API-key test-matrix row originally contained the literal `sk-…<28 chars>` token used in the negative test. Redacted to "28-char `sk-…` token" and re-committed. Confirms the hook's content-not-intent stance: it doesn't care whether you're documenting the leak or causing it.
+
+---
+
 ## [2026-04-25] lint+ingest | B loop-closers: SSRN 3000747 resolved + deepseek-api dates added
 
 Two mechanical follow-ups from prior sessions closed.

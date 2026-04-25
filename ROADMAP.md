@@ -14,7 +14,7 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 | Item | Status | Model | Notes |
 |---|---|---|---|
-| **B′** Interlude: GitHub lint workflow + pre-commit hook | queued | Opus | `.github/workflows/lint.yml` runs `wiki_lint.py` on push to `main` + weekly cron Monday noon UTC. Pre-commit hook blocks server IP / `.env` / `.DS_Store` from being committed. Non-gating, informational only. |
+| **B′** Interlude: GitHub lint workflow + pre-commit hook | _pending commit_ | Opus | `.github/workflows/lint.yml` runs `wiki_lint.py` on push to `main` + weekly cron Monday noon UTC. Pre-commit hook blocks server IP / `.env` / `.DS_Store` / `sk-…` keys from being committed. Non-gating, informational only. Validation: 4-pattern test matrix all green. |
 | **C** Exercise Exa on a real research question | queued | Opus | Pick a substantive question (e.g. "regulatory developments for prediction-market DCMs since the Feb 25 Kalshi advisory"), run through `web_search_advanced_exa`, file the synthesis as a brief. Pressure-tests the doctrine end-to-end. |
 
 ## Next session — break-and-resume
@@ -52,7 +52,7 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 | Item | Priority | Notes |
 |---|---|---|
 | `.github/workflows/lint.yml` | high — doing as B′ this session | Runs `wiki_lint.py` on push + weekly cron. Informational, non-gating. |
-| Pre-commit hook (local, `.git/hooks/pre-commit`) | high — doing as B′ this session | Block commits containing `5.161.53.103`, `\.env`, `.DS_Store`, raw API keys. Cheap insurance after the IP-scrub incident. |
+| Pre-commit hook (local, `.git/hooks/pre-commit`) | high — doing as B′ this session | Block commits containing `<server-ip>` (literal IP from `.local/server.md`), `\.env`, `.DS_Store`, `sk-…` API keys. Cheap insurance after the IP-scrub incident. |
 | GitHub Issues for roadmap items | low | Could mirror this file as Issues. Overkill for a one-person project right now. Revisit if the roadmap grows past ~20 items. |
 | Dependabot / Renovate | skip | No `requirements.txt` to watch. |
 | LICENSE file | skip | Private repo. |
