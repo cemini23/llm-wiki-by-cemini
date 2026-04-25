@@ -14,7 +14,6 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 | Item | Status | Model | Notes |
 |---|---|---|---|
-| **B′** Interlude: GitHub lint workflow + pre-commit hook | _pending commit_ | Opus | `.github/workflows/lint.yml` runs `wiki_lint.py` on push to `main` + weekly cron Monday noon UTC. Pre-commit hook blocks server IP / `.env` / `.DS_Store` / `sk-…` keys from being committed. Non-gating, informational only. Validation: 4-pattern test matrix all green. |
 | **C** Exercise Exa on a real research question | queued | Opus | Pick a substantive question (e.g. "regulatory developments for prediction-market DCMs since the Feb 25 Kalshi advisory"), run through `web_search_advanced_exa`, file the synthesis as a brief. Pressure-tests the doctrine end-to-end. |
 
 ## Next session — break-and-resume
@@ -51,8 +50,8 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 | Item | Priority | Notes |
 |---|---|---|
-| `.github/workflows/lint.yml` | high — doing as B′ this session | Runs `wiki_lint.py` on push + weekly cron. Informational, non-gating. |
-| Pre-commit hook (local, `.git/hooks/pre-commit`) | high — doing as B′ this session | Block commits containing `<server-ip>` (literal IP from `.local/server.md`), `\.env`, `.DS_Store`, `sk-…` API keys. Cheap insurance after the IP-scrub incident. |
+| ~~`.github/workflows/lint.yml`~~ | ✅ shipped as B′ (`33aca6c`) | Runs `wiki_lint.py` on push + weekly Mon 12:00 UTC cron + manual dispatch. Informational, non-gating. |
+| ~~Pre-commit hook (local)~~ | ✅ shipped as B′ (`33aca6c`) | `scripts/pre-commit.sh` blocks server IP / `.env*` / `.DS_Store` / `sk-…` API keys in staged additions. Install with `bash scripts/install-hooks.sh`. |
 | GitHub Issues for roadmap items | low | Could mirror this file as Issues. Overkill for a one-person project right now. Revisit if the roadmap grows past ~20 items. |
 | Dependabot / Renovate | skip | No `requirements.txt` to watch. |
 | LICENSE file | skip | Private repo. |
@@ -67,3 +66,4 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 | ROADMAP.md created | `526b174` | Forward-looking project plan; companion to `wiki/log.md` (chronological) and `LESSONS.md` (meta-lessons). |
 | **A** Crypto concept scaffold + cross-link 7 ticker reports | `4c6aa85` | Created `wiki/concepts/crypto-asset-taxonomy.md` (4 categories: store-of-value, programmable L1, memecoin/PoW, oracle middleware) and `wiki/concepts/oracle-networks.md` (LINK-focused). Added bidirectional `related:` edges across all 7 crypto ticker pages (btc/eth/sol/doge/ada/avax/link), the watchlist, and `wiki/index.md`. Folded original B.3 (ada/avax/link → watchlist backlinks) into this work. Lint clean; orphans 201 → 198. |
 | **B** Two loop-closers | `0d59a60` | (1) `stock-7-4-5.md` resolved: Tandiontong + Sitompul, GATR J. Bank. Fin. Review 2(2):21–27 (2017), Altman Z-Score + beta + inflation on Indonesian BEI, cluster `uncategorized→quant-finance`. (2) 3 undated `[NEEDS VERIFICATION]` in `deepseek-api.md` stamped `2026-04-25`. |
+| **B′** GitHub Actions lint workflow + local pre-commit hook | `33aca6c` | `.github/workflows/lint.yml` (push + Mon 12:00 UTC cron + manual dispatch). `scripts/pre-commit.sh` blocks server IP / `sk-…` keys / `.env*` / `.DS_Store`. `scripts/install-hooks.sh` symlinks the hook into `.git/hooks/`. Made `wiki_lint.py` portable (`__file__`-relative `WIKI` path) so CI can find the wiki. Hook validated against 5-pattern matrix + caught its own first commit attempt. Also moves the GitHub-specific dev infra "Pre-commit hook" + "lint workflow" rows out of the "under consideration" table. |
