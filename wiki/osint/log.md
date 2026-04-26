@@ -8,6 +8,28 @@ Newest entries on top.
 
 ---
 
+## [2026-04-26] ingest | K2: deep-read llm-wiki.md (Karpathy gist) — promote schema's pattern source from unread-stub → validated
+
+Triggered by user query: evaluate Karpathy's LLM Wiki gist (https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) against the current wiki. Side-effect of the evaluation: noticed `wiki/sources/llm-wiki.md` was itself an `unread-stub` despite being one of the two foundational pattern sources cited by `CLAUDE.md`. J/K-style promotion to fix.
+
+**Source-page rewrite** (`wiki/sources/llm-wiki.md`):
+- `title` corrected from malformed "# LLM Wiki A pattern…" → "LLM Wiki: a pattern for building personal knowledge bases using LLMs"
+- `author: Andrej Karpathy`, `URL: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f`
+- `length: 75 lines, ~1,500 words, ~12 KB`
+- `tags: [md, llm-agents, schema-pattern-source, karpathy]` (was `[md, unread-stub, llm-agents]`)
+- `maturity: draft → validated`; new `read_status: validated`; `updated: 2026-04-26`
+- New "Schema role" line in Raw Concept making the gist's foundational status explicit
+- Narrative rewritten: thesis (compounding wiki vs RAG), three layers, three ops, two index files, operational metaphor, plus a "Cemini-side adaptations" paragraph documenting where our schema goes beyond the gist (distribution layer, cluster taxonomy, maturity lifecycle, J/K prescribed-vs-deployed pattern, bidirectional `related:` enforcement + CI lint)
+- Snippets populated with 7 verbatim pulls (the thesis, the IDE/programmer/codebase metaphor, three-layer architecture, filed-back-answers, index.md+log.md with the parseable prefix, "tedious part is bookkeeping", Memex lineage)
+
+**Bidirectional cross-link** added: `wiki/sources/4-6-links.md` (Cemini-internal docx that evaluates `nvk/llm-wiki` + Karpathy's pattern alongside other links — surfaced by grep for "karpathy") gets `sources/llm-wiki.md` added to its `related:` and a Relations entry. Two-way edge.
+
+**Lint**: orphans 0, bidir 0, dangling 0, missing 0; cited-unread 221 → **220**. Top of cited-unread now `3-19-telegram-discord-research.md` at 11 inbound (unchanged).
+
+**Companion finding** (returned to user, not committed): the gist's "Obsidian as IDE" advice is now feasible — disk has 26 GB free, wiki is only 3.3 MB / 333 pages, Obsidian.app installed locally. Two compatibility nuances flagged: (a) macOS AppTranslocation if Obsidian is launched from DMG without dragging to /Applications; (b) our `@path/to/page.md` body Relations format isn't picked up by Obsidian's graph view by default — Breadcrumbs community plugin reads `related:` frontmatter natively. Not yet wired up — pending user Obsidian first-launch report.
+
+---
+
 ## [2026-04-26] ingest | K: deep-read 3-19-langgraph-scatter-gather — J pattern on next-highest cited-unread
 
 Resolves the highest-citation cited-unread stub remaining after J (`3-19-langgraph-scatter-gather-financial-analysis.md`, 12 inbound). Same J-pattern: source is a **prescriptive architectural blueprint** that the wiki had earlier collapsed into present-tense as-built framing on `@concepts/scatter-gather-topology.md` (Track C correctly retracted that on 2026-04-24; this pass converts the retraction into a resolved/validated reframe).
