@@ -8,6 +8,33 @@ Newest entries on top.
 
 ---
 
+## [2026-04-26] structural | D′: uncategorized-orphan triage (Opus) — 23 → 0 orphans; 2 new hub pages
+
+Single commit (`9968a44`), 33 files, +307 / -162. Closes the D sweep — every previously-orphaned source stub now has at least one inbound bidirectional `related:` edge.
+
+**The 23 D-survivors required per-page judgment** because their `clusters: [uncategorized]` + `needs-review` tags meant the D batch script (which routed by primary cluster) had nothing to match. Two of them (ai-9-4-3, ai-4-4-6) were also missed by D despite carrying `clusters: [llm-agents]` — the D matcher only walked sources flagged `uncategorized`. D′ catches both.
+
+**Routing decisions**:
+- → `concepts/llm-agent-systems.md` (4): ai-1-4-3 (memory forgetting in agents), ai-9-4-3 (UI→agent interface), ai-9-4-6 (AI agency framing), protcol-9-3-29 (efficient agent benchmarking).
+- → `entities/ticker-watchlist.md` (5): hedgge-fund-1-4-5 (Cao/Green/Li hedge-fund-stock preferences), stock-5-4-5 (Bessembinder Pt II tech-stock dominance), stock-6-4-5 (Chok/Qian comparable-stocks IPO entry rates), stocks-3-4-5 (Atmaz/Basak no-dividend pricing), stocks-4-4-5 (Racorean Crossing Stocks / positive Grassmannian geometry).
+- → `entities/components/kelly-cvar-risk-engine.md` (1): ssrn-3247865 (Kakushadze/Serur *151 Trading Strategies* compendium — canonical reference-breadth source for Kelly/CVaR application surface).
+- → `entities/data-sources/gdelt.md` (1): gdelt-4-3-29 (Yuke Zhang interpretable-ML macro alpha case study).
+- → `concepts/cryptographic-audit-trail.md` (1): crypto-5-4-11 (Kundu/Kompella PQ-crypto co-evolution; long-horizon threat-model context for the SHA-256 hash-chain layer).
+
+**Two new hub concept pages**:
+- `concepts/ai-ethics-and-governance.md` — index hub for 8 ethics/regulation/literacy stubs: ai-2-4-6 (workplace backfiring), ai-3-4-6 (AI literacy whitepaper), ai-3-4-7 (Tartaro/Héder Ethics-of-AI encyclopedia entry), ai-4-4-6 (Ligot AI-governance taxonomy — reclassified from `clusters: llm-agents` to `[ai-ethics]`; the paper is governance-first), ai-5-4-6 (Beyond-EU-AI-Act European-firm trajectories), ai-6-4-6 (Sylvia Lu Florida-L-Rev *Regulating AI Harms* legal typology), ai-8-4-6 (Jackson/Mei/Wang *AI Behavioral Science*), skills-2-4-5 (UK Gov AI-skills rapid review). Hub framed as backdrop literature for the AI-governance posture an institutional acquirer will probe during APA due diligence; cross-linked back to `concepts/llm-agent-systems.md`, `concepts/ip-sale-readiness.md`, and `sources/3-19-compliance-research.md`.
+- `concepts/corpus-overflow-out-of-scope.md` — librarian "we looked, we passed" page for 3 stubs that are inventoried but don't align with any active Cemini research thread: 3-29-20 (DVM real-time kernel-gen — ML-systems infra; Cemini doesn't train), ai-10-4-3 (GTA tensor-accelerator chip architecture — hardware design, Cemini is software-only on commodity Hetzner CPUs), wasertein-1-4-3 (uniform optimal-order Wasserstein quantisation — pure measure-theory, no foreseeable app path). Inclusion criteria + graduation criteria explicit on the page so future sweeps don't re-triage.
+
+**Index updates**: new `### Research corpus index hubs` section in `wiki/index.md` Concepts area surfacing all 4 corpus-index hubs (the 2 D′ creates plus `llm-agent-systems` + `rl-marl-research` from D, which were never indexed).
+
+**Per-source bookkeeping** inside each of the 23 stubs: tags `needs-review` replaced with the routing cluster tag (e.g. `llm-agents`, `quant-finance`, `ai-ethics`, `out-of-scope`); `clusters: [uncategorized]` replaced with the routing cluster; Primary/All-clusters fields under Raw Concept synced; body Relations placeholder replaced with the hub backlink + descriptive label; `updated:` bumped to 2026-04-26. Three sources (hedgge-fund-1-4-5, stock-6-4-5, stocks-4-4-5) had non-standard placeholder text from earlier Exa enrichment — touched up manually after the Python batch script.
+
+**Bidirectional gap fixes** from creating the new ai-ethics hub: added `ai-ethics-and-governance.md` backlinks to `concepts/ip-sale-readiness.md`, `concepts/llm-agent-systems.md`, and `sources/3-19-compliance-research.md`.
+
+**Lint results**: orphans 23 → **0**, bidirectional gaps 3 → 0 (the 3 fixes above), dangling/missing 0/0. Cited-unread 199 → 222 (+23 — the 23 newly de-orphaned stubs are now visible to lint as cited-but-unread; expected and identical pattern to D's 24 → 199 jump).
+
+---
+
 ## [2026-04-26] structural | D: orphan sweep — 198 → 23 orphans (−175); 2 new cluster-hub concept pages
 
 Single commit (`8b3258e`), 183 files, 1081 insertions / 530 deletions.
