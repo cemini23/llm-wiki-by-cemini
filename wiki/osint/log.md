@@ -8,6 +8,31 @@ Newest entries on top.
 
 ---
 
+## [2026-04-25] ingest | I: data-source expansion from public-apis curated list — 8 new entity stubs
+
+Librarian-hygiene pass against [public-apis](https://github.com/public-apis/public-apis). Triaged the financial / regulatory / weather / OSINT sections; rejected ~40 candidates that duplicate existing entities (Yahoo Finance, Polygon, Binance, etc.) or fail the curation bar (active research thread, viable free tier, commercial-friendly license for IP-sale inheritance). Single commit (`d337e51`), 15 files, 538 insertions.
+
+**8 new entity stubs at `wiki/entities/data-sources/`** — each `maturity: draft`, with full frontmatter / Relations / Raw Concept / Narrative (factual + Cemini integration angle marked "not yet wired") / Snippets (URLs + endpoint examples). Each lists exactly one strategic backlink hub to keep bidirectional churn manageable:
+
+| Entity | Hub | Why additive |
+|---|---|---|
+| `sec-edgar.md` | `entities/ticker-watchlist.md` | Primary-source XBRL fundamentals for the 23 equity tickers; no auth, public domain |
+| `federal-register-api.md` | `sources/cftc-anprm-prediction-markets-2026-03-16.md` | Programmatic FR Doc retrieval — the channel behind the ANPRM source we just ingested in G+H |
+| `openfigi.md` | `entities/ticker-watchlist.md` | Bloomberg's free symbology cross-reference; resolves MSTR-style ticker renames |
+| `coingecko.md` | `concepts/crypto-asset-taxonomy.md` | Reference data complementing exchange-only crypto access (long-tail, dev/social metrics) |
+| `nws-weather-gov.md` | `entities/data-sources/open-meteo.md` | US authoritative complement to Open-Meteo's global multi-model ensemble |
+| `opensanctions.md` | `concepts/ip-sale-readiness.md` | OFAC/EU/HMT/UN aggregated screening for M&A due-diligence |
+| `marketaux.md` | `entities/data-sources/finnhub.md` | Stock-tagged news + per-ticker sentiment for higher-recall ticker-event monitoring |
+| `nasdaq-data-link.md` | `entities/data-sources/finnhub.md` | Curated alt-data marketplace (formerly Quandl) — Sharadar fundamentals, Zacks estimates |
+
+**Bidirectional discipline**: 6 hub pages updated on both sides (frontmatter `related:` + body Relations bullet) — `ticker-watchlist.md` (×2: sec-edgar + openfigi), `cftc-anprm-prediction-markets-2026-03-16.md`, `crypto-asset-taxonomy.md`, `open-meteo.md`, `ip-sale-readiness.md`, `finnhub.md` (×2: marketaux + nasdaq-data-link).
+
+**Index update**: Data sources section grows 5 → 13 rows; resorted alphabetically.
+
+**Lint**: clean (0 bidirectional gaps, 0 dangling links, 0 missing `@path` mentions). Orphan count unchanged from baseline (198) since all 8 new pages have inbound edges by construction.
+
+---
+
 ## [2026-04-25] ingest+structural | G+H: post-Kalshi regulatory ingest + publisher's-exclusion APA/IAA disambiguation split
 
 Combined commit (`8f21f64`) covering two intertwined wiki threads from the same session: (G) ingest-back of the C brief into the wiki proper, and (H) splitting `concepts/publishers-exclusion.md` into APA-sense vs IAA-sense disambiguation per the long-standing Soon-row. Combined because 4 files (`entities/platforms/polymarket.md`, `concepts/ip-sale-readiness.md`, `sources/3-19-compliance-research.md`, `wiki/index.md`) carry hunks from both threads — per-hunk staging would be brittle.
