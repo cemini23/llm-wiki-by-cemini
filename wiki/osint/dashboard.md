@@ -17,7 +17,7 @@ Live in-editor views over the wiki frontmatter. Companion to `index.md` (catalog
 
 This page is excluded from `wiki_lint.py` orphan / bidir / dangling checks (same exemption as `index.md` and `log.md`).
 
-**Path-scoping note**: queries below assume the Obsidian vault is the **workspace root** (where `.obsidian/` lives) and the wiki is at `wiki/`. If you re-opened Obsidian with `wiki/` itself as the vault root, change every `"wiki/..."` path below to drop the `wiki/` prefix (e.g. `FROM "wiki/sources"` → `FROM "sources"`).
+**Path-scoping note**: queries below assume the Obsidian vault is the **workspace root** (where `.obsidian/` lives) and the wiki is at `wiki/`. If you re-opened Obsidian with `wiki/` itself as the vault root, change every `"wiki/..."` path below to drop the `wiki/` prefix (e.g. `FROM "sources"` → `FROM "sources"`).
 
 ---
 
@@ -27,10 +27,12 @@ If this block renders as a one-row table showing the vault name and a `.md` file
 
 ```dataviewjs
 const allMd = dv.pages();
-const wikiMd = dv.pages('"wiki"');
+const sources = dv.pages('"sources"');
+const concepts = dv.pages('"concepts"');
+const entities = dv.pages('"entities"');
 dv.table(
-  ["Vault name", "Total .md pages", "Pages under wiki/", "Dataview version"],
-  [[dv.app.vault.getName(), allMd.length, wikiMd.length, "running"]]
+  ["Vault", "Total .md", "sources/", "entities/", "concepts/", "Dataview"],
+  [[dv.app.vault.getName(), allMd.length, sources.length, entities.length, concepts.length, "running"]]
 );
 ```
 
@@ -41,9 +43,9 @@ dv.table(
 The next-deep-read priority list. Sources with `read_status: unread-stub` (or no `read_status` field on a `draft` source), ranked by how many other pages list them in `related:`. This is the live version of the J / K progression: J resolved the 13-inbound stub, K resolved the 12-inbound stub, K2 resolved an irony-grade hidden one — top of this table is the next candidate.
 
 ```dataviewjs
-const sources = dv.pages('"wiki/sources"');
+const sources = dv.pages('"sources"');
 const inbound = {};
-for (const p of dv.pages('"wiki"')) {
+for (const p of dv.pages()) {
   const rel = p.related || [];
   for (const r of rel) {
     const target = String(r).replace(/\.md$/, "").replace(/^.*\//, "");
@@ -106,7 +108,7 @@ LIMIT 30
 Where the corpus weight actually lives. Confirms the heavy clusters (rl-marl ~108, llm-agents ~60) and surfaces under-covered ones.
 
 ```dataviewjs
-const sources = dv.pages('"wiki/sources"');
+const sources = dv.pages('"sources"');
 const counts = {};
 for (const p of sources) {
   const cl = (p.clusters && p.clusters[0]) || "—";
@@ -124,7 +126,7 @@ Watchlist-companion view. Should match `entities/ticker-watchlist.md` and the se
 
 ```dataview
 TABLE category, ticker, maturity, updated
-FROM "wiki/entities/tickers"
+FROM "entities/tickers"
 SORT category, ticker
 ```
 
@@ -136,7 +138,7 @@ The cluster-hub topology D / D′ built out — concept pages that aggregate man
 
 ```dataview
 TABLE length(related) AS "outbound-edges", maturity
-FROM "wiki/concepts"
+FROM "concepts"
 WHERE related
 SORT length(related) DESC
 LIMIT 20
@@ -146,7 +148,7 @@ Plus entity hubs (ticker-watchlist, kelly-cvar-risk-engine, kalshi, langgraph, e
 
 ```dataview
 TABLE length(related) AS "outbound-edges", type, maturity
-FROM "wiki/entities"
+FROM "entities"
 WHERE length(related) >= 5
 SORT length(related) DESC
 LIMIT 20
@@ -159,7 +161,7 @@ LIMIT 20
 Pipeline view. Mostly-`draft` rows mean the column needs deep-read investment; mostly-`validated` rows mean the column is healthy.
 
 ```dataviewjs
-const all = dv.pages('"wiki"').where(p => p.type && p.type !== "meta");
+const all = dv.pages().where(p => p.type && p.type !== "meta");
 const matrix = {};
 for (const p of all) {
   const t = p.type || "—";
@@ -187,7 +189,7 @@ Every source that's been promoted to `read_status: validated` (the J / K / K2 pr
 
 ```dataview
 TABLE updated, length(related) AS "out-edges", clusters
-FROM "wiki/sources"
+FROM "sources"
 WHERE read_status = "validated"
 SORT updated DESC
 ```
