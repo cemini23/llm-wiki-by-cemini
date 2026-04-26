@@ -8,6 +8,28 @@ Newest entries on top.
 
 ---
 
+## [2026-04-26] structural | D: orphan sweep — 198 → 23 orphans (−175); 2 new cluster-hub concept pages
+
+Single commit (`8b3258e`), 183 files, 1081 insertions / 530 deletions.
+
+**Approach**: scripted batch cross-linking. Extracted `clusters:` frontmatter from all 198 orphan source stubs, mapped each primary cluster to a hub page, then ran bidirectional wiring (source `related:` → hub; hub `related:` → source; body Relations placeholder → real `@`-link). Skipped all 21 `uncategorized`/`needs-review` stubs (deferred to D′, Opus triage).
+
+**New hub pages created**:
+- `concepts/rl-marl-research.md` — index-only hub for the 80-page rl-marl cluster (dominant cluster in corpus). Narrative notes two sub-groups: Cemini-internal prescriptive engineering audits (3-10-*, 3-17-*, 3-18-*, 3-19-* prefixes) and academic MARL/signal papers.
+- `concepts/llm-agent-systems.md` — index-only hub for the 56-page llm-agents cluster. Linked bidirectionally to `entities/frameworks/langgraph.md`. Notes Cemini-internal orchestration audits vs. academic agent-framework papers.
+
+**Existing hubs extended**:
+- `entities/components/kelly-cvar-risk-engine.md` — +20 (options-derivatives + portfolio-strategy sources)
+- `entities/platforms/kalshi.md` — +8 (market-microstructure + prediction-markets)
+- `entities/ticker-watchlist.md` — +6 (quant-finance + time-series)
+- `concepts/crypto-asset-taxonomy.md` — +4 (crypto sources)
+- `entities/frameworks/langgraph.md` — +3 (ml-methods + llm-agent-systems hub backlink)
+- `entities/infrastructure/hetzner.md` — +1 (infrastructure)
+
+**Lint results**: orphans 198→23 (all survivors are `uncategorized`), 0 bidirectional gaps, 0 dangling links, 0 missing @path. Cited-unread 24→199 — expected: previously-invisible unread stubs are now cited by their hubs, making them discoverable for future deep-reads.
+
+---
+
 ## [2026-04-25] ingest | J: deep-read 3-10-cryptographic-research — reframe RETRACTED claims as prescribed-not-built
 
 Single commit (`4d4139a`), 2 files, 31 insertions / 8 deletions. Resolves the highest-citation cited-unread stub (13 inbound); lint cited-unread count 25 → 24.
