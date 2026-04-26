@@ -8,6 +8,30 @@ Newest entries on top.
 
 ---
 
+## [2026-04-26] structural | L: Dataview dashboard for live in-editor views over wiki frontmatter
+
+Direct follow-on to K2 (Karpathy gist deep-read) and the Obsidian first-launch session. The gist's "Dataview" tip became actionable once Obsidian was wired and graph view confirmed working — this lands a `wiki/dashboard.md` that replaces ~70% of `wiki_lint.py` text output with live, sortable, in-editor tables.
+
+**New page** (`wiki/dashboard.md`, 8 query sections, ~200 lines):
+1. **Cited-unread queue** — `dataviewjs` scan of all `related:` arrays + filter for `read_status: unread-stub` (or `draft` source without `validated` read_status), ranked by inbound count. The live equivalent of `wiki_lint.py` output #5; top of this table is always the next-deep-read priority. Drives J / K / K2 / K3 progression.
+2. **Recently-updated** — last 25 by `updated:`. Useful right after a session to confirm everything intended got the date bump.
+3. **Draft pages by staleness** — oldest-first. Surfaces drafts that need either promotion or deliberate park.
+4. **Source-cluster distribution** — `dataviewjs` count of primary-cluster occurrences. Confirms heavy clusters (rl-marl ~108, llm-agents ~60) and surfaces under-covered ones.
+5. **Tickers by category + maturity** — should match `entities/ticker-watchlist.md` and the server's `tickers.json`.
+6. **Concept hubs by outbound count** — D / D′ topology check; top of the list should be `rl-marl-research`, `llm-agent-systems`, plus the 2 D′ creates (`ai-ethics-and-governance`, `corpus-overflow-out-of-scope`). Same query rerun for entity hubs (ticker-watchlist, kelly-cvar, kalshi, langgraph).
+7. **Maturity × type matrix** — `dataviewjs` cross-tab. Pipeline view of the corpus.
+8. **Validated reads — the deep-read trail** — every J/K/K2-style promotion at a glance.
+
+Plus a "Notes for future query authors" section with the dataview / dataviewjs syntax bits that mattered.
+
+**Lint script** (`scripts/wiki_lint.py`): added `dashboard.md` to the navigational-exemption tuple alongside `index.md` and `log.md`. Banner string updated.
+
+**Setup** (one-time, ~30 sec, user-side): Settings → Community plugins → Browse → Dataview → Install + Enable; toggle "Enable JavaScript queries" in Dataview settings; reload. Page renders.
+
+**Lint**: orphans 0, bidir 0, dangling 0, missing 0; still 331 pages indexed (dashboard.md exempt). Cited-unread 220 (unchanged — dashboard adds zero `related:` edges).
+
+---
+
 ## [2026-04-26] ingest | K2: deep-read llm-wiki.md (Karpathy gist) — promote schema's pattern source from unread-stub → validated
 
 Triggered by user query: evaluate Karpathy's LLM Wiki gist (https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) against the current wiki. Side-effect of the evaluation: noticed `wiki/sources/llm-wiki.md` was itself an `unread-stub` despite being one of the two foundational pattern sources cited by `CLAUDE.md`. J/K-style promotion to fix.

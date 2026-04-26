@@ -80,7 +80,7 @@ all_paths = set()
 
 for p in WIKI.rglob("*.md"):
     rel = str(p.relative_to(WIKI))
-    if rel in ("index.md", "log.md"):  # navigational, exempt
+    if rel in ("index.md", "log.md", "dashboard.md"):  # navigational, exempt
         continue
     text = p.read_text(errors="replace")
     fm = parse_frontmatter(text)
@@ -131,7 +131,7 @@ for src, fm in pages.items():
         continue
     for m in AT_PATH_RE.finditer(body):
         mentioned = normalize_path(m.group(1))
-        if mentioned not in all_paths and mentioned not in ("index.md", "log.md"):
+        if mentioned not in all_paths and mentioned not in ("index.md", "log.md", "dashboard.md"):
             missing_mentions[mentioned].add(src)
 
 # -- 5: cited unread stubs -----------------------------------------------
@@ -191,7 +191,7 @@ def header(s):
     print(s)
     print("=" * 78)
 
-print(f"Wiki lint scan — {len(all_paths)} pages indexed (excluding index.md / log.md)")
+print(f"Wiki lint scan — {len(all_paths)} pages indexed (excluding index.md / log.md / dashboard.md)")
 print(f"Outbound edges: {sum(len(v) for v in outbound.values())}; "
       f"Inbound edge coverage: {len(inbound)} pages")
 
