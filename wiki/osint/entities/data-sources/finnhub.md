@@ -8,10 +8,12 @@ related:
   - sources/3-19-kalshi-trading-strategy-research.md
   - entities/frameworks/finbert.md
   - entities/data-sources/gdelt.md
+  - entities/data-sources/marketaux.md
+  - entities/data-sources/nasdaq-data-link.md
   - concepts/publishers-exclusion-apa.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-25
 ---
 
 ## Relations
@@ -20,6 +22,8 @@ updated: 2026-04-23
 - @sources/3-19-kalshi-trading-strategy-research.md
 - @entities/frameworks/finbert.md
 - @entities/data-sources/gdelt.md
+- @entities/data-sources/marketaux.md — companion / complement: MarketAux differentiates from Finnhub's news endpoints by ticker-tagging at the article level + sentiment-by-default; pair them for higher-recall ticker-event monitoring on the 30-symbol watchlist
+- @entities/data-sources/nasdaq-data-link.md — companion / complement: NDL is the marketplace of curated historical fundamentals (Sharadar) + alt-data, sister to Finnhub's real-time + recent-fundamentals API
 - @concepts/publishers-exclusion-apa.md
 
 ## Raw Concept

@@ -12,6 +12,7 @@ related:
   - entities/tickers/ada.md
   - entities/tickers/avax.md
   - entities/tickers/link.md
+  - entities/data-sources/coingecko.md
   - concepts/oracle-networks.md
 maturity: validated
 created: 2026-04-25
@@ -22,6 +23,7 @@ updated: 2026-04-25
 
 - @entities/ticker-watchlist.md — parent watchlist this taxonomy organizes
 - @entities/tickers/btc.md, @entities/tickers/eth.md, @entities/tickers/sol.md, @entities/tickers/doge.md, @entities/tickers/ada.md, @entities/tickers/avax.md, @entities/tickers/link.md — the 7 crypto-native tickers being categorized
+- @entities/data-sources/coingecko.md — canonical reference-data source for the market-cap / FDV / dev-activity / circulating-supply facts that anchor each of the 4 functional categories on a per-ticker basis
 - @concepts/oracle-networks.md — sister concept, deeper treatment of the middleware category (LINK)
 
 ## Raw Concept

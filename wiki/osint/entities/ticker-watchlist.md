@@ -33,6 +33,8 @@ related:
   - entities/tickers/tsla.md
   - entities/platforms/polygon.md
   - entities/infrastructure/yfinance.md
+  - entities/data-sources/sec-edgar.md
+  - entities/data-sources/openfigi.md
   - concepts/equity-intraday-backfill-gap.md
   - concepts/crypto-asset-taxonomy.md
   - concepts/oracle-networks.md
@@ -76,6 +78,10 @@ Cross-cutting concept pages organizing the watchlist:
 - @concepts/crypto-asset-taxonomy.md — functional taxonomy of the 7 crypto-native assets (4 categories: store-of-value, programmable L1, memecoin/payments PoW, oracle middleware)
 - @concepts/oracle-networks.md — deeper treatment of the oracle/middleware category (LINK is the canonical implementation)
 - @concepts/equity-intraday-backfill-gap.md — equity intraday data-completeness caveat across all equity tickers (Polygon → yfinance EOD self-heal)
+
+Reference-data sources for ticker-level enrichment:
+- @entities/data-sources/sec-edgar.md — primary-source fundamentals + filings for the 23 equity tickers (free, no auth, public domain); the canonical XBRL feed behind any company-facts call
+- @entities/data-sources/openfigi.md — Bloomberg's free symbology cross-reference (FIGI ↔ ISIN ↔ CUSIP ↔ ticker); resolves ticker renames (e.g. MicroStrategy → Strategy / MSTR identity continuity) and disambiguates cross-venue listings
 
 ## Raw Concept
 

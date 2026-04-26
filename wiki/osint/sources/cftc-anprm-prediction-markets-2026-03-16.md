@@ -9,6 +9,7 @@ related:
   - sources/cftc-v-arizona-tro-liburdi-2026-04-10.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
+  - entities/data-sources/federal-register-api.md
   - concepts/dcm-state-preemption.md
 maturity: validated
 read_status: validated
@@ -23,6 +24,7 @@ updated: 2026-04-25
 - @sources/cftc-v-arizona-tro-liburdi-2026-04-10.md — TRO opinion cites the parallel ANPRM as evidence the regime is in active rulemaking
 - @entities/platforms/kalshi.md — primary DCM in scope of the rulemaking
 - @entities/platforms/polymarket.md — adjacent on-chain platform also subject to the rulemaking's "gaming" definition
+- @entities/data-sources/federal-register-api.md — programmatic retrieval channel for this and adjacent FR docs; the wiki's standing path for any future RIN 3038-* lookup or comment-window monitoring
 - @concepts/dcm-state-preemption.md — the ANPRM's Question 19 (CEA §5c(c)(5)(C) "gaming" scope) is the statutory hinge of the federal-vs-state preemption fight
 
 ## Raw Concept

@@ -33,6 +33,7 @@ related:
   - entities/platforms/hyperliquid.md
   - entities/platforms/kalshi.md
   - entities/infrastructure/deepseek-api.md
+  - entities/data-sources/opensanctions.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-25
@@ -68,6 +69,7 @@ updated: 2026-04-25
 - @entities/platforms/alpaca.md
 - @entities/platforms/hyperliquid.md
 - @entities/platforms/kalshi.md
+- @entities/data-sources/opensanctions.md — pre-emptive sanctions screening on Cemini's commercial counterparty set (data vendors, exchange relationships) so any acquirer due-diligence pass surfaces no surprise hits — adjacent to the publishers-exclusion deal-killer ledger entries
 
 ## Raw Concept
 

@@ -334,10 +334,18 @@ Execution and reference venues wired into (or referenced by) the Cemini stack.
 
 Market, macro, alt-data feeds.
 
-- [GDELT](entities/data-sources/gdelt.md) — Global event database (CAMEO codes, Goldstein scale, tone) — data-source, alt-data, events
-- [FRED](entities/data-sources/fred.md) — Federal Reserve economic data; backbone of Macro Weather regime — data-source, macro
-- [Open-Meteo](entities/data-sources/open-meteo.md) — Ensemble NWP weather forecasts; Kalshi weather-contract input — data-source, weather
+- [CoinGecko](entities/data-sources/coingecko.md) — Crypto reference data (market cap, dev/social metrics) across thousands of coins — data-source, crypto-native, reference-data
+- [Federal Register API](entities/data-sources/federal-register-api.md) — Programmatic access to FR documents (RIN, FR Doc, citation) — data-source, regulatory-primary-source, government
 - [Finnhub](entities/data-sources/finnhub.md) — Commercial market data API (equities, fundamentals, transcripts) — data-source, equities
+- [FRED](entities/data-sources/fred.md) — Federal Reserve economic data; backbone of Macro Weather regime — data-source, macro
+- [GDELT](entities/data-sources/gdelt.md) — Global event database (CAMEO codes, Goldstein scale, tone) — data-source, alt-data, events
+- [MarketAux](entities/data-sources/marketaux.md) — Stock-tagged news API with per-ticker sentiment scoring — data-source, news, sentiment
+- [Nasdaq Data Link](entities/data-sources/nasdaq-data-link.md) — Marketplace for curated alt-data and historical fundamentals (formerly Quandl) — data-source, alt-data, fundamentals
+- [NWS / weather.gov](entities/data-sources/nws-weather-gov.md) — US National Weather Service authoritative forecasts + observations + alerts — data-source, weather, government
+- [Open-Meteo](entities/data-sources/open-meteo.md) — Ensemble NWP weather forecasts; Kalshi weather-contract input — data-source, weather
+- [OpenFIGI](entities/data-sources/openfigi.md) — Bloomberg's free symbology API (FIGI ↔ ISIN ↔ CUSIP ↔ ticker) — data-source, symbology, infrastructure
+- [OpenSanctions](entities/data-sources/opensanctions.md) — Aggregated sanctions + PEP data (OFAC/EU/HMT/UN, CC-BY 4.0) — data-source, osint, compliance
+- [SEC EDGAR](entities/data-sources/sec-edgar.md) — SEC filings + XBRL company-facts REST API (no auth, public domain) — data-source, equities, fundamentals
 - [Telethon](entities/data-sources/telethon.md) — MTProto library for Telegram channel ingestion — library, data-source, alt-data
 
 ### Infrastructure & databases
