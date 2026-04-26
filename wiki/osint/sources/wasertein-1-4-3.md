@@ -1,18 +1,18 @@
 ---
 title: Uniform optimal-order Wasserstein quantisation Maja Gw´ o´ zd´ z
 type: source
-tags: [pdf, unread-stub, needs-review]
-clusters: [uncategorized]
-related: []
+tags: [pdf, unread-stub, out-of-scope]
+clusters: [out-of-scope]
+related:
+  - concepts/corpus-overflow-out-of-scope.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
-
+- @concepts/corpus-overflow-out-of-scope.md — Corpus overflow — uniform optimal-order Wasserstein quantisation (out-of-scope: pure math)
 ## Raw Concept
 
 - **Original title**: Uniform optimal-order Wasserstein quantisation Maja Gw´ o´ zd´ z
@@ -22,7 +22,7 @@ updated: 2026-04-23
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: 15p
 - **Read status**: unread-stub
-- **Primary cluster**: uncategorized
+- **Primary cluster**: out-of-scope
 - **All clusters**: _none matched_
 - **Quality flags**: no-cluster-match — review on first read
 

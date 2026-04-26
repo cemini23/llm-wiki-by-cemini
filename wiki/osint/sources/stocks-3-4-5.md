@@ -1,18 +1,18 @@
 ---
 title: Stock Market and No-Dividend Stocks∗ Adem Atmaz Krannert School of Management Purdue University Suleyman Basak London Business School
 type: source
-tags: [pdf, unread-stub, needs-review]
-clusters: [uncategorized]
-related: []
+tags: [pdf, unread-stub, quant-finance]
+clusters: [quant-finance]
+related:
+  - entities/ticker-watchlist.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
-
+- @entities/ticker-watchlist.md — Cemini watchlist — Atmaz/Basak no-dividend-stocks pricing model
 ## Raw Concept
 
 - **Original title**: Stock Market and No-Dividend Stocks∗ Adem Atmaz Krannert School of Management Purdue University Suleyman Basak London Business School
@@ -22,7 +22,7 @@ updated: 2026-04-23
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: 60p
 - **Read status**: unread-stub
-- **Primary cluster**: uncategorized
+- **Primary cluster**: quant-finance
 - **All clusters**: _none matched_
 - **Quality flags**: no-cluster-match — review on first read
 

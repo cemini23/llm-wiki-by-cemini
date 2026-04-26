@@ -33,6 +33,7 @@ related:
   - sources/sort-5-4-3.md
   - sources/sort-7-4-3.md
   - sources/sortino-3-4-3.md
+  - sources/ssrn-3247865.md
   - sources/stocks-2-4-5.md
 maturity: validated
 created: 2026-04-23

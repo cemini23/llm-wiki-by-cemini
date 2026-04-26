@@ -44,10 +44,11 @@ related:
   - sources/cftc-anprm-prediction-markets-2026-03-16.md
   - sources/cftc-selig-house-ag-testimony-2026-04-16.md
   - sources/cftc-v-arizona-tro-liburdi-2026-04-10.md
+  - concepts/ai-ethics-and-governance.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-04-26
 ---
 
 ## Relations
@@ -92,6 +93,7 @@ updated: 2026-04-25
 - @sources/cftc-anprm-prediction-markets-2026-03-16.md — primary-source FR docket for the ANPRM this source's S7 references; matched-pair closure
 - @sources/cftc-selig-house-ag-testimony-2026-04-16.md — Chairman's on-the-record defense of the ANPRM agenda + AZ/CT/IL counter-suit confirmation
 - @sources/cftc-v-arizona-tro-liburdi-2026-04-10.md — first federal-court ruling in this cycle finding CFTC "likely to ultimately win" on preemption
+- @concepts/ai-ethics-and-governance.md — D′ 2026-04-26 — broader academic/policy backdrop against which this Cemini-internal compliance synthesis was framed
 
 ## Raw Concept
 

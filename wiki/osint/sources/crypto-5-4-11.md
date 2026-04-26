@@ -1,18 +1,18 @@
 ---
 title: The Quantum-Cryptographic Co-evolution Ashish Kundu, Ramana Kompella Cisco Research
 type: source
-tags: [pdf, unread-stub, needs-review]
-clusters: [uncategorized]
-related: []
+tags: [pdf, unread-stub, cryptography]
+clusters: [cryptography]
+related:
+  - concepts/cryptographic-audit-trail.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
-
+- @concepts/cryptographic-audit-trail.md — Cryptographic audit trail — PQ-crypto co-evolution context
 ## Raw Concept
 
 - **Original title**: The Quantum-Cryptographic Co-evolution Ashish Kundu, Ramana Kompella Cisco Research
@@ -22,7 +22,7 @@ updated: 2026-04-23
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: 6p
 - **Read status**: unread-stub
-- **Primary cluster**: uncategorized
+- **Primary cluster**: cryptography
 - **All clusters**: _none matched_
 - **Quality flags**: no-cluster-match — review on first read
 

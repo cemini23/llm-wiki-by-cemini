@@ -451,6 +451,15 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [CAMEO codes](concepts/cameo-codes.md) ⚠ — GDELT event-type taxonomy (~300 hierarchical codes) — stub, events-schema
 - [Goldstein scale](concepts/goldstein-scale.md) ⚠ — -10/+10 conflict-cooperation intensity metric per GDELT event — stub, intensity-metric
 
+### Research corpus index hubs
+
+Librarian bookkeeping — index pages that cluster otherwise-orphaned source stubs by theme. Not first-order research content; promote individual sources to dedicated concept pages when they become load-bearing.
+
+- [LLM agent systems — corpus index](concepts/llm-agent-systems.md) — Hub for the LLM-agents cluster (60 sources): agent scaffolding, multi-agent coordination, tool-use, memory, benchmarking, financial LLM applications. Index-only; sister to the AI-ethics hub. — concept, llm-agents, research-index
+- [RL/MARL research — corpus index](concepts/rl-marl-research.md) — Hub for the RL / multi-agent RL cluster (80 sources, the corpus's largest). PPO/MAPPO/SAC/A3C variants, multi-agent coordination, reward shaping, finance-RL applications. — concept, rl-marl, research-index
+- [AI ethics & governance — corpus index](concepts/ai-ethics-and-governance.md) — Hub for the AI ethics/regulation/literacy cluster (8 sources): EU AI Act trajectories, harm typology, workforce literacy, behavioral framing. Backdrop for institutional-acquirer due-diligence on Cemini's governance posture. — concept, ai-ethics, ai-governance, research-index
+- [Corpus overflow — out-of-scope](concepts/corpus-overflow-out-of-scope.md) — Librarian "we looked, we passed" marker for source stubs that bootstrapped into the corpus but aren't aligned with any active Cemini research thread (currently 3: ML-systems infra, hardware accelerators, pure measure-theory math). Keeps the inventory honest and lint clean without force-routing. — concept, corpus-hygiene, out-of-scope
+
 ## How this index works
 
 - **Sources** are grouped by first matching cluster (`rl-marl`, `llm-agents`, etc.). Multi-cluster tags are shown in `[+tag, +tag]` notation after the row.

@@ -14,9 +14,10 @@ related:
   - concepts/skill-vetting.md
   - concepts/equity-intraday-backfill-gap.md
   - entities/platforms/hyperliquid.md
+  - sources/crypto-5-4-11.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-04-26
 audit_date: 2026-04-24
 ---
 
@@ -32,6 +33,7 @@ audit_date: 2026-04-24
 - @concepts/skill-vetting.md
 - @concepts/equity-intraday-backfill-gap.md — backfill INSERTs anchor into the same hash chain
 - @entities/platforms/hyperliquid.md
+- @sources/crypto-5-4-11.md — *The Quantum-Cryptographic Co-evolution* (Kundu & Kompella, Cisco Research) — forward-looking PQ-cryptography landscape relevant to the SHA-256 hash-chain layer's threat-model assumptions (D′ 2026-04-26 routing)
 
 ## Raw Concept
 

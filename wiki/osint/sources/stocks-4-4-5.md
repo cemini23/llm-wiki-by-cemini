@@ -1,17 +1,18 @@
 ---
 title: "Crossing Stocks and the Positive Grassmannian I: The Geometry behind Stock Market"
 type: source
-tags: [pdf, unread-stub, mathematical-finance, geometry, grassmannian]
-clusters: [uncategorized]
-related: []
+tags: [pdf, unread-stub, mathematical-finance, geometry, grassmannian, quant-finance]
+clusters: [quant-finance]
+related:
+  - entities/ticker-watchlist.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub. Provenance enriched 2026-04-25 via Exa web_search; deep read still pending.)*
+- @entities/ticker-watchlist.md — Cemini watchlist — Crossing Stocks / positive Grassmannian geometry of stock-market (provenance enriched 2026-04-25 via Exa web_search; D′ 2026-04-26 cross-link; deep read still pending)
 
 ## Raw Concept
 
@@ -24,7 +25,7 @@ updated: 2026-04-25
 - **External IDs**: SSRN 2512437; arXiv:1402.1281
 - **Length**: 21p
 - **Read status**: unread-stub (provenance only — body not yet ingested)
-- **Primary cluster**: uncategorized
+- **Primary cluster**: quant-finance
 - **All clusters**: _none matched — candidate cluster: mathematical-finance / market-microstructure-geometry_
 - **Quality flags**: no-cluster-match — review on first read
 

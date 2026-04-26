@@ -1,18 +1,18 @@
 ---
 title: "Extreme Stock Market Performers, Part II: Do Technology Stocks Dominate?"
 type: source
-tags: [pdf, unread-stub, needs-review]
-clusters: [uncategorized]
-related: []
+tags: [pdf, unread-stub, quant-finance]
+clusters: [quant-finance]
+related:
+  - entities/ticker-watchlist.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
-
+- @entities/ticker-watchlist.md — Cemini watchlist — Bessembinder extreme stock performers (tech-stock dominance, Part II)
 ## Raw Concept
 
 - **Original title**: Extreme Stock Market Performers, Part II: Do Technology Stocks Dominate?
@@ -22,7 +22,7 @@ updated: 2026-04-23
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: 15p
 - **Read status**: unread-stub
-- **Primary cluster**: uncategorized
+- **Primary cluster**: quant-finance
 - **All clusters**: _none matched_
 - **Quality flags**: no-cluster-match — review on first read
 

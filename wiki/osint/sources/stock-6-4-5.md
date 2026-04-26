@@ -1,17 +1,18 @@
 ---
 title: "Comparable Stocks, Boundedly Rational Stock Markets and IPO Entry Rates"
 type: source
-tags: [pdf, unread-stub, ipo, behavioral-finance, bounded-rationality, nasdaq]
-clusters: [uncategorized]
-related: []
+tags: [pdf, unread-stub, ipo, behavioral-finance, bounded-rationality, nasdaq, quant-finance]
+clusters: [quant-finance]
+related:
+  - entities/ticker-watchlist.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub. Provenance enriched 2026-04-25 via Exa web_search; deep read still pending.)*
+- @entities/ticker-watchlist.md — Cemini watchlist — comparable-stocks IPO entry-rate dynamics (provenance enriched 2026-04-25 via Exa web_search; D′ 2026-04-26 cross-link; deep read still pending)
 
 ## Raw Concept
 
@@ -24,7 +25,7 @@ updated: 2026-04-25
 - **External IDs**: SSRN 2654872; JEL R53
 - **Length**: 8p
 - **Read status**: unread-stub (provenance only — body not yet ingested)
-- **Primary cluster**: uncategorized
+- **Primary cluster**: quant-finance
 - **All clusters**: _none matched — candidate cluster: behavioral-finance / IPO-microstructure_
 - **Quality flags**: no-cluster-match — review on first read
 

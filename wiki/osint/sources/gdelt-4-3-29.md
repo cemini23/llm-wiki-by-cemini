@@ -1,18 +1,18 @@
 ---
 title: "Interpretable Machine Learning for Macro Alpha: A News Sentiment Case Study Yuke Zhang∗"
 type: source
-tags: [pdf, unread-stub, needs-review]
-clusters: [uncategorized]
-related: []
+tags: [pdf, unread-stub, alt-data]
+clusters: [alt-data]
+related:
+  - entities/data-sources/gdelt.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
-
+- @entities/data-sources/gdelt.md — GDELT data-source — interpretable-ML macro-alpha case study
 ## Raw Concept
 
 - **Original title**: Interpretable Machine Learning for Macro Alpha: A News Sentiment Case Study Yuke Zhang∗
@@ -22,7 +22,7 @@ updated: 2026-04-23
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: 12p
 - **Read status**: unread-stub
-- **Primary cluster**: uncategorized
+- **Primary cluster**: alt-data
 - **All clusters**: _none matched_
 - **Quality flags**: no-cluster-match — review on first read
 

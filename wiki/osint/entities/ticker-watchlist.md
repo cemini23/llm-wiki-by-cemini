@@ -41,7 +41,12 @@ related:
   - sources/3-29-13.md
   - sources/4-3-link-research.md
   - sources/captum-re-4-3.md
+  - sources/hedgge-fund-1-4-5.md
+  - sources/stock-5-4-5.md
+  - sources/stock-6-4-5.md
   - sources/stock-7-4-5.md
+  - sources/stocks-3-4-5.md
+  - sources/stocks-4-4-5.md
   - sources/trading-2-4-5.md
   - sources/trading-4-5.md
 maturity: core

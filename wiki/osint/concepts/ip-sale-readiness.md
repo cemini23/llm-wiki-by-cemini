@@ -34,9 +34,10 @@ related:
   - entities/platforms/kalshi.md
   - entities/infrastructure/deepseek-api.md
   - entities/data-sources/opensanctions.md
+  - concepts/ai-ethics-and-governance.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-04-26
 ---
 
 ## Relations
@@ -70,6 +71,7 @@ updated: 2026-04-25
 - @entities/platforms/hyperliquid.md
 - @entities/platforms/kalshi.md
 - @entities/data-sources/opensanctions.md — pre-emptive sanctions screening on Cemini's commercial counterparty set (data vendors, exchange relationships) so any acquirer due-diligence pass surfaces no surprise hits — adjacent to the publishers-exclusion deal-killer ledger entries
+- @concepts/ai-ethics-and-governance.md — D′ 2026-04-26 — backdrop literature for the AI-governance posture an institutional acquirer will probe during APA due-diligence (EU AI Act exposure, harm-typology familiarity, workforce-policy fluency)
 
 ## Raw Concept
 

@@ -11,6 +11,7 @@ related:
   - sources/3-19-langgraph-scatter-gather-financial-analysis.md
   - sources/3-29-research-4.md
   - sources/gdelt-1-3-29.md
+  - sources/gdelt-4-3-29.md
   - concepts/cameo-codes.md
   - concepts/goldstein-scale.md
   - entities/frameworks/finbert.md
@@ -18,7 +19,7 @@ related:
   - entities/data-sources/finnhub.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-26
 ---
 
 ## Relations
@@ -30,6 +31,7 @@ updated: 2026-04-24
 - @sources/3-19-langgraph-scatter-gather-financial-analysis.md
 - @sources/3-29-research-4.md
 - @sources/gdelt-1-3-29.md
+- @sources/gdelt-4-3-29.md — interpretable ML for macro alpha using GDELT news-sentiment features (D′ 2026-04-26)
 - @concepts/cameo-codes.md
 - @concepts/goldstein-scale.md
 - @entities/frameworks/finbert.md

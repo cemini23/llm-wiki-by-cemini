@@ -21,11 +21,14 @@ related:
   - sources/agents.md
   - sources/agents4.md
   - sources/agents5.md
+  - sources/ai-1-4-3.md
   - sources/ai-2-4-3.md
   - sources/ai-4-4-3.md
   - sources/ai-7-4-3.md
   - sources/ai-7-4-6.md
   - sources/ai-8-4-3.md
+  - sources/ai-9-4-3.md
+  - sources/ai-9-4-6.md
   - sources/ai-agent-skills-for-financial-applications.md
   - sources/captum-4-3-2.md
   - sources/crypto-4-11.md
@@ -46,6 +49,7 @@ related:
   - sources/llm-4-3-6.md
   - sources/llm-re-4-3.md
   - sources/llm-wiki.md
+  - sources/protcol-9-3-29.md
   - sources/protocol-10-3-29.md
   - sources/protocol-3-3-29.md
   - sources/protocol-4-3-29.md
@@ -59,6 +63,7 @@ related:
   - sources/sort-6-4-3.md
   - sources/sort-8-4-3.md
   - entities/frameworks/langgraph.md
+  - concepts/ai-ethics-and-governance.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-04-26
@@ -83,11 +88,14 @@ updated: 2026-04-26
 - @sources/agents.md — LLM agent-systems source in the Cemini research corpus
 - @sources/agents4.md — LLM agent-systems source in the Cemini research corpus
 - @sources/agents5.md — LLM agent-systems source in the Cemini research corpus
+- @sources/ai-1-4-3.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26)
 - @sources/ai-2-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/ai-4-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/ai-7-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/ai-7-4-6.md — LLM agent-systems source in the Cemini research corpus
 - @sources/ai-8-4-3.md — LLM agent-systems source in the Cemini research corpus
+- @sources/ai-9-4-3.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26 — was orphan despite cluster: llm-agents)
+- @sources/ai-9-4-6.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26)
 - @sources/ai-agent-skills-for-financial-applications.md — LLM agent-systems source in the Cemini research corpus
 - @sources/captum-4-3-2.md — LLM agent-systems source in the Cemini research corpus
 - @sources/crypto-4-11.md — LLM agent-systems source in the Cemini research corpus
@@ -108,6 +116,7 @@ updated: 2026-04-26
 - @sources/llm-4-3-6.md — LLM agent-systems source in the Cemini research corpus
 - @sources/llm-re-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/llm-wiki.md — LLM agent-systems source in the Cemini research corpus
+- @sources/protcol-9-3-29.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26 — efficient AI-agent benchmarking)
 - @sources/protocol-10-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/protocol-3-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/protocol-4-3-29.md — LLM agent-systems source in the Cemini research corpus
@@ -121,10 +130,11 @@ updated: 2026-04-26
 - @sources/sort-6-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/sort-8-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @entities/frameworks/langgraph.md — the operative LLM orchestration framework in the Cemini stack; this hub indexes the broader agent-systems research that informed the LangGraph architecture choice
+- @concepts/ai-ethics-and-governance.md — sister hub: agent-architecture sources sit here, governance-of-those-agents (EU-AI-Act, harm typology, behavioral framing) sits in the ethics hub
 
 ## Raw Concept
 
-Hub page for the LLM-agents cluster of the Cemini research corpus (56 sources — second-largest cluster at bootstrap). Sources cover agent scaffolding, multi-agent coordination, tool-use patterns, coding agents, memory architectures, and financial LLM applications.
+Hub page for the LLM-agents cluster of the Cemini research corpus (60 sources — second-largest cluster at bootstrap; +4 from D′ 2026-04-26 sweep adding `ai-1-4-3`, `ai-9-4-3`, `ai-9-4-6`, `protcol-9-3-29`). Sources cover agent scaffolding, multi-agent coordination, tool-use patterns, coding agents, memory architectures, agent benchmarking, and financial LLM applications.
 
 This page is a discovery index. Sources should be individually deep-read before findings are promoted to entity or concept pages.
 
