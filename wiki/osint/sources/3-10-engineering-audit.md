@@ -3,15 +3,16 @@ title: "Technical Research Audit: Data Pipeline and Feature Engineering Optimiza
 type: source
 tags: [docx, rl-marl, portfolio-strategy, market-microstructure, ml-methods, cemini-internal, polars, timescaledb, continuous-aggregates, normalization, multi-timeframe, orjson, pandas]
 clusters: [rl-marl, portfolio-strategy, market-microstructure, ml-methods, cemini-internal]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

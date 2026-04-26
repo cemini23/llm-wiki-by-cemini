@@ -3,15 +3,16 @@ title: "Differential Machine Learning for 0DTE Options with Stochastic Volatilit
 type: source
 tags: [pdf, options-derivatives, ml-methods, 0dte, dml, bates-model, pide, stochastic-volatility, jump-diffusion, greeks, autodiff, heston, merton]
 clusters: [options-derivatives, ml-methods]
-related: []
+related:
+  - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept
 

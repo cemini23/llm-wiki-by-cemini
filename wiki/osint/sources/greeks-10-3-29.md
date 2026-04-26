@@ -3,15 +3,16 @@ title: "Amortizing Perpetual Options (AmPOs)"
 type: source
 tags: [pdf, options-derivatives, perpetual-options, defi, panoptic, installment-options, greeks, black-scholes]
 clusters: [options-derivatives]
-related: []
+related:
+  - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept
 

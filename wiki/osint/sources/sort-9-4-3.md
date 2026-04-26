@@ -3,15 +3,16 @@ title: "Graph Learning for Foreign Exchange Rate Prediction and Statistical Arbi
 type: source
 tags: [pdf, ml-methods, graph-learning, fx, statistical-arbitrage, sortino, gnn, spatiotemporal, interest-rate-parity]
 clusters: [ml-methods]
-related: []
+related:
+  - entities/frameworks/langgraph.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/frameworks/langgraph.md — Cemini LLM orchestration framework; ML/agent-systems research context
 
 ## Raw Concept
 

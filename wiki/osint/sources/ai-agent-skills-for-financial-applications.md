@@ -3,15 +3,16 @@ title: "Architecting an Agentic Ecosystem for Cemini Suites: A Deep Evaluation o
 type: source
 tags: [docx, cemini-internal, llm-agents, market-microstructure, quant-finance, crypto, prediction-markets, alt-data]
 clusters: [llm-agents, market-microstructure, quant-finance, crypto, prediction-markets, cemini-internal, alt-data]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
 
 ## Raw Concept
 

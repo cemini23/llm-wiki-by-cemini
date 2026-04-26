@@ -3,15 +3,16 @@ title: Merkle Tree Certificate Post-Quantum PKI for Kubernetes and Cloud-Native 
 type: source
 tags: [pdf, infrastructure, post-quantum, pki, kubernetes, merkle-tree, tls, 5g]
 clusters: [infrastructure]
-related: []
+related:
+  - entities/infrastructure/hetzner.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/infrastructure/hetzner.md — Cemini server infrastructure host
 
 ## Raw Concept
 

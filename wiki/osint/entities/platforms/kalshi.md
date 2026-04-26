@@ -26,9 +26,17 @@ related:
   - entities/platforms/polymarket.md
   - entities/data-sources/open-meteo.md
   - concepts/ensemble-weather-forecasting.md
+  - sources/3-19-signal-fusion-engine-research.md
+  - sources/3-26-a.md
+  - sources/ai-5-4-3.md
+  - sources/ai-trading-ethics-4-5.md
+  - sources/forex-1-4-4.md
+  - sources/insights-from-a-gemini.md
+  - sources/kalshi1-3-29.md
+  - sources/trading-3-4-5.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-04-26
 ---
 
 ## Relations

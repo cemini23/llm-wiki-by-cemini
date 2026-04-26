@@ -3,15 +3,16 @@ title: "Execution Is the New Attack Surface: Survivability-Aware Agentic Crypto 
 type: source
 tags: [pdf, unread-stub, llm-agents, quant-finance]
 clusters: [llm-agents, quant-finance]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
 
 ## Raw Concept
 

@@ -3,15 +3,16 @@ title: Targeted Extraction Audit — Cemini Financial Suite (Mastering the Vibe 
 type: source
 tags: [docx, cemini-internal, llm-agents, prediction-markets, infrastructure, claude-code, workflow, essentially-marketing]
 clusters: [llm-agents, prediction-markets, cemini-internal, infrastructure]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
 
 ## Raw Concept
 

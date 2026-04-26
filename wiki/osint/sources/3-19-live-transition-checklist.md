@@ -3,15 +3,16 @@ title: Engineering the Transition from Simulated to Live Capital Execution in Al
 type: source
 tags: [docx, cemini-internal, portfolio-strategy, market-microstructure, quant-finance, live-trading, paper-to-live, checklist]
 clusters: [portfolio-strategy, market-microstructure, quant-finance, cemini-internal]
-related: []
+related:
+  - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept
 

@@ -3,15 +3,16 @@ title: # LLM Wiki A pattern for building personal knowledge bases using LLMs
 type: source
 tags: [md, unread-stub, llm-agents]
 clusters: [llm-agents]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
 
 ## Raw Concept
 

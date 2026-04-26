@@ -3,15 +3,16 @@ title: "Generative AI in Algorithmic Trading and Market Predictions"
 type: source
 tags: [pdf, quant-finance, ml-methods, lstm, thin-rigor, marketing]
 clusters: [quant-finance, ml-methods]
-related: []
+related:
+  - entities/ticker-watchlist.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/ticker-watchlist.md — CeminiSuite active ticker universe; quant-finance and time-series context
 
 ## Raw Concept
 

@@ -3,15 +3,16 @@ title: SAMP-HDRL — Segmented Allocation with Momentum-Adjusted Utility for Mul
 type: source
 tags: [pdf, rl-marl, portfolio-strategy, hierarchical-drl, regime-shifts, portfolio-optimization, needs-review-title]
 clusters: [rl-marl, portfolio-strategy]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

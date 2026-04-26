@@ -3,15 +3,16 @@ title: "Agent Identity URI Scheme: Topology-Independent Naming and Capability-Ba
 type: source
 tags: [pdf, unread-stub, rl-marl, llm-agents]
 clusters: [rl-marl, llm-agents]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

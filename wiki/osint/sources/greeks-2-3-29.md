@@ -3,15 +3,16 @@ title: "Curved Greeks: A Geometric Layer for Option P&L Adjustments"
 type: source
 tags: [pdf, options-derivatives, portfolio-strategy, greeks, vanna-volga, covariant-hessian, riemannian, fx-barriers, execution-cost]
 clusters: [portfolio-strategy, options-derivatives]
-related: []
+related:
+  - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept
 

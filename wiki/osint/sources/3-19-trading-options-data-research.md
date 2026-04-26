@@ -3,15 +3,16 @@ title: "Quantitative Analysis of Options Market Microstructure and Flow Dynamics
 type: source
 tags: [docx, rl-marl, options-derivatives, market-microstructure, quant-finance, ml-methods, gex, gamma-flip, max-pain, skew, dark-pool]
 clusters: [rl-marl, options-derivatives, market-microstructure, quant-finance, ml-methods]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

@@ -3,15 +3,16 @@ title: "Insights from a Gemini STRATEGY SYNTHESIS: The Attrition-Based Wealth Ge
 type: source
 tags: [docx, unread-stub, market-microstructure]
 clusters: [market-microstructure]
-related: []
+related:
+  - entities/platforms/kalshi.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @entities/platforms/kalshi.md — primary Cemini prediction-market venue; market microstructure context
 
 ## Raw Concept
 

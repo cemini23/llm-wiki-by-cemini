@@ -3,15 +3,16 @@ title: Constrained Policy Optimization for Provably Fair Order Matching (CPO-FOA
 type: source
 tags: [pdf, rl-marl, market-microstructure, crypto, constrained-mdp, fairness, on-chain-verification, rigorous-academic]
 clusters: [rl-marl, market-microstructure, crypto]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

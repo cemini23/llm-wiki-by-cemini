@@ -3,15 +3,16 @@ title: Constant-Size Cryptographic Evidence Structures for Regulated AI Workflow
 type: source
 tags: [pdf, crypto, applied-cryptography, audit-trails, hash-and-sign, regulated-ai, merkle-trees, game-based-proofs, cluster-partial-misfit]
 clusters: [crypto]
-related: []
+related:
+  - concepts/crypto-asset-taxonomy.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/crypto-asset-taxonomy.md — functional taxonomy of the 7 crypto-native watchlist assets
 
 ## Raw Concept
 

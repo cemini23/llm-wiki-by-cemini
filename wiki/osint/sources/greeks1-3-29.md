@@ -3,15 +3,16 @@ title: "Hedging of exotic options in Hawkes jump-diffusion models by Malliavin c
 type: source
 tags: [pdf, options-derivatives, market-microstructure, malliavin, hawkes, jump-diffusion, greeks]
 clusters: [options-derivatives, market-microstructure]
-related: []
+related:
+  - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept
 

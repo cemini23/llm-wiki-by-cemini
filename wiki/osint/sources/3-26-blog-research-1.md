@@ -3,15 +3,16 @@ title: "Architectural Extraction Audit: Cemini Financial Suite (3/26 blog resear
 type: source
 tags: [docx, cemini-internal, rl-marl, llm-agents, audit-security]
 clusters: [rl-marl, llm-agents, cemini-internal, audit-security]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

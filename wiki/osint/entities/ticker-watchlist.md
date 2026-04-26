@@ -38,9 +38,15 @@ related:
   - concepts/equity-intraday-backfill-gap.md
   - concepts/crypto-asset-taxonomy.md
   - concepts/oracle-networks.md
+  - sources/3-29-13.md
+  - sources/4-3-link-research.md
+  - sources/captum-re-4-3.md
+  - sources/stock-7-4-5.md
+  - sources/trading-2-4-5.md
+  - sources/trading-4-5.md
 maturity: core
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-04-26
 ---
 
 ## Relations

@@ -3,15 +3,16 @@ title: "Agent Audit: A Security Analysis System for LLM Agent Applications"
 type: source
 tags: [pdf, llm-agents, audit-security]
 clusters: [llm-agents, audit-security]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
 
 ## Raw Concept
 

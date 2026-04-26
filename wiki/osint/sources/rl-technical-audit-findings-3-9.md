@@ -3,15 +3,16 @@ title: "Technical Research Audit: Reinforcement Learning and Self-Learning Archi
 type: source
 tags: [docx, rl-marl, portfolio-strategy, ml-methods, crypto, prediction-markets, cemini-internal, mappo, torchrl, action-masking, mars]
 clusters: [rl-marl, portfolio-strategy, ml-methods, crypto, prediction-markets, cemini-internal]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

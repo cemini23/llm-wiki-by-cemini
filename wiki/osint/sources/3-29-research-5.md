@@ -3,15 +3,16 @@ title: "Targeted Extraction Audit: Cemini Financial Suite — Options Pricing & 
 type: source
 tags: [docx, rl-marl, llm-agents, portfolio-strategy, options-derivatives, market-microstructure, ml-methods, cemini-internal, curved-greeks, finns, dml-0dte, traderbench, qmc, asr, sde-diff]
 clusters: [rl-marl, llm-agents, portfolio-strategy, options-derivatives, market-microstructure, ml-methods, cemini-internal]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

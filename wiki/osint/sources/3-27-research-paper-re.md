@@ -3,15 +3,16 @@ title: Targeted Extraction Audit — Cemini Financial Suite v13.9 Executive Over
 type: source
 tags: [docx, cemini-internal, infrastructure, llm-agents, rl-marl, market-microstructure, quant-finance, prediction-markets, audit, essentially-marketing]
 clusters: [rl-marl, llm-agents, market-microstructure, quant-finance, prediction-markets, cemini-internal, infrastructure]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

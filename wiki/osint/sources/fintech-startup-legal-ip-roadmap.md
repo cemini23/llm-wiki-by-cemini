@@ -3,15 +3,16 @@ title: Strategic Corporate Structuring, Intellectual Property Shielding, and Reg
 type: source
 tags: [docx, unread-stub, rl-marl, market-microstructure, quant-finance]
 clusters: [rl-marl, market-microstructure, quant-finance]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

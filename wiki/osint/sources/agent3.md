@@ -3,15 +3,16 @@ title: "Agent Factories for High Level Synthesis: How Far Can General-Purpose Co
 type: source
 tags: [pdf, unread-stub, llm-agents]
 clusters: [llm-agents]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
 
 ## Raw Concept
 

@@ -3,15 +3,16 @@ title: "Options Trading and Firm Investment Efficiency"
 type: source
 tags: [pdf, options-derivatives, corporate-finance, investment-efficiency, optionmetrics, crsp, compustat, granger, managerial-learning]
 clusters: [options-derivatives]
-related: []
+related:
+  - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept
 

@@ -3,15 +3,16 @@ title: Blockchain-Anchored Audit Trail Model for Transparent Inter-Operator Sett
 type: source
 tags: [pdf, crypto, settlement, smart-contracts, permissioned-blockchain, audit-trail, dubious-metrics]
 clusters: [crypto]
-related: []
+related:
+  - concepts/crypto-asset-taxonomy.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/crypto-asset-taxonomy.md — functional taxonomy of the 7 crypto-native watchlist assets
 
 ## Raw Concept
 

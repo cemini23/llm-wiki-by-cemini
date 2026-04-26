@@ -3,15 +3,16 @@ title: Targeted Technical Research Audit — Cemini Financial Suite v12.3 (Evolu
 type: source
 tags: [docx, cemini-internal, infrastructure, llm-agents, rl-marl, portfolio-strategy, langgraph, evolutionary-optimization, audit]
 clusters: [rl-marl, llm-agents, portfolio-strategy, cemini-internal, infrastructure]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

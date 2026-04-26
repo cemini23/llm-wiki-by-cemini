@@ -3,17 +3,18 @@ title: "Targeted Extraction Audit: Cemini Financial Suite The following comprehe
 type: source
 tags: [docx, unread-stub, rl-marl, llm-agents, prediction-markets, cemini-internal, audit-security, link-evaluation, multi-topic]
 clusters: [rl-marl, llm-agents, prediction-markets, cemini-internal, audit-security]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 > **⚠ Multi-topic aggregate**: this document evaluates several unrelated URLs / GitHub repos in one file. Cluster tags reflect the *union* of topics touched, not a single subject. When reading, treat each section as its own ingest candidate; consider splitting into per-link sub-stubs at promotion time.
 
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

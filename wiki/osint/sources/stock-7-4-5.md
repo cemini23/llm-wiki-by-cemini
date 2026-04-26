@@ -4,10 +4,11 @@ type: source
 tags: [pdf, skimmed, quant-finance, altman-z-score, capm, systematic-risk, indonesian-equities, academic-journal, gatr-journals]
 clusters: [quant-finance]
 keywords: [altman-z-score, financial-distress, beta-stocks, inflation, stock-return, panel-data-regression, indonesia-stock-exchange, capm, systematic-risk, manufacturing-sector]
-related: []
+related:
+  - entities/ticker-watchlist.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-04-26
 ---
 
 ## Relations

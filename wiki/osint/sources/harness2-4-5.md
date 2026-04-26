@@ -3,15 +3,16 @@ title: What the Rapid Adoption of the "Harness" Metaphor in AI Reveals About How
 type: source
 tags: [pdf, infrastructure, llm-agents, harness-metaphor, conceptual-analysis, human-ai-relations, sts]
 clusters: [llm-agents, infrastructure]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
 
 ## Raw Concept
 

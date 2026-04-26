@@ -14,9 +14,29 @@ related:
   - concepts/dispersion-trading.md
   - concepts/game-of-attrition-doctrine.md
   - concepts/replacement-cost-valuation.md
+  - sources/3-19-live-transition-checklist.md
+  - sources/3-5-git-pt-2.md
+  - sources/captum-re-4-3-2.md
+  - sources/cost-effective-algorithmic-trading-api-stack.md
+  - sources/crypto-13-4-11.md
+  - sources/greeks-10-3-29.md
+  - sources/greeks-2-3-29.md
+  - sources/greeks-3-3-29.md
+  - sources/greeks-4-3-29.md
+  - sources/greeks-6-3-29.md
+  - sources/greeks-7-3-29.md
+  - sources/greeks-8-3-29.md
+  - sources/greeks-9-3-29.md
+  - sources/greeks1-3-29.md
+  - sources/options-2-4-5.md
+  - sources/options-4-5.md
+  - sources/sort-5-4-3.md
+  - sources/sort-7-4-3.md
+  - sources/sortino-3-4-3.md
+  - sources/stocks-2-4-5.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-26
 ---
 
 ## Relations

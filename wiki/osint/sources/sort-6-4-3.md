@@ -3,15 +3,16 @@ title: ChatGPT in Systematic Investing — Enhancing Risk-Adjusted Returns with 
 type: source
 tags: [pdf, llm-agents, portfolio-strategy, market-microstructure, momentum, sentiment, news-analysis, chatgpt]
 clusters: [llm-agents, portfolio-strategy, market-microstructure]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
 
 ## Raw Concept
 

@@ -3,15 +3,16 @@ title: Harness Engineering — A Governance Framework for AI-Driven Software Eng
 type: source
 tags: [pdf, infrastructure, llm-agents, harness-engineering, governance, ai-software-engineering, preprint]
 clusters: [llm-agents, infrastructure]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
 
 ## Raw Concept
 

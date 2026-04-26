@@ -3,15 +3,16 @@ title: "Intelligence Analysis Report: Algorithmic Trading Platform Ecosystem and
 type: source
 tags: [docx, unread-stub, rl-marl, llm-agents, quant-finance, prediction-markets, cemini-internal]
 clusters: [rl-marl, llm-agents, quant-finance, prediction-markets, cemini-internal]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: draft
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

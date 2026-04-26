@@ -3,15 +3,16 @@ title: "Agent Q-Mix: Selecting the Right Action for LLM Multi-Agent Systems thro
 type: source
 tags: [pdf, rl-marl, llm-agents, ml-methods, qmix, marl, ctde, topology-learning, gnn, gru, langgraph, agentic]
 clusters: [rl-marl, llm-agents, ml-methods]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

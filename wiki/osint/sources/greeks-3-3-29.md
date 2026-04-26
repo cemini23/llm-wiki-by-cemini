@@ -3,15 +3,16 @@ title: "Feynman-Kac Derivatives Pricing on the Full Forward Curve"
 type: source
 tags: [pdf, options-derivatives, ml-methods, hjm, feynman-kac, pinn, interest-rates, caplets]
 clusters: [options-derivatives, ml-methods]
-related: []
+related:
+  - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept
 

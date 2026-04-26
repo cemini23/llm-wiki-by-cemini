@@ -3,15 +3,16 @@ title: "Full grid solution for multi-asset options pricing with tensor networks"
 type: source
 tags: [pdf, options-derivatives, quant-finance, tensor-networks, pde, black-scholes]
 clusters: [options-derivatives, quant-finance]
-related: []
+related:
+  - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept
 

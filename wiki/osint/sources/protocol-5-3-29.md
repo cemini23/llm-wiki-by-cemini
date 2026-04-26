@@ -3,15 +3,16 @@ title: "AIP: Agent Identity Protocol for Verifiable Delegation Across"
 type: source
 tags: [pdf, rl-marl, llm-agents, crypto, audit-security]
 clusters: [rl-marl, llm-agents, crypto, audit-security]
-related: []
+related:
+  - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
 
-*(Cross-references will be added in Phase 2.)*
+- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
 

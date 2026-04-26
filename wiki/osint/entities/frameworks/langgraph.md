@@ -15,9 +15,12 @@ related:
   - entities/infrastructure/deepseek-api.md
   - entities/frameworks/fastmcp.md
   - concepts/ip-sale-readiness.md
+  - sources/llm-4-3-3.md
+  - sources/sort-9-4-3.md
+  - concepts/llm-agent-systems.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-26
 ---
 
 ## Relations
