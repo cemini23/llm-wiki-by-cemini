@@ -11,9 +11,10 @@ related:
   - entities/infrastructure/deepseek-api.md
   - entities/frameworks/langgraph.md
   - concepts/scatter-gather-topology.md
+  - entities/data-sources/telethon.md
 maturity: retracted
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-26
 ---
 
 ## Relations
@@ -25,6 +26,7 @@ updated: 2026-04-24
 - @entities/infrastructure/deepseek-api.md — **the operative LLM path**; cloud API (key in `.env`) replaces the retracted local-weights design
 - @entities/frameworks/langgraph.md — LangGraph is real; DeepSeek-on-LangGraph claim is retracted (API equivalent captured on deepseek-api.md)
 - @concepts/scatter-gather-topology.md — topology is real; DeepSeek-as-LOCAL-LLM-inside-it is retracted (API invocation remains valid, pending wiring)
+- @entities/data-sources/telethon.md — sibling K3 reframe (2026-04-26); same source family (3-19 Cemini-internal blueprints) flagged DeepSeek-R1-14B as the local LLM brain for the Telegram NLP pipeline — that local-deployment claim is the one captured here as retracted
 
 ## Raw Concept
 

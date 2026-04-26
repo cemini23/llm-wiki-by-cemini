@@ -8,6 +8,29 @@ Newest entries on top.
 
 ---
 
+## [2026-04-26] ingest | K3: deep-read 3-19-telegram-discord-research — most extreme prescribed-vs-deployed collapse caught yet
+
+Resolves the highest-citation cited-unread stub remaining after K2 (`3-19-telegram-discord-research.md`, 11 inbound — surfaced at the top of the L dashboard's Section 1 as soon as that landed). Same J/K/K2 pattern: source is a **Cemini-internal IP-sale-readiness blueprint** (Telegram social-signal ingester via Telethon + MTProto + VADER/spaCy/Regex cascade + Pydantic envelope + Redis pub/sub) framed in confident "the platform relies on" / "the deployment of a Telegram MTProto client" prose; the wiki's downstream entity page had collapsed that into present-tense as-built claims **plus** invented two fabrications the source actively contradicts.
+
+**Server ground truth** (`ssh root@hetzner` 2026-04-26, 5 parallel probes): zero containers matching `telegram|telethon|social|signal` (out of 40 running); zero `telethon` references in any `requirements.txt`, `pyproject.toml`, `Dockerfile`, or `docker-compose*.yml` under `/opt/cemini/`; zero `vader|spacy|finbert` references in deps; zero `cemini:streams:social_intel` Redis-channel references in any service code; zero twitter/nitter containers (the source's casual "the existing X (Twitter) harvester" mention in para 58 is also unbacked). **Most extreme prescribed-vs-deployed gap caught yet** — entire pipeline is blueprint-only.
+
+**Source-page changes** (`wiki/sources/3-19-telegram-discord-research.md`):
+- `read_status: validated`, `updated: 2026-04-26`
+- New "Prescribed-vs-deployed gap (2026-04-26 K3 deep-read)" section in Narrative documenting all 6 server-probe findings + flagging the source's own honesty signal in para 123 (explicit `[User Prompt]` tag on the DeepSeek-R1-14B requirement)
+- Snippets populated with 8 verbatim pulls + analytical commentary on each — covering: §1.5 AI-training prohibition (the load-bearing legal finding), the inference/training separation answer, the 200-channel selectivity mandate (vs. wiki's fabricated "channel-rotation"), the Discord rejection rationale, the Telethon Issue #3235 memory-leak gotcha, the `[User Prompt]` DeepSeek tag, the "Redis pub/sub bus to distribute intelligence to its LangGraph orchestrator" prescription-as-as-built phrasing, and the para 170 "deployment of a Telegram MTProto client" synthesis paragraph (same K-style collapse from the source side)
+
+**Entity-page reframe** (`wiki/entities/data-sources/telethon.md`):
+- `[RESOLVED — 2026-04-26 K3 deep-read]` header in Raw Concept, explicit retraction-of-record block listing the 4 pre-K3 false claims and their server/source counter-evidence in a table
+- 3 new bidirectional `related:` links: `entities/infrastructure/deepseek-r1-14b.md` (sibling local-LLM retraction in same source family), `concepts/ip-sale-readiness.md` (publisher's-exclusion deal-killer ledger), `concepts/scatter-gather-topology.md` (sibling K-style reframe pattern). All three backlinks added to those pages in the same commit
+- Narrative rewritten as **library reference + IP-sale-readiness build spec**, not deployment doc: 5-bullet "Prescribed Cemini deployment (build spec — NOT shipped)" section covers account model (200-cap selectivity), `save_entities=False` memory fix, NLP cascade (Regex → spaCy → VADER, **explicitly NOT FinBERT**), §1.5 isolation as the load-bearing legal constraint, and the unified Pydantic envelope contract
+- "What the previous narrative got wrong (and why)" table makes the synthesis-error pattern legible for future readers — same documented-bug structure as `entities/infrastructure/deepseek-r1-14b.md`'s retraction block
+
+**Lint**: orphans 0, bidirectional gaps 0 (3 introduced, 3 resolved in same commit), dangling 0, missing 0; cited-unread 220 → **219** (K3 reframe converts the source from cited-unread to validated). Edge count 1105 → 1108 (+3 backlinks). Top of cited-unread now `3-18-crypto-integration-technical-audit.md` at 9 inbound — natural K4 candidate.
+
+The L dashboard wired the discoverability — Section 1 surfaced 3-19-telegram-discord at the top within 30 seconds of the user reporting the dashboard worked, which is exactly what the dataviewjs cited-unread query was designed to do. The K-style follow-up that turned the Section 1 top row into a real deep-read happened in this session.
+
+---
+
 ## [2026-04-26] structural | L: Dataview dashboard for live in-editor views over wiki frontmatter
 
 Direct follow-on to K2 (Karpathy gist deep-read) and the Obsidian first-launch session. The gist's "Dataview" tip became actionable once Obsidian was wired and graph view confirmed working — this lands a `wiki/dashboard.md` that replaces ~70% of `wiki_lint.py` text output with live, sortable, in-editor tables.

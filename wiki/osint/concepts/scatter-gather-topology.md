@@ -9,6 +9,7 @@ related:
   - entities/infrastructure/deepseek-r1-14b.md
   - entities/infrastructure/deepseek-api.md
   - entities/infrastructure/redis.md
+  - entities/data-sources/telethon.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
@@ -21,6 +22,7 @@ updated: 2026-04-26
 - @entities/infrastructure/deepseek-r1-14b.md `[RETRACTED 2026-04-24]` — page retracted; backlink kept for discoverability
 - @entities/infrastructure/deepseek-api.md — operative LLM brain via cloud API; replaces the retracted local-runtime path
 - @entities/infrastructure/redis.md
+- @entities/data-sources/telethon.md — sibling K3 reframe (2026-04-26); same Cemini-internal-blueprint pattern, same prescribed-vs-deployed collapse caught and reset
 
 ## Raw Concept
 

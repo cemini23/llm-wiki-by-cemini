@@ -34,6 +34,7 @@ related:
   - entities/platforms/kalshi.md
   - entities/infrastructure/deepseek-api.md
   - entities/data-sources/opensanctions.md
+  - entities/data-sources/telethon.md
   - concepts/ai-ethics-and-governance.md
 maturity: validated
 created: 2026-04-23
@@ -71,6 +72,7 @@ updated: 2026-04-26
 - @entities/platforms/hyperliquid.md
 - @entities/platforms/kalshi.md
 - @entities/data-sources/opensanctions.md — pre-emptive sanctions screening on Cemini's commercial counterparty set (data vendors, exchange relationships) so any acquirer due-diligence pass surfaces no surprise hits — adjacent to the publishers-exclusion deal-killer ledger entries
+- @entities/data-sources/telethon.md — K3 2026-04-26 — Telegram alt-data ingester is on the publisher's-exclusion deal-killer ledger; the prescribed Telethon+VADER+Pydantic pipeline (per @sources/3-19-telegram-discord-research.md) is **not deployed** as of K3 server probe, so the "feature-flag carve-out" claim previously attached here is also blueprint-only
 - @concepts/ai-ethics-and-governance.md — D′ 2026-04-26 — backdrop literature for the AI-governance posture an institutional acquirer will probe during APA due-diligence (EU AI Act exposure, harm-typology familiarity, workforce-policy fluency)
 
 ## Raw Concept
