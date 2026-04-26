@@ -8,6 +8,26 @@ Newest entries on top.
 
 ---
 
+## [2026-04-25] ingest | J: deep-read 3-10-cryptographic-research — reframe RETRACTED claims as prescribed-not-built
+
+Single commit (`4d4139a`), 2 files, 31 insertions / 8 deletions. Resolves the highest-citation cited-unread stub (13 inbound); lint cited-unread count 25 → 24.
+
+**Root cause resolved**: `@concepts/cryptographic-audit-trail.md` was originally synthesized using present-tense language that collapsed the source's prescriptive recommendations into as-built claims. The Track C audit (2026-04-24) correctly retracted the four named components (pg_tamperlog, pymerkle, OpenTimestamps, VCP) because 0 hits exist in the codebase. The J deep-read adds the missing explanation: the source is a *prescriptive technical audit* — it recommended those components, Cemini never adopted them. The custom SHA-256 chain (`audit_hash_chain` table + `trg_audit_chain_hash` trigger + `core/merkle.py` / `shared/audit_trail/`) is a spiritually-similar but library-free implementation of layers 1-2 only.
+
+**`sources/3-10-cryptographic-research.md`**:
+- Frontmatter: `read_status: validated` added; `updated: 2026-04-25`
+- Raw Concept: author ("AI-generated VeritasChain-domain report"), length (168 paragraphs), read-status corrected
+- Narrative: framing note + Abstract rewritten to be explicit that this is a prescription, not a description
+- Snippets: 6 verbatim pulls — executive summary thesis, Gap 2.1 buyer-psychology severity, selective omission definition, VCP Silver Tier verdict, all tool ADOPT/HOLD verdicts, ACA Group rejection rationale
+
+**`concepts/cryptographic-audit-trail.md`**:
+- `[TENTATIVE 2026-04-24]` → `[RESOLVED 2026-04-25 primary-source deep-read]`
+- New header: retractions confirmed + grounded; source's ADOPT/rejected verdicts listed; prescribed-vs-deployed distinction explicit; P2 ticket sharpened to two paths: (a) ship pymerkle + OTS + VCP-CORE/TRADE schemas on top of existing chain (~6 dev-days per source estimate), or (b) formally retract VCP language from APA docs and re-document custom chain as "spiritual successor with explicit divergences from VCP Silver Tier"
+
+**Closes** the "Deep-read `sources/3-10-cryptographic-research.md`" Soon-row in ROADMAP.
+
+---
+
 ## [2026-04-25] ingest | I: data-source expansion from public-apis curated list — 8 new entity stubs
 
 Librarian-hygiene pass against [public-apis](https://github.com/public-apis/public-apis). Triaged the financial / regulatory / weather / OSINT sections; rejected ~40 candidates that duplicate existing entities (Yahoo Finance, Polygon, Binance, etc.) or fail the curation bar (active research thread, viable free tier, commercial-friendly license for IP-sale inheritance). Single commit (`d337e51`), 15 files, 538 insertions.
