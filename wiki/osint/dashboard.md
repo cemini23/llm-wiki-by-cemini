@@ -81,8 +81,7 @@ What's been touched lately, across all wiki types. Useful right after a session 
 
 ```dataview
 TABLE updated, type, maturity
-FROM "wiki"
-WHERE updated
+WHERE updated AND file.name != "dashboard"
 SORT updated DESC
 LIMIT 25
 ```
@@ -95,7 +94,6 @@ Drafts that haven't been touched in a while — staleness signal. If a draft has
 
 ```dataview
 TABLE updated, type, length(related) AS "out-edges"
-FROM "wiki"
 WHERE maturity = "draft" AND type != "meta"
 SORT updated ASC
 LIMIT 30
@@ -200,7 +198,7 @@ SORT updated DESC
 
 - **Frontmatter access**: any YAML field is accessible as `p.fieldname` in dataviewjs, or referenced bare in a dataview query (`WHERE maturity = "draft"`).
 - **`related:` is a list**: use `length(related)` for outbound-count, or iterate it for inbound-count (see queries 1 + 4).
-- **Path scoping**: `FROM "sources"` = `wiki/sources/**`; `FROM "."` = whole vault.
+- **Path scoping**: `FROM "sources"` = `wiki/sources/**` (when vault root = `wiki/`); omit `FROM` entirely or use `FROM ""` to scan the whole vault. Don't use `FROM "wiki"` — that resolves to `wiki/wiki/` and matches nothing in our setup.
 - **`file.link` renders as a clickable Obsidian link** in dataviewjs `dv.table` rows.
 - **Refresh a single query**: hover over its codeblock and click the refresh icon in the top-right.
 - **Performance**: dataviewjs queries scan all pages on render; at our scale (333 pages) this is instant, but if the corpus grows past ~2000 pages, scope the `dv.pages()` calls more tightly.
