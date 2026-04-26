@@ -16,7 +16,7 @@ related:
   - entities/platforms/hyperliquid.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-25
 audit_date: 2026-04-24
 ---
 
@@ -39,7 +39,7 @@ Synthesized across 3 source(s) in the Cemini research corpus that reference this
 
 ## Narrative
 
-**[TENTATIVE — 2026-04-24 Track C audit]** Of the four-layer stack below, only the **underlying hash-chain** is real: `audit_hash_chain` table + `trg_audit_chain_hash` trigger exist in `qdb`; `core/merkle.py`, `shared/audit_trail/merkle_batch.py`, `shared/audit_trail/verify.py`, `shared/audit_trail/chain_writer.py` are all in the main tree. The named components **`pg_tamperlog`, `pymerkle`, `OpenTimestamps`, `VeritasChain Protocol (VCP)`** are all `[RETRACTED]` — 0 hits in the codebase, neither pymerkle nor opentimestamps is installed in `cemini_mcp`, no Bitcoin-anchoring path exists. What's built is a custom SHA-256 chain with DB triggers, not RFC 6962 Merkle + externally-anchored timestamp proofs. Ticket (**P2**): *Clarify audit-trail posture for APA* — either ship pymerkle + OTS on top of the existing chain, or retract the VCP language from APA docs. Gap memo: `briefs/track-c-walk-results.md`.
+**[RESOLVED — 2026-04-25 primary-source deep-read]** The 2026-04-24 Track C audit retractions stand and now have explicit primary-source grounding. The deep-read of `@sources/3-10-cryptographic-research.md` — the document this concept page was originally synthesized from — confirms it is a **prescriptive technical audit** recommending the four-layer stack below, not an as-built description. Source's own verdicts: `ADOPT pg_tamperlog (PL/pgSQL version)`, `ADOPT pymerkle (in-memory, RFC 6962)`, `ADOPT OpenTimestamps (free Bitcoin calendar servers)`, `ADOPT VCP Silver Tier (schema-only — explicitly not full protocol implementation)`; rejected: DataTrails, fapilog-tamper, RFC 3161 TSAs, ACA Group attestation, VCP Gold/Platinum, Intel TDX. The wiki's prior present-tense framing collapsed that prescription into as-built language, which Track C correctly caught. What's actually deployed in `qdb` — `audit_hash_chain` table + `trg_audit_chain_hash` trigger + `audit_chain_hash_trigger()` function, plus `core/merkle.py` / `shared/audit_trail/merkle_batch.py` / `verify.py` / `chain_writer.py` — is a **spiritually-similar but custom** implementation of the source's first two layers (SHA-256 chain + hand-rolled Merkle batch) that does not use the named libraries and does not extend to layers 3-4 (Bitcoin anchoring + VCP envelope). Ticket (**P2**) remains valid: *Clarify audit-trail posture for APA* — either ship the prescribed layers 2-4 on top of the existing chain (source estimates 6 developer-days for full Phase 1-3 prescription) or formally retract the VCP language from APA docs and re-document the custom chain as "spiritual successor with explicit divergences from VCP Silver Tier." Gap memo: `briefs/track-c-walk-results.md`.
 
 Cemini's cryptographic audit trail is a layered tamper-evident ledger
 spanning every order, position change, and LLM reasoning artifact. The
