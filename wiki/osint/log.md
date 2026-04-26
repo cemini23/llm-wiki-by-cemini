@@ -8,6 +8,32 @@ Newest entries on top.
 
 ---
 
+## [2026-04-26] ingest | K: deep-read 3-19-langgraph-scatter-gather — J pattern on next-highest cited-unread
+
+Resolves the highest-citation cited-unread stub remaining after J (`3-19-langgraph-scatter-gather-financial-analysis.md`, 12 inbound). Same J-pattern: source is a **prescriptive architectural blueprint** that the wiki had earlier collapsed into present-tense as-built framing on `@concepts/scatter-gather-topology.md` (Track C correctly retracted that on 2026-04-24; this pass converts the retraction into a resolved/validated reframe).
+
+**Source-page changes** (`wiki/sources/3-19-langgraph-scatter-gather-financial-analysis.md`):
+- `read_status: validated`, `updated: 2026-04-26`
+- Author corrected to "AI-generated research report (Cemini-internal architectural blueprint; no individual human author attributed)"
+- Length corrected to "137 non-empty paragraphs (~35,400 chars), 7 sections + Works cited"
+- Added Framing note at start of Narrative making the prescriptive-blueprint nature explicit and noting the source's own pymerkle/OpenTimestamps name-drop as "implemented" (the same prescription-as-as-built collapse caught from the source side)
+- Rewrote Abstract to make prescription explicit; ends with "None of this topology exists in the deployed `cemini_mcp` codebase as of 2026-04-26"
+- Populated Snippets with 6 verbatim pulls (paras 3, 27–28, 30, 33, 84, 85) — para 85 flagged as the KEY snippet showing the source itself committed the prescription-as-as-built error
+
+**Concept-page reframe** (`wiki/concepts/scatter-gather-topology.md`):
+- Header `[RETRACTED — 2026-04-24 Track C audit]` → `[RESOLVED — 2026-04-26 primary-source deep-read]`
+- `maturity: retracted` → `validated`; `updated: 2026-04-26`
+- Synthesis paragraph documents both Track C's as-built ground truth (linear 4-node `StateGraph`, no `Send()`) and the deep-read's confirmation that the source is prescriptive (imperative voice throughout)
+- Open P1 ticket option space (Option A: build Send() per step83 spec, ~1–2 engineer-weeks; Option B: keep linear StateGraph + treat blueprint as IP-sale prep, ~0.5 engineer-days; default Option B) preserved unchanged from Track C
+- Original prescriptive narrative kept below the reframe but relabeled: "as prescribed by the source, **not as deployed**", with source-page Snippet cross-references for each section and explicit prescribed-vs-deployed callouts (e.g. step 2's Ollama/DeepSeek-R1-14B prescription vs. hosted DeepSeek API as-built; audit-properties section's pymerkle/OpenTimestamps prescription vs. custom SHA-256 chain as-built)
+- Snippets section now points to source-page Snippets rather than duplicating
+
+**Lint**: orphans 0, bidirectional gaps 0, dangling 0, missing 0; cited-unread 222 → **221** (the K reframe converts the source from cited-unread to validated). Stale NEEDS VERIFICATION: 0.
+
+Closes the K equivalent of J's "Soon" deep-read row — both are now done. Top of cited-unread is now `3-19-telegram-discord-research.md` at 11 inbound; deferred to a future K-style pass.
+
+---
+
 ## [2026-04-26] structural | D′: uncategorized-orphan triage (Opus) — 23 → 0 orphans; 2 new hub pages
 
 Single commit (`9968a44`), 33 files, +307 / -162. Closes the D sweep — every previously-orphaned source stub now has at least one inbound bidirectional `related:` edge.
