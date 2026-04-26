@@ -17,6 +17,23 @@ Live in-editor views over the wiki frontmatter. Companion to `index.md` (catalog
 
 This page is excluded from `wiki_lint.py` orphan / bidir / dangling checks (same exemption as `index.md` and `log.md`).
 
+**Path-scoping note**: queries below assume the Obsidian vault is the **workspace root** (where `.obsidian/` lives) and the wiki is at `wiki/`. If you re-opened Obsidian with `wiki/` itself as the vault root, change every `"wiki/..."` path below to drop the `wiki/` prefix (e.g. `FROM "wiki/sources"` → `FROM "sources"`).
+
+---
+
+## 0. Sanity check — Dataview is alive
+
+If this block renders as a one-row table showing the vault name and a `.md` file count, Dataview is wired correctly and you can keep reading. If it renders as raw code, the Dataview plugin isn't actually enabled (Settings → Community plugins → make sure Dataview is toggled on, not just installed).
+
+```dataviewjs
+const allMd = dv.pages();
+const wikiMd = dv.pages('"wiki"');
+dv.table(
+  ["Vault name", "Total .md pages", "Pages under wiki/", "Dataview version"],
+  [[dv.app.vault.getName(), allMd.length, wikiMd.length, "running"]]
+);
+```
+
 ---
 
 ## 1. Cited-unread queue (live equivalent of `wiki_lint.py` output #5)
@@ -24,16 +41,16 @@ This page is excluded from `wiki_lint.py` orphan / bidir / dangling checks (same
 The next-deep-read priority list. Sources with `read_status: unread-stub` (or no `read_status` field on a `draft` source), ranked by how many other pages list them in `related:`. This is the live version of the J / K progression: J resolved the 13-inbound stub, K resolved the 12-inbound stub, K2 resolved an irony-grade hidden one — top of this table is the next candidate.
 
 ```dataviewjs
-const all = dv.pages('"."').where(p => p.file.path.startsWith("sources/"));
+const sources = dv.pages('"wiki/sources"');
 const inbound = {};
-for (const p of dv.pages()) {
+for (const p of dv.pages('"wiki"')) {
   const rel = p.related || [];
   for (const r of rel) {
     const target = String(r).replace(/\.md$/, "").replace(/^.*\//, "");
     inbound[target] = (inbound[target] || 0) + 1;
   }
 }
-const stubs = all.where(p =>
+const stubs = sources.where(p =>
   p.read_status === "unread-stub" ||
   (p.maturity === "draft" && p.read_status !== "validated")
 );
@@ -62,7 +79,7 @@ What's been touched lately, across all wiki types. Useful right after a session 
 
 ```dataview
 TABLE updated, type, maturity
-FROM "."
+FROM "wiki"
 WHERE updated
 SORT updated DESC
 LIMIT 25
@@ -76,7 +93,7 @@ Drafts that haven't been touched in a while — staleness signal. If a draft has
 
 ```dataview
 TABLE updated, type, length(related) AS "out-edges"
-FROM "."
+FROM "wiki"
 WHERE maturity = "draft" AND type != "meta"
 SORT updated ASC
 LIMIT 30
@@ -89,7 +106,7 @@ LIMIT 30
 Where the corpus weight actually lives. Confirms the heavy clusters (rl-marl ~108, llm-agents ~60) and surfaces under-covered ones.
 
 ```dataviewjs
-const sources = dv.pages('"sources"');
+const sources = dv.pages('"wiki/sources"');
 const counts = {};
 for (const p of sources) {
   const cl = (p.clusters && p.clusters[0]) || "—";
@@ -107,7 +124,7 @@ Watchlist-companion view. Should match `entities/ticker-watchlist.md` and the se
 
 ```dataview
 TABLE category, ticker, maturity, updated
-FROM "entities/tickers"
+FROM "wiki/entities/tickers"
 SORT category, ticker
 ```
 
@@ -119,7 +136,7 @@ The cluster-hub topology D / D′ built out — concept pages that aggregate man
 
 ```dataview
 TABLE length(related) AS "outbound-edges", maturity
-FROM "concepts"
+FROM "wiki/concepts"
 WHERE related
 SORT length(related) DESC
 LIMIT 20
@@ -129,7 +146,7 @@ Plus entity hubs (ticker-watchlist, kelly-cvar-risk-engine, kalshi, langgraph, e
 
 ```dataview
 TABLE length(related) AS "outbound-edges", type, maturity
-FROM "entities"
+FROM "wiki/entities"
 WHERE length(related) >= 5
 SORT length(related) DESC
 LIMIT 20
@@ -142,7 +159,7 @@ LIMIT 20
 Pipeline view. Mostly-`draft` rows mean the column needs deep-read investment; mostly-`validated` rows mean the column is healthy.
 
 ```dataviewjs
-const all = dv.pages('"."').where(p => p.type && p.type !== "meta");
+const all = dv.pages('"wiki"').where(p => p.type && p.type !== "meta");
 const matrix = {};
 for (const p of all) {
   const t = p.type || "—";
@@ -170,7 +187,7 @@ Every source that's been promoted to `read_status: validated` (the J / K / K2 pr
 
 ```dataview
 TABLE updated, length(related) AS "out-edges", clusters
-FROM "sources"
+FROM "wiki/sources"
 WHERE read_status = "validated"
 SORT updated DESC
 ```
