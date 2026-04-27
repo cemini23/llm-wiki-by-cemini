@@ -7,6 +7,7 @@ related:
   - concepts/quant-finance.md
   - entities/platforms/kalshi.md
 maturity: validated
+read_status: read-skim
 created: 2026-04-23
 updated: 2026-04-26
 clusters:

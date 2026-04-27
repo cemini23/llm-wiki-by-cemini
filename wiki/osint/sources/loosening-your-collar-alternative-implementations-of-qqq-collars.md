@@ -6,6 +6,7 @@ keywords: [Update, Loosening, Your, Collar, Alternative, Implementations, QQQ, C
 related:
   - concepts/portfolio-strategy.md
 maturity: draft
+read_status: unread-stub
 created: 2026-04-27
 updated: 2026-04-27
 ---

@@ -6,6 +6,7 @@ clusters: [crypto]
 related:
   - concepts/crypto-asset-taxonomy.md
 maturity: validated
+read_status: read-skim
 created: 2026-04-23
 updated: 2026-04-26
 ---

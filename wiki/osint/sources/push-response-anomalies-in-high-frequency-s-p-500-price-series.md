@@ -6,6 +6,7 @@ keywords: [Push-response, Dmitrii, Vlasiuk, Mikhail, Smirnov, Department, Mathem
 related:
   - concepts/market-microstructure.md
 maturity: draft
+read_status: unread-stub
 created: 2026-04-27
 updated: 2026-04-27
 ---

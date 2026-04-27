@@ -11,6 +11,7 @@ related:
   - entities/components/kelly-cvar-risk-engine.md
   - entities/frameworks/nautilustrader.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-23
 updated: 2026-04-23
 clusters:

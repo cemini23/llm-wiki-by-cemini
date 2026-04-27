@@ -7,6 +7,7 @@ related:
   - concepts/quant-finance.md
   - entities/infrastructure/timescaledb.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-23
 updated: 2026-04-23
 clusters:

@@ -6,6 +6,7 @@ clusters: [ml-methods, time-series]
 related:
   - entities/data-sources/gdelt.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-23
 updated: 2026-04-23
 ---

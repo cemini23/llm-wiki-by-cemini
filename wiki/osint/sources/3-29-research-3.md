@@ -6,6 +6,7 @@ clusters: [rl-marl, llm-agents, ml-methods, prediction-markets, cemini-internal,
 related:
   - concepts/rl-marl-research.md
 maturity: validated
+read_status: read-skim
 created: 2026-04-23
 updated: 2026-04-26
 ---

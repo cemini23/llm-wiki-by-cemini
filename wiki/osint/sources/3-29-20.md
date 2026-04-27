@@ -6,6 +6,7 @@ clusters: [out-of-scope]
 related:
   - concepts/corpus-overflow-out-of-scope.md
 maturity: draft
+read_status: unread-stub
 created: 2026-04-23
 updated: 2026-04-26
 ---

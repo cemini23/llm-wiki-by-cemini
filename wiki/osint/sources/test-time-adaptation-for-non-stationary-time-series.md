@@ -6,6 +6,7 @@ keywords: [Test-Time, Adaptation, Non-stationary, Time, Series, From, Synthetic,
 related:
   - concepts/quant-finance.md
 maturity: draft
+read_status: unread-stub
 created: 2026-04-27
 updated: 2026-04-27
 ---

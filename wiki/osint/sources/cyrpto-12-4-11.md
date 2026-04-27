@@ -6,6 +6,7 @@ related:
   - concepts/llm-agent-systems.md
   - concepts/portfolio-strategy.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-23
 updated: 2026-04-26
 clusters:

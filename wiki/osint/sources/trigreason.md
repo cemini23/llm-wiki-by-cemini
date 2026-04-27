@@ -6,6 +6,7 @@ keywords: [TrigReason, Trigger-Based, Collaboration, Small, Large, Reasoning, Mo
 related:
   - concepts/llm-agent-systems.md
 maturity: draft
+read_status: unread-stub
 created: 2026-04-27
 updated: 2026-04-27
 ---

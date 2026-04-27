@@ -6,6 +6,7 @@ clusters: [time-series, prediction-markets]
 related:
   - entities/platforms/kalshi.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-23
 updated: 2026-04-23
 ---

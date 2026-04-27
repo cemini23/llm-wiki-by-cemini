@@ -8,6 +8,37 @@ Newest entries on top.
 
 ---
 
+## [2026-04-27] structural | R: read_status frontmatter migration — 238 source pages backfilled, lint signal restored
+
+Closes a stale lint signal-vs-noise issue surfaced while picking the next K-series deep-read target. Section 5 of `wiki_lint.py` ("cited but unread") routes on the `read_status` *frontmatter* field; but 102 source pages had their `read_status` only in body bullets (`- **Read status**: deep-read`) — the frontmatter was empty for that field, so the lint counted them as unread despite being validated deep-reads. Top-of-list noise was masking the real K-series candidates.
+
+### What shipped
+
+**Migration (238 source pages):**
+- 102 pages with non-stub body status (deep-read, read-skim, read, validated): body status promoted into frontmatter
+- 136 pages with no body status or body=`unread-stub`: frontmatter `read_status: unread-stub` added explicitly (for honesty — every source now has authoritative status, not "empty == assumed unread")
+- Insertion point: after `maturity:` line if present, else before `created:`, else appended
+
+**Stub-generator hygiene (`scripts/bootstrap_inbox.py` + `scripts/generate_stubs.py`):**
+- Both scripts now emit `read_status: unread-stub` in frontmatter (in addition to the existing body bullet)
+- Future bootstrap runs produce stubs that are immediately authoritative for `wiki_lint.py` without body-string parsing
+
+### Lint impact
+
+- **Before R**: 238 cited-unread (false signal — included all deep-read pages with empty `read_status` frontmatter)
+- **After R**: 136 cited-unread (real signal — only genuinely unread stubs with ≥1 inbound citation)
+- Top of real cited-unread queue: `sources/4-5-links.md` (4 inbound), `sources/4-4-link-re.md` (3 inbound), `sources/fintech-startup-legal-ip-roadmap.md` (3 inbound), `sources/3-26-link-re-3.md` (3 inbound). Numbers compressed; per-source citation density is the new sort axis (≤4 inbound at top, vs. pre-R apparent ceiling of 9 inbound from the 3-17/forex-research false positives).
+
+### Pattern note
+
+This is a librarian-frontmatter-vs-body divergence — same shape as the YAML-title-colon bug fixed in Q-tail (where stub generators wrote frontmatter the lint couldn't parse). General lesson: stub-generator scripts SHOULD emit machine-authoritative metadata in frontmatter even when the same fact also appears in human-readable body sections. Frontmatter is the single source of truth for tooling; body bullets are for human readers. They should agree on creation and stay in sync on promotion.
+
+Followups:
+- All other body-vs-frontmatter divergences (e.g. `Length: 14p` body vs `pages:` field) — defer until another field becomes load-bearing for tooling.
+- "Promote to deep-read" workflow should set frontmatter directly (already implicit in how K-series page rewrites have been done recently).
+
+---
+
 ## [2026-04-27] structural | Q-tail: preventative fix for YAML-title-colon bug at the source
 
 Closes the Q follow-up loop. Both `scripts/bootstrap_inbox.py` (line 213, removed) and `scripts/generate_stubs.py` (line 157, removed) constructed YAML title lines via `f"title: {json.dumps(title, ensure_ascii=False)[1:-1]}\n"` — strips the JSON wrapper quotes leaving a YAML "plain scalar". Plain scalars cannot contain `:` characters; titles with embedded colons (very common — "X: A Y", "X: From Y to Z") broke `yaml.safe_load` on the resulting frontmatter and silently dropped those sources from any tooling that scans tags via parsed YAML.

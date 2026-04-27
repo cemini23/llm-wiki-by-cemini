@@ -215,6 +215,9 @@ def main():
 
         # NOTE: we intentionally produce `related: []` here — hub backlinks
         # get added in a follow-up edit (matching the 229-stub precedent).
+        # `read_status: unread-stub` is mirrored into frontmatter (in addition
+        # to the body bullet) so wiki_lint.py's section-5 ("cited but unread")
+        # check sees an authoritative status without parsing free-form body.
         frontmatter = (
             "---\n"
             f"title: {title_yaml}\n"
@@ -223,6 +226,7 @@ def main():
             f"keywords: [{', '.join(keywords)}]\n"
             "related: []\n"
             "maturity: draft\n"
+            "read_status: unread-stub\n"
             f"created: {TODAY}\n"
             f"updated: {TODAY}\n"
             "---\n\n"

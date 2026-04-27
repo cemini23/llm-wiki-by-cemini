@@ -6,6 +6,7 @@ clusters: [options-derivatives, ml-methods]
 related:
   - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
+read_status: read-skim
 created: 2026-04-23
 updated: 2026-04-26
 ---

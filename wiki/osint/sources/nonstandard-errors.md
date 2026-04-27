@@ -6,6 +6,7 @@ keywords: [Nonstandard, Errors, Agents, Ruijiang, Gao, Steven, Chong, Xiao]
 related:
   - concepts/market-microstructure.md
 maturity: draft
+read_status: unread-stub
 created: 2026-04-27
 updated: 2026-04-27
 ---

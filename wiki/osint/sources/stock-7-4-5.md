@@ -7,6 +7,7 @@ related:
   - concepts/quant-finance.md
   - entities/ticker-watchlist.md
 maturity: validated
+read_status: skimmed
 created: 2026-04-23
 updated: 2026-04-26
 clusters:
