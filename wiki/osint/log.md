@@ -8,6 +8,30 @@ Newest entries on top.
 
 ---
 
+## [2026-04-26] ingest | F: Per-ticker Exa forward-looking deep-dive briefs — full 27/27 sweep (ROADMAP F closed)
+
+Resolves the queued **F** roadmap row. Per-ticker forward-looking research briefs were generated for **all 27 indexed tickers** in `wiki/entities/tickers/<symbol>.md` — landing as `briefs/2026-04-26_<symbol>-exa-deep-dive.md`. Each brief is a 6-section forward-looking 90-180-day supplement to the Gemini Deep Research baseline (the DR pages cover the historical baseline; this sweep layers fresh analyst commentary on top). SPY / QQQ / IWM remain pending because their Gemini DR baseline pages haven't landed yet — their Exa briefs will follow once the DR pages land.
+
+**Method**: Exa `mcp__exa__web_search_advanced_exa` with `startPublishedDate=2026-01-26` (90-day window), `numResults=6`, `enableSummary`, `enableHighlights=true`, `highlightsMaxCharacters=2400`, `type=auto`. Per-ticker query patterns: `"<NAME> <SYMBOL> Q1/Q2 2026 earnings preview <key-business-line> analyst price target April 2026"` for equities; `"<COIN> <SYMBOL> price 2026 ETF flows institutional adoption protocol upgrade analyst forecast April 2026"` for crypto natives. Persisted-output JSON (each Exa response 75KB-130KB) extracted via jq+python pipeline into compact summary/highlight text suitable for synthesis without bloating context.
+
+**Brief structure** (6-section forward-looking addendum mirrors the Gemini DR template):
+1. Business Overview / Asset Profile — what's changed (post-DR baseline)
+2. Competitive Landscape — what's changed
+3. Financial Profile — what's changed
+4. Recent Events (last 90 days) — table format
+5. Forward Catalysts (next 90 days) — table format with date / catalyst / significance
+6. Analyst & Sell-Side — what's changed — PT / FV table + direction-of-revision narrative
+
+Each brief threads cross-watchlist reads explicitly: April 29 hyperscaler-capex cluster (AMZN + GOOGL + META + SOFI all print same day); AI-infra cycle (GLW ↔ AVGO ↔ NVDA ↔ AMD); sovereign-defense-AI cycle (PL ↔ ASTS ↔ PLTR ↔ AMZN-Anthropic); streaming-ad cycle (NFLX ↔ DIS); crypto-equity cycle (COIN May 11 ↔ MSTR May 5); L1-ETF roadmap (BTC → ETH → SOL → ADA / AVAX / LINK).
+
+**Crypto-native reframe note**: The 7 crypto natives have no earnings cycle, so the 6-section template was adapted — "Q1 print cycle gate" replaced with "halving-cycle / ETF flow / protocol-upgrade" forward catalysts. BTC: $74K critical support + $128B spot ETF AUM + cycle-bull ($150-266K PTs) vs. cycle-broken (Fidelity / BlackEden) debate. ETH: yield-asset re-rating + Glamsterdam mid-2026 + consensus PT ~$6,325 vs. spot $2,200-2,395. SOL: Firedancer mainnet + Drift Protocol $285M exploit + Goldman Sachs SOL ETF custody. DOGE: SEC digital-commodity classification + 21Shares TDOG ETF + supply-dilution drag. ADA: Protocol 11 + Hydra L2 + Midnight privacy mainnet + Hashdex Nasdaq Crypto Index inclusion. AVAX: VanEck VAVX ETF + CME futures May 4 2026 + BlackRock $500M BUIDL + RWA $2.1B; price-vs-adoption disconnect. LINK: CCIP $18B/month + JPMorgan/UBS pilots + ADI $240B + structural revenue-sharing limitation.
+
+**Watchlist update**: `entities/ticker-watchlist.md` table extended with new "Exa forward-looking brief (2026-04-26)" column showing 27/27 ✅ links to the briefs. Narrative section adds an "Exa forward-looking brief progress" paragraph below the existing "Progress: 27/30 indexed" status note. `updated:` bumped to 2026-04-27.
+
+**ROADMAP**: F row moves from "Next session" to "Done"; SPY/QQQ/IWM Exa-briefs remain blocked on the Gemini DR baseline pages and stay implicitly queued for once those drop.
+
+**Files**: 27 new files in `briefs/`. 1 modified file in `wiki/entities/ticker-watchlist.md`. 1 modified file in `wiki/log.md`. 1 modified file in `ROADMAP.md`.
+
 ## [2026-04-26] ingest | K5: deep-read 3-9-pm-research — stale-snapshot reframe (source under-counts deployed reality post-2026-03-08; over-claims milestone-ledger artifact backing)
 
 Resolves 7-inbound cited-unread stub at top of L dashboard Section 1 after K4 cleared 3-18-crypto-integration-technical-audit. **First K-series reframe of the *opposite* pattern from K3/K4**: where K3 found "wiki claims more than is built" (Telethon zero-deploy) and K4 found "libraries deployed, architecture not" (Hyperliquid SDK present, Web3.py/Flashbots/AES-GCM absent), K5 finds **"source is 7+ weeks stale and under-counts what's been built post-snapshot, but over-claims artifact backing for the milestone ledger itself."** Both directions of staleness in the same document.

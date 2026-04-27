@@ -51,7 +51,7 @@ related:
   - sources/trading-4-5.md
 maturity: core
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-27
 ---
 
 ## Relations
@@ -130,40 +130,42 @@ The CeminiSuite dev stack baseline tracks **30 symbols** per the server's `ticke
 
 Per-ticker equity research reports are being commissioned via the Gemini Deep Research prompt (stored elsewhere; not in this workspace). Report format: six sections — Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context. Indexed reports live at `wiki/entities/tickers/<symbol>.md`.
 
-| Category | Symbol | Report |
-|---|---|---|
-| Indices | SPY | _pending_ |
-| Indices | QQQ | _pending_ |
-| Indices | IWM | _pending_ |
-| Mega cap | AAPL | ✅ [aapl.md](tickers/aapl.md) (2026-04-23) |
-| Mega cap | MSFT | ✅ [msft.md](tickers/msft.md) (2026-04-23) |
-| Mega cap | NVDA | ✅ [nvda.md](tickers/nvda.md) (2026-04-23) |
-| Mega cap | AMZN | ✅ [amzn.md](tickers/amzn.md) (2026-04-23) |
-| Mega cap | META | ✅ [meta.md](tickers/meta.md) (2026-04-23) |
-| Mega cap | GOOGL | ✅ [googl.md](tickers/googl.md) (2026-04-23) |
-| High beta | TSLA | ✅ [tsla.md](tickers/tsla.md) (2026-04-23) |
-| High beta | AMD | ✅ [amd.md](tickers/amd.md) (2026-04-23) |
-| High beta | SMCI | ✅ [smci.md](tickers/smci.md) (2026-04-23) |
-| High beta | PLTR | ✅ [pltr.md](tickers/pltr.md) (2026-04-23) |
-| High beta | AVGO | ✅ [avgo.md](tickers/avgo.md) (2026-04-23) |
-| Crypto proxies | COIN | ✅ [coin.md](tickers/coin.md) (2026-04-24) |
-| Crypto proxies | MSTR | ✅ [mstr.md](tickers/mstr.md) (2026-04-24) |
-| Consumer tech | DIS | ✅ [dis.md](tickers/dis.md) (2026-04-24) |
-| Consumer tech | NFLX | ✅ [nflx.md](tickers/nflx.md) (2026-04-24) |
-| Crypto native | BTC | ✅ [btc.md](tickers/btc.md) (2026-04-23) |
-| Crypto native | ETH | ✅ [eth.md](tickers/eth.md) (2026-04-24) |
-| Crypto native | SOL | ✅ [sol.md](tickers/sol.md) (2026-04-24) |
-| Crypto native | DOGE | ✅ [doge.md](tickers/doge.md) (2026-04-24) |
-| Crypto native | ADA | ✅ [ada.md](tickers/ada.md) (2026-04-25) |
-| Crypto native | AVAX | ✅ [avax.md](tickers/avax.md) (2026-04-25) |
-| Crypto native | LINK | ✅ [link.md](tickers/link.md) (2026-04-25) |
-| Space tech | ASTS | ✅ [asts.md](tickers/asts.md) (2026-04-24) |
-| Space tech | PL | ✅ [pl.md](tickers/pl.md) (2026-04-24) |
-| Industrials | GLW | ✅ [glw.md](tickers/glw.md) (2026-04-24) |
-| Mega cap | INTC | ✅ [intc.md](tickers/intc.md) (2026-04-24) |
-| Fintech | SOFI | ✅ [sofi.md](tickers/sofi.md) (2026-04-24) |
+| Category | Symbol | Report (Gemini DR baseline) | Exa forward-looking brief (2026-04-26) |
+|---|---|---|---|
+| Indices | SPY | _pending_ | _pending (blocked on DR baseline)_ |
+| Indices | QQQ | _pending_ | _pending (blocked on DR baseline)_ |
+| Indices | IWM | _pending_ | _pending (blocked on DR baseline)_ |
+| Mega cap | AAPL | ✅ [aapl.md](tickers/aapl.md) (2026-04-23) | ✅ [briefs/2026-04-26_aapl-exa-deep-dive.md](../../briefs/2026-04-26_aapl-exa-deep-dive.md) |
+| Mega cap | MSFT | ✅ [msft.md](tickers/msft.md) (2026-04-23) | ✅ [briefs/2026-04-26_msft-exa-deep-dive.md](../../briefs/2026-04-26_msft-exa-deep-dive.md) |
+| Mega cap | NVDA | ✅ [nvda.md](tickers/nvda.md) (2026-04-23) | ✅ [briefs/2026-04-26_nvda-exa-deep-dive.md](../../briefs/2026-04-26_nvda-exa-deep-dive.md) |
+| Mega cap | AMZN | ✅ [amzn.md](tickers/amzn.md) (2026-04-23) | ✅ [briefs/2026-04-26_amzn-exa-deep-dive.md](../../briefs/2026-04-26_amzn-exa-deep-dive.md) |
+| Mega cap | META | ✅ [meta.md](tickers/meta.md) (2026-04-23) | ✅ [briefs/2026-04-26_meta-exa-deep-dive.md](../../briefs/2026-04-26_meta-exa-deep-dive.md) |
+| Mega cap | GOOGL | ✅ [googl.md](tickers/googl.md) (2026-04-23) | ✅ [briefs/2026-04-26_googl-exa-deep-dive.md](../../briefs/2026-04-26_googl-exa-deep-dive.md) |
+| High beta | TSLA | ✅ [tsla.md](tickers/tsla.md) (2026-04-23) | ✅ [briefs/2026-04-26_tsla-exa-deep-dive.md](../../briefs/2026-04-26_tsla-exa-deep-dive.md) |
+| High beta | AMD | ✅ [amd.md](tickers/amd.md) (2026-04-23) | ✅ [briefs/2026-04-26_amd-exa-deep-dive.md](../../briefs/2026-04-26_amd-exa-deep-dive.md) |
+| High beta | SMCI | ✅ [smci.md](tickers/smci.md) (2026-04-23) | ✅ [briefs/2026-04-26_smci-exa-deep-dive.md](../../briefs/2026-04-26_smci-exa-deep-dive.md) |
+| High beta | PLTR | ✅ [pltr.md](tickers/pltr.md) (2026-04-23) | ✅ [briefs/2026-04-26_pltr-exa-deep-dive.md](../../briefs/2026-04-26_pltr-exa-deep-dive.md) |
+| High beta | AVGO | ✅ [avgo.md](tickers/avgo.md) (2026-04-23) | ✅ [briefs/2026-04-26_avgo-exa-deep-dive.md](../../briefs/2026-04-26_avgo-exa-deep-dive.md) |
+| Crypto proxies | COIN | ✅ [coin.md](tickers/coin.md) (2026-04-24) | ✅ [briefs/2026-04-26_coin-exa-deep-dive.md](../../briefs/2026-04-26_coin-exa-deep-dive.md) |
+| Crypto proxies | MSTR | ✅ [mstr.md](tickers/mstr.md) (2026-04-24) | ✅ [briefs/2026-04-26_mstr-exa-deep-dive.md](../../briefs/2026-04-26_mstr-exa-deep-dive.md) |
+| Consumer tech | DIS | ✅ [dis.md](tickers/dis.md) (2026-04-24) | ✅ [briefs/2026-04-26_dis-exa-deep-dive.md](../../briefs/2026-04-26_dis-exa-deep-dive.md) |
+| Consumer tech | NFLX | ✅ [nflx.md](tickers/nflx.md) (2026-04-24) | ✅ [briefs/2026-04-26_nflx-exa-deep-dive.md](../../briefs/2026-04-26_nflx-exa-deep-dive.md) |
+| Crypto native | BTC | ✅ [btc.md](tickers/btc.md) (2026-04-23) | ✅ [briefs/2026-04-26_btc-exa-deep-dive.md](../../briefs/2026-04-26_btc-exa-deep-dive.md) |
+| Crypto native | ETH | ✅ [eth.md](tickers/eth.md) (2026-04-24) | ✅ [briefs/2026-04-26_eth-exa-deep-dive.md](../../briefs/2026-04-26_eth-exa-deep-dive.md) |
+| Crypto native | SOL | ✅ [sol.md](tickers/sol.md) (2026-04-24) | ✅ [briefs/2026-04-26_sol-exa-deep-dive.md](../../briefs/2026-04-26_sol-exa-deep-dive.md) |
+| Crypto native | DOGE | ✅ [doge.md](tickers/doge.md) (2026-04-24) | ✅ [briefs/2026-04-26_doge-exa-deep-dive.md](../../briefs/2026-04-26_doge-exa-deep-dive.md) |
+| Crypto native | ADA | ✅ [ada.md](tickers/ada.md) (2026-04-25) | ✅ [briefs/2026-04-26_ada-exa-deep-dive.md](../../briefs/2026-04-26_ada-exa-deep-dive.md) |
+| Crypto native | AVAX | ✅ [avax.md](tickers/avax.md) (2026-04-25) | ✅ [briefs/2026-04-26_avax-exa-deep-dive.md](../../briefs/2026-04-26_avax-exa-deep-dive.md) |
+| Crypto native | LINK | ✅ [link.md](tickers/link.md) (2026-04-25) | ✅ [briefs/2026-04-26_link-exa-deep-dive.md](../../briefs/2026-04-26_link-exa-deep-dive.md) |
+| Space tech | ASTS | ✅ [asts.md](tickers/asts.md) (2026-04-24) | ✅ [briefs/2026-04-26_asts-exa-deep-dive.md](../../briefs/2026-04-26_asts-exa-deep-dive.md) |
+| Space tech | PL | ✅ [pl.md](tickers/pl.md) (2026-04-24) | ✅ [briefs/2026-04-26_pl-exa-deep-dive.md](../../briefs/2026-04-26_pl-exa-deep-dive.md) |
+| Industrials | GLW | ✅ [glw.md](tickers/glw.md) (2026-04-24) | ✅ [briefs/2026-04-26_glw-exa-deep-dive.md](../../briefs/2026-04-26_glw-exa-deep-dive.md) |
+| Mega cap | INTC | ✅ [intc.md](tickers/intc.md) (2026-04-24) | ✅ [briefs/2026-04-26_intc-exa-deep-dive.md](../../briefs/2026-04-26_intc-exa-deep-dive.md) |
+| Fintech | SOFI | ✅ [sofi.md](tickers/sofi.md) (2026-04-24) | ✅ [briefs/2026-04-26_sofi-exa-deep-dive.md](../../briefs/2026-04-26_sofi-exa-deep-dive.md) |
 
 **Progress**: 27 / 30 indexed (2026-04-25 ingest: ADA, AVAX, LINK added — completes the 7-coin crypto-native bench. Filename convention reminder: `<TICKER> <date>.docx`, not company-name or leading-underscore/parens forms; the regex in `scripts/index_tickers.py` expects a leading uppercase token. ADA dropped as `_(ADA)3_24.docx`, renamed in-place before re-running. Remaining pending: SPY, QQQ, IWM — the three index ETFs). 2026-04-24 watchlist rebalance (even +5 / −5 swap, size preserved at 30): **added** ASTS, GLW, INTC, PL, SOFI; **removed** MARA, JPM, BAC, GS, UBER (UBER's entity page deleted; source docx `UBER 3_24.docx` retained in `research for cemini/` as historical record). Drop new reports into `research to be indexed/` as `<SYMBOL> <date>.docx`, then ask Claude to index them. The ingest workflow: extract docx → create `wiki/entities/tickers/<symbol>.md` → flip this table's row → move source docx into `research for cemini/`.
+
+**Exa forward-looking brief progress** (2026-04-26): **27 / 27 indexed tickers covered** via the ROADMAP F sweep — `briefs/2026-04-26_<symbol>-exa-deep-dive.md`. Each is a 6-section forward-looking 90-180-day supplement to the Gemini DR baseline at `wiki/entities/tickers/<symbol>.md`. Window: Exa `web_search_advanced_exa` with `startPublishedDate=2026-01-26`. The 7 crypto-natives reframe the 6-section template around protocol / ETF / cycle catalysts (no earnings cycle); the 20 equity tickers retain the standard earnings-cycle framing. Cross-cycle reads explicitly threaded through: April 29 hyperscaler-capex cluster (AMZN + GOOGL + META + SOFI), AI-infra cycle (GLW ↔ AVGO ↔ NVDA ↔ AMD), sovereign-defense-AI cycle (PL ↔ ASTS ↔ PLTR ↔ AMZN-Anthropic), streaming-ad cycle (NFLX ↔ DIS), crypto-equity cycle (COIN ↔ MSTR), and L1-ETF roadmap (BTC → ETH → SOL → ADA/AVAX/LINK). SPY/QQQ/IWM remain blocked on Gemini DR baseline; their Exa briefs will follow once the DR pages land.
 
 ### Notes
 

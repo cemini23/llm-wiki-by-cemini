@@ -12,13 +12,13 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 ## Now — current session (2026-04-26)
 
-*(empty — D′ shipped; see Done.)*
+*(empty — F shipped; see Done.)*
 
 ## Next session — break-and-resume
 
 | Item | Status | Model | Notes |
 |---|---|---|---|
-| **F** Per-ticker Exa research briefs + cross-link to research corpus | queued | mixed | Run an Exa pass per indexed ticker (27 today; 30 once SPY/QQQ/IWM land). File each as `briefs/2026-MM-DD_<symbol>-exa-deep-dive.md`. Cross-reference back to (a) `wiki/entities/tickers/<symbol>.md` and (b) any matching Gemini DR-derived `wiki/sources/` pages. Format suggestion: 6-section structure mirroring the existing ticker reports (Business / Competitive / Financial / Recent Events / Forward Catalysts / Analyst & Sell-Side) but **forward-looking only — last 90-180 days**, since the Gemini DR pass covers the historical baseline. Opus for synthesis sections, Sonnet for the mechanical Exa-search-and-extract step. Each brief ~15-30 min focused work; full sweep ~7-15 hours, naturally batched in 5-7 tickers per sub-session. |
+| _(F shipped — closed below in Done)_ | — | — | SPY / QQQ / IWM Exa briefs remain implicitly queued behind their Gemini DR baseline pages — not a separate task, will batch with the next DR drop. |
 
 ## Soon — small carryover items
 
@@ -60,6 +60,7 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 | Item | Commit | Notes |
 |---|---|---|
+| **F** Per-ticker Exa forward-looking deep-dive briefs | _(pending commit)_ | Full 27/27 sweep — `briefs/2026-04-26_<symbol>-exa-deep-dive.md`. 6-section forward-looking 90-180-day supplement to each Gemini DR baseline at `wiki/entities/tickers/<symbol>.md`. Method: Exa `web_search_advanced_exa` with `startPublishedDate=2026-01-26`, `numResults=6`, summary + highlights enabled. Crypto-native (7) reframed around protocol / ETF / cycle catalysts (no earnings cycle); equities (20) retain standard earnings-cycle framing. Cross-cycle reads explicitly threaded: April 29 hyperscaler-capex cluster (AMZN+GOOGL+META+SOFI), AI-infra cycle (GLW↔AVGO↔NVDA↔AMD), sovereign-defense-AI (PL↔ASTS↔PLTR↔AMZN-Anthropic), streaming-ad (NFLX↔DIS), crypto-equity (COIN↔MSTR), L1-ETF roadmap (BTC→ETH→SOL→ADA/AVAX/LINK). Watchlist updated with new Exa-brief column. SPY/QQQ/IWM blocked on Gemini DR baseline. |
 | ROADMAP.md created | `526b174` | Forward-looking project plan; companion to `wiki/log.md` (chronological) and `LESSONS.md` (meta-lessons). |
 | **A** Crypto concept scaffold + cross-link 7 ticker reports | `4c6aa85` | Created `wiki/concepts/crypto-asset-taxonomy.md` (4 categories: store-of-value, programmable L1, memecoin/PoW, oracle middleware) and `wiki/concepts/oracle-networks.md` (LINK-focused). Added bidirectional `related:` edges across all 7 crypto ticker pages (btc/eth/sol/doge/ada/avax/link), the watchlist, and `wiki/index.md`. Folded original B.3 (ada/avax/link → watchlist backlinks) into this work. Lint clean; orphans 201 → 198. |
 | **B** Two loop-closers | `0d59a60` | (1) `stock-7-4-5.md` resolved: Tandiontong + Sitompul, GATR J. Bank. Fin. Review 2(2):21–27 (2017), Altman Z-Score + beta + inflation on Indonesian BEI, cluster `uncategorized→quant-finance`. (2) 3 undated `[NEEDS VERIFICATION]` in `deepseek-api.md` stamped `2026-04-25`. |
