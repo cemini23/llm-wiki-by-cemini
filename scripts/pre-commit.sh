@@ -41,7 +41,13 @@ done < <(git diff --cached --name-only --diff-filter=AM)
 # Build pattern from parts so this hook script's source doesn't itself contain
 # the literal IP it's blocking (would otherwise trip on its own initial commit).
 SERVER_IP_RE='5\.16'"1"'\.53\.103'
-API_KEY_RE='sk-[A-Za-z0-9_-]{20,}'
+# API-key regex requires a non-word char (or start-of-line) immediately before
+# 'sk-' so URL fragments like '.../Risk-Premiums-of-Equity-...' don't match
+# at the 'sk-Premiums-...' substring (false-positive seen during ingest N on
+# 2026-04-27 in a CME Group URL inside the SPY Gemini DR baseline). Real
+# OpenAI / DeepSeek / Anthropic keys are always surrounded by whitespace,
+# quotes, or start-of-string when staged, so this remains safe.
+API_KEY_RE='(^|[^A-Za-z0-9])sk-[A-Za-z0-9_-]{20,}'
 
 # Extract added lines from staged diff, excluding the hook itself.
 added_lines=$(
