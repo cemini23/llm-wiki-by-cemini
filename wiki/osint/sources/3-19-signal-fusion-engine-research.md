@@ -1,17 +1,25 @@
 ---
-title: "Architecting a Real-Time Heterogeneous Signal Fusion Engine for Institutional Algorithmic Trading"
+title: Architecting a Real-Time Heterogeneous Signal Fusion Engine for Institutional Algorithmic Trading
 type: source
 tags: [docx, market-microstructure, quant-finance, ml-methods, cemini-internal, rls, bayesian, meta-labeling, redis]
-clusters: [market-microstructure, quant-finance, ml-methods, cemini-internal]
 related:
+  - concepts/market-microstructure.md
+  - concepts/quant-finance.md
   - entities/platforms/kalshi.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - market-microstructure
+  - quant-finance
+  - ml-methods
+  - cemini-internal
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @entities/platforms/kalshi.md — primary Cemini prediction-market venue; market microstructure context
 
 ## Raw Concept

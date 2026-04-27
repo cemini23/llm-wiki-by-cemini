@@ -2,40 +2,50 @@
 title: Architecting Scatter-Gather Multi-Agent Workflows for Algorithmic Trading Intelligence
 type: source
 tags: [docx, rl-marl, llm-agents, market-microstructure, quant-finance, crypto, cemini-internal]
-clusters: [rl-marl, llm-agents, market-microstructure, quant-finance, crypto, cemini-internal]
 related:
-  - entities/platforms/hyperliquid.md
-  - entities/platforms/oanda.md
-  - entities/data-sources/gdelt.md
+  - concepts/ip-sale-readiness.md
+  - concepts/market-microstructure.md
+  - concepts/quant-finance.md
+  - concepts/scatter-gather-topology.md
   - entities/data-sources/fred.md
-  - entities/infrastructure/ollama.md
-  - entities/infrastructure/deepseek-r1-14b.md
-  - entities/frameworks/langgraph.md
+  - entities/data-sources/gdelt.md
   - entities/frameworks/fastapi.md
   - entities/frameworks/fastmcp.md
+  - entities/frameworks/langgraph.md
   - entities/frameworks/pydantic-v2.md
-  - concepts/ip-sale-readiness.md
-  - concepts/scatter-gather-topology.md
+  - entities/infrastructure/deepseek-r1-14b.md
+  - entities/infrastructure/ollama.md
+  - entities/platforms/hyperliquid.md
+  - entities/platforms/oanda.md
 maturity: validated
-read_status: validated
 created: 2026-04-23
 updated: 2026-04-26
+read_status: validated
+clusters:
+  - rl-marl
+  - llm-agents
+  - market-microstructure
+  - quant-finance
+  - crypto
+  - cemini-internal
 ---
 
 ## Relations
 
-- @entities/platforms/hyperliquid.md
-- @entities/platforms/oanda.md
-- @entities/data-sources/gdelt.md
+- @concepts/ip-sale-readiness.md
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
+- @concepts/scatter-gather-topology.md
 - @entities/data-sources/fred.md
-- @entities/infrastructure/ollama.md
-- @entities/infrastructure/deepseek-r1-14b.md
-- @entities/frameworks/langgraph.md
+- @entities/data-sources/gdelt.md
 - @entities/frameworks/fastapi.md
 - @entities/frameworks/fastmcp.md
+- @entities/frameworks/langgraph.md
 - @entities/frameworks/pydantic-v2.md
-- @concepts/ip-sale-readiness.md
-- @concepts/scatter-gather-topology.md
+- @entities/infrastructure/deepseek-r1-14b.md
+- @entities/infrastructure/ollama.md
+- @entities/platforms/hyperliquid.md
+- @entities/platforms/oanda.md
 
 ## Raw Concept
 

@@ -1,17 +1,27 @@
 ---
-title: "A Controlled Comparison of Deep Learning Architectures for Multi-Horizon Financial Forecasting"
+title: A Controlled Comparison of Deep Learning Architectures for Multi-Horizon Financial Forecasting
 type: source
 tags: [pdf, rl-marl, portfolio-strategy, quant-finance, ml-methods, time-series, crypto]
-clusters: [rl-marl, portfolio-strategy, quant-finance, ml-methods, time-series, crypto]
 related:
+  - concepts/portfolio-strategy.md
+  - concepts/quant-finance.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - portfolio-strategy
+  - quant-finance
+  - ml-methods
+  - time-series
+  - crypto
 ---
 
 ## Relations
 
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

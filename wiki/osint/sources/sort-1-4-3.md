@@ -2,16 +2,25 @@
 title: Building Crypto Portfolios with Agentic AI
 type: source
 tags: [pdf, rl-marl, llm-agents, portfolio-strategy, crypto, market-microstructure, agentic-ai, multi-agent]
-clusters: [rl-marl, llm-agents, portfolio-strategy, market-microstructure, crypto]
 related:
+  - concepts/market-microstructure.md
+  - concepts/portfolio-strategy.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - llm-agents
+  - portfolio-strategy
+  - market-microstructure
+  - crypto
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

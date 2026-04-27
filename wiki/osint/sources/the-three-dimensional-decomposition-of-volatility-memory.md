@@ -3,7 +3,8 @@ title: The Three-Dimensional Decomposition of Volatility Ziyao Wang∗, A. Alexa
 type: source
 tags: [pdf, unread-stub, options-derivatives]
 keywords: [Three-Dimensional, Decomposition, Volatility, Ziyao, Wang, Alexandre, Trindade, Svetlozar]
-related: []
+related:
+  - concepts/options-derivatives.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27
@@ -11,7 +12,7 @@ updated: 2026-04-27
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/options-derivatives.md — Options & Derivatives corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

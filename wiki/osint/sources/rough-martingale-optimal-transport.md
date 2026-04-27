@@ -1,9 +1,10 @@
 ---
-title: Rough Martingale Optimal Transport: Theory, Implementation, and Regulatory Applications for
+title: 'Rough Martingale Optimal Transport: Theory, Implementation, and Regulatory Applications for'
 type: source
 tags: [pdf, unread-stub, options-derivatives]
 keywords: [Rough, Martingale, Optimal, Transport, Theory, Implementation, Regulatory, Applications]
-related: []
+related:
+  - concepts/options-derivatives.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27
@@ -11,7 +12,7 @@ updated: 2026-04-27
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/options-derivatives.md — Options & Derivatives corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

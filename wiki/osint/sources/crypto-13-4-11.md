@@ -1,17 +1,24 @@
 ---
-title: "Pricing and Hedging for Liquidity Provision in Constant Function Market Making"
+title: Pricing and Hedging for Liquidity Provision in Constant Function Market Making
 type: source
 tags: [pdf, options-derivatives, market-microstructure, crypto, cfmm, amm, uniswap, impermanent-loss, lvr, carr-madan]
-clusters: [options-derivatives, market-microstructure, crypto]
 related:
+  - concepts/market-microstructure.md
+  - concepts/options-derivatives.md
   - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - options-derivatives
+  - market-microstructure
+  - crypto
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/options-derivatives.md — Options & Derivatives corpus-index hub (Q 2026-04-27)
 - @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept

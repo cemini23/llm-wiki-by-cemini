@@ -2,16 +2,20 @@
 title: SAMP-HDRL — Segmented Allocation with Momentum-Adjusted Utility for Multi-Agent Portfolio Management via Hierarchical Deep Reinforcement Learning
 type: source
 tags: [pdf, rl-marl, portfolio-strategy, hierarchical-drl, regime-shifts, portfolio-optimization, needs-review-title]
-clusters: [rl-marl, portfolio-strategy]
 related:
+  - concepts/portfolio-strategy.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - portfolio-strategy
 ---
 
 ## Relations
 
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

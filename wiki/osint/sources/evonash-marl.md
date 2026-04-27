@@ -1,5 +1,5 @@
 ---
-title: EvoNash-MARL: A Closed-Loop Multi-Agent Reinforcement Learning Framework for
+title: 'EvoNash-MARL: A Closed-Loop Multi-Agent Reinforcement Learning Framework for'
 type: source
 tags: [pdf, unread-stub, rl-marl]
 keywords: [EvoNash-MARL, Closed-Loop, Multi-Agent, Reinforcement, Learning, Framework, Medium-Horizon, Equity]

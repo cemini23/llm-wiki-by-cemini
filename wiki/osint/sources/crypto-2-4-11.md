@@ -2,16 +2,21 @@
 title: Constrained Policy Optimization for Provably Fair Order Matching (CPO-FOAM)
 type: source
 tags: [pdf, rl-marl, market-microstructure, crypto, constrained-mdp, fairness, on-chain-verification, rigorous-academic]
-clusters: [rl-marl, market-microstructure, crypto]
 related:
+  - concepts/market-microstructure.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - market-microstructure
+  - crypto
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

@@ -1,5 +1,5 @@
 ---
-title: Deep Hedging with Reinforcement Learning: A Practical Framework for Option Risk Management
+title: 'Deep Hedging with Reinforcement Learning: A Practical Framework for Option Risk Management'
 type: source
 tags: [pdf, unread-stub, rl-marl]
 keywords: [Deep, Hedging, Reinforcement, Learning, Practical, Framework, Option, Risk]

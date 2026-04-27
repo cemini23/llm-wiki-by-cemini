@@ -1,19 +1,21 @@
 ---
-title: "The Influence of Financial Distress Using Altman Z-Score, The Beta of Stocks and Inflation To The Stock Return"
+title: The Influence of Financial Distress Using Altman Z-Score, The Beta of Stocks and Inflation To The Stock Return
 type: source
 tags: [pdf, skimmed, quant-finance, altman-z-score, capm, systematic-risk, indonesian-equities, academic-journal, gatr-journals]
-clusters: [quant-finance]
 keywords: [altman-z-score, financial-distress, beta-stocks, inflation, stock-return, panel-data-regression, indonesia-stock-exchange, capm, systematic-risk, manufacturing-sector]
 related:
+  - concepts/quant-finance.md
   - entities/ticker-watchlist.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - quant-finance
 ---
 
 ## Relations
 
-*(No cross-references to current wiki entities/concepts — Indonesia-focused quant-finance empirical paper. Cross-link if a Financial Distress or Altman Z-Score concept page is created.)*
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

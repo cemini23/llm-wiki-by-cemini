@@ -1,26 +1,36 @@
 ---
-title: "Optimizing GitHub Actions Workflows for High-Stakes Fintech and Algorithmic Trading Environments"
+title: Optimizing GitHub Actions Workflows for High-Stakes Fintech and Algorithmic Trading Environments
 type: source
 tags: [docx, cemini-internal, market-microstructure, quant-finance, prediction-markets, audit-security, infrastructure]
-clusters: [market-microstructure, quant-finance, prediction-markets, cemini-internal, audit-security, infrastructure]
 related:
-  - entities/security/syft.md
-  - entities/security/cyclonedx.md
-  - entities/security/trivy.md
-  - entities/security/semgrep.md
+  - concepts/market-microstructure.md
+  - concepts/quant-finance.md
   - concepts/sbom.md
+  - entities/security/cyclonedx.md
+  - entities/security/semgrep.md
+  - entities/security/syft.md
+  - entities/security/trivy.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
+clusters:
+  - market-microstructure
+  - quant-finance
+  - prediction-markets
+  - cemini-internal
+  - audit-security
+  - infrastructure
 ---
 
 ## Relations
 
-- @entities/security/syft.md
-- @entities/security/cyclonedx.md
-- @entities/security/trivy.md
-- @entities/security/semgrep.md
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/sbom.md
+- @entities/security/cyclonedx.md
+- @entities/security/semgrep.md
+- @entities/security/syft.md
+- @entities/security/trivy.md
 
 ## Raw Concept
 

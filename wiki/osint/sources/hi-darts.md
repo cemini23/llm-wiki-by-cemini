@@ -1,5 +1,5 @@
 ---
-title: Hi-DARTS: Hierarchical Dynamically Adapting Reinforcement Trading System
+title: 'Hi-DARTS: Hierarchical Dynamically Adapting Reinforcement Trading System'
 type: source
 tags: [pdf, unread-stub, rl-marl]
 keywords: [Hi-DARTS, Hierarchical, Dynamically, Adapting, Reinforcement, Trading, System, HOON]

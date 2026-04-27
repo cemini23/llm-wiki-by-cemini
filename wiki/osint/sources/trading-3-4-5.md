@@ -2,16 +2,19 @@
 title: The Future of Behavioural Finance in an AI-Driven Trading World
 type: source
 tags: [pdf, unread-stub, market-microstructure]
-clusters: [market-microstructure]
 related:
+  - concepts/market-microstructure.md
   - entities/platforms/kalshi.md
 maturity: draft
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - market-microstructure
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
 - @entities/platforms/kalshi.md — primary Cemini prediction-market venue; market microstructure context
 
 ## Raw Concept

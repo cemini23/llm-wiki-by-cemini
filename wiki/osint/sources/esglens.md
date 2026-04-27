@@ -1,5 +1,5 @@
 ---
-title: ESGLens: An LLM-Based RAG Framework for Interactive ESG Report Analysis and Score Prediction
+title: 'ESGLens: An LLM-Based RAG Framework for Interactive ESG Report Analysis and Score Prediction'
 type: source
 tags: [pdf, unread-stub, llm-agents]
 keywords: [ESGLens, LLM-Based, RAG, Framework, Interactive, ESG, Report, Analysis]

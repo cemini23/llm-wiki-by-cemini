@@ -1,18 +1,23 @@
 ---
-title: "Crypto-Agility Inventories via Collaborative LLMs (PQC readiness)"
+title: Crypto-Agility Inventories via Collaborative LLMs (PQC readiness)
 type: source
 tags: [pdf, llm-agents, portfolio-strategy, audit-security]
-clusters: [llm-agents, portfolio-strategy, audit-security]
 related:
   - concepts/llm-agent-systems.md
+  - concepts/portfolio-strategy.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - llm-agents
+  - portfolio-strategy
+  - audit-security
 ---
 
 ## Relations
 
 - @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

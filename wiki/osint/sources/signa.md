@@ -1,17 +1,23 @@
 ---
-title: "CEMINI FINANCIAL SUITE — Competitive & Research Intelligence: Document Analysis"
+title: 'CEMINI FINANCIAL SUITE — Competitive & Research Intelligence: Document Analysis'
 type: source
 tags: [docx, unread-stub, rl-marl, llm-agents, quant-finance, cemini-internal]
-clusters: [rl-marl, llm-agents, quant-finance, cemini-internal]
 related:
+  - concepts/quant-finance.md
   - concepts/rl-marl-research.md
 maturity: draft
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - llm-agents
+  - quant-finance
+  - cemini-internal
 ---
 
 ## Relations
 
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

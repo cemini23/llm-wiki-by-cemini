@@ -1,9 +1,10 @@
 ---
-title: Test-Time Adaptation for Non-stationary Time Series: From Synthetic Regime Shifts to Financial Markets
+title: 'Test-Time Adaptation for Non-stationary Time Series: From Synthetic Regime Shifts to Financial Markets'
 type: source
 tags: [pdf, unread-stub, quant-finance]
 keywords: [Test-Time, Adaptation, Non-stationary, Time, Series, From, Synthetic, Regime]
-related: []
+related:
+  - concepts/quant-finance.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27
@@ -11,7 +12,7 @@ updated: 2026-04-27
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

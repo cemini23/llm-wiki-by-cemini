@@ -1,43 +1,50 @@
 ---
-title: "Cryptographic Verification Mechanisms for Algorithmic Trading Due Diligence: A Technical Audit Report"
+title: 'Cryptographic Verification Mechanisms for Algorithmic Trading Due Diligence: A Technical Audit Report'
 type: source
 tags: [docx, llm-agents, quant-finance, crypto, prediction-markets, cemini-internal]
-clusters: [llm-agents, quant-finance, crypto, prediction-markets, cemini-internal]
 related:
-  - sources/3-19-ip-sale-research.md
-  - sources/3-19-compliance-research.md
-  - entities/platforms/kalshi.md
+  - concepts/cryptographic-audit-trail.md
+  - concepts/ip-sale-readiness.md
+  - concepts/quant-finance.md
+  - concepts/replacement-cost-valuation.md
+  - entities/components/kelly-cvar-risk-engine.md
+  - entities/frameworks/finbert.md
+  - entities/frameworks/langgraph.md
+  - entities/frameworks/nautilustrader.md
+  - entities/frameworks/pydantic-v2.md
   - entities/infrastructure/hetzner.md
   - entities/infrastructure/timescaledb.md
-  - entities/frameworks/langgraph.md
-  - entities/frameworks/pydantic-v2.md
-  - entities/frameworks/nautilustrader.md
-  - entities/frameworks/finbert.md
-  - entities/components/kelly-cvar-risk-engine.md
-  - concepts/ip-sale-readiness.md
-  - concepts/cryptographic-audit-trail.md
-  - concepts/replacement-cost-valuation.md
+  - entities/platforms/kalshi.md
+  - sources/3-19-compliance-research.md
+  - sources/3-19-ip-sale-research.md
 maturity: validated
-read_status: validated
 created: 2026-04-23
 updated: 2026-04-25
+read_status: validated
+clusters:
+  - llm-agents
+  - quant-finance
+  - crypto
+  - prediction-markets
+  - cemini-internal
 ---
 
 ## Relations
 
-- @sources/3-19-ip-sale-research.md — IP-sale source explicitly cites this technical audit's tamper-evident architecture as the deal-killer mitigator for paper-trading track-record trust deficit
-- @sources/3-19-compliance-research.md — companion regulatory/IP source; both target the institutional-acquirer due-diligence bundle
-- @entities/platforms/kalshi.md
+- @concepts/cryptographic-audit-trail.md
+- @concepts/ip-sale-readiness.md
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
+- @concepts/replacement-cost-valuation.md
+- @entities/components/kelly-cvar-risk-engine.md
+- @entities/frameworks/finbert.md
+- @entities/frameworks/langgraph.md
+- @entities/frameworks/nautilustrader.md
+- @entities/frameworks/pydantic-v2.md
 - @entities/infrastructure/hetzner.md
 - @entities/infrastructure/timescaledb.md
-- @entities/frameworks/langgraph.md
-- @entities/frameworks/pydantic-v2.md
-- @entities/frameworks/nautilustrader.md
-- @entities/frameworks/finbert.md
-- @entities/components/kelly-cvar-risk-engine.md
-- @concepts/ip-sale-readiness.md
-- @concepts/cryptographic-audit-trail.md
-- @concepts/replacement-cost-valuation.md
+- @entities/platforms/kalshi.md
+- @sources/3-19-compliance-research.md — companion regulatory/IP source; both target the institutional-acquirer due-diligence bundle
+- @sources/3-19-ip-sale-research.md — IP-sale source explicitly cites this technical audit's tamper-evident architecture as the deal-killer mitigator for paper-trading track-record trust deficit
 
 ## Raw Concept
 

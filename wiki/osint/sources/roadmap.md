@@ -1,18 +1,25 @@
 ---
-title: "Cemini Financial Suite — Development Roadmap (v13.0)"
+title: Cemini Financial Suite — Development Roadmap (v13.0)
 type: source
 tags: [md, cemini-internal, llm-agents, quant-finance, prediction-markets, audit-security]
-clusters: [llm-agents, quant-finance, prediction-markets, cemini-internal, audit-security]
 related:
   - concepts/milestone-ledger.md
+  - concepts/quant-finance.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
+clusters:
+  - llm-agents
+  - quant-finance
+  - prediction-markets
+  - cemini-internal
+  - audit-security
 ---
 
 ## Relations
 
 - @concepts/milestone-ledger.md
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

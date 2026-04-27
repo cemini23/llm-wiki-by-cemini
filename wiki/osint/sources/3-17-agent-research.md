@@ -1,18 +1,24 @@
 ---
-title: "Technical Research Audit: Integration of Local AI Agents in the Cemini Financial Suite"
+title: 'Technical Research Audit: Integration of Local AI Agents in the Cemini Financial Suite'
 type: source
 tags: [docx, unread-stub, llm-agents, quant-finance, prediction-markets, cemini-internal]
-clusters: [llm-agents, quant-finance, prediction-markets, cemini-internal]
 related:
   - concepts/llm-agent-systems.md
+  - concepts/quant-finance.md
 maturity: draft
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - llm-agents
+  - quant-finance
+  - prediction-markets
+  - cemini-internal
 ---
 
 ## Relations
 
 - @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

@@ -1,31 +1,47 @@
 ---
-title: "Strategic Architecture and Algorithmic Development Report: Cemini Financial Suite Project State Summary"
+title: 'Strategic Architecture and Algorithmic Development Report: Cemini Financial Suite Project State Summary'
 type: source
 tags: [docx, cemini-internal, rl-marl, llm-agents, portfolio-strategy, market-microstructure, quant-finance, prediction-markets, audit-security, infrastructure, data-engineering]
-clusters: [rl-marl, llm-agents, portfolio-strategy, market-microstructure, quant-finance, prediction-markets, cemini-internal, audit-security, infrastructure, data-engineering]
 related:
+  - concepts/market-microstructure.md
+  - concepts/milestone-ledger.md
+  - concepts/portfolio-strategy.md
+  - concepts/quant-finance.md
+  - entities/infrastructure/hetzner.md
+  - entities/infrastructure/pgvector.md
+  - entities/infrastructure/redis.md
+  - entities/infrastructure/timescaledb.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
-  - entities/infrastructure/hetzner.md
-  - entities/infrastructure/timescaledb.md
-  - entities/infrastructure/redis.md
-  - entities/infrastructure/pgvector.md
-  - concepts/milestone-ledger.md
 maturity: validated
-read_status: validated
 created: 2026-04-23
 updated: 2026-04-26
+read_status: validated
+clusters:
+  - rl-marl
+  - llm-agents
+  - portfolio-strategy
+  - market-microstructure
+  - quant-finance
+  - prediction-markets
+  - cemini-internal
+  - audit-security
+  - infrastructure
+  - data-engineering
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/milestone-ledger.md — sibling page; K5 upgrades its `[RETRACTED 2026-04-24 Track C]` to `[RESOLVED 2026-04-26 K5 deep-read]` with the source-grounded reframe
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
+- @entities/infrastructure/hetzner.md
+- @entities/infrastructure/pgvector.md
+- @entities/infrastructure/redis.md
+- @entities/infrastructure/timescaledb.md
 - @entities/platforms/kalshi.md
 - @entities/platforms/polymarket.md
-- @entities/infrastructure/hetzner.md
-- @entities/infrastructure/timescaledb.md
-- @entities/infrastructure/redis.md
-- @entities/infrastructure/pgvector.md
-- @concepts/milestone-ledger.md — sibling page; K5 upgrades its `[RETRACTED 2026-04-24 Track C]` to `[RESOLVED 2026-04-26 K5 deep-read]` with the source-grounded reframe
 
 ## Raw Concept
 

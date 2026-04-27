@@ -1,17 +1,31 @@
 ---
-title: "Advanced Reward Architectures and Training Dynamics for Heterogeneous Multi-Agent Financial Reinforcement Learning"
+title: Advanced Reward Architectures and Training Dynamics for Heterogeneous Multi-Agent Financial Reinforcement Learning
 type: source
 tags: [docx, rl-marl, portfolio-strategy, options-derivatives, market-microstructure, quant-finance, cemini-internal, mappo, sortino, action-masking, curriculum]
-clusters: [rl-marl, portfolio-strategy, options-derivatives, market-microstructure, quant-finance, cemini-internal]
 related:
+  - concepts/market-microstructure.md
+  - concepts/options-derivatives.md
+  - concepts/portfolio-strategy.md
+  - concepts/quant-finance.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - portfolio-strategy
+  - options-derivatives
+  - market-microstructure
+  - quant-finance
+  - cemini-internal
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/options-derivatives.md — Options & Derivatives corpus-index hub (Q 2026-04-27)
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

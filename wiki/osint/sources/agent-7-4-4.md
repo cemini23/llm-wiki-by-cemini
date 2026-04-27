@@ -2,16 +2,23 @@
 title: Decomposable Reward Modeling and Realistic Environment Design (for Forex RL)
 type: source
 tags: [pdf, rl-marl, portfolio-strategy, market-microstructure, forex, reward-decomposition, rl-environment]
-clusters: [rl-marl, portfolio-strategy, market-microstructure]
 related:
+  - concepts/market-microstructure.md
+  - concepts/portfolio-strategy.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - portfolio-strategy
+  - market-microstructure
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

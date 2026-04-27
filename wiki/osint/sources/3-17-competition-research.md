@@ -1,28 +1,44 @@
 ---
-title: "Technical Research Audit and IP Acquisition Readiness Report: Cemini Financial Suite"
+title: 'Technical Research Audit and IP Acquisition Readiness Report: Cemini Financial Suite'
 type: source
 tags: [docx, cemini-internal, rl-marl, llm-agents, portfolio-strategy, market-microstructure, quant-finance, time-series, crypto, prediction-markets, alt-data]
-clusters: [rl-marl, llm-agents, portfolio-strategy, market-microstructure, quant-finance, time-series, crypto, prediction-markets, cemini-internal, alt-data]
 related:
-  - entities/platforms/kalshi.md
-  - entities/data-sources/open-meteo.md
-  - entities/security/syft.md
-  - entities/security/cyclonedx.md
   - concepts/ensemble-weather-forecasting.md
+  - concepts/market-microstructure.md
+  - concepts/portfolio-strategy.md
+  - concepts/quant-finance.md
   - concepts/sbom.md
+  - entities/data-sources/open-meteo.md
+  - entities/platforms/kalshi.md
+  - entities/security/cyclonedx.md
+  - entities/security/syft.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
+clusters:
+  - rl-marl
+  - llm-agents
+  - portfolio-strategy
+  - market-microstructure
+  - quant-finance
+  - time-series
+  - crypto
+  - prediction-markets
+  - cemini-internal
+  - alt-data
 ---
 
 ## Relations
 
-- @entities/platforms/kalshi.md
-- @entities/data-sources/open-meteo.md
-- @entities/security/syft.md
-- @entities/security/cyclonedx.md
 - @concepts/ensemble-weather-forecasting.md
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/sbom.md
+- @entities/data-sources/open-meteo.md
+- @entities/platforms/kalshi.md
+- @entities/security/cyclonedx.md
+- @entities/security/syft.md
 
 ## Raw Concept
 

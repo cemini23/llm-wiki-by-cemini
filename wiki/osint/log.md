@@ -8,6 +8,38 @@ Newest entries on top.
 
 ---
 
+## [2026-04-27] ingest | Q: 4 corpus-index hubs (quant-finance, market-microstructure, portfolio-strategy, options-derivatives) — 120 sources cross-linked + 58 YAML-title parse bugs fixed
+
+Closes the cluster-bootstrap arc (D + D′ pattern → Q): the four remaining tagged-but-hub-less clusters now have index-only discovery hubs with bidirectional backlinks across every member source. Lint clean post-Q: **0 orphans / 0 bidir gaps / 0 dangling / 0 missing @paths** (was 0 / 76 / 0 / 0 immediately pre-Q because the colon-in-title YAML bug suppressed cluster routing for 58 sources).
+
+### What shipped
+
+- `scripts/build_cluster_hubs.py` — Q-task tooling. Mirrors O's update-hub pattern. Scans `wiki/sources/*.md` for `tags:` membership in any of `{quant-finance, market-microstructure, portfolio-strategy, options-derivatives}`, writes 4 hub pages with `## Relations` bullets, then walks each member source to append the hub path to `related:` and a Relations bullet.
+- `wiki/concepts/quant-finance.md` (65 sources) — volatility forecasting, VaR/CVaR/drawdown, backtesting methodology, factor models, alpha decay
+- `wiki/concepts/market-microstructure.md` (55 sources) — order-book dynamics, market-maker inventory, latency-arbitrage, HFT, ETF intraday liquidity
+- `wiki/concepts/portfolio-strategy.md` (36 sources) — Sharpe / Sortino / Calmar, risk parity, mean-variance + Black-Litterman, Kelly sizing, rebalance / turnover
+- `wiki/concepts/options-derivatives.md` (23 sources) — American/European pricing, rough-vol & fractional models, delta/gamma/vega hedging, variance swaps, FRTB-audit applications
+- 120 unique source pages updated with one-to-many backlinks (most sources tag into 1–2 hubs; 7 tag into 3; 1 into all 4 — overlap is explicit and intentional)
+- `wiki/index.md` — "Research corpus index hubs" section now lists all 8 hubs (LLM-agents · RL/MARL · AI-ethics · quant-finance · microstructure · portfolio · options · corpus-overflow)
+
+### YAML-title-colon bug — preventative win
+
+Mid-task surfaced via `wiki_lint.py`: 58 source pages had unquoted YAML titles containing `:` (e.g. `title: Cryptographic Verification Mechanisms for Algorithmic Trading Due Diligence: A Technical Audit Report`). YAML parses the second `:` as a mapping-key delimiter → entire frontmatter block fails `yaml.safe_load`. Root cause: `scripts/bootstrap_inbox.py` strips the JSON wrapper quotes via `[1:-1]` without re-quoting for YAML safety. Symptom: `build_cluster_hubs.py`'s `collect_members()` silently skipped these 58 sources (they show no `tags:` — frontmatter unparseable). 
+
+In-place bulk fix: regex-wrap `title:` value in single quotes (preserving smart-quote characters inside). 58 fixed → all parse. Cluster-hub re-run picked them up cleanly. Future-proofing fix in `bootstrap_inbox.py` is a follow-up candidate but not gated on Q.
+
+### Lint state at ship
+
+```
+Wiki lint scan — 359 pages indexed
+Outbound edges: 1490; Inbound edge coverage: 359 pages
+Orphans: 0 · Bidir gaps: 0 · Dangling: 0 · Missing @paths: 0
+```
+
+Cluster-bootstrap arc complete. Per-source promotion (stub → real read pass) remains the dominant outstanding hygiene work (238 cited-but-unread stubs, top of which is `forex-research-3-18.md` at 8 inbound / `3-17-competition-research.md` at 9 inbound — natural deep-read targets).
+
+---
+
 ## [2026-04-27] ingest | F2 + P: Exa forward-looking briefs for SPY / QQQ / IWM — completes F sweep at 30/30 + closes server gap
 
 Two-part task — the user message ("do F2, also the server cant find the spy qqq and iwm reports") consolidated into a single ingest because both halves resolve through the same 4 deliverables.

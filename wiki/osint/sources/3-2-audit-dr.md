@@ -1,17 +1,24 @@
 ---
-title: "DevSecOps, Architectural, and Code Quality Audit of the Cemini Financial Suite"
+title: DevSecOps, Architectural, and Code Quality Audit of the Cemini Financial Suite
 type: source
 tags: [docx, cemini-internal, rl-marl, llm-agents, market-microstructure, audit-security]
-clusters: [rl-marl, llm-agents, market-microstructure, cemini-internal, audit-security]
 related:
+  - concepts/market-microstructure.md
   - concepts/skill-vetting.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
+clusters:
+  - rl-marl
+  - llm-agents
+  - market-microstructure
+  - cemini-internal
+  - audit-security
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
 - @concepts/skill-vetting.md
 
 ## Raw Concept

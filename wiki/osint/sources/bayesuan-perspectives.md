@@ -3,7 +3,8 @@ title: Some Bayesian Perspectives on Clinical Trials Alexandra Sokolova*
 type: source
 tags: [pdf, unread-stub, options-derivatives]
 keywords: [Some, Bayesian, Perspectives, Clinical, Trials, Alexandra, Sokolova, Knight]
-related: []
+related:
+  - concepts/options-derivatives.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27
@@ -11,7 +12,7 @@ updated: 2026-04-27
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/options-derivatives.md — Options & Derivatives corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

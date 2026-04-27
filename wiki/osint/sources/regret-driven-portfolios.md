@@ -1,5 +1,5 @@
 ---
-title: Regret-Driven Portfolios: LLM-Guided Smart Clustering for Optimal Allocation
+title: 'Regret-Driven Portfolios: LLM-Guided Smart Clustering for Optimal Allocation'
 type: source
 tags: [pdf, unread-stub, rl-marl]
 keywords: [Regret-Driven, Portfolios, LLM-Guided, Smart, Clustering, Optimal, Allocation, Muhammad]

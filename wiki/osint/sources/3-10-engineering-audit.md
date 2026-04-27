@@ -1,17 +1,26 @@
 ---
-title: "Technical Research Audit: Data Pipeline and Feature Engineering Optimization for Cemini Financial Suite"
+title: 'Technical Research Audit: Data Pipeline and Feature Engineering Optimization for Cemini Financial Suite'
 type: source
 tags: [docx, rl-marl, portfolio-strategy, market-microstructure, ml-methods, cemini-internal, polars, timescaledb, continuous-aggregates, normalization, multi-timeframe, orjson, pandas]
-clusters: [rl-marl, portfolio-strategy, market-microstructure, ml-methods, cemini-internal]
 related:
+  - concepts/market-microstructure.md
+  - concepts/portfolio-strategy.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - portfolio-strategy
+  - market-microstructure
+  - ml-methods
+  - cemini-internal
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

@@ -3,7 +3,8 @@ title: Boundary Inference for Mixed Fractional Models
 type: source
 tags: [pdf, unread-stub, quant-finance]
 keywords: [Boundary, Inference, Mixed, Fractional, Models, High-Frequency, Obser, Critical]
-related: []
+related:
+  - concepts/quant-finance.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27
@@ -11,7 +12,7 @@ updated: 2026-04-27
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

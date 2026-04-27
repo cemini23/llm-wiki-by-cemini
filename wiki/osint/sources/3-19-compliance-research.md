@@ -2,98 +2,105 @@
 title: Regulatory Compliance, Intellectual Property Strategy, and Institutional Acquisition Readiness for the Cemini Financial Suite
 type: source
 tags: [docx, rl-marl, quant-finance, crypto, prediction-markets, cemini-internal]
-clusters: [rl-marl, quant-finance, crypto, prediction-markets, cemini-internal]
 related:
-  - sources/3-19-ip-sale-research.md
-  - sources/3-10-cryptographic-research.md
-  - sources/3-19-kalshi-trading-strategy-research.md
-  - entities/platforms/kalshi.md
-  - entities/platforms/hyperliquid.md
-  - entities/platforms/oanda.md
-  - entities/platforms/alpaca.md
-  - entities/data-sources/gdelt.md
-  - entities/data-sources/fred.md
-  - entities/data-sources/finnhub.md
-  - entities/infrastructure/polars.md
-  - entities/frameworks/langgraph.md
-  - entities/frameworks/fastmcp.md
-  - entities/frameworks/pydantic-v2.md
-  - entities/frameworks/ccxt.md
-  - entities/frameworks/fastapi.md
-  - entities/frameworks/nautilustrader.md
-  - entities/frameworks/torchrl.md
-  - entities/components/kelly-cvar-risk-engine.md
-  - entities/security/trivy.md
-  - entities/security/semgrep.md
-  - entities/security/cyclonedx.md
-  - entities/security/syft.md
-  - entities/observability/prometheus.md
-  - entities/observability/loki.md
-  - entities/observability/grafana.md
-  - entities/observability/tempo.md
-  - concepts/ip-sale-readiness.md
+  - concepts/ai-ethics-and-governance.md
   - concepts/cryptographic-audit-trail.md
+  - concepts/dcm-state-preemption.md
+  - concepts/ip-sale-readiness.md
+  - concepts/irc-1235-capital-gains-safe-harbor.md
   - concepts/macro-weather-regime.md
   - concepts/milestone-ledger.md
-  - concepts/publishers-exclusion-iaa.md
   - concepts/publishers-exclusion-apa.md
-  - concepts/irc-1235-capital-gains-safe-harbor.md
+  - concepts/publishers-exclusion-iaa.md
+  - concepts/quant-finance.md
   - concepts/sbom.md
   - concepts/skill-vetting.md
-  - concepts/dcm-state-preemption.md
+  - entities/components/kelly-cvar-risk-engine.md
+  - entities/data-sources/finnhub.md
+  - entities/data-sources/fred.md
+  - entities/data-sources/gdelt.md
+  - entities/frameworks/ccxt.md
+  - entities/frameworks/fastapi.md
+  - entities/frameworks/fastmcp.md
+  - entities/frameworks/langgraph.md
+  - entities/frameworks/nautilustrader.md
+  - entities/frameworks/pydantic-v2.md
+  - entities/frameworks/torchrl.md
+  - entities/infrastructure/polars.md
+  - entities/observability/grafana.md
+  - entities/observability/loki.md
+  - entities/observability/prometheus.md
+  - entities/observability/tempo.md
+  - entities/platforms/alpaca.md
+  - entities/platforms/hyperliquid.md
+  - entities/platforms/kalshi.md
+  - entities/platforms/oanda.md
+  - entities/security/cyclonedx.md
+  - entities/security/semgrep.md
+  - entities/security/syft.md
+  - entities/security/trivy.md
+  - sources/3-10-cryptographic-research.md
+  - sources/3-19-ip-sale-research.md
+  - sources/3-19-kalshi-trading-strategy-research.md
   - sources/cftc-anprm-prediction-markets-2026-03-16.md
   - sources/cftc-selig-house-ag-testimony-2026-04-16.md
   - sources/cftc-v-arizona-tro-liburdi-2026-04-10.md
-  - concepts/ai-ethics-and-governance.md
 maturity: validated
-read_status: deep-read
 created: 2026-04-23
 updated: 2026-04-26
+read_status: deep-read
+clusters:
+  - rl-marl
+  - quant-finance
+  - crypto
+  - prediction-markets
+  - cemini-internal
 ---
 
 ## Relations
 
-- @sources/3-19-ip-sale-research.md — companion deal-economics source; documents the complementary §1235 mitigation strategy (APA architecture+goodwill framing) to this source's provisional-patent+SMLLC framing — see cross-source synthesis note in IP-sale page
-- @sources/3-10-cryptographic-research.md — companion technical-audit source; provides the cryptographic verifiability layer this source recommends for the institutional-acquirer due-diligence bundle
-- @sources/3-19-kalshi-trading-strategy-research.md — companion execution-architecture source; provides the actual mathematical framework + API mechanics that operationalize this source's Kalshi DCM compliance recommendations (close-the-loop on DCM Core Principle 4 monitoring expectations)
-- @entities/platforms/kalshi.md — DCM Core Principles 3 & 4, Premier/Prime API tiers
-- @entities/platforms/hyperliquid.md — L1 Agent Wallets + SB 1452 custody binding
-- @entities/platforms/oanda.md — non-transferable API license, arbitrage prohibition
-- @entities/platforms/alpaca.md — equities API, retail-vs-institutional flow scrutiny
-- @entities/data-sources/gdelt.md
-- @entities/data-sources/fred.md
-- @entities/data-sources/finnhub.md
-- @entities/infrastructure/polars.md — 28-feature observation space
-- @entities/frameworks/langgraph.md — 5-agent Devil's Advocate orchestrator
-- @entities/frameworks/fastmcp.md — intelligence server, Pydantic-contract boundary
-- @entities/frameworks/pydantic-v2.md — data-contract abstraction enabling clean IP transfer
-- @entities/frameworks/ccxt.md
-- @entities/frameworks/fastapi.md — request layer, congestion-governed throttling
-- @entities/frameworks/nautilustrader.md — MiFID II RTS 7 testing-mandate mitigation
-- @entities/frameworks/torchrl.md — RL observation spaces flagged as patentable invention candidate
-- @entities/components/kelly-cvar-risk-engine.md — Kalshi self-limit-load mandate mitigation
-- @entities/security/trivy.md — CI/CD copyleft-license rejection
-- @entities/security/semgrep.md — CI/CD static-analysis gate
-- @entities/security/cyclonedx.md — SBOM generation
-- @entities/security/syft.md — SBOM generation alternative
-- @entities/observability/prometheus.md — Kalshi near-real-time API monitoring mandate
-- @entities/observability/loki.md — FastMCP intelligence-log aggregation
-- @entities/observability/grafana.md — turnkey buyer-facing compliance dashboard
-- @entities/observability/tempo.md
-- @concepts/ip-sale-readiness.md — top-level synthesis target
+- @concepts/ai-ethics-and-governance.md — D′ 2026-04-26 — broader academic/policy backdrop against which this Cemini-internal compliance synthesis was framed
 - @concepts/cryptographic-audit-trail.md — pymerkle + OpenTimestamps Bitcoin anchoring of debate logs
+- @concepts/dcm-state-preemption.md — synthesizes the federal-vs-state preemption fight that emerged Feb-Apr 2026; this source's S7 (March 2026 ANPRM) is the precursor signal
+- @concepts/ip-sale-readiness.md — top-level synthesis target
+- @concepts/irc-1235-capital-gains-safe-harbor.md — patent-anchor + SMLLC disregarded-entity stack
 - @concepts/macro-weather-regime.md
 - @concepts/milestone-ledger.md
-- @concepts/publishers-exclusion-iaa.md `[RESOLVED 2026-04-25]` — disambiguation completed; this source's S4 is the canonical statutory citation for the IAA-sense page. The APA-exclusion-schedule sense now lives at `@concepts/publishers-exclusion-apa.md`; the disambig landing is `@concepts/publishers-exclusion.md`.
 - @concepts/publishers-exclusion-apa.md — APA-sense companion page; this source originally flagged the disambiguation problem (S4 documents both senses sharing the phrase), and the four Cemini-specific APA-carve-out candidates (Telethon / Finnhub / personal Twitter notes / Polymarket) live there.
-- @concepts/irc-1235-capital-gains-safe-harbor.md — patent-anchor + SMLLC disregarded-entity stack
+- @concepts/publishers-exclusion-iaa.md `[RESOLVED 2026-04-25]` — disambiguation completed; this source's S4 is the canonical statutory citation for the IAA-sense page. The APA-exclusion-schedule sense now lives at `@concepts/publishers-exclusion-apa.md`; the disambig landing is `@concepts/publishers-exclusion.md`.
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/sbom.md — clean dependency tree as deal-killer mitigation
 - @concepts/skill-vetting.md
-- @concepts/dcm-state-preemption.md — synthesizes the federal-vs-state preemption fight that emerged Feb-Apr 2026; this source's S7 (March 2026 ANPRM) is the precursor signal
+- @entities/components/kelly-cvar-risk-engine.md — Kalshi self-limit-load mandate mitigation
+- @entities/data-sources/finnhub.md
+- @entities/data-sources/fred.md
+- @entities/data-sources/gdelt.md
+- @entities/frameworks/ccxt.md
+- @entities/frameworks/fastapi.md — request layer, congestion-governed throttling
+- @entities/frameworks/fastmcp.md — intelligence server, Pydantic-contract boundary
+- @entities/frameworks/langgraph.md — 5-agent Devil's Advocate orchestrator
+- @entities/frameworks/nautilustrader.md — MiFID II RTS 7 testing-mandate mitigation
+- @entities/frameworks/pydantic-v2.md — data-contract abstraction enabling clean IP transfer
+- @entities/frameworks/torchrl.md — RL observation spaces flagged as patentable invention candidate
+- @entities/infrastructure/polars.md — 28-feature observation space
+- @entities/observability/grafana.md — turnkey buyer-facing compliance dashboard
+- @entities/observability/loki.md — FastMCP intelligence-log aggregation
+- @entities/observability/prometheus.md — Kalshi near-real-time API monitoring mandate
+- @entities/observability/tempo.md
+- @entities/platforms/alpaca.md — equities API, retail-vs-institutional flow scrutiny
+- @entities/platforms/hyperliquid.md — L1 Agent Wallets + SB 1452 custody binding
+- @entities/platforms/kalshi.md — DCM Core Principles 3 & 4, Premier/Prime API tiers
+- @entities/platforms/oanda.md — non-transferable API license, arbitrage prohibition
+- @entities/security/cyclonedx.md — SBOM generation
+- @entities/security/semgrep.md — CI/CD static-analysis gate
+- @entities/security/syft.md — SBOM generation alternative
+- @entities/security/trivy.md — CI/CD copyleft-license rejection
+- @sources/3-10-cryptographic-research.md — companion technical-audit source; provides the cryptographic verifiability layer this source recommends for the institutional-acquirer due-diligence bundle
+- @sources/3-19-ip-sale-research.md — companion deal-economics source; documents the complementary §1235 mitigation strategy (APA architecture+goodwill framing) to this source's provisional-patent+SMLLC framing — see cross-source synthesis note in IP-sale page
+- @sources/3-19-kalshi-trading-strategy-research.md — companion execution-architecture source; provides the actual mathematical framework + API mechanics that operationalize this source's Kalshi DCM compliance recommendations (close-the-loop on DCM Core Principle 4 monitoring expectations)
 - @sources/cftc-anprm-prediction-markets-2026-03-16.md — primary-source FR docket for the ANPRM this source's S7 references; matched-pair closure
 - @sources/cftc-selig-house-ag-testimony-2026-04-16.md — Chairman's on-the-record defense of the ANPRM agenda + AZ/CT/IL counter-suit confirmation
 - @sources/cftc-v-arizona-tro-liburdi-2026-04-10.md — first federal-court ruling in this cycle finding CFTC "likely to ultimately win" on preemption
-- @concepts/ai-ethics-and-governance.md — D′ 2026-04-26 — broader academic/policy backdrop against which this Cemini-internal compliance synthesis was framed
 
 ## Raw Concept
 

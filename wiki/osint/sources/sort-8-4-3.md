@@ -1,18 +1,22 @@
 ---
-title: "STOCKBENCH: Can LLM Agents Trade Stocks Profitably In Real-world Markets?"
+title: 'STOCKBENCH: Can LLM Agents Trade Stocks Profitably In Real-world Markets?'
 type: source
 tags: [pdf, unread-stub, llm-agents, quant-finance]
-clusters: [llm-agents, quant-finance]
 related:
   - concepts/llm-agent-systems.md
+  - concepts/quant-finance.md
 maturity: draft
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - llm-agents
+  - quant-finance
 ---
 
 ## Relations
 
 - @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

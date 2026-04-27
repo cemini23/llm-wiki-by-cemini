@@ -2,29 +2,34 @@
 title: Integration of Foreign Exchange (Forex) Market Microstructure and Execution Logic into the Cemini Financial Suite
 type: source
 tags: [docx, market-microstructure, crypto, cemini-internal]
-clusters: [market-microstructure, crypto, cemini-internal]
 related:
-  - entities/platforms/oanda.md
-  - entities/infrastructure/hetzner.md
-  - entities/infrastructure/timescaledb.md
-  - entities/infrastructure/redis.md
+  - concepts/ip-sale-readiness.md
+  - concepts/market-microstructure.md
   - entities/frameworks/fastapi.md
   - entities/frameworks/pydantic-v2.md
-  - concepts/ip-sale-readiness.md
+  - entities/infrastructure/hetzner.md
+  - entities/infrastructure/redis.md
+  - entities/infrastructure/timescaledb.md
+  - entities/platforms/oanda.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
+clusters:
+  - market-microstructure
+  - crypto
+  - cemini-internal
 ---
 
 ## Relations
 
-- @entities/platforms/oanda.md
-- @entities/infrastructure/hetzner.md
-- @entities/infrastructure/timescaledb.md
-- @entities/infrastructure/redis.md
+- @concepts/ip-sale-readiness.md
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
 - @entities/frameworks/fastapi.md
 - @entities/frameworks/pydantic-v2.md
-- @concepts/ip-sale-readiness.md
+- @entities/infrastructure/hetzner.md
+- @entities/infrastructure/redis.md
+- @entities/infrastructure/timescaledb.md
+- @entities/platforms/oanda.md
 
 ## Raw Concept
 

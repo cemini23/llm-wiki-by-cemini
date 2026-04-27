@@ -1,83 +1,91 @@
 ---
-title: "Strategic Acquisition and Valuation of Algorithmic Trading Intellectual Property: A 2026 M&A Framework"
+title: 'Strategic Acquisition and Valuation of Algorithmic Trading Intellectual Property: A 2026 M&A Framework'
 type: source
 tags: [docx, rl-marl, llm-agents, quant-finance, crypto, prediction-markets, cemini-internal]
-clusters: [rl-marl, llm-agents, quant-finance, crypto, prediction-markets, cemini-internal]
 related:
-  - sources/3-19-compliance-research.md
-  - sources/3-10-cryptographic-research.md
-  - sources/3-19-kalshi-trading-strategy-research.md
-  - entities/platforms/kalshi.md
-  - entities/platforms/hyperliquid.md
-  - entities/platforms/oanda.md
-  - entities/platforms/alpaca.md
-  - entities/infrastructure/timescaledb.md
-  - entities/infrastructure/redis.md
+  - concepts/cryptographic-audit-trail.md
+  - concepts/ip-sale-readiness.md
+  - concepts/irc-1235-capital-gains-safe-harbor.md
+  - concepts/mappo.md
+  - concepts/publishers-exclusion-apa.md
+  - concepts/quant-finance.md
+  - concepts/replacement-cost-valuation.md
+  - concepts/sbom.md
+  - concepts/skill-vetting.md
+  - entities/components/kelly-cvar-risk-engine.md
+  - entities/data-sources/gdelt.md
+  - entities/data-sources/open-meteo.md
+  - entities/frameworks/fastapi.md
+  - entities/frameworks/fastmcp.md
+  - entities/frameworks/langgraph.md
+  - entities/frameworks/nautilustrader.md
+  - entities/frameworks/pettingzoo.md
+  - entities/frameworks/pydantic-v2.md
+  - entities/frameworks/torchrl.md
   - entities/infrastructure/pgvector.md
   - entities/infrastructure/polars.md
-  - entities/frameworks/langgraph.md
-  - entities/frameworks/fastmcp.md
-  - entities/frameworks/nautilustrader.md
-  - entities/frameworks/torchrl.md
-  - entities/frameworks/pettingzoo.md
-  - entities/frameworks/fastapi.md
-  - entities/frameworks/pydantic-v2.md
-  - entities/security/trivy.md
+  - entities/infrastructure/redis.md
+  - entities/infrastructure/timescaledb.md
+  - entities/platforms/alpaca.md
+  - entities/platforms/hyperliquid.md
+  - entities/platforms/kalshi.md
+  - entities/platforms/oanda.md
+  - entities/security/cyclonedx.md
   - entities/security/semgrep.md
   - entities/security/syft.md
-  - entities/security/cyclonedx.md
-  - entities/components/kelly-cvar-risk-engine.md
-  - entities/data-sources/open-meteo.md
-  - entities/data-sources/gdelt.md
-  - concepts/ip-sale-readiness.md
-  - concepts/mappo.md
-  - concepts/sbom.md
-  - concepts/publishers-exclusion-apa.md
-  - concepts/irc-1235-capital-gains-safe-harbor.md
-  - concepts/cryptographic-audit-trail.md
-  - concepts/replacement-cost-valuation.md
-  - concepts/skill-vetting.md
+  - entities/security/trivy.md
+  - sources/3-10-cryptographic-research.md
+  - sources/3-19-compliance-research.md
+  - sources/3-19-kalshi-trading-strategy-research.md
 maturity: validated
-read_status: deep-read
 created: 2026-04-23
 updated: 2026-04-24
+read_status: deep-read
+clusters:
+  - rl-marl
+  - llm-agents
+  - quant-finance
+  - crypto
+  - prediction-markets
+  - cemini-internal
 ---
 
 ## Relations
 
-- @sources/3-19-compliance-research.md — companion regulatory analysis; presents an alternative §1235 mitigation strategy (provisional patent + SMLLC) that is **complementary, not a substitute** for this source's APA-architecture-and-goodwill framing
-- @sources/3-10-cryptographic-research.md — the cryptographic audit trail (SHA-256 chain + pymerkle + OpenTimestamps) cited here as THE differentiating evidence-pack artifact lives in this earlier source
-- @sources/3-19-kalshi-trading-strategy-research.md — companion execution-architecture source; provides the Kalshi-specific mathematics (Avellaneda-Stoikov in logit space, Bayesian Modified Kelly, batch-cancel weighting asymmetry) that justify the uncorrelated-alpha valuation premium this source quantifies
-- @entities/platforms/kalshi.md
-- @entities/platforms/hyperliquid.md
-- @entities/platforms/oanda.md
-- @entities/platforms/alpaca.md
-- @entities/infrastructure/timescaledb.md — explicit data-structure component cited in §1221(a)(3) architecture-and-goodwill framing
-- @entities/infrastructure/redis.md — pub/sub intelligence bus, the architecture's coordination spine
+- @concepts/cryptographic-audit-trail.md — explicit cite as trust-deficit mitigator for paper-trading results
+- @concepts/ip-sale-readiness.md — top-level synthesis target
+- @concepts/irc-1235-capital-gains-safe-harbor.md — this source provides the architecture+goodwill framing; the compliance-research source provides the provisional-patent framing
+- @concepts/mappo.md
+- @concepts/publishers-exclusion-apa.md — APA-exclusion-schedule sense; the §1221(a)(3) architecture+goodwill framing implicitly requires careful APA exclusion design
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
+- @concepts/replacement-cost-valuation.md — primary valuation methodology recommended for pre-revenue quant IP
+- @concepts/sbom.md — Open-Source License Compliance Certificate prerequisite
+- @concepts/skill-vetting.md
+- @entities/components/kelly-cvar-risk-engine.md — risk-parameter-override risk in earnout protection covenants
+- @entities/data-sources/gdelt.md — macro-economic sentiment data feeding the multi-asset architecture
+- @entities/data-sources/open-meteo.md — ensemble weather data feeding the multi-asset architecture's prediction-market analysis
+- @entities/frameworks/fastapi.md — FastAPI endpoints + Schemathesis testing artifacts in data room
+- @entities/frameworks/fastmcp.md — intelligence-server mapping cited as a tier-1 earnout integration milestone
+- @entities/frameworks/langgraph.md — orchestrator handoff complexity drives the 3-6 month Transition Services Agreement
+- @entities/frameworks/nautilustrader.md — backtest-validity audit target; quadratic non-linear transaction-cost models required (not flat fees)
+- @entities/frameworks/pettingzoo.md
+- @entities/frameworks/pydantic-v2.md — explicit data-structure component cited in §1221(a)(3) architecture-and-goodwill framing
+- @entities/frameworks/torchrl.md — Sharpe ratio target tied to TorchRL multi-agent algorithms in tier-2 earnout
 - @entities/infrastructure/pgvector.md
 - @entities/infrastructure/polars.md — 28-feature observation space, CPU-efficiency proof
-- @entities/frameworks/langgraph.md — orchestrator handoff complexity drives the 3-6 month Transition Services Agreement
-- @entities/frameworks/fastmcp.md — intelligence-server mapping cited as a tier-1 earnout integration milestone
-- @entities/frameworks/nautilustrader.md — backtest-validity audit target; quadratic non-linear transaction-cost models required (not flat fees)
-- @entities/frameworks/torchrl.md — Sharpe ratio target tied to TorchRL multi-agent algorithms in tier-2 earnout
-- @entities/frameworks/pettingzoo.md
-- @entities/frameworks/fastapi.md — FastAPI endpoints + Schemathesis testing artifacts in data room
-- @entities/frameworks/pydantic-v2.md — explicit data-structure component cited in §1221(a)(3) architecture-and-goodwill framing
-- @entities/security/trivy.md — pre-existing CI/CD vulnerability-scan artifact required in data room
+- @entities/infrastructure/redis.md — pub/sub intelligence bus, the architecture's coordination spine
+- @entities/infrastructure/timescaledb.md — explicit data-structure component cited in §1221(a)(3) architecture-and-goodwill framing
+- @entities/platforms/alpaca.md
+- @entities/platforms/hyperliquid.md
+- @entities/platforms/kalshi.md
+- @entities/platforms/oanda.md
+- @entities/security/cyclonedx.md — SBOM format
 - @entities/security/semgrep.md — defensive-coding signal in data room
 - @entities/security/syft.md — SBOM generation; gap noted (current Track C audit shows not wired)
-- @entities/security/cyclonedx.md — SBOM format
-- @entities/components/kelly-cvar-risk-engine.md — risk-parameter-override risk in earnout protection covenants
-- @entities/data-sources/open-meteo.md — ensemble weather data feeding the multi-asset architecture's prediction-market analysis
-- @entities/data-sources/gdelt.md — macro-economic sentiment data feeding the multi-asset architecture
-- @concepts/ip-sale-readiness.md — top-level synthesis target
-- @concepts/mappo.md
-- @concepts/sbom.md — Open-Source License Compliance Certificate prerequisite
-- @concepts/publishers-exclusion-apa.md — APA-exclusion-schedule sense; the §1221(a)(3) architecture+goodwill framing implicitly requires careful APA exclusion design
-- @concepts/irc-1235-capital-gains-safe-harbor.md — this source provides the architecture+goodwill framing; the compliance-research source provides the provisional-patent framing
-- @concepts/cryptographic-audit-trail.md — explicit cite as trust-deficit mitigator for paper-trading results
-- @concepts/replacement-cost-valuation.md — primary valuation methodology recommended for pre-revenue quant IP
-- @concepts/skill-vetting.md
+- @entities/security/trivy.md — pre-existing CI/CD vulnerability-scan artifact required in data room
+- @sources/3-10-cryptographic-research.md — the cryptographic audit trail (SHA-256 chain + pymerkle + OpenTimestamps) cited here as THE differentiating evidence-pack artifact lives in this earlier source
+- @sources/3-19-compliance-research.md — companion regulatory analysis; presents an alternative §1235 mitigation strategy (provisional patent + SMLLC) that is **complementary, not a substitute** for this source's APA-architecture-and-goodwill framing
+- @sources/3-19-kalshi-trading-strategy-research.md — companion execution-architecture source; provides the Kalshi-specific mathematics (Avellaneda-Stoikov in logit space, Bayesian Modified Kelly, batch-cancel weighting asymmetry) that justify the uncorrelated-alpha valuation premium this source quantifies
 
 ## Raw Concept
 

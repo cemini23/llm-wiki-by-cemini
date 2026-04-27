@@ -2,16 +2,19 @@
 title: EBI Working Paper Series Alessio Azzutti/Wolf-Georg Ringe/ H. Siegfried Stiehl
 type: source
 tags: [pdf, unread-stub, quant-finance]
-clusters: [quant-finance]
 related:
+  - concepts/quant-finance.md
   - entities/ticker-watchlist.md
 maturity: draft
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - quant-finance
 ---
 
 ## Relations
 
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @entities/ticker-watchlist.md — CeminiSuite active ticker universe; quant-finance and time-series context
 
 ## Raw Concept

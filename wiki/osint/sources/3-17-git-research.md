@@ -2,16 +2,23 @@
 title: Targeted Technical Research Audit — Cemini Financial Suite v12.3 (Evolutionary Optimization and Deterministic State)
 type: source
 tags: [docx, cemini-internal, infrastructure, llm-agents, rl-marl, portfolio-strategy, langgraph, evolutionary-optimization, audit]
-clusters: [rl-marl, llm-agents, portfolio-strategy, cemini-internal, infrastructure]
 related:
+  - concepts/portfolio-strategy.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - llm-agents
+  - portfolio-strategy
+  - cemini-internal
+  - infrastructure
 ---
 
 ## Relations
 
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

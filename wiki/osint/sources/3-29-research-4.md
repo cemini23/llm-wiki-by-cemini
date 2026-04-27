@@ -1,22 +1,31 @@
 ---
-title: "Cemini Financial Suite: Targeted Extraction Audit and Architecture Report (3/29 #4)"
+title: 'Cemini Financial Suite: Targeted Extraction Audit and Architecture Report (3/29 #4)'
 type: source
 tags: [docx, cemini-internal, rl-marl, llm-agents, quant-finance, prediction-markets, infrastructure, alt-data]
-clusters: [rl-marl, llm-agents, quant-finance, prediction-markets, cemini-internal, infrastructure, alt-data]
 related:
-  - entities/platforms/kalshi.md
+  - concepts/quant-finance.md
   - entities/data-sources/gdelt.md
   - entities/frameworks/finbert.md
+  - entities/platforms/kalshi.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
+clusters:
+  - rl-marl
+  - llm-agents
+  - quant-finance
+  - prediction-markets
+  - cemini-internal
+  - infrastructure
+  - alt-data
 ---
 
 ## Relations
 
-- @entities/platforms/kalshi.md
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @entities/data-sources/gdelt.md
 - @entities/frameworks/finbert.md
+- @entities/platforms/kalshi.md
 
 ## Raw Concept
 

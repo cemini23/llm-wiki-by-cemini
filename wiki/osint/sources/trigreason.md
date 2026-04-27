@@ -1,5 +1,5 @@
 ---
-title: TrigReason: Trigger-Based Collaboration between Small and Large Reasoning Models
+title: 'TrigReason: Trigger-Based Collaboration between Small and Large Reasoning Models'
 type: source
 tags: [pdf, unread-stub, llm-agents]
 keywords: [TrigReason, Trigger-Based, Collaboration, Small, Large, Reasoning, Models, Zhao1]

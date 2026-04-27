@@ -1,17 +1,28 @@
 ---
-title: "Architectural Transformation and Scalability Roadmap for the Cemini Financial Suite"
+title: Architectural Transformation and Scalability Roadmap for the Cemini Financial Suite
 type: source
 tags: [docx, rl-marl, market-microstructure, quant-finance, ml-methods, crypto, cemini-internal, infrastructure, kubernetes, litestar, redpanda, microservices]
-clusters: [rl-marl, market-microstructure, quant-finance, ml-methods, crypto, cemini-internal, infrastructure]
 related:
+  - concepts/market-microstructure.md
+  - concepts/quant-finance.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - market-microstructure
+  - quant-finance
+  - ml-methods
+  - crypto
+  - cemini-internal
+  - infrastructure
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

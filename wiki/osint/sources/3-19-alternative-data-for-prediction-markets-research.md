@@ -1,22 +1,33 @@
 ---
-title: "Institutional Exploitation of Alternative Data in Prediction Markets"
+title: Institutional Exploitation of Alternative Data in Prediction Markets
 type: source
 tags: [docx, cemini-internal, rl-marl, llm-agents, portfolio-strategy, market-microstructure, prediction-markets, alt-data]
-clusters: [rl-marl, llm-agents, portfolio-strategy, market-microstructure, prediction-markets, cemini-internal, alt-data]
 related:
-  - entities/platforms/kalshi.md
-  - entities/data-sources/telethon.md
   - concepts/ensemble-weather-forecasting.md
+  - concepts/market-microstructure.md
+  - concepts/portfolio-strategy.md
+  - entities/data-sources/telethon.md
+  - entities/platforms/kalshi.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
+clusters:
+  - rl-marl
+  - llm-agents
+  - portfolio-strategy
+  - market-microstructure
+  - prediction-markets
+  - cemini-internal
+  - alt-data
 ---
 
 ## Relations
 
-- @entities/platforms/kalshi.md
-- @entities/data-sources/telethon.md
 - @concepts/ensemble-weather-forecasting.md
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
+- @entities/data-sources/telethon.md
+- @entities/platforms/kalshi.md
 
 ## Raw Concept
 

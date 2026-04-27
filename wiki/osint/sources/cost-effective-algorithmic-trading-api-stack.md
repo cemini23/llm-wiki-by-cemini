@@ -1,17 +1,25 @@
 ---
-title: "Cost-Optimized API Architecture for the Cemini Financial Suite"
+title: Cost-Optimized API Architecture for the Cemini Financial Suite
 type: source
 tags: [docx, options-derivatives, quant-finance, crypto, cemini-internal, api-vendors, bootstrapper]
-clusters: [options-derivatives, quant-finance, crypto, cemini-internal]
 related:
+  - concepts/options-derivatives.md
+  - concepts/quant-finance.md
   - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - options-derivatives
+  - quant-finance
+  - crypto
+  - cemini-internal
 ---
 
 ## Relations
 
+- @concepts/options-derivatives.md — Options & Derivatives corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept

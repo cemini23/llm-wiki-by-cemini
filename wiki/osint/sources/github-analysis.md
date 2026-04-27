@@ -1,17 +1,26 @@
 ---
-title: "Architectural Forensic Analysis: Accelerating the Cemini Financial Suite"
+title: 'Architectural Forensic Analysis: Accelerating the Cemini Financial Suite'
 type: source
 tags: [docx, rl-marl, llm-agents, portfolio-strategy, options-derivatives, cemini-internal, kelly, bayesian, devil-s-advocate, mcp, spiffe, skill-topology]
-clusters: [rl-marl, llm-agents, portfolio-strategy, options-derivatives, cemini-internal]
 related:
+  - concepts/options-derivatives.md
+  - concepts/portfolio-strategy.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - llm-agents
+  - portfolio-strategy
+  - options-derivatives
+  - cemini-internal
 ---
 
 ## Relations
 
+- @concepts/options-derivatives.md — Options & Derivatives corpus-index hub (Q 2026-04-27)
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

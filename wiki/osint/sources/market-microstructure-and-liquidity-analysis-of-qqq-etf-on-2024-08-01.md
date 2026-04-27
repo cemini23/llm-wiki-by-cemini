@@ -3,7 +3,8 @@ title: Market Microstructure and Liquidity Analysis of QQQ ETF on 2024-08-01 1. 
 type: source
 tags: [pdf, unread-stub, market-microstructure]
 keywords: [Market, Microstructure, Liquidity, Analysis, QQQ, ETF, NASDAQ, Apart]
-related: []
+related:
+  - concepts/market-microstructure.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27
@@ -11,7 +12,7 @@ updated: 2026-04-27
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

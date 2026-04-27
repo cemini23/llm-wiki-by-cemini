@@ -2,16 +2,25 @@
 title: Technical Research Audit — Multi-Agent Orchestration for the Cemini Financial Suite (Determinism / MoE)
 type: source
 tags: [docx, cemini-internal, llm-agents, rl-marl, portfolio-strategy, quant-finance, mixture-of-experts, determinism, audit, orchestration]
-clusters: [rl-marl, llm-agents, portfolio-strategy, quant-finance, cemini-internal]
 related:
+  - concepts/portfolio-strategy.md
+  - concepts/quant-finance.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - llm-agents
+  - portfolio-strategy
+  - quant-finance
+  - cemini-internal
 ---
 
 ## Relations
 
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

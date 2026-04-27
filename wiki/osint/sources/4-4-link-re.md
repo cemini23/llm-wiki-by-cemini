@@ -1,19 +1,31 @@
 ---
-title: "Cemini Financial Suite: Technical Intelligence & Competitive Architecture Analysis"
+title: 'Cemini Financial Suite: Technical Intelligence & Competitive Architecture Analysis'
 type: source
 tags: [docx, unread-stub, rl-marl, llm-agents, portfolio-strategy, market-microstructure, ml-methods, crypto, prediction-markets, cemini-internal, link-evaluation, multi-topic]
-clusters: [rl-marl, llm-agents, portfolio-strategy, market-microstructure, ml-methods, crypto, prediction-markets, cemini-internal]
 related:
+  - concepts/market-microstructure.md
+  - concepts/portfolio-strategy.md
   - concepts/rl-marl-research.md
 maturity: draft
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - llm-agents
+  - portfolio-strategy
+  - market-microstructure
+  - ml-methods
+  - crypto
+  - prediction-markets
+  - cemini-internal
 ---
 > **⚠ Multi-topic aggregate**: this document evaluates several unrelated URLs / GitHub repos in one file. Cluster tags reflect the *union* of topics touched, not a single subject. When reading, treat each section as its own ingest candidate; consider splitting into per-link sub-stubs at promotion time.
 
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

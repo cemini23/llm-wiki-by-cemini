@@ -1,28 +1,33 @@
 ---
-title: "Master Trading Playbook: Institutional Frameworks for Algorithmic Execution and Risk Mitigation"
+title: 'Master Trading Playbook: Institutional Frameworks for Algorithmic Execution and Risk Mitigation'
 type: source
 tags: [docx, rl-marl, quant-finance, crypto]
-clusters: [rl-marl, quant-finance, crypto]
 related:
-  - entities/frameworks/nautilustrader.md
-  - entities/components/kelly-cvar-risk-engine.md
-  - concepts/ip-sale-readiness.md
-  - concepts/macro-weather-regime.md
   - concepts/dispersion-trading.md
   - concepts/game-of-attrition-doctrine.md
+  - concepts/ip-sale-readiness.md
+  - concepts/macro-weather-regime.md
+  - concepts/quant-finance.md
+  - entities/components/kelly-cvar-risk-engine.md
+  - entities/frameworks/nautilustrader.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
+clusters:
+  - rl-marl
+  - quant-finance
+  - crypto
 ---
 
 ## Relations
 
-- @entities/frameworks/nautilustrader.md
-- @entities/components/kelly-cvar-risk-engine.md
-- @concepts/ip-sale-readiness.md
-- @concepts/macro-weather-regime.md
 - @concepts/dispersion-trading.md
 - @concepts/game-of-attrition-doctrine.md
+- @concepts/ip-sale-readiness.md
+- @concepts/macro-weather-regime.md
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
+- @entities/components/kelly-cvar-risk-engine.md
+- @entities/frameworks/nautilustrader.md
 
 ## Raw Concept
 

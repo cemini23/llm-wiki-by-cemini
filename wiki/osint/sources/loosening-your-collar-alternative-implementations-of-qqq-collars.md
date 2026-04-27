@@ -1,9 +1,10 @@
 ---
-title: An Update of “Loosening Your Collar: Alternative Implementations of QQQ Collars”
+title: 'An Update of "Loosening Your Collar: Alternative Implementations of QQQ Collars"'
 type: source
 tags: [pdf, unread-stub, portfolio-strategy]
 keywords: [Update, Loosening, Your, Collar, Alternative, Implementations, QQQ, Collars]
-related: []
+related:
+  - concepts/portfolio-strategy.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27
@@ -11,7 +12,7 @@ updated: 2026-04-27
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

@@ -1,39 +1,47 @@
 ---
-title: "Institutional Intelligence Integration: Architecting Compliant Social Signal Extraction for Algorithmic Trading Systems"
+title: 'Institutional Intelligence Integration: Architecting Compliant Social Signal Extraction for Algorithmic Trading Systems'
 type: source
 tags: [docx, rl-marl, llm-agents, quant-finance, crypto, prediction-markets, cemini-internal]
-clusters: [rl-marl, llm-agents, quant-finance, crypto, prediction-markets, cemini-internal]
 related:
-  - entities/data-sources/telethon.md
-  - entities/infrastructure/deepseek-r1-14b.md
-  - entities/infrastructure/timescaledb.md
-  - entities/infrastructure/redis.md
-  - entities/infrastructure/pgvector.md
-  - entities/frameworks/langgraph.md
-  - entities/frameworks/fastapi.md
-  - entities/frameworks/torchrl.md
-  - entities/frameworks/pettingzoo.md
   - concepts/ip-sale-readiness.md
   - concepts/mappo.md
+  - concepts/quant-finance.md
+  - entities/data-sources/telethon.md
+  - entities/frameworks/fastapi.md
+  - entities/frameworks/langgraph.md
+  - entities/frameworks/pettingzoo.md
+  - entities/frameworks/torchrl.md
+  - entities/infrastructure/deepseek-r1-14b.md
+  - entities/infrastructure/pgvector.md
+  - entities/infrastructure/redis.md
+  - entities/infrastructure/timescaledb.md
 maturity: validated
-read_status: validated
 created: 2026-04-23
 updated: 2026-04-26
+read_status: validated
+clusters:
+  - rl-marl
+  - llm-agents
+  - quant-finance
+  - crypto
+  - prediction-markets
+  - cemini-internal
 ---
 
 ## Relations
 
-- @entities/data-sources/telethon.md
-- @entities/infrastructure/deepseek-r1-14b.md
-- @entities/infrastructure/timescaledb.md
-- @entities/infrastructure/redis.md
-- @entities/infrastructure/pgvector.md
-- @entities/frameworks/langgraph.md
-- @entities/frameworks/fastapi.md
-- @entities/frameworks/torchrl.md
-- @entities/frameworks/pettingzoo.md
 - @concepts/ip-sale-readiness.md
 - @concepts/mappo.md
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
+- @entities/data-sources/telethon.md
+- @entities/frameworks/fastapi.md
+- @entities/frameworks/langgraph.md
+- @entities/frameworks/pettingzoo.md
+- @entities/frameworks/torchrl.md
+- @entities/infrastructure/deepseek-r1-14b.md
+- @entities/infrastructure/pgvector.md
+- @entities/infrastructure/redis.md
+- @entities/infrastructure/timescaledb.md
 
 ## Raw Concept
 

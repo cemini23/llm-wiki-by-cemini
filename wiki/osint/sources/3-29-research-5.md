@@ -1,17 +1,30 @@
 ---
-title: "Targeted Extraction Audit: Cemini Financial Suite — Options Pricing & SDE Sensitivities"
+title: 'Targeted Extraction Audit: Cemini Financial Suite — Options Pricing & SDE Sensitivities'
 type: source
 tags: [docx, rl-marl, llm-agents, portfolio-strategy, options-derivatives, market-microstructure, ml-methods, cemini-internal, curved-greeks, finns, dml-0dte, traderbench, qmc, asr, sde-diff]
-clusters: [rl-marl, llm-agents, portfolio-strategy, options-derivatives, market-microstructure, ml-methods, cemini-internal]
 related:
+  - concepts/market-microstructure.md
+  - concepts/options-derivatives.md
+  - concepts/portfolio-strategy.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - llm-agents
+  - portfolio-strategy
+  - options-derivatives
+  - market-microstructure
+  - ml-methods
+  - cemini-internal
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/options-derivatives.md — Options & Derivatives corpus-index hub (Q 2026-04-27)
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

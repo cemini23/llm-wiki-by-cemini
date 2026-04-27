@@ -2,64 +2,75 @@
 title: Advanced Algorithmic Trading Architecture and Microstructure Analysis for Kalshi Prediction Markets
 type: source
 tags: [docx, rl-marl, llm-agents, market-microstructure, quant-finance, crypto, prediction-markets, cemini-internal]
-clusters: [rl-marl, llm-agents, market-microstructure, quant-finance, crypto, prediction-markets, cemini-internal]
 related:
-  - sources/3-19-compliance-research.md
-  - sources/3-19-ip-sale-research.md
-  - entities/platforms/kalshi.md
-  - entities/platforms/polymarket.md
-  - entities/data-sources/fred.md
-  - entities/data-sources/open-meteo.md
-  - entities/data-sources/finnhub.md
-  - entities/data-sources/gdelt.md
-  - entities/infrastructure/timescaledb.md
-  - entities/infrastructure/redis.md
-  - entities/infrastructure/polars.md
-  - entities/frameworks/langgraph.md
-  - entities/frameworks/fastmcp.md
-  - entities/frameworks/fastapi.md
-  - entities/frameworks/pydantic-v2.md
-  - entities/observability/prometheus.md
-  - entities/observability/loki.md
-  - entities/observability/grafana.md
-  - entities/observability/tempo.md
-  - entities/components/kelly-cvar-risk-engine.md
+  - concepts/ensemble-weather-forecasting.md
+  - concepts/favorite-longshot-bias.md
   - concepts/ip-sale-readiness.md
   - concepts/macro-weather-regime.md
-  - concepts/favorite-longshot-bias.md
-  - concepts/ensemble-weather-forecasting.md
+  - concepts/market-microstructure.md
+  - concepts/quant-finance.md
+  - entities/components/kelly-cvar-risk-engine.md
+  - entities/data-sources/finnhub.md
+  - entities/data-sources/fred.md
+  - entities/data-sources/gdelt.md
+  - entities/data-sources/open-meteo.md
+  - entities/frameworks/fastapi.md
+  - entities/frameworks/fastmcp.md
+  - entities/frameworks/langgraph.md
+  - entities/frameworks/pydantic-v2.md
+  - entities/infrastructure/polars.md
+  - entities/infrastructure/redis.md
+  - entities/infrastructure/timescaledb.md
+  - entities/observability/grafana.md
+  - entities/observability/loki.md
+  - entities/observability/prometheus.md
+  - entities/observability/tempo.md
+  - entities/platforms/kalshi.md
+  - entities/platforms/polymarket.md
+  - sources/3-19-compliance-research.md
+  - sources/3-19-ip-sale-research.md
 maturity: validated
-read_status: deep-read
 created: 2026-04-23
 updated: 2026-04-24
+read_status: deep-read
+clusters:
+  - rl-marl
+  - llm-agents
+  - market-microstructure
+  - quant-finance
+  - crypto
+  - prediction-markets
+  - cemini-internal
 ---
 
 ## Relations
 
-- @sources/3-19-compliance-research.md — companion regulatory/IP source; both anchor on Kalshi DCM compliance under CFTC exclusive federal jurisdiction
-- @sources/3-19-ip-sale-research.md — companion deal-economics source; this Kalshi source's first paragraph explicitly frames the strategy stack as an IP-sale-valuation lever (uncorrelated alpha + tail-risk hedge for legacy equity/crypto portfolios)
-- @entities/platforms/kalshi.md — the venue
-- @entities/platforms/polymarket.md — cross-platform arbitrage explicitly **rejected** (bridge risk, KYC, capital fragmentation outweigh 4–6¢ spreads)
-- @entities/data-sources/fred.md — macroeconomic consensus arbitrage feed (Fed rates, CPI)
-- @entities/data-sources/open-meteo.md — 31-member ensemble forecast → Gumbel CDF for weather contracts
-- @entities/data-sources/finnhub.md — institutional consensus comparison feed
-- @entities/data-sources/gdelt.md — adverse-shock signal that triggers BatchCancelOrders inventory withdrawal
-- @entities/infrastructure/timescaledb.md — Kalshi order book history persistence
-- @entities/infrastructure/redis.md — pub/sub blackboard between intelligence layer and execution layer
-- @entities/infrastructure/polars.md — vectorized statistical engine (Gumbel fit, ensemble shrinkage, AS in logit space)
-- @entities/frameworks/langgraph.md — 5-agent Devil's Advocate debate orchestrator
-- @entities/frameworks/fastmcp.md — intelligence server hosting the Kalshi-strategy debate
-- @entities/frameworks/fastapi.md — async REST/WebSocket event loop; Polars offload pattern preserves loop liveness
-- @entities/frameworks/pydantic-v2.md — pykalshi natively emits Pydantic v2 domain models (alignment justification for SDK adoption)
-- @entities/observability/prometheus.md — request-rate + latency metrics
-- @entities/observability/loki.md — execution log aggregation
-- @entities/observability/grafana.md — operator dashboards
-- @entities/observability/tempo.md — distributed traces across LangGraph → Polars → execution
-- @entities/components/kelly-cvar-risk-engine.md — Bayesian Modified Kelly + temporal discount + 50% order-book depth cap (Step 55 in Cemini roadmap)
+- @concepts/ensemble-weather-forecasting.md — 31-member Open-Meteo + Gumbel statistical-arbitrage methodology
+- @concepts/favorite-longshot-bias.md — primary edge (sell longshots, buy favorites)
 - @concepts/ip-sale-readiness.md — top-level synthesis target
 - @concepts/macro-weather-regime.md — weather-contract regime detection
-- @concepts/favorite-longshot-bias.md — primary edge (sell longshots, buy favorites)
-- @concepts/ensemble-weather-forecasting.md — 31-member Open-Meteo + Gumbel statistical-arbitrage methodology
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
+- @entities/components/kelly-cvar-risk-engine.md — Bayesian Modified Kelly + temporal discount + 50% order-book depth cap (Step 55 in Cemini roadmap)
+- @entities/data-sources/finnhub.md — institutional consensus comparison feed
+- @entities/data-sources/fred.md — macroeconomic consensus arbitrage feed (Fed rates, CPI)
+- @entities/data-sources/gdelt.md — adverse-shock signal that triggers BatchCancelOrders inventory withdrawal
+- @entities/data-sources/open-meteo.md — 31-member ensemble forecast → Gumbel CDF for weather contracts
+- @entities/frameworks/fastapi.md — async REST/WebSocket event loop; Polars offload pattern preserves loop liveness
+- @entities/frameworks/fastmcp.md — intelligence server hosting the Kalshi-strategy debate
+- @entities/frameworks/langgraph.md — 5-agent Devil's Advocate debate orchestrator
+- @entities/frameworks/pydantic-v2.md — pykalshi natively emits Pydantic v2 domain models (alignment justification for SDK adoption)
+- @entities/infrastructure/polars.md — vectorized statistical engine (Gumbel fit, ensemble shrinkage, AS in logit space)
+- @entities/infrastructure/redis.md — pub/sub blackboard between intelligence layer and execution layer
+- @entities/infrastructure/timescaledb.md — Kalshi order book history persistence
+- @entities/observability/grafana.md — operator dashboards
+- @entities/observability/loki.md — execution log aggregation
+- @entities/observability/prometheus.md — request-rate + latency metrics
+- @entities/observability/tempo.md — distributed traces across LangGraph → Polars → execution
+- @entities/platforms/kalshi.md — the venue
+- @entities/platforms/polymarket.md — cross-platform arbitrage explicitly **rejected** (bridge risk, KYC, capital fragmentation outweigh 4–6¢ spreads)
+- @sources/3-19-compliance-research.md — companion regulatory/IP source; both anchor on Kalshi DCM compliance under CFTC exclusive federal jurisdiction
+- @sources/3-19-ip-sale-research.md — companion deal-economics source; this Kalshi source's first paragraph explicitly frames the strategy stack as an IP-sale-valuation lever (uncorrelated alpha + tail-risk hedge for legacy equity/crypto portfolios)
 
 ## Raw Concept
 

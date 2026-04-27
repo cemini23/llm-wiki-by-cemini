@@ -1,17 +1,22 @@
 ---
-title: "Risk-Aware Financial Forecasting Enhanced by Machine Learning and Intuitionistic Fuzzy MCDM"
+title: Risk-Aware Financial Forecasting Enhanced by Machine Learning and Intuitionistic Fuzzy MCDM
 type: source
 tags: [pdf, portfolio-strategy, ml-methods, time-series]
-clusters: [portfolio-strategy, ml-methods, time-series]
 related:
+  - concepts/portfolio-strategy.md
   - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - portfolio-strategy
+  - ml-methods
+  - time-series
 ---
 
 ## Relations
 
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 - @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
 
 ## Raw Concept

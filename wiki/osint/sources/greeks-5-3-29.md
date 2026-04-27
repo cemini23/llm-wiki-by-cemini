@@ -2,17 +2,24 @@
 title: TraderBench — How Robust Are AI Agents in Adversarial Capital Markets?
 type: source
 tags: [pdf, llm-agents, portfolio-strategy, quant-finance, benchmark, adversarial, ai-agents, robustness]
-clusters: [llm-agents, portfolio-strategy, quant-finance]
 related:
   - concepts/llm-agent-systems.md
+  - concepts/portfolio-strategy.md
+  - concepts/quant-finance.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - llm-agents
+  - portfolio-strategy
+  - quant-finance
 ---
 
 ## Relations
 
 - @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

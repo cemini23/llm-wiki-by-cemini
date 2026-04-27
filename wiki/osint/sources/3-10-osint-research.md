@@ -2,16 +2,25 @@
 title: Targeted Technical Research Audit — Cemini Financial Suite (Shadowbroker OSINT Architecture)
 type: source
 tags: [docx, cemini-internal, infrastructure, rl-marl, market-microstructure, quant-finance, osint, fastapi, async-architecture, audit]
-clusters: [rl-marl, market-microstructure, quant-finance, cemini-internal, infrastructure]
 related:
+  - concepts/market-microstructure.md
+  - concepts/quant-finance.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - market-microstructure
+  - quant-finance
+  - cemini-internal
+  - infrastructure
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

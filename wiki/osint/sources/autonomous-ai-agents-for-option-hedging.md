@@ -1,5 +1,5 @@
 ---
-title: Autonomous AI Agents for Option Hedging: Enhancing Financial Stability through Shortfall Aware Reinforcement
+title: 'Autonomous AI Agents for Option Hedging: Enhancing Financial Stability through Shortfall Aware Reinforcement'
 type: source
 tags: [pdf, unread-stub, rl-marl]
 keywords: [Autonomous, Agents, Option, Hedging, Enhancing, Financial, Stability, Shortfall]

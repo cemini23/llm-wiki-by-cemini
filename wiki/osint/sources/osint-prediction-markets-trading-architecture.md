@@ -1,22 +1,28 @@
 ---
-title: "Advanced Architecture for Cemini Suites: Integrating OSINT, Alternative Data, and Prediction Markets"
+title: 'Advanced Architecture for Cemini Suites: Integrating OSINT, Alternative Data, and Prediction Markets'
 type: source
 tags: [docx, cemini-internal, market-microstructure, prediction-markets, alt-data]
-clusters: [market-microstructure, prediction-markets, cemini-internal, alt-data]
 related:
+  - concepts/market-microstructure.md
+  - entities/infrastructure/timescaledb.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
-  - entities/infrastructure/timescaledb.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
+clusters:
+  - market-microstructure
+  - prediction-markets
+  - cemini-internal
+  - alt-data
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @entities/infrastructure/timescaledb.md
 - @entities/platforms/kalshi.md
 - @entities/platforms/polymarket.md
-- @entities/infrastructure/timescaledb.md
 
 ## Raw Concept
 

@@ -3,7 +3,8 @@ title: Push-response anomalies in high-frequency S&P 500 price series Dmitrii Vl
 type: source
 tags: [pdf, unread-stub, market-microstructure]
 keywords: [Push-response, Dmitrii, Vlasiuk, Mikhail, Smirnov, Department, Mathematics, Columbia]
-related: []
+related:
+  - concepts/market-microstructure.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27
@@ -11,7 +12,7 @@ updated: 2026-04-27
 
 ## Relations
 
-*(No cross-references yet — stub.)*
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

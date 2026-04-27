@@ -1,13 +1,21 @@
 ---
-title: "Targeted Extraction Audit: Cemini Financial Suite Integration Candidates"
+title: 'Targeted Extraction Audit: Cemini Financial Suite Integration Candidates'
 type: source
 tags: [docx, unread-stub, llm-agents, market-microstructure, quant-finance, prediction-markets, cemini-internal, infrastructure, link-evaluation, multi-topic]
-clusters: [llm-agents, market-microstructure, quant-finance, prediction-markets, cemini-internal, infrastructure]
 related:
   - concepts/llm-agent-systems.md
+  - concepts/market-microstructure.md
+  - concepts/quant-finance.md
 maturity: draft
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - llm-agents
+  - market-microstructure
+  - quant-finance
+  - prediction-markets
+  - cemini-internal
+  - infrastructure
 ---
 > **⚠ Multi-topic aggregate**: this document evaluates several unrelated URLs / GitHub repos in one file. Cluster tags reflect the *union* of topics touched, not a single subject. When reading, treat each section as its own ingest candidate; consider splitting into per-link sub-stubs at promotion time.
 
@@ -15,6 +23,8 @@ updated: 2026-04-26
 ## Relations
 
 - @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 
 ## Raw Concept
 

@@ -1,17 +1,22 @@
 ---
-title: "Forecasting Bitcoin Volatility Spikes from Whale Transactions and CryptoQuant Data using Synthesizer Transformer Models"
+title: Forecasting Bitcoin Volatility Spikes from Whale Transactions and CryptoQuant Data using Synthesizer Transformer Models
 type: source
 tags: [pdf, quant-finance, ml-methods, crypto, bitcoin, volatility, transformer, synthesizer, xai, captum, whale-alerts, on-chain]
-clusters: [quant-finance, ml-methods, crypto]
 related:
+  - concepts/quant-finance.md
   - entities/ticker-watchlist.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - quant-finance
+  - ml-methods
+  - crypto
 ---
 
 ## Relations
 
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @entities/ticker-watchlist.md — CeminiSuite active ticker universe; quant-finance and time-series context
 
 ## Raw Concept

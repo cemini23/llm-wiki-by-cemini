@@ -1,19 +1,30 @@
 ---
-title: "Targeted Extraction Audit: Cemini Financial Suite Integration Analysis"
+title: 'Targeted Extraction Audit: Cemini Financial Suite Integration Analysis'
 type: source
 tags: [docx, unread-stub, rl-marl, llm-agents, portfolio-strategy, quant-finance, prediction-markets, cemini-internal, infrastructure, link-evaluation, multi-topic]
-clusters: [rl-marl, llm-agents, portfolio-strategy, quant-finance, prediction-markets, cemini-internal, infrastructure]
 related:
+  - concepts/portfolio-strategy.md
+  - concepts/quant-finance.md
   - concepts/rl-marl-research.md
 maturity: draft
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - llm-agents
+  - portfolio-strategy
+  - quant-finance
+  - prediction-markets
+  - cemini-internal
+  - infrastructure
 ---
 > **⚠ Multi-topic aggregate**: this document evaluates several unrelated URLs / GitHub repos in one file. Cluster tags reflect the *union* of topics touched, not a single subject. When reading, treat each section as its own ingest candidate; consider splitting into per-link sub-stubs at promotion time.
 
 
 ## Relations
 
+- @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept

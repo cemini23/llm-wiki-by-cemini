@@ -1,17 +1,21 @@
 ---
-title: "ParlayMarket: Automated Market Making for Parlay-style Joint Contracts"
+title: 'ParlayMarket: Automated Market Making for Parlay-style Joint Contracts'
 type: source
 tags: [pdf, unread-stub, market-microstructure, prediction-markets]
-clusters: [market-microstructure, prediction-markets]
 related:
+  - concepts/market-microstructure.md
   - entities/platforms/kalshi.md
 maturity: draft
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - market-microstructure
+  - prediction-markets
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
 - @entities/platforms/kalshi.md — primary Cemini prediction-market venue; market microstructure context
 
 ## Raw Concept

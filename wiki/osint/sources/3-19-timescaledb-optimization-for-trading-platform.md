@@ -1,17 +1,28 @@
 ---
-title: "Optimal Database Architecture for High-Frequency Multi-Asset Trading Systems (TimescaleDB)"
+title: Optimal Database Architecture for High-Frequency Multi-Asset Trading Systems (TimescaleDB)
 type: source
 tags: [docx, cemini-internal, rl-marl, llm-agents, market-microstructure, quant-finance, crypto, data-engineering]
-clusters: [rl-marl, llm-agents, market-microstructure, quant-finance, crypto, cemini-internal, data-engineering]
 related:
+  - concepts/market-microstructure.md
+  - concepts/quant-finance.md
   - entities/infrastructure/timescaledb.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23
+clusters:
+  - rl-marl
+  - llm-agents
+  - market-microstructure
+  - quant-finance
+  - crypto
+  - cemini-internal
+  - data-engineering
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @entities/infrastructure/timescaledb.md
 
 ## Raw Concept

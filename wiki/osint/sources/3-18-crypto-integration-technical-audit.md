@@ -1,35 +1,43 @@
 ---
-title: "Cemini Financial Suite: Cryptocurrency Expansion & Multi-Agent Architecture Audit"
+title: 'Cemini Financial Suite: Cryptocurrency Expansion & Multi-Agent Architecture Audit'
 type: source
 tags: [docx, market-microstructure, quant-finance, crypto, cemini-internal]
-clusters: [market-microstructure, quant-finance, crypto, cemini-internal]
 related:
-  - entities/platforms/hyperliquid.md
-  - entities/infrastructure/ollama.md
-  - entities/infrastructure/deepseek-r1-14b.md
-  - entities/infrastructure/redis.md
+  - concepts/cryptographic-audit-trail.md
+  - concepts/ip-sale-readiness.md
+  - concepts/market-microstructure.md
+  - concepts/quant-finance.md
+  - entities/frameworks/ccxt.md
   - entities/frameworks/fastapi.md
   - entities/frameworks/pydantic-v2.md
-  - entities/frameworks/ccxt.md
-  - concepts/ip-sale-readiness.md
-  - concepts/cryptographic-audit-trail.md
+  - entities/infrastructure/deepseek-r1-14b.md
+  - entities/infrastructure/ollama.md
+  - entities/infrastructure/redis.md
+  - entities/platforms/hyperliquid.md
 maturity: validated
-read_status: validated
 created: 2026-04-23
 updated: 2026-04-26
+read_status: validated
+clusters:
+  - market-microstructure
+  - quant-finance
+  - crypto
+  - cemini-internal
 ---
 
 ## Relations
 
-- @entities/platforms/hyperliquid.md
-- @entities/infrastructure/ollama.md
-- @entities/infrastructure/deepseek-r1-14b.md
-- @entities/infrastructure/redis.md
+- @concepts/cryptographic-audit-trail.md
+- @concepts/ip-sale-readiness.md
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
+- @entities/frameworks/ccxt.md
 - @entities/frameworks/fastapi.md
 - @entities/frameworks/pydantic-v2.md
-- @entities/frameworks/ccxt.md
-- @concepts/ip-sale-readiness.md
-- @concepts/cryptographic-audit-trail.md
+- @entities/infrastructure/deepseek-r1-14b.md
+- @entities/infrastructure/ollama.md
+- @entities/infrastructure/redis.md
+- @entities/platforms/hyperliquid.md
 
 ## Raw Concept
 

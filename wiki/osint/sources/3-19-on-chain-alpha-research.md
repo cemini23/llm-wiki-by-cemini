@@ -1,17 +1,30 @@
 ---
-title: "Algorithmic Trading Architectures: Integrating On-Chain Blockchain Data for Predictive Alpha Generation"
+title: 'Algorithmic Trading Architectures: Integrating On-Chain Blockchain Data for Predictive Alpha Generation'
 type: source
 tags: [docx, rl-marl, llm-agents, options-derivatives, market-microstructure, quant-finance, crypto, cemini-internal, on-chain, hyperliquid, ccxt, net-flows, mvrv, sopr, nvts, tvl, funding-rate, whale-detection, defillama, etherscan]
-clusters: [rl-marl, llm-agents, options-derivatives, market-microstructure, quant-finance, crypto, cemini-internal]
 related:
+  - concepts/market-microstructure.md
+  - concepts/options-derivatives.md
+  - concepts/quant-finance.md
   - concepts/rl-marl-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
+clusters:
+  - rl-marl
+  - llm-agents
+  - options-derivatives
+  - market-microstructure
+  - quant-finance
+  - crypto
+  - cemini-internal
 ---
 
 ## Relations
 
+- @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
+- @concepts/options-derivatives.md — Options & Derivatives corpus-index hub (Q 2026-04-27)
+- @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 
 ## Raw Concept
