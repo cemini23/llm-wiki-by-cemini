@@ -8,6 +8,41 @@ Newest entries on top.
 
 ---
 
+## [2026-04-27] ingest | K6: deep-read `sources/3-10-algorithmic-trading-ip-sale-audit.md` — second cross-source corroboration on dual-entity (HoldCo / OpCo); new corporate-structure concept page
+
+Resolves the next K-series cited-unread target. Shape: same J/K/K2/K3/K5 deep-read pattern, but the object of the audit is **legal/tax/structural**, not technical-deployment. The audit is a 155-paragraph 38KB DOCX dated 2026-03-10 — a sibling document to K5's 3-9-pm-research (2026-03-08), authored within ~2 days. Both audits prescribe a Wyoming HoldCo + Florida OpCo dual-entity for the IP-sale prep window; they **diverge on §475(f) Mark-to-Market election** (3-9 endorses, 3-10 rejects for IP-sale-prep purposes). The divergence is reconcilable on object-of-the-tax (3-9 optimizes the OpCo's trading-book P&L; 3-10 optimizes the HoldCo's IP-sale exit). Both can be true.
+
+### What shipped
+
+- **`wiki/sources/3-10-algorithmic-trading-ip-sale-audit.md`** — full deep-read rewrite. `read_status: validated`, expanded `related:` to 13 entries (5 concepts + 7 entities + 1 platform + new `concepts/ip-sale-corporate-structure.md`). Narrative restructured: Document framing / Section-by-section findings (Executive Summary / Gap Analysis / Tools / Implementation Sequence / Do-Not-Recommends) / Prescribed-vs-deployed gap table (7 rows, including reconciliation of audit's "18 Docker containers" with K5's 40-container probe) / Cross-source corroboration with K5. 11 Snippets with paragraph-number citations (paras 5, 21, 33, 39, 47, 51, 106, 141+156, 242, 248, 250).
+- **`wiki/concepts/ip-sale-corporate-structure.md`** — NEW concept page. Documents the Wyoming HoldCo + Florida OpCo dual-entity prescription with full table (jurisdiction / tax treatment / role), Wyoming-over-Delaware reasoning (cost + statutory charging-order + privacy), §475(f) MTM divergence + reconciliation, LGPL-3.0 architectural-isolation pattern (Docker container boundary = "separate work"), SEC Rule 3a5-4 sub-$50M dealer-registration carve-out, current-state-vs-prescribed table (Florida SMLLC deployed; Wyoming HoldCo not formed; deployed posture sufficient for §1235 today, dual-entity is a risk-reduction step), decision rule for HoldCo-formation timing (form before first APA term sheet circulates). 2 verbatim Snippets — para 124 of 3-9-pm-research + §2(a) of 3-10-audit as the joint corroborating quotes.
+- **`wiki/concepts/irc-1235-capital-gains-safe-harbor.md`** — extended. Added §1221(a)(3) post-TCJA framing (TCJA excluded self-created software from capital-asset definition; §1235 is the carve-out path back to LTCG); personal-efforts test specificity (Git commit history is the load-bearing audit artifact for individual-inventor proof); Florida-vs-Wyoming consistency note (both SMLLCs work for §1235 because both are disregarded entities — the key is entity classification, not state-of-formation). New `related:` edges to milestone-ledger + ip-sale-corporate-structure + 3-9-pm-research + 3-10-ip-sale-audit.
+- **`wiki/concepts/ip-sale-readiness.md`** — light update. Component 6 (tax + legal structure) now carries a K6 forward-pointer to `@concepts/ip-sale-corporate-structure.md` documenting the prescribed Wyoming HoldCo upgrade.
+
+### Bidirectional backlink updates (7 entity pages + 5 source/concept pages)
+
+- `entities/frameworks/{nautilustrader,langgraph,fastapi,pydantic-v2}.md` — added K6-stamp annotated entries linking to 3-10-audit (NautilusTrader: LGPL-3.0 architectural isolation; Pydantic v2: JSON `TradeSignal` payload schemas; LangGraph: orchestrator in audit's deployed-state inventory; FastAPI: OpenAPI spec named line-item in IP-sale deliverable bundle)
+- `entities/infrastructure/{redis,hetzner}.md` — Redis pub/sub as the "separate work" communication mechanism in LGPL pattern; Hetzner container-count reconciled (audit's 18 vs K5 probe's 40)
+- `entities/platforms/kalshi.md` — DCM compliance-leverage referenced in audit; SEC 3a5-4 carve-out works at Kalshi-volume scale
+- `concepts/{milestone-ledger,replacement-cost-valuation,publishers-exclusion-apa,sbom}.md` + `sources/{3-9-pm-research,3-19-compliance-research,3-19-ip-sale-research}.md` — backlinks for the 9 bidir gaps initially surfaced from new edges introduced by ip-sale-corporate-structure + irc-1235 expansion + 3-10-audit's `concepts/sbom.md` reference
+
+### Lint state at ship
+
+```
+Wiki lint scan — 360 pages indexed
+Outbound edges: 1532; Inbound edge coverage: 360 pages
+Orphans: 0 · Bidir gaps: 0 · Dangling: 0 · Missing @paths: 0
+Cited-but-unread: 135 (was 136 pre-K6 — 3-10-audit removed via read_status: validated)
+```
+
+### Pattern note
+
+K6 is the **first K-series cross-source-corroboration pass**: rather than reframe a single source against server reality (J/K/K2/K3/K4) or against a stale-snapshot-of-server-reality (K5), K6 corroborates two near-simultaneous Cemini-internal audits against each other. The corroboration surfaces both convergence (dual-entity HoldCo/OpCo) and reconcilable divergence (§475(f) MTM, where the two audits optimize different tax objects). New concept-page promotion (`ip-sale-corporate-structure`) was the natural output because the union of the two sources had structural detail that didn't fit cleanly under the existing `ip-sale-readiness` umbrella — it earned its own page.
+
+Top of cited-unread queue post-K6: `sources/4-5-links.md` (4 inbound), `sources/4-4-link-re.md` / `sources/fintech-startup-legal-ip-roadmap.md` / etc. (3 inbound) — all `[multi-topic aggregate]` link-evaluation docs that touch many concepts shallowly. Natural K7 candidate moves to per-citation-density single-topic deep-reads at 2 inbound.
+
+---
+
 ## [2026-04-27] structural | R: read_status frontmatter migration — 238 source pages backfilled, lint signal restored
 
 Closes a stale lint signal-vs-noise issue surfaced while picking the next K-series deep-read target. Section 5 of `wiki_lint.py` ("cited but unread") routes on the `read_status` *frontmatter* field; but 102 source pages had their `read_status` only in body bullets (`- **Read status**: deep-read`) — the frontmatter was empty for that field, so the lint counted them as unread despite being validated deep-reads. Top-of-list noise was masking the real K-series candidates.

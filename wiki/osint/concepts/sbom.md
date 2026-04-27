@@ -4,6 +4,7 @@ type: concept
 tags: [concept, security, supply-chain, standard]
 keywords: []
 related:
+  - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-17-competition-research.md
   - sources/3-19-compliance-research.md
   - sources/3-19-ip-sale-research.md
@@ -13,11 +14,12 @@ related:
   - entities/security/cyclonedx.md
 maturity: retracted
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-27
 ---
 
 ## Relations
 
+- @sources/3-10-algorithmic-trading-ip-sale-audit.md — K6 2026-04-27 — audit's deployed-state inventory referenced SBOM as a buyer-side deal-quality signal; the SBOM gap remains `[RETRACTED 2026-04-24 Track C]` and is on the P1 ticket per Track C
 - @sources/3-17-competition-research.md
 - @sources/3-19-compliance-research.md — the deep-read pass surfaced this source's explicit framing of automated SBOM as the cryptographic-proof deal-killer mitigation; sharpens the P1 wire-up ticket below
 - @sources/3-19-ip-sale-research.md

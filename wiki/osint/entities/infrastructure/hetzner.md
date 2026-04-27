@@ -4,6 +4,7 @@ type: entity
 tags: [infrastructure, vps, hosting, cemini-deployment]
 keywords: []
 related:
+  - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-10-cryptographic-research.md
   - sources/3-17-git-research-pt2.md
   - sources/3-9-pm-research.md
@@ -13,13 +14,15 @@ related:
   - sources/crypto-3-4-11.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-27
 
 # K5 update (2026-04-26): container count corrected 18-26 → 40 per server probe; Swarm-inactive call-out added; full container manifest enumerated.
+# K6 update (2026-04-27): bidir backlink added for sources/3-10-algorithmic-trading-ip-sale-audit.md (audit's deployed-state inventory referenced "18 Docker containers" — reconciled with K5 40-container probe in K6 prescribed-vs-deployed gap table).
 ---
 
 ## Relations
 
+- @sources/3-10-algorithmic-trading-ip-sale-audit.md — K6 2026-04-27 — audit's prescribed-vs-deployed gap table cited "18 Docker containers" as the deployed-state baseline; reconciled in K6 with K5's 40-container server probe (consistent with the seven-week diff between source's 2026-03-10 publication and 2026-04-26 server probe)
 - @sources/3-10-cryptographic-research.md
 - @sources/3-17-git-research-pt2.md
 - @sources/3-9-pm-research.md

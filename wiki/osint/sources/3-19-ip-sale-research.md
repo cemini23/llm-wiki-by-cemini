@@ -4,6 +4,7 @@ type: source
 tags: [docx, rl-marl, llm-agents, quant-finance, crypto, prediction-markets, cemini-internal]
 related:
   - concepts/cryptographic-audit-trail.md
+  - concepts/ip-sale-corporate-structure.md
   - concepts/ip-sale-readiness.md
   - concepts/irc-1235-capital-gains-safe-harbor.md
   - concepts/mappo.md
@@ -53,6 +54,7 @@ clusters:
 ## Relations
 
 - @concepts/cryptographic-audit-trail.md — explicit cite as trust-deficit mitigator for paper-trading results
+- @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — APA / earnout structuring (the deal layered on top of the Wyoming HoldCo + Florida OpCo dual-entity skeleton)
 - @concepts/ip-sale-readiness.md — top-level synthesis target
 - @concepts/irc-1235-capital-gains-safe-harbor.md — this source provides the architecture+goodwill framing; the compliance-research source provides the provisional-patent framing
 - @concepts/mappo.md

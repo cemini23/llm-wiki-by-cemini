@@ -6,6 +6,7 @@ related:
   - concepts/ai-ethics-and-governance.md
   - concepts/cryptographic-audit-trail.md
   - concepts/dcm-state-preemption.md
+  - concepts/ip-sale-corporate-structure.md
   - concepts/ip-sale-readiness.md
   - concepts/irc-1235-capital-gains-safe-harbor.md
   - concepts/macro-weather-regime.md
@@ -62,6 +63,7 @@ clusters:
 - @concepts/ai-ethics-and-governance.md — D′ 2026-04-26 — broader academic/policy backdrop against which this Cemini-internal compliance synthesis was framed
 - @concepts/cryptographic-audit-trail.md — pymerkle + OpenTimestamps Bitcoin anchoring of debate logs
 - @concepts/dcm-state-preemption.md — synthesizes the federal-vs-state preemption fight that emerged Feb-Apr 2026; this source's S7 (March 2026 ANPRM) is the precursor signal
+- @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — concurrent regulatory framing for the dual-entity structure (SEC dealer-rule 3a5-4 sub-$50M exclusion, Reg ATS, broker-dealer carve-outs)
 - @concepts/ip-sale-readiness.md — top-level synthesis target
 - @concepts/irc-1235-capital-gains-safe-harbor.md — patent-anchor + SMLLC disregarded-entity stack
 - @concepts/macro-weather-regime.md

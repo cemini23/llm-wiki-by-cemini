@@ -4,6 +4,7 @@ type: entity
 tags: [framework, llm-orchestration, agents]
 keywords: []
 related:
+  - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-10-cryptographic-research.md
   - sources/3-19-compliance-research.md
   - sources/3-19-ip-sale-research.md
@@ -20,11 +21,12 @@ related:
   - concepts/llm-agent-systems.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-27
 ---
 
 ## Relations
 
+- @sources/3-10-algorithmic-trading-ip-sale-audit.md — K6 2026-04-27 — LangGraph orchestrator listed in the audit's deployed-state inventory of agent-orchestration components; treated as part of the proprietary IP bundle that the Wyoming HoldCo would own at IP-sale time
 - @sources/3-10-cryptographic-research.md
 - @sources/3-19-compliance-research.md
 - @sources/3-19-ip-sale-research.md

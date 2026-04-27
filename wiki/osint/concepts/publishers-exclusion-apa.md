@@ -7,6 +7,7 @@ related:
   - sources/3-19-compliance-research.md
   - sources/3-19-ip-sale-research.md
   - concepts/ip-sale-readiness.md
+  - concepts/ip-sale-corporate-structure.md
   - concepts/publishers-exclusion.md
   - concepts/publishers-exclusion-iaa.md
   - entities/data-sources/telethon.md
@@ -14,7 +15,7 @@ related:
   - entities/platforms/polymarket.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-04-27
 ---
 
 ## Relations
@@ -22,6 +23,7 @@ updated: 2026-04-25
 - @sources/3-19-compliance-research.md — flags this APA-sense as one of two senses sharing the phrase; canonical statutory citation for the IAA-sense lives in S4
 - @sources/3-19-ip-sale-research.md — APA architecture+goodwill framing implicitly requires careful APA exclusion design
 - @concepts/ip-sale-readiness.md — top-level acquisition-readiness synthesis where APA carve-out logic matters as deal-value protection
+- @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — the dual-entity (HoldCo / OpCo) structure is what makes APA carve-out **operable** at deal time; the OpCo can shed problematic features pre-close because the IP-bearing HoldCo is a separate entity not contaminated by the OpCo's operational scope
 - @concepts/publishers-exclusion.md — disambiguation landing page (the original slug, now a stub)
 - @concepts/publishers-exclusion-iaa.md — the other concept sharing the phrase; IAA §202(a)(11) bona-fide-publication registration exemption (distinct legal context)
 - @entities/data-sources/telethon.md

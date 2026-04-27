@@ -9,10 +9,12 @@ related:
   - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-19-compliance-research.md
   - concepts/ip-sale-readiness.md
+  - concepts/ip-sale-corporate-structure.md
+  - concepts/irc-1235-capital-gains-safe-harbor.md
   - concepts/cryptographic-audit-trail.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-27
 ---
 
 ## Relations
@@ -22,6 +24,8 @@ updated: 2026-04-26
 - @sources/3-10-algorithmic-trading-ip-sale-audit.md
 - @sources/3-19-compliance-research.md
 - @concepts/ip-sale-readiness.md
+- @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — the HoldCo formally owns the milestone-ledger commits; the dual-entity structure is what makes the IP chain-of-title (which the ledger documents) cleanly transferable in the APA
+- @concepts/irc-1235-capital-gains-safe-harbor.md — K6 2026-04-27 — Git commit history (the ledger's substrate) is the load-bearing audit artifact for the §1235 personal-efforts test (proves individual-inventor authorship)
 - @concepts/cryptographic-audit-trail.md — sibling J-pass page (Track C → RESOLVED) on the same prescribed-vs-deployed pattern
 
 ## Raw Concept

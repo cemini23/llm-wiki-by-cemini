@@ -461,7 +461,8 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Publisher's exclusion (disambiguation)](concepts/publishers-exclusion.md) — Routing stub between two distinct legal senses sharing the phrase. — concept, legal, disambiguation
 - [Publisher's exclusion — APA exclusion-schedule sense](concepts/publishers-exclusion-apa.md) `[Cd]` — APA mechanism to carve out problematic components pre-close (M&A legal deliverable) — concept, legal, m-and-a
 - [Publisher's exclusion — IAA §202(a)(11) sense](concepts/publishers-exclusion-iaa.md) `[Cd]` — IAA bona-fide-publication registration exemption (and parallel CFTC Reg 4.14 CTA exemption) — concept, legal, securities-law
-- [IRC §1235 capital-gains safe harbor](concepts/irc-1235-capital-gains-safe-harbor.md) `[Cd]` — Statutory LTCG treatment for inventor patent sales (CPA deliverable) — concept, tax, legal
+- [IRC §1235 capital-gains safe harbor](concepts/irc-1235-capital-gains-safe-harbor.md) `[Cd]` — Statutory LTCG treatment for inventor patent sales (CPA deliverable); §1221(a)(3) post-TCJA framing — concept, tax, legal
+- [IP-sale corporate structure (HoldCo / OpCo)](concepts/ip-sale-corporate-structure.md) `[Cd]` — Wyoming HoldCo + Florida OpCo dual-entity prescription corroborating across 3-9-pm-research para 124 + 3-10-ip-sale-audit §2(a); §475(f) MTM divergence reconciled on object-of-the-tax — concept, legal, tax, m-and-a, cemini-internal
 - [DCM state preemption](concepts/dcm-state-preemption.md) — Swap-vs-wager structural dispute determining whether Kalshi's CFTC-DCM regulatory moat (and the IP-sale compliance-leverage thesis) survives the AZ/CT/IL counter-suit cycle and the SCOTUS path. — concept, legal, regulatory, prediction-markets
 
 ### Crypto / blockchain

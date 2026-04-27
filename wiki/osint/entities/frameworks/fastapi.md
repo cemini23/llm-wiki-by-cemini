@@ -4,6 +4,7 @@ type: entity
 tags: [framework, web, api, python]
 keywords: []
 related:
+  - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-18-crypto-integration-technical-audit.md
   - sources/3-19-compliance-research.md
   - sources/3-19-ip-sale-research.md
@@ -14,11 +15,12 @@ related:
   - entities/frameworks/pydantic-v2.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-27
 ---
 
 ## Relations
 
+- @sources/3-10-algorithmic-trading-ip-sale-audit.md — K6 2026-04-27 — FastAPI control-plane treated as part of the proprietary IP surface in the audit's deployed-state inventory; OpenAPI spec is a named line-item in the IP-sale deliverable bundle (machine-readable API contract for the acquirer's integration team)
 - @sources/3-18-crypto-integration-technical-audit.md
 - @sources/3-19-compliance-research.md — Schemathesis-against-OpenAPI cited as the institutional-grade testing signal; FastAPI request layer host for the TCP/IP congestion governor that satisfies Kalshi's "self-limit system load" mandate
 - @sources/3-19-ip-sale-research.md — OpenAPI spec generation is a named line-item in the IP-sale deliverable bundle (machine-readable API contract reduces buyer-side integration uncertainty)

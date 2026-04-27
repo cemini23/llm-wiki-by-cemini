@@ -20,6 +20,7 @@ related:
   - concepts/publishers-exclusion-iaa.md
   - concepts/dcm-state-preemption.md
   - concepts/irc-1235-capital-gains-safe-harbor.md
+  - concepts/ip-sale-corporate-structure.md
   - concepts/milestone-ledger.md
   - entities/infrastructure/hetzner.md
   - entities/frameworks/langgraph.md
@@ -59,6 +60,7 @@ updated: 2026-04-26
 - @concepts/publishers-exclusion-iaa.md
 - @concepts/dcm-state-preemption.md — the swap-vs-gambling preemption fight at SCOTUS will determine whether `@entities/platforms/kalshi.md` role 3 (compliance-leverage point) survives, which is a load-bearing leg of the IP-sale defensibility thesis
 - @concepts/irc-1235-capital-gains-safe-harbor.md
+- @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — dedicated dual-entity (Wyoming HoldCo + Florida OpCo) page; expansion of component 6 prescribed by @sources/3-10-algorithmic-trading-ip-sale-audit.md §2(a) corroborated by @sources/3-9-pm-research.md para 124
 - @concepts/milestone-ledger.md
 - @entities/infrastructure/hetzner.md
 - @entities/frameworks/langgraph.md
@@ -110,7 +112,7 @@ multi-asset platform.
    PRs.~~ *The ledger does not exist (no table, no JSONL, no YAML). `docs/ROADMAP.md` is a weak substitute with no schema-version / SBOM-hash / Merkle-root anchoring. This is the P0 ticket and the single most-load-bearing gap in the acquirer narrative. See @concepts/milestone-ledger.md.*
 6. **Tax + legal structure** `[CONFIRMED 2026-04-24] doc-only` — Florida single-member LLC with IRC
    §1235 capital-gains safe harbor on IP transfer; asset-purchase
-   agreement template with earnout tiers pre-drafted. *APA deliverable; no engineering milestone. See @concepts/irc-1235-capital-gains-safe-harbor.md + @concepts/publishers-exclusion-apa.md (deal carve-out mechanic) + @concepts/publishers-exclusion-iaa.md (registration-burden mitigation).*
+   agreement template with earnout tiers pre-drafted. *APA deliverable; no engineering milestone. See @concepts/irc-1235-capital-gains-safe-harbor.md + @concepts/publishers-exclusion-apa.md (deal carve-out mechanic) + @concepts/publishers-exclusion-iaa.md (registration-burden mitigation).* **K6 2026-04-27 forward-pointer**: the prescribed upgrade from single Florida SMLLC to **Wyoming HoldCo + Florida OpCo dual-entity** (per @sources/3-10-algorithmic-trading-ip-sale-audit.md §2(a) corroborating @sources/3-9-pm-research.md para 124) is documented at @concepts/ip-sale-corporate-structure.md. The current single-SMLLC posture is sufficient for §1235 today; the dual-entity upgrade is a risk-reduction step (charging-order protection + IP insulation + privacy) prescribed before first APA term sheet circulates.
 
 ### Deal-killer ledger
 Specific items tracked separately because they'd torpedo the sale if

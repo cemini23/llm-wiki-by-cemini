@@ -4,6 +4,7 @@ type: entity
 tags: [platform, prediction-markets, exchange, cemini-venue]
 keywords: []
 related:
+  - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-10-cryptographic-research.md
   - sources/3-17-competition-research.md
   - sources/3-19-alternative-data-for-prediction-markets-research.md
@@ -36,11 +37,12 @@ related:
   - sources/trading-3-4-5.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-27
 ---
 
 ## Relations
 
+- @sources/3-10-algorithmic-trading-ip-sale-audit.md — K6 2026-04-27 — Kalshi DCM status named in the audit's compliance-leverage discussion as a structural cleanliness factor for the IP-sale narrative (CFTC-jurisdiction venue is cleaner due-diligence story than offshore-unregistered alternatives); SEC Rule 3a5-4 sub-$50M dealer-registration carve-out works for the OpCo at Kalshi-volume scale
 - @sources/3-10-cryptographic-research.md
 - @sources/3-17-competition-research.md
 - @sources/3-19-alternative-data-for-prediction-markets-research.md

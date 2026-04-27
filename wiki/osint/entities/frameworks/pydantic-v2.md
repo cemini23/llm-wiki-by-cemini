@@ -4,6 +4,7 @@ type: entity
 tags: [library, framework, validation, python]
 keywords: []
 related:
+  - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-10-cryptographic-research.md
   - sources/3-18-crypto-integration-technical-audit.md
   - sources/3-19-compliance-research.md
@@ -15,11 +16,12 @@ related:
   - concepts/ip-sale-readiness.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-27
 ---
 
 ## Relations
 
+- @sources/3-10-algorithmic-trading-ip-sale-audit.md — K6 2026-04-27 — JSON `TradeSignal` payload schemas (Pydantic v2) over Redis pub/sub are the **network-boundary serialization mechanism** that constitutes "separate work communicating at arm's length" in the LGPL-3.0 architectural-isolation pattern; Pydantic v2 model catalogue named in the audit as the IP-sale-deliverable artifact for buyer-side data-model comprehension
 - @sources/3-10-cryptographic-research.md
 - @sources/3-18-crypto-integration-technical-audit.md
 - @sources/3-19-compliance-research.md

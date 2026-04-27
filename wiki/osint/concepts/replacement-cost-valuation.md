@@ -8,10 +8,11 @@ related:
   - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-19-ip-sale-research.md
   - concepts/ip-sale-readiness.md
+  - concepts/ip-sale-corporate-structure.md
   - entities/components/kelly-cvar-risk-engine.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-27
 ---
 
 ## Relations
@@ -20,6 +21,7 @@ updated: 2026-04-24
 - @sources/3-10-algorithmic-trading-ip-sale-audit.md
 - @sources/3-19-ip-sale-research.md — primary valuation methodology recommended for pre-revenue quant IP; sets the floor for the base+earnout deal structure
 - @concepts/ip-sale-readiness.md
+- @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — the IP that this valuation prices is owned by the prescribed Wyoming HoldCo at sale time; structure-side rationale for asset segregation is "preserve the asset that's being valued"
 - @entities/components/kelly-cvar-risk-engine.md
 
 ## Raw Concept

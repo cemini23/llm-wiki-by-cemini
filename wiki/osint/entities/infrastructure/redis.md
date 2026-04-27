@@ -4,6 +4,7 @@ type: entity
 tags: [infrastructure, cache, pubsub, streaming]
 keywords: []
 related:
+  - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-18-crypto-integration-technical-audit.md
   - sources/3-19-ip-sale-research.md
   - sources/3-19-kalshi-trading-strategy-research.md
@@ -14,11 +15,12 @@ related:
   - entities/infrastructure/timescaledb.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-27
 ---
 
 ## Relations
 
+- @sources/3-10-algorithmic-trading-ip-sale-audit.md — K6 2026-04-27 — Redis pub/sub network boundary is the **"separate work" communication mechanism** in the LGPL-3.0 architectural-isolation pattern: confines NautilusTrader (LGPL) to its own container while proprietary engines publish JSON `TradeSignal` payloads over Redis, immunizing the HoldCo's IP from viral copyleft
 - @sources/3-18-crypto-integration-technical-audit.md
 - @sources/3-19-ip-sale-research.md
 - @sources/3-19-kalshi-trading-strategy-research.md

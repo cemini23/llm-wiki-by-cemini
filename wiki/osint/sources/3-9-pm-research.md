@@ -3,6 +3,8 @@ title: 'Strategic Architecture and Algorithmic Development Report: Cemini Financ
 type: source
 tags: [docx, cemini-internal, rl-marl, llm-agents, portfolio-strategy, market-microstructure, quant-finance, prediction-markets, audit-security, infrastructure, data-engineering]
 related:
+  - concepts/ip-sale-corporate-structure.md
+  - concepts/irc-1235-capital-gains-safe-harbor.md
   - concepts/market-microstructure.md
   - concepts/milestone-ledger.md
   - concepts/portfolio-strategy.md
@@ -32,6 +34,8 @@ clusters:
 
 ## Relations
 
+- @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — para 124 of this source is the corroborating quote for the dual-entity (HoldCo / OpCo) prescription documented on the corporate-structure concept page
+- @concepts/irc-1235-capital-gains-safe-harbor.md — K6 2026-04-27 — same para 124 grounds the §1235 / disregarded-entity SMLLC discussion
 - @concepts/market-microstructure.md — Market Microstructure corpus-index hub (Q 2026-04-27)
 - @concepts/milestone-ledger.md — sibling page; K5 upgrades its `[RETRACTED 2026-04-24 Track C]` to `[RESOLVED 2026-04-26 K5 deep-read]` with the source-grounded reframe
 - @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)

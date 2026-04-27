@@ -4,23 +4,27 @@ type: entity
 tags: [framework, trading, backtest, cython]
 keywords: []
 related:
+  - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-10-cryptographic-research.md
   - sources/3-19-compliance-research.md
   - sources/3-19-ip-sale-research.md
   - sources/trading-playbook-research.md
   - concepts/ip-sale-readiness.md
+  - concepts/ip-sale-corporate-structure.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-27
 ---
 
 ## Relations
 
+- @sources/3-10-algorithmic-trading-ip-sale-audit.md — K6 2026-04-27 — LGPL-3.0 architectural isolation pattern: NautilusTrader (LGPL-3.0) confined to its own Docker container; proprietary engines communicate over Redis pub/sub network boundary, constituting "separate work communicating at arm's length" → immunizes the HoldCo's proprietary IP from viral copyleft
 - @sources/3-10-cryptographic-research.md
 - @sources/3-19-compliance-research.md — deterministic backtest logs cited as the MiFID II RTS 7 testing-environment-separation mandate mitigation
 - @sources/3-19-ip-sale-research.md
 - @sources/trading-playbook-research.md
 - @concepts/ip-sale-readiness.md
+- @concepts/ip-sale-corporate-structure.md — corporate-structure adjacency: the LGPL-isolated NautilusTrader container is conceptually OpCo-side infrastructure; the architectural pattern is what makes the HoldCo's IP cleanly transferable in an APA without dragging LGPL-tainted artifacts
 
 ## Raw Concept
 
