@@ -12,12 +12,14 @@ Newest entries on top.
 
 Resolves the tool-survey follow-up to the Graphify research turn. The survey returned three "Try" candidates worth installing (over Graphify itself, which was rejected as too heavy for a lean librarian aesthetic — Graph view + Dataview already cover its niche). Two are user-side Obsidian community plugins; one is a CI link-checker.
 
-**Installed (user-side, vendored under `.obsidian/plugins/`):**
+**Installed (user-side, vendored under `wiki/.obsidian/plugins/`):**
 
-- **Obsidian Linter v1.31.2** (`.obsidian/plugins/obsidian-linter/`) — formats YAML frontmatter / heading spacing / list styles / footnotes. Useful as a hand-on-the-wheel for the schema's frontmatter conventions; complements `scripts/wiki_lint.py` (server-side structural lint) with editor-side cosmetic lint. Plugin id `obsidian-linter` matches dir name (verified via `manifest.json`).
-- **Omnisearch v1.28.2** (`.obsidian/plugins/omnisearch/`) — full-text fuzzy search with ranking. Faster than Obsidian's built-in search on a 333-page corpus + handles the `@path/page.md` reference style better. Plugin id `omnisearch` matches dir name.
+- **Obsidian Linter v1.31.2** (`wiki/.obsidian/plugins/obsidian-linter/`) — formats YAML frontmatter / heading spacing / list styles / footnotes. Useful as a hand-on-the-wheel for the schema's frontmatter conventions; complements `scripts/wiki_lint.py` (server-side structural lint) with editor-side cosmetic lint. Plugin id `obsidian-linter` matches dir name (verified via `manifest.json`).
+- **Omnisearch v1.28.2** (`wiki/.obsidian/plugins/omnisearch/`) — full-text fuzzy search with ranking. Faster than Obsidian's built-in search on a 333-page corpus + handles the `@path/page.md` reference style better. Plugin id `omnisearch` matches dir name.
 
-Both downloaded directly from GitHub release assets (`platers/obsidian-linter` 1.31.2 and `scambier/obsidian-omnisearch` 1.28.2). `.obsidian/` is gitignored, so these files exist on the local workspace only — they'll **not** commit. **User action required**: open Obsidian → Settings → Community plugins → enable both ("Linter" and "Omnisearch") after restart.
+Both downloaded directly from GitHub release assets (`platers/obsidian-linter` 1.31.2 and `scambier/obsidian-omnisearch` 1.28.2). `.obsidian/` is gitignored (matches both workspace-root and `wiki/`-scoped vault directories), so these files exist on the local workspace only — they'll **not** commit. **User action required**: open Obsidian → Settings → Community plugins → enable both ("Linter" and "Omnisearch") after restart.
+
+**Vault-location correction**: initial install dropped the plugins at the workspace-root `.obsidian/plugins/`, but the user's actual Obsidian vault is `wiki/` itself (evidence: `wiki/.obsidian/community-plugins.json` already lists `["dataview"]` and the live workspace state `wiki/.obsidian/workspace.json` is 4956 bytes vs. the workspace-root `.obsidian/` having an empty `community-plugins.json`). Plugins moved post-install via `mv .obsidian/plugins/<name> wiki/.obsidian/plugins/`; empty workspace-root `.obsidian/plugins/` removed. The `wiki/`-vault choice is consistent with where dataview is already installed (the L dashboard at `wiki/dashboard.md` lives there).
 
 **Installed (CI-side, committed):**
 
@@ -28,7 +30,7 @@ Both downloaded directly from GitHub release assets (`platers/obsidian-linter` 1
 
 **Implementation note** — dead-link counting: the tool emits `[✖]` glyph twice per failure (once inline during scan, once in `ERROR:` summary block). The workflow's `dead_links` counter uses `→ Status:` instead, which appears once per dead link in the summary block only. Avoids double-counting in the step-summary panel.
 
-**Files**: 2 new files committed (`.github/workflows/links.yml`, `.markdown-link-check.json`); 6 files vendored under `.obsidian/plugins/` (gitignored, user-side only); 2 modified (`wiki/log.md`, `ROADMAP.md`).
+**Files**: 2 new files committed (`.github/workflows/links.yml`, `.markdown-link-check.json`); 6 files vendored under `wiki/.obsidian/plugins/{obsidian-linter,omnisearch}/` (gitignored, user-side only); 2 modified (`wiki/log.md`, `ROADMAP.md`).
 
 ## [2026-04-26] ingest | F: Per-ticker Exa forward-looking deep-dive briefs — full 27/27 sweep (ROADMAP F closed)
 
