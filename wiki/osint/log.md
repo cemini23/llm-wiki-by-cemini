@@ -8,6 +8,40 @@ Newest entries on top.
 
 ---
 
+## [2026-04-27] ingest | O: 21 inbox-residue research PDFs stub-bootstrapped — 226 → 247 canonical sources
+
+Follow-up to **N**: with the SPY/QQQ/IWM ticker reports indexed and the watchlist at 30 / 30, the remaining 21 PDFs from the same inbox drop got the stub-bootstrap treatment, matching the **2026-04-23 corpus-bootstrap precedent** (230 stubs, first-page extraction, `maturity: draft`, `read status: unread-stub`). These are heterogeneous quant / option-pricing / hedging / LLM-reasoning papers — none belong with the curated ticker reports, but all are research-relevant enough to belong in the corpus rather than rotting in an inbox.
+
+**New tooling**: `scripts/bootstrap_inbox.py` — targeted variant of `bootstrap_extract.py` + `generate_stubs.py`. Operates only on `research to be indexed/`, generates one stub per file with the same frontmatter template, then moves the source into `research for cemini/` per the established ingest convention. Idempotent (skips files whose target stub already exists). Reusable for future inbox drops without rewriting the existing 229 stubs.
+
+**Cluster distribution** (first-keyword-wins heuristic, same router as the 230-stub bootstrap):
+- `rl-marl` (6): `autonomous-ai-agents-for-option-hedging`, `controlled-study-of-multi-agent-debate-in-logical-reasoning`, `deep-hedging-with-reinforcement-learning`, `evonash-marl`, `hi-darts`, `regret-driven-portfolios`. Note: `controlled-study-of-multi-agent-debate-...` is an **LLM-debate** paper, not classical MARL — the router fired on the literal "multi-agent" keyword first. Acceptable artifact; manual re-cluster on deep read is fine.
+- `llm-agents` (3): `esglens` (RAG ESG analysis), `ligo` (gravitational-wave glitch classification — routed via "attention-based models"; the paper's ML methodology is genuine but the topic is astrophysics), `trigreason` (small/large reasoning-model handoff).
+- `options-derivatives` (4): `american-call-options-pricing-with-modular-neural-networks`, `bayesuan-perspectives` (Bayesian clinical-trials paper — false-positive on "options" mention; clinical trials, not derivatives), `rough-martingale-optimal-transport`, `the-three-dimensional-decomposition-of-volatility-memory`.
+- `market-microstructure` (3): `market-microstructure-and-liquidity-analysis-of-qqq-etf-on-2024-08-01`, `nonstandard-errors` (AI-coding-agent reproducibility paper — false-positive route; not microstructure), `push-response-anomalies-in-high-frequency-s-p-500-price-series`.
+- `quant-finance` (3): `mixed-fractional-models`, `qqq-trust-s-american-options-using-data-from-november-21-2024`, `test-time-adaptation-for-non-stationary-time-series`.
+- `portfolio-strategy` (2): `loosening-your-collar-alternative-implementations-of-qqq-collars`, `toplogical-risk-parity` (filename typo "toplogical" preserved — kept as-is to match the source filename in `research for cemini/`).
+
+**Hub backlinks** (only clusters with dedicated hub pages — matches the 229-stub precedent of leaving non-hub'd clusters as `related: []`):
+- `wiki/concepts/llm-agent-systems.md`: 3 new `related:` entries + Relations bullets; narrative count bumped 60 → 63.
+- `wiki/concepts/rl-marl-research.md`: 6 new `related:` entries + Relations bullets; narrative count bumped 80 → 86. Caveat noted in narrative re: the "multi-agent debate" router miss.
+
+**Index updates** (`wiki/index.md`):
+- Total: **226 → 247 canonical stubs** (165 PDF + 80 docx + 2 md).
+- Section counts: rl-marl 95 → 101, llm-agents 63 → 66, portfolio-strategy 9 → 11, options-derivatives 11 → 15, market-microstructure 12 → 15, quant-finance 7 → 10.
+- All entries inserted alphabetically by title within each section.
+
+**Lint pass** (`scripts/phase3_lint.py`): clean. 356 pages inventoried. 0 orphans, 0 bidirectional gaps, 0 dangling refs, 0 validated-but-unread-stub pages.
+
+**LIGO peek**: 11-page paper from Baylor U. (Manoharan & Cleaver, dated 2026-04-13) on machine-learning architectures for tabular gravitational-wave glitch classification. Real research, not noise. Deep-read deferred — sits in `llm-agents` cluster on the basis of attention-based architecture mentions; topic-correctness is an organic-promotion concern, not a stub-bootstrap one.
+
+**Inbox state**: empty (all 21 PDFs moved into `research for cemini/`; `.DS_Store` removed). Inbox is now ready for the next user drop.
+
+**Not done in this pass** (deferred):
+- No deep reads. All 21 stubs are `maturity: draft`, `read status: unread-stub` — the 229-stub precedent stands.
+- The 12 stubs in non-hub'd clusters (portfolio-strategy, options-derivatives, market-microstructure, quant-finance) have `related: []`. Spinning up a `concepts/options-pricing.md` or `concepts/quant-finance.md` hub is a separate hygiene task — do it when a deep read makes it earned, not as a checkbox.
+- Several false-positive cluster routes flagged inline above (`controlled-study-...`, `bayesuan-perspectives`, `nonstandard-errors`, `ligo`). These resolve organically on read; not worth manually re-clustering against a one-shot heuristic.
+
 ## [2026-04-27] ingest | N: SPY / QQQ / IWM Gemini DR baselines indexed — watchlist completes at 30 / 30
 
 User dropped `SPY 3_27.docx`, `QQQ 4_27.docx`, and `iShares Russell 2000 ETF 4_27.docx` into `research to be indexed/` along with ~21 unrelated research PDFs (queued separately for stub-bootstrap as a follow-up). The three index-ETF Gemini Deep Research reports close the previously-blocked **Soon** row and bring the **30 / 30 indexed** milestone home.

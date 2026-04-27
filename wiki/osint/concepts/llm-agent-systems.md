@@ -4,6 +4,8 @@ type: concept
 tags: [concept, llm-agents, agent-orchestration, research-index]
 keywords: [llm, agents, orchestration, tool-use, scaffolding, agentic, cemini-corpus]
 related:
+  - concepts/ai-ethics-and-governance.md
+  - entities/frameworks/langgraph.md
   - sources/3-10-live-trading-research.md
   - sources/3-17-agent-research.md
   - sources/3-19-automated-trading-strategy-discovery-pipeline-research.md
@@ -35,6 +37,7 @@ related:
   - sources/crypto-4-4-11.md
   - sources/crypto-7-4-11.md
   - sources/cyrpto-12-4-11.md
+  - sources/esglens.md
   - sources/gdelt-2-3-29.md
   - sources/gdelt-3-3-29.md
   - sources/gdelt-5-3-29.md
@@ -44,6 +47,7 @@ related:
   - sources/harness2-4-5.md
   - sources/how-to-deploy-your-first-claude-managed-agent.md
   - sources/kalshi-5-3-29.md
+  - sources/ligo.md
   - sources/llm-4-3-2.md
   - sources/llm-4-3-5.md
   - sources/llm-4-3-6.md
@@ -62,15 +66,16 @@ related:
   - sources/sort-2-4-3.md
   - sources/sort-6-4-3.md
   - sources/sort-8-4-3.md
-  - entities/frameworks/langgraph.md
-  - concepts/ai-ethics-and-governance.md
+  - sources/trigreason.md
 maturity: draft
 created: 2026-04-26
-updated: 2026-04-26
+updated: 2026-04-27
 ---
 
 ## Relations
 
+- @concepts/ai-ethics-and-governance.md — sister hub: agent-architecture sources sit here, governance-of-those-agents (EU-AI-Act, harm typology, behavioral framing) sits in the ethics hub
+- @entities/frameworks/langgraph.md — the operative LLM orchestration framework in the Cemini stack; this hub indexes the broader agent-systems research that informed the LangGraph architecture choice
 - @sources/3-10-live-trading-research.md — LLM agent-systems source in the Cemini research corpus
 - @sources/3-17-agent-research.md — LLM agent-systems source in the Cemini research corpus
 - @sources/3-19-automated-trading-strategy-discovery-pipeline-research.md — LLM agent-systems source in the Cemini research corpus
@@ -102,6 +107,7 @@ updated: 2026-04-26
 - @sources/crypto-4-4-11.md — LLM agent-systems source in the Cemini research corpus
 - @sources/crypto-7-4-11.md — LLM agent-systems source in the Cemini research corpus
 - @sources/cyrpto-12-4-11.md — LLM agent-systems source in the Cemini research corpus
+- @sources/esglens.md — LLM agent-systems source in the Cemini research corpus (O 2026-04-27 — RAG-based ESG report analysis)
 - @sources/gdelt-2-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/gdelt-3-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/gdelt-5-3-29.md — LLM agent-systems source in the Cemini research corpus
@@ -111,6 +117,7 @@ updated: 2026-04-26
 - @sources/harness2-4-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/how-to-deploy-your-first-claude-managed-agent.md — LLM agent-systems source in the Cemini research corpus
 - @sources/kalshi-5-3-29.md — LLM agent-systems source in the Cemini research corpus
+- @sources/ligo.md — LLM agent-systems source in the Cemini research corpus (O 2026-04-27 — attention-based architectures, tabular benchmark)
 - @sources/llm-4-3-2.md — LLM agent-systems source in the Cemini research corpus
 - @sources/llm-4-3-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/llm-4-3-6.md — LLM agent-systems source in the Cemini research corpus
@@ -129,12 +136,11 @@ updated: 2026-04-26
 - @sources/sort-2-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/sort-6-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/sort-8-4-3.md — LLM agent-systems source in the Cemini research corpus
-- @entities/frameworks/langgraph.md — the operative LLM orchestration framework in the Cemini stack; this hub indexes the broader agent-systems research that informed the LangGraph architecture choice
-- @concepts/ai-ethics-and-governance.md — sister hub: agent-architecture sources sit here, governance-of-those-agents (EU-AI-Act, harm typology, behavioral framing) sits in the ethics hub
+- @sources/trigreason.md — LLM agent-systems source in the Cemini research corpus (O 2026-04-27 — small/large reasoning-model collaboration)
 
 ## Raw Concept
 
-Hub page for the LLM-agents cluster of the Cemini research corpus (60 sources — second-largest cluster at bootstrap; +4 from D′ 2026-04-26 sweep adding `ai-1-4-3`, `ai-9-4-3`, `ai-9-4-6`, `protcol-9-3-29`). Sources cover agent scaffolding, multi-agent coordination, tool-use patterns, coding agents, memory architectures, agent benchmarking, and financial LLM applications.
+Hub page for the LLM-agents cluster of the Cemini research corpus (63 sources — second-largest cluster at bootstrap; +4 from D′ 2026-04-26 sweep adding `ai-1-4-3`, `ai-9-4-3`, `ai-9-4-6`, `protcol-9-3-29`; +3 from O 2026-04-27 inbox bootstrap adding `esglens`, `ligo`, `trigreason`). Sources cover agent scaffolding, multi-agent coordination, tool-use patterns, coding agents, memory architectures, agent benchmarking, and financial LLM applications.
 
 This page is a discovery index. Sources should be individually deep-read before findings are promoted to entity or concept pages.
 

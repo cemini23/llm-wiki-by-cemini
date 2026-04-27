@@ -65,13 +65,18 @@ related:
   - sources/ai-4-6.md
   - sources/ai-6-4-3.md
   - sources/ai-architect-s-cemini-suite-research.md
+  - sources/autonomous-ai-agents-for-option-hedging.md
   - sources/cemini-suites-technical-analysis.md
+  - sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md
   - sources/crypto-2-4-11.md
   - sources/crypto-6-4-11.md
+  - sources/deep-hedging-with-reinforcement-learning.md
+  - sources/evonash-marl.md
   - sources/fintech-startup-legal-ip-roadmap.md
   - sources/forex-2-4-4.md
   - sources/git-3-5-pt3.md
   - sources/github-analysis.md
+  - sources/hi-darts.md
   - sources/lang2-4-14.md
   - sources/llm-4-3-4.md
   - sources/llm-4-3-7.md
@@ -79,6 +84,7 @@ related:
   - sources/protocol-2-3-29.md
   - sources/protocol-5-3-29.md
   - sources/protocol-7-3-29.md
+  - sources/regret-driven-portfolios.md
   - sources/rl-technical-audit-findings-3-9.md
   - sources/scaling-roadmap-research.md
   - sources/signa.md
@@ -86,7 +92,7 @@ related:
   - sources/sortino-4-4-3.md
 maturity: draft
 created: 2026-04-26
-updated: 2026-04-26
+updated: 2026-04-27
 ---
 
 ## Relations
@@ -152,13 +158,18 @@ updated: 2026-04-26
 - @sources/ai-4-6.md — RL/MARL source in the Cemini research corpus
 - @sources/ai-6-4-3.md — RL/MARL source in the Cemini research corpus
 - @sources/ai-architect-s-cemini-suite-research.md — RL/MARL source in the Cemini research corpus
+- @sources/autonomous-ai-agents-for-option-hedging.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — shortfall-aware RL for option hedging)
 - @sources/cemini-suites-technical-analysis.md — RL/MARL source in the Cemini research corpus
+- @sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — LLM multi-agent debate; routed by 'multi-agent' keyword)
 - @sources/crypto-2-4-11.md — RL/MARL source in the Cemini research corpus
 - @sources/crypto-6-4-11.md — RL/MARL source in the Cemini research corpus
+- @sources/deep-hedging-with-reinforcement-learning.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — RL for option-portfolio hedging)
+- @sources/evonash-marl.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — closed-loop MARL for equity allocation)
 - @sources/fintech-startup-legal-ip-roadmap.md — RL/MARL source in the Cemini research corpus
 - @sources/forex-2-4-4.md — RL/MARL source in the Cemini research corpus
 - @sources/git-3-5-pt3.md — RL/MARL source in the Cemini research corpus
 - @sources/github-analysis.md — RL/MARL source in the Cemini research corpus
+- @sources/hi-darts.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — hierarchical adaptive RL trading system)
 - @sources/lang2-4-14.md — RL/MARL source in the Cemini research corpus
 - @sources/llm-4-3-4.md — RL/MARL source in the Cemini research corpus
 - @sources/llm-4-3-7.md — RL/MARL source in the Cemini research corpus
@@ -166,6 +177,7 @@ updated: 2026-04-26
 - @sources/protocol-2-3-29.md — RL/MARL source in the Cemini research corpus
 - @sources/protocol-5-3-29.md — RL/MARL source in the Cemini research corpus
 - @sources/protocol-7-3-29.md — RL/MARL source in the Cemini research corpus
+- @sources/regret-driven-portfolios.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — LLM-guided regret-minimization for portfolio allocation)
 - @sources/rl-technical-audit-findings-3-9.md — RL/MARL source in the Cemini research corpus
 - @sources/scaling-roadmap-research.md — RL/MARL source in the Cemini research corpus
 - @sources/signa.md — RL/MARL source in the Cemini research corpus
@@ -174,9 +186,9 @@ updated: 2026-04-26
 
 ## Raw Concept
 
-Hub page for the reinforcement-learning and multi-agent-systems cluster of the Cemini research corpus. The corpus skews heavily RL/MARL (80 sources — the dominant cluster at bootstrap). Most are internal Cemini research audits prescribing MAPPO-based multi-agent architectures for the trading stack, alongside academic papers on reward shaping, curriculum learning, action masking, and heterogeneous-agent coordination.
+Hub page for the reinforcement-learning and multi-agent-systems cluster of the Cemini research corpus. The corpus skews heavily RL/MARL (86 sources — the dominant cluster at bootstrap; +6 from O 2026-04-27 inbox bootstrap adding `autonomous-ai-agents-for-option-hedging`, `controlled-study-of-multi-agent-debate-in-logical-reasoning`, `deep-hedging-with-reinforcement-learning`, `evonash-marl`, `hi-darts`, `regret-driven-portfolios` — note that `controlled-study-of-multi-agent-debate-...` is technically an LLM-debate paper but the cluster router fired on the literal "multi-agent" keyword first; manual re-cluster acceptable on deep read). Most are internal Cemini research audits prescribing MAPPO-based multi-agent architectures for the trading stack, alongside academic papers on reward shaping, curriculum learning, action masking, and heterogeneous-agent coordination.
 
-This page exists as a discovery index — it gives the 80 sources at least one inbound reference and makes the cluster navigable. Pages should be individually deep-read before their findings are promoted to concept or entity pages.
+This page exists as a discovery index — it gives the 86 sources at least one inbound reference and makes the cluster navigable. Pages should be individually deep-read before their findings are promoted to concept or entity pages.
 
 ## Narrative
 
