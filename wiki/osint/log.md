@@ -8,6 +8,55 @@ Newest entries on top.
 
 ---
 
+## [2026-04-27] ingest | F2 + P: Exa forward-looking briefs for SPY / QQQ / IWM — completes F sweep at 30/30 + closes server gap
+
+Two-part task — the user message ("do F2, also the server cant find the spy qqq and iwm reports") consolidated into a single ingest because both halves resolve through the same 4 deliverables.
+
+### F2 — Exa forward-looking briefs (3 new)
+
+Closes the F sweep at **30 / 30 indexed tickers covered**. Same shape as the 27 prior F briefs (`briefs/2026-04-26_<symbol>-exa-deep-dive.md`): `web_search_advanced_exa` with `numResults=6`, `startPublishedDate=2026-01-26`, summary + highlights enabled, news category. The 3 index ETFs reframe the 6-section template around macro/Fed/sector-aggregation overlays rather than single-name earnings cycles.
+
+- `briefs/2026-04-27_spy-exa-deep-dive.md` — anchors on the **April 28–May 2 super-week** (FOMC Apr 29 + MSFT/GOOGL/AMZN/META Wed PM + AAPL Thu PM + Q1 GDP first read + core PCE all in same 72h, ~⅓ of S&P 500 market cap reporting); FactSet Q1 update [Source: insight.factset.com 2026-04-17] confirms 88% beat, +13.2% blended EPS, **forward 12-month P/E 20.9x** (above 5/10-yr avgs); central new datum: **ex-NVIDIA Mag 7 expected to lag the other 493 in 2026** — first time the concentration trade fragments bottom-up. Cleveland Fed Inflation Nowcast trajectory (3.28% → 3.58% in 15 days) is the bear-case fuel.
+- `briefs/2026-04-27_qqq-exa-deep-dive.md` — anchors on **April 29 hyperscaler cluster** as the most binary cross-asset event of next 90 days. Hard-locks 2026 capex at **$645–720B** across MSFT + GOOGL + AMZN + META + ORCL (~2% of US GDP, +56% YoY). Cycle pivot: "spend to grow" → "spend with visible returns" [Source: fxstreet.com 2026-04-22]; AInvest productivity-paradox J-curve (78% individual gains / 80% no bottom-line improvement) [Source: ainvest.com 2026-04-11]. MSFT central case: Q1 capex ~$35B (+74% YoY), FY revenue ~$81.4B, EPS ~$4.04, Azure +38% / AI 21.4% mix. AMZN central case: capex/sales ratio jumps **10% → 17%** ($74B → $134B). Internal Mag 7 dispersion is the new narrative axis (Motley Fool 2026-04-25 calls MSFT + GOOGL "growth capex" / META + ORCL + AMZN "maintenance capex").
+- `briefs/2026-04-27_iwm-exa-deep-dive.md` — anchors on **bifurcated narrative-conflict from the same Wedbush MarketMinute desk**: bull case (5 of 6 results) is "The Great Rotation" — IWM +12% YTD vs. SPY +1.5%, longest small-cap outperformance streak since 1996, 18% single-week surge Feb-13 on cool-CPI, **40% floating-rate debt** = rate-cut leverage; bear case (1 of 6) is the **"$1.35 Trillion Wall"** — $368B 2026 maturity wave, 2021-issuance refinancing 1-2% → 6.5-8% coupons (+150–200 bps shock), 40% of Russell 2000 unprofitable. Both narratives are alive as of late April 2026; April 29 FOMC + April 30 PCE 48-hour window resolves the regime.
+
+### P — Server distribution (4 files scp'd)
+
+User-flagged: "the server cant find the spy qqq and iwm reports." Diagnosis from prior session: server `tickers.json` was already correct (SPY/QQQ/IWM in `active_tickers` + `categories.indices`); only `research_wiki/entities/tickers/{spy,qqq,iwm}.md` were missing. Same shape as the 2026-04-26 ada/avax/link distribution precedent.
+
+`scp` to `/opt/cemini/briefs/`:
+1. `ticker-spy-2026-04-27.md` (50,648 bytes — full Gemini DR ticker page payload)
+2. `ticker-qqq-2026-04-27.md` (50,664 bytes)
+3. `ticker-iwm-2026-04-27.md` (47,339 bytes)
+4. `2026-04-27_ticker-distribution-spy-qqq-iwm.md` (3,762 bytes — meta-brief documenting install paths, body-divergence note, already-correct `tickers.json` confirmation)
+
+Server-Claude session installs the 3 payloads at `/opt/cemini/research_wiki/entities/tickers/{spy,qqq,iwm}.md` (drop `ticker-` prefix and `-2026-04-27` date suffix). Either full-Gemini-DR-body verbatim (BTC precedent) or skeleton (ETH/SOL/DOGE precedent) is consistent with the body-divergence doctrine — server-Claude's call.
+
+### Watchlist updates
+
+`wiki/entities/ticker-watchlist.md`:
+- 3 cells flipped from "_pending (Exa sweep deferred)_" → ✅ links to the new F2 briefs.
+- Closing-paragraph progress bumped **27 / 30 → 30 / 30 indexed tickers covered**; the closing cross-cycle-reads list extended with the new index-cohort overlay (SPY ↔ QQQ ↔ IWM as Mag-7 / AI-capex / small-cap-credit triangulation); the 3-ETF reframing approach (macro/Fed/sector-aggregation overlay) documented inline.
+- `updated:` left at 2026-04-27 (already current).
+
+### Cross-asset framing
+
+The 30 / 30 close means the watchlist now has parallel single-name and index-aggregate coverage. The April 29 super-week is the single most binary cross-asset window in the watchlist's history — hits 5 of the 30 tickers directly (MSFT, GOOGL, AMZN, META, AAPL) and the 3 index ETFs aggregately, plus FOMC + GDP + PCE in the same 72-hour stack. The QQQ brief explicitly threads through the 4 prior F briefs covering the hyperscalers; the SPY brief threads through the FactSet ex-NVIDIA-Mag 7-lag dispersion (cross-references all 6 hyperscaler F briefs); the IWM brief stays intentionally rotation-vs-credit-wall on its own narrative axis (only thin overlap with SOFI as the watchlist's lone direct rate-sensitive consumer-credit play).
+
+### Lint
+
+Lint clean (~360 pages, 0 orphans, 0 bidir gaps, 0 dangling). Briefs are gitignored — no lint impact.
+
+### ROADMAP
+
+`F2` row removed from "Next session" (was the only remaining entry); merged with `P` into a single "Done" row. "Next session — break-and-resume" now empty.
+
+### Pattern note
+
+This is the second time a user-facing complaint about server gap state ("server cant find X") resolved purely through the existing distribution-brief pattern. The pattern is now well-precedented (ada/avax/link 2026-04-26 + spy/qqq/iwm 2026-04-27): when workspace `wiki/entities/tickers/` advances past server `research_wiki/entities/tickers/`, the catch-up isn't a config diff or a script run — it's a meta-distribution brief + scp of the workspace ticker pages as `ticker-<sym>-<date>.md` payloads. The server-Claude session takes it from there.
+
+---
+
 ## [2026-04-27] ingest | O: 21 inbox-residue research PDFs stub-bootstrapped — 226 → 247 canonical sources
 
 Follow-up to **N**: with the SPY/QQQ/IWM ticker reports indexed and the watchlist at 30 / 30, the remaining 21 PDFs from the same inbox drop got the stub-bootstrap treatment, matching the **2026-04-23 corpus-bootstrap precedent** (230 stubs, first-page extraction, `maturity: draft`, `read status: unread-stub`). These are heterogeneous quant / option-pricing / hedging / LLM-reasoning papers — none belong with the curated ticker reports, but all are research-relevant enough to belong in the corpus rather than rotting in an inbox.
