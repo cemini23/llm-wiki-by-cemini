@@ -152,9 +152,16 @@ for rec in data:
     pages = rec.get("pages")
     pages_str = f"{pages}p" if pages else "—"
 
+    # YAML-safe title: wrap in single quotes (escape internal `'` by doubling
+    # per YAML spec). Necessary because raw extracted titles often contain
+    # `:` characters; plain-scalar YAML interprets the second colon as a
+    # mapping-key delimiter and breaks frontmatter parsing. Single-quote YAML
+    # preserves smart quotes / unicode / colons verbatim.
+    title_yaml = "'" + title.replace("'", "''") + "'"
+
     frontmatter = (
         "---\n"
-        f"title: {json.dumps(title, ensure_ascii=False)[1:-1]}\n"
+        f"title: {title_yaml}\n"
         "type: source\n"
         f"tags: [{', '.join(tags)}]\n"
         f"keywords: [{', '.join(keywords)}]\n"

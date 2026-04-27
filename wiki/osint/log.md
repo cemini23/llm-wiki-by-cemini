@@ -8,6 +8,26 @@ Newest entries on top.
 
 ---
 
+## [2026-04-27] structural | Q-tail: preventative fix for YAML-title-colon bug at the source
+
+Closes the Q follow-up loop. Both `scripts/bootstrap_inbox.py` (line 213, removed) and `scripts/generate_stubs.py` (line 157, removed) constructed YAML title lines via `f"title: {json.dumps(title, ensure_ascii=False)[1:-1]}\n"` — strips the JSON wrapper quotes leaving a YAML "plain scalar". Plain scalars cannot contain `:` characters; titles with embedded colons (very common — "X: A Y", "X: From Y to Z") broke `yaml.safe_load` on the resulting frontmatter and silently dropped those sources from any tooling that scans tags via parsed YAML.
+
+Fix: replace the `json.dumps[1:-1]` line with a proper YAML single-quote scalar:
+
+```python
+title_yaml = "'" + title.replace("'", "''") + "'"
+# ...
+f"title: {title_yaml}\n"
+```
+
+Single-quote YAML preserves colons, smart quotes, unicode, and most punctuation verbatim; only the single quote itself needs escaping (doubled per spec). Round-trip identity verified against the same five problematic titles that broke pre-Q (curly quotes, embedded apostrophes, multi-colon stacks).
+
+Also removed unused `import json` from `bootstrap_inbox.py` (was only referenced in the just-removed dumps call). `generate_stubs.py` keeps the import — it still uses `json.loads` for the corpus-cache file.
+
+Future bootstrap runs into `wiki/sources/` will now produce parseable frontmatter on the first pass; `wiki_lint.py` and `build_cluster_hubs.py` won't need a remedial bulk-fix sweep.
+
+---
+
 ## [2026-04-27] ingest | Q: 4 corpus-index hubs (quant-finance, market-microstructure, portfolio-strategy, options-derivatives) — 120 sources cross-linked + 58 YAML-title parse bugs fixed
 
 Closes the cluster-bootstrap arc (D + D′ pattern → Q): the four remaining tagged-but-hub-less clusters now have index-only discovery hubs with bidirectional backlinks across every member source. Lint clean post-Q: **0 orphans / 0 bidir gaps / 0 dangling / 0 missing @paths** (was 0 / 76 / 0 / 0 immediately pre-Q because the colon-in-title YAML bug suppressed cluster routing for 58 sources).

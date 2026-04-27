@@ -15,7 +15,6 @@ Skips:
   - non-PDF/docx/md files (warn and leave in inbox)
   - files whose target stub already exists (idempotent — leaves source in place)
 """
-import json
 import re
 import shutil
 import sys
@@ -206,11 +205,19 @@ def main():
         if cluster != "uncategorized":
             tags.append(cluster)
 
+        # YAML-safe title: wrap in single quotes (escape internal `'` by doubling
+        # per YAML spec). Necessary because raw extracted titles often contain
+        # `:` characters (e.g. "Cryptographic Verification ... Due Diligence:
+        # A Technical Audit Report"); plain-scalar YAML interprets the second
+        # colon as a mapping-key delimiter and breaks frontmatter parsing.
+        # Single-quote YAML preserves smart quotes / unicode / colons verbatim.
+        title_yaml = "'" + title.replace("'", "''") + "'"
+
         # NOTE: we intentionally produce `related: []` here — hub backlinks
         # get added in a follow-up edit (matching the 229-stub precedent).
         frontmatter = (
             "---\n"
-            f"title: {json.dumps(title, ensure_ascii=False)[1:-1]}\n"
+            f"title: {title_yaml}\n"
             "type: source\n"
             f"tags: [{', '.join(tags)}]\n"
             f"keywords: [{', '.join(keywords)}]\n"
