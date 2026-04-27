@@ -12,19 +12,20 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 ## Now — current session (2026-04-27)
 
-*(empty — M shipped; see Done.)*
+*(empty — M + N shipped; see Done.)*
 
 ## Next session — break-and-resume
 
 | Item | Status | Model | Notes |
 |---|---|---|---|
-| _(F shipped — closed below in Done)_ | — | — | SPY / QQQ / IWM Exa briefs remain implicitly queued behind their Gemini DR baseline pages — not a separate task, will batch with the next DR drop. |
+| **F2** Exa forward-looking briefs for SPY / QQQ / IWM | unblocked (DR baselines landed N) | Sonnet | Run F-style sweep (6-section forward-looking 90-180-day) on the 3 index ETFs. Cross-cycle reads: SPY = S&P aggregate / risk premium, QQQ = AI-capex super-cycle (cluster with GLW ↔ AVGO ↔ NVDA ↔ AMD + 2026-04-29 hyperscaler prints), IWM = small-cap credit-sensitivity (Fed / yield-curve / regional-banking-stress macro factor). Completes the F sweep at 30/30. |
+| **O** Stub-bootstrap for ~21 research PDFs (post-N inbox residue) | queued | Sonnet | User dropped ~21 unrelated research PDFs alongside the SPY/QQQ/IWM reports. Quant / option-pricing / hedging cluster (~14): American-call-option-modular-NN, autonomous-AI-agents-option-hedging, deep-hedging-RL, QQQ-collar-implementations, QQQ-microstructure-2024-08-01, QQQ-Trust-American-options-2024-11-21, regret-driven-portfolios, rough-martingale-OT, push-response-anomalies-SP500, three-dim-volatility-memory-decomp, bayesian-perspectives, mixed-fractional-models, nonstandard-errors, topological-risk-parity. LLM / agent / reasoning cluster (~6): multi-agent-debate-logical-reasoning, ESGLens, EvoNash-MARL, Hi-DARTS, TrigReason, test-time-adaptation-non-stationary-time-series. Plus 1-page LIGO mystery (categorize on first peek). Establish: stubs (frontmatter + 1-line narrative + cluster-hub backlink) per the 230-stub precedent — deep reads organic. |
 
 ## Soon — small carryover items
 
 | Item | Status | Notes |
 |---|---|---|
-| Index SPY, QQQ, IWM ticker reports | blocked on user drop | When user drops `SPY <date>.docx` etc. into `research to be indexed/`, run `scripts/index_tickers.py`. Completes watchlist 30/30. |
+| ~~Index SPY, QQQ, IWM ticker reports~~ | ✅ closed (N, this session) | Completes watchlist 30/30. |
 | ~~Deep-read `wiki/sources/3-10-cryptographic-research.md`~~ | ✅ closed (J, `4d4139a`) | Promoted to validated; prescribed-vs-deployed reframe landed in concept page. |
 
 ## Eventually — larger / structural
@@ -61,6 +62,7 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 | Item | Commit | Notes |
 |---|---|---|
+| **N** SPY / QQQ / IWM Gemini DR baselines indexed | _(pending — see post-commit SHA stamp)_ | Closes the long-standing "Soon" row blocked on user drop. 3 entity pages written via `scripts/index_tickers.py` (TODAY constant bumped 04-24 → 04-27); IWM docx renamed in-place from `iShares Russell 2000 ETF 4_27.docx`; LIGO file renamed `LIGO` → `LIGO.pdf`. Watchlist + index updates flip rows from `_pending_` → ✅; progress narrative bumped 27/30 → **30 / 30**; Exa-brief progress recalibrated to 27/30 (denominator grew). Lint clean (334 pages +3, 1114 edges +6 — bidir watchlist links). Cross-asset framing: SPY = market aggregate, QQQ = AI-capex super-cycle (cluster with GLW/AVGO/NVDA/AMD + 04-29 hyperscaler prints), IWM = small-cap credit-sensitivity (distinct macro factor). Follow-ups queued: F2 Exa sweep on the 3 ETFs + O stub-bootstrap for the ~21 quant / LLM-agent research PDFs dropped alongside. |
 | **M** Obsidian community plugins + `markdown-link-check` CI | `5b9185d` | After tool-survey turn (Graphify rejected as too heavy; lean librarian aesthetic preserved). User-side: vendored **Obsidian Linter v1.31.2** + **Omnisearch v1.28.2** under `.obsidian/plugins/` (gitignored — user enables in Settings → Community plugins after restart). CI-side: new `.github/workflows/links.yml` (monthly cron + manual dispatch only — NOT push, to avoid flaky external-HTTP-call gating) + `.markdown-link-check.json` config. Version pin gotcha: `markdown-link-check@3.13.6` has a `-c <config>` regression that exits 1 silently — pinned to `3.12.2`. Dead-link counter uses `→ Status:` (not `[✖]`, which is double-emitted). Excludes `.obsidian/` plugin trees from scan. |
 | **F** Per-ticker Exa forward-looking deep-dive briefs | `6fcc29e` | Full 27/27 sweep — `briefs/2026-04-26_<symbol>-exa-deep-dive.md` (gitignored). 6-section forward-looking 90-180-day supplement to each Gemini DR baseline at `wiki/entities/tickers/<symbol>.md`. Method: Exa `web_search_advanced_exa` with `startPublishedDate=2026-01-26`, `numResults=6`, summary + highlights enabled. Crypto-native (7) reframed around protocol / ETF / cycle catalysts (no earnings cycle); equities (20) retain standard earnings-cycle framing. Cross-cycle reads explicitly threaded: April 29 hyperscaler-capex cluster (AMZN+GOOGL+META+SOFI), AI-infra cycle (GLW↔AVGO↔NVDA↔AMD), sovereign-defense-AI (PL↔ASTS↔PLTR↔AMZN-Anthropic), streaming-ad (NFLX↔DIS), crypto-equity (COIN↔MSTR), L1-ETF roadmap (BTC→ETH→SOL→ADA/AVAX/LINK). Watchlist updated with new Exa-brief column. Lint clean. SPY/QQQ/IWM blocked on Gemini DR baseline. |
 | ROADMAP.md created | `526b174` | Forward-looking project plan; companion to `wiki/log.md` (chronological) and `LESSONS.md` (meta-lessons). |

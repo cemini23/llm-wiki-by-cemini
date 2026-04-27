@@ -19,6 +19,7 @@ related:
   - entities/tickers/glw.md
   - entities/tickers/googl.md
   - entities/tickers/intc.md
+  - entities/tickers/iwm.md
   - entities/tickers/link.md
   - entities/tickers/meta.md
   - entities/tickers/msft.md
@@ -27,9 +28,11 @@ related:
   - entities/tickers/nvda.md
   - entities/tickers/pl.md
   - entities/tickers/pltr.md
+  - entities/tickers/qqq.md
   - entities/tickers/smci.md
   - entities/tickers/sofi.md
   - entities/tickers/sol.md
+  - entities/tickers/spy.md
   - entities/tickers/tsla.md
   - entities/platforms/polygon.md
   - entities/infrastructure/yfinance.md
@@ -72,6 +75,7 @@ Per-ticker entity pages (reports committed as of 2026-04-25):
 - @entities/tickers/glw.md — GLW (added 2026-04-24)
 - @entities/tickers/googl.md — GOOGL
 - @entities/tickers/intc.md — INTC (added 2026-04-24)
+- @entities/tickers/iwm.md — IWM (added 2026-04-27)
 - @entities/tickers/link.md — LINK (added 2026-04-25)
 - @entities/tickers/meta.md — META
 - @entities/tickers/msft.md — MSFT
@@ -80,9 +84,11 @@ Per-ticker entity pages (reports committed as of 2026-04-25):
 - @entities/tickers/nvda.md — NVDA
 - @entities/tickers/pl.md — PL (added 2026-04-24)
 - @entities/tickers/pltr.md — PLTR
+- @entities/tickers/qqq.md — QQQ (added 2026-04-27)
 - @entities/tickers/smci.md — SMCI
 - @entities/tickers/sofi.md — SOFI (added 2026-04-24)
 - @entities/tickers/sol.md — SOL (added 2026-04-24)
+- @entities/tickers/spy.md — SPY (added 2026-04-27)
 - @entities/tickers/tsla.md — TSLA
 
 Cross-cutting concept pages organizing the watchlist:
@@ -132,9 +138,9 @@ Per-ticker equity research reports are being commissioned via the Gemini Deep Re
 
 | Category | Symbol | Report (Gemini DR baseline) | Exa forward-looking brief (2026-04-26) |
 |---|---|---|---|
-| Indices | SPY | _pending_ | _pending (blocked on DR baseline)_ |
-| Indices | QQQ | _pending_ | _pending (blocked on DR baseline)_ |
-| Indices | IWM | _pending_ | _pending (blocked on DR baseline)_ |
+| Indices | SPY | ✅ [spy.md](tickers/spy.md) (2026-04-27) | _pending (Exa sweep deferred)_ |
+| Indices | QQQ | ✅ [qqq.md](tickers/qqq.md) (2026-04-27) | _pending (Exa sweep deferred)_ |
+| Indices | IWM | ✅ [iwm.md](tickers/iwm.md) (2026-04-27) | _pending (Exa sweep deferred)_ |
 | Mega cap | AAPL | ✅ [aapl.md](tickers/aapl.md) (2026-04-23) | ✅ [briefs/2026-04-26_aapl-exa-deep-dive.md](../../briefs/2026-04-26_aapl-exa-deep-dive.md) |
 | Mega cap | MSFT | ✅ [msft.md](tickers/msft.md) (2026-04-23) | ✅ [briefs/2026-04-26_msft-exa-deep-dive.md](../../briefs/2026-04-26_msft-exa-deep-dive.md) |
 | Mega cap | NVDA | ✅ [nvda.md](tickers/nvda.md) (2026-04-23) | ✅ [briefs/2026-04-26_nvda-exa-deep-dive.md](../../briefs/2026-04-26_nvda-exa-deep-dive.md) |
@@ -163,9 +169,9 @@ Per-ticker equity research reports are being commissioned via the Gemini Deep Re
 | Mega cap | INTC | ✅ [intc.md](tickers/intc.md) (2026-04-24) | ✅ [briefs/2026-04-26_intc-exa-deep-dive.md](../../briefs/2026-04-26_intc-exa-deep-dive.md) |
 | Fintech | SOFI | ✅ [sofi.md](tickers/sofi.md) (2026-04-24) | ✅ [briefs/2026-04-26_sofi-exa-deep-dive.md](../../briefs/2026-04-26_sofi-exa-deep-dive.md) |
 
-**Progress**: 27 / 30 indexed (2026-04-25 ingest: ADA, AVAX, LINK added — completes the 7-coin crypto-native bench. Filename convention reminder: `<TICKER> <date>.docx`, not company-name or leading-underscore/parens forms; the regex in `scripts/index_tickers.py` expects a leading uppercase token. ADA dropped as `_(ADA)3_24.docx`, renamed in-place before re-running. Remaining pending: SPY, QQQ, IWM — the three index ETFs). 2026-04-24 watchlist rebalance (even +5 / −5 swap, size preserved at 30): **added** ASTS, GLW, INTC, PL, SOFI; **removed** MARA, JPM, BAC, GS, UBER (UBER's entity page deleted; source docx `UBER 3_24.docx` retained in `research for cemini/` as historical record). Drop new reports into `research to be indexed/` as `<SYMBOL> <date>.docx`, then ask Claude to index them. The ingest workflow: extract docx → create `wiki/entities/tickers/<symbol>.md` → flip this table's row → move source docx into `research for cemini/`.
+**Progress**: **30 / 30 indexed** (2026-04-27 ingest: SPY, QQQ, IWM added — completes the 3 index ETFs and closes the watchlist universe). Prior milestones: 2026-04-25 ingest added ADA, AVAX, LINK (completing the 7-coin crypto-native bench). Filename-convention reminder: `<TICKER> <date>.docx`, not company-name or leading-underscore/parens forms; the regex in `scripts/index_tickers.py` expects a leading uppercase token. The IWM report dropped as `iShares Russell 2000 ETF 4_27.docx` and was renamed in-place to `IWM 4_27.docx` before running. ADA had previously needed the same fix from `_(ADA)3_24.docx`. 2026-04-24 watchlist rebalance (even +5 / −5 swap, size preserved at 30): **added** ASTS, GLW, INTC, PL, SOFI; **removed** MARA, JPM, BAC, GS, UBER (UBER's entity page deleted; source docx `UBER 3_24.docx` retained in `research for cemini/` as historical record). Drop new reports into `research to be indexed/` as `<SYMBOL> <date>.docx`, then ask Claude to index them. The ingest workflow: extract docx → create `wiki/entities/tickers/<symbol>.md` → flip this table's row → move source docx into `research for cemini/`.
 
-**Exa forward-looking brief progress** (2026-04-26): **27 / 27 indexed tickers covered** via the ROADMAP F sweep — `briefs/2026-04-26_<symbol>-exa-deep-dive.md`. Each is a 6-section forward-looking 90-180-day supplement to the Gemini DR baseline at `wiki/entities/tickers/<symbol>.md`. Window: Exa `web_search_advanced_exa` with `startPublishedDate=2026-01-26`. The 7 crypto-natives reframe the 6-section template around protocol / ETF / cycle catalysts (no earnings cycle); the 20 equity tickers retain the standard earnings-cycle framing. Cross-cycle reads explicitly threaded through: April 29 hyperscaler-capex cluster (AMZN + GOOGL + META + SOFI), AI-infra cycle (GLW ↔ AVGO ↔ NVDA ↔ AMD), sovereign-defense-AI cycle (PL ↔ ASTS ↔ PLTR ↔ AMZN-Anthropic), streaming-ad cycle (NFLX ↔ DIS), crypto-equity cycle (COIN ↔ MSTR), and L1-ETF roadmap (BTC → ETH → SOL → ADA/AVAX/LINK). SPY/QQQ/IWM remain blocked on Gemini DR baseline; their Exa briefs will follow once the DR pages land.
+**Exa forward-looking brief progress** (2026-04-26): **27 / 30 indexed tickers covered** via the ROADMAP F sweep — `briefs/2026-04-26_<symbol>-exa-deep-dive.md`. Each is a 6-section forward-looking 90-180-day supplement to the Gemini DR baseline at `wiki/entities/tickers/<symbol>.md`. Window: Exa `web_search_advanced_exa` with `startPublishedDate=2026-01-26`. The 7 crypto-natives reframe the 6-section template around protocol / ETF / cycle catalysts (no earnings cycle); the 20 equity tickers retain the standard earnings-cycle framing. Cross-cycle reads explicitly threaded through: April 29 hyperscaler-capex cluster (AMZN + GOOGL + META + SOFI), AI-infra cycle (GLW ↔ AVGO ↔ NVDA ↔ AMD), sovereign-defense-AI cycle (PL ↔ ASTS ↔ PLTR ↔ AMZN-Anthropic), streaming-ad cycle (NFLX ↔ DIS), crypto-equity cycle (COIN ↔ MSTR), and L1-ETF roadmap (BTC → ETH → SOL → ADA/AVAX/LINK). **SPY / QQQ / IWM Exa briefs remain pending** — DR baselines now exist (2026-04-27), so the F-style sweep can run on them as a follow-up; the index-ETF cohort is the natural cross-asset macro overlay (SPY = aggregate market, QQQ = AI-capex super-cycle, IWM = small-cap credit-sensitivity / Russell 2000 macro).
 
 ### Notes
 

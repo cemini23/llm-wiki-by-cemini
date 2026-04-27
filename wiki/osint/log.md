@@ -8,6 +8,36 @@ Newest entries on top.
 
 ---
 
+## [2026-04-27] ingest | N: SPY / QQQ / IWM Gemini DR baselines indexed — watchlist completes at 30 / 30
+
+User dropped `SPY 3_27.docx`, `QQQ 4_27.docx`, and `iShares Russell 2000 ETF 4_27.docx` into `research to be indexed/` along with ~21 unrelated research PDFs (queued separately for stub-bootstrap as a follow-up). The three index-ETF Gemini Deep Research reports close the previously-blocked **Soon** row and bring the **30 / 30 indexed** milestone home.
+
+**Pre-flight fixes**:
+- `iShares Russell 2000 ETF 4_27.docx` → renamed in-place to `IWM 4_27.docx` (script regex `^[A-Z]+\s` requires leading uppercase symbol; multi-word company-name forms get skipped). Same fix pattern as the 2026-04-25 `_(ADA)3_24.docx` rename.
+- `LIGO` (extension-less PDF) → renamed to `LIGO.pdf` for clarity. Stays in inbox awaiting categorization (1-page document).
+- `scripts/index_tickers.py`: `TODAY` constant bumped 2026-04-24 → 2026-04-27 so generated frontmatter stamps the actual ingest date.
+
+**Ingest output** (3 entity pages, ~150 KB total — all H1s confirm full-report content, not stubs):
+- `wiki/entities/tickers/spy.md` (50 KB) — _The S&P 500 in 2026: Pricing Perfection Amidst Structural Evolution_ (189 paragraphs)
+- `wiki/entities/tickers/qqq.md` (51 KB) — _The Invesco QQQ Trust (QQQ): Analyzing the Nasdaq-100, AI Capex Super-Cycle, and Concentration Risks_ (183 paragraphs). Note: the `.docx` weighed 39 KB on disk vs. SPY/IWM at ~3 MB; investigated and confirmed false-alarm — full content present, just better-compressed.
+- `wiki/entities/tickers/iwm.md` (47 KB) — _iShares Russell 2000 ETF (IWM): Structural Vulnerabilities, Credit Sensitivities, and the Reality of the U.S. Small-Cap Macroeconomic Landscape_ (157 paragraphs)
+
+Source `.docx` files moved from `research to be indexed/` → `research for cemini/` per the ingest workflow.
+
+**Cross-asset framing** (the index-ETF cohort is the natural macro overlay across the watchlist): SPY = aggregate-market / S&P 500 risk premium reference; QQQ = AI-capex super-cycle exposure (correlated with the watchlist's GLW ↔ AVGO ↔ NVDA ↔ AMD AI-infra cluster + the 2026-04-29 hyperscaler print cluster); IWM = small-cap credit-sensitivity (Fed-policy / yield-curve / regional-banking-stress proxy — distinct macroeconomic factor not represented elsewhere in the watchlist's mega-cap-and-crypto-heavy universe).
+
+**Watchlist + index updates**:
+- `entities/ticker-watchlist.md`: 3 new `related:` entries (frontmatter + Relations narrative); report-status table rows for SPY/QQQ/IWM flipped from `_pending_` → `✅ [tickers/<sym>.md] (2026-04-27)` for the DR-baseline column. Exa-brief column kept at `_pending (Exa sweep deferred)_` — that's a follow-up. Progress narrative rewritten **27 / 30 → 30 / 30** with cohort-completion note. Exa-progress narrative bumped to **27 / 30** (was 27/27 — the denominator just grew).
+- `index.md`: 3 new ticker entries inserted alphabetically (between INTC and LINK; between PLTR and SMCI; between SOL and TSLA). Watchlist link description bumped 24/30 (stale) → **30/30 as of 2026-04-27**.
+
+**Lint**: 0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing. Pages 331 → **334** (+3); edges 1108 → **1114** (+6, two bidir per ticker × 3 = 6 expected). Cited-unread holds at 217.
+
+**Pending follow-ups**:
+1. **F-style Exa sweep on SPY / QQQ / IWM** — same 6-section forward-looking 90-180-day pattern as the F sweep, now unblocked. Index-ETF cohort gets its own cross-cycle reads thread (SPY → S&P aggregate, QQQ → AI-capex super-cycle, IWM → small-cap-credit). Roadmap sub-row.
+2. **Stub-bootstrap for ~21 research PDFs** dropped alongside the ticker reports — quant / option pricing / hedging cluster (~14 PDFs), LLM / agent / reasoning cluster (~6 PDFs), one mystery 1-page LIGO PDF. Will bootstrap as `wiki/sources/` stubs following the established 230-stub pattern (frontmatter + 1-line narrative + cluster-hub backlink); deep reads happen organically as queries surface them.
+
+**Files**: 3 new entity pages, 3 modified (`wiki/entities/ticker-watchlist.md`, `wiki/index.md`, `scripts/index_tickers.py`); 3 source `.docx` moved to corpus.
+
 ## [2026-04-27] tooling | M: Obsidian community plugins + markdown-link-check CI — install pass after Graphify/tool-survey
 
 Resolves the tool-survey follow-up to the Graphify research turn. The survey returned three "Try" candidates worth installing (over Graphify itself, which was rejected as too heavy for a lean librarian aesthetic — Graph view + Dataview already cover its niche). Two are user-side Obsidian community plugins; one is a CI link-checker.

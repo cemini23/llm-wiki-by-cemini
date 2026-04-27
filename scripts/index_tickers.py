@@ -11,7 +11,7 @@ import docx
 INBOX = Path("/Users/claudiobarone/Desktop/OSINT WORKSPACE/research to be indexed")
 CORPUS = Path("/Users/claudiobarone/Desktop/OSINT WORKSPACE/research for cemini")
 TICKERS_DIR = Path("/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki/entities/tickers")
-TODAY = "2026-04-24"
+TODAY = "2026-04-27"
 
 # ticker metadata (category from ticker-watchlist.md; extended 2026-04-24 for ASTS/GLW/INTC/PL)
 CATEGORY = {

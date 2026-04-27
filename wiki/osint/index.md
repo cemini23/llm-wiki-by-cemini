@@ -285,7 +285,7 @@ Total: **226 canonical stubs** (144 PDF + 80 docx + 2 md). **3** canonical pages
 Tickers, companies, people, facilities, organizations — concrete things the research is about.
 
 ### Reference / infrastructure
-- [Ticker Watchlist](entities/ticker-watchlist.md) — 30-symbol CeminiSuite active watchlist (23 equities + 7 crypto); tracks per-ticker report progress (**24 / 30 indexed**) — reference, canonical-source
+- [Ticker Watchlist](entities/ticker-watchlist.md) — 30-symbol CeminiSuite active watchlist (23 equities + 7 crypto); tracks per-ticker report progress (**30 / 30 indexed** as of 2026-04-27) — reference, canonical-source
 
 ### Per-ticker reports (Gemini Deep Research template, validated)
 
@@ -306,6 +306,7 @@ Six-section institutional template: Business Overview · Competitive Landscape �
 - [Corning (GLW)](entities/tickers/glw.md) — industrials (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
 - [Alphabet (GOOGL)](entities/tickers/googl.md) — mega cap — ticker-report, gemini-deep-research
 - [Intel (INTC)](entities/tickers/intc.md) — mega cap (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
+- [iShares Russell 2000 ETF (IWM)](entities/tickers/iwm.md) — indices / small-cap (indexed 2026-04-27) — ticker-report, gemini-deep-research
 - [Chainlink (LINK)](entities/tickers/link.md) — crypto native (indexed 2026-04-25) — ticker-report, gemini-deep-research
 - [Meta Platforms (META)](entities/tickers/meta.md) — mega cap — ticker-report, gemini-deep-research
 - [Microsoft (MSFT)](entities/tickers/msft.md) — mega cap — ticker-report, gemini-deep-research
@@ -314,9 +315,11 @@ Six-section institutional template: Business Overview · Competitive Landscape �
 - [Nvidia (NVDA)](entities/tickers/nvda.md) — mega cap — ticker-report, gemini-deep-research
 - [Planet Labs (PL)](entities/tickers/pl.md) — space tech (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
 - [Palantir (PLTR)](entities/tickers/pltr.md) — high beta — ticker-report, gemini-deep-research
+- [Invesco QQQ Trust (QQQ)](entities/tickers/qqq.md) — indices / Nasdaq-100 (indexed 2026-04-27) — ticker-report, gemini-deep-research
 - [Super Micro Computer (SMCI)](entities/tickers/smci.md) — high beta — ticker-report, gemini-deep-research
 - [SoFi Technologies (SOFI)](entities/tickers/sofi.md) — fintech (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
 - [Solana (SOL)](entities/tickers/sol.md) — crypto native — ticker-report, gemini-deep-research
+- [SPDR S&P 500 ETF (SPY)](entities/tickers/spy.md) — indices / S&P 500 (indexed 2026-04-27) — ticker-report, gemini-deep-research
 - [Tesla (TSLA)](entities/tickers/tsla.md) — high beta — ticker-report, gemini-deep-research
 
 ### Platforms & venues
