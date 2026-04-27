@@ -10,9 +10,9 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 ---
 
-## Now — current session (2026-04-26)
+## Now — current session (2026-04-27)
 
-*(empty — F shipped; see Done.)*
+*(empty — M shipped; see Done.)*
 
 ## Next session — break-and-resume
 
@@ -48,6 +48,7 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 | Item | Priority | Notes |
 |---|---|---|
 | ~~`.github/workflows/lint.yml`~~ | ✅ shipped as B′ (`33aca6c`) | Runs `wiki_lint.py` on push + weekly Mon 12:00 UTC cron + manual dispatch. Informational, non-gating. |
+| ~~`.github/workflows/links.yml`~~ | ✅ shipped as M | Runs `tcort/markdown-link-check@3.12.2` against `wiki/` + `briefs/` + root `.md` on monthly cron + manual dispatch only (NOT push — external HTTP rate-limit risk). Informational, non-gating. Config at `.markdown-link-check.json`. |
 | ~~Pre-commit hook (local)~~ | ✅ shipped as B′ (`33aca6c`) | `scripts/pre-commit.sh` blocks server IP / `.env*` / `.DS_Store` / `sk-…` API keys in staged additions. Install with `bash scripts/install-hooks.sh`. |
 | GitHub Issues for roadmap items | low | Could mirror this file as Issues. Overkill for a one-person project right now. Revisit if the roadmap grows past ~20 items. |
 | Dependabot / Renovate | skip | No `requirements.txt` to watch. |
@@ -60,6 +61,7 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 
 | Item | Commit | Notes |
 |---|---|---|
+| **M** Obsidian community plugins + `markdown-link-check` CI | _(pending — see post-commit SHA stamp)_ | After tool-survey turn (Graphify rejected as too heavy; lean librarian aesthetic preserved). User-side: vendored **Obsidian Linter v1.31.2** + **Omnisearch v1.28.2** under `.obsidian/plugins/` (gitignored — user enables in Settings → Community plugins after restart). CI-side: new `.github/workflows/links.yml` (monthly cron + manual dispatch only — NOT push, to avoid flaky external-HTTP-call gating) + `.markdown-link-check.json` config. Version pin gotcha: `markdown-link-check@3.13.6` has a `-c <config>` regression that exits 1 silently — pinned to `3.12.2`. Dead-link counter uses `→ Status:` (not `[✖]`, which is double-emitted). Excludes `.obsidian/` plugin trees from scan. |
 | **F** Per-ticker Exa forward-looking deep-dive briefs | `6fcc29e` | Full 27/27 sweep — `briefs/2026-04-26_<symbol>-exa-deep-dive.md` (gitignored). 6-section forward-looking 90-180-day supplement to each Gemini DR baseline at `wiki/entities/tickers/<symbol>.md`. Method: Exa `web_search_advanced_exa` with `startPublishedDate=2026-01-26`, `numResults=6`, summary + highlights enabled. Crypto-native (7) reframed around protocol / ETF / cycle catalysts (no earnings cycle); equities (20) retain standard earnings-cycle framing. Cross-cycle reads explicitly threaded: April 29 hyperscaler-capex cluster (AMZN+GOOGL+META+SOFI), AI-infra cycle (GLW↔AVGO↔NVDA↔AMD), sovereign-defense-AI (PL↔ASTS↔PLTR↔AMZN-Anthropic), streaming-ad (NFLX↔DIS), crypto-equity (COIN↔MSTR), L1-ETF roadmap (BTC→ETH→SOL→ADA/AVAX/LINK). Watchlist updated with new Exa-brief column. Lint clean. SPY/QQQ/IWM blocked on Gemini DR baseline. |
 | ROADMAP.md created | `526b174` | Forward-looking project plan; companion to `wiki/log.md` (chronological) and `LESSONS.md` (meta-lessons). |
 | **A** Crypto concept scaffold + cross-link 7 ticker reports | `4c6aa85` | Created `wiki/concepts/crypto-asset-taxonomy.md` (4 categories: store-of-value, programmable L1, memecoin/PoW, oracle middleware) and `wiki/concepts/oracle-networks.md` (LINK-focused). Added bidirectional `related:` edges across all 7 crypto ticker pages (btc/eth/sol/doge/ada/avax/link), the watchlist, and `wiki/index.md`. Folded original B.3 (ada/avax/link → watchlist backlinks) into this work. Lint clean; orphans 201 → 198. |

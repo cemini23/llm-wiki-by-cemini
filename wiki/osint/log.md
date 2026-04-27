@@ -8,6 +8,28 @@ Newest entries on top.
 
 ---
 
+## [2026-04-27] tooling | M: Obsidian community plugins + markdown-link-check CI — install pass after Graphify/tool-survey
+
+Resolves the tool-survey follow-up to the Graphify research turn. The survey returned three "Try" candidates worth installing (over Graphify itself, which was rejected as too heavy for a lean librarian aesthetic — Graph view + Dataview already cover its niche). Two are user-side Obsidian community plugins; one is a CI link-checker.
+
+**Installed (user-side, vendored under `.obsidian/plugins/`):**
+
+- **Obsidian Linter v1.31.2** (`.obsidian/plugins/obsidian-linter/`) — formats YAML frontmatter / heading spacing / list styles / footnotes. Useful as a hand-on-the-wheel for the schema's frontmatter conventions; complements `scripts/wiki_lint.py` (server-side structural lint) with editor-side cosmetic lint. Plugin id `obsidian-linter` matches dir name (verified via `manifest.json`).
+- **Omnisearch v1.28.2** (`.obsidian/plugins/omnisearch/`) — full-text fuzzy search with ranking. Faster than Obsidian's built-in search on a 333-page corpus + handles the `@path/page.md` reference style better. Plugin id `omnisearch` matches dir name.
+
+Both downloaded directly from GitHub release assets (`platers/obsidian-linter` 1.31.2 and `scambier/obsidian-omnisearch` 1.28.2). `.obsidian/` is gitignored, so these files exist on the local workspace only — they'll **not** commit. **User action required**: open Obsidian → Settings → Community plugins → enable both ("Linter" and "Omnisearch") after restart.
+
+**Installed (CI-side, committed):**
+
+- **`.github/workflows/links.yml`** — new GH Actions workflow running `tcort/markdown-link-check` against `wiki/`, `briefs/`, and root-level `.md` on monthly cron (`0 12 1 * *`) + manual dispatch only. **Not** on push: link checks make external HTTP requests and would create flaky-fail noise that would gate every commit. Modeled on the existing `lint.yml` pattern (informational, non-gating, posts to `$GITHUB_STEP_SUMMARY`). Excludes `.obsidian/` vendored plugin trees from the file scan.
+- **`.markdown-link-check.json`** — config file: ignores `mailto:`, `localhost`, `127.0.0.1`, `file://`, and the `@`-prefixed wiki-internal references (which aren't real URLs). Custom `User-Agent: Mozilla/5.0 (compatible; markdown-link-check)` header for `github.com` (without it, GitHub returns 406 for the bare domain when an over-specific `Accept` header is sent). 30s timeout, 429 retry, accept 200/206/301/302/303/307/308.
+
+**Version pin gotcha**: `markdown-link-check@3.13.6` (latest) has a regression where invocation with `-c <config>` exits 1 silently with no stdout. Reproducible across empty config / minimal config / full config; works fine without `-c`. Falls back to **3.12.2** (last known-good with config support). Workflow YAML pins explicitly: `npm install -g markdown-link-check@3.12.2`. Local test confirmed: 3.12.2 + full config + real wiki file (`marketaux.md`, 3 external links) → exit 0 + all links alive.
+
+**Implementation note** — dead-link counting: the tool emits `[✖]` glyph twice per failure (once inline during scan, once in `ERROR:` summary block). The workflow's `dead_links` counter uses `→ Status:` instead, which appears once per dead link in the summary block only. Avoids double-counting in the step-summary panel.
+
+**Files**: 2 new files committed (`.github/workflows/links.yml`, `.markdown-link-check.json`); 6 files vendored under `.obsidian/plugins/` (gitignored, user-side only); 2 modified (`wiki/log.md`, `ROADMAP.md`).
+
 ## [2026-04-26] ingest | F: Per-ticker Exa forward-looking deep-dive briefs — full 27/27 sweep (ROADMAP F closed)
 
 Resolves the queued **F** roadmap row. Per-ticker forward-looking research briefs were generated for **all 27 indexed tickers** in `wiki/entities/tickers/<symbol>.md` — landing as `briefs/2026-04-26_<symbol>-exa-deep-dive.md`. Each brief is a 6-section forward-looking 90-180-day supplement to the Gemini Deep Research baseline (the DR pages cover the historical baseline; this sweep layers fresh analyst commentary on top). SPY / QQQ / IWM remain pending because their Gemini DR baseline pages haven't landed yet — their Exa briefs will follow once the DR pages land.
