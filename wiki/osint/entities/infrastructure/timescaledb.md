@@ -19,7 +19,7 @@ related:
   - entities/infrastructure/polars.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-26
 ---
 
 ## Relations
@@ -58,9 +58,7 @@ research and crypto-integration audit:
   reduction on forex and equities feeds.
 - **Retention policy** — raw ticks dropped at 180 days; continuous
   aggregates retained indefinitely.
-- **Cryptographic audit integration** — pg_tamperlog extension emits
-  append-only receipts into a sibling schema; those receipts are Merkle-
-  anchored via pymerkle before OpenTimestamps proof generation.
+- **Cryptographic audit integration** — `[RETRACTED 2026-04-24 Track C]` per @concepts/cryptographic-audit-trail.md (J pass) and re-confirmed by K4 + K5 server probes: **pg_tamperlog extension is not installed**, **pymerkle is not in deps**, **OpenTimestamps integration is not deployed**. The architectural-integration claim in this bullet was a wiki synthesis error from prescriptive Cemini-internal blueprints (3-10-cryptographic-research, 3-9-pm-research's VCP/SCITT/Merkle prescription). The TimescaleDB tick-storage layer is real; the cryptographically-anchored audit-trail layer wrapping it is build-spec, not deployed.
 
 ## Snippets
 

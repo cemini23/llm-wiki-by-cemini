@@ -8,6 +8,69 @@ Newest entries on top.
 
 ---
 
+## [2026-04-26] ingest | K5: deep-read 3-9-pm-research — stale-snapshot reframe (source under-counts deployed reality post-2026-03-08; over-claims milestone-ledger artifact backing)
+
+Resolves 7-inbound cited-unread stub at top of L dashboard Section 1 after K4 cleared 3-18-crypto-integration-technical-audit. **First K-series reframe of the *opposite* pattern from K3/K4**: where K3 found "wiki claims more than is built" (Telethon zero-deploy) and K4 found "libraries deployed, architecture not" (Hyperliquid SDK present, Web3.py/Flashbots/AES-GCM absent), K5 finds **"source is 7+ weeks stale and under-counts what's been built post-snapshot, but over-claims artifact backing for the milestone ledger itself."** Both directions of staleness in the same document.
+
+**Source background**: `sources/3-9-pm-research.md` is Cemini's v11.0 project-state document (2026-03-08), 172 paragraphs combining (a) inventory of "currently deployed" Cemini state with (b) four-phase prescriptive build spec (Phase 1 Foundation Hardening, Phase 2 Agent Orchestration + Cryptographic Logging, Phase 3 RL Engine + Deterministic Execution, Phase 4 Hardware Verification + Final Packaging). Headline claim: **18 of 42 strategic roadmap milestones complete**.
+
+**Server ground truth** (`ssh root@hetzner` 2026-04-26, comprehensive multi-probe across container list / Redis pubsub / requirements.txt / code grep / .github workflows):
+
+**Source's "currently deployed" — accurate:**
+- TimescaleDB + pgvector + password-protected Redis pub/sub ✓
+- Pydantic v2 contracts ✓
+- GitHub Actions CI/CD ✓
+- Kalshi engine live (autonomous, WebSockets, RSA-PSS) ✓
+- Trivy + Semgrep dependency auditing ✓
+- IntelPublisher / IntelReader pattern ✓ — confirmed in 6+ files
+- **`intel:*` namespace** ✓✓✓ — **30+ channels enumerated in code** (`intel:agent_weights`, `intel:btc_sentiment`, `intel:btc_spy_corr`, `intel:btc_volume_spike`, `intel:capability_manifest_hash`, `intel:conflict_events`, `intel:conviction_composite`, `intel:debate_rubric`, `intel:debate_verdict`, `intel:earnings_calendar`, `intel:edgar_alert`, `intel:ensemble_signal`, `intel:fed_bias`, `intel:fred_credit_spread`, `intel:fred_fed_policy`, `intel:fred_labor`, `intel:fred_yield_curve`, `intel:fuzzy_scalar`, `intel:fx:calendar`, `intel:fx:carry`, `intel:fx:tick:*`, `intel:geopolitical_risk`, `intel:kalshi_liquidity_spike`, `intel:kalshi_oi`, `intel:kalshi_orderbook_summary`, `intel:llm_signal:*`, `intel:logit_assessments`, `intel:bar`, plus more truncated). **Strongest as-built confirmation in K5; broadens K4's narrower finding** (K4 correctly flagged that `intel:orderbook` / `intel:sentiment` channels specifically don't exist — those names don't, but the family does heavily).
+- "263 automated tests" → server runs **528** (under-count by 2x — 7-week test growth)
+
+**Source's "currently deployed" — stale or wrong:**
+- "approximately 18 Docker containers" → **40** (consistent with K4 finding)
+- "active migration pathway toward Docker Swarm" → `docker info | grep Swarm` returns `Swarm: inactive`. Single-node Hetzner; not Swarm-orchestrated.
+- "5-tab Streamlit dashboard deployed" → in deps + `ui/` code; **no Streamlit container running**. Real observability stack is Grafana + Loki + Prometheus + Tempo + Alertmanager + cAdvisor + Alloy — completely different paradigm the source doesn't mention.
+- "GDELT BigQuery 15-min indexing delay" → server runs `gdelt_harvester` container (different mechanism than direct BigQuery query); 15-min-delay critique partially obsolete.
+- "milestone ledger" → already `[RETRACTED 2026-04-24 Track C]` per `concepts/milestone-ledger.md`. **Headline self-assessment "18 of 42 milestones complete" is unverifiable** because the ledger as artifact doesn't exist; only `docs/ROADMAP.md` markdown step-list exists.
+
+**Source's "Recommended Tech Stack Upgrades" — actually shipped (between 2026-03-08 and 2026-04-26):**
+- **Polars** (replacing Pandas) → `polars>=0.20.15` in requirements.txt; 186 code refs ✓
+- **Pydantic AI** → `pydantic-ai>=0.0.15`; in `docker/Dockerfile.brain` ✓
+- **NautilusTrader** → `nautilus-trader>=1.190.0` ✓
+- **PettingZoo** → in `rl_training/environment.py` + `tests/test_step8_backtesting.py` (PettingZoo wrapper at least scaffolded) ✓
+- **Schemathesis** → `schemathesis>=4.12.0` ✓
+- **Hypothesis** → `hypothesis>=6.100.0`; 1691 code refs ✓
+- **mutmut** → `mutmut>=3.0.0` ✓
+- **Streamlit** → in deps + `ui/` (deployed but not as container) ✓
+
+**Source's "Recommended Tech Stack Upgrades" — still NOT shipped:**
+- **OpenFang** (Rust agent OS) → 0 refs in main code
+- **DeepAgents pattern** → 0 refs
+- **TorchRL** → only in `briefs/` markdown (not code)
+- **OpenBB Platform** → 0 refs
+- **dbmate** → only in `.worktrees/` (speculative branches, not main)
+- **VeritasChain Protocol (VCP)** → already `[RETRACTED 2026-04-24 Track C]` per `concepts/cryptographic-audit-trail.md` (J pass)
+- **zkSNARK / zkCA / EQTY Lab Verifiable Compute SDK / SafeOR-Gym CMDP shield** → all 0 refs
+
+**Source-page changes** (`wiki/sources/3-9-pm-research.md`):
+- Full rewrite via Write tool: `read_status: validated`, `updated: 2026-04-26`, publication_date corrected to 2026-03-08 (per source's own "documented March 8, 2026" stamp), narrative restructured around the K5 stale-snapshot pattern, comprehensive "Prescribed-vs-deployed gap (2026-04-26 K5 deep-read)" section with 4-bucket split (deployed-accurate / deployed-stale-or-wrong / prescribed-but-shipped / prescribed-and-still-not-shipped), 9 Snippets populated with verbatim pulls + analytical commentary covering: para 2 milestone-ledger headline claim, para 2 container count, para 2 IntelPublisher pattern (the strongest as-built confirmation), para 3 test count, para 6 GDELT BigQuery 15-min critique, para 8 OpenFang motivation, para 9 NautilusTrader, para 10 cryptographic trust gap, para 22 VCP forward-looking framing, and para 124 IP HoldCo/OpCo + Section 475(f) corporate-structure recommendation.
+
+**Concept-page upgrade** (`wiki/concepts/milestone-ledger.md`):
+- `[RETRACTED 2026-04-24 Track C]` → `[RESOLVED 2026-04-26 K5 deep-read]` with K-style template
+- Full rewrite: `maturity: retracted` → `validated`, retraction-of-record table for 4 pre-K5 false claims (artifact-existence claim, 18-of-42 verifiability claim, acquirer-narrative function, VCP cross-reference), narrative split into "Why the ledger matters" (acquirer-side mental model in 5 steps) / "What exists vs. what was prescribed" (server-verified) / "Action ticket (P0)" / "Pattern: the headline-claim-verifiability problem" (new pattern naming — applies to Sharpe ratios, backtest fidelity, zero-safety-violations, model-lineage). 2 Snippets with cross-references to source paras 2 + 22.
+
+**Entity-page touches** (4 pages, surgical edits not full rewrites):
+- `wiki/entities/infrastructure/hetzner.md` — container count corrected "18-26" → **40** with full container manifest enumerated (infra / observability / ingest / intelligence-and-execution sections); Swarm-inactive call-out added.
+- `wiki/entities/infrastructure/redis.md` — narrative rewritten to surface the deployed `intel:*` namespace (30+ channels grouped by Macro/FRED, Crypto, Kalshi, FX, EDGAR/Earnings, LLM, Aggregates), `IntelPublisher`/`IntelReader` pattern call-out; Telegram (Telethon) rate-limit-bucket bullet retracted per K3; explicit note resolving K4-vs-K5 narrow-vs-broad finding (`intel:orderbook` specifically doesn't exist, but the `intel:*` family does heavily).
+- `wiki/entities/infrastructure/timescaledb.md` — pg_tamperlog/pymerkle/OpenTimestamps "cryptographic audit integration" bullet stripped to `[RETRACTED 2026-04-24 Track C]` notice with K4 + K5 server-probe re-confirmation.
+- `wiki/entities/infrastructure/pgvector.md` — research-corpus retrieval bullet rewritten: FinBERT mention retracted per K3; Telegram message embedding moot (Telegram ingester not deployed); deployed encoder undetermined-but-not-FinBERT.
+
+**Lint**: orphans 0, bidirectional gaps 0, dangling 0, missing 0; cited-unread 218 → **217** (K5 reframe converts source from cited-unread to validated). Edge count steady at 1108 — entity-page touches preserved existing `related:` structure. Top of cited-unread now `forex-research-3-18.md` (7 inbound) — natural K6 candidate (sibling of K4, OANDA partially-deployed).
+
+**Pattern note**: K5 surfaces a new sub-pattern worth naming — **the headline-claim-verifiability problem**. The "18 of 42 milestones complete" claim depends on a milestone ledger artifact that doesn't exist. Other parallel claims to spot-check across the corpus follow the same shape: Sharpe ratios depend on cryptographically-anchored trade logs (VCP, unbuilt); backtest fidelity depends on the NautilusTrader↔PettingZoo bridge (partially scaffolded but not validated as research-to-live parity); "zero safety violations" depends on the SafeOR-Gym CMDP shield (unbuilt); "model lineage" depends on EQTY Lab AI Certificates anchored to Hedera (unbuilt). Each is its own headline claim with its own missing artifact backing. K5 has only resolved the milestone-ledger one; future K-style passes might benefit from a per-headline-claim audit grid that explicitly cross-references each claim to its backing artifact's deployment state. **Documented in `concepts/milestone-ledger.md` "Pattern" section.**
+
+---
+
 ## [2026-04-26] ingest | K4: deep-read 3-18-crypto-integration-technical-audit — partially-deployed scenario (libraries present, full architecture is build spec)
 
 Resolves the 9-inbound cited-unread stub at the top of the L dashboard's Section 1 after K3 cleared the previous top (`3-19-telegram-discord-research.md`). Continues the J/K/K2/K3 reframe pattern but on a **partially-deployed** scenario rather than a fully blueprint-only one — K4 is more textured than K3 because the SDKs the audit recommends ARE in `requirements.txt`, but the full architecture wrapping them is not.
