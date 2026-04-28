@@ -21,6 +21,7 @@ updated: 2026-04-27
 - @concepts/ip-sale-readiness.md — parent thesis; IBKR is the prescribed brokerage in the IP-sale-prep institutional-grade infrastructure layer
 - @entities/platforms/alpaca.md — developer-tier alternative; K7 lists Alpaca + QuantConnect as appropriate for prototyping but not for institutional liquidity / routing
 - @entities/platforms/oanda.md — non-equities sibling broker; OANDA is FX-specific, IBKR is the multi-asset standard
+- @concepts/ip-sale-corporate-structure.md — IBKR's Large Trader thresholds intersect with the **SEC Rule 13h-1 reporting regime** (canonical authority documented at @concepts/ip-sale-corporate-structure.md "Large Trader Reporting Rule 13h-1 (K7 addition)" subsection, lines 118–120); IBKR is one of the principal operational compliance touch-points the OpCo will trigger as it scales toward the 2M shares OR $20M FMV daily / 20M shares OR $200M FMV monthly thresholds — when crossed, the OpCo must file Form 13H, obtain its LTID, and provide that LTID to IBKR (and all other executing brokers)
 
 ## Raw Concept
 
@@ -71,6 +72,17 @@ The LEI is the **gating prerequisite** for IBKR Pro corporate account opening. P
 | Market data subscriptions | Professional Subscriber tier | Alpaca IEX free tier currently | Cost-model upgrade pending IBKR |
 
 The current Alpaca-tier deployment is sufficient for paper-trading + small-capital live testing through the IP-sale-prep window. The IBKR upgrade becomes binding only when the institutional-grade execution venue becomes part of the acquirer's deal-time-of-sale operational continuity (i.e., the acquirer expects the platform to run on IBKR or equivalent post-close), or when Cemini's trading volume crosses thresholds (Large Trader 13h-1 = 2M shares OR $20M FMV daily, see @sources/fintech-startup-legal-ip-roadmap.md S8) where Alpaca's developer-tier routing becomes a bottleneck.
+
+### Rule 13h-1 reporting touch-point (operational-compliance interface)
+
+IBKR is one of the principal operational-compliance touch-points the OpCo will trigger as Cemini's trading volume scales. Per @concepts/ip-sale-corporate-structure.md "Large Trader Reporting Rule 13h-1 (K7 addition)" subsection (canonical authority), the SEC Rule 13h-1 quantitative thresholds are **2 million shares OR $20 million FMV per single calendar day**, OR **20 million shares OR $200 million FMV per calendar month**. When the OpCo crosses any of these thresholds, it must:
+
+1. File **Form 13H** with the SEC
+2. Obtain a **Large Trader Identification Number (LTID)** from the SEC
+3. Provide the LTID to **all executing broker-dealers** (IBKR + any other active brokerage)
+4. IBKR (and all other brokers) then maintain time-stamped records of the OpCo's trading activity and report to the SEC on request
+
+K7 specifically warns that "active algorithmic startups can trigger these volume thresholds rapidly, even with modest capital, due to the high turnover velocity and continuous execution nature of automated strategies" (para 45). For Cemini, this is the operational-compliance interface where the institutional-brokerage relationship (IBKR) and the federal-reporting regime (Rule 13h-1) intersect — and is one of the structural reasons K7 prescribes IBKR Pro corporate account specifically (Phase 3 step 9): the LTID-broker handshake assumes an institutional-tier brokerage relationship that supports the regulatory reporting workflow as a first-class product feature.
 
 ## Snippets
 

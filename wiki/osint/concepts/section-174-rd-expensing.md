@@ -8,6 +8,7 @@ related:
   - concepts/ip-sale-corporate-structure.md
   - concepts/ip-sale-readiness.md
   - concepts/irc-1235-capital-gains-safe-harbor.md
+  - concepts/defend-trade-secrets-act.md
 maturity: validated
 created: 2026-04-27
 updated: 2026-04-27
@@ -19,6 +20,7 @@ updated: 2026-04-27
 - @concepts/ip-sale-corporate-structure.md — sibling tax-structure page; the §174A election is one of three load-bearing tax instruments alongside §475(f) MTM and §1235 capital-gains
 - @concepts/ip-sale-readiness.md — parent thesis; component 6 (tax + legal structure) — §174A R&E expensing converts pre-sale dev costs into immediate ordinary deductions, increasing net cash retained for reinvestment / runway / IP-sale-prep work
 - @concepts/irc-1235-capital-gains-safe-harbor.md — coordinated tax-treatment pair: §174A optimizes the **annual operating cost** side (R&E expense deduction); §1235 optimizes the **exit-event proceeds** side (capital-gains rate). Both apply simultaneously to the same Cemini-side activity (algorithm dev + future IP sale)
+- @concepts/defend-trade-secrets-act.md — K7-tail concept-promotion 2026-04-27 — sibling regime; the same capitalized-R&E records that establish §174A small-business deduction also serve as the cost-of-development evidentiary substrate for the DTSA economic-value-from-secrecy burden under 18 U.S.C. § 1839 — dual-purpose accounting documentation
 
 ## Raw Concept
 

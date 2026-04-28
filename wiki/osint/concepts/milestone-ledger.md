@@ -13,6 +13,7 @@ related:
   - concepts/ip-sale-corporate-structure.md
   - concepts/irc-1235-capital-gains-safe-harbor.md
   - concepts/cryptographic-audit-trail.md
+  - concepts/defend-trade-secrets-act.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-27
@@ -29,6 +30,7 @@ updated: 2026-04-27
 - @concepts/irc-1235-capital-gains-safe-harbor.md — K6 2026-04-27 — Git commit history (the ledger's substrate) is the load-bearing audit artifact for the §1235 personal-efforts test (proves individual-inventor authorship)
 - @concepts/cryptographic-audit-trail.md — sibling J-pass page (Track C → RESOLVED) on the same prescribed-vs-deployed pattern
 - @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27 — third-source corroboration that **Git commit history is the load-bearing trade-secret evidentiary substrate** for the §1235 personal-efforts test (joins 3-10 audit's same finding); K7's IP Protection section explicitly calls Git authorship history the audit artifact under Defend Trade Secrets Act 18 U.S.C. § 1839 + Neural Magic v. Facebook economic-value-from-secrecy burden — the milestone-ledger-as-cryptographically-anchored artifact would be a **tamper-evident superset** of this Git-history substrate
+- @concepts/defend-trade-secrets-act.md — K7-tail concept-promotion 2026-04-27 — the milestone ledger / Git commit history is the **load-bearing trade-secret evidentiary substrate** for satisfying DTSA's "reasonable measures to maintain secrecy" element + supporting the *Neural Magic v. Facebook* economic-value-from-secrecy burden; the prescribed Merkle-root-anchored ledger would be a tamper-evident superset that strengthens the secrecy-measure proof in any future DTSA enforcement action
 
 ## Raw Concept
 

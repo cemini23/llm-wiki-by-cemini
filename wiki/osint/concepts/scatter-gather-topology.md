@@ -5,19 +5,23 @@ tags: [concept, llm-orchestration, methodology]
 keywords: []
 related:
   - sources/3-19-langgraph-scatter-gather-financial-analysis.md
+  - sources/sakana-conductor-rl-orchestration.md
   - entities/frameworks/langgraph.md
   - entities/infrastructure/deepseek-r1-14b.md
   - entities/infrastructure/deepseek-api.md
+  - entities/infrastructure/sakana-fugu.md
   - entities/infrastructure/redis.md
   - entities/data-sources/telethon.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-27
 ---
 
 ## Relations
 
 - @sources/3-19-langgraph-scatter-gather-financial-analysis.md
+- @sources/sakana-conductor-rl-orchestration.md — user-dropped 2026-04-27 — ICLR 2026 Sakana AI Conductor paper; **direct architectural counterpart**: where this concept's source prescribes a *hand-designed* `Send()`-based fan-out + `operator.add` reducer + gather pattern, the Conductor *learns* topology design as a per-task RL-trained meta-controller decision. Strong evidence for the open Option A vs Option B P1 ticket — a learned orchestrator outperforms hand-designed scaffolds (incl. MoA, MasRouter, RouterDC, Smoothie baselines)
+- @entities/infrastructure/sakana-fugu.md — **adds Option C to this page's P1 ticket** (2026-04-27): outsource orchestration to Sakana's productized Conductor + Trinity API (closed beta, launched 2026-04-24). Engineering effort ~1–3 engineer-days (config swap + Pydantic glue + audit-trail integration) — lowest-effort path to "learned-orchestrator quality" without training one in-house. Trade-offs: data-egress posture (Fugu sees all prompts), opaque per-worker routing (audit trail captures only top-level prompt/completion tuple), acquirer optics (defensible only with vertical-domain fine-tuning + custom worker-pool composition + typed-output Pydantic glue named explicitly as the moat)
 - @entities/frameworks/langgraph.md
 - @entities/infrastructure/deepseek-r1-14b.md `[RETRACTED 2026-04-24]` — page retracted; backlink kept for discoverability
 - @entities/infrastructure/deepseek-api.md — operative LLM brain via cloud API; replaces the retracted local-runtime path

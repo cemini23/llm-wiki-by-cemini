@@ -7,6 +7,7 @@ related:
   - sources/fintech-startup-legal-ip-roadmap.md
   - concepts/ip-sale-corporate-structure.md
   - concepts/ip-sale-readiness.md
+  - entities/platforms/mercury.md
 maturity: validated
 created: 2026-04-27
 updated: 2026-04-27
@@ -17,6 +18,7 @@ updated: 2026-04-27
 - @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27; paras 57–59 prescribe Brex over Mercury for enterprise-grade automation; Phase 3 step 8 in the K7 execution roadmap = "Establish Corporate Banking: Open institutional accounts with Brex for both the HoldCo and OpCo to manage working capital, facilitate automated royalty transfers, and manage SaaS and cloud computing R&E expenses."
 - @concepts/ip-sale-corporate-structure.md — Brex is the operational-banking interface to the intercompany IP license royalty-payment flow between Wyoming HoldCo and Florida OpCo; programmatic API access is what makes the dual-entity structure operationally tractable rather than paper-only
 - @concepts/ip-sale-readiness.md — parent thesis; banking infrastructure is a P3 / institutional-grade-deployment dimension
+- @entities/platforms/mercury.md — sibling fintech-banking entity; **K7-rejected alternative** to Brex for the Cemini dual-entity stack — Mercury wins on UX-and-onboarding-speed, loses on multi-entity programmatic-automation tooling that Brex's intercompany-royalty-wire flow depends on (K7 paras 58–59)
 
 ## Raw Concept
 

@@ -38,7 +38,11 @@ related:
   - entities/platforms/kalshi.md
   - entities/platforms/interactive-brokers.md
   - entities/platforms/brex.md
+  - entities/platforms/mercury.md
   - entities/infrastructure/deepseek-api.md
+  - entities/infrastructure/sakana-fugu.md
+  - concepts/defend-trade-secrets-act.md
+  - concepts/neural-magic-v-facebook.md
   - entities/data-sources/opensanctions.md
   - entities/data-sources/telethon.md
   - concepts/ai-ethics-and-governance.md
@@ -86,6 +90,10 @@ updated: 2026-04-27
 - @entities/data-sources/opensanctions.md — pre-emptive sanctions screening on Cemini's commercial counterparty set (data vendors, exchange relationships) so any acquirer due-diligence pass surfaces no surprise hits — adjacent to the publishers-exclusion deal-killer ledger entries
 - @entities/data-sources/telethon.md — K3 2026-04-26 — Telegram alt-data ingester is on the publisher's-exclusion deal-killer ledger; the prescribed Telethon+VADER+Pydantic pipeline (per @sources/3-19-telegram-discord-research.md) is **not deployed** as of K3 server probe, so the "feature-flag carve-out" claim previously attached here is also blueprint-only
 - @concepts/ai-ethics-and-governance.md — D′ 2026-04-26 — backdrop literature for the AI-governance posture an institutional acquirer will probe during APA due-diligence (EU AI Act exposure, harm-typology familiarity, workforce-policy fluency)
+- @concepts/defend-trade-secrets-act.md — K7-tail concept-promotion 2026-04-27 — federal civil cause of action (18 U.S.C. § 1836 / § 1839) backstopping the trade-secret-protection regime that the dual-entity HoldCo / OpCo + intercompany license + Phase 2 step 7 trade-secret protocols collectively support; the IP-sale-prep window's enforceable-IP-rights backbone
+- @concepts/neural-magic-v-facebook.md — K7-tail concept-promotion 2026-04-27 — D. Mass. case-precedent (settled 2023) demonstrating DTSA enforceability against a major-tech defendant in an AI/ML trade-secret context; the K7-cited authority for the economic-value-from-secrecy burden that drives the meticulous-documentation requirement on Cemini's side
+- @entities/platforms/mercury.md — K7-tail concept-promotion 2026-04-27 — rejected alternative to @entities/platforms/brex.md for the corporate-banking layer; documented for completeness as a future-pivot fallback if the Brex pathway stalls
+- @entities/infrastructure/sakana-fugu.md — Fugu-ingest 2026-04-27 — **directly affects the IP-sale narrative**. An institutional buyer reading the Cemini stack will now ask: "why didn't you just call Sakana Fugu's API?" The defensible answers (vertical-domain MAPPO trader-agents, typed-output Pydantic StrategyRecommendation handoff, custom worker-pool composition with compliance/cost gates, audit-trail completeness via pg_tamperlog, and benchmark-against-Fugu-as-baseline as a credibility marker) must be named explicitly in the IP-sale-prep narrative, not assumed. Note this is an **April 2026 development** that postdates most of the IP-sale-prep audit corpus — the prescriptions in K5/K6/K7 are silent on commercial-API-orchestrator alternatives because they didn't yet exist as commercial products
 
 ## Raw Concept
 

@@ -15,6 +15,7 @@ related:
   - concepts/equity-intraday-backfill-gap.md
   - entities/platforms/hyperliquid.md
   - sources/crypto-5-4-11.md
+  - concepts/defend-trade-secrets-act.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
@@ -34,6 +35,7 @@ audit_date: 2026-04-24
 - @concepts/equity-intraday-backfill-gap.md — backfill INSERTs anchor into the same hash chain
 - @entities/platforms/hyperliquid.md
 - @sources/crypto-5-4-11.md — *The Quantum-Cryptographic Co-evolution* (Kundu & Kompella, Cisco Research) — forward-looking PQ-cryptography landscape relevant to the SHA-256 hash-chain layer's threat-model assumptions (D′ 2026-04-26 routing)
+- @concepts/defend-trade-secrets-act.md — K7-tail concept-promotion 2026-04-27 — sibling tamper-evident artifact pattern; the prescribed VCP/zkCA stack (this page) would supplement Git history as a cryptographically anchored secrecy-measure record satisfying DTSA's "reasonable measures to maintain secrecy" element under 18 U.S.C. § 1839
 
 ## Raw Concept
 

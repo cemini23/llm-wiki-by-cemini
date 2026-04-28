@@ -21,8 +21,11 @@ related:
   - sources/3-19-ip-sale-research.md
   - entities/platforms/interactive-brokers.md
   - entities/platforms/brex.md
+  - entities/platforms/mercury.md
   - entities/platforms/alpaca.md
   - entities/platforms/kalshi.md
+  - concepts/defend-trade-secrets-act.md
+  - concepts/neural-magic-v-facebook.md
 maturity: validated
 read_status: validated
 created: 2026-04-23
@@ -57,6 +60,9 @@ clusters:
 - @entities/platforms/brex.md — K7 promotion 2026-04-27; K7 paras 58–59 prescribe Brex as the corporate banking primary for both HoldCo and OpCo
 - @entities/platforms/alpaca.md — K7 para 61 lists Alpaca + QuantConnect as developer-tier alternatives to IBKR
 - @entities/platforms/kalshi.md — adjacent DCM compliance leverage (cross-source from 3-10 audit)
+- @entities/platforms/mercury.md — K7-tail concept-promotion 2026-04-27; K7 paras 58–59 frame Mercury as the **rejected alternative** to Brex; documented as future-pivot fallback if Brex pathway stalls
+- @concepts/defend-trade-secrets-act.md — K7-tail concept-promotion 2026-04-27; K7 paras 23–25 are the canonical statement in the Cemini corpus of the federal trade-secret regime (DTSA, 18 U.S.C. § 1836 / § 1839) as the durable competitive moat for AI/algorithm IP — the strategic positioning that justifies trade-secret protection in lieu of patent registration post-*Alice*
+- @concepts/neural-magic-v-facebook.md — K7-tail concept-promotion 2026-04-27; K7 para 25 cites *Neural Magic v. Facebook* (now v. Meta, D. Mass. 2023, settled) as the AI/ML-context precedent for the economic-value-from-secrecy burden that DTSA plaintiffs carry; case-precedent demonstrating DTSA enforceability against well-resourced corporate defendants
 
 ## Raw Concept
 

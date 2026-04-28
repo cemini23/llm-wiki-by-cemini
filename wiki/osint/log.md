@@ -8,6 +8,99 @@ Newest entries on top.
 
 ---
 
+## [2026-04-27] ingest | Sakana Fugu (closed beta, productization of Conductor + Trinity)
+
+User dropped `https://sakana.ai/fugu-beta/` 2026-04-27 as follow-up to the Conductor paper ingest the same day, with the redirect "wrong link [from `conductor.build`] but worth checking that one too". Identified as the **commercial productization of the Conductor + Trinity ICLR 2026 papers**, launched 2026-04-24 (three days before this entry). Distinct from the academic Conductor ingest because it's a *vendor + product + API* entity, not a paper.
+
+### What shipped
+
+- **`wiki/entities/infrastructure/sakana-fugu.md`** — NEW entity page. `maturity: validated`. Placement parallels `entities/infrastructure/deepseek-api.md` (sibling hosted-LLM-API service). Substantive 6-snippet page covering productization framing (Conductor + Trinity → Fugu), two-tier API lineup (Mini 🐟 latency-optimized / Ultra 🐡 full orchestration), benchmarks against forward-dated frontier models (Gemini 3.1 high / GPT 5.4 high / Opus 4.6 max — Fugu Ultra wins GPQAD 95.1, LCBv6 93.2, SWEPro 54.2), OpenAI-compatibility, recursive self-call test-time-scaling axis, **4-hook Cemini-relevance read** (DeepSeek client reframing extends to Fugu / **adds Option C to scatter-gather P1 ticket** / IP-sale narrative impact / Trinity sibling paper not yet in corpus), 5 dated `[NEEDS VERIFICATION 2026-04-27]` flags (beta acceptance gate / pricing / SLA / worker pool composition / data-egress posture). 6 verbatim Snippets pulled from `sakana.ai/fugu-beta/`.
+- **Conductor source page extended** (`wiki/sources/sakana-conductor-rl-orchestration.md`): added `entities/infrastructure/sakana-fugu.md` to `related:`, added Productization Relations bullet, added Productization (Fugu, 2026-04-24 closed beta) Narrative subsection covering 5 productization-impact items, added Trinity sibling-paper `[NEEDS VERIFICATION]` item, added S7 Snippet quoting the Sakana announcement's productization line.
+- **6 cluster-hub bidirectional backlinks**: `entities/infrastructure/deepseek-api.md` (sibling-hosted-LLM-API framing), `entities/frameworks/langgraph.md` (architecturally-orthogonal framing — keep LangGraph as outer-supervisor + call Fugu as a "smart" worker node), `concepts/scatter-gather-topology.md` (**Option C added to P1 ticket** — outsource to Fugu API; ~1–3 engineer-days), `concepts/llm-agent-systems.md` (first commercial-API entry in cluster — research → commodity transition), `concepts/rl-marl-research.md` (first productized RL-trained orchestrator), `concepts/ip-sale-readiness.md` (acquirer narrative impact: "why didn't you call Fugu?" — defensible-answer enumeration).
+
+### Index update
+
+- `wiki/index.md` — Sakana Fugu row inserted in Infrastructure & databases section (line 385) directly after DeepSeek Cloud API, grouped with the LLM-API entries before Ollama / DeepSeek-R1-14B retracted entries.
+
+### Lint state at ship (combined with K7-tail wave below)
+
+```
+Wiki lint scan — 369 pages indexed
+Outbound edges: 1648; Inbound edge coverage: 369 pages
+Orphans: 0 · Bidir gaps: 0 · Dangling: 0 · Missing @paths: 0
+Cited-but-unread: 134 (unchanged from K7 ship)
+```
+
+### Open ingest decision (Trinity sibling paper)
+
+The Sakana page surfaces a previously-unindexed sibling ICLR 2026 paper: **TRINITY: An Evolved LLM Coordinator** (Xu, Sun, Schwendeman, Nielsen, Cetin, Tang — same six authors as Conductor, different lead ordering). Likely arXiv 2512.04695 (range neighbor to Conductor's 2512.04388). The "evolved coordinator" framing suggests evolutionary search methodology (vs Conductor's RL/GRPO) — fits Sakana's broader research lineage (evolutionary model merging, ShinkaEvolve, AB-MCTS) and would close a coverage gap. **Decision pending user confirmation** before pulling the arXiv PDF + creating a sibling source page paralleling the Conductor one.
+
+### Pattern note
+
+Same wave as the K7-tail bundle below — both shipped 2026-04-27 within a few hours. The Fugu ingest is structurally the **first vendor+commercial-API entity ingest in the corpus** (vs prior infrastructure entities being either deployed Cemini stack or retracted-options pages). Sets a precedent for cataloguing *Cemini-considered-but-not-deployed* commercial alternatives — useful for the IP-sale narrative read where an acquirer will benchmark against the alternatives Cemini chose not to use.
+
+---
+
+## [2026-04-27] promote | K7-tail — DTSA + Neural Magic + Mercury concept-and-entity promotions surfaced by K7 deep-read
+
+K7 deep-read of `sources/fintech-startup-legal-ip-roadmap.md` (the third + earliest of the K5/K6/K7 corporate-structure trio, shipped earlier 2026-04-27) surfaced 3 promotion candidates that K7's source paragraphs cited prominently but the wiki had no canonical pages for. Spawned as a parallel background subagent (agentId `ae9cb82c50ed06af2`, ~14 min wall-clock) while Conductor + Fugu work proceeded in foreground. Subagent integrated Exa MCP fallback for case-law primary-source verification (Reuters, vLex, casemine) when WebSearch was sandbox-denied. Lint was tooling-blocked for the subagent (Bash permission); verified clean post-handoff in the foreground (combined with Fugu wave above).
+
+### What shipped (subagent output)
+
+- **`wiki/concepts/defend-trade-secrets-act.md`** — NEW concept page. K7-canonical (single-source). Federal civil cause of action 18 U.S.C. § 1836 / § 1839 for trade-secret misappropriation. Covers § 1839(3) trade-secret definition, § 1839(5) misappropriation modalities (acquisition / disclosure / use), § 1836(b)(3) civil remedies (injunction + damages + exemplary + attorney's fees), federal-jurisdiction-without-diversity hook (key for Wyoming-HoldCo plaintiff posture), the "reasonable measures" element (linked to @concepts/milestone-ledger.md as the load-bearing artifact), the "economic value from secrecy" burden (linked to @concepts/neural-magic-v-facebook.md case-precedent).
+- **`wiki/concepts/neural-magic-v-facebook.md`** — NEW concept page. K7-cited DTSA case precedent. Exa-verified procedural details: Neural Magic, Inc. v. Meta Platforms, Inc. (formerly v. Facebook), D. Mass. 1:20-cv-10444 (Casper, J.); summary judgment denied 2023-03-06 (40 of 41 alleged trade secrets survive SJ); settled with prejudice 2023-08-09 on confidential terms; $766M expert-testified royalty range admitted at the SJ stage. AI/ML-context precedent that K7 cites for the DTSA economic-value-from-secrecy burden — directly on-point for the Cemini Wyoming HoldCo's defensible-IP claim.
+- **`wiki/entities/platforms/mercury.md`** — NEW entity stub. K7-rejected fintech-banking alternative to Brex. Documents K7 paras 58–59 Brex-vs-Mercury comparison + rejection rationale (Mercury's intercompany-royalty-wire automation weaker than Brex's for the prescribed Wyoming HoldCo + Florida OpCo dual-entity flow) + 4 reconsideration triggers (e.g. if Brex onboarding stalls, if Mercury launches multi-entity API parity).
+
+### Bidirectional backlinks (8 file edits by subagent)
+
+`wiki/concepts/milestone-ledger.md` (DTSA reasonable-measures backlink) · `wiki/entities/platforms/brex.md` (Mercury K7-rejected-alternative backlink) · `wiki/entities/platforms/interactive-brokers.md` (Rule 13h-1 reference + LTID-broker-handshake mechanics subsection) · `wiki/concepts/cryptographic-audit-trail.md` (DTSA — VCP/zkCA stack as DTSA secrecy-measure substrate) · `wiki/concepts/ip-sale-readiness.md` (3 inline Relations bullets — Mercury + DTSA + Neural Magic) · `wiki/concepts/ip-sale-corporate-structure.md` (3 inline Relations bullets — same trio) · `wiki/sources/fintech-startup-legal-ip-roadmap.md` (3 inline Relations bullets — same trio in K7 source page) · `wiki/concepts/section-174-rd-expensing.md` (DTSA — R&E records as DTSA economic-value substrate).
+
+### Index update
+
+`wiki/index.md` gained 3 rows — DTSA + Neural Magic in M&A/legal section (thematic placement after IP-sale corporate structure), Mercury in Platforms & venues (after Brex). ~33 new outbound bidirectional edges across 11 touched files.
+
+### Foreground reconciliation post-handoff
+
+- **Lint run**: subagent's Bash permission was denied; foreground ran `python3 scripts/wiki_lint.py` on the combined Fugu + K7-tail state. Result: 369 pages indexed (was 365 pre-K7-tail, +3 K7-tail concept/entity + 1 Fugu entity = +4 ✓), 1648 outbound edges, **0 orphans / 0 bidir gaps / 0 dangling / 0 missing @paths**. Subagent's manual bidirectional walk verified clean by tooling.
+- **Log entry**: deferred from subagent scope to here per the parallel-task wiring pattern.
+- **ROADMAP stamp**: deferred from subagent scope to the combined-wave commit (next).
+
+### Pattern note
+
+K7-tail is the **first parallelized subagent ship in the K-series workflow**. Pattern: foreground continues primary deep-read work (K7-then-Conductor-then-Fugu), background subagent handles a clearly-decoupled bundle (3 promotion candidates with 0 file overlap). Wall-clock saving: K7-tail ran ~14 min in parallel with ~2 hours of foreground Fugu cataloguing — so the parallelism saved ~14 min on critical path, modest. The bigger win: the **decision-to-ship discipline isn't broken by carrying a partially-completed task across long foreground stretches**. Will reuse for the next K-series wave (top of cited-unread queue: `sources/4-5-links.md` 4 inbound, plus the 8 multi-topic link-eval docs at 3 inbound each — naturally suited to per-citation single-topic deep-read parallelism).
+
+---
+
+## [2026-04-27] ingest | Conductor (Sakana AI, ICLR 2026) — user-dropped paper; first RL-trained-orchestrator entry in the rl-marl cluster
+
+User dropped `LEARNING TO ORCHESTRATE AGENTS IN NATURAL LANGUAGE WITH THE CONDUCTOR.pdf` into `research to be indexed/` mid-K7-tail with the signal "really good worth a read". Catalogued + wired before resuming K7-tail.
+
+### What shipped
+
+- **PDF moved**: `research to be indexed/LEARNING TO ORCHESTRATE...pdf` → `research for cemini/sakana-conductor-rl-orchestration-iclr-2026.pdf` (4MB, 39 pages, ICLR 2026 conference paper, arXiv 2512.04388v4).
+- **`wiki/sources/sakana-conductor-rl-orchestration.md`** — NEW source page. `read_status: read` (pages 1–17 covered: abstract + intro + methods Sec 1–3.2 + experiments Sec 4.1–4.5 + related work + discussion + author contributions + Appendix A.1 training setup + A.2 datasets + A.3 evaluation setup; pages 18–39 are extended ablations / per-task breakdowns, unread). `clusters: [rl-marl, llm-agents]` (rl-marl primary). `related:` to 5 cluster hubs (rl-marl, llm-agents, scatter-gather-topology, deepseek-api, langgraph). Substantive Cemini-relevance read: **first paper in the corpus to propose RL-training the orchestration layer itself, not the worker pool** — 7B Conductor (Qwen2.5-7B base, GRPO) achieves avg 77.27 across LCB/GPQA-D/AIME25/MMLU/MATH500/BCB vs GPT-5's 74.78 *by orchestrating GPT-5 + Claude Sonnet 4 + Gemini 2.5 Pro + open-source workers*. Recursive variant unlocks new test-time-scaling axis. Trained on 2× H100 GPUs (modest compute envelope). 6 Snippets with page citations.
+- **5 cluster hubs extended with bidirectional backlinks**: `concepts/rl-marl-research.md` (cluster count 86 → 87, narrative bumped), `concepts/llm-agent-systems.md` (cluster count 63 → 64, narrative bumped, secondary placement noted), `concepts/scatter-gather-topology.md` (Conductor framed as direct architectural counterpart to the Send/Pregel-BSP scatter-gather prescription — strong evidence for the open Option A vs Option B P1 ticket: a learned orchestrator outperforms hand-designed scaffolds incl. MoA/MasRouter/RouterDC/Smoothie baselines), `entities/infrastructure/deepseek-api.md` (Conductor evaluates DeepSeek-R1-Distill-Qwen-32B as a worker — same model family as deployed brain; reframes Cemini DeepSeek client as worker-pool entry rather than per-node analyst), `entities/frameworks/langgraph.md` (Conductor reframes the supervisor node as a learned policy that emits worker assignments + NL prompts at runtime).
+
+### Index update
+
+- `wiki/index.md` — Conductor row inserted in rl-marl cluster between `LDP:` and `LLM Agent Architectures` rows; cluster count 101 → 102; total stub count 247 → 248 (PDF count 165 → 166).
+
+### Lint state at ship
+
+```
+Wiki lint scan — 365 pages indexed
+Outbound edges: 1602; Inbound edge coverage: 365 pages
+Orphans: 0 · Bidir gaps: 0 · Dangling: 0 · Missing @paths: 0
+Dated NEEDS VERIFICATION ≥7 days old: 0 (3 Conductor tags dated 2026-04-27 are within the 7-day window)
+Cited-but-unread: 134 (Conductor counted as read)
+```
+
+### Pattern note
+
+This is the **first user-flagged-priority paper-ingest interleave** of the K-series workflow (vs. the K-series cited-unread-queue cadence that K1–K7 followed). Order discipline maintained — K7-tail (DTSA + Neural Magic + Mercury page promotions surfaced by K7 audit) remains in flight; Conductor was wedged in as a 1-deliverable interleave because the user signal was explicit and the Cemini-relevance was directly architectural (scatter-gather Option A/B ticket gets new evidence). Future Conductor work could include a deep-read pass to take it from `read` to `deep-read`/`validated` status if the recursive-meta-controller direction becomes part of the IP-sale critical path.
+
+---
+
 ## [2026-04-27] ingest | K7: deep-read `sources/fintech-startup-legal-ip-roadmap.md` — third-source corroboration on dual-entity (3-of-3); new §174A + Florida Fintech Sandbox + IBKR + Brex pages
 
 Third pass in the corporate-structure trio. K7 = `fintech-startup-legal-ip-roadmap` is **dated 2026-02-25** — the earliest of the three Cemini-internal IP-sale-prep audits (K7 Feb 25 → K5 Mar 8 → K6 Mar 10). Triangulating against K5 + K6 lifts the dual-entity (Wyoming HoldCo + Florida OpCo) prescription from 2-source corroboration to **3-of-3 cross-source agreement**. K7 also extends the corpus along **four operational dimensions** that K5 + K6 don't cover, each promoted into its own page or load-bearing extension.

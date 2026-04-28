@@ -62,6 +62,8 @@ related:
   - sources/pvg-4-14.md
   - sources/pvg2-4-14.md
   - sources/pvg3-4-14.md
+  - sources/sakana-conductor-rl-orchestration.md
+  - entities/infrastructure/sakana-fugu.md
   - sources/skills-1-4-5.md
   - sources/sort-2-4-3.md
   - sources/sort-6-4-3.md
@@ -132,6 +134,8 @@ updated: 2026-04-27
 - @sources/pvg-4-14.md — LLM agent-systems source in the Cemini research corpus
 - @sources/pvg2-4-14.md — LLM agent-systems source in the Cemini research corpus
 - @sources/pvg3-4-14.md — LLM agent-systems source in the Cemini research corpus
+- @sources/sakana-conductor-rl-orchestration.md — LLM agent-systems source in the Cemini research corpus (user-dropped 2026-04-27 — ICLR 2026 Sakana AI; secondary cluster placement — primary is rl-marl since Conductor *trains* the orchestrator with RL/GRPO, but the *application* layer is LLM agent orchestration over a frontier-LLM worker pool: Gemma3-27B + Qwen3-32B + R1-Distill-Qwen-32B + Claude Sonnet 4 + Gemini 2.5 Pro + GPT-5)
+- @entities/infrastructure/sakana-fugu.md — **first commercial-API entry in this cluster** (user-dropped 2026-04-27 via `sakana.ai/fugu-beta/`). Productization of the Conductor + Trinity ICLR 2026 papers as a closed-beta OpenAI-compatible chat-completions API. Marks the transition of "learned LLM orchestration" from research to commodity service; the cluster's first API surface that an institutional buyer will benchmark against the Cemini stack
 - @sources/skills-1-4-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/sort-2-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/sort-6-4-3.md — LLM agent-systems source in the Cemini research corpus
@@ -140,7 +144,7 @@ updated: 2026-04-27
 
 ## Raw Concept
 
-Hub page for the LLM-agents cluster of the Cemini research corpus (63 sources — second-largest cluster at bootstrap; +4 from D′ 2026-04-26 sweep adding `ai-1-4-3`, `ai-9-4-3`, `ai-9-4-6`, `protcol-9-3-29`; +3 from O 2026-04-27 inbox bootstrap adding `esglens`, `ligo`, `trigreason`). Sources cover agent scaffolding, multi-agent coordination, tool-use patterns, coding agents, memory architectures, agent benchmarking, and financial LLM applications.
+Hub page for the LLM-agents cluster of the Cemini research corpus (64 sources — second-largest cluster at bootstrap; +4 from D′ 2026-04-26 sweep adding `ai-1-4-3`, `ai-9-4-3`, `ai-9-4-6`, `protcol-9-3-29`; +3 from O 2026-04-27 inbox bootstrap adding `esglens`, `ligo`, `trigreason`; +1 from user-dropped 2026-04-27 adding `sakana-conductor-rl-orchestration` — secondary cluster placement, primary is rl-marl). Sources cover agent scaffolding, multi-agent coordination, tool-use patterns, coding agents, memory architectures, agent benchmarking, and financial LLM applications.
 
 This page is a discovery index. Sources should be individually deep-read before findings are promoted to entity or concept pages.
 

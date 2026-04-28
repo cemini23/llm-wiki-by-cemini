@@ -20,6 +20,9 @@ related:
   - entities/frameworks/nautilustrader.md
   - entities/platforms/interactive-brokers.md
   - entities/platforms/brex.md
+  - entities/platforms/mercury.md
+  - concepts/defend-trade-secrets-act.md
+  - concepts/neural-magic-v-facebook.md
 maturity: validated
 created: 2026-04-27
 updated: 2026-04-27
@@ -43,6 +46,9 @@ updated: 2026-04-27
 - @entities/frameworks/nautilustrader.md — the LGPL-3.0 dependency whose architectural-isolation requirement informs the OpCo-side container topology (separate-work doctrine)
 - @entities/platforms/interactive-brokers.md — K7 promotion 2026-04-27; prescribed institutional brokerage for the Florida OpCo (Phase 3 step 9); LEI is the gating onboarding prerequisite
 - @entities/platforms/brex.md — K7 promotion 2026-04-27; prescribed corporate banking primary for both HoldCo and OpCo (Phase 3 step 8); programmatic API access is what makes intercompany royalty automation tractable
+- @entities/platforms/mercury.md — K7-tail concept-promotion 2026-04-27; **rejected alternative** to Brex for the corporate-banking layer (K7 paras 58–59); documented for completeness as a future-pivot fallback if the Brex pathway stalls
+- @concepts/defend-trade-secrets-act.md — K7-tail concept-promotion 2026-04-27; federal civil cause of action (18 U.S.C. § 1836 / § 1839) for trade-secret misappropriation; the Wyoming HoldCo (this page's IP licensor) is the natural plaintiff in any future DTSA action; the dual-entity-segregation pattern is a DTSA-enforcement strategic decision as much as a tax/liability one
+- @concepts/neural-magic-v-facebook.md — K7-tail concept-promotion 2026-04-27; D. Mass. case-precedent (settled 2023) where a former-employee trade-secret-leakage fact pattern played out in AI/ML context; the threat model that this page's dual-entity HoldCo / OpCo segregation + Intercompany IP License + Phase 2 step 7 trade-secret protocols address structurally
 
 ## Raw Concept
 

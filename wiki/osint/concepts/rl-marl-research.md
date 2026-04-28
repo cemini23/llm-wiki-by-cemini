@@ -86,6 +86,8 @@ related:
   - sources/protocol-7-3-29.md
   - sources/regret-driven-portfolios.md
   - sources/rl-technical-audit-findings-3-9.md
+  - sources/sakana-conductor-rl-orchestration.md
+  - entities/infrastructure/sakana-fugu.md
   - sources/scaling-roadmap-research.md
   - sources/signa.md
   - sources/sort-1-4-3.md
@@ -93,6 +95,7 @@ related:
 maturity: draft
 created: 2026-04-26
 updated: 2026-04-27
+
 ---
 
 ## Relations
@@ -179,6 +182,8 @@ updated: 2026-04-27
 - @sources/protocol-7-3-29.md — RL/MARL source in the Cemini research corpus
 - @sources/regret-driven-portfolios.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — LLM-guided regret-minimization for portfolio allocation)
 - @sources/rl-technical-audit-findings-3-9.md — RL/MARL source in the Cemini research corpus
+- @sources/sakana-conductor-rl-orchestration.md — RL/MARL source in the Cemini research corpus (user-dropped 2026-04-27 — ICLR 2026 Sakana AI paper; 7B Conductor LLM trained with GRPO to orchestrate frontier worker LLMs; **first paper in cluster to RL-train the orchestration layer itself**, beats GPT-5 average 77.27 vs 74.78 by orchestrating it)
+- @entities/infrastructure/sakana-fugu.md — **first productized RL-trained-orchestrator in the cluster** (user-dropped 2026-04-27). Closed-beta API launched by Sakana 2026-04-24 — ~7 weeks after the Conductor paper's arXiv finalization. Joint productization of the Conductor (RL-trained orchestrator) + Trinity (evolved coordinator, sibling ICLR 2026 paper not yet ingested) methodologies. Two-tier lineup (Mini latency-optimized / Ultra full orchestration) reported to beat 2026-frontier-calendar models (Gemini 3.1, GPT 5.4, Opus 4.6) on GPQAD/LCBv6/SWEPro
 - @sources/scaling-roadmap-research.md — RL/MARL source in the Cemini research corpus
 - @sources/signa.md — RL/MARL source in the Cemini research corpus
 - @sources/sort-1-4-3.md — RL/MARL source in the Cemini research corpus
@@ -186,7 +191,7 @@ updated: 2026-04-27
 
 ## Raw Concept
 
-Hub page for the reinforcement-learning and multi-agent-systems cluster of the Cemini research corpus. The corpus skews heavily RL/MARL (86 sources — the dominant cluster at bootstrap; +6 from O 2026-04-27 inbox bootstrap adding `autonomous-ai-agents-for-option-hedging`, `controlled-study-of-multi-agent-debate-in-logical-reasoning`, `deep-hedging-with-reinforcement-learning`, `evonash-marl`, `hi-darts`, `regret-driven-portfolios` — note that `controlled-study-of-multi-agent-debate-...` is technically an LLM-debate paper but the cluster router fired on the literal "multi-agent" keyword first; manual re-cluster acceptable on deep read). Most are internal Cemini research audits prescribing MAPPO-based multi-agent architectures for the trading stack, alongside academic papers on reward shaping, curriculum learning, action masking, and heterogeneous-agent coordination.
+Hub page for the reinforcement-learning and multi-agent-systems cluster of the Cemini research corpus. The corpus skews heavily RL/MARL (87 sources — the dominant cluster at bootstrap; +6 from O 2026-04-27 inbox bootstrap adding `autonomous-ai-agents-for-option-hedging`, `controlled-study-of-multi-agent-debate-in-logical-reasoning`, `deep-hedging-with-reinforcement-learning`, `evonash-marl`, `hi-darts`, `regret-driven-portfolios` — note that `controlled-study-of-multi-agent-debate-...` is technically an LLM-debate paper but the cluster router fired on the literal "multi-agent" keyword first; manual re-cluster acceptable on deep read; +1 from user-dropped 2026-04-27 adding `sakana-conductor-rl-orchestration` — first paper in cluster to RL-train the **orchestration layer** itself, not the worker pool). Most are internal Cemini research audits prescribing MAPPO-based multi-agent architectures for the trading stack, alongside academic papers on reward shaping, curriculum learning, action masking, and heterogeneous-agent coordination.
 
 This page exists as a discovery index — it gives the 86 sources at least one inbound reference and makes the cluster navigable. Pages should be individually deep-read before their findings are promoted to concept or entity pages.
 
