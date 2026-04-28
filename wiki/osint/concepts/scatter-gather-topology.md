@@ -13,9 +13,13 @@ related:
   - entities/infrastructure/sakana-fugu.md
   - entities/infrastructure/redis.md
   - entities/data-sources/telethon.md
+  - sources/4-5-links.md
+  - entities/frameworks/autoagent.md
+  - concepts/context-compression-resume-pattern.md
+  - entities/infrastructure/localai.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 ## Relations
@@ -29,6 +33,10 @@ updated: 2026-04-27
 - @entities/infrastructure/deepseek-api.md — operative LLM brain via cloud API; replaces the retracted local-runtime path
 - @entities/infrastructure/redis.md
 - @entities/data-sources/telethon.md — sibling K3 reframe (2026-04-26); same Cemini-internal-blueprint pattern, same prescribed-vs-deployed collapse caught and reset
+- @sources/4-5-links.md — K8 deep-read 2026-04-28 — multi-topic Cemini-internal evaluation. K8 server-probe finding strengthens this page's Option B default: **the prescribed scatter-gather is still not deployed** (linear 4-node `StateGraph` ships per Track C 2026-04-24). The K8 doc's "scatter-gather as canonical topology" framing is reading the *blueprint* as as-built — same J-pattern collapse caught here on 2026-04-26
+- @entities/frameworks/autoagent.md — K8 promotion 2026-04-28 — sibling LangGraph-orchestration pattern. AutoAgent optimizes *harness configuration* (prompts, tools, routing); scatter-gather optimizes *runtime topology*. Different axes of the same orchestration problem; both would land naturally during any P1-ticket resolution work
+- @concepts/context-compression-resume-pattern.md — K8 promotion 2026-04-28 — the prescribed serialization/recovery layer for any LangGraph topology (linear or scatter-gather). When/if Option A (build Send() fan-out fresh) lands, the cpr-pattern's checkpoint+restore is the natural state-management partner; resume from a crashed scatter-gather becomes feasible without re-running upstream nodes
+- @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — local-inference runtime that any scatter-gather node would call (in the retracted-but-architecturally-coherent local-runtime path). LocalAI's OpenAI-compatible shim means the deployed `services/llm_analyst/deepseek_client.py` works against it with a one-line `base_url` change — the topology is unaffected
 
 ## Raw Concept
 

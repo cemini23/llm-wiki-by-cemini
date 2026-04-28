@@ -12,9 +12,10 @@ related:
   - entities/frameworks/langgraph.md
   - concepts/scatter-gather-topology.md
   - entities/data-sources/telethon.md
+  - entities/infrastructure/localai.md
 maturity: retracted
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-28
 ---
 
 ## Relations
@@ -27,6 +28,7 @@ updated: 2026-04-26
 - @entities/frameworks/langgraph.md — LangGraph is real; DeepSeek-on-LangGraph claim is retracted (API equivalent captured on deepseek-api.md)
 - @concepts/scatter-gather-topology.md — topology is real; DeepSeek-as-LOCAL-LLM-inside-it is retracted (API invocation remains valid, pending wiring)
 - @entities/data-sources/telethon.md — sibling K3 reframe (2026-04-26); same source family (3-19 Cemini-internal blueprints) flagged DeepSeek-R1-14B as the local LLM brain for the Telegram NLP pipeline — that local-deployment claim is the one captured here as retracted
+- @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — candidate runtime for hosting DeepSeek-R1-14B GGUF weights *if* hardware lands. The retraction here is about Cemini *not deploying* the local-weights stack, not about the architecture being unsound; LocalAI is the missing piece an acquirer's GPU-cluster engineer would slot in to revive this path post-acquisition
 
 ## Raw Concept
 

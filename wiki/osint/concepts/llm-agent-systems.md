@@ -70,9 +70,12 @@ related:
   - sources/sort-6-4-3.md
   - sources/sort-8-4-3.md
   - sources/trigreason.md
+  - sources/4-5-links.md
+  - entities/frameworks/autoagent.md
+  - concepts/context-compression-resume-pattern.md
 maturity: draft
 created: 2026-04-26
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 ## Relations
@@ -143,6 +146,9 @@ updated: 2026-04-27
 - @sources/sort-6-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/sort-8-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/trigreason.md — LLM agent-systems source in the Cemini research corpus (O 2026-04-27 — small/large reasoning-model collaboration)
+- @sources/4-5-links.md — LLM agent-systems source in the Cemini research corpus (K8 deep-read 2026-04-28 — Cemini-internal multi-repo evaluation document; 13 H2 sections, 3 promotions including 2 to this cluster's sub-clusters). The doc's Synthesis section maps the "Agent Boss" managerial paradigm onto the deployed LangGraph orchestrator, which fits this cluster's "agent scaffolding + orchestration" sub-cluster
+- @entities/frameworks/autoagent.md — K8 promotion 2026-04-28 — autonomous harness engineering framework, fits the "agent scaffolding + harness engineering" sub-cluster. Score-Driven Hill Climbing + Single-File Registry-Driven Harness named patterns; meta-agent-mutates-target-agent loop
+- @concepts/context-compression-resume-pattern.md — K8 promotion 2026-04-28 — three-phase context-compression / preserve / resume pattern, fits the "long-running agent state management + memory architectures" sub-cluster. Active prescribed-not-built gap on the Cemini stack (zero LangGraph checkpointer references)
 
 ## Raw Concept
 

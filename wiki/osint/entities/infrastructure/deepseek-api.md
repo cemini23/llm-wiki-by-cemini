@@ -14,6 +14,9 @@ related:
   - concepts/ip-sale-readiness.md
   - sources/sakana-conductor-rl-orchestration.md
   - sources/sakana-trinity-llm-coordinator.md
+  - sources/4-5-links.md
+  - concepts/context-compression-resume-pattern.md
+  - entities/infrastructure/localai.md
 maturity: validated
 created: 2026-04-24
 updated: 2026-04-28
@@ -31,6 +34,9 @@ updated: 2026-04-28
 - @sources/sakana-conductor-rl-orchestration.md — user-dropped 2026-04-27 — ICLR 2026 Sakana AI Conductor paper; evaluates **DeepSeek-R1-Distill-Qwen-32B** as one of its open-source worker LLMs (Table 3, Section A.2) — same model family as the deployed DeepSeek-Reasoner brain. In the Conductor framework, the Cemini DeepSeek client at `services/llm_analyst/deepseek_client.py` would be a worker-pool entry, not a per-node analyst — the meta-controller would *decide* when to dispatch to DeepSeek vs GPT-5 vs Claude Sonnet 4 vs Gemini 2.5 Pro per scatter-gather slice. More flexible than the deployed pattern (single shared client across all 4 analyst nodes); the kind of architectural lift an institutional buyer's GPU-cluster engineer would do post-acquisition
 - @entities/infrastructure/sakana-fugu.md — sibling hosted-LLM service in the Cemini-considered API pool. Where DeepSeek serves a single frontier-class model behind the OpenAI-compatible endpoint, Fugu (closed beta, launched 2026-04-24) serves a *learned orchestrator over a pool of frontier models* behind the same shape of endpoint. Both could coexist (DeepSeek as a worker-pool entry inside Fugu, Cemini's existing client repointed at Fugu); could also be redundant (Cemini routes through Fugu's pool, Fugu internally calls DeepSeek). Adds a third option to the @concepts/scatter-gather-topology.md P1 ticket (outsource orchestration to Fugu)
 - @sources/sakana-trinity-llm-coordinator.md — second of the two ICLR 2026 papers underlying Sakana Fugu (ingested 2026-04-28 as Conductor sibling, arXiv 2512.04695). The Trinity poster doesn't enumerate its worker-pool composition the way Conductor's Table 3 does; the DeepSeek-family worker-pool relevance to this entity is therefore mediated *primarily* through Conductor (which explicitly evaluates DeepSeek-R1-Distill-Qwen-32B as a pool entry) and only secondarily through Trinity. Cross-link kept lightweight to capture the Sakana-research-lineage proximity without overstating the operational tie
+- @sources/4-5-links.md — K8 deep-read 2026-04-28 — multi-topic Cemini-internal evaluation. The DeepSeek API is the operative LLM brain LocalAI would sit beside (or substitute, in the retracted local-runtime path); both expose OpenAI-compatible chat-completions
+- @concepts/context-compression-resume-pattern.md — K8 promotion 2026-04-28 — the cpr-pattern's "compression node" would call the DeepSeek API to summarize sprawling debate trajectories into dense strings before persistence to pgvector. DeepSeek is the LLM brain Phase 1 (Compress) of the pattern targets
+- @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — sibling local-inference runtime that exposes the same OpenAI-compatible Chat Completions schema as this hosted API. Architectural slot: when local-inference hardware lands, swap `base_url="https://api.deepseek.com"` for `base_url="http://localai:8080"` with zero Python orchestration changes
 
 ## Raw Concept
 

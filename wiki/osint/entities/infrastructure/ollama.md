@@ -8,9 +8,10 @@ related:
   - sources/3-19-langgraph-scatter-gather-financial-analysis.md
   - entities/infrastructure/deepseek-r1-14b.md
   - entities/infrastructure/deepseek-api.md
+  - entities/infrastructure/localai.md
 maturity: retracted
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-28
 ---
 
 ## Relations
@@ -18,6 +19,7 @@ updated: 2026-04-24
 - @sources/3-18-crypto-integration-technical-audit.md — source PDF proposing Ollama as reference architecture (NOT deployed state)
 - @sources/3-19-langgraph-scatter-gather-financial-analysis.md — same
 - @entities/infrastructure/deepseek-r1-14b.md — companion retraction
+- @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — peer alternative for the same local-runtime slot. Both Ollama and LocalAI wrap llama.cpp + GGUF and expose OpenAI-compatible endpoints; either could fill the slot when hardware lands. K8 evaluates LocalAI in detail; Ollama gets only the retraction lineage on this page
 
 ## Raw Concept
 

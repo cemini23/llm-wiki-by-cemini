@@ -11,9 +11,11 @@ related:
   - concepts/skill-vetting.md
   - entities/frameworks/langgraph.md
   - entities/infrastructure/deepseek-api.md
+  - sources/4-5-links.md
+  - entities/frameworks/autoagent.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-28
 ---
 
 ## Relations
@@ -25,6 +27,8 @@ updated: 2026-04-24
 - @concepts/skill-vetting.md
 - @entities/frameworks/langgraph.md
 - @entities/infrastructure/deepseek-api.md — LLM brain that consumes MCP-exposed tools
+- @sources/4-5-links.md — K8 deep-read 2026-04-28 — Cemini-internal evaluation doc. K8 server-probe finding: **130 registered `@mcp.tool` decorators** (vs the doc's "22" claim, ~6× over). The growth in tool count amplifies the doc's prescription to consolidate FastMCP tools into a hot-reloadable single-file registry behind a fixed adapter boundary
+- @entities/frameworks/autoagent.md — K8 promotion 2026-04-28 — Single-File Registry-Driven Harness pattern is the named architectural recipe for consolidating the 130 `@mcp.tool` decorators into one structured, hot-reloadable file. AutoAgent's pattern is the operative target for the FastMCP tool-registry consolidation work prescribed in K8
 
 ## Raw Concept
 

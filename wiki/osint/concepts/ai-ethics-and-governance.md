@@ -15,9 +15,10 @@ related:
   - concepts/llm-agent-systems.md
   - concepts/ip-sale-readiness.md
   - sources/3-19-compliance-research.md
+  - sources/4-5-links.md
 maturity: draft
 created: 2026-04-26
-updated: 2026-04-26
+updated: 2026-04-28
 ---
 
 ## Relations
@@ -33,6 +34,7 @@ updated: 2026-04-26
 - @concepts/llm-agent-systems.md — sister hub; agent-architecture sources sit there, governance-of-those-agents sits here
 - @concepts/ip-sale-readiness.md — APA-side ethics & disclosure obligations intersect with the Cemini IP-sale due-diligence work; regulator-acceptable governance posture is part of buyer-readiness
 - @sources/3-19-compliance-research.md — Cemini-internal compliance synthesis already in the wiki; this hub provides the broader academic/policy context that the compliance work was built against
+- @sources/4-5-links.md — K8 deep-read 2026-04-28 — multi-topic Cemini-internal evaluation; its Synthesis section pulls heavily from `skills 1 4:5.pdf`, `skills 2 4:5.pdf`, `trading 3 4:5.pdf`, `trading 4:5.pdf`, `ai trading ethics 4:5.pdf` and threads EU AI Act ex-ante/ex-post governance framing across the doc
 
 ## Raw Concept
 

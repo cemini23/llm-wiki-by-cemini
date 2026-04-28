@@ -46,9 +46,12 @@ related:
   - entities/data-sources/opensanctions.md
   - entities/data-sources/telethon.md
   - concepts/ai-ethics-and-governance.md
+  - sources/4-5-links.md
+  - entities/frameworks/autoagent.md
+  - entities/infrastructure/localai.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 ## Relations
@@ -93,6 +96,9 @@ updated: 2026-04-27
 - @concepts/defend-trade-secrets-act.md — K7-tail concept-promotion 2026-04-27 — federal civil cause of action (18 U.S.C. § 1836 / § 1839) backstopping the trade-secret-protection regime that the dual-entity HoldCo / OpCo + intercompany license + Phase 2 step 7 trade-secret protocols collectively support; the IP-sale-prep window's enforceable-IP-rights backbone
 - @concepts/neural-magic-v-facebook.md — K7-tail concept-promotion 2026-04-27 — D. Mass. case-precedent (settled 2023) demonstrating DTSA enforceability against a major-tech defendant in an AI/ML trade-secret context; the K7-cited authority for the economic-value-from-secrecy burden that drives the meticulous-documentation requirement on Cemini's side
 - @entities/platforms/mercury.md — K7-tail concept-promotion 2026-04-27 — rejected alternative to @entities/platforms/brex.md for the corporate-banking layer; documented for completeness as a future-pivot fallback if the Brex pathway stalls
+- @sources/4-5-links.md — K8 deep-read 2026-04-28 — multi-topic Cemini-internal evaluation framed throughout in the institutional-acquirer-due-diligence voice; every H2 section's "IP sale relevance" subsection is a discrete IP-sale-prep argument. K8 finding reinforces the licensing-discipline framing across K6/K7 (zero GPL deps CI gate) — the doc surfaces and *explicitly rejects* AGPL-3.0 + PolyForm Noncommercial + AGPL v3 entries as POISON FLAGS
+- @entities/frameworks/autoagent.md — K8 promotion 2026-04-28 — automated, score-driven harness optimization is the K8 doc's named IP-sale-narrative-strengthener. Demonstrates self-healing architecture capable of autonomous, weekend-based parameter optimization without manual developer intervention — a strong differentiator versus prop-shop IP that typically ships with manual tuning
+- @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — deployed-but-dormant local-inference path is a portable-architecture demonstration. Removes vendor-lock concerns from the acquirer's diligence checklist; an institutional buyer's compliance officer sees it on the architecture diagram and a class of objections (cloud-LLM data egress, vendor pull-out, regulated-data restrictions) drops out before being raised
 - @entities/infrastructure/sakana-fugu.md — Fugu-ingest 2026-04-27 — **directly affects the IP-sale narrative**. An institutional buyer reading the Cemini stack will now ask: "why didn't you just call Sakana Fugu's API?" The defensible answers (vertical-domain MAPPO trader-agents, typed-output Pydantic StrategyRecommendation handoff, custom worker-pool composition with compliance/cost gates, audit-trail completeness via pg_tamperlog, and benchmark-against-Fugu-as-baseline as a credibility marker) must be named explicitly in the IP-sale-prep narrative, not assumed. Note this is an **April 2026 development** that postdates most of the IP-sale-prep audit corpus — the prescriptions in K5/K6/K7 are silent on commercial-API-orchestrator alternatives because they didn't yet exist as commercial products
 
 ## Raw Concept

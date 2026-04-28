@@ -12,9 +12,11 @@ related:
   - concepts/ip-sale-readiness.md
   - entities/infrastructure/deepseek-api.md
   - sources/crypto-3-4-11.md
+  - sources/4-5-links.md
+  - entities/infrastructure/localai.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-27
+updated: 2026-04-28
 
 # K5 update (2026-04-26): container count corrected 18-26 → 40 per server probe; Swarm-inactive call-out added; full container manifest enumerated.
 # K6 update (2026-04-27): bidir backlink added for sources/3-10-algorithmic-trading-ip-sale-audit.md (audit's deployed-state inventory referenced "18 Docker containers" — reconciled with K5 40-container probe in K6 prescribed-vs-deployed gap table).
@@ -29,6 +31,8 @@ updated: 2026-04-27
 - @sources/forex-research-3-18.md
 - @concepts/ip-sale-readiness.md
 - @entities/infrastructure/deepseek-api.md — host that holds the API client + key
+- @sources/4-5-links.md — K8 deep-read 2026-04-28 — the doc's "128GB RAM CPU-only Hetzner VPS" claim is **~18× over** actual server state per `free -g` 2026-04-28 (7 GB total RAM). Strongest stale-snapshot finding to date in the K-series; documented in the K8 source page's server-state calibration table. The lineage of the "128 GB" figure is the 2026-04-23 hetzner.md frontmatter NEEDS-VERIFICATION baseline, not first-hand server measurement
+- @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — local-inference runtime targeting this host. Deployment is hardware-gated (matches the @entities/infrastructure/ollama.md / @entities/infrastructure/deepseek-r1-14b.md retraction lineage); the 7 GB constraint amplifies LocalAI's CPU-optimized + GGUF-quantized story rather than weakening it
 
 ## Raw Concept
 

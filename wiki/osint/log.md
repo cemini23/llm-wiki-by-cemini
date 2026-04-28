@@ -8,6 +8,61 @@ Newest entries on top.
 
 ---
 
+## [2026-04-28] deep-read | K8 — `sources/4-5-links.md` Cemini-internal multi-topic evaluation (13 GitHub repos + 1 academic-policy synthesis)
+
+K-series continuation after K7 (`238c63d`) closed the corporate-structure trio. K8 target was selected by the next-most-cited routing heuristic: `sources/4-5-links.md` was the highest-citation cited-but-unread stub at 5 inbound. Document is a Cemini-internal evaluation of 13 GitHub repositories against the deployed Cemini stack on a fixed 8-section template (What is this? / Architecture patterns worth stealing / Algorithms or techniques worth evaluating / Code or tooling worth examining / What they got wrong or overcomplicated / IP sale relevance / Solo-dev filter / Conflicts with the deployed stack / Actionable Roadmap Directives), plus a 14th synthesis section pulling from `skills 1 4:5.pdf`, `skills 2 4:5.pdf`, `trading 3 4:5.pdf`, `trading 4:5.pdf`, `ai trading ethics 4:5.pdf`. Sibling document `4_5 links 2.docx` (12 additional H2 sections, same shape, same authoring date 2026-04-05, one duplicate cross-doc evaluation `EliaAlberti/cpr-compress-preserve-resume`) is **deferred to K9**.
+
+### What shipped
+
+- **`wiki/sources/4-5-links.md`** — full source-page rewrite. `read_status: validated`, expanded `related:` (15 entries), substantive 14-section Narrative covering each H2 evaluation + the academic-policy Synthesis. **Server-state calibration table** captured the strongest stale-snapshot finding to date in the K-series:
+  - **128 GB RAM (doc claim)** vs **7 GB total RAM** (`free -g` 2026-04-28) — **~18× over actual**. Lineage = 2026-04-23 hetzner.md frontmatter NEEDS-VERIFICATION baseline, not first-hand server measurement.
+  - **22 `@mcp.tool` decorators (doc claim)** vs **130 decorators** (server probe 2026-04-28) — **~6× under actual**.
+  - **April 14-17 RL retrain window (doc claim, "MAPPO retrain happens this week")** vs **logic-audit-and-bugfix work in that window** (no MAPPO retrain). Doc captured planned-but-not-executed work.
+  - **40 deployed containers** (consistent with K5/K6 server probes 2026-04-26 / 2026-04-27).
+  - **LangGraph checkpointer NOT WIRED** — neither `PostgresSaver` nor `MemorySaver` is invoked anywhere in `agents/orchestrator.py`. Doc's recommendation to wire one for the cpr-pattern compression node is prescribed-not-built.
+
+### Promotion discipline (3 of 13 H2 sections promoted to canonical pages)
+
+- **`wiki/entities/frameworks/autoagent.md`** — NEW entity page. **Score-Driven Hill Climbing** orchestration pattern (deterministic score → exploit; ambiguous score → explore) + **Single-File Registry-Driven Harness** code architecture (the entire workflow registry sits in one `registry.py` file as a Python list — opposite of LangGraph's distributed-decorators-across-files pattern; collapses cognitive surface area for solo-dev review). MIT 🟢 license. NOT-deployed status documented; cluster-routes to `concepts/llm-agent-systems.md`. Promotion rationale: the two patterns are reusable architectural primitives that don't fit cleanly under any existing concept hub.
+- **`wiki/concepts/context-compression-resume-pattern.md`** — NEW concept page. **Library-agnostic 3-phase pattern** (Compress: LLM-summarizes-rolling-window; Preserve: pgvector + tamper-anchored audit hash; Resume: bi-directional save/load). Distinct from forward-only-append cryptographic-audit-trail (cpr is read-write — debate trajectories get *replayed* into context windows, not just verified). Cross-doc duplicate evaluation in `4_5 links 2.docx`. Promotion rationale: a pattern, not a library — `EliaAlberti/cpr-compress-preserve-resume` is the reference implementation (PolyForm Noncommercial 1.0.0 🔴 — toxic for IP sale; pattern itself is reusable in-house under a clean license).
+- **`wiki/entities/infrastructure/localai.md`** — NEW entity page. **Standardized API Shim** architecture pattern (OpenAI-compatible REST endpoint as portable abstraction over llama.cpp + GGUF). MIT 🟢 license. CPU-optimized + GGUF-quantized mandatory under the 7 GB RAM constraint (not optional — 14B-FP16 weights alone ~28 GB before the inference overhead). NOT-deployed status; sibling to the retracted ollama.md / deepseek-r1-14b.md. Promotion rationale: when local-inference hardware lands, this is the architectural slot — swap `base_url="https://api.deepseek.com"` for `base_url="http://localai:8080"` with zero Python orchestration changes. Cross-link to the cpr-pattern compression node.
+
+### Snippets-only (10 of 13 H2 sections retained as source-page Snippets, no canonical promotion)
+
+- `lukechampine/blob` (CC0 🟢) — ergonomic Go blob primitive; not Python-stack-relevant.
+- `gjbex/Python-for-Data-Science` (CC-BY-NC-SA 🔴) — pedagogical material; license-toxic.
+- `LongFlowSimulation/lfs-engine` (LGPL-3.0 🟡) — hydrodynamics; off-topic for finance stack.
+- `microsoft/LIDA` (MIT 🟢) — auto-visualization library; promising but solo-dev-filter rejected (Streamlit-replacement scope).
+- `huggingface/setfit` (Apache-2.0 🟢) — few-shot text classification; FinBERT-replacement candidate but currently no FinBERT in deployed stack (the K3 Telegram retraction stripped it out).
+- `BerriAI/litellm` (MIT 🟢) — LLM proxy; valuable as a future routing layer, but the deployed `services/llm_analyst/deepseek_client.py` is already a thin OpenAI-SDK wrapper, integration-cost = familiar idiom; defer.
+- `vacovaco/llmstxt` (MIT 🟢) — site-instructions for LLM crawlers; no Cemini surface area exposed for crawlers yet.
+- `hwchase17/langchain-chatbot` (MIT 🟢) — LangChain reference; LangGraph already operative, LangChain integration would be churn.
+- `langchain-ai/langgraph-supervisor-py` (MIT 🟢) — supervisor recipe library; pulled patterns inline into `concepts/scatter-gather-topology.md` historically; doesn't need its own page.
+- `eosphoros-ai/DB-GPT` (AGPL-3.0 🔴) — multi-agent data-app platform; AGPL is institutional-acquirer poison.
+
+### Bidirectional backlinks (10 cluster + entity touches)
+
+`entities/frameworks/langgraph.md` (autoagent + cpr-pattern + 4-5-links — checkpointer-not-wired calibration), `entities/frameworks/fastmcp.md` (autoagent + 4-5-links — 130-tool calibration), `concepts/scatter-gather-topology.md` (all 3 K8 promotions — autoagent registry pattern, cpr cross-debate state, localai swap-in), `concepts/llm-agent-systems.md` (autoagent + cpr-pattern), `concepts/cryptographic-audit-trail.md` (cpr-pattern — forward-only-append vs bidirectional-save/load distinction), `concepts/ip-sale-readiness.md` (autoagent — solo-dev-filter pattern + localai — portable LLM-runtime abstraction), `entities/infrastructure/hetzner.md` (localai — 7 GB RAM constraint amplifies the CPU-optimized story), `entities/infrastructure/deepseek-api.md` (cpr-pattern — Compress-phase summarization target + localai — same OpenAI-compatible Chat Completions schema), `entities/infrastructure/ollama.md` (localai — peer alternative for the same retracted local-runtime slot), `entities/infrastructure/deepseek-r1-14b.md` (localai — candidate runtime for hosting GGUF weights *if* hardware lands).
+
+### Index update
+
+3 new rows added in parallel: LocalAI in Infrastructure & databases (after Sakana Fugu, before Ollama); AutoAgent in Frameworks & libraries (after FinBERT); context compression / preserve / resume pattern in Trading strategy concepts (after scatter-gather-topology).
+
+### Lint state at ship
+
+```
+Wiki lint scan — 373 pages indexed (+3 from Trinity baseline of 370)
+Outbound edges: 1718 (+56)
+Orphans: 0 · Bidir gaps: 0 · Dangling: 0 · Missing @paths: 0
+Cited-but-unread: 133 (134 → 133, K8 source promoted from unread-stub → read)
+```
+
+### Pattern note
+
+K8 is the **strongest stale-snapshot finding** in the K-series. Where K3/K4 caught prescription-as-as-built collapses on Cemini-internal blueprint sources, and K5/K6/K7 caught smaller cross-source corroboration deltas, K8 caught a 23-day-old internal evaluation that captured **18× over** on RAM, **6× under** on FastMCP tools, and a **planned-but-not-executed RL retrain window**. Lineage analysis: the 128 GB RAM figure traces back through hetzner.md frontmatter (created 2026-04-23) — never first-hand server measurement, and was never re-verified before being inherited by the 4-5-links.md doc author. K8 also formally introduces the **Promotion vs Snippets-only discipline** as a K-series practice: 3-of-13 H2 sections promoted because their patterns (Score-Driven Hill Climbing, Single-File Registry, cpr 3-phase, Standardized API Shim) are reusable architectural primitives; 10-of-13 retained as source-page Snippets only because their value is captured by paraphrase + license-tag without warranting a canonical page. Future K-series passes on multi-topic link-aggregate docs (the `4-4-link-re*` / `4-3-link-re*` / `4-6-links` / `3-26-link-re-3` / `3-28-links-2` queue at 3-inbound each) can adopt this discipline directly.
+
+---
+
 ## [2026-04-28] ingest | Sakana Trinity (ICLR 2026 sibling to Conductor, second paper underlying Fugu)
 
 User-authorized 2026-04-28 follow-up to the 2026-04-27 Conductor + Fugu wave: pulled the Trinity paper to close the open `[NEEDS VERIFICATION 2026-04-27]` flags on both `sources/sakana-conductor-rl-orchestration.md` (sibling-paper item) and `entities/infrastructure/sakana-fugu.md` (parent-academic-paper hook 4). Trinity is the **second of the two ICLR 2026 Sakana AI papers underlying Fugu's productization** — Conductor (RL-trained orchestrator, 2512.04388) + Trinity (ES-trained coordinator, 2512.04695) → Fugu Ultra + Fugu Mini.
