@@ -37,10 +37,11 @@ updated: 2026-04-28
 - **Type**: GitHub repo + npm package + landing page
 - **URLs**: https://github.com/atomicmemory/llm-wiki-compiler / https://llmwiki.app/
 - **Retrieved**: 2026-04-28 (via Exa `crawling_exa`)
-- **Stars**: 701; **License**: MIT 🟢
-- **Created**: 2026-04-05; **Last push**: 2026-04-23; **Latest release**: v0.2.0 (2026-04-16)
+- **Stars**: 701 (as of 2026-04-28 ingest); **License**: MIT 🟢
+- **Created**: 2026-04-05; **Last push**: 2026-04-23; **Latest release at ingest time**: v0.2.0 (2026-04-16)
+- **Latest release as of WTE-1 smoke test 2026-04-28**: **v0.5.1** — 3 minor versions newer than our ingest baseline; project shipped rapidly between docs read and smoke test. Smoke test confirms v0.5.1 CLI surface matches the v0.2.0 README we synthesized from; subcommand names + behavior unchanged. No `compile` schema breakage observed. Worth a re-read of changelogs when the librarian-server Phase 3 lands to capture any new semantic-search or MCP-tool additions
 - **Stack**: TypeScript (99.8%), Node.js ≥ 18
-- **Read status**: read (deep-read landing page + README; comparing against schema)
+- **Read status**: read (deep-read landing page + README; comparing against schema; supplemented 2026-04-28 with WTE-1 smoke-test findings — see @concepts/wiki-tooling-evaluation.md "Path A SMOKE-TEST PARTIAL-PASS" section)
 
 ## Narrative
 

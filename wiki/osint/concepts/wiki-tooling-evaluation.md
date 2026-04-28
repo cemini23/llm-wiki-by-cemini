@@ -158,17 +158,47 @@ Reasons: Linux-only (CAP_SYS_ADMIN namespace); fewer features than llm-wiki-comp
 
 [DECISION 2026-04-28]: smoke-test path = **Claude Code zero-config Anthropic auth**. Ollama-for-embeddings deferred pending external storage (user noted ~25 GB free on the laptop — see ROADMAP item E "Storage compaction"; embeddings models + Ollama runtime are practical but not comfortable on current free disk). Index-based query routing is llm-wiki-compiler's default per its own README "Limitations" section, so the smoke test runs cleanly without semantic embeddings; embeddings layer is additive when the hardware lands.
 
-#### Path A — Claude Code zero-config (recommended for smoke test)
+#### Path A — Claude Code zero-config `[SMOKE-TEST PARTIAL-PASS 2026-04-28; ZERO-CONFIG CLAIM RETRACTED]`
 
 ```bash
+# Original recipe — DOES NOT WORK as-is in default Claude Code installations:
 npm install -g llm-wiki-compiler
 cd "/Users/claudiobarone/Desktop/OSINT WORKSPACE"
-llmwiki compile --review   # reads ~/.claude/settings.json automatically
+llmwiki compile --review
 ```
 
-Per the project's README (`sources/atomicmemory-llm-wiki-compiler.md` S1+ supplementary): *"If those values are not set in shell env or .env, llmwiki will try Anthropic-compatible values from `~/.claude/settings.json` (env block) for: ANTHROPIC_API_KEY, ANTHROPIC_AUTH_TOKEN, ANTHROPIC_BASE_URL, ANTHROPIC_MODEL."* Effectively zero config — taps the Anthropic credentials Claude Code has already set up. No new payment, no new account.
+**Smoke-test result (2026-04-28)** — sandbox at `briefs/2026-04-28_wte-1-smoke-sandbox/`. Five of six steps passed:
 
-The `--review` flag stages output to `.llmwiki/candidates/` rather than landing in `wiki/` directly; nothing in the live wiki gets overwritten until `llmwiki review approve <id>` is run. Clean rollback: delete `.llmwiki/candidates/` and the experiment leaves no trace.
+1. ✅ Install via `npx -y llm-wiki-compiler --version` works without sudo (Node v24.13.0 on macOS; npm 11.6.2; `/usr/local` not user-writable so global install would need sudo, but npx-driven invocation avoids that)
+2. ✅ Version resolved: **v0.5.1** (newer than the v0.2.0 our `sources/atomicmemory-llm-wiki-compiler.md` page documents — project shipped 3 minor versions since our 2026-04-28 ingest)
+3. ✅ CLI surface (`llmwiki --help`) matches our wiki source page: `ingest / compile / review / query / watch / lint / schema / serve` subcommands present
+4. ✅ Schema introspection (`llmwiki schema show`) — default schema has 4 page kinds (`concept` / `entity` / `comparison` / `overview`) — different vocabulary from our (`source` / `entity` / `concept` / `brief`) but compile pipeline doesn't enforce schema as a hard gate
+5. ✅ Ingest works: `llmwiki ingest <local-file>` copies the file into `sources/` with a llmwiki-specific frontmatter wrapper (non-destructive; preserves original content)
+6. ❌ **Compile fails on auth wall** — `Error: Anthropic credentials are required for the "anthropic" provider`
+
+**Why the auth wall fired** — the README's "Path A zero-config" promise depends on a precondition that is NOT met by default in Claude Code installations:
+
+- `ANTHROPIC_API_KEY` and `ANTHROPIC_AUTH_TOKEN` env-var **names** are present in Claude Code's subprocess shell env, but their **values are empty strings** (length 0). The pre-flight `env | grep ANTHROPIC` showed the variable names; only `echo -n $VAR | wc -c` revealed the empty values.
+- `~/.claude/settings.json` has only `sshConfigs` and `enabledPlugins` keys — **no `env` block**. The README's secondary fallback (`reads ~/.claude/settings.json env block`) only works if the user has manually added one with their Anthropic API key.
+- `CLAUDE_CODE_OAUTH_TOKEN` is present (108 chars) but llm-wiki-compiler does not accept OAuth tokens — only Anthropic API keys (`sk-ant-...`).
+
+**This is a real finding, not a tooling bug.** The "zero-config" framing in the README assumes the user has previously configured an Anthropic API key in their Claude Code `settings.json` env block (which some installations do; ours doesn't). For our setup, adoption requires explicit API-key configuration via shell env, local `.env` file, or manually-added `env` block in `settings.json`.
+
+**Decision (2026-04-28)**: Compile pass deferred until the librarian server is provisioned (Phase 1 of @concepts/librarian-server-architecture.md). At Phase 3 on the librarian server, the existing **DeepSeek API key from `/opt/cemini/.env` is the natural auth source** (already managed as a server-stack credential; no new payment / new account / laptop-side env-var-fiddling). Smoke test on laptop is partial-pass-sufficient: tool is real, installs cleanly, CLI surface matches expectations, ingest works, compile auth-config can be handled at server provisioning time.
+
+**Updated recipe — for the librarian server (Phase 3)**, NOT for the laptop:
+
+```bash
+# On the librarian server (Hetzner CPX21), once provisioned:
+export LLMWIKI_PROVIDER=openai
+export LLMWIKI_MODEL=deepseek-chat   # or deepseek-v4-flash / deepseek-v4-pro
+export OPENAI_API_KEY=$DEEPSEEK_API_KEY   # already in /opt/cemini/.env on production server; copy to librarian server env at provisioning
+export OPENAI_BASE_URL=https://api.deepseek.com
+cd /opt/librarian
+llmwiki compile --review
+```
+
+The DeepSeek-no-embeddings caveat from Path B below still applies — semantic-embedding layer comes from the librarian server's own Ollama + nomic-embed-text instance per @concepts/librarian-server-architecture.md.
 
 #### Path B — DeepSeek API (production deployment if smoke passes)
 
