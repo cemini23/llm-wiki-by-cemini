@@ -14,6 +14,9 @@ related:
   - entities/infrastructure/localai.md
   - entities/frameworks/fastmcp.md
   - concepts/librarian-server-architecture.md
+  - sources/kepano-obsidian-skills.md
+  - sources/obsidian-second-brain-eugeniughelbur.md
+  - sources/bare-bones-memory-southpolesteve.md
 maturity: validated
 read_status: read
 created: 2026-04-28

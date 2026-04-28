@@ -14,6 +14,8 @@ related:
   - sources/agentmemory-rohitg00-cpr-impl.md
   - sources/willynikes2-knowledge-base-server.md
   - concepts/librarian-server-architecture.md
+  - concepts/ai-organisation-design.md
+  - sources/bare-bones-memory-southpolesteve.md
 maturity: draft
 created: 2026-04-28
 updated: 2026-04-28

@@ -15,6 +15,9 @@ related:
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/agentmemory-rohitg00-cpr-impl.md
   - sources/llm-wiki.md
+  - sources/gemini-dr-link-eval-2026-04-28.md
+  - sources/playwright-mcp-microsoft.md
+  - concepts/ai-organisation-design.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28

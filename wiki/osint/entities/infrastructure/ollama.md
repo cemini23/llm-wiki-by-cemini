@@ -10,6 +10,7 @@ related:
   - entities/infrastructure/deepseek-api.md
   - entities/infrastructure/localai.md
   - concepts/librarian-server-architecture.md
+  - sources/langextract-google.md
 maturity: retracted
 created: 2026-04-23
 updated: 2026-04-28

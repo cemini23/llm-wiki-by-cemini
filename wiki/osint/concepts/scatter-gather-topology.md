@@ -19,6 +19,10 @@ related:
   - entities/infrastructure/localai.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/librarian-server-architecture.md
+  - sources/gemini-dr-link-eval-2026-04-28.md
+  - sources/omc-talent-container-paper.md
+  - concepts/ai-organisation-design.md
+  - sources/vibe-trading-hkuds.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

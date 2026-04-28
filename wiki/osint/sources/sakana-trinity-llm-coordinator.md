@@ -12,6 +12,8 @@ related:
   - entities/frameworks/langgraph.md
   - entities/infrastructure/sakana-fugu.md
   - sources/sakana-conductor-rl-orchestration.md
+  - concepts/ai-organisation-design.md
+  - sources/omc-talent-container-paper.md
 maturity: validated
 read_status: read
 created: 2026-04-28

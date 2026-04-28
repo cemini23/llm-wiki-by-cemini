@@ -10,6 +10,8 @@ related:
   - sources/3-19-ip-sale-research.md
   - concepts/cryptographic-audit-trail.md
   - entities/frameworks/fastmcp.md
+  - concepts/ai-organisation-design.md
+  - sources/omc-talent-container-paper.md
 maturity: retracted
 created: 2026-04-23
 updated: 2026-04-24

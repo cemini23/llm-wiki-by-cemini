@@ -19,6 +19,17 @@ related:
   - entities/infrastructure/deepseek-api.md
   - entities/frameworks/fastmcp.md
   - concepts/librarian-server-architecture.md
+  - sources/gemini-dr-link-eval-2026-04-28.md
+  - sources/omc-talent-container-paper.md
+  - concepts/ai-organisation-design.md
+  - sources/vibe-trading-hkuds.md
+  - sources/langextract-google.md
+  - sources/sentrux-ast-sensor.md
+  - sources/claude-code-harness-chachamaru.md
+  - sources/kepano-obsidian-skills.md
+  - sources/obsidian-second-brain-eugeniughelbur.md
+  - sources/playwright-mcp-microsoft.md
+  - sources/bare-bones-memory-southpolesteve.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28
@@ -284,6 +295,66 @@ Recommended sequence (stamps on this concept page as decisions land):
 5. **Steal-from agentmemory**: open a separate concept-page-or-brief for the cpr-pattern Python port plan; coordinate with the K8 LangGraph-checkpointer ROADMAP row. **Most natural deployment target for cpr-pattern is the librarian server**, not the constrained production trading-stack box.
 
 If smoke fails: this page becomes the **"why we kept hand-rolling"** retraction-of-record, including the specific failure mode that bailed; @concepts/librarian-server-architecture.md is paused at Phase 0 (no provisioning) until alternatives are evaluated.
+
+## Wave 2 — Gemini Deep Research findings (2026-04-28)
+
+After Wave 1 (this page above) decided **adopt llm-wiki-compiler**, the user authored a Gemini Deep Research brief at `briefs/2026-04-28_gemini-deep-research-link-evaluation-prompt.md` (gitignored) and ran 24 URLs through Gemini 2.5 Deep Research mode. Result: `Evaluating Code for Trading and Wiki 4_28.docx` → ingested 2026-04-28 as @sources/gemini-dr-link-eval-2026-04-28.md.
+
+**Wave 2 doesn't change the Wave 1 librarian decision.** None of the 24 URLs are direct alternatives to llm-wiki-compiler. Wave 2 instead expanded the evaluation surface to: agent harnesses, trading-stack libraries, Obsidian + Claude Code skills, browser automation, license-poison-pill family expansions, ingest-layer extractors. The findings reshape *what else* gets adopted/stolen-from/rejected without disturbing the Wave 1 spine.
+
+### Wave 2 register summary (decisions added 2026-04-28)
+
+**Adopt-for-Cemini (production stack — 2 candidates, both new addition decisions):**
+- `[ADOPT-PENDING-VERIFICATION 2026-04-28]` @sources/vibe-trading-hkuds.md — MIT, Python+FastAPI+MCP, 29 expert agent swarms + 7 backtest engines + CCXT. Drops onto `agents/orchestrator.py` via `@mcp.tool` decorators. **Pre-deploy gates**: strip React frontend; swap yfinance for Polygon/Alpaca; verify shadow-account state persistence; aggressive Docker memory caps.
+- `[ADOPT-PENDING-VERIFICATION 2026-04-28]` @sources/langextract-google.md — Apache-2.0, Python, source-grounded JSON-schema extraction. Replaces brittle regex/LangChain extractors in EDGAR + GDELT ingest layers. **Block ship until DeepSeek strict-schema JSON-enforcement compatibility is verified** (test protocol documented on the source page).
+
+**Adopt-for-Workflow (laptop — 6 candidates, all new):**
+- `[ADOPT 2026-04-28]` @sources/kepano-obsidian-skills.md — eliminates Markdown syntax hallucinations in rapid wiki curation; `obsidian-bases` sub-skill provides flawless YAML templates
+- `[ADOPT 2026-04-28]` @sources/obsidian-second-brain-eugeniughelbur.md — 31 commands + 4 cron agents; runs on laptop only (NEVER on librarian server — autonomous-rewriting collides with llm-wiki-compiler's static-compiler philosophy); requires git-tracked vault before every cron run; Perplexity Sonar Pro bridge for cited research
+- `[ADOPT 2026-04-28]` @sources/claude-code-harness-chachamaru.md — sub-10ms hooks enforcing `Plan→Work→Review→Ship`; secret-leak prevention; main-branch force-push prevention. Pin Claude Code version (heuristically tuned for `claude-opus-4-7`)
+- `[ADOPT 2026-04-28]` @sources/sentrux-ast-sensor.md — Rust + tree-sitter AST quality governor with deterministic 0–10000 score; MCP-server-mode for live agent feedback; CI/CD-mode for hard quality gates
+- `[ADOPT 2026-04-28]` @sources/playwright-mcp-microsoft.md — DOM accessibility-tree exposure for LLMs (deterministic, not pixel-screenshot-based); **Defer for Cemini production** until 14-day soak passes; Microsoft official, Apache-2.0
+- `[ADOPT 2026-04-28]` @sources/bare-bones-memory-southpolesteve.md — `AGENTS.md` + `active-projects.md` + `session-logs/` directory protocol; pure methodology, zero runtime, IP-taint risk = 0 despite license-not-found
+
+**Steal-from (3 candidates):**
+- `mercury-agent` (MIT, TS) — extract SQLite FTS5 schemas + JSONL episodic-log compaction algorithms. Don't deploy. Patterns applicable to `wiki_lint.py` enhancements
+- `AutoHedge` (MIT, Python+Swarms) — extract Director/Quant/Risk/Execution prompt structures, port to LangGraph nodes. Don't import the Swarms framework (less deterministic than LangGraph; Solana/Jupiter focus is misaligned with Cemini's Alpaca/OANDA/Coinbase)
+- `mattpocock/skills` (MIT) — extract `/grill-me` + `/caveman` + `/tdd` patterns. Don't load whole library (context-saturation risk)
+
+**Reference-only (1):** `agency-agents` — 147 personas; study for prompt-engineering insights. Validated 2026-04-28 by OMC paper which uses agency-agents as Type-2 prompt source
+
+**Reject — license poison-pills (3):**
+- `everywall/ladder` (GPL-3.0) — confirms IP-sale-readiness GPL-3.0 reject extension
+- `Fincept-Corporation/FinceptTerminal` (AGPL-3.0 + Commercial dual) — confirms AGPL-3.0 transitive-taint reject
+- `mksglu/context-mode` (ELv2) — adds Elastic License 2.0 to the source-available-not-OSI reject family alongside SSPL/PolyForm-Noncommercial
+
+**Reject — domain mismatch / closed-source (5):** `hyperframes` (video rendering), `agentic-inbox` (Cloudflare lock-in), `toprank` (SEO/Ads), `claude-ads` (PPC audit), `sci-bot.ru` (proprietary closed-source, no API, Sci-Hub-affiliated)
+
+**Defer — pending verification (1):** `camofox-browser` (MIT) — RAM profiling required for the C++-patched Firefox fork before deploying to Hetzner
+
+**Unavailable (2):** `plurai.ai/papers` (mis-routes to sci-bot.ru), `Google-Finance-Api` (404)
+
+### Spot-check protocol — established and validated this wave
+
+Every Adopt + Steal-from URL went through Exa `crawling_exa` against the GitHub repo root in a single batched call (10 URLs ≈ ~1 Exa unit cost). All 10 verified — claimed licenses match, repos exist, star counts within 0–28% drift (mercury-agent the worst at ~28% overstatement, immaterial to a Steal-from recommendation). The protocol is now **codified at @sources/gemini-dr-link-eval-2026-04-28.md** as a reusable 9-step pattern for future Gemini DR waves:
+
+1. Save report to `research to be indexed/`
+2. Read fully (chunked if >25k tokens)
+3. Build upstream brief if absent
+4. Batch-crawl every Adopt + Steal-from URL via `crawling_exa` (one call)
+5. Compare claimed license + stars + last-push against Exa metadata; flag drifts >25% on stars or license mismatch
+6. Promote ONLY spot-check-verified Adopt URLs to dedicated `wiki/sources/<slug>.md`
+7. Capture Reject + Reference-only + Steal-from + Defer URLs in canonical Gemini DR report's table only — no dedicated stub pages
+8. Update the upstream concept page (here: WTE) with a "Wave N — Gemini DR" section
+9. Lint, two-commit, push
+
+### Wave 2's effects on this page's recommendations
+
+- Wave 1 recommendation register (llm-wiki-compiler adopted, agentmemory steal-from-as-pattern, FalkorDB+kb-server defer, memex reject, emtwiki reference-only) — **unchanged**.
+- Wave 2 adds 8 new Adopt source pages and 3 Steal-from references that don't compete with Wave 1.
+- License-poison-pill family on @concepts/ip-sale-readiness.md gains 3 confirmations (GPL-3.0, AGPL-3.0, ELv2) from Wave 2.
+- The OMC paper (sibling ingest @sources/omc-talent-container-paper.md) validates Wave 2's Reference-only classification of `agency-agents` — OMC explicitly uses agency-agents as Type-2 prompt source, not as deployable artefact, exactly matching the wiki's "study, don't install" recommendation.
+- @concepts/ai-organisation-design.md (sibling concept page from OMC ingest) introduces a third abstraction layer (organisation-level) above multi-agent-coordination — orthogonal to this WTE page's library-tooling decision but worth cross-referencing for any future Cemini orchestrator-replacement question.
 
 ## Snippets
 

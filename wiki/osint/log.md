@@ -8,6 +8,66 @@ Newest entries on top.
 
 ---
 
+## [2026-04-28] ingest | Gemini DR Wave 2 (24 URLs) + OneManCompany paper (Yu et al, Huawei + UCL + U Liverpool, arXiv 2604.22446v1)
+
+User dropped two artefacts into `research to be indexed/` 2026-04-28: (1) the Gemini Deep Research output (`Evaluating Code for Trading and Wiki 4_28.docx`, 90 KB / 1179 lines / 24 URL evaluations) responding to the brief authored earlier the same day at `briefs/2026-04-28_gemini-deep-research-link-evaluation-prompt.md` (gitignored); (2) the OneManCompany paper PDF (33 pages including 9-page appendix, arXiv 2604.22446v1, 24 Apr 2026, Huawei Noah's Ark Lab + UCL + U Liverpool).
+
+### What shipped
+
+**11 new wiki pages** + **1 concept page update** + **1 index update** + **1 log entry (this)**:
+
+**Sources (10):**
+- `wiki/sources/gemini-dr-link-eval-2026-04-28.md` — canonical Gemini DR ingest with full 24-URL summary table, anti-hallucination spot-check protocol, Wave 2 register
+- `wiki/sources/omc-talent-container-paper.md` — OMC paper deep-read with full 5-pillar synthesis (Talent+Container, E²R, DAG+FSM, self-evolution, HR pipeline) + Cemini-relevance analysis + comparison table vs MetaGPT/AutoGen/CrewAI/OpenHands/AIOS/AgentScope/Paperclip
+- `wiki/sources/vibe-trading-hkuds.md` — **Adopt-for-Cemini** (MIT, Python+FastAPI+MCP, 29 swarms + 7 backtest engines)
+- `wiki/sources/langextract-google.md` — **Adopt-for-Cemini** (Apache-2.0, source-grounded JSON-schema extraction; Google Research, 36k ★)
+- `wiki/sources/sentrux-ast-sensor.md` — Adopt-for-Workflow (MIT, Rust+tree-sitter AST quality governor, MCP-server-mode)
+- `wiki/sources/claude-code-harness-chachamaru.md` — Adopt-for-Workflow (MIT, Go+Shell, sub-10ms hooks for Plan→Work→Review→Ship)
+- `wiki/sources/kepano-obsidian-skills.md` — Adopt-for-Workflow (MIT, kepano = Obsidian CEO; agent skills for Markdown/Bases/JSON Canvas; 27k ★)
+- `wiki/sources/obsidian-second-brain-eugeniughelbur.md` — Adopt-for-Workflow LAPTOP-ONLY (MIT, 31 commands + 4 cron agents; explicit data-destruction risk; vault must be git-tracked before each cron run)
+- `wiki/sources/playwright-mcp-microsoft.md` — Defer-Cemini / Adopt-Workflow (Apache-2.0, Microsoft official, 31k ★, DOM accessibility-tree exposure)
+- `wiki/sources/bare-bones-memory-southpolesteve.md` — Adopt-for-Workflow methodology-only (gist, license NOT FOUND but pure protocol — IP-taint risk = 0)
+
+**Concept page (1):**
+- `wiki/concepts/ai-organisation-design.md` — synthesis of OMC's 5 patterns (Talent+Container, Talent Market 3 sourcing types, E²R tree search, DAG+FSM, self-evolution + HR pipeline). Three Cemini decision points open. Decoupled from `scatter-gather-topology.md` (runtime topology) and `llm-agent-systems.md` (corpus index) — distinct paradigm at organisational layer above coordination
+
+**WTE concept update (1):**
+- `wiki/concepts/wiki-tooling-evaluation.md` — added "Wave 2 — Gemini Deep Research findings" section codifying the 9-step spot-check protocol, the Wave 2 register summary (Adopt/Steal-from/Defer/Reject/Reference-only/Unavailable counts), Wave 2 effects on this page's recommendations. Wave 1 librarian decision (adopt llm-wiki-compiler) **unchanged** — none of 24 URLs are direct alternatives. Bidir backlinks added for all 11 new pages
+
+### Anti-hallucination spot-check (the methodology novelty)
+
+Per the brief's own usage notes, every Adopt + Steal-from URL went through `mcp__exa__crawling_exa` against the GitHub repo root in a **single batched call** (10 URLs in one Exa unit). All 10 verified — every claimed license matched, every repo exists, star counts within 0–28% drift. The single material drift was `mercury-agent` at ~28% overstatement (1.6k claimed vs 1156 actual) — immaterial to a Steal-from recommendation. **Result: Gemini DR's primary-source citations held up.** Initial suspicion that the all-2026-04-28 release-date pattern was hallucinated proved wrong — Vibe-Trading really did ship v0.1.6 09:49 UTC the same day Gemini ran. The 9-step protocol is now codified at `wiki/sources/gemini-dr-link-eval-2026-04-28.md` for future Gemini DR waves.
+
+### Wave 2 register summary
+
+- **Adopt-for-Cemini (2)**: Vibe-Trading, langextract — both pre-deploy gates open (DeepSeek strict-schema verification for langextract; React-strip + yfinance-swap + shadow-account-state-persistence for Vibe-Trading)
+- **Adopt-for-Workflow (6)**: kepano-obsidian-skills, obsidian-second-brain, claude-code-harness, sentrux, playwright-mcp (also Defer-Cemini), bare-bones-memory
+- **Steal-from (3)**: mercury-agent (SQLite FTS5 + JSONL patterns), AutoHedge (Director/Quant/Risk prompts), mattpocock/skills (`/grill-me`, `/caveman` patterns)
+- **Reference-only (1)**: agency-agents — validated by OMC paper which uses it as Type-2 prompt source
+- **Reject — license poison-pills (3)**: ladder (GPL-3.0), FinceptTerminal (AGPL-3.0+Commercial), context-mode (ELv2). Confirms `concepts/ip-sale-readiness.md` reject-family extension to GPL-3.0 + ELv2
+- **Reject — domain mismatch / lock-in / closed-source (5)**: hyperframes, agentic-inbox, toprank, claude-ads, sci-bot.ru
+- **Defer (1)**: camofox-browser — RAM profiling required
+- **Unavailable (2)**: plurai.ai/papers (mis-routes to sci-bot.ru), Google-Finance-Api (404)
+
+### OneManCompany paper takeaways for the Cemini stack
+
+Three open Cemini decision points captured on `wiki/concepts/ai-organisation-design.md`:
+1. **Adopt the Talent+Container abstraction?** — would reframe LangGraph as "one Container family" alongside Claude Code session + script-based. Decision gate: confirm OMC repo at https://1mancompany.github.io/OneManCompany is production-grade BEFORE this becomes an adoption candidate
+2. **Adopt the E²R tree-search strategy layer?** — explicit-supervisor-review gate is a strong hallucination-cascade defence. Decision gate: defer until Cemini's research pipelines outgrow scatter-gather
+3. **Adopt the HR + PIP + offboarding pipeline?** — applies cleanly to persistent-agent deployments. Decision gate: revisit if Cemini ships persistent-agent product
+
+Even without full adoption: 4 individual patterns are extractable (6-typed-interface contract as taxonomy, AND-semantics + explicit-review-gate, working-principles-as-text-artefact, agency-agents × SkillsMP composition).
+
+### Pages affected (bidir backlinks added)
+
+18 existing pages gained backlinks: `concepts/ip-sale-readiness.md`, `concepts/scatter-gather-topology.md`, `concepts/librarian-server-architecture.md`, `concepts/llm-agent-systems.md`, `concepts/skill-vetting.md`, `concepts/context-compression-resume-pattern.md`, `entities/frameworks/fastmcp.md`, `entities/frameworks/langgraph.md`, `entities/frameworks/autoagent.md`, `entities/frameworks/fastapi.md`, `entities/frameworks/pydantic-v2.md`, `entities/frameworks/ccxt.md`, `entities/infrastructure/deepseek-api.md`, `entities/infrastructure/ollama.md`, `entities/infrastructure/yfinance.md`, `sources/atomicmemory-llm-wiki-compiler.md`, `sources/sakana-conductor-rl-orchestration.md`, `sources/sakana-trinity-llm-coordinator.md`. Lint clean: 0 orphans / 0 bidir gaps / 0 dangling / 0 missing path mentions.
+
+### Outcome
+
+The librarian + workflow tooling decisions made today (LSA + WTE Wave 1) are now joined by 11 new Adopt/Steal-from sources from the Gemini DR wave + an organisational-layer concept (OMC). The Cemini stack now has 2 high-impact production-stack adoption candidates (Vibe-Trading, langextract) blocked only on verification protocols. The laptop workflow loop is reshaped by 6 immediate-Adopt tools (Obsidian skills + cron agents + harness + AST sensor + Playwright MCP + Bare Bones session protocol). The IP-sale-readiness license filter gains 3 confirmations (GPL-3.0, AGPL-3.0, ELv2). And the Cemini orchestrator question gains a third paradigm worth tracking (organisational-layer-above-coordination) that doesn't compete with the existing scatter-gather + Trinity + Conductor candidates but reframes them as Container families.
+
+---
+
 ## [2026-04-28] decision | LSA — Librarian Server Architecture (dedicated Hetzner CPX21 Ashburn $13.99/mo, 24/7 SLA, six-phase migration)
 
 User-committed 2026-04-28 directly downstream of the WTE (Wiki & Memory Tooling Evaluation) wave shipped earlier the same day. The trigger was a single sentence that reframed the librarian: *"it is going to be of utmost importance that the deployed cemini brain can query the library at any time as crypto markets are 24/7 and who knows when its going to need info."* This shifts the workspace librarian from "research/curation tool" (laptop-only model that worked through K1-K8 + WTE) to **operational dependency** for the deployed trading stack — and that reframe forces a hosting decision that laptop-as-host cannot satisfy.

@@ -10,6 +10,8 @@ related:
   - concepts/scatter-gather-topology.md
   - concepts/llm-agent-systems.md
   - concepts/ip-sale-readiness.md
+  - concepts/ai-organisation-design.md
+  - sources/omc-talent-container-paper.md
 maturity: draft
 created: 2026-04-28
 updated: 2026-04-28

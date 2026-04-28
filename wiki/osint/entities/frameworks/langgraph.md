@@ -26,6 +26,10 @@ related:
   - entities/frameworks/autoagent.md
   - concepts/context-compression-resume-pattern.md
   - sources/agentmemory-rohitg00-cpr-impl.md
+  - concepts/ai-organisation-design.md
+  - sources/omc-talent-container-paper.md
+  - sources/sentrux-ast-sensor.md
+  - sources/vibe-trading-hkuds.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

@@ -7,6 +7,7 @@ related:
   - sources/3-18-crypto-integration-technical-audit.md
   - sources/3-19-compliance-research.md
   - entities/platforms/hyperliquid.md
+  - sources/vibe-trading-hkuds.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26

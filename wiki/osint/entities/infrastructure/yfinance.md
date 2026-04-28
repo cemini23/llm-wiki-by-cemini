@@ -7,6 +7,7 @@ related:
   - entities/platforms/polygon.md
   - entities/ticker-watchlist.md
   - concepts/equity-intraday-backfill-gap.md
+  - sources/vibe-trading-hkuds.md
 maturity: validated
 created: 2026-04-24
 updated: 2026-04-24

@@ -38,6 +38,14 @@ related:
   - entities/platforms/kalshi.md
   - entities/platforms/interactive-brokers.md
   - entities/platforms/brex.md
+  - sources/gemini-dr-link-eval-2026-04-28.md
+  - sources/vibe-trading-hkuds.md
+  - sources/langextract-google.md
+  - sources/sentrux-ast-sensor.md
+  - sources/claude-code-harness-chachamaru.md
+  - sources/kepano-obsidian-skills.md
+  - sources/obsidian-second-brain-eugeniughelbur.md
+  - sources/playwright-mcp-microsoft.md
   - concepts/wiki-tooling-evaluation.md
   - sources/falkordb-graphrag-eval.md
   - entities/platforms/mercury.md

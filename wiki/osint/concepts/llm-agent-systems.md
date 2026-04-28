@@ -73,6 +73,8 @@ related:
   - sources/4-5-links.md
   - entities/frameworks/autoagent.md
   - concepts/context-compression-resume-pattern.md
+  - concepts/ai-organisation-design.md
+  - sources/omc-talent-container-paper.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-04-28

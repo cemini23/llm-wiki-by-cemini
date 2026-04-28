@@ -21,6 +21,10 @@ related:
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/agentmemory-rohitg00-cpr-impl.md
   - concepts/librarian-server-architecture.md
+  - concepts/ai-organisation-design.md
+  - sources/omc-talent-container-paper.md
+  - sources/langextract-google.md
+  - sources/vibe-trading-hkuds.md
 maturity: validated
 created: 2026-04-24
 updated: 2026-04-28

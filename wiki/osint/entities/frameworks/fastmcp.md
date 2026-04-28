@@ -17,6 +17,10 @@ related:
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/willynikes2-knowledge-base-server.md
   - sources/agentmemory-rohitg00-cpr-impl.md
+  - concepts/ai-organisation-design.md
+  - sources/playwright-mcp-microsoft.md
+  - sources/sentrux-ast-sensor.md
+  - sources/vibe-trading-hkuds.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

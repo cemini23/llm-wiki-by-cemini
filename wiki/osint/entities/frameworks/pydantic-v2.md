@@ -14,6 +14,7 @@ related:
   - sources/forex-research-3-18.md
   - entities/frameworks/fastapi.md
   - concepts/ip-sale-readiness.md
+  - sources/langextract-google.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-27

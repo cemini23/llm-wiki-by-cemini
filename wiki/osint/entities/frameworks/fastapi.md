@@ -13,6 +13,7 @@ related:
   - sources/3-19-telegram-discord-research.md
   - sources/forex-research-3-18.md
   - entities/frameworks/pydantic-v2.md
+  - sources/langextract-google.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-27
