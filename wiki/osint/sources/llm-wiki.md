@@ -6,16 +6,26 @@ clusters: [llm-agents]
 related:
   - concepts/llm-agent-systems.md
   - sources/4-6-links.md
+  - concepts/wiki-tooling-evaluation.md
+  - sources/atomicmemory-llm-wiki-compiler.md
+  - sources/emtwiki-deployed-example.md
+  - sources/wastedcode-memex.md
+  - sources/willynikes2-knowledge-base-server.md
 maturity: validated
 read_status: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-28
 ---
 
 ## Relations
 
 - @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
 - @sources/4-6-links.md — Cemini-internal docx that evaluates `nvk/llm-wiki` + Karpathy's LLM Wiki Pattern alongside other links
+- @concepts/wiki-tooling-evaluation.md — synthesis page evaluating 7 candidates (incl. 4 Karpathy-pattern implementations) against the workspace librarian's current 4-of-10 Karpathy-coverage gap; this gist is the foundational pattern source the synthesis is grounded in
+- @sources/atomicmemory-llm-wiki-compiler.md — open-source compiler that implements 7-of-10 of this gist's operations off-the-shelf (MIT, Node, MCP server); **primary adoption candidate** for the workspace librarian
+- @sources/emtwiki-deployed-example.md — deployed example wiki (San Juan College EMT-Basic curriculum, NM EMS Bureau aligned) demonstrating the gist's pattern at production scale in a high-stakes domain
+- @sources/wastedcode-memex.md — sibling Karpathy-pattern implementation; minimal "just files, no RAG" interpretation wrapping `claude -p` programmatic mode in Linux mount-namespace daemons
+- @sources/willynikes2-knowledge-base-server.md — sibling memory engine + 16-tool MCP server; database-first variant of the gist's pattern (SQLite + FTS5 + embeddings; Obsidian sync bidirectional)
 
 ## Raw Concept
 

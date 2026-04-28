@@ -18,6 +18,8 @@ related:
   - concepts/defend-trade-secrets-act.md
   - sources/4-5-links.md
   - concepts/context-compression-resume-pattern.md
+  - concepts/wiki-tooling-evaluation.md
+  - sources/falkordb-graphrag-eval.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28
@@ -38,6 +40,8 @@ audit_date: 2026-04-24
 - @entities/platforms/hyperliquid.md
 - @sources/crypto-5-4-11.md — *The Quantum-Cryptographic Co-evolution* (Kundu & Kompella, Cisco Research) — forward-looking PQ-cryptography landscape relevant to the SHA-256 hash-chain layer's threat-model assumptions (D′ 2026-04-26 routing)
 - @concepts/defend-trade-secrets-act.md — K7-tail concept-promotion 2026-04-27 — sibling tamper-evident artifact pattern; the prescribed VCP/zkCA stack (this page) would supplement Git history as a cryptographically anchored secrecy-measure record satisfying DTSA's "reasonable measures to maintain secrecy" element under 18 U.S.C. § 1839
+- @concepts/wiki-tooling-evaluation.md — 2026-04-28 synthesis: `llm-wiki-compiler`'s **confidence + `contradictedBy[]` per-page metadata** is a machine-readable analog to the inline `[CONFIRMED]` / `[TENTATIVE]` / `[NEEDS VERIFICATION]` / `[RETRACTED]` claim-tag system this concept page targets — complementary, not redundant; structured-metadata-on-pages + cryptographic-anchoring-of-claims serve different audit-trail layers
+- @sources/falkordb-graphrag-eval.md — 2026-04-28 — graph databases enable schema-bound queries that vector-RAG cannot answer; cited GraphRAG benchmarks (3-4× better on cross-document reasoning) parallel the audit-trail story — provenance is a graph problem (chains of (claim, source, timestamp, signer) tuples), not a chunk problem. SSPL license blocks deployed-stack adoption; workspace-side experiment candidate only
 - @sources/4-5-links.md — K8 deep-read 2026-04-28 — multi-topic Cemini-internal evaluation. The K8 doc's Synthesis section names the cryptographic audit trail explicitly as the **ex-post regulatory governance** mechanism that pairs with Pydantic v2 schemas + FastMCP tools (which provide ex-ante constraints). Reinforces the J-pass resolution: the deployed SHA-256 chain in `services/audit/chain.py` IS the substrate; the prescribed pymerkle/OpenTimestamps/VCP layers are separate forward-looking work
 - @concepts/context-compression-resume-pattern.md — K8 promotion 2026-04-28 — adjacent state-persistence concern with intentional architectural distinction. The audit trail is *forward-only append-with-hash* (answers "what did the agent decide and when, immutably?"); cpr-pattern is *bidirectional save/load* (answers "where do we resume from after a crash?"). Both lean on PostgreSQL but solve different problems
 

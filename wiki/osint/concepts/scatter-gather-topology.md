@@ -17,6 +17,7 @@ related:
   - entities/frameworks/autoagent.md
   - concepts/context-compression-resume-pattern.md
   - entities/infrastructure/localai.md
+  - concepts/wiki-tooling-evaluation.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28
@@ -37,6 +38,7 @@ updated: 2026-04-28
 - @entities/frameworks/autoagent.md — K8 promotion 2026-04-28 — sibling LangGraph-orchestration pattern. AutoAgent optimizes *harness configuration* (prompts, tools, routing); scatter-gather optimizes *runtime topology*. Different axes of the same orchestration problem; both would land naturally during any P1-ticket resolution work
 - @concepts/context-compression-resume-pattern.md — K8 promotion 2026-04-28 — the prescribed serialization/recovery layer for any LangGraph topology (linear or scatter-gather). When/if Option A (build Send() fan-out fresh) lands, the cpr-pattern's checkpoint+restore is the natural state-management partner; resume from a crashed scatter-gather becomes feasible without re-running upstream nodes
 - @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — local-inference runtime that any scatter-gather node would call (in the retracted-but-architecturally-coherent local-runtime path). LocalAI's OpenAI-compatible shim means the deployed `services/llm_analyst/deepseek_client.py` works against it with a one-line `base_url` change — the topology is unaffected
+- @concepts/wiki-tooling-evaluation.md — 2026-04-28 synthesis: any wiki/memory tooling adopted by the workspace librarian (recommended: `llm-wiki-compiler`) would expose its retrieval surface via MCP, which the analyst-node DeepSeek client would query when building scatter-gather context. Adoption decision is upstream of the Send-API topology decision; doesn't block, but the wiki-tooling MCP shape would inform the analyst-prompt construction
 
 ## Raw Concept
 

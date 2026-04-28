@@ -8,6 +8,67 @@ Newest entries on top.
 
 ---
 
+## [2026-04-28] ingest | WTE — Wiki & Memory Tooling Evaluation (7 user-dropped candidates → 1 concept page + 6 source pages)
+
+User dropped 7 URLs across two turns 2026-04-28 for evaluation against the workspace librarian's current Karpathy-pattern coverage and the prescribed-not-built cpr-pattern wiring path. Direct continuation of the K8 ROADMAP expansion's "Operational efficiency toward Karpathy LLM Wiki standard" subsection.
+
+### What shipped
+
+**1 new concept page** — `wiki/concepts/wiki-tooling-evaluation.md` (`maturity: validated`):
+- Synthesis comparing 7 candidates (FalkorDB / agentmemory / atomicmemory llm-wiki-compiler+llmwiki.app / knowledge-base-server / memex / emtwiki / hand-rolled status quo) against the schema in `CLAUDE.md` and the K8-expanded ROADMAP open questions
+- Coverage matrix: workspace status quo at **4-of-10 Karpathy operations**; llm-wiki-compiler at **7-of-10**; memex 5-of-10; knowledge-base-server 6-of-10; agentmemory 5-of-10
+- Architectural-axis split: filesystem-first (status quo, llm-wiki-compiler, memex, emtwiki) vs database-first (kb-server, FalkorDB, agentmemory) — Cemini-side preference is filesystem-first (git is the version-control story; Markdown is the universal format; database-vs-markdown drift is operational complexity)
+- Recommendation by tier: **Adopt** llm-wiki-compiler (MIT, MCP server, hash-incremental compile, candidate review queue, confidence + contradictedBy metadata) for workspace librarian / **Steal-from** agentmemory (Apache-2.0 pipeline shape) for deployed-stack cpr-pattern Python port / **Defer** FalkorDB (SSPL poison-pill on deployed stack — workspace-side-only experiment OK) / **Defer** knowledge-base-server (multi-agent gated) / **Reject** memex (Linux/CAP_SYS_ADMIN friction) / **Reference-only** emtwiki (deployed example proof)
+- 5 explicit decision gates that would flip the recommendation (overwrite-of-hand-curated-frontmatter, prohibitive LLM cost, MCP retrieval poor, Python-stack preference, sixth/seventh candidate emerges)
+- Forward-pointer to the K8 ROADMAP "Memory storage / reading / indexing" subsection as the implementation-target for the steal-from-agentmemory pipeline
+
+**6 new source pages** — each `read_status: validated`, `clusters: [llm-agents]`, with substantive Narrative + verbatim Snippets:
+- `wiki/sources/atomicmemory-llm-wiki-compiler.md` — covers github + llmwiki.app landing page; primary adoption candidate; 7-of-10 Karpathy ops; MIT; multi-provider; MCP server (`llmwiki serve` — 7 tools + 5 resources); confidence/contradictedBy/inferredParagraphs metadata; candidate review queue (`--review` mode)
+- `wiki/sources/willynikes2-knowledge-base-server.md` — JS+SQLite-FTS5+Xenova-embeddings memory engine + 16-tool MCP; three-tier (hot/warm/cold) memory framing; Memstalker hosted-SaaS shadow; deferred-for-adoption (sidecar value gated on multi-agent need)
+- `wiki/sources/wastedcode-memex.md` — minimal "just files, no RAG" Karpathy implementation; wraps `claude -p` programmatic mode in Linux mount-namespace daemons; Vannevar-Bush 1945 Memex framing; rejected-for-adoption (Linux/CAP_SYS_ADMIN)
+- `wiki/sources/emtwiki-deployed-example.md` — deployed example wiki for EMT-Basic certification (San Juan College / NM EMS Bureau aligned); reference-only proof the pattern is mature for high-stakes domains
+- `wiki/sources/falkordb-graphrag-eval.md` — sparse-matrix property-graph DB w/ native HNSW; benchmark-leading GraphRAG SDK; **SSPL v1 license** (poison-pill family with AGPL); workspace-side experiment candidate; deployed-stack adoption blocked by SSPL on IP-sale grounds
+- `wiki/sources/agentmemory-rohitg00-cpr-impl.md` — Apache-2.0 reference implementation of the cpr-pattern: PostToolUse hook → SHA-256 dedup (5min window) → privacy filter → LLM compress → BM25+Vector+Graph RRF fusion. Steal-architectural-details candidate; runtime architecture wrong for deployed stack (TS + iii-engine + 7 GB Hetzner); pipeline shape ports into Python at ~600-800 LOC
+
+### Index update
+
+`wiki/index.md`:
+- 6 new rows added to `### llm-agents (66 → 72)` with one-line summaries + secondary-cluster annotations + cross-link to concept page
+- New `### Librarian / knowledge-base tooling` subsection in `## Concepts` (between "Data engineering & harvester doctrine" and "Trading strategy concepts") containing the wiki-tooling-evaluation concept page
+
+### 9 bidirectional backlink edits
+
+- `sources/llm-wiki.md` (Karpathy gist, K2-validated) ← 5 entries: concept page + 4 sibling Karpathy-pattern source pages
+- `entities/frameworks/fastmcp.md` ← 4: concept + 3 MCP-server sources
+- `concepts/context-compression-resume-pattern.md` ← 3: concept + 2 reference-impl sources
+- `entities/infrastructure/deepseek-api.md` ← 3: concept + 2 multi-provider sources
+- `concepts/cryptographic-audit-trail.md` ← 2: concept + falkordb provenance-as-graph framing
+- `concepts/ip-sale-readiness.md` ← 2: concept + falkordb SSPL-poison-pill framing
+- `entities/infrastructure/localai.md` ← 2: concept + atomicmemory `OPENAI_BASE_URL` swap
+- `concepts/scatter-gather-topology.md` ← 1: concept (wiki-tooling MCP would inform analyst-prompt construction)
+- `entities/frameworks/langgraph.md` ← 1: agentmemory cpr-pattern reference impl
+
+### Lint state at ship
+
+```
+Wiki lint scan — 380 pages indexed (+7 from 373 K8 baseline)
+Outbound edges: 1790 (+72 — substantial cross-linking; concept page alone has 14 related: entries; 6 source pages avg 7 each)
+Orphans: 0 · Bidir gaps: 0 · Dangling: 0 · Missing @paths: 0
+Cited-but-unread: 133 unchanged (7 new pages are deep-read, not stubs)
+```
+
+### ROADMAP updates
+
+- New **Open Question**: "Wiki & memory tooling — adopt, build, or steal-from?" with 6-row comparison table + decision-gate-pointer to the concept page; placed alongside the K8 "Which conductor?" + "Which LLM brain (locally)?" open questions to make the three structural decisions visible together
+- "Now" line updated to include WTE
+- "Operational efficiency toward Karpathy LLM Wiki standard" Eventually subsection now opens with a forward-pointer to the concept page; surfaces that adoption of llm-wiki-compiler closes 3 of the listed efficiency items (cited-unread backlog reduction *partial via incremental compile* / periodic lint as session-start ritual *via watch + lint* / dashboard maturity *via MCP `wiki_status` tool*) and reduces several others (cpr-pattern wiring effort drops from open-design to port-and-adapt the agentmemory pipeline shape)
+
+### Pattern note
+
+WTE is the **first concept-page-as-decision-document** in the wiki — not a research-synthesis (like Q's corpus-index hubs), not a doctrine page (like ip-sale-readiness), and not a deep-read promotion (like the K-series). It's an **adoption-evaluation document** intended to *update* and ultimately *resolve* — the recommendation row gets stamped `[ADOPTED 2026-04-XX]` with real-world cost numbers if the smoke test passes, OR the page becomes the retraction-of-record explaining "why we kept hand-rolling" if it fails. Sets a precedent: when conductor decision lands (Fugu / Trinity / Conductor / status quo), the same concept-page-as-decision-document shape may be the right home rather than piling rows into ROADMAP. The user's framing on this turn — *"if you prefer a different document than roadmap for this kind of stuff make that as well"* — explicitly authorized this pattern, and the librarian doctrine in `CLAUDE.md` ("File answers back: if the query produced a valuable synthesis, file it as a new concept page or brief") backs it. Also notable: this is the **first ingest where 6 source pages land alongside 1 concept page in a single wave** — closer to a thematic-cluster ingest (like the F sweep's per-ticker briefs) than a single-source K-style read, but with much heavier synthesis. Worth tracking to see if this shape repeats.
+
+---
+
 ## [2026-04-28] deep-read | K8 — `sources/4-5-links.md` Cemini-internal multi-topic evaluation (13 GitHub repos + 1 academic-policy synthesis)
 
 K-series continuation after K7 (`238c63d`) closed the corporate-structure trio. K8 target was selected by the next-most-cited routing heuristic: `sources/4-5-links.md` was the highest-citation cited-but-unread stub at 5 inbound. Document is a Cemini-internal evaluation of 13 GitHub repositories against the deployed Cemini stack on a fixed 8-section template (What is this? / Architecture patterns worth stealing / Algorithms or techniques worth evaluating / Code or tooling worth examining / What they got wrong or overcomplicated / IP sale relevance / Solo-dev filter / Conflicts with the deployed stack / Actionable Roadmap Directives), plus a 14th synthesis section pulling from `skills 1 4:5.pdf`, `skills 2 4:5.pdf`, `trading 3 4:5.pdf`, `trading 4:5.pdf`, `ai trading ethics 4:5.pdf`. Sibling document `4_5 links 2.docx` (12 additional H2 sections, same shape, same authoring date 2026-04-05, one duplicate cross-doc evaluation `EliaAlberti/cpr-compress-preserve-resume`) is **deferred to K9**.

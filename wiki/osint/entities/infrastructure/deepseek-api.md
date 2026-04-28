@@ -17,6 +17,9 @@ related:
   - sources/4-5-links.md
   - concepts/context-compression-resume-pattern.md
   - entities/infrastructure/localai.md
+  - concepts/wiki-tooling-evaluation.md
+  - sources/atomicmemory-llm-wiki-compiler.md
+  - sources/agentmemory-rohitg00-cpr-impl.md
 maturity: validated
 created: 2026-04-24
 updated: 2026-04-28
@@ -37,6 +40,9 @@ updated: 2026-04-28
 - @sources/4-5-links.md — K8 deep-read 2026-04-28 — multi-topic Cemini-internal evaluation. The DeepSeek API is the operative LLM brain LocalAI would sit beside (or substitute, in the retracted local-runtime path); both expose OpenAI-compatible chat-completions
 - @concepts/context-compression-resume-pattern.md — K8 promotion 2026-04-28 — the cpr-pattern's "compression node" would call the DeepSeek API to summarize sprawling debate trajectories into dense strings before persistence to pgvector. DeepSeek is the LLM brain Phase 1 (Compress) of the pattern targets
 - @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — sibling local-inference runtime that exposes the same OpenAI-compatible Chat Completions schema as this hosted API. Architectural slot: when local-inference hardware lands, swap `base_url="https://api.deepseek.com"` for `base_url="http://localai:8080"` with zero Python orchestration changes
+- @concepts/wiki-tooling-evaluation.md — 2026-04-28 — wiki-tooling adoption candidates (recommended: `llm-wiki-compiler`) all support DeepSeek-API access via `OPENAI_BASE_URL` swap pattern; same architectural slot this entity page documents. Adopting llm-wiki-compiler means the workspace librarian uses the same DeepSeek API the deployed Cemini stack already targets — single API key, single rate-limit envelope across both layers
+- @sources/atomicmemory-llm-wiki-compiler.md — 2026-04-28 — primary wiki-tooling adoption candidate; multi-provider config supports DeepSeek API directly via `LLMWIKI_PROVIDER=openai` + `OPENAI_BASE_URL=https://api.deepseek.com`. Workspace-side compile/query loop and deployed-stack analyst nodes share the same LLM brain
+- @sources/agentmemory-rohitg00-cpr-impl.md — 2026-04-28 — Apache-2.0 cpr-pattern reference implementation; the "LLM compress" phase calls a configurable LLM, swappable to DeepSeek API. When the cpr-pattern lands in Python on the Cemini stack, the Compress phase invokes this entity's hosted DeepSeek brain
 
 ## Raw Concept
 

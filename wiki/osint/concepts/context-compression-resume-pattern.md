@@ -10,6 +10,9 @@ related:
   - concepts/scatter-gather-topology.md
   - concepts/cryptographic-audit-trail.md
   - concepts/llm-agent-systems.md
+  - concepts/wiki-tooling-evaluation.md
+  - sources/agentmemory-rohitg00-cpr-impl.md
+  - sources/willynikes2-knowledge-base-server.md
 maturity: draft
 created: 2026-04-28
 updated: 2026-04-28
@@ -23,6 +26,9 @@ updated: 2026-04-28
 - @concepts/scatter-gather-topology.md — the topology the cpr-pattern would serialize/recover. K8 server-probe finding: the prescribed scatter-gather is not deployed (per Track C — only a linear 4-node `StateGraph` ships); cpr-pattern wiring would naturally land alongside any future scatter-gather work
 - @concepts/cryptographic-audit-trail.md — adjacent state-persistence concern. The audit trail's SHA-256 chain (`services/audit/chain.py`) is a *forward-only append-with-hash* model; the cpr-pattern's checkpoint+restore is a *bidirectional save/load* model. Both lean on PostgreSQL but answer different questions — the audit chain answers "what did the agent decide and when, immutably?" while cpr-pattern answers "where do we resume from after a crash?". Distinct pages, intentional cross-link.
 - @concepts/llm-agent-systems.md — cluster hub; cpr-pattern fits the "long-running agent state management + memory architectures" sub-cluster
+- @concepts/wiki-tooling-evaluation.md — 2026-04-28 synthesis evaluating 7 wiki/memory tooling candidates; this concept page is **directly affected**: the recommendation to steal architectural details from `agentmemory` for the Python cpr-pattern wiring (rather than deploy the TS+iii-engine runtime) shifts this page's prescribed-not-built status from "open design" to "port-and-adapt the agentmemory pipeline shape"
+- @sources/agentmemory-rohitg00-cpr-impl.md — Apache-2.0 reference implementation: PostToolUse hook → SHA-256 dedup (5min window) → privacy filter → LLM compress → BM25+Vector+Graph RRF fusion. Pipeline is reference-grade for the Python port; runtime architecture (TS + iii-engine) wrong for Cemini's stack — steal-architecturally, don't deploy
+- @sources/willynikes2-knowledge-base-server.md — sibling memory-engine candidate; uses three-tier (hot/warm/cold) framing instead of compress-preserve-resume framing — parallel signal-vs-noise technique, different mechanism. Both attempt the same end (retrieval signal-vs-noise in long-running agents)
 
 ## Raw Concept
 

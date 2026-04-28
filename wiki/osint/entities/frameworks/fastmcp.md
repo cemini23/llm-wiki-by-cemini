@@ -13,6 +13,10 @@ related:
   - entities/infrastructure/deepseek-api.md
   - sources/4-5-links.md
   - entities/frameworks/autoagent.md
+  - concepts/wiki-tooling-evaluation.md
+  - sources/atomicmemory-llm-wiki-compiler.md
+  - sources/willynikes2-knowledge-base-server.md
+  - sources/agentmemory-rohitg00-cpr-impl.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28
@@ -29,6 +33,10 @@ updated: 2026-04-28
 - @entities/infrastructure/deepseek-api.md — LLM brain that consumes MCP-exposed tools
 - @sources/4-5-links.md — K8 deep-read 2026-04-28 — Cemini-internal evaluation doc. K8 server-probe finding: **130 registered `@mcp.tool` decorators** (vs the doc's "22" claim, ~6× over). The growth in tool count amplifies the doc's prescription to consolidate FastMCP tools into a hot-reloadable single-file registry behind a fixed adapter boundary
 - @entities/frameworks/autoagent.md — K8 promotion 2026-04-28 — Single-File Registry-Driven Harness pattern is the named architectural recipe for consolidating the 130 `@mcp.tool` decorators into one structured, hot-reloadable file. AutoAgent's pattern is the operative target for the FastMCP tool-registry consolidation work prescribed in K8
+- @concepts/wiki-tooling-evaluation.md — 2026-04-28 — wiki-tooling adoption candidates each ship their own MCP server (llm-wiki-compiler: 7 tools / knowledge-base-server: 16 tools / agentmemory: full MCP+REST). Any of them coexists with the deployed `cemini_mcp` (130 `@mcp.tool` decorators here) on a separate transport / endpoint; no integration conflict. Tool-namespace discipline: workspace-side wiki-tooling MCP runs on laptop or stdio; the deployed `cemini_mcp` runs on Hetzner over its own transport
+- @sources/atomicmemory-llm-wiki-compiler.md — 2026-04-28 — primary wiki-tooling adoption candidate; ships an MCP server (`llmwiki serve`) with 7 tools (`ingest_source`, `compile_wiki`, `query_wiki`, `search_pages`, `read_page`, `lint_wiki`, `wiki_status`) + 5 resources. Closes the laptop ↔ server gap for the dev-stack DeepSeek brain to query the workspace wiki without re-deploying Track B `wiki_search` server-side
+- @sources/willynikes2-knowledge-base-server.md — 2026-04-28 — sibling MCP-server-with-memory-engine candidate; 16 MCP tools + REST API + OpenAPI 3.1 + ChatGPT Custom GPT integration. Heavier integration surface than llm-wiki-compiler; deferred adoption decision
+- @sources/agentmemory-rohitg00-cpr-impl.md — 2026-04-28 — Apache-2.0 cpr-pattern reference impl exposes its functionality via MCP server. Pattern is more useful than the runtime for the deployed Python stack; pipeline shape (PostToolUse hook → SHA-256 dedup → privacy filter → LLM compress → BM25+Vector+Graph RRF) ports into Python on the Cemini stack alongside FastMCP tool-call wrappers
 
 ## Raw Concept
 

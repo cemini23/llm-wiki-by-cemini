@@ -11,6 +11,8 @@ related:
   - entities/infrastructure/hetzner.md
   - concepts/scatter-gather-topology.md
   - concepts/ip-sale-readiness.md
+  - concepts/wiki-tooling-evaluation.md
+  - sources/atomicmemory-llm-wiki-compiler.md
 maturity: draft
 created: 2026-04-28
 updated: 2026-04-28
@@ -25,6 +27,8 @@ updated: 2026-04-28
 - @entities/infrastructure/hetzner.md — host environment LocalAI would target. K8 server probe (2026-04-28) confirms the actual hardware envelope: **7 GB RAM** (not the doc's "128 GB CPU-only" claim, which is ~18× over). At 7 GB, GGUF quantization (Q4_K_M / Q5_K_M for 7B-class models) is a *hard requirement*, not an optimization knob. LocalAI's value proposition becomes more relevant under tight RAM, not less
 - @concepts/scatter-gather-topology.md — the LangGraph topology any local-inference runtime would have to satisfy. The doc maps LocalAI as the runtime LangGraph would call across the prescribed scatter-gather Send-API fan-out — same architectural slot as the (currently-deployed) DeepSeek API client at `services/llm_analyst/deepseek_client.py`
 - @concepts/ip-sale-readiness.md — IP-sale relevance: a local-inference fallback path demonstrates infrastructure portability and removes vendor-lock concerns from the acquirer's diligence checklist. Cloud-API-only deployments have an implicit tail risk (vendor pulls API access, raises prices, throttles); a deployed-but-paused LocalAI alternative (or even one staged in Docker Compose with off-by-default config) shows architectural maturity
+- @concepts/wiki-tooling-evaluation.md — 2026-04-28 — local-inference runtime is the operational LLM-runtime slot for any locally-hosted compile/query loop the workspace librarian might adopt. `llm-wiki-compiler` supports `LLMWIKI_PROVIDER=openai + OPENAI_BASE_URL=http://localai:8080/v1` — same `base_url` swap pattern this entity page documents
+- @sources/atomicmemory-llm-wiki-compiler.md — 2026-04-28 — primary wiki-tooling adoption candidate. Multi-provider config supports LocalAI as a drop-in replacement when local-inference hardware lands. This entity page becomes load-bearing for that path
 
 ## Raw Concept
 

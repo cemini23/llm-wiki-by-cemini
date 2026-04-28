@@ -38,6 +38,8 @@ related:
   - entities/platforms/kalshi.md
   - entities/platforms/interactive-brokers.md
   - entities/platforms/brex.md
+  - concepts/wiki-tooling-evaluation.md
+  - sources/falkordb-graphrag-eval.md
   - entities/platforms/mercury.md
   - entities/infrastructure/deepseek-api.md
   - entities/infrastructure/sakana-fugu.md
@@ -100,6 +102,8 @@ updated: 2026-04-28
 - @entities/frameworks/autoagent.md — K8 promotion 2026-04-28 — automated, score-driven harness optimization is the K8 doc's named IP-sale-narrative-strengthener. Demonstrates self-healing architecture capable of autonomous, weekend-based parameter optimization without manual developer intervention — a strong differentiator versus prop-shop IP that typically ships with manual tuning
 - @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — deployed-but-dormant local-inference path is a portable-architecture demonstration. Removes vendor-lock concerns from the acquirer's diligence checklist; an institutional buyer's compliance officer sees it on the architecture diagram and a class of objections (cloud-LLM data egress, vendor pull-out, regulated-data restrictions) drops out before being raised
 - @entities/infrastructure/sakana-fugu.md — Fugu-ingest 2026-04-27 — **directly affects the IP-sale narrative**. An institutional buyer reading the Cemini stack will now ask: "why didn't you just call Sakana Fugu's API?" The defensible answers (vertical-domain MAPPO trader-agents, typed-output Pydantic StrategyRecommendation handoff, custom worker-pool composition with compliance/cost gates, audit-trail completeness via pg_tamperlog, and benchmark-against-Fugu-as-baseline as a credibility marker) must be named explicitly in the IP-sale-prep narrative, not assumed. Note this is an **April 2026 development** that postdates most of the IP-sale-prep audit corpus — the prescriptions in K5/K6/K7 are silent on commercial-API-orchestrator alternatives because they didn't yet exist as commercial products
+- @concepts/wiki-tooling-evaluation.md — 2026-04-28 synthesis: license posture is the dominant axis on adoption (SSPL/AGPL/PolyForm-Noncommercial all rejected; MIT/Apache-2.0 candidates pre-vetted). The wiki-tooling decision touches IP-sale narrative because the recommended `llm-wiki-compiler` (MIT) keeps the workspace librarian's compounding artifact portable to any acquirer; the alternative of FalkorDB or `agentmemory`-runtime has been workspace-side-only / steal-from-only specifically because of license-acquirer-friction
+- @sources/falkordb-graphrag-eval.md — 2026-04-28 — SSPL v1 license; institutional acquirer treats this in the **same poison-pill family as AGPL**. Documented here as a worked example of why deployed-stack candidates pass through this concept page's IP-sale gate before adoption; FalkorDB fails the gate for deployed use, passes for workspace-side-only experiment
 
 ## Raw Concept
 
