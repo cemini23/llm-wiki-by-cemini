@@ -46,9 +46,10 @@ related:
   - sources/cftc-anprm-prediction-markets-2026-03-16.md
   - sources/cftc-selig-house-ag-testimony-2026-04-16.md
   - sources/cftc-v-arizona-tro-liburdi-2026-04-10.md
+  - sources/fintech-startup-legal-ip-roadmap.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-27
 read_status: deep-read
 clusters:
   - rl-marl
@@ -103,6 +104,7 @@ clusters:
 - @sources/cftc-anprm-prediction-markets-2026-03-16.md — primary-source FR docket for the ANPRM this source's S7 references; matched-pair closure
 - @sources/cftc-selig-house-ag-testimony-2026-04-16.md — Chairman's on-the-record defense of the ANPRM agenda + AZ/CT/IL counter-suit confirmation
 - @sources/cftc-v-arizona-tro-liburdi-2026-04-10.md — first federal-court ruling in this cycle finding CFTC "likely to ultimately win" on preemption
+- @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27 — companion regulatory framing source; K7 paras 49–50 add the **Lowe v. SEC** SaaS framing + the **July 2024 amendment to Internet Adviser Exemption Rule 203A-2(e)** (eliminates the 15-client de minimis exception) layered on top of this source's S4 IAA §202(a)(11) + CFTC Reg 4.14 framing — see @concepts/publishers-exclusion-iaa.md for the full disambiguation. K7 also adds **§174A R&E expensing**, **Florida Fintech Sandbox Ch. 559.952**, **LEI/EIN sequencing**, **IBKR Pro corporate account**, and **Brex banking automation** dimensions not covered by this 3-19 source
 
 ## Raw Concept
 

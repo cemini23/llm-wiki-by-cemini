@@ -17,6 +17,7 @@ related:
   - entities/infrastructure/redis.md
   - entities/infrastructure/hetzner.md
   - entities/platforms/kalshi.md
+  - sources/fintech-startup-legal-ip-roadmap.md
 maturity: validated
 read_status: validated
 created: 2026-04-23
@@ -38,6 +39,7 @@ updated: 2026-04-27
 - @entities/infrastructure/redis.md — pub/sub bus is the existing capability the audit prescribes for two new uses: (1) atomic order lock to prevent self-match wash-trading on Kalshi; (2) JSON-payload network boundary that legally separates LGPL NautilusTrader from proprietary engines
 - @entities/infrastructure/hetzner.md
 - @entities/platforms/kalshi.md — anti-wash-trading rules are the binding regulatory constraint for the live prediction-market path; the audit prescribes Redis-backed atomic locks to mathematically prevent self-match across multi-container signal generators
+- @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27 — sibling cross-source in the corporate-structure trio. K7 (Feb 25) is the **earliest** of the three sibling audits and predates this 3-10 audit (Mar 10) by ~2 weeks; the corporate-structure thesis is now **3-of-3 cross-source corroborated** (K5 + K6 + K7). K7 corroborates this audit's Wyoming-HoldCo + Florida-OpCo + §1235-via-disregarded-SMLLC prescription and adds operational layers (§174A R&E expensing + LEI/EIN sequencing + IBKR Pro corporate brokerage + Brex banking automation + 11-step / 3-phase execution roadmap). K7 and this audit **agree on §475(f) MTM endorsement**, while K6 (this source) explicitly rejected §475(f) for IP-sale-prep — the apparent conflict resolves on object-of-the-tax (this audit was IP-sale-prep-scoped; K7 + 3-9 frame §475(f) for the trading OpCo's day-to-day book)
 
 ## Raw Concept
 

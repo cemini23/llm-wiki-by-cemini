@@ -8,6 +8,52 @@ Newest entries on top.
 
 ---
 
+## [2026-04-27] ingest | K7: deep-read `sources/fintech-startup-legal-ip-roadmap.md` — third-source corroboration on dual-entity (3-of-3); new §174A + Florida Fintech Sandbox + IBKR + Brex pages
+
+Third pass in the corporate-structure trio. K7 = `fintech-startup-legal-ip-roadmap` is **dated 2026-02-25** — the earliest of the three Cemini-internal IP-sale-prep audits (K7 Feb 25 → K5 Mar 8 → K6 Mar 10). Triangulating against K5 + K6 lifts the dual-entity (Wyoming HoldCo + Florida OpCo) prescription from 2-source corroboration to **3-of-3 cross-source agreement**. K7 also extends the corpus along **four operational dimensions** that K5 + K6 don't cover, each promoted into its own page or load-bearing extension.
+
+### What shipped
+
+- **`wiki/sources/fintech-startup-legal-ip-roadmap.md`** — full deep-read rewrite. `read_status: validated`, expanded `related:` to 18 entries (5 sources + 9 concepts + 4 entities/platforms). Narrative restructured: Document framing (3-of-3 framing + Feb 25 earliest-of-trio note) / Section-by-section findings (Phase 1 entity formation + Phase 2 fintech infrastructure + Phase 3 IP protection + regulatory framework) / Cross-source corroboration table with K5 + K6 (4 convergence axes + 1 reconciled divergence on §475(f) MTM) / 4 K7-unique-axes audit (§174A R&E expensing / Florida Fintech Sandbox / Lowe v. SEC + 203A-2(e) / LEI-EIN-IBKR-Brex institutional layer). 12 Snippets with paragraph-number citations.
+- **`wiki/concepts/section-174-rd-expensing.md`** — NEW concept page. K7-canonical (single-source — only K7 covers §174 / §174A in any depth). Documents TCJA 2022–2024 5-year amortization regime → 2025 §174A restoration with sub-$31M small-business carve-out (retroactive amendment of 2022/23/24 returns OR acceleration into current year). Cemini deployed posture (single-member Florida SMLLC, sub-$1M scale) sits comfortably under threshold. Florida Statute 220.196 R&D credit not available (C-Corp-only restriction). Coordinated tax-treatment pair with §1235: §174A optimizes the **annual operating cost** side; §1235 optimizes the **exit-event proceeds** side. Both apply simultaneously. 3 verbatim Snippets (K7 paras 17, 18, 19). 2 dated `[NEEDS VERIFICATION 2026-04-27]` flags on the founder's 2022–2024 R&E spend totals (tax-counsel-engagement workstream).
+- **`wiki/concepts/florida-fintech-sandbox.md`** — NEW concept page. Florida Statute Ch. 559.952 Financial Technology Sandbox (effective 2023). Two-year regulatory waiver pathway through Florida OFR for fintechs operating in money transmission, lending, securities advisory, payment processing. Documented as **alternative pivot pathway** if compliance posture later requires the OpCo to take on retail-facing money-transmission features (e.g. opening the trading platform to outside accredited investors, or offering payment rails for prediction-market settlement). Not a current need under the prop-only deployed posture. K7-canonical (single-source).
+- **`wiki/entities/platforms/interactive-brokers.md`** — NEW entity stub. K7's institutional-grade upgrade path from Alpaca for the Florida OpCo's IP-sale-prep equities + multi-asset execution layer. LEI-gated onboarding (LEI-then-EIN-then-IBKR-then-Brex sequencing per K7 Phase 2). API tiers: Web REST (low-volume) / TWS API (mid-volume, Cemini target) / FIX CTCI (institutional-volume, future). Professional Subscriber market-data classification triggered by the corporate-account structure. Coexists with OANDA (FX) and Alpaca (developer-tier dev path retained).
+- **`wiki/entities/platforms/brex.md`** — NEW entity stub. K7's prescribed banking provider for the dual-entity stack — preferred over Mercury for **programmatic intercompany royalty automation** between the Wyoming HoldCo (IP licensor) and Florida OpCo (IP licensee). Brex's payments API + multi-entity account model + corporate-card-and-rewards-stack maps cleanly to the K7-prescribed quarterly royalty wire pattern that documents the §1235-compatible IP-licensing relationship.
+- **`wiki/concepts/ip-sale-corporate-structure.md`** — extended. New "K7 2026-04-27 — third-source corroboration" section documenting 3-of-3 framing + the 4 K7-unique operational axes layered on top of K5 + K6's structural prescription. K7 explicitly names Wyoming HoldCo + Florida OpCo with no equivocation on the state-pair (some prior research flirted with Delaware HoldCo — K7 closes that door). Charging-order language in K7 mirrors K6 verbatim.
+- **`wiki/concepts/publishers-exclusion-iaa.md`** — extended with **Lowe v. SEC** SaaS framing + **July 2024 amendment to SEC Internet Adviser Exemption Rule 203A-2(e)** (eliminates the 15-client de minimis exception). K7 paras 49–50 are the canonical statement; this is the regulatory-cliff change that the Cemini OpCo must be aware of if it ever pivots away from prop-only into any SaaS/personalized-advisory direction.
+- **`wiki/concepts/irc-1235-capital-gains-safe-harbor.md`** — extended with the §174A coordinated-pair note. The two elections operate on distinct cost categories and don't conflict; together they form the load-bearing tax-treatment pair for the IP-sale-prep window.
+- **`wiki/concepts/ip-sale-readiness.md`** — component 6 (tax + legal structure) extended with K7 forward-pointer paragraph covering 3-of-3 corroboration + the 4 K7-unique operational dimensions + Florida Fintech Sandbox alternative pivot pathway.
+
+### Bidirectional backlink updates
+
+- Source-side: K5 (`sources/3-9-pm-research.md`) + K6 (`sources/3-10-algorithmic-trading-ip-sale-audit.md`) + `sources/3-19-compliance-research.md` + `sources/3-19-ip-sale-research.md` all carry K7-stamp annotated entries linking to the K7 source. K6's reciprocal entry includes the §475(f) MTM split note (K7 + K5 endorse / K6 rejects, reconciliable on object-of-the-tax).
+- Concept-side: `milestone-ledger.md` + `replacement-cost-valuation.md` + `publishers-exclusion-apa.md` + the cluster hub `rl-marl-research.md` carry K7 backlinks. Cluster hubs `quant-finance.md` + `market-microstructure.md` already had K7 backlinks from corpus-bootstrap pass — no edits needed.
+- Entity-side: `entities/platforms/alpaca.md` + `entities/platforms/oanda.md` + `entities/platforms/kalshi.md` carry K7-stamp annotated entries. Alpaca-vs-IBKR framed as developer-tier-vs-institutional-grade; OANDA-vs-IBKR as FX-specific-vs-multi-asset; Kalshi as the CFTC-DCM venue whose jurisdictional cleanliness reinforces the IP-sale-prep story under the K7-prescribed Florida OpCo.
+
+### Lint state at ship
+
+```
+Wiki lint scan — 364 pages indexed
+Outbound edges: 1592; Inbound edge coverage: 364 pages
+Orphans: 0 · Bidir gaps: 0 · Dangling: 0 · Missing @paths: 0
+Dated NEEDS VERIFICATION ≥7 days old: 0 (the 2 K7 tags dated 2026-04-27 are within the 7-day window)
+Cited-but-unread: 134 (was 135 pre-K7 — fintech-startup-legal-ip-roadmap removed via read_status: validated)
+```
+
+### Pattern note
+
+K7 closes the **K5 + K6 + K7 corporate-structure trio** as the second-known full 3-of-3 corroboration window in the cited-unread queue (the first was J/K/K3 on prescribed-vs-deployed Cemini-internal blueprint sources). K6's pattern note framed K6 as "the first cross-source-corroboration pass"; K7 extends that pattern to **3-source agreement on the same structural prescription with each source contributing distinct operational layers on top of the shared core**:
+
+- K5 = trader-tax-status + §475(f) MTM endorsement + scatter-gather containerization detail
+- K6 = LGPL-3.0 architectural isolation + SEC Rule 3a5-4 sub-$50M dealer-registration carve-out + replacement-cost valuation framing + §475(f) MTM rejection (reconcilable)
+- K7 = §174A R&E expensing + Florida Fintech Sandbox + Lowe v. SEC SaaS-axis + LEI/EIN/IBKR/Brex institutional banking-and-brokerage layer + §475(f) MTM endorsement (sides with K5 against K6, reconcilable)
+
+The trio collectively constitutes the canonical IP-sale-prep tax-and-structure substrate. The dual-entity prescription is now the strongest 3-of-3-corroborated structural recommendation in the wiki. **Earliest-source-was-third-read is novel for the K-series**: K7 dates to Feb 25 (35 days before K5, 38 days before K6); routine deep-read sequencing would have made K7 the K5 candidate. The cited-unread-density sort axis effectively buried the foundational source under denser-but-later derivative work — a librarian-side noise-vs-signal lesson worth filing for future K-series queue management.
+
+Top of cited-unread queue post-K7: `sources/4-5-links.md` (4 inbound), `sources/4-4-link-re.md` / `sources/4-4-link-re-2.md` / `sources/3-26-link-re-3.md` / `sources/scaling-roadmap-research.md` / `sources/forex-1-4-4.md` / `sources/4-6-links.md` / `sources/3-26-b.md` / `sources/3-28-links-2.md` (3 inbound each) — all `[multi-topic aggregate]` link-evaluation docs that touch many concepts shallowly. Natural K8 candidate moves to per-citation-density single-topic deep-reads at 2 inbound, OR to a different routing heuristic (e.g. earliest-date-among-cited rather than most-cited).
+
+---
+
 ## [2026-04-27] ingest | K6: deep-read `sources/3-10-algorithmic-trading-ip-sale-audit.md` — second cross-source corroboration on dual-entity (HoldCo / OpCo); new corporate-structure concept page
 
 Resolves the next K-series cited-unread target. Shape: same J/K/K2/K3/K5 deep-read pattern, but the object of the audit is **legal/tax/structural**, not technical-deployment. The audit is a 155-paragraph 38KB DOCX dated 2026-03-10 — a sibling document to K5's 3-9-pm-research (2026-03-08), authored within ~2 days. Both audits prescribe a Wyoming HoldCo + Florida OpCo dual-entity for the IP-sale prep window; they **diverge on §475(f) Mark-to-Market election** (3-9 endorses, 3-10 rejects for IP-sale-prep purposes). The divergence is reconcilable on object-of-the-tax (3-9 optimizes the OpCo's trading-book P&L; 3-10 optimizes the HoldCo's IP-sale exit). Both can be true.

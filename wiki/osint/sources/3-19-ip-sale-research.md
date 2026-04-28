@@ -38,9 +38,10 @@ related:
   - sources/3-10-cryptographic-research.md
   - sources/3-19-compliance-research.md
   - sources/3-19-kalshi-trading-strategy-research.md
+  - sources/fintech-startup-legal-ip-roadmap.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-27
 read_status: deep-read
 clusters:
   - rl-marl
@@ -88,6 +89,7 @@ clusters:
 - @sources/3-10-cryptographic-research.md — the cryptographic audit trail (SHA-256 chain + pymerkle + OpenTimestamps) cited here as THE differentiating evidence-pack artifact lives in this earlier source
 - @sources/3-19-compliance-research.md — companion regulatory analysis; presents an alternative §1235 mitigation strategy (provisional patent + SMLLC) that is **complementary, not a substitute** for this source's APA-architecture-and-goodwill framing
 - @sources/3-19-kalshi-trading-strategy-research.md — companion execution-architecture source; provides the Kalshi-specific mathematics (Avellaneda-Stoikov in logit space, Bayesian Modified Kelly, batch-cancel weighting asymmetry) that justify the uncorrelated-alpha valuation premium this source quantifies
+- @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27 — companion deal-prep source; this 3-19 source frames **deal economics** (replacement-cost valuation, APA earnout structure, restrictive covenants, Florida zero-state-tax). K7 (Feb 25 — earliest of the corporate-structure trio) adds the **operational infrastructure** layer required to execute the deal: LEI/EIN sequencing, IBKR Pro corporate brokerage onboarding, Brex banking automation enabling intercompany royalty flow between Wyoming HoldCo + Florida OpCo, §174A R&E expensing for sub-$31M operators, Florida Fintech Sandbox Ch. 559.952 alternative pivot pathway. The two sources are operationally adjacent — this 3-19 source describes what the buyer values; K7 describes the platform infrastructure required to package + transfer that value cleanly.
 
 ## Raw Concept
 

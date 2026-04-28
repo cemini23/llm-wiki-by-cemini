@@ -8,6 +8,7 @@ related:
   - sources/roadmap.md
   - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-19-compliance-research.md
+  - sources/fintech-startup-legal-ip-roadmap.md
   - concepts/ip-sale-readiness.md
   - concepts/ip-sale-corporate-structure.md
   - concepts/irc-1235-capital-gains-safe-harbor.md
@@ -27,6 +28,7 @@ updated: 2026-04-27
 - @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — the HoldCo formally owns the milestone-ledger commits; the dual-entity structure is what makes the IP chain-of-title (which the ledger documents) cleanly transferable in the APA
 - @concepts/irc-1235-capital-gains-safe-harbor.md — K6 2026-04-27 — Git commit history (the ledger's substrate) is the load-bearing audit artifact for the §1235 personal-efforts test (proves individual-inventor authorship)
 - @concepts/cryptographic-audit-trail.md — sibling J-pass page (Track C → RESOLVED) on the same prescribed-vs-deployed pattern
+- @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27 — third-source corroboration that **Git commit history is the load-bearing trade-secret evidentiary substrate** for the §1235 personal-efforts test (joins 3-10 audit's same finding); K7's IP Protection section explicitly calls Git authorship history the audit artifact under Defend Trade Secrets Act 18 U.S.C. § 1839 + Neural Magic v. Facebook economic-value-from-secrecy burden — the milestone-ledger-as-cryptographically-anchored artifact would be a **tamper-evident superset** of this Git-history substrate
 
 ## Raw Concept
 

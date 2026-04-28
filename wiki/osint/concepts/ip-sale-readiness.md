@@ -12,6 +12,7 @@ related:
   - sources/3-19-kalshi-trading-strategy-research.md
   - sources/3-19-langgraph-scatter-gather-financial-analysis.md
   - sources/3-19-telegram-discord-research.md
+  - sources/fintech-startup-legal-ip-roadmap.md
   - sources/forex-research-3-18.md
   - sources/trading-playbook-research.md
   - concepts/cryptographic-audit-trail.md
@@ -21,6 +22,8 @@ related:
   - concepts/dcm-state-preemption.md
   - concepts/irc-1235-capital-gains-safe-harbor.md
   - concepts/ip-sale-corporate-structure.md
+  - concepts/section-174-rd-expensing.md
+  - concepts/florida-fintech-sandbox.md
   - concepts/milestone-ledger.md
   - entities/infrastructure/hetzner.md
   - entities/frameworks/langgraph.md
@@ -33,13 +36,15 @@ related:
   - entities/platforms/alpaca.md
   - entities/platforms/hyperliquid.md
   - entities/platforms/kalshi.md
+  - entities/platforms/interactive-brokers.md
+  - entities/platforms/brex.md
   - entities/infrastructure/deepseek-api.md
   - entities/data-sources/opensanctions.md
   - entities/data-sources/telethon.md
   - concepts/ai-ethics-and-governance.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-27
 ---
 
 ## Relations
@@ -60,7 +65,12 @@ updated: 2026-04-26
 - @concepts/publishers-exclusion-iaa.md
 - @concepts/dcm-state-preemption.md — the swap-vs-gambling preemption fight at SCOTUS will determine whether `@entities/platforms/kalshi.md` role 3 (compliance-leverage point) survives, which is a load-bearing leg of the IP-sale defensibility thesis
 - @concepts/irc-1235-capital-gains-safe-harbor.md
-- @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — dedicated dual-entity (Wyoming HoldCo + Florida OpCo) page; expansion of component 6 prescribed by @sources/3-10-algorithmic-trading-ip-sale-audit.md §2(a) corroborated by @sources/3-9-pm-research.md para 124
+- @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — dedicated dual-entity (Wyoming HoldCo + Florida OpCo) page; expansion of component 6 prescribed by @sources/3-10-algorithmic-trading-ip-sale-audit.md §2(a) corroborated by @sources/3-9-pm-research.md para 124. **K7 2026-04-27 update**: now 3-of-3 cross-source corroborated — K7 (`@sources/fintech-startup-legal-ip-roadmap.md`, Feb 25) is the **earliest** of the three audits and adds §174A R&E expensing + LEI/EIN sequencing + Brex/IBKR institutional banking-and-brokerage layer
+- @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27; the most operationally granular of the three corporate-structure audits; 11-step / 3-phase execution roadmap
+- @concepts/section-174-rd-expensing.md — K7 promotion 2026-04-27; §174A R&E expensing pairs with §1235 as coordinated tax instruments (operating-cost side + exit-event side) — adds a fourth tax-treatment dimension to component 6
+- @concepts/florida-fintech-sandbox.md — K7 promotion 2026-04-27; supervised-pilot pathway for retail SaaS validation if Cemini ever pivots from outright IP sale to ongoing SaaS operations
+- @entities/platforms/interactive-brokers.md — K7 prescription 2026-04-27; institutional-grade brokerage upgrade for Florida OpCo (TWS API + Pro corporate account); upgrade gated on LEI acquisition
+- @entities/platforms/brex.md — K7 prescription 2026-04-27; institutional banking primary for both HoldCo + OpCo; programmatic API enables intercompany royalty automation
 - @concepts/milestone-ledger.md
 - @entities/infrastructure/hetzner.md
 - @entities/frameworks/langgraph.md
@@ -112,7 +122,7 @@ multi-asset platform.
    PRs.~~ *The ledger does not exist (no table, no JSONL, no YAML). `docs/ROADMAP.md` is a weak substitute with no schema-version / SBOM-hash / Merkle-root anchoring. This is the P0 ticket and the single most-load-bearing gap in the acquirer narrative. See @concepts/milestone-ledger.md.*
 6. **Tax + legal structure** `[CONFIRMED 2026-04-24] doc-only` — Florida single-member LLC with IRC
    §1235 capital-gains safe harbor on IP transfer; asset-purchase
-   agreement template with earnout tiers pre-drafted. *APA deliverable; no engineering milestone. See @concepts/irc-1235-capital-gains-safe-harbor.md + @concepts/publishers-exclusion-apa.md (deal carve-out mechanic) + @concepts/publishers-exclusion-iaa.md (registration-burden mitigation).* **K6 2026-04-27 forward-pointer**: the prescribed upgrade from single Florida SMLLC to **Wyoming HoldCo + Florida OpCo dual-entity** (per @sources/3-10-algorithmic-trading-ip-sale-audit.md §2(a) corroborating @sources/3-9-pm-research.md para 124) is documented at @concepts/ip-sale-corporate-structure.md. The current single-SMLLC posture is sufficient for §1235 today; the dual-entity upgrade is a risk-reduction step (charging-order protection + IP insulation + privacy) prescribed before first APA term sheet circulates.
+   agreement template with earnout tiers pre-drafted. *APA deliverable; no engineering milestone. See @concepts/irc-1235-capital-gains-safe-harbor.md + @concepts/publishers-exclusion-apa.md (deal carve-out mechanic) + @concepts/publishers-exclusion-iaa.md (registration-burden mitigation).* **K6 2026-04-27 forward-pointer**: the prescribed upgrade from single Florida SMLLC to **Wyoming HoldCo + Florida OpCo dual-entity** (per @sources/3-10-algorithmic-trading-ip-sale-audit.md §2(a) corroborating @sources/3-9-pm-research.md para 124) is documented at @concepts/ip-sale-corporate-structure.md. The current single-SMLLC posture is sufficient for §1235 today; the dual-entity upgrade is a risk-reduction step (charging-order protection + IP insulation + privacy) prescribed before first APA term sheet circulates. **K7 2026-04-27 forward-pointer**: the corporate-structure thesis is now **3-of-3 cross-source corroborated** — `@sources/fintech-startup-legal-ip-roadmap.md` (Feb 25) is the **earliest** of the three audits and predates K5 + K6 by ~2 weeks. K7 adds three operationally-load-bearing dimensions on top of the dual-entity blueprint: (a) **§174 → §174A R&E expensing** (TCJA 5-yr amortization 2022–2024 → restored full domestic expensing 2025 for taxpayers <$31M average annual gross receipts) — pairs with §1235 as coordinated tax instrument (annual operating cost side + exit-event proceeds side); see @concepts/section-174-rd-expensing.md. (b) **LEI/EIN sequencing** (LEI from GLEIF + EIN from IRS) — onboarding-blocking prerequisites for institutional brokerage account opening per K7 Phase 2 step 5. (c) **Institutional banking + brokerage infrastructure** — Brex corporate accounts for both HoldCo + OpCo enable **programmatic intercompany royalty automation** between Wyoming HoldCo (IP licensor) and Florida OpCo (IP licensee); IBKR Pro corporate account under the Florida OpCo provides multi-asset institutional-grade execution + TWS API + (optional) FIX CTCI; both upgrades gated on LEI per K7 Phase 3 steps 8–9. See @entities/platforms/brex.md + @entities/platforms/interactive-brokers.md. K7 also documents a **Florida Fintech Sandbox** (Ch. 559.952) supervised-pilot pathway as an alternative to outright IP sale if Cemini ever pivots to retail SaaS — see @concepts/florida-fintech-sandbox.md.
 
 ### Deal-killer ledger
 Specific items tracked separately because they'd torpedo the sale if

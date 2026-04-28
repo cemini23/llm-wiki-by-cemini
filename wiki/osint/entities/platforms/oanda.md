@@ -10,9 +10,10 @@ related:
   - sources/forex-research-3-18.md
   - concepts/carry-trade.md
   - concepts/macro-weather-regime.md
+  - entities/platforms/interactive-brokers.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-27
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-04-23
 - @sources/forex-research-3-18.md
 - @concepts/carry-trade.md
 - @concepts/macro-weather-regime.md
+- @entities/platforms/interactive-brokers.md — K7 prescription 2026-04-27 — non-FX sibling broker; OANDA is FX-specific (24/5 majors + crosses), IBKR is the multi-asset institutional-grade venue prescribed for the Florida OpCo. The two coexist in the IP-sale-prep stack: OANDA retains the deployed FX execution path; IBKR adds the equities + futures + multi-currency margin layer that the institutional-buyer archetype expects to inherit alongside the FX integration
 
 ## Raw Concept
 

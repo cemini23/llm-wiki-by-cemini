@@ -2,14 +2,16 @@
 title: IRC §1235 capital-gains safe harbor
 type: concept
 tags: [concept, tax, legal, m-and-a]
-keywords: [1235, 1221, tcja, ltcg, holdco, opco, smllc, personal-efforts]
+keywords: [1235, 1221, tcja, ltcg, holdco, opco, smllc, personal-efforts, 174a, r&e]
 related:
   - sources/3-9-pm-research.md
   - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-19-compliance-research.md
   - sources/3-19-ip-sale-research.md
+  - sources/fintech-startup-legal-ip-roadmap.md
   - concepts/ip-sale-readiness.md
   - concepts/ip-sale-corporate-structure.md
+  - concepts/section-174-rd-expensing.md
   - concepts/milestone-ledger.md
 maturity: validated
 created: 2026-04-23
@@ -22,8 +24,10 @@ updated: 2026-04-27
 - @sources/3-10-algorithmic-trading-ip-sale-audit.md — K6 deep-read 2026-04-27; full §2 audit of §1221(a)(3) post-TCJA exposure and §1235 carve-out path
 - @sources/3-19-compliance-research.md
 - @sources/3-19-ip-sale-research.md
+- @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27; paras 23–25 anchor the §1221(a)(3) trade-secret framing that §1235 is the carve-out from; paras 16–19 introduce the coordinated §174A R&E expense-deduction instrument
 - @concepts/ip-sale-readiness.md
 - @concepts/ip-sale-corporate-structure.md — dedicated dual-entity (HoldCo / OpCo) page; this §1235 page is the tax-treatment sub-thread of that umbrella structure
+- @concepts/section-174-rd-expensing.md — K7 promotion 2026-04-27; coordinated tax-treatment pair — §174A optimizes the **annual operating cost** side (R&E expense deduction during pre-sale period); §1235 optimizes the **exit-event proceeds** side (capital-gains rate at sale). Both apply simultaneously
 - @concepts/milestone-ledger.md — Git commit history is the load-bearing audit artifact for the §1235 personal-efforts test (proves individual-inventor authorship)
 
 ## Raw Concept
@@ -114,6 +118,32 @@ because both SMLLCs remain disregarded entities; the dual-entity
 wrapper segregates **liability and asset-ownership topology**, not
 income, and §1235 keys on the individual inventor not the state of
 formation. An S-corp election on either entity would break §1235.
+
+### Coordinated tax-treatment pair: §174A + §1235
+K7 (@sources/fintech-startup-legal-ip-roadmap.md, deep-read
+2026-04-27) is the corpus's most explicit framing of how §174A R&E
+expensing pairs with §1235 capital-gains as **coordinated tax
+instruments operating on distinct cost categories**:
+
+- **§174A** (annual operating cost side) — deducts the cost of
+  *building* the algorithm: programming time, contractor fees,
+  developer compensation, historical tick data acquisition, server
+  infrastructure. Restored 2025 for taxpayers with average annual
+  gross receipts <$31M (Cemini sub-$1M sits comfortably under).
+  Reduces the founder's annual federal taxable income during the
+  IP-sale-prep window — converting capitalized R&E into immediate
+  ordinary-expense deductions.
+- **§1235** (exit-event proceeds side) — converts the IP-sale
+  proceeds (base price + earnouts) from ordinary-income default
+  (per §1221(a)(3) post-TCJA) to long-term capital-gains rate.
+  Reduces the federal tax on the one-time exit event from ~37% top
+  marginal + NIIT down to 20% LTCG + NIIT.
+
+The two elections do not conflict — one operates on operating
+expenses (deduction), the other on exit proceeds (recharacterization).
+They apply simultaneously to the same Cemini-side activity (algorithm
+dev → IP sale). See @concepts/section-174-rd-expensing.md for the
+§174A details.
 
 ## Snippets
 

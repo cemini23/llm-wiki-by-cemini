@@ -13,6 +13,7 @@ related:
   - sources/3-19-kalshi-trading-strategy-research.md
   - sources/3-29-research-4.md
   - sources/3-9-pm-research.md
+  - sources/fintech-startup-legal-ip-roadmap.md
   - sources/kalshi-2-3-29.md
   - sources/kalshi-3-3-29.md
   - sources/kalshi-4-3-29.md
@@ -51,6 +52,7 @@ updated: 2026-04-27
 - @sources/3-19-kalshi-trading-strategy-research.md
 - @sources/3-29-research-4.md
 - @sources/3-9-pm-research.md
+- @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27 — K7's regulatory framework section names Kalshi as the **CFTC-DCM venue whose jurisdictional cleanliness reinforces the IP-sale-prep story**; the K7 prescription (Florida OpCo + Wyoming HoldCo) keeps Kalshi-domiciled event-contract trading under the CFTC's federal-preemption shield, complementing role 3 (compliance leverage point) documented in this entity's narrative
 - @sources/kalshi-2-3-29.md
 - @sources/kalshi-3-3-29.md
 - @sources/kalshi-4-3-29.md

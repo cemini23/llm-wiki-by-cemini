@@ -15,9 +15,10 @@ related:
   - entities/infrastructure/timescaledb.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
+  - sources/fintech-startup-legal-ip-roadmap.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-27
 read_status: validated
 clusters:
   - rl-marl
@@ -46,6 +47,7 @@ clusters:
 - @entities/infrastructure/timescaledb.md
 - @entities/platforms/kalshi.md
 - @entities/platforms/polymarket.md
+- @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27 — sibling cross-source in the corporate-structure trio (K5 = this 3-9 source, Mar 8; K6 = 3-10 audit, Mar 10; K7 = fintech-startup-legal-ip-roadmap, **Feb 25** — earliest of three). Para 124 here is the proximate corroborating source for the dual-entity prescription documented at @concepts/ip-sale-corporate-structure.md; K7 predates this and adds §174A R&E expensing + LEI/EIN sequencing + Brex/IBKR institutional banking-and-brokerage layer on top of the dual-entity skeleton
 
 ## Raw Concept
 

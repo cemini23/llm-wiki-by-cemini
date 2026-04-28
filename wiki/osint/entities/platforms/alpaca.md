@@ -6,17 +6,21 @@ keywords: []
 related:
   - sources/3-19-compliance-research.md
   - sources/3-19-ip-sale-research.md
+  - sources/fintech-startup-legal-ip-roadmap.md
   - concepts/ip-sale-readiness.md
+  - entities/platforms/interactive-brokers.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-04-27
 ---
 
 ## Relations
 
 - @sources/3-19-compliance-research.md
 - @sources/3-19-ip-sale-research.md
+- @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27 — K7 frames Alpaca + QuantConnect as the **developer-tier** API alternative appropriate for prototyping but **not for institutional liquidity / routing**; the K7 prescription is to upgrade to IBKR Pro corporate account under the Florida OpCo for the IP-sale-prep institutional-grade execution layer. Alpaca remains the deployed Cemini equities path; IBKR is prescribed-but-not-deployed.
 - @concepts/ip-sale-readiness.md
+- @entities/platforms/interactive-brokers.md — K7 prescription 2026-04-27 — IBKR is the institutional-grade upgrade path from Alpaca; LEI-gated onboarding; TWS API + (optional) FIX CTCI for low-latency routing; Professional Subscriber market-data fee tier
 
 ## Raw Concept
 

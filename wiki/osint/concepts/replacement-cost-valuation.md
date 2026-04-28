@@ -7,6 +7,7 @@ related:
   - sources/3-10-cryptographic-research.md
   - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-19-ip-sale-research.md
+  - sources/fintech-startup-legal-ip-roadmap.md
   - concepts/ip-sale-readiness.md
   - concepts/ip-sale-corporate-structure.md
   - entities/components/kelly-cvar-risk-engine.md
@@ -22,6 +23,7 @@ updated: 2026-04-27
 - @sources/3-19-ip-sale-research.md — primary valuation methodology recommended for pre-revenue quant IP; sets the floor for the base+earnout deal structure
 - @concepts/ip-sale-readiness.md
 - @concepts/ip-sale-corporate-structure.md — K6 2026-04-27 — the IP that this valuation prices is owned by the prescribed Wyoming HoldCo at sale time; structure-side rationale for asset segregation is "preserve the asset that's being valued"
+- @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27 — third-source corroboration of the IP-HoldCo centralization rationale; K7 frames the Wyoming HoldCo as the **single locus of valued IP** that must be cleanly transferable at sale, which is the structural prerequisite for replacement-cost valuation to apply to a discrete acquirable asset bundle rather than to a tangle of operationally-entangled code + data + relationships
 - @entities/components/kelly-cvar-risk-engine.md
 
 ## Raw Concept
