@@ -9,6 +9,7 @@ related:
   - entities/infrastructure/deepseek-r1-14b.md
   - entities/infrastructure/deepseek-api.md
   - entities/infrastructure/localai.md
+  - concepts/librarian-server-architecture.md
 maturity: retracted
 created: 2026-04-23
 updated: 2026-04-28

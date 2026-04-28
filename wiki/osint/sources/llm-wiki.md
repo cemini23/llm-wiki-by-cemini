@@ -11,6 +11,7 @@ related:
   - sources/emtwiki-deployed-example.md
   - sources/wastedcode-memex.md
   - sources/willynikes2-knowledge-base-server.md
+  - concepts/librarian-server-architecture.md
 maturity: validated
 read_status: validated
 created: 2026-04-23

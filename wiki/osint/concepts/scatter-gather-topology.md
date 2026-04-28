@@ -18,6 +18,7 @@ related:
   - concepts/context-compression-resume-pattern.md
   - entities/infrastructure/localai.md
   - concepts/wiki-tooling-evaluation.md
+  - concepts/librarian-server-architecture.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

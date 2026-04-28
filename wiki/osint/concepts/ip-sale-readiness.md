@@ -51,6 +51,7 @@ related:
   - sources/4-5-links.md
   - entities/frameworks/autoagent.md
   - entities/infrastructure/localai.md
+  - concepts/librarian-server-architecture.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

@@ -14,6 +14,7 @@ related:
   - sources/crypto-3-4-11.md
   - sources/4-5-links.md
   - entities/infrastructure/localai.md
+  - concepts/librarian-server-architecture.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

@@ -20,6 +20,7 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/agentmemory-rohitg00-cpr-impl.md
+  - concepts/librarian-server-architecture.md
 maturity: validated
 created: 2026-04-24
 updated: 2026-04-28

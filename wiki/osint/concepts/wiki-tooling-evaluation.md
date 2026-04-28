@@ -18,6 +18,7 @@ related:
   - entities/infrastructure/localai.md
   - entities/infrastructure/deepseek-api.md
   - entities/frameworks/fastmcp.md
+  - concepts/librarian-server-architecture.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28
@@ -39,6 +40,7 @@ updated: 2026-04-28
 - @entities/infrastructure/localai.md — operational LLM-runtime slot for any locally-hosted compile/query loop; matches the same `base_url` swap pattern adopted tools would use
 - @entities/infrastructure/deepseek-api.md — operative LLM brain today; multi-provider tools (llm-wiki-compiler, knowledge-base-server) all support DeepSeek via `OPENAI_BASE_URL` swap
 - @entities/frameworks/fastmcp.md — deployed Cemini MCP layer; any adopted tool's MCP server must coexist (separate transport / separate URL) with the existing 130-tool `cemini_mcp` container
+- @concepts/librarian-server-architecture.md — child decision document expanding the "Hosting topology" sub-decision (Option C — dedicated Hetzner CPX21 librarian server) into a full architectural plan with migration phases, sizing math, and 24/7 operational SLA targets. **Where this WTE page resolved "which tool"; that page resolves "where it runs."**
 
 ## Raw Concept
 
@@ -181,21 +183,41 @@ export OPENAI_BASE_URL=https://api.deepseek.com
 
 [NEEDS VERIFICATION 2026-04-28] DeepSeek's API does **not** ship an embeddings endpoint — official docs at `api-docs.deepseek.com` list only `/chat/completions`; a DeepSeek GitHub issue (`deepseek-ai/DeepSeek-R1#802`, Feb 2026) explicitly enumerates DeepSeek as "Embedding API ❌" in its current state and proposes adding one. So Path B is **chat-only**: the embeddings layer either uses index-based fallback (default; acceptable) or routes to a separate provider via `OPENAI_EMBEDDINGS_BASE_URL`.
 
-#### Path C — Ollama embeddings sidecar (deferred — hardware-gated)
+#### Path C — Ollama embeddings sidecar `[SUPERSEDED 2026-04-28]`
 
-When external storage lands and the laptop has comfortable headroom for a local Ollama instance:
+`[SUPERSEDED 2026-04-28 — Path C now lives on the dedicated librarian server, not on the laptop. External drive purchase cancelled. See @concepts/librarian-server-architecture.md for the committed plan.]`
+
+Original framing (retained for lineage): the laptop-side Ollama embeddings sidecar was the 2026-04-28 morning plan; the user-stated 24/7 crypto-market reliability requirement that surfaced 2026-04-28 afternoon (*"of utmost importance that the deployed cemini brain can query the library at any time as crypto markets are 24/7"*) made laptop-as-host the wrong physical location. Embeddings will live on a dedicated Hetzner CPX21 librarian server (Ashburn, $13.99/mo) instead — see @concepts/librarian-server-architecture.md for topology, sizing, migration phases, and operational SLA targets.
+
+The retracted laptop-side recipe (kept here so future readers don't re-derive what was tried):
 
 ```bash
+# RETRACTED 2026-04-28 — superseded by server-side deployment
 brew install ollama
 ollama pull nomic-embed-text   # ~270 MB; free; runs on-device
 export LLMWIKI_EMBEDDING_MODEL=nomic-embed-text
-export OPENAI_EMBEDDINGS_BASE_URL=http://localhost:11434/v1   # Ollama's OpenAI shim
-# (chat continues to use Path A or Path B above)
+export OPENAI_EMBEDDINGS_BASE_URL=http://localhost:11434/v1
 ```
 
-This composes with either Anthropic (Path A) or DeepSeek (Path B) — embeddings come from Ollama locally, chat goes wherever. Deferred because: (a) the laptop's current ~25 GB free is workable but not comfortable for adding model storage + runtime; (b) the user has flagged an external hard drive purchase as the precondition; (c) llm-wiki-compiler's own README frames semantic embeddings as additive to its index-based routing default ("query routing is index-based" per Limitations) — the smoke test does not require embeddings to validate the core ingest/compile/query/lint loop.
+### Hosting topology — laptop vs sync-to-server vs dedicated-server
 
-This deferred posture matches the lineage on `entities/infrastructure/localai.md` / `entities/infrastructure/ollama.md` / `entities/infrastructure/deepseek-r1-14b.md` — local-runtime stories the workspace and the deployed Cemini stack can both adopt cleanly *if and when* hardware lands; until then, hosted/external paths fill the slot.
+`[DECISION 2026-04-28]: Option C — dedicated Hetzner CPX21 librarian server (Ashburn, $13.99/mo) committed.` Full architectural plan + migration phases at @concepts/librarian-server-architecture.md.
+
+Trigger: user-stated 24/7 reliability requirement — *"it is going to be of utmost importance that the deployed cemini brain can query the library at any time as crypto markets are 24/7 and who knows when its going to need info."* This reframes the librarian from a research/curation tool (laptop-only model that worked through K1-K8 + WTE) to an **operational dependency** for the deployed trading stack. Reliability bar moves from "convenient when working" to "available whenever the market is" — and crypto markets are always.
+
+| Option | $/mo | Verdict | Rejection reason |
+|---|---|---|---|
+| **A** Laptop-as-MCP-host (laptop runs llm-wiki-compiler `serve`, brain queries laptop over network) | $0 | ❌ Rejected | Laptop sleeps when lid closes, drops home wifi, IP rotates on residential ISP. Fails the 24/7 SLA target. |
+| **B** Sync to existing production Hetzner server (laptop curates, prod hosts) | $0 | ❌ Rejected | Production server is already at 7 GB RAM (per K8 server-probe `free -g` 2026-04-28). Adding Node + Ollama + nomic-embed-text + llm-wiki-compiler index = ~700 MB extra resident. Couples librarian outage to trading-stack outage. SPOF risk. |
+| **C** Dedicated Hetzner CPX21 librarian server (Ashburn) ✅ committed | $13.99 | **✅ ADOPTED 2026-04-28** | Server-class always-on; intra-Hetzner low-latency to production brain; doesn't load the constrained production box; clean architectural decoupling. See sizing/topology/migration in @concepts/librarian-server-architecture.md |
+| **D** Self-host (Pi 5 / Mac mini / NUC at home) | $80-599 one-time | ❌ Rejected | Home internet reliability dependence; port forwarding / Tailscale tunnel; home-network exposure surface; the laptop-but-bigger problem |
+| Migrate wiki to existing Hetzner production server | $0 | ❌ Rejected | Same RAM constraint as Option B; **breaks librarian doctrine** (per `retracted_deepseek_ollama.md` memory: *"the wiki lives on this laptop precisely because the server cannot carry the full knowledge-and-LLM loop locally"*) |
+
+**Sizing**: CPX21 (3 vCPU / 4 GB RAM / 80 GB NVMe / 2 TB traffic / $13.99) sufficient for embeddings-only spec — see @concepts/librarian-server-architecture.md "Sizing the librarian server" for the 4 GB RAM math (~2-2.6 GB headroom after services). CPX31 ($24.99) tier exists as snapshot-based upgrade path if usage signals chat-model-on-librarian becomes needed.
+
+**Vendor**: Hetzner-same-as-production wins on intra-DC latency + unified ops + competitive pricing. Cross-provider survey 2026-04-28 (OVHcloud / Vultr / Linode / DigitalOcean / Contabo / Oracle Free Tier) captured in @concepts/librarian-server-architecture.md.
+
+**External drive purchase cancelled** as a result of this decision — dedicated server's 80 GB NVMe replaces the laptop-external-drive-for-Ollama need entirely. ROADMAP item E (storage compaction) re-enters scope on its own timeline (independent from librarian decision).
 
 ### Decision gates — what would flip this recommendation
 
@@ -214,20 +236,24 @@ This deferred posture matches the lineage on `entities/infrastructure/localai.md
 Specific impacts on the ROADMAP sections expanded in the K8 commit (`69bdc57`):
 
 - **"Operational efficiency — toward Karpathy LLM Wiki standard"** subsection: adopting `llm-wiki-compiler` closes 3 of the listed items in one move (cited-unread backlog reduction *partial*; periodic lint as session-start ritual *via `llmwiki watch` + lint*; dashboard maturity *via MCP `wiki_status` tool*). The compile/query loop also closes the prescribed-but-absent compounding-queries pattern.
-- **"Memory storage / reading / indexing — wiki growth"** subsection: agentmemory's pipeline becomes the reference implementation for cpr-pattern wiring (the LangGraph `PostgresSaver` checkpointer + DeepSeek summarization-node + pgvector storage trio is now no longer "design from scratch" but "port the agentmemory pipeline shape into Python"). Reduces engineering effort for that ROADMAP item from open-design to port-and-adapt.
-- **"Wiki-as-RAG embedding store"** item: llm-wiki-compiler's built-in semantic-search layer (provider-configurable; embeddings via Ollama or OpenAI-compatible local server) directly addresses this item. The decision shifts from "build a separate pgvector index over the wiki" to "use the embeddings llm-wiki-compiler maintains as part of its compile pipeline."
+- **"Memory storage / reading / indexing — wiki growth"** subsection: agentmemory's pipeline becomes the reference implementation for cpr-pattern wiring (the LangGraph `PostgresSaver` checkpointer + DeepSeek summarization-node + pgvector storage trio is now no longer "design from scratch" but "port the agentmemory pipeline shape into Python"). Reduces engineering effort for that ROADMAP item from open-design to port-and-adapt. **And it lands on the librarian server, not on the constrained production trading-stack box** — see @concepts/librarian-server-architecture.md "Future expansion" section.
+- **"Wiki-as-RAG embedding store"** item: llm-wiki-compiler's built-in semantic-search layer (provider-configurable; embeddings via Ollama or OpenAI-compatible local server) directly addresses this item. The decision shifts from "build a separate pgvector index over the wiki" to "use the embeddings llm-wiki-compiler maintains as part of its compile pipeline" — running on the librarian server's Ollama instance.
+- **New ROADMAP rows** (added 2026-04-28 with this page + @concepts/librarian-server-architecture.md): librarian server provisioning + migration phases (Phase 1-6 per the architecture page).
+- **Closed ROADMAP open question**: "Workspace external-storage purchase" — superseded by the dedicated librarian server (server's 80 GB NVMe replaces the external-drive role for librarian purposes). External drive remains an *optional independent track* if user wants headroom for ROADMAP item E storage compaction (research corpus + market dataset migration), but it's no longer gating anything.
 - **Open question: "Which conductor?"** — *no impact*. Conductor decision is orthogonal to wiki-tooling adoption.
-- **Open question: "Which LLM brain (locally)?"** — *minor impact*. llm-wiki-compiler's multi-provider config matches the same `OPENAI_BASE_URL` swap pattern as the deepseek-api / localai pages. If we adopt llm-wiki-compiler with `LLMWIKI_PROVIDER=ollama` or LocalAI later, the swap is one env-var.
+- **Open question: "Which LLM brain (locally)?"** — *minor impact*. llm-wiki-compiler's multi-provider config matches the same `OPENAI_BASE_URL` swap pattern as the deepseek-api / localai pages. If we adopt llm-wiki-compiler with `LLMWIKI_PROVIDER=ollama` or LocalAI later, the swap is one env-var. The librarian server is the natural experimentation venue for this without touching production.
+- **Open question: "Hetzner host upgrade"** — *partially addressed*. The dedicated CPX21 librarian server is a separate dedicated box, not an in-place upgrade of production. Production-server upgrade question still open if the trading stack itself needs more RAM (per K8 finding); librarian decision is independent.
 
 ### Path to commitment
 
 Recommended sequence (stamps on this concept page as decisions land):
-1. **Smoke test** llm-wiki-compiler in `--review` mode using **Path A (Claude Code zero-config)**, ~30 min. Reads only; produces no-op until approved. `[DECISION 2026-04-28]: Path A confirmed; Path B (DeepSeek) reserved for production if smoke passes; Path C (Ollama embeddings) deferred pending external storage purchase.`
+1. **Smoke test** llm-wiki-compiler in `--review` mode using **Path A (Claude Code zero-config)** on the laptop, ~30 min. Reads only; produces no-op until approved. `[DECISION 2026-04-28]: Path A confirmed; Path B (DeepSeek) reserved for production deployment on the librarian server if smoke passes; Path C (laptop-Ollama embeddings) superseded — embeddings will live on the dedicated librarian server.`
 2. If smoke passes: **stamp** this page `maturity: validated` → `core` and update the recommendation row to `[ADOPTED 2026-04-XX]` with the real-world cost numbers measured.
-3. **Mirror in ROADMAP**: move "Wiki-tooling decision" from Open questions to Soon, then to Done with the test-result commit SHA.
-4. **Steal-from agentmemory**: open a separate concept-page-or-brief for the cpr-pattern Python port plan; coordinate with the K8 LangGraph-checkpointer ROADMAP row.
+3. **Hosting decision**: `[DECISION 2026-04-28]: Option C — dedicated Hetzner CPX21 librarian server.` Full migration plan at @concepts/librarian-server-architecture.md (Phase 0 = WTE-1 smoke test on laptop; Phase 1 = provision CPX21 in Ashburn; Phase 2 = initial wiki sync; Phase 3 = server-side compile + MCP serve; Phase 4 = wire production brain; Phase 5 = sync cron; Phase 6 = monitoring).
+4. **Mirror in ROADMAP**: WTE-1 row already queued; new migration-phase rows added pending smoke-test result.
+5. **Steal-from agentmemory**: open a separate concept-page-or-brief for the cpr-pattern Python port plan; coordinate with the K8 LangGraph-checkpointer ROADMAP row. **Most natural deployment target for cpr-pattern is the librarian server**, not the constrained production trading-stack box.
 
-If smoke fails: this page becomes the **"why we kept hand-rolling"** retraction-of-record, including the specific failure mode that bailed.
+If smoke fails: this page becomes the **"why we kept hand-rolling"** retraction-of-record, including the specific failure mode that bailed; @concepts/librarian-server-architecture.md is paused at Phase 0 (no provisioning) until alternatives are evaluated.
 
 ## Snippets
 

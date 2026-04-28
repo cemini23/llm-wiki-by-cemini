@@ -13,6 +13,7 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/wiki-tooling-evaluation.md
   - sources/atomicmemory-llm-wiki-compiler.md
+  - concepts/librarian-server-architecture.md
 maturity: draft
 created: 2026-04-28
 updated: 2026-04-28

@@ -8,6 +8,77 @@ Newest entries on top.
 
 ---
 
+## [2026-04-28] decision | LSA — Librarian Server Architecture (dedicated Hetzner CPX21 Ashburn $13.99/mo, 24/7 SLA, six-phase migration)
+
+User-committed 2026-04-28 directly downstream of the WTE (Wiki & Memory Tooling Evaluation) wave shipped earlier the same day. The trigger was a single sentence that reframed the librarian: *"it is going to be of utmost importance that the deployed cemini brain can query the library at any time as crypto markets are 24/7 and who knows when its going to need info."* This shifts the workspace librarian from "research/curation tool" (laptop-only model that worked through K1-K8 + WTE) to **operational dependency** for the deployed trading stack — and that reframe forces a hosting decision that laptop-as-host cannot satisfy.
+
+### What shipped
+
+**1 new concept page**: `wiki/concepts/librarian-server-architecture.md` (`maturity: validated`):
+- **Architectural decision**: `[DECISION 2026-04-28]` Option C from the WTE "Hosting topology" sub-decision — dedicated Hetzner CPX21 librarian server (Ashburn, $13.99/mo)
+- **4 alternatives explicitly rejected** with reasons:
+  - Option A (laptop-as-MCP-host): laptop sleeps / drops wifi / IP rotates → fails 24/7 SLA
+  - Option B (sync to existing production server): adds ~700 MB RAM resident to already-tight 7 GB box per K8 finding; couples librarian-failure to trading-stack-failure on shared infra
+  - Option D (self-host Pi5/Mac mini/NUC at home): home ISP reliability dependency; the "laptop but bigger" problem
+  - Migrate wiki to existing production server: same RAM constraint as Option B + breaks librarian doctrine ("the wiki lives on this laptop precisely because the server cannot carry the full knowledge-and-LLM loop locally" per `retracted_deepseek_ollama.md` memory file)
+- **Three-server topology diagram**: laptop (canonical editor + Claude Code + Obsidian + git canonical) → librarian server (synced wiki copy + llm-wiki-compiler + Ollama + nomic-embed-text + MCP serve) → production trading-stack server (brain consumes librarian MCP). All three on Hetzner Cloud (intra-DC low-latency, unified ops, server-class reliability)
+- **CPX-tier sizing math**: CPX21 (3 vCPU / 4 GB RAM / 80 GB NVMe / 2 TB traffic / $13.99): ~600 MB-1 GB OS + ~500 MB Ollama+nomic-embed-text + ~300-500 MB Node+llm-wiki-compiler = ~1.4-2 GB resident → ~2-2.6 GB headroom. **Sufficient for stated embeddings-only spec.** CPX31 ($24.99) as snapshot-based upgrade path if usage signals chat-model-on-librarian needed
+- **Cross-provider survey**: OVHcloud / Vultr / Linode / DigitalOcean / Contabo / Oracle Free Tier — all evaluated; Hetzner-same-vendor-as-production selected for unified ops + intra-DC latency + competitive pricing
+- **6-phase migration plan**: Phase 0 (WTE-1 smoke test on laptop, gates everything) → Phase 1 (provision CPX21 in Ashburn) → Phase 2 (initial wiki sync, rsync-via-SSH) → Phase 3 (server-side `llmwiki compile` + `llmwiki serve` MCP as systemd service) → Phase 4 (wire production brain → librarian MCP — server-stack scope, stages in briefs/) → Phase 5 (sync cron + file-watch incremental compile) → Phase 6 (monitoring + tuning + weekly Hetzner snapshots)
+- **Sync model table**: what syncs (`wiki/`) vs what doesn't (`research for cemini/` raw sources stay laptop-only; `briefs/` uses existing scp-to-prod channel; `.claude/` stays local)
+- **Operational SLA targets**: 99.9%+ availability (Hetzner Cloud SLA matches), <1 hr recovery via snapshot rebuild, p99 MCP query latency <500 ms intra-DC, ≤1 hr sync staleness on hourly cron, ≥4 weeks snapshot retention
+- **IP-sale implications**: multi-server topology becomes part of acquirer deal; reliability story improves (no laptop-as-SPOF for brain's knowledge layer); ~$180/yr added OpEx (visible to acquirer; trivial vs trading-stack envelope)
+- **Future expansion table**: items that fit on CPX21 (larger embedding models / cpr-pattern Python port from agentmemory / wiki-as-RAG embedding store) vs items requiring CPX31 upgrade (chat model on Ollama) vs items requiring second instance (warm-standby librarian)
+- Status: `[PLANNED 2026-04-28 — NOT BUILT]`. Gates Phase 0 → all subsequent phases
+
+**WTE concept page extensions** (`wiki/concepts/wiki-tooling-evaluation.md`):
+- New `### Hosting topology — laptop vs sync-to-server vs dedicated-server` section with 6-row comparison table + `[ADOPTED 2026-04-28]` Option C stamp + cross-link to librarian-server-architecture.md
+- Path C in "Provider configuration & smoke-test recipe" stamped `[SUPERSEDED 2026-04-28]` — laptop-Ollama → server-Ollama; retracted recipe kept inline for lineage
+- "Path to commitment" section step 1 now includes `[DECISION 2026-04-28]: Path A confirmed; Path B reserved for production deployment on the librarian server`; new step 3 covers hosting decision with forward-pointer to librarian-server-architecture
+- "What this means for the existing ROADMAP" section updated: cpr-pattern lands on librarian server (not on production trading-stack box); external-storage open question closed; Hetzner-host-upgrade question partially-addressed (separate dedicated box, not in-place upgrade)
+
+**ROADMAP updates**:
+- "Now" line updated: `+ LSA shipped`
+- New `### Librarian server migration` subsection in `## Soon` with 6-phase table, dependencies, effort estimates per phase
+- WTE-1 row reframed as "WTE-1 / Migration Phase 0" — same smoke test, now explicitly gating subsequent phases
+- Old `## Open questions` "Workspace external-storage purchase" row marked `[CANCELLED 2026-04-28]` — superseded by dedicated server decision
+- Old `## Open questions` "Hetzner host upgrade" row marked `[PARTIALLY ADDRESSED 2026-04-28]` — librarian decision is a separate dedicated box, not in-place upgrade of production
+- New LSA Done row at top of Done table with `pending` SHA placeholder
+
+**10 bidirectional backlink edits** to existing wiki pages (each adds `concepts/librarian-server-architecture.md` to its frontmatter `related:`):
+- `concepts/wiki-tooling-evaluation.md` (parent decision document)
+- `concepts/scatter-gather-topology.md` (load-bearing use case — analyst nodes querying librarian MCP at decision time)
+- `concepts/context-compression-resume-pattern.md` (cpr-pattern Python port lands naturally on librarian server, not on prod box)
+- `concepts/ip-sale-readiness.md` (multi-server topology → acquirer-deal implications)
+- `entities/infrastructure/hetzner.md` (production trading-stack server; companion to, not replaced by, the new librarian server)
+- `entities/infrastructure/deepseek-api.md` (LLM brain whose `services/llm_analyst/deepseek_client.py` will query librarian MCP)
+- `entities/infrastructure/localai.md` (local-runtime that the librarian server unblocks for evaluation without touching production)
+- `entities/infrastructure/ollama.md` (peer alternative; nomic-embed-text deployment on librarian server ends multi-month retracted-state on this page)
+- `sources/atomicmemory-llm-wiki-compiler.md` (the wiki-compiler runtime that will run on the librarian server)
+- `sources/agentmemory-rohitg00-cpr-impl.md` (cpr-pattern reference impl — pipeline shape ports into Python on librarian)
+- `sources/llm-wiki.md` (Karpathy gist — librarian server is the physical realization of "the wiki is the codebase")
+
+### Index update
+
+`wiki/index.md` — librarian-server-architecture row added to `### Librarian / knowledge-base tooling` subsection (now 2 entries, alongside wiki-tooling-evaluation).
+
+### Lint state at ship
+
+```
+Wiki lint scan — 381 pages indexed (+1 from 380 WTE baseline)
+Outbound edges: 1812 (+22 — 11 bidir pairs × 2)
+Orphans: 0 · Bidir gaps: 0 · Dangling: 0 · Missing @paths: 0
+Cited-but-unread: 133 unchanged (1 new page is concept-type, doesn't enter cited-unread queue)
+```
+
+### Pattern note
+
+LSA is the **first 24/7-SLA-driven decision** captured on the wiki, and the **first decision that adds infrastructure rather than just choosing existing tools**. Sets a precedent for capturing operational-dependency decisions as concept-page-as-decision-document — parallel to WTE's tool-adoption-decision-document pattern shipped in the same commit window. Crypto-market-driven 24/7 framing as the load-bearing constraint is also new in this corpus — previous reliability framing was "curation convenience," not "deployed-trading-stack uptime." Future similar decisions (monitoring stack expansion, redundant pgvector, multi-region failover, observability for the librarian server itself) likely follow the same shape: concept-page-as-decision-document with explicit alternatives + rejection reasons + sizing math + migration phases + operational SLA targets.
+
+The **decision sequence within a single working session** is also worth noting: WTE shipped (3f923e6) → user posed pricing/Ollama questions → DECISION clarification commit shipped (192319e) → user surfaced 24/7 reliability requirement → architectural reframe to dedicated server → LSA shipped (this commit). This is fast-iteration decision-making, with each step properly captured before the next surfaces. The wiki acts as durable thinking-rest-state between turns; without it, the same decision-tree would have to be re-derived every session.
+
+---
+
 ## [2026-04-28] ingest | WTE — Wiki & Memory Tooling Evaluation (7 user-dropped candidates → 1 concept page + 6 source pages)
 
 User dropped 7 URLs across two turns 2026-04-28 for evaluation against the workspace librarian's current Karpathy-pattern coverage and the prescribed-not-built cpr-pattern wiring path. Direct continuation of the K8 ROADMAP expansion's "Operational efficiency toward Karpathy LLM Wiki standard" subsection.
