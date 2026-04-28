@@ -88,6 +88,7 @@ related:
   - sources/rl-technical-audit-findings-3-9.md
   - sources/sakana-conductor-rl-orchestration.md
   - entities/infrastructure/sakana-fugu.md
+  - sources/sakana-trinity-llm-coordinator.md
   - sources/scaling-roadmap-research.md
   - sources/signa.md
   - sources/sort-1-4-3.md
@@ -183,7 +184,8 @@ updated: 2026-04-27
 - @sources/regret-driven-portfolios.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — LLM-guided regret-minimization for portfolio allocation)
 - @sources/rl-technical-audit-findings-3-9.md — RL/MARL source in the Cemini research corpus
 - @sources/sakana-conductor-rl-orchestration.md — RL/MARL source in the Cemini research corpus (user-dropped 2026-04-27 — ICLR 2026 Sakana AI paper; 7B Conductor LLM trained with GRPO to orchestrate frontier worker LLMs; **first paper in cluster to RL-train the orchestration layer itself**, beats GPT-5 average 77.27 vs 74.78 by orchestrating it)
-- @entities/infrastructure/sakana-fugu.md — **first productized RL-trained-orchestrator in the cluster** (user-dropped 2026-04-27). Closed-beta API launched by Sakana 2026-04-24 — ~7 weeks after the Conductor paper's arXiv finalization. Joint productization of the Conductor (RL-trained orchestrator) + Trinity (evolved coordinator, sibling ICLR 2026 paper not yet ingested) methodologies. Two-tier lineup (Mini latency-optimized / Ultra full orchestration) reported to beat 2026-frontier-calendar models (Gemini 3.1, GPT 5.4, Opus 4.6) on GPQAD/LCBv6/SWEPro
+- @entities/infrastructure/sakana-fugu.md — **first productized RL-trained-orchestrator in the cluster** (user-dropped 2026-04-27). Closed-beta API launched by Sakana 2026-04-24 — ~7 weeks after the Conductor paper's arXiv finalization. Joint productization of the Conductor (RL-trained orchestrator) + Trinity (evolved coordinator) methodologies. Two-tier lineup (Mini latency-optimized / Ultra full orchestration) reported to beat 2026-frontier-calendar models (Gemini 3.1, GPT 5.4, Opus 4.6) on GPQAD/LCBv6/SWEPro
+- @sources/sakana-trinity-llm-coordinator.md — RL/MARL source in the Cemini research corpus (ingested 2026-04-28 as Conductor sibling). ICLR 2026 Sakana AI paper, arXiv 2512.04695. **Caveat for the rl-marl cluster framing**: Trinity is the cluster's first ES-trained-coordinator entry — its training mechanism is **explicitly anti-RL** (sep-CMA-ES, derivative-free). The paper formally argues REINFORCE collapses under binary rewards + weak parameter coupling (numerically: 0.253 LCB for REINFORCE vs 0.615 for sep-CMA-ES). Useful counterweight to the cluster's RL-default framing — Trinity sits in the broader "trial-and-error-trained-orchestration" family this hub indexes but is the corpus's clearest argument that *RL is the wrong tool for some orchestration regimes*
 - @sources/scaling-roadmap-research.md — RL/MARL source in the Cemini research corpus
 - @sources/signa.md — RL/MARL source in the Cemini research corpus
 - @sources/sort-1-4-3.md — RL/MARL source in the Cemini research corpus

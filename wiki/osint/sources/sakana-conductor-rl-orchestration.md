@@ -11,10 +11,11 @@ related:
   - entities/infrastructure/deepseek-api.md
   - entities/frameworks/langgraph.md
   - entities/infrastructure/sakana-fugu.md
+  - sources/sakana-trinity-llm-coordinator.md
 maturity: validated
 read_status: read
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 ## Relations
@@ -25,6 +26,7 @@ updated: 2026-04-27
 - @entities/infrastructure/deepseek-api.md — the Conductor evaluates DeepSeek-R1-Distill-Qwen-32B as one of its open-source worker LLMs (Table 3, Section A.2); overlaps with Cemini's intended DeepSeek-family brain via the hosted API path. The Conductor framework would treat the Cemini DeepSeek client as a worker pool entry, not a per-node analyst
 - @entities/frameworks/langgraph.md — the operative orchestration framework in the Cemini stack; the Conductor's contribution would replace the *design-by-hand* of LangGraph topologies with a *learned-by-RL* meta-controller that emits worker assignments + natural-language prompts at runtime. Compatible with LangGraph's typed-state-graph substrate but reframes the role of the supervisor node
 - @entities/infrastructure/sakana-fugu.md — **the commercial productization of this paper** (announced `sakana.ai/fugu-beta/`, 2026-04-24 — three days after this source page was created and ~7 weeks after the paper's arXiv finalization 2026-03-01). Fugu wraps the Conductor methodology + the sibling ICLR 2026 *Trinity* paper behind an OpenAI-compatible chat-completions API in a two-tier lineup (Fugu Mini 🐟 latency-optimized / Fugu Ultra 🐡 full orchestration). Materializes the Cemini-relevance read on this source page from "research direction worth tracking" to "API surface that an institutional buyer will ask why Cemini didn't just call." See that page for the IP-sale narrative impact + the new Option C added to the @concepts/scatter-gather-topology.md P1 ticket
+- @sources/sakana-trinity-llm-coordinator.md — **direct sibling paper** (ingested 2026-04-28). Same six authors, same Sakana AI + UMich + Inst Sci Tokyo institutional mix, same ICLR 2026 venue, neighboring arXiv submission (Trinity 2512.04695 vs Conductor 2512.04388 — same week of December 2025). Methodologically complementary: where this paper trains a 7B Qwen2.5-7B-base meta-controller with **GRPO (RL)**, Trinity trains a 0.6B SLM + ~10K-param head (<20K total learnable params) with **separable Covariance Matrix Adaptation Evolution Strategy (sep-CMA-ES)** — derivative-free, deliberately not RL. Trinity formalizes orchestration as Thinker/Worker/Verifier multi-turn role assignment (vs Conductor's free-form natural-language topology design); the Trinity poster reports REINFORCE collapses on LCB (0.253) under the binary-reward + weak-coupling regime where sep-CMA-ES dominates (0.615). Both papers jointly productized as Sakana Fugu — Trinity is the likely Fugu Mini basis (lightweight + low-latency), Conductor the Fugu Ultra basis (heavyweight + full-orchestration)
 
 ## Raw Concept
 
@@ -91,7 +93,7 @@ Three days after this source page was first written, Sakana announced **Sakana F
 - **[NEEDS VERIFICATION 2026-04-27]** Whether the Conductor codebase + training data + checkpoints are publicly released (paper has standard "code available at..." line that I haven't extracted — Appendix beyond A.3 is unread). If yes, this is a candidate for direct experimentation in the Cemini stack on the IP-sale-prep timeline.
 - **[NEEDS VERIFICATION 2026-04-27]** Whether the recursive-Conductor variant is competitive on time-budget vs sequential frontier-model invocation — Table comparisons are in token-count + accuracy axes; latency comparisons not summarized in the read pages.
 - **[NEEDS VERIFICATION 2026-04-27]** Compatibility with structured-output / function-calling worker LLMs (Cemini's analyst nodes return Pydantic-typed StrategyRecommendation objects, not free-form text). The paper's experiments are on math + code + multiple-choice — all natural-language-output tasks. Lifting to typed-output workers may require additional architectural work.
-- **[NEEDS VERIFICATION 2026-04-27]** Trinity sibling paper (Xu, Sun, Schwendeman, Nielsen, Cetin, Tang. *TRINITY: An Evolved LLM Coordinator*. ICLR 2026) — surfaced via the 2026-04-24 Sakana Fugu announcement. Likely arXiv 2512.04695. Not yet ingested in the corpus. Decision: ingest as a sibling source page paralleling this one (would extend the rl-marl + llm-agents cluster coverage of Sakana's research lineage and complete the Fugu-productization documentation).
+- **[RESOLVED 2026-04-28 — Trinity ingested]** Trinity sibling paper confirmed at arXiv 2512.04695 (Xu, Sun, Schwendeman, Nielsen, Cetin, Tang. *TRINITY: An Evolved LLM Coordinator*. ICLR 2026). Ingested as `@sources/sakana-trinity-llm-coordinator.md` 2026-04-28 with full poster captured verbatim + arXiv abstract + 10 Snippets + Cemini-relevance read mapping Trinity onto the Fugu Mini / Conductor onto Fugu Ultra. Sakana research lineage coverage now closes; Fugu-productization documentation is complete from both academic-paper sides.
 
 ## Snippets
 

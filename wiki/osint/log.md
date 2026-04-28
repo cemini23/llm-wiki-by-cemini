@@ -8,6 +8,31 @@ Newest entries on top.
 
 ---
 
+## [2026-04-28] ingest | Sakana Trinity (ICLR 2026 sibling to Conductor, second paper underlying Fugu)
+
+User-authorized 2026-04-28 follow-up to the 2026-04-27 Conductor + Fugu wave: pulled the Trinity paper to close the open `[NEEDS VERIFICATION 2026-04-27]` flags on both `sources/sakana-conductor-rl-orchestration.md` (sibling-paper item) and `entities/infrastructure/sakana-fugu.md` (parent-academic-paper hook 4). Trinity is the **second of the two ICLR 2026 Sakana AI papers underlying Fugu's productization** — Conductor (RL-trained orchestrator, 2512.04388) + Trinity (ES-trained coordinator, 2512.04695) → Fugu Ultra + Fugu Mini.
+
+### What shipped
+
+- **`wiki/sources/sakana-trinity-llm-coordinator.md`** — NEW source page. `maturity: validated`, `read_status: read`. arXiv 2512.04695 confirmed via Exa search (matched the suspected ID from Conductor's NEEDS-VERIFICATION flag). Verbatim text pulled via `crawling_exa` against the arXiv abstract page + the Sakana ICLR poster PDF. Substantive page covering: Thinker/Worker/Verifier multi-turn role schema, **0.6B SLM + ~10K-param head coordinator (<20K total learnable parameters)**, **sep-CMA-ES training (NOT RL — explicit anti-RL choice with formal block-epsilon-separability argument)**, 86.2% pass@1 on LiveCodeBench V6 (beats GPT-5 83.8%, Gemini 2.5-Pro 67.2%), 54.2 OOD transfer avg (beats Gemini 2.5-Pro 52.3 / GPT-5 51.1 / Claude-4-Sonnet 46.1). 10 verbatim Snippets (S1-S10) + a Trinity-vs-Conductor methodology comparison table.
+- **Conductor source page** (`sources/sakana-conductor-rl-orchestration.md`): added Trinity to `related:`, added Relations bullet describing Trinity as direct sibling paper with methodological complementarity (Trinity is sep-CMA-ES + structured roles; Conductor is GRPO/RL + free-form NL prompts). **Resolved the sibling-paper `[NEEDS VERIFICATION 2026-04-27]` flag** → `[RESOLVED 2026-04-28 — Trinity ingested]` with arXiv 2512.04695 confirmation.
+- **Sakana Fugu entity page** (`entities/infrastructure/sakana-fugu.md`): added Trinity to `related:`, added Relations bullet — Trinity as second parent academic paper. **Resolved Cemini-relevance hook 4** `[NEEDS VERIFICATION 2026-04-27]` → `[RESOLVED 2026-04-28]` with arXiv 2512.04695 confirmation + productization mapping (Trinity → likely Fugu Mini 🐟 / Conductor → likely Fugu Ultra 🐡 — based on parameter-budget alignment: Trinity's <20K-param coordinator over a frontier worker pool fits Mini's lightweight-low-latency tier; Conductor's 7B-param GRPO-trained meta-controller fits Ultra's full-orchestration tier).
+- **5 cluster + framework bidirectional backlinks**: `concepts/rl-marl-research.md` (Trinity as cluster's first ES-trained-coordinator entry — explicit anti-RL caveat documented), `concepts/llm-agent-systems.md` (structured Thinker/Worker/Verifier role schema framing — typed-output-friendlier than Conductor's free-form NL prompts), `concepts/scatter-gather-topology.md` (**strengthens Option C** with two-tier Fugu lineage — Trinity → likely Fugu Mini, Conductor → likely Fugu Ultra; Trinity's structured-role schema also makes the Pydantic-glue path easier for an in-house Cemini-side reproduction Option A variant), `entities/infrastructure/deepseek-api.md` (lightweight cross-link — Trinity poster doesn't enumerate worker pool composition the way Conductor's Table 3 does, so DeepSeek-family worker-pool relevance is mediated primarily through Conductor), `entities/frameworks/langgraph.md` (Trinity's structured-role schema maps cleaner onto LangGraph's typed-state-graph substrate than Conductor's free-form NL prompts).
+
+### Index update
+
+`wiki/index.md` — Trinity row inserted alphabetically in the rl-marl-research section between "Technical Research Audit: Reinforcement Learning..." and "UDC 004.89:004.75..." with the LiveCodeBench/OOD benchmark figures + the productization mapping inline.
+
+### Lint state at ship
+
+Pending — to be captured in commit message after `python3 scripts/wiki_lint.py` runs cleanly. Expected delta from pre-Trinity baseline (369 pages, 1648 outbound edges from the 2026-04-27 Fugu/K7-tail combined ship): +1 page (370), +14 outbound edges (~1662) — 7 bidirectional pairs added (Trinity ↔ 7 wiki pages = 14 edge-direction increments).
+
+### Pattern note
+
+This ingest **closes the Sakana research lineage** for the Cemini corpus: both ICLR 2026 papers underlying Fugu are now catalogued (Conductor + Trinity) plus the productization vendor entity (Fugu). The full chain is traceable from any of the 3 source/entity pages forward to all the cluster-level concept pages they touch. Methodological complementarity is now explicitly documented: future readers reading Conductor will be linked to Trinity (and vice versa) with a one-paragraph Relations note explaining where each paper's contribution sits — RL-and-free-form-NL on the Conductor side, ES-and-structured-roles on the Trinity side. The productization mapping (Trinity → Mini, Conductor → Ultra) is documented as `[INFERRED 2026-04-28]` because Sakana's announcement doesn't explicitly map papers→tiers; the inference is parameter-budget-based and the basis is documented inline. Net new in-corpus capability: future research hits referencing "evolutionary LLM orchestration," "sep-CMA-ES coordinator training," or "Fugu Mini" route to a real wiki page rather than triggering an external lookup.
+
+---
+
 ## [2026-04-27] ingest | Sakana Fugu (closed beta, productization of Conductor + Trinity)
 
 User dropped `https://sakana.ai/fugu-beta/` 2026-04-27 as follow-up to the Conductor paper ingest the same day, with the redirect "wrong link [from `conductor.build`] but worth checking that one too". Identified as the **commercial productization of the Conductor + Trinity ICLR 2026 papers**, launched 2026-04-24 (three days before this entry). Distinct from the academic Conductor ingest because it's a *vendor + product + API* entity, not a paper.

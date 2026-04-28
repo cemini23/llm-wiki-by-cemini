@@ -64,6 +64,7 @@ related:
   - sources/pvg3-4-14.md
   - sources/sakana-conductor-rl-orchestration.md
   - entities/infrastructure/sakana-fugu.md
+  - sources/sakana-trinity-llm-coordinator.md
   - sources/skills-1-4-5.md
   - sources/sort-2-4-3.md
   - sources/sort-6-4-3.md
@@ -136,6 +137,7 @@ updated: 2026-04-27
 - @sources/pvg3-4-14.md — LLM agent-systems source in the Cemini research corpus
 - @sources/sakana-conductor-rl-orchestration.md — LLM agent-systems source in the Cemini research corpus (user-dropped 2026-04-27 — ICLR 2026 Sakana AI; secondary cluster placement — primary is rl-marl since Conductor *trains* the orchestrator with RL/GRPO, but the *application* layer is LLM agent orchestration over a frontier-LLM worker pool: Gemma3-27B + Qwen3-32B + R1-Distill-Qwen-32B + Claude Sonnet 4 + Gemini 2.5 Pro + GPT-5)
 - @entities/infrastructure/sakana-fugu.md — **first commercial-API entry in this cluster** (user-dropped 2026-04-27 via `sakana.ai/fugu-beta/`). Productization of the Conductor + Trinity ICLR 2026 papers as a closed-beta OpenAI-compatible chat-completions API. Marks the transition of "learned LLM orchestration" from research to commodity service; the cluster's first API surface that an institutional buyer will benchmark against the Cemini stack
+- @sources/sakana-trinity-llm-coordinator.md — LLM agent-systems source in the Cemini research corpus (ingested 2026-04-28 as Conductor sibling). ICLR 2026 Sakana AI paper, arXiv 2512.04695, secondary cluster placement (primary is rl-marl-research with the ES-not-RL caveat documented there). The application-layer framing here: Trinity formalizes orchestration as **structured Thinker/Worker/Verifier role assignment over multiple turns** — a more typed-output-friendly schema than Conductor's free-form natural-language topology design. The Verifier role specifically maps onto guardrail/risk-checker subagents this cluster's LangGraph orchestration literature already needs; Trinity formalizes Verifier-as-loop-termination as a first-class role with explicit accept/reject semantics
 - @sources/skills-1-4-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/sort-2-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/sort-6-4-3.md — LLM agent-systems source in the Cemini research corpus

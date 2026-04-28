@@ -11,9 +11,10 @@ related:
   - concepts/rl-marl-research.md
   - concepts/ip-sale-readiness.md
   - sources/sakana-conductor-rl-orchestration.md
+  - sources/sakana-trinity-llm-coordinator.md
 maturity: validated
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-04-28
 ---
 
 ## Relations
@@ -24,7 +25,8 @@ updated: 2026-04-27
 - @concepts/llm-agent-systems.md — cluster-hub backlink; Fugu is the first commercial-API entry in the cluster (vs all-academic-paper sources that preceded it). Marks the transition of "learned LLM orchestration" from research to commodity service
 - @concepts/rl-marl-research.md — cluster-hub backlink; Fugu's underlying methodology is the GRPO-trained Conductor (rl-marl cluster). Productized closed-beta launch of an RL-trained meta-controller is a noteworthy datapoint for the cluster's "RL-on-orchestration-layer" thread
 - @concepts/ip-sale-readiness.md — Fugu directly affects the IP-sale narrative. An institutional buyer reading the Cemini stack will now ask: "why didn't you just call Fugu's API?" The defensible answer is *vertical-domain fine-tuning* + *custom worker-pool composition* + *typed-output structured Pydantic StrategyRecommendation handoff* — Fugu's chat-completions interface doesn't natively handle Pydantic-typed agent outputs the way Cemini's LangGraph nodes do. But the question must be anticipated and answered
-- @sources/sakana-conductor-rl-orchestration.md — parent academic paper; Fugu is the productized Conductor (+ Trinity, the sibling ICLR 2026 paper not yet in this corpus)
+- @sources/sakana-conductor-rl-orchestration.md — parent academic paper (one of two); Fugu Ultra 🐡 is the productized Conductor (+ improvements on top per Sakana's "substantially further improved" framing)
+- @sources/sakana-trinity-llm-coordinator.md — **second parent academic paper** (ingested 2026-04-28). Trinity's lightweight 0.6B-SLM + 10K-head + sep-CMA-ES coordinator architecture is the likely **Fugu Mini 🐟** basis, paralleling Conductor's likely Fugu Ultra basis. The Sakana announcement explicitly names *both* "Trinity and Conductor" as the underlying ICLR 2026 papers; the two-tier API split (Mini latency-optimized / Ultra full-orchestration) maps cleanly onto the two papers' compute-envelope split (Trinity <20K params / Conductor 7B params). Trinity also adds a **structured-output orchestration option** Conductor doesn't directly provide — the Thinker/Worker/Verifier role schema is closer to a typed-state-graph contract than Conductor's free-form natural-language prompts
 
 ## Raw Concept
 
@@ -114,7 +116,7 @@ Mirrors @sources/sakana-conductor-rl-orchestration.md S2 (Recursive Conductor va
     - **Audit-trail completeness** — pg_tamperlog captures Cemini's full per-node reasoning chain; Fugu only exposes the top-level (prompt, completion) tuple
     - These are real differentiators but they need to be *named explicitly in the IP-sale prep narrative*. Track-record-of-using-Fugu-as-a-baseline could itself be a credibility marker (Cemini benchmarked against Fugu and chose vertical-fine-tuning — defensible)
 
-4. **Trinity sibling paper not yet in corpus** — the Fugu page surfaces a previously-missed sibling ICLR 2026 paper: *TRINITY: An Evolved LLM Coordinator* (Xu, Sun, Schwendeman, Nielsen, Cetin, Tang — same six authors as Conductor in different lead order). arXiv ID likely 2512.04695 (range neighbor to Conductor's 2512.04388). **Decision pending**: ingest Trinity as a sibling source page paralleling the Conductor one? Trinity's "evolved coordinator" framing (vs Conductor's "RL-trained orchestrator") suggests an *evolutionary search* methodology — fits Sakana's broader thesis (evolutionary model merging, ShinkaEvolve, AB-MCTS) and would close a gap in the rl-marl cluster's coverage of Sakana's research lineage. Surfaced to user separately as an explicit ingest decision
+4. **Trinity sibling paper now in corpus** `[RESOLVED 2026-04-28]` — sibling ICLR 2026 paper *TRINITY: An Evolved LLM Coordinator* (Xu, Sun, Schwendeman, Nielsen, Cetin, Tang) ingested 2026-04-28 as `@sources/sakana-trinity-llm-coordinator.md`. arXiv ID confirmed at **2512.04695** (range-neighbor to Conductor's 2512.04388, both submitted same week of December 2025). Trinity's "evolved coordinator" framing turns out to mean **separable Covariance Matrix Adaptation Evolution Strategy (sep-CMA-ES)** — a derivative-free training method that the paper's ablations show *dominates* RL/REINFORCE under binary-reward + weak-parameter-coupling regimes (REINFORCE collapses to 0.253 on LCB vs sep-CMA-ES's 0.615). Confirms the architectural read on this page: Fugu Mini 🐟 likely productizes Trinity (lightweight: 0.6B SLM + 10K head, total <20K learnable params), Fugu Ultra 🐡 likely productizes Conductor (heavyweight: 7B Qwen2.5-base meta-controller). The two-tier Fugu API now has clean academic-paper backing on both tiers
 
 ### Integration risk + open questions
 

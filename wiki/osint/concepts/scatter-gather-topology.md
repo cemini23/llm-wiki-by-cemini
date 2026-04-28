@@ -6,6 +6,7 @@ keywords: []
 related:
   - sources/3-19-langgraph-scatter-gather-financial-analysis.md
   - sources/sakana-conductor-rl-orchestration.md
+  - sources/sakana-trinity-llm-coordinator.md
   - entities/frameworks/langgraph.md
   - entities/infrastructure/deepseek-r1-14b.md
   - entities/infrastructure/deepseek-api.md
@@ -21,6 +22,7 @@ updated: 2026-04-27
 
 - @sources/3-19-langgraph-scatter-gather-financial-analysis.md
 - @sources/sakana-conductor-rl-orchestration.md — user-dropped 2026-04-27 — ICLR 2026 Sakana AI Conductor paper; **direct architectural counterpart**: where this concept's source prescribes a *hand-designed* `Send()`-based fan-out + `operator.add` reducer + gather pattern, the Conductor *learns* topology design as a per-task RL-trained meta-controller decision. Strong evidence for the open Option A vs Option B P1 ticket — a learned orchestrator outperforms hand-designed scaffolds (incl. MoA, MasRouter, RouterDC, Smoothie baselines)
+- @sources/sakana-trinity-llm-coordinator.md — sibling ICLR 2026 Sakana AI paper (ingested 2026-04-28). Methodologically distinct from Conductor: Trinity uses a 0.6B SLM + ~10K-param head (<20K total learnable params) trained with **sep-CMA-ES** (evolutionary, not RL) to assign **Thinker/Worker/Verifier roles** across multiple turns. **Strengthens Option C** (outsource orchestration to Fugu) by establishing two distinct tiers in the Fugu lineup: Trinity → likely Fugu Mini 🐟 (lightweight low-latency); Conductor → likely Fugu Ultra 🐡 (heavyweight full-orchestration). Trinity's structured-role schema is also **closer to a typed-state-graph contract** than Conductor's free-form natural-language prompts — easier mapping onto LangGraph's typed Pydantic-output substrate, which matters for any in-house Cemini-side reproduction (Option A variant) that wants to retain the Pydantic `StrategyRecommendation` handoff
 - @entities/infrastructure/sakana-fugu.md — **adds Option C to this page's P1 ticket** (2026-04-27): outsource orchestration to Sakana's productized Conductor + Trinity API (closed beta, launched 2026-04-24). Engineering effort ~1–3 engineer-days (config swap + Pydantic glue + audit-trail integration) — lowest-effort path to "learned-orchestrator quality" without training one in-house. Trade-offs: data-egress posture (Fugu sees all prompts), opaque per-worker routing (audit trail captures only top-level prompt/completion tuple), acquirer optics (defensible only with vertical-domain fine-tuning + custom worker-pool composition + typed-output Pydantic glue named explicitly as the moat)
 - @entities/frameworks/langgraph.md
 - @entities/infrastructure/deepseek-r1-14b.md `[RETRACTED 2026-04-24]` — page retracted; backlink kept for discoverability
