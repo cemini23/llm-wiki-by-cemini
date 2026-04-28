@@ -152,6 +152,51 @@ Reasons: Linux-only (CAP_SYS_ADMIN namespace); fewer features than llm-wiki-comp
 
 **Reference-only:** **`emtwiki.endusergeek.com`** — deployed example, not a tool. Demonstrates the pattern is mature enough for high-stakes domains (EMT-Basic certification with NREMT psychomotor + cognitive exam alignment, San Juan College program). Useful as a pedagogical example of Karpathy-pattern wiki at scale (~50+ pages, multi-section curriculum, quick-reference tables linking findings → interventions). The existence of *deployed* examples (not just GitHub-active tools) raises the floor on "is this pattern production-ready" — yes.
 
+### Provider configuration & smoke-test recipe
+
+[DECISION 2026-04-28]: smoke-test path = **Claude Code zero-config Anthropic auth**. Ollama-for-embeddings deferred pending external storage (user noted ~25 GB free on the laptop — see ROADMAP item E "Storage compaction"; embeddings models + Ollama runtime are practical but not comfortable on current free disk). Index-based query routing is llm-wiki-compiler's default per its own README "Limitations" section, so the smoke test runs cleanly without semantic embeddings; embeddings layer is additive when the hardware lands.
+
+#### Path A — Claude Code zero-config (recommended for smoke test)
+
+```bash
+npm install -g llm-wiki-compiler
+cd "/Users/claudiobarone/Desktop/OSINT WORKSPACE"
+llmwiki compile --review   # reads ~/.claude/settings.json automatically
+```
+
+Per the project's README (`sources/atomicmemory-llm-wiki-compiler.md` S1+ supplementary): *"If those values are not set in shell env or .env, llmwiki will try Anthropic-compatible values from `~/.claude/settings.json` (env block) for: ANTHROPIC_API_KEY, ANTHROPIC_AUTH_TOKEN, ANTHROPIC_BASE_URL, ANTHROPIC_MODEL."* Effectively zero config — taps the Anthropic credentials Claude Code has already set up. No new payment, no new account.
+
+The `--review` flag stages output to `.llmwiki/candidates/` rather than landing in `wiki/` directly; nothing in the live wiki gets overwritten until `llmwiki review approve <id>` is run. Clean rollback: delete `.llmwiki/candidates/` and the experiment leaves no trace.
+
+#### Path B — DeepSeek API (production deployment if smoke passes)
+
+DeepSeek's hosted Chat Completions API is OpenAI-compatible (per `entities/infrastructure/deepseek-api.md`), so `llm-wiki-compiler`'s OpenAI provider points at it directly:
+
+```bash
+export LLMWIKI_PROVIDER=openai
+export LLMWIKI_MODEL=deepseek-chat   # or deepseek-v4-flash / deepseek-v4-pro
+export OPENAI_API_KEY=$DEEPSEEK_API_KEY   # the key already in /opt/cemini/.env
+export OPENAI_BASE_URL=https://api.deepseek.com
+```
+
+[NEEDS VERIFICATION 2026-04-28] DeepSeek's API does **not** ship an embeddings endpoint — official docs at `api-docs.deepseek.com` list only `/chat/completions`; a DeepSeek GitHub issue (`deepseek-ai/DeepSeek-R1#802`, Feb 2026) explicitly enumerates DeepSeek as "Embedding API ❌" in its current state and proposes adding one. So Path B is **chat-only**: the embeddings layer either uses index-based fallback (default; acceptable) or routes to a separate provider via `OPENAI_EMBEDDINGS_BASE_URL`.
+
+#### Path C — Ollama embeddings sidecar (deferred — hardware-gated)
+
+When external storage lands and the laptop has comfortable headroom for a local Ollama instance:
+
+```bash
+brew install ollama
+ollama pull nomic-embed-text   # ~270 MB; free; runs on-device
+export LLMWIKI_EMBEDDING_MODEL=nomic-embed-text
+export OPENAI_EMBEDDINGS_BASE_URL=http://localhost:11434/v1   # Ollama's OpenAI shim
+# (chat continues to use Path A or Path B above)
+```
+
+This composes with either Anthropic (Path A) or DeepSeek (Path B) — embeddings come from Ollama locally, chat goes wherever. Deferred because: (a) the laptop's current ~25 GB free is workable but not comfortable for adding model storage + runtime; (b) the user has flagged an external hard drive purchase as the precondition; (c) llm-wiki-compiler's own README frames semantic embeddings as additive to its index-based routing default ("query routing is index-based" per Limitations) — the smoke test does not require embeddings to validate the core ingest/compile/query/lint loop.
+
+This deferred posture matches the lineage on `entities/infrastructure/localai.md` / `entities/infrastructure/ollama.md` / `entities/infrastructure/deepseek-r1-14b.md` — local-runtime stories the workspace and the deployed Cemini stack can both adopt cleanly *if and when* hardware lands; until then, hosted/external paths fill the slot.
+
 ### Decision gates — what would flip this recommendation
 
 1. **If `llm-wiki-compiler` overwrites our hand-curated frontmatter** — adoption cost rises sharply. **Test before committing**: `npm install -g llm-wiki-compiler && llmwiki compile --review` against `/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki/` with `LLMWIKI_PROVIDER=anthropic` (using the existing Claude-Code-configured Anthropic auth). Inspect candidate diff. If the candidate queue tries to overwrite our K-series hand-curated source pages, bail and either (a) configure exclusions, (b) point it at a copy of the wiki, (c) reject and keep status quo.
@@ -177,7 +222,7 @@ Specific impacts on the ROADMAP sections expanded in the K8 commit (`69bdc57`):
 ### Path to commitment
 
 Recommended sequence (stamps on this concept page as decisions land):
-1. **Smoke test** llm-wiki-compiler in `--review` mode against a wiki copy, ~30 min. Reads only; produces no-op until approved.
+1. **Smoke test** llm-wiki-compiler in `--review` mode using **Path A (Claude Code zero-config)**, ~30 min. Reads only; produces no-op until approved. `[DECISION 2026-04-28]: Path A confirmed; Path B (DeepSeek) reserved for production if smoke passes; Path C (Ollama embeddings) deferred pending external storage purchase.`
 2. If smoke passes: **stamp** this page `maturity: validated` → `core` and update the recommendation row to `[ADOPTED 2026-04-XX]` with the real-world cost numbers measured.
 3. **Mirror in ROADMAP**: move "Wiki-tooling decision" from Open questions to Soon, then to Done with the test-result commit SHA.
 4. **Steal-from agentmemory**: open a separate concept-page-or-brief for the cpr-pattern Python port plan; coordinate with the K8 LangGraph-checkpointer ROADMAP row.
