@@ -49,7 +49,6 @@ related:
   - sources/4-3-rl-research.md
   - sources/4-4-link-re-2.md
   - sources/4-4-link-re.md
-  - sources/4-5-links-2.md
   - sources/4-5-links.md
   - sources/4-6-links.md
   - sources/agent-2-4-4.md
@@ -146,7 +145,6 @@ updated: 2026-04-27
 - @sources/4-3-rl-research.md — RL/MARL source in the Cemini research corpus
 - @sources/4-4-link-re-2.md — RL/MARL source in the Cemini research corpus
 - @sources/4-4-link-re.md — RL/MARL source in the Cemini research corpus
-- @sources/4-5-links-2.md — RL/MARL source in the Cemini research corpus
 - @sources/4-5-links.md — RL/MARL source in the Cemini research corpus
 - @sources/4-6-links.md — RL/MARL source in the Cemini research corpus
 - @sources/agent-2-4-4.md — RL/MARL source in the Cemini research corpus

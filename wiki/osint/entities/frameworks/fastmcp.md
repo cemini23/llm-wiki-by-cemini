@@ -21,6 +21,8 @@ related:
   - sources/playwright-mcp-microsoft.md
   - sources/sentrux-ast-sensor.md
   - sources/vibe-trading-hkuds.md
+  - sources/4-5-links-2.md
+  - sources/agent-browser-vercel-labs.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

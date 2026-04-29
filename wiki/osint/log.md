@@ -8,6 +8,59 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] deep-read | K9 — `4_5 links 2.docx` (12 documents; sibling to K8's `4_5 links.docx`)
+
+K-series continuation after K8 closed the K8 source. K9 evaluated the second of two same-day-authored Cemini-internal multi-topic competitive-intelligence aggregates (2026-04-05). 12 documents per the same fixed 8-section per-document template K8 introduced. Applied K8's promotion-vs-snippets-only discipline.
+
+### What shipped
+
+**1 canonical source (overwrites K9 stub)**:
+- `wiki/sources/4-5-links-2.md` — full 12-document evaluation table + cross-doc/cross-wave register + server-state calibration vs K8 (same stale-snapshot lineage: 128 GB RAM, 22 FastMCP tools, April 14-17 RL retrain).
+
+**2 promotion source pages**:
+- `wiki/sources/agent-browser-vercel-labs.md` — vercel-labs/agent-browser (Rust, Apache-2.0). Headless browser automation with semantic DOM snapshotting (@e1/@e2 references) for token-efficient LLM consumption. Direct peer to Wave 2's `playwright-mcp` Defer-Cemini decision; offers Rust + memory-discipline + built-in auth-vault as alternative. Pre-adoption gates: Vercel Labs maintenance velocity Exa check, token-cost head-to-head, license re-verification.
+- `wiki/sources/pta-metric-anchoring-ssrn-4549819.md` — PTA Metric (price-to-52-week-anchor) 2026 quant-finance paper. Novel cross-sectional return predictor; past-winner-stocks with high PTA outperform low-PTA. Adopt-Cemini-Wiki-Workflow ✅✅✅ (second triple-Adopt in the corpus after Schadner BSIV). TimescaleDB continuous aggregate is the prescribed implementation surface. Same laptop-side-empirical-reproduction-then-brief pattern as Schadner BSIV.
+
+**Cross-doc duplicate confirmation**: K9 Document 3 (`EliaAlberti/cpr-compress-preserve-resume`) is the SAME repo K8 promoted to `concepts/context-compression-resume-pattern.md`. The K9 evaluation adds no new architectural detail beyond K8's; the value of the K9 cross-doc duplicate IS the duplicate itself — the strongest in-corpus signal that the cpr-pattern is the load-bearing concept worth a wiki page. One-line confirmation note added to the existing concept page (Relations bullet now references both K8 source page and K9 source page).
+
+**Cross-wave reinforcement**: K9 Document 7 (`mattpocock/skills/grill-me`) is the SAME mattpocock skill WTE Wave 2 noted as Steal-from. K9 adds Cemini-specific Devil's Advocate usage detail — `grill-me` as Devil's Advocate agent persona + max_turns=3 LangGraph edge constraint + autonomous FastMCP tool invocation. Cross-link added on Wave 2 source page noting the K9 concrete usage detail; same Steal-from disposition.
+
+### K9 promotion stats
+
+K9 promoted **2 of 12 documents (~17%)** vs K8's 3 of 13 (~23%). Slightly lower promotion rate consistent with K9's source-mix (more skill-prompts than architectural primitives). The 2 promoted both have direct Cemini-stack adoption paths.
+
+K8's 3 promotions were: autoagent (entity), context-compression-resume-pattern (concept), localai (entity).
+K9's 2 promotions are: agent-browser (source-page peer to playwright-mcp), pta-metric (source-page peer to schadner-bsiv).
+
+### Cross-corpus references built this pass
+
+| K9 Doc | Connects to | Existing wiki artefact |
+|---|---|---|
+| Doc 3 (cpr) | K8 | `concepts/context-compression-resume-pattern.md` |
+| Doc 7 (grill-me) | WTE Wave 2 | `sources/gemini-dr-link-eval-2026-04-28.md` URL 20 |
+| Doc 10 (agent-browser) | WTE Wave 2 | peer to `sources/playwright-mcp-microsoft.md` |
+| Doc 11 (PTA Metric) | Wave 3 | peer to `sources/black-scholes-iv-explicit-schadner-2026.md` |
+
+### Lint state
+
+- Wiki count: 394 → **396 pages** (+2 promotion pages; canonical K9 page overwrote existing stub so net +2 not +3)
+- Outbound edges: 1978 → 2020 (+42 — extensive cross-linking among the new pages + 14 backlinks on existing pages)
+- 0 orphans / 0 bidir gaps / 0 dangling / 0 missing path mentions
+
+### What's left in the K-series
+
+K10+: cited-unread queue continuation. Tail at 3-inbound: `4-4-link-re*` / `3-26-link-re-3` / `scaling-roadmap-research` / `forex-1-4-4` / `4-6-links` / `3-26-b` / `3-28-links-2`. Most are multi-topic link-aggregate docs in the K8/K9 shape — same promotion-vs-snippets-only discipline applies. After this tail clears, queue is dominated by 2-inbound stubs (~120 sources); routing heuristic likely shifts to recency or cluster-density.
+
+### Pattern note
+
+K9 confirmed the **K8 promotion-vs-snippets-only discipline as a templated K-series practice**. The Cross-doc duplicate signal (Doc 3 cpr) and Cross-wave reinforcement signal (Doc 7 grill-me) are now named patterns in the K-series toolkit:
+- **Cross-doc duplicate**: same source surfaces in 2+ corpus docs → existing concept-page promotion is correct; reinforcement note suffices, no new artefact
+- **Cross-wave reinforcement**: same source surfaces across waves with new usage detail → cross-link the new detail back to the original wave's source page; no new artefact
+
+These augment the K-series taxonomy (single-source-promote vs single-source-snippets-only) with cross-source-pattern-detection.
+
+---
+
 ## [2026-04-29] ingest | Gemini DR Wave 3 (13 URLs) — headline finding: Schadner closed-form Black-Scholes IV formula (arxiv 2604.24480)
 
 User dropped Wave 3 docx (`Evaluating Code for Trading & Wiki Stacks.docx`, 54 KB / 539 lines / 13 URL evaluations) into `research to be indexed/` 2026-04-28. Originally checked mid-session for Option C (kb-server vs custom MCP) decision relevance — none of 13 URLs solved nested-wiki MCP serving, validating kb-server adoption. Then ingested as its own pass per the 9-step protocol from Wave 2's canonical source.

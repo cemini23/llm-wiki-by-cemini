@@ -19,6 +19,8 @@ related:
   - sources/bare-bones-memory-southpolesteve.md
   - sources/omc-talent-container-paper.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
+  - sources/4-5-links-2.md
+  - sources/agent-browser-vercel-labs.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28
@@ -138,7 +140,7 @@ The brief mandated a follow-up spot-check on every Adopt recommendation against 
 **Steal-from (3) — patterns only, no deploy:**
 - `mercury-agent` — SQLite FTS5 schemas + JSONL episodic-log compaction algorithms, applicable to wiki_lint.py enhancements.
 - `AutoHedge` — Director/Quant/Risk/Execution prompt structures, port to LangGraph nodes (Solana/Jupiter focus blocks the framework itself).
-- `mattpocock/skills` — `/grill-me` (intent-verification before code-write) + `/caveman` (output-token compression) + `/tdd` (red-green-refactor). Extract specific patterns; don't load whole library (context-saturation risk).
+- `mattpocock/skills` — `/grill-me` (intent-verification before code-write) + `/caveman` (output-token compression) + `/tdd` (red-green-refactor). Extract specific patterns; don't load whole library (context-saturation risk). **K9 cross-wave reinforcement (2026-04-29 per @sources/4-5-links-2.md Document 7)**: K9 adds Cemini-specific Devil's Advocate usage detail — `grill-me` becomes the Devil's Advocate agent persona prompt with `max_turns=3` LangGraph edge constraint; the interrogator agent autonomously invokes FastMCP tools to verify primary-agent claims. Same Steal-from disposition; K9 just adds the concrete how.
 
 **Reject — license poison-pills (3):**
 - `everywall/ladder` (GPL-3.0)

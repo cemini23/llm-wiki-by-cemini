@@ -9,6 +9,7 @@ related:
   - concepts/librarian-server-architecture.md
   - concepts/ip-sale-readiness.md
   - entities/frameworks/fastmcp.md
+  - sources/agent-browser-vercel-labs.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28

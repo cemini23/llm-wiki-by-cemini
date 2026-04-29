@@ -30,6 +30,7 @@ related:
   - sources/omc-talent-container-paper.md
   - sources/sentrux-ast-sensor.md
   - sources/vibe-trading-hkuds.md
+  - sources/4-5-links-2.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

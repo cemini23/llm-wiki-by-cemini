@@ -32,6 +32,8 @@ related:
   - sources/bare-bones-memory-southpolesteve.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
   - sources/black-scholes-iv-explicit-schadner-2026.md
+  - sources/4-5-links-2.md
+  - sources/agent-browser-vercel-labs.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28

@@ -16,6 +16,7 @@ related:
   - concepts/librarian-server-architecture.md
   - concepts/ai-organisation-design.md
   - sources/bare-bones-memory-southpolesteve.md
+  - sources/4-5-links-2.md
 maturity: draft
 created: 2026-04-28
 updated: 2026-04-28
@@ -23,7 +24,8 @@ updated: 2026-04-28
 
 ## Relations
 
-- @sources/4-5-links.md — K8-canonical source. The pattern surfaces in two of the K8 doc's H2 sections — `EliaAlberti/cpr-compress-preserve-resume` (paragraph 36–) AND, in the sibling K9-candidate `4_5 links 2.docx`, the same repository is evaluated AGAIN as Document 3. Cross-doc duplicate is the strongest in-corpus signal that the *pattern* (not the specific repo) is the load-bearing concept worth a wiki page.
+- @sources/4-5-links.md — K8-canonical source. The pattern surfaces in this K8 doc's H2 section `EliaAlberti/cpr-compress-preserve-resume` (paragraph 36–).
+- @sources/4-5-links-2.md — K9-canonical source (deep-read 2026-04-29). The same `EliaAlberti/cpr-compress-preserve-resume` repository is evaluated AGAIN as Document 3 of the sibling docx. **Cross-doc duplicate confirmed** by K9 ingest is the strongest in-corpus signal that the *pattern* (not the specific repo) is the load-bearing concept worth this concept page. K9 didn't add new architectural detail beyond what K8 promoted; the K9 relevance is the cross-doc duplicate confirmation itself.
 - @entities/frameworks/langgraph.md — the operative orchestration framework the pattern is prescribed to integrate against. LangGraph ships built-in PostgreSQL/Memory checkpointers (`langgraph.checkpoint.postgres.PostgresSaver`); the cpr-pattern is a thin layer ON TOP of LangGraph's existing checkpointer to add summarization-before-serialization.
 - @entities/infrastructure/deepseek-api.md — the LLM brain the cpr-pattern's "compression node" would call to summarize sprawling debate trajectories into dense strings before persistence to pgvector
 - @concepts/scatter-gather-topology.md — the topology the cpr-pattern would serialize/recover. K8 server-probe finding: the prescribed scatter-gather is not deployed (per Track C — only a linear 4-node `StateGraph` ships); cpr-pattern wiring would naturally land alongside any future scatter-gather work

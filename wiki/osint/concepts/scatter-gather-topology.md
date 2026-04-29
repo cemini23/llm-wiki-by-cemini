@@ -24,6 +24,7 @@ related:
   - concepts/ai-organisation-design.md
   - sources/vibe-trading-hkuds.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
+  - sources/4-5-links-2.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

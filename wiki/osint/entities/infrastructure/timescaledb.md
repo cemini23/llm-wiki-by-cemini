@@ -17,6 +17,8 @@ related:
   - entities/infrastructure/pgvector.md
   - entities/infrastructure/redis.md
   - entities/infrastructure/polars.md
+  - sources/4-5-links-2.md
+  - sources/pta-metric-anchoring-ssrn-4549819.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26

@@ -9,6 +9,7 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/wiki-tooling-evaluation.md
   - entities/infrastructure/polars.md
+  - sources/pta-metric-anchoring-ssrn-4549819.md
 maturity: validated
 created: 2026-04-29
 updated: 2026-04-29

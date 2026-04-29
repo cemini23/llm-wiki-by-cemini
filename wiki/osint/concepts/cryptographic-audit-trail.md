@@ -20,6 +20,7 @@ related:
   - concepts/context-compression-resume-pattern.md
   - concepts/wiki-tooling-evaluation.md
   - sources/falkordb-graphrag-eval.md
+  - sources/4-5-links-2.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28
