@@ -198,12 +198,13 @@ Run llm-wiki-compiler on the laptop with Path A (Claude Code zero-config Anthrop
 - ✅ **kb-server (Wave 1 Option C)** installed + systemd-managed. `willynikes2/knowledge-base-server` (MIT, Obsidian-vault-native, FTS5 + Xenova local embeddings + 16-tool MCP). Empirically validated against our 395-page nested wiki: ingested in 0.7 seconds, all FTS5 queries return correct nested-path pages. Listens on `:3838`, scoped to `10.0.0.0/16` only via Hetzner Cloud Firewall.
 - ✅ Smoke-test queries verified end-to-end: OMC paper (sources/), librarian-server-architecture (concepts/), nvda ticker (entities/tickers/) all resolve correctly with FTS5 BM25 ranking.
 
-**Pending sub-tasks** (Phase 3 follow-ups):
-- Configure kb-server tool-allowlist filter at the MCP boundary so the brain can only call read tools (`kb_search`, `kb_search_smart`, `kb_context`, `kb_read`, `kb_list`); never write tools (`kb_classify`, `kb_promote`, `kb_synthesize`, `kb_write`, `kb_capture_*`). Read-only safety lockdown.
-- Bind to private network IP (`10.0.0.x`) or rely on firewall-only scoping (current state). Both work — firewall-only ships first, explicit-bind defense-in-depth later.
-- DeepSeek API key provisioned on librarian at `/etc/llmwiki/env` (separately env-managed; configured for llmwiki — kb-server uses local Xenova embeddings instead, no DeepSeek dependency for serving).
+**Sub-tasks status**:
+- ✅ **Read-only allowlist** `[DONE 2026-04-29 — Phase 3.5]`: patched `/opt/kb-server/src/mcp.js` and `/opt/kb-server/src/mcp-http.js` to honor `KB_TOOL_ALLOWLIST` env var. Allowlist set to `kb_search,kb_search_smart,kb_context,kb_read,kb_list,kb_vault_status,kb_safety_check` (7 read-only tools). Verified via stdio MCP `tools/list` — write tools (`kb_write`, `kb_ingest`, `kb_classify`, `kb_promote`, `kb_synthesize`, `kb_capture_*`) blocked. Patch lineage tracked at `cemini-librarian:/opt/cemini-wiki/.llmwiki/PATCHES.md`.
+- ✅ **Sync automation** `[DONE 2026-04-29 — Phase 3.5]`: `scripts/sync_wiki_to_librarian.sh` does rsync + post-rsync `kb ingest`; macOS crontab entry `0 * * * *` runs it hourly. Logs to `~/Library/Logs/cemini-wiki-sync.log`. Tested manually; rsync + kb ingest both green.
+- ⏳ **Private-network bind** `[DEFERRED to Phase 4]`: kb-server currently listens on `0.0.0.0:3838`; Hetzner Cloud Firewall scopes inbound to `10.0.0.0/16` only. Defense-in-one-layer (firewall) is sufficient until Phase 4. Explicit `10.0.0.x:3838` bind requires cemini-prod to be attached to the `cemini-private` network first (currently only cemini-librarian is). When cemini-prod attachment lands as part of Phase 4, the bind decision lands cleanly with the brain-wiring work.
+- ✅ **DeepSeek API key** provisioned at `/etc/llmwiki/env` (separately env-managed; configured for llmwiki — kb-server uses local Xenova embeddings instead, no DeepSeek dependency for serving).
 
-**Effort**: ~3 hours (actual; landed 2026-04-29)
+**Effort**: ~5 hours total (Phase 3 + Phase 3.5; both landed 2026-04-29)
 
 **Phase 4 — Wire production brain → librarian MCP**
 
