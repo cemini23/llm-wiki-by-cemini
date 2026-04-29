@@ -26,6 +26,7 @@ related:
   - sources/langextract-google.md
   - sources/vibe-trading-hkuds.md
   - sources/agentic-harness-engineering.md
+  - sources/incompressible-knowledge-probes-li-2026.md
 maturity: validated
 created: 2026-04-24
 updated: 2026-04-29
@@ -50,6 +51,7 @@ updated: 2026-04-29
 - @sources/atomicmemory-llm-wiki-compiler.md — 2026-04-28 — primary wiki-tooling adoption candidate; multi-provider config supports DeepSeek API directly via `LLMWIKI_PROVIDER=openai` + `OPENAI_BASE_URL=https://api.deepseek.com`. Workspace-side compile/query loop and deployed-stack analyst nodes share the same LLM brain
 - @sources/agentmemory-rohitg00-cpr-impl.md — 2026-04-28 — Apache-2.0 cpr-pattern reference implementation; the "LLM compress" phase calls a configurable LLM, swappable to DeepSeek API. When the cpr-pattern lands in Python on the Cemini stack, the Compress phase invokes this entity's hosted DeepSeek brain
 - @sources/agentic-harness-engineering.md — 2026-04-29 — arXiv 2604.25850 (Lin et al., Fudan/PKU/Shanghai Qiji Zhifeng, 28 Apr 2026) tests AHE's auto-evolved harness across 5 cross-model bases including **deepseek-v4-flash**: largest measured cross-family gain at **+10.1 pp pass@1** (51.7% → 61.8% on Terminal-Bench 2). Empirical evidence that harness-level optimization generalizes to DeepSeek-family models; reduces Cemini's brain-vendor lock-in risk. The AHE pattern (7-component decoupling + falsifiable manifest) survives a DeepSeek substitution without re-evolution
+- @sources/incompressible-knowledge-probes-li-2026.md — 2026-04-29 — arXiv 2604.24827 (Bojie Li, Pine AI, 27 Apr 2026) calibrates a black-box parameter-estimator on 89 open-weight models (R²=0.917) **explicitly including `deepseek-v3`, `deepseek-v4-flash`, `deepseek-v4-flash-think`, and `deepseek-v4-pro-think` in the calibration set**. Operational implications for this entity: (a) factual recall on DeepSeek tracks log(total params), not active params — critical MoE deployment finding; (b) **Densing Law does not apply to factual capacity** — newer cheaper models will NOT compress long-tail factual recall, so Cemini's analyst-orchestrator cannot swap-down to smaller models for ticker/entity-recall tasks without proportional loss; (c) the IKP "hallucination-similarity" technique (rare-fact agreement on wrong answers) is a low-effort silent-swap detector if Cemini's vendor ever quantizes / reroutes / replaces the served model — drift signal usable as daily cron alerting
 
 ## Raw Concept
 

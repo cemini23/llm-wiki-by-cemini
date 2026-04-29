@@ -11,6 +11,7 @@ related:
   - sources/sentrux-ast-sensor.md
   - concepts/llm-agent-systems.md
   - entities/infrastructure/deepseek-api.md
+  - sources/incompressible-knowledge-probes-li-2026.md
 maturity: validated
 read_status: read
 created: 2026-04-29
@@ -25,6 +26,7 @@ updated: 2026-04-29
 - @sources/sentrux-ast-sensor.md — sentrux's AST analysis of Python codebases is one technique for Component-observability (the §3.1 pillar); AHE generalizes this to file-level commits across 7 component types.
 - @concepts/llm-agent-systems.md — cluster hub; this paper is the highest-signal harness-engineering empirical contribution in the corpus to date.
 - @entities/infrastructure/deepseek-api.md — paper uses deepseek-v4-flash as one of five cross-model transfer bases; AHE harness yields **+10.1pp pass@1 gain** on deepseek-v4-flash (largest cross-family gain measured), validating that AHE's harness-level evolution generalizes to DeepSeek-family models — directly relevant to Cemini.
+- @sources/incompressible-knowledge-probes-li-2026.md — sibling 2026-04 arXiv preprint on LLM agent infrastructure (27 Apr 2026 vs. 28 Apr 2026 for this paper). Both quantify aspects of LLM systems Cemini's stack depends on: AHE measures *harness-level evolvability* (the orchestration substrate around the model); IKP measures *factual capacity* (the model's stored knowledge). Useful pairing for the "what should Cemini optimize: harness or brain?" decision — AHE shows the harness can deliver +10.1pp on a fixed base; IKP shows the brain's factual capacity cannot be compressed by the Densing Law and must scale with total parameters.
 
 ## Raw Concept
 

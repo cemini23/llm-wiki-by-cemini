@@ -21,6 +21,7 @@ related:
   - sources/agent3.md
   - sources/agentic-harness-engineering.md
   - sources/agents-7.md
+  - sources/incompressible-knowledge-probes-li-2026.md
   - sources/agents.md
   - sources/agents4.md
   - sources/agents5.md

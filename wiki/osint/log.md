@@ -8,6 +8,73 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] ingest | Incompressible Knowledge Probes (arXiv 2604.24827, Bojie Li, Pine AI)
+
+User dropped `Incompressible Knowledge Probes_ Estimating Black-Box LLM Parameter Counts via Factual Capacity.pdf` (1.6 MB, 79 pages). Detected by the freshly-built `scripts/preingest_check.py` (Tier 0) — verdict ✅ NEW (no arXiv-ID / DOI / URL / filename / title matches). Shipped same session as the Tier 0 + Tier 1 build.
+
+### What's new
+
+`wiki/sources/incompressible-knowledge-probes-li-2026.md` (1 new source page).
+
+### Core thesis
+
+- Closed-source frontier labs don't publish parameter counts; existing inference-economics estimates carry 2× uncertainty from confounds external to the model
+- Information-theoretic bound: storing F facts requires ≥ F/(bits per parameter) weights → factual-recall ability lower-bounds parameter count
+- IKP benchmark: 1,400 probes across 7 tiers (T1–T7), tier-assigned **empirically** by which of 6 landmark models answers correctly
+- Calibrated on 89 open-weight models from 19 vendors (135M–1,600B params): R² = 0.917; LOO CV 68.5%/87.6% within 2×/3×
+- For MoE: total params predict knowledge (R² = 0.79) >> active params (R² = 0.51) — important deployment finding
+- **Densing-Law refutation**: time coefficient on IKP across 96 dated open-weight models is −0.0010/month (95% CI [−0.0031, +0.0008]) — indistinguishable from zero, rejecting Densing's +0.0117/month prediction at p < 10⁻¹⁵. **Factual capacity does not compress.** Benchmark saturation reflects the Densing-compressible part (procedural skill), not the Shannon-bounded part (factual recall).
+- Knowledge fingerprinting: rare-fact Jaccard + **hallucination-similarity** (rate of agreement on **wrong** answers) distinguishes weight-sharing siblings, post-training lineages, and full retrains across closed-vendor families — without requiring weights.
+
+### Frontier-model parameter estimates from the paper (Figure 1)
+
+| Model | Estimated total params |
+|---|---|
+| Claude Haiku 4.5 | ~65B |
+| Gemini 2.5 Flash | ~207B |
+| GPT-5 Mini | ~410B |
+| Gemini 2.5 Pro | ~1.2T |
+| Claude Sonnet 4.6 | ~1.7T |
+| Claude Opus 4.6 | ~5.3T |
+| GPT-5.5 | ~9.7T |
+
+Heavily safety-tuned models are conservative lower bounds (refusal hides "refused but known" capacity).
+
+### Why directly Cemini-relevant
+
+The calibration set **explicitly includes `deepseek-v3`, `deepseek-v4-flash`, `deepseek-v4-flash-think`, `deepseek-v4-pro-think`**. This means IKP gives Cemini three operational primitives:
+
+1. **Tier-calibrated retrieval routing**: T1–T2 facts (common) DeepSeek answers; T6–T7 (10–50-citation researchers, obscure entities) require explicit retrieval. The "shrug → fall back to RAG" decision in `agents/orchestrator.py` can be tier-empirically calibrated.
+2. **Procedural-vs-factual cost optimization**: switch to cheaper smaller models for parsing/SQL/dispatch (Densing applies); keep big models for ticker/entity recall (Densing does NOT apply).
+3. **Silent-swap detector**: 50-probe T5–T7 daily cron + hallucination-similarity drift alert. Detects vendor quantization / rerouting / model-family changes for ~$0.04/day.
+
+### Bidirectional updates (3 pages)
+
+- `concepts/llm-agent-systems.md` — added to related: list (cluster hub)
+- `entities/infrastructure/deepseek-api.md` — added related + Relations bullet specifically about the deepseek-v4-* calibration data + the three operational primitives. This is the most concrete cross-link in the page now.
+- `sources/agentic-harness-engineering.md` — added related + Relations bullet. The two papers form a natural pair: AHE measures harness-level evolvability (the substrate around the brain); IKP measures factual capacity (the brain itself). Useful for "what should Cemini optimize: harness or brain?" decisions.
+
+### Index + log
+
+- `wiki/index.md` — total bumped 249 → 250 (168 PDF); llm-agents cluster bumped 86 → 87; new row inserted at top of llm-agents recent-ingests area (above today's earlier AHE row).
+- `wiki/log.md` — this entry.
+
+### Lint state
+
+Pre-ingest (after Tier 0+1 commit `fd5bb5f`): zero orphans/gaps/dangling/missing/undated. Post-ingest: re-verified clean.
+
+### Workflow note
+
+This was the **first ingest using the new Step 2 (preingest_check)**. Smooth — the script ran in <1s, output was clear and actionable, no false-positive duplicate flags. The overall ingest workflow felt tighter with the Step 0 dup check before "Read the source": confidence of NEW status before investing reading time. CLAUDE.md schema for the new step holds up in practice.
+
+### Open follow-ups
+
+1. **GitHub LICENSE check** [NEEDS VERIFICATION 2026-04-29] for `github.com/19PINE-AI/ikp` — same protocol as openclaude/AHE: `crawling_exa(url='github.com/19PINE-AI/ikp/blob/main/LICENSE')`. Gating check before any code is borrowed for Cemini's silent-swap detector. ~10 min.
+2. **Read appendices A/B/H** of the IKP paper — A is probe-generation pipeline, B is sensitivity sweep on the wrong-answer penalty λ, H is the Hackergame anecdote thread. ~1.5 hours; defer until Cemini's deployment decision is on the table.
+3. **Empirical IKP reproduction on DeepSeek** — install the toolkit on the laptop, run a 100-probe T5–T7 subset against `deepseek-v4-flash`, compare to the paper's published score. Validates Cemini's rate-limit envelope can absorb a daily 50-probe cron (back-of-envelope: $0.04/day at current DeepSeek pricing; trivial). ~30 min.
+
+---
+
 ## [2026-04-29] decision + tooling | Proactive search architecture (Tier 0 + Tier 1 shipped; Tier 2 deferred; Tier 3 rejected)
 
 User raised three asks late in the session: (a) "wire the script to run on everything in research to be indexed before indexing"; (b) duplicate detection that survives months/years of corpus drift; (c) "auto ingesting portion … seek out information you feel is relevant then score it against Exa". This entry captures the design decision + what shipped tonight.
