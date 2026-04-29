@@ -12,6 +12,7 @@ related:
   - concepts/llm-agent-systems.md
   - entities/infrastructure/deepseek-api.md
   - sources/incompressible-knowledge-probes-li-2026.md
+  - concepts/high-signal-paper-patterns.md
 maturity: validated
 read_status: read
 created: 2026-04-29

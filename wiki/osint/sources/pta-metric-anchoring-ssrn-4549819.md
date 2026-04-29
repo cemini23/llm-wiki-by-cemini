@@ -10,6 +10,7 @@ related:
   - concepts/quant-finance.md
   - concepts/ip-sale-readiness.md
   - entities/infrastructure/timescaledb.md
+  - concepts/high-signal-paper-patterns.md
 maturity: validated
 read_status: skimmed
 created: 2026-04-29

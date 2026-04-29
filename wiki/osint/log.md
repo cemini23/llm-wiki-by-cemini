@@ -8,6 +8,58 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] decision + concept | Workflow C — high-signal paper patterns rubric
+
+User observed that the last 4 ingests (BSIV, PTA, AHE, IKP) "have mostly been very influential" and asked how to seek out specifically papers like these. The answer was a 3-step plan agreed earlier in this session: (C) write the pattern doc, (A) run a one-shot Exa sweep using the pattern, (Tier 2 promotion) automate weekly if A surfaces useful candidates. This entry covers Workflow C.
+
+### What's new
+
+`wiki/concepts/high-signal-paper-patterns.md` — a decision rubric synthesizing what made the 4 recent landings high-signal:
+
+- **Three hard filters** (any failure → skip): Format (research-paper-grade) / Recency (≤30d default for proactive search) / Cemini-domain overlap (one of: quant finance, LLM agent infrastructure, LLM brain capacity, market infrastructure, data infrastructure, audit/governance/IP)
+- **6 quality signals**: empirical results, comprehensive prior-work integration, code release, reproducibility hooks, refutation-of-prior, methodology-not-training-recipe
+- **3 operational signals**: concrete Cemini deployment surface, quantifiable expected gain, clear next-step
+- **7 negative signals**: license poison-pill family A (GPL-3.0/AGPL-3.0/SSPL/ELv2), poison-pill family B (vendor-IP-redistribution-without-authorization), single-author-with-extraordinary-claims, ≥50% wiki overlap, domain mismatch, closed-source-preview-only, vendor whitepaper
+
+### Worked-example scoring
+
+The 4 recent landings retroactively scored against the rubric:
+
+| Paper | Quality | Operational | Verdict |
+|---|---|---|---|
+| BSIV | 5/6 | 3/3 | Read |
+| PTA | 4/6 | 3/3 | Read |
+| AHE | 5/6 | 3/3 | Read |
+| IKP | 5/6 | 3/3 | Read |
+
+Plus Reject examples from Wave 3: openclaude (poison-pill family B) and warp (poison-pill family A).
+
+### Cluster-specific Workflow-A query templates
+
+Codified 7 query patterns for weekly Tier-2 sweeps across LLM-agent, options/IV, MoE/scaling, prediction-markets, financial RL, multi-agent finance, time-series-DB. Date-bounded to last 14 days; category=`research paper`. If a sweep returns ≤2 candidates passing all filters, drop two queries and add a fresh angle. If ≥10 candidates, the sweep caught a deadline cluster and the user should be involved in selection.
+
+### Bidirectional `related:` updates (7 pages)
+
+- `sources/black-scholes-iv-explicit-schadner-2026.md`, `sources/pta-metric-anchoring-ssrn-4549819.md`, `sources/agentic-harness-engineering.md`, `sources/incompressible-knowledge-probes-li-2026.md` — the 4 worked-example landings, all cross-link to the rubric
+- `concepts/wiki-tooling-evaluation.md` — sibling decision-record concept
+- `concepts/ip-sale-readiness.md` — license poison-pill families A & B are the negative-signal half of this rubric
+- `concepts/llm-agent-systems.md` — cluster hub for the LLM-agent landing area where 2/4 high-signal landings happened
+
+### Index + log
+
+- `wiki/index.md` — new row in "Librarian / knowledge-base tooling" concepts subsection (after `ai-organisation-design.md`)
+- `wiki/log.md` — this entry
+
+### What's next (if Workflow A surfaces good candidates)
+
+1. **Workflow A this session** — run the 7 cluster Exa queries date-bounded to last 14 days, score against the rubric, present top 5–8 candidates to user
+2. **If candidates land** — green-light Tier 2 of the proactive-search design (promote from "deferred" to "active"); decide on a weekly cron cadence
+3. **Maintenance** — update the rubric whenever a landing causes us to revise criteria, or when a new poison-pill family is identified
+
+The rubric is **meta-content**: it lives at the level of "how the wiki picks what to ingest" rather than "what the wiki contains". CLAUDE.md's "Working method" section will reference it next time we touch the schema.
+
+---
+
 ## [2026-04-29] ingest | Incompressible Knowledge Probes (arXiv 2604.24827, Bojie Li, Pine AI)
 
 User dropped `Incompressible Knowledge Probes_ Estimating Black-Box LLM Parameter Counts via Factual Capacity.pdf` (1.6 MB, 79 pages). Detected by the freshly-built `scripts/preingest_check.py` (Tier 0) — verdict ✅ NEW (no arXiv-ID / DOI / URL / filename / title matches). Shipped same session as the Tier 0 + Tier 1 build.

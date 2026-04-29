@@ -34,9 +34,10 @@ related:
   - sources/black-scholes-iv-explicit-schadner-2026.md
   - sources/4-5-links-2.md
   - sources/agent-browser-vercel-labs.md
+  - concepts/high-signal-paper-patterns.md
 maturity: validated
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 ## Relations
