@@ -16,40 +16,54 @@ Distribution is a deliberate step, not a default. Stage candidates in `briefs/` 
 
 ## Pattern sources
 This schema is synthesized from:
-- **Karpathy's LLM Wiki** (local copy: `research for cemini/llm-wiki.md`) — three-layer architecture (raw / wiki / schema), `index.md` + `log.md` navigation, ingest/query/lint operations, "persistent compounding artifact"
-- **ByteRover Context Tree** (local copy: `research for cemini/llm re 4:3.pdf`) — hierarchical `Domain > Topic > Subtopic > Entry`, explicit `@path` relations, YAML frontmatter with lifecycle metadata, ADD/UPDATE/UPSERT/MERGE/DELETE primitives with `reason` audit trail, OOD signaling
+- **Karpathy's LLM Wiki** (raw source on librarian: `cemini-librarian:/opt/cemini-bulk/research/llm-wiki.md`; mirror at `wiki/sources/llm-wiki.md`) — three-layer architecture (raw / wiki / schema), `index.md` + `log.md` navigation, ingest/query/lint operations, "persistent compounding artifact"
+- **ByteRover Context Tree** (raw source on librarian: `cemini-librarian:/opt/cemini-bulk/research/llm re 4:3.pdf`) — hierarchical `Domain > Topic > Subtopic > Entry`, explicit `@path` relations, YAML frontmatter with lifecycle metadata, ADD/UPDATE/UPSERT/MERGE/DELETE primitives with `reason` audit trail, OOD signaling
 
 If you're ever uncertain about structure, defer to those documents.
 
 ## Architecture — three layers
 
-1. **Raw sources** — immutable. You read them, never modify them.
-   - `research for cemini/` — long-form PDFs, reports, notes (~242 files, 527M)
-   - `market dataset/` — historical market data (~1.6G)
+1. **Raw sources** — immutable. You read them, never modify them. **Canonical location: `cemini-librarian:/opt/cemini-bulk/`** (migrated 2026-04-28; previously laptop-local). Backed up via Hetzner daily snapshots.
+   - `cemini-librarian:/opt/cemini-bulk/research/` — long-form PDFs, reports, notes (~283 files, 642 MB)
+   - `cemini-librarian:/opt/cemini-bulk/market-dataset/` — historical market data (~17.6k files, 1.6 GB)
+   - **Read pattern**: `ssh cemini-librarian "cat /opt/cemini-bulk/research/<filename>"` for quick inspection; `scp cemini-librarian:/opt/cemini-bulk/research/<filename> /tmp/` for local deep-read sessions in Preview/Adobe/etc.
+   - **Drop pattern (new sources)**: drop into laptop's `research to be indexed/` (transient), ingest pipeline reads + synthesizes, then `scp` to `cemini-librarian:/opt/cemini-bulk/research/` and remove laptop copy.
 
-2. **The wiki** — LLM-written, human-read. This is the library proper.
+2. **The wiki** — LLM-written, human-read. This is the library proper. **Canonical location: laptop `wiki/`**, synced to `cemini-librarian:/opt/cemini-wiki/wiki/` for MCP serving.
    - `wiki/` — hierarchical markdown pages with explicit cross-references
 
 3. **The schema** — this file. Tells the LLM how to run the wiki. Co-evolves over time.
 
 Staging/output lives outside the wiki:
 - `briefs/` — one-off deliverables ready to ship to claude.ai or Cemini
+- `research to be indexed/` — transient drop zone for new raw sources (gitignored)
 - `LESSONS.md` — meta-lessons about *how we work* (distinct from `wiki/log.md`)
 
 ## Folder layout
 
 ```
-CLAUDE.md                    # this file — the schema
-LESSONS.md                   # meta-lessons (how we work, not what we did)
-research for cemini/         # raw sources: PDFs, images, docx
-market dataset/              # raw data: Stocks/, ETFs/, Data/, kaggle/
-briefs/                      # staging for outputs → claude.ai or Cemini
-wiki/                        # the library
-  index.md                   # content-oriented catalog of all wiki pages
-  log.md                     # append-only chronological operations log
-  sources/                   # one page per ingested source
-  entities/                  # tickers, companies, people, facilities, organizations
-  concepts/                  # topics, theses, methodologies, strategies
+LAPTOP (~/Desktop/OSINT WORKSPACE/):
+  CLAUDE.md                    # this file — the schema
+  LESSONS.md                   # meta-lessons (how we work, not what we did)
+  ROADMAP.md                   # active workstream / decisions / open questions
+  research to be indexed/      # transient drop zone for new raw sources (gitignored)
+  briefs/                      # staging for outputs → claude.ai or Cemini (gitignored)
+  wiki/                        # canonical wiki (synced → librarian for serving)
+    index.md                   # content-oriented catalog of all wiki pages
+    log.md                     # append-only chronological operations log
+    sources/                   # one page per ingested source
+    entities/                  # tickers, companies, people, facilities, organizations
+    concepts/                  # topics, theses, methodologies, strategies
+  scripts/                     # wiki_lint.py + ingest helpers
+  .local/                      # gitignored, local-only (server connection details, etc.)
+
+LIBRARIAN (cemini-librarian:/opt/):
+  cemini-bulk/                 # raw layer canonical home (migrated from laptop 2026-04-28)
+    research/                  # ~283 PDFs/docx (642 MB)
+    market-dataset/            # ~17.6k files (1.6 GB)
+  cemini-wiki/                 # serving layer
+    wiki/                      # synced copy from laptop (for MCP serve)
+    .llmwiki/                  # compiler state (schema.json, embeddings, candidates)
 ```
 
 Pages can be nested further inside `sources/entities/concepts` when `Domain > Topic > Subtopic` hierarchy is warranted (e.g. `entities/companies/geo-group.md`, `entities/tickers/nvda.md`).
@@ -97,7 +111,7 @@ Four canonical sections, in order. Include only what's relevant per page type.
 - Original title: ...
 - Author(s): ...
 - Type: PDF | article | podcast | video | ...
-- Location: research for cemini/3:29 19.pdf
+- Location: cemini-librarian:/opt/cemini-bulk/research/3:29 19.pdf
 - Retrieved: 2026-04-23
 - Pages / length: 19p
 - Read status: skimmed | read | deep-read | unread-stub
@@ -169,15 +183,18 @@ Claim confidence tags (inline):
 
 ### Ingest (adding a new source)
 
-1. Read the source (or relevant pages for long PDFs).
-2. Discuss key takeaways with the user before writing.
-3. Create `wiki/sources/<slug>.md` — source page with frontmatter + Raw Concept + short Narrative.
-4. Identify new entities and concepts the source touches. For each:
+1. New source dropped into `research to be indexed/` on the laptop (transient drop zone).
+2. Read the source (or relevant pages for long PDFs).
+3. Discuss key takeaways with the user before writing.
+4. Create `wiki/sources/<slug>.md` — source page with frontmatter + Raw Concept + short Narrative. Cite the eventual canonical location: `[Source: <filename>.pdf p.5]` (file ends up on librarian; citations remain valid).
+5. Identify new entities and concepts the source touches. For each:
    - If a page exists: update it, add `related:` backlink, bump `updated:`.
    - If no page exists: create a stub (frontmatter + one-line Narrative + Relations). Real content accumulates over subsequent ingests.
-5. Update `wiki/index.md` — add rows for any new pages.
-6. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed.
-7. A single ingest should touch 3–15 pages typically. If it touches 0 new pages, ask whether the source is worth ingesting.
+6. Update `wiki/index.md` — add rows for any new pages.
+7. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed.
+8. **Move raw source to librarian**: `scp "research to be indexed/<filename>" cemini-librarian:/opt/cemini-bulk/research/` then `rm "research to be indexed/<filename>"` on laptop. Verify with `ssh cemini-librarian "ls /opt/cemini-bulk/research/<filename>"`.
+9. Run lint + commit + push (the wiki side; raw-source move is server-side and not in laptop git).
+10. A single ingest should touch 3–15 pages typically. If it touches 0 new pages, ask whether the source is worth ingesting.
 
 ### Query (answering a question)
 
@@ -239,12 +256,12 @@ Material ready to leave the wiki goes through `briefs/` first:
 
 ## Active research threads
 
-- **CeminiSuite per-ticker research** — active. Canonical format is the **Gemini Deep Research template** (six sections: Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context). Watchlist (30 tickers — 2026-04-24 even +5 / −5 rebalance against the server baseline: added ASTS, GLW, INTC, PL, SOFI; removed MARA, JPM, BAC, GS, UBER with Financials category sunset, new Fintech category) at `wiki/entities/ticker-watchlist.md`. Indexed reports at `wiki/entities/tickers/<symbol>.md`. **Progress: 27 / 30** (AAPL, ADA, AMD, AMZN, ASTS, AVAX, AVGO, BTC, COIN, DIS, DOGE, ETH, GLW, GOOGL, INTC, LINK, META, MSFT, MSTR, NFLX, NVDA, PL, PLTR, SMCI, SOFI, SOL, TSLA — pending: SPY, QQQ, IWM). Ingest workflow: user drops `<SYMBOL> <date>.docx` into `research to be indexed/` → Claude runs `scripts/index_tickers.py` → moves source into `research for cemini/` → flips the status row in the watchlist table. **Divergence-from-server rule**: wiki-tracked additions/removals lead the server's `tickers.json`; annotate divergence in the watchlist's "Wiki-tracked divergence" section, apply the combined diff server-side, then re-pull config to restore parity.
-- **Corpus inventory** — 230 stubs generated from `research for cemini/`. Clusters skew heavily to RL/MARL (108) and LLM agents (59). Corpus is research-methodology heavy — math, portfolio strategy, Cemini-internal audits — not ticker- or event-driven.
+- **CeminiSuite per-ticker research** — active. Canonical format is the **Gemini Deep Research template** (six sections: Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context). Watchlist (30 tickers — 2026-04-24 even +5 / −5 rebalance against the server baseline: added ASTS, GLW, INTC, PL, SOFI; removed MARA, JPM, BAC, GS, UBER with Financials category sunset, new Fintech category) at `wiki/entities/ticker-watchlist.md`. Indexed reports at `wiki/entities/tickers/<symbol>.md`. **Progress: 27 / 30** (AAPL, ADA, AMD, AMZN, ASTS, AVAX, AVGO, BTC, COIN, DIS, DOGE, ETH, GLW, GOOGL, INTC, LINK, META, MSFT, MSTR, NFLX, NVDA, PL, PLTR, SMCI, SOFI, SOL, TSLA — pending: SPY, QQQ, IWM). Ingest workflow: user drops `<SYMBOL> <date>.docx` into `research to be indexed/` → Claude runs `scripts/index_tickers.py` → `scp` source to `cemini-librarian:/opt/cemini-bulk/research/` and removes laptop copy → flips the status row in the watchlist table. **Divergence-from-server rule**: wiki-tracked additions/removals lead the server's `tickers.json`; annotate divergence in the watchlist's "Wiki-tracked divergence" section, apply the combined diff server-side, then re-pull config to restore parity. **Note**: `scripts/index_tickers.py` may need updating to scp instead of local-mv post-2026-04-28 raw-layer migration.
+- **Corpus inventory** — 230 stubs generated from the raw research corpus (now at `cemini-librarian:/opt/cemini-bulk/research/`). Clusters skew heavily to RL/MARL (108) and LLM agents (59). Corpus is research-methodology heavy — math, portfolio strategy, Cemini-internal audits — not ticker- or event-driven.
 
 ## Related — read-only from this workspace
 - **CeminiSuite dev stack** — Hetzner host, `/opt/cemini` server root. Connection details (SSH target, IP) live in `.local/server.md` (gitignored). Has its own `CLAUDE.md` for dev work. **Never modify the server's `CLAUDE.md` from here.**
 
 ## Open questions
-- PDF content index — 242 files in `research for cemini/` are date-named, not topic-named. Bootstrap in progress: extract first pages → create `wiki/sources/` stubs → deep engagement as PDFs are consulted.
+- PDF content index — 283 files at `cemini-librarian:/opt/cemini-bulk/research/` are date-named, not topic-named. Bootstrap in progress: extract first pages → create `wiki/sources/` stubs → deep engagement as PDFs are consulted (read via `ssh cemini-librarian` or `scp` to `/tmp/` for Preview/Adobe sessions).
 - Whether to rename the workspace folder off `/Users/claudiobarone/Desktop/OSINT WORKSPACE` (user offered; no pressing reason yet).

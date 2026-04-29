@@ -46,6 +46,8 @@ related:
   - sources/kepano-obsidian-skills.md
   - sources/obsidian-second-brain-eugeniughelbur.md
   - sources/playwright-mcp-microsoft.md
+  - sources/gemini-dr-wave3-link-eval-2026-04-28.md
+  - sources/black-scholes-iv-explicit-schadner-2026.md
   - concepts/wiki-tooling-evaluation.md
   - sources/falkordb-graphrag-eval.md
   - entities/platforms/mercury.md

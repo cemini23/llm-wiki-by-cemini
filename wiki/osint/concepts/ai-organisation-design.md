@@ -19,6 +19,7 @@ related:
   - entities/frameworks/fastmcp.md
   - entities/infrastructure/deepseek-api.md
   - sources/vibe-trading-hkuds.md
+  - sources/gemini-dr-wave3-link-eval-2026-04-28.md
 maturity: draft
 created: 2026-04-28
 updated: 2026-04-28

@@ -8,6 +8,7 @@ related:
   - sources/3-19-ip-sale-research.md
   - sources/3-19-kalshi-trading-strategy-research.md
   - entities/infrastructure/timescaledb.md
+  - sources/black-scholes-iv-explicit-schadner-2026.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-23

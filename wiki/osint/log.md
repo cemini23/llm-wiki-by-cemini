@@ -8,6 +8,49 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] ingest | Gemini DR Wave 3 (13 URLs) — headline finding: Schadner closed-form Black-Scholes IV formula (arxiv 2604.24480)
+
+User dropped Wave 3 docx (`Evaluating Code for Trading & Wiki Stacks.docx`, 54 KB / 539 lines / 13 URL evaluations) into `research to be indexed/` 2026-04-28. Originally checked mid-session for Option C (kb-server vs custom MCP) decision relevance — none of 13 URLs solved nested-wiki MCP serving, validating kb-server adoption. Then ingested as its own pass per the 9-step protocol from Wave 2's canonical source.
+
+### What shipped
+
+**2 new source pages**:
+- `wiki/sources/gemini-dr-wave3-link-eval-2026-04-28.md` — canonical Wave 3 ingest with 13-URL summary table, anti-hallucination spot-check results
+- `wiki/sources/black-scholes-iv-explicit-schadner-2026.md` — dedicated source page for the wave's headline Adopt-Cemini-Wiki-Workflow finding (closed-form IV formula, U. Liechtenstein paper, CC BY 4.0)
+
+**WTE concept page**: appended Wave 3 section.
+
+**8 existing pages** got bidir backlinks: `concepts/options-derivatives.md`, `concepts/ip-sale-readiness.md`, `concepts/ai-organisation-design.md`, `concepts/librarian-server-architecture.md`, `concepts/scatter-gather-topology.md`, `sources/gemini-dr-link-eval-2026-04-28.md` (Wave 2 sibling), `entities/infrastructure/polars.md`, plus WTE listing both new sources.
+
+**Index updates**: llm-agents 82→83 (canonical Wave 3 page); options-derivatives 15→16 (Schadner paper).
+
+### Wave 3 register summary
+
+- **Adopt-Cemini-Wiki-Workflow (1)**: Schadner Black-Scholes IV explicit formula — claims 3.4× speedup vs `scipy.optimize.brentq` at machine precision via single inverse-Gaussian quantile evaluation. Block production deploy until empirical reproduction on Cemini's Polars + Polygon data confirms claim.
+- **Adopt-Workflow HALT-PENDING-LICENSE (1)**: `Gitlawb/openclaude` — Exa-confirmed license = `Other (NOASSERTION)`. 24,794 ★, MCP-native, 200+ model routing — strong potential as Anthropic-Claude-Code replacement on laptop, but blocked until LICENSE file is manually inspected.
+- **Steal-from (5)**: `gepa-ai/gepa` (laptop prompt mutation), `czl9707/build-your-own-openclaw` (multi-agent routing patterns to LangGraph), `Mathieu2301/TradingView-API` (reverse-engineer to Python), `matrixorigin/Memoria` (branch_id/parent_commit schema for PostgreSQL — highest-leverage Wave 3 pattern), `stefan-jansen/machine-learning-for-trading` (alpha factor library, but flagged for ~20-month staleness).
+- **Reference-only (3)**: `hidemyemail-generator`, `Mesa filesystem` (cloud SaaS — pattern study only), `warpdotdev/warp` (AGPL-3.0 confirmed — laptop-only, server-banned).
+- **Reject (1)**: `subramanya1997/markdownfs` (license unverified Rust in-memory VFS, zero utility for our problem).
+- **Unavailable (2)**: google/skills, molab.marimo.io.
+
+### Anti-hallucination spot-check (Exa `crawling_exa` 2026-04-29)
+
+8 URLs batch-crawled. **Two material findings beyond simple drift**:
+- `Gitlawb/openclaude` license = `NOASSERTION` confirmed; halt-pending validated
+- `stefan-jansen/machine-learning-for-trading` last push 2024-08-18 (~20 months stale); Steal-from-with-staleness-flag is the right call
+- All other licenses + star counts within reasonable drift; arxiv paper title + abstract confirmed
+
+### Cross-wave contributions
+
+- **License poison-pill family confirmations**: warp = AGPL-3.0 (Exa-confirmed) — was already on the family; this is a fresh confirmation. New pattern: `NOASSERTION` license-detection result → halt until manual LICENSE-file inspection (the openclaude case).
+- **Memoria's branch_id/parent_commit schema** is the highest-leverage Wave 3 pattern — adds Git-style memory branching to LangGraph orchestrator's existing PostgreSQL state-tracking with no new database dependency. Worth a follow-up brief for the production stack.
+
+### Outcome
+
+Cemini production stack gains 1 high-impact adoption candidate (Schadner IV formula) and 5 Steal-from patterns. Laptop workflow gains 1 license-blocked candidate (openclaude). Librarian server unaffected by Wave 3 findings. IP-sale license discipline reinforced with `NOASSERTION → halt` pattern.
+
+---
+
 ## [2026-04-28] ingest | Gemini DR Wave 2 (24 URLs) + OneManCompany paper (Yu et al, Huawei + UCL + U Liverpool, arXiv 2604.22446v1)
 
 User dropped two artefacts into `research to be indexed/` 2026-04-28: (1) the Gemini Deep Research output (`Evaluating Code for Trading and Wiki 4_28.docx`, 90 KB / 1179 lines / 24 URL evaluations) responding to the brief authored earlier the same day at `briefs/2026-04-28_gemini-deep-research-link-evaluation-prompt.md` (gitignored); (2) the OneManCompany paper PDF (33 pages including 9-page appendix, arXiv 2604.22446v1, 24 Apr 2026, Huawei Noah's Ark Lab + UCL + U Liverpool).

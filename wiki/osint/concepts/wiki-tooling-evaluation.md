@@ -30,6 +30,8 @@ related:
   - sources/obsidian-second-brain-eugeniughelbur.md
   - sources/playwright-mcp-microsoft.md
   - sources/bare-bones-memory-southpolesteve.md
+  - sources/gemini-dr-wave3-link-eval-2026-04-28.md
+  - sources/black-scholes-iv-explicit-schadner-2026.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28
@@ -296,6 +298,27 @@ Recommended sequence (stamps on this concept page as decisions land):
 
 If smoke fails: this page becomes the **"why we kept hand-rolling"** retraction-of-record, including the specific failure mode that bailed; @concepts/librarian-server-architecture.md is paused at Phase 0 (no provisioning) until alternatives are evaluated.
 
+### `[OUTCOME 2026-04-29]` — Wave 1 librarian-tooling decision REVISED
+
+**llm-wiki-compiler v0.4.0 deployment-blocked**: smoke-tested against the live librarian server's synced wiki, the v0.4.0 query path-resolver hardcodes `CONCEPTS_DIR = "wiki/concepts"` (single flat directory) and cannot find pages in our nested `concepts/` + `entities/` + `sources/` layout. The LLM (DeepSeek API) correctly identifies the right page via reasoning over our `wiki/index.md`, but the post-LLM slug-resolver mangles paths (e.g., returns `conceptslibrarian-server-architecture` from `concepts/librarian-server-architecture.md` after stripping `/`). End-to-end query path is broken for our wiki layout. Diagnosed by inspecting `/usr/lib/node_modules/llm-wiki-compiler/dist/cli.js`. Stack confirmed working at every layer except this one: DeepSeek inference 5.7s, Ollama daemon, llmwiki ingest, llmwiki lint all functional.
+
+**Three options evaluated**:
+- **A — Flatten our wiki** to `wiki/concepts/` only: rejects librarian doctrine + 60+ existing inline `@path/` references would break; **rejected**
+- **B — Symlink farm** at `/opt/cemini-wiki/wiki/concepts/` symlinking all nested .md files flat: technical debt forever, fragile to upstream llmwiki changes, basename-collision risk; **rejected**
+- **C — Replace serving layer** with a different MCP server that natively walks nested directories: longest path but cleanest answer; **adopted**
+
+`[ADOPTED 2026-04-29]: Option C — replace llmwiki query/serve with @sources/willynikes2-knowledge-base-server.md (kb-server)` — installed at `cemini-librarian:/opt/kb-server/`, systemd-managed (`kb-server.service`), Node 22 + better-sqlite3 + Xenova embeddings + Obsidian-vault-bidirectional-sync. **Critical empirical proof**: ingested all 395 wiki pages from `/opt/cemini-wiki/wiki/` (nested layout) in 0.7 seconds. FTS5 BM25 search returns the right pages including from deeply-nested paths like `entities/tickers/nvda.md` and `sources/omc-talent-container-paper.md`. Three test queries verified end-to-end: OMC abstraction → top hit `omc-talent-container-paper`; "librarian server architecture" → 10 results, top hit correct page; "NVDA" → top hit `nvda` ticker page.
+
+**llm-wiki-compiler retained on disk** at `/usr/lib/node_modules/llm-wiki-compiler/` for potential future compile-mode use (auto-classify, candidate review, watch-and-recompile) if/when our wiki layout is restructured to be more compatible. Not running as a service; not consuming RAM.
+
+**Read-only safety**: kb-server ships 16 MCP tools, ~10 of which can write/rewrite vault content (`kb_classify`, `kb_promote`, `kb_synthesize`, `kb_write`, `kb_capture_*`). For our serving needs we only require the read subset (`kb_search`, `kb_search_smart`, `kb_context`, `kb_read`, `kb_list`). Pending: configure tool-allowlist filter at the MCP boundary so the brain can only call read tools, never write. Documented as a Phase 3 decision in @concepts/librarian-server-architecture.md.
+
+**Network exposure**: kb-server listens on `0.0.0.0:3838`; Hetzner Cloud Firewall scopes port 3838 inbound to `10.0.0.0/16` only. The brain on cemini-prod (once attached to the same private network) reaches it via `cemini-librarian-private:3838`. No public exposure.
+
+**Sync cadence**: manual rsync + `kb ingest` after substantive wiki edits. Phase 5 of LSA migration plan converts this to hourly cron (or file-watch on the laptop) — pending.
+
+The Wave 1 register is otherwise unchanged: `agentmemory` stays Steal-from-as-pattern, `FalkorDB`+`memex`+`emtwiki` decisions preserved.
+
 ## Wave 2 — Gemini Deep Research findings (2026-04-28)
 
 After Wave 1 (this page above) decided **adopt llm-wiki-compiler**, the user authored a Gemini Deep Research brief at `briefs/2026-04-28_gemini-deep-research-link-evaluation-prompt.md` (gitignored) and ran 24 URLs through Gemini 2.5 Deep Research mode. Result: `Evaluating Code for Trading and Wiki 4_28.docx` → ingested 2026-04-28 as @sources/gemini-dr-link-eval-2026-04-28.md.
@@ -355,6 +378,46 @@ Every Adopt + Steal-from URL went through Exa `crawling_exa` against the GitHub 
 - License-poison-pill family on @concepts/ip-sale-readiness.md gains 3 confirmations (GPL-3.0, AGPL-3.0, ELv2) from Wave 2.
 - The OMC paper (sibling ingest @sources/omc-talent-container-paper.md) validates Wave 2's Reference-only classification of `agency-agents` — OMC explicitly uses agency-agents as Type-2 prompt source, not as deployable artefact, exactly matching the wiki's "study, don't install" recommendation.
 - @concepts/ai-organisation-design.md (sibling concept page from OMC ingest) introduces a third abstraction layer (organisation-level) above multi-agent-coordination — orthogonal to this WTE page's library-tooling decision but worth cross-referencing for any future Cemini orchestrator-replacement question.
+
+## Wave 3 — Gemini Deep Research findings (2026-04-28; ingested 2026-04-29)
+
+Wave 3 docx (`Evaluating Code for Trading & Wiki Stacks.docx`) was first checked mid-session for Option C relevance — the conclusion was that **none of its 13 URLs solved the nested-wiki MCP serving problem**, validating the kb-server adoption decision. Wave 3 then ingested as its own pass per the 9-step protocol from `@sources/gemini-dr-link-eval-2026-04-28.md`.
+
+### Wave 3 register summary (decisions added 2026-04-29)
+
+**Adopt-Cemini-Wiki-Workflow (1)** — first triple-Adopt across all three waves:
+- `[ADOPT 2026-04-29]` @sources/black-scholes-iv-explicit-schadner-2026.md — **Wave 3's headline finding**. Closed-form Black-Scholes IV explicit formula (CC BY 4.0, U. Liechtenstein, 27 Apr 2026 paper). Replaces `scipy.optimize.brentq` iterative solving with a single inverse-Gaussian quantile evaluation; claims 3.4× speedup at machine precision. Block production deploy until empirical reproduction on Cemini's Polars + Polygon data confirms the speedup claim.
+
+**Adopt-Workflow with HALT (1)**:
+- `[HALT-PENDING-LICENSE 2026-04-29]` Gitlawb/openclaude — Exa-confirmed license = `Other (NOASSERTION)`. 24,794 ★, MCP-native, replaces Anthropic Claude Code CLI with vendor-agnostic 200+ model routing. **Adoption gates**: manually inspect the LICENSE file in the repo; if MIT/Apache/BSD-clean → adopt. If custom-restrictive → keep at Reference-only.
+
+**Steal-from (5)**:
+- `gepa-ai/gepa` (MIT, 3836 ★) — `dspy.GEPA` reflective prompt-mutation; run laptop-only against design-time prompts, hardcode results into `agents/orchestrator.py`
+- `czl9707/build-your-own-openclaw` (MIT, 1284 ★) — extract Phase-3 multi-agent routing + Phase-4 concurrency patterns to LangGraph; skip LiteLLM dependency
+- `Mathieu2301/TradingView-API` (ISC, 3214 ★) — reverse-engineer JS WebSocket protocol, rewrite as Python `websockets`/`httpx`. Caveat: TOS-violation territory
+- `matrixorigin/Memoria` (Apache-2.0, 206 ★) — extract `branch_id`/`parent_commit` schema for PostgreSQL; skip MatrixOne dependency
+- `stefan-jansen/machine-learning-for-trading` (MIT per file inspection, 17061 ★, **last push 2024-08-18**) — strip-mine `04_alpha_factor_research` and `24_alpha_factor_library`; transcribe pandas-1.0 → Polars LazyFrames. Severe framework-obsolescence flag
+
+**Reference-only (3)**: `hidemyemail-generator` (MIT, niche), `Mesa filesystem` (cloud SaaS, branched-FS architectural pattern), `warpdotdev/warp` (AGPL-3.0 — laptop-only, server-banned)
+
+**Reject (1)**: `subramanya1997/markdownfs` (license unverified Rust in-memory VFS — auto-reject + zero utility for our problem)
+
+**Unavailable (2)**: google/skills, molab.marimo.io
+
+### Spot-check verdict (Exa `crawling_exa` 2026-04-29)
+
+8 URLs batch-crawled. **Two material findings beyond simple drift**:
+- `Gitlawb/openclaude` — license = `Other (NOASSERTION)` confirms Gemini's halt-flag; adoption blocked until manual LICENSE-file inspection
+- `stefan-jansen/machine-learning-for-trading` — last push 2024-08-18, ~20 months stale; Steal-from-with-staleness-flag is correct
+
+The 9-step protocol caught both correctly. Worth noting that Wave 3's lower yield (1 clean Adopt vs Wave 2's 2) tracks with the lower URL count — the protocol stays sound, but the source pool's signal density isn't constant.
+
+### Wave 3's effects on this page's recommendations
+
+- Wave 1 + Wave 2 register (llm-wiki-compiler decision; 8 Wave-2 Adopts) — **unchanged**.
+- Wave 3 contributes 1 new dedicated source page (`@sources/black-scholes-iv-explicit-schadner-2026.md`) targeting the Cemini quant pipeline; the librarian server is unaffected by this finding.
+- License poison-pill family gets one new Exa confirmation (warp = AGPL-3.0 ✅) and one new HALT pattern (`NOASSERTION` license-detection result → halt until LICENSE-file is manually inspected).
+- The Memoria-pattern Steal-from (branch_id/parent_commit columns in PostgreSQL) is the highest-leverage Wave 3 pattern for the Cemini stack — adds Git-style memory branching to the LangGraph orchestrator's existing state-tracking with no new database dependency.
 
 ## Snippets
 

@@ -23,6 +23,7 @@ related:
   - sources/omc-talent-container-paper.md
   - concepts/ai-organisation-design.md
   - sources/vibe-trading-hkuds.md
+  - sources/gemini-dr-wave3-link-eval-2026-04-28.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

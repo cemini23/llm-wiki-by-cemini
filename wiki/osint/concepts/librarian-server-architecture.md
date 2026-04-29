@@ -18,6 +18,7 @@ related:
   - sources/gemini-dr-link-eval-2026-04-28.md
   - sources/playwright-mcp-microsoft.md
   - concepts/ai-organisation-design.md
+  - sources/gemini-dr-wave3-link-eval-2026-04-28.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28
@@ -189,14 +190,20 @@ Run llm-wiki-compiler on the laptop with Path A (Claude Code zero-config Anthrop
 - Sync excludes raw sources (`research for cemini/`, `market dataset/`) — those stay on laptop
 - Sync excludes `briefs/` — those follow the existing scp-to-production pattern, distinct from wiki distribution
 
-**Phase 3 — Server-side compile + MCP serve**
+**Phase 3 — Server-side compile + MCP serve** `[DONE 2026-04-29 — kb-server adopted in place of llm-wiki-compiler per Option C]`
 
-- On librarian server: `cd /opt/librarian && llmwiki compile` (full first compile)
-- Review for correctness (server-side equivalent of `--review` queue)
-- Stand up `llmwiki serve` as a systemd service (auto-restart on failure, persists across reboots)
-- Test MCP endpoint locally: smoke-test query against the wiki
+- ✅ Node 22.22.2 + npm 10.8.2 installed on librarian (NodeSource setup_22.x)
+- ✅ Ollama daemon installed + nomic-embed-text pulled (274 MB, listening on 127.0.0.1:11434, systemd-managed)
+- ⚠️ llm-wiki-compiler v0.4.0 installed but **deployment-blocked**: hardcoded `CONCEPTS_DIR = "wiki/concepts"` flat-layout assumption is incompatible with our nested `concepts/` + `entities/` + `sources/` wiki. Smoke-tested 2026-04-28; LLM (DeepSeek API) correctly identifies pages from `wiki/index.md` but post-LLM slug-resolver mangles paths. Diagnosed in `cli.js`. Retained on disk for potential future compile-mode use, not running as a service. **See @concepts/wiki-tooling-evaluation.md "Wave 1 — REVISED" section for full diagnosis.**
+- ✅ **kb-server (Wave 1 Option C)** installed + systemd-managed. `willynikes2/knowledge-base-server` (MIT, Obsidian-vault-native, FTS5 + Xenova local embeddings + 16-tool MCP). Empirically validated against our 395-page nested wiki: ingested in 0.7 seconds, all FTS5 queries return correct nested-path pages. Listens on `:3838`, scoped to `10.0.0.0/16` only via Hetzner Cloud Firewall.
+- ✅ Smoke-test queries verified end-to-end: OMC paper (sources/), librarian-server-architecture (concepts/), nvda ticker (entities/tickers/) all resolve correctly with FTS5 BM25 ranking.
 
-**Effort**: ~1-2 hours
+**Pending sub-tasks** (Phase 3 follow-ups):
+- Configure kb-server tool-allowlist filter at the MCP boundary so the brain can only call read tools (`kb_search`, `kb_search_smart`, `kb_context`, `kb_read`, `kb_list`); never write tools (`kb_classify`, `kb_promote`, `kb_synthesize`, `kb_write`, `kb_capture_*`). Read-only safety lockdown.
+- Bind to private network IP (`10.0.0.x`) or rely on firewall-only scoping (current state). Both work — firewall-only ships first, explicit-bind defense-in-depth later.
+- DeepSeek API key provisioned on librarian at `/etc/llmwiki/env` (separately env-managed; configured for llmwiki — kb-server uses local Xenova embeddings instead, no DeepSeek dependency for serving).
+
+**Effort**: ~3 hours (actual; landed 2026-04-29)
 
 **Phase 4 — Wire production brain → librarian MCP**
 
@@ -224,24 +231,27 @@ Run llm-wiki-compiler on the laptop with Path A (Claude Code zero-config Anthrop
 
 **Effort**: ongoing; ~1 hour initial setup
 
-### Sync model
+### Sync model `[REVISED 2026-04-28 — raw-layer migration to librarian]`
 
-Laptop is canonical (preserves librarian doctrine). Sync is deliberate (rsync via SSH). What syncs:
+Wiki canonical = laptop (preserves librarian doctrine for the curated layer). **Raw layer canonical = librarian** (revised 2026-04-28 to free laptop disk and consolidate audit-grade backups; previously laptop-only). Sync is deliberate (rsync via SSH).
 
-| Path | Synced? | Notes |
-|---|---|---|
-| `wiki/` | **Yes** | Canonical wiki — the load-bearing artifact for the librarian server |
-| `wiki/log.md` | Yes | Append-only log; rsync handles the append cleanly |
-| `wiki/index.md` | Yes | Auto-generated index |
-| `wiki/dashboard.md` | Yes | Dataview queries — runs on whichever Obsidian instance you connect (laptop primary) |
-| `briefs/` | **No** | Distribution staging; uses existing manual scp to `/opt/cemini/briefs/` on production server. Different distribution channel, different consumer (production brain reads briefs as one-off context; librarian server doesn't need briefs) |
-| `research for cemini/` | **No** | Raw sources — immutable per librarian doctrine. Stay on laptop |
-| `market dataset/` | **No** | Raw market data; stays on laptop until ROADMAP item E (storage compaction) is decided |
-| `.local/` | **No** | Gitignored secrets and local-only config |
-| `.claude/` | **No** | Claude Code session context; stays local |
-| `ROADMAP.md` / `LESSONS.md` / `CLAUDE.md` | Optional | Useful as reference on server but not load-bearing for MCP queries |
+| Path | Canonical | Synced? | Notes |
+|---|---|---|---|
+| `wiki/` (laptop) → `cemini-librarian:/opt/cemini-wiki/wiki/` | Laptop | **Yes** | Canonical curated wiki — load-bearing for MCP serving |
+| `wiki/log.md` | Laptop | Yes | Append-only log; rsync handles append cleanly |
+| `wiki/index.md` | Laptop | Yes | Hand-maintained content-oriented catalog |
+| `wiki/dashboard.md` | Laptop | Yes | Dataview queries — runs on Obsidian (laptop primary) |
+| `briefs/` | Laptop (transient) | **No (separate channel)** | Distribution staging; uses scp to `/opt/cemini/briefs/` on production server. Production brain reads briefs as one-off context; librarian doesn't need them |
+| `cemini-librarian:/opt/cemini-bulk/research/` | **Librarian (revised)** | One-way scp on ingest | 283 PDFs/docx (642 MB). Raw layer — immutable. `[MIGRATED 2026-04-28]` from laptop's `research for cemini/`. Backed up via Hetzner daily snapshots |
+| `cemini-librarian:/opt/cemini-bulk/market-dataset/` | **Librarian (revised)** | One-way scp on update | 17.6k files (1.6 GB). Static historical data. `[MIGRATED 2026-04-28]` |
+| `research to be indexed/` (laptop) | Laptop (transient) | **No** | Drop zone for new raw sources. Files move to librarian post-ingest, deleted from laptop |
+| `.local/` | Laptop | **No** | Gitignored secrets + server connection details |
+| `.claude/` | Laptop | **No** | Claude Code session context |
+| `ROADMAP.md` / `LESSONS.md` / `CLAUDE.md` | Laptop | Optional | Reference-only on librarian; not load-bearing for MCP |
 
-**Eventual consistency**: max 1hr stale on hourly cron, plus the duration of the incremental compile (typically seconds-to-minutes for a single-page change per llm-wiki-compiler hash-incremental design).
+**Eventual consistency**: wiki sync max 1hr stale on hourly cron; raw-layer sync at the moment of ingest (not periodic — every new source flows scp-once-then-stays). Citation auditability is preserved because raw files exist persistently on a backed-up server, not because they exist on the laptop.
+
+**Why raw layer moved to librarian (2026-04-28 revision)**: laptop disk pressure (90% capacity) made the original "laptop-only raw" stance untenable. Librarian has 65 GB free vs laptop's 21 GB. Audit-grade backup is *stronger* on the librarian (Hetzner daily snapshots + manual weekly retention) than on the laptop (Time Machine, easy to forget). Side-benefit: raw sources are now reachable from the brain via the same SSH/MCP channels, opening future "cite back to original PDF" capabilities.
 
 ### What unblocks
 
@@ -252,13 +262,20 @@ Specific items on `ROADMAP.md` that the librarian server unblocks:
 - **Open question: Hetzner host upgrade** — partially addressed (this is a separate dedicated box, not an in-place upgrade of production)
 - **`entities/infrastructure/localai.md` / `ollama.md` / `deepseek-r1-14b.md` retraction lineage** — librarian server has the room to evaluate local-runtime paths without touching production. Embeddings-only Ollama (`nomic-embed-text`) becomes the **first concrete deployment of any Ollama-family runtime in the Cemini stack history**, ending the multi-month retracted-state on `ollama.md`
 
-### What stays on the laptop
+### What stays on the laptop `[REVISED 2026-04-28]`
 
 - **Canonical wiki editing surface** — Obsidian + Dataview + git workflow stays exactly as today. The laptop is where K-passes happen, where this Claude Code session runs, where `wiki_lint.py` is human-triggered, where briefs are written
-- **Raw sources** — `research for cemini/` (PDFs / docx) and `market dataset/` (Stocks/, ETFs/, kaggle/) remain laptop-only per librarian doctrine ("immutable; the LLM reads them but never modifies them")
-- **Briefs** — `briefs/` distribution to `/opt/cemini/briefs/` on production server unchanged (existing scp workflow)
-- **Claude Code librarian sessions** — read wiki/ files directly via filesystem; no MCP needed for the laptop's own Claude Code instance to work with the wiki
-- **Git canonical history** — `.git` stays on laptop; librarian server's `/opt/librarian/wiki/` is a derived working copy, not a git repo
+- **`research to be indexed/` drop zone** — transient laptop-side staging where new raw sources land before ingest. Post-ingest, files are scp'd to librarian and deleted from laptop
+- **Briefs** — `briefs/` distribution to `cemini-prod:/opt/cemini/briefs/` on production server unchanged (existing scp workflow)
+- **Claude Code librarian sessions** — read `wiki/` files directly via filesystem; no MCP needed for the laptop's own Claude Code instance to work with the wiki. For raw-source reads, ssh/scp from librarian as needed
+- **Git canonical history** — `.git` stays on laptop; librarian server's `wiki/` is a derived working copy, not a git repo
+
+### What moved to the librarian (2026-04-28)
+
+- **Raw sources** — `research for cemini/` (formerly laptop) → `cemini-librarian:/opt/cemini-bulk/research/`. 283 PDFs/docx (642 MB).
+- **Market dataset** — `market dataset/` (formerly laptop) → `cemini-librarian:/opt/cemini-bulk/market-dataset/`. 17.6k files (1.6 GB).
+- **Workspace bulk freed**: ~2.3 GB. Laptop free space went from 21 GB → 23 GB (90% → 89% capacity).
+- **Reads from librarian**: `ssh cemini-librarian "cat /opt/cemini-bulk/research/<file>"` for inspection; `scp cemini-librarian:/opt/cemini-bulk/research/<file> /tmp/` for local Preview/Adobe sessions. No mounts required; ad-hoc fetch as needed.
 
 ### Operational requirements (24/7 SLA)
 
