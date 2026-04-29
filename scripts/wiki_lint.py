@@ -160,7 +160,7 @@ no_maturity = sorted(p for p, fm in pages.items()
 # Match [NEEDS VERIFICATION YYYY-MM-DD] with optional date. Date is required for staleness check;
 # tags without a date are flagged separately as "undated" (can't compute age).
 NEEDS_VERIFY_DATED_RE = re.compile(r"\[NEEDS VERIFICATION\s+(\d{4}-\d{2}-\d{2})\]")
-NEEDS_VERIFY_BARE_RE = re.compile(r"\[NEEDS VERIFICATION\](?!\s+\d{4})")
+NEEDS_VERIFY_BARE_RE = re.compile(r"(?<!`)\[NEEDS VERIFICATION\](?!`)(?!\s+\d{4})")
 
 stale_verifications = []  # (page, date_str, age_days, line_num, line_text)
 undated_verifications = []  # (page, line_num, line_text)

@@ -93,8 +93,8 @@ Two-tier recommendation reflecting the dual hardware envelope:
 
 ### Risks & open questions
 
-1. **Accessibility-tree truncation on long pages** [NEEDS VERIFICATION] — Gemini flagged: "Rigorous verification is required to determine if the structured accessibility snapshot algorithm dynamically truncates elements when parsing extremely long web pages (such as monolithic SEC 10-K filings), which would result in critical context loss for the LLM." Test against a known SEC 10-K before promoting from Workflow Adopt to Cemini Adopt.
-2. **Memory leak resistance under 14-day soak** [NEEDS VERIFICATION] — gating verification for production promotion.
+1. **Accessibility-tree truncation on long pages** [NEEDS VERIFICATION 2026-04-29] — Gemini flagged: "Rigorous verification is required to determine if the structured accessibility snapshot algorithm dynamically truncates elements when parsing extremely long web pages (such as monolithic SEC 10-K filings), which would result in critical context loss for the LLM." Test against a known SEC 10-K before promoting from Workflow Adopt to Cemini Adopt.
+2. **Memory leak resistance under 14-day soak** [NEEDS VERIFICATION 2026-04-29] — gating verification for production promotion.
 3. **No SBOM for transitive dependencies** — Apache-2.0 at top level verified; transitive npm dependencies must be `npm audit` + `license-checker`'d before production.
 
 ## Snippets

@@ -72,7 +72,7 @@ Local laptop install:
 ### Risks & open questions
 
 1. **Anthropic CLI architectural changes** — heuristic tuning for `claude-opus-4-7` means future Claude Code versions may not honor the harness's hook contracts. Pin Claude Code version; track upstream.
-2. **macOS file permissions binding** [NEEDS VERIFICATION] — Gemini flagged: "Precise configuration instructions for successfully binding the Go-native engine to the .claude-plugin directory on a macOS file system must be verified, as file permissions often block compiled binaries from intercepting Node.js processes." Test on the actual laptop before committing to the workflow.
+2. **macOS file permissions binding** [NEEDS VERIFICATION 2026-04-29] — Gemini flagged: "Precise configuration instructions for successfully binding the Go-native engine to the .claude-plugin directory on a macOS file system must be verified, as file permissions often block compiled binaries from intercepting Node.js processes." Test on the actual laptop before committing to the workflow.
 3. **Sole-author project** — 3 contributors (Chachamaru127, claude, github-actions[bot]), where 2 are bots. Bus factor concern. The 143-release cadence in 4.5 months suggests engaged maintenance, but verify quarterly.
 4. **No license file inspection done** — Exa confirmed MIT badge. Before committing as a hard guardrail, run `gh api repos/Chachamaru127/claude-code-harness/license` to inspect the verbatim LICENSE file content (per the brief's anti-hallucination protocol).
 

@@ -69,7 +69,7 @@ Per the Gemini evaluation's caveats and Cemini's known constraints:
 1. **Strip the React frontend** — the 13.1% TS/JS frontend is unnecessary for headless API-driven backend operations. Remove from `docker-compose.yml` to preserve the 7 GB RAM envelope. Vibe-Trading's CLI + MCP path is the entire integration surface Cemini needs.
 2. **Swap yfinance for Polygon/Alpaca** — yfinance is notoriously rate-limited and silent-failure-prone. Per the workspace's `polygon_not_authorized_doctrine` memory: yfinance is acceptable as Cemini's *EOD-fallback* but not as a primary data loader. Vibe-Trading's data loader module needs systematic swap to prioritise paid Polygon/Alpaca endpoints with yfinance retained only as last-resort fallback.
 3. **Aggressive Docker memory caps** — `deploy.resources.limits.memory` hardcoded in `docker-compose.yml` to prevent FastAPI+Pandas from crowding the 7 GB envelope already contested by Postgres, Polars, Redis, and Python.
-4. **Verify Shadow Account state persistence** [NEEDS VERIFICATION] — does the shadow-account backtest engine write state to PostgreSQL or to local Docker disk? Local-disk would violate ephemeral-container philosophy. Inspect `src/swarm/shadow_account/*` before deploy.
+4. **Verify Shadow Account state persistence** [NEEDS VERIFICATION 2026-04-29] — does the shadow-account backtest engine write state to PostgreSQL or to local Docker disk? Local-disk would violate ephemeral-container philosophy. Inspect `src/swarm/shadow_account/*` before deploy.
 5. **Disable LLM auto-loading** — ensure no local LLMs load into the container's resident memory; Cemini's brain is the DeepSeek API, not a self-hosted model.
 
 ### Integration vector

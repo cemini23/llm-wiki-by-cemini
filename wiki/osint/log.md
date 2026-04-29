@@ -8,6 +8,48 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] lint | full pass + tooling-tightening + tag dating
+
+User prompt: "run lint on everything then commit and push" before next ingest. Pass surfaced two findings:
+
+1. **23 undated `[NEEDS VERIFICATION]` tags** — actionable; lint can't track staleness without a date.
+2. **144 cited-unread source stubs** — long-tail backlog (unchanged from prior pass).
+
+### Categorization of the 23
+
+After grep + per-line read:
+- **18 real tags** = open verification claims (DeepSeek+langextract compat, playwright-mcp truncation, sentrux headless rendering, etc.) — dated `2026-04-29`.
+- **5 false positives** = the literal string `` `[NEEDS VERIFICATION]` `` *describing the tag pattern itself* inside backticks (e.g. lint docstring quotes in `concepts/wiki-tooling-evaluation.md`, the falkordb-graphrag-eval example query, the atomicmemory-llm-wiki-compiler analog mention). These should never have been flagged.
+
+### Tooling fix
+
+`scripts/wiki_lint.py` line 163:
+- old: `r"\[NEEDS VERIFICATION\](?!\s+\d{4})"`
+- new: `r"(?<!\`)\[NEEDS VERIFICATION\](?!\`)(?!\s+\d{4})"`
+
+Negative lookbehind+lookahead skip backtick-wrapped tag descriptions. The 5 false positives now silently pass.
+
+### Pages dated (18 tags, 9 files)
+
+`gemini-dr-link-eval-2026-04-28.md` (5 tags) · `vibe-trading-hkuds.md` (1) · `bare-bones-memory-southpolesteve.md` (1) · `playwright-mcp-microsoft.md` (2) · `langextract-google.md` (2) · `kepano-obsidian-skills.md` (1) · `claude-code-harness-chachamaru.md` (1) · `sentrux-ast-sensor.md` (4) · `obsidian-second-brain-eugeniughelbur.md` (1).
+
+### Final lint state
+
+| Section | Count |
+|---|---|
+| 1. Orphans | 0 |
+| 2. Bidirectional gaps | 0 |
+| 3. Dangling related: links | 0 |
+| 4. @path body mentions to missing files | 0 |
+| 5. Cited but unread source stubs | 144 (long-tail) |
+| 6. Frontmatter quality | 0 issues |
+| 7a. Stale dated [NEEDS VERIFICATION] (≥7d) | 0 |
+| 7b. Undated [NEEDS VERIFICATION] | 0 ✓ down from 23 |
+
+The 7-day staleness clock now starts ticking on the 18 tags. By 2026-05-06 lint will surface them as Exa-resolution candidates per CLAUDE.md "External research" workflow.
+
+---
+
 ## [2026-04-29] decision | LSA Phase 6 (monitoring + tuning) — closed out
 
 After K9 ship, user prompted: "did we do phase 6?" — answer was no, Phase 6 was the only LSA phase still marked "ongoing" rather than DONE. Closed it out:

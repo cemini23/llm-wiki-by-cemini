@@ -88,7 +88,7 @@ Gemini's evaluation flagged "License: NOT FOUND" and noted "Verification is requ
 ### Risks & open questions
 
 1. **Long-term scalability without compaction** — file the bare-bones cron pairing with `wiki_lint.py` truncation to bound session-logs growth.
-2. **License clarification** [NEEDS VERIFICATION] — periodic check of the gist for Unlicense/CC0/MIT tag.
+2. **License clarification** [NEEDS VERIFICATION 2026-04-29] — periodic check of the gist for Unlicense/CC0/MIT tag.
 3. **Conflict with cpr-pattern boundaries** — cpr handles in-session memory; Bare Bones handles cross-session. Both should coexist; potential adapter work is required to ensure the post-task summary fed to cpr is also written to `session-logs/` per Bare Bones' protocol.
 
 ## Snippets
