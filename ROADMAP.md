@@ -70,6 +70,19 @@ The Karpathy gist (`sources/llm-wiki.md`, K2-validated) is the schema's foundati
 | **Test suite for `scripts/index_tickers.py`** | deferred | No fixtures yet. Defer until script is touched again or a regression is observed. |
 | **Test suite for `wiki_lint.py` / `bootstrap_inbox.py` / `build_cluster_hubs.py`** | open | Three load-bearing scripts have no test coverage. After Q-tail's YAML-title-colon bug (a real production-affecting parse error) the case for fixtures is concrete. Low priority while the scripts are stable. |
 
+### Proactive search & gap-detection (3-tier design)
+
+Decision-record (2026-04-29): the wiki's pain point is that the human curator can't reliably remember what's been ingested over time, and the LLM has no proactive gap-finding loop. Three tiers were considered; one shipped, one queued, one rejected.
+
+| Tier | What it does | Status | Notes |
+|---|---|---|---|
+| **0 (pre-ingest dup check)** | `scripts/preingest_check.py` walks `research to be indexed/` BEFORE any new source page is created; matches by SHA-256 / arXiv ID / DOI / URL / filename / title (exact + Jaccard fuzzy). Verdicts: NEW / LIKELY / DUPLICATE. | **✅ DONE 2026-04-29** | Wired into CLAUDE.md ingest workflow as Step 2 (between drop and read). Solves "did I already ingest this 6 months ago?" failure mode. |
+| **1 (gap-detection lint)** | `scripts/wiki_gap_detect.py` surfaces three gap classes — Type A (cited-unread stubs ready for deep-read), Type D (stale `[NEEDS VERIFICATION YYYY-MM-DD]` tags ≥7d), Type E (thin concept narratives <100 words). Output: candidate list with proposed Exa queries. **Descriptive only — does not fetch.** | **✅ DONE 2026-04-29** | First run surfaced 43 type-A, 0 type-D, 4 type-E gaps. Most-actionable finding: `concepts/llm-agent-systems.md` has 72 inbound citations but only 91 narrative words. CLAUDE.md "Gap detection" subsection added. |
+| **2 (proactive Exa with user-gated commit)** | Weekly per-cluster Exa search for new papers/articles in `llm-agents`, `quant-finance`, `prediction-markets`, `crypto`, etc.; LLM ranks by relevance × novelty; user approves a subset; LLM ingests approved items. Cost ~$2-5/week of Exa. Drift bounded by user-gated commit. | **deferred — promote after Tier 1 has been used a few times** | Decision: try Tier 1 alone for a week or two before adding Tier 2; if Tier 1's gap-finding satisfies the "what should I ingest next?" question, Tier 2 is unnecessary. If gaps go un-filled despite Tier 1 surfacing them, green-light Tier 2 with the user-gated-commit pattern. |
+| **3 (fully autonomous outbound ingest)** | LLM decides what's relevant, fetches via Exa, writes pages without explicit per-item authorization. | **rejected (out of scope)** | Drift risk too high; cost unbounded; trust requirement steeper than current trust calibration. Do not propose this; if reconsidered, requires fresh decision record. |
+
+CLAUDE.md `### Gap detection` subsection codifies the workflow. Tier 1 is the muscle for "wiki tells me what's missing"; the user picks targets; the LLM executes via existing Exa MCP. The "score against Exa" cross-check is the existing anti-hallucination protocol from Wave 2/Wave 3 ingests, applied per-target.
+
 ### Memory storage / reading / indexing — wiki growth
 
 The wiki's read path is currently **filesystem grep + Dataview + Obsidian graph + lint indices**. Outcomes are good for human discovery, gappy for LLM-driven retrieval (no embeddings, no semantic search, no streamed-context API).

@@ -184,17 +184,18 @@ Claim confidence tags (inline):
 ### Ingest (adding a new source)
 
 1. New source dropped into `research to be indexed/` on the laptop (transient drop zone).
-2. Read the source (or relevant pages for long PDFs).
-3. Discuss key takeaways with the user before writing.
-4. Create `wiki/sources/<slug>.md` — source page with frontmatter + Raw Concept + short Narrative. Cite the eventual canonical location: `[Source: <filename>.pdf p.5]` (file ends up on librarian; citations remain valid).
-5. Identify new entities and concepts the source touches. For each:
+2. **Run `python3 scripts/preingest_check.py` to detect duplicates** before doing anything else. The script walks `wiki/sources/` and tries to match each inbox file against existing pages by arXiv ID / DOI / URL / filename / title (exact + Jaccard fuzzy). Verdicts: `DUPLICATE` (do not ingest without deciding to supersede / fold / re-download); `LIKELY` (human review); `NEW` (proceed). The script handles the "did I already ingest this 6 months ago?" failure mode the human-curator can't reliably hold in working memory. Known v1 limitation: arXiv-ID matches are extracted from anywhere on a page (incl. cross-link bullets), so the same arXiv ID may surface as multiple matches; the canonical source page is always the first/strongest match.
+3. Read the source (or relevant pages for long PDFs).
+4. Discuss key takeaways with the user before writing.
+5. Create `wiki/sources/<slug>.md` — source page with frontmatter + Raw Concept + short Narrative. Cite the eventual canonical location: `[Source: <filename>.pdf p.5]` (file ends up on librarian; citations remain valid).
+6. Identify new entities and concepts the source touches. For each:
    - If a page exists: update it, add `related:` backlink, bump `updated:`.
    - If no page exists: create a stub (frontmatter + one-line Narrative + Relations). Real content accumulates over subsequent ingests.
-6. Update `wiki/index.md` — add rows for any new pages.
-7. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed.
-8. **Move raw source to librarian**: `scp "research to be indexed/<filename>" cemini-librarian:/opt/cemini-bulk/research/` then `rm "research to be indexed/<filename>"` on laptop. Verify with `ssh cemini-librarian "ls /opt/cemini-bulk/research/<filename>"`.
-9. Run lint + commit + push (the wiki side; raw-source move is server-side and not in laptop git).
-10. A single ingest should touch 3–15 pages typically. If it touches 0 new pages, ask whether the source is worth ingesting.
+7. Update `wiki/index.md` — add rows for any new pages.
+8. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed.
+9. **Move raw source to librarian**: `scp "research to be indexed/<filename>" cemini-librarian:/opt/cemini-bulk/research/` then `rm "research to be indexed/<filename>"` on laptop. Verify with `ssh cemini-librarian "ls /opt/cemini-bulk/research/<filename>"`.
+10. Run lint + commit + push (the wiki side; raw-source move is server-side and not in laptop git).
+11. A single ingest should touch 3–15 pages typically. If it touches 0 new pages, ask whether the source is worth ingesting.
 
 ### Query (answering a question)
 
@@ -214,6 +215,20 @@ Run on request. Look for:
 - **Missing pages** — concepts mentioned inline without a `@path` because no page exists yet. Create stubs.
 - **Bidirectional gaps** — A lists B as related but B doesn't list A. Fix both sides.
 - **Unread source stubs** that keep getting cited — promote with a real read pass.
+
+The mechanical lint script `scripts/wiki_lint.py` covers orphans / bidir gaps / dangling / missing / cited-unread / frontmatter-quality / stale-NEEDS-VERIFICATION-tags. Contradictions and stale-claim-moves still need a human or LLM read pass.
+
+### Gap detection (Tier 1 of proactive search)
+
+Run `python3 scripts/wiki_gap_detect.py` on request. Surfaces three kinds of gap with concrete proposed actions:
+
+- **Type A — Cited-unread stubs ready for deep-read** (≥2 inbound + `read_status=unread-stub`). Output includes a proposed Exa query (`crawling_exa(url=…)` if a URL is in the stub's Raw Concept; otherwise `web_search_exa(query=…)`).
+- **Type D — Stale `[NEEDS VERIFICATION YYYY-MM-DD]` tags** (≥7 days old). Output includes the surrounding claim sentence, ready for Exa-resolution per "External research" workflow.
+- **Type E — Thin concept pages** (`## Narrative` <100 words). Output lists inbound source pages that should be deep-read to flesh out the narrative.
+
+Tier 1 is **descriptive only** — it does NOT fetch via Exa, does NOT modify any page. It produces a candidate list. The user picks which items to act on; the LLM (next session) executes via the existing Exa MCP. The "ensure accuracy via Exa" cross-check is part of the existing anti-hallucination protocol — when acting on a Type A or Type D candidate, follow the `crawling_exa` + side-by-side text-comparison pattern documented in the Wave 2/Wave 3 ingests.
+
+**Tier 2** (proactive Exa with user-gated commit) is roadmapped — see ROADMAP.md "Eventually" section. Not built. **Tier 3** (fully autonomous outbound ingest) is explicitly out of scope on drift / cost / trust grounds; do not propose it.
 
 ## External research — Exa MCP
 

@@ -8,6 +8,70 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] decision + tooling | Proactive search architecture (Tier 0 + Tier 1 shipped; Tier 2 deferred; Tier 3 rejected)
+
+User raised three asks late in the session: (a) "wire the script to run on everything in research to be indexed before indexing"; (b) duplicate detection that survives months/years of corpus drift; (c) "auto ingesting portion … seek out information you feel is relevant then score it against Exa". This entry captures the design decision + what shipped tonight.
+
+### Three-tier framing
+
+| Tier | What | Status |
+|---|---|---|
+| 0 — pre-ingest dup check | runs over `research to be indexed/` before any source page is created | **shipped: `scripts/preingest_check.py`** |
+| 1 — gap-detection lint | descriptive surface of 3 gap classes; produces candidate list | **shipped: `scripts/wiki_gap_detect.py`** |
+| 2 — proactive Exa with user-gated commit | weekly per-cluster Exa search; user approves; LLM ingests | **deferred — try Tier 1 first** |
+| 3 — fully autonomous outbound ingest | no per-item authorization | **rejected (drift / cost / trust)** |
+
+### Tier 0 — `scripts/preingest_check.py` (~270 lines Python)
+
+Walks `wiki/sources/*.md` and indexes:
+- arXiv IDs (regex over body text)
+- DOIs (regex)
+- URLs (normalized: lowercase scheme/host, strip trailing slash, strip `.git`)
+- Filenames in `Location:` Raw Concept fields
+- Titles (frontmatter `title:` field, both exact-normalized and tokenized for Jaccard match)
+
+For each file in `research to be indexed/`:
+- Computes SHA-256
+- Extracts title (PDF metadata via pypdf; docx via python-docx core_properties; md via frontmatter or first heading)
+- Extracts arXiv IDs / DOIs / URLs from first 15 KB of content
+- Matches against the index, reports verdict: NEW / LIKELY / DUPLICATE
+
+Smoke-tested by re-fetching the AHE PDF (already ingested as `sources/agentic-harness-engineering.md`) into the inbox: correctly flagged ⛔ DUPLICATE via arXiv ID 2604.25850 + URL `github.com/china-qijizhifeng/agentic-harness-engineering`.
+
+Known v1 limitation: arXiv-ID matching catches the ID anywhere on a wiki page, including cross-link bullets. So an ingested paper with arXiv ID X may appear as a "match" for any other page that mentions X in a Relations or Narrative bullet. The canonical source page is always the strongest/first match; secondary matches are obvious to a human reader as cross-link mentions.
+
+Wired into CLAUDE.md as the new ingest workflow Step 2.
+
+### Tier 1 — `scripts/wiki_gap_detect.py` (~210 lines Python)
+
+Surfaces three gap classes with proposed Exa-tool actions per item:
+
+**Type A — Cited-unread stubs ready for deep-read** (`read_status=unread-stub` + ≥2 inbound). For each, proposes either `crawling_exa(url=…)` (if a URL is in the Raw Concept) or `web_search_exa(query=<title>, numResults=3)`. First run: **43 candidates**, top by inbound count: `gemini-dr-link-eval-2026-04-28.md` (17 inbound), `omc-talent-container-paper.md` (11 inbound), `vibe-trading-hkuds.md` (10 inbound).
+
+**Type D — Stale `[NEEDS VERIFICATION YYYY-MM-DD]` tags ≥7 days**. Extracts the surrounding claim sentence; proposes `web_search_exa` then `crawling_exa` for primary-source verification. First run: **0 candidates** (correct — the 18 tags I dated this morning all hit the 7-day mark on 2026-05-06).
+
+**Type E — Thin concept pages** (`## Narrative` <100 words). Lists inbound source pages as deep-read targets to flesh out the narrative. First run: **4 candidates**: `concepts/goldstein-scale.md` (65w), `concepts/cameo-codes.md` (68w), `concepts/carry-trade.md` (74w), `concepts/llm-agent-systems.md` (91w with **72 inbound citations** — biggest mismatch in the wiki).
+
+Tier 1 is descriptive only. The user picks targets; the LLM (next session) runs the proposed Exa query / deep-read.
+
+### CLAUDE.md updates
+
+- Ingest workflow Step 2 added (preingest_check)
+- Step numbers 2-10 renumbered to 3-11
+- New `### Gap detection` subsection added under Operations, documents the script + tier framing
+
+### ROADMAP.md updates
+
+- New "Proactive search & gap-detection (3-tier design)" subsection under Eventually, with table tracking all 4 tiers (0, 1, 2, 3) and their statuses + transition criteria
+
+### Open follow-ups
+
+1. **Use Tier 1 for a week or two** before deciding on Tier 2. If gap-finding alone closes the "what should I ingest next?" question, Tier 2 may be unnecessary. If gaps surface but go un-filled, green-light Tier 2.
+2. **Iterate preingest_check arXiv-ID precision**: restrict the regex to Raw Concept block only, OR rank matches by where-in-page they appear. Cosmetic; current output is human-readable and correctly identifies the canonical match first. Defer until annoyance materializes.
+3. **Add `sha256:` field to source page frontmatter at ingest time** so dup-check can match by file hash directly (catches "renamed file, same content"). Backfill not necessary; let it accumulate forward.
+
+---
+
 ## [2026-04-29] ingest | Agentic Harness Engineering (arXiv 2604.25850, Lin et al., Fudan + PKU + Shanghai Qiji Zhifeng)
 
 User dropped `Agentic Harness Engineering- Observability-Driven Automatic Evolution of Coding-Agent Harnesses.pdf` (1.2 MB, 40 pages, posted to arXiv 28 Apr 2026 — yesterday). User noted "it's hard for me to remember what has been given to the wiki already vs what is new" and asked for duplicate-check before ingest.
