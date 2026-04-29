@@ -19,6 +19,7 @@ related:
   - sources/4-14-pvg4.md
   - sources/4-14-pvg5.md
   - sources/agent3.md
+  - sources/agentic-harness-engineering.md
   - sources/agents-7.md
   - sources/agents.md
   - sources/agents4.md

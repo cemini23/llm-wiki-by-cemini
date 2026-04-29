@@ -25,9 +25,10 @@ related:
   - sources/omc-talent-container-paper.md
   - sources/langextract-google.md
   - sources/vibe-trading-hkuds.md
+  - sources/agentic-harness-engineering.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-04-28
+updated: 2026-04-29
 ---
 
 ## Relations
@@ -48,6 +49,7 @@ updated: 2026-04-28
 - @concepts/wiki-tooling-evaluation.md — 2026-04-28 — wiki-tooling adoption candidates (recommended: `llm-wiki-compiler`) all support DeepSeek-API access via `OPENAI_BASE_URL` swap pattern; same architectural slot this entity page documents. Adopting llm-wiki-compiler means the workspace librarian uses the same DeepSeek API the deployed Cemini stack already targets — single API key, single rate-limit envelope across both layers
 - @sources/atomicmemory-llm-wiki-compiler.md — 2026-04-28 — primary wiki-tooling adoption candidate; multi-provider config supports DeepSeek API directly via `LLMWIKI_PROVIDER=openai` + `OPENAI_BASE_URL=https://api.deepseek.com`. Workspace-side compile/query loop and deployed-stack analyst nodes share the same LLM brain
 - @sources/agentmemory-rohitg00-cpr-impl.md — 2026-04-28 — Apache-2.0 cpr-pattern reference implementation; the "LLM compress" phase calls a configurable LLM, swappable to DeepSeek API. When the cpr-pattern lands in Python on the Cemini stack, the Compress phase invokes this entity's hosted DeepSeek brain
+- @sources/agentic-harness-engineering.md — 2026-04-29 — arXiv 2604.25850 (Lin et al., Fudan/PKU/Shanghai Qiji Zhifeng, 28 Apr 2026) tests AHE's auto-evolved harness across 5 cross-model bases including **deepseek-v4-flash**: largest measured cross-family gain at **+10.1 pp pass@1** (51.7% → 61.8% on Terminal-Bench 2). Empirical evidence that harness-level optimization generalizes to DeepSeek-family models; reduces Cemini's brain-vendor lock-in risk. The AHE pattern (7-component decoupling + falsifiable manifest) survives a DeepSeek substitution without re-evolution
 
 ## Raw Concept
 

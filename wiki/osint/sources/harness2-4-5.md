@@ -5,15 +5,19 @@ tags: [pdf, infrastructure, llm-agents, harness-metaphor, conceptual-analysis, h
 clusters: [llm-agents, infrastructure]
 related:
   - concepts/llm-agent-systems.md
+  - sources/harness-4-5.md
+  - sources/agentic-harness-engineering.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-29
 ---
 
 ## Relations
 
 - @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @sources/harness-4-5.md — companion sibling paper (Kim): conceptual/framework proposal for "harness engineering" as a named discipline; this paper critiques the metaphor underlying that discipline's name. Both bootstrapped together in the corpus inventory; bidirectional `related:` added 2026-04-29
+- @sources/agentic-harness-engineering.md — empirical formalization (Lin et al., Fudan/PKU/Shanghai Qiji Zhifeng, arXiv 2604.25850, 28 Apr 2026) of exactly the "harness" practice this paper documented metaphorically. The metaphor Maynard observed converging in early 2026 has now become a falsifiable optimization framework; the engineering content claim Maynard's preview points to is what AHE delivers. Useful pairing: read this for the metaphor critique, then AHE for what the discipline now formally is
 
 ## Raw Concept
 

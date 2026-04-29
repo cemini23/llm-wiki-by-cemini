@@ -5,15 +5,19 @@ tags: [pdf, infrastructure, llm-agents, harness-engineering, governance, ai-soft
 clusters: [llm-agents, infrastructure]
 related:
   - concepts/llm-agent-systems.md
+  - sources/harness2-4-5.md
+  - sources/agentic-harness-engineering.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-29
 ---
 
 ## Relations
 
 - @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @sources/harness2-4-5.md — companion sibling paper (Maynard, ASU): STS critique of the "harness" metaphor that this preprint adopts as a discipline name; the two were ingested together in the corpus bootstrap (the narrative of both already cross-referenced each other; bidirectional `related:` added 2026-04-29)
+- @sources/agentic-harness-engineering.md — **empirical methodology prong** (Lin et al., Fudan/PKU/Shanghai Qiji Zhifeng, arXiv 2604.25850, 28 Apr 2026): this preprint proposed harness engineering as a named discipline; AHE provides the formal closed-loop optimization machinery — falsifiable manifest, three-pillar observability, +10.1pp pass@1 gain on deepseek-v4-flash. The discipline now has both a position-paper (this) and a method-paper (AHE)
 
 ## Raw Concept
 

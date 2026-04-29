@@ -8,6 +8,60 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] ingest | Agentic Harness Engineering (arXiv 2604.25850, Lin et al., Fudan + PKU + Shanghai Qiji Zhifeng)
+
+User dropped `Agentic Harness Engineering- Observability-Driven Automatic Evolution of Coding-Agent Harnesses.pdf` (1.2 MB, 40 pages, posted to arXiv 28 Apr 2026 — yesterday). User noted "it's hard for me to remember what has been given to the wiki already vs what is new" and asked for duplicate-check before ingest.
+
+### Duplicate check passed
+
+The wiki already had three `harness*-4-5.md` entries:
+- `harness-4-5.md` — Jiun Kim, **conceptual position paper** proposing harness engineering as a discipline (11p preprint, Feb 2026)
+- `harness2-4-5.md` — Maynard (ASU), 12p **STS commentary** on the harness metaphor
+- `harness-3-4-5.md` — about EAP writing assessment, **unrelated**
+
+The new paper is the **empirical methodology prong** of the same family — the missing leg of the harness-engineering tripod. Distinct, not a duplicate.
+
+### What's new
+
+`wiki/sources/agentic-harness-engineering.md` (1 new source page):
+- Three observability pillars: component (NexAU 7-component substrate), experience (Agent Debugger trajectory distillation), decision (change manifest with self-declared predictions verified next round)
+- Empirical: 69.7% → 77.0% on Terminal-Bench 2 over 10 iterations; beats Codex-CLI + ACE + TF-GRPO
+- Cross-model transfer: **+10.1pp on deepseek-v4-flash** (largest cross-family gain) — directly Cemini-relevant
+- Component ablation: tools/middleware/memory carry the gain; system prompt alone regresses −2.3pp (counterintuitive but operationally important)
+- Self-attribution: knows fixes, blind to regressions (the clearest direction for future work)
+
+Cemini-relevance assessment: **Watch-and-validate**, not Adopt. The pattern is high-signal but: (a) generalization to financial-analysis tasks (Cemini's actual workload) is unmeasured, (b) AHE evolution-loop compute cost likely outside single-VPS budget, (c) github.com/china-qijizhifeng/agentic-harness-engineering license unverified [NEEDS VERIFICATION 2026-04-29].
+
+### Bidirectional `related:` updates (6 pages)
+
+- `harness-4-5.md` — added AHE + harness2-4-5 (Kim ↔ Maynard ↔ Lin et al. now form a triangle; the Kim ↔ Maynard sibling link was previously narrative-only, now formalized in frontmatter)
+- `harness2-4-5.md` — same triangle close
+- `claude-code-harness-chachamaru.md` — chachamaru = deployment of the same family; AHE = optimization framework over substrates of which chachamaru is one instance
+- `sentrux-ast-sensor.md` — sentrux's `harnessengineering` topic tag + AST analysis is one technique for AHE Pillar 1 (component observability)
+- `concepts/llm-agent-systems.md` — cluster hub
+- `entities/infrastructure/deepseek-api.md` — empirical evidence (+10.1pp gain) that harness-level optimization generalizes to DeepSeek family — reduces Cemini's brain-vendor lock-in risk
+
+### Index + log
+
+- `wiki/index.md` — total bumped 248 → 249 (167 PDF + 80 docx + 2 md); llm-agents cluster bumped 85 → 86; new row inserted at top of llm-agents recent-ingests area (third "today" item after agent-browser-vercel-labs)
+- `wiki/log.md` — this entry
+
+### Lint state pre/post
+
+Pre-ingest (after lint commit `7ee8e57`): zero orphans/gaps/dangling/missing/undated. Post-ingest: must re-verify (TBD this commit).
+
+### Raw source moved
+
+PDF scp'd from laptop `research to be indexed/` to `cemini-librarian:/opt/cemini-bulk/research/` (canonical location per CLAUDE.md three-layer architecture). Laptop copy removed.
+
+### Open follow-ups (from this ingest)
+
+1. **License check** [NEEDS VERIFICATION 2026-04-29] — clone `github.com/china-qijizhifeng/agentic-harness-engineering`, read LICENSE, classify per `@concepts/ip-sale-readiness.md` poison-pill families A & B. ~10 min.
+2. **Concurrent work survey** — paper cites Lee et al. 2026 "meta-harness" (arXiv 2603.28052) as concurrent end-to-end harness optimization. Worth checking if that paper's compute cost is more amenable to Cemini's scale. ~1 hour Exa.
+3. **Read appendices A-D** — implementation detail + per-round regression-blindness breakdown. ~1 hour. Defer until/unless Cemini's harness-evolution adoption gates open.
+
+---
+
 ## [2026-04-29] lint | full pass + tooling-tightening + tag dating
 
 User prompt: "run lint on everything then commit and push" before next ingest. Pass surfaced two findings:

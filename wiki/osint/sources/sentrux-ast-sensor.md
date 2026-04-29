@@ -9,9 +9,10 @@ related:
   - concepts/ip-sale-readiness.md
   - entities/frameworks/langgraph.md
   - entities/frameworks/fastmcp.md
+  - sources/agentic-harness-engineering.md
 maturity: validated
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 clusters: [llm-agents, dev-tooling]
 ---
 
@@ -22,6 +23,7 @@ clusters: [llm-agents, dev-tooling]
 - @concepts/ip-sale-readiness.md — MIT license clears IP-sale checks (Exa-verified 2026-04-28: 808 ★)
 - @entities/frameworks/langgraph.md — sentrux's hard architectural boundary governor protects LangGraph state-machine code from "god file" generation during Claude Code refactoring sessions
 - @entities/frameworks/fastmcp.md — sentrux ships an MCP server mode; could attach to Cemini's FastMCP layer (lower priority than core Workflow use case)
+- @sources/agentic-harness-engineering.md — sentrux's `harnessengineering` topic tag and AST-based architectural analysis represent one concrete technique for **AHE Pillar 1 (component observability)**. Where AHE makes the harness file-decoupled and git-versioned for diff-level rollback, sentrux validates that the file-decomposed code preserves modularity/acyclicity/depth/equality boundaries between commits. Useful pairing for any AHE-style auto-evolution loop deployed on Cemini: AHE provides the loop, sentrux provides the structural guardrail keeping evolved harnesses architecturally coherent
 
 ## Raw Concept
 

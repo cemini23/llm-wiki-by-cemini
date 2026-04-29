@@ -7,9 +7,10 @@ related:
   - sources/gemini-dr-link-eval-2026-04-28.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/ip-sale-readiness.md
+  - sources/agentic-harness-engineering.md
 maturity: validated
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-29
 clusters: [llm-agents, dev-tooling]
 ---
 
@@ -18,6 +19,7 @@ clusters: [llm-agents, dev-tooling]
 - @sources/gemini-dr-link-eval-2026-04-28.md — parent canonical Gemini DR source; one of 7 Adopt-for-Workflow recommendations
 - @concepts/wiki-tooling-evaluation.md — Wave 2 evaluation parent
 - @concepts/ip-sale-readiness.md — MIT license clears IP-sale checks (Exa-verified 2026-04-28: 594 ★)
+- @sources/agentic-harness-engineering.md — academic generalization of the same family (Lin et al., arXiv 2604.25850, 28 Apr 2026): chachamaru is a *deployed* Plan→Work→Review→Ship harness on Claude Code; AHE formalizes the substrate (7 component types, observability pillars, falsifiable manifest) that any such harness can be evolved over. The Plan/Work/Review/Ship verbs map onto AHE's middleware + skill component types; chachamaru's force-push prevention and secret-leak hooks are the kind of guardrails AHE's Evolve Agent would converge on. Useful pairing: chachamaru = deployment; AHE = optimization framework
 
 ## Raw Concept
 
