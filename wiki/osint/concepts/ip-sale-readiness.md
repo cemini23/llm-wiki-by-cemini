@@ -162,6 +162,48 @@ dependency, any model weight whose license forbids commercial
 re-distribution, and any personal data persisted without a clear
 retention schedule.
 
+### License poison-pill family `[2026-04-29 — extended]`
+
+Two distinct families now require automatic reject:
+
+**Family A — Copyleft / restrictive licenses** (legitimate-but-viral): GPL-3.0,
+AGPL-3.0, AGPL-3.0+Commercial dual, SSPL v1, ELv2 (Elastic License 2.0 — not
+OSI-recognized), PolyForm Noncommercial. Confirmed by Wave 2 + Wave 3 of
+@sources/gemini-dr-link-eval-2026-04-28.md / @sources/gemini-dr-wave3-link-eval-2026-04-28.md.
+Worked examples: `everywall/ladder` (GPL-3.0); `Fincept-Corporation/FinceptTerminal`
+(AGPL+Commercial dual); `mksglu/context-mode` (ELv2); `warpdotdev/warp` (AGPL-3.0
+— laptop-local-only allowed since the laptop isn't in M&A scope, but never on
+servers); `falkordb/falkordb` (SSPL — workspace-side experiment only, never on
+deployed stack).
+
+**Family B — Vendor-IP-redistribution-without-authorization** `[NEW 2026-04-29]`:
+projects whose LICENSE/COPYING/README explicitly admits the project lacks rights
+to redistribute the underlying code. The MIT-modifications-only layer in front
+is a paper veneer over a copyright-infringement disclosure. Worked example:
+`Gitlawb/openclaude` (Wave 3 LICENSE-file inspection 2026-04-29) — LICENSE file
+states verbatim *"This project does not have Anthropic's authorization to
+distribute their proprietary source. Users and contributors should evaluate
+their own legal position."* This is distinct from copyleft poison-pills (which
+are LEGITIMATE licenses with viral terms) — this is a project DISCLOSING ITS
+OWN COPYRIGHT-INFRINGEMENT EXPOSURE.
+
+**Detection heuristic** (workspace ingest pipeline):
+1. SPDX = NOASSERTION on GitHub → mandatory manual LICENSE inspection before
+   any adoption decision (not just "license unverified"; treat as actively
+   suspicious).
+2. Repository name contains a trademarked term from another vendor (e.g.
+   "openclaude" containing Anthropic's "Claude") → mandatory manual LICENSE
+   inspection.
+3. README/LICENSE phrases like "derivative of [proprietary product]",
+   "modifications only", "originated from [proprietary codebase]",
+   "evaluate your own legal position" → automatic family-B reject.
+
+**Acquirer due-diligence framing**: an institutional acquirer's IP
+due-diligence team will flag any project that touched a family-B repository
+as potentially complicit in the underlying copyright infringement, even if
+the project itself isn't the immediate liability bearer. Cemini's
+IP-sale-readiness posture cannot tolerate this exposure.
+
 ## Snippets
 
 *(populate as source stubs are deep-read.)*

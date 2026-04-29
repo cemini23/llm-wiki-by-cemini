@@ -388,8 +388,8 @@ Wave 3 docx (`Evaluating Code for Trading & Wiki Stacks.docx`) was first checked
 **Adopt-Cemini-Wiki-Workflow (1)** — first triple-Adopt across all three waves:
 - `[ADOPT 2026-04-29]` @sources/black-scholes-iv-explicit-schadner-2026.md — **Wave 3's headline finding**. Closed-form Black-Scholes IV explicit formula (CC BY 4.0, U. Liechtenstein, 27 Apr 2026 paper). Replaces `scipy.optimize.brentq` iterative solving with a single inverse-Gaussian quantile evaluation; claims 3.4× speedup at machine precision. Block production deploy until empirical reproduction on Cemini's Polars + Polygon data confirms the speedup claim.
 
-**Adopt-Workflow with HALT (1)**:
-- `[HALT-PENDING-LICENSE 2026-04-29]` Gitlawb/openclaude — Exa-confirmed license = `Other (NOASSERTION)`. 24,794 ★, MCP-native, replaces Anthropic Claude Code CLI with vendor-agnostic 200+ model routing. **Adoption gates**: manually inspect the LICENSE file in the repo; if MIT/Apache/BSD-clean → adopt. If custom-restrictive → keep at Reference-only.
+**Adopt-Workflow with HALT → REJECT (1)** `[RESOLVED 2026-04-29 — LICENSE-FILE INSPECTED]`:
+- `[REJECT 2026-04-29]` Gitlawb/openclaude — manual LICENSE-file inspection via Exa `crawling_exa` against the raw LICENSE URL revealed **self-disclosed unauthorized redistribution of Anthropic proprietary code**. LICENSE file states verbatim: *"The underlying derived code remains subject to Anthropic's copyright. This project does not have Anthropic's authorization to distribute their proprietary source."* The MIT-modifications-only framing is a paper veneer over a copyright-infringement disclosure. Reject for laptop, librarian, AND production. Do not extract patterns. **New license poison-pill pattern**: vendor-IP-redistribution-without-authorization — distinct from copyleft (GPL/AGPL/SSPL/etc.) which are legitimate-but-restrictive licenses; this is a project explicitly disclosing its own copyright-infringement exposure.
 
 **Steal-from (5)**:
 - `gepa-ai/gepa` (MIT, 3836 ★) — `dspy.GEPA` reflective prompt-mutation; run laptop-only against design-time prompts, hardcode results into `agents/orchestrator.py`

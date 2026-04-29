@@ -24,7 +24,7 @@ clusters: [llm-agents, librarian-tooling, decision-record, options-pricing]
 - @sources/black-scholes-iv-explicit-schadner-2026.md — dedicated source page for the Adopt-tier arxiv paper (URL 12 of this wave); paper-level deep-read warrants its own page
 - @concepts/wiki-tooling-evaluation.md — parent decision document; gains a "Wave 3 — Gemini DR findings" section on this same indexing pass
 - @concepts/librarian-server-architecture.md — Wave 3 happens AFTER Phase 2 (wiki sync), Phase 3 (compiler stack install), Phase 3.5 (Option C swap to kb-server). Storage migration also landed in this same session. Wave 3 ingestion exercises the new ingest doctrine (raw layer → librarian)
-- @concepts/ip-sale-readiness.md — Wave 3 confirms reject-family extension (warp = AGPL-3.0 confirmed; openclaude = NOASSERTION halt-flag); reinforces the IP-sale license-discipline arc
+- @concepts/ip-sale-readiness.md — Wave 3 confirms reject-family extension on multiple axes: warp = AGPL-3.0 (confirmed); openclaude = **self-disclosed unauthorized derivative of Anthropic proprietary code** (LICENSE-file-inspected 2026-04-29 — flipped from `HALT-PENDING-LICENSE` to outright `REJECT`); reinforces the IP-sale license-discipline arc with a new poison-pill pattern (vendor-IP-redistribution-without-authorization, distinct from copyleft poison-pills)
 - @concepts/scatter-gather-topology.md — `build-your-own-openclaw` Steal-from extracts multi-agent routing and scheduled-cron heartbeat patterns relevant to the LangGraph orchestrator's evolution
 - @concepts/ai-organisation-design.md — `Memoria` (Steal-from) introduces "Git for AI" branching/merging memory pattern; complementary to OMC's E²R tree search but at the memory layer rather than the strategy layer
 - @concepts/options-derivatives.md — direct relevance: arxiv 2604.24480 explicit Black-Scholes IV closed-form formula is a compute-cycle accelerator for any options-pricing pipeline using this concept
@@ -40,7 +40,7 @@ clusters: [llm-agents, librarian-tooling, decision-record, options-pricing]
 - **Read status**: deep-read (full ingest 2026-04-29)
 - **Upstream prompt**: same brief structure as Wave 2 (`briefs/2026-04-28_gemini-deep-research-link-evaluation-prompt.md`, gitignored)
 
-This source records the third wave of Gemini Deep Research output evaluating 13 candidate URLs against the same three target surfaces (Cemini production stack / Wiki+librarian server / Workflow). Wave 3 was originally checked mid-session for relevance to the Option C decision (which MCP server to serve our nested wiki); the conclusion was that **none of the 13 URLs solved the nested-wiki MCP serving problem**, validating the kb-server adoption decision. Wave 3 then proceeded as its own indexing pass, producing one Adopt-Cemini-Wiki-Workflow finding (the Black-Scholes IV explicit formula paper) and one Adopt-Workflow-pending-license-clarification (`openclaude`).
+This source records the third wave of Gemini Deep Research output evaluating 13 candidate URLs against the same three target surfaces (Cemini production stack / Wiki+librarian server / Workflow). Wave 3 was originally checked mid-session for relevance to the Option C decision (which MCP server to serve our nested wiki); the conclusion was that **none of the 13 URLs solved the nested-wiki MCP serving problem**, validating the kb-server adoption decision. Wave 3 then proceeded as its own indexing pass, producing one Adopt-Cemini-Wiki-Workflow finding (the Black-Scholes IV explicit formula paper) and one Adopt-Workflow-pending-license-clarification (`openclaude`) which was subsequently `[REJECTED 2026-04-29]` after manual LICENSE-file inspection revealed self-disclosed unauthorized redistribution of Anthropic proprietary code.
 
 ## Narrative
 
@@ -61,14 +61,14 @@ Wave 3 also serves as the first **stress test of the new ingest doctrine** (raw 
 | subramanya1997/markdownfs | **Reject** | ❌ | ⚠️ | ❌ | License unverified (auto-reject), Rust in-memory VFS | (this page only — license + RAM risk + zero-utility) |
 | Mesa filesystem | Reference-only | ❌ | ❌ | ✅ | proprietary cloud SaaS | (this page only — read blog for "agent scratchpads as branched filesystems" pattern; do not adopt SDK) |
 | warpdotdev/warp | Reference-only | ❌ | ❌ | ✅ | **AGPL-3.0 confirmed (Exa)** | (this page only — laptop-local terminal acceptable; banned from server tier per AGPL reject family) |
-| **Gitlawb/openclaude** | **Adopt-Workflow ⚠️ HALT-PENDING-LICENSE** | ❌ | ❌ | ✅ | **NOASSERTION (Exa-confirmed)** | (this page only until license clarified) |
+| **Gitlawb/openclaude** | **REJECT** `[2026-04-29 — LICENSE-FILE INSPECTED]` | ❌ | ❌ | ❌ | **Unauthorized derivative of Anthropic proprietary code (self-disclosed)** | (this page only — IP-sale poison-pill family confirmed) |
 | Mathieu2301/TradingView-API | Steal-from | ❌ | ❌ | ✅ | ISC per Gemini; Exa metadata silent (likely package.json-only) | (this page only — reverse-engineer Python websockets from JS source; TOS-violating, do not deploy) |
 | matrixorigin/Memoria | Steal-from | ❌ | ❌ | ✅ | Apache-2.0 (Exa-verified 206 ★) | (this page only — extract `branch_id` + `parent_commit` schema for PostgreSQL; MatrixOne dependency too heavy for our hardware) |
 | molab.marimo.io | UNAVAILABLE | — | — | — | — | (this page only) |
 | **arxiv 2604.24480 — Schadner IV explicit formula** | **Adopt-Cemini-Wiki-Workflow** | ✅ | ✅ | ✅ | CC BY 4.0 | `@sources/black-scholes-iv-explicit-schadner-2026.md` |
 | stefan-jansen/machine-learning-for-trading | Steal-from (with staleness flag) | ✅ | ✅ | ✅ | MIT per Gemini (Apache-2.0 in Exa metadata; needs LICENSE-file inspection); 17061 ★, **last push 2024-08-18** | (this page only — extract `04_alpha_factor_research` + `24_alpha_factor_library` modules; explicit framework-obsolescence flag — pandas 1.0 / TF 2.2 era) |
 
-**Counts**: Adopt-Cemini-Wiki-Workflow = 1 (arxiv paper); Adopt-Workflow-license-blocked = 1 (openclaude); Steal-from = 5 (gepa, build-your-own-openclaw, TradingView-API, Memoria, ml-for-trading); Reference-only = 3 (hidemyemail, Mesa, warp); Reject = 1 (markdownfs); Unavailable = 2.
+**Counts (revised 2026-04-29 post-openclaude LICENSE inspection)**: Adopt-Cemini-Wiki-Workflow = 1 (arxiv paper); Steal-from = 5 (gepa, build-your-own-openclaw, TradingView-API, Memoria, ml-for-trading); Reference-only = 3 (hidemyemail, Mesa, warp); **Reject = 2** (markdownfs license-unverified Rust VFS; openclaude unauthorized derivative); Unavailable = 2.
 
 ### Anti-hallucination spot-check (Exa `crawling_exa` 2026-04-29)
 
@@ -103,20 +103,25 @@ Closed-form solution to Black-Scholes Implied Volatility — claimed to be the f
 
 This is the wave's headline finding — see `@sources/black-scholes-iv-explicit-schadner-2026.md` for the dedicated deep-read.
 
-### Halt-pending finding — **Adopt-Workflow blocked on license**
+### **REJECT** finding — `[RESOLVED 2026-04-29 — LICENSE-FILE INSPECTED]`
 
-**Gitlawb/openclaude** (license = NOASSERTION, 24,794 ★, last push 2026-04-28)
+**Gitlawb/openclaude** — outright reject after manual LICENSE-file inspection.
 
-Community-driven fork/rewrite of Anthropic's Claude Code CLI. Routes across 200+ models (OpenAI-compatible, Ollama, Gemini); native MCP support. Eliminates Anthropic vendor lock-in for the laptop's LLM-agent workflow. Massive community traction.
+**Background**: 24,794 ★, MCP-native, 200+ model routing. Wave 3 evaluation flagged `license = NOASSERTION` per GitHub's SPDX auto-detector and queued LICENSE-file inspection as the adoption gate.
 
-**The license problem**: GitHub's auto-detector reports `Other (NOASSERTION)` — meaning the repo has no standard SPDX-identifiable LICENSE file. Gemini noted this and Exa confirms. Plus the repo retains the `openclaude` namespace (trademark contention with Anthropic). Both are solvable with manual investigation, but neither is solved as of 2026-04-29.
+**Inspection result (2026-04-29 via Exa `crawling_exa` against the raw LICENSE file URL)**: The LICENSE file is **self-disclosed unauthorized derivative work** of Anthropic's proprietary Claude Code source. Verbatim:
 
-**Action gates before adoption**:
-1. SSH to laptop, manually inspect openclaude's LICENSE/COPYING/README for explicit license text. If clean (MIT/Apache/BSD) → proceed with `[ADOPT 2026-MM-DD]`.
-2. If license is custom or restrictive → fall back to `Reference-only` and continue using stock Anthropic Claude Code.
-3. Trademark concern is independent — accept the small DMCA-takedown risk if license clears.
+> "The original Claude Code source is proprietary software: Copyright (c) Anthropic PBC. All rights reserved. Subject to Anthropic's Commercial Terms of Service. Modifications and additions by OpenClaude contributors are offered under the MIT License where legally permissible: …  **The underlying derived code remains subject to Anthropic's copyright. This project does not have Anthropic's authorization to distribute their proprietary source. Users and contributors should evaluate their own legal position.**"
 
-Until these gates resolve, openclaude stays on this canonical Wave 3 source page only (no dedicated source page).
+This is NOT a license-ambiguity problem — it's a copyright-redistribution problem. The repository explicitly admits to redistributing Anthropic's proprietary source without authorization. The MIT-licensed-modifications-only framing is a paper veneer; the underlying base is unauthorized.
+
+**Decision: REJECT**. Do not install on laptop, librarian, or production server. Do not extract patterns. The legal exposure for Cemini's IP-sale-readiness posture is unacceptable — an institutional acquirer's IP-due-diligence team would flag any project that touched openclaude as potentially complicit in copyright infringement of Anthropic's source, even if openclaude itself is the immediate liability bearer.
+
+**New license poison-pill pattern surfaced 2026-04-29**: vendor-IP-redistribution-without-authorization. Distinct from copyleft poison-pills (GPL/AGPL/SSPL/PolyForm-Noncommercial/ELv2 — all of which are LEGITIMATE licenses with viral-or-restrictive terms). This new pattern is a project disclosing its own copyright-infringement exposure in its LICENSE file. Filed as a reject-family addition to `concepts/ip-sale-readiness.md`.
+
+**Lesson**: NOASSERTION + repository-name retaining a trademarked term ("openclaude" → Anthropic's "Claude" trademark) → manual LICENSE inspection mandatory before adoption. Gemini's halt-flag was correct; the spot-check protocol surfaced the issue exactly as designed.
+
+**Continued workflow**: stock Anthropic Claude Code remains the laptop CLI. No vendor-Anthropic-decoupling on the laptop side from this wave.
 
 ### Steal-from register (5 entries)
 
