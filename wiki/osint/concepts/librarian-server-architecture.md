@@ -223,14 +223,16 @@ Run llm-wiki-compiler on the laptop with Path A (Claude Code zero-config Anthrop
 
 **Effort**: ~1 hour
 
-**Phase 6 — Monitoring + tuning**
+**Phase 6 — Monitoring + tuning** `[DONE 2026-04-29 (workspace-side); brief shipped to cemini-prod]`
 
-- Add librarian server to existing Grafana / Prometheus / Loki observability stack (Hetzner same-region target = trivial)
-- Track: MCP request latency, compile-pass duration, embeddings-call cost (if Path B with DeepSeek API later swapped in for chat)
-- Tune: compile cadence, sync frequency, MCP-tool selection
-- Snapshot policy: weekly Hetzner Cloud snapshots (~$0.012/GB/mo per Hetzner; CPX21 80 GB max snapshot footprint ~$1/mo)
+**Sub-tasks status**:
+- ✅ **6a — Librarian instrumentation**: `node_exporter` v1.8.2 systemd-managed on `cemini-librarian:10.0.0.2:9100` (private-network bound). Laptop-side `scripts/librarian_healthcheck.sh` cron at `*/5 * * * *` probing both `/api/v1/health` and `/metrics`; logs to `~/Library/Logs/cemini-librarian-health.log`. First run green (load1=0.01, mem_avail=3.2GB, disk_avail=61GB).
+- ✅ **6b — Weekly Hetzner snapshots** (infrastructure staged; gated on user adding API token): `/opt/scripts/librarian_weekly_snapshot.sh` + `librarian-weekly-snapshot.{service,timer}` systemd files on librarian. Script uses curl directly against Hetzner Cloud API (no hcloud CLI dependency); rolling 4-week retention with auto-rotation; cost ~€0.95/mo. Stage-2: user generates Hetzner Cloud API token, saves to `/etc/hetzner/api-token`, enables timer.
+- ✅ **6c — Cemini-prod observability brief**: `briefs/2026-04-29_librarian-observability-prod-integration.md` (295 lines) shipped to `cemini-prod:/opt/cemini/briefs/`. Defines Hetzner Cloud Firewall prereq (port 9100 inbound from 10.0.0.0/16), 2 Prometheus scrape jobs (system + blackbox), Promtail install on librarian forwarding kb-server.log + librarian-weekly-snapshot.log + systemd-journal to Loki on cemini-prod, 3 Grafana dashboards (librarian system health / kb-server activity / cross-server LSA migration health), 4 alerting rules (LibrarianDown / DiskNearFull / MemoryPressure / HighLoad).
 
-**Effort**: ongoing; ~1 hour initial setup
+**Effort actual**: ~3 hours workspace-side (Phases 6a + 6b infrastructure + brief). Server-stack-side execution of 6c is cemini-prod's Claude Code session task.
+
+**Closure marker**: workspace mirrors `[ADOPTED]` once cemini-prod files `briefs/<date>_phase6c-completion-report.md` confirming Grafana dashboards live + alerts tested + Promtail forwarding logs.
 
 ### Sync model `[REVISED 2026-04-28 — raw-layer migration to librarian]`
 

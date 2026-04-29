@@ -8,6 +8,53 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] decision | LSA Phase 6 (monitoring + tuning) — closed out
+
+After K9 ship, user prompted: "did we do phase 6?" — answer was no, Phase 6 was the only LSA phase still marked "ongoing" rather than DONE. Closed it out:
+
+### What shipped (workspace-side)
+
+**Phase 6a — librarian instrumentation**:
+- `node_exporter` v1.8.2 installed on cemini-librarian; systemd-managed (`node_exporter.service`); bound to `10.0.0.2:9100` (private-network only, no public exposure even before firewall rule updates)
+- Laptop-side `scripts/librarian_healthcheck.sh` (84 lines bash) doing 5-min cron probe of both kb-server `/api/v1/health` and node_exporter `/metrics`; pulls load1/mem_avail/disk_avail from node_exporter and logs to `~/Library/Logs/cemini-librarian-health.log` with ERROR exit codes for each failure mode (1=kb-server / 2=node_exporter / 3=both); cron entry `*/5 * * * *` installed on laptop crontab; first run green (load1=0.01 mem_avail=3.2GB disk_avail=61.1GB)
+
+**Phase 6b — weekly Hetzner snapshots (infrastructure staged, gated on user)**:
+- `/opt/scripts/librarian_weekly_snapshot.sh` (lives on librarian; calls Hetzner Cloud API directly via curl; no hcloud CLI dependency)
+- `/etc/systemd/system/librarian-weekly-snapshot.{service,timer}` — runs Sunday 03:30 UTC + RandomizedDelaySec=600
+- Retention: rolling 4 weeks (script auto-deletes >4-week-old snapshots matching `weekly-cemini-librarian-*` prefix). Cost ~€0.95/mo at 80 GB × 4 snapshots
+- **Gated on user adding Hetzner Cloud API token** at `/etc/hetzner/api-token` and enabling the systemd timer. Documented in script header + Phase 6c brief stage-2 section
+
+**Phase 6c — brief to cemini-prod**:
+- `briefs/2026-04-29_librarian-observability-prod-integration.md` (295 lines) shipped to cemini-prod:/opt/cemini/briefs/
+- Sections: pre-existing librarian surface table, Hetzner Cloud Firewall prerequisite (add port 9100 inbound from 10.0.0.0/16), 2 Prometheus scrape jobs (`cemini-librarian-node` + `cemini-librarian-kb-server-blackbox`), Promtail install on librarian (sketched bash) forwarding kb-server.log + librarian-weekly-snapshot.log + systemd-journal to Loki on cemini-prod 10.0.0.3:3100, 3 Grafana dashboards (librarian system health / kb-server activity / cross-server LSA migration health), 4 Prometheus alerting rules (LibrarianDown / LibrarianDiskNearFull / LibrarianMemoryPressure / LibrarianHighLoad), verification plan, stage-2 user-enable instructions for the snapshot timer
+
+### What's left for Phase 6 closure
+
+1. cemini-prod-side Claude Code session reads + executes the Phase 6c brief
+2. User adds Hetzner Cloud API token + enables snapshot timer (stage-2 of Phase 6b)
+3. After both: workspace mirrors `[ADOPTED]` on the LSA concept page Phase 6 row
+
+### LSA migration arc — full closeout summary
+
+| Phase | Status | Effort actuals |
+|---|---|---|
+| 0 | Smoke-test llm-wiki-compiler / determine serving layer | ✅ DONE 2026-04-29 (~3 hr) |
+| 1 | Provision Hetzner CPX21 in Ashburn | ✅ DONE 2026-04-28 (~30 min) |
+| 2 | Initial wiki sync | ✅ DONE 2026-04-28 (~5 min) |
+| 3 | Server-side serving stack (kb-server) | ✅ DONE 2026-04-29 (~3 hr) |
+| 3.5 | kb-server hardening | ✅ DONE 2026-04-29 (~3 hr) |
+| 4 | Wire production brain → librarian MCP | brief shipped to cemini-prod 2026-04-29 (server-stack scope from there) |
+| 5 | Sync cron | ✅ DONE 2026-04-29 (folded into Phase 3.5; ~30 min) |
+| 6 | Monitoring + tuning | ✅ DONE 2026-04-29 workspace-side; brief shipped to cemini-prod (~3 hr) |
+
+**Total workspace-side effort** to take LSA from `[DECISION]` → fully built + monitored: ~13 hours over a single session 2026-04-28 → 2026-04-29. The original LSA migration plan estimated several days for Phases 4-6 (server-stack scope in particular); the workspace-side portion is now complete.
+
+### Pattern note
+
+Phase 6 was the easiest LSA phase to skip-and-pretend-done because it had no clear "done" marker — the original phase definition said "gated on Phase 1; ongoing." User's "did we do phase 6?" surfaced this as a real concrete deliverable rather than a vague "ongoing" task. **Lesson**: phases marked "ongoing" need explicit completion criteria or they become indefinite. For the LSA migration, the explicit Phase 6 done-criteria are now: librarian instrumented + laptop-side health-check active + weekly snapshot infrastructure staged + Phase 6c brief shipped to cemini-prod. Anything more (actual Grafana dashboards built, alerts tested, snapshot timer enabled with user's API token) is server-stack-side work the workspace doesn't directly own.
+
+---
+
 ## [2026-04-29] deep-read | K9 — `4_5 links 2.docx` (12 documents; sibling to K8's `4_5 links.docx`)
 
 K-series continuation after K8 closed the K8 source. K9 evaluated the second of two same-day-authored Cemini-internal multi-topic competitive-intelligence aggregates (2026-04-05). 12 documents per the same fixed 8-section per-document template K8 introduced. Applied K8's promotion-vs-snippets-only discipline.
