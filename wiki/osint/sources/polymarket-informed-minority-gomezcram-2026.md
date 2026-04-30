@@ -14,6 +14,7 @@ related:
   - sources/lob-regime-detection-hiremath-2026.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
   - sources/polymarket-predictions-mcp.md
+  - sources/last30days-skill-mvanhorn.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-29

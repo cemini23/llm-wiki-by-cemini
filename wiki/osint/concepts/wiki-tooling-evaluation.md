@@ -37,9 +37,15 @@ related:
   - concepts/high-signal-paper-patterns.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
   - sources/gemini-dr-wave4b-osint-2026-04-29.md
+  - sources/mercurialsolo-claudectl.md
+  - sources/upstash-context7.md
+  - sources/last30days-skill-mvanhorn.md
+  - sources/tradesdontlie-tradingview-mcp.md
+  - sources/7onez-cti-expert.md
+  - sources/spaceshift-sateais-api.md
 maturity: validated
 created: 2026-04-28
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations

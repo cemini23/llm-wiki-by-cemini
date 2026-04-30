@@ -19,6 +19,12 @@ related:
   - sources/microsoft-qlib.md
   - sources/dune-analytics-mcp.md
   - sources/polymarket-predictions-mcp.md
+  - sources/mercurialsolo-claudectl.md
+  - sources/upstash-context7.md
+  - sources/last30days-skill-mvanhorn.md
+  - sources/tradesdontlie-tradingview-mcp.md
+  - sources/7onez-cti-expert.md
+  - sources/spaceshift-sateais-api.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/ip-sale-readiness.md
   - concepts/llm-agent-systems.md

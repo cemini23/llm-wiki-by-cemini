@@ -8,9 +8,10 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/ip-sale-readiness.md
   - sources/agentic-harness-engineering.md
+  - sources/mercurialsolo-claudectl.md
 maturity: validated
 created: 2026-04-28
-updated: 2026-04-29
+updated: 2026-04-30
 clusters: [llm-agents, dev-tooling]
 ---
 

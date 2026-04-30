@@ -8,6 +8,74 @@ Newest entries on top.
 
 ---
 
+## [2026-04-30] ingest | Wave 4 Phase 2 — 6 dedicated Adopt source pages
+
+Phase 2 of Wave 4 ingest (continuation of phase 1 from commit `be9bab2`). Promoted the 6 remaining Adopts to dedicated source pages, completing the Wave 4 ingest series. **Anti-hallucination spot-check via Exa on the 4 unverified URLs surfaced 1 additional material finding**:
+
+- **last30days-skill** has **24,344 stars** (the brief said "license needs verification" but the actual scale is massive — this is a major project, not a small one). Reclassification: **Dual-Adopt** (Workflow + Cemini-stack-extraction).
+
+### Source pages added (6)
+
+1. **`wiki/sources/mercurialsolo-claudectl.md`** — Rust mission-control for Claude Code; 11★ but 44 releases in 12 days; local-LLM auto-pilot; Workflow Adopt only.
+
+2. **`wiki/sources/upstash-context7.md`** — 53.7k★ documentation injection for LLMs; MIT client + proprietary Upstash backend; **Workflow only** (network failure vector during market hours); mandatory `CTX7_TELEMETRY_DISABLED=1` pre-adoption setup. Operationally pairs with `sources/llms-corrupt-documents-laban-2026.md` (mitigates the input-side API-hallucination failure mode that paper measured).
+
+3. **`wiki/sources/last30days-skill-mvanhorn.md`** — 24.3k★ multi-source research skill (Reddit/X/YouTube/HN/Polymarket/etc.); 1,012 tests; **Dual-Adopt** (Workflow + Cemini-stack-extraction of Polymarket + HN modules into existing Python ingest layer).
+
+4. **`wiki/sources/tradesdontlie-tradingview-mcp.md`** — TradingView Desktop MCP via Chrome DevTools Protocol; **first worked example of `concepts/ip-sale-readiness.md` Family C TOS-conflict pattern**; downgraded from Adopt → Defer/Steal-from. The CDP-against-Electron pattern is extractable; the TradingView data binding is not deployable.
+
+5. **`wiki/sources/7onez-cti-expert.md`** — 78★ Claude Code skill: cyber-threat-intelligence + OSINT analyst with 67+ commands; AEAD methodology + AgentFlow DAG; STIX 2.1 IOC export. **Workflow Adopt only**; Cemini-prod fail (interactive-CLI-orchestration mismatch with LangGraph headless). MIT + Ethical Use Addendum (Family-C-adjacent).
+
+6. **`wiki/sources/spaceshift-sateais-api.md`** — Japanese vendor SaaS (β released 2026-04-28); **Sentinel-1 SAR satellite data** (cloud/dark-immune); 4 detection modules; **Dual-Adopt** (Cemini-stack ingest layer + Workflow ad-hoc); free β tier 500 credits/month; post-β pricing risk.
+
+### Bidirectional updates (8 pages)
+
+- `concepts/wiki-tooling-evaluation.md` — added all 6
+- `concepts/ip-sale-readiness.md` — added tradingview-mcp (Family C worked example), 7onez/cti-expert (Family C-adjacent), context7 (vendor-dependency note)
+- `concepts/high-signal-paper-patterns.md` — added all 6 (rubric examples)
+- `entities/platforms/polymarket.md` — added last30days-skill (Polymarket data extraction)
+- `sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md` — added the 4 promoted Wave 4A pages
+- `sources/gemini-dr-wave4b-osint-2026-04-29.md` — added the 2 promoted Wave 4B pages
+- `sources/claude-code-harness-chachamaru.md` — added claudectl (sibling Claude-Code-guardrail/orchestrator project)
+- `sources/llms-corrupt-documents-laban-2026.md` — added context7 (operational pairing for API-hallucination mitigation)
+
+### Index + log
+
+- `wiki/index.md` — total bumped 261 → 267 (174 PDF + 82 docx + 11 md); llm-agents cluster 94 → 100. New rows in llm-agents recent-ingests area.
+- This log entry.
+
+### Wave 4 series — full closeout summary
+
+Wave 4 total scope: 48 URLs across 2 docx briefs → 5 dedicated source pages in Phase 1 + 6 in Phase 2 = **11 dedicated source pages** + 2 canonical brief pages.
+
+| Wave | URLs | Adopts evaluable | New source pages |
+|---|---|---|---|
+| Wave 1 (4-5-links) | 12 | ~3 | 0 (canonical only) |
+| Wave 2 (gemini-dr-link-eval) | 24 | ~6 | 6 |
+| Wave 3 (gemini-dr-wave3) | 13 | ~2 | 1 (BSIV; promoted later) |
+| **Wave 4A (Cemini stack)** | **30** | **7** | **7 + canonical** |
+| **Wave 4B (OSINT)** | **18** | **3** | **3 + canonical** |
+
+Wave 4 was the largest gemini-dr brief pair to date. Anti-hallucination protocol earned its keep with **3 material findings across 9 spot-checks**: tradingview-mcp TOS-conflict (new Family C pattern), polymarket-predictions-mcp single-day-development bus-factor, last30days-skill scale-correction (24k stars not "license needs verification").
+
+### IP-sale-readiness ledger update
+
+Family C added 2026-04-29 (tradingview-mcp). 7onez/cti-expert flagged as **Family C-adjacent** (MIT + Ethical Use Addendum). The license-poison-pill ledger now tracks 3 explicit families:
+
+- Family A — Copyleft (GPL-3.0/AGPL-3.0/SSPL/ELv2)
+- Family B — Vendor-IP-redistribution-without-authorization (openclaude)
+- **Family C — TOS-conflict via clean-license code** (tradingview-mcp; 7onez/cti-expert adjacent)
+
+### Open follow-ups from Phase 2
+
+- **`concepts/osint-event-driven-analysis.md`** roadmap candidate — defines the future Cemini extension to event-driven OSINT using cti-expert + IRONSIGHT + sightline + GeoIntel + Spaceshift cluster. ~1.5 hour write when needed.
+- **`concepts/mcp-tool-marketplace.md`** roadmap candidate — synthesizes the MCP-server adoption pattern across all 4 waves (now 8+ MCP Adopts). ~1 hour write.
+- **Spaceshift Suez Canal pilot experiment** — free-tier Ship Detection on Suez Canal entrance, 7-day window, ~5 credits. Validates signal quality before committing to integration. ~1-2 hour test.
+- **Last30days-skill Polymarket-extraction brief** — `briefs/<date>_last30days-polymarket-hn-extraction.md` for cemini-prod-side migration of the Polymarket + HN ingestor modules.
+- **License verifications** [NEEDS VERIFICATION 2026-04-30] for the Steal-from items (mcp-etherscan-server, mcp-server-ccxt, polymarket-trade-engine, ai-hedge-fund) — deferred from Phase 1.
+
+---
+
 ## [2026-04-29] ingest | Wave 4 Gemini DR brief pair (48 URLs total — 2 canonical + 3 promoted Adopts)
 
 User dropped both Wave 4 docx files alongside the 4 standalone papers earlier in the session. Wave 4 = 2 sister briefs from the same date with a deliberate two-domain split:

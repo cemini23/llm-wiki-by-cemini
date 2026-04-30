@@ -12,6 +12,8 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/ip-sale-readiness.md
   - concepts/high-signal-paper-patterns.md
+  - sources/7onez-cti-expert.md
+  - sources/spaceshift-sateais-api.md
 maturity: validated
 read_status: read
 created: 2026-04-29

@@ -71,6 +71,12 @@ related:
   - sources/microsoft-qlib.md
   - sources/dune-analytics-mcp.md
   - sources/polymarket-predictions-mcp.md
+  - sources/tradesdontlie-tradingview-mcp.md
+  - sources/7onez-cti-expert.md
+  - sources/upstash-context7.md
+  - sources/last30days-skill-mvanhorn.md
+  - sources/mercurialsolo-claudectl.md
+  - sources/spaceshift-sateais-api.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

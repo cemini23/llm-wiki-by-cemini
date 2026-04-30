@@ -18,6 +18,7 @@ related:
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - sources/polymarket-predictions-mcp.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/last30days-skill-mvanhorn.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-29

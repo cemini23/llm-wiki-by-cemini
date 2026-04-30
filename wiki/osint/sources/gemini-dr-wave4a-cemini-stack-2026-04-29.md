@@ -21,6 +21,10 @@ related:
   - sources/polymarket-predictions-mcp.md
   - sources/vibe-trading-hkuds.md
   - sources/atomicmemory-llm-wiki-compiler.md
+  - sources/mercurialsolo-claudectl.md
+  - sources/upstash-context7.md
+  - sources/last30days-skill-mvanhorn.md
+  - sources/tradesdontlie-tradingview-mcp.md
 maturity: validated
 read_status: read
 created: 2026-04-29

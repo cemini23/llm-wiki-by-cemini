@@ -11,10 +11,11 @@ related:
   - entities/platforms/kalshi.md
   - concepts/ip-sale-readiness.md
   - concepts/high-signal-paper-patterns.md
+  - sources/last30days-skill-mvanhorn.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations
