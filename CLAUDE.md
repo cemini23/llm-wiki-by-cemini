@@ -269,6 +269,38 @@ Material ready to leave the wiki goes through `briefs/` first:
 - Flag single-source claims explicitly.
 - Don't let insights disappear into chat — file them.
 
+## Session-start ritual
+
+On every new session, **before any other work**, run these checks. They are designed to be cheap (under a minute) and to catch deferred work the user wouldn't otherwise notice.
+
+### 1. Tier-2 sweep cadence (Workflow A)
+
+Run:
+```bash
+ls -1t wiki/sweeps/*.md 2>/dev/null | head -1
+```
+
+If the most recent sweep file is **>7 days old**, OR if `wiki/sweeps/` is empty, prompt the user:
+
+> "It's been N days since the last Tier-2 arXiv sweep. Want me to run one now?"
+
+If the user says yes, fire the 5 cluster queries from `@concepts/high-signal-paper-patterns.md` via the Exa MCP, write the report to `wiki/sweeps/YYYY-MM-DD.md`, and present scored candidates per the rubric. **Do not silently auto-run** — Tier 2 is user-gated-commit.
+
+If the user declines or defers, accept it and move on; don't push.
+
+### 2. Inbox check
+
+Run:
+```bash
+ls -1 "research to be indexed/" 2>/dev/null | grep -v '^\.'
+```
+
+If anything is in the inbox that the user hasn't explicitly asked you to address, mention it briefly: "Btw, you have N items in `research to be indexed/`. Want me to triage them?" Then continue with whatever the user actually wants.
+
+### 3. (Future ritual hooks land here.)
+
+Add new ritual checks above this line as the schema evolves. Keep each check under 60 seconds; rituals that grow into multi-minute operations should become opt-in commands instead.
+
 ## Active research threads
 
 - **CeminiSuite per-ticker research** — active. Canonical format is the **Gemini Deep Research template** (six sections: Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context). Watchlist (30 tickers — 2026-04-24 even +5 / −5 rebalance against the server baseline: added ASTS, GLW, INTC, PL, SOFI; removed MARA, JPM, BAC, GS, UBER with Financials category sunset, new Fintech category) at `wiki/entities/ticker-watchlist.md`. Indexed reports at `wiki/entities/tickers/<symbol>.md`. **Progress: 27 / 30** (AAPL, ADA, AMD, AMZN, ASTS, AVAX, AVGO, BTC, COIN, DIS, DOGE, ETH, GLW, GOOGL, INTC, LINK, META, MSFT, MSTR, NFLX, NVDA, PL, PLTR, SMCI, SOFI, SOL, TSLA — pending: SPY, QQQ, IWM). Ingest workflow: user drops `<SYMBOL> <date>.docx` into `research to be indexed/` → Claude runs `scripts/index_tickers.py` → `scp` source to `cemini-librarian:/opt/cemini-bulk/research/` and removes laptop copy → flips the status row in the watchlist table. **Divergence-from-server rule**: wiki-tracked additions/removals lead the server's `tickers.json`; annotate divergence in the watchlist's "Wiki-tracked divergence" section, apply the combined diff server-side, then re-pull config to restore parity. **Note**: `scripts/index_tickers.py` may need updating to scp instead of local-mv post-2026-04-28 raw-layer migration.

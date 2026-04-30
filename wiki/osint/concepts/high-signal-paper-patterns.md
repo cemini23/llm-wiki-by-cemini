@@ -109,6 +109,15 @@ Even a well-supported paper can be lower-signal if there's no clear deployment s
 | Author is a research lab with closed-source preview only (no published paper, no code) | **Skip for now; revisit if an open paper drops** | Unable to verify claims, unable to deploy. (Anthropic / OpenAI / DeepMind blog posts often fall here.) |
 | Vendor whitepaper / paid-content marketing piece | **Skip** | The wiki has standards. Even if the content is interesting, surfacing it from a `wiki/sources/<vendor>.md` file as if it were peer-reviewed inflates trust. If the technique is interesting, write it up as a `concepts/` page citing the vendor URL with `[TENTATIVE]`. |
 
+### Workflow A status — ACTIVE as of 2026-04-29 (Path 1: session-driven)
+
+User authorized Tier 2 promotion after the first manual Workflow A run surfaced 4 high-signal papers (`@sources/lob-regime-detection-hiremath-2026.md`, `@sources/moe-efficiency-leverage-tian-2026.md`, `@sources/moe-surpass-dense-equal-resource-li-2026.md`, `@sources/polymarket-informed-minority-gomezcram-2026.md`). The chosen automation tier:
+
+- **Path 1 — Session-driven** (active): the LLM runs the 5 queries via the bundled Exa MCP plugin during a Claude Code session. Zero setup, zero new spend. The CLAUDE.md "Session-start ritual" subsection prompts the user weekly; `CronCreate` provides a Sunday 09:07 supplemental nudge. **Reports land at `wiki/sweeps/YYYY-MM-DD.md`** (commit them as wiki content; useful as a corpus of past candidate lists).
+- **Path 2 — Bash + crontab + user Exa key** (ready, not activated): `scripts/weekly_arxiv_sweep.sh` is committed and ready. Activation requires the user to drop their own Exa API key at `~/.cemini/exa-api-key` and add the cron entry. Flip if Path 1's reliability becomes a friction.
+
+Why Path 1 over Path 2: the Exa plugin's bundled credentials cannot be extracted for use by external bash scripts (verified 2026-04-29 — no API key found in `~/.claude/settings.json`, `~/.claude/plugins/cache/.../env.example` confirms users would need their own). Path 1 reuses the plugin's bundled spend; Path 2 doubles up on Exa subscriptions.
+
 ### Cluster-specific Exa-search query templates (Workflow A)
 
 For weekly Tier-2 sweeps, these are the queries that have historically surfaced papers matching the rubric. Date-bounded to the last 14 days; category=`research paper` where possible.
