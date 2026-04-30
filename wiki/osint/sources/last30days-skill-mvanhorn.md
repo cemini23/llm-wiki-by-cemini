@@ -12,6 +12,7 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/ip-sale-readiness.md
   - concepts/high-signal-paper-patterns.md
+  - concepts/mcp-tool-marketplace.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-30

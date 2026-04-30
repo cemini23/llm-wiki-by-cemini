@@ -43,6 +43,7 @@ related:
   - sources/tradesdontlie-tradingview-mcp.md
   - sources/7onez-cti-expert.md
   - sources/spaceshift-sateais-api.md
+  - concepts/mcp-tool-marketplace.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-30

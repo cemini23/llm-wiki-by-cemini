@@ -18,6 +18,7 @@ related:
   - sources/willynikes2-knowledge-base-server.md
   - sources/agentmemory-rohitg00-cpr-impl.md
   - concepts/ai-organisation-design.md
+  - concepts/mcp-tool-marketplace.md
   - sources/playwright-mcp-microsoft.md
   - sources/sentrux-ast-sensor.md
   - sources/vibe-trading-hkuds.md

@@ -77,6 +77,7 @@ related:
   - sources/last30days-skill-mvanhorn.md
   - sources/mercurialsolo-claudectl.md
   - sources/spaceshift-sateais-api.md
+  - concepts/mcp-tool-marketplace.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28

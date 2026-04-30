@@ -28,6 +28,7 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/ip-sale-readiness.md
   - concepts/llm-agent-systems.md
+  - concepts/mcp-tool-marketplace.md
 created: 2026-04-29
 updated: 2026-04-29
 maturity: validated

@@ -10,9 +10,10 @@ related:
   - concepts/ip-sale-readiness.md
   - entities/frameworks/fastmcp.md
   - sources/agent-browser-vercel-labs.md
+  - concepts/mcp-tool-marketplace.md
 maturity: validated
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-30
 clusters: [llm-agents, ingest-tooling]
 ---
 

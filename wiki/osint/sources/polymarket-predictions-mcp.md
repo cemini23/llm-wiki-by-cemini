@@ -12,6 +12,7 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/high-signal-paper-patterns.md
   - sources/last30days-skill-mvanhorn.md
+  - concepts/mcp-tool-marketplace.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-29

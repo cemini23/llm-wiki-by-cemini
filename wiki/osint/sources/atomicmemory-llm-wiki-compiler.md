@@ -19,6 +19,7 @@ related:
   - sources/bare-bones-memory-southpolesteve.md
   - sources/gemini-dr-wave4b-osint-2026-04-29.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - concepts/mcp-tool-marketplace.md
 maturity: validated
 read_status: read
 created: 2026-04-28

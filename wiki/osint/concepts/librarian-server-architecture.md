@@ -18,6 +18,7 @@ related:
   - sources/gemini-dr-link-eval-2026-04-28.md
   - sources/playwright-mcp-microsoft.md
   - concepts/ai-organisation-design.md
+  - concepts/mcp-tool-marketplace.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
 maturity: validated
 created: 2026-04-28

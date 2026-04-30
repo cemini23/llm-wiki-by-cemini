@@ -9,10 +9,11 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/high-signal-paper-patterns.md
   - concepts/crypto-asset-taxonomy.md
+  - concepts/mcp-tool-marketplace.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations

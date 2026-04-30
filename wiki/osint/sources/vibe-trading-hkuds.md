@@ -15,6 +15,7 @@ related:
   - entities/infrastructure/deepseek-api.md
   - entities/infrastructure/yfinance.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - concepts/mcp-tool-marketplace.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28

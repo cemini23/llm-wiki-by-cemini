@@ -13,6 +13,7 @@ related:
   - entities/frameworks/fastmcp.md
   - entities/infrastructure/deepseek-api.md
   - concepts/librarian-server-architecture.md
+  - concepts/mcp-tool-marketplace.md
 maturity: validated
 read_status: read
 created: 2026-04-28

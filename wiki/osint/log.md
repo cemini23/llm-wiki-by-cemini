@@ -8,6 +8,54 @@ Newest entries on top.
 
 ---
 
+## [2026-04-30] concept | MCP Tool Marketplace synthesis — Cemini's MCP-server adoption pattern
+
+After 4 waves of Gemini DR ingests (Waves 2/3/4) the wiki had accumulated 13+ MCP-server source pages and 5+ Claude-Code-skill source pages without cross-cutting synthesis. Each new MCP-server evaluation was triggering a fresh "wait, is this like vibe-trading or like dune-analytics-mcp?" comparison loop. Today's session shipped 11 dedicated source pages alone (Wave 4 phase 1 + 2). Synthesis was overdue.
+
+### What's new
+
+`wiki/concepts/mcp-tool-marketplace.md` — meta-rubric similar in shape to `concepts/high-signal-paper-patterns.md` but for MCP servers + Claude Code skills rather than research papers.
+
+### Five cross-cutting patterns synthesized
+
+1. **License distribution skews MIT** (9 of 13 MCP servers MIT; 1 Apache-2.0; 1 NOASSERTION/Family C; 0 Family A — copyleft hasn't appeared yet but rubric should expect it)
+2. **Maturity bimodal** — big-org high-star Adopts (qlib 40k★ / context7 53k★ / playwright-mcp 31k★) OR solo-author small-star Adopts (kukapay servers 3-40★ / 7onez 78★ / claudectl 11★ but 44 releases). **No middle ground in our inventory.**
+3. **Vendor-dependency is a separate axis from license** — context7 has clean MIT client + proprietary Upstash backend (service-availability single point of failure). License axis ≠ deployment-risk axis.
+4. **Cemini-stack vs Workflow scope is the operational dichotomy** — same MCP server can be Adopt for one and Defer/Reject for the other (vibe-trading, tradingview-mcp). Headless / 24-7 / TOS-rigorous (Cemini-stack) vs interactive / on-demand / experimentation-friendly (Workflow).
+5. **Family C TOS-conflict is a recurring MCP-specific risk** — MCP servers bridging to vendor services inherit those services' TOS as deployment risk regardless of MCP code license. Worked example: tradingview-mcp.
+
+### Adoption rubric (operational artifact)
+
+- **Filter 1 (License + TOS posture)** — code license MIT/Apache/BSD AND third-party-data-TOS clear OR no third-party data
+- **Filter 2 (Surface fit)** — Cemini-stack vs Workflow vs Librarian based on headless/latency/TOS-rigor profile
+- **Filter 3 (Bus factor)** — big-org → follow upstream; mid-tier → pin commit, watch quarterly; solo-author → fork-and-maintain in-house; single-day-dev → skip OR reimplement
+- **Quality signals** (4 hits ≥ 3 = strong Adopt) — verifiable license, reproducibility hooks, Cemini-domain-aligned tool surface, FastMCP-compatible
+
+### Bidirectional updates (19 pages)
+
+The new concept page references 17 source pages + 4 concept pages + 1 entity page. All 19 received the new concept in their related: lists. Lint run confirms 0 bidirectional gaps post-edit.
+
+### Index + log
+
+- `wiki/index.md` — added row in Concepts → Librarian / knowledge-base tooling section (after high-signal-paper-patterns, before Trading strategy concepts subsection)
+- This log entry
+
+### Operational impact (Cemini-pragmatic)
+
+The rubric is **applied during every MCP-server evaluation** going forward. Specifically:
+- Workflow A Tier-2 sweep results that surface MCP servers (which they typically do) get scored against this rubric in addition to the high-signal-paper-patterns rubric
+- Future Gemini DR brief waves' MCP-server URLs get filtered through this rubric before recommending Adopt/Defer/Reject
+- The integration architecture section informs `agents/orchestrator.py` MCP-client wiring decisions on the cemini-prod side
+
+### Open follow-ups
+
+- **`wiki/entities/components/cemini-mcp-registry.md`** roadmap candidate — living document listing all currently-registered MCP servers in cemini-prod's mcp_client config + per-server schema/status/version-pin/escalation contact. Maintained alongside production deployments. ~1 hour to draft skeleton; lives on cemini-prod-side execution after that.
+- **Per-MCP-server health check extension** — extend `scripts/librarian_healthcheck.sh` to probe each registered MCP server on the same 5-min cron. ~30 min when ready.
+- **Quarterly MCP-server review ritual** — every 90 days walk the registry: license re-check / upstream-still-maintained check / deprecation candidates. CronCreate candidate.
+- **Backfill MCP-marketplace cross-link** to older MCP-related sources (kepano-obsidian-skills, bare-bones-memory, falkordb-graphrag-eval) — those don't currently reference the new concept; not strict gaps but worth a sweep.
+
+---
+
 ## [2026-04-30] ingest | Wave 4 Phase 2 — 6 dedicated Adopt source pages
 
 Phase 2 of Wave 4 ingest (continuation of phase 1 from commit `be9bab2`). Promoted the 6 remaining Adopts to dedicated source pages, completing the Wave 4 ingest series. **Anti-hallucination spot-check via Exa on the 4 unverified URLs surfaced 1 additional material finding**:
