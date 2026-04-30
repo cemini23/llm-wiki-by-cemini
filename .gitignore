@@ -16,8 +16,8 @@ briefs/
 # --- Server credentials & connection details (local-only) --------------------
 .local/
 
-# --- Claude Code per-project settings (contains allow-listed IPs) ------------
-.claude/settings.local.json
+# --- Claude Code per-project state (settings, lock files, scheduled-task state) ----
+.claude/
 
 # --- macOS / editor cruft -----------------------------------------------------
 .DS_Store
