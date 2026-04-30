@@ -12,6 +12,8 @@ related:
   - sources/moe-efficiency-leverage-tian-2026.md
   - sources/moe-surpass-dense-equal-resource-li-2026.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
+  - sources/training-free-grpo-cai-2025.md
+  - sources/llms-corrupt-documents-laban-2026.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/ip-sale-readiness.md
   - concepts/llm-agent-systems.md

@@ -8,6 +8,57 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] ingest | TF-GRPO (closes AHE citation triangle) + LLMs Corrupt Your Documents (production-safety paper)
+
+User dropped 6 inbox items late session: 4 papers + 2 Gemini DR briefs (Wave 4). Triage applied the `@concepts/high-signal-paper-patterns.md` rubric:
+
+- **Ingest now**: TF-GRPO (closes AHE citation triangle) + LLMs Corrupt Your Documents (production-safety for delegated work)
+- **Skip per Filter 3**: Epicure (food/flavor embeddings — domain mismatch)
+- **Steal-from**: Usable Agent Discovery for Decentralized AI Systems (decentralized topology distant from Cemini's centralized stack)
+- **Defer to dedicated session**: Wave 4 Gemini DR brief pair (substantial multi-URL evaluation, 2-4 hour ingest)
+
+### Papers ingested
+
+**1. Training-Free Group Relative Policy Optimization (TF-GRPO)** — arXiv 2510.08191, Cai et al (Tencent Youtu-Agent Team), Oct 9, 2025. New file: `wiki/sources/training-free-grpo-cai-2025.md`. **Closes the AHE citation triangle** — TF-GRPO is the 72.3% Terminal-Bench-2 baseline AHE compared against. Refutes "agentic RL needs parameter updates" — leaves LLM weights frozen, evolves an external experience library `E` as a token prior. **Semantic group advantage** replaces numerical advantage; LLM introspects rollouts and produces natural-language experiences via Add/Delete/Modify/Keep operations. Validated on DeepSeek-V3.1-Terminus (Cemini's predecessor brain). CC BY 4.0; code at github.com/TencentCloudADP/youtu-agent/tree/training_free_GRPO.
+
+**Cemini-direct**: this is the methodology that fits Cemini's API-only deployment constraint. Concrete deployment surface: replace static analyst-prompts in `agents/orchestrator.py` with experience-library-driven prompts; ~50-line addition.
+
+**2. LLMs Corrupt Your Documents When You Delegate** — arXiv 2604.15597, Laban + Schnabel + Neville (Microsoft Research), Apr 17, 2026. New file: `wiki/sources/llms-corrupt-documents-laban-2026.md`. **DELEGATE-52** benchmark: 310 work environments × 52 professional domains × 19 LLMs. **Refutes** "delegated work works as a paradigm" — even frontier models (Gemini 3.1 Pro / Claude 4.6 Opus / GPT-5.4) corrupt **25% of document content** over 20 interactions; all-model average is 50%. Python is the only domain (of 52) where most models reach the 98% "ready" threshold. **Round-trip relay methodology** + domain-specific parsers (LLM-as-judge captures only 25% of variance — proven inadequate). DeepSeek NOT in the 19-model panel.
+
+**Cemini-direct caution**: Cemini's analyst workload (earnings calls, regulatory documents, specialized financial reasoning) lives in the worst-performing "natural language and niche" category. **This is the production-safety paper for Cemini's current stack** — higher operational priority than AHE/IKP/TF-GRPO because it directly measures the failure mode of "delegate to DeepSeek; trust it; don't review". Implementation surface: round-trip-relay verification on critical paths; never let DeepSeek do >5 consecutive editing steps without a verification gate.
+
+### Bidirectional `related:` updates (5 pages)
+
+- `concepts/llm-agent-systems.md` — added both papers
+- `concepts/high-signal-paper-patterns.md` — added both papers (rubric examples)
+- `entities/infrastructure/deepseek-api.md` — added both (TF-GRPO methodology fit + LLMs-Corrupt caution)
+- `sources/agentic-harness-engineering.md` — added both papers; AHE↔TF-GRPO closes citation triangle; AHE+LLMs-Corrupt is the harness-evolution-vs-delegation-ceiling pairing
+- `sources/training-free-grpo-cai-2025.md` ↔ `sources/llms-corrupt-documents-laban-2026.md` — sibling cross-link (both LLM-agent-evaluation papers; both validated on DeepSeek family or via API)
+
+### Index + log
+
+- `wiki/index.md` — total bumped 254 → 256 (174 PDF); llm-agents cluster 89 → 91; new rows in llm-agents recent-ingests area.
+- `wiki/log.md` — this entry.
+
+### Skipped + deferred from this drop
+
+- **`Epicure: Multidimensional Flavor Structure in Food Ingredient Embeddings.pdf`** — Filter 3 fails (food/flavor embeddings, no Cemini-domain overlap). Methodology has cross-domain potential (LLM-curation-pipeline pattern; 6,653 → 1,032 entity consolidation) but doesn't deserve a primary source page. If the LLM-curation pattern matters later, capture as a methodology note in a future `concepts/llm-curation-pipeline.md` citing this paper. Removed from inbox 2026-04-29.
+- **`Usable Agent Discovery for Decentralized AI Systems.pdf`** — Filter 3 weak (decentralized agent infrastructure; Cemini's stack is centralized). CC BY-SA license has share-alike clauses. Verdict: Steal-from rather than full ingest. Removed from inbox 2026-04-29.
+- **`4_29 Link Evaluation Brief.docx` + `another Link Evaluation for Trading and Wiki Stacks 4_29.docx`** — Wave 4 of the Gemini DR brief series. Pattern matches Wave 2/3 (8-15 source pages each, 2-4 hour ingest sessions). Left in inbox for a dedicated Wave-4 ingest session. Note: preingest_check flagged the second docx as ⛔ DUPLICATE via URL match against `sources/atomicmemory-llm-wiki-compiler.md` — false positive (URL appears in narrative as one of many evaluation targets, not as the primary subject). Known v1 limitation of `preingest_check.py`.
+
+### PDF moves
+
+2 PDFs scp'd to `cemini-librarian:/opt/cemini-bulk/research/`:
+- `training-free-grpo-cai-2025.pdf`
+- `llms-corrupt-documents-laban-2026.pdf`
+
+### Open follow-ups
+
+- TF-GRPO: license check on the github branch + reproduce the experience-library loop on a Cemini-shaped task with `deepseek-v4-flash`; if reproduction works, brief to cemini-prod for `agents/orchestrator.py` integration
+- LLMs-Corrupt: clone DELEGATE-52 + run against `deepseek-v4-flash` (DeepSeek absent from the published 19-model panel); build 1-2 Cemini-shaped custom domains (ticker research note, regulatory document editing); wire round-trip-relay verification into the orchestrator as a deployment gate
+
+---
+
 ## [2026-04-29] ingest | Workflow A batch — 4 papers from the first Tier-2 sweep
 
 The first Tier-2 Exa sweep (Workflow A — 5 cluster queries, last 14 days, ~$0.25 Exa spend) returned 4 Tier-A candidates that the user authorized for ingest. All 4 ingested in one session. **This is the first batch of papers proactively surfaced rather than user-dropped.**

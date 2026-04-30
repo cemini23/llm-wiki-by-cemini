@@ -80,6 +80,8 @@ related:
   - concepts/high-signal-paper-patterns.md
   - sources/moe-efficiency-leverage-tian-2026.md
   - sources/moe-surpass-dense-equal-resource-li-2026.md
+  - sources/training-free-grpo-cai-2025.md
+  - sources/llms-corrupt-documents-laban-2026.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-04-28
