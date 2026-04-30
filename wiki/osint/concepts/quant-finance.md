@@ -70,6 +70,8 @@ related:
   - sources/trading-4-5.md
   - sources/trading-playbook-research.md
   - sources/pta-metric-anchoring-ssrn-4549819.md
+  - sources/lob-regime-detection-hiremath-2026.md
+  - sources/polymarket-informed-minority-gomezcram-2026.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27

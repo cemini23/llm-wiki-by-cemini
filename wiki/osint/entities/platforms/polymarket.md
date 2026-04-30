@@ -15,9 +15,10 @@ related:
   - concepts/publishers-exclusion-apa.md
   - concepts/dcm-state-preemption.md
   - entities/platforms/kalshi.md
+  - sources/polymarket-informed-minority-gomezcram-2026.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-04-29
 ---
 
 ## Relations

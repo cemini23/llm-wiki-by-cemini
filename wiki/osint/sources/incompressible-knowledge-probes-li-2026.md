@@ -9,6 +9,8 @@ related:
   - entities/infrastructure/deepseek-api.md
   - sources/agentic-harness-engineering.md
   - concepts/high-signal-paper-patterns.md
+  - sources/moe-efficiency-leverage-tian-2026.md
+  - sources/moe-surpass-dense-equal-resource-li-2026.md
 maturity: validated
 read_status: read
 created: 2026-04-29

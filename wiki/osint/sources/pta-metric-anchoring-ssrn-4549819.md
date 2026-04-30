@@ -11,6 +11,7 @@ related:
   - concepts/ip-sale-readiness.md
   - entities/infrastructure/timescaledb.md
   - concepts/high-signal-paper-patterns.md
+  - sources/lob-regime-detection-hiremath-2026.md
 maturity: validated
 read_status: skimmed
 created: 2026-04-29

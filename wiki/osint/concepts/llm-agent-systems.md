@@ -78,6 +78,8 @@ related:
   - concepts/ai-organisation-design.md
   - sources/omc-talent-container-paper.md
   - concepts/high-signal-paper-patterns.md
+  - sources/moe-efficiency-leverage-tian-2026.md
+  - sources/moe-surpass-dense-equal-resource-li-2026.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-04-28

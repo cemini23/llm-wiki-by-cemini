@@ -27,6 +27,8 @@ related:
   - sources/vibe-trading-hkuds.md
   - sources/agentic-harness-engineering.md
   - sources/incompressible-knowledge-probes-li-2026.md
+  - sources/moe-efficiency-leverage-tian-2026.md
+  - sources/moe-surpass-dense-equal-resource-li-2026.md
 maturity: validated
 created: 2026-04-24
 updated: 2026-04-29

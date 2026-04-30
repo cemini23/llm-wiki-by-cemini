@@ -7,9 +7,10 @@ related:
   - sources/3-19-kalshi-trading-strategy-research.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
+  - sources/polymarket-informed-minority-gomezcram-2026.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-29
 ---
 
 ## Relations

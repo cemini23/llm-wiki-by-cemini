@@ -59,6 +59,8 @@ related:
   - sources/sort-1-4-3.md
   - sources/sort-6-4-3.md
   - sources/trading-3-4-5.md
+  - sources/lob-regime-detection-hiremath-2026.md
+  - sources/polymarket-informed-minority-gomezcram-2026.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27

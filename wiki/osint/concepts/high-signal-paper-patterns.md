@@ -8,6 +8,10 @@ related:
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - sources/agentic-harness-engineering.md
   - sources/incompressible-knowledge-probes-li-2026.md
+  - sources/lob-regime-detection-hiremath-2026.md
+  - sources/moe-efficiency-leverage-tian-2026.md
+  - sources/moe-surpass-dense-equal-resource-li-2026.md
+  - sources/polymarket-informed-minority-gomezcram-2026.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/ip-sale-readiness.md
   - concepts/llm-agent-systems.md

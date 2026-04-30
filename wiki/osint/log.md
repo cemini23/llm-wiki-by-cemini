@@ -8,6 +8,70 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] ingest | Workflow A batch — 4 papers from the first Tier-2 sweep
+
+The first Tier-2 Exa sweep (Workflow A — 5 cluster queries, last 14 days, ~$0.25 Exa spend) returned 4 Tier-A candidates that the user authorized for ingest. All 4 ingested in one session. **This is the first batch of papers proactively surfaced rather than user-dropped.**
+
+### Sweep meta-result
+
+5 cluster-aligned queries fired (agent harness / options pricing / MoE-scaling / financial RL / prediction markets). Returned ~25 candidates; deduped against existing wiki via `scripts/preingest_check.py`-style logic; scored against `concepts/high-signal-paper-patterns.md` rubric. Final tier-A: 4 papers below.
+
+### Papers ingested
+
+1. **Early Detection of Latent Microstructure Regimes in Limit Order Books** — arXiv 2604.20949, Hiremath × 2 (VTU + KLE Society), Apr 22 2026. New file: `wiki/sources/lob-regime-detection-hiremath-2026.md`. **Refutes** "early-warning signals are inherently reactive" prior; +18.6 timesteps simulation lead-time + +38 sec real-data BTC/USDT lead-time. Concrete deployment: `services/risk/liquidity_stress_canary.py`.
+
+2. **Towards Greater Leverage: Scaling Laws for Efficient Mixture-of-Experts Language Models** — arXiv 2507.17702, Tian et al (Ant Group Ling Team), ICLR 2026 Poster. New file: `wiki/sources/moe-efficiency-leverage-tian-2026.md`. Introduces Efficiency Leverage (EL) metric. 7× efficiency demonstrated with Ling-mini-beta (0.85B active / 17.5B total vs 6.1B dense). Calibration includes implications for DeepSeek-V4-flash deployment economics.
+
+3. **Can Mixture-of-Experts Surpass Dense LLMs Under Strictly Equal Resources?** — arXiv 2506.12119, Li et al (StepFun + Fudan + Megvii), ICLR 2026 **Oral**. New file: `wiki/sources/moe-surpass-dense-equal-resource-li-2026.md`. **Refutes** the "MoE wins by param expansion" critique cleanly: yes, MoE > dense at strictly equal N/C/D with optimal AR. ~200 2B-scale models + 50 7B-scale models, 50T tokens. CC BY 4.0.
+
+4. **Prediction Market Accuracy: Crowd Wisdom or Informed Minority?** — SSRN 6617059, Gómez-Cram, Guo (LBS), Jensen (Yale SOM), Kung (LBS). Apr 20 2026 (rev Apr 25). New file: `wiki/sources/polymarket-informed-minority-gomezcram-2026.md`. **Refutes** "wisdom of crowds" framing for prediction markets. 1.72M accounts; 3.14% skilled traders drive accuracy; 44% out-of-sample skill persistence (vs 10% mutual funds). No local PDF (SSRN session required); synthesis from abstract + 3 detailed news articles (Coindesk / TradingView / Cryptonews).
+
+### Pattern note: ICLR 2026 deadline cluster
+
+2 of the 4 (MoE Efficiency Leverage + MoE-Surpass-Dense) are older preprints (Jun-Jul 2025) freshly conference-accepted at ICLR 2026 this week. The Workflow A sweep correctly caught the deadline cluster — exactly the pattern documented in the rubric's Filter 2 / cluster-specific-templates section. The conference-acceptance recency signal is the load-bearing freshness criterion here.
+
+### Bidirectional `related:` updates (12 pages)
+
+- `concepts/high-signal-paper-patterns.md` — added 4 new sources (the rubric's worked examples now updated)
+- `concepts/llm-agent-systems.md` — added 2 MoE papers
+- `concepts/market-microstructure.md` — added LOB + Polymarket
+- `concepts/quant-finance.md` — added LOB + Polymarket
+- `concepts/favorite-longshot-bias.md` — added Polymarket
+- `entities/infrastructure/deepseek-api.md` — added 2 MoE papers
+- `entities/platforms/polymarket.md` — added Polymarket source paper
+- `entities/platforms/kalshi.md` — added Polymarket source paper (sibling prediction market)
+- `sources/incompressible-knowledge-probes-li-2026.md` — added 2 MoE papers (sibling ICLR cohort)
+- `sources/black-scholes-iv-explicit-schadner-2026.md` — added LOB
+- `sources/pta-metric-anchoring-ssrn-4549819.md` — added LOB
+- `sources/lob-regime-detection-hiremath-2026.md` — added Polymarket (close out the bidirectional gap)
+
+### Index + log
+
+- `wiki/index.md` — total bumped 250 → 254 (172 PDF + 80 docx + 2 md); llm-agents cluster 87 → 89; market-microstructure 15 → 16; quant-finance 10 → 12. New rows in llm-agents (top-of-recent-ingests area), market-microstructure, and quant-finance.
+- This log entry.
+
+### PDF moves
+
+3 PDFs scp'd to `cemini-librarian:/opt/cemini-bulk/research/`:
+- `lob-regime-detection-hiremath-2026.pdf`
+- `moe-efficiency-leverage-tian-2026.pdf`
+- `moe-surpass-dense-equal-resource-li-2026.pdf`
+
+The Polymarket paper has no local PDF (SSRN download requires session); source page is synthesis from abstract + 3 detailed news articles.
+
+### Workflow A → Tier 2 promotion decision-record
+
+User confirmed during the same session: "yes automate i very much liked those results". Tier 2 of the proactive-search design promoted from "deferred" to "active build". Next steps (in this session): build `scripts/weekly_arxiv_sweep.sh`, set up Sunday cron (after librarian snapshot fires), and update ROADMAP.md / `concepts/high-signal-paper-patterns.md` to reflect Tier 2 active state.
+
+### Open follow-ups (per-paper)
+
+- LOB: clone github + verify license; reproduce on wider BTC/USDT window before Cemini deployment
+- MoE Efficiency Leverage: track Ling-2.0 series releases as a future Cemini brain candidate
+- MoE Surpass Dense: track for public model release (paper says "all models will be released publicly"); verify on a 30-day re-check
+- Polymarket: get full SSRN paper via session access for methodology deep-read; replicate sign-randomization test on public Polymarket data; eventually a brief for `agents/analyst/polymarket_informed_flow.py` integration
+
+---
+
 ## [2026-04-29] decision + concept | Workflow C — high-signal paper patterns rubric
 
 User observed that the last 4 ingests (BSIV, PTA, AHE, IKP) "have mostly been very influential" and asked how to seek out specifically papers like these. The answer was a 3-step plan agreed earlier in this session: (C) write the pattern doc, (A) run a one-shot Exa sweep using the pattern, (Tier 2 promotion) automate weekly if A surfaces useful candidates. This entry covers Workflow C.
