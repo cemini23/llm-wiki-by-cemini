@@ -6,6 +6,10 @@ keywords: [llm, agents, orchestration, tool-use, scaffolding, agentic, cemini-co
 related:
   - concepts/ai-ethics-and-governance.md
   - entities/frameworks/langgraph.md
+  - sources/alash3al-stash.md
+  - sources/caiovicentino-polymarket-mcp-server.md
+  - sources/piebald-claude-code-system-prompts.md
+  - sources/shiyu-coder-kronos.md
   - sources/3-10-live-trading-research.md
   - sources/3-17-agent-research.md
   - sources/3-19-automated-trading-strategy-discovery-pipeline-research.md
@@ -83,9 +87,12 @@ related:
   - sources/training-free-grpo-cai-2025.md
   - sources/llms-corrupt-documents-laban-2026.md
   - concepts/mcp-tool-marketplace.md
+  - sources/thinking-with-visual-primitives-deepseek-2026.md
+  - sources/platonic-representation-hypothesis-huh-2024.md
+  - sources/sherry-ternary-quantization-tencent-2026.md
 maturity: validated
 created: 2026-04-26
-updated: 2026-04-28
+updated: 2026-04-30
 ---
 
 ## Relations
@@ -172,23 +179,24 @@ LLM agent systems is the **largest cluster in the wiki by source count** (~100 s
 
 ### Sub-topic taxonomy (with the highest-signal landings cross-linked)
 
-The cluster decomposes into eight sub-topics. The right-hand column lists the **highest-signal source pages** per sub-topic — start there if you're entering the cluster cold.
+The cluster decomposes into nine sub-topics. The right-hand column lists the **highest-signal source pages** per sub-topic — start there if you're entering the cluster cold.
 
 | Sub-topic | Highest-signal sources | Coverage status |
 |---|---|---|
 | **Harness engineering** | `@sources/agentic-harness-engineering.md` (AHE; ICLR 2026 sibling), `@sources/harness-4-5.md` (Kim conceptual), `@sources/harness2-4-5.md` (Maynard STS), `@sources/claude-code-harness-chachamaru.md`, `@sources/sentrux-ast-sensor.md`, `@sources/mercurialsolo-claudectl.md` | **Mature**: 3 papers + 3 deployed harnesses. The harness-engineering tripod (position-paper / STS-commentary / empirical-method) is complete. |
-| **Brain capacity / black-box evaluation** | `@sources/incompressible-knowledge-probes-li-2026.md` (IKP), `@sources/moe-efficiency-leverage-tian-2026.md` (Tian Ant Group), `@sources/moe-surpass-dense-equal-resource-li-2026.md` (Li StepFun), `@sources/llms-corrupt-documents-laban-2026.md` (DELEGATE-52) | **Mature**: 4 papers covering the "MoE economics" story for Cemini's DeepSeek-V4-flash brain — knowledge-side (IKP), compute-side (EL), strict-equal-resource (Surpass-Dense), production-safety ceiling (LLMs-Corrupt). |
+| **Brain capacity / black-box evaluation** | `@sources/incompressible-knowledge-probes-li-2026.md` (IKP), `@sources/moe-efficiency-leverage-tian-2026.md` (Tian Ant Group), `@sources/moe-surpass-dense-equal-resource-li-2026.md` (Li StepFun), `@sources/llms-corrupt-documents-laban-2026.md` (DELEGATE-52), `@sources/sherry-ternary-quantization-tencent-2026.md` (Sherry — deployment compression) | **Mature**: 5 papers covering the "MoE economics" story for Cemini's DeepSeek-V4-flash brain — knowledge-side (IKP), training compute (EL), strict-equal-resource (Surpass-Dense), production-safety ceiling (LLMs-Corrupt), **deployment compression (Sherry — 1.25-bit ternary on commodity CPU)**. Full lifecycle covered. |
 | **Agent training paradigms** | `@sources/training-free-grpo-cai-2025.md` (TF-GRPO), `@sources/agentic-harness-engineering.md` (AHE auto-evolution loop) | **Active**: TF-GRPO is the methodology that fits Cemini's API-only constraint (no fine-tuning available); AHE's auto-evolution loop is the aspirational target. |
 | **Memory / context architectures** | `@sources/atomicmemory-llm-wiki-compiler.md`, `@sources/willynikes2-knowledge-base-server.md` (deployed as kb-server), `@sources/agentmemory-rohitg00-cpr-impl.md` (cpr-pattern), `@sources/last30days-skill-mvanhorn.md` (multi-source aggregation), `@concepts/context-compression-resume-pattern.md` | **Deployed**: kb-server is live on cemini-librarian (`@concepts/librarian-server-architecture.md`). The cpr-pattern is the architectural prescription Cemini's analyst orchestrator should adopt. |
 | **MCP tool surface** | `@concepts/mcp-tool-marketplace.md` (cross-cutting synthesis), `@sources/upstash-context7.md`, `@sources/dune-analytics-mcp.md`, `@sources/polymarket-predictions-mcp.md`, `@sources/playwright-mcp-microsoft.md`, `@sources/tradesdontlie-tradingview-mcp.md`, `@sources/vibe-trading-hkuds.md` | **Mature**: 13+ MCP-server source pages organised under a single rubric. **MCP is now the dominant LLM-tool integration substrate for Cemini's stack.** |
 | **Multi-agent coordination** | `@sources/omc-talent-container-paper.md` (OMC; Huawei Noah's Ark), `@concepts/scatter-gather-topology.md` (Cemini's deployed pattern), `@sources/sakana-conductor-rl-orchestration.md` (Sakana Fugu lineage), `@concepts/mappo.md`, `@concepts/ai-organisation-design.md` | **Active**: Cemini's analyst orchestrator IS a scatter-gather multi-agent system. OMC's Talent+Container abstraction is a candidate refactor target. |
 | **Coding agents** | `@sources/agentic-harness-engineering.md` (Terminal-Bench 2; SWE-bench-verified results), `@sources/training-free-grpo-cai-2025.md` (DeepSeek-V3.1-Terminus + AIME) — code-agent benchmarks dominate the empirical literature | **Adjacent**: Cemini doesn't deploy coding agents directly; this sub-topic informs **harness pattern** + **training paradigm** decisions but isn't a deployment surface itself. |
 | **Agent governance / safety** | `@sources/llms-corrupt-documents-laban-2026.md` (delegation-corruption ceiling), `@sources/3-29-15.md` (CoT vulnerabilities), `@sources/ai-7-4-6.md` (NOMOTIC AI governance), `@concepts/ai-ethics-and-governance.md` | **Caution-active**: Cemini's analyst-delegation pattern has a known 25%+ corruption ceiling per LLMs-Corrupt. Round-trip-relay verification is the recommended deployment-gate pattern. |
+| **Multimodal / vision agents** | `@sources/thinking-with-visual-primitives-deepseek-2026.md` (TwVP; DeepSeek-V4-Flash-based; +16.3pp Maze Navigation, +10.2pp Path Tracing over GPT-5.4) | **Emerging**: First entry in the cluster. Visual primitives (boxes/points) elevated to "minimal units of thought" interleaved into reasoning trajectory. **DeepSeek dependency hardens** — third independent paper grounded in `deepseek-v4-flash`. Topological-reasoning gap directly applicable to chart-pattern detection + satellite-imagery candidate-region tracing (Spaceshift). API-surface for this capability not yet confirmed `[NEEDS VERIFICATION 2026-04-30]`. |
 
 ### Cross-cutting patterns (across waves and sub-topics)
 
 **Pattern 1 — DeepSeek family is both substrate and validation target.**
-Cemini's brain is `deepseek-v4-flash`. Across the cluster, DeepSeek-family models appear in multiple roles: (a) as the **substrate** for Cemini's deployed analyst orchestrator; (b) as **calibration data points** in IKP (deepseek-v3 / deepseek-v4-flash / deepseek-v4-flash-think / deepseek-v4-pro-think all in IKP's calibration set); (c) as **cross-model transfer targets** in AHE (+10.1pp gain on deepseek-v4-flash); (d) as **policy-frozen base** for TF-GRPO experiential-knowledge learning. **No other vendor's models appear in this many independent empirical evaluations.** This means Cemini's brain choice is unusually well-instrumented in the academic literature.
+Cemini's brain is `deepseek-v4-flash`. Across the cluster, DeepSeek-family models appear in multiple roles: (a) as the **substrate** for Cemini's deployed analyst orchestrator; (b) as **calibration data points** in IKP (deepseek-v3 / deepseek-v4-flash / deepseek-v4-flash-think / deepseek-v4-pro-think all in IKP's calibration set); (c) as **cross-model transfer targets** in AHE (+10.1pp gain on deepseek-v4-flash); (d) as **policy-frozen base** for TF-GRPO experiential-knowledge learning; (e) as **base model for Thinking with Visual Primitives** (`deepseek-v4-flash` + DeepSeek-ViT, beats GPT-5.4 / Claude-Sonnet-4.6 / Gemini-3-Flash on 8 of 12 benchmarks while using ~10× fewer KV-cache entries). **No other vendor's models appear in this many independent empirical evaluations.** Five distinct 2026 frontier-research papers ground their methodology in DeepSeek-V4-Flash; this means Cemini's brain choice is unusually well-instrumented in the academic literature, with each paper expanding a different capability axis (knowledge, harness, training paradigm, multimodal).
 
 **Pattern 2 — Refutation premium dominates the high-signal landings.**
 Per `@concepts/high-signal-paper-patterns.md`, refutation papers carry a quality premium because the author had to do the work to refute the prior. Within this cluster:

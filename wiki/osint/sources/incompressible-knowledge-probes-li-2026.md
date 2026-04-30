@@ -11,10 +11,14 @@ related:
   - concepts/high-signal-paper-patterns.md
   - sources/moe-efficiency-leverage-tian-2026.md
   - sources/moe-surpass-dense-equal-resource-li-2026.md
+  - sources/thinking-with-visual-primitives-deepseek-2026.md
+  - sources/platonic-representation-hypothesis-huh-2024.md
+  - sources/sherry-ternary-quantization-tencent-2026.md
+  - sources/shiyu-coder-kronos.md
 maturity: validated
 read_status: read
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations

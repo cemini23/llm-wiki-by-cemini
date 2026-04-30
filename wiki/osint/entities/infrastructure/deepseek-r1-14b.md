@@ -13,9 +13,10 @@ related:
   - concepts/scatter-gather-topology.md
   - entities/data-sources/telethon.md
   - entities/infrastructure/localai.md
+  - sources/sherry-ternary-quantization-tencent-2026.md
 maturity: retracted
 created: 2026-04-23
-updated: 2026-04-28
+updated: 2026-04-30
 ---
 
 ## Relations

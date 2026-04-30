@@ -11,11 +11,12 @@ related:
   - sources/emtwiki-deployed-example.md
   - sources/wastedcode-memex.md
   - sources/willynikes2-knowledge-base-server.md
+  - sources/agriciDaniel-claude-obsidian.md
   - concepts/librarian-server-architecture.md
 maturity: validated
 read_status: validated
 created: 2026-04-23
-updated: 2026-04-28
+updated: 2026-04-30
 ---
 
 ## Relations
@@ -27,6 +28,7 @@ updated: 2026-04-28
 - @sources/emtwiki-deployed-example.md — deployed example wiki (San Juan College EMT-Basic curriculum, NM EMS Bureau aligned) demonstrating the gist's pattern at production scale in a high-stakes domain
 - @sources/wastedcode-memex.md — sibling Karpathy-pattern implementation; minimal "just files, no RAG" interpretation wrapping `claude -p` programmatic mode in Linux mount-namespace daemons
 - @sources/willynikes2-knowledge-base-server.md — sibling memory engine + 16-tool MCP server; database-first variant of the gist's pattern (SQLite + FTS5 + embeddings; Obsidian sync bidirectional)
+- @sources/agriciDaniel-claude-obsidian.md — Wave 5B Steal-from; **third member of the Karpathy-pattern stack** alongside atomicmemory's compiler and wastedcode's memex. Visual-Obsidian-vault wrapper with `/wiki` `/save` `/autoresearch` slash commands; 3,581★ MIT (Python+Shell). Differs from atomicmemory (compile/MCP, headless) and memex (filesystem-namespace, minimal) by anchoring on the Obsidian visual canvas as the human-read surface — same Karpathy thesis, third substrate
 
 ## Raw Concept
 

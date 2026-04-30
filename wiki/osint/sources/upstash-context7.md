@@ -6,11 +6,15 @@ keywords: [context7, upstash, ctx7, llm-documentation, version-specific-api, mcp
 clusters: [llm-agents, dev-tooling]
 related:
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
+  - sources/alash3al-stash.md
+  - sources/piebald-claude-code-system-prompts.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/ip-sale-readiness.md
   - concepts/high-signal-paper-patterns.md
   - sources/llms-corrupt-documents-laban-2026.md
   - concepts/mcp-tool-marketplace.md
+  - sources/caiovicentino-polymarket-mcp-server.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-30
@@ -24,6 +28,8 @@ updated: 2026-04-30
 - @concepts/ip-sale-readiness.md — MIT client clears IP-sale; **but vendor-dependency on proprietary Upstash backend creates a service-availability risk distinct from license risk**
 - @concepts/high-signal-paper-patterns.md — rubric: highest-maturity Wave 4 Adopt by every signal (stars, contributors, releases, recent activity)
 - @sources/llms-corrupt-documents-laban-2026.md — operationally-paired: LLMs corrupt documents at 25%+ rates partly because of stale-API-knowledge hallucinations. context7's documentation-injection directly mitigates this failure mode for code-domain delegation (where context7 covers the library APIs the LLM is editing). **Pairing**: context7 reduces the input-side hallucination rate; LLMs-Corrupt's round-trip-relay measures the output-side corruption that remains.
+- @sources/alash3al-stash.md — Wave 5A Adopt sibling: context7 = "what does the API surface look like *now*" (external knowledge); stash = "what did *this* user/session learn *across time*" (internal episodic memory). Together they form a complete LLM memory stack for Cemini's Wiki/Librarian server.
+- @sources/piebald-claude-code-system-prompts.md — Wave 5B Steal-from; **parallel grounding-data pair**. context7 grounds LLMs in current library API documentation (anti-hallucination via fresh docs injection); piebald grounds LLMs in Anthropic's deployed Claude Code system-prompts (anti-improvisation via observed-prompt reference). Both reduce free-form generation in favor of cite-and-anchor patterns. Adopt context7 for code-API grounding; study piebald for harness/agent-prompt design grounding
 
 ## Raw Concept
 

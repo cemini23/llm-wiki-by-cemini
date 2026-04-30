@@ -10,10 +10,13 @@ related:
   - entities/infrastructure/deepseek-api.md
   - sources/incompressible-knowledge-probes-li-2026.md
   - sources/moe-surpass-dense-equal-resource-li-2026.md
+  - sources/thinking-with-visual-primitives-deepseek-2026.md
+  - sources/sherry-ternary-quantization-tencent-2026.md
+  - sources/shiyu-coder-kronos.md
 maturity: validated
 read_status: read
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations

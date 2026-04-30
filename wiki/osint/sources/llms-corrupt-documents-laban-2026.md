@@ -11,6 +11,7 @@ related:
   - sources/agentic-harness-engineering.md
   - sources/training-free-grpo-cai-2025.md
   - sources/upstash-context7.md
+  - sources/piebald-claude-code-system-prompts.md
 maturity: validated
 read_status: read
 created: 2026-04-29
@@ -24,6 +25,7 @@ updated: 2026-04-30
 - @entities/infrastructure/deepseek-api.md — **directly Cemini-relevant**: Cemini delegates analyst tasks to DeepSeek-V4-flash; this paper's "natural language and niche" domain category (where degradation is worst) directly maps to Cemini's actual workload (earnings calls, regulatory documents, specialized financial reasoning). The paper provides empirical risk evidence for Cemini's analyst-delegation pattern.
 - @sources/agentic-harness-engineering.md — **complementary frame**: AHE's harness-evolution improves agent performance on Terminal-Bench 2 (a *coding-agent* benchmark — programmatic domain, where this paper shows LLMs perform best). LLMs-Corrupt warns that the AHE result may NOT generalize to natural-language / niche domains (earnings, music notation, accounting). The two papers together: AHE for code-agent harness optimization; LLMs-Corrupt for "what's the ceiling on delegated work in non-code domains?"
 - @sources/training-free-grpo-cai-2025.md — sibling LLM-agent-evaluation paper; both validate on DeepSeek-family or via API. TF-GRPO improves agent performance on math + web search; LLMs-Corrupt shows that even frontier models corrupt documents at 25%+ rates on broader delegated work. Useful pairing: TF-GRPO is the methodology to *improve* agents; LLMs-Corrupt is the methodology to *measure* the corruption rate.
+- @sources/piebald-claude-code-system-prompts.md — Wave 5B Steal-from; **mitigation-side reference**. LLMs-Corrupt diagnoses the document-corruption failure mode in delegation; piebald's extracted Claude Code system prompts are the deployed Anthropic mitigation surface for delegation reliability (the same Claude Code that scores best in LLMs-Corrupt's evaluations). Cemini's analyst-prompt design can study Anthropic's evolved prompts across 114 versions for delegation-reliability patterns Anthropic learned to encode at the prompt layer
 
 ## Raw Concept
 

@@ -9,9 +9,12 @@ related:
   - sources/3-9-pm-research.md
   - entities/infrastructure/timescaledb.md
   - entities/frameworks/finbert.md
+  - sources/platonic-representation-hypothesis-huh-2024.md
+  - sources/alash3al-stash.md
+  - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-04-30
 ---
 
 ## Relations
@@ -21,6 +24,8 @@ updated: 2026-04-26
 - @sources/3-9-pm-research.md
 - @entities/infrastructure/timescaledb.md
 - @entities/frameworks/finbert.md
+- @sources/platonic-representation-hypothesis-huh-2024.md — 2026-04-30 — Huh/Cheung/Wang/Isola MIT ICML 2024 — theoretical claim that representations across competent models converge to a shared statistical model of reality (P(Z)). Operational read for this entity: **embedding-space portability** across model swaps is bounded above by a linear projection in the limit. Cemini's pgvector indexes are therefore more durable across LLM-vendor changes than naive intuition suggests; re-indexing on a model-swap may be a "thin re-tune" rather than a full rebuild. Caveat: PRH's strict math assumes bijective projections; lossy/stochastic data (financial series, OSINT sentiment) attenuate the guarantee but don't void it
+- @sources/alash3al-stash.md — 2026-04-30 — Wave 5A Adopt for the Wiki/Librarian server. Stash uses pgvector for fact-recall queries inside its 8-stage consolidation pipeline. Cemini's existing pgvector competency directly transfers; same vector-recall pattern Cemini uses for semantic search applies to stash's persistent-memory queries. Operational disposition: deploy stash on a **dedicated PostgreSQL instance** (separate from Cemini's existing pgvector) to avoid upgrade-coupling risk.
 
 ## Raw Concept
 

@@ -10,10 +10,11 @@ related:
   - sources/willynikes2-knowledge-base-server.md
   - sources/llm-wiki.md
   - sources/emtwiki-deployed-example.md
+  - sources/agriciDaniel-claude-obsidian.md
 maturity: validated
 read_status: read
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-30
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-04-28
 - @sources/willynikes2-knowledge-base-server.md — sibling memory engine; opposite architectural axis (database-first, three-tier memory)
 - @sources/llm-wiki.md — Karpathy's gist; memex is the most direct "just-files" interpretation of the gist's three-layer raw/wiki/schema architecture
 - @sources/emtwiki-deployed-example.md — the EMT-Basic deployed wiki may be built with memex (same author/host pattern at endusergeek.com); demonstrates filesystem-only Karpathy at production scale
+- @sources/agriciDaniel-claude-obsidian.md — Wave 5B Steal-from; **third member of the Karpathy-pattern stack**. memex (this) is the headless minimal interpretation; atomicmemory's `llm-wiki-compiler` is the headless feature-rich interpretation; agriciDaniel's claude-obsidian is the **visual** interpretation — Obsidian-vault overlay with `/wiki` `/save` `/autoresearch` slash commands. The three stratify on substrate (filesystem-namespace / compile-pipeline / vault-overlay) but converge on Karpathy's thesis. Adoption-orthogonal: a Cemini deployment could use any one, two, or all three at different layers
 
 ## Raw Concept
 

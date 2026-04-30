@@ -29,8 +29,18 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/llm-agent-systems.md
   - concepts/mcp-tool-marketplace.md
+  - sources/thinking-with-visual-primitives-deepseek-2026.md
+  - sources/platonic-representation-hypothesis-huh-2024.md
+  - sources/sherry-ternary-quantization-tencent-2026.md
+  - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
+  - sources/alash3al-stash.md
+  - sources/shiyu-coder-kronos.md
+  - sources/caiovicentino-polymarket-mcp-server.md
+  - sources/agriciDaniel-claude-obsidian.md
+  - sources/piebald-claude-code-system-prompts.md
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 maturity: validated
 ---
 

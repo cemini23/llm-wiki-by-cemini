@@ -8,6 +8,8 @@ related:
   - sources/gemini-dr-link-eval-2026-04-28.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
   - sources/gemini-dr-wave4b-osint-2026-04-29.md
+  - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
+  - sources/shiyu-coder-kronos.md
   - sources/vibe-trading-hkuds.md
   - sources/atomicmemory-llm-wiki-compiler.md
   - concepts/wiki-tooling-evaluation.md
@@ -25,10 +27,11 @@ related:
   - sources/upstash-context7.md
   - sources/last30days-skill-mvanhorn.md
   - sources/tradesdontlie-tradingview-mcp.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
 maturity: validated
 read_status: read
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations
@@ -151,7 +154,7 @@ Two URLs evaluated in this wave already have source pages:
 
 ### Per-URL summaries — Defer (1)
 
-- **URL 27: Kronos** (`github.com/shiyu-coder/Kronos`) — Time-series foundation model. Defer pending peer-reviewed evaluation; potential future Cemini brain swap candidate alongside Sakana Fugu.
+- **URL 27: Kronos** (`github.com/shiyu-coder/Kronos`) — Time-series foundation model. Defer pending peer-reviewed evaluation; potential future Cemini brain swap candidate alongside Sakana Fugu. **STATUS-CHANGE 2026-04-30**: Wave 5A re-evaluated as **Steal-from** — AAAI 2026 acceptance (Nov 2025) + 22k stars + 20 contributors + MIT confirmed at file + repo level. See `@sources/shiyu-coder-kronos.md` and `@sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md` for full status-upgrade rationale. The "Steal-from-the-tokenizer-not-the-model" pattern applies — extract KronosTokenizer; reject KronosPredictor for production trading.
 
 ### Per-URL summaries — Reject (3)
 

@@ -6,6 +6,8 @@ keywords: [qlib, microsoft-qlib, ai-quant-investment-platform, supervised-learni
 clusters: [quant-finance, ml-methods, infrastructure]
 related:
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
+  - sources/shiyu-coder-kronos.md
   - concepts/quant-finance.md
   - concepts/ip-sale-readiness.md
   - concepts/high-signal-paper-patterns.md
@@ -13,7 +15,7 @@ related:
 maturity: validated
 read_status: read-skim
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations
@@ -23,6 +25,8 @@ updated: 2026-04-29
 - @concepts/ip-sale-readiness.md — MIT license clears IP-sale checks; Microsoft Corporation copyright holder; clean for institutional-grade adoption
 - @concepts/high-signal-paper-patterns.md — rubric-validated: 40k stars + 23 releases + 8 months continuous active development + 120+ contributors = strongest maturity signals in Wave 4
 - @concepts/mappo.md — qlib's RL framework provides off-the-shelf MAPPO/CTDE infrastructure that Cemini's current MAPPO-34-vector retrain pipeline could swap onto
+- @sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md — Wave 5A successor brief; flags qlib as the **operational pair for Kronos** (qlib does data-prep + backtest harness; Kronos does foundation-model layer)
+- @sources/shiyu-coder-kronos.md — operational pair: Kronos's KronosTokenizer feeds discrete tokens into qlib's signal pipeline; both MIT-licensed; both Cemini-stack-aligned. Cemini integration recipe: Qlib data → KronosTokenizer → custom downstream predictor (NOT KronosPredictor as-shipped, per author production-readiness disclaimer).
 
 ## Raw Concept
 

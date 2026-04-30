@@ -13,7 +13,9 @@ related:
   - entities/platforms/kalshi.md
   - sources/lob-regime-detection-hiremath-2026.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
   - sources/polymarket-predictions-mcp.md
+  - sources/caiovicentino-polymarket-mcp-server.md
   - sources/last30days-skill-mvanhorn.md
 maturity: validated
 read_status: read-skim
@@ -30,6 +32,8 @@ updated: 2026-04-30
 - @entities/platforms/polymarket.md — direct subject: this paper analyzes Polymarket's complete transaction history (1.72M accounts, $13.76B volume, 2023-2025).
 - @entities/platforms/kalshi.md — sibling prediction-market platform Cemini watchlists; the paper's findings about informed-minority-driven accuracy probably generalize, but Kalshi's regulated structure (CFTC oversight) may attract different participant mix vs Polymarket's decentralized one. Open empirical question for Cemini.
 - @sources/lob-regime-detection-hiremath-2026.md — sibling Workflow A find from the same 2026-04-29 sweep. Both papers are quant-finance / market-microstructure flavor; both refute received wisdom in their domain ("early-warning signals are inherently reactive" → wrong; "prediction markets work by crowd wisdom" → wrong).
+- @sources/gemini-dr-wave5b-osint-2026-04-30.md — Wave 5B canonical brief; surfaces a second Polymarket MCP server (caiovicentino's 45-tool trading MCP) that, alongside @sources/polymarket-predictions-mcp.md, completes the deployment-stack toolchain this paper's "informed-flow analyst" service requires. The dual-MCP-Polymarket pattern (real-time-odds + trade-execution) maps directly onto the paper's deployable surface: kukapay's MCP feeds the offline sign-randomization pipeline; caiovicentino's MCP routes execution decisions when the analyst signals "follow the informed minority"
+- @sources/caiovicentino-polymarket-mcp-server.md — Wave 5B Adopt; the **trade-execution leg** of the deployable analyst surface. Provides the missing primitive (Polymarket order routing via authenticated CLOB) that the paper's deployable surface requires once the offline sign-randomization pipeline has identified the top 3% accounts to trade alongside
 
 ## Raw Concept
 

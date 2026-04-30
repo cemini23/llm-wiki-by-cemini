@@ -9,6 +9,7 @@ related:
   - concepts/ip-sale-readiness.md
   - sources/kepano-obsidian-skills.md
   - sources/atomicmemory-llm-wiki-compiler.md
+  - sources/agriciDaniel-claude-obsidian.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28

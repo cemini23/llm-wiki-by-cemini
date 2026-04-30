@@ -74,9 +74,10 @@ related:
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - sources/microsoft-qlib.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/shiyu-coder-kronos.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-04-30
 ---
 
 ## Relations

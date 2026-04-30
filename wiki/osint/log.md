@@ -8,6 +8,76 @@ Newest entries on top.
 
 ---
 
+## [2026-04-30] ingest | Wave 5A + Wave 5B + 3 papers (TwVP / PRH / Sherry)
+
+User dropped 5 inbox items: 2 Gemini DR docx (Wave 5A Cemini-stack focus, 6 URLs; Wave 5B mixed/Polymarket focus, 18 URLs) + 3 papers (Thinking with Visual Primitives [DeepSeek-V4-Flash MLLM, 2026], Platonic Representation Hypothesis [Huh et al., MIT, ICML 2024], Sherry [Tencent ternary quantization, 2026]). Pre-ingest dup check via `scripts/preingest_check.py` returned all NEW; full ingest pipeline executed.
+
+### Pages created (10 new sources)
+
+**Canonical Wave 5 briefs (2)**:
+- `sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md` — 6-URL Cemini-stack/Wiki-stack evaluation. Verdict mix: 1 Adopt (stash) / 1 Steal-from with status-change (Kronos: Wave 4A Defer → Wave 5A Steal-from) / 2 Reference (firnflow + zeroboot) / 2 Reject (the_well + WorldSeed).
+- `sources/gemini-dr-wave5b-osint-2026-04-30.md` — 18-URL mixed evaluation; **Polymarket cluster dominates (7/18 URLs)**. Verdict mix: 1 Adopt (caiovicentino) / 5 Steal-from / 3 Reject (incl. NautilusTrader-LGPL transitive taint + GPL-3.0 poly_data) / 4 Reference / 5 Unavailable.
+
+**Promoted dedicated source pages (5)**:
+- `sources/alash3al-stash.md` — Apache-2.0 Go binary, persistent-memory MCP, 8-stage consolidation pipeline, Postgres+pgvector backed (Wave 5A Adopt)
+- `sources/shiyu-coder-kronos.md` — MIT financial foundation model + KronosTokenizer (binary spherical quantization), AAAI 2026 (Wave 5A Steal-from with status-change)
+- `sources/caiovicentino-polymarket-mcp-server.md` — MIT 45-tool Polymarket trade-execution MCP, Python+FastMCP (Wave 5B Adopt)
+- `sources/agriciDaniel-claude-obsidian.md` — MIT Obsidian-as-visual-overlay over Karpathy-pattern wiki (Wave 5B Steal-from)
+- `sources/piebald-claude-code-system-prompts.md` — MIT per-version-tracked Claude Code system prompts + 24 builtin tool descriptions, 9.7k★ (Wave 5B Steal-from, highest-star of Wave 5B)
+
+**Paper ingests (3)**:
+- `sources/thinking-with-visual-primitives-deepseek-2026.md` — Built on `deepseek-v4-flash`; visual-primitives reasoning step bridging the System-2 reference gap; OPD distillation + GRPO RL. Anchors `deepseek-v4-flash` empirically with IKP and AHE (now three independent 2026 papers grounded in the same model).
+- `sources/platonic-representation-hypothesis-huh-2024.md` — Foundational MIT/ICML 2024 theory paper. Three convergence-driving hypotheses (Multitask / Capacity / Simplicity Bias). Anna Karenina Scenario. Cemini-implication: pgvector embedding spaces tend to align across competent same-scale models — model-swap risk on RAG indexes lower than naively expected.
+- `sources/sherry-ternary-quantization-tencent-2026.md` — 1.25-bit ternary QAT with 3:4 fine-grained sparsity for SIMD-friendly LUT execution. Closes BF16 gap to ≤0.5% on ARC-Challenge at 1B. **Hardware: Intel i7-14700HX = Cemini's exact CPU class.** Sits in retracted-DeepSeek-R1-14B local-runtime architectural slot.
+
+### Cross-wave patterns documented (9 new)
+
+Synthesized into `concepts/wiki-tooling-evaluation.md` Wave 5 section + 2 new sub-patterns in `concepts/ip-sale-readiness.md`:
+
+1. **Status-upgrade-on-deeper-evaluation** — Wave 4A Defer (Kronos) → Wave 5A Steal-from. First documented status-change-on-second-look across waves.
+2. **Adopt-and-follow-upstream vs Adopt-but-fork-and-pin** — license-stable big-org vs small-author distinction.
+3. **Steal-from-the-tokenizer-not-the-model** — KronosTokenizer is the load-bearing IP; full model integration too complex (Cemini stack constraint).
+4. **Prompt-extraction-pattern with Anthropic-IP boundary** — piebald worked example. Structural inspiration vs verbatim copy distinction codified in `ip-sale-readiness.md`.
+5. **License-metadata-discrepancy resolution** — poly_data's GPL-3.0 LICENSE vs MIT pyproject.toml metadata; LICENSE file is canonical. New sub-pattern in `ip-sale-readiness.md` with 2 detection heuristics.
+6. **Infrastructure-prerequisite-block** — firnflow blocked on missing infrastructure. Reference-only-because-prereq-not-met as a verdict tier.
+7. **NautilusTrader-as-rejection-trigger** — LGPL-3.0 transitive taint propagating through dependents.
+8. **Dual-MCP-Polymarket** — kukapay's predictions-mcp (real-time-odds) + caiovicentino's trading-mcp (trade-execution) form a complete Polymarket coverage stack.
+9. **Three-way Karpathy stack stratification** — atomicmemory (compile/MCP) / claude-obsidian (visual-overlay) / wastedcode-memex (filesystem-namespace).
+
+### Backref pass (bidirectional)
+
+10 existing source pages received Wave 5 backref additions:
+- `polymarket-predictions-mcp.md`, `atomicmemory-llm-wiki-compiler.md`, `polymarket-informed-minority-gomezcram-2026.md`, `entities/platforms/polymarket.md`, `llm-wiki.md`, `wastedcode-memex.md`, `agentic-harness-engineering.md`, `llms-corrupt-documents-laban-2026.md`, `upstash-context7.md`, `dune-analytics-mcp.md`
+
+Concept-page updates:
+- `concepts/wiki-tooling-evaluation.md` — Wave 5 section added (1 Adopt + 1 Steal-from-status-change + 2 Reference + 2 Reject for Wave 5A; 1 Adopt + 5 Steal-from + 3 Reject + 4 Reference + 5 Unavailable for Wave 5B; 9 new cross-wave patterns documented)
+- `concepts/ip-sale-readiness.md` — 2 new sub-patterns (license-metadata-discrepancy resolution + Anthropic-IP boundary)
+- `concepts/high-signal-paper-patterns.md` — Wave 5 sources added to related
+- `concepts/mcp-tool-marketplace.md` — 3 new inventory rows (Polymarket trading via caiovicentino, Wiki/Obsidian visual layer via claude-obsidian, Internal episodic memory via stash)
+- `entities/infrastructure/deepseek-api.md` — Wave 5B + piebald related additions
+
+### Raw-source migration
+
+5 inbox files moved laptop → librarian via scp:
+- `cemini-librarian:/opt/cemini-bulk/research/Wave 5A Cemini-stack 2026-04-30.docx`
+- `cemini-librarian:/opt/cemini-bulk/research/Wave 5B OSINT-Polymarket 2026-04-30.docx`
+- `cemini-librarian:/opt/cemini-bulk/research/thinking-with-visual-primitives.pdf`
+- `cemini-librarian:/opt/cemini-bulk/research/platonic-representation-hypothesis.pdf`
+- `cemini-librarian:/opt/cemini-bulk/research/sherry-ternary-quantization.pdf`
+
+Laptop `research to be indexed/` cleared post-transfer.
+
+### Index + log
+
+- `wiki/index.md` — header total 267 → **277 canonical stubs** (174 PDF + 84 docx + 19 md); `### llm-agents (100)` → `### llm-agents (110)`. 7 Wave 5 rows inserted as contiguous block after Wave 4B brief (briefs + 5 dedicated source pages); 3 paper rows inserted after agentic-harness-engineering in the recent-papers cluster.
+- This log entry.
+
+### Why this mattered
+
+Wave 5 is the first wave where **status-change across waves** ($\text{Defer} \to \text{Steal-from}$ on Kronos) is documented — establishing that the verdict assignment is not single-shot. The Polymarket 7/18 cluster signal in Wave 5B is the strongest single-platform concentration across 5 waves, validating the dual-MCP-Polymarket pattern as Cemini's primary prediction-market tooling stack. The 3 papers continue the empirical anchoring of `deepseek-v4-flash` (now 3 independent 2026 papers grounded in the same model) and shore up substrate-side options (Sherry quantization, foundational PRH theory). 9 new cross-wave patterns codify learned discipline that prior single-wave reads couldn't surface.
+
+---
+
 ## [2026-04-30] concept | LLM-agent-systems cluster hub flesh-out — Type E gap closed
 
 The largest cluster hub in the wiki had **72 inbound citations but only 91 narrative words** — surfaced by `scripts/wiki_gap_detect.py` as the wiki's biggest hub-vs-content mismatch. Today's session built up enough cross-cutting synthesis content (high-signal-paper-patterns rubric, mcp-tool-marketplace rubric, the Wave 4 ingest results, the AHE-IKP-TF-GRPO-LLMs-Corrupt MoE-trio constellation) that a comprehensive cluster hub flesh-out became viable.

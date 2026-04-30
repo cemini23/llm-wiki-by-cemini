@@ -14,6 +14,8 @@ related:
   - concepts/high-signal-paper-patterns.md
   - sources/7onez-cti-expert.md
   - sources/spaceshift-sateais-api.md
+  - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
 maturity: validated
 read_status: read
 created: 2026-04-29

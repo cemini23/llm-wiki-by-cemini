@@ -10,10 +10,11 @@ related:
   - entities/infrastructure/deepseek-api.md
   - sources/agentic-harness-engineering.md
   - sources/llms-corrupt-documents-laban-2026.md
+  - sources/thinking-with-visual-primitives-deepseek-2026.md
 maturity: validated
 read_status: read
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations

@@ -6,6 +6,8 @@ keywords: [dune-analytics-mcp, kukapay, dune-analytics, on-chain-data, mcp-serve
 clusters: [crypto, infrastructure, llm-agents]
 related:
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
+  - sources/caiovicentino-polymarket-mcp-server.md
   - concepts/ip-sale-readiness.md
   - concepts/high-signal-paper-patterns.md
   - concepts/crypto-asset-taxonomy.md
@@ -22,6 +24,7 @@ updated: 2026-04-30
 - @concepts/ip-sale-readiness.md — MIT license clean
 - @concepts/high-signal-paper-patterns.md — rubric: 40 stars / 11 forks / 2 contributors = small-project bus-factor caveat (rubric's "single-author + extraordinary claims" pattern is adjacent; not exactly that, but the upstream-maintenance-risk applies)
 - @concepts/crypto-asset-taxonomy.md — Cemini's crypto pipeline currently consults Coinbase + Polygon for OHLC/trades; Dune adds the **on-chain analytics layer** (smart contract events, wallet flows, DeFi metrics) — a complementary data axis
+- @sources/caiovicentino-polymarket-mcp-server.md — Wave 5B sibling Adopt; another MIT Python MCP server bridging an external data/trading API to LLM agents. Same architectural family (FastMCP-compatible Python wrapper, fork-and-pin maintenance pattern, single-contributor bus-factor caveat) — different data domain (Polymarket trade-execution + odds vs Dune SQL queries). Pattern: kukapay-style MCP adapters dominate the Cemini-stack data-access surface
 
 ## Raw Concept
 

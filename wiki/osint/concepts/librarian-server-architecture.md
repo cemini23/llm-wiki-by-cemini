@@ -20,9 +20,10 @@ related:
   - concepts/ai-organisation-design.md
   - concepts/mcp-tool-marketplace.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
+  - sources/agriciDaniel-claude-obsidian.md
 maturity: validated
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-30
 ---
 
 ## Relations

@@ -23,6 +23,10 @@ related:
   - sources/last30days-skill-mvanhorn.md
   - sources/agentmemory-rohitg00-cpr-impl.md
   - entities/frameworks/fastmcp.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
+  - sources/caiovicentino-polymarket-mcp-server.md
+  - sources/agriciDaniel-claude-obsidian.md
+  - sources/alash3al-stash.md
 created: 2026-04-30
 updated: 2026-04-30
 maturity: validated
@@ -59,6 +63,9 @@ The page is **applied during evaluation**: when a new MCP server appears (in a T
 |  | (mcp-etherscan-server) | Steal-from candidate | Wave 4A; license unverified |
 |  | (mcp-server-ccxt) | Steal-from candidate | Wave 4A; license unverified |
 | **Prediction-markets data** | `@sources/polymarket-predictions-mcp.md` | Adopt-with-caveat | Wave 4A; 3-star single-day-dev bus-factor |
+| **Prediction-markets trading** | `@sources/caiovicentino-polymarket-mcp-server.md` | **Adopt** | Wave 5B; 395★ / 45 tools / 5 categories; dual-MCP-Polymarket pattern with kukapay's; 1 contributor (fork-and-pin) |
+| **Wiki/Obsidian visual layer** | `@sources/agriciDaniel-claude-obsidian.md` | Steal-from | Wave 5B; 3,581★ MIT (Python+Shell); `/wiki` `/save` `/autoresearch` slash commands; 1 contributor |
+| **Internal episodic memory** | `@sources/alash3al-stash.md` | Adopt-Workflow | Wave 5A; 8-stage consolidation pipeline; PostgreSQL+pgvector; 1 contributor (fork-and-pin) |
 | **Trading data** | `@sources/tradesdontlie-tradingview-mcp.md` | **Defer + Steal-from** ⚠️ | Wave 4A; Family C TOS-conflict |
 | **Documentation injection** | `@sources/upstash-context7.md` | Adopt-Workflow only | Wave 4A; vendor-dependency on proprietary backend |
 | **Agent-orchestration** | `@sources/vibe-trading-hkuds.md` | Wave 2 Adopt-Cemini → Wave 4 Steal-from | Status downgrade; React frontend non-starter for prod |

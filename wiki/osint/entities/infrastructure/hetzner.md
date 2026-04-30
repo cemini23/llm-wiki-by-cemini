@@ -15,9 +15,12 @@ related:
   - sources/4-5-links.md
   - entities/infrastructure/localai.md
   - concepts/librarian-server-architecture.md
+  - sources/sherry-ternary-quantization-tencent-2026.md
+  - sources/alash3al-stash.md
+  - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-28
+updated: 2026-04-30
 
 # K5 update (2026-04-26): container count corrected 18-26 → 40 per server probe; Swarm-inactive call-out added; full container manifest enumerated.
 # K6 update (2026-04-27): bidir backlink added for sources/3-10-algorithmic-trading-ip-sale-audit.md (audit's deployed-state inventory referenced "18 Docker containers" — reconciled with K5 40-container probe in K6 prescribed-vs-deployed gap table).

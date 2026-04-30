@@ -44,6 +44,13 @@ related:
   - sources/7onez-cti-expert.md
   - sources/spaceshift-sateais-api.md
   - concepts/mcp-tool-marketplace.md
+  - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
+  - sources/alash3al-stash.md
+  - sources/shiyu-coder-kronos.md
+  - sources/caiovicentino-polymarket-mcp-server.md
+  - sources/agriciDaniel-claude-obsidian.md
+  - sources/piebald-claude-code-system-prompts.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-30
@@ -430,6 +437,68 @@ The 9-step protocol caught both correctly. Worth noting that Wave 3's lower yiel
 - Wave 3 contributes 1 new dedicated source page (`@sources/black-scholes-iv-explicit-schadner-2026.md`) targeting the Cemini quant pipeline; the librarian server is unaffected by this finding.
 - License poison-pill family gets one new Exa confirmation (warp = AGPL-3.0 ✅) and one new HALT pattern (`NOASSERTION` license-detection result → halt until LICENSE-file is manually inspected).
 - The Memoria-pattern Steal-from (branch_id/parent_commit columns in PostgreSQL) is the highest-leverage Wave 3 pattern for the Cemini stack — adds Git-style memory branching to the LangGraph orchestrator's existing state-tracking with no new database dependency.
+
+## Wave 5 — Gemini Deep Research findings (2026-04-30; ingested 2026-04-30)
+
+Wave 5 was a **dual docx pair** following the Wave 4 pattern: Wave 5A (`Codebase Evaluation for Trading & Wiki 4_30.docx`, 6 URLs, Cemini-stack focus) + Wave 5B (`another Evaluating Code for Trading & Wiki Stacks 4_30.docx`, 18 URLs, mixed/Polymarket focus). Both ingested 2026-04-30.
+
+### Wave 5A register summary (decisions added 2026-04-30)
+
+**Adopt-Cemini-Wiki-Workflow (1):**
+- `[ADOPT 2026-04-30]` @sources/alash3al-stash.md — Apache-2.0, Go (81.5%), 407★, 1 contributor; 8-stage memory-consolidation pipeline (episodes → facts → relationships → causal links → goal tracking → failure patterns → hypothesis verification → confidence decay) backed by PostgreSQL + pgvector. Same Karpathy-pattern thesis as `@sources/atomicmemory-llm-wiki-compiler.md`, but operates as **internal episodic memory** rather than external compiled wiki — pairs with kb-server (deployed librarian) and context7 (external API knowledge). Bus-factor caveat (1 contributor, fork-and-maintain required) but architectural fit is clean.
+
+**Steal-from with status-change (1):**
+- `[STEAL-FROM-UPGRADED-FROM-DEFER 2026-04-30]` @sources/shiyu-coder-kronos.md — MIT, Python (81.9%), **22,172★**, 20 contributors, AAAI 2026 acceptance (Nov 2025). Wave 4A had marked Kronos as Defer; Wave 5A's deeper read upgrades to Steal-from based on the AAAI acceptance + 22k stars + 20 contributors + repo-level MIT confirmation. The **Steal-from-the-tokenizer-not-the-model pattern**: extract `KronosTokenizer` (continuous OHLCV → discrete tokens) for use against Cemini's own ticker/OHLC stream; do NOT deploy the full Kronos forecasting model (license is open through Kronos-base 102.3M, but Kronos-large 499.2M is closed). Pairs with `@sources/microsoft-qlib.md` as operational quant-RL stack: qlib provides pipeline + training + factor library; Kronos provides the tokenizer that turns market data into LLM-consumable sequences.
+
+**Reference-only (2):**
+- firnflow — clean license + sound architecture but missing infrastructure prerequisites (S3 stack); **infrastructure-prerequisite-block pattern** documented as new Reference-only sub-cause
+- zeroboot — minimal-bootstrap reference; valuable as illustration but no Cemini deployment surface
+
+**Reject (2):** the_well + WorldSeed — both fail Filter 3 (no Cemini-domain overlap) and have other negative signals
+
+### Wave 5B register summary (decisions added 2026-04-30)
+
+**Adopt-Cemini-Stack (1):**
+- `[ADOPT 2026-04-30]` @sources/caiovicentino-polymarket-mcp-server.md — MIT, Python (80.7%), 395★, 1 contributor (fork-and-pin pattern); 45 tools across 5 categories (markets / trades / portfolio / orders / data). The **dual-MCP-Polymarket pattern** with kukapay's `@sources/polymarket-predictions-mcp.md`: kukapay = real-time-odds (read-only); caiovicentino = trade-execution + market discovery + portfolio (read+write). Both required for the deployable Polymarket-informed-flow analyst service `@sources/polymarket-informed-minority-gomezcram-2026.md` proposes. 6 enumerated risks (bus-factor, secret management, rate-limiter under load, single release, regulatory exposure, transitive deps).
+
+**Steal-from (5)**:
+- @sources/agriciDaniel-claude-obsidian.md — MIT, Python+Shell, 3,581★, 1 contributor; Karpathy-pattern visual-Obsidian-vault wrapper with `/wiki` `/save` `/autoresearch` slash commands. **Three-way Karpathy-pattern stack** with atomicmemory's compiler (headless feature-rich) + wastedcode's memex (headless minimal). Highest-value extract: the `/autoresearch` skill (multi-step research → wiki page → backref pattern in a single command).
+- @sources/piebald-claude-code-system-prompts.md — MIT, JavaScript, **9,684★** (highest in Wave 5B), 114 releases through v2.1.123 on 2026-04-29. Anthropic-deployed Claude Code system-prompts extracted across 114 versions. **Prompt-extraction-pattern**: study how Anthropic's harness has evolved release-over-release; structural inspiration only (Anthropic IP boundary — never verbatim copy). DeepSeek-V4-Pro-Think XML adherence verification gate before any Cemini analyst-prompt port.
+- BridgeWard arbitrage adapter (Polymarket cluster), poly-maker market-making bot (Polymarket cluster), Polymarket-BTC-15-Min-Bot (Polymarket cluster) — all Steal-from pattern references in the Wave 5B canonical brief, no dedicated source pages.
+
+**Reject (3)**: poly_data (license-metadata-discrepancy: GPL-3.0 LICENSE vs MIT pyproject.toml metadata; LICENSE file canonical → Reject). NautilusTrader-as-rejection-trigger pattern surfaces in URLs 12 and 17 (NautilusTrader's LGPL-3.0 transitive taint).
+
+**Reference-only (4):**
+
+**Unavailable (5)**: 5/18 URLs returned no content; queued for future re-fetch attempts.
+
+### Wave 5 — new patterns documented this wave
+
+1. **Status-upgrade-on-deeper-evaluation** — Kronos: Wave 4A Defer → Wave 5A Steal-from. Mirror direction of Vibe-Trading's Wave 2 Adopt → Wave 4 Steal-from downgrade. Status changes at re-evaluation are a normal pattern in this wiki — not flip-flopping; second-look reveals new evidence (AAAI 2026 acceptance + repo-level metadata) that wasn't visible at first read.
+
+2. **Adopt-and-follow-upstream vs Adopt-but-fork-and-pin** — Wave 5 stratifies the Adopt tier: qlib (Microsoft, 40k★) follows upstream; stash + polymarket-mcp-server + claude-obsidian (1 contributor each) require fork-and-pin maintenance. Bus-factor is the deciding axis. Adopt-but-fork-and-pin shouldn't be confused with Steal-from — it's still Adopt (you DEPLOY the project), but Cemini owns the maintenance going forward.
+
+3. **Steal-from-the-tokenizer-not-the-model** — Wave 5A Kronos. Open-source ML projects often have a clean-license preprocessing layer + closed/restricted model weights. Cemini's adoption surface is the preprocessing layer; the model weights are closed-source from the perspective of Cemini's deployment.
+
+4. **Prompt-extraction-pattern** — Wave 5B piebald. **Content vs runtime distinction**: extracting deployed system prompts from a vendor harness (here, Anthropic's Claude Code) is content-level reverse-engineering, not runtime IP. The IP boundary depends on use: structural inspiration is permissible; verbatim copy into Cemini's analyst prompts crosses the boundary. DeepSeek-V4-Pro-Think XML adherence verification gates the question of whether Cemini's analyst-prompt format CAN absorb extracted prompt patterns at all.
+
+5. **License-metadata-discrepancy resolution** — Wave 5B poly_data. SPDX/repo-level metadata can disagree with the LICENSE file (here: pyproject.toml says MIT; LICENSE file says GPL-3.0). LICENSE file is canonical for IP-sale-readiness gating. New IP-sale-readiness sub-pattern (see @concepts/ip-sale-readiness.md).
+
+6. **Infrastructure-prerequisite-block pattern** — Wave 5A firnflow. Clean license + sound architecture is necessary but not sufficient for Cemini Adopt; missing infrastructure prerequisites (here: S3 stack) drop a candidate to Reference-only without crossing into Reject. Distinct from Defer (which is gated on a verifiable test); infrastructure-prerequisite-block is gated on a Cemini-side decision to provision the prerequisite.
+
+7. **NautilusTrader-as-rejection-trigger** — Wave 5B URLs 12 + 17. NautilusTrader's LGPL-3.0 license creates transitive taint for any project that takes it as a dependency. The Cemini-stack rejection rule: if a candidate's LICENSE is clean but its core dependency is LGPL-3.0+, the candidate inherits the taint at deployment.
+
+8. **Dual-MCP-Polymarket pattern** — Wave 5B caiovicentino + kukapay. Two MCPs covering complementary surfaces (read-only-odds + read+write-trading) form a more complete deployment toolchain than either alone. Pattern applicable to other prediction-market venues (Kalshi: read MCP exists, write MCP doesn't yet; Manifold: neither exists).
+
+9. **Three-way Karpathy-pattern stack** — Wave 5B claude-obsidian + wastedcode-memex + atomicmemory-llm-wiki-compiler. The same Karpathy-pattern thesis stratifies on substrate: filesystem-namespace (memex) / compile-pipeline (llm-wiki-compiler) / vault-overlay (claude-obsidian). All three are MIT; all three are LLM-curated; all three compound. Adoption-orthogonal: a Cemini deployment could use any one, two, or all three at different layers.
+
+### Wave 5's effects on this page's recommendations
+
+- Wave 1-4 register (kb-server deployed, llm-wiki-compiler retained, agentmemory steal-from, 8 Wave-2 Adopts, BSIV Wave-3 Adopt) — **unchanged**.
+- Wave 5A adds 2 dedicated source pages: stash (Adopt-Wiki-Workflow Karpathy-pattern internal-episodic-memory layer) + Kronos (Steal-from with status-change documentation).
+- Wave 5B adds 3 dedicated source pages: caiovicentino's Polymarket MCP (Adopt-Cemini-stack, dual-MCP pattern with kukapay's MCP) + claude-obsidian (Steal-from, third Karpathy-pattern member) + piebald's claude-code-system-prompts (Steal-from, prompt-extraction-pattern with Anthropic IP caveat).
+- 9 new cross-wave patterns documented (1-9 above).
+- License poison-pill family: GPL-3.0 confirmation (poly_data), LGPL-3.0 transitive taint (NautilusTrader), license-metadata-discrepancy resolution sub-pattern (poly_data).
 
 ## Snippets
 

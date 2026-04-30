@@ -14,9 +14,10 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - sources/atomicmemory-llm-wiki-compiler.md
   - concepts/librarian-server-architecture.md
+  - sources/sherry-ternary-quantization-tencent-2026.md
 maturity: draft
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-30
 ---
 
 ## Relations

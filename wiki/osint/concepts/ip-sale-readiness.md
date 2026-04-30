@@ -78,9 +78,16 @@ related:
   - sources/mercurialsolo-claudectl.md
   - sources/spaceshift-sateais-api.md
   - concepts/mcp-tool-marketplace.md
+  - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
+  - sources/alash3al-stash.md
+  - sources/shiyu-coder-kronos.md
+  - sources/caiovicentino-polymarket-mcp-server.md
+  - sources/agriciDaniel-claude-obsidian.md
+  - sources/piebald-claude-code-system-prompts.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-28
+updated: 2026-04-30
 ---
 
 ## Relations
@@ -270,6 +277,60 @@ already pass this). Where a Family C project's code-pattern is valuable
 **adopt the pattern as Steal-from**, rewrite the data-source to a
 TOS-cleared provider, and don't deploy the original project's
 data-extraction binding.
+
+### License-metadata-discrepancy resolution sub-pattern `[NEW 2026-04-30 — Wave 5B poly_data]`
+
+When a project's repo-level metadata disagrees with its LICENSE file —
+e.g. the SPDX field, README badges, or `pyproject.toml` declares one
+license while the LICENSE file declares another — **the LICENSE file is
+canonical** for IP-sale-readiness gating. The discrepancy itself is a
+yellow flag: it suggests the project either copy-pasted boilerplate
+without auditing it or transitioned licenses without cleaning up
+metadata, both of which suggest other latent IP-issue surfaces worth
+checking.
+
+Worked example (Wave 5B URL): `poly_data` declared MIT in
+`pyproject.toml` but the repo's actual LICENSE file is GPL-3.0. The
+LICENSE-canonical resolution dropped the project from a candidate-Adopt
+position into a Reject (Family A — copyleft poison-pill).
+
+**Detection heuristic** (extends families A, B, C):
+7. SPDX / metadata / README license declaration ≠ LICENSE file content →
+   **mandatory LICENSE-file deep-read**; treat the LICENSE file as
+   canonical.
+8. If the project's LICENSE file declares any Family A license while
+   metadata declares a permissive one → **automatic reject** + flag the
+   project as having license-discipline issues (other latent IP
+   surfaces likely).
+
+### Anthropic-IP-boundary sub-pattern `[NEW 2026-04-30 — Wave 5B piebald]`
+
+When a project extracts content (system prompts, harness configs,
+training-data fragments) from a proprietary vendor's deployed product
+WITHOUT the vendor's authorization — distinct from Family B (where the
+project itself is a derivative) — the question is whether the extracted
+content rises to vendor IP that Cemini cannot use as reference.
+
+Worked example: `piebald-claude-code-system-prompts` extracts
+Anthropic's Claude Code deployed system prompts across 114 versions.
+The extraction process (running Claude Code, capturing the system
+prompt that was served, archiving) is technically permissible (the
+prompts ARE served to the user). The question is what Cemini does with
+the extracted content:
+- **Structural inspiration / pattern study** (how Anthropic structures
+  XML adherence, how response-form is enforced, how harness evolves
+  over releases) → **permissible reference**, even by an institutional
+  acquirer's IP-sensitivity reading. Same as observing a competitor's
+  product.
+- **Verbatim copy into Cemini's analyst prompts** → **crosses the IP
+  boundary**. Don't do this even if the extracted prompts have
+  technically been served to the public.
+
+**Detection heuristic** (extends families A, B, C, license-metadata):
+9. Project extracts content from a vendor's deployed product →
+   **structural reference is permissible; verbatim copy into Cemini's
+   deployed stack is not**. Document the boundary on the source page;
+   gate Cemini-side use against the boundary.
 
 ## Snippets
 

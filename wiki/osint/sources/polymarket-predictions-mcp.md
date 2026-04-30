@@ -6,6 +6,8 @@ keywords: [polymarket-predictions-mcp, kukapay, polymarket-odds, prediction-mark
 clusters: [prediction-markets, infrastructure, llm-agents]
 related:
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
+  - sources/caiovicentino-polymarket-mcp-server.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - entities/platforms/polymarket.md
   - entities/platforms/kalshi.md
@@ -22,6 +24,8 @@ updated: 2026-04-30
 ## Relations
 
 - @sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md — Wave 4A canonical brief; URL 19 Adopt-with-caveat; promoted to dedicated source this session
+- @sources/gemini-dr-wave5b-osint-2026-04-30.md — Wave 5B canonical brief surfaces a sibling Polymarket MCP (caiovicentino's, 395★ / 45 tools / 5 categories) as a Wave 5B Adopt. The two MCPs together form the **dual-MCP-Polymarket pattern**: this server is read-mostly real-time-odds; caiovicentino's server is read-and-trade with full CLOB API + on-chain settlement (USDC.e + MetaMask). Decision tree: read-only odds → this MCP; trading + market discovery + portfolio → caiovicentino's; both → run both servers, scope tool-allowlists per use case
+- @sources/caiovicentino-polymarket-mcp-server.md — sibling Polymarket MCP, dual-MCP-Polymarket pattern. caiovicentino's is more comprehensive (395★ vs 3★, 45 tools vs ~6, 5 categories vs single-day-dev) but bus-factor caveat applies to both (1 contributor each); this MCP's narrower surface (real-time odds only) makes the fork-and-maintain footprint smaller
 - @sources/polymarket-informed-minority-gomezcram-2026.md — **directly pairs**: this MCP is the **data-access layer** for the "Polymarket informed-flow analyst" service that paper proposes. Without a Polymarket data layer, the informed-minority signal can't be extracted; with this MCP (or a fork of it), the analyst node can consult live odds during reasoning.
 - @entities/platforms/polymarket.md — direct subject; the MCP wraps Polymarket's odds API
 - @entities/platforms/kalshi.md — sibling prediction market in Cemini's watchlist; analogous Kalshi MCP would be the natural extension if this pattern works

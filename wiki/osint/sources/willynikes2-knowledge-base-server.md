@@ -13,6 +13,7 @@ related:
   - concepts/context-compression-resume-pattern.md
   - entities/frameworks/fastmcp.md
   - concepts/mcp-tool-marketplace.md
+  - sources/agriciDaniel-claude-obsidian.md
 maturity: validated
 read_status: read
 created: 2026-04-28

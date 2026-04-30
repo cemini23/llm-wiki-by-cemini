@@ -31,9 +31,16 @@ related:
   - sources/moe-surpass-dense-equal-resource-li-2026.md
   - sources/training-free-grpo-cai-2025.md
   - sources/llms-corrupt-documents-laban-2026.md
+  - sources/thinking-with-visual-primitives-deepseek-2026.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
+  - sources/piebald-claude-code-system-prompts.md
+  - sources/alash3al-stash.md
+  - sources/caiovicentino-polymarket-mcp-server.md
+  - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
+  - sources/shiyu-coder-kronos.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations
@@ -56,6 +63,7 @@ updated: 2026-04-29
 - @sources/agentmemory-rohitg00-cpr-impl.md — 2026-04-28 — Apache-2.0 cpr-pattern reference implementation; the "LLM compress" phase calls a configurable LLM, swappable to DeepSeek API. When the cpr-pattern lands in Python on the Cemini stack, the Compress phase invokes this entity's hosted DeepSeek brain
 - @sources/agentic-harness-engineering.md — 2026-04-29 — arXiv 2604.25850 (Lin et al., Fudan/PKU/Shanghai Qiji Zhifeng, 28 Apr 2026) tests AHE's auto-evolved harness across 5 cross-model bases including **deepseek-v4-flash**: largest measured cross-family gain at **+10.1 pp pass@1** (51.7% → 61.8% on Terminal-Bench 2). Empirical evidence that harness-level optimization generalizes to DeepSeek-family models; reduces Cemini's brain-vendor lock-in risk. The AHE pattern (7-component decoupling + falsifiable manifest) survives a DeepSeek substitution without re-evolution
 - @sources/incompressible-knowledge-probes-li-2026.md — 2026-04-29 — arXiv 2604.24827 (Bojie Li, Pine AI, 27 Apr 2026) calibrates a black-box parameter-estimator on 89 open-weight models (R²=0.917) **explicitly including `deepseek-v3`, `deepseek-v4-flash`, `deepseek-v4-flash-think`, and `deepseek-v4-pro-think` in the calibration set**. Operational implications for this entity: (a) factual recall on DeepSeek tracks log(total params), not active params — critical MoE deployment finding; (b) **Densing Law does not apply to factual capacity** — newer cheaper models will NOT compress long-tail factual recall, so Cemini's analyst-orchestrator cannot swap-down to smaller models for ticker/entity-recall tasks without proportional loss; (c) the IKP "hallucination-similarity" technique (rare-fact agreement on wrong answers) is a low-effort silent-swap detector if Cemini's vendor ever quantizes / reroutes / replaces the served model — drift signal usable as daily cron alerting
+- @sources/thinking-with-visual-primitives-deepseek-2026.md — 2026-04-30 — DeepSeek-AI + PKU + Tsinghua (Lu et al., 25p) — extends `deepseek-v4-flash` with a "Thinking with Visual Primitives" reasoning paradigm: bounding boxes + points elevated to "minimal units of thought" interleaved into chain-of-reasoning. **Built directly on `deepseek-v4-flash` (284B/13B-A MoE) + DeepSeek-ViT.** Token-efficient: 90 KV-cache entries vs 740–1100 for GPT-5.4/Claude-Sonnet-4.6/Gemini-3-Flash on 800×800 images (~10× reduction). +16.3pp Maze Navigation, +10.2pp Path Tracing over GPT-5.4. Operational read for this entity: (a) third independent 2026 paper grounded in `deepseek-v4-flash` (alongside AHE & IKP) — **most-instrumented frontier MoE in academic literature**; (b) if/when this capability lands in the hosted DeepSeek API, Cemini gets multimodal reasoning under the **same API key + same rate-limit envelope** — no architectural lift; (c) topological-reasoning gap directly applicable to chart-pattern detection (TradingView technicals) + satellite-imagery candidate-region tracing (Spaceshift Sentinel-1); (d) CSA + 3×3 compression patterns (7,056× pixel→KV ratio) reusable as memory-discipline reference even for text-only Cemini analysts at 256K context. Capability not yet confirmed exposed via API — `[NEEDS VERIFICATION 2026-04-30]` for endpoint surface
 
 ## Raw Concept
 

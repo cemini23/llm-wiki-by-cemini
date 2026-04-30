@@ -18,10 +18,12 @@ related:
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - sources/polymarket-predictions-mcp.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/gemini-dr-wave5b-osint-2026-04-30.md
+  - sources/caiovicentino-polymarket-mcp-server.md
   - sources/last30days-skill-mvanhorn.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations
@@ -37,6 +39,8 @@ updated: 2026-04-29
 - @concepts/publishers-exclusion-apa.md
 - @concepts/dcm-state-preemption.md — federal-vs-state preemption fight extends beyond Kalshi; Polymarket's on-chain non-DCM status is structurally weaker than Kalshi's
 - @entities/platforms/kalshi.md
+- @sources/gemini-dr-wave5b-osint-2026-04-30.md — Wave 5B canonical brief; 7 of 18 evaluated URLs target Polymarket directly (Polymarket cluster). Surfaces caiovicentino's full-trade MCP, sibling poly_data Reject (license-metadata discrepancy), BridgeWard arbitrage Steal-from, poly-maker market-making Steal-from, Polymarket-BTC-15-Min-Bot Steal-from. Polymarket's deployment-stack toolchain is now meaningfully more complete than 30 days ago
+- @sources/caiovicentino-polymarket-mcp-server.md — Wave 5B Adopt; comprehensive 45-tool MCP across 5 categories (markets / trades / portfolio / orders / data). MIT, Python, 395★, 1 contributor (fork-and-pin pattern). Trade-execution leg of the dual-MCP-Polymarket pattern (real-time-odds = kukapay's; trade-execution = this). USDC.e + MetaMask + Polygon network
 
 ## Raw Concept
 
