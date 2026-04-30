@@ -17,10 +17,12 @@ related:
   - sources/kepano-obsidian-skills.md
   - sources/obsidian-second-brain-eugeniughelbur.md
   - sources/bare-bones-memory-southpolesteve.md
+  - sources/gemini-dr-wave4b-osint-2026-04-29.md
+  - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
 maturity: validated
 read_status: read
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-30
 ---
 
 ## Relations

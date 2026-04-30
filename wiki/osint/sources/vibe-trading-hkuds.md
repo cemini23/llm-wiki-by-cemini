@@ -14,6 +14,7 @@ related:
   - entities/frameworks/ccxt.md
   - entities/infrastructure/deepseek-api.md
   - entities/infrastructure/yfinance.md
+  - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-28
@@ -32,6 +33,7 @@ clusters: [llm-agents, trading-agents]
 - @entities/frameworks/ccxt.md — CCXT integration in Vibe-Trading complements Cemini's existing Coinbase/OANDA pipelines (Coinbase is currently a CCXT-mediated integration, not a dedicated entity page yet)
 - @entities/infrastructure/deepseek-api.md — current Cemini brain; Vibe-Trading is LLM-agnostic and can consume DeepSeek via OpenAI-compatible config
 - @entities/infrastructure/yfinance.md — Vibe-Trading uses yfinance as a default data loader; per Cemini's Polygon-NOT_AUTHORIZED-doctrine memory, the data loader must be swapped to Polygon/Alpaca for institutional-grade feeds before deploy
+- @sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md — **Wave 4A status-change cross-link**: 2026-04-29 Wave 4A reclassifies this URL from Wave 2's **Adopt-for-Cemini** to **Steal-from**. Reasoning per Wave 4A URL 22 evaluation: bloated React frontend (13.1% TS/JS) is non-starter for headless deployment; yfinance-fallback creates production-grade reliability risk under polygon_not_authorized_doctrine. Operational implication: extract the **agent-swarm topology + MCP-tool-decorator pattern** as Steal-from, do not deploy the project as-is. The Wave 2 Adopt-Cemini recommendation should be considered superseded for production deployment, while the architectural pattern remains usable as an internal reference.
 
 ## Raw Concept
 

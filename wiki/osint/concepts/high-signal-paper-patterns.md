@@ -14,6 +14,11 @@ related:
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - sources/training-free-grpo-cai-2025.md
   - sources/llms-corrupt-documents-laban-2026.md
+  - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/gemini-dr-wave4b-osint-2026-04-29.md
+  - sources/microsoft-qlib.md
+  - sources/dune-analytics-mcp.md
+  - sources/polymarket-predictions-mcp.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/ip-sale-readiness.md
   - concepts/llm-agent-systems.md

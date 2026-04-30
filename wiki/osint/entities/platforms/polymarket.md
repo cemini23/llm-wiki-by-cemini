@@ -16,6 +16,8 @@ related:
   - concepts/dcm-state-preemption.md
   - entities/platforms/kalshi.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
+  - sources/polymarket-predictions-mcp.md
+  - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-29

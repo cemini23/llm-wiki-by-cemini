@@ -66,6 +66,11 @@ related:
   - sources/agent-browser-vercel-labs.md
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - concepts/high-signal-paper-patterns.md
+  - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/gemini-dr-wave4b-osint-2026-04-29.md
+  - sources/microsoft-qlib.md
+  - sources/dune-analytics-mcp.md
+  - sources/polymarket-predictions-mcp.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28
@@ -207,6 +212,57 @@ due-diligence team will flag any project that touched a family-B repository
 as potentially complicit in the underlying copyright infringement, even if
 the project itself isn't the immediate liability bearer. Cemini's
 IP-sale-readiness posture cannot tolerate this exposure.
+
+**Family C — Third-party-data-provider-TOS-conflict via clean-license code** `[NEW 2026-04-29]`:
+projects whose code license is genuinely clean (typically MIT) but whose
+documented use case requires interacting with a third-party provider's
+service in a way that may violate the provider's Terms of Service. The
+LICENSE file is fine; the operational use is not. Distinct from family A
+(legitimate licenses with viral terms) and family B (project itself
+disclosing infringement) — here, neither the project nor its license is
+problematic, but the deployed use case creates legal exposure against a
+third party Cemini has no direct license relationship with.
+
+Worked example: `tradesdontlie/tradingview-mcp` (Wave 4A URL 20, anti-hallucination spot-check
+2026-04-29) — LICENSE file is MIT, but the GitHub aggregator shows
+"NOASSERTION" (because the project's own README adds non-license trademark
+disclaimers below the MIT text), AND the README explicitly warns:
+*"Performing automated trading or algorithmic decision-making using
+extracted data"* may violate TradingView's TOS. For Cemini's
+algorithmic-trading use case, **the project's documented intended use
+aligns with the warned-against pattern**. The project itself isn't doing
+anything wrong (Chrome DevTools Protocol on the user's local TradingView
+desktop is technically a user-side action), but the user (Cemini) running
+automated trading against extracted data could be cited by TradingView for
+TOS violation regardless of who wrote the code.
+
+**Detection heuristic** (extends families A + B):
+4. README contains warning text like "may violate", "users are responsible",
+   "do not redistribute", "subject to [vendor]'s terms" attached to a
+   third-party-data-provider's service → require legal review before
+   production deployment, even if the LICENSE itself is clean.
+5. Project relies on Chrome DevTools Protocol, undocumented APIs, or
+   web-scraping against a vendor's authenticated service → automatic Family
+   C flag.
+6. SPDX = NOASSERTION on GitHub even when LICENSE file is clean (MIT/Apache)
+   → mandatory README + LICENSE NOTICE/TRADEMARK section read; commonly
+   indicates Family C even when family-B is absent.
+
+**Acquirer due-diligence framing for Family C**: less severe than Family B
+but still material. An institutional acquirer reviewing Cemini's stack will
+ask "what third-party provider TOS does Cemini's data layer rely on, and
+have those been verified against Cemini's actual use?" Cemini's response
+must include not just "we used MIT-licensed code" but "we verified our
+specific use against the third party's TOS." Family C projects increase the
+size of that verification surface.
+
+**Mitigation pattern for Family C**: route Cemini's data layer through a
+provider with which Cemini has a direct license (Polygon, Coinbase, Alpaca
+already pass this). Where a Family C project's code-pattern is valuable
+(e.g. the Chrome DevTools Protocol wrapping technique in tradingview-mcp),
+**adopt the pattern as Steal-from**, rewrite the data-source to a
+TOS-cleared provider, and don't deploy the original project's
+data-extraction binding.
 
 ## Snippets
 

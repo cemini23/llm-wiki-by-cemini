@@ -21,9 +21,11 @@ related:
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
   - sources/4-5-links-2.md
   - sources/agent-browser-vercel-labs.md
+  - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/gemini-dr-wave4b-osint-2026-04-29.md
 maturity: validated
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-04-30
 clusters: [llm-agents, librarian-tooling, decision-record]
 ---
 

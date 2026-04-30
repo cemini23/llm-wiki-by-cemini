@@ -12,9 +12,11 @@ related:
   - concepts/scatter-gather-topology.md
   - concepts/ai-organisation-design.md
   - concepts/options-derivatives.md
+  - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/gemini-dr-wave4b-osint-2026-04-29.md
 maturity: validated
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 clusters: [llm-agents, librarian-tooling, decision-record, options-pricing]
 ---
 

@@ -8,6 +8,95 @@ Newest entries on top.
 
 ---
 
+## [2026-04-29] ingest | Wave 4 Gemini DR brief pair (48 URLs total — 2 canonical + 3 promoted Adopts)
+
+User dropped both Wave 4 docx files alongside the 4 standalone papers earlier in the session. Wave 4 = 2 sister briefs from the same date with a deliberate two-domain split:
+
+- **Wave 4A (Cemini-stack focus)** — 30 URLs: MCP servers, trading tools, quant ML libraries, Claude Code workflow tooling
+- **Wave 4B (OSINT/satellite focus)** — 18 URLs: cyber-threat-intel, satellite imagery, OSINT tooling, atomicmemory llm-wiki-compiler reaffirm
+
+The two-docx-same-day pattern matches Wave 1's similar split (`4-5-links.md` + `4-5-links-2.md`).
+
+### Canonical briefs (2 source pages)
+
+- `wiki/sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md` — Wave 4A canonical: 7 Adopts / 7 Steal-from / 3 Reference / 1 Defer / 3 Reject / 8 Unavailable. Adopt rate 32% of evaluable.
+- `wiki/sources/gemini-dr-wave4b-osint-2026-04-29.md` — Wave 4B canonical: 3 Adopts (incl. atomicmemory reaffirm) / 3 Steal-from / 5 Reference (incl. karpathy/microgpt confirms earlier Skip decision) / 1 Defer / 2 Reject / 4 Unavailable. Adopt rate 21%.
+
+### Anti-hallucination spot-check (top 5 Wave 4A Adopts via Exa)
+
+| Adopt | License | Stars | Material finding |
+|---|---|---|---|
+| URL 28 microsoft/qlib | MIT ✓ | 40,300 | Strongest maturity; promoted to dedicated source |
+| URL 14 upstash/context7 | MIT ✓ | 53,681 | Highest maturity by far; deferred dedicated source to Phase 2 |
+| URL 18 kukapay/dune-analytics-mcp | MIT ✓ | 40 | Small; bus-factor caveat; promoted to dedicated source |
+| URL 19 kukapay/polymarket-predictions-mcp | MIT ✓ | **3** ⚠️ | **Single-day-development** repo; severe bus-factor; promoted with caveat (pairs with the LBS/Yale Polymarket paper for Cemini's informed-flow analyst service) |
+| URL 20 tradesdontlie/tradingview-mcp | MIT (file) / **NOASSERTION** (aggregator) ⚠️ | 2,362 | **Material reclassification**: README warns automated trading via Chrome DevTools Protocol may violate TradingView TOS → Adopt → Defer/Steal-from |
+
+Two material findings beyond drift: tradingview-mcp TOS-conflict (new IP-sale-readiness Family C pattern), polymarket-predictions-mcp single-day-development (rubric negative-signals trigger).
+
+### Promoted Adopts (3 dedicated source pages)
+
+1. **`wiki/sources/microsoft-qlib.md`** — strongest Wave 4 Adopt. 40k stars + Microsoft + RL framework + Point-in-Time DB. Direct Cemini RL-MARL retrain fit. License MIT.
+2. **`wiki/sources/dune-analytics-mcp.md`** — adds Cemini's missing on-chain analytics layer. Fork-and-maintain pattern recommended (40-star bus-factor caveat).
+3. **`wiki/sources/polymarket-predictions-mcp.md`** — data-access layer for the LBS/Yale-paper-proposed informed-flow analyst service. 3-star single-day-dev caveat surfaces the rubric's negative-signals.
+
+Deferred to Phase 2 (next session): claudectl, context7, last30days-skill, tradingview-mcp (with TOS caveat), 7onez/cti-expert, Spaceshift SateAIs.
+
+### Status changes (existing pages)
+
+- **`wiki/sources/vibe-trading-hkuds.md`** — Wave 4A URL 22 reclassifies Wave 2's Adopt-Cemini → Steal-from. Reasoning per Wave 4A: bloated React frontend non-starter for headless deploy; yfinance-fallback violates polygon_not_authorized_doctrine. Steal the agent-swarm topology + MCP-tool-decorator pattern; do not deploy as-is. Status-change Relations bullet added.
+- **`wiki/sources/atomicmemory-llm-wiki-compiler.md`** — Wave 4B URL 2 reaffirms Adopt for librarian (already deployed; the brief's integration vector matches Phase 3.5 deployed pattern).
+
+### New Family in `concepts/ip-sale-readiness.md`: Family C — TOS-conflict via clean-license code
+
+Added Family C to the license poison-pill ledger:
+- **Family A** (existing) — Copyleft (GPL-3.0/AGPL-3.0/SSPL/ELv2)
+- **Family B** (existing, 2026-04-29 from openclaude) — Vendor-IP-redistribution-without-authorization
+- **Family C** (new, 2026-04-29 from tradingview-mcp) — Third-party-data-provider-TOS-conflict via clean-license code
+
+Family C: code license is genuinely clean (typically MIT) but the documented use case requires interacting with a third-party provider's service in a way that may violate the provider's TOS. Worked example: tradingview-mcp uses Chrome DevTools Protocol against TradingView Desktop; README warns about TOS conflict for automated-trading use.
+
+Detection heuristic extended: README contains warning text ("may violate", "users are responsible") + Chrome DevTools Protocol / undocumented APIs / web-scraping → automatic Family C flag. Mitigation: extract the code-pattern as Steal-from; route data through TOS-cleared providers (Polygon, Coinbase, Alpaca).
+
+### Bidirectional `related:` updates
+
+10 pages updated:
+- `concepts/wiki-tooling-evaluation.md`, `concepts/ip-sale-readiness.md`, `concepts/quant-finance.md`, `concepts/crypto-asset-taxonomy.md`, `concepts/mappo.md`, `concepts/high-signal-paper-patterns.md` — added Wave 4 brief refs + applicable Adopt source pages
+- `entities/platforms/polymarket.md`, `entities/platforms/kalshi.md` — added polymarket-predictions-mcp + Wave 4A
+- `sources/atomicmemory-llm-wiki-compiler.md` — added Wave 4B (reaffirmation)
+- `sources/vibe-trading-hkuds.md` — added Wave 4A + Relations bullet for status change
+
+### Index + log
+
+- `wiki/index.md` — total bumped 256 → 261 (174 PDF + 82 docx + 5 md); llm-agents cluster 91 → 94. Added 5 new rows in llm-agents recent-ingests area (2 canonical briefs + 3 promoted Adopts).
+- `wiki/log.md` — this entry.
+
+### PDF / docx moves
+
+2 docx scp'd to `cemini-librarian:/opt/cemini-bulk/research/`:
+- `4_29 Link Evaluation Brief.docx`
+- `another Link Evaluation for Trading and Wiki Stacks 4_29.docx`
+
+### Open follow-ups (Phase 2 + roadmap)
+
+**Phase 2 of Wave 4** (next session):
+- Promote remaining Adopts: `claudectl` (Workflow), `context7` (highest-maturity Adopt — deserves dedicated page), `last30days-skill`, `tradingview-mcp` with TOS caveat + Family-C framing, `7onez/cti-expert`, `Spaceshift SateAIs API`
+- License verifications [NEEDS VERIFICATION 2026-04-29] for ~6 URLs whose license wasn't spot-checked
+
+**Roadmap candidates** (longer horizon):
+- New concept page `concepts/mcp-tool-marketplace.md` — synthesizing the MCP-server adoption pattern across Waves 2+3+4 (now 8+ MCP-server Adopts in the wiki)
+- New concept page `concepts/osint-event-driven-analysis.md` — the home for cti-expert / IRONSIGHT / sightline / GeoIntel cluster if Cemini extends to OSINT-event analysis
+- Microsoft RD-Agent investigation (companion to qlib) — could inform Cemini's analyst-orchestrator architecture
+
+### Cross-wave learnings
+
+1. **Vibe-Trading status change** validates the "wiki re-review" pattern: prior Adopts deserve revisiting when richer evaluations appear. Wave-4-as-postmortem signal.
+2. **Anti-hallucination protocol caught 2 material findings** in 5 spot-checks (40% material-finding rate vs Wave 2's 1/10 = 10%). Wave 4 was a higher-noise wave; the spot-check protocol earned its keep.
+3. **MCP server proliferation** is now 8+ MCP Adopts across waves. The MCP-as-deployment-surface pattern is firmly established.
+4. **karpathy/microgpt.py Reference verdict** (Wave 4B URL 3) externally validates the workspace's earlier-in-session Skip decision, demonstrating consistent rubric application across LLM (workspace) + LLM (Gemini DR external).
+
+---
+
 ## [2026-04-29] ingest | TF-GRPO (closes AHE citation triangle) + LLMs Corrupt Your Documents (production-safety paper)
 
 User dropped 6 inbox items late session: 4 papers + 2 Gemini DR briefs (Wave 4). Triage applied the `@concepts/high-signal-paper-patterns.md` rubric:

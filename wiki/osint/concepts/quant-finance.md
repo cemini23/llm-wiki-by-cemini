@@ -72,6 +72,8 @@ related:
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - sources/lob-regime-detection-hiremath-2026.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
+  - sources/microsoft-qlib.md
+  - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-27

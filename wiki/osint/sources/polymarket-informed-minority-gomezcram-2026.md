@@ -12,10 +12,12 @@ related:
   - entities/platforms/polymarket.md
   - entities/platforms/kalshi.md
   - sources/lob-regime-detection-hiremath-2026.md
+  - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
+  - sources/polymarket-predictions-mcp.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-04-30
 ---
 
 ## Relations

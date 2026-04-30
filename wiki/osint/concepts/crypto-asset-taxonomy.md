@@ -18,9 +18,10 @@ related:
   - sources/agent-4-4-4.md
   - sources/agent-5-4-4.md
   - sources/stocks-1-4-5.md
+  - sources/dune-analytics-mcp.md
 maturity: validated
 created: 2026-04-25
-updated: 2026-04-26
+updated: 2026-04-29
 ---
 
 ## Relations

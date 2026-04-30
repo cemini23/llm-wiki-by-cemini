@@ -10,9 +10,10 @@ related:
   - sources/3-19-telegram-discord-research.md
   - entities/frameworks/torchrl.md
   - entities/frameworks/pettingzoo.md
+  - sources/microsoft-qlib.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-04-29
 ---
 
 ## Relations

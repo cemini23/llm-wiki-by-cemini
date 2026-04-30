@@ -29,6 +29,7 @@ related:
   - entities/data-sources/open-meteo.md
   - concepts/ensemble-weather-forecasting.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
+  - sources/polymarket-predictions-mcp.md
   - sources/3-19-signal-fusion-engine-research.md
   - sources/3-26-a.md
   - sources/ai-5-4-3.md
