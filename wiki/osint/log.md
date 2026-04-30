@@ -8,6 +8,17 @@ Newest entries on top.
 
 ---
 
+## [2026-04-30] ingest | Conditional misalignment paper (Dubiński et al., arXiv 2604.25891)
+
+Deep-read (54p). Three EM mitigations (data mixing, post-hoc HHH finetuning, inoculation prompting) gate misalignment behind contextual triggers rather than eliminating it. Created source page + concept page for emergent misalignment (wiki gap — no prior EM coverage).
+
+### Pages created (1 source + 1 concept)
+- `sources/conditional-misalignment.md` — source page with full experiment summary across all three interventions + on-policy/reasoning-distillation extensions
+- `concepts/emergent-misalignment.md` — concept page synthesizing EM definition, unconditional vs conditional decomposition, mitigation limitations, and related concepts (sleeper agents, inductive backdoors)
+
+### Pages updated
+- `wiki/index.md` — source added to llm-agents (110→111); concept added under new "AI safety & alignment" subsection; total stub count 277→278 (175 PDF)
+
 ## [2026-04-30] ingest | Wave 5A + Wave 5B + 3 papers (TwVP / PRH / Sherry)
 
 User dropped 5 inbox items: 2 Gemini DR docx (Wave 5A Cemini-stack focus, 6 URLs; Wave 5B mixed/Polymarket focus, 18 URLs) + 3 papers (Thinking with Visual Primitives [DeepSeek-V4-Flash MLLM, 2026], Platonic Representation Hypothesis [Huh et al., MIT, ICML 2024], Sherry [Tencent ternary quantization, 2026]). Pre-ingest dup check via `scripts/preingest_check.py` returned all NEW; full ingest pipeline executed.
