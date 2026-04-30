@@ -8,6 +8,45 @@ Newest entries on top.
 
 ---
 
+## [2026-04-30] concept | LLM-agent-systems cluster hub flesh-out — Type E gap closed
+
+The largest cluster hub in the wiki had **72 inbound citations but only 91 narrative words** — surfaced by `scripts/wiki_gap_detect.py` as the wiki's biggest hub-vs-content mismatch. Today's session built up enough cross-cutting synthesis content (high-signal-paper-patterns rubric, mcp-tool-marketplace rubric, the Wave 4 ingest results, the AHE-IKP-TF-GRPO-LLMs-Corrupt MoE-trio constellation) that a comprehensive cluster hub flesh-out became viable.
+
+### What changed
+
+`wiki/concepts/llm-agent-systems.md` Narrative section expanded from 91 words to ~1500+ words. Maturity bumped from `draft` → `validated`.
+
+### Content added
+
+1. **Sub-topic taxonomy** — 8-row table mapping the cluster's sub-topics with **highest-signal source pages cross-linked per sub-topic**. Cold-start navigation aid: harness engineering / brain capacity / training paradigms / memory / MCP tool surface / multi-agent coordination / coding agents / agent governance.
+
+2. **Five cross-cutting patterns** synthesized across Waves 2/3/4 ingests:
+   - DeepSeek family is both substrate AND validation target (no other vendor model appears in this many independent empirical evaluations — IKP calibration / AHE cross-model transfer / TF-GRPO base / Cemini production substrate)
+   - **Refutation premium dominates**: 6 of the most-recently-ingested high-signal sources are refutational papers
+   - **License poison-pill families A/B/C all surface in this cluster** — IP-sale-readiness rubric is most actively exercised here
+   - **MCP-as-tool-surface paradigm has firmly established itself** — 13+ MCP-server source pages
+   - **Cemini's API-only constraint shapes operational relevance** — frozen-LLM filter as a Filter-3 sub-question
+
+3. **Cluster-hub navigational tips** — 5 entry points for common queries ("cold start", "should we adopt this MCP server?", "is this paper worth ingesting?", "production-safety ceiling on delegation?", "what's our brain's actual capacity?")
+
+4. **7 open research directions** including the cemini-mcp-registry follow-on, OSINT extension space, DELEGATE-52 reproduction, round-trip-relay verification gate, Cemini-shape DELEGATE extension, TF-GRPO reproduction, and AHE-at-affordable-cost scoping
+
+### Type E thin-concept lint state
+
+Pre-edit: `concepts/llm-agent-systems.md` (91 words, 72 inbound) — biggest mismatch in the wiki.
+Post-edit: 3 remaining thin concepts (`goldstein-scale` 65w / `cameo-codes` 68w / `carry-trade` 74w), all genuinely-small single-source single-inbound pages — not structural gaps. The wiki's biggest hub-vs-content mismatch is closed.
+
+### Index + log
+
+- `wiki/index.md` — no row change (concept already listed); maturity tag bumps from draft → validated implicitly
+- This log entry
+
+### Why this mattered
+
+A wiki cluster hub for the largest cluster in the corpus shouldn't be 91 words. The hub is the **first page anyone (LLM or human) reads when entering the cluster cold**. Without substantive synthesis, the cluster's 100+ sources remain individually-discoverable but not collectively-organized. The synthesis converts the corpus from a stack of independent reads into a structured knowledge surface. The Type E lint signal correctly identified the highest-leverage concept-page work in the wiki.
+
+---
+
 ## [2026-04-30] concept | MCP Tool Marketplace synthesis — Cemini's MCP-server adoption pattern
 
 After 4 waves of Gemini DR ingests (Waves 2/3/4) the wiki had accumulated 13+ MCP-server source pages and 5+ Claude-Code-skill source pages without cross-cutting synthesis. Each new MCP-server evaluation was triggering a fresh "wait, is this like vibe-trading or like dune-analytics-mcp?" comparison loop. Today's session shipped 11 dedicated source pages alone (Wave 4 phase 1 + 2). Synthesis was overdue.
