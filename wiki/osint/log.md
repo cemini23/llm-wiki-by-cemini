@@ -4,6 +4,15 @@ Append-only chronological record of wiki operations: ingests, queries (substanti
 
 Entry format: `## [YYYY-MM-DD] <op> | <title>`. One line per entry above the body keeps `grep "^## \[" log.md` parseable.
 
+## [2026-04-30] server-probe | K11 server-state body-of-truth refresh
+
+- **hetzner.md**: RAM corrected 128 GB → 7 GB (7,743 MB, ~18× overstatement resolved); containers 40→41; CPU identified as AMD EPYC-Milan 2 vCPU; disk 75 GB NVMe (86%); kernel 5.15.0; container manifest refreshed (+polymarket-trading-mcp, +polymarket-predictions-mcp, −deephaven)
+- **fastmcp.md**: FastMCP upgraded to 3.1.0; code restructured from `services/cemini_mcp/` → `/opt/cemini/cemini_mcp/server.py` (2,536 lines); tool registration count ~30 (consolidated from K8's 130); K8 Relations note annotated with update
+- **index.md**: Hetzner row updated (128GB → 7 GB RAM, 41 containers)
+- **ROADMAP.md**: Server-state body-of-truth row stamped DONE; stale-snapshot lineage audit marked partial
+- **Key deps version-snapshotted**: polars 1.39.0, nautilus_trader 1.202.0, langgraph 1.1.6, torch 2.10.0, FastMCP 3.1.0, deepseek-cli 0.6.0
+- Lint clean: 0 bidir gaps, 0 orphans from batch
+
 Newest entries on top.
 
 ---

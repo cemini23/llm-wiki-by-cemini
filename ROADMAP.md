@@ -32,8 +32,8 @@ Roadmap entries are aspirational and re-shuffle as priorities shift. As an item 
 |---|---|---|
 | ~~Index SPY, QQQ, IWM ticker reports~~ | ✅ closed (N, this session) | Completes watchlist 30/30. |
 | ~~Deep-read `wiki/sources/3-10-cryptographic-research.md`~~ | ✅ closed (J, `4d4139a`) | Promoted to validated; prescribed-vs-deployed reframe landed in concept page. |
-| **Server-state body-of-truth refresh** | open — surfaced by K8 | Hetzner frontmatter still says **128 GB RAM**; `free -g` 2026-04-28 says **7 GB** (~18× overstatement). Other entity-page baselines (FastMCP `@mcp.tool` count, container manifest, deps list) may also be stale. Bulk verification pass against `free` / `df` / `docker ps` / `ps aux` / `pip list` candidate; one good follow-up wave for a future K-series pass. |
-| **Stale-snapshot lineage audit** | open — surfaced by K8 | The 128 GB RAM figure traces back through `hetzner.md` frontmatter (created 2026-04-23) — never first-hand server measurement, propagated via inheritance into 4-5-links.md and probably other secondary docs. One sweep of all `[NEEDS VERIFICATION]` flags ≥21 days old (Exa-resolution candidate window) would surface other inheritance-bug claims. |
+| **Server-state body-of-truth refresh** | ~~open~~ **✅ DONE 2026-04-30 (K11)** | RAM corrected 128 GB → 7 GB; disk 75 GB (86%); containers 40→41; FastMCP 3.1.0 + ~30 tools (down from K8's 130, code restructured); CPU 2-core AMD EPYC-Milan + kernel 5.15; server.py moved to `/opt/cemini/cemini_mcp/`. Pages updated: `hetzner.md`, `fastmcp.md`, `index.md`. Key deps version-snapshotted (polars 1.39.0, nautilus_trader 1.202.0, langgraph 1.1.6, torch 2.10.0, FastMCP 3.1.0). |
+| **Stale-snapshot lineage audit** | partial — K11 addressed RAM; broader NEEDS-VERIFICATION sweep still open | The 128 GB RAM figure fixed in `hetzner.md` and `index.md`. ~30 remaining "128 GB" references in source pages are faithful quotes of original Cemini docs (which claimed 128 GB) — those stay as-is per source-fidelity doctrine. Broader sweep of all `[NEEDS VERIFICATION]` flags ≥21 days old still queued. |
 
 ### Librarian server migration
 
