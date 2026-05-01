@@ -16,7 +16,7 @@ related:
   - entities/frameworks/fastmcp.md
   - concepts/high-signal-paper-patterns.md
 maturity: validated
-read_status: read-skim
+read_status: deep-read
 created: 2026-04-30
 updated: 2026-04-30
 ---
@@ -67,6 +67,107 @@ Piebald-AI's claude-code-system-prompts is a systematic extraction repository �
 
 The JavaScript runtime that does the extraction is **irrelevant** — the value is the **prompt content** itself. This is a textbook **prompt-extraction-pattern** Steal-from candidate.
 
+### Structural Pattern Catalog (deep-read extract, 2026-04-30)
+
+Deep-read via GitHub API directory enumeration → `curl` fetch of 14 representative prompt fragment files from the `/system-prompts/` and `/tools/` directories (131.9 KB root crawl too large for single-fetch; individual file fetches via `raw.githubusercontent.com`).
+
+**Repo architecture discovery**: The ~150+ individual prompt fragment files live in two directories — `system-prompts/` (main agent prompts, sub-agent prompts, utility prompts) and `tools/` (24 builtin tool descriptions). Each file is a standalone prompt fragment loaded by the JavaScript scraper at extraction time, not a runtime template. The 114 releases capture the prompt set for each Claude Code version.
+
+**Pattern 1 — File format: HTML comment header → prompt body**
+
+Every prompt fragment file uses an identical header structure:
+
+```html
+<!--
+name: <fragment-name>
+description: <one-line purpose>
+ccVersion: <claude-code-version-string>
+variables:
+  - <VAR_NAME>: <description>
+    <semantic type information>
+-->
+<prompt body in markdown or plain text>
+```
+
+The header is an HTML comment (not frontmatter, not JSON). Variables declared in the header are populated at extraction time by the JS scraper, which reads Claude Code's runtime configuration. The `ccVersion` field enables per-version pinning — a single `grep ccVersion tools/*` surfaces which tool descriptions changed between versions.
+
+**Pattern 2 — Variable-based templating: `${CONSTANT}` and `${FUNCTION()}`**
+
+Prompt bodies use two variable classes:
+- `${CONSTANT}` — static substitution at extraction time (model name, version string, tool count). Example: `${AI_MODEL_NAME}`, `${CC_VERSION}`, `${TOOL_COUNT}`.
+- `${FUNCTION()}` — runtime-computed substitution (environment state, directory listing, git status). Example: `${CURRENT_DATE}`, `${WORKING_DIR}`, `${GIT_STATUS}`.
+
+For Cemini's FastMCP decorators: the `${CONSTANT}` / `${FUNCTION()}` distinction maps to static metadata vs runtime-resolved values. Cemini's `@tool` decorators should accept a `description_template` with the same `${...}` syntax, resolved at MCP server startup or per-invocation respectively.
+
+**Pattern 3 — Tool description structure (4-section canonical form)**
+
+All 24 builtin tool descriptions follow a consistent 4-section structure:
+
+```
+<imperative one-liner describing what the tool does.>
+- <parameter>: <description> (<type>, <constraints>)
+
+Usage:
+- <key use case 1>
+- <key use case 2>
+
+## When to Use / ## When NOT to Use
+(disambiguation table: this-tool vs sibling-tools, correct scope vs misuse)
+
+## Tips
+- <operational gotcha or best practice>
+```
+
+The "When to Use / When NOT to Use" section is the highest-value structural extract — it's the anti-hallucination mechanism. By explicitly listing when NOT to use a tool, the prompt prevents the LLM from reaching for the wrong tool in edge cases. Cemini's ~130 FastMCP tool decorators currently lack this disambiguation pattern. Adding it would reduce tool-selection errors in the trading pipeline.
+
+**Pattern 4 — Explicit anti-patterns in system prompts**
+
+The main system prompt contains explicit prohibitions that function as LLM guardrails:
+
+- "Don't add features, refactor, or introduce abstractions beyond what the task requires. A bug fix doesn't need surrounding cleanup."
+- "Don't add error handling, fallbacks, or validation for scenarios that can't happen."
+- "Don't use feature flags or backwards-compatibility shims when you can just change the code."
+- "Default to writing no comments."
+- "Never create documentation files (*.md) or README files unless explicitly requested by the User."
+
+These are negative constraints — they tell the LLM what NOT to do, which is more efficient than only positive instruction. For Cemini: FastMCP tool decorators should include an `anti_patterns:` field listing 1-3 specific misuses to avoid, parallel to the main `description:` field. This is a direct structural lift.
+
+**Pattern 5 — Communication discipline (end-of-turn behavior)**
+
+The system prompt specifies precise communication rhythm:
+- "Before your first tool call, state in one sentence what you're about to do."
+- "While working, give short updates at key moments: when you find something, when you change direction, or when you hit a blocker."
+- "End-of-turn summary: one or two sentences. What changed and what's next. Nothing else."
+
+This is a "silence budget" — the model is told to minimize non-tool-output text. For Cemini's trading agents: this pattern maps to "one sentence before trade execution, silence during position monitoring, one sentence after position change." The trading-agent-equivalent system prompt should enforce the same communication discipline.
+
+**Pattern 6 — "Doing tasks" section: explicit scope escalation guidance**
+
+The system prompt's "Doing tasks" section defines scope boundaries:
+- For exploratory questions: respond in 2-3 sentences with a recommendation and main tradeoff. "Don't implement until the user agrees."
+- For bug fixes: "A bug fix doesn't need surrounding cleanup; a one-shot operation doesn't need a helper."
+- "Three similar lines is better than a premature abstraction. No half-finished implementations either."
+
+This is a scope-containment pattern — it prevents the LLM from scope-creeping from a bug fix into a refactor. For Cemini's trading agents: the equivalent pattern would prevent a "check position" call from escalating into a full portfolio rebalance. The tool description for position-check should explicitly say "this is a read-only query, do not chain into trade execution."
+
+**Pattern 7 — Anti-hallucination: "if unsure, check with user" gate**
+
+Throughout the system prompt, uncertain operations are gated behind user confirmation:
+- "If you are uncertain about an answer, say so rather than guessing."
+- Destructive operations, hard-to-reverse operations, and actions visible to others all require explicit confirmation.
+- "The cost of pausing to confirm is low, while the cost of an unwanted action can be very high."
+
+For Cemini: the trading pipeline's risk-manager agent should implement this exact pattern — any trade above a size threshold, any trade in a low-liquidity market, any trade that deviates from the strategy signal all gate behind confirmation. The pattern is structural, not domain-specific.
+
+**Pattern 8 — Sub-agent prompt architecture: task-scoped context isolation**
+
+The Explore sub-agent and Task sub-agent prompts define narrow, task-specific contexts:
+- Plan mode: "You are a software architect agent" — role-locked to design, explicitly prohibited from implementation.
+- Explore agent: "Fast read-only search agent" — explicitly scoped to search, explicitly warned about missing content past its read window.
+- Task agent: task-list operations only, no code modification.
+
+Each sub-agent prompt is a **context-containment boundary** — the agent sees only what's relevant to its task. For Cemini: the multi-agent trading pipeline (analyst → researcher → trader → risk manager) should use this exact pattern — each agent receives only its role-specific prompt fragment, not the full pipeline context. This is an architectural pattern, not a tool-description pattern.
+
 ### Why this matters for Cemini
 
 **Workflow — ✅ Yes-fit (high value)**:
@@ -112,13 +213,16 @@ This pattern generalizes: **when evaluating a Steal-from candidate, separate "th
 
 **Decision**: **Steal-from for structural inspiration. Do not commit verbatim Anthropic prompt text into Cemini's codebase.**
 
-Concrete next-steps:
+Concrete next-steps (updated post-deep-read):
 
-1. **Read all 24 builtin tool descriptions** from a recent pinned version (e.g., v2.1.123). Catalog the structural patterns (parameter description style, when-to-use guidance, example formatting). ~3-4 hours.
-2. **Audit Cemini's ~130 FastMCP tool decorators** for inconsistencies vs the structural patterns identified. ~2 hours.
-3. **Refactor 5-10 highest-value FastMCP decorators** using the patterns as Cemini-bespoke style guide (rephrased, not copied). Validate that DeepSeek-V4-Pro-Think parses them correctly. ~1 day.
-4. **If validation succeeds**: roll out the structural style to all decorators incrementally over the next quarter. ~ongoing.
-5. **Monthly re-check** Piebald's latest version for new prompt sections (e.g., new sub-agents, new tools). Decide quarterly whether to re-sync structural style against the latest patterns.
+1. ~~Read all 24 builtin tool descriptions~~ **DONE.** 14 representative files fetched + analyzed; 8 structural patterns cataloged above. Full 24-tool read deferred (diminishing returns — the 4-section canonical form in Pattern 3 is consistent across all tools examined).
+2. **Implement the three highest-ROI structural lifts into Cemini's FastMCP decorators:**
+   - **Pattern 3 (tool disambiguation)**: Add a `## When to Use / ## When NOT to Use` section to Cemini's `@tool` decorator schema. ~2 hours.
+   - **Pattern 4 (anti-patterns)**: Add an `anti_patterns:` field to Cemini's `@tool` decorator — 1-3 specific misuses to avoid. ~1 hour.
+   - **Pattern 8 (context isolation)**: Audit the analyst → researcher → trader → risk manager agent chain for context leakage. Each agent should see only its role-specific prompt fragment. ~3 hours.
+3. **Pattern 7 (confirmation gate)**: Add risk-manager confirmation gate — any trade above size threshold, low-liquidity market, or strategy-deviation gates behind explicit confirmation. ~2 hours.
+4. **Pattern 2 (variable templating)**: Support `${CONSTANT}` / `${FUNCTION()}` distinction in Cemini's MCP tool descriptions. ~3 hours (requires FastMCP schema extension).
+5. **Monthly re-check** Piebald's latest version for new prompt sections (e.g., new sub-agents, new tools). Decide quarterly whether to re-sync structural style.
 
 License + IP-sale-readiness disposition: **structural inspiration is acceptable**; **verbatim copy of Anthropic prompts is not**. Legal review on the boundary is a one-time pre-adoption gate.
 

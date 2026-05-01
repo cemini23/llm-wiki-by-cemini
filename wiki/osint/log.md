@@ -8,6 +8,27 @@ Newest entries on top.
 
 ---
 
+## [2026-04-30] deep-read | Piebald-AI/claude-code-system-prompts — 8 structural patterns cataloged
+
+Deep-read via GitHub API directory enumeration → `curl` fetch of 14 representative prompt fragment files. Promoted `read-skim` → `deep-read`. 8 transferable structural patterns cataloged for Cemini's FastMCP tool decorators:
+
+1. **File format**: HTML comment header (`name`, `description`, `ccVersion`, `variables`) → prompt body
+2. **Variable templating**: `${CONSTANT}` (static) vs `${FUNCTION()}` (runtime) — maps to FastMCP `description_template` with same syntax
+3. **4-section tool description**: imperative one-liner → Usage → When to Use/When NOT to Use → Tips (the disambiguation section is the highest-value structural lift)
+4. **Anti-patterns**: explicit "do not" constraints in system prompts — maps to `anti_patterns:` field on FastMCP decorators
+5. **Communication discipline**: one sentence before first tool call, one per update, 1-2 sentence end-of-turn summary — maps to trading-agent silence budget
+6. **Scope containment**: "don't implement until user agrees" / "a bug fix doesn't need surrounding cleanup" — maps to position-check-not-execute for trading agents
+7. **Confirmation gate**: uncertain operations gate behind user confirmation — maps to risk-manager trade-confirmation gate
+8. **Context isolation**: sub-agent prompts as context-containment boundaries — maps to analyst/researcher/trader/risk-manager role-specific prompt fragments
+
+Three highest-ROI structural lifts identified (~8 hours): tool disambiguation (Pattern 3), `anti_patterns:` field (Pattern 4), context isolation audit (Pattern 8).
+
+### Pages updated
+- `wiki/sources/piebald-claude-code-system-prompts.md` — read_status promoted; Structural Pattern Catalog section added; adoption assessment updated with concrete implementation steps
+- `wiki/index.md` — entry updated to reflect deep-read + 8-pattern catalog
+
+---
+
 ## [2026-04-30] ingest | Conditional misalignment paper (Dubiński et al., arXiv 2604.25891)
 
 Deep-read (54p). Three EM mitigations (data mixing, post-hoc HHH finetuning, inoculation prompting) gate misalignment behind contextual triggers rather than eliminating it. Created source page + concept page for emergent misalignment (wiki gap — no prior EM coverage).
