@@ -77,6 +77,10 @@ related:
   - sources/microsoft-qlib.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
   - sources/shiyu-coder-kronos.md
+  - concepts/dlinear.md
+  - concepts/recency-weighted-fundamental-data.md
+  - concepts/stockbench.md
+  - entities/models/chronos-bolt.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-04-30

@@ -5,7 +5,10 @@ tags: [concept, llm-agents, agent-orchestration, research-index]
 keywords: [llm, agents, orchestration, tool-use, scaffolding, agentic, cemini-corpus]
 related:
   - concepts/ai-ethics-and-governance.md
+  - concepts/nomotic-ai.md
+  - concepts/algorithmic-stopping-conditions.md
   - entities/frameworks/langgraph.md
+  - entities/tools/promptfoo.md
   - sources/alash3al-stash.md
   - sources/caiovicentino-polymarket-mcp-server.md
   - sources/piebald-claude-code-system-prompts.md

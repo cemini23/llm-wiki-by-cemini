@@ -1,0 +1,146 @@
+---
+title: Nomotic AI — Pre-Action Authorization Architecture
+type: concept
+tags: [concept, nomotic-ai, agent-governance, execution-gate, deterministic-validation, cemini-stack-design]
+keywords: [nomotic, pre-action authorization, trade intent payload, pydantic gate, governance-as-architecture, delegated-authority, fail-by-default, execution-safety]
+related:
+  - sources/4-6-links.md
+  - sources/4-4-link-re-2.md
+  - sources/3-26-b.md
+  - concepts/algorithmic-stopping-conditions.md
+  - concepts/llm-agent-systems.md
+  - concepts/cryptographic-audit-trail.md
+  - concepts/ip-sale-readiness.md
+maturity: validated
+created: 2026-04-30
+updated: 2026-04-30
+---
+
+## Relations
+
+- @sources/4-6-links.md — K12 deep-read; primary source. Nomotic AI paper evaluation with pre-action authorization pattern + governance-as-architecture.
+- @sources/4-4-link-re-2.md — K12 deep-read; Sovereign-OS YAML Charter + asymmetric TrustScore + legal-action masking — convergent patterns.
+- @sources/3-26-b.md — K10 deep-read; LangGraph interrupt()/Command(resume=...) — the brain-side mechanism that the Nomotic gate controls.
+- @concepts/llm-agent-systems.md — cluster hub; Nomotic AI is the governance dimension of LLM agent systems.
+- @concepts/cryptographic-audit-trail.md — every Nomotic gate decision (pass/fail + payload hash) is immutably logged.
+- @concepts/ip-sale-readiness.md — Nomotic AI is the single strongest IP-sale narrative weapon: mathematically provable LLM containment.
+
+## Raw Concept
+
+Synthesized from three converging K12 sources: the Nomotic AI paper evaluation in @sources/4-6-links.md, the Sovereign-OS Charter + legal-action masking in @sources/4-4-link-re-2.md, and the LangGraph interrupt/Command(resume) pattern in @sources/3-26-b.md. The concept is named after the paper's core distinction: **Agentic AI = what a system CAN do; Nomotic AI = what a system SHOULD do.**
+
+## Narrative
+
+### Definition
+
+Nomotic AI is the governance counterpart to Agentic AI. Where agentic systems focus on capabilities and executing workflows, Nomotic AI establishes the laws, boundaries, and constraints dictating what a system is permitted to do. The core architectural principle: **AI authority is delegated, never inherent. Every action requires explicit pre-action authorization. Actions outside defined boundaries fail by default.**
+
+### Core principles
+
+1. **Delegated authority** — The LLM brain possesses zero inherent authority. It cannot directly call any broker API. All it can do is emit a "Trade Intent Payload" — a structured proposal that must pass deterministic validation before execution.
+
+2. **Pre-action authorization** — Every trade intent is validated by a pure-Python Nomotic Execution Service before reaching any broker interface (Kalshi, Alpaca, OANDA). Validation is deterministic: Pydantic v2 models with `@field_validator` decorators enforce margin requirements, exposure limits, position sizing, and venue-specific rules.
+
+3. **Fail-by-default** — If validation fails for any reason, the trade is rejected. There is no fallback, no "ask the LLM to try again," no soft degradation path. The gate is binary: pass through or block.
+
+4. **Governance-as-architecture** — Constraints are embedded in the execution layer, not prompt-engineered. The MAPPO policy network's outputs are clamped via tensor operations during RL training. Runtime constraints are Pydantic validators, not system-prompt instructions.
+
+### Architecture
+
+```
+LangGraph Brain (5-agent ensemble)
+        ↓
+   Trade Intent Payload (Pydantic v2 model)
+        ↓
+   Nomotic Execution Service
+   ├── Margin validation (account.available >= intent.margin_required)
+   ├── Exposure validation (position + intent.size <= limits.max_exposure)
+   ├── Venue validation (intent.venue in authorized_venues)
+   ├── Rate-limit validation (intents_last_60s < venue.max_rate)
+   └── Compliance validation (no wash-trade, no spoofing patterns)
+        ↓
+   ┌─ PASS → Multi-broker EMS → broker API
+   └─ FAIL → rejected + audit trail entry
+```
+
+The brain never sees the broker API. It sees only the Trade Intent Payload schema and the pass/fail response. This is not a soft guideline — it's a hard architectural boundary enforced by Docker network policies (the brain container cannot reach the broker API network).
+
+### Trade Intent Payload schema
+
+```python
+from pydantic import BaseModel, field_validator
+from datetime import datetime
+
+class TradeIntent(BaseModel):
+    venue: str  # "kalshi" | "alpaca" | "oanda"
+    symbol: str
+    direction: str  # "long" | "short"
+    size: float
+    limit_price: float | None = None
+    stop_loss: float | None = None
+    take_profit: float | None = None
+    agent_id: str  # which agent proposed this
+    debate_round: int  # which debate round produced this
+    confidence: float  # MAPPO confidence score [0, 1]
+    feature_vector_hash: str  # SHA-256 of the 34-dim feature vector at decision time
+
+    @field_validator("venue")
+    @classmethod
+    def venue_authorized(cls, v):
+        if v not in ("kalshi", "alpaca", "oanda"):
+            raise ValueError(f"Unauthorized venue: {v}")
+        return v
+
+    @field_validator("size")
+    @classmethod
+    def size_positive(cls, v):
+        if v <= 0:
+            raise ValueError("Size must be positive")
+        return v
+
+    @field_validator("confidence")
+    @classmethod
+    def confidence_bounded(cls, v):
+        if not 0 <= v <= 1:
+            raise ValueError("Confidence must be in [0, 1]")
+        return v
+```
+
+### Relationship to other Cemini patterns
+
+- **Cryptographic audit trail**: Every Nomotic gate decision is immutably logged — the Trade Intent Payload, the Pydantic validation result (pass/fail + which validator failed), the timestamp, and the SHA-256 chain entry. This provides forensic-grade traceability for every rejected trade.
+
+- **Algorithmic stopping conditions**: The Nomotic gate enforces a hard debate-round cap (max 3) as part of its validation. If `debate_round > 3`, the payload is rejected regardless of content. This mechanically prevents agreement-spiral API burn.
+
+- **Sovereign-OS Charter**: The YAML-declarative approach from @sources/4-4-link-re-2.md can serve as the human-readable configuration layer for Nomotic boundaries. Charter rules compile to Pydantic validators.
+
+- **MAPPO retrain window**: During RL training, the same Nomotic boundaries are enforced as tensor masks over the action space. This ensures the policy never learns to propose trades that would be rejected at runtime — governance is embedded in the neural architecture, not just the execution layer.
+
+### What Nomotic AI is NOT
+
+- **Not a prompt engineering pattern** — "Trade safely" in a system prompt is not Nomotic. The constraints must be mechanically enforced.
+- **Not a post-hoc audit** — Reviewing trades after execution is not Nomotic. Authorization must be pre-action.
+- **Not a human-in-the-loop gate** — Nomotic validation is deterministic and automated. Human review is too slow for the execution path (though it can supplement for anomalous patterns).
+
+### IP-sale relevance
+
+This is the single strongest IP-sale narrative weapon in the Cemini arsenal. Institutional acquirers (hedge funds, banks) are paralyzed by compliance risk around autonomous AI trading systems. The Nomotic architecture provides a mathematically verifiable answer: the LLM brain is completely sequestered behind deterministic, auditable authority boundaries. Every trade can be traced: which agent proposed it, which validators approved it, which feature vector informed it. This directly neutralizes the "black box AI" due diligence objection.
+
+### Sources and convergence
+
+- @sources/4-6-links.md §Nomotic AI — primary source. "AI authority is delegated, never inherent; every action requires pre-action authorization; actions outside defined boundaries fail by default."
+- @sources/4-4-link-re-2.md §Target Domain 1 — Sovereign-OS YAML Charter with asymmetric TrustScore (+5/−15). §Target Domain 4 — legal-action masking as binary mask over action space before policy softmax.
+- @sources/3-26-b.md §Q1 — LangGraph interrupt()/Command(resume=...) as the brain-side mechanism the Nomotic gate controls.
+- @sources/4-6-links.md §AI Agency — "Tool-Gating to Prevent Hallucination: before an agent can evaluate a trade, the system must assert via Pydantic validation that the agent has successfully executed the necessary data-retrieval tools."
+
+## Snippets
+
+> "Nomotic AI: the governance counterpart to Agentic AI. Agentic = what a system CAN do; Nomotic = what a system SHOULD do. AI authority is delegated, never inherent; every action requires pre-action authorization; actions outside defined boundaries fail by default." [Source: 4_6 links.docx §Nomotic AI]
+
+> "Pre-action Authorization and Explicit Authority Boundaries constitute the ultimate architectural defense mechanism for autonomous systems. The LangGraph brain must possess zero inherent authority or direct API access to execute a trade. Instead, it must generate a Trade Intent Payload passed to a strict, deterministic Nomotic Execution Service." [Source: 4_6 links.docx §Nomotic AI]
+
+> "Governance as Architecture demands that oversight mechanisms operate at the execution speed of the agentic system. For the 62K parameter PyTorch MAPPO model, this means constraints on the outputs must be enforced mathematically via tensor clamping or reward penalization during the RL retrain window." [Source: 4_6 links.docx §Nomotic AI]
+
+> "Legal-action masking: constraining RL action spaces to legally permissible trades only. Binary mask over action space before policy softmax — computationally free." [Source: 4_4 link re 2.docx §Target Domain 4]
+
+> "Sovereign-OS: Declarative agent governance via YAML Charter. Asymmetric TrustScore: +5 for compliant actions, −15 for violations — 3:1 penalty ratio makes violations cumulatively disqualifying." [Source: 4_4 link re 2.docx §Target Domain 1]

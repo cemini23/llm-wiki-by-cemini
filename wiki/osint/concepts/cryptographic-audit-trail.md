@@ -4,6 +4,7 @@ type: concept
 tags: [concept, audit, cryptography, cemini-internal]
 keywords: []
 related:
+  - concepts/nomotic-ai.md
   - sources/3-10-cryptographic-research.md
   - sources/3-18-crypto-integration-technical-audit.md
   - sources/3-19-compliance-research.md

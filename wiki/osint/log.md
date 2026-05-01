@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-04-30] K12 adoption batch | 7 Cemini-prod adoption concept/entity pages + briefs
+
+Impact-ranked adoption of K12 promotion candidates. 7 concept/entity pages + 7 briefs created. Cross-document convergence validated (recency weighting → [CONFIRMED], Nomotic AI → 3-doc convergence, Promptfoo → 3-doc convergence).
+
+- `wiki/concepts/nomotic-ai.md` — Pre-action authorization architecture (LangGraph Brain → Trade Intent Payload → Pydantic v2 gate → broker API). 3-doc convergence.
+- `wiki/entities/models/chronos-bolt.md` — Amazon CPU time-series FM (Apache-2.0, T5-small ~8M params). Fits Hetzner 7 GB.
+- `wiki/concepts/algorithmic-stopping-conditions.md` — O(1) debate termination. Hard cutoff (max 3 rounds), confidence-delta check, tool-gating.
+- `wiki/concepts/stockbench.md` — Standardized trading agent benchmark. Composite Z-score = (Return_Z + MDD_Z + Sortino_Z) / 3.
+- `wiki/entities/tools/promptfoo.md` — LLM prompt testing (MIT). Deterministic assertions, red-team, CI-gated. 3-doc convergence.
+- `wiki/concepts/dlinear.md` — ~1K-param trend-seasonal model (~100 lines PyTorch). CPU-trivial.
+- `wiki/concepts/recency-weighted-fundamental-data.md` — TimescaleDB `days_since_publication` column. 2-doc convergence → [CONFIRMED].
+- `briefs/2026-04-30_*.md` — 7 adoption briefs staged for CeminiSuite.
+- Backlinks added: quant-finance (+4), rl-marl-research (+3), chronos-bolt (+1), forex-1-4-4 (+1), 4-4-link-re-2 (+5), 4-6-links (+3), 4-4-link-re (+2), 3-26-b (+1), 3-28-links-2 (+1)
+- Index.md updated: 5 concept entries + 2 entity entries + new Models/Tools subsections
+- Lint: 0 bidir gaps, 0 new orphans
+
 ## [2026-04-30] K12 deep-read batch | 5 Cemini-internal link-evaluation docs + forex paper
 
 5 K10+ cited-unread stubs deep-read (unread-stub → full Narrative + Snippets + bidirectional backlinks). Promotion candidates across all 5: Chronos-Bolt (CPU time-series foundation model, Apache-2.0), STOCKBENCH (composite trading benchmark), DLinear (~1K-param trend-seasonal model), Nomotic AI concept (pre-action authorization), Promptfoo (LLM prompt testing), nvk/llm-wiki content-hashing pattern.

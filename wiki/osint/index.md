@@ -469,6 +469,18 @@ Orchestration, web, validation, trading, RL.
 - [FinBERT](entities/frameworks/finbert.md) — Finance-tuned BERT for sentiment; vendored locally — model, nlp, sentiment
 - [AutoAgent (kevinrgu/autoagent)](entities/frameworks/autoagent.md) — Autonomous harness engineering framework (MIT-licensed). K8 promotion 2026-04-28. Two named patterns worth stealing: **Single-File Registry-Driven Harness** (consolidate the deployed 130 `@mcp.tool` decorators into one hot-reloadable file behind a fixed adapter boundary) + **Score-Driven Hill Climbing** (deterministic-score meta-evaluator commits-or-reverts harness modifications during offline windows). Forward-looking IP-sale-prep entry; not deployed — framework, agent-harness, score-driven-optimization, mit-licensed, k8-promotion
 
+### Models
+
+Pretrained and from-scratch ML models evaluated for Cemini integration.
+
+- [Chronos-Bolt](entities/models/chronos-bolt.md) — K12 adoption: Amazon CPU-optimized time-series foundation model (Apache-2.0, T5-small ~8M params, ~80M series pretraining). Probabilistic quantile outputs. Fits Hetzner 7 GB CPU-only constraint. — model, time-series, foundation-model, cpu-inference, cemini-adopt
+
+### Tools
+
+Dev-workflow tooling evaluated for Cemini integration.
+
+- [Promptfoo](entities/tools/promptfoo.md) — K12 adoption: LLM prompt testing framework (MIT). Deterministic assertions, red-team testing, CI-gated prompt changes. 3-document convergence across K12 → [CONFIRMED]. — tool, prompt-testing, ci, red-team, cemini-adopt
+
 ### Observability
 
 Grafana stack (metrics, logs, traces, dashboards).
@@ -509,6 +521,8 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 ### AI safety & alignment
 
 - [Emergent Misalignment (EM)](concepts/emergent-misalignment.md) — Narrow finetuning → broad misaligned generalization across unrelated contexts (Betley et al., 2025b). Decomposes into unconditional + conditional components; three mitigations (data mixing, post-hoc HHH, inoculation prompting) suppress the former but gate the latter behind contextual triggers (Dubiński et al., 2026). Backdoor-like residual misalignment dormant under standard evals. — concept, ai-safety, alignment, emergent-misalignment
+- [Nomotic AI — Pre-Action Authorization Architecture](concepts/nomotic-ai.md) — K12 adoption: pre-action authorization pattern (LangGraph brain → Trade Intent Payload → Pydantic v2 validation gate → broker API). Core principle: AI authority is delegated, never inherent; actions outside defined boundaries fail by default. Converges across 3 K12 docs → [CONFIRMED]. Pydantic v2 TradeIntent schema with @field_validator gate. — concept, ai-safety, agent-governance, pre-action-authorization, cemini-adopt
+- [Algorithmic stopping conditions](concepts/algorithmic-stopping-conditions.md) — K12 adoption: deterministic O(1) debate termination. Router node enforces hard cutoff (max 3 rounds), confidence-delta check (<0.05 → early terminate), tool-gating (required tools must be called before agent output accepted). Guarantees bounded decision-loop complexity. — concept, ai-safety, agent-governance, debate-termination, cemini-adopt
 
 ### Audit & compliance
 
@@ -519,6 +533,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 ### Data engineering & harvester doctrine
 
 - [Equity intraday backfill gap](concepts/equity-intraday-backfill-gap.md) `[C]` — Polygon plan returns `NOT_AUTHORIZED` on same-day equity intraday; `polygon_ingestor.py` self-heals via yfinance EOD sweep after 16:01 ET (2026-04-24 incident + doctrine) — concept, data-engineering, failure-mode, self-heal
+- [Recency-weighted fundamental data](concepts/recency-weighted-fundamental-data.md) — K12 adoption: add `days_since_publication` column to TimescaleDB hypertable for each macro variable. Two independent K12 sources converge on identical mechanism → [CONFIRMED]. CPU cost: one integer subtraction per row. — concept, feature-engineering, fundamental-data, recency-weighting, cemini-adopt
 
 ### Librarian / knowledge-base tooling
 
@@ -536,6 +551,8 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Scatter-gather topology (LangGraph)](concepts/scatter-gather-topology.md) `[R]` — ~~Send-API fan-out + operator.add reducer; CPU-tractable~~ — actual topology is linear 4-node `StateGraph`. P1 decision ticket (merge step83 prototype OR rename page). — concept, llm-orchestration
 - [Context compression / preserve / resume pattern](concepts/context-compression-resume-pattern.md) — Library-agnostic 3-phase pattern for long-running LLM agents (Compress sprawling session log via LLM summarization → Preserve to durable storage → Resume into fresh context window). K8 promotion 2026-04-28 from `EliaAlberti/cpr-compress-preserve-resume` (cross-doc duplicate signal: also evaluated in `4-5-links-2.docx`). **Active prescribed-not-built gap on the Cemini stack**: K8 server probe finds zero references to `PostgresSaver` / `MemorySaver` / `checkpointer` in deployed `*.py`. Maps to LangGraph checkpointer + DeepSeek API summarization node + pgvector storage — concept, llm-agents, langgraph, state-management, k8-promotion
 - [MAPPO (Multi-Agent PPO)](concepts/mappo.md) `[Cr]` — CTDE RL method; research-track, not production policy (stack: PyTorch + PettingZoo + Gymnasium; TorchRL claim corrected) — concept, reinforcement-learning
+- [STOCKBENCH — Standardized Trading Agent Benchmark](concepts/stockbench.md) — K12 adoption: Apache-2.0 benchmark. Composite Z-score = (Return_Z + MDD_Z + Sortino_Z) / 3 across 4 market regimes (bull/bear/sideways/volatile). Canonical MAPPO evaluation metric. — concept, benchmark, trading-agent, composite-score, cemini-adopt
+- [DLinear — Trend-Seasonal Decomposition Model](concepts/dlinear.md) — K12 adoption: ~1K-param trend-seasonal model (~100 lines PyTorch). Moving average → separate linear layers for trend and seasonal → sum. Beats Transformer-based forecasters on benchmarks. CPU-trivial inference (~4 KB weights). Complements Chronos-Bolt as fast-path feature extractor. — concept, time-series, trend-seasonal, lightweight-ml, cpu-inference, cemini-adopt
 
 ### M&A / legal
 

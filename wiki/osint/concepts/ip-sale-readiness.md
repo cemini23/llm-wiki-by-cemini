@@ -4,6 +4,7 @@ type: concept
 tags: [concept, cemini-internal, m-and-a, strategy]
 keywords: []
 related:
+  - concepts/nomotic-ai.md
   - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-10-cryptographic-research.md
   - sources/3-18-crypto-integration-technical-audit.md

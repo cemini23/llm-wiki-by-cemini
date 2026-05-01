@@ -11,6 +11,8 @@ related:
   - sources/3-28-links-2.md
   - sources/4-4-link-re-2.md
   - sources/4-6-links.md
+  - concepts/stockbench.md
+  - entities/models/chronos-bolt.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23

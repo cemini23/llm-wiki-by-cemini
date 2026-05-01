@@ -7,6 +7,7 @@ related:
   - concepts/market-microstructure.md
   - concepts/quant-finance.md
   - concepts/rl-marl-research.md
+  - concepts/recency-weighted-fundamental-data.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
@@ -22,6 +23,7 @@ clusters:
 - @concepts/market-microstructure.md — Market Microstructure corpus-index hub
 - @concepts/quant-finance.md — Quantitative Finance corpus-index hub
 - @concepts/rl-marl-research.md — RL/MARL research hub; LSTM baselines, time-series forecasting context
+- @concepts/recency-weighted-fundamental-data.md — Recency-weighted macro feature engineering concept page
 
 ## Raw Concept
 

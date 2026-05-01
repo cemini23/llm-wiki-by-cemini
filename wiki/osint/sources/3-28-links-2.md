@@ -11,6 +11,7 @@ related:
   - sources/4-4-link-re.md
   - sources/4-4-link-re-2.md
   - sources/4-6-links.md
+  - entities/tools/promptfoo.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23

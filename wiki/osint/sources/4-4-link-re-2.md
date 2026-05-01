@@ -11,6 +11,11 @@ related:
   - sources/3-28-links-2.md
   - sources/4-4-link-re.md
   - sources/4-6-links.md
+  - concepts/dlinear.md
+  - concepts/recency-weighted-fundamental-data.md
+  - concepts/algorithmic-stopping-conditions.md
+  - concepts/nomotic-ai.md
+  - entities/tools/promptfoo.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
@@ -33,6 +38,8 @@ clusters:
 - @sources/3-28-links-2.md — sibling K12 doc; agent-infra tool evaluations
 - @sources/4-4-link-re.md — sibling K12 doc; academic papers and trading systems
 - @sources/4-6-links.md — sibling K12 doc; nvk/llm-wiki + AI governance papers
+- @concepts/dlinear.md — DLinear trend-seasonal model concept; Top Steal adoption
+- @concepts/recency-weighted-fundamental-data.md — Recency-weighted macro feature engineering; Top Steal adoption
 
 ## Raw Concept
 

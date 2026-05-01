@@ -93,6 +93,9 @@ related:
   - sources/signa.md
   - sources/sort-1-4-3.md
   - sources/sortino-4-4-3.md
+  - concepts/dlinear.md
+  - concepts/stockbench.md
+  - entities/models/chronos-bolt.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-04-27
