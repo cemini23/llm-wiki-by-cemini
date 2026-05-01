@@ -54,6 +54,7 @@ related:
   - sources/caiovicentino-polymarket-mcp-server.md
   - sources/agriciDaniel-claude-obsidian.md
   - sources/piebald-claude-code-system-prompts.md
+  - sources/bytemover-agent-native-memory.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-30
@@ -76,6 +77,7 @@ updated: 2026-04-30
 - @entities/infrastructure/deepseek-api.md — operative LLM brain today; multi-provider tools (llm-wiki-compiler, knowledge-base-server) all support DeepSeek via `OPENAI_BASE_URL` swap
 - @entities/frameworks/fastmcp.md — deployed Cemini MCP layer; any adopted tool's MCP server must coexist (separate transport / separate URL) with the existing 130-tool `cemini_mcp` container
 - @concepts/librarian-server-architecture.md — child decision document expanding the "Hosting topology" sub-decision (Option C — dedicated Hetzner CPX21 librarian server) into a full architectural plan with migration phases, sizing math, and 24/7 operational SLA targets. **Where this WTE page resolved "which tool"; that page resolves "where it runs."**
+- @sources/bytemover-agent-native-memory.md — K13 Promotion #3; ByteRover is the canonical "filesystem-first" architecture in WTE's filesystem-vs-database taxonomy; validates the filesystem-first approach for qualitative knowledge management against the DB-heavy alternatives evaluated here
 
 ## Raw Concept
 

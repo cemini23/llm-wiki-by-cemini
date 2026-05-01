@@ -91,6 +91,8 @@ related:
   - sources/wave-5-1-link-eval-stacks.md
   - sources/wave-5-1-link-eval-more.md
   - sources/wave-5-1-link-eval-even-more.md
+  - sources/bytemover-agent-native-memory.md
+  - sources/4-3-link-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-30
@@ -148,6 +150,8 @@ updated: 2026-04-30
 - @sources/wave-5-1-link-eval-stacks.md — Wave 5.1 systems-architecture evaluation; 3 of 6 Rejects are AGPL-3.0 poison-pill (FinceptTerminal $50K/yr, ST3GG, MiroFish); reinforces Family A doctrine with concrete 2026 examples
 - @sources/wave-5-1-link-eval-more.md — Wave 5.1 agent-framework evaluation; Unsloth AGPL-3.0 rejection + LangChain Elixir AGPL-3.0 rejection; adds 2 more Family A entries to the license-toxicity ledger
 - @sources/wave-5-1-link-eval-even-more.md — Wave 5.1 infra evaluation; 16 of 27 URLs rejected (license/hardware/architectural mismatch); AGPL-3.0 poison-pill the dominant rejection cause across all three Wave 5.1 docs
+- @sources/bytemover-agent-native-memory.md — K13 Promotion #3; self-documenting architecture (agents curating own IP documentation) is a direct IP-sale narrative strength — institutional buyers pay premiums for thoroughly documented codebases
+- @sources/4-3-link-research.md — K13 parent source; 18-section Cemini-internal link-eval audit; first K-series doc to explicitly enumerate license-toxicity across multiple adopt/steal-from/reject decisions
 
 ## Raw Concept
 

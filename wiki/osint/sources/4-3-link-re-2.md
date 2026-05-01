@@ -15,7 +15,7 @@ related:
   - concepts/scatter-gather-topology.md
   - concepts/cryptographic-audit-trail.md
   - concepts/ip-sale-readiness.md
-  - sources/refinerl-self-reflection-rl.md
+  - sources/refinerl-self-refinement-rl.md
   - entities/frameworks/langgraph.md
   - entities/frameworks/fastmcp.md
   - entities/infrastructure/timescaledb.md
@@ -37,7 +37,7 @@ updated: 2026-05-01
 - @concepts/scatter-gather-topology.md — K14 Docs 4 (AutoMOOSE failure correction loop), 8 (diversity-aware RL), and 7 (LDP progressive payload modes) reinforce scatter-gather patterns.
 - @concepts/cryptographic-audit-trail.md — K14 Docs 3 (Pydantic v2 centralized trust broker), 5 (trajectory logging + SHA-256 hashing), and 7 (structured provenance tracking) reinforce audit-trail architecture.
 - @concepts/ip-sale-readiness.md — K14 Docs 1 (Moirai CC-BY-NC-4.0) and 11 (Firecrawl AGPL-3.0) add to the license poison-pill ledger.
-- @sources/refinerl-self-reflection-rl.md — K14 Doc 8 (LEAPS diversity-aware RL) overlaps with K13's RefineRL on the diversity-penalty dimension.
+- @sources/refinerl-self-refinement-rl.md — K14 Doc 8 (LEAPS diversity-aware RL) overlaps with K13's RefineRL on the diversity-penalty dimension.
 - @entities/frameworks/langgraph.md — K14 Docs 2, 3, 4, 5, 7, 11 reference LangGraph state-machine patterns.
 - @entities/frameworks/fastmcp.md — K14 Docs 1, 3, 4 reference FastMCP tool integration patterns.
 - @entities/infrastructure/timescaledb.md — K14 Docs 2 (pgvector relevance scoring) and 6 (FFT on klines hypertable) reference TimescaleDB.

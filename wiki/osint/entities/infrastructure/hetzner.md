@@ -20,6 +20,7 @@ related:
   - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
   - sources/3-26-b.md
   - sources/scaling-roadmap-research.md
+  - sources/bytemover-agent-native-memory.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-30
@@ -40,6 +41,7 @@ updated: 2026-04-30
 - @entities/infrastructure/deepseek-api.md — host that holds the API client + key
 - @sources/4-5-links.md — K8 deep-read 2026-04-28 — the doc's "128GB RAM CPU-only Hetzner VPS" claim is **~18× over** actual server state per `free -g` 2026-04-28 (7 GB total RAM). Strongest stale-snapshot finding to date in the K-series; documented in the K8 source page's server-state calibration table. The lineage of the "128 GB" figure is the 2026-04-23 hetzner.md frontmatter NEEDS-VERIFICATION baseline, not first-hand server measurement
 - @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — local-inference runtime targeting this host. Deployment is hardware-gated (matches the @entities/infrastructure/ollama.md / @entities/infrastructure/deepseek-r1-14b.md retraction lineage); the 7 GB constraint amplifies LocalAI's CPU-optimized + GGUF-quantized story rather than weakening it
+- @sources/bytemover-agent-native-memory.md — K13 Promotion #3; ByteRover's two-tier memory guardrail explicitly names the 7 GB Hetzner constraint as the boundary between filesystem (docs) and DB (ticks)
 
 ## Raw Concept
 

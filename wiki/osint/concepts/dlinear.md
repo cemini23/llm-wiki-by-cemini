@@ -9,6 +9,7 @@ related:
   - concepts/rl-marl-research.md
   - entities/models/chronos-bolt.md
   - entities/models/timesfm.md
+  - sources/4-3-link-re-2.md
 maturity: validated
 created: 2026-04-30
 updated: 2026-05-01
@@ -21,6 +22,7 @@ updated: 2026-05-01
 - @concepts/rl-marl-research.md — RL/MARL hub; DLinear could serve as lightweight feature extractor for MAPPO
 - @entities/models/chronos-bolt.md — sibling model entity; Chronos-Bolt is the heavyweight pretrained option, DLinear is the lightweight from-scratch alternative
 - @entities/models/timesfm.md — Google Research 200M-param foundation model (Apache-2.0); TimesFM occupies the tier above DLinear (foundation-model vs. ~1K-param linear)
+- @sources/4-3-link-re-2.md — K14 deep-read 2026-05-01; Doc 1's input patching pattern complements DLinear's trend-seasonal decomposition
 
 ## Raw Concept
 

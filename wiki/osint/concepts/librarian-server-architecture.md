@@ -21,6 +21,7 @@ related:
   - concepts/mcp-tool-marketplace.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
   - sources/agriciDaniel-claude-obsidian.md
+  - sources/bytemover-agent-native-memory.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-04-30
@@ -39,6 +40,7 @@ updated: 2026-04-30
 - @sources/atomicmemory-llm-wiki-compiler.md — the wiki-compiler runtime (Node ≥18, ~1 GB) that runs on the librarian server with `llmwiki serve` exposing 7 MCP tools to the brain
 - @sources/agentmemory-rohitg00-cpr-impl.md — the cpr-pattern reference implementation whose pipeline shape (PostToolUse → SHA-256 dedup → privacy filter → LLM compress → BM25+Vector+Graph RRF) ports into Python on the librarian server alongside the wiki-compiler
 - @sources/llm-wiki.md — Karpathy gist; the foundational pattern source. The librarian server is the **physical realization** of the gist's "the wiki is the codebase" framing — same codebase the LLM maintains, just on its own dedicated host
+- @sources/bytemover-agent-native-memory.md — K13 Promotion #3; CLAUDE.md pattern source. ByteRover's Context Tree (Domain > Topic > Subtopic > Entry) is the organizational pattern behind the wiki's directory structure. The two-tier memory guardrail (filesystem for docs, DB for ticks) applies to the librarian's storage architecture.
 
 ## Raw Concept
 

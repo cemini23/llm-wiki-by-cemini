@@ -19,6 +19,8 @@ related:
   - entities/infrastructure/polars.md
   - sources/4-5-links-2.md
   - sources/pta-metric-anchoring-ssrn-4549819.md
+  - sources/4-3-link-re-2.md
+  - sources/wave-5-1-link-eval-even-more.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26
@@ -39,6 +41,8 @@ updated: 2026-04-26
 - @entities/infrastructure/pgvector.md
 - @entities/infrastructure/redis.md
 - @entities/infrastructure/polars.md
+- @sources/4-3-link-re-2.md — K14 deep-read 2026-05-01; three audit-trail reinforcements reference TimescaleDB as the persistence substrate for trajectory logging + SHA-256 hashing
+- @sources/wave-5-1-link-eval-even-more.md — Wave 5.1 infra evaluation; TimescaleDB as the tick-level storage tier in the two-tier memory hierarchy (filesystem for docs, TimescaleDB/pgvector for ticks)
 
 ## Raw Concept
 
