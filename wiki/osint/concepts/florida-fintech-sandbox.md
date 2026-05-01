@@ -8,6 +8,7 @@ related:
   - concepts/ip-sale-corporate-structure.md
   - concepts/ip-sale-readiness.md
   - concepts/publishers-exclusion-iaa.md
+  - sources/scaling-roadmap-research.md
 maturity: validated
 created: 2026-04-27
 updated: 2026-04-27

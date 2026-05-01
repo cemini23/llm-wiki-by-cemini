@@ -90,6 +90,8 @@ related:
   - sources/thinking-with-visual-primitives-deepseek-2026.md
   - sources/platonic-representation-hypothesis-huh-2024.md
   - sources/sherry-ternary-quantization-tencent-2026.md
+  - sources/3-26-b.md
+  - sources/3-26-link-re-3.md
 maturity: validated
 created: 2026-04-26
 updated: 2026-04-30

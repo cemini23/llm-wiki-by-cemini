@@ -39,6 +39,7 @@ related:
   - sources/caiovicentino-polymarket-mcp-server.md
   - sources/agriciDaniel-claude-obsidian.md
   - sources/piebald-claude-code-system-prompts.md
+  - sweeps/2026-04-30.md
 created: 2026-04-29
 updated: 2026-04-30
 maturity: validated

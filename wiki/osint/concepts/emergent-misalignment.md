@@ -5,6 +5,8 @@ tags: [ai-safety, alignment, LLM-finetuning]
 keywords: [emergent misalignment, conditional misalignment, unconditional misalignment, narrow finetuning, broad generalization, backdoor, sleeper agent, inoculation prompting, data mixing, HHH finetuning]
 related:
   - sources/conditional-misalignment.md
+  - sources/3-26-b.md
+  - sources/qwen-scope.md
 maturity: validated
 created: 2026-04-30
 updated: 2026-04-30

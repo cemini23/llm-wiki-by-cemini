@@ -17,6 +17,7 @@ related:
   - entities/platforms/polymarket.md
   - entities/infrastructure/deepseek-api.md
   - concepts/high-signal-paper-patterns.md
+  - sources/3-26-b.md
 maturity: validated
 read_status: read
 created: 2026-04-30

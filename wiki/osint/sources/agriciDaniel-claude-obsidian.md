@@ -18,6 +18,7 @@ related:
   - concepts/high-signal-paper-patterns.md
   - concepts/ip-sale-readiness.md
   - concepts/mcp-tool-marketplace.md
+  - sources/3-26-link-re-3.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30

@@ -25,9 +25,12 @@ related:
   - sources/vibe-trading-hkuds.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
   - sources/4-5-links-2.md
+  - sources/3-26-b.md
+  - sources/3-26-link-re-3.md
+  - sources/scaling-roadmap-research.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-28
+updated: 2026-04-30
 ---
 
 ## Relations

@@ -38,6 +38,7 @@ related:
   - sources/caiovicentino-polymarket-mcp-server.md
   - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
   - sources/shiyu-coder-kronos.md
+  - sources/3-26-b.md
 maturity: validated
 created: 2026-04-24
 updated: 2026-04-30

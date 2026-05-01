@@ -17,6 +17,8 @@ related:
   - entities/infrastructure/ollama.md
   - entities/platforms/hyperliquid.md
   - entities/platforms/oanda.md
+  - sources/3-26-b.md
+  - sources/3-26-link-re-3.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26

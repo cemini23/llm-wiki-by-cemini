@@ -23,6 +23,8 @@ related:
   - entities/platforms/mercury.md
   - concepts/defend-trade-secrets-act.md
   - concepts/neural-magic-v-facebook.md
+  - sources/3-26-b.md
+  - sources/scaling-roadmap-research.md
 maturity: validated
 created: 2026-04-27
 updated: 2026-04-27

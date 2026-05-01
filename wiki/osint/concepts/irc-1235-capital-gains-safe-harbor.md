@@ -13,6 +13,7 @@ related:
   - concepts/ip-sale-corporate-structure.md
   - concepts/section-174-rd-expensing.md
   - concepts/milestone-ledger.md
+  - sources/scaling-roadmap-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-27

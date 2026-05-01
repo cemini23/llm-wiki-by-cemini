@@ -8,6 +8,59 @@ Newest entries on top.
 
 ---
 
+## [2026-04-30] deep-read | K10 — 3_26 b.docx: Cemini Internal Agent Architecture Audit (5 Q&A)
+
+Deep-read 5,541-word Cemini-internal solo-developer architecture audit (~2026-03-26). Five Q&A sections: mobile HITL (LangGraph interrupt/Command(resume) + Redis Streams → OIDC/CIBA upgrade path), agent reliability (MAST Compound Reliability Decay, max 5-step chains, Pydantic validation nodes, fallback to heuristics NOT smaller LLMs), financial MCP servers (FMP SOC 2 primary, AlphaVantage MIT, Octagon AI, SEC EDGAR MCP), local DeepSeek-R1-14B CPU viability (8.8-11.3 t/s Q5_K_M, Docker cgroups mandatory, NUMA single-socket > dual-socket), hybrid cloud/local Supervisor routing (PostgreSQL Shared Scratchpad, 30-70% cost reduction claimed). Three actionable findings (OIDC 4-5d, cgroups 4-6h, circuit breakers 2-3d). Three blind spots (checkpoint state bloat, sandbox security, TorchRL↔LLM latency sync). Prescribed-vs-deployed gap: PostgresSaver not wired (K8), local LLM retracted, circuit breakers not found, mobile HITL unknown.
+
+### Pages updated
+- `wiki/sources/3-26-b.md` — full rewrite (unread-stub → deep-read): title truncated, 5 Q&A narrative + synthesis + blind spots + prescribed-vs-deployed gap table + 8 verbatim snippets
+- `wiki/index.md` — 3-26-b entry updated from verbose-first-paragraph stub to concise K10 deep-read summary
+- `wiki/entities/frameworks/langgraph.md` — backlink added (3-26-b is the primary LangGraph PostgresSaver/interrupt/Command architectural source)
+- `wiki/entities/infrastructure/hetzner.md` — backlink added (Docker cgroups + 128GB RAM baseline)
+- `wiki/concepts/scatter-gather-topology.md` — backlink added (5-agent Supervisor routing overlay on the scatter-gather blueprint)
+- `wiki/concepts/context-compression-resume-pattern.md` — backlink added (Blind Spot #1 = checkpoint state bloat = cpr-pattern target)
+
+---
+
+## [2026-04-30] deep-read | K10 batch — 3 Cemini-internal architecture/operations docs deep-read
+
+Three Cemini-internal docs deep-read in a single K10 pass. Together with K8 (2026-04-05 4-5-links) and K9 (2026-04-05 4-5-links-2), the five K-series deep-reads span the full Cemini enterprise-readiness surface: corporate structure (K5/K6/K7), agent-runtime architecture (K10 3-26-b), OSS integration evaluation (K10 link-re-3, K8, K9), and legal/DevOps/MLOps scaling (K10 scaling-roadmap).
+
+**K10 timeline**: The three docs form a Feb→Mar 2026 progression:
+- Scaling Roadmap (Feb 25) = legal + infrastructure + tooling layer — earliest, broadest
+- 3-26-b (Mar 26) = agent-runtime architecture layer (mobile HITL, hybrid routing, circuit breakers)
+- 3-26-link-re-3 (Mar 26) = 9-repo integration evaluation layer
+
+**Key cross-K-series divergences surfaced**:
+- QuestDB (scaling-roadmap) vs TimescaleDB (K8 deployed) — both PostgreSQL-wire-compatible, different engines
+- Delaware C-Corp (scaling-roadmap) vs Wyoming HoldCo + Florida OpCo (K5/K6/K7) — reconcilable by exit path
+- 128GB RAM (scaling-roadmap + 3-26-b) vs 7GB (K8 server probe) — same stale figure propagated across all three Feb-Mar docs
+
+**Promotion candidates surfaced** (not promoted to dedicated pages in this pass — deferred for future sessions):
+- thrunt-god 5-phase pipeline (Signal→Hunt→Swarm→Receipt→Publish) — reusable architectural primitive
+- deer-flow 9-step Middleware Chain — reusable architectural primitive
+
+### Pages created
+- *(none — 3 existing stubs promoted to deep-read; no new dedicated pages)*
+
+### Pages updated
+- `wiki/sources/3-26-b.md` — full rewrite (unread-stub → deep-read): 5 Q&A architecture audit + synthesis + blind spots + prescribed-vs-deployed gap table + 8 snippets
+- `wiki/sources/3-26-link-re-3.md` — full rewrite (unread-stub → deep-read): 9-link evaluation, 2 Promotion candidates, 7 Snippets-only with rationale + 6 snippets
+- `wiki/sources/scaling-roadmap-research.md` — full rewrite (unread-stub → deep-read): 5 sections + 4-phase checklist + prescribed-vs-deployed divergence analysis + 7 snippets
+- `wiki/index.md` — 3 entries updated from verbose-first-paragraph stubs to concise K10 deep-read summaries
+- `wiki/entities/frameworks/langgraph.md` — backlink to 3-26-b
+- `wiki/entities/infrastructure/hetzner.md` — backlink to 3-26-b
+- `wiki/concepts/scatter-gather-topology.md` — backlink to 3-26-b
+- `wiki/concepts/context-compression-resume-pattern.md` — backlink to 3-26-b
+
+## [2026-04-30] deep-read | K10 — 3_26 link re 3.docx: 9-Repo Integration Analysis
+
+Deep-read 6,873-word Cemini-internal link-evaluation audit. 9 repos/system designs evaluated against Cemini's 128GB RAM / CPU-only / solo-dev / IP-sale constraints. **2 Promotion candidates**: (1) backbay-labs/thrunt-god (MIT) — 5-phase Signal→Hunt→Swarm→Receipt→Publish pipeline mapping directly to LangGraph 5-agent debate; Artifact System of Record with MISSION.md/HYPOTHESES.md/FINDINGS.md. (2) bytedance/deer-flow (open-source) — 9-step Middleware Chain (MarketDataMiddleware, PortfolioStateMiddleware, AuditMiddleware) intercepting LangGraph AgentState before execution. **7 Snippets-only**: claudini (autoresearch loop already captured via agriciDaniel), vibe-coding-menugen (UUID tracking + Redis rate limiter — blog post, no repo), claude-prism (.claudeprism/history.git/ audit trail — desktop app, wrong stack), localgpt (Rust, MEMORY.md/SOUL.md overlaps with hot.md), Awesome-Vuln-Detection (paper catalog), hermes-vs-openclaw (conceptual blog post), emulate (TypeScript, wrong stack). Each Snippets-only kept with one-line rationale per K8/K9 discipline.
+
+### Pages updated
+- `wiki/sources/3-26-link-re-3.md` — full rewrite (unread-stub → deep-read): Promotion-vs-Snippets-only summary + 2 Promotion candidates with Cemini mappings + 7 Snippets-only with rationale + 6 verbatim snippets
+- `wiki/index.md` — entry updated to reflect deep-read + 2 promotion candidates
+
 ## [2026-04-30] deep-read | Piebald-AI/claude-code-system-prompts — 8 structural patterns cataloged
 
 Deep-read via GitHub API directory enumeration → `curl` fetch of 14 representative prompt fragment files. Promoted `read-skim` → `deep-read`. 8 transferable structural patterns cataloged for Cemini's FastMCP tool decorators:

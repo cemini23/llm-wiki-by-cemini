@@ -31,9 +31,11 @@ related:
   - sources/sentrux-ast-sensor.md
   - sources/vibe-trading-hkuds.md
   - sources/4-5-links-2.md
+  - sources/3-26-b.md
+  - sources/3-26-link-re-3.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-28
+updated: 2026-04-30
 ---
 
 ## Relations
