@@ -2777,3 +2777,43 @@ Server-Claude data audit returned three streams of results — all closing brief
   - `research for cemini/ROADMAP.md` (CeminiSuite dev roadmap — page-writing style reference)
 
 No source pages yet. Bootstrap of `research for cemini/` corpus queued as next step — first-page extraction per PDF → `wiki/sources/` stubs with real titles + one-line summaries.
+
+## [2026-04-30] ingest | Counterexamples to an Extremal Conjecture for Random Cycle-Factors (Gajjala, arXiv 2604.26101)
+
+Pure combinatorics paper (11p, skimmed). Disproves Christoph et al. (FOCS 2025) conjecture for d≥3. Zero relevance to OSINT, finance, trading, or AI/ML; minimal stub created for completeness.
+
+### Pages created (1 source)
+- `sources/counterexamples-cycle-factors.md` — minimal stub, clusters=[uncategorized], maturity=draft
+
+### Pages updated
+- `wiki/index.md` — source added to uncategorized (22→23); total stubs 278→279 (175→176 PDF)
+
+## [2026-04-30] ingest | Qwen-Scope: Turning Sparse Features into Development Tools for LLMs (Qwen Team, Alibaba, 2026)
+
+Deep-read (35p). Open-source SAE suite: 14 groups across 7 Qwen3/3.5 models (dense + MoE). Four app categories: inference-time steering, SAE-feature benchmark redundancy analysis (GSM8K has 63% feature overlap with MATH), multilingual toxicity classification + safety data synthesis, SASFT code-switch suppression + SAE-guided RL repetition reduction. Notes concept gap for mechanistic interpretability.
+
+### Pages created (1 source)
+- `sources/qwen-scope.md` — source page covering all four app categories with quantitative results
+
+### Pages updated
+- `wiki/index.md` — source added to llm-agents (111→112); total stubs 279→280 (176→177 PDF)
+
+## [2026-04-30] ingest | TradingAgents: Multi-Agents LLM Financial Trading Framework (Xiao/Sun/Luo/Wang, UCLA + MIT + Tauric Research, arXiv 2412.20138)
+
+Deep-read (38p). Multi-agent trading framework: 7 roles across 5 teams (Analyst/Researcher/Trader/Risk Management/Fund Manager). Structured communication + limited natural-language debate avoids telephone effect. Backtest Jan-Mar 2024 on AAPL/GOOGL/AMZN: +23-27% cumulative return, 6-24% over best baselines. Model-agnostic, API-credit-only. Directly relevant to Cemini's multi-agent trading layer.
+
+### Pages created (1 source)
+- `sources/tradingagents.md` — source page with architecture, experiment results, Cemini relevance
+
+### Pages updated
+- `wiki/index.md` — source added to llm-agents (112→113); total stubs 280→281 (177→178 PDF)
+
+## [2026-04-30] ingest | When to Retrieve During Reasoning — ReaLM-Retrieve (Guo/Wu/Yiu, HKU + Brain Investing, SIGIR 2026)
+
+Deep-read (12p). Adaptive RAG for reasoning models: step-level RSUS uncertainty detection + learned intervention policy + 3.2× faster integration. Tested on DeepSeek-R1-671B + R1-32B + QwQ-32B. MuSiQue 71.2% F1 with 1.8 calls (47% fewer than IRCoT). Completion-only API proxy pattern directly maps to Cemini's API-only DeepSeek deployment. CC BY 4.0.
+
+### Pages created (1 source)
+- `sources/retrieve-during-reasoning.md` — source page covering architecture, experiments, ablations, Cemini relevance
+
+### Pages updated
+- `wiki/index.md` — source added to llm-agents (113→114); total stubs 281→282 (178→179 PDF)
