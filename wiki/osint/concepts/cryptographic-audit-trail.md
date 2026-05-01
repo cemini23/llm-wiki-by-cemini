@@ -24,6 +24,8 @@ related:
   - sources/4-5-links-2.md
   - sources/3-26-link-re-3.md
   - sources/scaling-roadmap-research.md
+  - sources/4-3-link-re-2.md
+  - sources/wave-5-1-link-eval-stacks.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-28
@@ -48,6 +50,8 @@ audit_date: 2026-04-24
 - @sources/falkordb-graphrag-eval.md — 2026-04-28 — graph databases enable schema-bound queries that vector-RAG cannot answer; cited GraphRAG benchmarks (3-4× better on cross-document reasoning) parallel the audit-trail story — provenance is a graph problem (chains of (claim, source, timestamp, signer) tuples), not a chunk problem. SSPL license blocks deployed-stack adoption; workspace-side experiment candidate only
 - @sources/4-5-links.md — K8 deep-read 2026-04-28 — multi-topic Cemini-internal evaluation. The K8 doc's Synthesis section names the cryptographic audit trail explicitly as the **ex-post regulatory governance** mechanism that pairs with Pydantic v2 schemas + FastMCP tools (which provide ex-ante constraints). Reinforces the J-pass resolution: the deployed SHA-256 chain in `services/audit/chain.py` IS the substrate; the prescribed pymerkle/OpenTimestamps/VCP layers are separate forward-looking work
 - @concepts/context-compression-resume-pattern.md — K8 promotion 2026-04-28 — adjacent state-persistence concern with intentional architectural distinction. The audit trail is *forward-only append-with-hash* (answers "what did the agent decide and when, immutably?"); cpr-pattern is *bidirectional save/load* (answers "where do we resume from after a crash?"). Both lean on PostgreSQL but solve different problems
+- @sources/4-3-link-re-2.md — K14 deep-read 2026-05-01; three audit-trail reinforcements: OpenClaw centralized trust broker + non-lexical Pydantic v2 validation (Doc 3), ArchBench trajectory logging + set-based metrics → SHA-256 hashing (Doc 5), LDP structured provenance tracking with agent IDs + confidence scores + verification status (Doc 7). All Snippets-only.
+- @sources/wave-5-1-link-eval-stacks.md — Wave 5.1 systems-architecture evaluation; hermes-a2a's HMAC security architecture surfaced as Steal-from hardening pattern for audit-trail layer
 
 ## Raw Concept
 

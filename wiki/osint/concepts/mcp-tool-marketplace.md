@@ -29,6 +29,7 @@ related:
   - sources/agriciDaniel-claude-obsidian.md
   - sources/alash3al-stash.md
   - sources/3-28-links-2.md
+  - sources/wave-5-1-link-eval-even-more.md
 created: 2026-04-30
 updated: 2026-04-30
 maturity: validated
@@ -42,6 +43,7 @@ maturity: validated
 - @concepts/llm-agent-systems.md — cluster hub; MCP servers are the *tool surface* of LLM agent systems
 - @concepts/librarian-server-architecture.md — the librarian's deployed MCP layer (kb-server) is one of the MCP servers in Cemini's inventory
 - @entities/frameworks/fastmcp.md — Cemini's Python MCP framework; the integration substrate for any Adopt-Cemini-stack MCP server. All Cemini-stack MCP integrations attach to FastMCP via `@mcp.tool` decorators.
+- @sources/wave-5-1-link-eval-even-more.md — Wave 5.1 infra evaluation; 4-stage extraction pipeline (crawl4ai → trafilatura → unstructured → files-to-prompt) surfaces MCP-as-data-ingestion-surface pattern
 - (and 13 individual MCP-server source pages — see frontmatter)
 
 ## Raw Concept

@@ -40,6 +40,7 @@ related:
   - sources/agriciDaniel-claude-obsidian.md
   - sources/piebald-claude-code-system-prompts.md
   - sweeps/2026-04-30.md
+  - sources/situational-awareness-aschenbrenner.md
 created: 2026-04-29
 updated: 2026-04-30
 maturity: validated
@@ -54,6 +55,7 @@ maturity: validated
 - @concepts/wiki-tooling-evaluation.md — sibling decision-record; Wave 1/2/3 ingest evaluation also used implicit criteria; this page makes them explicit.
 - @concepts/ip-sale-readiness.md — license poison-pill families A and B are the negative-signal half of this rubric.
 - @concepts/llm-agent-systems.md — cluster hub for the LLM-agent landing area, where 2 of the 4 recent high-signal papers landed.
+- @sources/situational-awareness-aschenbrenner.md — Aschenbrenner 2024 (165pp); landmark AGI-timeline essay ingested as Wave 5.1 source page; deep-read pending (first 10pp skimmed)
 
 ## Raw Concept
 

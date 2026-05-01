@@ -19,6 +19,7 @@ related:
   - entities/infrastructure/localai.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/librarian-server-architecture.md
+  - sources/4-3-link-re-2.md
   - sources/gemini-dr-link-eval-2026-04-28.md
   - sources/omc-talent-container-paper.md
   - concepts/ai-organisation-design.md
@@ -28,6 +29,11 @@ related:
   - sources/3-26-b.md
   - sources/3-26-link-re-3.md
   - sources/scaling-roadmap-research.md
+  - sources/4-3-link-research.md
+  - sources/matching-accuracy-different-geometry-es-grpo.md
+  - sources/refinerl-self-refinement-rl.md
+  - entities/frameworks/dspy.md
+  - sources/wave-5-1-link-eval-more.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-30
@@ -49,6 +55,9 @@ updated: 2026-04-30
 - @concepts/context-compression-resume-pattern.md — K8 promotion 2026-04-28 — the prescribed serialization/recovery layer for any LangGraph topology (linear or scatter-gather). When/if Option A (build Send() fan-out fresh) lands, the cpr-pattern's checkpoint+restore is the natural state-management partner; resume from a crashed scatter-gather becomes feasible without re-running upstream nodes
 - @entities/infrastructure/localai.md — K8 promotion 2026-04-28 — local-inference runtime that any scatter-gather node would call (in the retracted-but-architecturally-coherent local-runtime path). LocalAI's OpenAI-compatible shim means the deployed `services/llm_analyst/deepseek_client.py` works against it with a one-line `base_url` change — the topology is unaffected
 - @concepts/wiki-tooling-evaluation.md — 2026-04-28 synthesis: any wiki/memory tooling adopted by the workspace librarian (recommended: `llm-wiki-compiler`) would expose its retrieval surface via MCP, which the analyst-node DeepSeek client would query when building scatter-gather context. Adoption decision is upstream of the Send-API topology decision; doesn't block, but the wiki-tooling MCP shape would inform the analyst-prompt construction
+- @sources/4-3-link-re-2.md — K14 deep-read 2026-05-01; three scatter-gather reinforcements: AutoMOOSE autonomous failure correction loop → Devil's Advocate reviewer node (Doc 4), diversity-aware RL penalty to prevent MAPPO policy collapse (Doc 8, overlaps with K13 RefineRL), LDP progressive payload modes for inter-agent communication (Doc 7). All Snippets-only.
+- @entities/frameworks/dspy.md — Stanford prompt-programming framework (Wave 5.1 Adopt); GEPA optimization loops produce mathematically optimized prompt structures that feed into scatter-gather nodes — offline compilation on laptop, static strings shipped to production LangGraph nodes
+- @sources/wave-5-1-link-eval-more.md — Wave 5.1 agent-framework evaluation; DSPy + Instructor Adopt decisions directly supply the analyst-node prompt layer above any scatter-gather topology
 
 ## Raw Concept
 

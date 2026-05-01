@@ -27,6 +27,7 @@ related:
   - sources/piebald-claude-code-system-prompts.md
   - sources/3-26-b.md
   - sources/3-26-link-re-3.md
+  - sources/wave-5-1-link-eval-more.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-30
@@ -47,6 +48,7 @@ updated: 2026-04-30
 - @sources/atomicmemory-llm-wiki-compiler.md — 2026-04-28 — primary wiki-tooling adoption candidate; ships an MCP server (`llmwiki serve`) with 7 tools (`ingest_source`, `compile_wiki`, `query_wiki`, `search_pages`, `read_page`, `lint_wiki`, `wiki_status`) + 5 resources. Closes the laptop ↔ server gap for the dev-stack DeepSeek brain to query the workspace wiki without re-deploying Track B `wiki_search` server-side
 - @sources/willynikes2-knowledge-base-server.md — 2026-04-28 — sibling MCP-server-with-memory-engine candidate; 16 MCP tools + REST API + OpenAPI 3.1 + ChatGPT Custom GPT integration. Heavier integration surface than llm-wiki-compiler; deferred adoption decision
 - @sources/agentmemory-rohitg00-cpr-impl.md — 2026-04-28 — Apache-2.0 cpr-pattern reference impl exposes its functionality via MCP server. Pattern is more useful than the runtime for the deployed Python stack; pipeline shape (PostToolUse hook → SHA-256 dedup → privacy filter → LLM compress → BM25+Vector+Graph RRF) ports into Python on the Cemini stack alongside FastMCP tool-call wrappers
+- @sources/wave-5-1-link-eval-more.md — Wave 5.1 agent-framework evaluation; Instructor's structured-output extraction pattern integrates via FastMCP `@mcp.tool` decorators on LangGraph nodes
 
 ## Raw Concept
 

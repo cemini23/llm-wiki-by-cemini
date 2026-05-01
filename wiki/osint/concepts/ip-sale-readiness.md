@@ -87,6 +87,10 @@ related:
   - sources/agriciDaniel-claude-obsidian.md
   - sources/piebald-claude-code-system-prompts.md
   - sources/scaling-roadmap-research.md
+  - sources/4-3-link-re-2.md
+  - sources/wave-5-1-link-eval-stacks.md
+  - sources/wave-5-1-link-eval-more.md
+  - sources/wave-5-1-link-eval-even-more.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-30
@@ -140,6 +144,10 @@ updated: 2026-04-30
 - @entities/infrastructure/sakana-fugu.md — Fugu-ingest 2026-04-27 — **directly affects the IP-sale narrative**. An institutional buyer reading the Cemini stack will now ask: "why didn't you just call Sakana Fugu's API?" The defensible answers (vertical-domain MAPPO trader-agents, typed-output Pydantic StrategyRecommendation handoff, custom worker-pool composition with compliance/cost gates, audit-trail completeness via pg_tamperlog, and benchmark-against-Fugu-as-baseline as a credibility marker) must be named explicitly in the IP-sale-prep narrative, not assumed. Note this is an **April 2026 development** that postdates most of the IP-sale-prep audit corpus — the prescriptions in K5/K6/K7 are silent on commercial-API-orchestrator alternatives because they didn't yet exist as commercial products
 - @concepts/wiki-tooling-evaluation.md — 2026-04-28 synthesis: license posture is the dominant axis on adoption (SSPL/AGPL/PolyForm-Noncommercial all rejected; MIT/Apache-2.0 candidates pre-vetted). The wiki-tooling decision touches IP-sale narrative because the recommended `llm-wiki-compiler` (MIT) keeps the workspace librarian's compounding artifact portable to any acquirer; the alternative of FalkorDB or `agentmemory`-runtime has been workspace-side-only / steal-from-only specifically because of license-acquirer-friction
 - @sources/falkordb-graphrag-eval.md — 2026-04-28 — SSPL v1 license; institutional acquirer treats this in the **same poison-pill family as AGPL**. Documented here as a worked example of why deployed-stack candidates pass through this concept page's IP-sale gate before adoption; FalkorDB fails the gate for deployed use, passes for workspace-side-only experiment
+- @sources/4-3-link-re-2.md — K14 deep-read 2026-05-01; two license-toxicity ledger additions: Moirai (Salesforce) CC-BY-NC-4.0 = new Family A entry (first explicit Non-Commercial rejection in K-series); Firecrawl AGPL-3.0 = reinforcement of existing Family A (already documented in Wave 2/Wave 3/K8). Also adds Apache-2.0 confirmations for TimesFM 2.5 and Chronos-Bolt (reinforces K12 adoption path).
+- @sources/wave-5-1-link-eval-stacks.md — Wave 5.1 systems-architecture evaluation; 3 of 6 Rejects are AGPL-3.0 poison-pill (FinceptTerminal $50K/yr, ST3GG, MiroFish); reinforces Family A doctrine with concrete 2026 examples
+- @sources/wave-5-1-link-eval-more.md — Wave 5.1 agent-framework evaluation; Unsloth AGPL-3.0 rejection + LangChain Elixir AGPL-3.0 rejection; adds 2 more Family A entries to the license-toxicity ledger
+- @sources/wave-5-1-link-eval-even-more.md — Wave 5.1 infra evaluation; 16 of 27 URLs rejected (license/hardware/architectural mismatch); AGPL-3.0 poison-pill the dominant rejection cause across all three Wave 5.1 docs
 
 ## Raw Concept
 

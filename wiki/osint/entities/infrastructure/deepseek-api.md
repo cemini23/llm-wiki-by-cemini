@@ -39,6 +39,9 @@ related:
   - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
   - sources/shiyu-coder-kronos.md
   - sources/3-26-b.md
+  - entities/frameworks/dspy.md
+  - sources/wave-5-1-link-eval-more.md
+  - sources/wave-5-1-link-eval-stacks.md
 maturity: validated
 created: 2026-04-24
 updated: 2026-04-30
@@ -65,6 +68,9 @@ updated: 2026-04-30
 - @sources/agentic-harness-engineering.md — 2026-04-29 — arXiv 2604.25850 (Lin et al., Fudan/PKU/Shanghai Qiji Zhifeng, 28 Apr 2026) tests AHE's auto-evolved harness across 5 cross-model bases including **deepseek-v4-flash**: largest measured cross-family gain at **+10.1 pp pass@1** (51.7% → 61.8% on Terminal-Bench 2). Empirical evidence that harness-level optimization generalizes to DeepSeek-family models; reduces Cemini's brain-vendor lock-in risk. The AHE pattern (7-component decoupling + falsifiable manifest) survives a DeepSeek substitution without re-evolution
 - @sources/incompressible-knowledge-probes-li-2026.md — 2026-04-29 — arXiv 2604.24827 (Bojie Li, Pine AI, 27 Apr 2026) calibrates a black-box parameter-estimator on 89 open-weight models (R²=0.917) **explicitly including `deepseek-v3`, `deepseek-v4-flash`, `deepseek-v4-flash-think`, and `deepseek-v4-pro-think` in the calibration set**. Operational implications for this entity: (a) factual recall on DeepSeek tracks log(total params), not active params — critical MoE deployment finding; (b) **Densing Law does not apply to factual capacity** — newer cheaper models will NOT compress long-tail factual recall, so Cemini's analyst-orchestrator cannot swap-down to smaller models for ticker/entity-recall tasks without proportional loss; (c) the IKP "hallucination-similarity" technique (rare-fact agreement on wrong answers) is a low-effort silent-swap detector if Cemini's vendor ever quantizes / reroutes / replaces the served model — drift signal usable as daily cron alerting
 - @sources/thinking-with-visual-primitives-deepseek-2026.md — 2026-04-30 — DeepSeek-AI + PKU + Tsinghua (Lu et al., 25p) — extends `deepseek-v4-flash` with a "Thinking with Visual Primitives" reasoning paradigm: bounding boxes + points elevated to "minimal units of thought" interleaved into chain-of-reasoning. **Built directly on `deepseek-v4-flash` (284B/13B-A MoE) + DeepSeek-ViT.** Token-efficient: 90 KV-cache entries vs 740–1100 for GPT-5.4/Claude-Sonnet-4.6/Gemini-3-Flash on 800×800 images (~10× reduction). +16.3pp Maze Navigation, +10.2pp Path Tracing over GPT-5.4. Operational read for this entity: (a) third independent 2026 paper grounded in `deepseek-v4-flash` (alongside AHE & IKP) — **most-instrumented frontier MoE in academic literature**; (b) if/when this capability lands in the hosted DeepSeek API, Cemini gets multimodal reasoning under the **same API key + same rate-limit envelope** — no architectural lift; (c) topological-reasoning gap directly applicable to chart-pattern detection (TradingView technicals) + satellite-imagery candidate-region tracing (Spaceshift Sentinel-1); (d) CSA + 3×3 compression patterns (7,056× pixel→KV ratio) reusable as memory-discipline reference even for text-only Cemini analysts at 256K context. Capability not yet confirmed exposed via API — `[NEEDS VERIFICATION 2026-04-30]` for endpoint surface
+- @entities/frameworks/dspy.md — Wave 5.1 Adopt; offline prompt-compilation framework targeting DeepSeek API as the GEPA optimization backend — compile optimized prompts on laptop against hosted DeepSeek, ship static strings to production
+- @sources/wave-5-1-link-eval-more.md — Wave 5.1 agent-framework evaluation; DSPy + Instructor Adopt decisions; both target DeepSeek API as the LLM brain for prompt optimization and structured-output extraction
+- @sources/wave-5-1-link-eval-stacks.md — Wave 5.1 systems-architecture evaluation; DeepSeek-V4-Pro Fireworks endpoint as primary Adopt candidate; confirms DeepSeek model family as the Cemini-standard LLM brain across all three evaluation surfaces
 
 ## Raw Concept
 
