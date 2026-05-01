@@ -11,6 +11,7 @@ related:
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/agriciDaniel-claude-obsidian.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-28
 updated: 2026-04-28
 clusters: [llm-agents, librarian-tooling]

@@ -13,6 +13,7 @@ related:
   - concepts/high-signal-paper-patterns.md
   - sources/lob-regime-detection-hiremath-2026.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-29
 updated: 2026-04-29
 clusters: [quant-finance, options-pricing]

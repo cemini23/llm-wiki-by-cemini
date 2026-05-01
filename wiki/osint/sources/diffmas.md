@@ -6,6 +6,7 @@ keywords: [DiffMAS, KV-cache communication, latent communication, differentiable
 clusters: [llm-agents]
 related: []
 maturity: validated
+read_status: deep-read
 created: 2026-04-30
 updated: 2026-04-30
 ---

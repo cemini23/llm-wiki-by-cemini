@@ -21,6 +21,7 @@ related:
   - entities/infrastructure/hetzner.md
   - concepts/scatter-gather-topology.md
   - sources/4-5-links-2.md
+  - sources/4-3-link-research.md
 maturity: validated
 read_status: read
 created: 2026-04-23

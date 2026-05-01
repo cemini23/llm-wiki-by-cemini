@@ -6,6 +6,7 @@ keywords: [Tool Attention, MCP Tax, Tools Tax, lazy schema loading, intent routi
 clusters: [llm-agents]
 related: []
 maturity: validated
+read_status: deep-read
 created: 2026-04-30
 updated: 2026-04-30
 ---

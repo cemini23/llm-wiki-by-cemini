@@ -12,6 +12,7 @@ related:
   - entities/frameworks/fastapi.md
   - entities/frameworks/pydantic-v2.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-28
 updated: 2026-04-28
 clusters: [llm-agents, ingest-tooling]

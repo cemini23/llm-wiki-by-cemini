@@ -9,6 +9,7 @@ related:
   - concepts/context-compression-resume-pattern.md
   - sources/atomicmemory-llm-wiki-compiler.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-28
 updated: 2026-04-28
 clusters: [llm-agents, librarian-tooling]

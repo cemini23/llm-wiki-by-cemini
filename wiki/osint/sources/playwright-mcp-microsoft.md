@@ -12,6 +12,7 @@ related:
   - sources/agent-browser-vercel-labs.md
   - concepts/mcp-tool-marketplace.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-28
 updated: 2026-04-30
 clusters: [llm-agents, ingest-tooling]

@@ -6,6 +6,7 @@ keywords: [TradingAgents, multi-agent trading, LLM finance, agent debate, risk m
 clusters: [llm-agents]
 related: []
 maturity: validated
+read_status: deep-read
 created: 2026-04-30
 updated: 2026-04-30
 ---

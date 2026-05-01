@@ -17,6 +17,7 @@ related:
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
   - concepts/mcp-tool-marketplace.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-28
 updated: 2026-04-28
 clusters: [llm-agents, trading-agents]

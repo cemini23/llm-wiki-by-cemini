@@ -10,6 +10,7 @@ related:
   - sources/agentic-harness-engineering.md
   - sources/mercurialsolo-claudectl.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-28
 updated: 2026-04-30
 clusters: [llm-agents, dev-tooling]

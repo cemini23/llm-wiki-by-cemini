@@ -14,13 +14,6 @@ The workspace is a local knowledge hub for OSINT and financial research. Its job
 
 Distribution is a deliberate step, not a default. Stage candidates in `briefs/` first; never push directly to the server.
 
-## Pattern sources
-This schema is synthesized from:
-- **Karpathy's LLM Wiki** (raw source on librarian: `cemini-librarian:/opt/cemini-bulk/research/llm-wiki.md`; mirror at `wiki/sources/llm-wiki.md`) — three-layer architecture (raw / wiki / schema), `index.md` + `log.md` navigation, ingest/query/lint operations, "persistent compounding artifact"
-- **ByteRover Context Tree** (raw source on librarian: `cemini-librarian:/opt/cemini-bulk/research/llm re 4:3.pdf`) — hierarchical `Domain > Topic > Subtopic > Entry`, explicit `@path` relations, YAML frontmatter with lifecycle metadata, ADD/UPDATE/UPSERT/MERGE/DELETE primitives with `reason` audit trail, OOD signaling
-
-If you're ever uncertain about structure, defer to those documents.
-
 ## Architecture — three layers
 
 1. **Raw sources** — immutable. You read them, never modify them. **Canonical location: `cemini-librarian:/opt/cemini-bulk/`** (migrated 2026-04-28; previously laptop-local). Backed up via Hetzner daily snapshots.
@@ -91,7 +84,7 @@ updated: 2026-04-23
 
 - `type` — one of the four page kinds. Determines which section template applies.
 - `maturity` — `draft` when first created, `validated` when cross-referenced and checked, `core` when it's been battle-tested as a source of truth. Move entries up (and occasionally down) as evidence warrants.
-- `related` — explicit paths to cross-referenced pages. Bidirectional: if A lists B, B should list A. Check both directions when editing.
+- `related` — explicit paths to cross-referenced pages. Bidirectional: if A lists B, B must list A. Check both directions when editing.
 - `created` / `updated` — ISO dates. Update `updated` whenever the body changes meaningfully.
 
 ### Body sections
@@ -195,7 +188,7 @@ Claim confidence tags (inline):
 8. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed.
 9. **Move raw source to librarian**: `scp "research to be indexed/<filename>" cemini-librarian:/opt/cemini-bulk/research/` then `rm "research to be indexed/<filename>"` on laptop. Verify with `ssh cemini-librarian "ls /opt/cemini-bulk/research/<filename>"`.
 10. Run lint + commit + push (the wiki side; raw-source move is server-side and not in laptop git).
-11. A single ingest should touch 3–15 pages typically. If it touches 0 new pages, ask whether the source is worth ingesting.
+11. A single ingest must touch 3–15 pages. If it touches 0 new pages, ask whether the source is worth ingesting.
 
 ### Query (answering a question)
 
@@ -250,7 +243,7 @@ Workflow integration:
 - **Query (OOD signal)** — before declaring a wiki gap, run a `web_search_exa`. If results converge, ingest the best 1-2 hits as new source pages and answer from those. If they diverge, file a brief noting the disagreement and offer an ingest plan.
 - **Lint** — `[NEEDS VERIFICATION]` tags should trigger an Exa cross-check before being upgraded to `[CONFIRMED]` or moved to `[RETRACTED]`. `web_search_exa` for the claim text first; if a primary URL turns up, follow with `crawling_exa` for verifiable text.
 
-Cost discipline: Exa is a paid API (key in `~/.claude/.claude.json` user-scope, never committed). Default `numResults: 3–5` for routine queries; scale up only when a single sweep clearly under-covers the question. The `deep_researcher_*` tools spend more — reserve for legitimate multi-source synthesis tasks, not single-fact lookups.
+Cost discipline: Exa is a paid API (key in the Claude Code user settings file, never committed). Default `numResults: 3–5` for routine queries; scale up only when a single sweep clearly under-covers the question. The `deep_researcher_*` tools spend more — reserve for legitimate multi-source synthesis tasks, not single-fact lookups.
 
 The `exa:search` skill (from the `exa@claude-plugins-official` plugin) is a higher-level orchestrator that fans out across parallel subagents — use it for genuinely complex research questions where the workflow above isn't enough.
 
@@ -267,7 +260,7 @@ Material ready to leave the wiki goes through `briefs/` first:
 - Prefer paraphrase + cite over raw quote. Quotes go in `## Snippets` with full citation.
 - When stress-testing a claim, actively look for disconfirming evidence.
 - Flag single-source claims explicitly.
-- Don't let insights disappear into chat — file them.
+- File insights into wiki pages or briefs before they disappear from chat.
 
 ## Session-start ritual
 
@@ -303,7 +296,7 @@ Add new ritual checks above this line as the schema evolves. Keep each check und
 
 ## Active research threads
 
-- **CeminiSuite per-ticker research** — active. Canonical format is the **Gemini Deep Research template** (six sections: Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context). Watchlist (30 tickers — 2026-04-24 even +5 / −5 rebalance against the server baseline: added ASTS, GLW, INTC, PL, SOFI; removed MARA, JPM, BAC, GS, UBER with Financials category sunset, new Fintech category) at `wiki/entities/ticker-watchlist.md`. Indexed reports at `wiki/entities/tickers/<symbol>.md`. **Progress: 27 / 30** (AAPL, ADA, AMD, AMZN, ASTS, AVAX, AVGO, BTC, COIN, DIS, DOGE, ETH, GLW, GOOGL, INTC, LINK, META, MSFT, MSTR, NFLX, NVDA, PL, PLTR, SMCI, SOFI, SOL, TSLA — pending: SPY, QQQ, IWM). Ingest workflow: user drops `<SYMBOL> <date>.docx` into `research to be indexed/` → Claude runs `scripts/index_tickers.py` → `scp` source to `cemini-librarian:/opt/cemini-bulk/research/` and removes laptop copy → flips the status row in the watchlist table. **Divergence-from-server rule**: wiki-tracked additions/removals lead the server's `tickers.json`; annotate divergence in the watchlist's "Wiki-tracked divergence" section, apply the combined diff server-side, then re-pull config to restore parity. **Note**: `scripts/index_tickers.py` may need updating to scp instead of local-mv post-2026-04-28 raw-layer migration.
+- **CeminiSuite per-ticker research** — active. Canonical format is the **Gemini Deep Research template** (six sections: Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context). Watchlist and per-symbol progress tracked at `wiki/entities/ticker-watchlist.md`. Ingest workflow: user drops `<SYMBOL> <date>.docx` into `research to be indexed/` → Claude runs `scripts/index_tickers.py` → `scp` source to `cemini-librarian:/opt/cemini-bulk/research/` and removes laptop copy → flips the status row in the watchlist table. **Divergence-from-server rule**: wiki-tracked additions/removals lead the server's `tickers.json`; annotate divergence in the watchlist's "Wiki-tracked divergence" section, apply the combined diff server-side, then re-pull config to restore parity. **Note**: `scripts/index_tickers.py` may need updating to scp instead of local-mv post-2026-04-28 raw-layer migration.
 - **Corpus inventory** — 230 stubs generated from the raw research corpus (now at `cemini-librarian:/opt/cemini-bulk/research/`). Clusters skew heavily to RL/MARL (108) and LLM agents (59). Corpus is research-methodology heavy — math, portfolio strategy, Cemini-internal audits — not ticker- or event-driven.
 - **Wave 5 follow-up integration** (workspace-side, queued in `ROADMAP.md`) — three Steal-from / Adopt patterns surfaced 2026-04-30 across Wave 5A (cemini stack) + Wave 5B (OSINT cluster) that affect the laptop / librarian rather than cemini-prod: (a) **`/autoresearch` multi-round loop** from `@sources/agriciDaniel-claude-obsidian.md` → Tier-2.5 sweep automation candidate (port into `scripts/weekly_arxiv_sweep.sh` when Path 2 activates); (b) **`hot.md` session-state cache** (claude-obsidian) → cpr-pattern session-granularity Resume extension; (c) **`alash3al/stash` episodic memory layer** → librarian Phase 7+ candidate (Postgres + pgvector; pairs operationally with context7). Cemini-prod-relevant Wave 5 adoptions (Kronos tokenizer, dual-MCP-Polymarket) are staged as briefs in `briefs/2026-04-30_*.md` per workspace doctrine.
 
@@ -312,4 +305,4 @@ Add new ritual checks above this line as the schema evolves. Keep each check und
 
 ## Open questions
 - PDF content index — 283 files at `cemini-librarian:/opt/cemini-bulk/research/` are date-named, not topic-named. Bootstrap in progress: extract first pages → create `wiki/sources/` stubs → deep engagement as PDFs are consulted (read via `ssh cemini-librarian` or `scp` to `/tmp/` for Preview/Adobe sessions).
-- Whether to rename the workspace folder off `/Users/claudiobarone/Desktop/OSINT WORKSPACE` (user offered; no pressing reason yet).
+- Whether to rename the workspace folder (user offered an alternative path; no pressing reason yet).

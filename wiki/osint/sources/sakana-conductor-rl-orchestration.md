@@ -14,6 +14,7 @@ related:
   - sources/sakana-trinity-llm-coordinator.md
   - concepts/ai-organisation-design.md
   - sources/omc-talent-container-paper.md
+  - sources/matching-accuracy-different-geometry-es-grpo.md
 maturity: validated
 read_status: read
 created: 2026-04-27

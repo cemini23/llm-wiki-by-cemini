@@ -16,6 +16,7 @@ related:
   - entities/frameworks/autoagent.md
   - entities/infrastructure/deepseek-api.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-28
 updated: 2026-04-28
 clusters: [llm-agents, agent-orchestration]
