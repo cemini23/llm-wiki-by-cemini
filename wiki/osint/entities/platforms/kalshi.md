@@ -34,7 +34,6 @@ related:
   - sources/3-26-a.md
   - sources/ai-5-4-3.md
   - sources/ai-trading-ethics-4-5.md
-  - sources/forex-1-4-4.md
   - sources/insights-from-a-gemini.md
   - sources/kalshi1-3-29.md
   - sources/trading-3-4-5.md

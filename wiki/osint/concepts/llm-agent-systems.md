@@ -18,6 +18,8 @@ related:
   - sources/3-27-links-re-2.md
   - sources/3-28-links-2.md
   - sources/3-29-15.md
+  - sources/4-4-link-re-2.md
+  - sources/4-6-links.md
   - sources/3-29-19.md
   - sources/3-29-research-2.md
   - sources/4-14-pvg4.md

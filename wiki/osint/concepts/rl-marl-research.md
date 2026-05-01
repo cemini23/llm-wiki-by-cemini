@@ -51,6 +51,7 @@ related:
   - sources/4-4-link-re.md
   - sources/4-5-links.md
   - sources/4-6-links.md
+  - sources/forex-1-4-4.md
   - sources/agent-2-4-4.md
   - sources/agent-6-4-4.md
   - sources/agent-7-4-4.md

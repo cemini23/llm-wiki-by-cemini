@@ -10,7 +10,6 @@ related:
   - sources/3-26-blog-re-2.md
   - sources/3-29-research-5.md
   - sources/4-14-re.md
-  - sources/4-6-links.md
   - sources/american-call-options-pricing-with-modular-neural-networks.md
   - sources/bayesuan-perspectives.md
   - sources/cost-effective-algorithmic-trading-api-stack.md
@@ -43,7 +42,6 @@ updated: 2026-04-27
 - @sources/3-26-blog-re-2.md — Options & Derivatives source in the Cemini research corpus
 - @sources/3-29-research-5.md — Options & Derivatives source in the Cemini research corpus
 - @sources/4-14-re.md — Options & Derivatives source in the Cemini research corpus
-- @sources/4-6-links.md — Options & Derivatives source in the Cemini research corpus
 - @sources/american-call-options-pricing-with-modular-neural-networks.md — Options & Derivatives source in the Cemini research corpus
 - @sources/bayesuan-perspectives.md — Options & Derivatives source in the Cemini research corpus
 - @sources/cost-effective-algorithmic-trading-api-stack.md — Options & Derivatives source in the Cemini research corpus

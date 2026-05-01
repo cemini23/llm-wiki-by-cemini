@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-04-30] K12 deep-read batch | 5 Cemini-internal link-evaluation docs + forex paper
+
+5 K10+ cited-unread stubs deep-read (unread-stub → full Narrative + Snippets + bidirectional backlinks). Promotion candidates across all 5: Chronos-Bolt (CPU time-series foundation model, Apache-2.0), STOCKBENCH (composite trading benchmark), DLinear (~1K-param trend-seasonal model), Nomotic AI concept (pre-action authorization), Promptfoo (LLM prompt testing), nvk/llm-wiki content-hashing pattern.
+
+- `wiki/sources/forex-1-4-4.md` — King & Amigó 2025 (arXiv:2511.16657). EUR-USD LSTM ATS. 180 configs. Fundamental > technical. Model 7: +69.64% long / +80.27% short. Recency-weighted macro data, directional-index composite target.
+- `wiki/sources/3-28-links-2.md` — 13 repos (CodeFire, StealthBrowser MCP, MCPHub, Claude Deep Research, Claude Inspector, Promptfoo, Compound Engineering, Memobase, Agent Alchemy, SWE-AF, CMUX, Gstack) + 2 failed extractions. Top Steal: Promptfoo.
+- `wiki/sources/4-4-link-re.md` — ~12 academic papers/systems. Chronos-Bolt, STOCKBENCH, Wasserstein quantisation, Market-adaptive Ratio. Top Steals: Chronos-Bolt, STOCKBENCH.
+- `wiki/sources/4-4-link-re-2.md` — 7 Target Domains. Sovereign-OS (YAML Charter, asymmetric TrustScore), DLinear, AGPL-3.0 contamination doctrine. Top Steals: DLinear, Sovereign-OS Charter.
+- `wiki/sources/4-6-links.md` — 10 repos + 10 AI governance/ethics papers. nvk/llm-wiki, Nomotic AI, AI Agency (algorithmic stopping conditions). Top Steals: Nomotic AI concept, algorithmic stopping.
+- Cross-doc convergence: recency weighting + directional index (forex + 4-4-link-re-2), Promptfoo (3 docs), Nomotic AI (3 docs), Git worktree isolation (maestro + Gstack)
+- Backlinks added: quant-finance (+2), rl-marl-research (+1), llm-agent-systems (+2), mcp-tool-marketplace (+1), 3-26-b (+1)
+- Index rows updated: all 5 from stub summaries to concise deep-read summaries
+
 Append-only chronological record of wiki operations: ingests, queries (substantive), lint passes, structural changes.
 
 Entry format: `## [YYYY-MM-DD] <op> | <title>`. One line per entry above the body keeps `grep "^## \[" log.md` parseable.

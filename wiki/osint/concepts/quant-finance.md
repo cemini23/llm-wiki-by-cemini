@@ -39,7 +39,9 @@ related:
   - sources/4-3-link-re-2.md
   - sources/4-3-link-research.md
   - sources/4-4-link-re-2.md
+  - sources/4-4-link-re.md
   - sources/4-5-links.md
+  - sources/4-6-links.md
   - sources/agent-8-4-4.md
   - sources/ai-agent-skills-for-financial-applications.md
   - sources/ai-architect-s-cemini-suite-research.md
