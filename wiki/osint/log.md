@@ -2817,3 +2817,15 @@ Deep-read (12p). Adaptive RAG for reasoning models: step-level RSUS uncertainty 
 
 ### Pages updated
 - `wiki/index.md` — source added to llm-agents (113→114); total stubs 281→282 (178→179 PDF)
+
+## [2026-04-30] ingest | Tool Attention + DiffMAS — Tier-2 arXiv sweep top 2 candidates
+
+Tier-2 sweep (`wiki/sweeps/2026-04-30.md`) recommended ingesting the top 2 Steal-from candidates. Both read via Exa `crawling_exa` (arxiv-only — no local PDF on librarian).
+
+### Pages created (2 sources)
+- `sources/tool-attention.md` — Three-component middleware (ISO score + state-aware gating + two-phase lazy schema loader). 95% MCP token reduction (47.3K→2.4K per turn). MIT-licensed code. Infrrd.ai.
+- `sources/diffmas.md` — Differentiable KV-cache-mediated inter-agent communication. Two-stage training (KV trace construction + LoRA fine-tuning). +26.7% AIME24, +20.2% GPQA-Diamond. UIUC.
+
+### Pages updated
+- `wiki/index.md` — both sources added to all-sources + llm-agents (114→116); total stubs 282→284 (+ 2 arxiv-only)
+- `wiki/sweeps/2026-04-30.md` — already referenced these papers; no update needed
