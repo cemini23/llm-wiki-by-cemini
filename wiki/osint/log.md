@@ -2829,3 +2829,18 @@ Tier-2 sweep (`wiki/sweeps/2026-04-30.md`) recommended ingesting the top 2 Steal
 ### Pages updated
 - `wiki/index.md` — both sources added to all-sources + llm-agents (114→116); total stubs 282→284 (+ 2 arxiv-only)
 - `wiki/sweeps/2026-04-30.md` — already referenced these papers; no update needed
+
+## [2026-04-30] deep-read | Polymarket Informed Minority (Gómez-Cram et al., SSRN 6617059)
+
+Promoted from `read-skim` → `deep-read`. Triangulated across 8 independent secondary sources (CoinDesk, TradingView/Cointelegraph, Cryptonews, Bitcoin News, Crowdfund Insider, Verse Press, iGaming.org, MEXC News) plus the SSRN abstract — highest-fidelity read achievable without SSRN browser session. SSRN blocks programmatic crawling; primary PDF still not downloaded.
+
+### What changed
+- `sources/polymarket-informed-minority-gomezcram-2026.md` — major rewrite. Added: Phase 3 Signal-Detection Criteria section with 6 rule families (sign-randomization test, order-flow informativeness, news-reaction test, insider-trading anomaly detection, persistence validation, concentration monitoring) encoding concrete thresholds for the dual-MCP-Polymarket brief's shadow-mode design. New quantitative parameters: 12% of raw-profit top-earners beat the randomization benchmark; 60% of lucky winners revert to losers out-of-sample; 1,950 accounts flagged for insider-trading patterns ($15K avg profit); insider trades move prices 7-12× more per dollar; news-reaction behavior as the cleanest skill/not-skill discriminator; on-chain concentration data (top 0.04% wallets = 70% of profits). 11 new verbatim snippets with source attribution.
+
+### Key signal-detection parameters surfaced
+1. Sign-randomization: 10,000 iterations, p<0.05 threshold, minimum ~20-30 trades per account
+2. Order-flow: 1pp skilled net buying → 8bp P(correct outcome); lucky-winner flow gets zero weight
+3. News-reaction: only skilled traders adjust around FOMC/earnings — the cleanest single discriminator
+4. Insider flags: new-account + large-position + <15% odds, dormancy-after-win, price-impact >7× baseline
+5. Persistence: weekly reclassification, 44% expected retention, anti-skill fade signal (51% persistent)
+6. Concentration: dashboard monitoring, not signal-generating
