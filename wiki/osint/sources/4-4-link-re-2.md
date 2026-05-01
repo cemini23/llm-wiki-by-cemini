@@ -12,6 +12,7 @@ related:
   - sources/4-4-link-re.md
   - sources/4-6-links.md
 maturity: validated
+read_status: deep-read
 created: 2026-04-23
 updated: 2026-04-30
 clusters:
