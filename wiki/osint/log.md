@@ -2844,3 +2844,18 @@ Promoted from `read-skim` → `deep-read`. Triangulated across 8 independent sec
 4. Insider flags: new-account + large-position + <15% odds, dormancy-after-win, price-impact >7× baseline
 5. Persistence: weekly reclassification, 44% expected retention, anti-skill fade signal (51% persistent)
 6. Concentration: dashboard monitoring, not signal-generating
+
+## [2026-04-30] deep-read | agriciDaniel/claude-obsidian — /autoresearch loop, hooks.json, wiki-lint
+
+Promoted from `read-skim` → `deep-read`. Full crawl of README.md, WIKI.md (13-section schema reference), hooks.json (4 lifecycle events), commands/autoresearch.md, skills/autoresearch/references/program.md, agents/wiki-lint.md via raw.githubusercontent.com.
+
+### Three directly portable extracts for Cemini Tier-2.5
+
+1. **`/autoresearch` loop control structure** — 3 rounds max, 15 pages/session cap, 5 sources/round, confidence scoring (high/medium/low), output discipline (declarative, no hedging, cite everything). Complete specification for porting the manual Tier-2 sweep into `scripts/tier25_sweep.py` with `tier25_sweep_config.yaml`.
+
+2. **`hooks.json` session-state architecture** — SessionStart (silently read hot.md), PostCompact (re-read hot.md after compaction), PostToolUse (auto-commit on Write/Edit), Stop (update hot.md if wiki changed). The SessionStart/Stop pair directly extends the cpr-pattern the ROADMAP references.
+
+3. **Three lint checks Cemini is missing** — unlinked mentions (entity names without @refs), headings without content, seed-page staleness (status=seed + not updated in 30+ days). The unlinked-mentions check is the highest-value addition.
+
+### Pages updated
+- `sources/agriciDaniel-claude-obsidian.md` — full rewrite: added file-structure map, /autoresearch loop parameter table with Cemini Tier-2.5 mapping, hooks.json lifecycle documentation, hot.md format specification, WIKI.md vs CLAUDE.md structural comparison table, wiki-lint gap analysis (8 checks, 3 missing from Cemini), cross-project referencing pattern analysis, extraction priority-ordered implementation plan
