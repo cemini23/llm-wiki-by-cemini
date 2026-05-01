@@ -23,6 +23,7 @@ related:
   - sources/last30days-skill-mvanhorn.md
   - sources/agentmemory-rohitg00-cpr-impl.md
   - entities/frameworks/fastmcp.md
+  - sources/wave-5-1-link-eval-stacks.md
   - sources/gemini-dr-wave5b-osint-2026-04-30.md
   - sources/caiovicentino-polymarket-mcp-server.md
   - sources/agriciDaniel-claude-obsidian.md

@@ -1,5 +1,58 @@
 # Wiki Log
 
+## [2026-05-01] Wave 5.1 ingest | 3 link-evaluation briefs + Situational Awareness PDF — 7 new pages (4 source + 3 entity), 3 concept-page backlink updates
+
+Wave 5.1 inbox flush: 4 files triaged via `preingest_check.py` (all NEW, no duplicates), all ingested. The three link-evaluation docx files are Cemini-internal briefs authored 2026-05-01; together they evaluate **64 software projects** against the standard three-surface framework. This is the largest single-day link-evaluation batch in the K-series and the first Wave authored directly as `.docx` link-eval briefs rather than Gemini Deep Research outputs.
+
+### Source pages created (4)
+
+- `wiki/sources/wave-5-1-link-eval-stacks.md` — 25 URLs (systems-architecture focus). 3 Adopt (DeepSeek-V4-Pro Fireworks, Hyper-Extract, TimesFM), 6 Steal-from, 5 Reference, 6 Reject. AGPL-3.0 pattern: FinceptTerminal + ST3GG + MiroFish all hard-rejected on license alone.
+- `wiki/sources/wave-5-1-link-eval-more.md` — 12 URLs (agent-framework focus). 2 Adopt (Instructor, DSPy), 1 Steal-from (crewAI yaml schemas), 2 Defer, 3 Reference, 4 Reject. Central architectural thesis: LangGraph's linear 4-node StateGraph is the non-negotiable foundation — competing orchestrators are categorically rejected.
+- `wiki/sources/wave-5-1-link-eval-even-more.md` — 27 URLs (infra + data-engineering focus). 4 Adopt (files-to-prompt, crawl4ai, trafilatura, unstructured forming a coherent 4-stage extraction pipeline), 2 Steal-from, 5 Reference, 16 Reject. Highest Adopt count of the three; extraction-pipeline architecture is the most concrete operational deliverable.
+- `wiki/sources/situational-awareness-aschenbrenner.md` — Leopold Aschenbrenner's Situational Awareness (June 2024, 165pp). Skimmed (ToC + first 10pp); full deep-read pending. AGI-by-2027 thesis via OOM counting; intelligence explosion; trillion-dollar cluster; superalignment; The Project.
+
+### Entity pages created (3)
+
+- `wiki/entities/models/timesfm.md` — Google Research 200M-param time-series foundation model (Apache-2.0). CPU-viable (~400-800 MB). Complementary to Chronos-Bolt (8M fast-path vs 200M deep-forecast).
+- `wiki/entities/frameworks/dspy.md` — Stanford prompt-programming framework (Apache-2.0). Offline compilation pattern: GEPA-optimize prompts on laptop, ship static strings to production LangGraph nodes — no DSPy runtime on Hetzner.
+- `wiki/entities/tools/hermes-lcm.md` — Lossless Context Management engine (MIT). DAG-based hierarchical summarization extending the cpr-pattern with L1/L2/L3 escalation tiers + lossless pointers. Steal-from extraction target: reimplement DAG model + lcm_grep/lcm_expand in LangGraph/PostgreSQL.
+
+### Concept pages updated (3)
+
+- `concepts/context-compression-resume-pattern.md` — added backlinks to hermes-lcm + wave-5-1-link-eval-stacks
+- `concepts/wiki-tooling-evaluation.md` — added backlinks to all three Wave 5.1 link-eval source pages
+- `concepts/mcp-tool-marketplace.md` — added backlink to wave-5-1-link-eval-stacks
+
+### Cross-Wave patterns surfaced
+
+1. **LangGraph firewall** — Competing agent orchestrators are categorically rejected regardless of technical merit. This architectural boundary is now explicit and non-negotiable.
+2. **AGPL-3.0 poison-pill accumulation** — 5 additional AGPL-3.0 rejections across the three docs (Unsloth, ST3GG, MiroFish, FinceptTerminal, OASIS-transitive). The $50K/yr/organization documented penalty on FinceptTerminal is the most severe license exposure in any Wave evaluation.
+3. **Extraction-pipeline composition** — First Wave where four Adopt-tier tools compose into a coherent pipeline (crawl4ai → trafilatura → unstructured → files-to-prompt).
+4. **Offline compilation pattern** — DSPy + Instructor together define a new architectural pattern: optimize on laptop, ship static artifacts to production. This preserves IP-sale cleanliness and avoids runtime dependency bloat.
+
+## [2026-05-01] K14 deep-read | Cemini-internal link-eval (4_3 link re 2.docx, ~2026-04-03) — 0 promotions
+
+K14 deep-read of the sibling to K13's source (same authoring date 2026-04-03). 11 sections in standard 8-section-per-H2 template. **0/11 promotions (0%)** — lowest rate in K-series, reflecting content skew toward applied tooling vs foundational architecture. No new pages created; source count remains 287.
+
+- `wiki/sources/4-3-link-re-2.md` — full rewrite: unread-stub → deep-read. 11-section document register, stale-snapshot calibration, 11 verbatim Snippets.
+- **License-toxicity additions**: Moirai CC-BY-NC-4.0 (new Family A entry — first explicit Non-Commercial rejection in K-series); Firecrawl AGPL-3.0 (reinforcement of existing Family A). Both added to ip-sale-readiness backlinks.
+- **Three-way cpr reinforcement**: budget-constrained retention (Doc 2, pgvector scoring) + stop-hook pattern (Doc 11, context wipe after execution) + ghost token compaction (Doc 11, purge conversational artifacts).
+- **Spectral decomposition forward-pointer**: xCPD (Doc 6) — FFT preprocessing for FEATURE_VECTOR_DIM=34; torch.fft-native, O(n). Not promoted; annotated for future `concepts/spectral-feature-engineering.md` stub if additional spectral-domain papers surface.
+- Backlinks added: chronos-bolt (+1), cpr (+1), scatter-gather (+1), cryptographic-audit-trail (+1), ip-sale-readiness (+1), refinerl (+1), K13 source (+1)
+- Index.md: K14 entry updated with deep-read summary
+- ROADMAP: K14 marked done; Next session table updated
+
+K13 deep-read of the earliest-dated sibling in the Cemini-internal link-eval cluster (April 3 — two days before K8/K9 siblings). 18 sections in standard 8-section-per-H2 template. 3 promotions (17%); 15 Snippets-only. Frontmatter `read_status: deep-read` added to 18 false-positive pages (deep-read content but no frontmatter tag) — gap detector noise floor dropped from 35 → 23 Type A, all at 2-inbound.
+
+- `wiki/sources/4-3-link-research.md` — full rewrite: unread-stub → deep-read. 18-section summary table, stale-snapshot calibration table (128 GB RAM, April 14-17 retrain), 4-source openclaude REJECT corroboration (Wave 2 + K8 + K12 + K13), 10 verbatim Snippets.
+- `wiki/sources/matching-accuracy-different-geometry-es-grpo.md` — Promotion #1. ES causes 100× larger weight updates than GRPO → catastrophic forgetting. Directly feeds Trinity-vs-Conductor decision.
+- `wiki/sources/refinerl-self-refinement-rl.md` — Promotion #2. Skeptical-Agent loop + Squared-Incentive Reward. Critical KL-regularization caveat (paired read with ES-vs-GRPO).
+- `wiki/sources/bytemover-agent-native-memory.md` — Promotion #3. CLAUDE.md pattern source. Context Tree + 5-tier progressive retrieval. Explicit two-tier guardrail: filesystem for docs, DB for ticks.
+- **Frontmatter hygiene**: 18 pages total received `read_status: deep-read` (8 top-inbound Gemini DR link-eval pages + 10 Tier-2 sweep/ingest pages). Gap detector Type A dropped 35 → 23. All remaining Type A at 2-inbound — routing heuristic inflection point reached.
+- Backlinks added: Trinity page (+1 ES-vs-GRPO), Conductor page (+1 ES-vs-GRPO), scatter-gather-topology (+3), context-compression-resume-pattern (+3), 4-5-links (+1), 4-5-links-2 (+1)
+- Index.md: 4 entries updated/added (K13 source + 3 promotions); counts bumped 284 → 287
+- ROADMAP: Next session table refreshed
+
 ## [2026-04-30] K12 adoption batch | 7 Cemini-prod adoption concept/entity pages + briefs
 
 Impact-ranked adoption of K12 promotion candidates. 7 concept/entity pages + 7 briefs created. Cross-document convergence validated (recency weighting → [CONFIRMED], Nomotic AI → 3-doc convergence, Promptfoo → 3-doc convergence).

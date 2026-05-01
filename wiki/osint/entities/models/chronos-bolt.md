@@ -8,9 +8,11 @@ related:
   - concepts/quant-finance.md
   - concepts/rl-marl-research.md
   - concepts/dlinear.md
+  - entities/models/timesfm.md
+  - sources/4-3-link-re-2.md
 maturity: validated
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-01
 ---
 
 ## Relations
@@ -19,6 +21,8 @@ updated: 2026-04-30
 - @concepts/quant-finance.md — Quantitative Finance corpus-index hub
 - @concepts/rl-marl-research.md — RL/MARL hub; Chronos-Bolt could serve as pretrained feature extractor for MAPPO
 - @concepts/dlinear.md — DLinear trend-seasonal model; lightweight sibling CPU-time-series option
+- @entities/models/timesfm.md — Google Research 200M-param time-series foundation model (Apache-2.0); complementary: Chronos-Bolt as fast-path (~8M), TimesFM as deep-forecast (~200M)
+- @sources/4-3-link-re-2.md — K14 deep-read 2026-05-01; reinforces Chronos-Bolt Apache-2.0 + CPU-viability with explicit license confirmation; adds TimesFM 2.5 as secondary Apache-2.0 candidate and Moirai CC-BY-NC-4.0 as explicit reject
 
 ## Raw Concept
 

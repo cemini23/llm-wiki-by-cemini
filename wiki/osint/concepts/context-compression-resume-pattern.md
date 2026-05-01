@@ -19,9 +19,15 @@ related:
   - sources/4-5-links-2.md
   - sources/3-26-b.md
   - sources/3-26-link-re-3.md
+  - sources/4-3-link-research.md
+  - sources/bytemover-agent-native-memory.md
+  - sources/refinerl-self-refinement-rl.md
+  - sources/4-3-link-re-2.md
+  - entities/tools/hermes-lcm.md
+  - sources/wave-5-1-link-eval-stacks.md
 maturity: draft
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-01
 ---
 
 ## Relations
@@ -36,6 +42,7 @@ updated: 2026-04-28
 - @concepts/wiki-tooling-evaluation.md — 2026-04-28 synthesis evaluating 7 wiki/memory tooling candidates; this concept page is **directly affected**: the recommendation to steal architectural details from `agentmemory` for the Python cpr-pattern wiring (rather than deploy the TS+iii-engine runtime) shifts this page's prescribed-not-built status from "open design" to "port-and-adapt the agentmemory pipeline shape"
 - @sources/agentmemory-rohitg00-cpr-impl.md — Apache-2.0 reference implementation: PostToolUse hook → SHA-256 dedup (5min window) → privacy filter → LLM compress → BM25+Vector+Graph RRF fusion. Pipeline is reference-grade for the Python port; runtime architecture (TS + iii-engine) wrong for Cemini's stack — steal-architecturally, don't deploy
 - @sources/willynikes2-knowledge-base-server.md — sibling memory-engine candidate; uses three-tier (hot/warm/cold) framing instead of compress-preserve-resume framing — parallel signal-vs-noise technique, different mechanism. Both attempt the same end (retrieval signal-vs-noise in long-running agents)
+- @sources/4-3-link-re-2.md — K14 deep-read 2026-05-01; three-way cpr reinforcement from a single K-series source: budget-constrained retention queue (Doc 2, pgvector relevance scoring), stop-hook pattern (Doc 11, aggressive context wipe after execution), ghost token compaction (Doc 11, purge conversational artifacts). All three are Snippets-only — reinforce existing cpr discipline without introducing new primitives.
 
 ## Raw Concept
 

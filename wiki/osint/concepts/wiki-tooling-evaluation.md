@@ -18,6 +18,9 @@ related:
   - entities/infrastructure/localai.md
   - entities/infrastructure/deepseek-api.md
   - entities/frameworks/fastmcp.md
+  - sources/wave-5-1-link-eval-stacks.md
+  - sources/wave-5-1-link-eval-more.md
+  - sources/wave-5-1-link-eval-even-more.md
   - concepts/librarian-server-architecture.md
   - sources/gemini-dr-link-eval-2026-04-28.md
   - sources/omc-talent-container-paper.md

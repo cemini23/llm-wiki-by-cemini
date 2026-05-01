@@ -81,9 +81,10 @@ related:
   - concepts/recency-weighted-fundamental-data.md
   - concepts/stockbench.md
   - entities/models/chronos-bolt.md
+  - entities/models/timesfm.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-04-30
+updated: 2026-05-01
 ---
 
 ## Relations
