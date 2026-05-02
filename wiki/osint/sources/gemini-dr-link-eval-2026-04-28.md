@@ -49,6 +49,7 @@ clusters: [llm-agents, librarian-tooling, decision-record]
 - @sources/playwright-mcp-microsoft.md — Defer-Cemini / Adopt-Workflow standalone source page
 - @sources/bare-bones-memory-southpolesteve.md — Adopt-for-Workflow standalone source page (gist, license unfound but methodology-only)
 - @sources/omc-talent-container-paper.md — sibling source page; OneManCompany paper from the same indexing drop (different upstream — arXiv paper, not a Gemini DR finding)
+- @sources/4-5-links-2.md — K9 cross-wave duplicate: `mattpocock/skills` is independently evaluated in both this page (Wave 2 Steal-from) and K9 (full 3-document evaluation, Documents 7-9). One of only two items appearing in ≥2 link-aggregate evaluations.
 
 ## Raw Concept
 
