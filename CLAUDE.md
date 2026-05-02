@@ -95,6 +95,7 @@ Four canonical sections, in order. Include only what's relevant per page type.
 - `## Raw Concept` — provenance. For source pages: original title, author, retrieval date, filename/URL. For entity/concept pages: what prompted this page, which sources it was synthesized from.
 - `## Narrative` — the body. Prose, tables, structured data, diagrams. This is what a human reads.
 - `## Snippets` — verbatim quotes, code, formulas, or raw data pulled from sources. Always with citation.
+- `## Dead Ends` (optional) — what was tried and abandoned, with structured entries: **What was tried** / **Why it failed** / **What was learned**. Appears after `## Snippets`. Prevents re-discovering the same dead ends across sessions. See @concepts/exploration-graph-dead-ends.md.
 
 ### Page-type templates
 
@@ -158,6 +159,7 @@ List of wiki pages synthesized + raw sources cited.
 - Use `@path/to/page.md` inline (no leading slash, relative to `wiki/`).
 - When you link from A → B, also add A to B's `related:` list. Bidirectional means bidirectional.
 - If a topic keeps coming up without a page, create a stub page for it (frontmatter only + one-line narrative) rather than letting mentions pile up orphaned.
+- **Typed dependencies** (optional, from ARA protocol): prefix links with a type when the relationship is clear. `@I path/to/page.md` (imports — injects a definition this page depends on), `@B path/to/page.md` (bounds — propagates a constraint or condition), `@M path/to/page.md` (baseline/measure — comparison point). Untyped `@path` links remain valid and mean "general related." See @concepts/typed-relation-dependencies.md.
 
 ## Citation & claim tags
 

@@ -6,6 +6,7 @@ keywords: [conductor, orchestrator, model-routing, grpo, multi-model, tool-use, 
 related:
   - concepts/llm-agent-systems.md
   - concepts/scatter-gather-topology.md
+  - concepts/agent-native-research-artifacts.md
   - sources/toolorchestra-2511.21689.md
   - sources/mmgrpo-iclr-2026.md
   - sources/training-free-grpo-iclr-2026.md
@@ -126,6 +127,8 @@ Meta-Router provides the causal framework for evaluating routing quality:
 - **Not a model trainer** — Conductor doesn't fine-tune the models it routes to. It optimizes the *routing decision*, not the model weights.
 - **Not a replacement for LangGraph** — Conductor sits above the existing scatter-gather topology, deciding which agents to activate, not replacing the execution engine.
 - **Not a real-time trading component** — routing decisions add latency. Conductor is for analyst queries, not tick-level execution.
+
+**Agent-skill architecture validated**: Both the ARA Live Research Manager and ARA Compiler (@concepts/agent-native-research-artifacts.md) are implemented as natural-language specifications loaded into context windows — not custom SDKs. This independently validates Conductor's Path B approach (prompt-based token-prior routing rather than a trained model). The agent-skill pattern (spec in context → agent becomes specialist) is emerging as a general architecture for LLM-native infrastructure, not just a Conductor shortcut. When Path A activates, the orchestrator training data will come from Path B's agent-skill routing logs — the two paths are sequential, not competing.
 
 ### Next steps
 

@@ -8,6 +8,10 @@ related:
   - concepts/coding-agents-alphazero.md
   - concepts/agent-memory-critique.md
   - concepts/policy-distillation.md
+  - concepts/exploration-graph-dead-ends.md
+  - concepts/evidence-withheld-verification.md
+  - concepts/typed-relation-dependencies.md
+  - concepts/conductor-orchestrator.md
 maturity: draft
 created: 2026-05-02
 updated: 2026-05-02

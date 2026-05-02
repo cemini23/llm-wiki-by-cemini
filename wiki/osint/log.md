@@ -1,5 +1,25 @@
 # Wiki Log
 
+## [2026-05-02] ARA adoption — 4 patterns deployed
+
+Four adoptions from Liu et al.'s Agent-Native Research Artifacts paper:
+
+1. **Exploration Graph / Dead Ends** — new `## Dead Ends` optional wiki section (what was tried / why it failed / what was learned). Concept page + CLAUDE.md update.
+2. **Evidence-Withheld Verification** — blind judge anti-fabrication pattern. Judge receives task spec + candidate output, never the reference. Applied to ingest QA, Conductor evaluation, claim verification.
+3. **Typed Relation Dependencies** — optional `@I`/`@B`/`@M` prefixes on cross-links (imports / bounds / baseline). CLAUDE.md relations syntax extended. Untyped links remain valid.
+4. **Agent-skill architecture confirmation** — ARA's Live Research Manager + Compiler implemented as natural-language specs, validating Conductor's Path B approach. Note added to conductor concept page.
+
+### Concept pages created
+- `concepts/exploration-graph-dead-ends.md`
+- `concepts/evidence-withheld-verification.md`
+- `concepts/typed-relation-dependencies.md`
+
+### Pages updated
+- `CLAUDE.md` — `## Dead Ends` section + typed relations syntax
+- `concepts/conductor-orchestrator.md` — agent-skill architecture confirmation
+- `concepts/agent-native-research-artifacts.md` — cross-references to adoption pages
+- `wiki/index.md` — 3 new concept entries
+
 ## [2026-05-02] ingest | The Last Human-Written Paper — Agent-Native Research Artifacts (arXiv:2604.24658)
 
 Liu, Pei, Huang et al. (Orchestra Research + 25 institutions). 46p deep-read. ARA protocol: four-layer agent-executable research package replacing narrative papers. Two structural taxes quantified (Storytelling: 90.2% agent compute on dead ends; Engineering: 45.4% of requirements fully specified). Live Research Manager + ARA Compiler + three-level Seal review. QA 72.4%→93.7%, reproduction 57.4%→64.4%.
