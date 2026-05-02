@@ -20,7 +20,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 | Item | Notes |
 |---|---|
 | **K25 deep-read** | Academic-stub routing by cited-unread density × cluster relevance × recency. 14 remaining Type-A candidates at 2 inbound each. |
-| **Phase 4 — brain → librarian MCP** | Server-stack scope. Code shipped; audit-trail + e2e verification remaining. Brief at `briefs/2026-04-30_brain-librarian-mcp-wiring.md`. |
+| **Phase 4 — brain → librarian MCP** | Done (2026-05-01). Audit trail deployed, e2e verified: BTC-USD → 3 sources, 777 chars, ~126ms. |
 | **Stale NEEDS-VERIFICATION sweep** | All `[NEEDS VERIFICATION]` flags ≥21 days old. K11 fixed the RAM figure; broader sweep queued. |
 | **Tier 2 arXiv sweep** | Session-start ritual prompts if last sweep >7 days. Next check: next session. |
 
@@ -78,6 +78,7 @@ Recommendation: adopt `llm-wiki-compiler` (MIT, 7/10 Karpathy ops). Smoke test q
 
 ## Done — 2026-05-01 session
 
+- **Phase 4 — brain → librarian MCP** — Audit trail deployed on cemini-prod. E2E verified: fetch_wiki_context("BTC-USD") → 3 sources, 777 chars, ~126ms. KB_HOST hardened.
 - **K24** — ParlayMarket deep-read + `concepts/parlay-market-making.md` + kalshi.md extension
 - **K23** — Nomotic AI deep-read + nomotic-ai.md primary-source confirmation + six principles
 - **K22** — Reasoning Safety Monitor deep-read + `concepts/reasoning-safety-monitor.md`
