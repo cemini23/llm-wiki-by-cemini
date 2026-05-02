@@ -1,0 +1,156 @@
+---
+title: "Conductor — Lightweight Multi-Model Orchestrator"
+type: concept
+tags: [concept, orchestration, model-routing, grpo, training-free, multi-agent, conductor, synthesis]
+keywords: [conductor, orchestrator, model-routing, grpo, multi-model, tool-use, cascade, token-prior, api-only, cemini-architecture]
+related:
+  - concepts/llm-agent-systems.md
+  - concepts/scatter-gather-topology.md
+  - sources/toolorchestra-2511.21689.md
+  - sources/mmgrpo-iclr-2026.md
+  - sources/training-free-grpo-iclr-2026.md
+  - sources/select-then-route-emnlp-2025.md
+  - sources/masrouter-acl-2025.md
+  - sources/gigpo-neurips-2025.md
+  - sources/meta-router-2509.25535.md
+maturity: draft
+created: 2026-05-01
+updated: 2026-05-01
+---
+
+## Relations
+
+- @concepts/llm-agent-systems.md — Conductor is the orchestration layer for the LLM agent systems cluster.
+- @concepts/scatter-gather-topology.md — Conductor replaces manual scatter-gather topology selection with learned routing decisions.
+- @sources/toolorchestra-2511.21689.md — **Architecture blueprint**: 8B orchestrator beats GPT-5 at 2.5× efficiency.
+- @sources/mmgrpo-iclr-2026.md — **Optimization method A**: Multi-module GRPO for compound AI systems. 11% gain, open source.
+- @sources/training-free-grpo-iclr-2026.md — **Optimization method B**: Token-prior approach for API-only deployment. Tested on DeepSeek-V3.1.
+- @sources/select-then-route-emnlp-2025.md — **Routing layer**: Taxonomy-guided two-stage routing + cascade. 4× cost reduction.
+- @sources/masrouter-acl-2025.md — **Multi-agent extension**: Collaboration mode + role allocation + LLM selection. 52% cost reduction.
+- @sources/gigpo-neurips-2025.md — **Multi-turn credit assignment**: Two-level GRPO for agent trajectory optimization.
+- @sources/meta-router-2509.25535.md — **Evaluation framework**: Causal correction of LLM-as-judge bias for router training.
+
+## Raw Concept
+
+K25 Conductor targeted research sweep (7 papers ingested from 25 candidates across 5 queries). Three clusters converged: GRPO optimization, model routing, and orchestration frameworks. The synthesis: a **lightweight orchestrator that routes queries to the right model+tool combination**, optimized via GRPO without requiring model weight access, producing better results at lower cost than any single frontier model.
+
+## Narrative
+
+### What is Conductor?
+
+Conductor is a proposed Cemini architecture component: a small, lightweight model (or token-prior prefix on an existing model) that decides **which model and which tool should handle each query**. Instead of sending every request to DeepSeek-V4 (expensive) or a single cheap model (inaccurate), Conductor classifies the query, selects the right model from a pool, and escalates only when confidence is low.
+
+The K25 sweep found that this architecture is not just viable — it's **proven to beat frontier models**. ToolOrchestra's 8B orchestrator surpasses GPT-5 on HLE (37.1% vs 35.1%) at 2.5× lower cost.
+
+### Why Conductor?
+
+Cemini currently routes all analyst queries through DeepSeek-V4-flash via the hosted API. This is:
+- **Expensive**: every query pays the frontier-model cost
+- **Inflexible**: can't use cheaper models for simple queries or specialized models for specific domains
+- **Single point of failure**: if DeepSeek API is down, the analyst is blind
+
+Conductor introduces a routing layer that:
+1. Classifies each query by type (ticker lookup, options analysis, sentiment, market microstructure, etc.)
+2. Selects the appropriate model from a pool (could be DeepSeek-V4 for hard queries, Qwen2 7B for simple lookups, a specialized finance model for quantitative tasks)
+3. Cascades upward only when a multi-judge confidence check signals low reliability
+4. Optimizes this routing policy over time via GRPO on observed outcomes
+
+### Architecture blueprint (from K25 papers)
+
+```
+QUERY → ┌─────────────────────────────────────┐
+        │  STAGE 1: Taxonomy Classifier        │  ← StR (Select-Then-Route)
+        │  "What kind of question is this?"     │
+        │  → reasoning / code / data / fact     │
+        └─────────────────────────────────────┘
+                          │
+                          ▼
+        ┌─────────────────────────────────────┐
+        │  STAGE 2: Model Pool Selection       │  ← StR + MasRouter
+        │  "Which 2-4 models can handle this?"  │
+        │  Select from pool, cheapest first     │
+        └─────────────────────────────────────┘
+                          │
+                          ▼
+        ┌─────────────────────────────────────┐
+        │  STAGE 3: Cascade + Confidence Gate  │  ← StR multi-judge
+        │  Try cheapest model → judge output    │
+        │  If low confidence → escalate         │
+        └─────────────────────────────────────┘
+                          │
+                          ▼
+        ┌─────────────────────────────────────┐
+        │  STAGE 4: Tool Orchestration          │  ← ToolOrchestra
+        │  Route to appropriate tool            │
+        │  (calculator, RAG, web search, etc.)  │
+        └─────────────────────────────────────┘
+                          │
+                          ▼
+                    RESPONSE
+
+        ┌─────────────────────────────────────┐
+        │  OPTIMIZATION LOOP                   │
+        │  MMGRPO (full training)               │
+        │  OR Training-Free GRPO (token prior)  │
+        │  + GiGPO multi-turn credit assignment │
+        │  + Meta-Router evaluation correction  │
+        └─────────────────────────────────────┘
+```
+
+### Two deployment paths
+
+**Path A — Trained Orchestrator** (ToolOrchestra + MMGRPO + GiGPO):
+- Train a small (8B) orchestrator model via RL
+- Highest performance ceiling (beats GPT-5)
+- Requires model hosting (need a GPU for the 8B orchestrator)
+- Full GRPO optimization with multi-module + multi-turn credit assignment
+
+**Path B — Token-Prior Orchestrator** (Training-Free GRPO):
+- No model training needed — construct token priors as prompt prefixes
+- Works with API-only deployment (DeepSeek hosted API)
+- Lower performance ceiling but zero infrastructure cost
+- Few dozen calibration samples sufficient
+- Tested on DeepSeek-V3.1 (same family as Cemini's V4-flash)
+
+Path B is the pragmatic starting point for Cemini: build token-prior routing prefixes, calibrate on analyst runs, deploy without infrastructure changes. Graduate to Path A when the cost/performance inflection justifies a dedicated orchestrator model.
+
+### Evaluation framework
+
+Meta-Router provides the causal framework for evaluating routing quality:
+- LLM-as-judge evaluates 95% of routing decisions (cheap, scalable)
+- Periodic gold-standard expert calibration corrects judge bias
+- Causal adjustment prevents systematic drift toward judge-preferred models
+
+### What Conductor is NOT
+
+- **Not a model trainer** — Conductor doesn't fine-tune the models it routes to. It optimizes the *routing decision*, not the model weights.
+- **Not a replacement for LangGraph** — Conductor sits above the existing scatter-gather topology, deciding which agents to activate, not replacing the execution engine.
+- **Not a real-time trading component** — routing decisions add latency. Conductor is for analyst queries, not tick-level execution.
+
+### Next steps
+
+1. **Calibration data collection**: log current analyst query → model → outcome triplets to build routing training data
+2. **Token-prior prototype (Path B)**: construct routing prefixes from calibration data, A/B test against baseline (always DeepSeek-V4)
+3. **Taxonomy design**: define Cemini's query type taxonomy (ticker lookup, options analysis, sentiment, market microstructure, etc.) based on historical analyst query patterns
+4. **Pool selection**: identify candidate models for each taxonomy class (DeepSeek-V4 for hard, Qwen2-7B for simple, KronosTokenizer for technical, etc.)
+5. **Path A evaluation gate**: if Path B shows meaningful cost reduction with quality preservation, evaluate whether the 8B orchestrator hosting cost is justified
+
+## Snippets
+
+**S1 — ToolOrchestra core claim**:
+> "We show that small orchestrators managing other models and a variety of tools can both push the upper bound of intelligence and improve efficiency in solving difficult agentic tasks." [Source: @sources/toolorchestra-2511.21689.md]
+
+**S2 — 8B beats GPT-5**:
+> "On HLE, Orchestrator achieves a score of 37.1%, outperforming GPT-5 (35.1%) while being 2.5x more efficient." [Source: @sources/toolorchestra-2511.21689.md]
+
+**S3 — Training-Free GRPO on DeepSeek**:
+> "Training-free GRPO, when applied to DeepSeek-V3.1, significantly improves out-of-domain performance. With just a few dozen training samples, Training-free GRPO outperforms fine-tuned small LLMs." [Source: @sources/training-free-grpo-iclr-2026.md]
+
+**S4 — StR routing efficiency**:
+> "StR improves the end-to-end accuracy from 91.7% to 94.3% while reducing inference cost by 4×." [Source: @sources/select-then-route-emnlp-2025.md]
+
+**S5 — MasRouter cost reduction**:
+> "Reducing overhead by up to 52.07% compared to baseline approaches." [Source: @sources/masrouter-acl-2025.md]
+
+**S6 — MMGRPO improvement**:
+> "mmGRPO improves accuracy by 11% on average against the post-trained LM — and by 5% against prompt optimization on its own." [Source: @sources/mmgrpo-iclr-2026.md]

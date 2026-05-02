@@ -1,5 +1,26 @@
 # Wiki Log
 
+## [2026-05-01] K25 Conductor sweep — targeted research: 7 papers → orchestration synthesis
+
+Targeted sweep on GRPO orchestrators + multi-model routing architectures (5 queries, 25 candidates). Three clusters converged: GRPO optimization, model routing, orchestration frameworks. 7 papers deep-read, 1 synthesis concept page created.
+
+- **ToolOrchestra (arXiv 2511.21689)** — Architecture blueprint: 8B orchestrator beats GPT-5 on HLE (37.1% vs 35.1%) at 2.5× lower cost.
+  - **Source page**: `wiki/sources/toolorchestra-2511.21689.md` — new, deep-read
+- **MMGRPO (ICLR 2026)** — Optimization method A: Multi-Module GRPO for compound AI. 11% avg accuracy gain, open source.
+  - **Source page**: `wiki/sources/mmgrpo-iclr-2026.md` — new, deep-read
+- **Training-Free GRPO (ICLR 2026)** — Optimization method B: Token-prior approach for API-only deployment. Tested on DeepSeek-V3.1, few dozen samples, outperforms fine-tuned small LLMs.
+  - **Source page**: `wiki/sources/training-free-grpo-iclr-2026.md` — new, deep-read. Companion to existing `training-free-grpo-cai-2025.md`.
+- **Select-Then-Route (EMNLP 2025)** — Routing layer: taxonomy-guided pool selection + cascade with multi-judge confidence gating. 4× cost reduction at 94.3% accuracy.
+  - **Source page**: `wiki/sources/select-then-route-emnlp-2025.md` — new, deep-read
+- **MasRouter (ACL 2025)** — Multi-agent routing extension: cascaded controller for collaboration mode → role allocation → LLM selection. 52% cost reduction.
+  - **Source page**: `wiki/sources/masrouter-acl-2025.md` — new, deep-read
+- **GiGPO (NeurIPS 2025)** — Multi-turn credit assignment: two-level GRPO (episode-level + step-level). NTU/Skywork AI, Bo An group.
+  - **Source page**: `wiki/sources/gigpo-neurips-2025.md` — new, deep-read
+- **Meta-Router (arXiv 2509.25535)** — Evaluation framework: causal inference for router training, CATE-based bias correction for LLM-as-judge evaluations.
+  - **Source page**: `wiki/sources/meta-router-2509.25535.md` — new, deep-read
+- **Concept page**: `wiki/concepts/conductor-orchestrator.md` — new, synthesis. 4-stage pipeline (Taxonomy → Pool Select → Cascade Gate → Tool Orchestration), two deployment paths (Path A: trained orchestrator, Path B: token-prior API-only), Meta-Router evaluation framework.
+- **Index**: `wiki/index.md` — 7 source entries inserted in llm-agents section (alphabetically: GiGPO, MMGRPO, MasRouter, Meta-Router, Select-Then-Route, ToolOrchestra, Training-Free GRPO ICLR) + concept entry in concepts section.
+
 ## [2026-05-01] Tier 2.5 sweep — first /autoresearch loop ingest: SafeHarness + TSAG
 
 First Tier 2.5 sweep (5 cluster queries × 5 hits = 25 candidates) surfaced 2 ingest candidates. Both deep-read and ingested.
