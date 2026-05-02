@@ -19,6 +19,8 @@ related:
   - entities/frameworks/langgraph.md
   - entities/frameworks/fastmcp.md
   - entities/infrastructure/timescaledb.md
+  - sources/3-29-research-6.md
+  - sources/3-17-agent-research.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23

@@ -19,6 +19,9 @@ briefs/
 # --- Claude Code per-project state (settings, lock files, scheduled-task state) ----
 .claude/
 
+# --- Session-state cache (changes every session; ephemeral curator working memory) --
+hot.md
+
 # --- macOS / editor cruft -----------------------------------------------------
 .DS_Store
 *.swp
@@ -36,6 +39,11 @@ __pycache__/
 .venv/
 venv/
 .pytest_cache/
+
+# --- Node.js (not a Node project; root-level installs are accidental) ----------
+node_modules/
+package.json
+package-lock.json
 
 # --- Temp scratch -------------------------------------------------------------
 /tmp_*.txt

@@ -2,44 +2,58 @@
 
 A local knowledge hub for OSINT and financial research, organized as an
 LLM-curated, human-read wiki. This repo holds the **schema, the wiki, and
-the helper scripts**. Raw sources, market data, and operational outputs
-live locally and are gitignored.
+the helper scripts**. Raw sources live on a dedicated librarian server;
+wiki pages are synced there for 24/7 MCP serving.
 
 ## What's tracked
 
 | Path           | Role                                                              |
 | -------------- | ----------------------------------------------------------------- |
 | `CLAUDE.md`    | The schema — tells the LLM how to operate this workspace.         |
+| `ROADMAP.md`   | Active workstream, decisions, and open questions.                 |
 | `LESSONS.md`   | Meta-lessons about *how we work* (distinct from `wiki/log.md`).   |
 | `wiki/`        | The library: `index.md`, `log.md`, `sources/`, `entities/`, `concepts/`. |
-| `scripts/`     | Python helpers — docx extraction, stub generation, lint, etc.     |
+| `scripts/`     | Python helpers — docx extraction, stub generation, lint, gap detection. |
 | `.gitignore`   | This file's enforcement layer.                                    |
 
 ## What's not tracked (and why)
 
-- **`research for cemini/`** — 500M+ of source PDFs and reports. Immutable
-  raw material, local-only.
-- **`market dataset/`** — 1.6G of historical price data. Same reasoning.
-- **`research to be indexed/`** — drop-zone for new sources awaiting ingest.
+- **`research to be indexed/`** — transient drop-zone for new sources awaiting
+  ingest. Gitignored.
 - **`briefs/`** — operational deliverables staged for distribution to
-  claude.ai or the CeminiSuite dev stack. They contain server IPs and
-  point-in-time context; not durable artifacts.
-- **`.local/`** — server connection details (SSH targets, IPs). One commit
-  away from public exposure on a private repo, so kept local.
-- **`.claude/settings.local.json`** — Claude Code per-project allowlist;
-  contains the same IPs.
+  claude.ai or the CeminiSuite dev stack. Gitignored.
+- **`hot.md`** — session-state cache (curator working memory across
+  compaction boundaries). Gitignored (changes every session).
+- **`.local/`** — server connection details (SSH targets, IPs). Gitignored.
+- **`.claude/settings.local.json`** — Claude Code per-project allowlist.
+  Gitignored.
 - **`.DS_Store`, `__pycache__/`, etc.** — OS and tooling cruft.
 
-## Three layers
+## Architecture — three layers + librarian server
 
-1. **Raw sources** (gitignored) — read but never modified.
+1. **Raw sources** — immutable. Canonical location: `cemini-librarian:/opt/cemini-bulk/`
+   (migrated from laptop 2026-04-28). Backed by Hetzner daily snapshots.
+   - `research/` — ~283 PDFs and reports (642 MB)
+   - `market-dataset/` — ~17.6k files of historical market data (1.6 GB)
+   - **Read pattern**: `ssh cemini-librarian "cat /opt/cemini-bulk/research/<filename>"`
+     or `scp` to `/tmp/` for local deep-read sessions.
+   - **Drop pattern**: scp new sources to librarian after ingest; remove from laptop.
+
 2. **The wiki** (`wiki/`, tracked) — LLM-written, human-read, cross-linked
-   markdown pages with YAML frontmatter.
+   markdown pages with YAML frontmatter. ~455 pages. Synced to
+   `cemini-librarian:/opt/cemini-wiki/wiki/` for 24/7 MCP serving via kb-server
+   (FTS5 BM25, port 3838).
+
 3. **The schema** (`CLAUDE.md`, tracked) — how the LLM runs the wiki.
    Co-evolves with the workspace.
 
+4. **Librarian server** — dedicated Hetzner CPX21 (Ashburn, $13.99/mo, 3 vCPU,
+   4 GB RAM, 80 GB NVMe). Runs kb-server (`willynikes2/knowledge-base-server`,
+   MIT) on port 3838. Wiki synced hourly via `scripts/sync_wiki_to_librarian.sh`.
+   See `@concepts/librarian-server-architecture.md` for the full plan.
+
 See `CLAUDE.md` for the full operational schema (page formats, ingest
-workflow, citation tags, distribution rules).
+workflow, citation tags, distribution rules, session-start rituals).
 
 ## Distribution targets
 
@@ -50,6 +64,9 @@ The wiki is the librarian; consumers live elsewhere:
   Connection details in `.local/server.md` (gitignored). This workspace
   ships briefs into `/opt/cemini/briefs/` only; everything else on the
   server is read-only from here.
+- **Librarian MCP** — kb-server at `cemini-librarian:3838` serves wiki
+  content to the Cemini production brain via MCP (Phase 4 wiring shipped,
+  verification pending; server-stack scope).
 
 ## Getting started
 
@@ -58,10 +75,16 @@ The wiki is the librarian; consumers live elsewhere:
 git clone <this repo>
 cd "OSINT WORKSPACE"
 
-# raw sources are local-only — nothing to fetch from the repo for those.
-# You will need to populate research for cemini/, market dataset/, and
-# briefs/ from your own backups.
-
 # scripts assume Python 3.11+ with python-docx; install as needed:
 pip install python-docx
+
+# raw sources are on the librarian server, not the laptop.
+# verify connectivity:
+ssh cemini-librarian "ls /opt/cemini-bulk/research/ | head -5"
+
+# wiki lint (run after any wiki edit):
+python3 scripts/wiki_lint.py
+
+# wiki sync to librarian (or wait for hourly cron):
+scripts/sync_wiki_to_librarian.sh
 ```

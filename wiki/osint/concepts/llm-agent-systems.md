@@ -97,9 +97,17 @@ related:
   - sources/sherry-ternary-quantization-tencent-2026.md
   - sources/3-26-b.md
   - sources/3-26-link-re-3.md
+  - sources/3-29-research-6.md
+  - sources/git-3-5-pt3.md
+  - concepts/sae-execution-contract.md
+  - concepts/openclaw-security-taxonomy.md
+  - concepts/stockbench.md
+  - sources/3-29-15.md
+  - concepts/reasoning-safety-monitor.md
+  - concepts/agent-authorization-stack.md
 maturity: validated
 created: 2026-04-26
-updated: 2026-04-30
+updated: 2026-05-01
 ---
 
 ## Relations
@@ -136,6 +144,10 @@ updated: 2026-04-30
 - @sources/crypto-4-11.md — LLM agent-systems source in the Cemini research corpus
 - @sources/crypto-4-4-11.md — LLM agent-systems source in the Cemini research corpus
 - @sources/crypto-7-4-11.md — LLM agent-systems source in the Cemini research corpus
+- @concepts/sae-execution-contract.md — K19 promotion 2026-05-01; SAE execution contract as reusable architectural primitive for agent security — execution-layer middleware treating upstream intent as structurally untrusted
+- @concepts/openclaw-security-taxonomy.md — K20 promotion 2026-05-01; OpenClaw security taxonomy as reusable architectural primitive — two-axis taxonomy + Context Manipulation kill chain + three structural conditions. Complements SAE: K19 = defense, K20 = threat model
+- @concepts/stockbench.md — K21 promotion 2026-05-01; STOCKBENCH standardized trading agent benchmark — contamination-free, multi-month LLM agent evaluation with composite z-score. Primary trading-agent benchmark entry in this hub
+- @concepts/reasoning-safety-monitor.md — K22 promotion 2026-05-01; Reasoning Safety Monitor as reusable architectural primitive — parallel CoT inspection with nine-category taxonomy + interrupt signal. Closes K20 §6.6's context-window provenance gap; completes K19+K20+K22 execution-security stack
 - @sources/cyrpto-12-4-11.md — LLM agent-systems source in the Cemini research corpus
 - @sources/esglens.md — LLM agent-systems source in the Cemini research corpus (O 2026-04-27 — RAG-based ESG report analysis)
 - @sources/gdelt-2-3-29.md — LLM agent-systems source in the Cemini research corpus
@@ -173,6 +185,7 @@ updated: 2026-04-30
 - @sources/4-5-links.md — LLM agent-systems source in the Cemini research corpus (K8 deep-read 2026-04-28 — Cemini-internal multi-repo evaluation document; 13 H2 sections, 3 promotions including 2 to this cluster's sub-clusters). The doc's Synthesis section maps the "Agent Boss" managerial paradigm onto the deployed LangGraph orchestrator, which fits this cluster's "agent scaffolding + orchestration" sub-cluster
 - @entities/frameworks/autoagent.md — K8 promotion 2026-04-28 — autonomous harness engineering framework, fits the "agent scaffolding + harness engineering" sub-cluster. Score-Driven Hill Climbing + Single-File Registry-Driven Harness named patterns; meta-agent-mutates-target-agent loop
 - @concepts/context-compression-resume-pattern.md — K8 promotion 2026-04-28 — three-phase context-compression / preserve / resume pattern, fits the "long-running agent state management + memory architectures" sub-cluster. Active prescribed-not-built gap on the Cemini stack (zero LangGraph checkpointer references)
+- @concepts/agent-authorization-stack.md — K19+K22+K23+K24 cross-cluster synthesis; the authorization stack is the governance dimension of the llm-agent-systems cluster.
 
 ## Raw Concept
 
@@ -197,7 +210,7 @@ The cluster decomposes into nine sub-topics. The right-hand column lists the **h
 | **MCP tool surface** | `@concepts/mcp-tool-marketplace.md` (cross-cutting synthesis), `@sources/upstash-context7.md`, `@sources/dune-analytics-mcp.md`, `@sources/polymarket-predictions-mcp.md`, `@sources/playwright-mcp-microsoft.md`, `@sources/tradesdontlie-tradingview-mcp.md`, `@sources/vibe-trading-hkuds.md` | **Mature**: 13+ MCP-server source pages organised under a single rubric. **MCP is now the dominant LLM-tool integration substrate for Cemini's stack.** |
 | **Multi-agent coordination** | `@sources/omc-talent-container-paper.md` (OMC; Huawei Noah's Ark), `@concepts/scatter-gather-topology.md` (Cemini's deployed pattern), `@sources/sakana-conductor-rl-orchestration.md` (Sakana Fugu lineage), `@concepts/mappo.md`, `@concepts/ai-organisation-design.md` | **Active**: Cemini's analyst orchestrator IS a scatter-gather multi-agent system. OMC's Talent+Container abstraction is a candidate refactor target. |
 | **Coding agents** | `@sources/agentic-harness-engineering.md` (Terminal-Bench 2; SWE-bench-verified results), `@sources/training-free-grpo-cai-2025.md` (DeepSeek-V3.1-Terminus + AIME) — code-agent benchmarks dominate the empirical literature | **Adjacent**: Cemini doesn't deploy coding agents directly; this sub-topic informs **harness pattern** + **training paradigm** decisions but isn't a deployment surface itself. |
-| **Agent governance / safety** | `@sources/llms-corrupt-documents-laban-2026.md` (delegation-corruption ceiling), `@sources/3-29-15.md` (CoT vulnerabilities), `@sources/ai-7-4-6.md` (NOMOTIC AI governance), `@concepts/ai-ethics-and-governance.md` | **Caution-active**: Cemini's analyst-delegation pattern has a known 25%+ corruption ceiling per LLMs-Corrupt. Round-trip-relay verification is the recommended deployment-gate pattern. |
+| **Agent governance / safety** | `@sources/ai-2-4-3.md` (K20 — OpenClaw 190-advisory security taxonomy), `@concepts/openclaw-security-taxonomy.md` (K20 promotion), `@concepts/sae-execution-contract.md` (K19 — SAE execution contract), `@concepts/reasoning-safety-monitor.md` (K22 — parallel CoT inspection + interrupt), `@sources/3-29-15.md` (K22 — reasoning safety taxonomy + monitor), `@sources/llms-corrupt-documents-laban-2026.md` (delegation-corruption ceiling), `@sources/ai-7-4-6.md` (NOMOTIC AI governance), `@concepts/ai-ethics-and-governance.md` | **Active**: K19+K20+K22 form a complete execution-security architecture across three layers: reasoning boundary (K22 detection), execution boundary (K19 SAE enforcement), and threat model (K20). The 25%+ corruption ceiling (LLMs-Corrupt) remains the production-safety gate. |
 | **Multimodal / vision agents** | `@sources/thinking-with-visual-primitives-deepseek-2026.md` (TwVP; DeepSeek-V4-Flash-based; +16.3pp Maze Navigation, +10.2pp Path Tracing over GPT-5.4) | **Emerging**: First entry in the cluster. Visual primitives (boxes/points) elevated to "minimal units of thought" interleaved into reasoning trajectory. **DeepSeek dependency hardens** — third independent paper grounded in `deepseek-v4-flash`. Topological-reasoning gap directly applicable to chart-pattern detection + satellite-imagery candidate-region tracing (Spaceshift). API-surface for this capability not yet confirmed `[NEEDS VERIFICATION 2026-04-30]`. |
 
 ### Cross-cutting patterns (across waves and sub-topics)
@@ -235,6 +248,14 @@ Cemini cannot fine-tune DeepSeek (API-only access). Methods that require paramet
 
 When evaluating new agent-systems research: ask **"does this work on a frozen LLM?"** as a Filter-3 sub-question. If no, the research informs but doesn't deploy.
 
+**Pattern 6 — Execution-security architecture coheres across K14→K20.**
+The execution-security thread spanning K14 (OpenClaw rejection) → K16 (sandboxed observer) → K17 (decision anchoring) → K18 (ToxicSkills + ABAC) → K19 (SAE execution contract) → K20 (OpenClaw security taxonomy) now forms a complete architecture:
+- **K20** provides the structured threat model: 190 advisories → two-axis taxonomy → Context Manipulation kill chain → three structural conditions
+- **K19** provides the enforcement primitive: SAE execution contract with trust-state conditioned budgeting, projection enforcement, and six mitigations
+- **K14/K16/K17/K18** provide the Cemini-specific instantiations: OpenClaw rejection rationale, sandboxed observer, debate-cycle anchoring, ToxicSkills threat vector
+
+K19+K20+K22 now form a complete three-layer execution-security architecture: K22 detects at the reasoning boundary (step-level CoT inspection + interrupt), K19 enforces at the execution boundary (typed, provenance-carrying contracts), and K20 catalogs the threat model (190 advisories, Context Manipulation kill chain). The K20 §6.6 context-window provenance gap is now closed by K22's Reasoning Safety Monitor, which inspects each CoT step as it's generated and dispatches an interrupt signal before corrupted reasoning reaches SAE's execution boundary. Read together: (1) assume compromise (closed-world assumption is invalid); (2) detect at the reasoning boundary (K22 — taxonomy-embedded CoT inspection); (3) enforce at the execution boundary (K19 — typed, provenance-carrying contracts); (4) condition trust on provenance AND reasoning integrity (not all inputs are equal, not all reasoning is sound); (5) project into the feasible region rather than binary accept/reject; (6) audit every decision with full state snapshot for cross-layer chain reconstruction.
+
 ### Cluster-hub navigational tips
 
 - **Cold start**: read `@sources/llm-wiki.md` (Karpathy's foundational pattern, K2-validated) → `@concepts/scatter-gather-topology.md` (Cemini's deployed orchestration) → `@sources/agentic-harness-engineering.md` (the canonical empirical reference) → `@concepts/mcp-tool-marketplace.md` (the tool-surface synthesis).
@@ -242,6 +263,7 @@ When evaluating new agent-systems research: ask **"does this work on a frozen LL
 - **Looking for "how do we know if a paper is worth ingesting?"** → `@concepts/high-signal-paper-patterns.md` rubric.
 - **Looking for "what's the production-safety ceiling on LLM delegation?"** → `@sources/llms-corrupt-documents-laban-2026.md` (DELEGATE-52, 25% corruption rate).
 - **Looking for "what's our brain's actual capacity?"** → `@sources/incompressible-knowledge-probes-li-2026.md` (deepseek-v4-flash is in the calibration set).
+- **Looking for "what's the security threat model for agent frameworks?"** → `@concepts/openclaw-security-taxonomy.md` (K20 — two-axis taxonomy + Context Manipulation kill chain) paired with `@concepts/sae-execution-contract.md` (K19 — SAE defense) and `@concepts/reasoning-safety-monitor.md` (K22 — CoT-level detection + interrupt).
 
 ### Open questions / next research directions
 

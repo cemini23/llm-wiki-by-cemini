@@ -33,9 +33,16 @@ related:
   - sources/4-5-links-2.md
   - sources/3-26-b.md
   - sources/3-26-link-re-3.md
+  - sources/3-29-research-6.md
+  - concepts/agent-identity-protocol.md
+  - sources/3-17-agent-research.md
+  - sources/3-25-git-research.md
+  - sources/git-3-5-pt3.md
+  - sources/crypto-7-4-11.md
+  - concepts/sae-execution-contract.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-30
+updated: 2026-05-01
 ---
 
 ## Relations

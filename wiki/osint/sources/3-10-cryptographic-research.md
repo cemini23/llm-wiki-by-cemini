@@ -17,6 +17,8 @@ related:
   - entities/platforms/kalshi.md
   - sources/3-19-compliance-research.md
   - sources/3-19-ip-sale-research.md
+  - sources/3-29-research-6.md
+  - sources/3-17-agent-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-25

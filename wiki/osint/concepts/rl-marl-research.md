@@ -95,6 +95,7 @@ related:
   - sources/sortino-4-4-3.md
   - concepts/dlinear.md
   - concepts/stockbench.md
+  - sources/sort-8-4-3.md
   - entities/models/chronos-bolt.md
 maturity: draft
 created: 2026-04-26
@@ -192,6 +193,8 @@ updated: 2026-04-27
 - @sources/signa.md — RL/MARL source in the Cemini research corpus
 - @sources/sort-1-4-3.md — RL/MARL source in the Cemini research corpus
 - @sources/sortino-4-4-3.md — RL/MARL source in the Cemini research corpus
+- @sources/sort-8-4-3.md — K21 deep-read 2026-05-01; STOCKBENCH benchmark for LLM trading agents — contamination-free, multi-month, 14-model evaluation. Provides standardized evaluation layer the MAPPO agent currently lacks
+- @concepts/stockbench.md — K21 promotion 2026-05-01; STOCKBENCH as standardized trading agent benchmark — composite z-score methodology, multi-regime evaluation, Cemini integration path
 
 ## Raw Concept
 

@@ -82,6 +82,7 @@ related:
   - concepts/stockbench.md
   - entities/models/chronos-bolt.md
   - entities/models/timesfm.md
+  - concepts/sae-execution-contract.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-05-01
@@ -154,6 +155,7 @@ updated: 2026-05-01
 - @sources/trading-2-4-5.md — Quantitative Finance source in the Cemini research corpus
 - @sources/trading-4-5.md — Quantitative Finance source in the Cemini research corpus
 - @sources/trading-playbook-research.md — Quantitative Finance source in the Cemini research corpus
+- @concepts/sae-execution-contract.md — K19 promotion 2026-05-01; SAE execution contract as reusable architectural primitive — execution-layer survivability middleware for agentic crypto trading
 
 ## Raw Concept
 

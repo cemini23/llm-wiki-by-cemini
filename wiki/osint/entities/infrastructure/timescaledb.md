@@ -21,6 +21,8 @@ related:
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - sources/4-3-link-re-2.md
   - sources/wave-5-1-link-eval-even-more.md
+  - sources/3-17-agent-research.md
+  - sources/3-25-git-research.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26

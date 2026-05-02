@@ -37,9 +37,10 @@ related:
   - sources/insights-from-a-gemini.md
   - sources/kalshi1-3-29.md
   - sources/trading-3-4-5.md
+  - concepts/parlay-market-making.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-27
+updated: 2026-05-01
 ---
 
 ## Relations
@@ -108,6 +109,18 @@ binary contracts; settlement is cash-only at \$1.00/\$0.00 on resolution;
 the venue exhibits a strong favorite-longshot bias that several Cemini
 strategies explicitly monetize via Avellaneda-Stoikov market-making in logit
 space.
+
+### Combo/parlay pricing — the RFQ trilemma (K24)
+
+Kalshi's combo (parlay) market operates via a request-for-quote (RFQ) protocol: traders request quotes on multi-leg bundles and dealers respond with prices. The K24 deep-read of @sources/kalshi1-3-29.md identifies a structural trilemma in this architecture — by adjusting collateral, access, and quoting policy, Kalshi can achieve at most two of three objectives simultaneously:
+
+1. **Liquidity consistency** — comparable price impact across base and combo markets
+2. **Information aggregation** — prices converge to true joint probabilities
+3. **Bounded loss** — aggregate market-maker loss remains controlled
+
+Kalshi's current configuration (open dealer participation + relaxed collateral) achieves liquidity consistency and information aggregation, but leaves tail exposures unconstrained. Empirically, this manifests as **Fréchet upper-bound violations**: 39% of sampled two-leg Kalshi combo quotes exceed min(P(A), P(B)), which is impossible under any joint probability distribution. Combo bid-ask spreads average 11.89 cents vs. 5.12 cents for base markets — more than 2× wider.
+
+The ParlayMarket design (Ising-model AMM with shadow trades + composite-likelihood SGD) provides a correlation-aware alternative. In historical replay on Kalshi's 2026-03-07 NBA slate (732 base markets, 5,918 combos), the standalone market-maker achieves Sharpe 1.0049 vs. Kalshi native 0.7151 — a ~40% risk-adjusted improvement. The model can be deployed as a drop-in quoting engine layered on top of existing Kalshi RFQ without replacing the platform. See @concepts/parlay-market-making.md for the architectural primitive.
 
 ## Snippets
 

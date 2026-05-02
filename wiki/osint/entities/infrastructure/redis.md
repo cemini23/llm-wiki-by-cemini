@@ -15,9 +15,12 @@ related:
   - entities/infrastructure/timescaledb.md
   - sources/3-26-link-re-3.md
   - sources/scaling-roadmap-research.md
+  - sources/3-17-agent-research.md
+  - sources/3-25-git-research.md
+  - sources/git-3-5-pt3.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-27
+updated: 2026-05-01
 ---
 
 ## Relations

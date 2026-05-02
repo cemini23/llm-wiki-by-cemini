@@ -93,9 +93,14 @@ related:
   - sources/wave-5-1-link-eval-even-more.md
   - sources/bytemover-agent-native-memory.md
   - sources/4-3-link-research.md
+  - sources/3-29-research-6.md
+  - concepts/agent-identity-protocol.md
+  - sources/3-17-agent-research.md
+  - sources/3-25-git-research.md
+  - sources/git-3-5-pt3.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-30
+updated: 2026-05-01
 ---
 
 ## Relations

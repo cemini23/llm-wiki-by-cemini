@@ -12,9 +12,11 @@ related:
   - concepts/cryptographic-audit-trail.md
   - concepts/section-174-rd-expensing.md
   - entities/platforms/mercury.md
+  - concepts/sae-execution-contract.md
+  - sources/crypto-7-4-11.md
 maturity: validated
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-01
 ---
 
 ## Relations

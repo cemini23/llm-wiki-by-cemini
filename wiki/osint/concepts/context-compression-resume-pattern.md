@@ -25,6 +25,9 @@ related:
   - sources/4-3-link-re-2.md
   - entities/tools/hermes-lcm.md
   - sources/wave-5-1-link-eval-stacks.md
+  - sources/3-17-agent-research.md
+  - sources/3-25-git-research.md
+  - sources/git-3-5-pt3.md
 maturity: draft
 created: 2026-04-28
 updated: 2026-05-01
@@ -43,6 +46,9 @@ updated: 2026-05-01
 - @sources/agentmemory-rohitg00-cpr-impl.md — Apache-2.0 reference implementation: PostToolUse hook → SHA-256 dedup (5min window) → privacy filter → LLM compress → BM25+Vector+Graph RRF fusion. Pipeline is reference-grade for the Python port; runtime architecture (TS + iii-engine) wrong for Cemini's stack — steal-architecturally, don't deploy
 - @sources/willynikes2-knowledge-base-server.md — sibling memory-engine candidate; uses three-tier (hot/warm/cold) framing instead of compress-preserve-resume framing — parallel signal-vs-noise technique, different mechanism. Both attempt the same end (retrieval signal-vs-noise in long-running agents)
 - @sources/4-3-link-re-2.md — K14 deep-read 2026-05-01; three-way cpr reinforcement from a single K-series source: budget-constrained retention queue (Doc 2, pgvector relevance scoring), stop-hook pattern (Doc 11, aggressive context wipe after execution), ghost token compaction (Doc 11, purge conversational artifacts). All three are Snippets-only — reinforce existing cpr discipline without introducing new primitives.
+- @sources/3-17-agent-research.md — K16 deep-read 2026-05-01; Redis semantic caching as compression mechanism (hash prompt+model+temperature → bypass LLM)
+- @sources/3-25-git-research.md — K17 deep-read 2026-05-01; Context Reset vs Context Compaction distinction (Anthropic harness): structured handoff artifact → PostgreSQL → fresh session; State Compactor threshold-triggered automatic Reset routine
+- @sources/git-3-5-pt3.md — K18 deep-read 2026-05-01; three-layer context architecture (Layer 0 auto-loaded rules / Layer 1 progressive disclosure / Layer 2 hot working memory) extends cpr-pattern's granularity model + progressive disclosure formalized as architectural pattern
 
 ## Raw Concept
 
@@ -106,6 +112,28 @@ The K8 source corpus has the cpr-pattern surfacing **twice** in two sibling docs
 | `4_5 links 2.docx` (K9 candidate) | Document 3: `cpr-compress-preserve-resume` | (deferred to K9 deep-read; framing emphasis to be captured then) |
 
 Cross-doc duplicate evaluation of the same repo is rare in the Cemini-internal eval lineage — it signals the user revisited and re-evaluated, which usually means the pattern is on an active integration shortlist. K8 promotes the concept on the strength of this signal; the K9 deep-read will calibrate whether the second evaluation reinforces or contradicts the first.
+
+### Context Reset vs Context Compaction (K17, 2026-05-01)
+
+K17 surfaces a critical distinction from Anthropic's harness research that refines the cpr-pattern's compression phase. The existing pattern prescribes **Context Compaction**: summarize prior turns inline to reduce token count, preserving a dense but continuous history. Anthropic's research identifies a failure mode in this approach — *context anxiety* — where the model, even with a compacted history, remains psychologically burdened by the ongoing session and degrades: premature task termination, state hallucination, objective drift.
+
+The alternative is **Context Reset**: completely clear the active context window, initializing a mathematically fresh session. This requires generating a structured handoff artifact — a serialized state document capturing current objective, achieved milestones, open tasks, key decisions and assumptions, and exact strategic posture. The artifact is persisted to PostgreSQL, and only this artifact (plus the current prompt) is injected into the fresh session.
+
+This is a more aggressive variant of the existing cpr-pattern's "Compress → Preserve → Resume" cycle: instead of compressing-and-keeping (summarize inline, stay in the same session), it compresses-and-destroys (serialize to PostgreSQL, start a fresh session). The tradeoff: Context Reset eliminates context anxiety at the cost of losing the implicit conversational state that a compacted history preserves. For financial trading — where deterministic reasoning and objective drift prevention matter more than conversational continuity — the Reset pattern is the stronger prescription.
+
+K17 also defines a **State Compactor** routine: a dedicated, low-compute Python process that continuously monitors token length of the active debate. At ~60-70% of the context window, it automatically triggers a Context Reset — generating the handoff artifact, committing it to pgvector, and allowing the debate to continue in a fresh inference session. This is the first K-series prescription that makes the compression trigger fully autonomous (rather than end-of-cycle or human-initiated), closing the "manual triggers" gap identified in the K8 source's original critique.
+
+### Three-layer context architecture (K18, 2026-05-01)
+
+K18 formalizes a stratified context model that extends the cpr-pattern from *when* and *how* to compress into *what* lives at *what* granularity. Derived from a Cemini-internal architectural diagram ("Image 2"), the model defines three layers:
+
+- **Layer 0 — Auto-loaded rules**: Documents that must always reside in context (behaviors.md, skill-triggers.md). These are the non-negotiable constraints — the constitutional layer that governs agent behavior regardless of task. Equivalent to the cpr-pattern's "preserve" phase applied at the rules level: these are never compressed away.
+- **Layer 1 — Progressive disclosure**: On-demand documents loaded only when relevant code structures or data patterns are encountered (agents.md, content-safety.md, domain-specific heuristics). This is the architectural formalization of the forefy/.context pattern (Resource 13, K18): rather than overloading the context window with an entire audit manual or API reference, the system dynamically loads specific sections when the agent traverses relevant territory. This directly addresses the context-window efficiency problem that the cpr-pattern's "compress" phase solves post-hoc — Layer 1 prevents the overload from happening in the first place.
+- **Layer 2 — Hot data / active working memory**: Dynamic, continuously updated content generated during the session (conversation extracts, debugging resolutions, market regime transitions). Fed by conversation extractors (e.g., vicnaum/vics-agent-skills, Resource 4, K18) that parse LLM chat logs into structured artifacts and append to LESSONS.md. This is the "resume" phase's feedstock — the layer that captures *what changed during this session* for the next session to load.
+
+The three-layer model is complementary to the existing Compress/Preserve/Resume phases: CPR addresses the *operational* cycle (what to do and when), while the three-layer model addresses the *information architecture* (what lives where and at what granularity). Together they provide a complete context-management framework: Layer 0/1/2 defines the stratification, CPR defines the lifecycle, and SDD (K18 Theme 2) provides the methodological enforcement — ensuring that every AI-driven modification adheres to the layer contracts.
+
+The model also maps naturally onto the existing Redis infrastructure: Layer 0 rules can be cached with infinite TTL (hash the rule set, never evict); Layer 1 documents can be cached with role-aware namespacing (per K16's Redis Semantic Caching pattern); Layer 2 hot data flows through Redis Streams as the inter-agent communication backbone.
 
 ## Snippets
 

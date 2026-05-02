@@ -163,6 +163,25 @@ def sha256_file(path: Path, chunk: int = 1 << 20) -> str:
 # --- index existing wiki sources ----------------------------------------------
 
 
+def _extract_own_metadata_section(text: str) -> str:
+    """Return the page's own metadata: frontmatter + Raw Concept section only.
+
+    Cross-references in Narrative/Relations/Snippets sections mention other
+    papers' arXiv IDs, DOIs, and URLs. Scanning those sections would falsely
+    index foreign identifiers as belonging to this page. We scope extraction
+    to the two sections that describe *this* page's own identity.
+    """
+    # Frontmatter is between the first --- and the next ---
+    parts = text.split("---", 2)
+    fm = parts[1] if len(parts) >= 2 else ""
+    # Raw Concept section: from "## Raw Concept" to the next "## " heading
+    rc = ""
+    m = re.search(r"^## Raw Concept\s*\n(.*?)(?=^##\s)", text, re.MULTILINE | re.DOTALL)
+    if m:
+        rc = m.group(1)
+    return fm + "\n" + rc
+
+
 def build_wiki_index():
     """Walk wiki/sources/ and collect dup-match keys into one structure."""
     idx = {
@@ -176,17 +195,18 @@ def build_wiki_index():
     for md in SOURCES.rglob("*.md"):
         text = md.read_text(errors="replace")
         rel = str(md.relative_to(WIKI))
-        # frontmatter title
+        # frontmatter title (from full text — only in frontmatter)
         tm = TITLE_FRONTMATTER_RE.search(text)
         title_raw = tm.group(1).strip() if tm else ""
         # Raw-Concept fields
         location = extract_field(text, "Location")
-        # arXiv ID — could appear in Raw Concept body, frontmatter, or anywhere
-        for m in ARXIV_RE.finditer(text):
+        # Own-metadata section: frontmatter + Raw Concept only (NOT cross-refs in body)
+        own = _extract_own_metadata_section(text)
+        for m in ARXIV_RE.finditer(own):
             idx["arxiv"][m.group(1)].append(rel)
-        for m in DOI_RE.finditer(text):
+        for m in DOI_RE.finditer(own):
             idx["doi"][m.group(1)].append(rel)
-        for m in URL_RE.finditer(text):
+        for m in URL_RE.finditer(own):
             n = normalize_url(m.group(0))
             idx["url"][n].append(rel)
         if location:

@@ -29,9 +29,14 @@ related:
   - sources/3-26-link-re-3.md
   - sources/wave-5-1-link-eval-more.md
   - sources/4-3-link-re-2.md
+  - sources/3-29-research-6.md
+  - concepts/agent-identity-protocol.md
+  - sources/3-17-agent-research.md
+  - sources/3-25-git-research.md
+  - sources/git-3-5-pt3.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-30
+updated: 2026-05-01
 ---
 
 ## Relations
@@ -51,6 +56,8 @@ updated: 2026-04-30
 - @sources/agentmemory-rohitg00-cpr-impl.md — 2026-04-28 — Apache-2.0 cpr-pattern reference impl exposes its functionality via MCP server. Pattern is more useful than the runtime for the deployed Python stack; pipeline shape (PostToolUse hook → SHA-256 dedup → privacy filter → LLM compress → BM25+Vector+Graph RRF) ports into Python on the Cemini stack alongside FastMCP tool-call wrappers
 - @sources/wave-5-1-link-eval-more.md — Wave 5.1 agent-framework evaluation; Instructor's structured-output extraction pattern integrates via FastMCP `@mcp.tool` decorators on LangGraph nodes
 - @sources/4-3-link-re-2.md — K14 deep-read 2026-05-01; references FastMCP tool integration patterns across Docs 1, 3, 4
+- @sources/3-29-research-6.md — K15 deep-read 2026-05-01; Formal Tool Safety Typing (side_effects enum + failure_modes mapping) promoted from Paper 6 (Schlapbach)
+- @concepts/agent-identity-protocol.md — K15 promotion 2026-05-01; IBCT tokens pass through FastMCP via X-AIP-Token header binding middleware
 
 ## Raw Concept
 
@@ -83,6 +90,30 @@ client (Claude, GPT-class models, their own fine-tunes, or a future
 local model) without rewriting the tool layer. This decouples the
 trading logic from any single LLM provider — a deal-favorable piece of
 forward-compatibility.
+
+### Formal Tool Safety Typing (K15 — Paper 6, Schlapbach et al.)
+
+Standard MCP tools lack machine-readable safety flags. A `submit_kalshi_order` tool and a `get_portfolio` tool are indistinguishable at the schema level — both are just `@mcp.tool` decorators. The paper proves this is a critical expressivity gap in the MCP spec and proposes a type-system extension with two schema-level annotations:
+
+**side_effects enum** — embedded in Pydantic v2 tool schema metadata via `Field(json_schema_extra={...})`. Three strict states:
+- `read-only` — no side effects, safe for autonomous execution (e.g., `get_portfolio`)
+- `idempotent` — repeated calls produce the same result (e.g., `check_order_status`)
+- `destructive` — irreversible side effects, requires explicit approval (e.g., `submit_kalshi_order`)
+
+A `requires_approval` boolean accompanies destructive tools. The LangGraph supervisor reads these flags during tool discovery and automatically injects a human-in-the-loop interruption or IBCT token validation before permitting execution.
+
+**failure_modes array** — each tool formally enumerates expected error conditions (`ErrorType`) with explicit machine-readable recovery strategies (`RecoveryStrategy`):
+- `Retry(n)` — retry with exponential backoff up to n attempts
+- `Fallback(tool)` — invoke an alternative tool (e.g., `check_order_status` fallback on `execute_trade` timeout)
+- `Abort` — terminate the current workflow, notify operator
+
+This eliminates the LLM guessing how to recover from tool errors. When a Robinhood API timeout occurs, the tool schema itself instructs the agent to invoke `check_order_status` before attempting a retry.
+
+**CI/CD enforcement via Semgrep** — custom Semgrep rules verify that every `@mcp.tool` decorator includes a defined `side_effects` parameter and a valid `failure_modes` mapping. The GitHub Actions pipeline fails automatically if a new destructive trading tool is merged without the required approval workflows declared in its schema. Implementation: ~3h to write the Semgrep rules.
+
+**Progressive disclosure** — tools provide lightweight summaries for discovery (read by the LangGraph router to select agents) and only reveal full token-heavy schemas on actual invocation. Preserves context window budget during the routing phase.
+
+This pattern affects every `@mcp.tool` decorator in the Cemini stack — it's a schema-level architectural change, not a per-tool annotation. Paired with @concepts/agent-identity-protocol.md (IBCT header binding), it provides defense-in-depth: the schema declares what's safe, and the cryptographic token chain enforces who can execute what.
 
 ## Snippets
 

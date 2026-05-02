@@ -9,6 +9,8 @@ related:
   - sources/4-6-links.md
   - sources/4-4-link-re-2.md
   - sources/3-26-b.md
+  - sources/3-29-15.md
+  - concepts/reasoning-safety-monitor.md
 maturity: validated
 created: 2026-04-30
 updated: 2026-04-30

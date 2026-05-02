@@ -42,9 +42,10 @@ related:
   - entities/frameworks/dspy.md
   - sources/wave-5-1-link-eval-more.md
   - sources/wave-5-1-link-eval-stacks.md
+  - sources/git-3-5-pt3.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-04-30
+updated: 2026-05-01
 ---
 
 ## Relations

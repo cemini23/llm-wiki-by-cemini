@@ -4,7 +4,7 @@ type: source
 tags: [multi-agent-systems, LLM-trading, financial-ai, agent-architecture, debate-driven]
 keywords: [TradingAgents, multi-agent trading, LLM finance, agent debate, risk management, bull-bear, structured communication, ReAct]
 clusters: [llm-agents]
-related: []
+related: [sources/3-25-git-research.md]
 maturity: validated
 read_status: deep-read
 created: 2026-04-30

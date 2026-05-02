@@ -266,6 +266,18 @@ Material ready to leave the wiki goes through `briefs/` first:
 
 On every new session, **before any other work**, run these checks. They are designed to be cheap (under a minute) and to catch deferred work the user wouldn't otherwise notice.
 
+### 0. Resume from hot.md
+
+Read `hot.md` (gitignored session-state cache). Report in one line:
+
+> "Resuming from K20 (OpenClaw taxonomy shipped). 22 accepted lint gaps. Next: K21 academic-stub routing or your direction."
+
+If `hot.md` is missing (first run, deleted, or gitignored on a fresh clone), say:
+
+> "No `hot.md` found — fresh session. K20 was the last shipped deep-read. Want me to rebuild session state?"
+
+Then continue with the ritual. At session end, rewrite `hot.md` with updated position, open decisions, pending actions, reconciliation state, and accepted gaps.
+
 ### 1. Tier-2 sweep cadence (Workflow A)
 
 Run:

@@ -4,6 +4,7 @@ type: concept
 tags: [concept, nomotic-ai, agent-governance, execution-gate, deterministic-validation, cemini-stack-design]
 keywords: [nomotic, pre-action authorization, trade intent payload, pydantic gate, governance-as-architecture, delegated-authority, fail-by-default, execution-safety]
 related:
+  - sources/ai-7-4-6.md
   - sources/4-6-links.md
   - sources/4-4-link-re-2.md
   - sources/3-26-b.md
@@ -11,23 +12,27 @@ related:
   - concepts/llm-agent-systems.md
   - concepts/cryptographic-audit-trail.md
   - concepts/ip-sale-readiness.md
+  - sources/3-29-15.md
+  - concepts/agent-authorization-stack.md
 maturity: validated
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-01
 ---
 
 ## Relations
 
-- @sources/4-6-links.md — K12 deep-read; primary source. Nomotic AI paper evaluation with pre-action authorization pattern + governance-as-architecture.
+- @sources/ai-7-4-6.md — **K23 deep-read; primary source.** Chris Hood (Jan 2026). The paper that introduced the term "Nomotic AI" — confirms every core claim in this concept page.
+- @sources/4-6-links.md — K12 deep-read; secondary-source evaluation that first surfaced the Nomotic AI concept into the wiki.
 - @sources/4-4-link-re-2.md — K12 deep-read; Sovereign-OS YAML Charter + asymmetric TrustScore + legal-action masking — convergent patterns.
 - @sources/3-26-b.md — K10 deep-read; LangGraph interrupt()/Command(resume=...) — the brain-side mechanism that the Nomotic gate controls.
 - @concepts/llm-agent-systems.md — cluster hub; Nomotic AI is the governance dimension of LLM agent systems.
 - @concepts/cryptographic-audit-trail.md — every Nomotic gate decision (pass/fail + payload hash) is immutably logged.
 - @concepts/ip-sale-readiness.md — Nomotic AI is the single strongest IP-sale narrative weapon: mathematically provable LLM containment.
+- @concepts/agent-authorization-stack.md — K19+K22+K23+K24 cross-cluster synthesis; Layer 1 of the four-layer authorization architecture.
 
 ## Raw Concept
 
-Synthesized from three converging K12 sources: the Nomotic AI paper evaluation in @sources/4-6-links.md, the Sovereign-OS Charter + legal-action masking in @sources/4-4-link-re-2.md, and the LangGraph interrupt/Command(resume) pattern in @sources/3-26-b.md. The concept is named after the paper's core distinction: **Agentic AI = what a system CAN do; Nomotic AI = what a system SHOULD do.**
+Synthesized originally from three converging K12 secondary sources. **K23 (2026-05-01): confirmed against the primary paper** — Chris Hood, "Nomotic AI: The Governance Counterpart to Agentic AI" (Jan 2026, 26p, independent). The paper introduces Nomotic AI as a conceptual category, not an implementation guide. The K12 secondary sources faithfully transmitted the core ideas; this concept page adds Cemini-specific architectural application that the paper does not contain. The paper's six formal principles (Governance as Architecture, Pre-Action Authorization, Explicit Authority Boundaries, Verifiable Trust, Ethical Justification, Accountable Governance) are now incorporated below. [CONFIRMED]
 
 ## Narrative
 
@@ -35,15 +40,53 @@ Synthesized from three converging K12 sources: the Nomotic AI paper evaluation i
 
 Nomotic AI is the governance counterpart to Agentic AI. Where agentic systems focus on capabilities and executing workflows, Nomotic AI establishes the laws, boundaries, and constraints dictating what a system is permitted to do. The core architectural principle: **AI authority is delegated, never inherent. Every action requires explicit pre-action authorization. Actions outside defined boundaries fail by default.**
 
-### Core principles
+### Etymology
 
-1. **Delegated authority** — The LLM brain possesses zero inherent authority. It cannot directly call any broker API. All it can do is emit a "Trade Intent Payload" — a structured proposal that must pass deterministic validation before execution.
+From Greek *nomos* (νόμος) — law, rule, custom, governance. In classical Greek thought, *nomos* was humanly constructed and deliberately established, distinct from *physis* (nature). The etymology is deliberate: AI governance is a human responsibility. The rules don't emerge from the technology. [Source: ai 7 4:6.pdf pp.8–9]
 
-2. **Pre-action authorization** — Every trade intent is validated by a pure-Python Nomotic Execution Service before reaching any broker interface (Kalshi, Alpaca, OANDA). Validation is deterministic: Pydantic v2 models with `@field_validator` decorators enforce margin requirements, exposure limits, position sizing, and venue-specific rules.
+### The agentic-nomotic duality (from primary paper)
 
-3. **Fail-by-default** — If validation fails for any reason, the trade is rejected. There is no fallback, no "ask the LLM to try again," no soft degradation path. The gate is binary: pass through or block.
+| Dimension | Agentic AI | Nomotic AI |
+|-----------|-----------|-----------|
+| Focus | Capability | Accountability |
+| Core Question | What can this system do? | What should this system do? |
+| Characteristic Verbs | Perceive, Reason, Plan, Act | Govern, Authorize, Trust, Evaluate |
+| Function | Integration Layer | Governance Layer |
+| Based On | Actions | Directives (Laws) |
+| Risk When Absent | Inert governance | Ungoverned capabilities |
+| Temporal Emphasis | Runtime execution | Pre-action authorization |
 
-4. **Governance-as-architecture** — Constraints are embedded in the execution layer, not prompt-engineered. The MAPPO policy network's outputs are clamped via tensor operations during RL training. Runtime constraints are Pydantic validators, not system-prompt instructions.
+"Actions without laws are chaos. Laws without actions are inert." [Source: ai 7 4:6.pdf pp.16–17, Table 1]
+
+### Intent vs. authority
+
+A key distinction from the primary paper: **intent** originates with users (it lives in the prompt, the instruction, the goal). **Authority** lives in the governance layer (it answers: is this action permitted?). A user may intend for an AI system to perform an action that the system is not authorized to perform. The nomotic layer governs whether the agentic layer may act. This reframes AI failures: most are not failures of action but failures of authorization — the governance was inadequate, not the system. [Source: ai 7 4:6.pdf pp.13–15]
+
+### Six formal principles (Hood 2026)
+
+1. **Governance as Architecture** — Governance is an architectural decision, not a compliance layer. Designed in from the beginning, not retrofitted. When architectural, responsible behavior is the default.
+
+2. **Pre-Action Authorization** — Authorization must be verified before execution, not reviewed after. Post-hoc review is insufficient: by the time review occurs, harm is done.
+
+3. **Explicit Authority Boundaries** — AI systems possess only the authority deliberately delegated to them. Implicit authority is dangerous. Actions outside explicit boundaries fail or escalate, never proceed by default.
+
+4. **Verifiable Trust** — Trust is earned through evidence and verified through observation. Not assumed from capability. Trust is specific to actions, conditions, and contexts; calibrated and adjusted over time.
+
+5. **Ethical Justification** — AI actions must be justifiable, not merely executable. Explainability is a precondition: if an action cannot be explained, it cannot be justified. Ethics is woven throughout governance, not a separate constraint.
+
+6. **Accountable Governance** — AI systems cannot be accountable; they are tools. Accountability rests with humans who define rules, grant authorities, and set ethical standards. Every rule has an owner; every authorization traces to a responsible party.
+
+[Source: ai 7 4:6.pdf pp.16–20, §5]
+
+### Cemini application of the six principles
+
+1. **Delegated authority (Principle 3)** — The LLM brain possesses zero inherent authority. It cannot directly call any broker API. All it can do is emit a "Trade Intent Payload" — a structured proposal that must pass deterministic validation before execution.
+
+2. **Pre-action authorization (Principle 2)** — Every trade intent is validated by a pure-Python Nomotic Execution Service before reaching any broker interface (Kalshi, Alpaca, OANDA). Validation is deterministic: Pydantic v2 models with `@field_validator` decorators enforce margin requirements, exposure limits, position sizing, and venue-specific rules.
+
+3. **Fail-by-default (Principle 3 corollary)** — If validation fails for any reason, the trade is rejected. There is no fallback, no "ask the LLM to try again," no soft degradation path. The gate is binary: pass through or block.
+
+4. **Governance-as-architecture (Principle 1)** — Constraints are embedded in the execution layer, not prompt-engineered. The MAPPO policy network's outputs are clamped via tensor operations during RL training. Runtime constraints are Pydantic validators, not system-prompt instructions.
 
 ### Architecture
 

@@ -1,5 +1,282 @@
 # Wiki Log
 
+## [2026-05-01] ROADMAP restructure + cross-cluster synthesis
+
+ROADMAP.md completely restructured per user directive: from ~270-line verbose chronological log with strikethroughs and mixed done/open items to ~100-line clear top-down structure (Vision → Active → Next → Decisions → Eventually → Done). Collapsed 500+ word "Done" entries to compact one-liners. Removed all strikethrough items.
+
+### Cross-cluster synthesis
+
+- **Concept page**: `wiki/concepts/agent-authorization-stack.md` — NEW. Four-layer authorization architecture: K23 Nomotic AI (framework) → K22 Reasoning Safety Monitor (detection) → K19 SAE (enforcement) → K24 ParlayMarket/RFQ trilemma (market-design constraints). 14 bidirectional backlinks across all four papers + cluster hubs.
+- **Brief**: `briefs/2026-05-01_execution-security-architecture.md` — Three-layer execution-security architecture synthesis (K20 threat model + K19 enforcement + K22 detection). Target: CeminiSuite IP-sale narrative / institutional-buyer technical DD.
+- **ROADMAP K13 update**: "Which conductor?" section updated with ES-vs-GRPO training-stability evidence (ES accumulates off-manifold random walks → catastrophic forgetting; GRPO maintains policy stability. Tilts Trinity-vs-Conductor toward Conductor.)
+
+### Git workflow question answered
+
+Recommended: `detect-secrets` (Yelp, lightweight) over TruffleHog (heavy, frequent false positives on research PDFs). Ruff unnecessary — scripts/ is 2 files, not a package. Pre-commit hook: detect-secrets scan on changed files; pre-push hook: full baseline audit. Decision deferred to user.
+
+## [2026-05-01] K24 deep-read | kalshi1 3:29.pdf — ParlayMarket: Automated Market Making for Parlay-style Joint Contracts
+
+K24 is the sixth academic-stub deep-read. Rana, Nadkarni, Moshrefi, Viswanath (Princeton + Kaleidoscope Blockchain, arXiv:2603.22596v1, Mar 2026). 1 promotion (new concept page: parlay-market-making), 1 entity page extension (kalshi.md — RFQ trilemma + ParlayMarket section). Net-new topic: no existing concept page existed for parlay/AMM design.
+
+- **Source page**: `wiki/sources/kalshi1-3-29.md` — rewritten from unread-stub to deep-read (13 snippets)
+- **Concept page promotion**: `wiki/concepts/parlay-market-making.md` — new: Ising-model AMM architecture, RFQ trilemma, parlay reversal, standalone-MM deployment pattern
+- **Entity page extension**: `wiki/entities/platforms/kalshi.md` — added combo/parlay pricing section with RFQ trilemma + Fréchet violations + ParlayMarket Sharpe comparison
+- **Bidirectional backlinks**: parlay-market-making ↔ kalshi1-3-29 ↔ kalshi.md (all verified)
+
+## [2026-05-01] K23 deep-read | ai 7 4:6.pdf — Nomotic AI: The Governance Counterpart to Agentic AI
+
+K23 is the fifth academic-stub deep-read. Chris Hood (Jan 2026, 26p, independent). 1 primary-source confirmation (existing concept page validated), 0 new promotions, 1 concept page extension (six formal principles + etymology + agentic-nomotic duality table + intent-vs-authority distinction added to nomotic-ai.md). The K12 concept page — built from secondary sources — was confirmed accurate on every core claim. The paper is a conceptual framework, not an implementation guide; the concept page's Cemini-specific architecture (Trade Intent Payload, Pydantic validators, Docker network policies) is faithful application of the paper's principles.
+
+- **Source page**: `wiki/sources/ai-7-4-6.md` — rewritten from unread-stub to deep-read (13 snippets)
+- **Concept page extension**: `wiki/concepts/nomotic-ai.md` — six formal principles, etymology, Table 1, intent-vs-authority distinction added; primary-source backlink established
+- **Bidirectional backlinks**: 1 new — `ai-7-4-6.md` ↔ `nomotic-ai.md` (both sides verified)
+
+## [2026-05-01] K22 deep-read | 3:29 15.pdf — Beyond Content Safety: Real-Time Monitoring for Reasoning Vulnerabilities in Large Language Models
+
+K22 is the fourth academic-stub deep-read. arXiv:2603.25412v1 (HKUST, March 2026). 1 promotion (new concept page), 3 extensions, 5 bidirectional backlinks. K19+K20+K22 now form a complete three-layer execution-security architecture: K22 detects at the reasoning boundary (step-level CoT inspection + interrupt), K19 enforces at the execution boundary (SAE), K20 catalogs the threat model (OpenClaw taxonomy). The K20 §6.6 context-window provenance gap is now closed.
+
+- **Source page**: `wiki/sources/3-29-15.md` — full rewrite from unread-stub → deep-read (12 Snippets, 5 related)
+- **Concept page**: `wiki/concepts/reasoning-safety-monitor.md` — NEW. Reusable architectural primitive: parallel CoT inspection, nine-category taxonomy, interrupt signal. Orthogonal to content safety and execution safety
+- **Extensions**: `wiki/concepts/openclaw-security-taxonomy.md` (K22 closes §6.6 gap — updated gap paragraph + Cemini mapping table), `wiki/concepts/sae-execution-contract.md` (K22 reasoning-safety grounding section — trust-state enrichment via I_reasoning + complete three-layer architecture), `wiki/concepts/llm-agent-systems.md` (governance/safety row updated to K19+K20+K22, K19+K20+K22 pattern #6 paragraph rewritten, navigational tip extended)
+- **Backlinks**: 5 source-page `related:` entries verified bidirectional (llm-agent-systems, openclaw-security-taxonomy, sae-execution-contract, algorithmic-stopping-conditions, nomotic-ai)
+
+## [2026-05-01] K21 deep-read | sort 8 4:3.pdf — STOCKBENCH: Can LLM Agents Trade Stocks Profitably In Real-world Markets?
+
+K21 is the third academic-stub deep-read, routed by cluster relevance × recency (llm-agents + quant-finance dual-core). arXiv:2510.02209v2 (Tsinghua + BUPT, March 2026). 1 promotion (stockbench concept page rewritten from K12 secondary-source sketch), 0 new concept pages, 3 backlinks extended (llm-agent-systems, quant-finance, rl-marl-research). Key corrections to K12 sketch: STOCKBENCH evaluates across 2 temporal windows (downturn/upturn), not 4 named market regimes; model rankings shift dramatically between regimes; all models fail in downturns.
+
+- **Source page**: `wiki/sources/sort-8-4-3.md` — full rewrite from unread-stub → deep-read (12 Snippets, 4 related)
+- **Concept page**: `wiki/concepts/stockbench.md` — rewritten from K12 secondary-source sketch to K21 primary-source synthesis. Corrected multi-regime claim, added 14-model results table, reasoning-gap finding, schema-error tradeoff, variance tracking, downturn-universal-failure finding
+- **Extensions**: `wiki/concepts/llm-agent-systems.md` (+stockbench concept backlink), `wiki/concepts/rl-marl-research.md` (+sort-8-4-3 and stockbench backlinks), `wiki/concepts/quant-finance.md` (already had both backlinks — bidirectional verified)
+- **Backlinks**: 5 source-page `related:` entries verified bidirectional (stockbench, llm-agent-systems, quant-finance, rl-marl-research). llm-agent-systems added concept backlink; rl-marl-research added both source and concept backlinks; quant-finance already had both
+
+## [2026-05-01] K20 deep-read | ai 2 4:3.pdf — A Systematic Taxonomy of Security Vulnerabilities in the OpenClaw AI Agent Framework
+
+K20 is the second academic-stub deep-read, routed by cluster relevance × recency as the natural K19 companion. arXiv:2603.27517v1 (SUCCESS Lab, Texas A&M, February 2026). 1 promotion (new concept page), 2 extensions, 8 bidirectional backlinks. K19+K20 now form a complete execution-security architecture: K19 provides the defense (SAE), K20 catalogs the threat model (190 advisories).
+
+- **Source page**: `sources/ai-2-4-3.md` — full rewrite from unread-stub to deep-read. 8 `related:` entries, 10 Snippets populated (S1–S10 covering closed-world assumption, lexical-vs-semantic, three bypass classes, Context Manipulation kill chain, Gateway RCE composition, sandbox-as-emergent, unified inter-layer enforcement, context provenance, yahoofinance supply chain, future direction).
+- **Promotion**: `concepts/openclaw-security-taxonomy.md` — NEW concept page. Reusable architectural primitive capturing: two-axis taxonomy (10 architectural layers × 7 attack techniques), OpenClaw Kill Chain with novel "Context Manipulation" stage, three bypass classes (below/beside/above reasoning layer), three structural conditions (§7), lexical-vs-semantic root cause analysis. 8 `related:` entries.
+- **Extension**: `concepts/sae-execution-contract.md` — added "K20 threat-model grounding" section mapping each K20 finding to SAE mitigations M1–M6. Identified one gap: context-window provenance tagging (K20 §6.6) has no direct Cemini analog. Maturity: draft → validated.
+- **Extension**: `concepts/cryptographic-audit-trail.md` — added "K20 provenance model + Gateway RCE chain" section: Gateway RCE chain as composition-detection target, input provenance as fifth anchoring dimension (instruction provenance → engineering provenance → decision rationale → execution authorization → execution record). Frontmatter: +2 entries.
+- **Backlinks** (8 pages, all bidirectional):
+  - `concepts/llm-agent-systems.md` — frontmatter + governance/safety sub-topic row updated + Pattern 6 (execution-security architecture coheres across K14→K20) + navigational tip
+  - `concepts/scatter-gather-topology.md` — frontmatter + Relations bullets (§6.7 inter-layer enforcement composes with terminal-leaf placement)
+  - `sources/crypto-7-4-11.md` — frontmatter + Relations bullets (K19 = defense, K20 = threat model pairing)
+  - `sources/3-17-agent-research.md` — frontmatter only (K16 shares closed-world-assumption critique)
+  - `sources/git-3-5-pt3.md` — frontmatter only (K18 ToxicSkills instanced by yahoofinance)
+- **Lint state**: 0 K20-introduced gaps. 22 pre-existing gaps (unchanged).
+
+K20 was routed as the highest cluster-relevance × recency academic stub: 1 inbound but maximum thematic intersection with the K14→K19→K20 execution-security thread. The promotion decision follows the established pattern: academic papers introducing novel architectural primitives (Context Manipulation kill-chain stage, two-axis taxonomy, three-tier bypass classification) promote to concept pages.
+
+## [2026-05-01] K19 deep-read | crypto 7 4:11.pdf — Execution Is the New Attack Surface: Survivability-Aware Agentic Crypto Trading with OpenClaw-Style Local Executors
+
+K19 is the first academic-stub deep-read after the Cemini-internal K-series queue exhaustion. arXiv:2603.10092v1 (True Trading / Inc4.net, March 2026). 1 promotion (new concept page), 2 extensions, 11 bidirectional backlinks. Highest-intersection academic paper in the K-series with Cemini's architecture — directly addresses the execution-boundary gap identified across K14/K16/K17/K18.
+
+### Source page rewritten
+
+- `wiki/sources/crypto-7-4-11.md` — full rewrite: `read_status: unread-stub → deep-read`, `maturity: draft → validated`, frontmatter expanded from 2 to 11 `related:` entries, Narrative restructured (Paper framing / Key contributions / Four-layer model / Empirical results table / Cemini relevance with K14-K18 mapping / Limitation notes / Promotion decision), 10 Snippets populated
+
+### Promotions (1 new concept page)
+
+- `wiki/concepts/sae-execution-contract.md` — **NEW**. Reusable architectural primitive: execution-layer middleware with standardized API contract (ExecutionRequest → ExecutionContext → ExecutionDecision: ALLOW/LIMIT/BLOCK). Covers: Delegation Gap metric, trust-state conditioned budgeting (z_t = provenance + capability risk + injection alert), projection-based enforcement with theoretical bound, six mitigations as enforceable invariants (M1–M6), four-layer model vs. conventional OMS, Cemini relevance (composes with scatter-gather topology, operationalizes K18 ToxicSkills + ABAC at execution boundary).
+
+### Extensions (2 existing-page extensions)
+
+- `wiki/concepts/scatter-gather-topology.md` — **EXTENDED**. SAE execution-layer middleware section: fourth position in the execution topology (terminal enforcement downstream of orchestrator). Orthogonal to Send-API / Generator-Evaluator / Fractals — orchestrator governs computation topology, SAE governs execution authorization. Execution topology diagram added. Frontmatter + Relations bullets.
+- `wiki/concepts/cryptographic-audit-trail.md` — **EXTENDED**. SAE execution-level audit anchoring (M6): fourth anchoring layer. Every ExecutionDecision emits structured audit record (matched rule, enforced budgets, effective action, trust-state snapshot). Replay-deterministic — same stream + config = same decision trace. Provenance chain extended to four levels: engineering provenance (convx) → decision rationale (K17) → execution authorization (SAE) → execution record (Merkle). Frontmatter + Relations bullets.
+
+### Backlinks added (11 bidirectional pairs)
+
+- `concepts/scatter-gather-topology.md` — frontmatter + Relations bullet + SAE narrative section
+- `concepts/cryptographic-audit-trail.md` — frontmatter + Relations bullet + SAE narrative paragraph
+- `concepts/llm-agent-systems.md` — frontmatter + Relations bullet (cluster hub)
+- `concepts/quant-finance.md` — frontmatter + Relations bullet (cluster hub)
+- `concepts/defend-trade-secrets-act.md` — frontmatter only (SAE as trade-secret execution boundary), updated: 2026-04-27→2026-05-01
+- `entities/frameworks/langgraph.md` — frontmatter only (SAE as LangGraph-adjacent execution pattern)
+- `sources/3-17-agent-research.md` — frontmatter only (K16 bidirectional; both treat LLM output as untrusted, SAE provides enforcement layer K16 implies)
+- `sources/3-25-git-research.md` — frontmatter only (K17 bidirectional; debate-cycle anchoring complements execution enforcement)
+- `sources/git-3-5-pt3.md` — frontmatter only (K18 bidirectional; ToxicSkills + ABAC operationalized at execution boundary)
+- `sources/4-5-links.md` — frontmatter only (K8 bidirectional; sibling resource-evaluation format)
+
+### Promotion-rate note
+
+K19 breaks the 0% promotion streak (K14/K16/K17/K18) with 1 new concept page — consistent with the pattern that academic papers introducing novel architectural primitives promote, while applied-tooling evaluations and methodology prescriptions (Cemini-internal docs) surface reusable patterns as extensions to existing pages.
+
+### Lint at ship
+
+- `wiki_lint.py` — 0 K19-introduced bidir gaps; 0 orphans / 0 dangling / 0 missing / 0 frontmatter issues / 0 stale NEEDS-VERIFICATION (1 pre-existing tag on publishers-exclusion.md, 7d old, not K19-related). 22 pre-existing bidir gaps (langgraph 9, llm-agent-systems 3, rl-marl-research 3, etc.) — none K19-related.
+
+## [2026-05-01] K18 deep-read | git 3:5 pt3.docx — Strategic Evaluation and Architectural Integration Report
+
+K18 completes the Cemini-internal K-series queue — the eighth and final Cemini-internal doc at the 2-inbound floor. 14 resources evaluated, 0/~14 promoted (0%), 3 extensions. Consistent with K14/K16/K17 — applied-tooling evaluation documents surface reusable patterns (captured as concept-page extensions) rather than standalone primitives.
+
+### Source page updated
+
+- `wiki/sources/git-3-5-pt3.md` — full rewrite: `read_status: unread-stub → deep-read`, frontmatter expanded to 14 `related:` entries (from 2), Narrative restructured (Document framing / 14-resource register table / 3 thematic syntheses / Stale-snapshot analysis with 8 signals / Cross-source corroboration / Promotion decision), 10 Snippets populated
+
+### Extensions (0 new pages, 3 existing-page extensions)
+
+- `wiki/concepts/context-compression-resume-pattern.md` — **EXTENDED**. Three-layer context architecture: Layer 0 (auto-loaded rules: behaviors.md, skill-triggers.md), Layer 1 (progressive disclosure: on-demand documents loaded when relevant), Layer 2 (hot working memory: conversation extracts → LESSONS.md). Extends cpr-pattern from operational cycle (when/how) to information architecture (what/where at what granularity). SDD as methodological enforcement layer.
+- `wiki/concepts/scatter-gather-topology.md` — **EXTENDED**. Fractals recursive decomposition: tree-based orchestrator variant with planning phase (LLM decomposes into strict hierarchy) + execution phase (isolated Git worktrees, depth-first/breadth-first/layer-sequential). Orthogonal to existing Send-API (breadth) and Generator-Evaluator (depth) — handles hierarchy. Three can compose.
+- `wiki/concepts/cryptographic-audit-trail.md` — **EXTENDED**. Conversation-level anchoring via convx: SHA-256 fingerprinting + automated secret redaction before Git archival. Completes three-level provenance chain: engineering provenance (convx) → decision rationale (K17 debate-cycle) → execution record (trade-level Merkle tree).
+
+### Backlinks added (12 bidirectional pairs)
+
+- `concepts/context-compression-resume-pattern.md` — frontmatter + Relations bullet + Three-layer architecture narrative
+- `concepts/scatter-gather-topology.md` — frontmatter + Relations bullet + Fractals narrative
+- `concepts/cryptographic-audit-trail.md` — frontmatter + Relations bullet + convx narrative
+- `concepts/ip-sale-readiness.md` — frontmatter only (SDD + convx IP-sale DD relevance)
+- `concepts/llm-agent-systems.md` — frontmatter only (cluster hub)
+- `entities/frameworks/langgraph.md` — frontmatter only (referenced throughout)
+- `entities/frameworks/fastmcp.md` — frontmatter only (MCP server references)
+- `entities/infrastructure/redis.md` — frontmatter only (Redis intel bus)
+- `entities/infrastructure/deepseek-api.md` — frontmatter only (LFM2 as alternative local-model path, retracted)
+- `sources/3-17-agent-research.md` — frontmatter only (K16 bidirectional; both March 2026 local-model prescriptions)
+- `sources/3-25-git-research.md` — frontmatter only (K17 bidirectional; context-management complements)
+- `sources/4-5-links.md` — frontmatter only (K8 sibling; same resource-evaluation format)
+
+### Stale-snapshot signals
+
+- "18 Docker microservices" → 40 actual (2.2× under)
+- LFM2-24B-A2B local deployment (14.5 GB) → retracted (7 GB server, DeepSeek API is actual brain)
+- OpenFang framework (Step 31) → prescribed-not-built ("bypassed" by LFM2 that was never deployed)
+- ChromaDB (Step 29) → pgvector is actual path per K8
+- convx pre-commit hook → NOT deployed
+- Crush terminal agent → Claude Code is actual
+- "agnix financial domain linter" → not independently verified
+- 128 GB RAM assumption throughout → 7 GB actual
+
+### K-series closure
+
+K18 is the earliest Cemini-internal doc in the K-series (March 5, 2026 — ~57 days stale). It captures the Cemini architecture at its most aspirational: 14 resources evaluated, 5 Immediate Integration, local 24B model as core engine. Of the 5 "Immediate Integration" verdicts, **zero** deployed as prescribed. K18 is the purest expression of the "prescribed-not-built" pattern in the corpus.
+
+The Cemini-internal K-series queue is now **exhausted**. All 8 docs at the 2-inbound floor have been deep-read. Final promotion-rate convergence: K8 3/12 (25%), K12 2/? (presumed), K13 3/13 (23%), K14 0/11, K15 3/13 (23%), K16 0/16, K17 0/10, K18 0/14. Next: academic-stub routing by cluster relevance × recency per ROADMAP.
+
+### Lint at ship
+
+- `wiki_lint.py` — 0 orphans / 0 bidir gaps / 0 dangling / 0 missing / 0 frontmatter issues / 0 stale NEEDS-VERIFICATION (1 pre-existing tag on publishers-exclusion.md, 7d old, not K18-related)
+
+## [2026-05-01] K17 deep-read | 3_25 git research.docx — Strategic Architecture and Agentic Integration
+
+K17 continues the K-series with the seventh Cemini-internal document (~2026-03-25, ~37 days stale). 10 sections evaluated against the standard K-series template. 0/~10 promoted (0%), consistent with K14 (0/11) and K16 (0/16) — applied-tooling evaluations and methodology prescriptions without novel architectural primitives.
+
+### Source page updated
+
+- `wiki/sources/3-25-git-research.md` — full rewrite: `read_status: unread-stub → deep-read`, frontmatter expanded to 13 `related:` entries (from 2), Narrative restructured (Document framing / Section register with verdicts / 10 sections summarized / Stale-snapshot analysis with 5 signals + dimensionality discrepancy / Cross-source corroboration / Promotion decision), 14 Snippets populated
+
+### Extensions (0 new pages, 3 existing-page extensions)
+
+- `wiki/concepts/scatter-gather-topology.md` — **EXTENDED**. Generator-Evaluator Loop subsection: adversarial bifurcation with financial-grade subjective quantification metrics (Statistical Significance, Correlation Robustness, Drawdown Probability, Execution Latency Tolerance); asymmetric generator/evaluator roles over Redis pub/sub; few-shot calibrated evaluator; mandatory quantitative scoring
+- `wiki/concepts/context-compression-resume-pattern.md` — **EXTENDED**. Context Reset vs Context Compaction section: Anthropic harness distinction between compacting (summarize inline, keep session) and resetting (serialize to PostgreSQL, destroy context, start fresh); State Compactor threshold-triggered automatic routine at 60-70% window utilization; closes the "manual triggers" gap from K8's original critique
+- `wiki/concepts/cryptographic-audit-trail.md` — **EXTENDED**. Agentic Decision Anchoring paragraph: each debate cycle's structured JSON state artifact → SHA-256 hash → pymerkle tree → OpenTimestamps; extends anchoring scope from trade-level (what was executed) to debate-cycle-level (why it was decided)
+
+### Backlinks added (11 bidirectional pairs, 1 frontmatter-only orphan fill)
+
+- `concepts/scatter-gather-topology.md` — frontmatter + Relations bullet + Generator-Evaluator narrative
+- `concepts/context-compression-resume-pattern.md` — frontmatter + Relations bullet + Context Reset narrative
+- `concepts/cryptographic-audit-trail.md` — frontmatter + Relations bullet + Agentic Decision Anchoring narrative
+- `concepts/ip-sale-readiness.md` — frontmatter only (competitive benchmarking + Constitutional Architecture)
+- `entities/frameworks/langgraph.md` — frontmatter only (LangGraph referenced throughout)
+- `entities/frameworks/fastmcp.md` — frontmatter only (3 agent skill prescriptions)
+- `entities/infrastructure/timescaledb.md` — frontmatter only (pgvector caching + state persistence)
+- `entities/infrastructure/redis.md` — frontmatter only (pub/sub blackboard)
+- `sources/4-5-links.md` — frontmatter only (K8 sibling; stale-snapshot lineage)
+- `sources/3-17-agent-research.md` — frontmatter only (K16 sibling ~1 week earlier; both prescribe local DeepSeek-R1-14B)
+- `sources/tradingagents.md` — frontmatter only (formerly empty `related: []` — K17 provides direct competitive benchmarking)
+
+### Stale-snapshot signals
+
+- "128 GB RAM ceiling" throughout → 7 GB actual (~18× over)
+- "26 Docker containers" → 40 actual (1.5× under)
+- DeepSeek-R1-14B / Ollama local path → retracted (DeepSeek API is actual brain)
+- pymerkle/OpenTimestamps "deployed" → prescription-as-built collapse (custom SHA-256 chain only)
+- "28-feature" observation space → FEATURE_VECTOR_DIM=34 per K12 (dimensionality discrepancy)
+- CPU inference speed 5-12 tok/s → not independently benchmarked
+
+### Architectural significance
+
+K17 is the most architecturally ambitious Cemini-internal doc in the K-series. It attempts a comprehensive synthesis across external research evaluation, competitive positioning, resource allocation modeling, agent skill definition, and governance framework. The Generator-Evaluator architecture and Context Reset pattern represent the most sophisticated agentic control framework prescribed in the corpus. The memory budget allocation table (§7, 86-96 GB model) is the most detailed resource model in any K-series doc, even though it rests on the stale 128 GB baseline.
+
+### Lint at ship
+
+- `wiki_lint.py` — 0 orphans / 0 bidir gaps / 0 dangling / 0 missing / 0 frontmatter issues / 0 stale NEEDS-VERIFICATION (1 pre-existing tag on publishers-exclusion.md, 7d old, not K17-related)
+
+## [2026-05-01] K16 deep-read | 3_17 agent research.docx — Integration of Local AI Agents in the Cemini Financial Suite
+
+K16 continues the K-series with the sixth Cemini-internal document (~2026-03-17, ~45 days stale). 16 content items evaluated (4 Gaps + 4 Tools + 4 Implementation Steps + 4 Rejected) against the standard K-series template. 0-of-16 promoted (0%), consistent with K14 (0/11) — the document's applied-tooling composition does not surface novel architectural primitives.
+
+### Source page updated
+
+- `wiki/sources/3-17-agent-research.md` — full rewrite: `read_status: unread-stub → deep-read`, frontmatter expanded to 13 `related:` entries (from 2), Narrative restructured (Document framing / Gap register with stale flags / Tool evaluation register / Implementation sequence / Explicitly rejected / Stale-snapshot analysis table / Cross-source corroboration / Promotion decision), 12 Snippets populated with line citations
+
+### Extensions (0 new pages, 2 existing-page extensions)
+
+- `wiki/concepts/scatter-gather-topology.md` — **EXTENDED**. Redis Semantic Caching subsection: cache-aside pattern (hash prompt+model+temperature → Redis lookup → bypass LLM on hit), agent-role-aware cache key namespacing to preserve scatter-gather output diversity, 5-min TTL staleness bound.
+- `wiki/concepts/cryptographic-audit-trail.md` — **EXTENDED**. Sandboxed Observer pattern: abliterated LLM as observation-only sensor (zero EMS/router access), outputs → PostgreSQL/JSONL only, completes a three-layer security model with IBCT (ex-ante authorization) and audit trail (ex-post immutability).
+
+### Backlinks added (11 bidirectional pairs)
+
+- `concepts/scatter-gather-topology.md` — frontmatter + Relations bullet + Redis Semantic Caching narrative
+- `concepts/cryptographic-audit-trail.md` — frontmatter + Relations bullet + Sandboxed Observer narrative
+- `concepts/ip-sale-readiness.md` — frontmatter only (Gap 4 M&A due diligence)
+- `concepts/context-compression-resume-pattern.md` — frontmatter only (Redis caching as compression mechanism)
+- `entities/frameworks/langgraph.md` — frontmatter only (LangGraph referenced throughout)
+- `entities/frameworks/fastmcp.md` — frontmatter only (Pydantic v2 schema enforcement)
+- `entities/infrastructure/timescaledb.md` — frontmatter only (audit logging target)
+- `entities/infrastructure/redis.md` — frontmatter only (Redis semantic caching)
+- `sources/4-3-link-re-2.md` — frontmatter only (OpenClaw rejection reinforcement + Stop-Hook/ghost-token lineage)
+- `sources/3-10-cryptographic-research.md` — frontmatter only (audit trail architecture)
+- `sources/4-5-links.md` — frontmatter only (K8 sibling; stale-snapshot lineage)
+
+### Stale-snapshot signals
+
+- "18-container stack" → 40 actual (K8, 2.2× under)
+- "263+ tests" → 528 actual (K5, 2.0× under)
+- "128 GB RAM" → 7 GB actual (K8, ~18× over)
+- DeepSeek-R1-Distill-Qwen-14B local ADOPT → retracted path (DeepSeek API is actual brain)
+- April 14-17 RL retraining window → planned-not-executed per K8
+- Hetzner April 2026 pricing shock → predicted March 17, now live historical fact
+
+### Historical significance
+
+K16 is the last systematic defense of the local-model path in the Cemini-internal corpus. Written two weeks before the Hetzner April 1, 2026 pricing adjustment, it represents the most fully articulated case for CPU-bound local inference. The 1,153% RAM upgrade increase (€15→€188/mo) cited in Gap 1 was the trigger event that forced the pivot to the hosted DeepSeek API.
+
+### Lint at ship
+
+- 0 K16-introduced gaps. 22 pre-existing bidirectional gaps (K13/K14 lineage). 5 orphans, 120 cited-unread stubs unchanged.
+
+## [2026-05-01] K15 deep-read | 3_29 research 6.docx — Extraction Audit: MCP + Multi-Agent Architecture
+
+K15 continues the K-series with the next Cemini-internal extraction audit (~2026-03-29, ~33 days stale). 13 sections evaluated (6 Links + 7 Papers) against the standard K-series template. 3-of-13 promoted (23%), consistent with K8. This is the first K-series doc focused specifically on MCP protocol architecture and multi-agent communication patterns rather than general tool/paper evaluation.
+
+### Source page updated
+
+- `wiki/sources/3-29-research-6.md` — full rewrite: `read_status: unread-stub → validated`, frontmatter expanded to 13 related entries, Narrative restructured (Document framing / Link-by-link summaries with verdict tables / Paper-by-paper summaries / Stale-snapshot analysis / Cross-source corroboration / Promotion decisions), 15 Snippets populated
+
+### Promotions (3 new/expanded pages)
+
+- `wiki/concepts/agent-identity-protocol.md` — **NEW CONCEPT PAGE**. IBCT verifiable delegation: Biscuit tokens with holder-side attenuation, completion blocks, Ed25519 self-certifying ephemeral identities. Extends cryptographic-audit-trail.md with ex-ante authorization layer. 5 Snippets from K15 source.
+- `wiki/entities/frameworks/fastmcp.md` — **EXTENDED**. Formal Tool Safety Typing section: side_effects enum (read-only/idempotent/destructive), failure_modes mapping with Retry/Fallback/Abort strategies, Semgrep CI/CD enforcement, progressive schema disclosure. Affects every @mcp.tool decorator.
+- `wiki/concepts/scatter-gather-topology.md` — **EXTENDED**. Distributed Context Windows & Hybrid Smart Routing section: A2A-style context isolation per agent, Redis Streams inter-agent communication, heuristic complexity router, 6-metric observability dashboard.
+
+### Backlinks added (8 bidirectional pairs)
+
+- `concepts/cryptographic-audit-trail.md` — IBCT cross-reference + Narrative extension (ex-ante authorization + ex-post immutability)
+- `entities/frameworks/fastmcp.md` — 2 new Relations entries (K15 source + IBCT page) + Formal Tool Safety Typing narrative
+- `concepts/scatter-gather-topology.md` — 2 new Relations entries (K15 source + IBCT page) + Distributed Context Windows narrative
+- `concepts/agent-identity-protocol.md` — 6 bidirectional backlinks to audit-trail / K15-source / fastmcp / langgraph / ip-sale-readiness / scatter-gather-topology
+- `wiki/index.md` — source entry rewritten + new concept row
+
+### Stale-snapshot signals
+
+- 128 GB RAM figure appears again (Link 3 §3) — same false propagation K8 caught (~18× over actual 7 GB)
+- "128-kilobyte context window" — likely transcription error (KB vs K tokens)
+- "over 30 Docker containers" — directionally correct but undercounts (40 actual)
+- All ADOPT verdicts are prescribed-not-built — consistent with other K-series Cemini-internal docs
+
+### Lint at ship
+
+- Run pending
+
 ## [2026-05-01] Wave 5.1 ingest | 3 link-evaluation briefs + Situational Awareness PDF — 7 new pages (4 source + 3 entity), 3 concept-page backlink updates
 
 Wave 5.1 inbox flush: 4 files triaged via `preingest_check.py` (all NEW, no duplicates), all ingested. The three link-evaluation docx files are Cemini-internal briefs authored 2026-05-01; together they evaluate **64 software projects** against the standard three-surface framework. This is the largest single-day link-evaluation batch in the K-series and the first Wave authored directly as `.docx` link-eval briefs rather than Gemini Deep Research outputs.

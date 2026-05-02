@@ -61,9 +61,11 @@ related:
   - sources/trading-3-4-5.md
   - sources/lob-regime-detection-hiremath-2026.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
+  - concepts/parlay-market-making.md
+  - concepts/agent-authorization-stack.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-01
 ---
 
 ## Relations
@@ -114,6 +116,7 @@ updated: 2026-04-27
 - @sources/greeks1-3-29.md — Market Microstructure source in the Cemini research corpus
 - @sources/insights-from-a-gemini.md — Market Microstructure source in the Cemini research corpus
 - @sources/kalshi1-3-29.md — Market Microstructure source in the Cemini research corpus
+- @concepts/parlay-market-making.md — K24 promotion: correlation-aware AMM for parlay joint-contract pricing (Ising model + shadow trades + composite-likelihood SGD)
 - @sources/market-microstructure-and-liquidity-analysis-of-qqq-etf-on-2024-08-01.md — Market Microstructure source in the Cemini research corpus
 - @sources/nonstandard-errors.md — Market Microstructure source in the Cemini research corpus
 - @sources/options-2-4-5.md — Market Microstructure source in the Cemini research corpus
@@ -123,6 +126,7 @@ updated: 2026-04-27
 - @sources/sort-1-4-3.md — Market Microstructure source in the Cemini research corpus
 - @sources/sort-6-4-3.md — Market Microstructure source in the Cemini research corpus
 - @sources/trading-3-4-5.md — Market Microstructure source in the Cemini research corpus
+- @concepts/agent-authorization-stack.md — K19+K22+K23+K24 cross-cluster synthesis; ParlayMarket's RFQ trilemma as a Layer-4 authorization constraint.
 
 ## Raw Concept
 
