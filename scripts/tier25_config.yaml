@@ -1,0 +1,125 @@
+# Tier 2.5 /autoresearch loop — configuration
+# Steal-from: agriciDaniel/claude-obsidian /autoresearch loop (MIT)
+# Ported: 2026-05-01
+#
+# This file controls the structured research-discovery loop.
+# Read by: the LLM (interactive mode, Path 1) or tier25_sweep.py (scripted mode, Path 2).
+#
+# Architecture:
+#   1. Fire 5 cluster queries via Exa MCP (one per Cemini research cluster)
+#   2. Score each hit against the rubric (3 hard filters + quality + operational + negative)
+#   3. Write scored candidates to wiki/sweeps/YYYY-MM-DD.md
+#   4. User gates which candidates to ingest
+#
+# Caps match the claude-obsidian program.md defaults, tuned for Cemini's cluster count.
+
+loop:
+  max_rounds: 1                  # one round of 5 cluster queries = one sweep
+  max_new_pages: 15              # per-session cap on new source pages created
+  max_sources_per_query: 5       # Exa numResults per cluster query
+  recency_window_days: 30        # startPublishedDate = today - this
+
+# Cluster queries — one per active Cemini research cluster.
+# Fired in order. Each returns up to max_sources_per_query hits.
+# Queries adapted from concepts/high-signal-paper-patterns.md §Cluster-specific templates.
+
+queries:
+  - cluster: llm-agents
+    query: '"agent harness" OR "LLM agent evaluation" OR "agent orchestration" OR "multi-agent coordination" OR "agentic AI safety"'
+    category: "research paper"
+
+  - cluster: quant-finance
+    query: '"options pricing" OR "implied volatility" OR "algorithmic trading" "reinforcement learning" OR "market microstructure" OR "portfolio optimization"'
+    category: "research paper"
+
+  - cluster: prediction-markets
+    query: '"prediction market" OR "Kalshi" OR "Polymarket" OR "event contract" OR "automated market making" OR "information aggregation"'
+    category: "research paper"
+
+  - cluster: llm-models
+    query: '"DeepSeek" OR "mixture of experts scaling" OR "LLM capability evaluation" OR "reasoning model benchmark" OR "LLM knowledge capacity"'
+    category: "research paper"
+
+  - cluster: data-infrastructure
+    query: '"TimescaleDB" OR "continuous aggregate" "trading" OR "time-series database" "finance" OR "vector database" "RAG" OR "knowledge graph" "financial"'
+    category: "research paper"
+
+# Scoring rubric — from concepts/high-signal-paper-patterns.md
+# Applied to each candidate after search results return.
+
+scoring:
+  # --- Hard filters (all must pass; fail → skip) ---
+  hard_filters:
+    - id: format
+      description: "Paper or whitepaper-grade documentation (not a vibes-coded repo without docs)"
+    - id: recency
+      description: "Published within recency_window_days, or strong Filter-3 hit if older"
+    - id: cemini_domain
+      description: "Non-trivial overlap with at least one Cemini cluster surface"
+
+  # --- Quality signals (≥4 → ingest candidate; ≥3 → strong candidate) ---
+  quality_signals:
+    - id: empirical_results
+      description: "R², CIs, sample sizes — not just position-paper framing"
+      weight: 1
+    - id: prior_work
+      description: "Cites 15+ relevant prior works with meaningful engagement"
+      weight: 1
+    - id: code_release
+      description: "GitHub with verifiable license (MIT/Apache-2.0/BSD preferred)"
+      weight: 1
+    - id: reproducibility
+      description: "Datasets named, methodology detailed, baselines referenced"
+      weight: 1
+    - id: refutation
+      description: "Refutes or advances a widely-held belief (the interesting criterion)"
+      weight: 2
+    - id: novelty
+      description: "Mathematical/algorithmic novelty, not just training-recipe novelty"
+      weight: 1
+
+  quality_threshold_ingest: 4     # sum of weights ≥ this → auto-candidate for ingest
+  quality_threshold_strong: 3     # sum of weights ≥ this → strong candidate, discuss
+
+  # --- Operational signals (deployment angle) ---
+  operational_signals:
+    - id: deployment_surface
+      description: "Concrete place in Cemini stack where this would land"
+    - id: quantifiable_gain
+      description: "Measured improvement (speedup, accuracy, risk reduction)"
+    - id: next_step
+      description: "Clear action after reading: brief, reproduce, deploy, or skip"
+
+  # --- Negative signals (any hit → skip or downgrade) ---
+  negative_signals:
+    - id: license_poison
+      description: "GPL-3.0 / AGPL-3.0 / SSPL / ELv2 → paper-only, no code adoption"
+      action: skip_code
+    - id: unauthorized_derivative
+      description: "NOASSERTION or self-disclosed unauthorized derivative → reject"
+      action: reject
+    - id: single_author_extraordinary
+      description: "Single author + extraordinary claims + no peer-reviewed track record → skim-only"
+      action: downgrade_to_skim
+    - id: overlap_existing
+      description: "≥50% overlap with existing wiki page → update existing, don't create new"
+      action: update_existing
+    - id: domain_only
+      description: "NLP/vision/RL-only, no quant or agent angle → skip"
+      action: skip
+    - id: closed_source
+      description: "Closed-source preview, no published paper → skip"
+      action: skip
+    - id: vendor_whitepaper
+      description: "Vendor whitepaper / paid-content marketing → skip"
+      action: skip
+
+# Output format for wiki/sweeps/YYYY-MM-DD.md
+output:
+  path_template: "wiki/sweeps/{date}.md"
+  sections:
+    - summary          # top-line: queries fired, hits scored, candidates promoted
+    - candidate_table  # sorted by score descending: title, cluster, score, verdict
+    - per_cluster_detail  # one subsection per cluster with full scoring breakdown
+    - skipped          # hits that failed hard filters, with reason
+    - next_actions     # concrete: which to ingest, which to brief, which to skip

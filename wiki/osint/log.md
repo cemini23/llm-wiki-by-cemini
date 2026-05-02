@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-05-01] Tier 2.5 sweep — first /autoresearch loop ingest: SafeHarness + TSAG
+
+First Tier 2.5 sweep (5 cluster queries × 5 hits = 25 candidates) surfaced 2 ingest candidates. Both deep-read and ingested.
+
+- **SafeHarness (arXiv 2604.13630)** — 11 authors, CAS + Peking University. Lifecycle-integrated security architecture: four defense layers (Inform/Verify/Constrain/Correct) woven into agent harness with cross-layer feedback. 38% UBR / 42% ASR reduction. **Closes the harness-internal monitoring gap** in the authorization stack between K22 (reasoning monitor) and K19 (SAE).
+  - **Source page**: `wiki/sources/safeharness-2604.13630.md` — new, deep-read
+  - **Concept page update**: `wiki/concepts/agent-authorization-stack.md` — upgraded from four-layer to five-layer architecture. SafeHarness added as Layer 3 (harness-internal monitoring) between reasoning monitor and SAE.
+- **TSAG (arXiv 2604.19633)** — 4 authors. Tool-Augmented RAG evaluation framework for financial Q&A. 100-question benchmark, GPT-4o + Qwen2 7B achieve perfect Match Accuracy 1.00, GPT-4o HR=0.02. Code released.
+  - **Source page**: `wiki/sources/tsag-2604.19633.md` — new, deep-read
+  - **Calibration targets for Cemini analyst prompt builder** documented.
+- **Scripts shipped**: `scripts/tier25_config.yaml`, `scripts/tier25_scorer.py` (Path 1 — LLM-driven scoring)
+- **Sweep report**: `wiki/sweeps/2026-05-01.md` — first complete sweep artifact
+- **Tasks**: #24 (Tier 2.5 loop) complete. #25 (SafeHarness stack integration) complete.
+
 ## [2026-05-01] ROADMAP restructure + cross-cluster synthesis
 
 ROADMAP.md completely restructured per user directive: from ~270-line verbose chronological log with strikethroughs and mixed done/open items to ~100-line clear top-down structure (Vision → Active → Next → Decisions → Eventually → Done). Collapsed 500+ word "Done" entries to compact one-liners. Removed all strikethrough items.
