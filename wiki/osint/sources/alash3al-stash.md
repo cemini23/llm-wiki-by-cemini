@@ -18,9 +18,9 @@ related:
   - concepts/mcp-tool-marketplace.md
   - sources/agriciDaniel-claude-obsidian.md
 maturity: validated
-read_status: read
+read_status: deployed
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -99,6 +99,14 @@ Two distinct deployment surfaces are evaluated:
 - **Pair with `@sources/atomicmemory-llm-wiki-compiler.md`** (Wave 4B Adopt): wiki-compiler emits static markdown; stash holds dynamic episodic memory. The Cemini wiki/librarian stack benefits from both.
 - **Pair with `@entities/infrastructure/pgvector.md`**: stash piggybacks on Cemini's existing pgvector competency. The same vector-recall pattern Cemini uses for semantic search of the wiki applies to stash's fact-recall queries.
 
+### Deployment (2026-05-02)
+
+✅ Stash v0.2.9 deployed on `cemini-librarian` (5.161.179.207) as the librarian's episodic memory layer. Complements kb-server (static wiki RAG) with dynamic memory: episodes, facts, working context, contradictions, causal links, hypotheses, goals, and failure records — all stored in Postgres + pgvector and queryable via MCP SSE.
+
+Key deployment choices: pre-built binary from GitHub releases (Go 1.25.5 requirement blocked build-from-source on Ubuntu 22.04 with Go 1.22.2). Ollama-backed embeddings (`nomic-embed-text`) and reasoning (`qwen2.5:0.5b`, ~500 MB) — zero-API-cost design fitting CPX21's 4 GB RAM envelope. Postgres 16 + pgvector 768-dim. Systemd-managed, consolidation every 5 minutes, 168h window.
+
+Full deployment record: `briefs/2026-05-02_stash-deployment-record.md`.
+
 ### Risks & open questions
 
 1. **Bus-factor: 1 contributor on a 6-day-old repo** — textbook fork-and-maintain situation. The project may evaporate if the maintainer pivots. **Mitigation**: pin v0.2.6, fork to Cemini-controlled GitHub org, treat as in-house code from day 1.
@@ -115,14 +123,22 @@ Two distinct deployment surfaces are evaluated:
 
 **Decision**: **Adopt for Wiki/Librarian server, defer Cemini-prod adoption pending token-cost profile.**
 
-Concrete next-steps:
+**Status: ✅ DEPLOYED 2026-05-02 on `cemini-librarian` (5.161.179.207).**
 
-1. **Fork-and-pin** alash3al/stash to Cemini's GitHub org at v0.2.6. ~30 min.
-2. **Provision dedicated PostgreSQL on CPX21** (separate DB instance from existing pgvector wiki-compile DB, for isolation). ~1 hour.
-3. **Deploy as Dockerized systemd service** following the upstream `docker compose up` recipe. ~1 hour.
-4. **Wire local Claude Code MCP config** to the remote CPX21 Stash MCP endpoint. ~30 min.
-5. **Run 30-day shadow mode** with token-cost telemetry — observe pipeline cost on a sample of real sessions. **Decision gate** for any prod-stack consideration.
-6. **Re-evaluate at next wave touch** for prod-stack adoption.
+Deployment details: Stash v0.2.9 (pre-built binary from GitHub releases) deployed at `/opt/stash/` on the librarian server. Postgres 16 with pgvector extension (768-dim, nomic-embed-text). Embedding model via Ollama (`localhost:11434`); reasoning model `qwen2.5:0.5b`. MCP SSE endpoint on port 8080, HTTP on port 9090. Consolidation every 5 minutes, 168h window, similarity threshold 0.85. Systemd-managed (`stash.service`, enabled). Primary namespace: `/cemini`. Bootstrap memories stored — CeminiSuite platform architecture overview and key facts.
+
+Two-layer memory architecture now operational on the librarian:
+- **kb-server** (:3838) — static wiki RAG (markdown → embeddings → FTS5 search)
+- **stash** (:8080 MCP / :9090 HTTP) — dynamic episodic memory (episodes, facts, working context, contradictions, causal links, hypotheses, goals, failure records)
+
+Full deployment record: `briefs/2026-05-02_stash-deployment-record.md`.
+
+Concrete next-steps (remaining):
+
+1. **Fork-and-pin** ✅ DONE 2026-05-02 — forked to `cemini23/stash` (https://github.com/cemini23/stash) from `alash3al/stash` at v0.2.9.
+2. **Wire laptop Claude Code MCP config** ✅ DONE 2026-05-02 — `~/.mcp.json` configured with SSE transport to `localhost:8088/sse` via SSH tunnel (`ssh -f -N -L 8088:localhost:8080 -o ServerAliveInterval=60 cemini-librarian`). Tunnel must be re-established after laptop reboot.
+3. **Run 30-day shadow mode** with token-cost telemetry — observe pipeline cost on a sample of real sessions. **Decision gate** for any prod-stack consideration.
+4. **Re-evaluate at next wave touch** for prod-stack adoption.
 
 License + IP-sale-readiness disposition: **acceptable as-deployed**. Apache-2.0 is on the clean license list. Transitive sweep is the only outstanding gate.
 

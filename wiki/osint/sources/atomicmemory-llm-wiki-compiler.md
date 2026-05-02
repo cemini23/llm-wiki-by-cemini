@@ -17,6 +17,7 @@ related:
   - sources/kepano-obsidian-skills.md
   - sources/obsidian-second-brain-eugeniughelbur.md
   - sources/bare-bones-memory-southpolesteve.md
+  - sources/gemini-dr-link-eval-2026-04-28.md
   - sources/gemini-dr-wave4b-osint-2026-04-29.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
   - sources/gemini-dr-wave5b-osint-2026-04-30.md
@@ -26,7 +27,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-04-28
-updated: 2026-04-30
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -38,6 +39,7 @@ updated: 2026-04-30
 - @entities/infrastructure/deepseek-api.md — DeepSeek API works via `OPENAI_BASE_URL` swap; same multi-provider config pattern this project uses
 - @entities/infrastructure/localai.md — LocalAI is one of the local-runtime targets (`LLMWIKI_PROVIDER=openai` + `OPENAI_BASE_URL=http://localai:8080/v1`)
 - @entities/frameworks/fastmcp.md — this project's MCP server (`llmwiki serve`) parallels the Cemini stack's `cemini_mcp` FastMCP container; can coexist (separate transport / endpoint)
+- @sources/gemini-dr-link-eval-2026-04-28.md — this repo was independently evaluated (Steal-from) in the Wave 2 link-eval sweep, then again in 3 subsequent Gemini DR waves (4a, 4b, 5b) — the most cross-evaluated item in the corpus (4 docs).
 - @sources/agriciDaniel-claude-obsidian.md — Wave 5B Steal-from; **third member of the Karpathy-pattern stack**: this project (compile/MCP, headless), `wastedcode/memex` (filesystem-only, minimal), and claude-obsidian (visual-Obsidian-vault wrapper with `/wiki` `/save` `/autoresearch` slash commands). The three differ on substrate (compile-pipeline / filesystem-namespace / vault-overlay) but converge on the same Karpathy-pattern thesis (raw → wiki → schema, LLM-curated, compounding). Worth a side-by-side adoption comparison if Cemini ever wants a visual Obsidian layer atop the existing kb-server stack
 
 ## Raw Concept

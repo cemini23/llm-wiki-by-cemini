@@ -40,7 +40,7 @@ related:
   - concepts/parlay-market-making.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-01
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -69,6 +69,9 @@ updated: 2026-05-01
 - @entities/platforms/polymarket.md
 - @entities/data-sources/open-meteo.md
 - @concepts/ensemble-weather-forecasting.md
+- @sources/insights-from-a-gemini.md — The Attrition Protocol comprehensive trading framework; ICT liquidity paradigms (FVG/OB/PO3), 0DTE credit-spread strategies, and options-selling methodology reference Kalshi exchange microstructure
+- @sources/ai-trading-ethics-4-5.md — AI trading ethics white paper (~2021): 6 ethical dimensions for AI-driven trading; Kalshi's CFTC-DCM status aligns with the accountability + transparency requirements for IP-sale compliance
+- @sources/trading-3-4-5.md — Ansari (2024, SSRN): behavioral-finance relevance in AI-dominated markets; favorite-longshot bias + herding dynamics are directly monetizable on Kalshi prediction-market microstructure
 
 ## Raw Concept
 

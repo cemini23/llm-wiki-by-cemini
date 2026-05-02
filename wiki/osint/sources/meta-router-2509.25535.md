@@ -9,8 +9,9 @@ related:
   - sources/select-then-route-emnlp-2025.md
   - sources/masrouter-acl-2025.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-02
 ---
 
 ## Relations

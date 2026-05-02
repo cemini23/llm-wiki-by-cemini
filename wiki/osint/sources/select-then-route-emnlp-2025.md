@@ -10,8 +10,9 @@ related:
   - sources/masrouter-acl-2025.md
   - sources/meta-router-2509.25535.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-02
 ---
 
 ## Relations

@@ -45,7 +45,7 @@ related:
   - sources/git-3-5-pt3.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-05-01
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -83,7 +83,7 @@ This page documents the intended design, *not* a verified deployed state. Server
 
 ### Why API, not local
 
-- **Hardware constraint (2026-04-24, user-confirmed)**: no local-inference hardware — not on the Hetzner VPS (CPU-only, 8 GB RAM per most recent server-Claude diagnostics; earlier "128 GB RAM" claims on @entities/infrastructure/hetzner.md are part of the same proposal-vs-production drift and will be re-verified)[NEEDS VERIFICATION 2026-04-25], not at home. Local 14B weights are infeasible for now.
+- **Hardware constraint (2026-04-24, user-confirmed)**: no local-inference hardware — not on the Hetzner VPS (CPU-only, 8 GB RAM per most recent server-Claude diagnostics; earlier "128 GB RAM" claims on @entities/infrastructure/hetzner.md are part of the same proposal-vs-production drift and will be re-verified) [NEEDS VERIFICATION 2026-05-02 — blocked on server-side SSH verification; unresolvable from laptop], not at home. Local 14B weights are infeasible for now.
 - **The wiki lives on this laptop for exactly this reason.** Because the server can't host the full knowledge-and-LLM loop locally, the librarian layer (this workspace) runs here, and the dev stack on the server gets curated briefs via `scp`. The DeepSeek API fills the LLM-brain gap on the server side without requiring a local-inference runtime.
 
 ### Expected integration
@@ -92,7 +92,7 @@ This page documents the intended design, *not* a verified deployed state. Server
 2. **Client**: `openai.OpenAI(base_url="https://api.deepseek.com", api_key=os.environ["DEEPSEEK_API_KEY"])` — DeepSeek's API is OpenAI-compatible, so the existing OpenAI-SDK idiom works with one base-URL override. Model names: `deepseek-chat` (general) and `deepseek-reasoner` (R1 reasoning). [NEEDS VERIFICATION — confirm model IDs against current DeepSeek API docs at time of wiring]
 3. **Orchestration**: LangGraph supervisors invoke the client at each scatter-gather node; the Send-API fan-out remains unchanged from @concepts/scatter-gather-topology.md. The key difference vs the retracted local-runtime design: API calls have external latency + rate-limit exposure, so the scatter-gather budget should account for that (batch size, concurrent-call ceiling).
 4. **RAG integration**: the model queries the **local pgvector wiki-search** (Track B of the 2026-04-23 wire-in brief, currently in re-deploy investigation per the 2026-04-24 post-capacity-alarm follow-up). The model stays in the cloud; the knowledge base stays local. This is the core architectural decoupling — no proprietary research leaves the workspace except as the model's own response completions.
-5. **Cost + rate-limit envelope**: to be captured when server-side wiring lands. [NEEDS VERIFICATION 2026-04-25]
+5. **Cost + rate-limit envelope**: to be captured when server-side wiring lands. [NEEDS VERIFICATION 2026-05-02 — blocked on API dashboard access; unresolvable from laptop]
 
 ### Architectural implications
 
@@ -106,7 +106,7 @@ This page documents the intended design, *not* a verified deployed state. Server
 
 **Partial validation — 2026-04-24 Track C walk**: the client layer is `[CONFIRMED]`; the full scatter-gather topology + RAG loop remain pending.
 
-- **API key**: presumed present in `/opt/cemini/.env` per user statement 2026-04-24. Server-side verification pending (Workstream B of `briefs/2026-04-24_post-capacity-alarm-followup.md`). [NEEDS VERIFICATION 2026-04-25]
+- **API key**: presumed present in `/opt/cemini/.env` per user statement 2026-04-24. Server-side verification pending (Workstream B of `briefs/2026-04-24_post-capacity-alarm-followup.md`). [NEEDS VERIFICATION 2026-05-02 — blocked on server-side SSH verification; unresolvable from laptop]
 - **Client wiring** `[CONFIRMED 2026-04-24]` — `services/llm_analyst/deepseek_client.py` exists as a **single shared client** (per Track C walk, concept #3 scatter-gather evidence). `agents/orchestrator.py` imports and uses this client from the 4-analyst linear `StateGraph` (`technical`, `fundamental`, `sentiment`, `cio_debate` nodes). The model name and base-URL used by the client on the server-side have not been read from this workspace yet; pending visual confirmation when Workstream B returns. [NEEDS VERIFICATION — model ID, base-URL string]
 - **LangGraph integration** `[TENTATIVE 2026-04-24]` — the client is wired into `agents/orchestrator.py` as a linear multi-node workflow, **not** the Send()-based scatter-gather topology described in @concepts/scatter-gather-topology.md (see that page's retraction). Correction (post-inventory): `.worktrees/step83-llm-analyst/` is **docs-only** — contains the step83 design spec + implementation plan, no Python code; orchestrator.py in step83 is identical to main. A Send()-topology prototype does **not** exist on any branch. Next wiring step depends on (a) Track B `wiki_search` being live for the RAG loop, and (b) decision on the P1-4 ticket on @concepts/scatter-gather-topology.md — which is now "build fresh per step83's design spec" (Option A, ~1–2 engineer-weeks) vs. "retract + rename" (Option B, ~0.5 days). Option B is the default recommendation unless Send() is on the IP-sale critical path.
 - **RAG via `wiki_search`**: blocked on Track B deploy investigation (see `briefs/2026-04-24_post-capacity-alarm-followup.md`, Workstream B). Track B source code is currently untracked on the server; triage path pending.

@@ -55,6 +55,7 @@ related:
   - sources/github-action-and-workflow-research.md
   - sources/greeks-5-3-29.md
   - sources/greeks-9-3-29.md
+  - sources/insights-from-a-gemini.md
   - sources/hedgge-fund-1-4-5.md
   - sources/mixed-fractional-models.md
   - sources/qqq-trust-s-american-options-using-data-from-november-21-2024.md
@@ -62,6 +63,7 @@ related:
   - sources/scaling-roadmap-research.md
   - sources/signa.md
   - sources/sort-8-4-3.md
+  - sources/ssrn-3247865.md
   - sources/stock-5-4-5.md
   - sources/stock-6-4-5.md
   - sources/stock-7-4-5.md
@@ -85,7 +87,7 @@ related:
   - concepts/sae-execution-contract.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-01
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -114,13 +116,13 @@ updated: 2026-05-01
 - @sources/3-26-b.md — Quantitative Finance source in the Cemini research corpus
 - @sources/3-26-c.md — Quantitative Finance source in the Cemini research corpus
 - @sources/3-26-link-re-3.md — Quantitative Finance source in the Cemini research corpus
-- @sources/3-27-links-re-2.md — Quantitative Finance source in the Cemini research corpus
+- @sources/3-27-links-re-2.md — Cemini architectural extraction audit; 20-source code-pattern audit covering compound engineering, agentOS evaluation, safetensors/pickle ban, stateless FastAPI, Byzantine consensus patterns
 - @sources/3-27-research-paper-re.md — Quantitative Finance source in the Cemini research corpus
 - @sources/3-28-links-2.md — Quantitative Finance source in the Cemini research corpus
 - @sources/3-29-research-4.md — Quantitative Finance source in the Cemini research corpus
 - @sources/3-6-git-1.md — Quantitative Finance source in the Cemini research corpus
 - @sources/3-9-pm-research.md — Quantitative Finance source in the Cemini research corpus
-- @sources/4-11-crypto-re.md — Quantitative Finance source in the Cemini research corpus
+- @sources/4-11-crypto-re.md — Cemini competitive intelligence covering 20+ agent orchestration platforms; SAE middleware, CPO-FOAM PID controller, MCP server analysis, A2Auth certificates
 - @sources/4-14-re.md — Quantitative Finance source in the Cemini research corpus
 - @sources/4-3-link-re-2.md — Quantitative Finance source in the Cemini research corpus
 - @sources/4-3-link-research.md — Quantitative Finance source in the Cemini research corpus
@@ -139,20 +141,22 @@ updated: 2026-05-01
 - @sources/github-action-and-workflow-research.md — Quantitative Finance source in the Cemini research corpus
 - @sources/greeks-5-3-29.md — Quantitative Finance source in the Cemini research corpus
 - @sources/greeks-9-3-29.md — Quantitative Finance source in the Cemini research corpus
-- @sources/hedgge-fund-1-4-5.md — Quantitative Finance source in the Cemini research corpus
+- @sources/hedgge-fund-1-4-5.md — "Do Hedge Funds Prefer Safe Stocks?" (Cao, Green & Li, 2014): hedge funds prefer safe/low-volatility stock characteristics over high-return-predicting ones; 90 firm characteristics, mean adj R²=80.4%; safety preference strongest during recessions. Informs Cemini regime-conditional position sizing + factor selection
+- @sources/insights-from-a-gemini.md — The Attrition Protocol comprehensive trading framework (Gemini Deep Research): 7-module synthesis (ICT microstructure, Zhawk RU sizing, 8-phase Master Cheatsheet). Direct input to Cemini Kelly/CVaR position-sizing + MAPPO state vector
 - @sources/mixed-fractional-models.md — Quantitative Finance source in the Cemini research corpus
 - @sources/qqq-trust-s-american-options-using-data-from-november-21-2024.md — Quantitative Finance source in the Cemini research corpus
 - @sources/roadmap.md — Quantitative Finance source in the Cemini research corpus
 - @sources/scaling-roadmap-research.md — Quantitative Finance source in the Cemini research corpus
-- @sources/signa.md — Quantitative Finance source in the Cemini research corpus
+- @sources/signa.md — Cemini competitive intelligence on Signa platform; 5-agent MAPPO ensemble, Monte Carlo/UCB simulators, MCP middleware, PID controller, RBAC, IP-sale patterns
 - @sources/sort-8-4-3.md — Quantitative Finance source in the Cemini research corpus
-- @sources/stock-5-4-5.md — Quantitative Finance source in the Cemini research corpus
-- @sources/stock-6-4-5.md — Quantitative Finance source in the Cemini research corpus
+- @sources/ssrn-3247865.md — 151 Trading Strategies compendium (Kakushadze & Serur, 2018); 550+ formulas across all asset classes with backtesting source code
+- @sources/stock-5-4-5.md — Bessembinder (2020) Part II: tech stocks overrepresented among worst decade-horizon performers; Healthcare/Pharma/Energy among best. Informs sector-screening + survivorship-bias awareness
+- @sources/stock-6-4-5.md — Chok & Qian (2013, PLoS ONE): curvilinear (inverted-U) comparable-stocks ↔ NASDAQ IPO-entry-rate relationship; information overload beyond a point. LOW direct relevance; niche behavioral-finance structural prior
 - @sources/stock-7-4-5.md — Quantitative Finance source in the Cemini research corpus
-- @sources/stocks-3-4-5.md — Quantitative Finance source in the Cemini research corpus
-- @sources/stocks-4-4-5.md — Quantitative Finance source in the Cemini research corpus
+- @sources/stocks-3-4-5.md — Atmaz & Basak (2021, J. Finance): no-dividend stocks have lower returns but higher vol/betas; consumption-based equilibrium model. Direct factor-construction relevance for Cemini screening
+- @sources/stocks-4-4-5.md — Racorean (2014, arXiv): stock-crossing permutation diagrams → positive Grassmannian. VERY LOW relevance (exotic mathematical finance); permutation-based rank-correlation feature could inspire simpler encoding
 - @sources/test-time-adaptation-for-non-stationary-time-series.md — Quantitative Finance source in the Cemini research corpus
-- @sources/trading-2-4-5.md — Quantitative Finance source in the Cemini research corpus
+- @sources/trading-2-4-5.md — Azzutti, Ringe & Stiehl (2022, EBI WP): AI-lifecycle regulatory framework (design/development/deployment/monitoring); rule-based + risk-oriented approach. Direct Cemini IP-sale compliance relevance for EU-regulated institutional buyers
 - @sources/trading-4-5.md — Quantitative Finance source in the Cemini research corpus
 - @sources/trading-playbook-research.md — Quantitative Finance source in the Cemini research corpus
 - @concepts/sae-execution-contract.md — K19 promotion 2026-05-01; SAE execution contract as reusable architectural primitive — execution-layer survivability middleware for agentic crypto trading

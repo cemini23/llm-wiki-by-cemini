@@ -9,7 +9,7 @@ related:
   - entities/ticker-watchlist.md
 maturity: validated
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -49,11 +49,11 @@ Per the LINK report, this sequential decentralization happens at three layers: *
 
 ### Major use cases
 
-- **Price feeds** — by far the largest use case. DeFi lending protocols, derivatives platforms, and stablecoin systems all consume oracle price feeds for collateral valuation and liquidation triggers. Specific protocol consumers (Aave, Compound, Synthetix, MakerDAO, etc.) are commonly cited but not anchored to a wiki source `[NEEDS VERIFICATION 2026-04-25]`.
-- **Cross-chain interoperability** — Chainlink CCIP (Cross-Chain Interoperability Protocol) lets messages and tokens move across L1s with oracle-network attestation `[NEEDS VERIFICATION 2026-04-25]` (CCIP is mentioned in the LINK page Section 1 framing of the protocol's scope, but the specific cross-chain mechanics need a deeper read).
-- **Verifiable randomness (VRF)** — provably unbiased random numbers for NFT minting, gaming, lotteries `[NEEDS VERIFICATION 2026-04-25]`.
-- **Proof of reserves** — on-chain attestations of off-chain custodian balances (used by stablecoin issuers, wrapped-asset bridges) `[NEEDS VERIFICATION 2026-04-25]`.
-- **Off-chain computation** — running computation off-chain and posting verified results on-chain (cheaper than on-chain execution for complex jobs) `[NEEDS VERIFICATION 2026-04-25]`.
+- **Price feeds** — by far the largest use case. DeFi lending protocols, derivatives platforms, and stablecoin systems all consume oracle price feeds for collateral valuation and liquidation triggers. Chainlink's own documentation confirms Aave, GMX, Liquity, and other major DeFi protocols as Data Feed consumers [CONFIRMED] [Source: https://docs.chain.link/data-feeds/index, retrieved 2026-05-02].
+- **Cross-chain interoperability** — Chainlink CCIP (Cross-Chain Interoperability Protocol) lets messages and tokens move across L1s with oracle-network attestation [CONFIRMED] [Source: https://chain.link/article/data-for-tokenized-assets, retrieved 2026-05-02].
+- **Verifiable randomness (VRF)** — provably unbiased random numbers for NFT minting, gaming, lotteries [CONFIRMED] [Source: https://chain.link/use-cases, retrieved 2026-05-02].
+- **Proof of reserves** — on-chain attestations of off-chain custodian balances (used by stablecoin issuers, wrapped-asset bridges) [CONFIRMED] [Source: https://chain.link/article/data-for-tokenized-assets, retrieved 2026-05-02].
+- **Off-chain computation** — running computation off-chain and posting verified results on-chain (cheaper than on-chain execution for complex jobs) [CONFIRMED] [Source: https://chain.link/use-cases, retrieved 2026-05-02].
 
 ### Failure modes — why oracles are systemic-risk surfaces
 
@@ -65,11 +65,11 @@ When an oracle fails, the smart contracts that depend on it fail. Historical exp
 
 For Cemini purposes, oracle reliability is upstream of any DeFi strategy: a strategy that consumes Chainlink price feeds inherits Chainlink's failure modes. This is structurally similar to how an equity strategy inherits its data vendor's outage risk, but with the additional wrinkle that oracle exploits can directly steal user funds rather than merely impair the strategy.
 
-This entire failure-mode section is general DeFi-context knowledge `[NEEDS VERIFICATION 2026-04-25]` — not anchored to specific incidents in the wiki. A future deepening pass should ingest specific exploit case studies (e.g. the 2020 bZx attacks, Mango Markets 2022, etc.) as source pages and link them here.
+This entire failure-mode section describes well-established DeFi oracle risk categories — stale price feeds, flash-loan manipulation, and oracle outages are documented across multiple oracle-network security analyses [CONFIRMED] [Sources: https://docs.chain.link/data-feeds/index, https://blog.echozero.app/article/oracle-network-reliability-comparing-chainlink-vs-band-vs-pyth, retrieved 2026-05-02]. A future deepening pass should ingest specific exploit case studies (e.g. the 2020 bZx attacks, Mango Markets 2022, etc.) as source pages and link them here.
 
 ### Competitor / alternative oracle networks
 
-Chainlink is dominant but not unique. The current landscape `[NEEDS VERIFICATION 2026-04-25]` includes:
+Chainlink is dominant but not unique. The current landscape [CONFIRMED] [Sources: https://ecoinimist.com/2025/07/13/top-5-blockchain-oracles-chainlink-band-api3-pyth-and-tellor/, https://blog.echozero.app/article/oracle-network-reliability-comparing-chainlink-vs-band-vs-pyth, retrieved 2026-05-02] includes:
 
 - **Pyth Network** — high-frequency price feeds sourced directly from market makers and exchanges (different oracle design — first-party data publishing rather than third-party aggregation)
 - **API3** — first-party oracles where data providers run their own nodes

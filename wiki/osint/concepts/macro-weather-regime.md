@@ -14,9 +14,10 @@ related:
   - concepts/dispersion-trading.md
   - entities/platforms/oanda.md
   - entities/platforms/kalshi.md
+  - concepts/carry-trade.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -31,6 +32,7 @@ updated: 2026-04-24
 - @concepts/dispersion-trading.md
 - @entities/platforms/oanda.md
 - @entities/platforms/kalshi.md
+- @concepts/carry-trade.md — carry trade sizing is gated by Macro Weather regime: disabled in RED, half-sized in YELLOW, full-sized in GREEN.
 
 ## Raw Concept
 

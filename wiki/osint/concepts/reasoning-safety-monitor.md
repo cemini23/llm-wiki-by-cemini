@@ -10,6 +10,7 @@ related:
   - concepts/llm-agent-systems.md
   - concepts/algorithmic-stopping-conditions.md
   - concepts/agent-authorization-stack.md
+  - sources/safeharness-2604.13630.md
 maturity: validated
 created: 2026-05-01
 updated: 2026-05-01
@@ -23,6 +24,7 @@ updated: 2026-05-01
 - @concepts/llm-agent-systems.md — cluster hub; reasoning safety is a new dimension of agent security orthogonal to content safety
 - @concepts/algorithmic-stopping-conditions.md — K14 execution-level stopping conditions; K22 provides reasoning-level stopping conditions (loop/DoS detection)
 - @concepts/agent-authorization-stack.md — K19+K22+K23+K24 cross-cluster synthesis; Layer 2 of the four-layer authorization architecture.
+- @sources/safeharness-2604.13630.md — K25 SafeHarness monitors harness state; complementary to reasoning safety monitor's CoT inspection — different detection surfaces, shared interrupt-signal pattern.
 
 ## Raw Concept
 

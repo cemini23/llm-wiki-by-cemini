@@ -10,8 +10,9 @@ related:
   - concepts/reasoning-safety-monitor.md
   - concepts/sae-execution-contract.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-02
 ---
 
 ## Relations

@@ -20,6 +20,7 @@ related:
   - sources/3-29-15.md
   - concepts/reasoning-safety-monitor.md
   - concepts/agent-authorization-stack.md
+  - sources/safeharness-2604.13630.md
 maturity: validated
 created: 2026-05-01
 updated: 2026-05-01
@@ -40,6 +41,7 @@ updated: 2026-05-01
 - @sources/3-29-15.md — K22 deep-read 2026-05-01; reasoning safety monitor provides step-level CoT inspection + interrupt signal — closes K20 §6.6's context-window provenance gap
 - @concepts/reasoning-safety-monitor.md — K22 promotion; parallel CoT inspection architecture — feeds reasoning-integrity signals into SAE's trust-state (z_t) as I_reasoning component
 - @concepts/agent-authorization-stack.md — K19+K22+K23+K24 cross-cluster synthesis; Layer 3 of the four-layer authorization architecture.
+- @sources/safeharness-2604.13630.md — K25 SafeHarness enforces inside the harness lifecycle; SAE enforces at the execution boundary. Different enforcement points, shared authorization posture.
 
 ## Raw Concept
 

@@ -38,7 +38,7 @@ Both senses share vocabulary ("exclusion" / "exclude") but operate at different 
 
 ### History
 
-The original `concepts/publishers-exclusion.md` page (created 2026-04-23, validated 2026-04-24) documented only the APA-schedule sense. A `[NEEDS VERIFICATION 2026-04-24]` deep-read note in that page flagged the IAA-sense conflict against `@sources/3-19-compliance-research.md` S4. The 2026-04-25 split:
+The original `concepts/publishers-exclusion.md` page (created 2026-04-23, validated 2026-04-24) documented only the APA-schedule sense. A deep-read note in that page flagged the IAA-sense conflict against `@sources/3-19-compliance-research.md` S4. The 2026-04-25 split:
 1. Renamed the original to `publishers-exclusion-apa.md` (preserves history via `git mv`)
 2. Created the new IAA page at `publishers-exclusion-iaa.md`
 3. Repurposed the original slug as this disambiguation stub

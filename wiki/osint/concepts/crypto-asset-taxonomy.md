@@ -21,7 +21,7 @@ related:
   - sources/dune-analytics-mcp.md
 maturity: validated
 created: 2026-04-25
-updated: 2026-04-29
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -45,7 +45,7 @@ The seven crypto-native assets in the watchlist resolve cleanly into four functi
 
 #### 1. Store-of-value blockchains — BTC
 
-Bitcoin is "decentralized digital currency and a secure ledger of unspent transaction outputs" — explicitly NOT a smart-contract platform [Source: @entities/tickers/btc.md, Section 1 Protocol Overview]. The Bitcoin Script language is intentionally non-Turing-complete, prioritizing predictability and security over programmability `[NEEDS VERIFICATION 2026-04-25]`. Use case = monetary scarcity, settlement of large transfers, sovereign-grade store-of-value.
+Bitcoin is "decentralized digital currency and a secure ledger of unspent transaction outputs" — explicitly NOT a smart-contract platform [Source: @entities/tickers/btc.md, Section 1 Protocol Overview]. The Bitcoin Script language is intentionally non-Turing-complete, prioritizing predictability and security over programmability [CONFIRMED] [Source: @entities/tickers/btc.md — "The lack of a Turing-complete base layer intentionally restricted decentralized application (dApp) development"]. Use case = monetary scarcity, settlement of large transfers, sovereign-grade store-of-value.
 
 **Watchlist ticker**: BTC.
 
@@ -56,9 +56,9 @@ These four are general-purpose decentralized computers — they execute arbitrar
 | Asset | Consensus | Execution model | Architectural posture |
 |---|---|---|---|
 | **ETH** | PoS (post-Merge) | EVM (Ethereum Virtual Machine), Solidity, account-based | Modular — rollup-centric: L1 = settlement / data availability / coordination, L2s do execution [Source: @entities/tickers/eth.md, Section 1 Protocol Overview] |
-| **SOL** | PoH + PoS hybrid `[NEEDS VERIFICATION 2026-04-25]` | Parallel-execution, single state machine, synchronous on-chain interaction | Monolithic — execution + consensus on L1, no L2 reliance [Source: @entities/tickers/sol.md, Section 1 Protocol Overview] |
-| **ADA** | PoS (Ouroboros family) `[NEEDS VERIFICATION 2026-04-25]` | EUTXO (Extended Unspent Transaction Output) accounting model, smart contracts on a Computation Layer separate from the Settlement Layer | Bifurcated — Cardano Settlement Layer (CSL) + Cardano Computation Layer (CCL) as distinct concerns [Source: @entities/tickers/ada.md, Section 1 Protocol Overview] |
-| **AVAX** | PoS (Snow consensus family) `[NEEDS VERIFICATION 2026-04-25]` | Multi-chain (P-chain platform / X-chain exchange / C-chain EVM-compatible) plus app-specific subnets `[NEEDS VERIFICATION 2026-04-25]` | Heterogeneous L1 — single base protocol with subnets for app-specific chains [Source: @entities/tickers/avax.md, Section 1 Protocol Overview] |
+| **SOL** | PoH + PoS hybrid [CONFIRMED] [Source: @entities/tickers/sol.md — "Proof of History (PoH), a mechanism that operates in tandem with a Delegated Proof of Stake (dPoS) consensus model"] | Parallel-execution, single state machine, synchronous on-chain interaction | Monolithic — execution + consensus on L1, no L2 reliance [Source: @entities/tickers/sol.md, Section 1 Protocol Overview] |
+| **ADA** | PoS (Ouroboros family) [CONFIRMED] [Source: @entities/tickers/ada.md — "Ouroboros, the blockchain industry's first provably secure, peer-reviewed proof-of-stake consensus algorithm"] | EUTXO (Extended Unspent Transaction Output) accounting model, smart contracts on a Computation Layer separate from the Settlement Layer | Bifurcated — Cardano Settlement Layer (CSL) + Cardano Computation Layer (CCL) as distinct concerns [Source: @entities/tickers/ada.md, Section 1 Protocol Overview] |
+| **AVAX** | PoS (Snow consensus family) [CONFIRMED] [Source: @entities/tickers/avax.md — "anchored by the 'Snow' family of consensus algorithms"] | Multi-chain (P-chain platform / X-chain exchange / C-chain EVM-compatible) plus app-specific subnets [CONFIRMED] [Source: @entities/tickers/avax.md — "the architecture pioneers the concept of 'Avalanche L1s' (formerly designated as Subnets)"] | Heterogeneous L1 — single base protocol with subnets for app-specific chains [Source: @entities/tickers/avax.md, Section 1 Protocol Overview] |
 
 The architectural divide between **modular (ETH)** and **monolithic (SOL)** — abstracting execution to L2s vs. keeping it on L1 — is the central live debate in this category. ADA and AVAX represent intermediate positions (bifurcated layering and subnet-based heterogeneity respectively).
 
@@ -93,7 +93,7 @@ Independent of the four functional categories, several architectural dimensions 
 - **Programmability**: BTC ≈ DOGE (non-programmable / minimally programmable) < ETH ≈ SOL ≈ ADA ≈ AVAX (general-purpose smart contracts). LINK occupies a special position — it is *consumed by* programmable contracts on other chains rather than hosting them itself.
 - **Consensus**: PoW (BTC, DOGE) vs. PoS (ETH, ADA, SOL-via-hybrid, AVAX) vs. DON consensus (LINK).
 - **Throughput posture**: monolithic-high-throughput (SOL) vs. modular-base-layer-with-L2s (ETH) vs. bifurcated-by-purpose (ADA) vs. subnet-fragmented (AVAX) vs. predictable-low-throughput (BTC, DOGE).
-- **Regulatory exposure**: securities-classification ambiguity is highest for tokens with active staking yields and centralized issuance (parts of ADA, AVAX, SOL discourse); BTC has the most jurisprudential clarity (commodity in US per CFTC) `[NEEDS VERIFICATION 2026-04-25]`.
+- **Regulatory exposure**: securities-classification ambiguity is highest for tokens with active staking yields and centralized issuance (parts of ADA, AVAX, SOL discourse); BTC has the most jurisprudential clarity (commodity in US per CFTC) [TENTATIVE] — inherent forward-looking regulatory assessment; SEC/CFTC jurisdictional boundaries remain contested.
 
 ### Why this taxonomy matters for Cemini
 

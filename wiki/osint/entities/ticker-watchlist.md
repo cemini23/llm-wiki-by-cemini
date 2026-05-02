@@ -54,7 +54,7 @@ related:
   - sources/trading-4-5.md
 maturity: core
 created: 2026-04-23
-updated: 2026-04-27
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -95,6 +95,12 @@ Cross-cutting concept pages organizing the watchlist:
 - @concepts/crypto-asset-taxonomy.md — functional taxonomy of the 7 crypto-native assets (4 categories: store-of-value, programmable L1, memecoin/payments PoW, oracle middleware)
 - @concepts/oracle-networks.md — deeper treatment of the oracle/middleware category (LINK is the canonical implementation)
 - @concepts/equity-intraday-backfill-gap.md — equity intraday data-completeness caveat across all equity tickers (Polygon → yfinance EOD self-heal)
+- @sources/hedgge-fund-1-4-5.md — "Do Hedge Funds Prefer Safe Stocks?" (Cao, Green & Li, 2014): hedge fund stock-preference characteristics (safety > alpha) inform factor-based screening of the watchlist universe
+- @sources/stocks-3-4-5.md — Atmaz & Basak (2021, J. Finance): no-dividend stocks have lower returns but higher vol/betas; consumption-based equilibrium model for watchlist factor construction
+- @sources/stock-5-4-5.md — Bessembinder (2020) Part II: tech stocks overrepresented among worst decade-horizon performers; sector-composition awareness for watchlist screening
+- @sources/stock-6-4-5.md — Chok & Qian (2013, PLoS ONE): curvilinear comparable-stocks ↔ IPO entry rates; information-overload caution for watchlist factor screening
+- @sources/stocks-4-4-5.md — Racorean (2014, arXiv): stock-crossing permutation diagrams → positive Grassmannian. Exotic math; VERY LOW direct watchlist relevance
+- @sources/trading-2-4-5.md — Azzutti, Ringe & Stiehl (2022, EBI WP): AI-lifecycle regulatory framework; compliance relevance for any AI-driven watchlist screening sold to EU-regulated entities
 
 Reference-data sources for ticker-level enrichment:
 - @entities/data-sources/sec-edgar.md — primary-source fundamentals + filings for the 23 equity tickers (free, no auth, public domain); the canonical XBRL feed behind any company-facts call

@@ -22,9 +22,10 @@ related:
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
   - sources/agriciDaniel-claude-obsidian.md
   - sources/bytemover-agent-native-memory.md
+  - sources/alash3al-stash.md
 maturity: validated
 created: 2026-04-28
-updated: 2026-04-30
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -41,6 +42,7 @@ updated: 2026-04-30
 - @sources/agentmemory-rohitg00-cpr-impl.md — the cpr-pattern reference implementation whose pipeline shape (PostToolUse → SHA-256 dedup → privacy filter → LLM compress → BM25+Vector+Graph RRF) ports into Python on the librarian server alongside the wiki-compiler
 - @sources/llm-wiki.md — Karpathy gist; the foundational pattern source. The librarian server is the **physical realization** of the gist's "the wiki is the codebase" framing — same codebase the LLM maintains, just on its own dedicated host
 - @sources/bytemover-agent-native-memory.md — K13 Promotion #3; CLAUDE.md pattern source. ByteRover's Context Tree (Domain > Topic > Subtopic > Entry) is the organizational pattern behind the wiki's directory structure. The two-tier memory guardrail (filesystem for docs, DB for ticks) applies to the librarian's storage architecture.
+- @sources/alash3al-stash.md — Wave 5A Adopt → deployed 2026-05-02. Episodic memory layer on librarian (v0.2.9, MCP SSE :8080, HTTP :9090). Two-layer memory architecture: kb-server (static wiki RAG) + stash (dynamic episodic memory — episodes, facts, working context, contradictions, causal links, hypotheses, goals, failure records). Postgres 16 + pgvector, Ollama-backed embeddings (nomic-embed-text) + reasoning (qwen2.5:0.5b).
 
 ## Raw Concept
 
@@ -101,24 +103,28 @@ The crypto market 24/7 reframe surfaces a latent SLA the WTE evaluation page imp
 │    .llmwiki/            <- llm-wiki-compiler state + indices     │
 │    .ollama/             <- nomic-embed-text                      │
 │  Services (systemd):                                             │
-│    - ollama serve       <- port 11434 (embeddings only)          │
-│    - llmwiki serve      <- MCP endpoint (stdio or HTTP+SSE)      │
+│    - ollama serve       <- port 11434 (embeddings + reasoning)   │
+│    - kb-server serve    <- port 3838 (wiki FTS5 + MCP)           │
+│    - stash serve        <- port 8080 MCP / 9090 HTTP (memory)    │
 │    - sshd               <- for laptop sync + admin access        │
 │  Disk envelope: 80 GB NVMe                                       │
-│    - ~5 GB OS + Node + Ollama runtime                            │
+│    - ~8 GB OS + Node + Ollama + Postgres runtimes                │
 │    - ~1 GB wiki copy + .llmwiki/ indices                         │
-│    - 274 MB nomic-embed-text                                     │
-│    - ~72 GB headroom (room for future model collection or        │
-│      cpr-pattern Postgres data)                                  │
+│    - ~274 MB nomic-embed-text                                    │
+│    - ~500 MB qwen2.5:0.5b                                        │
+│    - ~200 MB stash Postgres 16                                   │
+│    - ~69 GB headroom                                             │
 │  RAM envelope: 4 GB                                              │
 │    - ~600 MB-1 GB OS + sshd + housekeeping                       │
 │    - ~500 MB Ollama + nomic-embed-text resident                  │
-│    - ~300-500 MB Node runtime + llm-wiki-compiler                │
-│    - ~2-2.6 GB headroom                                          │
-│  NOTE: 4 GB RAM is sized for the stated embeddings-only spec.    │
-│  Chat models on Ollama (e.g. qwen3:8b ~4.9 GB resident) require  │
-│  upgrading to CPX31 (8 GB) — Hetzner Cloud snapshot-based        │
-│  upgrade ~10 min downtime; defer until usage signals it          │
+│    - ~500 MB qwen2.5:0.5b (consolidation, loaded on-demand)      │
+│    - ~300-500 MB Node runtime + kb-server                        │
+│    - ~200 MB Postgres 16 + pgvector (stash DB)                   │
+│    - ~50 MB stash Go binary                                      │
+│    - ~1-1.75 GB headroom                                         │
+│  NOTE: 4 GB RAM is adequate for current services. Adding a       │
+│  chat model (e.g. qwen3:8b ~4.9 GB) requires CPX31 (8 GB) —     │
+│  Hetzner snapshot upgrade ~10 min downtime.                      │
 └──────────────────────────────────┬───────────────────────────────┘
                                    │  MCP over HTTP+SSE (intra-Hetzner)
                                    │  the production brain queries here
@@ -238,6 +244,30 @@ Run llm-wiki-compiler on the laptop with Path A (Claude Code zero-config Anthrop
 
 **Closure marker**: workspace mirrors `[ADOPTED]` once cemini-prod files `briefs/<date>_phase6c-completion-report.md` confirming Grafana dashboards live + alerts tested + Promtail forwarding logs.
 
+**Phase 7 — Stash episodic memory `[DONE 2026-05-02]`**
+
+Deployed alash3al/stash v0.2.9 on the librarian as the episodic memory layer — the Wave 5A Adopt verdict executed. Two-layer memory architecture now operational:
+
+```
+kb-server (:3838)          stash (:8080 MCP / :9090 HTTP)
+├─ static wiki pages       ├─ episodes (timestamped events)
+├─ source/entity/concept   ├─ facts (extracted assertions)
+├─ markdown → RAG          ├─ working context (1h TTL)
+└─ curated knowledge       ├─ contradictions (flagged conflicts)
+                           ├─ causal links (fact → fact)
+                           ├─ hypotheses (testable claims)
+                           ├─ goals (tracked objectives)
+                           └─ failure records (post-mortem log)
+```
+
+kb-server answers "what does the wiki say?" Stash answers "what happened, what did we learn, what are we tracking?"
+
+Deployment details: pre-built binary v0.2.9 (Go 1.25.5 required, not available on Ubuntu 22.04). Postgres 16 + pgvector 768-dim. Ollama `nomic-embed-text` for embeddings, `qwen2.5:0.5b` (~500 MB) for consolidation reasoning — zero API cost. Systemd-managed (`stash.service`). Consolidation every 5 minutes, 168h window, similarity threshold 0.85. Primary namespace: `/cemini`. Bootstrap memories stored: CeminiSuite platform architecture overview + key facts.
+
+RAM impact: Postgres ~200 MB + Stash Go binary ~50 MB + qwen2.5:0.5b ~500 MB = ~750 MB additional resident on the librarian's 4 GB envelope (~2.25 GB available after all services). Fits comfortably.
+
+Full deployment record: `briefs/2026-05-02_stash-deployment-record.md`.
+
 ### Sync model `[REVISED 2026-04-28 — raw-layer migration to librarian]`
 
 Wiki canonical = laptop (preserves librarian doctrine for the curated layer). **Raw layer canonical = librarian** (revised 2026-04-28 to free laptop disk and consolidate audit-grade backups; previously laptop-only). Sync is deliberate (rsync via SSH).
@@ -328,11 +358,11 @@ The librarian server's CPX21 baseline headroom (~2-2.6 GB free RAM, ~72 GB free 
 
 ### Status
 
-`[PLANNED 2026-04-28 — NOT BUILT]` This page documents the architectural commitment + plan; **none of the migration phases have started.** Phase 0 (WTE-1 smoke test) is the gating decision — runs on laptop with Claude Code zero-config; if smoke fails, the whole plan pauses while alternatives are evaluated.
+`[PHASES 0-6 SHIPPED; PHASE 7 (STASH) DEPLOYED 2026-05-02]` The librarian server is operational with kb-server (static wiki RAG) and stash (dynamic episodic memory). Phases 0-3.5 (provision, sync, kb-server, allowlist, cron) `[DONE 2026-04-29]`. Phase 4 (brain → librarian MCP) `[DONE 2026-04-30]`. Phase 5 (sync cron) `[DONE 2026-04-29]`. Phase 6 (monitoring + tuning) `[DONE 2026-04-29 workspace-side]`. Phase 7 (stash episodic memory) `[DONE 2026-05-02]`.
 
-Maturity progression target:
-- `validated` (today, planning-of-record)
-- → `core` (after Phase 1+ ships and the librarian server is operationally stable for ≥30 days)
+Maturity progression:
+- `validated` (2026-04-28, planning-of-record)
+- → `validated` (2026-05-02, phases 0-7 shipped; promoted-to-core gate is ≥30 days operational stability with all services including stash)
 
 Future updates to this page should stamp each phase's commit SHA + ship date as it lands.
 

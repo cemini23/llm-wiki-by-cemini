@@ -19,9 +19,11 @@ related:
   - sources/kalshi1-3-29.md
   - sources/ai-2-4-3.md
   - sources/safeharness-2604.13630.md
+  - sources/signa.md
+  - sources/4-11-crypto-re.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -36,6 +38,8 @@ updated: 2026-05-01
 - @concepts/market-microstructure.md — Cluster hub for market microstructure; ParlayMarket's RFQ trilemma is the authorization-relevant finding from this cluster.
 - @concepts/scatter-gather-topology.md — Execution topology; SAE sits at the terminal leaf; the authorization stack gates every scatter-gather fan-out.
 - @concepts/cryptographic-audit-trail.md — Every authorization decision across all four layers is immutably logged.
+- @sources/signa.md — Cemini competitive intelligence on Signa platform; Tiered RBAC tool permissioning (Pattern 2.5) and hmac-webhooks directly extend authorization stack patterns
+- @sources/4-11-crypto-re.md — Cemini competitive intelligence; A2Auth capability-bound certificates and SAE execution middleware directly extend authorization patterns
 
 ## Raw Concept
 

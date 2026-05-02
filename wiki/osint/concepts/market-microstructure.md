@@ -65,7 +65,7 @@ related:
   - concepts/agent-authorization-stack.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-01
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -102,10 +102,10 @@ updated: 2026-05-01
 - @sources/4-5-links.md — Market Microstructure source in the Cemini research corpus
 - @sources/agent-7-4-4.md — Market Microstructure source in the Cemini research corpus
 - @sources/ai-5-4-3.md — Market Microstructure source in the Cemini research corpus
-- @sources/ai-8-4-3.md — Market Microstructure source in the Cemini research corpus
+- @sources/ai-8-4-3.md — LEAPS (LLM-Empowered Adaptive Plugin for Taobao AI Search, Alibaba, 2026): non-invasive broaden-and-refine plugin architecture + three-stage RL training. Low direct trading relevance; transferable RL training methodology
 - @sources/ai-agent-skills-for-financial-applications.md — Market Microstructure source in the Cemini research corpus
 - @sources/ai-architect-s-cemini-suite-research.md — Market Microstructure source in the Cemini research corpus
-- @sources/ai-trading-ethics-4-5.md — Market Microstructure source in the Cemini research corpus
+- @sources/ai-trading-ethics-4-5.md — AI trading ethics white paper (~2021): 6 ethical dimensions (fairness, transparency, accountability, market integrity, privacy, human oversight); 70% of US equity volume is AI-driven; 75% of AI funds underperformed S&P 500 during March 2020. IP-sale transparency/explainability positioning
 - @sources/cemini-suites-technical-analysis.md — Market Microstructure source in the Cemini research corpus
 - @sources/crypto-13-4-11.md — Market Microstructure source in the Cemini research corpus
 - @sources/crypto-2-4-11.md — Market Microstructure source in the Cemini research corpus
@@ -114,7 +114,7 @@ updated: 2026-05-01
 - @sources/forex-research-3-18.md — Market Microstructure source in the Cemini research corpus
 - @sources/github-action-and-workflow-research.md — Market Microstructure source in the Cemini research corpus
 - @sources/greeks1-3-29.md — Market Microstructure source in the Cemini research corpus
-- @sources/insights-from-a-gemini.md — Market Microstructure source in the Cemini research corpus
+- @sources/insights-from-a-gemini.md — The Attrition Protocol comprehensive trading framework (Gemini Deep Research synthesis): 7 modules, ICT microstructure (FVG/OB/PO3), Zhawk RU system, 8-phase Master Cheatsheet. Direct Cemini position-sizing + MAPPO feature-vector relevance
 - @sources/kalshi1-3-29.md — Market Microstructure source in the Cemini research corpus
 - @concepts/parlay-market-making.md — K24 promotion: correlation-aware AMM for parlay joint-contract pricing (Ising model + shadow trades + composite-likelihood SGD)
 - @sources/market-microstructure-and-liquidity-analysis-of-qqq-etf-on-2024-08-01.md — Market Microstructure source in the Cemini research corpus
@@ -125,7 +125,7 @@ updated: 2026-05-01
 - @sources/scaling-roadmap-research.md — Market Microstructure source in the Cemini research corpus
 - @sources/sort-1-4-3.md — Market Microstructure source in the Cemini research corpus
 - @sources/sort-6-4-3.md — Market Microstructure source in the Cemini research corpus
-- @sources/trading-3-4-5.md — Market Microstructure source in the Cemini research corpus
+- @sources/trading-3-4-5.md — Ansari (2024, SSRN): 3-page essay — behavioral finance remains load-bearing in AI-dominated markets via human-AI feedback loops. LOW substance; thematic counterpoint to purely quantitative approaches
 - @concepts/agent-authorization-stack.md — K19+K22+K23+K24 cross-cluster synthesis; ParlayMarket's RFQ trilemma as a Layer-4 authorization constraint.
 
 ## Raw Concept

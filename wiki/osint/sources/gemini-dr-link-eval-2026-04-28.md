@@ -17,6 +17,7 @@ related:
   - sources/obsidian-second-brain-eugeniughelbur.md
   - sources/playwright-mcp-microsoft.md
   - sources/bare-bones-memory-southpolesteve.md
+  - sources/atomicmemory-llm-wiki-compiler.md
   - sources/omc-talent-container-paper.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
   - sources/4-5-links-2.md
@@ -28,7 +29,7 @@ related:
 maturity: validated
 read_status: deep-read
 created: 2026-04-28
-updated: 2026-04-30
+updated: 2026-05-02
 clusters: [llm-agents, librarian-tooling, decision-record]
 ---
 
@@ -49,7 +50,8 @@ clusters: [llm-agents, librarian-tooling, decision-record]
 - @sources/playwright-mcp-microsoft.md — Defer-Cemini / Adopt-Workflow standalone source page
 - @sources/bare-bones-memory-southpolesteve.md — Adopt-for-Workflow standalone source page (gist, license unfound but methodology-only)
 - @sources/omc-talent-container-paper.md — sibling source page; OneManCompany paper from the same indexing drop (different upstream — arXiv paper, not a Gemini DR finding)
-- @sources/4-5-links-2.md — K9 cross-wave duplicate: `mattpocock/skills` is independently evaluated in both this page (Wave 2 Steal-from) and K9 (full 3-document evaluation, Documents 7-9). One of only two items appearing in ≥2 link-aggregate evaluations.
+- @sources/atomicmemory-llm-wiki-compiler.md — dedicated source page for the llm-wiki-compiler repo, also evaluated in this report (Steal-from) and independently in 3 Gemini DR wave docs (Wave 4a, 4b, 5b). Most cross-evaluated item in the corpus (4 docs).
+- @sources/4-5-links-2.md — K9 cross-wave duplicate: `mattpocock/skills` is independently evaluated in both this page (Wave 2 Steal-from) and K9 (full 3-document evaluation, Documents 7-9). One of two items appearing in ≥2 link-aggregate evaluations.
 
 ## Raw Concept
 

@@ -23,6 +23,7 @@ related:
   - sources/3-29-15.md
   - sources/4-4-link-re-2.md
   - sources/4-6-links.md
+  - sources/4-11-crypto-re.md
   - sources/3-29-19.md
   - sources/3-29-research-2.md
   - sources/4-14-pvg4.md
@@ -105,9 +106,11 @@ related:
   - sources/3-29-15.md
   - concepts/reasoning-safety-monitor.md
   - concepts/agent-authorization-stack.md
+  - concepts/conductor-orchestrator.md
+  - sources/toolorchestra-2511.21689.md
 maturity: validated
 created: 2026-04-26
-updated: 2026-05-01
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -119,9 +122,10 @@ updated: 2026-05-01
 - @sources/3-19-automated-trading-strategy-discovery-pipeline-research.md — LLM agent-systems source in the Cemini research corpus
 - @sources/3-26-d.md — LLM agent-systems source in the Cemini research corpus
 - @sources/3-27-links-1.md — LLM agent-systems source in the Cemini research corpus
-- @sources/3-27-links-re-2.md — LLM agent-systems source in the Cemini research corpus
+- @sources/3-27-links-re-2.md — Cemini architectural extraction audit; 20-source code-pattern audit covering compound engineering, agentOS evaluation, safetensors/pickle ban, stateless FastAPI, Byzantine consensus patterns
 - @sources/3-28-links-2.md — LLM agent-systems source in the Cemini research corpus
 - @sources/3-29-15.md — LLM agent-systems source in the Cemini research corpus
+- @sources/4-11-crypto-re.md — Cemini competitive intelligence covering 20+ agent orchestration platforms; SAE middleware, CPO-FOAM PID controller, MCP server analysis, A2Auth certificates
 - @sources/3-29-19.md — LLM agent-systems source in the Cemini research corpus
 - @sources/3-29-research-2.md — LLM agent-systems source in the Cemini research corpus
 - @sources/4-14-pvg4.md — LLM agent-systems source in the Cemini research corpus
@@ -136,7 +140,7 @@ updated: 2026-05-01
 - @sources/ai-4-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/ai-7-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/ai-7-4-6.md — LLM agent-systems source in the Cemini research corpus
-- @sources/ai-8-4-3.md — LLM agent-systems source in the Cemini research corpus
+- @sources/ai-8-4-3.md — LEAPS (LLM-Empowered Adaptive Plugin for Taobao AI Search, Alibaba, 2026): non-invasive broaden-and-refine plugin architecture + three-stage RL training (inverse augmentation → supervised grounding → diversity RL). Low direct trading relevance; transferable RL training + plugin patterns
 - @sources/ai-9-4-3.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26 — was orphan despite cluster: llm-agents)
 - @sources/ai-9-4-6.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26)
 - @sources/ai-agent-skills-for-financial-applications.md — LLM agent-systems source in the Cemini research corpus
@@ -148,6 +152,8 @@ updated: 2026-05-01
 - @concepts/openclaw-security-taxonomy.md — K20 promotion 2026-05-01; OpenClaw security taxonomy as reusable architectural primitive — two-axis taxonomy + Context Manipulation kill chain + three structural conditions. Complements SAE: K19 = defense, K20 = threat model
 - @concepts/stockbench.md — K21 promotion 2026-05-01; STOCKBENCH standardized trading agent benchmark — contamination-free, multi-month LLM agent evaluation with composite z-score. Primary trading-agent benchmark entry in this hub
 - @concepts/reasoning-safety-monitor.md — K22 promotion 2026-05-01; Reasoning Safety Monitor as reusable architectural primitive — parallel CoT inspection with nine-category taxonomy + interrupt signal. Closes K20 §6.6's context-window provenance gap; completes K19+K20+K22 execution-security stack
+- @concepts/conductor-orchestrator.md — K25 promotion 2026-05-02; Conductor lightweight multi-model orchestrator — Token-Prior (API-only) deployment path for DeepSeek-based agents. Synthesis of 7 ICLR/NeurIPS/ACL papers.
+- @sources/toolorchestra-2511.21689.md — K26 promotion 2026-05-02; ToolOrchestra 8B orchestrator beats GPT-5 on HLE at 2.5× efficiency; validates the conductor-orchestrator architecture with a working reference implementation.
 - @sources/cyrpto-12-4-11.md — LLM agent-systems source in the Cemini research corpus
 - @sources/esglens.md — LLM agent-systems source in the Cemini research corpus (O 2026-04-27 — RAG-based ESG report analysis)
 - @sources/gdelt-2-3-29.md — LLM agent-systems source in the Cemini research corpus

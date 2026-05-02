@@ -16,6 +16,7 @@ related:
   - sources/3-29-15.md
   - concepts/reasoning-safety-monitor.md
   - concepts/agent-authorization-stack.md
+  - sources/safeharness-2604.13630.md
 maturity: validated
 created: 2026-05-01
 updated: 2026-05-01
@@ -35,6 +36,7 @@ updated: 2026-05-01
 - @sources/3-29-15.md — K22 deep-read 2026-05-01; reasoning safety monitor provides the detection layer that catches Context Manipulation as it unfolds in the CoT — closes K20 §6.6's context-window provenance gap
 - @concepts/reasoning-safety-monitor.md — K22 promotion; reusable architectural primitive for parallel CoT inspection — nine-category taxonomy + interrupt signal before corrupted reasoning reaches execution
 - @concepts/agent-authorization-stack.md — K19+K22+K23+K24 cross-cluster synthesis; threat model that informs all four authorization layers.
+- @sources/safeharness-2604.13630.md — K25 SafeHarness lifecycle-integrated harness security; defends against the threat surface K20 catalogs at the harness-internal level.
 
 ## Raw Concept
 

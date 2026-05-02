@@ -13,9 +13,9 @@ related:
   - sources/masrouter-acl-2025.md
   - sources/gigpo-neurips-2025.md
   - sources/meta-router-2509.25535.md
-maturity: draft
+maturity: validated
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-02
 ---
 
 ## Relations

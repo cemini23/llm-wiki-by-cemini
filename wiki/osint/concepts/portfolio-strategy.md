@@ -38,11 +38,13 @@ related:
   - sources/sortino-3-4-3.md
   - sources/sortino-4-4-3.md
   - sources/ssrn-3247865.md
+  - sources/hedgge-fund-1-4-5.md
   - sources/stocks-2-4-5.md
+  - sources/stocks-3-4-5.md
   - sources/toplogical-risk-parity.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-02
 ---
 
 ## Relations
@@ -80,8 +82,10 @@ updated: 2026-04-27
 - @sources/sort-7-4-3.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/sortino-3-4-3.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/sortino-4-4-3.md — Portfolio Strategy source in the Cemini research corpus
-- @sources/ssrn-3247865.md — Portfolio Strategy source in the Cemini research corpus
+- @sources/ssrn-3247865.md — 151 Trading Strategies compendium (Kakushadze & Serur, 2018); 550+ formulas across all asset classes with backtesting source code
+- @sources/hedgge-fund-1-4-5.md — "Do Hedge Funds Prefer Safe Stocks?" (Cao, Green & Li, 2014): hedge funds prefer safe/low-volatility stocks; safety preference strongest during recessions. Informs defensive strategy weighting + regime-conditional allocation
 - @sources/stocks-2-4-5.md — Portfolio Strategy source in the Cemini research corpus
+- @sources/stocks-3-4-5.md — Atmaz & Basak (2021, J. Finance): no-dividend stocks have lower returns but higher vol/betas. Informs factor-construction + no-dividend-premium awareness in portfolio allocation
 - @sources/toplogical-risk-parity.md — Portfolio Strategy source in the Cemini research corpus
 
 ## Raw Concept

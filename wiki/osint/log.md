@@ -1,5 +1,80 @@
 # Wiki Log
 
+## [2026-05-02] Stash episodic memory deployed on librarian — Phase 7 complete
+
+alash3al/stash v0.2.9 deployed on `cemini-librarian` (5.161.179.207). Postgres 16 + pgvector (768-dim, nomic-embed-text). Embedding model via Ollama (`localhost:11434`); reasoning model `qwen2.5:0.5b`. MCP SSE endpoint on port 8080, HTTP on port 9090. Systemd-managed (`stash.service`), consolidation every 5 minutes. Primary namespace: `/cemini`.
+
+Two-layer memory architecture now operational:
+- **kb-server** (:3838) — static wiki RAG
+- **stash** (:8080 MCP / :9090 HTTP) — dynamic episodic memory
+
+### Wiki pages updated
+- `sources/alash3al-stash.md`: `read_status: read → deployed`, deployment section added to Narrative, adoption assessment updated with deployment details, `updated: 2026-05-02`
+- `concepts/librarian-server-architecture.md`: stash added as deployed memory layer alongside kb-server
+- `index.md`: alash3al-stash entry updated with deployed status
+- `ROADMAP.md`: stash moved from "Eventually" to "Done"
+- `hot.md`: refreshed with stash deployed, Phase 7 complete
+
+### Server
+- Brief SCP'd to `cemini-prod:/opt/cemini/briefs/2026-05-02_stash-deployment-record.md`
+
+## [2026-05-02] K25 adoption briefs shipped — 3 briefs / 24 patterns to server
+
+3 adoption briefs written from K25 Tier 1 deep-reads and `scp`'d to `cemini-prod:/opt/cemini/briefs/`:
+- `2026-05-02_signa-10-patterns-cemini-adoption.md` — 5 architecture + 5 algorithm patterns (Action Card, MCP Orchestration Engine, Cryptographic Provenance, Redis Pub/Sub, Tiered RBAC, Vectorized Monte Carlo PoR, TimescaleDB Trend Composite, Wyckoff Classification, ToT Orchestration, UCB MAB)
+- `2026-05-02_3-27-devsecops-hardening-adoption.md` — 8 DevSecOps ADOPT verdicts (safetensors ban, parameterized pgvector queries, Git worktree isolation, stateless FastAPI + HITL, budget gates, Redis lifecycle hooks, 4-phase pipelines, BFT consensus)
+- `2026-05-02_4-11-crypto-re-agent-infra-adoptions.md` — 6 agent-infra adoptions (CPO-FOAM PID, MentisDB ledger, Nomad air-gap, A2Auth certificates, MemPalace diaries, Polymarket tooling)
+
+Server verified: all 3 files present at `/opt/cemini/briefs/`.
+
+## [2026-05-02] K25 Tier 3 Type-A deep-reads — 7 cited-unread stubs promoted — TYPE-A COUNT = 0
+
+**7 Type-A remaining → 0**. All 7 Tier 3 obscure academic papers deep-read and promoted. Type-A reduction campaign COMPLETE.
+
+Tier 3 sources (ranged from GOOD to VERY LOW relevance):
+- `sources/stocks-3-4-5.md` (promoted from unread-stub) — Atmaz & Basak (2021, J. Finance): no-dividend stocks have lower returns but higher vol/betas; consumption-based equilibrium model. GOOD relevance — direct factor-construction input.
+- `sources/stock-5-4-5.md` (promoted from unread-stub) — Bessembinder (2020) Part II: tech stocks overrepresented among worst decade-horizon performers; Healthcare/Pharma/Energy among best. MEDIUM relevance — sector-screening awareness.
+- `sources/stock-6-4-5.md` (promoted from unread-stub) — Chok & Qian (2013, PLoS ONE): curvilinear comparable-stocks ↔ IPO entry rates; information overload. LOW relevance.
+- `sources/ai-trading-ethics-4-5.md` (promoted from unread-stub) — AI trading ethics white paper (~2021): 6 ethical dimensions; 75% of AI funds underperformed S&P 500 in March 2020. MEDIUM relevance — IP-sale compliance positioning.
+- `sources/trading-3-4-5.md` (promoted from unread-stub) — Ansari (2024, SSRN): 3-page essay — behavioral finance remains load-bearing in AI-dominated markets. LOW substance.
+- `sources/stocks-4-4-5.md` (promoted from unread-stub) — Racorean (2014, arXiv): stock-crossing permutation diagrams → positive Grassmannian. VERY LOW relevance (exotic math).
+- `sources/trading-2-4-5.md` (promoted from unread-stub) — Azzutti, Ringe & Stiehl (2022, EBI WP): AI-lifecycle regulatory framework (design/development/deployment/monitoring). GOOD relevance — IP-sale compliance for EU-regulated buyers.
+
+**Backlinks added**: 5 pages updated (quant-finance: 5 Relations upgraded; market-microstructure: 2 upgraded; ticker-watchlist: 5 added; portfolio-strategy: 1 added; kalshi: 2 added).
+
+**Index.md**: 7 entries upgraded to deep-read titles; 4 moved from uncategorized→quant-finance; 4 ⚠ removed; section counts updated (quant-finance 13→17, uncategorized 22→18, ⚠ 22→18).
+
+**Type-A gap-reduction campaign**: K25 started with 14 Type-A. After Tier 1 (4), Tier 2 (3), Tier 3 (7): **0 remaining**.
+
+## [2026-05-02] K25 Tier 2 Type-A deep-reads — 3 cited-unread stubs promoted
+
+**10 Type-A remaining → 7**. 3 Tier 2 deep-reads completed (1 Gemini Deep Research synthesis + 1 arXiv e-commerce paper + 1 SSRN academic finance paper):
+
+- `sources/insights-from-a-gemini.md` (promoted from unread-stub) — The Attrition Protocol comprehensive trading framework: 7 modules (Philosophy, Macro, ICT Microstructure, Tactical Execution, Precision Tools, Risk Management, Psychology), 8-phase Master Cheatsheet, ICT FVG/OB/PO3, Zhawk RU sizing. Direct Cemini position-sizing + MAPPO state-vector relevance.
+- `sources/ai-8-4-3.md` (promoted from unread-stub) — LEAPS (LLM-Empowered Adaptive Plugin for Taobao AI Search, Alibaba, 2026): non-invasive broaden-and-refine plugin architecture + three-stage RL training. Title-mismatch flagged (NOT LEAPS options). Low direct trading relevance; transferable RL training + plugin patterns.
+- `sources/hedgge-fund-1-4-5.md` (promoted from unread-stub) — "Do Hedge Funds Prefer Safe Stocks?" (Cao, Green & Li, 2014): hedge funds prefer safe/low-volatility stocks over high-return-predicting characteristics; 90 firm characteristics, mean adj R²=80.4%. Safety preference strongest during recessions. Informs Cemini regime-conditional position sizing + factor selection.
+
+**Backlinks added**: 7 pages updated (market-microstructure, quant-finance, llm-agent-systems, portfolio-strategy, kalshi, ticker-watchlist, signa).
+
+**Index.md**: 3 entries upgraded, hedgge-fund-1-4-5 moved uncategorized→quant-finance, 1 ⚠ flag removed. Section counts updated.
+
+**Remaining**: 7 Type-A stubs (Tier 3: 7 obscure academic papers — user decision pending on whether to pursue).
+
+## [2026-05-02] K25 Tier 1 Type-A deep-reads — 4 cited-unread stubs promoted
+
+**14 Type-A stubs scoped** → 4 Tier 1 deep-reads completed (3 Cemini-internal competitive intelligence docx + 1 SSRN reference monograph):
+
+- `sources/signa.md` (promoted from unread-stub) — Signa/MCP middleware/Monte Carlo: 5 architecture patterns + 5 algorithms mapped to Cemini stack for April 14-17 RL retrain window. 24 refs.
+- `sources/4-11-crypto-re.md` (promoted from unread-stub) — 23 platforms/frameworks analyzed against Cemini: CPO-FOAM PID, SAE middleware, A2Auth, MemPalace, MentisDB, Project Nomad, 20+ more. 24 refs.
+- `sources/3-27-links-re-2.md` (promoted from unread-stub) — 20-source extraction audit: 8 high-impact ADOPT verdicts (compound-engineering, stateless FastAPI, mpp.directory budget gates, Redis event hooks, safetensors ban, Spring AI parameterized queries, 4-phase pipelines, BFT consensus). 24 refs.
+- `sources/ssrn-3247865.md` (promoted from unread-stub) — 151 Trading Strategies (Kakushadze & Serur, 2018): 550+ formulas, 150+ strategies, backtesting source code. SSRN #8 by downloads.
+
+**Backlinks added**: 5 concept pages updated (quant-finance, llm-agent-systems, portfolio-strategy, rl-marl-research, agent-authorization-stack).
+
+**Index.md**: 4 entries updated, 1 ⚠ flag removed.
+
+**Remaining**: 10 Type-A stubs (Tier 2: insights-from-a-gemini, ai-8-4-3 LEAPS, hedgge-fund-1-4-5; Tier 3: 7 obscure academic papers).
+
 ## [2026-05-01] K25 Conductor sweep — targeted research: 7 papers → orchestration synthesis
 
 Targeted sweep on GRPO orchestrators + multi-model routing architectures (5 queries, 25 candidates). Three clusters converged: GRPO optimization, model routing, orchestration frameworks. 7 papers deep-read, 1 synthesis concept page created.
@@ -3336,3 +3411,51 @@ Promoted from `read-skim` → `deep-read`. Full crawl of README.md, WIKI.md (13-
 
 ### Pages updated
 - `sources/agriciDaniel-claude-obsidian.md` — full rewrite: added file-structure map, /autoresearch loop parameter table with Cemini Tier-2.5 mapping, hooks.json lifecycle documentation, hot.md format specification, WIKI.md vs CLAUDE.md structural comparison table, wiki-lint gap analysis (8 checks, 3 missing from Cemini), cross-project referencing pattern analysis, extraction priority-ordered implementation plan
+
+## [2026-05-02] Type-E thin-page expansions — goldstein-scale, cameo-codes, carry-trade
+
+Three thin concept pages (all under 100 words — gap detector Type-E) expanded to validated maturity with Exa-sourced content.
+
+### goldstein-scale.md (65 → ~350 words)
+- Added: Scale anchors table (+10 formal alliance → -10 military assault), origin (Goldstein 1992, KEDS project), Goldstein severity distinction (abs value, 25% weight in Event Significance), CAMEO+ scope (null for non-political domains), Cemini usage details (7/30/90-day rolling windows, BatchCancelOrders trigger at -5 threshold).
+- Sources: GDELT Cloud docs (docs.gdeltcloud.com, docs.gdeltcloud.com/api-reference)
+- **Bidirectional**: added cameo-codes backlink (both sides)
+
+### cameo-codes.md (68 → ~450 words)
+- Added: Three-level hierarchy (Root → Base → Full), QuadClass top-level (Verbal/Material Cooperation/Conflict), 20 root category table (01–20), CAMEO+ 9-domain expansion with latent attribute scores (magnitude, systemic importance, propagation potential, market sensitivity), GDELT 2.0 schema reference.
+- Sources: CAMEO Manual 1.1b3 (PDF), GDELT 2.0 Events Column Labels (GitHub), GDELT Cloud MCP code reference
+- **Bidirectional**: added goldstein-scale backlink (both sides)
+
+### carry-trade.md (74 → ~400 words)
+- Added: Forward premium puzzle (empirical basis for carry profitability), "up stairs / down elevator" risk dynamics (5-step unwind cascade), negative skew characterization (selling crash insurance), historical unwinds (2008 GFC yen surge, 2024 BOJ rate hike unwind), risk management techniques (carry-to-vol ratio, basket funding, VIX monitoring), Cemini integration (OANDA execution, Kelly/CVaR limits).
+- Sources: FXEmpire, Investopedia, FinanceAndMarkets
+- **Bidirectional**: added macro-weather-regime backlink
+
+### Index + frontmatter
+- All three: `maturity: draft → validated`, `updated: 2026-04-23 → 2026-05-02`, `tags` cleaned (removed "stub"), `keywords` populated
+- `wiki/index.md`: three entries updated — stub markers removed, descriptions expanded
+
+### Gap detector: 3 Type-E → 0 after this batch
+
+## [2026-05-02] Cross-doc duplicate detection — item #2 of "1-3-2" plan
+
+Ran `scripts/cross_doc_dedup.py` across 25 link-aggregate source pages (link-eval docs, Gemini DR wave summaries, date-prefixed research docs). Three detection passes: GitHub repos in body, arXiv/OpenReview IDs, H3 content-heading fuzzy matches.
+
+### Findings
+
+**4 duplicate evaluations** (same repo fully evaluated in ≥2 docs):
+- `atomicmemory/llm-wiki-compiler` — **4 docs** (link-eval + Wave 4a + 4b + 5b). Most cross-evaluated item in the corpus.
+- `mattpocock/skills` — 3 docs (4-3-link-research + 4-5-links-2 + gemini-dr-link-eval)
+- `HKUDS/Vibe-Trading` — 2 docs (link-eval + Wave 4a)
+- `EliaAlberti/cpr-compress-preserve-resume` — 2 docs (4-5-links-2 + 4-5-links, same wave)
+
+**8 cross-references** (repo mentioned in multiple docs but fully evaluated in only one). Notable: `nvk/llm-wiki` (4 docs), `alash3al/stash` (2 docs).
+
+**0 arXiv/OpenReview ID duplicates** — no paper-level duplication found.
+
+### Backlinks fixed
+- `gemini-dr-link-eval-2026-04-28.md` ↔ `atomicmemory-llm-wiki-compiler.md`: bidirectional backlinks added (both were missing)
+- Both pages: `updated: 2026-05-02`
+
+### Script expanded
+- `LINK_PATTERNS` broadened from `["*link*.md", "*-re-*.md", "*-links*.md"]` to also include `gemini-dr-wave*.md` and `wave-*-link-eval*.md` (21 → 25 files scanned)
