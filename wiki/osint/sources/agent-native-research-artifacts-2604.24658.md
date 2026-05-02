@@ -8,6 +8,7 @@ related:
   - concepts/agent-memory-critique.md
   - concepts/agent-native-research-artifacts.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-02
 updated: 2026-05-02
 ---
