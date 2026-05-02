@@ -1,5 +1,24 @@
 # Wiki Log
 
+## [2026-05-02] ingest | The Last Human-Written Paper — Agent-Native Research Artifacts (arXiv:2604.24658)
+
+Liu, Pei, Huang et al. (Orchestra Research + 25 institutions). 46p deep-read. ARA protocol: four-layer agent-executable research package replacing narrative papers. Two structural taxes quantified (Storytelling: 90.2% agent compute on dead ends; Engineering: 45.4% of requirements fully specified). Live Research Manager + ARA Compiler + three-level Seal review. QA 72.4%→93.7%, reproduction 57.4%→64.4%.
+
+### Sources created
+- `sources/agent-native-research-artifacts-2604.24658.md`
+
+### Concept pages created
+- `concepts/agent-native-research-artifacts.md` — ARA protocol concept
+
+### Pages updated
+- `concepts/coding-agents-alphazero.md` — +ARA connection: output format for coding-agent-produced research
+- `concepts/agent-memory-critique.md` — +ARA connection: Live Research Manager + exploration graph as partial memory solution
+- `concepts/policy-distillation.md` — +ARA connection: exploration graph as preference-signal training data
+- `wiki/index.md` — 2 new entries (1 source + 1 concept)
+
+### File moved to librarian
+- `The Last Human-Written Paper- Agent-Native Research Artifacts.pdf` → `cemini-librarian:/opt/cemini-bulk/research/`
+
 ## [2026-05-02] Stash episodic memory deployed on librarian — Phase 7 complete
 
 alash3al/stash v0.2.9 deployed on `cemini-librarian` (5.161.179.207). Postgres 16 + pgvector (768-dim, nomic-embed-text). Embedding model via Ollama (`localhost:11434`); reasoning model `qwen2.5:0.5b`. MCP SSE endpoint on port 8080, HTTP on port 9090. Systemd-managed (`stash.service`), consolidation every 5 minutes. Primary namespace: `/cemini`.
@@ -3459,3 +3478,30 @@ Ran `scripts/cross_doc_dedup.py` across 25 link-aggregate source pages (link-eva
 
 ### Script expanded
 - `LINK_PATTERNS` broadened from `["*link*.md", "*-re-*.md", "*-links*.md"]` to also include `gemini-dr-wave*.md` and `wave-*-link-eval*.md` (21 → 25 files scanned)
+
+## [2026-05-02] K27 batch ingest — 9 sources (7 PDF + 2 docx)
+
+Full ingest of all 9 inbox items. 5 Conductor-relevant papers + 1 quant reference + 1 coding-agents paper + 2 Cemini-internal tool/methodology evaluations.
+
+### Sources created
+- `sources/cot-vs-latent-thought-2509.25239.md` — Formal computational-complexity comparison: latent thought (TCk, parallel) vs CoT (approximate counting, sequential). Directly informs Conductor chat-vs-reasoner routing.
+- `sources/agents-of-chaos-2602.20021.md` — Red-teaming autonomous agents: 16 case studies, 5 failure modes. Validates Conductor's LLM-as-judge confidence scoring.
+- `sources/co-evolving-policy-distillation-2604.27083.md` — Unified RLVR/OPD framework for multi-expert consolidation. Validates Conductor Path B → A sequence.
+- `sources/contextual-agentic-memory-critique-2604.27707.md` — Vector stores/RAG are "lookup" not memory. Critiques kb-server/Stash architecture assumptions.
+- `sources/frontier-coding-agents-alphazero-2604.25067.md` — Coding agents implement AlphaZero pipeline at solver-parity. Validates agent-as-ML-engineer for Path A.
+- `sources/mit-quant-bible.md` — MIT Sloan quant finance reference. Canonical-formulation anchor for wiki concept pages.
+- `sources/thinking-without-words-abstract-cot-2604.22709.md` — IBM Abstract CoT: compressed reasoning via latent-space tokens. Middle ground for Conductor cascade.
+- `sources/links-5-2-tool-eval.md` — 19-tool evaluation: 5 Adopt, 5 Reject, 1 Defer, 1 Steal-from, 3 Reference-only.
+- `sources/more-links-5-2-arch-eval.md` — 19-system architecture evaluation. Critical license findings (AGPL Docker-isolation defeat, GPL LLM-agent derivative-work risk).
+
+### Concept stubs created
+- `concepts/latent-thought.md` — Computational tradeoffs between latent reasoning and CoT
+- `concepts/policy-distillation.md` — Multi-expert consolidation via RLVR/OPD/token-priors
+- `concepts/agent-memory-critique.md` — Lookup vs true memory for agent systems
+- `concepts/coding-agents-alphazero.md` — Coding agents as ML engineers
+
+### Pages updated
+- `wiki/index.md` — 13 new entries (9 sources + 4 concepts), total count 287→296
+
+### Files moved to librarian
+- 9 files moved to `cemini-librarian:/opt/cemini-bulk/research/`, laptop copies removed
