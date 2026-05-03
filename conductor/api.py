@@ -18,7 +18,9 @@ class DeepSeekClient:
     """
 
     def __init__(self, config: dict[str, Any]) -> None:
-        load_dotenv("/opt/cemini/.env")
+        # Try local .env first (gitignored), fall back to server path
+        load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env"))
+        load_dotenv("/opt/cemini/.env", override=False)
         api_cfg = config["api"]
         self._base_url = api_cfg["base_url"]
         self._timeout = api_cfg.get("timeout_seconds", 30)
