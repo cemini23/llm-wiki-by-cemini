@@ -1,0 +1,189 @@
+# Cemini Conductor — configuration
+# Pattern: tier25_config.yaml (YAML-driven, single source of truth)
+# Token priors are populated by: python3 -m conductor.cli --build-priors
+
+# ---------------------------------------------------------------------------
+# API connection
+# ---------------------------------------------------------------------------
+api:
+  base_url: "https://api.deepseek.com"
+  default_model: "deepseek-chat"
+  reasoner_model: "deepseek-reasoner"
+  timeout_seconds: 30
+  max_retries: 3
+
+# ---------------------------------------------------------------------------
+# Server infrastructure endpoints
+# ---------------------------------------------------------------------------
+infrastructure:
+  kb_server:
+    url: "http://10.0.0.2:3838"
+    # api_key read from LIBRARIAN_API_KEY env var (set in /opt/cemini/.env)
+  stash:
+    mcp_url: "http://localhost:8080/sse"
+    http_url: "http://localhost:9090"
+  ollama:
+    url: "http://127.0.0.1:11434"
+
+# ---------------------------------------------------------------------------
+# Stage 1 — Query taxonomy (10 classes + fallback)
+# ---------------------------------------------------------------------------
+taxonomy:
+  classes:
+    - id: ticker_lookup
+      description: "Basic entity/symbol lookup — ticker, exchange, sector, company info"
+      examples:
+        - "What exchange does SPY trade on?"
+        - "What sector is JPM in?"
+        - "Find the ticker for Apple"
+    - id: options_analysis
+      description: "Options pricing, greeks, strategies, IV, volatility surface"
+      examples:
+        - "Calculate NVDA 30-day IV rank"
+        - "What is the put/call ratio for SPY?"
+        - "Compare straddle vs strangle for earnings"
+    - id: sentiment_analysis
+      description: "Market sentiment, news analysis, social signals, FOMC minutes"
+      examples:
+        - "What's the current sentiment on TSLA?"
+        - "Summarize this week's FOMC minutes sentiment"
+    - id: market_microstructure
+      description: "Order flow, liquidity, HFT, execution quality, market mechanics"
+      examples:
+        - "Explain payment for order flow"
+        - "How does Reg NMS affect execution quality?"
+    - id: macro_analysis
+      description: "Economic indicators, regime analysis, cross-asset, central bank policy"
+      examples:
+        - "How does CPI affect bond yields?"
+        - "Analyze current macro regime"
+    - id: quantitative_methods
+      description: "Math/statistical methods, model evaluation, formula derivation"
+      examples:
+        - "Compare GARCH vs EWMA for volatility forecasting"
+        - "What is the Kelly criterion?"
+    - id: risk_management
+      description: "VaR, portfolio risk, hedging, drawdown analysis, position sizing"
+      examples:
+        - "Calculate portfolio VaR at 95% confidence"
+        - "How do I hedge delta exposure?"
+    - id: research_synthesis
+      description: "Multi-source research synthesis, paper analysis, literature review"
+      examples:
+        - "Summarize the latest papers on GRPO optimization"
+        - "What does the literature say about market making strategies?"
+    - id: code_generation
+      description: "Trading algorithm code, backtest implementation, data pipeline scripts"
+      examples:
+        - "Write a Python function for Black-Scholes"
+        - "Generate a backtest for mean reversion strategy"
+    - id: general_question
+      description: "Catch-all for queries that don't fit other classes"
+      examples:
+        - "What time is it?"
+        - "How does the wiki work?"
+      is_fallback: true
+
+# ---------------------------------------------------------------------------
+# Stage 2 — Model pool (taxonomy class → ordered model list, cheapest first)
+# ---------------------------------------------------------------------------
+model_pool:
+  ticker_lookup:
+    models: [deepseek-chat]
+    default: deepseek-chat
+  options_analysis:
+    models: [deepseek-chat, deepseek-reasoner]
+    default: deepseek-reasoner
+  sentiment_analysis:
+    models: [deepseek-chat]
+    default: deepseek-chat
+  market_microstructure:
+    models: [deepseek-chat, deepseek-reasoner]
+    default: deepseek-reasoner
+  macro_analysis:
+    models: [deepseek-chat, deepseek-reasoner]
+    default: deepseek-chat
+  quantitative_methods:
+    models: [deepseek-reasoner]
+    default: deepseek-reasoner
+  risk_management:
+    models: [deepseek-chat, deepseek-reasoner]
+    default: deepseek-chat
+  research_synthesis:
+    models: [deepseek-chat, deepseek-reasoner]
+    default: deepseek-reasoner
+  code_generation:
+    models: [deepseek-chat]
+    default: deepseek-chat
+  general_question:
+    models: [deepseek-chat]
+    default: deepseek-chat
+
+# ---------------------------------------------------------------------------
+# Stage 3 — Cascade routing
+# ---------------------------------------------------------------------------
+cascade:
+  confidence_threshold: 0.7
+  max_escalations: 2
+  judge:
+    taxonomy_judge_weight: 0.6
+    general_judge_weight: 0.4
+
+# ---------------------------------------------------------------------------
+# Stage 4 — Tool orchestration
+# ---------------------------------------------------------------------------
+tool_orchestration:
+  ticker_lookup:
+    tools: [kb_search]
+  options_analysis:
+    tools: [kb_search, stash_recall]
+  sentiment_analysis:
+    tools: [kb_search]
+  market_microstructure:
+    tools: [kb_search, stash_recall]
+  macro_analysis:
+    tools: [kb_search]
+  quantitative_methods:
+    tools: []
+  risk_management:
+    tools: [kb_search]
+  research_synthesis:
+    tools: [kb_search, stash_recall]
+  code_generation:
+    tools: []
+  general_question:
+    tools: [kb_search]
+
+# ---------------------------------------------------------------------------
+# Token priors — Path B optimization (populated by calibration.py --build-priors)
+# ---------------------------------------------------------------------------
+token_priors:
+  taxonomy: "[ROUTING PRIOR — built from 40 calibration + baseline decisions] Quantitative methods queries (GARCH, Kelly, VaR formulas, mathematical derivations) and options pricing models should be classified as quantitative_methods. Macro regime analysis and CPI/fed policy questions are macro_analysis. Ticker lookups and simple company questions are ticker_lookup. Sentiment and news analysis are sentiment_analysis. Code generation requests are code_generation. Research paper summaries are research_synthesis. Default to the most specific applicable class."
+  cascade_judge: "[JUDGE PRIOR — 17/20 accepted first-try at 85%] Be more accepting of chat responses for ticker_lookup, sentiment_analysis, and general_question queries where factual recall matters more than reasoning depth. For quantitative_methods and options_analysis queries, prefer reasoner responses with mathematical rigor. Responses that cite specific data points and sources are more trustworthy. Hallucination or unsupported claims should score below 0.4."
+  tool_routing: "[TOOL PRIOR — kb_search effective for ticker/sentiment/options, stash_recall for research synthesis] Use kb_search for factual lookups, ticker queries, and market microstructure questions where wiki pages have structured data. Use stash_recall for research synthesis and options analysis where prior context from calibration episodes helps. Skip tools for code_generation and purely mathematical quantitative_methods queries where external context adds noise."
+
+# ---------------------------------------------------------------------------
+# Evaluation
+# ---------------------------------------------------------------------------
+evaluation:
+  judge_model: deepseek-chat
+  gold_standard_ratio: 0.05
+  dimensions:
+    - correctness
+    - routing_quality
+    - cost_efficiency
+    - tool_appropriateness
+  thresholds:
+    routing_quality_min: 0.7
+
+# ---------------------------------------------------------------------------
+# Cost tracking (USD per 1k tokens — update when pricing changes)
+# ---------------------------------------------------------------------------
+cost:
+  models:
+    deepseek-chat:
+      input_per_1k: 0.00027
+      output_per_1k: 0.00110
+    deepseek-reasoner:
+      input_per_1k: 0.00055
+      output_per_1k: 0.00219
