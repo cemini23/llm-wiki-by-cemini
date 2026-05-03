@@ -50,7 +50,7 @@ class Conductor:
         )
         self.stash_client = StashClient()
         self.tools = ToolOrchestrator(self.config, self.kb_client, self.stash_client)
-        self.calibration = CalibrationLogger(self.config, self.stash_client)
+        self.calibration = CalibrationLogger(self.config, self.stash_client, api=self.api)
 
     def route(
         self, query_text: str, *, session_id: str = "default", source: str = "cli"

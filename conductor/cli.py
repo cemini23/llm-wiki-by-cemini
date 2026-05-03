@@ -110,6 +110,21 @@ def cmd_evaluate(conductor: Conductor, args: argparse.Namespace) -> None:
         )
 
 
+def cmd_bottleneck(conductor: Conductor, args: argparse.Namespace) -> None:
+    """Analyze bottleneck stage in routing pipeline."""
+    analysis = conductor.calibration.get_bottleneck_analysis()
+    _output(analysis, args.output)
+
+    if "stages" in analysis:
+        print("\nStage attribution:", file=sys.stderr)
+        for stage, info in analysis["stages"].items():
+            print(
+                f"  {stage}: {info['decisions']} decisions ({info['pct_total']}%), "
+                f"{info['failures']} failures ({info['failure_rate']}% failure rate)",
+                file=sys.stderr,
+            )
+
+
 def cmd_build_priors(conductor: Conductor, args: argparse.Namespace) -> None:
     """Rebuild token priors from calibration data."""
     from conductor.calibration import CalibrationLogger
@@ -154,6 +169,10 @@ def main() -> None:
         "--build-priors", action="store_true",
         help="Rebuild token priors from Stash calibration data",
     )
+    parser.add_argument(
+        "--bottleneck", action="store_true",
+        help="Analyze which pipeline stage is the primary failure bottleneck",
+    )
     args = parser.parse_args()
 
     conductor = Conductor(args.config)
@@ -162,6 +181,8 @@ def main() -> None:
         cmd_evaluate(conductor, args)
     elif args.build_priors:
         cmd_build_priors(conductor, args)
+    elif args.bottleneck:
+        cmd_bottleneck(conductor, args)
     else:
         cmd_route(conductor, args)
 
