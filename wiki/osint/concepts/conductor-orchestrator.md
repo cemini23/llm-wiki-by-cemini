@@ -14,6 +14,7 @@ related:
   - sources/masrouter-acl-2025.md
   - sources/gigpo-neurips-2025.md
   - sources/meta-router-2509.25535.md
+  - concepts/recursive-multi-agent-systems.md
 maturity: validated
 created: 2026-05-01
 updated: 2026-05-02
@@ -129,6 +130,8 @@ Meta-Router provides the causal framework for evaluating routing quality:
 - **Not a real-time trading component** — routing decisions add latency. Conductor is for analyst queries, not tick-level execution.
 
 **Agent-skill architecture validated**: Both the ARA Live Research Manager and ARA Compiler (@concepts/agent-native-research-artifacts.md) are implemented as natural-language specifications loaded into context windows — not custom SDKs. This independently validates Conductor's Path B approach (prompt-based token-prior routing rather than a trained model). The agent-skill pattern (spec in context → agent becomes specialist) is emerging as a general architecture for LLM-native infrastructure, not just a Conductor shortcut. When Path A activates, the orchestrator training data will come from Path B's agent-skill routing logs — the two paths are sequential, not competing.
+
+**Path C — RecursiveLink-style training**: @concepts/recursive-multi-agent-systems.md provides a training-based alternative. Conductor's current 4-stage pipeline (taxonomy → pool → tools → cascade) communicates through text-based handoffs. RecursiveMAS replaces text communication with lightweight 2-layer residual connector modules (RecursiveLinks) between pipeline stages, then co-optimizes the entire pipeline via inner-outer loop training. Only the RecursiveLinks are trained (0.31% of params) — model weights stay frozen. This would enable: (1) gradient-based credit assignment across pipeline stages (vs post-hoc calibration logging); (2) latent-space information transfer between stages (vs prompt-based handoffs); (3) system-level co-optimization through joint backpropagation. The cost is low: RecursiveLink training uses 56% less GPU than LoRA while achieving better performance. Path C is a long-term research direction — Path B (token priors) is the pragmatic zero-training entry point.
 
 ### Next steps
 

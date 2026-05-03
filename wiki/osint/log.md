@@ -3525,3 +3525,14 @@ Full ingest of all 9 inbox items. 5 Conductor-relevant papers + 1 quant referenc
 
 ### Files moved to librarian
 - 9 files moved to `cemini-librarian:/opt/cemini-bulk/research/`, laptop copies removed
+
+## [2026-05-02] ingest | Recursive Multi-Agent Systems (arXiv:2604.25917)
+
+- Created `wiki/sources/recursive-multi-agent-systems-2604.25917.md` — deep-read, 14 snippet pulls
+- Created `wiki/concepts/recursive-multi-agent-systems.md` — concept page: RecursiveLink architecture, inner-outer loop training, scaling law, Conductor Path C blueprint
+- Updated `wiki/concepts/latent-thought.md` — added RecursiveLink as operational latent-thought implementation
+- Updated `wiki/concepts/conductor-orchestrator.md` — added Path C (RecursiveLink-style training) as future research direction
+- Updated `wiki/index.md` — 2 new entries
+- Moved PDF to cemini-librarian:/opt/cemini-bulk/research/
+
+Key findings: 2-layer residual RecursiveLink replaces text-based agent communication. Only 0.31% of params trained. +8.3% accuracy, 1.2×–2.4× speedup, 34.6%–75.6% token reduction across 9 benchmarks. Inner-outer loop training enables gradient-based credit assignment across pipeline stages. Direct relevance to Conductor Path C.

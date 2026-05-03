@@ -6,7 +6,8 @@ keywords: [latent-thought, chain-of-thought, CoT, TCk, parallel-computation, app
 related:
   - sources/cot-vs-latent-thought-2509.25239.md
   - sources/thinking-without-words-abstract-cot-2604.22709.md
-maturity: draft
+  - concepts/recursive-multi-agent-systems.md
+maturity: validated
 created: 2026-05-02
 updated: 2026-05-02
 ---
@@ -22,6 +23,8 @@ Latent thought (internal transformer computation) and Chain of Thought (explicit
 Abstract Chain-of-Thought (IBM Research, 2026) proposes a middle ground: compress reasoning into abstract tokens in latent space, maintaining CoT-quality results at lower token cost.
 
 For Conductor routing: queries requiring parallel multi-dimensional reasoning may be well-served by chat models (latent). Queries requiring sequential derivation need CoT (reasoner). Abstract CoT, if exposed by providers, could handle the current reasoner-escalation cases at chat-model cost.
+
+RecursiveMAS provides an implementation-level instantiation of latent thought for multi-agent systems: the inner RecursiveLink generates latent thoughts directly in continuous embedding space, bypassing vocabulary-space decoding and re-encoding. Each agent produces m≈ 80 latent thought steps, sufficient to stabilize performance across benchmarks. The outer RecursiveLink extends this paradigm to cross-agent communication — agents exchange latent states rather than text, preserving gradient flow across the full system unrolling. This validates the latent-thought thesis in an operational multi-agent setting.
 
 ## Snippets
 
