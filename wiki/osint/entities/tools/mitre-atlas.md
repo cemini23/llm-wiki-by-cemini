@@ -7,6 +7,7 @@ related:
   - sources/5-4-links-tool-eval.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/cemini-license-posture.md
+  - concepts/mitre-atlas-taxonomy.md
 maturity: validated
 created: 2026-05-04
 updated: 2026-05-04

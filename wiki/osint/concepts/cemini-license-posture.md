@@ -13,6 +13,7 @@ related:
   - concepts/cemini-deployment.md
   - entities/infrastructure/cemini-stack.md
   - entities/tools/klaassen-magnus-elo.md
+  - concepts/mitre-atlas-taxonomy.md
 maturity: draft
 created: 2026-05-03
 updated: 2026-05-04
