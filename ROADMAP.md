@@ -6,27 +6,27 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 ## Vision
 
-CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
+CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
-## Active — this session (2026-05-02)
+## Active — this session (2026-05-04)
 
-- **K25 Conductor sweep** — 7 papers ingested: ToolOrchestra, MMGRPO, Training-Free GRPO (×2), GiGPO, MasRouter, StR, Meta-Router. `concepts/conductor-orchestrator.md` synthesis page + architecture diagram + dual deployment paths (A: Trained, B: Token-Prior).
-- **K26 ToolOrchestra deep-read** — 8B orchestrator beats GPT-5 on HLE (37.1% vs 35.1%) at 2.5× efficiency. Backlinks + `concepts/llm-agent-systems.md` Relations entries. `conductor-orchestrator.md` promoted draft → validated.
-- **Cross-doc dedup Pass 3** — H3-heading fuzzy matching. 0 new content duplicates found beyond Pass 1; infrastructure in place for future ingest.
-- **Stale NEEDS-VERIFICATION sweep** — 17 tags resolved across 4 pages: `oracle-networks.md` (7 → CONFIRMED via Exa), `crypto-asset-taxonomy.md` (5 → CONFIRMED against ticker pages, 1 → TENTATIVE), `deepseek-api.md` (3 → date-bumped with server-side blocker notes), `publishers-exclusion.md` (1 → removed).
-- **Conductor in-house decision** — finalized. ROADMAP updated, memory saved. Research flag: papers enabling multi-module GRPO, token-prior optimization, compound-AI training.
-- **Wiki-tooling smoke test re-run** — llmwiki v0.6.0, nested-path bug confirmed (slug resolver strips `/`). kb-server remains serving layer.
-- **SafeHarness backlinks** — 3 bidirectional gaps closed (openclaw-security-taxonomy, reasoning-safety-monitor, sae-execution-contract).
-- **tsag dangling ref** — `concepts/deepseek-models.md` stub created + index entry.
+- **K28 5_4 sweep** — 33-tool eval batch + Gemini Sci Research methodology paper (arXiv 2602.03837v3). 15 wiki pages, license-posture catalog 5 → 8 patterns. Pushed `d74d061..3f030a8`. See `wiki/log.md` "[2026-05-04] ingest" entry.
+- **Post-ingest brief staging** — ROADMAP update + 4 prod briefs in `briefs/` (Klaassen-Magnus Elo, Riskfolio-Lib + FinanceToolkit, atlas-gic autoresearch, probablyprofit pattern extraction). Per `post_ingest_workflow` memory rule.
+- **Server-side error-code-1 triage** — separate one-off issue (not part of post-ingest workflow). User reports error code 1 when typing messages in Claude Code on the prod server. Diagnosis pending.
 
-## Next — queued
+## Next — queued (K28-driven adoption work, in priority order)
 
-| Item | Notes |
-|---|---|
-| **Gap-detector pass** | Run `wiki_gap_detect.py` for Type-A (cited-unread stubs) and Type-E (thin concept pages) candidates. |
-| **Tier 2 arXiv sweep** | Last sweep 2026-05-01. Session-start ritual prompts if >7 days. |
-| **ROADMAP Eventually** | Storage compaction (disk 88% full), bootstrap PDF content index, test suite for scripts. |
-| **DeepSeek model IDs** | Confirm `deepseek-chat` vs `deepseek-v4-flash` model IDs against current API docs. Non-blocking documentation task. |
+| # | Item | Surface | Notes |
+|---|------|---------|-------|
+| 1 | **SwarmVault Phase 0 source audit** | laptop | Clone repo, inspect path-resolution + frontmatter compatibility + bidir-link semantics. Resolves outstanding llm-wiki-compiler v0.4.0 deployment block (`CONCEPTS_DIR` flat-layout). See `wiki/entities/tools/swarmvault.md` Phase 0 checklist. |
+| 2 | **codegraph + leaf laptop install** | laptop | Both Adopt-tier MIT-licensed. `npm install -g codegraph`, `cargo install leaf` (or AUR/npm). `.gitignore` codegraph SQLite indices. |
+| 3 | **Klaassen-Magnus Elo math extraction** | prod (brief) | `briefs/2026-05-04_klaassen-magnus-elo-cemini-fastmcp.md`. Math extraction + commercial-data sourcing decision. **Direct prediction-market application** (Kalshi/Polymarket tennis contracts). |
+| 4 | **Riskfolio-Lib + FinanceToolkit FastMCP wiring** | prod (brief) | `briefs/2026-05-04_quant-libs-fastmcp-integration.md`. Position-sizing math (HRP, Kelly, Black-Litterman) + 150 financial metrics → `@mcp.tool` decorators in `services/llm_analyst/`. |
+| 5 | **probablyprofit pattern extraction** | prod (brief) | `briefs/2026-05-04_probablyprofit-pattern-extraction.md`. Kelly + LLM ensemble consensus + multi-vector kill switch. Networking layer is Polymarket-specific (rewrite for Kalshi). |
+| 6 | **atlas-gic autoresearch loop clean-room** | prod (brief) | `briefs/2026-05-04_autoresearch-conductor-evolution.md`. Conductor v0.1.1 evolution candidate. Shadow-mode-first rollout to bound token cost. |
+| 7 | **MedSkillAudit veto-gate port** | laptop | Refactor framework to `scripts/skill_audit.py` for financial-prompt validation (40% static / 60% dynamic / Veto Gates). |
+| 8 | **MITRE ATLAS taxonomy ingestion** | wiki (separate workstream) | 16 tactics × 170 techniques × 35 mitigations × 57 case studies → wiki layer. Attribution requirement: verbatim MITRE copyright reproduction. |
+| 9 | **License-pattern catalog (8 modes)** | next sweep | Apply explicit checklist to next Gemini DR eval ingest: NO-LICENSE, AGPL Docker-defeat, GPL derivative-work, CC-BY-NC training-data contamination, dual-license MIT-vs-GPL, namespace confusion, LGPL dynamic-linking, dual-licensing enterprise-tier gating. |
 
 ## Decisions — open
 
@@ -36,49 +36,69 @@ DeepSeek hosted API is the operative path. Local options hardware-gated (7 GB RA
 
 ### Which conductor? (Fugu vs Trinity vs Conductor) ✅ DECIDED 2026-05-02
 
-**In-house Conductor build.** GRPO maintains policy stability; Training-Free GRPO path enables API-only deployment (no weight access needed). 7 papers already ingested. Flag relevant ICLR/NeurIPS/ACL/EMNLP 2026 papers during sweeps.
+**In-house Conductor build.** GRPO maintains policy stability; Training-Free GRPO path enables API-only deployment (no weight access needed). 7 papers already ingested (K25). v0.1.1 deployed in shadow mode.
+
+**K28 follow-on**: atlas-gic autoresearch loop is the Conductor-evolution candidate (clean-room implementation gated on user authorization). Brief #6 above.
 
 ### Wiki tooling
 
-**Serving layer: kb-server** — deployed on librarian CPX21, active, 397 docs indexed. llm-wiki-compiler retained on disk for potential future compile-mode use (nested-path bug blocks query/serve). Full analysis: `concepts/wiki-tooling-evaluation.md`.
+**Serving layer: kb-server** — deployed on librarian CPX21, active, 397 docs indexed. llm-wiki-compiler v0.4.0 retained on disk for potential future compile-mode use (nested-path bug blocks query/serve).
+
+**K28 update**: SwarmVault is the first credible MIT-licensed Karpathy-pattern alternative. Phase 0 source audit is Next #1 — outcome will resolve this decision.
 
 ### Librarian server — remaining phases
 
 | Phase | Item | Status |
 |---|---|---|
 | 0–3.5 | Provision, sync, kb-server, allowlist, cron | Done |
-| 4 | Wire production brain → librarian MCP | Server-stack, next concrete step |
+| 4 | Wire production brain → librarian MCP | Done 2026-05-01 (audit trail E2E verified) |
 | 5 | Sync cron | Done (folded into 3.5) |
 | 6 | Monitoring + tuning | Done (workspace-side); brief shipped to cemini-prod |
+| 7 | Stash episodic memory | Done 2026-05-02 (alash3al/stash v0.2.9 deployed, MCP wired across all 3 contexts) |
 
 ## Eventually
 
 - **Storage compaction** — disk 88% full. Market dataset → Parquet; research corpus → SQLite FTS index.
 - **Bootstrap full PDF content index** — 230 stubs done. Full deep-read at K-series pace (~12 months).
-- **Cited-unread backlog** — 133 stubs. Organic reduction via K-series.
+- **Cited-unread backlog** — 99 stubs (was 133, K28 added a small increment). Organic reduction via K-series.
 - **Periodic lint as session-start ritual** — low friction, high signal.
 - **Workspace ↔ server reconciliation rhythm** — compare page counts / slug parity periodically.
 - **Test suite for scripts** — `wiki_lint.py` / `bootstrap_inbox.py` have no coverage.
 - **Tier 2.5 `/autoresearch` loop** — Steal-from from claude-obsidian. Port multi-round Exa loop into Path 2.
 - **Cross-doc duplicate detection** — hash H2 titles across link-aggregate docs.
 - **MCP-tool inventory consolidation** — 130 tools discovered (vs 22 documented). Single canonical inventory.
+- **agentic-soc-platform pattern adoption** — Redis Stream + LangGraph state-management patterns for `agents/orchestrator.py` hardening (architectural reference, defer wholesale deployment).
+- **Conductor `--build-priors` automation** — weekly cron already gated to 30+ new decisions; replace with autoresearch-driven mutation if Brief #6 (atlas-gic clean-room) ships and shadow-mode succeeds.
+- **DeepSeek model IDs** — confirm `deepseek-chat` vs `deepseek-v4-flash` model IDs against current API docs.
 
 ## Gap detection (3-tier)
 
 | Tier | Status |
 |---|---|
-| **0** — pre-ingest dup check (`preingest_check.py`) | Done |
-| **1** — gap-detection lint (`wiki_gap_detect.py`) | Done |
-| **2** — proactive Exa sweeps (user-gated) | Active (Path 1: session-driven) |
+| **0** — pre-ingest dup check (`preingest_check.py`) | Done; ran 2026-05-04 K28 (3 NEW, 0 duplicates) |
+| **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-02; due for fresh run |
+| **2** — proactive Exa sweeps (user-gated) | Active (Path 1: session-driven). Last sweep 2026-05-01 — 3 days old, within 7-day cadence |
 | **3** — fully autonomous outbound ingest | Rejected |
+
+## Done — 2026-05-04 session
+
+- **K28 5_4 sweep ingest** — 3 sources + 15 wiki pages + license-posture catalog 5→8 patterns. Pushed.
+- **Memory updates** — `prediction_market_scope.md` + `post_ingest_workflow.md` saved.
 
 ## Done — 2026-05-02 session
 
-- **Stash episodic memory deployed** — alash3al/stash v0.2.9 on `cemini-librarian` (5.161.179.207). Postgres 16 + pgvector, Ollama-backed embeddings (nomic-embed-text) + reasoning (qwen2.5:0.5b). Two-layer memory architecture: kb-server (static wiki RAG) + stash (dynamic episodic memory). MCP SSE :8080, HTTP :9090, systemd-managed. Wave 5 Phase 7 complete.
+- **K25 Conductor sweep** — 7 papers ingested. `concepts/conductor-orchestrator.md` synthesis page.
+- **K26 ToolOrchestra deep-read** — 8B orchestrator beats GPT-5 on HLE at 2.5× efficiency.
+- **K27 9-source batch** — ARA paper + 4 pattern adoptions + Conductor v0.1.1 committed (17 files, 2,011 lines) + Phase 4 brief staged.
+- **Cross-doc dedup Pass 3** — H3-heading fuzzy matching. 0 new duplicates.
+- **Stale NEEDS-VERIFICATION sweep** — 17 tags resolved across 4 pages.
+- **Conductor in-house decision** — finalized.
+- **Wiki-tooling smoke test re-run** — llmwiki v0.6.0, nested-path bug confirmed.
+- **Stash episodic memory deployed** — alash3al/stash v0.2.9 on librarian. Two-layer memory architecture (kb-server + stash). Phase 7 complete.
 
 ## Done — 2026-05-01 session
 
-- **Phase 4 — brain → librarian MCP** — Audit trail deployed on cemini-prod. E2E verified: fetch_wiki_context("BTC-USD") → 3 sources, 777 chars, ~126ms. KB_HOST hardened.
+- **Phase 4 — brain → librarian MCP** — Audit trail deployed on cemini-prod. E2E verified.
 - **K24** — ParlayMarket deep-read + `concepts/parlay-market-making.md` + kalshi.md extension
 - **K23** — Nomotic AI deep-read + nomotic-ai.md primary-source confirmation + six principles
 - **K22** — Reasoning Safety Monitor deep-read + `concepts/reasoning-safety-monitor.md`
@@ -86,7 +106,7 @@ DeepSeek hosted API is the operative path. Local options hardware-gated (7 GB RA
 - **K20** — OpenClaw deep-read + `concepts/openclaw-security-taxonomy.md`
 - **K19** — SAE deep-read + `concepts/sae-execution-contract.md`
 - **Cross-cluster synthesis** — `concepts/agent-authorization-stack.md` + `briefs/2026-05-01_execution-security-architecture.md`
-- **Infra** — gitignore Node.js, preingest_check.py arXiv scoping fix, ROADMAP Trinity/Conductor K13 update
+- **Infra** — gitignore Node.js, preingest_check.py arXiv scoping fix.
 
 ## Done — prior sessions (highlights)
 
