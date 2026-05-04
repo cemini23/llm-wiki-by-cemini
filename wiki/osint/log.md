@@ -1,5 +1,67 @@
 # Wiki Log
 
+## [2026-05-04] ingest | 5_4 sweep — 33-tool eval batch + Gemini Sci Research methodology paper (K28)
+
+User dropped 3 sources: `5_4 links.docx` (19-tool eval), `links 2 5_4.docx` (14-tool eval), `Accelerating Scientific Research with Gemini- Case Studies and Common Techniques.pdf` (arXiv 2602.03837v3, 154 pp, Google Research). Pre-ingest dedup: 3 NEW, 0 duplicates. The two docx files are companion Gemini-DR architecture-eval reports; the PDF is a methodology paper that turns out to **directly justify the autoresearch loop pattern** surfaced by atlas-gic in the docx batch.
+
+### New pages (15 total)
+
+**Sources (3)**
+- `sources/5-4-links-tool-eval.md` — 19 candidates: 2 Adopt (MITRE ATLAS, swarmvault), 4 Steal-from (Klaassen-Magnus Elo, MedSkillAudit, probablyprofit, athina rag-cookbooks), 3 Defer (nautilus_trader LGPL+PyO3, claude-memory-compiler NO-LICENSE, local-deep-research URL-unavailable), 2 Reference-only (tennis_atp + tennis_slam_pointbypoint NC-data), 5 Reject, 3 URL-unavailable.
+- `sources/links-2-5-4-tool-eval.md` — 14 candidates: 4 Adopt (codegraph, leaf, Riskfolio-Lib, FinanceToolkit), 2 Steal-from (agentic-soc-platform, atlas-gic), 3 Reference-only (shannon, repowise, QuantConnect/Lean AGPL/dual-license/stack-mismatch respectively), 2 Defer (Lumibot dual-license MIT-vs-GPL, yfinance polygon-doctrine), 3 Reject.
+- `sources/gemini-sci-research-2602-03837.md` — Google Research methodology playbook. Section 2 enumerates 7 techniques: iterative prompting + adversarial self-correction, cross-pollination, simulation/counterexample search, formalization, interactive proof construction, **agentic tool-use neuro-symbolic loop (§2.6)**, human-AI collaboration dynamics. Coined term: "vibe-proving."
+
+**Entities (11)**
+- `entities/tools/swarmvault.md` — **Deep eval as llm-wiki-compiler replacement candidate.** v0.4.0 wiki-compiler is currently deployment-blocked by hardcoded `CONCEPTS_DIR = "wiki/concepts"` flat-layout. SwarmVault claims same Karpathy 3-layer + MCP + Ollama with MIT license. Phase 0 source audit pending: confirm path-resolution + frontmatter compatibility + bidir-link semantics.
+- `entities/tools/mitre-atlas.md` — Wiki-layer ingest candidate (security taxonomy, CC BY 4.0 + MITRE attribution requirement).
+- `entities/tools/codegraph.md` — Laptop-only token-efficient AST indexer (MIT, Node + tree-sitter).
+- `entities/tools/leaf.md` — Laptop-only Rust terminal markdown viewer (MIT) for wiki-authoring UX.
+- `entities/tools/riskfolio-lib.md` — Cemini FastMCP integration (BSD-3-Clause, 24 risk measures incl. Kelly + HRP). **Prediction-market-applicable** for Kalshi/Polymarket binary-contract sizing.
+- `entities/tools/financetoolkit.md` — Cemini FastMCP integration (MIT, 150 financial metrics incl. GARCH, VaR, Extended DuPont). **Healthcare-equity + prediction-market-applicable** for biotech/pharma analysis.
+- `entities/tools/atlas-gic-autoresearch.md` — Steal-from (NO LICENSE blocks code reuse): 25-agent Darwinian debate + rolling Sharpe loss + git-tracked prompt evolution. **Direct financial instantiation of Gemini paper §2.6.** Conductor evolution candidate via clean-room re-implementation.
+- `entities/tools/probablyprofit.md` — Steal-from (MIT): Kelly + LLM ensemble consensus + multi-vector kill switch from Polymarket trading framework.
+- `entities/tools/medskillaudit.md` — Steal-from (MIT): veto-gate validation framework. **Healthcare-equity + prediction-market-applicable** per user notes 2026-05-04: medical-research skills feed both biotech ticker analysis (MRNA, NVAX, etc.) and FDA-approval prediction-market contracts.
+- `entities/tools/klaassen-magnus-elo.md` — Steal-from (MIT code, NC-data-coupled to tennis_atp): tennis prediction model. **Direct prediction-market application** for Kalshi/Polymarket tennis contracts. Pattern generalizes to any 1v1 binary-outcome contest.
+- `entities/tools/agentic-soc-platform.md` — Steal-from (MIT): Redis Stream + LangGraph reference pattern, security domain irrelevant but stack mirrors Cemini.
+
+**Concepts (1 new + 1 updated)**
+- `concepts/autoresearch-loop-pattern.md` — **NEW**. Methodology synthesis: LLM proposal × objective evaluation × automated mutation/rollback. Three documented instantiations (Gemini §2.6 math, atlas-gic finance, claude-obsidian `/autoresearch`). Conductor evolution path with phases. Risks (reward hacking, token cost, local optima, explainability). Brier score + rolling profit as fitness function for prediction-market deployments.
+- `concepts/cemini-license-posture.md` — **UPDATED**. License-pattern catalog expanded from 5 to 8 failure modes: added (4) CC-BY-NC training-data contamination [tennis_atp + tennis_match_prediction], (5) dual-license MIT-vs-GPL ambiguity [Lumibot], (6) namespace confusion [open-slide vs openslide.org], (7) LGPL dynamic-linking ambiguity [nautilus_trader PyO3], (8) dual-licensing enterprise-tier gating [shannon, repowise].
+
+### Cross-cutting findings
+
+1. **Gemini paper §2.6 ↔ atlas-gic** is the most important cross-link of the batch. The neuro-symbolic loop (LLM proposes → code executes → traceback informs) and the trading-agent loop (LLM rewrites prompt → live performance scores → git commit/revert) are the *same architectural pattern* in different domains. Captured in `concepts/autoresearch-loop-pattern.md`.
+
+2. **Prediction-market scope reframing** (per user note 2026-05-04): Cemini's Kalshi + Polymarket coverage spans sports, healthcare/biotech, politics, weather, economic indicators. The Gemini DR eval treated tennis-prediction and medical-research as out-of-domain ("orthogonal to financial research") — that verdict is wrong. tennis_match_prediction maps directly to tennis prediction-market modeling; medical-research-skills map to FDA-approval prediction-market and healthcare-equity research alike (per user note 2026-05-04: medical skills are useful for healthcare equity trading too — biotechs, pharma, drug-trial-driven catalysts).
+
+3. **swarmvault as wiki-compiler replacement** is the highest-priority follow-up action. The llm-wiki-compiler v0.4.0 deployment-block (hardcoded `CONCEPTS_DIR`) has been outstanding since 2026-04-29 with kb-server as workaround. SwarmVault is the first credible MIT-licensed Karpathy-pattern alternative to surface. Phase 0 source audit (clone repo, inspect path-resolution logic) needed before commit.
+
+4. **License-pattern catalog** doubled in size (3 → 8 failure modes). The two new patterns from this batch (CC-BY-NC training-data contamination, dual-license MIT-vs-GPL ambiguity) are likely to recur — both are eval-time-detectable but easy to miss without explicit checks.
+
+5. **Conductor evolution candidate**: atlas-gic's autoresearch loop is the architectural blueprint for evolving Conductor v0.1.1 from human-tuned routing (`--build-priors` manually triggered) to autoresearch-driven routing (proposal → shadow-mode evaluation → automated promote-or-revert). Brief stage-able: `briefs/2026-05-04_autoresearch-conductor-evolution.md` (deferred this session pending user direction).
+
+### Index updates
+- Source counts: 296 → 299 (+ 3 new)
+- llm-agents cluster: 121 → 124 (+ 3 new sources)
+- Entities → Tools: 11 new entries
+- Concepts → Librarian/knowledge-base tooling: + autoresearch-loop-pattern (1 new)
+
+### Raw-source moves
+- `5_4 links.docx` → cemini-librarian:/opt/cemini-bulk/research/
+- `links 2 5_4.docx` → cemini-librarian:/opt/cemini-bulk/research/
+- `Accelerating Scientific Research with Gemini- Case Studies and Common Techniques.pdf` → cemini-librarian:/opt/cemini-bulk/research/
+
+All three removed from laptop `research to be indexed/` after verified scp.
+
+### Open follow-ups
+- **swarmvault Phase 0 audit** — clone + inspect path-resolution logic (highest priority)
+- **atlas-gic clean-room implementation** — stage as `briefs/2026-05-04_autoresearch-conductor-evolution.md` for Conductor evolution
+- **MITRE ATLAS taxonomy ingestion** — separate workstream for wiki-layer security-vocabulary buildout
+- **Riskfolio-Lib + FinanceToolkit FastMCP wiring** — stage as `briefs/2026-05-04_quant-libs-fastmcp-integration.md` for prod-server-side Claude
+- **Klaassen-Magnus Elo extraction** — math + commercial-data sourcing decision; stage as `briefs/2026-05-04_klaassen-magnus-elo-cemini.md`
+- **MedSkillAudit refactor** — port veto-gate framework to `scripts/skill_audit.py`
+- **License-pattern catalog (8 modes)** — apply to next Gemini DR sweep eval as explicit checklist
+
 ## [2026-05-04] persist | laptop stash tunnel under launchd (KeepAlive verified)
 
 Replaced bare `ssh -f -N -L 8088:localhost:8080 cemini-librarian` (this morning's wiring) with a launchd plist at `~/Library/LaunchAgents/com.cemini.stash-tunnel.plist`. Pivoted from autossh because Homebrew isn't installed on the laptop and launchd is the macOS-native zero-dep path.

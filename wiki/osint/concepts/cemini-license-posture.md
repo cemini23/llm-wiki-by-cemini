@@ -2,17 +2,20 @@
 title: Cemini License Posture — Dependency Obligations & IP Status
 type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
-keywords: [AGPL-3.0, GPL-3.0, MIT, Apache-2.0, derivative-work, network-copyleft, default-copyright]
+keywords: [AGPL-3.0, GPL-3.0, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
   - concepts/ip-sale-readiness.md
   - sources/more-links-5-2-arch-eval.md
   - sources/4-3-link-re-2.md
   - sources/4-4-link-re-2.md
+  - sources/5-4-links-tool-eval.md
+  - sources/links-2-5-4-tool-eval.md
   - concepts/cemini-deployment.md
   - entities/infrastructure/cemini-stack.md
+  - entities/tools/klaassen-magnus-elo.md
 maturity: draft
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-04
 ---
 
 ## Relations
@@ -21,6 +24,9 @@ updated: 2026-05-03
 - @sources/more-links-5-2-arch-eval.md — K27 surfaced AGPL-3.0 Docker-defeat pattern + GPL-3.0 LLM-agent derivative-work risk + missing-license default-copyright pattern (three license-compliance failure modes)
 - @sources/4-3-link-re-2.md — Moirai (CC-BY-NC-4.0) + Firecrawl (AGPL-3.0) rejections recorded in K14 deep-read
 - @sources/4-4-link-re-2.md — AGPL-3.0 contamination warnings (OpenViking, SAMEP) recorded in K12 deep-read
+- @sources/5-4-links-tool-eval.md — 2026-05-04 ingest surfaced two new license patterns: **CC-BY-NC training-data contamination** (tennis_atp dataset → tennis_match_prediction MIT code becomes NC-bound) + **namespace confusion risk** (1weiho/open-slide vs CMU's openslide.org medical library)
+- @sources/links-2-5-4-tool-eval.md — 2026-05-04 ingest surfaced **dual-license MIT-vs-GPL ambiguity** pattern (Lumibot README claims MIT, core repo files labeled GPL-3.0)
+- @entities/tools/klaassen-magnus-elo.md — exemplar of pattern #4 (CC-BY-NC training-data contamination): MIT code, NC-bound data dependency, requires retraining-on-commercial-feeds before production deployment
 
 ## Raw Concept
 
@@ -67,8 +73,24 @@ Codified across K12/K14/K25/K27 deep-reads (see @sources/more-links-5-2-arch-eva
 3. GPL-3.0 dependencies require dual licensing or replacement before deployment.
 4. CC-BY-NC and other commercial-restrictive licenses are categorically Reject for production.
 5. Missing-license repos are Reject pending upstream LICENSE clarification.
+6. **(Added 2026-05-04 from `@sources/5-4-links-tool-eval.md`)** CC-BY-NC training-data contamination — MIT code coupled to NC-licensed datasets propagates NC restriction to derivative model weights and feature pipelines. Algorithm extraction is safe; deployment requires retraining on commercially-licensed data with full provenance documentation.
+7. **(Added 2026-05-04 from `@sources/links-2-5-4-tool-eval.md`)** Dual-license MIT-vs-GPL ambiguity — when a repository's README claims one license but core files carry another, treat as REJECT pending file-by-file legal audit. Importing modules under false license assumptions is a forced-disclosure risk.
+8. **(Added 2026-05-04 from `@sources/5-4-links-tool-eval.md`)** Namespace confusion — repositories sharing names with established libraries (e.g., 1weiho/open-slide vs CMU's openslide.org medical library) trigger false-positive SCA scanner flags during M&A diligence. Document explicit distinction in any adoption decision.
 
 This policy is *operational*, not aspirational — license findings have triggered concrete rejections across the K-series deep-reads.
+
+### License-pattern catalog (eight failure modes)
+
+| # | Pattern | First seen | Mitigation |
+|---|---------|------------|------------|
+| 1 | NO LICENSE → default copyright | K27 (multiple) | Audit rule: REJECT until upstream LICENSE clarified |
+| 2 | AGPL network-clause Docker-defeat | K27 (SocratiCode) | Reject for any networked deployment; allow only as static reference reading |
+| 3 | GPL-3.0 LLM-agent derivative-work | K27 (freqtrade, qb-core) | Quarantine agents — never feed GPL source to coding agents writing into Cemini |
+| 4 | **CC-BY-NC training-data contamination** | **5_4-links (tennis_atp + tennis_match_prediction)** | Extract algorithm only; retrain against commercially-licensed data |
+| 5 | **Dual-license MIT-vs-GPL ambiguity** | **links-2-5_4 (Lumibot)** | File-by-file legal audit before any import; default-Reject pending clarification |
+| 6 | **Namespace confusion** | **5_4-links (1weiho/open-slide vs openslide.org)** | Document explicit distinction in adoption decision; document for SCA scanners |
+| 7 | LGPL dynamic-linking ambiguity (PyO3) | links-2-5_4 (nautilus_trader) | Defer pending acquirer legal counsel review of dynamic linking vs derivative-work boundary |
+| 8 | Dual-licensing enterprise-tier gating | links-2-5_4 (shannon, repowise) | Reference-only; enterprise tier extracts critical features behind paywall, OSS Lite is intentionally degraded
 
 ### Risk surface for IP-sale or commercial license
 
