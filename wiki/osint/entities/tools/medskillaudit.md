@@ -7,10 +7,65 @@ related:
   - sources/5-4-links-tool-eval.md
   - sources/gemini-sci-research-2602-03837.md
   - entities/tools/financetoolkit.md
-maturity: draft
+maturity: validated
 created: 2026-05-04
 updated: 2026-05-04
 ---
+
+## Workspace-side port — deployed 2026-05-04
+
+`scripts/skill_audit.py` ships a clean-room re-implementation of the MedSkillAudit veto-gate framework, scoped to brief / skill / prompt validation. Stdlib-only (no external deps); matches the style of `scripts/wiki_lint.py`.
+
+### Implemented checks (Static phase, 40% of design weight)
+
+| # | Check | Weight | Behavior |
+|---|-------|--------|----------|
+| 1 | required_sections | 0.30 | VETO if `## Target` or `## Summary` missing; WARN if no `## Sources`/`## References` |
+| 2 | crosslinks | 0.20 | VETO if any `@path/to/page.md` doesn't resolve to a real file (tries both wiki-relative + repo-relative — briefs use `@wiki/...`, wiki pages use `@concepts/...`) |
+| 3 | citations | 0.15 | PASS if `## Sources` section exists OR ≥1 inline `[Source: ...]` tag; WARN if both absent |
+| 4 | needs_verification_freshness | 0.10 | WARN if any `[NEEDS VERIFICATION YYYY-MM-DD]` tag is older than `--nv-age-days` (default 30) |
+| 5 | prose_quality | 0.15 | WARN if emoji or TODO/FIXME/XXX markers present (technical Unicode arrows / check-marks deliberately allowed) |
+| 6 | frontmatter | 0.10 | PASS if absent (briefs typical) or well-formed YAML block |
+
+### Deferred to v0.2 (Dynamic phase, 60% of design weight)
+
+Requires a sandboxed LLM API endpoint (Conductor or DeepSeek). Tests:
+- N-trial output reproducibility
+- Structured-output schema-compliance rate
+- Hallucinated-citation detection
+- Factual-accuracy on known-answer queries
+
+### Veto gates wired
+
+- **Operational Stability** — file parses + required sections present
+- **Scientific Integrity** — every cross-link / citation tag resolves (no orphans)
+
+### CLI
+
+```
+python3 scripts/skill_audit.py briefs/2026-05-04_klaassen-magnus-elo-cemini-fastmcp.md
+python3 scripts/skill_audit.py --json briefs/some.md       # machine-readable
+python3 scripts/skill_audit.py --strict briefs/some.md     # warnings → veto
+python3 scripts/skill_audit.py --nv-age-days 7 briefs/...  # tighter NV freshness gate
+```
+
+Exit codes: 0 PASS / 1 WARN / 2 REJECT / 3 ERROR.
+
+### Smoke test (2026-05-04)
+
+All 4 K28 briefs pass at 100.0/100:
+- `2026-05-04_klaassen-magnus-elo-cemini-fastmcp.md` ✓
+- `2026-05-04_quant-libs-fastmcp-integration.md` ✓
+- `2026-05-04_autoresearch-conductor-evolution.md` ✓
+- `2026-05-04_probablyprofit-pattern-extraction.md` ✓
+
+Veto-gate behavior verified earlier in iteration: deliberately-malformed cross-links triggered REJECT correctly.
+
+### Adoption status
+
+- Workspace-side port (this script) ✅ shipped 2026-05-04
+- Healthcare-equity / prediction-market skill-content adoption: deferred until those verticals open
+- Dynamic phase (60% weight): v0.2, requires sandboxed LLM endpoint
 
 ## Relations
 
