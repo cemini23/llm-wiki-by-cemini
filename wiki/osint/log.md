@@ -3536,3 +3536,34 @@ Full ingest of all 9 inbox items. 5 Conductor-relevant papers + 1 quant referenc
 - Moved PDF to cemini-librarian:/opt/cemini-bulk/research/
 
 Key findings: 2-layer residual RecursiveLink replaces text-based agent communication. Only 0.31% of params trained. +8.3% accuracy, 1.2×–2.4× speedup, 34.6%–75.6% token reduction across 9 benchmarks. Inner-outer loop training enables gradient-based credit assignment across pipeline stages. Direct relevance to Conductor Path C.
+
+## [2026-05-03] meta | Cemini deployment + license-posture documentation
+
+User question: "do we need a license page? also can we make a document somewhere in the wiki for setting up cemini, like the type of servers you should use requirements for ram space OS system best way to install it all with the idea that some users will be from USA and some from EU (so polymarket and kalshi have less regulatory challenges)"
+
+Resolution: confirmed Cemini is private (not for open-source release at this time), drafted three pages.
+
+### New pages
+- `concepts/cemini-license-posture.md` — Cemini's own license status (default-copyright, LICENSE file recommended for IP-sale readiness) + four-bucket dependency-license risk model (Safe / AGPL-network-copyleft / GPL-derivative / CC-BY-NC / Unknown). Codifies the K12+K14+K25+K27 license-evaluation policy operationally applied across deep-reads.
+- `entities/infrastructure/cemini-stack.md` — Two-server topology umbrella entity. Live-probed specs 2026-05-03: prod CPX31 (2 vCPU / 7.6 GB / 75 GB local + 25 GB volume / Ubuntu 22.04.5 / 41 containers / Docker 29.2.1 / **disk 90% used** ⚠), librarian CPX21 (3 vCPU / 3.7 GB / 75 GB / Ubuntu 24.04.4). Component manifest grouped by role. Inter-server data flow diagram.
+- `concepts/cemini-deployment.md` — End-to-end install procedure for the two-server stack. Region decision matrix (US Kalshi vs EU Polymarket geo-blocking with operator-residency vs server-region call-out). Hetzner SKU recommendations. Step-by-step install for both hosts. **66-key `.env` checklist** categorized into trading venues / LLM / data / infra / notifications / feature flags. Laptop-side Claude Code requirements: 13 plugins (exa, context7, superpowers, claude-md-management, commit-commands, github, code-review, code-simplifier, skill-creator, hookify, ralph-loop, token-optimizer, codex) + 6 MCPs (playwright, brave-search, cemini-mcp, kb-server, stash, polymarket-mcp×2).
+
+### Backlinks added (frontmatter only — inline body Relations TBD)
+- `concepts/librarian-server-architecture.md` → cemini-stack, cemini-deployment
+- `concepts/ip-sale-readiness.md` → cemini-license-posture
+- `entities/infrastructure/hetzner.md` → cemini-stack, cemini-deployment
+
+### Index updates
+- `wiki/index.md` — 3 new entries (1 entity under Infrastructure & databases, 1 concept under Cemini strategy doctrine, 1 concept under Audit & compliance).
+
+### Probes performed during drafting
+- `ssh cemini-prod` — `free -h`, `df -h /`, `nproc`, `cat /etc/os-release`, `docker --version`, `docker compose version`. Then `cat /opt/cemini/.env | grep ^[A-Z_]+= | sed 's/=.*/=<REDACTED>/' | sort -u` (66 env-var names captured; values redacted, not stored anywhere).
+- `ssh cemini-librarian` — same probe set; confirmed Node + npm + rsync installed.
+- `cat ~/.claude/settings.json` + `~/.claude.json` — laptop-side plugin (13) + MCP (2) inventory.
+
+### Open follow-ups
+- Production region not re-probed this session — flagged `[NEEDS VERIFICATION 2026-05-03]` in cemini-stack.md and cemini-deployment.md.
+- Production disk pressure (90%) and swap utilization (50%) — operational, not documentation, but flagged in cemini-stack.md "Known operational findings."
+- `/opt/cemini/dotenv.example` exists per CF73322 commit message; verifying it covers all 66 keys is a follow-up audit.
+- Inline body `## Relations` sections on the three reciprocal pages updated only at frontmatter level; `scripts/wiki_lint.py` will flag bidir-gaps and the inline-vs-frontmatter mismatch on next run.
+- LICENSE file on `/opt/cemini/`: not yet present per cemini-license-posture.md `[NEEDS VERIFICATION]`. Action item is to add an explicit proprietary LICENSE file pre-IP-sale.

@@ -23,6 +23,7 @@ related:
   - sources/wave-5-1-link-eval-even-more.md
   - sources/3-17-agent-research.md
   - sources/3-25-git-research.md
+  - entities/infrastructure/cemini-stack.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26

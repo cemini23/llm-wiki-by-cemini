@@ -23,6 +23,8 @@ related:
   - sources/agriciDaniel-claude-obsidian.md
   - sources/bytemover-agent-native-memory.md
   - sources/alash3al-stash.md
+  - entities/infrastructure/cemini-stack.md
+  - concepts/cemini-deployment.md
 maturity: validated
 created: 2026-04-28
 updated: 2026-05-02

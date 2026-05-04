@@ -12,6 +12,7 @@ related:
   - sources/platonic-representation-hypothesis-huh-2024.md
   - sources/alash3al-stash.md
   - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
+  - entities/infrastructure/cemini-stack.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-30

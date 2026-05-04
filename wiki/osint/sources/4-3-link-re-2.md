@@ -21,6 +21,7 @@ related:
   - entities/infrastructure/timescaledb.md
   - sources/3-29-research-6.md
   - sources/3-17-agent-research.md
+  - concepts/cemini-license-posture.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23

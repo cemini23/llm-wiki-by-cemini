@@ -23,6 +23,7 @@ related:
   - concepts/dcm-state-preemption.md
   - concepts/irc-1235-capital-gains-safe-harbor.md
   - concepts/ip-sale-corporate-structure.md
+  - concepts/cemini-license-posture.md
   - concepts/section-174-rd-expensing.md
   - concepts/florida-fintech-sandbox.md
   - concepts/milestone-ledger.md

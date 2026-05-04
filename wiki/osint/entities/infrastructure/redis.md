@@ -18,6 +18,7 @@ related:
   - sources/3-17-agent-research.md
   - sources/3-25-git-research.md
   - sources/git-3-5-pt3.md
+  - entities/infrastructure/cemini-stack.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-05-01

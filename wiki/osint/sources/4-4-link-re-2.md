@@ -16,6 +16,7 @@ related:
   - concepts/algorithmic-stopping-conditions.md
   - concepts/nomotic-ai.md
   - entities/tools/promptfoo.md
+  - concepts/cemini-license-posture.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23

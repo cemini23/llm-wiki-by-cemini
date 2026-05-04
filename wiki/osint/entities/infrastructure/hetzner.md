@@ -21,6 +21,8 @@ related:
   - sources/3-26-b.md
   - sources/scaling-roadmap-research.md
   - sources/bytemover-agent-native-memory.md
+  - entities/infrastructure/cemini-stack.md
+  - concepts/cemini-deployment.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-30

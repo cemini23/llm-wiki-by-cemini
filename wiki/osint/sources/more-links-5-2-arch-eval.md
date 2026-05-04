@@ -6,6 +6,7 @@ keywords: [architecture-evaluation, claude-code-analysis, open-design, freqtrade
 related:
   - concepts/wiki-tooling-evaluation.md
   - sources/links-5-2-tool-eval.md
+  - concepts/cemini-license-posture.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-02
