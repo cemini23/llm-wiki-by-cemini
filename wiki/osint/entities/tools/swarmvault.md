@@ -10,7 +10,7 @@ related:
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/llm-wiki.md
   - entities/infrastructure/ollama.md
-maturity: draft
+maturity: validated
 created: 2026-05-04
 updated: 2026-05-04
 ---
@@ -74,40 +74,51 @@ The Gemini DR eval describes SwarmVault as:
 
 These are the same envelope claims llm-wiki-compiler made. Per K8 server-probe, the CPX21 has 4 GB RAM with ~2.6 GB headroom after Ollama + nomic-embed-text. SwarmVault should fit, but verification on actual node process RSS is required before commit.
 
-### Adoption decision path
+### Phase 0 audit — completed 2026-05-04, verdict NO-GO
 
-**Phase 0 — Source audit (laptop, ~30 min wall-clock)** [pending user authorization]:
-1. `git clone https://github.com/swarmclawai/swarmvault /tmp/swarmvault-eval/`
-2. Inspect path-resolution logic (`src/`, look for `CONCEPTS_DIR` / `WIKI_DIR` / `path.join` patterns)
-3. Inspect frontmatter parser (does it match our schema, or impose its own?)
-4. Inspect related-link/cross-link format
-5. Inspect MCP server tool definitions
-6. Decide GO/NO-GO based on path-resolution + frontmatter compatibility
+Cloned to `/tmp/swarmvault-audit/`, inspected source. Six load-bearing questions answered:
 
-**Phase 1 — Smoke test on laptop wiki (if Phase 0 passes)**:
-1. `npm install -g @swarmvaultai/cli`
-2. Point at a *copy* of `wiki/` (not the canonical), let it build SQLite indices
-3. Verify it walks the nested directory tree and resolves `@path` cross-links
-4. Run a `swarmvault doctor` (per Gemini DR mention) for self-health-check output
-5. Test the MCP server end-to-end with Claude Code
+| # | Question | Verdict | Evidence |
+|---|----------|---------|----------|
+| Q1 | Supports nested wiki layout? | **FAIL** | `packages/engine/src/vault.ts:2781-2787` hardcodes seven required top-level directories (`wiki/sources/`, `wiki/entities/`, `wiki/concepts/`, `wiki/code/`, `wiki/outputs/`, `wiki/projects/`, `wiki/candidates/`), each with `index.md`. **No subdirectory nesting under entities/** — would not index `wiki/entities/tools/foo.md`. Same architectural disease as llm-wiki-compiler v0.4.0. |
+| Q2 | Frontmatter compatibility | PASS | gray-matter parser preserves arbitrary fields (`vault.ts:6454`); our `type/tags/keywords/related/maturity/created/updated` pass through |
+| Q3 | Cross-link syntax | **FAIL** | Uses `[[path/to/page\|Display Title]]` Obsidian-wikilink syntax. No recognition of our `@path/to/page.md` syntax. No bidirectional-link enforcement. Migration would require rewriting all 3,249 `@path` instances in our wiki. |
+| Q4 | MCP tool surface | PASS | 48 tools, including all required: `search_pages` (FTS5), `query_vault` (embeddings + graph), `read_page`, `query_graph`, `get_neighbors`, `doctor_vault`, `retrieval_status` |
+| Q5 | Compile-trigger model | PASS | Both `swarmvault compile` (on-demand CLI) and `swarmvault watch` (file-watch mode). Compatible with hourly cron sync. |
+| Q6 | Maturity signals | PASS | v3.7.2 (newer than Gemini DR's claimed v3.6.0), STABILITY.md (11.7 KB, formal Stable/Experimental/Internal classification), SCALE.md (5.8 KB, tested up to 50k sources / 150k pages / 400k graph nodes) |
 
-**Phase 2 — Librarian deployment (if Phase 1 passes)**:
-1. Deploy `@swarmvaultai/cli` to `cemini-librarian:/opt/cemini-wiki/`
-2. Connect to existing Ollama instance (`nomic-embed-text` already running)
-3. Replace kb-server's role (or run side-by-side initially)
-4. Update `concepts/librarian-server-architecture.md` Phase 3 entry with new state
+### NO-GO reasoning
 
-**Phase 3 — Decommission llm-wiki-compiler v0.4.0**:
-- If SwarmVault works end-to-end: archive llm-wiki-compiler from disk, retire kb-server (or keep as static-RAG companion).
-- If SwarmVault fails Phase 1 or Phase 2: stay on kb-server, document lessons, await llm-wiki-compiler v0.5+ or another candidate.
+Q1 is the load-bearing blocker, identical to the failure mode of llm-wiki-compiler v0.4.0 (hardcoded `CONCEPTS_DIR = "wiki/concepts"`) that triggered our adoption of kb-server as workaround.
 
-### Risk/caveat list
+Workspace state at audit time:
+- 99 entity files nested 1-deep across 10 subdirs (`entities/tools/` ×13, `entities/tickers/` ×30, `entities/infrastructure/` ×12, `entities/data-sources/` ×13, `entities/frameworks/` ×11, `entities/platforms/` ×9, `entities/security/` ×4, `entities/observability/` ×4, `entities/models/` ×2, `entities/components/` ×1)
+- 3,249 `@path` cross-link instances across the wiki
+- concepts/ and sources/ are flat (no nesting issue there)
 
-- **Tree-sitter overhead** for a markdown-only wiki may be wasted resources [NEEDS VERIFICATION 2026-05-04]
-- **Bus factor** — 169 commits + 368 stars is moderate; if the maintainer disappears, we're back to zero. Same risk as llm-wiki-compiler.
-- **STABILITY.md / SCALE.md documentation** is a positive maturity signal but doesn't substitute for end-to-end testing in our environment.
-- **MCP tool surface mismatch** may force us to write a translation layer between SwarmVault's MCP and our brain's expected tool calls (similar to the kb-server adapter work).
-- **License remains MIT**: clean for IP-sale, no AGPL/GPL contamination concerns.
+Three theoretical adaptation paths considered + rejected:
+
+1. **Flatten the wiki**: rename 99 entities (`entities/tools/foo.md` → `entities/foo.md` with category encoded into filename or moved to frontmatter). Loses directory-as-category browsing. Updates ~3,249 cross-link strings + wiki/index.md tree structure. **Cost too high relative to marginal gain over kb-server.**
+2. **Pre-process on sync**: rewrite paths during laptop→librarian sync. Workspace keeps nested; librarian sees flat. Adds complex bidirectional sync logic, drift risk, hard-to-debug edge cases.
+3. **Fork swarmvault**: modify `vault.ts:2781-2787` to walk arbitrary subdirectories. Maintenance burden + diverges from upstream + still need cross-link migration (Q3).
+
+**Decision**: stay on kb-server. The Karpathy compile loop loss vs SwarmVault is real but acceptable; kb-server provides the static-RAG functionality the brain currently needs. SwarmVault is structurally not a fit without restructuring either swarmvault or our wiki, neither justified by current pain points.
+
+### Conditions under which this verdict could flip
+
+- Upstream swarmvault adds config-driven category-tree support (would unblock Q1)
+- We migrate to flat layout for unrelated reasons (e.g. another tool also requires it, or cross-tool standardization argues for it)
+- Q3's `@path` → `[[wikilink]]` migration becomes attractive for other reasons (Obsidian wikilinks would work elsewhere too)
+
+### What we keep from this audit
+
+- `concepts/wiki-tooling-evaluation.md` updated with Phase 0 outcome
+- License-pattern catalog unchanged (SwarmVault is MIT-clean; no licensing contribution)
+- swarmvault evaluated and shelved — future Gemini DR sweeps can skip re-evaluating it unless one of the unblock conditions above changes
+
+### Cleanup
+
+`/tmp/swarmvault-audit/` removed post-audit.
 
 ## Snippets
 

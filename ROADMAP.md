@@ -18,8 +18,8 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 | # | Item | Surface | Notes |
 |---|------|---------|-------|
-| 1 | **SwarmVault Phase 0 source audit** | laptop | Clone repo, inspect path-resolution + frontmatter compatibility + bidir-link semantics. Resolves outstanding llm-wiki-compiler v0.4.0 deployment block (`CONCEPTS_DIR` flat-layout). See `wiki/entities/tools/swarmvault.md` Phase 0 checklist. |
-| 2 | **codegraph + leaf laptop install** | laptop | Both Adopt-tier MIT-licensed. `npm install -g codegraph`, `cargo install leaf` (or AUR/npm). `.gitignore` codegraph SQLite indices. |
+| ~~1~~ | ~~SwarmVault Phase 0 source audit~~ | ~~laptop~~ | **DONE 2026-05-04 — VERDICT: NO-GO.** Same architectural disease as llm-wiki-compiler (hardcoded flat layout in `vault.ts:2781-2787`); also uses `[[wikilink]]` syntax incompatible with our 3,249 `@path` cross-links. Adaptation cost (rename 99 nested entity files + rewrite 3k cross-links + lose category-as-directory) exceeds marginal benefit over kb-server. Stay on kb-server. See `wiki/entities/tools/swarmvault.md` for full audit. |
+| 1 | **codegraph + leaf laptop install** | laptop | Both Adopt-tier MIT-licensed. `npm install -g codegraph`, `cargo install leaf` (or AUR/npm). `.gitignore` codegraph SQLite indices. (Promoted to #1 after SwarmVault NO-GO.) |
 | 3 | **Klaassen-Magnus Elo math extraction** | prod (brief) | `briefs/2026-05-04_klaassen-magnus-elo-cemini-fastmcp.md`. Math extraction + commercial-data sourcing decision. **Direct prediction-market application** (Kalshi/Polymarket tennis contracts). |
 | 4 | **Riskfolio-Lib + FinanceToolkit FastMCP wiring** | prod (brief) | `briefs/2026-05-04_quant-libs-fastmcp-integration.md`. Position-sizing math (HRP, Kelly, Black-Litterman) + 150 financial metrics → `@mcp.tool` decorators in `services/llm_analyst/`. |
 | 5 | **probablyprofit pattern extraction** | prod (brief) | `briefs/2026-05-04_probablyprofit-pattern-extraction.md`. Kelly + LLM ensemble consensus + multi-vector kill switch. Networking layer is Polymarket-specific (rewrite for Kalshi). |
