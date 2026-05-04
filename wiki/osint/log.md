@@ -1,5 +1,23 @@
 # Wiki Log
 
+## [2026-05-04] persist | laptop stash tunnel under launchd (KeepAlive verified)
+
+Replaced bare `ssh -f -N -L 8088:localhost:8080 cemini-librarian` (this morning's wiring) with a launchd plist at `~/Library/LaunchAgents/com.cemini.stash-tunnel.plist`. Pivoted from autossh because Homebrew isn't installed on the laptop and launchd is the macOS-native zero-dep path.
+
+### Plist behavior
+- `RunAtLoad: true` — tunnel comes up at login (no manual `ssh` needed after laptop boot/wake-from-cold).
+- `KeepAlive: true` + `ThrottleInterval: 10` — respawn ssh within 10s of any drop (network change, server reboot, idle timeout).
+- `ServerAliveInterval=30` + `ServerAliveCountMax=3` + `ExitOnForwardFailure=yes` — exit cleanly if the SSH session goes silent or the local-port-forward fails to bind, so launchd can restart instead of holding a half-broken tunnel.
+
+### Verification
+Killed the running ssh PID; observed launchd respawn within ~10s with new PID. SSE handshake (`curl http://localhost:8088/sse`) returned HTTP 200 against the new PID. Pre-/post-state logged in `~/Library/Logs/cemini-stash-tunnel.log` (currently empty — success path produces no stderr).
+
+### Pages updated
+- `concepts/cemini-deployment.md` §9 persistence — replaced "launchd plist (TBD)" placeholder with the full plist XML + load/unload commands. autossh kept as alternative-if-brew-already-installed.
+
+### Open
+- Apply the same launchd-plist pattern when wiring kb-server or other librarian-side MCPs to the laptop (would need parallel plist with different Label + port mapping).
+
 ## [2026-05-04] wire | stash + brave-search MCP across all 3 Claude Code contexts (laptop + librarian + prod)
 
 Extended the morning's laptop-only stash wiring to cover all three contexts the user actually works in. Same MCP toolkit, different connection strings driven by network topology.

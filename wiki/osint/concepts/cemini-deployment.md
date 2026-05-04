@@ -279,8 +279,37 @@ p.write_text(json.dumps(d, indent=2))
 
 **Persistence** — `ssh -f -N` exits if the laptop sleeps or the connection drops. Two options for durable tunnels:
 
-- **autossh** (`brew install autossh`): `autossh -M 0 -f -N -L 8088:localhost:8080 -o ServerAliveInterval=30 -o ServerAliveCountMax=3 cemini-librarian`. Auto-restarts on drop. Recommended.
-- **launchd plist** at `~/Library/LaunchAgents/com.cemini.stash-tunnel.plist`. macOS-native, runs on login. Pattern documented in `briefs/` (TBD — author when wiring beyond stash).
+- **launchd plist** (chosen 2026-05-04 — macOS-native, no extra deps). Drop the plist below at `~/Library/LaunchAgents/com.cemini.stash-tunnel.plist`, then `launchctl load -w ~/Library/LaunchAgents/com.cemini.stash-tunnel.plist`. `RunAtLoad: true` brings the tunnel up at login; `KeepAlive: true` + `ThrottleInterval: 10` respawn within 10s of any drop. Verified by killing the ssh PID and watching launchd respawn it.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key><string>com.cemini.stash-tunnel</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/ssh</string>
+        <string>-N</string>
+        <string>-L</string><string>8088:localhost:8080</string>
+        <string>-o</string><string>ServerAliveInterval=30</string>
+        <string>-o</string><string>ServerAliveCountMax=3</string>
+        <string>-o</string><string>ExitOnForwardFailure=yes</string>
+        <string>-o</string><string>StrictHostKeyChecking=accept-new</string>
+        <string>cemini-librarian</string>
+    </array>
+    <key>RunAtLoad</key><true/>
+    <key>KeepAlive</key><true/>
+    <key>ThrottleInterval</key><integer>10</integer>
+    <key>StandardOutPath</key><string>/Users/claudiobarone/Library/Logs/cemini-stash-tunnel.log</string>
+    <key>StandardErrorPath</key><string>/Users/claudiobarone/Library/Logs/cemini-stash-tunnel.log</string>
+</dict>
+</plist>
+```
+
+  Status check: `launchctl list | grep stash`. Logs: `tail ~/Library/Logs/cemini-stash-tunnel.log`. Stop: `launchctl unload ~/Library/LaunchAgents/com.cemini.stash-tunnel.plist`. Note `-N` not `-f -N` — launchd manages the process lifecycle, so ssh stays in the foreground from launchd's perspective.
+
+- **autossh** (`brew install autossh`): `autossh -M 0 -f -N -L 8088:localhost:8080 -o ServerAliveInterval=30 -o ServerAliveCountMax=3 cemini-librarian`. Auto-restarts on drop. Alternative if Homebrew is already installed; otherwise launchd is cheaper.
 
 **Apply the same pattern to other librarian MCPs**: kb-server (`-L 8083:localhost:3838`), and to Cemini-prod MCPs once Cloudflare-tunnel-side wiring is decided. `cemini-mcp` and the polymarket MCPs reach over the prod-side Cloudflare tunnel rather than SSH local-port-forward — exact pattern TBD.
 
