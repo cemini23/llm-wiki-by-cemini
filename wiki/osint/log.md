@@ -3567,3 +3567,19 @@ Resolution: confirmed Cemini is private (not for open-source release at this tim
 - `/opt/cemini/dotenv.example` exists per CF73322 commit message; verifying it covers all 66 keys is a follow-up audit.
 - Inline body `## Relations` sections on the three reciprocal pages updated only at frontmatter level; `scripts/wiki_lint.py` will flag bidir-gaps and the inline-vs-frontmatter mismatch on next run.
 - LICENSE file on `/opt/cemini/`: not yet present per cemini-license-posture.md `[NEEDS VERIFICATION]`. Action item is to add an explicit proprietary LICENSE file pre-IP-sale.
+
+## [2026-05-04] reconcile | librarian state — Ollama/Phase-3 stale claims fixed
+
+Reconciliation pass on librarian-server-side documentation. Live probe of `cemini-librarian` 2026-05-04:
+
+- Ollama: systemd-managed `/usr/local/bin/ollama` on :11434 (localhost-only), running since 2026-04-28 21:47 UTC (5 days). Models loaded: `nomic-embed-text:latest` (137M F16, 274 MB) + `qwen2.5:0.5b` (494M Q4_K_M, 397 MB).
+- Stash: systemd-managed since 2026-05-02 15:54 UTC. Listening on :8080 (SSE) + :9090 (HTTP).
+- kb-server: Node on :3838, 397 docs indexed. `EnvironmentFile=/opt/kb-server/.env`; `.env` contains no embed/Ollama/model keys → kb-server's embedding path is not configured to Ollama (likely FTS / keyword search; not verified at code level).
+
+### Files updated
+- `.local/server.md` librarian section: removed "Phase 3 ... pending" claim and "Compiler state when Phase 3 lands" stub. Replaced with probed deployed-state inventory (kb-server + Ollama + stash all systemd-managed). Marked llm-wiki-compiler as **not adopted** (wiki-tooling-evaluation outcome) rather than pending.
+- `wiki/entities/infrastructure/cemini-stack.md`: replaced "Ollama nomic-embed-text — Status: install pending" with probed deployed-state line (both models, sizes, deploy date, port, scope). Hedged kb-server's use of Ollama to "available to" rather than asserting.
+
+### Deferred / not changed
+- llm-wiki-compiler historical references in `wiki/concepts/wiki-tooling-evaluation.md` and `wiki/concepts/librarian-server-architecture.md` left as-is — they are decision-record artifacts, not current-state claims.
+- `wiki/log.md:3171` and similar: historical state correctly preserved; not stale.

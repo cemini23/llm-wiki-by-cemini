@@ -76,7 +76,7 @@ Not Kubernetes, not Swarm (`docker info | grep Swarm` → `inactive`). Single-no
 
 - **kb-server** (Option C serving layer) — patched to honor `KB_TOOL_ALLOWLIST` env; exposes 7 read-only MCP tools (`kb_search`, `kb_search_smart`, `kb_context`, `kb_read`, `kb_list`, `kb_vault_status`, `kb_safety_check`). Write tools blocked at MCP boundary. See `.local/server.md` for patch lineage.
 - **stash** (alash3al/stash, Apache-2.0) — Go binary, 8-stage memory consolidation pipeline, Postgres + pgvector backend, MCP SSE :8080 / HTTP :9090. Deployed 2026-05-02 per @sources/alash3al-stash.md.
-- **Ollama nomic-embed-text** — embedding model for kb-server's vector search. (Status: install pending per `.local/server.md` Phase 3.)
+- **Ollama** — systemd-managed on :11434 (localhost-only); deployed 2026-04-28 per probe 2026-05-04. Two models loaded: `nomic-embed-text:latest` (137M params F16, ~274 MB on disk) for embeddings + `qwen2.5:0.5b` (494M params Q4_K_M, ~397 MB on disk) for small-reasoning tasks. Used by stash's 8-stage memory consolidation pipeline; available to kb-server for vector search.
 - **rsync target** — receives hourly `wiki/` syncs from the laptop via `scripts/sync_wiki_to_librarian.sh` (macOS crontab `0 * * * *`).
 - **Canonical raw-source store** — `/opt/cemini-bulk/research/` (~283 PDFs/docx, 642 MB) and `/opt/cemini-bulk/market-dataset/` (~17.6k files, 1.6 GB). Migrated from laptop 2026-04-28.
 
