@@ -284,6 +284,26 @@ p.write_text(json.dumps(d, indent=2))
 
 **Apply the same pattern to other librarian MCPs**: kb-server (`-L 8083:localhost:3838`), and to Cemini-prod MCPs once Cloudflare-tunnel-side wiring is decided. `cemini-mcp` and the polymarket MCPs reach over the prod-side Cloudflare tunnel rather than SSH local-port-forward — exact pattern TBD.
 
+#### 9a. Multi-context Claude Code wiring (laptop + librarian + prod)
+
+The user runs Claude Code in **three** contexts, each with its own `~/.claude.json` and its own connection-string considerations. As of **2026-05-04** all three are wired with the same MCP toolkit (stash + brave-search). The differences are network-topology-driven:
+
+| Context | `mcpServers.stash.url` | Why | Tunnel needed |
+| --- | --- | --- | --- |
+| Laptop Claude Code | `http://localhost:8088/sse` | Laptop sits *outside* the Hetzner private network. Stash's :8080 is firewalled at the cloud edge — the SSH local-port-forward (`-L 8088:localhost:8080`) is the only valid path. | **Yes** — bare `ssh -f -N` (or autossh for persistence). |
+| `ssh cemini-librarian` Claude Code | `http://localhost:8080/sse` | Stash binds to all interfaces on the librarian itself — direct localhost connection. | No. |
+| `ssh cemini-prod` Claude Code | `http://10.0.0.2:8080/sse` | Prod (`10.0.0.3`) and librarian (`10.0.0.2`) share the Hetzner private network `enp7s0`. Verified `curl -sv http://10.0.0.2:8080/sse` returns `HTTP/1.1 200 OK` from prod. | No. |
+
+The brave-search entry is identical across all three (`stdio` + `npx -y @brave/brave-search-mcp-server` + `BRAVE_API_KEY` in env). Both servers have Node 20+ and `npx` already installed (librarian has Node from kb-server; prod has Node from various ingest-layer containers).
+
+**Conductor MCP on prod** is pre-wired at the project level via `/opt/cemini/.mcp.json` (`type: stdio`, `command: python3`, `args: ["/opt/cemini/conductor/mcp_server.py"]`). When Claude Code is invoked from `/opt/cemini/`, conductor auto-loads. Not needed in `~/.claude.json` on prod.
+
+**Backups**: each `~/.claude.json` edit was preceded by `cp ~/.claude.json ~/.claude.json.bak-2026-05-04` on the host being edited. Roll back by `mv` if a wiring change goes bad.
+
+**Activation gate**: Claude Code reads `~/.claude.json` only at process start. Each context requires a Claude Code restart in that context to pick up new MCP entries. Sessions already running keep their old config.
+
+**Playwright is laptop-only.** Headless servers don't have a browser to drive — adding it on librarian/prod would just produce launch errors. Same logic for any other GUI-bound MCP.
+
 **Required external API keys** for the laptop side (separate from server `.env`):
 - `EXA_API_KEY` — Exa research. Set in `~/.claude/settings.json` user env. exa.ai/dashboard.
 - `BRAVE_API_KEY` — Brave search MCP. Set in MCP env block.

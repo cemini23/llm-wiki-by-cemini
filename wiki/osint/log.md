@@ -1,5 +1,33 @@
 # Wiki Log
 
+## [2026-05-04] wire | stash + brave-search MCP across all 3 Claude Code contexts (laptop + librarian + prod)
+
+Extended the morning's laptop-only stash wiring to cover all three contexts the user actually works in. Same MCP toolkit, different connection strings driven by network topology.
+
+### What changed (server-side)
+- **`cemini-librarian:/root/.claude.json`** — added `stash → http://localhost:8080/sse` (no tunnel — stash is local) + `brave-search` (stdio, npx, same API key as laptop). Backup at `/root/.claude.json.bak-2026-05-04`.
+- **`cemini-prod:/root/.claude.json`** — added `stash → http://10.0.0.2:8080/sse` (private Hetzner network, no tunnel — prod is `10.0.0.3`, librarian is `10.0.0.2`) + `brave-search` (same as librarian). Backup at `/root/.claude.json.bak-2026-05-04`.
+- **`/opt/cemini/.mcp.json`** (prod, project-level) — already had `conductor` wired at project level since 2026-05-02. No change needed.
+
+### Verification
+Three-context SSE handshake — all return HTTP 200:
+```
+Laptop  → tunnel:8088 → librarian:8080  : HTTP 200 (curl times out at 3s, expected for SSE)
+Librarian → localhost:8080               : HTTP 200
+Prod    → 10.0.0.2:8080 (private net)    : HTTP 200
+```
+
+### Why no tunnel on the servers
+Stash binds to `*:8080` and `*:9090` (verified via `ss -tlnp`). The Hetzner Cloud Firewall blocks the *public* edge, but the private `10.0.0.0/24` network bypasses the firewall — prod can hit librarian's `10.0.0.2:8080` directly. Only the laptop, sitting outside Hetzner, needs the SSH local-port-forward.
+
+### Pages updated
+- `concepts/cemini-deployment.md` §9a — new sub-section with the multi-context wiring matrix (laptop tunnel vs librarian-localhost vs prod-private-network)
+- `entities/infrastructure/cemini-stack.md` — stash bullet expanded to document the three-context wiring landed today
+- `log.md` — this entry
+
+### Activation gates (all three)
+Each Claude Code context picks up `~/.claude.json` only at process start. Restart in each context to activate. The user noted active sessions running, so activation is deferred until natural restart of each.
+
 ## [2026-05-04] wire | stash MCP — laptop Claude Code integration
 
 Wired stash episodic-memory MCP into the laptop's Claude Code session. Stash itself was deployed on `cemini-librarian` 2026-05-02; the laptop link landed today.
