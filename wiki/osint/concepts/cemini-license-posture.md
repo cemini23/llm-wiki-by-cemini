@@ -27,6 +27,7 @@ updated: 2026-05-04
 - @sources/5-4-links-tool-eval.md — 2026-05-04 ingest surfaced two new license patterns: **CC-BY-NC training-data contamination** (tennis_atp dataset → tennis_match_prediction MIT code becomes NC-bound) + **namespace confusion risk** (1weiho/open-slide vs CMU's openslide.org medical library)
 - @sources/links-2-5-4-tool-eval.md — 2026-05-04 ingest surfaced **dual-license MIT-vs-GPL ambiguity** pattern (Lumibot README claims MIT, core repo files labeled GPL-3.0)
 - @entities/tools/klaassen-magnus-elo.md — exemplar of pattern #4 (CC-BY-NC training-data contamination): MIT code, NC-bound data dependency, requires retraining-on-commercial-feeds before production deployment
+- @concepts/mitre-atlas-taxonomy.md — recorded 2026-05-04 license correction: ATLAS data feed is Apache-2.0 (not CC BY 4.0 as K28 eval claimed); website-presented content has separate MITRE terms; **eval-time-detected license claims should be verified against canonical LICENSE file in upstream repos before recording**
 
 ## Raw Concept
 

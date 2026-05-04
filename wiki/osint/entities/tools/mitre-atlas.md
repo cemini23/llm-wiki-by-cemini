@@ -7,10 +7,31 @@ related:
   - sources/5-4-links-tool-eval.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/cemini-license-posture.md
-maturity: draft
+maturity: validated
 created: 2026-05-04
 updated: 2026-05-04
 ---
+
+## Adoption status — concept page shipped 2026-05-04
+
+`wiki/concepts/mitre-atlas-taxonomy.md` is the canonical Cemini-side synthesis of ATLAS v5.6.0. Per the K28 plan's Option C: single concept page + reference URLs (NOT a full mirror of all 200+ ATLAS objects, since atlas.mitre.org is the canonical live source).
+
+The synthesis page covers:
+- 16 tactics enumerated (1-line summaries each)
+- 20 LLM/agent-relevant techniques (Cemini's primary threat surface)
+- 11 LLM-relevant mitigations mapped to Cemini implementation loci
+- 10 high-impact case studies (Morris II Worm, Bing Chat Data Pirate, Slack AI exfil, OpenClaw cases CS0048-CS0051, etc.)
+- Implementation cross-walk: ATLAS techniques → Cemini codepaths
+- Open follow-ups (technique classes lacking mapped defenses)
+
+## License correction (vs K28 ingest)
+
+K28 evaluator recorded ATLAS as "CC BY 4.0 + custom MITRE Terms of Use". Verified 2026-05-04:
+
+- **atlas-data GitHub repo** (canonical data source): **Apache-2.0** (per `mitre-atlas/atlas-data/LICENSE`). Permissive — preserve copyright notice, state changes, attribute origin.
+- **atlas.mitre.org website**: separate MITRE Terms of Use; the eval's CC BY 4.0 + verbatim attribution boilerplate applies when reproducing **website-presented** rendered content (case-study HTML, matrix views), NOT raw data feed.
+
+License-posture concept page (`@concepts/cemini-license-posture.md`) updated to reflect this distinction. Refresh cadence and re-fetch instructions documented in the synthesis page's "Updating this page" footer.
 
 ## Relations
 
