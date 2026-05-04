@@ -1,5 +1,25 @@
 # Wiki Log
 
+## [2026-05-04] wire | stash MCP — laptop Claude Code integration
+
+Wired stash episodic-memory MCP into the laptop's Claude Code session. Stash itself was deployed on `cemini-librarian` 2026-05-02; the laptop link landed today.
+
+### What changed
+- **SSH local-port-forward**: `ssh -f -N -L 8088:localhost:8080 -o ServerAliveInterval=60 -o ExitOnForwardFailure=yes cemini-librarian` — laptop:8088 → librarian:localhost:8080 (stash SSE).
+- **SSE handshake verified**: `curl -sv -H "Accept: text/event-stream" --max-time 3 http://localhost:8088/sse | head -10` returns `HTTP/1.1 200 OK` + `Content-Type: text/event-stream`.
+- **`~/.claude.json` mcpServers entry**: added `stash → {type: sse, url: http://localhost:8088/sse}` via Python (file too large for inline edit; backup at `~/.claude.json.bak-2026-05-04`).
+- **Activation gate**: requires Claude Code restart to load the new MCP server.
+
+### Why a tunnel (not direct connection)
+Stash ports 8080/9090 are blocked at the Hetzner Cloud Firewall — TCP timeout from laptop, immediate response from server-local. The SSH tunnel is the only valid public-side path. Documented as the canonical integration pattern in `concepts/cemini-deployment.md` §9.
+
+### Pages updated
+- `concepts/cemini-deployment.md` — replaced §9 "stash wiring TBD" placeholder with the worked example (tunnel + SSE verify + Python `~/.claude.json` edit + persistence options: autossh / launchd plist).
+- `entities/infrastructure/cemini-stack.md` — stash bullet now notes laptop wiring landed 2026-05-04 + the firewall rationale.
+
+### Pending
+- **Persistence**: bare `ssh -f -N` dies on laptop sleep / network change. Choose autossh (`brew install autossh && autossh -M 0 -f -N -o ServerAliveInterval=60 -L 8088:localhost:8080 cemini-librarian`) or a launchd plist that re-establishes on wake. Deferred until shadow-mode telemetry shows it actually matters.
+
 ## [2026-05-02] ARA adoption — 4 patterns deployed
 
 Four adoptions from Liu et al.'s Agent-Native Research Artifacts paper:

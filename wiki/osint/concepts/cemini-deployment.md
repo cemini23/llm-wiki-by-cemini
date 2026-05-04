@@ -253,7 +253,36 @@ Claude Code is the recommended interface for managing this deployment. Install C
 | `stash` (remote) | Episodic-memory MCP | SSH access to `cemini-librarian`; SSE :8080 / HTTP :9090 |
 | `polymarket-trading-mcp`, `polymarket-predictions-mcp` (remote) | Polymarket-side MCP exposed by prod containers | already deployed in prod stack |
 
-The remote MCPs are reached via the Cloudflare tunnel + per-MCP auth. Configuration sketch lives in `briefs/` (TBD — author when first remote MCP is wired into the laptop config).
+The remote MCPs are reached via **SSH local-port-forwarding** — the librarian's stash + kb-server are bound to `localhost` (or to all-interfaces but firewalled at Hetzner Cloud), so direct internet exposure is not relied on. Each MCP gets its own SSH tunnel mapping a laptop port to a librarian local port.
+
+**Worked example — stash MCP** (wired 2026-05-04):
+
+```bash
+# 1. Open SSH tunnel (laptop:8088 → cemini-librarian:localhost:8080)
+ssh -f -N -L 8088:localhost:8080 -o ServerAliveInterval=60 -o ExitOnForwardFailure=yes cemini-librarian
+
+# 2. Verify SSE endpoint responds locally
+curl -sv -H "Accept: text/event-stream" --max-time 3 http://localhost:8088/sse | head -10
+# Expect: HTTP/1.1 200 OK + Content-Type: text/event-stream
+
+# 3. Add to ~/.claude.json mcpServers (use Python to edit safely — file is large)
+python3 -c "
+import json, pathlib
+p = pathlib.Path.home() / '.claude.json'
+d = json.loads(p.read_text())
+d.setdefault('mcpServers', {})['stash'] = {'type': 'sse', 'url': 'http://localhost:8088/sse'}
+p.write_text(json.dumps(d, indent=2))
+"
+
+# 4. Restart Claude Code to pick up the new MCP entry.
+```
+
+**Persistence** — `ssh -f -N` exits if the laptop sleeps or the connection drops. Two options for durable tunnels:
+
+- **autossh** (`brew install autossh`): `autossh -M 0 -f -N -L 8088:localhost:8080 -o ServerAliveInterval=30 -o ServerAliveCountMax=3 cemini-librarian`. Auto-restarts on drop. Recommended.
+- **launchd plist** at `~/Library/LaunchAgents/com.cemini.stash-tunnel.plist`. macOS-native, runs on login. Pattern documented in `briefs/` (TBD — author when wiring beyond stash).
+
+**Apply the same pattern to other librarian MCPs**: kb-server (`-L 8083:localhost:3838`), and to Cemini-prod MCPs once Cloudflare-tunnel-side wiring is decided. `cemini-mcp` and the polymarket MCPs reach over the prod-side Cloudflare tunnel rather than SSH local-port-forward — exact pattern TBD.
 
 **Required external API keys** for the laptop side (separate from server `.env`):
 - `EXA_API_KEY` — Exa research. Set in `~/.claude/settings.json` user env. exa.ai/dashboard.
