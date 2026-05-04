@@ -19,6 +19,11 @@ briefs/
 # --- Claude Code per-project state (settings, lock files, scheduled-task state) ----
 .claude/
 
+# --- codegraph indices (per-project AST + symbol SQLite, regenerable on init) -----
+.codegraph/
+*.codegraph.sqlite
+*.codegraph.sqlite-journal
+
 # --- Session-state cache (changes every session; ephemeral curator working memory) --
 hot.md
 

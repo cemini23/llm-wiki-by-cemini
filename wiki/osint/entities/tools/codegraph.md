@@ -7,10 +7,26 @@ related:
   - sources/links-2-5-4-tool-eval.md
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/swarmvault.md
-maturity: draft
+maturity: validated
 created: 2026-05-04
 updated: 2026-05-04
 ---
+
+## Install state — installed laptop-side 2026-05-04
+
+- Installed via `npm install -g @colbymchenry/codegraph` (npm prefix set to `~/.local` to avoid `/usr/local` sudo requirement)
+- Binary at `~/.local/bin/codegraph` (symlinked from `~/.local/lib/node_modules/@colbymchenry/codegraph/dist/bin/codegraph.js`)
+- Version: v0.7.3 (current as of 2026-05-04)
+- `~/.local/bin` already on PATH via `~/.zshrc:4`
+- `.gitignore` updated in OSINT WORKSPACE to exclude `.codegraph/` directory + `*.codegraph.sqlite*` index files (preventive — codegraph hasn't been initialized in this workspace yet)
+
+## Next step — initialize in CeminiSuite
+
+`codegraph init` is intended to run in the **Cemini Python codebase**, not this markdown wiki. Once the user picks a local CeminiSuite directory (`/Users/claudiobarone/Desktop/CeminiSuite/` or similar) and runs `codegraph init`, codegraph builds its SQLite index of the call-graph + symbols and starts watching for changes. Subsequent Claude Code sessions in that directory get token-efficient symbol lookup.
+
+Do NOT initialize codegraph in:
+- The OSINT WORKSPACE (markdown only, AST indexing wastes resources)
+- Any deployed prod path (codegraph is laptop-only per K28 eval verdict)
 
 ## Relations
 

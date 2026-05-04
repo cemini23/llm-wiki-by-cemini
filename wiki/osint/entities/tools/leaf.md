@@ -6,10 +6,31 @@ keywords: [leaf, terminal-markdown, rust, latex-rendering, watch-mode, wiki-auth
 related:
   - sources/links-2-5-4-tool-eval.md
   - concepts/wiki-tooling-evaluation.md
-maturity: draft
+maturity: validated
 created: 2026-05-04
 updated: 2026-05-04
 ---
+
+## Install state — installed laptop-side 2026-05-04
+
+- Installed via `npm install -g @rivolink/leaf` (the @rivolink scoped npm package + platform-specific binaries via optionalDependencies)
+- Binary at `~/.local/bin/leaf` (symlinked from `~/.local/lib/node_modules/@rivolink/leaf/bin/leaf.js`)
+- Version: v1.18.2 (released 2026-05-03 per upstream — extremely fresh)
+- Smoke test: `--version` returns "leaf 1.18.2"; non-TTY stdin returns "Device not configured (os error 6)" which is expected for a TUI tool
+
+## Usage
+
+Interactive viewer:
+```
+leaf wiki/concepts/autoresearch-loop-pattern.md
+leaf --watch wiki/sources/gemini-sci-research-2602-03837.md  # live-reload while editing
+leaf --picker  # file browser
+echo '# heading' | leaf  # stdin (TTY-attached only)
+```
+
+Themes available: `arctic | forest | ocean | solarized-dark`. Edit config: `leaf --config`.
+
+Use leaf alongside Claude Code editing sessions: edit a wiki page in Claude Code (or any editor) → switch to a terminal running `leaf --watch <page>` to verify LaTeX renders, frontmatter parses, and tables align before invoking `python3 scripts/wiki_lint.py`.
 
 ## Relations
 
