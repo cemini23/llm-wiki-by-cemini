@@ -63,6 +63,10 @@ Together: brain says "tell me about NVDA" → FinanceDatabase returns sector/ind
 - Coverage gaps (does it have all Cemini's existing watchlist entries? Including crypto + options + futures?)
 - Container build-time impact (small, but verify with FinanceToolkit's known scipy/scikit/statsmodels footprint)
 
+### Adoption status
+
+**Brief addendum staged 2026-05-05**: FinanceDatabase folded into the existing K28 quant-libs brief (`@briefs/2026-05-04_quant-libs-fastmcp-integration.md`) rather than a standalone brief. Title updated to "Riskfolio-Lib + FinanceToolkit + FinanceDatabase — FastMCP Integration". New section "FinanceDatabase FastMCP wrapper" defines 3 tools (`lookup_ticker_metadata`, `screen_universe`, `search_symbols`); offline catalog → no data-source guardrail needed (unlike FinanceToolkit's Yahoo-Finance default). Pairs symmetrically with FinanceToolkit (same author JerBouma): FinanceDatabase = "what symbols exist, and what are they?", FinanceToolkit = "given a symbol, calculate 150 metrics on it." Brief at `cemini-prod:/opt/cemini/briefs/2026-05-04_quant-libs-fastmcp-integration.md` (re-scp'd 2026-05-05).
+
 ## Snippets
 
 - **Scope framing** (K30 eval): "exhaustive, completely offline catalog of over 300,000 global financial symbols organized and queried via a Python library." [Source: 5_5 links.docx URL 18]

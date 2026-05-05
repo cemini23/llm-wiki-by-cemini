@@ -1,5 +1,43 @@
 # Wiki Log
 
+## [2026-05-05] adopt | pykalshi brief + FinanceDatabase brief addendum (ROADMAP #12 + #14)
+
+Two ROADMAP items closed in one combined session.
+
+### #12 pykalshi brief (NEW)
+
+Verified `github.com/ArshKA/pykalshi` via gh API:
+- License: **MIT** ✓
+- 85 stars / 16 forks / 30 commits / 0 open issues / last push 2026-05-02 (3 days fresh) / v1.0.6 on PyPI / CI test workflow active
+- WebSocket streaming + pandas integration + automatic retries + Action/Side enum-driven API per README
+
+Drafted `briefs/2026-05-05_pykalshi-adoption.md` (10.4 KB) modeled on K30 Polymarket Stack brief structure. 6-phase migration (Phase 0 verification → kalshi_client.py replacement → FastMCP tool updates → backtest data layer → Conductor taxonomy class → 30-day legacy retention). Sister to `briefs/2026-05-05_polymarket-stack-adoption.md`; together refresh both venue clients in Cemini's stack.
+
+scp'd to `cemini-prod:/opt/cemini/briefs/2026-05-05_pykalshi-adoption.md`.
+
+### #14 FinanceDatabase brief addendum (UPDATED in place)
+
+Folded FinanceDatabase into the existing K28 quant-libs brief rather than staging a standalone brief. Brief retitled "Riskfolio-Lib + FinanceToolkit + FinanceDatabase — FastMCP Integration".
+
+Additions to `briefs/2026-05-04_quant-libs-fastmcp-integration.md`:
+- Summary updated: 2 → 3 libraries
+- Background table: + FinanceDatabase row (MIT, offline 300k+ symbol catalog)
+- Architecture diagram: + `ticker_universe.py` FastMCP wrapper layer
+- New section "3. FinanceDatabase FastMCP wrapper" with 3 `@mcp.tool` decorators: `lookup_ticker_metadata` / `screen_universe` / `search_symbols`. Offline catalog → no data-source guardrail needed (unlike FinanceToolkit's Yahoo-default contamination concern).
+- Conductor taxonomy class addition: `ticker_lookup` (cheap path → small/fast model + FinanceDatabase tools)
+- Healthcare/biotech-prediction-market application section (per `@memory/prediction_market_scope`): contract-mentions-MRNA → resolve to sector=Healthcare → trigger biotech fundamentals tools without Yahoo/FMP roundtrip
+- Done-when checklist: + `ticker_universe.py` exposes 3 decorators with unit-test coverage; + `financedatabase.md` entity promoted draft → validated
+
+Re-scp'd to `cemini-prod:/opt/cemini/briefs/2026-05-04_quant-libs-fastmcp-integration.md` (14.7 KB, was 10.2 KB).
+
+### Files touched
+- `briefs/2026-05-05_pykalshi-adoption.md` (NEW)
+- `briefs/2026-05-04_quant-libs-fastmcp-integration.md` (UPDATED + re-scp'd)
+- `wiki/entities/tools/pykalshi.md` (draft → validated; resolved Phase 0 + URL/license/maturity verified)
+- `wiki/entities/tools/financedatabase.md` (added Adoption status section pointing to brief)
+- ROADMAP items #12 + #14 marked DONE
+- This log entry
+
 ## [2026-05-05] audit | PageIndex Phase 0 — VERDICT: NO-GO (ROADMAP #11)
 
 Cloned `https://github.com/VectifyAI/PageIndex` to `/tmp/pageindex-audit/` for Phase 0 source audit (similar template to K28 SwarmVault audit). Eval claim accurate: MIT licensed, vectorless reasoning-based RAG. Eight load-bearing questions answered.

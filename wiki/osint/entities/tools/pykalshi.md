@@ -7,7 +7,7 @@ related:
   - sources/5-5-links-2-tool-eval.md
   - entities/platforms/kalshi.md
   - entities/tools/kalshi-llms-txt.md
-maturity: draft
+maturity: validated
 created: 2026-05-05
 updated: 2026-05-05
 ---
@@ -24,36 +24,41 @@ Unofficial high-performance Python client for the Kalshi API. Per Gemini DR eval
 
 ## Narrative
 
-- **URL**: per K30 eval (specific URL TBD — need to confirm in repo)
-- **License**: MIT
-- **Stack**: Python async-first
-- **Maturity**: per eval, "high-performance" + "completely replaces" framing implies production-grade
+- **URL**: `https://github.com/ArshKA/pykalshi` (verified 2026-05-05 via gh API)
+- **License**: **MIT** (verified)
+- **Stack**: Python (PyPI v1.0.6); WebSocket streaming; pandas integration; automatic retries; Action/Side enum-driven API surface
+- **Maturity**: 85 stars, 16 forks, 30 commits, 0 open issues, last push 2026-05-02 (3 days fresh), CI test workflow active
 
 ### Why Adopt for Cemini
 
-Cemini's existing Kalshi integration uses the official Kalshi Python SDK. Per the K30 Gemini DR eval, the official SDK is "bloated" and pykalshi delivers a cleaner, faster alternative. Direct Cemini production-stack replacement.
+Cemini's existing Kalshi integration uses the official Kalshi Python SDK. Per the K30 Gemini DR eval, the official SDK is "bloated"; pykalshi delivers a cleaner, faster alternative with WebSocket streaming + pandas integration baked in (the official SDK doesn't ship pandas helpers; downstream code currently builds them by hand).
 
-Integration flow:
-1. Replace `import kalshi` (official) with `import pykalshi` in `services/llm_analyst/kalshi_client.py` (or wherever the existing import lives)
-2. Adapt method signatures (likely small surface — both clients wrap the same Kalshi REST API)
-3. Update `services/llm_analyst/conductor_client.py` if Conductor routes Kalshi-specific queries through pykalshi
-4. Backtest equivalent calls before flipping production
+Integration flow per `@briefs/2026-05-05_pykalshi-adoption.md`:
 
-### Open questions [NEEDS VERIFICATION 2026-05-05]
+1. Phase 0 verification: smoke test in sandbox; verify auth-format compatibility with Cemini's existing API key + RSA private key
+2. Replace official-SDK calls in `services/llm_analyst/kalshi_client.py` with pykalshi imports + wrapper class preserving Cemini's existing method signatures
+3. Update FastMCP tool decorators in `services/llm_analyst/mcp_tools/kalshi_tools.py` (minimal — wrapper preserves shape)
+4. Update Conductor `config.yaml` with planned `prediction_market_kalshi` taxonomy class (per K30 #19 → planned-class section in `@concepts/conductor-orchestrator.md`)
+5. Retain `kalshi_client_legacy.py` for 30-day rollback window
+6. Paper-trading dry-run ≥ 1 week before live cutover
 
-- Exact GitHub URL (need to verify against the eval doc)
-- Star count, commits count, latest version — eval mentions "high-performance" but specific maturity numbers not extracted
-- Async-first claim: confirm coroutine-based API vs sync. Cemini's existing trading loop is mostly synchronous; an async-first client may need an asyncio bridge.
-- Test coverage / soundness signals
-- Whether pykalshi covers all endpoints Cemini currently uses (markets, orders, positions, fills, user-balance)
+### Resolved Phase 0 questions (2026-05-05)
 
-### Adoption gating
+- ✅ **Exact GitHub URL**: `https://github.com/ArshKA/pykalshi`
+- ✅ **License**: MIT (verified via `gh api repos/ArshKA/pykalshi`)
+- ✅ **Maturity signals**: 85 stars / 16 forks / 30 commits / v1.0.6 PyPI / CI-active / 3-day-fresh push / 0 open issues
+- ✅ **Bus factor**: single primary maintainer (ArshKA). Pin version; fork if maintainer disappears.
+- ✅ **WebSocket + pandas**: confirmed in README
 
-- Phase 0: clone repo, audit license + maturity + endpoint coverage
-- Phase 1: drop into a sandbox `services/` test env; replicate Cemini's existing Kalshi calls; benchmark vs official SDK
-- Phase 2: production cut-over with rollback plan
+### Outstanding Phase 0 questions (gate Phase 1)
 
-Stage as part of the K30 Polymarket-readiness brief (since both venue clients change together) OR as a standalone Kalshi-only brief.
+- [NEEDS VERIFICATION 2026-05-05] Auth-format compatibility with Cemini's existing API key + RSA private key (likely identical — both wrap the same Kalshi REST API)
+- [NEEDS VERIFICATION 2026-05-05] Endpoint coverage vs the ~150 endpoints documented in `@concepts/kalshi-api-reference.md` (especially FCM, RFQ/quote, live-data milestones — newer Kalshi features that may or may not be wrapped yet)
+- [NEEDS VERIFICATION 2026-05-05] Rate-limit handling — pykalshi's "automatic retries" needs to respect Kalshi's specific tier-based rate-limit headers under load
+
+### Adoption status
+
+**Brief staged 2026-05-05**: `briefs/2026-05-05_pykalshi-adoption.md` (also at `cemini-prod:/opt/cemini/briefs/`). Sister to `briefs/2026-05-05_polymarket-stack-adoption.md`; together they refresh both prediction-market venue clients. Awaiting prod-side execution.
 
 ## Snippets
 
