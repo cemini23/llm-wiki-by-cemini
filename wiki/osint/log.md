@@ -1,5 +1,45 @@
 # Wiki Log
 
+## [2026-05-05] decide | atlas-gic + XSKILL → audit-trail subset (codex-reviewed scope reduction)
+
+User asked for codex-agent independent review of the K28 atlas-gic + K29 XSKILL Conductor-evolution briefs before committing to GO/NO-GO on the operational-cost commitment. Codex review surfaced three correctness issues:
+
+1. **Per-cycle LLM cost was 2-7× understated**: XSKILL's `propose_via_critique()` runs per-taxonomy-class (8+ classes) not once per cycle. Plus skill_writer.py adds judgement-gate calls per proposed skill. Revised estimate $0.50-1.80/cycle, not $0.10-0.25.
+
+2. **The "≤25% of weekly Conductor budget" cap is degenerate at current traffic**: at ~10 decisions/day, 25% = $0.026/week which is below even the low-end cost estimate. Cap as written would prohibit running the system.
+
+3. **The ≥5% fitness-improvement gate is statistically undetectable**: Cohen's d 0.2 with n=30 → power <50%. Reliably detecting 5% needs ~300+ shadow decisions per evaluation = ~300 days at current 10-decisions/day rate.
+
+Codex's load-bearing finding: the IP-sale "demonstrable self-improvement capability" audit-trail story is achievable from `routing.jsonl` + git-tracked config history + structured audit JSONL **without the LLM mutation engine**. The remaining 15% (automated proposal) is what requires the autoresearch loop, which isn't justified at current scale.
+
+### Decision: scope-reduce both briefs to audit-trail subset
+
+New superseding brief: `briefs/2026-05-05_conductor-audit-trail-phase1.md` (14.4 KB, scp'd to prod).
+
+- Implements **only Phases 1 + 5** of the original autoresearch brief: fitness function (with per-class breakdown to surface class-level regressions early) + structured audit JSONL + git-tracked config commits with structured commit messages
+- **No LLM calls; no cron; no auto-promotion** — manual or post-incident `--build-priors` triggers only
+- ~2-4 days prod-side engineering, ~$0/week ongoing operational cost
+- Captures ~85% of the IP-sale narrative value at ~2% of the engineering cost (per codex)
+
+### Two predecessor briefs kept staged but marked DEFERRED
+
+- `briefs/2026-05-04_autoresearch-conductor-evolution.md` — Phases 2-6 deferred. Top-of-file STATUS header added pointing to the superseding brief. Re-scp'd to prod.
+- `briefs/2026-05-04_xskill-cross-rollout-critique-conductor.md` — entirely deferred. Top-of-file STATUS header added. Re-scp'd to prod.
+
+Both briefs retained intact (do NOT delete or modify the deferred phases) for future activation when **both** triggers fire:
+1. Traffic threshold: ≥ 3,500 decisions/week sustained for ≥ 2 weeks
+2. Demonstrated value pull: explicit buyer/research signal for the "automated self-proposing" differentiator
+
+### ROADMAP
+
+- Item #6 (atlas-gic): partially superseded; struck-through with deferred-phases note
+- Item #6b (XSKILL): entirely deferred; struck-through with deferred-status note
+- Item #6c (NEW): "Conductor audit-trail Phase 1+5" — the subset that ships now
+
+### Methodology note
+
+The codex review pattern worked well: independent agent reading both briefs catches statistical and cost-cap errors that the original drafter (me) didn't surface. Logging this for future curator-discipline reuse: when a brief's GO/NO-GO has substantial commitments (engineering days + operational cost + statistical claims), dispatch codex/Plan/code-reviewer for an independent pass before the user signs off. Saves wrong-direction implementation effort.
+
 ## [2026-05-05] adopt | pykalshi brief + FinanceDatabase brief addendum (ROADMAP #12 + #14)
 
 Two ROADMAP items closed in one combined session.
