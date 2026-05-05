@@ -1,5 +1,80 @@
 # Wiki Log
 
+## [2026-05-05] ingest | K30 — Polymarket-readiness wave (4 docx + 2 PDFs, 102 tools)
+
+User dropped 7 sources. preingest_check: 6 NEW + 1 DUPLICATE (PredictionMarketBench arXiv 2602.00133 already at `sources/kalshi-4-3-29.md` since 2026-04-23 — duplicate removed from inbox).
+
+### 6 NEW sources
+
+| File | Type | Note |
+|------|------|------|
+| `5_5 links.docx` | Gemini DR eval | 22 tools — Adopts: Understand-Anything, Horizon, **PageIndex** (vectorless RAG), **FinanceDatabase** (300k symbols); Steal-from: Claude-OSINT, CodeMachine-CLI |
+| `5_5 links 2.docx` | Gemini DR eval | 32 tools (largest) — Adopts: **Kalshi llms.txt** + **pykalshi**; Steal-from: kalshi-ai-trading-bot, prediction-market-analysis, Polymarket-Kalshi BTC arb (cross-doc duplicate w/ links-3-5_4 URL 17), polymarket-sports-analysis |
+| `links 3 5_4.docx` | Gemini DR eval | 24 tools — Adopts: **Polymarket Agents** (official-sanctioned framework), Claude Code+Obsidian+Graphify; Steal-from: 5 different Polymarket MM impls + ELv2-licensed Context Mode + BTC arb cross-doc duplicate. **Surfaced Elastic License v2 (ELv2) as 9th license-pattern** in `concepts/cemini-license-posture.md` |
+| `Polymarket 5_5.docx` | Gemini DR eval | 24 Polymarket-specific — Adopts: **python-order-utils** + **polymarket-mcp-server** (re-confirmed from Wave 5); Steal-from: rs-clob-client, poly-sdk, OctoBot (GPL-3.0 clean-room), polymarket-copy-trading-bot, polybot |
+| `Deep GraphRAG- ...pdf` | arXiv 2601.11144 | Hierarchical GraphRAG + DW-GRPO. Joins K25 GRPO sweep family. 1.5B compact model approaches 70B perf via DW-GRPO. |
+| `Reinforcement Learning- An Overview.pdf` | arXiv 2412.05265v5 (Murphy) | 253-page RL textbook. **Reference material**, deep-read deferred per chapter as topics surface. |
+
+### 12 wiki pages (4 docx source pages + 2 PDF source pages + 7 entity stubs - actually 13 because of license-posture update)
+
+Source pages (6):
+- `sources/5-5-links-tool-eval.md`
+- `sources/5-5-links-2-tool-eval.md`
+- `sources/links-3-5-4-tool-eval.md`
+- `sources/polymarket-5-5-tool-eval.md`
+- `sources/deep-graphrag-2601-11144.md`
+- `sources/rl-overview-murphy-2412-05265.md`
+
+Entity stubs (7):
+- `entities/tools/pykalshi.md` — Adopt; replaces bloated Kalshi official SDK
+- `entities/tools/kalshi-llms-txt.md` — Adopt; ingest Kalshi's LLM-readable docs
+- `entities/tools/polymarket-agents.md` — Adopt; official-sanctioned Polymarket framework
+- `entities/tools/polymarket-python-order-utils.md` — Adopt; Polymarket order signing dependency
+- `entities/tools/pageindex.md` — Adopt; vectorless RAG (Phase-0 audit pending — SwarmVault-style flat-layout risk)
+- `entities/tools/financedatabase.md` — Adopt; 300k symbol offline catalog (pairs with K28's FinanceToolkit)
+- `entities/tools/claude-osint.md` — Steal-from; 5,500 lines of OSINT SKILL.md (workspace-side, directly mine domain)
+
+License-posture concept updated:
+- `concepts/cemini-license-posture.md` — pattern catalog 8→9 modes (added ELv2 / source-available with use-restrictions)
+
+### Polymarket integration stack — canonical
+
+The K30 ingest defines Cemini's **complete Polymarket integration stack** (all MIT, IP-sale-clean):
+
+| Component | Role | Source |
+|-----------|------|--------|
+| Polymarket Agents | Official-sanctioned framework foundation | `links 3 5_4.docx` URL 18 |
+| python-order-utils | Order signing + cryptography | `Polymarket 5_5.docx` URL 5 |
+| py-clob-client (or rs-clob-client) | CLOB API wrapping | `Polymarket 5_5.docx` URL 4 / reference |
+| caiovicentino/polymarket-mcp-server | MCP bridge to Cemini's brain | `Polymarket 5_5.docx` URL 19 (re-confirmed Wave 5 Adopt) |
+
+Stage as a single comprehensive **Polymarket Stack Adoption brief** for the prod-side Claude session.
+
+### Cross-doc duplicate signal
+
+Polymarket-Kalshi BTC Arbitrage Bot appears in BOTH `5_5 links 2.docx` URL 8 AND `links 3 5_4.docx` URL 17. Per K8/K9 cross-doc-duplicate discipline: high-confidence architectural pattern signal — both independent evals reach Steal-from-tier verdict.
+
+### Deep GraphRAG + RL Overview cross-link
+
+Deep GraphRAG's DW-GRPO joins the K25 GRPO sweep family (training-free GRPO, MMGRPO, GiGPO, MasRouter, Meta-Router, StR, ToolOrchestra). Murphy's RL Overview is the textbook foundation for all of them — reference shell created so future ingests can cite "Murphy ch. N" without re-deep-reading the 253pp.
+
+### Index updates
+
+- Source counts: 301 → 307 (+6)
+- llm-agents cluster: 125 → unchanged (K30 sources span multiple clusters; primary is prediction-markets + rag, not llm-agents)
+- Entity stubs: + 7 under `entities/tools/`
+
+### Raw-source moves
+- All 6 NEW raws → `cemini-librarian:/opt/cemini-bulk/research/`
+- 1 duplicate (PredictionMarketBench) deleted from laptop without librarian transfer (already there since 2026-04-23 ingest)
+
+### Open follow-ups
+- **Polymarket Stack Adoption brief** staged at `briefs/2026-05-05_polymarket-stack-adoption.md` for prod-side execution
+- **PageIndex Phase-0 audit** queued (workspace-side, similar to K28 SwarmVault audit)
+- **Kalshi llms.txt ingest** — operational task; can be a cron job
+- **FinanceDatabase + pykalshi FastMCP integration** — could be folded into existing K28 quant-libs brief or staged separately
+- **Claude-OSINT skill merge** — workspace-side curator skills augmentation; deferred until Phase-0 inspection
+
 ## [2026-05-04] ingest | XSKILL paper + LeetCode prep stub (K29)
 
 User dropped 2 sources: `XSKILL- Continual Learning from Experience and Skills in Multimodal Agents.pdf` (arXiv 2603.12056, HKUST + Zhejiang U + HUST, 27 pp) + `60 Popular LeetCode Problems & Solution for SDET.pdf` (off-domain personal reference). Pre-ingest dedup: 2 NEW.

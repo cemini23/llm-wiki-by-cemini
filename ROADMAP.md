@@ -8,11 +8,12 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
-## Active — this session (2026-05-04)
+## Active — this session (2026-05-05)
 
-- **K28 5_4 sweep** — 33-tool eval batch + Gemini Sci Research methodology paper (arXiv 2602.03837v3). 15 wiki pages, license-posture catalog 5 → 8 patterns. Pushed `d74d061..3f030a8`. See `wiki/log.md` "[2026-05-04] ingest" entry.
-- **K29 XSKILL ingest** — XSKILL paper (arXiv 2603.12056) + LeetCode prep stub. 3 wiki pages (xskill source + leetcode stub + autoresearch-loop-pattern updated to 4 instantiations). XSKILL's cross-rollout critique mechanism extends the autoresearch evolution path. Brief staged at `briefs/2026-05-04_xskill-cross-rollout-critique-conductor.md` as companion to atlas-gic brief.
-- **Post-ingest brief staging** — ROADMAP update + 5 prod briefs in `briefs/` (Klaassen-Magnus Elo, Riskfolio-Lib + FinanceToolkit, atlas-gic autoresearch, probablyprofit pattern extraction, XSKILL cross-rollout critique). Per `post_ingest_workflow` memory rule.
+- **K30 Polymarket-readiness wave** — 4 Gemini DR docx batches (102 tools) + Deep GraphRAG arXiv 2601.11144 + Murphy RL Overview arXiv 2412.05265v5. 13 wiki pages (6 source + 7 entity stubs) + license-posture 8 → 9 patterns (added ELv2). 1 prod brief staged: `briefs/2026-05-05_polymarket-stack-adoption.md` (Polymarket Agents + python-order-utils + py-clob-client + polymarket-mcp-server unified adoption).
+- **K29 XSKILL ingest (carryover)** — completed 2026-05-04. 1 prod brief at `briefs/2026-05-04_xskill-cross-rollout-critique-conductor.md`.
+- **K28 5_4 sweep (carryover)** — 33-tool eval batch + Gemini Sci Research methodology paper. 4 prod briefs staged. Adoption work complete (SwarmVault NO-GO, codegraph + leaf installed, skill_audit.py shipped, MITRE ATLAS synthesized).
+- **Post-ingest brief staging** — 6 prod briefs in `briefs/` total (5 K28+K29 + 1 K30). Per `post_ingest_workflow` memory rule.
 - **Server-side error-code-1 triage** — DONE (IS_SANDBOX=1 wrapper at `/root/.claude/remote/ccd-cli/2.1.121` — verified working).
 
 ## Next — queued (K28-driven adoption work, in priority order)
@@ -26,6 +27,12 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 | 5 | **probablyprofit pattern extraction** | prod (brief) | `briefs/2026-05-04_probablyprofit-pattern-extraction.md`. Kelly + LLM ensemble consensus + multi-vector kill switch. Networking layer is Polymarket-specific (rewrite for Kalshi). |
 | 6 | **atlas-gic autoresearch loop clean-room** | prod (brief) | `briefs/2026-05-04_autoresearch-conductor-evolution.md`. Conductor v0.1.1 evolution candidate. Shadow-mode-first rollout to bound token cost. |
 | 6b | **XSKILL cross-rollout critique** (companion to #6) | prod (brief) | `briefs/2026-05-04_xskill-cross-rollout-critique-conductor.md`. Plugs MLLM-judged critique into atlas-gic's promote/revert pipeline as second proposal source. License-audit Phase 0 gates implementation. Ships together with #6. |
+| 10 | **Polymarket Stack Adoption** | prod (brief) | `briefs/2026-05-05_polymarket-stack-adoption.md`. Coherent 4-component stack: Polymarket Agents + python-order-utils + py-clob-client + polymarket-mcp-server (all MIT). Adds Polymarket as Cemini's secondary prediction-market venue. |
+| 11 | **PageIndex Phase 0 audit** | laptop | Vectorless reasoning-based RAG candidate (MIT). Phase-0 audit similar to K28 SwarmVault. Watch for flat-layout disease before getting excited. |
+| 12 | **pykalshi adoption** | prod (brief candidate) | Replace bloated official Kalshi SDK with pykalshi (MIT, "completely replaces"). Could be folded into Polymarket Stack brief as a sister "Kalshi Stack Refresh", or staged separately. |
+| 13 | **Kalshi llms.txt ingest** | librarian (cron) | Kalshi publishes llms.txt for LLM consumption. Cron-pull → `wiki/concepts/kalshi-api-reference.md` synthesis page → kb-server indexes. Refresh monthly. |
+| 14 | **FinanceDatabase + FinanceToolkit FastMCP integration** | prod (brief) | Folds into existing K28 quant-libs brief OR stages separately. 300k symbol catalog + 150 metrics together = full ticker-research toolchain. |
+| 15 | **Claude-OSINT skill merge** | laptop | Workspace-side: 5,500 lines of OSINT SKILL.md. Selectively port relevant skills into ~/.claude/skills/. Phase-0 inspection first. |
 | 7 | **MedSkillAudit veto-gate port** | laptop | Refactor framework to `scripts/skill_audit.py` for financial-prompt validation (40% static / 60% dynamic / Veto Gates). |
 | 8 | **MITRE ATLAS taxonomy ingestion** | wiki (separate workstream) | 16 tactics × 170 techniques × 35 mitigations × 57 case studies → wiki layer. Attribution requirement: verbatim MITRE copyright reproduction. |
 | 9 | **License-pattern catalog (8 modes)** | next sweep | Apply explicit checklist to next Gemini DR eval ingest: NO-LICENSE, AGPL Docker-defeat, GPL derivative-work, CC-BY-NC training-data contamination, dual-license MIT-vs-GPL, namespace confusion, LGPL dynamic-linking, dual-licensing enterprise-tier gating. |

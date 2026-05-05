@@ -26,6 +26,7 @@ updated: 2026-05-04
 - @sources/4-3-link-re-2.md — Moirai (CC-BY-NC-4.0) + Firecrawl (AGPL-3.0) rejections recorded in K14 deep-read
 - @sources/4-4-link-re-2.md — AGPL-3.0 contamination warnings (OpenViking, SAMEP) recorded in K12 deep-read
 - @sources/5-4-links-tool-eval.md — 2026-05-04 ingest surfaced two new license patterns: **CC-BY-NC training-data contamination** (tennis_atp dataset → tennis_match_prediction MIT code becomes NC-bound) + **namespace confusion risk** (1weiho/open-slide vs CMU's openslide.org medical library)
+- @sources/links-3-5-4-tool-eval.md — 2026-05-04 ingest surfaced **Elastic License v2 (ELv2)** as 9th license-pattern (source-available with use-restrictions): Context Mode tool. Reject for production; reference-only.
 - @sources/links-2-5-4-tool-eval.md — 2026-05-04 ingest surfaced **dual-license MIT-vs-GPL ambiguity** pattern (Lumibot README claims MIT, core repo files labeled GPL-3.0)
 - @entities/tools/klaassen-magnus-elo.md — exemplar of pattern #4 (CC-BY-NC training-data contamination): MIT code, NC-bound data dependency, requires retraining-on-commercial-feeds before production deployment
 - @concepts/mitre-atlas-taxonomy.md — recorded 2026-05-04 license correction: ATLAS data feed is Apache-2.0 (not CC BY 4.0 as K28 eval claimed); website-presented content has separate MITRE terms; **eval-time-detected license claims should be verified against canonical LICENSE file in upstream repos before recording**
@@ -92,7 +93,8 @@ This policy is *operational*, not aspirational — license findings have trigger
 | 5 | **Dual-license MIT-vs-GPL ambiguity** | **links-2-5_4 (Lumibot)** | File-by-file legal audit before any import; default-Reject pending clarification |
 | 6 | **Namespace confusion** | **5_4-links (1weiho/open-slide vs openslide.org)** | Document explicit distinction in adoption decision; document for SCA scanners |
 | 7 | LGPL dynamic-linking ambiguity (PyO3) | links-2-5_4 (nautilus_trader) | Defer pending acquirer legal counsel review of dynamic linking vs derivative-work boundary |
-| 8 | Dual-licensing enterprise-tier gating | links-2-5_4 (shannon, repowise) | Reference-only; enterprise tier extracts critical features behind paywall, OSS Lite is intentionally degraded
+| 8 | Dual-licensing enterprise-tier gating | links-2-5_4 (shannon, repowise) | Reference-only; enterprise tier extracts critical features behind paywall, OSS Lite is intentionally degraded |
+| 9 | **Source-available with use-restrictions** (Elastic License v2 / SSPL family) | **K30 links-3-5_4 (Context Mode, ELv2)** | Reject for production deployment (ELv2 forbids hosting-as-service + circumvention). Allow only as architectural-reference reading. Does NOT meet OSI open-source definition.
 
 ### Risk surface for IP-sale or commercial license
 
