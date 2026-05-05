@@ -28,16 +28,20 @@ Catalog of DeepSeek model versions referenced across the wiki, their known capab
 
 ## Narrative
 
-### Known versions
+### Model family lineage (research / product history)
 
-| Model | Role | Cemini relevance |
-|-------|------|-----------------|
-| **DeepSeek-V3** | General-purpose LLM | Evaluated in TSAG benchmark for financial tool-use; baseline reference |
-| **DeepSeek-V3.1** | Improved V3 | Referenced in training-free GRPO papers (Cai 2025, ICLR 2026) |
-| **DeepSeek-V4-Pro** | Frontier model | Cemini's intended brain (Fireworks-hosted); referenced in Wave 5.1 link eval |
-| **DeepSeek-V4-flash** | Fast inference variant | Polymarket MCP trading; latency-sensitive agent loops |
-| **DeepSeek-R1-14B** | Reasoning model (small) | Local deployment attempted, retracted (7 GB RAM constraint) |
-| **DeepSeek-R1-671B** | Reasoning model (large) | Referenced in ReaLM-Retrieve paper; completion-only API proxy pattern |
+`api.deepseek.com` only exposes the V4 lineup as live model IDs. Earlier releases (V3, V3.1) and the R1 series are research artifacts or weight-only releases — referenced across the wiki for benchmarks and academic context but **not callable** via the production API. Audit verified 2026-05-04 against `api-docs.deepseek.com/quick_start/pricing`.
+
+| Model | Role | API ID exposed? | Cemini relevance |
+|-------|------|------------------|-----------------|
+| **DeepSeek-V4-Pro** | Frontier model | ✅ `deepseek-v4-pro` | Cemini's intended frontier brain; final-decision synthesizer; referenced in Wave 5.1 link eval |
+| **DeepSeek-V4-flash** | Fast inference variant; thinking-mode toggle via parameters (not separate model ID) | ✅ `deepseek-v4-flash` | Cemini analyst-node default; latency-sensitive agent loops; Polymarket MCP trading |
+| **`deepseek-chat`** (legacy alias) | Legacy general-purpose alias | ⚠️ Functional but **deprecated** (will be removed in future API versions) | Avoid in new code; existing references being migrated |
+| **`deepseek-reasoner`** (legacy alias) | Legacy reasoning alias | ⚠️ Functional but **deprecated** | Avoid in new code; reasoning is now parameter-toggled on `deepseek-v4-flash` |
+| **DeepSeek-V3** | General-purpose LLM | ❌ Not on production API | Research reference: TSAG benchmark for financial tool-use; baseline |
+| **DeepSeek-V3.1** | Improved V3 | ❌ Not on production API | Research reference: training-free GRPO papers (Cai 2025, ICLR 2026) |
+| **DeepSeek-R1-14B** | Reasoning model (small, weights released) | ❌ Local-deployment-only; retracted from Cemini per `@retracted_deepseek_ollama` memory (7 GB RAM constraint) | Research reference |
+| **DeepSeek-R1-671B** | Reasoning model (large, weights released) | ❌ Not on production API | Research reference: ReaLM-Retrieve paper; completion-only API proxy pattern |
 
 ### Key performance signals
 

@@ -228,7 +228,7 @@ llmwiki compile --review
 ```bash
 # On the librarian server (Hetzner CPX21), once provisioned:
 export LLMWIKI_PROVIDER=openai
-export LLMWIKI_MODEL=deepseek-chat   # or deepseek-v4-flash / deepseek-v4-pro
+export LLMWIKI_MODEL=deepseek-v4-flash   # or deepseek-v4-pro; legacy deepseek-chat / deepseek-reasoner aliases are deprecated
 export OPENAI_API_KEY=$DEEPSEEK_API_KEY   # already in /opt/cemini/.env on production server; copy to librarian server env at provisioning
 export OPENAI_BASE_URL=https://api.deepseek.com
 cd /opt/librarian
@@ -243,12 +243,12 @@ DeepSeek's hosted Chat Completions API is OpenAI-compatible (per `entities/infra
 
 ```bash
 export LLMWIKI_PROVIDER=openai
-export LLMWIKI_MODEL=deepseek-chat   # or deepseek-v4-flash / deepseek-v4-pro
+export LLMWIKI_MODEL=deepseek-v4-flash   # or deepseek-v4-pro; legacy deepseek-chat / deepseek-reasoner aliases are deprecated
 export OPENAI_API_KEY=$DEEPSEEK_API_KEY   # the key already in /opt/cemini/.env
 export OPENAI_BASE_URL=https://api.deepseek.com
 ```
 
-[NEEDS VERIFICATION 2026-04-28] DeepSeek's API does **not** ship an embeddings endpoint — official docs at `api-docs.deepseek.com` list only `/chat/completions`; a DeepSeek GitHub issue (`deepseek-ai/DeepSeek-R1#802`, Feb 2026) explicitly enumerates DeepSeek as "Embedding API ❌" in its current state and proposes adding one. So Path B is **chat-only**: the embeddings layer either uses index-based fallback (default; acceptable) or routes to a separate provider via `OPENAI_EMBEDDINGS_BASE_URL`.
+[VERIFIED 2026-05-04] DeepSeek's API does **not** ship an embeddings endpoint — re-confirmed against `api-docs.deepseek.com` 2026-05-04: only `/chat/completions` is exposed. A DeepSeek GitHub issue (`deepseek-ai/DeepSeek-R1#802`, Feb 2026) explicitly enumerates DeepSeek as "Embedding API ❌" in its current state and proposes adding one. So Path B is **chat-only**: the embeddings layer either uses index-based fallback (default; acceptable) or routes to a separate provider via `OPENAI_EMBEDDINGS_BASE_URL`.
 
 #### Path C — Ollama embeddings sidecar `[SUPERSEDED 2026-04-28]`
 
