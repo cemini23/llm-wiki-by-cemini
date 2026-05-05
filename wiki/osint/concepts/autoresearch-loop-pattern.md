@@ -21,6 +21,7 @@ updated: 2026-05-04
 - @sources/links-2-5-4-tool-eval.md — origin discovery: the atlas-gic financial instantiation surfaces in the same week as the Gemini paper, allowing pattern-recognition across domains
 - @entities/tools/atlas-gic-autoresearch.md — financial instantiation: Sharpe ratio replaces math hypothesis, git revert/commit replaces context injection
 - @sources/agriciDaniel-claude-obsidian.md — claude-obsidian's `/autoresearch` multi-round loop (Wave 5B Adopt) is an independently-arrived-at version
+- @sources/xskill-2603-12056.md — fourth documented instantiation: dual-stream Skills + Experiences accumulation via MLLM-judged cross-rollout critique. Closest published analog to Cemini's wiki-pages-as-Skill-Library + stash-as-Experience-Bank operational stack.
 - @concepts/llm-agent-systems.md — parent concept; autoresearch is a sub-pattern of the broader agentic systems family
 - @concepts/scatter-gather-topology.md — LangGraph topology that hosts autoresearch nodes (proposal stage = scatter; objective evaluation = gather; mutation stage = state update before next scatter)
 
@@ -56,13 +57,14 @@ An **autoresearch loop** has three components:
 
 The signature is: **proposal → ground-truth check → automated state mutation with reversibility**. Crucially, the loop runs without per-step human review — but the human sets the objective function and sets reversibility bounds.
 
-### Three documented instantiations
+### Four documented instantiations
 
 | Domain | Proposal | Objective | Mutation | Reversibility |
 |--------|----------|-----------|----------|---------------|
 | **Math research** (Gemini §2.6) | Math expression / hypothesis | Python script numerical evaluation against known baseline | Context injection of traceback | Pure-functional; previous context preserved |
 | **Algorithmic trading** (atlas-gic) | Agent system-prompt rewrite | Rolling Sharpe ratio over live performance | Git commit of new prompt | `git reset` if Sharpe degrades |
 | **Multi-round research** (claude-obsidian `/autoresearch`) | Search query / synthesis | Quality / completeness heuristic | Iterative refinement | Branch-based; each round is standalone |
+| **Multimodal-agent learning** (XSKILL — `@sources/xskill-2603-12056.md`) | Multi-rollout trajectories per task | MLLM-judged comparison: insights from comparison + commonalities across rollouts | Append/refine to Markdown Skill Library + JSON Experience Bank | Length filter + similarity filter + MLLM judgement gate every addition; bad insights filtered before they enter the bank |
 
 ### Why this matters for Cemini
 

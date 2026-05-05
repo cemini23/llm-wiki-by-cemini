@@ -1,5 +1,54 @@
 # Wiki Log
 
+## [2026-05-04] ingest | XSKILL paper + LeetCode prep stub (K29)
+
+User dropped 2 sources: `XSKILL- Continual Learning from Experience and Skills in Multimodal Agents.pdf` (arXiv 2603.12056, HKUST + Zhejiang U + HUST, 27 pp) + `60 Popular LeetCode Problems & Solution for SDET.pdf` (off-domain personal reference). Pre-ingest dedup: 2 NEW.
+
+### XSKILL — substantive on-domain ingest
+
+Dual-stream multimodal-agent learning architecture:
+- **Skills** (Markdown library, task-level workflows + tool templates)
+- **Experiences** (JSON bank, action-level decision-making insights)
+- **MLLMexec / MLLMkb privilege separation** (different model for execution vs knowledge management — implements MITRE ATLAS M0032)
+- **Cross-rollout critique** (Phase I): multi-rollouts → MLLM-judged comparison → hierarchical consolidation through length/similarity/judgement filters
+- **Subtask decomposition + top-k retrieval + visual adaptation** (Phase II): inject adapted skills + experiences into agent system prompt at inference
+
+Empirical: +2.58 to +6.71 Avg@4 across 5 benchmarks (VisualToolBench, TIR-Bench, MMSearch-Plus, MMBrowseComp, AgentVista) × 4 backbones (Gemini-2.5-Pro, Gemini-3-Flash, GPT-5-mini, o4-mini); +11.13pp on TIR-Bench vs Agent-KB. Cross-model transferability demonstrated.
+
+**Cemini fit (high)**: XSKILL's architecture maps onto Cemini's existing infrastructure with surprising fidelity:
+- Skill Library (Markdown) ⇔ `wiki/concepts/` Markdown procedure pages
+- Experience Bank (JSON) ⇔ stash episodic memory layer (Postgres+pgvector)
+- MLLMexec/MLLMkb separation ⇔ DeepSeek (analyst) + future heavier model for knowledge mgmt
+- Cross-rollout critique ⇔ atlas-gic clean-room re-implementation (already briefed at `briefs/2026-05-04_autoresearch-conductor-evolution.md`)
+- Subtask decomposition + top-k retrieval ⇔ kb-server REST API + stash recall MCP
+
+**Most actionable take-away**: XSKILL's cross-rollout critique mechanism is the *complementary* missing piece to atlas-gic's git-commit/revert loop. Combine: Conductor's routing-decision logs → MLLM-critiqued (XSKILL-style) → refined routing rules emit as git commits (atlas-gic-style).
+
+### LeetCode — off-domain personal reference
+
+Lamhot Siagian's curated 60-problem LeetCode/MAANG-interview compendium. Brief stub created noting off-domain status. No cross-links forced. Page acknowledges if/when this turns out to be a misdrop, removal procedure documented inline.
+
+### New pages (3 total)
+
+- `sources/xskill-2603-12056.md` — full source page with 9 cross-links into existing concept/source pages
+- `sources/leetcode-maang-prep-siagian.md` — off-domain stub
+- `concepts/autoresearch-loop-pattern.md` updated: 3 documented instantiations → **4** (XSKILL added)
+
+### Index updates
+
+- Source counts: 299 → 301 (+2)
+- llm-agents cluster: 124 → 125 (+1; LeetCode is uncategorized cluster, not llm-agents)
+
+### Raw-source moves
+- `XSKILL- Continual Learning from Experience and Skills in Multimodal Agents.pdf` → cemini-librarian:/opt/cemini-bulk/research/
+- `60 Popular LeetCode Problems & Solution for SDET.pdf` → cemini-librarian:/opt/cemini-bulk/research/
+
+Both removed from laptop `research to be indexed/` after verified scp.
+
+### Open follow-ups
+- **XSKILL framework adoption brief** — staged at `briefs/2026-05-04_xskill-cross-rollout-critique-conductor.md` for prod-side Claude session. Combines XSKILL's critique mechanism with atlas-gic's git-commit/revert loop for Conductor evolution.
+- ROADMAP updated with K29 follow-up (XSKILL adoption gating on user GO/NO-GO, similar to atlas-gic gate).
+
 ## [2026-05-04] ingest | 5_4 sweep — 33-tool eval batch + Gemini Sci Research methodology paper (K28)
 
 User dropped 3 sources: `5_4 links.docx` (19-tool eval), `links 2 5_4.docx` (14-tool eval), `Accelerating Scientific Research with Gemini- Case Studies and Common Techniques.pdf` (arXiv 2602.03837v3, 154 pp, Google Research). Pre-ingest dedup: 3 NEW, 0 duplicates. The two docx files are companion Gemini-DR architecture-eval reports; the PDF is a methodology paper that turns out to **directly justify the autoresearch loop pattern** surfaced by atlas-gic in the docx batch.
