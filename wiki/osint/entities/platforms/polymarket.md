@@ -73,6 +73,21 @@ compliance research as a venue Cemini can **reference** (via public
 on-chain data) but not **execute on** without restructuring — hence its
 status as a read-only data source in the current stack.
 
+## K30 transitive dependencies (Reference-only catalog)
+
+The K30 `Polymarket 5_5.docx` evaluation surfaced 11 Polymarket-internal libraries marked **Reference-only**. These are NOT direct adoption targets for Cemini's stack — they're transitive dependencies under the canonical 4-component integration stack (Polymarket Agents + python-order-utils + py-clob-client + polymarket-mcp-server, see `@briefs/2026-05-05_polymarket-stack-adoption.md`). Documented here so future curator sessions don't re-evaluate them as candidates:
+
+| Polymarket-internal library | Role (transitive only) |
+|-----------------------------|------------------------|
+| `Polymarket/py-clob-client` | CLOB API wrapper used by Polymarket Agents |
+| `Polymarket/polymarket-subgraph` | TheGraph subgraph for on-chain Polymarket data; reference for query patterns |
+| `Polymarket/clob-client` | TypeScript CLOB client (parallel to py-clob-client) |
+| `Polymarket/rs-clob-client` | Rust async CLOB client (Steal-from for type-pattern reference per K30 eval URL 4) |
+| `Polymarket/python-order-utils` | **Direct adoption** (Adopt-tier per K30); listed here for completeness — see `@entities/tools/polymarket-python-order-utils.md` |
+| Other Polymarket-internal libs (subgraph utils, helpers, etc.) | Various supporting roles; pulled in transitively as needed |
+
+**Action discipline**: when implementing the Polymarket integration brief, install py-clob-client + python-order-utils as direct dependencies of the Cemini polymarket_client.py wrapper. Don't pin or refactor against the other Polymarket-internal libs unless explicitly required — they're maintained by Polymarket and update at Polymarket's cadence; Cemini benefits from staying close to the official upstream rather than forking.
+
 ## Snippets
 
 *(populate as source stubs are deep-read.)*

@@ -77,6 +77,29 @@ Per the workspace's "cited but unread" lint convention: this stub is intentional
 
 - **Section 5 — Multi-agent RL** covers games + solution concepts; foundational reference for MAPPO + atlas-gic-style multi-agent debate. [Source: arXiv:2412.05265v5 §5]
 
+## Chapter-promotion discipline (curator meta-process)
+
+This source is a **reference shell**: 253 pages preserved at skim-status for the value of having a citable canonical RL textbook in the wiki, NOT for the value of the deep-read content itself. To prevent the page from drifting into unread-stub territory, future curator sessions should follow this discipline:
+
+**When to promote a chapter to deep-read**:
+- A future ingest cites a specific Murphy chapter (e.g., a Conductor-related paper references "GRPO" → promote §3.5 + §3.1 to deep-read)
+- A Cemini implementation workstream needs the foundational concept (e.g., MAPPO becomes operational → promote §5 to deep-read)
+- A stale `[NEEDS VERIFICATION]` resolution requires citing canonical RL theory
+
+**How to promote a chapter**:
+1. Read the chapter (or relevant subsection)
+2. Add a `### Chapter N — <topic>` H3 under `## Narrative` with synthesis + key concepts
+3. Add 2-4 verbatim excerpts to `## Snippets` with `[Source: arXiv:2412.05265v5 §N.N p.X]` citations
+4. Bump `read_status:` from `skimmed` to `partially-read` (or `deep-read` if all chapters are eventually promoted)
+5. Update `updated:` frontmatter date
+
+**What NOT to do**:
+- Don't deep-read the whole 253pp preemptively; the curator's time is better spent on operationally-relevant pages
+- Don't paraphrase Murphy's content without citation; the value of this page is the citation graph, not the synthesis
+- Don't let cited-but-unread inbound count grow indefinitely — `wiki_lint.py`'s "cited unread source stubs" check will flag if inbound references accumulate without chapter promotions
+
+This discipline applies to any "textbook reference shell" page in the wiki. As of 2026-05-05, this is the only such page; it sets the pattern.
+
 ## Dead Ends
 
 *(none yet — reference material; deep-read deferred until specific chapter relevance surfaces.)*

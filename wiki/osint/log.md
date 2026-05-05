@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-05-05] extend | K30 wiki-side concept extensions (#18, #19, #20, #22, #23, #24)
+
+Six smaller-scope wiki updates closing the second batch of K30-derived ROADMAP workstreams:
+
+- **#18** `concepts/autoresearch-loop-pattern.md` extended: 4 → **5** documented instantiations. DW-GRPO added as model-weight-mutation variant (distinct from prompt/config-level mutations of the other 4 — math/atlas-gic/claude-obsidian/XSKILL). Validates that the autoresearch pattern generalizes across both prompt-level AND weight-level optimization.
+- **#19** `concepts/conductor-orchestrator.md` extended with planned `prediction_market_polymarket` taxonomy class (per K30 Polymarket Stack brief) + new Conductor-evolution-candidates section cross-linking the K28 atlas-gic + K29 XSKILL briefs + K30 DW-GRPO concept.
+- **#20** `concepts/wiki-tooling-evaluation.md` extended with post-K28+K30 candidate landscape table: kb-server (DEPLOYED), llm-wiki-compiler (BLOCKED), SwarmVault (NO-GO), PageIndex (Phase-0 pending), Deep GraphRAG (deferred — re-evaluate if PageIndex fails AND graph-density signal emerges).
+- **#22** `entities/platforms/polymarket.md` extended with K30-transitive-dependencies table cataloguing the 11 Polymarket-internal Reference-only libs (py-clob-client, subgraph, clob-client, rs-clob-client, etc.) so they're not re-evaluated as Cemini candidates. Action discipline documented inline.
+- **#23** `sources/rl-overview-murphy-2412-05265.md` extended with full chapter-promotion discipline section (when to promote, how to promote, what NOT to do). Sets the curator-meta-process pattern for any future textbook reference shells.
+- **#24** `concepts/curator-skills.md` (NEW stub accumulator) created. Tracks merged Claude Code skills with provenance + adaptation notes. Populates when Claude-OSINT skill merge (#15) executes. Cross-linked from `entities/tools/claude-osint.md`.
+
+ROADMAP items #18 / #19 / #20 / #22 / #23 / #24 marked DONE.
+
 ## [2026-05-05] synthesize | K30 wiki-side concept pages (#16, #17, #21)
 
 Closed three K30-derived ROADMAP wiki-side workstreams. Three new concept synthesis pages:

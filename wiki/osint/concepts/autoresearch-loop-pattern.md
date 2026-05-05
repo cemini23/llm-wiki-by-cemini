@@ -9,6 +9,7 @@ related:
   - entities/tools/atlas-gic-autoresearch.md
   - sources/agriciDaniel-claude-obsidian.md
   - sources/xskill-2603-12056.md
+  - sources/deep-graphrag-2601-11144.md
   - concepts/llm-agent-systems.md
   - concepts/scatter-gather-topology.md
 maturity: draft
@@ -23,6 +24,7 @@ updated: 2026-05-04
 - @entities/tools/atlas-gic-autoresearch.md — financial instantiation: Sharpe ratio replaces math hypothesis, git revert/commit replaces context injection
 - @sources/agriciDaniel-claude-obsidian.md — claude-obsidian's `/autoresearch` multi-round loop (Wave 5B Adopt) is an independently-arrived-at version
 - @sources/xskill-2603-12056.md — fourth documented instantiation: dual-stream Skills + Experiences accumulation via MLLM-judged cross-rollout critique. Closest published analog to Cemini's wiki-pages-as-Skill-Library + stash-as-Experience-Bank operational stack.
+- @sources/deep-graphrag-2601-11144.md — **fifth documented instantiation** (added K30 2026-05-05): DW-GRPO (Dynamic Weighting Reward GRPO) for the Knowledge Integration Module. Distinct mutation mechanism from the other 4 — DW-GRPO mutates *model weights* via RL gradient updates rather than mutating prompts/configs/skills. Validates that the autoresearch pattern generalizes across both prompt-level and weight-level optimization.
 - @concepts/llm-agent-systems.md — parent concept; autoresearch is a sub-pattern of the broader agentic systems family
 - @concepts/scatter-gather-topology.md — LangGraph topology that hosts autoresearch nodes (proposal stage = scatter; objective evaluation = gather; mutation stage = state update before next scatter)
 
@@ -58,7 +60,7 @@ An **autoresearch loop** has three components:
 
 The signature is: **proposal → ground-truth check → automated state mutation with reversibility**. Crucially, the loop runs without per-step human review — but the human sets the objective function and sets reversibility bounds.
 
-### Four documented instantiations
+### Five documented instantiations
 
 | Domain | Proposal | Objective | Mutation | Reversibility |
 |--------|----------|-----------|----------|---------------|
@@ -66,6 +68,7 @@ The signature is: **proposal → ground-truth check → automated state mutation
 | **Algorithmic trading** (atlas-gic) | Agent system-prompt rewrite | Rolling Sharpe ratio over live performance | Git commit of new prompt | `git reset` if Sharpe degrades |
 | **Multi-round research** (claude-obsidian `/autoresearch`) | Search query / synthesis | Quality / completeness heuristic | Iterative refinement | Branch-based; each round is standalone |
 | **Multimodal-agent learning** (XSKILL — `@sources/xskill-2603-12056.md`) | Multi-rollout trajectories per task | MLLM-judged comparison: insights from comparison + commonalities across rollouts | Append/refine to Markdown Skill Library + JSON Experience Bank | Length filter + similarity filter + MLLM judgement gate every addition; bad insights filtered before they enter the bank |
+| **GraphRAG knowledge integration** (DW-GRPO — `@sources/deep-graphrag-2601-11144.md`) | Compact LLM (1.5B) generates retrieval-grounded answer | Three-objective reward function: relevance + faithfulness + conciseness, with **dynamically-weighted** balancing | RL gradient update on the compact LLM's policy (not config; the model itself is the mutated artifact) | RL training is in-flight; bad gradient steps are absorbed by the optimizer's regularization rather than explicit rollback. **Distinct mutation mechanism vs the other 4 instantiations** — this is the only one that mutates *model weights* rather than prompts/configs/skills. |
 
 ### Why this matters for Cemini
 

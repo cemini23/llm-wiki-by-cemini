@@ -141,6 +141,31 @@ Meta-Router provides the causal framework for evaluating routing quality:
 4. **Pool selection**: identify candidate models for each taxonomy class (DeepSeek-V4 for hard, Qwen2-7B for simple, KronosTokenizer for technical, etc.)
 5. **Path A evaluation gate**: if Path B shows meaningful cost reduction with quality preservation, evaluate whether the 8B orchestrator hosting cost is justified
 
+### Planned taxonomy class additions (K30 derivative)
+
+Per `@briefs/2026-05-05_polymarket-stack-adoption.md`, Conductor's taxonomy will gain a new class once the Polymarket integration ships:
+
+| Taxonomy class | Pool | Tools | Special handling |
+|----------------|------|-------|------------------|
+| `prediction_market_polymarket` | `[deepseek-v4-flash, deepseek-v4-pro]` | `polymarket_place_order`, `polymarket_get_market`, `polymarket_get_positions`, `polymarket_cancel_order` | `require_human_confirmation_above_usdc: 1000` (per `@concepts/sae-execution-contract.md` M0029 mitigation from `@concepts/mitre-atlas-taxonomy.md`) |
+
+This pairs with the planned `prediction_market_kalshi` taxonomy class (gates on `pykalshi` adoption per `@entities/tools/pykalshi.md`). Both classes will route through Conductor's existing 4-stage pipeline; the addition is to the taxonomy + pool + tools registry, not the runtime architecture.
+
+**Cross-references**:
+- `@briefs/2026-05-05_polymarket-stack-adoption.md` — the brief that lands this class
+- `@concepts/polymarket-market-making-architectures.md` — downstream consumer (MM strategies route via this class)
+- `@concepts/cross-venue-arbitrage-pattern.md` — downstream consumer (arb routes via this + Kalshi class)
+- `@entities/tools/polymarket-agents.md`, `@entities/tools/polymarket-python-order-utils.md` — the integration stack the tools wrap
+
+### Conductor evolution candidates (active workstreams)
+
+Two distinct Conductor evolution paths surfaced in K28 + K29 + K30, both staged as briefs:
+
+1. **atlas-gic-style autoresearch** — `@briefs/2026-05-04_autoresearch-conductor-evolution.md`. Sharpe-loss + git-commit/revert mutation loop applied to routing rules. Clean-room re-implementation (atlas-gic NO LICENSE).
+2. **XSKILL-style cross-rollout critique** — `@briefs/2026-05-04_xskill-cross-rollout-critique-conductor.md`. MLLM-judged comparison of routing decisions feeds proposal stage of #1's loop. Companion to #1; ships together.
+
+Both pair with the autoresearch-loop-pattern concept (`@concepts/autoresearch-loop-pattern.md`) which K30 extended with a fifth documented instantiation (DW-GRPO from Deep GraphRAG). DW-GRPO is the model-weight-level mutation variant, distinct from prompt/config-level mutations targeted by the two briefs above. **Cemini does not yet have a model-weight-mutation workstream**; DW-GRPO stays at concept-page-only depth until/unless training infrastructure is built.
+
 ## Snippets
 
 **S1 — ToolOrchestra core claim**:

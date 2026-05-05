@@ -298,6 +298,20 @@ Trigger: user-stated 24/7 reliability requirement — *"it is going to be of utm
 
 5. **If a sixth/seventh candidate emerges** — e.g. `iamsashank09/llm-wiki-kit` (mentioned by llm-wiki-compiler README as a lower-level alternative — "raw CRUD against wiki pages") could be a leaner option if the full compile pipeline is too opinionated. Worth a stub-source-page on next pass.
 
+### K28 + K30 candidate updates (post-deployment landscape)
+
+The candidate list expanded after the K28 SwarmVault audit and K30 ingest:
+
+| Candidate | Status (as of 2026-05-05) | Notes |
+|-----------|---------------------------|-------|
+| **kb-server** | DEPLOYED on librarian (canonical serving layer) | 397 docs indexed, FTS-style retrieval. Stable. |
+| **llm-wiki-compiler** | DEPLOYMENT-BLOCKED at v0.4.0 | Hardcoded `CONCEPTS_DIR = "wiki/concepts"` flat-layout assumption breaks against our nested structure. Retained on disk; not running as service. |
+| **SwarmVault** (K28 candidate) | **NO-GO 2026-05-04** | Same flat-layout disease as llm-wiki-compiler. Audit at `@entities/tools/swarmvault.md`. |
+| **PageIndex** (K30 candidate, `@entities/tools/pageindex.md`) | **Phase 0 audit pending** | "Vectorless reasoning-based RAG" (MIT). Adopt-tier in K30 5_5-links eval. Audit gates whether it joins the candidate list as production-viable; same flat-layout disease watch as SwarmVault. |
+| **Deep GraphRAG** (K30 reference, `@sources/deep-graphrag-2601-11144.md`) | **Deferred — gated on PageIndex outcome** | 3-stage hierarchical retrieval (inter-community → community-refine → entity-fine) + DW-GRPO trained Knowledge Integration Module. Architecturally distinct from kb-server/PageIndex (graph-community-aware vs flat). Not currently a candidate; **upgrade to candidate if PageIndex audit fails AND Cemini's wiki develops sufficient graph-density signal to justify the operational complexity**. Until then, holds reference-only status. |
+
+The SwarmVault NO-GO and PageIndex audit (still pending) together set the gate for whether a third Karpathy-pattern alternative needs to be evaluated. Deep GraphRAG is the most architecturally interesting candidate-in-waiting because it doesn't share the flat-layout assumption with the other two — its hierarchy IS the design. But it adds graph-community detection complexity that's not justified unless flat-RAG approaches definitively underperform. Re-evaluate when one of those gates triggers.
+
 ### What this means for the existing ROADMAP
 
 Specific impacts on the ROADMAP sections expanded in the K8 commit (`69bdc57`):
