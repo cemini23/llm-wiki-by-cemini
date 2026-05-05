@@ -7,7 +7,8 @@ related:
   - sources/5-5-links-2-tool-eval.md
   - entities/platforms/kalshi.md
   - entities/tools/pykalshi.md
-maturity: draft
+  - concepts/kalshi-api-reference.md
+maturity: validated
 created: 2026-05-05
 updated: 2026-05-05
 ---
@@ -45,12 +46,21 @@ Kalshi's Developer Terms (proprietary) govern reuse of API documentation. For in
 
 If Cemini ever distributes its wiki externally, ingested Kalshi docs need to either be excluded or the relevant Kalshi terms followed. The wiki-share zip refresh from K28 already excludes anything sensitive; this would join that pattern.
 
-### Open questions [NEEDS VERIFICATION 2026-05-05]
+### Adoption status — INGESTED 2026-05-05
 
-- Exact URL path for Kalshi's llms.txt
-- Refresh cadence (does Kalshi version-stamp the file?)
-- Whether ingesting it conflicts with Kalshi's Developer Terms (likely no, but verify before commit)
-- Whether the file is large enough to need chunking for kb-server (probably not — typical llms.txt is < 100 KB)
+Resolved questions (initial Phase 0):
+- **URL**: `https://docs.kalshi.com/llms.txt` (verified, HTTP 200, 33 KB)
+- **File size**: 33,256 bytes — well within kb-server's normal page-size envelope; no chunking required
+- **Format**: markdown index of ~150 endpoints across 18 categories (account, api-keys, communications, events, exchange, fcm, historical, incentives, live-data, market, milestone, multivariate, etc.) + WebSocket channels + OpenAPI/AsyncAPI spec links
+- **License posture**: Proprietary (Kalshi Developer Terms). Internal Cemini reference use is standard fair-use of vendor API docs; no redistribution. Wiki-share-zip pattern excludes this page if/when redistribution context emerges.
+
+Wiki ingestion (deployed):
+- Page: `@concepts/kalshi-api-reference.md` (validated maturity, ~37 KB including frontmatter + refresh procedure)
+- kb-server picks up the new page on next sync cycle (hourly cron per `scripts/sync_wiki_to_librarian.sh`)
+- Refresh cadence documented inline in the synthesis page (manual / on-trigger / future-monthly-cron)
+
+Open question [NEEDS VERIFICATION 2026-05-05]:
+- Whether Kalshi version-stamps the file (no version header observed in 2026-05-05 snapshot — refreshes will be by-content-hash, not by-version)
 
 ## Snippets
 

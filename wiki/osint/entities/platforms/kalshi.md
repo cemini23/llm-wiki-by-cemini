@@ -24,6 +24,7 @@ related:
   - sources/5-5-links-2-tool-eval.md
   - entities/tools/pykalshi.md
   - entities/tools/kalshi-llms-txt.md
+  - concepts/kalshi-api-reference.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/favorite-longshot-bias.md

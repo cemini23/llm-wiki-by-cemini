@@ -1,5 +1,22 @@
 # Wiki Log
 
+## [2026-05-05] adopt | Kalshi llms.txt ingestion (ROADMAP #13)
+
+Pulled `https://docs.kalshi.com/llms.txt` (33 KB, HTTP 200) and ingested verbatim as `wiki/concepts/kalshi-api-reference.md` (~37 KB total with frontmatter + refresh procedure + Cemini provenance metadata).
+
+Content: ~150 Kalshi API endpoints organized across 18 categories (account, api-keys, communications, events, exchange, fcm, historical, incentives, live-data, market, milestone, multivariate, etc.) + WebSocket channels + OpenAPI/AsyncAPI spec links. Each line is a `[Endpoint Name](URL): description` entry — the brain follows links for endpoint-detail when needed.
+
+Why ingested: per K30 Gemini DR eval (`@sources/5-5-links-2-tool-eval.md` URL 26, Adopt-tier). kb-server retrieval over this content eliminates training-data staleness on a venue Cemini actively trades on. Refresh cadence documented inline (manual/on-trigger/future-monthly-cron); 2026-05-05 is the first snapshot.
+
+License posture: Proprietary (Kalshi Developer Terms). Internal Cemini reference fair-use only. If Cemini ever redistributes the wiki externally, this page is excluded per the existing wiki-share-zip sanitization pattern.
+
+Files touched:
+- `wiki/concepts/kalshi-api-reference.md` (NEW; validated maturity)
+- `wiki/entities/tools/kalshi-llms-txt.md` (status updated draft → validated; INGESTED section added; resolved Phase-0 questions; adoption-status documented)
+- `wiki/entities/platforms/kalshi.md` (added concept page to `related:`)
+- `wiki/index.md` (added concept entry under Trading strategy concepts cluster)
+- ROADMAP item #13 marked DONE
+
 ## [2026-05-05] extend | K30 wiki-side concept extensions (#18, #19, #20, #22, #23, #24)
 
 Six smaller-scope wiki updates closing the second batch of K30-derived ROADMAP workstreams:
