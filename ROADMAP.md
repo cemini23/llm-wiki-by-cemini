@@ -8,134 +8,188 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
-## Active — this session (2026-05-05)
+## Current state (end of 2026-05-05)
 
-- **K30 Polymarket-readiness wave** — 4 Gemini DR docx batches (102 tools) + Deep GraphRAG arXiv 2601.11144 + Murphy RL Overview arXiv 2412.05265v5. 13 wiki pages (6 source + 7 entity stubs) + license-posture 8 → 9 patterns (added ELv2). 1 prod brief staged: `briefs/2026-05-05_polymarket-stack-adoption.md` (Polymarket Agents + python-order-utils + py-clob-client + polymarket-mcp-server unified adoption).
-- **K29 XSKILL ingest (carryover)** — completed 2026-05-04. 1 prod brief at `briefs/2026-05-04_xskill-cross-rollout-critique-conductor.md`.
-- **K28 5_4 sweep (carryover)** — 33-tool eval batch + Gemini Sci Research methodology paper. 4 prod briefs staged. Adoption work complete (SwarmVault NO-GO, codegraph + leaf installed, skill_audit.py shipped, MITRE ATLAS synthesized).
-- **Post-ingest brief staging** — 6 prod briefs in `briefs/` total (5 K28+K29 + 1 K30). Per `post_ingest_workflow` memory rule.
-- **Server-side error-code-1 triage** — DONE (IS_SANDBOX=1 wrapper at `/root/.claude/remote/ccd-cli/2.1.121` — verified working).
+- **Wiki**: 530 pages indexed, 3,411 outbound edges, 521 with inbound coverage, 9 orphans (8 pre-existing baseline + 1 intentional leetcode stub), license-pattern catalog 9 modes
+- **K-series**: K30 latest (Polymarket-readiness wave, 2026-05-05). All workspace-side adoption items from the K28→K30 queue are closed (DONE or NO-GO/NO-PORT/DEFERRED with documented triggers)
+- **Active prod briefs**: 6 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution
+- **Deferred prod briefs (with activation triggers)**: 2 (autoresearch + XSKILL Conductor evolution)
+- **Inbox**: 0
 
-## Next — queued (K28-driven adoption work, in priority order)
+## Next — actually pending action
 
-| # | Item | Surface | Notes |
-|---|------|---------|-------|
-| ~~1~~ | ~~SwarmVault Phase 0 source audit~~ | ~~laptop~~ | **DONE 2026-05-04 — VERDICT: NO-GO.** Same architectural disease as llm-wiki-compiler (hardcoded flat layout in `vault.ts:2781-2787`); also uses `[[wikilink]]` syntax incompatible with our 3,249 `@path` cross-links. Adaptation cost (rename 99 nested entity files + rewrite 3k cross-links + lose category-as-directory) exceeds marginal benefit over kb-server. Stay on kb-server. See `wiki/entities/tools/swarmvault.md` for full audit. |
-| 1 | **codegraph + leaf laptop install** | laptop | Both Adopt-tier MIT-licensed. `npm install -g codegraph`, `cargo install leaf` (or AUR/npm). `.gitignore` codegraph SQLite indices. (Promoted to #1 after SwarmVault NO-GO.) |
-| 3 | **Klaassen-Magnus Elo math extraction** | prod (brief) | `briefs/2026-05-04_klaassen-magnus-elo-cemini-fastmcp.md`. Math extraction + commercial-data sourcing decision. **Direct prediction-market application** (Kalshi/Polymarket tennis contracts). |
-| 4 | **Riskfolio-Lib + FinanceToolkit FastMCP wiring** | prod (brief) | `briefs/2026-05-04_quant-libs-fastmcp-integration.md`. Position-sizing math (HRP, Kelly, Black-Litterman) + 150 financial metrics → `@mcp.tool` decorators in `services/llm_analyst/`. |
-| 5 | **probablyprofit pattern extraction** | prod (brief) | `briefs/2026-05-04_probablyprofit-pattern-extraction.md`. Kelly + LLM ensemble consensus + multi-vector kill switch. Networking layer is Polymarket-specific (rewrite for Kalshi). |
-| ~~6~~ | ~~atlas-gic autoresearch loop clean-room~~ | ~~prod (brief)~~ | **PARTIALLY SUPERSEDED 2026-05-05** by #6c (audit-trail-only subset). Phases 2-6 (LLM proposer + shadow runner + promoter + cron) DEFERRED until traffic ≥ 3,500 decisions/week AND a buyer/research signal pulls for the automated-self-proposing capability. Codex review 2026-05-05 found statistical-power + cost-cap issues at current scale. Predecessor brief retained intact at `briefs/2026-05-04_autoresearch-conductor-evolution.md` (now with DEFERRED header). |
-| ~~6b~~ | ~~XSKILL cross-rollout critique~~ | ~~prod (brief)~~ | **ENTIRELY DEFERRED 2026-05-05** per same codex review. Per-cycle cost was 2-7× understated (8+ LLM calls per cycle, not 1, due to per-taxonomy-class loop) + introduces stash runtime dependency Conductor doesn't currently have. Re-evaluate when activation triggers fire (see #6 above). Brief retained intact at `briefs/2026-05-04_xskill-cross-rollout-critique-conductor.md` with DEFERRED header. |
-| 6c | **Conductor audit-trail Phase 1+5 (NEW supersede subset)** | prod (brief) | `briefs/2026-05-05_conductor-audit-trail-phase1.md`. Implements fitness function (`conductor/audit/fitness.py` with per-class breakdown) + structured audit JSONL (`conductor/audit/audit_log.py` + `build_priors_audit.py`) + git-tracked config commits with structured commit messages. **No LLM calls; no cron; no auto-promotion.** ~2-4 days prod-side engineering, ~$0/week ongoing. Captures ~85% of the IP-sale "self-improvement-capability" audit-trail narrative without the deferred Phases 2-6 LLM-mutation engine. |
-| 10 | **Polymarket Stack Adoption** | prod (brief) | `briefs/2026-05-05_polymarket-stack-adoption.md`. Coherent 4-component stack: Polymarket Agents + python-order-utils + py-clob-client + polymarket-mcp-server (all MIT). Adds Polymarket as Cemini's secondary prediction-market venue. |
-| ~~11~~ | ~~PageIndex Phase 0 audit~~ | ~~laptop~~ | **DONE 2026-05-05 — VERDICT: NO-GO.** PageIndex (MIT, VectifyAI/PageIndex) is single-file API only (no directory walking) → would need 600+ index instances for Cemini's wiki. Agentic reasoning at query time → ~$0.001-0.005/query × Cemini volume vs kb-server's $0/query FTS. Lost graph (no `@path` cross-link parsing) + lost metadata (no frontmatter). Wrong tool for the job; right tool for *long-form professional documents* (financial filings, legal PDFs) NOT flat wiki. Re-evaluate IF Cemini begins indexing long-form professional documents as a separate retrieval tier. See `wiki/entities/tools/pageindex.md` for full audit. |
-| ~~12~~ | ~~pykalshi adoption~~ | ~~prod (brief candidate)~~ | **DONE 2026-05-05** — `briefs/2026-05-05_pykalshi-adoption.md` staged + scp'd to prod (10.4 KB). Sister to Polymarket Stack brief; refreshes both prediction-market venue clients. Verified `github.com/ArshKA/pykalshi` MIT, 85★, 30 commits, 0 open issues, last push 2026-05-02. Awaiting prod-side execution. |
-| ~~13~~ | ~~Kalshi llms.txt ingest~~ | ~~librarian (cron)~~ | **DONE 2026-05-05** — `wiki/concepts/kalshi-api-reference.md` ingested from `docs.kalshi.com/llms.txt` (33 KB, ~150 endpoints). kb-server picks up on next hourly sync. Refresh procedure documented inline in the page (manual/on-trigger/future-monthly-cron). Entity stub `kalshi-llms-txt.md` promoted draft → validated with adoption status. |
-| ~~14~~ | ~~FinanceDatabase + FinanceToolkit FastMCP integration~~ | ~~prod (brief)~~ | **DONE 2026-05-05** — folded into existing K28 quant-libs brief: `briefs/2026-05-04_quant-libs-fastmcp-integration.md` retitled "Riskfolio-Lib + FinanceToolkit + FinanceDatabase". New `ticker_universe.py` FastMCP wrapper section + 3 tool decorators (`lookup_ticker_metadata`, `screen_universe`, `search_symbols`) + new `ticker_lookup` Conductor taxonomy class. Re-scp'd to prod 2026-05-05. |
-| ~~15~~ | ~~Claude-OSINT skill merge~~ | ~~laptop~~ | **DONE 2026-05-05 — VERDICT: NO-PORT.** Phase 0 audit (Explore agent) found Claude-OSINT (`elementalsouls/Claude-OSINT`, MIT, 476★) is 2 large skills totalling 5,861 lines targeting **external reconnaissance / red-team OSINT** (subdomain enumeration, SSO mapping, attack-surface, secret scanning, threat-actor investigation). Zero overlap with Cemini's curator workflow; Cemini already covers source-side validation via preingest_check + skill_audit + wiki_gap_detect + cross_doc_dedup. Re-evaluate IF Cemini ever needs external-reconnaissance capabilities OR if a future Claude-OSINT version adds curator-workflow skills. See `wiki/entities/tools/claude-osint.md` for full audit. `wiki/concepts/curator-skills.md` stays empty by design (selectivity rule held — every skill fell in DUPLICATE-DOMAIN bucket). |
-| 7 | **MedSkillAudit veto-gate port** | laptop | Refactor framework to `scripts/skill_audit.py` for financial-prompt validation (40% static / 60% dynamic / Veto Gates). |
-| 8 | **MITRE ATLAS taxonomy ingestion** | wiki (separate workstream) | 16 tactics × 170 techniques × 35 mitigations × 57 case studies → wiki layer. Attribution requirement: verbatim MITRE copyright reproduction. |
-| 9 | **License-pattern catalog (9 modes)** | next sweep | Apply explicit checklist to next Gemini DR eval ingest: NO-LICENSE, AGPL Docker-defeat, GPL derivative-work, CC-BY-NC training-data contamination, dual-license MIT-vs-GPL, namespace confusion, LGPL dynamic-linking, dual-licensing enterprise-tier gating, **+ ELv2 source-available with use-restrictions (added K30)**. |
+The Next queue is empty of workspace-actionable items. What remains:
 
-### K30-derived wiki-side workstreams (synthesis pages + concept extensions)
+### 1 — Awaiting prod-side execution (no workspace action)
 
-| # | Item | Surface | Notes |
-|---|------|---------|-------|
-| ~~16~~ | ~~Polymarket market-making architecture synthesis~~ | ~~wiki concept~~ | **DONE 2026-05-05** — `concepts/polymarket-market-making-architectures.md` shipped. 5-posture comparison table + 5-layer Cemini reference architecture. Cross-linked from 3 K30 sources + Polymarket platform entity. |
-| ~~17~~ | ~~Cross-venue arbitrage architecture pattern~~ | ~~wiki concept~~ | **DONE 2026-05-05** — `concepts/cross-venue-arbitrage-pattern.md` shipped. 6-step arb loop architecture + 6 risk caveats. BTC 1h canonical entry pair documented. Cross-linked from 2 K30 sources + both platform entities + high-signal-paper-patterns. |
-| ~~18~~ | ~~DW-GRPO promotion to autoresearch concept~~ | ~~wiki concept~~ | **DONE 2026-05-05** — `concepts/autoresearch-loop-pattern.md` updated 4 → 5 documented instantiations. DW-GRPO added as model-weight-mutation variant (distinct from prompt/config-level mutations of other 4). |
-| ~~19~~ | ~~Conductor concept page extension~~ | ~~wiki concept~~ | **DONE 2026-05-05** — `concepts/conductor-orchestrator.md` extended with planned `prediction_market_polymarket` taxonomy class + Conductor-evolution-candidates section (atlas-gic + XSKILL briefs cross-linked). |
-| ~~20~~ | ~~Deep GraphRAG architectural eval as librarian alternative~~ | ~~wiki concept~~ | **DONE 2026-05-05** — `concepts/wiki-tooling-evaluation.md` extended with K28+K30 candidate landscape table (kb-server deployed; llm-wiki-compiler blocked; SwarmVault NO-GO; PageIndex audit pending; Deep GraphRAG deferred). |
-| ~~21~~ | ~~prediction-market-analysis Steal-from synthesis~~ | ~~wiki concept~~ | **DONE 2026-05-05** — `concepts/prediction-market-historical-analysis.md` shipped. 5-layer historical-data stack (Collection → Storage → Aggregation → Schema → Backtest interface). Plumbing under K28 quant-libs / Klaassen-Magnus / probablyprofit + K30 Polymarket briefs. Cross-linked from K30 sources + both platform entities + companion concept pages. |
-| ~~22~~ | ~~Polymarket Reference-only catalog~~ | ~~wiki note~~ | **DONE 2026-05-05** — `entities/platforms/polymarket.md` now has K30-transitive-dependencies table listing all 11 Reference-only Polymarket-internal libs with role context. Action discipline documented inline. |
-| ~~23~~ | ~~RL Overview chapter promotion discipline~~ | ~~wiki meta~~ | **DONE 2026-05-05** — `sources/rl-overview-murphy-2412-05265.md` extended with full chapter-promotion discipline section (when to promote, how to promote, what NOT to do). Sets the curator-meta-process pattern for future textbook reference shells. |
-| ~~24~~ | ~~Curator-skills concept page (companion to #15)~~ | ~~wiki concept~~ | **DONE 2026-05-05** — `concepts/curator-skills.md` stub accumulator page created with merge-format template + selectivity hard rule + cross-link from `entities/tools/claude-osint.md`. Page populates as item #15 (Claude-OSINT skill merge) executes. |
+6 briefs at `cemini-prod:/opt/cemini/briefs/`:
+
+| Brief | What it ships |
+|-------|---------------|
+| `2026-05-04_klaassen-magnus-elo-cemini-fastmcp.md` | Tennis Elo math extraction + commercial-data sourcing |
+| `2026-05-04_quant-libs-fastmcp-integration.md` | Riskfolio-Lib + FinanceToolkit + FinanceDatabase wrappers (K30-updated) |
+| `2026-05-04_probablyprofit-pattern-extraction.md` | Kelly + LLM ensemble + multi-vector kill switch |
+| `2026-05-05_polymarket-stack-adoption.md` | Polymarket Agents + python-order-utils + py-clob-client + polymarket-mcp-server |
+| `2026-05-05_pykalshi-adoption.md` | pykalshi replaces bloated official Kalshi SDK |
+| `2026-05-05_conductor-audit-trail-phase1.md` | Conductor fitness function + audit JSONL + git-tracked config commits (no LLM mutation engine) |
+
+Plus prod-originated: `2026-05-04_step124-phase1-verification.md`.
+
+### 2 — Deferred-with-triggers (do not delete)
+
+Both briefs retained intact at `cemini-prod:/opt/cemini/briefs/` with DEFERRED top-of-file headers; reactivate when **both** triggers fire:
+
+| Brief | Activation triggers |
+|-------|---------------------|
+| `2026-05-04_autoresearch-conductor-evolution.md` (Phases 2-6) | Traffic ≥ 3,500 Conductor decisions/week sustained ≥ 2 weeks **AND** explicit buyer/research signal pulls for the "automated self-proposing" capability |
+| `2026-05-04_xskill-cross-rollout-critique-conductor.md` (entirely) | Same triggers as above; ships together with autoresearch |
+
+The audit-trail subset (`2026-05-05_conductor-audit-trail-phase1.md` above) supersedes Phases 1+5 of the autoresearch brief and ships now.
+
+### 3 — Recurring discipline
+
+| Item | When |
+|------|------|
+| **License-pattern catalog (9 modes)** apply on each new Gemini DR ingest | Every ingest |
+| **post_ingest_workflow** memory rule: ROADMAP + briefs after every ingest commit-and-push | Every ingest |
+| **Tier 2 arXiv sweep** — last 2026-05-01 (4 days fresh, within 7-day cadence) | When ≥7 days old |
+| **wiki_gap_detect.py rerun** — last 2026-05-04 (clean baseline) | After next ingest or weekly |
 
 ## Decisions — open
 
-### Which LLM brain?
+### Which LLM brain? ✅ DECIDED
 
-DeepSeek hosted API is the operative path. Local options hardware-gated (7 GB RAM).
+DeepSeek hosted API is the operative path (`deepseek-v4-flash` for analyst nodes, `deepseek-v4-pro` for final-decision synthesizer). Local options hardware-gated (7 GB RAM). Per `wiki/entities/infrastructure/deepseek-api.md` (refreshed 2026-05-04 with verified model IDs).
 
-### Which conductor? (Fugu vs Trinity vs Conductor) ✅ DECIDED 2026-05-02
+### Which conductor? ✅ DECIDED 2026-05-02 + REFINED 2026-05-05
 
-**In-house Conductor build.** GRPO maintains policy stability; Training-Free GRPO path enables API-only deployment (no weight access needed). 7 papers already ingested (K25). v0.1.1 deployed in shadow mode.
+In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-reasoner baseline.
 
-**K28 follow-on**: atlas-gic autoresearch loop is the Conductor-evolution candidate (clean-room implementation gated on user authorization). Brief #6 above.
+**Evolution path (refined 2026-05-05 after codex independent review):**
 
-### Wiki tooling
+- **Audit-trail subset (Phases 1+5)** ships now via `2026-05-05_conductor-audit-trail-phase1.md` — fitness function + audit JSONL + git-tracked config commits. ~2-4 days prod-side, ~$0/week ongoing. Captures ~85% of IP-sale "self-improvement-capability" narrative.
+- **Full autoresearch loop (Phases 2-6 + XSKILL companion)** deferred until both activation triggers fire (see "Deferred-with-triggers" above).
 
-**Serving layer: kb-server** — deployed on librarian CPX21, active, 397 docs indexed. llm-wiki-compiler v0.4.0 retained on disk for potential future compile-mode use (nested-path bug blocks query/serve).
+### Wiki tooling ✅ DECIDED 2026-05-05
 
-**K28 update**: SwarmVault is the first credible MIT-licensed Karpathy-pattern alternative. Phase 0 source audit is Next #1 — outcome will resolve this decision.
+**Default: kb-server stays as serving layer.** After three Phase-0 audits (K28 SwarmVault, K30 PageIndex, K30 Claude-OSINT), the Karpathy-pattern alternative search has eliminated all credible-looking candidates for Cemini's nested-wiki use case.
 
-### Librarian server — remaining phases
+| Candidate | 2026-05-05 status |
+|-----------|-------------------|
+| **kb-server** | DEPLOYED on librarian |
+| llm-wiki-compiler v0.4.0 | DEPLOYMENT-BLOCKED (hardcoded flat-layout) |
+| SwarmVault | NO-GO 2026-05-04 (same flat-layout disease) |
+| PageIndex | NO-GO 2026-05-05 (single-file API + agentic cost + lost graph/metadata) |
+| Claude-OSINT skills | NO-PORT 2026-05-05 (wrong domain — red-team OSINT, not curator workflow) |
+| **Deep GraphRAG** | Deferred — only remaining alternative on file. Re-evaluate IF wiki develops cross-link graph density flat retrieval can't handle, OR user decides graph-aware retrieval is worth the operational complexity. |
 
-| Phase | Item | Status |
-|---|---|---|
-| 0–3.5 | Provision, sync, kb-server, allowlist, cron | Done |
-| 4 | Wire production brain → librarian MCP | Done 2026-05-01 (audit trail E2E verified) |
-| 5 | Sync cron | Done (folded into 3.5) |
-| 6 | Monitoring + tuning | Done (workspace-side); brief shipped to cemini-prod |
-| 7 | Stash episodic memory | Done 2026-05-02 (alash3al/stash v0.2.9 deployed, MCP wired across all 3 contexts) |
+### Librarian server — phases ✅ COMPLETE
 
-## Eventually
+| Phase | Status |
+|-------|--------|
+| 0–3.5 Provision, sync, kb-server, allowlist, cron | Done |
+| 4 Brain → librarian MCP | Done 2026-05-01 (E2E verified) |
+| 5 Sync cron | Done (folded into 3.5) |
+| 6 Monitoring + tuning | Done |
+| 7 Stash episodic memory | Done 2026-05-02 (alash3al/stash v0.2.9) |
+
+## Eventually (no urgency, no specific trigger)
 
 - **Storage compaction** — disk 88% full. Market dataset → Parquet; research corpus → SQLite FTS index.
 - **Bootstrap full PDF content index** — 230 stubs done. Full deep-read at K-series pace (~12 months).
-- **Cited-unread backlog** — 99 stubs (was 133, K28 added a small increment). Organic reduction via K-series.
-- **Periodic lint as session-start ritual** — low friction, high signal.
-- **Workspace ↔ server reconciliation rhythm** — compare page counts / slug parity periodically.
-- **Test suite for scripts** — `wiki_lint.py` / `bootstrap_inbox.py` have no coverage.
+- **Cited-unread backlog** — 99 stubs. Organic reduction via K-series ingests.
+- **Workspace ↔ server reconciliation rhythm** — periodic page-count / slug-parity checks.
+- **Test suite for scripts** — `wiki_lint.py` / `skill_audit.py` / `preingest_check.py` / `wiki_gap_detect.py` / `bootstrap_inbox.py` have no test coverage.
 - **Tier 2.5 `/autoresearch` loop** — Steal-from from claude-obsidian. Port multi-round Exa loop into Path 2.
 - **Cross-doc duplicate detection** — hash H2 titles across link-aggregate docs.
 - **MCP-tool inventory consolidation** — 130 tools discovered (vs 22 documented). Single canonical inventory.
 - **agentic-soc-platform pattern adoption** — Redis Stream + LangGraph state-management patterns for `agents/orchestrator.py` hardening (architectural reference, defer wholesale deployment).
-- **Conductor `--build-priors` automation** — weekly cron already gated to 30+ new decisions; replace with autoresearch-driven mutation if Brief #6 (atlas-gic clean-room) ships and shadow-mode succeeds.
-- **DeepSeek model IDs** — confirm `deepseek-chat` vs `deepseek-v4-flash` model IDs against current API docs.
+- **Periodic lint as session-start ritual** — already documented in CLAUDE.md session-start ritual; mostly automatic.
+- **Sakana 2026-04-27 NV tags Exa-resolution** — 12 stale `[NEEDS VERIFICATION 2026-04-27]` tags pending focused Exa-cross-check pass.
 
 ## Gap detection (3-tier)
 
 | Tier | Status |
-|---|---|
-| **0** — pre-ingest dup check (`preingest_check.py`) | Done; ran 2026-05-04 K28 (3 NEW, 0 duplicates) |
-| **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-02; due for fresh run |
-| **2** — proactive Exa sweeps (user-gated) | Active (Path 1: session-driven). Last sweep 2026-05-01 — 3 days old, within 7-day cadence |
-| **3** — fully autonomous outbound ingest | Rejected |
+|------|--------|
+| **0** — pre-ingest dup check (`preingest_check.py`) | Active; runs on every ingest |
+| **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-04 (clean baseline) |
+| **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-01 (within 7-day cadence) |
+| **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
+
+---
+
+## Done — 2026-05-05 session (the big one)
+
+### Ingests
+- **K30 Polymarket-readiness wave** — 4 Gemini DR docx batches (102 tools) + Deep GraphRAG arXiv 2601.11144 + Murphy RL Overview arXiv 2412.05265v5. 13 wiki pages (6 source + 7 entity stubs) + license-posture 8 → 9 patterns (added ELv2 source-available). 1 prod brief staged: `2026-05-05_polymarket-stack-adoption.md`.
+
+### Adoption verdicts (3 audits + multiple briefs shipped)
+- **#11 PageIndex Phase 0** → NO-GO. Single-file API + agentic cost + lost graph/metadata. Wrong tool for flat wiki.
+- **#12 pykalshi** → brief shipped. Verified `github.com/ArshKA/pykalshi` MIT, 85★, 30 commits, v1.0.6.
+- **#13 Kalshi llms.txt** → ingested as `wiki/concepts/kalshi-api-reference.md` (33 KB, ~150 endpoints).
+- **#14 FinanceDatabase** → folded into K28 quant-libs brief; new `ticker_universe.py` wrapper section.
+- **#15 Claude-OSINT skill merge** → NO-PORT. Wrong domain (red-team OSINT, not curator workflow). `curator-skills.md` stays empty by design.
+- **#6/#6b autoresearch + XSKILL** → codex-reviewed scope reduction. Phases 1+5 ship as new brief #6c (`2026-05-05_conductor-audit-trail-phase1.md`); Phases 2-6 + XSKILL deferred-with-triggers.
+
+### K30-derived wiki-side workstreams (all 9 closed: #16-#24)
+- `concepts/polymarket-market-making-architectures.md` — 5-posture comparison + 5-layer Cemini reference
+- `concepts/cross-venue-arbitrage-pattern.md` — 6-step arb loop + 6 risk caveats
+- `concepts/prediction-market-historical-analysis.md` — 5-layer historical-data stack
+- `concepts/autoresearch-loop-pattern.md` — extended 4 → 5 instantiations (DW-GRPO added)
+- `concepts/conductor-orchestrator.md` — extended with planned `prediction_market_polymarket` taxonomy class + Conductor-evolution candidates section
+- `concepts/wiki-tooling-evaluation.md` — extended with K28+K30 candidate landscape table
+- `entities/platforms/polymarket.md` — K30 transitive-dependencies table
+- `sources/rl-overview-murphy-2412-05265.md` — chapter-promotion discipline section
+- `concepts/curator-skills.md` — NEW stub accumulator (populates with #15 if/when it activates; currently empty by design)
+
+### Prod briefs scp'd (4 active + 2 deferred-with-triggers re-scp'd with DEFERRED headers)
+- `2026-05-05_polymarket-stack-adoption.md` (NEW K30, 11.2 KB)
+- `2026-05-05_pykalshi-adoption.md` (NEW K30, 10.4 KB)
+- `2026-05-05_conductor-audit-trail-phase1.md` (NEW codex-reviewed subset, 14.4 KB)
+- `2026-05-04_quant-libs-fastmcp-integration.md` (UPDATED with FinanceDatabase, 14.7 KB; was 10.2 KB)
+- `2026-05-04_autoresearch-conductor-evolution.md` (DEFERRED header added; re-scp'd)
+- `2026-05-04_xskill-cross-rollout-critique-conductor.md` (DEFERRED header added; re-scp'd)
+
+### Methodology lessons logged
+- Codex independent review pattern works: dispatch codex/Plan/code-reviewer for any brief with substantial engineering + operational commitments before user GO/NO-GO sign-off.
+- Phase 0 audit pattern shipped 3 clean rejections of credible-looking but wrong-fit tools across K28+K30. Discipline saves estimated 2-4 hours of misaligned implementation per audit.
+- Future Gemini DR sweeps should ask "how many distinct skills" alongside "how many lines" when evaluating skill libraries (eval-quality lesson from Claude-OSINT misframing).
+
+### Total: 21+ commits this session arc (`d74d061..42053ad`)
 
 ## Done — 2026-05-04 session
 
-- **K28 5_4 sweep ingest** — 3 sources + 15 wiki pages + license-posture catalog 5→8 patterns. Pushed.
-- **Memory updates** — `prediction_market_scope.md` + `post_ingest_workflow.md` saved.
+- **K28 5_4 sweep ingest** — 3 sources (4 docx-batches + Gemini Sci Research methodology) + 15 wiki pages + license-posture catalog 5 → 8 patterns
+- **K29 XSKILL ingest** — XSKILL paper (arXiv 2603.12056) + LeetCode off-domain stub. 1 prod brief staged.
+- **codegraph + leaf laptop install** — npm prefix=~/.local; .gitignore patterns added; entity pages validated.
+- **MedSkillAudit veto-gate port** — `scripts/skill_audit.py` v0.1 shipped with 6 static checks + 2 veto gates.
+- **MITRE ATLAS taxonomy synthesis** — `concepts/mitre-atlas-taxonomy.md` covering ATLAS v5.6.0 (16 tactics × 170 techniques × 35 mitigations × 57 case studies). License correction: Apache-2.0 not CC BY 4.0.
+- **SwarmVault Phase 0 NO-GO** — same flat-layout disease as llm-wiki-compiler.
+- **DeepSeek model-IDs refresh** — 5 edits across 3 files; `[NEEDS VERIFICATION 2026-04-28]` → `[VERIFIED 2026-05-04]`.
+- **Prod ccd-cli error-code-1 fix** — IS_SANDBOX=1 wrapper at `/root/.claude/remote/ccd-cli/2.1.121`.
+- **wiki-share zip refresh** — `wiki-share-2026-05-04.zip` (3.2 MB, 591 files, sanitized).
+- **Memory updates** — `prediction_market_scope`, `post_ingest_workflow`, `prod_ccd_cli_root_fix`, `npm_global_prefix`.
 
 ## Done — 2026-05-02 session
 
 - **K25 Conductor sweep** — 7 papers ingested. `concepts/conductor-orchestrator.md` synthesis page.
 - **K26 ToolOrchestra deep-read** — 8B orchestrator beats GPT-5 on HLE at 2.5× efficiency.
 - **K27 9-source batch** — ARA paper + 4 pattern adoptions + Conductor v0.1.1 committed (17 files, 2,011 lines) + Phase 4 brief staged.
-- **Cross-doc dedup Pass 3** — H3-heading fuzzy matching. 0 new duplicates.
+- **Cross-doc dedup Pass 3** — 0 new duplicates.
 - **Stale NEEDS-VERIFICATION sweep** — 17 tags resolved across 4 pages.
-- **Conductor in-house decision** — finalized.
-- **Wiki-tooling smoke test re-run** — llmwiki v0.6.0, nested-path bug confirmed.
-- **Stash episodic memory deployed** — alash3al/stash v0.2.9 on librarian. Two-layer memory architecture (kb-server + stash). Phase 7 complete.
+- **Conductor in-house decision finalized.**
+- **Stash episodic memory deployed** — alash3al/stash v0.2.9 on librarian.
 
 ## Done — 2026-05-01 session
 
 - **Phase 4 — brain → librarian MCP** — Audit trail deployed on cemini-prod. E2E verified.
-- **K24** — ParlayMarket deep-read + `concepts/parlay-market-making.md` + kalshi.md extension
-- **K23** — Nomotic AI deep-read + nomotic-ai.md primary-source confirmation + six principles
-- **K22** — Reasoning Safety Monitor deep-read + `concepts/reasoning-safety-monitor.md`
-- **K21** — STOCKBENCH deep-read + stockbench.md correction
-- **K20** — OpenClaw deep-read + `concepts/openclaw-security-taxonomy.md`
-- **K19** — SAE deep-read + `concepts/sae-execution-contract.md`
-- **Cross-cluster synthesis** — `concepts/agent-authorization-stack.md` + `briefs/2026-05-01_execution-security-architecture.md`
-- **Infra** — gitignore Node.js, preingest_check.py arXiv scoping fix.
+- **K19-K24** — SAE / OpenClaw / STOCKBENCH / RSM / Nomotic AI / ParlayMarket deep-reads + concept pages.
+- **Cross-cluster synthesis** — `concepts/agent-authorization-stack.md` + execution-security-architecture brief.
 
 ## Done — prior sessions (highlights)
 
-- **Librarian server** — CPX21 provisioned, kb-server on :3838, 397 docs indexed, sync cron active. Phases 0–3.5 shipped.
-- **Wiki tooling evaluation** — `concepts/wiki-tooling-evaluation.md`, 6 source pages, llm-wiki-compiler adoption recommendation.
-- **Wave 5** — 4 Adopt (polymarket-mcp, claude-obsidian, alash3al/stash, Kronos tokenizer). 10 source pages. 2 Cemini-prod briefs.
-- **K8–K18** — Cemini-internal queue exhausted. K8 strongest stale-snapshot find (128 GB → 7 GB). K13 ES-vs-GRPO evidence. Trinity + Fugu + Conductor lineage closed.
-- **CI/CD** — `lint.yml` (push + weekly), `links.yml` (monthly), pre-commit hook (blocks secrets/IPs).
+- **Librarian server** — CPX21 provisioned, kb-server on :3838, 397 docs indexed, sync cron active.
+- **Wiki tooling evaluation** — `concepts/wiki-tooling-evaluation.md` + 6 source pages.
+- **Wave 5** — 4 Adopt (polymarket-mcp, claude-obsidian, alash3al/stash, Kronos tokenizer).
+- **K8–K18** — Cemini-internal queue exhausted.
+- **CI/CD** — `lint.yml` + `links.yml` + pre-commit hook.

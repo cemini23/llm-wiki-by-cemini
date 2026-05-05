@@ -1,36 +1,37 @@
 # Cemini OSINT Research Workspace — Schema
 
-This file is the **schema**: it tells you (the LLM) how to operate this workspace. Everything else is either a raw source, a wiki page, or a meta file. Read this on every session start.
+This file is the **schema**: it tells you (the LLM) how to operate this workspace. Everything else is either a raw source, a wiki page, or a meta file. Read this on every session start. Active workstreams + open decisions live in `ROADMAP.md`, not here.
 
 ## Purpose
 
-The workspace is a local knowledge hub for OSINT and financial research. Its job is to **manage, curate, and distribute** that knowledge — think of it as a librarian.
+Local knowledge hub for OSINT and financial research — a librarian that **manages, curates, and distributes** that knowledge.
 
 - **Manage** — inventory source material; track what's been read, extracted, and shipped
 - **Curate** — pull relevant fragments out of raw sources; structure them as interlinked wiki pages
 - **Distribute** — route findings to the right consumer:
-  - **claude.ai** — when context is needed for a conversation, writing task, or general research
-  - **CeminiSuite** (dev stack on Hetzner, `/opt/cemini`) — when material is ticker research, strategy input, or anything that belongs in the dev stack's knowledge base
+  - **claude.ai** — context for a conversation, writing task, or general research
+  - **CeminiSuite** (dev stack on Hetzner, `/opt/cemini`) — ticker research, strategy input, anything for the dev stack's knowledge base
 
 Distribution is a deliberate step, not a default. Stage candidates in `briefs/` first; never push directly to the server.
 
 ## Architecture — three layers
 
-1. **Raw sources** — immutable. You read them, never modify them. **Canonical location: `cemini-librarian:/opt/cemini-bulk/`** (migrated 2026-04-28; previously laptop-local). Backed up via Hetzner daily snapshots.
-   - `cemini-librarian:/opt/cemini-bulk/research/` — long-form PDFs, reports, notes (~283 files, 642 MB)
-   - `cemini-librarian:/opt/cemini-bulk/market-dataset/` — historical market data (~17.6k files, 1.6 GB)
+1. **Raw sources** — immutable. You read them, never modify them. Canonical location: `cemini-librarian:/opt/cemini-bulk/` (migrated 2026-04-28; backed up via Hetzner daily snapshots).
+   - `cemini-librarian:/opt/cemini-bulk/research/` — long-form PDFs / docx / notes
+   - `cemini-librarian:/opt/cemini-bulk/market-dataset/` — historical market data
    - **Read pattern**: `ssh cemini-librarian "cat /opt/cemini-bulk/research/<filename>"` for quick inspection; `scp cemini-librarian:/opt/cemini-bulk/research/<filename> /tmp/` for local deep-read sessions in Preview/Adobe/etc.
-   - **Drop pattern (new sources)**: drop into laptop's `research to be indexed/` (transient), ingest pipeline reads + synthesizes, then `scp` to `cemini-librarian:/opt/cemini-bulk/research/` and remove laptop copy.
+   - **Drop pattern (new sources)**: drop into laptop's `research to be indexed/` (transient), ingest pipeline reads + synthesizes, then `scp` to librarian and remove laptop copy.
 
-2. **The wiki** — LLM-written, human-read. This is the library proper. **Canonical location: laptop `wiki/`**, synced to `cemini-librarian:/opt/cemini-wiki/wiki/` for MCP serving.
-   - `wiki/` — hierarchical markdown pages with explicit cross-references
+2. **The wiki** — LLM-written, human-read. Canonical location: laptop `wiki/`, synced to `cemini-librarian:/opt/cemini-wiki/wiki/` for kb-server MCP serving (hourly cron via `scripts/sync_wiki_to_librarian.sh`).
 
-3. **The schema** — this file. Tells the LLM how to run the wiki. Co-evolves over time.
+3. **The schema** — this file.
 
 Staging/output lives outside the wiki:
-- `briefs/` — one-off deliverables ready to ship to claude.ai or Cemini
+- `briefs/` — one-off deliverables ready to ship to claude.ai or CeminiSuite (gitignored)
 - `research to be indexed/` — transient drop zone for new raw sources (gitignored)
 - `LESSONS.md` — meta-lessons about *how we work* (distinct from `wiki/log.md`)
+- `hot.md` — ephemeral session-state cache (gitignored)
+- `ROADMAP.md` — active workstreams + open decisions (tracked)
 
 ## Folder layout
 
@@ -38,28 +39,28 @@ Staging/output lives outside the wiki:
 LAPTOP (~/Desktop/OSINT WORKSPACE/):
   CLAUDE.md                    # this file — the schema
   LESSONS.md                   # meta-lessons (how we work, not what we did)
-  ROADMAP.md                   # active workstream / decisions / open questions
-  research to be indexed/      # transient drop zone for new raw sources (gitignored)
-  briefs/                      # staging for outputs → claude.ai or Cemini (gitignored)
+  ROADMAP.md                   # active workstream / decisions / done log
+  hot.md                       # session-state cache (gitignored)
+  research to be indexed/      # transient drop zone (gitignored)
+  briefs/                      # staging for outputs → claude.ai or CeminiSuite (gitignored)
   wiki/                        # canonical wiki (synced → librarian for serving)
     index.md                   # content-oriented catalog of all wiki pages
     log.md                     # append-only chronological operations log
     sources/                   # one page per ingested source
-    entities/                  # tickers, companies, people, facilities, organizations
+    entities/                  # tickers, companies, people, facilities, organizations, tools, infrastructure
     concepts/                  # topics, theses, methodologies, strategies
-  scripts/                     # wiki_lint.py + ingest helpers
+  scripts/                     # wiki_lint.py, skill_audit.py, preingest_check.py, wiki_gap_detect.py, cross_doc_dedup.py, sync_wiki_to_librarian.sh, etc.
   .local/                      # gitignored, local-only (server connection details, etc.)
 
 LIBRARIAN (cemini-librarian:/opt/):
-  cemini-bulk/                 # raw layer canonical home (migrated from laptop 2026-04-28)
-    research/                  # ~283 PDFs/docx (642 MB)
-    market-dataset/            # ~17.6k files (1.6 GB)
+  cemini-bulk/                 # raw layer canonical home
+    research/                  # PDFs/docx
+    market-dataset/            # historical market data
   cemini-wiki/                 # serving layer
-    wiki/                      # synced copy from laptop (for MCP serve)
-    .llmwiki/                  # compiler state (schema.json, embeddings, candidates)
+    wiki/                      # synced copy from laptop (kb-server REST API serves this)
 ```
 
-Pages can be nested further inside `sources/entities/concepts` when `Domain > Topic > Subtopic` hierarchy is warranted (e.g. `entities/companies/geo-group.md`, `entities/tickers/nvda.md`).
+Pages can be nested inside `entities/` when `Domain > Topic > Subtopic` hierarchy is warranted (e.g. `entities/companies/geo-group.md`, `entities/tickers/nvda.md`, `entities/tools/swarmvault.md`). `concepts/` and `sources/` are flat by convention.
 
 ## Wiki page format
 
@@ -82,241 +83,209 @@ updated: 2026-04-23
 ---
 ```
 
-- `type` — one of the four page kinds. Determines which section template applies.
-- `maturity` — `draft` when first created, `validated` when cross-referenced and checked, `core` when it's been battle-tested as a source of truth. Move entries up (and occasionally down) as evidence warrants.
-- `related` — explicit paths to cross-referenced pages. Bidirectional: if A lists B, B must list A. Check both directions when editing.
-- `created` / `updated` — ISO dates. Update `updated` whenever the body changes meaningfully.
+- `type` determines section template
+- `maturity`: `draft` → `validated` (cross-referenced + checked) → `core` (battle-tested source of truth). Move up (occasionally down) as evidence warrants
+- `related[]` is **bidirectional**: if A lists B, B must list A
+- `created` / `updated`: ISO dates; bump `updated` on meaningful body changes
 
-### Body sections
+### Body sections (in order, include only what's relevant)
 
-Four canonical sections, in order. Include only what's relevant per page type.
+- `## Relations` — inline list of `@path/to/page.md` annotations matching `related:` frontmatter
+- `## Raw Concept` — provenance. For source pages: title/author/retrieval-date/filename/URL. For entity/concept pages: what prompted this page, which sources synthesized into it
+- `## Narrative` — the body. Prose, tables, structured data, diagrams. Concept pages: synthesized understanding, neutral, well-sourced — opinion belongs in briefs, not concept pages
+- `## Snippets` — verbatim quotes / code / formulas / data with citations
+- `## Dead Ends` (optional) — what was tried + why it failed + what was learned. See `@concepts/exploration-graph-dead-ends.md`
 
-- `## Relations` — inline list of `@path/to/page.md` annotations matching `related:` frontmatter. Lets readers see links without parsing YAML.
-- `## Raw Concept` — provenance. For source pages: original title, author, retrieval date, filename/URL. For entity/concept pages: what prompted this page, which sources it was synthesized from.
-- `## Narrative` — the body. Prose, tables, structured data, diagrams. This is what a human reads.
-- `## Snippets` — verbatim quotes, code, formulas, or raw data pulled from sources. Always with citation.
-- `## Dead Ends` (optional) — what was tried and abandoned, with structured entries: **What was tried** / **Why it failed** / **What was learned**. Appears after `## Snippets`. Prevents re-discovering the same dead ends across sessions. See @concepts/exploration-graph-dead-ends.md.
+### Page-type quick reference
 
-### Page-type templates
+- **Source page** (`wiki/sources/<slug>.md`) — one per ingested source. Raw Concept fields: title / author / type / location / retrieved / pages / read-status (skimmed | read | deep-read | unread-stub).
+- **Entity page** (`wiki/entities/<category>/<slug>.md`) — tickers, companies, people, infrastructure, tools, frameworks. Raw Concept: what prompted the page + which sources synthesize into it.
+- **Concept page** (`wiki/concepts/<slug>.md`) — topics, theses, methodologies. Raw Concept: the question or topic the page answers.
+- **Brief page** (`briefs/<YYYY-MM-DD>_<slug>.md`) — deliverable for distribution. Body sections: `## Target` (claude.ai | CeminiSuite | …) / `## Summary` / `## Body` / `## Sources`.
 
-**Source page** (`wiki/sources/<slug>.md`) — one per ingested source:
-```
-## Raw Concept
-- Original title: ...
-- Author(s): ...
-- Type: PDF | article | podcast | video | ...
-- Location: cemini-librarian:/opt/cemini-bulk/research/3:29 19.pdf
-- Retrieved: 2026-04-23
-- Pages / length: 19p
-- Read status: skimmed | read | deep-read | unread-stub
+## Cross-link + citation conventions
 
-## Narrative
-One-paragraph abstract, then bullet takeaways. Cite back to page numbers.
+**Cross-links** (`@path` syntax):
+- Use `@path/to/page.md` inline (no leading slash, relative to `wiki/`)
+- Bidirectional: A → B and B → A both required
+- Stub pages preferred over orphan mentions: if a topic comes up without a page, create a stub
+- **Typed dependencies** (optional, ARA protocol): `@I path/...` (imports), `@B path/...` (bounds), `@M path/...` (baseline/measure). Untyped `@path` means general-related. See `@concepts/typed-relation-dependencies.md`
 
-## Snippets
-Verbatim pulls with page citations.
-```
-
-**Entity page** (`wiki/entities/<category>/<slug>.md`) — tickers, companies, people, facilities:
-```
-## Raw Concept
-What prompted this page; which sources synthesize into it.
-
-## Narrative
-Who/what this entity is. Key facts, properties, current status.
-Cross-link to related entities and concepts throughout.
-
-## Snippets
-Direct quotes or data points used as evidence.
-```
-
-**Concept page** (`wiki/concepts/<slug>.md`) — topics, theses, methodologies:
-```
-## Raw Concept
-The question or topic this page answers.
-
-## Narrative
-The synthesized understanding. Keep this neutral and well-sourced — opinion and synthesis belong in briefs, not here.
-
-## Snippets
-```
-
-**Brief page** (`briefs/<YYYY-MM-DD>_<slug>.md`) — one-off deliverable staged for distribution:
-```
-## Target
-claude.ai | CeminiSuite | ...
-
-## Summary
-
-## Body
-
-## Sources
-List of wiki pages synthesized + raw sources cited.
-```
-
-## Relations syntax — how to cross-link
-
-- Use `@path/to/page.md` inline (no leading slash, relative to `wiki/`).
-- When you link from A → B, also add A to B's `related:` list. Bidirectional means bidirectional.
-- If a topic keeps coming up without a page, create a stub page for it (frontmatter only + one-line narrative) rather than letting mentions pile up orphaned.
-- **Typed dependencies** (optional, from ARA protocol): prefix links with a type when the relationship is clear. `@I path/to/page.md` (imports — injects a definition this page depends on), `@B path/to/page.md` (bounds — propagates a constraint or condition), `@M path/to/page.md` (baseline/measure — comparison point). Untyped `@path` links remain valid and mean "general related." See @concepts/typed-relation-dependencies.md.
-
-## Citation & claim tags
-
-Every factual claim in the wiki must cite its source inline. Formats:
+**Citation tags**:
 - Source page: `[Source: filename.pdf p.5]`
 - External URL: `[Source: https://... (retrieved YYYY-MM-DD)]`
-- Multiple sources: `[Sources: filename.pdf p.5, filename2.pdf p.12]`
+- Multiple: `[Sources: filename.pdf p.5, filename2.pdf p.12]`
 
-Claim confidence tags (inline):
-- `[CONFIRMED]` — supported by ≥2 independent sources
+**Claim confidence tags**:
+- `[CONFIRMED]` — ≥2 independent sources
 - `[TENTATIVE]` — single source or circumstantial
-- `[NEEDS VERIFICATION]` — plausible but untested
-- `[RETRACTED]` — previously believed, now disproven. Keep in place with a note; don't delete.
+- `[NEEDS VERIFICATION YYYY-MM-DD]` — plausible but untested. **Always include the date** so `wiki_gap_detect.py` can flag staleness
+- `[RETRACTED]` — previously believed, now disproven. Keep in place with a note; don't delete
 
 ## Operations
 
 ### Ingest (adding a new source)
 
-1. New source dropped into `research to be indexed/` on the laptop (transient drop zone).
-2. **Run `python3 scripts/preingest_check.py` to detect duplicates** before doing anything else. The script walks `wiki/sources/` and tries to match each inbox file against existing pages by arXiv ID / DOI / URL / filename / title (exact + Jaccard fuzzy). Verdicts: `DUPLICATE` (do not ingest without deciding to supersede / fold / re-download); `LIKELY` (human review); `NEW` (proceed). The script handles the "did I already ingest this 6 months ago?" failure mode the human-curator can't reliably hold in working memory. Known v1 limitation: arXiv-ID matches are extracted from anywhere on a page (incl. cross-link bullets), so the same arXiv ID may surface as multiple matches; the canonical source page is always the first/strongest match.
-3. Read the source (or relevant pages for long PDFs).
-4. Discuss key takeaways with the user before writing.
-5. Create `wiki/sources/<slug>.md` — source page with frontmatter + Raw Concept + short Narrative. Cite the eventual canonical location: `[Source: <filename>.pdf p.5]` (file ends up on librarian; citations remain valid).
-6. Identify new entities and concepts the source touches. For each:
-   - If a page exists: update it, add `related:` backlink, bump `updated:`.
-   - If no page exists: create a stub (frontmatter + one-line Narrative + Relations). Real content accumulates over subsequent ingests.
-7. Update `wiki/index.md` — add rows for any new pages.
-8. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed.
-9. **Move raw source to librarian**: `scp "research to be indexed/<filename>" cemini-librarian:/opt/cemini-bulk/research/` then `rm "research to be indexed/<filename>"` on laptop. Verify with `ssh cemini-librarian "ls /opt/cemini-bulk/research/<filename>"`.
-10. Run lint + commit + push (the wiki side; raw-source move is server-side and not in laptop git).
-11. A single ingest must touch 3–15 pages. If it touches 0 new pages, ask whether the source is worth ingesting.
+1. New source dropped into `research to be indexed/` (transient drop zone)
+2. **Run `python3 scripts/preingest_check.py`** — detects duplicates by sha256 / arXiv ID / DOI / URL / filename / title. Verdicts: `DUPLICATE` (do not ingest without deciding to supersede / fold / re-download), `LIKELY` (human review), `NEW` (proceed)
+3. Read the source (or relevant pages for long PDFs)
+4. **Discuss key takeaways with the user before writing**
+5. Create `wiki/sources/<slug>.md` — frontmatter + Raw Concept + short Narrative. Cite the eventual canonical location: `[Source: <filename>.pdf p.5]`
+6. Identify entities + concepts the source touches. For each:
+   - If page exists: update it, add `related:` backlink, bump `updated:`
+   - If no page: create a stub (frontmatter + one-line Narrative + Relations). Real content accumulates over subsequent ingests
+7. Update `wiki/index.md` — add rows for new pages
+8. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed
+9. **Move raw source to librarian**: `scp "research to be indexed/<filename>" cemini-librarian:/opt/cemini-bulk/research/` then `rm` the laptop copy. Verify with `ssh cemini-librarian "ls /opt/cemini-bulk/research/<filename>"`
+10. Run lint + commit + push (the wiki side; raw-source move is server-side, not in laptop git)
+11. **Update ROADMAP.md + stage briefs in `briefs/` per `post_ingest_workflow` memory rule.** This is the immediately-next step after commit-and-push. Without it, ingest research dies in the wiki.
+12. A single ingest must touch 3-15 pages. If it touches 0 new pages, ask whether the source is worth ingesting
 
 ### Query (answering a question)
 
-1. Read `wiki/index.md` first to locate relevant pages.
-2. Read those pages; follow `@relations` where useful.
-3. Synthesize the answer with inline citations to source pages and raw sources.
-4. **OOD signal**: if the wiki doesn't contain a real answer, say so explicitly. Don't fabricate from tangential matches. Offer to ingest sources that would fill the gap.
-5. **File answers back**: if the query produced a valuable synthesis, file it as a new concept page or brief. Don't let insights die in chat.
-6. Append a query entry to `log.md` if the query was substantive.
+1. Read `wiki/index.md` first to locate relevant pages
+2. Read those pages; follow `@relations` where useful
+3. Synthesize the answer with inline citations to source pages and raw sources
+4. **OOD signal**: if the wiki doesn't contain a real answer, say so explicitly. Don't fabricate from tangential matches. Offer to ingest sources that would fill the gap
+5. **File answers back**: if the query produced a valuable synthesis, file it as a new concept page or brief. Don't let insights die in chat
+6. Append a query entry to `log.md` if substantive
 
 ### Lint (periodic health check)
 
-Run on request. Look for:
-- **Contradictions** — two pages making incompatible claims. Flag inline with `[NEEDS VERIFICATION]` and note on both pages.
-- **Stale claims** — superseded by newer sources. Move to `[RETRACTED]` with pointer to newer source.
-- **Orphans** — pages with zero inbound `related:` links. Either delete, merge, or cross-link.
-- **Missing pages** — concepts mentioned inline without a `@path` because no page exists yet. Create stubs.
-- **Bidirectional gaps** — A lists B as related but B doesn't list A. Fix both sides.
-- **Unread source stubs** that keep getting cited — promote with a real read pass.
+Run on request. The mechanical checks are automated by `scripts/wiki_lint.py`:
 
-The mechanical lint script `scripts/wiki_lint.py` covers orphans / bidir gaps / dangling / missing / cited-unread / frontmatter-quality / stale-NEEDS-VERIFICATION-tags. Contradictions and stale-claim-moves still need a human or LLM read pass.
+- **Orphans** — pages with zero inbound `related:` references
+- **Bidirectional gaps** — A lists B as related but B doesn't list A
+- **Dangling links** — `related:` paths that don't resolve
+- **Missing pages** — `@path` mentions in body where the file doesn't exist
+- **Cited-unread stubs** — source pages with `read_status=unread-stub` and ≥1 inbound edge
+- **Frontmatter quality** — missing `type`/`maturity`/mismatched `updated`
+- **Stale `[NEEDS VERIFICATION YYYY-MM-DD]` tags** (≥7 days old by default)
 
-### Gap detection (Tier 1 of proactive search)
+These still need human/LLM judgment:
+- **Contradictions** — two pages making incompatible claims. Flag with `[NEEDS VERIFICATION YYYY-MM-DD]` and note on both pages
+- **Stale claims** — superseded by newer sources. Move to `[RETRACTED]` with pointer
 
-Run `python3 scripts/wiki_gap_detect.py` on request. Surfaces three kinds of gap with concrete proposed actions:
+### Gap detection (Tier 1)
 
-- **Type A — Cited-unread stubs ready for deep-read** (≥2 inbound + `read_status=unread-stub`). Output includes a proposed Exa query (`crawling_exa(url=…)` if a URL is in the stub's Raw Concept; otherwise `web_search_exa(query=…)`).
-- **Type D — Stale `[NEEDS VERIFICATION YYYY-MM-DD]` tags** (≥7 days old). Output includes the surrounding claim sentence, ready for Exa-resolution per "External research" workflow.
-- **Type E — Thin concept pages** (`## Narrative` <100 words). Output lists inbound source pages that should be deep-read to flesh out the narrative.
+Run `python3 scripts/wiki_gap_detect.py` on request. Three gap types:
 
-Tier 1 is **descriptive only** — it does NOT fetch via Exa, does NOT modify any page. It produces a candidate list. The user picks which items to act on; the LLM (next session) executes via the existing Exa MCP. The "ensure accuracy via Exa" cross-check is part of the existing anti-hallucination protocol — when acting on a Type A or Type D candidate, follow the `crawling_exa` + side-by-side text-comparison pattern documented in the Wave 2/Wave 3 ingests.
+- **Type A — Cited-unread stubs** (≥2 inbound + `read_status=unread-stub`). Output includes proposed Exa query
+- **Type D — Stale `[NEEDS VERIFICATION YYYY-MM-DD]`** (≥7d old). Output includes the surrounding claim sentence for Exa-resolution
+- **Type E — Thin concept pages** (`## Narrative` <100 words). Output lists inbound source pages worth deep-reading
 
-**Tier 2** (proactive Exa with user-gated commit) is roadmapped — see ROADMAP.md "Eventually" section. Not built. **Tier 3** (fully autonomous outbound ingest) is explicitly out of scope on drift / cost / trust grounds; do not propose it.
+Tier 1 is **descriptive only** — produces a candidate list, doesn't fetch via Exa. The user picks; the LLM executes via Exa MCP.
+
+**Tier 2** (proactive Exa with user-gated commit) is roadmapped, not built. **Tier 3** (fully autonomous outbound ingest) is explicitly out of scope on drift / cost / trust grounds.
+
+### Brief audit (pre-distribution sanity check)
+
+Run `python3 scripts/skill_audit.py briefs/<file>.md` before scp'ing a brief to prod. Static checks (40% of design weight):
+
+- Required sections (`## Target`, `## Summary`)
+- Cross-links (`@path` resolution)
+- Citation tags (Sources section OR inline tags)
+- NEEDS VERIFICATION freshness (≥30d old by default)
+- Prose quality (no emoji unless authorized; no TODO/FIXME at ship time)
+- Frontmatter (well-formed YAML if present)
+
+Veto gates wired: Operational Stability + Scientific Integrity. Output: PASS / WARN / REJECT verdict.
 
 ## External research — Exa MCP
 
-When the wiki + raw sources can't answer a query, or when a source cites URLs that haven't been verified, the **Exa MCP server** is the canonical external-research path. Eight tools available, scoped by purpose:
+When the wiki + raw sources can't answer, or when a source cites unverified URLs, the **Exa MCP server** is the canonical external-research path:
 
 | Tool | When to use |
-| --- | --- |
-| `mcp__exa__web_search_exa` | Quick targeted lookup — fact-check, find a primary source URL, news monitoring. |
-| `mcp__exa__web_search_advanced_exa` | Date-bounded, domain-scoped, or category-filtered (papers, news). Use when `web_search_exa` returns too much noise. |
-| `mcp__exa__crawling_exa` | Pull clean LLM-friendly content from a known URL — turns `[Source: https://...]` into verifiable text suitable for `## Snippets`. |
-| `mcp__exa__company_research_exa` | Ticker watchlist gap-fills and entity expansion. Supplements (does not replace) the Gemini Deep Research canonical narrative. |
-| `mcp__exa__people_search_exa` | Founder, exec, key-personnel discovery for ticker / company entity pages. |
-| `mcp__exa__deep_researcher_start` / `_check` | Async multi-step research jobs — useful for novel concept-page bootstrapping when many search angles are needed. |
-| `mcp__exa__get_code_context_exa` | Library / SDK source-code context — useful when fleshing out Cemini-stack entity pages (FastAPI patterns, pykalshi internals, etc.). |
+|------|-------------|
+| `mcp__exa__web_search_exa` | Quick targeted lookup — fact-check, find a primary source URL |
+| `mcp__exa__web_search_advanced_exa` | Date-bounded, domain-scoped, or category-filtered. When `web_search_exa` returns too much noise |
+| `mcp__exa__crawling_exa` | Pull clean LLM-friendly content from a known URL — turns `[Source: https://...]` into verifiable text for `## Snippets` |
+| `mcp__exa__company_research_exa` | Ticker watchlist gap-fills + entity expansion |
+| `mcp__exa__people_search_exa` | Founder, exec, key-personnel discovery |
+| `mcp__exa__deep_researcher_start` / `_check` | Async multi-step research jobs — novel concept-page bootstrapping |
+| `mcp__exa__get_code_context_exa` | Library / SDK source-code context |
 
-Workflow integration:
+**Workflow integration**:
+- **Ingest**: when a source cites a URL, prefer `crawling_exa` to pull cited page directly into `## Snippets`
+- **Query (OOD)**: before declaring a wiki gap, run `web_search_exa`. If results converge, ingest the best 1-2 hits as new source pages
+- **Lint**: `[NEEDS VERIFICATION]` tags trigger an Exa cross-check before being upgraded to `[CONFIRMED]` or moved to `[RETRACTED]`
 
-- **Ingest** — when a source cites a URL, prefer `crawling_exa` to pull the cited page directly into the source page's `## Snippets` rather than paraphrasing from memory. URL-cited claims gain their primary-source text inline.
-- **Query (OOD signal)** — before declaring a wiki gap, run a `web_search_exa`. If results converge, ingest the best 1-2 hits as new source pages and answer from those. If they diverge, file a brief noting the disagreement and offer an ingest plan.
-- **Lint** — `[NEEDS VERIFICATION]` tags should trigger an Exa cross-check before being upgraded to `[CONFIRMED]` or moved to `[RETRACTED]`. `web_search_exa` for the claim text first; if a primary URL turns up, follow with `crawling_exa` for verifiable text.
+Cost discipline: Exa is a paid API. Default `numResults: 3-5` for routine queries; `deep_researcher_*` reserved for genuine multi-source synthesis.
 
-Cost discipline: Exa is a paid API (key in the Claude Code user settings file, never committed). Default `numResults: 3–5` for routine queries; scale up only when a single sweep clearly under-covers the question. The `deep_researcher_*` tools spend more — reserve for legitimate multi-source synthesis tasks, not single-fact lookups.
-
-The `exa:search` skill (from the `exa@claude-plugins-official` plugin) is a higher-level orchestrator that fans out across parallel subagents — use it for genuinely complex research questions where the workflow above isn't enough.
+The `exa:search` skill (from `exa@claude-plugins-official`) fans out across parallel subagents for genuinely complex research questions.
 
 ## Distribution rules
 
 Material ready to leave the wiki goes through `briefs/` first:
 
-- **→ claude.ai** — context for a conversation, writing task, or general research. Copy the relevant brief body.
-- **→ CeminiSuite** — ticker research, strategy input, or anything for the dev stack. Stage in `briefs/`, confirm content with the user, then Claude Code handles the `scp` transfer to `/opt/cemini/briefs/`. **Code and config modifications on the server remain out-of-scope from this workspace** — those flow through a separate server-Claude session that reads the brief at `/opt/cemini/briefs/<file>.md` and executes with its own review loop. This workspace can place staging material on the server (brief transfers into `/opt/cemini/briefs/` only) but does not modify any other path under `/opt/cemini/`. Read-only operations on the server (ssh ls, grep, cat for verification) are fine.
+- **→ claude.ai** — copy the relevant brief body
+- **→ CeminiSuite** — stage in `briefs/`, confirm content with user, then Claude Code handles `scp` to `/opt/cemini/briefs/`. **Code and config modifications on the server remain out-of-scope from this workspace** — those flow through a separate server-Claude session that reads the brief and executes with its own review loop. This workspace can place staging material on the server (brief transfers into `/opt/cemini/briefs/` only) but does not modify any other path under `/opt/cemini/`. Read-only operations on the server (ssh ls, grep, cat for verification) are fine.
 
 ## Working method
 
-- Search the wiki first. Raw sources second. External sources last (via Exa MCP — see "External research" section).
-- Prefer paraphrase + cite over raw quote. Quotes go in `## Snippets` with full citation.
-- When stress-testing a claim, actively look for disconfirming evidence.
-- Flag single-source claims explicitly.
-- File insights into wiki pages or briefs before they disappear from chat.
+- Search the wiki first. Raw sources second. External sources last (via Exa MCP)
+- Prefer paraphrase + cite over raw quote. Quotes go in `## Snippets` with full citation
+- When stress-testing a claim, actively look for disconfirming evidence
+- Flag single-source claims explicitly
+- File insights into wiki pages or briefs before they disappear from chat
+- For substantial briefs (engineering days + operational cost commitments): dispatch a codex / Plan / code-reviewer agent for an independent pass before user GO/NO-GO sign-off — saves wrong-direction implementation effort
+
+## Phase-0 audit pattern (before adopting an external tool)
+
+Before adopting a third-party tool that would integrate into Cemini's stack or wiki, run a Phase-0 source audit (Explore subagent, ~30 min):
+
+1. Clone the repo to `/tmp/<tool>-audit/`
+2. Verify license matches the eval claim
+3. Verify maturity signals (stars, commits, last push, open issues)
+4. **Audit for the most-likely failure mode for this tool class**:
+   - Wiki-tooling: hardcoded directory layout? (kills nested-wiki support — see SwarmVault NO-GO 2026-05-04, PageIndex NO-GO 2026-05-05)
+   - Skill libraries: domain-fit mismatch? (Cemini already covers source-side workflow — see Claude-OSINT NO-PORT 2026-05-05)
+   - Per-tool-class specifics: see `wiki/entities/tools/<tool>.md` audits for examples
+5. Compare against existing Cemini coverage (don't adopt parallel implementations of what we already have)
+6. Decide GO / CONDITIONAL-GO / NO-GO and record in the entity page
+
+This pattern has shipped 3 clean rejections of credible-looking but wrong-fit tools across K28+K30. Saves ~2-4 hours of misaligned implementation per audit.
 
 ## Session-start ritual
 
-On every new session, **before any other work**, run these checks. They are designed to be cheap (under a minute) and to catch deferred work the user wouldn't otherwise notice.
+On every new session, **before any other work**, run these checks (cheap, under a minute):
 
 ### 0. Resume from hot.md
 
 Read `hot.md` (gitignored session-state cache). Report in one line:
 
-> "Resuming from K20 (OpenClaw taxonomy shipped). 22 accepted lint gaps. Next: K21 academic-stub routing or your direction."
+> "Resuming from K30 (Polymarket-readiness wave + 3 audits + 6 prod briefs staged). Workspace idle. Next: your direction."
 
-If `hot.md` is missing (first run, deleted, or gitignored on a fresh clone), say:
+If `hot.md` is missing (first run, deleted, gitignored on a fresh clone), say:
 
-> "No `hot.md` found — fresh session. K20 was the last shipped deep-read. Want me to rebuild session state?"
+> "No `hot.md` found — fresh session. Want me to rebuild session state from `wiki/log.md` + `ROADMAP.md`?"
 
-Then continue with the ritual. At session end, rewrite `hot.md` with updated position, open decisions, pending actions, reconciliation state, and accepted gaps.
+At session end, rewrite `hot.md` with updated position, open decisions, pending actions.
 
-### 1. Tier-2 sweep cadence (Workflow A)
+### 1. Tier-2 sweep cadence
 
-Run:
 ```bash
 ls -1t wiki/sweeps/*.md 2>/dev/null | head -1
 ```
 
-If the most recent sweep file is **>7 days old**, OR if `wiki/sweeps/` is empty, prompt the user:
+If most recent sweep file is **>7 days old** OR `wiki/sweeps/` is empty, prompt:
 
 > "It's been N days since the last Tier-2 arXiv sweep. Want me to run one now?"
 
-If the user says yes, fire the 5 cluster queries from `@concepts/high-signal-paper-patterns.md` via the Exa MCP, write the report to `wiki/sweeps/YYYY-MM-DD.md`, and present scored candidates per the rubric. **Do not silently auto-run** — Tier 2 is user-gated-commit.
-
-If the user declines or defers, accept it and move on; don't push.
+Tier 2 is user-gated-commit; do NOT silently auto-run.
 
 ### 2. Inbox check
 
-Run:
 ```bash
 ls -1 "research to be indexed/" 2>/dev/null | grep -v '^\.'
 ```
 
-If anything is in the inbox that the user hasn't explicitly asked you to address, mention it briefly: "Btw, you have N items in `research to be indexed/`. Want me to triage them?" Then continue with whatever the user actually wants.
+If items exist that the user hasn't asked you to address, mention briefly: "Btw, you have N items in `research to be indexed/`. Want me to triage them?"
 
 ### 3. (Future ritual hooks land here.)
 
-Add new ritual checks above this line as the schema evolves. Keep each check under 60 seconds; rituals that grow into multi-minute operations should become opt-in commands instead.
-
-## Active research threads
-
-- **CeminiSuite per-ticker research** — active. Canonical format is the **Gemini Deep Research template** (six sections: Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context). Watchlist and per-symbol progress tracked at `wiki/entities/ticker-watchlist.md`. Ingest workflow: user drops `<SYMBOL> <date>.docx` into `research to be indexed/` → Claude runs `scripts/index_tickers.py` → `scp` source to `cemini-librarian:/opt/cemini-bulk/research/` and removes laptop copy → flips the status row in the watchlist table. **Divergence-from-server rule**: wiki-tracked additions/removals lead the server's `tickers.json`; annotate divergence in the watchlist's "Wiki-tracked divergence" section, apply the combined diff server-side, then re-pull config to restore parity. **Note**: `scripts/index_tickers.py` may need updating to scp instead of local-mv post-2026-04-28 raw-layer migration.
-- **Corpus inventory** — 230 stubs generated from the raw research corpus (now at `cemini-librarian:/opt/cemini-bulk/research/`). Clusters skew heavily to RL/MARL (108) and LLM agents (59). Corpus is research-methodology heavy — math, portfolio strategy, Cemini-internal audits — not ticker- or event-driven.
-- **Wave 5 follow-up integration** (workspace-side, queued in `ROADMAP.md`) — three Steal-from / Adopt patterns surfaced 2026-04-30 across Wave 5A (cemini stack) + Wave 5B (OSINT cluster) that affect the laptop / librarian rather than cemini-prod: (a) **`/autoresearch` multi-round loop** from `@sources/agriciDaniel-claude-obsidian.md` → Tier-2.5 sweep automation candidate (port into `scripts/weekly_arxiv_sweep.sh` when Path 2 activates); (b) **`hot.md` session-state cache** (claude-obsidian) → cpr-pattern session-granularity Resume extension; (c) **`alash3al/stash` episodic memory layer** → librarian Phase 7+ candidate (Postgres + pgvector; pairs operationally with context7). Cemini-prod-relevant Wave 5 adoptions (Kronos tokenizer, dual-MCP-Polymarket) are staged as briefs in `briefs/2026-04-30_*.md` per workspace doctrine.
+Keep each check under 60 seconds. Rituals that grow into multi-minute operations should become opt-in commands instead.
 
 ## Related — read-only from this workspace
-- **CeminiSuite dev stack** — Hetzner host, `/opt/cemini` server root. Connection details (SSH target, IP) live in `.local/server.md` (gitignored). Has its own `CLAUDE.md` for dev work. **Never modify the server's `CLAUDE.md` from here.**
 
-## Open questions
-- PDF content index — 283 files at `cemini-librarian:/opt/cemini-bulk/research/` are date-named, not topic-named. Bootstrap in progress: extract first pages → create `wiki/sources/` stubs → deep engagement as PDFs are consulted (read via `ssh cemini-librarian` or `scp` to `/tmp/` for Preview/Adobe sessions).
-- Whether to rename the workspace folder (user offered an alternative path; no pressing reason yet).
+- **CeminiSuite dev stack** — Hetzner host, `/opt/cemini` server root. Connection details (SSH target, IP) live in `.local/server.md` (gitignored). Has its own `CLAUDE.md` for dev work. **Never modify the server's `CLAUDE.md` from here.**
