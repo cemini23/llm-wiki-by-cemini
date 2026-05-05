@@ -8,6 +8,7 @@ related:
   - sources/links-2-5-4-tool-eval.md
   - entities/tools/atlas-gic-autoresearch.md
   - sources/agriciDaniel-claude-obsidian.md
+  - sources/xskill-2603-12056.md
   - concepts/llm-agent-systems.md
   - concepts/scatter-gather-topology.md
 maturity: draft
