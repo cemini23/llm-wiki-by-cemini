@@ -12,6 +12,8 @@ related:
   - concepts/cemini-license-posture.md
   - entities/platforms/polymarket.md
   - entities/tools/polymarket-agents.md
+  - concepts/polymarket-market-making-architectures.md
+  - concepts/cross-venue-arbitrage-pattern.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-05

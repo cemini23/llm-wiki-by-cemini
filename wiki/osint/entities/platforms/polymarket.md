@@ -21,6 +21,14 @@ related:
   - sources/gemini-dr-wave5b-osint-2026-04-30.md
   - sources/caiovicentino-polymarket-mcp-server.md
   - sources/last30days-skill-mvanhorn.md
+  - sources/links-3-5-4-tool-eval.md
+  - sources/polymarket-5-5-tool-eval.md
+  - sources/5-5-links-2-tool-eval.md
+  - entities/tools/polymarket-agents.md
+  - entities/tools/polymarket-python-order-utils.md
+  - concepts/polymarket-market-making-architectures.md
+  - concepts/cross-venue-arbitrage-pattern.md
+  - concepts/prediction-market-historical-analysis.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-30

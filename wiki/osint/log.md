@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-05] synthesize | K30 wiki-side concept pages (#16, #17, #21)
+
+Closed three K30-derived ROADMAP wiki-side workstreams. Three new concept synthesis pages:
+
+- `concepts/polymarket-market-making-architectures.md` — synthesizes 5 MIT-licensed Polymarket MM Steal-from impls into a 5-layer reference architecture for Cemini's eventual MM. Five postures (minimal AMM-keeper, full two-sided liquidity, risk-aware scaffolding, multi-strategy bundling, HF-niche specialization) → recommended starting blueprint built on Polymarket Agents foundation.
+- `concepts/cross-venue-arbitrage-pattern.md` — documents the cross-doc-duplicate signal (Polymarket-Kalshi BTC Arbitrage Bot in 2 K30 batches). 6-step arb loop architecture + 6 risk caveats. BTC 1h canonical entry pair; pattern asset-agnostic.
+- `concepts/prediction-market-historical-analysis.md` — backtest-pipeline plumbing synthesis. 5-layer historical-data stack feeds multiple downstream briefs (K28 quant-libs + Klaassen-Magnus + probablyprofit; K30 Polymarket Stack).
+
+Cross-link plumbing in 5 existing files (3 K30 source pages + 2 platform entities). Wiki/index.md updated under "Trading strategy concepts" cluster. ROADMAP items #16, #17, #21 marked DONE.
+
 ## [2026-05-05] ingest | K30 — Polymarket-readiness wave (4 docx + 2 PDFs, 102 tools)
 
 User dropped 7 sources. preingest_check: 6 NEW + 1 DUPLICATE (PredictionMarketBench arXiv 2602.00133 already at `sources/kalshi-4-3-29.md` since 2026-04-23 — duplicate removed from inbox).

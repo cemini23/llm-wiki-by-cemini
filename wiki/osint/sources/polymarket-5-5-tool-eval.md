@@ -12,6 +12,7 @@ related:
   - entities/platforms/polymarket.md
   - entities/tools/polymarket-agents.md
   - entities/tools/polymarket-python-order-utils.md
+  - concepts/polymarket-market-making-architectures.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-05

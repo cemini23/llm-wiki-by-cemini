@@ -14,6 +14,8 @@ related:
   - entities/platforms/polymarket.md
   - entities/tools/pykalshi.md
   - entities/tools/kalshi-llms-txt.md
+  - concepts/cross-venue-arbitrage-pattern.md
+  - concepts/prediction-market-historical-analysis.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-05
