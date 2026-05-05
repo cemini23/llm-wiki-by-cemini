@@ -1,5 +1,28 @@
 # Wiki Log
 
+## [2026-05-05] audit | PageIndex Phase 0 — VERDICT: NO-GO (ROADMAP #11)
+
+Cloned `https://github.com/VectifyAI/PageIndex` to `/tmp/pageindex-audit/` for Phase 0 source audit (similar template to K28 SwarmVault audit). Eval claim accurate: MIT licensed, vectorless reasoning-based RAG. Eight load-bearing questions answered.
+
+Four disqualifying findings, any one alone sufficient:
+
+1. **Q1 single-file API**: PageIndex's `PageIndexClient.index(file_path)` and the underlying `page_index()` accept ONE file at a time. No directory walking / glob / batch API. Cemini's 530+ wiki pages + 99 nested entity files would require 600+ separate index instances + a registry layer mapping queries to instances. kb-server handles all of this with one flat index.
+
+2. **Q2 agentic cost per query**: PageIndex uses LLM-driven reasoning at query time (agent uses `get_document_structure()` to walk the index tree, then auto-calls `get_page_content(pages="N-M")`). 2-4 LLM calls per query → ~$0.001-0.005/query at GPT-4o mini rates, multi-second latency. kb-server is sub-100ms FTS at $0/query. At Cemini's expected wiki query volume, the operational economics flip.
+
+3. **Q5 + Q6 lost graph + lost metadata**: PageIndex doesn't parse `@path/to/page.md` cross-links (Cemini has 3,400+) or frontmatter metadata (`type`, `tags`, `keywords`, `related[]`, `maturity`). Both would be indexed as plain text — wiki graph topology and structured-filter capability lost.
+
+4. **Q8 use-case mismatch**: PageIndex is built for long-form professional document QA (financial PDFs, legal docs, multi-hundred-page research papers). Cemini's wiki articles average 2-10 KB / 100-500 tokens — exactly the size class where FTS wins and reasoning-based retrieval is overkill.
+
+NOT generically rejected — rejected for *Cemini's wiki layer specifically*. Re-evaluation triggers documented inline in `entities/tools/pageindex.md`: PageIndex becomes a candidate ONLY IF Cemini begins indexing long-form professional documents as a separate retrieval tier (e.g., SEC EDGAR 10-K/10-Q filings, CFTC ANPRM filings, the research-corpus PDFs in `/opt/cemini-bulk/research/`).
+
+Files touched:
+- `wiki/entities/tools/pageindex.md` (draft → validated; Phase 0 verdict + 8-question table + re-evaluation triggers + audit-path-deferred section)
+- `wiki/concepts/wiki-tooling-evaluation.md` candidate landscape table (PageIndex marked NO-GO; Deep GraphRAG remains the only librarian-tooling alternative on file)
+- ROADMAP item #11 marked DONE-NO-GO
+
+After K28 SwarmVault NO-GO + this PageIndex NO-GO, the Karpathy-pattern alternative-to-kb-server search has eliminated 2 of 3 K-series candidates. **Default-stay-on-kb-server is the operational answer** unless Deep GraphRAG triggers a re-evaluation by the conditions above.
+
 ## [2026-05-05] adopt | Kalshi llms.txt ingestion (ROADMAP #13)
 
 Pulled `https://docs.kalshi.com/llms.txt` (33 KB, HTTP 200) and ingested verbatim as `wiki/concepts/kalshi-api-reference.md` (~37 KB total with frontmatter + refresh procedure + Cemini provenance metadata).
