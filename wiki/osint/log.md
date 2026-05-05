@@ -1,5 +1,39 @@
 # Wiki Log
 
+## [2026-05-05] audit | Claude-OSINT Phase 0 — VERDICT: NO-PORT (ROADMAP #15)
+
+Cloned `https://github.com/elementalsouls/Claude-OSINT` (MIT, 476★, last commit 2026-04-27). K30 eval claim accurate on lines (~5,861) and license, but framing was misleading: not "thousands of small skills" — only **2 large skills** (osint-methodology 1,693 lines + offensive-osint 4,168 lines).
+
+Phase 0 categorization across both skills:
+- 0 PORT-DIRECTLY
+- 0 PORT-WITH-ADAPTATION
+- **2 DUPLICATE-DOMAIN** (both target external reconnaissance / red-team OSINT — subdomain enumeration, SSO/SAML mapping, attack-surface, secret scanning, threat-actor investigation)
+- 0 OFF-DOMAIN
+- 0 DEFER
+
+**Domain mismatch, not technical mismatch.** Format is directly compatible (Anthropic's official Claude Code skill format with YAML frontmatter + triggers); skills would load into `~/.claude/skills/` without modification. But "compatible" ≠ "useful": Claude-OSINT helps a user *conduct reconnaissance* (find target's subdomains, validate target's credentials, identify target's attack paths). Cemini's curator workflow helps *ingest research sources* (validate provenance, extract takeaways, cross-link concepts, build indexes). Orthogonal problem spaces.
+
+Concrete failure mode: if a Cemini session pulled `offensive-osint` on the trigger keyword "secret scanning," Claude would receive 4,168 lines on finding leaked AWS keys in a target's GitHub repos — not on how to validate a source that *discusses* AWS secret-management. Skill fires on keyword, dumps irrelevant context.
+
+The selectivity hard rule (codified in `@concepts/curator-skills.md` 2026-05-05): "if Cemini's K-series ingest discipline already covers a skill's domain, don't merge — duplicate coverage adds noise." Cemini already covers source-side validation via preingest_check.py + skill_audit.py + wiki_gap_detect.py + cross_doc_dedup.py. Both Claude-OSINT skills fall in DUPLICATE-DOMAIN. Reject.
+
+### Eval-quality lesson logged
+
+The K30 Gemini DR eval used phrasing "5,500 lines of specialized SKILL.md files" (plural) which misled granularity expectation. Real shape: 2 large reference-document-style skills, not many small tactical skills. **Lesson for future Gemini DR sweeps**: when evaluating skill libraries, ask explicitly "how many distinct skills" alongside "how many lines." Documented in `@entities/tools/claude-osint.md` "Eval-quality footnote" section for K-series ingest discipline.
+
+### Activation triggers (re-evaluate if either fires)
+
+- Cemini needs OSINT-style external-reconnaissance capabilities (e.g., counterparty tech-stack risk assessment, competitor monitoring via subdomain enumeration)
+- A future Claude-OSINT version adds curator-workflow skills (source ingestion, citation management, wiki page generation)
+
+Until then, shelved.
+
+### `curator-skills.md` page stays empty
+
+`@concepts/curator-skills.md` was created as a stub accumulator (K30 #24). It now records the NO-PORT verdict + watch list of future-candidate skill sources (claude-obsidian, kepano-obsidian-skills, XSKILL paper's framework). The discipline rule stays in force: any future skill merged into `~/.claude/skills/` requires an entry on this page.
+
+After K28 SwarmVault NO-GO + K30 PageIndex NO-GO + K30 Claude-OSINT NO-PORT, the workspace's audit pattern has shipped a clean record of three "credible-looking but wrong-fit" tool rejections in two sessions. The curator-discipline (Phase 0 audit before adoption commitment) is working — saves ~50-90 min × 3 tools = 2-4 hours of misaligned implementation.
+
 ## [2026-05-05] decide | atlas-gic + XSKILL → audit-trail subset (codex-reviewed scope reduction)
 
 User asked for codex-agent independent review of the K28 atlas-gic + K29 XSKILL Conductor-evolution briefs before committing to GO/NO-GO on the operational-cost commitment. Codex review surfaced three correctness issues:

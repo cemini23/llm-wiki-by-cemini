@@ -59,17 +59,30 @@ But blindly merging 5,500 lines of upstream skills dilutes the workflow. The dis
 
 ### Currently merged skills
 
-*(none — this page is in stub state until ROADMAP item #15 executes.)*
+**(none — Claude-OSINT Phase 0 audit 2026-05-05 returned NO-PORT; the page stays empty by design)**
 
-When item #15 ships, the first batch of merged skills will be documented here with the format above. The expected first-merge candidates from Claude-OSINT (per `@entities/tools/claude-osint.md`) are skills covering:
-
+The expected first-merge candidates were Claude-OSINT skills covering:
 - Source-page generation conventions
 - Cross-link discipline / `@path` resolution
-- Citation patterns for OSINT material
+- Citation patterns
 - Provenance tracking
-- Lint patterns for OSINT-specific quality flags
+- Lint patterns for quality flags
 
-**Selectivity hard rule**: if Cemini's K-series ingest discipline already covers a skill's domain, don't merge — duplicate coverage adds noise. The merge target is gaps, not parallel implementations.
+**Audit finding**: Claude-OSINT contains 2 large-format skills (osint-methodology + offensive-osint, ~5,861 lines) targeting **external reconnaissance / red-team OSINT** (subdomain enumeration, SSO mapping, attack-surface analysis, secret scanning). Zero overlap with Cemini's curator workflow. See `@entities/tools/claude-osint.md` Phase 0 audit table for full evidence.
+
+The selectivity hard rule worked: every Claude-OSINT skill fell into the DUPLICATE-DOMAIN category (Cemini's K-series + scripts/ already cover source-side validation; Claude-OSINT covers target-side reconnaissance). Porting any of them would add a parallel "source assessment" framework that doesn't fit the curator workflow's actual problem space.
+
+**Selectivity hard rule (preserved for future skill candidates)**: if Cemini's K-series ingest discipline already covers a skill's domain, don't merge — duplicate coverage adds noise. The merge target is gaps, not parallel implementations.
+
+### Future skill candidates (when they emerge)
+
+This page activates when a candidate skill source genuinely fills a gap in Cemini's curator workflow. Possible sources to watch:
+- **Anthropic skill registry** — when official Anthropic-curated skills land in claude-plugins-official, evaluate against the selectivity rule
+- **claude-obsidian's `/autoresearch` Markdown-skills** (`@sources/agriciDaniel-claude-obsidian.md`) — Wave 5B Adopt; some of those may be wiki-curator-relevant rather than research-loop-specific. Re-audit when a specific gap emerges.
+- **kepano-obsidian-skills** (`@sources/kepano-obsidian-skills.md`) — earlier Obsidian-skills source; same architectural family
+- **XSKILL paper's MLLM Skill Library framework** (`@sources/xskill-2603-12056.md`) — academic source; the *pattern* of structured Markdown skill libraries is validated by the paper, but the K30 Conductor-evolution work has been deferred via the audit-trail-subset decision (per K28 #6/#6b → 6c). Skill-library work for Conductor stays paused too.
+
+The **discipline rule stays in force**: any future skill merged into `~/.claude/skills/` requires a corresponding entry on this page with provenance + Cemini adaptation notes + date + active/retired status.
 
 ### Cross-skill dependencies
 
