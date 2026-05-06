@@ -40,9 +40,11 @@ All four are local-only. None expose proprietary code/research to external LLM p
 
 ### Open follow-ups
 
-- Cemini-prod ttok install (single Pipfile addition; could fold into Conductor audit-trail brief or stand alone as a one-line PR)
-- Upstream feedback (low priority): rewind install.sh checksum-handling bug + missing LICENSE file
-- API-key configuration for rewind (user choice; not blocking)
+- ✓ Cemini-prod ttok install — `briefs/2026-05-06_ttok-prod-install.md` shipped to prod 2026-05-06 (skill_audit PASS 100/100, 7.9 KB)
+- ✓ Upstream feedback to Chronos778/git-rewind:
+  - [issue #1](https://github.com/Chronos778/git-rewind/issues/1): install.sh checksum bug (404 .sha256 → "Not Found" parsed as expected hash). Suggested fix: `curl -fsSL` to fail-on-404 and route to existing skip-verification path
+  - [issue #2](https://github.com/Chronos778/git-rewind/issues/2): missing LICENSE file (Cargo.toml says MIT, no LICENSE artifact). Suggested fix: standard MIT LICENSE text at repo root
+- API-key configuration for rewind: user adopting **Groq** (free tier; user adding both Groq + Gemini keys); see `@entities/tools/git-rewind.md` Configure section for env-var pattern
 
 ## [2026-05-05] ingest | K31 — JP Morgan portfolio paper + 5_5 moarrr Gemini DR batch (2 raws, 19 tools)
 

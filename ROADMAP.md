@@ -12,8 +12,9 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 - **Wiki**: 537 pages indexed, 3,444 outbound edges, 527 with inbound coverage, 10 orphans (8 pre-existing baseline + 1 intentional leetcode stub + 1 reference-only JPM methodology paper), license-pattern catalog 9 modes
 - **K-series**: K31 latest (JP Morgan portfolio paper + 5_5 moarrr 19-tool batch, 2026-05-05). All workspace-side adoption items from K28→K31 queue are closed
-- **Active prod briefs**: 8 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution (6 from K28-K30 + 2 new K31)
+- **Active prod briefs**: 9 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution (6 from K28-K30 + 3 new K31)
 - **Deferred prod briefs (with activation triggers)**: 2 (autoresearch + XSKILL Conductor evolution)
+- **Laptop-side K31 adoptions**: ttok 0.3 + git-rewind 1.1.4 INSTALLED 2026-05-06; 2 upstream issues filed against Chronos778/git-rewind ([#1](https://github.com/Chronos778/git-rewind/issues/1) install.sh checksum bug, [#2](https://github.com/Chronos778/git-rewind/issues/2) missing LICENSE file). User adopting **Groq** for rewind LLM backend (free tier).
 - **Inbox**: 0
 
 ## Next — actually pending action
@@ -34,10 +35,9 @@ The Next queue is empty of workspace-actionable items. What remains:
 | `2026-05-05_conductor-audit-trail-phase1.md` | Conductor fitness function + audit JSONL + git-tracked config commits (no LLM mutation engine) |
 | `2026-05-06_hftbacktest-adoption.md` (NEW K31) | Microsecond-tick HFT backtester for Polymarket/Kalshi MM + cross-venue arb threshold tuning. Sister to quant-libs (daily-bar) — fills the execution-resolution gap. |
 | `2026-05-06_guidance-ai-adoption.md` (NEW K31) | Microsoft structured-generation library wrapping DeepSeek calls; eliminates parsing-error tail in LangGraph + FastMCP `@mcp.tool` pipeline. |
+| `2026-05-06_ttok-prod-install.md` (NEW K31) | Single Pipfile addition (`ttok==0.3`); pre-call audit hook in DeepSeek wrapper. Apache-2.0. Tiny standalone brief. |
 
 Plus prod-originated: `2026-05-04_step124-phase1-verification.md`.
-
-**Workspace-side discipline**: ttok universal install pending — `pip install ttok` on laptop + add to `cemini-prod:/opt/cemini/Pipfile`. No brief required (single-purpose CLI utility).
 
 ### 2 — Deferred-with-triggers (do not delete)
 

@@ -31,7 +31,7 @@ AI-powered command-line interface developed in Rust. Evaluates the current state
 ## Narrative
 
 - **URL**: `https://github.com/Chronos778/git-rewind` ✓ verified 2026-05-06
-- **License**: **MIT per `Cargo.toml` metadata** but **NO LICENSE file in repo** (verified 2026-05-06 via gh API). This is a soft-license-intent signal, not a hardened legal artifact. CONDITIONAL for IP-sale-readiness; ACCEPTABLE for laptop-only dev tool. Filed an upstream feedback opportunity (add `LICENSE` file) but not blocking.
+- **License**: **MIT per `Cargo.toml` metadata** but **NO LICENSE file in repo** (verified 2026-05-06 via gh API). This is a soft-license-intent signal, not a hardened legal artifact. CONDITIONAL for IP-sale-readiness; ACCEPTABLE for laptop-only dev tool. Filed upstream as [issue #2](https://github.com/Chronos778/git-rewind/issues/2) 2026-05-06; not blocking.
 - **Stack**: Rust binary (pre-built releases for `x86_64-apple-darwin`, `aarch64-apple-darwin`, Linux variants, Windows)
 - **LLM integration**: Multi-provider via `OPENAI_API_BASE` env-var; supports Groq > Gemini > OpenAI (priority order with cost-discipline framing) + any OpenAI-compatible endpoint (Ollama, DeepSeek, vLLM, etc.)
 - **Maintainer / maturity**: `Chronos778`, 16★, 0 issues, created 2026-05-02, last push 2026-05-05. **Very young + small.** Pin version aggressively; treat as low-stakes Adopt with bus-factor caveat.
@@ -63,7 +63,7 @@ Three distribution paths exist (per upstream README):
    ```bash
    curl -fsSL https://raw.githubusercontent.com/Chronos778/git-rewind/main/install.sh | bash
    ```
-   ⚠ **Known bug 2026-05-06**: upstream `install.sh` checksum-verification step references a `.sha256` URL that returns 404 for the latest release. The script parses the 404 body ("Not Found") as the expected checksum, fails comparison, exits. **Workaround used**: manually downloaded the binary tarball from the release page and extracted to `~/.local/bin/`. Filed as upstream feedback opportunity but not blocking.
+   ⚠ **Known bug 2026-05-06**: upstream `install.sh` checksum-verification step references a `.sha256` URL that returns 404 for the latest release. The script parses the 404 body ("Not Found") as the expected checksum, fails comparison, exits. **Workaround used**: manually downloaded the binary tarball from the release page and extracted to `~/.local/bin/`. Filed upstream as [issue #1](https://github.com/Chronos778/git-rewind/issues/1) 2026-05-06; not blocking.
 2. **Cargo install** (requires Rust toolchain — Cemini laptop doesn't have one per K28 leaf decision):
    ```bash
    cargo install git-rewind
