@@ -8,13 +8,12 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
-## Current state (end of 2026-05-05)
+## Current state (end of 2026-05-06)
 
 - **Wiki**: 537 pages indexed, 3,444 outbound edges, 527 with inbound coverage, 10 orphans (8 pre-existing baseline + 1 intentional leetcode stub + 1 reference-only JPM methodology paper), license-pattern catalog 9 modes
-- **K-series**: K31 latest (JP Morgan portfolio paper + 5_5 moarrr 19-tool batch, 2026-05-05). All workspace-side adoption items from K28→K31 queue are closed; K31 surfaces 2 new prod-brief candidates (hftbacktest + guidance-ai)
-- **Active prod briefs**: 6 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution
+- **K-series**: K31 latest (JP Morgan portfolio paper + 5_5 moarrr 19-tool batch, 2026-05-05). All workspace-side adoption items from K28→K31 queue are closed
+- **Active prod briefs**: 8 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution (6 from K28-K30 + 2 new K31)
 - **Deferred prod briefs (with activation triggers)**: 2 (autoresearch + XSKILL Conductor evolution)
-- **K31 brief candidates (workspace-side staging pending)**: 2 (hftbacktest standalone + guidance-ai folded-or-standalone)
 - **Inbox**: 0
 
 ## Next — actually pending action
@@ -23,7 +22,7 @@ The Next queue is empty of workspace-actionable items. What remains:
 
 ### 1 — Awaiting prod-side execution (no workspace action)
 
-6 briefs at `cemini-prod:/opt/cemini/briefs/`:
+8 briefs at `cemini-prod:/opt/cemini/briefs/`:
 
 | Brief | What it ships |
 |-------|---------------|
@@ -33,16 +32,12 @@ The Next queue is empty of workspace-actionable items. What remains:
 | `2026-05-05_polymarket-stack-adoption.md` | Polymarket Agents + python-order-utils + py-clob-client + polymarket-mcp-server |
 | `2026-05-05_pykalshi-adoption.md` | pykalshi replaces bloated official Kalshi SDK |
 | `2026-05-05_conductor-audit-trail-phase1.md` | Conductor fitness function + audit JSONL + git-tracked config commits (no LLM mutation engine) |
+| `2026-05-06_hftbacktest-adoption.md` (NEW K31) | Microsecond-tick HFT backtester for Polymarket/Kalshi MM + cross-venue arb threshold tuning. Sister to quant-libs (daily-bar) — fills the execution-resolution gap. |
+| `2026-05-06_guidance-ai-adoption.md` (NEW K31) | Microsoft structured-generation library wrapping DeepSeek calls; eliminates parsing-error tail in LangGraph + FastMCP `@mcp.tool` pipeline. |
 
 Plus prod-originated: `2026-05-04_step124-phase1-verification.md`.
 
-### 1.5 — K31 brief candidates (workspace-side staging pending)
-
-| Candidate | Decision needed | Sketch |
-|-----------|-----------------|--------|
-| **hftbacktest brief** | Standalone vs folded-into-quant-libs | Phase 0 audit (clone, license verify, license + maturity + Polars-friendliness) → Phase 1 sandbox replicate Polymarket-Kalshi BTC arb backtest → Phase 2 integrate as backtest substrate in `services/llm_analyst/backtest/` alongside Riskfolio-Lib + FinanceToolkit. Sister to `2026-05-04_quant-libs-fastmcp-integration.md`. Load-bearing for already-shipped `concepts/polymarket-market-making-architectures.md` + `concepts/cross-venue-arbitrage-pattern.md`. |
-| **guidance-ai integration** | Fold into `2026-05-05_conductor-audit-trail-phase1.md` vs standalone | Wrap DeepSeek calls in `services/llm_analyst/deepseek_client.py` with `@guidance` decorator; A/B parsing-error rate vs current prompt-engineered version on Conductor taxonomy classifier. Phase 3 extends to FastMCP `@mcp.tool` decorators. |
-| **ttok universal install** | No brief — single `pip install ttok` | Laptop install + add to Cemini-prod `Pipfile`. Pair with cost-discipline calculations in conductor-audit-trail Phase 1+5. |
+**Workspace-side discipline**: ttok universal install pending — `pip install ttok` on laptop + add to `cemini-prod:/opt/cemini/Pipfile`. No brief required (single-purpose CLI utility).
 
 ### 2 — Deferred-with-triggers (do not delete)
 
@@ -131,7 +126,7 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 
 ### Ingests
 - **K30 Polymarket-readiness wave** — 4 Gemini DR docx batches (102 tools) + Deep GraphRAG arXiv 2601.11144 + Murphy RL Overview arXiv 2412.05265v5. 13 wiki pages (6 source + 7 entity stubs) + license-posture 8 → 9 patterns (added ELv2 source-available). 1 prod brief staged: `2026-05-05_polymarket-stack-adoption.md`.
-- **K31 JPM portfolio paper + 5_5 moarrr Gemini DR batch (19 tools)** — 7 wiki pages (2 source + 5 entity stubs: hftbacktest, guidance-ai, letta-memgpt, ttok, git-rewind). License-posture catalog unchanged (9 modes stable). 2 brief candidates surfaced (hftbacktest standalone + guidance-ai fold-or-standalone) staged in ROADMAP §1.5; ttok universal install does not need a brief. JPM paper indexed reference-only (off-domain methodology with transfer value).
+- **K31 JPM portfolio paper + 5_5 moarrr Gemini DR batch (19 tools)** — 7 wiki pages (2 source + 5 entity stubs: hftbacktest, guidance-ai, letta-memgpt, ttok, git-rewind). License-posture catalog unchanged (9 modes stable). 2 standalone briefs shipped to prod 2026-05-06: `2026-05-06_hftbacktest-adoption.md` + `2026-05-06_guidance-ai-adoption.md` (both PASS skill_audit at 100/100). ttok = no-brief universal install (pending laptop + Cemini-prod Pipfile addition). JPM paper indexed reference-only (off-domain methodology with transfer value).
 
 ### Adoption verdicts (3 audits + multiple briefs shipped)
 - **#11 PageIndex Phase 0** → NO-GO. Single-file API + agentic cost + lost graph/metadata. Wrong tool for flat wiki.
