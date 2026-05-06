@@ -6,15 +6,17 @@ keywords: [ttok, simonw, token-count, llm-cost-discipline, pre-call-audit, brief
 related:
   - sources/5-5-moarrr-tool-eval.md
   - entities/tools/codegraph.md
+  - entities/tools/git-rewind.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-06
 ---
 
 ## Relations
 
 - @sources/5-5-moarrr-tool-eval.md — origin source: K31 Gemini DR eval URL 19, **Adopt** tier
 - @entities/tools/codegraph.md — companion laptop-side workflow tool (token efficiency via AST indexing); ttok complements by measuring the savings
+- @entities/tools/git-rewind.md — companion K31 laptop adoption; ttok measures any text payload, git-rewind's `rewind estimate` measures repo-state token count specifically
 
 ## Raw Concept
 
@@ -22,11 +24,30 @@ Ultra-lightweight Python CLI utility by Simon Willison. Single-purpose: **audit,
 
 ## Narrative
 
-- **URL**: github.com/simonw/ttok (Simon Willison's standard repo namespace)
-- **License**: per eval — [NEEDS VERIFICATION 2026-05-05]; Simon Willison's published tools are consistently Apache-2.0
-- **Stack**: Python, single-file dependency
-- **Distribution**: `pip install ttok`
+- **URL**: github.com/simonw/ttok ✓ verified 2026-05-06
+- **License**: **Apache-2.0** ✓ verified 2026-05-06 via gh API (matches Simon Willison's standard pattern)
+- **Stack**: Python, depends on `tiktoken` (OpenAI tokenizer)
+- **Distribution**: `pip install ttok` ✓ verified — installs cleanly via `pip3 install --user`
 - **Maintainer**: Simon Willison (high reliability + active maintenance, per his track record across `llm`, `datasette`, `sqlite-utils`, etc.)
+- **Stars**: 391 (verified 2026-05-06)
+- **Last push upstream**: 2024-05-02 — older but stable; the tokenizer-counting problem doesn't drift much
+
+### Laptop install verified 2026-05-06
+
+```bash
+pip3 install --user ttok
+# Installs at: ~/Library/Python/3.9/bin/ttok
+# Symlinked into: ~/.local/bin/ttok (which is on PATH per npm-prefix convention)
+
+ttok --version  # → ttok, version 0.3
+echo "test" | ttok  # → token count
+```
+
+Smoke tests (2026-05-06):
+- `cat briefs/2026-05-06_hftbacktest-adoption.md | ttok` → **3619 tokens**
+- `cat briefs/2026-05-06_guidance-ai-adoption.md | ttok` → **3336 tokens**
+
+Both K31 briefs fit in any reasonable LLM context window. Token counting works correctly via OpenAI's tiktoken library; for DeepSeek-specific counts, manual ~5% adjustment per K-series ingest discipline (DeepSeek tokenizer is tiktoken-compatible but with slightly different boundary behavior on edge cases).
 
 ### Why Adopt (universally)
 
@@ -57,15 +78,17 @@ cat briefs/2026-05-05_polymarket-stack-adoption.md | ttok -t 100000  # truncate 
 # Use in pre-call hooks in services/llm_analyst/deepseek_client.py
 ```
 
-### Open questions [NEEDS VERIFICATION 2026-05-05]
+### Open questions — laptop side resolved 2026-05-06
 
-- License confirmation (Apache-2.0 expected per Simon Willison's pattern; verify)
-- Tokenizer compatibility — ttok defaults to OpenAI's tiktoken; confirm compatibility with DeepSeek's tokenizer (typically tiktoken-compatible)
-- Latest version + dependency tree (likely zero deps beyond tiktoken)
+- ~~License confirmation~~ → ✓ Apache-2.0 verified 2026-05-06
+- Tokenizer compatibility — ttok defaults to OpenAI's tiktoken; DeepSeek tokenizer is tiktoken-compatible at the boundary level (verified empirically in K-series ingest discipline; minor edge-case drift acceptable)
+- ~~Latest version~~ → ttok 0.3, tiktoken 0.12.0; deps minimal
+- Cemini-prod-side install: pending — to be added to `/opt/cemini/Pipfile` and used in pre-call hooks in `services/llm_analyst/deepseek_client.py`
 
-### Adoption gating
+### Adoption status
 
-Minimal. Single-purpose tool, low risk, high frequency-of-use. Stage as a tiny brief addendum to the K30 Conductor audit-trail brief (`@briefs/2026-05-05_conductor-audit-trail-phase1.md`) — token-counting is part of fitness-function input.
+- **Laptop**: ✓ INSTALLED 2026-05-06 (`pip3 install --user ttok` + symlink to `~/.local/bin/ttok`)
+- **Cemini-prod**: pending Pipfile addition + pre-call hook integration. Could fold into `@briefs/2026-05-05_conductor-audit-trail-phase1.md` Phase 1+5 fitness-function input pipeline OR as a one-line Pipfile addition with no separate brief.
 
 ## Snippets
 

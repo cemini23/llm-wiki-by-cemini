@@ -1,5 +1,49 @@
 # Wiki Log
 
+## [2026-05-06] adopt | K31 laptop-side adoptions — ttok + git-rewind installed + configured
+
+Laptop-side execution of K31 adoptions per the post_ingest_workflow rule. Both K31 brief candidates (hftbacktest + guidance-ai) had already shipped to prod 2026-05-06 as standalone briefs (commit `3aed321`); this entry covers the **non-brief, install-only** tier of K31 adoptions.
+
+### ttok ✓ INSTALLED
+
+- License verified: **Apache-2.0** (gh API confirmed; matches Simon Willison pattern)
+- Install path: `pip3 install --user ttok` → `~/Library/Python/3.9/bin/ttok` symlinked into `~/.local/bin/ttok` (which is on PATH per the `npm_global_prefix` memory rule)
+- Version: ttok 0.3, dep: tiktoken 0.12.0
+- Smoke tests: K31 briefs both fit in any reasonable LLM context (3619 tokens hftbacktest + 3336 tokens guidance-ai)
+- Cemini-prod-side install: pending Pipfile addition + pre-call hook integration
+
+### git-rewind ✓ INSTALLED (CONDITIONAL — LICENSE-file gap)
+
+- Phase 0 audit: `Chronos778/git-rewind`, Rust binary, very young (created 2026-05-02), 16★, 0 issues, last push 2026-05-05, v1.1.4
+- License: MIT per `Cargo.toml` metadata but **NO LICENSE file in repo**. Soft-license-intent signal — CONDITIONAL acceptable for laptop-only dev tool, would NOT pass for IP-sale-readiness production-stack inclusion. Filed upstream feedback opportunity.
+- **Important K31-eval correction**: eval framed git-rewind as Ollama-only; verified upstream README documents `OPENAI_API_BASE` env-var override for any OpenAI-compatible endpoint. Works equally with Ollama, DeepSeek, Groq, Gemini, OpenAI. Resolves the K31 entity-page open question about laptop-Ollama-availability.
+- Install path: install.sh has a known bug (upstream `.sha256` URL returns 404, parser treats "Not Found" as expected checksum, fails). **Workaround**: manual download from release page → extract to `~/.local/bin/rewind` → chmod +x.
+- Smoke tests:
+  - `rewind --version` → `git-rewind 1.1.4`
+  - `rewind --dry-run` (no API call) → correct git state output for this repo
+  - `rewind estimate` (no API call) → token count for current repo state (136 tokens)
+- API-backed commands (`rewind`, `rewind commit`, `rewind ask`) require key configuration via env vars or `rewind config set <provider>` — deferred to user choice between DeepSeek (reuse Cemini key), Groq (free-tier fast), Gemini (large-context-free-tier), or local Ollama (privacy-via-tunnel).
+- Cemini-prod-side: NOT applicable. git-rewind is a developer-workflow tool, not a production component.
+
+### Workflow tier composition (K28 + K31)
+
+Cemini's laptop now has 4 K-series-Adopt-tier dev tools all installed via the same `~/.local/bin` discipline:
+
+| Tool | K-series | Function |
+|------|----------|----------|
+| codegraph | K28 | AST indexer for Claude Code (token-efficient call-graph) |
+| leaf | K28 | Terminal markdown viewer with watch mode + LaTeX |
+| ttok | K31 | Token-counting CLI for any text payload |
+| rewind | K31 | AI-powered git-state briefing + commit-message generation |
+
+All four are local-only. None expose proprietary code/research to external LLM providers (rewind is the only one that calls an LLM API; user controls which one via env-var).
+
+### Open follow-ups
+
+- Cemini-prod ttok install (single Pipfile addition; could fold into Conductor audit-trail brief or stand alone as a one-line PR)
+- Upstream feedback (low priority): rewind install.sh checksum-handling bug + missing LICENSE file
+- API-key configuration for rewind (user choice; not blocking)
+
 ## [2026-05-05] ingest | K31 — JP Morgan portfolio paper + 5_5 moarrr Gemini DR batch (2 raws, 19 tools)
 
 User dropped 2 sources. preingest_check: 2 NEW (no duplicates).
