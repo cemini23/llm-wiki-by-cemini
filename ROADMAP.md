@@ -10,17 +10,34 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (end of 2026-05-06)
 
-- **Wiki**: 537 pages indexed, 3,444 outbound edges, 527 with inbound coverage, 10 orphans (8 pre-existing baseline + 1 intentional leetcode stub + 1 reference-only JPM methodology paper), license-pattern catalog 9 modes
-- **K-series**: K31 latest (JP Morgan portfolio paper + 5_5 moarrr 19-tool batch, 2026-05-05). All workspace-side adoption items from K28→K31 queue are closed
-- **Active prod briefs**: 9 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution (6 from K28-K30 + 3 new K31)
+- **Wiki**: 550 pages indexed (537 + 1 source + 12 entity stubs from K32), 3,444+ outbound edges, license-pattern catalog **10 modes** (License Drift added in K32)
+- **K-series**: K32 latest (5_6 links — 19-URL multi-domain tool/skill eval, 2026-05-06). 4 STEAL-FROM, 1 ADOPT re-confirm (git-rewind validated), 1 REFERENCE-ONLY, 1 DEFER, 3 REJECT/REJECT-EVALUATE, 3 Exa-rescued from UNAVAILABLE
+- **Active prod briefs**: 9 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution (6 from K28-K30 + 3 new K31). **No new K32 prod briefs** — K32 is workspace-laptop-side (brief-audit upgrade + wiki maintenance code port).
+- **Active workspace-laptop briefs**: 1 staged at `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` (port 4 wiki-maintenance patterns into `scripts/wiki_lint.py`; Phase 1+2 = 2-3 hr immediate, Phase 3+4 deferred)
 - **Deferred prod briefs (with activation triggers)**: 2 (autoresearch + XSKILL Conductor evolution)
 - **Laptop-side K31 adoptions**: ttok 0.3 + git-rewind 1.1.4 INSTALLED 2026-05-06; 2 upstream issues filed against Chronos778/git-rewind ([#1](https://github.com/Chronos778/git-rewind/issues/1) install.sh checksum bug, [#2](https://github.com/Chronos778/git-rewind/issues/2) missing LICENSE file). User adopting **Groq** for rewind LLM backend (free tier).
-- **Prod ccd-cli auto-update protection**: `IS_SANDBOX=1` in `/etc/environment` (Option A permanent fix). Applied + verified end-to-end 2026-05-06 — desktop-app session connects cleanly even when ccd-cli is the raw binary with no wrapper. Eliminates the per-auto-update wrapper-reapply cycle.
-- **Inbox**: 0
+- **Monetization-priority stance** (2026-05-06): revenue first, IP-sale exit later-stage. License auto-rejects soften for non-prod-codebase use; Phase-0 audit rigor unchanged. See `~/.claude/projects/.../memory/monetization_priority_2026.md`.
+- **Prod ccd-cli auto-update protection**: `IS_SANDBOX=1` in `/etc/environment` (Option A permanent fix). Applied + verified end-to-end 2026-05-06.
+- **Inbox**: 0 (K32 docx ingested + moved to librarian — pending end-of-session step)
 
 ## Next — actually pending action
 
-The Next queue is empty of workspace-actionable items. What remains:
+The K32 ingest added 1 workspace-laptop-actionable brief. No new prod-side queue additions.
+
+### 0 — Workspace-laptop actionable (K32 NEW)
+
+| Brief | What it ships | Effort |
+|-------|---------------|--------|
+| `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` | Phase 1+2: 3-tier JSON retry helper at `scripts/_llm_retry.py`; refactor `scripts/preingest_check.py` to use it. Phase 3+4 deferred (orphan-suggest + bidirectional-fix). | 2-3 hr (Phase 1+2) |
+
+**Bundled brief-audit upgrade sprint (also workspace-actionable, NOT YET DRAFTED into a brief):**
+
+K32 surfaced 3 STEAL-FROM prompt frameworks that all upgrade `scripts/skill_audit.py`:
+- `academic-paper-skills` 35-point peer-review framework (highest priority — 4-6 hr port)
+- `research-paper-writing-skills` claim-evidence + abstract synthesis (2-3 hr port)
+- `codex-startup-pressure-test-skill` adversarial review prompts (1-2 hr port)
+
+Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~10 hr total, single LLM-mode flag) OR ship as three sequential briefs (cleaner attribution, slower wall-clock).
 
 ### 1 — Awaiting prod-side execution (no workspace action)
 
@@ -55,9 +72,9 @@ The audit-trail subset (`2026-05-05_conductor-audit-trail-phase1.md` above) supe
 
 | Item | When |
 |------|------|
-| **License-pattern catalog (9 modes)** apply on each new Gemini DR ingest | Every ingest |
+| **License-pattern catalog (10 modes — K32 added License Drift)** apply on each new Gemini DR ingest | Every ingest |
 | **post_ingest_workflow** memory rule: ROADMAP + briefs after every ingest commit-and-push | Every ingest |
-| **Tier 2 arXiv sweep** — last 2026-05-01 (4 days fresh, within 7-day cadence) | When ≥7 days old |
+| **Tier 2 arXiv sweep** — last 2026-05-01 (5 days fresh, within 7-day cadence) | When ≥7 days old |
 | **wiki_gap_detect.py rerun** — last 2026-05-04 (clean baseline) | After next ingest or weekly |
 
 ## Decisions — open

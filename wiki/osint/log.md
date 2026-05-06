@@ -1,5 +1,49 @@
 # Wiki Log
 
+## [2026-05-06] ingest | K32 — `5_6 links.docx` (19-URL multi-domain tool/skill eval)
+
+K32 Gemini DR eval batch ingested from `research to be indexed/5_6 links.docx`. 19 URLs spanning Obsidian/wiki tooling, brief-audit prompt frameworks, prediction-market data sources, OSINT KG builders, multi-agent trading protocols, license-poison-pill exemplars.
+
+### Verdict distribution
+
+- **4 STEAL-FROM** (highest action-value tier of K32): `obsidian-llm-wiki-local` (wiki maintenance code), `academic-paper-skills` (35-point peer-review framework), `research-paper-writing-skills` (claim-evidence + abstract synthesis prompts), `codex-startup-pressure-test-skill` (adversarial review prompts)
+- **1 ADOPT re-confirm**: `git-rewind` independently surfaced again (URL 5) — maturity raised `draft` → `validated` (different eval batch reaching same conclusion)
+- **1 REFERENCE-ONLY**: `agentic-trading` NeurIPS 2025 paper (4-layer protocol stack MCP/ACP/A2A/ANP)
+- **1 DEFER**: `deepteam` LLM red-teaming (Apache + Confident-AI vendor pull risk; 7GB Hetzner RAM concern)
+- **3 REJECT/REJECT-EVALUATE**: `loki-mode` (License Drift mode #10), `pybroker` (Apache + Commons-Clause), `gitnexus` (PolyForm-NC 1.0.0 → REJECT-EVALUATE under monetization-priority)
+- **3 UNAVAILABLE → Exa-rescued**: `sift-kg` (453★ KG builder, OSINT preset), `curl-md` (MIT URL→markdown), `polymarket-trackers` ecosystem (predictparity/PredictFolio/PolyWallet)
+
+### License-pattern catalog grows to 10 modes
+
+K32 surfaced **License Drift** as mode #10 in `cemini-license-posture.md` catalog: `loki-mode` relicensed MIT → BUSL-1.1 mid-development. Distinct from poison-pill-from-day-1 patterns (Apache+Commons-Clause, PolyForm-NC, ELv2) because original adopters' trust is breached after the fact. Maintainer-trust signal beyond just the license. Updated header from "eight failure modes" → "ten failure modes" (catalog mode count corrects from K30's 8 → 9 → K32's 10).
+
+### Monetization-priority stance applied
+
+User directive 2026-05-06: revenue first, IP-sale exit later-stage (recorded as `monetization_priority_2026.md` project memory). Effects on K32 verdicts:
+- `gitnexus` PolyForm-NC verdict softened from "REJECT" → "REJECT-EVALUATE" pending interpretation review
+- `loki-mode` REJECT stands — License Drift is *also* a maintainer-trust signal beyond just license
+- `pybroker` REJECT stands — already covered by Polars + hftbacktest + Riskfolio-Lib ADOPT trio
+- Phase-0 audit rigor unchanged — license diligence still mandatory, just less binary in non-prod-codebase contexts
+
+### Pages touched
+
+- 1 source: `wiki/sources/5-6-links-eval-batch.md` (NEW, keystone)
+- 12 entity stubs at `wiki/entities/tools/`: `obsidian-llm-wiki-local.md`, `academic-paper-skills.md`, `research-paper-writing-skills.md`, `codex-startup-pressure-test-skill.md`, `agentic-trading.md`, `deepteam.md`, `loki-mode.md`, `pybroker.md`, `gitnexus.md`, `sift-kg.md`, `curl-md.md`, `polymarket-trackers.md` (all NEW)
+- 1 entity update: `git-rewind.md` (relations + maturity bump `draft` → `validated`)
+- 1 concept update: `cemini-license-posture.md` (catalog 8 → 10 modes; License Drift row + Apache-vendor-pull paragraph + Snippets quote)
+- `index.md`: +1 source row (line ~148), +12 tool rows (under `### Tools`), totals incremented 307 → 308 / docx 92 → 93
+- `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` (NEW, workspace-laptop target — NOT prod-brief)
+
+### Memory updates
+
+- `monetization_priority_2026.md` — NEW project memory recording 2026-05-06 priority shift
+
+### Next actions
+
+- Phase 1+2 of `obsidian-llm-wiki-local` brief: 2-3 hr port (3-tier JSON retry + audit upstream)
+- Bundled brief-audit upgrade sprint: extract `academic-paper-skills` 35-point framework + `research-paper-writing-skills` claim-evidence prompts into `scripts/skill_audit.py --llm-mode`
+- Phase-0 audit pending: `sift-kg` license [TBV], `curl-md` candidate ingest-pipeline integration
+
 ## [2026-05-06] adopt | K31 laptop-side adoptions — ttok + git-rewind installed + configured
 
 Laptop-side execution of K31 adoptions per the post_ingest_workflow rule. Both K31 brief candidates (hftbacktest + guidance-ai) had already shipped to prod 2026-05-06 as standalone briefs (commit `3aed321`); this entry covers the **non-brief, install-only** tier of K31 adoptions.

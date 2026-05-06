@@ -5,11 +5,12 @@ tags: [tool, dev-workflow, git-utility, rust, openai-compatible, adopt-tier, lap
 keywords: [git-rewind, rust-cli, ai-git-briefing, openai-api-base-override, workflow-utility, deepseek-compatible]
 related:
   - sources/5-5-moarrr-tool-eval.md
+  - sources/5-6-links-eval-batch.md
   - entities/tools/codegraph.md
   - entities/tools/leaf.md
   - entities/tools/ttok.md
   - entities/infrastructure/deepseek-api.md
-maturity: draft
+maturity: validated
 created: 2026-05-05
 updated: 2026-05-06
 ---
@@ -17,6 +18,7 @@ updated: 2026-05-06
 ## Relations
 
 - @sources/5-5-moarrr-tool-eval.md — origin source: K31 Gemini DR eval URL 3, **Adopt** tier
+- @sources/5-6-links-eval-batch.md — K32 Gemini DR eval URL 5, **Adopt** tier — independent confirm of K31 verdict (different eval batch reaches same conclusion). Maturity raised to `validated` 2026-05-06.
 - @entities/tools/codegraph.md — companion laptop-side workflow utility (token-efficient AST indexer); both serve Claude Code dev sessions
 - @entities/tools/leaf.md — companion laptop-side terminal markdown viewer; same workflow tier
 - @entities/tools/ttok.md — companion token-counter; ttok measures any text payload, git-rewind's `rewind estimate` measures the repo-state payload specifically
