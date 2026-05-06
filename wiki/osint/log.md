@@ -1,5 +1,29 @@
 # Wiki Log
 
+## [2026-05-06] phase1-audit | obsidian-llm-wiki-local upstream code reviewed; Phase 2 deferred
+
+Phase 1 audit of K32 STEAL-FROM #1 (`obsidian-llm-wiki-local`) per `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md`.
+
+### Audit outcomes
+
+- ✓ License: **MIT** confirmed at `/tmp/olw-audit/LICENSE` (Copyright 2026 kytmanov)
+- ✓ 3-tier retry implementation located: `src/obsidian_llm_wiki/structured_output.py:195-311` (`request_structured()` + helpers)
+- ✓ Layout: proper Python package under `pyproject.toml`, `src/obsidian_llm_wiki/` with ~30 source modules + ~30 test modules. Pydantic + OpenAI-compat / Ollama clients. No exotic dependencies.
+- ✓ Sophistication delta vs original brief sketch: upstream adds Pydantic-template-based schema injection (`_make_template()` builds fill-in JSON example from model schema), 3 sub-patterns for JSON extraction (` ```json` fenced → bare ` ``` ` → first `{...}`), `_unwrap()` post-processor for 3 common LLM mis-wrappings, invalid-escape recovery, telemetry per tier/attempt.
+
+### Phase 2 deferral decision
+
+Phase 1 also surfaced that `scripts/preingest_check.py` is pure-Python heuristic dedup with **zero LLM calls**. Grep confirmed no file under `scripts/` makes DeepSeek/OpenAI API calls. Workspace-side has no LLM-call path to retrofit today.
+
+Phase 2 (port `scripts/_llm_retry.py`) defers until the brief-audit-upgrade sprint introduces `scripts/skill_audit.py --llm-mode` as the first real consumer. Building the helper preemptively against an imagined consumer would yield a wrong-shape API. Phase 4 (`wiki_lint.py --fix-bidirectional`) remains standalone-shippable but low priority.
+
+### Pages touched
+
+- `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` (Phase 1 marked done; Phase 2 plan rewritten with deferral rationale; acceptance criteria split per phase; skill_audit re-passes 100/100)
+- `wiki/entities/tools/obsidian-llm-wiki-local.md` (license confirmed MIT, 3-tier path/line reference, sophistication delta documented, Phase 1 audit findings preserved for re-entry to brief-audit-upgrade sprint, `phase1-audited` tag added)
+- `ROADMAP.md` §0 (Phase 1 done / Phase 2 deferred; sprint-bundle effort estimate 10 hr → 12 hr)
+- `hot.md` (re-pointed Phase 2 trigger to brief-audit-upgrade sprint; Phase 4 noted as standalone-shippable)
+
 ## [2026-05-06] ingest | K32 — `5_6 links.docx` (19-URL multi-domain tool/skill eval)
 
 K32 Gemini DR eval batch ingested from `research to be indexed/5_6 links.docx`. 19 URLs spanning Obsidian/wiki tooling, brief-audit prompt frameworks, prediction-market data sources, OSINT KG builders, multi-agent trading protocols, license-poison-pill exemplars.

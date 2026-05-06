@@ -24,20 +24,21 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 The K32 ingest added 1 workspace-laptop-actionable brief. No new prod-side queue additions.
 
-### 0 — Workspace-laptop actionable (K32 NEW)
+### 0 — Workspace-laptop actionable (K32)
 
-| Brief | What it ships | Effort |
+| Brief | What it ships | Status |
 |-------|---------------|--------|
-| `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` | Phase 1+2: 3-tier JSON retry helper at `scripts/_llm_retry.py`; refactor `scripts/preingest_check.py` to use it. Phase 3+4 deferred (orphan-suggest + bidirectional-fix). | 2-3 hr (Phase 1+2) |
+| `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` | **Phase 1 DONE 2026-05-06** (audit complete, license MIT verified, 3-tier impl located). **Phase 2 DEFERRED** — bundles with brief-audit-upgrade sprint when `skill_audit.py --llm-mode` lands as first real LLM-call consumer. Phase 4 standalone-shippable but low priority. | Phase 1 ✓ / Phase 2 deferred |
 
-**Bundled brief-audit upgrade sprint (also workspace-actionable, NOT YET DRAFTED into a brief):**
+**Bundled brief-audit upgrade sprint (now the consumer-driven trigger for Phase 2 above; NOT YET DRAFTED into a brief):**
 
 K32 surfaced 3 STEAL-FROM prompt frameworks that all upgrade `scripts/skill_audit.py`:
 - `academic-paper-skills` 35-point peer-review framework (highest priority — 4-6 hr port)
 - `research-paper-writing-skills` claim-evidence + abstract synthesis (2-3 hr port)
 - `codex-startup-pressure-test-skill` adversarial review prompts (1-2 hr port)
+- **Plus `_llm_retry.py` helper** (Phase 2 of obsidian-llm-wiki-local brief) — bundled because the sprint introduces the first workspace-side LLM-call path
 
-Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~10 hr total, single LLM-mode flag) OR ship as three sequential briefs (cleaner attribution, slower wall-clock).
+Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~12 hr total = 10 hr sprint + 2 hr `_llm_retry.py`, single LLM-mode flag) OR ship as three sequential briefs (cleaner attribution, slower wall-clock).
 
 ### 1 — Awaiting prod-side execution (no workspace action)
 

@@ -1,7 +1,7 @@
 ---
 title: obsidian-llm-wiki-local — Karpathy LLM Wiki Maintenance Toolkit (Python)
 type: entity
-tags: [tool, wiki-tooling, karpathy-pattern, mit-license, steal-from-tier, python, laptop-only]
+tags: [tool, wiki-tooling, karpathy-pattern, mit-license, steal-from-tier, python, laptop-only, phase1-audited]
 keywords: [olw, obsidian-wiki, llm-wiki-compiler, wiki-lint-upgrade, json-retry-system, orphan-handling, wikilink-normalization, kytmanov]
 related:
   - sources/5-6-links-eval-batch.md
@@ -30,11 +30,12 @@ This is the highest-action-value finding in the K32 batch.
 
 ## Narrative
 
-- **URL**: `https://github.com/kytmanov/obsidian-llm-wiki-local` ✓ verified via DR
-- **License**: MIT (per DR; needs upstream verification before code-port)
-- **Stack**: Python CLI (`olw <command>`)
+- **URL**: `https://github.com/kytmanov/obsidian-llm-wiki-local` ✓ verified via DR + Phase 1 audit 2026-05-06
+- **License**: ✓ **MIT confirmed** Phase 1 audit (`/tmp/olw-audit/LICENSE`, "Copyright (c) 2026 kytmanov")
+- **Stack**: Python package `obsidian_llm_wiki` under `pyproject.toml`; CLI entrypoint `olw`. Pydantic + OpenAI-compat / Ollama clients
 - **Architecture**: persistent file watcher (`olw watch`), maintenance commands (`olw maintain --fix`), git-integration with `[olw]` commit prefix
-- **Maturity**: not extracted from DR; need direct upstream check
+- **Code layout**: ~30 source modules + ~30 test modules. Proper Python project, not a script collection.
+- **Maturity**: indicators not extracted from gh API in this audit pass; proper Phase-0 maintenance-velocity check deferred — code-port is the value, not adoption.
 
 ### What's worth stealing (concrete code targets)
 
@@ -44,13 +45,18 @@ DR identified four high-value patterns embedded in the upstream code:
 
 > "To ensure stability when interacting with smaller local models, it employs a sophisticated 3-tier JSON retry system to gracefully handle occasionally malformed LLM outputs."
 
-This is directly applicable to Cemini's `scripts/preingest_check.py` (when LLM is asked to return frontmatter or graph data) and any future LLM-driven script. The 3-tier pattern likely involves:
+✓ **Phase 1 audit located at** `/tmp/olw-audit/src/obsidian_llm_wiki/structured_output.py:195-311` (`request_structured()`). Implementation richer than the brief originally sketched:
 
-- **Tier 1**: parse raw output as JSON; if it parses, accept
-- **Tier 2**: extract first JSON-shaped block from prose with regex; retry parse
-- **Tier 3**: re-prompt the LLM with the raw bad output and ask "fix this to valid JSON"
+- **Tier 1**: LLM call with `format="json"` mode + Pydantic-template-based system prompt (`_make_template()` builds a fill-in JSON example from the model schema; small models echo less than they would for raw JSON Schema). Direct `json.loads()` + Pydantic validation.
+- **Tier 2**: `_extract_json()` tries 3 sub-patterns in order: ` ```json` fenced block → bare ` ``` ` block with `{...}` → first `{...}` substring of any kind. Then `_try_parse()`.
+- **Tier 3**: Re-prompt the model with `f"Your previous response was invalid.\nError: {last_error}\n\nOriginal request:\n{prompt}\n\nRespond with ONLY valid JSON matching the schema. Nothing else."`. Loop up to `max_retries=2`.
+- **Bonus**: `_unwrap()` post-processor handles 3 common LLM mis-wrappings (single-key dict, single-key string-encoded JSON, JSON-Schema-echo with `properties` wrapper). Invalid-escape recovery in `_try_parse()` re-escapes backslashes when the parse fails on `Invalid \escape`. Telemetry per tier/attempt via `LLMCallEvent`.
 
-Cemini currently has no such pattern; failed JSON outputs from DeepSeek calls are treated as opaque errors.
+**Workspace-side Phase 1 audit findings (revised port plan)**:
+
+Phase 1 also found that `scripts/preingest_check.py` is pure-Python heuristic dedup — it makes **zero LLM calls**. Grep confirmed no file under `scripts/` calls DeepSeek/OpenAI APIs. So the workspace-laptop side has no LLM-call path to retrofit today. The Cemini-prod side does (LangGraph orchestrator, FastMCP tools), but those live at `/opt/cemini/`, not in this workspace.
+
+Decision recorded 2026-05-06: **defer Phase 2 port** (`scripts/_llm_retry.py`) until the brief-audit-upgrade sprint introduces `scripts/skill_audit.py --llm-mode` as the first real consumer. Building the helper preemptively against an imagined consumer would yield a wrong-shape API. See `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` for full rollout plan.
 
 **2. Programmatic broken-link repair (`olw maintain --fix`)**
 
