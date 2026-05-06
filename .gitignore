@@ -57,3 +57,6 @@ package-lock.json
 /tmp_*.txt
 /tmp_*.md
 *.tmp
+
+# Rewind
+.rewind-brief.md
