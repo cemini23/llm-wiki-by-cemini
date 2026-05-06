@@ -1,5 +1,61 @@
 # Wiki Log
 
+## [2026-05-05] ingest | K31 — JP Morgan portfolio paper + 5_5 moarrr Gemini DR batch (2 raws, 19 tools)
+
+User dropped 2 sources. preingest_check: 2 NEW (no duplicates).
+
+### 2 NEW sources
+
+| File | Type | Note |
+|------|------|------|
+| `121001_A_Portfolio_Approach_to_Impact_Investment.pdf` | J.P. Morgan paper (2012, 48pp) | Saltuk + El Idrissi. **Three-dimensional portfolio mapping** framework. Reference-only; off-domain (impact investing) but methodology has transfer value if Cemini ever adds a 3rd axis to its 2-D Riskfolio-Lib pipeline. |
+| `5_5 moarrr links.docx` | Gemini DR eval | 19 tools — 5 Adopt (**hftbacktest** microsecond HFT backtester, **guidance-ai** Microsoft structured-generation, **ttok** Simon Willison token-counter, **git-rewind** Rust AI-git-briefing, research-paper-writing-skills), 4 Steal-from (**Letta/MemGPT** architectural extraction, the-rosetta-prompt, etc.), 1 Defer, 3 Reject, 3 Reference-only, 3 Unavailable. **No new license patterns** — catalog stable at 9 modes. |
+
+### 7 wiki pages (2 source pages + 5 entity stubs)
+
+Source pages (2):
+- `sources/jpm-portfolio-impact-investment-saltuk-2012.md` — methodology-reference, off-domain
+- `sources/5-5-moarrr-tool-eval.md` — K31 Gemini DR batch
+
+Entity stubs (5, all from 5_5 moarrr):
+- `entities/tools/hftbacktest.md` — Adopt; microsecond-tick HFT backtester (L2 MBP + L3 MBO + event-order correction). Direct prod-stack relevance for Polymarket/Kalshi MM + cross-venue arb backtests.
+- `entities/tools/guidance-ai.md` — Adopt; Microsoft structured-generation lib. Wraps DeepSeek calls to enforce JSON schemas at token-generation layer. Eliminates parsing-error tail in LangGraph + FastMCP.
+- `entities/tools/letta-memgpt.md` — Steal-from; agent-memory framework (formerly MemGPT). Architectural reference only — DO NOT mount Docker infra (Cemini already has alash3al/stash deployed Wave 5).
+- `entities/tools/ttok.md` — Adopt; Simon Willison's token-counting CLI. Universal install (laptop + Cemini-prod Python env) for cost-discipline + brief-staging audits.
+- `entities/tools/git-rewind.md` — Adopt; Rust CLI for AI git-state briefing via local Ollama. Laptop-side workflow utility (companion to codegraph + leaf). Gating: laptop's Ollama is on librarian via SSH tunnel — verify remote-Ollama support before install.
+
+### Cemini production-stack relevance
+
+Two K31 Adopts have direct prod-side brief candidates:
+
+| Tool | Brief candidate | Why |
+|------|-----------------|-----|
+| hftbacktest | `briefs/2026-05-05_hftbacktest-adoption.md` (CANDIDATE) | Fills microsecond-tick gap that yfinance EOD + FinanceToolkit GARCH-on-daily-bars don't cover. Load-bearing for Polymarket MM + Kalshi MM + cross-venue arb (per `@concepts/polymarket-market-making-architectures.md` + `@concepts/cross-venue-arbitrage-pattern.md`). |
+| guidance-ai | Could fold into existing `briefs/2026-05-05_conductor-audit-trail-phase1.md` | Audit-trail Phase 1+5 needs structured AuditEntry records. guidance-ai is the enforcement primitive. |
+
+ttok is a universal install (no brief needed — single `pip install ttok`).
+
+### Off-domain methodology paper
+
+JPM paper is filed Reference-only at `read_status: skimmed`. Activates only if Cemini ever crosses into ESG-themed prediction markets (e.g., Polymarket has "X company commits to net-zero by Y date" contracts) OR if portfolio-management evolves to need a 3rd axis (impact / conviction / regime exposure) on top of 2-D Riskfolio-Lib. Until then, methodology stays in reference shelf.
+
+### Index updates
+
+- Source counts: 307 → 309 (+2)
+- Tools cluster: + 5 entries under `entities/tools/`
+- License-posture catalog: unchanged (no new patterns surfaced)
+
+### Raw-source moves
+- Both raws → `cemini-librarian:/opt/cemini-bulk/research/`
+- Inbox cleared
+
+### Open follow-ups (per post_ingest_workflow rule)
+- **hftbacktest brief candidate** — Phase 0 audit + brief, sister to existing `briefs/2026-05-04_quant-libs-fastmcp-integration.md`. Load-bearing for already-shipped Polymarket Stack + cross-venue arb concept pages.
+- **guidance-ai integration** — fold into Conductor audit-trail Phase 1+5 brief if scope warrants, or stage separately.
+- **ttok universal install** — laptop install (`pip install ttok`); Cemini-prod Pipfile addition. No brief.
+- **Letta architectural reading** — deferred until stash hits scale limits.
+- **git-rewind install** — gated on laptop Ollama install OR remote-Ollama support verification.
+
 ## [2026-05-05] audit | Claude-OSINT Phase 0 — VERDICT: NO-PORT (ROADMAP #15)
 
 Cloned `https://github.com/elementalsouls/Claude-OSINT` (MIT, 476★, last commit 2026-04-27). K30 eval claim accurate on lines (~5,861) and license, but framing was misleading: not "thousands of small skills" — only **2 large skills** (osint-methodology 1,693 lines + offensive-osint 4,168 lines).

@@ -10,10 +10,11 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (end of 2026-05-05)
 
-- **Wiki**: 530 pages indexed, 3,411 outbound edges, 521 with inbound coverage, 9 orphans (8 pre-existing baseline + 1 intentional leetcode stub), license-pattern catalog 9 modes
-- **K-series**: K30 latest (Polymarket-readiness wave, 2026-05-05). All workspace-side adoption items from the K28→K30 queue are closed (DONE or NO-GO/NO-PORT/DEFERRED with documented triggers)
+- **Wiki**: 537 pages indexed, 3,444 outbound edges, 527 with inbound coverage, 10 orphans (8 pre-existing baseline + 1 intentional leetcode stub + 1 reference-only JPM methodology paper), license-pattern catalog 9 modes
+- **K-series**: K31 latest (JP Morgan portfolio paper + 5_5 moarrr 19-tool batch, 2026-05-05). All workspace-side adoption items from K28→K31 queue are closed; K31 surfaces 2 new prod-brief candidates (hftbacktest + guidance-ai)
 - **Active prod briefs**: 6 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution
 - **Deferred prod briefs (with activation triggers)**: 2 (autoresearch + XSKILL Conductor evolution)
+- **K31 brief candidates (workspace-side staging pending)**: 2 (hftbacktest standalone + guidance-ai folded-or-standalone)
 - **Inbox**: 0
 
 ## Next — actually pending action
@@ -34,6 +35,14 @@ The Next queue is empty of workspace-actionable items. What remains:
 | `2026-05-05_conductor-audit-trail-phase1.md` | Conductor fitness function + audit JSONL + git-tracked config commits (no LLM mutation engine) |
 
 Plus prod-originated: `2026-05-04_step124-phase1-verification.md`.
+
+### 1.5 — K31 brief candidates (workspace-side staging pending)
+
+| Candidate | Decision needed | Sketch |
+|-----------|-----------------|--------|
+| **hftbacktest brief** | Standalone vs folded-into-quant-libs | Phase 0 audit (clone, license verify, license + maturity + Polars-friendliness) → Phase 1 sandbox replicate Polymarket-Kalshi BTC arb backtest → Phase 2 integrate as backtest substrate in `services/llm_analyst/backtest/` alongside Riskfolio-Lib + FinanceToolkit. Sister to `2026-05-04_quant-libs-fastmcp-integration.md`. Load-bearing for already-shipped `concepts/polymarket-market-making-architectures.md` + `concepts/cross-venue-arbitrage-pattern.md`. |
+| **guidance-ai integration** | Fold into `2026-05-05_conductor-audit-trail-phase1.md` vs standalone | Wrap DeepSeek calls in `services/llm_analyst/deepseek_client.py` with `@guidance` decorator; A/B parsing-error rate vs current prompt-engineered version on Conductor taxonomy classifier. Phase 3 extends to FastMCP `@mcp.tool` decorators. |
+| **ttok universal install** | No brief — single `pip install ttok` | Laptop install + add to Cemini-prod `Pipfile`. Pair with cost-discipline calculations in conductor-audit-trail Phase 1+5. |
 
 ### 2 — Deferred-with-triggers (do not delete)
 
@@ -122,6 +131,7 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 
 ### Ingests
 - **K30 Polymarket-readiness wave** — 4 Gemini DR docx batches (102 tools) + Deep GraphRAG arXiv 2601.11144 + Murphy RL Overview arXiv 2412.05265v5. 13 wiki pages (6 source + 7 entity stubs) + license-posture 8 → 9 patterns (added ELv2 source-available). 1 prod brief staged: `2026-05-05_polymarket-stack-adoption.md`.
+- **K31 JPM portfolio paper + 5_5 moarrr Gemini DR batch (19 tools)** — 7 wiki pages (2 source + 5 entity stubs: hftbacktest, guidance-ai, letta-memgpt, ttok, git-rewind). License-posture catalog unchanged (9 modes stable). 2 brief candidates surfaced (hftbacktest standalone + guidance-ai fold-or-standalone) staged in ROADMAP §1.5; ttok universal install does not need a brief. JPM paper indexed reference-only (off-domain methodology with transfer value).
 
 ### Adoption verdicts (3 audits + multiple briefs shipped)
 - **#11 PageIndex Phase 0** → NO-GO. Single-file API + agentic cost + lost graph/metadata. Wrong tool for flat wiki.
