@@ -7,9 +7,11 @@ related:
   - sources/agent-native-research-artifacts-2604.24658.md
   - concepts/agent-native-research-artifacts.md
   - concepts/conductor-orchestrator.md
+  - sources/regime-conditioned-bo-evaluation.md
+  - concepts/regime-conditioned-evaluation.md
 maturity: validated
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-07
 ---
 
 ## Raw Concept

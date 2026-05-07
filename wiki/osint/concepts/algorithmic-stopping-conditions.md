@@ -11,9 +11,11 @@ related:
   - sources/3-26-b.md
   - sources/3-29-15.md
   - concepts/reasoning-safety-monitor.md
+  - sources/regime-conditioned-bo-evaluation.md
+  - concepts/regime-conditioned-evaluation.md
 maturity: validated
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-07
 ---
 
 ## Relations

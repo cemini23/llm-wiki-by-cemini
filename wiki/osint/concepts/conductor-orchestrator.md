@@ -15,9 +15,13 @@ related:
   - sources/gigpo-neurips-2025.md
   - sources/meta-router-2509.25535.md
   - concepts/recursive-multi-agent-systems.md
+  - sources/blade-bayesian-listwise-alignment.md
+  - concepts/llm-listwise-alignment.md
+  - sources/regime-conditioned-bo-evaluation.md
+  - concepts/regime-conditioned-evaluation.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-02
+updated: 2026-05-07
 ---
 
 ## Relations

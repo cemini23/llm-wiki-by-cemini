@@ -9,9 +9,11 @@ related:
   - sources/training-free-grpo-cai-2025.md
   - sources/training-free-grpo-iclr-2026.md
   - concepts/agent-native-research-artifacts.md
+  - sources/blade-bayesian-listwise-alignment.md
+  - concepts/llm-listwise-alignment.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-07
 ---
 
 ## Raw Concept

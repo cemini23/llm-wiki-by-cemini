@@ -108,9 +108,10 @@ related:
   - concepts/agent-authorization-stack.md
   - concepts/conductor-orchestrator.md
   - sources/toolorchestra-2511.21689.md
+  - concepts/llm-listwise-alignment.md
 maturity: validated
 created: 2026-04-26
-updated: 2026-05-02
+updated: 2026-05-07
 ---
 
 ## Relations

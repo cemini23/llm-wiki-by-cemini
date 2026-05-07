@@ -1,5 +1,49 @@
 # Wiki Log
 
+## [2026-05-07] ingest | K33 — BLADE listwise alignment + Regime-Conditioned BO evaluation
+
+Two arXiv PDFs ingested from `research to be indexed/`:
+1. `Beyond Static Best-of-N- Bayesian List-wise Alignment.pdf` (arXiv 2605.04559, USTC + Zhejiang U, CC BY 4.0, SIGIR '26)
+2. `Regime-Conditioned Evaluation in Multi-Context Bayesian Optimization.pdf` (arXiv 2605.04895, MBZUAI, Noel Thomas)
+
+### Action-value ordering
+
+Paper 2 (Regime-Conditioned BO) is the **highest action-value paper of K33**. It directly upgrades brief-audit gates with a `regime-disclosure` requirement (1–2 hr port priority), Conductor fitness function discipline, and strategy backtest evaluation. Paper 1 (BLADE) is methodological reference for ranking-task implementations downstream of this.
+
+### Pages created (5)
+
+- `wiki/sources/blade-bayesian-listwise-alignment.md` — BLADE source page. Two failure modes diagnosed (Indiscriminate Supervision + Gradient Decay under vBoN N→large) + Bayesian fix (prior over latent permutations × likelihood scaled by relevance gap). NDCG@5 0.0410 vs BoN-Alignment 0.0333. Verdict: **STUDY-METHODOLOGY-only** (companion repo unlicensed).
+- `wiki/sources/regime-conditioned-bo-evaluation.md` — Noel Thomas source page. **No-Free-Leaderboard proposition** (when CATE flips sign across regime, ATE = free parameter of regime mixture). PRS = (B/|A|)(1−ρ) Portable Regime Score. REGIMEPLANNER online-switching adaptive planner. GDSC2 cancer-screening reversal case study.
+- `wiki/concepts/llm-listwise-alignment.md` — Concept hub for BLADE methodology applied to 5 Cemini surfaces (ticker watchlist re-ranking, news/source ranking, Conductor routing, brief screening, strategy ensemble selection).
+- `wiki/concepts/regime-conditioned-evaluation.md` — Concept hub for PRS + No-Free-Leaderboard + REGIMEPLANNER. Three operational targets: brief-audit `regime-disclosure` gate, Conductor fitness function, strategy backtest discipline. Minimum reporting standard: per-regime CATE table + ρ + B/|A| + PRS, not aggregate-only.
+- `wiki/entities/tools/blade-github.md` — STUDY-METHODOLOGY-ONLY verdict for `RegionCh/BLADE` repo. Snapshot 2026-05-07: 1 star, 0 forks, last push 2026-01-27 (3+ months pre-publication), no LICENSE file → default copyright. Mode: `cemini-license-posture` "Unknown / no LICENSE." Re-implement from CC BY 4.0 paper itself; do NOT vendor.
+
+### Pages updated (9 — bidirectional backlinks)
+
+- `wiki/concepts/conductor-orchestrator.md` (+4 entries: blade source/concept + regime source/concept)
+- `wiki/concepts/deepseek-models.md` (+2: blade source/concept)
+- `wiki/concepts/high-signal-paper-patterns.md` (+2: both source pages)
+- `wiki/concepts/evidence-withheld-verification.md` (+2: regime source/concept)
+- `wiki/concepts/algorithmic-stopping-conditions.md` (+2: regime source/concept)
+- `wiki/concepts/policy-distillation.md` (+2: blade source/concept)
+- `wiki/concepts/portfolio-strategy.md` (+1: llm-listwise-alignment)
+- `wiki/concepts/llm-agent-systems.md` (+1: llm-listwise-alignment)
+- `wiki/concepts/cemini-license-posture.md` (+2: blade-github tool, regime-conditioned-evaluation)
+
+### Index update
+
+Stub count 308 → **310** (191 → 193 PDF). llm-agents cluster header (125) → (127). 2 new source rows in llm-agents cluster, 1 tool row in `### Tools`, 1 concept row in `### AI safety & alignment` (llm-listwise-alignment), 1 concept row in `### Librarian / knowledge-base tooling` (regime-conditioned-evaluation).
+
+### Cemini next-action
+
+`briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` — port the regime-disclosure requirement into `scripts/skill_audit.py` as a new gate that checks brief documents for per-regime CATE disclosure when claims involve evaluation comparison. 1–2 hr effort. Highest-priority post-K33 adoption per the regime-conditioned-evaluation concept page.
+
+### Notes
+
+- pdftoppm/pdftotext unavailable on macOS; PDF text extraction performed via pypdf 6.10.2 (Python script to /tmp/).
+- Both PDFs scp'd to `cemini-librarian:/opt/cemini-bulk/research/`; laptop copies removed.
+- License catalog stable at 10 modes (no new mode surfaced; BLADE's missing-LICENSE is mode #5 "Unknown / default copyright" already cataloged).
+
 ## [2026-05-06] phase1-audit | obsidian-llm-wiki-local upstream code reviewed; Phase 2 deferred
 
 Phase 1 audit of K32 STEAL-FROM #1 (`obsidian-llm-wiki-local`) per `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md`.

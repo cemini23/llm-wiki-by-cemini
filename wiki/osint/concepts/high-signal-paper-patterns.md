@@ -41,8 +41,11 @@ related:
   - sources/piebald-claude-code-system-prompts.md
   - sweeps/2026-04-30.md
   - sources/situational-awareness-aschenbrenner.md
+  - sources/blade-bayesian-listwise-alignment.md
+  - sources/regime-conditioned-bo-evaluation.md
+  - concepts/regime-conditioned-evaluation.md
 created: 2026-04-29
-updated: 2026-04-30
+updated: 2026-05-07
 maturity: validated
 ---
 
@@ -56,6 +59,9 @@ maturity: validated
 - @concepts/ip-sale-readiness.md — license poison-pill families A and B are the negative-signal half of this rubric.
 - @concepts/llm-agent-systems.md — cluster hub for the LLM-agent landing area, where 2 of the 4 recent high-signal papers landed.
 - @sources/situational-awareness-aschenbrenner.md — Aschenbrenner 2024 (165pp); landmark AGI-timeline essay ingested as Wave 5.1 source page; deep-read pending (first 10pp skimmed)
+- @sources/blade-bayesian-listwise-alignment.md — K33 Landing: SIGIR '26 paper diagnosing two failure modes of static BoN listwise alignment + Bayesian fix. Methodologically rigorous (formal theorem + empirical validation), CC BY 4.0, direct Cemini surfaces (ranking tasks).
+- @sources/regime-conditioned-bo-evaluation.md — K33 Landing: highest action-value of K33. Formal No-Free-Leaderboard proposition + PRS metric + REGIMEPLANNER + 79-condition GDSC2 case study. Direct fit to brief-audit gates and Conductor fitness function.
+- @concepts/regime-conditioned-evaluation.md — K33 concept hub formalizing the regime-disclosure discipline; **applied-during-ingest** sibling rubric to this page (this rubric scores papers, regime-conditioned-evaluation scores claims about evaluation comparison).
 
 ## Raw Concept
 

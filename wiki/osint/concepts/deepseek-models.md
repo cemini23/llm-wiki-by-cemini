@@ -9,9 +9,11 @@ related:
   - concepts/llm-agent-systems.md
   - concepts/conductor-orchestrator.md
   - entities/infrastructure/deepseek-r1-14b.md
+  - sources/blade-bayesian-listwise-alignment.md
+  - concepts/llm-listwise-alignment.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-07
 ---
 
 ## Relations

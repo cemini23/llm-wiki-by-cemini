@@ -42,9 +42,10 @@ related:
   - sources/stocks-2-4-5.md
   - sources/stocks-3-4-5.md
   - sources/toplogical-risk-parity.md
+  - concepts/llm-listwise-alignment.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-02
+updated: 2026-05-07
 ---
 
 ## Relations
