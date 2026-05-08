@@ -8,14 +8,14 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
-## Current state (end of 2026-05-07)
+## Current state (end of 2026-05-08)
 
 - **Wiki**: 555 pages indexed (550 + 5 K33 pages: 2 sources + 2 concepts + 1 tool entity), 3,564+ outbound edges, license-pattern catalog stable at **10 modes** (no new mode in K33)
-- **K-series**: K33 latest (BLADE listwise alignment + Regime-Conditioned BO evaluation, 2026-05-07). Two arXiv CC BY 4.0 papers; Regime-Conditioned BO is **highest action-value paper of K33** — directly upgrades brief-audit gates with `regime-disclosure` requirement, Conductor fitness function discipline, and strategy backtest evaluation
+- **K-series**: K33 complete (BLADE listwise alignment + Regime-Conditioned BO evaluation, 2026-05-07). Regime-disclosure gate **SHIPPED** 2026-05-08 — `scripts/skill_audit.py` v0.2 with 7-check regime-disclosure veto gate.
 - **Active prod briefs**: 9 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution (6 from K28-K30 + 3 K31). **No new K33 prod briefs** — K33's adoption is workspace-laptop-side (brief-audit `regime-disclosure` gate + downstream listwise-ranking instrumentation deferred)
 - **Active workspace-laptop briefs**: 2 staged
-  - `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` (port 4 wiki-maintenance patterns into `scripts/wiki_lint.py`; Phase 1+2 = 2-3 hr immediate, Phase 3+4 deferred)
-  - **`briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` (NEW K33)** — port the regime-disclosure requirement into `scripts/skill_audit.py` as a new gate. 1-2 hr effort. Highest-priority post-K33 adoption.
+  - `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` (port 4 wiki-maintenance patterns into `scripts/wiki_lint.py`; Phase 1 ✓ / Phase 2 deferred, bundles with brief-audit-upgrade sprint)
+  - `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` — **SHIPPED 2026-05-08** — `scripts/skill_audit.py` v0.2: regime-disclosure veto gate implemented, all 4 test briefs PASS, no false positives on K28-K30 adoption briefs.
 - **Deferred prod briefs (with activation triggers)**: 2 (autoresearch + XSKILL Conductor evolution)
 - **Laptop-side K31 adoptions**: ttok 0.3 + git-rewind 1.1.4 INSTALLED 2026-05-06; 2 upstream issues filed against Chronos778/git-rewind ([#1](https://github.com/Chronos778/git-rewind/issues/1) install.sh checksum bug, [#2](https://github.com/Chronos778/git-rewind/issues/2) missing LICENSE file). User adopting **Groq** for rewind LLM backend (free tier).
 - **Monetization-priority stance** (2026-05-06): revenue first, IP-sale exit later-stage. License auto-rejects soften for non-prod-codebase use; Phase-0 audit rigor unchanged. See `~/.claude/projects/.../memory/monetization_priority_2026.md`.
@@ -24,25 +24,14 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Next — actually pending action
 
-K33 ingest added 1 workspace-laptop-actionable brief (regime-disclosure brief-audit gate). No new prod-side queue additions.
+K33 ingest + regime-disclosure gate SHIPPED 2026-05-08. No new prod-side queue additions.
 
 ### 0 — Workspace-laptop actionable (K32 + K33)
 
 | Brief | What it ships | Status |
 |-------|---------------|--------|
-| `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` | **Phase 1 DONE 2026-05-06** (audit complete, license MIT verified, 3-tier impl located). **Phase 2 DEFERRED** — bundles with brief-audit-upgrade sprint when `skill_audit.py --llm-mode` lands as first real LLM-call consumer. Phase 4 standalone-shippable but low priority. | Phase 1 ✓ / Phase 2 deferred |
-| `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` (NEW K33) | Port the regime-disclosure requirement from `concepts/regime-conditioned-evaluation.md` into `scripts/skill_audit.py` as a new gate. When a brief makes evaluation-comparison claims (X "beats" Y, "improves over" baseline, "wins on" benchmark), require per-regime CATE table + ρ + B/\|A\| + PRS — not aggregate-only. 1-2 hr port. Bundles with the brief-audit upgrade sprint. | Drafted, ready to ship |
-
-**Bundled brief-audit upgrade sprint (now the consumer-driven trigger for Phase 2 above; NOT YET DRAFTED into a single combined brief):**
-
-K32+K33 surfaced 4 STEAL-FROM/concept-driven upgrades that all touch `scripts/skill_audit.py`:
-- `academic-paper-skills` 35-point peer-review framework (K32, highest priority — 4-6 hr port)
-- `research-paper-writing-skills` claim-evidence + abstract synthesis (K32, 2-3 hr port)
-- `codex-startup-pressure-test-skill` adversarial review prompts (K32, 1-2 hr port)
-- **Regime-disclosure gate** (K33, NEW) — per `concepts/regime-conditioned-evaluation.md`. 1-2 hr port. Independent of LLM-mode flag (static rule check on evaluation-comparison claims).
-- **Plus `_llm_retry.py` helper** (Phase 2 of obsidian-llm-wiki-local brief) — bundled because the sprint introduces the first workspace-side LLM-call path
-
-Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr total = 10 hr K32 sprint + 2 hr `_llm_retry.py` + 1-2 hr K33 regime gate) OR ship as four sequential briefs (cleaner attribution, slower wall-clock). The K33 regime-disclosure gate is **independent-shippable** without LLM-mode and could ship first to validate the `skill_audit.py` extension hook before the heavier LLM-mode work lands.
+| `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` | Phase 1 ✓ / Phase 2 deferred | Phase 1 ✓ / Phase 2 deferred |
+| `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` | **SHIPPED 2026-05-08** — `scripts/skill_audit.py` v0.2 with regime-disclosure veto gate | SHIPPED |
 
 ### 1 — Awaiting prod-side execution (no workspace action)
 

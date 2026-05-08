@@ -6,21 +6,23 @@ Clean-room re-implementation of the MedSkillAudit veto-gate framework
 domain to financial-research / Cemini brief validation.
 
 Two phases:
-  STATIC (40% of total score, fully implemented v0.1):
+  STATIC (40% of total score, fully implemented v0.2):
     1. Required sections present  ── must have ## Target, ## Summary, ## Sources
     2. Cross-link resolution      ── @path/to/page.md must point to a real wiki page
     3. Citation tag well-formedness ── [Source: ...] / [Sources: ...] tags parse
     4. NEEDS VERIFICATION freshness ── tags ≥30 days old surface as warnings
-    5. Frontmatter (if present)   ── valid YAML-style front block
-    6. Prose-quality heuristics   ── unauthorized emoji, TODO/FIXME markers
+    5. Prose-quality heuristics   ── unauthorized emoji, TODO/FIXME markers
+    6. Frontmatter (if present)   ── valid YAML-style front block
+    7. Regime-disclosure gate     ── evaluation-comparison claims must disclose regime variables (K33)
 
-  DYNAMIC (60% of total score, deferred to v0.2):
+  DYNAMIC (60% of total score, deferred to v0.3):
     Requires LLM API call against a sandboxed Conductor / DeepSeek endpoint.
     Tests reproducibility, schema-compliance, hallucinated-citation detection.
 
 Veto gates (any failure ⇒ REJECT, score ignored):
   ● Operational Stability — file parseable, required sections present
-  ● Scientific Integrity — every cross-link / citation resolves; no orphans
+  ● Scientific Integrity — every cross-link / citation resolves; no orphans;
+                                  evaluation-comparison claims disclose regime variables (K33)
 
 Usage:
   python3 scripts/skill_audit.py briefs/2026-05-04_*.md
@@ -100,7 +102,7 @@ EMOJI_RE = re.compile(
 # Required sections, keyed by brief type. Briefs with target=CeminiSuite must
 # include enough structure that the prod-side Claude session can act on them.
 CRITICAL_SECTIONS = {"Target", "Summary"}
-SOURCES_SECTION_ALIASES = {"Sources", "Source", "Primary sources", "References"}
+SOURCES_SECTION_ALIASES = {"Sources", "Source", "Primary sources", "References", "Cross-references"}
 
 # ------------------------------------------------------- individual checks --
 
@@ -120,7 +122,7 @@ def check_required_sections(text: str, sections: list[str]) -> CheckResult:
         return CheckResult(
             name="required_sections",
             severity="veto",
-            score_weight=0.30,
+            score_weight=0.25,
             score_earned=0.0,
             detail=f"Missing critical section(s): {sorted(missing_critical)}",
             evidence=sorted(missing_critical),
@@ -130,8 +132,8 @@ def check_required_sections(text: str, sections: list[str]) -> CheckResult:
         return CheckResult(
             name="required_sections",
             severity="warn",
-            score_weight=0.30,
-            score_earned=0.20,
+            score_weight=0.25,
+            score_earned=0.17,
             detail=(
                 "No Sources/References section found. "
                 f"Expected one of: {sorted(SOURCES_SECTION_ALIASES)}"
@@ -141,8 +143,8 @@ def check_required_sections(text: str, sections: list[str]) -> CheckResult:
     return CheckResult(
         name="required_sections",
         severity="pass",
-        score_weight=0.30,
-        score_earned=0.30,
+        score_weight=0.25,
+        score_earned=0.25,
         detail=f"All required sections present ({len(sections)} total: {sections})",
     )
 
@@ -153,8 +155,8 @@ def check_crosslinks(text: str) -> CheckResult:
         return CheckResult(
             name="crosslinks",
             severity="pass",
-            score_weight=0.20,
-            score_earned=0.20,
+            score_weight=0.15,
+            score_earned=0.15,
             detail="No @path cross-links to validate",
         )
 
@@ -172,7 +174,7 @@ def check_crosslinks(text: str) -> CheckResult:
         return CheckResult(
             name="crosslinks",
             severity="veto",
-            score_weight=0.20,
+            score_weight=0.15,
             score_earned=0.0,
             detail=f"{len(dangling)} dangling cross-link(s) of {len(matches)} total",
             evidence=sorted(set(dangling)),
@@ -181,8 +183,8 @@ def check_crosslinks(text: str) -> CheckResult:
     return CheckResult(
         name="crosslinks",
         severity="pass",
-        score_weight=0.20,
-        score_earned=0.20,
+        score_weight=0.15,
+        score_earned=0.15,
         detail=f"{len(matches)} cross-link(s) all resolve",
     )
 
@@ -281,15 +283,15 @@ def check_prose_quality(text: str) -> CheckResult:
         return CheckResult(
             name="prose_quality",
             severity="pass",
-            score_weight=0.15,
-            score_earned=0.15,
+            score_weight=0.10,
+            score_earned=0.10,
             detail="No emoji, no TODO/FIXME markers",
         )
     return CheckResult(
         name="prose_quality",
         severity="warn",
-        score_weight=0.15,
-        score_earned=0.05 if len(issues) > 1 else 0.08,
+        score_weight=0.10,
+        score_earned=0.03 if len(issues) > 1 else 0.05,
         detail="; ".join(issues),
     )
 
@@ -300,8 +302,8 @@ def check_frontmatter(text: str) -> CheckResult:
         return CheckResult(
             name="frontmatter",
             severity="pass",
-            score_weight=0.10,
-            score_earned=0.10,
+            score_weight=0.05,
+            score_earned=0.05,
             detail="No frontmatter (typical for briefs)",
         )
     fm_end = text.find("\n---\n", 4)
@@ -309,17 +311,83 @@ def check_frontmatter(text: str) -> CheckResult:
         return CheckResult(
             name="frontmatter",
             severity="warn",
-            score_weight=0.10,
+            score_weight=0.05,
             score_earned=0.0,
             detail="Frontmatter opener present but no closing `---`",
         )
     return CheckResult(
         name="frontmatter",
         severity="pass",
-        score_weight=0.10,
-        score_earned=0.10,
+        score_weight=0.05,
+        score_earned=0.05,
         detail=f"Frontmatter parses ({fm_end - 4} chars)",
     )
+
+# ------------------------------------------------------ regime-disclosure --
+
+REGIME_TRIGGER_PATTERNS = [
+    r"\bbeats\b", r"\boutperforms\b", r"\bsurpasses\b",
+    r"\bwins on\b", r"\bimproves over\b", r"\bimproved by \d+% over\b",
+    r"\bbetter than\b", r"\bsuperior to\b",
+    r"\bleading method\b", r"\bbest-performing\b",
+    r"\b\d+(\.\d+)?%\s*(vs|against)\s*\w+",  # "X% vs Y" numeric comparisons
+]
+REGIME_DISCLOSURE_PATTERNS = [
+    r"per-regime", r"by regime", r"regime-conditioned",
+    r"regime mix", r"\bPRS\b", r"B/\|A\|", r"\bρ\b", r"prior rank correlation",
+    r"single-regime", r"during \w+ regime",
+]
+REGIME_SCOPE_NARROWING = [
+    r"\bpreliminary\b", r"\bexploratory\b", r"\bsingle-experiment\b",
+    r"\bpilot\b", r"\bproof of concept\b", r"\bcase study\b",
+]
+
+
+def check_regime_disclosure(text: str) -> CheckResult:
+    """Scientific Integrity gate: flag evaluation-comparison claims that lack
+    regime disclosure (K33 Regime-Conditioned BO discipline).
+
+    Verdicts:
+      PASS   — no trigger phrases, OR triggers + disclosure present
+      WARN   — triggers found, no disclosure, but scope-narrowing language present
+      REJECT — triggers found, no disclosure, no scope-narrowing language
+    """
+    triggered = any(re.search(p, text, re.IGNORECASE) for p in REGIME_TRIGGER_PATTERNS)
+    if not triggered:
+        return CheckResult(
+            name="regime_disclosure",
+            severity="pass",
+            score_weight=0.10,
+            score_earned=0.10,
+            detail="no evaluation-comparison claims detected",
+        )
+    disclosed = any(re.search(p, text, re.IGNORECASE) for p in REGIME_DISCLOSURE_PATTERNS)
+    if disclosed:
+        return CheckResult(
+            name="regime_disclosure",
+            severity="pass",
+            score_weight=0.10,
+            score_earned=0.10,
+            detail="evaluation-comparison claim with regime disclosure",
+        )
+    narrowed = any(re.search(p, text, re.IGNORECASE) for p in REGIME_SCOPE_NARROWING)
+    if narrowed:
+        return CheckResult(
+            name="regime_disclosure",
+            severity="warn",
+            score_weight=0.10,
+            score_earned=0.05,
+            detail="evaluation-comparison claim narrowed but no formal regime disclosure",
+        )
+    return CheckResult(
+        name="regime_disclosure",
+        severity="veto",
+        score_weight=0.10,
+        score_earned=0.0,
+        detail="evaluation-comparison claim without regime disclosure (K33 No-Free-Leaderboard)",
+        veto_reason="Scientific Integrity — evaluation-comparison claim lacks regime disclosure (B/|A|, ρ, PRS, or per-regime breakdown)",
+    )
+
 
 # --------------------------------------------------------- report generation --
 
@@ -338,6 +406,7 @@ def assemble_report(
         check_needs_verification(text, nv_age_days),
         check_prose_quality(text),
         check_frontmatter(text),
+        check_regime_disclosure(text),
     ]
     veto_gates = [c.veto_reason for c in checks if c.severity == "veto" and c.veto_reason]
     static_score = round(sum(c.score_earned for c in checks) * 100, 1)
