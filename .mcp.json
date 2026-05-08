@@ -5,6 +5,13 @@
       "command": "python3",
       "args": ["conductor/mcp_server.py"],
       "env": {}
+    },
+    "kb-server": {
+      "type": "http",
+      "url": "http://10.0.0.2:3838/mcp",
+      "headers": {
+        "x-api-key": "a96d1bdb11c7101a6bc5af4a24647fbf45f547cf21c9594cf562a60f170e342a"  # pragma: allowlist secret
+      }
     }
   }
 }
