@@ -286,6 +286,30 @@ If items exist that the user hasn't asked you to address, mention briefly: "Btw,
 
 Keep each check under 60 seconds. Rituals that grow into multi-minute operations should become opt-in commands instead.
 
+## Related Wikis
+
+When a query needs data from another wiki, reference it using the `@wiki-alias/path/to/page.md` syntax. The LLM resolves these by reading the other wiki's files directly.
+
+| Alias | Path | Description |
+|-------|------|-------------|
+| `image-gen-wiki` | `/Users/claudiobarone/Desktop/projects/Image gen/wiki/` | Uncensored local image generation research, model cataloging, workflow tooling, persona/character ops |
+| `seo-wiki` | `/Users/claudiobarone/Desktop/projects/SEO:GEO B&M Business/wiki/` | SEO, local search (GEO), GEO/AEO, web design, social media marketing |
+
+### Cross-wiki link syntax
+
+- Use `@wiki-alias/path/to/page.md` for cross-wiki references (e.g., `@seo-wiki/concepts/geo-aeo.md`)
+- Bidirectional: if OSINT page A references Image Gen page B, add a matching `@osint-wiki/...` backlink on page B
+- When creating a stub in another wiki, note the cross-wiki dependency in `## Relations`
+
+### Using the conductor/librarian for unified search
+
+The OSINT workspace includes a **conductor** (MCP server that routes queries) + **librarian** (kb-server that serves wikis). To query across all three wikis:
+1. Sync all wikis to the librarian:
+   - `rsync -avz /Users/claudiobarone/Desktop/projects/Image\ gen/wiki/ cemini-librarian:/opt/cemini-wiki/image-gen-wiki/wiki/`
+   - `rsync -avz "/Users/claudiobarone/Desktop/projects/SEO:GEO B&M Business/wiki/" cemini-librarian:/opt/cemini-wiki/seo-geo-wiki/wiki/`
+2. Run `kb ingest` on the librarian to reindex
+3. Use `conductor_query` tool (exposed via OSINT's `conductor/mcp_server.py`) to query across all wikis
+
 ## Related — read-only from this workspace
 
 - **CeminiSuite dev stack** — Hetzner host, `/opt/cemini` server root. Connection details (SSH target, IP) live in `.local/server.md` (gitignored). Has its own `CLAUDE.md` for dev work. **Never modify the server's `CLAUDE.md` from here.**
