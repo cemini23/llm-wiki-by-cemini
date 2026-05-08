@@ -7,11 +7,10 @@
       "env": {}
     },
     "kb-server": {
-      "type": "http",
-      "url": "http://10.0.0.2:3838/mcp",
-      "headers": {
-        "x-api-key": "a96d1bdb11c7101a6bc5af4a24647fbf45f547cf21c9594cf562a60f170e342a"  # pragma: allowlist secret
-      }
+      "type": "stdio",
+      "command": "ssh",
+      "args": ["cemini-librarian", "cd /opt/cemini-wiki && KB_TOOL_ALLOWLIST=kb_search,kb_search_smart,kb_context,kb_read,kb_list,kb_vault_status,kb_safety_check node /opt/kb-server/src/mcp.js"],
+      "env": {}
     }
   }
 }
