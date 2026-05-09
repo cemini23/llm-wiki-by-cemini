@@ -1,5 +1,26 @@
 # Wiki Log
 
+## [2026-05-08] training | RL 80K-frame BTC-USD MAPPO run completed
+
+Completed 80,384-frame MAPPO training run on BTC-USD with 33 days of historical data, achieving best Differential Sortino Ratio (DSoR) of 0.1059. Generated ensemble inference placeholder checkpoint for future 500K-frame retrain when sufficient data becomes available (~October 2026).
+
+### Training Overview
+- **Algorithm**: Multi-Agent PPO (MAPPO) with 5 specialized agents + centralized Critic
+- **Observation Space**: 41-dimensional feature set  
+- **Reward Function**: Differential Sortino Ratio (DSoR)
+- **Data Limitations**: Only 33 days usable data (vs 500K-frame target requiring ~174 days); empty sources vol_surface, sector_rotation, sentiment logs defaulted to 0.0
+- **Workaround**: Used container IP (172.23.0.8) directly due to Docker DNS resolution failure for 'postgres' host
+
+### Results
+- **Best DSoR**: 0.10586416970845691 (~0.1059)
+- **Frames Collected**: 80,384
+- **Training Time**: 179.23 seconds (~3 minutes)
+- **Total Parameters**: 71,384
+
+### Checkpoint Artifacts
+- `checkpoint_80k_btc_20260508_final.json` - training metadata
+- `checkpoint_80k_btc_20260508_final.safetensors` - model weights
+
 ## [2026-05-07] ingest | K33 — BLADE listwise alignment + Regime-Conditioned BO evaluation
 
 Two arXiv PDFs ingested from `research to be indexed/`:

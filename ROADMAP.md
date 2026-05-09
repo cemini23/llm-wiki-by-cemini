@@ -32,6 +32,7 @@ K33 ingest + regime-disclosure gate SHIPPED 2026-05-08. No new prod-side queue a
 |-------|---------------|--------|
 | `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` | Phase 1 ✓ / Phase 2 deferred | Phase 1 ✓ / Phase 2 deferred |
 | `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` | **SHIPPED 2026-05-08** — `scripts/skill_audit.py` v0.2 with regime-disclosure veto gate | SHIPPED |
+| `briefs/2026-05-08_rl-80k-btc-training-results.md` | RL 80K-frame BTC-USD training results, checkpoint for future 500K retrain | NEW |
 
 ### 1 — Awaiting prod-side execution (no workspace action)
 
