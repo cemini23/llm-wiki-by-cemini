@@ -159,6 +159,7 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 ### Ingests
 - **K30 Polymarket-readiness wave** — 4 Gemini DR docx batches (102 tools) + Deep GraphRAG arXiv 2601.11144 + Murphy RL Overview arXiv 2412.05265v5. 13 wiki pages (6 source + 7 entity stubs) + license-posture 8 → 9 patterns (added ELv2 source-available). 1 prod brief staged: `2026-05-05_polymarket-stack-adoption.md`.
 - **K31 JPM portfolio paper + 5_5 moarrr Gemini DR batch (19 tools)** — 7 wiki pages (2 source + 5 entity stubs: hftbacktest, guidance-ai, letta-memgpt, ttok, git-rewind). License-posture catalog unchanged (9 modes stable). 2 standalone briefs shipped to prod 2026-05-06: `2026-05-06_hftbacktest-adoption.md` + `2026-05-06_guidance-ai-adoption.md` (both PASS skill_audit at 100/100). ttok = no-brief universal install (pending laptop + Cemini-prod Pipfile addition). JPM paper indexed reference-only (off-domain methodology with transfer value).
+- **K33 Polymarket NBA arb paper 2605.00864** — 1 source page: `wiki/sources/polymarket-nba-arbitrage-2605.00864.md` (deep-read, validated). Updated `market-microstructure.md` concept hub + `index.md`. PDF scp'd to librarian. Key finding: combinatorial arb feasible but depth-capped at ~14.8 shares; Middle jackpot never realized.
 
 ### Adoption verdicts (3 audits + multiple briefs shipped)
 - **#11 PageIndex Phase 0** → NO-GO. Single-file API + agentic cost + lost graph/metadata. Wrong tool for flat wiki.

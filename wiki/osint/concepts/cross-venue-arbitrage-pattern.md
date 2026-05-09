@@ -10,6 +10,9 @@ related:
   - entities/platforms/kalshi.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/high-signal-paper-patterns.md
+  - sources/polymarket-microstructure-anatomy-2604.24366.md
+  - sources/polymarket-nba-arbitrage-2605.00864.md
+  - concepts/polymarket-microstructure-findings.md
   - concepts/prediction-market-historical-analysis.md
 maturity: draft
 created: 2026-05-05
@@ -24,6 +27,9 @@ updated: 2026-05-05
 - @entities/platforms/kalshi.md — venue 2 of 2 in the canonical pair
 - @concepts/polymarket-market-making-architectures.md — sibling K30 synthesis; some Polymarket MM impls bundle arbitrage as a strategy (e.g., Polymarket Trading Bot v3.1's `Arbitrage` and `DipArb`); the core arb-loop is the same
 - @concepts/high-signal-paper-patterns.md — K8/K9 cross-doc-duplicate discipline source; this page is a direct application of that signal-detection rule
+- @sources/polymarket-microstructure-anatomy-2604.24366.md — canonical Polymarket microstructure study; documents the depth-decay, spread, and liquidity dynamics that constrain cross-venue arb execution
+- @sources/polymarket-nba-arbitrage-2605.00864.md — companion NBA arb study; shares same data ecosystem, documents shallow-depth constraint on executable arb size
+- @concepts/polymarket-microstructure-findings.md — distilled findings from Dubach 2026; key constraint: public-feed direction is unreliable, must use on-chain OrderFilled events
 - @concepts/prediction-market-historical-analysis.md — historical price-divergence statistics inform arb threshold-tuning + viability assessment
 
 ## Raw Concept

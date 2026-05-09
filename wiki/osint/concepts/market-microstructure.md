@@ -50,7 +50,9 @@ related:
   - sources/greeks1-3-29.md
   - sources/insights-from-a-gemini.md
   - sources/kalshi1-3-29.md
-  - sources/market-microstructure-and-liquidity-analysis-of-qqq-etf-on-2024-08-01.md
+  - sources/polymarket-nba-arbitrage-2605.00864.md — Polymarket NBA combinatorial arb; 75M snapshots, 7 single-market arbs, 290 combinatorial (depth-capped at ~14.8 shares)
+  - sources/polymarket-microstructure-anatomy-2604.24366.md — Polymarket microstructure anatomy paper (Dubach 2026); 30B events, 600-market panel, definitive trade-direction finding
+- sources/market-microstructure-and-liquidity-analysis-of-qqq-etf-on-2024-08-01.md
   - sources/nonstandard-errors.md
   - sources/options-2-4-5.md
   - sources/osint-prediction-markets-trading-architecture.md
@@ -117,6 +119,9 @@ updated: 2026-05-02
 - @sources/insights-from-a-gemini.md — The Attrition Protocol comprehensive trading framework (Gemini Deep Research synthesis): 7 modules, ICT microstructure (FVG/OB/PO3), Zhawk RU system, 8-phase Master Cheatsheet. Direct Cemini position-sizing + MAPPO feature-vector relevance
 - @sources/kalshi1-3-29.md — Market Microstructure source in the Cemini research corpus
 - @concepts/parlay-market-making.md — K24 promotion: correlation-aware AMM for parlay joint-contract pricing (Ising model + shadow trades + composite-likelihood SGD)
+- @sources/polymarket-microstructure-anatomy-2604.24366.md — Polymarket microstructure anatomy; definitive cross-sectional tick-level study
+- @sources/polymarket-nba-arbitrage-2605.00864.md — Polymarket NBA combinatorial arb; 75M snapshots, 7 single-market arbs, 290 combinatorial (depth-capped at ~14.8 shares)
+- @concepts/polymarket-microstructure-findings.md — distilled findings from Dubach 2026 for Cemini consumption
 - @sources/market-microstructure-and-liquidity-analysis-of-qqq-etf-on-2024-08-01.md — Market Microstructure source in the Cemini research corpus
 - @sources/nonstandard-errors.md — Market Microstructure source in the Cemini research corpus
 - @sources/options-2-4-5.md — Market Microstructure source in the Cemini research corpus

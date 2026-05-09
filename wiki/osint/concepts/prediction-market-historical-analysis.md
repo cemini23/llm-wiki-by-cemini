@@ -23,6 +23,8 @@ updated: 2026-05-05
 - @entities/platforms/polymarket.md — one of two canonical venues this analysis targets
 - @entities/platforms/kalshi.md — second canonical venue
 - @concepts/polymarket-market-making-architectures.md — sibling K30 synthesis; MM strategy parameters (spread sizing, inventory limits, cadence) are tuned against historical data
+- sources/polymarket-microstructure-anatomy-2604.24366.md — canonical Polymarket microstructure study; replication package directly usable as Layer 1 harvester
+- @concepts/polymarket-microstructure-findings.md — distilled findings; documents constraints on trade-direction inference and public-feed limitations
 - @concepts/cross-venue-arbitrage-pattern.md — sibling K30 synthesis; arb threshold-tuning and viability assessment depend on historical price-divergence statistics
 - @entities/tools/financedatabase.md — K30 Adopt; 300k offline financial-symbol catalog, complementary to prediction-market historical data (one is symbol-universe, the other is venue-specific time series)
 - @entities/tools/financetoolkit.md — K28 Adopt; 150-metric library that operates over historical data (downstream consumer)
