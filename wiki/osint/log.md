@@ -12,6 +12,17 @@ Ingested Cheng/Yang/Zou (UCLA, May 2026) "Arbitrage Analysis in Polymarket NBA M
 
 Key findings: 7 single-market arbs only (median 3.6s), 290 combinatorial arbs (101 bps median yield), depth caps at ~14.8 shares, Middle jackpot never realized. Hard constraints for any Cemini arb strategy.
 
+## [2026-05-09] ingest | LeWorldModel (2603.19312v2) + SABR geometry-aware correction (2605.06604)
+
+Ingested two new arXiv papers into draft source pages.
+
+- **LeWorldModel** (arXiv 2603.19312v2, Maes/Le Lidec/Scieur/LeCun/Balestriero) — Stable end-to-end JEPA world model from raw pixels; 2-term loss (prediction + SIGReg Gaussian regularizer), 15M params, single-GPU training, 48× faster planning than DINO-WM. Relevant to Cemini's long-term autonomy/RL stack. Draft source page: `wiki/sources/leworldmodel-2603.19312v2.md`.
+- **SABR geometry-aware residual correction** (arXiv 2605.06604, Reghai/Tarsissi/Biau/Lipton) — Hybrid ML-analytical SABR calibration: Hagan formula backbone + neural residual correction with geometry-aware features from SABR manifold. R² improves ~0.73→0.97 vs naive NN; ~10⁴× speedup over Monte Carlo at inference. Draft source page: `wiki/sources/sabr-geometry-aware-correction-2605.06604.md`.
+
+Updates:
+- `wiki/index.md` — ml-methods count 5→6, added both source rows in appropriate sections
+- Both raw PDFs moved to `cemini-librarian:/opt/cemini-bulk/research/`, local copies removed from `research to be indexed/`
+
 ## [2026-05-08] training | RL 80K-frame BTC-USD MAPPO run completed
 
 Completed 80,384-frame MAPPO training run on BTC-USD with 33 days of historical data, achieving best Differential Sortino Ratio (DSoR) of 0.1059. Generated ensemble inference placeholder checkpoint for future 500K-frame retrain when sufficient data becomes available (~October 2026).
