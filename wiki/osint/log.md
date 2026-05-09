@@ -4245,3 +4245,27 @@ Reconciliation pass on librarian-server-side documentation. Live probe of `cemin
 ### Deferred / not changed
 - llm-wiki-compiler historical references in `wiki/concepts/wiki-tooling-evaluation.md` and `wiki/concepts/librarian-server-architecture.md` left as-is — they are decision-record artifacts, not current-state claims.
 - `wiki/log.md:3171` and similar: historical state correctly preserved; not stale.
+
+## [2026-05-08] phase0-audit | hftbacktest (K31) — MIT, Production/Stable ✅
+
+Phase 0 source audit for `@wiki/entities/tools/hftbacktest.md` per K31 Gemini DR eval URL 15 (Adopt tier).
+
+### Audit outcomes
+
+- **License**: MIT confirmed — `LICENSE` file present in repo root, standard MIT text with "Permission is hereby granted" preamble. Matches eval claim. **[CONFIRMED]**
+- **Maturity**: PyPI maturity **Production/Stable (5/5)**. Latest: `rust-v0.9.4` / `py-v2.4.4` (Dec 10, 2025). 4,015 ★, 780 forks, 30 contributors. Last commit Dec 23, 2025 (active within 90 days).
+- **Rust toolchain**: Pre-built bdist_wheel on PyPI includes compiled Rust backend. **No Rust toolchain needed on Hetzner** — `pip install hftbacktest` succeeded in venv on `cemini-librarian`. Resolves Risk #13 from brief.
+- **Build system**: `maturin` build backend; Rust >= 1.91.1 only required if building from source.
+- **Data format compatibility**: Ingests Level-2 MBP + Level-3 MBO tick-by-tick data. **Venue-agnostic** — not tied to equity exchanges. Polymarket CLOB and Kalshi orderbook can be adapted via shim layers (adapter risk remains for Phase 1).
+- **Polars compatibility**: First-class `polars` dependency — aligns with Cemini's existing Polars-based data pipeline.
+- **Compute footprint**: Depends on `numba` (JIT) + `polars` (columnar) — memory profile acceptable for 6-month windows on Hetzner CPX31 (7 GB) for single-venue backtests; multi-venue × 100+ contracts needs Phase 1 validation.
+- **No dead code or license traps found.**
+
+### Verdict: **GO** ✅
+
+License clear (MIT), maturity high (Production/Stable), no toolchain blockers. Proceed to Phase 1 sandbox replication per brief.
+
+### Pages updated
+- `wiki/entities/tools/hftbacktest.md` — maturity raised `draft` → `validated`, added verified fields (repo URL, license, release, stack, Rust note), updated open questions, added install snippet
+- `wiki/index.md` — maturity tag `DRAFT 2026-05-05` → `VALIDATED 2026-05-08`
+- `briefs/2026-05-06_hftbacktest-adoption.md` — license posture section rewritten with MIT confirmation, property table updated with verified values
