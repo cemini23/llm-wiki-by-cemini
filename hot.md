@@ -2,11 +2,12 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (end of 2026-05-08 session, K33 regime-disclosure gate SHIPPED)
+## Position (end of 2026-05-09 session)
 
 - **K-series**: K33 complete (BLADE listwise alignment + Regime-Conditioned BO evaluation, 2026-05-07). Regime-disclosure gate shipped 2026-05-08.
-- **Latest commit**: TBD (regime-disclosure gate commit pending).
-- **Wiki**: 555 pages indexed (550 + 5 K33 pages), license-pattern catalog stable at 10 modes.
+- **Step 81**: ✅ sshd installed + hardened on `cemini-prod` (2026-05-09). Brief + wiki log entry created.
+- **Step 82**: PARTIAL PASS (2026-05-09) — Conductor pipeline ✅, Stash ✅, Calibration ✅. Redis/EMS ❌. See `briefs/2026-05-09_step82-production-smoke-test.md`.
+- **Wiki**: 555 pages indexed (550 + 5 K33 pages + K34 Dubach 2026 source), license-pattern catalog stable at 10 modes.
 - **skill_audit.py v0.2**: regime-disclosure gate shipped — 7 checks (0.25/0.15/0.15/0.10/0.10/0.05/0.10 weights). All 4 test briefs PASS. No false positives on K28-K30 adoption briefs.
 
 ## Monetization-priority directive (2026-05-06)
@@ -15,9 +16,9 @@ User: "license its going to be a bit before we sell but i need to start making m
 
 Effects: license auto-rejects soften for non-prod-codebase use. Phase-0 audit rigor unchanged. Saved as project memory `monetization_priority_2026.md`. Re-confirm 2027+.
 
-## Current state — workspace idle, ready for next K
+## Current state — Step 81 complete, Step 82 partial pass awaiting Redis + EMS
 
-K33 closed. Regime-disclosure gate shipped and verified.
+Step 81 (sshd) and Step 82 (Conductor smoke test) both ran during the prior session window. Step 81 completed cleanly. Step 82 blocked by Redis + EMS (both missing on prod).
 
 ### Shipped workspace-laptop briefs
 
@@ -25,6 +26,7 @@ K33 closed. Regime-disclosure gate shipped and verified.
 |-------|--------|
 | `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` | Phase 1 ✓ / Phase 2 deferred (bundles with brief-audit-upgrade sprint) |
 | `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` | **SHIPPED 2026-05-08** — `scripts/skill_audit.py` v0.2 with regime-disclosure veto gate, all tests PASS |
+| `briefs/2026-05-09_step81-sshd-prod.md` | **SHIPPED 2026-05-09** — sshd installed + hardened on `cemini-prod` |
 
 skill_audit v0.2: 7 checks, regime-disclosure is a veto gate (Scientific Integrity). Static score weights rebalanced: required_sections 0.25, crosslinks 0.15, citations 0.15, needs_verification 0.10, prose_quality 0.10, frontmatter 0.05, regime_disclosure 0.10.
 
@@ -39,7 +41,7 @@ K32+K33 surfaced 4 STEAL-FROM/concept-driven upgrades that all touch `scripts/sk
 
 Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr) OR ship sequentially.
 
-### 9 active prod briefs at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution
+### 10 active prod briefs at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution
 
 | Brief | What it ships |
 |-------|---------------|
@@ -52,6 +54,7 @@ Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr
 | `2026-05-06_hftbacktest-adoption.md` (K31) | Microsecond-tick HFT backtester |
 | `2026-05-06_guidance-ai-adoption.md` (K31) | Microsoft structured-generation library |
 | `2026-05-06_ttok-prod-install.md` (K31) | ttok Pipfile addition + pre-call audit hook |
+| **`2026-05-09_step81-sshd-prod.md`** (NEW) | OpenSSH hardening on `cemini-prod` — **COMPLETE** ✅ |
 
 ### 2 deferred-with-triggers prod briefs (unchanged)
 
@@ -66,17 +69,19 @@ Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr
 - **Phase 4 of obsidian-llm-wiki-local** — `wiki_lint.py --fix-bidirectional` mode is standalone-shippable (~30 min). Low priority.
 - **Cemini-prod ttok install** — staged; awaits prod-side execution (single Pipfile addition).
 - **hftbacktest Phase 0 audit** — GO (MIT license, Production/Stable v2.4.4, wheel install on Hetzner confirmed). Brief `2026-05-06_hftbacktest-adoption.md` updated and ready for prod staging. Phase 1 sandbox replication is next.
+- **Step 82 blockers: Redis + EMS** — must be resolved before Step 83 live deployment
 - **Sakana 2026-04-27 NV tags Exa-resolution** — 12 stale `[NEEDS VERIFICATION 2026-04-27]` tags pending focused Exa-cross-check pass.
 - **Tier 2 arXiv sweep** — last 2026-05-01; due ~2026-05-08 per 7-day cadence.
 - **Storage compaction** — disk 88% full; market-dataset Parquet conversion + research-corpus SQLite FTS index.
 
-## Key file locations (end of 2026-05-08)
+## Key file locations (end of 2026-05-09)
 
 - ROADMAP: `/Users/claudiobarone/Desktop/OSINT WORKSPACE/ROADMAP.md`
 - log: `/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki/log.md`
 - index: `/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki/index.md`
 - license catalog: `/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki/concepts/cemini-license-posture.md`
-- staged brief: `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` (SHIPPED)
+- staged brief: `briefs/2026-05-09_step81-sshd-prod.md` (SHIPPED)
+- step 82 brief: `briefs/2026-05-09_step82-production-smoke-test.md` (PARTIAL PASS)
 - scripts: `scripts/skill_audit.py` v0.2 (regime-disclosure gate shipped)
 - raw source: `cemini-librarian:/opt/cemini-bulk/research/5_6 links.docx`
 - prod ccd-cli: `cemini-prod:/root/.claude/remote/ccd-cli/{2.1.111,2.1.128}`

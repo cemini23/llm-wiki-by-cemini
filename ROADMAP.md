@@ -8,10 +8,13 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
-## Current state (end of 2026-05-08)
+## Current state (end of 2026-05-09)
 
 - **Wiki**: 555 pages indexed (550 + 5 K33 pages: 2 sources + 2 concepts + 1 tool entity), 3,564+ outbound edges, license-pattern catalog stable at **10 modes** (no new mode in K33)
 - **K-series**: K33 complete (BLADE listwise alignment + Regime-Conditioned BO evaluation, 2026-05-07). Regime-disclosure gate **SHIPPED** 2026-05-08 — `scripts/skill_audit.py` v0.2 with 7-check regime-disclosure veto gate.
+- **Step 81 — SSHD on Prod**: ✅ COMPLETE (2026-05-09). `openssh-server` installed + hardened `sshd_config` on `cemini-prod`. Verified end-to-end connectively from workspace laptop. Prereq for Step 82. Brief: `briefs/2026-05-09_step81-sshd-prod.md`.
+- **Step 82 — Prod Smoke Test**: PARTIAL PASS (2026-05-09). Conductor pipeline ✅, Stash ✅, Calibration ✅. Redis/EMS ❌ blockers. See `briefs/2026-05-09_step82-production-smoke-test.md`.
+- **Next**: Resolving Redis + EMS blockers before Step 83 (live deployment).
 - **Active prod briefs**: 9 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution (6 from K28-K30 + 3 K31). **No new K33 prod briefs** — K33's adoption is workspace-laptop-side (brief-audit `regime-disclosure` gate + downstream listwise-ranking instrumentation deferred)
 - **Active workspace-laptop briefs**: 2 staged
   - `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` (port 4 wiki-maintenance patterns into `scripts/wiki_lint.py`; Phase 1 ✓ / Phase 2 deferred, bundles with brief-audit-upgrade sprint)

@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-09] ingest | Polymarket NBA Arbitrage paper 2605.00864
+
+Ingested Cheng/Yang/Zou (UCLA, May 2026) "Arbitrage Analysis in Polymarket NBA Markets" — arXiv 2605.00864. Deep-read all 12 pages + appendices. Companion to Dubach 2024.24366 (microstructure anatomy).
+- Created `wiki/sources/polymarket-nba-arbitrage-2605.00864.md` (full source page)
+- Updated `wiki/concepts/market-microstructure.md` — added new source relation
+- Updated `wiki/index.md` — added source row in quant-finance section
+- Updated `sources/polymarket-microstructure-anatomy-2604.24366.md` — added backlink to new companion paper (was already listed in `related:`)
+- Moved `2605.00864_polymarket-nba-arbitrage.pdf` → `cemini-librarian:/opt/cemini-bulk/research/`
+- Removed local copy from `research to be indexed/`
+
+Key findings: 7 single-market arbs only (median 3.6s), 290 combinatorial arbs (101 bps median yield), depth caps at ~14.8 shares, Middle jackpot never realized. Hard constraints for any Cemini arb strategy.
+
 ## [2026-05-08] training | RL 80K-frame BTC-USD MAPPO run completed
 
 Completed 80,384-frame MAPPO training run on BTC-USD with 33 days of historical data, achieving best Differential Sortino Ratio (DSoR) of 0.1059. Generated ensemble inference placeholder checkpoint for future 500K-frame retrain when sufficient data becomes available (~October 2026).
@@ -20,6 +32,53 @@ Completed 80,384-frame MAPPO training run on BTC-USD with 33 days of historical 
 ### Checkpoint Artifacts
 - `checkpoint_80k_btc_20260508_final.json` - training metadata
 - `checkpoint_80k_btc_20260508_final.safetensors` - model weights
+
+## [2026-05-09] prod-sshd | Step 81 — Install and configure sshd on prod server
+
+Installed and configured OpenSSH server on `cemini-prod`. All phases completed successfully in a prior session window — full runbook executed end-to-end.
+
+### Details
+- Package: `openssh-server` (OpenSSH)
+- Configuration: hardened `sshd_config` (key exchange algorithms, authentication hardening, access controls)
+- Verified: SSH connectivity from workspace laptop → `cemini-prod` operational
+- Related: prerequisite for secure `scp`/`ssh` sync pipeline between laptop and prod
+
+### Links
+- Prereq for: [Step 82 — Prod Smoke Test](briefs/2026-05-09_step82-production-smoke-test.md)
+
+## [2026-05-09] prod-smoke | Step 82 — Production Integration Smoke Test
+
+Full Conductor pipeline validation on `cemini-librarian` with retrained 80K policy. 6-phase smoke test across conductor, Stash, Redis, EMS, and calibration.
+
+### Results Summary
+- **Overall**: PARTIAL PASS — 4/6 phases green, 2 blocked by missing infrastructure
+- **Conductor pipeline**: 18/20 seed queries succeeded (2 quant_methods timeouts); 51% cost reduction vs always-reasoner baseline
+- **Cascade gate**: Escalation path verified end-to-end; direct-accept and escalate paths both functional
+- **Stash integration**: Store/recall/namespacing all working (session-80K checkpoint confirmed)
+- **Redis pub/sub**: ❌ NOT INSTALLED — blocker for brain → EMS → paper-fill path
+- **EMS/broker**: ❌ NO PROCESS on server — blocked
+- **Calibration roundtrip**: 75 decisions evaluated (correctness 0.891, routing_quality 0.797, 30% cost savings); token priors rebuilt successfully
+
+### Key Metrics
+| Metric | Value |
+|--------|-------|
+| Seed queries run | 20 (18 successful) |
+| Total routing decisions post-test | 75 |
+| Avg cost/query | $0.001532 (vs $0.00219 baseline) |
+| Cost savings | 30-51% |
+| Escalation rate | 18.7% |
+| First-try acceptance | 81% |
+
+### Blockers for Step 83 (Live Deployment)
+1. Redis not installed — must be added to server init
+2. No EMS/broker process — not yet deployed
+3. quant_methods timeout pattern — needs longer timeout or direct-reasoner routing
+4. CLI EvalReport printing bug (cosmetic, JSON output correct)
+
+### Links
+- Brief: `briefs/2026-05-09_step82-production-smoke-test.md`
+- Routing log: `/opt/cemini/logs/routing.jsonl` (75 entries)
+- Token priors: rebuilt into `config.yaml`
 
 ## [2026-05-07] ingest | K33 — BLADE listwise alignment + Regime-Conditioned BO evaluation
 
