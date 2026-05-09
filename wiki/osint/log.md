@@ -44,6 +44,21 @@ Completed 80,384-frame MAPPO training run on BTC-USD with 33 days of historical 
 - `checkpoint_80k_btc_20260508_final.json` - training metadata
 - `checkpoint_80k_btc_20260508_final.safetensors` - model weights
 
+## [2026-05-09] ingest | LLM Proxy for Context Reduction + OpenRouter Efficiency & Context Audit (K34)
+
+Ingested two Cemini-internal docx architectural evaluations (46K chars each) analyzing MCP context-window exhaustion and OpenRouter token economics for solo-dev fintech deployment.
+
+- Created `wiki/sources/llm-proxy-context-reduction.md` — MCP gateway comparison (Agent Gateway / Bifrost / lazy-tool); recommends lazy-tool (46% token reduction, zero-dependency, deterministic passthrough)
+- Created `wiki/sources/openrouter-efficiency-context-audit.md` — OpenRouter caching economics + 200K ceiling bypass + 3-layer optimized stack (Aider / claude-code-router / DCP)
+- Created `wiki/entities/tools/lazy-tool.md` — primary MCP proxy recommendation (Go, SQLite, 5 meta-tools, BM25+vector hybrid retrieval)
+- Created `wiki/entities/tools/bifrost.md` — enterprise MCP gateway alternative (deferred: K8s/Docker/PostgreSQL overkill + code-execution risk)
+- Created `wiki/entities/tools/claude-code-router.md` — Node.js routing proxy for OpenRouter caching headers + failover
+- Created `wiki/entities/tools/cc-switch.md` — Rust SSE streaming repair proxy for OpenRouter
+- Created `wiki/concepts/mcp-context-optimization.md` — synthesis concept: 4-layer optimization stack (lazy-tool → claude-code-router → client optimizations → OpenRouter caching)
+- Updated `wiki/index.md` — added 7 rows across sources/entities/concepts; source count 311→313
+
+Key architectural insight: Locking system prompt to 5 static lazy-tool meta-tools makes it deterministic and cacheable → 80-95% per-session LLM cost reduction for long-running trading sessions.
+
 ## [2026-05-09] prod-sshd | Step 81 — Install and configure sshd on prod server
 
 Installed and configured OpenSSH server on `cemini-prod`. All phases completed successfully in a prior session window — full runbook executed end-to-end.

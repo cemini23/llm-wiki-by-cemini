@@ -4,11 +4,12 @@ Ephemeral curator working memory. Read first on session start; rewritten at sess
 
 ## Position (end of 2026-05-09 session)
 
-- **K-series**: K33 complete (BLADE listwise alignment + Regime-Conditioned BO evaluation, 2026-05-07). Regime-disclosure gate shipped 2026-05-08.
+- **K-series**: K34 ingest complete (Dubach microstructure + LeWorldModel + SABR geo-correction + MCP context optimization stack). MCP context optimization adoption brief staged (PASS 90/100).
 - **Step 81**: ✅ sshd installed + hardened on `cemini-prod` (2026-05-09). Brief + wiki log entry created.
 - **Step 82**: PARTIAL PASS (2026-05-09) — Conductor pipeline ✅, Stash ✅, Calibration ✅. Redis/EMS ❌. See `briefs/2026-05-09_step82-production-smoke-test.md`.
-- **Wiki**: 555 pages indexed (550 + 5 K33 pages + K34 Dubach 2026 source), license-pattern catalog stable at 10 modes.
-- **skill_audit.py v0.2**: regime-disclosure gate shipped — 7 checks (0.25/0.15/0.15/0.10/0.10/0.05/0.10 weights). All 4 test briefs PASS. No false positives on K28-K30 adoption briefs.
+- **Wiki**: 557 pages indexed (550 + 7 K34 MCP stack: 2 sources + 4 tool entities + 1 concept), license-pattern catalog stable at 10 modes.
+- **Briefs created today**: `polymarket-onchain-data-pipeline.md` (PASS 90/100) + `sabr-geometry-aware-calibration.md` (PASS 90/100) + `mcp-context-optimization-stack.md` (PASS 90/100) — all awaiting user GO/NO-GO.
+- **Inbox**: CLEAN (4 files processed — 2 docx ingested + 2 PDF duplicates removed).
 
 ## Monetization-priority directive (2026-05-06)
 
@@ -41,7 +42,7 @@ K32+K33 surfaced 4 STEAL-FROM/concept-driven upgrades that all touch `scripts/sk
 
 Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr) OR ship sequentially.
 
-### 10 active prod briefs at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution
+### 12 active prod briefs at `cemini-prod:/opt/cemini/briefs/` (10 existing + 2 new awaiting staging)
 
 | Brief | What it ships |
 |-------|---------------|
@@ -55,6 +56,9 @@ Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr
 | `2026-05-06_guidance-ai-adoption.md` (K31) | Microsoft structured-generation library |
 | `2026-05-06_ttok-prod-install.md` (K31) | ttok Pipfile addition + pre-call audit hook |
 | **`2026-05-09_step81-sshd-prod.md`** (NEW) | OpenSSH hardening on `cemini-prod` — **COMPLETE** ✅ |
+| *`2026-05-09_polymarket-onchain-data-pipeline.md`* (NEW) | Polymarket on-chain data pipeline — **AWAITING GO** |
+| *`2026-05-09_sabr-geometry-aware-calibration.md`* (NEW) | SABR GeoResNN calibration — **AWAITING SABR AUDIT** |
+| *`2026-05-09_mcp-context-optimization-stack.md`* (NEW K34) | 4-layer MCP optimization (lazy-tool + claude-code-router + client opts + OpenRouter caching). PASS 90/100. — **AWAITING GO** |
 
 ### 2 deferred-with-triggers prod briefs (unchanged)
 

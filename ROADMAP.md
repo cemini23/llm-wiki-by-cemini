@@ -10,20 +10,21 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (end of 2026-05-09)
 
-- **Wiki**: 555 pages indexed (550 + 5 K33 pages: 2 sources + 2 concepts + 1 tool entity), 3,564+ outbound edges, license-pattern catalog stable at **10 modes** (no new mode in K33)
+- **Wiki**: 557 pages indexed (550 + 7 K34 MCP context optimization stack: 2 sources + 4 tool entities + 1 concept), license-pattern catalog stable at 10 modes
 - **K-series**: K33 complete (BLADE listwise alignment + Regime-Conditioned BO evaluation, 2026-05-07). Regime-disclosure gate **SHIPPED** 2026-05-08 — `scripts/skill_audit.py` v0.2 with 7-check regime-disclosure veto gate.
 - **Step 81 — SSHD on Prod**: ✅ COMPLETE (2026-05-09). `openssh-server` installed + hardened `sshd_config` on `cemini-prod`. Verified end-to-end connectively from workspace laptop. Prereq for Step 82. Brief: `briefs/2026-05-09_step81-sshd-prod.md`.
 - **Step 82 — Prod Smoke Test**: PARTIAL PASS (2026-05-09). Conductor pipeline ✅, Stash ✅, Calibration ✅. Redis/EMS ❌ blockers. See `briefs/2026-05-09_step82-production-smoke-test.md`.
 - **Next**: Resolving Redis + EMS blockers before Step 83 (live deployment).
 - **Active prod briefs**: 9 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution (6 from K28-K30 + 3 K31). **No new K33 prod briefs** — K33's adoption is workspace-laptop-side (brief-audit `regime-disclosure` gate + downstream listwise-ranking instrumentation deferred)
-- **Active workspace-laptop briefs**: 2 staged
+- **Active workspace-laptop briefs**: 3 staged
   - `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` (port 4 wiki-maintenance patterns into `scripts/wiki_lint.py`; Phase 1 ✓ / Phase 2 deferred, bundles with brief-audit-upgrade sprint)
   - `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` — **SHIPPED 2026-05-08** — `scripts/skill_audit.py` v0.2: regime-disclosure veto gate implemented, all 4 test briefs PASS, no false positives on K28-K30 adoption briefs.
+  - `briefs/2026-05-09_mcp-context-optimization-stack.md` — **NEW K34** — 4-layer MCP context optimization stack (lazy-tool + claude-code-router + client optimizations + OpenRouter caching). skill_audit PASS 90/100. Awaiting user GO/NO-GO.
 - **Deferred prod briefs (with activation triggers)**: 2 (autoresearch + XSKILL Conductor evolution)
 - **Laptop-side K31 adoptions**: ttok 0.3 + git-rewind 1.1.4 INSTALLED 2026-05-06; 2 upstream issues filed against Chronos778/git-rewind ([#1](https://github.com/Chronos778/git-rewind/issues/1) install.sh checksum bug, [#2](https://github.com/Chronos778/git-rewind/issues/2) missing LICENSE file). User adopting **Groq** for rewind LLM backend (free tier).
 - **Monetization-priority stance** (2026-05-06): revenue first, IP-sale exit later-stage. License auto-rejects soften for non-prod-codebase use; Phase-0 audit rigor unchanged. See `~/.claude/projects/.../memory/monetization_priority_2026.md`.
 - **Prod ccd-cli auto-update protection**: `IS_SANDBOX=1` in `/etc/environment` (Option A permanent fix). Applied + verified end-to-end 2026-05-06.
-- **Inbox**: 0 (K33 PDFs ingested + scp'd to librarian)
+- **Inbox**: CLEAN (4 files processed 2026-05-09 — 2 docx ingested as K34 + 2 PDF duplicates removed)
 
 ## Next — actually pending action
 
