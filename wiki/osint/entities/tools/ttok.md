@@ -7,9 +7,9 @@ related:
   - sources/5-5-moarrr-tool-eval.md
   - entities/tools/codegraph.md
   - entities/tools/git-rewind.md
-maturity: draft
+maturity: validated
 created: 2026-05-05
-updated: 2026-05-06
+updated: 2026-05-08
 ---
 
 ## Relations
@@ -49,6 +49,25 @@ Smoke tests (2026-05-06):
 
 Both K31 briefs fit in any reasonable LLM context window. Token counting works correctly via OpenAI's tiktoken library; for DeepSeek-specific counts, manual ~5% adjustment per K-series ingest discipline (DeepSeek tokenizer is tiktoken-compatible but with slightly different boundary behavior on edge cases).
 
+### Cemini-prod install verified 2026-05-08
+
+```bash
+pip3 install ttok==0.3
+# Installs: ttok 0.3 + tiktoken 0.12.0
+# Warning: click dep emits UserWarning about duplicate --tokens param; cosmetic, non-blocking
+
+ttok --version  # → ttok, version 0.3
+echo "test" | ttok  # → 3 tokens
+echo "The quick brown fox jumps over the lazy dog" | ttok  # → 10 tokens
+```
+
+Pinned in `/opt/cemini/requirements.txt`:
+```
+ttok==0.3  # K31 token-counting CLI (Simon Willison, Apache-2.0)
+```
+
+Smoke tests on prod (2026-05-08): output matches expected token counts; CLI functional.
+
 ### Why Adopt (universally)
 
 Per K31 eval recommendation: install **universally across the Cemini backend Python environment AND the local macOS developer workstation**. Single-purpose, virtually nonexistent architectural risk.
@@ -78,17 +97,19 @@ cat briefs/2026-05-05_polymarket-stack-adoption.md | ttok -t 100000  # truncate 
 # Use in pre-call hooks in services/llm_analyst/deepseek_client.py
 ```
 
-### Open questions — laptop side resolved 2026-05-06
+### Open questions — resolved 2026-05-08
 
 - ~~License confirmation~~ → ✓ Apache-2.0 verified 2026-05-06
-- Tokenizer compatibility — ttok defaults to OpenAI's tiktoken; DeepSeek tokenizer is tiktoken-compatible at the boundary level (verified empirically in K-series ingest discipline; minor edge-case drift acceptable)
+- ~~Cemini-prod-side install~~ → ✓ Installed + smoke-tested 2026-05-08
 - ~~Latest version~~ → ttok 0.3, tiktoken 0.12.0; deps minimal
-- Cemini-prod-side install: pending — to be added to `/opt/cemini/Pipfile` and used in pre-call hooks in `services/llm_analyst/deepseek_client.py`
+- Tokenizer compatibility — ttok defaults to OpenAI's tiktoken; DeepSeek tokenizer is tiktoken-compatible at the boundary level (verified empirically in K-series ingest discipline; minor edge-case drift acceptable)
+- Phase 2: wire into `deepseek_client.py` pre-call audit hook + `AuditEntry.token_count` (per `@briefs/2026-05-05_conductor-audit-trail-phase1.md` Phase 1+5)
 
 ### Adoption status
 
 - **Laptop**: ✓ INSTALLED 2026-05-06 (`pip3 install --user ttok` + symlink to `~/.local/bin/ttok`)
-- **Cemini-prod**: pending Pipfile addition + pre-call hook integration. Could fold into `@briefs/2026-05-05_conductor-audit-trail-phase1.md` Phase 1+5 fitness-function input pipeline OR as a one-line Pipfile addition with no separate brief.
+- **Cemini-prod**: ✓ INSTALLED 2026-05-08 (`pip3 install ttok==0.3` + pinned in `requirements.txt`)
+- **Phase 2 pre-call hook**: pending — wire `count_tokens_via_ttok()` into `deepseek_client.py` + `AuditEntry.token_count`
 
 ## Snippets
 
