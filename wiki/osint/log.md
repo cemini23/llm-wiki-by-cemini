@@ -55,6 +55,24 @@ Paper 2 (Regime-Conditioned BO) is the **highest action-value paper of K33**. It
 
 Stub count 308 → **310** (191 → 193 PDF). llm-agents cluster header (125) → (127). 2 new source rows in llm-agents cluster, 1 tool row in `### Tools`, 1 concept row in `### AI safety & alignment` (llm-listwise-alignment), 1 concept row in `### Librarian / knowledge-base tooling` (regime-conditioned-evaluation).
 
+## [2026-05-09] ingest | K34 — Polymarket microstructure anatomy (Dubach 2026)
+
+Source PDF moved from `research to be indexed/` to librarian (`/opt/cemini-bulk/research/2604.24366_polymarket-microstructure-anatomy.pdf`). Wiki source page already existed with full frontmatter, narrative, snippets, and bidirectional concept links. Index entry added to `wiki/index.md`.
+
+### Pages touched (5)
+
+- `wiki/sources/polymarket-microstructure-anatomy-2604.24366.md` — source page (already existed, validated)
+- `wiki/index.md` — added entry in prediction-markets cluster
+- `wiki/concepts/market-microstructure.md` — already links to source
+- `wiki/concepts/polymarket-microstructure-findings.md` — already links to source
+- `wiki/concepts/prediction-market-historical-analysis.md` — already links to source
+
+### No-action items
+
+- All 11 related pages in source frontmatter already have bidirectional `@sources/polymarket-microstructure-anatomy-2604.24366.md` references
+- Companion paper `polymarket-nba-arbitrage-2605.00864.md` already cross-linked
+- Raw PDF archived on librarian; laptop copy can be removed from `research to be indexed/`
+
 ### Cemini next-action
 
 `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` — port the regime-disclosure requirement into `scripts/skill_audit.py` as a new gate that checks brief documents for per-regime CATE disclosure when claims involve evaluation comparison. 1–2 hr effort. Highest-priority post-K33 adoption per the regime-conditioned-evaluation concept page.
