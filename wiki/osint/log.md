@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-05-09] ingest | Donny Market Thoughts + Rare Earth Supply Deficit Thesis
+
+Ingested Donny's multi-topic market research note (5 pages, PDF). Covers 5 equity positions (TEAM, FANG, NET, TOST, REA) + structural macro thesis on heavy rare earth supply deficits.
+- Created `wiki/sources/donny-market-thoughts-2026-05-09.md` — source page (full, 5 ticker positions + macro thesis)
+- Created `wiki/concepts/rare-earth-supply-deficit-thesis.md` — concept page (DyTb supply-demand imbalance)
+- Created `wiki/entities/tickers/team.md` — Atlassian (TEAM) entity stub
+- Created `wiki/entities/tickers/fang.md` — Diamondback Energy (FANG) entity stub
+- Created `wiki/entities/tickers/net.md` — Cloudflare (NET) entity stub
+- Created `wiki/entities/tickers/tost.md` — Toast (TOST) entity stub
+- Created `wiki/entities/tickers/rea.md` — Rare Earths Americas (REA) entity stub (IPO, multi-asset portfolio, Shiloh grade 5× MP Materials)
+- Updated `wiki/index.md` — added 7 rows (1 source + 1 concept + 5 tickers); source count 313→314; uncategorized 18→19
+- Updated `wiki/log.md` — this entry
+- Moved `Donny.PDF` → `cemini-librarian:/opt/cemini-bulk/research/`; removed local copy
+
+Key thesis: China+Myanmar >90% DyTb supply, flat quotas since 2018, April 2025 export restrictions, humanoid robotics demand driver (~70K tpa REO by 2040). Adamas Intelligence forecasts 100%+ price increases by 2040.
+
 ## [2026-05-09] ingest | Polymarket NBA Arbitrage paper 2605.00864
 
 Ingested Cheng/Yang/Zou (UCLA, May 2026) "Arbitrage Analysis in Polymarket NBA Markets" — arXiv 2605.00864. Deep-read all 12 pages + appendices. Companion to Dubach 2024.24366 (microstructure anatomy).

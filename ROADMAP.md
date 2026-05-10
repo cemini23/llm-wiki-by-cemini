@@ -10,21 +10,23 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (end of 2026-05-09)
 
-- **Wiki**: 557 pages indexed (550 + 7 K34 MCP context optimization stack: 2 sources + 4 tool entities + 1 concept), license-pattern catalog stable at 10 modes
+- **Wiki**: 564 pages indexed (550 + 7 K34 MCP stack + 7 Donny ingest: 1 source + 1 concept + 5 ticker stubs), license-pattern catalog stable at 10 modes
 - **K-series**: K33 complete (BLADE listwise alignment + Regime-Conditioned BO evaluation, 2026-05-07). Regime-disclosure gate **SHIPPED** 2026-05-08 — `scripts/skill_audit.py` v0.2 with 7-check regime-disclosure veto gate.
 - **Step 81 — SSHD on Prod**: ✅ COMPLETE (2026-05-09). `openssh-server` installed + hardened `sshd_config` on `cemini-prod`. Verified end-to-end connectively from workspace laptop. Prereq for Step 82. Brief: `briefs/2026-05-09_step81-sshd-prod.md`.
 - **Step 82 — Prod Smoke Test**: PARTIAL PASS (2026-05-09). Conductor pipeline ✅, Stash ✅, Calibration ✅. Redis/EMS ❌ blockers. See `briefs/2026-05-09_step82-production-smoke-test.md`.
-- **Next**: Resolving Redis + EMS blockers before Step 83 (live deployment).
+- **Next**: Resolving Redis + EMS blockers before Step 83 (live deployment). 3 K34 adoption briefs reviewed: 2 GO (polymarket-onchain-data-pipeline, mcp-context-optimization-stack) + 1 CONDITIONAL-GO (sabr-geometry-aware-calibration: audit SABR usage first).
 - **Active prod briefs**: 9 at `cemini-prod:/opt/cemini/briefs/` awaiting prod-side execution (6 from K28-K30 + 3 K31). **No new K33 prod briefs** — K33's adoption is workspace-laptop-side (brief-audit `regime-disclosure` gate + downstream listwise-ranking instrumentation deferred)
 - **Active workspace-laptop briefs**: 3 staged
   - `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` (port 4 wiki-maintenance patterns into `scripts/wiki_lint.py`; Phase 1 ✓ / Phase 2 deferred, bundles with brief-audit-upgrade sprint)
   - `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` — **SHIPPED 2026-05-08** — `scripts/skill_audit.py` v0.2: regime-disclosure veto gate implemented, all 4 test briefs PASS, no false positives on K28-K30 adoption briefs.
-  - `briefs/2026-05-09_mcp-context-optimization-stack.md` — **NEW K34** — 4-layer MCP context optimization stack (lazy-tool + claude-code-router + client optimizations + OpenRouter caching). skill_audit PASS 90/100. Awaiting user GO/NO-GO.
+  - `briefs/2026-05-09_mcp-context-optimization-stack.md` — **NEW K34** — 4-layer MCP context optimization stack (lazy-tool + claude-code-router + client optimizations + OpenRouter caching). skill_audit PASS 90/100. **GO** (2026-05-09). Solves #1 architectural blocker; 80-95% cost reduction. Awaiting scp to prod.
+  - `briefs/2026-05-09_polymarket-onchain-data-pipeline.md` — **NEW K34** — Polymarket on-chain data pipeline (Dubach polydata.onchain integration as Layer 1 harvester). skill_audit PASS 90/100. **GO** (2026-05-09). Single most important data-infrastructure gap. Awaiting scp to prod.
+  - `briefs/2026-05-09_sabr-geometry-aware-calibration.md` — **NEW K34** — SABR GeoResNN calibration (hybrid ML-analytical vol surface). skill_audit PASS 90/100. **CONDITIONAL-GO** (2026-05-09). Discovery brief: audit Cemini SABR usage first; implement only if in use. Awaiting scp to prod.
 - **Deferred prod briefs (with activation triggers)**: 2 (autoresearch + XSKILL Conductor evolution)
 - **Laptop-side K31 adoptions**: ttok 0.3 + git-rewind 1.1.4 INSTALLED 2026-05-06; 2 upstream issues filed against Chronos778/git-rewind ([#1](https://github.com/Chronos778/git-rewind/issues/1) install.sh checksum bug, [#2](https://github.com/Chronos778/git-rewind/issues/2) missing LICENSE file). User adopting **Groq** for rewind LLM backend (free tier).
 - **Monetization-priority stance** (2026-05-06): revenue first, IP-sale exit later-stage. License auto-rejects soften for non-prod-codebase use; Phase-0 audit rigor unchanged. See `~/.claude/projects/.../memory/monetization_priority_2026.md`.
 - **Prod ccd-cli auto-update protection**: `IS_SANDBOX=1` in `/etc/environment` (Option A permanent fix). Applied + verified end-to-end 2026-05-06.
-- **Inbox**: CLEAN (4 files processed 2026-05-09 — 2 docx ingested as K34 + 2 PDF duplicates removed)
+- **Inbox**: CLEAN (5 files processed 2026-05-09 — 2 docx + 1 PDF ingested; 2 PDF duplicates removed)
 
 ## Next — actually pending action
 
@@ -138,6 +140,18 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 | **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
 
 ---
+
+## Done — 2026-05-09 Donny ingest + K34 brief GO/NO-GO review
+
+### Donny Market Thoughts ingest
+- **Source**: Donny.PDF (5 pages, multi-topic market research note), ingested 2026-05-09. 7 wiki pages: 1 source (`donny-market-thoughts-2026-05-09.md`), 1 concept (`rare-earth-supply-deficit-thesis.md`), 5 ticker stubs (TEAM, FANG, NET, TOST, REA).
+- **Key thesis**: Heavy rare earth (DyTb) structural supply deficit — China+Myanmar >90% supply, April 2025 export restrictions, humanoid robotics demand driver (~70K tpa REO by 2040). Adamas Intelligence forecasts 100%+ price increases by 2040.
+- PDF moved to `cemini-librarian:/opt/cemini-bulk/research/Donny.PDF`.
+
+### K34 brief adoption verdicts (3 briefs reviewed)
+- `polymarket-onchain-data-pipeline.md` → **GO**. #1 data-infrastructure gap; every downstream workstream blocked on it. Integrates Dubach's polydata.onchain as Layer 1 harvester.
+- `mcp-context-optimization-stack.md` → **GO**. #1 architectural blocker (MCP eager-loading → 30K-75K tokens). 80-95% cost reduction; all MIT/Apache-2.0.
+- `sabr-geometry-aware-calibration.md` → **CONDITIONAL-GO**. Discovery brief: audit Cemini SABR usage first; implement GeoResNN only if SABR is in use.
 
 ## Done — 2026-05-06 session
 

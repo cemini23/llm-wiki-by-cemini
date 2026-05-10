@@ -15,8 +15,10 @@ updated: 2026-05-09
 ## Relations
 
 - @concepts/market-microstructure.md — volatility surface modeling is a core microstructure primitive; this paper provides ML-enhanced SABR calibration
+- @concepts/cross-venue-arbitrage-pattern.md — accurate vol surface feeds into Cemini's cross-venue arb strategy stack
 - @entities/tools/hftbacktest.md — HFT backtester requires accurate vol surface; SABR correction improves pricing fidelity
 - @sources/scaling-moe-inference-expert-activation-2026.md — fellow arXiv 2604.x paper; both represent ML-for-quant-finance trend
+- @briefs/2026-05-09_sabr-geometry-aware-calibration.md — adoption brief for this paper's GeoResNN architecture
 
 ## Raw Concept
 

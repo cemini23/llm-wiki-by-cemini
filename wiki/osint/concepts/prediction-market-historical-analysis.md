@@ -151,10 +151,11 @@ This concept is the **plumbing** under multiple downstream briefs:
 
 ### Cemini-side action items
 
-1. **No active workstream yet** — wait for the K28+K29+K30 prod briefs to start landing. Once one of them needs a backtest, this becomes the blocker, and the harvester scripts get written.
-2. **License caveat** — sports historical data is the highest-license-risk vertical (per `@entities/tools/klaassen-magnus-elo.md` and `@concepts/cemini-license-posture.md` pattern #4 CC-BY-NC training-data contamination). Polymarket + Kalshi own data are MIT-licensed-equivalent (their public APIs); third-party sports feeds need commercial licensing.
-3. **Cross-venue contract identification is the hard problem** — invest curator time on the contract-mapping table BEFORE writing any cross-venue logic (arb, comparison, etc.). Same problem appears in `@concepts/cross-venue-arbitrage-pattern.md`.
-4. **Don't over-design Layer 5** — the backtest interface should be intentionally simple (event-replay over canonical Parquet files). Resist the urge to build a full backtest framework here; downstream consumers can compose their own backtest logic on top of replay primitives.
+1. **Harvester brief shipped** — `briefs/2026-05-09_polymarket-onchain-data-pipeline.md` covers integration of Dubach's `polydata.onchain` pipeline as Layer 1. This is the primary action item.
+2. **Kalshi equivalent** — `pykalshi` is adopted (K30) but needs its own Layer 1 harvester script (parallel workstream).
+3. **License caveat** — sports historical data is the highest-license-risk vertical (per `@entities/tools/klaassen-magnus-elo.md` and `@concepts/cemini-license-posture.md` pattern #4 CC-BY-NC training-data contamination). Polymarket + Kalshi own data are MIT-licensed-equivalent (their public APIs); third-party sports feeds need commercial licensing.
+4. **Cross-venue contract identification is the hard problem** — invest curator time on the contract-mapping table BEFORE writing any cross-venue logic (arb, comparison, etc.). Same problem appears in `@concepts/cross-venue-arbitrage-pattern.md`.
+5. **Don't over-design Layer 5** — the backtest interface should be intentionally simple (event-replay over canonical Parquet files). Resist the urge to build a full backtest framework here; downstream consumers can compose their own backtest logic on top of replay primitives.
 
 ### What we don't take
 

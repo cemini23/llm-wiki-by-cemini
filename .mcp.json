@@ -13,18 +13,12 @@
       "env": {}
     },
     "prod-mcp": {
-      "type": "streamable-http",
-      "url": "http://localhost:18002/mcp",
-      "headers": {
-        "Accept": "text/event-stream"
-      }
+      "type": "sse",
+      "url": "http://localhost:18002/mcp"
     },
     "librarian-stash": {
-      "type": "streamable-http",
-      "url": "http://localhost:19090/mcp",
-      "headers": {
-        "Accept": "text/event-stream"
-      }
+      "type": "sse",
+      "url": "http://localhost:18080/sse"
     }
   },
   "environments": [

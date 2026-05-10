@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **313 canonical stubs** (194 PDF + 93 docx + 19 md + 5 arxiv-only/deployed). **3** canonical pages absorbed **4** duplicate files. **18** stubs carry quality flags (`needs-review`).
+Total: **314 canonical stubs** (195 PDF + 93 docx + 19 md + 5 arxiv-only/deployed). **3** canonical pages absorbed **4** duplicate files. **18** stubs carry quality flags (`needs-review`).
 
 
 ### rl-marl (103)
@@ -392,7 +392,7 @@ Total: **313 canonical stubs** (194 PDF + 93 docx + 19 md + 5 arxiv-only/deploye
 - [Scaling Multi-Node Mixture-of-Experts Inference Using Expert Activation Patterns (arXiv 2604.23150, Meta / Georgia Tech, 2026)](sources/scaling-moe-inference-expert-activation-2026.md) — Profiling 100K+ traces across DeepSeek-V3, Llama 4, Qwen3. Workload-aware micro-batch grouping + expert placement reduces all-to-all communication 20%, decode latency 6%. Directly relevant to Cemini's MoE inference stack. — `pdf` [+moe-architecture, +distributed-inference]
 - [Merkle Tree Certificate Post-Quantum PKI for Kubernetes and Cloud-Native 5G/B5G Core](sources/crypto-3-4-11.md) — Post-quantum signature schemes such as ML-DSA-65 produce signatures of 3,309 bytes and public keys of 1,952 bytes, which are over 50×larger … — `pdf`
 
-### uncategorized (18)
+### uncategorized (19)
 
 - [151 Trading Strategies (Kakushadze & Serur, 2018)](sources/ssrn-3247865.md) — K25 deep-read: 550+ formulas, 150+ strategies across all asset classes (stocks, options, fixed income, FX, crypto, commodities, volatility, real estate, global macro). Backtesting source code, ~2,000 references, 900+ glossary. SSRN #8 by downloads (121K). Direct strategy catalog for Cemini MAPPO ensemble evaluation. — `pdf`
 - [A Geometry-Aware Residual Correction of Hagan's SABR Implied Volatility Formula (arXiv 2605.06604, Reghai et al., 2026)](sources/sabr-geometry-aware-correction-2605.06604.md) — Hybrid ML-analytical SABR calibration: Hagan formula backbone + neural residual correction using geometry-aware features. R² improves 0.73→0.97 vs naive NN. ~10⁴× speedup over MC. — `pdf` [+quantitative-finance, +sabr, +implied-volatility, +ml-hybrid]
@@ -413,6 +413,7 @@ Total: **313 canonical stubs** (194 PDF + 93 docx + 19 md + 5 arxiv-only/deploye
 - [The Quantum-Cryptographic Co-evolution Ashish Kundu, Ramana Kompella Cisco Research](sources/crypto-5-4-11.md) ⚠ — As quantum computing matures toward the re- alization of Cryptographically Relevant Quantum Computers (CRQC), global cryptographic infrastru… — `pdf`
 - [Uniform optimal-order Wasserstein quantisation Maja Gw´ o´ zd´ z](sources/wasertein-1-4-3.md) ⚠ — We address Steinerberger’s Wasserstein transport problem on the cubeQ= [0,1] d. For everyd≥2, we consider a dyadic digital sequence (x n)⊂Qa… — `pdf`
 - [Counterexamples to an Extremal Conjecture for Random Cycle-Factors (arXiv 2604.26101, Gajjala, NYU Abu Dhabi, 2026)](sources/counterexamples-cycle-factors.md) — Pure combinatorics. Disproves cycle-factor conjecture for all d≥3. Zero workspace relevance; stub only. — `pdf`
+- [Donny — Market Thoughts: TEAM, FANG, NET, TOST, REA (2026-05-09)](sources/donny-market-thoughts-2026-05-09.md) — Multi-topic market research note: 5 equity positions (TEAM, FANG, NET, TOST, REA) + heavy rare earth supply deficit macro thesis. 5 pages. Ingest 2026-05-09. — `pdf`
 
 
 ---
@@ -440,6 +441,7 @@ Six-section institutional template: Business Overview · Competitive Landscape �
 - [The Walt Disney Company (DIS)](entities/tickers/dis.md) — consumer tech — ticker-report, gemini-deep-research
 - [Dogecoin (DOGE)](entities/tickers/doge.md) — crypto native — ticker-report, gemini-deep-research
 - [Ethereum (ETH)](entities/tickers/eth.md) — crypto native — ticker-report, gemini-deep-research
+- [Diamondback Energy (FANG)](entities/tickers/fang.md) — energy / E&P (Donny note 2026-05-09) — market-research
 - [Corning (GLW)](entities/tickers/glw.md) — industrials (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
 - [Alphabet (GOOGL)](entities/tickers/googl.md) — mega cap — ticker-report, gemini-deep-research
 - [Intel (INTC)](entities/tickers/intc.md) — mega cap (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
@@ -448,16 +450,20 @@ Six-section institutional template: Business Overview · Competitive Landscape �
 - [Meta Platforms (META)](entities/tickers/meta.md) — mega cap — ticker-report, gemini-deep-research
 - [Microsoft (MSFT)](entities/tickers/msft.md) — mega cap — ticker-report, gemini-deep-research
 - [Strategy (MSTR)](entities/tickers/mstr.md) — crypto proxy (formerly MicroStrategy) — ticker-report, gemini-deep-research
+- [Cloudflare (NET)](entities/tickers/net.md) — infrastructure / edge AI (Donny note 2026-05-09) — market-research
 - [Netflix (NFLX)](entities/tickers/nflx.md) — consumer tech — ticker-report, gemini-deep-research
 - [Nvidia (NVDA)](entities/tickers/nvda.md) — mega cap — ticker-report, gemini-deep-research
 - [Planet Labs (PL)](entities/tickers/pl.md) — space tech (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
 - [Palantir (PLTR)](entities/tickers/pltr.md) — high beta — ticker-report, gemini-deep-research
 - [Invesco QQQ Trust (QQQ)](entities/tickers/qqq.md) — indices / Nasdaq-100 (indexed 2026-04-27) — ticker-report, gemini-deep-research
+- [Rare Earths Americas (REA)](entities/tickers/rea.md) — mining / critical minerals (Donny note 2026-05-09) — market-research, ipo
 - [Super Micro Computer (SMCI)](entities/tickers/smci.md) — high beta — ticker-report, gemini-deep-research
 - [SoFi Technologies (SOFI)](entities/tickers/sofi.md) — fintech (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
+- [Atlassian (TEAM)](entities/tickers/team.md) — SaaS / enterprise AI (Donny note 2026-05-09) — market-research
 - [Solana (SOL)](entities/tickers/sol.md) — crypto native — ticker-report, gemini-deep-research
 - [SPDR S&P 500 ETF (SPY)](entities/tickers/spy.md) — indices / S&P 500 (indexed 2026-04-27) — ticker-report, gemini-deep-research
 - [Tesla (TSLA)](entities/tickers/tsla.md) — high beta — ticker-report, gemini-deep-research
+- [Toast (TOST)](entities/tickers/tost.md) — fintech / restaurant SaaS (Donny note 2026-05-09) — market-research
 
 ### Platforms & venues
 
@@ -661,6 +667,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 
 ### Trading strategy concepts
 
+- [Rare Earth Supply Deficit Thesis (DyTb)](concepts/rare-earth-supply-deficit-thesis.md) — `[DRAFT 2026-05-09]` Structural supply-demand imbalance in heavy rare earth elements (dysprosium, terbium). China+Myanmar >90% supply; flat quotas since 2018; April 2025 export restrictions. Humanoid robotics demand driver (~70K tpa REO by 2040). Adamas Intelligence forecasts supply gap ~116× Lynas Mt. Weld by 2040. — concept, macro, critical-minerals, rare-earths, investment-thesis
 - [Favorite-longshot bias (FLB)](concepts/favorite-longshot-bias.md) `[T]` — Behavioral bias monetized across Kalshi/Polymarket; AS-logit real, Gumbel + Polymarket cross-venue retracted — concept, prediction-markets
 - [Dispersion trading](concepts/dispersion-trading.md) `[R]` — ~~Short-index-vol/long-constituent-vol; Macro-Weather-GREEN only~~ — **not implemented**. P3 (build only if narrative requires). — concept, options, volatility
 - [Ensemble weather forecasting](concepts/ensemble-weather-forecasting.md) `[T]` — Open-Meteo ingestion real; Gumbel + multi-model ensemble + AS-logit quotes retracted — concept, alt-data, methodology

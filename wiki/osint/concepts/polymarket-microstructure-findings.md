@@ -84,7 +84,7 @@ The eight stylized facts below hold on the full 600-market panel using only the 
 
 ## Cemini Action Items
 
-1. **Integrate replication package** into `scripts/` as the Polymarket historical-data harvester (Layer 1 per prediction-market-historical-analysis.md)
+1. ~~**Integrate replication package** into `scripts/` as the Polymarket historical-data harvester (Layer 1 per prediction-market-historical-analysis.md)~~ → **Shipped**: `briefs/2026-05-09_polymarket-onchain-data-pipeline.md` covers full integration plan.
 2. **Do NOT use public-feed trade direction** for any microstructure measure — always source from on-chain OrderFilled events
 3. **Factor depth decay (SF8) into execution algorithms** — liquidity thins predictably near resolution; time-sensitive orders need earlier placement
 4. **Use maker-diversity metric (SF4) as a liquidity-health signal** — markets with HHI > 0.1 (∼8 or fewer makers) warrant caution on execution
