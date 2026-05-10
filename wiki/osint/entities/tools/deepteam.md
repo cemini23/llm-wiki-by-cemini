@@ -5,12 +5,14 @@ tags: [tool, llm-redteam, security-eval, apache-2-license, defer-tier, owasp-llm
 keywords: [deepteam, confident-ai, llm-jailbreaking, prompt-injection, owasp-top-10-llms-2025, mitre-atlas, nist-ai-rmf, deepseek-redteam, real-time-guardrails]
 related:
   - sources/5-6-links-eval-batch.md
+  - sources/evaluating-links-trading-wiki-stacks.md
   - concepts/cemini-license-posture.md
   - concepts/mitre-atlas-taxonomy.md
+  - concepts/tool-evaluation-framework.md
   - entities/infrastructure/deepseek-api.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-10
 ---
 
 ## Relations

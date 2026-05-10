@@ -1,5 +1,25 @@
 # Wiki Log
 
+## [2026-05-10] ingest | K35 — 4-source evaluation brief batch (55 tools, 1 academic paper)
+
+Full ingest of 4 sources dropped 2026-05-10: 3 commissioned tool-evaluation briefs + 1 SSRN academic paper.
+
+- **Sources (4)**: SSRN 4943355 (climate vulnerability → fiscal risk, Saadaoui et al., Oct 2025) + Project Link Evaluation Brief (13 tools) + Evaluating Links for Trading and Wiki Stacks (27 tools) + Project Link Evaluation Brief 5_10 (15 tools)
+- **Created source pages (4)**: `wiki/sources/ssrn-4943355.md`, `wiki/sources/project-link-evaluation-brief.md`, `wiki/sources/evaluating-links-trading-wiki-stacks.md`, `wiki/sources/project-link-evaluation-brief-5_10.md`
+- **Created entity pages — ADOPT tier (10)**: ARIS, pandas-ta-classic, github-spec-kit, tradingview-mcp, tech-debt-skill, claude-mem, revpdf, codeboarding, polymarket-paper-trader, chaosblade
+- **Created entity pages — STEAL-FROM tier (7)**: deerflow, html-effectiveness-pattern, anthropics-financial-services, browserbase-skills, agentskillos, polybot, growthbook
+- **Created entity pages — DEFER tier (3)**: google-code-wiki, stirling-pdf, flagsmith
+- **Created entity pages — REFERENCE-ONLY tier (5)**: goose-aaif, prediction-market-backtesting, llmfit, claude-managed-agents, public-apis-list
+- **Updated entity pages (1)**: deepteam — added evaluating-links-trading-wiki-stacks + tool-evaluation-framework cross-links
+- **Created concept pages (2)**: tool-evaluation-framework (three-surface methodology common to all briefs), split-panel-jackknife-spj (Nickell bias correction, STATA→Python port planned)
+- **Updated `wiki/index.md`** — added 32 rows (4 sources + 25 tools + 2 concepts + 1 update); source count 314→318; uncategorized 19→23
+- **Cross-wiki routing**: no off-topic content identified for image-gen, seo, or 3d-printing wikis
+- **Moved raw sources** → `cemini-librarian:/opt/cemini-bulk/research/`; removed local copies
+- **Lint**: PASS
+- **Updated `wiki/log.md`** — this entry
+
+55 tools evaluated across three deployment surfaces (prod Hetzner 7GB / Wiki CPX21 4GB / macOS laptop). Rejection patterns: license poison pills (GPL-3.0, AGPL-3.0, PolyForm, Commons Clause) = 20%, K8s dependency = 15%, hardware mismatch = 15%. Clean-room port candidates: SPJ algorithm (STATA→Python), TPE sampling (Optuna), Bradley-Terry ranking (agentskillos).
+
 ## [2026-05-09] adopt | K34 mcp-context-optimization-stack Phase 1 (lazy-tool + claude-code-router)
 
 Workspace-side adoption of the 4-layer MCP context optimization stack per `briefs/2026-05-09_mcp-context-optimization-stack.md` (GO).
