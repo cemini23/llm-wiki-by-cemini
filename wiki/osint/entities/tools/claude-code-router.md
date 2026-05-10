@@ -13,6 +13,10 @@ related:
 maturity: validated
 created: 2026-05-09
 updated: 2026-05-09
+adopted: 2026-05-09
+version: 2.0.0
+repo: https://github.com/musistudio/claude-code-router
+license_verified: MIT
 ---
 
 ## Relations
@@ -90,3 +94,11 @@ JSON config (`~/.claude-code-router/config.json`):
 
 - **cc-switch**: Rust-based alternative that excels at SSE stream repair and hop-by-hop header stripping. Use cc-switch if the primary pain point is streaming compatibility rather than dynamic routing.
 - **lazy-tool**: Handles MCP tool schema bloat at the protocol layer; claude-code-router handles LLM API routing at the transport layer. They operate at different levels and are used together.
+
+## Adoption (2026-05-09)
+
+- **Install**: `npm install -g @musistudio/claude-code-router` — v2.0.0, binary `ccr` at `~/.local/bin/ccr`
+- **Repo**: `github.com/musistudio/claude-code-router` (33.7K stars, MIT) — NOTE: brief originally referenced `1rgs/claude-code-router`; actual repo is `musistudio/claude-code-router`. The `1rgs/claude-code-proxy` exists (3K stars, Python) but is a different tool (Anthropic→OpenAI/Gemini proxy, not OpenRouter caching router).
+- **License**: MIT verified via GitHub API
+- **Stars**: 33,733 — strong community adoption, low abandonment risk
+- **Status**: Installed. Limited utility for current Cemini stack (DeepSeek direct API). Activates if/when switching to OpenRouter for caching + failover.

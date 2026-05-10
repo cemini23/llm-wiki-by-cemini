@@ -13,6 +13,10 @@ related:
 maturity: validated
 created: 2026-05-09
 updated: 2026-05-09
+adopted: 2026-05-09
+version: 1.0.2
+repo: https://github.com/rpgeeganage/lazy-tool
+license_verified: MIT
 ---
 
 ## Relations
@@ -83,3 +87,12 @@ go install github.com/rpgeeganage/lazy-tool/cmd/lazy-tool@latest
 - No built-in LLM routing (unlike Bifrost). Relies on client or external providers for model selection.
 - Proxy passthrough paradigm means the LLM cannot autonomously orchestrate multi-step workflows in a single turn (requires multiple round-trips).
 - Community-maintained project — evaluate long-term maintenance trajectory before production deployment.
+
+## Adoption (2026-05-09)
+
+- **Install**: `curl -sSfL https://raw.githubusercontent.com/rpgeeganage/lazy-tool/main/install.sh | INSTALL_DIR=$HOME/.local/bin sh` — v1.0.2 (ff5bdab) on macOS arm64
+- **Config**: `~/.lazy-tool/config.yaml` with 7 MCP sources (conductor, kb-server, brave-search, playwright, prod-mcp, librarian-stash, stash)
+- **Reindex**: 31 tools indexed from 3 reachable servers; 4 tunnel-dependent servers fail (expected — require SSH tunnels active)
+- **License**: MIT verified via GitHub
+- **Stars**: 20 (single-maintainer — monitor for stagnation)
+- **Status**: Installed + configured; .mcp.json NOT yet switched to lazy-tool proxy (requires tunnel-aware migration)

@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-05-09] adopt | K34 mcp-context-optimization-stack Phase 1 (lazy-tool + claude-code-router)
+
+Workspace-side adoption of the 4-layer MCP context optimization stack per `briefs/2026-05-09_mcp-context-optimization-stack.md` (GO).
+
+- **lazy-tool v1.0.2** installed via install.sh → `~/.local/bin/lazy-tool`. Configured `~/.lazy-tool/config.yaml` with 7 MCP sources. Reindex: 31 tools from conductor (1), kb-server (7), playwright (23). 4 tunnel-dependent sources fail (prod-mcp, librarian-stash, stash, brave-search) — expected when tunnels down.
+- **claude-code-router v2.0.0** installed via `npm install -g @musistudio/claude-code-router` → `~/.local/bin/ccr`. Actual repo is `musistudio/claude-code-router` (33.7K stars, MIT), not `1rgs/claude-code-router` as brief stated. Limited utility for current DeepSeek-direct stack; activates if/when we switch to OpenRouter.
+- Updated `wiki/entities/tools/lazy-tool.md` — adoption verification (v1.0.2, MIT, 20 stars)
+- Updated `wiki/entities/tools/claude-code-router.md` — adoption verification (v2.0.0, MIT, 33.7K stars) + repo correction
+- `.mcp.json` NOT yet switched to lazy-tool proxy — requires tunnel-aware migration strategy
+
+## [2026-05-09] adopt | Polymarket onchain data pipeline — harvester script
+
+Created `scripts/harvest_polymarket_history.py` — Layer 1 harvester wrapper per `briefs/2026-05-09_polymarket-onchain-data-pipeline.md` (GO). Wraps Dubach's `polydata.onchain` package (cloned to `/tmp/polymarket-microstructure/`). Features: checkpoint/resume, configurable block ranges, rate-limit-safe chunking, Parquet output. Requires Python >=3.11 (prod-side; laptop has 3.9.6). Staged for prod deployment.
+
 ## [2026-05-09] ingest | Donny Market Thoughts + Rare Earth Supply Deficit Thesis
 
 Ingested Donny's multi-topic market research note (5 pages, PDF). Covers 5 equity positions (TEAM, FANG, NET, TOST, REA) + structural macro thesis on heavy rare earth supply deficits.
