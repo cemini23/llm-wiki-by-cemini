@@ -2,10 +2,13 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (end of 2026-05-10 session — K35 ingest complete)
+## Position (end of 2026-05-10 session — K35 complete + cross-wiki paths portable + 4 prod briefs staged)
 
 - **K-series**: K35 ingest complete. 4-source evaluation brief batch: 55 tools + 1 academic paper (SSRN 4943355). 32 wiki pages created/updated: 4 sources + 25 tools (10 Adopt / 7 Steal-from / 3 Defer / 5 Reference-only) + 2 concepts + 1 updated. Three-surface evaluation methodology codified in `concepts/tool-evaluation-framework.md`. SPJ bias-correction extracted from SSRN paper.
-- **Wiki**: 607 pages indexed. Lint: PASS (no new errors; bidirectional gaps for tool-evaluation-framework are standard hub-page pattern).
+- **Cross-wiki paths**: All 4 CLAUDE.md cross-wiki alias tables converted from absolute → relative paths (portable between machines). `3D printing/CLAUDE.md` already had relative paths.
+- **SEO wiki tool page**: Created `entities/tools/claude-code-tool-stack.md` in SEO wiki — distills lazy-tool, claude-code-router, claude-mem, ttok + MCP context optimization for friend new to AI.
+- **4 new K35 prod briefs**: tradingview-mcp-adoption (GO), pandas-ta-classic-adoption (CONDITIONAL-GO), polymarket-paper-trader-adoption (GO), chaosblade-adoption (GO).
+- **Wiki**: 607 pages indexed. Lint: PASS.
 - **K35 Adopt priorities**: tradingview-mcp (#1 highest-value), pandas-ta-classic, polymarket-paper-trader, chaosblade, ARIS, github-spec-kit, tech-debt-skill, claude-mem, revpdf, codeboarding.
 - **K35 Steal-from extraction candidates**: SPJ algorithm (STATA→Python), TPE sampling methodology, Bradley-Terry ranking (agentskillos), skill-as-file architecture (deerflow), HTML effectiveness pattern.
 - **Raw sources moved** → `cemini-librarian:/opt/cemini-bulk/research/`; local copies removed.
@@ -44,7 +47,7 @@ K32+K33 surfaced 4 STEAL-FROM/concept-driven upgrades that all touch `scripts/sk
 
 Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr) OR ship sequentially.
 
-### 12 active prod briefs at `cemini-prod:/opt/cemini/briefs/` (10 existing + 2 new awaiting staging)
+### 16 active prod briefs at `cemini-prod:/opt/cemini/briefs/` (12 existing + 4 new K35 Adopt)
 
 | Brief | What it ships |
 |-------|---------------|
@@ -57,10 +60,14 @@ Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr
 | `2026-05-06_hftbacktest-adoption.md` (K31) | Microsecond-tick HFT backtester |
 | `2026-05-06_guidance-ai-adoption.md` (K31) | Microsoft structured-generation library |
 | `2026-05-06_ttok-prod-install.md` (K31) | ttok Pipfile addition + pre-call audit hook |
-| **`2026-05-09_step81-sshd-prod.md`** (NEW) | OpenSSH hardening on `cemini-prod` — **COMPLETE** ✅ |
-| *`2026-05-09_polymarket-onchain-data-pipeline.md`* (NEW) | Polymarket on-chain data pipeline — **GO** ✅ |
-| *`2026-05-09_sabr-geometry-aware-calibration.md`* (NEW) | SABR GeoResNN calibration — **CONDITIONAL-GO** (audit first) |
-| *`2026-05-09_mcp-context-optimization-stack.md`* (NEW K34) | 4-layer MCP optimization (lazy-tool + claude-code-router + client opts + OpenRouter caching) — **GO** ✅ |
+| **`2026-05-09_step81-sshd-prod.md`** | OpenSSH hardening on `cemini-prod` — **COMPLETE** ✅ |
+| *`2026-05-09_polymarket-onchain-data-pipeline.md`* | Polymarket on-chain data pipeline — **GO** ✅ |
+| *`2026-05-09_sabr-geometry-aware-calibration.md`* | SABR GeoResNN calibration — **CONDITIONAL-GO** (audit first) |
+| *`2026-05-09_mcp-context-optimization-stack.md`* (K34) | 4-layer MCP optimization (lazy-tool + claude-code-router + client opts + OpenRouter caching) — **GO** ✅ |
+| **`2026-05-10_tradingview-mcp-adoption.md`** (K35 NEW) | TradingView MCP sidecar — 130+ technical analysis tools → LangGraph — **GO** (license pending) |
+| **`2026-05-10_pandas-ta-classic-adoption.md`** (K35 NEW) | 252 indicators + 62 candlestick patterns → orchestrator calc nodes — **CONDITIONAL-GO** (license + bridge latency) |
+| **`2026-05-10_polymarket-paper-trader-adoption.md`** (K35 NEW) | 26 MCP tools, paper trading sandbox for LLM strategy forward-testing — **GO** |
+| **`2026-05-10_chaosblade-adoption.md`** (K35 NEW) | Docker Compose chaos engineering, time-gated to maintenance windows — **GO** |
 
 ### 2 deferred-with-triggers prod briefs (unchanged)
 
