@@ -19,6 +19,14 @@
     "librarian-stash": {
       "type": "sse",
       "url": "http://localhost:18080/sse"
+    },
+    "lazy-tool": {
+      "type": "stdio",
+      "command": "/Users/claudiobarone/.local/bin/lazy-tool",
+      "args": ["--config", "/Users/claudiobarone/.lazy-tool/config.yaml", "serve"],
+      "env": {
+        "LAZY_TOOL_CONFIG": "/Users/claudiobarone/.lazy-tool/config.yaml"
+      }
     }
   },
   "environments": [
@@ -35,6 +43,11 @@
       "name": "librarian",
       "description": "Cemini librarian (Hetzner 5.161.179.207) — requires SSH tunnel first: cemini-tunnel open librarian",
       "mcpServers": ["kb-server", "librarian-stash"]
+    },
+    {
+      "name": "lazy",
+      "description": "lazy-tool MCP proxy — 5 meta-tools replacing 150+ direct schemas. Run 'lazy-tool reindex' after opening tunnels to refresh catalog.",
+      "mcpServers": ["lazy-tool"]
     }
   ]
 }
