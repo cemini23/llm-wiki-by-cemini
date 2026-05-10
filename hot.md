@@ -2,14 +2,16 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (end of 2026-05-09 session)
+## Position (end of 2026-05-10 session — K35 ingest complete)
 
-- **K-series**: K34 ingest complete (Dubach microstructure + LeWorldModel + SABR geo-correction + MCP context optimization stack). MCP context optimization adoption brief staged (PASS 90/100).
-- **Step 81**: ✅ sshd installed + hardened on `cemini-prod` (2026-05-09). Brief + wiki log entry created.
-- **Step 82**: PARTIAL PASS (2026-05-09) — Conductor pipeline ✅, Stash ✅, Calibration ✅. Redis/EMS ❌. See `briefs/2026-05-09_step82-production-smoke-test.md`.
-- **Wiki**: 557 pages indexed (550 + 7 K34 MCP stack: 2 sources + 4 tool entities + 1 concept), license-pattern catalog stable at 10 modes.
-- **Briefs created today**: `polymarket-onchain-data-pipeline.md` (PASS 90/100) + `sabr-geometry-aware-calibration.md` (PASS 90/100) + `mcp-context-optimization-stack.md` (PASS 90/100) — all awaiting user GO/NO-GO.
-- **Inbox**: CLEAN (4 files processed — 2 docx ingested + 2 PDF duplicates removed).
+- **K-series**: K35 ingest complete. 4-source evaluation brief batch: 55 tools + 1 academic paper (SSRN 4943355). 32 wiki pages created/updated: 4 sources + 25 tools (10 Adopt / 7 Steal-from / 3 Defer / 5 Reference-only) + 2 concepts + 1 updated. Three-surface evaluation methodology codified in `concepts/tool-evaluation-framework.md`. SPJ bias-correction extracted from SSRN paper.
+- **Wiki**: 607 pages indexed. Lint: PASS (no new errors; bidirectional gaps for tool-evaluation-framework are standard hub-page pattern).
+- **K35 Adopt priorities**: tradingview-mcp (#1 highest-value), pandas-ta-classic, polymarket-paper-trader, chaosblade, ARIS, github-spec-kit, tech-debt-skill, claude-mem, revpdf, codeboarding.
+- **K35 Steal-from extraction candidates**: SPJ algorithm (STATA→Python), TPE sampling methodology, Bradley-Terry ranking (agentskillos), skill-as-file architecture (deerflow), HTML effectiveness pattern.
+- **Raw sources moved** → `cemini-librarian:/opt/cemini-bulk/research/`; local copies removed.
+- **Inbox**: CLEAN.
+- **Step 81**: ✅ sshd installed + hardened on `cemini-prod`.
+- **Step 82**: PARTIAL PASS — Conductor pipeline ✅, Stash ✅, Calibration ✅. Redis/EMS ❌.
 
 ## Monetization-priority directive (2026-05-06)
 
@@ -56,9 +58,9 @@ Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr
 | `2026-05-06_guidance-ai-adoption.md` (K31) | Microsoft structured-generation library |
 | `2026-05-06_ttok-prod-install.md` (K31) | ttok Pipfile addition + pre-call audit hook |
 | **`2026-05-09_step81-sshd-prod.md`** (NEW) | OpenSSH hardening on `cemini-prod` — **COMPLETE** ✅ |
-| *`2026-05-09_polymarket-onchain-data-pipeline.md`* (NEW) | Polymarket on-chain data pipeline — **AWAITING GO** |
-| *`2026-05-09_sabr-geometry-aware-calibration.md`* (NEW) | SABR GeoResNN calibration — **AWAITING SABR AUDIT** |
-| *`2026-05-09_mcp-context-optimization-stack.md`* (NEW K34) | 4-layer MCP optimization (lazy-tool + claude-code-router + client opts + OpenRouter caching). PASS 90/100. — **AWAITING GO** |
+| *`2026-05-09_polymarket-onchain-data-pipeline.md`* (NEW) | Polymarket on-chain data pipeline — **GO** ✅ |
+| *`2026-05-09_sabr-geometry-aware-calibration.md`* (NEW) | SABR GeoResNN calibration — **CONDITIONAL-GO** (audit first) |
+| *`2026-05-09_mcp-context-optimization-stack.md`* (NEW K34) | 4-layer MCP optimization (lazy-tool + claude-code-router + client opts + OpenRouter caching) — **GO** ✅ |
 
 ### 2 deferred-with-triggers prod briefs (unchanged)
 
@@ -78,7 +80,7 @@ Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr
 - **Tier 2 arXiv sweep** — last 2026-05-01; due ~2026-05-08 per 7-day cadence.
 - **Storage compaction** — disk 88% full; market-dataset Parquet conversion + research-corpus SQLite FTS index.
 
-## Key file locations (end of 2026-05-09)
+## Key file locations (end of 2026-05-10)
 
 - ROADMAP: `/Users/claudiobarone/Desktop/OSINT WORKSPACE/ROADMAP.md`
 - log: `/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki/log.md`

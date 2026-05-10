@@ -8,10 +8,11 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
-## Current state (end of 2026-05-09)
+## Current state (end of 2026-05-10)
 
-- **Wiki**: 564 pages indexed (550 + 7 K34 MCP stack + 7 Donny ingest: 1 source + 1 concept + 5 ticker stubs), license-pattern catalog stable at 10 modes
-- **K-series**: K33 complete (BLADE listwise alignment + Regime-Conditioned BO evaluation, 2026-05-07). Regime-disclosure gate **SHIPPED** 2026-05-08 — `scripts/skill_audit.py` v0.2 with 7-check regime-disclosure veto gate.
+- **Wiki**: 607 pages indexed (564 + 32 K35 4-source eval batch + 11 misc from prior ingest). K35 adds 25 tool entities + 2 concepts (tool-evaluation-framework, SPJ) + 4 sources. 55 tools evaluated across 3 deployment surfaces.
+- **K-series**: K35 complete (4-source evaluation brief batch — 55 tools, 1 academic paper). Three-surface evaluation methodology codified. Verdict distribution: 10 Adopt, 9 Steal-from, 3 Defer, 5 Reference-only, 25 Reject, 4 Unavailable.
+- **Inbox**: CLEAN (4 sources ingested + moved to librarian 2026-05-10)
 - **Step 81 — SSHD on Prod**: ✅ COMPLETE (2026-05-09). `openssh-server` installed + hardened `sshd_config` on `cemini-prod`. Verified end-to-end connectively from workspace laptop. Prereq for Step 82. Brief: `briefs/2026-05-09_step81-sshd-prod.md`.
 - **Step 82 — Prod Smoke Test**: PARTIAL PASS (2026-05-09). Conductor pipeline ✅, Stash ✅, Calibration ✅. Redis/EMS ❌ blockers. See `briefs/2026-05-09_step82-production-smoke-test.md`.
 - **Next**: Resolving Redis + EMS blockers before Step 83 (live deployment). 3 K34 adoption briefs reviewed: 2 GO (polymarket-onchain-data-pipeline, mcp-context-optimization-stack) + 1 CONDITIONAL-GO (sabr-geometry-aware-calibration: audit SABR usage first).
@@ -26,13 +27,13 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 - **Laptop-side K31 adoptions**: ttok 0.3 + git-rewind 1.1.4 INSTALLED 2026-05-06; 2 upstream issues filed against Chronos778/git-rewind ([#1](https://github.com/Chronos778/git-rewind/issues/1) install.sh checksum bug, [#2](https://github.com/Chronos778/git-rewind/issues/2) missing LICENSE file). User adopting **Groq** for rewind LLM backend (free tier).
 - **Monetization-priority stance** (2026-05-06): revenue first, IP-sale exit later-stage. License auto-rejects soften for non-prod-codebase use; Phase-0 audit rigor unchanged. See `~/.claude/projects/.../memory/monetization_priority_2026.md`.
 - **Prod ccd-cli auto-update protection**: `IS_SANDBOX=1` in `/etc/environment` (Option A permanent fix). Applied + verified end-to-end 2026-05-06.
-- **Inbox**: CLEAN (5 files processed 2026-05-09 — 2 docx + 1 PDF ingested; 2 PDF duplicates removed)
+- **Inbox**: CLEAN (4 sources ingested + moved to librarian 2026-05-10)
 
 ## Next — actually pending action
 
-K33 ingest + regime-disclosure gate SHIPPED 2026-05-08. No new prod-side queue additions.
+K35 ingest complete 2026-05-10. 10 Adopt tools identified; adoption briefs pending for priority items (tradingview-mcp #1, pandas-ta-classic, polymarket-paper-trader, chaosblade).
 
-### 0 — Workspace-laptop actionable (K32 + K33)
+### 0 — Workspace-laptop actionable (K32 + K33 + K35)
 
 | Brief | What it ships | Status |
 |-------|---------------|--------|
