@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-05-10] audit | Phase-0 verifications for 3 K35 CONDITIONAL-GO briefs — all upgraded to GO
+
+Phase-0 audits dispatched in parallel (3 Explore subagents) against the workspace-laptop CONDITIONAL-GO items from the K35 brief batch. All three cleared.
+
+- **claude-mem**: Apache-2.0 (confirmed via LICENSE + `package.json`), 74,494 ★, last commit 2026-05-10 (active daily), 40 open issues. Critical failure-mode gate **PASSED**: `CLAUDE_MEM_SEMANTIC_INJECT_LIMIT` env var caps SessionStart top-N injection at 5 observations by default (set in `/src/shared/SettingsDefaultsManager.ts:122`). Local-only storage; no telemetry; `<private>` tags strip sensitive content. Install: `npx claude-mem install` or `/plugin marketplace add thedotmack/claude-mem`. **Verdict: GO.**
+- **github-spec-kit**: MIT (confirmed via LICENSE + `pyproject.toml`), 95,247 ★, last commit 2026-05-08, latest release v0.8.7. Claude Code integration ships upstream in `src/specify_cli/integrations/claude/` — `specify init --integration claude` scaffolds `~/.claude/skills/speckit-*.md` slash commands. **Zero wrapper code required** (the brief originally budgeted 2-3 hr for wrapper development). PyPI package is `specify-cli` (not `spec-kit`). **Verdict: GO.** Steal-from candidates surfaced: `templates/spec-template.md` PRD-with-P1/P2/P3 format, `templates/plan-template.md` architectural-decision capture, `templates/tasks-template.md` `[P]`-parallelization markers.
+- **codeboarding**: MIT (confirmed via LICENSE + `pyproject.toml`), 1,458 ★, last commit 2026-05-07, latest release v0.11.0 (Beta). Node 20.18.1 pinned and auto-bootstrapped via `nodeenv` into `~/.codeboarding/servers/nodeenv/` if missing from PATH — isolates from system NVM. macOS CI matrix passing for Apple Silicon + Intel. LSP coverage: Python, TypeScript, JavaScript, PHP, Java, Go, Rust. Output license: generated artifacts inherit user repo license (no IP lock-in). **Verdict: GO.**
+- **Updated**: 3 briefs (`claude-mem-adoption.md`, `github-spec-kit-adoption.md`, `codeboarding-adoption.md`), 3 entity pages (`tools/claude-mem.md`, `tools/github-spec-kit.md`, `tools/codeboarding.md`), `ROADMAP.md`, `hot.md`. All 3 briefs re-audit PASS 90/100.
+
 ## [2026-05-10] briefs | K35 Adopt-tier workspace-laptop brief batch (6 briefs, 10/10 K35 Adopt queue complete)
 
 Drafted the 6 remaining K35 Adopt-tier briefs, all workspace-laptop targets (not prod). Completes K35 Adopt brief queue (10 of 10 staged).

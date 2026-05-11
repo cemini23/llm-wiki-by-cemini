@@ -19,8 +19,12 @@ updated: 2026-05-10
 CodeBoarding combines deterministic static analysis via Language Server Protocols (LSP) with contextual LLM reasoning to auto-generate interactive architecture diagrams and documentation from multi-language repositories.
 
 - **Repo**: `github.com/CodeBoarding/CodeBoarding`
-- **License**: To verify
-- **Stack**: Python 3.12+, Node.js (for LSP binaries), installable via `pipx`
+- **License**: MIT [VERIFIED 2026-05-10 via Phase-0 audit]
+- **Stack**: Python 3.12+, Node.js v20.18.1 (auto-bootstrapped via `nodeenv`), installable via `pipx install codeboarding`
+- **Maturity**: 1,458 ★, last commit 2026-05-07, latest release v0.11.0 (Beta)
+- **LSP coverage**: Python, TypeScript, JavaScript, PHP (npm), Java (JDTLS), Go (gopls), Rust (rust-analyzer)
+- **macOS compat**: CI matrix passing for Apple Silicon + Intel; Node 20.18.1 auto-installed to `~/.codeboarding/servers/nodeenv/` if absent
+- **Output license**: generated diagrams + Markdown inherit user repo license; no output-licensing lock-in
 
 ## Narrative
 
@@ -34,7 +38,9 @@ CodeBoarding ingests massive multi-language software repositories and produces i
 
 ### Risks
 
-- **Node.js dependency**: Despite being Python 3.12+, it requires Node.js runtimes for certain LSP binaries. NVM version management fractures may break the toolchain.
+- **Node.js dependency**: resolved by Phase-0 audit — Node 20.18.1 pinned and auto-bootstrapped via `nodeenv` into `~/.codeboarding/servers/nodeenv/`, isolated from system NVM. macOS CI matrix verified.
+- **Beta-release maturity**: v0.11.0 ships as Beta; API + output format may shift. Pin to specific commit at install; re-verify schema at quarterly cadence.
+- **LLM hallucination in semantic layer**: residual risk — human-triage generated artifacts before wiki upload; keep deterministic structural outputs only.
 
 ### Cemini significance
 

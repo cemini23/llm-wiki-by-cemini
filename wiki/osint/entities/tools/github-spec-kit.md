@@ -19,8 +19,10 @@ updated: 2026-05-10
 Spec Kit is GitHub's CLI toolkit for Spec-Driven Development (SDD) — a methodology that inverts the traditional development hierarchy by treating structured specifications as the source of truth, with code generated from specs.
 
 - **Repo**: `github.com/github/spec-kit`
-- **License**: To verify (GitHub project — likely MIT or Apache-2.0)
-- **Stack**: CLI tool, installable via `uv tool install`
+- **License**: MIT [VERIFIED 2026-05-10 via Phase-0 audit]
+- **Stack**: CLI tool (PyPI package: `specify-cli`), installable via `pip install specify-cli` or `uv tool install specify-cli`
+- **Maturity**: 95,247 ★, last commit 2026-05-08, latest release v0.8.7 (2026-05-07)
+- **Claude Code integration**: ships upstream in `src/specify_cli/integrations/claude/`; `specify init --integration claude` scaffolds `~/.claude/skills/speckit-*.md` slash commands. No wrapper code required.
 
 ## Narrative
 
@@ -34,8 +36,8 @@ Spec Kit enforces a spec-first workflow: write structured specification → vali
 
 ### Risks
 
-- **Ecosystem alignment**: Documentation heavily indexes on GitHub Copilot integrations (`/speckit.specify` slash commands). Translating this workflow to Claude Code may require custom system-prompt wrappers to ensure behavioral parity.
-- **Bus factor**: GitHub-maintained project but the SDD methodology is opinionated and may not have broad community adoption.
+- **Ecosystem alignment**: resolved by Phase-0 audit — Claude Code integration ships upstream (`src/specify_cli/integrations/claude/`). Slash commands materialize as Markdown skill files; no wrapper required.
+- **Bus factor**: low — GitHub-org owned, 95,247 stars, release v0.8.7 on 2026-05-07. Pin to release tag at install.
 
 ### Cemini significance
 
