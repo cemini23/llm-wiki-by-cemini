@@ -6,7 +6,7 @@ Clean-room re-implementation of the MedSkillAudit veto-gate framework
 domain to financial-research / Cemini brief validation.
 
 Two phases:
-  STATIC (40% of total score, fully implemented v0.2):
+  STATIC (100% of static score, fully implemented v0.3 — 10 checks):
     1. Required sections present  ── must have ## Target, ## Summary, ## Sources
     2. Cross-link resolution      ── @path/to/page.md must point to a real wiki page
     3. Citation tag well-formedness ── [Source: ...] / [Sources: ...] tags parse
@@ -14,8 +14,11 @@ Two phases:
     5. Prose-quality heuristics   ── unauthorized emoji, TODO/FIXME markers
     6. Frontmatter (if present)   ── valid YAML-style front block
     7. Regime-disclosure gate     ── evaluation-comparison claims must disclose regime variables (K33)
+    8. Brief completeness         ── risks/phase/go-nogo/verdict/license checklist (K36 academic-paper-skills port)
+    9. Risk discipline            ── Risks & mitigations depth: severity column, mitigation column, ≥2 rows (K36)
+   10. Phasing                    ── Phase 1 minimum; Phase 2/3 + success criteria earn full credit (K36)
 
-  DYNAMIC (60% of total score, deferred to v0.3):
+  DYNAMIC (deferred — LLM-as-judge tier; pending _llm_retry.py + DeepSeek budget):
     Requires LLM API call against a sandboxed Conductor / DeepSeek endpoint.
     Tests reproducibility, schema-compliance, hallucinated-citation detection.
 
@@ -389,6 +392,258 @@ def check_regime_disclosure(text: str) -> CheckResult:
     )
 
 
+# -------------------- peer-review framework (K32 academic-paper-skills) ------
+# Three new static checks ported from lishix520/academic-paper-skills (MIT)
+# final_evaluation.py 7-dimension / completeness-checklist framework, translated
+# to the Cemini adoption-brief shape. The three new checks together consume the
+# 0.10 weight headroom left by the v0.2 check set.
+
+PHASE_SECTION_RE = re.compile(r"^#{2,3}\s+Phase\s*\d", re.MULTILINE | re.IGNORECASE)
+RISK_SECTION_TITLES = (
+    "Risks", "Risks & mitigations", "Risks and mitigations", "Risk", "Risk assessment",
+    "Risks and gating conditions", "Risks & gating conditions",
+)
+LICENSE_SECTION_TITLES = ("License", "License posture", "Licensing", "License & IP")
+ARCHITECTURE_SECTION_TITLES = ("Architecture", "Design", "System architecture", "Integration architecture")
+VERDICT_LINE_RE = re.compile(r"\*\*(GO|NO-GO|CONDITIONAL-?GO)\*\*", re.IGNORECASE)
+SUCCESS_CRITERIA_RE = re.compile(
+    r"^#{2,3}\s+(Success criteria|Triggers|GO criteria|Acceptance criteria|Promotion criteria|Done when)",
+    re.MULTILINE | re.IGNORECASE,
+)
+
+
+def _is_adoption_brief(text: str, target: str) -> bool:
+    """Heuristic gate: is this an adoption-decision brief, or an ops/research one?
+    Adoption-class new-checks (completeness, risk_discipline, phasing) apply only
+    to adoption briefs; ops/research briefs PASS with N/A."""
+    name = Path(target).name.lower()
+    if "adoption" in name or "prod-adoption" in name:
+        return True
+    if PHASE_SECTION_RE.search(text):
+        return True
+    if VERDICT_LINE_RE.search(text):
+        return True
+    return False
+
+
+def _section_title_match(sections: list[str], candidates: tuple[str, ...]) -> bool:
+    """Match section title by prefix (case-insensitive). 'Phase 1 (init)' matches 'Phase 1'."""
+    candidates_lower = tuple(c.lower() for c in candidates)
+    for s in sections:
+        s_lower = s.lower()
+        for c in candidates_lower:
+            if s_lower == c or s_lower.startswith(c + " ") or s_lower.startswith(c + "—") or s_lower.startswith(c + " —"):
+                return True
+    return False
+
+
+def _section_body(text: str, title_candidates: tuple[str, ...]) -> str | None:
+    """Return the body text of the first ## section whose title matches any
+    candidate (case-insensitive, exact match on header text). None if absent."""
+    pattern = re.compile(
+        r"^##\s+(" + "|".join(re.escape(t) for t in title_candidates) + r")\s*$",
+        re.MULTILINE | re.IGNORECASE,
+    )
+    m = pattern.search(text)
+    if not m:
+        return None
+    start = m.end()
+    next_section = re.search(r"^##\s+", text[start:], re.MULTILINE)
+    end = start + next_section.start() if next_section else len(text)
+    return text[start:end]
+
+
+def check_brief_completeness(text: str, sections: list[str], target: str) -> CheckResult:
+    """Completeness-checklist analog (K32 academic-paper-skills final_evaluation).
+    Five required structural items for a well-formed adoption brief.
+    Weight 0.05; partial credit at 1pt per item. Ops/research briefs skip with full credit."""
+    if not _is_adoption_brief(text, target):
+        return CheckResult(
+            name="brief_completeness",
+            severity="pass",
+            score_weight=0.05,
+            score_earned=0.05,
+            detail="N/A — not an adoption-decision brief; ops/research briefs exempt",
+        )
+
+    items = {
+        "risks_section": _section_title_match(sections, RISK_SECTION_TITLES),
+        "phase_section": bool(PHASE_SECTION_RE.search(text)),
+        "architecture_section": _section_title_match(sections, ARCHITECTURE_SECTION_TITLES),
+        "verdict_line": bool(VERDICT_LINE_RE.search(text)),
+        "license_section": _section_title_match(sections, LICENSE_SECTION_TITLES),
+    }
+    present = sum(items.values())
+    missing = sorted(k for k, v in items.items() if not v)
+    score_earned = round((present / 5) * 0.05, 3)
+    if present == 5:
+        return CheckResult(
+            name="brief_completeness",
+            severity="pass",
+            score_weight=0.05,
+            score_earned=0.05,
+            detail="All 5 completeness items present (risks/phase/architecture/verdict/license)",
+        )
+    return CheckResult(
+        name="brief_completeness",
+        severity="warn",
+        score_weight=0.05,
+        score_earned=score_earned,
+        detail=f"{present}/5 completeness items present; missing: {missing}",
+        evidence=missing,
+    )
+
+
+def check_risk_discipline(text: str, target: str) -> CheckResult:
+    """Methodological-rigor analog (K32 academic-paper-skills, dim 5). For an
+    adoption brief, methodological rigor is the depth of the Risks & mitigations
+    analysis. Weight 0.03. Ops/research briefs skip with full credit."""
+    if not _is_adoption_brief(text, target):
+        return CheckResult(
+            name="risk_discipline",
+            severity="pass",
+            score_weight=0.03,
+            score_earned=0.03,
+            detail="N/A — not an adoption-decision brief; ops/research briefs exempt",
+        )
+
+    body = _section_body(text, RISK_SECTION_TITLES)
+    if body is None:
+        return CheckResult(
+            name="risk_discipline",
+            severity="warn",
+            score_weight=0.03,
+            score_earned=0.0,
+            detail="No Risks & mitigations section found",
+        )
+
+    table_lines = [ln for ln in body.splitlines() if ln.strip().startswith("|") and ln.strip().endswith("|")]
+    if len(table_lines) < 3:
+        # No table — check for bullet-list format. Top-level bullets with bold prefix
+        # like `- **Risk name**:` count as structured risk items (partial credit).
+        bullet_re = re.compile(r"^-\s+\*\*[^*]+\*\*\s*[:—\-]", re.MULTILINE)
+        bullets = bullet_re.findall(body)
+        if len(bullets) >= 2:
+            return CheckResult(
+                name="risk_discipline",
+                severity="warn",
+                score_weight=0.03,
+                score_earned=0.02,
+                detail=f"{len(bullets)} risk bullets (bold-prefix format; table format earns full credit)",
+            )
+        return CheckResult(
+            name="risk_discipline",
+            severity="warn",
+            score_weight=0.03,
+            score_earned=0.01,
+            detail=f"Risks section present but no parseable table or structured bullets",
+        )
+
+    header = table_lines[0].lower()
+    has_severity = "severity" in header
+    has_mitigation = "mitigation" in header or "mitigations" in header
+    rows = table_lines[2:]  # skip header + separator
+    risk_count = len(rows)
+
+    empty_mitigations = 0
+    if has_mitigation:
+        for r in rows:
+            cells = [c.strip() for c in r.strip("|").split("|")]
+            if cells and not cells[-1]:
+                empty_mitigations += 1
+
+    score = 0.03
+    issues = []
+    if not has_severity:
+        score -= 0.01
+        issues.append("no Severity column")
+    if not has_mitigation:
+        score -= 0.01
+        issues.append("no Mitigation column")
+    if risk_count < 2:
+        score -= 0.005
+        issues.append(f"only {risk_count} risk row(s) (expected ≥2)")
+    if empty_mitigations > 0:
+        score -= 0.005
+        issues.append(f"{empty_mitigations} risk row(s) with empty mitigation")
+    score = max(0.0, round(score, 3))
+
+    if not issues:
+        return CheckResult(
+            name="risk_discipline",
+            severity="pass",
+            score_weight=0.03,
+            score_earned=0.03,
+            detail=f"{risk_count} risk rows with Severity + Mitigation columns, all populated",
+        )
+    return CheckResult(
+        name="risk_discipline",
+        severity="warn",
+        score_weight=0.03,
+        score_earned=score,
+        detail=f"{risk_count} risk rows; issues: {issues}",
+        evidence=issues,
+    )
+
+
+def check_phasing(text: str, sections: list[str], target: str) -> CheckResult:
+    """Structure/organization analog (K32 academic-paper-skills, dim 6). Brief
+    must scope Phase 1 minimum; Phase 2/3 + success criteria earn full credit.
+    Weight 0.02. Ops/research briefs skip with full credit."""
+    if not _is_adoption_brief(text, target):
+        return CheckResult(
+            name="phasing",
+            severity="pass",
+            score_weight=0.02,
+            score_earned=0.02,
+            detail="N/A — not an adoption-decision brief; ops/research briefs exempt",
+        )
+
+    phase_matches = PHASE_SECTION_RE.findall(text)
+    phase_count = len(phase_matches)
+    has_success_criteria = bool(SUCCESS_CRITERIA_RE.search(text))
+
+    if phase_count == 0:
+        return CheckResult(
+            name="phasing",
+            severity="warn",
+            score_weight=0.02,
+            score_earned=0.0,
+            detail="No Phase 1/2/3 scoping sections found",
+        )
+    if phase_count >= 2 and has_success_criteria:
+        return CheckResult(
+            name="phasing",
+            severity="pass",
+            score_weight=0.02,
+            score_earned=0.02,
+            detail=f"{phase_count} Phase sections + explicit success/promotion criteria",
+        )
+    if phase_count >= 2:
+        return CheckResult(
+            name="phasing",
+            severity="pass",
+            score_weight=0.02,
+            score_earned=0.015,
+            detail=f"{phase_count} Phase sections (no explicit success/promotion criteria section)",
+        )
+    if has_success_criteria:
+        return CheckResult(
+            name="phasing",
+            severity="warn",
+            score_weight=0.02,
+            score_earned=0.01,
+            detail=f"Only {phase_count} Phase section (consider Phase 2/3 scoping)",
+        )
+    return CheckResult(
+        name="phasing",
+        severity="warn",
+        score_weight=0.02,
+        score_earned=0.005,
+        detail=f"Only {phase_count} Phase section, no success/promotion criteria",
+    )
+
+
 # --------------------------------------------------------- report generation --
 
 
@@ -407,6 +662,9 @@ def assemble_report(
         check_prose_quality(text),
         check_frontmatter(text),
         check_regime_disclosure(text),
+        check_brief_completeness(text, sections, target),
+        check_risk_discipline(text, target),
+        check_phasing(text, sections, target),
     ]
     veto_gates = [c.veto_reason for c in checks if c.severity == "veto" and c.veto_reason]
     static_score = round(sum(c.score_earned for c in checks) * 100, 1)
@@ -444,7 +702,7 @@ def render_text(report: AuditReport) -> str:
     lines.append("=" * 78)
     lines.append("")
     lines.append(f"VERDICT: {report.verdict}")
-    lines.append(f"STATIC SCORE: {report.static_score}/100   (dynamic phase deferred to v0.2)")
+    lines.append(f"STATIC SCORE: {report.static_score}/100   (10 static checks; LLM-as-judge dynamic phase deferred)")
     lines.append("")
     if report.veto_gates:
         lines.append("VETO GATES TRIGGERED:")
