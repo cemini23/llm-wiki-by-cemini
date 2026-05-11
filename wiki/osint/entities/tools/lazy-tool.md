@@ -12,6 +12,7 @@ related:
   - concepts/context-compression-resume-pattern.md
   - concepts/mcp-context-optimization.md
   - entities/tools/cc-switch.md
+  - entities/tools/9router.md
 maturity: validated
 created: 2026-05-09
 updated: 2026-05-11
@@ -28,6 +29,7 @@ license_verified: MIT
 - @concepts/mcp-tool-marketplace.md — lazy-tool is a key entry in the MCP gateway/tool-surface evaluation
 - @entities/tools/bifrost.md — evaluated alternative; Bifrost is more powerful but higher complexity
 - @entities/tools/claude-code-router.md — complementary proxy layer for OpenRouter traffic routing
+- @entities/tools/9router.md — K38 evaluation candidate DOWNGRADED to NO-GO 2026-05-11; eval brief framed 9router as a compression proxy, but Phase-0 audit found its 20-40% compression overlaps with lazy-tool's validated 46% at ~10× heavier footprint
 - @concepts/context-compression-resume-pattern.md — addresses the same context-window bloat problem from a state-persistence angle
 
 ## Raw Concept

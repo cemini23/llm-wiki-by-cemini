@@ -9,6 +9,7 @@ related:
   - entities/tools/cc-switch.md
   - entities/tools/lazy-tool.md
   - entities/tools/bifrost.md
+  - entities/tools/9router.md
   - concepts/mcp-tool-marketplace.md
   - concepts/mcp-context-optimization.md
 maturity: validated
@@ -27,6 +28,7 @@ license_verified: MIT
 - @entities/tools/cc-switch.md — alternative proxy with complementary SSE-fixing capabilities
 - @entities/tools/lazy-tool.md — the MCP gateway recommended alongside claude-code-router for the full stack
 - @entities/tools/bifrost.md — MCP gateway alternative; Bifrost handles MCP routing, claude-code-router handles LLM API routing
+- @entities/tools/9router.md — K38 candidate DOWNGRADED to NO-GO 2026-05-11; eval brief framed 9router's LLM routing layer as an Adopt, but Phase-0 found it duplicates claude-code-router's routing role + carries Family-C OAuth-grafting TOS risk
 - @concepts/mcp-tool-marketplace.md — proxy/routing layer in the broader MCP tool ecosystem
 
 ## Raw Concept
