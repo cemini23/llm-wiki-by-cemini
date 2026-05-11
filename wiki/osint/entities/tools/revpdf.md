@@ -1,14 +1,15 @@
 ---
 title: "RevPDF — Lightweight Offline PDF Editor"
 type: entity
-tags: [tool, pdf, editor, offline, workflow, macOS]
+tags: [tool, pdf, editor, offline, workflow, macOS, adopted]
 keywords: [RevPDF, PDF editor, offline, Flutter, lightweight, Adobe alternative]
 related:
   - sources/evaluating-links-trading-wiki-stacks.md
   - concepts/tool-evaluation-framework.md
-maturity: draft
+maturity: validated
 created: 2026-05-10
 updated: 2026-05-10
+laptop_install: VERIFIED 2026-05-10 (v4.0.0 build 53 at /Applications/RevPDF Editor.app)
 ---
 
 ## Relations
@@ -40,6 +41,10 @@ RevPDF provides professional PDF manipulation (structural editing, page splittin
 
 ### Cemini significance
 
-Tactical workflow improvement. Replaces bloated, telemetry-laden legacy PDF readers for the core research extraction pipeline. The 15MB footprint vs Adobe's multi-GB install is operationally meaningful on a storage-constrained laptop (disk at 88%).
+Tactical workflow improvement. Replaces bloated, telemetry-laden legacy PDF readers for the core research extraction pipeline. The 15MB footprint vs Adobe's multi-GB install is operationally meaningful on a storage-constrained laptop.
+
+### Adoption status — INSTALLED at laptop level 2026-05-05
+
+`RevPDF Editor.app` v4.0.0 (build 53) present at `/Applications/RevPDF Editor.app`. Install pre-dates the K35 evaluation; user already running it for research-extraction work. No additional configuration required.
 
 [Source: Evaluating Links for Trading and Wiki Stacks.docx, URL 20]

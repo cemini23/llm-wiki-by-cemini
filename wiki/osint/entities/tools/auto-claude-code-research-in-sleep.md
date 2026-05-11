@@ -1,7 +1,7 @@
 ---
 title: "ARIS — Auto-Research-In-Sleep"
 type: entity
-tags: [tool, research-automation, claude-code, skill, workflow]
+tags: [tool, research-automation, claude-code, skill, workflow, deferred]
 keywords: [ARIS, auto-research, ML research, skill framework, markdown-driven, MIT license]
 related:
   - sources/project-link-evaluation-brief.md
@@ -9,6 +9,7 @@ related:
 maturity: draft
 created: 2026-05-10
 updated: 2026-05-10
+phase_0_reaudit: 2026-05-10 — 78 skills found (paper-write/proof-checker/specification-writing/research-wiki/idea-creator/experiment-plan); broader scope than initial brief assumed; selective adoption recommended over wholesale install
 ---
 
 ## Relations

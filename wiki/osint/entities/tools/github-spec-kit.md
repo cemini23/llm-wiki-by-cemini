@@ -1,14 +1,15 @@
 ---
 title: "GitHub Spec-Kit — Spec-Driven Development CLI"
 type: entity
-tags: [tool, development, specification, cli, claude-code, workflow]
+tags: [tool, development, specification, cli, claude-code, workflow, adopted]
 keywords: [spec-kit, spec-driven development, SDD, GitHub, Claude Code, executable specifications]
 related:
   - sources/evaluating-links-trading-wiki-stacks.md
   - concepts/tool-evaluation-framework.md
-maturity: draft
+maturity: validated
 created: 2026-05-10
 updated: 2026-05-10
+laptop_install: VERIFIED 2026-05-10 (specify-cli via uv tool at ~/.local/bin/specify)
 ---
 
 ## Relations

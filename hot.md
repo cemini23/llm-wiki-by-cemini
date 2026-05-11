@@ -2,7 +2,7 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (end of 2026-05-10 session — K36 Phase-0 + 2 prod briefs SHIPPED + claude-mem INSTALLED + 3d-wiki SYNCED + skill_audit v0.3 SHIPPED)
+## Position (end of 2026-05-10 session — K36 Phase-0 + 2 prod briefs SHIPPED + 5-tool laptop adoption batch INSTALLED + ARIS deferred + skill_audit v0.3 SHIPPED)
 
 - **K-series K36 (NEW)**: 17-URL trading-stack evaluation brief ingested. 17 wiki pages: 1 source + 14 tool entities + 2 concepts. Tier rollup: 4 Adopt (picobot, ctop, QuantMuse, Adala) + 4 Steal-from (mercury-agent, Tmux-Orchestrator, digital-marketing-pro, LLMops) + 1 split (finance-skills) + 2 Reference/Defer (terax-ai, data-formulator) + 3 Reject (AppFlowy AGPL-3.0, dflash CUDA, floci AWS-emulator) + 3 UNAVAILABLE. Concept patterns extracted: `cross-channel-agent-gateway.md` (picobot + mercury) + `declarative-data-labeling-skills.md` (Adala + finance-skills).
 - **K36 cross-wiki route**: URL 10 digital-marketing-pro → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md` (115 cmds + 67 MCP servers + 5-layer memory + A+→F grading scripts for local SEO/GEO content authoring).
@@ -14,7 +14,13 @@ Ephemeral curator working memory. Read first on session start; rewritten at sess
   - `briefs/2026-05-10_picobot-prod-adoption.md` (7917 bytes, skill_audit 90/100 PASS) → SCPed to `cemini-prod:/opt/cemini/briefs/`
   - `briefs/2026-05-10_adala-prod-adoption.md` (9963 bytes, skill_audit 90/100 PASS) → SCPed to `cemini-prod:/opt/cemini/briefs/`
 - **K36 laptop installs**: `ctop` INSTALLED 2026-05-10 (npm i -g ctop-claude → binary at `/Users/claudiobarone/.local/bin/ctop`, MIT confirmed). finance-skills install path still unclear (`npx plugins add` syntax unverified).
-- **K35 laptop installs**: `claude-mem` v13.0.1 INSTALLED 2026-05-10 (`npx claude-mem install`, Apache-2.0). Worker + ChromaDB MCP supervisor running. Defaults verified: `SEMANTIC_INJECT_LIMIT=5`, lazy injection (`SEMANTIC_INJECT=false`), `~/.claude-mem` data dir. Claude Desktop OAuth token stale per `oauth-stale.marker` — re-login to refresh (worker functional regardless). Phase 1 3-session smoke test pending 2026-05-11+.
+- **K35 laptop installs (5 of 6 done 2026-05-10)**:
+  - `claude-mem` v13.0.1 INSTALLED via `npx claude-mem install` (Apache-2.0). Worker + ChromaDB MCP supervisor running. Defaults: `SEMANTIC_INJECT_LIMIT=5`, lazy injection (`SEMANTIC_INJECT=false`), `~/.claude-mem` data dir. Claude Desktop OAuth token stale per `oauth-stale.marker` — re-login to refresh. Phase 1 3-session smoke test pending 2026-05-11+.
+  - `revpdf` v4.0.0 build 53 INSTALLED 2026-05-05 at `/Applications/RevPDF Editor.app` (one-time $30 purchase; offline). Phase 2 network-isolation smoke pending.
+  - `specify-cli` INSTALLED via `uv tool install specify-cli` (`~/.local/bin/specify`). Phase 2 first wiki→code transition deferred until code project exists to scaffold.
+  - `codeboarding` INSTALLED via `uv tool install codeboarding` (`~/.local/bin/codeboarding`). 7 LSPs bootstrapped to `~/.codeboarding/servers/` (python/typescript/javascript/php/java/go/rust; csharp skipped — dotnet absent). Phase 2 first mapping run pending — gated by prod-snapshot rsync.
+  - `tech-debt-skill` INSTALLED 2026-05-10 (skill file at `~/.claude/skills/tech-debt-audit.md`, 12.8KB). Phase 2 first audit run pending — same prod-snapshot gate.
+- **ARIS DEFERRED 2026-05-10**: Phase-0 re-audit revealed 78-skill scope (vs. 3 in original eval brief). Reference clone at `/tmp/aris-audit/`. Selective triage of workflow-aligned skills (research-wiki/idea-creator/experiment-plan + ~5 others) deferred to dedicated workstream — wholesale install rejected on scope mismatch.
 - **Librarian infra**: `3d-printing-wiki` SYNCED to `cemini-librarian:/opt/cemini-wiki/3d-printing-wiki/` 2026-05-10, kb-server reindex `46 ingested / 2 skipped`. All 4 wikis (osint/image-gen/seo-geo/3d-printing) now queryable via `conductor_query` unified search.
 - **K-series K35**: 4-source eval batch (55 tools + 1 paper, SSRN 4943355). 32 wiki pages. Three-surface methodology codified. SPJ bias-correction extracted.
 - **Cross-wiki paths**: All 4 CLAUDE.md cross-wiki alias tables converted to relative paths (portable between machines).
@@ -84,12 +90,12 @@ Decision: sequential ship. Step 1 done.
 
 | Brief | What it ships | Verdict |
 |-------|---------------|---------|
-| `briefs/2026-05-10_aris-adoption.md` | ARIS Markdown skill files for `/idea` → `/experiment` → `/paper` workflow | GO |
-| `briefs/2026-05-10_github-spec-kit-adoption.md` | Spec-Driven Development CLI for wiki → production code transitions | GO (Phase-0 verified 2026-05-10: MIT, Claude integration ships upstream) |
-| `briefs/2026-05-10_tech-debt-skill-adoption.md` | Quarterly Cemini codebase technical-debt audits | GO |
-| `briefs/2026-05-10_claude-mem-adoption.md` | Cross-session persistent observation memory | GO (Phase-0 verified 2026-05-10: Apache-2.0, configurable inject limit default 5) |
-| `briefs/2026-05-10_revpdf-adoption.md` | 15MB offline PDF editor for research extraction | GO |
-| `briefs/2026-05-10_codeboarding-adoption.md` | Auto-generated Cemini architecture diagrams | GO (Phase-0 verified 2026-05-10: MIT, Node 20.18.1 auto-bootstrap, macOS CI passing) |
+| `briefs/2026-05-10_aris-adoption.md` | ARIS Markdown skill files for `/idea` → `/experiment` → `/paper` workflow | GO — selective adoption DEFERRED (78-skill scope mismatch surfaced in re-audit) |
+| `briefs/2026-05-10_github-spec-kit-adoption.md` | Spec-Driven Development CLI for wiki → production code transitions | **INSTALLED 2026-05-10** (`uv tool`; Phase 2 deferred until code project) |
+| `briefs/2026-05-10_tech-debt-skill-adoption.md` | Quarterly Cemini codebase technical-debt audits | **INSTALLED 2026-05-10** (`~/.claude/skills/tech-debt-audit.md`; Phase 2 prod-snapshot gated) |
+| `briefs/2026-05-10_claude-mem-adoption.md` | Cross-session persistent observation memory | **INSTALLED 2026-05-10** (`npx claude-mem install`; Phase 2 smoke test 2026-05-11+) |
+| `briefs/2026-05-10_revpdf-adoption.md` | 15MB offline PDF editor for research extraction | **INSTALLED 2026-05-05** (v4.0.0 at /Applications/; Phase 2 network-isolation smoke pending) |
+| `briefs/2026-05-10_codeboarding-adoption.md` | Auto-generated Cemini architecture diagrams | **INSTALLED 2026-05-10** (`uv tool`; 7 LSPs bootstrapped; Phase 2 prod-snapshot gated) |
 
 ### 2 deferred-with-triggers prod briefs (unchanged)
 

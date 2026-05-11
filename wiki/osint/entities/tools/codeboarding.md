@@ -1,14 +1,15 @@
 ---
 title: "CodeBoarding — Interactive Architecture Mapping Tool"
 type: entity
-tags: [tool, documentation, architecture, visualization, code-analysis, ip-readiness]
+tags: [tool, documentation, architecture, visualization, code-analysis, ip-readiness, adopted]
 keywords: [CodeBoarding, architecture mapping, LSP, static analysis, code visualization, due diligence]
 related:
   - sources/evaluating-links-trading-wiki-stacks.md
   - concepts/tool-evaluation-framework.md
-maturity: draft
+maturity: validated
 created: 2026-05-10
 updated: 2026-05-10
+laptop_install: VERIFIED 2026-05-10 (uv tool at ~/.local/bin/codeboarding; 7 LSPs bootstrapped via codeboarding-setup; csharp skipped — dotnet absent)
 ---
 
 ## Relations

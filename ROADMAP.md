@@ -59,12 +59,12 @@ K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-
 | `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` | Phase 1 ✓ / Phase 2 deferred | Phase 1 ✓ / Phase 2 deferred |
 | `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` | **SHIPPED 2026-05-08** — `scripts/skill_audit.py` v0.2 with regime-disclosure veto gate | SHIPPED |
 | `briefs/2026-05-08_rl-80k-btc-training-results.md` | RL 80K-frame BTC-USD training results, checkpoint for future 500K retrain | NEW |
-| `briefs/2026-05-10_aris-adoption.md` (K35) | ARIS Markdown skill files for structured research workflow | NEW — GO |
-| `briefs/2026-05-10_github-spec-kit-adoption.md` (K35) | Spec-Driven Development CLI for wiki → production-code transitions | NEW — GO (Phase-0 ✓: MIT, Claude integration upstream) |
-| `briefs/2026-05-10_tech-debt-skill-adoption.md` (K35) | Quarterly Cemini codebase technical-debt audits | NEW — GO |
+| `briefs/2026-05-10_aris-adoption.md` (K35) | ARIS Markdown skill files for structured research workflow | **DEFERRED 2026-05-10** — Phase-0 re-audit revealed 78-skill scope (vs. 3 in eval brief); selective triage of workflow-aligned skills (research-wiki/idea-creator/experiment-plan + ~5 others) pending. Reference clone at `/tmp/aris-audit/` |
+| `briefs/2026-05-10_github-spec-kit-adoption.md` (K35) | Spec-Driven Development CLI for wiki → production-code transitions | **INSTALLED 2026-05-10** — `uv tool install specify-cli` (`~/.local/bin/specify`); Phase 2 first wiki→code transition deferred until code project exists |
+| `briefs/2026-05-10_tech-debt-skill-adoption.md` (K35) | Quarterly Cemini codebase technical-debt audits | **INSTALLED 2026-05-10** — skill file at `~/.claude/skills/tech-debt-audit.md` (12.8KB); Phase 2 first audit run gated by prod-snapshot rsync |
 | `briefs/2026-05-10_claude-mem-adoption.md` (K35) | Cross-session persistent observation memory | **INSTALLED 2026-05-10** — v13.0.1 worker running; Phase 1 3-session smoke pending 2026-05-11+ |
-| `briefs/2026-05-10_revpdf-adoption.md` (K35) | 15MB offline PDF editor for research extraction | NEW — GO |
-| `briefs/2026-05-10_codeboarding-adoption.md` (K35) | Auto-generated Cemini architecture diagrams | NEW — GO (Phase-0 ✓: MIT, macOS Node auto-bootstrap) |
+| `briefs/2026-05-10_revpdf-adoption.md` (K35) | 15MB offline PDF editor for research extraction | **INSTALLED 2026-05-05** — v4.0.0 at /Applications/; Phase 2 network-isolation smoke pending |
+| `briefs/2026-05-10_codeboarding-adoption.md` (K35) | Auto-generated Cemini architecture diagrams | **INSTALLED 2026-05-10** — `uv tool install codeboarding` + 7 LSPs bootstrapped; Phase 2 first mapping run gated by prod-snapshot rsync |
 
 ### 1 — Awaiting prod-side execution (no workspace action)
 
@@ -164,6 +164,31 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 | **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-04 (clean baseline) |
 | **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-01 (within 7-day cadence) |
 | **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
+
+---
+
+## Done — 2026-05-10 K35 laptop adoption batch (5 tools installed + ARIS deferred)
+
+### Laptop adoption installs
+
+| Tool | Install | Verification |
+|------|---------|--------------|
+| `revpdf` v4.0.0 build 53 | One-time $30 purchase at `/Applications/RevPDF Editor.app` (pre-dated K35 eval; install 2026-05-05) | App opens; offline-capable per source claim; Phase 2 network-isolation smoke pending |
+| `specify-cli` | `uv tool install specify-cli` → `~/.local/bin/specify` | `specify --version` confirms install; Phase 2 first wiki→code transition deferred until code project exists to scaffold |
+| `codeboarding` | `uv tool install codeboarding` → `~/.local/bin/codeboarding`; `codeboarding-setup` bootstrapped 7 LSPs to `~/.codeboarding/servers/` | python/typescript/javascript/php/java/go/rust ready; csharp skipped (dotnet absent — acceptable, Cemini is Python-only). Phase 2 first mapping run gated by prod-snapshot rsync (active session) |
+| `tech-debt-skill` | Skill file at `~/.claude/skills/tech-debt-audit.md` (12.8KB) | Slash command `/tech-debt-audit` available in skill catalog; Phase 2 first audit run gated by prod-snapshot rsync |
+| `claude-mem` v13.0.1 | (already installed 2026-05-10 earlier in session) | (already documented in 2026-05-10 post-K36 Done) |
+
+### ARIS Phase-0 re-audit deferral
+- Cloned `wanshuiyin/Auto-claude-code-research-in-sleep` → `/tmp/aris-audit/` for inspection.
+- Discovered **78 SKILL.md files**, not 3 as the original eval brief claimed.
+- Two clusters: workflow-aligned (research-wiki/idea-creator/experiment-plan/experiment-audit + ~5 others) vs. academic-LaTeX/patent toolkit (paper-write with REVIEWER_MODEL=gpt-5.4 TARGET_VENUE=ICLR; proof-checker; specification-writing).
+- Decision: defer wholesale install on scope mismatch. Selective triage of workflow-aligned skills (~5-10 of 78) is its own workstream.
+- Updated `wiki/entities/tools/auto-claude-code-research-in-sleep.md` with `deferred` tag + `phase_0_reaudit` frontmatter field. `briefs/2026-05-10_aris-adoption.md` verdict shifts to "GO — selective adoption deferred".
+
+### Brief restructuring (5 briefs updated)
+- All 5 laptop adoption briefs (claude-mem, revpdf, github-spec-kit, codeboarding, tech-debt-skill, aris) restructured to Phase 0/1/2/3 format with explicit success criteria + bare `**GO**` verdict line.
+- All 5 PASS skill_audit v0.3 at 99.5-100/100. Architecture section + risk_discipline table + phasing all clean.
 
 ---
 

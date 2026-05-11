@@ -1,14 +1,15 @@
 ---
 title: "tech-debt-skill — Claude Code Technical Debt Auditor"
 type: entity
-tags: [tool, code-quality, claude-code, skill, audit, technical-debt]
+tags: [tool, code-quality, claude-code, skill, audit, technical-debt, adopted]
 keywords: [tech-debt, Claude Code skill, code audit, IP-sale readiness, static analysis]
 related:
   - sources/evaluating-links-trading-wiki-stacks.md
   - concepts/tool-evaluation-framework.md
-maturity: draft
+maturity: validated
 created: 2026-05-10
 updated: 2026-05-10
+laptop_install: VERIFIED 2026-05-10 (skill file at ~/.claude/skills/tech-debt-audit.md, 12.8KB)
 ---
 
 ## Relations

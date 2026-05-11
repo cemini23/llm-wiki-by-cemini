@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-05-10] adoption | K35 laptop-tool install batch (5 of 6 GO items installed; ARIS deferred on scope re-audit)
+
+Adopted 5 of the 6 K35 GO laptop-tool briefs in a single batch. Sixth item (ARIS) deferred on Phase-0 re-audit scope mismatch.
+
+- **Installed (5)**:
+  - `specify-cli` via `uv tool install specify-cli` → `~/.local/bin/specify`. `specify init` deferred until a downstream wiki→code transition project exists to scaffold.
+  - `codeboarding` via `uv tool install codeboarding` → `~/.local/bin/codeboarding`. `codeboarding-setup` bootstrapped 7 LSPs to `~/.codeboarding/servers/` (python/typescript/javascript/php/java/go/rust). csharp skipped — dotnet absent (acceptable; Cemini is Python-only). Phase 2 first mapping run blocked by active prod session.
+  - `tech-debt-skill` discovered already-installed at `~/.claude/skills/tech-debt-audit.md` (12.8 KB, mtime 2026-05-10 11:00). Slash command `/tech-debt-audit` in skill catalog. Phase 2 first audit blocked by same prod-snapshot gate.
+  - `revpdf` v4.0.0 build 53 at `/Applications/RevPDF Editor.app` (one-time $30 purchase pre-dated K35 eval; installed 2026-05-05). Phase 2 network-isolation smoke pending.
+  - `claude-mem` (re-confirmed; installed earlier today per prior log entry).
+- **Deferred (1) — ARIS scope re-audit**: cloned `wanshuiyin/Auto-claude-code-research-in-sleep` to `/tmp/aris-audit/`. Original eval brief described a 3-skill workflow (`/idea` → `/experiment` → `/paper`); actual repo contains **78 SKILL.md files** spanning two clusters — workflow-aligned (`research-wiki`, `idea-creator`, `experiment-plan`, `experiment-audit`, ~5 others) AND academic-LaTeX/patent toolkit (`paper-write` with REVIEWER_MODEL=gpt-5.4 TARGET_VENUE=ICLR; `proof-checker`; `specification-writing`). Wholesale install would pollute skill catalog with ~50 academic-paper-scaffolding skills irrelevant to OSINT workflow. Decision: defer to dedicated selective-triage workstream. Verdict shifts to "GO — selective adoption deferred". Reference clone retained at `/tmp/aris-audit/`.
+- **Brief restructuring**: All 5 laptop adoption briefs reshaped to Phase 0/1/2/3 format with Architecture diagrams + explicit success criteria + bare `**GO**` verdict line. All PASS skill_audit v0.3 at 99.5-100/100.
+- **claude-mem user-global scope confirmed**: `~/.claude/settings.json` `enabledPlugins.claude-mem@thedotmack=true` at user level. Applies to all 4 wikis (osint/image-gen/seo-geo/3d-printing) + Claude Desktop. Production server explicitly excluded per brief design (memory-constrained Hetzner; not appropriate for terminal-observation worker).
+
+**Updated**: 6 brief files (5 adoptions + 1 deferral), 6 entity pages, `ROADMAP.md`, `hot.md`.
+
 ## [2026-05-10] infra | claude-mem laptop install + 3d-printing-wiki librarian sync + skill_audit v0.3 ship
 
 Post-K36 cleanup pass. Three independent workstreams shipped after the K36 prod-brief batch:
