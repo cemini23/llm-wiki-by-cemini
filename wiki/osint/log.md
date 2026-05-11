@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-10] ingest | K36 — Evaluating Code for Trading Stacks (17 URLs, 14 evaluated)
+
+K36 batch ingest of `Evaluating Code for Trading Stacks.docx` (75,106 bytes, sha256: `726dff6faea3881c…`, preingest verdict: NEW). 17 URLs scored against three-surface matrix (Cemini prod / wiki server / workflow laptop); 14 evaluated, 3 UNAVAILABLE (URL 1 HKUDS/AI-Trader, URL 5 stage-cli, URL 6 opensourceprojects.dev).
+
+- **Tier rollup**: 4 Adopt (picobot, ctop, QuantMuse, Adala), 4 Steal-from (mercury-agent, Tmux-Orchestrator, digital-marketing-pro, LLMops/data-processing), 1 split (finance-skills — Steal-for-prod + Adopt-for-workflow), 2 Reference/Defer (terax-ai, data-formulator), 3 Reject (AppFlowy AGPL-3.0, dflash CUDA-only, floci AWS-domain-miss), 3 Unavailable.
+- **Cross-wiki route**: digital-marketing-pro (115 cmds, 67 MCP servers, 5-layer memory architecture) is structurally on-topic for @seo-wiki — routed via `scripts/cross_wiki_route.py` as brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md`. Backlink auto-added to source page.
+- **Created (17)**: source page (`sources/evaluating-code-for-trading-stacks.md`), 14 entity pages (`tools/picobot.md`, `tools/ctop.md`, `tools/quantmuse.md`, `tools/adala.md`, `tools/mercury-agent.md`, `tools/tmux-orchestrator.md`, `tools/digital-marketing-pro.md`, `tools/llmops-data-processing.md`, `tools/finance-skills.md`, `tools/terax-ai.md`, `tools/data-formulator.md`, `tools/appflowy.md`, `tools/dflash.md`, `tools/floci.md`), 2 concept pages (`concepts/cross-channel-agent-gateway.md`, `concepts/declarative-data-labeling-skills.md`).
+- **Concept patterns extracted**: (1) **Cross-channel agent gateway** from picobot + mercury-agent — process-isolated MCP-native gateway bridging Telegram/Discord/Slack/WhatsApp to backend tools; (2) **Declarative data-labeling skills** from Adala + finance-skills — dataframe-row annotation via declaratively-specified skills with reflection-loop refinement.
+- **Highest-impact Adopt**: **QuantMuse** (Python factor analysis + C++17 low-latency core engine, MIT) — direct Cemini prod adoption candidate via CMake/Alpine container; circumvents Python GIL on AMD EPYC. VaR/CVaR risk metrics → mathematical firewall pre-order-submit. **picobot** is the second-highest — solves cross-channel gateway problem with 9 MB Go binary, <25 MB RAM, native MCP client.
+- **Phase-0 audit queue**: picobot, QuantMuse, Adala (Cemini prod blast radius). ctop + finance-skills can proceed on laptop-only basis with verification deferred (lower blast radius).
+- **Updated**: `wiki/index.md` (+1 source row in `uncategorized` cluster, +14 tool rows in Tools section, +2 concept rows under Librarian/knowledge-base tooling).
+
 ## [2026-05-10] audit | Phase-0 verifications for 3 K35 CONDITIONAL-GO briefs — all upgraded to GO
 
 Phase-0 audits dispatched in parallel (3 Explore subagents) against the workspace-laptop CONDITIONAL-GO items from the K35 brief batch. All three cleared.
