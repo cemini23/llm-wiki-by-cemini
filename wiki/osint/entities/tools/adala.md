@@ -69,7 +69,7 @@ Adala is the only K36 batch entry that directly addresses the ingest-side labeli
 - [x] Python ≥3.10 declared; CI green on 3.13; 15+ pytest test files; codecov integration active
 - [x] Pandas pin = `==2.2.3` (acceptable; Polars/Pandas coexist)
 - [x] Dependencies all current: `openai >=2.0.0,<3.0.0`, `litellm >=1.83.7,<2.0.0` (patched May 2026), `pydantic >=2,<3`, `instructor >=1.14.5`
-- [ ] **Adoption gate**: live smoke test with DeepSeek base URL before prod cutover
+- [x] **Adoption gate VERIFIED 2026-05-10**: live smoke test PASSED. `LiteLLMChatRuntime(base_url="https://api.deepseek.com/v1")` constructs cleanly; `record_to_record()` returned `{'response': 'ack'}` from DeepSeek in 1.9 s. Verbose litellm logs: 3 mentions of `api.deepseek.com`, 0 mentions of `api.openai.com`. Smoke harness at `/tmp/adala-smoke/smoke.py`.
 
 **Verdict**: GO ✅ — proceed to production adoption brief. Strongest K36 ingest-side asset.
 
