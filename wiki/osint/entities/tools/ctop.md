@@ -7,9 +7,10 @@ related:
   - sources/evaluating-code-for-trading-stacks.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
-maturity: draft
+maturity: validated
 created: 2026-05-10
 updated: 2026-05-10
+laptop_install: VERIFIED (2026-05-10)
 ---
 
 ## Relations
@@ -52,10 +53,13 @@ Indirect: better token observability on the workflow laptop directly reduces ope
 
 ### Adoption checklist
 
-- [ ] `npm i -g ctop-claude` (or Homebrew tap if available)
-- [ ] Verify LICENSE = MIT after install
-- [ ] Test with active Claude Code session — confirm token-tracking accuracy
-- [ ] If DeepSeek-routed: verify parser handles non-Anthropic response shapes
-- [ ] Add to iTerm2 default workspace alongside Obsidian
+- [x] `npm i -g ctop-claude` — installed 2026-05-10 (no Homebrew available on this machine)
+- [x] Binary linked at `/Users/claudiobarone/.local/bin/ctop` (npm exposes the `ctop` command, not `ctop-claude`)
+- [x] LICENSE = MIT confirmed in `$(npm root -g)/ctop-claude/LICENSE`; `package.json` declares MIT
+- [x] Version v2.0.0 from `aakashadesara/ctop` (repo per `package.json`); description: "Terminal UI for monitoring and managing Claude Code sessions"
+- [ ] **Pending interactive verification**: run `ctop` in iTerm2 alongside active Claude Code session — confirm token-tracking accuracy
+- [ ] **Pending**: if DeepSeek-routed Claude Code sessions: verify parser handles non-Anthropic response shapes
+- [ ] **Pending**: add to iTerm2 default workspace alongside Obsidian
 
 [Source: Evaluating Code for Trading Stacks.docx, URL 8]
+[Install: 2026-05-10, npm i -g ctop-claude]

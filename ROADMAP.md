@@ -40,11 +40,13 @@ K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-
 
 | Item | Action | Status |
 |------|--------|--------|
-| picobot Phase-0 audit | License/maturity verify; confirm <25 MB RAM claim + MCP-client behavior; check whatsmeow SQLite concurrency | PENDING |
-| QuantMuse Phase-0 audit | Verify MIT, C++17 build under Alpine, CMake target; isolate `core/` from LangChain ingestion bloat | PENDING |
-| Adala Phase-0 audit | Verify Apache-2.0; assess 2.5-yr release-gap maintenance burden; verify DeepSeek-base-URL override for `OpenAIChatRuntime` | PENDING |
-| ctop laptop install | `npm i -g ctop-claude` or Homebrew (verify on session start) | PENDING |
-| finance-skills laptop install | `npx plugins add himself65/finance-skills` for academic-paper back-verification | PENDING |
+| **picobot Phase-0 audit** | MIT confirmed, v0.2.0 / 86 commits / 1.2k★ / last push 2026-03-28, pure-Go SQLite, stdio MCP per spec | **GO ✅ 2026-05-10** |
+| **picobot prod adoption brief** | `briefs/2026-05-10_picobot-prod-adoption.md` — Phase 1 Telegram outbound only, soak 7d, then expand | **SHIPPED to prod 2026-05-10** (skill_audit 90/100) |
+| **QuantMuse Phase-0 audit** | MIT confirmed BUT C++ engine is cosmetic (pybind11-wrapped Python with 100ms sleeps); 9 commits, 0 tags, 10-mo stale; VaR = `np.percentile` (same as Cemini); LangChain bloat | **NO-GO ❌ 2026-05-10** (downgrade from original Adopt verdict) |
+| **Adala Phase-0 audit** | Apache-2.0 confirmed; abandonment claim DEBUNKED (677 commits, 113 in last 6mo, last main 2026-05-08); `LiteLLMChatRuntime.base_url` overridable; Python ≥3.10 CI green | **GO ✅ 2026-05-10** |
+| **Adala prod adoption brief** | `briefs/2026-05-10_adala-prod-adoption.md` — Phase 1 sentiment + entity-extraction skills on GDELT, expand to SEC in Phase 2 | **SHIPPED to prod 2026-05-10** (skill_audit 90/100) |
+| **ctop laptop install** | `npm i -g ctop-claude` → `/Users/claudiobarone/.local/bin/ctop` (binary named `ctop`, not `ctop-claude`); MIT confirmed | **INSTALLED 2026-05-10** — pending interactive token-tracking verification with live Claude Code session |
+| finance-skills laptop install | Install command in entity page is `npx plugins add himself65/finance-skills` — needs Claude Code plugin-system research; install path unclear | PENDING (low priority) |
 | mercury-agent Steal extract | Port permission-hardened shell-exec layer + SQLite FTS5 memory schema to Python/FastMCP | DEFERRED |
 | Tmux-Orchestrator Steal extract | Port `schedule_with_note.sh` + 30-min auto-commit pattern | DEFERRED |
 | digital-marketing-pro Steal extract | Port hallucination-detection + `evals.json` schema → `agents/orchestrator.py` pre-trade validation | DEFERRED |

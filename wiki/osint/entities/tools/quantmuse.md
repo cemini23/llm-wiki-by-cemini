@@ -1,17 +1,18 @@
 ---
 title: "QuantMuse — Python+C++17 Quantitative Trading System"
 type: entity
-tags: [tool, quant-finance, cemini-prod-candidate, cpp-engine, factor-analysis, risk-management]
-keywords: [QuantMuse, factor analysis, momentum, value, volatility, VaR, CVaR, C++ core engine, low-latency, MIT]
+tags: [tool, quant-finance, rejected, no-go, cosmetic-cpp, factor-analysis]
+keywords: [QuantMuse, factor analysis, momentum, value, volatility, VaR, CVaR, C++ core engine, low-latency, MIT, NO-GO]
 related:
   - sources/evaluating-code-for-trading-stacks.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
   - concepts/quant-finance.md
   - concepts/market-microstructure.md
-maturity: draft
+maturity: validated
 created: 2026-05-10
 updated: 2026-05-10
+phase_0_audit: NO-GO (2026-05-10)
 ---
 
 ## Relations
@@ -22,52 +23,41 @@ updated: 2026-05-10
 
 ## Raw Concept
 
-QuantMuse is a production-ready quantitative trading system combining Python factor analysis + machine learning with a compiled C++17 "Core Engine" for low-latency order routing and real-time risk management.
+QuantMuse advertised itself as a production-ready quantitative trading system combining Python factor analysis + ML with a compiled C++17 "Core Engine" for low-latency order routing. **Phase-0 audit 2026-05-10 revealed the C++ engine is cosmetic** — pybind11-wrapped Python with 100ms `std::this_thread::sleep_for` loops in `main.cpp`. VaR/CVaR is trivial `np.percentile(returns, 5)` — equivalent to (not better than) Cemini's existing scipy code.
 
 - **Repo**: `github.com/0xemmkty/QuantMuse`
-- **License**: MIT [NEEDS VERIFICATION 2026-05-10]
-- **Stack**: Python (factors/AI logic) + C++17 (core engine, CMake-built)
-- **Data sources**: Binance, Alpaca via WebSockets
-- **Persistence**: Redis (cache) + PostgreSQL (transactions)
-- **Built-in**: 8+ trading strategies, momentum/value/volatility factor models, VaR/CVaR risk metrics
-- **LLM orchestration**: LangChain (must be stripped before Cemini integration)
+- **License**: MIT [CONFIRMED 2026-05-10] — top-level LICENSE clean
+- **Stack**: Python + thin C++17 wrapper (pybind11 embeds Python into the "core engine")
+- **Maturity**: **POOR** — 9 commits total, 0 tags, last push 10 months pre-audit, no CI/CD, no test suite results
+- **Data sources**: Yahoo + Alpha Vantage adapters (NOT Alpaca WebSockets as claimed)
+- **Built-in**: Strategy schema validation exists, but no backtest results / no robustness metrics / no cold-start data
+- **LLM orchestration**: LangChain (36KB across `langchain_agent.py` + `llm_integration.py`)
 
 ## Narrative
 
-QuantMuse is the strongest Cemini-prod adoption candidate from the K36 batch. Its C++ core engine is the right tool for sub-millisecond order routing where Python's GIL is the bottleneck. The factor-analysis Python modules slot directly into Cemini's existing Polars + scikit-learn pipeline.
+The K36 source brief evaluated QuantMuse as the highest-impact Cemini-prod Adopt candidate. Phase-0 audit overturned that verdict.
 
-### Integration vectors
+### Phase-0 audit findings (2026-05-10) — **NO-GO** ❌
 
-**Cemini prod (Adopt — ✅)**:
-- Compile C++ core engine in dedicated Alpine/Debian Docker container with CMake; expose to existing Python FastAPI orchestrator
-- Ingest momentum/value Python factor modules directly into Polars pipeline managed by LangGraph
-- Plug VaR/CVaR logic into trade-validation step → mathematical firewall before Alpaca/Hyperliquid submission
-- **Zero new infrastructure**: Redis + PostgreSQL already foundational components
-- Offloading execution to C++ circumvents Python GIL on AMD EPYC CPU
+The C++ engine is the entire value proposition in the original brief, and the audit found it does not deliver:
 
-**Workflow laptop (Partial — ⚠️)**: Read `tests/` directory to observe how complex mathematical edge cases are handled; distill into Obsidian wiki theoretical intelligence.
+1. **Architecture is toy-shaped**: `TradingEngine` in `main.cpp` is a demo class with `std::this_thread::sleep_for(std::chrono::milliseconds(100))` loop — disqualifying for any sub-ms latency claim. No real multi-threading for concurrent order handling; naive sequential signal processing.
+2. **Data flow is Python-over-C++**: `data_loader.cpp` embeds pybind11 to call Python fetchers (`YahooFetcher`, `BinanceFetcher`). WebSocket subscription is a callback to Python (`fetcher_.attr("start_websocket")`), not native C++ socket handling. Latency is still bound by Python GIL round-trips.
+3. **Order executor is stub**: no order-submission logic, no exchange API connection, no retry/timeout/partial-fill handling.
+4. **Risk math is no better than Cemini's existing**: VaR/CVaR is `np.percentile(returns, 5)` in `performance_analyzer.py` — same one-liner Cemini already has via scipy. Zero incremental value.
+5. **Maturity poor**: 9 commits total, 0 release tags, last push 10 months pre-audit. No CI/CD pipeline. Build untested on Debian 12 / Alpine.
+6. **No Hyperliquid adapter**: confirmed absent. Only Yahoo + Alpha Vantage + python-binance.
+7. **LangChain strip cost**: ~36KB across two files; not deeply embedded but adds dependency-management overhead Cemini doesn't need.
 
-**Wiki server (Not applicable)**: trading-engine code, not knowledge-layer.
+**Verdict**: NO-GO. The C++ "core engine" is cosmetic, the strategies are real-but-untested template stubs, and the risk math is equivalent to Cemini's existing scipy code. Adopting QuantMuse adds maintenance burden (CMake build, pybind11 install, LangChain pins) for zero net capability gain.
 
-### Risks
+### Recommendation
 
-- **Build complexity**: integrating CMake into Python/Docker CI/CD requires hardening dependency management + ABI compatibility across container OS updates.
-- **LangChain bloat**: QuantMuse uses LangChain for LLM orchestration; Cemini uses FastMCP + raw HTTP. Strip LangChain imports before integration to avoid abstraction friction.
-- **Hyperliquid support unverified [NEEDS VERIFICATION 2026-05-10]**: C++ engine targets Alpaca; Hyperliquid adapter likely needs to be engineered.
-- **C++ heap profiling required [NEEDS VERIFICATION 2026-05-10]**: exact memory characteristics under high-throughput WebSocket streams unknown.
-- **MIT license**: assertion from brief; **Phase-0 audit mandatory before commit**.
+**Pass.** Reallocate engineering effort to a native Alpaca/Hyperliquid WebSocket adapter in Cemini's existing Python+FastMCP stack. If sub-ms execution latency ever becomes operationally required (not yet demonstrated), the better path is QuantLib (battle-tested, MIT) or a clean Rust/C++ adapter built in-house. QuantMuse is a distraction.
 
-### Cemini significance
+### Anti-pattern caught
 
-**High value**. This is the kind of asset the Cemini stack was waiting for — C++ execution discipline + Python factor expressiveness in one MIT-licensed repo. Adopting QuantMuse's core engine likely reduces order-submission latency by 1-2 orders of magnitude vs pure-Python equivalents while augmenting risk-validation layers (VaR/CVaR) that currently rely on hand-rolled scipy calculations.
-
-### Phase-0 audit checklist
-
-- [ ] Clone to `/tmp/quantmuse-audit/`; verify LICENSE = MIT (top-level)
-- [ ] Verify license headers in C++ source files match repo LICENSE
-- [ ] Confirm CMake build succeeds on Alpine Linux container (target prod env)
-- [ ] Profile C++ heap usage under simulated 1000 msg/sec WebSocket load
-- [ ] Inventory LangChain dependencies → estimate strip cost
-- [ ] Check whether Hyperliquid API adapter exists or must be written
+The K36 source brief asserted "production-ready quantitative trading system" with "compiled C++17 Core Engine". The README and `core/` directory structure support that framing superficially — but the actual implementations are template/demo code. **Lesson**: Phase-0 audits must read source files, not directory structure or README claims, when verifying performance-critical adoptions.
 
 [Source: Evaluating Code for Trading Stacks.docx, URL 12]
+[Audit: Phase-0 Explore agent, 2026-05-10 — NO-GO]
