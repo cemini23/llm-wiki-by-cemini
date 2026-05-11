@@ -6,6 +6,37 @@ Newest entries on top.
 
 ---
 
+## 2026-05-11 — Phase-0 audit catches eval-brief mischaracterization (meta-pattern)
+
+Five Phase-0 audits across K28, K30, and K38 have now rejected credible-looking Adopt-tier verdicts because the eval brief mischaracterized the tool's actual function. The pattern is consistent enough to be worth naming: **eval briefs are synthesized from README marketing + GitHub topic tags, not from reading entry-point code**. The DR sweep that generates them sees the surface a maintainer wants to present; Phase-0 sees what the code actually does. When those diverge, the brief loses.
+
+The 5 catches:
+
+| K | Tool | Eval-brief framing | Phase-0 reality |
+|---|------|--------------------|-----------------|
+| K28 | SwarmVault | Wiki-tooling candidate | Hardcoded flat-layout — doesn't support nested wikis |
+| K30 | PageIndex | Wiki retrieval upgrade | Single-file API + agentic cost + lost graph/metadata |
+| K30 | Claude-OSINT | Skill merge for curator | Wrong domain — red-team OSINT, not curator workflow |
+| K38 | 9router | "Lean compress-then-forward proxy, ~65% token reduction" | Private Next.js 16 + React 19 dashboard (monaco-editor + recharts + sql.js); README's real claim is 20-40%; Family-C OAuth-grafted free tiers = TOS landmine |
+| K38 | guild | "Local-first search MCP / Ollama replacement on CPX21" | Agent-coordination substrate with quest/lore/oath/brief primitives; retrieval is internal to its lore archive, not a drop-in for wiki-markdown serving |
+
+The three mischaracterization shapes worth naming because Phase-0 keeps catching them:
+
+1. **Marketing claim vs measured reality** — README/landing-page perf claim doesn't match the repo's actual measurement (9router's 65% headline vs 20-40% in-repo claim).
+2. **Framework vs application** — tool framed as a focused library, repo is actually a full product (9router as "lean proxy" vs full dashboard with bundled integrations). `"private": true` in package.json is the smoking gun for this shape.
+3. **Wrong-primitive** — tool framed by surface-level category match (MCP server, retrieval engine) when the actual primitives serve a different problem (guild's quest/lore/oath/brief is task-coordination, not document-retrieval).
+
+The Phase-0 minimum that catches all three: read `package.json`/`Cargo.toml`/`go.mod` for `"private": true` and dependency bloat signals; read the primary entry-point (`cmd/main.go`, `src/index.ts`, etc.) for the actual primitives; cross-check the README's measured perf number against the eval brief's quoted number.
+
+Cost asymmetry favors the audit: ~30 min Phase-0 prevents 2-4 hours of misaligned implementation. ROI is still favorable when the verdict is GO — you ship with confidence rather than discovering the framing gap mid-integration.
+
+*Apply:*
+1. **Never adopt an eval-brief Adopt verdict without Phase-0 unless the tool is from a known-trusted vendor** (official MCP servers, established maintainers we've audited before). The 5 catches are all from less-known repos where the README is the only signal the DR sweep has.
+2. **When chartering the next DR sweep, ask it to quote the primary entry-point function names + counts** alongside README snippets. A brief that says "9router exposes 4 proxy functions: compress(), forward(), …" gives Phase-0 a fast sanity-check; a brief that only says "9router is a token-compressing proxy" does not.
+3. **Tag entity pages with `eval-brief-mischaracterization`** when this pattern fires. The K38 entries already do this — see [`wiki/entities/tools/9router.md`](wiki/entities/tools/9router.md) and [`wiki/entities/tools/guild-mcp.md`](wiki/entities/tools/guild-mcp.md). Aggregating the tag over time gives the next eval-brief audit a head-start (which sources tend to mischaracterize? which tool classes?).
+
+---
+
 ## 2026-05-11 — Claim-evidence anchoring: dedup by canonical value, anchor within ±240 chars
 
 `skill_audit.py` v0.4 calibration surfaced an over-counting bug in the claim-evidence detector. The naive pass treated every textual occurrence of a claim as a distinct claim — so an adoption brief mentioning "MIT license" four times across different sections registered as 4 claims, of which only the first had a nearby `VERIFIED 2026-05-10` anchor → score 1/4 = 25% anchored, even though the claim was fully evidenced. The audit then flagged a clean brief as under-evidenced and recommended rework.
