@@ -1,5 +1,24 @@
 # Wiki Log
 
+## [2026-05-10] adoption | skill_audit v0.4 ship — research-paper-writing claim-evidence + abstract synthesis ported
+
+Brief-audit upgrade sprint **step 2 SHIPPED 2026-05-10** as `scripts/skill_audit.py` v0.4. Two new static checks distilled from `master-cai/Research-Paper-Writing-Skills` (K32 STEAL-FROM brief). Pattern source is abandoned (4 commits / 0 releases) — re-styled as deterministic Python checks rather than DeepSeek prompts; LLM-as-judge dynamic-check version deferred to upcoming codex pressure-test step.
+
+- **`check_claim_evidence`** (weight 0.06) — adoption-brief claim-evidence alignment. Detects 4 claim labels (license `MIT`/`Apache-2.0`/`AGPL-3.0`/..., version `vX.Y.Z`, stars `N★`/`N stars`, commits `N commits`). Each must co-locate with a verification anchor within ±240 chars (`VERIFIED YYYY-MM-DD`, `Phase-0 audit`, `audit ✓`, `[Source: ...]`, `[NEEDS VERIFICATION ...]`, `[CONFIRMED]`/`[TENTATIVE]`/`[RETRACTED]`). Duplicate claims deduped via canonical-value grouping; claim anchored if ANY occurrence has anchor nearby. Coverage thresholds: ≥90% full credit (0.06), ≥70% (0.04), ≥50% (0.02), <50% (0.0).
+- **`check_abstract_synthesis`** (weight 0.04) — `## Summary` section quality. Three signals: (a) length 50-400 words, (b) effort estimate present, (c) verdict-flavored opener (`Adopt`/`Steal-from`/`Reject`/`Reference`/`Defer`/`Install`/`GO`/`NO-GO`/`CONDITIONAL-GO`). 3/3 full credit (0.04), 2/3 (0.025), 1/3 (0.01), 0/3 (0.0).
+- **Weight rebalance**: 0.10 of headroom carved out of `check_citations` (0.15 → 0.10) and `check_prose_quality` (0.10 → 0.05). v0.4 sums to 1.00 across 12 static checks.
+- **Adoption-class gate**: both new checks exempt ops/research briefs via `_is_adoption_brief()` — same gate already used by v0.3's `check_phasing`/`check_risk_discipline`/`check_brief_completeness`.
+- **Calibration verified** against 7 representative briefs:
+  - K35 fresh adoption (aris, spec-kit, codeboarding, tech-debt): 99.5/100 PASS. Initial ARIS run WARN 98.5 due to verdict-line regex (asterisks wrapping extra text broke `\*\*GO\*\*` match); fixed by tightening verdict to `**GO** — selective adoption deferred 2026-05-10.`
+  - Anchoring gaps caught: claude-mem 97.5 WARN (un-anchored `v13.0.1` mention outside Phase-0 context), revpdf 94.5 WARN (`Proprietary (free)` not co-located with verification).
+  - Older adoption briefs flag legitimate gaps: hftbacktest 90.5, polymarket-stack 90.5, picobot-prod 96.0, adala-prod 98.5, guidance-ai 94.5.
+  - Ops/research briefs properly exempt: step81-sshd 85.0 N/A, polymarket-onchain 100/100 N/A. Check is signal-bearing, not noise.
+- **Anti-pattern fix during calibration**: initial `check_claim_evidence` over-counted 4 MIT mentions in one brief as 4 separate claims. Fixed by deduplicating: group occurrences by `(label, canonical_value)` lowercased + whitespace/hyphen-stripped; claim anchored if ANY occurrence has anchor nearby.
+- **Hierarchical section optimization** (third DR-named pattern from research-paper-writing) NOT ported in v0.4 — requires LLM judgment. Bundled with codex pressure-test step under upcoming `_llm_retry.py` infrastructure (Phase 2 of `@entities/tools/obsidian-llm-wiki-local.md`).
+- Updated `wiki/entities/tools/research-paper-writing-skills.md` to `maturity: validated` + `adopted_as: scripts/skill_audit.py v0.4` + `adopted` tag. Mirrors the v0.3 pattern used for academic-paper-skills.
+
+**Updated**: `scripts/skill_audit.py` (v0.3 → v0.4), `wiki/entities/tools/research-paper-writing-skills.md`, `ROADMAP.md`, `hot.md`. (ARIS verdict-line tightening already landed in earlier K35 batch commit `b31c2e5`.)
+
 ## [2026-05-10] adoption | K36 finance-skills laptop install + upstream LICENSE issue filed
 
 Resolved the K36 finance-skills install-path ambiguity that had been blocking the 1 remaining K36 laptop adoption.

@@ -6,7 +6,7 @@ Clean-room re-implementation of the MedSkillAudit veto-gate framework
 domain to financial-research / Cemini brief validation.
 
 Two phases:
-  STATIC (100% of static score, fully implemented v0.3 — 10 checks):
+  STATIC (100% of static score, fully implemented v0.4 — 12 checks):
     1. Required sections present  ── must have ## Target, ## Summary, ## Sources
     2. Cross-link resolution      ── @path/to/page.md must point to a real wiki page
     3. Citation tag well-formedness ── [Source: ...] / [Sources: ...] tags parse
@@ -17,6 +17,8 @@ Two phases:
     8. Brief completeness         ── risks/phase/go-nogo/verdict/license checklist (K36 academic-paper-skills port)
     9. Risk discipline            ── Risks & mitigations depth: severity column, mitigation column, ≥2 rows (K36)
    10. Phasing                    ── Phase 1 minimum; Phase 2/3 + success criteria earn full credit (K36)
+   11. Claim-evidence alignment  ── license/star/version/commit claims must co-locate with verification anchor (K32 research-paper-writing-skills port)
+   12. Abstract synthesis        ── ## Summary length + effort estimate + verdict-flavored opener (K32 research-paper-writing-skills port)
 
   DYNAMIC (deferred — LLM-as-judge tier; pending _llm_retry.py + DeepSeek budget):
     Requires LLM API call against a sandboxed Conductor / DeepSeek endpoint.
@@ -107,6 +109,40 @@ EMOJI_RE = re.compile(
 CRITICAL_SECTIONS = {"Target", "Summary"}
 SOURCES_SECTION_ALIASES = {"Sources", "Source", "Primary sources", "References", "Cross-references"}
 
+# ---- v0.4 patterns: claim-evidence + abstract synthesis (K32 research-paper-writing-skills) ----
+
+# License names that count as a verifiable claim. SPDX-ish identifiers.
+LICENSE_CLAIM_RE = re.compile(
+    r"\b(MIT|Apache-?2\.0|AGPL-?3\.0|GPL-?3\.0|GPL-?2\.0|BSD-?2|BSD-?3|MPL-?2\.0|"
+    r"LGPL|ISC|Unlicense|proprietary|unlicensed)\b",
+    re.IGNORECASE,
+)
+# Maturity claims: star counts, version, commit count, release tags.
+STAR_COUNT_RE = re.compile(r"\b\d{1,3}(?:,\d{3})*\s*(?:stars?|★|⭐)\b", re.IGNORECASE)
+VERSION_RE = re.compile(r"\bv\d+\.\d+(?:\.\d+)?(?:-[a-z0-9]+)?\b")
+COMMITS_RE = re.compile(r"\b\d{1,5}\s+commits?\b", re.IGNORECASE)
+RELEASE_DATE_RE = re.compile(r"\blast (?:commit|push|release)\s+\d{4}-\d{2}-\d{2}\b", re.IGNORECASE)
+
+# Verification anchors: signals that a claim has been audited / sourced / dated.
+VERIFIED_ANCHOR_RE = re.compile(
+    r"\bVERIFIED\s+\d{4}-\d{2}-\d{2}|"
+    r"\bPhase-?0 audit|"
+    r"\baudit (?:complete|✓|cleared|2\d{3}-\d{2}-\d{2})|"
+    r"\b✓\s*COMPLETE|"
+    r"\[Source[s]?:|"
+    r"\[NEEDS VERIFICATION|"
+    r"\[CONFIRMED\]|\[TENTATIVE\]|\[RETRACTED\]",
+    re.IGNORECASE,
+)
+
+# Abstract synthesis signals (within ## Summary section).
+EFFORT_HINT_RE = re.compile(r"\beffort\b|\bestimate\b|\*\*\d+(?:-\d+)?\s*(?:hr|hour|day|week|min)", re.IGNORECASE)
+VERDICT_OPENER_RE = re.compile(
+    r"^\s*(?:Adopt|Steal-from|Reject|Reference|Defer|Install|GO|NO-?GO|CONDITIONAL-?GO|"
+    r"This brief|Adoption recommendation|Recommendation:?)\b",
+    re.IGNORECASE | re.MULTILINE,
+)
+
 # ------------------------------------------------------- individual checks --
 
 
@@ -194,25 +230,25 @@ def check_crosslinks(text: str) -> CheckResult:
 
 def check_citations(text: str, sections: list[str]) -> CheckResult:
     """Briefs cite via ## Sources section; wiki pages use inline [Source: ...] tags.
-    Accept either: presence of a Sources section OR ≥1 inline citation."""
+    Accept either: presence of a Sources section OR ≥1 inline citation.
+    Weight 0.10 (was 0.15 in v0.3; 0.05 released to claim_evidence in v0.4)."""
     inline_matches = CITATION_RE.findall(text)
     has_sources_section = bool(SOURCES_SECTION_ALIASES & set(sections))
 
     if has_sources_section and not inline_matches:
-        # typical brief shape — sources listed in section, no inline tags needed
         return CheckResult(
             name="citations",
             severity="pass",
-            score_weight=0.15,
-            score_earned=0.15,
+            score_weight=0.10,
+            score_earned=0.10,
             detail="Sources section present; no inline citations expected",
         )
     if not inline_matches and not has_sources_section:
         return CheckResult(
             name="citations",
             severity="warn",
-            score_weight=0.15,
-            score_earned=0.05,
+            score_weight=0.10,
+            score_earned=0.03,
             detail="No Sources section AND no inline [Source: ...] tags — claim density too low",
         )
     weak = [c for c in inline_matches if len(c.strip()) < 8]
@@ -220,16 +256,16 @@ def check_citations(text: str, sections: list[str]) -> CheckResult:
         return CheckResult(
             name="citations",
             severity="warn",
-            score_weight=0.15,
-            score_earned=0.08,
+            score_weight=0.10,
+            score_earned=0.05,
             detail=f"{len(weak)} suspiciously short citation(s) of {len(inline_matches)} total",
             evidence=weak[:5],
         )
     return CheckResult(
         name="citations",
         severity="pass",
-        score_weight=0.15,
-        score_earned=0.15,
+        score_weight=0.10,
+        score_earned=0.10,
         detail=f"{len(inline_matches)} inline citation(s)" + (" + Sources section" if has_sources_section else ""),
     )
 
@@ -275,6 +311,7 @@ def check_prose_quality(text: str) -> CheckResult:
     # Workspace doctrine: no emoji unless explicitly authorized; no TODO/FIXME at
     # ship time (briefs go to prod — outstanding TODOs should be tracked in
     # ROADMAP, not embedded).
+    # Weight 0.05 (was 0.10 in v0.3; 0.05 released to abstract_synthesis in v0.4).
     emojis = EMOJI_RE.findall(text)
     todos = TODO_RE.findall(text)
     issues = []
@@ -286,15 +323,15 @@ def check_prose_quality(text: str) -> CheckResult:
         return CheckResult(
             name="prose_quality",
             severity="pass",
-            score_weight=0.10,
-            score_earned=0.10,
+            score_weight=0.05,
+            score_earned=0.05,
             detail="No emoji, no TODO/FIXME markers",
         )
     return CheckResult(
         name="prose_quality",
         severity="warn",
-        score_weight=0.10,
-        score_earned=0.03 if len(issues) > 1 else 0.05,
+        score_weight=0.05,
+        score_earned=0.015 if len(issues) > 1 else 0.025,
         detail="; ".join(issues),
     )
 
@@ -644,6 +681,171 @@ def check_phasing(text: str, sections: list[str], target: str) -> CheckResult:
     )
 
 
+def _claim_has_anchor_nearby(text: str, span: tuple[int, int], radius_chars: int = 240) -> bool:
+    """Check whether a verification anchor appears within `radius_chars` of `span`.
+    Use char window not line window because adoption briefs commonly use tables;
+    same-cell verification (e.g. `| MIT | YES — clean | Verified via Phase-0 audit |`)
+    should count as anchored."""
+    lo = max(0, span[0] - radius_chars)
+    hi = min(len(text), span[1] + radius_chars)
+    return bool(VERIFIED_ANCHOR_RE.search(text[lo:hi]))
+
+
+def check_claim_evidence(text: str, target: str) -> CheckResult:
+    """K32 research-paper-writing-skills port: claim-evidence alignment.
+    For an adoption brief, license/star/version/commit claims are verifiable
+    facts about the target tool. Each such claim should co-locate with a
+    verification anchor (Phase-0 audit, citation, VERIFIED tag, NV tag).
+    Weight 0.06. Ops/research briefs skip with full credit."""
+    if not _is_adoption_brief(text, target):
+        return CheckResult(
+            name="claim_evidence",
+            severity="pass",
+            score_weight=0.06,
+            score_earned=0.06,
+            detail="N/A — not an adoption-decision brief; ops/research briefs exempt",
+        )
+
+    # Strip code blocks before scanning — version-like strings inside fenced code
+    # are example commands, not claims about the tool itself.
+    scan_text = re.sub(r"```[\s\S]*?```", "", text)
+
+    claim_patterns = [
+        ("license", LICENSE_CLAIM_RE),
+        ("stars", STAR_COUNT_RE),
+        ("version", VERSION_RE),
+        ("commits", COMMITS_RE),
+        ("release", RELEASE_DATE_RE),
+    ]
+    # Group claim occurrences by (label, canonical-value). A claim is "anchored"
+    # if ANY of its occurrences has a verification anchor nearby — once a fact
+    # is verified, restating it elsewhere in the brief is fine.
+    claims_by_value: dict[tuple[str, str], list[tuple[int, int]]] = {}
+    for label, pat in claim_patterns:
+        for m in pat.finditer(scan_text):
+            canonical = m.group(0).lower().replace(" ", "").replace("-", "")
+            claims_by_value.setdefault((label, canonical), []).append(m.span())
+
+    total_claims = len(claims_by_value)
+    anchored = 0
+    unanchored_samples: list[str] = []
+    for (label, canonical), spans in claims_by_value.items():
+        if any(_claim_has_anchor_nearby(scan_text, sp) for sp in spans):
+            anchored += 1
+        else:
+            sp0 = spans[0]
+            snippet = scan_text[max(0, sp0[0] - 20):sp0[1] + 20].replace("\n", " ").strip()
+            unanchored_samples.append(f"{label}: …{snippet}…")
+
+    if total_claims == 0:
+        return CheckResult(
+            name="claim_evidence",
+            severity="pass",
+            score_weight=0.06,
+            score_earned=0.06,
+            detail="No license/star/version/commit claims to verify (rare for adoption briefs; may indicate thin Background)",
+        )
+
+    coverage = anchored / total_claims
+    if coverage >= 0.90:
+        score, sev, glyph = 0.06, "pass", "all"
+    elif coverage >= 0.70:
+        score, sev, glyph = 0.04, "warn", "most"
+    elif coverage >= 0.50:
+        score, sev, glyph = 0.02, "warn", "half"
+    else:
+        score, sev, glyph = 0.0, "warn", "few"
+
+    detail = f"{anchored}/{total_claims} claims anchored ({coverage:.0%}) — {glyph} cover"
+    return CheckResult(
+        name="claim_evidence",
+        severity=sev,
+        score_weight=0.06,
+        score_earned=score,
+        detail=detail,
+        evidence=unanchored_samples[:5],
+    )
+
+
+def check_abstract_synthesis(text: str, target: str) -> CheckResult:
+    """K32 research-paper-writing-skills port: abstract synthesis quality.
+    The ## Summary section is the brief's abstract. Three quality signals:
+    (a) length in 50-400 words (not stub, not bleed-over), (b) explicit effort
+    estimate, (c) verdict-flavored opening sentence (Adopt/Steal/Reject/GO/etc).
+    Weight 0.04. Ops/research briefs skip with full credit."""
+    if not _is_adoption_brief(text, target):
+        return CheckResult(
+            name="abstract_synthesis",
+            severity="pass",
+            score_weight=0.04,
+            score_earned=0.04,
+            detail="N/A — not an adoption-decision brief; ops/research briefs exempt",
+        )
+
+    summary_body = _section_body(text, {"Summary", "TL;DR", "Tldr", "TLDR"})
+    if not summary_body or not summary_body.strip():
+        return CheckResult(
+            name="abstract_synthesis",
+            severity="warn",
+            score_weight=0.04,
+            score_earned=0.0,
+            detail="No ## Summary section body to evaluate",
+        )
+
+    # Word count: strip markdown table-cell pipes + bold markers.
+    body_clean = re.sub(r"[|*`]", " ", summary_body)
+    words = [w for w in re.split(r"\s+", body_clean) if w]
+    n_words = len(words)
+    in_length_window = 50 <= n_words <= 400
+
+    has_effort = bool(EFFORT_HINT_RE.search(summary_body))
+    has_verdict_opener = bool(VERDICT_OPENER_RE.search(summary_body))
+
+    signals_present = sum([in_length_window, has_effort, has_verdict_opener])
+    missing = []
+    if not in_length_window:
+        missing.append(f"length={n_words}w (target 50-400)")
+    if not has_effort:
+        missing.append("no effort estimate")
+    if not has_verdict_opener:
+        missing.append("no verdict-flavored opener")
+
+    if signals_present == 3:
+        return CheckResult(
+            name="abstract_synthesis",
+            severity="pass",
+            score_weight=0.04,
+            score_earned=0.04,
+            detail=f"Summary {n_words}w + effort estimate + verdict opener — abstract well-synthesized",
+        )
+    if signals_present == 2:
+        return CheckResult(
+            name="abstract_synthesis",
+            severity="warn",
+            score_weight=0.04,
+            score_earned=0.025,
+            detail=f"2/3 abstract signals; missing: {missing}",
+            evidence=missing,
+        )
+    if signals_present == 1:
+        return CheckResult(
+            name="abstract_synthesis",
+            severity="warn",
+            score_weight=0.04,
+            score_earned=0.01,
+            detail=f"1/3 abstract signals; missing: {missing}",
+            evidence=missing,
+        )
+    return CheckResult(
+        name="abstract_synthesis",
+        severity="warn",
+        score_weight=0.04,
+        score_earned=0.0,
+        detail=f"0/3 abstract signals; missing: {missing}",
+        evidence=missing,
+    )
+
+
 # --------------------------------------------------------- report generation --
 
 
@@ -665,6 +867,8 @@ def assemble_report(
         check_brief_completeness(text, sections, target),
         check_risk_discipline(text, target),
         check_phasing(text, sections, target),
+        check_claim_evidence(text, target),
+        check_abstract_synthesis(text, target),
     ]
     veto_gates = [c.veto_reason for c in checks if c.severity == "veto" and c.veto_reason]
     static_score = round(sum(c.score_earned for c in checks) * 100, 1)
@@ -702,7 +906,7 @@ def render_text(report: AuditReport) -> str:
     lines.append("=" * 78)
     lines.append("")
     lines.append(f"VERDICT: {report.verdict}")
-    lines.append(f"STATIC SCORE: {report.static_score}/100   (10 static checks; LLM-as-judge dynamic phase deferred)")
+    lines.append(f"STATIC SCORE: {report.static_score}/100   (12 static checks; LLM-as-judge dynamic phase deferred)")
     lines.append("")
     if report.veto_gates:
         lines.append("VETO GATES TRIGGERED:")

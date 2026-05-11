@@ -34,7 +34,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 K36 ingest complete 2026-05-10. **Phase-0 audit queue** (before any K36 prod brief drafts): picobot (MCP-native Go gateway, MIT), QuantMuse (Python+C++ quant stack, MIT), Adala (Apache-2.0 data-labeling with reflection loop — 2.5-yr abandonment-risk flag). ctop + finance-skills are laptop-only adoptions (lower blast radius, audit deferred). Cross-wiki route shipped: URL 10 (digital-marketing-pro) → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md`.
 
-K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-target + 6 workspace-laptop-target). Phase-0 audits for the 3 CONDITIONAL-GO items complete 2026-05-10 — all upgraded to **GO**. K35 follow-ups: (1) K35 Steal-from extractions (SPJ algorithm port, TPE sampling, Bradley-Terry, spec-kit template patterns) — still open; (2) **Brief-audit upgrade sprint: sequential ship — step 1 academic-paper-skills 35-pt framework SHIPPED 2026-05-10** as `scripts/skill_audit.py` v0.3 (10 static checks, 3 new: `brief_completeness` + `risk_discipline` + `phasing`, ops/research-brief exemption gate, calibration verified on 7 briefs). Next sequential: research-paper-writing claim-evidence (K32) then codex pressure-test prompts (K32) + `_llm_retry.py` helper; (3) Workspace-laptop install execution for the 6 K35 GO tools — still open.
+K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-target + 6 workspace-laptop-target). Phase-0 audits for the 3 CONDITIONAL-GO items complete 2026-05-10 — all upgraded to **GO**. K35 follow-ups: (1) K35 Steal-from extractions (SPJ algorithm port, TPE sampling, Bradley-Terry, spec-kit template patterns) — still open; (2) **Brief-audit upgrade sprint: sequential ship — steps 1+2 SHIPPED 2026-05-10**. Step 1 (`scripts/skill_audit.py` v0.3) ported academic-paper-skills 35-pt framework: 10 checks, 3 new (`brief_completeness` + `risk_discipline` + `phasing`), ops/research-brief exemption gate. Step 2 (v0.4) ported research-paper-writing claim-evidence + abstract synthesis: 12 checks, 2 new (`check_claim_evidence` 0.06, `check_abstract_synthesis` 0.04) carved from citations + prose_quality weights; calibration verified on 7 briefs. Next sequential: codex pressure-test prompts (K32) + `_llm_retry.py` helper (~3 hr combined); (3) Workspace-laptop install execution for the 6 K35 GO tools — still open.
 
 ### K36 follow-ups
 
@@ -164,6 +164,27 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 | **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-04 (clean baseline) |
 | **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-01 (within 7-day cadence) |
 | **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
+
+---
+
+## Done — 2026-05-10 skill_audit v0.4 ship (research-paper-writing claim-evidence + abstract synthesis)
+
+### Brief-audit upgrade sprint — step 2 SHIPPED
+
+- Ported `master-cai/Research-Paper-Writing-Skills` two K32-DR-named domain-portable patterns into `scripts/skill_audit.py` v0.4. Pattern source is abandoned (4 commits / 0 releases) — re-styled as deterministic Python static checks rather than DeepSeek prompts (LLM-as-judge dynamic version deferred to pressure-test step).
+- **2 new static checks** added on top of v0.3's 10, bringing v0.4 to 12 checks summing to 1.00:
+  - `check_claim_evidence` (weight 0.06) — detects 4 claim labels in adoption-class briefs (license/version/stars/commits); each must co-locate with a verification anchor within ±240 chars (`VERIFIED YYYY-MM-DD`, `Phase-0 audit`, `[Source:`, `[NEEDS VERIFICATION`, `[CONFIRMED]`/`[TENTATIVE]`/`[RETRACTED]`). Duplicate claims deduped via canonical-value grouping (claim anchored if ANY occurrence has anchor nearby). Coverage thresholds: ≥90% full (0.06), ≥70% (0.04), ≥50% (0.02).
+  - `check_abstract_synthesis` (weight 0.04) — `## Summary` section quality: length 50-400 words + effort estimate present + verdict-flavored opener (`Adopt`/`Steal-from`/`Reject`/`Reference`/`Defer`/`Install`/`GO`/`NO-GO`/`CONDITIONAL-GO`). 3/3 full (0.04), 2/3 (0.025), 1/3 (0.01).
+- **Weight rebalance**: 0.10 carved out of `check_citations` (0.15 → 0.10) and `check_prose_quality` (0.10 → 0.05). Sum still 1.00.
+- **Adoption-class gate** `_is_adoption_brief()` (already in v0.3) exempts ops/research briefs from both new checks. Renderer line updated to "12 static checks".
+- **Calibration verified 2026-05-10** against 7 representative briefs:
+  - K35 fresh adoption (aris, spec-kit, codeboarding, tech-debt): 99.5/100 PASS — initial ARIS run WARN at 98.5 due to verdict-line regex (asterisks wrapping extra text); fixed by tightening to `**GO** — selective adoption deferred 2026-05-10.`
+  - Anchoring gaps caught: claude-mem 97.5 WARN (un-anchored `v13.0.1` outside Phase-0 context), revpdf 94.5 WARN (`Proprietary (free)` not co-located with verification)
+  - Older adoption briefs WARN at expected gaps: hftbacktest 90.5, polymarket-stack 90.5, picobot-prod 96.0, adala-prod 98.5, guidance-ai 94.5
+  - Ops/research briefs properly exempt: step81-sshd 85.0 N/A, polymarket-onchain 100/100 N/A
+- **Anti-pattern fix during calibration**: initial `check_claim_evidence` over-counted 4 MIT mentions in ARIS brief as 4 separate claims (1/4 anchored = 25%). Fixed by deduplicating: group occurrences by `(label, canonical_value)` lowercased + whitespace/hyphen-stripped; claim is anchored if any occurrence has anchor nearby. Re-test PASS at `1/1 claims anchored (100%)`.
+- **Hierarchical section optimization** (third DR-named pattern from research-paper-writing) NOT ported in v0.4 — requires LLM judgment. Bundled with codex pressure-test step under upcoming `_llm_retry.py` infrastructure.
+- Updated `wiki/entities/tools/research-paper-writing-skills.md` to `maturity: validated` + `adopted_as: scripts/skill_audit.py v0.4` + `adopted` tag. Mirrors the v0.3 pattern previously used on `wiki/entities/tools/academic-paper-skills.md`.
 
 ---
 

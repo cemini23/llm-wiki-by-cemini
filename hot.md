@@ -2,7 +2,7 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (end of 2026-05-10 session — K36 Phase-0 + 2 prod briefs SHIPPED + 5-tool laptop adoption batch INSTALLED + ARIS deferred + skill_audit v0.3 SHIPPED)
+## Position (end of 2026-05-10 session — K36 Phase-0 + 2 prod briefs SHIPPED + 5-tool laptop adoption batch INSTALLED + ARIS deferred + skill_audit v0.4 SHIPPED)
 
 - **K-series K36 (NEW)**: 17-URL trading-stack evaluation brief ingested. 17 wiki pages: 1 source + 14 tool entities + 2 concepts. Tier rollup: 4 Adopt (picobot, ctop, QuantMuse, Adala) + 4 Steal-from (mercury-agent, Tmux-Orchestrator, digital-marketing-pro, LLMops) + 1 split (finance-skills) + 2 Reference/Defer (terax-ai, data-formulator) + 3 Reject (AppFlowy AGPL-3.0, dflash CUDA, floci AWS-emulator) + 3 UNAVAILABLE. Concept patterns extracted: `cross-channel-agent-gateway.md` (picobot + mercury) + `declarative-data-labeling-skills.md` (Adala + finance-skills).
 - **K36 cross-wiki route**: URL 10 digital-marketing-pro → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md` (115 cmds + 67 MCP servers + 5-layer memory + A+→F grading scripts for local SEO/GEO content authoring).
@@ -53,14 +53,15 @@ Step 81 (sshd) and Step 82 (Conductor smoke test) both ran during the prior sess
 
 skill_audit v0.2: 7 checks, regime-disclosure is a veto gate (Scientific Integrity). Static score weights rebalanced: required_sections 0.25, crosslinks 0.15, citations 0.15, needs_verification 0.10, prose_quality 0.10, frontmatter 0.05, regime_disclosure 0.10.
 
-### Brief-audit upgrade sprint — SEQUENTIAL, step 1 SHIPPED 2026-05-10
+### Brief-audit upgrade sprint — SEQUENTIAL, steps 1+2 SHIPPED 2026-05-10
 
-Decision: sequential ship. Step 1 done.
+Decision: sequential ship. Steps 1+2 done.
 
-- **academic-paper-skills 35-pt framework (K32) — SHIPPED 2026-05-10** as `scripts/skill_audit.py` v0.3. 10 static checks total; 3 new ones (`brief_completeness` + `risk_discipline` + `phasing`) consume the 0.10 weight headroom left by v0.2, bringing max static score to 100. Adoption-class gate `_is_adoption_brief()` exempts ops/research briefs from new checks. Calibration verified on 7 briefs: K36 fresh (picobot 99.5, adala 100) PASS, ops briefs PASS-with-N/A, older adoption briefs (hftbacktest, guidance-ai) WARN at 98/100 flagging genuine gaps (no explicit `**GO**` verdict, bullet-format risks vs tables).
-- `research-paper-writing-skills` claim-evidence + abstract synthesis (K32, ~2-3 hr) — **NEXT SEQUENTIAL**
-- `codex-startup-pressure-test-skill` adversarial review prompts (K32, ~1-2 hr) — pulls in `_llm_retry.py` helper for first dynamic check
+- **academic-paper-skills 35-pt framework (K32) — SHIPPED 2026-05-10** as `scripts/skill_audit.py` v0.3. 10 static checks total; 3 new ones (`brief_completeness` + `risk_discipline` + `phasing`) consume the 0.10 weight headroom left by v0.2, bringing max static score to 100. Adoption-class gate `_is_adoption_brief()` exempts ops/research briefs from new checks. Calibration verified on 7 briefs.
+- **research-paper-writing-skills claim-evidence + abstract synthesis (K32) — SHIPPED 2026-05-10** as `scripts/skill_audit.py` v0.4. 12 static checks total; 2 new ones (`check_claim_evidence` weight 0.06, `check_abstract_synthesis` weight 0.04) carved out of `check_citations` (0.15 → 0.10) + `check_prose_quality` (0.10 → 0.05). Claim-evidence detects 4 claim labels (license/version/stars/commits) anchored within ±240 chars of verification tag (VERIFIED YYYY-MM-DD, Phase-0 audit, [Source: ...], etc.). Duplicate claims deduped via canonical-value grouping. Adoption-class gate exempts ops/research briefs. Calibration verified on 7 briefs: K35 fresh PASS at 99.5/100, anchoring gaps caught (claude-mem 97.5, revpdf 94.5), older briefs flag legitimate gaps (hftbacktest 90.5, polymarket-stack 90.5, picobot-prod 96.0, adala-prod 98.5, guidance-ai 94.5). Ops briefs properly exempt (step81-sshd N/A, polymarket-onchain 100/100 N/A).
+- `codex-startup-pressure-test-skill` adversarial review prompts (K32, ~1-2 hr) — **NEXT SEQUENTIAL**; pulls in `_llm_retry.py` helper for first dynamic check.
 - **Regime-disclosure gate** (K33) — SHIPPED 2026-05-08 (v0.2)
+- **Hierarchical section optimization** (3rd DR-named pattern from research-paper-writing) deferred — needs LLM judgment; bundled with codex pressure-test step under `_llm_retry.py`.
 - LLM-as-judge dynamic checks deferred until `_llm_retry.py` (Phase 2 of obsidian brief) ships
 
 ### 16 active prod briefs at `cemini-prod:/opt/cemini/briefs/` (12 existing + 4 new K35 Adopt)
@@ -112,7 +113,7 @@ Decision: sequential ship. Step 1 done.
 - **K36 laptop-only installs**: `ctop` INSTALLED 2026-05-10 (`/Users/claudiobarone/.local/bin/ctop`, MIT confirmed); pending interactive verification alongside live Claude Code session. `finance-skills` install path still unclear (`npx plugins add` may not be a real Claude Code command).
 - **claude-mem Phase 1 verification** — DUE 2026-05-11+: run 3 sessions over 2-3 days, verify (a) observations persist across sessions, (b) `SessionStart` injection content is relevant, (c) injection stays within top-5 cap. Track via `http://localhost:37702`. If false-positive rate >20% or token-budget drift observable, downgrade to reference-only.
 - **K36 Steal-from extractions** (DEFERRED, no rush): mercury-agent shell-exec + SQLite FTS5; Tmux-Orchestrator `schedule_with_note.sh` + auto-commit pattern; digital-marketing-pro hallucination-detection + evals.json schema; LLMops regex cleaning + LLM-as-judge prompts.
-- **Brief-audit upgrade sprint** — sequential, step 1 (academic-paper-skills 35-pt) **SHIPPED 2026-05-10 as skill_audit.py v0.3**. Next sequential: research-paper-writing claim-evidence (K32, ~2-3 hr), then codex pressure-test prompts + `_llm_retry.py` (~3 hr combined).
+- **Brief-audit upgrade sprint** — sequential, steps 1+2 SHIPPED 2026-05-10 (v0.3 + v0.4). Next sequential: codex pressure-test prompts + `_llm_retry.py` (~3 hr combined).
 - **Phase 4 of obsidian-llm-wiki-local** — `wiki_lint.py --fix-bidirectional` mode is standalone-shippable (~30 min). Low priority.
 - **Cemini-prod ttok install** — staged; awaits prod-side execution (single Pipfile addition).
 - **hftbacktest Phase 0 audit** — GO (MIT license, Production/Stable v2.4.4, wheel install on Hetzner confirmed). Brief `2026-05-06_hftbacktest-adoption.md` updated and ready for prod staging. Phase 1 sandbox replication is next.
@@ -129,7 +130,7 @@ Decision: sequential ship. Step 1 done.
 - license catalog: `/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki/concepts/cemini-license-posture.md`
 - staged brief: `briefs/2026-05-09_step81-sshd-prod.md` (SHIPPED)
 - step 82 brief: `briefs/2026-05-09_step82-production-smoke-test.md` (PARTIAL PASS)
-- scripts: `scripts/skill_audit.py` v0.2 (regime-disclosure gate shipped)
+- scripts: `scripts/skill_audit.py` v0.4 (12 static checks; v0.3 added phasing/risk/completeness; v0.4 added claim_evidence/abstract_synthesis)
 - raw source: `cemini-librarian:/opt/cemini-bulk/research/5_6 links.docx` (K31), `Evaluating Code for Trading Stacks.docx` (K36)
 - prod ccd-cli: `cemini-prod:/root/.claude/remote/ccd-cli/{2.1.111,2.1.128}`
 - rewind config: stored in rewind's own keystore; `rewind config show` to see redacted state
