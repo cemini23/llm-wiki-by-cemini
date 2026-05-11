@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-10] adoption | K36 finance-skills laptop install + upstream LICENSE issue filed
+
+Resolved the K36 finance-skills install-path ambiguity that had been blocking the 1 remaining K36 laptop adoption.
+
+- **Install path resolved**: README's `npx plugins add himself65/finance-skills` syntax IS real — author publishes a custom `plugins` CLI to npm that wraps Claude Code marketplace registration + plugin install into one command. Native Claude Code equivalent: `/plugin marketplace add himself65/finance-skills` + `/plugin install <name>@finance-skills` (×6).
+- **Installed** via `npx plugins add himself65/finance-skills --target claude-code --scope user -y`. 6 plugins / 24 skills enabled in `~/.claude/settings.json`. Marketplace at `~/.claude/plugins/marketplaces/finance-skills`. Plugins: finance-market-analysis (11 skills), finance-social-readers (6), finance-data-providers (4), finance-startup-tools (1), finance-ui-tools (1), finance-skill-creator (1). Requires Claude Code restart to load — deferred (other session active).
+- **License finding (Phase-0 audit)**: README claims MIT but no LICENSE file in repo; GitHub API reports `"license": null`. Under default copyright, source code is "all rights reserved". Filed upstream issue [#64](https://github.com/himself65/finance-skills/issues/64) requesting LICENSE clarification.
+- **Decision split**: Laptop-as-tool adoption proceeds (operationally similar to invoking a hosted API; monetization-priority stance softens license auto-reject for non-prod-codebase use). Cemini-prod Steal-from half (Python re-impl of yfinance/Funda AI/Adanos patterns) BLOCKED pending LICENSE clarification — re-evaluate in 30 days.
+- **Entity updated** to `maturity: validated` + `laptop_install: VERIFIED` + `upstream_issue: #64` frontmatter.
+
+**Updated**: `wiki/entities/tools/finance-skills.md`, `ROADMAP.md`, `hot.md`.
+
 ## [2026-05-10] adoption | K35 laptop-tool install batch (5 of 6 GO items installed; ARIS deferred on scope re-audit)
 
 Adopted 5 of the 6 K35 GO laptop-tool briefs in a single batch. Sixth item (ARIS) deferred on Phase-0 re-audit scope mismatch.
