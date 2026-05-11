@@ -43,10 +43,10 @@ K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-
 
 | Item | Action | Status |
 |------|--------|--------|
-| **K37 Adopt — Visual Crossing Weather** | 50-yr historical weather depth for Kalshi/Polymarket weather contracts. Pair with K38 wethr.net | Phase-0 audit pending |
+| **K37 Adopt — Visual Crossing Weather** | 50-yr historical weather depth for Kalshi/Polymarket weather contracts. Pair with K38 wethr.net | **CONDITIONAL-GO 2026-05-11** — adopt for backtesting/climatology only; interpolation gap excludes from contract-resolution path. ~$0/mo at audited cadence (5 airports × 15-min poll under 1K/day free cap). |
 | **K37 Adopt — UI-TARS-desktop** | Desktop AI agent; eval verdict Adopt for workflow laptop | Phase-0 audit pending |
-| **K37 Adopt — markdown-preview-pluk** | Native macOS .md previewer; cross-wiki briefs shipped to image-gen + seo + 3d-printing wikis | Cross-wiki routed 2026-05-11; install pending |
-| **K38 Adopt — wethr.net** | Singular weather Adopt for Kalshi/Polymarket weather contracts | Phase-0 audit pending |
+| **K37 Adopt — markdown-preview-pluk** | Native macOS .md previewer; cross-wiki briefs shipped to image-gen + seo + 3d-printing wikis | **INSTALLED 2026-05-11** — v0.0.21 DMG (Homebrew absent); /Applications/Markdown Preview.app, MIT, Apple-signed. Default-handler set pending (manual Finder action) |
+| **K38 Adopt — wethr.net** | Singular weather Adopt for Kalshi/Polymarket weather contracts | **GO 2026-05-11** — adopt for live Kalshi-resolution path. `logic=nws` (Kalshi) / `logic=wu` (Polymarket); station-direct, 30 US airports. Pro $24.99/mo; vendor-age <12 mo risk mitigated via NWS parallel-poll circuit breaker. |
 | **K38 Adopt — Perplexity MCP** | Live-search gap closer | Phase-0 audit pending |
 | **K38 Adopt — 9router** | Token-compressing proxy (~65% reduction claim); MCP infrastructure | Phase-0 audit pending |
 | **K38 Adopt — guild MCP** | Go binary, BM25 + int8 ONNX hybrid retrieval — potential Ollama replacement on Hetzner CPX21 | Phase-0 audit pending |

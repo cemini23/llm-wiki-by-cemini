@@ -10,9 +10,10 @@ related:
   - concepts/ensemble-weather-forecasting.md
   - entities/platforms/kalshi.md
   - entities/data-sources/nws-weather-gov.md
+  - entities/tools/visualcrossing-weather.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-05-11
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-04-25
 - @concepts/ensemble-weather-forecasting.md
 - @entities/platforms/kalshi.md
 - @entities/data-sources/nws-weather-gov.md — companion / complement: Open-Meteo gives the global multi-model ensemble (ECMWF + GFS + ICON + MetNo + JMA); NWS gives the single US-government authoritative forecast and observation feed — use as the resolution-truth source when settling US-locality Kalshi weather contracts
+- @entities/tools/visualcrossing-weather.md — K37 Adopt (CONDITIONAL-GO 2026-05-11); paid 50-yr historical depth complementing Open-Meteo's free shallower reanalysis. Both serve the backtesting role; choose by depth/freshness need
 
 ## Raw Concept
 

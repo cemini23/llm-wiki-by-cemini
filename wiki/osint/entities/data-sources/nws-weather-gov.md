@@ -5,14 +5,18 @@ tags: [data-source, weather, regulatory-primary-source, government]
 keywords: [nws, noaa, weather-gov, forecast, alerts, observations, gridpoints]
 related:
   - entities/data-sources/open-meteo.md
+  - entities/tools/visualcrossing-weather.md
+  - entities/tools/wethr-net.md
 maturity: draft
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-05-11
 ---
 
 ## Relations
 
 - @entities/data-sources/open-meteo.md — companion / complement: Open-Meteo gives global multi-model NWP ensembles (ECMWF + GFS + ICON + MetNo + JMA); NWS gives the single authoritative US-government forecast and observation feed. Use NWS as the tiebreaker when ensemble members disagree on a US-resolution Kalshi weather contract
+- @entities/tools/visualcrossing-weather.md — K37 Adopt (CONDITIONAL-GO 2026-05-11), backtesting role only — interpolated history → use NWS as resolution-truth
+- @entities/tools/wethr-net.md — K38 Adopt (GO 2026-05-11), live Kalshi-resolution path — NWS as circuit-breaker cross-validation + fallback
 
 ## Raw Concept
 

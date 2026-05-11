@@ -2,7 +2,15 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (end of 2026-05-11 session — K37 + K38 + 3-paper ingest COMPLETE)
+## Position (end of 2026-05-11 session — K37 + K38 ingest COMPLETE + markdown-preview-pluk INSTALLED + Weather-pair Phase-0 VERDICTS RECORDED)
+
+- **K37/K38 follow-ups closed 2026-05-11**:
+  - **markdown-preview-pluk INSTALLED**: v0.0.21 via direct DMG (Homebrew not present on this Mac); `/Applications/Markdown Preview.app`; MIT license + Apple Developer-ID signed (TeamID `5P3TSMNV42`); 632★ / 20 releases in 13 days / pre-1.0. Entity bumped `maturity: validated`. Default-handler set deferred (user manual action — `duti` not installed).
+  - **Visual Crossing Weather Phase-0 CONDITIONAL-GO**: adopt for backtesting/climatology only. Vendor 2003-founded (~23 yrs), 99.9% SLA, commercial-use rights on all 4 plans, 50-yr historical depth verified. **Critical interpolation gap** — historical data is grid-interpolated NOT station-direct; excludes from contract-resolution path. Free tier ($0/mo) sufficient at 5 airports × 15-min cadence (480 records/day under 1K cap).
+  - **wethr.net Phase-0 GO**: adopt for live Kalshi/Polymarket-resolution path. Built explicitly for those markets; 30 US airports (full Kalshi roster); **explicit `logic=nws` vs `logic=wu` parameter** for contract-resolution alignment; station-direct (not interpolated). Pro $24.99/mo. Vendor-age <12 mo (open beta 2025-05-14) is dominant risk, mitigated via NWS parallel-poll circuit breaker.
+  - **Pair verdict: GO on both** — non-overlapping roles (VC = backtesting depth; wethr.net = live resolution truth). Combined ~$25/mo at audited cadence. Bidirectional backlinks added on `nws-weather-gov.md` + `open-meteo.md`.
+
+## Position (mid-2026-05-11 session — K37 + K38 + 3-paper ingest COMPLETE)
 
 - **K-series K37 (NEW)**: 21-URL "Evaluating URLs for System Integration" eval brief ingested. 14 pages: 1 source + 13 entity stubs (8 reachable + 5 UNAVAILABLE stubs). Tier rollup: 3 Adopt (Visual Crossing Weather, UI-TARS-desktop, markdown-preview-pluk), 6 Steal-from (claude-bootstrap, ASB, Beever Atlas, homelab-hub, ebay-mcp, contextlattice), 3 Reference-only, 1 Defer, 8 UNAVAILABLE.
 - **K-series K38 (NEW)**: 29-URL "Link Evaluation Brief for Trading Stack" eval brief ingested. 26 pages: 1 source + 25 entity stubs. Tier rollup: 6 Adopt (Readme.skill, Perplexity MCP, Google Colab VSCode, 9router, guild MCP, wethr.net), 6 Steal-from (google-research, CloddsBot, AI-Trader, MegaMemory, hackers-arise OSINT, METATRON), 5 Reference-only, 3 Defer, 5 Reject (Medusa AGPL hard reject + TokenSpeed + tropicaltidbits + D3Ext/WEF + ssh-keys-manager-stmol), 4 UNAVAILABLE.
