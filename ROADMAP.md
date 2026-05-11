@@ -10,9 +10,10 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (end of 2026-05-10)
 
-- **Wiki**: 607 pages indexed (564 + 32 K35 4-source eval batch + 11 misc from prior ingest). K35 adds 25 tool entities + 2 concepts (tool-evaluation-framework, SPJ) + 4 sources. 55 tools evaluated across 3 deployment surfaces.
-- **K-series**: K35 complete (4-source evaluation brief batch — 55 tools, 1 academic paper). Three-surface evaluation methodology codified. Verdict distribution: 10 Adopt, 9 Steal-from, 3 Defer, 5 Reference-only, 25 Reject, 4 Unavailable.
-- **Inbox**: CLEAN (4 sources ingested + moved to librarian 2026-05-10)
+- **Wiki**: 624 pages indexed (607 + 17 K36 = 1 source + 14 tool entities + 2 concepts). K36 adds the trading-stack evaluation brief (17 URLs, three-surface scoring), with 2 new architectural concepts: `cross-channel-agent-gateway.md` (picobot/mercury pattern) + `declarative-data-labeling-skills.md` (Adala/finance-skills pattern).
+- **K-series**: K36 complete (17-URL trading-stack evaluation brief). Tier rollup: 4 Adopt (picobot, ctop, QuantMuse, Adala) + 4 Steal-from + 1 split (finance-skills) + 2 Reference/Defer + 3 Reject (AppFlowy AGPL-3.0, dflash CUDA, floci AWS-emulator) + 3 UNAVAILABLE.
+- **K35 status**: complete (4-source eval batch, 55 tools across 3 surfaces). Three-surface evaluation methodology codified.
+- **Inbox**: CLEAN (K36 source moved to librarian 2026-05-10)
 - **Step 81 — SSHD on Prod**: ✅ COMPLETE (2026-05-09). `openssh-server` installed + hardened `sshd_config` on `cemini-prod`. Verified end-to-end connectively from workspace laptop. Prereq for Step 82. Brief: `briefs/2026-05-09_step81-sshd-prod.md`.
 - **Step 82 — Prod Smoke Test**: PARTIAL PASS (2026-05-09). Conductor pipeline ✅, Stash ✅, Calibration ✅. Redis/EMS ❌ blockers. See `briefs/2026-05-09_step82-production-smoke-test.md`.
 - **Next**: Resolving Redis + EMS blockers before Step 83 (live deployment). 3 K34 adoption briefs reviewed: 2 GO (polymarket-onchain-data-pipeline, mcp-context-optimization-stack) + 1 CONDITIONAL-GO (sabr-geometry-aware-calibration: audit SABR usage first).
@@ -31,7 +32,23 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Next — actually pending action
 
-K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-target + 6 workspace-laptop-target). Phase-0 audits for the 3 CONDITIONAL-GO items complete 2026-05-10 — all upgraded to **GO**. Next priorities: (1) K35 Steal-from extractions (SPJ algorithm port, TPE sampling, Bradley-Terry, spec-kit template patterns); (2) Bundled brief-audit upgrade sprint decision (3 K32 STEAL-FROMs + `_llm_retry.py`); (3) Workspace-laptop install execution for the 6 K35 GO tools.
+K36 ingest complete 2026-05-10. **Phase-0 audit queue** (before any K36 prod brief drafts): picobot (MCP-native Go gateway, MIT), QuantMuse (Python+C++ quant stack, MIT), Adala (Apache-2.0 data-labeling with reflection loop — 2.5-yr abandonment-risk flag). ctop + finance-skills are laptop-only adoptions (lower blast radius, audit deferred). Cross-wiki route shipped: URL 10 (digital-marketing-pro) → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md`.
+
+K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-target + 6 workspace-laptop-target). Phase-0 audits for the 3 CONDITIONAL-GO items complete 2026-05-10 — all upgraded to **GO**. K35 follow-ups still open: (1) K35 Steal-from extractions (SPJ algorithm port, TPE sampling, Bradley-Terry, spec-kit template patterns); (2) Bundled brief-audit upgrade sprint decision (3 K32 STEAL-FROMs + `_llm_retry.py`); (3) Workspace-laptop install execution for the 6 K35 GO tools.
+
+### K36 follow-ups
+
+| Item | Action | Status |
+|------|--------|--------|
+| picobot Phase-0 audit | License/maturity verify; confirm <25 MB RAM claim + MCP-client behavior; check whatsmeow SQLite concurrency | PENDING |
+| QuantMuse Phase-0 audit | Verify MIT, C++17 build under Alpine, CMake target; isolate `core/` from LangChain ingestion bloat | PENDING |
+| Adala Phase-0 audit | Verify Apache-2.0; assess 2.5-yr release-gap maintenance burden; verify DeepSeek-base-URL override for `OpenAIChatRuntime` | PENDING |
+| ctop laptop install | `npm i -g ctop-claude` or Homebrew (verify on session start) | PENDING |
+| finance-skills laptop install | `npx plugins add himself65/finance-skills` for academic-paper back-verification | PENDING |
+| mercury-agent Steal extract | Port permission-hardened shell-exec layer + SQLite FTS5 memory schema to Python/FastMCP | DEFERRED |
+| Tmux-Orchestrator Steal extract | Port `schedule_with_note.sh` + 30-min auto-commit pattern | DEFERRED |
+| digital-marketing-pro Steal extract | Port hallucination-detection + `evals.json` schema → `agents/orchestrator.py` pre-trade validation | DEFERRED |
+| LLMops/data-processing Steal extract | Extract regex data-cleaning + LLM-as-judge prompts; skip ZenML/Ray/Trulens orchestration | DEFERRED |
 
 ### 0 — Workspace-laptop actionable (K32 + K33 + K35)
 
@@ -145,6 +162,19 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 | **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-04 (clean baseline) |
 | **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-01 (within 7-day cadence) |
 | **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
+
+---
+
+## Done — 2026-05-10 K36 ingest
+
+### Evaluating Code for Trading Stacks (17-URL three-surface batch)
+- **Source**: `Evaluating Code for Trading Stacks.docx` (75 KB), ingested 2026-05-10 → moved to `cemini-librarian:/opt/cemini-bulk/research/`.
+- **17 wiki pages created**: 1 source (`evaluating-code-for-trading-stacks.md`) + 14 tool entities + 2 concept pages.
+- **Tier rollup**: 4 Adopt (picobot, ctop, QuantMuse, Adala) | 4 Steal-from (mercury-agent, Tmux-Orchestrator, digital-marketing-pro, LLMops) | 1 split (finance-skills: Steal-for-Cemini + Adopt-for-workflow) | 2 Reference/Defer (terax-ai, data-formulator) | 3 Reject (AppFlowy AGPL-3.0, dflash CUDA-only, floci AWS-emulator) | 3 UNAVAILABLE.
+- **Concept patterns extracted**: `concepts/cross-channel-agent-gateway.md` (picobot + mercury-agent → Telegram/Discord/Slack/WhatsApp routing on MCP) + `concepts/declarative-data-labeling-skills.md` (Adala + finance-skills → 5-element skill definition with reflection loop).
+- **Highest-impact Adopt for Cemini prod**: QuantMuse (Python factor analysis + C++17 low-latency core; strip LangChain bloat; CMake/Alpine build). Picobot second-highest (single 9 MB binary retires need for `python-telegram-bot` embedded in orchestrator).
+- **Cross-wiki route**: URL 10 (digital-marketing-pro) → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md` (115 cmds + 67 MCP servers + 5-layer memory + A+→F grading scripts; relevant to local SEO/GEO content authoring workflow).
+- **Phase-0 audit queue**: picobot, QuantMuse, Adala (prod blast radius); ctop + finance-skills laptop-only (verification deferred).
 
 ---
 

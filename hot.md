@@ -2,15 +2,17 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (end of 2026-05-10 session — K35 complete + cross-wiki paths portable + 4 prod briefs staged)
+## Position (end of 2026-05-10 session — K36 complete on top of K35 + cross-wiki route to seo-wiki)
 
-- **K-series**: K35 ingest complete. 4-source evaluation brief batch: 55 tools + 1 academic paper (SSRN 4943355). 32 wiki pages created/updated: 4 sources + 25 tools (10 Adopt / 7 Steal-from / 3 Defer / 5 Reference-only) + 2 concepts + 1 updated. Three-surface evaluation methodology codified in `concepts/tool-evaluation-framework.md`. SPJ bias-correction extracted from SSRN paper.
-- **Cross-wiki paths**: All 4 CLAUDE.md cross-wiki alias tables converted from absolute → relative paths (portable between machines). `3D printing/CLAUDE.md` already had relative paths.
-- **SEO wiki tool page**: Created `entities/tools/claude-code-tool-stack.md` in SEO wiki — distills lazy-tool, claude-code-router, claude-mem, ttok + MCP context optimization for friend new to AI.
-- **4 new K35 prod briefs**: tradingview-mcp-adoption (GO), pandas-ta-classic-adoption (CONDITIONAL-GO), polymarket-paper-trader-adoption (GO), chaosblade-adoption (GO).
-- **Wiki**: 607 pages indexed. Lint: PASS.
-- **K35 Adopt priorities**: tradingview-mcp (#1 highest-value), pandas-ta-classic, polymarket-paper-trader, chaosblade, ARIS, github-spec-kit, tech-debt-skill, claude-mem, revpdf, codeboarding.
-- **K35 Steal-from extraction candidates**: SPJ algorithm (STATA→Python), TPE sampling methodology, Bradley-Terry ranking (agentskillos), skill-as-file architecture (deerflow), HTML effectiveness pattern.
+- **K-series K36 (NEW)**: 17-URL trading-stack evaluation brief ingested. 17 wiki pages: 1 source + 14 tool entities + 2 concepts. Tier rollup: 4 Adopt (picobot, ctop, QuantMuse, Adala) + 4 Steal-from (mercury-agent, Tmux-Orchestrator, digital-marketing-pro, LLMops) + 1 split (finance-skills) + 2 Reference/Defer (terax-ai, data-formulator) + 3 Reject (AppFlowy AGPL-3.0, dflash CUDA, floci AWS-emulator) + 3 UNAVAILABLE. Concept patterns extracted: `cross-channel-agent-gateway.md` (picobot + mercury) + `declarative-data-labeling-skills.md` (Adala + finance-skills).
+- **K36 cross-wiki route**: URL 10 digital-marketing-pro → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md` (115 cmds + 67 MCP servers + 5-layer memory + A+→F grading scripts for local SEO/GEO content authoring).
+- **K36 Phase-0 audit queue**: picobot, QuantMuse, Adala (prod blast radius); ctop + finance-skills laptop-only (lower blast radius, audit deferred).
+- **K36 prod-Adopt rank**: QuantMuse #1 (Python+C++17 core stack, strip LangChain bloat). picobot #2 (single 9 MB MCP-native Go gateway, retires need for `python-telegram-bot` in orchestrator).
+- **K-series K35**: 4-source eval batch (55 tools + 1 paper, SSRN 4943355). 32 wiki pages. Three-surface methodology codified. SPJ bias-correction extracted.
+- **Cross-wiki paths**: All 4 CLAUDE.md cross-wiki alias tables converted to relative paths (portable between machines).
+- **K35 brief queue**: 10 of 10 Adopt-tier briefs staged. 4 prod (tradingview-mcp GO, pandas-ta-classic CONDITIONAL-GO, polymarket-paper-trader GO, chaosblade GO) + 6 workspace-laptop (aris, github-spec-kit, tech-debt-skill, claude-mem, revpdf, codeboarding — all GO).
+- **K35 Phase-0 verifications COMPLETE 2026-05-10**: claude-mem (Apache-2.0), github-spec-kit (MIT, Claude integration upstream), codeboarding (MIT, Node 20.18.1 auto-bootstrap) — all 3 upgraded from CONDITIONAL-GO to GO.
+- **Wiki**: 624 pages indexed (+17 K36). Lint: PASS, 0 cross-wiki dangling.
 - **Raw sources moved** → `cemini-librarian:/opt/cemini-bulk/research/`; local copies removed.
 - **Inbox**: CLEAN.
 - **Step 81**: ✅ sshd installed + hardened on `cemini-prod`.
@@ -69,6 +71,17 @@ Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr
 | **`2026-05-10_polymarket-paper-trader-adoption.md`** (K35 NEW) | 26 MCP tools, paper trading sandbox for LLM strategy forward-testing — **GO** |
 | **`2026-05-10_chaosblade-adoption.md`** (K35 NEW) | Docker Compose chaos engineering, time-gated to maintenance windows — **GO** |
 
+### 6 K35 workspace-laptop briefs (NEW 2026-05-10)
+
+| Brief | What it ships | Verdict |
+|-------|---------------|---------|
+| `briefs/2026-05-10_aris-adoption.md` | ARIS Markdown skill files for `/idea` → `/experiment` → `/paper` workflow | GO |
+| `briefs/2026-05-10_github-spec-kit-adoption.md` | Spec-Driven Development CLI for wiki → production code transitions | GO (Phase-0 verified 2026-05-10: MIT, Claude integration ships upstream) |
+| `briefs/2026-05-10_tech-debt-skill-adoption.md` | Quarterly Cemini codebase technical-debt audits | GO |
+| `briefs/2026-05-10_claude-mem-adoption.md` | Cross-session persistent observation memory | GO (Phase-0 verified 2026-05-10: Apache-2.0, configurable inject limit default 5) |
+| `briefs/2026-05-10_revpdf-adoption.md` | 15MB offline PDF editor for research extraction | GO |
+| `briefs/2026-05-10_codeboarding-adoption.md` | Auto-generated Cemini architecture diagrams | GO (Phase-0 verified 2026-05-10: MIT, Node 20.18.1 auto-bootstrap, macOS CI passing) |
+
 ### 2 deferred-with-triggers prod briefs (unchanged)
 
 | Brief | Trigger |
@@ -78,12 +91,15 @@ Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr
 
 ## Open follow-ups
 
+- **K36 Phase-0 audits** (queued): picobot, QuantMuse, Adala. Order of priority follows production blast radius — verify license/maturity/build-on-target before drafting prod adoption briefs.
+- **K36 laptop-only installs** (low-friction): `ctop` via `npm i -g ctop-claude` or Homebrew; `finance-skills` via `npx plugins add himself65/finance-skills`. Verify on next session start.
+- **K36 Steal-from extractions** (DEFERRED, no rush): mercury-agent shell-exec + SQLite FTS5; Tmux-Orchestrator `schedule_with_note.sh` + auto-commit pattern; digital-marketing-pro hallucination-detection + evals.json schema; LLMops regex cleaning + LLM-as-judge prompts.
 - **Brief-audit upgrade sprint decision** — bundle vs sequential. Regime-disclosure gate (K33) already shipped standalone; remaining 3 STEAL-FROMs + `_llm_retry.py` await decision.
 - **Phase 4 of obsidian-llm-wiki-local** — `wiki_lint.py --fix-bidirectional` mode is standalone-shippable (~30 min). Low priority.
 - **Cemini-prod ttok install** — staged; awaits prod-side execution (single Pipfile addition).
 - **hftbacktest Phase 0 audit** — GO (MIT license, Production/Stable v2.4.4, wheel install on Hetzner confirmed). Brief `2026-05-06_hftbacktest-adoption.md` updated and ready for prod staging. Phase 1 sandbox replication is next.
 - **Step 82 blockers: Redis + EMS** — must be resolved before Step 83 live deployment
-- **Sakana 2026-04-27 NV tags Exa-resolution** — 12 stale `[NEEDS VERIFICATION 2026-04-27]` tags pending focused Exa-cross-check pass.
+- **Sakana 2026-04-27 NV tags Exa-resolution** — **DONE 2026-05-10**. 11 tags across 4 pages: 3 resolved, 1 partially resolved, 6 re-dated (Fugu commercial details still undisclosed), 1 re-tagged as NEEDS FOUNDER INPUT (§174 R&E spend). Key finding: Conductor codebase NOT open source (arXiv v5 dropped the v2 promise; TechieTricks confirms). Trinity worker pool confirmed (7 models). Log entry at `wiki/log.md`.
 - **Tier 2 arXiv sweep** — last 2026-05-01; due ~2026-05-08 per 7-day cadence.
 - **Storage compaction** — disk 88% full; market-dataset Parquet conversion + research-corpus SQLite FTS index.
 
@@ -96,7 +112,7 @@ Decision pending: bundle as one combined `brief-audit-upgrade-sprint.md` (~13 hr
 - staged brief: `briefs/2026-05-09_step81-sshd-prod.md` (SHIPPED)
 - step 82 brief: `briefs/2026-05-09_step82-production-smoke-test.md` (PARTIAL PASS)
 - scripts: `scripts/skill_audit.py` v0.2 (regime-disclosure gate shipped)
-- raw source: `cemini-librarian:/opt/cemini-bulk/research/5_6 links.docx`
+- raw source: `cemini-librarian:/opt/cemini-bulk/research/5_6 links.docx` (K31), `Evaluating Code for Trading Stacks.docx` (K36)
 - prod ccd-cli: `cemini-prod:/root/.claude/remote/ccd-cli/{2.1.111,2.1.128}`
 - rewind config: stored in rewind's own keystore; `rewind config show` to see redacted state
 - laptop `.env`: contains `DEEPSEEK_API_KEY`, `LIBRARIAN_API_KEY`, `GROQ_API_KEY`, `GEMINI_API_KEY`
