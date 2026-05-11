@@ -14,7 +14,7 @@ related:
   - sources/sakana-trinity-llm-coordinator.md
 maturity: validated
 created: 2026-04-27
-updated: 2026-04-28
+updated: 2026-05-10
 ---
 
 ## Relations
@@ -81,7 +81,7 @@ From the Sakana announcement page:
 - Fugu Ultra **wins every benchmark** in the comparison set. The lift over the best individual frontier model is small but consistent (GPQAD: +0.7 over Gemini 3.1; LCBv6: +0.8 over Opus 4.6; SWEPro: +0.8 over Opus 4.6 self-reported)
 - The benchmark comparison set names **forward-dated frontier models** (Gemini 3.1, GPT 5.4, Opus 4.6) — these are 2026-release-calendar version numbers, not arbitrary version bumps. Sakana is benchmarking against the contemporary frontier, not the versions in the Conductor paper (which compared against GPT-5, Claude Sonnet 4, Gemini 2.5 Pro)
 - Fugu Mini sits between Gemini 3.1 and GPT 5.4 on most benchmarks — it's a competitive single-model alternative even before the latency optimization is taken into account
-- **Independence not yet verified** [NEEDS VERIFICATION 2026-04-27] — these are vendor-reported beta numbers; no third-party reproduction yet
+- **Independence not yet verified** [NEEDS VERIFICATION 2026-05-10] — these are vendor-reported beta numbers; no third-party reproduction yet. Exa cross-check 2026-05-10: no independent benchmarks surfaced; Fugu still closed beta.
 
 ### OpenAI-API compatibility
 
@@ -120,11 +120,11 @@ Mirrors @sources/sakana-conductor-rl-orchestration.md S2 (Recursive Conductor va
 
 ### Integration risk + open questions
 
-- **[NEEDS VERIFICATION 2026-04-27]** Beta acceptance gate — application-only access. Cemini would need to apply, with no guarantee of acceptance. Sakana explicitly targets "researchers and engineers" — Cemini-as-prop-trading-shop may or may not match the target persona
-- **[NEEDS VERIFICATION 2026-04-27]** Pricing — not disclosed in the announcement. Per-call cost likely meaningfully higher than single-frontier-model API calls (each Fugu call = N worker calls + 1 Conductor call). Cost envelope blocks an honest cost-of-Option-C comparison
-- **[NEEDS VERIFICATION 2026-04-27]** Beta SLA + GA timeline — closed beta status implies non-production-grade SLA. Cemini's market-hours strategies need uptime commitments that beta APIs typically don't guarantee
-- **[NEEDS VERIFICATION 2026-04-27]** Worker pool composition — Sakana doesn't disclose which models are in Fugu's pool. The Conductor paper used Gemma3-27B + Qwen3-32B + R1-Distill-Qwen-32B + Claude Sonnet 4 + Gemini 2.5 Pro + GPT-5; Fugu's commercial pool may be different (newer models per the benchmark table comparing against Gemini 3.1 / GPT 5.4 / Opus 4.6 — these are likely *also* in the pool now, but unconfirmed)
-- **[NEEDS VERIFICATION 2026-04-27]** Data-egress + retention policy — terms-of-service detail not extracted from the launch page. For a regulated-data path this is load-bearing
+- **[NEEDS VERIFICATION 2026-05-10]** Beta acceptance gate — application-only access. Exa cross-check 2026-05-10: still closed beta, no change to application gate. Cemini would need to apply, with no guarantee of acceptance. Sakana explicitly targets “researchers and engineers” — Cemini-as-prop-trading-shop may or may not match the target persona
+- **[NEEDS VERIFICATION 2026-05-10]** Pricing — still not publicly disclosed (Exa cross-check 2026-05-10). Per-call cost likely meaningfully higher than single-frontier-model API calls (each Fugu call = N worker calls + 1 Conductor call). Cost envelope blocks an honest cost-of-Option-C comparison
+- **[NEEDS VERIFICATION 2026-05-10]** Beta SLA + GA timeline — still undisclosed (Exa cross-check 2026-05-10). Closed beta status implies non-production-grade SLA. Cemini's market-hours strategies need uptime commitments that beta APIs typically don't guarantee
+- **[NEEDS VERIFICATION 2026-05-10]** Worker pool composition — Fugu's commercial pool still not disclosed (Exa cross-check 2026-05-10). Academic papers confirm 7-model pool: Conductor used Gemma3-27B + Qwen3-32B + R1-Distill-Qwen-32B + Claude Sonnet 4 + Gemini 2.5 Pro + GPT-5; Trinity v2 adds Qwen-3-32B (reasoning). Fugu's commercial pool likely includes newer models (benchmark table compares against Gemini 3.1 / GPT 5.4 / Opus 4.6) but composition unconfirmed. Nahornyi analysis (2026-04-25) notes o4-mini involvement in some results.
+- **[NEEDS VERIFICATION 2026-05-10]** Data-egress + retention policy — still not publicly documented (Exa cross-check 2026-05-10). Terms-of-service detail not available from the launch page. For a regulated-data path this is load-bearing
 
 ## Snippets
 

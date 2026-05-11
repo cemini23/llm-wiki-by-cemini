@@ -18,7 +18,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-10
 ---
 
 ## Relations
@@ -100,9 +100,9 @@ Trinity's role in the Sakana Fugu commercial API (`@entities/infrastructure/saka
 
 ### Open questions / NEEDS-VERIFICATION items
 
-- **[NEEDS VERIFICATION 2026-04-28]** Trinity's worker-pool composition is not enumerated in the poster the way Conductor's Table 3 enumerates its pool. Likely the same pool (Gemma3-27B + Qwen3-32B + R1-Distill-Qwen-32B + Claude Sonnet 4 + Gemini 2.5 Pro + GPT-5 — same six authors, same lab, same productization), but verifiable only by reading the full 22-page paper, which is deferred.
-- **[NEEDS VERIFICATION 2026-04-28]** Trinity's open-source release status — codebase, training data, model checkpoints. Conductor and Trinity may have separate release statuses; the Sakana team's broader research lineage (ShinkaEvolve, etc.) is mixed open-source/closed.
-- **[NEEDS VERIFICATION 2026-04-28]** Whether Trinity's structured-role schema (Thinker/Worker/Verifier) maps cleanly onto Pydantic-typed structured-output workers without additional architectural lift. The poster discusses natural-language LLM workers; integration with `function-calling` / structured-output endpoints is not directly addressed.
+- **[RESOLVED 2026-05-10]** Trinity v2 full paper (arXiv 2512.04695v2) confirms 7-model pool: three closed-source (GPT-5, Gemini-2.5-pro, Claude-4-Sonnet) + four open-source (Gemma-3-27B-It, DeepSeek-R1-Distill-Qwen-32B, Qwen-3-32B direct, Qwen-3-32B reasoning). Coordinator: Qwen3-0.6B + single linear layer of 10K params. Essentially same pool as Conductor plus Qwen-3-32B reasoning variant.
+- **[PARTIALLY RESOLVED 2026-05-10]** Trinity paper states "we provide comprehensive resources in the supplementary material, including source code and trained model weights" (arXiv v2). However, no official Sakana AI GitHub repo exists for Trinity (sakanaai org: 46 repos, none for Trinity or Conductor). A third-party Elixir reimplementation exists: nshkrdotcom/trinity_coordinator (MIT, 3 stars, last push 2026-04-30) — imports Sakana router vector + SVD/SVF components, does NOT claim to reproduce paper scores, focuses on parity-checked coordinator path. Official release status remains unconfirmed; supplementary material may exist but is not in a public repo.
+- **[NEEDS VERIFICATION 2026-05-10]** Whether Trinity's structured-role schema maps cleanly onto Pydantic-typed structured-output workers. Exa cross-check 2026-05-10: no new information. The paper discusses natural-language LLM workers; integration with function-calling / structured-output endpoints is not addressed.
 
 ## Snippets
 

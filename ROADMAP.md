@@ -31,7 +31,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Next — actually pending action
 
-K35 ingest complete 2026-05-10. 10 Adopt tools identified; adoption briefs pending for priority items (tradingview-mcp #1, pandas-ta-classic, polymarket-paper-trader, chaosblade).
+K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-target + 6 workspace-laptop-target). Next priorities: (1) Phase-0 audits + license verifications for the CONDITIONAL-GO items (claude-mem injection limits, codeboarding license, github-spec-kit license); (2) K35 Steal-from extractions (SPJ algorithm port, TPE sampling, Bradley-Terry); (3) Bundled brief-audit upgrade sprint decision (3 K32 STEAL-FROMs + `_llm_retry.py`).
 
 ### 0 — Workspace-laptop actionable (K32 + K33 + K35)
 
@@ -40,6 +40,12 @@ K35 ingest complete 2026-05-10. 10 Adopt tools identified; adoption briefs pendi
 | `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` | Phase 1 ✓ / Phase 2 deferred | Phase 1 ✓ / Phase 2 deferred |
 | `briefs/2026-05-07_regime-disclosure-brief-audit-gate.md` | **SHIPPED 2026-05-08** — `scripts/skill_audit.py` v0.2 with regime-disclosure veto gate | SHIPPED |
 | `briefs/2026-05-08_rl-80k-btc-training-results.md` | RL 80K-frame BTC-USD training results, checkpoint for future 500K retrain | NEW |
+| `briefs/2026-05-10_aris-adoption.md` (K35) | ARIS Markdown skill files for structured research workflow | NEW — GO |
+| `briefs/2026-05-10_github-spec-kit-adoption.md` (K35) | Spec-Driven Development CLI for wiki → production-code transitions | NEW — GO (license verify pending) |
+| `briefs/2026-05-10_tech-debt-skill-adoption.md` (K35) | Quarterly Cemini codebase technical-debt audits | NEW — GO |
+| `briefs/2026-05-10_claude-mem-adoption.md` (K35) | Cross-session persistent observation memory | NEW — CONDITIONAL-GO (injection limits) |
+| `briefs/2026-05-10_revpdf-adoption.md` (K35) | 15MB offline PDF editor for research extraction | NEW — GO |
+| `briefs/2026-05-10_codeboarding-adoption.md` (K35) | Auto-generated Cemini architecture diagrams | NEW — CONDITIONAL-GO (license + Node.js compat) |
 
 ### 1 — Awaiting prod-side execution (no workspace action)
 

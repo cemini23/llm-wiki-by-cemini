@@ -18,7 +18,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-04-27
-updated: 2026-04-28
+updated: 2026-05-10
 ---
 
 ## Relations
@@ -93,9 +93,9 @@ Three days after this source page was first written, Sakana announced **Sakana F
 
 ### Open questions / NEEDS-VERIFICATION items
 
-- **[NEEDS VERIFICATION 2026-04-27]** Whether the Conductor codebase + training data + checkpoints are publicly released (paper has standard "code available at..." line that I haven't extracted — Appendix beyond A.3 is unread). If yes, this is a candidate for direct experimentation in the Cemini stack on the IP-sale-prep timeline.
-- **[NEEDS VERIFICATION 2026-04-27]** Whether the recursive-Conductor variant is competitive on time-budget vs sequential frontier-model invocation — Table comparisons are in token-count + accuracy axes; latency comparisons not summarized in the read pages.
-- **[NEEDS VERIFICATION 2026-04-27]** Compatibility with structured-output / function-calling worker LLMs (Cemini's analyst nodes return Pydantic-typed StrategyRecommendation objects, not free-form text). The paper's experiments are on math + code + multiple-choice — all natural-language-output tasks. Lifting to typed-output workers may require additional architectural work.
+- **[RESOLVED 2026-05-10 — NOT OPEN SOURCE]** Conductor codebase, training data, and model weights are NOT publicly released. arXiv v2 (2512.04388v2) stated "we share the codebase of our new framework with this submission" and "provide source code in the supplementary material along with our trained model weights in an anonymized external repository." However, arXiv v5 (latest, 2512.04388v5) drops this claim — reproducibility statement only says "Our base model and all datasets are publicly available." TechieTricks article (2026-05-07) confirms: "the 7B model described in the research paper was an exploratory blueprint and is not publicly available." No public Sakana AI GitHub repo for Conductor exists (sakanaai org has 46 repos, none for Conductor or Trinity). Direct experimentation path is closed; Fugu API remains the only access vector.
+- **[NEEDS VERIFICATION 2026-05-10]** Whether the recursive-Conductor variant is competitive on time-budget vs sequential frontier-model invocation. Exa cross-check 2026-05-10: no latency benchmarks published. Table comparisons remain token-count + accuracy axes only.
+- **[NEEDS VERIFICATION 2026-05-10]** Compatibility with structured-output / function-calling worker LLMs. Exa cross-check 2026-05-10: no new information. Cemini's analyst nodes return Pydantic-typed StrategyRecommendation objects, not free-form text. The paper's experiments are on math + code + multiple-choice — all natural-language-output tasks. Lifting to typed-output workers may require additional architectural work.
 - **[RESOLVED 2026-04-28 — Trinity ingested]** Trinity sibling paper confirmed at arXiv 2512.04695 (Xu, Sun, Schwendeman, Nielsen, Cetin, Tang. *TRINITY: An Evolved LLM Coordinator*. ICLR 2026). Ingested as `@sources/sakana-trinity-llm-coordinator.md` 2026-04-28 with full poster captured verbatim + arXiv abstract + 10 Snippets + Cemini-relevance read mapping Trinity onto the Fugu Mini / Conductor onto Fugu Ultra. Sakana research lineage coverage now closes; Fugu-productization documentation is complete from both academic-paper sides.
 
 ## Snippets

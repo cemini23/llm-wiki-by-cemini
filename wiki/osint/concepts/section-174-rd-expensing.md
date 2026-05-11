@@ -11,7 +11,7 @@ related:
   - concepts/defend-trade-secrets-act.md
 maturity: validated
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-10
 ---
 
 ## Relations
@@ -26,7 +26,7 @@ updated: 2026-04-27
 
 The question this page answers: **How does Cemini deduct R&E and software-development costs for federal tax purposes during the IP-sale-prep window, and how did the rules change between 2022 and 2025?**
 
-Synthesized from @sources/fintech-startup-legal-ip-roadmap.md K7 deep-read 2026-04-27 (paras 16–19), which is the only source in the Cemini corpus to address §174 / §174A in any depth. K5 (3-9-pm-research) and K6 (3-10-ip-sale-audit) do not cover this regime, so K7 is the **single-source canonical reference** until/unless an additional source surfaces — see verification-needed flags `[NEEDS VERIFICATION 2026-04-27]` annotated below.
+Synthesized from @sources/fintech-startup-legal-ip-roadmap.md K7 deep-read 2026-04-27 (paras 16–19), which is the only source in the Cemini corpus to address §174 / §174A in any depth. K5 (3-9-pm-research) and K6 (3-10-ip-sale-audit) do not cover this regime, so K7 is the **single-source canonical reference** until/unless an additional source surfaces — see verification-needed flag annotated below.
 
 ## Narrative
 
@@ -60,7 +60,7 @@ K7 para 18 lists the Cemini-relevant cost categories that qualify as deductible 
 - Acquiring historical tick data
 - Building the server infrastructure (Hetzner deployment + Docker container topology)
 
-The Cemini deployed posture (single-member Florida SMLLC, sub-$1M scale, founder-only) sits comfortably **under the $31M threshold**. The full-restoration-for-2025 path applies straightforwardly. The retroactive-amendment / acceleration provisions for 2022–2024 are available if cumulative R&E spend during those years was material enough to warrant the amended-return work. **[NEEDS VERIFICATION 2026-04-27]** the exact 2022–2024 R&E spend total against the founder's tax records — the K7 source frames this as a tax-counsel-engagement workstream, not a self-serve calculation.
+The Cemini deployed posture (single-member Florida SMLLC, sub-$1M scale, founder-only) sits comfortably **under the $31M threshold**. The full-restoration-for-2025 path applies straightforwardly. The retroactive-amendment / acceleration provisions for 2022–2024 are available if cumulative R&E spend during those years was material enough to warrant the amended-return work. **[NEEDS FOUNDER INPUT 2026-05-10]** the exact 2022–2024 R&E spend total against the founder's tax records — the K7 source frames this as a tax-counsel-engagement workstream, not a self-serve calculation. Not Exa-resolvable; requires founder’s own tax records.
 
 ### Florida R&D Tax Credit (Statute 220.196) — incompatible with LLC structure
 

@@ -1,5 +1,27 @@
 # Wiki Log
 
+## [2026-05-10] briefs | K35 Adopt-tier workspace-laptop brief batch (6 briefs, 10/10 K35 Adopt queue complete)
+
+Drafted the 6 remaining K35 Adopt-tier briefs, all workspace-laptop targets (not prod). Completes K35 Adopt brief queue (10 of 10 staged).
+
+- **Created briefs (6)**: `briefs/2026-05-10_aris-adoption.md` (GO), `briefs/2026-05-10_github-spec-kit-adoption.md` (GO, license verify), `briefs/2026-05-10_tech-debt-skill-adoption.md` (GO), `briefs/2026-05-10_claude-mem-adoption.md` (CONDITIONAL-GO — injection limits), `briefs/2026-05-10_revpdf-adoption.md` (GO), `briefs/2026-05-10_codeboarding-adoption.md` (CONDITIONAL-GO — license + Node.js LSP compat).
+- **skill_audit verdicts**: all 6 PASS at 90.0/100. All required sections present, all cross-links resolve, no NV staleness, no prose-quality issues, no regime-disclosure violations.
+- **Common rationale**: all 6 tools are Workflow-tier Adopt — explicitly out-of-scope for Cemini prod (no token-burning autonomous loops on the trading host, no graphical apps on headless Hetzner, no parallel subagent dispatch competing with active trading CPU).
+- **Open verifications**: 3 briefs require license confirmation before install (github-spec-kit, claude-mem, codeboarding). 1 brief requires injection-limit configurability check (claude-mem) as a strict NO-GO trigger.
+- **Updated**: `ROADMAP.md`, `hot.md`.
+
+## [2026-05-10] lint | Sakana NEEDS-VERIFICATION Exa cross-check — 11 tags resolved/re-dated
+
+Exa cross-check pass across 4 pages resolving stale `[NEEDS VERIFICATION 2026-04-27]` and `[NEEDS VERIFICATION 2026-04-28]` tags. 11 tags addressed: 3 resolved, 1 partially resolved, 6 re-dated (still undisclosed), 1 re-tagged as founder-input (not Exa-resolvable).
+
+- **Resolved — Conductor codebase NOT open source**: arXiv v2 promised code + weights; v5 dropped that claim. TechieTricks (2026-05-07) confirms "not publicly available." No Sakana GitHub repo exists. Direct experimentation path closed.
+- **Resolved — Trinity worker pool**: v2 full paper confirms 7-model pool (GPT-5, Gemini-2.5-pro, Claude-4-Sonnet, Gemma-3-27B-It, DeepSeek-R1-Distill-Qwen-32B, Qwen-3-32B direct, Qwen-3-32B reasoning).
+- **Partially resolved — Trinity open-source**: Paper says supplementary material includes code+weights but no official Sakana GitHub repo. Third-party Elixir impl exists (nshkrdotcom/trinity_coordinator, MIT).
+- **Re-dated (6)**: Fugu benchmark independence, beta gate, pricing, SLA/GA timeline, worker pool composition, data-egress policy — all still undisclosed (closed beta, 16 days post-launch).
+- **Re-tagged as NEEDS FOUNDER INPUT**: §174 2022–2024 R&E spend totals — requires founder's tax records, not Exa-resolvable.
+- **Re-dated (2)**: Conductor recursive latency, Conductor structured-output compatibility — no new information.
+- Updated 4 pages: `entities/infrastructure/sakana-fugu.md`, `sources/sakana-conductor-rl-orchestration.md`, `concepts/section-174-rd-expensing.md`, `sources/sakana-trinity-llm-coordinator.md`.
+
 ## [2026-05-10] ingest | K35 — 4-source evaluation brief batch (55 tools, 1 academic paper)
 
 Full ingest of 4 sources dropped 2026-05-10: 3 commissioned tool-evaluation briefs + 1 SSRN academic paper.
