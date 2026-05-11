@@ -9,9 +9,10 @@ related:
   - entities/infrastructure/deepseek-api.md
   - concepts/librarian-server-architecture.md
   - concepts/cemini-license-posture.md
+  - concepts/cross-channel-agent-gateway.md
 maturity: draft
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-11
 ---
 
 ## Relations

@@ -11,9 +11,10 @@ related:
   - entities/infrastructure/localai.md
   - concepts/librarian-server-architecture.md
   - sources/langextract-google.md
+  - entities/tools/swarmvault.md
 maturity: retracted
 created: 2026-04-23
-updated: 2026-04-28
+updated: 2026-05-11
 ---
 
 ## Relations

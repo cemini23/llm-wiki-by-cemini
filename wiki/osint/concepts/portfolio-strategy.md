@@ -43,9 +43,10 @@ related:
   - sources/stocks-3-4-5.md
   - sources/toplogical-risk-parity.md
   - concepts/llm-listwise-alignment.md
+  - sources/mit-quant-bible.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-07
+updated: 2026-05-11
 ---
 
 ## Relations

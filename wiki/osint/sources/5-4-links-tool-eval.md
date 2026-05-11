@@ -16,10 +16,14 @@ related:
   - entities/tools/probablyprofit.md
   - entities/tools/medskillaudit.md
   - entities/tools/klaassen-magnus-elo.md
+  - concepts/mitre-atlas-taxonomy.md
+  - sources/5-5-links-2-tool-eval.md
+  - sources/5-5-links-tool-eval.md
+  - sources/links-3-5-4-tool-eval.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-11
 ---
 
 ## Relations

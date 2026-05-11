@@ -85,9 +85,11 @@ related:
   - entities/models/chronos-bolt.md
   - entities/models/timesfm.md
   - concepts/sae-execution-contract.md
+  - entities/tools/quantmuse.md
+  - sources/mit-quant-bible.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Relations

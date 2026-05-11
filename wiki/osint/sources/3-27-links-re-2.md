@@ -10,10 +10,11 @@ related:
   - sources/4-11-crypto-re.md
   - sources/ssrn-3247865.md
   - concepts/mcp-tool-marketplace.md
+  - sources/signa.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Relations

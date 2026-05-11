@@ -16,10 +16,11 @@ related:
   - entities/infrastructure/deepseek-api.md
   - entities/models/timesfm.md
   - entities/tools/hermes-lcm.md
+  - concepts/mcp-context-optimization.md
 maturity: draft
 read_status: read
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-11
 ---
 
 ## Relations

@@ -14,9 +14,10 @@ related:
   - entities/data-sources/telethon.md
   - entities/infrastructure/localai.md
   - sources/sherry-ternary-quantization-tencent-2026.md
+  - concepts/deepseek-models.md
 maturity: retracted
 created: 2026-04-23
-updated: 2026-04-30
+updated: 2026-05-11
 ---
 
 ## Relations

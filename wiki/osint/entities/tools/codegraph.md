@@ -7,9 +7,12 @@ related:
   - sources/links-2-5-4-tool-eval.md
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/swarmvault.md
+  - entities/tools/git-rewind.md
+  - entities/tools/gitnexus.md
+  - entities/tools/ttok.md
 maturity: validated
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-11
 ---
 
 ## Install state — installed laptop-side 2026-05-04

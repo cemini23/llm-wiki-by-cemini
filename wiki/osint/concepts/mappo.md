@@ -11,9 +11,10 @@ related:
   - entities/frameworks/torchrl.md
   - entities/frameworks/pettingzoo.md
   - sources/microsoft-qlib.md
+  - sources/rl-overview-murphy-2412-05265.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-29
+updated: 2026-05-11
 ---
 
 ## Relations

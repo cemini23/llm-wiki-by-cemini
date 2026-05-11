@@ -10,9 +10,10 @@ related:
   - entities/tools/lazy-tool.md
   - entities/tools/bifrost.md
   - concepts/mcp-tool-marketplace.md
+  - concepts/mcp-context-optimization.md
 maturity: validated
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-11
 adopted: 2026-05-09
 version: 2.0.0
 repo: https://github.com/musistudio/claude-code-router

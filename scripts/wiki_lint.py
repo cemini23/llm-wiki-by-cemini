@@ -24,6 +24,14 @@ from collections import defaultdict
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
 parser.add_argument("--verify-age-days", type=int, default=7,
                     help="Flag [NEEDS VERIFICATION YYYY-MM-DD] tags older than this many days (default: 7)")
+parser.add_argument("--fix-bidirectional", action="store_true",
+                    help="Propose (dry-run) missing-backlink fixes for bidirectional gaps (Phase 4 of "
+                         "obsidian-llm-wiki-local port). Use --apply to actually write.")
+parser.add_argument("--apply", action="store_true",
+                    help="With --fix-bidirectional: write the proposed backlinks. Without --apply, dry-run only.")
+parser.add_argument("--hub-threshold", type=int, default=4,
+                    help="With --fix-bidirectional: skip target pages with > N missing backlinks "
+                         "(those are likely intentional hub-index pages). Default: 4")
 args = parser.parse_args()
 TODAY = date.today()
 
@@ -358,3 +366,109 @@ else:
             print(f"  {src}  →  @{alias}/{rel_path}  (wiki alias not found in CLAUDE.md)")
         else:
             print(f"  {src}  →  @{alias}/{rel_path}  (file not found: {target})")
+
+# -- fix-bidirectional ---------------------------------------------------
+# Phase 4 of obsidian-llm-wiki-local port (`@entities/tools/obsidian-llm-wiki-local.md`).
+# Append missing backlinks to target-page `related:` blocks. Hub pages (intentional
+# many-to-one indexes) skipped via --hub-threshold. Dry-run by default; --apply writes.
+
+RELATED_BLOCK_RE = re.compile(
+    r"(?P<head>^related:\s*\n)(?P<items>(?:\s+-\s+.+\n)*)",
+    re.MULTILINE,
+)
+UPDATED_LINE_RE = re.compile(r"^updated:\s*\d{4}-\d{2}-\d{2}\s*$", re.MULTILINE)
+
+
+def _rewrite_target_page(target_path: Path, new_backlinks: list[str]) -> tuple[bool, str]:
+    """Append *new_backlinks* to target page's `related:` block + bump `updated:` to today.
+
+    Returns (changed, reason). Idempotent on re-run: skips entries already present.
+    """
+    text = target_path.read_text(errors="replace")
+    fm_match = FRONTMATTER_RE.match(text)
+    if not fm_match:
+        return False, "no frontmatter"
+    fm_text = fm_match.group(1)
+    fm_start, fm_end = fm_match.start(1), fm_match.end(1)
+
+    block_match = RELATED_BLOCK_RE.search(fm_text)
+    if not block_match:
+        # No `related:` field at all — insert one before closing of frontmatter.
+        new_block = "related:\n" + "".join(f"  - {bl}\n" for bl in new_backlinks)
+        new_fm = fm_text.rstrip("\n") + "\n" + new_block.rstrip("\n")
+    else:
+        existing_items = set()
+        for line in block_match.group("items").splitlines():
+            s = line.strip()
+            if s.startswith("- "):
+                existing_items.add(s[2:].strip())
+        to_add = [bl for bl in new_backlinks if bl not in existing_items]
+        if not to_add:
+            return False, "already present"
+        insertion = "".join(f"  - {bl}\n" for bl in to_add)
+        block_end = block_match.end("items")
+        new_fm = fm_text[:block_end] + insertion + fm_text[block_end:]
+
+    # Bump updated: today
+    today_str = TODAY.isoformat()
+    if UPDATED_LINE_RE.search(new_fm):
+        new_fm = UPDATED_LINE_RE.sub(f"updated: {today_str}", new_fm, count=1)
+    else:
+        # Insert at end of frontmatter
+        new_fm = new_fm.rstrip("\n") + f"\nupdated: {today_str}"
+
+    new_text = text[:fm_start] + new_fm + text[fm_end:]
+    target_path.write_text(new_text)
+    return True, f"+{len(new_backlinks if not block_match else to_add)}"
+
+
+if args.fix_bidirectional:
+    header(f"FIX-BIDIRECTIONAL — proposed backlink writes (hub-threshold={args.hub_threshold})")
+    proposed = []  # (target, [backlinks])
+    skipped_hubs = []  # (target, count)
+    for tgt in sorted(gaps_by_target.keys()):
+        srcs = gaps_by_target[tgt]
+        if len(srcs) > args.hub_threshold:
+            skipped_hubs.append((tgt, len(srcs)))
+            continue
+        proposed.append((tgt, sorted(srcs)))
+
+    mode = "APPLY" if args.apply else "DRY-RUN"
+    print(f"  Mode: {mode}")
+    print(f"  Proposing {sum(len(b) for _,b in proposed)} backlinks across {len(proposed)} target pages")
+    print(f"  Skipping {len(skipped_hubs)} hub target(s) "
+          f"(more than {args.hub_threshold} missing backlinks — manual review)")
+    if skipped_hubs:
+        print()
+        print("  Hubs skipped:")
+        for tgt, n in skipped_hubs:
+            print(f"    {n:3d}  {tgt}")
+    print()
+    applied = 0
+    skipped_nochange = 0
+    failed = 0
+    for tgt, backlinks in proposed:
+        tgt_path = WIKI / tgt
+        if not tgt_path.exists():
+            print(f"  [SKIP] {tgt}  (target file missing)")
+            failed += 1
+            continue
+        if args.apply:
+            changed, reason = _rewrite_target_page(tgt_path, backlinks)
+            tag = "WROTE" if changed else "SKIP"
+            if changed:
+                applied += 1
+            else:
+                skipped_nochange += 1
+            print(f"  [{tag}] {tgt}  ({reason})")
+        else:
+            print(f"  [PREVIEW] {tgt}  (+{len(backlinks)} backlinks)")
+            for bl in backlinks:
+                print(f"      - {bl}")
+    print()
+    if args.apply:
+        print(f"  Summary: {applied} pages written, {skipped_nochange} already-present, "
+              f"{failed} target-missing, {len(skipped_hubs)} hubs skipped")
+    else:
+        print(f"  Dry-run complete. Re-run with --apply to write {sum(len(b) for _,b in proposed)} "
+              f"backlinks. Adjust --hub-threshold to include/exclude hub targets.")

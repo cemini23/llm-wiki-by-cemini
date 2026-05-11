@@ -14,10 +14,12 @@ related:
   - entities/tools/polymarket-agents.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/cross-venue-arbitrage-pattern.md
+  - sources/5-5-moarrr-tool-eval.md
+  - sources/5-6-links-eval-batch.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations

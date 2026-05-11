@@ -9,10 +9,11 @@ related:
   - sources/incompressible-knowledge-probes-li-2026.md
   - concepts/moe-scaling-laws.md
   - entities/infrastructure/deepseek-api.md
+  - sources/sabr-geometry-aware-correction-2605.06604.md
 maturity: draft
 read_status: read
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-11
 ---
 
 ## Relations

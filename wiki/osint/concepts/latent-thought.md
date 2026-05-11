@@ -7,9 +7,10 @@ related:
   - sources/cot-vs-latent-thought-2509.25239.md
   - sources/thinking-without-words-abstract-cot-2604.22709.md
   - concepts/recursive-multi-agent-systems.md
+  - sources/recursive-multi-agent-systems-2604.25917.md
 maturity: validated
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Raw Concept

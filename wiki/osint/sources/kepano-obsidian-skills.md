@@ -10,10 +10,13 @@ related:
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/obsidian-second-brain-eugeniughelbur.md
   - sources/agriciDaniel-claude-obsidian.md
+  - concepts/curator-skills.md
+  - entities/tools/claude-osint.md
+  - sources/xskill-2603-12056.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-11
 clusters: [llm-agents, librarian-tooling]
 ---
 

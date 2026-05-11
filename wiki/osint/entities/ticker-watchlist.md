@@ -52,9 +52,10 @@ related:
   - sources/stocks-4-4-5.md
   - sources/trading-2-4-5.md
   - sources/trading-4-5.md
+  - entities/tools/financedatabase.md
 maturity: core
 created: 2026-04-23
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Relations

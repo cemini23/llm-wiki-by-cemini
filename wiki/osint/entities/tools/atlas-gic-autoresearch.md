@@ -8,9 +8,11 @@ related:
   - sources/gemini-sci-research-2602-03837.md
   - concepts/autoresearch-loop-pattern.md
   - sources/agriciDaniel-claude-obsidian.md
+  - entities/tools/agentic-soc-platform.md
+  - entities/tools/probablyprofit.md
 maturity: draft
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-11
 ---
 
 ## Relations

@@ -9,9 +9,10 @@ related:
   - sources/caiovicentino-polymarket-mcp-server.md
   - entities/platforms/polymarket.md
   - entities/tools/polymarket-python-order-utils.md
+  - entities/tools/polymarket-trackers.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations

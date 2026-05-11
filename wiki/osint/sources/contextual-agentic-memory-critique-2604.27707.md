@@ -6,10 +6,11 @@ keywords: [agent-memory, RAG, vector-stores, context-window, lookup-vs-memory, e
 related:
   - concepts/agent-memory-critique.md
   - entities/infrastructure/librarian-server-architecture.md
+  - entities/tools/letta-memgpt.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-11
 arxiv: "2604.27707"
 ---
 

@@ -7,10 +7,13 @@ related:
   - concepts/coding-agents-alphazero.md
   - concepts/agent-memory-critique.md
   - concepts/agent-native-research-artifacts.md
+  - concepts/evidence-withheld-verification.md
+  - concepts/exploration-graph-dead-ends.md
+  - concepts/typed-relation-dependencies.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Raw Concept

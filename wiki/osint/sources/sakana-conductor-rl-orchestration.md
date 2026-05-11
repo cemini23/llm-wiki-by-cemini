@@ -15,10 +15,13 @@ related:
   - concepts/ai-organisation-design.md
   - sources/omc-talent-container-paper.md
   - sources/matching-accuracy-different-geometry-es-grpo.md
+  - concepts/policy-distillation.md
+  - sources/4-3-link-research.md
+  - sources/co-evolving-policy-distillation-2604.27083.md
 maturity: validated
 read_status: read
 created: 2026-04-27
-updated: 2026-05-10
+updated: 2026-05-11
 ---
 
 ## Relations

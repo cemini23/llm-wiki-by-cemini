@@ -17,9 +17,10 @@ related:
   - concepts/reasoning-safety-monitor.md
   - concepts/agent-authorization-stack.md
   - sources/safeharness-2604.13630.md
+  - concepts/mitre-atlas-taxonomy.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-11
 ---
 
 ## Relations

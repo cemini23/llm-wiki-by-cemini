@@ -7,9 +7,10 @@ related:
   - sources/5-5-links-tool-eval.md
   - entities/tools/financetoolkit.md
   - entities/ticker-watchlist.md
+  - concepts/prediction-market-historical-analysis.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations

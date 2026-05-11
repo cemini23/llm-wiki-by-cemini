@@ -13,10 +13,12 @@ related:
   - sources/llm-wiki.md
   - concepts/llm-agent-systems.md
   - entities/tools/atlas-gic-autoresearch.md
+  - entities/tools/medskillaudit.md
+  - sources/xskill-2603-12056.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-11
 ---
 
 ## Relations

@@ -15,10 +15,11 @@ related:
   - sources/platonic-representation-hypothesis-huh-2024.md
   - sources/sherry-ternary-quantization-tencent-2026.md
   - sources/shiyu-coder-kronos.md
+  - sources/scaling-moe-inference-expert-activation-2026.md
 maturity: validated
 read_status: read
 created: 2026-04-29
-updated: 2026-04-30
+updated: 2026-05-11
 ---
 
 ## Relations

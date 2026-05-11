@@ -17,10 +17,11 @@ related:
   - sources/polymarket-predictions-mcp.md
   - sources/caiovicentino-polymarket-mcp-server.md
   - sources/last30days-skill-mvanhorn.md
+  - sources/polymarket-microstructure-anatomy-2604.24366.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-29
-updated: 2026-04-30
+updated: 2026-05-11
 ---
 
 ## Relations

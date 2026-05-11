@@ -8,9 +8,10 @@ related:
   - sources/xskill-2603-12056.md
   - sources/agriciDaniel-claude-obsidian.md
   - sources/kepano-obsidian-skills.md
+  - concepts/declarative-data-labeling-skills.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations

@@ -8,9 +8,11 @@ related:
   - sources/agent-native-research-artifacts-2604.24658.md
   - concepts/agent-native-research-artifacts.md
   - entities/infrastructure/librarian-server-architecture.md
+  - concepts/exploration-graph-dead-ends.md
+  - entities/tools/letta-memgpt.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Raw Concept

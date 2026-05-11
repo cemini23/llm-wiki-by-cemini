@@ -17,10 +17,13 @@ related:
   - concepts/high-signal-paper-patterns.md
   - concepts/mcp-tool-marketplace.md
   - sources/agriciDaniel-claude-obsidian.md
+  - concepts/librarian-server-architecture.md
+  - entities/tools/letta-memgpt.md
+  - sources/xskill-2603-12056.md
 maturity: validated
 read_status: deployed
 created: 2026-04-30
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Relations

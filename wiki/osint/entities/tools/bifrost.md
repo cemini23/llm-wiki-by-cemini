@@ -10,9 +10,10 @@ related:
   - entities/tools/lazy-tool.md
   - entities/tools/claude-code-router.md
   - entities/tools/cc-switch.md
+  - concepts/mcp-context-optimization.md
 maturity: validated
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-11
 ---
 
 ## Relations

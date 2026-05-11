@@ -6,6 +6,21 @@ Newest entries on top.
 
 ---
 
+## 2026-05-11 — Claim-evidence anchoring: dedup by canonical value, anchor within ±240 chars
+
+`skill_audit.py` v0.4 calibration surfaced an over-counting bug in the claim-evidence detector. The naive pass treated every textual occurrence of a claim as a distinct claim — so an adoption brief mentioning "MIT license" four times across different sections registered as 4 claims, of which only the first had a nearby `VERIFIED 2026-05-10` anchor → score 1/4 = 25% anchored, even though the claim was fully evidenced. The audit then flagged a clean brief as under-evidenced and recommended rework.
+
+The fix has two parts:
+
+1. **Dedup by `(label, canonical_value)`** — lowercased, whitespace-collapsed, hyphen-stripped. "MIT", "MIT license", "mit-licensed" all canonicalize to `(license, mit)` and count once. Same for version strings (`v0.4.2` ≡ `0.4.2`), star counts (`12k` ≡ `12000`), commit recency (`last commit 2026-05-09` ≡ `commit: 2026-05-09`).
+2. **Anchor window ±240 chars** — a claim is anchored if **any** of its occurrences sit within ±240 characters of a verification token. Tokens: `VERIFIED YYYY-MM-DD`, `Phase-0 audit`, `[Source: ...]`, `[NEEDS VERIFICATION ...]`, `[CONFIRMED]` / `[TENTATIVE]` / `[RETRACTED]`. 240 chars ≈ one prose paragraph, which is the natural unit at which a writer pins evidence to a claim — wider windows leak across topics; narrower windows miss claims mentioned at the start of a paragraph with the citation at the end.
+
+The combined effect: the 4-MIT-mentions brief now registers as 1 anchored claim (the first occurrence is within the window of the `VERIFIED` tag) and audits clean. Repeated mentions don't penalize you, but the first mention must be anchored.
+
+*Apply:* when writing an adoption brief or entity-page synthesis, place the verification anchor near the **first** occurrence of each unique claim. Subsequent mentions are free. Don't sprinkle `VERIFIED` tags throughout — it wastes prose and doesn't move the audit score. When reviewing a brief that audits as under-anchored, look for unique-claim-without-nearby-anchor before assuming the brief actually lacks evidence; the more common failure is anchor-placement (claim in §1, citation in §4) rather than missing-citation.
+
+---
+
 ## 2026-05-10 — Two-layer memory: `hot.md` is curated state, `claude-mem` is passive observation
 
 Installed `claude-mem` v13.0.1 (Apache-2.0, K35 GO) at the laptop level today. It's a Bun/SQLite/ChromaDB worker that observes Claude Code tool calls + file edits and injects top-N semantically-relevant observations on `SessionStart`. This adds a **second memory layer** alongside the existing `hot.md` discipline, and the two must not be conflated:

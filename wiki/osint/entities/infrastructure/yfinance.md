@@ -8,9 +8,11 @@ related:
   - entities/ticker-watchlist.md
   - concepts/equity-intraday-backfill-gap.md
   - sources/vibe-trading-hkuds.md
+  - entities/tools/financetoolkit.md
+  - sources/links-2-5-4-tool-eval.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-05-11
 ---
 
 ## Relations

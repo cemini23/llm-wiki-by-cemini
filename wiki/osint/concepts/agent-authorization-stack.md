@@ -21,9 +21,11 @@ related:
   - sources/safeharness-2604.13630.md
   - sources/signa.md
   - sources/4-11-crypto-re.md
+  - concepts/mitre-atlas-taxonomy.md
+  - sources/xskill-2603-12056.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Relations

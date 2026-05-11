@@ -5,10 +5,11 @@ tags: [reasoning, llm-science, ml-methods, computational-complexity]
 keywords: [chain-of-thought, latent-thought, TCk, parallel-computation, approximate-counting, stochastic-decoding, CoT, reasoning-depth]
 related:
   - concepts/latent-thought.md
+  - sources/thinking-without-words-abstract-cot-2604.22709.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-11
 arxiv: "2509.25239"
 ---
 

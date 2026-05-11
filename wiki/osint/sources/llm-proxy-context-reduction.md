@@ -12,9 +12,10 @@ related:
   - entities/tools/claude-code-router.md
   - entities/models/claude-opus-4-6.md
   - sources/openrouter-efficiency-context-audit.md
+  - concepts/mcp-context-optimization.md
 maturity: validated
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-11
 ---
 
 ## Relations

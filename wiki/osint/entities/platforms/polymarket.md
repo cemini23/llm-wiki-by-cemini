@@ -32,9 +32,12 @@ related:
   - concepts/polymarket-market-making-architectures.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-historical-analysis.md
+  - concepts/polymarket-microstructure-findings.md
+  - sources/polymarket-microstructure-anatomy-2604.24366.md
+  - sources/polymarket-nba-arbitrage-2605.00864.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-09
+updated: 2026-05-11
 ---
 
 ## Relations

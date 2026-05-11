@@ -44,8 +44,10 @@ related:
   - sources/blade-bayesian-listwise-alignment.md
   - sources/regime-conditioned-bo-evaluation.md
   - concepts/regime-conditioned-evaluation.md
+  - concepts/cross-venue-arbitrage-pattern.md
+  - sources/gemini-sci-research-2602-03837.md
 created: 2026-04-29
-updated: 2026-05-07
+updated: 2026-05-11
 maturity: validated
 ---
 

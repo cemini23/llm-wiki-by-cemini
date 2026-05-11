@@ -46,9 +46,11 @@ related:
   - sources/ai-2-4-3.md
   - concepts/openclaw-security-taxonomy.md
   - concepts/agent-authorization-stack.md
+  - concepts/autoresearch-loop-pattern.md
+  - sources/xskill-2603-12056.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-01
+updated: 2026-05-11
 ---
 
 ## Relations

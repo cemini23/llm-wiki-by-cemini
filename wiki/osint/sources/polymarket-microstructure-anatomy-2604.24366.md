@@ -15,9 +15,10 @@ related:
   - sources/polymarket-predictions-mcp.md
   - sources/polymarket-5-5-tool-eval.md
   - sources/caiovicentino-polymarket-mcp-server.md
+  - concepts/cross-venue-arbitrage-pattern.md
 maturity: validated
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-11
 ---
 
 ## Relations

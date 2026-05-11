@@ -28,10 +28,12 @@ related:
   - sources/git-3-5-pt3.md
   - sources/crypto-7-4-11.md
   - concepts/sae-execution-contract.md
+  - concepts/mcp-context-optimization.md
+  - sources/4-3-link-re-2.md
 maturity: validated
 read_status: read
 created: 2026-04-23
-updated: 2026-05-01
+updated: 2026-05-11
 clusters:
   - rl-marl
   - llm-agents

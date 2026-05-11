@@ -6,10 +6,12 @@ keywords: [tool-evaluation, witr, TALOS-V2, iFixAi, Claude-Code-Agent-Monitor, b
 related:
   - concepts/wiki-tooling-evaluation.md
   - sources/more-links-5-2-arch-eval.md
+  - sources/5-4-links-tool-eval.md
+  - sources/links-2-5-4-tool-eval.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Raw Concept

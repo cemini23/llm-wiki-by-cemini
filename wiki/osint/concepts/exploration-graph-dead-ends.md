@@ -7,9 +7,10 @@ related:
   - sources/agent-native-research-artifacts-2604.24658.md
   - concepts/agent-native-research-artifacts.md
   - concepts/agent-memory-critique.md
+  - sources/leworldmodel-2603.19312v2.md
 maturity: validated
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Raw Concept

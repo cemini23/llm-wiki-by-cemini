@@ -10,9 +10,11 @@ related:
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/llm-wiki.md
   - entities/infrastructure/ollama.md
+  - entities/tools/codegraph.md
+  - entities/tools/pageindex.md
 maturity: validated
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-11
 ---
 
 ## Relations

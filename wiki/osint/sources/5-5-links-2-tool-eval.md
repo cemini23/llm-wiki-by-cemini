@@ -16,10 +16,13 @@ related:
   - entities/tools/kalshi-llms-txt.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-historical-analysis.md
+  - concepts/kalshi-api-reference.md
+  - concepts/polymarket-market-making-architectures.md
+  - sources/5-5-moarrr-tool-eval.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations

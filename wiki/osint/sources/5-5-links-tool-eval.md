@@ -14,10 +14,11 @@ related:
   - entities/tools/pageindex.md
   - entities/tools/financedatabase.md
   - entities/tools/claude-osint.md
+  - sources/5-5-moarrr-tool-eval.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations

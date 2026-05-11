@@ -12,10 +12,10 @@ related:
   - concepts/librarian-server-architecture.md
   - concepts/cemini-deployment.md
   - concepts/cemini-license-posture.md
+  - entities/tools/pybroker.md
 maturity: draft
 created: 2026-05-03
-updated: 2026-05-03
-
+updated: 2026-05-11
 # Server-state probe baseline (2026-05-03): both hosts probed live; specs recorded match `free -h` / `df -h` / `nproc` output. Refresh on every spec change.
 ---
 

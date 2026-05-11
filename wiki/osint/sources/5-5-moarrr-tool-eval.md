@@ -14,10 +14,11 @@ related:
   - entities/tools/letta-memgpt.md
   - entities/tools/ttok.md
   - entities/tools/git-rewind.md
+  - sources/5-6-links-eval-batch.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations

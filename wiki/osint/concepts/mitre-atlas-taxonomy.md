@@ -13,9 +13,10 @@ related:
   - concepts/cemini-license-posture.md
   - entities/infrastructure/deepseek-api.md
   - entities/frameworks/fastmcp.md
+  - entities/tools/deepteam.md
 maturity: validated
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-11
 ---
 
 ## Relations

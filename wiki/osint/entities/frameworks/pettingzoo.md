@@ -8,9 +8,10 @@ related:
   - sources/3-19-telegram-discord-research.md
   - concepts/mappo.md
   - entities/frameworks/torchrl.md
+  - sources/leworldmodel-2603.19312v2.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-05-11
 ---
 
 ## Relations

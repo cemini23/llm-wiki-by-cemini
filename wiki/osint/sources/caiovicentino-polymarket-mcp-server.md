@@ -18,10 +18,13 @@ related:
   - entities/infrastructure/deepseek-api.md
   - concepts/high-signal-paper-patterns.md
   - sources/3-26-b.md
+  - entities/tools/polymarket-agents.md
+  - sources/polymarket-5-5-tool-eval.md
+  - sources/polymarket-microstructure-anatomy-2604.24366.md
 maturity: validated
 read_status: read
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-11
 ---
 
 ## Relations

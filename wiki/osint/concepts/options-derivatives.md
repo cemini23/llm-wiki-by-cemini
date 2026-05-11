@@ -29,9 +29,10 @@ related:
   - sources/black-scholes-iv-explicit-schadner-2026.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
   - sources/pta-metric-anchoring-ssrn-4549819.md
+  - sources/mit-quant-bible.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-11
 ---
 
 ## Relations

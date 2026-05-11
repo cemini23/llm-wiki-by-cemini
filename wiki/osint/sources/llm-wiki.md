@@ -13,10 +13,13 @@ related:
   - sources/willynikes2-knowledge-base-server.md
   - sources/agriciDaniel-claude-obsidian.md
   - concepts/librarian-server-architecture.md
+  - entities/tools/swarmvault.md
+  - sources/deep-graphrag-2601-11144.md
+  - sources/gemini-sci-research-2602-03837.md
 maturity: validated
 read_status: validated
 created: 2026-04-23
-updated: 2026-04-30
+updated: 2026-05-11
 ---
 
 ## Relations

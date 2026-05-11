@@ -6,9 +6,10 @@ keywords: [klaassen-magnus-elo, tennis-prediction, sports-prediction-markets, ka
 related:
   - sources/5-4-links-tool-eval.md
   - concepts/cemini-license-posture.md
+  - concepts/prediction-market-historical-analysis.md
 maturity: draft
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-11
 ---
 
 ## Relations

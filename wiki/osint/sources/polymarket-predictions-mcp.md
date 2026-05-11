@@ -15,10 +15,11 @@ related:
   - concepts/high-signal-paper-patterns.md
   - sources/last30days-skill-mvanhorn.md
   - concepts/mcp-tool-marketplace.md
+  - sources/polymarket-microstructure-anatomy-2604.24366.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-29
-updated: 2026-04-30
+updated: 2026-05-11
 ---
 
 ## Relations

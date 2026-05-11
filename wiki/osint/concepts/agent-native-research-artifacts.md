@@ -12,9 +12,10 @@ related:
   - concepts/evidence-withheld-verification.md
   - concepts/typed-relation-dependencies.md
   - concepts/conductor-orchestrator.md
+  - concepts/declarative-data-labeling-skills.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Raw Concept

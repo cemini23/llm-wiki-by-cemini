@@ -15,10 +15,11 @@ related:
   - concepts/ai-organisation-design.md
   - sources/omc-talent-container-paper.md
   - sources/matching-accuracy-different-geometry-es-grpo.md
+  - sources/4-3-link-research.md
 maturity: validated
 read_status: read
 created: 2026-04-28
-updated: 2026-05-10
+updated: 2026-05-11
 ---
 
 ## Relations

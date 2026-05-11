@@ -7,9 +7,10 @@ related:
   - sources/5-5-links-2-tool-eval.md
   - entities/platforms/kalshi.md
   - entities/tools/kalshi-llms-txt.md
+  - concepts/kalshi-api-reference.md
 maturity: validated
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations

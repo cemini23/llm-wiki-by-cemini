@@ -14,9 +14,11 @@ related:
   - sources/polymarket-nba-arbitrage-2605.00864.md
   - concepts/polymarket-microstructure-findings.md
   - concepts/prediction-market-historical-analysis.md
+  - concepts/kalshi-api-reference.md
+  - entities/tools/hftbacktest.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations

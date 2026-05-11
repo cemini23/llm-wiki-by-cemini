@@ -10,9 +10,11 @@ related:
   - entities/tools/bifrost.md
   - entities/tools/claude-code-router.md
   - concepts/context-compression-resume-pattern.md
+  - concepts/mcp-context-optimization.md
+  - entities/tools/cc-switch.md
 maturity: validated
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-11
 adopted: 2026-05-09
 version: 1.0.2
 repo: https://github.com/rpgeeganage/lazy-tool

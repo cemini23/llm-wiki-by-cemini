@@ -18,10 +18,11 @@ related:
   - entities/frameworks/langgraph.md
   - entities/infrastructure/timescaledb.md
   - sources/4-3-link-research.md
+  - sources/4-3-link-re-2.md
 maturity: validated
 read_status: read
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-11
 ---
 
 ## Relations

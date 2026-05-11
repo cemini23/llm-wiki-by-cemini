@@ -24,10 +24,11 @@ related:
   - sources/alash3al-stash.md
   - sources/agriciDaniel-claude-obsidian.md
   - concepts/mcp-tool-marketplace.md
+  - entities/tools/swarmvault.md
 maturity: validated
 read_status: read
 created: 2026-04-28
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Relations

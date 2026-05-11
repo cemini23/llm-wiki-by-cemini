@@ -6,9 +6,11 @@ keywords: [coding-agents, AlphaZero, self-play, MCTS, reinforcement-learning, ml
 related:
   - sources/frontier-coding-agents-alphazero-2604.25067.md
   - concepts/agent-native-research-artifacts.md
+  - concepts/recursive-multi-agent-systems.md
+  - sources/agent-native-research-artifacts-2604.24658.md
 maturity: validated
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Raw Concept

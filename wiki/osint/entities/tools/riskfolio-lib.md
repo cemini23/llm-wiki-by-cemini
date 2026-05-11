@@ -7,9 +7,11 @@ related:
   - sources/links-2-5-4-tool-eval.md
   - entities/tools/financetoolkit.md
   - entities/tools/probablyprofit.md
+  - entities/tools/hftbacktest.md
+  - sources/jpm-portfolio-impact-investment-saltuk-2012.md
 maturity: draft
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-11
 ---
 
 ## Relations

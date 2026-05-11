@@ -7,9 +7,10 @@ related:
   - sources/polymarket-5-5-tool-eval.md
   - entities/platforms/polymarket.md
   - entities/tools/polymarket-agents.md
+  - entities/tools/polymarket-trackers.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations

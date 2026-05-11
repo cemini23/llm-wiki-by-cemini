@@ -7,9 +7,10 @@ related:
   - sources/blade-bayesian-listwise-alignment.md
   - concepts/llm-listwise-alignment.md
   - concepts/cemini-license-posture.md
+  - sources/leworldmodel-2603.19312v2.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-11
 ---
 
 ## Relations

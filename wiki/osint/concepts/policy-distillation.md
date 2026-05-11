@@ -11,9 +11,11 @@ related:
   - concepts/agent-native-research-artifacts.md
   - sources/blade-bayesian-listwise-alignment.md
   - concepts/llm-listwise-alignment.md
+  - concepts/recursive-multi-agent-systems.md
+  - sources/recursive-multi-agent-systems-2604.25917.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-05-07
+updated: 2026-05-11
 ---
 
 ## Raw Concept

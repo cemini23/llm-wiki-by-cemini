@@ -22,10 +22,12 @@ related:
   - sources/3-29-research-6.md
   - sources/3-17-agent-research.md
   - concepts/cemini-license-posture.md
+  - concepts/quant-finance.md
+  - concepts/rl-marl-research.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
-updated: 2026-05-01
+updated: 2026-05-11
 ---
 
 ## Relations

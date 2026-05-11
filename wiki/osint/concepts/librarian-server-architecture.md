@@ -25,9 +25,13 @@ related:
   - sources/alash3al-stash.md
   - entities/infrastructure/cemini-stack.md
   - concepts/cemini-deployment.md
+  - entities/tools/obsidian-llm-wiki-local.md
+  - entities/tools/pageindex.md
+  - entities/tools/sift-kg.md
+  - entities/tools/swarmvault.md
 maturity: validated
 created: 2026-04-28
-updated: 2026-05-02
+updated: 2026-05-11
 ---
 
 ## Relations
