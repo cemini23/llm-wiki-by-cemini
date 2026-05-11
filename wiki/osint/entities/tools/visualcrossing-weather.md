@@ -14,6 +14,7 @@ maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
 phase_0_audit: CONDITIONAL-GO 2026-05-11 (backtesting-only role; interpolation gap on contract-resolution path)
+adoption_status: DEFERRED 2026-05-11 (no spend now; Free tier is $0/mo so adoption gate is workstream-readiness, not budget — reactivate when Kalshi weather-contract backtest scope opens)
 ---
 
 ## Relations

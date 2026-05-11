@@ -13,6 +13,7 @@ maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
 phase_0_audit: GO 2026-05-11 (live Kalshi/Polymarket-resolution path; vendor-age risk via circuit breakers)
+adoption_status: DEFERRED 2026-05-11 (no spend now; reactivate when first Kalshi weather strategy reaches paper-trade phase OR $24.99/mo budget cleared)
 ---
 
 ## Relations
