@@ -1,5 +1,43 @@
 # Wiki Log
 
+## [2026-05-11] ingest | K37 + K38 + 3 papers — 5-source batch (21+29-URL eval briefs + ODINI + Reinforced Agent + Signals)
+
+Five-source ingest batch dropped into `research to be indexed/`. Triaged + extracted in a single session. Mixed: 2 multi-URL evaluation briefs (K37 + K38) + 3 academic papers (1 security reference + 2 Conductor-relevant agent-architecture papers).
+
+**K37 — Evaluating URLs for System Integration (21 URLs)**:
+- Source page: [sources/evaluating-urls-system-integration.md](sources/evaluating-urls-system-integration.md). Three-surface methodology (Cemini prod / Wiki librarian / Workflow laptop).
+- Tier rollup: 3 Adopt (Visual Crossing Weather, UI-TARS-desktop, markdown-preview-pluk), 6 Steal-from (claude-bootstrap, ASB, Beever Atlas, homelab-hub, ebay-mcp, contextlattice), 3 Reference-only (WeatherAPI, Paper2Any, LLMs-from-scratch), 1 Defer (OpenWeather), 8 UNAVAILABLE (URLs 1, 6, 8, 10, 11, 12, 16, 19 — for Exa-resolution).
+- 13 entity stubs created in `wiki/entities/tools/`.
+- **Cross-wiki routing**: `markdown-preview-pluk` routed as briefs to image-gen/seo/3d-printing wikis (macOS native markdown previewer with LaTeX + Mermaid benefits all wikis).
+
+**K38 — Link Evaluation Brief for Trading Stack (29 URLs)**:
+- Source page: [sources/link-evaluation-brief-trading-stack.md](sources/link-evaluation-brief-trading-stack.md). Heavy trading-stack + agent-tooling bias.
+- Tier rollup: 6 Adopt (Readme.skill, Perplexity MCP, Google Colab VSCode, 9router, guild MCP, wethr.net), 6 Steal-from (google-research, CloddsBot, AI-Trader, MegaMemory, hackers-arise Telegram OSINT, METATRON), 5 Reference-only, 3 Defer (agent-skills-eval, windy.com, opencode.ai), 5 Reject, 4 UNAVAILABLE.
+- 25 entity stubs created in `wiki/entities/tools/`.
+- **License rejects**: Medusa Pantheon (AGPL-3.0 hard reject), TokenSpeed (GPU + privileged Docker), ssh-keys-manager-stmol (security anti-pattern), tropicaltidbits (copyright restricted), D3Ext/WEF (domain mismatch).
+- **Weather/prediction-market cluster** (URLs 11-13, 28-29): wethr.net is the singular Adopt — explicitly built for Kalshi/Polymarket weather probability modeling.
+- **Trading-bot cluster** (URLs 9, 10): CloddsBot for multi-agent routing logic + risk-engine math + MCP tool schemas; AI-Trader for IBKR + background-worker isolation pattern.
+
+**3 papers (PDF inserts)**:
+- [sources/odini-air-gap-magnetic-field.md](sources/odini-air-gap-magnetic-field.md) — ODINI CPU magnetic-field exfiltration (Guri et al., BGU, 2018). Reference-only context; outside Cemini scope but informs defensive thinking on air-gap assumptions.
+- [sources/reinforced-agent-tool-calling-feedback.md](sources/reinforced-agent-tool-calling-feedback.md) — **Apple Reinforced Agent** (arXiv 2604.27233v1, Apr 2026). HIGH-fit for Conductor. Reviewer agent gates provisional tool calls. +5.5% BFCL irrelevance, +7.1% τ²-Bench, o3-mini 3:1 benefit-risk, GEPA +1.5-2.8%. Latency: 6.2× single-turn / 2.4× multi-turn — Cemini's multi-turn trading regime is the favorable amortization side.
+- [sources/signals-trajectory-triage.md](sources/signals-trajectory-triage.md) — **DigitalOcean Signals** (arXiv 2604.00356v1, Apr 2026). HIGH-fit for Conductor + audit-trail. Cheap non-LLM signals (interaction/execution/environment families) attached to every trajectory. 82% informativeness vs 74% heuristic / 54% random. ~200-300 LOC drop-in.
+
+**2 concept pages created**:
+- [concepts/reviewer-agent-inference-time-feedback.md](concepts/reviewer-agent-inference-time-feedback.md) — pattern extracted; Cemini-specific application + open questions + selective-trigger gating discipline.
+- [concepts/agent-trajectory-triage-signals.md](concepts/agent-trajectory-triage-signals.md) — taxonomy + 4 integration paths (Conductor audit JSONL, claude-mem prioritization, operator dashboard, future preference-data).
+
+**Pairing observation**: Reinforced Agent (inference-time gating) + Signals (post-hoc triage) are architecturally complementary. Complete Conductor v2 design uses both — reviewer gates risky calls inline; signals triage the resulting stream for downstream learning. They share no implementation surface.
+
+**License posture warnings** (gate before Phase-0 promotion):
+- Medusa (AGPL-3.0 hard reject — confirmed)
+- TokenSpeed (license + hardware gate — hard reject)
+- claude-bootstrap, Beever Atlas, contextlattice, ASB, homelab-hub, ebay-mcp, MegaMemory, CloddsBot, AI-Trader, METATRON, hackers-arise tutorial, vault-search, Liquid4All, opencode.ai — Phase-0 license audit pending before any code lift
+
+**Pages touched**: 5 source + 38 entity + 2 concept = 45 new pages. index.md + log.md updated.
+
+**Next**: SCP 5 raw sources to `/opt/cemini-bulk/research/`, remove laptop copies, run `wiki_lint.py`, commit + push, update hot.md + ROADMAP.md.
+
 ## [2026-05-10] adoption | skill_audit v0.5 ship — codex pressure-test 4-mode adversarial review + `_llm_retry.py` Phase 2 ported
 
 Brief-audit upgrade sprint **step 3 SHIPPED 2026-05-10** as `scripts/skill_audit.py` v0.5 (opt-in `--llm-mode` flag) + new `scripts/_llm_retry.py` (3-tier structured-output retry helper). Closes the K32 batch's `codex-startup-pressure-test-skill` STEAL-FROM action AND `obsidian-llm-wiki-local` Phase 2 in a single commit — the two adoptions were always entangled (one provides the prompts, the other the retry plumbing).

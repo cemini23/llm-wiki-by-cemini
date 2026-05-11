@@ -8,12 +8,13 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
-## Current state (end of 2026-05-10)
+## Current state (end of 2026-05-11)
 
-- **Wiki**: 624 pages indexed (607 + 17 K36 = 1 source + 14 tool entities + 2 concepts). K36 adds the trading-stack evaluation brief (17 URLs, three-surface scoring), with 2 new architectural concepts: `cross-channel-agent-gateway.md` (picobot/mercury pattern) + `declarative-data-labeling-skills.md` (Adala/finance-skills pattern).
-- **K-series**: K36 complete (17-URL trading-stack evaluation brief). Tier rollup: 4 Adopt (picobot, ctop, QuantMuse, Adala) + 4 Steal-from + 1 split (finance-skills) + 2 Reference/Defer + 3 Reject (AppFlowy AGPL-3.0, dflash CUDA, floci AWS-emulator) + 3 UNAVAILABLE.
+- **Wiki**: 669 pages indexed (+45 K37/K38 = 5 source + 38 tool entity + 2 concept). K37 + K38 add two evaluation briefs (21-URL + 29-URL) plus 3 paper-form sources (Reinforced Agent, Signals, ODINI). 2 new concept pages capture the reviewer-agent inference-time-feedback and trajectory-triage-signals patterns.
+- **K-series**: K37 (21-URL system-integration eval) + K38 (29-URL trading-stack eval) complete. K37 tier rollup: 3 Adopt + 6 Steal-from + 3 Reference + 1 Defer + 8 UNAVAILABLE. K38 tier rollup: 6 Adopt + 6 Steal-from + 5 Reference + 3 Defer + 5 Reject (Medusa AGPL + TokenSpeed + tropicaltidbits + D3Ext/WEF + ssh-keys-manager-stmol) + 4 UNAVAILABLE.
+- **K-series prior**: K36 complete (17-URL trading-stack evaluation brief). Tier rollup: 4 Adopt (picobot, ctop, QuantMuse→NO-GO, Adala) + 4 Steal-from + 1 split (finance-skills) + 2 Reference/Defer + 3 Reject + 3 UNAVAILABLE.
 - **K35 status**: complete (4-source eval batch, 55 tools across 3 surfaces). Three-surface evaluation methodology codified.
-- **Inbox**: CLEAN (K36 source moved to librarian 2026-05-10)
+- **Inbox**: CLEAN (K37/K38 sources + 3 papers moved to librarian 2026-05-11)
 - **Step 81 — SSHD on Prod**: ✅ COMPLETE (2026-05-09). `openssh-server` installed + hardened `sshd_config` on `cemini-prod`. Verified end-to-end connectively from workspace laptop. Prereq for Step 82. Brief: `briefs/2026-05-09_step81-sshd-prod.md`.
 - **Step 82 — Prod Smoke Test**: PARTIAL PASS (2026-05-09). Conductor pipeline ✅, Stash ✅, Calibration ✅. Redis/EMS ❌ blockers. See `briefs/2026-05-09_step82-production-smoke-test.md`.
 - **Next**: Resolving Redis + EMS blockers before Step 83 (live deployment). 3 K34 adoption briefs reviewed: 2 GO (polymarket-onchain-data-pipeline, mcp-context-optimization-stack) + 1 CONDITIONAL-GO (sabr-geometry-aware-calibration: audit SABR usage first).
@@ -32,9 +33,30 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Next — actually pending action
 
+**K37 + K38 ingest complete 2026-05-11**. **Phase-0 audit queue** (12+ Steal-from items, license verification pending — all low-risk pattern-extraction, no code lift): CloddsBot, AI-Trader, MegaMemory, ebay-mcp, Beever Atlas, contextlattice, METATRON, hackers-arise tutorial, ASB, homelab-hub, claude-bootstrap, google-research subfolders. **K37/K38 Adopt-tier prod candidates** (highest-impact): Visual Crossing Weather + wethr.net (Kalshi/Polymarket weather contracts data stack), Perplexity MCP + 9router + guild MCP (MCP infrastructure cluster), Readme.skill + Google Colab VSCode (workflow). **2 prototype workstreams seeded by paper ingests**: (a) Reviewer-agent Conductor prototype — DeepSeek-R1 reviewer gating side-effecting tools, ~200-400 LOC Phase-0; (b) Signals audit-JSONL prototype — `signals` field on per-trajectory close-out, ~200-300 LOC Phase-0. Cross-wiki routes shipped (3 briefs): markdown-preview-pluk → image-gen-wiki + seo-wiki + 3d-printing-wiki (all markdown-based).
+
 K36 ingest complete 2026-05-10. **Phase-0 audit queue** (before any K36 prod brief drafts): picobot (MCP-native Go gateway, MIT), QuantMuse (Python+C++ quant stack, MIT), Adala (Apache-2.0 data-labeling with reflection loop — 2.5-yr abandonment-risk flag). ctop + finance-skills are laptop-only adoptions (lower blast radius, audit deferred). Cross-wiki route shipped: URL 10 (digital-marketing-pro) → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md`.
 
 K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-target + 6 workspace-laptop-target). Phase-0 audits for the 3 CONDITIONAL-GO items complete 2026-05-10 — all upgraded to **GO**. K35 follow-ups: (1) K35 Steal-from extractions (SPJ algorithm port, TPE sampling, Bradley-Terry, spec-kit template patterns) — still open; (2) **Brief-audit upgrade sprint: sequential ship — steps 1+2+3 SHIPPED 2026-05-10**. Step 1 (`scripts/skill_audit.py` v0.3) ported academic-paper-skills 35-pt framework: 10 checks, 3 new (`brief_completeness` + `risk_discipline` + `phasing`), ops/research-brief exemption gate. Step 2 (v0.4) ported research-paper-writing claim-evidence + abstract synthesis: 12 checks, 2 new (`check_claim_evidence` 0.06, `check_abstract_synthesis` 0.04) carved from citations + prose_quality weights; calibration verified on 7 briefs. Step 3 (v0.5) ported codex pressure-test 4-mode adversarial review prompts via opt-in `--llm-mode` flag (DeepSeek `deepseek-chat` single combined-call structured output) backed by NEW `scripts/_llm_retry.py` 3-tier retry helper (port of kytmanov/obsidian-llm-wiki-local `structured_output.py` Phase 2). Calibration on ARIS adoption brief: Tier 1 success in 15s no retries, REWORK verdict, 4 fatal flaws surfaced (2 HIGH + 2 MEDIUM, one per mode), competition-map correctly identified Cemini's existing stack as displacement. Sprint COMPLETE; hierarchical section optimization (3rd DR-named research-paper pattern) deferred — can plug into the same `--llm-mode` infrastructure later if needed; (3) Workspace-laptop install execution for the 6 K35 GO tools — still open.
+
+### K37/K38 follow-ups
+
+| Item | Action | Status |
+|------|--------|--------|
+| **K37 Adopt — Visual Crossing Weather** | 50-yr historical weather depth for Kalshi/Polymarket weather contracts. Pair with K38 wethr.net | Phase-0 audit pending |
+| **K37 Adopt — UI-TARS-desktop** | Desktop AI agent; eval verdict Adopt for workflow laptop | Phase-0 audit pending |
+| **K37 Adopt — markdown-preview-pluk** | Native macOS .md previewer; cross-wiki briefs shipped to image-gen + seo + 3d-printing wikis | Cross-wiki routed 2026-05-11; install pending |
+| **K38 Adopt — wethr.net** | Singular weather Adopt for Kalshi/Polymarket weather contracts | Phase-0 audit pending |
+| **K38 Adopt — Perplexity MCP** | Live-search gap closer | Phase-0 audit pending |
+| **K38 Adopt — 9router** | Token-compressing proxy (~65% reduction claim); MCP infrastructure | Phase-0 audit pending |
+| **K38 Adopt — guild MCP** | Go binary, BM25 + int8 ONNX hybrid retrieval — potential Ollama replacement on Hetzner CPX21 | Phase-0 audit pending |
+| **K38 Adopt — Readme.skill** | Skill catalog discipline pattern | Phase-0 audit pending |
+| **K38 Adopt — Google Colab VSCode** | Workflow laptop integration | Phase-0 audit pending |
+| **Conductor reviewer-agent prototype** | Apple Reinforced Agent pattern; DeepSeek-R1 reviewer + DeepSeek-V3 base; selective-trigger gating on `place_order`/`withdraw`. ~200-400 LOC Phase-0 prototype | Recommended next step |
+| **Signals audit-JSONL prototype** | DigitalOcean Signals pattern; `signals` field on per-trajectory close-out. Phase 0 schema addition + dashboard filter; ~200-300 LOC | Recommended next step |
+| **K37/K38 Steal-from license verification** | 12+ items: CloddsBot, AI-Trader, MegaMemory, ebay-mcp, Beever Atlas, contextlattice, METATRON, hackers-arise tutorial, ASB, homelab-hub, claude-bootstrap, google-research subfolders | License check before extraction |
+| **K37 UNAVAILABLE URLs** (URLs 1, 6, 8, 10, 11, 12, 16, 19) | Exa-resolution pass; Tier 1 gap detection will catch as cited-unread stubs | Deferred |
+| **K38 UNAVAILABLE URLs** (URLs 17, 20, 24, 25) | Same — Exa-resolution pass | Deferred |
 
 ### K36 follow-ups
 
@@ -164,6 +186,51 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 | **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-04 (clean baseline) |
 | **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-01 (within 7-day cadence) |
 | **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
+
+---
+
+## Done — 2026-05-11 K37 + K38 + 3-paper ingest (50-URL eval batch + 2 conductor-relevant concept extractions)
+
+### K37 — Evaluating URLs for System Integration (21-URL)
+
+- **Source**: `Evaluating Urls System Integration.docx` (~75 KB), ingested 2026-05-11 → moved to `cemini-librarian:/opt/cemini-bulk/research/`.
+- **14 wiki pages**: 1 source (`evaluating-urls-system-integration.md`) + 13 entity stubs (8 reachable + 5 UNAVAILABLE).
+- **Tier rollup**: 3 Adopt (Visual Crossing Weather, UI-TARS-desktop, markdown-preview-pluk) | 6 Steal-from (claude-bootstrap, ASB, Beever Atlas, homelab-hub, ebay-mcp, contextlattice) | 3 Reference-only | 1 Defer | 8 UNAVAILABLE.
+
+### K38 — Link Evaluation Brief for Trading Stack (29-URL)
+
+- **Source**: `Link Evaluation Brief for Trading Stack.docx` (~95 KB), ingested 2026-05-11 → moved to `cemini-librarian:/opt/cemini-bulk/research/`.
+- **26 wiki pages**: 1 source (`link-evaluation-brief-trading-stack.md`) + 25 entity stubs.
+- **Tier rollup**: 6 Adopt (Readme.skill, Perplexity MCP, Google Colab VSCode, 9router, guild MCP, wethr.net) | 6 Steal-from (google-research, CloddsBot, AI-Trader, MegaMemory, hackers-arise OSINT, METATRON) | 5 Reference-only | 3 Defer | 5 Reject (Medusa AGPL hard reject + TokenSpeed + tropicaltidbits + D3Ext/WEF + ssh-keys-manager-stmol) | 4 UNAVAILABLE.
+
+### K37/K38 papers (3 PDFs)
+
+- **Reinforced Agent** (Apple, arXiv 2604.27233v1) → `wiki/sources/reinforced-agent-tool-calling-feedback.md` + concept page `wiki/concepts/reviewer-agent-inference-time-feedback.md`. **HIGH-fit Conductor**. Reviewer agent gates provisional tool calls pre-execution. +5.5% BFCL irrelevance, +7.1% τ²-Bench, o3-mini 3:1 benefit-risk, GEPA +1.5-2.8%. Latency: 6.2× single-turn / 2.4× multi-turn (Cemini multi-turn trading regime amortizes favorably).
+- **Signals** (DigitalOcean, arXiv 2604.00356v1) → `wiki/sources/signals-trajectory-triage.md` + concept page `wiki/concepts/agent-trajectory-triage-signals.md`. **HIGH-fit Conductor**. Cheap non-LLM signals (interaction/execution/environment families) attached to every trajectory. 82% informativeness vs 74% heuristic / 54% random. ~200-300 LOC drop-in on top of audit JSONL.
+- **ODINI** (BGU 2018, air-gap magnetic-field exfil) → `wiki/sources/odini-air-gap-magnetic-field.md`. Reference-only context (intentional orphan; not adoption-eligible).
+
+### Cross-wiki routes (3)
+
+- `wiki/entities/tools/markdown-preview-pluk.md` routed as briefs to:
+  - `image-gen-wiki/briefs/2026-05-11_2026-05-11_markdown-preview-pluk-cross-wiki.md`
+  - `seo-wiki/briefs/2026-05-11_2026-05-11_markdown-preview-pluk-cross-wiki.md`
+  - `3d-printing-wiki/briefs/2026-05-11_2026-05-11_markdown-preview-pluk-cross-wiki.md`
+- All 3 target wikis are markdown-based; macOS native previewer with LaTeX+Mermaid benefits each. Briefs preferred over stubs to avoid maintenance burden in target wikis.
+
+### Lint baseline
+
+- `python3 scripts/wiki_lint.py` post-ingest: **0 cross-wiki dangling**. Other counts (orphans 11, bidir gaps 266, dangling 13, stale tags 110) at pre-existing baseline; no new issues introduced.
+- Cross-wiki routing convention learned: briefs live outside `wiki/` (repo-root level), so do NOT use `@wiki-alias/path` syntax in entity Relations sections (lint resolver assumes wiki-relative paths). Use prose mention instead. Applied fix to `wiki/entities/tools/markdown-preview-pluk.md`.
+
+### Pairing observations
+
+- **Reviewer-agent + Signals are architecturally complementary**: reviewer is inline-time (gates risky tool calls before execution); signals are post-hoc triage (attribute trajectories for downstream learning/debugging). Concept pages cross-reference each other. A complete Conductor v2 design uses both in parallel.
+- **K37 Visual Crossing + K38 wethr.net = full weather-strategy stack** for Kalshi/Polymarket weather contracts (50-yr historical depth + free current-data API).
+- **K38 MCP infrastructure cluster** (Perplexity + 9router + guild) addresses the live-search gap + token-compression + retrieval-engine layers in one ingest pass.
+
+### Pages touched
+
+45 new (5 source + 38 entity + 2 concept). `index.md` + `log.md` updated. `hot.md` rewritten with session-end position cache.
 
 ---
 
