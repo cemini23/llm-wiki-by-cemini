@@ -1,5 +1,41 @@
 # Wiki Log
 
+## [2026-05-10] adoption | skill_audit v0.5 ship — codex pressure-test 4-mode adversarial review + `_llm_retry.py` Phase 2 ported
+
+Brief-audit upgrade sprint **step 3 SHIPPED 2026-05-10** as `scripts/skill_audit.py` v0.5 (opt-in `--llm-mode` flag) + new `scripts/_llm_retry.py` (3-tier structured-output retry helper). Closes the K32 batch's `codex-startup-pressure-test-skill` STEAL-FROM action AND `obsidian-llm-wiki-local` Phase 2 in a single commit — the two adoptions were always entangled (one provides the prompts, the other the retry plumbing).
+
+- **Four codex modes re-styled for brief-audit context** (was: startup-idea evaluation; now: tool-adoption-brief evaluation):
+  - `pressure-test` — find fatal flaws in adopting this tool
+  - `problem-validation` — is the Cemini pain this brief addresses real, or imagined?
+  - `competition-map` — does Cemini's existing stack already cover this? (kept discipline that current behavior is always a competitor)
+  - `mvp-plan` — what is the smallest test that proves/kills the adoption?
+  - NOT ported: `first-10-customers` (irrelevant — we're not selling to customers), `full` (redundant with combined-call architecture).
+- **Architecture: single combined-call structured output**. One DeepSeek `deepseek-chat` API call per brief returning a Pydantic v2 schema (`FatalFlaw[]` + `verdict` + `competition_check` + `summary` + `model` + `latency_ms`). Aligns with olw's small-flat-schema discipline; keeps API cost to 1 call per `--llm-mode` invocation.
+- **Advisory by default**: dynamic findings render alongside static checks but do NOT change the static score. Static veto gates (regime-disclosure, Operational Stability, Scientific Integrity) take precedence. `--strict-dynamic` flag upgrades a dynamic "reject" verdict to top-level REJECT iff no static veto gates already fired.
+- **NEW: `scripts/_llm_retry.py`** (~280 lines, Phase 2 port of `kytmanov/obsidian-llm-wiki-local/src/obsidian_llm_wiki/structured_output.py`). 3-tier retry:
+  - Tier 1: DeepSeek `response_format={"type":"json_object"}` + fill-in-template system prompt + `_unwrap` post-processor (handles 3 common mis-wrappings: single-key dict, single-key string-encoded JSON, JSON-Schema echo with `properties` wrapper).
+  - Tier 2: regex `_extract_json`: ` ```json` fence → bare ` ``` ` → first `{...}`.
+  - Tier 3: re-prompt with parser error embedded, up to `max_retries=2`.
+  - Ollama-specific bits stripped; telemetry reduced to single stderr log line per call (`[_llm_retry] stage=... model=... tier=... retries=... latency_ms=... status=ok|fail`).
+  - Module defaults: `DEFAULT_MODEL="deepseek-chat"`, `DEFAULT_BASE_URL="https://api.deepseek.com/v1"`. `_get_client()` builds `openai.OpenAI(api_key=$DEEPSEEK_API_KEY)` lazily.
+- **Calibration result** (`briefs/2026-05-10_aris-adoption.md`):
+  - Tier 1 success in 14805ms on first try (no retries triggered)
+  - Dynamic verdict: **REWORK** (signal-bearing — static checks had passed at 99.5/100; dynamic check caught the strategic flaw the static checks couldn't see)
+  - 4 fatal flaws surfaced (one per mode):
+    - [HIGH/pressure-test] Triage of 78 SKILL.md files deferred without methodology — fast test: "Pick 3 skills (idea-creator, experiment-plan, research-wiki) and benchmark each against existing wiki/Conductor workflows within 1 day."
+    - [HIGH/problem-validation] Existing pipelines not demonstrated to fail; pain point unvalidated — fast test: "Document one recent OSINT task where current tooling fell short and ARIS would have helped."
+    - [MEDIUM/competition-map] ARIS duplicates DeepSeek + wiki scripts + LangGraph + kb-server — fast test: "List 3 specific tasks ARIS could do that current Cemini stack cannot."
+    - [MEDIUM/mvp-plan] Phase 1 plan vague — fast test: "Copy idea-creator/SKILL.md to ~/.claude/skills/ and invoke it on SSRN 4943355 within 1 day; pass if output materially exceeds current wiki idea-page format."
+  - Competition check correctly named Cemini's existing stack: "DeepSeek for synthesis, wiki scripts for structured output, LangGraph for multi-step workflows, kb-server for knowledge management"
+  - Telemetry: `[_llm_retry] stage=skill_audit_dynamic model=deepseek-chat tier=1 retries=0 latency_ms=14805 status=ok`
+- **Updated entities**:
+  - `wiki/entities/tools/codex-startup-pressure-test-skill.md` → `maturity: validated`, new `adopted_as: scripts/skill_audit.py v0.5 (2026-05-10)` field, `adopted` tag added, full adoption-status block replacing pending-Phase-1 placeholder.
+  - `wiki/entities/tools/obsidian-llm-wiki-local.md` → `maturity: validated`, new `phase2_ported_as: scripts/_llm_retry.py (2026-05-10)` field, `partial-adopted` tag added. Phase 1 (Phase-0 audit) + Phase 2 (3-tier retry port) both DONE; Phases 3-4 (orphan suggestion + bidirectional wikilink auto-rewrite in `wiki_lint.py`) deferred — pain-driven, no current need.
+- **Sprint COMPLETE for the K32 batch**: 4 patterns ported into `skill_audit.py` across v0.3 / v0.4 / v0.5. Hierarchical section optimization (3rd DR-named research-paper pattern) deferred — can plug into the same `--llm-mode` infrastructure when a real need arises.
+- **Anti-pattern avoided** — build-on-demand discipline: the decision to defer `_llm_retry.py` from 2026-05-06 to 2026-05-10 was correct. The helper's API shape (e.g., `stage=` parameter for telemetry tagging, `api_key=` override for tests) was driven by `skill_audit.py`'s actual needs, not invented preemptively.
+
+**Updated**: `scripts/skill_audit.py` (v0.4 → v0.5), `scripts/_llm_retry.py` (NEW), `wiki/entities/tools/codex-startup-pressure-test-skill.md`, `wiki/entities/tools/obsidian-llm-wiki-local.md`, `ROADMAP.md`, `hot.md`.
+
 ## [2026-05-10] adoption | skill_audit v0.4 ship — research-paper-writing claim-evidence + abstract synthesis ported
 
 Brief-audit upgrade sprint **step 2 SHIPPED 2026-05-10** as `scripts/skill_audit.py` v0.4. Two new static checks distilled from `master-cai/Research-Paper-Writing-Skills` (K32 STEAL-FROM brief). Pattern source is abandoned (4 commits / 0 releases) — re-styled as deterministic Python checks rather than DeepSeek prompts; LLM-as-judge dynamic-check version deferred to upcoming codex pressure-test step.

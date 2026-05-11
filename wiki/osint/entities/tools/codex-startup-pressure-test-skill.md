@@ -1,7 +1,7 @@
 ---
 title: codex-startup-pressure-test-skill — Pressure-Test/MVP-Plan Prompt Patterns (MIT)
 type: entity
-tags: [tool, prompt-engineering, mit-license, steal-from-tier, abandoned-project, codex-skill]
+tags: [tool, prompt-engineering, mit-license, steal-from-tier, abandoned-project, codex-skill, adopted]
 keywords: [pressure-test, problem-validation, competition-map, mvp-plan, codex-skill, prompt-pattern-library, kappaemme-git]
 related:
   - sources/5-6-links-eval-batch.md
@@ -9,9 +9,10 @@ related:
   - entities/tools/research-paper-writing-skills.md
   - entities/tools/academic-paper-skills.md
   - entities/tools/obsidian-llm-wiki-local.md
-maturity: draft
+maturity: validated
+adopted_as: scripts/skill_audit.py v0.5 (2026-05-10)
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-10
 ---
 
 ## Relations
@@ -74,9 +75,35 @@ Estimated effort: 1-2 hours total. Low-priority but high-leverage.
 - ⚠ Exact instructional prompt texts — DR notes these were not visible in the evaluated surface context; manual repo inspection required
 - ⚠ Are the prompts opinionated about specific stack assumptions (e.g., SaaS startup vs developer tool vs financial trading)? Re-styling cost depends on this
 
-### Adoption status — STEAL-FROM, NOT INSTALLED
+### Adoption status — ADOPTED into `scripts/skill_audit.py` v0.5 (2026-05-10)
 
-Phase-1 audit pending. No npm package installed.
+Phase-1 audit completed 2026-05-10 at `/tmp/codex-pressure-test-audit/`. License verified MIT (Francesco Mistero 2026). Repo layout: `SKILL.md` (148 lines) + `references/playbooks.md` (191 lines) + `agents/openai.yaml` + `scripts/install.js`. JS install path skipped per DR; the **four prompt patterns** were extracted from `references/playbooks.md` and re-styled for the brief-audit (tool-adoption) context.
+
+**What was ported in v0.5**:
+- `pressure-test` mode → "find fatal flaws in adopting this tool"
+- `problem-validation` mode → "is the Cemini pain this brief addresses real, or imagined?"
+- `competition-map` mode → "does Cemini's existing stack already cover this?" (current behavior is always a competitor)
+- `mvp-plan` mode → "what is the smallest test that proves/kills the adoption?"
+
+**What was NOT ported**:
+- `first-10-customers` mode — irrelevant to internal tool adoption (we're not selling to customers)
+- `full` mode — just runs all the others; redundant with combined-call architecture
+- 6-row scorecard format — kept brief-audit's 12-check static-score scheme; dynamic findings render as advisory section
+
+**Implementation pattern**:
+- Single LLM call returning a combined verdict via Pydantic structured-output (4 modes in one schema)
+- System prompt is module-constant `_DYNAMIC_SYSTEM_PROMPT` in `scripts/skill_audit.py:~190`
+- Severity scale aligned with brief-audit's static-veto language: HIGH/MEDIUM/LOW
+- Advisory by default: dynamic findings render alongside static checks, do NOT change static score
+- `--strict-dynamic` flag upgrades a dynamic "reject" verdict to top-level REJECT (only if no static veto gates already fired)
+
+**Calibration result** (2026-05-10, ARIS adoption brief, DeepSeek `deepseek-chat`):
+- Tier 1 success in ~15s (no retries needed)
+- Dynamic verdict: **REWORK**
+- Surfaced 4 fatal flaws (2 HIGH + 2 MEDIUM), one per mode
+- Notable: competition-map correctly identified that "DeepSeek for synthesis, wiki scripts for structured output, LangGraph for multi-step workflows, kb-server for knowledge management" already cover ARIS's claimed value-add. Static checks had passed the brief; the dynamic check caught the strategic flaw.
+
+Signal-bearing, not noise. The check is working as designed.
 
 ## Snippets
 

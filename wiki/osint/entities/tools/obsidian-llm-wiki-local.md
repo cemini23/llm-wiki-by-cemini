@@ -1,16 +1,17 @@
 ---
 title: obsidian-llm-wiki-local — Karpathy LLM Wiki Maintenance Toolkit (Python)
 type: entity
-tags: [tool, wiki-tooling, karpathy-pattern, mit-license, steal-from-tier, python, laptop-only, phase1-audited]
+tags: [tool, wiki-tooling, karpathy-pattern, mit-license, steal-from-tier, python, laptop-only, phase1-audited, partial-adopted]
 keywords: [olw, obsidian-wiki, llm-wiki-compiler, wiki-lint-upgrade, json-retry-system, orphan-handling, wikilink-normalization, kytmanov]
 related:
   - sources/5-6-links-eval-batch.md
   - concepts/cemini-license-posture.md
   - concepts/librarian-server-architecture.md
   - concepts/wiki-tooling-evaluation.md
-maturity: draft
+maturity: validated
+phase2_ported_as: scripts/_llm_retry.py (2026-05-10)
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-10
 ---
 
 ## Relations
@@ -108,9 +109,37 @@ Estimated effort: 2-4 hours for Phase 1+2, deferred Phase 3+4 until pain-driven.
 - ⚠ Does `olw maintain --fix` have a `--dry-run` mode for human-review before commit?
 - ⚠ How does it handle nested entity directories (`entities/companies/`, `entities/tools/`)? — relevant since K28/K30 flagged hardcoded-flat-layout as failure mode
 
-### Adoption status — STEAL-FROM, NOT ADOPTED
+### Adoption status — Phase 2 PORTED as `scripts/_llm_retry.py` (2026-05-10)
 
-Phase-0 code-port deferred to brief execution (`briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md`). No package installed; no global `olw` symlink.
+**Shipped 2026-05-10** alongside `scripts/skill_audit.py` v0.5 (the brief-audit-upgrade sprint produced the first real consumer, validating the deferred-port decision from 2026-05-06).
+
+**What was ported**:
+- All 3 tiers of the retry system (`request_structured()` in `scripts/_llm_retry.py:201-307`)
+- Helpers preserved: `_resolve_ref`, `_render_example`, `_make_template`, `_schema_system`, `_extract_json`, `_unwrap`, `_try_parse`
+- New helpers: `_get_client` (creates `openai.OpenAI(api_key, base_url)` from `DEEPSEEK_API_KEY` env var), `_emit_telemetry` (single stderr log line per call)
+- Custom `StructuredOutputError` exception preserved
+
+**What was changed from upstream**:
+- Stripped Ollama-specific bits (upstream supports both Ollama and OpenAI-compat; we only need DeepSeek)
+- Replaced `LLMCallEvent` telemetry infrastructure with a simple stderr log line — the workspace has no LLMCallEvent consumer, building one preemptively would add infrastructure with no consumer
+- Tier 1 prompt is unchanged (fill-in-template approach — small-model discipline carried over even though DeepSeek is a frontier model, since the technique is harmless on big models and we plan to retain optionality for cheaper models later)
+- Module-level defaults `DEFAULT_MODEL = "deepseek-chat"` + `DEFAULT_BASE_URL = "https://api.deepseek.com/v1"` for ergonomics
+
+**Calibration** (`scripts/skill_audit.py --llm-mode` against `briefs/2026-05-10_aris-adoption.md`):
+- Tier 1 success in 14805ms on first try
+- No Tier 2 fallback needed (DeepSeek returned clean JSON via `response_format={"type": "json_object"}`)
+- 4-mode combined Pydantic schema validated cleanly
+- Telemetry line: `[_llm_retry] stage=skill_audit_dynamic model=deepseek-chat tier=1 retries=0 latency_ms=14805 status=ok`
+
+**Phases 3-4 NOT ported**:
+- Phase 3 (orphan-suggestion mode in `wiki_lint.py`): deferred — pain-driven; current 10 orphans are manageable
+- Phase 4 (bidirectional wikilink normalization auto-rewrite): deferred — risk of false-positive rewrites; manual lint flags are sufficient today
+
+**Risk assessment**:
+- `_llm_retry.py` is a clean library file (no global state, no I/O beyond stderr telemetry, fully testable). Maintenance burden minimal — DeepSeek's JSON mode is now stable enough that Tier 1 catches everything in practice; Tier 2/3 are paranoia for legacy clients.
+- The decision to port-on-demand (rather than preemptively) was correct: the helper's API shape was driven by `skill_audit.py`'s actual needs (e.g., `stage=` parameter for telemetry tagging, `api_key=` override for tests), not invented.
+
+Phase-0 audit clone retained at `/tmp/olw-audit/` for reference. No package installed; no global `olw` symlink. Brief `briefs/2026-05-06_obsidian-llm-wiki-local-steal-from.md` now in DONE status for Phase 1+2.
 
 ## Snippets
 

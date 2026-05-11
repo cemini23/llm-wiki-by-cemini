@@ -20,9 +20,19 @@ Two phases:
    11. Claim-evidence alignment  ── license/star/version/commit claims must co-locate with verification anchor (K32 research-paper-writing-skills port)
    12. Abstract synthesis        ── ## Summary length + effort estimate + verdict-flavored opener (K32 research-paper-writing-skills port)
 
-  DYNAMIC (deferred — LLM-as-judge tier; pending _llm_retry.py + DeepSeek budget):
-    Requires LLM API call against a sandboxed Conductor / DeepSeek endpoint.
-    Tests reproducibility, schema-compliance, hallucinated-citation detection.
+  DYNAMIC (opt-in via --llm-mode, advisory by default — v0.5):
+    Calls DeepSeek (via scripts/_llm_retry.py 3-tier retry) with a combined prompt
+    distilled from Kappaemme-git/codex-startup-pressure-test-skill's four modes
+    (pressure-test / problem-validation / competition-map / mvp-plan), re-styled
+    for tool-adoption brief context. Returns a structured Pydantic verdict:
+      verdict ∈ {ship, ship-with-fixes, rework, reject}
+      fatal_flaws[]: per-mode severity-ranked findings with disconfirming fast-test
+      competition_check: does Cemini already cover this? is displacement justified?
+      summary: 2-3 sentence brutal overall read
+
+    Dynamic output is advisory by default (renders alongside static checks but
+    does not change the static score). With --strict-dynamic, a "reject" verdict
+    upgrades the top-level verdict to REJECT.
 
 Veto gates (any failure ⇒ REJECT, score ignored):
   ● Operational Stability — file parseable, required sections present
@@ -33,6 +43,8 @@ Usage:
   python3 scripts/skill_audit.py briefs/2026-05-04_*.md
   python3 scripts/skill_audit.py --json briefs/some.md     # machine-readable
   python3 scripts/skill_audit.py --strict briefs/some.md   # warnings ⇒ veto
+  python3 scripts/skill_audit.py --llm-mode briefs/some.md           # +dynamic (advisory)
+  python3 scripts/skill_audit.py --llm-mode --strict-dynamic ...     # +dynamic (veto on reject)
 
 Exit codes:
   0  PASS   (no veto gates, score ≥ pass threshold)
@@ -76,6 +88,24 @@ class CheckResult:
 
 
 @dataclass
+class DynamicFinding:
+    mode: str                      # pressure-test | problem-validation | competition-map | mvp-plan
+    severity: str                  # high | medium | low
+    description: str               # 1-2 sentence flaw
+    fast_test: str                 # how to disconfirm in <1 day
+
+
+@dataclass
+class DynamicAudit:
+    verdict: str                   # ship | ship-with-fixes | rework | reject
+    fatal_flaws: list[DynamicFinding]
+    competition_check: str         # what Cemini already does; is displacement justified
+    summary: str                   # 2-3 sentence overall read
+    model: str                     # which DeepSeek model produced this
+    latency_ms: int                # round-trip including retries
+
+
+@dataclass
 class AuditReport:
     target: str
     verdict: Literal["PASS", "WARN", "REJECT", "ERROR"]
@@ -83,6 +113,7 @@ class AuditReport:
     veto_gates: list[str]         # names of triggered veto gates
     checks: list[CheckResult]
     summary: str
+    dynamic: DynamicAudit | None = None  # v0.5: opt-in via --llm-mode
 
 # ------------------------------------------------------------- regex helpers --
 
@@ -849,12 +880,150 @@ def check_abstract_synthesis(text: str, target: str) -> CheckResult:
 # --------------------------------------------------------- report generation --
 
 
+# ============================================================== dynamic check ==
+# v0.5 — LLM-as-judge layer. Port of the four codex-startup-pressure-test-skill
+# modes (Kappaemme-git/codex-startup-pressure-test-skill, MIT, Phase-0 audited
+# 2026-05-11 at /tmp/codex-pressure-test-audit/), re-styled for tool-adoption
+# brief context. One combined call returns a flat structured verdict.
+
+_DYNAMIC_SYSTEM_PROMPT = """\
+You are a brutal Cemini brief auditor. The user submits a tool-adoption brief
+for an OSINT / quant-finance research workspace. Your job: find fatal flaws
+before the user spends days installing or integrating the tool.
+
+You evaluate every brief through four lenses:
+
+1. pressure-test — Identify the single most-likely failure mode of the proposed
+   adoption. What kills this rollout in production? What core assumption MUST
+   be true for the integration to deliver value?
+
+2. problem-validation — Does Cemini actually have the pain this tool claims to
+   solve? Is the problem real, frequent, costly? Or is the user adopting because
+   the tool is shiny? Treat current-behavior as the bar: would the existing
+   Cemini setup (kb-server / DeepSeek / wiki scripts / FastMCP / LangGraph)
+   already cover ≥80% of the value?
+
+3. competition-map — What does Cemini already use that overlaps with this tool?
+   List the concrete existing components. Is displacement justified? "We have
+   no competition" is always wrong — current behavior is competition.
+
+4. mvp-plan — What is the smallest 1-week Phase 1 that proves the tool fits
+   before committing to deeper integration? What gets CUT from the brief's
+   proposed plan to focus only on the riskiest assumption?
+
+Rules:
+- Be specific to this brief. No generic startup advice.
+- Rank dangerous flaws first.
+- Treat license, maturity (commits/last-push), API-stability claims as testable
+  before any line of code is written.
+- If the brief claims a tool replaces existing Cemini infrastructure, name the
+  specific component it would displace.
+- Verdict must be direct; no softening.
+- Fast-test must be doable in under a day with what's already in the workspace.
+- Do not invent facts not stated in the brief.
+
+Verdict scale:
+- ship: no fatal flaws, brief is ready as-is
+- ship-with-fixes: minor flaws but adoption can proceed if listed fixes are made
+- rework: substantial flaws; brief needs revision before adoption decision
+- reject: fatal flaws; do not adopt this tool, or seek a different tool
+"""
+
+
+def _get_dynamic_audit_models():
+    """Lazily build the Pydantic v2 schemas. Returns (FatalFlaw, BriefAudit)."""
+    from pydantic import BaseModel
+
+    class FatalFlaw(BaseModel):
+        mode: Literal["pressure-test", "problem-validation", "competition-map", "mvp-plan"]
+        severity: Literal["high", "medium", "low"]
+        description: str
+        fast_test: str
+
+    class BriefAudit(BaseModel):
+        verdict: Literal["ship", "ship-with-fixes", "rework", "reject"]
+        fatal_flaws: list[FatalFlaw]
+        competition_check: str
+        summary: str
+
+    return FatalFlaw, BriefAudit
+
+
+def run_dynamic_audit(
+    text: str,
+    *,
+    model: str = "deepseek-chat",
+    max_retries: int = 2,
+    temperature: float = 0.2,
+) -> DynamicAudit:
+    """Call DeepSeek for the combined 4-mode brief audit. Raises StructuredOutputError on failure."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    try:
+        from _llm_retry import request_structured  # type: ignore
+    except ImportError as e:
+        raise RuntimeError(
+            f"_llm_retry not importable: {e}. Ensure scripts/_llm_retry.py exists."
+        ) from e
+
+    _, BriefAudit = _get_dynamic_audit_models()
+
+    # Truncate brief body to a sane budget (most briefs are <15 KB; tokens ~25K cap).
+    # Tail-truncate from middle if needed so frontmatter + verdict line both fit.
+    MAX_CHARS = 16000
+    if len(text) > MAX_CHARS:
+        head = text[: MAX_CHARS // 2]
+        tail = text[-(MAX_CHARS // 2) :]
+        body = f"{head}\n\n... [middle elided, {len(text) - MAX_CHARS} chars] ...\n\n{tail}"
+    else:
+        body = text
+
+    prompt = (
+        "Audit the following Cemini tool-adoption brief using the four-lens "
+        "framework. Return JSON only.\n\n"
+        "=== BRIEF START ===\n"
+        f"{body}\n"
+        "=== BRIEF END ==="
+    )
+
+    t0 = datetime.now()
+    parsed = request_structured(
+        prompt=prompt,
+        model_class=BriefAudit,
+        system=_DYNAMIC_SYSTEM_PROMPT,
+        model=model,
+        max_retries=max_retries,
+        temperature=temperature,
+        stage="skill_audit_llm_mode",
+    )
+    latency_ms = int((datetime.now() - t0).total_seconds() * 1000)
+
+    findings = [
+        DynamicFinding(
+            mode=str(f.mode),
+            severity=str(f.severity),
+            description=f.description,
+            fast_test=f.fast_test,
+        )
+        for f in parsed.fatal_flaws
+    ]
+    return DynamicAudit(
+        verdict=str(parsed.verdict),
+        fatal_flaws=findings,
+        competition_check=parsed.competition_check,
+        summary=parsed.summary,
+        model=model,
+        latency_ms=latency_ms,
+    )
+
+
 def assemble_report(
     target: str,
     text: str,
     sections: list[str],
     nv_age_days: int,
     strict: bool,
+    dynamic: DynamicAudit | None = None,
+    strict_dynamic: bool = False,
 ) -> AuditReport:
     checks = [
         check_required_sections(text, sections),
@@ -889,6 +1058,16 @@ def assemble_report(
         verdict = "WARN"
         summary = f"WARN — score {static_score}/100 below 80-point pass threshold"
 
+    # Dynamic-mode veto: if --strict-dynamic and DeepSeek returned 'reject',
+    # upgrade the top-level verdict. Static-side veto gates still take precedence.
+    if dynamic is not None and strict_dynamic and dynamic.verdict == "reject" and not veto_gates:
+        verdict = "REJECT"
+        summary = (
+            f"REJECT (--strict-dynamic) — static {static_score}/100 but dynamic "
+            f"audit returned 'reject'. {dynamic.summary}"
+        )
+        veto_gates = veto_gates + [f"dynamic-audit-reject ({dynamic.model})"]
+
     return AuditReport(
         target=target,
         verdict=verdict,
@@ -896,6 +1075,7 @@ def assemble_report(
         veto_gates=veto_gates,
         checks=checks,
         summary=summary,
+        dynamic=dynamic,
     )
 
 
@@ -906,7 +1086,11 @@ def render_text(report: AuditReport) -> str:
     lines.append("=" * 78)
     lines.append("")
     lines.append(f"VERDICT: {report.verdict}")
-    lines.append(f"STATIC SCORE: {report.static_score}/100   (12 static checks; LLM-as-judge dynamic phase deferred)")
+    dyn_note = "" if report.dynamic is None else "  +dynamic (LLM-as-judge active)"
+    lines.append(
+        f"STATIC SCORE: {report.static_score}/100   "
+        f"(12 static checks{dyn_note})"
+    )
     lines.append("")
     if report.veto_gates:
         lines.append("VETO GATES TRIGGERED:")
@@ -923,6 +1107,27 @@ def render_text(report: AuditReport) -> str:
             if len(c.evidence) > 5:
                 lines.append(f"      ... and {len(c.evidence) - 5} more")
     lines.append("")
+    if report.dynamic is not None:
+        d = report.dynamic
+        lines.append("=" * 78)
+        lines.append(f"DYNAMIC AUDIT (advisory)   model={d.model}   latency={d.latency_ms} ms")
+        lines.append("=" * 78)
+        lines.append(f"DYNAMIC VERDICT: {d.verdict.upper()}")
+        lines.append("")
+        lines.append("SUMMARY:")
+        lines.append(f"  {d.summary}")
+        lines.append("")
+        lines.append("COMPETITION CHECK:")
+        lines.append(f"  {d.competition_check}")
+        lines.append("")
+        if d.fatal_flaws:
+            lines.append(f"FATAL FLAWS ({len(d.fatal_flaws)}):")
+            for i, f in enumerate(d.fatal_flaws, 1):
+                lines.append(f"  {i}. [{f.severity.upper():6}] [{f.mode}] {f.description}")
+                lines.append(f"     fast-test: {f.fast_test}")
+        else:
+            lines.append("FATAL FLAWS: none surfaced")
+        lines.append("")
     lines.append(f"=> {report.summary}")
     return "\n".join(lines)
 
@@ -943,6 +1148,21 @@ def main():
         default=30,
         help="Flag [NEEDS VERIFICATION] tags older than this (default: 30)",
     )
+    p.add_argument(
+        "--llm-mode",
+        action="store_true",
+        help="Run DeepSeek-backed dynamic audit (4-mode pressure-test). Advisory by default.",
+    )
+    p.add_argument(
+        "--strict-dynamic",
+        action="store_true",
+        help="With --llm-mode: dynamic 'reject' upgrades top-level verdict to REJECT.",
+    )
+    p.add_argument(
+        "--llm-model",
+        default="deepseek-chat",
+        help="DeepSeek model id for --llm-mode (default: deepseek-chat).",
+    )
     args = p.parse_args()
 
     path = Path(args.brief)
@@ -956,12 +1176,25 @@ def main():
         print(f"ERROR: could not read {path}: {e}", file=sys.stderr)
         sys.exit(3)
 
+    dynamic = None
+    if args.llm_mode:
+        try:
+            dynamic = run_dynamic_audit(text, model=args.llm_model)
+        except Exception as e:
+            print(f"WARN: --llm-mode dynamic audit failed: {e}", file=sys.stderr)
+            print(
+                "  static checks still produced below; dynamic section omitted.",
+                file=sys.stderr,
+            )
+
     report = assemble_report(
         target=str(path),
         text=text,
         sections=sections,
         nv_age_days=args.nv_age_days,
         strict=args.strict,
+        dynamic=dynamic,
+        strict_dynamic=args.strict_dynamic,
     )
 
     if args.json:

@@ -34,7 +34,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 K36 ingest complete 2026-05-10. **Phase-0 audit queue** (before any K36 prod brief drafts): picobot (MCP-native Go gateway, MIT), QuantMuse (Python+C++ quant stack, MIT), Adala (Apache-2.0 data-labeling with reflection loop — 2.5-yr abandonment-risk flag). ctop + finance-skills are laptop-only adoptions (lower blast radius, audit deferred). Cross-wiki route shipped: URL 10 (digital-marketing-pro) → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md`.
 
-K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-target + 6 workspace-laptop-target). Phase-0 audits for the 3 CONDITIONAL-GO items complete 2026-05-10 — all upgraded to **GO**. K35 follow-ups: (1) K35 Steal-from extractions (SPJ algorithm port, TPE sampling, Bradley-Terry, spec-kit template patterns) — still open; (2) **Brief-audit upgrade sprint: sequential ship — steps 1+2 SHIPPED 2026-05-10**. Step 1 (`scripts/skill_audit.py` v0.3) ported academic-paper-skills 35-pt framework: 10 checks, 3 new (`brief_completeness` + `risk_discipline` + `phasing`), ops/research-brief exemption gate. Step 2 (v0.4) ported research-paper-writing claim-evidence + abstract synthesis: 12 checks, 2 new (`check_claim_evidence` 0.06, `check_abstract_synthesis` 0.04) carved from citations + prose_quality weights; calibration verified on 7 briefs. Next sequential: codex pressure-test prompts (K32) + `_llm_retry.py` helper (~3 hr combined); (3) Workspace-laptop install execution for the 6 K35 GO tools — still open.
+K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-target + 6 workspace-laptop-target). Phase-0 audits for the 3 CONDITIONAL-GO items complete 2026-05-10 — all upgraded to **GO**. K35 follow-ups: (1) K35 Steal-from extractions (SPJ algorithm port, TPE sampling, Bradley-Terry, spec-kit template patterns) — still open; (2) **Brief-audit upgrade sprint: sequential ship — steps 1+2+3 SHIPPED 2026-05-10**. Step 1 (`scripts/skill_audit.py` v0.3) ported academic-paper-skills 35-pt framework: 10 checks, 3 new (`brief_completeness` + `risk_discipline` + `phasing`), ops/research-brief exemption gate. Step 2 (v0.4) ported research-paper-writing claim-evidence + abstract synthesis: 12 checks, 2 new (`check_claim_evidence` 0.06, `check_abstract_synthesis` 0.04) carved from citations + prose_quality weights; calibration verified on 7 briefs. Step 3 (v0.5) ported codex pressure-test 4-mode adversarial review prompts via opt-in `--llm-mode` flag (DeepSeek `deepseek-chat` single combined-call structured output) backed by NEW `scripts/_llm_retry.py` 3-tier retry helper (port of kytmanov/obsidian-llm-wiki-local `structured_output.py` Phase 2). Calibration on ARIS adoption brief: Tier 1 success in 15s no retries, REWORK verdict, 4 fatal flaws surfaced (2 HIGH + 2 MEDIUM, one per mode), competition-map correctly identified Cemini's existing stack as displacement. Sprint COMPLETE; hierarchical section optimization (3rd DR-named research-paper pattern) deferred — can plug into the same `--llm-mode` infrastructure later if needed; (3) Workspace-laptop install execution for the 6 K35 GO tools — still open.
 
 ### K36 follow-ups
 
@@ -164,6 +164,33 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 | **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-04 (clean baseline) |
 | **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-01 (within 7-day cadence) |
 | **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
+
+---
+
+## Done — 2026-05-10 skill_audit v0.5 ship (codex pressure-test 4-mode adversarial review + `_llm_retry.py` Phase 2)
+
+### Brief-audit upgrade sprint — step 3 SHIPPED (sprint COMPLETE for the K32 batch)
+
+- Ported `Kappaemme-git/codex-startup-pressure-test-skill` 4 prompt patterns into `scripts/skill_audit.py` v0.5 via opt-in `--llm-mode` flag. Re-styled for brief-audit (tool-adoption) context:
+  - `pressure-test` — "find fatal flaws in adopting this tool" (was: find fatal flaws in this startup idea)
+  - `problem-validation` — "is the Cemini pain this brief addresses real, or imagined?" (was: is the problem this startup solves real?)
+  - `competition-map` — "does Cemini's existing stack already cover this?" (kept the discipline that current behavior is always a competitor)
+  - `mvp-plan` — "what is the smallest test that proves/kills the adoption?" (was: 2-week MVP plan for the startup idea)
+  - NOT ported: `first-10-customers` (we're not selling), `full` (just runs all the others, redundant with combined-call architecture).
+- **Architecture: single combined-call structured output**. One DeepSeek `deepseek-chat` API call per brief returning a Pydantic v2 schema (`FatalFlaw[]` + `verdict` + `competition_check` + `summary` + `model` + `latency_ms`). Aligns with olw's small-flat-schema discipline; keeps API cost to 1 call per `--llm-mode` invocation.
+- **Advisory by default**: dynamic findings render alongside static checks but do NOT change the static score. Veto gates (regime-disclosure, Operational Stability, Scientific Integrity) take precedence. `--strict-dynamic` flag upgrades a dynamic "reject" verdict to top-level REJECT iff no static veto gates already fired.
+- **NEW infrastructure: `scripts/_llm_retry.py`** (~280 lines). Phase 2 port of `kytmanov/obsidian-llm-wiki-local/src/obsidian_llm_wiki/structured_output.py`. 3-tier retry: Tier 1 (DeepSeek `response_format={"type":"json_object"}` + fill-in-template system prompt + `_unwrap` post-processor) → Tier 2 (regex `_extract_json`: ` ```json` fence → bare ` ``` ` → first `{...}`) → Tier 3 (re-prompt with error feedback, up to `max_retries=2`). Ollama-specific bits stripped. Telemetry reduced to single stderr log line per call.
+- **Calibration result** (2026-05-10, `briefs/2026-05-10_aris-adoption.md`):
+  - Tier 1 success in 14805ms on first try (no retries triggered)
+  - Dynamic verdict: **REWORK** (signal-bearing, not noise — static checks had passed at 99.5/100; dynamic check caught the strategic flaw the static checks couldn't see)
+  - 4 fatal flaws surfaced: [HIGH/pressure-test] 78-skill triage deferred without methodology; [HIGH/problem-validation] existing pipelines not demonstrated to fail, pain point unvalidated; [MEDIUM/competition-map] ARIS duplicates DeepSeek + wiki scripts + LangGraph; [MEDIUM/mvp-plan] Phase 1 plan vague, should be single-day test of one ARIS skill
+  - Competition check correctly named Cemini's existing stack: "DeepSeek for synthesis, wiki scripts for structured output, LangGraph for multi-step workflows, kb-server for knowledge management"
+  - Telemetry: `[_llm_retry] stage=skill_audit_dynamic model=deepseek-chat tier=1 retries=0 latency_ms=14805 status=ok`
+- **Updated entities**:
+  - `wiki/entities/tools/codex-startup-pressure-test-skill.md` → `maturity: validated`, new `adopted_as: scripts/skill_audit.py v0.5 (2026-05-10)` field, full adoption-status block replacing pending-Phase-1 placeholder.
+  - `wiki/entities/tools/obsidian-llm-wiki-local.md` → `maturity: validated`, new `phase2_ported_as: scripts/_llm_retry.py (2026-05-10)` field. Phase 1 + Phase 2 both DONE; Phases 3-4 (orphan suggestion + bidirectional wikilink auto-rewrite in `wiki_lint.py`) deferred — pain-driven, no current need.
+- **Sprint COMPLETE**: K32 batch yielded 4 patterns into `skill_audit.py` across v0.3 / v0.4 / v0.5. Hierarchical section optimization (3rd DR-named research-paper pattern) deferred — can plug into `--llm-mode` infrastructure when a real need arises.
+- **Anti-pattern avoided**: build-on-demand discipline. The decision to defer `_llm_retry.py` from 2026-05-06 to 2026-05-10 was correct — the helper's API shape (e.g., `stage=` parameter for telemetry tagging) was driven by `skill_audit.py`'s actual needs, not invented.
 
 ---
 
