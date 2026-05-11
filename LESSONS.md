@@ -8,9 +8,11 @@ Newest entries on top.
 
 ## 2026-05-11 — Phase-0 audit catches eval-brief mischaracterization (meta-pattern)
 
-Five Phase-0 audits across K28, K30, and K38 have now rejected credible-looking Adopt-tier verdicts because the eval brief mischaracterized the tool's actual function. The pattern is consistent enough to be worth naming: **eval briefs are synthesized from README marketing + GitHub topic tags, not from reading entry-point code**. The DR sweep that generates them sees the surface a maintainer wants to present; Phase-0 sees what the code actually does. When those diverge, the brief loses.
+Six Phase-0 audits across K28, K30, and K38 have now rejected credible-looking Adopt-tier verdicts because the eval brief mischaracterized the tool's actual function. The pattern is consistent enough to be worth naming: **eval briefs are synthesized from README marketing + GitHub topic tags, not from reading entry-point code**. The DR sweep that generates them sees the surface a maintainer wants to present; Phase-0 sees what the code actually does. When those diverge, the brief loses.
 
-The 5 catches:
+**K38 base rate signal**: 3 of the last 4 K38 Adopt-tier verdicts (9router, guild, Readme.skill = 75%) were mischaracterized. This isn't tail risk — it's the modal failure mode for current DR-generated eval briefs, especially on small/young/non-English-primary repos.
+
+The 6 catches:
 
 | K | Tool | Eval-brief framing | Phase-0 reality |
 |---|------|--------------------|-----------------|
@@ -19,12 +21,14 @@ The 5 catches:
 | K30 | Claude-OSINT | Skill merge for curator | Wrong domain — red-team OSINT, not curator workflow |
 | K38 | 9router | "Lean compress-then-forward proxy, ~65% token reduction" | Private Next.js 16 + React 19 dashboard (monaco-editor + recharts + sql.js); README's real claim is 20-40%; Family-C OAuth-grafted free tiers = TOS landmine |
 | K38 | guild | "Local-first search MCP / Ollama replacement on CPX21" | Agent-coordination substrate with quest/lore/oath/brief primitives; retrieval is internal to its lore archive, not a drop-in for wiki-markdown serving |
+| K38 | Readme.skill | "Agent skill for repo-stats auto-gen / augments wiki-curation toolchain" | Personal Claude/Codex-usage **profile** generator (Chinese-language Markdown + SVG poster across 10 dimensions of individual developer style). Zero wiki-curation surface. DR sweep evidently read English README.en.md keywords and missed the Chinese README's actual audience (developers sharing AI-native work portfolios) |
 
 The three mischaracterization shapes worth naming because Phase-0 keeps catching them:
 
 1. **Marketing claim vs measured reality** — README/landing-page perf claim doesn't match the repo's actual measurement (9router's 65% headline vs 20-40% in-repo claim).
 2. **Framework vs application** — tool framed as a focused library, repo is actually a full product (9router as "lean proxy" vs full dashboard with bundled integrations). `"private": true` in package.json is the smoking gun for this shape.
-3. **Wrong-primitive** — tool framed by surface-level category match (MCP server, retrieval engine) when the actual primitives serve a different problem (guild's quest/lore/oath/brief is task-coordination, not document-retrieval).
+3. **Wrong-primitive** — tool framed by surface-level category match (MCP server, retrieval engine, skill catalog) when the actual primitives serve a different problem (guild's quest/lore/oath/brief is task-coordination, not document-retrieval; Readme.skill's 10-dimension developer profile is personal-portfolio, not repo-stats).
+4. **Non-English-primary repo** — Readme.skill specifically. Repo README is Chinese; the English README.en.md is a thin keyword stub. DR sweeps default to the English-language surface and miss the actual audience/purpose documented in the primary-language README. Worth checking the repo's `README*.md` set explicitly before trusting an eval-brief framing on any non-English-domiciled project.
 
 The Phase-0 minimum that catches all three: read `package.json`/`Cargo.toml`/`go.mod` for `"private": true` and dependency bloat signals; read the primary entry-point (`cmd/main.go`, `src/index.ts`, etc.) for the actual primitives; cross-check the README's measured perf number against the eval brief's quoted number.
 
