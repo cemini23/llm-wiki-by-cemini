@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-10] infra | claude-mem laptop install + 3d-printing-wiki librarian sync + skill_audit v0.3 ship
+
+Post-K36 cleanup pass. Three independent workstreams shipped after the K36 prod-brief batch:
+
+- **claude-mem v13.0.1 INSTALLED** at laptop level (`npx claude-mem install`, Apache-2.0). Worker + ChromaDB MCP supervisor processes live. Production defaults from `dist/npx-cli/index.js`: `SEMANTIC_INJECT_LIMIT=5`, `SEMANTIC_INJECT=false` (lazy), `CONTEXT_OBSERVATIONS=50`, `SKIP_TOOLS` excludes noisy meta-tools (TodoWrite, Skill, AskUserQuestion). Caveat: Claude Desktop OAuth token stale per `~/.claude-mem/oauth-stale.marker` — worker functional; re-login via Claude Desktop refreshes. Updated `wiki/entities/tools/claude-mem.md` to `maturity: validated` + `laptop_install: VERIFIED`. Updated brief GO/NO-GO to `GO — INSTALLED`. Phase 1 3-session smoke test pending 2026-05-11+.
+- **3d-printing-wiki SYNCED** to `cemini-librarian:/opt/cemini-wiki/3d-printing-wiki/wiki/` (rsync 57 files / 169 KB, 95.95× compression). `kb ingest` reindex returned 46 docs ingested / 2 skipped. All 4 wikis (osint / image-gen / seo-geo / 3d-printing) now queryable via `conductor_query` unified search.
+- **`scripts/skill_audit.py` v0.3 SHIPPED** — academic-paper-skills 35-pt framework adopted. 3 new static checks consume the 0.10 weight headroom: `check_brief_completeness` (5-item: risks/phase/architecture/verdict/license, weight 0.05), `check_risk_discipline` (table format full credit, bullet-list bold-prefix partial credit, weight 0.03), `check_phasing` (Phase 1 min + success_criteria for full credit, weight 0.02). Max static score now 100/100 across 10 checks. `_is_adoption_brief()` gate exempts ops/research briefs. Calibration verified on 7 briefs (K36 fresh PASS, ops PASS-with-N/A, older adoption WARN flagging genuine bullet-vs-table gaps).
+- **LESSONS.md** new entry "Two-layer memory: hot.md is curated state, claude-mem is passive observation" — hierarchy ROADMAP > hot.md > claude-mem, trust rules, top-N cap sanity gate.
+- **Adala DeepSeek live smoke test PASSED 2026-05-10** earlier in session: `LiteLLMChatRuntime(base_url="https://api.deepseek.com/v1")` returned `{'response': 'ack'}` in 1.9 s; 3 hits on `api.deepseek.com`, 0 on `api.openai.com`. Adala adoption gates fully cleared.
+
+**Updated**: `wiki/entities/tools/claude-mem.md`, `wiki/entities/tools/academic-paper-skills.md`, `briefs/2026-05-10_claude-mem-adoption.md`, `briefs/2026-05-10_adala-prod-adoption.md`, `scripts/skill_audit.py` (v0.2 → v0.3), `LESSONS.md`, `ROADMAP.md`, `hot.md`.
+
 ## [2026-05-10] ingest | K36 — Evaluating Code for Trading Stacks (17 URLs, 14 evaluated)
 
 K36 batch ingest of `Evaluating Code for Trading Stacks.docx` (75,106 bytes, sha256: `726dff6faea3881c…`, preingest verdict: NEW). 17 URLs scored against three-surface matrix (Cemini prod / wiki server / workflow laptop); 14 evaluated, 3 UNAVAILABLE (URL 1 HKUDS/AI-Trader, URL 5 stage-cli, URL 6 opensourceprojects.dev).

@@ -6,6 +6,24 @@ Newest entries on top.
 
 ---
 
+## 2026-05-10 — Two-layer memory: `hot.md` is curated state, `claude-mem` is passive observation
+
+Installed `claude-mem` v13.0.1 (Apache-2.0, K35 GO) at the laptop level today. It's a Bun/SQLite/ChromaDB worker that observes Claude Code tool calls + file edits and injects top-N semantically-relevant observations on `SessionStart`. This adds a **second memory layer** alongside the existing `hot.md` discipline, and the two must not be conflated:
+
+| Layer | Source of truth for | Update cadence | Reliability |
+|-------|---------------------|----------------|-------------|
+| `hot.md` | **Curated intentional state** — open decisions, next-step pointers, K-series position, sprint mode | End of every session (LLM rewrites it) | High — user-reviewed |
+| `claude-mem` | **Passive observation memory** — what files were read, what commands ran, what was tried | Continuous (worker daemon) | Medium — semantic recall, not curated |
+| `ROADMAP.md` | **Active workstream truth** — DONE log, decisions, pending workstreams | After significant operations | High — committed to git |
+
+When the three disagree, hierarchy is `ROADMAP.md` > `hot.md` > `claude-mem`. Treat claude-mem injections as advisory ("we may have looked at X before") and confirm against the curated layers before acting. Claude-mem is most useful for the "did we already try this?" question that `hot.md` won't capture because the user didn't think it worth recording.
+
+Critical sanity gate: the default `CLAUDE_MEM_SEMANTIC_INJECT_LIMIT=5` cap is what makes this safe to leave running. If you ever raise it past ~20, recheck the token-budget impact at session start. Lazy injection (`SEMANTIC_INJECT=false` default) means observations only surface on user-prompt relevance match, not blanket dump.
+
+*Apply:* when `claude-mem` injects a "you did X" hint that contradicts `hot.md`, trust `hot.md`. When it surfaces an incidental observation that `hot.md` doesn't mention, log it forward into `hot.md` if it materially affects the next session. Never let claude-mem decide a workflow question on its own.
+
+---
+
 ## 2026-05-01 — The schema is a synthesis of two design patterns, not invented from scratch
 
 The workspace schema (CLAUDE.md) was synthesized from two primary sources found in the raw research corpus, not designed from first principles:

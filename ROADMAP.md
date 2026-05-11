@@ -62,7 +62,7 @@ K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-
 | `briefs/2026-05-10_aris-adoption.md` (K35) | ARIS Markdown skill files for structured research workflow | NEW — GO |
 | `briefs/2026-05-10_github-spec-kit-adoption.md` (K35) | Spec-Driven Development CLI for wiki → production-code transitions | NEW — GO (Phase-0 ✓: MIT, Claude integration upstream) |
 | `briefs/2026-05-10_tech-debt-skill-adoption.md` (K35) | Quarterly Cemini codebase technical-debt audits | NEW — GO |
-| `briefs/2026-05-10_claude-mem-adoption.md` (K35) | Cross-session persistent observation memory | NEW — GO (Phase-0 ✓: Apache-2.0, configurable inject limit) |
+| `briefs/2026-05-10_claude-mem-adoption.md` (K35) | Cross-session persistent observation memory | **INSTALLED 2026-05-10** — v13.0.1 worker running; Phase 1 3-session smoke pending 2026-05-11+ |
 | `briefs/2026-05-10_revpdf-adoption.md` (K35) | 15MB offline PDF editor for research extraction | NEW — GO |
 | `briefs/2026-05-10_codeboarding-adoption.md` (K35) | Auto-generated Cemini architecture diagrams | NEW — GO (Phase-0 ✓: MIT, macOS Node auto-bootstrap) |
 
@@ -164,6 +164,37 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 | **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-04 (clean baseline) |
 | **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-01 (within 7-day cadence) |
 | **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
+
+---
+
+## Done — 2026-05-10 post-K36 (Adala smoke + skill_audit v0.3 + claude-mem install + 3d-wiki sync)
+
+### Adala DeepSeek live smoke test
+- Built `/tmp/adala-smoke/smoke.py` harness using `LiteLLMChatRuntime(model="deepseek/deepseek-chat", base_url="https://api.deepseek.com/v1", api_key=os.environ["DEEPSEEK_API_KEY"])` with Pydantic `AckResponse` response model.
+- Result: **PASS** — `record_to_record()` returned `{'response': 'ack'}` in 1.9 s; verbose litellm logs show 3 hits on `api.deepseek.com`, 0 on `api.openai.com`. base_url override holds in practice.
+- Updated `wiki/entities/tools/adala.md` adoption gate to `[x] VERIFIED 2026-05-10`. Re-SCPed updated `briefs/2026-05-10_adala-prod-adoption.md` to `cemini-prod:/opt/cemini/briefs/`.
+
+### Brief-audit upgrade sprint — step 1 SHIPPED
+- Ported `lishix520/academic-paper-skills` 35-pt / 7-dimension peer-review framework into `scripts/skill_audit.py` v0.3.
+- Added 3 new static checks consuming the 0.10 weight headroom: `check_brief_completeness` (5-item checklist, 0.05), `check_risk_discipline` (table format full credit, bullet-list partial credit, 0.03), `check_phasing` (Phase 1 minimum + success_criteria full credit, 0.02). Max static score now 100/100 (10 checks).
+- Added `_is_adoption_brief()` gate exempting ops/research briefs from new checks.
+- Calibration verified on 7 representative briefs: K36 fresh (picobot 99.5, adala 100) PASS; ops/research (step81-sshd, polymarket-onchain) 82-100 with N/A; older adoption (hftbacktest, guidance-ai, polymarket-stack) 98.0 WARN flagging legitimate gaps (no `**GO**` verdict line, bullet-format risks).
+- Updated `wiki/entities/tools/academic-paper-skills.md` to `maturity: validated` + `adopted_as: scripts/skill_audit.py v0.3`.
+
+### claude-mem laptop install
+- `npx claude-mem install` ran cleanly — v13.0.1 installed at `~/.claude/plugins/marketplaces/thedotmack`, data dir `~/.claude-mem` populated, worker + ChromaDB MCP supervisor processes running.
+- Production defaults verified in `dist/npx-cli/index.js`: `SEMANTIC_INJECT=false` (lazy), `SEMANTIC_INJECT_LIMIT=5`, `CONTEXT_OBSERVATIONS=50`, `SKIP_TOOLS` excludes meta-noise (TodoWrite, Skill, etc).
+- Caveat: Claude Desktop OAuth token stale (`~/.claude-mem/oauth-stale.marker`) — worker functional, re-login refreshes the marker.
+- Updated `wiki/entities/tools/claude-mem.md` to `maturity: validated` + `laptop_install: VERIFIED 2026-05-10 (v13.0.1)`. Updated `briefs/2026-05-10_claude-mem-adoption.md` GO/NO-GO to `GO — INSTALLED 2026-05-10`.
+- Phase 1 3-session smoke test pending 2026-05-11+ at `http://localhost:37702`.
+
+### 3d-printing-wiki librarian sync
+- `rsync -avz "/Users/claudiobarone/Desktop/projects/3d printing/wiki/" cemini-librarian:/opt/cemini-wiki/3d-printing-wiki/wiki/` — 57 files, 169 KB sent (95.95× compression).
+- `kb ingest /opt/cemini-wiki/3d-printing-wiki/wiki` — 46 docs ingested, 2 skipped.
+- All 4 wikis (osint / image-gen / seo-geo / 3d-printing) now queryable via `conductor_query` unified search.
+
+### LESSONS.md addition
+- New 2026-05-10 entry: "Two-layer memory: hot.md is curated state, claude-mem is passive observation" — hierarchy (`ROADMAP.md` > `hot.md` > `claude-mem`), trust rules, top-N cap sanity gate.
 
 ---
 
