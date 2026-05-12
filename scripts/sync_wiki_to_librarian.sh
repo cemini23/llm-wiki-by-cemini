@@ -19,8 +19,17 @@ set -uo pipefail
 
 WORKSPACE="/Users/claudiobarone/Desktop/OSINT WORKSPACE"
 LIBRARIAN_HOST="cemini-librarian"
-LIBRARIAN_WIKI_PATH="/opt/cemini-wiki/wiki/"
+LIBRARIAN_ROOT="/opt/cemini-wiki"
 LOGFILE="$HOME/Library/Logs/cemini-wiki-sync.log"
+
+# Wiki definitions: "LOCAL_PATH|REMOTE_SUBPATH"
+# REMOTE_SUBPATH is relative to LIBRARIAN_ROOT and becomes the project tag in kb-server.
+WIKIS=(
+  "$WORKSPACE/wiki/|wiki/"
+  "/Users/claudiobarone/Desktop/projects/Image gen/wiki/|image-gen-wiki/wiki/"
+  "/Users/claudiobarone/Desktop/projects/3d printing/wiki/|3d-printing-wiki/wiki/"
+  "/Users/claudiobarone/Desktop/projects/SEO:GEO B&M Business/wiki/|seo-geo-wiki/wiki/"
+)
 
 # Ensure log dir exists (macOS user logs)
 mkdir -p "$(dirname "$LOGFILE")"
@@ -29,54 +38,71 @@ log() {
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOGFILE"
 }
 
-# Pre-flight: workspace exists?
+# Pre-flight: OSINT workspace exists (primary anchor)
 if [[ ! -d "$WORKSPACE/wiki" ]]; then
-  log "ERROR: workspace wiki/ not found at $WORKSPACE/wiki — aborting"
+  log "ERROR: OSINT workspace wiki/ not found at $WORKSPACE/wiki — aborting"
   exit 3
 fi
 
-cd "$WORKSPACE" || { log "ERROR: cd to workspace failed"; exit 3; }
+# Step 1: rsync each wiki to its librarian subpath
+total_changes=0
+synced_wikis=0
+for wiki_def in "${WIKIS[@]}"; do
+  local_path="${wiki_def%%|*}"
+  remote_subpath="${wiki_def##*|}"
+  remote_path="${LIBRARIAN_ROOT}/${remote_subpath}"
 
-# Step 1: rsync wiki → librarian
-log "rsync starting: wiki/ → $LIBRARIAN_HOST:$LIBRARIAN_WIKI_PATH"
-rsync_output=$(rsync -avz --delete \
-  --exclude '.DS_Store' \
-  --exclude '.obsidian' \
-  --exclude '.smart-env' \
-  wiki/ "$LIBRARIAN_HOST:$LIBRARIAN_WIKI_PATH" 2>&1)
-rsync_exit=$?
+  if [[ ! -d "$local_path" ]]; then
+    log "skip: $local_path not present locally"
+    continue
+  fi
 
-if [[ $rsync_exit -ne 0 ]]; then
-  log "ERROR: rsync failed with exit $rsync_exit"
-  log "rsync output: $rsync_output"
-  exit 1
-fi
+  log "rsync starting: $local_path → $LIBRARIAN_HOST:$remote_path"
+  rsync_output=$(rsync -avz --delete \
+    --exclude '.DS_Store' \
+    --exclude '.obsidian' \
+    --exclude '.smart-env' \
+    "$local_path" "$LIBRARIAN_HOST:$remote_path" 2>&1)
+  rsync_exit=$?
 
-# Count changed files for logging (rsync output mentions changed files individually)
-files_changed=$(echo "$rsync_output" | grep -cE '^[a-z]' || true)
-log "rsync OK ($files_changed file paths in output; speedup ratio in trailer)"
+  if [[ $rsync_exit -ne 0 ]]; then
+    log "ERROR: rsync $local_path failed with exit $rsync_exit"
+    log "rsync output: $rsync_output"
+    exit 1
+  fi
 
-# Skip kb ingest entirely if zero meaningful changes (avoids unnecessary load)
-if [[ $files_changed -le 1 ]]; then
-  log "no wiki changes, skipping kb ingest"
+  changes=$(echo "$rsync_output" | grep -cE '^[a-z]' || true)
+  total_changes=$((total_changes + changes))
+  synced_wikis=$((synced_wikis + 1))
+  log "rsync OK ($remote_subpath: $changes file paths)"
+done
+
+# Skip reindex if zero meaningful changes (each rsync emits ~1 trailer line)
+if [[ $total_changes -le $synced_wikis ]]; then
+  log "no wiki changes across $synced_wikis wikis, skipping kb reindex"
   exit 0
 fi
 
-# Step 2: post-rsync kb-server reindex on librarian
-log "kb ingest triggering on $LIBRARIAN_HOST"
+# Step 2: post-rsync kb-server vault reindex (with semantic embeddings)
+# NOTE: switched from `kb ingest` (no embeddings, dedupes by basename, accumulates orphans)
+# to `kb vault reindex --embeddings` (proper UPSERT via vault_files, generates embeddings
+# for semantic search). paths.js loads /opt/kb-server/.env automatically.
+log "kb vault reindex (--embeddings) triggering on $LIBRARIAN_HOST"
 kb_output=$(ssh "$LIBRARIAN_HOST" \
-  "chown -R root:root /opt/cemini-wiki/ 2>/dev/null; kb ingest /opt/cemini-wiki/wiki" 2>&1)
+  "chown -R root:root /opt/cemini-wiki/ 2>/dev/null; kb vault reindex --embeddings" 2>&1)
 kb_exit=$?
 
 if [[ $kb_exit -ne 0 ]]; then
-  log "ERROR: kb ingest failed with exit $kb_exit"
+  log "ERROR: kb vault reindex failed with exit $kb_exit"
   log "kb output: $kb_output"
   exit 2
 fi
 
-# kb output looks like: "Ingesting directory: ... / Ingested: N / Skipped: M"
-ingested=$(echo "$kb_output" | grep -oE 'Ingested:[[:space:]]+[0-9]+' | grep -oE '[0-9]+' || echo "?")
-skipped=$(echo "$kb_output"  | grep -oE 'Skipped:[[:space:]]+[0-9]+'  | grep -oE '[0-9]+' || echo "?")
-log "kb ingest OK (ingested=$ingested skipped=$skipped)"
+# kb output looks like: "Done: N indexed, M unchanged, K removed, L embedded"
+indexed=$(echo "$kb_output"  | grep -oE '[0-9]+ indexed'   | grep -oE '[0-9]+' || echo "?")
+unchanged=$(echo "$kb_output"| grep -oE '[0-9]+ unchanged' | grep -oE '[0-9]+' || echo "?")
+removed=$(echo "$kb_output"  | grep -oE '[0-9]+ removed'   | grep -oE '[0-9]+' || echo "?")
+embedded=$(echo "$kb_output" | grep -oE '[0-9]+ embedded'  | grep -oE '[0-9]+' || echo "0")
+log "kb vault reindex OK (indexed=$indexed unchanged=$unchanged removed=$removed embedded=$embedded)"
 
 exit 0
