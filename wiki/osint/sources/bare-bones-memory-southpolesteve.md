@@ -89,7 +89,7 @@ Gemini's evaluation flagged "License: NOT FOUND" and noted "Verification is requ
 ### Risks & open questions
 
 1. **Long-term scalability without compaction** — file the bare-bones cron pairing with `wiki_lint.py` truncation to bound session-logs growth.
-2. **License clarification** [NEEDS VERIFICATION 2026-04-29] — periodic check of the gist for Unlicense/CC0/MIT tag.
+2. **License clarification** [NEEDS MANUAL REVIEW 2026-05-11: gist = default copyright] — `gh api gists/b39a3528790bc99fe3f2c2b9e3263ef8` confirms gist is public + `AGENTS.md` single file + updated 2026-05-11. **Gists do not expose a license SPDX ID via the API** because GitHub doesn't surface gist licensing in metadata. Per `concepts/cemini-license-posture.md` mode #1, gists default to **all-rights-reserved copyright** unless the author explicitly adds a license file in the gist body. The pattern itself ("MD-file-as-memory primitive") is freely re-implementable from concept — Cemini's adaptation is concept-derived, not code-derived. No license blocker for the pattern-level adoption Cemini has done.
 3. **Conflict with cpr-pattern boundaries** — cpr handles in-session memory; Bare Bones handles cross-session. Both should coexist; potential adapter work is required to ensure the post-task summary fed to cpr is also written to `session-logs/` per Bare Bones' protocol.
 
 ## Snippets

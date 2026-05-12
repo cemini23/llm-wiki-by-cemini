@@ -107,7 +107,7 @@ This policy is *operational*, not aspirational — license findings have trigger
 
 | # | Pattern | First seen | Mitigation |
 |---|---------|------------|------------|
-| 1 | NO LICENSE → default copyright | K27 (multiple) | Audit rule: REJECT until upstream LICENSE clarified |
+| 1 | NO LICENSE → default copyright (5+ occurrences: K27 multiple, K36 Anthropic finance-skills, K38 HKUDS/AI-Trader, K39 virattt/ai-hedge-fund 58.6k★, K39 19PINE-AI/ikp) | K27 (multiple) | Audit rule: REJECT until upstream LICENSE clarified. **Star count does NOT confer derivative right** — 58k-star repos can still be `NOLICENSE`. Canonical verification: `gh api repos/<owner>/<repo> --jq '.license.spdx_id'` returns `null` → blocked. |
 | 2 | AGPL network-clause Docker-defeat | K27 (SocratiCode) | Reject for any networked deployment; allow only as static reference reading |
 | 3 | GPL-3.0 LLM-agent derivative-work | K27 (freqtrade, qb-core) | Quarantine agents — never feed GPL source to coding agents writing into Cemini |
 | 4 | **CC-BY-NC training-data contamination** | **5_4-links (tennis_atp + tennis_match_prediction)** | Extract algorithm only; retrain against commercially-licensed data |
@@ -134,6 +134,10 @@ When the IP is eventually transferred or licensed (see @concepts/ip-sale-readine
 ### License Drift exemplar (loki-mode BUSL transition, K32 catalog mode #10)
 
 > "The foremost risk is License Drift. The project transitioned from the permissive MIT license to the restrictive BUSL-1.1 recently. However, online aggregators and older documentation still falsely report it as MIT. Trusting third-party aggregators over the actual repository's commit history in an M&A context leads to catastrophic due-diligence failure." [Source: 5_6 links.docx URL 14, K32 Gemini DR eval batch]
+
+### NO-LICENSE-popular-repo recurrence (K39 batch closeout, 2026-05-11)
+
+> Of 14 license-pending repos resolved via `gh api` SPDX lookup in the K39 wave-4 batch: 9 returned clean SPDX IDs (MIT, Apache-2.0), 2 returned `NOLICENSE`, 3 returned `NOASSERTION` (LICENSE present but non-standard). **The 2 NOLICENSE findings include `virattt/ai-hedge-fund` at 58.6k stars and `19PINE-AI/ikp` at 69 stars.** This brings the catalog-mode-#1 occurrence count to 5+: K27 (multiple), K36 (Anthropic finance-skills), K38 (HKUDS/AI-Trader), K39 (virattt + 19PINE-AI). The 58.6k-star case is the most operationally telling — high social-proof signal coexists with full no-derivative-right blocker. Tooling lesson: `gh api repos/<owner>/<repo> --jq '.license.spdx_id'` is canonical for this check, faster + more reliable than `crawling_exa` against the LICENSE file URL because it returns `null` for missing-LICENSE in one call rather than requiring a 404 inference.
 
 ## Dead Ends
 

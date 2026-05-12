@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-11] gap-closure | Tier-1 Type E fix + Type D license-batch closeout (Wave 4 / K9-K12 dated 2026-04-29)
+
+- **Type E fix (1 page)**: Added `## Narrative` section to `concepts/kalshi-api-reference.md` orienting readers to the 175-endpoint Kalshi API index by operational cluster: market data (public), historical data (auth + cutoff-aware), orders (V2-mandatory post-2026-05-06), FIX (deferred), WebSocket channels (Cemini current path), portfolio + subaccounts, order groups (dead-man's-switch primitive), RFQ (deferred). SDK posture clarified: Cemini uses pykalshi over official Python SDK per K30 perf reasons. Closes Tier-1 thin-concept flag.
+- **Type D license-batch (14 repos resolved via `gh api repos/<owner>/<repo> --jq '.license.spdx_id'`)**:
+  - **9 GREEN (MIT/Apache-2.0)**: `mvanhorn/last30days-skill` (MIT, 25.5k★), `crazyrabbitLTC/mcp-etherscan-server` (MIT, stale 2024-12-31), `doggybee/mcp-server-ccxt` (MIT), `KaustubhPatange/polymarket-trade-engine` (MIT), `china-qijizhifeng/agentic-harness-engineering` (MIT — AHE adoption gate cleared), `vercel-labs/agent-browser` (Apache-2.0, 32.7k★, K9 claim confirmed), `NoblerWorks-HQ/IRONSIGHT` (MIT), `ni5arga/sightline` (MIT), `j3ssie/metabigor` (MIT, maintenance acceptable), `inclusionAI/Ling` (MIT, stale 2025-05-14).
+  - **2 RED (NOLICENSE — no-LICENSE-popular-repo pattern)**: `virattt/ai-hedge-fund` (**58.6k★ but NOLICENSE** — 4th occurrence) + `19PINE-AI/ikp` (69★, NOLICENSE — 5th occurrence). IKP silent-swap-detector adoption blocked at code level; paper-only citations remain clean. ai-hedge-fund **never adopt** per default-copyright default-Reject policy.
+  - **2 NEEDS-MANUAL-REVIEW (NOASSERTION — non-standard LICENSE file)**: `h9zdev/GeoSentinel` (908★) + `7onez/cti-expert` (99★). Both require human LICENSE-file fetch + read.
+- **Catalog impact**: `concepts/cemini-license-posture.md` mode #1 (NO LICENSE → default copyright) updated from "K27 (multiple)" to 5+ occurrences with explicit catalog. New Snippets entry documents `gh api` canonical-source pattern (faster + more reliable than `crawling_exa` against LICENSE-file URLs).
+- **Tags resolved**: 13 of 44 Type D tags closed (~30% of the 2026-04-29 batch). Remaining 31 are operational/empirical questions (memory leak resistance, accessibility-tree truncation, shadow-account persistence, etc.) — not `gh api`-resolvable. These persist until the empirical work is done.
+- **Wiki page-count delta**: +0 (no new pages); 6 source pages edited + 1 concept page edited (kalshi-api-reference) + 1 catalog updated (cemini-license-posture).
+
 ## [2026-05-11] brief | K39 VS Vector 1 (synthetic scenarios) SHIPPED to cemini-prod
 
 - **Brief**: `briefs/2026-05-11_verbalized-sampling-synthetic-scenarios.md` (18 KB).

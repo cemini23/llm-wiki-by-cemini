@@ -2,7 +2,20 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (end of 2026-05-11 session — K39 ingest COMPLETE)
+## Position (end of 2026-05-11 session — K39 ingest COMPLETE + Tier-1 gap closure)
+
+### Tier-1 gap closure (2026-05-11)
+
+- **Type E (thin concept)**: 1 of 1 closed. `concepts/kalshi-api-reference.md` got `## Narrative` section orienting readers to 175-endpoint API by cluster (market data / historical / orders V2 / FIX / WebSocket / portfolio / order groups / RFQ) + SDK posture (pykalshi over official Python SDK).
+- **Type D license-batch**: 13 of 44 stale `[NEEDS VERIFICATION 2026-04-29]` tags resolved via `gh api repos/<owner>/<repo> --jq '.license.spdx_id'`. Results:
+  - **9 GREEN MIT/Apache** — last30days-skill, mcp-etherscan-server, mcp-server-ccxt, polymarket-trade-engine, agentic-harness-engineering, agent-browser, IRONSIGHT, sightline, metabigor, Ling.
+  - **2 NEW NOLICENSE RED** — `virattt/ai-hedge-fund` (**58.6k★** — popularity ≠ license) + `19PINE-AI/ikp` (69★). Catalog mode #1 occurrence count → 5+ across K27/K36/K38/K39. IKP silent-swap-detector adoption blocked at code level.
+  - **2 NOASSERTION manual-review** — `h9zdev/GeoSentinel` + `7onez/cti-expert` (custom LICENSE files).
+- **Remaining 31 of 44 NV 2026-04-29 tags**: operational/empirical questions (memory leak resistance, accessibility-tree truncation, shadow-account persistence, etc.) — NOT `gh api`-resolvable. Persist until empirical work happens.
+- **Catalog impact**: `concepts/cemini-license-posture.md` mode #1 + new Snippets entry documenting `gh api` canonical-source pattern over `crawling_exa` against LICENSE URLs.
+
+### K39 ingest (carried from earlier 2026-05-11)
+
 
 K39 = 17-URL `Evaluating Project Links for Stacks.docx` eval brief + Verbalized Sampling paper (arXiv 2510.01171).
 
