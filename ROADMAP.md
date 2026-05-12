@@ -10,8 +10,8 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (end of 2026-05-11)
 
-- **Wiki**: 669 pages indexed (+45 K37/K38 = 5 source + 38 tool entity + 2 concept). K37 + K38 add two evaluation briefs (21-URL + 29-URL) plus 3 paper-form sources (Reinforced Agent, Signals, ODINI). 2 new concept pages capture the reviewer-agent inference-time-feedback and trajectory-triage-signals patterns.
-- **K-series**: K37 (21-URL system-integration eval) + K38 (29-URL trading-stack eval) complete. K37 tier rollup: 3 Adopt + 6 Steal-from + 3 Reference + 1 Defer + 8 UNAVAILABLE. K38 tier rollup: 6 Adopt + 6 Steal-from + 5 Reference + 3 Defer + 5 Reject (Medusa AGPL + TokenSpeed + tropicaltidbits + D3Ext/WEF + ssh-keys-manager-stmol) + 4 UNAVAILABLE.
+- **Wiki**: 688 pages indexed (+19 K39 = 2 source + 16 tool entity + 1 concept; on top of +45 K37/K38). K39 source `evaluating-project-links-stacks.md` (17-URL eval brief) plus paper-form `verbalized-sampling-mode-collapse.md` (training-free distribution-prompting paper). 1 new concept page captures the Verbalized Sampling pattern as third orthogonal training-free Conductor layer (alongside reviewer-agent + signals).
+- **K-series**: K39 (17-URL link-eval brief + VS paper) complete 2026-05-11. K39 tier rollup: 6 Adopt + 2 Steal-from + 2 Reference-only + 3 Reject + 3 UNAVAILABLE + 1 duplicate. **5 Phase-0 RED FLAGS** carried forward (mischaracterization pattern continues — 6th aggregate catch across K28+K30+K36+K38). K37 (21-URL system-integration eval) + K38 (29-URL trading-stack eval) complete prior. K37 tier rollup: 3 Adopt + 6 Steal-from + 3 Reference + 1 Defer + 8 UNAVAILABLE. K38 tier rollup: 6 Adopt + 6 Steal-from + 5 Reference + 3 Defer + 5 Reject (Medusa AGPL + TokenSpeed + tropicaltidbits + D3Ext/WEF + ssh-keys-manager-stmol) + 4 UNAVAILABLE.
 - **K-series prior**: K36 complete (17-URL trading-stack evaluation brief). Tier rollup: 4 Adopt (picobot, ctop, QuantMuse→NO-GO, Adala) + 4 Steal-from + 1 split (finance-skills) + 2 Reference/Defer + 3 Reject + 3 UNAVAILABLE.
 - **K35 status**: complete (4-source eval batch, 55 tools across 3 surfaces). Three-surface evaluation methodology codified.
 - **Inbox**: CLEAN (K37/K38 sources + 3 papers moved to librarian 2026-05-11)
@@ -33,11 +33,38 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Next — actually pending action
 
+**K39 ingest complete 2026-05-11**. 17-URL `Evaluating Project Links for Stacks.docx` eval brief + Verbalized Sampling paper (arXiv 2510.01171). **5 Phase-0 RED-FLAG queue** opened for Adopt-tier verdicts pending source audit before any install (meridian + deepseek-tui + obscura-headless-browser + mac-code; eval-brief's "production-ready" framing is the recurring tell). 11th license-catalog mode landed: **EUPL-1.2 = AGPL-3.0-equivalent + Article 14.3 IP-sale poison pill** (taranis-ai Reject 2026-05-11). 3rd no-LICENSE pattern occurrence in K39 (after K36 finance-skills + K38 AI-Trader) — none in K39 directly, but K39 surfaced license-claim mismatches the audit caught at Phase-0. **2nd Polymarket arb-bot pattern** confirmed (gabagool joins K38 cloddsbot). VS paper headline: 1.6-2.1× creative-writing diversity, +6.9 pts synthetic-math SFT, zero factuality/safety regression — third orthogonal training-free Conductor layer (with K37 reviewer-agent + signals).
+
 **K37 + K38 ingest complete 2026-05-11**. **Steal-from license verification CLOSED 2026-05-11** (12 items: 11 GREEN MIT/Apache-2.0, 1 RED HKUDS/AI-Trader no-LICENSE-file — 3rd occurrence of pattern, downgraded to pseudocode-only). **K37/K38 Adopt-tier prod candidates** (highest-impact): Visual Crossing Weather + wethr.net (Kalshi/Polymarket weather contracts data stack), Perplexity MCP + 9router + guild MCP (MCP infrastructure cluster), Readme.skill + Google Colab VSCode (workflow). **2 prototype workstreams seeded by paper ingests**: (a) Reviewer-agent Conductor prototype — DeepSeek-R1 reviewer gating side-effecting tools, ~200-400 LOC Phase-0; (b) Signals audit-JSONL prototype — `signals` field on per-trajectory close-out, ~200-300 LOC Phase-0. Cross-wiki routes shipped (3 briefs): markdown-preview-pluk → image-gen-wiki + seo-wiki + 3d-printing-wiki (all markdown-based).
 
 K36 ingest complete 2026-05-10. **Phase-0 audit queue** (before any K36 prod brief drafts): picobot (MCP-native Go gateway, MIT), QuantMuse (Python+C++ quant stack, MIT), Adala (Apache-2.0 data-labeling with reflection loop — 2.5-yr abandonment-risk flag). ctop + finance-skills are laptop-only adoptions (lower blast radius, audit deferred). Cross-wiki route shipped: URL 10 (digital-marketing-pro) → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md`.
 
 K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-target + 6 workspace-laptop-target). Phase-0 audits for the 3 CONDITIONAL-GO items complete 2026-05-10 — all upgraded to **GO**. K35 follow-ups: (1) K35 Steal-from extractions (SPJ algorithm port, TPE sampling, Bradley-Terry, spec-kit template patterns) — still open; (2) **Brief-audit upgrade sprint: sequential ship — steps 1+2+3 SHIPPED 2026-05-10**. Step 1 (`scripts/skill_audit.py` v0.3) ported academic-paper-skills 35-pt framework: 10 checks, 3 new (`brief_completeness` + `risk_discipline` + `phasing`), ops/research-brief exemption gate. Step 2 (v0.4) ported research-paper-writing claim-evidence + abstract synthesis: 12 checks, 2 new (`check_claim_evidence` 0.06, `check_abstract_synthesis` 0.04) carved from citations + prose_quality weights; calibration verified on 7 briefs. Step 3 (v0.5) ported codex pressure-test 4-mode adversarial review prompts via opt-in `--llm-mode` flag (DeepSeek `deepseek-chat` single combined-call structured output) backed by NEW `scripts/_llm_retry.py` 3-tier retry helper (port of kytmanov/obsidian-llm-wiki-local `structured_output.py` Phase 2). Calibration on ARIS adoption brief: Tier 1 success in 15s no retries, REWORK verdict, 4 fatal flaws surfaced (2 HIGH + 2 MEDIUM, one per mode), competition-map correctly identified Cemini's existing stack as displacement. Sprint COMPLETE; hierarchical section optimization (3rd DR-named research-paper pattern) deferred — can plug into the same `--llm-mode` infrastructure later if needed; (3) Workspace-laptop install execution for the 6 K35 GO tools — still open.
+
+### K39 follow-ups
+
+**Phase-0 RED-FLAG queue** (eval-brief Adopt verdicts pending source audit before any install — `phase_0_audit: PENDING` in entity frontmatter):
+
+| Item | Tier (eval) | Red flag | Activation trigger |
+|------|------------|----------|--------------------|
+| **meridian** | Adopt → FLAGGED | Family-C TOS-suspect (OAuth-grafting on vendor credentials — same K38 9router landmine pattern) | Audit Pull/PR history for OAuth-grafting evidence; if absent, GO; if present, REJECT |
+| **deepseek-tui** | Adopt → FLAGGED | Aggressive workflow-migration framing in README (proposes replacing Claude Code as primary interface) | Phase-0 spec confirms it's a *DeepSeek-API-only* TUI (not a Claude Code substitute); GO only if scoped to DeepSeek probing |
+| **obscura-headless-browser** | Adopt → FLAGGED | Aggressive prod-replacement framing (proposes replacing `mcp__claude-in-chrome__*` + computer-use stack) | Phase-0 spec audit: capability parity test vs Claude in Chrome MCP; GO only if obscura adds capability not in existing stack |
+| **mac-code** | Adopt → FLAGGED | SSD-wear concern via `F_NOCACHE` flag usage (laptop SSD endurance risk on hot-path workflows) | Audit `F_NOCACHE` actual use frequency; GO if rare/batch; NO-GO if hot-path |
+| **kepano-obsidian-skills** | Adopt | CommonMark-vs-Obsidian-flavor uncertainty (30.5K★ but wiki uses GitHub-flavored MD; skill portability TBD) | Audit one skill end-to-end against `wiki/` files; GO if zero render-break |
+
+| K39 cluster | Action | Status |
+|------|--------|--------|
+| **K39 Adopt — drift** | Single-dev Rust file-transfer (MIT), 254★, niche utility; bus-factor flag | **DEFERRED 2026-05-11** — single-dev maintenance risk; not chartered until clear use-case |
+| **K39 Reject — taranis-ai** | EUPL-1.2 IP-sale poison pill + 16 GB hardware requirement | **REJECT 2026-05-11** — license catalog mode #11 |
+| **K39 Reject — daybreak-openai** | OpenAI enterprise vendor lock-in (cost + family-A TOS risk) | **REJECT 2026-05-11** |
+| **K39 Reject — ducky** | Desktop GUI for retired use case | **REJECT 2026-05-11** |
+| **K39 Reference-only — open-notebook** | 3-5 GB RAM disqualifies CPX21 prod box | **REFERENCE-ONLY 2026-05-11** — Steal-from architecture only if local-laptop OK |
+| **K39 Reference-only — x711** | Closed SaaS "The Hive"; cross-agent-memory pattern worth studying | **REFERENCE-ONLY 2026-05-11** — Steal-from pattern only |
+| **K39 Steal-from — nvidia-openshell** | Apache-2.0 v0.0.37; policy schemas only | **PATTERN-EXTRACT 2026-05-11** — extract policy schemas; no install |
+| **K39 Steal-from — gabagool** | 2nd Polymarket arb bot (after K38 cloddsbot); MIT pending verify | **PATTERN-EXTRACT 2026-05-11** — cross-reference against cloddsbot arb signals |
+| **K39 UNAVAILABLE — 3 stubs (opensourceprojects.dev)** | Exa-resolution pass; Tier-1 gap detection will catch as cited-unread | Deferred |
+| **VS paper — Conductor integration** | Three integration vectors: (a) HIGH-fit synthetic trading-scenario generation, (b) MEDIUM-fit hypothesis ideation, (c) MEDIUM-fit reviewer-agent distribution-of-verdicts extension | Recommended next step — combines with K37 reviewer-agent + signals prototypes as orthogonal Conductor layers |
 
 ### K37/K38 follow-ups
 

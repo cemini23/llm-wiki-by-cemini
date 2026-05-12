@@ -10,6 +10,7 @@ related:
   - concepts/mcp-tool-marketplace.md
   - entities/tools/lazy-tool.md
   - entities/tools/claude-code-router.md
+  - entities/tools/meridian.md
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
@@ -24,6 +25,7 @@ adoption_status: DEFER-INDEFINITELY 2026-05-11
 - `@concepts/mcp-tool-marketplace.md` — Family-C TOS risk rubric applied
 - `@entities/tools/lazy-tool.md` — already validated, 46% token reduction, single Go binary; covers 9router's compression role
 - `@entities/tools/claude-code-router.md` — already validated, LLM routing layer; covers 9router's routing role
+- `@entities/tools/meridian.md` — sibling Family-C TOS-risk candidate from K39 (OAuth-grafting pattern reference)
 
 ## Raw Concept
 

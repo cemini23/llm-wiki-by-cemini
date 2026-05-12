@@ -7,6 +7,7 @@ related:
   - sources/link-evaluation-brief-trading-stack.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
+  - entities/tools/gabagool.md
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
@@ -17,6 +18,7 @@ license_verified: MIT
 - `@sources/link-evaluation-brief-trading-stack.md` — source evaluation brief (URL 9)
 - `@concepts/tool-evaluation-framework.md` — three-surface methodology applied
 - `@concepts/cemini-license-posture.md` — license posture context
+- `@entities/tools/gabagool.md` — sibling Polymarket arb bot pattern (K39, 2nd occurrence)
 
 ## Raw Concept
 

@@ -9,6 +9,8 @@ related:
   - concepts/agent-memory-critique.md
   - concepts/agent-trajectory-triage-signals.md
   - concepts/deepseek-models.md
+  - concepts/verbalized-sampling-llm-diversity.md
+  - sources/verbalized-sampling-mode-collapse.md
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
@@ -21,6 +23,8 @@ updated: 2026-05-11
 - `@concepts/agent-memory-critique.md` — adjacent literature on critique-based agent improvement
 - `@concepts/agent-trajectory-triage-signals.md` — complementary post-hoc layer (this concept is inference-time; signals are post-trajectory)
 - `@concepts/deepseek-models.md` — DeepSeek-R1 is the candidate Cemini reviewer; DeepSeek-V3 is the candidate base agent
+- `@concepts/verbalized-sampling-llm-diversity.md` — third orthogonal Conductor layer (generation-time distribution; reviewer/signals are pre/post-call gates)
+- `@sources/verbalized-sampling-mode-collapse.md` — VS paper source
 
 ## Raw Concept
 

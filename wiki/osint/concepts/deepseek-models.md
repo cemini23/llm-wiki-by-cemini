@@ -13,6 +13,8 @@ related:
   - concepts/llm-listwise-alignment.md
   - entities/tools/adala.md
   - concepts/reviewer-agent-inference-time-feedback.md
+  - concepts/verbalized-sampling-llm-diversity.md
+  - entities/tools/deepseek-tui.md
 maturity: draft
 created: 2026-05-02
 updated: 2026-05-11
@@ -25,6 +27,8 @@ updated: 2026-05-11
 - @concepts/llm-agent-systems.md — cluster hub; DeepSeek is Cemini's intended brain for agent orchestration.
 - @concepts/conductor-orchestrator.md — Conductor orchestrator; model selection directly impacts routing and tool-use accuracy.
 - @entities/infrastructure/deepseek-r1-14b.md — Local R1-14B attempt (retracted); cloud API is the operative path.
+- @concepts/verbalized-sampling-llm-diversity.md — VS is model-agnostic, but VS paper measured DeepSeek as one of the receiving-strongest-benefit families (K39).
+- @entities/tools/deepseek-tui.md — K39 Adopt-tier TUI candidate for DeepSeek API (phase_0_audit: PENDING).
 
 ## Raw Concept
 

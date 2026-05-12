@@ -9,6 +9,8 @@ related:
   - concepts/cryptographic-audit-trail.md
   - concepts/agent-memory-critique.md
   - concepts/reviewer-agent-inference-time-feedback.md
+  - concepts/verbalized-sampling-llm-diversity.md
+  - sources/verbalized-sampling-mode-collapse.md
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
@@ -21,6 +23,8 @@ updated: 2026-05-11
 - `@concepts/cryptographic-audit-trail.md` — Cemini's existing audit JSONL is the natural substrate for signal computation
 - `@concepts/agent-memory-critique.md` — claude-mem stores observations; signals could grade observation value
 - `@concepts/reviewer-agent-inference-time-feedback.md` — complementary inference-time pattern (this concept is post-hoc; reviewer is inline)
+- `@concepts/verbalized-sampling-llm-diversity.md` — third orthogonal Conductor layer (inference-time generation diversity; complements this post-hoc triage)
+- `@sources/verbalized-sampling-mode-collapse.md` — VS paper source
 
 ## Raw Concept
 

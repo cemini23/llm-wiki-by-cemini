@@ -19,9 +19,10 @@ related:
   - concepts/llm-listwise-alignment.md
   - sources/regime-conditioned-bo-evaluation.md
   - concepts/regime-conditioned-evaluation.md
+  - concepts/verbalized-sampling-llm-diversity.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-07
+updated: 2026-05-11
 ---
 
 ## Relations
@@ -35,6 +36,7 @@ updated: 2026-05-07
 - @sources/masrouter-acl-2025.md — **Multi-agent extension**: Collaboration mode + role allocation + LLM selection. 52% cost reduction.
 - @sources/gigpo-neurips-2025.md — **Multi-turn credit assignment**: Two-level GRPO for agent trajectory optimization.
 - @sources/meta-router-2509.25535.md — **Evaluation framework**: Causal correction of LLM-as-judge bias for router training.
+- @concepts/verbalized-sampling-llm-diversity.md — **Third orthogonal training-free layer** (K39): VS at generation time complements reviewer-agent (inline call gating) and signals (post-hoc triage). All three sit on the same prompt-and-orchestration substrate.
 
 ## Raw Concept
 

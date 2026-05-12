@@ -1,5 +1,44 @@
 # Wiki Log
 
+## [2026-05-11] ingest | K39 — Evaluating Project Links for Stacks (17 URLs) + Verbalized Sampling paper (2 sources)
+
+Two-source ingest. One docx eval brief (17 URLs, three-surface methodology) + one academic paper on training-free LLM diversity restoration.
+
+**K39 — Evaluating Project Links for Stacks (17 URLs)**:
+- Source page: [sources/evaluating-project-links-stacks.md](sources/evaluating-project-links-stacks.md). Three-surface methodology (Cemini prod / Wiki librarian / Workflow laptop).
+- Tier rollup: 6 Adopt (drift, kepano/obsidian-skills, Meridian, DeepSeek-TUI, Obscura, mac-code), 2 Steal-from (NVIDIA OpenShell, gabagool), 2 Reference-only (Open Notebook, x711), 3 Reject (taranis-ai EUPL-1.2 IP-sale poison pill, Daybreak OpenAI lock-in, Ducky desktop GUI), 3 UNAVAILABLE (URLs 9, 13, 14 — opensourceprojects.dev blocked), 1 noted duplicate (URL 15 = URL 13).
+- 16 entity stubs created in `wiki/entities/tools/` (13 evaluated + 3 UNAVAILABLE).
+- **5 Phase-0 RED FLAGS on Adopt-tier verdicts** (all marked `phase_0_audit: PENDING` in frontmatter):
+  1. **Meridian** — "Use your Claude Max subscription with…" — exact signature of K38 9router Family-C TOS landmine pattern. **HIGHEST suspicion.**
+  2. **DeepSeek-TUI** — eval brief recommends full Claude Code → DeepSeek-TUI migration on a single-dev project. Major workflow change without Phase-0 = exact 6-catch mischaracterization pattern.
+  3. **Obscura** — claims wholesale Playwright/Headless Chrome replacement on laptop + production. Single-dev (h4ckf0r0day). Aggressive scope without Phase-0.
+  4. **NVIDIA OpenShell** v0.0.37 — verify NVIDIA-published authenticity before any policy-schema extraction.
+  5. **mac-code** — eval brief itself flags SSD wear via F_NOCACHE bypass + IQ2_M quantization-induced logic failure + memory-leak history. Solo-laptop hardware-existential risk.
+- **No cross-wiki routing** — K39 tools are all Cemini-stack-specific (markdown-tooling, file-transfer, claude-alternatives, polymarket, headless-browser). No off-topic content for image-gen/seo/3d-printing wikis.
+- **New license blocker for catalog**: **EUPL-1.2** (taranis-ai) — Article 14.3 + network-distribution clauses functionally equivalent to AGPL-3.0 for IP-sale-readiness purposes.
+- **2nd Polymarket arbitrage bot** (gabagool) joins K38 CloddsBot in the prediction-market arb pattern-extraction queue for the planned Kalshi adapter.
+
+**K39 paper — Verbalized Sampling (arXiv 2510.01171v3, Stanford/Northeastern/WVU, Oct 2025)**:
+- Source page: [sources/verbalized-sampling-mode-collapse.md](sources/verbalized-sampling-mode-collapse.md).
+- **Core finding**: mode collapse comes from **typicality bias in preference data** (human annotators favor familiar text), not from RLHF algorithm choice. Even with a perfect reward model, RLHF on biased preference data drives collapse.
+- **Solution**: training-free **Verbalized Sampling (VS)** prompt pattern — ask the model for a probability distribution over N candidate responses (with `<response>`/`<text>`/`<probability>` tags) instead of a single response. Recovers pretraining-distribution diversity.
+- **Numbers**: 1.6-2.1× creative-writing diversity; +6.9 pts downstream math accuracy when used to generate synthetic SFT data (VS-Multi 37.5 vs Direct 30.6); no factuality (§G.7) or safety (§G.8) regression; **stronger models benefit more** (emergent capability-scaling trend).
+- **Concept page**: [concepts/verbalized-sampling-llm-diversity.md](concepts/verbalized-sampling-llm-diversity.md) — synthesizes the pattern + 5 Cemini integration vectors (synthetic trading-scenario generation, hypothesis ideation in briefs, conductor reviewer-agent extension to distribution-of-verdicts, Polymarket/Kalshi scenario simulation, news-feed persona simulation).
+
+**Architectural placement** (third orthogonal training-free Conductor layer):
+
+| Layer | When | Mechanism | Source / brief |
+|-------|------|-----------|----------------|
+| Inference-time generation diversity | At base-agent call site | VS prompt template | **K39 (NEW)** |
+| Inference-time call gating | Between propose and execute | Reviewer-agent review (Apple) | K37 reviewer-agent brief (shipped 2026-05-11) |
+| Post-hoc trajectory triage | After execution | Non-LLM signals on audit JSONL (DigitalOcean) | K37 signals brief (shipped 2026-05-11) |
+
+All three are training-free, additive, stackable. K39 VS plugs into the base-agent generation call site; the reviewer-agent brief already in prod can be extended (v2) to request a distribution of verdicts instead of binary approve/revise.
+
+**Pages touched**: 2 sources + 16 entities + 1 concept = 19 new pages. `wiki/index.md` updated (Sources count 318 → 320). `wiki/log.md` (this entry).
+
+**Next**: SCP 2 raw sources to `/opt/cemini-bulk/research/`, remove laptop copies, update license catalog with EUPL-1.2 entry, run `wiki_lint.py`, commit + push, update hot.md + ROADMAP.md (Phase-0 RED-FLAG queue + activation triggers).
+
 ## [2026-05-11] close-out | K37 + K38 cycle (Phase-0 audits + license verification)
 
 Same-day close-out following the K37/K38 ingest. 6 Adopt-tier Phase-0 audits completed; 12 Steal-from licenses verified.

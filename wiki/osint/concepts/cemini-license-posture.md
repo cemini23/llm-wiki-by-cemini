@@ -2,7 +2,7 @@
 title: Cemini License Posture — Dependency Obligations & IP Status
 type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
-keywords: [AGPL-3.0, GPL-3.0, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
+keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
   - concepts/ip-sale-readiness.md
   - sources/more-links-5-2-arch-eval.md
@@ -11,6 +11,7 @@ related:
   - sources/5-4-links-tool-eval.md
   - sources/links-2-5-4-tool-eval.md
   - sources/5-6-links-eval-batch.md
+  - sources/evaluating-project-links-stacks.md
   - concepts/cemini-deployment.md
   - entities/infrastructure/cemini-stack.md
   - entities/tools/klaassen-magnus-elo.md
@@ -18,12 +19,13 @@ related:
   - entities/tools/pybroker.md
   - entities/tools/gitnexus.md
   - entities/tools/deepteam.md
+  - entities/tools/taranis-ai.md
   - concepts/mitre-atlas-taxonomy.md
   - entities/tools/blade-github.md
   - concepts/regime-conditioned-evaluation.md
 maturity: draft
 created: 2026-05-03
-updated: 2026-05-07
+updated: 2026-05-11
 ---
 
 ## Relations
@@ -36,6 +38,8 @@ updated: 2026-05-07
 - @sources/links-3-5-4-tool-eval.md — 2026-05-04 ingest surfaced **Elastic License v2 (ELv2)** as 9th license-pattern (source-available with use-restrictions): Context Mode tool. Reject for production; reference-only.
 - @sources/links-2-5-4-tool-eval.md — 2026-05-04 ingest surfaced **dual-license MIT-vs-GPL ambiguity** pattern (Lumibot README claims MIT, core repo files labeled GPL-3.0)
 - @sources/5-6-links-eval-batch.md — 2026-05-06 K32 ingest surfaced **License Drift** as 10th license-pattern (MIT→BUSL-1.1 transition w/ stale third-party aggregator misreport): asklokesh/loki-mode. Operational lesson: NEVER trust aggregators in M&A diligence; always check canonical repo's current `LICENSE` + recent commits.
+- @sources/evaluating-project-links-stacks.md — 2026-05-11 K39 ingest surfaced **EUPL-1.2 IP-sale poison pill** as 11th license-pattern: taranis-ai. EU Public License v1.2 has AGPL-3.0-equivalent network-copyleft behavior + explicit Article 5/14 IP-sale obligations (mandatory source disclosure to acquirers).
+- @entities/tools/taranis-ai.md — EUPL-1.2 exemplar (catalog mode #11). Also 3rd `read_status=no-LICENSE`-pattern-adjacent finding (after K36 finance-skills + K38 AI-Trader).
 - @entities/tools/loki-mode.md — License Drift exemplar (catalog mode #10)
 - @entities/tools/pybroker.md — Commons Clause poison pill (catalog mode #5-family — Apache+restrictive-amendment)
 - @entities/tools/gitnexus.md — PolyForm Noncommercial 1.0.0 (catalog mode #9 family — source-available with use-restrictions)
@@ -65,11 +69,14 @@ Cemini's deployed dependencies fall into four risk buckets:
 - Examples in stack: Redis (BSD-3-Clause), pgvector (PostgreSQL License — BSD-style), Polars (MIT), most Python ecosystem libs.
 - Obligation: attribution in distributed binaries. For private SaaS deployments not distributing the binary, attribution is best-practice but not strictly required.
 
-**Conditional (network-copyleft / strong copyleft)** — AGPL-3.0, GPL-3.0.
+**Conditional (network-copyleft / strong copyleft)** — AGPL-3.0, GPL-3.0, EUPL-1.2.
 - **AGPL-3.0**: any user interacting with the software over a network must be able to receive the source. Docker isolation does *not* defeat this — the AGPL network clause was specifically drafted to close that loophole [Source: K27 / @sources/more-links-5-2-arch-eval.md].
   - Implication: any AGPL-3.0 dependency in the prod stack means Cemini's modifications + integration glue around that dependency must be source-available to users hitting it over the network.
   - Examples to watch (K12/K14 rejections): Firecrawl, OpenViking, SAMEP, NautilusTrader (LGPL transitive taint per K27).
 - **GPL-3.0**: derivative works inherit GPL. K27 surfaced a non-obvious risk: **LLM agents reading GPL-licensed source code and emitting code based on that reading may produce derivative works** [Source: @sources/more-links-5-2-arch-eval.md]. This affects Cemini's autonomous-coding workflows if pointed at GPL repos.
+- **EUPL-1.2** (added K39 2026-05-11 from `@entities/tools/taranis-ai.md`): European Union Public Licence v1.2 is **functionally AGPL-3.0-equivalent for network deployments + explicit IP-sale poison pill**. Article 5 requires source disclosure for derivative works distributed by any means including network. Article 14.3 binds successors-in-interest, meaning a future IP-sale acquirer inherits the source-disclosure obligation. The EUPL is explicitly compatible-with-AGPL/GPL via its Article 5 compatibility list — once a derivative chains through any of those, the strongest license dominates.
+  - Implication: **default-Reject for production**; allowable only as Reference (read-the-code, don't link). Treat exactly as AGPL-3.0 for prod stack decisions.
+  - Examples: taranis-ai (K39 Reject 2026-05-11).
 
 **Restricted (non-commercial / research-only)** — CC-BY-NC-*, custom restrictive.
 - Example: Moirai (CC-BY-NC-4.0) — rejected for Cemini deployment per K14.
@@ -91,6 +98,7 @@ Codified across K12/K14/K25/K27 deep-reads (see @sources/more-links-5-2-arch-eva
 6. **(Added 2026-05-04 from `@sources/5-4-links-tool-eval.md`)** CC-BY-NC training-data contamination — MIT code coupled to NC-licensed datasets propagates NC restriction to derivative model weights and feature pipelines. Algorithm extraction is safe; deployment requires retraining on commercially-licensed data with full provenance documentation.
 7. **(Added 2026-05-04 from `@sources/links-2-5-4-tool-eval.md`)** Dual-license MIT-vs-GPL ambiguity — when a repository's README claims one license but core files carry another, treat as REJECT pending file-by-file legal audit. Importing modules under false license assumptions is a forced-disclosure risk.
 8. **(Added 2026-05-04 from `@sources/5-4-links-tool-eval.md`)** Namespace confusion — repositories sharing names with established libraries (e.g., 1weiho/open-slide vs CMU's openslide.org medical library) trigger false-positive SCA scanner flags during M&A diligence. Document explicit distinction in any adoption decision.
+9. **(Added 2026-05-11 from `@sources/evaluating-project-links-stacks.md` K39)** EUPL-1.2 = AGPL-3.0-equivalent for prod + IP-sale poison pill — Article 5 = strong copyleft (network-distribution = source release); Article 14.3 binds successors-in-interest, so any future Cemini IP-sale inherits source-disclosure to acquirer. Default-Reject for production; Reference-only.
 
 This policy is *operational*, not aspirational — license findings have triggered concrete rejections across the K-series deep-reads.
 
@@ -108,6 +116,7 @@ This policy is *operational*, not aspirational — license findings have trigger
 | 8 | Dual-licensing enterprise-tier gating | links-2-5_4 (shannon, repowise) | Reference-only; enterprise tier extracts critical features behind paywall, OSS Lite is intentionally degraded |
 | 9 | **Source-available with use-restrictions** (Elastic License v2 / SSPL family) | **K30 links-3-5_4 (Context Mode, ELv2)** | Reject for production deployment (ELv2 forbids hosting-as-service + circumvention). Allow only as architectural-reference reading. Does NOT meet OSI open-source definition.
 | 10 | **License Drift — repository-aggregator metadata staleness** (MIT→BUSL-1.1, MIT→PolyForm, etc.) | **K32 5_6-links (asklokesh/loki-mode)** | Always read canonical repo's CURRENT `LICENSE` file + recent commits + any `LICENSE-CHANGE-NOTICE.md`. NEVER trust libraries.io / SourceForge mirrors / search-result snippets / `pip-licenses` aggregators alone — they sync at a point in time and may report stale licenses for weeks/months after upstream change. M&A-grade diligence requires canonical-source verification. |
+| 11 | **EUPL-1.2 IP-sale poison pill** (AGPL-3.0-equivalent + Article 14.3 binds successors) | **K39 evaluating-project-links-stacks (taranis-ai)** | Default-Reject for production deployment exactly like AGPL-3.0. Article 5 network-distribution = source-disclosure obligation; Article 14.3 binds successors-in-interest = future Cemini IP-sale acquirer inherits source-disclosure. Reference-only adoption allowed (read-the-code, don't link to it). |
 
 **Apache + commercial vendor pull-up** (deepteam / Confident AI) is a related but distinct pattern: license is genuinely Apache-2.0 clean, but project actively channels users to a SaaS upgrade path. Not a license-rejection per se; cost/lock-in axis to flag during operational decision. Captured here informally; not a separate catalog mode unless it generalizes beyond confident-ai.
 
