@@ -6,6 +6,36 @@ Newest entries on top.
 
 ---
 
+## 2026-05-11 — No-LICENSE-file in popular repos (3rd occurrence; treat README claim as unbacked)
+
+Three K-series ingest passes have now surfaced the same pattern: a GitHub repo with prominent README MIT/Apache claim but **no actual LICENSE file in the repo**. Under default copyright, this means "all rights reserved" — the README's license assertion is legally unenforceable absent a written grant. Star count and maintainer prominence do not change this.
+
+The 3 catches:
+
+| K | Tool | Stars | README claim | Repo reality |
+|---|------|-------|--------------|--------------|
+| K36 | `finance-skills` (claude-plugins-official) | popular skill marketplace plugin | MIT | No LICENSE file; [upstream issue #64](https://github.com/claude-plugins-official/finance-skills/issues/64) filed 2026-05-10 (still open) |
+| K38 | `Readme.skill` (study8677) | 68★ / single-author / 25-day-old | "协议 — MIT" (Chinese README footer) | No LICENSE file |
+| K38 | `AI-Trader` (HKUDS) | **16,123★** / dual English+Chinese README | MIT | No LICENSE file; root listing has only `.env.example, .gitignore, README.md, README_ZH.md, assets, docs, …` — zero LICENSE/COPYING; GitHub `license` API returns null |
+
+The K38 AI-Trader case is the most striking: 16k stars, dual-README professionalism, active 6-month project. The visible markers all suggest a mature MIT-licensed codebase. The Phase-0 minimum — fetch `repos/<owner>/<repo>` from the GitHub API, check the `license` field — surfaces the gap in seconds. Without that check, a Steal-from extraction proceeds under a false license-clean assumption.
+
+This is **not** a niche-repo pattern. It cuts across:
+- Skill/plugin marketplaces (finance-skills)
+- Single-author early-stage tools (Readme.skill)
+- Major academic-org production codebases (HKUDS, the lab that publishes RAG papers)
+
+Operationally, the no-LICENSE-file pattern interacts with the Cemini IP-sale-readiness posture: a clean-room reimplementation built from a no-LICENSE source has weaker provenance defense than one built from an explicitly-MIT-licensed source. The copyright-default analysis would land the same way (no copying allowed without a grant), but in litigation, the defending party has to show clean-room separation rather than pointing at a license grant. Higher friction.
+
+*Apply:*
+
+1. **Add `gh api repos/<owner>/<repo> --jq '.license.spdx_id'` to the Phase-0 license-verification step** — never trust the README's license claim alone. If the API returns `null`, treat as `NO-LICENSE-FILE` regardless of README content. This is the cheapest possible check (one HTTP call) and catches 100% of this pattern.
+2. **Downgrade Steal-from verdicts to "pseudocode-only pattern extraction" when LICENSE is missing** — the source can be read as a design reference, but no direct code copy / derivative translation. Clean-room reimplementation only. Pattern recorded in `wiki/entities/tools/ai-trader-hkuds.md` and `wiki/entities/tools/readme-skill.md`. Tag entity pages with `license-gap` for aggregation.
+3. **File upstream GitHub issue** requesting the repo add a LICENSE file matching their README claim. Low-cost (one issue per finding), creates a paper trail, and 1 in N maintainers will actually fix it. The finance-skills issue #64 is the template — short, polite, references the README MIT claim directly.
+4. **Do not bump `maturity: validated` for a no-LICENSE-file entity until at least the pseudocode-only constraint is documented in the page body.** Otherwise the validated tag implies license clearance that doesn't exist.
+
+---
+
 ## 2026-05-11 — Phase-0 audit catches eval-brief mischaracterization (meta-pattern)
 
 Six Phase-0 audits across K28, K30, and K38 have now rejected credible-looking Adopt-tier verdicts because the eval brief mischaracterized the tool's actual function. The pattern is consistent enough to be worth naming: **eval briefs are synthesized from README marketing + GitHub topic tags, not from reading entry-point code**. The DR sweep that generates them sees the surface a maintainer wants to present; Phase-0 sees what the code actually does. When those diverge, the brief loses.

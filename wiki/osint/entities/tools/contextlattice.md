@@ -7,9 +7,10 @@ related:
   - sources/evaluating-urls-system-integration.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
-maturity: draft
+maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
+license_verified: Apache-2.0
 ---
 
 ## Relations
@@ -21,7 +22,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `github.com/sheawinkler/contextlattice`
 - **Tier (per source brief)**: **Steal-from**
-- **License**: [NEEDS VERIFICATION 2026-05-11] License needs verification.
+- **License** [VERIFIED 2026-05-11]: **Apache-2.0** (clean for pattern extraction per Cemini license posture). Maturity: 102★ / last push 2026-05-11 / ~2.7 months old.
 
 ## Narrative
 

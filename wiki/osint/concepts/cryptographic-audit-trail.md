@@ -36,9 +36,11 @@ related:
   - sources/ai-2-4-3.md
   - concepts/openclaw-security-taxonomy.md
   - concepts/agent-authorization-stack.md
+  - concepts/agent-trajectory-triage-signals.md
+  - sources/signals-trajectory-triage.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-01
+updated: 2026-05-11
 audit_date: 2026-04-24
 ---
 

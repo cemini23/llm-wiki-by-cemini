@@ -7,9 +7,10 @@ related:
   - sources/evaluating-urls-system-integration.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
-maturity: draft
+maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
+license_verified: MIT
 ---
 
 ## Relations
@@ -21,7 +22,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `github.com/YosefHayim/ebay-mcp`
 - **Tier (per source brief)**: **Steal-from**
-- **License**: [NEEDS VERIFICATION 2026-05-11] License needs verification.
+- **License** [VERIFIED 2026-05-11]: **MIT** (clean for pattern extraction per Cemini license posture). Maturity: 61★ / last push 2026-05-09 / ~6.1 months old.
 
 ## Narrative
 

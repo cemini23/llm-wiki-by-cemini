@@ -10,6 +10,10 @@ related:
   - entities/infrastructure/librarian-server-architecture.md
   - concepts/exploration-graph-dead-ends.md
   - entities/tools/letta-memgpt.md
+  - concepts/agent-trajectory-triage-signals.md
+  - concepts/reviewer-agent-inference-time-feedback.md
+  - sources/reinforced-agent-tool-calling-feedback.md
+  - sources/signals-trajectory-triage.md
 maturity: draft
 created: 2026-05-02
 updated: 2026-05-11

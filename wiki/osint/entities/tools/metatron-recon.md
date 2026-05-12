@@ -7,9 +7,10 @@ related:
   - sources/link-evaluation-brief-trading-stack.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
-maturity: draft
+maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
+license_verified: MIT
 ---
 
 ## Relations
@@ -21,7 +22,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `github.com/sooryathejas/METATRON`
 - **Tier (per source brief)**: **Steal-from**
-- **License**: [NEEDS VERIFICATION 2026-05-11] License needs verification — narrow scraper lift only.
+- **License** [VERIFIED 2026-05-11]: **MIT** (clean for narrow scraper lift per Cemini license posture). Maturity: 2,894★ / last push 2026-04-11 / ~1.3 months old.
 
 ## Narrative
 

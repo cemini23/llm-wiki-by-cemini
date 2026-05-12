@@ -7,9 +7,10 @@ related:
   - sources/evaluating-urls-system-integration.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
-maturity: draft
+maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
+license_verified: MIT
 ---
 
 ## Relations
@@ -21,7 +22,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `github.com/agiresearch/ASB`
 - **Tier (per source brief)**: **Steal-from**
-- **License**: [NEEDS VERIFICATION 2026-05-11] ICLR 2025 academic codebase — likely MIT/Apache; verify LICENSE.
+- **License** [VERIFIED 2026-05-11]: **MIT** (clean for pattern extraction per Cemini license posture). Maturity: 247★ / last push 2026-04-16 / ~19 months old (ICLR 2025 paper codebase; mature for academic).
 
 ## Narrative
 

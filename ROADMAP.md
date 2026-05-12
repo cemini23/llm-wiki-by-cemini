@@ -33,7 +33,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Next — actually pending action
 
-**K37 + K38 ingest complete 2026-05-11**. **Phase-0 audit queue** (12+ Steal-from items, license verification pending — all low-risk pattern-extraction, no code lift): CloddsBot, AI-Trader, MegaMemory, ebay-mcp, Beever Atlas, contextlattice, METATRON, hackers-arise tutorial, ASB, homelab-hub, claude-bootstrap, google-research subfolders. **K37/K38 Adopt-tier prod candidates** (highest-impact): Visual Crossing Weather + wethr.net (Kalshi/Polymarket weather contracts data stack), Perplexity MCP + 9router + guild MCP (MCP infrastructure cluster), Readme.skill + Google Colab VSCode (workflow). **2 prototype workstreams seeded by paper ingests**: (a) Reviewer-agent Conductor prototype — DeepSeek-R1 reviewer gating side-effecting tools, ~200-400 LOC Phase-0; (b) Signals audit-JSONL prototype — `signals` field on per-trajectory close-out, ~200-300 LOC Phase-0. Cross-wiki routes shipped (3 briefs): markdown-preview-pluk → image-gen-wiki + seo-wiki + 3d-printing-wiki (all markdown-based).
+**K37 + K38 ingest complete 2026-05-11**. **Steal-from license verification CLOSED 2026-05-11** (12 items: 11 GREEN MIT/Apache-2.0, 1 RED HKUDS/AI-Trader no-LICENSE-file — 3rd occurrence of pattern, downgraded to pseudocode-only). **K37/K38 Adopt-tier prod candidates** (highest-impact): Visual Crossing Weather + wethr.net (Kalshi/Polymarket weather contracts data stack), Perplexity MCP + 9router + guild MCP (MCP infrastructure cluster), Readme.skill + Google Colab VSCode (workflow). **2 prototype workstreams seeded by paper ingests**: (a) Reviewer-agent Conductor prototype — DeepSeek-R1 reviewer gating side-effecting tools, ~200-400 LOC Phase-0; (b) Signals audit-JSONL prototype — `signals` field on per-trajectory close-out, ~200-300 LOC Phase-0. Cross-wiki routes shipped (3 briefs): markdown-preview-pluk → image-gen-wiki + seo-wiki + 3d-printing-wiki (all markdown-based).
 
 K36 ingest complete 2026-05-10. **Phase-0 audit queue** (before any K36 prod brief drafts): picobot (MCP-native Go gateway, MIT), QuantMuse (Python+C++ quant stack, MIT), Adala (Apache-2.0 data-labeling with reflection loop — 2.5-yr abandonment-risk flag). ctop + finance-skills are laptop-only adoptions (lower blast radius, audit deferred). Cross-wiki route shipped: URL 10 (digital-marketing-pro) → seo-wiki brief `2026-05-10_digital-marketing-pro-claude-ecosystem.md`.
 
@@ -54,7 +54,7 @@ K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-
 | **K38 Adopt — Google Colab VSCode** | Workflow laptop integration; first-party Google extension Apache-2.0 | **CONDITIONAL-GO 2026-05-11 — DEFERRED 2026-05-11** (no spend now). Legitimate product, not mischaracterized — but cost-model bleed (free 30 GPU-hrs/wk exhausts in 2-3 days), data egress to GCP, Colab Secrets API not yet in VSCode extension (credential anti-pattern), feature-parity gaps vs web Colab. Activation: both (a) user clears $50-$200/mo budget OR GCP credit allocation, AND (b) scoped non-sensitive use case (no proprietary trading algo / credentials in notebooks). |
 | **Conductor reviewer-agent prototype** | Apple Reinforced Agent pattern; DeepSeek-R1 reviewer + DeepSeek-V3 base; selective-trigger gating on `place_order`/`withdraw`. ~200-400 LOC Phase-0 prototype | Recommended next step |
 | **Signals audit-JSONL prototype** | DigitalOcean Signals pattern; `signals` field on per-trajectory close-out. Phase 0 schema addition + dashboard filter; ~200-300 LOC | Recommended next step |
-| **K37/K38 Steal-from license verification** | 12+ items: CloddsBot, AI-Trader, MegaMemory, ebay-mcp, Beever Atlas, contextlattice, METATRON, hackers-arise tutorial, ASB, homelab-hub, claude-bootstrap, google-research subfolders | License check before extraction |
+| **K37/K38 Steal-from license verification** | 12 items verified | **COMPLETE 2026-05-11** — 11 GREEN (MIT/Apache-2.0 clean for pattern extraction): claude-bootstrap MIT 621★, ASB MIT 247★, beever-atlas Apache-2.0 293★, homelab-hub MIT 541★, ebay-mcp MIT 61★, contextlattice Apache-2.0 102★, google-research Apache-2.0 37,889★, cloddsbot MIT 254★, megamemory MIT 166★, metatron-recon MIT 2,894★, hackers-arise (tutorial site — no GitHub repo, design-doc Steal only). 1 RED: **AI-Trader HKUDS** — NO LICENSE FILE despite README MIT claim (16,123★ project; root listing has zero LICENSE/COPYING file, GitHub `license` API returns null). 3rd occurrence of no-LICENSE pattern after `finance-skills` K36 + `Readme.skill` K38. AI-Trader Steal-from downgraded to **pseudocode-only pattern extraction** (clean-room reimplementation, no direct code copy); upstream-issue filing pending. `license_verified` field added to all 12 entity-page frontmatter; `maturity: validated`. LESSONS.md 2026-05-11 no-LICENSE-pattern entry added. |
 | **K37 UNAVAILABLE URLs** (URLs 1, 6, 8, 10, 11, 12, 16, 19) | Exa-resolution pass; Tier 1 gap detection will catch as cited-unread stubs | Deferred |
 | **K38 UNAVAILABLE URLs** (URLs 17, 20, 24, 25) | Same — Exa-resolution pass | Deferred |
 
@@ -124,7 +124,7 @@ The audit-trail subset (`2026-05-05_conductor-audit-trail-phase1.md` above) supe
 |------|------|
 | **License-pattern catalog (10 modes — K32 added License Drift)** apply on each new Gemini DR ingest | Every ingest |
 | **post_ingest_workflow** memory rule: ROADMAP + briefs after every ingest commit-and-push | Every ingest |
-| **Tier 2 arXiv sweep** — last 2026-05-01 (5 days fresh, within 7-day cadence) | When ≥7 days old |
+| **Tier 2 arXiv sweep** — last 2026-05-09 (2 days fresh, within 7-day cadence) | When ≥7 days old |
 | **wiki_gap_detect.py rerun** — last 2026-05-04 (clean baseline) | After next ingest or weekly |
 
 ## Decisions — open
@@ -185,7 +185,7 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 |------|--------|
 | **0** — pre-ingest dup check (`preingest_check.py`) | Active; runs on every ingest |
 | **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-04 (clean baseline) |
-| **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-01 (within 7-day cadence) |
+| **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-09 (within 7-day cadence) |
 | **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
 
 ---

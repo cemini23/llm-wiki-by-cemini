@@ -12,6 +12,7 @@ related:
   - sources/blade-bayesian-listwise-alignment.md
   - concepts/llm-listwise-alignment.md
   - entities/tools/adala.md
+  - concepts/reviewer-agent-inference-time-feedback.md
 maturity: draft
 created: 2026-05-02
 updated: 2026-05-11

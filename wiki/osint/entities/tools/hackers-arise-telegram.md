@@ -7,9 +7,10 @@ related:
   - sources/link-evaluation-brief-trading-stack.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
-maturity: draft
+maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
+license_verified: tutorial-content-no-code
 ---
 
 ## Relations
@@ -21,7 +22,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `hackers-arise.com/python-for-hackers`
 - **Tier (per source brief)**: **Steal-from**
-- **License**: Tutorial content (no code to license); patterns only
+- **License** [VERIFIED 2026-05-11]: **Tutorial content** (no GitHub repo; lives at hackers-arise.com/python-for-hackers — `hackers-arise-org` and `HackersArise` GitHub users exist but have 0 public repos). No code-license needed; treat as design-document Steal-from only.
 
 ## Narrative
 

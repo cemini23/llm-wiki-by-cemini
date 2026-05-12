@@ -7,9 +7,10 @@ related:
   - sources/evaluating-urls-system-integration.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
-maturity: draft
+maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
+license_verified: Apache-2.0
 ---
 
 ## Relations
@@ -21,7 +22,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `github.com/Beever-AI/beever-atlas`
 - **Tier (per source brief)**: **Steal-from**
-- **License**: [NEEDS VERIFICATION 2026-05-11] License not stated; only architectural patterns to lift, no code — license-clean per Cemini IP-sale policy.
+- **License** [VERIFIED 2026-05-11]: **Apache-2.0** (clean for pattern extraction per Cemini license posture). Maturity: 293★ / last push 2026-05-11 / ~3 weeks old (early-stage; fork-and-pin if any code lift).
 
 ## Narrative
 

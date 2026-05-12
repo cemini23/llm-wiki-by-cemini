@@ -7,9 +7,10 @@ related:
   - sources/link-evaluation-brief-trading-stack.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
-maturity: draft
+maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
+license_verified: Apache-2.0
 ---
 
 ## Relations
@@ -21,7 +22,7 @@ updated: 2026-05-11
 
 - **Repo / URL**: `github.com/google-research/google-research`
 - **Tier (per source brief)**: **Steal-from**
-- **License**: Apache-2.0 (Google standard)
+- **License** [VERIFIED 2026-05-11]: **Apache-2.0** (Google standard; clean for pattern extraction per Cemini license posture). Maturity: 37,889★ / last push 2026-05-11 / ~91 months old (canonical, well-maintained archival monorepo).
 
 ## Narrative
 
