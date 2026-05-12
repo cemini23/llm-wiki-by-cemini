@@ -6,6 +6,24 @@ Newest entries on top.
 
 ---
 
+## 2026-05-12 — K39 Phase-0 batch surfaced 7th mischaracterization catch + no-LICENSE pattern hits 5 occurrences
+
+K39's 5-tool RED-FLAG audit batch closed today with 0 GO / 1 CONDITIONAL-GO / 4 NO-GO-or-REJECT. Three meta-lessons compound.
+
+**1. Eval-brief OAuth-grafting pattern (meridian) is now confirmed as a *recurring* family, not a one-off (K38 9router was occurrence #1).** Meridian's `src/proxy/tokenRefresh.ts:30` reads `~/.claude/.credentials.json` and the macOS Keychain `Claude Code-credentials` service directly; calls `https://platform.claude.com/v1/oauth/token` with hardcoded `OAUTH_CLIENT_ID = "9d1c250a-e61b-44d9-88ed-5944d1962f5e"` (Claude Code's own client ID being reused); and `oauthUsage.ts:26-27` hits private undocumented `api.anthropic.com/api/oauth/usage` with `anthropic-beta: oauth-2025-04-20`. README's load-bearing disclaimer ("No OAuth interception. No binary patches. No hacks. Just pure, documented SDK calls.") is **directly contradicted by the code**. Same Family-C TOS landmine that killed 9router, and same eval-brief "Adopt — Workflow only" framing missed it both times. **Apply**: any third-party tool advertising "use your Claude Max subscription with [other-tool]" should be Phase-0 audited at the `tokenRefresh.ts`-equivalent source file before adoption — the marketing claim and the code routinely disagree.
+
+**2. Mischaracterization aggregate now 7 catches (K28+K30+K30+K38+K38+K38+K39).** The pattern fires across project sizes (single-dev to 32K★), license types, and tool categories. The K28 SwarmVault catch (flat-layout disease) is structurally different from the K38 9router catch (TOS landmine), which is structurally different from the K39 deepseek-tui catch (scope-creep on legitimate-tool). Three distinct sub-modes:
+   - **a. Scope-creep** (deepseek-tui, obscura, K28 SwarmVault) — eval brief recommends wholesale workflow/prod-stack replacement based on partial fit + memory/speed claims alone; tool is fine but the rec is reckless.
+   - **b. TOS landmine** (meridian, 9router) — OAuth-grafting / credential reuse pattern; the tool's mechanism violates vendor TOS, eval brief misses it.
+   - **c. Caveat-then-Adopt internal inconsistency** (mac-code) — brief itself flags blocking risk (SSD wear), then recommends Adopt anyway. Self-contradictory recommendation.
+   These three sub-modes need different audit attention. Scope-creep audits compare against existing stack coverage; TOS-landmine audits read auth-code path directly; caveat-then-Adopt audits enforce internal consistency between brief's Risk section and Recommendation section.
+
+**3. No-LICENSE-file pattern now at 5 occurrences in 4 K-cycles (K36/K38×2/K39×2).** K39 alone surfaced 2 of the 5 (meridian + mac-code). Both had README badges/footers claiming MIT directly contradicted by `gh api repos/<owner>/<repo> --jq '.license.spdx_id'` = null. The check is one `gh api` call. Failure mode = adopting the README's license claim as ground truth without API verification. **Apply**: `scripts/skill_audit.py` Phase-0 brief-audit could grow a `--license-verify` flag that runs the `gh api` check on every github.com URL in a brief and flags mismatches. Currently every Phase-0 audit does this manually; automating eliminates the human-skip failure mode entirely.
+
+*Apply summary*: Phase-0 audit discipline keeps shipping value (7-of-7 high-stakes blocks now have post-audit verdicts that diverge meaningfully from the eval-brief recommendation). The cost is 10-30 min per tool. The savings, on the meridian case alone, is "Anthropic credential revocation + IP-sale ToS-history scar." Worth the time every cycle.
+
+---
+
 ## 2026-05-11 — No-LICENSE-file in popular repos (3rd occurrence; treat README claim as unbacked)
 
 Three K-series ingest passes have now surfaced the same pattern: a GitHub repo with prominent README MIT/Apache claim but **no actual LICENSE file in the repo**. Under default copyright, this means "all rights reserved" — the README's license assertion is legally unenforceable absent a written grant. Star count and maintainer prominence do not change this.

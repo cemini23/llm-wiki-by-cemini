@@ -2,7 +2,42 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (end of 2026-05-11 session — K40 RLHF Critic Bias ingest COMPLETE + K39 ingest + Tier-1 gap closure)
+## Position (end of 2026-05-12 session — K39 Phase-0 RED-FLAG queue CLOSED)
+
+### K39 Phase-0 RED-FLAG batch (5 tools, 2026-05-12)
+
+Single Explore subagent batch + parent spot-check verification. Verdicts:
+
+- **meridian** (rynfar/meridian, 1,221★) — **NO-GO / REJECT 2026-05-12**. OAuth-grafting CONFIRMED at `src/proxy/tokenRefresh.ts:30` (reads `~/.claude/.credentials.json` + macOS Keychain `Claude Code-credentials` service directly) + `tokenRefresh.ts:27-28` (calls `https://platform.claude.com/v1/oauth/token` with hardcoded `OAUTH_CLIENT_ID = "9d1c250a-..."` — Claude Code's own ID reused) + `oauthUsage.ts:26-27` (private undocumented `api.anthropic.com/api/oauth/usage` with `anthropic-beta: oauth-2025-04-20`). README "No OAuth interception" claim **directly contradicted by code**. LICENSE file ABSENT despite README badge MIT (`gh api license.spdx_id` = null). K38 9router pattern verbatim repeat.
+- **deepseek-tui** (Hmbown/DeepSeek-TUI, 26,403★ MIT) — **NO-GO 2026-05-12**. Tool legitimate; eval-brief mischaracterization on Claude Code drop-in framing. Cemini's MCP + skills + hooks investment is non-portable to a DeepSeek-only TUI.
+- **obscura-headless-browser** (h4ckf0r0day/obscura, 11,945★ Apache-2.0) — **NO-GO 2026-05-12** (prod) / CONDITIONAL-CONSIDER (laptop pilot). Wholesale prod-stack replacement on 24/7 trading infra unjustified.
+- **mac-code** (walter-grace/mac-code, 975★) — **REJECT 2026-05-12**. F_NOCACHE pervasive (22 source files matched) on hot-path inference. Projected 6-12mo SSD failure on irreplaceable soldered hardware. No LICENSE file (4th no-LICENSE in K39).
+- **kepano-obsidian-skills** (kepano/obsidian-skills, 30,698★ MIT) — **CONDITIONAL-GO 2026-05-12**. First non-mischaracterization in K39 batch. Install only if user has separate Obsidian-vault workflow; otherwise pure token-overhead cost.
+
+### Aggregates
+
+- **Mischaracterization aggregate now**: **7 catches** total (K28 SwarmVault + K30 PageIndex + K30 Claude-OSINT + K38 9router + K38 guild + K38 Readme.skill + K39 meridian — same K38 9router OAuth-grafting pattern verbatim). Three formalized sub-modes: scope-creep (deepseek-tui, obscura, K28 SwarmVault) + TOS-landmine (meridian, 9router) + caveat-then-Adopt internal inconsistency (mac-code).
+- **No-LICENSE-file pattern now**: **5 occurrences** total (K36 finance-skills + K38 Readme.skill + K38 AI-Trader + K39 meridian + K39 mac-code). Both K39 meridian + mac-code had README badges/footers claiming MIT, contradicted by `gh api license.spdx_id` = null. Catalog mode #1 occurrence count in `concepts/cemini-license-posture.md` updated to 7+ (incl. earlier K39 virattt + 19PINE-AI).
+- **Process win**: Phase-0 batch caught the meridian flip that the Explore subagent's initial reading missed (agent reported "delegated to SDK" based on README; spot-check of `tokenRefresh.ts` + `oauthUsage.ts` flipped GO → NO-GO). Validates Trust-but-verify discipline.
+
+### Files touched 2026-05-12 (commit pending)
+
+- 5 entity pages: `wiki/entities/tools/{meridian,deepseek-tui,obscura-headless-browser,mac-code,kepano-obsidian-skills}.md` (`phase_0_audit:` + `license_verified:` + `maturity: draft → validated` + body audit findings)
+- `wiki/log.md` — new entry on top (2026-05-12 Phase-0 audit batch)
+- `LESSONS.md` — new entry on top (2026-05-12 K39 Phase-0 batch + 7th mischaracterization aggregate + 5th no-LICENSE pattern)
+- `wiki/concepts/cemini-license-posture.md` — catalog mode #1 row updated 5+ → 7+; K39 Phase-0 batch addendum snippet added; `updated: 2026-05-12`
+- `ROADMAP.md` — K39 RED-FLAG queue table closed (all 5 verdicts) + "Next" line updated
+- `hot.md` — this file
+- Audit-clone dirs retained at `/tmp/{meridian,deepseek-tui,obscura,mac-code,kepano}-audit/`
+
+### Next in recommended order (after this commit)
+
+1. ~~5 K39 Phase-0 RED-FLAG audits~~ — **CLOSED 2026-05-12**
+2. **claude-mem Phase 1 verification** — DUE 2026-05-11+, now overdue by 1 day; 3 sessions over 2-3 days; track via `http://localhost:37702`
+3. **K39 Steal-from extractions** (2 items) — nvidia-openshell policy schemas + gabagool vs cloddsbot Polymarket arb cross-reference
+4. **Step 82 Redis/EMS blockers** — prod-side work, no laptop action
+
+## Position (carried — end of 2026-05-11 session — K40 RLHF Critic Bias ingest COMPLETE + K39 ingest + Tier-1 gap closure)
 
 ### K40 ingest (RLHF Critic Bias, single source, 2026-05-11)
 

@@ -1,7 +1,7 @@
 ---
-title: "Meridian — Claude Max Subscription Wrapper (RED-FLAG: Family-C TOS suspect)"
+title: "Meridian — Claude Max Subscription Wrapper (NO-GO 2026-05-12: OAuth-grafting confirmed)"
 type: entity
-tags: [tool, claude-code-alternative, claude-max, k39, adopt-tier-flagged, phase-0-pending, family-c-tos-suspect]
+tags: [tool, claude-code-alternative, claude-max, k39, no-go, reject, family-c-tos-confirmed, no-license-file]
 keywords: [meridian, claude max, oauth grafting, tos landmine, family-c, anthropic terms of service]
 related:
   - sources/evaluating-project-links-stacks.md
@@ -9,10 +9,11 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/mcp-tool-marketplace.md
   - entities/tools/9router.md
-maturity: draft
+maturity: validated
 created: 2026-05-11
-updated: 2026-05-11
-phase_0_audit: PENDING — high-suspicion Family-C TOS landmine pattern (cf. 9router NO-GO 2026-05-11)
+updated: 2026-05-12
+phase_0_audit: NO-GO 2026-05-12 — OAuth-grafting CONFIRMED via direct code audit + no-LICENSE-file
+license_verified: NONE (badge claims MIT; LICENSE file absent; `gh api license.spdx_id` = null)
 ---
 
 ## Relations
@@ -59,6 +60,29 @@ If grafting is confirmed, **DOWNGRADE to NO-GO** and add to LESSONS.md mischarac
 
 ### Phase-0 audit status
 
-**PENDING — HIGH PRIORITY**. This is the most TOS-suspicious tool in K39; verify before any other Phase-0 in this batch.
+**NO-GO / REJECT 2026-05-12** — OAuth-grafting onto Claude Max credentials CONFIRMED via direct repo audit. K38 9router pattern repeat.
 
-[Source: Evaluating Project Links for Stacks.docx URL 11; retrieved 2026-05-11]
+## Phase-0 audit findings (2026-05-12)
+
+**Repo verified**: `github.com/rynfar/meridian` — 1,221★ / 145 forks / 26 open issues / last push 2026-05-11.
+
+**License — RED**: `gh api repos/rynfar/meridian --jq '.license.spdx_id'` returns `null`. No LICENSE file in repo root despite README badge claiming MIT. **5th occurrence of no-LICENSE pattern** (after K36 finance-skills + K38 Readme.skill + K38 AI-Trader + K39 mac-code — see below).
+
+**OAuth-grafting — CONFIRMED**:
+
+1. `src/proxy/tokenRefresh.ts:30` reads `~/.claude/.credentials.json` directly (the file Claude Code's own auth subsystem writes after `claude login`). Also reads from macOS Keychain via `/usr/bin/security` with hardcoded service name `Claude Code-credentials` (line 29).
+2. `src/proxy/tokenRefresh.ts:27` calls `https://platform.claude.com/v1/oauth/token` to perform the refresh **itself**, not via the SDK. `OAUTH_CLIENT_ID = "9d1c250a-e61b-44d9-88ed-5944d1962f5e"` (line 28) is Claude Code's own OAuth client ID being reused. This is the textbook OAuth-grafting pattern.
+3. `src/proxy/oauthUsage.ts:26-27` calls **private/undocumented** Anthropic endpoint `https://api.anthropic.com/api/oauth/usage` with `anthropic-beta: oauth-2025-04-20` header — exactly the kind of private endpoint that gets rate-limited or revoked when Anthropic notices third-party traffic.
+4. README's load-bearing disclaimer ("No OAuth interception. No binary patches. No hacks. Just pure, documented SDK calls.") is **directly contradicted** by the code. SDK delegation is the marketing claim; OAuth credential reads + own refresh + private endpoint use is what ships.
+
+**Family-C TOS landmine — CONFIRMED**. Mechanism is identical to K38 9router NO-GO pattern: third-party tool reuses Claude Max OAuth credentials from disk to drive non-Anthropic-blessed clients. Direct Anthropic ToS violation; Anthropic-credential revocation risk; IP-sale-readiness blocker.
+
+**Cemini-coverage comparison**: Cemini already uses official Anthropic API + DeepSeek API via documented channels. Meridian provides nothing the existing stack lacks — only adds TOS risk + credential leak surface + npm-package single-dev (rynfar sole maintainer) supply-chain risk.
+
+### Verdict
+
+**NO-GO / REJECT — DEFER-INDEFINITELY**. Do not install. Activation trigger: only reconsider if (a) Anthropic publishes explicit endorsement of third-party OAuth-credential reuse (vanishingly unlikely; would moot the entire Max-subscription product), AND (b) repo adds clean LICENSE file. Both conditions must fire.
+
+Adds to LESSONS.md mischaracterization catch-count as **7th catch** (after K28 SwarmVault + K30 PageIndex + K30 Claude-OSINT + K38 9router + K38 guild + K38 Readme.skill). Pattern: eval-brief frames OAuth-grafting as "Adopt — Workflow only" without auditing the actual auth flow.
+
+[Source: Evaluating Project Links for Stacks.docx URL 11; retrieved 2026-05-11; Phase-0 audit 2026-05-12]

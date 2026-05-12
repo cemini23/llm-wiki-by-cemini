@@ -28,7 +28,7 @@ related:
   - sources/rlhf-critic-bias-al-zawahreh-2026.md
 maturity: draft
 created: 2026-05-03
-updated: 2026-05-11
+updated: 2026-05-12
 ---
 
 ## Relations
@@ -111,7 +111,7 @@ This policy is *operational*, not aspirational — license findings have trigger
 
 | # | Pattern | First seen | Mitigation |
 |---|---------|------------|------------|
-| 1 | NO LICENSE → default copyright (5+ occurrences: K27 multiple, K36 Anthropic finance-skills, K38 HKUDS/AI-Trader, K39 virattt/ai-hedge-fund 58.6k★, K39 19PINE-AI/ikp) | K27 (multiple) | Audit rule: REJECT until upstream LICENSE clarified. **Star count does NOT confer derivative right** — 58k-star repos can still be `NOLICENSE`. Canonical verification: `gh api repos/<owner>/<repo> --jq '.license.spdx_id'` returns `null` → blocked. |
+| 1 | NO LICENSE → default copyright (7+ occurrences: K27 multiple, K36 Anthropic finance-skills, K38 HKUDS/AI-Trader, K38 Readme.skill, K39 virattt/ai-hedge-fund 58.6k★, K39 19PINE-AI/ikp, K39 Phase-0 meridian, K39 Phase-0 mac-code) | K27 (multiple) | Audit rule: REJECT until upstream LICENSE clarified. **Star count does NOT confer derivative right** — 58k-star repos can still be `NOLICENSE`. Canonical verification: `gh api repos/<owner>/<repo> --jq '.license.spdx_id'` returns `null` → blocked. **README badges/footers claiming MIT must not be trusted in isolation** — K39 Phase-0 audit confirmed both meridian (README badge MIT) and mac-code (README MIT claim) `gh api` returns `null`. README claim and repo reality routinely disagree. |
 | 2 | AGPL network-clause Docker-defeat | K27 (SocratiCode) | Reject for any networked deployment; allow only as static reference reading |
 | 3 | GPL-3.0 LLM-agent derivative-work | K27 (freqtrade, qb-core) | Quarantine agents — never feed GPL source to coding agents writing into Cemini |
 | 4 | **CC-BY-NC training-data contamination** | **5_4-links (tennis_atp + tennis_match_prediction)** | Extract algorithm only; retrain against commercially-licensed data |
@@ -142,6 +142,10 @@ When the IP is eventually transferred or licensed (see @concepts/ip-sale-readine
 ### NO-LICENSE-popular-repo recurrence (K39 batch closeout, 2026-05-11)
 
 > Of 14 license-pending repos resolved via `gh api` SPDX lookup in the K39 wave-4 batch: 9 returned clean SPDX IDs (MIT, Apache-2.0), 2 returned `NOLICENSE`, 3 returned `NOASSERTION` (LICENSE present but non-standard). **The 2 NOLICENSE findings include `virattt/ai-hedge-fund` at 58.6k stars and `19PINE-AI/ikp` at 69 stars.** This brings the catalog-mode-#1 occurrence count to 5+: K27 (multiple), K36 (Anthropic finance-skills), K38 (HKUDS/AI-Trader), K39 (virattt + 19PINE-AI). The 58.6k-star case is the most operationally telling — high social-proof signal coexists with full no-derivative-right blocker. Tooling lesson: `gh api repos/<owner>/<repo> --jq '.license.spdx_id'` is canonical for this check, faster + more reliable than `crawling_exa` against the LICENSE file URL because it returns `null` for missing-LICENSE in one call rather than requiring a 404 inference.
+
+### K39 Phase-0 audit batch addendum (2026-05-12) — 2 more no-LICENSE catches
+
+> K39 RED-FLAG queue Phase-0 batch (5 tools audited 2026-05-12) surfaced 2 additional catalog-mode-#1 occurrences: **`rynfar/meridian` (1,221★, README badge claims MIT)** and **`walter-grace/mac-code` (975★, README claims MIT)** both return `gh api license.spdx_id = null`. Total occurrence count now **7+**. K39 alone surfaces **4 of the 7** (virattt + 19PINE-AI + meridian + mac-code) — a single eval-brief ingest produced more catalog-#1 catches than the prior 2 K-cycles combined. Mechanism: Phase-0 audit discipline (cf. CLAUDE.md "Phase-0 audit pattern") catches what eval-brief intake misses. README license claims continue to be wrong roughly 1-in-15 against `gh api` ground truth across the K-series sample. **Operational consequence**: every K-series intake should run `gh api license.spdx_id` against every Adopt/Steal-from URL upfront, not at Phase-0 — the cost is one API call per URL.
 
 ## Dead Ends
 

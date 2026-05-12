@@ -33,6 +33,8 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Next — actually pending action
 
+**K39 Phase-0 RED-FLAG queue CLOSED 2026-05-12** — 5 verdicts committed, all 5 entity pages upgraded `maturity: draft → validated`. 0 GO / 1 CONDITIONAL-GO / 3 NO-GO / 1 REJECT. Two new no-LICENSE pattern catches (meridian + mac-code) push total to 5 occurrences. Meridian OAuth-grafting is verbatim K38 9router pattern (7th mischaracterization aggregate catch). Eval-brief internal-inconsistency mode (mac-code caveat-then-Adopt) formalized in LESSONS.md as a third sub-mode alongside scope-creep + TOS-landmine.
+
 **K39 ingest complete 2026-05-11**. 17-URL `Evaluating Project Links for Stacks.docx` eval brief + Verbalized Sampling paper (arXiv 2510.01171). **5 Phase-0 RED-FLAG queue** opened for Adopt-tier verdicts pending source audit before any install (meridian + deepseek-tui + obscura-headless-browser + mac-code; eval-brief's "production-ready" framing is the recurring tell). 11th license-catalog mode landed: **EUPL-1.2 = AGPL-3.0-equivalent + Article 14.3 IP-sale poison pill** (taranis-ai Reject 2026-05-11). 3rd no-LICENSE pattern occurrence in K39 (after K36 finance-skills + K38 AI-Trader) — none in K39 directly, but K39 surfaced license-claim mismatches the audit caught at Phase-0. **2nd Polymarket arb-bot pattern** confirmed (gabagool joins K38 cloddsbot). VS paper headline: 1.6-2.1× creative-writing diversity, +6.9 pts synthetic-math SFT, zero factuality/safety regression — third orthogonal training-free Conductor layer (with K37 reviewer-agent + signals).
 
 **K37 + K38 ingest complete 2026-05-11**. **Steal-from license verification CLOSED 2026-05-11** (12 items: 11 GREEN MIT/Apache-2.0, 1 RED HKUDS/AI-Trader no-LICENSE-file — 3rd occurrence of pattern, downgraded to pseudocode-only). **K37/K38 Adopt-tier prod candidates** (highest-impact): Visual Crossing Weather + wethr.net (Kalshi/Polymarket weather contracts data stack), Perplexity MCP + 9router + guild MCP (MCP infrastructure cluster), Readme.skill + Google Colab VSCode (workflow). **2 prototype workstreams seeded by paper ingests**: (a) Reviewer-agent Conductor prototype — DeepSeek-R1 reviewer gating side-effecting tools, ~200-400 LOC Phase-0; (b) Signals audit-JSONL prototype — `signals` field on per-trajectory close-out, ~200-300 LOC Phase-0. Cross-wiki routes shipped (3 briefs): markdown-preview-pluk → image-gen-wiki + seo-wiki + 3d-printing-wiki (all markdown-based).
@@ -43,15 +45,17 @@ K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-
 
 ### K39 follow-ups
 
-**Phase-0 RED-FLAG queue** (eval-brief Adopt verdicts pending source audit before any install — `phase_0_audit: PENDING` in entity frontmatter):
+**Phase-0 RED-FLAG queue — CLOSED 2026-05-12** (5 verdicts committed; 0 GO / 1 CONDITIONAL-GO / 3 NO-GO / 1 REJECT):
 
-| Item | Tier (eval) | Red flag | Activation trigger |
-|------|------------|----------|--------------------|
-| **meridian** | Adopt → FLAGGED | Family-C TOS-suspect (OAuth-grafting on vendor credentials — same K38 9router landmine pattern) | Audit Pull/PR history for OAuth-grafting evidence; if absent, GO; if present, REJECT |
-| **deepseek-tui** | Adopt → FLAGGED | Aggressive workflow-migration framing in README (proposes replacing Claude Code as primary interface) | Phase-0 spec confirms it's a *DeepSeek-API-only* TUI (not a Claude Code substitute); GO only if scoped to DeepSeek probing |
-| **obscura-headless-browser** | Adopt → FLAGGED | Aggressive prod-replacement framing (proposes replacing `mcp__claude-in-chrome__*` + computer-use stack) | Phase-0 spec audit: capability parity test vs Claude in Chrome MCP; GO only if obscura adds capability not in existing stack |
-| **mac-code** | Adopt → FLAGGED | SSD-wear concern via `F_NOCACHE` flag usage (laptop SSD endurance risk on hot-path workflows) | Audit `F_NOCACHE` actual use frequency; GO if rare/batch; NO-GO if hot-path |
-| **kepano-obsidian-skills** | Adopt | CommonMark-vs-Obsidian-flavor uncertainty (30.5K★ but wiki uses GitHub-flavored MD; skill portability TBD) | Audit one skill end-to-end against `wiki/` files; GO if zero render-break |
+| Item | Verdict | Rationale (one line) |
+|------|---------|----------------------|
+| **meridian** | **NO-GO / REJECT 2026-05-12** | OAuth-grafting onto Claude Max credentials CONFIRMED via `tokenRefresh.ts` + `oauthUsage.ts` code audit; K38 9router pattern verbatim repeat. No LICENSE file (5th no-LICENSE occurrence). 7th mischaracterization catch. |
+| **deepseek-tui** | **NO-GO 2026-05-12** | Tool legitimate (26,403★ MIT); eval brief mischaracterizes as Claude Code drop-in replacement. Cemini's MCP + skills + hooks investment is non-portable. |
+| **obscura-headless-browser** | **NO-GO 2026-05-12** (prod) / CONDITIONAL-CONSIDER (laptop pilot) | Eval brief recommends wholesale 24/7 trading-stack replacement based on memory-savings claims alone, no soak-test/parity data. |
+| **mac-code** | **REJECT 2026-05-12** | F_NOCACHE pervasive (22 source files matched) on hot-path inference; projected 6-12-month SSD failure on irreplaceable soldered hardware. No LICENSE file (4th no-LICENSE occurrence in K39). Caveat-then-Adopt eval brief inconsistency. |
+| **kepano-obsidian-skills** | **CONDITIONAL-GO 2026-05-12** | First non-mischaracterization in batch (legitimate 30,698★ MIT). Install only if user has separate Obsidian-vault workflow; otherwise pure token-overhead cost (~10K tokens/invocation). |
+
+Audit-clone dirs retained at `/tmp/{meridian,deepseek-tui,obscura,mac-code,kepano}-audit/`. Single Explore subagent batch + spot-check verification flipped meridian from GO → NO-GO (agent read README, code audit found contradiction).
 
 | K39 cluster | Action | Status |
 |------|--------|--------|

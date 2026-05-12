@@ -1,5 +1,20 @@
 # Wiki Log
 
+## [2026-05-12] Phase-0 audit batch | K39 RED-FLAG queue (5 tools) — 0 GO / 1 CONDITIONAL-GO / 3 NO-GO / 1 REJECT
+
+- **Batch dispatched** as single Explore subagent sweep (single round of `git clone --depth 1` + `gh api` license/maturity verification per repo + targeted red-flag code audits). 5 entity pages updated with verdicts in body + frontmatter (`phase_0_audit:` + `license_verified:` + `maturity: draft → validated`).
+- **Verdicts (post-verification)**:
+  - **meridian** (rynfar/meridian, 1,221★) — **NO-GO / REJECT 2026-05-12**. OAuth-grafting onto Claude Max credentials **CONFIRMED**: `src/proxy/tokenRefresh.ts:30` reads `~/.claude/.credentials.json` + macOS Keychain `Claude Code-credentials` service directly; calls `https://platform.claude.com/v1/oauth/token` with hardcoded `OAUTH_CLIENT_ID = "9d1c250a-e61b-44d9-88ed-5944d1962f5e"` (Claude Code's own client ID reused); `oauthUsage.ts:26-27` hits private undocumented `api.anthropic.com/api/oauth/usage` with `anthropic-beta: oauth-2025-04-20`. README's "No OAuth interception" claim **directly contradicted by code**. Also LICENSE file ABSENT (`gh api license.spdx_id` = null) despite README badge claiming MIT. K38 9router pattern verbatim repeat.
+  - **deepseek-tui** (Hmbown/DeepSeek-TUI, 26,403★, MIT confirmed) — **NO-GO 2026-05-12**. Tool itself is legitimately mature; the **mischaracterization is in the eval brief**, framing as Claude Code drop-in replacement. Cemini's Claude Code investment (finance-skills + claude-mem + specify-cli + hooks + 10+ MCP servers) is non-portable to a DeepSeek-only TUI on demonstrated single-LLM scope. Wholesale workflow swap on solo-dev team = regression cost ≫ "standardization" benefit.
+  - **obscura-headless-browser** (h4ckf0r0day/obscura, 11,945★, Apache-2.0 confirmed) — **NO-GO 2026-05-12** for production-stack wholesale replacement. Eval brief recommends replacing Playwright + Headless Chrome on 24/7 trading stack based on memory-savings claims alone, no soak-test/parity data. CONDITIONAL-CONSIDER for workflow-laptop pilot only.
+  - **mac-code** (walter-grace/mac-code, 975★) — **REJECT 2026-05-12**. F_NOCACHE usage **CONFIRMED pervasive** (22 source files matched across flash-streaming + expert-sniper + 1bit-fallback) on hot-path inference (the *recommended* 35B agent path). M4 Mac NVMe TBW projection = 6-12-month hardware failure on irreplaceable soldered SSD. **Also no LICENSE file** despite README MIT claim (gh api spdx_id = null). Two independent blockers.
+  - **kepano-obsidian-skills** (kepano/obsidian-skills, 30,698★, MIT confirmed) — **CONDITIONAL-GO 2026-05-12**. First non-mischaracterization in the K39 RED-FLAG batch (legitimate-tool + accurate eval-brief star claim). GFM compatibility is fine (Obsidian-flavor is a CommonMark superset; wikilinks/embeds/callouts degrade to inert text rather than render-break). **But Cemini's wiki is GFM, not Obsidian** — token-overhead cost (~10K tokens per Claude Code invocation if all 5 skills loaded) likely exceeds benefit. INSTALL only if user has separate Obsidian-vault workflow.
+- **K39 mischaracterization aggregate now**: 7 catches total (K28 SwarmVault + K30 PageIndex + K30 Claude-OSINT + K38 9router + K38 guild + K38 Readme.skill + K39 meridian — same K38 9router OAuth-grafting pattern verbatim). Plus 2 K39 scope-mischaracterizations (deepseek-tui + obscura) where the tool is fine but the eval-brief recommendation is reckless.
+- **No-LICENSE-file pattern now**: 5 occurrences total (K36 finance-skills + K38 Readme.skill + K38 AI-Trader + K39 meridian + K39 mac-code). K39 alone surfaces 2 of the 5. Two of the catches (meridian + mac-code) had README badges/footers claiming MIT contradicted by `gh api license.spdx_id` = null.
+- **Eval-brief internal inconsistency mode now formalized**: mac-code is the load-bearing example — brief flags SSD wear as caveat then recommends Adopt anyway. Distinct from scope mischaracterization. Add to LESSONS.md as separate failure mode.
+- **Process win**: Phase-0 batch caught the **meridian flip** that the Explore subagent's initial reading missed (agent reported "delegated to SDK" based on README; spot-check of `tokenRefresh.ts` + `oauthUsage.ts` flipped GO → NO-GO). Validates the "Trust but verify" discipline in the agent-tool contract — agent summaries describe intent, file reads describe ground truth.
+- **Audit-clone dirs retained** at `/tmp/{meridian,deepseek-tui,obscura,mac-code,kepano}-audit/` for any follow-on questions.
+
 ## [2026-05-11] ingest | K40 — RLHF Critic Bias (Al-Zawahreh, ARK Research Division, April 2026 pre-print)
 
 - **Source**: `rlhf_critic_bias.pdf` (23 pp, 319 KB, sha256 `2544116c5582ca80...`, self-published; **no arXiv ID, no DOI**). preingest_check verdict NEW. Author: Mohamad Al-Zawahreh / "ARK Research Division." MiKTeX pdfTeX-1.40.29, CreationDate 2026-04-19.
@@ -4706,3 +4721,12 @@ License clear (MIT), maturity high (Production/Stable), no toolchain blockers. P
 - `wiki/entities/tools/hftbacktest.md` — maturity raised `draft` → `validated`, added verified fields (repo URL, license, release, stack, Rust note), updated open questions, added install snippet
 - `wiki/index.md` — maturity tag `DRAFT 2026-05-05` → `VALIDATED 2026-05-08`
 - `briefs/2026-05-06_hftbacktest-adoption.md` — license posture section rewritten with MIT confirmation, property table updated with verified values
+
+## [2026-05-12] cross-wiki | cybersecurity-wiki bidirectional backlink reconciliation
+
+New sibling wiki onboarded at `../projects/Cybersecurity wiki/wiki/` (227-PDF corpus, 287 pages). `cybersecurity-wiki` row already present in `CLAUDE.md` Related Wikis table. Found two pages on the cybersecurity side citing OSINT pages without matching backlinks — bidirectional invariant violated. Reconciled:
+
+- `wiki/entities/tools/swarmvault.md` — added `## Relations` bullet for `@cybersecurity-wiki/entities/tools/maltego.md` (Maltego page cross-links here as OSINT-tradecraft anchor). `updated:` bumped to 2026-05-12.
+- `wiki/concepts/typed-relation-dependencies.md` — added explicit `## Relations` section (frontmatter `related:` was the only relation surface) with bullet for `@cybersecurity-wiki/concepts/osint-for-cybersecurity.md` (osint-for-cybersecurity page cites this as cross-wiki methodology reference). `updated:` bumped to 2026-05-12.
+
+No raw content imported. Cross-wiki references are pointers; the cybersecurity wiki holds its own pentest / red team / SOC / threat-hunting material and is queried via `@cybersecurity-wiki/...` resolution when an OSINT page or brief needs that domain. Future OSINT pentest-tooling or attack-surface synthesis should backlink rather than duplicate.

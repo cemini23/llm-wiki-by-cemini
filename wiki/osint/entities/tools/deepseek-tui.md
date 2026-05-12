@@ -1,17 +1,18 @@
 ---
-title: "DeepSeek-TUI — DeepSeek-Native Coding Agent (RED-FLAG: aggressive workflow-migration claim)"
+title: "DeepSeek-TUI — DeepSeek-Native Coding Agent (NO-GO 2026-05-12: eval-brief scope mischaracterization)"
 type: entity
-tags: [tool, coding-agent, deepseek, tui, k39, adopt-tier-flagged, phase-0-pending]
+tags: [tool, coding-agent, deepseek, tui, k39, no-go, eval-brief-mischaracterization]
 keywords: [deepseek-tui, hmbown, coding agent, claude code alternative, deepseek, mcp tooling, workflow migration]
 related:
   - sources/evaluating-project-links-stacks.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
   - concepts/deepseek-models.md
-maturity: draft
+maturity: validated
 created: 2026-05-11
-updated: 2026-05-11
-phase_0_audit: PENDING — Adopt verdict claims full Claude Code → DeepSeek-TUI migration; high mischaracterization risk
+updated: 2026-05-12
+phase_0_audit: NO-GO 2026-05-12 — eval-brief mischaracterizes scope; recommends wholesale Claude Code replacement without justification
+license_verified: MIT (gh api confirmed)
 ---
 
 ## Relations
@@ -55,6 +56,22 @@ Even setting aside Phase-0 unknowns: **switching coding agents on a 100% solo-de
 
 ### Phase-0 audit status
 
-**PENDING — HIGH PRIORITY**. Workflow migration is a 1-3-day commitment if it works; a much longer rollback if it doesn't. Phase-0 must clear all 5 verification items before any workflow change.
+**NO-GO 2026-05-12** — wholesale workflow replacement unjustified on demonstrated-mature single-LLM project.
 
-[Source: Evaluating Project Links for Stacks.docx URL 12; retrieved 2026-05-11]
+## Phase-0 audit findings (2026-05-12)
+
+**Repo verified**: `github.com/Hmbown/DeepSeek-TUI` — 26,403★ / 2,214 forks / 369 open issues / MIT confirmed / last push 2026-05-12 (active). Tool itself is **legitimately mature** — not mischaracterization on the tool, mischaracterization on the **adoption recommendation**.
+
+**The mischaracterization is in the eval brief, not the tool**: brief frames DeepSeek-TUI as a Claude Code drop-in replacement ("This decision standardizes the entire lifecycle…"). DeepSeek-TUI is a *DeepSeek-API-only* terminal coding agent; Cemini's stack is multi-model (Claude Max + DeepSeek API + qwen research agents) with Claude Code-specific infrastructure investment:
+
+- **Skills system**: finance-skills + claude-mem + specify-cli + tech-debt-audit are Claude 4.7-tuned. DeepSeek-V4 parity on financial-reasoning workloads is unverified.
+- **Hooks system**: `SessionStart` + post-tool hooks are Claude Code primitives.
+- **MCP server stack**: claude-mem, kb-server, conductor, lazy-tool, claude-code-router — all assume Claude Code's MCP harness.
+
+**Cemini-coverage check**: switching coding agents on a 100% solo-developer team mid-project = workflow regression cost vastly exceeds any "standardization" benefit. Migration would be 1-3 days work + months of skill-system re-tuning + permanent loss of Claude 4.7-tier reasoning on the bulk of curation/research work.
+
+### Verdict
+
+**NO-GO 2026-05-12**. Tool is fine for someone who wants a DeepSeek-only TUI; Cemini is not that user. Activation trigger: only reconsider if (a) head-to-head benchmark shows DeepSeek-V4 ≥ Claude 4.7 on Cemini's actual research-curation + financial-reasoning workloads (unlikely at K-series cadence), AND (b) Cemini's MCP stack adds DeepSeek-TUI compatibility shims. Neither is on the roadmap.
+
+[Source: Evaluating Project Links for Stacks.docx URL 12; retrieved 2026-05-11; Phase-0 audit 2026-05-12]
