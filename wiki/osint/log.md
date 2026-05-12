@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-11] brief | K39 VS Vector 1 (synthetic scenarios) SHIPPED to cemini-prod
+
+- **Brief**: `briefs/2026-05-11_verbalized-sampling-synthetic-scenarios.md` (18 KB).
+- **skill_audit**: PASS **99.5/100** (12 static checks all clean: required_sections, crosslinks, citations, NV freshness, prose, frontmatter, regime_disclosure, brief_completeness, risk_discipline, phasing, claim_evidence, abstract_synthesis).
+- **SCP**: `cemini-prod:/opt/cemini/briefs/2026-05-11_verbalized-sampling-synthetic-scenarios.md` (verified 18424 bytes).
+- **Scope**: ~150-250 LOC Phase-0 prototype, 2-3 dev-days. 3 new modules at the scenario-generation prompt-template layer (`vs_prompt.py` + `vs_parser.py` + `vs_selector.py`) + audit JSONL `vs` block + feature flag. Selector strategies: HEAD / TAIL / ALL / WEIGHTED_SAMPLE.
+- **Architectural position**: third orthogonal training-free Conductor layer. Pairs with K37 `2026-05-11_conductor-reviewer-agent-prototype.md` (inline call gating) + `2026-05-11_signals-audit-jsonl-prototype.md` (post-hoc trajectory triage) already at `cemini-prod:/opt/cemini/briefs/`. All three additive, stackable, share no implementation surface.
+- **Rollout gates**: 4-phase. Phase 0 calibration GO/NO-GO at parse-failure <2% + scenario-trajectory variance ≥30% lift. Phase 1 shadow-mode 1-week soak. Phase 2 active mode 4-week soak with auto-rollback at 5% parse failure or pnl-variance regression. Phase 3 = reviewer-agent distribution-of-verdicts extension (Vector 3), gated on K37 reviewer Phase 1 + this brief Phase 2 stable.
+- **License posture**: pure pattern extraction from arXiv 2510.01171v3 paper; no code lift; existing DeepSeek pool only. Zero new vendor surface.
+- **K39 VS vectors remaining**: Vector 2 (hypothesis ideation) + Vector 4 (prediction-market scenario sim) + Vector 5 (persona/dialogue) all DEFERRED. Vector 3 (reviewer distribution-of-verdicts) is Phase 3 of this brief.
+
 ## [2026-05-11] ingest | K39 — Evaluating Project Links for Stacks (17 URLs) + Verbalized Sampling paper (2 sources)
 
 Two-source ingest. One docx eval brief (17 URLs, three-surface methodology) + one academic paper on training-free LLM diversity restoration.

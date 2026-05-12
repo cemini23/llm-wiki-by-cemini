@@ -64,7 +64,8 @@ K35 ingest complete 2026-05-10. **All 10 Adopt-tier briefs now staged** (4 prod-
 | **K39 Steal-from — nvidia-openshell** | Apache-2.0 v0.0.37; policy schemas only | **PATTERN-EXTRACT 2026-05-11** — extract policy schemas; no install |
 | **K39 Steal-from — gabagool** | 2nd Polymarket arb bot (after K38 cloddsbot); MIT pending verify | **PATTERN-EXTRACT 2026-05-11** — cross-reference against cloddsbot arb signals |
 | **K39 UNAVAILABLE — 3 stubs (opensourceprojects.dev)** | Exa-resolution pass; Tier-1 gap detection will catch as cited-unread | Deferred |
-| **VS paper — Conductor integration** | Three integration vectors: (a) HIGH-fit synthetic trading-scenario generation, (b) MEDIUM-fit hypothesis ideation, (c) MEDIUM-fit reviewer-agent distribution-of-verdicts extension | Recommended next step — combines with K37 reviewer-agent + signals prototypes as orthogonal Conductor layers |
+| **VS paper — Conductor integration (Vector 1 HIGH-fit)** | Synthetic trading-scenario generation prototype brief `briefs/2026-05-11_verbalized-sampling-synthetic-scenarios.md`. ~150-250 LOC Phase-0, 2-3 dev-days, ~$30/mo overhead. Feature-flagged + shadow-mode-gated rollout. Third orthogonal training-free Conductor layer with K37 reviewer-agent + signals briefs. | **SHIPPED to prod 2026-05-11** (skill_audit 99.5/100 PASS, SCP verified at `cemini-prod:/opt/cemini/briefs/`). Server-side Claude executes from here. |
+| **VS paper — Vectors 2 & 4-5** | Hypothesis ideation (M-fit), prediction-market scenario sim (M-fit), persona/dialogue (LOW-fit) | DEFERRED — Phase 3 of Vector 1 brief covers reviewer-distribution extension (Vector 3); other vectors await Phase 2 stable metrics |
 
 ### K37/K38 follow-ups
 

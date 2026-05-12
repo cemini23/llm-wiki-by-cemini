@@ -38,7 +38,7 @@ Eval brief framed each as Adopt, but Phase-0 source-audit discipline (establishe
 ### K39 next steps (deferred — no spend, no Phase-0 burns this session)
 
 - **5 Phase-0 RED FLAG audits** (one per pending entity) — should batch as a single Explore subagent sweep when next chartered.
-- **VS Conductor integration**: 3 vectors flagged in `concepts/verbalized-sampling-llm-diversity.md` (HIGH-fit synthetic trading-scenario generation, MEDIUM-fit hypothesis ideation, MEDIUM-fit reviewer-agent distribution-of-verdicts extension). Combines with K37 reviewer-agent + signals prototypes that already shipped briefs to `cemini-prod:/opt/cemini/briefs/`.
+- **VS Conductor integration Vector 1 SHIPPED 2026-05-11**: `briefs/2026-05-11_verbalized-sampling-synthetic-scenarios.md` (18 KB, skill_audit 99.5/100 PASS) SCPed to `cemini-prod:/opt/cemini/briefs/`. ~150-250 LOC Phase-0, 2-3 dev-days, $30/mo overhead, feature-flagged + shadow-mode rollout, third orthogonal training-free Conductor layer (with K37 reviewer-agent + signals already shipped). Vectors 2/4/5 deferred; Vector 3 (reviewer-distribution) is Phase 3 of the Vector 1 brief (gated on K37 reviewer Phase 1 + this brief Phase 2 stable).
 - **3 K39 UNAVAILABLE URLs** (opensourceprojects.dev stubs URL 9 / URL 13 / URL 14) — Exa-resolution pass deferred; Tier-1 gap detection will catch as cited-unread stubs.
 
 ## Position (carried — prior session, K37/K38 ingest COMPLETE)
@@ -73,7 +73,7 @@ Effects: license auto-rejects soften for non-prod-codebase use. Phase-0 audit ri
 
 - **5 K39 Phase-0 RED-FLAG audits** queued (meridian + deepseek-tui + obscura-headless-browser + mac-code + kepano-obsidian-skills). Single Explore-subagent batch when chartered.
 - **2 K39 Steal-from pattern extractions**: nvidia-openshell policy schemas + gabagool Polymarket arb signals (cross-reference vs cloddsbot). Both DEFERRED.
-- **VS Conductor integration**: 3 vectors flagged; HIGH-fit synthetic trading-scenario generation is the strongest candidate for a paired-with-reviewer-agent prototype. DEFERRED.
+- ~~**VS Conductor integration Vector 1**~~ — **SHIPPED 2026-05-11** to `cemini-prod:/opt/cemini/briefs/2026-05-11_verbalized-sampling-synthetic-scenarios.md` (18 KB, skill_audit 99.5/100). Server-side Claude executes from here. Vectors 2/4/5 deferred; Vector 3 = Phase 3 of Vector 1 brief.
 - **3 K39 UNAVAILABLE URLs** (opensourceprojects.dev) — Exa-resolution pass; Tier-1 gap detection will catch.
 
 ## Open follow-ups (carried from prior sessions)
