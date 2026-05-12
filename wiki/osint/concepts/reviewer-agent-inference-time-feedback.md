@@ -11,6 +11,8 @@ related:
   - concepts/deepseek-models.md
   - concepts/verbalized-sampling-llm-diversity.md
   - sources/verbalized-sampling-mode-collapse.md
+  - concepts/rlhf-critic-bias.md
+  - sources/rlhf-critic-bias-al-zawahreh-2026.md
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
@@ -25,6 +27,8 @@ updated: 2026-05-11
 - `@concepts/deepseek-models.md` — DeepSeek-R1 is the candidate Cemini reviewer; DeepSeek-V3 is the candidate base agent
 - `@concepts/verbalized-sampling-llm-diversity.md` — third orthogonal Conductor layer (generation-time distribution; reviewer/signals are pre/post-call gates)
 - `@sources/verbalized-sampling-mode-collapse.md` — VS paper source
+- `@concepts/rlhf-critic-bias.md` — **structural justification for reviewer-agent investment** (K40): reviewer-agent is a partial **Mitigation 3 + Mitigation 4 implementation in miniature** (evidence-weighted critique + audit-trail disclosure). The asymmetric-penalty framework explains *why* an evaluator-gating-an-actor architecture matters: without it, every evaluative LLM call inherits structural negativity bias.
+- `@sources/rlhf-critic-bias-al-zawahreh-2026.md` — RLHF Critic Bias source (Al-Zawahreh April 2026, draft maturity, Reference/Steal-from)
 
 ## Raw Concept
 

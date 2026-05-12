@@ -7,15 +7,19 @@ related:
   - sources/project-link-evaluation-brief.md
   - sources/evaluating-links-trading-wiki-stacks.md
   - sources/project-link-evaluation-brief-5_10.md
+  - concepts/rlhf-critic-bias.md
+  - sources/rlhf-critic-bias-al-zawahreh-2026.md
 maturity: validated
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-11
 ---
 
 ## Relations
 - `@sources/project-link-evaluation-brief.md` — first evaluation brief applying this framework
 - `@sources/evaluating-links-trading-wiki-stacks.md` — second evaluation brief
 - `@sources/project-link-evaluation-brief-5_10.md` — third evaluation brief
+- `@concepts/rlhf-critic-bias.md` — **structural justification for Phase-0 audit discipline** (K40). The mirror failure mode of RLHF Critic Bias applies to eval briefs: when an LLM is prompted "evaluate this project for adoption," the asymmetric penalty for "I said skip and it was useful" exceeds "I said adopt and it was unfit." This is the structural reason behind K28+K30+K38's 6 mischaracterization catches. Phase-0 audit is the human-in-the-loop counterweight; the 6-category Rhetorical Catalog + 5-tell scorecard generalize to detection of formulaic LLM eval briefs.
+- `@sources/rlhf-critic-bias-al-zawahreh-2026.md` — RLHF Critic Bias source (Al-Zawahreh April 2026, draft maturity, Reference/Steal-from). Follow-up brief candidate: port 5-tell scorecard into `scripts/skill_audit.py` as opt-in `--rlhf-tell-mode` flag (deferred until user-gated).
 
 ## Raw Concept
 

@@ -2,7 +2,19 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (end of 2026-05-11 session — K39 ingest COMPLETE + Tier-1 gap closure)
+## Position (end of 2026-05-11 session — K40 RLHF Critic Bias ingest COMPLETE + K39 ingest + Tier-1 gap closure)
+
+### K40 ingest (RLHF Critic Bias, single source, 2026-05-11)
+
+- **Source**: `rlhf_critic_bias.pdf` — Al-Zawahreh, ARK Research Division, April 2026 self-published pre-print (no arXiv/DOI), 23 pp, sha256 `2544116c5582ca80...`. Moved to `cemini-librarian:/opt/cemini-bulk/research/rlhf_critic_bias.pdf` (verified 319272 bytes); laptop copy removed; inbox empty.
+- **Tier**: Reference / Steal-from. **Maturity**: draft.
+- **Phase-0 caught 4 structural signals**: (1) self-published (no arXiv/DOI; "ARK Research Division" no independent web presence — flagged NV 2026-05-11), (2) polemical tone (Ghost Committee / automated stagnation engine / Patent Clerk Test), (3) no empirical study (§11 Limitation #1: explicit), (4) author self-acknowledged confirmation bias (§11 Limitation #4: explicit). Posture: operational primitives port; rhetoric does not.
+- **Operational extraction**: 5 output patterns (Interesting But / Credentialing Prior / Unfalsifiable Objection / Invention of Flaws / Double Standard) + 6-category Rhetorical Catalog (Diplomatic Opening / Scope Deflation / Generalizability / Authority Challenge / Methodological Hedge / Terminal Unfalsifiable) + 5-tell Forensic Scorecard (content-independence / evidence-contradiction / catalog-match / prompt-contingent reproducibility / absence-of-novel-insight) + 4 mitigations (symmetric reward training / evaluative stance disclosure / evidence-weighted evaluation / anti-laundering watermarks). Asymmetric-penalty equation `E_q[r(criticize,q)] > E_q[r(endorse,q)] ∀ P(q)` is distribution-independent (load-bearing formal anchor).
+- **Pages touched (7 total)**: 2 new + 5 edits. NEW: `wiki/sources/rlhf-critic-bias-al-zawahreh-2026.md` + `wiki/concepts/rlhf-critic-bias.md`. EDITED: reviewer-agent + VS + signals + tool-eval-framework + license-posture (each gets 1 inline backlink + 2 frontmatter entries).
+- **Cemini relevance**: (a) reviewer-agent (K37) is Mitigation 3+4 in miniature → structural justification; (b) `scripts/skill_audit.py --rlhf-tell-mode` opt-in flag is a steal-candidate (FOLLOW-UP brief, user-gated, **deferred**); (c) mirror failure mode (eval-brief endorsement direction) provides structural explanation for K28+K30+K38's 6 mischaracterization catches.
+- **Three-mode preference-data failure taxonomy now codified**: typicality (VS / K39) + asymmetric-penalty (this / K40) + sycophancy (Sharma 2024). All data-level, all survive perfect reward models, all have training-free inference-time mitigations.
+- **NEEDS VERIFICATION 2026-05-11**: (1) "ARK Research Division" affiliation; (2) Pangram Labs Nov 2025 21%-AI-generated-ICLR-2026-reviews figure (load-bearing for weaponization argument; original Pangram report not in wiki).
+- **Dead Ends documented**: Patent Clerk Test is unfalsifiable counterfactual; Ghost Committee framings are stylistic-not-analytic — do NOT import into wiki narrative voice.
 
 ### Tier-1 gap closure (2026-05-11)
 

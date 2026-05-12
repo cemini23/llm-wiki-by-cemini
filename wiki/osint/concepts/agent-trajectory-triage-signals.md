@@ -11,6 +11,8 @@ related:
   - concepts/reviewer-agent-inference-time-feedback.md
   - concepts/verbalized-sampling-llm-diversity.md
   - sources/verbalized-sampling-mode-collapse.md
+  - concepts/rlhf-critic-bias.md
+  - sources/rlhf-critic-bias-al-zawahreh-2026.md
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
@@ -25,6 +27,8 @@ updated: 2026-05-11
 - `@concepts/reviewer-agent-inference-time-feedback.md` — complementary inference-time pattern (this concept is post-hoc; reviewer is inline)
 - `@concepts/verbalized-sampling-llm-diversity.md` — third orthogonal Conductor layer (inference-time generation diversity; complements this post-hoc triage)
 - `@sources/verbalized-sampling-mode-collapse.md` — VS paper source
+- `@concepts/rlhf-critic-bias.md` — **sibling forensic taxonomy** (K40). Signals = trajectory-level non-LLM forensics (interaction/execution/environment families). 5-tell scorecard = evaluative-output-level non-LLM forensics (content-independence / evidence-contradiction / catalog-match / prompt-contingent reproducibility / absence-of-novel-insight). Both are cheap audit primitives applicable post-hoc to LLM-produced artifacts.
+- `@sources/rlhf-critic-bias-al-zawahreh-2026.md` — RLHF Critic Bias source (Al-Zawahreh April 2026, draft maturity)
 
 ## Raw Concept
 

@@ -9,6 +9,8 @@ related:
   - concepts/agent-trajectory-triage-signals.md
   - concepts/conductor-orchestrator.md
   - concepts/deepseek-models.md
+  - concepts/rlhf-critic-bias.md
+  - sources/rlhf-critic-bias-al-zawahreh-2026.md
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
@@ -21,6 +23,8 @@ updated: 2026-05-11
 - `@concepts/agent-trajectory-triage-signals.md` — complementary **post-hoc** trajectory triage (K37 / DigitalOcean)
 - `@concepts/conductor-orchestrator.md` — natural insertion point at the base-agent generation call site
 - `@concepts/deepseek-models.md` — DeepSeek-R1 demonstrated VS gains in the paper; candidate for Cemini conductor's diverse-hypothesis generator
+- `@concepts/rlhf-critic-bias.md` — **sibling preference-data failure mode** (K40). VS = typicality bias (annotators prefer familiar text → mode collapse → diversity loss); Critic Bias = asymmetric-penalty (annotators penalize false endorsement > false criticism → systematic negativity on evals). Both are data-level, both survive perfect reward models, both have training-free inference-time mitigations. Together they form a **two-mode preference-data structural failure taxonomy** (plus sycophancy as the third mode from Sharma 2024).
+- `@sources/rlhf-critic-bias-al-zawahreh-2026.md` — RLHF Critic Bias source (Al-Zawahreh April 2026, draft maturity)
 
 ## Raw Concept
 
