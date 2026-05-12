@@ -8,8 +8,14 @@ related:
   - concepts/agent-native-research-artifacts.md
 maturity: validated
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-12
 ---
+
+## Relations
+
+- @sources/agent-native-research-artifacts-2604.24658.md — origin source (ARA paper, ICLR 2026 submission)
+- @concepts/agent-native-research-artifacts.md — parent synthesis page
+- @cybersecurity-wiki/concepts/osint-for-cybersecurity.md — cross-wiki backlink: sibling Cybersecurity wiki's OSINT-for-cybersecurity concept page cites this page as the cross-wiki methodology reference for typed cross-link semantics
 
 ## Raw Concept
 

@@ -14,7 +14,7 @@ related:
   - entities/tools/pageindex.md
 maturity: validated
 created: 2026-05-04
-updated: 2026-05-11
+updated: 2026-05-12
 ---
 
 ## Relations
@@ -25,6 +25,7 @@ updated: 2026-05-11
 - @sources/atomicmemory-llm-wiki-compiler.md — original Adopt decision (K2 era, 2026-04-28); now potentially superseded depending on SwarmVault path-resolution audit
 - @sources/llm-wiki.md — Karpathy's original gist; both tools target the same pattern
 - @entities/infrastructure/ollama.md — runtime dependency for embeddings (`nomic-embed-text` per SwarmVault docs)
+- @cybersecurity-wiki/entities/tools/maltego.md — cross-wiki backlink: sibling Cybersecurity wiki's Maltego page cites SwarmVault as the OSINT-tradecraft anchor in its sister wiki
 
 ## Raw Concept
 
