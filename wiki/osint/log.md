@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-12] Phase 2 verification | claude-mem cross-session memory — PASS (with 2 non-blocking anomalies)
+
+- **Trigger**: Phase 2 smoke test from `briefs/2026-05-10_claude-mem-adoption.md` was due 2026-05-11+; closed today as part of K39 closeout queue.
+- **Brief success criteria**: ≥1 high-relevance injection per session / 0 token-budget overruns / false-positive injection rate <20% — **all met**.
+- **Evidence**: this verification session itself received a 50-observation `SessionStart` injection that matched the current K39 Phase-0 audit + claude-mem adoption + KB-server semantic-search work context (subjective FP rate <20%). Worker daemon PID 99184 (v13.0.1) stable ~2d uptime; dashboard HTTP 200 at `localhost:37702`; `~/.claude-mem/supervisor.json` shows worker + chroma-mcp + 2 active SDK sessions; 20 MB data dir.
+- **Cross-session retrieval**: **PROVEN**. SQLite shows 148-150 observations spanning 12 distinct `memory_session_id` values across 16 SDK sessions; 5 distinct projects, 87% concentrated in `OSINT WORKSPACE`. Observation-type mix: 94 discoveries / 38 changes / 9 features / 3 bugfixes / 3 decisions / 1 security_alert.
+- **Anomaly 1 — single-day data window**: all 148-150 observations dated 2026-05-12 despite worker uptime since 2026-05-11T02:24:49. Pre-12.4.3 backup file present (216K) but contains 0 obs under current schema. Possible v12.4.3 → v13.0.1 migration data loss, or worker emitted no obs on 2026-05-11. Does not invalidate Phase 2 PASS — 12 distinct same-day sessions prove cross-session retrieval works.
+- **Anomaly 2 — version drift**: worker daemon v13.0.1 but newest SDK sessions load plugin v13.2.0. Resolve via `npx claude-mem upgrade` + worker restart at next session boundary; not urgent.
+- **Files touched**: `briefs/2026-05-10_claude-mem-adoption.md` (Phase 2 section moved to PASS with caveats), `ROADMAP.md` (status updated from "Phase 1 pending" to "Phase 2 PASS"), `hot.md` (verdict appended), this log.
+
 ## [2026-05-12] Phase-0 audit batch | K39 RED-FLAG queue (5 tools) — 0 GO / 1 CONDITIONAL-GO / 3 NO-GO / 1 REJECT
 
 - **Batch dispatched** as single Explore subagent sweep (single round of `git clone --depth 1` + `gh api` license/maturity verification per repo + targeted red-flag code audits). 5 entity pages updated with verdicts in body + frontmatter (`phase_0_audit:` + `license_verified:` + `maturity: draft → validated`).

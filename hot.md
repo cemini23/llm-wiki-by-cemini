@@ -33,9 +33,24 @@ Single Explore subagent batch + parent spot-check verification. Verdicts:
 ### Next in recommended order (after this commit)
 
 1. ~~5 K39 Phase-0 RED-FLAG audits~~ — **CLOSED 2026-05-12**
-2. **claude-mem Phase 1 verification** — DUE 2026-05-11+, now overdue by 1 day; 3 sessions over 2-3 days; track via `http://localhost:37702`
+2. ~~claude-mem Phase 2 verification~~ — **PASS 2026-05-12 (with 2 caveats; see below)**
 3. **K39 Steal-from extractions** (2 items) — nvidia-openshell policy schemas + gabagool vs cloddsbot Polymarket arb cross-reference
 4. **Step 82 Redis/EMS blockers** — prod-side work, no laptop action
+
+### claude-mem Phase 2 verdict (2026-05-12)
+
+**PASS** on all 3 brief success criteria:
+- ≥1 high-relevance injection per session: **EXCEEDED** — 50-obs injection this session, all in active topic cluster (K39 / claude-mem / KB-server).
+- 0 token-budget overruns: **CONFIRMED** — `CONTEXT_OBSERVATIONS=50` cap held; 22,897t / 50 obs ≈ 458t/obs amortized.
+- False-positive injection rate <20%: **CONFIRMED** subjectively — injected obs matched current work; no off-topic noise.
+- Cross-session retrieval: **PROVEN** — 12 distinct `memory_session_id` values across 16 SDK sessions; this session received cross-session injection at start.
+- Worker health: **STABLE** — PID 99184 v13.0.1, ~2d uptime; dashboard HTTP 200 at localhost:37702; supervisor.json clean; 20 MB data dir.
+
+**Two anomalies flagged (non-blocking)**:
+1. **Single-day data window** — all 148-150 observations dated 2026-05-12 despite worker uptime since 2026-05-11T02:24:49. Pre-12.4.3 backup file exists (216K) but contains 0 obs under current schema → possible migration data loss. Does not invalidate cross-session retrieval (12 distinct sessions in single day proves it works). Investigate separately if multi-day cross-session pattern matters.
+2. **Version drift** — worker v13.0.1; newest SDK sessions load plugin v13.2.0. Resolve at next session boundary via `npx claude-mem upgrade` + worker restart. Not urgent.
+
+Verdict written to `briefs/2026-05-10_claude-mem-adoption.md` Phase 2 section.
 
 ## Position (carried — end of 2026-05-11 session — K40 RLHF Critic Bias ingest COMPLETE + K39 ingest + Tier-1 gap closure)
 

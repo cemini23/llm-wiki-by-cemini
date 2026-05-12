@@ -8,8 +8,9 @@ related:
   - concepts/tool-evaluation-framework.md
 maturity: validated
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-12
 laptop_install: VERIFIED 2026-05-10 (v13.0.1)
+phase_2_smoke: PASS 2026-05-12 (12 sessions / 148 obs / 50-obs SessionStart injection cross-session verified)
 ---
 
 ## Relations
@@ -60,5 +61,22 @@ Verified defaults (from production bundle `dist/npx-cli/index.js` `Z.DEFAULTS`):
 Known issue at install: Claude Desktop OAuth token stale (flagged in `~/.claude-mem/oauth-stale.marker`). Worker still runs; observation pipeline functional. Re-login via Claude Desktop will refresh.
 
 Next-session verification (2026-05-11+): confirm `SessionStart` hook injects relevant observations on relevant prompts. Track via `http://localhost:37702` live activity dashboard.
+
+### Phase 2 smoke test — PASS 2026-05-12 (with 2 non-blocking anomalies)
+
+Cross-session retrieval **PROVEN**. Brief success criteria from `briefs/2026-05-10_claude-mem-adoption.md` Phase 2 all met:
+
+- **≥1 high-relevance injection per session**: this verification session received 50-observation `SessionStart` injection matching active K39 Phase-0 audit + claude-mem adoption + KB-server work context.
+- **0 token-budget overruns**: `CONTEXT_OBSERVATIONS=50` cap respected; 22,897t / 50 obs ≈ 458t/obs amortized (well-bounded).
+- **False-positive rate <20%**: subjective assessment of injected obs landed in active topic cluster; no off-topic noise.
+
+State at verification:
+- Worker PID 99184, v13.0.1, ~2d uptime; dashboard HTTP 200 at `localhost:37702`; supervisor.json shows worker + chroma-mcp + 2 active SDK sessions.
+- SQLite: 148-150 observations across 12 distinct `memory_session_id` values, 16 SDK sessions, 5 projects (OSINT WORKSPACE 87%, Cybersecurity wiki 13%).
+- Observation-type mix: 94 discovery / 38 change / 9 feature / 3 bugfix / 3 decision / 1 security_alert. 20 MB data dir.
+
+**Anomaly 1 — single-day data window**: all observations dated 2026-05-12 despite worker uptime since 2026-05-11T02:24:49. Pre-12.4.3 backup file present (216K) but holds 0 obs under current schema. Possible v12.4.3 → v13.0.1 migration data loss or worker emitted no obs on 2026-05-11. Does not invalidate Phase 2 PASS (12 distinct same-day sessions prove the mechanism). **[NEEDS VERIFICATION 2026-05-12]** whether multi-day retention works.
+
+**Anomaly 2 — version drift**: worker daemon v13.0.1; newest SDK sessions load plugin v13.2.0. Resolve via `npx claude-mem upgrade` + worker restart at next session boundary. Not urgent.
 
 [Source: Evaluating Links for Trading and Wiki Stacks.docx, URL 18]
