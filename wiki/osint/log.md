@@ -1,5 +1,32 @@
 # Wiki Log
 
+## [2026-05-11] close-out | K37 + K38 cycle (Phase-0 audits + license verification)
+
+Same-day close-out following the K37/K38 ingest. 6 Adopt-tier Phase-0 audits completed; 12 Steal-from licenses verified.
+
+**Phase-0 audits (6 of 6 Adopt-tier closed)**:
+- [markdown-preview-pluk](entities/tools/markdown-preview-pluk.md) → **INSTALLED** v0.0.21 DMG (MIT + Apple-signed)
+- [Visual Crossing Weather](entities/tools/visualcrossing-weather.md) → **CONDITIONAL-GO-DEFERRED** (free tier sufficient at 5 airports × 15-min; interpolation gap excludes contract-resolution)
+- [wethr.net](entities/tools/wethr-net.md) → **GO-DEFERRED on spend** ($24.99/mo Pro; live Kalshi/Polymarket-resolution; activates when first Kalshi weather strategy reaches paper-trade)
+- [Perplexity MCP](entities/tools/perplexity-mcp.md) → **GO-DEFERRED on spend** (pay-per-query API; activates when live-search gap unaddressable by `mcp__exa__*` OR $50-200/mo budget cleared)
+- [Google Colab VSCode](entities/tools/google-colab-vscode.md) → **CONDITIONAL-GO-DEFERRED on spend** (free 30 GPU-hrs/wk + GCP data egress + Colab Secrets API gap; activates on cost-clearance + non-sensitive use case)
+- [UI-TARS-desktop](entities/tools/ui-tars-desktop.md) → **NO-GO** (eval-brief mischaracterization: VLM-inference client not standalone automation; duplicates `mcp__computer-use__*`)
+- [9router](entities/tools/9router.md) → **NO-GO DEFER-INDEFINITELY** (eval-brief mischaracterization: private Next.js + React dashboard, NOT lean proxy; Family-C TOS landmine)
+- [guild MCP](entities/tools/guild-mcp.md) → **NO-GO as kb-server replacement** (eval-brief mischaracterization: agent-coordination substrate, not generic retrieval)
+- [Readme.skill](entities/tools/readme-skill.md) → **NO-GO** (6th eval-brief mischaracterization: personal-profile generator, NOT repo-stats; LICENSE missing)
+
+**License verification (12 Steal-from items, all GREEN except AI-Trader)**:
+- **11 GREEN** (MIT/Apache-2.0 clean for pattern extraction): claude-bootstrap MIT 621★, ASB MIT 247★, beever-atlas Apache-2.0 293★, homelab-hub MIT 541★, ebay-mcp MIT 61★, contextlattice Apache-2.0 102★, google-research Apache-2.0 37,889★, cloddsbot MIT 254★, megamemory MIT 166★, metatron-recon MIT 2,894★, hackers-arise (tutorial site — no GitHub repo, design-doc Steal only).
+- **1 RED**: [AI-Trader (HKUDS)](entities/tools/ai-trader-hkuds.md) — NO LICENSE FILE despite README MIT claim (16,123★ project; root listing has zero LICENSE/COPYING; GitHub `license` API returns null). **3rd occurrence of pattern** after `finance-skills` K36 + `Readme.skill` K38. Steal-from downgraded to pseudocode-only pattern extraction; tagged `license-gap`.
+
+**Meta-patterns recorded**:
+- [LESSONS.md 2026-05-11 — Phase-0 audit catches eval-brief mischaracterization](../LESSONS.md) — 6 catches across K28+K30+K38; K38 base rate 75% (3 of last 4 K38 Adopt verdicts mischaracterized).
+- [LESSONS.md 2026-05-11 — No-LICENSE-file in popular repos](../LESSONS.md) — 3rd occurrence; Phase-0 mitigation: `gh api repos/<owner>/<repo> --jq '.license.spdx_id'` instead of trusting README.
+
+**Wiki state**: 12 entity pages bumped `maturity: draft` → `validated` with `license_verified` frontmatter. `wiki/index.md` updated with VALIDATED status + verdict downgrades for the 9 Adopt-tier entries.
+
+---
+
 ## [2026-05-11] ingest | K37 + K38 + 3 papers — 5-source batch (21+29-URL eval briefs + ODINI + Reinforced Agent + Signals)
 
 Five-source ingest batch dropped into `research to be indexed/`. Triaged + extracted in a single session. Mixed: 2 multi-URL evaluation briefs (K37 + K38) + 3 academic papers (1 security reference + 2 Conductor-relevant agent-architecture papers).
