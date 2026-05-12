@@ -16,9 +16,6 @@ related:
   - concepts/dcm-state-preemption.md
   - entities/platforms/kalshi.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
-  - sources/polymarket-microstructure-anatomy-2604.24366.md — definitive Polymarket microstructure study (Dubach 2026, 30B events, 600-market panel)
-  - sources/polymarket-nba-arbitrage-2605.00864.md — companion NBA arb microstructure study
-  - concepts/polymarket-microstructure-findings.md — distilled microstructure findings for Cemini
   - sources/polymarket-predictions-mcp.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
   - sources/gemini-dr-wave5b-osint-2026-04-30.md

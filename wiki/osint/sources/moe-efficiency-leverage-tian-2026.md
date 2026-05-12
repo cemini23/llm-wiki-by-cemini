@@ -99,7 +99,7 @@ The paper derives a unified scaling law for EL combining compute budget, activat
 
 ### Risks & open questions
 
-1. **License-on-derived-models** [NEEDS VERIFICATION 2026-04-29] — Ling-mini-beta release license? If publicly available under permissive terms, Cemini could use it as a fallback brain (validation of cross-vendor pattern from IKP). Check Hugging Face / Ant Group GitHub.
+1. **License-on-derived-models** [VERIFIED 2026-05-11: MIT (repo)] — `gh api repos/inclusionAI/Ling` returned MIT, pushed 2025-05-14 (1 year stale; check for fresher forks if adopted), 254 stars. Code repo license clean for fallback-brain adoption; individual model weight licenses on Hugging Face require separate per-checkpoint verification (HF supports per-model licenses distinct from repo license).
 2. **Optimum granularity range (8-12) was found with standard load-balancing loss** — alternative routing/loss functions might shift this. Cemini's specific deployment may not honor the assumption (we're consumers, not trainers).
 3. **The 7× efficiency gain at 1e22 FLOPs may not translate at smaller scales** — the compute-budget power law means EL grows with C. Smaller-scale fine-tunes (which Cemini might consider for analyst specialization) get less of the benefit.
 4. **Ant Group affiliation = potential vendor bias** — though the methodology is rigorous and the math doesn't depend on Ant-internal infrastructure.

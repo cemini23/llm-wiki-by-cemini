@@ -10,7 +10,6 @@ related:
   - entities/tools/lazy-tool.md
   - entities/tools/bifrost.md
   - entities/tools/claude-code-router.md
-  - entities/models/claude-opus-4-6.md
   - sources/openrouter-efficiency-context-audit.md
   - concepts/mcp-context-optimization.md
 maturity: validated

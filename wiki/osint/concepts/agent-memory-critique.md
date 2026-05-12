@@ -7,7 +7,7 @@ related:
   - sources/contextual-agentic-memory-critique-2604.27707.md
   - sources/agent-native-research-artifacts-2604.24658.md
   - concepts/agent-native-research-artifacts.md
-  - entities/infrastructure/librarian-server-architecture.md
+  - concepts/librarian-server-architecture.md
   - concepts/exploration-graph-dead-ends.md
   - entities/tools/letta-memgpt.md
   - concepts/agent-trajectory-triage-signals.md

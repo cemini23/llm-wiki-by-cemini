@@ -36,7 +36,7 @@ updated: 2026-05-11
 - **arXiv ID**: 2604.24827v1
 - **DOI**: 10.48550/arXiv.2604.24827
 - **Submitted**: 27 April 2026
-- **License**: CC BY 4.0 (paper); github code license to be verified [NEEDS VERIFICATION 2026-04-29]
+- **License**: CC BY 4.0 (paper); github code [RED 2026-05-11: no LICENSE file] — `gh api repos/19PINE-AI/ikp` returned `NOLICENSE`, 69 stars, pushed 2026-05-01. **No-LICENSE = default copyright = no-derivative right.** 5th occurrence of no-LICENSE-popular-repo pattern. **NO-GO for code adoption** until upstream adds a LICENSE file. Paper still citeable; toolkit code is not safely usable.
 - **Code**: https://github.com/19PINE-AI/ikp
 - **Companion site**: https://01.me/research/ikp
 - **PDF location**: cemini-librarian:/opt/cemini-bulk/research/Incompressible Knowledge Probes_ Estimating Black-Box LLM Parameter Counts via Factual Capacity.pdf (post-ingest scp)
@@ -107,7 +107,7 @@ Several findings are directly operational for Cemini's stack:
 
 1. **Single-author paper** — Bojie Li (Pine AI) is the sole author. The literature review is comprehensive (15+ cited works; methodology builds on Allen-Zhu-Li 2025, Morris 2025, Kandpal 2023, Roberts 2020 — all peer-reviewed). The probe-set design is methodologically careful (10-round audit, monotonicity filter, evidence-required scoring). But solo-author work has a higher bar for replication; treat the specific frontier-model parameter estimates as **point estimates with the paper's stated 2x–3x uncertainty** rather than precise truth.
 
-2. **License on the github toolkit** [NEEDS VERIFICATION 2026-04-29] — paper itself is CC BY 4.0 (clean), but `github.com/19PINE-AI/ikp` license needs verification before any code is borrowed. If Cemini wants to deploy a daily silent-swap detector, this is the gating check.
+2. **License on the github toolkit** [RED 2026-05-11: no LICENSE file] — paper itself is CC BY 4.0 (clean), but `gh api repos/19PINE-AI/ikp` returned `NOLICENSE`. **Gating check FAILED**: default copyright applies, no derivative right. Daily silent-swap detector adoption is **NO-GO** until upstream adds a LICENSE file.
 
 3. **Refusal-policy correction is asymmetric** — heavily safety-tuned models may receive estimates biased downward by tens of percentage points of "refused but known" capacity. The paper acknowledges this; the hallucination-similarity technique partially compensates but doesn't fully correct. **Anthropic and OpenAI estimates should be read as conservative lower bounds.**
 
@@ -120,7 +120,7 @@ Several findings are directly operational for Cemini's stack:
 **Decision: Watch-and-prototype**. The paper is high-signal, cleanly scoped, and the github code release lowers adoption friction substantially. Concrete next steps:
 
 1. **Read appendices** A (probe-generation pipeline) + B (sensitivity sweep on λ) + H (the Hackergame anecdote thread) to fully internalize the methodology. ~1.5 hours.
-2. **License-gate the github repo** via Exa `crawling_exa` against `github.com/19PINE-AI/ikp/blob/main/LICENSE` — same protocol as openclaude / agentic-harness-engineering. ~10 min.
+2. ~~License-gate the github repo~~ **RESOLVED 2026-05-11**: `gh api` confirms no LICENSE file (`NOLICENSE`). **NO-GO for code adoption.** Watch upstream for LICENSE addition; paper-only citations remain clean.
 3. **Empirical verification on DeepSeek**: install the IKP toolkit on the laptop, run 100-probe subset (T5–T7, the discriminating tiers) against `deepseek-v4-flash` via the existing API; compare to the paper's published results for the same model. Validates that Cemini's rate-limit envelope can absorb the cost (1,400 probes × $0.0001 input + $0.0004 output per 1k tokens × ~50 tokens/probe ≈ $0.04 — trivial). ~30 min.
 4. **Decide on production swap-detector deployment** — if appendix A/B reading + license check + reproduction all clear, file a brief for cemini-prod-side execution: a daily 50-probe IKP cron against the production DeepSeek endpoint with hallucination-similarity drift alerting.
 

@@ -44,7 +44,7 @@ updated: 2026-04-30
 - **arXiv ID**: 2604.25850v1
 - **DOI**: 10.48550/arXiv.2604.25850
 - **Submitted**: 28 April 2026
-- **License**: arXiv non-exclusive distribution license 1.0 (paper); source code license at github repo to be verified separately [NEEDS VERIFICATION 2026-04-29]
+- **License**: arXiv non-exclusive distribution license 1.0 (paper); source code [VERIFIED 2026-05-11: MIT] — `gh api repos/china-qijizhifeng/agentic-harness-engineering` returned MIT, pushed 2026-05-05, 163 stars. Clean for code adoption.
 - **Code release**: https://github.com/china-qijizhifeng/agentic-harness-engineering
 - **PDF location**: cemini-librarian:/opt/cemini-bulk/research/Agentic Harness Engineering- Observability-Driven Automatic Evolution of Coding-Agent Harnesses.pdf (after this ingest's scp step)
 - **Read status**: read (pages 1-12 + abstract + figures + tables + conclusion + limitations; appendices A-D not deep-read)
@@ -147,7 +147,7 @@ Several patterns map directly onto Cemini's analyst-orchestrator architecture:
 
 ### Risks & open questions
 
-1. **Code license verification** [NEEDS VERIFICATION 2026-04-29] — paper is under arXiv non-exclusive license (paper-level, fine for citation). The github.com/china-qijizhifeng/agentic-harness-engineering code release license must be checked separately before any code is borrowed for Cemini. Critical for IP-sale-readiness — see `@concepts/ip-sale-readiness.md` poison-pill family A (copyleft).
+1. **Code license verification** [VERIFIED 2026-05-11: MIT — RESOLVED] — `gh api repos/china-qijizhifeng/agentic-harness-engineering` returned MIT, pushed 2026-05-05, 163 stars. Clean against poison-pill family A (no copyleft). Code adoption gate passed; remaining adoption blockers are benchmark-fit (#3) + NexAU dependency (#5), not license.
 
 2. **Compute cost** [TENTATIVE] — per the limitations section, AHE adds engineering + compute overhead vs one-shot prompting. Each iteration requires benchmark execution, trajectory analysis, and workspace management. Paper promises "the final paper will report these costs explicitly." Cemini's budget-bound deployment context (single Hetzner CPX21 + DeepSeek API) cannot afford GPT-5.4-high-style 32-hour evolution loops. Adapting the AHE substrate to a smaller-scale loop on Cemini-shaped tasks would require substantial scoping.
 

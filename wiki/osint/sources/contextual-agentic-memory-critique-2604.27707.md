@@ -5,7 +5,7 @@ tags: [llm-agents, agent-memory, rag, vector-stores, context-window]
 keywords: [agent-memory, RAG, vector-stores, context-window, lookup-vs-memory, episodic-memory, Stash, kb-server, pgvector]
 related:
   - concepts/agent-memory-critique.md
-  - entities/infrastructure/librarian-server-architecture.md
+  - concepts/librarian-server-architecture.md
   - entities/tools/letta-memgpt.md
 maturity: draft
 read_status: deep-read

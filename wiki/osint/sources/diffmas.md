@@ -4,11 +4,12 @@ type: source
 tags: [multi-agent-systems, differentiable-communication, KV-cache, LoRA, agent-training, reasoning]
 keywords: [DiffMAS, KV-cache communication, latent communication, differentiable agents, multi-agent training, LoRA fine-tuning, AIME24, GPQA]
 clusters: [llm-agents]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-11
 ---
 
 ## Relations

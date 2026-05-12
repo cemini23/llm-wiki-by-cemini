@@ -7,14 +7,13 @@ related:
   - sources/links-3-5-4-tool-eval.md
   - sources/polymarket-5-5-tool-eval.md
   - sources/5-5-links-2-tool-eval.md
-  - sources/polymarket-microstructure-anatomy-2604.24366.md — definitive microstructure data that constrains MM strategy parameters (spread, depth, cadence)
-- sources/polymarket-nba-arbitrage-2605.00864.md — companion NBA arb paper; shallow-depth structural constraint on execution
-- concepts/polymarket-microstructure-findings.md — distilled microstructure findings relevant to MM design
-- entities/platforms/polymarket.md
+  - sources/polymarket-microstructure-anatomy-2604.24366.md
+  - sources/polymarket-nba-arbitrage-2605.00864.md
+  - concepts/polymarket-microstructure-findings.md
+  - entities/platforms/polymarket.md
   - entities/tools/polymarket-agents.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-historical-analysis.md
-  - briefs
 maturity: draft
 created: 2026-05-05
 updated: 2026-05-05

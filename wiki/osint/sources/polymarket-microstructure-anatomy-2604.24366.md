@@ -10,7 +10,6 @@ related:
   - concepts/prediction-market-historical-analysis.md
   - concepts/polymarket-microstructure-findings.md
   - sources/polymarket-nba-arbitrage-2605.00864.md
-  - sources/tsag-2603.03136.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - sources/polymarket-predictions-mcp.md
   - sources/polymarket-5-5-tool-eval.md
@@ -29,7 +28,6 @@ updated: 2026-05-11
 - @concepts/prediction-market-historical-analysis.md — historical-data backtest pipeline; replication package feeds directly into Layer 1 collection
 - @concepts/polymarket-microstructure-findings.md — distilled findings page created from this source
 - @sources/polymarket-nba-arbitrage-2605.00864.md — companion paper on Polymarket NBA arbitrage; shares same data ecosystem
-- @sources/tsag-2603.03136.md — Tsang & Yang 2026 single-event microstructure study on 2024 US presidential election market
 - @sources/polymarket-informed-minority-gomezcram-2026.md — early Polymarket microstructure finding (informed minority)
 - @sources/polymarket-predictions-mcp.md — MCP access layer
 - @sources/polymarket-5-5-tool-eval.md — K30 Polymarket tool evaluation batch

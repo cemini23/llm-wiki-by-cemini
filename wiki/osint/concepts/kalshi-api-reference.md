@@ -12,7 +12,7 @@ related:
   - concepts/prediction-market-historical-analysis.md
 maturity: validated
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-11
 ---
 
 ## Relations
@@ -33,6 +33,36 @@ updated: 2026-05-05
 **Why ingested**: K30 Gemini DR eval (`@sources/5-5-links-2-tool-eval.md` URL 26) flagged ingesting Kalshi's llms.txt as Adopt-tier. The benefit: kb-server retrieves Kalshi-API-specific content directly when the brain handles Kalshi-related queries, eliminating training-data staleness on a venue Cemini actively trades on.
 
 **Format**: the file is a markdown index — each line is a `[Endpoint Name](URL)` link with a one-line description. The brain follows links to the underlying `.md` files when deeper detail is needed; for top-level "what endpoints exist" questions, this index alone suffices.
+
+## Narrative
+
+The snapshot below is ~175 endpoints across REST + FIX + WebSocket surfaces. Most readers do not need the whole index — they need to find the right endpoint cluster for their task. This section orients to the clusters Cemini's stack actually consumes.
+
+### Endpoint clusters Cemini cares about
+
+- **Market data (public, no auth)** — `Get Market`, `Get Markets`, `Get Market Orderbook`, `Get Multiple Market Orderbooks`, `Get Trades`, `Get Market Candlesticks`. Substrate for [@concepts/cross-venue-arbitrage-pattern.md](../concepts/cross-venue-arbitrage-pattern.md) (Kalshi vs Polymarket spread detection) and the real-time fair-value feed. Public endpoints — no API key required for read-only consumption.
+- **Historical data (auth required)** — `Get Historical Markets`, `Get Historical Market Candlesticks`, `Get Historical Trades`, `Get Historical Fills`, `Get Historical Orders`, `Get Historical Cutoff Timestamps`. Substrate for [@concepts/prediction-market-historical-analysis.md](../concepts/prediction-market-historical-analysis.md). Note the **historical cutoff** boundary: markets that settled before the cutoff are only retrievable via `/historical/markets/{ticker}/candlesticks`, not the live `Get Market Candlesticks`. Backtests must check `Get Historical Cutoff Timestamps` first to route the correct endpoint.
+- **Orders (auth required, write budget gated)** — REST: `Create Order`, `Create Order (V2)`, `Cancel Order`, `Batch Create Orders`, `Batch Cancel Orders`, `Amend Order`, `Decrease Order`. The **V2 variants** use single-book `bid`/`ask` semantics + fixed-point dollar prices; legacy `/portfolio/orders` deprecates no earlier than **2026-05-06** — already deprecated by Cemini's calendar, all new orders must use V2. Per-user cap: **200,000 open orders**.
+- **FIX API (Premier/Market-Maker tier)** — full FIX 4.4 surface for low-latency order entry, listener sessions for execution-report streaming, drop-copy for recovery. Cemini does NOT use FIX as of 2026-05-11 — REST + WebSocket is sufficient for current strategy throughput. FIX is roadmapped if Cemini hits Premier-tier rate ceilings.
+- **WebSocket channels (real-time push)** — `orderbook_updates` (incremental L2), `market_ticker` (last-price + volume), `public_trades`, `market_positions` (own positions), `user_fills`, `user_orders`. Cemini's current Polymarket-prep stack mirrors this pattern for Kalshi: one auth'd WebSocket connection with multiple channel subscriptions, with REST as the fallback / cold-start path.
+- **Portfolio** — `Get Balance`, `Get Positions`, `Get Fills`, `Get Settlements`, plus 8 subaccount endpoints (up to 32 subaccounts per user, useful for strategy isolation). The subaccount-transfer + netting endpoints matter if Cemini ever runs >1 strategy concurrently on the same Kalshi account.
+- **Order Groups (rolling 15-second contract limits)** — `Create Order Group`, `Update Order Group Limit`, `Trigger Order Group`, `Reset Order Group`. Built-in dead-man's-switch: when the contracts limit is hit, all orders in the group are auto-cancelled and the group blocks new orders until reset. Risk-management primitive Cemini SHOULD use for any strategy running unattended overnight.
+- **RFQ (Request for Quote)** — RFQ + Quote lifecycle endpoints for OTC-style negotiated trades. 100 open RFQs per user. Not currently used by Cemini's strategies; may matter for very-large-size entries on illiquid markets.
+
+### SDK posture
+
+Kalshi publishes official Python + TypeScript SDKs (~30 endpoints each in the index). Cemini does NOT use the official Python SDK — per [@entities/tools/pykalshi.md](../entities/tools/pykalshi.md) (K30 Adopt-tier), the third-party `pykalshi` client outperforms the official SDK on latency (relevant for the arb path) while preserving the same auth + signing semantics. The official SDKs are still the canonical reference for **method names** when reading endpoint detail — pykalshi mirrors the upstream method surface.
+
+### Concepts Cemini should track from this index
+
+- **Fixed-point migration** (`getting_started/fixed_point_migration.md`) — Kalshi prices + quantities are now fixed-point integers, not floats. Any Cemini code parsing Kalshi responses must treat price fields as integer cents (or sub-cent for subpenny markets), not decimals.
+- **Subpenny pricing** (FIX surface) — Kalshi supports sub-cent precision on some markets. Cemini's existing orderbook normalizer assumes cent-aligned ticks; this is a known gap to revisit when Cemini trades sub-penny markets.
+- **Rate limits + token costs** (`getting_started/rate_limits.md`) — read budget vs write budget by tier. Non-default endpoint costs are listed via `List Non-Default Endpoint Costs`. Cemini's request scheduler should query this on cold-start rather than hardcoding tier limits.
+- **Maintenance + pauses** (`getting_started/maintenance_and_pauses.md`) — scheduled windows where Cemini's strategies must back off. The exchange schedule + status endpoints (`Get Exchange Schedule`, `Get Exchange Status`) provide the runtime check.
+
+### How the brain uses this page
+
+When a user query mentions Kalshi APIs, kb-server retrieves this page (full snapshot) so the DeepSeek brain can answer "which endpoint do I call for X" without going to Kalshi's docs site at inference time. For deeper questions (exact request schema, response fields), the brain has the underlying `.md` URLs to fetch. The intent is **endpoint discovery offline**; full schema details remain at the canonical source on `docs.kalshi.com`.
 
 ## Refresh procedure
 

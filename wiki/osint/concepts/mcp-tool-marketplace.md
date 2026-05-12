@@ -30,8 +30,9 @@ related:
   - sources/alash3al-stash.md
   - sources/3-28-links-2.md
   - sources/wave-5-1-link-eval-even-more.md
+  - sources/tool-attention.md
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-11
 maturity: validated
 ---
 

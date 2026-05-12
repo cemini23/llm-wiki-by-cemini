@@ -50,9 +50,9 @@ related:
   - sources/greeks1-3-29.md
   - sources/insights-from-a-gemini.md
   - sources/kalshi1-3-29.md
-  - sources/polymarket-nba-arbitrage-2605.00864.md — Polymarket NBA combinatorial arb; 75M snapshots, 7 single-market arbs, 290 combinatorial (depth-capped at ~14.8 shares)
-  - sources/polymarket-microstructure-anatomy-2604.24366.md — Polymarket microstructure anatomy paper (Dubach 2026); 30B events, 600-market panel, definitive trade-direction finding
-- sources/market-microstructure-and-liquidity-analysis-of-qqq-etf-on-2024-08-01.md
+  - sources/polymarket-nba-arbitrage-2605.00864.md
+  - sources/polymarket-microstructure-anatomy-2604.24366.md
+  - sources/market-microstructure-and-liquidity-analysis-of-qqq-etf-on-2024-08-01.md
   - sources/nonstandard-errors.md
   - sources/options-2-4-5.md
   - sources/osint-prediction-markets-trading-architecture.md

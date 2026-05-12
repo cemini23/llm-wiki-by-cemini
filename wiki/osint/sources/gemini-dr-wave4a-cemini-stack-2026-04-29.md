@@ -174,11 +174,11 @@ Two URLs evaluated in this wave already have source pages:
 
 ### Open questions / NEEDS VERIFICATION
 
-- **URL 16 last30days-skill license** [NEEDS VERIFICATION 2026-04-29] — license not confirmed via Exa in this session. Pre-adoption gate: verify LICENSE file at `github.com/mvanhorn/last30days-skill/blob/main/LICENSE`.
-- **URL 17 mcp-etherscan-server license** [NEEDS VERIFICATION 2026-04-29] — same pre-adoption gate.
-- **URL 21 mcp-server-ccxt license** [NEEDS VERIFICATION 2026-04-29] — same pre-adoption gate.
-- **URL 24 polymarket-trade-engine license** [NEEDS VERIFICATION 2026-04-29] — same pre-adoption gate.
-- **URL 25 ai-hedge-fund license** [NEEDS VERIFICATION 2026-04-29] — same pre-adoption gate.
+- **URL 16 last30days-skill license** [VERIFIED 2026-05-11: MIT] — `gh api repos/mvanhorn/last30days-skill` → MIT, pushed 2026-05-10, 25.5k stars. Clean for adoption.
+- **URL 17 mcp-etherscan-server license** [VERIFIED 2026-05-11: MIT] — `gh api repos/crazyrabbitLTC/mcp-etherscan-server` → MIT, pushed 2024-12-31 (stale), 30 stars. License clean; maintenance staleness is a separate adoption concern.
+- **URL 21 mcp-server-ccxt license** [VERIFIED 2026-05-11: MIT] — `gh api repos/doggybee/mcp-server-ccxt` → MIT, pushed 2025-06-03, 137 stars. Clean.
+- **URL 24 polymarket-trade-engine license** [VERIFIED 2026-05-11: MIT] — `gh api repos/KaustubhPatange/polymarket-trade-engine` → MIT, pushed 2026-05-07, 229 stars. Clean.
+- **URL 25 ai-hedge-fund license** [RED 2026-05-11: no LICENSE file] — `gh api repos/virattt/ai-hedge-fund` → `NOLICENSE`, pushed 2026-05-09, **58.6k stars** (very popular but unlicensed = default copyright = no-derivative right). 4th occurrence of no-LICENSE-popular-repo pattern after K36 finance-skills + K38 AI-Trader + K39 IKP. See `@concepts/cemini-license-posture.md` license-pattern catalog mode #3 (no-LICENSE = default copyright). **NO-GO for adoption** without explicit upstream license declaration.
 - **URL 20 tradingview-mcp TOS legal review** [NEEDS VERIFICATION 2026-04-29] — formal legal review of TradingView TOS vs Cemini's automated-trading use case. Currently downgraded to Defer pending review.
 
 ## Snippets

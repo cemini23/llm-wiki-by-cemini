@@ -4,11 +4,12 @@ type: source
 tags: [RAG, reasoning-models, adaptive-retrieval, multi-hop-QA, uncertainty-quantification, chain-of-thought]
 keywords: [ReaLM-Retrieve, retrieval-augmented generation, DeepSeek-R1, reasoning-step uncertainty, RSUS, IRCoT, multi-hop QA, SIGIR 2026]
 clusters: [llm-agents]
-related: []
+related:
+  - concepts/llm-agent-systems.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-11
 ---
 
 ## Relations

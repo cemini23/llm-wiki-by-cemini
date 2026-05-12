@@ -4,11 +4,13 @@ type: source
 tags: [MCP, tool-use, agent-infrastructure, context-engineering, middleware, token-efficiency]
 keywords: [Tool Attention, MCP Tax, Tools Tax, lazy schema loading, intent routing, ISO score, token reduction, LangGraph middleware]
 clusters: [llm-agents]
-related: []
+related:
+  - concepts/mcp-tool-marketplace.md
+  - concepts/mcp-context-optimization.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-11
 ---
 
 ## Relations

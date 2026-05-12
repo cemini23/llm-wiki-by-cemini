@@ -16,9 +16,10 @@ related:
   - sources/4-5-links.md
   - sources/wave-5-1-link-eval-stacks.md
   - entities/frameworks/fastmcp.md
+  - sources/tool-attention.md
 maturity: draft
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-11
 ---
 
 ## Relations

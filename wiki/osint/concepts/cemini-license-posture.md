@@ -23,6 +23,7 @@ related:
   - concepts/mitre-atlas-taxonomy.md
   - entities/tools/blade-github.md
   - concepts/regime-conditioned-evaluation.md
+  - sources/odini-air-gap-magnetic-field.md
 maturity: draft
 created: 2026-05-03
 updated: 2026-05-11

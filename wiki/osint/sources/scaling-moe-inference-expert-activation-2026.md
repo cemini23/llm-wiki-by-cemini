@@ -5,9 +5,7 @@ tags: [paper, moe-inference, expert-placement, distributed-inference, deepseek, 
 keywords: [moe-inference-scaling, expert-activation-patterns, micro-batch-grouping, expert-placement, inter-node-communication, deepseek-v3, llama-maverick, qwen3-230b, all-to-all-communication]
 clusters: [infrastructure, moe-architecture]
 related:
-  - sources/deepseek-v4-paper-key-findings.md
   - sources/incompressible-knowledge-probes-li-2026.md
-  - concepts/moe-scaling-laws.md
   - entities/infrastructure/deepseek-api.md
   - sources/sabr-geometry-aware-correction-2605.06604.md
 maturity: draft
@@ -18,9 +16,7 @@ updated: 2026-05-11
 
 ## Relations
 
-- @sources/deepseek-v4-paper-key-findings.md — DeepSeek-V3/V4 is profiled in this paper; provides the commercial context for MoE inference scaling.
 - @sources/incompressible-knowledge-probes-li-2026.md — sibling 2026-04 arXiv paper on LLM infrastructure; IKP measures knowledge capacity, this paper measures inference mechanics.
-- @concepts/moe-scaling-laws.md — concept page on MoE scaling; this paper provides empirical system-level data.
 - @entities/infrastructure/deepseek-api.md — Cemini uses DeepSeek-hosted API; this paper profiles DeepSeek models under multi-node inference.
 
 ## Raw Concept

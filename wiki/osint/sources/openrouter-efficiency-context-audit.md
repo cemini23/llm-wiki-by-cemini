@@ -11,7 +11,6 @@ related:
   - entities/tools/claude-code-router.md
   - entities/tools/cc-switch.md
   - entities/tools/bifrost.md
-  - entities/models/claude-opus-4-6.md
   - sources/llm-proxy-context-reduction.md
   - concepts/mcp-context-optimization.md
 maturity: validated

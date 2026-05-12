@@ -116,10 +116,12 @@ Adopt rate: 3/14 evaluable = **21%**. Lower than Wave 4A's 32%; consistent with 
 
 ### Open questions / NEEDS VERIFICATION
 
-- **URL 5 IRONSIGHT, URL 6 sightline, URL 17 GeoSentinel licenses** [NEEDS VERIFICATION 2026-04-29]
-- **URL 8 metabigor maintenance status** [NEEDS VERIFICATION 2026-04-29]
-- **URL 9 cti-expert license + Cemini-deployment-cost-estimate** [NEEDS VERIFICATION 2026-04-29]
-- **URL 14 Spaceshift SateAIs API pricing tier + commercial-use-license** [NEEDS VERIFICATION 2026-04-29]
+- **URL 5 IRONSIGHT license** [VERIFIED 2026-05-11: MIT] — `gh api repos/NoblerWorks-HQ/IRONSIGHT` → MIT, pushed 2026-04-26, 253 stars. Clean for steal-from.
+- **URL 6 sightline license** [VERIFIED 2026-05-11: MIT] — `gh api repos/ni5arga/sightline` → MIT, pushed 2026-05-10, 355 stars. Clean.
+- **URL 17 GeoSentinel license** [NEEDS MANUAL REVIEW 2026-05-11: NOASSERTION] — `gh api repos/h9zdev/GeoSentinel` → `NOASSERTION` (LICENSE file present but does not match a standard SPDX template). 908 stars, pushed 2026-04-25. Requires manual fetch + read of the LICENSE file before steal-from; not auto-resolvable.
+- **URL 8 metabigor maintenance + license** [VERIFIED 2026-05-11: MIT, maintained] — `gh api repos/j3ssie/metabigor` → MIT, pushed 2026-02-15 (3 months stale but active OSINT project), 1.5k stars. License clean; maintenance acceptable for steal-from / reference.
+- **URL 9 cti-expert license** [NEEDS MANUAL REVIEW 2026-05-11: NOASSERTION] — `gh api repos/7onez/cti-expert` → `NOASSERTION` (custom LICENSE file). 99 stars, pushed 2026-04-19. Requires manual fetch + read before adoption. Cemini-deployment-cost-estimate remains deferred until license clears.
+- **URL 14 Spaceshift SateAIs API pricing tier + commercial-use-license** [NEEDS VERIFICATION 2026-04-29] — not a GitHub repo; vendor API pricing inquiry remains open. Defer until macro-event-from-satellite roadmap is active.
 
 ### Adoption summary (Cemini-pragmatic)
 
