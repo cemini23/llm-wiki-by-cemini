@@ -7,9 +7,10 @@ related:
   - sources/x-polymarket-bot-playbook-punisher-2026-05.md
   - entities/platforms/polymarket.md
   - concepts/cemini-license-posture.md
+  - concepts/polymarket-weather-trading-strategy.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-13
 ---
 
 ## Relations

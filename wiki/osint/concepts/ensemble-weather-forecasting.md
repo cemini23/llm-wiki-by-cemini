@@ -9,9 +9,10 @@ related:
   - sources/3-19-kalshi-trading-strategy-research.md
   - entities/data-sources/open-meteo.md
   - entities/platforms/kalshi.md
+  - concepts/polymarket-weather-trading-strategy.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-24
+updated: 2026-05-13
 ---
 
 ## Relations

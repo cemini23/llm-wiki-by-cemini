@@ -7,6 +7,7 @@ clusters: [llm-agents]
 related:
   - sources/3-25-git-research.md
   - concepts/multi-agent-trading.md
+  - sources/generative-agents-park-2023.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30

@@ -5,6 +5,9 @@ tags: [concept, multi-agent, trading, agent-orchestration, llm-trading, cemini-r
 keywords: [multi-agent trading, agent orchestration, tradingagents, analyst-trader pattern, debate framework, hierarchical agents]
 related:
   - sources/tradingagents.md
+  - sources/toolformer-schick-2023.md
+  - sources/react-yao-2022.md
+  - sources/generative-agents-park-2023.md
   - concepts/agent-cost-routing-model-orchestra.md
   - concepts/conductor-orchestrator.md
 maturity: draft

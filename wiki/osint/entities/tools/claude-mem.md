@@ -6,9 +6,10 @@ keywords: [claude-mem, persistent memory, context persistence, Claude Code plugi
 related:
   - sources/evaluating-links-trading-wiki-stacks.md
   - concepts/tool-evaluation-framework.md
+  - sources/llms-get-lost-multi-turn-laban-2025.md
 maturity: validated
 created: 2026-05-10
-updated: 2026-05-12
+updated: 2026-05-13
 laptop_install: VERIFIED 2026-05-10 (v13.0.1)
 phase_2_smoke: PASS 2026-05-12 (12 sessions / 148 obs / 50-obs SessionStart injection cross-session verified)
 ---

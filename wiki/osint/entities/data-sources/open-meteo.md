@@ -2,18 +2,20 @@
 title: Open-Meteo
 type: entity
 tags: [data-source, weather, ensemble-forecasting]
-keywords: []
+keywords: [open-meteo, bias-correction-parameter, icon-gfs-ecmwf-ensemble, no-api-key-data-source]
 related:
   - sources/3-17-competition-research.md
   - sources/3-19-ip-sale-research.md
   - sources/3-19-kalshi-trading-strategy-research.md
+  - sources/x2-docx-polymarket-theparuchh-2026.md
   - concepts/ensemble-weather-forecasting.md
+  - concepts/polymarket-weather-trading-strategy.md
   - entities/platforms/kalshi.md
   - entities/data-sources/nws-weather-gov.md
   - entities/tools/visualcrossing-weather.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-11
+updated: 2026-05-13
 ---
 
 ## Relations
@@ -25,6 +27,8 @@ updated: 2026-05-11
 - @entities/platforms/kalshi.md
 - @entities/data-sources/nws-weather-gov.md — companion / complement: Open-Meteo gives the global multi-model ensemble (ECMWF + GFS + ICON + MetNo + JMA); NWS gives the single US-government authoritative forecast and observation feed — use as the resolution-truth source when settling US-locality Kalshi weather contracts
 - @entities/tools/visualcrossing-weather.md — K37 Adopt (CONDITIONAL-GO 2026-05-11); paid 50-yr historical depth complementing Open-Meteo's free shallower reanalysis. Both serve the backtesting role; choose by depth/freshness need
+- @sources/x2-docx-polymarket-theparuchh-2026.md — K41 retail-bot operator's operational guide; documents `bias_correction=true` parameter claim (+30-40% accuracy) and station-vs-city-center coordinate discovery
+- @concepts/polymarket-weather-trading-strategy.md — K41 strategy concept page (parallel Polymarket application of the same data source)
 
 ## Raw Concept
 
@@ -46,6 +50,12 @@ resolution bucket, then converted to a fair-value price that drives
 Avellaneda-Stoikov market-making quotes in logit space. No API key + no
 rate limit at the volumes Cemini uses = another zero-vendor-risk data
 source, consistent with the IP-sale-readiness posture.
+
+### K41 addition: `bias_correction=true` parameter
+
+The K41-ingested @sources/x2-docx-polymarket-theparuchh-2026.md documents a parameter `bias_correction=true` on Open-Meteo's API that **claims +30-40% temperature-forecast accuracy** against weather-station resolution truth. Flagged `[NEEDS VERIFICATION 2026-05-13]` — the parameter's existence is independently verifiable via Open-Meteo's public API documentation; the magnitude claim is author-asserted.
+
+Also documented: 5 of 11 city queries had wrong default coordinates (city-center geocode vs the weather station the resolution market uses). Mitigation: pin coordinates to the resolution-truth station, not the city geocode.
 
 ## Snippets
 

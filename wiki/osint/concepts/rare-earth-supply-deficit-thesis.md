@@ -6,15 +6,21 @@ keywords: [rare earth, dysprosium, terbium, DyTb, China export restriction, supp
 related:
   - sources/donny-market-thoughts-2026-05-09.md
   - entities/tickers/rea.md
+  - concepts/capital-cycle-theory.md
+  - concepts/real-assets-investing-framework.md
+  - concepts/critical-minerals-thesis.md
 maturity: draft
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-13
 ---
 
 ## Relations
 
 - Source: @sources/donny-market-thoughts-2026-05-09.md
 - Entity: @entities/tickers/rea.md
+- @concepts/capital-cycle-theory.md — methodological parent (K41); REE-specific instance of the supply-side capex-cycle thesis
+- @concepts/real-assets-investing-framework.md — strategic parent (K41); REE-mining equities fit the real-assets investment framework
+- @concepts/critical-minerals-thesis.md — narrower instance of broader critical-minerals umbrella concept
 
 ## Raw Concept
 

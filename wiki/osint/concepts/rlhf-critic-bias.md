@@ -10,9 +10,10 @@ related:
   - concepts/agent-trajectory-triage-signals.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
+  - sources/llms-get-lost-multi-turn-laban-2025.md
 maturity: draft
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-13
 clusters: [llm-agents, methodology]
 ---
 

@@ -1,5 +1,34 @@
 # Wiki Log
 
+## [2026-05-13] K41 ingest | 11 sources + 5 concepts + 7 entity stubs
+
+- **Sources ingested** (11; raw → librarian):
+  - `toolformer-schick-2023.md` — Meta arXiv 2302.04761; self-supervised tool-use; foundational for Conductor + claude-mem.
+  - `react-yao-2022.md` — Princeton+Google arXiv 2210.03629 (ICLR 2023); interleaved reasoning+acting; foundational for reviewer-agent.
+  - `generative-agents-park-2023.md` — Stanford arXiv 2304.03442 (UIST 2023); memory-reflection-planning; foundational for tradingagents-pipeline.
+  - `llms-get-lost-multi-turn-laban-2025.md` — MS+Salesforce arXiv 2505.06120 (May 2025); 39% multi-turn drop via premature-commitment; completes **three-mode preference-data failure taxonomy** (typicality VS + asymmetric-penalty Critic Bias + premature-commitment).
+  - `massif-capital-4q2025-letter.md` — Massif Capital Q4 2025 Letter to Investors (Jan 16 2026); 50% net 2025 / 15.6% inception annualized; EQX 10%/GMIN exited Oct/Lundin/Enovix detractors.
+  - `ww-issue-173-2026-04-07.md` — Weekly Wizdom #173 "Macro Maneuvers"; INTC/GOOGL/META options recaps; Gold long 4414→4781; ZEC +36% TP1 one-week hit.
+  - `ww-issue-175-2026-04-22.md` — Weekly Wizdom #175 "This Is How We Do It"; ELVR $20→$72; USAR Serra Verde $2.8B acquisition thesis; RDW SpaceX-adjacent.
+  - `ww-issue-176-2026-04-29.md` — Weekly Wizdom #176 "Powell's Final Bow"; ELVR $20→$88; Powell-to-Warsh transition; FSLR/ARRY/SHLS solar picks; CLS $290-300 calls.
+  - `x-docx-polymarket-claude-md-2026-04-23.md` — X.docx dual-topic: Section 1 @AlterEgo_eth Polymarket Gamma API + Section 2 @Mnilax 12-rule CLAUDE.md template (Karpathy → Forrest Chang → Mnilax lineage).
+  - `x2-docx-polymarket-theparuchh-2026.md` — @theparuchh full operational guide; Mac Mini Polymarket weather-bot; 5 discoveries (station coords 5/11 wrong / Open-Meteo `bias_correction=true` / 18-30 hr entry window / 3-model consensus / 3-bin coverage).
+  - `donny-watchlist-2026-04-23.md` — 39-position retail watchlist (Apr 23 2026); IREN +431% / SBSW +325% / ELVR +264% / LAR +252% top performers; 5+ exact ticker matches with WW Issue #175 → derived data, not independent confirmation.
+- **OSINT concepts created** (5): `polymarket-weather-trading-strategy.md`, `claude-md-12-rule-template.md`, `wicked-problems-capital-allocation.md`, `capital-cycle-theory.md`, `real-assets-investing-framework.md`.
+- **OSINT entity stubs created** (7):
+  - **People** (4): `alteregoeth.md`, `theparuchh.md`, `mnilax.md`, `forrest-chang.md` (all pseudonymous X handles + 1 GitHub repo author; identities not established).
+  - **Companies** (2): `massif-capital.md` (1808 Tippah Ave Charlotte NC, RIA real-assets fund), `wizard-of-soho-llc.md` (publisher of Weekly Wizdom).
+  - **Organizations** (1): `weekly-wizdom-newsletter.md` (beehiiv-hosted weekly cross-asset newsletter).
+- **Existing pages updated**: `entities/data-sources/open-meteo.md` — added K41 backlinks + `bias_correction=true` parameter section + station-coordinate discovery note.
+- **Cross-wiki routing**: evaluated all 11 sources against image-gen / seo / 3d-printing / cybersecurity wikis. Verdict: all OSINT-domain only; zero cross-route stubs needed.
+- **Headline insights**:
+  - **Three-mode preference-data failure taxonomy now closed**: typicality (VS K39) + asymmetric-penalty (Critic Bias K40) + premature-commitment (LLMs Get Lost K41). All three data-level, all three survive perfect reward models, all three have training-free mitigations.
+  - **Donny-watchlist-WW alignment**: 5+ exact ticker price matches between WW Issue #175 (Apr 22) and Donny watchlist (Apr 23) indicates derivative relationship — do NOT double-count as independent confirmation.
+  - **CLAUDE.md 12-rule audit candidate**: Cemini CLAUDE.md is 322 lines (over Mnilax's 200-line ceiling); structured audit pass against the 12-rule taxonomy is high-leverage tech-debt.
+  - **Polymarket weather-trading strategy**: end-to-end recipe documented (Gamma API + Open-Meteo + station-coordinate fix); Phase-0 audit required before adoption; reviewer-agent-validation candidate.
+- **Pending verification flags**: Forrest Chang 120k-star repo claim `[NEEDS VERIFICATION 2026-05-13]`; @theparuchh +30-40% Open-Meteo `bias_correction` accuracy claim `[NEEDS VERIFICATION 2026-05-13]`; @Mnilax 41%→3% mistake-rate empirical claim flagged author-asserted-only.
+- **Files touched**: 11 new sources + 5 new concepts + 7 new entity stubs + 1 entity update (open-meteo) + this log + `wiki/index.md`.
+
 ## [2026-05-12] K40 cross-wiki ingest | 6 new sources + 64 stubs + multi-wiki Gemini eval prompt v2
 
 - **Sources ingested** (6 docx/md → moved to librarian):

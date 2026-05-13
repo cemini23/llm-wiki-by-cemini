@@ -13,9 +13,11 @@ related:
   - sources/verbalized-sampling-mode-collapse.md
   - concepts/rlhf-critic-bias.md
   - sources/rlhf-critic-bias-al-zawahreh-2026.md
+  - sources/llms-get-lost-multi-turn-laban-2025.md
+  - concepts/claude-md-12-rule-template.md
 maturity: validated
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-13
 ---
 
 ## Relations
