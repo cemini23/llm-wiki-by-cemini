@@ -303,6 +303,7 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 | `seo-wiki` | `../projects/SEO:GEO B&M Business/wiki/` | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
 | `3d-printing-wiki` | `../projects/3d printing/wiki/` | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |
 | `cybersecurity-wiki` | `../projects/Cybersecurity wiki/wiki/` | Cybersecurity research — offensive security (pentest / red team / bug bounty / exploit dev), defensive operations (SOC / IR / threat hunting), certifications + careers, threat actors. Shared territory: OSINT tradecraft + investigative methodology |
+| `ccc-wiki` | `../projects/Cemini claude code CCC/wiki/` | Cemini Claude Code meta-wiki — workflow, subagents, MCP/conductor, hooks, skills, slash commands, /goal · Ralph · OpenSpec patterns. Shared territory: agent orchestration, conductor/librarian architecture, skill audits |
 
 ### Cross-wiki link syntax
 

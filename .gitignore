@@ -19,6 +19,9 @@ briefs/
 # --- Claude Code per-project state (settings, lock files, scheduled-task state) ----
 .claude/
 
+# --- Playwright MCP session artifacts (console logs, page snapshots) ----------
+.playwright-mcp/
+
 # --- codegraph indices (per-project AST + symbol SQLite, regenerable on init) -----
 .codegraph/
 *.codegraph.sqlite

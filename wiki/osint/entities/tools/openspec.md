@@ -17,6 +17,7 @@ updated: 2026-05-13
 - `@sources/multi-wiki-link-eval-prompt-2026-05-13.md` — origin source (Doc 2, K42), Adopt-tier
 - `@concepts/tool-evaluation-framework.md` — methodology
 - `@concepts/claude-md-12-rule-template.md` — complements 12-rule framework (Rule 10 checkpoint discipline aligns with SDD)
+- `@ccc-wiki/entities/tools/openspec.md` — CCC-side adoption brief for the Cemini Claude Code workflow (laptop-only meta-wiki); defers license + maturity verdict to this page
 
 ## Raw Concept
 

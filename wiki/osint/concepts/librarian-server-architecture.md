@@ -50,6 +50,8 @@ updated: 2026-05-11
 - @sources/llm-wiki.md — Karpathy gist; the foundational pattern source. The librarian server is the **physical realization** of the gist's "the wiki is the codebase" framing — same codebase the LLM maintains, just on its own dedicated host
 - @sources/bytemover-agent-native-memory.md — K13 Promotion #3; CLAUDE.md pattern source. ByteRover's Context Tree (Domain > Topic > Subtopic > Entry) is the organizational pattern behind the wiki's directory structure. The two-tier memory guardrail (filesystem for docs, DB for ticks) applies to the librarian's storage architecture.
 - @sources/alash3al-stash.md — Wave 5A Adopt → deployed 2026-05-02. Episodic memory layer on librarian (v0.2.9, MCP SSE :8080, HTTP :9090). Two-layer memory architecture: kb-server (static wiki RAG) + stash (dynamic episodic memory — episodes, facts, working context, contradictions, causal links, hypotheses, goals, failure records). Postgres 16 + pgvector, Ollama-backed embeddings (nomic-embed-text) + reasoning (qwen2.5:0.5b).
+- @ccc-wiki/entities/mcp-servers/librarian-kb-server.md — CCC-side entity page on the librarian's MCP-serving surface (laptop-only meta-wiki on Cemini's Claude Code workflow; carries the cross-federation routing notes)
+- @ccc-wiki/concepts/cross-wiki-routing.md — CCC-side concept on where new content belongs in the federation; references this page as the serving-layer canon
 
 ## Raw Concept
 

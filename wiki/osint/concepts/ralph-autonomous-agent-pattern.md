@@ -19,6 +19,7 @@ updated: 2026-05-12
 - `@sources/autonomous-agent-meta-prompt-2026-05.md` — sibling "THE FULL PROMPT" meta-template
 - `@entities/tools/awesome-ralph.md` — repo entity
 - `@concepts/tool-evaluation-framework.md` — sibling workflow concept
+- `@ccc-wiki/entities/patterns/ralph-loop.md` — CCC-side adoption brief for the same pattern (laptop-only meta-wiki on Cemini's Claude Code workflow)
 
 ## Raw Concept
 

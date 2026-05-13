@@ -39,6 +39,8 @@ updated: 2026-05-11
 - @sources/gigpo-neurips-2025.md — **Multi-turn credit assignment**: Two-level GRPO for agent trajectory optimization.
 - @sources/meta-router-2509.25535.md — **Evaluation framework**: Causal correction of LLM-as-judge bias for router training.
 - @concepts/verbalized-sampling-llm-diversity.md — **Third orthogonal training-free layer** (K39): VS at generation time complements reviewer-agent (inline call gating) and signals (post-hoc triage). All three sit on the same prompt-and-orchestration substrate.
+- @ccc-wiki/entities/tools/conductor-mcp.md — CCC-side entity page for Cemini's `conductor` MCP server (the cross-wiki query router that implements this orchestration concept at the federation level)
+- @ccc-wiki/concepts/subagent-orchestration.md — CCC-side concept covering when Cemini delegates work to a subagent inside Claude Code, which composes with this orchestration layer
 
 ## Raw Concept
 

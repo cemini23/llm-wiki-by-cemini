@@ -15,6 +15,7 @@ updated: 2026-05-12
 
 - `@concepts/ralph-autonomous-agent-pattern.md` — sibling pattern (loop-based vs this single-shot meta-prompt)
 - `@concepts/tool-evaluation-framework.md` — workflow concept frame
+- `@ccc-wiki/entities/patterns/full-prompt-goal-template.md` — CCC-side adoption page (Cemini's modal session-seeding template)
 
 ## Raw Concept
 
