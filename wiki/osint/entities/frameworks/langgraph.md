@@ -40,6 +40,15 @@ related:
   - sources/git-3-5-pt3.md
   - sources/crypto-7-4-11.md
   - concepts/sae-execution-contract.md
+  - sources/refinerl-self-refinement-rl.md
+  - sources/4-3-link-research.md
+  - sources/4-3-link-re-2.md
+  - sources/matching-accuracy-different-geometry-es-grpo.md
+  - sources/wave-5-1-link-eval-stacks.md
+  - sources/wave-5-1-link-eval-even-more.md
+  - sources/wave-5-1-link-eval-more.md
+  - entities/tools/hermes-lcm.md
+  - entities/frameworks/dspy.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-05-01

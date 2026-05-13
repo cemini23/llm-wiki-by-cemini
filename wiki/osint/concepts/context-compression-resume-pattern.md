@@ -29,6 +29,7 @@ related:
   - sources/3-25-git-research.md
   - sources/git-3-5-pt3.md
 maturity: draft
+hub: true
 created: 2026-04-28
 updated: 2026-05-01
 ---

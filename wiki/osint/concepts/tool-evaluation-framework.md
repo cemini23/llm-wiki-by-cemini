@@ -10,6 +10,7 @@ related:
   - concepts/rlhf-critic-bias.md
   - sources/rlhf-critic-bias-al-zawahreh-2026.md
 maturity: validated
+hub: true
 created: 2026-05-10
 updated: 2026-05-11
 ---

@@ -27,6 +27,7 @@ related:
   - concepts/rlhf-critic-bias.md
   - sources/rlhf-critic-bias-al-zawahreh-2026.md
 maturity: draft
+hub: true
 created: 2026-05-03
 updated: 2026-05-12
 ---

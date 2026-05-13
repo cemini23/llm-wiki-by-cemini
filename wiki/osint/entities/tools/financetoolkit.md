@@ -7,6 +7,11 @@ related:
   - sources/links-2-5-4-tool-eval.md
   - entities/tools/riskfolio-lib.md
   - entities/infrastructure/yfinance.md
+  - concepts/prediction-market-historical-analysis.md
+  - sources/jpm-portfolio-impact-investment-saltuk-2012.md
+  - entities/tools/hftbacktest.md
+  - entities/tools/financedatabase.md
+  - entities/tools/medskillaudit.md
 maturity: draft
 created: 2026-05-04
 updated: 2026-05-04

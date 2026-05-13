@@ -11,6 +11,7 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/cross-channel-agent-gateway.md
 maturity: draft
+hub: true
 created: 2026-05-03
 updated: 2026-05-11
 ---
@@ -184,7 +185,7 @@ Cemini's `/opt/cemini/.env` declares **66 environment variables** as of 2026-05-
 - `COINBASE_API_KEY`, `COINBASE_API_SECRET` — crypto. Get at cloud.coinbase.com.
 - `KALSHI_API_KEY`, `KALSHI_EMAIL`, `KALSHI_PASSWORD`, `KALSHI_SENDER_ID`, `KALSHI_TARGET_ID` — US prediction markets (US deployment only). Get at kalshi.com after KYC.
 - `OANDA_API_KEY`, `OANDA_ACCOUNT_ID`, `OANDA_PRACTICE` — forex. Get at oanda.com.
-- `POLYGON_API_KEY` — equity market data. polygon.io. Note: paid tier required for same-day intraday; falls back to yfinance per @retracted_dri.md → wait, see Polygon doctrine memory.
+- `POLYGON_API_KEY` — equity market data. polygon.io. Note: paid tier required for same-day intraday; falls back to yfinance per Polygon doctrine memory.
 - `RH_USERNAME`, `RH_PASSWORD` — Robinhood (use a dedicated account; 2FA-incompatible automation).
 - *(Polymarket uses wallet-based authentication; no API key in `.env`. Wallet config lives elsewhere in the prod tree.)*
 

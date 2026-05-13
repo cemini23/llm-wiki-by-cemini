@@ -7,6 +7,10 @@ related:
   - sources/x-kimi-k2.6-hermes-routing-playbook-2026-05.md
   - concepts/cemini-license-posture.md
   - concepts/tool-evaluation-framework.md
+  - concepts/reasoning-models.md
+  - concepts/multi-agent-trading.md
+  - entities/models/kimi-k2-6.md
+  - entities/models/opus-4-7.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-05-12

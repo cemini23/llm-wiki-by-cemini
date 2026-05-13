@@ -13,6 +13,7 @@ related:
   - entities/tools/financetoolkit.md
   - entities/tools/klaassen-magnus-elo.md
 maturity: draft
+hub: true
 created: 2026-05-05
 updated: 2026-05-05
 ---

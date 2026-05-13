@@ -8,6 +8,7 @@ related:
   - concepts/market-microstructure.md
   - concepts/cross-venue-arbitrage-pattern.md
   - entities/platforms/polymarket.md
+  - concepts/polymarket-market-making-architectures.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-09

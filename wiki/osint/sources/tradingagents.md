@@ -4,15 +4,18 @@ type: source
 tags: [multi-agent-systems, LLM-trading, financial-ai, agent-architecture, debate-driven]
 keywords: [TradingAgents, multi-agent trading, LLM finance, agent debate, risk management, bull-bear, structured communication, ReAct]
 clusters: [llm-agents]
-related: [sources/3-25-git-research.md]
+related:
+  - sources/3-25-git-research.md
+  - concepts/multi-agent-trading.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-13
 ---
 
 ## Relations
-- Concept gap: no `@concepts/multi-agent-trading.md` page exists (stub needed)
+- `@sources/3-25-git-research.md` — sibling research source
+- `@concepts/multi-agent-trading.md` — concept hub
 
 ## Raw Concept
 - Original title: TradingAgents: Multi-Agents LLM Financial Trading Framework

@@ -45,6 +45,12 @@ related:
   - sources/git-3-5-pt3.md
   - entities/infrastructure/cemini-stack.md
   - concepts/cemini-deployment.md
+  - concepts/mitre-atlas-taxonomy.md
+  - concepts/deepseek-models.md
+  - sources/scaling-moe-inference-expert-activation-2026.md
+  - entities/tools/git-rewind.md
+  - entities/tools/guidance-ai.md
+  - entities/tools/deepteam.md
 maturity: validated
 created: 2026-04-24
 updated: 2026-05-02

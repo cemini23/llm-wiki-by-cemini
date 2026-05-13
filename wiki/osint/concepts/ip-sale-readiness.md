@@ -103,6 +103,7 @@ related:
   - entities/tools/loki-mode.md
   - sources/5-6-links-eval-batch.md
 maturity: validated
+hub: true
 created: 2026-04-23
 updated: 2026-05-11
 ---

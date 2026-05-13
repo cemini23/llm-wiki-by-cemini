@@ -30,6 +30,7 @@ related:
   - entities/tools/sift-kg.md
   - entities/tools/swarmvault.md
 maturity: validated
+hub: true
 created: 2026-04-28
 updated: 2026-05-11
 ---

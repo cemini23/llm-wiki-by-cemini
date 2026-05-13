@@ -32,6 +32,8 @@ related:
   - concepts/polymarket-microstructure-findings.md
   - sources/polymarket-microstructure-anatomy-2604.24366.md
   - sources/polymarket-nba-arbitrage-2605.00864.md
+  - concepts/polymarket-bot-architecture.md
+  - sources/x-polymarket-bot-playbook-punisher-2026-05.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-05-11

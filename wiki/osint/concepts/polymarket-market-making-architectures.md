@@ -15,6 +15,7 @@ related:
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-historical-analysis.md
 maturity: draft
+hub: true
 created: 2026-05-05
 updated: 2026-05-05
 ---

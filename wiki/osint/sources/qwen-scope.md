@@ -6,15 +6,19 @@ keywords: [sparse autoencoders, SAE, mechanistic interpretability, Qwen3, Qwen3.
 clusters: [llm-agents, audit-security]
 related:
   - concepts/emergent-misalignment.md
+  - concepts/sparse-autoencoders.md
+  - concepts/mechanistic-interpretability.md
+  - concepts/ai-safety.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-13
 ---
 
 ## Relations
 - `@concepts/emergent-misalignment.md` — SAE-based steering and safety post-training directly relevant to alignment/EM mitigation
-- Concept gap: no `@concepts/sparse-autoencoders.md` or `@concepts/mechanistic-interpretability.md` page exists yet (stub needed)
+- `@concepts/sparse-autoencoders.md` — SAE method hub
+- `@concepts/mechanistic-interpretability.md` — parent field
 
 ## Raw Concept
 - Original title: Qwen-Scope: Turning Sparse Features into Development Tools for Large Language Models

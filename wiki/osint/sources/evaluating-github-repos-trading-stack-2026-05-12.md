@@ -9,6 +9,26 @@ related:
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
   - concepts/ralph-autonomous-agent-pattern.md
+  - entities/tools/pastebar-app.md
+  - entities/tools/hunk.md
+  - entities/tools/ai-marketing-skills.md
+  - entities/tools/claude-code-ultimate-guide.md
+  - entities/tools/autots.md
+  - entities/tools/trellis.md
+  - entities/tools/veloxdb.md
+  - entities/tools/taskexplorer.md
+  - entities/tools/how-to-train-your-gpt.md
+  - entities/tools/website-downloader.md
+  - entities/tools/claude-code-projects-index.md
+  - entities/tools/awesome-ralph.md
+  - entities/tools/jetbrains-air.md
+  - entities/tools/awesome-ai-extensions.md
+  - entities/tools/voicemode.md
+  - entities/tools/vizpilot-ai.md
+  - entities/tools/awesome-gpt-super-prompting.md
+  - entities/tools/codegraph-rust.md
+  - entities/tools/whisper-money.md
+  - entities/tools/supertonic.md
 maturity: validated
 created: 2026-05-12
 updated: 2026-05-12

@@ -106,7 +106,7 @@ def parse_frontmatter(text):
         else:
             out["related"] = []
     # scalars
-    for key in ("type", "maturity", "title", "created", "updated", "read_status"):
+    for key in ("type", "maturity", "title", "created", "updated", "read_status", "hub"):
         m2 = SCALAR_RE(key).search(fm_text)
         if m2:
             out[key] = m2.group(1).strip()
@@ -182,9 +182,18 @@ for src, fm in pages.items():
 orphans = sorted(p for p in all_paths if p not in inbound)
 
 # bidirectional gaps: src→tgt without tgt→src
+# Hub pages (frontmatter `hub: true`) are exempt: many spokes legitimately
+# tag the hub without the hub having to enumerate every spoke (would explode
+# to 100+ entry related: lists).
+def _is_hub(page_path):
+    fm = pages.get(page_path) or {}
+    return str(fm.get("hub", "")).lower() == "true"
+
 gaps = []
 for src, tgts in outbound.items():
     for tgt in tgts:
+        if _is_hub(tgt):
+            continue
         if src not in outbound.get(tgt, set()):
             gaps.append((src, tgt))
 gaps.sort()
@@ -195,14 +204,39 @@ gaps.sort()
 # Capture the @ so cross-wiki paths retain the alias prefix for resolution.
 AT_PATH_RE = re.compile(r"(@[a-z0-9_./-]+\.md)")
 
+
+def is_inside_backticks(body, match_start, match_end):
+    """True if [match_start, match_end) sits inside a `...` span on the same line."""
+    line_start = body.rfind("\n", 0, match_start) + 1
+    line_end = body.find("\n", match_end)
+    if line_end == -1:
+        line_end = len(body)
+    line = body[line_start:line_end]
+    rel_start = match_start - line_start
+    # Count unescaped backticks before the match on this line; odd → inside a span
+    return line.count("`", 0, rel_start) % 2 == 1
+
+
+# Paths that are intentionally outside wiki/ (briefs/, ephemera/, etc.) — skip.
+BODY_MENTION_SKIP_PREFIXES = ("briefs/", "hot.md", "research to be indexed/")
+
 missing_mentions = defaultdict(set)  # mentioned_path -> {source, ...}
 for src, fm in pages.items():
     body = fm.get("_body", "")
     if not body:
         continue
     for m in AT_PATH_RE.finditer(body):
+        if is_inside_backticks(body, m.start(), m.end()):
+            continue
         mentioned_raw = normalize_path(m.group(1))   # e.g. @seo-wiki/concepts/foo.md
         mentioned = mentioned_raw.lstrip("@")        # e.g. seo-wiki/concepts/foo.md
+        # Strip a stray "wiki/" prefix that sometimes appears in body text
+        # (lint already normalizes leading "wiki/" via normalize_path on local paths,
+        # but the @-prefixed forms here bypass that — handle here).
+        if mentioned.startswith("wiki/"):
+            mentioned = mentioned[len("wiki/"):]
+        if mentioned.startswith(BODY_MENTION_SKIP_PREFIXES):
+            continue
         if mentioned not in all_paths and mentioned not in ("index.md", "log.md", "dashboard.md"):
             xw = is_cross_wiki_path_exists(mentioned_raw)
             if not xw:

@@ -66,6 +66,7 @@ related:
   - concepts/parlay-market-making.md
   - concepts/agent-authorization-stack.md
 maturity: draft
+hub: true
 created: 2026-04-27
 updated: 2026-05-02
 ---

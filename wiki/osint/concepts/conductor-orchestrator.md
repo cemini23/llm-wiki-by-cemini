@@ -21,6 +21,7 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - concepts/verbalized-sampling-llm-diversity.md
 maturity: validated
+hub: true
 created: 2026-05-01
 updated: 2026-05-11
 ---

@@ -8,6 +8,23 @@ related:
   - sources/multi-wiki-gemini-eval-prompt-2026-05-12.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
+  - entities/tools/openant.md
+  - entities/tools/karma.md
+  - entities/tools/airecon.md
+  - entities/tools/multi-model-redteam.md
+  - entities/tools/openalternative.md
+  - entities/tools/redactdesk.md
+  - entities/tools/virtual-memory-blog.md
+  - entities/tools/aisoc.md
+  - entities/tools/bug-bounty-agents.md
+  - entities/tools/idassist.md
+  - entities/tools/firecracker-blog.md
+  - entities/tools/sim.md
+  - entities/tools/awesome-design-md.md
+  - entities/tools/anthropic-harness-design.md
+  - entities/tools/hermes-war-room.md
+  - entities/tools/codenomad.md
+  - entities/tools/accomplish.md
 maturity: validated
 created: 2026-05-12
 updated: 2026-05-12

@@ -6,14 +6,18 @@ keywords: [ReaLM-Retrieve, retrieval-augmented generation, DeepSeek-R1, reasonin
 clusters: [llm-agents]
 related:
   - concepts/llm-agent-systems.md
+  - concepts/retrieval-augmented-generation.md
+  - concepts/reasoning-models.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30
-updated: 2026-05-11
+updated: 2026-05-13
 ---
 
 ## Relations
-- Concept gap: no `@concepts/retrieval-augmented-generation.md` or `@concepts/reasoning-models.md` page exists (stubs needed)
+- `@concepts/llm-agent-systems.md` — parent hub (agent systems including RAG flows)
+- `@concepts/retrieval-augmented-generation.md` — RAG concept hub
+- `@concepts/reasoning-models.md` — reasoning-model concept hub
 
 ## Raw Concept
 - Original title: When to Retrieve During Reasoning: Adaptive Retrieval for Large Reasoning Models

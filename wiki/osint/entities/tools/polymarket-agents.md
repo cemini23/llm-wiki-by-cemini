@@ -10,6 +10,7 @@ related:
   - entities/platforms/polymarket.md
   - entities/tools/polymarket-python-order-utils.md
   - entities/tools/polymarket-trackers.md
+  - concepts/polymarket-market-making-architectures.md
 maturity: draft
 created: 2026-05-05
 updated: 2026-05-11

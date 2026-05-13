@@ -7,14 +7,15 @@ related:
   - sources/conditional-misalignment.md
   - sources/3-26-b.md
   - sources/qwen-scope.md
+  - concepts/ai-safety.md
 maturity: validated
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-13
 ---
 
 ## Relations
 - `@sources/conditional-misalignment.md` — primary source: Dubiński et al. (2026) on conditional misalignment
-- No other wiki pages currently reference this concept (gap — `@concepts/ai-safety.md` stub needed)
+- `@concepts/ai-safety.md` — parent hub (AI-safety umbrella)
 
 ## Raw Concept
 

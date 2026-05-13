@@ -19,6 +19,12 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/mcp-tool-marketplace.md
   - sources/3-26-link-re-3.md
+  - concepts/curator-skills.md
+  - concepts/autoresearch-loop-pattern.md
+  - sources/xskill-2603-12056.md
+  - sources/gemini-sci-research-2602-03837.md
+  - entities/tools/claude-osint.md
+  - entities/tools/atlas-gic-autoresearch.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30
