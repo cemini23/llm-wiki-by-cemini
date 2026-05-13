@@ -34,8 +34,28 @@ Single Explore subagent batch + parent spot-check verification. Verdicts:
 
 1. ~~5 K39 Phase-0 RED-FLAG audits~~ — **CLOSED 2026-05-12**
 2. ~~claude-mem Phase 2 verification~~ — **PASS 2026-05-12 (with 2 caveats; see below)**
-3. **K39 Steal-from extractions** (2 items) — nvidia-openshell policy schemas + gabagool vs cloddsbot Polymarket arb cross-reference
+3. ~~K39 Steal-from extractions~~ — **CLOSED 2026-05-12** (1 GO openshell + 1 NO-GO gabagool; see below)
 4. **Step 82 Redis/EMS blockers** — prod-side work, no laptop action
+
+### K39 Steal-from batch (2 audits, 2026-05-12)
+
+- **NVIDIA/OpenShell** (5,852★ Apache-2.0 NVIDIA-org-owned) — **GO 2026-05-12**. Policy schemas (filesystem read_only/read_write + L4/L7 network endpoints+binaries+method-allowlists + Landlock compatibility) are standalone-portable to FastMCP Python hardening. Extract `crates/openshell-policy/src/lib.rs` (Serde types → Pydantic), `proto/sandbox.proto`, 4 example YAML fixtures. `policy-advisor` example = closest match for Claude FastMCP container. No GPU/CUDA/Docker-socket coupling. **First non-mischaracterized, non-rejected K39 audit verdict**. Extraction queued for separate brief gated on EMS/Redis Step 82 prod unblock.
+- **gabagool** (`strongca22-cpu/gabagool`, 180★, README MIT claim) — **NO-GO 2026-05-12**. Two independent blockers: (1) `gh api license.spdx_id` = null = **8th no-LICENSE occurrence**; (2) risk/arb math subset re-implementation of K38-confirmed CloddsBot. Specific overlap: `src/risk_manager.py:110-165` (static thresholds) vs CloddsBot `src/opportunity/risk.ts:374-410` (5-factor weighted decomposition + Kalshi-aware `PLATFORM_RISK_SCORES`). Profit-margin formula identical. Kalshi adapter extracts from CloddsBot, skips gabagool.
+
+### Aggregates after K39 closure
+
+- **K39 batch fully closed**: 17-URL ingest → 7 Phase-0 audits total (5 RED-FLAG + 2 Steal-from). Net: 1 GO (OpenShell), 1 CONDITIONAL-GO (kepano-obsidian-skills), 4 NO-GO (deepseek-tui + obscura + meridian + gabagool), 1 REJECT (mac-code).
+- **No-LICENSE-file pattern**: **8 occurrences** total (K36 finance-skills + K38 Readme.skill + K38 AI-Trader + K39 virattt 58.6k★ + K39 19PINE-AI + K39 meridian + K39 mac-code + K39 gabagool). K39 alone surfaces 5 of 8.
+- **New observation codified in `wiki/concepts/cemini-license-posture.md`**: Steal-from intent ≠ license-bypass. Pattern extraction requires clean upstream LICENSE for IP-sale-readiness; the no-LICENSE blocker applies symmetrically to Adopt and Steal-from.
+
+### Files touched 2026-05-12 (K39 Steal-from closure commit pending)
+
+- `wiki/entities/tools/nvidia-openshell.md` — frontmatter GO + Phase-0 findings body + extraction plan + `maturity: draft → validated`
+- `wiki/entities/tools/gabagool.md` — frontmatter NO-GO + cross-ref-vs-CloddsBot table body + `maturity: draft → validated`
+- `wiki/concepts/cemini-license-posture.md` — mode #1 count 7+ → 8+ + new K39 Steal-from addendum snippet
+- `wiki/log.md` — new entry on top
+- `ROADMAP.md` — K39 Steal-from rows updated with verdict + extraction path
+- `hot.md` — this file
 
 ### claude-mem Phase 2 verdict (2026-05-12)
 
