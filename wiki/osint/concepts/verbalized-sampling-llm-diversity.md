@@ -13,6 +13,7 @@ related:
   - sources/rlhf-critic-bias-al-zawahreh-2026.md
   - sources/llms-get-lost-multi-turn-laban-2025.md
   - concepts/llms-get-lost-mitigation-audit.md
+  - entities/tools/fuzzyai.md
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-13

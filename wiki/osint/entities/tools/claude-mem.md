@@ -5,9 +5,11 @@ tags: [tool, memory, claude-code, plugin, context, workflow, adopted]
 keywords: [claude-mem, persistent memory, context persistence, Claude Code plugin, ChromaDB, Bun]
 related:
   - sources/evaluating-links-trading-wiki-stacks.md
+  - sources/evaluating-urls-cemini-project-2026-05-13.md
   - concepts/tool-evaluation-framework.md
   - sources/llms-get-lost-multi-turn-laban-2025.md
   - concepts/llms-get-lost-mitigation-audit.md
+  - entities/tools/claude-obsidian.md
 maturity: validated
 created: 2026-05-10
 updated: 2026-05-13
@@ -82,3 +84,7 @@ State at verification:
 **Anomaly 2 — version drift**: worker daemon v13.0.1; `npx claude-mem --version` resolves to 13.2.0 (newer than installed worker because worker started 2026-05-11T02:24:49 before v13.2.0 release). Resolution path: stop worker + `npx claude-mem install --upgrade` + restart. Not done in-session because worker restart could disrupt live SDK session 15. Defer to next clean session boundary.
 
 [Source: Evaluating Links for Trading and Wiki Stacks.docx, URL 18]
+
+### K42 cross-reference (Doc 1, 2026-05-13)
+
+`@sources/evaluating-urls-cemini-project-2026-05-13.md` (Doc 1 K42) surfaced `@entities/tools/claude-obsidian.md` as a parallel-implementation Adopt candidate. Scope distinction confirmed: claude-mem operates at the *session-memory* layer (Bun worker observes Claude Code activity → ChromaDB), while claude-obsidian operates at the *vault-side reasoning* layer (LLM agent reasons over user's markdown notes). Different use cases — parallel adoption is acceptable. Phase-0 audit of claude-obsidian still gates Adopt.

@@ -5,12 +5,13 @@ tags: [tool, rag, knowledge-base, mit, adopt-tier, librarian-candidate, vectorle
 keywords: [pageindex, vectorless-rag, reasoning-based-retrieval, kb-server-alternative, librarian-supplement]
 related:
   - sources/5-5-links-tool-eval.md
+  - sources/evaluating-urls-cemini-project-2026-05-13.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/librarian-server-architecture.md
   - entities/tools/swarmvault.md
 maturity: validated
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-13
 ---
 
 ## Relations
@@ -117,3 +118,7 @@ If a future re-evaluation triggers:
 ## Dead Ends
 
 *(none yet — Phase 0 audit pending.)*
+
+### K42 re-surface (Doc 1, 2026-05-13)
+
+`@sources/evaluating-urls-cemini-project-2026-05-13.md` (Doc 1 K42) re-evaluated PageIndex and gave an **Adopt** verdict citing "98.7% FinanceBench." Important clarification: that Adopt verdict targets **VectifyAI's Mafin 2.5 *product*** on long-form quant filings, not the OSS library's wiki-fit. The OSS-library-for-wiki use case remains NO-GO per this audit; the long-form-quant-filings use case is **exactly the "re-enters consideration" trigger this page already documents** (see "When PageIndex re-enters consideration" section above). No contradiction. If Cemini begins ingesting SEC EDGAR 10-K filings or similar long-form corpora as a separate retrieval tier, re-run Phase 0+ against that use case.

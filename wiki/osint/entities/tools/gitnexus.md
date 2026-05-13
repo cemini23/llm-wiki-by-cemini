@@ -5,11 +5,13 @@ tags: [tool, codebase-search, mcp-server, polyform-noncommercial, evaluate-licen
 keywords: [gitnexus, abhigyanpatwari, polyform-nc-1-0-0, ladybugdb, transformers-js, wasm-webgpu, bm25-rrf-semantic-search, mcp-server-codebase]
 related:
   - sources/5-6-links-eval-batch.md
+  - sources/tool-evaluation-wiki-fit-2026-05-13.md
   - concepts/cemini-license-posture.md
+  - concepts/paradigm-vs-license-inverse-correlation.md
   - entities/tools/codegraph.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-13
 ---
 
 ## Relations
@@ -93,3 +95,7 @@ Not adopted. Not under active evaluation. Watch upstream for license clarificati
 ### Dual-licensing trap
 
 > "The primary risk involves the dual-licensing trap inherent in the project's business model. The repository explicitly notes the availability of an Enterprise offering for fully managed SaaS or self-hosted commercial deployments. Attempting to use the Open Source Software (OSS) version for commercial development without securing the proper enterprise license directly violates the PolyForm terms and places the entire intellectual property portfolio in legal jeopardy." [Source: 5_6 links.docx URL 9]
+
+## K42 cross-reference (Doc 3, 2026-05-13)
+
+`@sources/tool-evaluation-wiki-fit-2026-05-13.md` (Doc 3 K42) re-confirms Reject verdict and surfaces GitNexus as the PolyForm-Noncommercial exemplar of the paradigm-vs-license inverse correlation pattern documented in `@concepts/paradigm-vs-license-inverse-correlation.md`. 12-phase DAG WASM static analysis architecture is exactly the "novel paradigm + poison license" cluster that justifies license screening before architectural deep-read.

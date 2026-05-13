@@ -16,6 +16,8 @@ related:
   - sources/llms-get-lost-multi-turn-laban-2025.md
   - concepts/llms-get-lost-mitigation-audit.md
   - concepts/claude-md-12-rule-template.md
+  - entities/tools/agent-lightning.md
+  - entities/tools/praisonai.md
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-13

@@ -6,6 +6,9 @@ keywords: [gemini deep research, evaluation prompt, multi-wiki routing, false NO
 related:
   - sources/evaluating-github-repos-trading-stack-2026-05-12.md
   - sources/evaluating-project-links-systems-2-2026-05-12.md
+  - sources/evaluating-urls-cemini-project-2026-05-13.md
+  - sources/multi-wiki-link-eval-prompt-2026-05-13.md
+  - sources/tool-evaluation-wiki-fit-2026-05-13.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
   - entities/tools/openant.md

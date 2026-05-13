@@ -7,6 +7,7 @@ related:
   - sources/link-evaluation-brief-trading-stack.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
+  - entities/tools/agent-skills.md
 maturity: draft
 created: 2026-05-11
 updated: 2026-05-11

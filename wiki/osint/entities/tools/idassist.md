@@ -6,10 +6,11 @@ keywords: [idassist, ida pro plugin, llm-driven binary re, reverse engineering, 
 related:
   - sources/evaluating-project-links-systems-2-2026-05-12.md
   - sources/multi-wiki-gemini-eval-prompt-2026-05-12.md
+  - sources/evaluating-urls-cemini-project-2026-05-13.md
   - "@cybersecurity-wiki/entities/tools/idassist.md"
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-13
 gemini_eval_doc2_url: 12
 phase_0_verdict: REJECT (OSINT/Cemini) 2026-05-12 / cybersec-primary
 ---
@@ -28,3 +29,7 @@ phase_0_verdict: REJECT (OSINT/Cemini) 2026-05-12 / cybersec-primary
 ## Narrative
 
 IDA Pro plugin for LLM-driven binary reverse engineering. Clean MIT license. No OSINT/Cemini surface fit. Primary home is cybersec wiki — binary RE / malware analysis pipelines.
+
+### K42 cross-reference (Doc 1, 2026-05-13)
+
+`@sources/evaluating-urls-cemini-project-2026-05-13.md` (Doc 1 K42) re-surfaced IDAssist in v2 prompt evaluation. Verdict unchanged — REJECT for OSINT/Cemini, cross-routed to cybersec wiki where the binary RE use case is on-charter.

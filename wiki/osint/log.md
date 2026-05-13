@@ -1,5 +1,55 @@
 # Wiki Log
 
+## [2026-05-13] K42 ingest | 3 multi-wiki link-eval docs (104 URLs) + 29 entity stubs + 2 concepts + 2 cross-wiki briefs
+
+- **Sources ingested** (3 docx → moved to librarian):
+  - `evaluating-urls-cemini-project-2026-05-13.md` — Gemini DR Doc 1 (33 URLs, v2 prompt). Tier rollup: 9 Adopt + 6 Steal-from + 4 Reference + 9 Reject + 5 unavailable.
+  - `multi-wiki-link-eval-prompt-2026-05-13.md` — Gemini DR Doc 2 (37 URLs, earlier prompt). Tier rollup: 5 Adopt + 4 Steal-from + 3 Reference + 8 Reject + 14 unavailable.
+  - `tool-evaluation-wiki-fit-2026-05-13.md` — Gemini DR Doc 3 (34 URLs, v2 May-2026 cohort). Tier rollup: 3 Adopt + 4 Steal-from + 1 Reference + 12 Reject (9 threat-intel SaaS cluster) + 14 unavailable. Primary-fit Cybersec 10 (heaviest).
+- **OSINT concepts created** (2):
+  - `paradigm-vs-license-inverse-correlation.md` — codifies cross-batch pattern: novel architectures cluster in poison-licensed repos (BSL 1.1 / PolyForm-Noncommercial / AGPL-3.0 / GPL-3.0). 5 adoption implications. Mirage (Apache-2.0) + PraisonAI (MIT) are the exceptions.
+  - `threat-intel-saas-cluster.md` — captures Doc 3's batch-Reject decision over 9 commercial CTI/EASM platforms (Shodan, FullHunt, ONYPHE, SOCRadar, Pulsedive, IntelX, Hunter.io, PublicWWW, Coalitioninc). Methodology references retained for cybersec-wiki; codebase integration categorically forbidden.
+- **OSINT entity stubs created** (29 under `entities/tools/`):
+  - **Doc 1 (11)**: whale, claude-obsidian, open-seo, fuzzyai, pentest-ai-agents, cua, agent-skills, autoharness, cypht, awesome-codex-subagents, dulus.
+  - **Doc 2 (11)**: marketingskills, n8n-workflows, tabularis, openspec, syncthing, agent-lightning, yellowkey, greenplasma, witr, awesome-deep-research, home-assistant-core.
+  - **Doc 3 (7)**: pydns-scanner, claude-code-telegram, markra, praisonai, mirage, openhuman, frona.
+- **Existing entity pages updated** (4 with K42 backlinks):
+  - `entities/tools/pageindex.md` — Doc 1 Adopt verdict targets VectifyAI Mafin 2.5 *product* on long-form quant filings, not OSS wiki-fit. No contradiction with existing 2026-05-05 NO-GO (wiki layer). Exactly the "re-enters consideration" trigger the existing audit anticipated.
+  - `entities/tools/claude-mem.md` — claude-obsidian (Doc 1 Adopt) flagged as parallel-implementation candidate. Scope distinction: claude-mem = session memory layer; claude-obsidian = vault-side reasoning layer. Phase-0 audit gates parallel adoption.
+  - `entities/tools/gitnexus.md` — Doc 3 K42 confirmation as PolyForm-Noncommercial exemplar in `@concepts/paradigm-vs-license-inverse-correlation.md`.
+  - `entities/tools/idassist.md` — Doc 1 K42 re-surface; REJECT for OSINT/Cemini unchanged, cybersec-primary cross-route preserved from K40.
+- **Cross-wiki briefs created** (2 via `scripts/cross_wiki_route.py --type brief`):
+  - `@cybersecurity-wiki/briefs/2026-05-13_k42-cybersec-routing.md` — 15 items: 14 individual tools (FuzzyAI, pentest-ai-agents, cua, YellowKey, GreenPlasma, witr, autoharness, cypht, awesome-codex-subagents, PYDNS-Scanner, claude-code-telegram, frona, plus IDAssist already-routed) + threat-intel SaaS cluster (9 platforms). Recommends 14 entity stubs + 1 batch-stub on cybersec side.
+  - `@seo-wiki/briefs/2026-05-13_k42-seo-routing.md` — 3 items: open-seo (primary SEO Adopt), marketingskills, n8n-workflows. Recommends 3 entity stubs on SEO side.
+- **Tier headlines** (K42 Adopt-tier candidates with Phase-0 audits gating commitment):
+  - **PraisonAI** (Doc 3, MIT) — Doom-Loop Detection + Shadow Git Checkpoints + MCP-native + multi-DB. Direct **LangGraph-replacement candidate for Cemini Conductor**. 6-question Phase-0 audit logged in entity page.
+  - **Mirage** (Doc 3, Apache-2.0) — Unified VFS mounts MongoDB/Redis/S3/GDrive as POSIX paths. Cemini-financial direct utility: `/opt/cemini/vfs/` mount for Redis Streams + Postgres backtesting tables.
+  - **OpenSpec** (Doc 2, MIT, 47.6k stars) — Spec-Driven Development methodology framework.
+  - **n8n-workflows** (Doc 2, MIT) — 4,343-script workflow library + Trusera AI-BOM scanner.
+  - **tabularis** (Doc 2, Apache-2.0) — MCP-native Postgres client.
+  - **syncthing** (Doc 2, MPL-2.0, 84k stars) — proven peer-to-peer file sync.
+  - **agent-skills** (Doc 1) — curated Claude Code skills library.
+  - **claude-obsidian** (Doc 1) — vault-side reasoning over markdown notes (parallel-impl vs claude-mem).
+  - **FuzzyAI** (Doc 1, CyberArk) — adversarial prompt fuzzer; intersects K39 Verbalized Sampling Vector 5.
+  - **cua** (Doc 1) — sandboxed Computer Use Agent.
+  - **whale** (Doc 1) — agentic harness.
+  - **PYDNS-Scanner** (Doc 3, MIT) — async DNS recon TUI (cybersec primary).
+- **Steal-from headlines** (methodology extraction without codebase integration):
+  - **TokenJuice** (openhuman GPL-3.0) — 80% HTML→Markdown compression heuristics.
+  - **frona** (BSL 1.1) — policy-driven syscall filtering pattern; BSL converts to Apache-2.0 Feb 2029 (calendar item).
+  - **GitNexus** (PolyForm-Noncommercial) — 12-phase DAG WASM static analysis pattern reference.
+  - **Markra** (AGPL-3.0) — Tauri local-first WYSIWYG with native Ollama; quarantined adoption (Workflow only, never `/opt/cemini`).
+- **Critical-flag verifications scheduled** (`[NEEDS VERIFICATION 2026-05-13]`):
+  - PageIndex 98.7% FinanceBench claim refers to VectifyAI product, not OSS lib — already resolved 2026-05-05 audit; Doc 1 re-surface is anticipated trigger.
+  - claude-obsidian parallel-impl risk vs claude-mem — Phase-0 audit gates adoption.
+  - OpenHuman TokenJuice chunking parameters vs Cemini CLAUDE_MEM_SEMANTIC_INJECT_LIMIT=5.
+  - Mirage VFS namespace compatibility with hardened Linux kernel profiles for trading pods.
+- **Headline patterns codified**:
+  - **Paradigm-vs-license inverse correlation** — Doc 3 cleanest evidence: GitNexus PolyForm + Frona BSL + OpenHuman GPL + Markra AGPL all novel; Mirage Apache + PraisonAI MIT are the meaningful exceptions. Implication for `@concepts/tool-evaluation-framework.md`: weight license screening earlier in pipeline when architectural-novelty score is high.
+  - **Threat-intel SaaS batch-rejection** — Doc 3's 9-platform cluster justifies batch-Reject rather than per-tool evaluation. Codify triage hierarchy: closed-source SaaS → batch Reject; BSL → individual eval (conversion calendar); AGPL → individual eval (relicensing potential); MIT/Apache → individual eval (architectural fit).
+- **Files touched**: 3 new sources + 29 new OSINT entity stubs + 2 new concepts + 4 existing entity updates + 2 cross-wiki briefs (cybersec + seo) + this log + `wiki/index.md` + `ROADMAP.md`.
+- **Pending**: 4th file `1)@AlterEgo_eth.docx` remains in `research to be indexed/` — out-of-scope for K42 "3 new links docs" directive; flag for user decision on separate ingest.
+
 ## [2026-05-13] K41 ingest | 11 sources + 5 concepts + 7 entity stubs
 
 - **Sources ingested** (11; raw → librarian):

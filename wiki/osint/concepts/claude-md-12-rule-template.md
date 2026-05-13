@@ -10,6 +10,7 @@ related:
   - sources/llms-get-lost-multi-turn-laban-2025.md
   - concepts/llms-get-lost-mitigation-audit.md
   - concepts/agent-trajectory-triage-signals.md
+  - entities/tools/openspec.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-13
