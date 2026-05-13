@@ -14,9 +14,9 @@
 
 ## 3. Cost-ceiling telemetry
 
-- [ ] 3.1 Create `conductor/reviewer/cost_telemetry.py` with a `record(tool_name, bucket, input_tokens, output_tokens)` function writing structured log entries (async/buffered)
-- [ ] 3.2 Implement the daily aggregator that produces per-tool roll-ups of review count and total tokens
-- [ ] 3.3 Apply the configured DeepSeek-R1 per-token price to compute estimated monthly spend; emit as a dashboard-ready JSON artifact
+- [x] 3.1 Create `conductor/reviewer/cost_telemetry.py` with a `record(tool_name, bucket, input_tokens, output_tokens)` function writing structured log entries (async/buffered)  *(landed 2026-05-13; `TelemetryWriter` class — buffered NDJSON, `threading.Lock`-guarded, context-manager protocol, auto-flush at `buffer_size` threshold; default path `~/.cemini/reviewer_telemetry.ndjson`; module-level `record()` one-shot convenience wrapper; 11 tests pass incl. NDJSON compact-format invariant, append-no-overwrite, parent-dir creation, buffer-threshold semantics)*
+- [x] 3.2 Implement the daily aggregator that produces per-tool roll-ups of review count and total tokens  *(landed 2026-05-13; `cost_aggregator.aggregate(log_path) -> Dict` — pure NDJSON reader; sorted deterministic per-tool dict for diff-friendly output; period bounds + workspace-wide total; malformed-JSON / missing-tool-field raise `ValueError` with line number; missing log file yields zero report — fresh deployments aren't errors; 14 tests pass)*
+- [x] 3.3 Apply the configured DeepSeek-R1 per-token price to compute estimated monthly spend; emit as a dashboard-ready JSON artifact  *(landed 2026-05-13; DeepSeek-R1 2025-Q1 public pricing baked in as defaults — $0.55/M input, $2.19/M output — operator-overridable via kwargs or CLI flags; `monthly_estimate_usd` extrapolates observed cost to 30-day window with 1-hour duration floor to avoid inflating estimates from short bursts; `pricing` block in every report surfaces active prices + source string so dashboards can audit; CLI entry `python -m conductor.reviewer.cost_aggregator <log> [-o out.json]` with output-dir auto-creation; smoke-test verified end-to-end: 4 records → 3-tool roll-up → $0.004 observed → $2.89 monthly extrapolation correctly applies 720x scaling via 1hr floor)*
 
 ## 4. Harmfulness audit harness
 
