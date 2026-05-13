@@ -1,9 +1,9 @@
 ## 1. Trigger-policy middleware
 
-- [ ] 1.1 Create `conductor/reviewer/trigger_policy.py` with a `classify(tool_name, tool_args, policy, base_agent_confidence) -> Bucket` function returning one of `Bucket.ALWAYS_REVIEW`, `Bucket.REVIEW_ON_UNCERTAINTY`, `Bucket.SKIP_REVIEW`
-- [ ] 1.2 Implement the three bucket-routing rules per spec Requirements 1-3 (side-effecting → always; read-only → skip; unclassified → always; confidence-missing → escalate)
-- [ ] 1.3 Wire the classifier into Conductor's pre-reviewer middleware stage behind a `reviewer_v2_enabled` feature flag (default false)
-- [ ] 1.4 Add unit tests covering all 6 scenarios from the trigger-policy spec requirements
+- [x] 1.1 Create `conductor/reviewer/trigger_policy.py` with a `classify(tool_name, tool_args, policy, base_agent_confidence) -> Bucket` function returning one of `Bucket.ALWAYS_REVIEW`, `Bucket.REVIEW_ON_UNCERTAINTY`, `Bucket.SKIP_REVIEW`  *(landed 2026-05-13; `Bucket`/`Policy`/`ToolEntry` dataclasses; pure function, no I/O)*
+- [x] 1.2 Implement the three bucket-routing rules per spec Requirements 1-3 (side-effecting → always; read-only → skip; unclassified → always; confidence-missing → escalate)  *(landed 2026-05-13; 4 rules + misconfig guard for ROU-without-threshold)*
+- [ ] 1.3 Wire the classifier into Conductor's pre-reviewer middleware stage behind a `reviewer_v2_enabled` feature flag (default false)  *(deferred to Sprint 2; depends on Task 2.x policy YAML loader + location decision for production conductor at `/opt/cemini/conductor/`)*
+- [x] 1.4 Add unit tests covering all 6 scenarios from the trigger-policy spec requirements  *(landed 2026-05-13; `test_trigger_policy.py` — 20 tests pass: 14 scenario tests covering all 6 scenarios incl. boundary cases + 6 defensive invariants; never-returns-ROU, args-no-op, ROU-without-threshold-escalates, empty-policy-fallback, enum-yaml-round-trip)*
 
 ## 2. Declarative policy file
 
