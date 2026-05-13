@@ -75,8 +75,8 @@ State at verification:
 - SQLite: 148-150 observations across 12 distinct `memory_session_id` values, 16 SDK sessions, 5 projects (OSINT WORKSPACE 87%, Cybersecurity wiki 13%).
 - Observation-type mix: 94 discovery / 38 change / 9 feature / 3 bugfix / 3 decision / 1 security_alert. 20 MB data dir.
 
-**Anomaly 1 — single-day data window**: all observations dated 2026-05-12 despite worker uptime since 2026-05-11T02:24:49. Pre-12.4.3 backup file present (216K) but holds 0 obs under current schema. Possible v12.4.3 → v13.0.1 migration data loss or worker emitted no obs on 2026-05-11. Does not invalidate Phase 2 PASS (12 distinct same-day sessions prove the mechanism). **[NEEDS VERIFICATION 2026-05-12]** whether multi-day retention works.
+**Anomaly 1 — single-day data window**: all observations dated 2026-05-12 despite worker uptime since 2026-05-11T02:24:49. **ROOT CAUSE (investigated 2026-05-12)**: 45 `[DB] Registered memory_session_id before storage (FK fix)` events in `~/.claude-mem/logs/claude-mem-2026-05-11.log` vs 0 such events on 2026-05-12. The v12.4.3 → v13.0.1 migration repeatedly rewrote `sdk_sessions.memory_session_id`; despite the `ON UPDATE CASCADE` FK rule, the rewriter path orphaned or cascade-deleted in-flight observations. SDK sessions 1-11 (May 11 + early May 12) all show 0 observations in DB; sessions 12-16 retained obs cleanly (no FK fixes after migration settled). **Migration artifact, not steady-state bug** — multi-day retention will work going forward.
 
-**Anomaly 2 — version drift**: worker daemon v13.0.1; newest SDK sessions load plugin v13.2.0. Resolve via `npx claude-mem upgrade` + worker restart at next session boundary. Not urgent.
+**Anomaly 2 — version drift**: worker daemon v13.0.1; `npx claude-mem --version` resolves to 13.2.0 (newer than installed worker because worker started 2026-05-11T02:24:49 before v13.2.0 release). Resolution path: stop worker + `npx claude-mem install --upgrade` + restart. Not done in-session because worker restart could disrupt live SDK session 15. Defer to next clean session boundary.
 
 [Source: Evaluating Links for Trading and Wiki Stacks.docx, URL 18]

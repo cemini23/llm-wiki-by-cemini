@@ -46,11 +46,11 @@ Single Explore subagent batch + parent spot-check verification. Verdicts:
 - Cross-session retrieval: **PROVEN** — 12 distinct `memory_session_id` values across 16 SDK sessions; this session received cross-session injection at start.
 - Worker health: **STABLE** — PID 99184 v13.0.1, ~2d uptime; dashboard HTTP 200 at localhost:37702; supervisor.json clean; 20 MB data dir.
 
-**Two anomalies flagged (non-blocking)**:
-1. **Single-day data window** — all 148-150 observations dated 2026-05-12 despite worker uptime since 2026-05-11T02:24:49. Pre-12.4.3 backup file exists (216K) but contains 0 obs under current schema → possible migration data loss. Does not invalidate cross-session retrieval (12 distinct sessions in single day proves it works). Investigate separately if multi-day cross-session pattern matters.
-2. **Version drift** — worker v13.0.1; newest SDK sessions load plugin v13.2.0. Resolve at next session boundary via `npx claude-mem upgrade` + worker restart. Not urgent.
+**Two anomalies investigated 2026-05-12 — both characterized**:
+1. **Single-day data window — ROOT CAUSE FOUND**: 45 `[DB] FK fix` events in claude-mem-2026-05-11.log vs 0 on May 12. v12.4.3 → v13.0.1 migration repeatedly rewrote `sdk_sessions.memory_session_id` and orphaned/cascade-deleted in-flight observations. SDK sessions 1-11 show 0 obs in DB; sessions 12-16 retained obs cleanly. **Migration artifact, not steady-state bug** — multi-day retention will work going forward.
+2. **Version drift — RESOLUTION PATH IDENTIFIED**: `npx claude-mem --version` resolves to 13.2.0 (npx fetches latest); worker daemon PID 99184 still on v13.0.1 because it started 2026-05-11T02:24:49, pre-v13.2.0. Fix: stop worker → `npx claude-mem install --upgrade` → restart. Deferred to next clean session boundary (don't disrupt live SDK session 15).
 
-Verdict written to `briefs/2026-05-10_claude-mem-adoption.md` Phase 2 section.
+Verdict written to `briefs/2026-05-10_claude-mem-adoption.md` Phase 2 section + `wiki/entities/tools/claude-mem.md` Phase 2 section.
 
 ## Position (carried — end of 2026-05-11 session — K40 RLHF Critic Bias ingest COMPLETE + K39 ingest + Tier-1 gap closure)
 
