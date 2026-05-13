@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-12] Cascade (d) CLOSED | Prod-brief re-stage verification — 11/11 STILL CURRENT
+
+- **Brief**: `briefs/2026-05-12_prod-brief-restage-verification.md` — audit **100.0/100 PASS** all checks clean.
+- **Cascade context**: item (d) from the Step-82 unblock cascade. Closes the workspace-side half of the cascade; Step 83 (live deployment) executes server-side via separate server-Claude sessions on individual briefs.
+- **Inventory**: 39 files at `cemini-prod:/opt/cemini/briefs/`. After excluding historicals (ticker reports, audit reports, completed Step 81 brief), the **active set is 11 briefs** (not 9 as previously stated in ROADMAP/hot.md — `klaassen-magnus-elo` + `hftbacktest` were undercounted): 8 K28-K30 + 3 K31/K34.
+- **Verdict per brief**: zero STALE, zero SUPERSEDED, **11 of 11 STILL CURRENT**. Step 82 PASS enables (does not invalidate) the assumed EMS/Redis-up posture every active brief relies on. Static checks per brief: (i) Redis/EMS references, (ii) EMS state assumed (always: "available, doesn't matter, or unblocks-this"), (iii) K33-K40 supersession risk (none found), (iv) upstream tool deprecation/license shift (none found).
+- **Integrity check**: laptop staging copy md5 == prod copy md5 (`bf464a156448fa25bcda29e1e493977a` on probablyprofit) — no drift between staging and prod, so re-scp is unnecessary.
+- **Deferred briefs**: 2 (`autoresearch-conductor-evolution` Phases 2-6, `xskill-cross-rollout-critique-conductor` entirely). Activation triggers (traffic 10× + IP-sale-pull) unchanged by Step 82; both remain DEFERRED per their own `DO NOT delete or modify` instructions.
+- **Recommended server-Claude pickup order**: `mcp-context-optimization` (#1 architectural blocker, 80-95% cost reduction) → `polymarket-onchain-data-pipeline` (#1 data-infra gap) → `pykalshi-adoption` → `polymarket-stack-adoption` → `conductor-audit-trail-phase1` → remaining 6 in any order.
+- **Cascade closure**: Step 82 unblock cascade (a)/(b)/(c)/(d) **fully closed 2026-05-12**. Step 83 is unblocked and can ship.
+- **Files touched**: new `briefs/2026-05-12_prod-brief-restage-verification.md` (gitignored); this log; `ROADMAP.md` (cascade (d) check-off); `hot.md` (cascade (d) STAGED).
+
 ## [2026-05-12] Brief staged | Cemini-prod tech-debt audit + codeboarding first-pass (cascade items b+c)
 
 - **Briefs**: `briefs/2026-05-12_cemini-prod-tech-debt-audit.md` — 10 ranked findings (HIGH 4, MEDIUM 4, LOW 2) + 1 codeboarding-derived candidate (#11 unused-code). None block Step 83 deployment.
