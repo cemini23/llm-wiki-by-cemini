@@ -20,6 +20,7 @@ related:
   - sources/regime-conditioned-bo-evaluation.md
   - concepts/regime-conditioned-evaluation.md
   - concepts/verbalized-sampling-llm-diversity.md
+  - concepts/llms-get-lost-mitigation-audit.md
 maturity: validated
 hub: true
 created: 2026-05-01

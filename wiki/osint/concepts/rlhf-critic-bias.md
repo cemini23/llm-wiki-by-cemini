@@ -11,6 +11,7 @@ related:
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
   - sources/llms-get-lost-multi-turn-laban-2025.md
+  - concepts/llms-get-lost-mitigation-audit.md
 maturity: draft
 created: 2026-05-11
 updated: 2026-05-13

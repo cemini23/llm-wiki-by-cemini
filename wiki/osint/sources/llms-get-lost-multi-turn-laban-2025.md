@@ -11,6 +11,7 @@ related:
   - concepts/rlhf-critic-bias.md
   - concepts/verbalized-sampling-llm-diversity.md
   - concepts/claude-md-12-rule-template.md
+  - concepts/llms-get-lost-mitigation-audit.md
   - entities/tools/claude-mem.md
 maturity: validated
 read_status: skimmed

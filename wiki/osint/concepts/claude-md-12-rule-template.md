@@ -8,6 +8,7 @@ related:
   - entities/people/forrest-chang.md
   - entities/people/mnilax.md
   - sources/llms-get-lost-multi-turn-laban-2025.md
+  - concepts/llms-get-lost-mitigation-audit.md
   - concepts/agent-trajectory-triage-signals.md
 maturity: draft
 created: 2026-05-13

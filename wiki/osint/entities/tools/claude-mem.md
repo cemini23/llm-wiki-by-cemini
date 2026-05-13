@@ -7,6 +7,7 @@ related:
   - sources/evaluating-links-trading-wiki-stacks.md
   - concepts/tool-evaluation-framework.md
   - sources/llms-get-lost-multi-turn-laban-2025.md
+  - concepts/llms-get-lost-mitigation-audit.md
 maturity: validated
 created: 2026-05-10
 updated: 2026-05-13
