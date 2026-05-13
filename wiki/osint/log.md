@@ -1,5 +1,28 @@
 # Wiki Log
 
+## [2026-05-12] K40 cross-wiki ingest | 6 new sources + 64 stubs + multi-wiki Gemini eval prompt v2
+
+- **Sources ingested** (6 docx/md → moved to librarian):
+  - `evaluating-github-repos-trading-stack-2026-05-12.md` — Gemini eval Doc 1 (23 URLs). Tier rollup: 4 Adopt + 4 Steal-from + 2 Defer + 5 Reference + 5 Reject + 3 unavailable.
+  - `evaluating-project-links-systems-2-2026-05-12.md` — Gemini eval Doc 2 (26 URLs). Tier rollup: 3 Adopt + 8 Steal-from + 4 Reference + 5 Reject + 6 unavailable.
+  - `x-polymarket-bot-playbook-punisher-2026-05-12.md` — @0x_Punisher Polymarket bot architecture (6-layer websocket; <0.5ms hot path; survival taxonomy).
+  - `x-kimi-k2.6-hermes-routing-playbook-2026-05-12.md` — Kimi K2.6 + Hermes-4 + Opus 4.7 cost-routing orchestra playbook.
+  - `npm-supply-chain-defense-prompt-2026-05-12.md` — Anthropic release-age cooldown defensive prompt (3-day quarantine).
+  - `autonomous-agent-meta-prompt-2026-05-12.md` — Ralph autonomous-agent pattern (prd.json + progress.txt + fresh-context loops).
+  - `multi-wiki-gemini-eval-prompt-2026-05-12.md` — **NEW CORRECTIVE v2 EVAL PROMPT** (7-surface framework + anti-hallucination + 9 documented v1 false-NO-GO cases).
+- **OSINT concepts created** (4): `ralph-autonomous-agent-pattern.md`, `polymarket-bot-architecture.md`, `agent-cost-routing-orchestra.md`, `npm-supply-chain-defense.md`.
+- **OSINT entity stubs created** (37): Doc 1 (20): autots, voicemode, hunk, veloxdb, awesome-ralph, ai-marketing-skills, claude-code-ultimate-guide, supertonic, pastebar-app, website-downloader, codegraph-rust, taskexplorer, vizpilot-ai, whisper-money, trellis, awesome-gpt-super-prompting, jetbrains-air, claude-code-projects-index, how-to-train-your-gpt, awesome-ai-extensions. Doc 2 (17): sim, accomplish, hermes-war-room, openant, anthropic-harness-design, idassist, multi-model-redteam, karma, redactdesk, bug-bounty-agents, codenomad, awesome-design-md, aisoc, openalternative, airecon, firecracker-blog, virtual-memory-blog.
+- **Cross-wiki stubs created** (26 total):
+  - **Cybersec wiki** (17 tools + 1 concept): idassist, airecon, openant, bug-bounty-agents, aisoc, taranis-ai, karma, redactdesk, awesome-gpt-super-prompting, ducky, taskexplorer, multi-model-redteam, claude-code-ultimate-guide, codegraph-rust, website-downloader, firecracker-blog, openalternative + concept `llm-vulnerability-discovery.md` (3-primitive composition).
+  - **Image-gen wiki** (4): supertonic, voicemode, awesome-design-md (persona-ops/), how-to-train-your-gpt (training-tools/).
+  - **SEO wiki** (5): ai-marketing-skills, awesome-design-md, openalternative, awesome-ai-extensions, website-downloader.
+- **Tier headlines** (highest-impact Adopt verdicts pending Phase-0): **AutoTS** (Python time-series ensemble + GPU MAPPO compat), **voicemode** (local Whisper.cpp + Kokoro voice I/O, cloud-API-eliminating), **hunk** (offline diff/patch UI), **veloxdb** (Rust embedded KV for laptop caches), **anthropic-harness-design** (Planner/Generator/Evaluator trinity adopted as CEMINI orchestrator architecture).
+- **NPM supply-chain defense**: prompt evaluated, brief staged to `cemini-prod:/opt/cemini/briefs/2026-05-12_npm-supply-chain-defense.md` per user request. Workspace `package.json` already pinned + release-age pattern documented in `concepts/npm-supply-chain-defense.md`.
+- **License-catalog updates**: EUPL-1.2 confirmed AGPL-equivalent (Taranis AI rejected — methodology study only). CC-BY-SA-4.0 added to v2 prompt (claude-code-ultimate-guide acceptable for cybersec/workflow wikis as study material only). No-LICENSE pattern mode #1 incremented 3× (Karma, multi-model-redteam, Claude-Code-Projects-Index).
+- **Multi-wiki Gemini eval prompt v2** (deliverable per user request): explicit corrective for v1 which only accounted for OSINT/Cemini. New prompt routes every URL through 7-surface fit grid (Cemini financial / OSINT / Cybersec / Image-gen / SEO / 3D-printing / Workflow). Primary-fit + cross-routing slots. 9 documented false-NO-GO cases from v1. Copy-paste-ready in source's Snippets section.
+- **Cascade rationale**: user's explicit instruction — "make sure each wiki gets what it needs" — directly addressed via cross-routing batches.
+- **Files touched**: 6 new sources + 4 new concepts + 37 new OSINT entity stubs + 17 cybersec stubs + 1 cybersec concept + 4 image-gen stubs + 5 SEO stubs + 1 cemini-prod brief (npm-defense) + this log + `wiki/index.md` + `ROADMAP.md`.
+
 ## [2026-05-12] Tech-debt Finding #1 SHIPPED | Prod worktree pollution cleanup
 
 - **Action**: `ssh cemini-prod "rm -rf /opt/cemini/.claude/worktrees/"` — eliminated `design-build` + `jovial-euclid-d0391c` editor-scratch worktree directories that had been rsync'd to prod by accident.

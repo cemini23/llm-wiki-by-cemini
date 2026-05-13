@@ -87,13 +87,22 @@ def parse_frontmatter(text):
         for line in rl.group(1).splitlines():
             s = line.strip()
             if s.startswith("- "):
-                items.append(s[2:].strip())
+                v = s[2:].strip()
+                if len(v) >= 2 and v[0] == v[-1] and v[0] in ('"', "'"):
+                    v = v[1:-1].strip()
+                items.append(v)
         out["related"] = items
     else:
         # try inline form: related: [a, b, c]
         ri = RELATED_INLINE_RE.search(fm_text)
         if ri:
-            out["related"] = [s.strip() for s in ri.group(1).split(",") if s.strip()]
+            raw_items = [s.strip() for s in ri.group(1).split(",") if s.strip()]
+            cleaned = []
+            for v in raw_items:
+                if len(v) >= 2 and v[0] == v[-1] and v[0] in ('"', "'"):
+                    v = v[1:-1].strip()
+                cleaned.append(v)
+            out["related"] = cleaned
         else:
             out["related"] = []
     # scalars

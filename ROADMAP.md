@@ -8,6 +8,25 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (end of 2026-05-12)
+
+- **K40 cross-wiki ingest COMPLETE 2026-05-12**: 6 new sources + multi-wiki Gemini eval prompt v2 deliverable. Cross-wiki batches shipped to cybersec (17 tools + 1 concept), image-gen (4), SEO (5). 37 new OSINT entity stubs + 4 new OSINT concepts. **User-flagged v1 prompt limitation corrected**: v2 prompt routes URLs through 7-surface fit grid (Cemini financial / OSINT / Cybersec / Image-gen / SEO / 3D-printing / Workflow); ready for next eval batch. **NPM supply-chain defense brief staged to `cemini-prod:/opt/cemini/briefs/2026-05-12_npm-supply-chain-defense.md`** per user request; workspace `package.json` confirmed pinned to exact versions. Tier headlines from K40: **AutoTS** + **voicemode** + **hunk** + **veloxdb** + **anthropic-harness-design** Adopt (Phase-0 pending). **Anthropic Planner/Generator/Evaluator trinity adopted as CEMINI orchestrator architecture** (replaces ad-hoc LangGraph routing). New license-pattern catches: 3× no-LICENSE (Karma + multi-model-redteam + Claude-Code-Projects-Index) → mode #1 count climbing; CC-BY-NC-4.0 IP-sale poison pill (pastebar-app rejected); CC-BY-SA-4.0 added to catalog (claude-code-ultimate-guide acceptable for study-only). **New concept pages**: `ralph-autonomous-agent-pattern.md`, `polymarket-bot-architecture.md`, `agent-cost-routing-orchestra.md`, `npm-supply-chain-defense.md`, plus cybersec wiki `llm-vulnerability-discovery.md`.
+
+### K40 follow-ups (HIGH PRIORITY queue)
+
+| Item | Action | Status |
+|------|--------|--------|
+| **AutoTS Phase-0 audit** | Phase-0 source audit before FastMCP integration: license (MIT confirmed), GPU MAPPO compat, dependency footprint vs Cemini 7GB Hetzner | **PENDING** — top-priority Adopt verdict |
+| **voicemode laptop install** | Local Whisper.cpp + Kokoro voice I/O for Claude Code workflow | **PENDING** Phase-0 (single-dev bus-factor check) |
+| **hunk laptop install** | Offline diff/patch UI; reduces LLM context bloat | **PENDING** Phase-0 (license + maturity) |
+| **veloxdb laptop install** | Rust embedded KV for ingest pipeline caches | **PENDING** Phase-0 (Rust SBOM + license verification) |
+| **anthropic-harness-design adoption** | Planner/Generator/Evaluator trinity → CEMINI orchestrator architecture (replaces ad-hoc LangGraph routing) | **PENDING** — sprint contract + Phase-0 audit + brief |
+| **NPM supply-chain defense prod brief** | Brief at `cemini-prod:/opt/cemini/briefs/2026-05-12_npm-supply-chain-defense.md` | **SHIPPED 2026-05-12** — awaits server-Claude execution |
+| **Multi-wiki Gemini eval prompt v2** | Available at `wiki/sources/multi-wiki-gemini-eval-prompt-2026-05-12.md` Snippets section — copy-paste-ready | **READY for next eval batch** |
+| **Cybersec wiki Phase-0 backlog** | 12+ cross-routed tools awaiting Phase-0 audits in cybersec wiki (openant, aisoc, bug-bounty-agents, idassist, airecon, etc.) | **DEFERRED to cybersec-wiki triage** |
+| **Polymarket bot architecture brief** | 6-layer websocket bot architecture from @0x_Punisher → CEMINI deployment gap analysis brief | **PENDING** — concept page ready; brief candidate next sprint |
+| **Cost-routing orchestra brief** | Kimi K2.6 + Hermes-4 + Opus 4.7 orchestra → Cemini cost-model brief; integrates with reviewer-agent + signals layers | **PENDING** — concept page ready; brief candidate |
+
 ## Current state (end of 2026-05-11)
 
 - **Wiki**: 690 pages indexed (+2 K40 = 1 source + 1 concept; on top of +19 K39 and +45 K37/K38). K40 source `rlhf-critic-bias-al-zawahreh-2026.md` (Al-Zawahreh self-published April 2026 pre-print, **Reference/Steal-from tier, draft maturity**) + new concept `rlhf-critic-bias.md` housing the operational framework (5 patterns + 6-cat Rhetorical Catalog + 5-tell Forensic Scorecard + 4 mitigations). 5 backlinks added (reviewer-agent / VS / signals / tool-eval-framework / license-posture). K39 source `evaluating-project-links-stacks.md` (17-URL eval brief) plus paper-form `verbalized-sampling-mode-collapse.md` (training-free distribution-prompting paper). 1 new concept page captures the Verbalized Sampling pattern as third orthogonal training-free Conductor layer (alongside reviewer-agent + signals).
