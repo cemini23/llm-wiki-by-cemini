@@ -7,10 +7,10 @@
 
 ## 2. Declarative policy file
 
-- [ ] 2.1 Define the YAML policy-file schema: top-level `tools` map with `bucket`, `uncertainty_threshold` (optional), and `notes` (optional) per tool
-- [ ] 2.2 Author `conductor/reviewer/policy.yaml` with default classifications for current Polymarket tool surfaces (place_order, withdraw, close_position, cancel_order → always-review; get_price, get_orderbook, get_news → skip-review; remainder → review-on-uncertainty with threshold 0.7)
-- [ ] 2.3 Add a lint pass that warns when a tool matching side-effecting naming patterns (`place_*`, `withdraw_*`, `cancel_*`, `close_*`) is classified as `skip-review`
-- [ ] 2.4 Implement load-on-startup behavior: parse error → fail-closed; absent file → fail-open to v1 always-review with single startup warning
+- [x] 2.1 Define the YAML policy-file schema: top-level `tools` map with `bucket`, `uncertainty_threshold` (optional), and `notes` (optional) per tool  *(landed 2026-05-13; `policy_loader.py` validates schema; rejects unknown fields, non-string keys, missing required `bucket`, invalid bucket values, ROU without threshold, threshold ∉ [0,1], non-numeric thresholds incl. bool, non-string notes)*
+- [x] 2.2 Author `conductor/reviewer/policy.yaml` with default classifications for current Polymarket tool surfaces (place_order, withdraw, close_position, cancel_order → always-review; get_price, get_orderbook, get_news → skip-review; remainder → review-on-uncertainty with threshold 0.7)  *(landed 2026-05-13; 8 tools enumerated with notes; bundled policy passes load + lint integration test)*
+- [x] 2.3 Add a lint pass that warns when a tool matching side-effecting naming patterns (`place_*`, `withdraw_*`, `cancel_*`, `close_*`) is classified as `skip-review`  *(landed 2026-05-13; `lint_policy()` returns list of warning strings; non-fatal; 6 lint tests pass incl. all 4 patterns + 3 negative cases)*
+- [x] 2.4 Implement load-on-startup behavior: parse error → fail-closed; absent file → fail-open to v1 always-review with single startup warning  *(landed 2026-05-13; `load_policy()` raises `PolicyParseError` on schema/YAML violations, `FileNotFoundError` on missing file; `load_policy_or_default()` swallows missing-file + emits single WARNING + returns empty Policy; 2 fail-closed tests + 1 fail-open test pass)*
 
 ## 3. Cost-ceiling telemetry
 

@@ -1,0 +1,53 @@
+# Trigger policy for K37 reviewer-agent v2 (selective-trigger gating).
+#
+# Each tool listed below routes through one of three buckets:
+#
+#   always-review         Invoke reviewer-agent before every call.
+#                         Use for side-effecting / irreversible tools.
+#   skip-review           Dispatch directly without reviewer-agent.
+#                         Use for pure read-only / cheap idempotent queries.
+#   review-on-uncertainty Review iff base-agent confidence < uncertainty_threshold.
+#                         Missing confidence escalates to review (safe-default).
+#                         `uncertainty_threshold` is REQUIRED for this bucket;
+#                         it must lie in [0.0, 1.0].
+#
+# Tools NOT enumerated here default to `always-review` at classification time
+# (safe-default for unknown tools; never silently bypass review for an
+# unclassified surface).
+#
+# Lint rule (policy_loader.lint_policy): tools matching side-effecting naming
+# patterns (place_*, withdraw_*, cancel_*, close_*) classified as `skip-review`
+# will surface a startup warning. Fix the classification or remove the entry.
+
+tools:
+
+  # --- Side-effecting / irreversible (always-review) ----------------------
+  place_order:
+    bucket: always-review
+    notes: places a market or limit order on the broker; irreversible state change
+  withdraw:
+    bucket: always-review
+    notes: moves funds off the broker; irreversible
+  close_position:
+    bucket: always-review
+    notes: closes an open position; locks in realized P&L
+  cancel_order:
+    bucket: always-review
+    notes: cancels a pending order; state change (reversible by re-placing)
+
+  # --- Read-only market data (skip-review) --------------------------------
+  get_price:
+    bucket: skip-review
+    notes: real-time price quote; idempotent read-only
+  get_orderbook:
+    bucket: skip-review
+    notes: order-book depth snapshot; idempotent read-only
+  get_news:
+    bucket: skip-review
+    notes: news feed lookup; idempotent read-only
+
+  # --- Ambiguous — gate by base-agent confidence --------------------------
+  submit_research_query:
+    bucket: review-on-uncertainty
+    uncertainty_threshold: 0.7
+    notes: external paid research API; cost-bearing but not state-changing
