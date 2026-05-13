@@ -35,7 +35,16 @@ Single Explore subagent batch + parent spot-check verification. Verdicts:
 1. ~~5 K39 Phase-0 RED-FLAG audits~~ — **CLOSED 2026-05-12**
 2. ~~claude-mem Phase 2 verification~~ — **PASS 2026-05-12 (with 2 caveats; see below)**
 3. ~~K39 Steal-from extractions~~ — **CLOSED 2026-05-12** (1 GO openshell + 1 NO-GO gabagool; see below)
-4. **Step 82 Redis/EMS blockers** — prod-side work, no laptop action
+4. ~~Step 82 Redis/EMS blockers~~ — **PROD-SIDE RESOLVED 2026-05-12** (user-reported); Step 83 deployment unblocked.
+
+### Step 82 unblock cascade (workspace-side, 2026-05-12)
+
+Items previously gated on EMS/Redis prod readiness now actionable:
+
+a. **`briefs/2026-MM-DD_fastmcp-policy-hardening.md`** — codify K39 NVIDIA/OpenShell extraction plan (Pydantic port of `openshell-policy` Serde types + 4 YAML fixtures + `policy-advisor` template for Claude FastMCP container). Was gated on having a prod target ready.
+b. **codeboarding Phase 2** — first prod-snapshot mapping run (`uv tool install codeboarding` already complete; 7 LSPs bootstrapped). Pull `/opt/cemini/` snapshot → run `codeboarding` → review generated architecture diagrams.
+c. **tech-debt-skill Phase 2** — first prod-snapshot audit run (`~/.claude/skills/tech-debt-audit.md` already installed). Pull `/opt/cemini/` snapshot → run `/tech-debt-audit` slash command.
+d. **9 staged prod briefs at `cemini-prod:/opt/cemini/briefs/` re-verification** — confirm still current vs. post-EMS/Redis prod state (6 K28-K30 + 3 K31). Stale-brief detection.
 
 ### K39 Steal-from batch (2 audits, 2026-05-12)
 
