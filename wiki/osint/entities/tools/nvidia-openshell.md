@@ -80,7 +80,7 @@ Containerized runtime for safely executing autonomous AI agents in restricted, t
 3. Implement enforcement: Linux seccomp/landlock for filesystem rules; proxy-based interception (LD_PRELOAD or unshare network namespace + iptables) for network egress.
 4. Test fixtures: lift the 4 example YAML files verbatim as the Python module's test corpus.
 
-Out of scope for this audit: the actual port. Brief to be staged under `briefs/2026-MM-DD_fastmcp-policy-hardening.md` once Cemini-prod is ready (currently EMS/Redis-blocked on Step 82).
+Out of scope for this audit: the actual port. **Brief staged 2026-05-12** at `briefs/2026-05-12_fastmcp-policy-hardening.md` — Phase 1 (Pydantic + test corpus) workspace-laptop; Phase 2 (Landlock + network-namespace enforcement) CONDITIONAL-GO on cemini-prod after traffic inventory. Step 82 prod-side EMS/Redis blockers resolved 2026-05-12.
 
 ### Verdict
 

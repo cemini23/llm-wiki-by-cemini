@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-12] Brief staged | FastMCP policy hardening from K39 OpenShell extraction
+
+- **Brief**: `briefs/2026-05-12_fastmcp-policy-hardening.md` — codifies the NVIDIA/OpenShell GO verdict (Phase-0 batch closed 2026-05-12) into an actionable two-phase work plan. Static audit: 93.5/100 WARN (passes all veto-gates).
+- **Phase 1 (workspace-laptop, ≈1 day)**: Pydantic v2 port of `openshell-policy/src/lib.rs` Serde types → `services/security/policy_schemas.py`; YAML loader → `services/security/policy_loader.py`; 4 upstream YAML fixtures + 1 derived `fastmcp-claude.yaml` (Anthropic-only egress) as policy + test corpus. Apache-2.0 NOTICE preservation via SPDX header at fileheader level.
+- **Phase 2 (cemini-prod, ≈3-5 days)**: CONDITIONAL-GO — author separate prod brief after Phase 1 lands. Wires Landlock LSM (filesystem) + network-namespace + iptables (L4 egress) into FastMCP container ENTRYPOINT. Gated on FastMCP-Claude traffic inventory (Redis/EMS/conductor inter-container calls must be whitelisted before policy enables).
+- **Trigger**: Step 82 prod-side blockers (Redis + EMS) resolved 2026-05-12; cascade item (a) from hot.md.
+- **Files touched**: new `briefs/2026-05-12_fastmcp-policy-hardening.md`; `wiki/entities/tools/nvidia-openshell.md` (extraction-plan section updated from "queued" to "staged at brief path"); this log.
+
 ## [2026-05-12] Phase-0 Steal-from batch | K39 (2 tools) — 1 GO / 1 NO-GO
 
 - **Batch**: 2 parallel Explore subagents (NVIDIA/OpenShell + gabagool vs CloddsBot cross-ref). Parent spot-checked verdicts via direct `gh api` against both repos before write-back.

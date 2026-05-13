@@ -41,7 +41,7 @@ Single Explore subagent batch + parent spot-check verification. Verdicts:
 
 Items previously gated on EMS/Redis prod readiness now actionable:
 
-a. **`briefs/2026-MM-DD_fastmcp-policy-hardening.md`** — codify K39 NVIDIA/OpenShell extraction plan (Pydantic port of `openshell-policy` Serde types + 4 YAML fixtures + `policy-advisor` template for Claude FastMCP container). Was gated on having a prod target ready.
+a. ~~`briefs/2026-MM-DD_fastmcp-policy-hardening.md`~~ — **STAGED 2026-05-12 at `briefs/2026-05-12_fastmcp-policy-hardening.md`**. Two-phase plan: Phase 1 (workspace-laptop ≈1d) Pydantic v2 port of `openshell-policy/src/lib.rs` + YAML loader + 4 upstream fixtures + derived `fastmcp-claude.yaml` (Anthropic-only egress). Phase 2 (cemini-prod ≈3-5d) CONDITIONAL-GO — Landlock + network-namespace enforcement, gated on FastMCP traffic inventory. Audit 93.5/100 WARN (all veto-gates clean). Apache-2.0 NOTICE preservation specified at fileheader level.
 b. **codeboarding Phase 2** — first prod-snapshot mapping run (`uv tool install codeboarding` already complete; 7 LSPs bootstrapped). Pull `/opt/cemini/` snapshot → run `codeboarding` → review generated architecture diagrams.
 c. **tech-debt-skill Phase 2** — first prod-snapshot audit run (`~/.claude/skills/tech-debt-audit.md` already installed). Pull `/opt/cemini/` snapshot → run `/tech-debt-audit` slash command.
 d. **9 staged prod briefs at `cemini-prod:/opt/cemini/briefs/` re-verification** — confirm still current vs. post-EMS/Redis prod state (6 K28-K30 + 3 K31). Stale-brief detection.
