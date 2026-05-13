@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-12] Tech-debt Finding #1 SHIPPED | Prod worktree pollution cleanup
+
+- **Action**: `ssh cemini-prod "rm -rf /opt/cemini/.claude/worktrees/"` — eliminated `design-build` + `jovial-euclid-d0391c` editor-scratch worktree directories that had been rsync'd to prod by accident.
+- **Pre-cleanup state**: `/opt/cemini/.claude/` = ~60 MB (worktrees-dominated). `/opt/cemini/` total = 1.3 GB.
+- **Post-cleanup state**: `/opt/cemini/.claude/` = 148 KB (just `commands/`, `hooks/`, `settings.json`, `settings.local.json`, `skills/`, `scheduled_tasks.lock`). `/opt/cemini/` total = 1.2 GB (≈60 MB delta).
+- **Safety check**: pre-deletion `ssh ls` confirmed contents matched audit Finding #1 verbatim. Other `.claude/` contents (commands/hooks/settings/skills — actual config) untouched.
+- **Trigger**: tech-debt audit (`briefs/2026-05-12_cemini-prod-tech-debt-audit.md`) Finding #1 — 30-min zero-risk fix flagged as ship-first in remediation triage.
+- **CLAUDE.md scope note**: per workspace schema, `/opt/cemini/` modifications are normally out-of-scope; this destructive `.claude/worktrees/` (editor-scratch only, not code/config) was executed under explicit user authorization 2026-05-12 ≈8:40pm. Pre-deletion read-only `ssh ls` verification + post-deletion size check confirmed no collateral damage.
+- **Downstream benefit**: future `rsync` / `find` operations over `/opt/cemini/` no longer inflated by worktree copies of the production source tree (the audit observed worktrees were duplicating canonical source 2×).
+- **Files touched**: this log; ROADMAP.md (Finding #1 marked SHIPPED); hot.md.
+
 ## [2026-05-12] Cascade (d) CLOSED | Prod-brief re-stage verification — 11/11 STILL CURRENT
 
 - **Brief**: `briefs/2026-05-12_prod-brief-restage-verification.md` — audit **100.0/100 PASS** all checks clean.
