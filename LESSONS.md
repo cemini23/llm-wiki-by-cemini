@@ -6,6 +6,22 @@ Newest entries on top.
 
 ---
 
+## 2026-05-13 — Cemini adopts SKILL.md frontmatter spec internally (spec-only, not catalog)
+
+K42 follow-up landed: `briefs/2026-05-13_agent-skills-spec-decision.md` recommended Axis A (adopt the SKILL.md spec format) but explicitly reject Axis B (catalog content dependency). The K42 eval cited `package-security-check` skill was removed from the `instructa/agent-skills` HEAD on 2026-05-12 — 12 days between evaluation and removal. **Catalog churn is too fast to depend on.**
+
+The spec itself is portable: plain markdown + YAML frontmatter with `name`, `description`, `license`, `metadata.author`, `metadata.version`, `disable-model-invocation` fields. Body is markdown protocol after a `---` divider, then optionally a `# Project documentation` section for humans. Cemini's existing `~/.claude/skills/tech-debt-audit.md` was already 80% compliant; 3-field frontmatter upgrade (license + metadata.author + metadata.version) brought it to 100%. No body changes; backwards-compatible.
+
+**Cemini's spec stance (pinned to 2026-05-13 snapshot)**:
+- We adopt the SKILL.md frontmatter format for internal skills going forward
+- We do NOT depend on agent-skills catalog content (or any external skill catalog)
+- We pin to this spec snapshot; revisit annually for instructa/Anthropic drift
+- `scripts/skill_audit.py --mode skillmd` extension is deferred; not blocking for adoption
+
+*Apply*: New Cemini skills authored from 2026-05-13 forward use the SKILL.md frontmatter. Existing skills get retrofitted opportunistically when touched. See `briefs/2026-05-13_skillmd-compliance-tech-debt-audit.md` for the field-by-field compliance template.
+
+---
+
 ## 2026-05-12 — K39 Phase-0 batch surfaced 7th mischaracterization catch + no-LICENSE pattern hits 5 occurrences
 
 K39's 5-tool RED-FLAG audit batch closed today with 0 GO / 1 CONDITIONAL-GO / 4 NO-GO-or-REJECT. Three meta-lessons compound.
