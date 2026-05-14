@@ -10,6 +10,30 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (end of 2026-05-14)
 
+- **K45 sprint OPEN 2026-05-14** (mid-morning): **"The Tail" Polymarket rare-event newsletter — 14-day revenue MVP launch.** Driven by `/goal` directive: paid weekly newsletter staged from canonical `briefs/2026-05-14_30day-revenue-launch-plan.md` Track B + `2026-05-14_tier1-monetization-comparison.md` decision; methodology anchored on `@concepts/three-formula-system-polymarket-rare-events.md` (40 % Poisson + 35 % Shannon/KL + 25 % Taleb); landing/About copy GEO/AEO-treated per `@seo-wiki/sources/aggarwal-2024-geo-paper.md` (Quotation Addition / Statistics Addition / Fluency Optimization / Cite Sources). **4 launch-asset briefs staged + skill_audit PASS 100/100 each**: `briefs/2026-05-14_the-tail-landing-page.md` (hero + sections + JSON-LD FAQ schema) / `briefs/2026-05-14_the-tail-about-page.md` (E-E-A-T anchor + public-wiki link) / `briefs/2026-05-14_the-tail-twitter-launch-thread.md` (8-tweet thread, character-counted) / `briefs/2026-05-14_the-tail-issue1-market-candidates.md` (screening framework + 3 illustrative candidates incl. recommended primary Anthropic-Pentagon June 30, with CoI footnote). Track A (GEO/AEO local outreach) runs in parallel per the 30-day plan but is not staged in this K-series. **Day-30 success target**: Substack live + Issue 1 (free) + Issue 2 (paid) shipped + ≥30 free signups + ≥10 founders' subs ($19/mo, cap 100) = $190+ MRR (stretch $400+) + public methodology wiki linked.
+
+### K45 follow-ups (14-day MVP schedule)
+
+| Day | Item | Owner | Status |
+|-----|------|-------|--------|
+| 1   | Lock Substack handle (`thetail` → fallbacks `outlierweekly` / `asymmetric` / `edgegeometry`) | User | **PENDING** |
+| 1   | Connect Stripe + configure founders' ($19/mo, cap 100) + standard ($39/mo) tiers | User | **PENDING** |
+| 1-2 | Paste landing-page brief copy into Substack About + headline; inject JSON-LD FAQ via custom HTML or static-site mirror | User | **PENDING** — assets STAGED 2026-05-14 |
+| 2-3 | Paste About-page copy; replace `[your-public-wiki-host]` with live URL; configure header nav link | User | **PENDING** — assets STAGED 2026-05-14 |
+| 2-3 | Publish public-wiki mirror of `@concepts/three-formula-system-polymarket-rare-events.md` (+ 4 component concept pages) on static host or kb-server public-DNS | User | **PENDING** — host-decision needed |
+| 4   | Re-run market screening per `briefs/2026-05-14_the-tail-issue1-market-candidates.md` framework; pick Issue 1 worked-example market | User / fresh LLM session | **PENDING** — framework STAGED |
+| 5-7 | Run three-formula model end-to-end on chosen market; draft Issue 1 (2,500-3,000 words, 7-section outline) | User / LLM | **PENDING** |
+| 8   | Twitter launch thread goes live (per `briefs/2026-05-14_the-tail-twitter-launch-thread.md`); pin to profile | User | **PENDING** — thread STAGED 2026-05-14 |
+| 9   | Issue 1 ships free; forward-track entry filed | User | **PENDING** |
+| 10-11 | Reply-burst to every thread response; engagement compounds | User | **PENDING** |
+| 12  | Open founders' tier; email all free subs | User | **PENDING** |
+| 13  | Draft Issue 2 (paywalled, different market, same methodology) | User / LLM | **PENDING** |
+| 14  | "Founders' tier live — N/100 spots left" push to free list; **Gate review: ≥30 free signups?** If <30 → pivot to Polymarket Discord / r/PredictionMarkets / podcast guesting | User | **GATE** |
+| 21  | **Gate review: ≥5 founders' subs?** If <5 → tighten niche to one category (crypto rare-events only) | User | **GATE** |
+| 30  | **Gate review: ≥$200 MRR?** If <$200 → re-evaluate; not a 30-day market | User | **GATE** |
+
+**K45 LLM-staged assets summary**: 4 briefs, all skill_audit PASS 100/100, ready to paste at publish-time. No prod-side execution required (laptop-only workspace). Cross-post Issue 1's worked example back to OSINT wiki as concept-page extension post-Day-9 (compound-citation workspace pattern).
+
 - **K44 ingest COMPLETE 2026-05-14** (morning): Gemini Deep Research v3 multi-wiki tool eval ("Tool Evaluation for Cemini Wiki Integration.docx", 28 URLs). Verdict rollup: **7 Adopt + 7 Steal-from + 1 Defer + 3 Reference + 3 Reject + 7 UNAVAILABLE**. **New largest cross-wiki routing event** — supersedes K43; all 6 sibling wikis touched with 14 actionable items spanning 4 destination wikis. **1 source + 1 concept + 7 OSINT entity stubs + 17 cross-wiki entries** committed across 5 git repos. **Key formalization**: `@concepts/multi-wiki-eval-doc-level-vs-phase-0.md` codifies the K43 two-gate lesson (doc-level eval is necessary but not sufficient — Phase-0 source audit required for all Adopt/Steal-from verdicts before promotion to `validated`). **Highest-priority Adopt items**: `betterleaks.md` (deep page, cybersec — pre-IP-sale codebase audit critical; CEL filtering + BPE tokenization for false-positive reduction) + `aulekator-polymarket-btc-bot.md` (NautilusTrader 15-min BTC, direct K43 Polymarket-integration follow-up). **Cross-wiki convergence finding**: `geo-seo-claude` already adopted by seo-wiki 2026-05-07 (Phase-0 GO retained as authoritative); K44 independent reconfirmation elevates signal quality (two evals converged on same GO). **Star-inflation skepticism flagged**: jcode (6.1k★ solo) + geo-seo-claude (7.2k★ solo) — Phase-0 G1 (gh api star/fork ratio verification) required. **License posture clarifications**: czkawka dual-license isolation (czkawka_core MIT extractable, GUI GPL-3.0 poison via `cargo tree` verification) / red-run + cariddi GPL-3.0 patterns-only / ai-infra-guard Apache-2.0 with restrictive attribution clauses. All Adopt/Steal-from verdicts treated as `doc-level-pending-phase-0` maturity. wiki_lint: **0 K44 bidirectional gaps** (5 patched: polymarket-clob-api + polymarket-gamma-api + three-formula-system + bukosabino-ta + tradingview-mcp-atilaahmettaner + eval-github-repos-2026-05-13 + awesome-polymarket-tools). Raw source SCPed to librarian; laptop inbox clean.
 
 ### K44 follow-ups (queue)

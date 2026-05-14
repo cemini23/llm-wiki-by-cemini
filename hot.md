@@ -2,78 +2,58 @@
 
 Ephemeral curator working memory. Read first on session start; rewritten at session end. Gitignored.
 
-## Position (2026-05-14 morning — K44 ingest CLOSED, largest cross-wiki routing event so far)
+## Position (2026-05-14 mid-morning — K45 OPEN: The Tail launch sprint, Phase-1 LLM-staged assets shipped)
 
 ### Session summary
 
-Full CLAUDE.md ingest pipeline (12 steps) executed on the single new inbox file: **"Tool Evaluation for Cemini Wiki Integration.docx"** (Gemini Deep Research v3, 28 URLs). Verdict rollup: **7 Adopt + 7 Steal-from + 1 Defer + 3 Reference + 3 Reject + 7 UNAVAILABLE**. All 6 sibling wikis touched (osint primary + ccc / cybersec / image-gen / seo / 3d-printing) — new largest cross-wiki routing event, superseding K43.
+`/goal` invoked at session start: **launch "The Tail" — paid weekly Polymarket rare-event newsletter — as 14-day revenue MVP, GEO/AEO-optimized from day 1.** Day-30 target: ≥10 founders' subs ($190+ MRR) + Substack live + Issue 1 (free) + Issue 2 (paid) shipped + public methodology wiki linked from About. Source-of-truth briefs read first per goal directive: `briefs/2026-05-14_30day-revenue-launch-plan.md` (Track B canonical) + `briefs/2026-05-14_tier1-monetization-comparison.md` + `wiki/concepts/three-formula-system-polymarket-rare-events.md` + `../projects/SEO:GEO B&M Business/wiki/sources/aggarwal-2024-geo-paper.md`.
 
-### What was created (committed across 5 git repos)
+K45 declared. Four Phase-1 launch-asset briefs staged in `briefs/` — all paste-ready, all skill_audit PASS 100/100.
 
-**OSINT-wiki** (1 source + 1 concept + 7 entity pages):
-- Source: `eval-tool-evaluation-cemini-multi-wiki-v3-2026-05-14.md`
-- Concept: `multi-wiki-eval-doc-level-vs-phase-0.md` — formalizes K43 two-gate lesson; documents LLM-eval skepticism flags (self-claimed anti-hallucination, footnote-without-bibliography)
-- Deep entity: `aulekator-polymarket-btc-bot.md` (NautilusTrader 15-min BTC, direct K43 Polymarket-integration follow-up, 7 Phase-0 gates)
-- Stubs: supavec / lap-platform / awesome-polymarket-tools-harish-garg (CC0 supersedes the rejected unlicensed alternative) / citriniresearch-2028-gic / 2 reject stubs (awesome-osint-arsenal, awesome-prediction-market-tools-aarora4)
+### What was created (this session, all in `briefs/`)
 
-**ccc-wiki** (9 stubs): alumnium + optillm + adamsreview (K37 convergence) + thuki + jcode (solo 6.1k★ inflation flag) + red-run (GPL patterns only) + lap-platform + gtm-agents + gym-anything (Defer)
+- **`2026-05-14_the-tail-landing-page.md`** — Substack-ready hero + sections + JSON-LD FAQPage schema for AEO. GEO/AEO-treated per Aggarwal 2024: Quotation Addition (+41 % PAWC preliminary GEO-bench finding) via Shannon 1948 / Taleb 2007 author-quote blocks positioned in the first 30 % of each section; Statistics Addition via subhead percentages; Fluency Optimization throughout (Business-category top-performer per Aggarwal preliminary). 6-question FAQ schema covers methodology + founders'-tier mechanics + disclaimer. **skill_audit 100/100 PASS.**
+- **`2026-05-14_the-tail-about-page.md`** — trust-anchor companion to the landing page. E-E-A-T-built (Experience / Expertise / Authoritativeness / Trustworthiness); links public-wiki methodology page; track-record promise framed as starts-at-Issue-1 (no fabricated history). Disclosure footer + reply protocol. **skill_audit 100/100 PASS.**
+- **`2026-05-14_the-tail-twitter-launch-thread.md`** — 8-tweet Day-8 launch thread, each ≤280 chars (operator can verify counts in Twitter compose; Twitter URL-shortening to 23 chars accounted for). Methodology load-bearing in tweets 2-3 (Poisson + Shannon + Taleb named; 40/35/25 weighting explained). Tweet 6 = founders' tier offer. Tweet 8 = CTA wall (subscribe + wiki + track-sheet). Tagging guidance + 48-hour reply protocol + operator checklist included. **skill_audit 100/100 PASS.**
+- **`2026-05-14_the-tail-issue1-market-candidates.md`** — Issue 1 worked-example market screening framework + 3 illustrative candidates (Anthropic-Pentagon June-30 = recommended primary with CoI footnote / Crypto-ATH year-end = fallback if 6-8w derivative exists / Iran war-powers May-31 = skip, resolves too early). 5 hard filters + 3 soft preferences; operator re-runs framework on Day 4 (May 17) with fresh Polymarket state. **skill_audit 100/100 PASS** (1 false-positive citation-placeholder fixed inline).
 
-**cybersecurity-wiki** (1 deep + 5 stubs): **betterleaks** (highest-priority Adopt — pre-IP-sale codebase audit critical; CEL filter + BPE tokenization; 6 Phase-0 gates + 3-phase adoption plan) + ai-infra-guard + cariddi + czkawka (dual-license isolation) + supavec + red-run
+### ROADMAP updated
 
-**image-gen-wiki** (2 stubs): training-tools/czkawka (LoRA dedup via czkawka_core MIT crate) + custom-nodes/ai-infra-guard (ComfyUI vuln signatures)
+- **K45 sprint OPEN entry added** above K44 in `ROADMAP.md` (top of "Current state (end of 2026-05-14)" block). Includes Day-1-through-Day-30 schedule table with `Owner` column distinguishing User-only vs LLM-staged vs Gate-review rows. 4 staged briefs are listed as ready-to-paste. Day-14 / Day-21 / Day-30 gates wired per `/goal` constraints.
 
-**seo-wiki** (1 update + 1 stub):
-- **`geo-seo-claude.md` UPDATED** — pre-existing 2026-05-07 Phase-0 GO retained as authoritative; K44 cross-wiki convergence section appended (two independent evals converged on same GO → elevates signal quality, not duplicate work)
-- gtm-agents stub
+### What is NOT done in this session (intentional — operator action)
 
-### Key K44 architectural findings
+All Phase-1 launch actions that require the user's hands on Substack / Stripe / Twitter:
 
-1. **Cross-wiki convergence pattern formalized**: geo-seo-claude pre-existed at validated; K44 independent reconfirmation is high-signal (not "over-claimed finding" — actual cross-wiki convergence).
-2. **Star-inflation skepticism**: jcode 6.1k★ + geo-seo-claude 7.2k★ both solo maintainers — Phase-0 G1 (`gh api` star/fork ratio verification) is mandatory before adoption.
-3. **License posture clarifications**:
-   - czkawka **dual-license isolation** — extract czkawka_core (MIT) only; Krokiet/Cedinia GUI is GPL-3.0; verify via `cargo tree`.
-   - red-run + cariddi **GPL-3.0** — architectural patterns extractable, no library embedding.
-   - ai-infra-guard Apache-2.0 with **restrictive attribution clauses** — license deep-read required at Phase-0.
+1. Lock Substack handle (`thetail` → fallback ladder).
+2. Connect Stripe + configure tiers.
+3. Paste landing + About copy into Substack.
+4. Inject JSON-LD FAQ via custom HTML (or via static-site mirror if Substack free-tier blocks `<script>`).
+5. Publish public-wiki mirror of three-formula concept + 4 component pages on host of choice.
+6. Day-4 market screening re-run.
+7. Day-5-7 model run + Issue 1 drafting.
+8. Day-8 thread post.
 
-### K43 lesson reinforced (now formalized as concept page)
+Each of these is a user-action step in the K45 ROADMAP table. The LLM-staged briefs are the Day-1 unblocking payload — operator now has paste-ready copy for everything that needs words.
 
-K43 doc-level ADOPTs failed Phase-0 2-for-2: bukosabino/ta (parallel-implementation conflict with pandas-ta-classic) + tradingview-mcp (TOS-on-redistribution gate). K44 treats **all Adopt/Steal-from verdicts as `doc-level-pending-phase-0`** until Phase-0 source audit clears them. The concept page `multi-wiki-eval-doc-level-vs-phase-0.md` is now the canonical reference.
+### Open decisions for operator (pre-Day-3)
 
-### Wiki health
-
-- wiki_lint K44-specific bidirectional gaps: **0** (5 patched at K44 close: polymarket-clob-api, polymarket-gamma-api, three-formula-system, bukosabino-ta, tradingview-mcp-atilaahmettaner, eval-github-repos-2026-05-13, awesome-polymarket-tools)
-- Pre-existing dangling cross-wiki links from earlier K-series remain (tracked under K42/K43 cosmetic cleanup follow-ups in ROADMAP)
-- All 5 wiki repos have local commits; **not pushed** (no explicit user request to push)
+- Public-wiki host: static-site mirror (recommended; full indexability control) vs CeminiSuite kb-server public-DNS (only if reachable unauthenticated).
+- Stripe payout account: personal vs LLC (personal fine for first 30 days; switching supported later).
+- Substack tier: free vs paid (custom HTML may be locked on free tier — if so, static-site mirror handles FAQ schema).
+- Anthropic-Pentagon Issue-1 anchor: accept the CoI-footnote candidate, OR wait for Day-4 refresh and pick an alternative (recommended candidate-class: regulatory binary, 25-40 % implied, 5-8 week resolution).
 
 ### Workspace state
 
-- **Inbox** `research to be indexed/`: CLEAN
-- **Librarian**: `Tool Evaluation for Cemini Wiki Integration.docx` confirmed at `/opt/cemini-bulk/research/` (3 MB, 13:06 server time)
-- **Git** (5 wikis):
-  - OSINT: HEAD `f977a29` "K44 ingest — 28-URL multi-wiki eval doc v3"
-  - CCC: 9 K44 cross-route stubs committed (HEAD on K44 commit)
-  - Cybersec: 6 K44 entries (incl. betterleaks deep) committed
-  - Image-gen: 2 K44 stubs committed
-  - SEO: 1 stub + 1 update committed
-- **Briefs on cemini-prod**: unchanged from K43 close (no K44 briefs staged — K44 outputs are entity pages + Phase-0 audit queue, not deliverable briefs)
-
-### K44 follow-ups summary (full table in ROADMAP.md)
-
-**Phase-0 audit queue (14 items, ~7-14h estimated)**. Sequencing:
-1. **betterleaks** (pre-IP-sale critical, top priority)
-2. **aulekator-polymarket-btc-bot** (K43 follow-up)
-3. **CCC Adopt trio**: alumnium + optillm + adamsreview (K37 cross-reference)
-4. **gtm-agents** (SEO cross-route)
-5. **Steal-from kb-server pipeline**: supavec + LAP
-6. **CCC Steal-from**: thuki + jcode (solo-maintainer flag)
-7. **Cybersec Steal-from**: ai-infra-guard + cariddi + czkawka
-8. **GPL-patterns only**: red-run
+- **Inbox** `research to be indexed/`: CLEAN (unchanged from K44 close).
+- **Librarian**: no new raw sources this session (K45 is publish-asset staging, not ingest).
+- **Git (5 wikis)**: OSINT working tree has 4 new briefs + ROADMAP.md edit + hot.md edit (this file). 4 sibling wikis untouched. **Not committed yet** — recommend committing K45 staged-assets as a single bundle once user has reviewed.
+- **Briefs on cemini-prod**: unchanged. K45 outputs are laptop-side launch assets, not prod-execution briefs.
 
 ### Next session — resume options
 
-1. **Phase-0 audit: betterleaks** — top of K44 queue, pre-IP-sale-critical scope. Explore subagent ~30min.
-2. **Phase-0 audit: aulekator-polymarket-btc-bot** — K43 Polymarket follow-up; G3 must resolve whether bot uses Gamma+CLOB or scraping or vendor SDK.
-3. **Adams-review vs K37 reviewer-agent v2 convergence audit** — if mature, may obsolete K37 Sprint 5 deferral.
-4. **K43 Polymarket integration follow-up** — monitor server-Claude execution of `2026-05-13_polymarket-gamma-clob-integration.md`.
-5. **WW #178 third-source verification** — outstanding Exa-search candidate (Donny↔WW same-source dependency).
-6. **K42/K43 cosmetic lint cleanup** — pre-existing dangling cross-wiki links surfaced by wiki_lint.
+1. **Help operator publish Day-1 assets.** Walk through Substack handle/Stripe config; paste landing/About copy live; troubleshoot JSON-LD injection (custom HTML vs static-site mirror decision).
+2. **Day-4 market screening re-run** when operator is ready to draft Issue 1 — apply the 5 hard filters + 3 soft preferences against fresh Polymarket inventory; lock the worked-example market.
+3. **Issue 1 drafting (Days 5-7)** — once the market is locked, instantiate the 7-section outline from the 30-day plan with the chosen market's inputs; the three-formula concept page provides the canonical worked-example structure to clone.
+4. **K44 Phase-0 audit queue resumes** — `betterleaks` remains the highest-priority pre-IP-sale-critical audit item from K44; not displaced by K45 but parallelizable.
+5. **Track A (GEO/AEO local outreach)** — runs in parallel with The Tail launch per the 30-day plan; not staged this session, but operator can pull from `briefs/2026-05-14_30day-revenue-launch-plan.md` §Track A directly at any time.
