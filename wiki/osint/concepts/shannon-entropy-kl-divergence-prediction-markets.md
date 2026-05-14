@@ -11,9 +11,10 @@ related:
   - concepts/insider-detection-entropy-collapse.md
   - concepts/kelly-sizing-quarter.md
   - concepts/three-formula-system-polymarket-rare-events.md
+  - concepts/issue1-worked-example-anthropic-pentagon-2026.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 ## Relations

@@ -12,6 +12,7 @@ related:
   - concepts/insider-detection-entropy-collapse.md
   - entities/platforms/polymarket.md
   - entities/tools/aulekator-polymarket-btc-bot.md
+  - concepts/issue1-worked-example-anthropic-pentagon-2026.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-14

@@ -11,9 +11,10 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/three-formula-system-polymarket-rare-events.md
   - entities/platforms/polymarket.md
+  - concepts/issue1-worked-example-anthropic-pentagon-2026.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 ## Relations

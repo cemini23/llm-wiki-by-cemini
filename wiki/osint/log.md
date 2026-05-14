@@ -4972,3 +4972,24 @@ New sibling wiki onboarded at `../projects/Cybersecurity wiki/wiki/` (227-PDF co
 - `wiki/concepts/typed-relation-dependencies.md` — added explicit `## Relations` section (frontmatter `related:` was the only relation surface) with bullet for `@cybersecurity-wiki/concepts/osint-for-cybersecurity.md` (osint-for-cybersecurity page cites this as cross-wiki methodology reference). `updated:` bumped to 2026-05-12.
 
 No raw content imported. Cross-wiki references are pointers; the cybersecurity wiki holds its own pentest / red team / SOC / threat-hunting material and is queried via `@cybersecurity-wiki/...` resolution when an OSINT page or brief needs that domain. Future OSINT pentest-tooling or attack-surface synthesis should backlink rather than duplicate.
+
+## [2026-05-14] downstream-from-K45 | Outlier Weekly Issue 1 wiki cross-post
+
+- Added new concept page: `wiki/concepts/issue1-worked-example-anthropic-pentagon-2026.md`
+  - Second worked example for the parent three-formula synthesis (first being the canonical earthquake example)
+  - Formalizes "Poisson with caveats" framing for binary regulatory markets
+  - Documents the first published instance of the synthesis's skip-discipline (model–market convergence between 32¢ analytical draft and 27¢ publish-day lock)
+  - Records the directional-flip-on-small-drift sensitivity (~3pp re-run trigger threshold, tighter than the operator playbook's 5pp tolerance)
+  - Logs forward-track entry as wiki-internal calibration record (separate from the public forward-track page on the methodology mirror)
+- Updated bidirectional backlinks (5 concept pages + 1 entity page; `updated:` bumped to 2026-05-14 on each):
+  - `wiki/concepts/three-formula-system-polymarket-rare-events.md` → added `issue1-worked-example-anthropic-pentagon-2026.md` to `related:`
+  - `wiki/concepts/poisson-edge-rare-events.md` → added to `related:`
+  - `wiki/concepts/shannon-entropy-kl-divergence-prediction-markets.md` → added to `related:`
+  - `wiki/concepts/taleb-fat-tails-barbell-prediction-markets.md` → added to `related:`
+  - `wiki/concepts/kelly-sizing-quarter.md` → added to `related:`
+  - `wiki/entities/platforms/polymarket.md` → added to `related:`
+- Updated `wiki/index.md` catalog row (concepts section, after three-formula-system entry)
+- Source: *Outlier Weekly* Issue 1, published 2026-05-14 at https://outlierweekly.substack.com/p/issue-1-one-market-three-formulas
+- Public forward-track: https://cemini23.github.io/outlier-weekly-methodology/forward-track/ (Issue 1 SKIP row, with schema for future SKIP-CORRECT / SKIP-WRONG resolution discipline)
+- Public artifact: free issue, ~2,800 words; this concept page is the wiki cross-post per the K45 file-insights-back pattern
+- Staging brief: `briefs/2026-05-14_outlier-weekly-issue1-wiki-crosspost.md` (gitignored)

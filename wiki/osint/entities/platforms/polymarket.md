@@ -46,9 +46,10 @@ related:
   - concepts/kelly-sizing-quarter.md
   - entities/tools/bukosabino-ta.md
   - entities/tools/tradingview-mcp-atilaahmettaner.md
+  - concepts/issue1-worked-example-anthropic-pentagon-2026.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 ## Relations
