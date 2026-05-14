@@ -2,8 +2,8 @@
 title: "aulekator/Polymarket-BTC-15-Minute-Trading-Bot — 15-minute BTC algorithmic trading framework"
 type: entity
 category: tool
-tags: [entity, tool, trading-bot, nautilustrader, polymarket, btc, prediction-markets, k44, adopt-doc-level-pending-phase-0]
-keywords: [polymarket-btc-bot, nautilustrader, redis-state, binance-websocket, coinbase-rest, prometheus-grafana, 15min-bar, mit-license]
+tags: [entity, tool, trading-bot, nautilustrader, polymarket, btc, prediction-markets, k44, no-go-phase-0-2026-05-14, steal-from-adapter-only, abandoned-after-pump, missing-license]
+keywords: [polymarket-btc-bot, nautilustrader, redis-state, binance-websocket, coinbase-rest, prometheus-grafana, 15min-bar, mit-license-unverified, py-clob-client-sdk, gamma-api-monkey-patch, abandoned-after-pump]
 related:
   - sources/eval-tool-evaluation-cemini-multi-wiki-v3-2026-05-14.md
   - entities/tools/polymarket-clob-api.md
@@ -11,7 +11,7 @@ related:
   - concepts/three-formula-system-polymarket-rare-events.md
   - concepts/cemini-license-posture.md
   - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
-maturity: adopt-doc-level-pending-phase-0
+maturity: validated
 created: 2026-05-14
 updated: 2026-05-14
 ---
@@ -32,18 +32,22 @@ A 15-minute BTC trading framework wrapping the NautilusTrader open-source quant 
 
 ## Narrative
 
-### Verdict snapshot (doc-level, K44)
+### Verdict snapshot (post-Phase-0, 2026-05-14)
 
-| Dimension | Value | Source |
+| Dimension | Value | Status |
 |-----------|-------|--------|
-| Verdict | **Adopt** (doc-level) | K44 eval |
-| License | MIT | K44 eval (UNVERIFIED at source level) |
-| Stars | 274 | K44 eval (UNVERIFIED) |
-| Last commit | NOT FOUND | K44 eval |
-| Stack | Python 3.14+, NautilusTrader, Redis, Grafana, Prometheus | K44 eval |
+| Verdict | **Adopt** (doc-level) → **NO-GO** (Phase-0 2026-05-14) | Phase-0 audit |
+| Adapter sub-verdict | **STEAL-FROM** (Polymarket adapter code is reusable) | Phase-0 G3 PASS |
+| License | **NO LICENSE FILE** (MIT claim unverified) | **Phase-0 G2 FAIL** |
+| Stars | 281 (vs claimed 274) | Phase-0 G1 OK |
+| Last code commit | **2026-02-22 (78d stale; metadata-only push 2026-05-14)** | **Phase-0 G1 abandoned-after-pump** |
+| Contributors | 1 (single-maintainer) | Phase-0 G1 single-bus-factor |
+| Project age | Created 2026-02-15 (~90d) | Phase-0 G1 OK |
+| Stack | Python 3.14+, NautilusTrader 1.222.0, Redis 7.1.1, Prometheus, Grafana | **VERIFIED** |
+| Polymarket adapter | **py-clob-client 0.34.5 SDK + Gamma API monkey-patch** (TOS-compliant) | Phase-0 G3 PASS |
 | Primary fit | Cemini-financial | K44 eval |
-| Cross-routes | OSINT (data ingestion schemas) | K44 eval |
-| Cemini status | **doc-level-pending-phase-0-2026-05-14** | this page |
+| Cross-routes | OSINT (data ingestion schemas), CCC (skeleton patterns) | K44 eval |
+| Cemini status | **NO-GO** for bot adoption; **STEAL-FROM** for adapter code only | Phase-0 verdict |
 
 ### What the doc-level eval claims
 
@@ -62,25 +66,42 @@ This is the **single most operationally aligned K44 candidate** for the existing
 2. The Polymarket adapter is **the missing link in the K43 Gamma+CLOB integration**: K43 shipped infrastructure for market discovery + execution; this bot provides a working strategy template that exercises both.
 3. The Prometheus+Grafana stack aligns with the existing Cemini observability posture.
 
-### Phase-0 audit gates (must clear before adoption)
+### Phase-0 audit verdict (2026-05-14)
 
-| # | Gate | Method | Block |
-|---|------|--------|-------|
-| G1 | **Star + maturity verification** | `gh api repos/aulekator/Polymarket-BTC-15-Minute-Trading-Bot` — confirm 274 stars, last commit date, contributor count | If commit history is <30 days old or last commit >180 days stale, downgrade to Defer |
-| G2 | **License verification** | `gh api repos/.../license` + read LICENSE file | If not actually MIT, escalate to Reject |
-| G3 | **Polymarket adapter audit** | Read repo, identify whether Polymarket ingestion uses Gamma, CLOB, or unofficial scraping | Scraping ⇒ TOS-gate (same class as tradingview-mcp NO-GO 2026-05-13) |
-| G4 | **NautilusTrader version pinning** | Check `requirements.txt` / `pyproject.toml` for NautilusTrader version | Pinning to a fork or unreleased commit ⇒ Defer |
-| G5 | **Python 3.14+ requirement** | Confirm Python 3.14 actually required (3.14 is bleeding-edge for May 2026); validate /opt/cemini Python version | Incompatible ⇒ requires either downgrade-and-test or Defer |
-| G6 | **Binance / Coinbase commercial-TOS audit** | Both data feeds have commercial-use clauses; confirm bot's usage pattern is compatible with Cemini's anticipated IP-sale (i.e., does the buyer inherit the API keys?) | TOS-fail ⇒ Steal-from (extract architecture only) |
-| G7 | **Backtesting realism** | Read the backtest harness; confirm it uses tick or order-book data, not just bar-close (15-min bars alone are too coarse for prediction-market sentiment overlay) | Bar-close-only ⇒ adapter incomplete |
+| # | Gate | Status | Finding |
+|---|------|--------|---------|
+| G0 | Repo discovery | **PASS** | `aulekator/Polymarket-BTC-15-Minute-Trading-Bot` exists with exact name |
+| G1 | Star + maturity | **CONDITIONAL FAIL** | 281 stars verified, BUT single-maintainer + monolithic single-commit (2026-02-22) + zero commits in 78 days = textbook abandoned-after-pump |
+| G2 | License verification | **FAIL** | **No LICENSE file in repo**; MIT claim from K44 eval is unverified — auto-reject under Cemini house policy |
+| G3 | Polymarket adapter | **PASS** (TOS-safe) | py-clob-client 0.34.5 SDK for CLOB execution + Gamma API monkey-patch for market discovery. No scraping. Env-var credentials only. Architecture is **production-grade** even though bot is abandoned |
+| G4 | NautilusTrader version | **PASS** | Pinned to 1.222.0 release tag, not forked, upstream-trackable |
+| G5 | Python 3.14+ requirement | **PASS-burdensome** | Hard-required (3.14 confirmed via .pyc). Cemini-prod on 3.12/3.13 = upgrade burden |
+| G6 | Binance/Coinbase TOS | **PASS** | Public WebSocket/REST endpoints only; no API keys in code/config; env-var pattern correct |
+| G7 | Backtesting harness | **FAIL** | No BacktestEngine usage; live-trading-only; 15-min bar strategy unvalidated against history; only unit tests, no historical replay |
+| G8 | Failure modes / credential hygiene | **MEDIUM-RISK** | No hardcoded keys, env-vars only, no `.env` in git ✓. BUT: single-thread async with no documented crash recovery |
+| G9 | "7-Phase architecture" claim | **UNSUPPORTED** | README diagram only; never enumerates the 7 phases. Marketing language, not engineering spec |
+| G10 | Solana RPC support | **VAPORWARE** | `data_sources/solana/rpc.py` (280 LOC Pyth stub) exists but never integrated into `bot.py`; no test coverage |
 
-### Reconsideration / upgrade gates
+**Verdict: NO-GO for bot adoption** (license + abandoned-codebase blockers).
+**Sub-verdict: STEAL-FROM for Polymarket adapter** (py-clob-client integration + Gamma monkey-patch are clean and reusable).
 
-Verdict upgrades to **GO** if Phase-0 audit clears **all** of: G1 + G2 + G3 (no scraping) + G6 (commercial-TOS clean for IP-sale).
+### Polymarket adapter — what to steal (the only Adopt-tier signal in this repo)
 
-Verdict downgrades to **STEAL-FROM** if any of: G3 reveals scraping; G6 reveals incompatible commercial TOS; G4 reveals unreleased-fork dependency.
+If Phase-0 has cleared the adapter even though the bot fails, the load-bearing code paths worth extracting are:
 
-Verdict downgrades to **DEFER** if G1 reveals stale repo (>180d) or unstable maturity signal.
+1. **`execution/polymarket_client.py`** — direct py-clob-client SDK wrapper. EOA signature-based auth. Order lifecycle: `create_order()` → sign → `post_order()` → `get_orders()` → `cancel_order()`. Drop-in for Cemini's K43 CLOB execution layer.
+
+2. **`patch_gamma_markets.py`** — monkey-patch for NautilusTrader's `PolymarketInstrumentProvider`. Fixes array-parameter handling for slug-based filtering. Critical if Cemini uses NautilusTrader as the strategy host. Otherwise, the underlying Gamma API call pattern is the part worth copying.
+
+3. **`nautilus_polymarket_integration.py`** — config-driven integration glue. Shows the env-var contract (`POLYMARKET_PK`, `POLYMARKET_API_KEY`, `POLYMARKET_API_SECRET`, `POLYMARKET_PASSPHRASE`, `POLYMARKET_FUNDER`).
+
+4. **Signal processors** (spike_detector, sentiment, divergence) — multi-signal fusion patterns. Less directly applicable than the adapter, but reusable as a reference for combining bar-close BTC signals with prediction-market sentiment.
+
+**What NOT to steal**:
+
+- The monolithic `bot.py` (1,463 LOC, 36 classes/functions in one file) — abandoned, no modular phase decomposition
+- The Solana RPC code — unused, untested, integration path unclear
+- The strategy logic itself — never backtested; cannot trust without independent validation
 
 ### Relationship to existing K43 Polymarket work
 
@@ -98,5 +119,9 @@ Verdict downgrades to **DEFER** if G1 reveals stale repo (>180d) or unstable mat
 
 ## Dead Ends
 
-- **K44 eval does not specify the Polymarket adapter's API surface.** Whether it integrates with Gamma (REST, market-discovery), CLOB (REST + WS, execution), or both is unknown from the doc-level eval. This is Phase-0 gate G3.
-- **Repo URL `https://github.com/aulekator/Polymarket-BTC-15-Minute-Trading-Bot` not yet verified to exist.** K44 eval claims a 274-star MIT repo but provides no last-commit date or contributor count; standard K43-style doc-level skepticism applies. Phase-0 gate G1 covers this.
+- **K44 doc-level Adopt verdict failed at Phase-0** — this is the 3rd K43/K44-class doc-level→Phase-0 failure (joining bukosabino/ta + tradingview-mcp). The pattern is now thoroughly established: doc-level eval is **necessary but never sufficient**. The K44 eval correctly identified an interesting Polymarket-NautilusTrader integration but missed the abandoned-after-pump signals + missing LICENSE.
+- **No-license repo is auto-Reject under house policy** ("no license = no rights granted"). Even with a TOS-clean Polymarket adapter, the surrounding code cannot be redistributed or relicensed without owner consent. STEAL-FROM the adapter via clean-room reimplementation, do not vendor or fork.
+- **Abandoned-after-pump pattern** — 281 stars accumulated in 3 months on a project with **a single commit and zero post-launch maintenance** is the textbook HN-spike-then-silence signal. Trust the maturity signal, not the star count. Phase-0 G1 caught this where a doc-level eval would not have.
+- **The Polymarket adapter being clean does NOT save the bot.** Adopt-tier requires the whole package (license + maintenance + tests). Adapter-only quality is a STEAL-FROM result, not an Adopt rescue.
+- **"7-Phase architecture" was marketing language** — the README diagram never enumerates the 7 phases. When eval docs use suspiciously specific N-phase numbering with no formal spec, treat as evidence-of-LLM-hallucination-or-author-marketing.
+- **Solana RPC was correctly flagged in the K44 eval itself** as needs-verification — Phase-0 confirmed it as vaporware. When the eval doc itself raises a flag, take it seriously.
