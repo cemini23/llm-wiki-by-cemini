@@ -20,10 +20,10 @@
 
 ## 4. Harmfulness audit harness
 
-- [ ] 4.1 Create `conductor/reviewer/harmfulness_audit.py` as an offline CLI tool taking a directory of trajectory JSON files
-- [ ] 4.2 For each trajectory: replay the tool call through trigger-policy + reviewer; classify outcome as `unchanged`, `revised-still-correct`, `revised-now-incorrect`, or `refused`
-- [ ] 4.3 Emit per-trajectory verdicts and an aggregate report showing harmfulness rate + over-cautious-refusal sub-rate
-- [ ] 4.4 Validation gate: harness reports harmfulness rate ≤ v1 baseline on ≥50 held-out correct trajectories before promotion
+- [x] 4.1 Create `conductor/reviewer/harmfulness_audit.py` as an offline CLI tool taking a directory of trajectory JSON files  *(landed 2026-05-13; `audit_trajectories(traj_dir, policy, reviewer, *, baseline_rate=None, min_trajectories=50) -> Dict` library API + CLI entry `python -m conductor.reviewer.harmfulness_audit <dir> --policy <yaml> --reviewer <spec>`; sorted-filename iteration for deterministic output; non-`.json` files ignored; `--reviewer` accepts `passthrough` (built-in stub) or `module.path:callable` dynamic import)*
+- [x] 4.2 For each trajectory: replay the tool call through trigger-policy + reviewer; classify outcome as `unchanged`, `revised-still-correct`, `revised-now-incorrect`, or `refused`  *(landed 2026-05-13; `Outcome` enum + `_replay_outcome` / `_classify_outcome` pure helpers; SKIP_REVIEW → UNCHANGED (reviewer never invoked); ALWAYS_REVIEW → invokes reviewer + compares verdict to base/expected; refused-flag distinguishes REFUSED from REVISED_NOW_INCORRECT; ReviewerVerdict dataclass formalizes the reviewer contract for future production wiring; AssertionError guards against classify() returning non-terminal bucket)*
+- [x] 4.3 Emit per-trajectory verdicts and an aggregate report showing harmfulness rate + over-cautious-refusal sub-rate  *(landed 2026-05-13; report shape: `total`, `by_outcome` (all 4 enum values), `harmfulness_rate = (revised_now_incorrect + refused) / total`, `over_cautious_refusal_rate = refused / total`, `by_bucket` + `by_tool` roll-ups both alphabetically sorted, full per-trajectory `verdicts` list with id+tool+bucket+outcome; refusal counts toward BOTH harmfulness AND the over-cautious sub-rate (covered by test_reviewer_refuses_counts_to_both_rates))*
+- [x] 4.4 Validation gate: harness reports harmfulness rate ≤ v1 baseline on ≥50 held-out correct trajectories before promotion  *(landed 2026-05-13; `validation` block always present in report; `passed=True` iff (`harmfulness_rate <= baseline_rate` AND `total >= min_trajectories`); `insufficient_data=True` when sample < min; CLI exit codes — 0 pass / 1 gate-fail / 2 insufficient / 3 input-error (malformed JSON, missing dir, unresolvable reviewer); `--baseline-rate` omission triggers informational-only mode with `passed=None` so CI can run the audit without gating; default `min_trajectories=50` per spec Decision)*
 
 ## 5. Migration + rollout
 
