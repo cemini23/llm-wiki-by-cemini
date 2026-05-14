@@ -6,6 +6,26 @@ Newest entries on top.
 
 ---
 
+## 2026-05-13 — OpenSpec produces well-tested code but doesn't validate spec-vs-production alignment
+
+K42 OpenSpec adoption pilot, Phase-2: 4 of 5 sprints landed (Sprints 1-4, 105/105 tests pass, harmfulness-audit gate verified end-to-end against the bundled policy). At the Sprint 5 (rollout) gate, a read-only SSH probe of the actual production Conductor at `cemini-librarian:/opt/cemini/conductor/` surfaced the operational truth: **the production `ToolOrchestrator` dispatches only `kb_search` + `stash_recall` — both read-only.** None of the 8 Polymarket tools that the K37 spec + bundled `policy.yaml` enumerate (`place_order`, `withdraw`, `close_position`, `cancel_order`, `submit_research_query`, plus quote tools) exist in production yet.
+
+Sprint 5 was decided as **DEFERRED**, not deployed. Deploying middleware that classifies every existing tool as `skip-review` would be dead infrastructure plus a confidence trap (a future dev reading "K37 reviewer-agent v2 is in production" would reasonably infer trading is gated when no gate path is firing). K37 code stays at `conductor/reviewer/` as the pilot deliverable; OpenSpec change `reviewer-agent-selective-trigger` gets a `DEFERRED.md` with the re-open trigger documented; tasks 5.1-5.5 are explicitly marked deferred with reason.
+
+**The methodology gap**: spec-driven development as practiced in OpenSpec is **internally** rigorous — the proposal/design/specs/tasks artifact bundle validates first-try, code lands deterministic against the locked spec, tests pass on the first run. None of that **externally** validates that the tool surface enumerated in the spec exists in production. The Phase-1 + Phase-2 pilot succeeded on its load-bearing measurement objective (Opus vs Sonnet 4.6 comparative author quality + spec→code determinism) AND simultaneously shipped a fully-tested middleware for a hypothetical tool surface. Both facts are true.
+
+The spec was authored against the K37 concept doc, which describes a **future-state** trading integration. The OpenSpec workflow does not have a hook for "verify the production code already exposes the tool surface this spec claims to gate." A hypothetical 5th artifact `grounding.md` (or a `## Production reality check` section in `design.md`) might close this — TBD whether it's worth introducing without a second instance.
+
+**Three sub-lessons compound:**
+
+1. **Specs need a grounding check before any "land behind feature flag" task.** The cheap version: every OpenSpec change with a Sprint that wires into a runtime path MUST include a 1-line `## Production reality check` section listing the actual import path + the actual tool/function the middleware hooks. The check is one `ssh ls /opt/.../module.py` + one `grep <hook_function>` — same shape as Phase-0 audits.
+2. **Pilot-deliverable status is a valid terminal state.** Sprints 1-4 are not wasted: they're a tested + reviewable + re-openable design artifact for when the Polymarket surface lands. The OpenSpec change directory + the `conductor/reviewer/` source directory together ARE the artifact; they need to stay intact, not be deleted. The `DEFERRED.md` documents the re-open trigger so the next reader doesn't redo the design work.
+3. **The OpenSpec pilot's own measurement objective succeeded independently.** Opus 4.7 and Sonnet 4.6 both produced first-try-validating bundles; Sonnet matched Opus on artifact validation while diverging on a single safety-semantic choice (missing-confidence handling) that surfaced through normal review. That is **the** load-bearing finding for adopting OpenSpec across other Cemini workstreams. The Polymarket-mismatch is orthogonal — it's a gap in *how we author specs*, not in OpenSpec itself.
+
+*Apply*: From now on, any OpenSpec change with a runtime-wiring task (the equivalent of K37's Task 1.3 / Sprint 5.x) gets a `## Production reality check` line in `design.md` that names the target import path + hook function in the actually-running code, verified via a read-only SSH probe before the proposal is accepted. If the target doesn't exist yet, the change must explicitly state "pre-positioning infrastructure for future tool surface X" and call it out at the proposal stage rather than discovering it at deployment time. See `openspec/changes/reviewer-agent-selective-trigger/DEFERRED.md` for the K37 re-open trigger documenting what production state would unblock this work.
+
+---
+
 ## 2026-05-13 — Cemini adopts SKILL.md frontmatter spec internally (spec-only, not catalog)
 
 K42 follow-up landed: `briefs/2026-05-13_agent-skills-spec-decision.md` recommended Axis A (adopt the SKILL.md spec format) but explicitly reject Axis B (catalog content dependency). The K42 eval cited `package-security-check` skill was removed from the `instructa/agent-skills` HEAD on 2026-05-12 — 12 days between evaluation and removal. **Catalog churn is too fast to depend on.**

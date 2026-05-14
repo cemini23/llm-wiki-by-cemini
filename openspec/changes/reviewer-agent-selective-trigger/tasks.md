@@ -25,10 +25,19 @@
 - [x] 4.3 Emit per-trajectory verdicts and an aggregate report showing harmfulness rate + over-cautious-refusal sub-rate  *(landed 2026-05-13; report shape: `total`, `by_outcome` (all 4 enum values), `harmfulness_rate = (revised_now_incorrect + refused) / total`, `over_cautious_refusal_rate = refused / total`, `by_bucket` + `by_tool` roll-ups both alphabetically sorted, full per-trajectory `verdicts` list with id+tool+bucket+outcome; refusal counts toward BOTH harmfulness AND the over-cautious sub-rate (covered by test_reviewer_refuses_counts_to_both_rates))*
 - [x] 4.4 Validation gate: harness reports harmfulness rate ≤ v1 baseline on ≥50 held-out correct trajectories before promotion  *(landed 2026-05-13; `validation` block always present in report; `passed=True` iff (`harmfulness_rate <= baseline_rate` AND `total >= min_trajectories`); `insufficient_data=True` when sample < min; CLI exit codes — 0 pass / 1 gate-fail / 2 insufficient / 3 input-error (malformed JSON, missing dir, unresolvable reviewer); `--baseline-rate` omission triggers informational-only mode with `passed=None` so CI can run the audit without gating; default `min_trajectories=50` per spec Decision)*
 
-## 5. Migration + rollout
+## 5. Migration + rollout — **DEFERRED 2026-05-13**
 
-- [ ] 5.1 Land all of (1)-(4) behind the `reviewer_v2_enabled` feature flag
-- [ ] 5.2 Flip flag to `true` in staging Cemini; run harmfulness audit; soak for 7 days
-- [ ] 5.3 Monitor cost-telemetry monthly-spend estimate vs pre-rollout forecast; abort and rollback if delta > 30%
-- [ ] 5.4 Promote to production; document rollback procedure (flip flag to false) in operational runbook
-- [ ] 5.5 Archive this change via `openspec archive reviewer-agent-selective-trigger` after production promotion
+All Sprint 5 tasks are deferred pending a Polymarket integration that
+introduces a real trading tool surface to gate. The current production
+Conductor at `/opt/cemini/conductor/` orchestrates Q&A routing only —
+its `ToolOrchestrator` dispatches `kb_search` + `stash_recall`, both
+read-only. Deploying Sprint 5 today would land middleware that gates
+nothing and risks a false-confidence trap. See `DEFERRED.md` in this
+change directory for the full operational rationale and re-open
+trigger.
+
+- [ ] 5.1 Land all of (1)-(4) behind the `reviewer_v2_enabled` feature flag  *(DEFERRED — no production tool surface to gate)*
+- [ ] 5.2 Flip flag to `true` in staging Cemini; run harmfulness audit; soak for 7 days  *(DEFERRED — no held-out correct trajectories exist; gate uncalibrated)*
+- [ ] 5.3 Monitor cost-telemetry monthly-spend estimate vs pre-rollout forecast; abort and rollback if delta > 30%  *(DEFERRED — no observed spend baseline)*
+- [ ] 5.4 Promote to production; document rollback procedure (flip flag to false) in operational runbook  *(DEFERRED — blocked by 5.1-5.3)*
+- [ ] 5.5 Archive this change via `openspec archive reviewer-agent-selective-trigger` after production promotion  *(DEFERRED — re-opens when Polymarket tool surface lands; pilot deliverable retained at `conductor/reviewer/` and as this OpenSpec bundle)*
