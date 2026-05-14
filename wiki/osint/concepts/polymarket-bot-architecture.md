@@ -8,6 +8,11 @@ related:
   - entities/platforms/polymarket.md
   - concepts/cemini-license-posture.md
   - concepts/polymarket-weather-trading-strategy.md
+  - concepts/kelly-sizing-quarter.md
+  - entities/tools/bukosabino-ta.md
+  - entities/tools/polymarket-clob-api.md
+  - entities/tools/polymarket-gamma-api.md
+  - sources/alterego-eth-polymarket-gamma-vs-clob.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-05-13

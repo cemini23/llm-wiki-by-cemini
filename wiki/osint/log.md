@@ -1,5 +1,51 @@
 # Wiki Log
 
+## [2026-05-13] K43 ingest | 5 sources: AlterEgo/de1lymoon Polymarket tradecraft + WW #178 + NL paper + 14-repo GitHub audit (largest cross-wiki routing event so far)
+
+- **Sources ingested** (5 → moved to librarian):
+  - `alterego-eth-polymarket-gamma-vs-clob.md` — X thread by @AlterEgo_eth: Gamma vs CLOB API tradecraft. Two-step flow (Gamma discovery → CLOB execution). `clobTokenIds[0]=YES, [1]=NO` bridge. Python `get_token_ids()` helper. Adopt-tier source for Polymarket integration.
+  - `de1lymoon-three-formulas-2026-05.md` — X thread by @de1lymoon: Three quant formulas for Polymarket rare events. Poisson P(X≥1)=1−e^(−λT). Shannon entropy + KL divergence with bit-thresholds. Taleb fat-tails + 85/15 barbell. Quarter-Kelly synthesis. 5¢/1¢ contract mispricing stats (verification gated).
+  - `eval-github-repos-2026-05-13.md` — Cemini-internal 14-repo audit: 5 ADOPT (all MIT) + 1 STEAL-FROM (AGPL-3.0 tolaria) + 1 DEFER (multi-codex) + 3 REFERENCE-ONLY + 4 REJECT. **Largest cross-wiki routing event observed**: touches all 6 sibling wikis (osint + image-gen + seo + 3d-printing + cybersec + ccc).
+  - `nl-nested-learning-behrouz-neurips2025.md` — Google Research NeurIPS 2025 paper. Hope/CMS/M3/DGD — multi-timescale memory architecture. Routed to ccc-wiki primary; osint-wiki stub for cross-reference.
+  - `ww-issue-178-2026-05-13.md` — Weekly Wizdom #178. Hot CPI macro + Trump–Xi catalyst. ZEC +33% to $640 (Grayscale ETF filing). NEAR cup-and-handle breakout. NNE/LIF/REA/LAR/ELVR critical-minerals basket. BTC long $75.5K → $84K. SOL short $92.63 → $83.
+
+- **OSINT concepts created** (8):
+  - `poisson-edge-rare-events.md` — Formula 1 fair-value calc with quarter-Kelly sizing, worked example, sanity-check rules.
+  - `shannon-entropy-kl-divergence-prediction-markets.md` — Formula 2 information-edge sizing with KL bit-threshold table, `scan_markets()` impl, insider-detection sub-pattern.
+  - `taleb-fat-tails-barbell-prediction-markets.md` — Formula 3 portfolio construction with 85/15 split, kurtosis/Hill estimator, 5¢/1¢ mispricing notes.
+  - `kelly-sizing-quarter.md` — quarter-Kelly default, model-error buffer, override hooks, hard-cap architecture (universal sizing primitive).
+  - `insider-detection-entropy-collapse.md` — 3σ rolling Shannon entropy drop + news cross-reference = stay-out signal. Single-source TENTATIVE; defensive sub-signal only.
+  - `three-formula-system-polymarket-rare-events.md` — synthesis `complete_rare_event_system()` with 40/35/25 (Poisson/Estimate/Fat-tail) weights. Operational gates + Cemini entry point.
+  - `nested-learning.md` — osint-side stub pointing to ccc-wiki primary (multi-timescale memory architecture).
+  - (Polymarket-bot-architecture, agent-cost-routing-model-orchestra, etc. updated via backlinks.)
+
+- **OSINT entity pages created** (13):
+  - **Polymarket API surface** (2): `polymarket-gamma-api.md` (discovery, public, no auth) + `polymarket-clob-api.md` (execution; 8 public-read endpoints, HMAC for writes).
+  - **Tools** (4): `bukosabino-ta.md` (ADOPT MIT 5.1k★ — 43 TA indicators), `tradingview-mcp-atilaahmettaner.md` (ADOPT MIT — 30+ MCP tools), `awesome-ai-agents-2026-zijian.md` (REFERENCE-ONLY frontier-model index), `awesome-systematic-trading-paperswithbacktest.md` (REFERENCE-ONLY no-license discovery-only).
+  - **Tickers** (7 new): `nne.md` (NNE small-modular-reactor), `lif.md` (highest-conviction WW pick), `lar.md` (Lithium Argentina multi-issue lifecycle), `zec.md` (Zcash +33%/Grayscale ETF), `near.md` (NEAR cup-and-handle), `hype.md` (Hyperliquid short setup), `home.md` (micro-cap sub-penny long).
+  - **Tickers updated** (5): `elvr.md` (WW #178 A$425M raise / TP US$120), `rea.md` (WW #178 IPO +38% to $27.60), `btc.md` (WW #178 long setup), `sol.md` (WW #178 short setup), `polymarket.md` (Gamma+CLOB+6 concept refs).
+
+- **Cross-wiki routes** (8 via `scripts/cross_wiki_route.py`):
+  - **ccc-wiki** (3): `nested-learning.md` page (primary), `2026-05-13_tolaria-steal-from-patterns.md` brief (AGPL refactoring patterns), `2026-05-13_multi-codex-codex-home-isolation.md` brief (CODEX_HOME env-var isolation trick).
+  - **cybersecurity-wiki** (3): `pydns-scanner-xullexer.md` entity stub, `pentest-ai-agents-0xsteph.md` entity stub, `2026-05-13_chekusu-mails-dual-use.md` brief (financial/regulatory mailroom + phishing-domain enumeration).
+  - **image-gen-wiki** (1): `2026-05-13_gracia-ai-volumetric-video.md` brief (Gaussian Splatting novel-view-synthesis).
+  - **3d-printing-wiki** (1): `2026-05-13_gracia-ai-volumetric-3d-export.md` brief (sibling — splat-to-print mesh export angle).
+
+- **Tier headlines** (K43 ADOPT-tier with Phase-0 audits gating commitment):
+  - **bukosabino/ta** (MIT 5.1k★) — pure-Python TA library, 43 indicators (RSI/MACD/Bollinger/Stochastic/ATR/Aroon). Direct dep for any Cemini strategy needing classical indicators. Caveat: layered-indicator stacks are a documented failure mode.
+  - **atilaahmettaner/tradingview-mcp** (MIT) — 30+ MCP tools for TradingView screener/indicator/chart APIs. Direct fit for Cemini MCP-server-tooling pattern.
+  - **Polymarket Gamma + CLOB APIs** — comprehensive API surface entity pages. Production-ready idiomatic Python flows documented; no auth required for market discovery + 8 read endpoints.
+  - **Three-formula synthesis** — `complete_rare_event_system()` for rare-event sizing on Polymarket. Composes Poisson edge + estimate + fat-tail with 40/35/25 weighting under universal quarter-Kelly cap.
+
+- **License posture observations**:
+  - 5 of 5 ADOPTs are MIT (continues Cemini house preference; IP-sale-readiness path of least resistance).
+  - AGPL-3.0 (tolaria) → STEAL-FROM patterns only; AGPL infects Cemini's distribution surface.
+  - PolyForm-Noncommercial (taskview-community) → auto-REJECT; explicitly forbids the commercial-distribution scenario at the core of Cemini's exit thesis.
+  - No-license repos (paperdraw.dev, anysniper/Frontend) → auto-REJECT under house policy.
+
+- **Same-source-confirmation flags raised**:
+  - ELVR / LAR / REA appear on both Donny watchlist + WW newsletter — flagged as **same originator**, not independent confirmation. Verification priority: secure an independent third source before treating thesis as confirmed.
+
 ## [2026-05-13] K42 ingest | 3 multi-wiki link-eval docs (104 URLs) + 29 entity stubs + 2 concepts + 2 cross-wiki briefs
 
 - **Sources ingested** (3 docx → moved to librarian):

@@ -7,11 +7,13 @@ ticker: SOL
 related:
   - entities/ticker-watchlist.md
   - concepts/crypto-asset-taxonomy.md
+  - sources/ww-issue-178-2026-05-13.md
+  - sources/ww-issue-176-2026-04-29.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-24
 created: 2026-04-24
-updated: 2026-04-25
+updated: 2026-05-13
 ---
 
 ## Relations
@@ -411,3 +413,13 @@ Solana price prediction | Tariffs and ETF Inflows Pause - Capital.com, accessed 
 ​​Solana (SOL) range bound after sell-off | Leverage reset and support hold - IG, accessed April 24, 2026, https://www.ig.com/uk/news-and-trade-ideas/_solana-range-trades-after-45--drop-as-leverage-reset-caps-volat-260218
 
 Solana Price At Risk As Key Pattern Emerges – Is $52 The Next Stop? - TradingView, accessed April 24, 2026, https://www.tradingview.com/news/newsbtc:c4600e424094b:0-solana-price-at-risk-as-key-pattern-emerges-is-52-the-next-stop/
+
+## WW #178 update (2026-05-13)
+
+WW Issue #178 lists active **SOL short setup**:
+
+- Entry: $92.63
+- Stop: $98.8
+- Targets: $88.68 / $83 (laddered)
+
+Threads forward from WW #176 (Apr 29 2026), which held 20-25% of initial SOL short position with potential adds layered at $85.5–87. WW #178 setup is a continuation/re-entry on the same short thesis at higher levels. See @sources/ww-issue-178-2026-05-13.md and @sources/ww-issue-176-2026-04-29.md.

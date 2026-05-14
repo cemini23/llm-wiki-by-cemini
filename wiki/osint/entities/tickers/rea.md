@@ -1,20 +1,28 @@
 ---
 title: "Rare Earths Americas (REA)"
 type: entity
-tags: [ticker, mining, rare-earths, critical-minerals, ipo]
-keywords: [REA, Rare Earths Americas, rare earth, dysprosium, terbium, Shiloh, IPO, critical minerals]
+tags: [ticker, mining, rare-earths, critical-minerals, ipo, ww-178]
+keywords: [REA, Rare Earths Americas, rare earth, dysprosium, terbium, Shiloh, IPO, critical minerals, ww-issue-178, plus-38-percent-ipo-day]
 related:
   - sources/donny-market-thoughts-2026-05-09.md
+  - sources/ww-issue-178-2026-05-13.md
   - concepts/rare-earth-supply-deficit-thesis.md
 maturity: draft
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-13
 ---
 
 ## Relations
 
 - Source: @sources/donny-market-thoughts-2026-05-09.md
+- @sources/ww-issue-178-2026-05-13.md — WW #178 (May 13): printed +38% IPO-day move ($19 → $27.60); WW TP $35 confirms Donny's TP
 - Concept: @concepts/rare-earth-supply-deficit-thesis.md
+
+## WW #178 update (2026-05-13)
+
+WW Issue #178 reports REA **opened +38% on IPO** to $27.60 from $19 priced. WW target price **$35** — matches Donny's target from the May 9 thoughts note. Multi-source confirmation (Donny + WW) on the same target hardens the thesis, but per CLAUDE.md cross-source signal rules, Donny + WW track each other on critical-minerals names — treat as **same-source confirmation**, not independent.
+
+Shiloh resource framing [NEEDS VERIFICATION 2026-05-13] — boulder assays vs SK-1300-compliant figures need disambiguation on next deep-read.
 
 ## Raw Concept
 

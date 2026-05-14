@@ -7,11 +7,12 @@ ticker: BTC
 related:
   - entities/ticker-watchlist.md
   - concepts/crypto-asset-taxonomy.md
+  - sources/ww-issue-178-2026-05-13.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-23
 created: 2026-04-23
-updated: 2026-04-25
+updated: 2026-05-13
 ---
 
 ## Relations
@@ -402,3 +403,13 @@ Top Blockchains Ranked by Total Value Locked (TVL) - CoinGecko, accessed April 2
 Developer Report: Analysis of Open-Source Crypto Developers by Electric Capital, accessed April 23, 2026, https://www.developerreport.com/
 
 A Closer Look at Bitcoin's Volatility - Fidelity Digital Assets, accessed April 23, 2026, https://www.fidelitydigitalassets.com/research-and-insights/closer-look-bitcoins-volatility
+
+## WW #178 update (2026-05-13)
+
+WW Issue #178 lists active **BTC long setup**:
+
+- Entry zone (laddered): $75.5K / $74.7K / $74.2K
+- Target: $84K
+- Closed trade printed earlier in cycle: BTC +2.89%
+
+Macro frame: hot CPI yesterday + Trump-Xi summit May 14 are the immediate catalysts. WW portfolio composition remains heavily crypto-tilted (55%), with BTC as the safe-base allocation within that bucket. See @sources/ww-issue-178-2026-05-13.md.

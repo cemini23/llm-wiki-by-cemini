@@ -34,9 +34,21 @@ related:
   - sources/polymarket-nba-arbitrage-2605.00864.md
   - concepts/polymarket-bot-architecture.md
   - sources/x-polymarket-bot-playbook-punisher-2026-05.md
+  - entities/tools/polymarket-gamma-api.md
+  - entities/tools/polymarket-clob-api.md
+  - sources/alterego-eth-polymarket-gamma-vs-clob.md
+  - sources/de1lymoon-three-formulas-2026-05.md
+  - concepts/poisson-edge-rare-events.md
+  - concepts/shannon-entropy-kl-divergence-prediction-markets.md
+  - concepts/taleb-fat-tails-barbell-prediction-markets.md
+  - concepts/three-formula-system-polymarket-rare-events.md
+  - concepts/insider-detection-entropy-collapse.md
+  - concepts/kelly-sizing-quarter.md
+  - entities/tools/bukosabino-ta.md
+  - entities/tools/tradingview-mcp-atilaahmettaner.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-11
+updated: 2026-05-13
 ---
 
 ## Relations
@@ -92,6 +104,22 @@ The K30 `Polymarket 5_5.docx` evaluation surfaced 11 Polymarket-internal librari
 | Other Polymarket-internal libs (subgraph utils, helpers, etc.) | Various supporting roles; pulled in transitively as needed |
 
 **Action discipline**: when implementing the Polymarket integration brief, install py-clob-client + python-order-utils as direct dependencies of the Cemini polymarket_client.py wrapper. Don't pin or refactor against the other Polymarket-internal libs unless explicitly required — they're maintained by Polymarket and update at Polymarket's cadence; Cemini benefits from staying close to the official upstream rather than forking.
+
+## API surface (added 2026-05-13 ingest)
+
+The 2026-05-13 ingest (@AlterEgo_eth + @de1lymoon) formalized two complementary entity pages for Polymarket's API surface and four quant-strategy concept pages:
+
+**API layer**
+- `@entities/tools/polymarket-gamma-api.md` — market discovery (public, no auth). `clobTokenIds[0]=YES`, `[1]=NO` is the bridge.
+- `@entities/tools/polymarket-clob-api.md` — execution + public reads. Eight read endpoints public; POST /order + cancels require HMAC.
+
+**Quant-strategy concepts** (from @de1lymoon)
+- `@concepts/poisson-edge-rare-events.md` — Formula 1: P(X≥1)=1−e^(−λT) → quarter-Kelly
+- `@concepts/shannon-entropy-kl-divergence-prediction-markets.md` — Formula 2: KL-bits threshold table for sizing
+- `@concepts/taleb-fat-tails-barbell-prediction-markets.md` — Formula 3: 85/15 safe/tail
+- `@concepts/three-formula-system-polymarket-rare-events.md` — synthesis (40/35/25 weights)
+- `@concepts/insider-detection-entropy-collapse.md` — defensive sub-signal; 3σ entropy drop + no-news ⇒ stay out
+- `@concepts/kelly-sizing-quarter.md` — universal sizing primitive
 
 ## Snippets
 
