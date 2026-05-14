@@ -6,17 +6,21 @@ keywords: [gamma-api, polymarket-discovery, conditionId, clobTokenIds, public-se
 related:
   - entities/platforms/polymarket.md
   - entities/tools/polymarket-clob-api.md
+  - entities/tools/aulekator-polymarket-btc-bot.md
+  - entities/tools/awesome-polymarket-tools-harish-garg.md
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
   - concepts/polymarket-bot-architecture.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 ## Relations
 
 - @entities/platforms/polymarket.md — the platform Gamma exposes
 - @entities/tools/polymarket-clob-api.md — paired execution-layer API
+- @entities/tools/aulekator-polymarket-btc-bot.md — K44 NautilusTrader-based bot; market-discovery via Gamma is one of the possible adapter paths (Phase-0 G3)
+- @entities/tools/awesome-polymarket-tools-harish-garg.md — K44 CC0 directory referencing Gamma tooling
 - @sources/alterego-eth-polymarket-gamma-vs-clob.md — primary source enumerating endpoints
 - @concepts/polymarket-bot-architecture.md — bot playbook that assumes correct Gamma/CLOB split
 

@@ -6,17 +6,19 @@ keywords: [bukosabino-ta, technical-analysis-library, ta, python-ta, 43-indicato
 related:
   - sources/eval-github-repos-2026-05-13.md
   - concepts/polymarket-bot-architecture.md
+  - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
   - entities/platforms/polymarket.md
   - entities/tools/tradingview-mcp-atilaahmettaner.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 ## Relations
 
 - @sources/eval-github-repos-2026-05-13.md — Phase-0 eval source (ADOPT verdict, May 13 2026 — superseded by Phase-0 audit below)
 - @concepts/polymarket-bot-architecture.md — bot playbook explicitly flags layered indicator stacks as failure mode; this is the tool, discipline is the user
+- @concepts/multi-wiki-eval-doc-level-vs-phase-0.md — canonical K43-failure example powering the two-gate pattern formalization
 - @entities/platforms/polymarket.md — typical consumer venue
 - @entities/tools/tradingview-mcp-atilaahmettaner.md — adjacent TA tooling; also NO-GO Phase-0 (TOS gate)
 

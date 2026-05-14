@@ -1,5 +1,33 @@
 # Wiki Log
 
+## [2026-05-14] K44 ingest | "Tool Evaluation for Cemini Wiki Integration" v3 (28-URL multi-wiki eval, all 6 wikis touched — new largest cross-wiki routing event)
+
+- **Source ingested** (1 docx → moved to librarian):
+  - `eval-tool-evaluation-cemini-multi-wiki-v3-2026-05-14.md` — Gemini Deep Research v3 multi-wiki eval. 28 URLs. Verdict rollup: **7 Adopt + 7 Steal-from + 1 Defer + 3 Reference + 3 Reject + 7 UNAVAILABLE**. Primary fit grid spans all 6 wikis. All Adopt/Steal-from verdicts treated as `doc-level-pending-phase-0` per K43 lesson (doc-level ADOPT failed 2-for-2 against Phase-0: bukosabino/ta parallel-impl + tradingview-mcp TOS).
+
+- **OSINT-wiki pages created** (1 source + 1 concept + 7 entities):
+  - **Concept**: `multi-wiki-eval-doc-level-vs-phase-0.md` — formalizes K43 lesson. Two-gate pattern (doc-level eval cheap-but-insufficient; Phase-0 clone-verify-test required for promotion). Documents LLM-eval skepticism flags (self-claimed anti-hallucination, footnote-without-bibliography). Concrete failure modes Phase-0 catches: parallel-implementation conflict, TOS-gate-on-redistribution, star-count-fork-ratio inflation.
+  - **Entities** (7): `aulekator-polymarket-btc-bot.md` (Adopt — NautilusTrader 15-min BTC, K43 follow-up, 7 gates incl. Polymarket adapter audit), `supavec.md` (Steal-from Apache-2.0 — PLpgSQL chunking for kb-server), `lap-platform.md` (Steal-from Apache-2.0 — OpenAPI→MCP compilation), `awesome-polymarket-tools-harish-garg.md` (Reference-only CC0), `citriniresearch-2028-gic.md` (Reference-only no-license macro essay), `awesome-osint-arsenal-rawfilejson.md` (Reject no-license), `awesome-prediction-market-tools-aarora4.md` (Reject no-license, mitigated alternative exists).
+
+- **Cross-wiki entities created** (17 total across 4 sibling wikis):
+  - **ccc-wiki** (9): `alumnium.md` (Adopt — AI-native E2E testing MCP), `optillm.md` (Adopt — LLM proxy with Z3 + MCP), `adamsreview.md` (Adopt — K37 reviewer-agent v2 convergence signal), `thuki.md` (Steal-from — SQLite local-first state extraction), `jcode.md` (Steal-from — solo-maintainer 6.1k★ flagged), `red-run.md` (Steal-from GPL-3.0 — agent-team pentest orchestration patterns only), `lap-platform.md` (cross-route from osint primary), `gtm-agents.md` (Adopt — Apache-2.0 GTM skill pack), `gym-anything.md` (Defer).
+  - **cybersecurity-wiki** (5): `betterleaks.md` **deep page** (Adopt — pre-IP-sale codebase audit critical; CEL filter + BPE tokenization for FP reduction; 6 Phase-0 gates + 3-phase adoption plan), `ai-infra-guard.md` (Tencent — 64 AI frameworks, ComfyUI vuln detection), `cariddi.md` (Steal-from GPL-3.0 — patterns only), `czkawka.md` (Steal-from — dual MIT/GPL license isolation: `czkawka_core` MIT extractable), `supavec.md` (cross-route — RLS patterns), `red-run.md` (cross-route — Sliver C2 + agent-team coordination).
+  - **image-gen-wiki** (2): `entities/training-tools/czkawka.md` (LoRA dataset dedup via `czkawka_core` MIT), `entities/custom-nodes/ai-infra-guard.md` (ComfyUI vuln detection signatures).
+  - **seo-wiki** (1 stub + 1 update): `entities/tools/gtm-agents.md` (creator marketing + social automation subset cross-route); **geo-seo-claude.md** updated — pre-existing Phase-0 GO (2026-05-07) reconfirmed by independent K44 eval (cross-wiki convergence signal elevates signal quality, retained as authoritative).
+
+- **K44 architectural findings**:
+  - **Cross-wiki convergence**: geo-seo-claude already adopted by seo-wiki 2026-05-07; K44 independent reconfirmation is a high-signal pattern (two independent evals converged on same GO verdict).
+  - **Star-inflation skepticism**: jcode (6.1k★ solo maintainer) + geo-seo-claude (7.2k★ solo maintainer) flagged as high-prior for star/fork ratio inflation. Phase-0 gate G1 (gh api star/fork verification) required before promotion.
+  - **License posture clarifications**: czkawka dual-license (czkawka_core MIT extractable, GUI GPL-3.0 poison); red-run GPL-3.0 (architectural patterns only, no embedding); cariddi GPL-3.0 (same).
+  - **K43 cross-route**: aulekator-polymarket-btc-bot is direct K43 follow-up (Polymarket integration); Phase-0 G3 must determine whether bot uses Gamma+CLOB (K43-blessed flow), legacy scraping (caveat), or vendor SDK.
+
+- **Files moved to librarian**:
+  - `Tool Evaluation for Cemini Wiki Integration.docx` → `cemini-librarian:/opt/cemini-bulk/research/`
+
+- **ROADMAP K44 follow-ups added**:
+  - Phase-0 audit queue: 14 actionable items (7 Adopt + 7 Steal-from). Priority order: (1) betterleaks (pre-IP-sale critical), (2) aulekator-polymarket-btc-bot (K43 follow-up), (3) alumnium + optillm + adamsreview (CCC adopt tier), (4) gtm-agents (seo cross-route), (5) supavec + LAP (steal-from kb-server pipeline), (6) thuki + jcode (CCC steal-from), (7) ai-infra-guard + cariddi + czkawka (cybersec steal-from), (8) red-run (GPL — concepts only).
+  - Estimated effort: ~7-14 hours total Phase-0 audit time (30-60min per item).
+
 ## [2026-05-13] K43 ingest | 5 sources: AlterEgo/de1lymoon Polymarket tradecraft + WW #178 + NL paper + 14-repo GitHub audit (largest cross-wiki routing event so far)
 
 - **Sources ingested** (5 → moved to librarian):

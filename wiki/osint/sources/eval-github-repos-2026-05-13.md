@@ -9,6 +9,7 @@ related:
   - entities/tools/awesome-ai-agents-2026-zijian.md
   - entities/tools/awesome-systematic-trading-paperswithbacktest.md
   - concepts/cemini-license-posture.md
+  - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-13
@@ -30,6 +31,7 @@ clusters: [eval, multi-wiki-routing]
 - @entities/tools/awesome-ai-agents-2026-zijian.md — REFERENCE-ONLY (frontier-model index)
 - @entities/tools/awesome-systematic-trading-paperswithbacktest.md — REFERENCE-ONLY (no license, 8.2k stars)
 - @concepts/cemini-license-posture.md — IP-sale-readiness lens used in every verdict
+- @concepts/multi-wiki-eval-doc-level-vs-phase-0.md — K43 origin lesson powering the two-gate pattern (bukosabino + tradingview-mcp doc-level ADOPT → Phase-0 NO-GO)
 
 ## Raw Concept
 

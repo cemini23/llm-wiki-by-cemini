@@ -7,11 +7,13 @@ related:
   - entities/platforms/polymarket.md
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/polymarket-python-order-utils.md
+  - entities/tools/aulekator-polymarket-btc-bot.md
+  - entities/tools/awesome-polymarket-tools-harish-garg.md
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
   - concepts/polymarket-bot-architecture.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 ## Relations
@@ -19,6 +21,8 @@ updated: 2026-05-13
 - @entities/platforms/polymarket.md — execution venue
 - @entities/tools/polymarket-gamma-api.md — paired discovery-layer API (Gamma → token_id → CLOB)
 - @entities/tools/polymarket-python-order-utils.md — official client; canonical signer for POST /order
+- @entities/tools/aulekator-polymarket-btc-bot.md — K44 NautilusTrader-based bot; Polymarket adapter path TBD (Phase-0 G3)
+- @entities/tools/awesome-polymarket-tools-harish-garg.md — K44 CC0 directory referencing CLOB tooling
 - @sources/alterego-eth-polymarket-gamma-vs-clob.md — primary source for the public-vs-auth endpoint split
 - @concepts/polymarket-bot-architecture.md — bot playbook; 6-layer websocket system applies on top of CLOB reads
 

@@ -7,9 +7,10 @@ related:
   - sources/eval-github-repos-2026-05-13.md
   - entities/tools/bukosabino-ta.md
   - entities/platforms/polymarket.md
+  - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 ## Relations
@@ -17,6 +18,7 @@ updated: 2026-05-13
 - @sources/eval-github-repos-2026-05-13.md — K43 source-doc Phase-0 eval (ADOPT verdict at doc-level; superseded by 2026-05-13 source audit below)
 - @entities/tools/bukosabino-ta.md — adjacent TA tooling (also NO-GO 2026-05-13 Phase-0); both invalidated by Phase-0 audits
 - @entities/platforms/polymarket.md — would-be consumer venue if/when TOS clears
+- @concepts/multi-wiki-eval-doc-level-vs-phase-0.md — canonical K43-failure example (TOS gate) powering the two-gate pattern formalization
 
 **Brief references (informational; not `related:` per wiki schema)**:
 - `briefs/2026-05-10_tradingview-mcp-adoption.md` — prior adoption brief on cemini-prod (GO conditional on license + IP-ban mitigation); now gated by this 2026-05-13 audit's TOS-redistribution finding

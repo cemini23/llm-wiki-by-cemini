@@ -11,9 +11,10 @@ related:
   - concepts/kelly-sizing-quarter.md
   - concepts/insider-detection-entropy-collapse.md
   - entities/platforms/polymarket.md
+  - entities/tools/aulekator-polymarket-btc-bot.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-14
 ---
 
 ## Relations
@@ -25,6 +26,7 @@ updated: 2026-05-13
 - @concepts/kelly-sizing-quarter.md — universal sizing primitive
 - @concepts/insider-detection-entropy-collapse.md — defensive sub-signal
 - @entities/platforms/polymarket.md — execution venue
+- @entities/tools/aulekator-polymarket-btc-bot.md — K44 NautilusTrader-based bot; operates on 15-min bars (different timescale, complementary)
 
 ## Raw Concept
 
