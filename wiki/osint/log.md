@@ -5116,3 +5116,23 @@ kb-server (`/opt/kb-server`, Node) embeds with all-MiniLM-L6-v2, stores in SQLit
 - kb-server left untouched, verified healthy (HTTP 200) before and after.
 - turbovec + LEANN remain staged on the librarian for the day the corpus is genuinely large.
 - Entity pages `turbovec.md` + `leann.md` updated with librarian-deployment sections + benchmark; backlinks on `conductor-librarian-architecture.md` and the K47 source page.
+
+## [2026-05-15] ingest | 13F hedge-fund holdings — Q1 2026 (K48)
+
+Ingested 9 hedge-fund / endowment Q1 2026 13F filings, supplied as 11 screenshot images.
+
+### Pages (11 new)
+- `wiki/sources/13f-q1-2026-hedge-fund-holdings.md` — source page (validated).
+- 9 fund entity pages in `wiki/entities/companies/`: berkshire-hathaway, pershing-square, gates-foundation-trust, tiger-global-management, greenlight-capital, tci-fund-management, appaloosa-management, fairfax-financial, baupost-group.
+- `wiki/concepts/q1-2026-13f-smart-money-positioning.md` — cross-fund synthesis.
+- `wiki/index.md` — source row (portfolio-strategy), `#### K48 13F funds` (9 company rows), concept row (Trading strategy concepts).
+
+### Two mislabeled inputs
+- `loeb holdings.jpeg` is **not Loeb** — it shows the Baupost (Klarman) portfolio; `klarman holdings.jpeg` is a cropped duplicate of the same. No Third Point / Daniel Loeb data was supplied. Baupost page built from `loeb holdings.jpeg`; no Third Point page.
+- `tepper 2.jpeg` is a distinct, unidentified portfolio (not Appaloosa) — not ingested per user decision; left in the inbox.
+
+### Headline findings (see concept page)
+Alphabet broadly accumulated (Berkshire GOOGL +204%, Tiger Global's largest holding); Microsoft splits the group (Ackman initiates ~15% / Tiger −54%, TCI −84%, Appaloosa −82%); Amazon the broadest consensus long; Appaloosa de-risked China-tech hard; AI-electricity accumulation (VST +114%, NRG, GEV).
+
+### Raw sources
+- 9 images migrated to `cemini-librarian:/opt/cemini-bulk/research/`. `klarman holdings.jpeg` (redundant crop) and `tepper 2.jpeg` (unidentified, skipped) left in the laptop inbox.
