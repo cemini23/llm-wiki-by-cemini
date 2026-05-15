@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-05-14] K45 ingest | TiDAR (arXiv 2511.08923) + Counterfactual Prompting (arXiv 2605.01048) + Multi-Wiki Tool Evaluation v3 (26-tool batch audit)
+
+- **Sources ingested** (3 → moved to librarian):
+  - `tidar-2511.08923.md` — NVIDIA hybrid diffusion-AR LLM (arXiv 2511.08923, Nov 2025). Free-token-slots for parallel drafting; 4.71-5.91× throughput. `[+llm-agents, +ml-systems]`
+  - `counterfactual-prompting-2605.01048.md` — Statistical framework for counterfactual prompting baselines (arXiv 2605.01048, 2026). 14.9% gender-swap flip rate = 14.1% paraphrase baseline — statistically indistinguishable. `[+llm-agents]`
+  - `multi-wiki-tool-evaluation-v3.md` — 26-tool batch audit across all 6 Cemini wikis. Tier rollup: 6 Adopt + 7 Steal-from + 4 Reference + 1 No-go + 5 Reject + 3 Unavailable. License poison-pill catches (GPL-3.0: tpotce/Stable-Diffusion/red-run; AGPL-3.0: minimalfirewall; ELv2: iii). IP-sale perimeter analysis. `[+tool-evaluation]`
+
+- **OSINT-wiki pages created** (2 concepts + 13 entities):
+  - **Concepts**: `tidar-hybrid-diffusion-ar.md` (free-token-slot architecture, context-economics relevance) + `counterfactual-prompting-baselines.md` (paraphrase-null framework, upgrades [CONFIRMED] tag discipline)
+  - **Entities** (13 tools): 7 Adopt (visual-explainer / deepeval / voicebox / openusage / apktool-mcp-server / omnivoice / codegraph-reconfirm) + 6 Steal-from (tpotce GPL-3.0 poison / myip / claude-code-agent-farm / decepticon / fusion / open-generative-ai / tracer — highest-ROI: 90% LLM cost reduction on routine classification)
+  - **Existing entity updated**: `codegraph.md` — added K45 multi-wiki-eval-v3 backlink + reconfirmed Adopt tier, CCC wiki primary fit
+
+- **Cross-wiki routing**: 12 of 13 tools have non-OSINT primary fits (ccc-wiki 4 / cybersec 3 / image-gen 3 / Cemini financial 1 / OSINT 2). Individual tool entity stubs only — cross-wiki stub/brief creation deferred to user direction.
+
 ## [2026-05-14] K44 ingest | "Tool Evaluation for Cemini Wiki Integration" v3 (28-URL multi-wiki eval, all 6 wikis touched — new largest cross-wiki routing event)
 
 - **Source ingested** (1 docx → moved to librarian):

@@ -5,6 +5,7 @@ tags: [dev-tooling, claude-code, ast, knowledge-graph, sqlite, node, mit, adopte
 keywords: [codegraph, ast-indexer, tree-sitter, claude-code, token-efficiency, call-graph, knowledge-graph]
 related:
   - sources/links-2-5-4-tool-eval.md
+  - sources/multi-wiki-tool-evaluation-v3.md
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/swarmvault.md
   - entities/tools/git-rewind.md
@@ -12,7 +13,7 @@ related:
   - entities/tools/ttok.md
 maturity: validated
 created: 2026-05-04
-updated: 2026-05-11
+updated: 2026-05-14
 ---
 
 ## Install state — installed laptop-side 2026-05-04
@@ -34,6 +35,7 @@ Do NOT initialize codegraph in:
 ## Relations
 
 - @sources/links-2-5-4-tool-eval.md — origin source: 2026-05-04 Gemini DR eval, URL 3, **Adopt** tier verdict
+- @sources/multi-wiki-tool-evaluation-v3.md — v3 batch eval (May 2026): reconfirmed Adopt tier, CCC wiki primary fit
 - @concepts/wiki-tooling-evaluation.md — codegraph is laptop-side workflow tool; complements (does not replace) the librarian-side wiki-compiler decision
 - @entities/tools/swarmvault.md — swarmvault also uses tree-sitter but for the wiki layer; codegraph is for the codebase layer (different deployment slot)
 
