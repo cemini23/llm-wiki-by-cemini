@@ -8,7 +8,7 @@ related:
   - entities/infrastructure/conductor-librarian-architecture.md
 maturity: draft
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-15T11:45
 ---
 
 ## Relations
@@ -36,6 +36,15 @@ A high-performance vector index achieving 16x memory compression via advanced Ll
 The compression ratio is directly applicable to the OSINT wiki's kb-server: the current embedding store for 867 wiki pages could be compressed to a fraction of its current memory footprint, enabling fully local, air-gapped semantic search without cloud dependence.
 
 Technical note: the IdMapIndex uint64 stability during concurrent O(1) removals requires isolated benchmarking to verify index integrity under write-heavy workloads.
+
+## Local adoption (2026-05-15)
+
+- Core Rust library (`~/tools/turbovec/turbovec`) builds cleanly with `cargo build --release`
+- Python bindings (`~/tools/turbovec/turbovec-python`) required build.rs fix:
+  - **Problem**: pyo3 0.27 cdylib needs Python C API symbols at link time; Xcode CLT Python 3.9 only provides Python3.framework (not standalone `libpython3.9.dylib`). Framework-based linking (`-F<path> -framework Python3`) creates `@rpath/Python3.framework/...` references that maturin's wheel repair can't resolve.
+  - **Fix**: `-undefined dynamic_lookup` in build.rs — the standard macOS Python extension pattern. Python C API symbols resolve from the interpreter process at dlopen time. Accelerate framework still linked explicitly for BLAS.
+  - Installed via `pip install -e .` (maturin build backend)
+- Functional smoke test passed: TurboQuantIndex (add, search, swap_remove, prepare, write/load) + IdMapIndex
 
 ## Cross-wiki routing
 
