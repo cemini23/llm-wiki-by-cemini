@@ -47,6 +47,7 @@ related:
   - entities/tools/bukosabino-ta.md
   - entities/tools/tradingview-mcp-atilaahmettaner.md
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
+  - entities/tools/a-stock-data-toolkit.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-05-14
@@ -121,6 +122,7 @@ The 2026-05-13 ingest (@AlterEgo_eth + @de1lymoon) formalized two complementary 
 - `@concepts/three-formula-system-polymarket-rare-events.md` — synthesis (40/35/25 weights)
 - `@concepts/insider-detection-entropy-collapse.md` — defensive sub-signal; 3σ entropy drop + no-news ⇒ stay out
 - `@concepts/kelly-sizing-quarter.md` — universal sizing primitive
+- `@entities/tools/a-stock-data-toolkit.md` — quant-finance tool entity
 
 ## Snippets
 

@@ -86,7 +86,10 @@ related:
   - entities/models/timesfm.md
   - concepts/sae-execution-contract.md
   - entities/tools/quantmuse.md
+  - entities/tools/a-stock-data-toolkit.md
+  - entities/tools/synth-subnet.md
   - sources/mit-quant-bible.md
+  - sources/hmm-jurafsky-martin-2026.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-05-11
@@ -162,6 +165,9 @@ updated: 2026-05-11
 - @sources/trading-4-5.md — Quantitative Finance source in the Cemini research corpus
 - @sources/trading-playbook-research.md — Quantitative Finance source in the Cemini research corpus
 - @concepts/sae-execution-contract.md — K19 promotion 2026-05-01; SAE execution contract as reusable architectural primitive — execution-layer survivability middleware for agentic crypto trading
+- @entities/tools/a-stock-data-toolkit.md — quant-finance tool entity
+- @entities/tools/synth-subnet.md — Bittensor synth-subnet tool entity
+- @sources/hmm-jurafsky-martin-2026.md — HMM source (Jurafsky & Martin)
 
 ## Raw Concept
 

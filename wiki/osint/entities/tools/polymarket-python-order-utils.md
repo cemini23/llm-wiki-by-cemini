@@ -8,6 +8,7 @@ related:
   - entities/platforms/polymarket.md
   - entities/tools/polymarket-agents.md
   - entities/tools/polymarket-trackers.md
+  - entities/tools/polymarket-clob-api.md
 maturity: draft
 created: 2026-05-05
 updated: 2026-05-11
@@ -18,6 +19,7 @@ updated: 2026-05-11
 - @sources/polymarket-5-5-tool-eval.md — origin source: 2026-05-05 Gemini DR eval, URL 5, **Adopt** tier
 - @entities/platforms/polymarket.md — Polymarket venue entity
 - @entities/tools/polymarket-agents.md — companion Adopt; this is the order-signing dependency that Polymarket Agents (and any direct CLOB integration) needs
+- @entities/tools/polymarket-clob-api.md — CLOB API entity (execution + public reads)
 
 ## Raw Concept
 

@@ -8,6 +8,7 @@ related:
   - sources/ww-issue-173-2026-04-07.md
   - sources/ww-issue-175-2026-04-22.md
   - sources/ww-issue-176-2026-04-29.md
+  - sources/ww-issue-178-2026-05-13.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-13
@@ -19,6 +20,7 @@ updated: 2026-05-13
 - @sources/ww-issue-173-2026-04-07.md — Issue #173 (Apr 7 2026)
 - @sources/ww-issue-175-2026-04-22.md — Issue #175 (Apr 22 2026)
 - @sources/ww-issue-176-2026-04-29.md — Issue #176 (Apr 29 2026)
+- @sources/ww-issue-178-2026-05-13.md — Issue #178 (May 13 2026)
 
 ## Raw Concept
 

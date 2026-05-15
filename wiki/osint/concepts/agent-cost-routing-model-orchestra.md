@@ -11,6 +11,7 @@ related:
   - concepts/multi-agent-trading.md
   - entities/models/kimi-k2-6.md
   - entities/models/opus-4-7.md
+  - entities/tools/awesome-ai-agents-2026-zijian.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-05-12
@@ -21,6 +22,7 @@ updated: 2026-05-12
 - `@sources/x-kimi-k2.6-hermes-routing-playbook-2026-05.md` — original X post
 - `@concepts/cemini-license-posture.md` — Modified MIT discussion below
 - `@concepts/tool-evaluation-framework.md` — general framework for adopting external LLM tooling
+- `@entities/tools/awesome-ai-agents-2026-zijian.md` — curated AI agent tool list (Zijian 2026)
 
 ## Raw Concept
 

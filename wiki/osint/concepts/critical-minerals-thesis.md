@@ -12,6 +12,7 @@ related:
   - concepts/real-assets-investing-framework.md
   - entities/tickers/uec.md
   - entities/tickers/elvr.md
+  - entities/tickers/lar.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-13
@@ -27,6 +28,7 @@ updated: 2026-05-13
 - @concepts/real-assets-investing-framework.md — strategic parent
 - @entities/tickers/uec.md — uranium position instance
 - @entities/tickers/elvr.md — lithium position instance
+- @entities/tickers/lar.md — lithium/rare-earths position instance
 
 ## Raw Concept
 
