@@ -16,10 +16,11 @@ related:
   - sources/omc-talent-container-paper.md
   - sources/matching-accuracy-different-geometry-es-grpo.md
   - sources/4-3-link-research.md
+  - sources/eggro-evolution-strategies-hyperscale-2026.md
 maturity: validated
 read_status: read
 created: 2026-04-28
-updated: 2026-05-11
+updated: 2026-05-15
 ---
 
 ## Relations

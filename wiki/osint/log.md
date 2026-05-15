@@ -5027,3 +5027,30 @@ No raw content imported. Cross-wiki references are pointers; the cybersecurity w
 
 Cross-wiki stub routed from `@osint-wiki/entities/tools/tracer.md`.
 - Created wiki/concepts/tracer-acceptor-gate-ingest.md (stub)
+
+## [2026-05-15] K46 ingest | 4 sources + 5 tool entities + 1 re-evaluation + 2 cross-wiki routes
+
+### New source pages (4)
+- `wiki/sources/kelly-1956-information-rate.md` — Kelly 1956 "A New Interpretation of Information Rate." 10pp, deep-read. Derives Kelly criterion from Shannon channel capacity. Three scenarios: fair odds, unfair odds without track take, track take with nonlinear constrained optimization.
+- `wiki/sources/hmm-jurafsky-martin-2026.md` — Jurafsky & Martin SLP 3rd ed. Appendix A (draft Jan 6 2026). Forward, Viterbi, Forward-Backward algorithms. 17pp, deep-read.
+- `wiki/sources/eggro-evolution-strategies-hyperscale-2026.md` — Sarkar et al. (Oxford/MILA/NVIDIA, 2026). Low-rank ES at hyperscale. 91% of batch inference throughput. int8 RNN pretraining beats fp32 Transformer backprop. 76pp, deep-read.
+- `wiki/sources/multi-wiki-link-eval-v4-2026-05-15.md` — 40-URL evaluation report v4. Tier rollup: 10 Adopt + 6 Steal-from + 1 Defer + 8 Reference-only + 5 Reject + 10 UNAVAILABLE.
+
+### New tool entity pages (5)
+- `wiki/entities/tools/claude-red-offensive-skills.md` — Adopt. MIT. 1.3k stars. 16 pentest methodologies as SKILL.md. Cross-routed to @cybersecurity-wiki + @ccc-wiki.
+- `wiki/entities/tools/a-stock-data-toolkit.md` — Adopt. Apache-2.0. 825 stars. 6-layer arch, mootdx+akshare, Northbound flow.
+- `wiki/entities/tools/octocode-mcp.md` — Adopt. MIT. 822 stars. ripgrep+LSP, lspCallHierarchy.
+- `wiki/entities/tools/synth-subnet.md` — Adopt. MIT. 74 stars. Bittensor synthetic data, CRPS scoring.
+- `wiki/entities/tools/turbovec.md` — Adopt. MIT. 652 stars. 16× memory compression, NEON SIMD.
+
+### Existing entity update (1)
+- `wiki/entities/tools/beever-atlas.md` — Steal-from→Adopt (K37→K46). 326 stars, 16-tool MCP server. Added v4 eval + conductor/librarian backlinks.
+
+### Cross-wiki routes (2)
+- `@ccc-wiki/briefs/2026-05-15_eggro-evolution-strategies-llm-fine-tuning.md` — brief on LLM post-training, low-rank parameter efficiency, distributed subagent optimization.
+- `@cybersecurity-wiki/entities/claude-red-offensive-skills.md` — full entity page for offensive security ops.
+
+### Backlink updates
+- `wiki/concepts/kelly-sizing-quarter.md` — added `sources/kelly-1956-information-rate.md` as primary source backlink.
+- `wiki/index.md` — updated summary (349→353), added K46 entries across 6 cluster sections.
+- 4 raw files migrated to `cemini-librarian:/opt/cemini-bulk/research/`, inbox clean.

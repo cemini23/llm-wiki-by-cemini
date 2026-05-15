@@ -11,9 +11,10 @@ related:
   - concepts/kelly-sizing-quarter.md
   - concepts/three-formula-system-polymarket-rare-events.md
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
+  - sources/kelly-1956-information-rate.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-14
+updated: 2026-05-15
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-14
 - @concepts/shannon-entropy-kl-divergence-prediction-markets.md — Formula 2 of the trio (information-edge sizing)
 - @concepts/taleb-fat-tails-barbell-prediction-markets.md — Formula 3 (tail-risk sizing)
 - @concepts/kelly-sizing-quarter.md — sizing rule used here
+- @sources/kelly-1956-information-rate.md — primary source for the Kelly criterion derivation
 - @concepts/three-formula-system-polymarket-rare-events.md — synthesis combining all three
 
 ## Raw Concept

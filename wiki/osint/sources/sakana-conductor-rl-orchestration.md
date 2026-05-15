@@ -18,10 +18,11 @@ related:
   - concepts/policy-distillation.md
   - sources/4-3-link-research.md
   - sources/co-evolving-policy-distillation-2604.27083.md
+  - sources/eggro-evolution-strategies-hyperscale-2026.md
 maturity: validated
 read_status: read
 created: 2026-04-27
-updated: 2026-05-11
+updated: 2026-05-15
 ---
 
 ## Relations

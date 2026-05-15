@@ -100,9 +100,10 @@ related:
   - sources/4-3-link-research.md
   - sources/matching-accuracy-different-geometry-es-grpo.md
   - sources/refinerl-self-refinement-rl.md
+  - sources/eggro-evolution-strategies-hyperscale-2026.md
 maturity: draft
 created: 2026-04-26
-updated: 2026-05-11
+updated: 2026-05-15
 ---
 
 ## Relations
@@ -191,6 +192,7 @@ updated: 2026-05-11
 - @sources/sakana-conductor-rl-orchestration.md — RL/MARL source in the Cemini research corpus (user-dropped 2026-04-27 — ICLR 2026 Sakana AI paper; 7B Conductor LLM trained with GRPO to orchestrate frontier worker LLMs; **first paper in cluster to RL-train the orchestration layer itself**, beats GPT-5 average 77.27 vs 74.78 by orchestrating it)
 - @entities/infrastructure/sakana-fugu.md — **first productized RL-trained-orchestrator in the cluster** (user-dropped 2026-04-27). Closed-beta API launched by Sakana 2026-04-24 — ~7 weeks after the Conductor paper's arXiv finalization. Joint productization of the Conductor (RL-trained orchestrator) + Trinity (evolved coordinator) methodologies. Two-tier lineup (Mini latency-optimized / Ultra full orchestration) reported to beat 2026-frontier-calendar models (Gemini 3.1, GPT 5.4, Opus 4.6) on GPQAD/LCBv6/SWEPro
 - @sources/sakana-trinity-llm-coordinator.md — RL/MARL source in the Cemini research corpus (ingested 2026-04-28 as Conductor sibling). ICLR 2026 Sakana AI paper, arXiv 2512.04695. **Caveat for the rl-marl cluster framing**: Trinity is the cluster's first ES-trained-coordinator entry — its training mechanism is **explicitly anti-RL** (sep-CMA-ES, derivative-free). The paper formally argues REINFORCE collapses under binary rewards + weak parameter coupling (numerically: 0.253 LCB for REINFORCE vs 0.615 for sep-CMA-ES). Useful counterweight to the cluster's RL-default framing — Trinity sits in the broader "trial-and-error-trained-orchestration" family this hub indexes but is the corpus's clearest argument that *RL is the wrong tool for some orchestration regimes*
+- @sources/eggro-evolution-strategies-hyperscale-2026.md — K46 deep-read. ES at hyperscale via low-rank perturbations (91% of batch inference throughput). Adds the black-box optimization perspective to the cluster: enables gradient-free training where reward functions (PnL, Sharpe, drawdown) are non-differentiable. int8 RNN pretraining beats fp32 Transformer backprop
 - @sources/scaling-roadmap-research.md — RL/MARL source in the Cemini research corpus
 - @sources/signa.md — Cemini competitive intelligence on Signa platform; 5-agent MAPPO ensemble, Monte Carlo/UCB simulators, MCP middleware, PID controller, RBAC, IP-sale patterns
 - @sources/sort-1-4-3.md — RL/MARL source in the Cemini research corpus

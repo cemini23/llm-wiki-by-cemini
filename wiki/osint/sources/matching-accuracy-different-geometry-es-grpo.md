@@ -11,10 +11,11 @@ related:
   - concepts/scatter-gather-topology.md
   - entities/frameworks/langgraph.md
   - sources/refinerl-self-refinement-rl.md
+  - sources/eggro-evolution-strategies-hyperscale-2026.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-15
 clusters: [rl-marl, cemini-internal]
 ---
 
@@ -23,6 +24,7 @@ clusters: [rl-marl, cemini-internal]
 - @sources/4-3-link-research.md — parent K13 source; this paper is Promotion #1 from the 18-section link-eval
 - @sources/sakana-trinity-llm-coordinator.md — Trinity uses sep-CMA-ES (an Evolution Strategies variant); this paper's finding that ES causes catastrophic forgetting weighs against Trinity for continual-learning deployments
 - @sources/sakana-conductor-rl-orchestration.md — Conductor uses GRPO; this paper's finding that GRPO maintains policy stability across sequential tasks supports Conductor over Trinity
+- @sources/eggro-evolution-strategies-hyperscale-2026.md — EGGROLL provides the scalable ES implementation; this paper's catastrophic forgetting finding makes the ES-vs-GRPO trade-off actionable
 - @concepts/rl-marl-research.md — corpus hub; first paper in the corpus providing mathematical comparison of ES vs GRPO training geometry
 - @concepts/scatter-gather-topology.md — cross-asset KL divergence tracking directly informs multi-asset orchestrator routing stability
 - @entities/frameworks/langgraph.md — the sequential checkpointing evaluation pattern maps to LangGraph's typed state graph across BTC/SPY asset boundaries

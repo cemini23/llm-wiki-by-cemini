@@ -4,6 +4,7 @@ type: concept
 tags: [concept, kelly-criterion, fractional-kelly, position-sizing, risk-management, polymarket, default-rule]
 keywords: [quarter-kelly, fractional-kelly, kelly-criterion, position-sizing, blow-up-risk, model-error-buffer, capital-preservation]
 related:
+  - sources/kelly-1956-information-rate.md
   - sources/de1lymoon-three-formulas-2026-05.md
   - concepts/poisson-edge-rare-events.md
   - concepts/shannon-entropy-kl-divergence-prediction-markets.md
@@ -14,11 +15,12 @@ related:
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-14
+updated: 2026-05-15
 ---
 
 ## Relations
 
+- @sources/kelly-1956-information-rate.md — primary source for the Kelly criterion; derives the optimal fraction from first principles
 - @sources/de1lymoon-three-formulas-2026-05.md — quarter-Kelly default used by all three formulas
 - @concepts/poisson-edge-rare-events.md — applies quarter-Kelly to Poisson signal
 - @concepts/shannon-entropy-kl-divergence-prediction-markets.md — applies quarter-Kelly to KL-bits-sized signal

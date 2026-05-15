@@ -12,9 +12,10 @@ related:
   - concepts/kelly-sizing-quarter.md
   - concepts/three-formula-system-polymarket-rare-events.md
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
+  - sources/kelly-1956-information-rate.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-14
+updated: 2026-05-15
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-14
 - @entities/platforms/polymarket.md — execution venue
 - @concepts/poisson-edge-rare-events.md — Formula 1
 - @concepts/taleb-fat-tails-barbell-prediction-markets.md — Formula 3
+- @sources/kelly-1956-information-rate.md — Shannon channel capacity connection to optimal bet sizing
 - @concepts/insider-detection-entropy-collapse.md — sub-pattern using rolling Shannon entropy
 - @concepts/kelly-sizing-quarter.md — sizing rule
 - @concepts/three-formula-system-polymarket-rare-events.md — synthesis combining all three

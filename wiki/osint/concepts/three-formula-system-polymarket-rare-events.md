@@ -13,9 +13,10 @@ related:
   - entities/platforms/polymarket.md
   - entities/tools/aulekator-polymarket-btc-bot.md
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
+  - sources/kelly-1956-information-rate.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-14
+updated: 2026-05-15
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-14
 - @sources/de1lymoon-three-formulas-2026-05.md — primary source (synthesis layer)
 - @concepts/poisson-edge-rare-events.md — Formula 1 component
 - @concepts/shannon-entropy-kl-divergence-prediction-markets.md — Formula 2 component
+- @sources/kelly-1956-information-rate.md — all three formulas use Kelly-derived position sizing
 - @concepts/taleb-fat-tails-barbell-prediction-markets.md — Formula 3 component
 - @concepts/kelly-sizing-quarter.md — universal sizing primitive
 - @concepts/insider-detection-entropy-collapse.md — defensive sub-signal

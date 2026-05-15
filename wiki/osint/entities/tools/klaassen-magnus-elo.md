@@ -7,15 +7,17 @@ related:
   - sources/5-4-links-tool-eval.md
   - concepts/cemini-license-posture.md
   - concepts/prediction-market-historical-analysis.md
+  - sources/hmm-jurafsky-martin-2026.md
 maturity: draft
 created: 2026-05-04
-updated: 2026-05-11
+updated: 2026-05-15
 ---
 
 ## Relations
 
 - @sources/5-4-links-tool-eval.md — origin source: 2026-05-04 Gemini DR eval, URL 3 (`jgollub1/tennis_match_prediction`), **Steal-from** tier verdict
 - @concepts/cemini-license-posture.md — exemplar of pattern #4 (CC-BY-NC training-data contamination): code is MIT, data dependency is CC-BY-NC-SA, derivative-models inherit NC restriction unless retrained on commercially-licensed data
+- @sources/hmm-jurafsky-martin-2026.md — HMMs provide the statistical foundation for hierarchical Markov tennis models that Klaassen-Magnus extends
 
 ## Raw Concept
 
