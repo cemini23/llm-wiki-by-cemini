@@ -13,9 +13,9 @@ related:
   - entities/tickers/uec.md
   - entities/tickers/elvr.md
   - entities/tickers/lar.md
-maturity: draft
+maturity: validated
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-15
 ---
 
 ## Relations
@@ -57,7 +57,12 @@ What prompted this page: K41 ingest surfaced three independent sources (Massif C
 
 ### Cemini posture
 
-- **Thesis is multi-source corroborated** [CONFIRMED via Massif + WW + Donny independent sources], but Donny derives from WW (5+ exact ticker matches Apr 22-23) — effective independent-source count = 2 (Massif + WW/Donny composite)
+- **Thesis is multi-source corroborated** [CONFIRMED 2026-05-15]. The original K41 caveat — Donny derives from WW (5+ exact ticker matches Apr 22-23), so the newsletter cluster counted as a single effective source (Massif + WW/Donny composite = 2) — is **now resolved**. Independent Tier-1 institutional sources, none connected to Weekly Wizdom, corroborate the supply-deficit thesis:
+  - **IEA, Global Critical Minerals Outlook 2025** — copper headed for a ~30% supply shortfall by 2035; lithium pushed into structural deficit by the 2030s; critical-minerals investment growth slowed to 5% in 2024 (from 14% in 2023) with exploration plateauing — the accelerating-demand / decelerating-supply mechanism this page describes. [Source: https://www.iea.org/reports/global-critical-minerals-outlook-2025 (retrieved 2026-05-15)]
+  - **Arthur D. Little, "The Rare Earth Imperative" (2025)** — China controls ~70% of REE mining and 80-90% of separation/refining; dysprosium/terbium projected to a ~50% deficit by 2030. [Source: adlittle.com — The Rare Earth Imperative 2025 (retrieved 2026-05-15)]
+  - **TCW, "On the Rocks: Critical Minerals in a Fragmenting World" (Feb 2026)** — chokepoint-concentration framing; critical minerals now behave as "strategic infrastructure." [Source: https://www.tcw.com/Insights/2026/2026-02-18-On-the-Rocks (retrieved 2026-05-15)]
+  - **Allens, "Critical Minerals in 2026"** — independently corroborates the convertible-note / offtake-linked financing pattern observed in the lithium names. [Source: allens.com.au — Critical Minerals in 2026 (retrieved 2026-05-15)]
+  Effective independent-source count is now ≥4 Tier-1 institutional sources (IEA + ADL + TCW + Allens), plus Massif and the WW/Donny composite. The umbrella thesis is firmly [CONFIRMED] — note this confirms the *macro thesis*, not WW's specific ticker selections, which remain newsletter-originated (see @sources/ww-issue-178-2026-05-13.md verification notes for per-name status).
 - **Brief candidate**: a "critical minerals supply-deficit consensus" brief synthesizing the three sources with capex-data + export-volume verification is a high-leverage Phase-1 deliverable
 - **Falsification signals**: (a) capex acceleration in tracked sectors, (b) demand-side surprise (EV slowdown, robotics-delay), (c) substitution breakthrough (sodium-ion replacing lithium, neodymium-free motor designs)
 - **Adjacent concepts**: @concepts/capital-cycle-theory.md gives the mechanism; @concepts/rare-earth-supply-deficit-thesis.md is the narrow instance; this page is the umbrella

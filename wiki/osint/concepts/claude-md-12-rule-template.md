@@ -13,7 +13,7 @@ related:
   - entities/tools/openspec.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-15
 ---
 
 ## Relations
@@ -33,7 +33,7 @@ What prompted this page: K41 ingest of X.docx Section 2 — Mnilax's 12-rule ext
 ### Lineage
 
 1. **Andrej Karpathy (late Jan 2026, X thread)** — complaint about silent assumptions, over-engineering, unverified completions in Claude code work. Diagnostic-only; no template.
-2. **Forrest Chang (GitHub repo, Feb 2026)** — 4-rule template distilling Karpathy's complaints into prescriptive form. Repo reportedly hit 120k stars by May 2026 [NEEDS VERIFICATION 2026-05-13].
+2. **Forrest Chang (GitHub repo `forrestchang/andrej-karpathy-skills`, created 2026-01-27)** — 4-rule template distilling Karpathy's complaints into prescriptive form. Repo hit ~110k stars by early May 2026 and ~130k by mid-May [CONFIRMED 2026-05-15 — live GitHub API + trade-press coverage; see @entities/people/forrest-chang.md].
 3. **@Mnilax (X article, ~Apr 2026)** — 8 additional rules covering May 2026 agent-orchestration failure modes Forrest Chang's 4 don't address.
 
 ### The 4 Forrest Chang rules

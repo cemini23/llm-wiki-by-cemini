@@ -5054,3 +5054,14 @@ Cross-wiki stub routed from `@osint-wiki/entities/tools/tracer.md`.
 - `wiki/concepts/kelly-sizing-quarter.md` — added `sources/kelly-1956-information-rate.md` as primary source backlink.
 - `wiki/index.md` — updated summary (349→353), added K46 entries across 6 cluster sections.
 - 4 raw files migrated to `cemini-librarian:/opt/cemini-bulk/research/`, inbox clean.
+
+## [2026-05-15] verification + brief | 2 NEEDS-VERIFICATION items resolved + cost-routing brief staged
+
+Query/maintenance pass on three ROADMAP-pending items (no new sources ingested).
+
+### NEEDS VERIFICATION resolved (Exa + GitHub API)
+- **Forrest Chang repo stats** — `@entities/people/forrest-chang.md` + `@concepts/claude-md-12-rule-template.md`. The "120k stars by May 2026" claim is **[CONFIRMED]**: live GitHub API shows ~130,900 stars; trade coverage independently reported 110k+ and #1 GitHub Trending for 28 days. Repo = `github.com/forrestchang/andrej-karpathy-skills` (created 2026-01-27, MIT; real name Jiayuan Zhang). "60k bookmarks first 2 weeks" downgraded to [TENTATIVE]. forrest-chang.md `maturity: draft → validated`.
+- **WW#178 critical-minerals third source** — `@concepts/critical-minerals-thesis.md` + `@sources/ww-issue-178-2026-05-13.md`. Thesis-level corroboration found via 4 independent Tier-1 sources (IEA Global Critical Minerals Outlook 2025, Arthur D. Little Rare Earth Imperative, TCW, Allens) — the K41 "effective 2 sources (Massif + WW/Donny)" caveat is resolved; thesis upgraded to firm [CONFIRMED], `maturity: draft → validated`. Per-name: LAR EBITDA framing [CONFIRMED] vs Lithium Argentina Q1 2026 results (US$106M quarterly Adj. EBITDA); ELVR A$275M placement [CONFIRMED] but WW's "A$150M convert" [RETRACTED] (independent reporting = placement + A$20M SPP, no convert); ELVR price-lifecycle figures flagged [NEEDS VERIFICATION 2026-05-15] (pre-/post-consolidation share basis unreconciled).
+
+### Brief staged
+- `briefs/2026-05-15_cost-routing-orchestra.md` — CeminiSuite-targeted; auxiliary-model routing audit + scope-lock prompt + adversarial-pass-then-escalate, derived from `@concepts/agent-cost-routing-model-orchestra.md`. Not yet scp'd — awaits user confirmation.
