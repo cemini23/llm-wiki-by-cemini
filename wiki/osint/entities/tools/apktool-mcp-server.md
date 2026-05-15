@@ -17,7 +17,7 @@ updated: 2026-05-14
 
 ## Raw Concept
 
-From the Cemini Multi-Wiki Link Evaluation Report v3 (May 2026). Apache-2.0 licensed v3.0.1, independently audited by MseeP.ai. Wraps Apktool functionality (decode_apk, get_smali_file, modify_smali_file) inside an MCP server for Claude Code-native Android reverse engineering.
+From the Cemini Multi-Wiki Link Evaluation Report v3 (May 2026). Apache-2.0 licensed v3.0.1, independently audited by MseeP.ai. Wraps Apktool functionality (decode_apk, get_smali_file, modify_smali_file) inside an MCP server for Claude Code-native Android reverse engineering. **Repo**: `zinja-coder/apktool-mcp-server` (344 stars). Installed 2026-05-15 to `~/.local/share/apktool-mcp-server`, registered as MCP server with JAVA_HOME at `~/.local/jdk`.
 
 ## Narrative
 

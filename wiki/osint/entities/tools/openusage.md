@@ -17,7 +17,7 @@ updated: 2026-05-14
 
 ## Raw Concept
 
-From the Cemini Multi-Wiki Link Evaluation Report v3 (May 2026). MIT-licensed v0.10.5, Go-based background telemetry daemon for tracking API token consumption and financial spend across local developer environments.
+From the Cemini Multi-Wiki Link Evaluation Report v3 (May 2026). MIT-licensed v0.10.5, Go-based background telemetry daemon for tracking API token consumption and financial spend across local developer environments. **Repo**: `janekbaraniewski/openusage` (20 stars). Installed 2026-05-15 via `go install` to `~/go/bin/openusage`.
 
 ## Narrative
 

@@ -17,7 +17,7 @@ updated: 2026-05-14
 
 ## Raw Concept
 
-From the Cemini Multi-Wiki Link Evaluation Report v3 (May 2026). MIT-licensed zero-dependency standalone skill that generates rich HTML diagrams from terminal output, compatible across Claude Code, Cursor, Pi, and OpenClaw harnesses.
+From the Cemini Multi-Wiki Link Evaluation Report v3 (May 2026). MIT-licensed zero-dependency standalone skill that generates rich HTML diagrams from terminal output, compatible across Claude Code, Cursor, Pi, and OpenClaw harnesses. **Repo**: `nicobailon/visual-explainer` (8K+ stars). Installed 2026-05-15 as Claude Code marketplace plugin.
 
 ## Narrative
 
