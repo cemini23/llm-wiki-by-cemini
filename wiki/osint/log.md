@@ -1,5 +1,20 @@
 # Wiki Log
 
+## [2026-05-14/15] K45 cross-wiki routing | 11 tool entity stubs created across 3 sibling wikis + 13 operational briefs staged
+
+- **Cross-wiki stubs created** (11, via `scripts/cross_wiki_route.py`):
+  - ccc-wiki (4): visual-explainer, openusage, claude-code-agent-farm, fusion
+  - cybersec-wiki (3): apktool-mcp-server, tpotce, decepticon
+  - image-gen-wiki (3): voicebox, omnivoice, open-generative-ai
+- **tracer** (Cemini financial primary fit): routed directly to `/opt/cemini` via brief — no wiki stub needed
+- **Cross-wiki backlinks**: all 10 OSINT entity pages updated with reciprocal `@target-wiki/entities/...` backlinks
+- **Operational briefs staged** (13, in `briefs/`):
+  - Adopt (6): visual-explainer, deepeval, voicebox, openusage, apktool-mcp-server, omnivoice
+  - Steal-from (7): tpotce, myip, claude-code-agent-farm, decepticon, fusion, open-generative-ai, tracer
+  - All 7 Steal-from briefs PASS 100/100; 6 Adopt briefs WARN 81-87 (minor: effort estimate / verdict opener)
+- **Target wiki indexes + logs**: all updated by cross_wiki_route.py automation
+- **2 remaining OSINT-primary tools** (deepeval, MyIP): already correctly situated in OSINT wiki; no cross-wiki routing needed
+
 ## [2026-05-14] K45 ingest | TiDAR (arXiv 2511.08923) + Counterfactual Prompting (arXiv 2605.01048) + Multi-Wiki Tool Evaluation v3 (26-tool batch audit)
 
 - **Sources ingested** (3 → moved to librarian):

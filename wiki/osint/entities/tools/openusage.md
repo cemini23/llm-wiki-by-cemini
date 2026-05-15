@@ -11,6 +11,7 @@ updated: 2026-05-14
 ---
 
 ## Relations
+- @ccc-wiki/entities/openusage.md  (cross-wiki stub)
 
 - @sources/multi-wiki-tool-evaluation-v3.md — v3 batch eval: Adopt tier, CCC wiki primary fit
 
