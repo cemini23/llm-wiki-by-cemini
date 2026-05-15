@@ -8,6 +8,7 @@ related:
   - entities/tools/octocode-mcp.md
   - entities/tools/turbovec.md
   - entities/tools/leann.md
+  - concepts/kb-server-retrieval-scaling.md
 maturity: draft
 created: 2026-05-15
 updated: 2026-05-15
@@ -19,6 +20,7 @@ updated: 2026-05-15
 - @entities/tools/octocode-mcp.md — LSP-based code analysis complements the conductor's model-routing architecture
 - @entities/tools/turbovec.md — SIMD vector compression directly applicable to the librarian's pgvector embedding store
 - @entities/tools/leann.md — storage-efficient local vector index (97% smaller via graph selective-recomputation); candidate for the embedding store alongside turbovec
+- @concepts/kb-server-retrieval-scaling.md — retrieval-scaling policy for kb-server: brute-force stays until ~2000 chunks, then sqlite-vss
 
 ## Raw Concept
 

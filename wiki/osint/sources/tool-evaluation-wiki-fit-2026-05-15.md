@@ -10,6 +10,7 @@ related:
   - entities/tools/fingerprint-suite.md
   - entities/tools/leann.md
   - entities/tools/website-downloader.md
+  - concepts/kb-server-retrieval-scaling.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-15
@@ -28,6 +29,7 @@ clusters: [eval, multi-wiki-routing, k47]
 - @concepts/paradigm-vs-license-inverse-correlation.md — Shadowbroker (most capable OSINT tool in the batch) is AGPL-3.0, reconfirming the pattern
 - @entities/tools/fingerprint-suite.md — Adopt-tier, OSINT primary fit; locally adopted from this eval
 - @entities/tools/leann.md — Adopt-tier, cross-routed to OSINT (vector indexing for the librarian); locally adopted from this eval
+- @concepts/kb-server-retrieval-scaling.md — K47 benchmark of the two Adopt-tier vector indexes against kb-server's brute-force search
 - @entities/tools/website-downloader.md — re-evaluated here (Defer); already cataloged 2026-05-12 as Reference-only
 
 ## Raw Concept

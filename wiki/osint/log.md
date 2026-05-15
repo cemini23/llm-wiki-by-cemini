@@ -5093,3 +5093,26 @@ Ingested the LLM-generated "Cemini Multi-Wiki Link Evaluation Report (v3)" docx 
 
 ### Raw source
 - `Tool Evaluation and Wiki Fit.docx` migrated to `cemini-librarian:/opt/cemini-bulk/research/`, laptop inbox clean.
+
+## [2026-05-15] deploy + benchmark | LEANN + turbovec on librarian; kb-server retrieval-scaling decision (K47)
+
+Back-applied the deployment-boundary rule (wiki-serving components belong on the 24/7 librarian, not the laptop) to the K47 vector-index adoptions.
+
+### Past-adoption audit
+Only **LEANN** and **turbovec** qualify as wiki-serving candidates — both are vector indexes aimed at kb-server. fingerprint-suite, octocode-mcp, claude-red, claude-mem are interactive per-session tools; laptop is the correct home.
+
+### Librarian installs (cemini-librarian)
+- **turbovec** — rustup toolchain installed; built after `apt install libssl-dev pkg-config libopenblas-dev`; Python bindings via maturin into `/opt/turbovec-venv` (needed a `patchelf --add-needed libopenblas.so` fix for an undefined `cblas_sgemm`).
+- **LEANN** — `/opt/leann-venv` on Python 3.12 (no version pins needed, unlike the laptop's 3.9). 5.6 GB venv.
+
+### Benchmark vs kb-server's brute-force search (943-vector live corpus)
+kb-server (`/opt/kb-server`, Node) embeds with all-MiniLM-L6-v2, stores in SQLite, searches brute-force; its own `search.js` says brute-force is fine to <2000 notes. Corpus is **943 vectors** (one embedding/doc, no chunking).
+- brute-force: 23 µs/q, recall 1.000 (exact).
+- turbovec bw=4/3/2: 16/19/25 µs/q, recall@10 0.92/0.88/0.81, index 180/136/92 KB.
+- LEANN: 19 min 23 s build, 1.5 GB RAM peak, search unstable (core-dumped / empty) on the 3.7 GB host.
+
+### Decision — NO-GO on wiring (new concept page)
+- `wiki/concepts/kb-server-retrieval-scaling.md` (validated) — at 943 vectors brute-force is optimal; ANN indexes pay off at 10⁵–10⁷ vectors. turbovec/LEANN are Python/Rust vs kb-server's Node → sidecar mismatch. Trigger to revisit: corpus > ~2000 chunks → evaluate `sqlite-vss` (in-Node, in-SQLite) first.
+- kb-server left untouched, verified healthy (HTTP 200) before and after.
+- turbovec + LEANN remain staged on the librarian for the day the corpus is genuinely large.
+- Entity pages `turbovec.md` + `leann.md` updated with librarian-deployment sections + benchmark; backlinks on `conductor-librarian-architecture.md` and the K47 source page.

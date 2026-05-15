@@ -7,6 +7,7 @@ related:
   - sources/tool-evaluation-wiki-fit-2026-05-15.md
   - entities/tools/turbovec.md
   - entities/infrastructure/conductor-librarian-architecture.md
+  - concepts/kb-server-retrieval-scaling.md
 maturity: draft
 created: 2026-05-15
 updated: 2026-05-15
@@ -18,6 +19,7 @@ phase_0_verdict: ADOPT 2026-05-15 (MIT verified, locally installed)
 - @sources/tool-evaluation-wiki-fit-2026-05-15.md — evaluated in the 52-URL eval (Adopt tier, CCC primary, cross-routed to OSINT)
 - @entities/tools/turbovec.md — sibling vector-index tool; turbovec compresses via SIMD quantization, LEANN via graph-based selective recomputation — overlapping problem space, worth a head-to-head before committing the librarian to either
 - @entities/infrastructure/conductor-librarian-architecture.md — LEANN's storage profile is directly relevant to kb-server's embedding store
+- @concepts/kb-server-retrieval-scaling.md — the K47 benchmark + NO-GO decision: LEANN not wired into kb-server
 
 ## Raw Concept
 
@@ -50,6 +52,20 @@ Installed laptop-side via pip (`leann` 0.3.5, with backends `leann-backend-hnsw`
 Smoke test (3-doc corpus): index built, `leann search "what is LEANN"` correctly ranked the LEANN sentence #1 (score 1.127). The graph-based recompute path (`is_recompute=true`, NULL embedding storage marker) is exercised by this build.
 
 **Recommendation**: the pinned Python 3.9 laptop install is sufficient for benchmarking against `turbovec`. A production wiki-serving role does **not** get set up here — it gets set up on `cemini-librarian` (Python 3.10+ available there, so no version pins needed) so kb-server keeps 24/7 uptime. The laptop install never serves the wiki.
+
+## Librarian deployment (2026-05-15)
+
+Installed on `cemini-librarian` (the 24/7 kb-server host) per the deployment-boundary rule — any wiki-serving component lives on the librarian, not the laptop.
+
+- Installed clean into `/opt/leann-venv` (Python 3.12 — **no version pins needed**, unlike the laptop's 3.9). venv footprint: **5.6 GB** (torch + transformers + backends).
+- Import + CLI verified.
+
+**Benchmark vs kb-server's brute-force search** (943-doc live corpus):
+
+- `leann build`: **19 min 23 s**, 1.5 GB RAM peak. Index: 1.2 MB.
+- `leann search`: **unstable** on the 3.7 GB-RAM host — one run core-dumped (`Aborted (core dumped)`), another exited 0 with no output. Not reliably benchmarkable here.
+
+**Verdict: NOT wired into kb-server.** LEANN's recompute-on-search design is built for huge corpora; on a 943-vector corpus it is slower to build, heavier in RAM, and unstable — strictly worse than the existing 23 µs/query brute-force. Full reasoning: `@concepts/kb-server-retrieval-scaling.md`. The librarian install stays as a staged/benchmark tool.
 
 ## Snippets
 
