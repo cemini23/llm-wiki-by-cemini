@@ -5,6 +5,7 @@ tags: [ml-optimization, llm-cost-reduction, surrogate-modeling, lightgbm, contin
 keywords: [tracer, llm-surrogate, acceptor-gate, lightgbm-router, cost-saving, formal-parity-guarantee, continual-learning-flywheel]
 related:
   - sources/multi-wiki-tool-evaluation-v3.md
+  - concepts/tracer-acceptor-gate-ingest.md
 maturity: draft
 created: 2026-05-14
 updated: 2026-05-14

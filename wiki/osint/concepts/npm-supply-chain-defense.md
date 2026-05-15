@@ -6,6 +6,7 @@ keywords: [npm, supply-chain attack, min-release-age, minimum-release-age, bunfi
 related:
   - sources/npm-supply-chain-defense-prompt-2026-05.md
   - concepts/cemini-license-posture.md
+  - entities/tools/betterleaks.md
 maturity: validated
 created: 2026-05-12
 updated: 2026-05-12

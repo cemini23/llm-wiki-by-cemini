@@ -6,7 +6,7 @@ keywords: [betterleaks, secret-detection, cel-filtering, nltk-false-positive, gi
 related:
   - sources/multi-wiki-tool-evaluation-v3.md
   - concepts/npm-supply-chain-defense.md
-  - entities/tools/gitleaks.md
+
 maturity: validated
 created: 2026-05-15
 updated: 2026-05-15
@@ -16,7 +16,7 @@ updated: 2026-05-15
 
 - @sources/multi-wiki-tool-evaluation-v3.md — K45 source evaluation (Adopt tier, WARN 82)
 - @concepts/npm-supply-chain-defense.md — secret scanning is the detection layer for supply-chain defense
-- @entities/tools/gitleaks.md — predecessor by same author (Zachary Rice); betterleaks is the successor
+
 
 ## Raw Concept
 

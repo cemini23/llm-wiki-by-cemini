@@ -130,7 +130,11 @@ def is_cross_wiki_path_exists(normalized_path):
         prefix = f"@{alias}/"
         if normalized_path.startswith(prefix):
             rel = normalized_path[len(prefix):]
-            target = WIKI_ALIASES[alias] / rel
+            # briefs/ live at repo root (sibling of wiki/), not inside wiki/
+            if rel.startswith("briefs/"):
+                target = WIKI_ALIASES[alias].parent / rel
+            else:
+                target = WIKI_ALIASES[alias] / rel
             return target.exists()
     return None
 
@@ -261,7 +265,11 @@ if WIKI_ALIASES:
             if alias not in WIKI_ALIASES:
                 continue  # skip local wiki links like @concepts/..., @entities/...
             rel_path = m.group(2).lstrip("/")
-            target = WIKI_ALIASES[alias] / rel_path
+            # briefs/ live at repo root (sibling of wiki/), not inside wiki/
+            if rel_path.startswith("briefs/"):
+                target = WIKI_ALIASES[alias].parent / rel_path
+            else:
+                target = WIKI_ALIASES[alias] / rel_path
             if not target.exists():
                 cross_wiki_dangling.append((src, alias, rel_path, target))
             else:

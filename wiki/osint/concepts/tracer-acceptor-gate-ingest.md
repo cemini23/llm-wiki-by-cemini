@@ -3,7 +3,8 @@ title: TRACER Acceptor Gate — ML Surrogate Routing for LLM Cost Reduction in O
 type: concept
 tags: []
 keywords: []
-related: []
+related:
+  - entities/tools/tracer.md
 maturity: draft
 created: 2026-05-15
 updated: 2026-05-15

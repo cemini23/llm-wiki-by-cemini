@@ -18,6 +18,7 @@ related:
   - entities/tools/fusion.md
   - entities/tools/open-generative-ai.md
   - entities/tools/tracer.md
+  - entities/tools/betterleaks.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-14
