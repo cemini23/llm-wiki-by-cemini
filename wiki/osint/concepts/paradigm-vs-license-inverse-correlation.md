@@ -15,6 +15,7 @@ related:
   - entities/tools/gitnexus.md
   - concepts/threat-intel-saas-cluster.md
   - sources/multi-wiki-link-eval-v4-2026-05-15.md
+  - sources/tool-evaluation-wiki-fit-2026-05-15.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-15
@@ -31,6 +32,7 @@ updated: 2026-05-15
 - `@entities/tools/markra.md` — AGPL-3.0 exemplar (Tauri local-first WYSIWYG)
 - `@entities/tools/openhuman.md` — GPL-3.0 exemplar (TokenJuice 80% compression)
 - `@entities/tools/gitnexus.md` — PolyForm-Noncommercial exemplar (12-phase DAG static analysis)
+- `@sources/tool-evaluation-wiki-fit-2026-05-15.md` — Shadowbroker (most capable OSINT tool in the 52-URL batch) is AGPL-3.0, reconfirming the inverse correlation
 
 ## Raw Concept
 

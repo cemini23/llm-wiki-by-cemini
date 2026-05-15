@@ -43,6 +43,7 @@ related:
   - sources/gemini-dr-link-eval-2026-04-28.md
   - sources/vibe-trading-hkuds.md
   - sources/langextract-google.md
+  - sources/tool-evaluation-wiki-fit-2026-05-15.md
   - sources/sentrux-ast-sensor.md
   - sources/claude-code-harness-chachamaru.md
   - sources/kepano-obsidian-skills.md
@@ -110,6 +111,7 @@ updated: 2026-05-11
 
 ## Relations
 
+- @sources/tool-evaluation-wiki-fit-2026-05-15.md — 52-URL eval applies the IP-sale license gate (AGPL / non-commercial / no-license rejects)
 - @sources/3-10-algorithmic-trading-ip-sale-audit.md
 - @sources/3-10-cryptographic-research.md
 - @sources/3-18-crypto-integration-technical-audit.md

@@ -5065,3 +5065,31 @@ Query/maintenance pass on three ROADMAP-pending items (no new sources ingested).
 
 ### Brief staged
 - `briefs/2026-05-15_cost-routing-orchestra.md` — CeminiSuite-targeted; auxiliary-model routing audit + scope-lock prompt + adversarial-pass-then-escalate, derived from `@concepts/agent-cost-routing-model-orchestra.md`. Not yet scp'd — awaits user confirmation.
+
+## [2026-05-15] ingest | Tool Evaluation and Wiki Fit — 52-URL multi-wiki eval (K47)
+
+Ingested the LLM-generated "Cemini Multi-Wiki Link Evaluation Report (v3)" docx — 52 URLs evaluated across all 6 wikis. Distinct batch from the two prior "v3"-labelled source pages (no URL overlap); `preingest_check.py` verdict NEW. All repo data cross-checked against the GitHub API on ingest.
+
+### Pages
+- `wiki/sources/tool-evaluation-wiki-fit-2026-05-15.md` — new source page (validated). Full tier + routing table; tier rollup 8 Adopt / 2 Steal-from / 3 Defer / 12 Reference-only / 9 Reject / 18 UNAVAILABLE.
+- `wiki/entities/tools/fingerprint-suite.md` — new entity (Adopt, Apache-2.0, OSINT primary fit).
+- `wiki/entities/tools/leann.md` — new entity (Adopt, MIT, CCC primary / cross-routed to OSINT).
+- Backlinks added: `ip-sale-readiness.md`, `multi-wiki-eval-doc-level-vs-phase-0.md`, `paradigm-vs-license-inverse-correlation.md`, `website-downloader.md`, `obscura-headless-browser.md`, `turbovec.md`, `conductor-librarian-architecture.md`.
+- `wiki/index.md` — added 1 source row + `#### K47 tool additions` section (2 tool rows).
+
+### Local adoptions (laptop)
+- **fingerprint-suite** — npm packages `fingerprint-generator`/`fingerprint-injector`/`header-generator` v2.1.82 installed to `~/tools/fingerprint-suite/`; smoke test passed (Chrome/macOS fingerprint generated).
+- **LEANN** — `leann` 0.3.5 + hnsw/diskann backends via pip. Python 3.9 incompatibility (llama-index-core 0.14 uses `X | None` syntax) resolved by pinning the llama-index trio to the 0.12.x line. `build`/`search`/`list` all verified on a 3-doc corpus.
+
+### Cross-wiki routing
+- 4 consolidated routing briefs filed via `cross_wiki_route.py` → CCC, Image-gen, SEO, Cybersec wikis (`briefs/2026-05-15_osint-tool-eval-routing-2026-05-15.md` in each). Reciprocal backlinks on the source page.
+
+### Adoption briefs → cemini-prod
+- 4 briefs scp'd to `/opt/cemini/briefs/`: fingerprint-suite + LEANN (local-adoption records) and Awesome-finance-skills + pm-claude-skills (server-side Cemini-financial adoption recommendations, CONDITIONAL-GO pending server-Claude Phase-0). Verified present on host.
+
+### Data-quality flags
+- 18/52 URLs UNAVAILABLE (retrieval failures in the report, not tool failures).
+- Report license errors caught against GitHub API: **Arcforge** claimed MIT but is NOASSERTION; **nano-banana** listed under "Clean MIT/Apache/BSD" but has no license. Both downgraded Adopt→Defer in the source page.
+
+### Raw source
+- `Tool Evaluation and Wiki Fit.docx` migrated to `cemini-librarian:/opt/cemini-bulk/research/`, laptop inbox clean.

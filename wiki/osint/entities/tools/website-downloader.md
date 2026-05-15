@@ -7,6 +7,7 @@ related:
   - sources/evaluating-github-repos-trading-stack-2026-05-12.md
   - "@seo-wiki/entities/tools/website-downloader.md"
   - "@cybersecurity-wiki/entities/tools/website-downloader.md"
+  - sources/tool-evaluation-wiki-fit-2026-05-15.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-05-12
@@ -19,6 +20,7 @@ phase_0_verdict: REFERENCE-ONLY 2026-05-12 (commodity functionality; cross-route
 - `@sources/evaluating-github-repos-trading-stack-2026-05-12.md` — source eval (URL 3)
 - `@seo-wiki/entities/tools/website-downloader.md` — SEO cross-route (site archival for competitor analysis)
 - `@cybersecurity-wiki/entities/tools/website-downloader.md` — cybersec cross-route (recon / target-site offline analysis)
+- `@sources/tool-evaluation-wiki-fit-2026-05-15.md` — re-evaluated in the 52-URL eval (Defer tier; verdict unchanged)
 
 ## Raw Concept
 

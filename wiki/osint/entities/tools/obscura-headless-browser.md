@@ -7,6 +7,7 @@ related:
   - sources/evaluating-project-links-stacks.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
+  - entities/tools/fingerprint-suite.md
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-12
@@ -17,6 +18,7 @@ license_verified: Apache-2.0 (gh api confirmed)
 ## Relations
 - `@sources/evaluating-project-links-stacks.md` — source evaluation brief (URL 16)
 - `@concepts/tool-evaluation-framework.md` — three-surface methodology applied
+- `@entities/tools/fingerprint-suite.md` — sibling OSINT-collection tooling; fingerprint-suite supplies the stealth fingerprint layer for headless browsing
 
 ## Raw Concept
 

@@ -6,6 +6,7 @@ keywords: [turbovec, ryancodrai, simd, neon, lloyd-max-quantization, vector-inde
 related:
   - sources/multi-wiki-link-eval-v4-2026-05-15.md
   - entities/infrastructure/conductor-librarian-architecture.md
+  - entities/tools/leann.md
 maturity: draft
 created: 2026-05-15
 updated: 2026-05-15T11:45
@@ -15,6 +16,7 @@ updated: 2026-05-15T11:45
 
 - @sources/multi-wiki-link-eval-v4-2026-05-15.md — evaluated in v4 link-eval (Adopt tier)
 - @entities/infrastructure/conductor-librarian-architecture.md — vector compression directly applicable to kb-server's embedding store
+- @entities/tools/leann.md — competing compact local vector index (graph selective-recomputation vs. SIMD quantization); benchmark head-to-head before wiring either into kb-server
 
 ## Raw Concept
 

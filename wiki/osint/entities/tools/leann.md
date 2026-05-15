@@ -1,0 +1,67 @@
+---
+title: "LEANN — storage-efficient local vector index (RAG on everything)"
+type: entity
+tags: [tool, vector-search, rag, vector-index, local-first, mcp, memory, adopt]
+keywords: [leann, yichuan-w, vector-index, selective-recomputation, graph-index, rag, mcp, storage-compression, mit-license, adopt]
+related:
+  - sources/tool-evaluation-wiki-fit-2026-05-15.md
+  - entities/tools/turbovec.md
+  - entities/infrastructure/conductor-librarian-architecture.md
+maturity: draft
+created: 2026-05-15
+updated: 2026-05-15
+phase_0_verdict: ADOPT 2026-05-15 (MIT verified, locally installed)
+---
+
+## Relations
+
+- @sources/tool-evaluation-wiki-fit-2026-05-15.md — evaluated in the 52-URL eval (Adopt tier, CCC primary, cross-routed to OSINT)
+- @entities/tools/turbovec.md — sibling vector-index tool; turbovec compresses via SIMD quantization, LEANN via graph-based selective recomputation — overlapping problem space, worth a head-to-head before committing the librarian to either
+- @entities/infrastructure/conductor-librarian-architecture.md — LEANN's storage profile is directly relevant to kb-server's embedding store
+
+## Raw Concept
+
+Promoted from the 2026-05-15 "Tool Evaluation and Wiki Fit" 52-URL eval. Tier: **Adopt**. Primary fit: CCC-wiki. Cross-route: **OSINT-wiki** (indexing large intelligence corpora locally).
+
+- URL: https://github.com/yichuan-w/LEANN
+- License: **MIT** — verified via GitHub API 2026-05-15 (matches report)
+- Stars: 11,031 | Last push: 2026-05-15 | Open issues: 38 | Stack: Python / C++
+
+## Narrative
+
+LEANN ("Low-storage Embedding-based Approximate Nearest Neighbor") is a local-first vector index that trades storage for compute: instead of persisting every embedding, it stores a pruned graph and **recomputes embeddings on-the-fly during search**. The result is an index roughly **97% smaller** than a conventional one — the project cites 60M text chunks indexed in ~6GB — without meaningfully degrading approximate-nearest-neighbor recall.
+
+It ships native **MCP** integration and a `skills/leann-memory` directory, and targets personal-AI-memory corpora (ChatGPT / Claude / WeChat exports, local documents).
+
+**OSINT relevance (why cross-routed in)**: the librarian's kb-server currently indexes ~860+ wiki pages; LEANN's storage profile makes fully-local, air-gapped semantic search over much larger ephemeral intelligence corpora tractable on laptop hardware. It overlaps with `turbovec` (also Adopt, also a compact local index) — the two solve the same problem by different means (graph selective-recomputation vs. SIMD scalar quantization). Decision deferred: do not wire either into kb-server before a direct benchmark on the actual wiki corpus.
+
+## Local adoption (2026-05-15)
+
+Installed laptop-side via pip (`leann` 0.3.5, with backends `leann-backend-hnsw` + `leann-backend-diskann`). Status: **working** — `build` / `search` / `list` all verified.
+
+**Python 3.9 incompatibility (resolved).** The laptop only has system Python 3.9. LEANN's CLI pulls `llama-index-core`, whose current 0.14.x line uses `X | None` annotations evaluated at class-body time — a syntax error on Python 3.9. Fix: pin the llama-index trio down to the 0.12.x line, which LEANN's own floor (`llama-index-core>=0.12.0`) still permits:
+
+- `llama-index-core==0.12.52.post1`
+- `llama-index-readers-file<0.5` → 0.4.11
+- `llama-index-embeddings-huggingface<0.6` → 0.5.5
+
+Smoke test (3-doc corpus): index built, `leann search "what is LEANN"` correctly ranked the LEANN sentence #1 (score 1.127). The graph-based recompute path (`is_recompute=true`, NULL embedding storage marker) is exercised by this build.
+
+**Recommendation**: when LEANN is seriously evaluated for the librarian, install Python 3.12 (`brew install python@3.12`) and reinstall into it — that removes the version pins and unlocks current llama-index. For now the pinned 3.9 install is sufficient for benchmarking against `turbovec`.
+
+## Snippets
+
+```bash
+# Install (2026-05-15, Python 3.9)
+pip3 install --user leann
+# Python 3.9 fix — pin llama-index to the 0.12.x line:
+pip3 install --user 'llama-index-core==0.12.52.post1' \
+  'llama-index-readers-file<0.5' 'llama-index-embeddings-huggingface<0.6'
+
+# Smoke test
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+leann build leann-smoke --docs ./docs
+leann search leann-smoke "what is LEANN"
+# → 1. Score: 1.127  "LEANN is a storage-efficient vector index ..."
+```
+
