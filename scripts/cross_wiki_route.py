@@ -302,15 +302,26 @@ def append_to_log(target_wiki_path, title, slug, category, source_alias,
 # Backlink — add reciprocal link to the source page
 # ---------------------------------------------------------------------------
 
-def add_backlink(source_wiki_path, backlink_page, target_alias, category, slug):
-    """Add reciprocal @target-alias/... link to the source page's ## Relations section."""
+def add_backlink(source_wiki_path, backlink_page, target_alias, category, slug,
+                 route_type="page", route_date=TODAY):
+    """Add reciprocal @target-alias/... link to the source page's ## Relations section.
+
+    For page-type routes, constructs path as {category}/{slug}.md.
+    For brief-type routes, constructs path as briefs/{date}_{slug}.md.
+    """
     page_path = source_wiki_path / backlink_page
     if not page_path.exists():
         print(f"  WARNING: source page {page_path} not found — skipping backlink")
         return
 
+    if route_type == "brief":
+        backlink = f"@{target_alias}/briefs/{route_date}_{slug}.md"
+        label = "(cross-wiki brief)"
+    else:
+        backlink = f"@{target_alias}/{category}/{slug}.md"
+        label = "(cross-wiki stub)"
+
     text = page_path.read_text()
-    backlink = f"@{target_alias}/{category}/{slug}.md"
 
     # Check if backlink already exists
     if backlink in text:
@@ -319,7 +330,7 @@ def add_backlink(source_wiki_path, backlink_page, target_alias, category, slug):
 
     # Find ## Relations section
     relations_re = re.compile(r"^(## Relations\n)", re.MULTILINE)
-    new_line = f"- {backlink}  (cross-wiki stub)\n"
+    new_line = f"- {backlink}  {label}\n"
 
     if relations_re.search(text):
         # Insert after the Relations header
@@ -437,7 +448,8 @@ def main():
     # Add reciprocal backlink to source page
     if not args.no_backlink:
         add_backlink(source_wiki_path, args.backlink_page,
-                    args.target_wiki, args.category, args.slug)
+                    args.target_wiki, args.category, args.slug,
+                    route_type=args.type)
 
     print("\nDone.")
 
