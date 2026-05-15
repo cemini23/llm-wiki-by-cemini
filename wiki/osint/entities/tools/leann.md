@@ -33,11 +33,13 @@ LEANN ("Low-storage Embedding-based Approximate Nearest Neighbor") is a local-fi
 
 It ships native **MCP** integration and a `skills/leann-memory` directory, and targets personal-AI-memory corpora (ChatGPT / Claude / WeChat exports, local documents).
 
-**OSINT relevance (why cross-routed in)**: the librarian's kb-server currently indexes ~860+ wiki pages; LEANN's storage profile makes fully-local, air-gapped semantic search over much larger ephemeral intelligence corpora tractable on laptop hardware. It overlaps with `turbovec` (also Adopt, also a compact local index) — the two solve the same problem by different means (graph selective-recomputation vs. SIMD scalar quantization). Decision deferred: do not wire either into kb-server before a direct benchmark on the actual wiki corpus.
+**OSINT relevance (why cross-routed in)**: the librarian's kb-server currently indexes ~860+ wiki pages; LEANN's storage profile makes semantic search over much larger ephemeral intelligence corpora tractable. It overlaps with `turbovec` (also Adopt, also a compact local index) — the two solve the same problem by different means (graph selective-recomputation vs. SIMD scalar quantization). Decision deferred: do not wire either into kb-server before a direct benchmark on the actual wiki corpus.
+
+**Deployment boundary** — the laptop install (below) is a **benchmark / interactive-workflow tool only**. If LEANN wins the benchmark and gets wired into kb-server to serve the wiki, that deployment **must run on `cemini-librarian`** — kb-server needs 24/7 uptime and this laptop is not always on. Anything serving the wiki belongs on the librarian server, never the laptop.
 
 ## Local adoption (2026-05-15)
 
-Installed laptop-side via pip (`leann` 0.3.5, with backends `leann-backend-hnsw` + `leann-backend-diskann`). Status: **working** — `build` / `search` / `list` all verified.
+Installed laptop-side via pip (`leann` 0.3.5, with backends `leann-backend-hnsw` + `leann-backend-diskann`). Status: **working** — `build` / `search` / `list` all verified. Scope: **benchmark + interactive workflow only** — this is not a wiki-serving deployment (see Deployment boundary above).
 
 **Python 3.9 incompatibility (resolved).** The laptop only has system Python 3.9. LEANN's CLI pulls `llama-index-core`, whose current 0.14.x line uses `X | None` annotations evaluated at class-body time — a syntax error on Python 3.9. Fix: pin the llama-index trio down to the 0.12.x line, which LEANN's own floor (`llama-index-core>=0.12.0`) still permits:
 
@@ -47,7 +49,7 @@ Installed laptop-side via pip (`leann` 0.3.5, with backends `leann-backend-hnsw`
 
 Smoke test (3-doc corpus): index built, `leann search "what is LEANN"` correctly ranked the LEANN sentence #1 (score 1.127). The graph-based recompute path (`is_recompute=true`, NULL embedding storage marker) is exercised by this build.
 
-**Recommendation**: when LEANN is seriously evaluated for the librarian, install Python 3.12 (`brew install python@3.12`) and reinstall into it — that removes the version pins and unlocks current llama-index. For now the pinned 3.9 install is sufficient for benchmarking against `turbovec`.
+**Recommendation**: the pinned Python 3.9 laptop install is sufficient for benchmarking against `turbovec`. A production wiki-serving role does **not** get set up here — it gets set up on `cemini-librarian` (Python 3.10+ available there, so no version pins needed) so kb-server keeps 24/7 uptime. The laptop install never serves the wiki.
 
 ## Snippets
 
