@@ -33,6 +33,16 @@ Staging/output lives outside the wiki:
 - `hot.md` — ephemeral session-state cache (gitignored)
 - `ROADMAP.md` — active workstreams + open decisions (tracked)
 
+## Deployment boundary — what runs where
+
+Three machines, split by function. **Anything that must be continuously available is deployed on the Hetzner servers, never the laptop.**
+
+- **Laptop** (this workspace) — authoring/curation of the wiki; canonical git source. Not in any serving path: it can be powered off at any time without affecting running systems. When off, only *curation* pauses (no ingests/edits/lint) — the served wiki simply stays at its last-synced state.
+- **cemini-librarian** — 24/7 knowledge serving: kb-server (wiki RAG/MCP), Ollama (embeddings), stash (episodic memory). The synced wiki copy and the raw-source canon (`/opt/cemini-bulk`) live here.
+- **cemini-prod** (`/opt/cemini`) — 24/7 CeminiSuite trading stack — the "brain" that consumes the library.
+
+Rule: any wiki-serving component (e.g. a vector index for kb-server) belongs on `cemini-librarian`. A laptop install is a benchmark/workflow tool only and never serves the wiki. See `@concepts/librarian-server-architecture.md` and `@concepts/kb-server-retrieval-scaling.md`.
+
 ## Folder layout
 
 ```
