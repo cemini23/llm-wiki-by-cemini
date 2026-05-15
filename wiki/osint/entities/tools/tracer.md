@@ -11,6 +11,7 @@ updated: 2026-05-14
 ---
 
 ## Relations
+- @osint-wiki/concepts/tracer-acceptor-gate-ingest.md  (cross-wiki stub)
 
 - @sources/multi-wiki-tool-evaluation-v3.md — v3 batch eval: Steal-from tier, Cemini financial primary fit
 

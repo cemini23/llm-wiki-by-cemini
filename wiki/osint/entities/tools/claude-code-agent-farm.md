@@ -12,6 +12,7 @@ updated: 2026-05-14
 
 ## Relations
 - @ccc-wiki/entities/claude-code-agent-farm.md  (cross-wiki stub)
+- @cybersecurity-wiki/briefs/2026-05-15_agent-farm-tmux-cybersec.md  (cross-wiki brief)
 
 - @sources/multi-wiki-tool-evaluation-v3.md — v3 batch eval: Steal-from tier, CCC wiki primary fit
 

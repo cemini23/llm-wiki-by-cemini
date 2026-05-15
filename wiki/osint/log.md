@@ -5022,3 +5022,8 @@ No raw content imported. Cross-wiki references are pointers; the cybersecurity w
 - Public forward-track: https://cemini23.github.io/outlier-weekly-methodology/forward-track/ (Issue 1 SKIP row, with schema for future SKIP-CORRECT / SKIP-WRONG resolution discipline)
 - Public artifact: free issue, ~2,800 words; this concept page is the wiki cross-post per the K45 file-insights-back pattern
 - Staging brief: `briefs/2026-05-14_outlier-weekly-issue1-wiki-crosspost.md` (gitignored)
+
+## [2026-05-15] cross-wiki route | TRACER Acceptor Gate — ML Surrogate Routing for LLM Cost Reduction in OSINT Ingest
+
+Cross-wiki stub routed from `@osint-wiki/entities/tools/tracer.md`.
+- Created wiki/concepts/tracer-acceptor-gate-ingest.md (stub)

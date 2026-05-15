@@ -12,6 +12,7 @@ updated: 2026-05-14
 ---
 
 ## Relations
+- @ccc-wiki/briefs/2026-05-15_deepeval-vibe-coder-ccc.md  (cross-wiki brief)
 
 - @sources/multi-wiki-tool-evaluation-v3.md — v3 batch eval: Adopt tier, OSINT wiki primary fit
 - @concepts/counterfactual-prompting-baselines.md — complementary evaluation methodology; deepeval provides the metrics infrastructure, counterfactual-baselines provides the null-distribution framework

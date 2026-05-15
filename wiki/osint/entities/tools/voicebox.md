@@ -11,6 +11,7 @@ updated: 2026-05-14
 ---
 
 ## Relations
+- @ccc-wiki/briefs/2026-05-15_voicebox-mcp-ccc.md  (cross-wiki brief)
 - @image-gen-wiki/entities/voicebox.md  (cross-wiki stub)
 
 - @sources/multi-wiki-tool-evaluation-v3.md — v3 batch eval: Adopt tier, Image-gen wiki primary fit

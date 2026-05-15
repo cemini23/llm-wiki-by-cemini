@@ -11,6 +11,7 @@ updated: 2026-05-14
 ---
 
 ## Relations
+- @ccc-wiki/briefs/2026-05-15_open-generative-ai-skills-ccc.md  (cross-wiki brief)
 - @image-gen-wiki/entities/open-generative-ai.md  (cross-wiki stub)
 
 - @sources/multi-wiki-tool-evaluation-v3.md — v3 batch eval: Steal-from tier, Image-gen wiki primary fit

@@ -11,6 +11,7 @@ updated: 2026-05-14
 ---
 
 ## Relations
+- @ccc-wiki/briefs/2026-05-15_tpotce-llm-honeypot-ccc.md  (cross-wiki brief)
 - @cybersecurity-wiki/entities/tpotce.md  (cross-wiki stub)
 
 - @sources/multi-wiki-tool-evaluation-v3.md — v3 batch eval: Steal-from tier, Cybersec wiki primary fit
