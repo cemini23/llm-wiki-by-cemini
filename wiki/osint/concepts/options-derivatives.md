@@ -13,8 +13,10 @@ related:
   - sources/3-29-research-5.md
   - sources/4-14-re.md
   - sources/american-call-options-pricing-with-modular-neural-networks.md
-  - sources/bayesuan-perspectives.md
   - sources/cost-effective-algorithmic-trading-api-stack.md
+  - sources/loosening-your-collar-alternative-implementations-of-qqq-collars.md
+  - sources/mixed-fractional-models.md
+  - sources/qqq-trust-s-american-options-using-data-from-november-21-2024.md
   - sources/crypto-13-4-11.md
   - sources/github-analysis.md
   - sources/greeks-10-3-29.md
@@ -48,8 +50,10 @@ updated: 2026-05-16
 - @sources/3-29-research-5.md — Options & Derivatives source in the Cemini research corpus
 - @sources/4-14-re.md — Options & Derivatives source in the Cemini research corpus
 - @sources/american-call-options-pricing-with-modular-neural-networks.md — Options & Derivatives source in the Cemini research corpus
-- @sources/bayesuan-perspectives.md — Options & Derivatives source in the Cemini research corpus
 - @sources/cost-effective-algorithmic-trading-api-stack.md — Options & Derivatives source in the Cemini research corpus
+- @sources/loosening-your-collar-alternative-implementations-of-qqq-collars.md — K49 deep-read; QQQ collar (protective put + covered call) strategy, credit-crisis + out-of-sample performance
+- @sources/mixed-fractional-models.md — K49 deep-read; boundary inference (LAN + score tests at H=3/4) for mixed fractional Brownian / OU volatility models
+- @sources/qqq-trust-s-american-options-using-data-from-november-21-2024.md — K49 deep-read; QQQ American-option pricing via binomial tree + Monte Carlo validation
 - @sources/crypto-13-4-11.md — Options & Derivatives source in the Cemini research corpus
 - @sources/github-analysis.md — Options & Derivatives source in the Cemini research corpus
 - @sources/greeks-10-3-29.md — Options & Derivatives source in the Cemini research corpus

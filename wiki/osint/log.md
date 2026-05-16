@@ -5245,3 +5245,29 @@ Phase-0 clone audits of the 4 OSINT/financial K49 Adopt-tier tools (clone + lice
 - **socid-extractor → GO** (was CONDITIONAL; remediated same day). Repo HEAD/v0.0.28 is clean MIT; v0.0.27 was GPL-3.0. cemini-librarian upgraded to v0.0.28 (MIT). Laptop residual: pinned at v0.0.27 (GPL-3.0) — laptop Python is 3.9.6, v0.0.28 needs ≥3.10; benign (curation workspace, library import, no redistribution).
 
 Brief `briefs/2026-05-16_k49-prediction-market-tooling.md` updated with a Phase-0 addendum (Insider Tracker NO-GO reverses its earlier CONDITIONAL-ADOPT) — skill_audit PASS, re-scp'd to cemini-prod.
+
+## [2026-05-16] deep-read | cited-unread-stub campaign — batch 3 (10 bootstrap-corpus stubs)
+
+Batch 3 of the cited-unread-stub campaign. 10 stubs processed; cited-unread-stub backlog 78 → 68.
+
+### In-scope deep-reads (8) — unread-stub → deep-read
+- `qqq-trust-s-american-options-using-data-from-november-21-2024` — QQQ American-option pricing, binomial tree + MC validation (maturity draft — course project). → options-derivatives.
+- `loosening-your-collar-alternative-implementations-of-qqq-collars` — Szado & Schneeweis QQQ collar strategy, credit-crisis + out-of-sample. → options-derivatives.
+- `market-microstructure-and-liquidity-analysis-of-qqq-etf-on-2024-08-01` — QQQ liquidity / PIN / VPIN on a volatile day (maturity draft — course project). → market-microstructure.
+- `mixed-fractional-models` — boundary inference (LAN + score tests at H=3/4) for mixed fractional Brownian / OU vol models. → options-derivatives.
+- `rough-martingale-optimal-transport` — Rough MOT for FRTB non-modelable risk factors; finite NMRF audit bounds. → options-derivatives.
+- `hi-darts` — hierarchical multi-agent PPO trading system with volatility-aware time-frame allocator. → rl-marl.
+- `nonstandard-errors` — 150 Claude Code agents independently testing market-quality hypotheses on NYSE TAQ SPY; agent-to-agent result variation. → llm-agents + market-microstructure.
+- `esglens` — LLM-RAG framework for ESG report analysis + score prediction. → llm-agents.
+
+### Triaged out-of-scope (2) — unread-stub → skimmed, reclassified to corpus-overflow-out-of-scope
+- `bayesuan-perspectives` — Bayesian analysis of clinical trials (biostatistics).
+- `ligo` — deep learning for LIGO gravitational-wave glitch classification (astrophysics).
+
+### Hub wiring
+- `options-derivatives.md` — +3 (qqq-options, qqq-collars, mixed-fractional); −1 (bayesuan-perspectives, reclassified out).
+- `llm-agent-systems.md` — −1 (ligo, reclassified out).
+- `corpus-overflow-out-of-scope.md` — 2 new entries (8 → 10 sources); index.md count updated.
+- `nonstandard-errors` dual-homed (llm-agents + market-microstructure).
+
+Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw PDFs already on librarian (`research for cemini/` bootstrap corpus) — no migration needed.

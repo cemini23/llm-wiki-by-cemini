@@ -12,6 +12,8 @@ related:
   - sources/protocol-2-3-29.md
   - sources/protocol-7-3-29.md
   - sources/3-29-4.md
+  - sources/bayesuan-perspectives.md
+  - sources/ligo.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-05-16
@@ -27,6 +29,8 @@ updated: 2026-05-16
 - @sources/protocol-2-3-29.md — *Reinforcement Learning for Quantum Processes with Memory* (Lumbreras et al., NTU Singapore) — quantum-information-theory RL; no path to classical financial-market modeling
 - @sources/protocol-7-3-29.md — *Optimized Control Protocols for Stable Skyrmion Creation Using Deep RL* (Song et al., KAIST) — condensed-matter spintronics device physics; no trading-stack application path
 - @sources/3-29-4.md — *A Robust and Efficient MARL Framework for Traffic Signal Control* (Huang et al., NYCU) — urban traffic-signal optimization; traffic-specific framework with no direct trading-stack transfer
+- @sources/bayesuan-perspectives.md — *Some Bayesian Perspectives on Clinical Trials* (Sokolova, Sokolov, Polson) — biostatistics / Bayesian clinical-trial design; medical-trial domain with no path to financial-market modeling
+- @sources/ligo.md — *Evaluating Deep Learning Models for Multiclass Classification of LIGO Gravitational Wave Glitches* (Manoharan & Cleaver, Baylor) — astrophysics detector-characterization ML; no transfer path to the trading stack
 
 ## Raw Concept
 
@@ -50,7 +54,7 @@ If criterion (3) shifts (roadmap pivots, new thread opens), the source graduates
 
 Deleting the stubs would lose the inventory record of which PDFs were already triaged-and-rejected, leading to duplicate effort on the next sweep. Keeping them under this hub is a librarian's "we looked, we passed" marker.
 
-### Current contents (8 sources, 2026-05-16)
+### Current contents (10 sources, 2026-05-16)
 
 | Stub | Topic | Why out-of-scope |
 |---|---|---|
@@ -62,6 +66,8 @@ Deleting the stubs would lose the inventory record of which PDFs were already tr
 | @sources/protocol-2-3-29.md | RL for quantum processes with memory (quantum-information theory) | Quantum-physics RL with regret bounds; no path to classical financial-market modeling |
 | @sources/protocol-7-3-29.md | Deep RL for stable skyrmion creation (condensed-matter physics) | Spintronics device physics; RL applied to micromagnetic simulation, no trading-stack transfer |
 | @sources/3-29-4.md | MARL framework for traffic signal control | Urban traffic-signal optimization; traffic-specific framework/action space, no direct trading transfer |
+| @sources/bayesuan-perspectives.md | Bayesian analysis of three landmark clinical trials (pure biostatistics) | Medical clinical-trial design; shares Bayesian machinery but no path to financial-market modeling |
+| @sources/ligo.md | Deep-learning glitch classification for LIGO gravitational-wave detectors | Astrophysics detector characterization; generic tabular ML but domain has no trading-stack transfer |
 
 ## Snippets
 

@@ -59,7 +59,6 @@ related:
   - sources/harness2-4-5.md
   - sources/how-to-deploy-your-first-claude-managed-agent.md
   - sources/kalshi-5-3-29.md
-  - sources/ligo.md
   - sources/llm-4-3-2.md
   - sources/llm-4-3-5.md
   - sources/llm-4-3-6.md
@@ -170,7 +169,6 @@ updated: 2026-05-11
 - @sources/harness2-4-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/how-to-deploy-your-first-claude-managed-agent.md — LLM agent-systems source in the Cemini research corpus
 - @sources/kalshi-5-3-29.md — LLM agent-systems source in the Cemini research corpus
-- @sources/ligo.md — LLM agent-systems source in the Cemini research corpus (O 2026-04-27 — attention-based architectures, tabular benchmark)
 - @sources/llm-4-3-2.md — LLM agent-systems source in the Cemini research corpus
 - @sources/llm-4-3-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/llm-4-3-6.md — LLM agent-systems source in the Cemini research corpus
