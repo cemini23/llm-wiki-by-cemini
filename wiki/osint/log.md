@@ -5234,3 +5234,14 @@ Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling.
 ## [2026-05-16] meta | wiki-constellation README sync
 
 Updated all 6 wiki READMEs (osint, image-gen, seo, 3d-printing, cybersecurity, ccc) to reflect the six-wiki constellation (CCC added — image-gen and cybersecurity READMEs previously said "four"), and to flag the OSINT and CCC wikis as private (not publicly available). seo / 3d-printing / osint READMEs gained a "Sister wikis" section; image-gen / cybersecurity / ccc had theirs corrected.
+
+## [2026-05-16] phase-0 | K49 Adopt-tier tool audits (OSINT)
+
+Phase-0 clone audits of the 4 OSINT/financial K49 Adopt-tier tools (clone + license-verify + dependency scan + code-substance probe + maturity). Verdicts recorded in each entity page's `## Phase-0 Audit` section + `phase_0_verdict` frontmatter.
+
+- **pmxt → CONDITIONAL-GO.** MIT confirmed (LICENSE + SPDX, core + Python SDK); adapters real (Polymarket ~5k LoC, genuine Gnosis Safe / EIP-712). Conditions: exclude `baozi` Solana adapter (transitive LGPL-3.0-only `rpc-websockets`); vendor-pin venue SDKs; fork-and-pin (bus-factor-1).
+- **PolyTerm → GO.** MIT confirmed; zero-custody / view-only claim verified in source (no signing/order-submission/web3 anywhere); deps fully permissive.
+- **Polymarket Insider Tracker → NO-GO.** No LICENSE file in repo (`licenseInfo: null`); README MIT badge points to a nonexistent file → all-rights-reserved by default → blocker for the IP-sale stack. Code is real (sklearn DBSCAN + web3 funding-chain) — borrow the technique via clean-room reimplementation, not the repo.
+- **socid-extractor → GO** (was CONDITIONAL; remediated same day). Repo HEAD/v0.0.28 is clean MIT; v0.0.27 was GPL-3.0. cemini-librarian upgraded to v0.0.28 (MIT). Laptop residual: pinned at v0.0.27 (GPL-3.0) — laptop Python is 3.9.6, v0.0.28 needs ≥3.10; benign (curation workspace, library import, no redistribution).
+
+Brief `briefs/2026-05-16_k49-prediction-market-tooling.md` updated with a Phase-0 addendum (Insider Tracker NO-GO reverses its earlier CONDITIONAL-ADOPT) — skill_audit PASS, re-scp'd to cemini-prod.

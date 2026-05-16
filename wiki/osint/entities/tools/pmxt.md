@@ -10,7 +10,7 @@ related:
 maturity: draft
 created: 2026-05-16
 updated: 2026-05-16
-phase_0_verdict: ADOPT (doc-level) 2026-05-16 — MIT verified in report; Phase-0 clone audit pending before cemini-prod integration
+phase_0_verdict: CONDITIONAL-GO 2026-05-16 — MIT verified (LICENSE + SPDX in both core/python SDK); real multi-venue adapters confirmed; condition 1: exclude the `baozi` Solana adapter from any cemini-prod build (its `@solana/web3.js` chain pulls LGPL-3.0-only `rpc-websockets` — weak copyleft, dynamic-link OK but cleanest to drop since baozi is not a Cemini target venue); condition 2: vendor-pin the third-party venue SDKs (`@polymarket/clob-client-v2`, `@limitless-exchange/sdk`, etc.) and re-verify their MIT status at integration time; condition 3: single-maintainer (Samuel EF. Tinnerholm) — treat as bus-factor-1, fork-and-pin before depending on it in production
 ---
 
 ## Relations
@@ -37,8 +37,48 @@ Its key value for the Cemini financial suite: it natively resolves exchange-spec
 
 **Cemini fit**: candidate execution-abstraction layer for the `/opt/cemini` trading stack, replacing custom per-venue adapters. The MIT license clears it for the IP sale. Deployment belongs on **cemini-prod**, not the laptop/librarian — staged via adoption brief, not installed from this workspace.
 
-- `[NEEDS VERIFICATION 2026-05-16]` Compatibility of the `dome-to-pmxt` automated migration tool with Cemini's customized Redis Streams data structures.
-- `[NEEDS VERIFICATION 2026-05-16]` Phase-0 clone audit: confirm MIT LICENSE file present, no vendored copyleft deps.
+- `[NEEDS VERIFICATION 2026-05-16]` Compatibility of the `dome-to-pmxt` automated migration tool with Cemini's customized Redis Streams data structures. (`tools/dome-to-pmxt/` confirmed present in repo — `index.js` + `package.json` + `README.md`; functional compatibility still untested.)
+- `[CONFIRMED 2026-05-16]` Phase-0 clone audit complete — see `## Phase-0 Audit` below. MIT LICENSE present; one weak-copyleft transitive dep (`rpc-websockets` LGPL-3.0-only) isolated to the non-target `baozi` adapter.
+
+## Phase-0 Audit (2026-05-16)
+
+Clone audit per CLAUDE.md § "Phase-0 audit pattern". Repo cloned to `/tmp/pmxt-audit/` (shallow, depth 50). Inspect-only — tools not executed.
+
+### License verification — PASS
+
+- Root `LICENSE`: MIT License, "Copyright (c) 2026 pmxt.dev". Standard unmodified MIT text.
+- GitHub `licenseInfo`: `mit` / "MIT License".
+- SPDX `"license": "MIT"` declared in `core/package.json` and `license = {text = "MIT"}` in `sdks/python/pyproject.toml`. Python SDK also carries the `License :: OSI Approved :: MIT License` classifier.
+- Verdict: MIT confirmed at repo level and in both publishable SDK manifests. Clears the IP-sale copyleft perimeter for pmxt's own code.
+
+### Maturity signals — eval claim vs observed
+
+| Metric | Eval claim | Observed (2026-05-16) | Note |
+|--------|-----------|----------------------|------|
+| Stars | ~1700 | 1731 | Confirmed |
+| Last commit | 2026-05-15 | 2026-05-16 (`pushedAt`) | Confirmed — actively pushing |
+| Open issues | 8 | 8 | Exact match |
+| Stack | TS/Python | TS (2.46 MB primary) + Python (290 KB SDK) + JS | Confirmed |
+| Forks | — | 193 | Healthy ecosystem interest |
+| Created | — | 2026-01-08 | ~4-month-old project — young |
+
+### Failure-mode probe (financial execution middleware → cemini-prod, IP-sale-bound stack)
+
+(a) **Real LICENSE = MIT + SPDX** — PASS. See above.
+
+(b) **Dependency license scan** — CONDITIONAL. Scanned `package-lock.json` + `core/package-lock.json` (~1400 resolved deps). License distribution: 1172 MIT, 98 ISC, 30 BSD-3, 21 Apache-2.0, 16 BlueOak-1.0.0, 14 BSD-2, plus a few permissive dual-licenses. **One copyleft hit: `rpc-websockets@9.3.3` declared `LGPL-3.0-only`.** It is a *transitive* dep pulled only via `@solana/web3.js`. `@solana/web3.js` is imported **only** by the `baozi` exchange adapter (`core/src/exchanges/baozi/*`) — none of the Cemini-target venues (Polymarket/Kalshi/Limitless/Hyperliquid/Metaculus are EVM- or REST-based) touch it. LGPL is weak copyleft (dynamic linking via npm does not force relicensing of the consuming app), so it is not an automatic disqualifier — but for an IP-sale-bound proprietary stack the clean move is to exclude `baozi` from the cemini-prod build entirely, which removes the `@solana/web3.js` → `rpc-websockets` chain. No GPL/AGPL/SSPL anywhere; no unlicensed deps found.
+
+(c) **Real adapters vs stub** — PASS. `core/src/exchanges/` contains 15 venue directories, each with its own `auth.ts`, `api*.ts`, order/market modules. Substance check (line counts): polymarket 5034 lines / 10 files, kalshi 4775 / 10, limitless 3151 / 9, metaculus 2024 / 8, hyperliquid 1415 / 7. `polymarket/auth.ts` implements the four real CLOB signature types (EOA / Poly-Proxy / **Gnosis Safe** / ERC-1271) against `@polymarket/clob-client-v2` + `viem`; Limitless/Hyperliquid carry their own `auth.ts` with EIP-712 signing. This is a genuine multi-venue implementation, not a thin wrapper. `@pmxt/mcp` is real but lives in a **separate repo** (`pmxt-dev/pmxt-mcp`, invoked via `npx -y @pmxt/mcp`) — not vendored here, so it needs its own Phase-0 pass before CCC-side adoption.
+
+(d) **Maintenance health** — WEAK. Of the last 50 commits, 33 are by a single human author (Samuel EF. Tinnerholm) and 17 by `github-actions[bot]` (auto-docs/changelog). Effectively a **bus-factor-1 single-maintainer project**, ~4 months old. Commit cadence is high (multiple commits/day through early-mid May) and the version is advancing fast (changelog shows v2.41.6) — active but fragile. For a production execution dependency, fork-and-pin is mandatory.
+
+### Comparison vs existing Cemini coverage
+
+Cemini's `/opt/cemini` stack currently uses custom per-venue adapters. pmxt is a *consolidation* play, not a duplicate: it would replace hand-maintained adapter code with one upstream interface plus the `dome-to-pmxt` migration path. No existing Cemini component overlaps. Sibling tool @entities/tools/polyterm.md is complementary (analytics/view-only layer, not execution).
+
+### Decision — CONDITIONAL-GO
+
+MIT clean for pmxt's own code; real, substantial adapters; the venue + auth claims (Gnosis Safe, EIP-712, five-venue coverage) all verified in source. Three conditions before cemini-prod integration: (1) **exclude the `baozi` Solana adapter** to drop the LGPL-3.0-only `rpc-websockets` transitive dep — trivial since baozi is not a Cemini target; (2) **vendor-pin the third-party venue SDKs** and re-verify their MIT status at integration time (they are upstream-controlled, currently all MIT); (3) **fork-and-pin** — single-maintainer bus-factor-1 means Cemini must not depend on a live upstream. `@pmxt/mcp` is a separate repo and needs its own Phase-0 audit before CCC adoption.
 
 ## Snippets
 
