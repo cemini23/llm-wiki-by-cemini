@@ -34,7 +34,6 @@ related:
   - sources/3-29-18.md
   - sources/3-29-2.md
   - sources/3-29-3.md
-  - sources/3-29-4.md
   - sources/3-29-5.md
   - sources/3-29-7.md
   - sources/3-29-9.md
@@ -80,10 +79,7 @@ related:
   - sources/lang2-4-14.md
   - sources/llm-4-3-4.md
   - sources/llm-4-3-7.md
-  - sources/protocol-1-3-29.md
-  - sources/protocol-2-3-29.md
   - sources/protocol-5-3-29.md
-  - sources/protocol-7-3-29.md
   - sources/regret-driven-portfolios.md
   - sources/rl-technical-audit-findings-3-9.md
   - sources/sakana-conductor-rl-orchestration.md
@@ -140,7 +136,6 @@ updated: 2026-05-15
 - @sources/3-29-18.md — RL/MARL source in the Cemini research corpus
 - @sources/3-29-2.md — RL/MARL source in the Cemini research corpus
 - @sources/3-29-3.md — RL/MARL source in the Cemini research corpus
-- @sources/3-29-4.md — RL/MARL source in the Cemini research corpus
 - @sources/3-29-5.md — RL/MARL source in the Cemini research corpus
 - @sources/3-29-7.md — RL/MARL source in the Cemini research corpus
 - @sources/3-29-9.md — RL/MARL source in the Cemini research corpus
@@ -185,10 +180,7 @@ updated: 2026-05-15
 - @sources/lang2-4-14.md — RL/MARL source in the Cemini research corpus
 - @sources/llm-4-3-4.md — RL/MARL source in the Cemini research corpus
 - @sources/llm-4-3-7.md — RL/MARL source in the Cemini research corpus
-- @sources/protocol-1-3-29.md — RL/MARL source in the Cemini research corpus
-- @sources/protocol-2-3-29.md — RL/MARL source in the Cemini research corpus
 - @sources/protocol-5-3-29.md — RL/MARL source in the Cemini research corpus
-- @sources/protocol-7-3-29.md — RL/MARL source in the Cemini research corpus
 - @sources/regret-driven-portfolios.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — LLM-guided regret-minimization for portfolio allocation)
 - @sources/rl-technical-audit-findings-3-9.md — RL/MARL source in the Cemini research corpus
 - @sources/sakana-conductor-rl-orchestration.md — RL/MARL source in the Cemini research corpus (user-dropped 2026-04-27 — ICLR 2026 Sakana AI paper; 7B Conductor LLM trained with GRPO to orchestrate frontier worker LLMs; **first paper in cluster to RL-train the orchestration layer itself**, beats GPT-5 average 77.27 vs 74.78 by orchestrating it)

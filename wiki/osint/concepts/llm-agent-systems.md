@@ -66,6 +66,7 @@ related:
   - sources/llm-re-4-3.md
   - sources/llm-wiki.md
   - sources/protcol-9-3-29.md
+  - sources/protocol-1-3-29.md
   - sources/protocol-10-3-29.md
   - sources/protocol-3-3-29.md
   - sources/protocol-4-3-29.md
@@ -176,6 +177,7 @@ updated: 2026-05-11
 - @sources/llm-re-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/llm-wiki.md — LLM agent-systems source in the Cemini research corpus
 - @sources/protcol-9-3-29.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26 — efficient AI-agent benchmarking)
+- @sources/protocol-1-3-29.md — LLM agent-systems source (K49 deep-read — empirical MCP-vs-A2A agent-protocol benchmark)
 - @sources/protocol-10-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/protocol-3-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/protocol-4-3-29.md — LLM agent-systems source in the Cemini research corpus

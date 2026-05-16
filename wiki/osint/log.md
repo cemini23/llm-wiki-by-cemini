@@ -5204,3 +5204,33 @@ Full ingest of 3 inbox files (`research to be indexed/`). All NEW per `preingest
 
 ### Raw-source migration
 3 raw files moved to `cemini-librarian:/opt/cemini-bulk/research/` (2605.15178v1.pdf, posts.docx, Tool Evaluation and Wiki Fit Analysis.docx); laptop copies removed.
+
+## [2026-05-16] deep-read | cited-unread-stub campaign — batch 2 (10 bootstrap-corpus stubs)
+
+Batch 2 of the cited-unread-stub deep-read campaign. 10 cryptically-named bootstrap-corpus source pages processed; cited-unread-stub backlog 88 → 78.
+
+### In-scope deep-reads (7) — promoted unread-stub → deep-read, maturity validated
+- `protocol-1-3-29` — Empirical Comparison of Agent Communication Protocols (MCP vs A2A benchmark). Recluster rl-marl → llm-agents.
+- `protocol-3-3-29` — Rethinking Failure Attribution in Multi-Agent Systems / MP-Bench.
+- `protocol-4-3-29` — FinMCP-Bench: benchmarking LLM agents on real financial tool use under MCP (directly financial-agent relevant).
+- `protocol-6-3-29` — Formal Semantics for Agentic Tool Protocols (π-calculus; SGD ∼ MCP).
+- `protocol-8-3-29` — How are AI agents used? Evidence from 177,000 MCP tools.
+- `protcol-9-3-29` — Efficient Benchmarking of AI Agents (mid-range difficulty filter). Recluster rl-marl → llm-agents.
+- `ai-3-4-7` — Ethics of AI (Tartaro & Héder encyclopedia entry); governance backdrop.
+
+### Triaged out-of-scope (3) — unread-stub → skimmed, reclassified to corpus-overflow-out-of-scope
+- `protocol-2-3-29` — RL for quantum processes with memory (quantum-information theory).
+- `protocol-7-3-29` — Deep RL for stable skyrmion creation (condensed-matter spintronics).
+- `3-29-4` — MARL for traffic-signal control (urban traffic, not finance).
+
+### Hub wiring
+- `llm-agent-systems.md` — added protocol-1-3-29 backlink.
+- `rl-marl-research.md` — removed 4 reclassified pages (3-29-4, protocol-1/2/7-3-29).
+- `corpus-overflow-out-of-scope.md` — 3 new entries (5 → 8 sources).
+- `index.md` — corpus-overflow row count 3 → 8.
+
+Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling.
+
+## [2026-05-16] meta | wiki-constellation README sync
+
+Updated all 6 wiki READMEs (osint, image-gen, seo, 3d-printing, cybersecurity, ccc) to reflect the six-wiki constellation (CCC added — image-gen and cybersecurity READMEs previously said "four"), and to flag the OSINT and CCC wikis as private (not publicly available). seo / 3d-printing / osint READMEs gained a "Sister wikis" section; image-gen / cybersecurity / ccc had theirs corrected.

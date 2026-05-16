@@ -9,9 +9,12 @@ related:
   - sources/wasertein-1-4-3.md
   - sources/counterexamples-cycle-factors.md
   - sources/leetcode-maang-prep-siagian.md
+  - sources/protocol-2-3-29.md
+  - sources/protocol-7-3-29.md
+  - sources/3-29-4.md
 maturity: draft
 created: 2026-04-26
-updated: 2026-05-15
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -21,6 +24,9 @@ updated: 2026-05-15
 - @sources/wasertein-1-4-3.md — *Uniform optimal-order Wasserstein quantisation* (Gwóźdź) — pure-mathematics measure-theory paper; no foreseeable Cemini-side application path
 - @sources/counterexamples-cycle-factors.md — *Counterexamples to an Extremal Conjecture for Random Cycle-Factors* (Gajjala) — pure extremal-combinatorics paper; no Cemini-side application path
 - @sources/leetcode-maang-prep-siagian.md — *60 Popular LeetCode Problems & Solution for MAANG Coding Interview Preparation* (Siagian) — off-domain personal coding-interview reference; not research material for the trading stack
+- @sources/protocol-2-3-29.md — *Reinforcement Learning for Quantum Processes with Memory* (Lumbreras et al., NTU Singapore) — quantum-information-theory RL; no path to classical financial-market modeling
+- @sources/protocol-7-3-29.md — *Optimized Control Protocols for Stable Skyrmion Creation Using Deep RL* (Song et al., KAIST) — condensed-matter spintronics device physics; no trading-stack application path
+- @sources/3-29-4.md — *A Robust and Efficient MARL Framework for Traffic Signal Control* (Huang et al., NYCU) — urban traffic-signal optimization; traffic-specific framework with no direct trading-stack transfer
 
 ## Raw Concept
 
@@ -44,7 +50,7 @@ If criterion (3) shifts (roadmap pivots, new thread opens), the source graduates
 
 Deleting the stubs would lose the inventory record of which PDFs were already triaged-and-rejected, leading to duplicate effort on the next sweep. Keeping them under this hub is a librarian's "we looked, we passed" marker.
 
-### Current contents (5 sources, 2026-05-15)
+### Current contents (8 sources, 2026-05-16)
 
 | Stub | Topic | Why out-of-scope |
 |---|---|---|
@@ -53,6 +59,9 @@ Deleting the stubs would lose the inventory record of which PDFs were already tr
 | @sources/wasertein-1-4-3.md | Uniform optimal-order Wasserstein quantisation (pure math) | Measure-theory foundations; no current quant-finance application path identified |
 | @sources/counterexamples-cycle-factors.md | Random cycle-factor extremal conjecture counterexamples (pure math) | Extremal combinatorics / graph theory; no quant-finance or trading-stack application path |
 | @sources/leetcode-maang-prep-siagian.md | 60 LeetCode problems for MAANG interview prep (Java) | Personal coding-interview reference; not a research / tool / market source |
+| @sources/protocol-2-3-29.md | RL for quantum processes with memory (quantum-information theory) | Quantum-physics RL with regret bounds; no path to classical financial-market modeling |
+| @sources/protocol-7-3-29.md | Deep RL for stable skyrmion creation (condensed-matter physics) | Spintronics device physics; RL applied to micromagnetic simulation, no trading-stack transfer |
+| @sources/3-29-4.md | MARL framework for traffic signal control | Urban traffic-signal optimization; traffic-specific framework/action space, no direct trading transfer |
 
 ## Snippets
 

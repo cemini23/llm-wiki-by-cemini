@@ -88,3 +88,16 @@ python3 scripts/wiki_lint.py
 # wiki sync to librarian (or wait for hourly cron):
 scripts/sync_wiki_to_librarian.sh
 ```
+
+## Sister wikis
+
+This is one of **six** interconnected Cemini knowledge wikis. Cross-wiki links use `@<alias>/path/to/page.md` syntax (aliases + paths in `CLAUDE.md` under "Related Wikis"):
+
+- `osint-wiki` — this wiki (financial / quant / prediction-market research) · **private (not publicly available)**
+- `image-gen-wiki` — uncensored image / video / voice generation
+- `seo-wiki` — local SEO, GBP, GEO/AEO, creator marketing
+- `3d-printing-wiki` — FDM/FFF printing, Bambu, slicers, print farms
+- `cybersecurity-wiki` — offensive / defensive security research
+- `ccc-wiki` — Cemini Claude Code meta-wiki (workflow, subagents, MCP/conductor) · **private (not publicly available)**
+
+This OSINT wiki is a **private repository — not publicly available**. It holds financial research plus connection details for the Cemini production stack; it is not published, mirrored, or open-sourced. The CCC meta-wiki is likewise private. The other four sister wikis are public.
