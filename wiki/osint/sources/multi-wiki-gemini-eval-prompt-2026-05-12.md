@@ -32,6 +32,7 @@ related:
   - entities/tools/supertonic.md
   - entities/tools/accomplish.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-12
 updated: 2026-05-12
 ---

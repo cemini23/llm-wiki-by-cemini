@@ -13,6 +13,7 @@ related:
   - sources/openrouter-efficiency-context-audit.md
   - concepts/mcp-context-optimization.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-09
 updated: 2026-05-11
 ---

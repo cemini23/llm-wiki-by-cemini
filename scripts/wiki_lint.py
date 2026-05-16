@@ -297,7 +297,10 @@ for p, fm in pages.items():
     if not p.startswith("sources/"):
         continue
     rs = (fm.get("read_status") or "").lower()
-    if rs in ("unread-stub", "unread", ""):
+    # Only an explicit unread status counts here. A *missing* read_status is a
+    # metadata gap, not evidence the source is unread — it is reported under
+    # check 6 instead, so a forgotten field can't masquerade as an unread source.
+    if rs in ("unread-stub", "unread"):
         if p in inbound and len(inbound[p]) >= 1:
             cited_unread.append((p, len(inbound[p])))
 cited_unread.sort(key=lambda x: -x[1])
@@ -313,6 +316,12 @@ no_type = sorted(p for p, fm in pages.items()
 no_maturity = sorted(p for p, fm in pages.items()
                      if not fm.get("_no_frontmatter") and not fm.get("maturity")
                      and fm.get("type") in ("source", "entity", "concept"))
+# Source pages should declare read_status in frontmatter (deep-read / read /
+# read-skim / skimmed / unread-stub / …). A missing field is a metadata gap.
+source_no_read_status = sorted(
+    p for p, fm in pages.items()
+    if not fm.get("_no_frontmatter") and fm.get("type") == "source"
+    and not fm.get("read_status"))
 
 # -- 7: stale [NEEDS VERIFICATION YYYY-MM-DD] tags -----------------------
 
@@ -403,6 +412,11 @@ for p in no_type[:20]:
 print(f"  missing 'maturity' field (source/entity/concept only): {len(no_maturity)}")
 for p in no_maturity[:20]:
     print(f"    - {p}")
+print(f"  source pages missing 'read_status' field: {len(source_no_read_status)}")
+for p in source_no_read_status[:20]:
+    print(f"    - {p}")
+if len(source_no_read_status) > 20:
+    print(f"    ... and {len(source_no_read_status)-20} more")
 
 header(f"7. Stale [NEEDS VERIFICATION] tags — {len(stale_verifications)} dated tag(s) "
        f"≥{args.verify_age_days} days old (Exa-resolution candidates)")

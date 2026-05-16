@@ -8,6 +8,7 @@ related:
   - entities/models/kimi-k2-6.md
   - entities/models/opus-4-7.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-12
 updated: 2026-05-12
 ---

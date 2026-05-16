@@ -25,6 +25,7 @@ related:
   - entities/tools/awesome-codex-subagents.md
   - entities/tools/dulus.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-13
 updated: 2026-05-13
 ---

@@ -6,6 +6,7 @@ keywords: [npm, bun, pnpm, min-release-age, minimum-release-age, save-exact, bun
 related:
   - concepts/npm-supply-chain-defense.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-12
 updated: 2026-05-12
 ---

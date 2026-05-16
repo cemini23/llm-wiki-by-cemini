@@ -22,6 +22,7 @@ related:
   - entities/tools/awesome-deep-research.md
   - entities/tools/home-assistant-core.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-13
 updated: 2026-05-13
 ---

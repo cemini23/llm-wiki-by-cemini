@@ -22,6 +22,7 @@ related:
   - concepts/split-panel-jackknife-spj.md
   - sources/ssrn-4943355.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-10
 updated: 2026-05-10
 ---

@@ -6,6 +6,7 @@ keywords: [air-gap, Faraday cage, CPU magnetic field, covert channel, ODINI, APT
 related:
   - concepts/cemini-license-posture.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-11
 updated: 2026-05-11
 ---

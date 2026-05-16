@@ -11,6 +11,7 @@ related:
   - entities/tools/auto-claude-code-research-in-sleep.md
   - entities/tools/google-code-wiki.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-10
 updated: 2026-05-10
 ---

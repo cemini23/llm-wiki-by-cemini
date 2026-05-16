@@ -7,6 +7,7 @@ related:
   - concepts/polymarket-bot-architecture.md
   - entities/platforms/polymarket.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-12
 updated: 2026-05-12
 ---

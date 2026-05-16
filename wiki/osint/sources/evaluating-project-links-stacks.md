@@ -23,6 +23,7 @@ related:
   - entities/tools/opensourceprojects-dev-1a77fca0.md
   - entities/tools/opensourceprojects-dev-c4a3cfc9.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-11
 updated: 2026-05-11
 ---

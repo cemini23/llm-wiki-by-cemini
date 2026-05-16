@@ -7,6 +7,7 @@ related:
   - concepts/ralph-autonomous-agent-pattern.md
   - concepts/tool-evaluation-framework.md
 maturity: draft
+read_status: deep-read
 created: 2026-05-12
 updated: 2026-05-12
 ---

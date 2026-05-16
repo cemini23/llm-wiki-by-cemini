@@ -33,6 +33,7 @@ related:
   - entities/tools/wethr-net.md
   - entities/tools/bettingonweather.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-11
 updated: 2026-05-11
 ---

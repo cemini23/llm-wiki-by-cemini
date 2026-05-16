@@ -7,6 +7,7 @@ clusters: [uncategorized]
 related:
   - concepts/corpus-overflow-out-of-scope.md
 maturity: draft
+read_status: skimmed
 created: 2026-04-29
 updated: 2026-05-15
 ---

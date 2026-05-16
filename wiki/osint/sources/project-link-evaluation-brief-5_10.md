@@ -13,6 +13,7 @@ related:
   - entities/tools/goose-aaif.md
   - entities/tools/prediction-market-backtesting.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-10
 updated: 2026-05-10
 ---

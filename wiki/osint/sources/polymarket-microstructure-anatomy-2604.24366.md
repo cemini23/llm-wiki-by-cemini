@@ -16,6 +16,7 @@ related:
   - sources/caiovicentino-polymarket-mcp-server.md
   - concepts/cross-venue-arbitrage-pattern.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-09
 updated: 2026-05-11
 ---

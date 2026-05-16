@@ -9,6 +9,7 @@ related:
   - concepts/cryptographic-audit-trail.md
   - concepts/agent-memory-critique.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-11
 updated: 2026-05-11
 ---

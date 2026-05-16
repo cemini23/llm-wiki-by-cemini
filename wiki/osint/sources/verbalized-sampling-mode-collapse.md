@@ -9,6 +9,7 @@ related:
   - concepts/agent-trajectory-triage-signals.md
   - concepts/conductor-orchestrator.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-11
 updated: 2026-05-11
 ---

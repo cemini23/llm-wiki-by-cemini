@@ -21,6 +21,7 @@ related:
   - entities/tools/ebay-mcp.md
   - entities/tools/contextlattice.md
 maturity: validated
+read_status: deep-read
 created: 2026-05-11
 updated: 2026-05-11
 ---
