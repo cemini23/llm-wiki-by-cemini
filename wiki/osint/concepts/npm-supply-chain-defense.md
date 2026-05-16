@@ -7,15 +7,17 @@ related:
   - sources/npm-supply-chain-defense-prompt-2026-05.md
   - concepts/cemini-license-posture.md
   - entities/tools/betterleaks.md
+  - "@cybersecurity-wiki/concepts/npm-supply-chain-defense.md"
 maturity: validated
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-15
 ---
 
 ## Relations
 
 - `@sources/npm-supply-chain-defense-prompt-2026-05.md` — original prompt
 - `@concepts/cemini-license-posture.md` — sibling supply-chain hygiene concept (license-level)
+- `@cybersecurity-wiki/concepts/npm-supply-chain-defense.md` — cybersec-side defensive-ops counterpart
 - `briefs/2026-05-12_npm-supply-chain-defense-cemini.md` — application brief for Cemini (outside wiki/, staging-tracked)
 
 ## Raw Concept
@@ -87,7 +89,7 @@ For Cemini prod server: see `briefs/2026-05-12_npm-supply-chain-defense-cemini.m
 
 ### Cross-wiki relevance
 
-- **Cybersec-wiki** (`@cybersecurity-wiki/concepts/supply-chain-attacks.md` if exists, or stub): npm supply-chain is a recurring CVE source; defense patterns belong in the defensive-ops portion of that wiki too. Cross-link added.
+- **Cybersec-wiki** (`@cybersecurity-wiki/concepts/npm-supply-chain-defense.md`): npm supply-chain is a recurring CVE source; the defensive-ops counterpart of this page lives in that wiki's defensive cluster. Cross-link is bidirectional.
 
 ## Snippets
 

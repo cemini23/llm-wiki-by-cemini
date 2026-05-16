@@ -260,10 +260,11 @@ for src, fm in pages.items():
 # -- 8: cross-wiki @wiki-alias/path links ---------------------------
 # Check @wiki-alias/path/to/page.md references to other wikis.
 
-# Exclude quote chars from the path: cross-wiki `related:` entries are
-# YAML-quoted (a plain scalar can't start with the reserved `@` indicator),
-# so a naive class would swallow the closing quote into the path.
-CROSS_WIKI_RE = re.compile(r"""@([a-z0-9_-]+)/([^\s`)"']+)""")
+# Exclude quote and bracket chars from the path: cross-wiki `related:` entries
+# are YAML-quoted (a plain scalar can't start with the reserved `@` indicator)
+# and inline refs often sit inside a `[Source: ...]` citation tag — a naive
+# class would swallow the closing quote / `]` / `)` into the path.
+CROSS_WIKI_RE = re.compile(r"""@([a-z0-9_-]+)/([^\s`)\]"']+)""")
 
 cross_wiki_dangling = []  # (src, alias, rel_path, target_path)
 cross_wiki_ok = 0

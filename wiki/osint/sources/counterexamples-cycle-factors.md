@@ -4,11 +4,16 @@ type: source
 tags: [mathematics, combinatorics, graph-theory]
 keywords: [cycle-factors, directed graphs, regular graphs, random permutations, permanent, extremal combinatorics]
 clusters: [uncategorized]
-related: []
+related:
+  - concepts/corpus-overflow-out-of-scope.md
 maturity: draft
 created: 2026-04-29
-updated: 2026-04-30
+updated: 2026-05-15
 ---
+
+## Relations
+
+- @concepts/corpus-overflow-out-of-scope.md — out-of-scope bookkeeping hub; this pure-combinatorics paper was triaged here as having no Cemini-side application path
 
 ## Raw Concept
 - Original title: Counterexamples to an Extremal Conjecture for Random Cycle-Factors
