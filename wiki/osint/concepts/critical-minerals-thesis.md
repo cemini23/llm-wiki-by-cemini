@@ -13,6 +13,7 @@ related:
   - entities/tickers/uec.md
   - entities/tickers/elvr.md
   - entities/tickers/lar.md
+  - sources/critical-minerals-pentagon-plan-2026-05.md
 maturity: validated
 created: 2026-05-13
 updated: 2026-05-15
@@ -24,6 +25,7 @@ updated: 2026-05-15
 - @sources/massif-capital-4q2025-letter.md — K41 source (real-assets allocation framework underlying critical-minerals positioning)
 - @sources/ww-issue-175-2026-04-22.md — K41 source (USAR Serra Verde $2.8B acquisition thesis = REE exposure)
 - @concepts/rare-earth-supply-deficit-thesis.md — narrow concept (heavy REEs subset)
+- @sources/critical-minerals-pentagon-plan-2026-05.md — May 2026 news: Pentagon critical-minerals plan + 2027 defense ban; multi-source corroboration of the supply-deficit thesis
 - @concepts/capital-cycle-theory.md — methodological parent
 - @concepts/real-assets-investing-framework.md — strategic parent
 - @entities/tickers/uec.md — uranium position instance

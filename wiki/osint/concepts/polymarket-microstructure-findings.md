@@ -11,6 +11,9 @@ related:
   - concepts/prediction-market-historical-analysis.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-historical-analysis.md
+  - sources/arxiv-coordination-layer-multi-agent-2605-03310.md
+  - sources/arxiv-polymarket-fill-side-2605-11640.md
+  - sources/polymarket-insider-trading-crackdown-2026-05.md
 maturity: draft
 created: 2026-05-09
 updated: 2026-05-09
@@ -18,6 +21,9 @@ updated: 2026-05-09
 
 ## Relations
 
+- @sources/arxiv-polymarket-fill-side-2605-11640.md — fill-side study: whale/HFO/power tiers hold 81.4% of notional across 12.6% of addresses
+- @sources/arxiv-coordination-layer-multi-agent-2605-03310.md — uses 100 Polymarket binary markets as a multi-agent-coordination testbed
+- @sources/polymarket-insider-trading-crackdown-2026-05.md — May 2026 regulatory backdrop: insider-trading enforcement + volume cooldown
 - @sources/polymarket-microstructure-anatomy-2604.24366.md — canonical source; this page distills its findings for Cemini consumption
 - @entities/platforms/polymarket.md — Polymarket venue entity
 - @concepts/polymarket-market-making-architectures.md — K30 MM synthesis; these findings constrain MM strategy design

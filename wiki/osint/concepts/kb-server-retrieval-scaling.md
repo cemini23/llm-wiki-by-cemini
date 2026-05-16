@@ -8,6 +8,7 @@ related:
   - entities/tools/turbovec.md
   - entities/tools/leann.md
   - sources/tool-evaluation-wiki-fit-2026-05-15.md
+  - sources/arxiv-grep-agent-harness-2605-15184.md
 maturity: validated
 created: 2026-05-15
 updated: 2026-05-15
@@ -19,6 +20,7 @@ updated: 2026-05-15
 - @entities/tools/turbovec.md — benchmarked here as a candidate ANN index; staged on the librarian, not wired
 - @entities/tools/leann.md — benchmarked here as a candidate ANN index; staged on the librarian, not wired
 - @sources/tool-evaluation-wiki-fit-2026-05-15.md — the eval that surfaced turbovec/LEANN as Adopt-tier
+- @sources/arxiv-grep-agent-harness-2605-15184.md — empirical paper finding grep ≥ vector retrieval in agentic search; independent corroboration of this page's NO-GO decision
 
 ## Raw Concept
 

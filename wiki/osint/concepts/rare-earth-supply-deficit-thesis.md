@@ -9,6 +9,7 @@ related:
   - concepts/capital-cycle-theory.md
   - concepts/real-assets-investing-framework.md
   - concepts/critical-minerals-thesis.md
+  - sources/critical-minerals-pentagon-plan-2026-05.md
 maturity: draft
 created: 2026-05-09
 updated: 2026-05-13
@@ -20,6 +21,7 @@ updated: 2026-05-13
 - Entity: @entities/tickers/rea.md
 - @concepts/capital-cycle-theory.md — methodological parent (K41); REE-specific instance of the supply-side capex-cycle thesis
 - @concepts/real-assets-investing-framework.md — strategic parent (K41); REE-mining equities fit the real-assets investment framework
+- @sources/critical-minerals-pentagon-plan-2026-05.md — May 2026 news: Dy/Tb exports still down ~50%; Pentagon plan + 2027 Chinese-origin REE defense ban
 - @concepts/critical-minerals-thesis.md — narrower instance of broader critical-minerals umbrella concept
 
 ## Raw Concept

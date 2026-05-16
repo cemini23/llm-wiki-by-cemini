@@ -101,6 +101,7 @@ related:
   - sources/matching-accuracy-different-geometry-es-grpo.md
   - sources/refinerl-self-refinement-rl.md
   - sources/eggro-evolution-strategies-hyperscale-2026.md
+  - sources/arxiv-fpilot-rl-trading-2605-12653.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-05-15
@@ -108,6 +109,7 @@ updated: 2026-05-15
 
 ## Relations
 
+- @sources/arxiv-fpilot-rl-trading-2605-12653.md — FPILOT: inference-time optimization (MPC-style planning) for pre-trained RL trading agents, retraining-free
 - @sources/3-10-agent-orchestration-research-audit.md — RL/MARL source in the Cemini research corpus
 - @sources/3-10-engineering-audit.md — RL/MARL source in the Cemini research corpus
 - @sources/3-10-osint-research.md — RL/MARL source in the Cemini research corpus

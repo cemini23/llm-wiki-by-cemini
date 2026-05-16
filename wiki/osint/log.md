@@ -5136,3 +5136,29 @@ Alphabet broadly accumulated (Berkshire GOOGL +204%, Tiger Global's largest hold
 
 ### Raw sources
 - 9 images migrated to `cemini-librarian:/opt/cemini-bulk/research/`. `klarman holdings.jpeg` (redundant crop) and `tepper 2.jpeg` (unidentified, skipped) left in the laptop inbox.
+
+## [2026-05-15] ingest | K48 weekly searches — arXiv sweep + news (4 streams)
+
+Ran all 4 "this week's article search" streams; ingested the recommended candidates.
+
+### Tier-2 arXiv sweep
+- `wiki/sweeps/2026-05-15.md` — 5 clusters, 19 unique candidates (committed 6192266).
+
+### Ingested (7 source pages + 2 entity stubs)
+- `sources/arxiv-grep-agent-harness-2605-15184.md` — "Is Grep All You Need?" (PwC) — grep ≥ vector retrieval in agent harnesses; corroborates the K47 kb-server NO-GO.
+- `sources/arxiv-fpilot-rl-trading-2605-12653.md` — FPILOT, inference-time optimization for RL trading agents (UIUC).
+- `sources/arxiv-coordination-layer-multi-agent-2605-03310.md` — coordination as a configurable architectural layer; Polymarket testbed.
+- `sources/arxiv-polymarket-fill-side-2605-11640.md` — Polymarket fill-side microstructure; 81.4% notional in 12.6% of addresses.
+- `sources/critical-minerals-pentagon-plan-2026-05.md` — news cluster: Pentagon critical-minerals plan, Dy/Tb exports −50%, 2027 defense ban.
+- `sources/polymarket-insider-trading-crackdown-2026-05.md` — news cluster: NYT insider-trading investigation, CFTC enforcement, volume −9%.
+- `sources/crypto-illicit-finance-tracing-2026-05.md` — news cluster: T3 FCU $450M frozen, Arkham Iran-wallet tracing, FinCEN IRGC alert.
+- `entities/organizations/t3-financial-crime-unit.md` + `entities/tools/arkham-intelligence.md` — new stubs (crypto-crime task force + blockchain-analytics platform).
+
+### Backlinks (6 existing concept pages)
+kb-server-retrieval-scaling, rl-marl-research, conductor-orchestrator, polymarket-microstructure-findings, critical-minerals-thesis, rare-earth-supply-deficit-thesis — all reciprocated.
+
+### index.md
+`#### K48 weekly searches` (7 source rows, uncategorized); `#### K48 tool additions` (Arkham); T3 FCU row in Organizations.
+
+### Not ingested (descriptive only)
+arXiv sweep's other 15 candidates; market-news SKIM items. Newsletter-research Polymarket rare-event candidates handed to the Outlier Weekly track (top pick: Iran war-powers resolution by May 31, 11%). Notes: 3 of the 4 arXiv papers' prediction-market cluster authored by M. Nechepurenko — flagged single-source on the relevant pages. No raw-file migration (sources are URLs).

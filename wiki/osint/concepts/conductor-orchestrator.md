@@ -21,6 +21,7 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - concepts/verbalized-sampling-llm-diversity.md
   - concepts/llms-get-lost-mitigation-audit.md
+  - sources/arxiv-coordination-layer-multi-agent-2605-03310.md
 maturity: validated
 hub: true
 created: 2026-05-01
@@ -30,6 +31,7 @@ updated: 2026-05-11
 ## Relations
 
 - @concepts/llm-agent-systems.md — Conductor is the orchestration layer for the LLM agent systems cluster.
+- @sources/arxiv-coordination-layer-multi-agent-2605-03310.md — argues coordination should be a separable, configurable architectural layer; Brier/Murphy evaluation method applicable to the conductor
 - @concepts/scatter-gather-topology.md — Conductor replaces manual scatter-gather topology selection with learned routing decisions.
 - @sources/toolorchestra-2511.21689.md — **Architecture blueprint**: 8B orchestrator beats GPT-5 at 2.5× efficiency.
 - @sources/mmgrpo-iclr-2026.md — **Optimization method A**: Multi-module GRPO for compound AI systems. 11% gain, open source.

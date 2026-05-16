@@ -400,7 +400,17 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 - [Scaling Multi-Node Mixture-of-Experts Inference Using Expert Activation Patterns (arXiv 2604.23150, Meta / Georgia Tech, 2026)](sources/scaling-moe-inference-expert-activation-2026.md) — Profiling 100K+ traces across DeepSeek-V3, Llama 4, Qwen3. Workload-aware micro-batch grouping + expert placement reduces all-to-all communication 20%, decode latency 6%. Directly relevant to Cemini's MoE inference stack. — `pdf` [+moe-architecture, +distributed-inference]
 - [Merkle Tree Certificate Post-Quantum PKI for Kubernetes and Cloud-Native 5G/B5G Core](sources/crypto-3-4-11.md) — Post-quantum signature schemes such as ML-DSA-65 produce signatures of 3,309 bytes and public keys of 1,952 bytes, which are over 50×larger … — `pdf`
 
-### uncategorized (24)
+### uncategorized (31)
+
+#### K48 weekly searches (2026-05-15 — arXiv sweep + news)
+
+- [Is Grep All You Need? How Agent Harnesses Reshape Agentic Search](sources/arxiv-grep-agent-harness-2605-15184.md) — `[VALIDATED 2026-05-15]` arXiv:2605.15184 (PwC). Grep ≥ vector retrieval across agent harnesses; harness architecture is first-order. Corroborates the K47 kb-server NO-GO. — source, arxiv, agent-harness, k48
+- [Plan Before You Trade: Inference-Time Optimization for RL Trading Agents](sources/arxiv-fpilot-rl-trading-2605-12653.md) — `[VALIDATED 2026-05-15]` arXiv:2605.12653 (UIUC). FPILOT — MPC-style inference-time planning folded into pre-trained RL trading agents, retraining-free. — source, arxiv, rl-trading, k48
+- [Coordination as an Architectural Layer for LLM Multi-Agent Systems](sources/arxiv-coordination-layer-multi-agent-2605-03310.md) — `[VALIDATED 2026-05-15]` arXiv:2605.03310. Multi-agent LLM systems fail 41-87% from coordination defects; coordination as a configurable layer; 100-Polymarket-market testbed. — source, arxiv, multi-agent, k48
+- [Fill-Side Non-Retail Trading on Polymarket](sources/arxiv-polymarket-fill-side-2605-11640.md) — `[VALIDATED 2026-05-15]` arXiv:2605.11640. 13.4M fills; whale/HFO/power tiers hold 81.4% of notional across 12.6% of addresses. — source, arxiv, polymarket-microstructure, k48
+- [Critical Minerals — Pentagon Supply Plan & Trump-Xi Rare-Earth Standoff (May 2026)](sources/critical-minerals-pentagon-plan-2026-05.md) — `[VALIDATED 2026-05-15]` News cluster. Dy/Tb exports still −50%; Pentagon critical-minerals plan; 2027 Chinese-origin REE defense ban. Corroborates the supply-deficit thesis. — source, news, critical-minerals, k48
+- [Polymarket / Kalshi — Insider-Trading Crackdown & Volume Cooldown (May 2026)](sources/polymarket-insider-trading-crackdown-2026-05.md) — `[VALIDATED 2026-05-15]` News cluster. NYT insider-trading investigation; CFTC enforcement; Polymarket volume −9% in April (first drop since Aug 2025). — source, news, polymarket, regulation, k48
+- [Crypto Illicit-Finance Tracing — T3 FCU, Arkham, FinCEN (May 2026)](sources/crypto-illicit-finance-tracing-2026-05.md) — `[VALIDATED 2026-05-15]` News cluster. T3 FCU >$450M frozen; Arkham traces $344M Iran-linked TRON wallets; FinCEN IRGC alert. OSINT crypto-tracing tradecraft. — source, news, crypto-tracing, osint, k48
 
 - [151 Trading Strategies (Kakushadze & Serur, 2018)](sources/ssrn-3247865.md) — K25 deep-read: 550+ formulas, 150+ strategies across all asset classes (stocks, options, fixed income, FX, crypto, commodities, volatility, real estate, global macro). Backtesting source code, ~2,000 references, 900+ glossary. SSRN #8 by downloads (121K). Direct strategy catalog for Cemini MAPPO ensemble evaluation. — `pdf`
 - [A Geometry-Aware Residual Correction of Hagan's SABR Implied Volatility Formula (arXiv 2605.06604, Reghai et al., 2026)](sources/sabr-geometry-aware-correction-2605.06604.md) — Hybrid ML-analytical SABR calibration: Hagan formula backbone + neural residual correction using geometry-aware features. R² improves 0.73→0.97 vs naive NN. ~10⁴× speedup over MC. — `pdf` [+quantitative-finance, +sabr, +implied-volatility, +ml-hybrid]
@@ -841,6 +851,10 @@ Dev-workflow tooling evaluated for Cemini integration.
 - [Open-Generative-AI](entities/tools/open-generative-ai.md) — `[DRAFT 2026-05-14]` K45 Steal-from (MIT, 13.6k★): Local-first generative media desktop app; C++ inference (sd.cpp, Wan2GP). Image-gen wiki primary fit — extract C++ inference params + Generative-Media-Skills API; skip React/Electron client. — tool, image-generation, local-inference, cpp, mit, k45, steal-from
 - [TRACER](entities/tools/tracer.md) — `[DRAFT 2026-05-14]` K45 Steal-from (MIT): ML surrogate routing for LLM cost reduction; LightGBM Acceptor Gate with formal parity guarantee. Cemini financial primary fit — highest-ROI extraction (90% cost reduction on routine classification). — tool, ml-optimization, llm-cost-reduction, surrogate-modeling, lightgbm, mit, k45, steal-from
 
+#### K48 tool additions (2026-05-15, OSINT news scan)
+
+- [Arkham Intelligence](entities/tools/arkham-intelligence.md) — `[DRAFT 2026-05-15]` K48 stub. Blockchain-analytics platform — on-chain wallet attribution / crypto-tracing; traced $344M Iran-linked TRON wallets. OSINT crypto-tracing tool. — tool, blockchain-analytics, crypto-tracing, osint, k48
+
 #### K47 tool additions (2026-05-15, 52-URL "Tool Evaluation and Wiki Fit" eval)
 
 - [fingerprint-suite](entities/tools/fingerprint-suite.md) — `[DRAFT 2026-05-15]` K47 Adopt (Apache-2.0, 2.2k★): browser fingerprint generation + injection for stealth OSINT collection. OSINT wiki primary fit. **Locally adopted** — npm packages installed + smoke-tested. — tool, scraping, browser-fingerprint, anti-bot, opsec, apache-2-0, k47, adopt
@@ -894,6 +908,7 @@ External firms whose research/track-record is ingested into the wiki.
 Newsletters, news outlets, research institutions referenced by the wiki.
 
 - [Weekly Wizdom newsletter](entities/organizations/weekly-wizdom-newsletter.md) — `[DRAFT 2026-05-13]` K41 ingest. Beehiiv-hosted weekly cross-asset trading newsletter; "Plan it. Alert it. Slam it." Issues #173/#175/#176 (Apr 2026) ingested. High overlap with Donny watchlist (5+ exact ticker matches) — treat as derived not independent confirmation. — organization, publication, retail-trading, k41
+- [T3 Financial Crime Unit](entities/organizations/t3-financial-crime-unit.md) — `[DRAFT 2026-05-15]` K48 stub. Tether/TRON/TRM-Labs public-private crypto-crime task force; >$450M illicit USDT frozen across 23 jurisdictions. — organization, crypto-crime, illicit-finance, k48
 
 ### People
 
