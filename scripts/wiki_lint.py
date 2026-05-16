@@ -56,8 +56,11 @@ def load_wiki_aliases():
     for m in table_re.finditer(text):
         alias = m.group(1).strip()
         path_str = m.group(2).strip().rstrip("/")
-        # Path from CLAUDE.md already includes wiki/ — don't append again
-        wiki_path = Path(path_str)
+        # Paths in the Related Wikis table are relative to *that CLAUDE.md's*
+        # directory, not the lint's CWD — resolve against claude_md.parent so
+        # cross-wiki resolution is correct no matter which wiki is being linted.
+        # Path from CLAUDE.md already includes wiki/ — don't append again.
+        wiki_path = (claude_md.parent / path_str).resolve()
         if wiki_path.is_dir():
             aliases[alias] = wiki_path
         elif (wiki_path / "wiki").is_dir():
@@ -170,6 +173,11 @@ for src, fm in pages.items():
         if tgt in all_paths:
             inbound[tgt].add(src)
             outbound[src].add(tgt)
+        elif tgt.lstrip("@").startswith("briefs/"):
+            # briefs/ is staging output, sibling of wiki/ (not inside it) — a
+            # related: entry pointing there is valid as long as the file exists.
+            if not (WIKI.parent / tgt.lstrip("@")).exists():
+                dangling.append((src, tgt_raw))
         else:
             xw = is_cross_wiki_path_exists(tgt)
             if xw:
@@ -182,8 +190,11 @@ for src, fm in pages.items():
                 # local path, not found
                 dangling.append((src, tgt_raw))
 
-# orphans: pages with zero inbound edges (excluding index/log already excluded)
-orphans = sorted(p for p in all_paths if p not in inbound)
+# orphans: pages with zero inbound edges (excluding index/log already excluded).
+# sweeps/ holds periodic Tier-2 sweep reports — append-only, like log.md; they
+# are legitimately orphan, so exempt them from the orphan check.
+orphans = sorted(p for p in all_paths
+                 if p not in inbound and not p.startswith("sweeps/"))
 
 # bidirectional gaps: src→tgt without tgt→src
 # Hub pages (frontmatter `hub: true`) are exempt: many spokes legitimately
@@ -249,7 +260,10 @@ for src, fm in pages.items():
 # -- 8: cross-wiki @wiki-alias/path links ---------------------------
 # Check @wiki-alias/path/to/page.md references to other wikis.
 
-CROSS_WIKI_RE = re.compile(r"@([a-z0-9_-]+)/([^\s`)]+)")
+# Exclude quote chars from the path: cross-wiki `related:` entries are
+# YAML-quoted (a plain scalar can't start with the reserved `@` indicator),
+# so a naive class would swallow the closing quote into the path.
+CROSS_WIKI_RE = re.compile(r"""@([a-z0-9_-]+)/([^\s`)"']+)""")
 
 cross_wiki_dangling = []  # (src, alias, rel_path, target_path)
 cross_wiki_ok = 0
@@ -289,7 +303,10 @@ cited_unread.sort(key=lambda x: -x[1])
 
 # -- 6: frontmatter quality ----------------------------------------------
 
-no_frontmatter = sorted(p for p, fm in pages.items() if fm.get("_no_frontmatter"))
+# sweeps/ files are append-only Tier-2 reports (log-like) — no frontmatter
+# expected, same rationale as the orphan exemption above.
+no_frontmatter = sorted(p for p, fm in pages.items()
+                        if fm.get("_no_frontmatter") and not p.startswith("sweeps/"))
 no_type = sorted(p for p, fm in pages.items()
                  if not fm.get("_no_frontmatter") and not fm.get("type"))
 no_maturity = sorted(p for p, fm in pages.items()
