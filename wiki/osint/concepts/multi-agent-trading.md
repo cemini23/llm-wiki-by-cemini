@@ -10,9 +10,10 @@ related:
   - sources/generative-agents-park-2023.md
   - concepts/agent-cost-routing-model-orchestra.md
   - concepts/conductor-orchestrator.md
+  - sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -20,6 +21,7 @@ updated: 2026-05-13
 - `@sources/tradingagents.md` — primary literature source: TradingAgents multi-LLM framework
 - `@concepts/agent-cost-routing-model-orchestra.md` — adjacent: multi-model cost-routing pattern
 - `@concepts/conductor-orchestrator.md` — Cemini's own orchestrator pattern that hosts multi-agent flows
+- `@sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md` — controlled study of the Debater role: debate gains are bounded by the strongest reasoner; homogeneous agent pools risk echo-chamber consensus
 
 ## Raw Concept
 

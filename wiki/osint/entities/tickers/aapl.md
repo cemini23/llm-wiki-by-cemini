@@ -6,16 +6,18 @@ category: mega_cap
 ticker: AAPL
 related:
   - entities/ticker-watchlist.md
+  - sources/american-call-options-pricing-with-modular-neural-networks.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-23
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-05-16
 ---
 
 ## Relations
 
 - @entities/ticker-watchlist.md — parent watchlist page
+- @sources/american-call-options-pricing-with-modular-neural-networks.md — AAPL 2023 call options are the training/hyper-parameter-tuning dataset for the Modular Neural Network pricing model
 
 ## Raw Concept
 

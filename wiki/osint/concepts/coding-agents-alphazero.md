@@ -8,9 +8,10 @@ related:
   - concepts/agent-native-research-artifacts.md
   - concepts/recursive-multi-agent-systems.md
   - sources/agent-native-research-artifacts-2604.24658.md
+  - sources/evonash-marl.md
 maturity: validated
 created: 2026-05-02
-updated: 2026-05-11
+updated: 2026-05-16
 ---
 
 ## Raw Concept

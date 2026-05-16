@@ -6,16 +6,20 @@ category: indices
 ticker: QQQ
 related:
   - entities/ticker-watchlist.md
+  - sources/american-call-options-pricing-with-modular-neural-networks.md
+  - sources/test-time-adaptation-for-non-stationary-time-series.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-27
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-16
 ---
 
 ## Relations
 
 - @entities/ticker-watchlist.md — parent watchlist page
+- @sources/american-call-options-pricing-with-modular-neural-networks.md — QQQ 2023 call options dataset; third evaluation underlying for the Modular Neural Network pricing model
+- @sources/test-time-adaptation-for-non-stationary-time-series.md — QQQ is one of three real-market test assets for the TTA framework; the asset where the bn_stats adaptation gives the largest direction-accuracy and Sharpe gain
 
 ## Raw Concept
 

@@ -14,6 +14,7 @@ related:
   - concepts/dispersion-trading.md
   - concepts/game-of-attrition-doctrine.md
   - concepts/replacement-cost-valuation.md
+  - sources/autonomous-ai-agents-for-option-hedging.md
   - sources/3-19-live-transition-checklist.md
   - sources/3-5-git-pt-2.md
   - sources/captum-re-4-3-2.md
@@ -35,9 +36,10 @@ related:
   - sources/sortino-3-4-3.md
   - sources/ssrn-3247865.md
   - sources/stocks-2-4-5.md
+  - sources/toplogical-risk-parity.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -52,6 +54,8 @@ updated: 2026-04-26
 - @concepts/dispersion-trading.md
 - @concepts/game-of-attrition-doctrine.md
 - @concepts/replacement-cost-valuation.md
+- @sources/autonomous-ai-agents-for-option-hedging.md — deep-read 2026-05-16; RL option-hedging that optimizes shortfall probability + Expected Shortfall (CVaR) directly — external evidence for the engine's downside-sensitive objective design
+- @sources/toplogical-risk-parity.md — Topological Risk Parity: covariance-inversion-free, topology-aware signed-signal weighting layer; candidate portfolio-construction stage upstream of Kelly/CVaR sizing
 
 ## Raw Concept
 

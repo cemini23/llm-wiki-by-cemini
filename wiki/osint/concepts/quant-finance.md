@@ -70,6 +70,7 @@ related:
   - sources/stocks-3-4-5.md
   - sources/stocks-4-4-5.md
   - sources/test-time-adaptation-for-non-stationary-time-series.md
+  - sources/push-response-anomalies-in-high-frequency-s-p-500-price-series.md
   - sources/trading-2-4-5.md
   - sources/trading-4-5.md
   - sources/trading-playbook-research.md
@@ -90,9 +91,10 @@ related:
   - entities/tools/synth-subnet.md
   - sources/mit-quant-bible.md
   - sources/hmm-jurafsky-martin-2026.md
+  - sources/the-three-dimensional-decomposition-of-volatility-memory.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-11
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -161,6 +163,7 @@ updated: 2026-05-11
 - @sources/stocks-3-4-5.md — Atmaz & Basak (2021, J. Finance): no-dividend stocks have lower returns but higher vol/betas; consumption-based equilibrium model. Direct factor-construction relevance for Cemini screening
 - @sources/stocks-4-4-5.md — Racorean (2014, arXiv): stock-crossing permutation diagrams → positive Grassmannian. VERY LOW relevance (exotic mathematical finance); permutation-based rank-correlation feature could inspire simpler encoding
 - @sources/test-time-adaptation-for-non-stationary-time-series.md — Quantitative Finance source in the Cemini research corpus
+- @sources/push-response-anomalies-in-high-frequency-s-p-500-price-series.md — Quantitative Finance source in the Cemini research corpus; lag-resolved SPY intraday push-response surface usable as a trade filter + P&L risk-attribution tool
 - @sources/trading-2-4-5.md — Azzutti, Ringe & Stiehl (2022, EBI WP): AI-lifecycle regulatory framework (design/development/deployment/monitoring); rule-based + risk-oriented approach. Direct Cemini IP-sale compliance relevance for EU-regulated institutional buyers
 - @sources/trading-4-5.md — Quantitative Finance source in the Cemini research corpus
 - @sources/trading-playbook-research.md — Quantitative Finance source in the Cemini research corpus
@@ -168,6 +171,7 @@ updated: 2026-05-11
 - @entities/tools/a-stock-data-toolkit.md — quant-finance tool entity
 - @entities/tools/synth-subnet.md — Bittensor synth-subnet tool entity
 - @sources/hmm-jurafsky-martin-2026.md — HMM source (Jurafsky & Martin)
+- @sources/the-three-dimensional-decomposition-of-volatility-memory.md — canonical level-shape-tempo decomposition of volatility memory; gated GARCH family (RSM / G-FIGARCH / G-Clock / TG-Vol) with observable-feature gates
 
 ## Raw Concept
 

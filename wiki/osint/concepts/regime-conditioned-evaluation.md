@@ -11,9 +11,12 @@ related:
   - concepts/algorithmic-stopping-conditions.md
   - concepts/llm-listwise-alignment.md
   - concepts/cemini-license-posture.md
+  - sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md
+  - sources/evonash-marl.md
+  - sources/test-time-adaptation-for-non-stationary-time-series.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -25,6 +28,9 @@ updated: 2026-05-07
 - @concepts/algorithmic-stopping-conditions.md — budget B/|A| is a stopping-condition coordinate, formalized here as the dominant effect modifier.
 - @concepts/llm-listwise-alignment.md — sibling K33 concept; both are about training/eval rigor mismatches.
 - @concepts/cemini-license-posture.md — license-evaluation policy is structurally a regime-conditioned decision (license × use-case × deployment-tier); the rubric here echoes that discipline.
+- @sources/test-time-adaptation-for-non-stationary-time-series.md — applied example: TTA paper splits real markets into pandemic/high-inflation/recovery regimes and gates claims with Diebold–Mariano + Newey–West HAC tests.
+- @sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md — exemplar of the controlled-study discipline: disentangles six debate factors against a fixed anchor instead of reporting a single aggregate "debate helps" number.
+- @sources/evonash-marl.md — applies the conservative-validation half of this discipline (walk-forward, White Reality Check, SPA-lite, deflated Sharpe) and honestly reports non-significance rather than overclaiming alpha.
 
 ## Raw Concept
 

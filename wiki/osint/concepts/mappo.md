@@ -12,9 +12,10 @@ related:
   - entities/frameworks/pettingzoo.md
   - sources/microsoft-qlib.md
   - sources/rl-overview-murphy-2412-05265.md
+  - sources/evonash-marl.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-11
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -25,6 +26,7 @@ updated: 2026-05-11
 - @sources/3-19-telegram-discord-research.md
 - @entities/frameworks/torchrl.md
 - @entities/frameworks/pettingzoo.md
+- @sources/evonash-marl.md — sibling MARL methodology: a population/game-theoretic (PSRO + league self-play) alternative to MAPPO's centralized-critic CTDE design, applied to equity allocation
 
 ## Raw Concept
 

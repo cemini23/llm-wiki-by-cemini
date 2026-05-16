@@ -6,16 +6,22 @@ category: indices
 ticker: SPY
 related:
   - entities/ticker-watchlist.md
+  - sources/the-three-dimensional-decomposition-of-volatility-memory.md
+  - sources/test-time-adaptation-for-non-stationary-time-series.md
+  - sources/push-response-anomalies-in-high-frequency-s-p-500-price-series.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-27
 created: 2026-04-27
-updated: 2026-04-27
+updated: 2026-05-16
 ---
 
 ## Relations
 
 - @entities/ticker-watchlist.md — parent watchlist page
+- @sources/the-three-dimensional-decomposition-of-volatility-memory.md — SPY (2005-2024) is one of two empirical testbeds for the gated volatility-memory models; regime + tempo gates dominate equity tail-risk timing
+- @sources/test-time-adaptation-for-non-stationary-time-series.md — SPY is one of three real-market test assets for the TTA framework (direction classification + Newey–West-adjusted directional backtest, 2020–2025)
+- @sources/push-response-anomalies-in-high-frequency-s-p-500-price-series.md — SPY is the sole instrument analyzed; ~2.6B NBBO events (2018–2023) reveal a lag-resolved intraday push-response anomaly invisible to unconditional tests
 
 ## Raw Concept
 

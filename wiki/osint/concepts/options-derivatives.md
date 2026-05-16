@@ -7,6 +7,8 @@ related:
   - sources/3-19-on-chain-alpha-research.md
   - sources/3-19-rl-research.md
   - sources/3-19-trading-options-data-research.md
+  - sources/autonomous-ai-agents-for-option-hedging.md
+  - sources/deep-hedging-with-reinforcement-learning.md
   - sources/3-26-blog-re-2.md
   - sources/3-29-research-5.md
   - sources/4-14-re.md
@@ -32,7 +34,7 @@ related:
   - sources/mit-quant-bible.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-11
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -40,6 +42,8 @@ updated: 2026-05-11
 - @sources/3-19-on-chain-alpha-research.md — Options & Derivatives source in the Cemini research corpus
 - @sources/3-19-rl-research.md — Options & Derivatives source in the Cemini research corpus
 - @sources/3-19-trading-options-data-research.md — Options & Derivatives source in the Cemini research corpus
+- @sources/autonomous-ai-agents-for-option-hedging.md — deep-read 2026-05-16; shortfall-aware RL (QLBS/RLOP) option hedging benchmarked against Black-Scholes / jump-diffusion / Heston; IVRMSE shown to be a weak proxy for after-cost hedging quality
+- @sources/deep-hedging-with-reinforcement-learning.md — deep-read 2026-05-16; RL actor-critic (GAE) overlay hedging equity-index option exposure using option-surface + macro state features
 - @sources/3-26-blog-re-2.md — Options & Derivatives source in the Cemini research corpus
 - @sources/3-29-research-5.md — Options & Derivatives source in the Cemini research corpus
 - @sources/4-14-re.md — Options & Derivatives source in the Cemini research corpus

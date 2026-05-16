@@ -10,9 +10,10 @@ related:
   - concepts/dlinear.md
   - entities/models/timesfm.md
   - sources/4-3-link-re-2.md
+  - sources/test-time-adaptation-for-non-stationary-time-series.md
 maturity: validated
 created: 2026-04-30
-updated: 2026-05-01
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-01
 - @concepts/dlinear.md — DLinear trend-seasonal model; lightweight sibling CPU-time-series option
 - @entities/models/timesfm.md — Google Research 200M-param time-series foundation model (Apache-2.0); complementary: Chronos-Bolt as fast-path (~8M), TimesFM as deep-forecast (~200M)
 - @sources/4-3-link-re-2.md — K14 deep-read 2026-05-01; reinforces Chronos-Bolt Apache-2.0 + CPU-viability with explicit license confirmation; adds TimesFM 2.5 as secondary Apache-2.0 candidate and Moirai CC-BY-NC-4.0 as explicit reject
+- @sources/test-time-adaptation-for-non-stationary-time-series.md — TTA is a deploy-time adaptation layer (frozen backbone, norm-only/BN-stats updates) that could sit on top of a pretrained backbone like Chronos-Bolt for non-stationary market streams
 
 ## Raw Concept
 

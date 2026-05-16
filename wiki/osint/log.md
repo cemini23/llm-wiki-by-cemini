@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-05-16] deep-read | 2 quant/microstructure source stubs upgraded
+
+Replaced generic ~40-word stubs with source-grounded synthesis on two arXiv papers.
+
+### sources/test-time-adaptation-for-non-stationary-time-series.md
+Wu et al. (UNC, arXiv 2602.00073). 150–400-word Narrative + 3 cited Snippets. read_status unread-stub → deep-read; maturity draft → validated. New bidirectional edges: regime-conditioned-evaluation, dlinear, chronos-bolt, spy, qqq (quant-finance hub already linked).
+
+### sources/push-response-anomalies-in-high-frequency-s-p-500-price-series.md
+Vlasiuk & Smirnov (Columbia, arXiv 2511.06177). Narrative + 3 cited Snippets. read_status unread-stub → deep-read; maturity draft → validated. New bidirectional edges: quant-finance (gap fixed), spy (market-microstructure hub already linked).
+
+### Lint
+Bidirectional gaps 0 after fixing quant-finance ↔ push-response. index.md rows refreshed for both. No raw-file migration (PDFs already in /tmp deep-read staging; canonical citation filenames recorded).
+
 ## [2026-05-14/15] K45 cross-wiki routing | 11 tool entity stubs created across 3 sibling wikis + 13 operational briefs staged
 
 - **Cross-wiki stubs created** (11, via `scripts/cross_wiki_route.py`):

@@ -9,9 +9,10 @@ related:
   - concepts/conductor-orchestrator.md
   - concepts/policy-distillation.md
   - concepts/coding-agents-alphazero.md
+  - sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md
 maturity: validated
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -20,6 +21,7 @@ updated: 2026-05-02
 @M concepts/conductor-orchestrator.md
 @concepts/policy-distillation.md
 @concepts/coding-agents-alphazero.md
+@sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md — controlled study of multi-agent debate as an inter-agent collaboration topology; quantifies when text-based debate succeeds vs fails
 
 ## Raw Concept
 Synthesized from @sources/recursive-multi-agent-systems-2604.25917.md.

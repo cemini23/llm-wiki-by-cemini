@@ -6,16 +6,18 @@ category: mega_cap
 ticker: NVDA
 related:
   - entities/ticker-watchlist.md
+  - sources/american-call-options-pricing-with-modular-neural-networks.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-23
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-05-16
 ---
 
 ## Relations
 
 - @entities/ticker-watchlist.md — parent watchlist page
+- @sources/american-call-options-pricing-with-modular-neural-networks.md — NVDA 2023 call options dataset; the MNN's largest RMSE improvement over traditional models appears on this high-volatility name
 
 ## Raw Concept
 

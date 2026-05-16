@@ -9,9 +9,10 @@ related:
   - entities/tools/probablyprofit.md
   - entities/tools/hftbacktest.md
   - sources/jpm-portfolio-impact-investment-saltuk-2012.md
+  - sources/toplogical-risk-parity.md
 maturity: draft
 created: 2026-05-04
-updated: 2026-05-11
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -19,6 +20,7 @@ updated: 2026-05-11
 - @sources/links-2-5-4-tool-eval.md — origin source: 2026-05-04 Gemini DR eval, URL 12, **Adopt** tier verdict
 - @entities/tools/financetoolkit.md — companion Adopt-tier from same batch; complementary integration vector (Riskfolio-Lib for sizing, FinanceToolkit for fundamentals)
 - @entities/tools/probablyprofit.md — Steal-from-tier (5_4-links URL 12); probablyprofit's Kelly implementation is one possible alternative to Riskfolio-Lib's; Riskfolio's BSD-3-Clause is cleaner than probablyprofit's wholesale extraction
+- @sources/toplogical-risk-parity.md — Topological Risk Parity (TRP) paper; positions itself as a non-binary, long/short-capable alternative to the classical HRP that Riskfolio-Lib implements
 
 ## Raw Concept
 

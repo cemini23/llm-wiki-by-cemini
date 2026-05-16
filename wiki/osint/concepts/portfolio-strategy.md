@@ -42,11 +42,13 @@ related:
   - sources/stocks-2-4-5.md
   - sources/stocks-3-4-5.md
   - sources/toplogical-risk-parity.md
+  - sources/regret-driven-portfolios.md
   - concepts/llm-listwise-alignment.md
   - sources/mit-quant-bible.md
+  - sources/evonash-marl.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-11
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -88,7 +90,9 @@ updated: 2026-05-11
 - @sources/hedgge-fund-1-4-5.md — "Do Hedge Funds Prefer Safe Stocks?" (Cao, Green & Li, 2014): hedge funds prefer safe/low-volatility stocks; safety preference strongest during recessions. Informs defensive strategy weighting + regime-conditional allocation
 - @sources/stocks-2-4-5.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/stocks-3-4-5.md — Atmaz & Basak (2021, J. Finance): no-dividend stocks have lower returns but higher vol/betas. Informs factor-construction + no-dividend-premium awareness in portfolio allocation
-- @sources/toplogical-risk-parity.md — Portfolio Strategy source in the Cemini research corpus
+- @sources/toplogical-risk-parity.md — Topological Risk Parity (TRP): MST-based, signed-signal, long/short-capable allocator; non-binary alternative to HRP (deep-read 2026-05-16)
+- @sources/regret-driven-portfolios.md — LLM-guided no-regret (follow-the-leader) allocation with Fear & Greed sentiment gating; risk-adjusted optimization (deep-read 2026-05-16)
+- @sources/evonash-marl.md — closed-loop MARL framework for medium-horizon equity allocation: PSRO-style policy population + execution-aware constrained checkpoint selection under a 120-window walk-forward protocol (deep-read 2026-05-16)
 
 ## Raw Concept
 
