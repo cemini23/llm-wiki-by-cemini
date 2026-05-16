@@ -5,14 +5,16 @@ tags: [entity, tool, blockchain-analytics, crypto-tracing, osint, wallet-attribu
 keywords: [arkham, arkham-intelligence, blockchain-analytics, wallet-tracking, on-chain-attribution, crypto-tracing, illicit-finance-osint]
 related:
   - sources/crypto-illicit-finance-tracing-2026-05.md
+  - entities/tools/polymarket-insider-tracker.md
 maturity: draft
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-16
 ---
 
 ## Relations
 
 - @sources/crypto-illicit-finance-tracing-2026-05.md — May 2026 news: Arkham traced $344M in Iran-linked TRON wallets
+- @entities/tools/polymarket-insider-tracker.md — sibling blockchain-analytics tool; both trace wallet funding chains for entity resolution
 
 ## Raw Concept
 

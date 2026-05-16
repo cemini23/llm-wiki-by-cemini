@@ -92,6 +92,9 @@ related:
   - sources/mit-quant-bible.md
   - sources/hmm-jurafsky-martin-2026.md
   - sources/the-three-dimensional-decomposition-of-volatility-memory.md
+  - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
+  - concepts/markov-regime-switching-models.md
+  - concepts/ai-assisted-trading-workflow.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-05-16
@@ -99,6 +102,9 @@ updated: 2026-05-16
 
 ## Relations
 
+- @sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md — K49 trading-posts ingest (Markov regime models + AI workflow + Polymarket bots)
+- @concepts/markov-regime-switching-models.md — K49 concept: Markov/HMM regime-switching for trading
+- @concepts/ai-assisted-trading-workflow.md — K49 concept: AI-assisted discretionary trading workflow
 - @sources/3-10-agent-orchestration-research-audit.md — Quantitative Finance source in the Cemini research corpus
 - @sources/3-10-cryptographic-research.md — Quantitative Finance source in the Cemini research corpus
 - @sources/3-10-osint-research.md — Quantitative Finance source in the Cemini research corpus

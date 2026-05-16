@@ -5175,3 +5175,32 @@ kb-server-retrieval-scaling, rl-marl-research, conductor-orchestrator, polymarke
 
 ### Not ingested (descriptive only)
 arXiv sweep's other 15 candidates; market-news SKIM items. Newsletter-research Polymarket rare-event candidates handed to the Outlier Weekly track (top pick: Iran war-powers resolution by May 31, 11%). Notes: 3 of the 4 arXiv papers' prediction-market cluster authored by M. Nechepurenko — flagged single-source on the relevant pages. No raw-file migration (sources are URLs).
+
+## [2026-05-16] ingest | K49 — tool-eval v3 iteration + trading posts + SANA-WM cross-route
+
+Full ingest of 3 inbox files (`research to be indexed/`). All NEW per `preingest_check.py`.
+
+### Source 1 — Tool Evaluation & Wiki Fit v3 Iteration (46-repo batch)
+- `sources/tool-eval-wiki-fit-v3-iteration-2026-05-16.md` — doc-level eval; 12 detailed (Adopt 7 / Steal-from 2 / Reference 1 / Reject 2 / UNAVAILABLE 34).
+- 4 OSINT/financial-primary entity pages: `entities/tools/{pmxt,polyterm,polymarket-insider-tracker,socid-extractor}.md`.
+- Rejections noted in-page: Polymarket-Kalshi Arbitrage Bot (no license), OctoBot-Prediction-Market (GPL-3.0).
+
+### Source 2 — Trading posts (posts.docx)
+- `sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md` — @TraderMorin / @bored2boar / @RohOnChain.
+- New concepts: `concepts/markov-regime-switching-models.md`, `concepts/ai-assisted-trading-workflow.md`.
+- `concepts/polymarket-bot-architecture.md` updated — @bored2boar independently corroborates the @0x_Punisher playbook; 7 operational principles upgraded toward `[CONFIRMED]`.
+
+### Source 3 — SANA-WM (2605.15178v1.pdf) — cross-routed OUT
+- NVIDIA minute-scale video world model. Off-topic for OSINT; routed to image-gen wiki (`sources/sana-wm-minute-scale-world-model.md` + 4 entity/concept pages). No OSINT page.
+
+### Cross-wiki routing
+- **cybersecurity-wiki**: `entities/tools/jadx-mcp-server.md`, `entities/tools/osmedeus.md`; APC-routines EDR-evasion article catalogued in `concepts/av-edr-bypass.md` reading list (Reference-only); socid-extractor → `osint-for-cybersecurity.md`, polymarket-insider-tracker → `blockchain-security.md`.
+- **ccc-wiki**: `entities/tools/{claude-for-legal,skillkit}.md` + 3 MCP/UI-pattern stubs (pmxt-mcp, polyterm-tui, osmedeus-acp).
+- **3d-printing-wiki**: `entities/tools/rebot-devarm.md` (Steal-from).
+
+### Adoption
+- **Local + librarian**: socid-extractor 0.0.27 — `pip --user` on laptop, `/opt/socid-extractor-venv` on cemini-librarian. Both verified.
+- **cemini-prod brief**: `briefs/2026-05-16_k49-prediction-market-tooling.md` (skill_audit PASS 100/100) scp'd to `/opt/cemini/briefs/` — pmxt/PolyTerm/Insider-Tracker adoption recs (Phase-0 audits owed) + bot-infra corroboration checklist.
+
+### Raw-source migration
+3 raw files moved to `cemini-librarian:/opt/cemini-bulk/research/` (2605.15178v1.pdf, posts.docx, Tool Evaluation and Wiki Fit Analysis.docx); laptop copies removed.

@@ -14,9 +14,10 @@ related:
   - sources/arxiv-coordination-layer-multi-agent-2605-03310.md
   - sources/arxiv-polymarket-fill-side-2605-11640.md
   - sources/polymarket-insider-trading-crackdown-2026-05.md
+  - entities/tools/polymarket-insider-tracker.md
 maturity: draft
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -28,6 +29,7 @@ updated: 2026-05-09
 - @entities/platforms/polymarket.md — Polymarket venue entity
 - @concepts/polymarket-market-making-architectures.md — K30 MM synthesis; these findings constrain MM strategy design
 - @concepts/market-microstructure.md — corpus index; this page is a Polymarket-specific anchor
+- @entities/tools/polymarket-insider-tracker.md — K49 tool: operationalizes "informed money" detection (Fresh Wallets, DBSCAN Sniper Clusters) on Polymarket
 - @concepts/prediction-market-historical-analysis.md — historical-data backtest pipeline; replication package feeds Layer 1
 - @concepts/cross-venue-arbitrage-pattern.md — cross-venue arb; Polymarket's microstructure determines arb feasibility
 

@@ -13,9 +13,10 @@ related:
   - entities/tools/polymarket-clob-api.md
   - entities/tools/polymarket-gamma-api.md
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
+  - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-13
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-13
 - `@sources/x-polymarket-bot-playbook-punisher-2026-05.md` — original X thread + long-form article
 - `@entities/platforms/polymarket.md` — platform entity page (create stub if absent)
 - `@concepts/cemini-license-posture.md` — IP-sale-readiness frame (no license issue here; pattern, not code)
+- `@sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md` — @bored2boar's independent bot playbook (May 2026), corroborating this page
 
 ## Raw Concept
 
@@ -138,6 +140,22 @@ Cemini already has a Polymarket adapter (per K30/K31 work). Specific extraction 
 - Author's TG channel + public profile = self-promotional component. Strategy + architecture is plausible and matches independent knowledge of CLOB microstructure; specific PnL claims need independent verification.
 - "99% of bots use simple X" type claims are unverifiable.
 - The 6-layer system is described with operational specificity (timing, counts, EMAs) consistent with production experience — most credible part of the playbook.
+
+### Independent corroboration — @bored2boar (May 2026)
+
+A second Polymarket bot operator (@bored2boar, claiming 1,500+ bots built and ~$12.7K/week public PnL) published an independent failure-mode list in `posts.docx`. It was written separately from the @0x_Punisher playbook yet converges on the same lessons — which upgrades several of this page's claims from single-source toward `[CONFIRMED]`:
+
+| @bored2boar failure mode | Matches this page's section |
+|---|---|
+| "Trading on dirty data" — late/out-of-order ticks, reconnect gaps, stale snapshots; fix is infrastructure (reject abnormal jumps, discard post-reconnect first ticks, parallel feeds, respawn slow connections) | 6-layer websocket system (Layers 1–6) — `[CONFIRMED]` two independent operators |
+| "Backtests are fiction" — ignore fill probability, depth, latency, slippage, competition; "70% strategy usually becomes 53–56%" | Backtesting discipline; win-rate-vs-entry-price — `[CONFIRMED]` |
+| "Started too complex" — begin with one market / one timeframe / one signal (15-min BTC, one external signal, hold to resolution) | Strategy development cycle; window sizing — `[CONFIRMED]` |
+| "Optimizing win rate over profit" — 90% WR at 85–90¢ risks $1 for 5–10¢; compute breakeven WR | Critical rule — win rate vs entry price — `[CONFIRMED]` |
+| "Never tested real execution" — run a real (even zero-balance) wallet, let orders fail, feed failures back | NSF-as-data principle; dry-run discipline — `[CONFIRMED]` |
+| "Infrastructure too weak" — dedicated low-latency server; FIFO punishes second-in-line | Latency targets — `[CONFIRMED]` |
+| "Rushing the process" — manual test → backtest → execution sim → live dry test → deploy | Strategy development cycle — `[CONFIRMED]` |
+
+Net: the @0x_Punisher playbook's *operational principles* are now two-source-confirmed. Specific numbers (latency in ms, exact PnL) remain `[TENTATIVE]` single-source each. @bored2boar adds nothing the @0x_Punisher page lacks at the engineering-detail level (no 6-layer-equivalent spec), so this page stays canonical; @bored2boar is corroboration, not new architecture.
 
 ## Snippets
 

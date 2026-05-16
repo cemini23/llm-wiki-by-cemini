@@ -16,9 +16,10 @@ related:
   - entities/platforms/kalshi.md
   - concepts/carry-trade.md
   - concepts/polymarket-weather-trading-strategy.md
+  - concepts/markov-regime-switching-models.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-13
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -34,6 +35,7 @@ updated: 2026-05-13
 - @entities/platforms/oanda.md
 - @entities/platforms/kalshi.md
 - @concepts/carry-trade.md — carry trade sizing is gated by Macro Weather regime: disabled in RED, half-sized in YELLOW, full-sized in GREEN.
+- @concepts/markov-regime-switching-models.md — sibling regime concept: Markov/HMM detects the regime statistically; Macro Weather is the macro-state framing
 
 ## Raw Concept
 

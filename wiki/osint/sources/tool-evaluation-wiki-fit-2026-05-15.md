@@ -11,10 +11,11 @@ related:
   - entities/tools/leann.md
   - entities/tools/website-downloader.md
   - concepts/kb-server-retrieval-scaling.md
+  - sources/tool-eval-wiki-fit-v3-iteration-2026-05-16.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-16
 clusters: [eval, multi-wiki-routing, k47]
 ---
 
@@ -28,6 +29,7 @@ clusters: [eval, multi-wiki-routing, k47]
 - @concepts/multi-wiki-eval-doc-level-vs-phase-0.md — doc-level eval only; all Adopt verdicts still require a Phase-0 source audit before real adoption
 - @concepts/paradigm-vs-license-inverse-correlation.md — Shadowbroker (most capable OSINT tool in the batch) is AGPL-3.0, reconfirming the pattern
 - @entities/tools/fingerprint-suite.md — Adopt-tier, OSINT primary fit; locally adopted from this eval
+- @sources/tool-eval-wiki-fit-v3-iteration-2026-05-16.md — successor batch: the K49 v3-iteration 46-repo eval
 - @entities/tools/leann.md — Adopt-tier, cross-routed to OSINT (vector indexing for the librarian); locally adopted from this eval
 - @concepts/kb-server-retrieval-scaling.md — K47 benchmark of the two Adopt-tier vector indexes against kb-server's brute-force search
 - @entities/tools/website-downloader.md — re-evaluated here (Defer); already cataloged 2026-05-12 as Reference-only
