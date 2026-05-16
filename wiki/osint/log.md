@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-05-16] K50 ingest | Stanford CS 230 LSTM paper + 44-tool multi-wiki audit
+
+- **Sources created** (2):
+  - `sources/stanford-cs230-lstm-stock-prediction.md` — 6pp Stanford CS 230 paper. Best model: 50 neurons, 3 layers, dropout 0.1, batch 32. RMSE: FB 4.89, GOOG 22.23, AMZN 48.66. read.
+  - `sources/tool-evaluation-multi-wiki-audit-may-2026.md` — ~25pp 44-URL systematic evaluation across 7 wiki surfaces. Adopt 7 / Steal-from 2 / Reference-only 4 / Reject 27 / Unavailable 4. License pattern: 25/44 no license, 3 poison pills, 10 clean. read.
+- **Entity stubs created** (9 OSINT tool entities):
+  - Adopt (7): qstrader, garden-skills, claude-code-karma, octotools, gbrain, agent-skills-addyosmani, everything-claude-code
+  - Steal-from (2): hetty, scientific-agent-skills
+- **Concept pages created** (1): `concepts/lstm-stock-prediction-baseline.md` — baseline methodology page extracted from Stanford CS 230 paper
+- **Cross-wiki briefs** (4): ccc-wiki + cybersec-wiki + image-gen-wiki + seo-wiki via `scripts/cross_wiki_route.py`
+- **Existing page updated** (1): `concepts/tool-evaluation-framework.md` — added K50 source to related list, bumped updated date
+- **index.md**: source entries added under ml-methods + K49 section; 9 tool entries under Tools section; 1 concept under Trading strategy concepts
+- **Raw sources**: `55614857.pdf` + `Tool Evaluation and Wiki Fit.docx` → scp to librarian pending (Task 7)
+
 ## [2026-05-16] deep-read | 2 quant/microstructure source stubs upgraded
 
 Replaced generic ~40-word stubs with source-grounded synthesis on two arXiv papers.
