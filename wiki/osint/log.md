@@ -5372,3 +5372,18 @@ Batch 7 of the cited-unread-stub campaign. 10 stubs processed; cited-unread-stub
 - `corpus-overflow-out-of-scope.md` — 17 → 22 sources; index.md count updated.
 
 Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw PDFs already on librarian.
+
+## [2026-05-17] synthesis | MARL architecture brief + 2 recommendations (K49 campaign follow-up)
+
+Cross-batch synthesis from the 2026-05-16 cited-unread campaign (batches 2–7).
+
+### New brief → cemini-prod
+`briefs/2026-05-16_marl-architecture-findings.md` — synthesizes 4 deep-read MARL papers (Hi-DARTS, 3-29-3, 3-29-9, RLAE/3-29-18) into architecture input for the 5-agent MAPPO stack + conductor: MAPPO validated over MADDPG/MASAC/IDDPG, hierarchical volatility-gated execution, communication-constrained coordination, RL-based model routing. Includes a regime-conditioned evaluation-conditions disclosure (K33 discipline). skill_audit PASS 100/100; scp'd to cemini-prod.
+
+### Recommendation A — concept page promotion
+`concepts/marl-trading-architecture.md` — wiki-side synthesis of the same 4 papers (4 architecture findings + Cemini design checklist); bidirectionally linked to the 4 source pages, rl-marl-research hub, and rl-retrain-pipeline-hardening (sibling: architecture vs retrain-process).
+
+### Recommendation B — kb-server-retrieval-scaling refresh
+`concepts/kb-server-retrieval-scaling.md` updated with batch-6 vector-infra deep-reads: pvg5 (HNSW→binarization adds a third option — binarized exhaustive scan) and llm-re/ByteRover (LLM-curated markdown beats vector/graph-DB memory — validates the no-vector-DB posture). K47 NO-GO stands; option set on growth is sqlite-vss → binarized exhaustive scan.
+
+Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling.
