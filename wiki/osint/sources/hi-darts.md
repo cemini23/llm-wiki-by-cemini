@@ -6,6 +6,7 @@ keywords: [Hi-DARTS, Hierarchical, Dynamically, Adapting, Reinforcement, Trading
 clusters: [rl-marl]
 related:
   - concepts/rl-marl-research.md
+  - concepts/marl-trading-architecture.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-27
@@ -15,6 +16,7 @@ updated: 2026-05-16
 ## Relations
 
 - @concepts/rl-marl-research.md — RL/MARL research cluster hub for the Cemini corpus
+- @concepts/marl-trading-architecture.md — synthesis concept: Hi-DARTS anchors the hierarchical volatility-gated-execution pattern
 
 ## Raw Concept
 

@@ -66,3 +66,5 @@ package-lock.json
 
 # Rewind
 .rewind-brief.md
+.agents/
+skills-lock.json

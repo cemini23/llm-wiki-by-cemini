@@ -81,6 +81,7 @@ related:
   - concepts/dlinear.md
   - concepts/stockbench.md
   - concepts/rl-retrain-pipeline-hardening.md
+  - concepts/marl-trading-architecture.md
   - sources/sort-8-4-3.md
   - entities/models/chronos-bolt.md
   - sources/4-3-link-research.md
@@ -173,6 +174,7 @@ updated: 2026-05-15
 - @sources/sort-8-4-3.md — K21 deep-read 2026-05-01; STOCKBENCH benchmark for LLM trading agents — contamination-free, multi-month, 14-model evaluation. Provides standardized evaluation layer the MAPPO agent currently lacks
 - @concepts/stockbench.md — K21 promotion 2026-05-01; STOCKBENCH as standardized trading agent benchmark — composite z-score methodology, multi-regime evaluation, Cemini integration path
 - @concepts/rl-retrain-pipeline-hardening.md — K49 promotion; reusable pre-retrain hardening checklist for the CeminiSuite MAPPO pipeline (data-readiness gate, global advantage normalization, epoch-level Lagrangian λ, cold-start)
+- @concepts/marl-trading-architecture.md — K49 synthesis; MARL architecture design patterns for Cemini's MAPPO stack (algorithm choice, hierarchical volatility gating, communication-constrained coordination, RL model routing)
 
 ## Raw Concept
 

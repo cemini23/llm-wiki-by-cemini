@@ -6,6 +6,7 @@ keywords: [mappo-retrain, gradient-accumulation, gae-advantage-normalization, la
 related:
   - sources/4-3-rl-research.md
   - concepts/rl-marl-research.md
+  - concepts/marl-trading-architecture.md
 maturity: validated
 created: 2026-05-16
 updated: 2026-05-16
@@ -15,6 +16,7 @@ updated: 2026-05-16
 
 - @sources/4-3-rl-research.md — anchor source: the internal RL-retrain hardening review this page synthesizes into reusable methodology
 - @concepts/rl-marl-research.md — RL/MARL corpus-index hub
+- @concepts/marl-trading-architecture.md — sibling Cemini-MARL concept: that page is *architecture*, this one is *retrain process*
 
 ## Raw Concept
 

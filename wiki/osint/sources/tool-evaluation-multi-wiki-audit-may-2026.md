@@ -15,7 +15,8 @@ related:
   - entities/tools/everything-claude-code.md
   - entities/tools/hetty.md
   - entities/tools/scientific-agent-skills.md
-maturity: draft
+read_status: read
+maturity: validated
 created: 2026-05-16
 updated: 2026-05-16
 ---

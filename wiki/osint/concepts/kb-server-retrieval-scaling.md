@@ -1,17 +1,19 @@
 ---
 title: "kb-server retrieval scaling — when (not) to add a vector index"
 type: concept
-tags: [concept, kb-server, librarian, vector-search, ann, benchmark, infrastructure, k47]
-keywords: [kb-server, brute-force-cosine, turbovec, leann, sqlite-vss, ann-index, vector-search-scaling, 2000-note-threshold, premature-optimization]
+tags: [concept, kb-server, librarian, vector-search, ann, benchmark, infrastructure, k47, k49]
+keywords: [kb-server, brute-force-cosine, turbovec, leann, sqlite-vss, ann-index, vector-search-scaling, 2000-note-threshold, premature-optimization, binarization, exhaustive-scan, llm-curated-memory]
 related:
   - entities/infrastructure/conductor-librarian-architecture.md
   - entities/tools/turbovec.md
   - entities/tools/leann.md
   - sources/tool-evaluation-wiki-fit-2026-05-15.md
   - sources/arxiv-grep-agent-harness-2605-15184.md
+  - sources/4-14-pvg5.md
+  - sources/llm-re-4-3.md
 maturity: validated
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-16
 ---
 
 ## Relations
@@ -21,6 +23,8 @@ updated: 2026-05-15
 - @entities/tools/leann.md — benchmarked here as a candidate ANN index; staged on the librarian, not wired
 - @sources/tool-evaluation-wiki-fit-2026-05-15.md — the eval that surfaced turbovec/LEANN as Adopt-tier
 - @sources/arxiv-grep-agent-harness-2605-15184.md — empirical paper finding grep ≥ vector retrieval in agentic search; independent corroboration of this page's NO-GO decision
+- @sources/4-14-pvg5.md — K49 deep-read; HNSW→information-theoretic binarization — a third architectural option (exhaustive binary scan) for the scaling decision
+- @sources/llm-re-4-3.md — K49 deep-read; ByteRover's LLM-curated markdown memory outperforms vector/graph-DB pipelines — validates the librarian's no-vector-DB posture
 
 ## Raw Concept
 
@@ -58,6 +62,15 @@ Current corpus: **943 vectors** — one embedding per document, no chunking. Tha
 ### Trigger condition for revisiting
 
 Re-evaluate an ANN index **only** when kb-server's `embeddings` table exceeds **~2 000 rows** — which first requires kb-server to start chunking documents (today it stores one embedding per whole document). At that point evaluate `sqlite-vss` first; turbovec/LEANN only if the corpus reaches genuinely large scale.
+
+### Update 2026-05-16 (K49) — batch-6 vector-infra deep-reads
+
+Two papers from the K49 cited-unread campaign refine the scaling picture without changing the NO-GO:
+
+- **`@sources/4-14-pvg5.md` (HNSW → information-theoretic binarization)** — adds a *third* architectural option beyond "brute-force float32" and "HNSW ANN sidecar": **single-bit binarized codes + bitwise Hamming distance + exhaustive linear scan**. Claimed ~32× memory reduction with deterministic (non-approximate) retrieval and no recall collapse under concurrency. If kb-server ever crosses the chunking threshold, binarized exhaustive scan is a closer evolution of today's exact brute-force path (in-process, no `ef` tuning) than an HNSW sidecar. `[TENTATIVE 2026-05-16]` — the accuracy-parity claim rests on a Moorcheh AI patent-pending foundation; needs independent replication before adoption.
+- **`@sources/llm-re-4-3.md` (ByteRover)** — empirically finds LLM-curated **markdown** memory (a `Domain>Topic>Subtopic` file tree, BM25 + fuzzy tiers, no embedding service) outperforms vector/graph-DB memory pipelines on long-context benchmarks. Independent validation of the librarian's existing posture — the wiki is already markdown with `maturity` tiers + citation provenance, and `@sources/arxiv-grep-agent-harness-2605-15184.md` already found grep ≥ vector retrieval. The bar for adding *any* vector index to kb-server is now higher, not lower.
+
+Net: the K47 NO-GO stands. When the corpus does grow, the option set is `sqlite-vss` first, then **binarized exhaustive scan** as a design-aligned alternative to an HNSW sidecar.
 
 ### Deployment-boundary note
 
