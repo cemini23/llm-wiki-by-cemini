@@ -14,6 +14,10 @@ related:
   - sources/3-29-4.md
   - sources/bayesuan-perspectives.md
   - sources/ligo.md
+  - sources/gdelt-3-3-29.md
+  - sources/crypto-4-11.md
+  - sources/crypto-4-4-11.md
+  - sources/crypto-5-4-11.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-05-16
@@ -31,6 +35,10 @@ updated: 2026-05-16
 - @sources/3-29-4.md — *A Robust and Efficient MARL Framework for Traffic Signal Control* (Huang et al., NYCU) — urban traffic-signal optimization; traffic-specific framework with no direct trading-stack transfer
 - @sources/bayesuan-perspectives.md — *Some Bayesian Perspectives on Clinical Trials* (Sokolova, Sokolov, Polson) — biostatistics / Bayesian clinical-trial design; medical-trial domain with no path to financial-market modeling
 - @sources/ligo.md — *Evaluating Deep Learning Models for Multiclass Classification of LIGO Gravitational Wave Glitches* (Manoharan & Cleaver, Baylor) — astrophysics detector-characterization ML; no transfer path to the trading stack
+- @sources/gdelt-3-3-29.md — *Shifting Narratives: A Longitudinal Analysis of Media Trends and Public Attitudes on Homelessness* (Irudayaraj, Ye, Chainani) — media-framing / social-policy study; uses GDELT but no trading-stack application path
+- @sources/crypto-4-11.md — *MARVEL: Multimodal Adaptive Reasoning-intensiVe Expand-rerank and retrievaL* (Kasem et al.) — vision-language multimodal retrieval benchmark; outside Cemini's text-only retrieval path
+- @sources/crypto-4-4-11.md — *CREBench: Evaluating Large Language Models in Cryptographic Binary Reverse Engineering* (Chen, Wang, Zhou et al.) — cybersecurity-adjacent binary RE benchmark; not financial research
+- @sources/crypto-5-4-11.md — *The Quantum-Cryptographic Co-evolution* (Kundu & Kompella, Cisco Research) — post-quantum-cryptography migration framework; infrastructure policy, not finance
 
 ## Raw Concept
 
@@ -54,7 +62,7 @@ If criterion (3) shifts (roadmap pivots, new thread opens), the source graduates
 
 Deleting the stubs would lose the inventory record of which PDFs were already triaged-and-rejected, leading to duplicate effort on the next sweep. Keeping them under this hub is a librarian's "we looked, we passed" marker.
 
-### Current contents (10 sources, 2026-05-16)
+### Current contents (14 sources, 2026-05-16)
 
 | Stub | Topic | Why out-of-scope |
 |---|---|---|
@@ -68,6 +76,10 @@ Deleting the stubs would lose the inventory record of which PDFs were already tr
 | @sources/3-29-4.md | MARL framework for traffic signal control | Urban traffic-signal optimization; traffic-specific framework/action space, no direct trading transfer |
 | @sources/bayesuan-perspectives.md | Bayesian analysis of three landmark clinical trials (pure biostatistics) | Medical clinical-trial design; shares Bayesian machinery but no path to financial-market modeling |
 | @sources/ligo.md | Deep-learning glitch classification for LIGO gravitational-wave detectors | Astrophysics detector characterization; generic tabular ML but domain has no trading-stack transfer |
+| @sources/gdelt-3-3-29.md | Media-framing analysis of homelessness coverage (GDELT + X sentiment) | Social-policy / media-framing study; uses GDELT but no quant-finance or trading-stack application path |
+| @sources/crypto-4-11.md | MARVEL multimodal vision-language retrieval pipeline + benchmark | Multimodal (image+text) retrieval; Cemini's retrieval path is text-only, and the work is not finance |
+| @sources/crypto-4-4-11.md | CREBench: LLM benchmark for cryptographic binary reverse engineering | Cybersecurity-adjacent (software RE / vuln discovery); not financial research, no trading-stack transfer |
+| @sources/crypto-5-4-11.md | Quantum-Cryptographic Co-evolution coordinate framework (Cisco Research) | Post-quantum-cryptography migration strategy / infrastructure policy; not finance |
 
 ## Snippets
 

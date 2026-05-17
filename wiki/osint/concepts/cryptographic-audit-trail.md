@@ -15,7 +15,6 @@ related:
   - concepts/skill-vetting.md
   - concepts/equity-intraday-backfill-gap.md
   - entities/platforms/hyperliquid.md
-  - sources/crypto-5-4-11.md
   - concepts/defend-trade-secrets-act.md
   - sources/4-5-links.md
   - concepts/context-compression-resume-pattern.md
@@ -56,7 +55,6 @@ audit_date: 2026-04-24
 - @concepts/skill-vetting.md
 - @concepts/equity-intraday-backfill-gap.md — backfill INSERTs anchor into the same hash chain
 - @entities/platforms/hyperliquid.md
-- @sources/crypto-5-4-11.md — *The Quantum-Cryptographic Co-evolution* (Kundu & Kompella, Cisco Research) — forward-looking PQ-cryptography landscape relevant to the SHA-256 hash-chain layer's threat-model assumptions (D′ 2026-04-26 routing)
 - @concepts/defend-trade-secrets-act.md — K7-tail concept-promotion 2026-04-27 — sibling tamper-evident artifact pattern; the prescribed VCP/zkCA stack (this page) would supplement Git history as a cryptographically anchored secrecy-measure record satisfying DTSA's "reasonable measures to maintain secrecy" element under 18 U.S.C. § 1839
 - @concepts/wiki-tooling-evaluation.md — 2026-04-28 synthesis: `llm-wiki-compiler`'s **confidence + `contradictedBy[]` per-page metadata** is a machine-readable analog to the inline `[CONFIRMED]` / `[TENTATIVE]` / `[NEEDS VERIFICATION]` / `[RETRACTED]` claim-tag system this concept page targets — complementary, not redundant; structured-metadata-on-pages + cryptographic-anchoring-of-claims serve different audit-trail layers
 - @sources/falkordb-graphrag-eval.md — 2026-04-28 — graph databases enable schema-bound queries that vector-RAG cannot answer; cited GraphRAG benchmarks (3-4× better on cross-document reasoning) parallel the audit-trail story — provenance is a graph problem (chains of (claim, source, timestamp, signer) tuples), not a chunk problem. SSPL license blocks deployed-stack adoption; workspace-side experiment candidate only

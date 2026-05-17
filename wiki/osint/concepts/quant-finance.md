@@ -93,6 +93,7 @@ related:
   - sources/hmm-jurafsky-martin-2026.md
   - sources/the-three-dimensional-decomposition-of-volatility-memory.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
+  - sources/gdelt-4-3-29.md
   - concepts/markov-regime-switching-models.md
   - concepts/ai-assisted-trading-workflow.md
 maturity: draft
@@ -178,6 +179,7 @@ updated: 2026-05-16
 - @entities/tools/synth-subnet.md — Bittensor synth-subnet tool entity
 - @sources/hmm-jurafsky-martin-2026.md — HMM source (Jurafsky & Martin)
 - @sources/the-three-dimensional-decomposition-of-volatility-memory.md — canonical level-shape-tempo decomposition of volatility memory; gated GARCH family (RSM / G-FIGARCH / G-Clock / TG-Vol) with observable-feature gates
+- @sources/gdelt-4-3-29.md — K49 deep-read; interpretable ML for macro alpha from GDELT news sentiment (FinBERT + XGBoost + SHAP)
 
 ## Raw Concept
 

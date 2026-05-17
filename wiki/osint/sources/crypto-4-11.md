@@ -1,36 +1,36 @@
 ---
 title: "MARVEL: Multimodal Adaptive Reasoning-intensiVe Expand-rerank and retrievaL"
 type: source
-tags: [pdf, unread-stub, llm-agents]
-clusters: [llm-agents]
+tags: [pdf, out-of-scope, llm-agents]
+clusters: [out-of-scope]
 related:
-  - concepts/llm-agent-systems.md
+  - concepts/corpus-overflow-out-of-scope.md
 maturity: draft
-read_status: unread-stub
+read_status: skimmed
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-05-16
 ---
 
 ## Relations
 
-- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @concepts/corpus-overflow-out-of-scope.md — hub for out-of-scope corpus stubs
 
 ## Raw Concept
 
 - **Original title**: MARVEL: Multimodal Adaptive Reasoning-intensiVe Expand-rerank and retrievaL
-- **Author(s)**: _unknown (stub — not yet read)_
+- **Author(s)**: Mahmoud SalahEldin Kasem et al. (Chungbuk National University, University of Innsbruck)
 - **Type**: PDF
 - **Location**: research for cemini/crypto 4:11.pdf
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: 10p
-- **Read status**: unread-stub
-- **Primary cluster**: llm-agents
-- **All clusters**: llm-agents
+- **Read status**: skimmed
+- **Primary cluster**: out-of-scope
+- **All clusters**: out-of-scope
 
 ## Narrative
 
-Multimodal retrieval over text corpora remains a fun- damental challenge: the best vision-language encoder achieves only 27.6 nDCG@10 on MM-BRIGHT, a reasoning-intensive multimodal retrieval benchmark, un- derperforming strong text-only systems. We argue that effective multimodal retrieval requires three tightly inte- grated capabilities that existing approa
+MARVEL is a vision-language multimodal retrieval pipeline combining LLM-driven query expansion, a reasoning-enhanced dense retriever, and GPT-4o chain-of-thought reranking; it reports 37.9 nDCG@10 on the MM-BRIGHT multimodal retrieval benchmark across 29 technical domains. The work targets reasoning-intensive retrieval over corpora with image content, which is outside Cemini's text-only retrieval path and not financial research; reclassified out-of-scope.
 
 ## Snippets
 
-*(None yet — populate on first deep read.)*
+*(None — out-of-scope, skimmed only.)*

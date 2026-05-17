@@ -68,7 +68,6 @@ related:
   - sources/cemini-suites-technical-analysis.md
   - sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md
   - sources/crypto-2-4-11.md
-  - sources/crypto-6-4-11.md
   - sources/deep-hedging-with-reinforcement-learning.md
   - sources/evonash-marl.md
   - sources/fintech-startup-legal-ip-roadmap.md
@@ -169,7 +168,6 @@ updated: 2026-05-15
 - @sources/cemini-suites-technical-analysis.md — RL/MARL source in the Cemini research corpus
 - @sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — LLM multi-agent debate; routed by 'multi-agent' keyword)
 - @sources/crypto-2-4-11.md — RL/MARL source in the Cemini research corpus
-- @sources/crypto-6-4-11.md — RL/MARL source in the Cemini research corpus
 - @sources/deep-hedging-with-reinforcement-learning.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — RL for option-portfolio hedging)
 - @sources/evonash-marl.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — closed-loop MARL for equity allocation)
 - @sources/fintech-startup-legal-ip-roadmap.md — RL/MARL source in the Cemini research corpus

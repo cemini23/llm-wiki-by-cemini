@@ -5285,3 +5285,28 @@ Batch 3 of the cited-unread-stub campaign. 10 stubs processed; cited-unread-stub
 - `nonstandard-errors` dual-homed (llm-agents + market-microstructure).
 
 Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw PDFs already on librarian (`research for cemini/` bootstrap corpus) — no migration needed.
+
+## [2026-05-16] deep-read | cited-unread-stub campaign — batch 4 (10 stubs + 3 cleanup)
+
+Batch 4 of the cited-unread-stub campaign. 10 stubs processed + 3 stale-classification cleanups; cited-unread-stub backlog 68 → 55.
+
+### In-scope deep-reads (6) — unread-stub → deep-read
+- `gdelt-4-3-29` — interpretable ML for macro alpha from GDELT news sentiment (FinBERT + XGBoost + SHAP). → quant-finance.
+- `gdelt-2-3-29` — CoreEval: GDELT-grounded contamination-resilient LLM-evaluation datasets. → llm-agents.
+- `gdelt-5-3-29` — RAG over GDELT via knowledge graphs (ontology vs LLM-generated KG). → llm-agents.
+- `crypto-6-4-11` — cryptographic capability-binding + reproducibility verification for AI-agent tool use. → llm-agents (was rl-marl).
+- `kalshi-5-3-29` — KalshiBench: LLM epistemic calibration on 300 Kalshi prediction-market questions. → llm-agents.
+- `trigreason` — TrigReason: trigger-based small/large reasoning-model routing (73% API-cost cut). → llm-agents.
+
+### Triaged out-of-scope (4) — unread-stub → skimmed, reclassified to corpus-overflow
+- `gdelt-3-3-29` — homelessness media-framing study. `crypto-4-11` — multimodal (vision-language) retrieval. `crypto-4-4-11` — cryptographic binary reverse-engineering (cybersec-adjacent). `crypto-5-4-11` — post-quantum-cryptography migration policy.
+
+### Cleanup — 3 stale classifications
+`3-29-20`, `ai-10-4-3`, `wasertein-1-4-3` were already clustered out-of-scope (in corpus-overflow) but still carried `read_status: unread-stub` → flipped to `skimmed`.
+
+### Hub wiring
+- `llm-agent-systems.md` — −3 (gdelt-3, crypto-4-11, crypto-4-4-11 reclassified out); +1 (crypto-6-4-11 moved in from rl-marl).
+- `rl-marl-research.md` — −1 (crypto-6-4-11). `cryptographic-audit-trail.md` — −1 (crypto-5-4-11).
+- `quant-finance.md` — +1 (gdelt-4-3-29). `corpus-overflow-out-of-scope.md` — 10 → 14 sources; index.md count updated.
+
+Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw PDFs already on librarian — no migration.

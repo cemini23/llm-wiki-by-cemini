@@ -45,13 +45,11 @@ related:
   - sources/ai-9-4-6.md
   - sources/ai-agent-skills-for-financial-applications.md
   - sources/captum-4-3-2.md
-  - sources/crypto-4-11.md
-  - sources/crypto-4-4-11.md
+  - sources/crypto-6-4-11.md
   - sources/crypto-7-4-11.md
   - sources/cyrpto-12-4-11.md
   - sources/esglens.md
   - sources/gdelt-2-3-29.md
-  - sources/gdelt-3-3-29.md
   - sources/gdelt-5-3-29.md
   - sources/greeks-5-3-29.md
   - sources/harness-3-4-5.md
@@ -149,8 +147,7 @@ updated: 2026-05-11
 - @sources/ai-9-4-6.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26)
 - @sources/ai-agent-skills-for-financial-applications.md — LLM agent-systems source in the Cemini research corpus
 - @sources/captum-4-3-2.md — LLM agent-systems source in the Cemini research corpus
-- @sources/crypto-4-11.md — LLM agent-systems source in the Cemini research corpus
-- @sources/crypto-4-4-11.md — LLM agent-systems source in the Cemini research corpus
+- @sources/crypto-6-4-11.md — K49 deep-read; cryptographic capability-binding + reproducibility verification for AI-agent tool use
 - @sources/crypto-7-4-11.md — LLM agent-systems source in the Cemini research corpus
 - @concepts/sae-execution-contract.md — K19 promotion 2026-05-01; SAE execution contract as reusable architectural primitive for agent security — execution-layer middleware treating upstream intent as structurally untrusted
 - @concepts/openclaw-security-taxonomy.md — K20 promotion 2026-05-01; OpenClaw security taxonomy as reusable architectural primitive — two-axis taxonomy + Context Manipulation kill chain + three structural conditions. Complements SAE: K19 = defense, K20 = threat model
@@ -161,7 +158,6 @@ updated: 2026-05-11
 - @sources/cyrpto-12-4-11.md — LLM agent-systems source in the Cemini research corpus
 - @sources/esglens.md — LLM agent-systems source in the Cemini research corpus (O 2026-04-27 — RAG-based ESG report analysis)
 - @sources/gdelt-2-3-29.md — LLM agent-systems source in the Cemini research corpus
-- @sources/gdelt-3-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/gdelt-5-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/greeks-5-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/harness-3-4-5.md — LLM agent-systems source in the Cemini research corpus

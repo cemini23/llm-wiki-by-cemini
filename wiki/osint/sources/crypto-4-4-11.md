@@ -1,36 +1,36 @@
 ---
-title: "CREBench: Evaluating Large Language Models in Crypto- graphic Binary Reverse Engineering"
+title: "CREBench: Evaluating Large Language Models in Cryptographic Binary Reverse Engineering"
 type: source
-tags: [pdf, unread-stub, llm-agents]
-clusters: [llm-agents]
+tags: [pdf, out-of-scope, llm-agents]
+clusters: [out-of-scope]
 related:
-  - concepts/llm-agent-systems.md
+  - concepts/corpus-overflow-out-of-scope.md
 maturity: draft
-read_status: unread-stub
+read_status: skimmed
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-05-16
 ---
 
 ## Relations
 
-- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @concepts/corpus-overflow-out-of-scope.md — hub for out-of-scope corpus stubs
 
 ## Raw Concept
 
-- **Original title**: CREBench: Evaluating Large Language Models in Crypto- graphic Binary Reverse Engineering
-- **Author(s)**: _unknown (stub — not yet read)_
+- **Original title**: CREBench: Evaluating Large Language Models in Cryptographic Binary Reverse Engineering
+- **Author(s)**: Baicheng Chen, Yu Wang, Ziheng Zhou et al. (Shanghai Qi Zhi Institute, Tsinghua University, et al.)
 - **Type**: PDF
 - **Location**: research for cemini/crypto 4 4:11.pdf
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: 51p
-- **Read status**: unread-stub
-- **Primary cluster**: llm-agents
-- **All clusters**: llm-agents
+- **Read status**: skimmed
+- **Primary cluster**: out-of-scope
+- **All clusters**: out-of-scope
 
 ## Narrative
 
-Reverse engineering (RE) is central to software security, particularly for cryptographic programs that handle sensitive data and are highly prone to vulnerabilities. It supports critical tasks such as vulnerability discovery and malware analysis.
+CREBench is a benchmark evaluating LLMs on cryptographic binary reverse engineering — automating tasks like vulnerability discovery and malware analysis on compiled cryptographic programs. While cybersecurity-adjacent (RE / software security) rather than purely off-domain, it is not financial research and has no path to Cemini's trading-stack agenda; reclassified out-of-scope.
 
 ## Snippets
 
-*(None yet — populate on first deep read.)*
+*(None — out-of-scope, skimmed only.)*

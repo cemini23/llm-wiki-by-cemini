@@ -1,36 +1,36 @@
 ---
 title: "Shifting Narratives: A Longitudinal Analysis of Media Trends and Public Attitudes on Homelessness"
 type: source
-tags: [pdf, unread-stub, llm-agents]
-clusters: [llm-agents]
+tags: [pdf, out-of-scope, llm-agents]
+clusters: [out-of-scope]
 related:
-  - concepts/llm-agent-systems.md
+  - concepts/corpus-overflow-out-of-scope.md
 maturity: draft
-read_status: unread-stub
+read_status: skimmed
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-05-16
 ---
 
 ## Relations
 
-- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @concepts/corpus-overflow-out-of-scope.md — hub for out-of-scope corpus stubs
 
 ## Raw Concept
 
 - **Original title**: Shifting Narratives: A Longitudinal Analysis of Media Trends and Public Attitudes on Homelessness
-- **Author(s)**: _unknown (stub — not yet read)_
+- **Author(s)**: Akshay Irudayaraj (Brown), Nathan Ye, Yash Chainani (UC Berkeley)
 - **Type**: PDF
 - **Location**: research for cemini/gdelt 3 3:29.pdf
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: 21p
-- **Read status**: unread-stub
-- **Primary cluster**: llm-agents
-- **All clusters**: llm-agents
+- **Read status**: skimmed
+- **Primary cluster**: out-of-scope
+- **All clusters**: out-of-scope
 
 ## Narrative
 
-Within the field of media framing, homelessness has been a historically under-researched topic. Framing theory states that the media’s method of presenting information plays a pivotal role in controlling public sentiment toward a topic.
+A media-framing study of homelessness coverage in five US states (CA, FL, WA, OR, NY) from 2015–2023. It uses the GDELT 2.0 Global Knowledge Graph for article-level topic/sentiment data and X (Twitter) for public sentiment, then applies Granger-causality tests and vector autoregression to correlate media reporting with public attitudes and state-level legislation. Although it touches GDELT, the paper is a social-policy / media-framing study with no path to Cemini's financial / trading-stack research agenda; reclassified out-of-scope.
 
 ## Snippets
 
-*(None yet — populate on first deep read.)*
+*(None — out-of-scope, skimmed only.)*
