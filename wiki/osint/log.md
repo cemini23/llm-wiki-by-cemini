@@ -5333,3 +5333,21 @@ Batch 5 of the cited-unread-stub campaign. 10 `agent*`-cluster stubs processed; 
 - `corpus-overflow-out-of-scope.md` — 14 → 17 sources; index.md count updated.
 
 Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw PDFs already on librarian — no migration.
+
+## [2026-05-16] deep-read | cited-unread-stub campaign — batch 6 (10 stubs, all in-scope)
+
+Batch 6 of the cited-unread-stub campaign. 10 stubs processed, all in-scope (0 reclassified); backlog 45 → 35.
+
+### Cemini-internal documents (5) — unread-stub → deep-read, clusters unchanged
+- `3-26-f` — internal $10K/2-year budget plan for a solo algo-trading dev (Mac Studio M4 Max; $184/mo data+LLM stack; hub-and-spoke over Tailscale).
+- `3-27-links-1` / `3-28-links-1` / `3-29-research-1` — three distinct "Targeted Extraction Audit" reports (NOT duplicates): 18 memory/security infra tools / 11 skill-framework + dev-tooling repos / ~16 research-paper frameworks respectively; shared per-entry template + IP-sale anti-copyleft filter.
+- `4-3-rl-research` — internal MAPPO retrain-hardening review for the April 2026 retrain window; headline NO-GO on data sparsity (5k/2.3k rows → needs ≥100k transition tuples), mandates cold start.
+
+### Memory / vector-infra papers (5) — unread-stub → deep-read, → llm-agents
+- `4-14-pvg4` — Memelang axial grammar (LLM-emittable IR → deterministic pgvector SQL).
+- `4-14-pvg5` — HNSW → information-theoretic single-bit binarization for scalable vector search (ties to K47 kb-server-retrieval-scaling).
+- `pvg2-4-14` — MemoriesDB temporal-semantic-relational agent-memory store on Postgres+pgvector.
+- `pvg3-4-14` — Exqutor query optimizer for vector-augmented analytical queries (up to 10^4× speedup).
+- `llm-re-4-3` — ByteRover agent-native memory: LLM-curated hierarchical markdown Context Tree (mirrors the Cemini wiki's own design).
+
+No hub wiring needed (all pages kept existing clusters). Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw sources already on librarian.
