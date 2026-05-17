@@ -38,7 +38,7 @@
   "environments": [
     {
       "name": "local",
-      "mcpServers": ["conductor", "kb-server"]
+      "mcpServers": ["conductor", "kb-server", "gbrain"]
     },
     {
       "name": "prod",
@@ -47,7 +47,7 @@
     },
     {
       "name": "librarian",
-      "description": "Cemini librarian (Hetzner librarian) — kb-server + gbrain via SSH stdio, stash auto-tunneled via LaunchAgent on :8088. NOTE: gbrain serve is wired and valid (initialize/tools-list OK, 70 tools) but its PGLite storage engine is currently failing to init on the librarian (WASM Aborted — gbrain issue #223); tool CALLS error until that server-side engine fix lands. Not in the `local` env for that reason — flip it into `local` once gbrain doctor reports the DB connection OK.",
+      "description": "Cemini librarian (Hetzner librarian) — kb-server + gbrain via SSH stdio, stash auto-tunneled via LaunchAgent on :8088. gbrain serve verified working 2026-05-17 (get_stats: 926 pages / 2843 chunks indexed); 70 tools, vector + knowledge-graph search over the wiki.",
       "mcpServers": ["kb-server", "librarian-stash", "gbrain"]
     },
     {
