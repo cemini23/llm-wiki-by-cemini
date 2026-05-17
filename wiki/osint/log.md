@@ -5412,3 +5412,34 @@ AI-ethics / governance cluster (`concepts/ai-ethics-and-governance.md` — insti
 - `corpus-overflow-out-of-scope.md` — 22 → 23; index.md count updated.
 
 Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw PDFs already on librarian. Cited-unread backlog now 15.
+
+## [2026-05-17] deep-read | cited-unread-stub campaign — batch 9 (FINAL, 15 stubs) — CAMPAIGN COMPLETE
+
+Batch 9, the final batch. 15 stubs processed; cited-unread-stub backlog **15 → 0 — campaign complete**.
+
+### In-scope deep-reads (12) — all → llm-agents
+- `agent-2-4-4` — device-native autonomous agents for privacy-preserving negotiation (ZK proofs + Merkle memory).
+- `agent-6-4-4` — SAMEP secure agent memory exchange protocol.
+- `ai-1-4-3` — adaptive budgeted memory-forgetting for long-horizon agents.
+- `ai-4-4-3` — ArchBench: benchmarking generative-AI for software-architecture tasks.
+- `ai-6-4-3` — LDP identity-aware agent-to-agent protocol.
+- `ai-9-4-3` — UIFORMER: DSL-based UI-representation optimization for LLM agents (48–56% token cut).
+- `captum-4-3-2` — Captum explainability for generative LLMs (Meta AI).
+- `forex-2-4-4` — agent:// URI scheme: topology-independent agent identity + discovery.
+- `how-to-deploy-your-first-claude-managed-agent` — Claude Managed Agents deployment guide. [read]
+- `llm-4-3-2` — ShapPFN: real-time Shapley explanations for tabular foundation models.
+- `llm-4-3-6` — runtime burden allocation for structured LLM routing (no universal best mode).
+- `llm-4-3-7` — RefineRL: self-refinement RL for competitive programming.
+
+### Triaged out-of-scope (3) — reclassified to corpus-overflow (now 26)
+- `ai-3-4-3` (AutoMOOSE phase-field simulation), `ai-7-4-3` (MOOSEnger simulation agent), `harness-3-4-5` (EAP writing-assessment pedagogy).
+
+### Hub wiring
+- `rl-marl-research.md` — −6 (agent-2-4-4, agent-6-4-4, ai-3-4-3, ai-6-4-3, forex-2-4-4, llm-4-3-7).
+- `llm-agent-systems.md` — −2 (ai-7-4-3, harness-3-4-5 out-of-scope); +5 (agent-2-4-4, agent-6-4-4, ai-6-4-3, forex-2-4-4, llm-4-3-7 re-homed from rl-marl-only).
+- `corpus-overflow-out-of-scope.md` — 23 → 26; index.md count updated.
+
+### Campaign summary
+The cited-unread-stub deep-read campaign is complete: **98 → 0** genuine unread-stubs across 9 batches (2026-05-16/17). Net: ~64 source pages deep-read/read into real syntheses, ~26 triaged out-of-scope into corpus-overflow, plus false-positive cleanups. 2 concept pages promoted (rl-retrain-pipeline-hardening, marl-trading-architecture) and 3 cemini-prod briefs shipped along the way.
+
+Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling, **0 cited-unread stubs**.

@@ -39,7 +39,6 @@ related:
   - sources/ai-1-4-3.md
   - sources/ai-2-4-3.md
   - sources/ai-4-4-3.md
-  - sources/ai-7-4-3.md
   - sources/ai-7-4-6.md
   - sources/ai-8-4-3.md
   - sources/ai-9-4-3.md
@@ -53,7 +52,6 @@ related:
   - sources/gdelt-2-3-29.md
   - sources/gdelt-5-3-29.md
   - sources/greeks-5-3-29.md
-  - sources/harness-3-4-5.md
   - sources/harness-4-5.md
   - sources/harness2-4-5.md
   - sources/how-to-deploy-your-first-claude-managed-agent.md
@@ -111,6 +109,11 @@ related:
   - concepts/llm-listwise-alignment.md
   - sources/diffmas.md
   - sources/retrieve-during-reasoning.md
+  - sources/agent-2-4-4.md
+  - sources/agent-6-4-4.md
+  - sources/ai-6-4-3.md
+  - sources/forex-2-4-4.md
+  - sources/llm-4-3-7.md
 maturity: validated
 hub: true
 created: 2026-04-26
@@ -143,7 +146,6 @@ updated: 2026-05-11
 - @sources/ai-1-4-3.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26)
 - @sources/ai-2-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/ai-4-4-3.md — LLM agent-systems source in the Cemini research corpus
-- @sources/ai-7-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/ai-7-4-6.md — LLM agent-systems source in the Cemini research corpus
 - @sources/ai-8-4-3.md — LEAPS (LLM-Empowered Adaptive Plugin for Taobao AI Search, Alibaba, 2026): non-invasive broaden-and-refine plugin architecture + three-stage RL training (inverse augmentation → supervised grounding → diversity RL). Low direct trading relevance; transferable RL training + plugin patterns
 - @sources/ai-9-4-3.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26 — was orphan despite cluster: llm-agents)
@@ -163,7 +165,6 @@ updated: 2026-05-11
 - @sources/gdelt-2-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/gdelt-5-3-29.md — LLM agent-systems source in the Cemini research corpus
 - @sources/greeks-5-3-29.md — LLM agent-systems source in the Cemini research corpus
-- @sources/harness-3-4-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/harness-4-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/harness2-4-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/how-to-deploy-your-first-claude-managed-agent.md — LLM agent-systems source in the Cemini research corpus
@@ -195,6 +196,11 @@ updated: 2026-05-11
 - @sources/4-5-links.md — LLM agent-systems source in the Cemini research corpus (K8 deep-read 2026-04-28 — Cemini-internal multi-repo evaluation document; 13 H2 sections, 3 promotions including 2 to this cluster's sub-clusters). The doc's Synthesis section maps the "Agent Boss" managerial paradigm onto the deployed LangGraph orchestrator, which fits this cluster's "agent scaffolding + orchestration" sub-cluster
 - @entities/frameworks/autoagent.md — K8 promotion 2026-04-28 — autonomous harness engineering framework, fits the "agent scaffolding + harness engineering" sub-cluster. Score-Driven Hill Climbing + Single-File Registry-Driven Harness named patterns; meta-agent-mutates-target-agent loop
 - @concepts/context-compression-resume-pattern.md — K8 promotion 2026-04-28 — three-phase context-compression / preserve / resume pattern, fits the "long-running agent state management + memory architectures" sub-cluster. Active prescribed-not-built gap on the Cemini stack (zero LangGraph checkpointer references)
+- @sources/agent-2-4-4.md — K49 deep-read; device-native autonomous agents for privacy-preserving negotiation
+- @sources/agent-6-4-4.md — K49 deep-read; SAMEP secure agent memory exchange protocol
+- @sources/ai-6-4-3.md — K49 deep-read; LDP identity-aware agent-to-agent protocol
+- @sources/forex-2-4-4.md — K49 deep-read; agent:// URI scheme — topology-independent agent identity + discovery
+- @sources/llm-4-3-7.md — K49 deep-read; RefineRL self-refinement RL for competitive programming
 - @concepts/agent-authorization-stack.md — K19+K22+K23+K24 cross-cluster synthesis; the authorization stack is the governance dimension of the llm-agent-systems cluster.
 
 ## Raw Concept

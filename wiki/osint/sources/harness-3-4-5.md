@@ -1,36 +1,36 @@
 ---
-title: "Title: Harness the Generative AI tools for Automated Feedback in EAP Writing Assessment"
+title: "Harness the Generative AI Tools for Automated Feedback in EAP Writing Assessment"
 type: source
-tags: [pdf, unread-stub, llm-agents]
-clusters: [llm-agents]
+tags: [pdf, out-of-scope]
+clusters: [out-of-scope]
 related:
-  - concepts/llm-agent-systems.md
+  - concepts/corpus-overflow-out-of-scope.md
 maturity: draft
-read_status: unread-stub
+read_status: skimmed
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-05-17
 ---
 
 ## Relations
 
-- @concepts/llm-agent-systems.md — cluster hub for LLM agent-systems research in the Cemini corpus
+- @concepts/corpus-overflow-out-of-scope.md — corpus-overflow hub for out-of-scope research stubs
 
 ## Raw Concept
 
-- **Original title**: Title: Harness the Generative AI tools for Automated Feedback in EAP Writing Assessment
-- **Author(s)**: _unknown (stub — not yet read)_
+- **Original title**: Harness the Generative AI tools for Automated Feedback in EAP Writing Assessment
+- **Author(s)**: not individually attributed in the extract; preprint (not peer reviewed), SSRN abstract id 5295741
 - **Type**: PDF
 - **Location**: research for cemini/harness 3 4:5.pdf
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: 77p
-- **Read status**: unread-stub
-- **Primary cluster**: llm-agents
-- **All clusters**: llm-agents
+- **Read status**: skimmed
+- **Primary cluster**: out-of-scope
+- **All clusters**: out-of-scope
 
 ## Narrative
 
-While artificial intelligence tools based on a range of large language models tend to be powerful teaching and learning tools, there is little discussion about generative AI developments that reshape the way teachers and students think about EAP writing assessments. The generative AI tools applied in this research practice are Grammarly AI Plus, XIPU AI, Kim
+This practice article reports two studies (37 first-year students at a Sino-British EMI university) on using generative-AI tools — Grammarly AI Plus, XIPU AI, Kimi Chat, Prepostseo Premium, Magic School AI — for automated feedback in English for Academic Purposes (EAP) writing assessment, examining student/teacher perceptions and draft-to-draft score improvements. The work is university English-writing-assessment pedagogy; it has no application path to Cemini's financial/OSINT trading-stack research agenda. Out-of-scope: skimmed and filed to the corpus-overflow hub.
 
 ## Snippets
 
-*(None yet — populate on first deep read.)*
+*(None — out-of-scope, skimmed only.)*

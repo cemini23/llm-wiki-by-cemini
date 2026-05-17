@@ -27,6 +27,9 @@ related:
   - sources/3-29-19.md
   - sources/3-29-5.md
   - sources/ai-4-6.md
+  - sources/ai-3-4-3.md
+  - sources/ai-7-4-3.md
+  - sources/harness-3-4-5.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-05-17
@@ -57,6 +60,9 @@ updated: 2026-05-17
 - @sources/3-29-19.md — *Sparton: Fast and Memory-Efficient Triton Kernel for Learned Sparse Retrieval* (Nguyen et al.) — GPU Triton-kernel systems optimization; Cemini runs no GPU inference of its own
 - @sources/3-29-5.md — *COHORT: Hybrid RL for Collaborative Large DNN Inference on Multi-Robot Systems* (Anwar et al., UMBC) — multi-robot edge DNN-inference orchestration; no financial/OSINT transfer path
 - @sources/ai-4-6.md — *Generative AI* (anonymous introductory textbook) — generic genAI primer (GANs/VAEs/transformers) across images/text/music/code; an educational reference, not research, with no quant-finance or trading-stack content
+- @sources/ai-3-4-3.md — *AutoMOOSE: An Agentic AI for Autonomous Phase-Field Simulation* (Manna et al., UIC & Argonne National Laboratory) — materials-science finite-element simulation tooling; no trading-stack application path
+- @sources/ai-7-4-3.md — *MOOSEnger — a Domain-Specific AI Agent for the MOOSE Ecosystem* (Li et al., Idaho National Laboratory) — materials-science multiphysics-simulation agent; no trading-stack application path
+- @sources/harness-3-4-5.md — *Harness the Generative AI tools for Automated Feedback in EAP Writing Assessment* (preprint, SSRN) — university English-writing-assessment pedagogy; no financial/OSINT transfer path
 
 ## Raw Concept
 
@@ -80,7 +86,7 @@ If criterion (3) shifts (roadmap pivots, new thread opens), the source graduates
 
 Deleting the stubs would lose the inventory record of which PDFs were already triaged-and-rejected, leading to duplicate effort on the next sweep. Keeping them under this hub is a librarian's "we looked, we passed" marker.
 
-### Current contents (23 sources, 2026-05-17)
+### Current contents (26 sources, 2026-05-17)
 
 | Stub | Topic | Why out-of-scope |
 |---|---|---|
@@ -107,6 +113,9 @@ Deleting the stubs would lose the inventory record of which PDFs were already tr
 | @sources/3-29-19.md | Sparton: Triton GPU kernel for the LM-head of learned sparse retrieval | GPU systems / kernel optimization; Cemini runs no GPU inference of its own |
 | @sources/3-29-5.md | COHORT: hybrid RL for collaborative DNN inference on multi-robot systems | Multi-robot edge DNN-inference orchestration; no financial/OSINT transfer path |
 | @sources/ai-4-6.md | Generative AI — introductory textbook (GANs, VAEs, transformers, RL) | Generic genAI primer / educational reference; no quant-finance or trading-stack content, not research material |
+| @sources/ai-3-4-3.md | AutoMOOSE: agentic AI orchestrating phase-field materials simulation in MOOSE | Materials-science finite-element simulation tooling; no trading-stack application path |
+| @sources/ai-7-4-3.md | MOOSEnger: domain-specific AI agent for the MOOSE multiphysics ecosystem | Materials-science simulation agent (NL→MOOSE input files); no trading-stack application path |
+| @sources/harness-3-4-5.md | GenAI tools for automated feedback in EAP writing assessment | University English-writing-assessment pedagogy; no financial/OSINT trading-stack transfer path |
 
 ## Snippets
 
