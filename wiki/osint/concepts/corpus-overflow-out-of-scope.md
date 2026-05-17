@@ -18,6 +18,9 @@ related:
   - sources/crypto-4-11.md
   - sources/crypto-4-4-11.md
   - sources/crypto-5-4-11.md
+  - sources/agent3.md
+  - sources/agents5.md
+  - sources/agents8.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-05-16
@@ -39,6 +42,9 @@ updated: 2026-05-16
 - @sources/crypto-4-11.md — *MARVEL: Multimodal Adaptive Reasoning-intensiVe Expand-rerank and retrievaL* (Kasem et al.) — vision-language multimodal retrieval benchmark; outside Cemini's text-only retrieval path
 - @sources/crypto-4-4-11.md — *CREBench: Evaluating Large Language Models in Cryptographic Binary Reverse Engineering* (Chen, Wang, Zhou et al.) — cybersecurity-adjacent binary RE benchmark; not financial research
 - @sources/crypto-5-4-11.md — *The Quantum-Cryptographic Co-evolution* (Kundu & Kompella, Cisco Research) — post-quantum-cryptography migration framework; infrastructure policy, not finance
+- @sources/agent3.md — *Agent Factories for High Level Synthesis* (Bhandwaldar et al., IBM) — coding agents optimizing hardware designs (HLS); hardware-design domain with no software-only trading-stack transfer
+- @sources/agents5.md — *Large Language Models as Optimization Controllers: Adaptive Continuation for SIMP Topology Optimization* (Yang et al., Santa Clara University) — LLM controller for structural/mechanical topology optimization; no trading-stack application path
+- @sources/agents8.md — *Sketch2Simulation: Automating Flowsheet Generation via Multi-Agent LLMs* (Bahamdan et al., Imperial College London) — chemical process engineering flowsheet generation; no financial/OSINT transfer path
 
 ## Raw Concept
 
@@ -62,7 +68,7 @@ If criterion (3) shifts (roadmap pivots, new thread opens), the source graduates
 
 Deleting the stubs would lose the inventory record of which PDFs were already triaged-and-rejected, leading to duplicate effort on the next sweep. Keeping them under this hub is a librarian's "we looked, we passed" marker.
 
-### Current contents (14 sources, 2026-05-16)
+### Current contents (17 sources, 2026-05-16)
 
 | Stub | Topic | Why out-of-scope |
 |---|---|---|
@@ -80,6 +86,9 @@ Deleting the stubs would lose the inventory record of which PDFs were already tr
 | @sources/crypto-4-11.md | MARVEL multimodal vision-language retrieval pipeline + benchmark | Multimodal (image+text) retrieval; Cemini's retrieval path is text-only, and the work is not finance |
 | @sources/crypto-4-4-11.md | CREBench: LLM benchmark for cryptographic binary reverse engineering | Cybersecurity-adjacent (software RE / vuln discovery); not financial research, no trading-stack transfer |
 | @sources/crypto-5-4-11.md | Quantum-Cryptographic Co-evolution coordinate framework (Cisco Research) | Post-quantum-cryptography migration strategy / infrastructure policy; not finance |
+| @sources/agent3.md | Agent factories: general-purpose coding agents for HLS hardware optimization (IBM) | Hardware-design / High-Level-Synthesis domain; Cemini is a software-only stack with no HLS transfer |
+| @sources/agents5.md | LLM as online adaptive controller for SIMP topology optimization | Structural/mechanical engineering topology optimization; no trading-stack application path |
+| @sources/agents8.md | Sketch2Simulation: multi-agent LLMs converting diagrams into Aspen HYSYS flowsheets | Chemical process systems engineering; no financial/OSINT trading-stack transfer |
 
 ## Snippets
 

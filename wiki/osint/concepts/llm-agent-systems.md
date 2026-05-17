@@ -28,13 +28,15 @@ related:
   - sources/3-29-research-2.md
   - sources/4-14-pvg4.md
   - sources/4-14-pvg5.md
-  - sources/agent3.md
+  - sources/agent1-4-4.md
   - sources/agentic-harness-engineering.md
   - sources/agents-7.md
   - sources/incompressible-knowledge-probes-li-2026.md
   - sources/agents.md
+  - sources/agents2.md
   - sources/agents4.md
-  - sources/agents5.md
+  - sources/agents6.md
+  - sources/agents9.md
   - sources/ai-1-4-3.md
   - sources/ai-2-4-3.md
   - sources/ai-4-4-3.md
@@ -132,11 +134,13 @@ updated: 2026-05-11
 - @sources/3-29-research-2.md — LLM agent-systems source in the Cemini research corpus
 - @sources/4-14-pvg4.md — LLM agent-systems source in the Cemini research corpus
 - @sources/4-14-pvg5.md — LLM agent-systems source in the Cemini research corpus
-- @sources/agent3.md — LLM agent-systems source in the Cemini research corpus
+- @sources/agent1-4-4.md — K49 deep-read; Sovereign-OS charter-governed runtime + verifiable fiscal discipline for autonomous economic agents
 - @sources/agents-7.md — LLM agent-systems source in the Cemini research corpus
 - @sources/agents.md — LLM agent-systems source in the Cemini research corpus
+- @sources/agents2.md — K49 deep-read; Natural-Language Agent Harnesses — harness control logic as editable NL artifacts
 - @sources/agents4.md — LLM agent-systems source in the Cemini research corpus
-- @sources/agents5.md — LLM agent-systems source in the Cemini research corpus
+- @sources/agents6.md — K49 deep-read; belief-driven multi-agent collaboration via approximate Perfect Bayesian Equilibrium
+- @sources/agents9.md — K49 deep-read; MARCH multi-agent reinforced self-check for LLM hallucination
 - @sources/ai-1-4-3.md — LLM agent-systems source in the Cemini research corpus (D′ 2026-04-26)
 - @sources/ai-2-4-3.md — LLM agent-systems source in the Cemini research corpus
 - @sources/ai-4-4-3.md — LLM agent-systems source in the Cemini research corpus

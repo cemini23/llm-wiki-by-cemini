@@ -5310,3 +5310,26 @@ Batch 4 of the cited-unread-stub campaign. 10 stubs processed + 3 stale-classifi
 - `quant-finance.md` — +1 (gdelt-4-3-29). `corpus-overflow-out-of-scope.md` — 10 → 14 sources; index.md count updated.
 
 Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw PDFs already on librarian — no migration.
+
+## [2026-05-16] deep-read | cited-unread-stub campaign — batch 5 (10 agent-cluster stubs)
+
+Batch 5 of the cited-unread-stub campaign. 10 `agent*`-cluster stubs processed; cited-unread-stub backlog 55 → 45.
+
+### In-scope deep-reads (7) — unread-stub → deep-read, all → llm-agents
+- `agents` — Evaluating AGENTS.md: repo-level context files mostly don't help coding agents (LLM-generated ones slightly hurt + raise cost).
+- `agents-7` — SlopCodeBench: coding-agent code quality degrades monotonically over long-horizon iterative tasks.
+- `agents2` — Natural-Language Agent Harnesses: harness control logic as editable NL artifacts.
+- `agents4` — SEVerA: verified synthesis of self-evolving agents (Formally Guarded Generative Models, provably zero constraint violations).
+- `agents6` — BEACOF: belief-driven multi-agent collaboration via approximate Perfect Bayesian Equilibrium.
+- `agents9` — MARCH: multi-agent reinforced self-check for LLM hallucination (Solver/Proposer/Checker + PPO).
+- `agent1-4-4` — Sovereign-OS: charter-governed runtime + verifiable fiscal discipline for autonomous economic agents.
+
+### Triaged out-of-scope (3) — unread-stub → skimmed, reclassified to corpus-overflow
+- `agent3` — agent-factory for HLS hardware optimization. `agents5` — LLM controller for SIMP topology optimization. `agents8` — Sketch2Simulation chemical-flowsheet generation.
+
+### Hub wiring
+- `rl-marl-research.md` — −5 (agent1-4-4, agents2, agents6, agents8, agents9 — all moved off dual-cluster).
+- `llm-agent-systems.md` — −2 (agent3, agents5 reclassified out); +4 (agent1-4-4, agents2, agents6, agents9 — were rl-marl-only, now homed here).
+- `corpus-overflow-out-of-scope.md` — 14 → 17 sources; index.md count updated.
+
+Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw PDFs already on librarian — no migration.

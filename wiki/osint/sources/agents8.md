@@ -1,36 +1,36 @@
 ---
-title: "SKETCH2SIMULATION: AUTOMATINGFLOWSHEETGENERATION VIAMULTIAGENTLARGELANGUAGEMODELS Abdullah Bahamdan"
+title: "Sketch2Simulation: Automating Flowsheet Generation via Multi-Agent Large Language Models"
 type: source
-tags: [pdf, unread-stub, rl-marl, llm-agents]
-clusters: [rl-marl, llm-agents]
+tags: [pdf, out-of-scope]
+clusters: [out-of-scope]
 related:
-  - concepts/rl-marl-research.md
+  - concepts/corpus-overflow-out-of-scope.md
 maturity: draft
-read_status: unread-stub
+read_status: skimmed
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-05-16
 ---
 
 ## Relations
 
-- @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
+- @concepts/corpus-overflow-out-of-scope.md — out-of-scope corpus-overflow hub
 
 ## Raw Concept
 
-- **Original title**: SKETCH2SIMULATION: AUTOMATINGFLOWSHEETGENERATION VIAMULTIAGENTLARGELANGUAGEMODELS Abdullah Bahamdan
-- **Author(s)**: _unknown (stub — not yet read)_
+- **Original title**: Sketch2Simulation: Automating Flowsheet Generation via Multi-Agent Large Language Models
+- **Author(s)**: Abdullah Bahamdan, Emma Pajak, Antonio del Rio Chanona (Imperial College London); John D. Hedengren (Brigham Young University)
 - **Type**: PDF
 - **Location**: research for cemini/agents8.pdf
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: 27p
-- **Read status**: unread-stub
-- **Primary cluster**: rl-marl
-- **All clusters**: rl-marl, llm-agents
+- **Read status**: skimmed
+- **Primary cluster**: out-of-scope
+- **All clusters**: out-of-scope
 
 ## Narrative
 
-Converting process sketches into executable simulation models remains a major bottleneck in process systems engineering, requiring substantial manual effort, simulator-specific expertise, and iterative refinement. Although recent advances in generative AI have progressed both the automated inter- pretation of engineering diagrams and LLM-assisted flowsheet g
+Presents an end-to-end multi-agent LLM system that converts process engineering diagrams directly into executable Aspen HYSYS flowsheets, decomposing the task across three layers — diagram parsing/interpretation, simulation model synthesis, and multi-level validation — with specialized agents for visual interpretation, graph-based intermediate representation, COM-interface code generation, and structural verification. Evaluated on four chemical engineering case studies of increasing complexity. Out-of-scope for Cemini: this is chemical process systems engineering, with no transfer path to financial/OSINT trading-stack research.
 
 ## Snippets
 
-*(None yet — populate on first deep read.)*
+*(None — out-of-scope, skimmed only.)*
