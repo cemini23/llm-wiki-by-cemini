@@ -5387,3 +5387,28 @@ Cross-batch synthesis from the 2026-05-16 cited-unread campaign (batches 2–7).
 `concepts/kb-server-retrieval-scaling.md` updated with batch-6 vector-infra deep-reads: pvg5 (HNSW→binarization adds a third option — binarized exhaustive scan) and llm-re/ByteRover (LLM-curated markdown beats vector/graph-DB memory — validates the no-vector-DB posture). K47 NO-GO stands; option set on growth is sqlite-vss → binarized exhaustive scan.
 
 Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling.
+
+## [2026-05-17] deep-read | cited-unread-stub campaign — batch 8 (10 stubs, AI-ethics/governance)
+
+Batch 8 of the cited-unread-stub campaign. 10 stubs processed; cited-unread-stub backlog 25 → 15.
+
+### In-scope (9) — unread-stub → deep-read / read; clusters unchanged
+AI-ethics / governance cluster (`concepts/ai-ethics-and-governance.md` — institutional-acquirer governance backdrop):
+- `ai-2-4-6` — "Backfiring AI?" game-theoretic model: AI deployment can backfire in competitive PFP workplaces.
+- `ai-3-4-6` — CFTE AI Literacy Whitepaper (5-component competency framework; EU AI Act Art.4). [read]
+- `ai-4-4-6` — Ligot AI-Governance 4E Framework (Education/Engineering/Enforcement/Ethics) + 14-item risk catalog. [read]
+- `ai-5-4-6` — "Beyond the EU AI Act": responsible-AI deepening tracks internal AI maturity, not regulation alone (~380 EU firms).
+- `ai-6-4-6` — Sylvia Lu "Regulating AI Harms": legal typology of 4 AI harms + 2 aggravating factors.
+- `ai-8-4-6` — "AI Behavioral Science" (21-author CASBS position paper) — assessing AI by observed behavior.
+- `ai-9-4-6` — "AI Agency": economics of AI agents as digital employees; monitored multi-agent designs raise accuracy 41–49%. → llm-agents.
+- `skills-2-4-5` — UK DSIT "AI Skills for Life and Work" rapid evidence review. [read]
+- `skills-1-4-5` — "Managerial AI Skill Stacking" conference talk. [read] → llm-agents.
+
+### Triaged out-of-scope (1) — reclassified to corpus-overflow (now 23)
+- `ai-4-6` — generic "Generative AI" introductory textbook (was rl-marl).
+
+### Hub wiring
+- `rl-marl-research.md` — −1 (ai-4-6 reclassified out). All 9 in-scope kept existing clusters (ai-ethics / llm-agents) — no other hub churn.
+- `corpus-overflow-out-of-scope.md` — 22 → 23; index.md count updated.
+
+Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw PDFs already on librarian. Cited-unread backlog now 15.

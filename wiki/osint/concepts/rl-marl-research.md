@@ -52,7 +52,6 @@ related:
   - sources/agent-7-4-4.md
   - sources/agent-8-4-4.md
   - sources/ai-3-4-3.md
-  - sources/ai-4-6.md
   - sources/ai-6-4-3.md
   - sources/ai-architect-s-cemini-suite-research.md
   - sources/autonomous-ai-agents-for-option-hedging.md
@@ -144,7 +143,6 @@ updated: 2026-05-15
 - @sources/agent-7-4-4.md — RL/MARL source in the Cemini research corpus
 - @sources/agent-8-4-4.md — RL/MARL source in the Cemini research corpus
 - @sources/ai-3-4-3.md — RL/MARL source in the Cemini research corpus
-- @sources/ai-4-6.md — RL/MARL source in the Cemini research corpus
 - @sources/ai-6-4-3.md — RL/MARL source in the Cemini research corpus
 - @sources/ai-architect-s-cemini-suite-research.md — RL/MARL source in the Cemini research corpus
 - @sources/autonomous-ai-agents-for-option-hedging.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — shortfall-aware RL for option hedging)

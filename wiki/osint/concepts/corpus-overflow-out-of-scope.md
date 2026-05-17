@@ -26,9 +26,10 @@ related:
   - sources/3-29-14.md
   - sources/3-29-19.md
   - sources/3-29-5.md
+  - sources/ai-4-6.md
 maturity: draft
 created: 2026-04-26
-updated: 2026-05-16
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -55,6 +56,7 @@ updated: 2026-05-16
 - @sources/3-29-14.md — *Modernising RL-Based Navigation for Embodied Semantic Scene Graph Generation* (Küble et al., University of Augsburg) — embodied-robotics navigation / computer vision; no trading-stack transfer
 - @sources/3-29-19.md — *Sparton: Fast and Memory-Efficient Triton Kernel for Learned Sparse Retrieval* (Nguyen et al.) — GPU Triton-kernel systems optimization; Cemini runs no GPU inference of its own
 - @sources/3-29-5.md — *COHORT: Hybrid RL for Collaborative Large DNN Inference on Multi-Robot Systems* (Anwar et al., UMBC) — multi-robot edge DNN-inference orchestration; no financial/OSINT transfer path
+- @sources/ai-4-6.md — *Generative AI* (anonymous introductory textbook) — generic genAI primer (GANs/VAEs/transformers) across images/text/music/code; an educational reference, not research, with no quant-finance or trading-stack content
 
 ## Raw Concept
 
@@ -78,7 +80,7 @@ If criterion (3) shifts (roadmap pivots, new thread opens), the source graduates
 
 Deleting the stubs would lose the inventory record of which PDFs were already triaged-and-rejected, leading to duplicate effort on the next sweep. Keeping them under this hub is a librarian's "we looked, we passed" marker.
 
-### Current contents (22 sources, 2026-05-16)
+### Current contents (23 sources, 2026-05-17)
 
 | Stub | Topic | Why out-of-scope |
 |---|---|---|
@@ -104,6 +106,7 @@ Deleting the stubs would lose the inventory record of which PDFs were already tr
 | @sources/3-29-14.md | RL-based navigation for embodied semantic scene graph generation | Embodied-robotics navigation / computer vision; no trading-stack transfer |
 | @sources/3-29-19.md | Sparton: Triton GPU kernel for the LM-head of learned sparse retrieval | GPU systems / kernel optimization; Cemini runs no GPU inference of its own |
 | @sources/3-29-5.md | COHORT: hybrid RL for collaborative DNN inference on multi-robot systems | Multi-robot edge DNN-inference orchestration; no financial/OSINT transfer path |
+| @sources/ai-4-6.md | Generative AI — introductory textbook (GANs, VAEs, transformers, RL) | Generic genAI primer / educational reference; no quant-finance or trading-stack content, not research material |
 
 ## Snippets
 
