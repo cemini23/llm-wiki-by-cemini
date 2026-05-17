@@ -20,7 +20,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -64,7 +64,7 @@ updated: 2026-04-30
 
 Kronos is the **first open-source foundation model for financial K-line / candlestick data**, pre-trained on 45+ global exchanges. Architecturally, it's a **two-stage decoder-only Transformer**:
 
-1. **KronosTokenizer**: continuous OHLCV (Open / High / Low / Close / Volume) data → **hierarchical discrete tokens**. The docx evaluation cites this as Binary Spherical Quantization (continuous-to-discrete mapping). Tokenizer architecture confirmed by repo; specific BSQ claim [NEEDS VERIFICATION 2026-04-30] from the underlying paper text (arXiv:2508.02739).
+1. **KronosTokenizer**: continuous OHLCV (Open / High / Low / Close / Volume) data → **hierarchical discrete tokens**. The docx evaluation cites this as Binary Spherical Quantization (continuous-to-discrete mapping). Tokenizer architecture confirmed by repo; specific BSQ claim [CONFIRMED 2026-05-17] — verified against arXiv:2508.02739 §3.1: "we adapt Binary Spherical Quantization (BSQ) (Zhao, Xiong, and Krähenbühl 2024), a variant of Look-up Free Quantization (LFQ)" for the K-line Tokenizer; the tokenizer is a Transformer-based autoencoder with an explicit BSQ layer (paper Figure 3), factorizing the k-bit code into n=2 coarse/fine subtokens.
 2. **KronosPredictor**: autoregressive Transformer trained on the discrete-token sequence. Predicts next tokens (next price-volume action) given context.
 
 The model family scales:
@@ -115,7 +115,7 @@ This is a textbook **status-upgrade-on-deeper-evaluation pattern**, mirroring (i
 
 2. **pyqlib transitive license audit** [NEEDS VERIFICATION 2026-04-30] — Kronos finetune pipeline depends on pyqlib. Audit transitive deps to ensure no copyleft contaminates the IP-sale readiness profile. Use `pip-licenses` or equivalent.
 
-3. **Binary Spherical Quantization claim** [NEEDS VERIFICATION 2026-04-30] — the docx evaluation cites BSQ specifically. Repo README confirms hierarchical-discrete-token tokenizer architecture but doesn't explicitly name BSQ. Confirm via paper deep-read (arXiv:2508.02739).
+3. **Binary Spherical Quantization claim** [CONFIRMED 2026-05-17] — the docx evaluation cites BSQ specifically. Verified against arXiv:2508.02739 §3.1 + Figure 3: the K-line Tokenizer is a Transformer-based autoencoder using a Binary Spherical Quantization (BSQ) layer — a variant of Look-up Free Quantization — projecting continuous OHLCVA latents onto learnable hyperplanes into a k-bit binary code, factorized into n=2 coarse/fine subtokens. The docx claim is accurate.
 
 4. **Authors' production-readiness disclaimer is load-bearing** — "simplified example, not a production-ready quantitative trading system" is the authors' own caveat. Steal-from is the right verdict; Adopt-and-deploy is not.
 

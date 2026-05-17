@@ -22,7 +22,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -113,7 +113,7 @@ Per the Wave 2/3/4 protocol, the 2 operationally-relevant URLs were verified via
 > High-performance multi-tenant vector + full-text search engine over object storage (S3, MinIO, R2, Tigris). Foyer hybrid cache for tiered RAM-NVMe-S3 paging. **Cemini production stack Partial-fit**: could replace pgvector in PostgreSQL but requires standing up MinIO/R2 stack. **Wiki/Librarian No-fit**: 4 GB RAM + 80 GB NVMe envelope of CPX21 cannot host the prerequisite S3-compat object store. **Workflow Yes-fit**: architectural blueprint for tiered Rust caching + LanceDB columnar format. **Reference-only**: deploy nothing; study the foyer cache pattern. Open: Cargo.lock audit for transitive AGPL/SSPL via cargo-deny [NEEDS VERIFICATION 2026-04-30].
 
 **URL 4: zerobootdev/zeroboot** — Rust, sub-millisecond VM sandboxes
-> Firecracker-snapshot-based mmap'd VM engine for untrusted AI agent code. **Fatal blocker for Cemini**: zero internal networking — agents cannot make API calls. **Wiki/Librarian No-fit**: no dynamic execution surface on CPX21. **Workflow Yes-fit**: educational Rust source on memory snapshot mapping + CSPRNG fork-state hazard pattern. **Reference-only**. Open: managed API service (early access) plans for secure egress networking [NEEDS VERIFICATION 2026-04-30] — would dramatically shift applicability if implemented.
+> Firecracker-snapshot-based mmap'd VM engine for untrusted AI agent code. **Fatal blocker for Cemini**: zero internal networking — agents cannot make API calls. **Wiki/Librarian No-fit**: no dynamic execution surface on CPX21. **Workflow Yes-fit**: educational Rust source on memory snapshot mapping + CSPRNG fork-state hazard pattern. **Reference-only**. Managed API service [RETRACTED 2026-05-17 — the "egress networking on the roadmap" framing was wrong: the managed API (`api.zeroboot.dev`, early-access signup at tally.so/r/aQGkpb) is live, but per zeroboot's own README + docs/ARCHITECTURE.md the no-networking constraint is architectural — forks communicate via 16550 UART serial I/O only, with no outbound network access in either self-hosted or managed mode. The managed service removes infra-management burden, not the networking limitation. Cemini's "agents cannot make API calls" blocker stands.]
 
 ### Per-URL summaries — Reject (2)
 
@@ -139,7 +139,7 @@ Per the Wave 2/3/4 protocol, the 2 operationally-relevant URLs were verified via
 - **URL 1 firnflow RAM footprint under load** [NEEDS VERIFICATION 2026-04-30] — measure resident RAM with simulated 130-FastMCP-tool concurrent load.
 - **URL 3 Kronos-small CPU latency** [NEEDS VERIFICATION 2026-04-30] — P99 inference latency of 24.7M-param model on standard AMD EPYC vCPU with PyTorch CPU optimizations. Determines if it can meet trading execution speed limits.
 - **URL 3 Kronos pyqlib transitive license audit** [NEEDS VERIFICATION 2026-04-30] — same kind of pre-adoption gate as firnflow Cargo.lock.
-- **URL 4 zeroboot egress networking roadmap** [NEEDS VERIFICATION 2026-04-30] — track managed API service for secure-egress-networking feature.
+- **URL 4 zeroboot egress networking roadmap** [RETRACTED 2026-05-17] — there is no egress-networking roadmap item. Zeroboot's no-networking is an architectural property of the CoW-fork model (serial-I/O-only sandboxes); the managed API at `api.zeroboot.dev` does not change it. Verified via zeroboot README + docs/ARCHITECTURE.md (Exa 2026-05-17).
 - **URL 5 stash go.mod transitive license sweep** [NEEDS VERIFICATION 2026-04-30] — Apache-2.0 root + dozens of transitive deps (jackc/pgx, mark3labs/mcp-go) need full sweep before adoption.
 - **URL 5 stash token-cost ratio** [NEEDS VERIFICATION 2026-04-30] — measure tokens-per-1000-input-tokens ratio for the 8-stage consolidation pipeline. Required to forecast operational cost.
 

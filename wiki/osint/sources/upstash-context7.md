@@ -18,7 +18,7 @@ related:
 maturity: validated
 read_status: read-skim
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -96,7 +96,7 @@ This must be done BEFORE the first `ctx7` invocation. Otherwise proprietary rese
 
 1. **Vendor service dependency** (already covered) — single point of failure on Upstash uptime
 2. **Telemetry default-on** — must be explicitly disabled; risk of accidental query-leakage in the window between install and zshrc-source
-3. **Data egress policy** [NEEDS VERIFICATION 2026-04-30] — what prompt context is transmitted to Upstash servers when a documentation query is triggered? The Gemini brief flagged this as an open question. Pre-adoption: read Upstash's data handling policy for context7 specifically.
+3. **Data egress policy** [CONFIRMED 2026-05-17] — per Context7's published data-privacy docs (context7.com/docs/security/data-privacy), only the MCP-client-formulated `query` string + `libraryName`/`libraryId` + API key + client metadata + transport type are sent to the Context7 API. The full prompt, source code, and conversation history are NOT transmitted; tool descriptions instruct the client to strip secrets/credentials/proprietary code from the query. Formulated queries are stored anonymously for retrieval benchmarking and passed to OpenAI/Gemini/Anthropic for server-side reranking. Egress is limited to the search query — acceptable for Cemini-laptop dev-doc lookups; the residual concern is that a query string could itself leak a research direction (mitigated by forking the MCP server to edit the query-formulation tool descriptions if needed).
 4. **API-key-gated rate limits** — foundational queries are unauthenticated, but advanced/high-volume use requires registration + API key. Cemini-laptop usage should fit in the free tier; verify before relying on it.
 5. **Library coverage** — context7's index may not cover every library Cemini uses. For obscure or proprietary libraries (e.g. internal Cemini SDKs), context7 provides no value. Best for popular open-source libraries (Polars, LangGraph, FastAPI, SQLAlchemy, etc.).
 

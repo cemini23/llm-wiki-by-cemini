@@ -13,7 +13,7 @@ related:
 maturity: validated
 read_status: read-skim
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -72,7 +72,7 @@ The do-not-deploy parts:
 
 1. **TradingView account-termination risk** — the brief notes: "Deploying this tool risks immediate account bans; it should only be operated using a secondary, non-mission-critical account." Even Workflow use against the user's primary TradingView account carries termination risk.
 2. **CDP brittleness** — UI automation against an Electron app's DOM is fragile. "Any minor update pushed to TradingView's Electron DOM structure will instantly break the 78 specialized MCP tools, requiring constant maintenance."
-3. **License clarity** [NEEDS VERIFICATION 2026-04-30] — re-check the LICENSE file periodically. If the trademark/disclaimer text is removed in a future commit, the GitHub aggregator may revert to "MIT", but the underlying TOS-conflict still applies.
+3. **License clarity** [CONFIRMED 2026-05-17] — current LICENSE file (verified via GitHub) is verbatim MIT plus an "ADDITIONAL NOTICE" + "TRADEMARK NOTICE": the MIT grant applies to the project's source code only and explicitly disclaims any rights to TradingView Inc. / Anthropic PBC trademarks, software, data, or IP. The added non-standard text is why GitHub reports the repo license as `NOASSERTION`. The code itself remains cleanly MIT-licensed; the Family-C TOS-conflict comes from TradingView's TOS, not from this repo's license. Re-check periodically remains advisable but the current state is documented.
 4. **Headless deployment impossibility** — TradingView Desktop is a graphical Electron app requiring display servers (X11/Wayland or macOS WindowServer). Cannot be deployed on cemini-prod (headless Hetzner host). **Confirms Workflow scope only**, even before TOS analysis.
 5. **Active period was brief** — 6 days of pushes (2026-03-29 to 2026-04-04). Project may have stabilized OR may have been abandoned. Pre-Workflow-adoption check: verify the latest commit still works against current TradingView Desktop.
 

@@ -14,7 +14,7 @@ related:
 maturity: validated
 read_status: deep-read
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-05-17
 clusters: [llm-agents, ingest-tooling]
 ---
 
@@ -23,7 +23,7 @@ clusters: [llm-agents, ingest-tooling]
 - @sources/gemini-dr-link-eval-2026-04-28.md — parent canonical Gemini DR source; this URL is the second of two Adopt-for-Cemini recommendations (other is `sources/vibe-trading-hkuds.md`)
 - @concepts/wiki-tooling-evaluation.md — Wave 2 evaluation parent; langextract is the highest-impact Cemini-stack ingestion-layer adoption
 - @concepts/ip-sale-readiness.md — Apache-2.0 license clears IP-sale checks; verified via Exa `crawling_exa` 2026-04-28 (36073 ★, 2464 forks)
-- @entities/infrastructure/deepseek-api.md — Cemini's current LLM brain; langextract supports OpenAI-compatible APIs natively, so DeepSeek slots in via `OPENAI_BASE_URL` swap. Strict-schema JSON enforcement compatibility [NEEDS VERIFICATION 2026-04-29]
+- @entities/infrastructure/deepseek-api.md — Cemini's current LLM brain; langextract supports OpenAI-compatible APIs natively, so DeepSeek slots in via `OPENAI_BASE_URL` swap. Strict-schema JSON enforcement compatibility [TENTATIVE 2026-05-17] — DeepSeek works as a backend but NOT via strict-schema constraints (see Narrative)
 - @entities/infrastructure/ollama.md — langextract supports local Ollama models as a backend; relevant if Cemini ever pivots to local inference (no current plans, per `polygon_not_authorized_doctrine` memory the API path is intended)
 - @entities/frameworks/fastapi.md — Cemini's existing backend; langextract slots into the ingest layer alongside (not replacing) FastAPI routes
 - @entities/frameworks/pydantic-v2.md — langextract uses Pydantic-style schemas for output structure; integrates cleanly with Cemini's existing Pydantic v2 typing
@@ -59,7 +59,15 @@ The Gemini DR evaluation cuts to the bone: replace brittle regex-based parsing l
 
 ### Required verification before ship
 
-**[NEEDS VERIFICATION 2026-04-29] — DeepSeek + langextract structured-output compatibility**
+**[TENTATIVE 2026-05-17] — DeepSeek + langextract structured-output compatibility**
+
+Exa-verified 2026-05-17 against langextract docs (langextract.work) + GitHub issue #427 + the DeepWiki schema page. Findings:
+
+1. **DeepSeek does work as a backend** — langextract supports any OpenAI-compatible API; DeepSeek slots in via `model_id="deepseek-chat"` + `base_url`. Confirmed working in the official docs and FAQ ("works seamlessly with DeepSeek V3/R1").
+2. **But NOT via strict-schema enforcement** — langextract's `use_schema_constraints` schema system is implemented only for Gemini (and partially OpenAI). For DeepSeek/OpenAI-compatible providers the documented configuration is `use_schema_constraints=False` + `fence_output=True` — i.e. langextract falls back to **prompt-engineered fenced JSON, not API-level structured-output enforcement**. The Gemini DR evaluation's concern is therefore *confirmed as real*: DeepSeek will NOT honor langextract's strict-schema parameters because langextract does not send schema constraints to non-Gemini providers.
+3. **Known brittleness** — langextract issue #427 documents that the DeepSeek + OpenAILanguageModel path occasionally emits malformed attribute keys (e.g. trailing-colon `emotion_attributes:`) causing a resolver `ValueError` mid-job. Long-running extraction jobs on DeepSeek are brittle without defensive handling.
+
+Verdict TENTATIVE (not CONFIRMED): the integration *runs*, but the original strict-schema risk is genuine and the pre-ship test protocol below remains mandatory — additionally the protocol must run with `use_schema_constraints=False, fence_output=True`, and should test a long multi-chunk job to surface the #427 key-drift failure.
 
 The library officially lists Gemini, OpenAI, and Ollama as integrations. DeepSeek's chat-completions API is OpenAI-compatible, so the integration *should* work via `OPENAI_BASE_URL=https://api.deepseek.com`. However, the Gemini DR evaluation flagged a specific failure mode:
 

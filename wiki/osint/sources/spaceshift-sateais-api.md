@@ -12,7 +12,7 @@ related:
 maturity: validated
 read_status: read-skim
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -83,7 +83,7 @@ This experiment establishes the **signal quality + integration cost** before any
 
 1. **Asynchronous processing latency** [NEEDS VERIFICATION 2026-04-30] — API documentation doesn't specify request → result latency. Per Gemini brief: "this data stream cannot be relied upon for sub-minute, high-frequency trading execution, but must rather be utilized to inform macro-level, directional positional trading strategies." Consistent with Cemini's macro-event-analysis-not-HFT positioning anyway.
 2. **β-stage pricing lock-in risk** — post-β commercial pricing is unknown. Engineering investment in `services/ingest/sateais_client.py` may become sunk costs if the future paid tiers are economically prohibitive. **Mitigation**: build the integration to be vendor-pluggable so a swap to a competing satellite-API vendor (Sentinel Hub, Capella Space, ICEYE, etc.) is feasible.
-3. **Sentinel-1 revisit rate** [NEEDS VERIFICATION 2026-04-30] — Sentinel-1 has a ~6-day revisit cadence at the equator (faster at higher latitudes due to convergent orbits). For monitoring rapidly-changing situations (e.g., real-time oil spills), this cadence may be insufficient. Verify against Cemini's specific use cases.
+3. **Sentinel-1 revisit rate** [CONFIRMED 2026-05-17 — with correction] — verified via ESA + NASA Earthdata (Exa 2026-05-17). Sentinel-1 is a two-satellite constellation (Sentinel-1A + Sentinel-1C, after 1B's 2021 failure and 1C's Dec-2024 launch restored the pair); each individual satellite has a 12-day repeat cycle, so the **constellation global revisit is ~6 days**. **Correction to the original claim**: at the equator the repeat frequency is ~3 days (not ~6) because of orbit convergence; main shipping routes and Europe are covered in under 3 days, and the Arctic in under 1 day. So the revisit cadence is *better* at the equator than the page originally stated. The operational takeaway is unchanged in direction: even ~3-day cadence is insufficient for sub-daily monitoring of fast-changing events (real-time oil spills), but it is adequate for Cemini's macro-directional use case (shipping-choke-point congestion, construction monitoring, agricultural anomalies).
 4. **API documentation completeness** — Gemini brief flags incomplete documentation at retrieval time (April 29). Pre-integration: re-fetch docs at https://console.spcsft.com/ once accessible.
 5. **Vendor concentration risk** — Spaceshift is a single small Japanese vendor. Geopolitical or business-continuity risks (acquisition, pivot, shutdown) could affect Cemini's data layer. Mitigated by the vendor-pluggable design pattern in (2).
 6. **Japanese-language documentation** — much of the press material is Japanese. The English Spaceshift page (`spcsft.com/en/`) covers high-level brand framing; the API docs at `console.spcsft.com` should be checked for English availability. Translation overhead may slow integration.

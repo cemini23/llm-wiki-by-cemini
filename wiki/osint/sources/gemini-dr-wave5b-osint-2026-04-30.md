@@ -27,7 +27,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -164,9 +164,9 @@ These are reasonable Tier-2 gap-fill targets for a future workflow re-evaluation
 
 ### Open questions / NEEDS VERIFICATION
 
-- **URL 9 BridgeWard license** [NEEDS VERIFICATION 2026-04-30] — repo-level LICENSE inspection.
-- **URL 9 BridgeWard runtime** [NEEDS VERIFICATION 2026-04-30] — confirm whether the auditor uses local-only string-match/regex (good) or external API (bad — defeats the purpose of injection-defense).
-- **URL 11 poly-maker license** [NEEDS VERIFICATION 2026-04-30] — independent license check (warproxxx is also URL 16's GPL-3.0 author; verify poly-maker isn't similarly licensed).
+- **URL 9 BridgeWard license** [CONFIRMED 2026-05-17] — `github.com/bridge-mind/bridgeward` repo-level LICENSE = **MIT** (confirmed via Exa crawl + ClaudePluginHub listing). Clean for IP-sale-readiness. Steal-from verdict's license footing holds. Note: this is `bridge-mind/bridgeward` (BridgeMind suite, sole contributor matthewmiller2925, 24★, created 2026-04-30) — not to be confused with unrelated CC-BY-SA-4.0 skills in the same prompt-injection space.
+- **URL 9 BridgeWard runtime** [CONFIRMED 2026-05-17] — verified local-only: the README's "What BridgeWard Is Not" section states explicitly "Not a classifier model. **No ML inference, no API calls.** Pure reasoning discipline encoded as instructions." The `injection-auditor` is a read-only subagent (cannot write/edit/execute, cannot follow instructions in audited content). No external API — the good outcome; the Steal-from extract (regex red-flag patterns + refusal templates + auditor concept) is sound.
+- **URL 11 poly-maker license** [CONFIRMED 2026-05-17] — `github.com/warproxxx/poly-maker` repo-level LICENSE = **MIT** (Exa crawl confirmed: "License: MIT"). Despite warproxxx also authoring GPL-3.0 poly_data (URL 16), poly-maker itself is cleanly MIT-licensed. Steal-from verdict's license footing holds. Caveat unchanged: `poly_merger` is built on open-source Polymarket code and has a Node.js dependency.
 - **URL 11 poly-maker JS-to-Python conversion** [NEEDS VERIFICATION 2026-04-30] — feasibility of rewriting `poly_merger` Node.js logic to Python natively.
 - **URL 12 Polymarket-BTC-15-Min-Bot Python 3.14+ feature dependency** [NEEDS VERIFICATION 2026-04-30] — which exclusive Python 3.14+ features (asyncio task groups, advanced typing) are mandated by code.
 - **URL 13 polymarket-orderbook-substreams remote subscription** [NEEDS VERIFICATION 2026-04-30] — feasibility of consuming via The Graph or Pinax-managed infrastructure (avoids local Substreams indexer overhead).

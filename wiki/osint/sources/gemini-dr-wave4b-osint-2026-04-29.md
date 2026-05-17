@@ -19,7 +19,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -121,7 +121,7 @@ Adopt rate: 3/14 evaluable = **21%**. Lower than Wave 4A's 32%; consistent with 
 - **URL 17 GeoSentinel license** [NEEDS MANUAL REVIEW 2026-05-11: NOASSERTION] — `gh api repos/h9zdev/GeoSentinel` → `NOASSERTION` (LICENSE file present but does not match a standard SPDX template). 908 stars, pushed 2026-04-25. Requires manual fetch + read of the LICENSE file before steal-from; not auto-resolvable.
 - **URL 8 metabigor maintenance + license** [VERIFIED 2026-05-11: MIT, maintained] — `gh api repos/j3ssie/metabigor` → MIT, pushed 2026-02-15 (3 months stale but active OSINT project), 1.5k stars. License clean; maintenance acceptable for steal-from / reference.
 - **URL 9 cti-expert license** [NEEDS MANUAL REVIEW 2026-05-11: NOASSERTION] — `gh api repos/7onez/cti-expert` → `NOASSERTION` (custom LICENSE file). 99 stars, pushed 2026-04-19. Requires manual fetch + read before adoption. Cemini-deployment-cost-estimate remains deferred until license clears.
-- **URL 14 Spaceshift SateAIs API pricing tier + commercial-use-license** [NEEDS VERIFICATION 2026-04-29] — not a GitHub repo; vendor API pricing inquiry remains open. Defer until macro-event-from-satellite roadmap is active.
+- **URL 14 Spaceshift SateAIs API pricing tier + commercial-use-license** [CONFIRMED 2026-05-17] — Space Shift launched the self-serve "SateAIs API" β on 2026-04-28 (console.spcsft.com): Free plan = 500 credits/month (reset 1st of month, JST), Sentinel-1 C-band SAR only, no SLA, credit-based metered billing; paid tiers (steady-state / large-scale / commercial SAR) are planned for GA. Older packaged offerings (e.g. Time-Series Change Detection AI API) run ~JPY 10,000/month (JPY 9,000/month annual) and JPY 900,000/year for the alert plan; a New Building Detection API is on AWS Marketplace at ~USD 198/request, SaaS billing, EULA-gated. Commercial use is permitted under the vendor EULA/credit terms. Defer remains correct on roadmap-priority grounds, but pricing/license is no longer an open question.
 
 ### Adoption summary (Cemini-pragmatic)
 

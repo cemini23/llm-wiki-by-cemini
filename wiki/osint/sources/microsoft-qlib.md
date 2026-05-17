@@ -15,7 +15,7 @@ related:
 maturity: validated
 read_status: read-skim
 created: 2026-04-29
-updated: 2026-04-30
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -81,7 +81,7 @@ Concrete next-steps:
 
 1. **Microsoft as upstream**: very stable, but very large project. Customization for Cemini's specific architecture (Hetzner CPX21, 7GB RAM, FastAPI orchestrator) may require non-trivial config work.
 2. **Documentation depth vs Cemini-specific use cases**: qlib documents general quant-investment workflows; Cemini's specific (multi-agent orchestration + DeepSeek API + Kalshi/Polymarket coupling) isn't a standard qlib use case. Adaptation required.
-3. **R&D-Agent dependency** [NEEDS VERIFICATION 2026-04-29] — RD-Agent integration is in-progress per the README. Maturity of the R&D-Agent companion repo + its license should be verified separately before relying on the LLM-driven Auto Quant Factory feature.
+3. **R&D-Agent dependency** [CONFIRMED 2026-05-17] — Exa-verified `github.com/microsoft/RD-Agent`: **MIT License** (clean — no IP-sale-readiness concern, same as qlib). Maturity is institutional-grade: ~13k stars / 1.6k forks / 40 contributors / 11 releases (latest v0.8.0, 2025-11-03); last push 2026-05-13 (actively maintained). The R&D-Agent-Quant ("RD-Agent(Q)") paper was accepted to **NeurIPS 2025** (arXiv:2505.15155). The companion is a real, mature, MIT-licensed project — the LLM-driven Auto Quant Factory can be relied on; note RD-Agent now defaults to a LiteLLM backend for multi-provider LLM integration (relevant for the DeepSeek path). Caveat: the qlib↔RD-Agent integration itself (`rdagent fin_quant`) is still labeled in-progress in qlib's own README.
 4. **Compute requirements**: qlib's RL training is not lightweight. Cemini's CPU-only Hetzner host (7 GB RAM ceiling) may not be the right home for qlib RL training. Consider laptop-side training + production-deployed inference-only.
 
 ### Citation

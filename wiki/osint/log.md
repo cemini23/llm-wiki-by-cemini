@@ -5443,3 +5443,18 @@ Batch 9, the final batch. 15 stubs processed; cited-unread-stub backlog **15 →
 The cited-unread-stub deep-read campaign is complete: **98 → 0** genuine unread-stubs across 9 batches (2026-05-16/17). Net: ~64 source pages deep-read/read into real syntheses, ~26 triaged out-of-scope into corpus-overflow, plus false-positive cleanups. 2 concept pages promoted (rl-retrain-pipeline-hardening, marl-trading-architecture) and 3 cemini-prod briefs shipped along the way.
 
 Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling, **0 cited-unread stubs**.
+
+## [2026-05-17] lint | stale [NEEDS VERIFICATION] tag resolution sweep
+
+Triaged the stale `[NEEDS VERIFICATION]` backlog (≥7-day-old tags) across ~31 source pages via 3 parallel Exa-cross-check agents. Each tag classified EXTERNAL (web-verifiable) vs INTERNAL (Cemini-stack-specific / empirical-reproduction / hands-on test — not web-resolvable).
+
+### Resolved (26 tags re-dated 2026-05-17)
+- **20 → [CONFIRMED]**: licenses (BridgeWard MIT, poly-maker MIT, RD-Agent MIT, tradesdontlie-tradingview-mcp MIT), Dune API credit-pricing, Kronos BSQ claim vs arXiv, Scrapling Cloudflare-bypass, SateAIs API β launch, Context7 query-only egress, TradingView TOS prohibits automated use, DeepSeek+langextract OpenAI-compat, et al.
+- **3 → [RETRACTED]**: PTA paper provenance (SSRN 4549819 is 2023/2024, NOT a 2026 publication — K9 recency framing corrected on title/Vintage/Snippets; also covers past-loser bonds K9 dropped); Zeroboot has no egress-networking roadmap (no-networking is architectural/permanent); obsidian-bases does NOT do nested-formula schema validation (flagged Cemini-portfolio risk doesn't exist).
+- **3 → [TENTATIVE]**: langextract→DeepSeek strict-schema (works only with schema-constraints off); plurai.ai reroute (no corroboration); Piebald/Anthropic prompt-IP boundary (fact-specific legal judgement).
+- Notable: playwright-mcp's accessibility-tree concern CONFIRMED as the *opposite* failure mode — it floods context with the full snapshot rather than silently truncating (token-budget problem, not data loss).
+
+### Left as-is (~38 INTERNAL tags — honestly not re-dated)
+Cemini-stack-specific behaviour, internal config, empirical reproductions needing a dataset/compute run, and hands-on tests against Cemini's own environment — not resolvable from the public web. These remain genuinely pending (server-Claude / hands-on scope); re-dating them would falsely reset the staleness clock.
+
+Lint: stale-tag count 144 → 117; 0 orphans, 0 bidirectional gaps, 0 dangling.

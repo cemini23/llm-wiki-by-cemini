@@ -15,7 +15,7 @@ related:
 maturity: validated
 read_status: read-skim
 created: 2026-04-29
-updated: 2026-04-30
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -84,7 +84,7 @@ Per `@concepts/high-signal-paper-patterns.md` negative-signals:
 ### Risks & open questions
 
 1. **Bus-factor** — already covered above. Fork-and-maintain mitigates.
-2. **Dune Analytics API pricing** [NEEDS VERIFICATION 2026-04-29] — pricing tiers and Cemini's expected query volume.
+2. **Dune Analytics API pricing** [CONFIRMED 2026-05-17] — Exa-verified against Dune's official pricing + credits-billing docs (dune.com/pricing, docs.dune.com). Dune uses a usage-based **credit** model (credits consumed reflect query compute): **Free** = $0/mo, 2,500 credits/mo, API access included but limited to Small/Medium engine; **Analyst** = $65/mo billed annually (or $75/mo monthly), 4,000 credits/mo, faster engine + higher API rate limits; **Plus** = $349/mo billed annually (or $399/mo), 25,000 credits/mo, largest engine + private queries; **Enterprise** = custom. Extra credits ~$0.014–0.016 each. Metadata endpoints are free; execution endpoints are credit-based. Cemini's expected query volume remains an internal estimate — but the Free tier (2,500 credits, includes API) is enough for low-volume evaluation; production use likely needs Analyst tier.
 3. **Query latency** — Dune queries can take seconds-to-minutes for complex ones. Cemini's analyst-orchestrator timeouts may need adjustment.
 4. **Schema drift** — Dune's tables periodically schema-shift; queries that work today may break later. Pin against specific table schemas where possible.
 5. **MCP Tool surface mismatch** — the kukapay implementation may not expose all the Dune-API tools Cemini wants. Read the actual tool list pre-deployment; may need to extend.

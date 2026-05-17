@@ -31,7 +31,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-04-29
-updated: 2026-04-30
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -179,7 +179,7 @@ Two URLs evaluated in this wave already have source pages:
 - **URL 21 mcp-server-ccxt license** [VERIFIED 2026-05-11: MIT] — `gh api repos/doggybee/mcp-server-ccxt` → MIT, pushed 2025-06-03, 137 stars. Clean.
 - **URL 24 polymarket-trade-engine license** [VERIFIED 2026-05-11: MIT] — `gh api repos/KaustubhPatange/polymarket-trade-engine` → MIT, pushed 2026-05-07, 229 stars. Clean.
 - **URL 25 ai-hedge-fund license** [RED 2026-05-11: no LICENSE file] — `gh api repos/virattt/ai-hedge-fund` → `NOLICENSE`, pushed 2026-05-09, **58.6k stars** (very popular but unlicensed = default copyright = no-derivative right). 4th occurrence of no-LICENSE-popular-repo pattern after K36 finance-skills + K38 AI-Trader + K39 IKP. See `@concepts/cemini-license-posture.md` license-pattern catalog mode #3 (no-LICENSE = default copyright). **NO-GO for adoption** without explicit upstream license declaration.
-- **URL 20 tradingview-mcp TOS legal review** [NEEDS VERIFICATION 2026-04-29] — formal legal review of TradingView TOS vs Cemini's automated-trading use case. Currently downgraded to Defer pending review.
+- **URL 20 tradingview-mcp TOS legal review** [CONFIRMED 2026-05-17] — TradingView's published Terms of Use (tradingview.com/policies/) explicitly license content/market data for "display-only use" and prohibit all non-display usage, naming "automated trading, automated order generation, price referencing, order verification, algorithmic decision-making, algorithmic trading, smart order routing" — and further forbid any third-party tool "designed to facilitate or enable" such non-display use. The repo's own DISCLAIMER concurs (must NOT be used for "automated trading or algorithmic decision-making using extracted data"). Cemini's automated-trading use case is squarely prohibited; no ambiguity remains. Decision stands at **Defer/Steal-from** — extract the CDP-against-Electron pattern only; never bind TradingView data into the trading stack. The Family-C TOS-conflict is now CONFIRMED, not pending review.
 
 ## Snippets
 

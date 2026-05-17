@@ -19,7 +19,7 @@ related:
 maturity: validated
 read_status: read-skim
 created: 2026-04-29
-updated: 2026-05-11
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -96,7 +96,7 @@ Possible interpretations:
 ### Risks & open questions
 
 1. **Code may not match README claims** — single-day-dev repos are notorious for over-promising in the README and under-delivering in code. Pre-adoption gate: actual code-read.
-2. **Polymarket API access pattern** [NEEDS VERIFICATION 2026-04-29] — public vs authenticated? Rate-limited?
+2. **Polymarket API access pattern** [CONFIRMED 2026-05-17] — verified via Polymarket docs (Exa 2026-05-17). The endpoints this MCP uses are **fully public, no authentication required**: the Gamma API (`gamma-api.polymarket.com` — `/events`, `/markets`, `/public-search`) and CLOB read endpoints (orderbook, prices, spreads) need no credentials. Rate limits are Cloudflare-throttled on sliding windows — Gamma `/events` 500 req/10s, `/markets` 300 req/10s, `/public-search` 350 req/10s; CLOB `/book` and `/price` 1,500 req/10s. Only **trading** (order placement/cancellation) requires L1 private-key + L2 API-key auth — and this MCP is read-only, so it never touches that path. The README confirms it queries `/public-search` and event/market listing endpoints. Access pattern is clean for Cemini's informed-flow analyst data layer.
 3. **The full informed-flow analyst service requires substantial Cemini-side work**. This MCP is just the data layer; the analytical layer (sign-randomization test, skill-persistence tracking) is separate and non-trivial.
 4. **Polymarket platform risk** — Polymarket itself is decentralized and crypto-coupled. Regulatory environment is in flux (cf. CFTC ANPRM in `@sources/cftc-anprm-prediction-markets-2026-03-16.md`). Cemini's Polymarket exposure has both data-source-risk and platform-risk dimensions.
 5. **Kalshi sibling expansion** — the same pattern (Kalshi MCP) doesn't yet exist publicly. If Cemini commits to this MCP, it may need to **build a Kalshi-MCP itself**, since Cemini's watchlist includes Kalshi-traded events.

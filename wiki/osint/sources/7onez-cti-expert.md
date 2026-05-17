@@ -13,7 +13,7 @@ related:
 maturity: validated
 read_status: read-skim
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-05-17
 ---
 
 ## Relations
@@ -78,7 +78,7 @@ For laptop-side Workflow use: the constraints are easy to honor (we're not doing
 
 1. **Dependency sprawl** — 30+ third-party Python OSINT tools (maigret, sherlock, holehe, h8mail, etc.). Each is independently maintained; any one breaking causes a cti-expert command to fail (potentially silently, leaving incomplete intelligence profiles).
 2. **DOM/anti-bot drift** — most underlying tools scrape against platform DOMs that frequently change. Per Gemini brief: "If a target platform updates its DOM structure or authentication flow, the underlying tool will break." Pre-adoption: install + run the full smoke test before relying on the skill in time-sensitive research.
-3. **Scrapling Cloudflare bypass** [NEEDS VERIFICATION 2026-04-30] — per Gemini brief, the Scrapling implementation needs review for "modern capabilities necessary to bypass advanced Cloudflare or equivalent anti-bot protections, as raw web scraping without proxy rotation has become notoriously fragile."
+3. **Scrapling Cloudflare bypass** [CONFIRMED 2026-05-17] — Exa-verified against Scrapling docs + the D4Vinci/Scrapling repo (38k★, active; release v0.4.1 2026-02-27 explicitly improved the Cloudflare solver). Scrapling does have modern anti-bot capabilities: its `StealthyFetcher` / `StealthySession(solve_cloudflare=True)` "can easily bypass all types of Cloudflare's Turnstile/Interstitial," with TLS-fingerprint impersonation, HTTP/3, a built-in `ProxyRotator` (cyclic or custom rotation), and DNS-over-HTTPS leak prevention. So the Gemini-flagged "no proxy rotation" concern is addressed *by the library* — Scrapling ships proxy rotation natively. Caveat: bypass effectiveness is an arms race (the solver is iteratively patched per release); enterprise-grade DataDome/Akamai/Kasada still need a paid token-API per Scrapling's own sponsor note. For cti-expert's OSINT use, Scrapling's built-in capability is adequate; the residual risk is upstream-maintenance cadence, not a missing feature.
 4. **Ethical Use Addendum at acquirer DD** — if Cemini is ever sold, the acquirer's IP team will see this addendum on a clone of the skill. Cemini should pre-write a position-paper documenting the Cemini-internal-use scope alignment with the addendum's allowed categories.
 5. **Vietnamese localization in README** — the README has substantial Vietnamese-language sections. Useful to know for due-diligence transparency; doesn't change adoption decision but worth noting.
 6. **Bus-factor** — solo author "Hieu Ngo"; if abandoned, fork-and-maintain pattern.

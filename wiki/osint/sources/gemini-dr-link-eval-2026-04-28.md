@@ -29,7 +29,7 @@ related:
 maturity: validated
 read_status: deep-read
 created: 2026-04-28
-updated: 2026-05-02
+updated: 2026-05-17
 clusters: [llm-agents, librarian-tooling, decision-record]
 ---
 
@@ -127,7 +127,7 @@ The brief mandated a follow-up spot-check on every Adopt recommendation against 
 
 1. **HKUDS/Vibe-Trading** (MIT, Python+FastAPI+MCP) — drop-in architectural accelerator for the LangGraph orchestrator. Native MCP support permits bolting onto `agents/orchestrator.py` with `@mcp.tool` decorators, granting the DeepSeek brain access to 7 backtest engines. CCXT integration complements existing Coinbase/OANDA pipelines. **Caveats**: bloated React frontend (13.1% TS/JS) must be stripped from `docker-compose.yml`; `yfinance` data loader must be swapped for paid Polygon/Alpaca to preserve Cemini's institutional-grade feeds. License clears IP-sale checks. See `sources/vibe-trading-hkuds.md`.
 
-2. **google/langextract** (Apache-2.0, Python) — replaces brittle regex/LangChain prompt-extractors in the EDGAR/GDELT ingest layers with a source-grounded JSON-schema enforcer. Every extracted entity is byte-mapped against the source text, eliminating hallucinations on critical macro-financial data. Heavy compute is offloaded to the LLM API (DeepSeek via OpenAI-compatible wrapper); local footprint is minimal. **Caveat**: needs verification that DeepSeek's chat-completions endpoint honors strict structured-output JSON enforcement — current Gemini/OpenAI/Ollama support is documented; DeepSeek is implied via OpenAI-compatibility but not explicitly listed [NEEDS VERIFICATION 2026-04-29]. See `sources/langextract-google.md`.
+2. **google/langextract** (Apache-2.0, Python) — replaces brittle regex/LangChain prompt-extractors in the EDGAR/GDELT ingest layers with a source-grounded JSON-schema enforcer. Every extracted entity is byte-mapped against the source text, eliminating hallucinations on critical macro-financial data. Heavy compute is offloaded to the LLM API (DeepSeek via OpenAI-compatible wrapper); local footprint is minimal. **Caveat**: [CONFIRMED 2026-05-17] DeepSeek's chat-completions endpoint is OpenAI-compatible and supports JSON mode (`response_format: {"type": "json_object"}`) plus a beta strict tool-calling schema mode; langextract's `OpenAILanguageModel` provider works against `base_url=https://api.deepseek.com` (google/langextract issue #428 documents real-world use). Note: langextract's `use_schema_constraints=True` ships dedicated schema classes only for Gemini and OpenAI — DeepSeek runs via the OpenAI provider with prompt-level (not server-side strict) schema enforcement, so occasional output drift is expected and a resolver/retry wrapper is advisable. See `sources/langextract-google.md`.
 
 **Adopt-for-Workflow (6 candidates) — collectively, these reshape the laptop curation loop:**
 
@@ -199,11 +199,11 @@ For any future Gemini DR wave, the protocol established and validated by this 20
 
 ### Open questions and follow-ups
 
-- **DeepSeek + langextract structured-output compatibility** [NEEDS VERIFICATION 2026-04-29]: Gemini's evaluation says DeepSeek API "should work" via OpenAI-compatibility but flags that strict-schema JSON enforcement parameters need testing. Run `langextract` against DeepSeek with a known schema before committing to the EDGAR/GDELT swap. Block `Adopt for Cemini` ship until verified.
+- **DeepSeek + langextract structured-output compatibility** [CONFIRMED 2026-05-17]: DeepSeek API is OpenAI-compatible — JSON mode (`response_format: json_object`) is documented, and langextract's `OpenAILanguageModel` provider runs against DeepSeek in practice (google/langextract issue #428). Caveat: langextract's strict-schema constraint path (`use_schema_constraints=True`) has dedicated schema classes only for Gemini + OpenAI; DeepSeek extracts via prompt-level enforcement, so wrap with a resolver/retry for occasional schema drift. The EDGAR/GDELT swap is unblocked, with a drift-tolerant wrapper as the only requirement.
 - **Vibe-Trading shadow-account state persistence** [NEEDS VERIFICATION 2026-04-29]: does the shadow-account backtest engine write state to PostgreSQL or to local disk? Local-disk would violate ephemeral-Docker-container philosophy. Check `src/swarm/shadow_account/*` before deploying.
-- **playwright-mcp accessibility-tree truncation** [NEEDS VERIFICATION 2026-04-29]: does the structured-snapshot algorithm dynamically truncate elements when parsing extremely long pages (e.g., monolithic SEC 10-K filings)? Truncation would result in critical context loss for the LLM. Test against a known SEC 10-K before promoting from Workflow Adopt to Cemini Adopt.
+- **playwright-mcp accessibility-tree truncation** [CONFIRMED 2026-05-17]: playwright-mcp does NOT dynamically truncate — it returns the full accessibility tree, which on large pages (50KB–540KB snapshots) overflows the LLM context window (microsoft/playwright-mcp issues #915, #1216, #1233, #1329). Maintainers have explicitly declined to add `--max-snapshot-tokens` / pagination, arguing the agentic loop must summarize. For monolithic SEC 10-K filings the practical mitigation is `--snapshot-mode=none` + save-to-file + grep, or `browser_evaluate` for targeted DOM queries. This is a real limitation, not a hypothetical — Workflow Adopt only; do not promote to Cemini Adopt for whole-10-K parsing without the file-based snapshot workaround.
 - **mercury-agent star-count drift** [RESOLVED 2026-04-28]: Gemini overstated by ~28% (1.6k claimed vs 1156 actual). Steal-from recommendation unaffected — the star count was decorative, not a decision input.
-- **plurai.ai/papers reroute** [NEEDS VERIFICATION 2026-04-29]: Gemini reports the URL mis-routes to sci-bot.ru. Should the workspace test the raw URL again post-sci-bot.ru-association investigation? Low priority; URL is not a librarian candidate.
+- **plurai.ai/papers reroute** [TENTATIVE 2026-05-17]: Exa search did not surface independent confirmation of a plurai.ai/papers → sci-bot.ru redirect; the claim originates solely from Gemini's evaluation and could not be corroborated or refuted from public sources. Low priority — URL is not a librarian candidate, so left unresolved rather than spending a crawl on a non-candidate.
 
 ## Snippets
 

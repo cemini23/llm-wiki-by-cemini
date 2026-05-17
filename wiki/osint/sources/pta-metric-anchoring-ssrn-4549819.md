@@ -15,7 +15,7 @@ related:
 maturity: validated
 read_status: skimmed
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-17
 clusters: [quant-finance]
 ---
 
@@ -31,10 +31,11 @@ clusters: [quant-finance]
 ## Raw Concept
 
 - **URL**: `https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4549819`
-- **Title (per K9)**: "Predicting Stock Returns of Past-Winner Stocks and Bond Returns" (paper introduces the PTA metric — price-to-52-week-anchor — as a cross-sectional return predictor)
-- **Type**: Academic working paper (SSRN)
+- **Title** [CORRECTED 2026-05-17 from SSRN]: "Predicting Cross-Sectional Return Variation in Past-Winner Stocks and Past-Loser Bonds with a Stock's 52-week Price Anchor" (paper introduces the PTA metric — price-to-52-week-anchor — as a cross-sectional return predictor). K9's rendering ("Predicting Stock Returns of Past-Winner Stocks and Bond Returns") was a paraphrase, not the verbatim title.
+- **Authors** [CONFIRMED 2026-05-17 via SSRN]: Chen Chen, Sounak Saha, Mobina Shafaati, Licheng Sun (Old Dominion University); Chris T. Stivers (University of Louisville, corresponding author)
+- **Type**: Academic working paper (SSRN); 75 pages; 53 references
 - **License**: SSRN academic-paper terms (extract math + paraphrase findings into Cemini documentation; do not redistribute the paper itself; standard academic fair-use)
-- **Vintage**: 2026 publication per K9 framing ("a peer-reviewed, cutting-edge (2026 publication) metric")
+- **Vintage** [CORRECTED 2026-05-17]: SSRN posted 2023-08-24, last revised 2024-05-24, date-written 2024-06-04. **This is a 2023/2024 working paper — NOT a "2026 publication"** as K9 framed it. The "cutting-edge 2026 publication" claim is retracted.
 - **Discovered via**: K9 deep-read of `4_5 links 2.docx` Document 11, 2026-04-29
 - **Read status**: skimmed via K9 summary; abstract + introduction + methodology not yet read directly from SSRN. **Pre-Cemini-adoption gate**: laptop-side full-paper read + empirical reproduction (analogous to the Schadner BSIV path)
 
@@ -128,11 +129,13 @@ This pattern is now templated. Future quant papers (e.g., if a future Wave surfa
 - **[NEEDS VERIFICATION 2026-04-29]**: Read the SSRN paper directly — confirm K9's summary, get the exact PTA formulation, identify any caveats K9 may have abstracted away (e.g., transaction-cost adjustments, sample-period dependencies).
 - **[NEEDS VERIFICATION 2026-04-29]**: Empirical reproduction — does the high-PTA-past-winner-outperformance finding hold on a known dataset (CRSP, Wharton WRDS, or Cemini's own historical Polygon equity data once data depth is sufficient)?
 - **[NEEDS VERIFICATION 2026-04-29]**: Does scaled-down PTA (52-day or 52-hour micro-anchor) preserve the predictive signal, or does the signal decay?
-- **[NEEDS VERIFICATION 2026-04-29]**: Author identity / institutional affiliation — establish provenance before treating the paper as institutional-grade. SSRN ID 4549819 implies recent vintage (~2026); confirm author + affiliation when reading the abstract.
+- **[CONFIRMED 2026-05-17]**: Author identity / institutional affiliation / provenance — verified via SSRN abstract page (Exa crawl 2026-05-17). Authors: **Chen Chen, Sounak Saha, Mobina Shafaati, Licheng Sun** (Old Dominion University — Strome College of Business) and **Chris T. Stivers** (University of Louisville, Finance Dept — corresponding author). Exact title: *"Predicting Cross-Sectional Return Variation in Past-Winner Stocks and Past-Loser Bonds with a Stock's 52-week Price Anchor."* JEL G11/G12/G14; 75 pages; 53 references; 274 downloads. **K9 vintage correction**: posted 2023-08-24, last revised 2024-05-24, date-written 2024-06-04 — this is a **2023/2024 working paper, NOT a 2026 publication**. The "2026 publication" framing in K9 (and propagated into this page's `Vintage` field + `Snippets`) is [RETRACTED 2026-05-17] — see correction below. The abstract also confirms the metric covers **past-WINNER stocks AND past-LOSER corporate bonds** (the bond leg was abstracted away by K9's stock-only summary).
 
 ## Snippets
 
-> "This 2026 academic paper introduces a novel metric called the price-to-52-week-anchor (PTA), which quantifies the expensiveness of a stock relative to its 52-week historical highs and lows. The study proves that PTA predicts significant cross-sectional variation in short-term returns; specifically, past-winner assets with a high PTA strongly outperform those with a low PTA due to investor cognitive bias and valuation uncertainty." [Source: 4_5 links 2.docx Document 11 para 274]
+> "This 2026 academic paper introduces a novel metric called the price-to-52-week-anchor (PTA), which quantifies the expensiveness of a stock relative to its 52-week historical highs and lows. The study proves that PTA predicts significant cross-sectional variation in short-term returns; specifically, past-winner assets with a high PTA strongly outperform those with a low PTA due to investor cognitive bias and valuation uncertainty." [Source: 4_5 links 2.docx Document 11 para 274] — **[RETRACTED 2026-05-17: "2026 academic paper" is wrong. SSRN 4549819 was posted 2023-08-24, last revised 2024-05-24. K9's "2026 publication" framing is the source of the error. Verbatim SSRN abstract is in the snippet below.]**
+
+> **Verbatim SSRN abstract** (Exa crawl 2026-05-17): "We show that the expensiveness of a stock's price, relative to its 52-week price history (or price-to-52-week-anchor, PTA), predicts a striking cross-sectional variation in both the stock returns of past-winner stocks and the corporate bond returns of past-loser stocks. The stock returns for past-winner stocks with a high PTA strongly outperform past-winner stocks with a low PTA. And, the corporate-bond returns of firms with high-PTA, past-loser stocks strongly outperform those with low-PTA, past-loser stocks. These PTA patterns are stronger for securities that likely have higher valuation uncertainty. Our new 52-week price-anchor metric equally uses information in both a stock's price-to-52-week-high ratio and its price-to-52-week-low ratio." [Source: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4549819 (retrieved 2026-05-17)]
 
 > "The Continuous Aggregate Materialized View pattern is required to compute this metric efficiently. The PTA requires tracking rolling 52-week highs and lows. In the Cemini architecture, this maps perfectly to TimescaleDB. Instead of loading millions of rows into Python memory to calculate the anchor, a continuous aggregate policy is deployed on the public.klines hypertable." [Source: 4_5 links 2.docx Document 11 para 276]
 

@@ -16,7 +16,7 @@ related:
 maturity: validated
 read_status: deep-read
 created: 2026-04-28
-updated: 2026-05-11
+updated: 2026-05-17
 clusters: [llm-agents, librarian-tooling]
 ---
 
@@ -88,7 +88,7 @@ The `obsidian-bases` sub-skill (originally URL 23 in the Gemini wave, evaluated 
 ### Risks & open questions
 
 1. **Obsidian internal spec drift** — Obsidian is under active development; specifications for JSON Canvas and `.base` file architectures change periodically. The static skills risk YAML-parsing-error deprecation if not synchronised from upstream. Schedule quarterly resync (e.g., `git pull` against the skills repo each quarter).
-2. **`obsidian-bases` schema validation boundaries** [NEEDS VERIFICATION 2026-04-29] — Gemini flagged: "The exact boundaries of the schema validation rules provided by the obsidian-bases skill regarding complex, nested mathematical formulas require strict verification." Less critical for the wiki use-case (no nested math formulas in librarian content), but worth flagging if Cemini ever uses Bases for portfolio metrics.
+2. **`obsidian-bases` schema validation boundaries** [RETRACTED 2026-05-17] — the premise is incorrect. The `obsidian-bases` SKILL.md (verified on GitHub) performs ordinary YAML-validity checks, formula-reference resolution (every `formula.X` must have a matching `formulas` entry), null-guard advice, and YAML quoting rules — there is no "schema validation of complex nested mathematical formulas." Bases formulas are flat single-expression strings, not validated nested math. The one real schema issue in the skill (kepano/obsidian-skills issue #58: `filters` accepts only one of `and`/`or`/`not`) was fixed in PR #68. The original Gemini concern described a validation feature the skill does not have; no nested-math-formula risk exists for portfolio metrics.
 3. **kepano's ongoing maintenance** — high signal (Obsidian CEO maintains personally) but bus factor concern if his focus shifts. 20 contributors counted on the repo, second-tier contributors should be tracked for community vitality.
 
 ## Snippets
