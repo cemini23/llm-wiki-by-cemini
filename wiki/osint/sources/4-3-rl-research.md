@@ -5,6 +5,7 @@ tags: [docx, rl-marl, cemini-internal, k49]
 clusters: [rl-marl]
 related:
   - concepts/rl-marl-research.md
+  - concepts/rl-retrain-pipeline-hardening.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
@@ -14,6 +15,7 @@ updated: 2026-05-16
 ## Relations
 
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
+- @concepts/rl-retrain-pipeline-hardening.md — concept page promoted from this source; the 11 findings as a reusable pre-retrain hardening checklist
 
 ## Raw Concept
 
