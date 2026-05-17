@@ -24,7 +24,6 @@ related:
   - sources/4-4-link-re-2.md
   - sources/4-6-links.md
   - sources/4-11-crypto-re.md
-  - sources/3-29-19.md
   - sources/3-29-research-2.md
   - sources/4-14-pvg4.md
   - sources/4-14-pvg5.md
@@ -59,6 +58,7 @@ related:
   - sources/harness2-4-5.md
   - sources/how-to-deploy-your-first-claude-managed-agent.md
   - sources/kalshi-5-3-29.md
+  - sources/lang2-4-14.md
   - sources/llm-4-3-2.md
   - sources/llm-4-3-5.md
   - sources/llm-4-3-6.md
@@ -130,7 +130,6 @@ updated: 2026-05-11
 - @sources/3-28-links-2.md — LLM agent-systems source in the Cemini research corpus
 - @sources/3-29-15.md — LLM agent-systems source in the Cemini research corpus
 - @sources/4-11-crypto-re.md — Cemini competitive intelligence covering 20+ agent orchestration platforms; SAE middleware, CPO-FOAM PID controller, MCP server analysis, A2Auth certificates
-- @sources/3-29-19.md — LLM agent-systems source in the Cemini research corpus
 - @sources/3-29-research-2.md — LLM agent-systems source in the Cemini research corpus
 - @sources/4-14-pvg4.md — LLM agent-systems source in the Cemini research corpus
 - @sources/4-14-pvg5.md — LLM agent-systems source in the Cemini research corpus
@@ -169,6 +168,7 @@ updated: 2026-05-11
 - @sources/harness2-4-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/how-to-deploy-your-first-claude-managed-agent.md — LLM agent-systems source in the Cemini research corpus
 - @sources/kalshi-5-3-29.md — LLM agent-systems source in the Cemini research corpus
+- @sources/lang2-4-14.md — K49 deep-read; λA typed lambda calculus giving formal semantics to LLM agent composition
 - @sources/llm-4-3-2.md — LLM agent-systems source in the Cemini research corpus
 - @sources/llm-4-3-5.md — LLM agent-systems source in the Cemini research corpus
 - @sources/llm-4-3-6.md — LLM agent-systems source in the Cemini research corpus

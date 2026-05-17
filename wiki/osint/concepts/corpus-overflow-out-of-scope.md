@@ -21,6 +21,11 @@ related:
   - sources/agent3.md
   - sources/agents5.md
   - sources/agents8.md
+  - sources/3-29-2.md
+  - sources/3-29-7.md
+  - sources/3-29-14.md
+  - sources/3-29-19.md
+  - sources/3-29-5.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-05-16
@@ -45,6 +50,11 @@ updated: 2026-05-16
 - @sources/agent3.md — *Agent Factories for High Level Synthesis* (Bhandwaldar et al., IBM) — coding agents optimizing hardware designs (HLS); hardware-design domain with no software-only trading-stack transfer
 - @sources/agents5.md — *Large Language Models as Optimization Controllers: Adaptive Continuation for SIMP Topology Optimization* (Yang et al., Santa Clara University) — LLM controller for structural/mechanical topology optimization; no trading-stack application path
 - @sources/agents8.md — *Sketch2Simulation: Automating Flowsheet Generation via Multi-Agent LLMs* (Bahamdan et al., Imperial College London) — chemical process engineering flowsheet generation; no financial/OSINT transfer path
+- @sources/3-29-2.md — *Hetero-Net: Energy-Efficient Resource Allocation and 3D Placement in Heterogeneous LoRa Networks via Multi-Agent Optimization* (Ahmed et al., UM6P) — IoT/telecom LPWAN network planning; no trading-stack application path
+- @sources/3-29-7.md — *Safe Multi-Agent Deep RL for Privacy-Aware Edge-Device Collaborative DNN Inference* (Wang et al.) — edge-computing DNN inference offloading; no path to financial-market modeling
+- @sources/3-29-14.md — *Modernising RL-Based Navigation for Embodied Semantic Scene Graph Generation* (Küble et al., University of Augsburg) — embodied-robotics navigation / computer vision; no trading-stack transfer
+- @sources/3-29-19.md — *Sparton: Fast and Memory-Efficient Triton Kernel for Learned Sparse Retrieval* (Nguyen et al.) — GPU Triton-kernel systems optimization; Cemini runs no GPU inference of its own
+- @sources/3-29-5.md — *COHORT: Hybrid RL for Collaborative Large DNN Inference on Multi-Robot Systems* (Anwar et al., UMBC) — multi-robot edge DNN-inference orchestration; no financial/OSINT transfer path
 
 ## Raw Concept
 
@@ -68,7 +78,7 @@ If criterion (3) shifts (roadmap pivots, new thread opens), the source graduates
 
 Deleting the stubs would lose the inventory record of which PDFs were already triaged-and-rejected, leading to duplicate effort on the next sweep. Keeping them under this hub is a librarian's "we looked, we passed" marker.
 
-### Current contents (17 sources, 2026-05-16)
+### Current contents (22 sources, 2026-05-16)
 
 | Stub | Topic | Why out-of-scope |
 |---|---|---|
@@ -89,6 +99,11 @@ Deleting the stubs would lose the inventory record of which PDFs were already tr
 | @sources/agent3.md | Agent factories: general-purpose coding agents for HLS hardware optimization (IBM) | Hardware-design / High-Level-Synthesis domain; Cemini is a software-only stack with no HLS transfer |
 | @sources/agents5.md | LLM as online adaptive controller for SIMP topology optimization | Structural/mechanical engineering topology optimization; no trading-stack application path |
 | @sources/agents8.md | Sketch2Simulation: multi-agent LLMs converting diagrams into Aspen HYSYS flowsheets | Chemical process systems engineering; no financial/OSINT trading-stack transfer |
+| @sources/3-29-2.md | Hetero-Net: multi-agent resource allocation + 3D placement in heterogeneous LoRa networks | IoT/telecom LPWAN network planning; no transfer path to financial-market modeling or OSINT |
+| @sources/3-29-7.md | Safe MARL for privacy-aware edge-device collaborative DNN inference | Edge-computing DNN inference offloading; no application path to financial-market modeling |
+| @sources/3-29-14.md | RL-based navigation for embodied semantic scene graph generation | Embodied-robotics navigation / computer vision; no trading-stack transfer |
+| @sources/3-29-19.md | Sparton: Triton GPU kernel for the LM-head of learned sparse retrieval | GPU systems / kernel optimization; Cemini runs no GPU inference of its own |
+| @sources/3-29-5.md | COHORT: hybrid RL for collaborative DNN inference on multi-robot systems | Multi-robot edge DNN-inference orchestration; no financial/OSINT transfer path |
 
 ## Snippets
 

@@ -29,13 +29,9 @@ related:
   - sources/3-29-1.md
   - sources/3-29-10.md
   - sources/3-29-12.md
-  - sources/3-29-14.md
   - sources/3-29-16.md
   - sources/3-29-18.md
-  - sources/3-29-2.md
   - sources/3-29-3.md
-  - sources/3-29-5.md
-  - sources/3-29-7.md
   - sources/3-29-9.md
   - sources/3-29-research-1.md
   - sources/3-29-research-3.md
@@ -70,7 +66,6 @@ related:
   - sources/git-3-5-pt3.md
   - sources/github-analysis.md
   - sources/hi-darts.md
-  - sources/lang2-4-14.md
   - sources/llm-4-3-4.md
   - sources/llm-4-3-7.md
   - sources/protocol-5-3-29.md
@@ -126,14 +121,10 @@ updated: 2026-05-15
 - @sources/3-29-1.md — RL/MARL source in the Cemini research corpus
 - @sources/3-29-10.md — RL/MARL source in the Cemini research corpus
 - @sources/3-29-12.md — RL/MARL source in the Cemini research corpus
-- @sources/3-29-14.md — RL/MARL source in the Cemini research corpus
 - @sources/3-29-16.md — RL/MARL source in the Cemini research corpus
-- @sources/3-29-18.md — RL/MARL source in the Cemini research corpus
-- @sources/3-29-2.md — RL/MARL source in the Cemini research corpus
-- @sources/3-29-3.md — RL/MARL source in the Cemini research corpus
-- @sources/3-29-5.md — RL/MARL source in the Cemini research corpus
-- @sources/3-29-7.md — RL/MARL source in the Cemini research corpus
-- @sources/3-29-9.md — RL/MARL source in the Cemini research corpus
+- @sources/3-29-18.md — K49 deep-read; RLAE — RL-assisted dynamic ensemble weighting for LLMs (PPO + MAPPO variants)
+- @sources/3-29-3.md — K49 deep-read; MAPPO/MASAC/MADDPG benchmark for competitive retail dynamic pricing
+- @sources/3-29-9.md — K49 deep-read; communication-constrained cooperative MARL (base-policy prediction cuts comm rounds)
 - @sources/3-29-research-1.md — RL/MARL source in the Cemini research corpus
 - @sources/3-29-research-3.md — RL/MARL source in the Cemini research corpus
 - @sources/3-29-research-5.md — RL/MARL source in the Cemini research corpus
@@ -166,7 +157,6 @@ updated: 2026-05-15
 - @sources/git-3-5-pt3.md — RL/MARL source in the Cemini research corpus
 - @sources/github-analysis.md — RL/MARL source in the Cemini research corpus
 - @sources/hi-darts.md — RL/MARL source in the Cemini research corpus (O 2026-04-27 — hierarchical adaptive RL trading system)
-- @sources/lang2-4-14.md — RL/MARL source in the Cemini research corpus
 - @sources/llm-4-3-4.md — RL/MARL source in the Cemini research corpus
 - @sources/llm-4-3-7.md — RL/MARL source in the Cemini research corpus
 - @sources/protocol-5-3-29.md — RL/MARL source in the Cemini research corpus

@@ -5351,3 +5351,24 @@ Batch 6 of the cited-unread-stub campaign. 10 stubs processed, all in-scope (0 r
 - `llm-re-4-3` — ByteRover agent-native memory: LLM-curated hierarchical markdown Context Tree (mirrors the Cemini wiki's own design).
 
 No hub wiring needed (all pages kept existing clusters). Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw sources already on librarian.
+
+## [2026-05-16] deep-read | cited-unread-stub campaign — batch 7 (10 stubs, 3-29 RL cluster)
+
+Batch 7 of the cited-unread-stub campaign. 10 stubs processed; cited-unread-stub backlog 35 → 25.
+
+### In-scope deep-reads (5)
+- `3-29-3` — MAPPO/MASAC/MADDPG benchmark for competitive retail dynamic pricing (MAPPO wins profit, MADDPG fairest). → rl-marl.
+- `3-29-9` — communication-constrained cooperative MARL; base-policy prediction cuts comm rounds to O(ε⁻³ᐟ⁴). → rl-marl.
+- `3-29-18` — RLAE: RL-assisted dynamic ensemble weighting for LLMs (PPO + MAPPO variants). → rl-marl.
+- `sort-2-4-3` — uncertainty-aware variational reward factorization for LLM personalization. → llm-agents.
+- `lang2-4-14` — λA typed lambda calculus for formal LLM-agent-composition semantics. → llm-agents.
+
+### Triaged out-of-scope (5) — reclassified to corpus-overflow (now 22)
+- `3-29-2` (LoRa-network optimization), `3-29-7` (edge-device DNN inference), `3-29-14` (embodied navigation), `3-29-19` (sparse-retrieval GPU kernels), `3-29-5` (multi-robot DNN inference).
+
+### Hub wiring
+- `rl-marl-research.md` — −6 (3-29-2/5/7/14 out-of-scope, lang2-4-14 → llm-agents).
+- `llm-agent-systems.md` — −1 (3-29-19 out-of-scope); +1 (lang2-4-14 re-homed).
+- `corpus-overflow-out-of-scope.md` — 17 → 22 sources; index.md count updated.
+
+Lint: 0 orphans, 0 bidirectional gaps, 0 dangling, 0 cross-wiki dangling. Raw PDFs already on librarian.
