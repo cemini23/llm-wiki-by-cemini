@@ -5458,3 +5458,11 @@ Triaged the stale `[NEEDS VERIFICATION]` backlog (≥7-day-old tags) across ~31 
 Cemini-stack-specific behaviour, internal config, empirical reproductions needing a dataset/compute run, and hands-on tests against Cemini's own environment — not resolvable from the public web. These remain genuinely pending (server-Claude / hands-on scope); re-dating them would falsely reset the staleness clock.
 
 Lint: stale-tag count 144 → 117; 0 orphans, 0 bidirectional gaps, 0 dangling.
+
+## [2026-05-17] infra | wiki-sync cron → git post-commit hook (macOS TCC fix)
+
+The hourly `sync_wiki_to_librarian.sh` cron had silently never run — the librarian's wiki copy went 5 days stale (2026-05-12 → 2026-05-17). Root cause: the workspace lives under `~/Desktop`, a macOS TCC-protected location; cron- and launchd-scheduled background jobs cannot read it without Full Disk Access. Confirmed: all 3 cron jobs (wiki-sync, librarian-healthcheck, prod-healthcheck) had zero scheduled runs ever; a launchd-agent test reproduced it exactly (`Operation not permitted`, exit 126).
+
+Fix: replaced the time-scheduled sync with a **git `post-commit` hook** (`scripts/post-commit.sh`, installed via `install-hooks.sh`). The hook runs inside the interactive session — which already has the necessary file access — and fires the sync, detached, whenever a commit touches `wiki/`. The librarian now refreshes exactly when the wiki changes rather than on a fixed hour. The dead `0 * * * *` sync cron line was removed; the TCC-blocked launchd agent was removed.
+
+Still dead from the same TCC cause (not commit-triggered, so not fixed by the hook): the 5-min `librarian_healthcheck` and daily `cemini_prod_healthcheck` crons — these need a Full Disk Access grant to run scheduled, flagged for follow-up.

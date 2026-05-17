@@ -41,6 +41,7 @@ install_hook() {
 
 echo "Installing git hooks..."
 install_hook "pre-commit" "pre-commit.sh"
+install_hook "post-commit" "post-commit.sh"
 echo ""
 echo "Done. Verify with:"
 echo "  ls -la $HOOKS_DIR | grep -v sample"
