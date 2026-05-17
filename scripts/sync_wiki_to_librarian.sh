@@ -44,6 +44,22 @@ if [[ ! -d "$WORKSPACE/wiki" ]]; then
   exit 3
 fi
 
+# Single-run lock. The sync fires from two triggers — the git post-commit
+# hook (instant, on every wiki commit) and the hourly cron backstop (catches
+# sibling-wiki commits + uncommitted drift). An atomic mkdir lock keeps
+# overlapping runs from piling up; a stale lock (>15 min) is reclaimed.
+LOCKDIR="/tmp/cemini-wiki-sync.lock"
+if ! mkdir "$LOCKDIR" 2>/dev/null; then
+  if [[ -n "$(find "$LOCKDIR" -maxdepth 0 -mmin +15 2>/dev/null)" ]]; then
+    log "stale lock (>15 min) — reclaiming"
+    rmdir "$LOCKDIR" 2>/dev/null && mkdir "$LOCKDIR" 2>/dev/null || { log "could not reclaim lock — aborting"; exit 0; }
+  else
+    log "another sync is already running — skipping this run"
+    exit 0
+  fi
+fi
+trap 'rmdir "$LOCKDIR" 2>/dev/null' EXIT
+
 # Step 1: rsync each wiki to its librarian subpath
 total_changes=0
 synced_wikis=0

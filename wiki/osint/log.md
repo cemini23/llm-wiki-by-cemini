@@ -5466,3 +5466,10 @@ The hourly `sync_wiki_to_librarian.sh` cron had silently never run — the libra
 Fix: replaced the time-scheduled sync with a **git `post-commit` hook** (`scripts/post-commit.sh`, installed via `install-hooks.sh`). The hook runs inside the interactive session — which already has the necessary file access — and fires the sync, detached, whenever a commit touches `wiki/`. The librarian now refreshes exactly when the wiki changes rather than on a fixed hour. The dead `0 * * * *` sync cron line was removed; the TCC-blocked launchd agent was removed.
 
 Still dead from the same TCC cause (not commit-triggered, so not fixed by the hook): the 5-min `librarian_healthcheck` and daily `cemini_prod_healthcheck` crons — these need a Full Disk Access grant to run scheduled, flagged for follow-up.
+
+## [2026-05-17] infra | cron Full Disk Access granted — healthchecks live, hourly sync restored as backstop
+
+Followup to the TCC diagnosis: `/usr/sbin/cron` was granted Full Disk Access, so cron can now read `~/Desktop`. Consequences:
+- The two cron jobs that were silently dead — 5-min `librarian_healthcheck`, daily `cemini_prod_healthcheck` — now run.
+- Restored the hourly `sync_wiki_to_librarian.sh` cron as a **backstop**: the git post-commit hook stays the primary sync trigger (instant, on every wiki commit), and the hourly cron now catches the gaps the hook can't see — sibling-wiki commits made in their own repos, and any uncommitted drift.
+- `sync_wiki_to_librarian.sh` gained an atomic `mkdir` single-run lock (stale-lock reclaim >15 min) so the two triggers can't pile up overlapping runs.
