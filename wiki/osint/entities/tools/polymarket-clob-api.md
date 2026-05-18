@@ -63,7 +63,7 @@ What prompted this page: the @AlterEgo_eth ingest (2026-05-13) clarified that **
 
 **These require zero auth.** A wrapper that gates them behind wallet init / HMAC setup is wasting bytes and creating failure surface.
 
-> **Auth discrepancy `[NEEDS VERIFICATION 2026-05-18]`** — the K51 @AlterEgo_eth cheat sheet groups `GET /book` and `GET /midpoint` under "Auth required". This conflicts with the earlier K43 @AlterEgo_eth post AND with Cemini's own 2026-05-18 geo-profiling test (cemini-prod, no auth header) which observed both returning HTTP 200. Empirical test takes precedence — `/book` and `/midpoint` are treated as public reads. Re-test if Polymarket announces a gating change.
+> **Auth discrepancy — RESOLVED 2026-05-18.** The K51 @AlterEgo_eth cheat sheet groups `GET /book` and `GET /midpoint` under "Auth required" — this is **incorrect** `[RETRACTED]`. Direct test 2026-05-18: unauthenticated GETs against a live active-market `token_id` (Gamma-resolved) returned **HTTP 200** from both — `/book` a full order-book object, `/midpoint` `{"mid":"0.58"}`. `/book` and `/midpoint` are public reads. The cheat sheet's auth column is not reliable for those two rows; the K43 @AlterEgo_eth post had it right.
 
 ### Authenticated write endpoints
 

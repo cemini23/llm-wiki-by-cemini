@@ -105,7 +105,7 @@ Order book + execution + market data. See `@entities/tools/polymarket-clob-api.m
 | `POST /orders` | Batch orders |
 | `DELETE /order` | Cancel order |
 
-> **Auth discrepancy `[NEEDS VERIFICATION 2026-05-18]`** — the @AlterEgo_eth May-2026 cheat sheet groups `GET /book` and `GET /midpoint` under "Auth required". Both the earlier K43 @AlterEgo_eth post and Cemini's own 2026-05-18 geo-profiling test (cemini-prod, no auth header) show `/book` and `/midpoint` returning HTTP 200 unauthenticated. Empirical test takes precedence — they are treated as public reads. Re-test if Polymarket announces a gating change.
+> **Auth discrepancy — RESOLVED 2026-05-18.** The @AlterEgo_eth May-2026 cheat sheet groups `GET /book` and `GET /midpoint` under "Auth required" — **incorrect** `[RETRACTED]`. Cemini direct test 2026-05-18: unauthenticated GETs against a live active-market `token_id` returned HTTP 200 from both. They are public reads, consistent with the earlier K43 @AlterEgo_eth post. Treat the cheat sheet's auth column as unreliable for those two rows.
 
 ### 4. LB-API — `https://lb-api.polymarket.com` (public, no auth)
 
@@ -130,7 +130,7 @@ See `@entities/tools/polymarket-websocket-api.md`.
 - **Geo split** — all reads (Gamma, Data, CLOB reads, LB-API, `/market` WS) work from Cemini's US-based cemini-prod. Only `POST /order` is geo-blocked. The order-submission path needs a non-US egress; the read path does not. See hot.md geo-profiling findings + `@concepts/cross-venue-arbitrage-pattern.md`.
 - **conditionId vs token_id** — Gamma's `clobTokenIds[0/1]` (YES/NO) is the classic bridge, but CLOB's `GET /markets/{conditionId}` also resolves the mapping. Order *placement* still requires token_id.
 - **Bulk catalog** — use Gamma `/markets/keyset` (cursor) over `/markets?offset=` for full-catalog pulls.
-- **Reliability caveat** — the source's auth column is not fully reliable (see the `/book` + `/midpoint` discrepancy). Treat any auth/geo claim as `[NEEDS VERIFICATION]` until reproduced against the live API.
+- **Reliability caveat** — the source's auth column is demonstrably not fully reliable: it mis-classified `/book` + `/midpoint` as auth-required (disproven by direct test 2026-05-18). Treat any auth/geo claim from the cheat sheet as provisional until reproduced against the live API.
 
 ## Snippets
 

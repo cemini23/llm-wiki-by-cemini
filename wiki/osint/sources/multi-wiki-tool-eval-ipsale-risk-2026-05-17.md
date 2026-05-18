@@ -7,10 +7,11 @@ related:
   - entities/tools/chandra.md
   - concepts/cemini-license-posture.md
   - sources/tool-eval-wiki-fit-v3-iteration-2026-05-16.md
+  - sources/multi-wiki-tool-eval-prompt-2026-05-18.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-17
-updated: 2026-05-17
+updated: 2026-05-18
 clusters: [tool-evaluation]
 ---
 
@@ -19,6 +20,7 @@ clusters: [tool-evaluation]
 - @entities/tools/chandra.md — the single OSINT-primary Adopt (vision-language document-parsing model)
 - @concepts/cemini-license-posture.md — the IP-sale copyleft / no-license posture this eval enforces
 - @sources/tool-eval-wiki-fit-v3-iteration-2026-05-16.md — prior multi-wiki tool-eval batch (K49 v3 iteration); this is the successor batch
+- @sources/multi-wiki-tool-eval-prompt-2026-05-18.md — next multi-wiki tool-eval batch (K51, 36 repos); successor to this one
 - @cybersecurity-wiki/entities/tools/gau.md — Adopt-tier, cybersec primary fit (cross-routed)
 - @cybersecurity-wiki/entities/tools/katana.md — Adopt-tier, cybersec primary fit (cross-routed)
 - @cybersecurity-wiki/entities/tools/gopacket.md — Steal-from tier, cybersec primary fit (cross-routed)

@@ -5513,3 +5513,30 @@ The cheat sheet groups CLOB `GET /book` and `GET /midpoint` under "Auth required
 Endpoint reference staged as `briefs/2026-05-18_polymarket-endpoint-cheatsheet.md` and scp'd to `cemini-prod:/opt/cemini/briefs/` for the CeminiSuite Polymarket bot work.
 
 Raw source moved to `cemini-librarian:/opt/cemini-bulk/research/alterego-eth-polymarket-endpoint-cheatsheet.docx`. Lint: 0 orphans, 0 bidirectional gaps, 0 dangling.
+
+### Follow-up — `/book` + `/midpoint` auth contradiction RESOLVED
+
+Direct test 2026-05-18: unauthenticated GETs against a live active-market `token_id` (Gamma-resolved) returned HTTP 200 from both CLOB `/book` and `/midpoint` (`/book` full order-book object; `/midpoint` `{"mid":"0.58"}`). The @AlterEgo_eth cheat sheet's "Auth required" grouping of those two is **incorrect** `[RETRACTED]`; the K43 post had it right. `[NEEDS VERIFICATION 2026-05-18]` tags on `polymarket-clob-api.md`, `polymarket-api-reference.md`, and the source page resolved. Server brief re-staged + re-scp'd to `cemini-prod:/opt/cemini/briefs/` with the resolved finding.
+
+## [2026-05-18] ingest | K51 — Multi-Wiki Tool Evaluation (36-repo batch)
+
+`Multi-Wiki Tool Evaluation Prompt.docx` (3.0 MB) — a Gemini-Deep-Research-style 36-repo evaluation across 7 surfaces. Preingest verdict NEW.
+
+### Verdict rollup
+**0 Adopt** / 8 Steal-from / 5 Defer / 5 Reference-only / 17 Reject / 1 Unavailable. (The doc's own aggregate summary miscounts as 9 Steal-from / 4 Reference — the per-URL `Tier:` lines are authoritative: 8 / 5.) License pattern: 24 NO-LICENSE FOUND, 9 UNVERIFIED, 1 clean MIT, 1 AGPL-3.0 poison pill (`videoeditor`). The no-license default remains the single biggest blocker across these LLM-sourced batches.
+
+### OSINT-side pages (5)
+- `sources/multi-wiki-tool-eval-prompt-2026-05-18.md` — source page, deep-read.
+- 4 entity stubs (the only OSINT/Cemini-financial-primary items): `ml-from-scratch.md` (Reference), `osiris.md` (Reject — Palantir-alternative OSINT dashboard, re-eval if licensed), `indicator-go-ta.md` (Defer — Go TA library), `mlfinlab.md` (Reject — license unverified).
+
+### Cross-wiki routing — ~83% of the batch is non-OSINT
+Four destination briefs created via `cross_wiki_route.py`:
+- cybersecurity-wiki: `briefs/2026-05-18_multi-wiki-tool-eval-k51-cybersec.md` — 14 cybersec-primary tools.
+- ccc-wiki: `briefs/2026-05-18_multi-wiki-tool-eval-k51-ccc.md` — 10 CCC-primary tools (Citadel + agent-toolkit notable).
+- image-gen-wiki: `briefs/2026-05-18_multi-wiki-tool-eval-k51-imagegen.md` — 2 items (videoeditor AGPL, wan_22_remix).
+- seo-wiki: `briefs/2026-05-18_multi-wiki-tool-eval-k51-seo.md` — 2 items + 3 cross-routes.
+
+### Outcome
+Zero-yield batch for the OSINT workspace and the Cemini production stack — no Phase-0 audits triggered (nothing reached Adopt). Value is the license-hygiene datapoint + cross-wiki intelligence. `indicator` and `osiris` are the two items worth a re-look if their licenses are ever clarified.
+
+Raw source moved to `cemini-librarian:/opt/cemini-bulk/research/multi-wiki-tool-eval-prompt-2026-05-18.docx`.

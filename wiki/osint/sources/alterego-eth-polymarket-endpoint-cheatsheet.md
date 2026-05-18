@@ -62,7 +62,7 @@ Per-trader and per-market analytics. Positions, closed-positions (with PnL), act
 
 Order book + execution. New vs K43: `GET /markets/{conditionId}` (CLOB-side conditionId→token_id mapping — so token resolution is not Gamma-exclusive), `GET /orders` (your open orders), `POST /orders` (batch), `DELETE /order` (cancel).
 
-**Contradiction flagged** — the post groups `GET /book` and `GET /midpoint` under "Auth required". This conflicts with (a) the K43 @AlterEgo_eth post, which lists both as public reads, and (b) Cemini's own geo-profiling test on 2026-05-18 (~12:30pm EDT from cemini-prod), which observed `/book` and `/midpoint` returning HTTP 200 with no auth header. Empirical test wins for now: treat `/book` + `/midpoint` as public reads. `[NEEDS VERIFICATION 2026-05-18]` — re-test whether Polymarket has begun (or announced) gating these.
+**Contradiction flagged — RESOLVED 2026-05-18.** The post groups `GET /book` and `GET /midpoint` under "Auth required". This conflicted with the K43 @AlterEgo_eth post, which lists both as public reads. Resolved by direct test: unauthenticated GETs against a live active-market `token_id` (Gamma-resolved) returned HTTP 200 from both (`/book` full order-book object; `/midpoint` `{"mid":"0.58"}`). The post's "Auth required" grouping of `/book` + `/midpoint` is **incorrect** `[RETRACTED]`; both are public reads.
 
 ### 4. LB-API — `http://lb-api.polymarket.com` (public, no auth) — NEW to Cemini
 
@@ -93,4 +93,4 @@ Leaderboard / PnL history. `GET /profit?window={all|1d}&address={address}`.
 ## Dead Ends
 
 - **`term=` on `/public-search`** — returns HTTP 422. The search parameter is `q=` only.
-- **Trusting the post's CLOB auth grouping verbatim** — `/book` and `/midpoint` are listed as auth-required but empirically return 200 unauthenticated (Cemini geo-test 2026-05-18). The cheat sheet's auth column is not reliable for those two rows.
+- **Trusting the post's CLOB auth grouping verbatim** — `/book` and `/midpoint` are listed as auth-required but empirically return HTTP 200 unauthenticated (Cemini direct test 2026-05-18). The cheat sheet's auth column is not reliable for those two rows.
