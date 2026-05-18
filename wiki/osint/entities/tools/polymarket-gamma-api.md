@@ -8,11 +8,14 @@ related:
   - entities/tools/polymarket-clob-api.md
   - entities/tools/aulekator-polymarket-btc-bot.md
   - entities/tools/awesome-polymarket-tools-harish-garg.md
+  - entities/tools/polymarket-data-api.md
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
+  - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - concepts/polymarket-bot-architecture.md
+  - concepts/polymarket-api-reference.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-14
+updated: 2026-05-18
 ---
 
 ## Relations
@@ -21,8 +24,11 @@ updated: 2026-05-14
 - @entities/tools/polymarket-clob-api.md — paired execution-layer API
 - @entities/tools/aulekator-polymarket-btc-bot.md — K44 NautilusTrader-based bot; market-discovery via Gamma is one of the possible adapter paths (Phase-0 G3)
 - @entities/tools/awesome-polymarket-tools-harish-garg.md — K44 CC0 directory referencing Gamma tooling
+- @entities/tools/polymarket-data-api.md — sibling analytics layer; conditionIds resolved on Gamma index into Data API queries
 - @sources/alterego-eth-polymarket-gamma-vs-clob.md — primary source enumerating endpoints
+- @sources/alterego-eth-polymarket-endpoint-cheatsheet.md — K51 @AlterEgo_eth cheat sheet; added keyset pagination + `/tags` + `closed=false` filters
 - @concepts/polymarket-bot-architecture.md — bot playbook that assumes correct Gamma/CLOB split
+- @concepts/polymarket-api-reference.md — canonical five-surface endpoint index Gamma is part of
 
 ## Raw Concept
 
@@ -42,12 +48,20 @@ What prompted this page: the @AlterEgo_eth ingest (2026-05-13) formalized the Ga
 
 | Method | Path | Purpose | Returns |
 |--------|------|---------|---------|
+| GET | `/markets?limit=100&offset=0` | Market catalog, classic offset pagination | array |
+| GET | `/markets/keyset?next_cursor=&limit=100` | Market catalog, cursor pagination — faster for bulk | array |
 | GET | `/markets?conditionId={id}` | Single market by conditionId | object (recommended) |
 | GET | `/markets?ids={id}` | Same data, array form | array |
+| GET | `/markets?active=true&closed=false` | Active markets only | array |
+| GET | `/markets?tag_id={id}&closed=false` | Open markets by tag | array |
+| GET | `/markets?tag_id={id}&active=true` | Active markets by category | array |
 | GET | `/events?slug={slug}` | Event + nested markets | event object |
 | GET | `/events/slug/{slug}` | Direct event access | event object (cleaner) |
-| GET | `/markets?tag_id={id}&active=true` | Active markets by category | array |
-| GET | `/public-search?q={query}` | Market search | array; use `q=` only |
+| GET | `/events?tag_id={id}` | Events by tag | array |
+| GET | `/tags` | Full tag list | array |
+| GET | `/public-search?q={query}` | Market search | array; `q=` only (`term=` → HTTP 422) |
+
+**K51 additions** (@AlterEgo_eth cheat sheet): keyset/cursor pagination, `closed=false` filters, `/events?tag_id=`, `GET /tags`. For full-catalog scans prefer `/markets/keyset` over `/markets?offset=`.
 
 ### Critical response field — `clobTokenIds[]`
 

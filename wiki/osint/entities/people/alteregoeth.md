@@ -5,15 +5,19 @@ tags: [entity, person, x-handle, polymarket-developer, prediction-markets, techn
 keywords: [alteregoeth, x-twitter-handle, polymarket-weather-bot-gamma-api, prediction-market-technical-writer]
 related:
   - sources/x-docx-polymarket-claude-md-2026-04-23.md
+  - sources/alterego-eth-polymarket-gamma-vs-clob.md
+  - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - concepts/polymarket-weather-trading-strategy.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-18
 ---
 
 ## Relations
 
 - @sources/x-docx-polymarket-claude-md-2026-04-23.md — primary source (Section 1)
+- @sources/alterego-eth-polymarket-gamma-vs-clob.md — K43 X post; Gamma vs CLOB API tradecraft
+- @sources/alterego-eth-polymarket-endpoint-cheatsheet.md — K51 X post; full five-surface Polymarket endpoint cheat sheet
 - @concepts/polymarket-weather-trading-strategy.md — concept this person's writing feeds into
 
 ## Raw Concept
@@ -24,8 +28,9 @@ What prompted this page: K41 ingest of X.docx Section 1 — @AlterEgo_eth's tech
 
 - **X handle**: @AlterEgo_eth
 - **Subject expertise (per known content)**: Polymarket Gamma API integration, weather-market structure, ETH-adjacent identity (handle implies)
-- **Known artifact**: Clean technical breakdown of Polymarket weather-market slug-construction + two-endpoint API + bin regex (full document at @sources/x-docx-polymarket-claude-md-2026-04-23.md Section 1)
-- **No real identity established** from this ingest; treat as pseudonymous technical contributor
+- **Known artifacts** (3 ingested): weather-market slug-construction + two-endpoint API breakdown (K41, @sources/x-docx-polymarket-claude-md-2026-04-23.md Section 1); Gamma vs CLOB API two-layer tradecraft (K43, @sources/alterego-eth-polymarket-gamma-vs-clob.md); full five-surface endpoint cheat sheet (K51, @sources/alterego-eth-polymarket-endpoint-cheatsheet.md)
+- **Consistent subject area**: Polymarket API mechanics — practical, endpoint-level, "tested as of <month>" framing. Output quality has been verifiable each time (public endpoints)
+- **No real identity established** from these ingests; treat as pseudonymous technical contributor
 
 ### Cemini posture
 

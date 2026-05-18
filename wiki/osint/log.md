@@ -5487,3 +5487,29 @@ Followup to the TCC diagnosis: `/usr/sbin/cron` was granted Full Disk Access, so
 - The two cron jobs that were silently dead — 5-min `librarian_healthcheck`, daily `cemini_prod_healthcheck` — now run.
 - Restored the hourly `sync_wiki_to_librarian.sh` cron as a **backstop**: the git post-commit hook stays the primary sync trigger (instant, on every wiki commit), and the hourly cron now catches the gaps the hook can't see — sibling-wiki commits made in their own repos, and any uncommitted drift.
 - `sync_wiki_to_librarian.sh` gained an atomic `mkdir` single-run lock (stale-lock reclaim >15 min) so the two triggers can't pile up overlapping runs.
+
+## [2026-05-18] ingest | K51 — @AlterEgo_eth Polymarket endpoint cheat sheet
+
+X post from @AlterEgo_eth, "Every Polymarket API Endpoint Your Bot Will Ever Need" — a full five-surface endpoint inventory dropped into the inbox as `@AlterEgo_eth.docx`. Preingest verdict NEW (distinct sha from the K43 `1)@AlterEgo_eth.docx`). 12 pages touched.
+
+### New pages (5)
+- `sources/alterego-eth-polymarket-endpoint-cheatsheet.md` — source page, deep-read.
+- `concepts/polymarket-api-reference.md` — canonical Cemini-side cross-surface endpoint index (sibling to `kalshi-api-reference.md`).
+- `entities/tools/polymarket-data-api.md` — Data API layer (trader/market analytics) — **new surface, not previously catalogued**.
+- `entities/tools/polymarket-lb-api.md` — LB-API layer (leaderboard/PnL) — **new surface**.
+- `entities/tools/polymarket-websocket-api.md` — WebSocket layer (`/market`, `/user`).
+
+### Updated pages (7)
+- `entities/tools/polymarket-gamma-api.md` — added keyset/cursor pagination, `closed=false` filters, `/events?tag_id=`, `/tags`.
+- `entities/tools/polymarket-clob-api.md` — added `/markets/{conditionId}` (CLOB-side conditionId→token_id lookup), `/orders`, batch `POST /orders`, `DELETE /order`; flagged the auth contradiction.
+- `entities/people/alteregoeth.md` — third artifact from this handle; backlinks + narrative updated.
+- `sources/alterego-eth-polymarket-gamma-vs-clob.md` — K43 source; added author + cheat-sheet backlinks.
+- `entities/platforms/polymarket.md`, `concepts/polymarket-bot-architecture.md`, `concepts/kalshi-api-reference.md` — backlinks.
+
+### Contradiction flagged
+The cheat sheet groups CLOB `GET /book` and `GET /midpoint` under "Auth required". This conflicts with (a) the K43 @AlterEgo_eth post and (b) Cemini's own 2026-05-18 geo-profiling test from cemini-prod (both endpoints returned HTTP 200 unauthenticated). Empirical test wins — `/book` + `/midpoint` treated as public reads; tagged `[NEEDS VERIFICATION 2026-05-18]` on `polymarket-clob-api.md` and `polymarket-api-reference.md`.
+
+### Distribution
+Endpoint reference staged as `briefs/2026-05-18_polymarket-endpoint-cheatsheet.md` and scp'd to `cemini-prod:/opt/cemini/briefs/` for the CeminiSuite Polymarket bot work.
+
+Raw source moved to `cemini-librarian:/opt/cemini-bulk/research/alterego-eth-polymarket-endpoint-cheatsheet.docx`. Lint: 0 orphans, 0 bidirectional gaps, 0 dangling.

@@ -13,10 +13,13 @@ related:
   - entities/tools/polymarket-clob-api.md
   - entities/tools/polymarket-gamma-api.md
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
+  - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
+  - concepts/polymarket-api-reference.md
+  - entities/tools/polymarket-websocket-api.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-16
+updated: 2026-05-18
 ---
 
 ## Relations
@@ -25,6 +28,9 @@ updated: 2026-05-16
 - `@entities/platforms/polymarket.md` — platform entity page (create stub if absent)
 - `@concepts/cemini-license-posture.md` — IP-sale-readiness frame (no license issue here; pattern, not code)
 - `@sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md` — @bored2boar's independent bot playbook (May 2026), corroborating this page
+- `@sources/alterego-eth-polymarket-endpoint-cheatsheet.md` — K51 @AlterEgo_eth full endpoint cheat sheet; the API surface this playbook's bot consumes
+- `@concepts/polymarket-api-reference.md` — canonical five-surface endpoint index
+- `@entities/tools/polymarket-websocket-api.md` — WebSocket channels the 6-layer websocket system subscribes to
 
 ## Raw Concept
 

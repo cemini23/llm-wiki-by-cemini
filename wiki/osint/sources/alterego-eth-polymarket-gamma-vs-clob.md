@@ -4,22 +4,26 @@ type: source
 tags: [source, x-thread, polymarket, gamma-api, clob-api, api-tradecraft, bot-architecture]
 keywords: [alterego_eth, polymarket-api, gamma-api, clob-api, conditionId, clobTokenIds, two-step-flow, market-discovery, order-execution, public-endpoints]
 related:
+  - entities/people/alteregoeth.md
   - entities/platforms/polymarket.md
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/polymarket-clob-api.md
+  - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - concepts/polymarket-bot-architecture.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-18
 clusters: [api-tradecraft, polymarket]
 ---
 
 ## Relations
 
+- @entities/people/alteregoeth.md — author of this X thread
 - @entities/platforms/polymarket.md — primary platform reference
 - @entities/tools/polymarket-gamma-api.md — derived entity page enumerating Gamma endpoints
 - @entities/tools/polymarket-clob-api.md — derived entity page enumerating CLOB endpoints
+- @sources/alterego-eth-polymarket-endpoint-cheatsheet.md — later @AlterEgo_eth post (K51); fuller five-surface endpoint inventory superseding this thread's enumeration
 - @concepts/polymarket-bot-architecture.md — complementary bot-architecture playbook from @0x_Punisher; this AlterEgo source covers the API-surface side that Punisher's playbook assumes as prerequisite
 
 ## Raw Concept

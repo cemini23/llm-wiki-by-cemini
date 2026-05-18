@@ -48,9 +48,14 @@ related:
   - entities/tools/tradingview-mcp-atilaahmettaner.md
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
   - entities/tools/a-stock-data-toolkit.md
+  - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
+  - concepts/polymarket-api-reference.md
+  - entities/tools/polymarket-data-api.md
+  - entities/tools/polymarket-lb-api.md
+  - entities/tools/polymarket-websocket-api.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-14
+updated: 2026-05-18
 ---
 
 ## Relations
@@ -68,6 +73,11 @@ updated: 2026-05-14
 - @entities/platforms/kalshi.md
 - @sources/gemini-dr-wave5b-osint-2026-04-30.md — Wave 5B canonical brief; 7 of 18 evaluated URLs target Polymarket directly (Polymarket cluster). Surfaces caiovicentino's full-trade MCP, sibling poly_data Reject (license-metadata discrepancy), BridgeWard arbitrage Steal-from, poly-maker market-making Steal-from, Polymarket-BTC-15-Min-Bot Steal-from. Polymarket's deployment-stack toolchain is now meaningfully more complete than 30 days ago
 - @sources/caiovicentino-polymarket-mcp-server.md — Wave 5B Adopt; comprehensive 45-tool MCP across 5 categories (markets / trades / portfolio / orders / data). MIT, Python, 395★, 1 contributor (fork-and-pin pattern). Trade-execution leg of the dual-MCP-Polymarket pattern (real-time-odds = kukapay's; trade-execution = this). USDC.e + MetaMask + Polygon network
+- @sources/alterego-eth-polymarket-endpoint-cheatsheet.md — K51 @AlterEgo_eth X post; full five-surface endpoint cheat sheet
+- @concepts/polymarket-api-reference.md — canonical Cemini-side five-surface endpoint index for this venue
+- @entities/tools/polymarket-data-api.md — Data API layer (trader/market analytics) — first catalogued K51
+- @entities/tools/polymarket-lb-api.md — LB-API layer (leaderboard/PnL) — first catalogued K51
+- @entities/tools/polymarket-websocket-api.md — WebSocket layer (realtime orderbook + fills) — first catalogued K51
 
 ## Raw Concept
 
