@@ -5540,3 +5540,13 @@ Four destination briefs created via `cross_wiki_route.py`:
 Zero-yield batch for the OSINT workspace and the Cemini production stack — no Phase-0 audits triggered (nothing reached Adopt). Value is the license-hygiene datapoint + cross-wiki intelligence. `indicator` and `osiris` are the two items worth a re-look if their licenses are ever clarified.
 
 Raw source moved to `cemini-librarian:/opt/cemini-bulk/research/multi-wiki-tool-eval-prompt-2026-05-18.docx`.
+
+### Follow-up — license check (2026-05-18)
+
+GitHub-API license check on the 4 license-unverified items where verification could move the verdict:
+- **fd** (`sharkdp/fd`) — MIT + Apache-2.0 dual (both LICENSE files present). Eval's Reject was a retrieval-data artifact → clean, adoptable (cybersec-primary). Cybersec brief updated.
+- **indicator** (`cinar/indicator`) — **AGPL-3.0** (`LICENSE.md` = GNU AGPL v3). License-drift catch: the v2.x.x relicense the eval flagged in commit logs was the move to AGPL. Verdict **Defer → hard Reject** (poison pill). `indicator-go-ta.md` updated.
+- **osiris** (`simplifaisoul/osiris`) — `license: null`, no LICENSE file in repo. Genuinely unlicensed → Reject confirmed. `osiris.md` updated.
+- **mlfinlab** (`hudson-and-thames/mlfinlab`) — `LICENSE.txt` = "Other"/`NOASSERTION` (non-OSS commercial license). Reject confirmed. `mlfinlab.md` updated.
+
+Source page gained a "License-check follow-up" table. Net: `fd` cleared (data artifact), `indicator` hardened (Defer→Reject AGPL); `osiris`/`mlfinlab` rejects verified.
