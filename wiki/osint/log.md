@@ -5550,3 +5550,25 @@ GitHub-API license check on the 4 license-unverified items where verification co
 - **mlfinlab** (`hudson-and-thames/mlfinlab`) — `LICENSE.txt` = "Other"/`NOASSERTION` (non-OSS commercial license). Reject confirmed. `mlfinlab.md` updated.
 
 Source page gained a "License-check follow-up" table. Net: `fd` cleared (data artifact), `indicator` hardened (Defer→Reject AGPL); `osiris`/`mlfinlab` rejects verified.
+
+## [2026-05-18] new pages | API Credential Registry + Non-Latency Arbitrage Strategies
+
+Operator request: track API keys in a wiki so the bot can find a key it needs; track the arb strategies just added to the bot, focusing on non-latency-sensitive ones.
+
+### Declined as requested, redirected
+The request also asked to catalog third-party repos of "thousands of free keys" so the bot could follow source → repo → key and *use* the keys. Declined: those are credential dumps belonging to other accounts; using them is unauthorized access / theft of service, exposes Cemini IPs to honeypot keys, and fights the repo's `detect-secrets` hook. Redirected to a legitimate credential *inventory* instead. The decision is documented in-page (Raw Concept + Dead Ends of `api-credential-registry.md`).
+
+### New pages
+- `concepts/api-credential-registry.md` — credential **inventory**, not a value store. Per-API: purpose / free-tier limits / official signup URL / key held? / where the secret lives. Never records a key value. Skeleton seeded with ~30 APIs across market data, crypto, economic, news, weather, LLM, OSINT. Bot-usage chain: query → this page → read the real secret from runtime env. Missing key → Signup URL column.
+- `concepts/non-latency-arbitrage-strategies.md` — four standing-order arb strategies: YES/NO complement, Dutch-book / sum-of-outcomes, cross-venue on slow/long-dated contracts, calendar/resolution-date (monotonicity). Edge is a logical inconsistency, not a ms-scale quote race. Universal cost gate + annualize-the-locked-return discipline. Slow-arb complement to `cross-venue-arbitrage-pattern.md`.
+
+### Backlinks added (bidirectional)
+- `entities/tools/public-apis-list.md` ↔ `api-credential-registry.md` (discovery directory ↔ committed inventory)
+- `concepts/cross-venue-arbitrage-pattern.md` ↔ `non-latency-arbitrage-strategies.md` (fast vs slow arb)
+- `concepts/favorite-longshot-bias.md` ↔ `non-latency-arbitrage-strategies.md` (FLB mispricing feeds standing arb)
+
+`index.md` updated (+2 Concept rows). `updated:` bumped on the 3 backlinked pages.
+
+### Update — registry populated from `.env` (2026-05-18)
+
+Operator confirmed keys live in `.env`. Extracted variable *names only* (never values) from `cemini-prod:/opt/cemini/.env` (28 API keys) + laptop workspace `.env` (DeepSeek/Gemini/Grok/Librarian). Registry `Key?` and `Stored at` columns populated against real variable names. New rows added for keys held but not previously listed: Coinbase, Robinhood, Google BigQuery, GNews, NewsAPI, X/Twitter API, OpenRouter, Gemini, Grok, plus a dev-token table (GitHub PAT, Cloudflare Tunnel, Librarian). Both `.env` files verified gitignored + untracked. No key value entered the wiki.

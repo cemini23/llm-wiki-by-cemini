@@ -6,13 +6,15 @@ keywords: [public-apis, free APIs, data discovery, API directory, community cura
 related:
   - sources/evaluating-links-trading-wiki-stacks.md
   - concepts/tool-evaluation-framework.md
+  - concepts/api-credential-registry.md
 maturity: draft
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-18
 ---
 
 ## Relations
 - `@sources/evaluating-links-trading-wiki-stacks.md` — source evaluation brief (URL 23)
+- `@concepts/api-credential-registry.md` — the *inventory* of APIs Cemini has committed to; this directory is its upstream *discovery* feed
 
 ## Raw Concept
 

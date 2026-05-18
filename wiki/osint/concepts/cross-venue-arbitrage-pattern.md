@@ -15,10 +15,11 @@ related:
   - concepts/polymarket-microstructure-findings.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/kalshi-api-reference.md
+  - concepts/non-latency-arbitrage-strategies.md
   - entities/tools/hftbacktest.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-11
+updated: 2026-05-18
 ---
 
 ## Relations
@@ -33,6 +34,7 @@ updated: 2026-05-11
 - @sources/polymarket-nba-arbitrage-2605.00864.md — companion NBA arb study; shares same data ecosystem, documents shallow-depth constraint on executable arb size
 - @concepts/polymarket-microstructure-findings.md — distilled findings from Dubach 2026; key constraint: public-feed direction is unreliable, must use on-chain OrderFilled events
 - @concepts/prediction-market-historical-analysis.md — historical price-divergence statistics inform arb threshold-tuning + viability assessment
+- @concepts/non-latency-arbitrage-strategies.md — the slow-arb complement: standing-order strategies (Dutch-book, YES/NO complement, slow cross-venue, calendar) whose edge is a logical inconsistency rather than a ms-scale quote race
 
 ## Raw Concept
 

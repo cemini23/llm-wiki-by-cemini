@@ -8,9 +8,10 @@ related:
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
+  - concepts/non-latency-arbitrage-strategies.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-29
+updated: 2026-05-18
 ---
 
 ## Relations
@@ -18,6 +19,7 @@ updated: 2026-04-29
 - @sources/3-19-kalshi-trading-strategy-research.md
 - @entities/platforms/kalshi.md
 - @entities/platforms/polymarket.md
+- @concepts/non-latency-arbitrage-strategies.md — FLB's structural mispricing is one source of the standing inconsistencies that non-latency arb harvests
 
 ## Raw Concept
 
