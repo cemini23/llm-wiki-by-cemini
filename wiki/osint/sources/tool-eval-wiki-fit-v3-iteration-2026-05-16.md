@@ -10,10 +10,11 @@ related:
   - entities/tools/socid-extractor.md
   - concepts/cemini-license-posture.md
   - sources/tool-evaluation-wiki-fit-2026-05-15.md
+  - sources/multi-wiki-tool-eval-ipsale-risk-2026-05-17.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-05-17
 clusters: [tool-evaluation]
 ---
 
@@ -25,6 +26,7 @@ clusters: [tool-evaluation]
 - @entities/tools/socid-extractor.md — Adopt-tier; cross-platform social-account identifier extraction (OSINT primary fit)
 - @concepts/cemini-license-posture.md — the IP-sale copyleft posture this eval enforces
 - @sources/tool-evaluation-wiki-fit-2026-05-15.md — prior 52-URL eval batch (K48); this v3 iteration is the successor batch
+- @sources/multi-wiki-tool-eval-ipsale-risk-2026-05-17.md — successor 56-repo eval batch (K50)
 - @cybersecurity-wiki/entities/tools/jadx-mcp-server.md — Adopt-tier, cybersec primary fit (cross-routed)
 - @cybersecurity-wiki/entities/tools/osmedeus.md — Adopt-tier, cybersec primary fit (cross-routed)
 - @ccc-wiki/entities/tools/claude-for-legal.md — Steal-from tier, CCC primary fit (cross-routed)

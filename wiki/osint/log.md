@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-05-17] ingest | Multi-Wiki Tool Evaluation — 56-repo IP-sale risk audit
+
+Ingested `Multi-Wiki Tool Evaluation.docx` (LLM-generated 56-repo eval across 7 surfaces, IP-sale licensing rigor). preingest_check verdict NEW.
+
+- **Source created** (1): `sources/multi-wiki-tool-eval-ipsale-risk-2026-05-17.md` — verdict ledger (Reject 40 / Adopt 10 / Steal-from 2 / Reference 3 / Defer 1) + actionable-12 table. Headline: no-license epidemic — 40 rejects, mostly NO-LICENSE-FOUND (= all-rights-reserved, illegal in an IP-sale stack). deep-read / validated.
+- **Entity created** (1, OSINT-primary): `entities/tools/chandra.md` — ~4B vision-language document-parsing model (Apache-2.0 code / OpenRAIL-M weights, 10.7k★). Adopt tier; GPU/vLLM deployment caveat flagged (librarian is CPU-only).
+- **Cross-wiki routing** (11 tools → 3 sibling wikis), each backlinking `@osint-wiki/sources/multi-wiki-tool-eval-ipsale-risk-2026-05-17.md`:
+  - cybersecurity-wiki ×4: `gau` (Adopt/MIT), `katana` (Adopt/MIT), `gopacket` (Steal-from/Apache-2.0), `openvpn-install` (Steal-from/Unlicense)
+  - seo-wiki ×3: `html-anything` (Adopt/Apache-2.0), `itshover` (Adopt/MIT), `oransim` (Adopt/Apache-2.0)
+  - ccc-wiki ×4: `ai-token-monitor` (Adopt/MIT), `CodexBar` (Adopt/MIT), `SuperClaude_Framework` (Adopt/MIT), `Roo-Code` (Adopt/Apache-2.0, archived — fork-blueprint only)
+- **index.md**: K50 ingest source row + K50 tool addition (chandra).
+- **40 Rejects** recorded in aggregate on the source page, not page-ified (corpus-overflow / don't-force-route discipline).
+- **Raw source**: `Multi-Wiki Tool Evaluation.docx` → scp to `cemini-librarian:/opt/cemini-bulk/research/`, laptop copy removed.
+
 ## [2026-05-16] K50 ingest | Stanford CS 230 LSTM paper + 44-tool multi-wiki audit
 
 - **Sources created** (2):

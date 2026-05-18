@@ -419,6 +419,10 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 - [Cemini Multi-Wiki Link Evaluation Report — 44-Tool Audit (May 2026)](sources/tool-evaluation-multi-wiki-audit-may-2026.md) — `[VALIDATED 2026-05-16]` K50. 44-URL systematic evaluation across 7 wiki surfaces. Adopt 7 / Steal-from 2 / Reference-only 4 / Reject 27 / Unavailable 4. License pattern: 25/44 no license, 3 poison pills caught (AGPL-3.0 ×2, CC-BY-NC-SA-4.0), 10 clean MIT/Apache/BSD. — source, tool-evaluation, multi-wiki-routing, license-audit, k50
 - [Trading Posts — AI Workflow, Polymarket Bots, Markov Regime Models](sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md) — `[VALIDATED 2026-05-16]` K49. 3 trader posts: @TraderMorin AI-assisted discretionary workflow; @bored2boar Polymarket bot mistakes (corroborates the bot-architecture playbook); @RohOnChain Markov/HMM regime-switching framework. — source, trading-posts, polymarket-bots, markov-chains, k49
 
+#### K50 ingest (2026-05-17 — multi-wiki tool eval, 56-repo IP-sale audit)
+
+- [Multi-Wiki Ecosystem — Tool Evaluation & IP-Sale Risk Assessment (56-repo batch)](sources/multi-wiki-tool-eval-ipsale-risk-2026-05-17.md) — `[VALIDATED 2026-05-17]` K50. 56 repos across 7 surfaces. Reject 40 (no-license epidemic) / Adopt 10 / Steal-from 2 / Reference 3 / Defer 1. 12 actionable; 11 cross-routed (cybersec ×4, SEO ×3, CCC ×4). Only chandra is OSINT-primary. — source, tool-evaluation, multi-wiki-routing, license-audit, k50
+
 - [151 Trading Strategies (Kakushadze & Serur, 2018)](sources/ssrn-3247865.md) — K25 deep-read: 550+ formulas, 150+ strategies across all asset classes (stocks, options, fixed income, FX, crypto, commodities, volatility, real estate, global macro). Backtesting source code, ~2,000 references, 900+ glossary. SSRN #8 by downloads (121K). Direct strategy catalog for Cemini MAPPO ensemble evaluation. — `pdf`
 - [A Geometry-Aware Residual Correction of Hagan's SABR Implied Volatility Formula (arXiv 2605.06604, Reghai et al., 2026)](sources/sabr-geometry-aware-correction-2605.06604.md) — Hybrid ML-analytical SABR calibration: Hagan formula backbone + neural residual correction using geometry-aware features. R² improves 0.73→0.97 vs naive NN. ~10⁴× speedup over MC. — `pdf` [+quantitative-finance, +sabr, +implied-volatility, +ml-hybrid]
 - [AI Agency Mehmet Canayaz∗ May 5, 2025 AI agents, or autonomous digital employees, introduce a new form of agency within](sources/ai-9-4-6.md) ⚠ — AI agents, or autonomous digital employees, introduce a new form of agency within firms. This paper quantifies the economic trade-offs of in… — `pdf`
@@ -861,6 +865,10 @@ Dev-workflow tooling evaluated for Cemini integration.
 #### K48 tool additions (2026-05-15, OSINT news scan)
 
 - [Arkham Intelligence](entities/tools/arkham-intelligence.md) — `[DRAFT 2026-05-15]` K48 stub. Blockchain-analytics platform — on-chain wallet attribution / crypto-tracing; traced $344M Iran-linked TRON wallets. OSINT crypto-tracing tool. — tool, blockchain-analytics, crypto-tracing, osint, k48
+
+#### K50 tool additions (2026-05-17, multi-wiki tool eval — Adopt-tier)
+
+- [chandra](entities/tools/chandra.md) — `[DRAFT 2026-05-17]` K50 Adopt. ~4B vision-language model (datalab-to) — converts unstructured tables / handwriting / PDFs into structured HTML/JSON; 85.9% olmOCR, 10.7k★. Apache-2.0 code / OpenRAIL-M weights. Ingest-pipeline OCR front-end; GPU/vLLM deployment caveat flagged. — tool, ocr, document-parsing, vision-language-model, ingest-pipeline, adopt, k50
 
 #### K49 tool additions (2026-05-16, tool-eval v3 iteration — Adopt-tier)
 
