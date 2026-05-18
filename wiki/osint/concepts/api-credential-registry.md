@@ -110,7 +110,7 @@ Populated 2026-05-18 from `.env` variable names on `cemini-prod:/opt/cemini/.env
 |---|---|---|---|---|---|
 | X / Twitter API | Social posts, sentiment harvesting | Free tier highly restricted (read very limited) | https://developer.x.com/ | ✅ | `prod .env: X_API_KEY` / `X_API_SECRET` / `X_BEARER_TOKEN` |
 | Telegram Bot API | Bot messaging / alerts | Free `bot token` | https://core.telegram.org/bots | ✅ | `prod .env: TELEGRAM_BOT_TOKEN` |
-| Telegram (Telethon) | Channel/group *reading* (user API) | Free `api_id` + `api_hash` (distinct from bot token) | https://my.telegram.org/apps | ❌ | not in `.env` — only the bot token is held |
+| Telegram (Telethon) | Channel/group *reading* (user API) | Free `api_id` + `api_hash` (distinct from bot token) | https://my.telegram.org/apps | n/a | not needed — the bot's Telegram channel is a private operator↔bot alerts channel, not a content source; the bot token covers outbound alerts |
 
 ### Weather (weather-trading bot)
 
