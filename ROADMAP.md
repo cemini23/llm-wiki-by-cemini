@@ -8,6 +8,24 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-05-17 — K46–K50)
+
+- **Cited-unread-stub deep-read campaign COMPLETE** — 98 → 0 genuine unread-stubs across 9 batches (2026-05-16/17). ~64 source pages turned from metadata shells into real deep-read syntheses; ~26 triaged out-of-scope into `@concepts/corpus-overflow-out-of-scope.md`. Spun off 2 promoted concept pages (`rl-retrain-pipeline-hardening`, `marl-trading-architecture`) + 3 cemini-prod briefs.
+- **K49 ingest** — tool-eval v3 (46-repo batch) + 3 trading posts + SANA-WM video-world-model (routed to image-gen). 4 OSINT Adopt-tier tool pages (pmxt / PolyTerm / polymarket-insider-tracker / socid-extractor); cross-wiki routing to cybersec / CCC / 3d-printing; K49 prediction-market brief shipped to cemini-prod.
+- **Phase-0 audit backlog CLEARED.** Every K44 + K40 queued Phase-0 audit is done (reconciled tables below). K49 added 8 (pmxt CONDITIONAL-GO, PolyTerm GO, Osmedeus GO, jadx-mcp-server GO, socid-extractor GO, SkillKit CONDITIONAL-GO, claude-for-legal STEAL-FROM, Polymarket-Insider-Tracker NO-GO — no LICENSE). Final tail audited 2026-05-17: autots CONDITIONAL-GO, voicemode GO, hunk GO, veloxdb CONDITIONAL-GO.
+- **Stale [NEEDS VERIFICATION] sweep** — Exa-cross-checked the backlog: 20 → [CONFIRMED], 3 → [RETRACTED] (PTA paper is 2023/24 not 2026; Zeroboot no egress roadmap; obsidian-bases no nested-formula validation), 3 → [TENTATIVE]; ~38 INTERNAL/empirical tags honestly left un-re-dated. Lint stale-count 144 → 117.
+- **gbrain** — vector + knowledge-graph search activated on cemini-librarian, MCP-wired into `.mcp.json` (`local` env), verified (927 pages / 2856 chunks). Chunker `maxChars` locally patched 6000→2800 for nomic-embed-text's real 2048-token context.
+- **Librarian wiki-sync FIXED** — the hourly cron had never run (macOS TCC blocks scheduled jobs from `~/Desktop`); replaced with a git `post-commit` hook (primary), the hourly cron restored as a backstop after cron got Full Disk Access, plus a single-run lock on the sync script.
+- **K46–K48** — weekly arXiv sweeps + Q1-2026 13F ingest + K47/K48 tool evals + local adoptions (fingerprint-suite, LEANN, socid-extractor). See `wiki/log.md`.
+- Wiki health: 0 orphans / 0 bidirectional gaps / 0 dangling / **0 cited-unread stubs**. All 6 wikis committed + pushed.
+
+**Genuinely still pending** (everything in the dated sections below is DONE or superseded unless echoed here):
+- **Operator-side**: "The Tail" newsletter 14-day launch (Substack / Stripe / Twitter / static-site host — all operator hands-on; the LLM payload was staged 2026-05-14).
+- **Backtests**: three-formula synthesis backtest + insider-detection 3σ backtest — both blocked on historical Polymarket orderbook data.
+- **Capex-tracker brief** — awaits user green-light.
+- **Server-Claude scope**: review the K47–K50 + MARL-architecture + rl-retrain-hardening briefs in `/opt/cemini/briefs/`; pmxt CONDITIONAL-GO integration conditions (drop baozi adapter, vendor-pin venue SDKs, fork-and-pin); `@pmxt/mcp` needs its own Phase-0.
+- **Minor**: counterfactual-prompting claim-discipline CLAUDE.md update (awaits user OK); `cross_wiki_route.py` cosmetic cleanups (brief double-dating, eval-github @path prefix).
+
 ## Current state (end of 2026-05-14)
 
 - **K45 sprint OPEN 2026-05-14** (mid-morning → ≈10:20a EDT): **"The Tail" Polymarket rare-event newsletter — 14-day revenue MVP launch.** Driven by `/goal` directive: paid weekly newsletter staged from canonical `briefs/2026-05-14_30day-revenue-launch-plan.md` Track B + `2026-05-14_tier1-monetization-comparison.md` decision; methodology anchored on `@concepts/three-formula-system-polymarket-rare-events.md` (40 % Poisson + 35 % Shannon/KL + 25 % Taleb); landing/About copy GEO/AEO-treated per `@seo-wiki/sources/aggarwal-2024-geo-paper.md` (Quotation Addition / Statistics Addition / Fluency Optimization / Cite Sources). **Full 14-day LLM payload staged: 8 launch-asset briefs, all skill_audit PASS 100/100.** **P1 (Days 1-3) — Brand + infra**: `2026-05-14_the-tail-landing-page.md` (hero + JSON-LD FAQPage schema, Aggarwal-treated) / `2026-05-14_the-tail-about-page.md` (E-E-A-T anchor + public-wiki link) / `2026-05-14_the-tail-public-wiki-mirror.md` (public methodology mirror — paste-ready, Path A static-site recommended over Path B kb-server). **P1 / P2 — Market selection**: `2026-05-14_the-tail-issue1-market-candidates.md` (5 hard filters + 3 soft preferences + 3 illustrative candidates incl. recommended primary Anthropic-Pentagon June-30 with CoI footnote). **P2 (Days 4-7) — Issue 1 worked example**: `2026-05-14_the-tail-issue1-draft.md` (paste-ready ~2,800-word free issue, Anthropic-Pentagon three-formula end-to-end → 0.81% NO weighted output; CoI footnote at section-4 opener; Day-5/6 refresh sidebar). **P3 (Days 8-14) — Launch + distribution**: `2026-05-14_the-tail-twitter-launch-thread.md` (8-tweet character-counted thread) + `2026-05-14_the-tail-issue2-draft.md` (paste-ready ~2,400-word paywalled issue, BTC-ATH August-1 three-formula end-to-end → 3.14% YES weighted output demonstrating the compounding case vs Issue 1; Day-12 refresh sidebar). **P4 (Days 15-30) — Compound**: `2026-05-14_the-tail-linkedin-issue1-repost.md` (~1,400-word LinkedIn Article repost, condensed math + LinkedIn-tuned hashtags) + `2026-05-14_the-tail-issue1-wiki-crosspost.md` (filing-instructions brief for cross-posting Issue 1 worked example as new OSINT wiki concept page + 5 bidirectional backlink patches). **Day-30 success target**: Substack live + Issue 1 (free) + Issue 2 (paid) shipped + ≥30 free signups + ≥10 founders' subs ($19/mo, cap 100) = $190+ MRR (stretch $400+) + public methodology wiki linked. **LLM-side P1-P4 queue is exhausted; remaining 14-day execution is operator hands-on Substack/Stripe/Twitter/static-site-host.** Track A (GEO/AEO local outreach) runs in parallel per the 30-day plan but not staged in this K-series.
@@ -47,29 +65,29 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 - **K44 ingest COMPLETE 2026-05-14** (morning): Gemini Deep Research v3 multi-wiki tool eval ("Tool Evaluation for Cemini Wiki Integration.docx", 28 URLs). Verdict rollup: **7 Adopt + 7 Steal-from + 1 Defer + 3 Reference + 3 Reject + 7 UNAVAILABLE**. **New largest cross-wiki routing event** — supersedes K43; all 6 sibling wikis touched with 14 actionable items spanning 4 destination wikis. **1 source + 1 concept + 7 OSINT entity stubs + 17 cross-wiki entries** committed across 5 git repos. **Key formalization**: `@concepts/multi-wiki-eval-doc-level-vs-phase-0.md` codifies the K43 two-gate lesson (doc-level eval is necessary but not sufficient — Phase-0 source audit required for all Adopt/Steal-from verdicts before promotion to `validated`). **Highest-priority Adopt items**: `betterleaks.md` (deep page, cybersec — pre-IP-sale codebase audit critical; CEL filtering + BPE tokenization for false-positive reduction) + `aulekator-polymarket-btc-bot.md` (NautilusTrader 15-min BTC, direct K43 Polymarket-integration follow-up). **Cross-wiki convergence finding**: `geo-seo-claude` already adopted by seo-wiki 2026-05-07 (Phase-0 GO retained as authoritative); K44 independent reconfirmation elevates signal quality (two evals converged on same GO). **Star-inflation skepticism flagged**: jcode (6.1k★ solo) + geo-seo-claude (7.2k★ solo) — Phase-0 G1 (gh api star/fork ratio verification) required. **License posture clarifications**: czkawka dual-license isolation (czkawka_core MIT extractable, GUI GPL-3.0 poison via `cargo tree` verification) / red-run + cariddi GPL-3.0 patterns-only / ai-infra-guard Apache-2.0 with restrictive attribution clauses. All Adopt/Steal-from verdicts treated as `doc-level-pending-phase-0` maturity. wiki_lint: **0 K44 bidirectional gaps** (5 patched: polymarket-clob-api + polymarket-gamma-api + three-formula-system + bukosabino-ta + tradingview-mcp-atilaahmettaner + eval-github-repos-2026-05-13 + awesome-polymarket-tools). Raw source SCPed to librarian; laptop inbox clean.
 
-### K44 follow-ups (queue)
+### K44 follow-ups (queue) — ✅ ALL AUDITED (reconciled 2026-05-17)
 
-| Item | Action | Status |
-|------|--------|--------|
-| **betterleaks Phase-0 audit** | **HIGHEST PRIORITY** — pre-IP-sale codebase audit critical. Clone, verify license (claim TBD), run `gh api repos/.../star_count` + commit-cadence + open-issues check, validate CEL filter + BPE-tokenization claims via test corpus on sample Cemini repo. Output: GO / CONDITIONAL-GO / NO-GO + 3-phase adoption plan (pre-IP-sale scan → CI/CD → sister-wiki). | **PENDING** — top of K44 queue |
-| **aulekator-polymarket-btc-bot Phase-0 audit** | K43 follow-up; 7 gates incl. G3 (Polymarket adapter audit: Gamma+CLOB blessed path vs scraping caveat vs vendor SDK) + G7 (NautilusTrader license confirmation). Determines whether this is a usable production scaffold or a research-only reference. | **PENDING** |
-| **alumnium Phase-0 audit** | CCC-side Adopt. AI-native E2E testing MCP (655★, Apache-2.0). Phase-0: license + star/fork ratio + maturity. Possible test-harness for Cemini-shipped MCP servers. | **PENDING** |
-| **optillm Phase-0 audit** | CCC-side Adopt. LLM proxy with Z3 + MCP (3.8k★, Apache-2.0). Phase-0: Z3 integration depth + cost-routing comparison vs Hermes/Kimi orchestra (K40 concept). | **PENDING** |
-| **adamsreview Phase-0 audit** | CCC-side Adopt. K37 reviewer-agent v2 convergence signal (188★, MIT). **Phase-0 must compare directly against K37 spec** — convergent prior art, possible reviewer-agent template. May obsolete K37 Sprint 5 deferral if mature enough. | **PENDING** — K37 cross-reference |
-| **gtm-agents Phase-0 audit** | SEO-side Adopt. Apache-2.0 GTM/sales/marketing skill pack. Compare to existing `@seo-wiki/entities/tools/marketingskills.md` + `ai-marketing-skills.md` for incremental value before adoption. | **PENDING** |
-| **supavec Phase-0 audit** | Steal-from. PLpgSQL chunking + retrieval patterns for kb-server backend hardening. Phase-0: SQL pattern extraction feasibility (no full adoption). | **PENDING** |
-| **LAP Phase-0 audit** | Steal-from. OpenAPI→MCP compilation pattern for kb-server MCP automation pipeline. Phase-0: pattern extraction feasibility. | **PENDING** |
-| **thuki Phase-0 audit** | CCC-side Steal-from. SQLite local-first state extraction patterns (Apache-2.0, 485★). Phase-0: pattern reusability vs existing claude-mem v13.0.1. | **PENDING** |
-| **jcode Phase-0 audit** | CCC-side Steal-from. Solo-maintainer 6.1k★ flagged for **star-inflation skepticism** (Phase-0 G1: gh api star/fork ratio verification mandatory). MIT. | **PENDING** — solo-maintainer risk |
-| **ai-infra-guard Phase-0 audit** | Cybersec-side Steal-from + image-gen cross-route (ComfyUI vuln detection). Tencent, 64 AI frameworks. Apache-2.0 with restrictive attribution clauses — license deep-read required. | **PENDING** |
-| **cariddi Phase-0 audit** | Cybersec-side Steal-from. GPL-3.0 poison → patterns only, no embedding. Phase-0: pattern extraction scope. | **PENDING** |
-| **czkawka Phase-0 audit** | Cybersec + image-gen cross-route. **Dual-license isolation**: czkawka_core MIT extractable (LoRA dedup + filesystem analysis), GUI GPL-3.0 must remain unbuilt. Phase-0: `cargo tree` verification of license isolation. | **PENDING** |
-| **red-run Phase-0 audit** | CCC + cybersec cross-route. GPL-3.0 → architectural patterns only (Sliver C2 + agent-team coordination). Phase-0: pattern extraction scope; no library embedding. | **PENDING** |
-| **gym-anything (Defer)** | CMU-L3 MIT 211★ — low maturity. Re-evaluate quarterly. | **TRACKING** |
-| **geo-seo-claude reconfirmation closure** | K44 cross-wiki convergence confirmed seo-wiki's 2026-05-07 Phase-0 GO. No new audit needed; verdict already authoritative. | **CLOSED 2026-05-14** |
-| **Awesome-Polymarket-Tools (CC0) — supersedes Reject alternative** | Reference-only. Use as discovery layer for Polymarket tooling; replaces rejected awesome-prediction-market-tools-aarora4 (no-license). | **TRACKING** |
+The 14-tool Phase-0 audit queue was completed in the K44 campaign (2026-05-14); the verdicts were never marked back here, so a 2026-05-17 batch re-confirmed every entity page already carried a verdict. Resolved:
 
-**K44 effort estimate**: ~7-14 hours total Phase-0 audit time (30-60min per item × 14 actionable). Sequencing: betterleaks (pre-IP-sale critical) → aulekator-bot (K43 follow-up) → CCC adopt trio → SEO/Steal-from batch → cybersec batch.
+| Item | Verdict | Audited |
+|------|---------|---------|
+| betterleaks Phase-0 | audited (see entity page) | 2026-05-15 |
+| aulekator-polymarket-btc-bot Phase-0 | **NO-GO** bot / **STEAL-FROM** adapter — no LICENSE file; G3 adapter uses blessed py-clob-client+Gamma path | 2026-05-14 |
+| alumnium Phase-0 | **GO** — MIT, healthy multi-contributor; real MCP stdio contract | 2026-05-14 |
+| optillm Phase-0 | **GO** (IP-sale caveats) — Apache-2.0; Z3 integration confirmed real | 2026-05-14 |
+| adamsreview Phase-0 | **CONDITIONAL-GO** — divergent from K37 reviewer-agent spec, do NOT rebase | 2026-05-14 |
+| gtm-agents Phase-0 | **SKIP** — supplement-only vs `marketingskills.md` | 2026-05-14 |
+| supavec Phase-0 | **STEAL-FROM-GO** — Apache-2.0; PLpgSQL match_documents portable, ~18-28h port | 2026-05-14 |
+| LAP Phase-0 | **STEAL-FROM-CONDITIONAL** — K44 OpenAPI→MCP use case invalid (compiles to `@lap` grammar, not MCP) | 2026-05-14 |
+| thuki Phase-0 | **SKIP** — mis-described in queue; Tauri Ollama-overlay app, no extraction target | 2026-05-14 |
+| jcode Phase-0 | **STEAL-FROM-CONDITIONAL** — MIT; 6.1k★ verified **organic**, not inflated; it's a Claude Code competitor | 2026-05-14 |
+| ai-infra-guard Phase-0 | **CONDITIONAL-GO** — external Docker only; Apache-2.0 NOTICE has mandatory-attribution poison if embedded | 2026-05-14 |
+| cariddi Phase-0 | **STEAL-FROM-PATTERNS-ONLY** — GPL-3.0; clean-room re-impl only | 2026-05-14 |
+| czkawka Phase-0 | **STEAL-FROM-CONDITIONAL** — Python clean-room port (Rust core drags LGPL/MPL transitively) | 2026-05-14 |
+| red-run Phase-0 | **REFERENCE-ONLY** — GPL-3.0; architectural patterns only | 2026-05-14 |
+| gym-anything (Defer) | CMU-L3 MIT 211★ — low maturity | **TRACKING** — re-evaluate quarterly |
+| geo-seo-claude reconfirmation | seo-wiki 2026-05-07 Phase-0 GO authoritative | **CLOSED 2026-05-14** |
+| Awesome-Polymarket-Tools (CC0) | Reference-only discovery layer | **TRACKING** |
 
 ## Current state (end of 2026-05-13)
 
@@ -136,10 +154,10 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 | Item | Action | Status |
 |------|--------|--------|
-| **AutoTS Phase-0 audit** | Phase-0 source audit before FastMCP integration: license (MIT confirmed), GPU MAPPO compat, dependency footprint vs Cemini 7GB Hetzner | **PENDING** — top-priority Adopt verdict |
-| **voicemode laptop install** | Local Whisper.cpp + Kokoro voice I/O for Claude Code workflow | **PENDING** Phase-0 (single-dev bus-factor check) |
-| **hunk laptop install** | Offline diff/patch UI; reduces LLM context bloat | **PENDING** Phase-0 (license + maturity) |
-| **veloxdb laptop install** | Rust embedded KV for ingest pipeline caches | **PENDING** Phase-0 (Rust SBOM + license verification) |
+| **AutoTS Phase-0 audit** | Phase-0 source audit before FastMCP integration: license, GPU/MAPPO compat, dependency footprint vs Cemini's small Hetzner box | **DONE 2026-05-17 — CONDITIONAL-GO** — MIT confirmed; light 4-package core, real first-class MCP server; install via the `[mcp]` extra only (excludes TensorFlow). Not an RL framework (no MAPPO). |
+| **voicemode laptop install** | Local Whisper.cpp + Kokoro voice I/O for Claude Code workflow | **DONE 2026-05-17 — GO** Phase-0 — MIT; bus-factor ~1 but tolerable (non-serving laptop tool, MIT fork escape hatch). Install pending user direction. |
+| **hunk laptop install** | Offline diff/patch UI; reduces LLM context bloat | **DONE 2026-05-17 — GO** Phase-0 — MIT, 24 contributors, healthy; pre-1.0 beta, pin a known-good version. Install pending user direction. |
+| **veloxdb laptop install** | Rust embedded KV for ingest pipeline caches | **DONE 2026-05-17 — CONDITIONAL-GO** Phase-0 — MIT; 667-crate SBOM clean (9 MPL-2.0 weak-copyleft only, no GPL); young repo + single-dev — validate before load-bearing use. |
 | **anthropic-harness-design adoption** | Planner/Generator/Evaluator trinity → CEMINI orchestrator architecture (replaces ad-hoc LangGraph routing) | **PENDING** — sprint contract + Phase-0 audit + brief |
 | **NPM supply-chain defense prod brief** | Brief at `cemini-prod:/opt/cemini/briefs/2026-05-12_npm-supply-chain-defense.md` | **SHIPPED 2026-05-12** — awaits server-Claude execution |
 | **Multi-wiki Gemini eval prompt v2** | Available at `wiki/sources/multi-wiki-gemini-eval-prompt-2026-05-12.md` Snippets section — copy-paste-ready | **READY for next eval batch** |
