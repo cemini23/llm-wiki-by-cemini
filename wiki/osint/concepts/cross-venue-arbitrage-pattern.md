@@ -20,6 +20,7 @@ related:
   - concepts/polymarket-updown-bot-taxonomy.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - entities/tools/hftbacktest.md
+  - entities/tools/prediction-market-analysis.md
 maturity: draft
 created: 2026-05-05
 updated: 2026-05-18
@@ -41,6 +42,7 @@ updated: 2026-05-18
 - @concepts/prediction-market-statistical-arbitrage.md — the quant *signal* layer for this loop: cointegration + Ornstein-Uhlenbeck calibration decides *when* a Poly×Kalshi spread is tradeable and at what threshold; this page is the poll→execute→reconcile machinery that acts on it
 - @concepts/polymarket-updown-bot-taxonomy.md — K52 6-type bot taxonomy; its Type 4 (cross-timeframe lag, 5min↔15min) is the within-venue cousin of this cross-venue loop
 - @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — K52 X-posts batch; Post 4 (@ridark_eth) supplies the quant math layer for this loop
+- @entities/tools/prediction-market-analysis.md — K52-verified MIT dataset; its cross-venue `comparison/` analyses + trade-price history are a backtest substrate for tuning this loop's profit thresholds
 
 ## Raw Concept
 

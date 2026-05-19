@@ -10,6 +10,7 @@ related:
   - concepts/polymarket-updown-bot-taxonomy.md
   - concepts/markov-regime-switching-models.md
   - concepts/market-microstructure.md
+  - entities/tools/prediction-market-analysis.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-18
@@ -23,6 +24,7 @@ updated: 2026-05-18
 - @concepts/polymarket-updown-bot-taxonomy.md — Types 3 (fair-value/repricing) and 5 (imbalance) are the bot-strategy expression of this page's micro-price / OBI math
 - @concepts/markov-regime-switching-models.md — the cross-venue predictive signal (Method 2 Phase 3) uses a rolling Markov transition matrix
 - @concepts/market-microstructure.md — order-book mechanics (depth, spread, micro-price) backdrop
+- @entities/tools/prediction-market-analysis.md — the repo Post 4 advertised; verified 2026-05-18 as real + MIT, but a trades/markets dataset, **not** the L2 order-book dataset the post claimed
 
 ## Raw Concept
 
@@ -125,7 +127,7 @@ The post's core takeaway: institutional desks are *agnostic to the actual event*
 - **Method 1 is the realistic Cemini target.** ADF/Johansen/OU calibration runs offline on `cemini-prod`; the resulting thresholds drive a relaxed-cadence scanner — no co-location. statsmodels covers ADF/Johansen; OU-MLE is a short fit.
 - **Method 2 is aspirational.** A 200ms cross-venue predictive edge needs co-located low-latency infra Cemini does not have; record it as a reference, do not scope it.
 - **Not riskless — size with discipline.** Cointegration can break (the relationship was historical, not guaranteed). Treat stat-arb as a probabilistic strategy under @concepts/kelly-sizing-quarter.md sizing, not as the locked-payoff arb of @concepts/non-latency-arbitrage-strategies.md.
-- **Repo/dataset claim — `[NEEDS VERIFICATION 2026-05-18]`.** The post advertises `github.com/Jon-Becker/prediction-market-analysis` plus an L2 order-book dataset ("55GB" in the title, "39GB compressed" / 850M-row Parquet in the body, hosted on Cloudflare R2). The clone instructions are internally inconsistent (`git clone …/prediction-market-analysis` then `cd prediction-market-arbitrage`) and the size figures conflict — classic engagement-bait tells. The *math* is textbook-correct regardless; the *repo and dataset* must be verified (Exa / direct clone) before being treated as a real backtest resource or given an entity page.
+- **Repo/dataset — verified 2026-05-18.** The advertised repo `github.com/Jon-Becker/prediction-market-analysis` **is real**: MIT-licensed, ~3,378★, actively maintained — see @entities/tools/prediction-market-analysis.md. But Post 4 **misrepresents what it contains.** The real dataset is **trades + market metadata** (36 GiB compressed), *not* the "L2 order-book snapshots, 20 levels deep, 100ms, 850M state updates" the post described — there is no order-book depth data in it, and every setup command in the post is wrong (`cd prediction-market-arbitrage` 404s; `make download-ob` / `orderbooks_l2.tar.zst` / `data/snapshots/` do not exist). **Consequence for this page: Method 1 is backtestable** from the real dataset (cointegration / OU calibration on trade or mid prices, plus the repo's own cross-venue `comparison/` analyses). **Method 2 is not** — order-book imbalance and micro-price need L2 data this dataset does not have. To do Method-2 work, Cemini must record its own L2 snapshots (see the @0x_Punisher 6-layer websocket playbook in @concepts/polymarket-bot-architecture.md). The OBI/micro-price *math* in Method 2 remains textbook-correct; only the post's claimed *data source* for it is fictional.
 
 ## Snippets
 
@@ -137,4 +139,4 @@ The post's core takeaway: institutional desks are *agnostic to the actual event*
 
 ## Dead Ends
 
-*(none yet — first synthesis. If the @ridark_eth repo/dataset is verified absent or unusable, record that here so the dead end is not re-walked.)*
+- **Method 2 (OBI / micro-price) cannot be backtested from the @ridark_eth-advertised dataset.** Post 4 claimed `Jon-Becker/prediction-market-analysis` ships L2 order-book snapshots; verification (2026-05-18) showed it ships *trades + market metadata* only. Do not re-attempt to source Method-2 L2 data from that repo — it is not there. Method-2 work requires Cemini recording its own L2 snapshots. Recorded so the dead end is not re-walked.

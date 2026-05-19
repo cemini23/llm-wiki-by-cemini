@@ -38,7 +38,7 @@ What prompted this page: K52 ingest of @zostaff's X post cataloging 22 public Gi
 | Optiver | global options market maker | 2 |
 | WorldQuant | \$9B AUM | 1 (community impl) |
 
-Almost all repos are **MIT / Apache-2.0 / BSD**. The single exception is **ArcticDB** (Man Group) under the **Business Source License (BSL)** — free for non-production use, paid license required for commercial deployment.
+Almost all repos are **MIT / Apache-2.0 / BSD**. The single exception is **ArcticDB** (Man Group) under the **Business Source License 1.1 (BSL)**. The post frames BSL as "paid license required for commercial deployment" — but that is an oversimplification. Verified 2026-05-18: ArcticDB's BSL **Additional Use Grant** forbids only re-offering ArcticDB *as a multi-tenant hosted database service*; all other use, including commercial internal use, is free, and each version converts to Apache-2.0 two years after release. See @entities/tools/arcticdb.md.
 
 ### The 22 repos
 
@@ -91,7 +91,7 @@ Man Group is a partial third case: it open-sources because its core IP (ArcticDB
 
 ### Cemini posture
 
-- **ArcticDB is the live adoption candidate** — server-less S3-backed tick storage maps directly onto the `cemini-librarian:/opt/cemini-bulk/market-dataset/` layer. Gated by its **BSL license** (commercial deployment needs a paid license) — see @entities/tools/arcticdb.md for the Phase-0 decision.
+- **ArcticDB is an adopt-eligible candidate** — server-less S3-backed tick storage maps directly onto the `cemini-librarian:/opt/cemini-bulk/market-dataset/` layer. License verified 2026-05-18: the BSL Additional Use Grant **permits Cemini's intended internal use for free** (Cemini is not running a hosted Database Service). Remaining gate is purely technical (benchmark vs current Parquet handling) — see @entities/tools/arcticdb.md.
 - **flint / alpha101** are reference material, not adoptions: flint is Spark-coupled (Cemini is not a Spark shop); alpha101 is a feature-engineering reference for the signal layer.
 - The rest (beakerx, dtale, magic-trace, pyflyby, …) are general dev ergonomics — note their existence, do not Phase-0 them unless a concrete need surfaces.
 - This post is a **directory**, not an evaluation. Treat star counts as point-in-time (post date ~May 2026); any actual adoption runs the standard Phase-0 audit.

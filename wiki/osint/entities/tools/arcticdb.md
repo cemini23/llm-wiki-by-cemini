@@ -1,7 +1,7 @@
 ---
 title: ArcticDB — server-less S3-backed time-series database (Man Group)
 type: entity
-tags: [entity, tool, time-series-database, tick-storage, market-data, bsl-license, k52, phase-0-pending]
+tags: [entity, tool, time-series-database, tick-storage, market-data, bsl-license, k52, adopt-eligible]
 keywords: [arcticdb, man-group, time-series-database, s3-backed, server-less, pandas, tick-storage, business-source-license, bsl, market-dataset]
 related:
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
@@ -37,20 +37,21 @@ Cemini's raw market-data canon currently lives as historical files under `/opt/c
 
 It is a plausible replacement for ad-hoc CSV/Parquet handling in the market-dataset layer.
 
-### The license gate — `[NEEDS VERIFICATION 2026-05-18]`
+### The license gate — verified `[CONFIRMED 2026-05-18]`
 
-ArcticDB is under the **Business Source License (BSL)**, *not* a standard OSI open-source license. BSL is free for non-production use and converts to an open license after a change date, but **commercial / production deployment requires a paid license** until then. Cemini's trading stack is a commercial production system — so adoption is **not free** the way an MIT tool would be.
+ArcticDB is under the **Business Source License 1.1** (Licensor: Man Group Operations Limited) — *not* a standard OSI license, which is why GitHub's detector reports it as `NOASSERTION` / "Other". But the BSL's force depends entirely on its **Additional Use Grant**, and ArcticDB's is narrow. Verbatim from the repo `LICENSE.txt` (read 2026-05-18):
 
-Before any adoption:
-1. Read ArcticDB's actual `LICENSE` file and BSL "Additional Use Grant" — BSL terms are per-project; the production-use carve-out and the change-date matter.
-2. Confirm whether Cemini's intended use (internal research-stack storage vs. a customer-facing product) falls inside or outside the free Additional Use Grant.
-3. If a paid license is required, price it against the alternative (stay on Parquet, or use a permissively licensed store).
+> *Additional Use Grant: You may make use of the Licensed Work under the terms of this License, **provided that you may not use the Licensed Work for a Database Service.** A "Database Service" is a commercial offering that allows third parties (other than your employees and contractors) to access the functionality of the Licensed Work by creating tables whose schemas are controlled by such third parties.*
+>
+> *Change Date: ... two years as of the release date of [each] version. Change License: Apache License, version 2.0.*
 
-This is exactly the license-posture discipline in @concepts/cemini-license-posture.md — a capable tool with a non-OSS license is a *conditional* candidate, not a free one.
+**What this means for Cemini.** The only thing the BSL forbids is **re-offering ArcticDB itself as a multi-tenant hosted database service**. Cemini's intended use — storing its *own* market data for its *own* trading stack, schemas controlled by Cemini — is **not a "Database Service"** and is fully permitted, with no paid license. Each version also converts to plain Apache-2.0 two years after its release.
+
+So the @zostaff post's framing ("paid license required for commercial deployment") is an **oversimplification** — BSL ≠ "commercial = paid". The restriction is specifically the SaaS-rehosting carve-out, which Cemini does not trip. The license-posture lesson: read the *Additional Use Grant*, not just the license name (recorded in @concepts/cemini-license-posture.md).
 
 ### Verdict
 
-**Phase-0 pending.** Capable and well-fit on the technical axis; gated entirely on the BSL terms. Run the standard Phase-0 audit (clone, read LICENSE, verify maturity signals, check the failure mode — here the failure mode is *license*, not architecture) before any GO/NO-GO.
+**Adopt-eligible — license-clear for Cemini's intended use.** Technically well-fit (server-less S3-backed tick storage maps directly onto the market-dataset layer) and the BSL Additional Use Grant permits it for free. This is a **server-side adoption** (`cemini-librarian` market-dataset layer), so it flows through a `cemini-prod` brief, not a laptop install — see the K52 brief `briefs/2026-05-18_polymarket-bot-edges-cemini.md`. Remaining Phase-0 work is purely technical: benchmark ingest/query throughput against the current Parquet handling before migrating.
 
 ## Snippets
 

@@ -12,10 +12,11 @@ related:
   - entities/tools/financedatabase.md
   - entities/tools/financetoolkit.md
   - entities/tools/klaassen-magnus-elo.md
+  - entities/tools/prediction-market-analysis.md
 maturity: draft
 hub: true
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-18
 ---
 
 ## Relations
@@ -30,6 +31,7 @@ updated: 2026-05-05
 - @entities/tools/financedatabase.md — K30 Adopt; 300k offline financial-symbol catalog, complementary to prediction-market historical data (one is symbol-universe, the other is venue-specific time series)
 - @entities/tools/financetoolkit.md — K28 Adopt; 150-metric library that operates over historical data (downstream consumer)
 - @entities/tools/klaassen-magnus-elo.md — K28 Steal-from; tennis-prediction Elo runs on historical match data, the predictions feed prediction-market trades — direct downstream consumer
+- @entities/tools/prediction-market-analysis.md — the K30 `5_5-links-2` URL-6 Steal-from item, now given a verified entity page (K52, 2026-05-18): MIT, ~3,378★, the largest public Polymarket+Kalshi **trades + markets** dataset (36 GiB) + collection/analysis framework — a concrete Layer-1 backtest substrate for this hub
 
 ## Raw Concept
 

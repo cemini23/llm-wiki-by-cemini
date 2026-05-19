@@ -5609,3 +5609,17 @@ Ingested `posts.docx` from `research to be indexed/` — 6 X (Twitter) posts sep
 - Post 3 (@timbidefi UGC monetization loop) routed to **seo-wiki** as a brief via `scripts/cross_wiki_route.py` — creator marketing / social-media ops, off-topic for OSINT.
 
 `index.md` updated (+1 source row under a new K52 subsection, +3 concept rows, +2 tool rows under a new K52 subsection). Raw source moved to `cemini-librarian:/opt/cemini-bulk/research/posts-2026-05-18.docx`.
+
+### Update — K52 verification + cemini-prod brief (2026-05-18)
+
+Verified the two K52 `[NEEDS VERIFICATION]` items (free web/GitHub checks, no paid steps) and staged a prod brief.
+
+**ArcticDB license — verified, verdict upgraded.** Read `man-group/ArcticDB/LICENSE.txt` directly. It is BSL 1.1, but the Additional Use Grant forbids *only* re-offering ArcticDB as a multi-tenant hosted Database Service; all other use (including Cemini's internal tick storage) is free, and each version converts to Apache-2.0 two years post-release. The @zostaff post's "paid license required for commercial deployment" is an oversimplification. `entities/tools/arcticdb.md` verdict: Phase-0-pending → **Adopt-eligible** (license-clear). `cemini-license-posture.md` records it as the "read the Additional Use Grant, not the license name" exemplar.
+
+**@ridark_eth repo — verified real, but the post misrepresents it.** `github.com/Jon-Becker/prediction-market-analysis` is real: MIT, ~3,378★, actively maintained (Jon Becker, heimdall-rs author). But Post 4 fabricated the L2 detail — the actual dataset is **trades + market metadata** (36 GiB compressed), not "L2 order-book snapshots, 20 levels, 100ms, 850M state updates," and every setup command in the post is wrong (`cd prediction-market-arbitrage` 404s; `make download-ob` / `orderbooks_l2.tar.zst` / `data/snapshots/` do not exist). New entity page `entities/tools/prediction-market-analysis.md` (Adopt-eligible, MIT, server-side); it consolidates a prior K30 `5_5-links-2` URL-6 Steal-from mention. Consequence recorded on `prediction-market-statistical-arbitrage.md`: Method 1 (cointegration/OU) is backtestable from the real dataset; Method 2 (OBI/micro-price) is not — `[RETRACTED]` the L2 claim, logged in that page's Dead Ends.
+
+**New page**: `entities/tools/prediction-market-analysis.md`. **Updated**: arcticdb (verdict upgrade), prediction-market-statistical-arbitrage (repo caveat → verified + Dead End), x-posts source page (Post 4 caveat), hedge-fund-open-source-tooling (BSL correction), cemini-license-posture (BSL exemplar), + bidirectional backlinks on cross-venue-arbitrage-pattern, prediction-market-historical-analysis, favorite-longshot-bias. `index.md`: arcticdb row updated + prediction-market-analysis row added.
+
+**Local adoptions**: none on the laptop — both verified candidates (ArcticDB, prediction-market-analysis) are server-side per the deployment boundary (market-dataset layer / 36 GiB dataset). Phase-0 audits were done locally: `prediction-market-analysis` cloned to `/tmp` (code only, no dataset) — LICENSE confirmed MIT in-file, deps clean, structure verified — Phase-0 GO; clone removed after audit.
+
+**cemini-prod brief**: `briefs/2026-05-18_polymarket-bot-edges-cemini.md` — synthesizes the 3 Cemini-relevant K52 posts (Up/Down bot taxonomy, cross-market stat-arb Method 1, 3-operator-confirmed build discipline) + the 2 verified data-layer candidates. skill_audit PASS 100/100. Delivered to `cemini-prod:/opt/cemini/briefs/`.

@@ -13,6 +13,7 @@ related:
   - concepts/non-latency-arbitrage-strategies.md
   - entities/tools/hermes-agent.md
   - entities/tools/arcticdb.md
+  - entities/tools/prediction-market-analysis.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-18
@@ -31,6 +32,7 @@ clusters: [quant-finance]
 - @concepts/non-latency-arbitrage-strategies.md — Post 2's "Arbitrage Bot" type is the latency-relaxed YES+NO<\$1 case already documented there
 - @entities/tools/hermes-agent.md — Post 5 deploys on Nous Research's Hermes Agent runtime
 - @entities/tools/arcticdb.md — Post 1's tick-store repo (Man Group), an adoption candidate for the Cemini market-dataset layer
+- @entities/tools/prediction-market-analysis.md — the repo Post 4 advertised; verified 2026-05-18 (real + MIT, but the post misrepresents its contents)
 - @seo-wiki/briefs/2026-05-18_ugc-3-platform-monetization-loop.md — Post 3 (@timbidefi UGC creator monetization) routed to seo-wiki as a brief; off-topic for OSINT
 
 ## Raw Concept
@@ -66,7 +68,7 @@ A quant roadmap for trading the spread between the *same* event listed on Polyma
 - **Method 1 — Cointegration + Ornstein-Uhlenbeck mean reversion.** Build the spread `S_t = P_Poly − β·P_Kalshi − μ`; test stationarity (ADF / Johansen); model `S_t` as an OU process `dS = θ(μ−S)dt + σ dW`; calibrate θ/μ/σ by MLE on historical data (Euler–Maruyama discretization); enter/exit at thresholds derived from an optimal-stopping problem. Tradeable only if mean-reversion time `τ = 1/θ` beats execution latency.
 - **Method 2 — Order-Book Imbalance + micro-price.** `I_t = (V_bid − V_ask)/(V_bid + V_ask) ∈ [−1,1]`; micro-price `P_micro = P_mid + I_t·(spread/2)`; cross-venue, a large imbalance on the faster venue predicts the slower venue's book clearing within a ~200ms window via a rolling Markov transition matrix.
 
-→ synthesized into @concepts/prediction-market-statistical-arbitrage.md. **Caveat**: the math is standard pairs-trading theory and is correct; the *repo/dataset* claims (`github.com/Jon-Becker/prediction-market-analysis`, "55GB" / "39GB compressed" / 850M-row Parquet L2 dataset on Cloudflare R2) carry engagement-bait inconsistencies (clone target `prediction-market-analysis` vs `cd prediction-market-arbitrage`; "55GB" title vs "39GB compressed" body) and are `[NEEDS VERIFICATION 2026-05-18]`.
+→ synthesized into @concepts/prediction-market-statistical-arbitrage.md. **Caveat — verified 2026-05-18**: the math is standard pairs-trading theory and is correct. The advertised repo `github.com/Jon-Becker/prediction-market-analysis` **is real** (MIT, ~3,378★, active — @entities/tools/prediction-market-analysis.md), but Post 4 **misrepresents it**: the actual dataset is **trades + market metadata** (36 GiB compressed), `[RETRACTED]` *not* the "L2 order-book snapshots, 20 levels, 100ms, 850M state updates" the post claimed, and every setup command in the post is wrong (`cd prediction-market-arbitrage` 404s; `make download-ob` / `orderbooks_l2.tar.zst` / `data/snapshots/` do not exist). Net: Method 1 (cointegration/OU) is backtestable from the real dataset; Method 2 (OBI/micro-price) is not — that needs L2 data the dataset lacks.
 
 ### Post 5 — @0xMovez: "Hermes Agent + Polymarket — self-learning weather trading bot \$100 → \$5,000"
 
@@ -80,7 +82,7 @@ Follow-up to a 12M-view part-1 article ("How Claude turned \$300 into \$2,382,78
 
 - All six are **social-media creator content** with promotional components (referral links, Telegram/X follows, paid courses). Treat methodology as plausible; treat specific PnL/win-rate numbers (`$300→$2.38M`, `ColdMath $300→$219K`, `Sharky6999 99.3% WR`, `RN1 $1.2K→$7.3M`, `$17k/month`) as `[TENTATIVE]` single-source marketing.
 - Posts 2, 4, and 6 converge on the same core claim — short-crypto Polymarket markets reprice with a lag, and the edge is acting on structure before the correction. That triangulation is the genuinely high-signal extract.
-- Post 4's quant math is textbook-correct; its repo/dataset is unverified. Post 1's repos are real and verifiable. Post 5's Hermes Agent is a real Nous Research release (ties to the existing @entities/tools/hermes-lcm.md plugin).
+- Post 4's quant math is textbook-correct; its repo is real (MIT) but the post misrepresents the dataset (verified 2026-05-18 — trades/markets, not L2). Post 1's repos are real and verifiable; ArcticDB's BSL was verified to permit Cemini's intended use (the post's "paid license" framing is an oversimplification). Post 5's Hermes Agent is a real Nous Research release (ties to the existing @entities/tools/hermes-lcm.md plugin).
 
 ## Snippets
 
