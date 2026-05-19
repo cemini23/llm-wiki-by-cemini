@@ -12,12 +12,6 @@
       "args": ["cemini-librarian", "cd /opt/cemini-wiki && KB_TOOL_ALLOWLIST=kb_search,kb_search_smart,kb_context,kb_read,kb_list,kb_vault_status,kb_safety_check node /opt/kb-server/src/mcp.js"],
       "env": {}
     },
-    "gbrain": {
-      "type": "stdio",
-      "command": "ssh",
-      "args": ["cemini-librarian", "cd /opt/gbrain && PATH=$HOME/.bun/bin:$PATH GBRAIN_EMBEDDING_MODEL=ollama:nomic-embed-text bun run src/cli.ts serve"],
-      "env": {}
-    },
     "prod-mcp": {
       "type": "sse",
       "url": "http://localhost:18002/mcp"
@@ -38,7 +32,7 @@
   "environments": [
     {
       "name": "local",
-      "mcpServers": ["conductor", "kb-server", "gbrain"]
+      "mcpServers": ["conductor", "kb-server"]
     },
     {
       "name": "prod",
@@ -47,8 +41,8 @@
     },
     {
       "name": "librarian",
-      "description": "Cemini librarian (Hetzner librarian) — kb-server + gbrain via SSH stdio, stash auto-tunneled via LaunchAgent on :8088. gbrain serve verified working 2026-05-17 (get_stats: 926 pages / 2843 chunks indexed); 70 tools, vector + knowledge-graph search over the wiki.",
-      "mcpServers": ["kb-server", "librarian-stash", "gbrain"]
+      "description": "Cemini librarian (Hetzner librarian) — kb-server via SSH stdio, stash auto-tunneled via LaunchAgent on :8088.",
+      "mcpServers": ["kb-server", "librarian-stash"]
     },
     {
       "name": "lazy",

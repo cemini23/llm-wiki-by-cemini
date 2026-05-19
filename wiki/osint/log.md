@@ -5572,3 +5572,7 @@ The request also asked to catalog third-party repos of "thousands of free keys" 
 ### Update — registry populated from `.env` (2026-05-18)
 
 Operator confirmed keys live in `.env`. Extracted variable *names only* (never values) from `cemini-prod:/opt/cemini/.env` (28 API keys) + laptop workspace `.env` (DeepSeek/Gemini/Grok/Librarian). Registry `Key?` and `Stored at` columns populated against real variable names. New rows added for keys held but not previously listed: Coinbase, Robinhood, Google BigQuery, GNews, NewsAPI, X/Twitter API, OpenRouter, Gemini, Grok, plus a dev-token table (GitHub PAT, Cloudflare Tunnel, Librarian). Both `.env` files verified gitignored + untracked. No key value entered the wiki.
+
+### Update — gbrain retired (2026-05-18)
+
+Decommissioned gbrain (the vector + knowledge-graph search MCP). Adopted in K50 but never load-bearing: a third retrieval layer redundant with kb-server (full-text, what the trading bot uses) and direct file reads (always current). Its git-based sync also conflicted with the rsync wiki-sync, so keeping it current would have meant an ongoing maintenance cron. Removed from `.mcp.json` (`local` + `librarian` envs); entity page + index + ROADMAP updated. Install left inert on cemini-librarian (`/opt/gbrain` 328M, `/root/.gbrain` 277M) — purgeable later. kb-server verified current first: both new K-series pages (api-credential-registry, non-latency-arbitrage-strategies) indexed, so the bot lost nothing.
