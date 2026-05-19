@@ -28,7 +28,9 @@ What prompted this page: K52 ingest of @0xMovez's X post deploying a Polymarket 
 
 ### What it is
 
-Hermes Agent is an **open-source, self-hosted AI agent** built by **Nous Research** (the team behind YaRN, Nomos, and the Psyche model families), released **2026-02-25**. It is pitched not as a chatbot but as a persistent staff member: it remembers what you tell it, improves at recurring tasks, and stays reachable 24/7 even when your own machine is off. Supports Linux, macOS, and WSL2 (no native Windows).
+Hermes Agent is an **open-source, self-hosted AI agent** built by **Nous Research** (the team behind YaRN, Nomos, and the Psyche model families). It is pitched not as a chatbot but as a persistent staff member: it remembers what you tell it, improves at recurring tasks, and stays reachable 24/7 even when your own machine is off. Supports Linux, macOS, and WSL2 (no native Windows).
+
+**Verified 2026-05-18** (GitHub API): `NousResearch/hermes-agent` — **MIT license**, **~156,554★**, repo created **2025-07-22**, last pushed 2026-05-19 (actively maintained), not archived, description "The agent that grows with you." The post's install path (`raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh`) resolves (HTTP 200). Note: the post's "released February 25, 2026" refers to a major version/announcement, not the repo's birth — the project predates that by seven months. Nous Research ships a real ecosystem around it (`hermes-agent-self-evolution`, `hermes-compression-eval`, `hermes-example-plugins`, `Hermes-Function-Calling`). At ~156k★ it is a top-tier project — maturity is not in question; the posture below is about *fit*, not credibility.
 
 ### Three-layer model (per the @0xMovez / blockmates framing)
 
@@ -55,7 +57,7 @@ One-line installer: `curl -fsSL https://raw.githubusercontent.com/NousResearch/h
 - **Not an adoption candidate for the trading stack.** Cemini already has its own agent orchestration (Conductor / librarian; LangGraph). Hermes Agent is a *consumer-grade personal-agent runtime* — a parallel implementation of capability Cemini already has, which the Phase-0 pattern says not to adopt.
 - **Reference value is real.** The self-improving-skill loop (write a markdown skill after N tool calls, reload it next time) and the `MEMORY.md` / `USER.md` frozen-snapshot pattern are clean ideas worth comparing against Cemini's own memory/skill handling — and against the related @entities/tools/hermes-lcm.md context engine.
 - **Security note.** The post's deployment hands an agent a funded Polygon wallet's private key and runs unattended trading via copy-pasted prompts. That is a high-trust configuration; flagged here, not endorsed. The standard install also pipes a remote script straight into `bash`.
-- **Single-source.** One creator post; the Nous Research release itself is real. Maturity signals (repo stars, commit cadence, last push) are unverified — `[NEEDS VERIFICATION 2026-05-18]` if adoption is ever reconsidered.
+- **Verified, mature, MIT.** The K52 source was one creator post, but the project itself is confirmed (see above): `NousResearch/hermes-agent`, MIT, ~156k★, actively maintained. The "not a Cemini adoption" verdict is therefore a *fit* decision (it duplicates Conductor), not a credibility one — and if Cemini's orchestration ever needs replacing, Hermes Agent is a serious, license-clean reference rather than a speculative one.
 
 ## Snippets
 
