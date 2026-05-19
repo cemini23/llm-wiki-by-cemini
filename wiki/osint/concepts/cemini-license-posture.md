@@ -26,10 +26,12 @@ related:
   - sources/odini-air-gap-magnetic-field.md
   - concepts/rlhf-critic-bias.md
   - sources/rlhf-critic-bias-al-zawahreh-2026.md
+  - concepts/hedge-fund-open-source-tooling.md
+  - entities/tools/arcticdb.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-05-12
+updated: 2026-05-18
 ---
 
 ## Relations
@@ -52,6 +54,8 @@ updated: 2026-05-12
 - @concepts/mitre-atlas-taxonomy.md — recorded 2026-05-04 license correction: ATLAS data feed is Apache-2.0 (not CC BY 4.0 as K28 eval claimed); website-presented content has separate MITRE terms; **eval-time-detected license claims should be verified against canonical LICENSE file in upstream repos before recording**
 - @concepts/rlhf-critic-bias.md — **parallel pattern catalog** (K40). This page systematizes the structural moves of *license-claim mischaracterization* (now at 11 modes). The RLHF Critic Bias 6-category Rhetorical Catalog systematizes the structural moves of *LLM-generated critique*. Both convert recurring patterns into checklist-style audit aids. The structural argument also explains *why* eval-brief mischaracterization is recurring (mirror asymmetric-penalty: "I said adopt and it was unfit" < "I said skip and it was useful").
 - @sources/rlhf-critic-bias-al-zawahreh-2026.md — RLHF Critic Bias source (Al-Zawahreh April 2026, draft maturity, Reference/Steal-from)
+- @concepts/hedge-fund-open-source-tooling.md — K52 hedge-fund OSS catalog; 21 of 22 repos are MIT/Apache/BSD, the lone exception is a **BSL** repo (ArcticDB) — a clean data point on the open/closed-firm split
+- @entities/tools/arcticdb.md — **Business Source License (BSL)** exemplar: source-available, free for non-production, paid license required for commercial deployment. Same family as ELv2 (#9) / License-Drift-to-BUSL (#10) — a capable tool gated entirely on a non-OSI license
 
 ## Raw Concept
 

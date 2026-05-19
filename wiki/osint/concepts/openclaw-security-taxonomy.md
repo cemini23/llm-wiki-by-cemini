@@ -18,9 +18,10 @@ related:
   - concepts/agent-authorization-stack.md
   - sources/safeharness-2604.13630.md
   - concepts/mitre-atlas-taxonomy.md
+  - entities/tools/hermes-agent.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-11
+updated: 2026-05-18
 ---
 
 ## Relations
@@ -38,6 +39,7 @@ updated: 2026-05-11
 - @concepts/reasoning-safety-monitor.md — K22 promotion; reusable architectural primitive for parallel CoT inspection — nine-category taxonomy + interrupt signal before corrupted reasoning reaches execution
 - @concepts/agent-authorization-stack.md — K19+K22+K23+K24 cross-cluster synthesis; threat model that informs all four authorization layers.
 - @sources/safeharness-2604.13630.md — K25 SafeHarness lifecycle-integrated harness security; defends against the threat surface K20 catalogs at the harness-internal level.
+- @entities/tools/hermes-agent.md — K52 Nous Research Hermes Agent, positioned as OpenClaw's successor; this taxonomy is the comparison frame for its security posture
 
 ## Raw Concept
 

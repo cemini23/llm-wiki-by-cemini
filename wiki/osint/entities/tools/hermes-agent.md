@@ -1,0 +1,64 @@
+---
+title: Hermes Agent — Nous Research self-hosted self-improving agent
+type: entity
+tags: [entity, tool, llm-agent, agent-runtime, self-hosted, nous-research, self-improving, k52]
+keywords: [hermes-agent, nous-research, self-hosted-agent, self-improving-skills, persistent-memory, memory-md, user-md, cron-scheduling, messaging-gateway, openclaw-successor]
+related:
+  - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
+  - entities/tools/hermes-lcm.md
+  - concepts/openclaw-security-taxonomy.md
+  - concepts/polymarket-weather-trading-strategy.md
+maturity: draft
+created: 2026-05-18
+updated: 2026-05-18
+---
+
+## Relations
+
+- @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — Post 5 (@0xMovez), the source that surfaced Hermes Agent
+- @entities/tools/hermes-lcm.md — Lossless Context Management is a context-engine *plugin* for the Hermes Agent ecosystem; this page is the host runtime
+- @concepts/openclaw-security-taxonomy.md — Hermes Agent is positioned as the successor to OpenClaw (formerly Clawdbot / Moltbot); the security taxonomy there is the comparison frame
+- @concepts/polymarket-weather-trading-strategy.md — Post 5 uses Hermes Agent as the runtime to deploy a Polymarket weather-trading bot
+
+## Raw Concept
+
+What prompted this page: K52 ingest of @0xMovez's X post deploying a Polymarket weather-trading bot on Hermes Agent. The existing @entities/tools/hermes-lcm.md page referenced "the Hermes Agent ecosystem" without a host-runtime page — this fills that gap.
+
+## Narrative
+
+### What it is
+
+Hermes Agent is an **open-source, self-hosted AI agent** built by **Nous Research** (the team behind YaRN, Nomos, and the Psyche model families), released **2026-02-25**. It is pitched not as a chatbot but as a persistent staff member: it remembers what you tell it, improves at recurring tasks, and stays reachable 24/7 even when your own machine is off. Supports Linux, macOS, and WSL2 (no native Windows).
+
+### Three-layer model (per the @0xMovez / blockmates framing)
+
+- **Knowledge layer** — built-in memory, session search, an LLM-Wiki skill, optional Honcho integration. Accumulates knowledge over time rather than just answering.
+- **Execution layer** — multi-agent profiles, child agents, a tool system, MCP support, persistent dedicated-machine access. Decomposes tasks, runs them in parallel, delegates.
+- **Output layer** — cron jobs, gateway delivery to Telegram/Slack/Discord/etc., a Web UI, file output. Results flow into a real workflow, not a chat window.
+
+### Three differentiators
+
+1. **Persistent memory.** Two core files — `MEMORY.md` (environment facts, conventions, experiences) and `USER.md` (preferences, communication style) — are loaded as a frozen snapshot into every new session. Full conversation history is kept in a SQLite database with full-text search.
+2. **Self-improving skills.** After a complex task (~5+ tool calls) Hermes writes a "skill" — a structured markdown file capturing the procedure, pitfalls, and verification steps — to `~/.hermes/skills/`. Next time it loads that skill and executes faster. Skills are human-readable and editable.
+3. **Always-on execution.** Runs on a server 24/7; connects to Telegram, Discord, Slack, WhatsApp, Signal, Email, and 15+ platforms through one gateway. Built-in cron accepts natural-language schedules.
+
+### vs OpenClaw
+
+The post frames Hermes as the successor to **OpenClaw** (formerly Clawdbot, then Moltbot — the breakout early-2026 agent, 145k+ GitHub stars). Two claimed advantages: (1) a **closed learning loop** — OpenClaw skills are static and manually installed; Hermes reviews its work every ~15 tool calls and writes reusable skills automatically; (2) **bounded curated memory** — OpenClaw needs third-party add-ons (QMD) for cross-session memory; Hermes ships bounded memory with on-demand full-text retrieval and context compression. The post concedes OpenClaw still has broader platform coverage (50+ integrations). See @concepts/openclaw-security-taxonomy.md for the security-posture comparison.
+
+### Install (per the post)
+
+One-line installer: `curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash`, choose a model (Anthropic Claude or OpenAI Codex recommended), run `hermes gateway setup` to bind a messaging platform, then `hermes`. The post deploys it on a Hetzner VPS for 24/7 operation.
+
+### Cemini posture
+
+- **Not an adoption candidate for the trading stack.** Cemini already has its own agent orchestration (Conductor / librarian; LangGraph). Hermes Agent is a *consumer-grade personal-agent runtime* — a parallel implementation of capability Cemini already has, which the Phase-0 pattern says not to adopt.
+- **Reference value is real.** The self-improving-skill loop (write a markdown skill after N tool calls, reload it next time) and the `MEMORY.md` / `USER.md` frozen-snapshot pattern are clean ideas worth comparing against Cemini's own memory/skill handling — and against the related @entities/tools/hermes-lcm.md context engine.
+- **Security note.** The post's deployment hands an agent a funded Polygon wallet's private key and runs unattended trading via copy-pasted prompts. That is a high-trust configuration; flagged here, not endorsed. The standard install also pipes a remote script straight into `bash`.
+- **Single-source.** One creator post; the Nous Research release itself is real. Maturity signals (repo stars, commit cadence, last push) are unverified — `[NEEDS VERIFICATION 2026-05-18]` if adoption is ever reconsidered.
+
+## Snippets
+
+> "Hermes Agent remembers what it learns and gets more capable over time, with a multi-level memory system and persistent dedicated machine access." [Source: posts-2026-05-18.docx — Post 5, @0xMovez, quoting @NousResearch, Feb 25]
+
+> "It stores two core memory files: MEMORY.md (environment facts, conventions, experiences) and USER.md (your preferences, communication style, expectations). These are loaded as a frozen snapshot into every new session." [Source: posts-2026-05-18.docx — Post 5, @0xMovez]

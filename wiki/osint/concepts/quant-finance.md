@@ -96,9 +96,10 @@ related:
   - sources/gdelt-4-3-29.md
   - concepts/markov-regime-switching-models.md
   - concepts/ai-assisted-trading-workflow.md
+  - concepts/hedge-fund-open-source-tooling.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-16
+updated: 2026-05-18
 ---
 
 ## Relations

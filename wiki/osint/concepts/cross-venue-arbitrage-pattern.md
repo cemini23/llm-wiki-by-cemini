@@ -16,6 +16,9 @@ related:
   - concepts/prediction-market-historical-analysis.md
   - concepts/kalshi-api-reference.md
   - concepts/non-latency-arbitrage-strategies.md
+  - concepts/prediction-market-statistical-arbitrage.md
+  - concepts/polymarket-updown-bot-taxonomy.md
+  - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - entities/tools/hftbacktest.md
 maturity: draft
 created: 2026-05-05
@@ -35,6 +38,9 @@ updated: 2026-05-18
 - @concepts/polymarket-microstructure-findings.md — distilled findings from Dubach 2026; key constraint: public-feed direction is unreliable, must use on-chain OrderFilled events
 - @concepts/prediction-market-historical-analysis.md — historical price-divergence statistics inform arb threshold-tuning + viability assessment
 - @concepts/non-latency-arbitrage-strategies.md — the slow-arb complement: standing-order strategies (Dutch-book, YES/NO complement, slow cross-venue, calendar) whose edge is a logical inconsistency rather than a ms-scale quote race
+- @concepts/prediction-market-statistical-arbitrage.md — the quant *signal* layer for this loop: cointegration + Ornstein-Uhlenbeck calibration decides *when* a Poly×Kalshi spread is tradeable and at what threshold; this page is the poll→execute→reconcile machinery that acts on it
+- @concepts/polymarket-updown-bot-taxonomy.md — K52 6-type bot taxonomy; its Type 4 (cross-timeframe lag, 5min↔15min) is the within-venue cousin of this cross-venue loop
+- @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — K52 X-posts batch; Post 4 (@ridark_eth) supplies the quant math layer for this loop
 
 ## Raw Concept
 

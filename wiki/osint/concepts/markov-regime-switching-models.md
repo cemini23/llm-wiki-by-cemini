@@ -8,9 +8,10 @@ related:
   - concepts/quant-finance.md
   - concepts/regime-conditioned-evaluation.md
   - concepts/macro-weather-regime.md
+  - concepts/prediction-market-statistical-arbitrage.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-05-18
 ---
 
 ## Relations
@@ -19,6 +20,7 @@ updated: 2026-05-16
 - @concepts/quant-finance.md — corpus-index parent cluster
 - @concepts/regime-conditioned-evaluation.md — sibling: evaluating strategies *conditioned on* regime; this page is about *detecting* the regime
 - @concepts/macro-weather-regime.md — sibling regime concept (macro/weather state framing)
+- @concepts/prediction-market-statistical-arbitrage.md — K52: its cross-venue predictive signal uses a rolling Markov transition matrix (the same transition-matrix machinery this page documents)
 
 ## Raw Concept
 

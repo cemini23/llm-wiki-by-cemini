@@ -15,7 +15,9 @@ related:
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
+  - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - concepts/polymarket-api-reference.md
+  - concepts/polymarket-updown-bot-taxonomy.md
   - entities/tools/polymarket-websocket-api.md
 maturity: draft
 created: 2026-05-12
@@ -30,6 +32,8 @@ updated: 2026-05-18
 - `@sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md` — @bored2boar's independent bot playbook (May 2026), corroborating this page
 - `@sources/alterego-eth-polymarket-endpoint-cheatsheet.md` — K51 @AlterEgo_eth full endpoint cheat sheet; the API surface this playbook's bot consumes
 - `@concepts/polymarket-api-reference.md` — canonical five-surface endpoint index
+- `@sources/x-posts-quant-oss-polymarket-bots-2026-05.md` — K52 X-posts batch; Post 6 (@adiix_official) independently corroborates this playbook's build discipline
+- `@concepts/polymarket-updown-bot-taxonomy.md` — the 6-type *strategy* taxonomy that sits on top of this *engineering* playbook
 - `@entities/tools/polymarket-websocket-api.md` — WebSocket channels the 6-layer websocket system subscribes to
 
 ## Raw Concept
@@ -163,6 +167,21 @@ A second Polymarket bot operator (@bored2boar, claiming 1,500+ bots built and ~$
 
 Net: the @0x_Punisher playbook's *operational principles* are now two-source-confirmed. Specific numbers (latency in ms, exact PnL) remain `[TENTATIVE]` single-source each. @bored2boar adds nothing the @0x_Punisher page lacks at the engineering-detail level (no 6-layer-equivalent spec), so this page stays canonical; @bored2boar is corroboration, not new architecture.
 
+### Independent corroboration — @adiix_official (May 2026)
+
+A *third* operator (@adiix_official, K52 `posts.docx` Post 6) published "Why your Claude bot doesn't work" — a follow-up to a 12M-view part-1 article — diagnosing why reader-built Polymarket **latency-arbitrage** bots fail. Its bot class is @0x_Punisher's "Type 1": a Binance WebSocket BTC/ETH ticker feed driving Polymarket 5/15-min crypto contracts. It converges on the same discipline yet once again adds no engineering detail this page lacks — corroboration, not new architecture:
+
+| @adiix_official guidance | Matches this page |
+|---|---|
+| Paper-mode-first; go-live gate = ≥200 paper trades, >75% paper win rate, ≥7 crash-free days | Backtesting discipline; dry-run discipline — `[CONFIRMED]` three operators |
+| Credentials only from a `.env` (python-dotenv); never hardcode; `.env` in `.gitignore` | Pre-staging discipline / opsec — corroborated |
+| Reject price data older than 10s as stale; pause trading on stale data; WS auto-reconnect with exponential backoff | Layer 3 stale-tick guard; Layer 1 quality gate — `[CONFIRMED]` |
+| Deploy to a \$5/mo VPS before live; laptop is not a deploy target | Latency targets / dedicated infra — `[CONFIRMED]` |
+| Half-Kelly sizing, hard 8%-of-portfolio cap, recalc portfolio before every trade | Sizing + risk (chunk, don't all-in) — corroborated |
+| Risk halts: daily −20% P&L halt, permanent halt below 60% of all-time high, 30-min pause after 5 losses | Stop losses + risk controls — `[CONFIRMED]`, with concrete thresholds |
+
+The genuinely new artifact in Post 6 is a **"battle-tested" Claude prompt** — a full production-bot spec (credentials / price-monitoring / edge-detection / position-sizing / risk-management / execution / monitoring / paper-mode blocks). It is a reusable scaffold for *generating* a Type-1 bot, not a new architecture; captured as a Snippet below. Post 6 also restates that **Polymarket is geo-blocked to US residents** — independent confirmation of the Cemini geo-routing findings (see `@concepts/cemini-deployment.md`). The 9-mistake list the article advertises did not survive the `.docx`→text extraction (embedded image/table); the prompt and setup checklist did.
+
 ## Snippets
 
 > Latency is killing you before strategy even matters. Measure every single step from signal detection to order fire. Target under 0.5ms on your internal hot path. P50 round trip to CLOB should sit around 6-8ms on good infrastructure.
@@ -170,6 +189,20 @@ Net: the @0x_Punisher playbook's *operational principles* are now two-source-con
 > Silent fill bug is destroying your state management post-V2. Never trust only the API exception to confirm a fill. After any timeout - poll the order status endpoint manually. Run a full reconciliation pass every 30 seconds minimum.
 
 > The bots that survive long term use: CLOB momentum, spot distance from strike, time-weighted signals and day of week edges. That is it. Nothing else needed.
+
+### @adiix_official "battle-tested" Type-1 bot prompt (K52, Post 6)
+
+A full production-bot spec the article supplies as a copy-paste Claude prompt. Reproduced condensed as a scaffold reference — *not* a Cemini adoption (Cemini's adapter already exists; this is the requirement checklist a from-scratch Type-1 bot should satisfy):
+
+> **Credentials** — load all keys from `.env` via python-dotenv, never hardcode; required vars `POLY_API_KEY`, `POLY_PRIVATE_KEY`, `TELEGRAM_TOKEN`, `TELEGRAM_CHAT_ID`, `ALCHEMY_RPC_URL`.
+> **Price monitoring** — Binance WS `wss://stream.binance.com:9443`, BTC/USDT + ETH/USDT tickers; auto-reconnect exponential backoff (max 10 retries); reject price data >10s old as stale; pause trading on stale data.
+> **Edge detection** — min detectable edge 5%, min execution edge 8%; only BTC/ETH 5-min & 15-min contracts; min market liquidity \$50k; max 20 markets monitored.
+> **Position sizing** — half-Kelly per position; hard cap 8% of portfolio per trade; recalc portfolio value before every trade.
+> **Risk management** — daily halt if P&L < −20% of day-start; permanent halt if portfolio < 60% of all-time high; 30-min pause after 5 consecutive losses; all halts → Telegram alert + manual restart.
+> **Execution** — full async (asyncio + aiohttp, no blocking calls); Alchemy RPC for Polygon; <800ms detection-to-order target.
+> **Monitoring** — Telegram alert on every entry/exit/error/kill-switch; hourly heartbeat (balance, trades, win rate); rotating 50MB log.
+> **Paper mode** — default; three explicit flags to enable live (`--live --confirm --i-understand-risks`); paper trades logged to SQLite.
+> [Source: posts-2026-05-18.docx — Post 6, @adiix_official]
 
 ## Dead Ends
 

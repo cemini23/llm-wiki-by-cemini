@@ -65,10 +65,12 @@ related:
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - concepts/parlay-market-making.md
   - concepts/agent-authorization-stack.md
+  - concepts/polymarket-updown-bot-taxonomy.md
+  - concepts/prediction-market-statistical-arbitrage.md
 maturity: draft
 hub: true
 created: 2026-04-27
-updated: 2026-05-02
+updated: 2026-05-18
 ---
 
 ## Relations

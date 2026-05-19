@@ -6,24 +6,28 @@ keywords: [polymarket-weather-bot, gamma-api-integration, weather-market-bins, o
 related:
   - sources/x-docx-polymarket-claude-md-2026-04-23.md
   - sources/x2-docx-polymarket-theparuchh-2026.md
+  - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - entities/people/alteregoeth.md
   - entities/people/theparuchh.md
   - entities/data-sources/open-meteo.md
+  - entities/tools/hermes-agent.md
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/ensemble-weather-forecasting.md
   - concepts/macro-weather-regime.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-18
 ---
 
 ## Relations
 
 - @sources/x-docx-polymarket-claude-md-2026-04-23.md — Section 1 by @AlterEgo_eth (Gamma API integration mechanics)
 - @sources/x2-docx-polymarket-theparuchh-2026.md — full operational guide by @theparuchh
-- @entities/people/alteregoeth.md — pseudonymous technical writer (Gamma API)
+- @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — K52 Post 5 (@0xMovez): a Hermes-Agent deployment path for the @AlterEgo_eth weatherbot
+- @entities/people/alteregoeth.md — pseudonymous technical writer (Gamma API); author of the `weatherbot` repo Post 5 deploys
 - @entities/people/theparuchh.md — pseudonymous bot operator (Mac Mini deployment)
+- @entities/tools/hermes-agent.md — the Nous Research agent runtime used in the Post 5 deployment path
 - @concepts/polymarket-bot-architecture.md — general Polymarket bot architecture parent
 - @concepts/polymarket-market-making-architectures.md — sibling concept (parlay/AMM)
 - @concepts/ensemble-weather-forecasting.md — weather-side methodology
@@ -62,6 +66,24 @@ Five compounding edges documented:
 - **Scan cadence**: every 10 minutes
 - **Coverage**: 11 cities × 4 continents
 - **Cost basis**: $130 starting bankroll (V3 reported)
+
+### Hermes-Agent deployment path (per @0xMovez, K52)
+
+A third source — @0xMovez's K52 X post — documents a *deployment* recipe rather than new strategy edge. It runs a Polymarket weather bot on **@entities/tools/hermes-agent.md** (Nous Research's self-hosted agent) and explicitly reuses **@AlterEgo_eth's `weatherbot`** repo (`github.com/alteregoeth-ai/weatherbot.git`, a `py-clob-client` stack) as the trading logic — corroborating that @AlterEgo_eth's weather work shipped as runnable open source, not just an X thread.
+
+The recipe is 7 natural-language prompts to the agent, no hand-coding:
+
+1. **Clone + venv** — clone `weatherbot`, create a Python 3.12 venv, install `py-clob-client python-dotenv requests web3`.
+2. **Generate wallet** — agent creates a fresh Polygon wallet via `eth_account`, writes `PK` / `WALLET` / `SIG_TYPE=0` to `weatherbot/.env`.
+3. **Fund** (operator action) — send USDC.e (trading capital, \$10 min / \$50 recommended) + ~2 POL gas to the wallet.
+4. **Approve contracts** — ERC-20 `approve` (max-uint) USDC.e for the 3 Polymarket spenders — CTF Exchange `0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E`, Neg-Risk Exchange `0xC5d563A36AE78145C45a50134d48A1215220f80a`, Router `0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296` — plus `setApprovalForAll` on the Conditional Tokens contract `0x4D97DCd97eC945f40cF65F87097ACe5EA0476045`. (USDC.e on Polygon = `0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174`, chain id 137.)
+5. **Configure** — wire a **Visual Crossing** weather API key into `config.json`; set `balance`, `max_bet` (start \$2), `min_ev: 0.10` (10%+ edge), `mode: paper` then `live`.
+6. **Test scan** — `python3 bot_v3.py scan` in paper mode first.
+7. **Go live** — run continuous mode, scans every 60 min, self-learning on trades, Telegram reports.
+
+This bot uses **Expected Value + Kelly Criterion** position sizing across ~20 cities / 4 continents with 3 forecast sources — the same EV/ensemble shape as the @theparuchh V3 strategy above. It is a *packaging* contribution: the edge sources are unchanged; what is new is a copy-paste, agent-driven install. The four Polymarket Polygon contract addresses are genuine and reusable for any Cemini Polymarket on-chain approval step.
+
+**Caveat.** Handing a self-hosted agent a funded wallet's private key and running unattended live trading via pasted prompts is a high-trust setup; the PnL figures cited alongside it (`ColdMath $300→$219K`, `Sharky6999 99.3% WR`, `RN1 $1.2K→$7.3M`) are `[TENTATIVE]` creator marketing.
 
 ### Cemini posture
 

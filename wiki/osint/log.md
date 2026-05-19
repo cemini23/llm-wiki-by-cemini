@@ -5576,3 +5576,36 @@ Operator confirmed keys live in `.env`. Extracted variable *names only* (never v
 ### Update — gbrain retired (2026-05-18)
 
 Decommissioned gbrain (the vector + knowledge-graph search MCP). Adopted in K50 but never load-bearing: a third retrieval layer redundant with kb-server (full-text, what the trading bot uses) and direct file reads (always current). Its git-based sync also conflicted with the rsync wiki-sync, so keeping it current would have meant an ongoing maintenance cron. Removed from `.mcp.json` (`local` + `librarian` envs); entity page + index + ROADMAP updated. Install left inert on cemini-librarian (`/opt/gbrain` 328M, `/root/.gbrain` 277M) — purgeable later. kb-server verified current first: both new K-series pages (api-credential-registry, non-latency-arbitrage-strategies) indexed, so the bot lost nothing.
+
+## [2026-05-18] ingest | K52 — X-posts batch (posts.docx): hedge-fund OSS, Polymarket bots, stat-arb, Hermes weather bot, Claude arb-bot debugging
+
+Ingested `posts.docx` from `research to be indexed/` — 6 X (Twitter) posts separated in-file by `Next post:` markers. Preingest check flagged `LIKELY` (filename collision only: a prior posts.docx batch occupies @sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md). Different content, different sha256 — a genuinely new batch. Raw source renamed `posts-2026-05-18.docx` on transfer to avoid overwriting the prior file on the librarian.
+
+### The 6 posts
+1. @zostaff — 22 open-source repos from 7 hedge funds/quant firms (Two Sigma, Man Group, Jane Street, D.E. Shaw, HRT, Optiver, WorldQuant) + open-vs-closed thesis.
+2. @RetroValix — 6-type taxonomy of bots on Polymarket short-crypto Up/Down markets.
+3. @timbidefi — UGC creator 3-platform monetization loop. **Off-topic for OSINT → routed to seo-wiki as a brief.**
+4. @ridark_eth — cross-market statistical-arbitrage roadmap (cointegration/OU/OBI/micro-price); advertised repo+dataset flagged `[NEEDS VERIFICATION]`.
+5. @0xMovez — Polymarket weather-trading bot deployed on Nous Research's Hermes Agent.
+6. @adiix_official — "Why your Claude bot doesn't work": latency-arb-bot debugging guide, part 2.
+
+### New pages (6)
+- `sources/x-posts-quant-oss-polymarket-bots-2026-05.md` — source page for the docx batch (validated, deep-read).
+- `concepts/hedge-fund-open-source-tooling.md` — 22-repo catalog + open/closed-moat thesis (Post 1).
+- `concepts/polymarket-updown-bot-taxonomy.md` — 6 microstructure bot types (Post 2).
+- `concepts/prediction-market-statistical-arbitrage.md` — cointegration/OU + OBI/micro-price quant signal layer (Post 4).
+- `entities/tools/arcticdb.md` — Man Group's BSL-licensed S3 tick store; Phase-0 pending adoption candidate.
+- `entities/tools/hermes-agent.md` — Nous Research Hermes Agent runtime; not a Cemini adoption (parallel to Conductor).
+
+### Existing pages updated (7)
+- `concepts/polymarket-bot-architecture.md` — added @adiix_official as a third independent corroboration (now three operators agree on the build discipline) + the "battle-tested" Type-1 bot prompt as a snippet.
+- `concepts/polymarket-weather-trading-strategy.md` — added the Hermes-Agent deployment path (7 prompts, the 4 Polymarket Polygon contract addresses, EV/Kelly sizing); corroborates that @AlterEgo_eth's weatherbot shipped as runnable open source.
+- `concepts/cross-venue-arbitrage-pattern.md` — linked the new stat-arb signal-layer page.
+- `concepts/non-latency-arbitrage-strategies.md` — linked the new Up/Down bot taxonomy (its Type 1 = the YES/NO complement arb).
+- `entities/tools/hermes-lcm.md` — linked its host runtime (hermes-agent).
+- `concepts/markov-regime-switching-models.md`, `concepts/market-microstructure.md`, `concepts/quant-finance.md`, `concepts/cemini-license-posture.md`, `concepts/openclaw-security-taxonomy.md` — bidirectional backlinks for the new pages (ArcticDB BSL recorded as a license-posture exemplar).
+
+### Cross-wiki routing
+- Post 3 (@timbidefi UGC monetization loop) routed to **seo-wiki** as a brief via `scripts/cross_wiki_route.py` — creator marketing / social-media ops, off-topic for OSINT.
+
+`index.md` updated (+1 source row under a new K52 subsection, +3 concept rows, +2 tool rows under a new K52 subsection). Raw source moved to `cemini-librarian:/opt/cemini-bulk/research/posts-2026-05-18.docx`.

@@ -7,9 +7,10 @@ related:
   - sources/wave-5-1-link-eval-stacks.md
   - concepts/context-compression-resume-pattern.md
   - entities/frameworks/langgraph.md
+  - entities/tools/hermes-agent.md
 maturity: draft
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-05-18
 ---
 
 ## Relations
@@ -17,6 +18,7 @@ updated: 2026-05-01
 - @sources/wave-5-1-link-eval-stacks.md — Wave 5.1 Steal-from recommendation; primary evaluation source
 - @concepts/context-compression-resume-pattern.md — hermes-lcm's DAG-based hierarchical summarization extends the cpr pattern (Compress/Preserve/Resume) with a specific implementation architecture; the concept page describes the abstract pattern; this entity page describes the concrete engine
 - @entities/frameworks/langgraph.md — LangGraph is the target surface for Steal-from extraction; the lcm_grep/lcm_expand tool schemas would be reimplemented as native Python functions within LangGraph nodes
+- @entities/tools/hermes-agent.md — the host runtime hermes-lcm plugs into; the Nous Research Hermes Agent (K52)
 
 ## Raw Concept
 

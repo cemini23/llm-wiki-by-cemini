@@ -6,6 +6,9 @@ keywords: [dutch book, sum-of-outcomes arb, yes-no complement arb, cross-venue s
 related:
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/favorite-longshot-bias.md
+  - concepts/polymarket-updown-bot-taxonomy.md
+  - concepts/prediction-market-statistical-arbitrage.md
+  - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-18
@@ -15,6 +18,9 @@ updated: 2026-05-18
 
 - @concepts/cross-venue-arbitrage-pattern.md — the *latency-sensitive* sibling: BTC 1h contracts, ms-scale windows, atomic execution. This page is the complement — strategies whose edge is a *logical/accounting* inconsistency that does not decay in milliseconds
 - @concepts/favorite-longshot-bias.md — the structural mispricing FLB describes is one *source* of the inconsistencies these strategies harvest
+- @concepts/polymarket-updown-bot-taxonomy.md — K52 6-type Polymarket bot taxonomy; its Type 1 (Up+Down ask < \$1) is the "YES/NO complement arb" of Strategy 1 here, and Types 1 & 6 are the latency-relaxed members of that taxonomy
+- @concepts/prediction-market-statistical-arbitrage.md — K52 model-based cousin: where these four strategies harvest a *logically riskless* inconsistency, stat-arb places a *probabilistic* mean-reversion bet on a cointegrated spread
+- @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — K52 X-posts batch; Post 2's "Arbitrage Bot" type is the latency-relaxed Up+Down<\$1 case documented here
 
 ## Raw Concept
 
