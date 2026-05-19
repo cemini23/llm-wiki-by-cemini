@@ -1,7 +1,7 @@
 ---
 title: yt-dlp — feature-rich command-line media extractor
 type: entity
-tags: [entity, tool, media-extraction, osint, audio-visual-intelligence, adopt-eligible, k54]
+tags: [entity, tool, media-extraction, osint, audio-visual-intelligence, adopted, k54]
 keywords: [yt-dlp, youtube-dl-fork, media-downloader, unlicense, gplv3-binary-caveat, sponsorblock, osint-av-collection]
 related:
   - sources/multi-wiki-tool-eval-26url-2026-05-19.md
@@ -39,6 +39,10 @@ The eval's licensing analysis here is correct and worth preserving: yt-dlp has a
 ### Verdict — Adopt (laptop-side / source-build only)
 
 License-clean on the source path; mature beyond question (163k★, nightly releases). Adopt as an OSINT collection tool, source-build only. Low-stakes — a standalone CLI utility, not a stack dependency.
+
+### Adoption status — installed on the laptop (2026-05-19)
+
+Installed K54: `python3 -m pip install --no-binary :all: yt-dlp` — **yt-dlp 2026.3.17**, built from the PyPI source distribution (the `--no-binary :all:` flag forces building from the Unlicense source tarball; the GitHub PyInstaller release binaries — `yt-dlp.exe` / `yt-dlp_macos`, which carry the GPLv3+ static-link encumbrance — were deliberately *not* used). Smoke-tested: `python3 -m yt_dlp --version` → `2026.03.17`. Laptop-side curation/collection tool, consistent with the deployment boundary (a standalone CLI utility, not in any serving path). Re-install via the same source-only command on upgrade.
 
 ## Snippets
 

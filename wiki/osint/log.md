@@ -5711,3 +5711,10 @@ Fifth+ multi-wiki tool-eval batch in a month. Eval verdicts: 6 Adopt / 1 Steal-f
 Each brief carries the license-verification caveat. `cemini-prod` brief staged: `briefs/2026-05-19_k54-polymarket-tooling-cemini.md` (skill_audit PASS 100/100) — Bridge API funding flow + QuantDinger Phase-0 recommendation + NextTrade downgrade.
 
 `index.md` updated (K54 ingest + K54 tool-additions subsections). Raw sources moved to `cemini-librarian:/opt/cemini-bulk/research/`. Inbox cleared.
+
+## [2026-05-19] K54 adoptions + brief delivery
+
+- **Local adoption — yt-dlp installed.** `python3 -m pip install --no-binary :all: yt-dlp` on the laptop → yt-dlp 2026.3.17, built from the PyPI source distribution (Unlicense). The GitHub PyInstaller release binaries (GPLv3+ static-link encumbrance) were deliberately avoided. Smoke test passed (`python3 -m yt_dlp --version` → 2026.03.17). `entities/tools/yt-dlp.md` updated: status adopted; tag `adopt-eligible` → `adopted`.
+- **No librarian adoption.** The only other K54 Adopt-tier financial tool, QuantDinger, is server-side (cemini-prod trading stack) and Phase-0-pending — deferred to server-Claude, not a librarian install. NextTrade is reference-only (no adoption).
+- **cemini-prod brief delivered.** `briefs/2026-05-19_k54-polymarket-tooling-cemini.md` scp'd to `cemini-prod:/opt/cemini/briefs/` (5,210 bytes, verified). skill_audit PASS 100/100.
+- **Cross-wiki briefs** (4) were created in-place by `cross_wiki_route.py` into the sibling wikis' `briefs/` directories (CCC / Cybersec / Image-gen / SEO) — no scp needed; they live alongside their destination wikis.
