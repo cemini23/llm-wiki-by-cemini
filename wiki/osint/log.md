@@ -5658,3 +5658,13 @@ Same failure mode as the K51 `fd` data artifact — recorded as a Dead End on th
 Each brief carries the license-verification caveat so destination curators re-check no-license rejects.
 
 `index.md` updated (+1 source row + 4 tool rows under new K53 subsections). Raw source moved to `cemini-librarian:/opt/cemini-bulk/research/Multi-Wiki Tool Evaluation.docx`. Inbox now empty.
+
+### Update — K53 adoptions + cemini-prod brief (2026-05-18)
+
+**Librarian adoption — ArcticDB installed.** ArcticDB 6.17.0 installed on `cemini-librarian` into a dedicated venv (`/opt/cemini-bulk/.venv`), isolated from the kb-server/Ollama serving path. Smoke test passed: LMDB-backed Arctic store, write + read of a time-indexed DataFrame — values and timestamps roundtrip correctly (ArcticDB drops the index `.freq` attribute, expected/harmless). Completes the Phase-0 "wheel installs + runs on the actual Hetzner host" check. Market-dataset migration (the real `Data/ETFs/Stocks/s&p500` directories) deliberately NOT done — operator-gated, flagged in the brief. `entities/tools/arcticdb.md` updated with adoption status.
+
+**Local adoption — gridex deferred.** Attempted a laptop install of gridex; blocked — its latest release (v0.1.12) ships only a Windows `.exe`, no macOS build, not on Homebrew (and the laptop has no Homebrew). Despite the repo describing itself as macOS/Swift/AppKit, no macOS binary is published. `entities/tools/gridex.md` updated: status deferred, re-check for a macOS release. Low-stakes — a convenience tool, blocks nothing.
+
+**cemini-prod brief.** `briefs/2026-05-18_k53-polymarket-tooling-cemini.md` — covers discountifu/polymarket-trading-bot (review for the Polymarket adapters), ArcticDB adoption status + the operator-gated migration decision, poly-arbitrage-bot (cross-venue arb reference), graphic-walker (future dashboard). skill_audit PASS 100/100. Delivered to `cemini-prod:/opt/cemini/briefs/`.
+
+`index.md` rows for arcticdb + gridex updated with adoption status.

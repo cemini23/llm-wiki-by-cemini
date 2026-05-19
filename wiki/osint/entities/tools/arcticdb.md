@@ -55,7 +55,16 @@ A second source made the same mistake: the K53 multi-wiki tool-eval (@sources/mu
 
 ### Verdict
 
-**Adopt-eligible — license-clear for Cemini's intended use.** Technically well-fit (server-less S3-backed tick storage maps directly onto the market-dataset layer) and the BSL Additional Use Grant permits it for free. This is a **server-side adoption** (`cemini-librarian` market-dataset layer), so it flows through a `cemini-prod` brief, not a laptop install — see the K52 brief `briefs/2026-05-18_polymarket-bot-edges-cemini.md`. Remaining Phase-0 work is purely technical: benchmark ingest/query throughput against the current Parquet handling before migrating.
+**Adopt-eligible — license-clear for Cemini's intended use.** Technically well-fit (server-less S3-backed tick storage maps directly onto the market-dataset layer) and the BSL Additional Use Grant permits it for free.
+
+### Adoption status — installed on cemini-librarian (2026-05-18)
+
+ArcticDB **6.17.0** is installed and verified on `cemini-librarian`, the host of the market-dataset canon (`/opt/cemini-bulk/`):
+
+- Installed into a dedicated venv at `cemini-librarian:/opt/cemini-bulk/.venv` (`pip install arcticdb`), isolated from the kb-server / Ollama serving path.
+- **Smoke test passed**: created an LMDB-backed Arctic store, wrote a time-indexed DataFrame, read it back — values and DatetimeIndex timestamps roundtrip correctly. (ArcticDB does not persist the index `.freq` attribute — expected and harmless; the timestamps themselves are exact.)
+
+This completes the Phase-0 "does the wheel install and run on the actual Hetzner host" check. **What is intentionally NOT done**: migrating the real market-dataset (`Data/ETFs/Stocks/s&p500`) into ArcticDB. That migration — plus the throughput benchmark against the current Parquet/CSV handling, and wiring the cemini-prod trading bot to read from ArcticDB — is an operator-gated step, flagged in the K53 `cemini-prod` brief. The library being installed and proven means that migration is now a pure data/wiring task with no remaining unknowns about ArcticDB itself.
 
 ## Snippets
 

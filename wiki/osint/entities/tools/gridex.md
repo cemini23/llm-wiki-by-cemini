@@ -30,7 +30,13 @@ The Cemini trading stack runs PostgreSQL (historical backtest databases) and Red
 
 ### Verdict
 
-**Adopt-eligible** — license-clean (Apache-2.0, verified), well-fit as a laptop-side DB client for the Cemini data layer. This is a developer-convenience tool, not part of any serving path; adoption is a low-stakes laptop install at operator discretion. No Phase-0 blocker.
+**Adopt-eligible — but local adoption blocked (no macOS build).** License-clean (Apache-2.0, verified), well-fit as a laptop-side DB client. A developer-convenience tool, not part of any serving path.
+
+### Adoption status — not installed (2026-05-18)
+
+A laptop install was attempted and **could not proceed**: gridex's latest release (`v0.1.12`) ships **only a Windows installer** (`Gridex-stable-Setup.exe`) — no macOS `.dmg`/`.app` asset, and it is not on Homebrew. Despite the project describing itself as macOS/Swift/AppKit, there is currently no published macOS binary, and this workspace's laptop is macOS (and has no Homebrew). Options left: build from Swift source (heavy; the laptop is a curation workstation, not worth it) or wait for a macOS release.
+
+**Status: deferred.** Re-check for a macOS release before reconsidering. This is low-stakes — gridex is a convenience tool; its absence blocks nothing.
 
 ## Snippets
 
