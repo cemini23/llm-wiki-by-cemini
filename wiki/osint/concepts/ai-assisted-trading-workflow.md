@@ -6,14 +6,16 @@ keywords: [ai-trading-workflow, trader-morin, market-outlook, trade-journaling, 
 related:
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
   - concepts/quant-finance.md
+  - entities/tools/quantdinger.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-05-19
 ---
 
 ## Relations
 
 - @sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md — @TraderMorin post this page synthesizes
+- @entities/tools/quantdinger.md — K54 tool eval; QuantDinger's multi-agent research engine is a software instance of this AI-assisted workflow
 - @concepts/quant-finance.md — corpus-index parent cluster
 
 ## Raw Concept

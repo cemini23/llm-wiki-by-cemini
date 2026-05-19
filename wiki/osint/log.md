@@ -5668,3 +5668,46 @@ Each brief carries the license-verification caveat so destination curators re-ch
 **cemini-prod brief.** `briefs/2026-05-18_k53-polymarket-tooling-cemini.md` — covers discountifu/polymarket-trading-bot (review for the Polymarket adapters), ArcticDB adoption status + the operator-gated migration decision, poly-arbitrage-bot (cross-venue arb reference), graphic-walker (future dashboard). skill_audit PASS 100/100. Delivered to `cemini-prod:/opt/cemini/briefs/`.
 
 `index.md` rows for arcticdb + gridex updated with adoption status.
+
+## [2026-05-19] K54 ingest | Polymarket Bridge API (@AlterEgo_eth X post) + 26-URL multi-wiki tool evaluation
+
+Two inbox sources processed as one K-batch.
+
+### Source 1 — @AlterEgo_eth Polymarket Bridge API (`Post.docx`)
+
+A single X post documenting Polymarket's **Bridge API** (`bridge.polymarket.com`) — a sixth API surface beyond Gamma / Data / CLOB / LB-API / WebSockets, handling wallet *funding*. Five endpoints: `POST /deposit` (multi-chain EVM/SVM/BTC addresses), `GET /supported-assets`, `POST /quote`, `GET /status/{address}`, `POST /withdraw`. All deposits auto-convert to **pUSD** (Polymarket USD) on Polygon. The deposit flow must end with a CLOB `/balance-allowance/update` call — skipping it leaves the new balance invisible to the order layer (silent funding failure).
+
+- New source page `sources/alterego-eth-polymarket-bridge-api.md` (validated, read).
+- New entity stub `entities/tools/polymarket-bridge-api.md`.
+- `concepts/polymarket-api-reference.md` updated five-surface → **six-surface**; new Bridge API section; title + frontmatter bumped.
+- `entities/people/alteregoeth.md` updated — fourth ingested artifact from this handle.
+- "No auth required" claim tagged `[NEEDS VERIFICATION 2026-05-19]` — single-source, and this author's prior cheat sheet had a wrong auth column.
+
+### Source 2 — 26-URL multi-wiki tool evaluation (`Tool Evaluation and Wiki Fit.docx`)
+
+Fifth+ multi-wiki tool-eval batch in a month. Eval verdicts: 6 Adopt / 1 Steal-from / 5 Reference / 11 Reject / 3 UNAVAILABLE.
+
+**Ingested with verification corrections — the eval's license layer was wrong on 9 of 26.** GitHub-API check (`gh api repos/<owner>/<repo>`, 2026-05-19) across all 23 retrievable repos found two failure modes: 8 false "NO LICENSE FOUND" *and* one fabricated license. Of 10 repos the eval marked no-license, only 2 are genuinely unlicensed (GitDorker, pro-workflow); the rest are MIT/Apache/AGPL/GPL. **MoneyPrinter was Rejected as a "catastrophic AGPL-3.0 poison pill" — it is verified MIT; the eval invented the AGPL.** Net flips: 3 Rejects overturned to license-clean (EverOS Apache-2.0, LLMFeeder MIT, poly-arbitrage-bot MIT — the last re-confirming K53); 3 genuine copyleft poison pills correctly rejected but for the wrong stated reason (TruffleHog AGPL-3.0, gitGraber GPL-3.0, H4X-Tools GPL-3.0); NextTrade's stack misidentified (TypeScript, not Python) and ~1yr stale.
+
+#### New pages (4)
+
+- `sources/multi-wiki-tool-eval-26url-2026-05-19.md` — source page (validated, deep-read) with full 26-URL verification table.
+- `entities/tools/quantdinger.md` — Adopt-eligible, Phase-0 pending; Apache-2.0 self-hosted AI quant platform (5,898★ verified); Cemini-financial primary.
+- `entities/tools/nexttrade.md` — Reference (eval Adopt downgraded); MIT, but TypeScript not Python and ~1yr stale.
+- `entities/tools/yt-dlp.md` — Adopt (source-build only); Unlicense source, GPLv3+-encumbered binaries must not be vendored.
+
+#### Updated (existing)
+
+- `entities/tools/poly-arbitrage-bot.md` — K54 re-confirmation: the eval re-listed it as a no-license Reject; re-verified MIT. Two eval runs, same reproducible false-negative.
+- `concepts/cemini-license-posture.md` — K54 addendum: eval license layer fails both directions; restated rule (re-verify *every* license claim, not just no-license Rejects).
+
+#### Cross-wiki routing (4 destination briefs)
+
+- `@ccc-wiki/briefs/2026-05-19_k54-tool-eval-ccc-items.md` — notebooklm-py, Windows-Use, DeLive (Adopt); EverOS + LLMFeeder (Reject overturned → clean); pro-workflow (Reject confirmed); TruffleHog/Hackers-Arise/free-programming-books (Reference).
+- `@cybersecurity-wiki/briefs/2026-05-19_k54-tool-eval-cybersec-items.md` — TruffleHog (AGPL), gitGraber/H4X-Tools (GPL), GitDorker (no-license+stale), CVE-2026-3629/VulnWeb/Hackers-Arise (Reference), Windows-Use (lateral-movement stub).
+- `@image-gen-wiki/briefs/2026-05-19_k54-tool-eval-imagegen-items.md` — MoneyPrinter (license corrected AGPL→MIT), yt-dlp, DeLive.
+- `@seo-wiki/briefs/2026-05-19_k54-tool-eval-seo-items.md` — Reactive-Resume (Steal-from; CSS/PDF rendering pipeline).
+
+Each brief carries the license-verification caveat. `cemini-prod` brief staged: `briefs/2026-05-19_k54-polymarket-tooling-cemini.md` (skill_audit PASS 100/100) — Bridge API funding flow + QuantDinger Phase-0 recommendation + NextTrade downgrade.
+
+`index.md` updated (K54 ingest + K54 tool-additions subsections). Raw sources moved to `cemini-librarian:/opt/cemini-bulk/research/`. Inbox cleared.

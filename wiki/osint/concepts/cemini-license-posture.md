@@ -29,10 +29,11 @@ related:
   - concepts/hedge-fund-open-source-tooling.md
   - entities/tools/arcticdb.md
   - sources/multi-wiki-link-eval-41url-2026-05-18.md
+  - sources/multi-wiki-tool-eval-26url-2026-05-19.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-05-18
+updated: 2026-05-19
 ---
 
 ## Relations
@@ -157,6 +158,13 @@ When the IP is eventually transferred or licensed (see @concepts/ip-sale-readine
 ### K39 Steal-from batch addendum (2026-05-12) — gabagool = 8th no-LICENSE catch + Steal-from pattern duplication
 
 > K39 Steal-from Phase-0 (2 tools, 2026-05-12) surfaced **1 additional GO** (`NVIDIA/OpenShell`, Apache-2.0 verified, policy schemas standalone-portable for FastMCP hardening) **and 1 additional no-LICENSE catch**: `strongca22-cpu/gabagool` (180★, README claims MIT, `gh api license.spdx_id` = null). **8th occurrence**; K39 alone now accounts for **5 of 8** (virattt + 19PINE-AI + meridian + mac-code + gabagool). Beyond the license blocker, gabagool's risk/arbitrage math is a subset re-implementation of K38-certified CloddsBot — Cemini's Kalshi adapter should extract from CloddsBot (MIT, 254★, 5-factor risk decomposition, already Kalshi-aware via `PLATFORM_RISK_SCORES`) and skip gabagool entirely. **New observation**: Steal-from intent ≠ license-bypass. Pattern extraction still requires a clean upstream license for IP-sale-readiness; the no-LICENSE blocker applies symmetrically to Adopt and Steal-from paths.
+
+### K54 multi-wiki eval addendum (2026-05-19) — eval license layer fails *both* directions
+
+> The K54 26-URL multi-wiki tool-eval (@sources/multi-wiki-tool-eval-26url-2026-05-19.md) was GitHub-API-verified across all 23 retrievable repos. **9 of 26 license findings were wrong** — worse than the K53 41-URL batch. Two distinct failure modes, not one:
+> - **False negatives (8)** — repos with real LICENSE files reported as "NO LICENSE FOUND" and Rejected on that basis. Of the eval's 10 "no-license" repos, only **2 are genuinely unlicensed** (`obheda12/GitDorker`, `rohitg00/pro-workflow`). The other 8 verified as MIT / Apache-2.0 / AGPL-3.0 / GPL-3.0. This is the K51-`fd` / K53-poly-arbitrage-bot pattern again — `poly-arbitrage-bot` was in fact re-flagged a *second* time by this batch and re-verified MIT.
+> - **Fabricated positive (1)** — `FujiwaraChoki/MoneyPrinter` was Rejected as a "catastrophic AGPL-3.0 poison pill." `gh api repos/FujiwaraChoki/MoneyPrinter` returns `spdx_id = MIT`. The eval did not just miss a license — **it invented a copyleft license that does not exist**, then built a rejection on it.
+> **Operational consequence**: the K53 rule ("re-verify every no-license Reject") is insufficient — it only catches false negatives. Restated rule: **re-verify *every* license claim in an LLM eval — Adopt, Reject, poison-pill — against `gh api repos/<owner>/<repo>` before acting.** A fabricated AGPL is as damaging as a missed MIT: it discards a clean, useful tool. The eval's tiers are a shortlist of *what to check*, never a verdict. Net K54 license-flip tally: 3 Rejects overturned to license-clean (EverOS Apache-2.0, LLMFeeder MIT, poly-arbitrage-bot MIT), 3 genuine copyleft poison pills correctly rejected but for reasons the eval got wrong (TruffleHog AGPL-3.0, gitGraber GPL-3.0, H4X-Tools GPL-3.0), 1 fabricated AGPL corrected to MIT (MoneyPrinter).
 
 ## Dead Ends
 

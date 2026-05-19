@@ -53,9 +53,10 @@ related:
   - entities/tools/polymarket-data-api.md
   - entities/tools/polymarket-lb-api.md
   - entities/tools/polymarket-websocket-api.md
+  - entities/tools/polymarket-bridge-api.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-18
+updated: 2026-05-19
 ---
 
 ## Relations
@@ -78,6 +79,7 @@ updated: 2026-05-18
 - @entities/tools/polymarket-data-api.md — Data API layer (trader/market analytics) — first catalogued K51
 - @entities/tools/polymarket-lb-api.md — LB-API layer (leaderboard/PnL) — first catalogued K51
 - @entities/tools/polymarket-websocket-api.md — WebSocket layer (realtime orderbook + fills) — first catalogued K51
+- @entities/tools/polymarket-bridge-api.md — Bridge API layer (deposits/withdrawals/pUSD funding) — first catalogued K54
 
 ## Raw Concept
 

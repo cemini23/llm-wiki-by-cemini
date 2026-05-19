@@ -87,6 +87,8 @@ related:
   - entities/models/timesfm.md
   - concepts/sae-execution-contract.md
   - entities/tools/quantmuse.md
+  - entities/tools/quantdinger.md
+  - entities/tools/nexttrade.md
   - entities/tools/a-stock-data-toolkit.md
   - entities/tools/synth-subnet.md
   - sources/mit-quant-bible.md
@@ -99,7 +101,7 @@ related:
   - concepts/hedge-fund-open-source-tooling.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-18
+updated: 2026-05-19
 ---
 
 ## Relations
@@ -178,6 +180,8 @@ updated: 2026-05-18
 - @concepts/sae-execution-contract.md — K19 promotion 2026-05-01; SAE execution contract as reusable architectural primitive — execution-layer survivability middleware for agentic crypto trading
 - @entities/tools/a-stock-data-toolkit.md — quant-finance tool entity
 - @entities/tools/synth-subnet.md — Bittensor synth-subnet tool entity
+- @entities/tools/quantdinger.md — K54 tool eval; self-hosted AI quant trading platform (Apache-2.0), Adopt-eligible pending Phase-0
+- @entities/tools/nexttrade.md — K54 tool eval; UI-driven algorithmic-trading framework (MIT), reference-grade only
 - @sources/hmm-jurafsky-martin-2026.md — HMM source (Jurafsky & Martin)
 - @sources/the-three-dimensional-decomposition-of-volatility-memory.md — canonical level-shape-tempo decomposition of volatility memory; gated GARCH family (RSM / G-FIGARCH / G-Clock / TG-Vol) with observable-feature gates
 - @sources/gdelt-4-3-29.md — K49 deep-read; interpretable ML for macro alpha from GDELT news sentiment (FinBERT + XGBoost + SHAP)

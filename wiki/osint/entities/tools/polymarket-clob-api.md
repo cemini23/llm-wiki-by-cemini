@@ -15,13 +15,15 @@ related:
   - entities/tools/polymarket-websocket-api.md
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-api-reference.md
+  - entities/tools/polymarket-bridge-api.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-18
+updated: 2026-05-19
 ---
 
 ## Relations
 
+- @entities/tools/polymarket-bridge-api.md — funding layer; its deposit flow ends with a CLOB `/balance-allowance/update` call
 - @entities/platforms/polymarket.md — execution venue
 - @entities/tools/polymarket-gamma-api.md — paired discovery-layer API (Gamma → token_id → CLOB)
 - @entities/tools/polymarket-python-order-utils.md — official client; canonical signer for POST /order
