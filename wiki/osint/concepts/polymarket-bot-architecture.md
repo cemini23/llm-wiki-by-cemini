@@ -19,6 +19,7 @@ related:
   - concepts/polymarket-api-reference.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - entities/tools/polymarket-websocket-api.md
+  - entities/tools/discountifu-polymarket-trading-bot.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-05-18
@@ -35,6 +36,7 @@ updated: 2026-05-18
 - `@sources/x-posts-quant-oss-polymarket-bots-2026-05.md` — K52 X-posts batch; Post 6 (@adiix_official) independently corroborates this playbook's build discipline
 - `@concepts/polymarket-updown-bot-taxonomy.md` — the 6-type *strategy* taxonomy that sits on top of this *engineering* playbook
 - `@entities/tools/polymarket-websocket-api.md` — WebSocket channels the 6-layer websocket system subscribes to
+- `@entities/tools/discountifu-polymarket-trading-bot.md` — K53 Adopt-eligible MIT bot; a concrete CLOB-V2 / WebSocket-orderbook implementation of this playbook
 
 ## Raw Concept
 

@@ -28,6 +28,7 @@ related:
   - sources/rlhf-critic-bias-al-zawahreh-2026.md
   - concepts/hedge-fund-open-source-tooling.md
   - entities/tools/arcticdb.md
+  - sources/multi-wiki-link-eval-41url-2026-05-18.md
 maturity: draft
 hub: true
 created: 2026-05-03
@@ -55,6 +56,7 @@ updated: 2026-05-18
 - @concepts/rlhf-critic-bias.md — **parallel pattern catalog** (K40). This page systematizes the structural moves of *license-claim mischaracterization* (now at 11 modes). The RLHF Critic Bias 6-category Rhetorical Catalog systematizes the structural moves of *LLM-generated critique*. Both convert recurring patterns into checklist-style audit aids. The structural argument also explains *why* eval-brief mischaracterization is recurring (mirror asymmetric-penalty: "I said adopt and it was unfit" < "I said skip and it was useful").
 - @sources/rlhf-critic-bias-al-zawahreh-2026.md — RLHF Critic Bias source (Al-Zawahreh April 2026, draft maturity, Reference/Steal-from)
 - @concepts/hedge-fund-open-source-tooling.md — K52 hedge-fund OSS catalog; 21 of 22 repos are MIT/Apache/BSD, the lone exception is a **BSL** repo (ArcticDB) — a clean data point on the open/closed-firm split
+- @sources/multi-wiki-link-eval-41url-2026-05-18.md — K53 41-URL eval; a fresh, quantified case of the **retrieval-gap "no-license" false-negative**: it reported 17 repos as "NO LICENSE FOUND" and Rejected them, but ≥3 spot-checked (poly-arbitrage-bot, polymarket-websocket-client, graphic-walker) were verified cleanly MIT/Apache-2.0. Reinforces the standing rule: never accept a no-license reject without a GitHub-API re-check. Also independently repeated the ArcticDB BSL poison-pill misread.
 - @entities/tools/arcticdb.md — **BSL "read the Additional Use Grant" exemplar.** ArcticDB is BSL 1.1 (GitHub shows it as `NOASSERTION`), and the K52 source post framed BSL as "commercial = paid license." Verification (2026-05-18, read the actual `LICENSE.txt`) showed the opposite: the BSL is only as restrictive as its **Additional Use Grant**, and ArcticDB's forbids *only* re-offering it as a multi-tenant hosted Database Service — every other use, incl. commercial internal use, is free, with a 2-year per-version conversion to Apache-2.0. Lesson: a BSL/NOASSERTION label is **not** an automatic reject — read the Additional Use Grant before recording a verdict. Contrast with the genuine poison pills (AGPL-3.0, EUPL-1.2 #11, License-Drift-to-BUSL #10)
 
 ## Raw Concept

@@ -5,6 +5,7 @@ tags: [entity, tool, time-series-database, tick-storage, market-data, bsl-licens
 keywords: [arcticdb, man-group, time-series-database, s3-backed, server-less, pandas, tick-storage, business-source-license, bsl, market-dataset]
 related:
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
+  - sources/multi-wiki-link-eval-41url-2026-05-18.md
   - concepts/hedge-fund-open-source-tooling.md
   - concepts/cemini-license-posture.md
 maturity: draft
@@ -15,6 +16,7 @@ updated: 2026-05-18
 ## Relations
 
 - @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — Post 1 (@zostaff) catalog entry that surfaced ArcticDB
+- @sources/multi-wiki-link-eval-41url-2026-05-18.md — K53 eval URL 16; independently Rejected ArcticDB as a "BSL poison-pill" — the same license misread this page corrects
 - @concepts/hedge-fund-open-source-tooling.md — parent catalog; ArcticDB is the one Cemini-relevant adoption candidate broken out here
 - @concepts/cemini-license-posture.md — ArcticDB's BSL license is the gating concern for adoption
 
@@ -48,6 +50,8 @@ ArcticDB is under the **Business Source License 1.1** (Licensor: Man Group Opera
 **What this means for Cemini.** The only thing the BSL forbids is **re-offering ArcticDB itself as a multi-tenant hosted database service**. Cemini's intended use — storing its *own* market data for its *own* trading stack, schemas controlled by Cemini — is **not a "Database Service"** and is fully permitted, with no paid license. Each version also converts to plain Apache-2.0 two years after its release.
 
 So the @zostaff post's framing ("paid license required for commercial deployment") is an **oversimplification** — BSL ≠ "commercial = paid". The restriction is specifically the SaaS-rehosting carve-out, which Cemini does not trip. The license-posture lesson: read the *Additional Use Grant*, not just the license name (recorded in @concepts/cemini-license-posture.md).
+
+A second source made the same mistake: the K53 multi-wiki tool-eval (@sources/multi-wiki-link-eval-41url-2026-05-18.md, URL 16) independently Rejected ArcticDB, calling BSL 1.1 a "severe poison-pill license [that] strictly prohibits any commercial application without direct, paid licensure." That is the identical misread — it treats the license *name* as the verdict and never reads the Additional Use Grant. Both that eval's reject and the @zostaff framing are **superseded by this page's verification.**
 
 ### Verdict
 

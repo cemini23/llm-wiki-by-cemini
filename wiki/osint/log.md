@@ -5623,3 +5623,38 @@ Verified the two K52 `[NEEDS VERIFICATION]` items (free web/GitHub checks, no pa
 **Local adoptions**: none on the laptop — both verified candidates (ArcticDB, prediction-market-analysis) are server-side per the deployment boundary (market-dataset layer / 36 GiB dataset). Phase-0 audits were done locally: `prediction-market-analysis` cloned to `/tmp` (code only, no dataset) — LICENSE confirmed MIT in-file, deps clean, structure verified — Phase-0 GO; clone removed after audit.
 
 **cemini-prod brief**: `briefs/2026-05-18_polymarket-bot-edges-cemini.md` — synthesizes the 3 Cemini-relevant K52 posts (Up/Down bot taxonomy, cross-market stat-arb Method 1, 3-operator-confirmed build discipline) + the 2 verified data-layer candidates. skill_audit PASS 100/100. Delivered to `cemini-prod:/opt/cemini/briefs/`.
+
+## [2026-05-18] ingest | K53 — 41-URL multi-wiki tool evaluation (Multi-Wiki Tool Evaluation.docx)
+
+Ingested the last inbox item: a 41-URL LLM-generated multi-wiki tool-evaluation report ("v3, May 2026"). Tier rollup: 8 Adopt / 1 Steal-from / 0 Defer / 6 Reference / 22 Reject / 4 UNAVAILABLE. Fourth tool-eval batch in a month (K49/K50/K51/K53).
+
+### Ingested with verification corrections
+Spot-checked the eval's license findings against the GitHub API — the "NO LICENSE FOUND" layer is systematically unreliable (retrieval gaps reported as missing licenses). At least 3 Rejected repos are actually clean-licensed:
+- `zostaff/poly-arbitrage-bot` — eval "no license / Reject" → verified **MIT**.
+- `discountifu/polymarket-websocket-client` — eval "no license / Reject" → verified **MIT**.
+- `Kanaries/graphic-walker` — eval "no license / Reject" → verified **Apache-2.0** (3.1k★).
+- `man-group/ArcticDB` — eval "BSL poison-pill / Reject" → superseded by the K52 BSL verification (Additional Use Grant permits Cemini use).
+- `ridgelinecyberdefence/vanguard` — eval "Apache-2.0" → actually **MIT** (both permissive; tier unaffected).
+Same failure mode as the K51 `fd` data artifact — recorded as a Dead End on the source page and reinforced in `cemini-license-posture.md`.
+
+### New pages (5)
+- `sources/multi-wiki-link-eval-41url-2026-05-18.md` — source page (validated, deep-read).
+- `entities/tools/gridex.md` — Adopt-eligible; native DB IDE (Apache-2.0, verified), laptop-side client for the Cemini Postgres/Redis layer.
+- `entities/tools/discountifu-polymarket-trading-bot.md` — Adopt-eligible; async Python Polymarket CLOB-V2 bot (MIT, verified); folds in sibling repos polymarket-websocket-client + polymarket-orderbook-watcher.
+- `entities/tools/poly-arbitrage-bot.md` — verdict corrected eval-Reject → Reference/Steal-from (MIT verified); Polymarket↔Kalshi cross-exchange arb bot, concrete impl of `cross-venue-arbitrage-pattern.md`.
+- `entities/tools/graphic-walker.md` — verdict corrected eval-Reject → Reference (Apache-2.0 verified); embeddable visual-analytics component, candidate viz layer for the librarian UI / backtest dashboard.
+
+### Updated (existing)
+- `entities/tools/arcticdb.md` — noted the eval (URL 16) independently repeated the ArcticDB BSL poison-pill misread; both superseded by this page's verification.
+- `concepts/cemini-license-posture.md` — added the K53 eval as a quantified case of the retrieval-gap no-license false-negative.
+- `concepts/cross-venue-arbitrage-pattern.md` — linked poly-arbitrage-bot as a concrete implementation.
+- `concepts/polymarket-bot-architecture.md` — linked discountifu/polymarket-trading-bot as a concrete CLOB-V2 implementation.
+
+### Cross-wiki routing (4 destination briefs)
+- `@ccc-wiki/briefs/2026-05-18_k53-tool-eval-ccc-items.md` — cc-wf-studio, picoclaw, git-truck, hermes-desktop, ai-engineer-roadmap.
+- `@cybersecurity-wiki/briefs/2026-05-18_k53-tool-eval-cybersec-items.md` — grex, vanguard, netviz, iOS pentest list.
+- `@seo-wiki/briefs/2026-05-18_k53-tool-eval-seo-items.md` — colorion, snippeteditor, svgrepo.
+- `@image-gen-wiki/briefs/2026-05-18_k53-tool-eval-imagegen-items.md` — awesome-nano-banana-pro-prompts.
+Each brief carries the license-verification caveat so destination curators re-check no-license rejects.
+
+`index.md` updated (+1 source row + 4 tool rows under new K53 subsections). Raw source moved to `cemini-librarian:/opt/cemini-bulk/research/Multi-Wiki Tool Evaluation.docx`. Inbox now empty.
