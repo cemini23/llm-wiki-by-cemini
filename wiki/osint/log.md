@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-19] query | Cemini AI assistant — architecture research + cemini-poly-proxy discovery
+
+User research request: a potential CeminiSuite addition — "Cemini AI", a user-facing conversational bot using DeepSeek + the wikis as the brain. Treated as a query/synthesis task (no source ingested).
+
+- **Server discovered**: `cemini-poly-proxy` — a third Hetzner server (Falkenstein, Germany), the egress relay routing Polymarket + Hyperliquid orders from a non-US IP. Read-only SSH probe via `cemini-prod` jump host: 2 vCPU / 4 GB / 75 GB, Ubuntu 24.04, near-idle (load 0.00, sshd only — no Docker, no WireGuard). Previously undocumented in the wiki, `hot.md`, or `.local/server.md`.
+- **Pages created** (2): `entities/infrastructure/cemini-poly-proxy.md` (the German relay) + `concepts/cemini-ai-assistant.md` (Cemini AI architecture-of-record — planned, not built).
+- **Pages updated** (4, backlinks): cemini-stack, deepseek-api, kb-server-retrieval-scaling, librarian-server-architecture.
+- **index.md**: cemini-poly-proxy under Infrastructure & databases; cemini-ai-assistant under Librarian / knowledge-base tooling.
+- **Key finding**: ~80% of the "DeepSeek + wikis as brain" design already exists (DeepSeek-V4, kb-server RAG, stash memory, conductor, 130+ MCP tools). Cemini AI is the missing user-facing surface, not a new brain. Scope (user, 2026-05-19): internal-first (no users yet), answer + propose-actions with a human confirm gate, finance + cybersecurity wikis. Recommended host: cemini-poly-proxy.
+- **`.local/server.md`**: added cemini-poly-proxy connection details (jump-host access).
+- **Brief**: `briefs/2026-05-19_cemini-ai-assistant.md` staged for cemini-prod / server-Claude review.
+
 ## [2026-05-17] ingest | Multi-Wiki Tool Evaluation — 56-repo IP-sale risk audit
 
 Ingested `Multi-Wiki Tool Evaluation.docx` (LLM-generated 56-repo eval across 7 surfaces, IP-sale licensing rigor). preingest_check verdict NEW.

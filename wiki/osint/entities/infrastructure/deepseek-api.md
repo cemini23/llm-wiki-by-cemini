@@ -51,9 +51,10 @@ related:
   - entities/tools/git-rewind.md
   - entities/tools/guidance-ai.md
   - entities/tools/deepteam.md
+  - concepts/cemini-ai-assistant.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-05-02
+updated: 2026-05-19
 ---
 
 ## Relations
@@ -80,6 +81,7 @@ updated: 2026-05-02
 - @entities/frameworks/dspy.md — Wave 5.1 Adopt; offline prompt-compilation framework targeting DeepSeek API as the GEPA optimization backend — compile optimized prompts on laptop against hosted DeepSeek, ship static strings to production
 - @sources/wave-5-1-link-eval-more.md — Wave 5.1 agent-framework evaluation; DSPy + Instructor Adopt decisions; both target DeepSeek API as the LLM brain for prompt optimization and structured-output extraction
 - @sources/wave-5-1-link-eval-stacks.md — Wave 5.1 systems-architecture evaluation; DeepSeek-V4-Pro Fireworks endpoint as primary Adopt candidate; confirms DeepSeek model family as the Cemini-standard LLM brain across all three evaluation surfaces
+- @concepts/cemini-ai-assistant.md — 2026-05-19 — proposed user-facing assistant; DeepSeek is its LLM brain, kept provider-agnostic via the same OpenAI-compatible swap this page documents
 
 ## Raw Concept
 

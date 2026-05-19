@@ -13,9 +13,10 @@ related:
   - concepts/cemini-deployment.md
   - concepts/cemini-license-posture.md
   - entities/tools/pybroker.md
+  - entities/infrastructure/cemini-poly-proxy.md
 maturity: draft
 created: 2026-05-03
-updated: 2026-05-11
+updated: 2026-05-19
 # Server-state probe baseline (2026-05-03): both hosts probed live; specs recorded match `free -h` / `df -h` / `nproc` output. Refresh on every spec change.
 ---
 
@@ -29,6 +30,7 @@ updated: 2026-05-11
 - @concepts/librarian-server-architecture.md — librarian-side architectural rationale (Option C kb-server pattern)
 - @concepts/cemini-deployment.md — installation procedure layered on top of this topology
 - @concepts/cemini-license-posture.md — license obligations attached to deployed components
+- @entities/infrastructure/cemini-poly-proxy.md — the third Hetzner server (Falkenstein, order-routing relay); this page's two-server framing predates it
 
 ## Raw Concept
 
