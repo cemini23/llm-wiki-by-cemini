@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-20] infra | egress relay swapped Falkenstein → Helsinki (cemini-poly-proxy → cemini-egress-fi)
+
+User rebuilt the order-egress relay at Hetzner Helsinki (Finland) and decommissioned the previous Hetzner Falkenstein (Germany) box. Driver: both Polymarket **and** Hyperliquid accept Finnish egress, so a single Helsinki relay covers both venues; the Falkenstein box had been provisioned with only Polymarket in mind. Role and operational pattern carry over unchanged.
+
+- **Probed read-only** 2026-05-20 via `ssh -J cemini-prod root@204.168.139.190`: hostname `cemini-egress-fi`, Hetzner Helsinki (HEL1), AS24940, 2 vCPU / 3.7 GiB RAM / 75 GB disk / Ubuntu (kernel 6.8.0-117), load 0.00, sshd-only (no Docker, no WireGuard).
+- **Wiki page renamed**: `entities/infrastructure/cemini-poly-proxy.md` → `entities/infrastructure/cemini-egress-fi.md`. Frontmatter title/tags/keywords updated for Helsinki; Dead Ends section records the Falkenstein predecessor.
+- **Backlinks updated** in `cemini-stack.md`, `librarian-server-architecture.md`, `cemini-ai-assistant.md`, and `index.md` (catalog entries on lines 605 and 1103).
+- **`.local/server.md`**: Falkenstein section replaced with Helsinki; `cemini-egress-fi` SSH alias added to `~/.ssh/config` with `ProxyJump cemini-prod` baked in.
+- **Cemini AI architecture-of-record** (`concepts/cemini-ai-assistant.md`) updated: host references Helsinki instead of Falkenstein; transatlantic-lag estimate revised ~90-100 ms → ~115-130 ms (tagged `[NEEDS VERIFICATION 2026-05-20]`).
+- **Build-kickoff prompt** for the parallel server-Claude Cemini AI session re-emitted in chat 2026-05-20 with the new host; the previous Falkenstein version is superseded.
+- **Lint**: no orphans / bidirectional gaps introduced by the rename.
+
 ## [2026-05-19] query | Cemini AI assistant — architecture research + cemini-poly-proxy discovery
 
 User research request: a potential CeminiSuite addition — "Cemini AI", a user-facing conversational bot using DeepSeek + the wikis as the brain. Treated as a query/synthesis task (no source ingested).

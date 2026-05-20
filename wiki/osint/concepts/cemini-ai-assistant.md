@@ -4,18 +4,18 @@ type: concept
 tags: [concept, architecture, cemini-ai, chatbot, rag, deepseek, llm-agents, planned-not-built]
 keywords: [cemini-ai, assistant, chatbot, wiki-rag, deepseek, kb-server, conductor, action-confirmation, internal-first, gdpr]
 related:
-  - entities/infrastructure/cemini-poly-proxy.md
+  - entities/infrastructure/cemini-egress-fi.md
   - entities/infrastructure/deepseek-api.md
   - concepts/kb-server-retrieval-scaling.md
   - concepts/librarian-server-architecture.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 ## Relations
 
-- @entities/infrastructure/cemini-poly-proxy.md — recommended host for the assistant gateway during the internal-only phase (German Hetzner box, near-idle, librarian-class spec)
+- @entities/infrastructure/cemini-egress-fi.md — recommended host for the assistant gateway during the internal-only phase (Finnish Hetzner box, near-idle, librarian-class spec)
 - @entities/infrastructure/deepseek-api.md — the LLM brain; already wired into the production stack, OpenAI-compatible so provider-swappable
 - @concepts/kb-server-retrieval-scaling.md — the wiki-RAG retrieval layer the assistant queries for its differentiating knowledge
 - @concepts/librarian-server-architecture.md — the librarian (kb-server + stash) that supplies static wiki RAG plus episodic memory; the assistant is a new consumer of it
@@ -80,12 +80,12 @@ Response  (+ optional confirm card)
 
 ### Hosting
 
-`cemini-poly-proxy` — the German order-routing relay (@entities/infrastructure/cemini-poly-proxy.md) — is the recommended host for the internal phase: near-idle, librarian-class spec (2 vCPU / 4 GB / 75 GB), ~3.3 GB RAM free. DeepSeek is a cloud API so there are no model weights to host; the gateway footprint is small. `cemini-prod` is unsuitable (90% disk, ~50% swap, 41 containers); `cemini-librarian` is an alternative but loads the box that serves the brain.
+`cemini-egress-fi` — the Finnish order-routing relay (@entities/infrastructure/cemini-egress-fi.md) — is the recommended host for the internal phase: near-idle, librarian-class spec (2 vCPU / 4 GB / 75 GB), ~3.3 GB RAM free. DeepSeek is a cloud API so there are no model weights to host; the gateway footprint is small. `cemini-prod` is unsuitable (90% disk, ~50% swap, 41 containers); `cemini-librarian` is an alternative but loads the box that serves the brain.
 
 Two honest caveats:
 
-- **Transatlantic retrieval lag.** kb-server and stash are in Ashburn; `cemini-poly-proxy` is in Falkenstein. Every retrieval is a ~90-100 ms server-to-server hop. Tolerable for an internal tool; for a polished external product, replicate kb-server + stash to Germany so the brain is co-located.
-- **Blast-radius caution for the external phase.** A public chatbot should not share a box with the live order-egress path. Acceptable while internal-only and attack-surface-free; before external launch, Cemini AI moves to its own German box (or order routing moves off `cemini-poly-proxy`).
+- **Transatlantic retrieval lag.** kb-server and stash are in Ashburn; `cemini-egress-fi` is in Helsinki. Every retrieval is a ~115-130 ms server-to-server hop `[NEEDS VERIFICATION 2026-05-20 — not yet ping-measured]`. Tolerable for an internal tool; for a polished external product, replicate kb-server + stash to the EU so the brain is co-located.
+- **Blast-radius caution for the external phase.** A public chatbot should not share a box with the live order-egress path. Acceptable while internal-only and attack-surface-free; before external launch, Cemini AI moves to its own EU box (or order routing moves off `cemini-egress-fi`).
 
 ### Deferred to the external phase
 
@@ -99,7 +99,7 @@ These were blockers under the original "external from day one" framing; the no-u
 ### Open considerations
 
 - **Provider-agnostic by design.** DeepSeek is the sound default — already paid-for, empirically validated (@entities/infrastructure/deepseek-api.md). Keep the OpenAI-compatible swap so final synthesis can move to `deepseek-v4-pro` or Claude, and conductor can route per-query.
-- **GDPR upside.** A German (EU) host puts customer data — sessions, stash memory — inside the EU, favorable for the eventual external phase. Caveat: DeepSeek inference still leaves the EU; an EU-data-residency requirement on *inference* would argue for an EU-hostable synthesis model.
+- **GDPR upside.** A Finnish (EU) host puts customer data — sessions, stash memory — inside the EU, favorable for the eventual external phase. Caveat: DeepSeek inference still leaves the EU; an EU-data-residency requirement on *inference* would argue for an EU-hostable synthesis model.
 - **Regulatory.** "Propose financial actions" for paying customers may be financial-advice or brokerage-regulated depending on jurisdiction — must be resolved before external launch, not after.
 
 ## Snippets

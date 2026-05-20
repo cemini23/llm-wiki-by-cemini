@@ -29,7 +29,7 @@ related:
   - entities/tools/pageindex.md
   - entities/tools/sift-kg.md
   - entities/tools/swarmvault.md
-  - entities/infrastructure/cemini-poly-proxy.md
+  - entities/infrastructure/cemini-egress-fi.md
   - concepts/cemini-ai-assistant.md
 maturity: validated
 hub: true
@@ -54,7 +54,7 @@ updated: 2026-05-19
 - @sources/alash3al-stash.md — Wave 5A Adopt → deployed 2026-05-02. Episodic memory layer on librarian (v0.2.9, MCP SSE :8080, HTTP :9090). Two-layer memory architecture: kb-server (static wiki RAG) + stash (dynamic episodic memory — episodes, facts, working context, contradictions, causal links, hypotheses, goals, failure records). Postgres 16 + pgvector, Ollama-backed embeddings (nomic-embed-text) + reasoning (qwen2.5:0.5b).
 - @ccc-wiki/entities/mcp-servers/librarian-kb-server.md — CCC-side entity page on the librarian's MCP-serving surface (laptop-only meta-wiki on Cemini's Claude Code workflow; carries the cross-federation routing notes)
 - @ccc-wiki/concepts/cross-wiki-routing.md — CCC-side concept on where new content belongs in the federation; references this page as the serving-layer canon
-- @entities/infrastructure/cemini-poly-proxy.md — the third Hetzner server (Falkenstein); same vendor as the librarian, different DC. Candidate Cemini AI host that would query this librarian's kb-server + stash over a transatlantic hop
+- @entities/infrastructure/cemini-egress-fi.md — the third Hetzner server (Helsinki, Finland); same vendor as the librarian, different DC. Candidate Cemini AI host that would query this librarian's kb-server + stash over a transatlantic hop
 - @concepts/cemini-ai-assistant.md — proposed user-facing assistant; a new consumer of this librarian's kb-server (static wiki RAG) and stash (episodic memory)
 
 ## Raw Concept

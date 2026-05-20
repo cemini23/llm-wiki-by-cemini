@@ -1,0 +1,86 @@
+---
+title: cemini-egress-fi — Finnish order-routing relay (Hetzner Helsinki)
+type: entity
+tags: [infrastructure, hetzner, polymarket, hyperliquid, order-routing, proxy, cemini-deployment]
+keywords: [cemini-egress-fi, helsinki, hel1, finland, ssh-tunnel, order-egress, geo-routing, non-us-egress, third-server]
+related:
+  - concepts/cemini-ai-assistant.md
+  - entities/infrastructure/cemini-stack.md
+  - concepts/librarian-server-architecture.md
+maturity: draft
+created: 2026-05-19
+updated: 2026-05-20
+# Live-probed 2026-05-20 (read-only SSH via cemini-prod jump host). Refresh on spec/role change.
+---
+
+## Relations
+
+- @concepts/cemini-ai-assistant.md — candidate host for the Cemini AI assistant gateway during its internal-only phase (this box has the headroom)
+- @entities/infrastructure/cemini-stack.md — the umbrella production topology; this is the third Hetzner server (added 2026-05-19, swapped DC 2026-05-20)
+- @concepts/librarian-server-architecture.md — the librarian (kb-server + stash) this box would query if it hosts Cemini AI; both are Hetzner, different DCs (Helsinki vs Ashburn)
+
+## Raw Concept
+
+The third Hetzner server in the Cemini fleet — the egress relay through which Polymarket and Hyperliquid orders route. Originally provisioned at Hetzner Falkenstein (Germany, hostname `cemini-poly-proxy`) and surfaced 2026-05-19; **rebuilt at Hetzner Helsinki (Finland, hostname `cemini-egress-fi`) on 2026-05-20** after the user verified both venues accept egress from Finland. The role and operational pattern carry over unchanged; only the datacentre and hostname differ.
+
+Probed read-only 2026-05-20 — SSH via `cemini-prod` as jump host (the box's port 22 is firewalled to the Hetzner fleet, not the open internet).
+
+## Narrative
+
+### What it is
+
+| Field | Value |
+|---|---|
+| Hostname | `cemini-egress-fi` |
+| Provider / location | Hetzner Cloud, **Helsinki (HEL1), Finland** |
+| Public IP / SSH access | see `.local/server.md` (jump host required; `cemini-egress-fi` SSH alias) |
+| Spec | 2 vCPU · 4 GB RAM (3.7 GiB measured) · 75 GB disk · Ubuntu (kernel 6.8.0-117) |
+| Utilisation (2026-05-20) | 428 MB RAM used · 1.5 GB disk used · load average 0.00 |
+| Headroom | ~3.3 GB RAM free · ~71 GB disk free |
+| Running | `sshd` only — no Docker, no WireGuard, no proxy daemon |
+| AS / rDNS | AS24940 Hetzner Online GmbH · `static.190.139.168.204.clients.your-server.de` |
+
+### Role — order-egress relay
+
+`cemini-egress-fi` exists so that Polymarket and Hyperliquid order traffic egresses from a **Finnish IP** rather than the Ashburn production IP. Polymarket enforces geo-blocking on order submission (`POST /order` returns HTTP 403 from US IPs; market-data reads are unrestricted — profiled 2026-05-18). Finland was chosen over the previous Germany location after the user confirmed **both venues accept Helsinki egress** (PM **and** HL); the Falkenstein box only had to cover PM, so picking a country that clears both consolidates two routing paths onto one relay.
+
+The routing mechanism is lightweight: there is **no WireGuard and no proxy process listening**. The relay is plain **SSH tunnelling** — `cemini-prod` opens an `ssh -D`/`-L` tunnel *through* this box so order calls exit with the Finnish IP. `sshd` on `:22` is the entire serving surface, which is why the box sits at load 0.00.
+
+This supersedes (a) the abandoned server-side WireGuard on `cemini-prod` (dropped as fragile, see `hot.md`), (b) the laptop-side `polymarket_proxy.py` forward-tunnel (a validation harness that violated the deployment boundary), and (c) the now-decommissioned Falkenstein predecessor (`cemini-poly-proxy`; see Dead Ends).
+
+### Relationship to the rest of the fleet
+
+It is the **third** Hetzner server, joining `cemini-prod` (Ashburn, trading stack) and `cemini-librarian` (Ashburn, knowledge serving). Unlike those two it is in a different datacentre — Helsinki, not Ashburn — a deliberate consequence of needing a non-US egress IP. Helsinki-to-Ashburn is a transatlantic hop on the order of ~115-130 ms server-to-server `[NEEDS VERIFICATION 2026-05-20 — not yet ping-measured]`, slightly longer than the previous Falkenstein-to-Ashburn (~90-100 ms) but inside the same order of magnitude; the choice was venue-coverage-driven, not latency-driven.
+
+### Spare capacity — candidate Cemini AI host
+
+The box is near-idle: one near-zero-cost job (SSH tunnelling) on librarian-class hardware. With ~3.3 GB RAM and ~71 GB disk free it can comfortably host the **Cemini AI assistant** gateway (see @concepts/cemini-ai-assistant.md) during that project's internal-only phase. Caveats recorded on that page — chiefly (a) the transatlantic hop to the Ashburn kb-server on every retrieval, and (b) the security argument against co-locating an eventually-public chatbot on a box that sits in the live order-execution path. Both are deferred, not dismissed, while the assistant has no external users.
+
+### GDPR / EU-residency posture
+
+Helsinki is an EU member state — the same EU-data-residency story applies as it did for Falkenstein. Customer-side sessions and stash memory landing on this box stay inside the EU; DeepSeek inference still leaves the EU and would need an EU-hostable synthesis model if a hard EU-residency requirement on *inference* surfaces.
+
+## Snippets
+
+### Read-only probe — 2026-05-20 (via `ssh -J cemini-prod`)
+
+```
+=HOST=    cemini-egress-fi
+=OS=      Linux 6.8.0-117-generic (Ubuntu)
+=CPU=     2
+=MEM=     total 3.7Gi / used 428Mi / free 2.9Gi / available 3.3Gi
+=DISK=    /dev/sda1  75G  1.5G used  71G avail  3%
+=UPTIME=  16 min, load average 0.00 0.00 0.00
+=DOCKER=  no docker
+=LISTEN=  sshd :22 (v4+v6); systemd-resolved :53 (localhost only)
+=WG=      no wireguard
+=EGRESS=  204.168.139.190 (IPv4) / 2a01:4f9:c010:da39::1 (IPv6)
+```
+
+ipinfo.io on the public IP → `city: Helsinki · region: Uusimaa · country: FI · org: AS24940 Hetzner Online GmbH · timezone: Europe/Helsinki`. rDNS `static.190.139.168.204.clients.your-server.de` confirms Hetzner.
+
+## Dead Ends
+
+- **Direct SSH from the laptop** — `cemini-egress-fi:22` is firewalled at the Hetzner edge; the connection times out from the laptop's residential IP. Reachable only via `ssh -J cemini-prod` (jump host). The SSH alias `cemini-egress-fi` in `~/.ssh/config` bakes in `ProxyJump cemini-prod` so the indirection is transparent.
+
+- **Predecessor — `cemini-poly-proxy` (Falkenstein, Germany)** — retired 2026-05-20. The Falkenstein box played the same role (egress relay) with the same spec class (2 vCPU / 4 GB / 75 GB, sshd-only) at IP `178.105.151.69`. It was swapped out for the Helsinki box because Polymarket *and* Hyperliquid both accept Finnish egress, whereas Falkenstein had been provisioned with only Polymarket in mind. The architecture is unchanged; only the country and hostname are.
