@@ -60,6 +60,7 @@ LAPTOP (~/Desktop/OSINT WORKSPACE/):
     entities/                  # tickers, companies, people, facilities, organizations, tools, infrastructure
     concepts/                  # topics, theses, methodologies, strategies
   scripts/                     # wiki_lint.py, skill_audit.py, preingest_check.py, wiki_gap_detect.py, cross_doc_dedup.py, sync_wiki_to_librarian.sh, etc.
+  ui/                          # local dev tooling (e.g. Cemini AI chat front-end + proxy to cemini-egress-fi gateway)
   .local/                      # gitignored, local-only (server connection details, etc.)
 
 LIBRARIAN (cemini-librarian:/opt/):
