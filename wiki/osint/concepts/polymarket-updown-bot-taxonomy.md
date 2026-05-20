@@ -10,9 +10,13 @@ related:
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-statistical-arbitrage.md
   - concepts/market-microstructure.md
+  - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
+  - concepts/multi-module-bot-conflict-detector-pattern.md
+  - concepts/polymarket-lp-rewards-farming.md
+  - entities/people/gustafssonkotte.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-20
 ---
 
 ## Relations
@@ -23,6 +27,8 @@ updated: 2026-05-18
 - @concepts/cross-venue-arbitrage-pattern.md — Type 4 (cross-timeframe lag) is the within-venue cousin of cross-venue arb
 - @concepts/prediction-market-statistical-arbitrage.md — the quant-formalized version of Types 3 & 5 (fair-value / imbalance) — micro-price and OBI math
 - @concepts/market-microstructure.md — the general microstructure backdrop all 6 types exploit
+- @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — K55 Post 3 (@Gustafssonkotte) describes a Type-3/Type-5 fair-value+imbalance bot on 5-min BTC markets, with explicit multi-module architecture
+- @concepts/multi-module-bot-conflict-detector-pattern.md — K55: structural addition for any taxonomy-type bot — conflict-detector pattern + time-aware sizing for short-resolution markets
 
 ## Raw Concept
 

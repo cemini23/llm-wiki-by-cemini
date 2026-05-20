@@ -14,10 +14,11 @@ related:
   - entities/tools/polymarket-agents.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-historical-analysis.md
+  - concepts/polymarket-lp-rewards-farming.md
 maturity: draft
 hub: true
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-05-20
 ---
 
 ## Relations

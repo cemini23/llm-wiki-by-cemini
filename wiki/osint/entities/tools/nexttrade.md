@@ -6,15 +6,17 @@ keywords: [nexttrade, austin-starks, no-code-trading, backtesting-framework, mit
 related:
   - sources/multi-wiki-tool-eval-26url-2026-05-19.md
   - concepts/quant-finance.md
+  - sources/multi-wiki-tool-eval-19url-2026-05-20.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 ## Relations
 
 - @sources/multi-wiki-tool-eval-26url-2026-05-19.md — K54 eval URL 21; the source that surfaced this tool
 - @concepts/quant-finance.md — the domain NextTrade operates in
+- @sources/multi-wiki-tool-eval-19url-2026-05-20.md — K55 re-evaluation (URL 15); makes the same stack-misidentification error (claims Python; it's TypeScript) and reaches the same Steal-from verdict. K54's verified facts on this page are authoritative — no change required.
 
 ## Raw Concept
 

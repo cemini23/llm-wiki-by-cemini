@@ -9,9 +9,13 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - concepts/macro-weather-regime.md
   - concepts/prediction-market-statistical-arbitrage.md
+  - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
+  - concepts/time-series-arima-garch-framework.md
+  - concepts/stochastic-calculus-foundations.md
+  - entities/people/rohonchain.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-18
+updated: 2026-05-20
 ---
 
 ## Relations
@@ -21,6 +25,8 @@ updated: 2026-05-18
 - @concepts/regime-conditioned-evaluation.md — sibling: evaluating strategies *conditioned on* regime; this page is about *detecting* the regime
 - @concepts/macro-weather-regime.md — sibling regime concept (macro/weather state framing)
 - @concepts/prediction-market-statistical-arbitrage.md — K52: its cross-venue predictive signal uses a rolling Markov transition matrix (the same transition-matrix machinery this page documents)
+- @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — K55 Post 1 (@RohOnChain time-series) is the companion piece this Markov page was originally designed to compose with
+- @concepts/time-series-arima-garch-framework.md — K55: the ARIMA/GARCH framework explicitly closes with a Markov × GARCH agreement/disagreement multi-model orchestration prompt — adopted as a Cemini-wide pattern
 
 ## Raw Concept
 

@@ -99,9 +99,19 @@ related:
   - concepts/markov-regime-switching-models.md
   - concepts/ai-assisted-trading-workflow.md
   - concepts/hedge-fund-open-source-tooling.md
+  - sources/phynance-kakushadze-1405-1948v2-stochastic-calculus-2014.md
+  - sources/simons-using-mathematics-to-make-money-jic-2023.md
+  - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
+  - concepts/stochastic-calculus-foundations.md
+  - concepts/time-series-arima-garch-framework.md
+  - concepts/hiring-quant-talent-philosophy.md
+  - entities/companies/renaissance-technologies.md
+  - entities/organizations/quantigic-solutions.md
+  - entities/people/jim-simons.md
+  - entities/people/zura-kakushadze.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 ## Relations
@@ -185,6 +195,12 @@ updated: 2026-05-19
 - @sources/hmm-jurafsky-martin-2026.md — HMM source (Jurafsky & Martin)
 - @sources/the-three-dimensional-decomposition-of-volatility-memory.md — canonical level-shape-tempo decomposition of volatility memory; gated GARCH family (RSM / G-FIGARCH / G-Clock / TG-Vol) with observable-feature gates
 - @sources/gdelt-4-3-29.md — K49 deep-read; interpretable ML for macro alpha from GDELT news sentiment (FinBERT + XGBoost + SHAP)
+- @sources/phynance-kakushadze-1405-1948v2-stochastic-calculus-2014.md — K55 foundational stochastic-calculus reference (Kakushadze "Phynance", 111p, arXiv:1405.1948v2)
+- @sources/simons-using-mathematics-to-make-money-jic-2023.md — K55 primary-source interview (Jim Simons / Renaissance Technologies)
+- @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — K55 trading-posts ingest (time-series ARIMA/GARCH framework + multi-module conflict-detector + LP-rewards tactics)
+- @concepts/stochastic-calculus-foundations.md — K55 synthesized reference: Itô, Girsanov, martingales, Black-Scholes, binomial trees
+- @concepts/time-series-arima-garch-framework.md — K55 synthesized concept: ARMA-family + GARCH framework with walk-forward + volatility-scaled sizing
+- @concepts/hiring-quant-talent-philosophy.md — K55 synthesized concept: Simons / Renaissance hiring + structural-design principles
 
 ## Raw Concept
 

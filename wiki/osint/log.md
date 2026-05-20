@@ -5730,3 +5730,85 @@ Each brief carries the license-verification caveat. `cemini-prod` brief staged: 
 - **No librarian adoption.** The only other K54 Adopt-tier financial tool, QuantDinger, is server-side (cemini-prod trading stack) and Phase-0-pending — deferred to server-Claude, not a librarian install. NextTrade is reference-only (no adoption).
 - **cemini-prod brief delivered.** `briefs/2026-05-19_k54-polymarket-tooling-cemini.md` scp'd to `cemini-prod:/opt/cemini/briefs/` (5,210 bytes, verified). skill_audit PASS 100/100.
 - **Cross-wiki briefs** (4) were created in-place by `cross_wiki_route.py` into the sibling wikis' `briefs/` directories (CCC / Cybersec / Image-gen / SEO) — no scp needed; they live alongside their destination wikis.
+
+## [2026-05-20] ingest | K55 — Trading-posts × 2 + Phynance lecture notes + Simons interview + 19-URL multi-wiki tool eval
+
+Five-source batch dropped into `research to be indexed/`. All five passed preingest (one LIKELY filename collision: Posts.docx — different sha256 / different content from the May-16 batch, ingested with a date-disambiguated filename on transfer). User-flagged interest in @MatiasScalbi's "provide liquidity" idea as the focal takeaway.
+
+### Sources (5)
+
+1. **Posts.docx** (50KB, 6 X-posts): @morpphhhaw perps DEX market-neutral funding-carry bot · @MatiasScalbi Polymarket LP-rewards + $POLY airdrop guide (Spanish) — **user-flagged provide-liquidity idea** · @zostaff Python algo prediction-market guide · @stacyonchain Claude sports-consensus agent (Firecrawl + 5-source) · @polysuccubus Top-7 weather traders (ColdMath/Clawdbot #1 +$124K) · @gippp69 Shopify-Claude e-commerce (→ seo-wiki).
+2. **Posts 2.docx** (40KB, 4 X-posts): @RohOnChain Time-Series ARIMA/GARCH framework (companion to his K49 Markov post) · @AlphaSignalAI deep-dive on @senamakel's OpenHuman v0.54.0 (+20k stars, agentmemory bridge — → ccc-wiki) · @Gustafssonkotte "Deleted half my bot's code" — Polymarket BTC 5-min bot rewrite with multi-module conflict-detector · @MatiasScalbi 21 tactical LP-rewards tips.
+3. **1405.1948v2.pdf** (Kakushadze "Phynance", 111p, arXiv:1405.1948v2): Ph.D. lecture notes from Spring-2002 Stony Brook YITP. Stochastic calculus + derivative pricing in path-integral language. Foundational reference.
+4. **ssrn-4668072.pdf** (Jim Simons interview, JIC V22N1 2023): 8-page primary-source roundtable. Operational philosophy: math-not-finance hiring, one-model-continuously-improved, "stick to the math," data mining endorsed.
+5. **Multi-Wiki Tool Evaluation Prompt.docx** (K55 19-URL tool eval, "v4 May 2026"): 3 Adopt / 4 Steal-from / 2 Defer / 4 Reference / 3 Reject / 1 UNAVAILABLE.
+
+### OSINT-side pages (20)
+
+**5 source pages** — one per ingested file (above).
+
+**7 concept pages** (all VALIDATED, deep-read):
+- `concepts/polymarket-lp-rewards-farming.md` — **the user-flagged page**. Maker-side standing-order strategy + 21-tip tactical layer + airdrop thesis + Cemini LP-bot architecture diagram. Folds into the broader Polymarket strategy cluster.
+- `concepts/perps-dex-funding-carry-strategy.md` — cross-venue market-neutral funding-carry on perp DEXes. Out-of-scope-today (no perp adapters); portable failure-mode catalog.
+- `concepts/sports-prediction-consensus-agent.md` — Firecrawl + Claude tier-weighted consensus agent. Recipe adoptable; CentPRO productized version Rejected.
+- `concepts/time-series-arima-garch-framework.md` — ARMA-family + GARCH walk-forward framework. GARCH position-sizing > ARIMA forecast-direction insight. Composes with Markov regimes.
+- `concepts/multi-module-bot-conflict-detector-pattern.md` — broken-data-corruption + 3-module conflict-detector (`spread > THRESHOLD → SKIP`) + time-aware sizing for short-resolution markets.
+- `concepts/stochastic-calculus-foundations.md` — Itô / Girsanov / martingales / Black-Scholes / binary-option-pricing synthesis from Phynance.
+- `concepts/hiring-quant-talent-philosophy.md` — Simons / Renaissance philosophy backing several Cemini structural orientations.
+
+**8 people / 1 company / 1 organization / 7 tool pages**:
+- `entities/people/jim-simons.md` (VALIDATED) — Renaissance founder; 1938-2024
+- `entities/people/zura-kakushadze.md` — Phynance author / Quantigic founder
+- `entities/people/matias-scalbi.md` — @MatiasScalbi, LP-rewards / airdrop creator
+- `entities/people/morpphhhaw.md` — @morpphhhaw, perps funding-carry bot
+- `entities/people/rohonchain.md` — @RohOnChain quant-framework series (K49+K55)
+- `entities/people/gustafssonkotte.md` — @Gustafssonkotte conflict-detector bot
+- `entities/people/stacyonchain.md` — @stacyonchain sports-consensus / CentPRO
+- `entities/people/polymarketsuccubus.md` — @polysuccubus weather-trader rankings
+- `entities/companies/renaissance-technologies.md` — primary-source-attested operational claims
+- `entities/organizations/quantigic-solutions.md` — Stamford CT quant-research firm
+- `entities/tools/ai-polymarket-agent.md` (Adopt-eligible, Phase-0 pending) — MIT MCP server (kaktusesquire6rmu); compare against existing caiovicentino bridge
+- `entities/tools/centpro.md` (Reject) — closed-source Windows binary; same bot @stacyonchain promotes
+- `entities/tools/scalar-field.md` (Reject) — YC Spring 2025 closed-source agentic-trading SaaS (competitive intel)
+- `entities/tools/clawdbot.md` (Defer pending verification) — Claude-powered framework behind #1 weather trader ColdMath
+- `entities/tools/parity-polymarket-analytics.md` (Defer) — counterparty-intel platform fronting K55 trader rankings
+- `entities/tools/firecrawl.md` (Defer) — JS-rendering scraper, sports-consensus agent dependency
+- `entities/tools/chainlink-data-streams.md` (Conditional Adopt) — low-latency oracle, architectural pattern "price-feed separate from execution venue"
+
+### Existing pages updated (12)
+
+- `concepts/polymarket-bot-architecture.md` — fourth independent operator (@Gustafssonkotte) confirming execution > strategy; conflict-detector pattern added as structural addition
+- `concepts/polymarket-updown-bot-taxonomy.md` — K55 Post 3 fair-value+imbalance bot example; conflict-detector + time-aware sizing structural additions
+- `concepts/polymarket-weather-trading-strategy.md` — 7 independent operator profiles (K55 Post 5) confirming the strategy; Clawdbot + Parity backlinks added
+- `concepts/markov-regime-switching-models.md` — companion Time-Series ARIMA/GARCH page now linked; the GARCH × Markov agreement/disagreement multi-model orchestration prompt
+- `concepts/ai-assisted-trading-workflow.md` — sports-consensus agent extends the prep-layer pattern into automated research+entry-gating
+- `concepts/non-latency-arbitrage-strategies.md` — LP-rewards farming as the fifth standing-order slow-yield strategy
+- `concepts/carry-trade.md` — Perps DEX funding-carry as the crypto-perp instantiation
+- `concepts/cross-venue-arbitrage-pattern.md` — perps-funding-carry sibling
+- `concepts/polymarket-market-making-architectures.md` — LP-rewards backlink
+- `concepts/cemini-license-posture.md` — K55 fifth tool-eval batch surfaces the NO-LICENSE-FOUND retrieval-gap pattern again; Scalar Field / CentPRO Rejects recorded
+- `concepts/quant-finance.md` — corpus-index updated with Phynance + Simons + Time-Series sources + 3 new concept pages
+- `entities/tools/openhuman.md` — K55 update section (v0.54.0, agentmemory bridge, Product Hunt #1, +20k stars, independent measurements)
+- `entities/tools/nexttrade.md` — K55 re-evaluation note (same stack-misidentification as K54; no change to verified facts)
+- `entities/tools/polymarket-clob-api.md` — LP-rewards farming + ai-polymarket-agent backlinks
+- `entities/tools/polymarket-agents.md` — ai-polymarket-agent third-party-built-on-top backlink
+- `entities/platforms/polymarket.md` — full K55 backlink cluster (4 new concepts + 4 new people + 4 new tools)
+
+### Cross-wiki routing
+
+Briefs to be created next step via `cross_wiki_route.py`:
+
+| Target wiki | Items |
+|---|---|
+| **ccc-wiki** | OpenHuman v0.54 + agentmemory bridge (deep architectural read-out); ai-polymarket-agent (MCP server design exemplar); DeLive (MCP audio-transcription tool eval); src-hunter-skill (massive SKILL.md design exemplar); awesome-claude (registry); the-book-of-secret-knowledge; Windows-Terminal-Guide; hackingtool-plugin orchestration patterns |
+| **cybersec-wiki** | tugarecon (Steal); bluehood (Steal); H4X-Tools (Steal); src-hunter-skill (Adopt); super/SPR (Steal); CF-Hero (Reject but reverse-proxy-origin-discovery is cybersec-relevant); Windows-Terminal-Guide; the-book-of-secret-knowledge; hackingtool-plugin (Defer) |
+| **image-gen-wiki** | DeLive — ASR for persona-ops voice/TTS synchronization |
+| **seo-wiki** | @gippp69 Posts.docx Post 6 — Shopify dropshipping with 5 Claude methods ($8.4K/mo, 5 prompts for competitor autopsy / mining bad reviews / 5-email sequence / UGC ad scripts / Sunday diagnostic) |
+
+### Outcome
+
+Substantial Cemini-relevant batch — three Adopt-candidates (ai-polymarket-agent, Firecrawl, Chainlink Data Streams pending Phase-0) plus the user-flagged LP-rewards-farming workstream which warrants its own cemini-prod brief. The Simons + Phynance materials are foundational references rather than action items, but anchor several existing structural choices to primary sources for the first time.
+
+### Update — License-check follow-up (deferred)
+
+Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-API spot-checks before final verdict (osint_stuff_tool_collection, H4X-Tools, hackingtool-plugin, J.A.R.V.I.S, awesome-claude, scalar-field/centpro are commercial closed-source and need no check). Scheduled for next session. — see `@concepts/cemini-license-posture.md`.

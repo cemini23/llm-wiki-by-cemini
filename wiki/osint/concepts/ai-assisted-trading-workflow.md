@@ -7,9 +7,11 @@ related:
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
   - concepts/quant-finance.md
   - entities/tools/quantdinger.md
+  - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
+  - concepts/sports-prediction-consensus-agent.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 ## Relations
@@ -17,6 +19,8 @@ updated: 2026-05-19
 - @sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md — @TraderMorin post this page synthesizes
 - @entities/tools/quantdinger.md — K54 tool eval; QuantDinger's multi-agent research engine is a software instance of this AI-assisted workflow
 - @concepts/quant-finance.md — corpus-index parent cluster
+- @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — K55 Post 4 (@stacyonchain sports-consensus agent) extends this prep-layer pattern into an automated multi-source research+entry-gating layer
+- @concepts/sports-prediction-consensus-agent.md — K55 synthesized concept: AI-assisted *research* layer for sports markets (Firecrawl + Claude + consensus gates)
 
 ## Raw Concept
 

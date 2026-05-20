@@ -15,9 +15,13 @@ related:
   - concepts/polymarket-market-making-architectures.md
   - concepts/ensemble-weather-forecasting.md
   - concepts/macro-weather-regime.md
+  - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
+  - entities/people/polymarketsuccubus.md
+  - entities/tools/clawdbot.md
+  - entities/tools/parity-polymarket-analytics.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-18
+updated: 2026-05-20
 ---
 
 ## Relations
@@ -32,6 +36,10 @@ updated: 2026-05-18
 - @concepts/polymarket-market-making-architectures.md — sibling concept (parlay/AMM)
 - @concepts/ensemble-weather-forecasting.md — weather-side methodology
 - @concepts/macro-weather-regime.md — temperature regime backdrop
+- @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — K55 Post 5 (@polysuccubus) — Top-7 most-profitable Polymarket weather traders ranking; 7 independent operator profiles confirming the strategy
+- @entities/people/polymarketsuccubus.md — author of the K55 Top-7 ranking
+- @entities/tools/clawdbot.md — Claude-powered AI agent framework behind #1-ranked ColdMath (PnL +$124K)
+- @entities/tools/parity-polymarket-analytics.md — analytics platform fronting the K55 Top-7 trader profiles
 
 ## Raw Concept
 

@@ -10,6 +10,7 @@ related:
   - sources/sakana-conductor-rl-orchestration.md
   - concepts/llm-agent-systems.md
   - concepts/scatter-gather-topology.md
+  - concepts/hiring-quant-talent-philosophy.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/skill-vetting.md
   - concepts/librarian-server-architecture.md

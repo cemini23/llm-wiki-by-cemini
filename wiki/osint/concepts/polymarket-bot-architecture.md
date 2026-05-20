@@ -20,9 +20,17 @@ related:
   - concepts/polymarket-updown-bot-taxonomy.md
   - entities/tools/polymarket-websocket-api.md
   - entities/tools/discountifu-polymarket-trading-bot.md
+  - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
+  - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
+  - concepts/polymarket-lp-rewards-farming.md
+  - concepts/multi-module-bot-conflict-detector-pattern.md
+  - concepts/perps-dex-funding-carry-strategy.md
+  - concepts/sports-prediction-consensus-agent.md
+  - entities/people/gustafssonkotte.md
+  - entities/tools/ai-polymarket-agent.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-18
+updated: 2026-05-20
 ---
 
 ## Relations
@@ -37,6 +45,11 @@ updated: 2026-05-18
 - `@concepts/polymarket-updown-bot-taxonomy.md` — the 6-type *strategy* taxonomy that sits on top of this *engineering* playbook
 - `@entities/tools/polymarket-websocket-api.md` — WebSocket channels the 6-layer websocket system subscribes to
 - `@entities/tools/discountifu-polymarket-trading-bot.md` — K53 Adopt-eligible MIT bot; a concrete CLOB-V2 / WebSocket-orderbook implementation of this playbook
+- `@sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md` — K55 source; @morpphhhaw perps-funding-carry bot independently corroborates the "infrastructure-first / failed-open-on-one-leg = first-class risk event" lessons
+- `@sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md` — K55 source; @Gustafssonkotte Polymarket BTC bot adds the broken-data + multi-module conflict-detector lessons (fourth independent operator confirmation)
+- `@concepts/polymarket-lp-rewards-farming.md` — K55: the *maker-side* yield strategy on Polymarket; complement to this taker-side bot architecture
+- `@concepts/multi-module-bot-conflict-detector-pattern.md` — K55: the multi-signal-synthesis pattern (`spread > THRESHOLD → SKIP`) is a structural addition to this playbook
+- `@concepts/perps-dex-funding-carry-strategy.md` — K55: portable failure-mode lessons from cross-venue perps strategies; same "execution > strategy" thesis
 
 ## Raw Concept
 

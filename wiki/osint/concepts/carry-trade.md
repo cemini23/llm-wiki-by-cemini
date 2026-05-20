@@ -6,15 +6,17 @@ keywords: [carry-trade, interest-rate-differential, forward-premium-puzzle, fund
 related:
   - entities/platforms/oanda.md
   - concepts/macro-weather-regime.md
+  - concepts/perps-dex-funding-carry-strategy.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-02
+updated: 2026-05-20
 ---
 
 ## Relations
 
 - @entities/platforms/oanda.md — OANDA is the primary FX execution venue for Cemini's carry-trade variants.
 - @concepts/macro-weather-regime.md — Macro Weather regime gates carry-trade sizing: disabled in RED, half-sized in YELLOW, full-sized in GREEN.
+- @concepts/perps-dex-funding-carry-strategy.md — K55 instantiation in crypto perpetual-futures: same edge (interest-rate-differential capture) on a different asset class
 
 ## Raw Concept
 

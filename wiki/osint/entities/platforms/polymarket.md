@@ -54,9 +54,22 @@ related:
   - entities/tools/polymarket-lb-api.md
   - entities/tools/polymarket-websocket-api.md
   - entities/tools/polymarket-bridge-api.md
+  - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
+  - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
+  - concepts/polymarket-lp-rewards-farming.md
+  - concepts/sports-prediction-consensus-agent.md
+  - concepts/multi-module-bot-conflict-detector-pattern.md
+  - entities/people/matias-scalbi.md
+  - entities/people/polymarketsuccubus.md
+  - entities/people/stacyonchain.md
+  - entities/people/gustafssonkotte.md
+  - entities/tools/ai-polymarket-agent.md
+  - entities/tools/centpro.md
+  - entities/tools/clawdbot.md
+  - entities/tools/parity-polymarket-analytics.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 ## Relations

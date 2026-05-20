@@ -8,9 +8,10 @@ related:
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
   - concepts/paradigm-vs-license-inverse-correlation.md
+  - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-20
 ---
 
 ## Relations
@@ -18,6 +19,20 @@ updated: 2026-05-13
 - `@sources/tool-evaluation-wiki-fit-2026-05-13.md` — origin source (Doc 3, K42), Steal-from
 - `@concepts/tool-evaluation-framework.md` — methodology
 - `@concepts/cemini-license-posture.md` — GPL-3.0 quarantine policy
+- `@sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md` — K55 Post 2 (@AlphaSignalAI deep-dive on @senamakel's OpenHuman); v0.54.0 update, agentmemory bridge, +20k stars, Product Hunt #1
+
+## K55 update (2026-05-20)
+
+K55 Posts 2.docx Post 2 documents OpenHuman's v0.54.0 release (2026-05-19) and the Product Hunt #1 ranking — repo crossed +20k stars in days, with 5,000+ users in 7 days. New material relevant to the wiki:
+- **v0.54.0 agentmemory backend bridge**: `memory.backend = "agentmemory"` in `config.toml` shares a durable store with Claude Code, Cursor, Codex, and OpenCode. Mirrors Cemini's `librarian-stash` MCP role architecturally.
+- **Fully-local STT/TTS via Whisper + Piper** (prior path required ElevenLabs cloud).
+- **MCP stdio memory server**, NotebookLM-style folder ingestion.
+- **Native auto-ingest**: still only Gmail / Notion / Slack (the 118+ Composio catalog is callable but doesn't auto-feed Memory Tree).
+- **"Local-first" caveat**: applies to memory only. Chat, vision, web search, OAuth proxying, TTS streaming stay cloud.
+- **Independent measurements**: PrimeAIcenter 5-day test measured ~70% TokenJuice compression (not the project's 80% claim).
+- **No published security audit** despite v0.54.0 hardening (path traversal, DNS rebinding, bearer redaction).
+
+Verdict unchanged: **Steal-from / GPL-3.0 quarantine**. Methodology adoption acceptable; codebase remains poison-pill for `/opt/cemini`. The agentmemory + memory-tree pattern is the highest-leverage thing to steal architecturally. Routed to ccc-wiki brief for K55 (see `@sources/multi-wiki-tool-eval-19url-2026-05-20.md` cross-wiki routing).
 
 ## Raw Concept
 

@@ -11,9 +11,10 @@ related:
   - entities/tools/polymarket-python-order-utils.md
   - entities/tools/polymarket-trackers.md
   - concepts/polymarket-market-making-architectures.md
+  - entities/tools/ai-polymarket-agent.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-11
+updated: 2026-05-20
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-11
 - @sources/caiovicentino-polymarket-mcp-server.md — Wave 5 Adopt; works alongside Polymarket Agents in the LLM-bridge layer
 - @entities/platforms/polymarket.md — Polymarket venue entity
 - @entities/tools/polymarket-python-order-utils.md — companion Adopt; order-signing layer
+- @entities/tools/ai-polymarket-agent.md — K55 third-party MCP server built on top of this official framework (kaktusesquire6rmu/ai-polymarket-agent); Phase-0 audit pending
 
 ## Raw Concept
 

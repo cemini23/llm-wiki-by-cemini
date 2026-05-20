@@ -15,6 +15,7 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/mcp-tool-marketplace.md
   - entities/platforms/polymarket.md
+  - entities/tools/ai-polymarket-agent.md
   - entities/infrastructure/deepseek-api.md
   - concepts/high-signal-paper-patterns.md
   - sources/3-26-b.md

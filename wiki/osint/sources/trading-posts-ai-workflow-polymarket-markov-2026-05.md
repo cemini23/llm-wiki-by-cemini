@@ -8,10 +8,11 @@ related:
   - concepts/ai-assisted-trading-workflow.md
   - concepts/polymarket-bot-architecture.md
   - concepts/quant-finance.md
+  - entities/people/rohonchain.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-05-20
 clusters: [quant-finance]
 ---
 

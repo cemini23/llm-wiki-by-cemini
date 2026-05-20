@@ -16,9 +16,11 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-api-reference.md
   - entities/tools/polymarket-bridge-api.md
+  - concepts/polymarket-lp-rewards-farming.md
+  - entities/tools/ai-polymarket-agent.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-19
+updated: 2026-05-20
 ---
 
 ## Relations

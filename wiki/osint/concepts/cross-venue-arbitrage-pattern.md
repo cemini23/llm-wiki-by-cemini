@@ -23,9 +23,10 @@ related:
   - entities/tools/hftbacktest.md
   - entities/tools/prediction-market-analysis.md
   - entities/tools/poly-arbitrage-bot.md
+  - concepts/perps-dex-funding-carry-strategy.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-18
+updated: 2026-05-20
 ---
 
 ## Relations

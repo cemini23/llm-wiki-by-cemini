@@ -13,9 +13,11 @@ related:
   - concepts/three-formula-system-polymarket-rare-events.md
   - entities/platforms/polymarket.md
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
+  - concepts/polymarket-lp-rewards-farming.md
+  - concepts/sports-prediction-consensus-agent.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-15
+updated: 2026-05-20
 ---
 
 ## Relations
