@@ -1,5 +1,9 @@
 # Wiki Log
 
+## [2026-05-21] docs | README federation audit — visibility + cross-links
+
+Corrected privacy labels across federation READMEs + `CLAUDE.md` Related Wikis tables: **`ccc-wiki` = public**, **`osint-wiki` + Cemini Financial Suite = private**. Unified GitHub links for public repos; canonical block at `docs/wiki-federation-snippet.md`. Updated: OSINT, CCC, image-gen, SEO, 3d-printing, cybersecurity READMEs; CeminiSuite README (related wikis section); OSINT + CCC `CLAUDE.md`.
+
 ## [2026-05-21] lint | Bidirectional gaps cleared (OSINT + CCC + SEO)
 
 - **OSINT:** 15 backlinks added (11× `polymarket-lp-bot-phase0-spec` cluster + 4× K48 arXiv cross-links). Bidir gaps → 0.
