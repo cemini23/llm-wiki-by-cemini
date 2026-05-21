@@ -1,0 +1,39 @@
+# Workspace lazy-tool catalog — used by Cursor MCP (see .cursor/mcp.json).
+# Rebuild after tunnel changes: lazy-tool reindex --config .cursor/lazy-tool.yaml
+app:
+  name: lazy-tool-osint
+
+storage:
+  sqlite_path: ".cursor/lazy-tool-catalog.db"
+
+sources:
+  - id: "conductor"
+    type: server
+    transport: stdio
+    command: "python3"
+    args:
+      - "/Users/claudiobarone/Desktop/OSINT WORKSPACE/conductor/mcp_server.py"
+  - id: "kb-server"
+    type: server
+    transport: stdio
+    command: "ssh"
+    args:
+      - "cemini-librarian"
+      - "cd /opt/cemini-wiki && KB_TOOL_ALLOWLIST=kb_search,kb_search_smart,kb_context,kb_read,kb_list,kb_vault_status,kb_safety_check node /opt/kb-server/src/mcp.js"
+  - id: "prod-mcp"
+    type: server
+    transport: http
+    url: "http://localhost:18002/mcp"
+  # stash: SSE-only — use global ~/.cursor/mcp.json "stash" (not lazy-tool-indexable)
+  - id: "fetch"
+    type: server
+    transport: stdio
+    command: "npx"
+    args:
+      - "-y"
+      - "mcp-fetch-server"
+  - id: "exa"
+    type: server
+    transport: stdio
+    command: "/Users/claudiobarone/Desktop/OSINT WORKSPACE/scripts/mcp_exa.sh"
+    args: []

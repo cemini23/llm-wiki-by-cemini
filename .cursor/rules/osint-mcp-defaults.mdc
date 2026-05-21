@@ -1,0 +1,26 @@
+---
+description: OSINT workspace MCP defaults — lazy-tool first, wiki-first research
+alwaysApply: true
+---
+
+# MCP usage (OSINT workspace)
+
+## Tool routing
+
+1. **lazy-tool first** — For conductor, kb-server, prod-mcp, fetch, or exa capabilities, use lazy-tool meta-tools (`search_tools` → `inspect_capability` → `invoke_proxy_tool`) before assuming a direct upstream tool exists in context.
+2. **stash (global)** — Episodic memory via user-level `stash` MCP (`remember`, `recall`, etc.). Do not expect a project-level `librarian-stash` server.
+3. **Wiki-first** — Answer research questions from `wiki/index.md` + kb-server before Exa. Exa is for gaps and verification.
+4. **prod-mcp** — Read-only verification on Hetzner prod unless the user explicitly asks to modify `/opt/cemini` (out of scope for this workspace).
+
+## When lazy-tool catalog is stale
+
+If `search_tools` misses a tool you know exists, ask the user to run:
+
+`lazy-tool reindex --config ".cursor/lazy-tool.yaml"`
+
+(tunnels must be up first).
+
+## fetch vs Exa
+
+- **fetch** (`mcp-fetch-server`) — known URL → clean text for snippets.
+- **exa** — search, crawl, company/people research, deep researcher jobs.

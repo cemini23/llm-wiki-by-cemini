@@ -16,6 +16,11 @@ briefs/
 # --- Server credentials & connection details (local-only) --------------------
 .local/
 
+# --- Cursor lazy-tool local catalog (regenerable via lazy-tool reindex) ---------
+.cursor/lazy-tool-catalog.db
+.cursor/lazy-tool-catalog.db-*
+.cursor/vector/
+
 # --- Claude Code per-project state (settings, lock files, scheduled-task state) ----
 .claude/
 

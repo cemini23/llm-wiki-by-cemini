@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "lazy-tool": {
+      "type": "stdio",
+      "command": "/Users/claudiobarone/.local/bin/lazy-tool",
+      "args": [
+        "serve",
+        "--config",
+        "/ABS/PATH/TO/OSINT WORKSPACE/.cursor/lazy-tool.yaml"
+      ],
+      "env": {
+        "LAZY_TOOL_CONFIG": "/ABS/PATH/TO/OSINT WORKSPACE/.cursor/lazy-tool.yaml"
+      }
+    },
+    "prod-mcp": {
+      "type": "sse",
+      "url": "http://localhost:18002/mcp"
+    },
+    "exa": {
+      "type": "stdio",
+      "command": "/ABS/PATH/TO/OSINT WORKSPACE/scripts/mcp_exa.sh",
+      "args": [],
+      "env": {}
+    },
+    "fetch": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "mcp-fetch-server"],
+      "env": {}
+    }
+  }
+}

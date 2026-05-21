@@ -16,10 +16,6 @@
       "type": "sse",
       "url": "http://localhost:18002/mcp"
     },
-    "librarian-stash": {
-      "type": "sse",
-      "url": "http://localhost:8088/sse"
-    },
     "lazy-tool": {
       "type": "stdio",
       "command": "/Users/claudiobarone/.local/bin/lazy-tool",
@@ -41,8 +37,8 @@
     },
     {
       "name": "librarian",
-      "description": "Cemini librarian (Hetzner librarian) — kb-server via SSH stdio, stash auto-tunneled via LaunchAgent on :8088.",
-      "mcpServers": ["kb-server", "librarian-stash"]
+      "description": "Cemini librarian (Hetzner librarian) — kb-server via SSH stdio. Stash memory uses global ~/.mcp.json stash at :8088.",
+      "mcpServers": ["kb-server"]
     },
     {
       "name": "lazy",
