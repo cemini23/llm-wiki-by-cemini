@@ -109,6 +109,7 @@ related:
   - entities/organizations/quantigic-solutions.md
   - entities/people/jim-simons.md
   - entities/people/zura-kakushadze.md
+  - sources/ssrn-5140015-time-series-quant-finance-2025.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-05-20

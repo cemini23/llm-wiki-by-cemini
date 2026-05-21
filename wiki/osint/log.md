@@ -1,5 +1,45 @@
 # Wiki Log
 
+## [2026-05-21] ingest | K56 — X-posts (LP-farming live test, copy-trading, event-based ML, MCPT) + GitHub-projects synthesis + SSRN time-series review
+
+User dropped 3 files into `research to be indexed/` and asked for full ingest. Centerpieces: (1) anonymous LP-farming live test on Polymarket Drake "Iceman" market provides the first concrete numeric live-test of the K55 LP-rewards-farming concept page; (2) Yifan Guo SSRN 5140015 (Jan 2025) provides the academic foundation for the K55 time-series ARIMA/GARCH concept.
+
+### Sources ingested (3)
+
+1. **Posts.docx** (9 X-posts) — @Alexo_0x neural-nets-on-Polymarket / anon LP-farming live test (Drake "Iceman" + Neymar FIFA-2026) / @igor_mikerin Pretracer promo / @DextersSolab KreoPolyBot deep-dive / @_avichawla Karpathy system-prompt-learning RL (→ ccc) / @phosphenq MCPT per Timothy Masters 2020 / @0xDepressionn Karpathy CLAUDE.md (→ ccc) / @cyrilXBT Obsidian-as-OS (→ ccc) / Post 8 = K55 dup.
+2. **Analyzing GitHub Projects and Articles.docx** — 58k-char synthesis report; OSINT-critical: pmxt 1TB orderbook + utility-marketing playbook; NoFxAiOS/Hackgate cautionary (SlowMist 2025-11-17); Freqtrade/OpenTrader legacy-vs-modern.
+3. **ssrn-5140015.pdf** — Yifan Guo "Applications of Time Series Analysis in Quantitative Finance" (Jan 2025, 21 pages). Academic foundation for ARIMA/GARCH/Holt-Winters/ML toolkit.
+
+### Pages created (17 OSINT-side)
+
+- **3 source pages**, **3 concept pages** (event-based-prediction-market-ml / polymarket-copy-trading-strategy / monte-carlo-permutation-test-mcpt), **6 tool entities** (pretracer NO-AUDIT / kreopolybot NO-AUDIT / polymarketanalytics-com USE-AS-INPUT / nofx-ai-os REJECT cautionary / freqtrade REFERENCE-ONLY / opentrader REFERENCE-ELIGIBLE), **5 people entities** (alexo-0x / igor-mikerin / dexterssolab / phosphenq / yifan-guo).
+
+### Existing pages updated (5)
+
+- `concepts/polymarket-lp-rewards-farming.md` — K56 live-test confirmation section ($50→$18 in 48h / Top 15% LP rank / Drake Iceman 5-position spread / Neymar FIFA-2026 zero-risk setup); $300-600 boosted-rewards parameter promoted `[TENTATIVE]` → `[CONFIRMED 2026-05-21]` (two independent sources within 1 week).
+- `concepts/time-series-arima-garch-framework.md` — K56 academic-foundation extension; Yifan Guo SSRN paper anchors Box-Jenkins / Hamilton / Engle / Breiman canonical references; cross-references to event-based-ml + MCPT validation layers.
+- `entities/tools/pmxt.md` — K56 growth-story + 1TB orderbook open-source dataset (~0.25TB/day); utility-marketing playbook; Samuel EF. Tinnerholm maintainer attribution.
+- `entities/people/rohonchain.md` — K56 backlink (Post 8 duplicate noted).
+- `wiki/index.md` — K56 ingest sub-section + K56 tool/people/concept additions.
+
+### Briefs
+
+- **cemini-prod**: `briefs/2026-05-21_k56-lp-rewards-confirmation-and-copy-trading-adversary-modeling.md` — LP-farming live-test confirmation (concrete numbers for capital sizing) + copy-trading adversary modeling + event-based ML caveats for any future Cemini Polymarket directional bot.
+- **Cross-wiki briefs** (2): ccc-wiki (agentic-infra synthesis) + cybersec-wiki (offensive-security tooling).
+
+### Adoptions
+
+- **No local adoptions** in K56 — copy-trading bots are NO-AUDIT; Freqtrade/OpenTrader are reference-only or reference-eligible without active scope.
+- **No librarian adoptions** in this batch (pmxt 1TB dataset is the candidate; deferred to librarian operator decision).
+
+### Raw sources moved
+
+All 3 files scp'd to `cemini-librarian:/opt/cemini-bulk/research/` with disambiguated names; laptop copies removed; inbox empty.
+
+### Lint clean
+
+0 orphans / 0 bidirectional gaps / 0 dangling / 0 missing introduced by K56. Recurring nit: `sources/stanford-cs230-lstm-stock-prediction.md` missing `read_status` (pre-existing from K50).
+
 ## [2026-05-20] infra | egress relay swapped Falkenstein → Helsinki (cemini-poly-proxy → cemini-egress-fi)
 
 User rebuilt the order-egress relay at Hetzner Helsinki (Finland) and decommissioned the previous Hetzner Falkenstein (Germany) box. Driver: both Polymarket **and** Hyperliquid accept Finnish egress, so a single Helsinki relay covers both venues; the Falkenstein box had been provisioned with only Polymarket in mind. Role and operational pattern carry over unchanged.

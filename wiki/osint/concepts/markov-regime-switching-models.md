@@ -13,6 +13,8 @@ related:
   - concepts/time-series-arima-garch-framework.md
   - concepts/stochastic-calculus-foundations.md
   - entities/people/rohonchain.md
+  - concepts/event-based-prediction-market-ml.md
+  - sources/ssrn-5140015-time-series-quant-finance-2025.md
 maturity: draft
 created: 2026-05-16
 updated: 2026-05-20

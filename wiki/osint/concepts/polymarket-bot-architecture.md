@@ -28,6 +28,10 @@ related:
   - concepts/sports-prediction-consensus-agent.md
   - entities/people/gustafssonkotte.md
   - entities/tools/ai-polymarket-agent.md
+  - concepts/event-based-prediction-market-ml.md
+  - concepts/polymarket-copy-trading-strategy.md
+  - entities/tools/nofx-ai-os.md
+  - sources/analyzing-github-projects-agentic-infra-2026-05-21.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-05-20

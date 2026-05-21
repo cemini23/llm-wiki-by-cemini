@@ -13,6 +13,7 @@ related:
   - concepts/reasoning-safety-monitor.md
   - sources/regime-conditioned-bo-evaluation.md
   - concepts/regime-conditioned-evaluation.md
+  - concepts/monte-carlo-permutation-test-mcpt.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
 maturity: validated
 created: 2026-04-30

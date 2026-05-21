@@ -5,6 +5,8 @@ tags: [methodology, deep-learning, lstm, stock-prediction, time-series, baseline
 keywords: [LSTM, stock prediction, RMSE, hyperparameter tuning, dropout, batch size, baseline model]
 related:
   - sources/stanford-cs230-lstm-stock-prediction.md
+  - concepts/event-based-prediction-market-ml.md
+  - sources/ssrn-5140015-time-series-quant-finance-2025.md
 maturity: draft
 created: 2026-05-16
 updated: 2026-05-16

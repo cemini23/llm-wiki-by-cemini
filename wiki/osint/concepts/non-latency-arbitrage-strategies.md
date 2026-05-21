@@ -10,6 +10,7 @@ related:
   - concepts/prediction-market-statistical-arbitrage.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - concepts/polymarket-lp-rewards-farming.md
+  - concepts/polymarket-copy-trading-strategy.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-20

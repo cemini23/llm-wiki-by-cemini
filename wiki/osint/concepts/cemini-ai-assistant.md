@@ -8,6 +8,7 @@ related:
   - entities/infrastructure/deepseek-api.md
   - concepts/kb-server-retrieval-scaling.md
   - concepts/librarian-server-architecture.md
+  - entities/tools/nofx-ai-os.md
 maturity: draft
 created: 2026-05-19
 updated: 2026-05-20

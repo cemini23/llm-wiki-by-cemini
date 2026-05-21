@@ -6,6 +6,7 @@ keywords: [counterfactual-baselines, paraphrase-null, treatment-variation-irrele
 related:
   - sources/counterfactual-prompting-2605.01048.md
   - entities/tools/deepeval.md
+  - concepts/monte-carlo-permutation-test-mcpt.md
 maturity: draft
 created: 2026-05-14
 updated: 2026-05-14

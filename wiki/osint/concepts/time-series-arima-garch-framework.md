@@ -1,18 +1,23 @@
 ---
 title: "Time-series ARIMA + GARCH trading framework — directional forecast × volatility-scaled sizing"
 type: concept
-tags: [concept, time-series-analysis, arima, garch, unit-root, stationarity, walk-forward, position-sizing, quant-finance, k55]
-keywords: [arima, garch, augmented-dickey-fuller, unit-root, spurious-regression, log-returns, volatility-clustering, walk-forward-validation, volatility-scaled-sizing, conditional-expectation, alternative-data, rohonchain]
+tags: [concept, time-series-analysis, arima, garch, unit-root, stationarity, walk-forward, position-sizing, quant-finance, k55, k56]
+keywords: [arima, garch, augmented-dickey-fuller, unit-root, spurious-regression, log-returns, volatility-clustering, walk-forward-validation, volatility-scaled-sizing, conditional-expectation, alternative-data, rohonchain, yifan-guo-ssrn-5140015, box-jenkins, engle-1982, hamilton-1994]
 related:
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - sources/phynance-kakushadze-1405-1948v2-stochastic-calculus-2014.md
+  - sources/ssrn-5140015-time-series-quant-finance-2025.md
+  - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - concepts/markov-regime-switching-models.md
   - concepts/stochastic-calculus-foundations.md
   - concepts/quant-finance.md
+  - concepts/event-based-prediction-market-ml.md
+  - concepts/monte-carlo-permutation-test-mcpt.md
   - entities/people/rohonchain.md
+  - entities/people/yifan-guo.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-21
 clusters: [quant-finance, time-series]
 ---
 
@@ -20,14 +25,26 @@ clusters: [quant-finance, time-series]
 
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — Post 1 (@RohOnChain) primary source for the synthesized framework
 - @sources/phynance-kakushadze-1405-1948v2-stochastic-calculus-2014.md — foundational stochastic-calculus reference; complements the empirical framework here with the theoretical underpinnings
+- @sources/ssrn-5140015-time-series-quant-finance-2025.md — Yifan Guo's (Jan 2025) survey paper provides the academic anchor for the canonical ARIMA / GARCH / Holt-Winters / ML stack referenced empirically here (K56)
 - @concepts/markov-regime-switching-models.md — author's companion piece (K49); time-series + Markov regime detection are designed to be used together
 - @concepts/stochastic-calculus-foundations.md — synthesized stochastic-calculus reference page
 - @concepts/quant-finance.md — corpus-index home
+- @concepts/event-based-prediction-market-ml.md — K56 extension: documents why this equity-style framework fails when ported naively to Polymarket (event-resolution structural breaks)
+- @concepts/monte-carlo-permutation-test-mcpt.md — K56 complementary validation framework; MCPT tests whether the backtested edge is real vs data-mining bias
 - @entities/people/rohonchain.md — author
+- @entities/people/yifan-guo.md — author of the academic-foundation paper (SSRN 5140015)
 
 ## Raw Concept
 
 What prompted this page: K55 Posts 2.docx Post 1 — @RohOnChain's "How To Build A Time Series Model To Win Every Single Trade." Third in his quant-framework series (after Markov chains for regime detection and a neural-network signal post). Synthesizes a complete, runnable ARMA-family + GARCH framework with operationally-realistic caveats.
+
+**K56 extension (2026-05-21)**: the Yifan Guo SSRN paper (ssrn-5140015, Jan 2025) was ingested as the academic foundation for the toolkit applied here empirically. Guo's paper anchors the canonical references — Box-Jenkins (1976), Hamilton (1994 *Time Series Analysis*), Engle (1982 ARCH), Breiman (2001 Random Forests) — and provides the structural framing for §§2.1 (ARIMA), 2.2 (GARCH), 2.3 (Holt-Winters), 2.4 (RNN/LSTM), 3.1-3.4 (asset pricing, risk, portfolio optimization, algorithmic trading), and §4 (non-stationarity / multicollinearity / model uncertainty). The empirical and theoretical layers now converge cleanly on this page.
+
+The K56 ingest also surfaced two **complementary validation frameworks**:
+- @concepts/event-based-prediction-market-ml.md (@Alexo_0x) — documents why this equity-style framework fails when ported naively to prediction markets
+- @concepts/monte-carlo-permutation-test-mcpt.md (@phosphenq) — pre-deployment test for distinguishing real edge from data-mining bias
+
+Together with the Markov-regime page and the LP-rewards-farming page, these form the K55/K56-era quant-finance core of the wiki.
 
 ## Narrative
 

@@ -6,6 +6,7 @@ keywords: [lp-rewards, providing-liquidity-polymarket, time-weighted-open-intere
 related:
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
+  - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/polymarket-updown-bot-taxonomy.md
@@ -18,7 +19,7 @@ related:
   - entities/tools/ai-polymarket-agent.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-21
 clusters: [polymarket, market-making, yield-farming]
 ---
 
@@ -26,6 +27,7 @@ clusters: [polymarket, market-making, yield-farming]
 
 - @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — Post 2 (@MatiasScalbi Spanish-language guide) is the primary source
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — Post 4 (@MatiasScalbi 21 tactical tips) is the tactical layer
+- @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — K56 Post 1 (anonymous trader live $50 LP-farming test on Drake "Iceman" + Neymar FIFA-2026 setup) confirms $300-600 boosted-reward range and Top-15% LP rank at $50 capital in 48h
 - @concepts/polymarket-bot-architecture.md — bot-side of the same edge; LP-farming is the maker-orientation complement
 - @concepts/polymarket-market-making-architectures.md — overlapping market-making concept; this page focuses on the *rewards-scheme* incentive, that page on the structural MM patterns
 - @concepts/polymarket-updown-bot-taxonomy.md — Type-1 bots (resting LP orders) are the closest existing taxon
@@ -193,6 +195,47 @@ LP-rewards farming is **complementary** to, not a substitute for:
 
 The LP bot is a **fourth distinct workstream** on the Polymarket stack — running it doesn't preclude any of the others, and capital can be allocated across all four orientations.
 
+## K56 live-test confirmation (2026-05-21)
+
+An anonymous trader documented a $50 LP-farming live test on Polymarket (K56 Posts.docx Post 1 — see @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md). Three sub-tests with concrete numeric outcomes:
+
+### Drake "Iceman" first-week-album-sales market
+
+**Day 1** ($50 deposit, 5 positions across sales-range buckets):
+
+| Bucket | Probability | Yes | No |
+|---|---|---|---|
+| 300k-350k | 7% | 7.3¢ | 92.8¢ |
+| 350k-400k | 7% | 6.9¢ | 93.2¢ |
+| 400k-450k | 12% | 12.6¢ | 88.3¢ |
+| 450k-500k | 17% | 17.3¢ | 83.7¢ |
+| 500k-550k | 24% | 25.0¢ | 76.8¢ |
+
+Result: **$4 returned in 5 hours** (~8% intra-day yield, no directional bet). [Source: K56 Posts.docx Post 1]
+
+**Day 2**: $18 cumulative LP rewards. Rank **#21,829 / 145,703 = Top 14.98%**. **$17 from Top 10% threshold.** [Source: K56 Posts.docx Post 1]
+
+### Boosted-rewards parameter `[CONFIRMED]`
+
+The K55 page noted boosted rewards on new markets at $300-600/market as a `[TENTATIVE]` claim from @MatiasScalbi. **K56 Post 1 independently confirms the same range** ($300-600/market on top of regular fees) from a different anonymous author. Promote to `[CONFIRMED 2026-05-21]` — two independent sources within 1 week reporting the same numeric range.
+
+### Neymar FIFA-2026 "zero-risk" LP setup
+
+The K56 source highlights the Neymar FIFA-2026 World Cup market as an unusually clean LP setup:
+
+- Current price: **94¢** (crowd highly convinced Neymar plays)
+- Yes spread: **1¢**
+- Order book: asks 94-97¢ totalling **$830k+**, bids 90-93¢ totalling **$328k+**
+- LP rewards: **$300/market**
+
+The structural pitch: hundreds of thousands of dollars on both sides with 1¢ spread → constant fills → LP earns base $300 + per-fill on top. 94¢ price → crowd already convinced → low directional swing risk. **Closest the framework gets to a textbook "zero-risk" LP setup** — though the residual risks (Polymarket changes reward structure, market resolves NO via late injury/withdrawal, market gets less active as resolution nears) still apply.
+
+### Capital-sizing data point
+
+The K55 capital reference was `$200 → $40 in 10 days at Top 6-7%` ([TENTATIVE], @MatiasScalbi self-reported). K56 adds a smaller-capital data point: **$50 → $18 in 48 hours at Top 15%**.
+
+Rewards-per-capital efficiency is **back-loaded at small sizes** because the leaderboard rewards `time-weighted-open-interest × participation-share`; small LPs farming light markets capture proportionally more of the reward pool than whales (who concentrate in deep markets where their fractional participation share is small). This validates the K55 "$50-$200 sweet-spot for retail entry" framing.
+
 ## Dead Ends
 
 - **"LP rewards are guaranteed yield"** — false. Adverse fills in thin markets, mis-priced near-resolution markets, and Polymarket changing the reward formula are all real risks. Treat as a yield strategy with execution + adverse-selection risk, not a savings account.
@@ -210,3 +253,7 @@ The LP bot is a **fourth distinct workstream** on the Polymarket stack — runni
 > "Calculate your participation before entering. If the market has $2K in liquidity and you put in $200, your share is 0.2%. If the reward pool is $500/day, you earn $1/day." [Source: Posts 2.docx — Post 4, @MatiasScalbi]
 
 > "For bot: the edge is in the plumbing, not the algorithm. Fill detection, position reconciliation, cancellation of orphaned orders, dust cleanup. 80% of the code isn't strategy, it's survival." [Source: Posts 2.docx — Post 4, @MatiasScalbi]
+
+> "$50 deployed, sitting top 15% of all LP providers on the platform and the window is still open." [Source: K56 Posts.docx Post 1 — Drake Iceman LP-farming Day 2]
+
+> "Polymarket currently running boosted LP rewards on new markets -> $300-600 per market on top of regular fees." [Source: K56 Posts.docx Post 1 — independent confirmation of @MatiasScalbi's earlier claim]

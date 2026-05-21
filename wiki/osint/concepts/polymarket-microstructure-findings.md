@@ -10,6 +10,8 @@ related:
   - concepts/market-microstructure.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/cross-venue-arbitrage-pattern.md
+  - concepts/event-based-prediction-market-ml.md
+  - concepts/polymarket-copy-trading-strategy.md
   - concepts/prediction-market-historical-analysis.md
   - sources/arxiv-coordination-layer-multi-agent-2605-03310.md
   - sources/arxiv-polymarket-fill-side-2605-11640.md

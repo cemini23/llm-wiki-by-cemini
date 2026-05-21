@@ -6,18 +6,19 @@ keywords: [rohonchain, roan, backend-developer, hft-execution, quant-framework-s
 related:
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
+  - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - concepts/time-series-arima-garch-framework.md
   - concepts/markov-regime-switching-models.md
-  - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-21
 ---
 
 ## Relations
 
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — K55 Post 1 (Time Series ARIMA/GARCH)
 - @sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md — K49 ingest source (Markov chain trading framework)
+- @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — K56 Post 8 is a re-share of @RohOnChain's time-series article already ingested in K55 (cross-referenced for source-handle completeness; no new content)
 - @concepts/time-series-arima-garch-framework.md — synthesized concept (this batch)
 - @concepts/markov-regime-switching-models.md — synthesized concept (K49)
 

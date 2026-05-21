@@ -46,6 +46,7 @@ related:
   - concepts/llm-listwise-alignment.md
   - sources/mit-quant-bible.md
   - sources/evonash-marl.md
+  - sources/ssrn-5140015-time-series-quant-finance-2025.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-05-16

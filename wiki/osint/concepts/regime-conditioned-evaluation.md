@@ -11,6 +11,7 @@ related:
   - concepts/algorithmic-stopping-conditions.md
   - concepts/llm-listwise-alignment.md
   - concepts/cemini-license-posture.md
+  - concepts/monte-carlo-permutation-test-mcpt.md
   - sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md
   - sources/evonash-marl.md
   - sources/test-time-adaptation-for-non-stationary-time-series.md

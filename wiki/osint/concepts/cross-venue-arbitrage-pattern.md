@@ -18,6 +18,8 @@ related:
   - concepts/non-latency-arbitrage-strategies.md
   - concepts/prediction-market-statistical-arbitrage.md
   - concepts/polymarket-updown-bot-taxonomy.md
+  - entities/tools/pmxt.md
+  - sources/analyzing-github-projects-agentic-infra-2026-05-21.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - sources/multi-wiki-link-eval-41url-2026-05-18.md
   - entities/tools/hftbacktest.md
