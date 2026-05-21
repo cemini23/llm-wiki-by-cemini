@@ -17,6 +17,7 @@ related:
   - entities/tools/polymarket-clob-api.md
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/ai-polymarket-agent.md
+  - concepts/polymarket-lp-bot-phase0-spec.md
 maturity: validated
 created: 2026-05-20
 updated: 2026-05-21
@@ -36,6 +37,7 @@ clusters: [polymarket, market-making, yield-farming]
 - @entities/people/matias-scalbi.md — primary-source author
 - @entities/platforms/polymarket.md — venue entity
 - @entities/tools/polymarket-clob-api.md, @entities/tools/polymarket-gamma-api.md — API surfaces required
+- @concepts/polymarket-lp-bot-phase0-spec.md — Phase-0 implementation spec (K56 follow-up, design-only)
 
 ## Raw Concept
 

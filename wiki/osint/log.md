@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-21] sweep | Tier-2 arXiv (2026-05-07 → 2026-05-21)
+
+- Ran `scripts/arxiv_sweep_run.py` (fixed broken `weekly_arxiv_sweep.sh` bash/python quoting). Report: `wiki/sweeps/2026-05-21.md` — 25 raw hits.
+- Rubric pass: 3 already in wiki (2605.12653, 2605.11640, 2604.24366); **Tier-A ingest recommend** `2605.18747` (Code as Agent Harness), `2605.17307` (DRL portfolio); Tier-B optional `2605.19775`, `2605.06737`.
+- **No ingest** — user-gated; awaiting approval on Tier-A list.
+
+## [2026-05-21] spec | Polymarket LP bot Phase-0
+
+- Created `concepts/polymarket-lp-bot-phase0-spec.md` — design-only: 6-module architecture, capital tiers ($50/$200/$500), acceptance criteria, adversary constraints, MCPT gate, CONDITIONAL-GO for shadow-live Phase-1.
+- Updated `concepts/polymarket-lp-rewards-farming.md` backlink + `wiki/index.md`.
+
 ## [2026-05-21] ingest | K56 — X-posts (LP-farming live test, copy-trading, event-based ML, MCPT) + GitHub-projects synthesis + SSRN time-series review
 
 User dropped 3 files into `research to be indexed/` and asked for full ingest. Centerpieces: (1) anonymous LP-farming live test on Polymarket Drake "Iceman" market provides the first concrete numeric live-test of the K55 LP-rewards-farming concept page; (2) Yifan Guo SSRN 5140015 (Jan 2025) provides the academic foundation for the K55 time-series ARIMA/GARCH concept.
