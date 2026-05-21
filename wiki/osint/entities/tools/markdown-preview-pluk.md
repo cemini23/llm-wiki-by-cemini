@@ -7,6 +7,7 @@ related:
   - sources/evaluating-urls-system-integration.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
+  - "@3d-printing-wiki/entities/tools/markdown-preview-pluk.md"
 maturity: validated
 created: 2026-05-11
 updated: 2026-05-11
@@ -17,6 +18,7 @@ adopted_as: /Applications/Markdown Preview.app (v0.0.21, 2026-05-11)
 - `@sources/evaluating-urls-system-integration.md` — source evaluation brief (URL 13)
 - `@concepts/tool-evaluation-framework.md` — three-surface methodology applied
 - `@concepts/cemini-license-posture.md` — license posture context
+- `@3d-printing-wiki/entities/tools/markdown-preview-pluk.md` — cross-wiki stub in 3D-printing wiki (backlink)
 
 **Cross-wiki briefs** (live in target wikis' `briefs/` folders, outside `wiki/`):
 - image-gen-wiki: `briefs/2026-05-11_2026-05-11_markdown-preview-pluk-cross-wiki.md`
