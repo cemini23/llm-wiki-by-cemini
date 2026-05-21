@@ -1,5 +1,9 @@
 # Wiki Log
 
+## [2026-05-21] fix | kb-server vault YAML — 29 files across federation
+
+`kb vault reindex` failed on 29 pages (unquoted `@` in `related:` / `cross-wiki-source`, unquoted `phase_0_verdict` colons, `@path` in `keywords`). Fixed via `scripts/fix_wiki_frontmatter_kb.py` across OSINT + CCC + image-gen + 3d-printing + SEO wikis. Reindex: **0 errors**, 8 newly indexed.
+
 ## [2026-05-21] docs | Multi-wiki eval prompt v3/v4 canonical → CCC
 
 - Restored verbatim **v3** at `@ccc-wiki` `prompts/deep-research-multi-wiki-eval-v3-2026-05-21.md` (7 surfaces, CCC = surface 7).
