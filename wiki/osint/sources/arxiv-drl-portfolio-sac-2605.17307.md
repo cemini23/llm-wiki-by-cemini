@@ -9,7 +9,7 @@ related:
   - concepts/portfolio-strategy.md
   - sources/arxiv-fpilot-rl-trading-2605-12653.md
 
- validated
+maturity: validated
 read_status: skimmed
 created: 2026-05-21
 updated: 2026-05-21

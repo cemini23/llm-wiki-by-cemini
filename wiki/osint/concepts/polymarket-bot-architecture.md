@@ -34,7 +34,7 @@ related:
   - sources/analyzing-github-projects-agentic-infra-2026-05-21.md
   - concepts/polymarket-lp-bot-phase0-spec.md
 
- draft
+maturity: draft
 created: 2026-05-12
 updated: 2026-05-20
 ---

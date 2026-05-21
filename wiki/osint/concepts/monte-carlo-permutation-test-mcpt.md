@@ -13,7 +13,7 @@ related:
   - entities/people/phosphenq.md
   - concepts/polymarket-lp-bot-phase0-spec.md
 
- draft
+maturity: draft
 created: 2026-05-21
 updated: 2026-05-21
 clusters: [quant-validation, backtest]

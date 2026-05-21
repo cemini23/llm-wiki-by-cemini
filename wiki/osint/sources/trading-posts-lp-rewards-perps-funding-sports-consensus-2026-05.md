@@ -21,7 +21,7 @@ related:
   - entities/tools/centpro.md
   - concepts/polymarket-lp-bot-phase0-spec.md
 
- validated
+maturity: validated
 read_status: deep-read
 created: 2026-05-20
 updated: 2026-05-20

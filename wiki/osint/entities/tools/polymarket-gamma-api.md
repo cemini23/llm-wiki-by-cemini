@@ -16,7 +16,7 @@ related:
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/polymarket-lp-bot-phase0-spec.md
 
- validated
+maturity: validated
 created: 2026-05-13
 updated: 2026-05-20
 ---

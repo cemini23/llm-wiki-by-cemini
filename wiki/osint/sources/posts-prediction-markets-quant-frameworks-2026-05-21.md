@@ -19,7 +19,7 @@ related:
   - entities/tools/polymarketanalytics-com.md
   - concepts/polymarket-lp-bot-phase0-spec.md
 
- validated
+maturity: validated
 created: 2026-05-21
 updated: 2026-05-21
 read_status: read

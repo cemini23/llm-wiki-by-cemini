@@ -20,7 +20,7 @@ related:
   - entities/tools/ai-polymarket-agent.md
   - concepts/polymarket-lp-bot-phase0-spec.md
 
- validated
+maturity: validated
 created: 2026-05-13
 updated: 2026-05-20
 ---

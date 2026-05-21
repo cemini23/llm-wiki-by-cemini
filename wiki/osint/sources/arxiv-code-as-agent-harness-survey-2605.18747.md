@@ -11,7 +11,7 @@ related:
   - concepts/cemini-ai-assistant.md
   - sources/arxiv-grep-agent-harness-2605-15184.md
 
- validated
+maturity: validated
 read_status: skimmed
 created: 2026-05-21
 updated: 2026-05-21

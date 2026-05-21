@@ -69,7 +69,7 @@ related:
   - entities/tools/parity-polymarket-analytics.md
   - concepts/polymarket-lp-bot-phase0-spec.md
 
- validated
+maturity: validated
 created: 2026-04-23
 updated: 2026-05-20
 ---
