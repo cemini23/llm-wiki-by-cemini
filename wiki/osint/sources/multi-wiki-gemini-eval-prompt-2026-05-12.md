@@ -31,8 +31,6 @@ related:
   - entities/tools/codenomad.md
   - entities/tools/supertonic.md
   - entities/tools/accomplish.md
-  - @ccc-wiki/concepts/deep-research-evaluation-prompt.md
-  - @ccc-wiki/concepts/cursor-ide-workspace.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-12

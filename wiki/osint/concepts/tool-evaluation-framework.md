@@ -11,7 +11,6 @@ related:
   - sources/rlhf-critic-bias-al-zawahreh-2026.md
   - sources/tool-evaluation-multi-wiki-audit-may-2026.md
   - sources/multi-wiki-gemini-eval-prompt-2026-05-12.md
-  - @ccc-wiki/concepts/deep-research-evaluation-prompt.md
 maturity: validated
 hub: true
 created: 2026-05-10
