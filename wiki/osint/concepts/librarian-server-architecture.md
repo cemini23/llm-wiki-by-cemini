@@ -31,6 +31,7 @@ related:
   - entities/tools/swarmvault.md
   - entities/infrastructure/cemini-egress-fi.md
   - concepts/cemini-ai-assistant.md
+  - sources/arxiv-inference-scaling-llms-2605.19775.md
 maturity: validated
 hub: true
 created: 2026-04-28

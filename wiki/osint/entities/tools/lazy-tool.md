@@ -13,6 +13,7 @@ related:
   - concepts/mcp-context-optimization.md
   - entities/tools/cc-switch.md
   - entities/tools/9router.md
+  - sources/arxiv-inference-scaling-llms-2605.19775.md
 maturity: validated
 created: 2026-05-09
 updated: 2026-05-11

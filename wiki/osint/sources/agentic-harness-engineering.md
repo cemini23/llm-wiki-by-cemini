@@ -10,6 +10,9 @@ related:
   - sources/claude-code-harness-chachamaru.md
   - sources/sentrux-ast-sensor.md
   - concepts/llm-agent-systems.md
+  - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
+  - concepts/code-as-agent-harness.md
+  - sources/arxiv-self-healing-llm-agents-2605.06737.md
   - entities/infrastructure/deepseek-api.md
   - sources/incompressible-knowledge-probes-li-2026.md
   - concepts/high-signal-paper-patterns.md
@@ -31,6 +34,9 @@ updated: 2026-04-30
 - @sources/claude-code-harness-chachamaru.md — chachamaru is a deployed instance of the same family (Claude Code harness with hooks); AHE is the academic generalization of the same concept (observability + auto-evolution).
 - @sources/sentrux-ast-sensor.md — sentrux's AST analysis of Python codebases is one technique for Component-observability (the §3.1 pillar); AHE generalizes this to file-level commits across 7 component types.
 - @concepts/llm-agent-systems.md — cluster hub; this paper is the highest-signal harness-engineering empirical contribution in the corpus to date.
+- @sources/arxiv-code-as-agent-harness-survey-2605.18747.md — May 2026 survey taxonomy for code-as-harness (complementary framing)
+- @sources/arxiv-self-healing-llm-agents-2605.06737.md — runtime self-healing vs harness evolution (complementary)
+- @concepts/code-as-agent-harness.md — concept hub from survey
 - @entities/infrastructure/deepseek-api.md — paper uses deepseek-v4-flash as one of five cross-model transfer bases; AHE harness yields **+10.1pp pass@1 gain** on deepseek-v4-flash (largest cross-family gain measured), validating that AHE's harness-level evolution generalizes to DeepSeek-family models — directly relevant to Cemini.
 - @sources/incompressible-knowledge-probes-li-2026.md — sibling 2026-04 arXiv preprint on LLM agent infrastructure (27 Apr 2026 vs. 28 Apr 2026 for this paper). Both quantify aspects of LLM systems Cemini's stack depends on: AHE measures *harness-level evolvability* (the orchestration substrate around the model); IKP measures *factual capacity* (the model's stored knowledge). Useful pairing for the "what should Cemini optimize: harness or brain?" decision — AHE shows the harness can deliver +10.1pp on a fixed base; IKP shows the brain's factual capacity cannot be compressed by the Densing Law and must scale with total parameters.
 - @sources/piebald-claude-code-system-prompts.md — Wave 5B Steal-from; **operational complement** to AHE. AHE proposes the empirical methodology to evolve harnesses (observability + auto-mutation + falsifiable manifest); piebald's repo provides extracted reference data (Anthropic's deployed Claude Code system prompts across 114 versions) that grounds the prompt-extraction-pattern. AHE answers "how to evolve a harness systematically"; piebald answers "what does Anthropic's deployed harness look like at each release". Together: empirical evolution methodology + observed-evolution-trace dataset

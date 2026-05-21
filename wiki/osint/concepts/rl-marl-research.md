@@ -82,6 +82,7 @@ related:
   - sources/refinerl-self-refinement-rl.md
   - sources/eggro-evolution-strategies-hyperscale-2026.md
   - sources/arxiv-fpilot-rl-trading-2605-12653.md
+  - sources/arxiv-drl-portfolio-sac-2605.17307.md
 maturity: draft
 created: 2026-04-26
 updated: 2026-05-15

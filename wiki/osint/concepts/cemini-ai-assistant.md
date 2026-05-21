@@ -9,9 +9,11 @@ related:
   - concepts/kb-server-retrieval-scaling.md
   - concepts/librarian-server-architecture.md
   - entities/tools/nofx-ai-os.md
+  - sources/arxiv-self-healing-llm-agents-2605.06737.md
+  - concepts/code-as-agent-harness.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-20
+updated: 2026-05-21
 ---
 
 ## Relations
@@ -20,6 +22,9 @@ updated: 2026-05-20
 - @entities/infrastructure/deepseek-api.md — the LLM brain; already wired into the production stack, OpenAI-compatible so provider-swappable
 - @concepts/kb-server-retrieval-scaling.md — the wiki-RAG retrieval layer the assistant queries for its differentiating knowledge
 - @concepts/librarian-server-architecture.md — the librarian (kb-server + stash) that supplies static wiki RAG plus episodic memory; the assistant is a new consumer of it
+- @sources/arxiv-self-healing-llm-agents-2605.06737.md — failure detection + corrective replanning patterns for long-running assistant sessions
+- @concepts/code-as-agent-harness.md — harness-interface model for executable/verifiable assistant actions
+- @sources/arxiv-code-as-agent-harness-survey-2605.18747.md — primary survey for harness-interface + verification layers
 
 ## Raw Concept
 

@@ -19,6 +19,7 @@ related:
   - sources/3-29-research-5.md
   - sources/3-5-git-pt-2.md
   - sources/3-9-pm-research.md
+  - sources/arxiv-drl-portfolio-sac-2605.17307.md
   - sources/4-4-link-re.md
   - sources/4-5-links.md
   - sources/agent-7-4-4.md
@@ -69,6 +70,7 @@ updated: 2026-05-16
 - @sources/3-29-research-5.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/3-5-git-pt-2.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/3-9-pm-research.md — Portfolio Strategy source in the Cemini research corpus
+- @sources/arxiv-drl-portfolio-sac-2605.17307.md — SAC global-equity portfolio WFO (2003–2026); partial edge vs B&H [TENTATIVE]
 - @sources/4-4-link-re.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/4-5-links.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/agent-7-4-4.md — Portfolio Strategy source in the Cemini research corpus

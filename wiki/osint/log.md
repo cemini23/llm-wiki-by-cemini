@@ -4,7 +4,45 @@
 
 - Ran `scripts/arxiv_sweep_run.py` (fixed broken `weekly_arxiv_sweep.sh` bash/python quoting). Report: `wiki/sweeps/2026-05-21.md` — 25 raw hits.
 - Rubric pass: 3 already in wiki (2605.12653, 2605.11640, 2604.24366); **Tier-A ingest recommend** `2605.18747` (Code as Agent Harness), `2605.17307` (DRL portfolio); Tier-B optional `2605.19775`, `2605.06737`.
-- **No ingest** — user-gated; awaiting approval on Tier-A list.
+- **Ingest completed** — see `## [2026-05-21] ingest | K48 Tier-2 arXiv batch (4 papers)` below.
+
+## [2026-05-21] ingest | K48 Tier-2 arXiv batch (4 papers)
+
+Tier-2 sweep `@sweeps/2026-05-21.md` — user approved full batch (2× Tier-A + 2× Tier-B).
+
+### Sources ingested (4)
+
+1. **2605.18747** — Code as Agent Harness survey (UIUC/Meta/Stanford, 102pp, skimmed)
+2. **2605.17307** — DRL portfolio SAC global equity WFO (Warsaw QF, 67pp, skimmed)
+3. **2605.19775** — Inference scaling for reasoning LLMs (Micron/ANL, 14pp, skimmed)
+4. **2605.06737** — Self-healing LLM agents (Samsung SDS/Yonsei, 13pp, skimmed)
+
+### Pages created (5)
+
+- **4 source pages** (`arxiv-code-as-agent-harness-survey-2605.18747`, `arxiv-drl-portfolio-sac-2605.17307`, `arxiv-inference-scaling-llms-2605.19775`, `arxiv-self-healing-llm-agents-2605.06737`)
+- **1 concept page** (`concepts/code-as-agent-harness.md`)
+
+### Existing pages updated (10)
+
+- `concepts/llm-agent-systems.md`, `concepts/rl-marl-research.md`, `concepts/mcp-context-optimization.md`, `concepts/portfolio-strategy.md`, `concepts/cemini-ai-assistant.md`
+- `sources/agentic-harness-engineering.md`, `sources/arxiv-grep-agent-harness-2605.15184.md`, `sources/arxiv-fpilot-rl-trading-2605.12653.md`
+- `wiki/index.md`, `concepts/code-as-agent-harness.md` (backlinks)
+
+### Raw sources
+
+- Moved to `cemini-librarian:/opt/cemini-bulk/research/` with disambiguated filenames; laptop drop zone cleared.
+
+### Distribution
+
+- **cemini-prod brief** (prior step): `briefs/2026-05-21_polymarket-lp-bot-phase0-spec.md` — LP bot Phase-0 CONDITIONAL-GO spec.
+- **cemini-prod brief** (post-ingest): `briefs/2026-05-21_k48-arxiv-sweep-harness-portfolio-rl-inference-cemini.md` — harness + SAC WFO benchmark + inference capacity wall + self-healing patterns for server-Claude.
+- **Cross-wiki brief**: `ccc-wiki/briefs/2026-05-21_k48-code-as-harness-and-self-healing-from-osint.md` — harness taxonomy + self-healing for CCC conductor/hooks docs.
+
+### Adoptions (K48)
+
+- **Laptop**: none (lazy-tool K34 already covers MCP harness surface).
+- **cemini-librarian**: PDFs archived; wiki sync post-commit (no new packages).
+- **cemini-egress-fi**: **posture adoption** — API-only for long-CoT reasoning documented on `@entities/infrastructure/cemini-egress-fi.md` per 2605.19775.
 
 ## [2026-05-21] spec | Polymarket LP bot Phase-0
 

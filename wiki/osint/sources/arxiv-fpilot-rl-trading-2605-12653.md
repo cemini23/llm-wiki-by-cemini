@@ -5,6 +5,7 @@ tags: [source, arxiv, reinforcement-learning, trading-agents, inference-time-opt
 keywords: [fpilot, inference-time-optimization, rl-trading-agent, model-predictive-control, price-forecast, portfolio-management, trademaster-dj30]
 related:
   - concepts/rl-marl-research.md
+  - sources/arxiv-drl-portfolio-sac-2605.17307.md
 maturity: validated
 read_status: skimmed
 created: 2026-05-15
@@ -14,6 +15,7 @@ updated: 2026-05-15
 ## Relations
 
 - @concepts/rl-marl-research.md — RL-for-trading research; FPILOT is an inference-time-optimization technique applicable to a trained RL trading policy without retraining
+- @sources/arxiv-drl-portfolio-sac-2605.17307.md — full SAC portfolio WFO study (train-time RL contrast)
 
 ## Raw Concept
 

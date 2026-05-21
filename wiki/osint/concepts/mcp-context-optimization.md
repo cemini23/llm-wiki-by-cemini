@@ -17,6 +17,7 @@ related:
   - sources/wave-5-1-link-eval-stacks.md
   - entities/frameworks/fastmcp.md
   - sources/tool-attention.md
+  - sources/arxiv-inference-scaling-llms-2605.19775.md
 maturity: draft
 created: 2026-05-09
 updated: 2026-05-11
@@ -36,6 +37,7 @@ updated: 2026-05-11
 - @entities/frameworks/fastmcp.md — the MCP framework Cemini deploys; context optimization wraps around its tool surface
 - @sources/4-5-links.md — K8 source that first identified context window as a production constraint on the Cemini stack
 - @sources/wave-5-1-link-eval-stacks.md — Wave 5 evaluation context where these optimizations matter
+- @sources/arxiv-inference-scaling-llms-2605.19775.md — reasoning workloads hit KV capacity wall (orthogonal to MCP tool bloat)
 
 ## Raw Concept
 

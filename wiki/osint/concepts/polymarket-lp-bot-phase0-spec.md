@@ -155,7 +155,7 @@ Run **MCPT** (@concepts/monte-carlo-permutation-test-mcpt.md) on 7-day shadow **
 | Deliverable | Owner | Status |
 |-------------|-------|--------|
 | This spec | OSINT wiki | **Done** |
-| cemini-prod brief (implementation handoff) | OSINT `briefs/` → scp | **Pending user GO** |
+| cemini-prod brief (implementation handoff) | OSINT `briefs/` → scp | **Shipped 2026-05-21** (`/opt/cemini/briefs/2026-05-21_polymarket-lp-bot-phase0-spec.md`) |
 | Shadow-mode PRD on server | server-Claude | Not started |
 | Phase-0 audit vs existing MM code | server-Claude | Not started |
 

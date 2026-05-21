@@ -29,6 +29,9 @@ related:
   - sources/4-14-pvg5.md
   - sources/agent1-4-4.md
   - sources/agentic-harness-engineering.md
+  - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
+  - sources/arxiv-self-healing-llm-agents-2605.06737.md
+  - concepts/code-as-agent-harness.md
   - sources/agents-7.md
   - sources/incompressible-knowledge-probes-li-2026.md
   - sources/agents.md

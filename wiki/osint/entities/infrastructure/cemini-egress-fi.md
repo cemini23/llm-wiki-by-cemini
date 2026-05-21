@@ -7,9 +7,10 @@ related:
   - concepts/cemini-ai-assistant.md
   - entities/infrastructure/cemini-stack.md
   - concepts/librarian-server-architecture.md
+  - sources/arxiv-inference-scaling-llms-2605.19775.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-20
+updated: 2026-05-21
 # Live-probed 2026-05-20 (read-only SSH via cemini-prod jump host). Refresh on spec/role change.
 ---
 
@@ -18,6 +19,7 @@ updated: 2026-05-20
 - @concepts/cemini-ai-assistant.md — candidate host for the Cemini AI assistant gateway during its internal-only phase (this box has the headroom)
 - @entities/infrastructure/cemini-stack.md — the umbrella production topology; this is the third Hetzner server (added 2026-05-19, swapped DC 2026-05-20)
 - @concepts/librarian-server-architecture.md — the librarian (kb-server + stash) this box would query if it hosts Cemini AI; both are Hetzner, different DCs (Helsinki vs Ashburn)
+- @sources/arxiv-inference-scaling-llms-2605.19775.md — K48: long chain-of-thought reasoning is KV **capacity-bound**; this host (4 GB, no GPU) is **API-gateway-only** for frontier reasoning — do not install local CoT weights here
 
 ## Raw Concept
 
@@ -55,6 +57,8 @@ It is the **third** Hetzner server, joining `cemini-prod` (Ashburn, trading stac
 ### Spare capacity — candidate Cemini AI host
 
 The box is near-idle: one near-zero-cost job (SSH tunnelling) on librarian-class hardware. With ~3.3 GB RAM and ~71 GB disk free it can comfortably host the **Cemini AI assistant** gateway (see @concepts/cemini-ai-assistant.md) during that project's internal-only phase. Caveats recorded on that page — chiefly (a) the transatlantic hop to the Ashburn kb-server on every retrieval, and (b) the security argument against co-locating an eventually-public chatbot on a box that sits in the live order-execution path. Both are deferred, not dismissed, while the assistant has no external users.
+
+**K48 inference-scaling posture [CONFIRMED 2026-05-21]:** arXiv:2605.19775 shows long chain-of-thought reasoning is **KV capacity-bound**, not compute-bound. This host has **no GPU** and only 4 GB RAM — it must remain an **API-routing gateway** (DeepSeek / OpenRouter) for reasoning models, not a local weight host. Lazy-tool on the laptop reduces MCP schema bloat but does not solve the KV wall.
 
 ### GDPR / EU-residency posture
 

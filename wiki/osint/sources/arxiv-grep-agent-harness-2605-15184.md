@@ -5,6 +5,8 @@ tags: [source, arxiv, agent-harness, agentic-search, retrieval, grep-vs-vector, 
 keywords: [grep-vs-vector-retrieval, agent-harness, agentic-search, longmemeval, rag, tool-calling-paradigm, chronos-harness, retrieval-strategy]
 related:
   - concepts/kb-server-retrieval-scaling.md
+  - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
+  - concepts/code-as-agent-harness.md
 maturity: validated
 read_status: skimmed
 created: 2026-05-15
@@ -14,6 +16,8 @@ updated: 2026-05-15
 ## Relations
 
 - @concepts/kb-server-retrieval-scaling.md — this paper's central finding (grep ≥ vector retrieval in agentic search) independently corroborates the K47 decision to keep kb-server on brute-force/grep-style retrieval rather than wire in a vector index
+- @sources/arxiv-code-as-agent-harness-survey-2605.18747.md — broader harness taxonomy (May 2026 survey)
+- @concepts/code-as-agent-harness.md — concept hub for harness-layer model
 
 ## Raw Concept
 
