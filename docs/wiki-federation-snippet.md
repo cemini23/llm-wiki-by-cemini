@@ -18,4 +18,4 @@
 
 **Privacy:** Only **`osint-wiki`** and **Cemini Financial Suite** are treated as private operational projects (sensitive research + production trading). **`ccc-wiki`** and the four domain wikis above are **public** on GitHub. Cross-wiki `@osint-wiki/...` links resolve on maintainer machines only; public clones should not expect OSINT or prod secrets in-repo.
 
-**Librarian:** Public wikis sync to `cemini-librarian:/opt/cemini-wiki/<alias>/wiki/` for kb-server MCP (see OSINT `scripts/sync_wiki_to_librarian.sh`).
+**Librarian:** `osint-wiki`, `ccc-wiki`, and all public domain wikis sync hourly via OSINT `scripts/sync_wiki_to_librarian.sh` → `cemini-librarian:/opt/cemini-wiki/<alias>/wiki/`.

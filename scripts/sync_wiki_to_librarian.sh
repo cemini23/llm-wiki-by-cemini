@@ -26,9 +26,11 @@ LOGFILE="$HOME/Library/Logs/cemini-wiki-sync.log"
 # REMOTE_SUBPATH is relative to LIBRARIAN_ROOT and becomes the project tag in kb-server.
 WIKIS=(
   "$WORKSPACE/wiki/|wiki/"
+  "/Users/claudiobarone/Desktop/projects/Cemini claude code CCC/wiki/|ccc-wiki/wiki/"
   "/Users/claudiobarone/Desktop/projects/Image gen/wiki/|image-gen-wiki/wiki/"
   "/Users/claudiobarone/Desktop/projects/3d printing/wiki/|3d-printing-wiki/wiki/"
   "/Users/claudiobarone/Desktop/projects/SEO:GEO B&M Business/wiki/|seo-geo-wiki/wiki/"
+  "/Users/claudiobarone/Desktop/projects/Cybersecurity wiki/wiki/|cybersecurity-wiki/wiki/"
 )
 
 # Ensure log dir exists (macOS user logs)
@@ -72,6 +74,9 @@ for wiki_def in "${WIKIS[@]}"; do
     log "skip: $local_path not present locally"
     continue
   fi
+
+  # Ensure remote parent exists (first sync for a new wiki alias)
+  ssh "$LIBRARIAN_HOST" "mkdir -p $(dirname "$remote_path")" 2>/dev/null || true
 
   log "rsync starting: $local_path → $LIBRARIAN_HOST:$remote_path"
   rsync_output=$(rsync -avz --delete \

@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-05-22] ops | Librarian sync + public-repo security pass
+
+- **`scripts/sync_wiki_to_librarian.sh`:** added `ccc-wiki` and `cybersecurity-wiki` to hourly/post-commit rsync (was missing cybersec; CCC was manual-only).
+- **Security audit (5 public repos):** no tracked `.env`, API keys, or private keys; `.env.example` files are empty placeholders only. Redacted maintainer home paths (`/Users/claudiobarone/...`) from CCC + domain `CLAUDE.md` + CCC wiki pages; image-gen `marketing-your-persona.md` now uses `@seo-wiki/` only.
+
 ## [2026-05-21] docs | README federation audit — visibility + cross-links
 
 Corrected privacy labels across federation READMEs + `CLAUDE.md` Related Wikis tables: **`ccc-wiki` = public**, **`osint-wiki` + Cemini Financial Suite = private**. Unified GitHub links for public repos; canonical block at `docs/wiki-federation-snippet.md`. Updated: OSINT, CCC, image-gen, SEO, 3d-printing, cybersecurity READMEs; CeminiSuite README (related wikis section); OSINT + CCC `CLAUDE.md`.

@@ -105,4 +105,4 @@ scripts/sync_wiki_to_librarian.sh
 
 **Privacy:** This OSINT wiki and the financial suite are **private** (no public distribution of research canon or prod credentials). **`ccc-wiki`** and the four domain wikis are **public** on GitHub. Do not commit `.local/`, `briefs/`, or `hot.md`.
 
-**Sync:** `wiki/` → `cemini-librarian:/opt/cemini-wiki/wiki/` hourly (`scripts/sync_wiki_to_librarian.sh`). CCC wiki: `.../ccc-wiki/wiki/` (manual rsync until added to that script).
+**Sync:** `scripts/sync_wiki_to_librarian.sh` (hourly cron + post-commit) rsyncs `osint-wiki`, `ccc-wiki`, `image-gen-wiki`, `seo-wiki`, `3d-printing-wiki`, and `cybersecurity-wiki` to `cemini-librarian:/opt/cemini-wiki/<alias>/wiki/`.
