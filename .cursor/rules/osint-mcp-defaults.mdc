@@ -1,26 +1,85 @@
 ---
-description: OSINT workspace MCP defaults — lazy-tool first, wiki-first research
+description: OSINT MCP — always use lazy-tool for proxied tools; wiki-first; stash is global only
 alwaysApply: true
 ---
 
-# MCP usage (OSINT workspace)
+# OSINT workspace — MCP rules (agents must follow)
 
-## Tool routing
+## Which MCP servers exist here
 
-1. **lazy-tool first** — For conductor, kb-server, prod-mcp, fetch, or exa capabilities, use lazy-tool meta-tools (`search_tools` → `inspect_capability` → `invoke_proxy_tool`) before assuming a direct upstream tool exists in context.
-2. **stash (global)** — Episodic memory via user-level `stash` MCP (`remember`, `recall`, etc.). Do not expect a project-level `librarian-stash` server.
-3. **Wiki-first** — Answer research questions from `wiki/index.md` + kb-server before Exa. Exa is for gaps and verification.
-4. **prod-mcp** — Read-only verification on Hetzner prod unless the user explicitly asks to modify `/opt/cemini` (out of scope for this workspace).
+| Scope | Servers | Notes |
+|-------|---------|--------|
+| **This folder only** | `lazy-tool`, `prod-mcp`, `exa`, `fetch` | Open **OSINT WORKSPACE** as the workspace root |
+| **Global (every chat)** | `stash`, `brave-search`, `playwright` | From `~/.cursor/mcp.json` |
 
-## When lazy-tool catalog is stale
+**Home / no folder open:** only global MCP loads. `lazy-tool` will show **off** — that is normal. `stash` may show **red** if the SSH tunnel to `localhost:8088` is down; fix tunnels, then Retry in MCP settings.
 
-If `search_tools` misses a tool you know exists, ask the user to run:
+**Do not** look for project servers named `conductor`, `kb-server`, or `librarian-stash` — they are reached **through lazy-tool** only.
 
-`lazy-tool reindex --config ".cursor/lazy-tool.yaml"`
+---
 
-(tunnels must be up first).
+## lazy-tool — required workflow (always)
 
-## fetch vs Exa
+For **any** capability that lives on conductor, kb-server, prod-mcp, fetch, or exa, use lazy-tool meta-tools in this order. Do **not** skip to guessing tool names.
 
-- **fetch** (`mcp-fetch-server`) — known URL → clean text for snippets.
-- **exa** — search, crawl, company/people research, deep researcher jobs.
+### Step 1 — `search_tools`
+
+Search the local catalog with a short keyword phrase:
+
+- Wiki / RAG → `"kb_search"` or `"kb_context"`
+- Conductor routing → `"conductor_query"`
+- Prod stack → describe the action (e.g. `"polymarket"`, `"health"`)
+- URL content → `"fetch"`
+- External research → `"exa"` or `"web_search"`
+
+### Step 2 — `inspect_capability`
+
+Use the canonical name returned by search. Read the JSON schema (required args, types).
+
+### Step 3 — `invoke_proxy_tool`
+
+Call the upstream tool with exact argument names from the schema.
+
+### Example (kb-server)
+
+1. `search_tools` query: `kb_search`
+2. `inspect_capability` on the matching capability id
+3. `invoke_proxy_tool` with the wiki question and any required parameters
+
+### When search returns nothing
+
+Tell the user to run (repo root, tunnels up):
+
+```bash
+lazy-tool reindex --config ".cursor/lazy-tool.yaml"
+```
+
+Then Retry MCP in Cursor and search again.
+
+---
+
+## Direct MCP (do not proxy through lazy-tool)
+
+| Server | When to use directly |
+|--------|---------------------|
+| **stash** (global) | `remember`, `recall`, goals, hypotheses, episodic memory |
+| **prod-mcp** | Only if lazy-tool search fails or user needs a prod-only tool not in catalog |
+| **exa** / **fetch** | Prefer lazy-tool first; direct servers are fallback |
+| **brave-search** / **playwright** (global) | Web search / browser when lazy-tool has no match |
+
+---
+
+## Research order
+
+1. `wiki/index.md` and wiki pages (Read / grep)
+2. lazy-tool → **kb-server** tools
+3. lazy-tool → **conductor_query** for analyst-style synthesis
+4. **exa** / **fetch** for gaps and URL verification
+5. **stash** to persist cross-session insights when appropriate
+
+---
+
+## prod / server boundary
+
+- This workspace: wiki, briefs, read-only `ssh` checks.
+- **Do not** modify `/opt/cemini` from here — prod changes go through server Claude + briefs in `/opt/cemini/briefs/`.
