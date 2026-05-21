@@ -9,7 +9,7 @@ related:
 maturity: draft
 created: 2026-05-16
 updated: 2026-05-16
-phase_0_verdict: GO 2026-05-16 — repo HEAD/v0.0.28 is clean MIT; clean permissive deps; no supply-chain red flags. Remediation done: cemini-librarian upgraded to v0.0.28 (MIT line) 2026-05-16. Residual (benign): laptop pinned at v0.0.27 (GPL-3.0) — laptop Python is 3.9.6, v0.0.28 requires >=3.10; laptop is the curation workspace (no serving path, never redistributes), so GPL on an imported library there carries no copyleft risk. Upgrade the laptop install when a Python 3.10+ is available.
+phase_0_verdict: "GO 2026-05-16 — repo HEAD/v0.0.28 is clean MIT; clean permissive deps; no supply-chain red flags. Remediation done: cemini-librarian upgraded to v0.0.28 (MIT line) 2026-05-16. Residual (benign): laptop pinned at v0.0.27 (GPL-3.0) — laptop Python is 3.9.6, v0.0.28 requires >=3.10; laptop is the curation workspace (no serving path, never redistributes), so GPL on an imported library there carries no copyleft risk. Upgrade the laptop install when a Python 3.10+ is available."
 ---
 
 ## Relations

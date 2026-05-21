@@ -8,7 +8,7 @@ related:
 maturity: draft
 created: 2026-05-15
 updated: 2026-05-15
-cross-wiki-source: @osint-wiki/entities/tools/tracer.md
+cross-wiki-source: "@osint-wiki/entities/tools/tracer.md"
 ---
 
 # TRACER Acceptor Gate — ML Surrogate Routing for LLM Cost Reduction in OSINT Ingest

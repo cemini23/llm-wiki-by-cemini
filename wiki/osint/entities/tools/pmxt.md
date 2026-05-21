@@ -12,7 +12,7 @@ related:
 maturity: draft
 created: 2026-05-16
 updated: 2026-05-21
-phase_0_verdict: CONDITIONAL-GO 2026-05-16 — MIT verified (LICENSE + SPDX in both core/python SDK); real multi-venue adapters confirmed; condition 1: exclude the `baozi` Solana adapter from any cemini-prod build (its `@solana/web3.js` chain pulls LGPL-3.0-only `rpc-websockets` — weak copyleft, dynamic-link OK but cleanest to drop since baozi is not a Cemini target venue); condition 2: vendor-pin the third-party venue SDKs (`@polymarket/clob-client-v2`, `@limitless-exchange/sdk`, etc.) and re-verify their MIT status at integration time; condition 3: single-maintainer (Samuel EF. Tinnerholm) — treat as bus-factor-1, fork-and-pin before depending on it in production
+phase_0_verdict: "CONDITIONAL-GO 2026-05-16 — MIT verified (LICENSE + SPDX in both core/python SDK); real multi-venue adapters confirmed; condition 1: exclude the `baozi` Solana adapter from any cemini-prod build (its `@solana/web3.js` chain pulls LGPL-3.0-only `rpc-websockets` — weak copyleft, dynamic-link OK but cleanest to drop since baozi is not a Cemini target venue); condition 2: vendor-pin the third-party venue SDKs (`@polymarket/clob-client-v2`, `@limitless-exchange/sdk`, etc.) and re-verify their MIT status at integration time; condition 3: single-maintainer (Samuel EF. Tinnerholm) — treat as bus-factor-1, fork-and-pin before depending on it in production"
 ---
 
 ## Relations
