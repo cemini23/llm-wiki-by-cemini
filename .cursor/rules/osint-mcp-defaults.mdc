@@ -16,6 +16,10 @@ alwaysApply: true
 
 **Do not** look for project servers named `conductor`, `kb-server`, or `librarian-stash` — they are reached **through lazy-tool** only.
 
+### lazy-tool toggle (human step)
+
+If **lazy-tool** shows **Off** in Cursor Settings → Tools & MCP, tell the user to turn it **On**. Agents cannot fix this in chat — the server must be enabled in the UI once (Cursor saves the preference). `.cursor/mcp.json` sets `"disabled": false` but the UI toggle still wins if you previously turned it off.
+
 ---
 
 ## lazy-tool — required workflow (always)

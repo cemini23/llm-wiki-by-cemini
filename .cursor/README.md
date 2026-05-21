@@ -32,9 +32,12 @@ There is no separate “Developer: Reload” menu item in all builds. Use any of
 
 ## Project MCP (this folder)
 
+**Turn lazy-tool ON:** `Cmd+Shift+J` → **Tools & MCP** → **lazy-tool** toggle → **On** (green).  
+Cursor remembers this per machine. If it says **Off**, agents cannot reach kb-server / conductor — only prod/exa/fetch direct tools work.
+
 | Server | Role |
 |--------|------|
-| **lazy-tool** | **Default** — conductor, kb-server, prod-mcp, fetch, exa (see `.cursor/rules/osint-mcp-defaults.mdc`) |
+| **lazy-tool** | **Required — keep enabled** — conductor, kb-server, prod-mcp, fetch, exa (see `.cursor/rules/osint-mcp-defaults.mdc`) |
 | **prod-mcp** | CeminiSuite prod (`:18002` tunnel) |
 | **exa** | `scripts/mcp_exa.sh` → `~/.cemini/exa-api-key` |
 | **fetch** | `mcp-fetch-server` |

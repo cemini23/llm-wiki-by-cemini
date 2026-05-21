@@ -2,28 +2,32 @@
   "mcpServers": {
     "lazy-tool": {
       "type": "stdio",
+      "disabled": false,
       "command": "/Users/claudiobarone/.local/bin/lazy-tool",
       "args": [
         "serve",
         "--config",
-        "/Users/claudiobarone/Desktop/OSINT WORKSPACE/.cursor/lazy-tool.yaml"
+        "${workspaceFolder}/.cursor/lazy-tool.yaml"
       ],
       "env": {
-        "LAZY_TOOL_CONFIG": "/Users/claudiobarone/Desktop/OSINT WORKSPACE/.cursor/lazy-tool.yaml"
+        "LAZY_TOOL_CONFIG": "${workspaceFolder}/.cursor/lazy-tool.yaml"
       }
     },
     "prod-mcp": {
       "type": "sse",
+      "disabled": false,
       "url": "http://localhost:18002/mcp"
     },
     "exa": {
       "type": "stdio",
-      "command": "/Users/claudiobarone/Desktop/OSINT WORKSPACE/scripts/mcp_exa.sh",
+      "disabled": false,
+      "command": "${workspaceFolder}/scripts/mcp_exa.sh",
       "args": [],
       "env": {}
     },
     "fetch": {
       "type": "stdio",
+      "disabled": false,
       "command": "npx",
       "args": [
         "-y",

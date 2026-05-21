@@ -2,6 +2,7 @@
   "mcpServers": {
     "lazy-tool": {
       "type": "stdio",
+      "disabled": false,
       "command": "/Users/claudiobarone/.local/bin/lazy-tool",
       "args": [
         "serve",
