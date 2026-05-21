@@ -9,7 +9,9 @@ related:
   - concepts/llm-agent-systems.md
   - sources/agentic-harness-engineering.md
   - concepts/cemini-ai-assistant.md
-maturity: validated
+  - sources/arxiv-grep-agent-harness-2605-15184.md
+
+ validated
 read_status: skimmed
 created: 2026-05-21
 updated: 2026-05-21

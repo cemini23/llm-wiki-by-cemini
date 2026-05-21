@@ -18,7 +18,9 @@ related:
   - entities/tools/polymarket-bridge-api.md
   - concepts/polymarket-lp-rewards-farming.md
   - entities/tools/ai-polymarket-agent.md
-maturity: validated
+  - concepts/polymarket-lp-bot-phase0-spec.md
+
+ validated
 created: 2026-05-13
 updated: 2026-05-20
 ---

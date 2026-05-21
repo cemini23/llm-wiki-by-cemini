@@ -19,7 +19,9 @@ related:
   - entities/tools/firecrawl.md
   - entities/platforms/polymarket.md
   - entities/tools/centpro.md
-maturity: validated
+  - concepts/polymarket-lp-bot-phase0-spec.md
+
+ validated
 read_status: deep-read
 created: 2026-05-20
 updated: 2026-05-20

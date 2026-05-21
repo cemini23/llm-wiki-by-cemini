@@ -9,7 +9,9 @@ related:
   - sources/agentic-harness-engineering.md
   - concepts/cemini-ai-assistant.md
   - sources/arxiv-self-healing-llm-agents-2605.06737.md
-maturity: draft
+  - sources/arxiv-grep-agent-harness-2605-15184.md
+
+ draft
 created: 2026-05-21
 updated: 2026-05-21
 ---

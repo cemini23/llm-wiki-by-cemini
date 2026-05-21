@@ -14,7 +14,9 @@ related:
   - entities/tools/polymarketanalytics-com.md
   - entities/people/igor-mikerin.md
   - entities/people/dexterssolab.md
-maturity: draft
+  - concepts/polymarket-lp-bot-phase0-spec.md
+
+ draft
 created: 2026-05-21
 updated: 2026-05-21
 clusters: [polymarket, copy-trading]

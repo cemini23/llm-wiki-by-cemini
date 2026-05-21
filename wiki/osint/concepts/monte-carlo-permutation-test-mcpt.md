@@ -11,7 +11,9 @@ related:
   - concepts/counterfactual-prompting-baselines.md
   - concepts/regime-conditioned-evaluation.md
   - entities/people/phosphenq.md
-maturity: draft
+  - concepts/polymarket-lp-bot-phase0-spec.md
+
+ draft
 created: 2026-05-21
 updated: 2026-05-21
 clusters: [quant-validation, backtest]

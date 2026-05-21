@@ -15,7 +15,9 @@ related:
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/sports-prediction-consensus-agent.md
-maturity: validated
+  - concepts/polymarket-lp-bot-phase0-spec.md
+
+ validated
 created: 2026-05-13
 updated: 2026-05-20
 ---

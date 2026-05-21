@@ -17,7 +17,9 @@ related:
   - sources/arxiv-polymarket-fill-side-2605-11640.md
   - sources/polymarket-insider-trading-crackdown-2026-05.md
   - entities/tools/polymarket-insider-tracker.md
-maturity: draft
+  - concepts/polymarket-lp-bot-phase0-spec.md
+
+ draft
 created: 2026-05-09
 updated: 2026-05-16
 ---

@@ -17,7 +17,9 @@ related:
   - entities/tools/pretracer.md
   - entities/tools/kreopolybot.md
   - entities/tools/polymarketanalytics-com.md
-maturity: validated
+  - concepts/polymarket-lp-bot-phase0-spec.md
+
+ validated
 created: 2026-05-21
 updated: 2026-05-21
 read_status: read

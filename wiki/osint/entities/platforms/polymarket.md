@@ -67,7 +67,9 @@ related:
   - entities/tools/centpro.md
   - entities/tools/clawdbot.md
   - entities/tools/parity-polymarket-analytics.md
-maturity: validated
+  - concepts/polymarket-lp-bot-phase0-spec.md
+
+ validated
 created: 2026-04-23
 updated: 2026-05-20
 ---

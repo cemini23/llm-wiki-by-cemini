@@ -7,7 +7,9 @@ clusters: [rl-marl, portfolio-strategy]
 related:
   - concepts/rl-marl-research.md
   - concepts/portfolio-strategy.md
-maturity: validated
+  - sources/arxiv-fpilot-rl-trading-2605-12653.md
+
+ validated
 read_status: skimmed
 created: 2026-05-21
 updated: 2026-05-21

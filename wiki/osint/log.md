@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-05-21] lint | Bidirectional gaps cleared (OSINT + CCC + SEO)
+
+- **OSINT:** 15 backlinks added (11× `polymarket-lp-bot-phase0-spec` cluster + 4× K48 arXiv cross-links). Bidir gaps → 0.
+- **CCC:** 8 backlinks from `cursor-ide-workspace` / `deep-research-evaluation-prompt` session; removed `@osint-wiki/...` from `related:` on 4 tool pages. Bidir gaps → 0.
+- **SEO:** 15 pages — stripped `@osint-wiki` / `@ccc-wiki` from `related:` (`fix_related_crosswiki.py`). Dangling `related:` → 0.
+
 ## [2026-05-21] fix | kb-server vault YAML — 29 files across federation
 
 `kb vault reindex` failed on 29 pages (unquoted `@` in `related:` / `cross-wiki-source`, unquoted `phase_0_verdict` colons, `@path` in `keywords`). Fixed via `scripts/fix_wiki_frontmatter_kb.py` across OSINT + CCC + image-gen + 3d-printing + SEO wikis. Reindex: **0 errors**, 8 newly indexed.

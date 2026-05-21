@@ -32,7 +32,9 @@ related:
   - concepts/polymarket-copy-trading-strategy.md
   - entities/tools/nofx-ai-os.md
   - sources/analyzing-github-projects-agentic-infra-2026-05-21.md
-maturity: draft
+  - concepts/polymarket-lp-bot-phase0-spec.md
+
+ draft
 created: 2026-05-12
 updated: 2026-05-20
 ---

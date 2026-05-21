@@ -14,7 +14,9 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-api-reference.md
   - concepts/polymarket-lp-rewards-farming.md
-maturity: validated
+  - concepts/polymarket-lp-bot-phase0-spec.md
+
+ validated
 created: 2026-05-13
 updated: 2026-05-20
 ---
