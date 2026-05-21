@@ -1,0 +1,36 @@
+---
+description: Prefer Cursor built-in browser + Canvas for visual deliverables in OSINT workspace
+alwaysApply: true
+---
+
+# Visual deliverables — browser + canvas (OSINT)
+
+## Built-in browser (preferred over Playwright)
+
+When the task needs **live web inspection** (verify a URL, read a docs page, check a dashboard, Polymarket/Gamma UI):
+
+1. Use **Cursor built-in browser** tools (`browser_navigate`, `browser_snapshot`, `browser_click`, …) — the `cursor-ide-browser` integration.
+2. Workflow: `browser_tabs` (list) → `browser_navigate` → `browser_lock` → interact → `browser_unlock`.
+3. Do **not** default to global **playwright** MCP for in-chat automation unless built-in browser fails or the user asks for Playwright specifically.
+
+Playwright remains available globally for scripts outside this chat; for agent-driven page reads in OSINT sessions, built-in browser is the default.
+
+## Canvas (`.canvas.tsx`)
+
+When the deliverable is **standalone analytical output** the user should view beside chat — not a code fix or a brief paragraph:
+
+| Use canvas | Skip canvas |
+|------------|-------------|
+| Multi-row tables, timelines, architecture diagrams, sweep rubric matrices, lint/gap summaries | Single-file wiki edits, git commits, one-line answers |
+| MCP/tool result dumps where layout matters | Copy-paste brief body for prod |
+
+**Rules:**
+
+1. Read the **canvas** skill (`~/.cursor/skills-cursor/canvas/SKILL.md`) before writing a `.canvas.tsx` file.
+2. Write canvases only under the workspace canvases directory (Cursor-managed under `~/.cursor/projects/.../canvases/<name>.canvas.tsx`). Use a descriptive `kebab-case.canvas.tsx` name.
+3. Import only from `cursor/canvas`; embed data inline (no `fetch`).
+4. If you would paste a markdown table with **4+ rows or 3+ columns**, use a canvas instead.
+
+## GitHub (global MCP)
+
+PR/issue/repo operations from any folder: use **github** MCP in `~/.cursor/mcp.json` (configured via `scripts/setup_cursor_github_mcp.sh`). Token lives in `~/.cemini/github-pat` — never commit it.

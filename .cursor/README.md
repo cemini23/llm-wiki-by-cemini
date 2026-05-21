@@ -48,9 +48,30 @@ Cursor remembers this per machine. If it says **Off**, agents cannot reach kb-se
 |--------|------|
 | **stash** | Episodic memory `localhost:8088` |
 | **brave-search** | Web search (API key in that file only) |
-| **playwright** | Browser automation |
+| **playwright** | Browser automation (fallback; prefer built-in browser in chat) |
+| **github** | PRs, issues, repos — remote `api.githubcopilot.com/mcp/` |
+
+Install / refresh **github**:
+
+```bash
+cd "/Users/claudiobarone/Desktop/OSINT WORKSPACE"
+./scripts/setup_cursor_github_mcp.sh   # token → ~/.cemini/github-pat + ~/.cursor/mcp.json
+```
+
+Token order: `GITHUB_PERSONAL_ACCESS_TOKEN` env → `~/.cemini/github-pat` → `gh auth token`. Never commit the PAT.
 
 No `librarian-stash` in this project (duplicate removed).
+
+---
+
+## Built-in browser + canvas (no extra MCP install)
+
+| Capability | How |
+|------------|-----|
+| **Browser** | Cursor **built-in** `browser_*` tools in Agent chat (not Playwright by default). See `.cursor/rules/osint-visual-deliverables.mdc`. |
+| **Canvas** | Agent writes `*.canvas.tsx` under the project canvases folder; open from chat sidebar. Skill: `~/.cursor/skills-cursor/canvas/SKILL.md`. Same rule file. |
+
+Reload Cursor after first-time github MCP setup.
 
 ---
 
@@ -69,6 +90,7 @@ LaunchAgents: `com.cemini.stash-tunnel`, `com.cemini.prod-mcp-tunnel` in `~/Libr
 ## Agent rules
 
 - **OSINT folder:** `.cursor/rules/osint-mcp-defaults.mdc` (`alwaysApply: true`) — lazy-tool workflow
+- **OSINT folder:** `.cursor/rules/osint-visual-deliverables.mdc` (`alwaysApply: true`) — built-in browser + canvas
 - **All folders:** `~/.cursor/rules/cemini-projects.mdc` — which repo to open for which work
 
 No extra rules in Cursor Settings UI are required if those `.mdc` files are present.
