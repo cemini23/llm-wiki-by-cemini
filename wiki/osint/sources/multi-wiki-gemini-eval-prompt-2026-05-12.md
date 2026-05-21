@@ -31,10 +31,12 @@ related:
   - entities/tools/codenomad.md
   - entities/tools/supertonic.md
   - entities/tools/accomplish.md
+  - @ccc-wiki/concepts/deep-research-evaluation-prompt.md
+  - @ccc-wiki/concepts/cursor-ide-workspace.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-21
 ---
 
 ## Relations
@@ -43,6 +45,8 @@ updated: 2026-05-12
 - `@sources/evaluating-project-links-systems-2-2026-05-12.md` — Doc 2 evaluated under the prior 3-surface prompt; same false-NO-GO problem
 - `@concepts/tool-evaluation-framework.md` — methodology framework this prompt operationalizes
 - `@concepts/cemini-license-posture.md` — license reject-list referenced in the prompt body
+- `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` — v3/v4 lineage; **canonical copy-paste lives in CCC `prompts/`**
+- `@ccc-wiki/concepts/cursor-ide-workspace.md` — v4 Cursor-primary harness (surface 7 expansion)
 
 ## Raw Concept
 
@@ -51,6 +55,7 @@ updated: 2026-05-12
 - **Created**: 2026-05-12
 - **Supersedes**: The implicit 3-surface prompt used by `@sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md` + `@sources/gemini-dr-wave4b-osint-2026-04-29.md` (Cemini-prod / librarian-server / workflow surfaces only). That prompt drove ~9 false-NO-GO verdicts on cybersec-/image-gen-/SEO-relevant tools across Doc 1 + Doc 2 evaluations on 2026-05-12.
 - **Use**: Copy `## Snippets → ## The prompt (verbatim, copy-paste ready)` into Gemini Deep Research alongside the URL list to be evaluated.
+- **Superseded for new batches (2026-05-21):** v3 + v4 at `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` — `prompts/deep-research-multi-wiki-eval-v4-2026-05-21.md` (current), `prompts/deep-research-multi-wiki-eval-v3-2026-05-21.md` (frozen for K53–K55). v3 fixes v2's mislabeled surface 7 ("Workflow") → **CCC wiki**.
 
 ## Narrative
 
@@ -233,8 +238,9 @@ This v2 prompt is ~30% longer than v1 due to 7-surface evaluation. Per-URL outpu
 >
 > Now evaluate the URLs in the user's list using this template.
 
-### Adaptation notes (for future v3 work)
+### Adaptation notes (for future v5 work)
 
+- **v3/v4 shipped 2026-05-21** — see `@ccc-wiki/concepts/deep-research-evaluation-prompt.md`. v4 keeps **seven surfaces**; Cursor ops fold into CCC surface 7 (no eighth surface, no Cursor-only wiki).
 - **3D-printing surface low signal density** — across 49 URLs across Doc 1 + Doc 2, the 3D-printing column generated zero ✅ and one ⚠️ (general "make/STL" mention). May be worth dropping to a 6-surface template if Doc 3 + Doc 4 confirm the same.
 - **Workflow + OSINT-wiki overlap** — many tools are both. Consider whether they're really distinct surfaces or whether OSINT-wiki should absorb workflow under a "workflow tooling" sub-area.
 - **License-posture catalog drift** — every new poison-pill catch (EUPL, BSL) requires prompt + CLAUDE.md updates. Mechanize the catalog as a separate file referenced by the prompt rather than inlined.

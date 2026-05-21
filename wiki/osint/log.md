@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-05-21] docs | Multi-wiki eval prompt v3/v4 canonical → CCC
+
+- Restored verbatim **v3** at `@ccc-wiki` `prompts/deep-research-multi-wiki-eval-v3-2026-05-21.md` (7 surfaces, CCC = surface 7).
+- Shipped **v4** (Cursor-primary in CCC surface 7 + post-run spot-check): `prompts/deep-research-multi-wiki-eval-v4-2026-05-21.md`.
+- CCC wiki: `concepts/deep-research-evaluation-prompt.md`, `concepts/cursor-ide-workspace.md`.
+- OSINT: updated `@sources/multi-wiki-gemini-eval-prompt-2026-05-12.md` supersession pointer + backlinks.
+
 ## [2026-05-21] sweep | Tier-2 arXiv (2026-05-07 → 2026-05-21)
 
 - Ran `scripts/arxiv_sweep_run.py` (fixed broken `weekly_arxiv_sweep.sh` bash/python quoting). Report: `wiki/sweeps/2026-05-21.md` — 25 raw hits.
