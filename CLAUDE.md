@@ -307,14 +307,16 @@ When a query needs data from another wiki, reference it using the `@wiki-alias/p
 
 Paths below are relative to this CLAUDE.md file's directory. Resolve `../` against this file's location to get the absolute path.
 
-| Alias | Path | Description |
-|-------|------|-------------|
-| `osint-wiki` | `wiki/` | Financial research, quant finance, prediction markets, CeminiSuite, RL for trading |
-| `image-gen-wiki` | `../projects/Image gen/wiki/` | Uncensored image generation, model cataloging, ComfyUI, LoRA, persona/character ops |
-| `seo-wiki` | `../projects/SEO:GEO B&M Business/wiki/` | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
-| `3d-printing-wiki` | `../projects/3d printing/wiki/` | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |
-| `cybersecurity-wiki` | `../projects/Cybersecurity wiki/wiki/` | Cybersecurity research — offensive security (pentest / red team / bug bounty / exploit dev), defensive operations (SOC / IR / threat hunting), certifications + careers, threat actors. Shared territory: OSINT tradecraft + investigative methodology |
-| `ccc-wiki` | `../projects/Cemini claude code CCC/wiki/` | Cemini Claude Code meta-wiki — workflow, subagents, MCP/conductor, hooks, skills, slash commands, /goal · Ralph · OpenSpec patterns. Shared territory: agent orchestration, conductor/librarian architecture, skill audits |
+| Alias | Path | Visibility | Description |
+|-------|------|------------|-------------|
+| `osint-wiki` | `wiki/` | **Private** | Financial research, quant finance, prediction markets, CeminiSuite, RL for trading |
+| `image-gen-wiki` | `../projects/Image gen/wiki/` | Public | Uncensored image generation, model cataloging, ComfyUI, LoRA, persona/character ops |
+| `seo-wiki` | `../projects/SEO:GEO B&M Business/wiki/` | Public | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
+| `3d-printing-wiki` | `../projects/3d printing/wiki/` | Public | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |
+| `cybersecurity-wiki` | `../projects/Cybersecurity wiki/wiki/` | Public | Cybersecurity research — offensive security (pentest / red team / bug bounty / exploit dev), defensive operations (SOC / IR / threat hunting), certifications + careers, threat actors. Shared territory: OSINT tradecraft + investigative methodology |
+| `ccc-wiki` | `../projects/Cemini claude code CCC/wiki/` | **Public** | Cursor + Claude Code meta-wiki — workflow, subagents, MCP/conductor, hooks, skills, slash commands, /goal · Ralph · OpenSpec. Shared territory: agent orchestration, conductor/librarian architecture, skill audits |
+
+**Private (not public federation deliverables):** `osint-wiki`, **Cemini Financial Suite** (`../projects/CeminiSuite`). **Public on GitHub:** `ccc-wiki` and the four domain wikis. See root `README.md` for repo URLs.
 
 ### Cross-wiki link syntax
 
