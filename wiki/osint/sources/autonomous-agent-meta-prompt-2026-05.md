@@ -1,5 +1,5 @@
 ---
-title: "THE FULL PROMPT" — autonomous-agent meta-prompt template (May 2026)
+title: "THE FULL PROMPT — autonomous-agent meta-prompt template (May 2026)"
 type: source
 tags: [source, prompt, claude-code, autonomous-agent, meta-prompt, template, workflow]
 keywords: [the full prompt, /goal, success criteria, operating rules, plan first, work autonomously, self-verify, debug yourself, no placeholders, progress log]
