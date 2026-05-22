@@ -22,7 +22,16 @@
 
 **Cross-wiki briefs (4):** ccc-wiki, image-gen-wiki, seo-wiki, cybersec-wiki
 
-**cemini-prod brief:** `briefs/2026-05-22_k57-polymarket-operator-refinements-cemini.md` (skill_audit PASS 100) → `cemini-prod:/opt/cemini/briefs/`
+**cemini-prod briefs** (skill_audit; all on `cemini-prod:/opt/cemini/briefs/`):
+- `2026-05-22_k57-polymarket-operator-refinements-cemini.md` (PASS 100)
+- `2026-05-22_k57-phase0-audit-summary-cemini.md` (PASS)
+- `2026-05-22_k57-librarian-adoption.md`, `k57-local-adoption.md`, `k57-egress-fi-adoption.md` (posture; egress WARN 86)
+
+**Phase-0 (2026-05-22):** flox → CONDITIONAL-GO; near-resolution-bot → CONDITIONAL-GO; the-architect + open-design → CCC GO steal-from; osiris unchanged REJECT.
+
+**Git:** OSINT `5fc0b06` pushed; sibling-wiki K57 brief commits pushed (ccc, image-gen, seo, cybersec).
+
+**Librarian:** wiki sync + kb ingest (1849 docs post-sync).
 
 **Headlines:** Gustafsson blacklist 1k+ skips/session; Spottr hybrid CLOB detection≠0-block; osiris still unlicensed despite eval Adopt; flox MIT trading framework Adopt-eligible.
 
