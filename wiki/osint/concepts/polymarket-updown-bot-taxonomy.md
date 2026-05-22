@@ -14,6 +14,7 @@ related:
   - concepts/multi-module-bot-conflict-detector-pattern.md
   - concepts/polymarket-lp-rewards-farming.md
   - entities/people/gustafssonkotte.md
+  - concepts/polymarket-three-quadrant-blacklist-microtrend.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-20
@@ -29,6 +30,7 @@ updated: 2026-05-20
 - @concepts/market-microstructure.md — the general microstructure backdrop all 6 types exploit
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — K55 Post 3 (@Gustafssonkotte) describes a Type-3/Type-5 fair-value+imbalance bot on 5-min BTC markets, with explicit multi-module architecture
 - @concepts/multi-module-bot-conflict-detector-pattern.md — K55: structural addition for any taxonomy-type bot — conflict-detector pattern + time-aware sizing for short-resolution markets
+- @concepts/polymarket-three-quadrant-blacklist-microtrend.md — K57: Gustafsson 5-min BTC refinements (blacklist + micro-trend)
 
 ## Raw Concept
 

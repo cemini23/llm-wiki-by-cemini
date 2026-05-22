@@ -1,5 +1,33 @@
 # Wiki Log
 
+## [2026-05-22] ingest K57 | Posts.docx (7 posts) + Tool Eval (35 URLs) + BowTied Bull newsletter
+
+**Inbox cleared** (3 docx → librarian):
+- `Posts.docx` → `trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.docx`
+- `Tool Evaluation and Wiki Fit.docx` → `tool-eval-35urls-k57-2026-05-22.docx`
+- `Simple Solopreneur Business, Market Update and More.docx` → `bowtied-bull-solopreneur-leadgen-macro-2026-05-22.docx`
+
+**Created (3 sources / 4 concepts / 3 people / 1 tool):**
+- `sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md`
+- `sources/tool-eval-70urls-k57-2026-05-22.md`
+- `sources/bowtied-bull-solopreneur-leadgen-macro-2026-05-22.md`
+- `concepts/polymarket-three-quadrant-blacklist-microtrend.md`
+- `concepts/polymarket-retail-trading-discipline.md`
+- `concepts/high-ticket-smb-lead-generation-ops.md`
+- `concepts/macro-outlook-bowtied-bull-2026-05.md`
+- `entities/people/vorty2797.md`, `polydao-mr-buzzoni.md`, `spottr-trade.md`
+- `entities/tools/flox.md`
+
+**Updated:** `gustafssonkotte.md`, `polymarket-copy-trading-strategy.md`, `polymarket-weather-trading-strategy.md`, `multi-module-bot-conflict-detector-pattern.md`, `osiris.md` (K57 eval MIT claim retracted)
+
+**Cross-wiki briefs (4):** ccc-wiki, image-gen-wiki, seo-wiki, cybersec-wiki
+
+**cemini-prod brief:** `briefs/2026-05-22_k57-polymarket-operator-refinements-cemini.md` (skill_audit PASS 100) → `cemini-prod:/opt/cemini/briefs/`
+
+**Headlines:** Gustafsson blacklist 1k+ skips/session; Spottr hybrid CLOB detection≠0-block; osiris still unlicensed despite eval Adopt; flox MIT trading framework Adopt-eligible.
+
+---
+
 ## [2026-05-21] ingest K55-2 | Post.docx 5-post compilation + Tool Eval 50-URL v4
 
 **Inbox cleared:**

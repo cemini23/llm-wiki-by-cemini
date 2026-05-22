@@ -29,6 +29,10 @@ related:
   - entities/people/gustafssonkotte.md
   - entities/tools/ai-polymarket-agent.md
   - concepts/event-based-prediction-market-ml.md
+  - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
+  - concepts/polymarket-three-quadrant-blacklist-microtrend.md
+  - concepts/polymarket-retail-trading-discipline.md
+  - entities/tools/flox.md
   - concepts/polymarket-copy-trading-strategy.md
   - entities/tools/nofx-ai-os.md
   - sources/analyzing-github-projects-agentic-infra-2026-05-21.md
@@ -40,7 +44,7 @@ related:
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-20
+updated: 2026-05-22
 ---
 
 ## Relations
@@ -60,6 +64,10 @@ updated: 2026-05-20
 - `@concepts/polymarket-lp-rewards-farming.md` — K55: the *maker-side* yield strategy on Polymarket; complement to this taker-side bot architecture
 - `@concepts/multi-module-bot-conflict-detector-pattern.md` — K55: the multi-signal-synthesis pattern (`spread > THRESHOLD → SKIP`) is a structural addition to this playbook
 - `@concepts/perps-dex-funding-carry-strategy.md` — K55: portable failure-mode lessons from cross-venue perps strategies; same "execution > strategy" thesis
+- `@sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md` — K57 Posts.docx (Gustafsson, vorty, spottr, polydao)
+- `@concepts/polymarket-three-quadrant-blacklist-microtrend.md` — K57 Gustafsson blacklist + micro-trend
+- `@concepts/polymarket-retail-trading-discipline.md` — K57 retail edge framing
+- `@concepts/polymarket-copy-trading-strategy.md` — K57 Spottr hybrid CLOB latency section
 
 ## Raw Concept
 

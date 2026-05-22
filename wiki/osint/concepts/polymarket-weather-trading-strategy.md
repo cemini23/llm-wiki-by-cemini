@@ -20,13 +20,17 @@ related:
   - entities/tools/clawdbot.md
   - entities/tools/parity-polymarket-analytics.md
   - concepts/cme-settlement-mechanics-for-prediction-markets.md
+  - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
+  - entities/people/polydao-mr-buzzoni.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-20
+updated: 2026-05-22
 ---
 
 ## Relations
 
+- @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — K57 @polydao forecast-revision workflow
+- @entities/people/polydao-mr-buzzoni.md — K57 author
 - @sources/x-docx-polymarket-claude-md-2026-04-23.md — Section 1 by @AlterEgo_eth (Gamma API integration mechanics)
 - @sources/x2-docx-polymarket-theparuchh-2026.md — full operational guide by @theparuchh
 - @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — K52 Post 5 (@0xMovez): a Hermes-Agent deployment path for the @AlterEgo_eth weatherbot
@@ -93,6 +97,16 @@ The recipe is 7 natural-language prompts to the agent, no hand-coding:
 This bot uses **Expected Value + Kelly Criterion** position sizing across ~20 cities / 4 continents with 3 forecast sources — the same EV/ensemble shape as the @theparuchh V3 strategy above. It is a *packaging* contribution: the edge sources are unchanged; what is new is a copy-paste, agent-driven install. The four Polymarket Polygon contract addresses are genuine and reusable for any Cemini Polymarket on-chain approval step.
 
 **Caveat.** Handing a self-hosted agent a funded wallet's private key and running unattended live trading via pasted prompts is a high-trust setup; the PnL figures cited alongside it (`ColdMath $300→$219K`, `Sharky6999 99.3% WR`, `RN1 $1.2K→$7.3M`) are `[TENTATIVE]` creator marketing.
+
+### Forecast-revision workflow (K57, @polydao) [TENTATIVE]
+
+Independent promoter narrative reinforcing resolution discipline:
+
+- **Edge question:** not "what will weather be?" but "where is Polymarket price stale vs latest forecast revision?"
+- **Data:** hourly Open-Meteo snapshots + `detect_changes()` on **future hours only** (past hours = noise).
+- **Resolution:** Weather Underground station history (whole °F, station-specific URL, post-finalization revisions excluded) — aligns with @AlterEgo_eth station-coordinate lesson.
+- **Orchestration pattern:** parallel agents (market rules, Open-Meteo, NWS, NOAA baseline, Polymarket odds) — analogous to conductor multi-tool fan-out, not new alpha by itself.
+- **Reference implementation cited:** `github.com/weather_scanner` [NEEDS VERIFICATION 2026-05-22 — repo health/license not audited in K57].
 
 ### Cemini posture
 

@@ -11,9 +11,11 @@ related:
   - entities/people/gustafssonkotte.md
   - entities/tools/chainlink-data-streams.md
   - entities/platforms/polymarket.md
+  - concepts/polymarket-three-quadrant-blacklist-microtrend.md
+  - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-22
 clusters: [polymarket, bot-architecture, risk-management]
 ---
 
@@ -25,6 +27,8 @@ clusters: [polymarket, bot-architecture, risk-management]
 - @concepts/algorithmic-stopping-conditions.md — the conflict-detector is a stopping condition fired on internal disagreement
 - @entities/people/gustafssonkotte.md — author
 - @entities/tools/chainlink-data-streams.md — price feed used; explicitly bypasses the exchange API the bot trades against
+- @concepts/polymarket-three-quadrant-blacklist-microtrend.md — K57 follow-on (blacklist + micro-trend)
+- @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — K57 Post 2
 
 ## Raw Concept
 

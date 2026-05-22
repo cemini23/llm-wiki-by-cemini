@@ -16,6 +16,7 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-api-reference.md
   - entities/tools/polymarket-bridge-api.md
+  - concepts/polymarket-retail-trading-discipline.md
   - concepts/polymarket-lp-rewards-farming.md
   - entities/tools/ai-polymarket-agent.md
   - concepts/polymarket-lp-bot-phase0-spec.md

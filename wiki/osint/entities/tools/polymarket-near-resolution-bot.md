@@ -9,9 +9,9 @@ related:
   - entities/tools/polymarket-clob-api.md
   - concepts/polymarket-bot-architecture.md
   - concepts/prediction-market-statistical-arbitrage.md
-maturity: draft
+maturity: validated
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-22
 ---
 
 ## Relations
@@ -48,14 +48,26 @@ What prompted this page: K55-2 Tool Eval (URL 5) was the single Adopt tier verdi
 - **"Heavily favored" threshold** is not specified in the eval — could be 90¢, 95¢, 99¢. Different thresholds imply very different operational profiles (95¢ markets resolve cleanly; 99¢ markets may have liquidity issues for any meaningful position size).
 - **No record of operator deployment** beyond the repo author. With 9 stars, this is a micro-repo with no community validation.
 
+### Phase-0 audit (2026-05-22)
+
+Clone: `/tmp/k57-phase0-2026-05-22/gamma-trade-lab_Polymarket-Near-Resolution-Bot/`
+
+| Gate | Verdict |
+|------|---------|
+| G1 License | **PASS** — MIT in `pyproject.toml` + LICENSE |
+| G2 README honesty | **PASS** — tail-risk, no auto-redeem, Gamma `endDate` ≠ oracle |
+| G3 Code surface | **PASS** — small `near_bot/` package; `DRY_RUN=1` default |
+| G4 Client version | **WARN** — pins `py-clob-client==0.28.0` (pre-v2); align with prod client policy |
+| G5 Maturity | **WARN** — ~9★, single maintainer |
+
+**Verdict: CONDITIONAL-GO** — **steal-from** scanner filters (certainty mid, spread caps, complement sanity band). **NO** live wallet deployment until redemption ops + settlement-mechanics checks per `@concepts/cme-settlement-mechanics-for-prediction-markets.md`.
+
+Thresholds are **env-parameterized** (`NEAR_CERTAINTY_MID_MIN`, `NEAR_BUY_USDC`, etc.) [CONFIRMED from README].
+
 ### Cemini posture
 
-- **Tier: Adopt-eligible** pending Phase-0 audit. No commitment to integrate without the audit.
-- **Routing**: server-side, not laptop. Would slot into a `/opt/cemini/agents/` execution module if adopted, **not** a knowledge-serving layer.
-- **Pre-adoption questions** (for the future operator session):
-  1. What exact threshold does the bot use, and is it parameterized?
-  2. How does it handle Polymarket's CLOB depth — does it size positions against book depth, or just place fixed-size orders?
-  3. Resolution-source: does it use Polymarket's resolution oracle directly, or does it compute its own near-resolution heuristic from order-book skew? (The latter is more useful as a copy-able pattern.)
+- **Tier: CONDITIONAL-GO** (Phase-0 complete). Reference patterns only for prod until redemption + oracle alignment scoped.
+- **Routing**: server-side evaluation; not librarian.
 
 ## Snippets
 

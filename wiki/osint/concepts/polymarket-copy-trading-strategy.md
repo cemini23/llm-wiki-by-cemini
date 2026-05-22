@@ -4,6 +4,8 @@ type: concept
 tags: [concept, polymarket, copy-trading, smart-money, wallet-tracking, prediction-markets, telegram-bots, k56]
 keywords: [pretracer, kreopolybot, polygun, polycule, polymarketanalytics, smart-wallet-selection, hft-copy-trap, hedge-leg-trap, 3-month-track-record-rule, percentage-stop-loss, dexterssolab-32700, igor-mikerin-10000]
 related:
+  - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
+  - entities/people/spottr-trade.md
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-market-making-architectures.md
@@ -15,15 +17,18 @@ related:
   - entities/people/igor-mikerin.md
   - entities/people/dexterssolab.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/polymarket-retail-trading-discipline.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-22
 clusters: [polymarket, copy-trading]
 ---
 
 ## Relations
 
+- @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — Post 7 (@spottr_trade) hybrid CLOB latency
+- @entities/people/spottr-trade.md — Spottr author
 - @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — Posts 2 (@igor_mikerin) + 3 (@DextersSolab) primary sources
 - @concepts/polymarket-bot-architecture.md — taker-side bot architecture; copy-trading is one specific taker-side execution pattern
 - @concepts/polymarket-market-making-architectures.md — already references smart-money-copy as a multi-source-confirmed K30 pattern
@@ -32,6 +37,7 @@ clusters: [polymarket, copy-trading]
 - @entities/tools/pretracer.md — Telegram bot promoted by @igor_mikerin
 - @entities/tools/kreopolybot.md — Telegram bot promoted by @DextersSolab
 - @entities/tools/polymarketanalytics-com.md — free filter platform used for wallet discovery
+- @concepts/polymarket-retail-trading-discipline.md — retail sizing + resolution hygiene (K57)
 
 ## Raw Concept
 
@@ -116,6 +122,20 @@ The Kreo / KreoPolyBot naming conflict between the two sources is unresolved —
 - **@DextersSolab**: $32,700 in one month (start-of-2026 timeframe), 6 figures cumulative
 
 `[TENTATIVE]` — both posts are referral-marketing content with clear incentives to inflate. Treat the workflows as instructive, the PnL numbers as marketing claims.
+
+### Hybrid CLOB latency model (K57, @spottr_trade) [CONFIRMED architecture]
+
+Polymarket matches orders **off-chain** first; settlement batches to Polygon later. Three moments:
+
+1. **Backend match** (leader trade happens — not publicly streamed)
+2. **Mempool broadcast** (earliest practical follower detection without privileged access)
+3. **Block confirmation** (public, slowest)
+
+**"0-block execution"** (follower settlement in same Polygon block as leader) measures step 3, not step 1. Polygon block time ~1.75s; mempool visibility often &lt;1s after match. Copy-bot marketing that leads with block metrics understates the irreducible detection floor.
+
+**Fastest public detection path cited:** self-hosted Polygon node + mempool subscription (third-party RPC adds relay hops). **Execution cited:** colocation near Polymarket infra + EIP-712 signing (~50–300ms backend round-trip) [TENTATIVE vendor claims].
+
+Design implication for Cemini: any copy-trading or smart-wallet-mirror strategy must budget latency in **detection + CLOB order submission**, not block parity alone. See `@entities/people/spottr-trade.md`.
 
 ### Adversary-modeling implications for Cemini
 

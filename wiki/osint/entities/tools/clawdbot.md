@@ -7,10 +7,11 @@ related:
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
   - concepts/polymarket-weather-trading-strategy.md
   - entities/people/polymarketsuccubus.md
+  - entities/people/polydao-mr-buzzoni.md
   - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-22
 ---
 
 ## Relations
@@ -18,6 +19,7 @@ updated: 2026-05-20
 - @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — K55 Posts.docx Post 5 references Clawdbot as the framework underpinning ColdMath (#1 weather trader, +$124K PnL)
 - @concepts/polymarket-weather-trading-strategy.md — concept page where Clawdbot is now cross-referenced
 - @entities/people/polymarketsuccubus.md — referencing creator
+- @entities/people/polydao-mr-buzzoni.md — K57 weather post watchlist cites ColdMath stack
 
 ## Raw Concept
 

@@ -9,6 +9,8 @@ related:
   - entities/platforms/kalshi.md
   - concepts/quant-finance.md
   - sources/signa.md
+  - sources/bowtied-bull-solopreneur-leadgen-macro-2026-05-22.md
+  - concepts/high-ticket-smb-lead-generation-ops.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
