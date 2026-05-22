@@ -16,6 +16,7 @@ related:
   - concepts/cross-venue-arbitrage-pattern.md
   - sources/5-5-moarrr-tool-eval.md
   - sources/5-6-links-eval-batch.md
+  - sources/tool-eval-50urls-polymarket-kalshi-license-false-negative-2026-05-21.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-05

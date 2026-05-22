@@ -19,6 +19,7 @@ related:
   - concepts/polymarket-lp-rewards-farming.md
   - entities/tools/ai-polymarket-agent.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - entities/tools/polymarket-near-resolution-bot.md
 
 maturity: validated
 created: 2026-05-13

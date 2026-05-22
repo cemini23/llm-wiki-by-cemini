@@ -5,15 +5,17 @@ tags: [entity, person, perps-trader, funding-carry, dex-perps, k55]
 keywords: [morpphhhaw, perps-dex-funding-bot, market-neutral-carry, cross-venue-perp-hedge, semi-automated-allocator, telegram-morph-tg]
 related:
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
+  - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
   - concepts/perps-dex-funding-carry-strategy.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-21
 ---
 
 ## Relations
 
-- @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — Post 1 source
+- @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — Post 1 canonical source
+- @sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md — K55-2 redistribution (Post 1 duplicated; reference-only, no new content)
 - @concepts/perps-dex-funding-carry-strategy.md — synthesized concept
 
 ## Raw Concept

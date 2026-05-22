@@ -9,6 +9,7 @@ related:
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/favorite-longshot-bias.md
+  - sources/tool-eval-50urls-polymarket-kalshi-license-false-negative-2026-05-21.md
 maturity: validated
 created: 2026-05-18
 updated: 2026-05-18

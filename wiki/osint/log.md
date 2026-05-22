@@ -1,5 +1,43 @@
 # Wiki Log
 
+## [2026-05-21] ingest K55-2 | Post.docx 5-post compilation + Tool Eval 50-URL v4
+
+**Inbox cleared:**
+- `research to be indexed/Post.docx` (5 posts, 37 KB)
+- `research to be indexed/Tool Evaluation for Cemini Wiki.docx` (50 URLs, 3.0 MB, v4 multi-wiki prompt)
+
+**Created (2 sources / 1 tool entity / 4 person entities / 2 concepts):**
+
+- `sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md` — 5-post compilation source page. Post 1 (@morpphhhaw) duplicate of K55-1 (reference-only). Posts 2-5 are net-new content.
+- `sources/tool-eval-50urls-polymarket-kalshi-license-false-negative-2026-05-21.md` — Gemini DR v4 50-URL eval. 1 Adopt / 31 Reject / 17 Unavailable. Reject decisions documented as provisional per K53/K54 NO LICENSE FOUND false-negative pattern.
+- `entities/tools/polymarket-near-resolution-bot.md` — `gamma-trade-lab/Polymarket-Near-Resolution-Bot` (MIT, the only Adopt). CLOB late-stage scanner for heavily-favored binary outcomes nearing resolution. Phase-0 audit pending.
+- `entities/people/ridark-eth.md` — author of 50-repos AI cashflow post (K55-2 Post 2). Notes K52 prior misrepresentation incident (Jon-Becker L2 fabrication).
+- `entities/people/crpt-atlas.md` — author of CME-settlement-mechanics post (K55-2 Post 3). Highest-signal post in batch for prediction-market mechanics.
+- `entities/people/thariq-trq212.md` — Anthropic engineer; HTML-as-Claude-output essay (K55-2 Post 4). Cross-routed to ccc-wiki concept page.
+- `entities/people/cbb0fe.md` — pseudonymous +$50M DEX sniper, 2020-2021 Uniswap+BSC era memoir (K55-2 Post 5).
+- `concepts/cme-settlement-mechanics-for-prediction-markets.md` — Settlement vs daily-high resolution rules, active-month roll trap, cross-asset correlation grid, bot-architecture pre-trade checks. Synthesized from @crptAtlas Post 3.
+- `concepts/dex-mempool-sniping-2020-2021.md` — Historical reference for MEV-concept layer. Mempool monitoring + AWS NoVA latency edge + anti-snipe arms race + smart-contract iteration + "anti-snipe as moat" generalizations. Synthesized from @Cbb0fe Post 5.
+
+**Updated (1 existing entity):**
+- `entities/people/morpphhhaw.md` — added K55-2 source backlink for duplicate Post 1 (reference-only, no new content).
+
+**Cross-wiki briefs (4):**
+- `@ccc-wiki/concepts/html-as-claude-code-output-format.md` — full concept page for Thariq's essay (not a brief — promoted to full page).
+- `@ccc-wiki/briefs/2026-05-21_k55-2-ridark-eth-ccc-relevant-repos.md` — CCC-relevant subset of @ridark_eth's 50 repos. nautilus_trader-tier audit candidates flagged.
+- `@image-gen-wiki/briefs/2026-05-21_k55-2-ridark-eth-image-gen-relevant-repos.md` — flux / VAR / Qwen3-TTS / VoxCPM / PersonaLive.
+- `@seo-wiki/briefs/2026-05-21_k55-2-ridark-eth-seo-relevant-repos.md` — SaaS-Boilerplate / akaunting / faveo-helpdesk / laracom / FreeDomain (PBN-relevance flagged).
+- `@cybersec-wiki/briefs/2026-05-21_k55-2-cybersec-toolset-from-osint-tool-eval.md` — CF-Hero / reconftw / LLM4Pentest / jadx-ai-mcp / Awesome-Hacking / open-source-web-scanners — all Reject-per-OSINT but license verifications recommended.
+
+**K55-2 Reject discipline:** per ingest decision (briefs only, no per-tool stubs), the 31 Reject entries from the Tool Eval are documented as an aggregate appendix on the source page. **No reject-stub farm created.** 9 entries flagged for manual `gh api` license re-verification if/when adoption interest arises.
+
+**Headline insights:**
+- @crptAtlas Post 3 closes a gap in @concepts/polymarket-bot-architecture.md by adding explicit settlement-mechanics pre-trade checks (Daily-High vs Settlement, active-month-roll calendar).
+- @Cbb0fe Post 5 is now the canonical first-person source for 2020-2021 mempool-sniping history. Infrastructure-geography as first-class strategic variable + smart-contract iteration cycle generalize to any future MEV-adjacent Cemini strategy. **Not a build trigger.**
+- @trq212 / Thariq's HTML-effectiveness essay is fully out-of-scope for OSINT financial research — promoted to a full ccc-wiki concept page. Future authoring-format consideration for CeminiSuite briefs distributed to claude.ai.
+- Tool Eval 50-URL batch confirms the K53/K54 pattern: blanket NO LICENSE FOUND Rejects are unreliable. In-batch reproduction: URL 48 `Jon-Becker/prediction-market-analysis` Rejected here but K52-verified MIT in-file.
+
+---
+
 ## [2026-05-22] ops | Librarian sync + public-repo security pass
 
 - **`scripts/sync_wiki_to_librarian.sh`:** added `ccc-wiki` and `cybersecurity-wiki` to hourly/post-commit rsync (was missing cybersec; CCC was manual-only).

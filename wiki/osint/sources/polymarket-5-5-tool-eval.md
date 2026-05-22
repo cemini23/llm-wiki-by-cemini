@@ -15,6 +15,7 @@ related:
   - concepts/polymarket-market-making-architectures.md
   - sources/5-5-moarrr-tool-eval.md
   - sources/polymarket-microstructure-anatomy-2604.24366.md
+  - sources/tool-eval-50urls-polymarket-kalshi-license-false-negative-2026-05-21.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-05

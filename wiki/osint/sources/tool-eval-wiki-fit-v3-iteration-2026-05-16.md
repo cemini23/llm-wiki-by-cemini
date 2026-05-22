@@ -11,6 +11,7 @@ related:
   - concepts/cemini-license-posture.md
   - sources/tool-evaluation-wiki-fit-2026-05-15.md
   - sources/multi-wiki-tool-eval-ipsale-risk-2026-05-17.md
+  - sources/tool-eval-50urls-polymarket-kalshi-license-false-negative-2026-05-21.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-16

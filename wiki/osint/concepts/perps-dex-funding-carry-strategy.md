@@ -9,6 +9,7 @@ related:
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/polymarket-bot-architecture.md
   - entities/people/morpphhhaw.md
+  - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
 maturity: validated
 created: 2026-05-20
 updated: 2026-05-20

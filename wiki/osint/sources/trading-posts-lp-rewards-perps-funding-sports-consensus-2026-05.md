@@ -20,6 +20,7 @@ related:
   - entities/platforms/polymarket.md
   - entities/tools/centpro.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
 
 maturity: validated
 read_status: deep-read

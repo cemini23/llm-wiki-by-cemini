@@ -10,6 +10,7 @@ related:
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/awesome-prediction-market-tools-aarora4.md
   - concepts/cemini-license-posture.md
+  - sources/tool-eval-50urls-polymarket-kalshi-license-false-negative-2026-05-21.md
 maturity: reference-only
 created: 2026-05-14
 updated: 2026-05-14

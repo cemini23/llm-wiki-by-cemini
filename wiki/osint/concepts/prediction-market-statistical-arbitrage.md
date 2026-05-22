@@ -11,6 +11,8 @@ related:
   - concepts/markov-regime-switching-models.md
   - concepts/market-microstructure.md
   - entities/tools/prediction-market-analysis.md
+  - concepts/cme-settlement-mechanics-for-prediction-markets.md
+  - entities/tools/polymarket-near-resolution-bot.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-18

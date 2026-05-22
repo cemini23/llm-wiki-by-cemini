@@ -68,6 +68,10 @@ related:
   - entities/tools/clawdbot.md
   - entities/tools/parity-polymarket-analytics.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/cme-settlement-mechanics-for-prediction-markets.md
+  - entities/people/crpt-atlas.md
+  - entities/tools/polymarket-near-resolution-bot.md
+  - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
 
 maturity: validated
 created: 2026-04-23

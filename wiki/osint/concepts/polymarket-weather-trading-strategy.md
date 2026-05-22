@@ -19,6 +19,7 @@ related:
   - entities/people/polymarketsuccubus.md
   - entities/tools/clawdbot.md
   - entities/tools/parity-polymarket-analytics.md
+  - concepts/cme-settlement-mechanics-for-prediction-markets.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-20
