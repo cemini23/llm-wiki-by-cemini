@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Remove @wiki-alias entries from related: frontmatter; fix @concepts/ to local paths."""
+"""Remove @wiki-alias entries from related: frontmatter; fix @concepts/ to local paths.
+
+Also provides add_related_backlink() for bidirectional repair — use that instead of
+regex on `maturity:` (which strips the key name).
+"""
 
 from __future__ import annotations
 
