@@ -14,6 +14,8 @@ related:
   - concepts/polymarket-weather-trading-strategy.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
   - concepts/polymarket-bot-architecture.md
+  - entities/infrastructure/cemini-egress-fi.md
+  - concepts/cemini-ai-assistant.md
 maturity: draft
 created: 2026-05-22
 updated: 2026-05-22
@@ -31,6 +33,8 @@ updated: 2026-05-22
 - @concepts/polymarket-weather-trading-strategy.md — Post 6 forecast-revision workflow
 - @concepts/multi-module-bot-conflict-detector-pattern.md — prior Gustafsson architecture (K55); Post 2 is a follow-on refinement arc
 - @concepts/polymarket-bot-architecture.md — parent bot architecture catalog
+- @entities/infrastructure/cemini-egress-fi.md — K57 egress-fi adoption (hybrid CLOB / 0-block posture)
+- @concepts/cemini-ai-assistant.md — K57 assistant copy-trading disclosure
 
 ## Raw Concept
 

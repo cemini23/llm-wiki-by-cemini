@@ -5,12 +5,14 @@ tags: [infrastructure, hetzner, polymarket, hyperliquid, order-routing, proxy, c
 keywords: [cemini-egress-fi, helsinki, hel1, finland, ssh-tunnel, order-egress, geo-routing, non-us-egress, third-server]
 related:
   - concepts/cemini-ai-assistant.md
+  - concepts/polymarket-copy-trading-strategy.md
   - entities/infrastructure/cemini-stack.md
   - concepts/librarian-server-architecture.md
   - sources/arxiv-inference-scaling-llms-2605.19775.md
+  - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-21
+updated: 2026-05-22
 # Live-probed 2026-05-20 (read-only SSH via cemini-prod jump host). Refresh on spec/role change.
 ---
 
@@ -20,6 +22,8 @@ updated: 2026-05-21
 - @entities/infrastructure/cemini-stack.md — the umbrella production topology; this is the third Hetzner server (added 2026-05-19, swapped DC 2026-05-20)
 - @concepts/librarian-server-architecture.md — the librarian (kb-server + stash) this box would query if it hosts Cemini AI; both are Hetzner, different DCs (Helsinki vs Ashburn)
 - @sources/arxiv-inference-scaling-llms-2605.19775.md — K48: long chain-of-thought reasoning is KV **capacity-bound**; this host (4 GB, no GPU) is **API-gateway-only** for frontier reasoning — do not install local CoT weights here
+- @concepts/polymarket-copy-trading-strategy.md — K57: hybrid Polymarket CLOB copy latency; gateway must not promise sub-block parity
+- @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — @spottr_trade Post 7 (0-block vs detection)
 
 ## Raw Concept
 
@@ -39,7 +43,7 @@ Probed read-only 2026-05-20 — SSH via `cemini-prod` as jump host (the box's po
 | Spec | 2 vCPU · 4 GB RAM (3.7 GiB measured) · 75 GB disk · Ubuntu (kernel 6.8.0-117) |
 | Utilisation (2026-05-20) | 428 MB RAM used · 1.5 GB disk used · load average 0.00 |
 | Headroom | ~3.3 GB RAM free · ~71 GB disk free |
-| Running | `sshd` only — no Docker, no WireGuard, no proxy daemon |
+| Running (2026-05-22) | `sshd` + **Cemini AI** gateway under `/opt/cemini-ai/` — no Docker, no WireGuard, no separate proxy daemon |
 | AS / rDNS | AS24940 Hetzner Online GmbH · `static.190.139.168.204.clients.your-server.de` |
 
 ### Role — order-egress relay
@@ -60,6 +64,8 @@ The box is near-idle: one near-zero-cost job (SSH tunnelling) on librarian-class
 
 **K48 inference-scaling posture [CONFIRMED 2026-05-21]:** arXiv:2605.19775 shows long chain-of-thought reasoning is **KV capacity-bound**, not compute-bound. This host has **no GPU** and only 4 GB RAM — it must remain an **API-routing gateway** (DeepSeek / OpenRouter) for reasoning models, not a local weight host. Lazy-tool on the laptop reduces MCP schema bloat but does not solve the KV wall.
 
+**K57 Polymarket copy-trading latency posture [CONFIRMED 2026-05-22]** — adoption on egress-fi is **documentation only** (no new binaries from K57; flox / near-resolution-bot stay off this box). From @spottr_trade: leader fills on Polymarket's **hybrid CLOB** (off-chain match, on-chain settlement). Followers observe via mempool/settlement — **not** at match time. Marketing **"0-block execution"** means the follower lands in the **same Polygon settlement block** as the leader, not zero detection lag. Any Cemini AI or propose-action flow hosted here must **not** claim sub-block copy parity or HFT-grade mirror latency without measured end-to-end ms on real fills. Prod operator detail: brief `2026-05-22_k57-polymarket-operator-refinements-cemini.md` on `cemini-prod` (read-only from this workspace).
+
 ### GDPR / EU-residency posture
 
 Helsinki is an EU member state — the same EU-data-residency story applies as it did for Falkenstein. Customer-side sessions and stash memory landing on this box stay inside the EU; DeepSeek inference still leaves the EU and would need an EU-hostable synthesis model if a hard EU-residency requirement on *inference* surfaces.
@@ -79,6 +85,17 @@ Helsinki is an EU member state — the same EU-data-residency story applies as i
 =LISTEN=  sshd :22 (v4+v6); systemd-resolved :53 (localhost only)
 =WG=      no wireguard
 =EGRESS=  204.168.139.190 (IPv4) / 2a01:4f9:c010:da39::1 (IPv6)
+```
+
+### Read-only probe — 2026-05-22 (via `ssh -J cemini-prod`)
+
+```
+=HOST=    cemini-egress-fi
+=UPTIME=  up 2 days, 45 minutes
+=MEM=     458Mi / 3.7Gi used
+=DOCKER=  none
+=LISTEN=  sshd :22 only (public)
+=/opt=    cemini-ai/ (gateway tree; K57 adds no new packages here)
 ```
 
 ipinfo.io on the public IP → `city: Helsinki · region: Uusimaa · country: FI · org: AS24940 Hetzner Online GmbH · timezone: Europe/Helsinki`. rDNS `static.190.139.168.204.clients.your-server.de` confirms Hetzner.

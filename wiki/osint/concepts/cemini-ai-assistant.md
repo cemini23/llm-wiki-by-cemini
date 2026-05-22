@@ -12,10 +12,12 @@ related:
   - sources/arxiv-self-healing-llm-agents-2605.06737.md
   - concepts/code-as-agent-harness.md
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
+  - concepts/polymarket-copy-trading-strategy.md
+  - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
 
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-21
+updated: 2026-05-22
 ---
 
 ## Relations
@@ -27,6 +29,8 @@ updated: 2026-05-21
 - @sources/arxiv-self-healing-llm-agents-2605.06737.md — failure detection + corrective replanning patterns for long-running assistant sessions
 - @concepts/code-as-agent-harness.md — harness-interface model for executable/verifiable assistant actions
 - @sources/arxiv-code-as-agent-harness-survey-2605.18747.md — primary survey for harness-interface + verification layers
+- @concepts/polymarket-copy-trading-strategy.md — K57: disclose hybrid CLOB copy limits in assistant answers (see egress-fi posture)
+- @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — @spottr_trade latency framing
 
 ## Raw Concept
 
@@ -94,6 +98,7 @@ Two honest caveats:
 
 - **Transatlantic retrieval lag.** kb-server and stash are in Ashburn; `cemini-egress-fi` is in Helsinki. Every retrieval is a ~115-130 ms server-to-server hop `[NEEDS VERIFICATION 2026-05-20 — not yet ping-measured]`. Tolerable for an internal tool; for a polished external product, replicate kb-server + stash to the EU so the brain is co-located.
 - **Blast-radius caution for the external phase.** A public chatbot should not share a box with the live order-egress path. Acceptable while internal-only and attack-surface-free; before external launch, Cemini AI moves to its own EU box (or order routing moves off `cemini-egress-fi`).
+- **K57 Polymarket copy disclosure.** When the assistant discusses copy-trading or mirror bots, it must state that hybrid-CLOB leaders match off-chain and followers only see fills at settlement/mempool — **"0-block" ≠ zero detection lag** (@concepts/polymarket-copy-trading-strategy.md, @entities/infrastructure/cemini-egress-fi.md). No prod prompt change from this workspace; wiki is the adoption artifact.
 
 ### Deferred to the external phase
 
