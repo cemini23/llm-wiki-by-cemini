@@ -56,7 +56,7 @@ This supersedes (a) the abandoned server-side WireGuard on `cemini-prod` (droppe
 
 ### Relationship to the rest of the fleet
 
-It is the **third** Hetzner server, joining `cemini-prod` (Ashburn, trading stack) and `cemini-librarian` (Ashburn, knowledge serving). Unlike those two it is in a different datacentre — Helsinki, not Ashburn — a deliberate consequence of needing a non-US egress IP. Helsinki-to-Ashburn is a transatlantic hop on the order of ~115-130 ms server-to-server `[NEEDS VERIFICATION 2026-05-20 — not yet ping-measured]`, slightly longer than the previous Falkenstein-to-Ashburn (~90-100 ms) but inside the same order of magnitude; the choice was venue-coverage-driven, not latency-driven.
+It is the **third** Hetzner server, joining `cemini-prod` (Ashburn, trading stack) and `cemini-librarian` (Ashburn, knowledge serving). Unlike those two it is in a different datacentre — Helsinki, not Ashburn — a deliberate consequence of needing a non-US egress IP. Helsinki-to-Ashburn is a transatlantic hop of **~118–120 ms RTT** server-to-server `[CONFIRMED 2026-05-22 — ping from cemini-egress-fi to cemini-librarian 5.161.179.207, 3 samples avg 119 ms]`, slightly longer than the previous Falkenstein-to-Ashburn (~90-100 ms) but inside the same order of magnitude; the choice was venue-coverage-driven, not latency-driven.
 
 ### Spare capacity — candidate Cemini AI host
 

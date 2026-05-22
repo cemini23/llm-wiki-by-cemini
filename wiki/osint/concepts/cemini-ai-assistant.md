@@ -96,7 +96,7 @@ Response  (+ optional confirm card)
 
 Two honest caveats:
 
-- **Transatlantic retrieval lag.** kb-server and stash are in Ashburn; `cemini-egress-fi` is in Helsinki. Every retrieval is a ~115-130 ms server-to-server hop `[NEEDS VERIFICATION 2026-05-20 — not yet ping-measured]`. Tolerable for an internal tool; for a polished external product, replicate kb-server + stash to the EU so the brain is co-located.
+- **Transatlantic retrieval lag.** kb-server and stash are in Ashburn; `cemini-egress-fi` is in Helsinki. Every retrieval is a **~118–120 ms** server-to-server hop `[CONFIRMED 2026-05-22 — egress-fi → librarian ping]`. Tolerable for an internal tool; for a polished external product, replicate kb-server + stash to the EU so the brain is co-located.
 - **Blast-radius caution for the external phase.** A public chatbot should not share a box with the live order-egress path. Acceptable while internal-only and attack-surface-free; before external launch, Cemini AI moves to its own EU box (or order routing moves off `cemini-egress-fi`).
 - **K57 Polymarket copy disclosure.** When the assistant discusses copy-trading or mirror bots, it must state that hybrid-CLOB leaders match off-chain and followers only see fills at settlement/mempool — **"0-block" ≠ zero detection lag** (@concepts/polymarket-copy-trading-strategy.md, @entities/infrastructure/cemini-egress-fi.md). No prod prompt change from this workspace; wiki is the adoption artifact.
 

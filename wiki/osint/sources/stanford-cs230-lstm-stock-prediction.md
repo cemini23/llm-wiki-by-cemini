@@ -7,7 +7,8 @@ related:
   - concepts/lstm-stock-prediction-baseline.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-05-22
+read_status: skimmed
 ---
 
 ## Relations
