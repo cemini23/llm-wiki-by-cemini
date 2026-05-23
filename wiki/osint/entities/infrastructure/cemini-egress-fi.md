@@ -10,9 +10,10 @@ related:
   - concepts/librarian-server-architecture.md
   - sources/arxiv-inference-scaling-llms-2605.19775.md
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
+  - concepts/laptop-prod-research-split.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-22
+updated: 2026-05-23
 # Live-probed 2026-05-20 (read-only SSH via cemini-prod jump host). Refresh on spec/role change.
 ---
 
