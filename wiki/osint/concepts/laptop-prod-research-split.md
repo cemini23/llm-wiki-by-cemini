@@ -12,7 +12,7 @@ related:
   - entities/infrastructure/cemini-egress-fi.md
 maturity: validated
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -64,7 +64,7 @@ From **laptop**: `ssh cemini-librarian` (ProxyJump via prod public IP) — uncha
 
 | Step | Outcome |
 |------|---------|
-| **197 FLOX** | Compile **PASS** on librarian (`libflox-connectors.a`); Mac cmake blocked on OpenSSL |
+| **197 FLOX** | Phase 1a compile **PASS** on librarian; Phase 1b Polymarket WS soak **PASS** (60s); Mac cmake blocked on OpenSSL |
 | **189 ArcticDB** | **Migrated** `market-dataset` → `lmdb:///opt/cemini-bulk/arctic-market-dataset` (`equity_bars`, 8,507 symbols) |
 
 ### Pickup path

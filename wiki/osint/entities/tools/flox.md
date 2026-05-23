@@ -10,7 +10,7 @@ related:
   - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
 maturity: validated
 created: 2026-05-22
-updated: 2026-05-23
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -48,7 +48,7 @@ K57 multi-wiki tool eval URL 10 — `FLOX-Foundation/flox`. Modular framework fo
 | **macOS laptop** | cmake **FAIL** — no OpenSSL dev headers (LibreSSL-only) |
 | **cemini-librarian** | **PASS** — `libflox-connectors.a` built with **polymarket** connector (executor OFF) |
 
-Phase 1 = compile verification only; **latency benchmark not run**. macOS needs Homebrew `openssl@3` or Linux VM for native laptop build. Brief: `briefs/2026-05-23_flox-phase1-build-results.md`. See @concepts/laptop-prod-research-split.md.
+Phase 1a = compile verification (librarian **PASS**). Phase 1b = Polymarket market-channel WS soak **PASS** on librarian (60s, Gamma high-volume token): Python 1 book update vs FLOX 3 `BookUpdateEvent`s; both `first_book_ms` ~300–410. Scripts: `scripts/flox_phase1b_*`. macOS cmake still needs Homebrew `openssl@3`. Brief: `briefs/2026-05-23_flox-phase1b-polymarket-ws-benchmark.md`. See @concepts/laptop-prod-research-split.md.
 
 ## Snippets
 

@@ -12,7 +12,7 @@ related:
   - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-23
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -87,7 +87,7 @@ On librarian against `s&p500 data kaggle/all_stocks_5yr.csv` (200k rows): pandas
 
 ~51 empty `.us.txt` stubs skipped; duplicate paths deduped by symbol. **Prod stack not rewired** — cemini-prod still uses prior paths until server-Claude brief.
 
-**What remains**: wire backtest/research consumers on prod to Arctic URI; optional S3-backed store for multi-host access.
+**What remains**: wire backtest/research consumers on prod to Arctic URI; optional S3-backed store for multi-host access. Staged prod brief: `briefs/2026-05-23_arcticdb-prod-backtest-wiring.md` (rsync read replica + `ArcticDBManager` + QuantOS backtester).
 
 ## Snippets
 

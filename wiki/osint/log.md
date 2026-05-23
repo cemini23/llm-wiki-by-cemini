@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-23] ops | FLOX Phase 1b PASS + prod briefs shipped
+
+**FLOX Phase 1b:** Polymarket market WS soak **PASS** on librarian (60s; Python + FLOX connector). Scripts: `scripts/flox_phase1b_*`. Wiki: `flox.md`, `laptop-prod-research-split.md`.
+
+**Prod briefs** (`scp` → `cemini-prod:/opt/cemini/briefs/`): `2026-05-23_flox-step197-prod-handoff.md`, `2026-05-23_arcticdb-prod-backtest-wiring.md`, `2026-05-23_flox-phase1b-polymarket-ws-benchmark.md`. FLOX Phase 1 closed; **no prod FLOX deploy**. Arctic wiring = next prod action.
+
+---
+
 ## [2026-05-23] ops | FLOX Phase 1 build + ArcticDB market-dataset migration
 
 **FLOX (Step 197):** `libflox-connectors.a` built on **cemini-librarian** (polymarket connector in tree; executor OFF). macOS laptop: cmake failed (OpenSSL dev). Brief: `briefs/2026-05-23_flox-phase1-build-results.md`.
