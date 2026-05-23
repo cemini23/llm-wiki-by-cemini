@@ -9,6 +9,8 @@ related:
   - sources/agentic-harness-engineering.md
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
   - concepts/llm-agent-systems.md
+  - ccc-wiki/concepts/graphflow-verifiable-agent-workflows.md
+  - ccc-wiki/sources/arxiv-graphflow-2605.14968.md
 maturity: draft
 created: 2026-05-23
 updated: 2026-05-23
@@ -20,6 +22,8 @@ updated: 2026-05-23
 - @concepts/code-as-agent-harness.md — complementary: harness evolution vs compile-time proofs
 - @sources/agentic-harness-engineering.md — observability-driven harness tuning
 - @sources/arxiv-code-as-agent-harness-survey-2605.18747.md — executable harness survey
+- @ccc-wiki/concepts/graphflow-verifiable-agent-workflows.md — OpenSpec / LangGraph / Glasswing contrast
+- @ccc-wiki/sources/arxiv-graphflow-2605.14968.md — CCC source provenance page
 
 ## Raw Concept
 

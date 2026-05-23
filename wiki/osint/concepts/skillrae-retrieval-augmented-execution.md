@@ -8,7 +8,8 @@ related:
   - concepts/code-as-agent-harness.md
   - concepts/llm-agent-systems.md
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
-  - concepts/llm-agent-systems.md
+  - ccc-wiki/concepts/skillrae-retrieval-augmented-execution.md
+  - ccc-wiki/sources/arxiv-skillrae-2605.10114.md
 maturity: draft
 created: 2026-05-23
 updated: 2026-05-23
@@ -20,6 +21,8 @@ updated: 2026-05-23
 - @concepts/code-as-agent-harness.md — harness substrate vs skill compilation
 - @concepts/llm-agent-systems.md — corpus hub
 - @sources/arxiv-code-as-agent-harness-survey-2605.18747.md — related harness survey
+- @ccc-wiki/concepts/skillrae-retrieval-augmented-execution.md — Claude Code / lazy-tool / conductor mapping
+- @ccc-wiki/sources/arxiv-skillrae-2605.10114.md — CCC source provenance page
 
 ## Raw Concept
 
