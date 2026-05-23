@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-05-23] ops | FLOX Phase 2 live (librarian WS → prod Redis)
+
+**Phase 2:** `flox-phase2-ws.service` on **cemini-librarian** — continuous Polymarket CLOB market WS (8 top-volume tokens), publishes `intel:polymarket_flox_ws` to prod Redis (`10.0.0.3:6379` private bind). Prod **`FLOX_PHASE2_ENABLED=true`**; `cemini_mcp` reads via `services/polymarket_flox_book.py`. Scripts: `flox_phase2_ws_publish.py`, `install_flox_phase2_librarian.sh`. No FLOX binary on prod.
+
+---
+
 ## [2026-05-23] ops | FLOX Phase 1b PASS + prod briefs shipped
 
 **FLOX Phase 1b:** Polymarket market WS soak **PASS** on librarian (60s; Python + FLOX connector). Scripts: `scripts/flox_phase1b_*`. Wiki: `flox.md`, `laptop-prod-research-split.md`.

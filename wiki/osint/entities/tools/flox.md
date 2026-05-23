@@ -48,7 +48,7 @@ K57 multi-wiki tool eval URL 10 — `FLOX-Foundation/flox`. Modular framework fo
 | **macOS laptop** | cmake **FAIL** — no OpenSSL dev headers (LibreSSL-only) |
 | **cemini-librarian** | **PASS** — `libflox-connectors.a` built with **polymarket** connector (executor OFF) |
 
-Phase 1a = compile verification (librarian **PASS**). Phase 1b = Polymarket market-channel WS soak **PASS** on librarian (60s, Gamma high-volume token): Python 1 book update vs FLOX 3 `BookUpdateEvent`s; both `first_book_ms` ~300–410. Scripts: `scripts/flox_phase1b_*`. macOS cmake still needs Homebrew `openssl@3`. Brief: `briefs/2026-05-23_flox-phase1b-polymarket-ws-benchmark.md`. See @concepts/laptop-prod-research-split.md.
+Phase 1a = compile verification (librarian **PASS**). Phase 1b = Polymarket market-channel WS soak **PASS** on librarian. **Phase 2 (2026-05-23):** continuous WS publisher on librarian → prod Redis `intel:polymarket_flox_ws` (8 top-volume markets); `systemd` `flox-phase2-ws.service`; prod `FLOX_PHASE2_ENABLED=true`. Scripts: `scripts/flox_phase1b_*`, `scripts/flox_phase2_ws_publish.py`, `scripts/install_flox_phase2_librarian.sh`. macOS cmake still needs Homebrew `openssl@3`. See @concepts/laptop-prod-research-split.md.
 
 ## Snippets
 

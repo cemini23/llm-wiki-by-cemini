@@ -64,7 +64,7 @@ From **laptop**: `ssh cemini-librarian` (ProxyJump via prod public IP) — uncha
 
 | Step | Outcome |
 |------|---------|
-| **197 FLOX** | Phase 1a compile **PASS** on librarian; Phase 1b Polymarket WS soak **PASS** (60s); Mac cmake blocked on OpenSSL |
+| **197 FLOX** | Phase 1a/1b **PASS** on librarian; **Phase 2 live** — `flox-phase2-ws.service` → `intel:polymarket_flox_ws`; prod `FLOX_PHASE2_ENABLED=true` |
 | **189 ArcticDB** | **Migrated** `market-dataset` → `lmdb:///opt/cemini-bulk/arctic-market-dataset` (`equity_bars`, 8,507 symbols) |
 
 ### Pickup path

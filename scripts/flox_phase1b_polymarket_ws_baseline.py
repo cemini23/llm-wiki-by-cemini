@@ -29,7 +29,13 @@ async def run(token_id: str, duration_sec: int) -> dict:
     raw_messages = 0
     t_first_book_ms: float | None = None
 
-    async with websockets.connect(uri, ping_interval=20, extra_headers=headers) as ws:
+    try:
+        connect = websockets.connect(
+            uri, ping_interval=20, additional_headers=headers
+        )
+    except TypeError:
+        connect = websockets.connect(uri, ping_interval=20, extra_headers=headers)
+    async with connect as ws:
         t_connected_ms = (time.perf_counter() - t0) * 1000
         await ws.send(json.dumps(sub))
         deadline = time.perf_counter() + duration_sec

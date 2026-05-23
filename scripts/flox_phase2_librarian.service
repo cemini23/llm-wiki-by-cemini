@@ -1,0 +1,17 @@
+[Unit]
+Description=FLOX Phase 2 Polymarket WS publisher (librarian → prod Redis)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+EnvironmentFile=-/opt/cemini-bulk/.flox_phase2.env
+ExecStart=/opt/cemini-bulk/.venv/bin/python3 /opt/cemini-bulk/scripts/flox_phase2_ws_publish.py
+Restart=always
+RestartSec=5
+StandardOutput=append:/var/log/flox-phase2-ws.log
+StandardError=append:/var/log/flox-phase2-ws.log
+
+[Install]
+WantedBy=multi-user.target
