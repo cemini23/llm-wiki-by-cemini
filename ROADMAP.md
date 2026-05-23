@@ -10,6 +10,8 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-23 — K46–K59)
 
+- **Prod handoff ingested (2026-05-23)** — `cemini-librarian:/opt/cemini-bulk/research/cemini-handoff/`. OSINT wiki: `laptop-prod-research-split` concept + handoff source. **Kronos prompt A/B on prod: REJECT** (do not enable token block). **ArcticDB live benchmark:** tail-1000 0.011s vs pandas 0.109s. **FLOX Step 197:** laptop/cmake only. **Prod→librarian SSH:** use `10.0.0.2` from prod.
+
 - **K59-2 ingest (2026-05-23)** — companion **arXiv:2605.00459** (ILSdl population scale, 12,708 markets). **1 new source**; **4 updated** (ILS concept + ForesightFlow source + microstructure + insider-tracker). **Brief:** `2026-05-23_k59-2-ils-population-scope-discovery-cemini.md` → prod. **Posture:** market-level ILS not prod-ready (~12 interpretable markets); wallet-level surveillance remains primary. Librarian PDF + wiki sync.
 
 - **K59 ingest (2026-05-23)** — Tier-2 arXiv sweep `wiki/sweeps/2026-05-23.md`. **3 papers:** ForesightFlow ILS (2605.00493, Tier-A OSINT) + SkillRAE (2605.10114) + GraphFlow (2605.14968) → ccc brief. **OSINT: 6 new pages** (3 sources + 3 concepts). **5 updated.** **Briefs:** `2026-05-23_k59-foresightflow-ils-pm-surveillance-cemini.md` → prod; local + librarian adoption briefs. **Cross-wiki:** `ccc-wiki/briefs/2026-05-23_k59-skillrae-graphflow-from-osint.md` — **user session needed** to expand stubs to ccc pages. **No egress adoption.** Inbox empty after librarian SCP.

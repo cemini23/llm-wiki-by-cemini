@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-05-23] ingest | cemini-handoff (prod → librarian → OSINT)
+
+**Source:** `cemini-librarian:/opt/cemini-bulk/research/cemini-handoff/` (copied from cemini-prod).
+
+**Created:** `concepts/laptop-prod-research-split.md`, `sources/cemini-laptop-prod-research-handoff-2026-05-23.md`.
+
+**Updated:** `flox.md`, `arcticdb.md`, `shiyu-coder-kronos.md` (Step 109 A/B **REJECT**), `librarian-server-architecture.md` (prod SSH via `10.0.0.2`).
+
+**Local briefs (gitignored):** `briefs/2026-05-23_laptop-vs-prod-research-handoff.md`, `kronos-ab-test-results.md`, `step189_arcticdb_benchmark_live.json`.
+
+**Key ops:** FLOX Step 197 = **laptop only**; Kronos A/B = **prod** (reject); ArcticDB benchmark = **librarian**; no egress changes.
+
+---
+
 ## [2026-05-23] ingest K59-2 | ForesightFlow population-scale ILSdl (2605.00459)
 
 **Inbox cleared:**

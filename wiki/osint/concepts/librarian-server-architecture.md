@@ -32,10 +32,12 @@ related:
   - entities/infrastructure/cemini-egress-fi.md
   - concepts/cemini-ai-assistant.md
   - sources/arxiv-inference-scaling-llms-2605.19775.md
+  - concepts/laptop-prod-research-split.md
+  - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-05-19
+updated: 2026-05-23
 ---
 
 ## Relations
@@ -226,6 +228,7 @@ Run llm-wiki-compiler on the laptop with Path A (Claude Code zero-config Anthrop
 - ✅ **Read-only allowlist** `[DONE 2026-04-29 — Phase 3.5]`: patched `/opt/kb-server/src/mcp.js` and `/opt/kb-server/src/mcp-http.js` to honor `KB_TOOL_ALLOWLIST` env var. Allowlist set to `kb_search,kb_search_smart,kb_context,kb_read,kb_list,kb_vault_status,kb_safety_check` (7 read-only tools). Verified via stdio MCP `tools/list` — write tools (`kb_write`, `kb_ingest`, `kb_classify`, `kb_promote`, `kb_synthesize`, `kb_capture_*`) blocked. Patch lineage tracked at `cemini-librarian:/opt/cemini-wiki/.llmwiki/PATCHES.md`.
 - ✅ **Sync automation** `[DONE 2026-04-29 — Phase 3.5]`: `scripts/sync_wiki_to_librarian.sh` does rsync + post-rsync `kb ingest`; macOS crontab entry `0 * * * *` runs it hourly. Logs to `~/Library/Logs/cemini-wiki-sync.log`. Tested manually; rsync + kb ingest both green.
 - ✅ **Private-network bind** `[DONE 2026-04-29 — Phase 3.5e]`: cemini-prod attached to cemini-private at `10.0.0.3`; librarian at `10.0.0.2`. Patched `/opt/kb-server/src/server.js` to honor `KB_HOST` env var (defaults to `0.0.0.0` when unset; current setting `KB_HOST=10.0.0.2`). kb-server now listens on `10.0.0.2:3838` only — verified `ss -tlnp` shows the explicit bind, public IP `:3838` connection refused, localhost `:3838` connection refused, only the private-network IP answers. cemini-prod fetches `http://10.0.0.2:3838/` in **6.2ms** (sub-millisecond intra-DC latency as designed). Three-layer defense-in-depth: Hetzner Cloud Firewall (network) + explicit bind (process) + KB_TOOL_ALLOWLIST (application).
+- ✅ **Prod → librarian SSH (2026-05-23)** `[CONFIRMED]`: From **inside** cemini-prod, `ssh cemini-librarian` via public ProxyJump looped/failed. **Use private net:** `ssh cemini-librarian-internal`, `ssh root@10.0.0.2`, or `./scripts/ssh_librarian.sh` on prod. Laptop unchanged: `ssh cemini-librarian` (ProxyJump). Handoff bundle for OSINT agents: `cemini-librarian:/opt/cemini-bulk/research/cemini-handoff/` — see @concepts/laptop-prod-research-split.md.
 - ✅ **DeepSeek API key** provisioned at `/etc/llmwiki/env` (separately env-managed; configured for llmwiki — kb-server uses local Xenova embeddings instead, no DeepSeek dependency for serving).
 
 **Effort**: ~5 hours total (Phase 3 + Phase 3.5; both landed 2026-04-29)

@@ -17,10 +17,12 @@ related:
   - concepts/quant-finance.md
   - entities/infrastructure/deepseek-api.md
   - concepts/high-signal-paper-patterns.md
+  - concepts/laptop-prod-research-split.md
+  - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
 maturity: validated
 read_status: read
 created: 2026-04-30
-updated: 2026-05-17
+updated: 2026-05-23
 ---
 
 ## Relations
@@ -164,3 +166,7 @@ License + IP-sale-readiness disposition: **clean**. MIT is on the clean list; py
 > **Wave 5A Steal-from rationale (URL 3 evaluation excerpt)**:
 >
 > "Steal-from — Extract the continuous-to-discrete OHLCV tokenization architecture and the PyTorch implementation of the KronosTokenizer. Deploying the actual Transformer model into the production execution stack violates the stability and predictability requirements of the trading platform; the authors explicitly state within the repository documentation that the provided fine-tuning pipeline is a 'simplified example and not a production-ready quantitative trading system.'" [Source: Codebase Evaluation for Trading & Wiki 4_30.docx URL 3]
+
+## Prod prompt A/B (Step 109, 2026-05-23)
+
+cemini-prod ran full Kronos vs baseline DeepSeek prompts on `market_ticks_1min` (**10 BTC-USD pairs**; SPY/NVDA/ETH absent last 7d). **Verdict: REJECT** — 0% directional accuracy both arms; ECE 0.05 → 0.21; CI width gate fail. **Do not enable** `<kronos_tokens>` in analyst prompts on this sample. Log: `/opt/cemini/logs/kronos_ab_full.log`. Confirms steal-from-tokenizer-only posture; full model/prompt injection not validated. [Source: cemini-handoff/2026-05-23_kronos-ab-test-results.md] [CONFIRMED 2026-05-23]

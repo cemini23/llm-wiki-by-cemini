@@ -6,9 +6,11 @@ keywords: [flox, flox-foundation, trading-system-framework, polyglot-strategies]
 related:
   - sources/tool-eval-70urls-k57-2026-05-22.md
   - concepts/polymarket-bot-architecture.md
+  - concepts/laptop-prod-research-split.md
+  - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
 maturity: validated
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-23
 ---
 
 ## Relations
@@ -38,6 +40,10 @@ K57 multi-wiki tool eval URL 10 — `FLOX-Foundation/flox`. Modular framework fo
 | G5 IP-sale | **PASS** |
 
 **Verdict: CONDITIONAL-GO** — reference Polymarket connector + backtest path only; no prod execution swap without benchmark.
+
+### Step 197 — where to build (2026-05-23 prod handoff)
+
+**Run on laptop/dev host only** — cemini-prod lacks cmake and is RAM-tight (~7 GB). Phase 1 = `cmake -DFLOX_BUILD_CONNECTORS=ON` connector build + latency benchmark; **not** a Kronos-style A/B. See @concepts/laptop-prod-research-split.md.
 
 ## Snippets
 
