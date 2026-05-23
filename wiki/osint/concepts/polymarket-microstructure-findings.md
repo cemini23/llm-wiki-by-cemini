@@ -16,6 +16,8 @@ related:
   - sources/arxiv-coordination-layer-multi-agent-2605-03310.md
   - sources/arxiv-polymarket-fill-side-2605-11640.md
   - sources/polymarket-insider-trading-crackdown-2026-05.md
+  - sources/arxiv-foresightflow-ils-polymarket-2605.00493.md
+  - concepts/prediction-market-information-leakage-score.md
   - entities/tools/polymarket-insider-tracker.md
   - concepts/polymarket-lp-bot-phase0-spec.md
 

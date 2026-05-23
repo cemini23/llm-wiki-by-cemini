@@ -10,6 +10,10 @@ related:
   - sources/agentic-harness-engineering.md
   - concepts/cemini-ai-assistant.md
   - sources/arxiv-grep-agent-harness-2605-15184.md
+  - sources/arxiv-skillrae-agent-skills-2605.10114.md
+  - sources/arxiv-graphflow-verifiable-workflows-2605.14968.md
+  - concepts/skillrae-retrieval-augmented-execution.md
+  - concepts/graphflow-verifiable-agent-workflows.md
 
 maturity: validated
 read_status: skimmed

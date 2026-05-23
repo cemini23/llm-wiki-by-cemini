@@ -10,6 +10,7 @@ related:
   - concepts/prediction-market-historical-analysis.md
   - concepts/polymarket-microstructure-findings.md
   - sources/polymarket-nba-arbitrage-2605.00864.md
+  - sources/arxiv-foresightflow-ils-polymarket-2605.00493.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - sources/polymarket-predictions-mcp.md
   - sources/polymarket-5-5-tool-eval.md

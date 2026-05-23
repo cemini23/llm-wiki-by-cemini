@@ -11,6 +11,8 @@ related:
   - sources/sentrux-ast-sensor.md
   - concepts/llm-agent-systems.md
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
+  - sources/arxiv-graphflow-verifiable-workflows-2605.14968.md
+  - concepts/graphflow-verifiable-agent-workflows.md
   - concepts/code-as-agent-harness.md
   - sources/arxiv-self-healing-llm-agents-2605.06737.md
   - entities/infrastructure/deepseek-api.md

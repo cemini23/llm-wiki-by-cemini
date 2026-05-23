@@ -1,5 +1,32 @@
 # Wiki Log
 
+## [2026-05-23] ingest K59 | Tier-2 arXiv sweep — ForesightFlow ILS + SkillRAE + GraphFlow
+
+**Sweep:** `wiki/sweeps/2026-05-23.md` (rubric scored; 3 papers ingested).
+
+**Inbox cleared:**
+- `2605.00493.pdf` → `cemini-librarian:/opt/cemini-bulk/research/2605.00493_foresightflow-ils-polymarket.pdf`
+- `2605.10114.pdf` → `2605.10114_skillrae-agent-skills.pdf`
+- `2605.14968.pdf` → `2605.14968_graphflow-verifiable-workflows.pdf`
+
+**Created (3 sources / 3 concepts):**
+- `sources/arxiv-foresightflow-ils-polymarket-2605.00493.md`
+- `sources/arxiv-skillrae-agent-skills-2605.10114.md`
+- `sources/arxiv-graphflow-verifiable-workflows-2605.14968.md`
+- `concepts/prediction-market-information-leakage-score.md`
+- `concepts/skillrae-retrieval-augmented-execution.md`
+- `concepts/graphflow-verifiable-agent-workflows.md`
+
+**Updated (5):** `polymarket-microstructure-findings.md`, `polymarket-copy-trading-strategy.md`, `code-as-agent-harness.md`, `llm-agent-systems.md`, `polymarket-insider-tracker.md`, `index.md`.
+
+**Cross-wiki:** `ccc-wiki/briefs/2026-05-23_k59-skillrae-graphflow-from-osint.md` (on disk; expand to pages in ccc session).
+
+**cemini-prod brief:** `briefs/2026-05-23_k59-foresightflow-ils-pm-surveillance-cemini.md` (+ local/librarian adoption briefs).
+
+**Adoptions:** laptop none; librarian wiki sync; egress-fi none.
+
+---
+
 ## [2026-05-23] ingest K58 | Two Sigma GMM regime modeling Street View (2021)
 
 **Inbox cleared:**

@@ -10,6 +10,8 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/polymarket-microstructure-findings.md
+  - concepts/prediction-market-information-leakage-score.md
+  - sources/arxiv-foresightflow-ils-polymarket-2605.00493.md
   - concepts/non-latency-arbitrage-strategies.md
   - entities/tools/pretracer.md
   - entities/tools/kreopolybot.md

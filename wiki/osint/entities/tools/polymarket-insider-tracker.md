@@ -8,9 +8,11 @@ related:
   - entities/tools/polyterm.md
   - entities/tools/arkham-intelligence.md
   - concepts/polymarket-microstructure-findings.md
+  - concepts/prediction-market-information-leakage-score.md
+  - sources/arxiv-foresightflow-ils-polymarket-2605.00493.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-05-23
 phase_0_verdict: NO-GO 2026-05-16 — no LICENSE file in repo; GitHub reports licenseInfo=null. Code is substantive (real DBSCAN + funding-chain), but absent an explicit license the default is all-rights-reserved — incompatible with the IP-sale-bound proprietary stack. Re-audit only if upstream adds an OSI license file.
 ---
 

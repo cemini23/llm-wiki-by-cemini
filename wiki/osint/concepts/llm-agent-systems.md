@@ -14,6 +14,10 @@ related:
   - sources/piebald-claude-code-system-prompts.md
   - sources/shiyu-coder-kronos.md
   - sources/3-10-live-trading-research.md
+  - sources/arxiv-skillrae-agent-skills-2605.10114.md
+  - sources/arxiv-graphflow-verifiable-workflows-2605.14968.md
+  - concepts/skillrae-retrieval-augmented-execution.md
+  - concepts/graphflow-verifiable-agent-workflows.md
   - sources/3-17-agent-research.md
   - sources/3-19-automated-trading-strategy-discovery-pipeline-research.md
   - sources/3-26-d.md

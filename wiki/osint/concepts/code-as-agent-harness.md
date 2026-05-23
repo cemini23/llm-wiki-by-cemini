@@ -10,10 +10,14 @@ related:
   - concepts/cemini-ai-assistant.md
   - sources/arxiv-self-healing-llm-agents-2605.06737.md
   - sources/arxiv-grep-agent-harness-2605-15184.md
+  - sources/arxiv-skillrae-agent-skills-2605.10114.md
+  - sources/arxiv-graphflow-verifiable-workflows-2605.14968.md
+  - concepts/skillrae-retrieval-augmented-execution.md
+  - concepts/graphflow-verifiable-agent-workflows.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-23
 ---
 
 ## Relations

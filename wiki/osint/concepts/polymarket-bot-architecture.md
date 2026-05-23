@@ -19,6 +19,8 @@ related:
   - concepts/polymarket-api-reference.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - entities/tools/polymarket-websocket-api.md
+  - concepts/prediction-market-information-leakage-score.md
+  - sources/arxiv-foresightflow-ils-polymarket-2605.00493.md
   - entities/tools/discountifu-polymarket-trading-bot.md
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md

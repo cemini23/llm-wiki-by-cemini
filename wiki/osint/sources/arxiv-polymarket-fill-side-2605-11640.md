@@ -5,10 +5,12 @@ tags: [source, arxiv, polymarket, microstructure, prediction-markets, trader-tie
 keywords: [polymarket, fill-side-analysis, non-retail-trading, whale-tier, behavioral-tiers, quote-attribution, orderfilled-events, nechepurenko]
 related:
   - concepts/polymarket-microstructure-findings.md
+  - concepts/prediction-market-information-leakage-score.md
+  - sources/arxiv-foresightflow-ils-polymarket-2605.00493.md
 maturity: validated
 read_status: skimmed
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-05-23
 ---
 
 ## Relations
