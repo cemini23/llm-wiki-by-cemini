@@ -6,8 +6,10 @@ Wants=network-online.target
 [Service]
 Type=simple
 User=root
+WorkingDirectory=/opt/cemini-bulk/Cemini-Financial-Suite
+Environment=PYTHONPATH=/opt/cemini-bulk/Cemini-Financial-Suite
 EnvironmentFile=-/opt/cemini-bulk/.flox_phase2.env
-ExecStart=/opt/cemini-bulk/.venv/bin/python3 /opt/cemini-bulk/scripts/flox_phase2_ws_publish.py
+ExecStart=/opt/cemini-bulk/.venv/bin/python3 /opt/cemini-bulk/Cemini-Financial-Suite/scripts/flox_phase2_ws_publish.py
 Restart=always
 RestartSec=5
 StandardOutput=append:/var/log/flox-phase2-ws.log

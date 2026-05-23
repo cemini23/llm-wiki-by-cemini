@@ -23,26 +23,31 @@ cd /opt/cemini && docker compose --env-file .env \
   -f docker-compose.yml -f docker/compose.flox-phase2.override.yml \
   up -d --force-recreate redis'
 
-echo "==> Librarian: install script + venv deps"
-ssh "$LIBRARIAN" "mkdir -p /opt/cemini-bulk/scripts"
-scp "$SCRIPT_DIR/flox_phase2_ws_publish.py" \
-  "$LIBRARIAN:/opt/cemini-bulk/scripts/flox_phase2_ws_publish.py"
+echo "==> Librarian: clone/pull Cemini-Financial-Suite + systemd"
+ssh "$LIBRARIAN" bash -s <<REMOTE
+set -euo pipefail
+REPO=/opt/cemini-bulk/Cemini-Financial-Suite
+if [[ ! -d "\$REPO/.git" ]]; then
+  git clone --depth 1 https://github.com/cemini23/Cemini-Financial-Suite.git "\$REPO"
+else
+  git -C "\$REPO" pull
+fi
+/opt/cemini-bulk/.venv/bin/pip install -q redis websockets httpx pydantic requests aiohttp
+cat > /opt/cemini-bulk/.flox_phase2.env <<EOF
+REDIS_HOST=10.0.0.3
+REDIS_PORT=6379
+REDIS_PASSWORD=${REDIS_PASSWORD}
+FLOX_PM_REDIS_TTL=120
+FLOX_PM_PUBLISH_INTERVAL=5
+FLOX_PM_SUBSCRIBE_REFRESH_SEC=300
+EOF
+chmod 600 /opt/cemini-bulk/.flox_phase2.env
+REMOTE
 scp "$SCRIPT_DIR/flox_phase2_librarian.service" \
   "$LIBRARIAN:/etc/systemd/system/flox-phase2-ws.service"
 
 ssh "$LIBRARIAN" bash -s <<REMOTE
 set -euo pipefail
-/opt/cemini-bulk/.venv/bin/pip install -q redis websockets
-cat > /opt/cemini-bulk/.flox_phase2.env <<EOF
-REDIS_HOST=10.0.0.3
-REDIS_PORT=6379
-REDIS_PASSWORD=${REDIS_PASSWORD}
-FLOX_PM_MARKET_COUNT=8
-FLOX_PM_REDIS_TTL=120
-FLOX_PM_PUBLISH_INTERVAL_SEC=1.0
-EOF
-chmod 600 /opt/cemini-bulk/.flox_phase2.env
-chmod +x /opt/cemini-bulk/scripts/flox_phase2_ws_publish.py
 systemctl daemon-reload
 systemctl enable --now flox-phase2-ws.service
 sleep 3
