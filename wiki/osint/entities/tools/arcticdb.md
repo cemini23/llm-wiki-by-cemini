@@ -72,7 +72,22 @@ This completes the Phase-0 "does the wheel install and run on the actual Hetzner
 
 On librarian against `s&p500 data kaggle/all_stocks_5yr.csv` (200k rows): pandas read 0.112s / tail-1000 **0.109s** vs ArcticDB read-all 0.014s / tail-1000 **0.011s**; write 0.153s. Artifact: `briefs/step189_arcticdb_benchmark_live.json` (prod + handoff bundle). **Verdict:** strong case for Arctic on repeated tail/range queries; full `market-dataset/` migration still operator-gated. See @concepts/laptop-prod-research-split.md.
 
-**What is intentionally NOT done**: migrating the real market-dataset (`Data/ETFs/Stocks/s&p500`) into ArcticDB. That migration — plus the throughput benchmark against the current Parquet/CSV handling, and wiring the cemini-prod trading bot to read from ArcticDB — is an operator-gated step, flagged in the K53 `cemini-prod` brief. The library being installed and proven means that migration is now a pure data/wiring task with no remaining unknowns about ArcticDB itself.
+### Market-dataset migration (2026-05-23) `[CONFIRMED]`
+
+**Done on cemini-librarian:**
+
+| Item | Value |
+|------|-------|
+| URI | `lmdb:///opt/cemini-bulk/arctic-market-dataset` |
+| Library | `equity_bars` |
+| Symbols | **8,507** unique tickers |
+| Rows | **~17.45M** |
+| On-disk store | **~536 MB** (raw tree ~1.6 GB retained as fallback) |
+| Script | `scripts/migrate_market_dataset_to_arcticdb.py` |
+
+~51 empty `.us.txt` stubs skipped; duplicate paths deduped by symbol. **Prod stack not rewired** — cemini-prod still uses prior paths until server-Claude brief.
+
+**What remains**: wire backtest/research consumers on prod to Arctic URI; optional S3-backed store for multi-host access.
 
 ## Snippets
 

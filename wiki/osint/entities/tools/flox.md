@@ -41,9 +41,14 @@ K57 multi-wiki tool eval URL 10 — `FLOX-Foundation/flox`. Modular framework fo
 
 **Verdict: CONDITIONAL-GO** — reference Polymarket connector + backtest path only; no prod execution swap without benchmark.
 
-### Step 197 — where to build (2026-05-23 prod handoff)
+### Step 197 — Phase 1 build (2026-05-23)
 
-**Run on laptop/dev host only** — cemini-prod lacks cmake and is RAM-tight (~7 GB). Phase 1 = `cmake -DFLOX_BUILD_CONNECTORS=ON` connector build + latency benchmark; **not** a Kronos-style A/B. See @concepts/laptop-prod-research-split.md.
+| Host | Result |
+|------|--------|
+| **macOS laptop** | cmake **FAIL** — no OpenSSL dev headers (LibreSSL-only) |
+| **cemini-librarian** | **PASS** — `libflox-connectors.a` built with **polymarket** connector (executor OFF) |
+
+Phase 1 = compile verification only; **latency benchmark not run**. macOS needs Homebrew `openssl@3` or Linux VM for native laptop build. Brief: `briefs/2026-05-23_flox-phase1-build-results.md`. See @concepts/laptop-prod-research-split.md.
 
 ## Snippets
 

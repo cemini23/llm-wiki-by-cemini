@@ -10,6 +10,8 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-23 — K46–K59)
 
+- **FLOX + ArcticDB ops (2026-05-23)** — FLOX Phase 1 **compile PASS** on librarian (`libflox-connectors.a`, Polymarket connector in build); Mac blocked (OpenSSL). **market-dataset → ArcticDB** migrated: `lmdb:///opt/cemini-bulk/arctic-market-dataset` / `equity_bars`, **8,507** symbols, ~536 MB; CSV tree kept as fallback. **Prod not rewired** — briefs on `cemini-prod:/opt/cemini/briefs/`. Scripts: `migrate_market_dataset_to_arcticdb.py`.
+
 - **Prod handoff ingested (2026-05-23)** — `cemini-librarian:/opt/cemini-bulk/research/cemini-handoff/`. OSINT wiki: `laptop-prod-research-split` concept + handoff source. **Kronos prompt A/B on prod: REJECT** (do not enable token block). **ArcticDB live benchmark:** tail-1000 0.011s vs pandas 0.109s. **FLOX Step 197:** laptop/cmake only. **Prod→librarian SSH:** use `10.0.0.2` from prod.
 
 - **K59-2 ingest (2026-05-23)** — companion **arXiv:2605.00459** (ILSdl population scale, 12,708 markets). **1 new source**; **4 updated** (ILS concept + ForesightFlow source + microstructure + insider-tracker). **Brief:** `2026-05-23_k59-2-ils-population-scope-discovery-cemini.md` → prod. **Posture:** market-level ILS not prod-ready (~12 interpretable markets); wallet-level surveillance remains primary. Librarian PDF + wiki sync.

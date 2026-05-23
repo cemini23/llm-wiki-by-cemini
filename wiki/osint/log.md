@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-23] ops | FLOX Phase 1 build + ArcticDB market-dataset migration
+
+**FLOX (Step 197):** `libflox-connectors.a` built on **cemini-librarian** (polymarket connector in tree; executor OFF). macOS laptop: cmake failed (OpenSSL dev). Brief: `briefs/2026-05-23_flox-phase1-build-results.md`.
+
+**ArcticDB:** Migrated `/opt/cemini-bulk/market-dataset/` → `lmdb:///opt/cemini-bulk/arctic-market-dataset` / `equity_bars` — **8,507 symbols**, ~17.45M rows, ~536 MB store. Script: `scripts/migrate_market_dataset_to_arcticdb.py`. Brief: `briefs/2026-05-23_market-dataset-arctic-migration.md`. Raw CSV tree retained.
+
+**Prod:** briefs staged for server-Claude (Arctic wiring + FLOX spike only — no auto prod code change from OSINT).
+
+---
+
 ## [2026-05-23] ingest | cemini-handoff (prod → librarian → OSINT)
 
 **Source:** `cemini-librarian:/opt/cemini-bulk/research/cemini-handoff/` (copied from cemini-prod).

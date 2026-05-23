@@ -60,6 +60,13 @@ From **laptop**: `ssh cemini-librarian` (ProxyJump via prod public IP) — uncha
 
 200k rows from S&P500 Kaggle CSV: tail-1000 **0.109s pandas vs 0.011s ArcticDB**. Migration remains operator-gated; supports adopt case for repeated tail/range queries on `market-dataset/`.
 
+### Completed 2026-05-23 (this session)
+
+| Step | Outcome |
+|------|---------|
+| **197 FLOX** | Compile **PASS** on librarian (`libflox-connectors.a`); Mac cmake blocked on OpenSSL |
+| **189 ArcticDB** | **Migrated** `market-dataset` → `lmdb:///opt/cemini-bulk/arctic-market-dataset` (`equity_bars`, 8,507 symbols) |
+
 ### Pickup path
 
 Canonical files: `cemini-librarian:/opt/cemini-bulk/research/cemini-handoff/` (also copied to local `briefs/` for agents).
