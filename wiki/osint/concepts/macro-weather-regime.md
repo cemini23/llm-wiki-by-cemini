@@ -17,9 +17,11 @@ related:
   - concepts/carry-trade.md
   - concepts/polymarket-weather-trading-strategy.md
   - concepts/markov-regime-switching-models.md
+  - concepts/gmm-factor-lens-regime-modeling.md
+  - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-16
+updated: 2026-05-23
 ---
 
 ## Relations
@@ -36,6 +38,8 @@ updated: 2026-05-16
 - @entities/platforms/kalshi.md
 - @concepts/carry-trade.md — carry trade sizing is gated by Macro Weather regime: disabled in RED, half-sized in YELLOW, full-sized in GREEN.
 - @concepts/markov-regime-switching-models.md — sibling regime concept: Markov/HMM detects the regime statistically; Macro Weather is the macro-state framing
+- @concepts/gmm-factor-lens-regime-modeling.md — K58 reference taxonomy (Crisis / Steady State / Inflation / WOI); not wired to prod Macro Weather without validation
+- @sources/two-sigma-gmm-regime-modeling-street-view-2021.md — K58 source
 
 ## Raw Concept
 

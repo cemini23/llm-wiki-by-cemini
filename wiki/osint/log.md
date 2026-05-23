@@ -1,5 +1,24 @@
 # Wiki Log
 
+## [2026-05-23] ingest K58 | Two Sigma GMM regime modeling Street View (2021)
+
+**Inbox cleared:**
+- `research to be indexed/Machine-Learning-Approach-to-Regime-Modeling_.pdf` → `cemini-librarian:/opt/cemini-bulk/research/two-sigma-gmm-regime-modeling-2021.pdf`
+
+**Created (1 source / 1 concept):**
+- `sources/two-sigma-gmm-regime-modeling-street-view-2021.md` — Alex Botte & Doris Bao; GMM on 17-factor U.S. Factor Lens; four labeled conditions (Crisis, Steady State, Inflation, WOI); allocator stress-test framing; explicitly not predictive.
+- `concepts/gmm-factor-lens-regime-modeling.md` — method hub + GMM vs Markov/HMM comparison table.
+
+**Updated (6):** `markov-regime-switching-models.md`, `regime-conditioned-evaluation.md`, `quant-finance.md`, `macro-weather-regime.md`, `lob-regime-detection-hiremath-2026.md`, `hedge-fund-open-source-tooling.md`, `index.md`.
+
+**Cross-wiki:** none (OSINT quant only).
+
+**cemini-prod brief:** `briefs/2026-05-23_k58-gmm-regime-stress-test-reference-cemini.md` (reference-only; no code adoption).
+
+**Lint:** pending post-commit.
+
+---
+
 ## [2026-05-22] ingest K57 | Posts.docx (7 posts) + Tool Eval (35 URLs) + BowTied Bull newsletter
 
 **Inbox cleared** (3 docx → librarian):

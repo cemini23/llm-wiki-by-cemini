@@ -8,9 +8,11 @@ related:
   - entities/tools/arcticdb.md
   - concepts/quant-finance.md
   - concepts/cemini-license-posture.md
+  - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
+  - concepts/gmm-factor-lens-regime-modeling.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-23
 ---
 
 ## Relations
@@ -19,6 +21,8 @@ updated: 2026-05-18
 - @entities/tools/arcticdb.md — the one Cemini-relevant adoption candidate from the list, broken out to its own entity page
 - @concepts/quant-finance.md — corpus-index home for quant tooling
 - @concepts/cemini-license-posture.md — the open/closed split and ArcticDB's BSL exception are license-posture data points
+- @sources/two-sigma-gmm-regime-modeling-street-view-2021.md — K58 Two Sigma allocator research (not open-source code; institutional methodology)
+- @concepts/gmm-factor-lens-regime-modeling.md — K58 synthesis
 
 ## Raw Concept
 

@@ -110,15 +110,19 @@ related:
   - entities/people/jim-simons.md
   - entities/people/zura-kakushadze.md
   - sources/ssrn-5140015-time-series-quant-finance-2025.md
+  - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
+  - concepts/gmm-factor-lens-regime-modeling.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-20
+updated: 2026-05-23
 ---
 
 ## Relations
 
 - @sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md — K49 trading-posts ingest (Markov regime models + AI workflow + Polymarket bots)
 - @concepts/markov-regime-switching-models.md — K49 concept: Markov/HMM regime-switching for trading
+- @concepts/gmm-factor-lens-regime-modeling.md — K58: Two Sigma GMM factor-lens regime clusters (stress-test taxonomy)
+- @sources/two-sigma-gmm-regime-modeling-street-view-2021.md — K58 source
 - @concepts/ai-assisted-trading-workflow.md — K49 concept: AI-assisted discretionary trading workflow
 - @sources/3-10-agent-orchestration-research-audit.md — Quantitative Finance source in the Cemini research corpus
 - @sources/3-10-cryptographic-research.md — Quantitative Finance source in the Cemini research corpus

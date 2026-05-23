@@ -15,9 +15,11 @@ related:
   - entities/people/rohonchain.md
   - concepts/event-based-prediction-market-ml.md
   - sources/ssrn-5140015-time-series-quant-finance-2025.md
+  - concepts/gmm-factor-lens-regime-modeling.md
+  - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-20
+updated: 2026-05-23
 ---
 
 ## Relations
@@ -29,6 +31,8 @@ updated: 2026-05-20
 - @concepts/prediction-market-statistical-arbitrage.md — K52: its cross-venue predictive signal uses a rolling Markov transition matrix (the same transition-matrix machinery this page documents)
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — K55 Post 1 (@RohOnChain time-series) is the companion piece this Markov page was originally designed to compose with
 - @concepts/time-series-arima-garch-framework.md — K55: the ARIMA/GARCH framework explicitly closes with a Markov × GARCH agreement/disagreement multi-model orchestration prompt — adopted as a Cemini-wide pattern
+- @concepts/gmm-factor-lens-regime-modeling.md — K58: Two Sigma GMM on factor panel (cross-sectional clusters) vs this page’s temporal Markov/HMM machinery
+- @sources/two-sigma-gmm-regime-modeling-street-view-2021.md — K58 primary source for GMM approach
 
 ## Raw Concept
 

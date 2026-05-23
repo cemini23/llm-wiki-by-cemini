@@ -11,10 +11,12 @@ related:
   - sources/black-scholes-iv-explicit-schadner-2026.md
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
+  - concepts/gmm-factor-lens-regime-modeling.md
+  - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
 maturity: validated
 read_status: read
 created: 2026-04-29
-updated: 2026-04-29
+updated: 2026-05-23
 ---
 
 ## Relations
@@ -23,6 +25,8 @@ updated: 2026-04-29
 - @concepts/quant-finance.md — secondary cluster: the formal-identifiability-plus-empirical-validation framing matches the BSIV / PTA pattern of "math-grounded quant breakthrough with reproducible code".
 - @concepts/high-signal-paper-patterns.md — Workflow A find: this is the paper that surfaced through the first Tier-2 sweep (2026-04-29) and validated the rubric. Refutation premium ("standard early-warning signals are inherently reactive" → wrong, latent build-up gives positive lead-time); empirical results (lead-time +18.6 ± 3.2 timesteps simulation, +38 ± 21 seconds BTC/USDT real-data); permissive license + code release.
 - @sources/black-scholes-iv-explicit-schadner-2026.md — peer Cemini-quant-paper-adoption candidate; same "laptop-side reproduction → brief to cemini-prod" pattern; both refute a widely-held belief in their respective domains.
+- @concepts/gmm-factor-lens-regime-modeling.md — K58 macro factor GMM regimes (orthogonal timescale to LOB microstructure lead-time)
+- @sources/two-sigma-gmm-regime-modeling-street-view-2021.md — K58 source
 - @sources/pta-metric-anchoring-ssrn-4549819.md — peer cross-sectional-market-anomaly paper; both surfaced via the workspace's recent-quant-paper discovery flows.
 
 ## Raw Concept
