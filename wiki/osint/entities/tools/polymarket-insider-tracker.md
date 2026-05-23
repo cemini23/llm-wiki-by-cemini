@@ -10,6 +10,7 @@ related:
   - concepts/polymarket-microstructure-findings.md
   - concepts/prediction-market-information-leakage-score.md
   - sources/arxiv-foresightflow-ils-polymarket-2605.00493.md
+  - sources/arxiv-polymarket-ils-population-scale-2605.00459.md
 maturity: draft
 created: 2026-05-16
 updated: 2026-05-23

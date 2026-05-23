@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-05-23] ingest K59-2 | ForesightFlow population-scale ILSdl (2605.00459)
+
+**Inbox cleared:**
+- `2605.00459.pdf` → `cemini-librarian:/opt/cemini-bulk/research/2605.00459_polymarket-ils-population-scale.pdf`
+
+**Created (1 source):**
+- `sources/arxiv-polymarket-ils-population-scale-2605.00459.md`
+
+**Updated (4):** `prediction-market-information-leakage-score.md`, `arxiv-foresightflow-ils-polymarket-2605.00493.md`, `polymarket-microstructure-findings.md`, `polymarket-insider-tracker.md`, `index.md`.
+
+**cemini-prod brief:** `briefs/2026-05-23_k59-2-ils-population-scope-discovery-cemini.md`
+
+**Adoptions:** none (laptop/librarian sync only). **Cross-wiki:** none.
+
+---
+
 ## [2026-05-23] ingest K59 | Tier-2 arXiv sweep — ForesightFlow ILS + SkillRAE + GraphFlow
 
 **Sweep:** `wiki/sweeps/2026-05-23.md` (rubric scored; 3 papers ingested).

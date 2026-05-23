@@ -11,6 +11,7 @@ related:
   - sources/arxiv-polymarket-fill-side-2605-11640.md
   - sources/polymarket-microstructure-anatomy-2604.24366.md
   - entities/tools/polymarket-insider-tracker.md
+  - sources/arxiv-polymarket-ils-population-scale-2605.00459.md
 maturity: draft
 created: 2026-05-23
 updated: 2026-05-23
@@ -26,6 +27,7 @@ read_status: read
 - @sources/arxiv-polymarket-fill-side-2605-11640.md — empirical non-retail flow tiers
 - @sources/polymarket-microstructure-anatomy-2604.24366.md — LOB anatomy baseline
 - @entities/tools/polymarket-insider-tracker.md — commercial post-hoc trackers vs forward ILS
+- @sources/arxiv-polymarket-ils-population-scale-2605.00459.md — K59-2 population evaluation (ILSdl scope discovery)
 
 ## Raw Concept
 
@@ -46,7 +48,7 @@ Methodological paper + open artifacts for **quantifying informed flow** on Polym
 
 **Microstructure layer:** adapts PIN, VPIN, Kyle λ to discrete binary CLOB; adds **wallet-novelty** composite (age, participation, funding concentration, entry timing). Category priors focus monitoring on military/geopolitical, corporate disclosure, regulatory markets; sports/weather/elections as controls.
 
-**FFIC inventory:** eight public suspected-insider episodes (CC-BY-4.0); code at github.com/ForesightFlow. Companion population paper cited (2605.00459) for large-scale audit — not ingested this batch.
+**FFIC inventory:** eight public suspected-insider episodes (CC-BY-4.0); code at github.com/ForesightFlow. Population evaluation: @sources/arxiv-polymarket-ils-population-scale-2605.00459.md (1/32 FFIC markets in-scope at scale).
 
 **Cemini posture [TENTATIVE]:** reference methodology for **pre-resolution surveillance** and research briefs; not wired to prod without label pipeline + news timestamp QA. Pairs with @concepts/regime-conditioned-evaluation.md discipline when backtesting “edge” from early movers.
 

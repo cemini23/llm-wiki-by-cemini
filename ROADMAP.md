@@ -10,6 +10,8 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-23 — K46–K59)
 
+- **K59-2 ingest (2026-05-23)** — companion **arXiv:2605.00459** (ILSdl population scale, 12,708 markets). **1 new source**; **4 updated** (ILS concept + ForesightFlow source + microstructure + insider-tracker). **Brief:** `2026-05-23_k59-2-ils-population-scope-discovery-cemini.md` → prod. **Posture:** market-level ILS not prod-ready (~12 interpretable markets); wallet-level surveillance remains primary. Librarian PDF + wiki sync.
+
 - **K59 ingest (2026-05-23)** — Tier-2 arXiv sweep `wiki/sweeps/2026-05-23.md`. **3 papers:** ForesightFlow ILS (2605.00493, Tier-A OSINT) + SkillRAE (2605.10114) + GraphFlow (2605.14968) → ccc brief. **OSINT: 6 new pages** (3 sources + 3 concepts). **5 updated.** **Briefs:** `2026-05-23_k59-foresightflow-ils-pm-surveillance-cemini.md` → prod; local + librarian adoption briefs. **Cross-wiki:** `ccc-wiki/briefs/2026-05-23_k59-skillrae-graphflow-from-osint.md` — **user session needed** to expand stubs to ccc pages. **No egress adoption.** Inbox empty after librarian SCP.
 
 - **K58 ingest (2026-05-23)** — `Machine-Learning-Approach-to-Regime-Modeling_.pdf` (Two Sigma Street View 2021, Botte & Bao). **GMM** on 17-factor U.S. Factor Lens → **Crisis / Steady State / Inflation / WOI**; stress-test + allocation framing; **not predictive**. **OSINT: 2 new pages** (1 source + 1 concept). **6 updated** (Markov regime, regime-conditioned eval, quant-finance, macro-weather, LOB regime source, hedge-fund OSS). **Brief:** `2026-05-23_k58-gmm-regime-stress-test-reference-cemini.md` (skill_audit PASS). Inbox empty.

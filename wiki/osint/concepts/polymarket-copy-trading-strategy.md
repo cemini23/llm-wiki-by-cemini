@@ -12,6 +12,7 @@ related:
   - concepts/polymarket-microstructure-findings.md
   - concepts/prediction-market-information-leakage-score.md
   - sources/arxiv-foresightflow-ils-polymarket-2605.00493.md
+  - sources/arxiv-polymarket-ils-population-scale-2605.00459.md
   - concepts/non-latency-arbitrage-strategies.md
   - entities/tools/pretracer.md
   - entities/tools/kreopolybot.md
