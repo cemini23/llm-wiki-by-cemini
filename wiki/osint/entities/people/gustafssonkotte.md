@@ -7,6 +7,7 @@ related:
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
+  - concepts/polymarket-btc-already-position-gate.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-updown-bot-taxonomy.md
@@ -14,11 +15,13 @@ related:
   - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-22
+updated: 2026-05-24
 ---
 
 ## Relations
 
+- @sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md — K62 “cheat code” pivot (position-already gate)
+- @concepts/polymarket-btc-already-position-gate.md — K62 synthesized pattern
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — K57 Post 2 (quadrant/blacklist/micro-trend)
 - @concepts/polymarket-three-quadrant-blacklist-microtrend.md — K57 synthesis
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — Post 3 source

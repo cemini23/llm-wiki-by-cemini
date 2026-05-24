@@ -46,6 +46,8 @@ related:
   - entities/tools/trademaster.md
   - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - entities/people/coldmath-polymarket.md
+  - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
+  - concepts/polymarket-btc-already-position-gate.md
 
 maturity: draft
 created: 2026-05-12
@@ -76,6 +78,8 @@ updated: 2026-05-24
 - `@entities/tools/trademaster.md` — K60 Steal-from RL platform; simulator/benchmark patterns for future bot eval (not a Polymarket bot itself)
 - `@sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md` — K61 ColdMath micro-scaling adversary on weather books
 - `@entities/people/coldmath-polymarket.md` — K61 adversary operator
+- `@sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md` — K62 position-already gate (Gustafsson)
+- `@concepts/polymarket-btc-already-position-gate.md` — K62 synthesized pattern
 
 ## Raw Concept
 

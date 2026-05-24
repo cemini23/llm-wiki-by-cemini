@@ -15,9 +15,11 @@ related:
   - concepts/polymarket-lp-rewards-farming.md
   - entities/people/gustafssonkotte.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
+  - concepts/polymarket-btc-already-position-gate.md
+  - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-20
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -31,6 +33,8 @@ updated: 2026-05-20
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — K55 Post 3 (@Gustafssonkotte) describes a Type-3/Type-5 fair-value+imbalance bot on 5-min BTC markets, with explicit multi-module architecture
 - @concepts/multi-module-bot-conflict-detector-pattern.md — K55: structural addition for any taxonomy-type bot — conflict-detector pattern + time-aware sizing for short-resolution markets
 - @concepts/polymarket-three-quadrant-blacklist-microtrend.md — K57: Gustafsson 5-min BTC refinements (blacklist + micro-trend)
+- @concepts/polymarket-btc-already-position-gate.md — K62: direction demoted; position-already first branch
+- @sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md — K62 source
 
 ## Raw Concept
 

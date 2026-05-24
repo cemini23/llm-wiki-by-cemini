@@ -463,6 +463,10 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 
 - [@AlterEgo_eth — ColdMath weather deconstruction (narrow bins + micro-scaling)](sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md) — `[VALIDATED 2026-05-24]` K61. Single X post: >1,200 trades via Parity; 1°C bins; micro-scaling; 1¢ tails; inferred multi-model + METAR. **1 person entity** (ColdMath). Updates weather strategy + Parity + Clawdbot. Prod brief → cemini-prod. — source, trading-posts, coldmath, adversary-model, k61
 
+#### K62 ingest (2026-05-24 — @Gustafssonkotte position-already gate)
+
+- [@Gustafssonkotte — Updating the cheat code (position-already, not direction)](sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md) — `[VALIDATED 2026-05-24]` K62. 330-trade direction ≈49%; new first-branch **already-position** gate + dynamic tape-speed margin; quadrants demoted. **1 concept** + gustafssonkotte update. Prod brief → cemini-prod. — source, trading-posts, btc-updown, gustafssonkotte, k62
+
 #### K60 ingest (2026-05-23 — GitHub Repo Evaluation v4, 20 URLs)
 
 - [GitHub Repo Evaluation for Cemini — 20-URL batch (v4, May 2026)](sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md) — `[VALIDATED 2026-05-23]` K60. 20 URLs / 4 wiki surfaces. Eval: 1 Adopt / 1 Steal-from / 3 Reference / 15 Reject. **After API verification:** KaliGPT Adopt **downgraded** (custom NC license); TradeMaster Steal-from Apache-2.0; four eval NO LICENSE → MIT. Weather-bot cluster (11–20) aggregate reject. Cross-wiki: cybersec + ccc briefs. Prod brief: TradeMaster steal-from. — source, tool-evaluation, multi-wiki-routing, license-audit, k60
@@ -484,6 +488,7 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 #### K57 concepts + people (2026-05-22)
 
 - [Polymarket three-quadrant brain, pattern blacklist, micro-trend override](concepts/polymarket-three-quadrant-blacklist-microtrend.md) — `[DRAFT 2026-05-22]` K57 @Gustafssonkotte. — concept, polymarket, bot-architecture, k57
+- [Polymarket BTC already-position gate](concepts/polymarket-btc-already-position-gate.md) — `[DRAFT 2026-05-24]` K62 @Gustafssonkotte. Direction ≈ coin flip on 330 trades; ask where price **already** is vs strike; dynamic vol-scaled margin; quadrants no vote. — concept, polymarket, btc-updown, k62
 - [Polymarket retail trading discipline](concepts/polymarket-retail-trading-discipline.md) — `[DRAFT 2026-05-22]` K57 @vorty2797. — concept, polymarket, risk, k57
 - [High-ticket SMB lead generation ops](concepts/high-ticket-smb-lead-generation-ops.md) — `[DRAFT 2026-05-22]` K57 BowTied Bull Part 1. — concept, smb, lead-gen, k57
 - [Macro outlook — BowTied Bull May 2026](concepts/macro-outlook-bowtied-bull-2026-05.md) — `[DRAFT 2026-05-22]` K57 Part 2 [TENTATIVE]. — concept, macro, crypto, k57

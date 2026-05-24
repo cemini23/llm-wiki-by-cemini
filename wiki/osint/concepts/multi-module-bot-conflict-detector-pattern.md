@@ -12,10 +12,11 @@ related:
   - entities/tools/chainlink-data-streams.md
   - entities/platforms/polymarket.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
-  - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
+  - concepts/polymarket-btc-already-position-gate.md
+  - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-22
+updated: 2026-05-24
 clusters: [polymarket, bot-architecture, risk-management]
 ---
 
@@ -28,7 +29,8 @@ clusters: [polymarket, bot-architecture, risk-management]
 - @entities/people/gustafssonkotte.md — author
 - @entities/tools/chainlink-data-streams.md — price feed used; explicitly bypasses the exchange API the bot trades against
 - @concepts/polymarket-three-quadrant-blacklist-microtrend.md — K57 follow-on (blacklist + micro-trend)
-- @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — K57 Post 2
+- @concepts/polymarket-btc-already-position-gate.md — K62 replaces direction vote with position-already gate
+- @sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md — K62 source
 
 ## Raw Concept
 

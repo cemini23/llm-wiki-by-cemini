@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-24] ingest | @Gustafssonkotte position-already gate (K62)
+
+**Source:** `@Gustafssonkotte.docx` → `cemini-librarian:/opt/cemini-bulk/research/@Gustafssonkotte.docx`
+
+- **1 source** — `gustafssonkotte-cheat-code-position-already-2026-05-24.md`
+- **1 concept** — `polymarket-btc-already-position-gate.md`
+- **3 updated** — `gustafssonkotte`, `polymarket-three-quadrant-blacklist-microtrend`, `multi-module-bot-conflict-detector-pattern`
+- **Prod brief:** `2026-05-24_k62-gustafsson-btc-already-position-gate-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+
+---
+
 ## [2026-05-24] ingest | @AlterEgo_eth ColdMath weather deconstruction (K61)
 
 **Source:** `@AlterEgo_eth.docx` → `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx`

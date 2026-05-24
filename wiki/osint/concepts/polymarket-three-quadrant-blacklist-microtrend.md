@@ -12,15 +12,18 @@ related:
   - concepts/polymarket-retail-trading-discipline.md
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-updown-bot-taxonomy.md
+  - concepts/polymarket-btc-already-position-gate.md
+  - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
 maturity: draft
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-24
 clusters: [polymarket, bot-architecture]
 ---
 
 ## Relations
 
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — Post 2 primary source (K57)
+- @sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md — K62 quadrant deprecation
 - @entities/people/gustafssonkotte.md — author/operator
 - @concepts/multi-module-bot-conflict-detector-pattern.md — K55 rewrite (conflict-detector + broken-data); this page is the **next iteration** (quadrant skew + blacklist + micro override)
 - @concepts/polymarket-bot-architecture.md — parent architecture catalog
@@ -75,6 +78,10 @@ First session: **1,088** would-be entries blocked vs **30** executions; author r
 - **Source of truth:** Polymarket CSV exports, not bot journal (journal still inflates win rate pre-settlement).
 - **ENV switches** gate every patch for instant rollback.
 - **Planned:** timing-aware momentum — skip entries where BTC cannot reach strike given `mins_left` and observed tick speed (not yet implemented).
+
+### K62 deprecation note (2026-05-24)
+
+@Gustafssonkotte reports **330-trade** study: Q1/Q2/Q3 direction outputs ≈ **coin flip** (~49–50%). K62 replaces direction vote with **@concepts/polymarket-btc-already-position-gate.md** (strike-distance + dynamic tape-speed margin). **Blacklist rules remain valid** as subtractive filters after the gate — see @sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md.
 
 ### Cemini relevance
 
