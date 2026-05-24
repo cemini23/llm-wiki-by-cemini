@@ -12,6 +12,7 @@ related:
   - concepts/polymarket-weather-trading-strategy.md
   - entities/tools/polyweather.md
   - entities/tools/suislanchez-polymarket-kalshi-weather-bot.md
+  - entities/tools/graphcast.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-05-24

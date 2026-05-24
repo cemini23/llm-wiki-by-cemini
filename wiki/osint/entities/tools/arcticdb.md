@@ -10,6 +10,7 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/laptop-prod-research-split.md
   - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
+  - entities/tools/dataset-viewer.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-24

@@ -10,6 +10,8 @@ related:
   - concepts/kalshi-api-reference.md
   - concepts/ensemble-weather-forecasting.md
   - concepts/cemini-license-posture.md
+  - entities/tools/openpatchlab-polymarket-weather-trading-bot.md
+  - entities/tools/katbrink-polymarket-weather-trading-bot.md
 maturity: validated
 created: 2026-05-24
 updated: 2026-05-24

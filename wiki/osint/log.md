@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-24] ingest | Multi-Wiki Tool Evaluation 36-URL (K63)
+
+**Source:** `Tool Evaluation for Wiki Ingestion.docx` → `cemini-librarian:/opt/cemini-bulk/research/Tool Evaluation for Wiki Ingestion.docx`
+
+- **1 source** — `multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md` (+ `gh api` license pass on all 36)
+- **11 tool entities** — openevolve, dataset-viewer, awesome-cursorrules, claude-code-game-studios, nidhogg, tradingagents-cn, graphcast, superalgos, openpatchlab + katbrink weather bots, tsukamg engine, agents-best-practices
+- **4 updated** — freqtrade, polymarket-weather-trading-strategy, cemini-license-posture, multi-agent-trading, tradingagents source
+- **Cross-wiki briefs (3)** — ccc-wiki, cybersecurity-wiki, seo-wiki
+- **Prod brief:** `2026-05-24_k63-36url-multi-wiki-tool-eval-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+
+---
+
 ## [2026-05-24] follow-up | K61 wallet + K60 Phase-0 + K62 verification
 
 - **ColdMath wallet [CONFIRMED]** — `0x594edb9112f526fa6a80b8f858a6379c8a2c1c11` via `polymarket.com/@coldmath` + gamma `public-profile`; LB-API lifetime PnL **$136,190** (2026-05-24)

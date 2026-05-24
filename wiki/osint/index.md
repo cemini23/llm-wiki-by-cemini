@@ -463,6 +463,10 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 
 - [@AlterEgo_eth — ColdMath weather deconstruction (narrow bins + micro-scaling)](sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md) — `[VALIDATED 2026-05-24]` K61. Single X post: >1,200 trades via Parity; 1°C bins; micro-scaling; 1¢ tails; inferred multi-model + METAR. **1 person entity** (ColdMath). Updates weather strategy + Parity + Clawdbot. Prod brief → cemini-prod. — source, trading-posts, coldmath, adversary-model, k61
 
+#### K63 ingest (2026-05-24 — Multi-Wiki Tool Evaluation, 36 URLs)
+
+- [Multi-Wiki Link Evaluation — 36-URL batch (v4, Wiki Ingestion)](sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md) — `[VALIDATED 2026-05-24]` K63. Cursor/agent + weather + trading stack eval. Eval 5 Adopt → **2** after API (`openevolve`, `awesome-cursorrules`). **11 tool entities** + updates (freqtrade, weather strategy, license posture, multi-agent-trading). Cross-wiki briefs → ccc / cybersec / seo. Prod brief → cemini-prod. — source, tool-evaluation, k63
+
 #### K62 ingest (2026-05-24 — @Gustafssonkotte position-already gate)
 
 - [@Gustafssonkotte — Updating the cheat code (position-already, not direction)](sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md) — `[VALIDATED 2026-05-24]` K62. 330-trade direction ≈49%; new first-branch **already-position** gate + dynamic tape-speed margin; quadrants demoted. **1 concept** + gustafssonkotte update. Prod brief → cemini-prod. — source, trading-posts, btc-updown, gustafssonkotte, k62
@@ -1026,6 +1030,21 @@ Dev-workflow tooling evaluated for Cemini integration.
 - [NOFX (NoFxAiOS/nofx) — Hackgate cautionary](entities/tools/nofx-ai-os.md) — `[DRAFT 2026-05-21]` K56 **REJECT**. AGPL-3 self-hosted agentic multi-market trading OS. Viral 9.2k★ in 2 months (late 2025). Critical security incident: SlowMist threat-intel 2025-11-17 documents zero-auth + hardcoded JWT secrets. Rejected on license (AGPL-3 vs IP-sale perimeter) AND security incident. Documented as cautionary case: the AI-agent default failure mode for Cemini's three architectural counter-decisions. — tool, agentic-trading, agpl-3, hackgate, slowmist, cautionary, reject, k56
 - [Freqtrade](entities/tools/freqtrade.md) — `[DRAFT 2026-05-21]` K56 **REFERENCE-ONLY**. Legacy GPL-3 Python algo-trading framework (~48k★). CCXT-backed for ~100+ exchanges. Hyperopt-driven strategy optimization, Telegram + WebUI control. License incompatible with Cemini IP-sale perimeter; documented as reference implementation. — tool, algorithmic-trading, crypto, python, ccxt, gpl-3, reference-only, k56
 - [OpenTrader (Open-Trader/opentrader)](entities/tools/opentrader.md) — `[DRAFT 2026-05-21]` K56 **REFERENCE-ELIGIBLE**. Modern Apache-2 TypeScript algo-trading framework (~2.6k★). CCXT-backed; built-in GridBot/DCA/RSI strategies. License clears IP-sale perimeter. Not a current adoption target (Cemini doesn't trade crypto spot), but structurally compatible if scope ever extends. — tool, algorithmic-trading, crypto, typescript, ccxt, apache-2, reference-eligible, k56
+
+#### K63 tool additions (2026-05-24)
+
+- [OpenEvolve](entities/tools/openevolve.md) — `[DRAFT 2026-05-24]` K63 **Adopt** (CCC). Apache-2.0 evolutionary coding agent (~6.4k★). — tool, ccc, agent-harness, k63
+- [awesome-cursorrules](entities/tools/awesome-cursorrules.md) — `[DRAFT 2026-05-24]` K63 **Adopt** (CCC). CC0 rules catalog (~40k★). — tool, cursor-rules, k63
+- [dataset-viewer](entities/tools/dataset-viewer.md) — `[DRAFT 2026-05-24]` K63 **CONDITIONAL-GO**. Virtualized huge-dataset UI; no LICENSE file. — tool, data-viz, k63
+- [Claude-Code-Game-Studios](entities/tools/claude-code-game-studios.md) — `[DRAFT 2026-05-24]` K63 **Steal-from** (CCC). MIT multi-agent harness (~20k★). — tool, ccc, k63
+- [Nidhogg](entities/tools/nidhogg.md) — `[DRAFT 2026-05-24]` K63 **Steal-from** (Cybersec). GPL-3.0 rootkit patterns only. — tool, cybersec, k63
+- [TradingAgents-CN](entities/tools/tradingagents-cn.md) — `[DRAFT 2026-05-24]` K63 **CONDITIONAL-GO**. ~27k★ fork; license NOASSERTION. — tool, multi-agent-trading, k63
+- [GraphCast](entities/tools/graphcast.md) — `[DRAFT 2026-05-24]` K63 **Defer**. DeepMind weather ML Apache-2.0. — tool, weather-ml, k63
+- [Superalgos](entities/tools/superalgos.md) — `[DRAFT 2026-05-24]` K63 **Defer**. Visual crypto bot builder. — tool, algo-trading, k63
+- [OpenPatchLab weather bot](entities/tools/openpatchlab-polymarket-weather-trading-bot.md) — `[DRAFT 2026-05-24]` K63 **Defer** (ex-UNAVAILABLE, MIT ~147★). — tool, weather, k63
+- [Katbrink weather bot](entities/tools/katbrink-polymarket-weather-trading-bot.md) — `[DRAFT 2026-05-24]` K63 **Defer** (ex-UNAVAILABLE, MIT ~136★). — tool, weather, k63
+- [Tsukamg weather engine](entities/tools/tsukamg-polymarket-weather-trading-engine.md) — `[DRAFT 2026-05-24]` K63 **CONDITIONAL-GO** (eval false reject overturned). — tool, weather, k63
+- [agents-best-practices](entities/tools/agents-best-practices.md) — `[DRAFT 2026-05-24]` K63 **Defer** (CCC). MIT ~1k★. — tool, ccc, k63
 
 #### K60 tool additions (2026-05-23, K60 ingest: 20-URL GitHub eval v4)
 

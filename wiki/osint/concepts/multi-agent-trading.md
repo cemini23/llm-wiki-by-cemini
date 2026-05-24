@@ -5,6 +5,8 @@ tags: [concept, multi-agent, trading, agent-orchestration, llm-trading, cemini-r
 keywords: [multi-agent trading, agent orchestration, tradingagents, analyst-trader pattern, debate framework, hierarchical agents]
 related:
   - sources/tradingagents.md
+  - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
+  - entities/tools/tradingagents-cn.md
   - sources/toolformer-schick-2023.md
   - sources/react-yao-2022.md
   - sources/generative-agents-park-2023.md
@@ -19,6 +21,8 @@ updated: 2026-05-16
 ## Relations
 
 - `@sources/tradingagents.md` — primary literature source: TradingAgents multi-LLM framework
+- `@sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md` — K63 TradingAgents-CN fork eval
+- `@entities/tools/tradingagents-cn.md` — Chinese implementation fork (~27k★, CONDITIONAL-GO)
 - `@concepts/agent-cost-routing-model-orchestra.md` — adjacent: multi-model cost-routing pattern
 - `@concepts/conductor-orchestrator.md` — Cemini's own orchestrator pattern that hosts multi-agent flows
 - `@sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md` — controlled study of the Debater role: debate gains are bounded by the strongest reasoner; homogeneous agent pools risk echo-chamber consensus

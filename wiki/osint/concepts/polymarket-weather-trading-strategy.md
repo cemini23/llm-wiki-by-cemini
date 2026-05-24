@@ -27,6 +27,11 @@ related:
   - entities/tools/polyweather.md
   - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - entities/people/coldmath-polymarket.md
+  - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
+  - entities/tools/openpatchlab-polymarket-weather-trading-bot.md
+  - entities/tools/katbrink-polymarket-weather-trading-bot.md
+  - entities/tools/tsukamg-polymarket-weather-trading-engine.md
+  - entities/tools/graphcast.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-24
@@ -40,6 +45,11 @@ updated: 2026-05-24
 - @entities/tools/polyweather.md — K60 reference-only: EMOS/DEB/TAF settlement methodology (AGPL)
 - @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61 ColdMath adversary forensics (narrow bins + micro-scaling)
 - @entities/people/coldmath-polymarket.md — K61 subject operator (#1 weather wallet)
+- @sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md — K63 weather bot UNAVAILABLE corrections
+- @entities/tools/openpatchlab-polymarket-weather-trading-bot.md — K63 Defer (~147★ MIT)
+- @entities/tools/katbrink-polymarket-weather-trading-bot.md — K63 Defer (~136★ MIT)
+- @entities/tools/tsukamg-polymarket-weather-trading-engine.md — K63 CONDITIONAL-GO
+- @entities/tools/graphcast.md — K63 Defer (neural weather ML)
 - @entities/people/polydao-mr-buzzoni.md — K57 author
 - @sources/x-docx-polymarket-claude-md-2026-04-23.md — Section 1 by @AlterEgo_eth (Gamma API integration mechanics)
 - @sources/x2-docx-polymarket-theparuchh-2026.md — full operational guide by @theparuchh

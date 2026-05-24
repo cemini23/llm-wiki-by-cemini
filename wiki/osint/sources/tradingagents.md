@@ -8,15 +8,19 @@ related:
   - sources/3-25-git-research.md
   - concepts/multi-agent-trading.md
   - sources/generative-agents-park-2023.md
+  - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
+  - entities/tools/tradingagents-cn.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30
-updated: 2026-05-13
+updated: 2026-05-24
 ---
 
 ## Relations
 - `@sources/3-25-git-research.md` — sibling research source
 - `@concepts/multi-agent-trading.md` — concept hub
+- `@sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md` — K63 TradingAgents-CN fork eval
+- `@entities/tools/tradingagents-cn.md` — Chinese implementation fork (distinct repo)
 
 ## Raw Concept
 - Original title: TradingAgents: Multi-Agents LLM Financial Trading Framework

@@ -4,18 +4,21 @@ type: entity
 tags: [entity, tool, algorithmic-trading, crypto, python, ccxt, gpl-3, hyperopt, k56]
 keywords: [freqtrade, ccxt, hyperopt, conda, docker, telegram-bot, webui, 48k-stars, gpl-3, machine-learning-strategy-optimization]
 related:
+  - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
   - sources/analyzing-github-projects-agentic-infra-2026-05-21.md
   - entities/tools/opentrader.md
   - concepts/cemini-license-posture.md
   - concepts/cemini-deployment.md
+  - entities/tools/superalgos.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-24
 phase_0_verdict: REFERENCE-ONLY — mature reference implementation for crypto algo-trading patterns; GPL-3 is incompatible with Cemini IP-sale perimeter so cannot be bundled, but strategies / Hyperopt patterns are public-domain learning material
 ---
 
 ## Relations
 
+- @sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md — K63 URL 30 GPL Reject reaffirmed
 - @sources/analyzing-github-projects-agentic-infra-2026-05-21.md — primary source (section "The Legacy vs Modern Frameworks: Freqtrade and OpenTrader")
 - @entities/tools/opentrader.md — modern TypeScript counterpart
 - @concepts/cemini-license-posture.md — GPL-3.0 is incompatible with IP-sale perimeter

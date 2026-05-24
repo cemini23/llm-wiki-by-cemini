@@ -10,6 +10,7 @@ related:
   - entities/tools/centpro.md
   - entities/tools/scalar-field.md
   - entities/tools/nexttrade.md
+  - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-20

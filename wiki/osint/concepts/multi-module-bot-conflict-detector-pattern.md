@@ -15,6 +15,7 @@ related:
   - concepts/polymarket-btc-already-position-gate.md
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
+  - entities/tools/claude-code-game-studios.md
 maturity: validated
 created: 2026-05-20
 updated: 2026-05-24
