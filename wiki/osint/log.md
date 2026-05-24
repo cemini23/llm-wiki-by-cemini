@@ -5,6 +5,7 @@
 - **ColdMath wallet [CONFIRMED]** — `0x594edb9112f526fa6a80b8f858a6379c8a2c1c11` via `polymarket.com/@coldmath` + gamma `public-profile`; LB-API lifetime PnL **$136,190** (2026-05-24)
 - **suislanchez Phase-0 complete** — clone audit; **NO-GO Adopt** (no LICENSE file); Steal-from patterns documented on entity page
 - **Gustafsson K62 stats** — still **[TENTATIVE]**; no public Polymarket profile found for independent CSV replay
+- **Prod briefs refreshed** — `2026-05-24_k60/k61/k62-*-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (wallet, Phase-0, verification gates)
 
 ---
 
