@@ -22,14 +22,16 @@ related:
   - concepts/cme-settlement-mechanics-for-prediction-markets.md
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
   - entities/people/polydao-mr-buzzoni.md
+  - sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-22
+updated: 2026-05-23
 ---
 
 ## Relations
 
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — K57 @polydao forecast-revision workflow
+- @sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md — K60 weather-bot URL cluster (aggregate reject)
 - @entities/people/polydao-mr-buzzoni.md — K57 author
 - @sources/x-docx-polymarket-claude-md-2026-04-23.md — Section 1 by @AlterEgo_eth (Gamma API integration mechanics)
 - @sources/x2-docx-polymarket-theparuchh-2026.md — full operational guide by @theparuchh
@@ -114,6 +116,18 @@ Independent promoter narrative reinforcing resolution discipline:
 - **Phase-0 audit required** before adoption: verify Open-Meteo `bias_correction` claim independently, validate station coordinates for any deployed city, treat @theparuchh's P&L as anecdotal at small sample
 - **Cross-concept hook**: ensemble methodology applies cleanly to @concepts/macro-weather-regime.md research; weather-trading bot output is a useful sentinel for broader regime detection
 - **Reviewer-agent fit**: this strategy is a high-quality test case for @concepts/reviewer-agent-inference-time-feedback.md — entry decisions are concrete, falsifiable, and easily backtestable
+
+### K60 weather-bot URL sweep (2026-05-23) [CONFIRMED reject batch]
+
+K60 v4 eval URLs 11–20 scanned **10 public weather/Kalshi bot repos** (MoonsatProtocol, MusicBoiyzzz, hcharper, alteregoeth-ai, AadiXD200, PolyWeather AGPL, suislanchez, polymarket-sniper, AruneshDev, cpratim). **Verdict: no new adopts.**
+
+| Outcome | Detail |
+|---------|--------|
+| Already covered | `@alteregoeth-ai/weatherbot` (MIT, 306★) — canonical open-source path in Hermes deploy section above |
+| License blockers | 7 repos with no GitHub SPDX; PolyWeather **AGPL-3.0** |
+| Stack duplication | All reimplement Gamma + Open-Meteo + CLOB patterns documented here |
+
+Do not Phase-0 audit individual weather stubs — reference this batch on @sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md only.
 
 ### Open questions
 

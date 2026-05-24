@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-05-23] ingest | GitHub Repo Evaluation for Cemini (K60, 20 URLs)
+
+**Source:** `GitHub Repo Evaluation for Cemini.docx` → `cemini-librarian:/opt/cemini-bulk/research/`
+
+- **1 source page** — `sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md` (deep-read + GitHub API license corrections)
+- **3 tool entities** — `kaligpt` (NC license downgrade), `trademaster` (Steal-from Apache-2.0), `pentest-ai` (MIT MCP; distinct from pentest-ai-agents)
+- **2 concept updates** — `polymarket-weather-trading-strategy` (K60 weather-bot cluster reject), `cemini-license-posture` (K60 addendum)
+- **1 entity update** — `pentest-ai-agents` (sibling link to pentest-ai)
+- **Cross-wiki briefs** — cybersec-wiki `2026-05-23_k60-cybersec-tool-eval-from-osint.md`; ccc-wiki `2026-05-23_k60-ai-engineering-roadmap-from-osint.md`
+- **Prod brief** — `briefs/2026-05-23_k60-trademaster-rl-steal-from-cemini.md` (TradeMaster Steal-from; no install)
+- **License highlights:** KaliGPT eval MIT → custom NC; pentest-ai / Windows-MCP / grace-marketplace / COG-second-brain eval NO LICENSE → MIT
+
+---
+
 ## [2026-05-23] ops | FLOX Phase 2 live (librarian WS → prod Redis)
 
 **Phase 2:** `flox-phase2-ws.service` on **cemini-librarian** — continuous Polymarket CLOB market WS (8 top-volume tokens), publishes `intel:polymarket_flox_ws` to prod Redis (`10.0.0.3:6379` private bind). Prod **`FLOX_PHASE2_ENABLED=true`**; `cemini_mcp` reads via `services/polymarket_flox_book.py`. Scripts: `flox_phase2_ws_publish.py`, `install_flox_phase2_librarian.sh`. No FLOX binary on prod.

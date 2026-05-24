@@ -43,10 +43,11 @@ related:
   - entities/tools/polymarket-near-resolution-bot.md
   - sources/tool-eval-50urls-polymarket-kalshi-license-false-negative-2026-05-21.md
   - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
+  - entities/tools/trademaster.md
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-22
+updated: 2026-05-23
 ---
 
 ## Relations
@@ -70,6 +71,7 @@ updated: 2026-05-22
 - `@concepts/polymarket-three-quadrant-blacklist-microtrend.md` — K57 Gustafsson blacklist + micro-trend
 - `@concepts/polymarket-retail-trading-discipline.md` — K57 retail edge framing
 - `@concepts/polymarket-copy-trading-strategy.md` — K57 Spottr hybrid CLOB latency section
+- `@entities/tools/trademaster.md` — K60 Steal-from RL platform; simulator/benchmark patterns for future bot eval (not a Polymarket bot itself)
 
 ## Raw Concept
 

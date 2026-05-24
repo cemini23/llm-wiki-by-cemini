@@ -11,10 +11,11 @@ related:
   - entities/tools/arcticdb.md
   - concepts/cemini-license-posture.md
   - concepts/cross-venue-arbitrage-pattern.md
+  - sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-23
 clusters: [tool-evaluation]
 ---
 
@@ -31,6 +32,7 @@ clusters: [tool-evaluation]
 - @cybersecurity-wiki/briefs/2026-05-18_k53-tool-eval-cybersec-items.md — cross-routed Cybersec items (grex, vanguard, netviz, iOS pentest list)
 - @seo-wiki/briefs/2026-05-18_k53-tool-eval-seo-items.md — cross-routed SEO items (colorion, snippeteditor, svgrepo)
 - @image-gen-wiki/briefs/2026-05-18_k53-tool-eval-imagegen-items.md — cross-routed Image-gen item (awesome-nano-banana-pro-prompts)
+- @sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md — K60 successor v4 20-URL batch; same license-layer failure modes
 
 ## Raw Concept
 

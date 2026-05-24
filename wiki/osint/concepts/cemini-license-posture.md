@@ -34,10 +34,11 @@ related:
   - entities/tools/ai-polymarket-agent.md
   - entities/tools/centpro.md
   - entities/tools/scalar-field.md
+  - sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-05-20
+updated: 2026-05-23
 ---
 
 ## Relations
@@ -63,6 +64,7 @@ updated: 2026-05-20
 - @concepts/hedge-fund-open-source-tooling.md — K52 hedge-fund OSS catalog; 21 of 22 repos are MIT/Apache/BSD, the lone exception is a **BSL** repo (ArcticDB) — a clean data point on the open/closed-firm split
 - @sources/multi-wiki-link-eval-41url-2026-05-18.md — K53 41-URL eval; a fresh, quantified case of the **retrieval-gap "no-license" false-negative**: it reported 17 repos as "NO LICENSE FOUND" and Rejected them, but ≥3 spot-checked (poly-arbitrage-bot, polymarket-websocket-client, graphic-walker) were verified cleanly MIT/Apache-2.0. Reinforces the standing rule: never accept a no-license reject without a GitHub-API re-check. Also independently repeated the ArcticDB BSL poison-pill misread.
 - @sources/multi-wiki-tool-eval-19url-2026-05-20.md — K55 19-URL eval; **fifth tool-eval batch** to surface the NO-LICENSE-FOUND retrieval-gap pattern (6 items this batch). License-check follow-up needed per the K53/K54 precedent. Also surfaced two new commercial-closed-source Rejects (Scalar Field YC SaaS, CentPRO Windows binary).
+- @sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md — K60 20-URL v4 eval; **sixth batch** — KaliGPT false MIT (custom NC license); four false NO LICENSE on MIT repos (Windows-MCP, pentest-ai, grace-marketplace, COG-second-brain).
 - @entities/tools/ai-polymarket-agent.md — K55 Adopt-eligible MIT; license-clean pre-Phase-0
 - @entities/tools/centpro.md — K55 Reject; **commercial closed-source Windows binary** sold via Telegram subscription. Phase-0 NO-GO recorded.
 - @entities/tools/scalar-field.md — K55 Reject; **YC Spring 2025 closed-source SaaS** (competitive-intel marker).
@@ -173,6 +175,10 @@ When the IP is eventually transferred or licensed (see @concepts/ip-sale-readine
 > - **False negatives (8)** — repos with real LICENSE files reported as "NO LICENSE FOUND" and Rejected on that basis. Of the eval's 10 "no-license" repos, only **2 are genuinely unlicensed** (`obheda12/GitDorker`, `rohitg00/pro-workflow`). The other 8 verified as MIT / Apache-2.0 / AGPL-3.0 / GPL-3.0. This is the K51-`fd` / K53-poly-arbitrage-bot pattern again — `poly-arbitrage-bot` was in fact re-flagged a *second* time by this batch and re-verified MIT.
 > - **Fabricated positive (1)** — `FujiwaraChoki/MoneyPrinter` was Rejected as a "catastrophic AGPL-3.0 poison pill." `gh api repos/FujiwaraChoki/MoneyPrinter` returns `spdx_id = MIT`. The eval did not just miss a license — **it invented a copyleft license that does not exist**, then built a rejection on it.
 > **Operational consequence**: the K53 rule ("re-verify every no-license Reject") is insufficient — it only catches false negatives. Restated rule: **re-verify *every* license claim in an LLM eval — Adopt, Reject, poison-pill — against `gh api repos/<owner>/<repo>` before acting.** A fabricated AGPL is as damaging as a missed MIT: it discards a clean, useful tool. The eval's tiers are a shortlist of *what to check*, never a verdict. Net K54 license-flip tally: 3 Rejects overturned to license-clean (EverOS Apache-2.0, LLMFeeder MIT, poly-arbitrage-bot MIT), 3 genuine copyleft poison pills correctly rejected but for reasons the eval got wrong (TruffleHog AGPL-3.0, gitGraber GPL-3.0, H4X-Tools GPL-3.0), 1 fabricated AGPL corrected to MIT (MoneyPrinter).
+
+### K60 v4 eval addendum (2026-05-23) — false MIT on KaliGPT + false NO LICENSE on MIT repos
+
+> K60 20-URL batch (@sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md): **KaliGPT** eval claimed MIT Adopt; LICENSE file is **SudoHopeX Non-Commercial Software License (2025)** — commercial/IP-sale **NO-GO**. **Windows-MCP, pentest-ai, grace-marketplace, COG-second-brain** eval claimed NO LICENSE; GitHub API returned **MIT** for all four (2026-05-23). Same dual failure mode as K54: false negatives *and* wrong positive license family on KaliGPT. Rule unchanged: **`gh api` + read LICENSE file** before any Adopt/Reject.
 
 ## Dead Ends
 
