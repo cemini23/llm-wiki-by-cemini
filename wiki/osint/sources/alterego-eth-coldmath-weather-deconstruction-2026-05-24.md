@@ -6,6 +6,7 @@ keywords: [alteregoeth, coldmath, parity, narrow-bins, micro-scaling, metar, bia
 related:
   - entities/people/alteregoeth.md
   - entities/people/coldmath-polymarket.md
+  - entities/people/polymarketsuccubus.md
   - entities/tools/parity-polymarket-analytics.md
   - entities/tools/clawdbot.md
   - concepts/polymarket-weather-trading-strategy.md
@@ -22,6 +23,7 @@ clusters: [polymarket, weather-trading]
 
 - @entities/people/alteregoeth.md — author (fifth ingested artifact; operator forensics, not API mechanics)
 - @entities/people/coldmath-polymarket.md — subject wallet/operator
+- @entities/people/polymarketsuccubus.md — K55 Top-7 ranking author (#1 ColdMath)
 - @entities/tools/parity-polymarket-analytics.md — claimed data source (1,200+ recent trades)
 - @entities/tools/clawdbot.md — K55 framework attribution for ColdMath stack
 - @concepts/polymarket-weather-trading-strategy.md — adds micro-scaling + ultra-narrow bin adversary patterns

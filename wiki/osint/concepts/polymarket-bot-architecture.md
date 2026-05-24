@@ -75,6 +75,7 @@ updated: 2026-05-24
 - `@concepts/polymarket-copy-trading-strategy.md` — K57 Spottr hybrid CLOB latency section
 - `@entities/tools/trademaster.md` — K60 Steal-from RL platform; simulator/benchmark patterns for future bot eval (not a Polymarket bot itself)
 - `@sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md` — K61 ColdMath micro-scaling adversary on weather books
+- `@entities/people/coldmath-polymarket.md` — K61 adversary operator
 
 ## Raw Concept
 

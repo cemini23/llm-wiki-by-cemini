@@ -11,6 +11,7 @@ related:
   - concepts/polymarket-weather-trading-strategy.md
   - entities/people/polymarketsuccubus.md
   - entities/people/alteregoeth.md
+  - concepts/polymarket-bot-architecture.md
 maturity: draft
 created: 2026-05-24
 updated: 2026-05-24
@@ -24,6 +25,7 @@ updated: 2026-05-24
 - @entities/tools/parity-polymarket-analytics.md — trade-history aggregation surface
 - @concepts/polymarket-weather-trading-strategy.md — operational patterns (narrow bins, micro-scaling)
 - @entities/people/alteregoeth.md — K61 analyst (not the operator)
+- @concepts/polymarket-bot-architecture.md — micro-scaling adversary execution pattern
 
 ## Raw Concept
 
