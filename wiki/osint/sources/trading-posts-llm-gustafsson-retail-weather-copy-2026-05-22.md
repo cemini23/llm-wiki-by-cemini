@@ -16,6 +16,7 @@ related:
   - concepts/polymarket-bot-architecture.md
   - entities/infrastructure/cemini-egress-fi.md
   - concepts/cemini-ai-assistant.md
+  - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
 maturity: draft
 created: 2026-05-22
 updated: 2026-05-22
