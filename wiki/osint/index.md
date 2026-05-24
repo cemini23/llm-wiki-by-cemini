@@ -1023,6 +1023,8 @@ Dev-workflow tooling evaluated for Cemini integration.
 - [KaliGPT](entities/tools/kaligpt.md) — `[DRAFT 2026-05-23]` K60 **REJECT (commercial)**. Eval Adopt overturned — custom SudoHopeX **non-commercial** license (not MIT). Ollama terminal pentest agent; cybersec reference-only. — tool, ollama, cybersec, non-commercial-license, k60
 - [TradeMaster](entities/tools/trademaster.md) — `[DRAFT 2026-05-23]` K60 **Steal-from**. NTU RL trading platform (~2.7k★, Apache-2.0). PRUDEX-Compass benchmarks + simulator patterns — extract snippets, not monolith replace. — tool, rl-trading, backtest, steal-from, k60
 - [pentest-ai (0xSteph MCP)](entities/tools/pentest-ai.md) — `[DRAFT 2026-05-23]` K60 **CONDITIONAL-GO Phase-0**. MIT MCP + 17 subagents; distinct from @entities/tools/pentest-ai-agents.md. Eval false NO LICENSE corrected. — tool, pentest, mcp, cybersec-cross-route, k60
+- [suislanchez polymarket-kalshi-weather-bot](entities/tools/suislanchez-polymarket-kalshi-weather-bot.md) — `[DRAFT 2026-05-24]` K60 re-audit **Steal-from CONDITIONAL-GO**. ~403★; Kalshi KXHIGH + Polymarket weather; 31-member GFS ensemble + Brier calibration; README MIT / no LICENSE file. — tool, polymarket, kalshi, weather-trading, steal-from, k60
+- [PolyWeather](entities/tools/polyweather.md) — `[DRAFT 2026-05-24]` K60 re-audit **Reference-only**. ~69★; AGPL-3.0; DEB/EMOS/TAF/bucket-matching methodology — no code import. — tool, polymarket, weather-trading, calibration, agpl, k60
 
 ### Observability
 

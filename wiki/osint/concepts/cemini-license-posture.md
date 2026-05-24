@@ -34,6 +34,7 @@ related:
   - entities/tools/ai-polymarket-agent.md
   - entities/tools/centpro.md
   - entities/tools/scalar-field.md
+  - entities/tools/polyweather.md
   - sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md
 maturity: draft
 hub: true
@@ -65,6 +66,7 @@ updated: 2026-05-23
 - @sources/multi-wiki-link-eval-41url-2026-05-18.md — K53 41-URL eval; a fresh, quantified case of the **retrieval-gap "no-license" false-negative**: it reported 17 repos as "NO LICENSE FOUND" and Rejected them, but ≥3 spot-checked (poly-arbitrage-bot, polymarket-websocket-client, graphic-walker) were verified cleanly MIT/Apache-2.0. Reinforces the standing rule: never accept a no-license reject without a GitHub-API re-check. Also independently repeated the ArcticDB BSL poison-pill misread.
 - @sources/multi-wiki-tool-eval-19url-2026-05-20.md — K55 19-URL eval; **fifth tool-eval batch** to surface the NO-LICENSE-FOUND retrieval-gap pattern (6 items this batch). License-check follow-up needed per the K53/K54 precedent. Also surfaced two new commercial-closed-source Rejects (Scalar Field YC SaaS, CentPRO Windows binary).
 - @sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md — K60 20-URL v4 eval; **sixth batch** — KaliGPT false MIT (custom NC license); four false NO LICENSE on MIT repos (Windows-MCP, pentest-ai, grace-marketplace, COG-second-brain).
+- @entities/tools/polyweather.md — K60 AGPL-3.0; methodology reference only (DEB/EMOS/TAF), not code import
 - @entities/tools/ai-polymarket-agent.md — K55 Adopt-eligible MIT; license-clean pre-Phase-0
 - @entities/tools/centpro.md — K55 Reject; **commercial closed-source Windows binary** sold via Telegram subscription. Phase-0 NO-GO recorded.
 - @entities/tools/scalar-field.md — K55 Reject; **YC Spring 2025 closed-source SaaS** (competitive-intel marker).

@@ -11,9 +11,10 @@ related:
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/polymarket-api-reference.md
+  - entities/tools/suislanchez-polymarket-kalshi-weather-bot.md
 maturity: validated
 created: 2026-05-05
-updated: 2026-05-18
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -25,6 +26,7 @@ updated: 2026-05-18
 - @concepts/cross-venue-arbitrage-pattern.md — downstream consumer; arb logic queries Kalshi orderbook + market endpoints documented here
 - @concepts/prediction-market-historical-analysis.md — downstream consumer; historical-data endpoints documented here are the substrate for the backtest pipeline
 - @concepts/polymarket-api-reference.md — sibling API reference for the other prediction-market venue Cemini trades
+- @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md — K60 reference impl for KXHIGH series auto-discovery on weather markets
 
 ## Raw Concept
 

@@ -26,9 +26,10 @@ related:
   - entities/tools/prediction-market-analysis.md
   - entities/tools/poly-arbitrage-bot.md
   - concepts/perps-dex-funding-carry-strategy.md
+  - entities/tools/suislanchez-polymarket-kalshi-weather-bot.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-20
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -50,6 +51,7 @@ updated: 2026-05-20
 - @entities/tools/prediction-market-analysis.md — K52-verified MIT dataset; its cross-venue `comparison/` analyses + trade-price history are a backtest substrate for tuning this loop's profit thresholds
 - @sources/multi-wiki-link-eval-41url-2026-05-18.md — K53 eval; surfaced `zostaff/poly-arbitrage-bot`, a concrete implementation of this pattern
 - @entities/tools/poly-arbitrage-bot.md — a small (~20★) but on-target MIT implementation of this exact Polymarket↔Kalshi arb loop; Reference/Steal-from for the dual-venue auth + paper-trading patterns
+- @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md — K60: same dual-venue pattern on **weather** (KXHIGH + Polymarket temperature), not BTC price arb
 
 ## Raw Concept
 

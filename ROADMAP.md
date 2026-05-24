@@ -10,7 +10,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-23 — K46–K60)
 
-- **K60 ingest (2026-05-23)** — `GitHub Repo Evaluation for Cemini.docx` (20 URLs, v4). **OSINT: 1 source + 3 tool entities + 2 concept updates + 1 entity backlink.** License corrections: KaliGPT eval MIT → **custom NC** (commercial NO-GO); pentest-ai / Windows-MCP / grace-marketplace / COG-second-brain eval NO LICENSE → **MIT**. **Steal-from:** TradeMaster (Apache-2.0). **Weather URLs 11–20:** aggregate reject. **Cross-wiki briefs:** cybersec + ccc. **Prod brief:** `2026-05-23_k60-trademaster-rl-steal-from-cemini.md` → `cemini-prod:/opt/cemini/briefs/`. Inbox empty. Lint clean.
+- **K60 ingest (2026-05-23)** — `GitHub Repo Evaluation for Cemini.docx` (20 URLs, v4). **OSINT: 1 source + 5 tool entities** (kaligpt, trademaster, pentest-ai, **suislanchez**, **polyweather**) + concept updates. License corrections on non-weather URLs. **Weather re-audit (2026-05-24):** suislanchez Steal-from CONDITIONAL-GO (~403★, Kalshi+Poly); PolyWeather AGPL methodology reference; weatherbot reaffirmed MIT canonical. **Prod briefs:** TradeMaster + **`2026-05-24_k60-weather-steal-from-cemini.md`** → `cemini-prod:/opt/cemini/briefs/`. Inbox empty. Lint clean.
 
 - **FLOX + ArcticDB ops (2026-05-23)** — FLOX Phase 1 **compile PASS** on librarian (`libflox-connectors.a`, Polymarket connector in build); Mac blocked (OpenSSL). **market-dataset → ArcticDB** migrated: `lmdb:///opt/cemini-bulk/arctic-market-dataset` / `equity_bars`, **8,507** symbols, ~536 MB; CSV tree kept as fallback. **Prod not rewired** — briefs on `cemini-prod:/opt/cemini/briefs/`. Scripts: `migrate_market_dataset_to_arcticdb.py`.
 

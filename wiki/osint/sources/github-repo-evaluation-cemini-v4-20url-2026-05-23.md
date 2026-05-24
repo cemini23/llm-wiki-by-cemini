@@ -7,13 +7,15 @@ related:
   - entities/tools/kaligpt.md
   - entities/tools/trademaster.md
   - entities/tools/pentest-ai.md
+  - entities/tools/suislanchez-polymarket-kalshi-weather-bot.md
+  - entities/tools/polyweather.md
   - concepts/polymarket-weather-trading-strategy.md
   - concepts/cemini-license-posture.md
   - sources/multi-wiki-link-eval-41url-2026-05-18.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-05-24
 clusters: [tool-evaluation]
 ---
 
@@ -24,6 +26,8 @@ clusters: [tool-evaluation]
 - @entities/tools/kaligpt.md — URL 1; eval Adopt **downgraded** (custom non-commercial license, not MIT)
 - @entities/tools/trademaster.md — URL 4 Steal-from (Apache-2.0 verified)
 - @entities/tools/pentest-ai.md — URL 6; eval Reject on license **corrected** (MIT via GitHub API)
+- @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md — URL 17; **Steal-from** on re-audit (403★, cross-venue + Brier; license pending)
+- @entities/tools/polyweather.md — URL 16; **Reference-only methodology** (AGPL; EMOS/DEB/TAF patterns)
 - @concepts/polymarket-weather-trading-strategy.md — URLs 11–20 weather/Kalshi bot cluster
 - @concepts/cemini-license-posture.md — fifth batch reinforcing license-layer unreliability
 
@@ -60,9 +64,24 @@ clusters: [tool-evaluation]
 | 8 | [frigate](https://github.com/blakeblackshear/frigate) | Reject | MIT | None | Reject domain (NVR/home) |
 | 9 | [cyber-security-llm-agents](https://github.com/NVISOsecurity/cyber-security-llm-agents) | Reference | **NONE** | Cybersec | Reference-only until license filed |
 | 10 | [COG-second-brain](https://github.com/huytieu/COG-second-brain) | Reject | **MIT** (eval wrong) | CCC | Reject — PKM overlap with existing stack |
-| 11–20 | Weather / Kalshi bots | Reject | Mostly NONE; alteregoeth **MIT**; PolyWeather **AGPL**; cpratim **MIT** | Cemini | **No adopt** — duplicate stack, license gaps |
+| 11–20 | Weather / Kalshi bots | Reject (batch) | Mixed — see per-URL table | Cemini | **Re-audit 2026-05-24:** 2 steal-from tiers + 1 canonical MIT |
 
-Weather cluster (11–20): MoonsatProtocol, MusicBoiyzzz, hcharper, alteregoeth-ai, AadiXD200, yangyuan-zhen/PolyWeather (AGPL), suislanchez, kylecwalden/sniper, AruneshDev, cpratim — aggregate reject; `@alteregoeth-ai/weatherbot` already ingested via K52/K41 path.
+### Weather / Kalshi cluster — per-URL (re-audit 2026-05-24)
+
+| # | Repo | Stars | License | Corrected posture |
+|---|------|-------|---------|-------------------|
+| 11 | [MoonsatProtocol/Polymarket-Weather-Bot](https://github.com/MoonsatProtocol/Polymarket-Weather-Bot) | ~99 | NONE | Reject adopt — TS Kelly + sim dashboard **patterns only**; freemium/paid edition |
+| 12 | [MusicBoiyzzz/Polymarket-Weather-Bot](https://github.com/MusicBoiyzzz/Polymarket-Weather-Bot) | ~0 | NONE | **Skip** — Windows `.exe` zip funnel |
+| 13 | [hcharper/polyBot-Weather](https://github.com/hcharper/polyBot-Weather) | ~35 | NONE | Reject — stale, no license |
+| 14 | [alteregoeth-ai/weatherbot](https://github.com/alteregoeth-ai/weatherbot) | ~306 | **MIT** | **Steal-from (canonical)** — already on @concepts/polymarket-weather-trading-strategy.md |
+| 15 | [AadiXD200/polymarket-weather-bot](https://github.com/AadiXD200/polymarket-weather-bot) | ~5 | NONE | Reject — thin, no license |
+| 16 | [yangyuan-zhen/PolyWeather](https://github.com/yangyuan-zhen/PolyWeather) | ~69 | **AGPL-3.0** | **Reference-only** — DEB/EMOS/TAF/bucket methodology → @entities/tools/polyweather.md |
+| 17 | [suislanchez/polymarket-kalshi-weather-bot](https://github.com/suislanchez/polymarket-kalshi-weather-bot) | ~403 | **NONE** (README falsely badges MIT) | **Steal-from CONDITIONAL-GO** → @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md |
+| 18 | [kylecwalden/polymarket-sniper-bot](https://github.com/kylecwalden/polymarket-sniper-bot) | ~20 | NONE | Reject — generic sniper, not weather |
+| 19 | [AruneshDev/Automated-Trading-System-Kalshi-Weather-Model](https://github.com/AruneshDev/Automated-Trading-System-Kalshi-Weather-Model) | ~4 | NONE | Reject — stale 2025 |
+| 20 | [cpratim/Kalshi-Weather-Trading](https://github.com/cpratim/Kalshi-Weather-Trading) | ~5 | MIT | Reject — empty README; no auditable code surface |
+
+First-pass aggregate reject still valid for **Adopt** (no new installs without Phase-0). Re-audit adds explicit **Steal-from** rows for suislanchez + PolyWeather methodology + reaffirms weatherbot as MIT canonical.
 
 ### License corrections (GitHub API spot-check)
 

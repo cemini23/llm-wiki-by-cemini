@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-24] wiki | K60 weather cluster re-audit (steal-from)
+
+**Follow-up to K60 ingest** — expanded weather URLs 11–20 after user review.
+
+- **2 new tool entities:** `suislanchez-polymarket-kalshi-weather-bot.md` (Steal-from CONDITIONAL-GO, ~403★), `polyweather.md` (AGPL reference-only methodology)
+- **Updated:** `github-repo-evaluation-cemini-v4-20url-2026-05-23.md` (per-URL weather table), `polymarket-weather-trading-strategy.md`, `cross-venue-arbitrage-pattern.md`, `ensemble-weather-forecasting.md`
+- **Prod brief:** `briefs/2026-05-24_k60-weather-steal-from-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+
+---
+
 ## [2026-05-23] ingest | GitHub Repo Evaluation for Cemini (K60, 20 URLs)
 
 **Source:** `GitHub Repo Evaluation for Cemini.docx` → `cemini-librarian:/opt/cemini-bulk/research/`

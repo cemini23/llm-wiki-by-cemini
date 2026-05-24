@@ -10,9 +10,11 @@ related:
   - entities/data-sources/open-meteo.md
   - entities/platforms/kalshi.md
   - concepts/polymarket-weather-trading-strategy.md
+  - entities/tools/polyweather.md
+  - entities/tools/suislanchez-polymarket-kalshi-weather-bot.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-13
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -22,6 +24,9 @@ updated: 2026-05-13
 - @sources/3-19-kalshi-trading-strategy-research.md
 - @entities/data-sources/open-meteo.md
 - @entities/platforms/kalshi.md
+- @concepts/polymarket-weather-trading-strategy.md — K60 weather PM strategy
+- @entities/tools/polyweather.md — EMOS/DEB calibration reference (AGPL, methodology only)
+- @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md — 31-member GFS ensemble implementation reference
 
 ## Raw Concept
 

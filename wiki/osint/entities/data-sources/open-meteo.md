@@ -13,9 +13,10 @@ related:
   - entities/platforms/kalshi.md
   - entities/data-sources/nws-weather-gov.md
   - entities/tools/visualcrossing-weather.md
+  - entities/tools/polyweather.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-13
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -28,6 +29,7 @@ updated: 2026-05-13
 - @entities/data-sources/nws-weather-gov.md — companion / complement: Open-Meteo gives the global multi-model ensemble (ECMWF + GFS + ICON + MetNo + JMA); NWS gives the single US-government authoritative forecast and observation feed — use as the resolution-truth source when settling US-locality Kalshi weather contracts
 - @entities/tools/visualcrossing-weather.md — K37 Adopt (CONDITIONAL-GO 2026-05-11); paid 50-yr historical depth complementing Open-Meteo's free shallower reanalysis. Both serve the backtesting role; choose by depth/freshness need
 - @sources/x2-docx-polymarket-theparuchh-2026.md — K41 retail-bot operator's operational guide; documents `bias_correction=true` parameter claim (+30-40% accuracy) and station-vs-city-center coordinate discovery
+- @entities/tools/polyweather.md — K60; also ingests Open-Meteo alongside METAR/TAF/official obs networks (AGPL product — methodology reference only)
 - @concepts/polymarket-weather-trading-strategy.md — K41 strategy concept page (parallel Polymarket application of the same data source)
 
 ## Raw Concept
