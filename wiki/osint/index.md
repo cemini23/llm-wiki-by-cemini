@@ -459,6 +459,10 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 - [SkillRAE — agent skill context compilation (arXiv:2605.10114)](sources/arxiv-skillrae-agent-skills-2605.10114.md) — `[DRAFT 2026-05-23]` K59 Tier-B. RAE skill-graph compilation; +11.7% SkillsBench; → ccc-wiki brief. — source, arxiv, agent-skills, rae, k59
 - [GraphFlow — verifiable visual agent workflows (arXiv:2605.14968)](sources/arxiv-graphflow-verifiable-workflows-2605.14968.md) — `[DRAFT 2026-05-23]` K59 Tier-B. Proof-carrying automations + durable runtime; → ccc-wiki brief. — source, arxiv, agent-workflows, formal-methods, k59
 
+#### K61 ingest (2026-05-24 — @AlterEgo_eth ColdMath weather deconstruction)
+
+- [@AlterEgo_eth — ColdMath weather deconstruction (narrow bins + micro-scaling)](sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md) — `[VALIDATED 2026-05-24]` K61. Single X post: >1,200 trades via Parity; 1°C bins; micro-scaling; 1¢ tails; inferred multi-model + METAR. **1 person entity** (ColdMath). Updates weather strategy + Parity + Clawdbot. Prod brief → cemini-prod. — source, trading-posts, coldmath, adversary-model, k61
+
 #### K60 ingest (2026-05-23 — GitHub Repo Evaluation v4, 20 URLs)
 
 - [GitHub Repo Evaluation for Cemini — 20-URL batch (v4, May 2026)](sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md) — `[VALIDATED 2026-05-23]` K60. 20 URLs / 4 wiki surfaces. Eval: 1 Adopt / 1 Steal-from / 3 Reference / 15 Reject. **After API verification:** KaliGPT Adopt **downgraded** (custom NC license); TradeMaster Steal-from Apache-2.0; four eval NO LICENSE → MIT. Weather-bot cluster (11–20) aggregate reject. Cross-wiki: cybersec + ccc briefs. Prod brief: TradeMaster steal-from. — source, tool-evaluation, multi-wiki-routing, license-audit, k60
@@ -1103,6 +1107,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [@Gustafssonkotte (X handle)](entities/people/gustafssonkotte.md) — `[DRAFT 2026-05-20]` K55. Pseudonymous Polymarket 5-min BTC bot operator. Authored the K55 broken-data-debug + multi-module conflict-detector post. Uses Chainlink Data Streams + Polymarket CLOB. — person, x-handle, polymarket-btc-bot, k55
 - [@stacyonchain (X handle)](entities/people/stacyonchain.md) — `[DRAFT 2026-05-20]` K55. Pseudonymous Polymarket sports-trading creator. Author of the K55 Claude sports-consensus agent post; promotes paid `centpro.bot` product (Rejected). — person, x-handle, polymarket-sports, k55
 - [@polysuccubus / PolymarketSuccubus (X handle)](entities/people/polymarketsuccubus.md) — `[DRAFT 2026-05-20]` K55. Pseudonymous Polymarket creator publishing trader-profile rankings; affiliate funnel for Parity analytics. Top-7 weather-trader ranking is the K55 contribution. — person, x-handle, polymarket-weather, k55
+- [ColdMath — Polymarket weather trader](entities/people/coldmath-polymarket.md) — `[DRAFT 2026-05-24]` K61. #1 weather operator; @AlterEgo_eth forensics (narrow bins, micro-scaling, Parity). — person, polymarket, weather-trading, adversary, k61
 
 #### K56 people additions (2026-05-21)
 

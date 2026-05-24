@@ -8,10 +8,12 @@ related:
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - sources/alterego-eth-polymarket-bridge-api.md
+  - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - concepts/polymarket-weather-trading-strategy.md
+  - entities/people/coldmath-polymarket.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-19
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -20,6 +22,8 @@ updated: 2026-05-19
 - @sources/alterego-eth-polymarket-gamma-vs-clob.md — K43 X post; Gamma vs CLOB API tradecraft
 - @sources/alterego-eth-polymarket-endpoint-cheatsheet.md — K51 X post; full five-surface Polymarket endpoint cheat sheet
 - @sources/alterego-eth-polymarket-bridge-api.md — K54 X post; Polymarket Bridge API (deposit/withdrawal funding layer)
+- @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61 X post; ColdMath trade forensics via Parity
+- @entities/people/coldmath-polymarket.md — K61 analysis subject
 - @concepts/polymarket-weather-trading-strategy.md — concept this person's writing feeds into
 
 ## Raw Concept
@@ -30,7 +34,7 @@ What prompted this page: K41 ingest of X.docx Section 1 — @AlterEgo_eth's tech
 
 - **X handle**: @AlterEgo_eth
 - **Subject expertise (per known content)**: Polymarket Gamma API integration, weather-market structure, ETH-adjacent identity (handle implies)
-- **Known artifacts** (4 ingested): weather-market slug-construction + two-endpoint API breakdown (K41, @sources/x-docx-polymarket-claude-md-2026-04-23.md Section 1); Gamma vs CLOB API two-layer tradecraft (K43, @sources/alterego-eth-polymarket-gamma-vs-clob.md); full five-surface endpoint cheat sheet (K51, @sources/alterego-eth-polymarket-endpoint-cheatsheet.md); Bridge API deposit/withdrawal endpoints (K54, @sources/alterego-eth-polymarket-bridge-api.md)
+- **Known artifacts** (5 ingested): weather-market slug-construction + two-endpoint API breakdown (K41); Gamma vs CLOB (K43); endpoint cheat sheet (K51); Bridge API (K54); **ColdMath weather adversary deconstruction** (K61, Parity trade forensics)
 - **Consistent subject area**: Polymarket API mechanics — practical, endpoint-level, "tested as of <month>" framing. Output quality has been verifiable each time (public endpoints)
 - **No real identity established** from these ingests; treat as pseudonymous technical contributor
 

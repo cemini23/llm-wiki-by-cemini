@@ -8,10 +8,12 @@ related:
   - concepts/polymarket-weather-trading-strategy.md
   - entities/tools/parity-polymarket-analytics.md
   - entities/tools/clawdbot.md
+  - entities/people/coldmath-polymarket.md
+  - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -20,6 +22,8 @@ updated: 2026-05-20
 - @concepts/polymarket-weather-trading-strategy.md — concept page updated with K55 Post 5 trader rankings
 - @entities/tools/parity-polymarket-analytics.md — Parity is the analytics platform fronted in his rankings; affiliate funnel
 - @entities/tools/clawdbot.md — the framework #1-ranked ColdMath uses
+- @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61 deep-dive on #1 ranked trader (Parity)
+- @entities/people/coldmath-polymarket.md — K61 subject
 
 ## Raw Concept
 

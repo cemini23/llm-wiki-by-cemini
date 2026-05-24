@@ -25,6 +25,8 @@ related:
   - sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md
   - entities/tools/suislanchez-polymarket-kalshi-weather-bot.md
   - entities/tools/polyweather.md
+  - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
+  - entities/people/coldmath-polymarket.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-24
@@ -36,6 +38,8 @@ updated: 2026-05-24
 - @sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md — K60 weather-bot URL cluster (per-URL re-audit 2026-05-24)
 - @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md — K60 Steal-from: Kalshi KXHIGH + Polymarket, GFS ensemble, Brier calibration
 - @entities/tools/polyweather.md — K60 reference-only: EMOS/DEB/TAF settlement methodology (AGPL)
+- @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61 ColdMath adversary forensics (narrow bins + micro-scaling)
+- @entities/people/coldmath-polymarket.md — K61 subject operator (#1 weather wallet)
 - @entities/people/polydao-mr-buzzoni.md — K57 author
 - @sources/x-docx-polymarket-claude-md-2026-04-23.md — Section 1 by @AlterEgo_eth (Gamma API integration mechanics)
 - @sources/x2-docx-polymarket-theparuchh-2026.md — full operational guide by @theparuchh
@@ -136,6 +140,19 @@ K60 v4 eval URLs 11–20: first pass **aggregate reject** (no Adopt stub farm). 
 **Still open:** `github.com/weather_scanner` from K57 @polydao — forecast-revision reference impl; Phase-0 not run.
 
 Prod brief: `briefs/2026-05-24_k60-weather-steal-from-cemini.md`.
+
+### K61 ColdMath adversary fingerprint (2026-05-24) [TENTATIVE]
+
+@AlterEgo_eth analyzed **>1,200** ColdMath trades via **Parity** (@sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md). Extends K55 Top-7 stats with **execution-level** detail:
+
+| Pattern | Implication for Cemini |
+|---------|------------------------|
+| **1°C / tight-range bins** | Forecast + station mapping must beat narrow-bin precision bar, not coarse thresholds |
+| **Micro-scaling** (many $0.01–$200 clips same outcome) | Adversary absorbs liquidity in slices; our taker logic should assume **repeated small hits**, not one block trade |
+| **1¢ tail building** | Confirms K55 “buy mispriced tails” thesis; win-rate ~63–65% can still win if entry price is extreme |
+| **Inferred multi-model + city/horizon bias + METAR** | Aligns with ensemble + Open-Meteo bias_correction + WU resolution discipline already on this page |
+
+**Adversary-of-record** for weather PM: @entities/people/coldmath-polymarket.md. Wallet address not in source — resolve on-chain or via Parity API if counterparty-intel is scoped.
 
 ### Open questions
 

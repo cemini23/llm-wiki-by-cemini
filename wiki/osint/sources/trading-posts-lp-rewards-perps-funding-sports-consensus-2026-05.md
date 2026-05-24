@@ -21,11 +21,14 @@ related:
   - entities/tools/centpro.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
+  - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
+  - entities/people/coldmath-polymarket.md
 
+  - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-24
 clusters: [quant-finance, polymarket]
 ---
 
@@ -44,6 +47,7 @@ clusters: [quant-finance, polymarket]
 - @entities/people/polymarketsuccubus.md — author of Post 5
 - @entities/tools/clawdbot.md — Claude-powered AI agent framework, used by ColdMath (#1 weather trader)
 - @entities/tools/parity-polymarket-analytics.md — counterparty-intelligence + orderbook insights platform behind the @polysuccubus rankings
+- @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61 ColdMath forensics (extends Post 5 subject)
 - @entities/tools/firecrawl.md — JS-rendering scraper used by the @stacyonchain sports-consensus agent
 
 ## Raw Concept

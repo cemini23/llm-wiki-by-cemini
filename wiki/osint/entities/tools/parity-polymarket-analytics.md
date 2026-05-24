@@ -8,9 +8,11 @@ related:
   - concepts/polymarket-weather-trading-strategy.md
   - entities/platforms/polymarket.md
   - entities/people/polymarketsuccubus.md
+  - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
+  - entities/people/coldmath-polymarket.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -19,6 +21,8 @@ updated: 2026-05-20
 - @concepts/polymarket-weather-trading-strategy.md — trader-profile data referenced in concept page
 - @entities/platforms/polymarket.md — venue
 - @entities/people/polymarketsuccubus.md — primary creator using the platform's affiliate funnel
+- @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61: >1,200 ColdMath trades analyzed via Parity
+- @entities/people/coldmath-polymarket.md — subject wallet profile
 
 ## Raw Concept
 

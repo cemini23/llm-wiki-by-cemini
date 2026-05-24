@@ -9,9 +9,11 @@ related:
   - entities/people/polymarketsuccubus.md
   - entities/people/polydao-mr-buzzoni.md
   - entities/platforms/polymarket.md
+  - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
+  - entities/people/coldmath-polymarket.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-22
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -20,6 +22,8 @@ updated: 2026-05-22
 - @concepts/polymarket-weather-trading-strategy.md — concept page where Clawdbot is now cross-referenced
 - @entities/people/polymarketsuccubus.md — referencing creator
 - @entities/people/polydao-mr-buzzoni.md — K57 weather post watchlist cites ColdMath stack
+- @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61 micro-scaling + narrow-bin forensics on ColdMath
+- @entities/people/coldmath-polymarket.md — operator entity
 
 ## Raw Concept
 

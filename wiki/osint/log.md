@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-24] ingest | @AlterEgo_eth ColdMath weather deconstruction (K61)
+
+**Source:** `@AlterEgo_eth.docx` → `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx`
+
+- **1 source** — `sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md`
+- **1 person entity** — `coldmath-polymarket.md`
+- **6 updated** — `alteregoeth`, `polymarket-weather-trading-strategy`, `parity-polymarket-analytics`, `clawdbot`, `polymarketsuccubus`, K55 trading-posts source
+- **Prod brief:** `2026-05-24_k61-coldmath-weather-adversary-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+
+---
+
 ## [2026-05-24] wiki | K60 weather cluster re-audit (steal-from)
 
 **Follow-up to K60 ingest** — expanded weather URLs 11–20 after user review.
