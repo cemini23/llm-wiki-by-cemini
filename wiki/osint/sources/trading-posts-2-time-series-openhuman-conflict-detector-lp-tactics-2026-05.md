@@ -18,6 +18,7 @@ related:
   - concepts/quant-finance.md
   - entities/platforms/polymarket.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
 
 maturity: validated
 read_status: deep-read

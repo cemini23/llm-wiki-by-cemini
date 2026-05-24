@@ -4,6 +4,7 @@ type: entity
 tags: [entity, person, polymarket-bot-operator, updown-bot, conflict-detector, chainlink-data-streams, k55]
 keywords: [gustafssonkotte, polymarket-btc-5min-bot, multi-module-conflict-detector, broken-data-corruption-debugging, phantom-win-fix, chainlink-data-streams-execution-via-polymarket-clob]
 related:
+  - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
