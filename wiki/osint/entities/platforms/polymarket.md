@@ -72,6 +72,7 @@ related:
   - entities/people/crpt-atlas.md
   - entities/tools/polymarket-near-resolution-bot.md
   - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
+  - entities/people/coldmath-polymarket.md
 
 maturity: validated
 created: 2026-04-23

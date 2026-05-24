@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-24] follow-up | K61 wallet + K60 Phase-0 + K62 verification
+
+- **ColdMath wallet [CONFIRMED]** — `0x594edb9112f526fa6a80b8f858a6379c8a2c1c11` via `polymarket.com/@coldmath` + gamma `public-profile`; LB-API lifetime PnL **$136,190** (2026-05-24)
+- **suislanchez Phase-0 complete** — clone audit; **NO-GO Adopt** (no LICENSE file); Steal-from patterns documented on entity page
+- **Gustafsson K62 stats** — still **[TENTATIVE]**; no public Polymarket profile found for independent CSV replay
+
+---
+
 ## [2026-05-24] ingest | @Gustafssonkotte position-already gate (K62)
 
 **Source:** `@Gustafssonkotte.docx` → `cemini-librarian:/opt/cemini-bulk/research/@Gustafssonkotte.docx`

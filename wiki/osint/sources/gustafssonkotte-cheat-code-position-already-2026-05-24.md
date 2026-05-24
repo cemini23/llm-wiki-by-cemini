@@ -41,6 +41,15 @@ clusters: [polymarket, bot-architecture]
 
 ## Narrative
 
+### Independent verification (2026-05-24)
+
+| Claim | Status |
+|-------|--------|
+| n=330 direction ≈49% | **[TENTATIVE]** — author-reported only; no public `polymarket.com/@gustafssonkotte` profile (404); wallet not published in docx |
+| Day-one 9 trades, 7–2, UP+DOWN | **[TENTATIVE]** — same; prod implementation should require Polymarket CSV export or resolved proxy wallet before sizing |
+
+**Blocker for Cemini replay:** resolve Gustafsson proxy wallet (X bio / Parity / user export) or treat K62 stats as design hypothesis only.
+
 ### Empirical kill shot on “predict direction” [TENTATIVE — author-reported]
 
 On **330 trades**, true outcome from realized BTC move vs bet:

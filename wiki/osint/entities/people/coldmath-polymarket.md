@@ -2,8 +2,9 @@
 title: ColdMath — Polymarket weather trader (#1 ranked, micro-scaling)
 type: entity
 tags: [entity, person, polymarket, weather-trading, adversary, k55, k61]
-keywords: [coldmath, polymarket-weather, clawdbot, micro-scaling, narrow-bins, parity, pilot-aviation]
+keywords: [coldmath, polymarket-weather, clawdbot, micro-scaling, narrow-bins, parity, pilot-aviation, 0x594edb9112f526fa6a80b8f858a6379c8a2c1c11]
 related:
+  - entities/platforms/polymarket.md
   - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
   - entities/tools/clawdbot.md
@@ -12,13 +13,14 @@ related:
   - entities/people/polymarketsuccubus.md
   - entities/people/alteregoeth.md
   - concepts/polymarket-bot-architecture.md
-maturity: draft
+maturity: validated
 created: 2026-05-24
 updated: 2026-05-24
 ---
 
 ## Relations
 
+- @entities/platforms/polymarket.md — public profile + on-chain proxy wallet
 - @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61 @AlterEgo_eth forensics (>1,200 trades via Parity)
 - @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — K55 @polysuccubus Top-7 #1 (+$124,896, 81.7% WR)
 - @entities/tools/clawdbot.md — attributed automation framework [NEEDS VERIFICATION 2026-05-20]
@@ -30,6 +32,18 @@ updated: 2026-05-24
 ## Raw Concept
 
 Polymarket weather-market operator ranked **#1** in K55 Top-7 (@polysuccubus). K61 adds @AlterEgo_eth trade-level deconstruction via Parity.
+
+### Wallet + public profile [CONFIRMED 2026-05-24]
+
+| Field | Value |
+|-------|--------|
+| **Username** | `coldmath` |
+| **Profile** | https://polymarket.com/@coldmath |
+| **Proxy wallet** | `0x594edb9112f526fa6a80b8f858a6379c8a2c1c11` |
+| **Gamma profile** | `GET https://gamma-api.polymarket.com/public-profile?address=0x594e…` → name ColdMath, joined 2025-11-09 |
+| **LB-API lifetime PnL** | **$136,190** (`GET https://lb-api.polymarket.com/profit?window=all&address=0x594e…`) |
+
+K55 cited +$124,896 / 6,575 predictions — consistent with an earlier snapshot; live profile shows higher cumulative activity (e.g. ~7.7k predictions on site, 2026-05-24).
 
 ## Narrative
 
@@ -54,7 +68,7 @@ Discrepancy may be sample window, market subset, or marketing vs forensics — t
 
 - **Primary adversary reference** for weather PM execution design (liquidity, bin selection, forecast precision).
 - **Do not Adopt** Clawdbot on K55 mention alone — see @entities/tools/clawdbot.md Phase-0 backlog.
-- Wallet address not in ingested docx — resolve via Parity or on-chain index for backtests.
+- **Wallet resolved** — use proxy `0x594edb9112f526fa6a80b8f858a6379c8a2c1c11` for Data-API `/closed-positions`, `/trades`, LB-API `/profit`, or Parity replay.
 
 ## Snippets
 

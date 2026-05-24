@@ -67,6 +67,7 @@ clusters: [polymarket, weather-trading]
 - **Forecast bar** for competing on 1°C bins is higher than coarse threshold markets — ties to ensemble + station-coordinate work on @concepts/polymarket-weather-trading-strategy.md.
 - **Parity** (or in-house wallet forensics) as tooling to monitor top weather wallets — second independent use after K55 @polysuccubus rankings.
 - Does **not** replace @alteregoeth-ai/weatherbot as open-source reference — this is competitive intelligence, not API docs.
+- **Wallet resolved (2026-05-24):** @entities/people/coldmath-polymarket.md → `0x594edb9112f526fa6a80b8f858a6379c8a2c1c11` (`polymarket.com/@coldmath`).
 
 ## Snippets
 

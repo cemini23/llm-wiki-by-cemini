@@ -58,7 +58,7 @@ Author reports prior strategy failed despite “correct brain” because **four 
 - For Cemini UpDown or similar: compute **strike distance / realized micro-vol** before ensemble direction models
 - Log **direction-module accuracy** separately — if ≈50%, demote or zero-weight per K62 evidence
 - Keep **ENV kill-switch** + session liquidity schedule as operational defaults
-- Do not treat 9-trade day as validated edge — require export-verified sample (Polymarket CSV rule from K55/K57)
+- Do not treat 9-trade day as validated edge — require export-verified sample (Polymarket CSV rule from K55/K57). **2026-05-24 check:** no public `polymarket.com/@gustafssonkotte` profile; wallet unpublished — K62 n=330 / n=9 remain author-only.
 
 ### Relation to K57 quadrant/blacklist
 

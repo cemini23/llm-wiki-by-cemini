@@ -10,7 +10,7 @@ related:
   - concepts/kalshi-api-reference.md
   - concepts/ensemble-weather-forecasting.md
   - concepts/cemini-license-posture.md
-maturity: draft
+maturity: validated
 created: 2026-05-24
 updated: 2026-05-24
 ---
@@ -46,15 +46,23 @@ K60 v4 first pass aggregated URLs 11–20 as “duplicate stack reject.” Re-au
 
 Secondary (non-weather): bundled **BTC 5-min Up/Down** microstructure scanner (RSI, VWAP, SMA composite) — overlaps Gustafsson/K55 BTC bot workstreams; harvest only if weather scope expands.
 
-### Verdict: **Steal-from (CONDITIONAL-GO Phase-0)**
+### Verdict: **Steal-from (CONDITIONAL-GO — Phase-0 complete 2026-05-24)**
 
-Phase-0 before any code import:
+**Phase-0 audit** (`/tmp/suislanchez-weather-audit/`, clone 2026-05-24):
 
-1. Confirm LICENSE file (README MIT claim is unreliable per K-series catalog mode).
-2. Clone to `/tmp/suislanchez-weather-audit/` — map Kalshi KXHIGH discovery + ensemble probability code paths vs Cemini's existing Kalshi weather stub.
-3. Extract **calibration + cross-venue scan loop** as design reference; do not install monolith on prod.
+| Check | Result |
+|-------|--------|
+| **License** | **NO-GO for Adopt** — `gh api` license 404; no `LICENSE` file in tree; README MIT badge only |
+| **Maturity** | ~403★; last push **2026-03-02** (~10 weeks stale) |
+| **Layout lock-in** | **PASS** — `backend/` + `frontend/` monorepo; DB via `DATABASE_URL` default `sqlite:///./tradingbot.db` (not hardcoded wiki paths) |
+| **Weather path** | `backend/data/kalshi_markets.py` — KXHIGHNY/CHI/MIA/LAX/DEN map; `backend/core/weather_signals.py` — ensemble edge + fractional Kelly (`KELLY_FRACTION=0.15`) |
+| **Calibration** | Brier score in `backend/api/main.py` — tracks forecast vs outcome |
+| **BTC leg** | `backend/core/signals.py` — 5-min Up/Down RSI/VWAP/SMA composite (overlap with Gustafsson/K55 BTC workstreams; harvest only if scoped) |
+| **Cemini overlap** | Cross-venue Kalshi+Poly weather + calibration loop is **additive** vs `@alteregoeth-ai/weatherbot` (Poly-only); extract patterns, do not deploy monolith |
 
-**Do not Adopt** until license verified and Phase-0 passes overlap check with in-house weather module.
+**Posture:** **Steal-from / pattern-extract only** until upstream adds a `LICENSE` file. No prod install. Recommended lifts: KXHIGH discovery table, GFS ensemble → threshold probability, Brier calibration hook, 8% edge gate (verify params independently).
+
+**Do not Adopt** until license file verified on `main`.
 
 ## Snippets
 
