@@ -12,9 +12,10 @@ related:
   - concepts/cemini-license-posture.md
   - entities/tools/openpatchlab-polymarket-weather-trading-bot.md
   - entities/tools/katbrink-polymarket-weather-trading-bot.md
+  - entities/tools/aruneshdev-kalshi-weather-xgboost.md
 maturity: validated
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-25
 ---
 
 ## Relations

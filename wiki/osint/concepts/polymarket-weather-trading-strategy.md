@@ -32,9 +32,13 @@ related:
   - entities/tools/katbrink-polymarket-weather-trading-bot.md
   - entities/tools/tsukamg-polymarket-weather-trading-engine.md
   - entities/tools/graphcast.md
+  - sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md
+  - concepts/nwp-bias-correction-ml-weather-trading.md
+  - concepts/nwp-model-stack-polymarket-weather.md
+  - entities/tools/aruneshdev-kalshi-weather-xgboost.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-24
+updated: 2026-05-25
 ---
 
 ## Relations
@@ -50,6 +54,10 @@ updated: 2026-05-24
 - @entities/tools/katbrink-polymarket-weather-trading-bot.md — K63 Defer (~136★ MIT)
 - @entities/tools/tsukamg-polymarket-weather-trading-engine.md — K63 CONDITIONAL-GO
 - @entities/tools/graphcast.md — K63 Defer (neural weather ML)
+- @sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md — K66 XGBoost error model + regional NWP stack
+- @concepts/nwp-bias-correction-ml-weather-trading.md — ML-on-NWP-error pattern
+- @concepts/nwp-model-stack-polymarket-weather.md — ECMWF anchor + regional model matrix
+- @entities/tools/aruneshdev-kalshi-weather-xgboost.md — reference repo (no license)
 - @entities/people/polydao-mr-buzzoni.md — K57 author
 - @sources/x-docx-polymarket-claude-md-2026-04-23.md — Section 1 by @AlterEgo_eth (Gamma API integration mechanics)
 - @sources/x2-docx-polymarket-theparuchh-2026.md — full operational guide by @theparuchh
@@ -145,7 +153,9 @@ K60 v4 eval URLs 11–20: first pass **aggregate reject** (no Adopt stub farm). 
 | **Cross-venue code (pending license)** | `@suislanchez/polymarket-kalshi-weather-bot` (~403★) | Steal-from **CONDITIONAL-GO** — KXHIGH + Polymarket, 31-member GFS ensemble, Brier score; README MIT badge **without LICENSE file** |
 | **Methodology only (AGPL)** | `@yangyuan-zhen/PolyWeather` (~69★) | Reference — DEB, EMOS/CRPS, TAF, strict bucket matching; **no code import** |
 
-**Explicit skips:** MusicBoiyzzz (`.exe` funnel), MoonsatProtocol (no license + paid tier), hcharper/AadiXD200/AruneshDev (thin/stale), kylecwalden sniper (not weather), cpratim (empty README).
+**Explicit skips:** MusicBoiyzzz (`.exe` funnel), MoonsatProtocol (no license + paid tier), hcharper/AadiXD200 (thin/stale), kylecwalden sniper (not weather), cpratim (empty README).
+
+**K66 upgrade:** `AruneshDev/Automated-Trading-System-Kalshi-Weather-Model` — was "thin/stale" in K60 table; @AlterEgo_eth reframes as **bias-correction reference**. Phase-0: ~7★, no LICENSE → **CONDITIONAL-GO steal-from** (@entities/tools/aruneshdev-kalshi-weather-xgboost.md). Prefer clean-room over repo import.
 
 **Still open:** `github.com/weather_scanner` from K57 @polydao — forecast-revision reference impl; Phase-0 not run.
 

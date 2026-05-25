@@ -12,6 +12,8 @@ related:
   - concepts/polymarket-weather-trading-strategy.md
   - concepts/polymarket-bot-architecture.md
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
+  - sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md
+  - concepts/nwp-bias-correction-ml-weather-trading.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-24
@@ -29,13 +31,14 @@ clusters: [polymarket, weather-trading]
 - @concepts/polymarket-weather-trading-strategy.md — adds micro-scaling + ultra-narrow bin adversary patterns
 - @concepts/polymarket-bot-architecture.md — execution discipline corroboration
 - @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — K55 Top-7 baseline
+- @sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md — K66 same filename on librarian; complements bias-correction narrative
 
 ## Raw Concept
 
 - **Title**: How ColdMath Dominates Polymarket Weather Markets (Narrow 1°C Bins + Aggressive Scaling + Multi-Model Bias Correction)
 - **Author**: @AlterEgo_eth (X)
 - **Type**: long-form X post / thread export
-- **Location**: `research to be indexed/@AlterEgo_eth.docx` → `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx`
+- **Location**: K61 drop `research to be indexed/@AlterEgo_eth.docx` (ColdMath post). Librarian filename **reused** — K66 `@AlterEgo_eth.docx` (2 different posts) now at `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx`
 - **Retrieved**: 2026-05-24
 - **Read status**: deep-read
 

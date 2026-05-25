@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-25] ingest | @AlterEgo_eth.docx K66 — XGBoost NWP + regional model stack (2 posts)
+
+**Source:** `@AlterEgo_eth.docx` (2 posts; same filename as K61 ColdMath — **different content**) → librarian
+
+- **1 source** — `alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md`
+- **2 concepts** — `nwp-bias-correction-ml-weather-trading.md`, `nwp-model-stack-polymarket-weather.md`
+- **1 tool** — `aruneshdev-kalshi-weather-xgboost.md` (CONDITIONAL-GO, no LICENSE)
+- **5 updated** — `alteregoeth.md`, `polymarket-weather-trading-strategy.md`, `ensemble-weather-forecasting.md`, `open-meteo.md`, `alterego-eth-coldmath-weather-deconstruction-2026-05-24.md`
+- **Prod brief:** `2026-05-25_k66-nwp-bias-correction-weather-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+
+---
+
 ## [2026-05-24] ingest | @kirillk_web3.docx K65 — Kimi Agent Swarm guide
 
 **Source:** `@kirillk_web3.docx` → `cemini-librarian:/opt/cemini-bulk/research/@kirillk_web3.docx`

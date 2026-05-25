@@ -463,6 +463,10 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 
 - [@AlterEgo_eth — ColdMath weather deconstruction (narrow bins + micro-scaling)](sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md) — `[VALIDATED 2026-05-24]` K61. Single X post: >1,200 trades via Parity; 1°C bins; micro-scaling; 1¢ tails; inferred multi-model + METAR. **1 person entity** (ColdMath). Updates weather strategy + Parity + Clawdbot. Prod brief → cemini-prod. — source, trading-posts, coldmath, adversary-model, k61
 
+#### K66 ingest (2026-05-25 — @AlterEgo_eth.docx, 2 posts)
+
+- [@AlterEgo_eth XGBoost NWP + regional models](sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md) — `[VALIDATED 2026-05-25]` K66. Post 1: AruneshDev XGBoost error correction. Post 2: 11-model regional stack. Prod brief → cemini-prod. — source, weather-trading, k66
+
 #### K65 ingest (2026-05-24 — @kirillk_web3 Kimi Agent Swarm guide)
 
 - [@kirillk_web3 Kimi Agent Swarm vs Claude Agent Teams](sources/x-kirillk-kimi-agent-swarm-guide-2026-05-24.md) — `[VALIDATED 2026-05-24]` K65. Moonshot swarm (300 agents / 4k steps claim) vs Anthropic Agent Teams; CCC brief staged. — source, llm-agents, k65
@@ -1038,6 +1042,12 @@ Dev-workflow tooling evaluated for Cemini integration.
 - [NOFX (NoFxAiOS/nofx) — Hackgate cautionary](entities/tools/nofx-ai-os.md) — `[DRAFT 2026-05-21]` K56 **REJECT**. AGPL-3 self-hosted agentic multi-market trading OS. Viral 9.2k★ in 2 months (late 2025). Critical security incident: SlowMist threat-intel 2025-11-17 documents zero-auth + hardcoded JWT secrets. Rejected on license (AGPL-3 vs IP-sale perimeter) AND security incident. Documented as cautionary case: the AI-agent default failure mode for Cemini's three architectural counter-decisions. — tool, agentic-trading, agpl-3, hackgate, slowmist, cautionary, reject, k56
 - [Freqtrade](entities/tools/freqtrade.md) — `[DRAFT 2026-05-21]` K56 **REFERENCE-ONLY**. Legacy GPL-3 Python algo-trading framework (~48k★). CCXT-backed for ~100+ exchanges. Hyperopt-driven strategy optimization, Telegram + WebUI control. License incompatible with Cemini IP-sale perimeter; documented as reference implementation. — tool, algorithmic-trading, crypto, python, ccxt, gpl-3, reference-only, k56
 - [OpenTrader (Open-Trader/opentrader)](entities/tools/opentrader.md) — `[DRAFT 2026-05-21]` K56 **REFERENCE-ELIGIBLE**. Modern Apache-2 TypeScript algo-trading framework (~2.6k★). CCXT-backed; built-in GridBot/DCA/RSI strategies. License clears IP-sale perimeter. Not a current adoption target (Cemini doesn't trade crypto spot), but structurally compatible if scope ever extends. — tool, algorithmic-trading, crypto, typescript, ccxt, apache-2, reference-eligible, k56
+
+#### K66 additions (2026-05-25)
+
+- [NWP bias correction ML (weather PM)](concepts/nwp-bias-correction-ml-weather-trading.md) — `[DRAFT 2026-05-25]` XGBoost error-target pattern. — concept, k66
+- [NWP model stack by region](concepts/nwp-model-stack-polymarket-weather.md) — `[DRAFT 2026-05-25]` ECMWF + HRRR/ICON-D2 EPS matrix. — concept, k66
+- [AruneshDev Kalshi weather XGBoost](entities/tools/aruneshdev-kalshi-weather-xgboost.md) — `[DRAFT 2026-05-25]` CONDITIONAL-GO steal-from (no LICENSE). — tool, k66
 
 #### K65 additions (2026-05-24)
 

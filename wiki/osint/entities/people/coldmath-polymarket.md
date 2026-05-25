@@ -13,9 +13,11 @@ related:
   - entities/people/polymarketsuccubus.md
   - entities/people/alteregoeth.md
   - concepts/polymarket-bot-architecture.md
+  - concepts/nwp-bias-correction-ml-weather-trading.md
+  - sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md
 maturity: validated
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-25
 ---
 
 ## Relations

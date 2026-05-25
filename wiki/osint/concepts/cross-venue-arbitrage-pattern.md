@@ -27,6 +27,7 @@ related:
   - entities/tools/poly-arbitrage-bot.md
   - concepts/perps-dex-funding-carry-strategy.md
   - entities/tools/suislanchez-polymarket-kalshi-weather-bot.md
+  - entities/tools/aruneshdev-kalshi-weather-xgboost.md
 maturity: draft
 created: 2026-05-05
 updated: 2026-05-24
@@ -52,6 +53,7 @@ updated: 2026-05-24
 - @sources/multi-wiki-link-eval-41url-2026-05-18.md — K53 eval; surfaced `zostaff/poly-arbitrage-bot`, a concrete implementation of this pattern
 - @entities/tools/poly-arbitrage-bot.md — a small (~20★) but on-target MIT implementation of this exact Polymarket↔Kalshi arb loop; Reference/Steal-from for the dual-venue auth + paper-trading patterns
 - @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md — K60: same dual-venue pattern on **weather** (KXHIGH + Polymarket temperature), not BTC price arb
+- @entities/tools/aruneshdev-kalshi-weather-xgboost.md — K66: Kalshi-origin weather ML; Polymarket port per @AlterEgo_eth
 
 ## Raw Concept
 

@@ -10,9 +10,11 @@ related:
   - concepts/agent-cost-routing-model-orchestra.md
   - concepts/llm-agent-systems.md
   - concepts/agent-cost-routing-model-orchestra.md
+cross-wiki:
+  - ccc-wiki/entities/tools/kimi-agent-swarm.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-21
 ---
 
 ## Relations
@@ -44,7 +46,7 @@ Moonshot AI **consumer web product** for massively parallel task execution. Anno
 | Best fit | Broad research, batch content | Trading signals, wiki RAG, governed briefs |
 | Integration | None (no prod MCP) | kb-server, prod-mcp, stash |
 
-**Verdict: NO-GO for production trading** — no market connectivity, no audit trail comparable to Cemini briefs, coordinator is vendor black box. **REFERENCE** for prompt-decomposition patterns and when to prefer @ccc-wiki concepts/subagent-orchestration.md (Claude Code Agent Teams) for codebase work.
+**Verdict: NO-GO for production trading** — no market connectivity, no audit trail comparable to Cemini briefs, coordinator is vendor black box. **REFERENCE** for prompt-decomposition patterns and when to prefer @ccc-wiki/concepts/subagent-orchestration.md (Claude Code Agent Teams) for codebase work. CCC entity: @ccc-wiki/entities/tools/kimi-agent-swarm.md.
 
 ### Related Moonshot surface
 

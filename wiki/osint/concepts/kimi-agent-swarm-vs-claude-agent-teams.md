@@ -11,9 +11,11 @@ related:
   - concepts/agent-cost-routing-model-orchestra.md
   - concepts/scatter-gather-topology.md
   - concepts/conductor-orchestrator.md
+cross-wiki:
+  - ccc-wiki/concepts/kimi-agent-swarm-vs-claude-agent-teams.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-21
 ---
 
 ## Relations
@@ -25,6 +27,7 @@ updated: 2026-05-24
 - @concepts/scatter-gather-topology.md — Cemini's bounded parallel pattern (contrast to 300-agent fan-out)
 - @concepts/conductor-orchestrator.md — prod routing layer; not replaced by Kimi Swarm
 - @ccc-wiki/briefs/2026-05-24_k65-kimi-agent-swarm-vs-claude-teams.md — CCC-facing orchestration brief
+- @ccc-wiki/concepts/kimi-agent-swarm-vs-claude-agent-teams.md — CCC synthesis (orchestration fit)
 
 ## Raw Concept
 

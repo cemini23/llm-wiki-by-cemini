@@ -9,9 +9,11 @@ related:
   - entities/tools/hermes-lcm.md
   - concepts/openclaw-security-taxonomy.md
   - concepts/polymarket-weather-trading-strategy.md
+cross-wiki:
+  - ccc-wiki/entities/tools/hermes-agent.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-24
+updated: 2026-05-21
 ---
 
 ## Relations
@@ -21,6 +23,7 @@ updated: 2026-05-24
 - @concepts/openclaw-security-taxonomy.md — Hermes Agent is positioned as the successor to OpenClaw (formerly Clawdbot / Moltbot); the security taxonomy there is the comparison frame
 - @concepts/polymarket-weather-trading-strategy.md — Post 5 uses Hermes Agent as the runtime to deploy a Polymarket weather-trading bot
 - @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — K64 Post 2: community catalog of 276+ production use cases
+- @ccc-wiki/entities/tools/hermes-agent.md — CCC routing stub (conductor comparison; not prod adopt)
 
 ## Raw Concept
 

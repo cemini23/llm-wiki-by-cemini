@@ -13,9 +13,12 @@ related:
   - entities/tools/polyweather.md
   - entities/tools/suislanchez-polymarket-kalshi-weather-bot.md
   - entities/tools/graphcast.md
+  - sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md
+  - concepts/nwp-model-stack-polymarket-weather.md
+  - concepts/nwp-bias-correction-ml-weather-trading.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-24
+updated: 2026-05-25
 ---
 
 ## Relations
@@ -28,6 +31,8 @@ updated: 2026-05-24
 - @concepts/polymarket-weather-trading-strategy.md — K60 weather PM strategy
 - @entities/tools/polyweather.md — EMOS/DEB calibration reference (AGPL, methodology only)
 - @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md — 31-member GFS ensemble implementation reference
+- @concepts/nwp-model-stack-polymarket-weather.md — K66: when to use ICON-D2 EPS etc. for threshold binaries
+- @sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md — K66: distribution vs deterministic for PM weather
 
 ## Raw Concept
 

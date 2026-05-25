@@ -8,9 +8,10 @@ related:
   - concepts/ensemble-weather-forecasting.md
   - concepts/polymarket-weather-trading-strategy.md
   - concepts/ensemble-weather-forecasting.md
+  - concepts/nwp-model-stack-polymarket-weather.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-25
 ---
 
 ## Relations
