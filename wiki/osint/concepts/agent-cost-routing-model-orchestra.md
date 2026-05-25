@@ -10,11 +10,13 @@ related:
   - concepts/reasoning-models.md
   - concepts/multi-agent-trading.md
   - entities/models/kimi-k2-6.md
+  - sources/x-kirillk-kimi-agent-swarm-guide-2026-05-24.md
+  - concepts/kimi-agent-swarm-vs-claude-agent-teams.md
   - entities/models/opus-4-7.md
   - entities/tools/awesome-ai-agents-2026-zijian.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -23,6 +25,8 @@ updated: 2026-05-12
 - `@concepts/cemini-license-posture.md` — Modified MIT discussion below
 - `@concepts/tool-evaluation-framework.md` — general framework for adopting external LLM tooling
 - `@entities/tools/awesome-ai-agents-2026-zijian.md` — curated AI agent tool list (Zijian 2026)
+- `@entities/tools/kimi-agent-swarm.md` — K65 Moonshot swarm product (K2.6 coordinator)
+- `@sources/x-kirillk-kimi-agent-swarm-guide-2026-05-24.md` — K65 comparison source
 
 ## Raw Concept
 

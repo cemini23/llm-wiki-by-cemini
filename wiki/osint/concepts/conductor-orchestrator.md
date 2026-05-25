@@ -15,6 +15,7 @@ related:
   - sources/gigpo-neurips-2025.md
   - sources/meta-router-2509.25535.md
   - concepts/recursive-multi-agent-systems.md
+  - concepts/kimi-agent-swarm-vs-claude-agent-teams.md
   - sources/blade-bayesian-listwise-alignment.md
   - concepts/llm-listwise-alignment.md
   - sources/regime-conditioned-bo-evaluation.md

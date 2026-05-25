@@ -24,6 +24,7 @@ related:
   - sources/4-3-link-re-2.md
   - sources/gemini-dr-link-eval-2026-04-28.md
   - sources/omc-talent-container-paper.md
+  - concepts/kimi-agent-swarm-vs-claude-agent-teams.md
   - concepts/ai-organisation-design.md
   - sources/vibe-trading-hkuds.md
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md

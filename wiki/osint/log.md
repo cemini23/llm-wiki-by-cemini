@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-05-24] ingest | @kirillk_web3.docx K65 — Kimi Agent Swarm guide
+
+**Source:** `@kirillk_web3.docx` → `cemini-librarian:/opt/cemini-bulk/research/@kirillk_web3.docx`
+
+- **1 source** — `x-kirillk-kimi-agent-swarm-guide-2026-05-24.md`
+- **1 concept** — `kimi-agent-swarm-vs-claude-agent-teams.md`
+- **1 tool** — `kimi-agent-swarm.md`
+- **1 person** — `kirillk-web3.md`
+- **3 updated** — `kimi-k2-6.md`, `agent-cost-routing-model-orchestra.md`, `llm-agent-systems.md`
+- **CCC brief:** `ccc-wiki/briefs/2026-05-24_k65-kimi-agent-swarm-vs-claude-teams.md` (sibling repo)
+
+---
+
 ## [2026-05-24] ingest | posts.docx K64 — @farxxxxx1 / Hermes / @KoroushAK
 
 **Source:** `posts.docx` (3 posts, `Next Post:`) → `cemini-librarian:/opt/cemini-bulk/research/posts.docx` — **not** the K49 Markov/Morin/bored2boar file (same filename)

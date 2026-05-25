@@ -112,6 +112,9 @@ related:
   - concepts/reasoning-safety-monitor.md
   - concepts/agent-authorization-stack.md
   - concepts/conductor-orchestrator.md
+  - sources/x-kirillk-kimi-agent-swarm-guide-2026-05-24.md
+  - concepts/kimi-agent-swarm-vs-claude-agent-teams.md
+  - entities/tools/kimi-agent-swarm.md
   - sources/toolorchestra-2511.21689.md
   - concepts/llm-listwise-alignment.md
   - sources/diffmas.md

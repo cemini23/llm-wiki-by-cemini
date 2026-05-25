@@ -463,6 +463,10 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 
 - [@AlterEgo_eth — ColdMath weather deconstruction (narrow bins + micro-scaling)](sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md) — `[VALIDATED 2026-05-24]` K61. Single X post: >1,200 trades via Parity; 1°C bins; micro-scaling; 1¢ tails; inferred multi-model + METAR. **1 person entity** (ColdMath). Updates weather strategy + Parity + Clawdbot. Prod brief → cemini-prod. — source, trading-posts, coldmath, adversary-model, k61
 
+#### K65 ingest (2026-05-24 — @kirillk_web3 Kimi Agent Swarm guide)
+
+- [@kirillk_web3 Kimi Agent Swarm vs Claude Agent Teams](sources/x-kirillk-kimi-agent-swarm-guide-2026-05-24.md) — `[VALIDATED 2026-05-24]` K65. Moonshot swarm (300 agents / 4k steps claim) vs Anthropic Agent Teams; CCC brief staged. — source, llm-agents, k65
+
 #### K64 ingest (2026-05-24 — posts.docx, 3 X posts)
 
 - [Trading posts — @farxxxxx1 Polymarket stack, Hermes use cases, @KoroushAK screener](sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md) — `[VALIDATED 2026-05-24]` K64. **3 posts** (`Next Post:`). Post 1: poly_data wallet pipeline + polymarket-cli + Polymarket/agents + volume exits. Post 2: Hermes 276 use cases. Post 3: Orion altcoin screener. **1 concept** (wallet-alpha pipeline) + **1 concept** (Orion workflow) + **4 tools/people**. Not duplicate of K49 `posts.docx`. Prod brief → cemini-prod. — source, trading-posts, k64
@@ -1034,6 +1038,12 @@ Dev-workflow tooling evaluated for Cemini integration.
 - [NOFX (NoFxAiOS/nofx) — Hackgate cautionary](entities/tools/nofx-ai-os.md) — `[DRAFT 2026-05-21]` K56 **REJECT**. AGPL-3 self-hosted agentic multi-market trading OS. Viral 9.2k★ in 2 months (late 2025). Critical security incident: SlowMist threat-intel 2025-11-17 documents zero-auth + hardcoded JWT secrets. Rejected on license (AGPL-3 vs IP-sale perimeter) AND security incident. Documented as cautionary case: the AI-agent default failure mode for Cemini's three architectural counter-decisions. — tool, agentic-trading, agpl-3, hackgate, slowmist, cautionary, reject, k56
 - [Freqtrade](entities/tools/freqtrade.md) — `[DRAFT 2026-05-21]` K56 **REFERENCE-ONLY**. Legacy GPL-3 Python algo-trading framework (~48k★). CCXT-backed for ~100+ exchanges. Hyperopt-driven strategy optimization, Telegram + WebUI control. License incompatible with Cemini IP-sale perimeter; documented as reference implementation. — tool, algorithmic-trading, crypto, python, ccxt, gpl-3, reference-only, k56
 - [OpenTrader (Open-Trader/opentrader)](entities/tools/opentrader.md) — `[DRAFT 2026-05-21]` K56 **REFERENCE-ELIGIBLE**. Modern Apache-2 TypeScript algo-trading framework (~2.6k★). CCXT-backed; built-in GridBot/DCA/RSI strategies. License clears IP-sale perimeter. Not a current adoption target (Cemini doesn't trade crypto spot), but structurally compatible if scope ever extends. — tool, algorithmic-trading, crypto, typescript, ccxt, apache-2, reference-eligible, k56
+
+#### K65 additions (2026-05-24)
+
+- [Kimi Agent Swarm vs Claude Agent Teams](concepts/kimi-agent-swarm-vs-claude-agent-teams.md) — `[DRAFT 2026-05-24]` topology + fit matrix. — concept, k65
+- [Kimi Agent Swarm (tool)](entities/tools/kimi-agent-swarm.md) — `[DRAFT 2026-05-24]` Moonshot web product; reference-only for Cemini. — tool, k65
+- [@kirillk_web3](entities/people/kirillk-web3.md) — `[DRAFT 2026-05-24]` curator stub. — person, k65
 
 #### K64 additions (2026-05-24)
 
