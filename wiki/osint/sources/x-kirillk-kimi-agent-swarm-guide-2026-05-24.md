@@ -10,7 +10,7 @@ related:
   - concepts/agent-cost-routing-model-orchestra.md
   - concepts/llm-agent-systems.md
   - entities/people/kirillk-web3.md
-  - ccc-wiki/briefs/2026-05-24_k65-kimi-agent-swarm-vs-claude-teams.md
+  - "@ccc-wiki/briefs/2026-05-24_k65-kimi-agent-swarm-vs-claude-teams.md"
 maturity: validated
 read_status: deep-read
 created: 2026-05-24
