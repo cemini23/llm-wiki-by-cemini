@@ -20,6 +20,7 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/high-signal-paper-patterns.md
   - concepts/mcp-tool-marketplace.md
+  - entities/tools/warproxxx-poly-data.md
   - entities/platforms/polymarket.md
   - entities/infrastructure/deepseek-api.md
   - sources/dune-analytics-mcp.md

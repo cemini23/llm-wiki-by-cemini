@@ -29,6 +29,8 @@ related:
   - concepts/perps-dex-funding-carry-strategy.md
   - concepts/sports-prediction-consensus-agent.md
   - entities/people/gustafssonkotte.md
+  - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
+  - concepts/polymarket-wallet-alpha-pipeline.md
   - entities/tools/ai-polymarket-agent.md
   - concepts/event-based-prediction-market-ml.md
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
@@ -211,6 +213,10 @@ A second Polymarket bot operator (@bored2boar, claiming 1,500+ bots built and ~$
 | "Rushing the process" — manual test → backtest → execution sim → live dry test → deploy | Strategy development cycle — `[CONFIRMED]` |
 
 Net: the @0x_Punisher playbook's *operational principles* are now two-source-confirmed. Specific numbers (latency in ms, exact PnL) remain `[TENTATIVE]` single-source each. @bored2boar adds nothing the @0x_Punisher page lacks at the engineering-detail level (no 6-layer-equivalent spec), so this page stays canonical; @bored2boar is corroboration, not new architecture.
+
+### K64 corroboration — @farxxxxx1 (May 2026)
+
+@sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md adds a third operator narrative: **pre-resolution exits** (91% of top wallets, volume-spike trigger), **don't hold to settlement**, kill sports/low-volume books, consensus filter reduces losers. Synthesized in @concepts/polymarket-wallet-alpha-pipeline.md — complements copy-trading / whale-watch, not a replacement for @0x_Punisher latency stack.
 
 ### Independent corroboration — @adiix_official (May 2026)
 

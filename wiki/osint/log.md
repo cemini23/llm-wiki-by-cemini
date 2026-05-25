@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-05-24] ingest | posts.docx K64 — @farxxxxx1 / Hermes / @KoroushAK
+
+**Source:** `posts.docx` (3 posts, `Next Post:`) → `cemini-librarian:/opt/cemini-bulk/research/posts.docx` — **not** the K49 Markov/Morin/bored2boar file (same filename)
+
+- **1 source** — `trading-posts-farxxxxx-hermes-koroush-2026-05-24.md`
+- **2 concepts** — `polymarket-wallet-alpha-pipeline.md`, `altcoin-screener-orion-workflow.md`
+- **1 tool** — `warproxxx-poly-data.md`; **1 updated** — `polymarket-agents.md` (K64 URL confirm + wallet-alpha pattern)
+- **2 people** — `farxxxxx1-polymarket.md`, `koroushak.md`
+- **3 updated** — `hermes-agent.md`, `polymarket-bot-architecture.md`, `polymarket-copy-trading-strategy.md`
+- **Prod brief:** `2026-05-24_k64-polymarket-wallet-pipeline-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+
+---
+
 ## [2026-05-24] ingest | Multi-Wiki Tool Evaluation 36-URL (K63)
 
 **Source:** `Tool Evaluation for Wiki Ingestion.docx` → `cemini-librarian:/opt/cemini-bulk/research/Tool Evaluation for Wiki Ingestion.docx`

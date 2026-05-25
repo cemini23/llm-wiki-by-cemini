@@ -5,12 +5,13 @@ tags: [entity, tool, llm-agent, agent-runtime, self-hosted, nous-research, self-
 keywords: [hermes-agent, nous-research, self-hosted-agent, self-improving-skills, persistent-memory, memory-md, user-md, cron-scheduling, messaging-gateway, openclaw-successor]
 related:
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
+  - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - entities/tools/hermes-lcm.md
   - concepts/openclaw-security-taxonomy.md
   - concepts/polymarket-weather-trading-strategy.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -19,10 +20,11 @@ updated: 2026-05-18
 - @entities/tools/hermes-lcm.md — Lossless Context Management is a context-engine *plugin* for the Hermes Agent ecosystem; this page is the host runtime
 - @concepts/openclaw-security-taxonomy.md — Hermes Agent is positioned as the successor to OpenClaw (formerly Clawdbot / Moltbot); the security taxonomy there is the comparison frame
 - @concepts/polymarket-weather-trading-strategy.md — Post 5 uses Hermes Agent as the runtime to deploy a Polymarket weather-trading bot
+- @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — K64 Post 2: community catalog of 276+ production use cases
 
 ## Raw Concept
 
-What prompted this page: K52 ingest of @0xMovez's X post deploying a Polymarket weather-trading bot on Hermes Agent. The existing @entities/tools/hermes-lcm.md page referenced "the Hermes Agent ecosystem" without a host-runtime page — this fills that gap.
+What prompted this page: K52 ingest of @0xMovez's X post deploying a Polymarket weather-trading bot on Hermes Agent. K64 adds @Shruti_0810 community deployment taxonomy (not new repo audit). The existing @entities/tools/hermes-lcm.md page referenced "the Hermes Agent ecosystem" without a host-runtime page — this fills that gap.
 
 ## Narrative
 
@@ -58,6 +60,10 @@ One-line installer: `curl -fsSL https://raw.githubusercontent.com/NousResearch/h
 - **Reference value is real.** The self-improving-skill loop (write a markdown skill after N tool calls, reload it next time) and the `MEMORY.md` / `USER.md` frozen-snapshot pattern are clean ideas worth comparing against Cemini's own memory/skill handling — and against the related @entities/tools/hermes-lcm.md context engine.
 - **Security note.** The post's deployment hands an agent a funded Polygon wallet's private key and runs unattended trading via copy-pasted prompts. That is a high-trust configuration; flagged here, not endorsed. The standard install also pipes a remote script straight into `bash`.
 - **Verified, mature, MIT.** The K52 source was one creator post, but the project itself is confirmed (see above): `NousResearch/hermes-agent`, MIT, ~156k★, actively maintained. The "not a Cemini adoption" verdict is therefore a *fit* decision (it duplicates Conductor), not a credibility one — and if Cemini's orchestration ever needs replacing, Hermes Agent is a serious, license-clean reference rather than a speculative one.
+
+### K64 community catalog (@Shruti_0810) [TENTATIVE]
+
+Post 2 groups **276+** claimed production uses: dev swarms (“zero human company”), messaging + device integrations, business automation, autonomous content pipelines, research briefings, K8s enterprise. Framing: shift from “AI answers questions” (2024) → “AI helps work” (2025) → **persistent autonomous workers** (2026). No new technical artifact beyond reinforcing Hermes as **infrastructure-layer** competitor/reference to Conductor — compare @concepts/openclaw-security-taxonomy.md.
 
 ## Snippets
 

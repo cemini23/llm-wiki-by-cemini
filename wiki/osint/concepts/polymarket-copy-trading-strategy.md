@@ -23,6 +23,9 @@ related:
   - concepts/polymarket-retail-trading-discipline.md
   - entities/infrastructure/cemini-egress-fi.md
   - concepts/cemini-ai-assistant.md
+  - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
+  - concepts/polymarket-wallet-alpha-pipeline.md
+  - entities/tools/warproxxx-poly-data.md
 
 maturity: draft
 created: 2026-05-21

@@ -13,10 +13,13 @@ related:
   - entities/tools/financetoolkit.md
   - entities/tools/klaassen-magnus-elo.md
   - entities/tools/prediction-market-analysis.md
+  - entities/tools/warproxxx-poly-data.md
+  - concepts/polymarket-wallet-alpha-pipeline.md
+  - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
 maturity: draft
 hub: true
 created: 2026-05-05
-updated: 2026-05-18
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -32,6 +35,9 @@ updated: 2026-05-18
 - @entities/tools/financetoolkit.md — K28 Adopt; 150-metric library that operates over historical data (downstream consumer)
 - @entities/tools/klaassen-magnus-elo.md — K28 Steal-from; tennis-prediction Elo runs on historical match data, the predictions feed prediction-market trades — direct downstream consumer
 - @entities/tools/prediction-market-analysis.md — the K30 `5_5-links-2` URL-6 Steal-from item, now given a verified entity page (K52, 2026-05-18): MIT, ~3,378★, the largest public Polymarket+Kalshi **trades + markets** dataset (36 GiB) + collection/analysis framework — a concrete Layer-1 backtest substrate for this hub
+- @entities/tools/warproxxx-poly-data.md — GPL-3.0 ~86M-trade Polars pipeline (reference-only; Wave 5B Reject + K64 wallet screen)
+- @concepts/polymarket-wallet-alpha-pipeline.md — K64 wallet-alpha consumer pattern
+- @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — K64 cites poly_data scale
 
 ## Raw Concept
 

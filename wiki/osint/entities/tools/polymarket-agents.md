@@ -7,6 +7,8 @@ related:
   - sources/links-3-5-4-tool-eval.md
   - sources/polymarket-5-5-tool-eval.md
   - sources/caiovicentino-polymarket-mcp-server.md
+  - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
+  - concepts/polymarket-wallet-alpha-pipeline.md
   - entities/platforms/polymarket.md
   - entities/tools/polymarket-python-order-utils.md
   - entities/tools/polymarket-trackers.md
@@ -14,7 +16,7 @@ related:
   - entities/tools/ai-polymarket-agent.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-20
+updated: 2026-05-24
 ---
 
 ## Relations
@@ -25,6 +27,8 @@ updated: 2026-05-20
 - @entities/platforms/polymarket.md — Polymarket venue entity
 - @entities/tools/polymarket-python-order-utils.md — companion Adopt; order-signing layer
 - @entities/tools/ai-polymarket-agent.md — K55 third-party MCP server built on top of this official framework (kaktusesquire6rmu/ai-polymarket-agent); Phase-0 audit pending
+- @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — K64 Post 1: custom 4-check Claude loop + Kelly on top of framework
+- @concepts/polymarket-wallet-alpha-pipeline.md — “brain” layer in wallet-alpha stack
 
 ## Raw Concept
 
@@ -32,8 +36,8 @@ Polymarket Agents is the **officially sanctioned** developer framework for build
 
 ## Narrative
 
-- **URL**: per K30 eval URL 18 (verify exact GitHub path)
-- **License**: MIT
+- **URL**: `https://github.com/Polymarket/agents` [CONFIRMED 2026-05-24, K64 + prior eval]
+- **License**: MIT (~3.6k★)
 - **Status**: **officially sanctioned** by Polymarket (rare for prediction-market platforms)
 - **Maturity**: per eval, "comprehensive utility suite"
 
@@ -65,10 +69,13 @@ DeepSeek brain (decides "open Polymarket position on contract X")
             → Polymarket exchange
 ```
 
+### K64 operator pattern (@farxxxxx1)
+
+Strip default agent logic; run **four-check** Claude loop (base rate, news, whale presence, crowd bias) + quarter-Kelly sizing before consensus execution layer. See @concepts/polymarket-wallet-alpha-pipeline.md.
+
 ### Open questions [NEEDS VERIFICATION 2026-05-05]
 
-- Exact GitHub URL of Polymarket Agents (need to confirm in eval source)
-- Maturity signals (stars, commits, latest version, release cadence)
+- Maturity signals (commits, latest version, release cadence) beyond star count
 - Whether it's actively maintained (eval claims "comprehensive utility suite" but doesn't quote commit-dates)
 - Relationship to Polymarket's official `py-clob-client` — does Polymarket Agents wrap py-clob-client, or are they parallel libraries?
 - Test coverage + production deployment signal

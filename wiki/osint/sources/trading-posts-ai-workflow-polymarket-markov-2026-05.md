@@ -8,6 +8,7 @@ related:
   - concepts/ai-assisted-trading-workflow.md
   - concepts/polymarket-bot-architecture.md
   - concepts/quant-finance.md
+  - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - entities/people/rohonchain.md
 maturity: validated
 read_status: deep-read
@@ -22,12 +23,13 @@ clusters: [quant-finance]
 - @concepts/ai-assisted-trading-workflow.md — synthesized from Post 1 (@TraderMorin discretionary AI workflow)
 - @concepts/polymarket-bot-architecture.md — Post 2 (@bored2boar) corroborates the existing @0x_Punisher bot playbook
 - @concepts/quant-finance.md — corpus-index home for the regime-switching material
+- @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — later `posts.docx` drop (same filename, different posts)
 
 ## Raw Concept
 
 - **Title**: `posts.docx` — compilation of three trader social-media posts/articles
 - **Type**: social-media long-form posts (Twitter/X creators)
-- **Location**: `cemini-librarian:/opt/cemini-bulk/research/posts.docx`
+- **Location**: `cemini-librarian:/opt/cemini-bulk/research/posts.docx` (K49 drop; **superseded on librarian by K64 `posts.docx` 2026-05-24** — different posts, same filename)
 - **Retrieved**: 2026-05-16 (dropped into `research to be indexed/`)
 - **Contents**: 3 posts — (1) @TraderMorin AI-assisted discretionary trading workflow; (2) @bored2boar Polymarket bot-building mistakes; (3) @RohOnChain Markov-chain / HMM regime-switching framework with full Python implementation.
 

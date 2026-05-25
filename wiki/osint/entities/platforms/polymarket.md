@@ -33,6 +33,9 @@ related:
   - sources/polymarket-microstructure-anatomy-2604.24366.md
   - sources/polymarket-nba-arbitrage-2605.00864.md
   - concepts/polymarket-bot-architecture.md
+  - concepts/polymarket-wallet-alpha-pipeline.md
+  - entities/tools/warproxxx-poly-data.md
+  - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - sources/x-polymarket-bot-playbook-punisher-2026-05.md
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/polymarket-clob-api.md
