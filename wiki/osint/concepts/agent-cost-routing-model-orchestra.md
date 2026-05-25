@@ -12,6 +12,7 @@ related:
   - entities/models/kimi-k2-6.md
   - sources/x-kirillk-kimi-agent-swarm-guide-2026-05-24.md
   - concepts/kimi-agent-swarm-vs-claude-agent-teams.md
+  - entities/tools/kimi-agent-swarm.md
   - entities/models/opus-4-7.md
   - entities/tools/awesome-ai-agents-2026-zijian.md
 maturity: draft
