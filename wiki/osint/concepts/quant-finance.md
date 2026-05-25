@@ -95,6 +95,7 @@ related:
   - sources/hmm-jurafsky-martin-2026.md
   - sources/the-three-dimensional-decomposition-of-volatility-memory.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
+  - concepts/altcoin-screener-orion-workflow.md
   - sources/gdelt-4-3-29.md
   - concepts/markov-regime-switching-models.md
   - concepts/ai-assisted-trading-workflow.md

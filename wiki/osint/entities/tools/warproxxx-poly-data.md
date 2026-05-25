@@ -10,6 +10,8 @@ related:
   - concepts/prediction-market-historical-analysis.md
   - concepts/cemini-license-posture.md
   - entities/platforms/polymarket.md
+  - concepts/polymarket-copy-trading-strategy.md
+  - entities/people/farxxxxx1-polymarket.md
 maturity: draft
 created: 2026-05-24
 updated: 2026-05-24

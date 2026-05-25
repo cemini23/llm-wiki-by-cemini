@@ -14,6 +14,9 @@ related:
   - concepts/altcoin-screener-orion-workflow.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
+  - concepts/polymarket-copy-trading-strategy.md
+  - concepts/prediction-market-historical-analysis.md
+  - entities/platforms/polymarket.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-24

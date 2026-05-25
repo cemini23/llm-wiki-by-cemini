@@ -14,6 +14,7 @@ related:
   - entities/tools/hermes-agent.md
   - entities/tools/arcticdb.md
   - entities/tools/prediction-market-analysis.md
+  - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-18
@@ -33,6 +34,7 @@ clusters: [quant-finance]
 - @entities/tools/hermes-agent.md — Post 5 deploys on Nous Research's Hermes Agent runtime
 - @entities/tools/arcticdb.md — Post 1's tick-store repo (Man Group), an adoption candidate for the Cemini market-dataset layer
 - @entities/tools/prediction-market-analysis.md — the repo Post 4 advertised; verified 2026-05-18 (real + MIT, but the post misrepresents its contents)
+- @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — K64; Hermes use-case catalog (Post 2) extends Post 5 path
 - @seo-wiki/briefs/2026-05-18_ugc-3-platform-monetization-loop.md — Post 3 (@timbidefi UGC creator monetization) routed to seo-wiki as a brief; off-topic for OSINT
 
 ## Raw Concept
