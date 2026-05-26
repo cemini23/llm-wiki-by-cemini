@@ -36,7 +36,7 @@ Source: wiki file-back from *Outlier Weekly*, Issue 2, published 2026-05-26 at h
 
 ### Market context
 
-The market resolves YES if Iran initiates a **major** closure of its airspace (not solely weather-related) by **2026-06-30, 11:59 PM ET** — a broad suspension of commercial flights across Iran or a major Iranian airspace region [Source: Polymarket resolution rules, Gamma API 2026-05-26].
+The market resolves YES if Iran initiates a **major** closure of its airspace (not solely weather-related) by **2026-06-30, 11:59 PM ET** — a broad suspension of commercial flights across Iran or a major Iranian airspace region [Source: Polymarket resolution rules, Gamma API 2026-05-26]. **Polymarket event (June 30 outcome):** https://polymarket.com/event/iran-closes-its-airspace-by — do not use the per-market slug in `/event/` URLs; those 404. The event page lists all date legs; Issue 2 applies to **June 30**.
 
 Issue 2 was chosen for **category breadth** (geopolitical vs Issue 1’s regulatory Anthropic–Pentagon binary) and **liquidity** (~$195k 24h volume at publish lock).
 
