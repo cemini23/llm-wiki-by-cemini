@@ -25,6 +25,12 @@ clusters: [cemini-internal]
 - @entities/tools/cryptex-oss.md — Adopt (cybersec)
 - @entities/tools/claudish.md — eval Adopt overturned (no LICENSE on GitHub)
 - @entities/tools/aruneshdev-kalshi-weather-xgboost.md — URL 22 duplicate; Reject upheld
+- @ccc-wiki/entities/tools/google-eng-practices.md — CCC reference (eng-practices)
+- @ccc-wiki/entities/tools/ml-intern.md — CCC reference
+- @ccc-wiki/entities/tools/rowboat.md — CCC steal-from
+- @ccc-wiki/entities/tools/centaur.md — CCC architecture-only steal-from
+- @ccc-wiki/entities/tools/purple-cli.md — CCC CONDITIONAL-GO
+- @ccc-wiki/concepts/tools-we-dont-use.md — claudish overturn register
 
 ## Raw Concept
 

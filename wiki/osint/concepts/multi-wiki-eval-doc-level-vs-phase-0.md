@@ -7,6 +7,7 @@ related:
   - sources/eval-tool-evaluation-cemini-multi-wiki-v3-2026-05-14.md
   - sources/eval-github-repos-2026-05-13.md
   - entities/tools/bukosabino-ta.md
+  - entities/tools/claudish.md
   - entities/tools/tradingview-mcp-atilaahmettaner.md
   - entities/tools/aulekator-polymarket-btc-bot.md
   - concepts/cemini-license-posture.md

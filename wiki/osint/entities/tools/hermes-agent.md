@@ -9,11 +9,10 @@ related:
   - entities/tools/hermes-lcm.md
   - concepts/openclaw-security-taxonomy.md
   - concepts/polymarket-weather-trading-strategy.md
-cross-wiki:
-  - ccc-wiki/entities/tools/hermes-agent.md
+  - "@ccc-wiki/entities/tools/hermes-agent.md"
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-21
+updated: 2026-05-26
 ---
 
 ## Relations

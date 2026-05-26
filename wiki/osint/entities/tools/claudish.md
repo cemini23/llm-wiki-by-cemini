@@ -5,6 +5,8 @@ tags: [entity, tool, cli, reject, no-license, k68]
 keywords: [claudish, madappgang, no-license, reject]
 related:
   - sources/multi-wiki-tool-eval-22url-2026-05-26.md
+  - concepts/cemini-license-posture.md
+  - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
 maturity: draft
 created: 2026-05-26
 updated: 2026-05-26

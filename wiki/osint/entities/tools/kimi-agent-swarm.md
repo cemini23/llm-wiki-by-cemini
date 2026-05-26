@@ -9,12 +9,10 @@ related:
   - concepts/kimi-agent-swarm-vs-claude-agent-teams.md
   - concepts/agent-cost-routing-model-orchestra.md
   - concepts/llm-agent-systems.md
-  - concepts/agent-cost-routing-model-orchestra.md
-cross-wiki:
-  - ccc-wiki/entities/tools/kimi-agent-swarm.md
+  - "@ccc-wiki/entities/tools/kimi-agent-swarm.md"
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-21
+updated: 2026-05-26
 ---
 
 ## Relations
@@ -24,6 +22,7 @@ updated: 2026-05-21
 - @concepts/kimi-agent-swarm-vs-claude-agent-teams.md — comparison vs Anthropic Agent Teams
 - @concepts/llm-agent-systems.md — multi-agent systems hub
 - @concepts/agent-cost-routing-model-orchestra.md — same K2.6 vendor / cost-routing family
+- @ccc-wiki/entities/tools/kimi-agent-swarm.md — CCC routing entity
 
 ## Raw Concept
 
@@ -46,7 +45,7 @@ Moonshot AI **consumer web product** for massively parallel task execution. Anno
 | Best fit | Broad research, batch content | Trading signals, wiki RAG, governed briefs |
 | Integration | None (no prod MCP) | kb-server, prod-mcp, stash |
 
-**Verdict: NO-GO for production trading** — no market connectivity, no audit trail comparable to Cemini briefs, coordinator is vendor black box. **REFERENCE** for prompt-decomposition patterns and when to prefer @ccc-wiki/concepts/subagent-orchestration.md (Claude Code Agent Teams) for codebase work. CCC entity: @ccc-wiki/entities/tools/kimi-agent-swarm.md.
+**Verdict: NO-GO for production trading** — no market connectivity, no audit trail comparable to Cemini briefs, coordinator is vendor black box. **REFERENCE** for prompt-decomposition patterns and when to prefer @ccc-wiki/concepts/subagent-orchestration.md (Claude Code Agent Teams) for codebase work. CCC entity page: `@ccc-wiki/entities/tools/kimi-agent-swarm.md`.
 
 ### Related Moonshot surface
 

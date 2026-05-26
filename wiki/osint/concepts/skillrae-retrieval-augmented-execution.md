@@ -8,11 +8,11 @@ related:
   - concepts/code-as-agent-harness.md
   - concepts/llm-agent-systems.md
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
-  - ccc-wiki/concepts/skillrae-retrieval-augmented-execution.md
-  - ccc-wiki/sources/arxiv-skillrae-2605.10114.md
+  - "@ccc-wiki/concepts/skillrae-retrieval-augmented-execution.md"
+  - "@ccc-wiki/sources/arxiv-skillrae-2605.10114.md"
 maturity: draft
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-05-26
 ---
 
 ## Relations

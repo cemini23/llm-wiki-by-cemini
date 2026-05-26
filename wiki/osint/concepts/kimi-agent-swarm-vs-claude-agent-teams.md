@@ -11,11 +11,10 @@ related:
   - concepts/agent-cost-routing-model-orchestra.md
   - concepts/scatter-gather-topology.md
   - concepts/conductor-orchestrator.md
-cross-wiki:
-  - ccc-wiki/concepts/kimi-agent-swarm-vs-claude-agent-teams.md
+  - "@ccc-wiki/concepts/kimi-agent-swarm-vs-claude-agent-teams.md"
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-21
+updated: 2026-05-26
 ---
 
 ## Relations

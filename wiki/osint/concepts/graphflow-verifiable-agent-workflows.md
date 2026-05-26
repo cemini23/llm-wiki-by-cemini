@@ -9,11 +9,11 @@ related:
   - sources/agentic-harness-engineering.md
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
   - concepts/llm-agent-systems.md
-  - ccc-wiki/concepts/graphflow-verifiable-agent-workflows.md
-  - ccc-wiki/sources/arxiv-graphflow-2605.14968.md
+  - "@ccc-wiki/concepts/graphflow-verifiable-agent-workflows.md"
+  - "@ccc-wiki/sources/arxiv-graphflow-2605.14968.md"
 maturity: draft
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-05-26
 ---
 
 ## Relations
