@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-26] file-back | Polymarket LP weather discover + @GnatykA retail validation
+
+**Source:** Prod handoff brief + X thread @GnatykA + operator screenshot (Seoul/Warsaw May 26 temp bins, maker rebate $5.96)
+
+- **2 new concepts** — `polymarket-lp-weather-market-discovery.md`, `polymarket-lp-weather-guard.md`
+- **2 updated** — `polymarket-lp-rewards-farming.md`, `polymarket-lp-bot-phase0-spec.md`
+- **Prod brief:** `briefs/2026-05-26_polymarket-lp-weather-retail-validation-gnatyk-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+
+---
+
 ## [2026-05-26] ingest | LoMacKinlay1988.pdf + Tool Evaluation Prompt Analysis.docx (K68)
 
 **Sources:** `LoMacKinlay1988.pdf` + `Tool Evaluation Prompt Analysis.docx` → both moved to librarian raw layer

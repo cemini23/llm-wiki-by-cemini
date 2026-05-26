@@ -16,9 +16,11 @@ related:
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
+  - concepts/polymarket-lp-weather-market-discovery.md
+  - concepts/polymarket-lp-weather-guard.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-26
 clusters: [polymarket, market-making, phase-0]
 ---
 
@@ -30,6 +32,8 @@ clusters: [polymarket, market-making, phase-0]
 - @concepts/polymarket-microstructure-findings.md — depth, spread, trade-direction constraints on scanner filters
 - @concepts/monte-carlo-permutation-test-mcpt.md — pre-live statistical gate for any strategy claiming edge
 - @entities/tools/polymarket-clob-api.md, @entities/tools/polymarket-gamma-api.md — required APIs
+- @concepts/polymarket-lp-weather-market-discovery.md — prod weather LP discover pass (orthogonal to this Phase-0 politics/geopolitics spec)
+- @concepts/polymarket-lp-weather-guard.md — pre-resolution exit when weather pass enabled
 
 ## Raw Concept
 

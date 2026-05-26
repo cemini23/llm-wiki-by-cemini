@@ -18,9 +18,11 @@ related:
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/ai-polymarket-agent.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/polymarket-lp-weather-market-discovery.md
+  - concepts/polymarket-lp-weather-guard.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-21
+updated: 2026-05-26
 clusters: [polymarket, market-making, yield-farming]
 ---
 
@@ -38,6 +40,8 @@ clusters: [polymarket, market-making, yield-farming]
 - @entities/platforms/polymarket.md — venue entity
 - @entities/tools/polymarket-clob-api.md, @entities/tools/polymarket-gamma-api.md — API surfaces required
 - @concepts/polymarket-lp-bot-phase0-spec.md — Phase-0 implementation spec (K56 follow-up, design-only)
+- @concepts/polymarket-lp-weather-market-discovery.md — Cemini weather LP discover pass + retail validation (Seoul/Warsaw May 2026)
+- @concepts/polymarket-lp-weather-guard.md — pre-resolution exit on accidental weather LP fills
 
 ## Raw Concept
 
@@ -237,6 +241,10 @@ The structural pitch: hundreds of thousands of dollars on both sides with 1¢ sp
 The K55 capital reference was `$200 → $40 in 10 days at Top 6-7%` ([TENTATIVE], @MatiasScalbi self-reported). K56 adds a smaller-capital data point: **$50 → $18 in 48 hours at Top 15%**.
 
 Rewards-per-capital efficiency is **back-loaded at small sizes** because the leaderboard rewards `time-weighted-open-interest × participation-share`; small LPs farming light markets capture proportionally more of the reward pool than whales (who concentrate in deep markets where their fractional participation share is small). This validates the K55 "$50-$200 sweet-spot for retail entry" framing.
+
+### Weather LP retail validation (2026-05-26) `[CONFIRMED — screenshot]`
+
+X thread @GnatykA promoted a “limit buy + 99¢ sell” lifehack on **weather markets** with **~5% per day** returns. Operator screenshot + prod brief corroborate **same-day city temperature bins** (Seoul 25°C+, Warsaw 26°C on May 26) with fills at **30¢ / 48¢** and a **$5.96 maker rebate** exceeding individual **~$4.80** sell legs. See @concepts/polymarket-lp-weather-market-discovery.md for Cemini discover gates and tuning backlog. The 99¢ meme is likely **not** the paying mechanism; **maker rebate + two-sided mid quotes** are.
 
 ## Dead Ends
 

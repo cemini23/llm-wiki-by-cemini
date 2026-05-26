@@ -36,9 +36,11 @@ related:
   - concepts/nwp-bias-correction-ml-weather-trading.md
   - concepts/nwp-model-stack-polymarket-weather.md
   - entities/tools/aruneshdev-kalshi-weather-xgboost.md
+  - concepts/polymarket-lp-weather-market-discovery.md
+  - concepts/polymarket-lp-weather-guard.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-25
+updated: 2026-05-26
 ---
 
 ## Relations
@@ -57,7 +59,9 @@ updated: 2026-05-25
 - @sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md — K66 XGBoost error model + regional NWP stack
 - @concepts/nwp-bias-correction-ml-weather-trading.md — ML-on-NWP-error pattern
 - @concepts/nwp-model-stack-polymarket-weather.md — ECMWF anchor + regional model matrix
-- @entities/tools/aruneshdev-kalshi-weather-xgboost.md — reference repo (no license)
+- @entities/tools/aruneshdev-kalshi-weather-xgboost.md
+- @concepts/polymarket-lp-weather-market-discovery.md — maker-side LP on same temperature slugs (orthogonal to directional edge)
+- @concepts/polymarket-lp-weather-guard.md — pre-resolution exit for LP weather fills — reference repo (no license)
 - @entities/people/polydao-mr-buzzoni.md — K57 author
 - @sources/x-docx-polymarket-claude-md-2026-04-23.md — Section 1 by @AlterEgo_eth (Gamma API integration mechanics)
 - @sources/x2-docx-polymarket-theparuchh-2026.md — full operational guide by @theparuchh
