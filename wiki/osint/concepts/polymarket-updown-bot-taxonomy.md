@@ -17,6 +17,8 @@ related:
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
   - concepts/polymarket-btc-already-position-gate.md
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
+  - concepts/polymarket-updown-15min-execution-latency.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-24

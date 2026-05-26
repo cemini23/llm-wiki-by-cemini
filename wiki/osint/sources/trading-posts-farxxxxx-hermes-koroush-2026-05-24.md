@@ -13,10 +13,12 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/altcoin-screener-orion-workflow.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - concepts/polymarket-copy-trading-strategy.md
   - concepts/prediction-market-historical-analysis.md
   - entities/platforms/polymarket.md
+  - concepts/koroushak-discretionary-trading-curriculum.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-24
@@ -35,6 +37,7 @@ clusters: [polymarket, trading-posts]
 - @concepts/polymarket-bot-architecture.md — Post 1 corroborates exit / backtest lessons
 - @concepts/altcoin-screener-orion-workflow.md — Post 3 Orion screener workflow
 - @sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md — prior `posts.docx` ingest (different 3 posts; same filename)
+- @sources/trading-posts-compilation-38-2026-05-26.md — K67 mega compilation (38 posts; same filename family)
 - @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — Hermes weather path (K52)
 
 ## Raw Concept

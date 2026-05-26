@@ -5,16 +5,20 @@ tags: [entity, person, x-twitter, quant-finance, backtest, monte-carlo, permutat
 keywords: [phosphenq, phosphen, mcpt-evangelist, timothy-masters-reference, monte-carlo-permutation-test, data-mining-bias-vs-alpha, polymarket-case-study]
 related:
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
   - concepts/monte-carlo-permutation-test-mcpt.md
+  - concepts/market-memory-hurst-regime.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-26
 ---
 
 ## Relations
 
-- @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — Post 5 primary attribution
+- @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — Post 5 primary attribution (MCPT)
+- @sources/trading-posts-compilation-38-2026-05-26.md — Post 27 (Hurst / market memory)
 - @concepts/monte-carlo-permutation-test-mcpt.md — synthesized concept page
+- @concepts/market-memory-hurst-regime.md — pre-backtest regime layer
 
 ## Raw Concept
 

@@ -18,10 +18,12 @@ related:
   - entities/tools/kreopolybot.md
   - entities/tools/polymarketanalytics-com.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/market-memory-hurst-regime.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
 
 maturity: validated
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-26
 read_status: read
 clusters: [polymarket, quant-finance, copy-trading]
 ---

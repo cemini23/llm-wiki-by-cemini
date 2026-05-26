@@ -6,10 +6,11 @@ keywords: [polymarket, 0x_Punisher, punisher, pbot-6, bot playbook, 6-layer webs
 related:
   - concepts/polymarket-bot-architecture.md
   - entities/platforms/polymarket.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-26
 ---
 
 ## Relations

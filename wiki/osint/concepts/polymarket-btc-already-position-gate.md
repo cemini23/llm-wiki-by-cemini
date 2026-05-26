@@ -5,19 +5,22 @@ tags: [concept, polymarket, btc-updown, bot-architecture, microstructure, k62]
 keywords: [position-already, dynamic-threshold, direction-efficiency, tape-speed, gustafssonkotte, env-flag, quadrant-deprecation]
 related:
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
   - entities/people/gustafssonkotte.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - concepts/polymarket-bot-architecture.md
+  - concepts/polymarket-updown-15min-execution-latency.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-26
 ---
 
 ## Relations
 
 - @sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md — K62 primary source
+- @sources/trading-posts-compilation-38-2026-05-26.md — K67 Post 32 FOK execution fix
 - @entities/people/gustafssonkotte.md — operator
 - @concepts/polymarket-three-quadrant-blacklist-microtrend.md — prior Q1/Q2/Q3 direction stack; demoted after K62
 - @concepts/multi-module-bot-conflict-detector-pattern.md — K55 lineage (conflict skip vs new first-branch gate)
@@ -59,6 +62,10 @@ Author reports prior strategy failed despite “correct brain” because **four 
 - Log **direction-module accuracy** separately — if ≈50%, demote or zero-weight per K62 evidence
 - Keep **ENV kill-switch** + session liquidity schedule as operational defaults
 - Do not treat 9-trade day as validated edge — require export-verified sample (Polymarket CSV rule from K55/K57). **2026-05-24 check:** no public `polymarket.com/@gustafssonkotte` profile; wallet unpublished — K62 n=330 / n=9 remain author-only.
+
+### K67 execution addendum — FOK vs resting limit (Post 32)
+
+@Gustafssonkotte reports **96% backtest vs ~60% live** on export — not logic failure but **12s resting limit** orders that chase price. Fix: **fill-or-kill / immediate** with small cushion; env flag toggles behavior. Reinforces @concepts/polymarket-bot-architecture.md: measured edge on snapshots ≠ live fills.
 
 ### Relation to K57 quadrant/blacklist
 

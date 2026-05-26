@@ -5,16 +5,20 @@ tags: [concept, crypto-trading, discretionary, screener, k64]
 keywords: [orion-terminal, trd-5m, volume-5m, altcoin-discovery, koroushak, breakout-reversal-regime]
 related:
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
   - entities/people/koroushak.md
+  - concepts/koroushak-discretionary-trading-curriculum.md
   - concepts/quant-finance.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-26
 ---
 
 ## Relations
 
 - @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — K64 Post 3
+- @sources/trading-posts-compilation-38-2026-05-26.md — K67 curriculum cross-ref
+- @concepts/koroushak-discretionary-trading-curriculum.md — regime + process wrapper
 - @entities/people/koroushak.md — author
 
 ## Raw Concept

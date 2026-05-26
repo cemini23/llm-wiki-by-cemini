@@ -16,6 +16,7 @@ related:
   - concepts/prediction-market-historical-analysis.md
   - concepts/kalshi-api-reference.md
   - concepts/non-latency-arbitrage-strategies.md
+  - concepts/polymarket-marginal-polytope-arbitrage.md
   - concepts/prediction-market-statistical-arbitrage.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - entities/tools/pmxt.md

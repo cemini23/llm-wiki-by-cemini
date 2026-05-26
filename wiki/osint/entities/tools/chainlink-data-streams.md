@@ -7,9 +7,10 @@ related:
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
   - entities/people/gustafssonkotte.md
+  - entities/tools/pyth-terminal.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-26
 ---
 
 ## Relations

@@ -11,9 +11,10 @@ related:
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/polymarket-copy-trading-strategy.md
+  - concepts/polymarket-marginal-polytope-arbitrage.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-20
+updated: 2026-05-26
 ---
 
 ## Relations

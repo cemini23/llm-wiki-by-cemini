@@ -11,11 +11,13 @@ related:
   - concepts/counterfactual-prompting-baselines.md
   - concepts/regime-conditioned-evaluation.md
   - entities/people/phosphenq.md
+  - concepts/market-memory-hurst-regime.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
   - concepts/polymarket-lp-bot-phase0-spec.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-26
 clusters: [quant-validation, backtest]
 ---
 

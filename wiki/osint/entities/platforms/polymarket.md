@@ -51,6 +51,9 @@ related:
   - entities/tools/tradingview-mcp-atilaahmettaner.md
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
   - concepts/issue2-worked-example-iran-airspace-2026.md
+  - concepts/polymarket-marginal-polytope-arbitrage.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
+  - entities/tools/pyth-terminal.md
   - entities/tools/a-stock-data-toolkit.md
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - concepts/polymarket-api-reference.md

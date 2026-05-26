@@ -10,9 +10,10 @@ related:
   - concepts/cemini-license-posture.md
   - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
   - concepts/gmm-factor-lens-regime-modeling.md
+  - concepts/reverse-quant-engineering-public-filings.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-23
+updated: 2026-05-26
 ---
 
 ## Relations

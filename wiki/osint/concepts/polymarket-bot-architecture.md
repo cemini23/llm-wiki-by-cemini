@@ -15,6 +15,7 @@ related:
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - concepts/polymarket-api-reference.md
   - concepts/polymarket-updown-bot-taxonomy.md

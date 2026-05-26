@@ -5,6 +5,7 @@ tags: [entity, person, polymarket-bot-operator, updown-bot, conflict-detector, c
 keywords: [gustafssonkotte, polymarket-btc-5min-bot, multi-module-conflict-detector, broken-data-corruption-debugging, phantom-win-fix, chainlink-data-streams-execution-via-polymarket-clob]
 related:
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
@@ -16,11 +17,12 @@ related:
   - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-24
+updated: 2026-05-26
 ---
 
 ## Relations
 
+- @sources/trading-posts-compilation-38-2026-05-26.md — K67 Post 32 (FOK vs 12s resting fill)
 - @sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md — K62 “cheat code” pivot (position-already gate)
 - @concepts/polymarket-btc-already-position-gate.md — K62 synthesized pattern
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — K57 Post 2 (quadrant/blacklist/micro-trend)

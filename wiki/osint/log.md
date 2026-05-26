@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-05-26] ingest | Posts.docx K67 — 38-post trading compilation
+
+**Source:** `Posts.docx` (38 posts, `Next Post:`; sha256 `c70d2876…`; **not** K64 3-post file) → `cemini-librarian:/opt/cemini-bulk/research/Posts.docx`
+
+- **1 source** — `trading-posts-compilation-38-2026-05-26.md`
+- **6 concepts** — `koroushak-discretionary-trading-curriculum`, `polymarket-marginal-polytope-arbitrage`, `market-memory-hurst-regime`, `polymarket-updown-15min-execution-latency`, `reverse-quant-engineering-public-filings`, `tokenized-us-equities-onchain-basis-trade`
+- **3 entities** — `pyth-terminal`, `crisp-predict`, `paonx-eth`
+- **10+ updated** — `koroushak`, `altcoin-screener-orion-workflow`, `polymarket-copy-trading-strategy`, `polymarket-btc-already-position-gate`, `phosphenq`, `gustafssonkotte`, `monte-carlo-permutation-test-mcpt`, `trading-posts-farxxxxx-hermes-koroush-2026-05-24`, …
+- **Prod brief:** `2026-05-26_k67-polymarket-execution-fok-copy-latency-cemini.md` → `cemini-prod`
+- **CCC routing:** Posts 20–21, 24–25, 29–30, 33, 36 flagged for `ccc-wiki` briefs (not expanded here)
+
+---
+
 ## [2026-05-26] file-back | Outlier Weekly Issue 2 — Iran airspace June-30 SKIP
 
 **Source:** *Outlier Weekly* Issue 2 (Substack, 2026-05-26) + public forward-track update (`cemini23/outlier-weekly-methodology` `05b1fc9`)

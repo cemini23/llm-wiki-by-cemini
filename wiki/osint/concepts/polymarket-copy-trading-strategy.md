@@ -24,12 +24,15 @@ related:
   - entities/infrastructure/cemini-egress-fi.md
   - concepts/cemini-ai-assistant.md
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
+  - sources/trading-posts-compilation-38-2026-05-26.md
   - concepts/polymarket-wallet-alpha-pipeline.md
+  - concepts/polymarket-updown-15min-execution-latency.md
   - entities/tools/warproxxx-poly-data.md
+  - entities/tools/crisp-predict.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-22
+updated: 2026-05-26
 clusters: [polymarket, copy-trading]
 ---
 
@@ -38,6 +41,7 @@ clusters: [polymarket, copy-trading]
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — Post 7 (@spottr_trade) hybrid CLOB latency
 - @entities/people/spottr-trade.md — Spottr author
 - @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — Posts 2 (@igor_mikerin) + 3 (@DextersSolab) primary sources
+- @sources/trading-posts-compilation-38-2026-05-26.md — Post 31 (CAR wallet anecdote); Post 0 (CrispPredict / 15m latency)
 - @concepts/polymarket-bot-architecture.md — taker-side bot architecture; copy-trading is one specific taker-side execution pattern
 - @concepts/polymarket-market-making-architectures.md — already references smart-money-copy as a multi-source-confirmed K30 pattern
 - @concepts/polymarket-microstructure-findings.md — final-hour HFT dynamics motivate the "skip wallets with sub-20ms execution" rule
@@ -163,6 +167,10 @@ For any Cemini directional bot, **must** include in the design:
 
 - The Kreo vs KreoPolyBot naming inconsistency may indicate the two authors are referring to different bots, or that one rebranded. Don't recommend either by name in Cemini briefs until verified.
 - Both source posts include referral links (`?via=igor-mikerin`, `?start=ref-dexter`). The recommended wallets and recommended bots both have incentive bias. Cross-reference with `polymarketanalytics.com` independently before trusting any specific wallet recommendation.
+
+### K67 anecdote — CAR wallet / Lebanon market [TENTATIVE]
+
+@undefinedKi (Post 31): **garbagefriends** wallet allegedly copied **CAR** into Israel–Lebanon March 20 market at **1¢** → $50→$3,456 in 72h. Illustrates **latency + wallet selection** story; not independently verified. Promotional copy-trading guide structure.
 
 ## Snippets
 
