@@ -1,5 +1,28 @@
 # Wiki Log
 
+## [2026-05-26] ingest | LoMacKinlay1988.pdf + Tool Evaluation Prompt Analysis.docx (K68)
+
+**Sources:** `LoMacKinlay1988.pdf` + `Tool Evaluation Prompt Analysis.docx` → both moved to librarian raw layer
+
+- **2 new sources**
+  - `lo-mackinlay-1988-variance-ratio.md`
+  - `multi-wiki-tool-eval-22url-2026-05-26.md`
+- **1 new concept**
+  - `lo-mackinlay-variance-ratio-test.md`
+- **5 new tool entities**
+  - `vectify-openkb`, `reclip`, `iron-proxy`, `cryptex-oss`, `claudish`
+- **1 existing entity updated**
+  - `aruneshdev-kalshi-weather-xgboost.md` (K68 duplicate listing backlink)
+- **License verification corrections**
+  - `MadAppGang/claudish` eval MIT claim overturned (`license: null` / no LICENSE)
+  - `paradigmxyz/centaur` recorded as `NOASSERTION/Other`; steal-from only
+- **Prod brief staged + transferred**
+  - `briefs/2026-05-26_k68-variance-ratio-and-tooling-license-corrections-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+- **Cross-wiki briefs staged**
+  - cybersec + ccc + seo routing briefs created from K68 tool-eval cluster
+
+---
+
 ## [2026-05-26] ingest | Posts.docx K67 — 38-post trading compilation
 
 **Source:** `Posts.docx` (38 posts, `Next Post:`; sha256 `c70d2876…`; **not** K64 3-post file) → `cemini-librarian:/opt/cemini-bulk/research/Posts.docx`

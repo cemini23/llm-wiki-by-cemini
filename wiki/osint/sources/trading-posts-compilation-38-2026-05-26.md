@@ -35,6 +35,12 @@ clusters: [trading-posts, polymarket, discretionary-crypto, quant-validation]
 
 ## Relations
 - @ccc-wiki/briefs/2026-05-26_k67-claude-obsidian-workflows-from-osint.md  (cross-wiki brief)
+- @ccc-wiki/concepts/claude-premortem-skill.md
+- @ccc-wiki/concepts/obsidian-agent-maintenance-workflow.md
+- @ccc-wiki/concepts/obsidian-trading-journal-workflow.md
+- @ccc-wiki/concepts/claude-code-software-factory.md
+- @ccc-wiki/concepts/claude-code-personal-os-scope.md
+- @ccc-wiki/sources/k67-explorax-100-repos-reference.md
 
 - @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — prior `posts.docx` (3 posts, same filename, different sha256)
 - @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — prior 9-post `Posts.docx` batch

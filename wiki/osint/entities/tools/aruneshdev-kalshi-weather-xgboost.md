@@ -5,6 +5,7 @@ tags: [entity, tool, weather-trading, kalshi, polymarket, xgboost, steal-from, k
 keywords: [aruneshdev, automated-trading-system-kalshi-weather-model, xgboost, metar, ecmwf, gfs, bias correction]
 related:
   - sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md
+  - sources/multi-wiki-tool-eval-22url-2026-05-26.md
   - concepts/nwp-bias-correction-ml-weather-trading.md
   - concepts/polymarket-weather-trading-strategy.md
   - concepts/cross-venue-arbitrage-pattern.md
@@ -13,12 +14,13 @@ related:
   - concepts/cemini-license-posture.md
 maturity: draft
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-05-26
 ---
 
 ## Relations
 
 - @sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md — K66 @AlterEgo_eth endorsement
+- @sources/multi-wiki-tool-eval-22url-2026-05-26.md — K68 duplicate listing (URL 22) confirming no-license posture unchanged
 - @concepts/nwp-bias-correction-ml-weather-trading.md — ML-on-NWP pattern host
 - @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md — higher-maturity dual-venue weather steal-from (~403★)
 
