@@ -50,6 +50,7 @@ related:
   - entities/tools/bukosabino-ta.md
   - entities/tools/tradingview-mcp-atilaahmettaner.md
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
+  - concepts/issue2-worked-example-iran-airspace-2026.md
   - entities/tools/a-stock-data-toolkit.md
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - concepts/polymarket-api-reference.md

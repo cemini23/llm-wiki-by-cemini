@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-26] file-back | Outlier Weekly Issue 2 — Iran airspace June-30 SKIP
+
+**Source:** *Outlier Weekly* Issue 2 (Substack, 2026-05-26) + public forward-track update (`cemini23/outlier-weekly-methodology` `05b1fc9`)
+
+- **1 concept** — `issue2-worked-example-iran-airspace-2026.md`
+- **8 updated** — `three-formula-system-polymarket-rare-events.md`, `issue1-worked-example-anthropic-pentagon-2026.md`, `poisson-edge-rare-events.md`, `shannon-entropy-kl-divergence-prediction-markets.md`, `taleb-fat-tails-barbell-prediction-markets.md`, `kelly-sizing-quarter.md`, `entities/platforms/polymarket.md`, `index.md`
+- **Publish lock:** 29.7¢ YES → forward-track **SKIP** (synthesis ≈0.16% below 0.5% floor)
+- **Public:** https://cemini23.github.io/outlier-weekly-methodology/forward-track/
+
+---
+
 ## [2026-05-25] ingest | @AlterEgo_eth.docx K66 — XGBoost NWP + regional model stack (2 posts)
 
 **Source:** `@AlterEgo_eth.docx` (2 posts; same filename as K61 ColdMath — **different content**) → librarian

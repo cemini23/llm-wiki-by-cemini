@@ -13,10 +13,11 @@ related:
   - entities/platforms/polymarket.md
   - entities/tools/aulekator-polymarket-btc-bot.md
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
+  - concepts/issue2-worked-example-iran-airspace-2026.md
   - sources/kelly-1956-information-rate.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-15
+updated: 2026-05-26
 ---
 
 ## Relations

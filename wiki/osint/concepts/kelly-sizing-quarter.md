@@ -13,6 +13,7 @@ related:
   - concepts/three-formula-system-polymarket-rare-events.md
   - entities/platforms/polymarket.md
   - concepts/issue1-worked-example-anthropic-pentagon-2026.md
+  - concepts/issue2-worked-example-iran-airspace-2026.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/sports-prediction-consensus-agent.md
   - concepts/polymarket-lp-bot-phase0-spec.md

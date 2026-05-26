@@ -4,6 +4,7 @@ type: concept
 tags: [concept, polymarket, worked-example, three-formula, regulatory-binary, outlier-weekly, issue-1]
 keywords: [anthropic-pentagon-2026, three-formula-worked-example, regulatory-binary-poisson, outlier-weekly-issue1, forward-track-2026-06-30]
 related:
+  - concepts/issue2-worked-example-iran-airspace-2026.md
   - concepts/three-formula-system-polymarket-rare-events.md
   - concepts/poisson-edge-rare-events.md
   - concepts/shannon-entropy-kl-divergence-prediction-markets.md
@@ -12,11 +13,12 @@ related:
   - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-26
 ---
 
 ## Relations
 
+- @concepts/issue2-worked-example-iran-airspace-2026.md — second consecutive Outlier skip-discipline case (geo tail, 2026-05-26); codifies ≥3pp publish re-run
 - @concepts/three-formula-system-polymarket-rare-events.md — parent synthesis; this page is the second worked example after the canonical earthquake example
 - @concepts/poisson-edge-rare-events.md — Poisson with caveats on binary regulatory markets (this page's methodological contribution)
 - @concepts/shannon-entropy-kl-divergence-prediction-markets.md — KL produces SKIP at small divergence; this example illustrates that case
