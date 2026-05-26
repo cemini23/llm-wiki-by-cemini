@@ -34,6 +34,7 @@ clusters: [trading-posts, polymarket, discretionary-crypto, quant-validation]
 ---
 
 ## Relations
+- @ccc-wiki/briefs/2026-05-26_k67-claude-obsidian-workflows-from-osint.md  (cross-wiki brief)
 
 - @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — prior `posts.docx` (3 posts, same filename, different sha256)
 - @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — prior 9-post `Posts.docx` batch
@@ -130,7 +131,7 @@ Portable to Cemini **crypto watchlist** only — not Polymarket core. Orion scre
 
 ### Cross-wiki (not expanded in OSINT wiki)
 
-Posts 20–21, 24–25, 29–30, 33, 36 — Claude Code / Obsidian / repo-list meta. Stage as `ccc-wiki` briefs when that workstream runs.
+Posts 20–21, 24–25, 29–30, 33, 36 — Claude Code / Obsidian / repo-list meta → `@ccc-wiki/briefs/2026-05-26_k67-claude-obsidian-workflows-from-osint.md`.
 
 ## Snippets
 

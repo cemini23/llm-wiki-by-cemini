@@ -9,7 +9,8 @@
 - **3 entities** — `pyth-terminal`, `crisp-predict`, `paonx-eth`
 - **10+ updated** — `koroushak`, `altcoin-screener-orion-workflow`, `polymarket-copy-trading-strategy`, `polymarket-btc-already-position-gate`, `phosphenq`, `gustafssonkotte`, `monte-carlo-permutation-test-mcpt`, `trading-posts-farxxxxx-hermes-koroush-2026-05-24`, …
 - **Prod brief:** `2026-05-26_k67-polymarket-execution-fok-copy-latency-cemini.md` → `cemini-prod`
-- **CCC routing:** Posts 20–21, 24–25, 29–30, 33, 36 flagged for `ccc-wiki` briefs (not expanded here)
+- **CCC brief:** `ccc-wiki/briefs/2026-05-26_k67-claude-obsidian-workflows-from-osint.md` (sibling repo; posts 20–21, 24–25, 29–30, 33, 36)
+- **Prod brief:** `2026-05-26_k67-polymarket-execution-fok-copy-latency-cemini.md` → `scp` `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS)
 
 ---
 
