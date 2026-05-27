@@ -297,7 +297,19 @@ ls -1 "research to be indexed/" 2>/dev/null | grep -v '^\.'
 
 If items exist that the user hasn't asked you to address, mention briefly: "Btw, you have N items in `research to be indexed/`. Want me to triage them?"
 
-### 3. (Future ritual hooks land here.)
+### 3. HL funding Dune backtest cadence (quarterly)
+
+```bash
+./scripts/check_hl_funding_backtest_due.sh
+```
+
+If exit code **0** (due), prompt:
+
+> "Quarterly HL funding Dune backtest is due (see `wiki/meta/hl-funding-backtest-cadence.md`). Want me to run it now? (~10–15 min laptop + Dune credits)"
+
+Do **not** auto-run; user-gated like Tier-2 sweep. On completion, bump `last_run` / `next_due` (+90 days) on the cadence page and note in `wiki/log.md` if posture changes.
+
+### 4. (Future ritual hooks land here.)
 
 Keep each check under 60 seconds. Rituals that grow into multi-minute operations should become opt-in commands instead.
 

@@ -8,6 +8,8 @@ related:
   - concepts/code-as-agent-harness.md
   - concepts/llm-agent-systems.md
   - sources/agentic-harness-engineering.md
+cross-wiki:
+  - ccc-wiki/concepts/continual-harness-online-self-improvement.md
 maturity: validated
 created: 2026-05-27
 updated: 2026-05-27

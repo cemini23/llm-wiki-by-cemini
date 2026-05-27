@@ -9,6 +9,7 @@ related:
   - entities/people/the-smart-ape.md
   - sources/trading-posts-compilation-25-2026-05-27.md
   - entities/infrastructure/cemini-egress-fi.md
+  - meta/hl-funding-backtest-cadence.md
 maturity: validated
 created: 2026-05-27
 updated: 2026-05-27
@@ -48,6 +49,7 @@ Open-source bot: `https://github.com/TheSmartApe/hl-funding-sniper`. K72 Phase-0
 - **Laptop:** reference clone `.local/tools/hl-funding-sniper-reference/` (venv; `dry_run` forced true) — backtest study only
 - **Egress-fi:** **NO** install
 - **Prod:** steal patterns into existing EMS adapter when funding-carry is scoped — brief `2026-05-27_k72-hl-funding-phase0-cemini.md` on `cemini-prod`
+- **Cadence:** quarterly Dune backtest — `@meta/hl-funding-backtest-cadence.md` (next due **2026-08-27**)
 
 ## Snippets
 

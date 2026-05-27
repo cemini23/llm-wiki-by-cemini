@@ -37,6 +37,10 @@ clusters: [trading-posts, polymarket, prediction-markets, claude-workflows]
 - @entities/people/the-smart-ape.md — Post 16
 - @ccc-wiki/briefs/2026-05-27_k72-ccc-workflows-from-osint.md
 - @seo-wiki/briefs/2026-05-27_k72-seo-obsidian-workflows-from-osint.md
+- @ccc-wiki/concepts/agent-memory-stack-comparison.md
+- @ccc-wiki/concepts/claude-code-finance-research-setup.md
+- @ccc-wiki/concepts/continual-harness-online-self-improvement.md
+- @ccc-wiki/sources/trading-posts-compilation-25-2026-05-27.md
 
 ## Raw Concept
 

@@ -351,6 +351,7 @@ The audit-trail subset (`2026-05-05_conductor-audit-trail-phase1.md` above) supe
 | **post_ingest_workflow** memory rule: ROADMAP + briefs after every ingest commit-and-push | Every ingest |
 | **Tier 2 arXiv sweep** — last 2026-05-09 (2 days fresh, within 7-day cadence) | When ≥7 days old |
 | **wiki_gap_detect.py rerun** — last 2026-05-04 (clean baseline) | After next ingest or weekly |
+| **HL funding Dune backtest** (`hl-funding-sniper` quick pipeline) — last **2026-05-27**, next due **2026-08-27** — track: `wiki/meta/hl-funding-backtest-cadence.md` | Quarterly; agent prompts when due; user-gated run (~10–15 min + Dune credits) |
 
 ## Decisions — open
 
