@@ -12,6 +12,7 @@ related:
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
   - concepts/laptop-prod-research-split.md
   - entities/tools/camofox-browser.md
+  - entities/tools/hl-funding-sniper.md
 maturity: draft
 created: 2026-05-19
 updated: 2026-05-27
@@ -27,6 +28,7 @@ updated: 2026-05-27
 - @concepts/polymarket-copy-trading-strategy.md — K57: hybrid Polymarket CLOB copy latency; gateway must not promise sub-block parity
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — @spottr_trade Post 7 (0-block vs detection)
 - @entities/tools/camofox-browser.md — K71: camofox is laptop-only; not deployed on egress-fi
+- @entities/tools/hl-funding-sniper.md — K72: **no** funding bot on egress; HL orders stay prod EMS + `HYPERLIQUID_PROXY`
 
 ## Raw Concept
 
