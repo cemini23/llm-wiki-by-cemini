@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-05-27] tooling | Cemini backtest report kit + PM LP pilot
+
+- **OpenSpec** — `openspec/changes/cemini-backtest-report-kit/` (proposal, design, specs, tasks)
+- **Scripts** — `scripts/cemini_backtest_report/`, `scripts/pm_lp_backtest/`, `scripts/run_pm_lp_backtest.sh`, `scripts/check_pm_lp_backtest_due.sh`
+- **Wiki** — `concepts/cemini-backtest-report-kit.md`, `meta/pm-lp-backtest-cadence.md`; `CLAUDE.md` ritual §4
+- **First report** — `.local/reports/pm-lp-backtest-2026-05-27.html` (10 markets, 24 quick-grid combos; best PnL row: spread 2¢, reward×1.5 — proxy model only)
+
+---
+
 ## [2026-05-27] ingest | K72 — Continual Harness + Wolfers w10504 + Posts-25
 
 **Sources:** `2605.09998v1.pdf`, `w10504.pdf`, `Posts.docx` (25 posts; sha256 `76ccaaa8…`) → librarian

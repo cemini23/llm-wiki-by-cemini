@@ -18,6 +18,8 @@ related:
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - concepts/polymarket-lp-weather-market-discovery.md
   - concepts/polymarket-lp-weather-guard.md
+  - concepts/cemini-backtest-report-kit.md
+  - meta/pm-lp-backtest-cadence.md
 maturity: draft
 created: 2026-05-21
 updated: 2026-05-26
@@ -34,6 +36,8 @@ clusters: [polymarket, market-making, phase-0]
 - @entities/tools/polymarket-clob-api.md, @entities/tools/polymarket-gamma-api.md — required APIs
 - @concepts/polymarket-lp-weather-market-discovery.md — prod weather LP discover pass (orthogonal to this Phase-0 politics/geopolitics spec)
 - @concepts/polymarket-lp-weather-guard.md — pre-resolution exit when weather pass enabled
+- @concepts/cemini-backtest-report-kit.md — laptop LP spread sweep + HTML report before shadow-live
+- @meta/pm-lp-backtest-cadence.md — quarterly re-run ritual
 
 ## Raw Concept
 

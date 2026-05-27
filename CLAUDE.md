@@ -309,7 +309,19 @@ If exit code **0** (due), prompt:
 
 Do **not** auto-run; user-gated like Tier-2 sweep. On completion, bump `last_run` / `next_due` (+90 days) on the cadence page and note in `wiki/log.md` if posture changes.
 
-### 4. (Future ritual hooks land here.)
+### 4. PM LP spread backtest cadence (quarterly)
+
+```bash
+./scripts/check_pm_lp_backtest_due.sh
+```
+
+If exit code **0** (due), prompt:
+
+> "Quarterly PM LP spread backtest is due (see `wiki/meta/pm-lp-backtest-cadence.md`). Want me to run it now? (`bash scripts/run_pm_lp_backtest.sh` — public Gamma + CLOB, ~1 min)"
+
+Do **not** auto-run. On completion, bump cadence meta and note in `wiki/log.md` if spread tiers change. Reports: `.local/reports/pm-lp-backtest-YYYY-MM-DD.html`.
+
+### 5. (Future ritual hooks land here.)
 
 Keep each check under 60 seconds. Rituals that grow into multi-minute operations should become opt-in commands instead.
 
