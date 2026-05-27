@@ -75,7 +75,7 @@ Twenty-post drop. Four Cemini-relevant clusters plus heavy CCC/SEO cross-routing
 | 15 | @Dan1ro0 | 10k | 1000 Polymarket bots Claude analysis | pattern note only |
 | 16 | @KanikaBK | 9k | Obsidian + LM Studio offline | seo obsidian brief |
 | 17 | @DamiDefi | 12k | Claude + Obsidian vault thinking | ccc brief |
-| 18 | @DamiDefi | 3k | Claude Code → NotebookLM CLI | ccc brief |
+| 18 | @DamiDefi | 3k | Claude Code → NotebookLM CLI | ccc brief — **wired** (`notebooklm` skill + OSINT bridge) |
 | 19 | @RohOnChain | 25k | Quant firms AI roadmap | crypto watchlist stub |
 
 ### Cluster A — Cross-asset transmission (@RuujSs, Post 0)
