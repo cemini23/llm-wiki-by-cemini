@@ -5,6 +5,7 @@ tags: [concept, quant-finance, statistical-arbitrage, prediction-markets, polyma
 keywords: [statistical-arbitrage, cointegration, augmented-dickey-fuller, johansen-test, ornstein-uhlenbeck, mean-reversion, maximum-likelihood-estimation, order-book-imbalance, micro-price, optimal-stopping, l2-order-book, markov-transition-matrix]
 related:
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
+  - concepts/prediction-markets-efficiency-wolfers-zitzewitz.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/non-latency-arbitrage-strategies.md
   - concepts/polymarket-updown-bot-taxonomy.md
@@ -22,6 +23,7 @@ updated: 2026-05-18
 
 ## Relations
 
+- @concepts/prediction-markets-efficiency-wolfers-zitzewitz.md — efficiency prior; stat-arb assumes local violations not global irrationality
 - @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — Post 4 (@ridark_eth), the source roadmap this page synthesizes
 - @concepts/cross-venue-arbitrage-pattern.md — the *execution-loop* reference (poll → detect → execute → reconcile); this page is the *signal-generation* math layer that decides when to fire it
 - @concepts/non-latency-arbitrage-strategies.md — the model-free cousin: standing logical arb. Stat-arb here is *not* riskless — it is a probabilistic mean-reversion bet

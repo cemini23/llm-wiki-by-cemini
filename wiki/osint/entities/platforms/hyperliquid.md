@@ -12,9 +12,12 @@ related:
   - concepts/cryptographic-audit-trail.md
   - concepts/ip-sale-readiness.md
   - entities/frameworks/ccxt.md
+  - concepts/perps-dex-funding-carry-strategy.md
+  - entities/tools/hl-funding-sniper.md
+  - sources/trading-posts-compilation-25-2026-05-27.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -27,6 +30,9 @@ updated: 2026-04-26
 - @concepts/cryptographic-audit-trail.md — pg_tamperlog/Merkle leg `[RETRACTED 2026-04-24]` (Track C); see retraction table below for the cleanup
 - @concepts/ip-sale-readiness.md
 - @entities/frameworks/ccxt.md
+- @sources/trading-posts-compilation-25-2026-05-27.md — K72 Post 16 (`hl-funding-sniper`)
+- @concepts/perps-dex-funding-carry-strategy.md — funding-carry template
+- @entities/tools/hl-funding-sniper.md
 
 ## Raw Concept
 

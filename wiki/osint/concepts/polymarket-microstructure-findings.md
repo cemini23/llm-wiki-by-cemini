@@ -5,6 +5,8 @@ tags: [polymarket, microstructure, prediction-markets, on-chain, order-book, tra
 keywords: [Polymarket microstructure, trade direction inference, longshot premium, depth concentration, maker diversity, wash trading, archive ingestion, depth decay, Kyle lambda, effective spread]
 related:
   - sources/polymarket-microstructure-anatomy-2604.24366.md
+  - sources/nber-w10504-wolfers-zitzewitz-prediction-markets-2004.md
+  - concepts/prediction-markets-efficiency-wolfers-zitzewitz.md
   - entities/platforms/polymarket.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/market-microstructure.md

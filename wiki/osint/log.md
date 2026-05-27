@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-05-27] ingest | K72 — Continual Harness + Wolfers w10504 + Posts-25
+
+**Sources:** `2605.09998v1.pdf`, `w10504.pdf`, `Posts.docx` (25 posts; sha256 `76ccaaa8…`) → librarian
+
+- **3 sources** — `arxiv-continual-harness-self-improving-agents-2605.09998.md`, `nber-w10504-wolfers-zitzewitz-prediction-markets-2004.md`, `trading-posts-compilation-25-2026-05-27.md`
+- **3 concepts** — `continual-harness-online-self-improvement`, `prediction-markets-efficiency-wolfers-zitzewitz`, `polymarket-research-throughput-bottleneck`
+- **3 entities** — `zerocortex-ai`, `hl-funding-sniper`, `the-smart-ape`
+- **8 updated** — `code-as-agent-harness`, `perps-dex-funding-carry-strategy`, `dexterssolab`, `polymarket-copy-trading-strategy`, `polymarket`, `hyperliquid`, `llm-agent-systems`, `trading-posts-compilation-20-2026-05-27`
+- **Prod brief** — `2026-05-27_k72-full-ingest-cemini.md` → cemini-prod
+- **Cross-wiki briefs** — ccc + seo sibling repos
+
+---
+
 ## [2026-05-27] ingest | arXiv 2605.22391 + Tool Evaluation 27-URL (K71)
 
 **Sources:** `2605.22391v1.pdf` + `Tool Evaluation Prompt Analysis.docx` (new sha256 vs K68) → librarian

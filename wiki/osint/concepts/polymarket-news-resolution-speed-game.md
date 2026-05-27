@@ -5,6 +5,7 @@ tags: [concept, polymarket, microstructure, news-trading, latency, k69]
 keywords: [pmv, pre-news-mispriced-value, fomc, bls, cpi, earnings, 0xkeshav]
 related:
   - sources/trading-posts-compilation-20-2026-05-27.md
+  - concepts/polymarket-research-throughput-bottleneck.md
   - concepts/polymarket-updown-15min-execution-latency.md
   - concepts/polymarket-bot-architecture.md
   - entities/platforms/polymarket.md
@@ -19,6 +20,7 @@ updated: 2026-05-27
 - @concepts/polymarket-updown-15min-execution-latency.md — complementary latency discipline
 - @concepts/polymarket-bot-architecture.md
 - @entities/platforms/polymarket.md
+- @concepts/polymarket-research-throughput-bottleneck.md — bandwidth vs speed (K72 ZeroCortex framing)
 
 ## Raw Concept
 

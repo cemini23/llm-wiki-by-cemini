@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-05-27 — K72)
+
+- **K72 ingest (2026-05-27)** — three inbox sources. **OSINT: 3 sources + 3 concepts + 3 entities + 8 updates**. (1) **arXiv:2605.09998** Continual Harness — online reset-free harness self-improvement (CCC pattern; not prod code). (2) **NBER w10504** Wolfers & Zitzewitz 2004 prediction-markets efficiency survey → `prediction-markets-efficiency-wolfers-zitzewitz` **core** concept. (3) **Posts.docx** 25 posts (`76ccaaa8…`) — ZeroCortex PM throughput pipeline, `hl-funding-sniper` reference, DextersSolab copy-trading refresh. **Prod brief:** `2026-05-27_k72-full-ingest-cemini.md` → `cemini-prod`. **Cross-wiki:** ccc + seo briefs on disk. **No new adoptions.** Inbox emptied after librarian SCP.
+
 ## Current state (2026-05-23 — K46–K60)
 
 - **K68 ingest (2026-05-26)** — two inbox docs: `LoMacKinlay1988.pdf` + `Tool Evaluation Prompt Analysis.docx` (22 URLs). **OSINT: 2 new sources + 1 new concept + 5 tool entities + 1 entity update**. Added canonical Lo–MacKinlay variance-ratio source + method page (`lo-mackinlay-variance-ratio-test`) as a pre-ARIMA/GARCH diagnostic primitive. Tool-eval license re-verification caught one overturn: `MadAppGang/claudish` eval-MIT claim → **no LICENSE** (reject). `OpenKB`/`reclip` tracked as doc-level adopt pending Phase-0. **Prod brief:** `2026-05-26_k68-variance-ratio-and-tooling-license-corrections-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS). **Cross-wiki briefs (3):** cybersec + ccc + seo. Inbox emptied after librarian SCP.

@@ -5,6 +5,8 @@ tags: [concept, agent-harness, coding-agents, agentic-ai, survey-synthesis]
 keywords: [code-as-agent-harness, harness-interface, harness-mechanisms, multi-agent-coordination, verification, stateful-agents]
 related:
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
+  - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
+  - concepts/continual-harness-online-self-improvement.md
   - concepts/llm-agent-systems.md
   - sources/agentic-harness-engineering.md
   - concepts/cemini-ai-assistant.md
@@ -17,12 +19,14 @@ related:
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-23
+updated: 2026-05-27
 ---
 
 ## Relations
 
 - @sources/arxiv-code-as-agent-harness-survey-2605.18747.md — primary synthesis source (UIUC/Meta/Stanford survey, May 2026)
+- @sources/arxiv-continual-harness-self-improving-agents-2605.09998.md — online reset-free harness refinement (embodied agents; refiner loop analogue)
+- @concepts/continual-harness-online-self-improvement.md — K72 synthesis
 - @concepts/llm-agent-systems.md — parent cluster
 - @sources/agentic-harness-engineering.md — complementary: observability-driven harness *evolution*
 - @sources/arxiv-grep-agent-harness-2605-15184.md — retrieval/harness interaction (PwC, May 2026)

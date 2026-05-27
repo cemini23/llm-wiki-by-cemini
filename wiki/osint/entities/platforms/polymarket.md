@@ -83,10 +83,15 @@ related:
   - sources/trading-posts-compilation-20-2026-05-27.md
   - concepts/prediction-market-btc-equity-transmission-hedge.md
   - concepts/polymarket-news-resolution-speed-game.md
+  - sources/trading-posts-compilation-25-2026-05-27.md
+  - concepts/polymarket-research-throughput-bottleneck.md
+  - entities/tools/zerocortex-ai.md
+  - sources/nber-w10504-wolfers-zitzewitz-prediction-markets-2004.md
+  - concepts/prediction-markets-efficiency-wolfers-zitzewitz.md
 
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-20
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -110,6 +115,9 @@ updated: 2026-05-20
 - @entities/tools/polymarket-lb-api.md — LB-API layer (leaderboard/PnL) — first catalogued K51
 - @entities/tools/polymarket-websocket-api.md — WebSocket layer (realtime orderbook + fills) — first catalogued K51
 - @entities/tools/polymarket-bridge-api.md — Bridge API layer (deposits/withdrawals/pUSD funding) — first catalogued K54
+- @sources/trading-posts-compilation-25-2026-05-27.md — K72 Posts (ZeroCortex throughput, copy-trading refresh)
+- @concepts/prediction-markets-efficiency-wolfers-zitzewitz.md — academic efficiency prior (NBER w10504)
+- @concepts/polymarket-research-throughput-bottleneck.md — K72 research automation framing
 
 ## Raw Concept
 

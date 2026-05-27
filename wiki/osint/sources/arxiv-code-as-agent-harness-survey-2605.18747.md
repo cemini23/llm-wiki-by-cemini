@@ -6,6 +6,7 @@ keywords: [code-as-agent-harness, executable-agents, verifiable-agents, stateful
 clusters: [llm-agents]
 related:
   - concepts/code-as-agent-harness.md
+  - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
   - concepts/llm-agent-systems.md
   - sources/agentic-harness-engineering.md
   - concepts/cemini-ai-assistant.md
@@ -18,7 +19,7 @@ related:
 maturity: validated
 read_status: skimmed
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -26,6 +27,7 @@ updated: 2026-05-21
 - @concepts/code-as-agent-harness.md — concept hub synthesized from this survey
 - @concepts/llm-agent-systems.md — parent cluster for agent architecture research
 - @sources/agentic-harness-engineering.md — complementary: observability-driven harness *evolution* (AHE)
+- @sources/arxiv-continual-harness-self-improving-agents-2605.09998.md — online reset-free harness refinement (K72)
 - @concepts/cemini-ai-assistant.md — Cemini user-facing agent should map to harness-interface + verification layers
 
 ## Raw Concept

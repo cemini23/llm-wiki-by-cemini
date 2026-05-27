@@ -34,8 +34,10 @@ related:
   - sources/agent1-4-4.md
   - sources/agentic-harness-engineering.md
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
+  - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
   - sources/arxiv-self-healing-llm-agents-2605.06737.md
   - concepts/code-as-agent-harness.md
+  - concepts/continual-harness-online-self-improvement.md
   - sources/agents-7.md
   - sources/incompressible-knowledge-probes-li-2026.md
   - sources/agents.md

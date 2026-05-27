@@ -25,6 +25,7 @@ related:
   - concepts/cemini-ai-assistant.md
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - sources/trading-posts-compilation-38-2026-05-26.md
+  - sources/trading-posts-compilation-25-2026-05-27.md
   - concepts/polymarket-wallet-alpha-pipeline.md
   - concepts/polymarket-updown-15min-execution-latency.md
   - entities/tools/warproxxx-poly-data.md
@@ -44,7 +45,8 @@ clusters: [polymarket, copy-trading]
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — Post 7 (@spottr_trade) hybrid CLOB latency
 - @entities/people/spottr-trade.md — Spottr author
 - @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — Posts 2 (@igor_mikerin) + 3 (@DextersSolab) primary sources
-- @sources/trading-posts-compilation-38-2026-05-26.md — Post 31 (CAR wallet anecdote); Post 0 (CrispPredict / 15m latency)
+- @sources/trading-posts-compilation-38-2026-05-26.md
+- @sources/trading-posts-compilation-25-2026-05-27.md — K72 Post 24 (daily wallet hygiene emphasis) — Post 31 (CAR wallet anecdote); Post 0 (CrispPredict / 15m latency)
 - @concepts/polymarket-bot-architecture.md — taker-side bot architecture; copy-trading is one specific taker-side execution pattern
 - @concepts/polymarket-market-making-architectures.md — already references smart-money-copy as a multi-source-confirmed K30 pattern
 - @concepts/polymarket-microstructure-findings.md — final-hour HFT dynamics motivate the "skip wallets with sub-20ms execution" rule

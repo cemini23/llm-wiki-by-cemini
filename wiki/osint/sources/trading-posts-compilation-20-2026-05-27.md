@@ -5,6 +5,7 @@ tags: [source, trading-posts, x-twitter, polymarket, k69]
 keywords: [posts-docx-k69, ruujss-hedge, gustafsson-decimal-bug, 0xkeshav-news-speed, retrovalix-sports, ridark-stat-arb]
 related:
   - sources/trading-posts-compilation-38-2026-05-26.md
+  - sources/trading-posts-compilation-25-2026-05-27.md
   - concepts/prediction-market-btc-equity-transmission-hedge.md
   - concepts/polymarket-news-resolution-speed-game.md
   - concepts/polymarket-sports-microstructure-bot-taxonomy.md
@@ -22,6 +23,8 @@ clusters: [trading-posts, polymarket, prediction-markets, geo-aeo, claude-workfl
 ---
 
 ## Relations
+
+- @sources/trading-posts-compilation-25-2026-05-27.md — successor 25-post batch (K72)
 
 - @sources/trading-posts-compilation-38-2026-05-26.md — prior 38-post batch (same filename, different sha256)
 - @concepts/prediction-market-btc-equity-transmission-hedge.md — Post 0 (@RuujSs)

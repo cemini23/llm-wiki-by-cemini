@@ -5,14 +5,18 @@ tags: [concept, perpetual-futures, funding-rate, market-neutral, cross-venue-hed
 keywords: [perps-funding-carry, market-neutral-funding-bot, cross-venue-hedging, volatility-adjusted-funding-carry, funding-rate-arbitrage, dex-perpetuals, reduce-only-orders, partial-fill-reconciliation, morpphhhaw, semi-automated-allocator]
 related:
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
+  - sources/trading-posts-compilation-25-2026-05-27.md
   - concepts/carry-trade.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/polymarket-bot-architecture.md
   - entities/people/morpphhhaw.md
+  - entities/tools/hl-funding-sniper.md
+  - entities/people/the-smart-ape.md
+  - entities/platforms/hyperliquid.md
   - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-27
 clusters: [quant-finance, crypto, market-neutral]
 ---
 
@@ -23,6 +27,9 @@ clusters: [quant-finance, crypto, market-neutral]
 - @concepts/cross-venue-arbitrage-pattern.md — cross-venue hedge mechanics overlap; the *signal* here is funding spread rather than spot mispricing
 - @concepts/polymarket-bot-architecture.md — bot-discipline lessons fully transfer; "infrastructure-first" thesis matches
 - @entities/people/morpphhhaw.md — bot author
+- @sources/trading-posts-compilation-25-2026-05-27.md — K72 Post 16 (@the_smart_ape)
+- @entities/tools/hl-funding-sniper.md — open-source HL funding monitor reference
+- @entities/people/the-smart-ape.md
 
 ## Raw Concept
 
