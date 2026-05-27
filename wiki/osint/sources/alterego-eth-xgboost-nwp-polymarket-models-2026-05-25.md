@@ -13,10 +13,12 @@ related:
   - entities/data-sources/open-meteo.md
   - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - entities/people/coldmath-polymarket.md
+  - concepts/polymarket-weather-bot-methodology-taxonomy.md
+  - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-05-27
 clusters: [polymarket, weather-trading]
 ---
 

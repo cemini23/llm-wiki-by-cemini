@@ -10,9 +10,11 @@ related:
   - entities/people/polymarketsuccubus.md
   - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - entities/people/coldmath-polymarket.md
+  - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
+  - concepts/polymarket-weather-bot-methodology-taxonomy.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-24
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -23,6 +25,8 @@ updated: 2026-05-24
 - @entities/people/polymarketsuccubus.md — primary creator using the platform's affiliate funnel
 - @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61: >1,200 ColdMath trades analyzed via Parity
 - @entities/people/coldmath-polymarket.md — subject wallet profile
+- @sources/alterego-eth-five-weather-methodologies-2026-05-27.md — K70: >30 weather bots classified via Parity Terminal
+- @concepts/polymarket-weather-bot-methodology-taxonomy.md — five-type framework from that survey
 
 ## Raw Concept
 

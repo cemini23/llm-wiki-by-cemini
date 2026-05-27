@@ -11,9 +11,11 @@ related:
   - entities/platforms/polymarket.md
   - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - entities/people/coldmath-polymarket.md
+  - concepts/polymarket-weather-bot-methodology-taxonomy.md
+  - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-24
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -23,6 +25,8 @@ updated: 2026-05-24
 - @entities/people/polymarketsuccubus.md — referencing creator
 - @entities/people/polydao-mr-buzzoni.md — K57 weather post watchlist cites ColdMath stack
 - @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — K61 micro-scaling + narrow-bin forensics on ColdMath
+- @concepts/polymarket-weather-bot-methodology-taxonomy.md — K70 type 5 cites Claude-powered agents (ColdMath lineage)
+- @sources/alterego-eth-five-weather-methodologies-2026-05-27.md — K70 source
 - @entities/people/coldmath-polymarket.md — operator entity
 
 ## Raw Concept

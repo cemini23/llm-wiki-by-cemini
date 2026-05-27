@@ -12,9 +12,11 @@ related:
   - entities/data-sources/open-meteo.md
   - entities/people/coldmath-polymarket.md
   - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
+  - concepts/polymarket-weather-bot-methodology-taxonomy.md
+  - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
 maturity: draft
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-05-27
 ---
 
 ## Relations

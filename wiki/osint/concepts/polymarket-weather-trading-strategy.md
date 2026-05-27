@@ -38,9 +38,12 @@ related:
   - entities/tools/aruneshdev-kalshi-weather-xgboost.md
   - concepts/polymarket-lp-weather-market-discovery.md
   - concepts/polymarket-lp-weather-guard.md
+  - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
+  - concepts/polymarket-weather-bot-methodology-taxonomy.md
+  - concepts/polymarket-copy-trading-strategy.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-26
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -77,6 +80,8 @@ updated: 2026-05-26
 - @entities/people/polymarketsuccubus.md — author of the K55 Top-7 ranking
 - @entities/tools/clawdbot.md — Claude-powered AI agent framework behind #1-ranked ColdMath (PnL +$124K)
 - @entities/tools/parity-polymarket-analytics.md — analytics platform fronting the K55 Top-7 trader profiles
+- @sources/alterego-eth-five-weather-methodologies-2026-05-27.md — K70 five-type bot survey (>30 via Parity)
+- @concepts/polymarket-weather-bot-methodology-taxonomy.md — K70 strategy-layer taxonomy (forecast / arb / base-rate / copy / AI-agent)
 
 ## Raw Concept
 

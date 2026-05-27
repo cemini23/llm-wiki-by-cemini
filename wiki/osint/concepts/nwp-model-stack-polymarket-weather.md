@@ -10,9 +10,10 @@ related:
   - concepts/polymarket-weather-trading-strategy.md
   - entities/data-sources/open-meteo.md
   - entities/tools/graphcast.md
+  - concepts/polymarket-weather-bot-methodology-taxonomy.md
 maturity: draft
 created: 2026-05-25
-updated: 2026-05-25
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -20,6 +21,7 @@ updated: 2026-05-25
 - @sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md — K66 Post 2 catalog
 - @concepts/ensemble-weather-forecasting.md — ensemble → distribution for bucket markets
 - @entities/data-sources/open-meteo.md — practical API for many listed models
+- @concepts/polymarket-weather-bot-methodology-taxonomy.md — K70 type 1 (forecast-driven) container
 
 ## Raw Concept
 

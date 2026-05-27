@@ -6,6 +6,7 @@ keywords: [alteregoeth, coldmath, parity, narrow-bins, micro-scaling, metar, bia
 related:
   - entities/people/alteregoeth.md
   - entities/people/coldmath-polymarket.md
+  - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
   - entities/people/polymarketsuccubus.md
   - entities/tools/parity-polymarket-analytics.md
   - entities/tools/clawdbot.md
@@ -14,10 +15,11 @@ related:
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
   - sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md
   - concepts/nwp-bias-correction-ml-weather-trading.md
+  - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-27
 clusters: [polymarket, weather-trading]
 ---
 
@@ -32,6 +34,7 @@ clusters: [polymarket, weather-trading]
 - @concepts/polymarket-bot-architecture.md — execution discipline corroboration
 - @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — K55 Top-7 baseline
 - @sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md — K66 same filename on librarian; complements bias-correction narrative
+- @sources/alterego-eth-five-weather-methodologies-2026-05-27.md — K70 same filename again; taxonomy (ColdMath ≈ type 1 + type 5) [TENTATIVE]
 
 ## Raw Concept
 

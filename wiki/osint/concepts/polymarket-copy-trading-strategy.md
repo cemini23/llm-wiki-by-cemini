@@ -29,10 +29,13 @@ related:
   - concepts/polymarket-updown-15min-execution-latency.md
   - entities/tools/warproxxx-poly-data.md
   - entities/tools/crisp-predict.md
+  - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
+  - concepts/polymarket-weather-bot-methodology-taxonomy.md
+  - concepts/polymarket-weather-trading-strategy.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-26
+updated: 2026-05-27
 clusters: [polymarket, copy-trading]
 ---
 
@@ -52,6 +55,9 @@ clusters: [polymarket, copy-trading]
 - @concepts/polymarket-retail-trading-discipline.md — retail sizing + resolution hygiene (K57)
 - @entities/infrastructure/cemini-egress-fi.md — K57 egress-fi adoption: gateway must not over-promise copy latency (hybrid CLOB / 0-block semantics)
 - @concepts/cemini-ai-assistant.md — assistant disclosure rule for copy-trading answers (K57)
+- @sources/alterego-eth-five-weather-methodologies-2026-05-27.md — K70 type 4 (weather copy-trading / smart-money)
+- @concepts/polymarket-weather-bot-methodology-taxonomy.md — K70 five-type framework
+- @concepts/polymarket-weather-trading-strategy.md — weather-specific copy context
 
 ## Raw Concept
 

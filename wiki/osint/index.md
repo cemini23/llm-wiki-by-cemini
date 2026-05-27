@@ -463,6 +463,10 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 
 - [@AlterEgo_eth — ColdMath weather deconstruction (narrow bins + micro-scaling)](sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md) — `[VALIDATED 2026-05-24]` K61. Single X post: >1,200 trades via Parity; 1°C bins; micro-scaling; 1¢ tails; inferred multi-model + METAR. **1 person entity** (ColdMath). Updates weather strategy + Parity + Clawdbot. Prod brief → cemini-prod. — source, trading-posts, coldmath, adversary-model, k61
 
+#### K70 ingest (2026-05-27 — @AlterEgo_eth.docx, five weather methodologies)
+
+- [@AlterEgo_eth — five sustainable weather-bot methodologies](sources/alterego-eth-five-weather-methodologies-2026-05-27.md) — `[VALIDATED 2026-05-27]` K70. Parity survey of >30 bots → five-type taxonomy (forecast / arb / base-rate / copy / AI-agent). **1 concept** `polymarket-weather-bot-methodology-taxonomy`. Prod brief staged. — source, weather-trading, parity, k70
+
 #### K66 ingest (2026-05-25 — @AlterEgo_eth.docx, 2 posts)
 
 - [@AlterEgo_eth XGBoost NWP + regional models](sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md) — `[VALIDATED 2026-05-25]` K66. Post 1: AruneshDev XGBoost error correction. Post 2: 11-model regional stack. Prod brief → cemini-prod. — source, weather-trading, k66
@@ -1046,6 +1050,7 @@ Dev-workflow tooling evaluated for Cemini integration.
 #### K66 additions (2026-05-25)
 
 - [NWP bias correction ML (weather PM)](concepts/nwp-bias-correction-ml-weather-trading.md) — `[DRAFT 2026-05-25]` XGBoost error-target pattern. — concept, k66
+- [Polymarket weather-bot methodology taxonomy (five types)](concepts/polymarket-weather-bot-methodology-taxonomy.md) — `[VALIDATED 2026-05-27]` K70 @AlterEgo_eth Parity survey: forecast / arb / base-rate / copy / AI-agent. — concept, weather-trading, k70
 - [NWP model stack by region](concepts/nwp-model-stack-polymarket-weather.md) — `[DRAFT 2026-05-25]` ECMWF + HRRR/ICON-D2 EPS matrix. — concept, k66
 - [AruneshDev Kalshi weather XGBoost](entities/tools/aruneshdev-kalshi-weather-xgboost.md) — `[DRAFT 2026-05-25]` CONDITIONAL-GO steal-from (no LICENSE). — tool, k66
 
@@ -1286,7 +1291,11 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Three-Formula System — Polymarket Rare Events](concepts/three-formula-system-polymarket-rare-events.md) — `[DRAFT 2026-05-13]` K43 synthesis. `complete_rare_event_system()` composes Poisson edge + estimate + fat-tail with 40/35/25 weighting under universal quarter-Kelly cap. Operational gates + Cemini entry point. — concept, trading-strategy, polymarket, rare-events, synthesis, k43
 - [Worked Example — Three-Formula System on Anthropic-Pentagon June-30 Binary (Outlier Weekly Issue 1)](concepts/issue1-worked-example-anthropic-pentagon-2026.md) — `[DRAFT 2026-05-14]` K45 file-back from *Outlier Weekly* Issue 1. Second worked example for the three-formula synthesis (after the canonical earthquake): analytical draft at p_market 32¢ (0.81% NO) → publish-day re-run at 27¢ (effective SKIP via noise-floor convergence). First published instance of the synthesis's skip-discipline. Records the directional-flip-on-small-drift sensitivity (~3pp re-run trigger, tighter than 5pp tolerance). Forward-track row at https://cemini23.github.io/outlier-weekly-methodology/forward-track/. — concept, worked-example, polymarket, regulatory-binary, skip-discipline, outlier-weekly, k45
 - [Worked Example — Three-Formula System on Iran Airspace June-30 Binary (Outlier Weekly Issue 2)](concepts/issue2-worked-example-iran-airspace-2026.md) — `[DRAFT 2026-05-26]` Outlier Weekly Issue 2 file-back. Geopolitical tail binary: evening draft 27¢ (marginal YES edge) → publish lock 29.7¢ (Poisson≈market, KL noise, synthesis 0.16% → forward-track SKIP). Codifies ≥3pp pre-publish re-run and sub-0.5% actionable minimum. Public sheet updated 2026-05-26. — concept, worked-example, polymarket, geopolitical, skip-discipline, outlier-weekly
+- [Trading posts compilation — 20 X long-forms (Posts.docx K69)](sources/trading-posts-compilation-20-2026-05-27.md) — `[VALIDATED 2026-05-27]` RuujSs IPS hedge, Gustafsson decimal reject, 0xkeshav news PMV, RetroValix sports 7-type taxonomy, Kimi B&M landing pages. — source, trading-posts, k69
 - [Trading posts compilation — 38 X long-forms (Posts.docx K67)](sources/trading-posts-compilation-38-2026-05-26.md) — `[VALIDATED 2026-05-26]` Mega `Posts.docx`: KoroushAK curriculum (19), Gustafsson FOK fix, robrt $40M marginal-polytope arb, phosphenq Hurst regime, Pyth Terminal, copy-trading/CAR, paonx 15m latency. — source, trading-posts, k67
+- [Prediction-market → BTC → equity transmission hedge (IPS)](concepts/prediction-market-btc-equity-transmission-hedge.md) — `[DRAFT 2026-05-27]` K69 @RuujSs cross-asset convergence. — concept, macro, k69
+- [Polymarket news-resolution speed game (PMV)](concepts/polymarket-news-resolution-speed-game.md) — `[DRAFT 2026-05-27]` K69 @0xkeshav_ headline capture. — concept, polymarket, k69
+- [Polymarket sports-market bot taxonomy (7 types)](concepts/polymarket-sports-microstructure-bot-taxonomy.md) — `[DRAFT 2026-05-27]` K69 @RetroValix sports microstructure. — concept, polymarket, k69
 - [@KoroushAK discretionary trading curriculum](concepts/koroushak-discretionary-trading-curriculum.md) — `[DRAFT 2026-05-26]` Breakout vs reversal regime stack + module map (K67). — concept, discretionary-crypto, koroushak
 - [Polymarket marginal-polytope arbitrage](concepts/polymarket-marginal-polytope-arbitrage.md) — `[DRAFT 2026-05-26]` Dependent-market structural arb beyond YES+NO=1 (K67 / robrtcode). — concept, polymarket, arbitrage
 - [Market memory and Hurst regime](concepts/market-memory-hurst-regime.md) — `[DRAFT 2026-05-26]` Trend vs mean-reversion before model choice (@phosphenq K67). — concept, quant, regime

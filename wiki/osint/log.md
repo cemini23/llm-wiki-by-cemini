@@ -1,5 +1,28 @@
 # Wiki Log
 
+## [2026-05-27] ingest | @AlterEgo_eth.docx K70 — five weather-bot methodologies
+
+**Source:** `@AlterEgo_eth.docx` (single post; same filename as K61/K66 — **new content**) → `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx`
+
+- **1 source** — `alterego-eth-five-weather-methodologies-2026-05-27.md`
+- **1 concept** — `polymarket-weather-bot-methodology-taxonomy.md`
+- **7 updated** — `alteregoeth`, `polymarket-weather-trading-strategy`, `parity-polymarket-analytics`, `polymarket-bot-architecture`, `polymarket-copy-trading-strategy`, `hermes-agent`, `clawdbot`
+- **Prod brief** — `briefs/2026-05-27_k70-polymarket-weather-methodology-taxonomy-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+
+---
+
+## [2026-05-27] ingest | Posts.docx K69 — 20-post compilation
+
+**Source:** `Posts.docx` (20 posts, `Next Post:`; sha256 `43198b3e3d666c970b5fcc7998f2615281a55cc7b1025a7ec598e2759f359170`) → `cemini-librarian:/opt/cemini-bulk/research/trading-posts-compilation-20-2026-05-27.docx`
+
+- **1 source** — `sources/trading-posts-compilation-20-2026-05-27.md`
+- **3 concepts** — `prediction-market-btc-equity-transmission-hedge`, `polymarket-news-resolution-speed-game`, `polymarket-sports-microstructure-bot-taxonomy`
+- **2 updated** — `polymarket-btc-already-position-gate`, `kimi-agent-swarm`
+- **Prod brief** — `briefs/2026-05-27_k69-polymarket-execution-news-speed-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+- **Cross-wiki briefs** — `@seo-wiki/briefs/2026-05-27_k69-local-business-website-gap-kimi-from-osint.md`, `@seo-wiki/briefs/2026-05-27_k69-obsidian-offline-geo-coherence-from-osint.md`, `@ccc-wiki/briefs/2026-05-27_k69-claude-obsidian-llm-workflows-from-osint.md`
+
+---
+
 ## [2026-05-26] file-back | Polymarket LP weather discover + @GnatykA retail validation
 
 **Source:** Prod handoff brief + X thread @GnatykA + operator screenshot (Seoul/Warsaw May 26 temp bins, maker rebate $5.96)

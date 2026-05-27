@@ -15,10 +15,11 @@ related:
   - entities/tools/arcticdb.md
   - entities/tools/prediction-market-analysis.md
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
+  - concepts/polymarket-sports-microstructure-bot-taxonomy.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-27
 clusters: [quant-finance]
 ---
 
@@ -26,6 +27,7 @@ clusters: [quant-finance]
 
 - @concepts/hedge-fund-open-source-tooling.md — synthesized from Post 1 (@zostaff, 22 hedge-fund/quant-firm OSS repos)
 - @concepts/polymarket-updown-bot-taxonomy.md — synthesized from Post 2 (@RetroValix, 6 bot types on Polymarket Up/Down markets)
+- @concepts/polymarket-sports-microstructure-bot-taxonomy.md — K69 Post 14 (@RetroValix, 7 sports-market bot types)
 - @concepts/prediction-market-statistical-arbitrage.md — synthesized from Post 4 (@ridark_eth, cross-market stat-arb quant roadmap)
 - @concepts/polymarket-weather-trading-strategy.md — Post 5 (@0xMovez) adds a Hermes-Agent-driven deployment path for the @AlterEgo_eth weatherbot
 - @concepts/polymarket-bot-architecture.md — Post 6 (@adiix_official) independently corroborates the @0x_Punisher / @bored2boar bot-build discipline

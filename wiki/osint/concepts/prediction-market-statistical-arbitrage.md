@@ -13,6 +13,8 @@ related:
   - entities/tools/prediction-market-analysis.md
   - concepts/cme-settlement-mechanics-for-prediction-markets.md
   - entities/tools/polymarket-near-resolution-bot.md
+  - sources/trading-posts-compilation-20-2026-05-27.md
+  - concepts/prediction-market-btc-equity-transmission-hedge.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-18
@@ -27,6 +29,8 @@ updated: 2026-05-18
 - @concepts/markov-regime-switching-models.md — the cross-venue predictive signal (Method 2 Phase 3) uses a rolling Markov transition matrix
 - @concepts/market-microstructure.md — order-book mechanics (depth, spread, micro-price) backdrop
 - @entities/tools/prediction-market-analysis.md — the repo Post 4 advertised; verified 2026-05-18 as real + MIT, but a trades/markets dataset, **not** the L2 order-book dataset the post claimed
+- @sources/trading-posts-compilation-20-2026-05-27.md — K69 Post 6 (@ridark_eth refresh)
+- @concepts/prediction-market-btc-equity-transmission-hedge.md — macro IPS layer (distinct from venue stat-arb)
 
 ## Raw Concept
 

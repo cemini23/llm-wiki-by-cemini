@@ -10,6 +10,7 @@ related:
   - concepts/polymarket-btc-already-position-gate.md
   - entities/people/paonx-eth.md
   - entities/tools/crisp-predict.md
+  - concepts/polymarket-news-resolution-speed-game.md
 maturity: draft
 created: 2026-05-26
 updated: 2026-05-26
@@ -21,6 +22,7 @@ updated: 2026-05-26
 - @concepts/polymarket-updown-bot-taxonomy.md — market type
 - @concepts/polymarket-copy-trading-strategy.md — copy latency theme
 - @entities/tools/crisp-predict.md — promoted alert bot
+- @concepts/polymarket-news-resolution-speed-game.md — K69 news PMV capture (different window class)
 
 ## Raw Concept
 

@@ -51,10 +51,14 @@ related:
   - entities/people/coldmath-polymarket.md
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
   - concepts/polymarket-btc-already-position-gate.md
+  - concepts/polymarket-news-resolution-speed-game.md
+  - sources/trading-posts-compilation-20-2026-05-27.md
+  - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
+  - concepts/polymarket-weather-bot-methodology-taxonomy.md
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-24
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -83,6 +87,8 @@ updated: 2026-05-24
 - `@entities/people/coldmath-polymarket.md` — K61 adversary operator
 - `@sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md` — K62 position-already gate (Gustafsson)
 - `@concepts/polymarket-btc-already-position-gate.md` — K62 synthesized pattern
+- `@sources/alterego-eth-five-weather-methodologies-2026-05-27.md` — K70 weather-specific strategy taxonomy (types 1–2 ↔ this engineering playbook)
+- `@concepts/polymarket-weather-bot-methodology-taxonomy.md` — K70 five-type framework
 
 ## Raw Concept
 

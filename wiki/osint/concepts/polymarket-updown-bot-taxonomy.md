@@ -12,6 +12,7 @@ related:
   - concepts/market-microstructure.md
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
+  - concepts/polymarket-sports-microstructure-bot-taxonomy.md
   - concepts/polymarket-lp-rewards-farming.md
   - entities/people/gustafssonkotte.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
@@ -36,7 +37,7 @@ updated: 2026-05-24
 - @concepts/multi-module-bot-conflict-detector-pattern.md — K55: structural addition for any taxonomy-type bot — conflict-detector pattern + time-aware sizing for short-resolution markets
 - @concepts/polymarket-three-quadrant-blacklist-microtrend.md — K57: Gustafsson 5-min BTC refinements (blacklist + micro-trend)
 - @concepts/polymarket-btc-already-position-gate.md — K62: direction demoted; position-already first branch
-- @sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md — K62 source
+- @concepts/polymarket-sports-microstructure-bot-taxonomy.md — K69 sports 7-type taxonomy (same author, different market class)
 
 ## Raw Concept
 

@@ -80,6 +80,9 @@ related:
   - entities/tools/polymarket-near-resolution-bot.md
   - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
   - entities/people/coldmath-polymarket.md
+  - sources/trading-posts-compilation-20-2026-05-27.md
+  - concepts/prediction-market-btc-equity-transmission-hedge.md
+  - concepts/polymarket-news-resolution-speed-game.md
 
 maturity: validated
 created: 2026-04-23

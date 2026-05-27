@@ -6,13 +6,16 @@ keywords: [hermes-agent, nous-research, self-hosted-agent, self-improving-skills
 related:
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
+  - sources/trading-posts-compilation-20-2026-05-27.md
   - entities/tools/hermes-lcm.md
   - concepts/openclaw-security-taxonomy.md
   - concepts/polymarket-weather-trading-strategy.md
+  - concepts/polymarket-weather-bot-methodology-taxonomy.md
+  - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
   - "@ccc-wiki/entities/tools/hermes-agent.md"
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-26
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -21,7 +24,10 @@ updated: 2026-05-26
 - @entities/tools/hermes-lcm.md — Lossless Context Management is a context-engine *plugin* for the Hermes Agent ecosystem; this page is the host runtime
 - @concepts/openclaw-security-taxonomy.md — Hermes Agent is positioned as the successor to OpenClaw (formerly Clawdbot / Moltbot); the security taxonomy there is the comparison frame
 - @concepts/polymarket-weather-trading-strategy.md — Post 5 uses Hermes Agent as the runtime to deploy a Polymarket weather-trading bot
+- @concepts/polymarket-weather-bot-methodology-taxonomy.md — K70 type 5 (AI-agent weather bots) cites Hermes
+- @sources/alterego-eth-five-weather-methodologies-2026-05-27.md — K70 source
 - @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — K64 Post 2: community catalog of 276+ production use cases
+- @sources/trading-posts-compilation-20-2026-05-27.md — K69 Post 11 (@NainsiDwiv50980 persistent memory emphasis)
 - @ccc-wiki/entities/tools/hermes-agent.md — CCC routing stub (conductor comparison; not prod adopt)
 
 ## Raw Concept
@@ -51,6 +57,8 @@ Hermes Agent is an **open-source, self-hosted AI agent** built by **Nous Researc
 ### vs OpenClaw
 
 The post frames Hermes as the successor to **OpenClaw** (formerly Clawdbot, then Moltbot — the breakout early-2026 agent, 145k+ GitHub stars). Two claimed advantages: (1) a **closed learning loop** — OpenClaw skills are static and manually installed; Hermes reviews its work every ~15 tool calls and writes reusable skills automatically; (2) **bounded curated memory** — OpenClaw needs third-party add-ons (QMD) for cross-session memory; Hermes ships bounded memory with on-demand full-text retrieval and context compression. The post concedes OpenClaw still has broader platform coverage (50+ integrations). See @concepts/openclaw-security-taxonomy.md for the security-posture comparison.
+
+**K69 addendum (Post 11, @NainsiDwiv50980):** reframes persistent memory as the primary differentiator for long-running agent workflows — aligns with the `MEMORY.md` / `USER.md` model above; no new repo mechanics beyond existing Hermes docs [TENTATIVE — promotional post].
 
 ### Install (per the post)
 

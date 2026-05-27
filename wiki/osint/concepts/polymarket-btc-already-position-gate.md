@@ -6,6 +6,7 @@ keywords: [position-already, dynamic-threshold, direction-efficiency, tape-speed
 related:
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
   - sources/trading-posts-compilation-38-2026-05-26.md
+  - sources/trading-posts-compilation-20-2026-05-27.md
   - entities/people/gustafssonkotte.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
@@ -14,13 +15,14 @@ related:
   - concepts/polymarket-updown-15min-execution-latency.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-26
+updated: 2026-05-27
 ---
 
 ## Relations
 
 - @sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md — K62 primary source
 - @sources/trading-posts-compilation-38-2026-05-26.md — K67 Post 32 FOK execution fix
+- @sources/trading-posts-compilation-20-2026-05-27.md — K69 Post 5 decimal-format silent reject + reversal guard sweep
 - @entities/people/gustafssonkotte.md — operator
 - @concepts/polymarket-three-quadrant-blacklist-microtrend.md — prior Q1/Q2/Q3 direction stack; demoted after K62
 - @concepts/multi-module-bot-conflict-detector-pattern.md — K55 lineage (conflict skip vs new first-branch gate)
@@ -66,6 +68,10 @@ Author reports prior strategy failed despite “correct brain” because **four 
 ### K67 execution addendum — FOK vs resting limit (Post 32)
 
 @Gustafssonkotte reports **96% backtest vs ~60% live** on export — not logic failure but **12s resting limit** orders that chase price. Fix: **fill-or-kill / immediate** with small cushion; env flag toggles behavior. Reinforces @concepts/polymarket-bot-architecture.md: measured edge on snapshots ≠ live fills.
+
+### K69 silent-reject addendum (Post 5, 2026-05-27)
+
+New failure mode worse than loud crashes: **brain fired 10 entries, order layer placed zero** — exchange rejected **order size decimal precision** (too many decimals). One rounding fix restored flow. Same post: **verify settled outcomes**, not pre-close snapshots (2/4 "obvious" wins were wrong); **last-30s reversal** can flip apparent winners; reversal-guard margin swept on history with one-notch safety buffer.
 
 ### Relation to K57 quadrant/blacklist
 
