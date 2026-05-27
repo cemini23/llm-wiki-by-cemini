@@ -463,6 +463,11 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 
 - [@AlterEgo_eth — ColdMath weather deconstruction (narrow bins + micro-scaling)](sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md) — `[VALIDATED 2026-05-24]` K61. Single X post: >1,200 trades via Parity; 1°C bins; micro-scaling; 1¢ tails; inferred multi-model + METAR. **1 person entity** (ColdMath). Updates weather strategy + Parity + Clawdbot. Prod brief → cemini-prod. — source, trading-posts, coldmath, adversary-model, k61
 
+#### K71 ingest (2026-05-27 — arXiv Epicure + 27-URL tool eval)
+
+- [Epicure food ingredient embeddings (arXiv 2605.22391)](sources/arxiv-epicure-food-embeddings-2605.22391.md) — `[DRAFT 2026-05-27]` Filter-3 skip; LLM consolidation methodology only. — source, k71
+- [Multi-Wiki Tool Evaluation — 27 URLs](sources/multi-wiki-tool-eval-27url-2026-05-27.md) — `[VALIDATED 2026-05-27]` K71. camofox Adopt; PolyWeather AGPL reject; automaton security reject; karpathy-skills license demote. — source, tool-eval, k71
+
 #### K70 ingest (2026-05-27 — @AlterEgo_eth.docx, five weather methodologies)
 
 - [@AlterEgo_eth — five sustainable weather-bot methodologies](sources/alterego-eth-five-weather-methodologies-2026-05-27.md) — `[VALIDATED 2026-05-27]` K70. Parity survey of >30 bots → five-type taxonomy (forecast / arb / base-rate / copy / AI-agent). **1 concept** `polymarket-weather-bot-methodology-taxonomy`. Prod brief staged. — source, weather-trading, parity, k70
@@ -1050,6 +1055,7 @@ Dev-workflow tooling evaluated for Cemini integration.
 #### K66 additions (2026-05-25)
 
 - [NWP bias correction ML (weather PM)](concepts/nwp-bias-correction-ml-weather-trading.md) — `[DRAFT 2026-05-25]` XGBoost error-target pattern. — concept, k66
+- [LLM-augmented entity consolidation (cross-domain)](concepts/llm-augmented-entity-consolidation.md) — `[DRAFT 2026-05-27]` K71 Epicure pattern; wiki ingest backlog. — concept, methodology, k71
 - [Polymarket weather-bot methodology taxonomy (five types)](concepts/polymarket-weather-bot-methodology-taxonomy.md) — `[VALIDATED 2026-05-27]` K70 @AlterEgo_eth Parity survey: forecast / arb / base-rate / copy / AI-agent. — concept, weather-trading, k70
 - [NWP model stack by region](concepts/nwp-model-stack-polymarket-weather.md) — `[DRAFT 2026-05-25]` ECMWF + HRRR/ICON-D2 EPS matrix. — concept, k66
 - [AruneshDev Kalshi weather XGBoost](entities/tools/aruneshdev-kalshi-weather-xgboost.md) — `[DRAFT 2026-05-25]` CONDITIONAL-GO steal-from (no LICENSE). — tool, k66
@@ -1091,6 +1097,8 @@ Dev-workflow tooling evaluated for Cemini integration.
 - [pentest-ai (0xSteph MCP)](entities/tools/pentest-ai.md) — `[DRAFT 2026-05-23]` K60 **CONDITIONAL-GO Phase-0**. MIT MCP + 17 subagents; distinct from @entities/tools/pentest-ai-agents.md. Eval false NO LICENSE corrected. — tool, pentest, mcp, cybersec-cross-route, k60
 - [suislanchez polymarket-kalshi-weather-bot](entities/tools/suislanchez-polymarket-kalshi-weather-bot.md) — `[DRAFT 2026-05-24]` K60 re-audit **Steal-from CONDITIONAL-GO**. ~403★; Kalshi KXHIGH + Polymarket weather; 31-member GFS ensemble + Brier calibration; README MIT / no LICENSE file. — tool, polymarket, kalshi, weather-trading, steal-from, k60
 - [PolyWeather](entities/tools/polyweather.md) — `[DRAFT 2026-05-24]` K60 re-audit **Reference-only**. ~69★; AGPL-3.0; DEB/EMOS/TAF/bucket-matching methodology — no code import. — tool, polymarket, weather-trading, calibration, agpl, k60
+- [camofox-browser](entities/tools/camofox-browser.md) — `[VALIDATED 2026-05-27]` K71 Adopt (MIT). npm anti-detection browser server :9377; laptop ingest only. — tool, osint, scraping, k71
+- [xang1234/stock-screener](entities/tools/xang1234-stock-screener.md) — `[DRAFT 2026-05-27]` K71 Steal-from (Apache-2.0). Breadth + fundamental filters for prod backtest port. — tool, quant, k71
 
 ### Observability
 

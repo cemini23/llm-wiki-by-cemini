@@ -13,9 +13,10 @@ related:
   - entities/tools/openpatchlab-polymarket-weather-trading-bot.md
   - entities/tools/katbrink-polymarket-weather-trading-bot.md
   - entities/tools/aruneshdev-kalshi-weather-xgboost.md
+  - sources/multi-wiki-tool-eval-27url-2026-05-27.md
 maturity: validated
 created: 2026-05-24
-updated: 2026-05-25
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -26,6 +27,7 @@ updated: 2026-05-25
 - @concepts/kalshi-api-reference.md — KXHIGHNY/CHI/MIA/LAX/DEN series auto-discovery
 - @concepts/ensemble-weather-forecasting.md — GFS ensemble probability layer
 - @concepts/cemini-license-posture.md — README MIT badge vs missing LICENSE file
+- @sources/multi-wiki-tool-eval-27url-2026-05-27.md — K71 URL 2 Steal-from reconfirm
 
 ## Raw Concept
 

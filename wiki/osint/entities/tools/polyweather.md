@@ -9,9 +9,10 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/ensemble-weather-forecasting.md
   - entities/data-sources/open-meteo.md
+  - sources/multi-wiki-tool-eval-27url-2026-05-27.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-27
 ---
 
 ## Relations
@@ -21,6 +22,7 @@ updated: 2026-05-24
 - @concepts/cemini-license-posture.md — **AGPL-3.0** poison pill for code import
 - @concepts/ensemble-weather-forecasting.md — ensemble / calibration methodology overlap
 - @entities/data-sources/open-meteo.md — forecast input layer (PolyWeather also ingests METAR/TAF/official obs networks)
+- @sources/multi-wiki-tool-eval-27url-2026-05-27.md — K71 URL 3 AGPL reject reconfirmed
 
 ## Raw Concept
 

@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-05-27] ingest | arXiv 2605.22391 + Tool Evaluation 27-URL (K71)
+
+**Sources:** `2605.22391v1.pdf` + `Tool Evaluation Prompt Analysis.docx` (new sha256 vs K68) → librarian
+
+- **2 sources** — `arxiv-epicure-food-embeddings-2605.22391.md`, `multi-wiki-tool-eval-27url-2026-05-27.md`
+- **1 concept** — `llm-augmented-entity-consolidation.md`
+- **2 entities** — `camofox-browser` (Adopt laptop npm), `xang1234-stock-screener` (steal-from)
+- **2 updated** — `polyweather`, `suislanchez-polymarket-kalshi-weather-bot`
+- **Prod brief** — `2026-05-27_k71-tool-eval-cemini.md` → cemini-prod
+- **Adoption briefs** — local (camofox npm), librarian (sync only), egress (posture)
+- **Cross-wiki briefs** — ccc, seo, cybersec sibling repos
+
+---
+
 ## [2026-05-27] ingest | @AlterEgo_eth.docx K70 — five weather-bot methodologies
 
 **Source:** `@AlterEgo_eth.docx` (single post; same filename as K61/K66 — **new content**) → `cemini-librarian:/opt/cemini-bulk/research/@AlterEgo_eth.docx`
