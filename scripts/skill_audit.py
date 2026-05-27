@@ -59,6 +59,8 @@ import argparse
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 from dataclasses import dataclass, field, asdict
 from datetime import date, datetime
@@ -1131,6 +1133,77 @@ def render_text(report: AuditReport) -> str:
     lines.append(f"=> {report.summary}")
     return "\n".join(lines)
 
+
+def delegate_to_vet(path: Path, args) -> AuditReport | None:
+    """Run static checks via the public `vet` CLI when available."""
+    if getattr(args, "no_vet", False) or not shutil.which("vet"):
+        return None
+
+    cmd = [
+        "vet",
+        str(path),
+        "--profile",
+        "brief",
+        "--root",
+        str(ROOT),
+        "--nv-age-days",
+        str(args.nv_age_days),
+        "--json",
+    ]
+    if args.strict:
+        cmd.append("--strict")
+
+    proc = subprocess.run(cmd, capture_output=True, text=True, check=False)
+    if proc.returncode == 3 or not proc.stdout.strip():
+        return None
+
+    try:
+        data = json.loads(proc.stdout)
+    except json.JSONDecodeError:
+        return None
+
+    checks = [
+        CheckResult(
+            name=c["name"],
+            severity=c["severity"],
+            score_weight=c["score_weight"],
+            score_earned=c["score_earned"],
+            detail=c["detail"],
+            evidence=c.get("evidence", []),
+            veto_reason=c.get("veto_reason"),
+        )
+        for c in data["checks"]
+    ]
+    return AuditReport(
+        target=data["target"],
+        verdict=data["verdict"],
+        static_score=data["static_score"],
+        veto_gates=data["veto_gates"],
+        checks=checks,
+        summary=data["summary"] + " (static via vet)",
+        dynamic=None,
+    )
+
+
+def merge_dynamic_report(
+    report: AuditReport,
+    dynamic: DynamicAudit | None,
+    *,
+    strict_dynamic: bool,
+) -> AuditReport:
+    if dynamic is None:
+        return report
+
+    report.dynamic = dynamic
+    if strict_dynamic and dynamic.verdict == "reject" and not report.veto_gates:
+        report.verdict = "REJECT"
+        report.summary = (
+            f"REJECT (--strict-dynamic) — static {report.static_score}/100 but dynamic "
+            f"audit returned 'reject'. {dynamic.summary}"
+        )
+        report.veto_gates = report.veto_gates + [f"dynamic-audit-reject ({dynamic.model})"]
+    return report
+
 # ----------------------------------------------------------------- entrypoint --
 
 
@@ -1163,6 +1236,11 @@ def main():
         default="deepseek-chat",
         help="DeepSeek model id for --llm-mode (default: deepseek-chat).",
     )
+    p.add_argument(
+        "--no-vet",
+        action="store_true",
+        help="Force inline static checks; do not delegate to `vet` CLI.",
+    )
     args = p.parse_args()
 
     path = Path(args.brief)
@@ -1187,15 +1265,21 @@ def main():
                 file=sys.stderr,
             )
 
-    report = assemble_report(
-        target=str(path),
-        text=text,
-        sections=sections,
-        nv_age_days=args.nv_age_days,
-        strict=args.strict,
-        dynamic=dynamic,
-        strict_dynamic=args.strict_dynamic,
-    )
+    report = delegate_to_vet(path, args)
+    if report is None:
+        report = assemble_report(
+            target=str(path),
+            text=text,
+            sections=sections,
+            nv_age_days=args.nv_age_days,
+            strict=args.strict,
+            dynamic=None,
+            strict_dynamic=args.strict_dynamic,
+        )
+    else:
+        report = merge_dynamic_report(
+            report, dynamic, strict_dynamic=args.strict_dynamic
+        )
 
     if args.json:
         print(json.dumps(asdict(report), indent=2, default=str))
