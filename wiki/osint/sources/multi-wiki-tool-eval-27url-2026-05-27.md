@@ -10,6 +10,7 @@ related:
   - entities/tools/polyweather.md
   - concepts/cemini-license-posture.md
   - sources/multi-wiki-tool-eval-22url-2026-05-26.md
+  - sources/arxiv-epicure-food-embeddings-2605.22391.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-27
@@ -25,6 +26,7 @@ clusters: [cemini-internal]
 - @entities/tools/polyweather.md — URL 3 AGPL hard reject
 - @concepts/cemini-license-posture.md
 - @sources/multi-wiki-tool-eval-22url-2026-05-26.md — prior batch (22 URL)
+- @sources/arxiv-epicure-food-embeddings-2605.22391.md — K71 co-ingest (Epicure arXiv)
 
 ## Raw Concept
 
@@ -61,6 +63,8 @@ Twenty-seven URLs. **GitHub API spot-check** on all Adopt/Steal-from rows (2026-
 - **Updated:** @entities/tools/polyweather.md (K71 AGPL note)
 
 Cross-wiki briefs staged: **ccc-wiki**, **seo-wiki**, **cybersecurity-wiki** (see `briefs/2026-05-27_k71-*-from-osint.md`).
+
+CCC pages: `@ccc-wiki/entities/tools/metatrader-mcp-server.md`, `three-man-team`, `claude-subconscious`, `council-of-high-intelligence`, `open-claude-code`, `mercury-agent-skills`, `solo-founder-superpowers`, `build-your-own-openclaw`, `ai-infra-engineer-learning`, `andrej-karpathy-skills-multica`, `bmad-creative-intelligence-suite`.
 
 ## URL ledger (eval + verify)
 

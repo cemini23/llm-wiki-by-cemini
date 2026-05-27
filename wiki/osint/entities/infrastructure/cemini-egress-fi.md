@@ -11,9 +11,10 @@ related:
   - sources/arxiv-inference-scaling-llms-2605.19775.md
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
   - concepts/laptop-prod-research-split.md
+  - entities/tools/camofox-browser.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-23
+updated: 2026-05-27
 # Live-probed 2026-05-20 (read-only SSH via cemini-prod jump host). Refresh on spec/role change.
 ---
 
@@ -25,6 +26,7 @@ updated: 2026-05-23
 - @sources/arxiv-inference-scaling-llms-2605.19775.md — K48: long chain-of-thought reasoning is KV **capacity-bound**; this host (4 GB, no GPU) is **API-gateway-only** for frontier reasoning — do not install local CoT weights here
 - @concepts/polymarket-copy-trading-strategy.md — K57: hybrid Polymarket CLOB copy latency; gateway must not promise sub-block parity
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — @spottr_trade Post 7 (0-block vs detection)
+- @entities/tools/camofox-browser.md — K71: camofox is laptop-only; not deployed on egress-fi
 
 ## Raw Concept
 

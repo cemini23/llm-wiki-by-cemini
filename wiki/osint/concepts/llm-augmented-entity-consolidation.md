@@ -13,7 +13,7 @@ updated: 2026-05-27
 
 ## Relations
 
-- @sources/arxiv-epicure-food-ingredients-2605.22391.md — K71 Epicure paper (food domain; pattern source)
+- @sources/arxiv-epicure-food-embeddings-2605.22391.md — K71 Epicure paper (food domain; pattern source)
 - @concepts/high-signal-paper-patterns.md — Filter 3 fail for Epicure on trading domain; pattern still portable
 - @sources/arxiv-epicure-food-embeddings-2605.22391.md — K71 primary source
 
