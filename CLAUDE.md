@@ -321,7 +321,19 @@ If exit code **0** (due), prompt:
 
 Do **not** auto-run. On completion, bump cadence meta and note in `wiki/log.md` if spread tiers change. Reports: `.local/reports/pm-lp-backtest-YYYY-MM-DD.html`.
 
-### 5. (Future ritual hooks land here.)
+### 5. Kalshi LP spread backtest cadence (quarterly)
+
+```bash
+./scripts/check_kalshi_lp_backtest_due.sh
+```
+
+If exit code **0** (due), prompt:
+
+> "Quarterly Kalshi LP spread backtest is due (see `wiki/meta/kalshi-lp-backtest-cadence.md`). Want me to run it? (`bash scripts/run_kalshi_lp_backtest.sh` — public trade-api, ~1–2 min)"
+
+Do **not** auto-run. Reports: `.local/reports/kalshi-lp-backtest-YYYY-MM-DD.html`.
+
+### 6. (Future ritual hooks land here.)
 
 Keep each check under 60 seconds. Rituals that grow into multi-minute operations should become opt-in commands instead.
 

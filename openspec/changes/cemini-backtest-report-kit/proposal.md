@@ -8,7 +8,8 @@ The HL funding backtest produced a self-contained Plotly HTML report that made p
 - Add `scripts/pm_lp_backtest/` — laptop-only PM LP-rewards **shadow simulator** using public Gamma + CLOB `prices-history` (no wallet, no prod writes).
 - Add wiki concept `@concepts/cemini-backtest-report-kit.md` and cadence meta `@wiki/meta/pm-lp-backtest-cadence.md`.
 - Output reports under `.local/reports/` (gitignored), same open-in-browser workflow as HL funding.
-- Document OpenSpec change for future lanes (Kalshi, equities ArcticDB, cross-venue).
+- Ship Phase 1 Kalshi LP pilot (`scripts/kalshi_lp_backtest/`, macro-series candle history).
+- Document OpenSpec change for future lanes (equities ArcticDB, cross-venue).
 
 ## Capabilities
 
@@ -16,6 +17,7 @@ The HL funding backtest produced a self-contained Plotly HTML report that made p
 
 - `cemini-backtest-report`: Venue-agnostic sweep → HTML report (summary, heatmaps, top-N table, sensitivity charts, equity curve, trade histogram, exit reasons, per-segment breakdown).
 - `pm-lp-backtest-pilot`: Fetch PM markets + hourly mids; simulate two-sided LP spread sweep; emit sweep CSV + HTML via the shared report module.
+- `kalshi-lp-backtest-pilot`: Kalshi trade-api candlesticks (macro series + sports); same LP engine and HTML report.
 
 ### Modified Capabilities
 

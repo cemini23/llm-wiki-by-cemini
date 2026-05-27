@@ -21,4 +21,10 @@
 
 - [x] 4.1 Run pilot; verify `.local/reports/pm-lp-backtest-*.html` opens
 - [x] 4.2 Update `wiki/index.md`, `wiki/log.md`; run `wiki_lint.py`
-- [ ] 4.3 User: commit/push when ready (not agent-initiated)
+- [x] 4.3 User: commit/push when ready (not agent-initiated)
+
+## 5. Phase 1 — Kalshi LP pilot
+
+- [x] 5.1 `scripts/kalshi_lp_backtest/` + runner + cadence check
+- [x] 5.2 OpenSpec spec `kalshi-lp-backtest-pilot`
+- [x] 5.3 Run report; wiki + `CLAUDE.md` §5

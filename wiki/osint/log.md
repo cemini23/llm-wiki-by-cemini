@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-05-27] tooling | Kalshi LP backtest Phase 1
+
+- **Scripts** — `scripts/kalshi_lp_backtest/`, `run_kalshi_lp_backtest.sh`, `check_kalshi_lp_backtest_due.sh`
+- **Wiki** — `meta/kalshi-lp-backtest-cadence.md`; updated `cemini-backtest-report-kit.md`, `CLAUDE.md` §5
+- **OpenSpec** — `specs/kalshi-lp-backtest-pilot/spec.md`
+- **Report** — `.local/reports/kalshi-lp-backtest-2026-05-27.html` (public candlesticks + trade fallback)
+
+---
+
 ## [2026-05-27] tooling | Cemini backtest report kit + PM LP pilot
 
 - **OpenSpec** — `openspec/changes/cemini-backtest-report-kit/` (proposal, design, specs, tasks)

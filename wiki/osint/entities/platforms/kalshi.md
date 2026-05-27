@@ -28,6 +28,8 @@ related:
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-markets-efficiency-wolfers-zitzewitz.md
   - concepts/prediction-market-historical-analysis.md
+  - concepts/cemini-backtest-report-kit.md
+  - meta/kalshi-lp-backtest-cadence.md
   - concepts/favorite-longshot-bias.md
   - concepts/macro-weather-regime.md
   - concepts/ip-sale-readiness.md
@@ -74,6 +76,8 @@ updated: 2026-05-27
 - @concepts/macro-weather-regime.md
 - @concepts/ip-sale-readiness.md
 - @concepts/dcm-state-preemption.md — the swap-vs-gambling structural dispute that determines whether role 3 (compliance-leverage) survives
+- @concepts/cemini-backtest-report-kit.md — Phase 1 Kalshi LP spread sweep + HTML report (`scripts/kalshi_lp_backtest/`)
+- @meta/kalshi-lp-backtest-cadence.md — quarterly laptop re-run ritual
 - @entities/platforms/polymarket.md
 - @entities/data-sources/open-meteo.md
 - @concepts/ensemble-weather-forecasting.md
