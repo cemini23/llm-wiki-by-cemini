@@ -14,9 +14,11 @@ related:
   - entities/people/the-smart-ape.md
   - entities/platforms/hyperliquid.md
   - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
+  - concepts/pnl-attribution-versioning.md
+  - concepts/production-trading-blind-spots.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-27
+updated: 2026-05-28
 clusters: [quant-finance, crypto, market-neutral]
 ---
 
@@ -30,6 +32,8 @@ clusters: [quant-finance, crypto, market-neutral]
 - @sources/trading-posts-compilation-25-2026-05-27.md — K72 Post 16 (@the_smart_ape)
 - @entities/tools/hl-funding-sniper.md — open-source HL funding monitor reference
 - @entities/people/the-smart-ape.md
+- @concepts/pnl-attribution-versioning.md — partial-fill reconciliation shares failure family with versioned PnL attribution
+- @concepts/production-trading-blind-spots.md — row 6 one-leg-open hedge break
 
 ## Raw Concept
 

@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-28] query | K75 prod-audit concept cluster — PnL versioning + equity fair value + UI wiring
+
+- **Prod SSH audit** — `logic_version` registry, `core/equity_valuation.py`, `cemini_mcp/ui_routes.py` `/api/*` inventory
+- **5 new concept pages** — `pnl-attribution-versioning`, `production-trading-blind-spots`, `equity-fair-value-evaluation`, `trading-bot-logging-discipline`, `trading-dashboard-api-wiring`
+- **Backlinks** — `cemini-stack`, `polymarket-bot-architecture`, `cemini-ai-assistant`, `financetoolkit`, `perps-dex-funding-carry-strategy`
+
+---
+
 ## [2026-05-28] tooling | Pyth Pro API wired for feed reports
 
 - `scripts/pyth_feed_report.py` — loads `PYTH_TERMINAL_API_KEY` from `.env`, maps channels from Desktop catalog CSV, Pro History API + benchmark fallback

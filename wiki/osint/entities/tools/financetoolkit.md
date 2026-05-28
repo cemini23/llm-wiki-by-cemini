@@ -12,9 +12,10 @@ related:
   - entities/tools/hftbacktest.md
   - entities/tools/financedatabase.md
   - entities/tools/medskillaudit.md
+  - concepts/equity-fair-value-evaluation.md
 maturity: draft
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -22,6 +23,7 @@ updated: 2026-05-04
 - @sources/links-2-5-4-tool-eval.md — origin source: 2026-05-04 Gemini DR eval, URL 14, **Adopt** tier verdict
 - @entities/tools/riskfolio-lib.md — companion Adopt-tier; FinanceToolkit for fundamentals + Riskfolio-Lib for sizing = full FastMCP analyst stack
 - @entities/infrastructure/yfinance.md — FinanceToolkit's native Yahoo Finance integration must be force-replaced with Alpaca/FMP feeds per polygon-doctrine
+- @concepts/equity-fair-value-evaluation.md — prod runtime fair-value synthesizer (`core/equity_valuation.py`); FinanceToolkit is complementary MCP layer
 
 ## Raw Concept
 

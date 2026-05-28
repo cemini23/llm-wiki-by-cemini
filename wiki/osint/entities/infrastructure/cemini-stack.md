@@ -14,9 +14,13 @@ related:
   - concepts/cemini-license-posture.md
   - entities/tools/pybroker.md
   - entities/infrastructure/cemini-egress-fi.md
+  - concepts/pnl-attribution-versioning.md
+  - concepts/trading-dashboard-api-wiring.md
+  - concepts/trading-bot-logging-discipline.md
+  - concepts/equity-fair-value-evaluation.md
 maturity: draft
 created: 2026-05-03
-updated: 2026-05-19
+updated: 2026-05-28
 # Server-state probe baseline (2026-05-03): both hosts probed live; specs recorded match `free -h` / `df -h` / `nproc` output. Refresh on every spec change.
 ---
 
@@ -31,6 +35,10 @@ updated: 2026-05-19
 - @concepts/cemini-deployment.md — installation procedure layered on top of this topology
 - @concepts/cemini-license-posture.md — license obligations attached to deployed components
 - @entities/infrastructure/cemini-egress-fi.md — the third Hetzner server (Helsinki, order-routing relay); this page's two-server framing predates it. Originally provisioned at Falkenstein 2026-05-19 as `cemini-poly-proxy`; rebuilt at Helsinki 2026-05-20 for joint Polymarket + Hyperliquid coverage
+- @concepts/pnl-attribution-versioning.md — `pnl_attribution` container + versioned trade PnL (prod audit 2026-05-28)
+- @concepts/trading-dashboard-api-wiring.md — `cemini_mcp` `/api/*` routes for design/ UI
+- @concepts/trading-bot-logging-discipline.md — Grafana/Loki observability layer on this stack
+- @concepts/equity-fair-value-evaluation.md — `core/equity_valuation.py` on prod brain path
 
 ## Raw Concept
 

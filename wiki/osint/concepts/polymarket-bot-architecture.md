@@ -55,10 +55,13 @@ related:
   - sources/trading-posts-compilation-20-2026-05-27.md
   - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
+  - concepts/production-trading-blind-spots.md
+  - concepts/trading-bot-logging-discipline.md
+  - concepts/pnl-attribution-versioning.md
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-27
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -78,6 +81,9 @@ updated: 2026-05-27
 - `@concepts/polymarket-lp-rewards-farming.md` — K55: the *maker-side* yield strategy on Polymarket; complement to this taker-side bot architecture
 - `@concepts/multi-module-bot-conflict-detector-pattern.md` — K55: the multi-signal-synthesis pattern (`spread > THRESHOLD → SKIP`) is a structural addition to this playbook
 - `@concepts/perps-dex-funding-carry-strategy.md` — K55: portable failure-mode lessons from cross-venue perps strategies; same "execution > strategy" thesis
+- `@concepts/production-trading-blind-spots.md` — K75: operational checklist including phantom-WIN and reconciliation rows from this playbook
+- `@concepts/pnl-attribution-versioning.md` — K75: prod `logic_version` pattern generalizes CSV-as-truth lesson
+- `@concepts/trading-bot-logging-discipline.md` — K75: structured reconciliation logs
 - `@sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md` — K57 Posts.docx (Gustafsson, vorty, spottr, polydao)
 - `@concepts/polymarket-three-quadrant-blacklist-microtrend.md` — K57 Gustafsson blacklist + micro-trend
 - `@concepts/polymarket-retail-trading-discipline.md` — K57 retail edge framing

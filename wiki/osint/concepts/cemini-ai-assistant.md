@@ -14,10 +14,11 @@ related:
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
   - concepts/polymarket-copy-trading-strategy.md
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
+  - concepts/trading-dashboard-api-wiring.md
 
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-22
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -26,6 +27,7 @@ updated: 2026-05-22
 - @entities/infrastructure/deepseek-api.md — the LLM brain; already wired into the production stack, OpenAI-compatible so provider-swappable
 - @concepts/kb-server-retrieval-scaling.md — the wiki-RAG retrieval layer the assistant queries for its differentiating knowledge
 - @concepts/librarian-server-architecture.md — the librarian (kb-server + stash) that supplies static wiki RAG plus episodic memory; the assistant is a new consumer of it
+- @concepts/trading-dashboard-api-wiring.md — `/api/cemini-ai/*` proxy routes on cemini_mcp; laptop `ui/serve.py` is the dev front-end
 - @sources/arxiv-self-healing-llm-agents-2605.06737.md — failure detection + corrective replanning patterns for long-running assistant sessions
 - @concepts/code-as-agent-harness.md — harness-interface model for executable/verifiable assistant actions
 - @sources/arxiv-code-as-agent-harness-survey-2605.18747.md — primary survey for harness-interface + verification layers
