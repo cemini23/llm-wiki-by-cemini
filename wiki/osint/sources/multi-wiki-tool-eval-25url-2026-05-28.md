@@ -65,6 +65,19 @@ Actionable posture remains unchanged:
 | `deepentropy/tvscreener` | Apache-2.0 | 1.0k★, active | **Reference-only / CONDITIONAL-GO local** | Useful data-fetch helper; vendor ToS + source reliability checks required before any server use. |
 | `EA31337/EA31337` | GPL-3.0 | 1.1k★, active | **REJECT for prod** | GPL-3.0 copyleft conflicts with IP-sale posture. |
 
+### K73 targeted PM/Kalshi-native Phase-0 round (2026-05-28)
+
+| Repo | Verified license | Phase-0 verdict | Why |
+|------|------------------|-----------------|-----|
+| `discountifu/polymarket-trading-bot` | MIT (`LICENSE` present) | **CONDITIONAL-GO** | Active + tested Polymarket execution code; requires staged guardrail mapping before live paths. |
+| `pmxt-dev/pmxt` | MIT (`LICENSE` present) | **CONDITIONAL-GO** (reconfirmed) | Strong multi-venue middleware, but keep prior conditions (fork+pin, dependency/license hygiene gates). |
+| `gamma-trade-lab/Polymarket-Near-Resolution-Bot` | MIT (`LICENSE` present) | **CONDITIONAL-GO** (reconfirmed) | Narrow late-resolution scanner with useful filters; keep dry-run + settlement checks. |
+| `suislanchez/polymarket-kalshi-weather-bot` | **NONE** (no LICENSE file) | **Steal-from only** | Pattern extraction allowed; no code adoption under current license posture. |
+| `kaktusesquire6rmu/ai-polymarket-agent` | **NONE** (no LICENSE file) | **NO-GO** | Repo is currently README-only scaffold; prior "production-grade MIT MCP" claim not reproducible. |
+| `OpenPatchLab/polymarket-weather-trading-bot` | n/a (repo unavailable) | **NO-GO (404)** | Repository no longer publicly reachable. |
+| `katbrink/polymarket-weather-trading-bot` | n/a (repo unavailable) | **NO-GO (404)** | Repository no longer publicly reachable. |
+| `tsukamg/polymarket-weather-trading-engine` | n/a (repo unavailable) | **NO-GO (404)** | Repository no longer publicly reachable. |
+
 ## Snippets
 
 > "Licenses categorized as poison pills ... AGPL-3.0 ... BSL ... immediate rejection" [Source: Tool Evaluation for Cemini Wiki.docx K73]

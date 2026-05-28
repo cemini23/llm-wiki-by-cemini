@@ -1,8 +1,8 @@
 ---
-title: "ai-polymarket-agent — MIT Polymarket MCP server (Adopt, K55)"
+title: "ai-polymarket-agent — Polymarket MCP claim (Phase-0 NO-GO)"
 type: entity
-tags: [entity, tool, polymarket, mcp-server, mit-license, cemini-financial, adopt, k55]
-keywords: [ai-polymarket-agent, kaktusesquire6rmu, polymarket-mcp, mit-license, fastapi, web3py, conditionid, search-markets, get-market-odds, claude-polymarket-integration]
+tags: [entity, tool, polymarket, mcp-server, no-go, license-gap, k55]
+keywords: [ai-polymarket-agent, kaktusesquire6rmu, polymarket-mcp, no-license, readme-only, false-positive-adopt, conditionid, search-markets, get-market-odds]
 related:
   - sources/multi-wiki-tool-eval-19url-2026-05-20.md
   - entities/tools/polymarket-agents.md
@@ -14,7 +14,7 @@ related:
   - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -29,12 +29,12 @@ updated: 2026-05-20
 ## Raw Concept
 
 - **URL**: `https://github.com/kaktusesquire6rmu/ai-polymarket-agent`
-- **License**: MIT
-- **Stars / last commit / open issues**: 671 / NOT FOUND (eval did not provide) / NOT FOUND
+- **License**: NONE (no LICENSE file, verified 2026-05-28)
+- **Stars / last commit / open issues**: ~547 / 2026-05-28 / 0 (GitHub API check 2026-05-28)
 - **Stack**: Python / FastAPI / Web3.py / Node.js
-- **Tier**: **Adopt**
+- **Tier**: **NO-GO**
 - **Primary fit**: Cemini financial (with CCC secondary fit as a MCP-architecture exemplar)
-- **K55 verdict**: clean-licensed, production-grade, immediately adoptable
+- **K55 verdict**: superseded by source-level Phase-0 audit (README-only scaffold + no license)
 
 ## Narrative
 
@@ -79,6 +79,14 @@ Cemini already has:
 5. Test against actual Polymarket Gamma + CLOB endpoints on a clean Python venv
 6. Decision: Adopt as unified bridge / Adopt as complement / Defer
 
+### Phase-0 audit update (2026-05-28)
+
+- `gh api repos/kaktusesquire6rmu/ai-polymarket-agent` returns `license=NONE` (no LICENSE file).
+- Repo currently contains README-only scaffold (no executable server code in tree).
+- Eval claim of a production-grade MIT MCP server is **not reproducible from source today**.
+
+**Verdict: NO-GO (2026-05-28)** for adoption until a real licensed codebase appears.
+
 ### Status
 
-K55-ingested. Phase-0 audit pending. **Not yet adopted into the Cemini stack.**
+K55 Adopt claim is superseded by source-level Phase-0 evidence. Keep as reference-only cautionary case.

@@ -11,7 +11,7 @@ related:
   - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -29,6 +29,12 @@ Eval **UNAVAILABLE**; API: **MIT**, ~136★ (2026-05-22). **Defer Phase-0** alon
 ### Verdict: **Defer (CONDITIONAL-GO pending audit)**
 
 Same Phase-0 queue as K60 suislanchez / OpenPatchLab — avoid duplicate weather-bot implementations on prod.
+
+### Phase-0 availability update (2026-05-28)
+
+`gh api repos/<owner>/<repo>` now returns 404 for this repository. Treat prior eval/API metadata as stale.
+
+**Verdict: NO-GO (unavailable source)** until repository is publicly reachable again.
 
 ## Snippets
 

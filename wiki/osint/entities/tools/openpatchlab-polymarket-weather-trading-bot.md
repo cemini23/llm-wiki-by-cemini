@@ -10,7 +10,7 @@ related:
   - entities/tools/katbrink-polymarket-weather-trading-bot.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -28,6 +28,12 @@ Eval marked **UNAVAILABLE**; `gh api` shows **MIT** + ~147★ (pushed 2026-05-16
 ### Verdict: **Defer (CONDITIONAL-GO pending audit)**
 
 Do not batch-reject with K60 weather URL cluster. Phase-0: clone `/tmp/openpatchlab-weather-audit/`; diff Polymarket-only scan vs canonical MIT weatherbot.
+
+### Phase-0 availability update (2026-05-28)
+
+`gh api repos/<owner>/<repo>` now returns 404 for this repository. Treat prior eval/API metadata as stale.
+
+**Verdict: NO-GO (unavailable source)** until repository is publicly reachable again.
 
 ## Snippets
 

@@ -8,7 +8,7 @@ related:
   - concepts/polymarket-weather-trading-strategy.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -25,6 +25,12 @@ Eval rejected for NO LICENSE; GitHub API: **MIT**, ~268â˜…. **CONDITIONAL-GO** â
 ### Verdict: **CONDITIONAL-GO (Steal-from pending Phase-0)**
 
 License confirmed; architecture audit required vs weatherbot + suislanchez.
+
+### Phase-0 availability update (2026-05-28)
+
+`gh api repos/<owner>/<repo>` now returns 404 for this repository. Treat prior eval/API metadata as stale.
+
+**Verdict: NO-GO (unavailable source)** until repository is publicly reachable again.
 
 ## Snippets
 

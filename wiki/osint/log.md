@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-28] phase-0 | targeted PM/Kalshi candidate audits
+
+- Audited repos: `discountifu/polymarket-trading-bot`, `pmxt-dev/pmxt`, `suislanchez/polymarket-kalshi-weather-bot`, `kaktusesquire6rmu/ai-polymarket-agent`, `gamma-trade-lab/Polymarket-Near-Resolution-Bot`
+- **Key decision shifts**:
+  - `ai-polymarket-agent`: K55 Adopt claim overturned -> NO-GO (no LICENSE + README-only scaffold)
+  - `discountifu/polymarket-trading-bot`: CONDITIONAL-GO (MIT + tests + active)
+  - `OpenPatchLab/katbrink/tsukamg` weather repos: now 404 -> NO-GO until reachable
+- Created targeted server brief: `briefs/2026-05-28_k73-phase0-targeted-pm-kalshi-cemini.md` (SCP to `/opt/cemini/briefs/`)
+- Updated tool pages with targeted verdicts (`discountifu`, `ai-polymarket-agent`, `openpatchlab`, `katbrink`, `tsukamg`)
+
+---
+
 ## [2026-05-28] ingest | K74 — @AlterEgo_eth ECMWF/GFS bias map
 
 **Source:** `@AlterEgo_eth.docx` (single post; new content vs K61/K66/K70 despite same filename)  

@@ -8,7 +8,7 @@ related:
   - concepts/polymarket-bot-architecture.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -45,6 +45,20 @@ The CLOB-V2 builder-attribution formatting, WebSocket order-book layer, and 15-m
 ### Verdict
 
 **Adopt-eligible** — license-clean (MIT, verified), high test coverage, directly aligned with the Cemini Polymarket workstream. Server-side adoption (it belongs in the `/opt/cemini` trading stack), so it routes through a `cemini-prod` brief, not a laptop install. Phase-0 follow-up the eval flagged: review the pytest suite for failure-state handling under extreme WebSocket latency before relying on it in production.
+
+
+
+### Phase-0 audit update (2026-05-28)
+
+Source audit clone: `/tmp/k73-targeted-phase0/polymarket-trading-bot`
+
+- License: **MIT** (`LICENSE` file present)
+- Maturity: ~70★, active updates (2026-05-25), low issue count
+- Safety surface: order submission + key handling present; risk-cap config exists; tests present (`tests/` with ~9 files)
+- No obvious hardcoded Cemini paths; config-driven design (`config.example.yaml`)
+
+**Verdict: CONDITIONAL-GO** for server steal-from/integration brief.
+Conditions: keep wallet ops in dry-run/staging first, retain key-management controls, and map its order/risk semantics against existing Cemini adapter guardrails before enabling live paths.
 
 ## Snippets
 
