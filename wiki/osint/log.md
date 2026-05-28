@@ -1,5 +1,20 @@
 # Wiki Log
 
+## [2026-05-28] tooling | Pyth Pro API wired for feed reports
+
+- `scripts/pyth_feed_report.py` — loads `PYTH_TERMINAL_API_KEY` from `.env`, maps channels from Desktop catalog CSV, Pro History API + benchmark fallback
+- `scripts/run_pyth_feed_reports.sh` — one-liner regen to `~/Desktop/pyth-reports-<date>/`
+- Regenerated `~/Desktop/pyth-reports-2026-05-28/` via **Pro** (7 feeds, 7d/5m)
+
+---
+
+## [2026-05-28] query | Pyth Terminal + PythTerminalCSV playbook
+
+- Expanded `@entities/tools/pyth-terminal.md`: Phase-0 for Terminal + `metamorphicc/PythTerminalCSV`, CSV download matrix (BTC/ETH/equity/RWA), OHLC→`price` column note, `.env` API key posture (gitignored)
+- Verdict: Terminal **CONDITIONAL-GO (workflow)**; PythTerminalCSV **workflow helper only / NO-GO adopt**
+
+---
+
 ## [2026-05-28] phase-0 | pending-tools sweep (batch 4)
 
 - Closed remaining pending tool pages: `pydns-scanner`, `n8n-workflows`, `marketingskills`, `open-seo`
