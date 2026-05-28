@@ -39,10 +39,11 @@ related:
   - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
   - entities/tools/dataset-viewer.md
   - sources/multi-wiki-tool-eval-25url-2026-05-28.md
+  - concepts/cemini-repository-topology.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-05-24
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -76,6 +77,7 @@ updated: 2026-05-24
 - @entities/tools/centpro.md — K55 Reject; **commercial closed-source Windows binary** sold via Telegram subscription. Phase-0 NO-GO recorded.
 - @entities/tools/scalar-field.md — K55 Reject; **YC Spring 2025 closed-source SaaS** (competitive-intel marker).
 - @entities/tools/arcticdb.md — **BSL "read the Additional Use Grant" exemplar.** ArcticDB is BSL 1.1 (GitHub shows it as `NOASSERTION`), and the K52 source post framed BSL as "commercial = paid license." Verification (2026-05-18, read the actual `LICENSE.txt`) showed the opposite: the BSL is only as restrictive as its **Additional Use Grant**, and ArcticDB's forbids *only* re-offering it as a multi-tenant hosted Database Service — every other use, incl. commercial internal use, is free, with a 2-year per-version conversion to Apache-2.0. Lesson: a BSL/NOASSERTION label is **not** an automatic reject — read the Additional Use Grant before recording a verdict. Contrast with the genuine poison pills (AGPL-3.0, EUPL-1.2 #11, License-Drift-to-BUSL #10)
+- @concepts/cemini-repository-topology.md — federated repo map (deploy monorepo vs wiki repos); license boundaries when splitting or importing across repos
 
 ## Raw Concept
 

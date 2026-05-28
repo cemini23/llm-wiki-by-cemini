@@ -10,9 +10,10 @@ related:
   - sources/shiyu-coder-kronos.md
   - concepts/librarian-server-architecture.md
   - entities/infrastructure/cemini-egress-fi.md
+  - concepts/cemini-repository-topology.md
 maturity: validated
 created: 2026-05-23
-updated: 2026-05-24
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-24
 - @sources/shiyu-coder-kronos.md — Step 109 prompt A/B on prod — **REJECT** 2026-05-23
 - @concepts/librarian-server-architecture.md — prod→librarian SSH via `10.0.0.2`
 - @entities/infrastructure/cemini-egress-fi.md — egress boundary (unchanged by this handoff)
+- @concepts/cemini-repository-topology.md — git/repo layout vs machine split (orthogonal concerns)
 
 ## Raw Concept
 

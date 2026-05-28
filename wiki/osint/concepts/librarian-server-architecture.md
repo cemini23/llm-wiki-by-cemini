@@ -34,10 +34,11 @@ related:
   - sources/arxiv-inference-scaling-llms-2605.19775.md
   - concepts/laptop-prod-research-split.md
   - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
+  - concepts/cemini-repository-topology.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-05-23
+updated: 2026-05-28
 ---
 
 ## Relations

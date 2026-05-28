@@ -18,6 +18,7 @@ related:
   - concepts/trading-dashboard-api-wiring.md
   - concepts/trading-bot-logging-discipline.md
   - concepts/equity-fair-value-evaluation.md
+  - concepts/cemini-repository-topology.md
 maturity: draft
 created: 2026-05-03
 updated: 2026-05-28
@@ -39,6 +40,7 @@ updated: 2026-05-28
 - @concepts/trading-dashboard-api-wiring.md — `cemini_mcp` `/api/*` routes for design/ UI
 - @concepts/trading-bot-logging-discipline.md — Grafana/Loki observability layer on this stack
 - @concepts/equity-fair-value-evaluation.md — `core/equity_valuation.py` on prod brain path
+- @concepts/cemini-repository-topology.md — deploy monorepo (`Cemini-Financial-Suite`) vs wiki federation
 
 ## Raw Concept
 

@@ -10,10 +10,11 @@ related:
   - concepts/librarian-server-architecture.md
   - concepts/cemini-license-posture.md
   - concepts/cross-channel-agent-gateway.md
+  - concepts/cemini-repository-topology.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-05-11
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-11
 - @entities/infrastructure/deepseek-api.md — LLM brain (cloud API; no local weights)
 - @concepts/librarian-server-architecture.md — librarian-side rationale for the kb-server pattern
 - @concepts/cemini-license-posture.md — license obligations attached to the stack being deployed
+- @concepts/cemini-repository-topology.md — why prod stays one deploy monorepo; wikis stay separate
 
 ## Raw Concept
 

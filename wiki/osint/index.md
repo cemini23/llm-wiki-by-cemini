@@ -1206,6 +1206,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Macro Weather regime](concepts/macro-weather-regime.md) `[C]` — GREEN/YELLOW/RED portfolio gate on SPY vs 21-EMA/50-SMA — concept, regime, cemini-internal
 - [Milestone ledger](concepts/milestone-ledger.md) `[R]` — ~~Append-only feature record linking commits, schemas, SBOMs, Merkle roots~~ — **not implemented**. P0 ticket. — concept, product-management
 - [Cemini Deployment — Two-Server Setup Guide](concepts/cemini-deployment.md) — `[DRAFT 2026-05-03]` End-to-end install procedure (Hetzner CPX21 librarian + CPX31 prod). Region decision matrix (US Kalshi vs EU Polymarket geo-blocking), 66-key `.env` checklist categorized, Claude Code laptop-side plugin/MCP requirements (13 plugins + 6 MCPs). Targets minimal-dev-knowledge deployers. — concept, deployment, infrastructure, operations, cemini-internal
+- [Cemini Repository Topology — Monorepo vs Multi-Repo](concepts/cemini-repository-topology.md) — `[VALIDATED 2026-05-28]` Decision framework: keep one deploy monorepo (`Cemini-Financial-Suite`); research wikis stay separate; split trading code only when independent release/ownership gates met. Confusion fix = workspace discipline + contracts, not more GitHub repos. — concept, infrastructure, git, cemini-internal
 
 ### AI safety & alignment
 

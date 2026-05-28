@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-05-28] concept | Cemini repository topology — monorepo vs multi-repo
+
+- **New** `@concepts/cemini-repository-topology.md` — decision: keep deploy monorepo + separate wikis; split gates; Cursor workspace discipline
+- **Backlinks** — `laptop-prod-research-split`, `librarian-server-architecture`, `cemini-deployment`, `cemini-stack`, `cemini-license-posture`
+
+---
+
 ## [2026-05-28] phase-0 | K75 equity valuation tool extensions
 
 - **FP-DCF** (`tiejiang8/fp-dcf`) — REFERENCE ONLY; no LICENSE
