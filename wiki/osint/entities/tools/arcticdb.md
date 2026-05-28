@@ -24,6 +24,8 @@ updated: 2026-05-27
 - @sources/multi-wiki-link-eval-41url-2026-05-18.md — K53 eval URL 16; independently Rejected ArcticDB as a "BSL poison-pill" — the same license misread this page corrects
 - @concepts/hedge-fund-open-source-tooling.md — parent catalog; ArcticDB is the one Cemini-relevant adoption candidate broken out here
 - @concepts/cemini-license-posture.md — ArcticDB's BSL license is the gating concern for adoption
+- @concepts/cemini-backtest-report-kit.md — Phase 2 equity momentum backtest reads `equity_bars` via SSH
+- @meta/equity-signal-backtest-cadence.md — quarterly sweep ritual
 
 ## Raw Concept
 
