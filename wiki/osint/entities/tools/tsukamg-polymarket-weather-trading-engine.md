@@ -22,7 +22,7 @@ Eval rejected for NO LICENSE; GitHub API: **MIT**, ~268★. **CONDITIONAL-GO** �
 
 ## Narrative
 
-### Verdict: **CONDITIONAL-GO (Steal-from pending Phase-0)**
+### Verdict: **NO-GO (404 — unavailable source)**
 
 License confirmed; architecture audit required vs weatherbot + suislanchez.
 

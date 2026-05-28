@@ -44,8 +44,7 @@ What prompted this page: K55-2 Tool Eval (URL 5) was the single Adopt tier verdi
 
 ### What we have not verified yet
 
-- **Phase-0 audit not run.** Before any adoption into `/opt/cemini/`, the standard Phase-0 protocol applies: clone to `/tmp/polymarket-near-resolution-bot-audit/`, verify in-file LICENSE, check dependencies (especially any web3 wallet code that could exfiltrate keys), confirm the README matches the code, look for the wiki-tooling-class failure mode (hardcoded paths, environment assumptions).
-- **"Heavily favored" threshold** is not specified in the eval — could be 90¢, 95¢, 99¢. Different thresholds imply very different operational profiles (95¢ markets resolve cleanly; 99¢ markets may have liquidity issues for any meaningful position size).
+- **"Heavily favored" threshold** is env-parameterized in code/README (not a single fixed constant in eval prose).
 - **No record of operator deployment** beyond the repo author. With 9 stars, this is a micro-repo with no community validation.
 
 ### Phase-0 audit (2026-05-22)

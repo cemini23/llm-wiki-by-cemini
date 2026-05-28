@@ -26,7 +26,7 @@ Eval **UNAVAILABLE**; API: **MIT**, ~136★ (2026-05-22). **Defer Phase-0** alon
 
 ## Narrative
 
-### Verdict: **Defer (CONDITIONAL-GO pending audit)**
+### Verdict: **NO-GO (404 — unavailable source)**
 
 Same Phase-0 queue as K60 suislanchez / OpenPatchLab — avoid duplicate weather-bot implementations on prod.
 

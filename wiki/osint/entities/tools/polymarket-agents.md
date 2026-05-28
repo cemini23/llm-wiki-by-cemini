@@ -26,7 +26,7 @@ updated: 2026-05-24
 - @sources/caiovicentino-polymarket-mcp-server.md — Wave 5 Adopt; works alongside Polymarket Agents in the LLM-bridge layer
 - @entities/platforms/polymarket.md — Polymarket venue entity
 - @entities/tools/polymarket-python-order-utils.md — companion Adopt; order-signing layer
-- @entities/tools/ai-polymarket-agent.md — K55 third-party MCP server built on top of this official framework (kaktusesquire6rmu/ai-polymarket-agent); Phase-0 audit pending
+- @entities/tools/ai-polymarket-agent.md — K55 third-party MCP claim overturned to **NO-GO** (2026-05-28); prefer official `Polymarket/agents` + existing MCP bridges
 - @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — K64 Post 1: custom 4-check Claude loop + Kelly on top of framework
 - @concepts/polymarket-wallet-alpha-pipeline.md — “brain” layer in wallet-alpha stack
 

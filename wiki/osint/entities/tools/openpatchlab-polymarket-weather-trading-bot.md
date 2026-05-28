@@ -25,7 +25,7 @@ Eval marked **UNAVAILABLE**; `gh api` shows **MIT** + ~147★ (pushed 2026-05-16
 
 ## Narrative
 
-### Verdict: **Defer (CONDITIONAL-GO pending audit)**
+### Verdict: **NO-GO (404 — unavailable source)**
 
 Do not batch-reject with K60 weather URL cluster. Phase-0: clone `/tmp/openpatchlab-weather-audit/`; diff Polymarket-only scan vs canonical MIT weatherbot.
 
