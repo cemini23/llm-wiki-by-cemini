@@ -9,7 +9,7 @@ related:
   - concepts/mcp-tool-marketplace.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -41,10 +41,16 @@ Massive automation library. Notable for inclusion of Trusera's **AI-BOM scanner*
 - **SEO-wiki**: CRM + marketing automation nodes
 - **Workflow**: FastAPI backend + SQLite FTS5 search infrastructure
 
-### Phase-0 audit (PENDING)
+### Phase-0 audit (2026-05-28)
 
-Verify AI-BOM heuristic accuracy against Cemini's custom MCP clients (LangGraph instances).
+Repo: `Zie619/n8n-workflows` — **MIT**, ~54.8k stars, very active (updated 2026-05-28).
 
-[NEEDS VERIFICATION 2026-05-13]
+| Check | Result |
+|---|---|
+| License | MIT confirmed |
+| Maturity | Large and active workflow corpus |
+| AI-BOM relevance | Useful as scanner checklist source, not authoritative security validator |
+
+**Verdict: CONDITIONAL-GO (workflow + security reference)** — reuse curated templates/checklists; avoid blind import into production automation.
 
 [Source: Multi-Wiki Link Evaluation Prompt.docx URLs 7-8 (retrieved 2026-05-13)]

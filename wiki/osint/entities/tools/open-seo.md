@@ -8,7 +8,7 @@ related:
   - concepts/tool-evaluation-framework.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -25,10 +25,16 @@ Stub created from Doc 1 K42 eval (2026-05-13). Adopt-tier; **SEO-wiki primary fi
 - **Eval claim**: SEO automation toolkit. Primary fit SEO-wiki per Doc 1 cross-routing batch.
 - **Action**: route brief to `@seo-wiki/` via `scripts/cross_wiki_route.py` with `--type brief` (lower maintenance burden than full page).
 
-### Phase-0 audit (PENDING for SEO surface, not OSINT)
+### Phase-0 audit (2026-05-28)
 
-Defer to SEO-wiki ingest. OSINT side records only the discovery + provenance.
+Likely canonical repo: `every-app/open-seo` — **MIT**, ~2.1k stars, active (updated 2026-05-28).
 
-[NEEDS VERIFICATION 2026-05-13]
+| Check | Result |
+|---|---|
+| License | MIT confirmed on likely canonical candidate |
+| Maturity | Active open-source SEO tool; moderate adoption |
+| OSINT scope fit | Discovery/provenance only; substantive analysis belongs in SEO wiki |
+
+**Verdict: CONDITIONAL-GO (SEO-wiki surface)** — keep OSINT page as provenance pointer; route implementation/detail to `@seo-wiki/entities/tools/open-seo.md`.
 
 [Source: Evaluating URLs for Cemini Project.docx (retrieved 2026-05-13)]

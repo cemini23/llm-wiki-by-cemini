@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-28] phase-0 | pending-tools sweep (batch 4)
+
+- Closed remaining pending tool pages: `pydns-scanner`, `n8n-workflows`, `marketingskills`, `open-seo`
+- Live metadata checks via `gh` confirmed active MIT repos; `open-seo` mapped to likely canonical `every-app/open-seo`
+- Verdict posture: all four -> **CONDITIONAL-GO** (workflow/SEO/cybersec reference use; selective adoption only)
+
+---
+
 ## [2026-05-28] phase-0 | K42 backlog sweep (batch 3)
 
 - Audited: drift, OpenSpec, tabularis, mirage, openhuman, FuzzyAI, cua, syncthing, instructa/agent-skills, whale (unverifiable)

@@ -8,7 +8,7 @@ related:
   - concepts/tool-evaluation-framework.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -26,10 +26,16 @@ Stub from Doc 2 K42 eval. Adopt-tier; SEO/Workflow primary fit + Image-gen cross
 - **Eval claim**: `.agents/skills/` structural schema for Claude Code plugin integration on marketing content workflows.
 - **Cross-routing**: SEO-wiki (primary), Image-gen-wiki (persona-ops + visual asset consistency), Workflow (skill schema template).
 
-### Phase-0 audit (PENDING)
+### Phase-0 audit (2026-05-28)
 
-License + maturity verification; comparison against agent-skills (Doc 1) for schema overlap.
+Repo: `coreyhaines31/marketingskills` — **MIT**, ~30.8k stars, active (updated 2026-05-28).
 
-[NEEDS VERIFICATION 2026-05-13]
+| Check | Result |
+|---|---|
+| License | MIT confirmed |
+| Maturity | Very strong adoption signal |
+| Overlap | High overlap with `agent-skills` style schemas; best used as selective pattern source |
+
+**Verdict: CONDITIONAL-GO (SEO/workflow steal-from)** — cherry-pick skill structures; keep SEO-specific implementation in `@seo-wiki`.
 
 [Source: Multi-Wiki Link Evaluation Prompt.docx URL 2 (retrieved 2026-05-13)]
