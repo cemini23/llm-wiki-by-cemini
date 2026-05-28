@@ -4,3 +4,17 @@ repos:
     hooks:
       - id: detect-secrets
         args: ['--baseline', '.secrets.baseline']
+
+  - repo: local
+    hooks:
+      - id: vet-agent-artifacts
+        name: vet skills and briefs
+        entry: scripts/precommit_vet.sh
+        language: script
+        files: '(\.cursor/skills/.+/SKILL\.md|briefs/.+\.md)$'
+      - id: wikilint-wiki
+        name: wikilint wiki graph
+        entry: scripts/precommit_wikilint.sh
+        language: script
+        pass_filenames: false
+        files: ^wiki/.*\.md$

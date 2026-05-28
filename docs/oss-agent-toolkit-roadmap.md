@@ -17,11 +17,12 @@ Rule: **ship the librarian's ruler, not the library's contents.**
 
 | Priority | Repo | Status | Purpose |
 |----------|------|--------|---------|
-| **1** | [vet](https://github.com/cemini23/vet) | **Shipped v0.1.0** | Static veto-gate audit for skills, briefs, agent prompts |
-| **2** | [phase0](https://github.com/cemini23/phase0) | **Shipped v0.1.0** | CLI for third-party tool adoption audits (two-gate pattern) |
-| 3 | wikilint | Planned | Generalize `wiki_lint.py` — bidirectional links, orphans, stale tags |
-| 4 | eval-skeptic | Planned | Verify LLM tool-eval license claims via `gh api` |
-| 5 | ara-schema | Planned | Agent Research Archive page format spec only |
+| **1** | [vet](https://github.com/cemini23/vet) | **v0.2.0** — Action, examples, PyPI workflow | Static veto-gate audit |
+| **2** | [phase0](https://github.com/cemini23/phase0) | **v0.2.0** — Action, PyPI workflow | Third-party tool adoption audits |
+| **3** | [wikilint](https://github.com/cemini23/wikilint) | **v0.1.0** — new | Wiki orphans, backlinks, dangling @paths |
+| **4** | [agent-toolkit-demo](https://github.com/cemini23/agent-toolkit-demo) | **live CI template** | Forkable repo wiring all three tools |
+| **5** | [ara-schema](https://github.com/cemini23/ara-schema) | **v0.1.0** | Wiki page format spec (structure only) |
+| — | eval-skeptic | Merged into phase0 `verify-eval` | — |
 
 ## Deferred / skip
 
@@ -56,13 +57,19 @@ Tool-class checklists: MCP server, wiki-tool, skill library, OAuth proxy, etc.
 
 Launch content: blog post with anonymized stats (40% doc-level Adopts failed Phase-0; license eval false-negative rate).
 
-## Visibility playbook
+## Visibility playbook (updated — posts underperformed)
 
-1. Ship `vet` + README case study (no Cemini alpha)
-2. Ship `phase0` + HN/Show HN post with eval failure stats
-3. Optional: `wikilint` if wiki/CI angle resonates
+Distribution shift from one-off posts → **forkable CI template**:
 
-Brand neutrally on repos; mention Cemini only as case study in About/README.
+1. **[agent-toolkit-demo](https://github.com/cemini23/agent-toolkit-demo)** — fork + green/red CI badges
+2. **GitHub Marketplace-style Actions** on each repo (`action.yml`)
+3. **PyPI** — trusted publishing workflows shipped; `docs/PYPI.md` in each repo (human: create PyPI projects + publishers)
+4. **awesome-agent-skills** — PR opened listing vet / phase0 / wikilint / demo under Development and Testing
+5. **OSINT pre-commit** — `vet` on SKILL.md + briefs; `wikilint` on `wiki/` changes
+
+## ara-schema
+
+Published at [cemini23/ara-schema](https://github.com/cemini23/ara-schema) — frontmatter, sections, citation/confidence tags; no Cemini content.
 
 ## Monetization preserved
 

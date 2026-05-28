@@ -5,6 +5,9 @@ description: >-
   wiki/briefs to Google NotebookLM for audio overview, Q&A, or study artifacts;
   after /notebooklm or "turn this brief into a podcast". Requires laptop auth
   (notebooklm login). Never upload prod secrets or credentials.
+license: MIT
+metadata.author: cemini23
+metadata.version: "1.0.0"
 ---
 
 # NotebookLM bridge (OSINT / Cemini)
