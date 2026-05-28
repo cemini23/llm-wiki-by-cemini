@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-27] tooling | Backtest kit Phases 2–3 + HL bridge
+
+- **Phase 2** — `scripts/equity_signal_backtest/` (ArcticDB via SSH/CSV), `run_equity_signal_backtest.sh`, `meta/equity-signal-backtest-cadence.md`
+- **Phase 3** — `scripts/cross_venue_backtest/` (PM×Kalshi BTC-proxy divergence), `run_cross_venue_backtest.sh`, `meta/cross-venue-backtest-cadence.md`
+- **HL bridge** — `scripts/hl_funding_backtest/regenerate_report.py`, `run_hl_funding_report.sh` → shared Plotly skin
+- **Shared** — `scripts/backtest_common/` (metrics, mcpt_gate)
+- **Reports** — `equity-signal-backtest-2026-05-27.html`, `cross-venue-backtest-2026-05-27.html`, `hl-funding-backtest-2026-05-27.html`
+- **Wiki** — `cemini-backtest-report-kit.md` → core; `CLAUDE.md` §6–7
+
+---
+
 ## [2026-05-27] tooling | Kalshi LP backtest Phase 1
 
 - **Scripts** — `scripts/kalshi_lp_backtest/`, `run_kalshi_lp_backtest.sh`, `check_kalshi_lp_backtest_due.sh`

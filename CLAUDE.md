@@ -333,7 +333,23 @@ If exit code **0** (due), prompt:
 
 Do **not** auto-run. Reports: `.local/reports/kalshi-lp-backtest-YYYY-MM-DD.html`.
 
-### 6. (Future ritual hooks land here.)
+### 6. Equity signal backtest cadence (quarterly)
+
+```bash
+./scripts/check_equity_signal_backtest_due.sh
+```
+
+If due: prompt to run `bash scripts/run_equity_signal_backtest.sh` (needs `ssh cemini-librarian` + ArcticDB). See `wiki/meta/equity-signal-backtest-cadence.md`.
+
+### 7. Cross-venue PM×Kalshi backtest cadence (quarterly)
+
+```bash
+./scripts/check_cross_venue_backtest_due.sh
+```
+
+If due: prompt to run `bash scripts/run_cross_venue_backtest.sh`. See `wiki/meta/cross-venue-backtest-cadence.md`.
+
+### 8. (Future ritual hooks land here.)
 
 Keep each check under 60 seconds. Rituals that grow into multi-minute operations should become opt-in commands instead.
 

@@ -71,10 +71,12 @@ Mirror HL: `wiki/meta/pm-lp-backtest-cadence.md` — quarterly user-gated prompt
 
 ## Migration Plan
 
-1. Ship Phase 0 + PM pilot (this change).
-2. Optional: refactor HL reference clone to import `cemini_backtest_report` instead of vendored `report.py`.
-3. Phase 1 brief: Kalshi harvest + same report kit.
-4. Phase 2: ArcticDB equity signal sweep on librarian export.
+1. ✅ Ship Phase 0 + PM pilot.
+2. ✅ HL bridge: `run_hl_funding_report.sh` reads reference-clone sweep parquet.
+3. ✅ Phase 1: Kalshi LP pilot.
+4. ✅ Phase 2: ArcticDB equity momentum (SSH/CSV export).
+5. ✅ Phase 3: PM×Kalshi divergence lab (BTC-proxy; matched events = future).
+6. **Next:** hftbacktest fill-realistic cross-venue; prod briefs per lane.
 
 Rollback: delete `scripts/cemini_backtest_report` and `scripts/pm_lp_backtest`; wiki page remains as design record.
 

@@ -28,3 +28,22 @@
 - [x] 5.1 `scripts/kalshi_lp_backtest/` + runner + cadence check
 - [x] 5.2 OpenSpec spec `kalshi-lp-backtest-pilot`
 - [x] 5.3 Run report; wiki + `CLAUDE.md` §5
+
+## 6. Phase 1b — HL report bridge
+
+- [x] 6.1 `scripts/hl_funding_backtest/regenerate_report.py` + `run_hl_funding_report.sh`
+
+## 7. Phase 2 — Equity ArcticDB
+
+- [x] 7.1 `scripts/equity_signal_backtest/` + cadence + OpenSpec spec
+- [x] 7.2 Run report (librarian SSH)
+
+## 8. Phase 3 — Cross-venue
+
+- [x] 8.1 `scripts/cross_venue_backtest/` + cadence + OpenSpec spec
+- [x] 8.2 Run report
+
+## 9. Shared + docs
+
+- [x] 9.1 `scripts/backtest_common/` metrics + MCPT
+- [x] 9.2 Wiki concept → core; index; log; `CLAUDE.md` §6–7

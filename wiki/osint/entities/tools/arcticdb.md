@@ -11,9 +11,11 @@ related:
   - concepts/laptop-prod-research-split.md
   - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
   - entities/tools/dataset-viewer.md
+  - concepts/cemini-backtest-report-kit.md
+  - meta/equity-signal-backtest-cadence.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-24
+updated: 2026-05-27
 ---
 
 ## Relations

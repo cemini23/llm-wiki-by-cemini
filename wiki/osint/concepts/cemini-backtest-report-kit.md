@@ -7,96 +7,71 @@ related:
   - concepts/polymarket-lp-bot-phase0-spec.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/prediction-market-historical-analysis.md
+  - concepts/cross-venue-arbitrage-pattern.md
+  - concepts/lo-mackinlay-variance-ratio-test.md
+  - concepts/monte-carlo-permutation-test-mcpt.md
   - entities/tools/polymarket-clob-api.md
   - entities/tools/polymarket-gamma-api.md
+  - entities/tools/arcticdb.md
   - entities/tools/hftbacktest.md
   - meta/hl-funding-backtest-cadence.md
   - meta/pm-lp-backtest-cadence.md
   - meta/kalshi-lp-backtest-cadence.md
+  - meta/equity-signal-backtest-cadence.md
+  - meta/cross-venue-backtest-cadence.md
   - concepts/kalshi-api-reference.md
   - entities/platforms/kalshi.md
-maturity: validated
+maturity: core
 created: 2026-05-27
 updated: 2026-05-27
 ---
 
 ## Relations
 
-- @concepts/polymarket-lp-bot-phase0-spec.md — PM pilot simulates spread/sizing knobs from Phase-0 LP design
-- @concepts/polymarket-lp-rewards-farming.md — strategy context for PM sweep
-- @concepts/prediction-market-historical-analysis.md — future Layer 5 replay; v1 uses live CLOB history API
-- @entities/tools/polymarket-clob-api.md — `prices-history` data source
-- @entities/tools/polymarket-gamma-api.md — market discovery + volume filter
-- @entities/tools/hftbacktest.md — Phase 2 fill-realistic path for cross-venue / L2
-- @meta/hl-funding-backtest-cadence.md — sibling cadence for HL funding (Dune)
-- @meta/pm-lp-backtest-cadence.md — quarterly PM LP sweep ritual
-- @meta/kalshi-lp-backtest-cadence.md — quarterly Kalshi LP sweep ritual
-- @concepts/kalshi-api-reference.md — Kalshi candlesticks + trades endpoints
-- @entities/platforms/kalshi.md — venue entity
+- @concepts/polymarket-lp-bot-phase0-spec.md — PM pilot
+- @concepts/cross-venue-arbitrage-pattern.md — Phase 3 divergence lab (not atomic arb)
+- @concepts/monte-carlo-permutation-test-mcpt.md — `scripts/backtest_common/mcpt_gate.py`
+- @entities/tools/arcticdb.md — Phase 2 data on librarian
+- @meta/hl-funding-backtest-cadence.md — HL Dune quarterly
+- @meta/pm-lp-backtest-cadence.md — PM LP quarterly
+- @meta/kalshi-lp-backtest-cadence.md — Kalshi LP quarterly
+- @meta/equity-signal-backtest-cadence.md — equity momentum quarterly
+- @meta/cross-venue-backtest-cadence.md — PM×Kalshi quarterly
 
 ## Raw Concept
 
-Prompted by the HL funding sniper HTML backtest report (2026-05-27): user asked for the same layout across Polymarket, Kalshi, equities, and crypto. OpenSpec change `cemini-backtest-report-kit` ships Phase 0 (shared report module), PM LP pilot, and Phase 1 Kalshi LP pilot.
+Unified Plotly HTML sweep reports for Cemini lanes: HL funding, PM LP, Kalshi LP, equity momentum (ArcticDB), PM×Kalshi divergence. OpenSpec: `cemini-backtest-report-kit`.
 
 ## Narrative
 
-### Layout contract (all venues)
+### Shared kit
 
-Self-contained Plotly HTML:
+`scripts/cemini_backtest_report/` — `ReportConfig`, `generate_report()`.
 
-1. Summary cards (best Sharpe, best PnL, sweep count, data window)
-2. 2D heatmaps (best metric per param pair)
-3. Top-N configuration table
-4. Per-parameter sensitivity (avg trades + Sharpe)
-5. Best-config equity curve, PnL histogram, exit reasons, per-segment bars
+`scripts/backtest_common/` — metrics + `mcpt_gate.py`.
 
-Implementation: `scripts/cemini_backtest_report/` (`ReportConfig`, `generate_report()`). Pattern extracted from MIT `hl-funding-sniper` `backtest/report.py` (laptop reference clone).
+### Lanes (all shipped 2026-05-27)
 
-### PM LP pilot (v1)
+| Phase | Lane | Runner | Report |
+|-------|------|--------|--------|
+| 0 | PM LP | `run_pm_lp_backtest.sh` | `pm-lp-backtest-*.html` |
+| 0b | HL funding | `run_hl_funding_report.sh` | `hl-funding-backtest-*.html` (from reference sweep parquet) |
+| 1 | Kalshi LP | `run_kalshi_lp_backtest.sh` | `kalshi-lp-backtest-*.html` |
+| 2 | Equities | `run_equity_signal_backtest.sh` | `equity-signal-backtest-*.html` |
+| 3 | PM×Kalshi | `run_cross_venue_backtest.sh` | `cross-venue-backtest-*.html` |
 
-| Piece | Path |
-|-------|------|
-| Fetch | Gamma top markets + CLOB `prices-history` (hourly) |
-| Sim | Two-sided quote at `mid ± spread_cents/2`; adverse fill on hourly cross; reward **proxy** `∝ 1/spread` |
-| Sweep | `spread_cents`, `reward_scale`, `adverse_multiplier` |
-| Run | `bash scripts/run_pm_lp_backtest.sh` or `python3 scripts/pm_lp_backtest/run.py` |
-| Output | `.local/reports/pm-lp-backtest-YYYY-MM-DD.html` (+ `.sweep.csv`) |
+### Future
 
-**Not on-chain LP scoring** — proxy labeled in report disclaimer. Shadow-live on prod remains the gate per @concepts/polymarket-lp-bot-phase0-spec.md.
-
-### Kalshi LP pilot (Phase 1)
-
-| Piece | Path |
-|-------|------|
-| Fetch | Open markets (`mve_filter=exclude`) + `series/.../candlesticks` (60m); trades → hourly if sparse |
-| Sim | Same LP engine as PM (`scripts/kalshi_lp_backtest/` reuses `pm_lp_backtest.engine`) |
-| Run | `bash scripts/run_kalshi_lp_backtest.sh` |
-| Output | `.local/reports/kalshi-lp-backtest-YYYY-MM-DD.html` |
-
-Sports short-dated books dominate volume — use for **parameter sensitivity**, not production PnL claims.
-
-### Roadmap lanes
-
-| Lane | Data | Status |
-|------|------|--------|
-| HL funding | Dune `hyperliquid.market_data` | Shipped (reference clone) |
-| PM LP | Gamma + CLOB | **Pilot shipped** |
-| Kalshi | trade-api v2 candlesticks + trades | **Phase 1 shipped** |
-| Equities | ArcticDB `equity_bars` on librarian | Phase 2 / brief |
-| PM↔Kalshi arb | L2 + latency | `hftbacktest` Phase 2+ |
-
-### OpenSpec
-
-Change directory: `openspec/changes/cemini-backtest-report-kit/` (proposal, design, specs, tasks). Apply with `/opsx:apply` when extending to Kalshi/equities.
+- Fill-realistic PM↔Kalshi: @entities/tools/hftbacktest.md
+- Matched-event pairing for cross-venue (not BTC-proxy)
 
 ## Snippets
 
 ```bash
-# PM LP report (laptop)
 bash scripts/run_pm_lp_backtest.sh --quick
-open ".local/reports/pm-lp-backtest-$(date +%Y-%m-%d).html"
-
-# Kalshi LP report (Phase 1)
 bash scripts/run_kalshi_lp_backtest.sh --quick
-open ".local/reports/kalshi-lp-backtest-$(date +%Y-%m-%d).html"
+bash scripts/run_equity_signal_backtest.sh --quick
+bash scripts/run_cross_venue_backtest.sh --quick
+bash scripts/run_hl_funding_report.sh
+python3 scripts/backtest_common/mcpt_gate.py .local/reports/equity-signal-backtest-2026-05-27.trades.csv
 ```

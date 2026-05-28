@@ -29,6 +29,8 @@ related:
   - concepts/perps-dex-funding-carry-strategy.md
   - entities/tools/suislanchez-polymarket-kalshi-weather-bot.md
   - entities/tools/aruneshdev-kalshi-weather-xgboost.md
+  - concepts/cemini-backtest-report-kit.md
+  - meta/cross-venue-backtest-cadence.md
 maturity: draft
 created: 2026-05-05
 updated: 2026-05-24
@@ -55,6 +57,8 @@ updated: 2026-05-24
 - @entities/tools/poly-arbitrage-bot.md — a small (~20★) but on-target MIT implementation of this exact Polymarket↔Kalshi arb loop; Reference/Steal-from for the dual-venue auth + paper-trading patterns
 - @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md — K60: same dual-venue pattern on **weather** (KXHIGH + Polymarket temperature), not BTC price arb
 - @entities/tools/aruneshdev-kalshi-weather-xgboost.md — K66: Kalshi-origin weather ML; Polymarket port per @AlterEgo_eth
+- @concepts/cemini-backtest-report-kit.md — Phase 3 laptop divergence lab (`scripts/cross_venue_backtest/`)
+- @meta/cross-venue-backtest-cadence.md — quarterly re-run ritual
 
 ## Raw Concept
 
