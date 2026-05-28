@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-05-28] phase-0 | K75 equity valuation tool extensions
+
+- **FP-DCF** (`tiejiang8/fp-dcf`) — REFERENCE ONLY; no LICENSE
+- **value-investing-tools** — REJECT Adopt; README MIT without LICENSE file
+- Entity pages + `@concepts/equity-fair-value-evaluation.md` P2 table updated
+
+---
+
 ## [2026-05-28] query | K75 prod-audit concept cluster — PnL versioning + equity fair value + UI wiring
 
 - **Prod SSH audit** — `logic_version` registry, `core/equity_valuation.py`, `cemini_mcp/ui_routes.py` `/api/*` inventory

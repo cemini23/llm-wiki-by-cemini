@@ -11,6 +11,8 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - entities/infrastructure/cemini-stack.md
   - concepts/trading-dashboard-api-wiring.md
+  - entities/tools/fp-dcf.md
+  - entities/tools/value-investing-tools.md
 maturity: validated
 created: 2026-05-28
 updated: 2026-05-28
@@ -25,6 +27,8 @@ updated: 2026-05-28
 - @concepts/regime-conditioned-evaluation.md — gap thresholds may need regime conditioning [TENTATIVE]
 - @entities/infrastructure/cemini-stack.md — `brain`, `edgar_pipeline`, `finnhub_calendar`, Redis `intel:*`
 - @concepts/trading-dashboard-api-wiring.md — conviction/screener APIs surface related signals
+- @entities/tools/fp-dcf.md — K75 Phase-0 REFERENCE ONLY (no LICENSE)
+- @entities/tools/value-investing-tools.md — K75 Phase-0 REJECT adopt (README MIT, no LICENSE file)
 
 ## Raw Concept
 
@@ -98,13 +102,13 @@ Optional legacy symbol-list override via `BRAIN_SLEEVE_USE_SYMBOL_LISTS` (off by
 
 @entities/tools/financetoolkit.md — 150 standardized metrics, GARCH/VaR, DuPont — **calculation library** for analyst MCP tools. `equity_valuation.py` — **prod runtime synthesizer** with FMP + intel bus + sleeve hooks. Triangulation pattern aligns with finance-skills company-valuation (DCF + relative + blend) but prod implementation is FMP-weighted, not full tri-method report.
 
-### External reference implementations (Phase-0 candidates)
+### External reference implementations (Phase-0 complete 2026-05-28)
 
-| Repo | License | Fit |
-|------|---------|-----|
-| [FP-DCF](https://github.com/tiejiang8/fp-dcf) | verify | Auditable FCFF JSON for agent pipelines |
-| [value-investing-tools](https://github.com/ZhijingEu/value-investing-tools) | verify | MCP + DCF scenarios |
-| [FinanceToolkit](https://github.com/JerBouma/FinanceToolkit) | MIT | Already Adopt-tier in wiki |
+| Repo | Phase-0 verdict | Notes |
+|------|-----------------|-------|
+| @entities/tools/fp-dcf.md | **REFERENCE ONLY** | No LICENSE; steal JSON contract shape only |
+| @entities/tools/value-investing-tools.md | **REJECT Adopt** | README MIT, no LICENSE file; steal 3-scenario DCF pattern in prod |
+| @entities/tools/financetoolkit.md | MIT Adopt-tier (eval) | Complementary metrics MCP layer |
 
 ### Operational cautions
 
