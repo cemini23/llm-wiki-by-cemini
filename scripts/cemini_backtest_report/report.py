@@ -242,7 +242,12 @@ def _top_configs_html(
     return df[cols_show].round(2).to_html(index=False, classes="dataframe", escape=False)
 
 
-def _summary_html(sweep_df: pd.DataFrame, config: ReportConfig, data_summary: str) -> str:
+def _summary_html(
+    sweep_df: pd.DataFrame,
+    config: ReportConfig,
+    data_summary: str,
+    period_trade_count: int,
+) -> str:
     if sweep_df.empty:
         return "<p>No sweep results.</p>"
     best_sharpe = sweep_df.loc[sweep_df["sharpe_annual"].idxmax()]
@@ -283,6 +288,7 @@ def _summary_html(sweep_df: pd.DataFrame, config: ReportConfig, data_summary: st
       </div>
       <div class="card">
         <h3>Data window</h3>
+        <div class="small">Trades in window (best Sharpe): {period_trade_count:,}</div>
         <pre class="small">{data_summary}</pre>
       </div>
     </div>
@@ -405,7 +411,7 @@ def generate_report(
   {disclaimer}
 
   <h2>1. Summary</h2>
-  {_summary_html(sweep_df, config, data_summary)}
+  {_summary_html(sweep_df, config, data_summary, len(best_trades_df))}
 
   <h2>2. Heatmaps</h2>
   <p style="color:#666; font-size:13px;">{config.heatmap_note}</p>
