@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-05-28] ingest | K74 — @AlterEgo_eth ECMWF/GFS bias map
+
+**Source:** `@AlterEgo_eth.docx` (single post; new content vs K61/K66/K70 despite same filename)  
+`preingest_check.py` verdict: **LIKELY duplicate** by filename-reference match only; ingested after content verification.
+
+- **1 new source** — `alterego-eth-ecmwf-gfs-bias-map-2026-05-28.md`
+- **2 updated pages** — `entities/people/alteregoeth.md`, `concepts/nwp-bias-correction-ml-weather-trading.md`
+- **Index updated** — added K74 row under source ingest list
+- **Key takeaway** — post contributes region-specific systematic model bias claims (ECMWF/GFS/UKMO/CMC) for station-prior calibration in 1-degree weather bins
+
+---
+
 ## [2026-05-28] ingest | K73 — Posts(38) + Tool-Eval(25)
 
 **Sources:** `Posts.docx` (sha `8ae518ea…`, 38 posts) + `Tool Evaluation for Cemini Wiki.docx` (sha `c8b606be…`, 25 URLs)

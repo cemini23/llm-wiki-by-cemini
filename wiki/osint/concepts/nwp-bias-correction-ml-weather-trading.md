@@ -14,14 +14,16 @@ related:
   - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
   - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
+  - sources/alterego-eth-ecmwf-gfs-bias-map-2026-05-28.md
 maturity: draft
 created: 2026-05-25
-updated: 2026-05-27
+updated: 2026-05-28
 ---
 
 ## Relations
 
 - @sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md — K66 Post 1
+- @sources/alterego-eth-ecmwf-gfs-bias-map-2026-05-28.md — K74 city-level ECMWF/GFS/UKMO/CMC bias examples
 - @entities/tools/aruneshdev-kalshi-weather-xgboost.md — reference implementation (CONDITIONAL-GO)
 - @concepts/polymarket-weather-trading-strategy.md — Gamma + station mapping + Kelly
 - @sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md — top wallet likely uses similar multi-model + bias correction [TENTATIVE]
@@ -34,7 +36,7 @@ Predict **NWP error** (observed − forecast) with gradient-boosted trees using 
 
 ### Why not raw ECMWF → probability
 
-Naive bots pipe a single NWP run into a bucket probability. That ignores **systematic biases** (summer afternoon warm bias in city X, day-of-week drift, model spread signal). @AlterEgo_eth argues narrow **1°C bins** need corrected means, not raw globals.
+Naive bots pipe a single NWP run into a bucket probability. That ignores **systematic biases** (summer afternoon warm bias in city X, day-of-week drift, model spread signal). @AlterEgo_eth argues narrow **1°C bins** need corrected means, not raw globals. K74 extends this with explicit city/model examples (ECMWF warm-under, GFS warm-over in specific regions) that can seed station priors before full retraining.
 
 ### Feature families (K66)
 

@@ -472,6 +472,10 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 
 - [@AlterEgo_eth — five sustainable weather-bot methodologies](sources/alterego-eth-five-weather-methodologies-2026-05-27.md) — `[VALIDATED 2026-05-27]` K70. Parity survey of >30 bots → five-type taxonomy (forecast / arb / base-rate / copy / AI-agent). **1 concept** `polymarket-weather-bot-methodology-taxonomy`. Prod brief staged. — source, weather-trading, parity, k70
 
+#### K74 ingest (2026-05-28 — @AlterEgo_eth.docx, ECMWF/GFS bias map)
+
+- [@AlterEgo_eth — ECMWF/GFS bias map across Polymarket weather cities](sources/alterego-eth-ecmwf-gfs-bias-map-2026-05-28.md) — `[VALIDATED 2026-05-28]` K74. Single post focused on systematic model error by region/city (ECMWF, GFS, UKMO, CMC/GEM), reinforcing station-level correction requirements for 1-degree bins. Updated `alteregoeth` + `nwp-bias-correction-ml-weather-trading`. — source, weather-trading, nwp, bias-correction, k74
+
 #### K66 ingest (2026-05-25 — @AlterEgo_eth.docx, 2 posts)
 
 - [@AlterEgo_eth XGBoost NWP + regional models](sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md) — `[VALIDATED 2026-05-25]` K66. Post 1: AruneshDev XGBoost error correction. Post 2: 11-model regional stack. Prod brief → cemini-prod. — source, weather-trading, k66
