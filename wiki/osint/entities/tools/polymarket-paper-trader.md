@@ -9,7 +9,7 @@ related:
   - concepts/tool-evaluation-framework.md
 maturity: draft
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -43,3 +43,17 @@ Polymarket-paper-trader consumes real Polymarket order book data and allows LLMs
 This is the highest-value Polymarket tool evaluated across all briefs. It provides the missing bridge between LLM strategy generation and safe forward-testing. Complements the existing Polymarket stack (py-clob-client, polymarket-mcp-server) with a simulation layer that doesn't exist in the current architecture.
 
 [Source: Project Link Evaluation Brief 5_10.docx, URL 4]
+
+### Phase-0 audit (2026-05-28)
+
+Clone: `/tmp/k73-phase0-batch2/polymarket-paper-trader`
+
+| Check | Result |
+|-------|--------|
+| License | **MIT** (`LICENSE` present) |
+| Maturity | ~339★, v0.1.x line, active test suite (incl. `test_e2e_live.py`) |
+| Surface | MCP server + paper engine + orderbook simulation modules |
+| Safety | No obvious hardcoded host paths; simulation-first design |
+
+**Verdict: CONDITIONAL-GO** — strong candidate for MCP forward-testing layer on prod **after** dependency license scan + staging soak (eval flagged nascent v0.1.x edge cases).
+

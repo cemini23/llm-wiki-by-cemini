@@ -67,7 +67,7 @@ Cemini already has:
 
 ### Cemini fit
 
-- **Adopt-eligible pending Phase-0 audit** to confirm differentiation vs existing MCP bridge.
+- **NO-GO** — Phase-0 complete 2026-05-28; do not pursue vs existing MCP bridges unless repo ships licensed executable code.
 - **Likely path**: if it has materially better `search_markets` ergonomics or covers Polymarket surfaces (Gamma + CLOB + Data) the existing bridge doesn't, **adopt it as the unified MCP layer** for the Polymarket adapter cluster. If not, defer to existing tools.
 
 ### Phase-0 checklist

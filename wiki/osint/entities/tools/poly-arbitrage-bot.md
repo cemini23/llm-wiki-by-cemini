@@ -32,7 +32,7 @@ Documented architecture (per the eval):
 - **SQLite-backed simulated-fill paper-trading** subsystem — a clean pattern, portable to the Cemini PostgreSQL backtesting pipeline.
 - Explicit **sanity caps** on max position size and **gated live-trading environment variables** — an institutional risk posture.
 
-### Verdict — corrected
+### Verdict — corrected (Phase-0 complete 2026-05-28)
 
 The eval Rejected this on "NO LICENSE FOUND." That finding is **wrong** — the repo is MIT (verified). The reject is therefore retracted. Corrected verdict: **Reference / Steal-from** — it is a small (~20★) but on-target, license-clean implementation of @concepts/cross-venue-arbitrage-pattern.md. Cemini should not adopt a 20-star bot wholesale, but the cross-exchange arb calculation, the EIP-712/RSA-PSS dual-venue auth handling, and the SQLite simulated-fill paper-trading subsystem are concrete reference patterns worth reading before building Cemini's own cross-venue arb loop.
 
@@ -40,6 +40,18 @@ This is a K53 instance of the eval's systematic "retrieval-gap reported as no-li
 
 **K54 re-confirmation (2026-05-19).** The next multi-wiki eval batch (@sources/multi-wiki-tool-eval-26url-2026-05-19.md, URL 23) independently listed this exact repo again — and again marked it "NO LICENSE FOUND / Reject." A fresh GitHub API check still returns **MIT**. Two separate eval runs produced the same false-negative on the same repo: the verdict on this page is solid, and the failure mode is reproducible, not a one-off retrieval glitch.
 
-## Snippets
+### Phase-0 audit (2026-05-28)
 
-> "The underlying logic of this repository provides high-fidelity, cross-exchange arbitrage calculations designed to exploit pricing inefficiencies between Polymarket and Kalshi. The application leverages the py-clob-client paired with EIP-712 order signing mechanisms and Kalshi RSA-PSS authentication." [Source: Multi-Wiki Tool Evaluation.docx — URL 1]
+Clone: `/tmp/k73-phase0-batch2/poly-arbitrage-bot`
+
+| Check | Result |
+|-------|--------|
+| License | **MIT** (`LICENSE` present; reconfirms K53 false-negative correction) |
+| Maturity | ~21★, pushed 2026-05-06, active but small community |
+| Cross-venue | Kalshi RSA-PSS + Polymarket EIP-712 clients present; matcher + fee math tests |
+| Paper path | `scripts/paper_run.py` + SQLite fill logging |
+| Risk posture | Position caps + gated live env vars in code |
+
+**Verdict: CONDITIONAL-GO (steal-from)** — extract cross-venue matcher/fee/paper-fill patterns for Cemini arb loop; do not deploy repo wholesale.
+
+## Snippets

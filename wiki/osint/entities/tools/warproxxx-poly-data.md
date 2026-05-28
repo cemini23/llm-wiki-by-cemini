@@ -14,7 +14,7 @@ related:
   - entities/people/farxxxxx1-polymarket.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -38,6 +38,15 @@ Polars `scan_csv` → per-`maker` aggregates (count, win rate, sum PnL) → filt
 
 Same posture as Wave 5B. Replicate analytics on Cemini-owned data (pmxt orderbook history, Data-API) under MIT/Apache tooling.
 
-## Snippets
+### Phase-0 reconfirm (2026-05-28)
 
-> "Every trade ever made on Polymarket. Every wallet." [Source: K64 posts.docx, 2026-05-24]
+Clone: `/tmp/k73-phase0-batch2/poly_data`
+
+| Check | Result |
+|-------|--------|
+| License | **GPL-3.0** (GitHub API + in-repo) |
+| Code surface | Small analytics scripts over trades CSV paradigm |
+
+**Verdict: REJECT for prod import** — reference-only / clean-room analytics patterns (unchanged).
+
+## Snippets

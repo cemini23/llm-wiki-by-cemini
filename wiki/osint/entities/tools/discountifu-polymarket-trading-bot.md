@@ -36,6 +36,7 @@ Documented features (per the eval):
 
 `discountifu` ships two related repos, both surfaced in the K53 eval:
 - `discountifu/polymarket-websocket-client` (URL 31) — zero-dependency TypeScript client for Polymarket CLOB + RTDS, heartbeat + auto-reconnect. Eval marked it "no license / Reject"; **verified MIT** (2026-05-18) — the reject was a retrieval-gap error.
+- **Phase-0 sibling audit (2026-05-28):** `discountifu/polymarket-websocket-client` — MIT + `LICENSE` present, ~12★, small TS client, reconnect/heartbeat utilities. **CONDITIONAL-GO** as companion to main bot (not standalone prod service).
 - `discountifu/polymarket-orderbook-watcher` (URL 32) — eval marked UNAVAILABLE; the repo exists (~10★) but **genuinely has no license file** — not adoptable as-is.
 
 ### Cemini fit

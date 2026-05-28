@@ -9,7 +9,7 @@ related:
   - entities/tools/atlas-gic-autoresearch.md
 maturity: draft
 created: 2026-05-04
-updated: 2026-05-04
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -53,10 +53,17 @@ probablyprofit is **directly in-domain** for Cemini's prediction-market work (pe
 - Live-trading safeguards depend on assumptions about Polygon's network behavior — verify equivalent assumptions hold for Kalshi's infrastructure before transplanting
 - LLM ensemble consensus adds 3× API token cost per decision; benchmark against single-LLM-with-self-correction (Gemini paper §2.1) before committing to the ensemble cost
 
+### Phase-0 audit (2026-05-28)
+
+Clone: `/tmp/k73-phase0-batch2/probablyprofit`
+
+| Check | Result |
+|-------|--------|
+| License | **MIT** (`LICENSE` present) |
+| Maturity | ~41★, moderate commit history, tests present |
+| Extractables | Kelly sizing, drawdown guardrails, kill-switch hooks, ensemble vote scaffolding |
+| Coupling | Polymarket CLOB/network layer tightly coupled — requires adapter rewrite for Kalshi-primary stack |
+
+**Verdict: CONDITIONAL-GO (steal-from)** — lift risk/consensus modules only; rewrite venue adapters.
+
 ## Snippets
-
-- **Kelly + ensemble + kill-switch summary**: "leveraging a sophisticated 'ensemble consensus mode,' which orchestrates multiple LLMs (Claude, GPT-4, Gemini) to vote dynamically on trade executions. The system is hardened with advanced financial risk controls, natively implementing Kelly criterion position sizing, automated maximum drawdown protection, and a multi-vector emergency kill switch." [Source: 5_4 links.docx URL 12]
-
-- **Recommendation tier**: "Steal-from. While the platform's networking layer strictly targets the Polymarket CLOB API on the Polygon network (whereas Cemini currently targets Kalshi), the internal Python architecture is exceptional. The modules calculating Kelly criterion sizing, the hardware and HTTP-based emergency kill switch triggers, and the LLM voting consensus mechanisms should be extracted, refactored, and integrated into the Cemini FastMCP/LangGraph orchestration engine immediately." [Source: 5_4 links.docx URL 12]
-
-- **Network-layer rewrite caveat**: "The execution adapters will require a total rewrite, as they are tightly coupled to Polymarket's specific WebSocket feeds and USDC settlement contracts. Consequently, the core extractable value lies entirely in the risk management mathematics and consensus logic, rather than the networking or routing layers." [Source: 5_4 links.docx URL 12]

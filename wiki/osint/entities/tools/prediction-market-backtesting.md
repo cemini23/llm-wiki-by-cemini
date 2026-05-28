@@ -8,7 +8,7 @@ related:
   - concepts/tool-evaluation-framework.md
 maturity: draft
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -25,8 +25,22 @@ A Nautilus Trader extension providing custom prediction market adapters for back
 
 ## Narrative
 
-**Verdict: Reference-only.** The repository's chaotic multi-license structure (GPL-3.0 + LGPL-3.0 + MIT simultaneously) creates extreme legal ambiguity — integrating any part risks viral contamination of the Cemini codebase. However, the mathematical approaches (Optuna TPE sampling integrated with backtesting frameworks, Rust-to-Python interface patterns) are valuable for independent study during solo-dev research sessions.
+**Verdict: Reference-only (Phase-0 reconfirmed 2026-05-28).** The repository's chaotic multi-license structure (GPL-3.0 + LGPL-3.0 + MIT simultaneously) creates extreme legal ambiguity — integrating any part risks viral contamination of the Cemini codebase. However, the mathematical approaches (Optuna TPE sampling integrated with backtesting frameworks, Rust-to-Python interface patterns) are valuable for independent study during solo-dev research sessions.
 
 The TPE sampling methodology specifically is worth extracting conceptually: Tree-structured Parzen Estimators provide more efficient hyperparameter optimization than grid search for trading strategy parameter sweeps.
 
 [Source: Project Link Evaluation Brief 5_10.docx, URL 2]
+
+### Phase-0 audit (2026-05-28)
+
+Clone: `/tmp/k73-phase0-batch2/prediction-market-backtesting`
+
+| Check | Result |
+|-------|--------|
+| License posture | **Mixed / copyleft core** — root `LICENSE` explicitly states **LGPLv3+** applies to `prediction_market_extensions/` (Nautilus-derived) |
+| GitHub API | `license=NOASSERTION` (not MIT-clean despite README marketing) |
+| Maturity | ~894★, substantial code + tests |
+| Cemini fit | Useful **reference** for Optuna/TPE + adapter patterns only |
+
+**Verdict: REJECT for prod code import** — reference-only; do not vendor Nautilus/LGPL extensions into `/opt/cemini`.
+

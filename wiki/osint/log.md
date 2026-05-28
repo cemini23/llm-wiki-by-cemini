@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-28] phase-0 | PM/Kalshi backlog batch-2
+
+- Cleared remaining high-priority PM/Kalshi Phase-0 queue (9 repos)
+- New CONDITIONAL-GO steal-from targets: `poly-arbitrage-bot`, `polybot` (python slice), `probablyprofit`, `CloddsBot`
+- New CONDITIONAL-GO deploy candidates: `polymarket-paper-trader`, `pykalshi` (reconfirmed), `discountifu/polymarket-websocket-client`
+- Reconfirmed REJECT: `prediction-market-backtesting` (LGPL core), `warproxxx/poly_data` (GPL-3.0)
+- Brief: `briefs/2026-05-28_k73-phase0-batch2-pm-kalshi-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+
+---
+
 ## [2026-05-28] phase-0 | targeted PM/Kalshi candidate audits
 
 - Audited repos: `discountifu/polymarket-trading-bot`, `pmxt-dev/pmxt`, `suislanchez/polymarket-kalshi-weather-bot`, `kaktusesquire6rmu/ai-polymarket-agent`, `gamma-trade-lab/Polymarket-Near-Resolution-Bot`

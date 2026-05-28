@@ -78,6 +78,20 @@ Actionable posture remains unchanged:
 | `katbrink/polymarket-weather-trading-bot` | n/a (repo unavailable) | **NO-GO (404)** | Repository no longer publicly reachable. |
 | `tsukamg/polymarket-weather-trading-engine` | n/a (repo unavailable) | **NO-GO (404)** | Repository no longer publicly reachable. |
 
+### K73 Phase-0 batch-2 PM/Kalshi backlog clear (2026-05-28)
+
+| Repo | Verified license | Phase-0 verdict | Why |
+|------|------------------|-----------------|-----|
+| `zostaff/poly-arbitrage-bot` | MIT | **CONDITIONAL-GO (steal-from)** | Cross-venue matcher + paper-run path; small but on-target |
+| `agent-next/polymarket-paper-trader` | MIT | **CONDITIONAL-GO** | MCP paper engine + strong tests; stage before prod |
+| `ent0n29/polybot` | MIT | **CONDITIONAL-GO (steal-from)** | Valuable Python research slice; reject Java/ClickHouse deploy |
+| `randomness11/probablyprofit` | MIT | **CONDITIONAL-GO (steal-from)** | Kelly/kill-switch/ensemble modules; rewrite venue layer |
+| `ArshKA/pykalshi` | MIT | **CONDITIONAL-GO** | Client package reconfirmed; proceed via existing adoption brief |
+| `discountifu/polymarket-websocket-client` | MIT | **CONDITIONAL-GO** | Small TS websocket helper for discountifu stack |
+| `evan-kolberg/prediction-market-backtesting` | LGPLv3+ core | **REJECT (prod import)** | Nautilus-derived copyleft extensions |
+| `alsk1992/CloddsBot` | MIT | **CONDITIONAL-GO (steal-from)** | Node runtime mismatch; extract patterns only |
+| `warproxxx/poly_data` | GPL-3.0 | **REJECT (prod import)** | Dataset/analytics reference-only |
+
 ## Snippets
 
 > "Licenses categorized as poison pills ... AGPL-3.0 ... BSL ... immediate rejection" [Source: Tool Evaluation for Cemini Wiki.docx K73]

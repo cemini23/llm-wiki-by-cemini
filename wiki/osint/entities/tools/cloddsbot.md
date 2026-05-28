@@ -10,7 +10,7 @@ related:
   - entities/tools/gabagool.md
 maturity: validated
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-28
 license_verified: MIT
 ---
 
@@ -39,3 +39,17 @@ Steal-from: port to Python the **multi-agent routing logic**, **risk-engine math
 TypeScript→Python translation of async order execution is high-risk for financial losses if mistranslated. Massive scope (21 messaging platforms, multiple blockchains) — extract narrowly.
 
 [Source: Link Evaluation Brief Trading Stack.docx, URL 9]
+
+### Phase-0 clone audit (2026-05-28)
+
+Clone: `/tmp/k73-phase0-batch2/CloddsBot` (supplements 2026-05-11 license verification)
+
+| Check | Result |
+|-------|--------|
+| License | **MIT** (`LICENSE` present) |
+| Maturity | ~295★, large Node/TS surface (~600 files) |
+| Runtime | Multi-agent terminal spanning many venues/chains — scope far beyond PM/Kalshi |
+| Extraction | Steal routing/risk/MCP schema ideas only; **do not** port Node runtime into Cemini Python stack |
+
+**Verdict: CONDITIONAL-GO (steal-from)** — same posture as prior eval; not a deployable cemini-prod service.
+

@@ -9,7 +9,7 @@ related:
   - concepts/tool-evaluation-framework.md
 maturity: draft
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -45,3 +45,17 @@ Polybot ingests real-time Polymarket market state and user trade data into Click
 Polybot's replication scoring algorithm — reverse-engineering profitable trader behaviors — is a novel capability not present in the current Polymarket stack. Combined with polymarket-paper-trader (safe forward-testing), it creates a research→validate feedback loop.
 
 [Source: Project Link Evaluation Brief 5_10.docx, URL 3]
+
+### Phase-0 audit (2026-05-28)
+
+Clone: `/tmp/k73-phase0-batch2/polybot`
+
+| Check | Result |
+|-------|--------|
+| License | **MIT** (`LICENSE` present) |
+| Maturity | ~677★, multi-module Java 21 + Docker/ClickHouse stack |
+| Fit | Real ingestion/execution architecture, but **Java + ClickHouse** conflict with Cemini 7GB RAM posture |
+| Python slice | `research/` scripts exist (~22 py files in shallow tree) for replication scoring |
+
+**Verdict: CONDITIONAL-GO (steal-from only)** — port Python research/replication patterns; **NO** wholesale Java/ClickHouse deploy on cemini-prod.
+

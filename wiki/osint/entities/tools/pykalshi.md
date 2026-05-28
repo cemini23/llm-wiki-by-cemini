@@ -10,7 +10,7 @@ related:
   - concepts/kalshi-api-reference.md
 maturity: validated
 created: 2026-05-05
-updated: 2026-05-11
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -61,7 +61,17 @@ Integration flow per `@briefs/2026-05-05_pykalshi-adoption.md`:
 
 **Brief staged 2026-05-05**: `briefs/2026-05-05_pykalshi-adoption.md` (also at `cemini-prod:/opt/cemini/briefs/`). Sister to `briefs/2026-05-05_polymarket-stack-adoption.md`; together they refresh both prediction-market venue clients. Awaiting prod-side execution.
 
-## Snippets
+### Phase-0 clone audit (2026-05-28)
 
-- **Adopt-tier framing** (K30 eval): "completely replaces the bloated official SDK." [Source: 5_5 links 2.docx URL 27]
-- **Recommendation tier**: "Adopt. This is the optima[l] Kalshi client." [Source: 5_5 links 2.docx URL 27]
+Clone: `/tmp/k73-phase0-batch2/pykalshi` (supplements 2026-05-05 API verification)
+
+| Check | Result |
+|-------|--------|
+| License | **MIT** in-file + GitHub API |
+| Maturity | ~96★, active CI/tests, WebSocket + REST modules present |
+| Code quality | Structured client package with tests; no hardcoded Cemini paths observed |
+| Remaining gates | Auth compatibility + endpoint coverage vs `@concepts/kalshi-api-reference.md` still require prod sandbox smoke test |
+
+**Verdict: CONDITIONAL-GO** — remains the leading Kalshi client replacement candidate; proceed via existing `briefs/2026-05-05_pykalshi-adoption.md` with Phase-1 sandbox checks.
+
+## Snippets
