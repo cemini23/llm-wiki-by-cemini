@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-28] ingest | K77 — model promotion, CLOB limits, clean-room, diagnostics, tick staleness, shadow
+
+- **6 sources** — benchmarking framework, CLOB rate limits, clean-room design, model failure diagnostics, tick staleness, shadow accumulation (docx → librarian)
+- **6 concepts** — `brier-score-model-promotion-framework`, `clob-rate-limit-mitigation-strategies`, `clean-room-software-design`, `trading-model-failure-diagnostics`, `tick-staleness-ingestion-diagnosis`, `shadow-trading-telemetry-accumulation`
+- **6 updates** — `lp-algorithm-live-promotion-gates` (+Brier pillar), `zero-trade-edge-signal-diagnostics`, `shadow-to-live-transition-engineering`
+- **Briefs** — master execution plan + K77 prod hooks; updated R7/R8/R16 plan with research map
+- **Prod SCP** — `/opt/cemini/briefs/2026-05-28_master-execution-plan-r7-r16-cemini.md` + K77 hooks + updated queue plan
+
+---
+
 ## [2026-05-28] ingest | K76 — shadow→live, zero-trade, LP promotion + posts
 
 - **4 sources** — live transition strategies, pipeline zero-trade analysis, LP promotion criteria, macro/skills posts

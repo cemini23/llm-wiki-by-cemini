@@ -5,10 +5,12 @@ tags: [concept, liquidity-provision, validation, polymarket, cemini-internal, k7
 keywords: [LP-promotion, DSR, markout, MCPT, shadow-incubation, kill-switch, pm_lp_rewards]
 related:
   - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
+  - concepts/brier-score-model-promotion-framework.md
   - concepts/monte-carlo-permutation-test-mcpt.md
   - concepts/regime-conditioned-evaluation.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/shadow-to-live-transition-engineering.md
+  - concepts/shadow-trading-telemetry-accumulation.md
   - concepts/pnl-attribution-versioning.md
   - concepts/polymarket-lp-bot-phase0-spec.md
 maturity: validated
@@ -19,7 +21,9 @@ updated: 2026-05-28
 ## Relations
 
 - @sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md — primary source
+- @concepts/brier-score-model-promotion-framework.md — Brier/BSS + calibration pillar (K77)
 - @concepts/monte-carlo-permutation-test-mcpt.md — MCPT pillar
+- @concepts/shadow-trading-telemetry-accumulation.md — dual-track shadow data (K77)
 - @concepts/regime-conditioned-evaluation.md — DSR / multiple-testing overlap
 - @concepts/polymarket-lp-rewards-farming.md — Cemini LP workstream
 - @concepts/shadow-to-live-transition-engineering.md — shadow incubation mechanics
@@ -42,6 +46,7 @@ Checklist for promoting **liquidity provision** bots (especially Cemini `pm_lp_r
 | **4. Shadow PnL floor** | Net positive after fees + infra cost model | Shadow window report |
 | **5. MDD / ES** | Peak-to-trough + tail loss bound | Risk governor limits |
 | **6. Kill switch** | Out-of-loop halt tested | `risk_governor` / panic paths |
+| **7. Brier / calibration** | BSS > 0 OOS; reliability bins within tolerance | @concepts/brier-score-model-promotion-framework.md |
 
 `[NEEDS VERIFICATION 2026-05-28]` Exact numeric DSR/markout thresholds in source DOCX were truncated in extract — **define operator thresholds in prod config**, do not copy placeholder numbers from synthesis doc.
 

@@ -6,6 +6,8 @@ keywords: [polymarket-trading-bot, discountifu, clob-v2, websocket-orderbook, pb
 related:
   - sources/multi-wiki-link-eval-41url-2026-05-18.md
   - concepts/polymarket-bot-architecture.md
+  - concepts/clean-room-software-design.md
+  - concepts/clob-rate-limit-mitigation-strategies.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-28
@@ -15,6 +17,8 @@ updated: 2026-05-28
 
 - @sources/multi-wiki-link-eval-41url-2026-05-18.md — K53 eval URL 30, Adopt tier; the source that surfaced this bot
 - @concepts/polymarket-bot-architecture.md — the bot-architecture playbook this codebase is a concrete, MIT-licensed instance of
+- @concepts/clean-room-software-design.md — R11 diff target; behavioral parity only (K77)
+- @concepts/clob-rate-limit-mitigation-strategies.md — WS-first reference for R11 patch ADR (K77)
 
 ## Raw Concept
 

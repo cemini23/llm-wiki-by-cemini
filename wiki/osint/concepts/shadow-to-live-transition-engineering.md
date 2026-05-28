@@ -13,6 +13,8 @@ related:
   - concepts/trading-bot-logging-discipline.md
   - concepts/cemini-repository-topology.md
   - concepts/zero-trade-edge-signal-diagnostics.md
+  - concepts/clob-rate-limit-mitigation-strategies.md
+  - concepts/shadow-trading-telemetry-accumulation.md
   - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
   - concepts/polymarket-lp-rewards-farming.md
 maturity: validated
@@ -30,6 +32,8 @@ updated: 2026-05-28
 - @concepts/production-trading-blind-spots.md — Knight / 429 as deployment blind spots
 - @concepts/trading-bot-logging-discipline.md — log quota headers + shadow intent timestamps
 - @concepts/cemini-repository-topology.md — prod monorepo deploy; briefs → `/opt/cemini/briefs/`
+- @concepts/clob-rate-limit-mitigation-strategies.md — WS-first + 429 preflight (K77)
+- @concepts/shadow-trading-telemetry-accumulation.md — dual-track counterfactual logging (K77)
 
 ## Raw Concept
 

@@ -5,6 +5,7 @@ tags: [concept, debugging, trading-bot, alternative-data, observability, k76]
 keywords: [zero-trade, ingest-latency, falsification, liquidity, OpenTelemetry, abort-reason]
 related:
   - sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md
+  - concepts/trading-model-failure-diagnostics.md
   - concepts/production-trading-blind-spots.md
   - concepts/trading-bot-logging-discipline.md
   - concepts/polymarket-bot-architecture.md
@@ -18,6 +19,7 @@ updated: 2026-05-28
 ## Relations
 
 - @sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md — primary source
+- @concepts/trading-model-failure-diagnostics.md — model-side vs execution-side triage (K77)
 - @concepts/production-trading-blind-spots.md — row #13 zero-trade silence
 - @concepts/trading-bot-logging-discipline.md — OTel span naming for domain A
 - @concepts/polymarket-bot-architecture.md — domain B thin-book context

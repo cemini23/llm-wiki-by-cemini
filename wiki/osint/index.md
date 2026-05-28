@@ -1281,6 +1281,27 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [LP algorithm live promotion gates](concepts/lp-algorithm-live-promotion-gates.md) — `[VALIDATED 2026-05-28]` K76. DSR, MCPT, markout, shadow incubation, kill switch before `pm_lp_rewards` live. — concept, liquidity-provision, validation, k76
 - [Macro rotation momentum signals (May 2026)](concepts/macro-rotation-momentum-signals-2026-05.md) — `[DRAFT 2026-05-28]` K76 Post 1 Macro Charts discretionary rotation watchlist [TENTATIVE]. — concept, equities, momentum, k76
 - [Claude Code Skills.md workflow](concepts/claude-code-skills-md-workflow.md) — `[DRAFT 2026-05-28]` K76 Post 2 Skills.md + CLAUDE.md hierarchy stub; expand in ccc-wiki. — concept, claude-code, skills, k76
+
+#### K77 ingest (2026-05-28 — model promotion, CLOB limits, clean-room, diagnostics, tick staleness, shadow telemetry)
+
+**Sources**
+
+- [Algorithmic Trading Model Benchmarking Framework](sources/algorithmic-trading-model-benchmarking-framework-2026-05-28.md) — Brier/BSS, CPCV, PBO, HLN-DM, Bayesian ROPE — k77
+- [CLOB Rate Limit Mitigation Strategies](sources/clob-rate-limit-mitigation-strategies-2026-05-28.md) — WS-first vs batch vs backoff; Polymarket/Kalshi/HL — k77
+- [Clean-Room Design for Proprietary Software](sources/clean-room-design-proprietary-software-2026-05-28.md) — GPL isolation for R11/R12 — k77
+- [Diagnosing Trading Model Failures](sources/diagnosing-trading-model-failures-2026-05-28.md) — vectorized vs event-driven; PSI; promote/recalibrate/retrain — k77
+- [Low-Latency Tick Staleness Diagnosis](sources/low-latency-tick-staleness-diagnosis-2026-05-28.md) — SIP/TRF, eBPF, Disruptor; R14/R15 — k77
+- [Shadow Trading Data Accumulation Strategies](sources/shadow-trading-data-accumulation-strategies-2026-05-28.md) — Heckman/IPW, dual-track shadow — k77
+
+**Concepts**
+
+- [Brier score model promotion framework](concepts/brier-score-model-promotion-framework.md) — six-stage institutional gate for probabilistic engines — k77
+- [CLOB rate limit mitigation strategies](concepts/clob-rate-limit-mitigation-strategies.md) — hybrid WS + batch + backoff roles — k77
+- [Clean-room software design](concepts/clean-room-software-design.md) — trading bot fork legal/technical isolation — k77
+- [Trading model failure diagnostics](concepts/trading-model-failure-diagnostics.md) — promote / recalibrate / retrain matrix — k77
+- [Tick staleness ingestion diagnosis](concepts/tick-staleness-ingestion-diagnosis.md) — prod SLOs for Alpaca/Arctic path — k77
+- [Shadow trading telemetry accumulation](concepts/shadow-trading-telemetry-accumulation.md) — dual-track counterfactual logging — k77
+
 - [Q1 2026 13F — Smart-Money Positioning](concepts/q1-2026-13f-smart-money-positioning.md) — `[DRAFT 2026-05-15]` K48 cross-fund synthesis of 9 managers' Q1 2026 13Fs. Alphabet broadly accumulated (Berkshire +204%, Tiger's top holding); MSFT splits the room (Ackman initiates / 3 funds slash); AMZN broadest consensus long; Appaloosa de-risks China-tech; AI-electricity (VST/NRG/GEV) accumulation. — concept, 13f, smart-money, positioning, k48
 - [Markov-chain & Hidden-Markov regime-switching models](concepts/markov-regime-switching-models.md) — `[DRAFT 2026-05-16]` K49. Regime-switching framework: transition matrix + Chapman-Kolmogorov n-step forecasts + stationary distribution + walk-forward backtest; HMM extension (Baum-Welch / Viterbi) for latent regimes. Documents the three breaking assumptions. — concept, quant-finance, regime-switching, markov-chain, hmm, k49
 - [GMM factor-lens regime modeling](concepts/gmm-factor-lens-regime-modeling.md) — `[DRAFT 2026-05-23]` K58. Two Sigma Street View (2021): unsupervised GMM on 17-factor panel → Crisis / Steady State / Inflation / WOI; stress-test + allocation framing; pairs with Markov/HMM temporal layer. — concept, quant-finance, regime-modeling, gmm, k58
