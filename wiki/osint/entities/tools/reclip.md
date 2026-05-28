@@ -7,7 +7,7 @@ related:
   - sources/multi-wiki-tool-eval-22url-2026-05-26.md
 maturity: draft
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -20,6 +20,12 @@ Repository: `averygan/reclip` (MIT, ~5.8k★). K68 evaluation classifies as Adop
 
 ## Narrative
 
-**Verdict: Adopt-eligible (doc-level), Phase-0 pending.**
+**Verdict: NO-GO for the claimed use case (Phase-0 complete 2026-05-28).**
 
-Potential value is rapid extraction of relevant clips from long-form video evidence. Recommended posture: run as isolated local utility, evaluate extraction accuracy on known test clips before any workflow dependency.
+Phase-0 clone shows this repo is a lightweight **video/audio downloader UI** (yt-dlp + ffmpeg), not a semantic "natural-language video moment search" engine.
+
+- Canonical repo: `averygan/reclip`
+- License: **MIT** (`LICENSE` present)
+- Maturity: ~5.9k★, active
+
+Useful as a local download utility, but **does not satisfy the retrieval/search capability described in K68 doc-level eval**.

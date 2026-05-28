@@ -9,7 +9,7 @@ related:
   - entities/people/stacyonchain.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -70,8 +70,21 @@ for article in response.results:
 
 ### Cemini fit
 
-- **Defer pending Phase-0**. Sports-consensus agent is the cleanest justification; if Cemini decides to build that workstream, Firecrawl is the natural adoption candidate.
+- **Phase-0 outcome (2026-05-28): REJECT for code adoption in prod** — canonical repo `firecrawl/firecrawl` is **AGPL-3.0**. Hosted API usage can still be considered as an external SaaS dependency if needed, but self-host/code import is outside Cemini IP-sale posture.
 - If not, existing Browserbase / Playwright stack is probably sufficient.
+
+### Phase-0 audit (2026-05-28)
+
+Clone: `/tmp/phase0-nonpm-k74/firecrawl`
+
+| Check | Result |
+|-------|--------|
+| Canonical repo | `firecrawl/firecrawl` |
+| License | **AGPL-3.0** (`LICENSE` present) |
+| Maturity | ~125k★, very active |
+| Product model | Open-source core + hosted API requiring `fc-` API keys for managed service |
+
+Interpretation: strong tool technically, but license posture blocks prod code adoption for Cemini's proprietary stack.
 
 ### Connections to other wiki entities
 

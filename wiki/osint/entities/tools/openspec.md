@@ -9,7 +9,7 @@ related:
   - concepts/claude-md-12-rule-template.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -36,11 +36,19 @@ Imposes Spec-Driven Development (SDD) via structured artifacts (`proposal.md`, `
 
 Standardize SDD across Cemini dev team for Python algorithmic trading module updates. Direct alignment with claude-md-12-rule Rule 10 checkpoint discipline.
 
-### Phase-0 audit (PENDING)
+### Phase-0 audit (2026-05-28)
 
-- /opsx command latency in Nix flake environments
-- Conflict check against Cemini's existing brief/concept workflow
+Clone: `/tmp/phase0-k42-batch/OpenSpec`
 
-[NEEDS VERIFICATION 2026-05-13]
+| Check | Result |
+|-------|--------|
+| License | **MIT** (`LICENSE` present) |
+| Maturity | ~51k★, very active, tests present |
+| Layout lock-in | **PASS** — workspace/initiative model is path-configurable, not hardcoded wiki layout |
+| Overlap | Complements existing OpenSpec usage in this workspace (`.openspec/`, skills) |
+
+**Verdict: CONDITIONAL-GO (workflow)** — adopt for SDD artifact discipline on laptop; no prod runtime dependency.
+
+Remaining checks: Nix flake `/opsx` latency + confirm no conflict with current brief/concept workflow.
 
 [Source: Multi-Wiki Link Evaluation Prompt.docx URL 28 (retrieved 2026-05-13)]

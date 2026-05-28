@@ -9,7 +9,7 @@ related:
   - entities/tools/sift-kg.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -31,7 +31,7 @@ Originally marked **UNAVAILABLE** in K32 Gemini DR eval. Exa-rescued 2026-05-06.
 
 - **URL**: `http://curl.md` ✓ verified via Exa 2026-05-06
 - **License**: MIT (per upstream landing page; "fully open source. The source code is public on GitHub under the MIT License")
-- **Repo URL**: not directly surfaced in the landing page; need a follow-up Exa or GitHub search to find canonical source
+- **Repo URL**: `https://github.com/wevm/curl.md` (Phase-0 resolved 2026-05-28)
 - **Maturity**: not surfaced (no commit count / star count from landing page)
 - **Stack**: undisclosed at landing-page level; install method (`bash` from `curl.md/install.sh`) suggests a binary distribution
 
@@ -45,19 +45,19 @@ The current ingest pipeline uses `mcp__exa__crawling_exa` for URL→clean-markdo
 2. **Entity-page upstream-README extraction** — for tool entity pages (like this one), extracting the GitHub README via curl.md is cheaper than Exa-crawling.
 3. **Brief content-grounding** — when staging briefs for distribution, citing primary URLs with curl.md-extracted markdown avoids re-fetching content during brief revisions.
 
-### Phase-0 audit checklist
+### Phase-0 audit (2026-05-28)
 
-1. ⚠ Find canonical GitHub repo (landing page hides the URL)
-2. ⚠ Verify MIT license claim against the actual `LICENSE` file
-3. ⚠ Verify maturity (commits, last push, star count)
-4. **Audit failure mode for ingest-pipeline tool class**: does it work without an API key? Does it have rate limits? Does it work with bot-defense pages (Cloudflare, anti-scraping)?
-5. Test against representative Cemini ingest URLs: GitHub README, arXiv paper, Anthropic docs, Polygon API docs
-6. Compare: same URL via `mcp__exa__crawling_exa` vs `curl.md/<URL>` — quality, completeness, token count, latency
-7. Decide GO / CONDITIONAL-GO / NO-GO
+Clone: `/tmp/phase0-nonpm-k74/curl.md`
+
+1. ✅ Canonical repo resolved: `wevm/curl.md`
+2. ✅ License verified: **MIT** (`LICENSE` present)
+3. ✅ Maturity snapshot: ~189★, active updates
+4. ✅ Product shape verified: CLI + SDK + plugin architecture (not just a proxy page)
+5. ⏳ Remaining benchmark: output-quality and latency comparison vs Exa crawling on Cemini-specific URLs
 
 ### Adoption stance
 
-**CONDITIONAL CANDIDATE** — Phase-0 audit pending. If MIT license verified and quality is comparable to Exa for our use cases, this becomes a cheap workflow upgrade for laptop-side ingest. Not blocking; do when convenient.
+**CONDITIONAL-GO (local workflow candidate)** — license and source are now verified. Promote to usage only after a side-by-side quality benchmark against Exa on representative ingest URLs.
 
 If quality is meaningfully worse than Exa (e.g., misses code blocks, misses tables, misses footnotes), keep Exa as primary and skip adoption.
 

@@ -1,5 +1,27 @@
 # Wiki Log
 
+## [2026-05-28] phase-0 | K42 backlog sweep (batch 3)
+
+- Audited: drift, OpenSpec, tabularis, mirage, openhuman, FuzzyAI, cua, syncthing, instructa/agent-skills, whale (unverifiable)
+- Key outcomes: OpenSpec/tabularis/mirage/FuzzyAI/cua/syncthing -> CONDITIONAL-GO; openhuman GPL REJECT; drift NO-GO (no license file); whale NO-GO (repo not found)
+- Brief: `briefs/2026-05-28_phase0-k42-backlog-sweep.md` -> `/opt/cemini/briefs/`
+
+---
+
+## [2026-05-28] phase-0 | non-PM sweep (batch K74)
+
+- Audited non-PM pending candidates: `QuantDinger`, `reclip`, `OpenKB`, `Firecrawl`, `pentest-ai`, `curl.md`
+- **Verdicts:**
+  - `QuantDinger` -> CONDITIONAL-GO (steal-from first; parallel-implementation risk)
+  - `reclip` -> NO-GO for claimed semantic video-search use case (actual repo is downloader UI)
+  - `OpenKB` -> CONDITIONAL-GO (local-only evaluation; PageIndex/LLM-key coupled)
+  - `Firecrawl` -> REJECT for prod code adoption (AGPL-3.0)
+  - `pentest-ai` -> CONDITIONAL-GO for cybersec/CCC scope (Phase-0 complete)
+  - `curl.md` -> CONDITIONAL-GO local candidate (canonical repo + MIT verified)
+- Created brief: `briefs/2026-05-28_phase0-nonpm-sweep-k74.md` (SCP -> `/opt/cemini/briefs/`)
+
+---
+
 ## [2026-05-28] phase-0 | PM/Kalshi backlog batch-2
 
 - Cleared remaining high-priority PM/Kalshi Phase-0 queue (9 repos)

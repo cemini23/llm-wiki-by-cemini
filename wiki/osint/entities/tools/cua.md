@@ -9,7 +9,7 @@ related:
   - concepts/reviewer-agent-inference-time-feedback.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -27,10 +27,10 @@ Stub from Doc 1 K42 eval (2026-05-13). Adopt-tier; cross-routed to Cybersec-wiki
 - **Eval claim**: QEMU sandbox API for executing and analyzing LLM-generated payloads in isolation.
 - **Cemini relevance**: alternative or complement to Frona-style OCI sandboxing for autonomous agent execution. K41 weather-bot Phase-0 brief identified the need for execution-isolation primitives — cua is a candidate.
 
-### Phase-0 audit (PENDING)
+### Phase-0 audit (2026-05-28)
 
-Compare against Frona (BSL 1.1 rejected) for OCI-vs-QEMU sandboxing tradeoffs. Verify cua license (eval did not explicitly state).
+Repo: `trycua/cua` — **MIT** (`LICENSE.md`), ~17k★, active, large test surface.
 
-[NEEDS VERIFICATION 2026-05-13]
+**Verdict: CONDITIONAL-GO (steal-from)** — viable QEMU/computer-use sandbox primitive for agent isolation pilots; compare against existing OCI sandbox posture before prod-adjacent use.
 
 [Source: Evaluating URLs for Cemini Project.docx (retrieved 2026-05-13)]

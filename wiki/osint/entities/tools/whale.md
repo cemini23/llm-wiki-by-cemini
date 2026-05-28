@@ -8,7 +8,7 @@ related:
   - concepts/tool-evaluation-framework.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -18,7 +18,7 @@ updated: 2026-05-13
 
 ## Raw Concept
 
-Stub created from Doc 1 K42 eval (2026-05-13). Adopt-tier; Workflow + OSINT cross-routed. **Phase-0 audit pending** before Cemini integration.
+Stub created from Doc 1 K42 eval (2026-05-13). Doc-level **Adopt** claim **not reproducible** in Phase-0 (2026-05-28).
 
 ## Narrative
 
@@ -26,14 +26,13 @@ Stub created from Doc 1 K42 eval (2026-05-13). Adopt-tier; Workflow + OSINT cros
 - **License**: per eval (verify before adopting).
 - **Use case**: terminal CLI utility for cost-optimized DeepSeek model calls.
 
-### Phase-0 audit (PENDING)
+### Phase-0 audit (2026-05-28)
 
-Standard questions per `@concepts/phase-0-audit-pattern.md`:
-- Repo location + LICENSE verification
-- Star count / commit cadence / last push
-- Prefix-cache integration with DeepSeek-R1 vs base
-- Conflict with existing Cemini deployment pattern (DeepSeek-V3 base + R1 reviewer)
+| Check | Result |
+|-------|--------|
+| Canonical repo | **Not found** — `gh search` + eval text give no resolvable GitHub URL for a "whale" DeepSeek prefix-cache CLI |
+| Source reproducibility | Eval describes capability only; no verifiable codebase |
 
-[NEEDS VERIFICATION 2026-05-13]
+**Verdict: NO-GO (unverifiable)** — keep as cautionary eval artifact until a real repository URL is provided.
 
 [Source: Evaluating URLs for Cemini Project.docx (retrieved 2026-05-13)]

@@ -9,7 +9,7 @@ related:
   - concepts/cemini-license-posture.md
 maturity: draft
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -40,14 +40,18 @@ Single-binary Rust file-transfer utility — WebSocket-routed (NAT-friendly), en
 3. **No delta transfer** — disqualifies for wiki sync (rsync over SSH retained for `wiki/`).
 4. **Workflow overlap**: Cemini already uses scp; drift's primary win is "no SSH-key management" — minor productivity gain.
 
-### NEEDS VERIFICATION
-
-- GitHub stars / contributor count / issue activity (eval brief lacked exact numbers)
-- Resident memory consumption when idle
-- License file actually present in repo (Phase-0 to confirm)
-
-### Phase-0 audit status
-
-Not yet performed. Defer install pending. Low-priority audit (Adopt scope is narrow, low-risk).
-
 [Source: Evaluating Project Links for Stacks.docx URL 1; retrieved 2026-05-11]
+
+### Phase-0 audit (2026-05-28)
+
+Clone: `/tmp/phase0-k42-batch/drift`
+
+| Check | Result |
+|-------|--------|
+| License | **NO LICENSE file** (README MIT badge only) |
+| Maturity | ~63★, active May 2026, tests present |
+| Capability | WebSocket encrypted file transfer + web UI; matches eval description |
+| Cemini fit | Narrow workflow utility (brief shipping) only if license fixed |
+
+**Verdict: NO-GO** until upstream adds a real `LICENSE` file.
+

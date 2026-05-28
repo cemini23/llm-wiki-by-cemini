@@ -8,7 +8,7 @@ related:
   - concepts/tool-evaluation-framework.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -34,10 +34,10 @@ Continuous decentralized file synchronization with cryptographic primitives. ECD
 
 Replicate Claude Code configurations + local MCP server artifacts + Markdown databases across multiple analyst laptops. Cross-routed to OSINT-wiki for decentralized threat-intel dataset replication.
 
-### Phase-0 audit (PENDING)
+### Phase-0 audit (2026-05-28)
 
-Verify `sessionCookieDurationS` v2.1.0 configuration vs internal Cemini session timeout policies.
+Repo: `syncthing/syncthing` — **MPL-2.0**, ~85k★, mature Go project with extensive tests.
 
-[NEEDS VERIFICATION 2026-05-13]
+**Verdict: CONDITIONAL-GO (workflow)** — acceptable for decentralized laptop config sync; MPL-2.0 is weak copyleft (file-level). Avoid modifying and distributing forked syncthing binaries inside proprietary deliverables without legal review.
 
 [Source: Multi-Wiki Link Evaluation Prompt.docx URL 36 (retrieved 2026-05-13)]

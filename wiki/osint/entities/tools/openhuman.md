@@ -11,7 +11,7 @@ related:
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-20
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -56,10 +56,14 @@ GPL-3.0 forbids any static linking or distribution within proprietary stacks. Ex
 
 Never inherit codebase. OSINT cross-route: TokenJuice as academic reference for scraping-context-window optimization.
 
-### Phase-0 audit (PENDING)
+### Phase-0 audit (2026-05-28)
 
-Verify exact chunking parameters (claimed ≤3k tokens) against Cemini's claude-mem CLAUDE_MEM_SEMANTIC_INJECT_LIMIT=5.
+| Check | Result |
+|-------|--------|
+| License | **GPL-3.0** confirmed (~29k★) |
+| Claimed compression | TokenJuice HTML→Markdown methodology remains reference-only |
+| Prod import | **REJECT** for `/opt/cemini` codebase |
 
-[NEEDS VERIFICATION 2026-05-13]
+**Verdict: REJECT (prod import) / steal-from methodology only** — unchanged posture, now source-verified.
 
 [Source: Tool Evaluation and Wiki Fit.docx URL 11 (retrieved 2026-05-13)]

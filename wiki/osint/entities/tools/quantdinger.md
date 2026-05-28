@@ -9,7 +9,7 @@ related:
   - concepts/ai-assisted-trading-workflow.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -32,7 +32,7 @@ Documented architecture (per the eval):
 - Ships pre-built agent workflows at `.cursor/skills/quantdinger-agent-workflow` and a `backend_api_python` layer — the eval maps these to Cemini's LangGraph orchestration model.
 - Describes itself as a "vibe-trading / trading-agents / ai-trader" workspace (v3.0.1).
 
-### Verdict — Adopt-eligible, Phase-0 pending
+### Verdict — CONDITIONAL-GO (Phase-0 complete 2026-05-28)
 
 License clears cleanly: Apache-2.0 is permissive and IP-sale-safe (no copyleft, no use restrictions). Maturity is solid — ~5.9k★, active commits, low open-issue count. The conceptual fit with `/opt/cemini` is real: a Python five-layer quant engine with backtesting and execution adapters overlaps the Cemini trading stack directly.
 
@@ -41,6 +41,19 @@ License clears cleanly: Apache-2.0 is permissive and IP-sale-safe (no copyleft, 
 2. **Data-layer integration overhead** — the eval's own NEEDS VERIFICATION asks for the data-throughput tolerances between QuantDinger's Dockerized engine and the `/opt/cemini` PostgreSQL + Redis Streams pipelines. Unknown until measured.
 
 `[NEEDS VERIFICATION 2026-05-19]` — Phase-0 audit (clone, verify Apache-2.0 LICENSE file, audit for the most-likely failure mode — does it duplicate Cemini's existing engine?) not yet run. Server-side decision; flagged in the K54 cemini-prod brief.
+
+### Phase-0 audit (2026-05-28)
+
+Clone: `/tmp/phase0-nonpm-k74/QuantDinger`
+
+| Check | Result |
+|-------|--------|
+| License | **Apache-2.0** (`LICENSE` present) |
+| Maturity | ~6.8k★, updated 2026-05-28, active tests |
+| Architecture | Large self-hosted stack (Postgres/Redis, MCP gateway, multi-broker runtime) |
+| Failure mode check | High **parallel-implementation risk** vs existing Cemini `/opt/cemini` trading engine |
+
+**Verdict:** **CONDITIONAL-GO (steal-from first)** — harvest selected strategy/backtest/risk patterns; do not wholesale-replace Cemini stack without overlap and migration proof.
 
 ## Snippets
 

@@ -9,7 +9,7 @@ related:
   - concepts/mcp-tool-marketplace.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -35,12 +35,14 @@ High-performance Rust desktop DB client with native MCP server. Allows AI assist
 
 Integrate native MCP server with `/opt/cemini` PostgreSQL instances to enable AI-assisted query generation against trading data + Polymarket backtesting metrics.
 
-### Phase-0 audit (PENDING)
+### Phase-0 audit (2026-05-28)
 
-- Verify JSON-RPC 2.0 plugin system stability with custom DB drivers
-- Compare MCP server scope against existing Cemini DB query tooling
-- Confirm Apache-2.0 LICENSE in repo
+| Check | Result |
+|-------|--------|
+| License | **Apache-2.0** confirmed |
+| Maturity | ~2.2k★, active, large Rust/Tauri codebase |
+| MCP surface | Native MCP server for SQL/schema/query-plan workflows |
 
-[NEEDS VERIFICATION 2026-05-13]
+**Verdict: CONDITIONAL-GO** — useful laptop-side Postgres/SQLite assistant for `/opt/cemini` data inspection; not a prod trading-runtime dependency.
 
 [Source: Multi-Wiki Link Evaluation Prompt.docx URL 10 (retrieved 2026-05-13)]

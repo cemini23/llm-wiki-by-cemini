@@ -9,7 +9,7 @@ related:
   - concepts/verbalized-sampling-llm-diversity.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -28,8 +28,10 @@ Stub created from Doc 1 K42 eval (2026-05-13). Adopt-tier; cross-routed to OSINT
 - **Cemini use case**: defensive layer on the news-rewriter / sentiment-classifier path — catalog known prompt-injection patterns to harden against adversarial financial-news inputs.
 - **Intersects K39 VS Vector 5**: generate diverse sentiment-shifted rewrites for testing robustness; FuzzyAI provides the adversarial input vocabulary.
 
-### Phase-0 audit (PENDING)
+### Phase-0 audit (2026-05-28)
 
-[NEEDS VERIFICATION 2026-05-13]
+Repo: `cyberark/FuzzyAI` — **Apache-2.0**, ~1.4k★, active, tests present.
+
+**Verdict: CONDITIONAL-GO (cybersec / defensive testing)** — use for adversarial prompt-pattern catalogs in security workflows; not a Cemini trading-runtime component.
 
 [Source: Evaluating URLs for Cemini Project.docx (retrieved 2026-05-13)]
