@@ -9,6 +9,10 @@ related:
   - concepts/cemini-deployment.md
   - entities/infrastructure/cemini-stack.md
   - concepts/cemini-license-posture.md
+  - concepts/claude-code-skills-md-workflow.md
+  - concepts/shadow-to-live-transition-engineering.md
+  - concepts/curator-skills.md
+  - sources/trading-posts-compilation-20-2026-05-27.md
 maturity: validated
 created: 2026-05-28
 updated: 2026-05-28

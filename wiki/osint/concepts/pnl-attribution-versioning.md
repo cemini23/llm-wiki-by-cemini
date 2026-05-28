@@ -11,6 +11,8 @@ related:
   - concepts/perps-dex-funding-carry-strategy.md
   - entities/infrastructure/cemini-stack.md
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
+  - concepts/shadow-to-live-transition-engineering.md
+  - concepts/lp-algorithm-live-promotion-gates.md
 maturity: validated
 created: 2026-05-28
 updated: 2026-05-28
@@ -25,6 +27,8 @@ updated: 2026-05-28
 - @concepts/perps-dex-funding-carry-strategy.md — reconciliation-first posture generalizes here
 - @entities/infrastructure/cemini-stack.md — `pnl_attribution` container + Postgres hypertables
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — Polymarket CSV as source-of-truth precedent
+- @concepts/shadow-to-live-transition-engineering.md — registry bump at live cutover
+- @concepts/lp-algorithm-live-promotion-gates.md — `pm_lp_rewards` promotion requires version bump
 
 ## Raw Concept
 

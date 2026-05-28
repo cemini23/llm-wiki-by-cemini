@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-05-28 — K76)
+
+- **K76 ingest (2026-05-28)** — four inbox docs (3 engineering syntheses + 2-post `Posts.docx`). **OSINT: 4 sources + 5 concepts + 1 tool entity (REJECT) + 8 page updates**. Concepts: shadow→live transition, zero-trade diagnostics, LP promotion gates, macro rotation watchlist, Skills.md workflow stub. **Phase-0:** `kvrancic/algorithmic-trading-bot` REJECT (no LICENSE). **Prod brief:** `2026-05-28_k76-live-transition-zero-trade-lp-promotion-cemini.md` → `cemini-prod`. **Cross-wiki:** ccc brief for Skills.md/CLAUDE.md expansion. **Adoption:** OTel span workflow on prod ingest path (no new packages). Inbox emptied after librarian SCP.
+
 ## Current state (2026-05-28 — K75)
 
 - **K75 prod-audit wiki cluster (2026-05-28)** — SSH read-only audit of cemini-prod PnL + valuation + UI layers. **5 new concept pages**: PnL `logic_version` registry (`pnl-attribution-versioning`), slow-discovery checklist (`production-trading-blind-spots`), prod `core/equity_valuation.py` (`equity-fair-value-evaluation`), logging discipline (`trading-bot-logging-discipline`), `cemini_mcp` `/api/*` wiring (`trading-dashboard-api-wiring`). Captures months-long PnL version-mixing lesson + today's equities fair-value deploy. **No prod brief staged** — wiki-only; brief optional if server-Claude needs registry bump SOP.

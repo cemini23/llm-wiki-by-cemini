@@ -12,6 +12,10 @@ related:
   - concepts/trading-dashboard-api-wiring.md
   - sources/x-polymarket-bot-playbook-punisher-2026-05.md
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
+  - concepts/zero-trade-edge-signal-diagnostics.md
+  - sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md
+  - concepts/shadow-to-live-transition-engineering.md
+  - sources/algorithmic-trading-live-transition-strategies-2026-05-28.md
 maturity: validated
 created: 2026-05-28
 updated: 2026-05-28
@@ -27,6 +31,8 @@ updated: 2026-05-28
 - @concepts/trading-dashboard-api-wiring.md — UI without version metadata reinforces false confidence
 - @sources/x-polymarket-bot-playbook-punisher-2026-05.md — 30s reconciliation minimum
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — journal vs CSV truth
+- @concepts/zero-trade-edge-signal-diagnostics.md — silent zero-trade aborts (K76)
+- @sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md — three-domain framework source
 
 ## Raw Concept
 
@@ -52,6 +58,7 @@ When headline PnL "doesn't make sense," scan the table **top to bottom** before 
 | 10 | **UI shows stale/mock** | Dashboard green, prod red | `status: empty` vs `live` ignored | Envelope pattern on `/api/*`; @concepts/trading-dashboard-api-wiring.md |
 | 11 | **Fair value change without version bump** | Sleeve attribution shifts | Hold/tactical mix changes after valuation deploy | Bump `brain_equity` in strategy registry |
 | 12 | **Mixing Brinson daily attribution with trade PnL** | Two reports disagree | Step 60 portfolio report vs FIFO script | Different tables/questions — don't merge blindly |
+| 13 | **Silent zero-trade abort** | Signal fired, nothing sent, no ERROR | Logs show decision but no `trade_aborted` reason | @concepts/zero-trade-edge-signal-diagnostics.md — tag `abort_reason` |
 
 ### Cross-domain confirmation
 

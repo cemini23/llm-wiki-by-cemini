@@ -10,6 +10,8 @@ related:
   - entities/infrastructure/cemini-stack.md
   - concepts/trading-dashboard-api-wiring.md
   - sources/x-polymarket-bot-playbook-punisher-2026-05.md
+  - concepts/zero-trade-edge-signal-diagnostics.md
+  - sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md
 maturity: validated
 created: 2026-05-28
 updated: 2026-05-28
@@ -23,6 +25,8 @@ updated: 2026-05-28
 - @entities/infrastructure/cemini-stack.md — Grafana + Loki + Prometheus stack (10 observability containers)
 - @concepts/trading-dashboard-api-wiring.md — metrics/dashboards complement logs; not a substitute
 - @sources/x-polymarket-bot-playbook-punisher-2026-05.md — reconciliation events worth logging
+- @concepts/zero-trade-edge-signal-diagnostics.md — `trade_aborted` + OTel spans (K76)
+- @sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md — OpenTelemetry ingest tracing source
 
 ## Raw Concept
 

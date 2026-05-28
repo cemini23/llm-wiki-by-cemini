@@ -7,10 +7,12 @@ related:
   - concepts/portfolio-strategy.md
   - concepts/quant-finance.md
   - entities/components/kelly-cvar-risk-engine.md
+  - concepts/shadow-to-live-transition-engineering.md
+  - sources/algorithmic-trading-live-transition-strategies-2026-05-28.md
 maturity: validated
-read_status: read-skim
+read_status: read
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-05-28
 clusters:
   - portfolio-strategy
   - market-microstructure
@@ -24,6 +26,8 @@ clusters:
 - @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub (Q 2026-04-27)
 - @concepts/quant-finance.md — Quantitative Finance corpus-index hub (Q 2026-04-27)
 - @entities/components/kelly-cvar-risk-engine.md — risk engine covering options-derivatives and portfolio-strategy concepts
+- @concepts/shadow-to-live-transition-engineering.md — K76 deep-read supersedes skim-level checklist for shadow/429/canary
+- @sources/algorithmic-trading-live-transition-strategies-2026-05-28.md — full engineering source
 
 ## Raw Concept
 
@@ -40,7 +44,7 @@ clusters:
 
 Cemini-internal research on the paper-trading → live-capital transition. Preview frames this as "the most critical risk phase in the lifecycle of quantitative infrastructure" — a reasonable claim. Topic spans all three financial clusters (portfolio-strategy for sizing/allocation, market-microstructure for slippage/fills, quant-finance for PnL and risk attribution). Sibling document to 3-10-live-trading-research which is framed as an execution-engine audit; this one reads as the higher-level transition checklist.
 
-Honest assessment: the "checklist" framing is the most actionable format of the Cemini-internal document set. Unlike the "extraction audit" genre, a checklist-format transition plan has verifiable items. Without the full body, the specific checklist items are unknown, but the scope (risk controls, order routing, state persistence, kill-switches, monitoring, capital pacing) is standard for this class of document.
+Honest assessment: superseded for **operational depth** by K76 `@concepts/shadow-to-live-transition-engineering.md` (shadow, 429 preflight, canary). Retain as historical Cemini-internal checklist reference.
 
 Relevance: directly actionable for Cemini's live-transition phase. Should be cross-referenced with 3-10-live-trading-research (execution engine specifics) and any risk management references in the quant-finance cluster. This is one of the stronger Cemini-internal documents by virtue of format (checklist beats prose for this phase).
 

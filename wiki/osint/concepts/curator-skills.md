@@ -8,10 +8,13 @@ related:
   - sources/xskill-2603-12056.md
   - sources/agriciDaniel-claude-obsidian.md
   - sources/kepano-obsidian-skills.md
-  - concepts/declarative-data-labeling-skills.md
+  - sources/trading-posts-compilation-20-2026-05-27.md
+  - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
+  - concepts/claude-code-skills-md-workflow.md
+  - sources/trading-posts-compilation-20-2026-05-27.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-11
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -20,6 +23,7 @@ updated: 2026-05-11
 - @sources/xskill-2603-12056.md — XSKILL paper documents the SKILL.md Markdown format pattern + cross-rollout-critique discipline; informs how skills should be structured + maintained
 - @sources/agriciDaniel-claude-obsidian.md — claude-obsidian's `/autoresearch` Markdown-skills pattern is the Obsidian-flavored predecessor; some skills may be ported from there
 - @sources/kepano-obsidian-skills.md — earlier Obsidian-skills source; same architectural family
+- @concepts/claude-code-skills-md-workflow.md — K76 Skills.md institutional-memory stub; ccc-wiki expansion pending
 
 ## Raw Concept
 

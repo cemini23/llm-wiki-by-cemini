@@ -20,9 +20,13 @@ related:
   - concepts/polymarket-lp-bot-phase0-spec.md
   - concepts/polymarket-lp-weather-market-discovery.md
   - concepts/polymarket-lp-weather-guard.md
+  - concepts/lp-algorithm-live-promotion-gates.md
+  - concepts/shadow-to-live-transition-engineering.md
+  - concepts/zero-trade-edge-signal-diagnostics.md
+  - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-26
+updated: 2026-05-28
 clusters: [polymarket, market-making, yield-farming]
 ---
 

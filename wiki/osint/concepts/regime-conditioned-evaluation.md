@@ -19,9 +19,11 @@ related:
   - concepts/markov-regime-switching-models.md
   - concepts/gmm-factor-lens-regime-modeling.md
   - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
+  - concepts/lp-algorithm-live-promotion-gates.md
+  - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-23
+updated: 2026-05-28
 ---
 
 ## Relations

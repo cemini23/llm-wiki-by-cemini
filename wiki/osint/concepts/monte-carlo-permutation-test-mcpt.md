@@ -14,10 +14,12 @@ related:
   - concepts/market-memory-hurst-regime.md
   - sources/trading-posts-compilation-38-2026-05-26.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/lp-algorithm-live-promotion-gates.md
+  - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-26
+updated: 2026-05-28
 clusters: [quant-validation, backtest]
 ---
 
@@ -30,6 +32,8 @@ clusters: [quant-validation, backtest]
 - @concepts/counterfactual-prompting-baselines.md — both are "is this signal vs noise?" disciplines
 - @concepts/regime-conditioned-evaluation.md — regime-awareness is a layer above MCPT (MCPT validates within a regime, regime-conditioning validates across)
 - @entities/people/phosphenq.md — author
+- @concepts/lp-algorithm-live-promotion-gates.md — MCPT as LP live promotion gate (K76)
+- @sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md — institutional LP promotion source
 
 ## Raw Concept
 

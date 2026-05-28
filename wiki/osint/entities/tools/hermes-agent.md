@@ -7,6 +7,8 @@ related:
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - sources/trading-posts-compilation-20-2026-05-27.md
+  - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
+  - concepts/claude-code-skills-md-workflow.md
   - entities/tools/hermes-lcm.md
   - concepts/openclaw-security-taxonomy.md
   - concepts/polymarket-weather-trading-strategy.md

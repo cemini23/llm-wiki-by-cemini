@@ -15,16 +15,19 @@ related:
   - entities/tools/hermes-agent.md
   - entities/platforms/polymarket.md
   - concepts/polymarket-bot-architecture.md
+  - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
+  - concepts/claude-code-skills-md-workflow.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-28
 clusters: [trading-posts, polymarket, prediction-markets, geo-aeo, claude-workflows]
 ---
 
 ## Relations
 
 - @sources/trading-posts-compilation-25-2026-05-27.md — successor 25-post batch (K72)
+- @sources/trading-posts-macro-charts-skills-md-2026-05-28.md — K76 mini batch (2 posts; different sha256 from this file)
 
 - @sources/trading-posts-compilation-38-2026-05-26.md — prior 38-post batch (same filename, different sha256)
 - @concepts/prediction-market-btc-equity-transmission-hedge.md — Post 0 (@RuujSs)

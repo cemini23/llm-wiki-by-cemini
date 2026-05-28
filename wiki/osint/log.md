@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-28] ingest | K76 — shadow→live, zero-trade, LP promotion + posts
+
+- **4 sources** — live transition strategies, pipeline zero-trade analysis, LP promotion criteria, macro/skills posts
+- **5 concepts** — `shadow-to-live-transition-engineering`, `zero-trade-edge-signal-diagnostics`, `lp-algorithm-live-promotion-gates`, `macro-rotation-momentum-signals-2026-05`, `claude-code-skills-md-workflow`
+- **Phase-0** — `kvrancic-algorithmic-trading-bot` REJECT (no LICENSE)
+- **8 updates** — blind-spots, MCPT, regime-eval, LP farming, logging, pnl-versioning, 3-19 checklist
+- **Prod brief** → `cemini-prod:/opt/cemini/briefs/2026-05-28_k76-live-transition-zero-trade-lp-promotion-cemini.md`
+- **Cross-wiki** — ccc brief on disk (+ sibling `Cemini claude code CCC/briefs/`)
+
+---
+
 ## [2026-05-28] concept | Cemini repository topology — monorepo vs multi-repo
 
 - **New** `@concepts/cemini-repository-topology.md` — decision: keep deploy monorepo + separate wikis; split gates; Cursor workspace discipline
