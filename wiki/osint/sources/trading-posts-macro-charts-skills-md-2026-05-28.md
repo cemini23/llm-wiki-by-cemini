@@ -8,6 +8,9 @@ related:
   - concepts/claude-code-skills-md-workflow.md
   - sources/trading-posts-compilation-20-2026-05-27.md
   - entities/tools/hermes-agent.md
+  - ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md
+  - ccc-wiki/concepts/claude-md-five-section-template.md
+  - ccc-wiki/sources/trading-posts-macro-charts-skills-md-2026-05-28.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-28
@@ -21,6 +24,9 @@ clusters: [trading-posts, equities, claude-workflows]
 - @concepts/claude-code-skills-md-workflow.md — Post 2 Skills.md + CLAUDE.md hierarchy
 - @sources/trading-posts-compilation-20-2026-05-27.md — prior 20-post batch (different sha256)
 - @entities/tools/hermes-agent.md — Post 2 overlaps persistent-memory theme (different product)
+- @ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md — ccc expansion of Post 2 Skills.md essay
+- @ccc-wiki/concepts/claude-md-five-section-template.md — ccc CLAUDE.md template
+- @ccc-wiki/sources/trading-posts-macro-charts-skills-md-2026-05-28.md — ccc source mirror
 
 ## Raw Concept
 

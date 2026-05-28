@@ -8,6 +8,8 @@ related:
   - concepts/curator-skills.md
   - entities/tools/hermes-agent.md
   - concepts/cemini-repository-topology.md
+  - ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md
+  - ccc-wiki/concepts/claude-md-five-section-template.md
 maturity: draft
 created: 2026-05-28
 updated: 2026-05-28
@@ -19,6 +21,8 @@ updated: 2026-05-28
 - @concepts/curator-skills.md — OSINT workspace skill accumulator
 - @entities/tools/hermes-agent.md — alternative persistent-memory product (runtime vs file-based Skills.md)
 - @concepts/cemini-repository-topology.md — subsystem CLAUDE.md recommendation
+- @ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md — expanded ccc concept (K76 fill-out)
+- @ccc-wiki/concepts/claude-md-five-section-template.md — five-section CLAUDE.md template (K76 fill-out)
 
 ## Raw Concept
 
