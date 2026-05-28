@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-28] ingest | K73 — Posts(38) + Tool-Eval(25)
+
+**Sources:** `Posts.docx` (sha `8ae518ea…`, 38 posts) + `Tool Evaluation for Cemini Wiki.docx` (sha `c8b606be…`, 25 URLs)
+
+- **2 new sources** — `trading-posts-compilation-38-2026-05-28.md`, `multi-wiki-tool-eval-25url-2026-05-28.md`
+- **2 updated concepts** — `multi-wiki-eval-doc-level-vs-phase-0.md`, `cemini-license-posture.md`
+- **Index updated** — added K73 rows under concepts/sources listing
+- **Duplicate handling** — `Posts.docx` flagged LIKELY duplicate by filename only; hash/content are distinct from K64/K67/K69/K72 batches, so ingested as a new source page.
+
+---
+
 ## [2026-05-27] tooling | Backtest kit Phases 2–3 + HL bridge
 
 - **Phase 2** — `scripts/equity_signal_backtest/` (ArcticDB via SSH/CSV), `run_equity_signal_backtest.sh`, `meta/equity-signal-backtest-cadence.md`

@@ -13,6 +13,7 @@ related:
   - concepts/cemini-license-posture.md
   - sources/multi-wiki-link-eval-v4-2026-05-15.md
   - sources/tool-evaluation-wiki-fit-2026-05-15.md
+  - sources/multi-wiki-tool-eval-25url-2026-05-28.md
 maturity: validated
 created: 2026-05-14
 updated: 2026-05-15
@@ -28,6 +29,7 @@ updated: 2026-05-15
 - @concepts/cemini-license-posture.md — IP-sale lens applied at both gate levels
 - @sources/multi-wiki-link-eval-v4-2026-05-15.md — K46 v4 evaluation provides updated tier distribution across 40 URLs, validating the two-gate pattern
 - @sources/tool-evaluation-wiki-fit-2026-05-15.md — 52-URL eval; doc-level only, all 8 Adopt verdicts still require Phase-0 audits (two license errors caught on ingest)
+- @sources/multi-wiki-tool-eval-25url-2026-05-28.md — K73 (25 URL) reconfirms recurring doc-level failure modes: NO-LICENSE false negatives + blanket BSL rejection language
 
 ## Raw Concept
 
