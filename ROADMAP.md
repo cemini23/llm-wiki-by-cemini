@@ -10,7 +10,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-29 — K79)
 
-- **K79 ingest (2026-05-29)** — SMB Capital YouTube channel backfill **batches 1–6** (18 videos, newest-first through 2026-03-14). **OSINT: 6 source pages + 14 concepts + 3 entities + 1 meta cadence**. Topics: tape reading, execution mistakes, prop-desk collaboration, Claude Code/ops workflows, earnings catalysts, breakout checks, XSP/credit-spread options, A+ grading, summit lessons, capital velocity. **Raw transcripts** on `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-*`. **No prod brief** — wiki-only education/reference; steal-from candidates (pre-market ADV gate, setup grading, options exit policy) gated on backtest. **Resume:** playlist #19 (`QHvp6sja4S4` …). User-gated channel backfill continues.
+- **K79 ingest (2026-05-29)** — SMB Capital YouTube channel backfill **batches 1–6** (18 videos, newest-first through 2026-03-14). **OSINT: 6 source pages + 14 concepts + 3 entities + 1 meta cadence**. **Prod brief:** `2026-05-29_k79-smb-capital-youtube-synthesis-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (rolling desk-validated synthesis; ship via `scripts/smb_youtube_ship.sh`). **Raw transcripts** on librarian. **Resume:** playlist #19. Channel backfill continues user-gated.
 
 ## Current state (2026-05-28 — K76)
 

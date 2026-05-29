@@ -14,11 +14,6 @@ related:
 maturity: core
 created: 2026-05-29
 updated: 2026-05-29
----
-
-## Relations
-
-- @entities/organizations/smb-capital.md — channel publisher
 - @sources/smb-capital-youtube-week-2026-05-22.md — batch 1
 - @sources/smb-capital-youtube-week-2026-05-05.md — batch 2
 - @sources/smb-capital-youtube-week-2026-04-14.md — batch 3
@@ -79,3 +74,20 @@ updated: 2026-05-29
 Next session (playlist order): **`QHvp6sja4S4`** (7 red flags, 2026-03-12), **`MlcwkmSpQaY`** (5 Levels of Competence, 2026-03-05), **`K6YVPHULzPA`** (Wheel Options, 2026-02-28).
 
 User-gated — agent does not auto-run channel backfill.
+
+### Distribution workflow (mandatory — do not lose desk knowledge)
+
+After **each batch** (or when operator says "ship SMB brief"):
+
+| Step | Action |
+|------|--------|
+| 1 | Wiki source + concepts + bidirectional links |
+| 2 | Combined transcript → `scp` → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-YYYY-MM-DD-transcripts.md` |
+| 3 | **Update rolling prod brief** — `briefs/2026-05-29_k79-smb-capital-youtube-synthesis-cemini.md` (append batch summary + wiki routes) |
+| 4 | `python3 scripts/skill_audit.py briefs/2026-05-29_k79-smb-capital-youtube-synthesis-cemini.md` |
+| 5 | `bash scripts/smb_youtube_ship.sh` — SCP brief → `cemini-prod:/opt/cemini/briefs/` + `sync_wiki_to_librarian.sh` |
+| 6 | `git commit` wiki + script + ROADMAP/log; `git push`; verify prod brief path |
+
+**Rationale:** Official [@smbcapital](https://www.youtube.com/@smbcapital) channel = desk-validated strategies. Wiki is canonical detail; **prod brief is the anti-loss index** for server-Claude. Options automation still requires backtest; process/execution adoption can proceed from brief P0/P1.
+
+**Prod brief (current):** `cemini-prod:/opt/cemini/briefs/2026-05-29_k79-smb-capital-youtube-synthesis-cemini.md`

@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-05-29] distribute | K79 SMB Capital YouTube — rolling prod brief + ship workflow
+
+- **Brief** — `briefs/2026-05-29_k79-smb-capital-youtube-synthesis-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+- **Script** — `scripts/smb_youtube_ship.sh` (skill_audit + SCP + wiki sync)
+- **Meta** — distribution workflow on `smb-capital-youtube-ingest-cadence.md`
+
 ## [2026-05-29] ingest | K79 batch 6 — SMB Capital YouTube (week of 2026-03-14)
 
 **Source:** [@smbcapital](https://www.youtube.com/@smbcapital) — 3 videos (2026-03-14 – 2026-03-19) → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-03-14-transcripts.md`

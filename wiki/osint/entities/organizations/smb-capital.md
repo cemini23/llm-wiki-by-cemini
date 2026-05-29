@@ -77,4 +77,4 @@ What prompted this page: user-directed **K79** YouTube channel ingest of [@smbca
 
 ### Ingest status
 
-Channel backfill **in progress** — see @meta/smb-capital-youtube-ingest-cadence.md. Batches 1–6 ingested (**18 videos**).
+Channel backfill **in progress** — see @meta/smb-capital-youtube-ingest-cadence.md. Batches 1–6 ingested (**18 videos**). **Prod brief:** `cemini-prod:/opt/cemini/briefs/2026-05-29_k79-smb-capital-youtube-synthesis-cemini.md` (rolling synthesis; update via `scripts/smb_youtube_ship.sh`).
