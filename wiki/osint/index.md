@@ -1327,7 +1327,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [SMB options casino edge model](concepts/smb-options-casino-edge-model.md) — `[DRAFT 2026-05-29]` K79 batch 8. Positive expectancy, 60% win / 2:1 R:R debit spreads. — concept, options, k79
 - [Prop desk team trading and shared research infrastructure](concepts/prop-desk-team-trading-collaboration.md) — `[DRAFT 2026-05-29]` K79 batch 2. Theme tracker, PM volume gate, playbook catalog. — concept, prop-trading, k79
 - [Broken wing butterfly options](concepts/broken-wing-butterfly-options.md) — `[DRAFT 2026-05-29]` K79. SPX directional + non-directional BWB; backtest-first discipline. — concept, options, spx, k79
-- [SMB Capital YouTube ingest cadence](meta/smb-capital-youtube-ingest-cadence.md) — `[CORE 2026-05-29]` K79 channel backfill; **18 videos** ingested; next playlist #19. — meta, youtube, cadence, k79
+- [SMB Capital YouTube ingest cadence](meta/smb-capital-youtube-ingest-cadence.md) — `[CORE 2026-05-29]` K79 channel backfill; **24 videos** ingested; next before 2026-02-14. — meta, youtube, cadence, k79
 
 #### K80 ingest (2026-05-29 — Polymarket YouTube batch, 4 videos)
 
