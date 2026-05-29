@@ -44,7 +44,7 @@ Clone: `/tmp/k73-phase0-batch2/poly_data`
 
 | Check | Result |
 |-------|--------|
-| License | **GPL-3.0** (GitHub API + in-repo) |
+| License | **GPL-3.0** (GitHub API + in-repo); **`[CONFIRMED 2026-05-29]`** `pyproject.toml` says MIT — metadata drift only |
 | Code surface | Small analytics scripts over trades CSV paradigm |
 
 **Verdict: REJECT for prod import** — reference-only / clean-room analytics patterns (unchanged).

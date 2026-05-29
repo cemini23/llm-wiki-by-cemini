@@ -24,4 +24,4 @@ Promoted by @ZeroCortexAI in K72 Posts.docx — **no Phase-0 audit** in this ing
 
 ## Narrative
 
-Vendor claims a **seven-agent** Polymarket research pipeline (resolution parse → evidence → adversarial check → sizing) running 24/7 across live markets [TENTATIVE — marketing post only]. **NO-GO for adoption** until public repo, license, and benchmark vs internal stack. Pattern value only: see @concepts/polymarket-research-throughput-bottleneck.md.
+Vendor claims a **seven-agent** Polymarket research pipeline (resolution parse → evidence → adversarial check → sizing) running 24/7 across live markets **`[TENTATIVE 2026-05-29]`** — K72 marketing post only; no Phase-0 repo/license. **NO-GO for adoption** until public audit. Pattern value: @concepts/polymarket-research-throughput-bottleneck.md.

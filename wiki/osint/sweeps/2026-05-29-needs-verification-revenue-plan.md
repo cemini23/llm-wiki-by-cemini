@@ -7,7 +7,7 @@ updated: 2026-05-29
 
 ## Scope
 
-- **Backlog:** 225 stale tags → **212** after Wave 1 → **~202** after Wave 2 → **~195** after Wave 3 → **198** after Wave 4 → **195** after Wave 5 → **~188** after Wave 6 (2026-05-29)
+- **Backlog:** 225 stale tags → **212** after Wave 1 → **~202** after Wave 2 → **~195** after Wave 3 → **198** after Wave 4 → **195** after Wave 5 → **~188** after Wave 6 → **~178** after Wave 7 (2026-05-29)
 - **Priority rule:** revenue path first (Polymarket execution, weather alpha, cross-venue, promotion gates)
 - **Verification rule:** no blind closure — every tag gets live API probe, Exa/web search, or GitHub/license check; outcome → `[CONFIRMED]` / `[TENTATIVE]` / `[RETRACTED]` / honest internal note
 - **Fresh tags (7–14d):** included when revenue-relevant (K79 SMB, K77 quant, Kalshi UI bot)
@@ -107,6 +107,23 @@ updated: 2026-05-29
 **Pages touched:** `polymarket-marginal-polytope-arbitrage`, `trading-posts-compilation-38`, `reverse-quant-engineering-public-filings`, `rag-binary-quantization-at-scale`, `trading-posts-compilation-6`, `bullpen-cli`, `polymarket-copy-trading-strategy`
 
 **Backlog after Wave 6:** ~188 stale tags (195 − 7)
+
+### Wave 7 — DONE 2026-05-29 (gemini-dr + WW179 + PTA, ~10 tags closed)
+
+| Claim | Method | Verdict |
+|-------|--------|---------|
+| poly_data MIT vs GPL-3.0 | GitHub API + `pyproject.toml` read | `[CONFIRMED]` — LICENSE canonical; Reject stands |
+| Kronos pyqlib transitive | GitHub code search + requirements.txt | `[CONFIRMED]` — not in default deps |
+| stash go.mod transitive | GitHub API (pgx, mcp-go MIT) | `[TENTATIVE]` — root Apache-2.0; formal go-licenses pending |
+| firnflow Cargo.lock copyleft | Cargo.lock spot-check (705 crates) | `[TENTATIVE]` — no GPL/AGPL/SSPL fields; cargo-deny still advised |
+| PTA SSRN formulation | SSRN 4549819 abstract + JBF 2026 | `[CONFIRMED]` — price-to-52-week-anchor; bond leg confirmed |
+| RHEA NEAR micro-cap | CoinGecko/CMC/Kraken | `[TENTATIVE]` — Rhea Finance token; mcap ~$1.8–8M dispersed |
+| LIF Android MAU glitch | SEC Q1 letter + AFR + Motley Fool | `[CONFIRMED]` — multi-source, not WW-only |
+| ZeroCortex 7-agent pipeline | Vendor post; no public repo | `[TENTATIVE]` — marketing only; pattern steal-from |
+
+**Pages touched:** `gemini-dr-wave5a/b`, `alash3al-stash`, `pta-metric-anchoring-ssrn`, `ww-issue-179`, `lif`, `warproxxx-poly-data`, `polymarket-research-throughput-bottleneck`, `zerocortex-ai`
+
+**Backlog after Wave 7:** ~178 open tags (~188 − 10)
 
 ### Steady state
 

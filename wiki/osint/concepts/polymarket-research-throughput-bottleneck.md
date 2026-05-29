@@ -38,7 +38,7 @@ K72 Posts.docx Post 9 — marketing framing for **automating the manual Polymark
 
 ### ZeroCortex pitch
 
-Seven specialized agents (not one LLM prompt), adversarial cross-checks between stages — productized version of the playbook [NEEDS VERIFICATION 2026-05-27]. No independent benchmark vs Cemini conductor + kb-server + prod MCP in this source.
+Seven specialized agents (not one LLM prompt), adversarial cross-checks between stages — productized version of the playbook **`[TENTATIVE 2026-05-29]`** — vendor marketing only (@ZeroCortexAI K72 Post 9); no public repo, pricing, or benchmark vs Cemini conductor + kb-server found. Pattern steal-from only.
 
 ### Cemini posture
 

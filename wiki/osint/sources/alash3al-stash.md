@@ -116,7 +116,7 @@ Full deployment record: `briefs/2026-05-02_stash-deployment-record.md`.
 
 2. **Token-cost amplification from 8-stage pipeline** [NEEDS VERIFICATION 2026-04-30] — measure tokens-per-1000-input-tokens ratio on Cemini's actual workload. If the ratio exceeds ~10:1, prod adoption is uneconomical without per-stage cost gating.
 
-3. **Transitive go.mod license sweep** [NEEDS VERIFICATION 2026-04-30] — Apache-2.0 root is clean. Transitive deps (jackc/pgx, mark3labs/mcp-go) are clean by reputation but need formal audit before any commit. Use `go-licenses` or equivalent.
+3. **Transitive go.mod license sweep** **`[TENTATIVE 2026-05-29]`** — root Apache-2.0; direct deps pgx + mcp-go both MIT (GitHub API). Run `go-licenses` before prod commit; reputation-clean for librarian adopt.
 
 4. **Consolidation-pipeline determinism** — the 8 stages run via LLM calls. Same input + different model temperature = different consolidation. For the Wiki/Librarian use case this is fine (research-assistant non-determinism is acceptable). For any future production path it would be a hard blocker.
 

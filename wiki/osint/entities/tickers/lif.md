@@ -8,7 +8,7 @@ related:
   - sources/ww-issue-179-2026-05-27.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -27,7 +27,7 @@ What prompted this page: K41-adjacent ingest — LIF introduced in WW Issue #178
 - **Last price**: $43.28 (May 13 2026)
 - **Catalyst**: Q1 earnings beat
 - **WW target**: $65 TP, add zone $38
-- **Risk framing**: MAU (monthly active users) glitch flagged as **transient** — single-source claim **[NEEDS VERIFICATION 2026-05-13]**; cross-check with management commentary / earnings call transcript before treating as resolved
+- **Risk framing**: MAU dip from Android registration technical issues **`[CONFIRMED 2026-05-29]`** — Life360 Q1 2026 SEC letter + press (AFR 2026-05-11, Motley Fool 2026-05-12): legitimate traffic misclassified as fraud, Play Store visibility suppressed; management frames as transient, recovery into Q3 2026.
 
 ### Verification gaps (priority on next deep-read pass)
 
