@@ -9,7 +9,7 @@ related:
   - entities/tools/clawdbot.md
 maturity: draft
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -25,3 +25,5 @@ updated: 2026-05-22
 ## Narrative
 
 K57 post frames edge as **forecast revision detection** (Open-Meteo snapshots + change flags) before Polymarket odds reprice. Overlaps @AlterEgo_eth / @theparuchh mechanics but adds multi-agent orchestration narrative and explicit Wunderground verification URLs. Promotional tone — verify claims independently [TENTATIVE].
+
+**`weather_scanner` repo (Phase-0, 2026-05-29):** cited URL `github.com/weather_scanner` is ambiguous. Best public match: **`vgjtsy/weather_scanner`** (MIT, 0★, Apr 2026) — Polymarket + Open-Meteo + WU resolution in README; **`detect_changes()` not in published code**. Defer steal-from; see @concepts/polymarket-weather-trading-strategy.md K57 section.

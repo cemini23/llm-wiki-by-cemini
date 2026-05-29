@@ -121,6 +121,10 @@ Leaderboard / PnL. See `@entities/tools/polymarket-lb-api.md`.
 |----------|---------|
 | `GET /profit?window=all&address={address}` | Full PnL history |
 | `GET /profit?window=1d&address={address}` | PnL, last 24h |
+| `GET /profit?window=7d&address={address}` | PnL, last 7d `[CONFIRMED 2026-05-29]` |
+| `GET /profit?window=30d&address={address}` | PnL, last 30d `[CONFIRMED 2026-05-29]` |
+
+> Also: Data API `GET /v1/leaderboard?timePeriod=DAY|WEEK|MONTH|ALL&category=…` for ranked tables — richer than LB-API alone.
 
 ### 5. WebSockets — `wss://ws-subscriptions-clob.polymarket.com/ws`
 
@@ -128,10 +132,12 @@ See `@entities/tools/polymarket-websocket-api.md`.
 
 | Channel | Auth | Payload |
 |---------|------|---------|
-| `/market` | public | Orderbook snapshots + real-time price-change deltas |
-| `/user` | authenticated | Personal fills, cancellations, order updates |
+| `/ws/market` | public | Initial book snapshot + `price_change` deltas `[CONFIRMED 2026-05-29]` |
+| `/ws/user` | authenticated | Personal fills, cancellations, order updates |
 
-### 6. Bridge API — `https://bridge.polymarket.com` (public, no auth — provisional)
+Subscribe: `{"assets_ids":["<token_id>"],"type":"market"}` — official docs `docs.polymarket.com/api-reference/wss/market.md`.
+
+### 6. Bridge API — `https://bridge.polymarket.com` (public, no auth — confirmed)
 
 Wallet funding: converts arbitrary on-chain assets into Polymarket's collateral token (**pUSD**) and bridges pUSD back out. See `@entities/tools/polymarket-bridge-api.md`. Source: K54 @AlterEgo_eth post.
 
@@ -143,7 +149,7 @@ Wallet funding: converts arbitrary on-chain assets into Polymarket's collateral 
 | `/status/{address}` | GET | Deposit status by deposit address — poll until confirmed. |
 | `/withdraw` | POST | Create withdrawal addresses to bridge pUSD back out. |
 
-Deposit flow: `POST /deposit` → `GET /supported-assets` → `POST /quote` → send funds → poll `GET /status/{address}` → **CLOB `/balance-allowance/update`** (mandatory — syncs the new balance into the order layer; skipping it leaves the deposit invisible to trading). All deposited assets auto-convert to **pUSD** on Polygon — the unit every other surface is denominated in. The "no auth required" claim is `[NEEDS VERIFICATION 2026-05-19]` — single-source, and the cheat sheet's auth column has been wrong before.
+Deposit flow: `POST /deposit` → `GET /supported-assets` → `POST /quote` → send funds → poll `GET /status/{address}` → **CLOB `/balance-allowance/update`** (mandatory — syncs the new balance into the order layer; skipping it leaves the deposit invisible to trading). All deposited assets auto-convert to **pUSD** on Polygon — the unit every other surface is denominated in. Bridge surface is public/no-auth `[CONFIRMED 2026-05-29]` via live API probe (see `@entities/tools/polymarket-bridge-api.md`).
 
 ### Cemini posture
 

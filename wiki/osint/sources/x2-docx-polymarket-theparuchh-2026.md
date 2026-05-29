@@ -12,7 +12,7 @@ related:
 maturity: draft
 read_status: read
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-29
 clusters: [prediction-markets, automation]
 ---
 
@@ -134,5 +134,6 @@ If any condition fails → skip event.
 ## Dead Ends
 
 - Did NOT pull author's "first article" at x.com/theparuchh/status/2044089761699102827 — referenced but not in this source
-- Did NOT verify Open-Meteo `bias_correction=true` parameter behavior or the +30-40% accuracy claim independently. Flag `[NEEDS VERIFICATION 2026-05-13]` before relying on the magnitude.
+- Open-Meteo `bias_correction=true` on Forecast API: **`[RETRACTED 2026-05-29]`** — param does not exist on `/v1/forecast`; Climate API uses inverse `disable_bias_correction`. +30-40% magnitude unverified. See @entities/data-sources/open-meteo.md.
+- **Station-resolution discipline `[CONFIRMED 2026-05-29]`** — live Polymarket KATL market rules cite Wunderground `KATL` daily high (whole °F); Open-Meteo at airport coords `33.6407,-84.4277` returns forecasts; NWS METAR `KATL` live. Validates @theparuchh's load-bearing station-vs-city-center fix pattern [Sources: Polymarket market rules, https://www.wunderground.com/history/daily/us/ga/atlanta/KATL, api.open-meteo.com, api.weather.gov (retrieved 2026-05-29)].
 - Did NOT pull GitHub or other code repo for the bot; author claims Mac Mini deployment but no source link captured in this document

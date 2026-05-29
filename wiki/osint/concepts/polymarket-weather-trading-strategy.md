@@ -108,7 +108,7 @@ Polymarket "highest temperature in {city} on {date}" markets resolve to one of N
 Five compounding edges documented:
 
 1. **Station-coordinate fix**: 5 of 11 cities had wrong API coordinates (city-center geocode vs official weather-station coordinates the market resolves against). Single largest accuracy gain.
-2. **Open-Meteo `bias_correction=true`**: under-documented API parameter; claimed +30-40% accuracy. [NEEDS VERIFICATION 2026-05-13]
+2. **Open-Meteo bias correction**: `[RETRACTED 2026-05-29]` — there is no `bias_correction=true` on the Forecast API; Climate API uses `disable_bias_correction` instead. Build bias correction from Historical Forecast + station truth (see @entities/data-sources/open-meteo.md).
 3. **3-model ensemble**: ICON + GFS + ECMWF consensus with outlier rejection. Replaces single-model reliance.
 4. **3-bin coverage**: bet adjacent bins (high-mid-low likelihood) instead of single bin. Win rate 18% → 30% claimed.
 5. **18-30 hr entry window**: priced inefficiently relative to 6-12 hr window. Edge appears not yet priced in.
@@ -146,7 +146,7 @@ Independent promoter narrative reinforcing resolution discipline:
 - **Data:** hourly Open-Meteo snapshots + `detect_changes()` on **future hours only** (past hours = noise).
 - **Resolution:** Weather Underground station history (whole °F, station-specific URL, post-finalization revisions excluded) — aligns with @AlterEgo_eth station-coordinate lesson.
 - **Orchestration pattern:** parallel agents (market rules, Open-Meteo, NWS, NOAA baseline, Polymarket odds) — analogous to conductor multi-tool fan-out, not new alpha by itself.
-- **Reference implementation cited:** `github.com/weather_scanner` [NEEDS VERIFICATION 2026-05-22 — repo health/license not audited in K57].
+- **Reference implementation cited:** `github.com/weather_scanner` → **`[TENTATIVE 2026-05-29]`** best public match is **`vgjtsy/weather_scanner`** (MIT, 0★, single commit 2026-04-21, ~528 LOC): Polymarket Gamma scan + Open-Meteo Gaussian edge + README cites Wunderground airport resolution. URL `github.com/weather_scanner` has **no org/user landing page**; `ancension/weather_scanner` is unrelated GitHub Pages. K57 `detect_changes()` workflow **not present** in published code — treat as promoter narrative / private fork until linked.
 
 ### K80 YouTube — Nates Tokens Claude ensemble bot [TENTATIVE]
 
@@ -161,7 +161,7 @@ Independent promoter narrative reinforcing resolution discipline:
 ### Cemini posture
 
 - **Strategy is portable** to Cemini's prediction-market stack; weather is a clean adjacency to existing macro/sports market exposure
-- **Phase-0 audit required** before adoption: verify Open-Meteo `bias_correction` claim independently, validate station coordinates for any deployed city, treat @theparuchh's P&L as anecdotal at small sample
+- **Phase-0 gates:** Open-Meteo `bias_correction=true` **`[RETRACTED 2026-05-29]`** — build bias correction from Historical Forecast + station truth; **station coordinates** must match per-market WU resolution URL (`[CONFIRMED]` pattern via KATL spot-check 2026-05-29); treat @theparuchh P&L as anecdotal at small sample
 - **Cross-concept hook**: ensemble methodology applies cleanly to @concepts/macro-weather-regime.md research; weather-trading bot output is a useful sentinel for broader regime detection
 - **Reviewer-agent fit**: this strategy is a high-quality test case for @concepts/reviewer-agent-inference-time-feedback.md — entry decisions are concrete, falsifiable, and easily backtestable
 
@@ -179,7 +179,7 @@ K60 v4 eval URLs 11–20: first pass **aggregate reject** (no Adopt stub farm). 
 
 **K66 upgrade:** `AruneshDev/Automated-Trading-System-Kalshi-Weather-Model` — was "thin/stale" in K60 table; @AlterEgo_eth reframes as **bias-correction reference**. Phase-0: ~7★, no LICENSE → **CONDITIONAL-GO steal-from** (@entities/tools/aruneshdev-kalshi-weather-xgboost.md). Prefer clean-room over repo import.
 
-**Still open:** `github.com/weather_scanner` from K57 @polydao — forecast-revision reference impl; Phase-0 not run.
+**K57 weather_scanner Phase-0 (2026-05-29):** `vgjtsy/weather_scanner` MIT reference impl — steal-from **Defer** (0★, thin, no `detect_changes`). Prefer `@alteregoeth-ai/weatherbot` or ndaly111/PolymarketAlerts weather pipeline for production patterns.
 
 Prod brief: `briefs/2026-05-24_k60-weather-steal-from-cemini.md`.
 
@@ -192,12 +192,12 @@ Prod brief: `briefs/2026-05-24_k60-weather-steal-from-cemini.md`.
 | **1°C / tight-range bins** | Forecast + station mapping must beat narrow-bin precision bar, not coarse thresholds |
 | **Micro-scaling** (many $0.01–$200 clips same outcome) | Adversary absorbs liquidity in slices; our taker logic should assume **repeated small hits**, not one block trade |
 | **1¢ tail building** | Confirms K55 “buy mispriced tails” thesis; win-rate ~63–65% can still win if entry price is extreme |
-| **Inferred multi-model + city/horizon bias + METAR** | Aligns with ensemble + Open-Meteo bias_correction + WU resolution discipline already on this page |
+| **Inferred multi-model + city/horizon bias + METAR** | Aligns with ensemble + explicit bias-correction stack + WU resolution discipline already on this page |
 
 **Adversary-of-record** for weather PM: @entities/people/coldmath-polymarket.md. Wallet address not in source — resolve on-chain or via Parity API if counterparty-intel is scoped.
 
 ### Open questions
 
-- Is `bias_correction=true` documented in Open-Meteo's official API reference? (verifiable via @entities/data-sources/open-meteo.md before production use)
 - What's the true sample size behind the 18% → 30% win-rate claim? (3 days × 11 cities × ~144 scans/day = high frequency but low independent-event count)
 - Does the 18-30 hr edge persist after publication, or does the X post itself close the gap?
+- Which public repo (if any) implements K57 @polydao `detect_changes()` forecast-revision loop? (`vgjtsy/weather_scanner` lacks it)

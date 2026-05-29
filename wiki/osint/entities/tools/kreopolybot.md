@@ -11,7 +11,7 @@ related:
   - entities/tools/polymarketanalytics-com.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-29
 phase_0_verdict: NO-AUDIT — third-party Telegram bot; not a candidate for Cemini adoption
 ---
 
@@ -28,7 +28,7 @@ What prompted this page: K56 Posts.docx Post 3 — @DextersSolab's referral-mark
 
 ## Narrative
 
-**KreoPolyBot** is a Telegram-based Polymarket copy-trading bot promoted by @DextersSolab. Naming conflict (unresolved): @igor_mikerin (Post 2) references "Kreo" as a rejected competitor — these may be the same bot or related products with the two authors disagreeing on its latency.
+**KreoPolyBot** (`@KreoPolyBot` on Telegram; brand **Kreo** / **KreoPoly**) is a Telegram-based Polymarket copy-trading bot promoted by @DextersSolab. Naming conflict **resolved** `[CONFIRMED 2026-05-29]`: @igor_mikerin's "Kreo" and @DextersSolab's "KreoPolyBot" refer to the same product family — official bot `@KreoPolyBot`, docs at `docs.kreo.app`, web hub `enter.kreo.app` [Sources: https://docs.kreo.app/Security, https://kreopoly.app/ (retrieved 2026-05-29)].
 
 ### Setup flow (per @DextersSolab)
 
@@ -50,9 +50,9 @@ What prompted this page: K56 Posts.docx Post 3 — @DextersSolab's referral-mark
 
 | Claim | Status |
 |---|---|
-| "Fastest execution available" | `[NEEDS VERIFICATION 2026-05-21]` — directly contradicts @igor_mikerin's claim that Pretracer is fastest |
-| "Lowest fees" | `[NEEDS VERIFICATION 2026-05-21]` |
-| Percentage stop-loss is a feature unique to KreoPolyBot | `[NEEDS VERIFICATION 2026-05-21]` |
+| "Fastest execution available" | `[TENTATIVE 2026-05-29]` — referral marketing; PolyCop (competitor) claims sub-2s on Polygon. No independent benchmark. |
+| "Lowest fees" | `[TENTATIVE 2026-05-29]` — fee schedule not on docs.kreo.app landing pages checked; PolyCop publishes 0.5%/trade. |
+| Percentage stop-loss is a feature unique to KreoPolyBot | `[RETRACTED 2026-05-29]` — Kreo supports configurable stop-loss / trailing stop per product reviews and setup flow; not unique vs other copy bots. Feature existence `[TENTATIVE]`; uniqueness claim was referral copy. |
 
 ### Self-reported PnL by author
 

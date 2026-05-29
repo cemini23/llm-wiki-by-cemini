@@ -20,7 +20,7 @@ related:
   - entities/tools/aruneshdev-kalshi-weather-xgboost.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-25
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -57,9 +57,9 @@ Avellaneda-Stoikov market-making quotes in logit space. No API key + no
 rate limit at the volumes Cemini uses = another zero-vendor-risk data
 source, consistent with the IP-sale-readiness posture.
 
-### K41 addition: `bias_correction=true` parameter
+### K41 addition: `bias_correction=true` parameter — `[RETRACTED 2026-05-29]`
 
-The K41-ingested @sources/x2-docx-polymarket-theparuchh-2026.md documents a parameter `bias_correction=true` on Open-Meteo's API that **claims +30-40% temperature-forecast accuracy** against weather-station resolution truth. Flagged `[NEEDS VERIFICATION 2026-05-13]` — the parameter's existence is independently verifiable via Open-Meteo's public API documentation; the magnitude claim is author-asserted.
+The K41-ingested @sources/x2-docx-polymarket-theparuchh-2026.md documents a parameter **`bias_correction=true`** on Open-Meteo's API claiming **+30-40% temperature-forecast accuracy**. Exa + official docs check (2026-05-29): the standard **Forecast API** (`/v1/forecast`) has **no** `bias_correction` query param in [Open-Meteo openapi.yml](https://raw.githubusercontent.com/open-meteo/open-meteo/main/openapi.yml); forecast output is intended for user-built post-processing pipelines. The **Climate API** exposes **`disable_bias_correction`** (boolean, default bias correction *on* against ERA5-Land) — inverse naming, different product. The +30-40% magnitude remains author-asserted and unverified. **Revenue implication:** weather bots must implement explicit bias correction (Historical Forecast archive + station truth), not flip a forecast-API toggle.
 
 Also documented: 5 of 11 city queries had wrong default coordinates (city-center geocode vs the weather station the resolution market uses). Mitigation: pin coordinates to the resolution-truth station, not the city geocode.
 

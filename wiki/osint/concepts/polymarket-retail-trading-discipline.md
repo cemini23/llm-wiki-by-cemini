@@ -50,9 +50,9 @@ K57 Posts.docx Post 4 — @vorty2797 educational thread (referral-linked). Synth
 | 6 | Copy smart wallets | Filter: ≥100 trades, ≥55% WR, PF≥1.5, DD≤40%, ≥6mo — **not** blind copy |
 | 7 | Resolution hygiene | Keyword red flags: discretion, widely reported, concede, etc. |
 
-### Client note [NEEDS VERIFICATION 2026-05-22]
+### Client note — CLOB Python SDK
 
-Post claims **`py-clob-client-v2`** is the current official Python CLOB client and legacy `py-clob-client` archived May 2026. Verify against Polymarket docs before any Cemini dependency pin change.
+Post claims **`py-clob-client-v2`** is the current official Python CLOB client and legacy `py-clob-client` archived May 2026. **`[CONFIRMED 2026-05-29]`** — Polymarket docs list `py-clob-client-v2` as the official Python SDK; legacy `py-clob-client` GitHub repo is **archived** and explicitly states V1 no longer works against production CLOB V2 [Sources: https://docs.polymarket.com/api-reference/clients-sdks, https://docs.polymarket.com/v2-migration, https://github.com/Polymarket/py-clob-client (retrieved 2026-05-29)]. **Cemini action:** pin `py-clob-client-v2` for any new Polymarket order-path work; do not install `py-clob-client`.
 
 ### Cemini posture
 

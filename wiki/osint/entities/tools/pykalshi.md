@@ -54,9 +54,9 @@ Integration flow per `@briefs/2026-05-05_pykalshi-adoption.md`:
 
 ### Outstanding Phase 0 questions (gate Phase 1)
 
-- [NEEDS VERIFICATION 2026-05-05] Auth-format compatibility with Cemini's existing API key + RSA private key (likely identical — both wrap the same Kalshi REST API)
-- [NEEDS VERIFICATION 2026-05-05] Endpoint coverage vs the ~150 endpoints documented in `@concepts/kalshi-api-reference.md` (especially FCM, RFQ/quote, live-data milestones — newer Kalshi features that may or may not be wrapped yet)
-- [NEEDS VERIFICATION 2026-05-05] Rate-limit handling — pykalshi's "automatic retries" needs to respect Kalshi's specific tier-based rate-limit headers under load
+- **Auth-format compatibility** — `[CONFIRMED 2026-05-29]` pykalshi uses standard Kalshi RSA-PSS signing (`KALSHI_API_KEY_ID` + PEM private key path) per `_base.py`; same credential shape as official Kalshi REST API [Source: https://github.com/ArshKA/pykalshi (retrieved 2026-05-29)].
+- **Endpoint coverage vs ~150-endpoint reference** — `[TENTATIVE 2026-05-29]` Client wraps core portfolio/market/exchange surfaces; RFQ/MVE models exist in repo tests but full parity with `@concepts/kalshi-api-reference.md` (FCM, live-data milestones, newer endpoints) requires sandbox enumeration before prod cutover.
+- **Rate-limit handling under load** — `[TENTATIVE 2026-05-29]` Implements proactive token-bucket limiter + reads `X-RateLimit-Remaining` / `X-RateLimit-Reset` response headers + exponential backoff on 429/5xx [Source: pykalshi `rate_limiter.py`, `_base.py`]. Tier-specific behavior under sustained prod load still needs sandbox soak test — do not assume HFT-safe without measurement.
 
 ### Adoption status
 

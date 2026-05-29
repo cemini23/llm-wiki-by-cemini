@@ -107,7 +107,7 @@ Five "recommended wallets" given as referral links:
 
 **Self-reported result**: $10,000 net profit in February following these five wallets. Pretracer pitched at ~100ms latency, no fees, runs inside Telegram, USDC funding only.
 
-`[NEEDS VERIFICATION 2026-05-21]` Pretracer's claim of 100ms latency and zero fees — typical referral-content marketing inflates these. The DextersSolab post (Post 3) recommends a different bot (KreoPolyBot) and is more substantive on the mechanics of copy-trading.
+`[TENTATIVE 2026-05-29]` Pretracer's claim of 100ms latency and zero fees — single-source referral marketing; no independent Pretracer docs found via web search. See @entities/tools/pretracer.md for competitor latency/fee benchmarks.
 
 ### Post 3 — @DextersSolab: "I publicly made 6 figs on Polymarket copy trading"
 

@@ -12,7 +12,7 @@ related:
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -55,7 +55,7 @@ What prompted this page: the K51 @AlterEgo_eth endpoint cheat sheet documented a
 
 This is the data substrate for whale-flow and informed-minority analysis. `/holders` + `/v1/market-positions` + `/oi` feed any "Polymarket informed-flow analyst" surface (see `@sources/polymarket-informed-minority-gomezcram-2026.md`); `/closed-positions` and `/value` give per-wallet skill scoring over time. Public + no-auth means these are cheap to poll. Geo: read-public, works from a US IP per the 2026-05-18 geo-profiling.
 
-`[NEEDS VERIFICATION 2026-05-18]` — endpoint paths taken from a single source (the @AlterEgo_eth cheat sheet); confirm exact response shapes and rate limits against the live API before wiring into the stack.
+Endpoint paths and public/no-auth posture **`[CONFIRMED 2026-05-29]`** — live probe from laptop: `/positions`, `/oi`, `/holders`, `/v1/market-positions` all HTTP 200 unauthenticated; aligns with official docs at [docs.polymarket.com](https://docs.polymarket.com/api-reference/introduction) and [data-api-openapi.yaml](https://docs.polymarket.com/api-reference/data-api-openapi.yaml). Rate limits and exact response schemas should still be monitored in prod wiring — not exhaustively documented here.
 
 ## Snippets
 

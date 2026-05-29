@@ -10,7 +10,7 @@ related:
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -39,10 +39,14 @@ What prompted this page: the K51 @AlterEgo_eth endpoint cheat sheet documented a
 |--------|------|---------|
 | GET | `/profit?window=all&address={address}` | Full PnL history |
 | GET | `/profit?window=1d&address={address}` | PnL, last 24h |
+| GET | `/profit?window=7d&address={address}` | PnL, last 7 days **`[CONFIRMED 2026-05-29]`** |
+| GET | `/profit?window=30d&address={address}` | PnL, last 30 days **`[CONFIRMED 2026-05-29]`** |
+
+Invalid `window` values (e.g. `1w`, `1m`) return HTTP 400 `{"error":"invalid request"}` [live probe 2026-05-29].
 
 ### Cemini relevance
 
-`/profit?window=all` gives a wallet's lifetime PnL — a direct skill-scoring input that complements the Data API's `/closed-positions`. Combined with `/holders` it lets Cemini rank a market's current participants by historical track record (the informed-minority signal). Narrow surface (one endpoint, two windows); likely Polymarket exposes more `window` values — `[NEEDS VERIFICATION 2026-05-18]` against the live API.
+`/profit?window=all` gives a wallet's lifetime PnL — a direct skill-scoring input that complements the Data API's `/closed-positions`. Combined with `/holders` it lets Cemini rank a market's current participants by historical track record (the informed-minority signal). **`[CONFIRMED 2026-05-29]`** — live windows: `all`, `1d`, `7d`, `30d` (empty list if wallet has no history in window). Richer leaderboard also on Data API `GET /v1/leaderboard?timePeriod=DAY|WEEK|MONTH|ALL` — prefer Data API for category filters; keep LB-API for per-wallet `/profit` time series.
 
 ## Snippets
 

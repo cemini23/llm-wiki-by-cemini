@@ -13,7 +13,7 @@ related:
   - sources/arxiv-polymarket-ils-population-scale-2605.00459.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-23
+updated: 2026-05-29
 phase_0_verdict: NO-GO 2026-05-16 — no LICENSE file in repo; GitHub reports licenseInfo=null. Code is substantive (real DBSCAN + funding-chain), but absent an explicit license the default is all-rights-reserved — incompatible with the IP-sale-bound proprietary stack. Re-audit only if upstream adds an OSI license file.
 ---
 
@@ -47,7 +47,7 @@ Core detections:
 
 **Cemini fit**: a mathematically robust anomaly-detection capability for the analyst-node prediction layer, and liquidity-impact metrics for backtesting frameworks. The stack mirrors the `/opt/cemini` market-data ingestion layer (Python/PostgreSQL/Redis). MIT clears the IP sale. Deployment belongs on **cemini-prod** — staged via adoption brief. The funding-chain analysis is cross-routed to cybersec for threat-actor financial profiling.
 
-- `[NEEDS VERIFICATION 2026-05-16]` DBSCAN clustering latency overhead against real-time high-velocity Polymarket CLOB WebSocket feeds. (Unresolved — Phase-0 is inspect-only, no execution; would need a runtime benchmark.)
+- **`[TENTATIVE 2026-05-29]`** DBSCAN clustering latency vs CLOB WebSocket hot path — code inspection: `SniperDetector` in `sniper.py` runs sklearn DBSCAN on **batched ingested `TradeEvent`s** with periodic clustering, not per-tick co-processing with order execution. End-to-end latency benchmark still pending; architecture suggests DBSCAN is offline/batch, not websocket-inline. (NO-GO on license remains the blocker.)
 - `[RETRACTED 2026-05-16]` "Phase-0 clone audit: confirm MIT LICENSE." Audit done — there is **no LICENSE file** and GitHub reports `licenseInfo: null`. The MIT claim is contradicted, not confirmed. See Phase-0 Audit section below.
 
 ## Phase-0 Audit (2026-05-16)

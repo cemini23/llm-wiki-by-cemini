@@ -19,7 +19,7 @@ related:
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
 maturity: draft
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-29
 read_status: read
 ---
 
@@ -74,7 +74,7 @@ Face-merge (Wavespeed / nano banana), 70/20/10 dataset ratio, LoRA training (~$3
 
 ### Post 4 — @vorty2797: "tactics to not lose on polymarket"
 
-Retail-survival framing: edge = mispriced probability vs mid, not "predict the future." Seven tactics with pasteable Python: capped Kelly (quarter-Kelly), news overreaction fade, scale-out ladder, category specialization (Gamma `tag_slug`), slippage simulator, copy-wallet filters, resolution red-flag keywords. Notes **py-clob-client-v2** as current official client (legacy client archived May 2026) [NEEDS VERIFICATION 2026-05-22]. Synthesized: `@concepts/polymarket-retail-trading-discipline.md`.
+Retail-survival framing: edge = mispriced probability vs mid, not "predict the future." Seven tactics with pasteable Python: capped Kelly (quarter-Kelly), news overreaction fade, scale-out ladder, category specialization (Gamma `tag_slug`), slippage simulator, copy-wallet filters, resolution red-flag keywords. Notes **py-clob-client-v2** as current official client (legacy client archived May 2026) **`[CONFIRMED 2026-05-29]`** — see @concepts/polymarket-retail-trading-discipline.md (Polymarket docs + archived V1 repo). Synthesized: `@concepts/polymarket-retail-trading-discipline.md`.
 
 ### Post 5 — @Suryanshti777: "How To Build AI Operating Systems"
 

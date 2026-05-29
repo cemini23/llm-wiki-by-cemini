@@ -60,7 +60,7 @@ The edge claim is **late-session momentum / sticky probability** on binary crypt
 - **Price jumps** between OCR read and click (demo: 71¢ → 92¢ fill).
 - **OCR dependency** — requires flickering digit overlay; breaks on UI redesign.
 - **No slippage preview** — unlike API bots (@sources/youtube-kalshi-bots-batch-2026-05-29 video 3).
-- **Terms-of-service / automation policy** [NEEDS VERIFICATION 2026-05-29] — UI bots may violate Kalshi acceptable use; API path is the auditable alternative.
+- **Terms-of-service / automation policy** — `[CONFIRMED 2026-05-29]` Kalshi Data Terms prohibit scraping, bulk harvesting, non-standard browsers, scripts, and automated website navigation [Source: https://kalshi-public-docs.s3.amazonaws.com/kalshi-data-terms-of-service.pdf]. UI OCR bots (Night Shark pattern) are **high ToS risk**. **API-based automation is the supported path** — Kalshi documents REST/WebSocket for programmatic trading [Sources: Kalshi API docs, third-party guides citing official API access (retrieved 2026-05-29)].
 
 ### Cemini posture: **NO-GO for production**
 

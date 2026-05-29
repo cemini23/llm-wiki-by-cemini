@@ -10,7 +10,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -44,7 +44,7 @@ The **Bridge API** — `https://bridge.polymarket.com` — is the funding layer:
 | `GET /status/{address}` | public | Monitor deposit status by deposit address — poll until confirmed. |
 | `POST /withdraw` | public | Create withdrawal addresses to bridge pUSD back to any supported chain/token. |
 
-The post states the whole Bridge API is **public, no auth required**. `[NEEDS VERIFICATION 2026-05-19]` — not yet reproduced against the live API; @AlterEgo_eth's earlier cheat sheet had a demonstrably wrong auth column (it mis-classed CLOB `/book` + `/midpoint` as auth-required), so treat the "no auth" claim as provisional until tested.
+The post states the whole Bridge API is **public, no auth required**. `[CONFIRMED 2026-05-29]` — reproduced from cemini-laptop: unauthenticated `GET /supported-assets` (HTTP 200 JSON); `POST /deposit` without payload returns HTTP 400 (validation error, not auth failure). Prior cheat-sheet auth-column errors do not apply to Bridge reads/writes tested here.
 
 ### The deposit flow
 

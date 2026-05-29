@@ -17,7 +17,7 @@ related:
   - sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md
 maturity: validated
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -51,7 +51,7 @@ Synthesized from @AlterEgo_eth K70 (2026-05-27): a **strategy-layer** taxonomy f
 
 - **Mechanism:** Seconds–minutes: new model runs, Polymarket↔Kalshi price divergence, pure latency.
 - **Tradeoffs:** High complexity; very high early profit with **closing windows**; very high competition; low–medium stability.
-- **Risks:** Downtime, slippage, execution errors, regulatory exposure [NEEDS VERIFICATION 2026-05-27].
+- **Risks:** Downtime, slippage, execution errors, regulatory exposure **`[TENTATIVE 2026-05-29]`** — generic operational risks for latency/arb bots; Kalshi **UI scrape/automation banned** (API OK) `[CONFIRMED]` per Wave 2 Data Terms; Polymarket has no published bot ban but CFTC/regulatory posture varies by jurisdiction — not a verified legal opinion.
 - **Cemini:** Overlaps K67 FOK/copy-latency brief + @concepts/polymarket-bot-architecture.md; often **combined** with type 1 per author.
 
 ### Type 3 — Base-rate / statistical divergence

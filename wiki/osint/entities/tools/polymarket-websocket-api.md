@@ -11,7 +11,7 @@ related:
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -31,20 +31,30 @@ What prompted this page: the K51 @AlterEgo_eth endpoint cheat sheet enumerated t
 ### Identity
 
 - **Role**: Polymarket's **realtime push** layer over the CLOB order book
-- **Base URL**: `wss://ws-subscriptions-clob.polymarket.com/ws`
+- **Base URL**: `wss://ws-subscriptions-clob.polymarket.com/ws/market` (public) and `/ws/user` (authenticated)
 
 ### Channels
 
 | Channel | Auth | Payload |
 |---------|------|---------|
-| `/market` | public | Orderbook snapshots + real-time price-change deltas |
-| `/user` | authenticated | Personal fills, cancellations, order updates |
+| `/ws/market` | public | Initial orderbook snapshot (`event_type: book` or legacy list dump with `bids`/`asks`) + **`price_change` deltas** |
+| `/ws/user` | authenticated | Personal fills, cancellations, order updates |
+
+### Subscription (confirmed 2026-05-29)
+
+Connect to `/ws/market`, then send:
+
+```json
+{"assets_ids": ["<token_id>"], "type": "market"}
+```
+
+Optional: `initial_dump` (default `true`), `level` (1–3, default 2), `custom_feature_enabled` for `best_bid_ask` / lifecycle events. Official AsyncAPI: `docs.polymarket.com/api-reference/wss/market.md`.
+
+Live probe: first message = full book; subsequent messages = `event_type: price_change` with per-level deltas — **not delta-only from cold start**; maintain local book state or request `initial_dump`.
 
 ### Cemini relevance
 
 `/market` is the canonical low-latency price feed — a hot-loop poll of CLOB `GET /price` is the wrong pattern when this stream exists (see `@concepts/polymarket-bot-architecture.md` <0.5ms hot-path target). `/user` carries fills, but the bot-architecture concept page documents a silent-fill bug post-V2: WebSocket fill events alone do not confirm fills — pair with a periodic REST reconciliation pass against CLOB `/orders`.
-
-`[NEEDS VERIFICATION 2026-05-18]` — subscription message format and snapshot/delta semantics taken from a single source; confirm against the live socket before relying on delta-only updates.
 
 ## Snippets
 

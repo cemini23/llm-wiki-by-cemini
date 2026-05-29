@@ -10,7 +10,7 @@ related:
   - concepts/market-memory-hurst-regime.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-26
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -28,7 +28,7 @@ What prompted this page: K56 Posts.docx Post 5 — long-form on strategy-validat
 
 X handle **@phosphenq** (self-introduces as "Phosphen"). Self-described: "I write long-form breakdowns of the math hedge funds actually run on every trade." DMs open per post.
 
-Content style: rigorous, well-sourced, applies institutional-quant validation discipline (Citadel / Two Sigma framing) to retail-accessible cases. The Polymarket case study is well-constructed — author runs his own strategy through MCPT and reports failure honestly, which is the strongest signal of methodological integrity in the K56 post collection.
+Content style: rigorous, well-sourced, applies institutional-quant validation discipline (Citadel / Two Sigma framing) to retail-accessible cases. The Polymarket case study is well-constructed — author runs his own strategy through MCPT and reports failure honestly, which is the strongest signal of methodological integrity in the K56 post collection. Universal "every shop runs MCPT" framing **`[RETRACTED 2026-05-29]`** — see @concepts/monte-carlo-permutation-test-mcpt.md.
 
 The author's framing of Goodhart's Law applied to validation sets ("a measure that becomes a target is no longer a good measure — your validation set is the measure") is the most-quotable line in K56 and the framing the @concepts/monte-carlo-permutation-test-mcpt.md page builds around.
 

@@ -40,9 +40,7 @@ clusters: [quant-validation, backtest]
 
 ## Raw Concept
 
-What prompted this page: K56 Posts.docx Post 5 — @phosphenq's "How To Tell If Your Trading Strategy Is Real Or Random (Quant Framework)." Introduces the **Monte Carlo Permutation Test** as formalized by Timothy Masters in *Permutation and Randomization Tests for Trading System Development* (2020) — described by the author as the standard pre-deployment test at Citadel / Two Sigma / "every serious quant shop." Live case study: a Polymarket strategy that resolved one day prior fails the test.
-
-`[NEEDS VERIFICATION 2026-05-21]` "Every serious quant shop runs MCPT" — author claim; plausible (the technique is well-known) but exaggerated as universal. The book reference is real (Timothy Masters has authored multiple trading-validation books). The case study uses MCPT correctly per the methodology.
+What prompted this page: K56 Posts.docx Post 5 — @phosphenq's "How To Tell If Your Trading Strategy Is Real Or Random (Quant Framework)." Introduces the **Monte Carlo Permutation Test** as formalized by Timothy Masters in *Permutation and Randomization Tests for Trading System Development* (2020). The author claims Citadel / Two Sigma / "every serious quant shop" runs MCPT on every strategy — **`[RETRACTED 2026-05-29]`** as universal practice: MCPT is a well-known Masters discipline (book real; Build Alpha / StrategyQuant tooling exists) but major shops also rely on walk-forward, White's Reality Check, Hansen SPA, DSR, and CPCV — not MCPT alone. Treat as **one valid pre-deployment gate**, not industry monoculture. The Polymarket case study applies MCPT correctly per methodology.
 
 ## Narrative
 
@@ -118,7 +116,7 @@ The LP-rewards-farming strategy is interesting from an MCPT perspective: the rew
 ## Dead Ends
 
 - The source post promises a full Python implementation but the extracted text truncates before the code block. Re-fetch the original X post or `mcp__exa__crawling_exa` it before relying on author-specific code patterns. The Masters 2020 book is the authoritative implementation reference and predates this post by 6 years — pre-existing, well-vetted reference implementations exist.
-- The claim that "every serious quant shop" runs MCPT is exaggerated. Many shops run **walk-forward analysis** + reality-check tests (White's, Hansen's SPA) instead of or in addition to MCPT. Treat the framing as one school of validation discipline, not universal practice.
+- The claim that "every serious quant shop" runs MCPT is **`[RETRACTED 2026-05-29]`** — marketing exaggeration. Many shops run walk-forward + reality-check tests (White's, Hansen's SPA) and DSR instead of or in addition to MCPT [Sources: Bailey & López de Prado DSR paper, Build Alpha MCPT docs, timothymasters.info (retrieved 2026-05-29)]. MCPT remains a **recommended Cemini gate** alongside @concepts/brier-score-model-promotion-framework.md.
 
 ## Snippets
 

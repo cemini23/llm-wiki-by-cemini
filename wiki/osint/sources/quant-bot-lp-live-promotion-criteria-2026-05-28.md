@@ -13,7 +13,7 @@ related:
 maturity: validated
 read_status: deep-read
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 clusters: [cemini-internal, liquidity-provision, quant-validation]
 ---
 
@@ -41,11 +41,11 @@ clusters: [cemini-internal, liquidity-provision, quant-validation]
 
 ~39k-char survey of **industry-style GO criteria** for LP / market-making bots. Flash Crash (2010) and Knight (2012) as motivation. Five pillars:
 
-1. **Deflated Sharpe Ratio (DSR)** — López de Prado / Bailey framework correcting for skew, kurtosis, and **multiple testing** (`N` trials → expected max Sharpe). Standard GO: DSR above high confidence threshold (source text truncates numeric cutoff in export — treat as **operator-defined**, not copy-paste).
+1. **Deflated Sharpe Ratio (DSR)** — López de Prado / Bailey framework correcting for skew, kurtosis, and **multiple testing** (`N` trials → expected max Sharpe). **`[CONFIRMED 2026-05-29]`** — canonical DOCX on librarian states DSR is 0–1 GO gate but **numeric cutoff corrupted in export** ("requires a DSR ."). Operator sets threshold from Bailey (2014) + logged trial count.
 
 2. **Monte Carlo Permutation Test (MCPT)** — shuffle session returns / gaps separately; p-value = fraction of permuted paths beating live path. Aligns with @concepts/monte-carlo-permutation-test-mcpt.md.
 
-3. **Markout analysis** — realized spread vs effective spread; short-term (10–50ms) and mid-term (1–5s) markout floors for adverse selection detection.
+3. **Markout analysis** — realized spread vs effective spread; short-term (10–50ms) and mid-term (1–5s) markout floors for adverse selection detection. **`[CONFIRMED 2026-05-29]`** — short-term: **non-negative median** markout; mid-term: **strictly positive after fees** (fee-adjusted qualifier truncated in export).
 
 4. **Shadow incubation + minimum PnL floor** — positive shadow PnL necessary but insufficient; floor must cover risk-free rate + fees + infra + capital utilization.
 
@@ -57,6 +57,10 @@ Before promoting `pm_lp_rewards` beyond paper/shadow: require documented DSR/MCP
 
 ## Snippets
 
-> "A standard 'GO' condition for algorithmic promotion requires a DSR [above stringent confidence threshold]." [Source: quant-bot-lp-live-promotion-criteria-2026-05-28.docx — numeric threshold truncated in DOCX extract]
+> "A standard 'GO' condition for algorithmic promotion requires a DSR [above stringent confidence threshold — numeric value corrupted in DOCX export; operator-defined per Bailey 2014]." [Source: quant-bot-lp-live-promotion-criteria-2026-05-28.docx — verified on librarian 2026-05-29]
+
+> "Short-Term Markout (10ms - 50ms) … Must maintain a non-negative median markout." [Source: quant-bot-lp-live-promotion-criteria-2026-05-28.docx]
+
+> "Mid-Term Markout (1s - 5s) … Must be strictly [positive] after explicitly factoring in exchange rebates and taker fees." [Source: quant-bot-lp-live-promotion-criteria-2026-05-28.docx — bracketed word inferred where export truncated]
 
 > "In shadow mode, the candidate LP algorithm consumes live, tick-level market data … but its execution commands are suppressed or routed to a simulated matching engine." [Source: quant-bot-lp-live-promotion-criteria-2026-05-28.docx]

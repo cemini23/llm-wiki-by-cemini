@@ -13,7 +13,7 @@ related:
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
 maturity: draft
 created: 2026-05-25
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -50,7 +50,7 @@ Operational playbook: **ECMWF anchor** + **regional best model** per Polymarket 
 
 Open-Meteo already multiplexes many NWPs — this concept is the **selection policy** atop harvesters, not a new data vendor. Wire into weather analyst prompts + offline bias-correction features (@concepts/nwp-bias-correction-ml-weather-trading.md).
 
-**GraphCast / neural NWPs** (@entities/tools/graphcast.md) are out of scope for this post but may supersede regional deterministic models long-term [NEEDS VERIFICATION 2026-05-25].
+**GraphCast / neural NWPs** (@entities/tools/graphcast.md) are out of scope for this post. **`[TENTATIVE 2026-05-29]`** — GraphCast is operational as ECMWF live experiment + NOAA **GraphCastGFS** (experimental, 0.25° global, 6-hour steps) and beats HRES on many global metrics, but **does not supersede** regional deterministic NWPs (HRRR, ICON-D2, AROME) for Polymarket station-level 1°C bins: global grid ≠ airport station, status experimental, best used **alongside** physics NWP per NOAA docs [Sources: https://deepmind.google/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/, https://gribstream.com/models/graphcast, @entities/tools/graphcast.md (retrieved 2026-05-29)].
 
 ## Snippets
 

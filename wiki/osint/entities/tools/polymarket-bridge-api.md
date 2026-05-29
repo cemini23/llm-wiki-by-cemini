@@ -10,7 +10,7 @@ related:
   - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-19
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -26,7 +26,7 @@ What prompted this page: K54 ingest of @AlterEgo_eth's Bridge API post. The Brid
 
 ## Narrative
 
-`https://bridge.polymarket.com` — the **funding layer**: converts arbitrary on-chain assets into Polymarket's collateral token (**pUSD**) and bridges pUSD back out. Reported as public, no auth required `[NEEDS VERIFICATION 2026-05-19]`.
+`https://bridge.polymarket.com` — the **funding layer**: converts arbitrary on-chain assets into Polymarket's collateral token (**pUSD**) and bridges pUSD back out. Public, no auth required `[CONFIRMED 2026-05-29]` — live probe: `GET /supported-assets` → HTTP 200 unauthenticated; `POST /deposit` with empty body → HTTP 400 `address is required` (not 401).
 
 | Endpoint | Method | Purpose |
 |----------|--------|---------|
@@ -44,4 +44,4 @@ What prompted this page: K54 ingest of @AlterEgo_eth's Bridge API post. The Brid
 
 Relevant only if the deployed `/opt/cemini` bot is to manage its own treasury — auto-top-up of collateral, sweep of realised PnL. The critical integration detail: step 6 (`/balance-allowance/update`) is mandatory; a deposit that confirms on-chain but skips this call is invisible to the order layer — a silent funding failure. Multi-chain deposit addresses (BTC/SVM/EVM) give funding-source flexibility. Not currently in scope for Cemini's adapter; documented for the funding-flow note in `briefs/2026-05-19_k54-polymarket-tooling-cemini.md`.
 
-`[NEEDS VERIFICATION 2026-05-19]` — the "no auth required" claim and the endpoint shapes are from a single X post; @AlterEgo_eth's prior cheat sheet had a wrong auth column. Reproduce against the live API before relying on this.
+`[CONFIRMED 2026-05-29]` — endpoint shapes match @AlterEgo_eth post; "no auth" reproduced on live API (see entity page probe notes). CLOB `/balance-allowance/update` step remains operationally critical — not re-tested end-to-end here.

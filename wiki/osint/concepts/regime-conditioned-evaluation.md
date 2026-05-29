@@ -103,18 +103,9 @@ Three places this discipline applies directly. Action-value ordering:
 
 #### 1. Brief-audit `regime-disclosure` gate (highest-leverage, 1–2 hour port)
 
-Current state: `scripts/skill_audit.py` checks structural properties (sections present, cross-links resolve, citation tags present, NEEDS-VERIFICATION freshness, prose quality, frontmatter validity). It does **not** check whether briefs comparing algorithmic alternatives disclose regime variables.
+Current state **`[CONFIRMED 2026-05-29]`**: `scripts/skill_audit.py` ships mechanical `check_regime_disclosure()` — regex triggers on comparison phrases (`beats`, `outperforms`, `better than`, `N% vs Y`, …) and **REJECT**s (veto gate) when regime disclosure patterns are absent (`PRS`, `B/|A|`, `regime-conditioned`, …). WARN if scope-narrowing language (`pilot`, `preliminary`) without formal disclosure. Wired in `assemble_report()` since v0.4+.
 
-Proposed gate: when a brief's `## Body` section contains an algorithm/strategy comparison (detect by keyword pattern: "X vs Y", "X outperforms Y", "X beats Y"), require the brief to also report:
-
-- Budget / horizon / sample-size variable.
-- Prior-quality / baseline-strength signal.
-- Context count or evaluation breadth.
-- Metric type (terminal vs cumulative; absolute vs relative).
-
-REJECT verdict if comparison present without regime disclosure. WARN if regime variables are present but not held fixed across compared methods.
-
-This is the most directly portable contribution of the paper to Cemini's workflow. Brief-audit-upgrade sprint (already on roadmap from K32) should bundle this with the academic-paper-skills 35-point peer-review framework port.
+Optional v0.5 **LLM-as-judge** layer exists for **tool-adoption brief pressure tests** (`_DYNAMIC_SYSTEM_PROMPT`), not for regime-comparison detection — keep regime gate mechanical; LLM augmentation for comparison parsing remains v2 per @concepts/evidence-withheld-verification.md (judge must not see algorithm identities or ground truth).
 
 #### 2. Conductor fitness-function evaluation
 
@@ -180,4 +171,4 @@ This is a non-trivial overhead that argues for **starting with the brief-audit g
 
 - **Universal PRS threshold attempt** — paper's own data shows the cross-benchmark threshold shifts with observation noise $\sigma^2$. Don't try to ship a single Cemini-wide PRS=0.10 cutoff; calibrate per-domain.
 
-- **Brief-audit gate via LLM-as-judge** [NEEDS VERIFICATION 2026-05-07] — tempting to delegate "is this brief comparing algorithms?" detection to an LLM. Per @concepts/evidence-withheld-verification.md, this would need the judge to receive only the brief body, not the algorithm identities or any ground truth. Mechanical keyword detection ("X vs Y", "X beats Y", "X outperforms") is more robust as a starting point; LLM augmentation is a v2 enhancement.
+- **Brief-audit gate via LLM-as-judge** **`[CONFIRMED 2026-05-29]`** — v1 is **mechanical keywords** in `skill_audit.py` `check_regime_disclosure()` (shipped). LLM-as-judge for comparison detection deferred to v2; existing dynamic LLM layer is tool-adoption-only, not regime parsing.

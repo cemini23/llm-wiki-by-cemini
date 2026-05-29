@@ -11,7 +11,7 @@ related:
   - concepts/nwp-model-stack-polymarket-weather.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-25
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -29,6 +29,8 @@ DeepMind GraphCast neural weather model (~6.7k★, Apache-2.0). K63 **Defer** �
 ### Verdict: **Defer (Phase-0)**
 
 Potential lift: bias-corrected global fields for station-level 1°C bin markets. Blocker: ops cost + librarian Ollama is not H100-class training/inference farm.
+
+**Operational status `[TENTATIVE 2026-05-29]`:** ECMWF hosts live GraphCast forecasts; NOAA runs experimental GraphCastGFS (0.25° global). Does **not** replace regional NWPs (HRRR/ICON-D2) for narrow Polymarket bins — global ML field + experimental status. See @concepts/nwp-model-stack-polymarket-weather.md.
 
 ## Snippets
 

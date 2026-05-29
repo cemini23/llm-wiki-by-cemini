@@ -38,6 +38,6 @@ What prompted this page: K41 ingest of x 2.docx — @theparuchh's full operation
 
 - **Anecdotal track record** at $130 bankroll over 3-day window is **not statistically significant**. Treat methodology as portable, P&L as illustrative.
 - **Station-coordinate discovery is the load-bearing insight** — the kind of structural fix that survives independent verification
-- **Open-Meteo bias_correction claim** is independently verifiable via the API; flag `[NEEDS VERIFICATION 2026-05-13]` before relying on the magnitude
+- **Open-Meteo bias_correction claim** — parameter name `[RETRACTED 2026-05-29]` on Forecast API (see @entities/data-sources/open-meteo.md); magnitude (+30-40%) remains author-asserted
 - Real identity not established; treat as pseudonymous retail-trader / weather-bot operator
 - No public code repo captured in source; if Cemini pursues this strategy, search upstream for repo + run Phase-0 audit before adoption

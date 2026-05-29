@@ -163,6 +163,16 @@
 
 ---
 
+## [2026-05-29] query | NEEDS VERIFICATION sweep Waves 1–5 (revenue-priority)
+
+- **30 tags closed** — 225 → 195 stale `[NEEDS VERIFICATION]` (live API, Exa, GitHub, prod SSH)
+- **Waves** — R1 pm-execution (bridge, CLOB v2, data API, WS, LB-API), R2 weather, R5 quant promotion, R6 deepseek-api
+- **31 wiki pages** — polymarket API entities, weather stack, MCPT/regime-eval/LP gates, deepseek-api
+- **Sweep tracker** — `wiki/sweeps/2026-05-29-needs-verification-revenue-plan.md`
+- **Prod brief** → `cemini-prod:/opt/cemini/briefs/2026-05-29_needs-verification-waves1-5-prod-hooks-cemini.md` (skill_audit PASS)
+
+---
+
 ## [2026-05-28] ingest | K77 — model promotion, CLOB limits, clean-room, diagnostics, tick staleness, shadow
 
 - **6 sources** — benchmarking framework, CLOB rate limits, clean-room design, model failure diagnostics, tick staleness, shadow accumulation (docx → librarian)

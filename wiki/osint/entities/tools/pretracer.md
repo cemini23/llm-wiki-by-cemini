@@ -11,7 +11,7 @@ related:
   - entities/tools/polymarketanalytics-com.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-29
 phase_0_verdict: NO-AUDIT — third-party Telegram bot; not a candidate for Cemini adoption (we don't outsource execution to external opaque bots)
 ---
 
@@ -38,8 +38,8 @@ What prompted this page: K56 Posts.docx Post 2 — @igor_mikerin's referral-mark
 
 | Claim | Status |
 |---|---|
-| ~100ms latency from source-wallet trade to copy execution | `[NEEDS VERIFICATION 2026-05-21]` |
-| Zero fees | `[NEEDS VERIFICATION 2026-05-21]` |
+| ~100ms latency from source-wallet trade to copy execution | `[TENTATIVE 2026-05-29]` — single-source (@igor_mikerin) marketing; no independent docs/site found; competitor PolyCop cites ~2s / 0-block on Polygon [Source: https://polycop.trade/ (retrieved 2026-05-29)] |
+| Zero fees | `[TENTATIVE 2026-05-29]` — unverified; named competitors charge ~0.5%/trade (PolyCop). Treat zero-fee claim as referral copy until Pretracer publishes fee schedule. |
 | USDC-funding only (no MetaMask, no browser dashboard, no app install) | `[CONFIRMED]` — typical Telegram-bot pattern |
 | Setup in under 5 minutes | `[TENTATIVE]` |
 
@@ -70,7 +70,7 @@ Pretracer is documented here because:
 
 ### Verification follow-ups
 
-- Resolve the Kreo / KreoPolyBot naming question via direct check of `t.me/KreoPolyBot` and `t.me/pretracer`
+- Resolve the Kreo / KreoPolyBot naming question via direct check of `t.me/KreoPolyBot` and `t.me/pretracer` — **Kreo naming done 2026-05-29** (see @entities/tools/kreopolybot.md). Pretracer bot presence still `[TENTATIVE]` (Telegram-only, no public docs indexed).
 - Confirm whether Pretracer is custodial (holds user USDC) or non-custodial (signs from user wallet). The "USDC deposit" flow implies custodial — `[TENTATIVE 2026-05-21]`
 - Spot-check the 100ms latency claim against any third-party benchmark
 

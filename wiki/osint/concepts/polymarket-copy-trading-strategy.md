@@ -132,7 +132,7 @@ Pretracer (`@pretracer` on Telegram) is the @igor_mikerin-promoted competitor. S
 - **Real-time wallet tracker** — notifications on a watched wallet's new positions
 - **Wallet parser** — passive observer mode for studying a wallet before committing to copy
 
-`[NEEDS VERIFICATION 2026-05-21]` Pretracer's zero-fees claim and ~100ms latency — typical referral-marketing inflates both. The independent question is whether Polymarket itself charges enough order/withdrawal fees that bot-level fees are noise. (Polymarket gas: ~$0.10-0.50 per trade on Polygon. If Pretracer takes nothing, that's a real cost saver vs Kreo.)
+`[TENTATIVE 2026-05-29]` Pretracer's zero-fees and ~100ms latency — single-source referral marketing; Exa/web search found no Pretracer fee/latency docs (May 2026). Named competitor PolyCop publishes 0.5%/trade and ~2s execution [Source: https://polycop.trade/ (retrieved 2026-05-29)]. Cemini relevance: copy-trading is adversary modeling, not adoption — but latency bar for any taker strategy remains ~1–2s on Polygon unless we colocate.
 
 ### Bots compared (per source claims)
 
@@ -144,7 +144,7 @@ Pretracer (`@pretracer` on Telegram) is the @igor_mikerin-promoted competitor. S
 | Polycule | rejected | "too slow" per igor_mikerin | Charges | Posts.docx Post 2 |
 | Kreo (alternate name?) | rejected by igor / endorsed by Dexter as KreoPolyBot | conflicting | conflicting | Posts.docx Posts 2+3 |
 
-The Kreo / KreoPolyBot naming conflict between the two sources is unresolved — they may be the same bot with the two authors disagreeing on its speed, or two related products. `[NEEDS VERIFICATION 2026-05-21]`
+The Kreo / KreoPolyBot naming conflict is **resolved** `[CONFIRMED 2026-05-29]` — same bot family (`@KreoPolyBot`, Kreo docs). Speed/fee superiority between Pretracer vs Kreo remains **unbenchmarked** — both sides are referral posts.
 
 ### Self-reported PnL claims
 

@@ -50,7 +50,16 @@ Checklist for promoting **liquidity provision** bots (especially Cemini `pm_lp_r
 | **6. Kill switch** | Out-of-loop halt tested | `risk_governor` / panic paths |
 | **7. Brier / calibration** | BSS > 0 OOS; reliability bins within tolerance | @concepts/brier-score-model-promotion-framework.md |
 
-`[NEEDS VERIFICATION 2026-05-28]` Exact numeric DSR/markout thresholds in source DOCX were truncated in extract — **define operator thresholds in prod config**, do not copy placeholder numbers from synthesis doc.
+**Numeric thresholds `[CONFIRMED 2026-05-29]`** — librarian deep-read of canonical DOCX (`cemini-librarian:/opt/cemini-bulk/research/quant-bot-lp-live-promotion-criteria-2026-05-28.docx`, sha256 `611cde3b…`) shows **DSR GO cutoff numeric is corrupted/missing** in source text ("requires a DSR ."). **Do not copy placeholder numbers.** Operator defines DSR rejection threshold from Bailey & López de Prado (2014) — DSR is a 0–1 confidence-style statistic; set threshold + log trial count `N` in prod config.
+
+**Markout floors from source (extract intact):**
+
+| Horizon | Threshold |
+|---------|-----------|
+| Short-term (10–50 ms) | **Non-negative median** markout (deeply negative → latency/hardware failure) |
+| Mid-term (1–5 s) | **Strictly positive** after rebates + taker fees (numeric qualifier corrupted in DOCX export) |
+
+Shadow PnL floor = dynamic hurdle (risk-free + fees + infra + capital utilization) — formula referenced but not numeric in extract.
 
 ### Shadow incubation
 

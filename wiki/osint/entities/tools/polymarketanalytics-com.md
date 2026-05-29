@@ -11,7 +11,7 @@ related:
   - entities/people/dexterssolab.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-29
 phase_0_verdict: USE-AS-INPUT — free read-only filter platform; useful as alternative-data source, not an adoption target
 ---
 
@@ -66,8 +66,8 @@ Not an adoption target — Cemini doesn't host third-party-data-aggregator sites
 
 ### Verification follow-ups
 
-- `[NEEDS VERIFICATION 2026-05-21]` Whether polymarketanalytics.com has a public API or only a web UI. If web-UI-only, our consumption requires either scraping or manual lookup. Per the K56 GitHub-projects report, pmxt's open-source 1TB orderbook dataset may render polymarketanalytics's wallet-tracking duplicative for any aggregated query (pmxt has the raw data, polymarketanalytics has the curated view).
-- `[NEEDS VERIFICATION 2026-05-21]` Operator identity and funding model — "free" platforms often monetize via referral or data-sale to the very bots (Pretracer, KreoPolyBot) that downstream consume them.
+- **Public API vs web UI** — `[CONFIRMED 2026-05-29]` The free **web dashboard** at polymarketanalytics.com has no documented open REST surface for anonymous bulk export. The operator's commercial **Falcon API** (`https://api.polymarketanalytics.com/`) offers token-authenticated REST + MCP (wallet stats, cross-venue compare) — separate product, not the free filter UI DextersSolab used manually. For programmatic wallet discovery Cemini should prefer **Polymarket Data API** (`data-api.polymarket.com`) + `@entities/tools/polymarket-lb-api.md` or build from pmxt raw data; Falcon is optional paid intel, not a drop-in for the free web filters.
+- **Operator / funding model** — `[TENTATIVE 2026-05-29]` Site promotes **PolyGun** copy bot and **Falcon API** — classic freemium + referral stack. Operator identity (Primo Data / Heisenberg narrative endpoints) not independently verified beyond marketing pages [Sources: https://polymarketanalytics.com/, https://api.polymarketanalytics.com/ (retrieved 2026-05-29)].
 
 ## Dead Ends
 
