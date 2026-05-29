@@ -145,6 +145,12 @@ updated: 2026-04-23
    - Call `python3 scripts/cross_wiki_route.py` to create a stub page or brief in the correct wiki, piping content via stdin
    - Use `--type page` for substantive material, `--type brief` for tangential material
    - **When in doubt, prefer a brief over a stub** — briefs are cheaper and don't create maintenance burden in the target wiki
+4c. **X `Posts.docx` style pass (seo-wiki handoff)** — when ingesting `Posts.docx` or writing/updating a `trading-posts-compilation-*` source page:
+   - Read `@seo-wiki/prompts/posts-docx-style-pass.md` and run the ritual after the OSINT source page exists (same session or immediately after commit)
+   - Update `@seo-wiki/concepts/x-account-voice-and-format.md` — exemplar table, snippets, steal/avoid flags, paragraph-discipline / paste warnings
+   - Append Article beats to `@seo-wiki/concepts/x-article-3-notes.md` or create `@seo-wiki/concepts/x-article-N-notes.md` when a long-form maps to the operator's X lane (local wiki, agent tooling, Obsidian/Claude workflows, prediction markets)
+   - Append one line to `@seo-wiki/wiki/log.md`: `style-pass | Posts.docx K## | …`
+   - **Does not replace** 4b — OSINT keeps topic routing and synthesis; SEO keeps operator voice + Article queue only. Ingest stays in OSINT; no need to drop `Posts.docx` in the SEO repo.
 5. Create `wiki/sources/<slug>.md` — frontmatter + Raw Concept + short Narrative. Cite the eventual canonical location: `[Source: <filename>.pdf p.5]`
 6. Identify entities + concepts the source touches. For each:
    - If page exists: update it, add `related:` backlink, bump `updated:`
