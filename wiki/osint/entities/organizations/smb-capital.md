@@ -13,6 +13,10 @@ related:
   - sources/smb-capital-youtube-week-2026-03-14.md
   - sources/smb-capital-youtube-week-2026-02-28.md
   - sources/smb-capital-youtube-week-2026-02-14.md
+  - sources/smb-capital-youtube-week-2026-02-04.md
+  - concepts/day-trading-beginner-survival-lessons-smb.md
+  - concepts/commodity-parabolic-short-playbook-smb.md
+  - concepts/options-martingale-1dte-iron-condor-warning-smb.md
   - concepts/trading-account-blowup-red-flags-smb.md
   - concepts/day-trading-competence-levels-smb.md
   - concepts/wheel-options-strategy-smb.md
@@ -82,4 +86,4 @@ What prompted this page: user-directed **K79** YouTube channel ingest of [@smbca
 
 ### Ingest status
 
-Channel backfill **in progress** — see @meta/smb-capital-youtube-ingest-cadence.md. Batches 1–8 ingested (**24 videos**). **Prod brief:** `cemini-prod:/opt/cemini/briefs/2026-05-29_k79-smb-capital-youtube-synthesis-cemini.md` (rolling synthesis; update via `scripts/smb_youtube_ship.sh`).
+Channel backfill **in progress** — see @meta/smb-capital-youtube-ingest-cadence.md. Batches 1–9 ingested (**27 videos**). **Prod brief:** `cemini-prod:/opt/cemini/briefs/2026-05-29_k79-smb-capital-youtube-synthesis-cemini.md` (rolling synthesis; update via `scripts/smb_youtube_ship.sh`).

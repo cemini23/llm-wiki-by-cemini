@@ -7,6 +7,7 @@ related:
   - entities/organizations/smb-capital.md
   - meta/smb-capital-youtube-ingest-cadence.md
   - sources/smb-capital-youtube-week-2026-02-28.md
+  - sources/smb-capital-youtube-week-2026-02-04.md
   - concepts/smb-earnings-catalyst-playbook.md
   - concepts/smb-options-casino-edge-model.md
   - concepts/a-plus-trade-grading-smb.md
@@ -22,6 +23,7 @@ clusters: [trading-education, earnings, options, risk-management]
 - @entities/organizations/smb-capital.md — channel publisher
 - @meta/smb-capital-youtube-ingest-cadence.md — batch 8 checkpoint
 - @sources/smb-capital-youtube-week-2026-02-28.md — next batch (newer)
+- @sources/smb-capital-youtube-week-2026-02-04.md — prior batch (older)
 - @concepts/smb-earnings-catalyst-playbook.md — ep. 11 catalyst + ADV scanner (video 3)
 - @concepts/smb-options-casino-edge-model.md — Seth Freudberg casino edge (video 2)
 - @concepts/a-plus-trade-grading-smb.md — ep. 10 sliding-scale chart (video 1)

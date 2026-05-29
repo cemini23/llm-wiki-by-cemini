@@ -14,6 +14,8 @@ related:
   - concepts/pre-market-ai-research-briefing-smb.md
   - concepts/smb-earnings-catalyst-playbook.md
   - concepts/smb-elite-trader-summit-lessons.md
+  - sources/smb-capital-youtube-week-2026-02-04.md
+  - concepts/commodity-parabolic-short-playbook-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29
@@ -26,6 +28,8 @@ updated: 2026-05-29
 - @sources/smb-capital-youtube-week-2026-03-14.md — Trading Floor Podcast ep. (2026-03-14)
 - @concepts/smb-elite-trader-summit-lessons.md — Steenbarger isolation / team culture
 - @sources/smb-capital-youtube-week-2026-03-22.md — 8-Figure Table sizing culture
+- @sources/smb-capital-youtube-week-2026-02-04.md — gold/silver pod collaboration lesson (2026-02-07)
+- @concepts/commodity-parabolic-short-playbook-smb.md — commodity cycle team review
 - @concepts/a-plus-trade-grading-smb.md — A+/B grading and dynamic risk
 - @concepts/day-trading-execution-mistakes-smb.md — execution layer complements desk process
 

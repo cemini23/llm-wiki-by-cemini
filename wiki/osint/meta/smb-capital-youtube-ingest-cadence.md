@@ -13,6 +13,7 @@ related:
   - sources/smb-capital-youtube-week-2026-03-14.md
   - sources/smb-capital-youtube-week-2026-02-28.md
   - sources/smb-capital-youtube-week-2026-02-14.md
+  - sources/smb-capital-youtube-week-2026-02-04.md
 maturity: core
 created: 2026-05-29
 updated: 2026-05-29
@@ -28,6 +29,7 @@ updated: 2026-05-29
 - @sources/smb-capital-youtube-week-2026-03-14.md — batch 6
 - @sources/smb-capital-youtube-week-2026-02-28.md — batch 7
 - @sources/smb-capital-youtube-week-2026-02-14.md — batch 8
+- @sources/smb-capital-youtube-week-2026-02-04.md — batch 9
 
 ## Narrative
 
@@ -36,9 +38,9 @@ updated: 2026-05-29
 | **Channel** | [SMB Capital (@smbcapital)](https://www.youtube.com/@smbcapital) |
 | **Direction** | Newest-first; work **backward** |
 | **Tooling** | `yt-dlp` auto-captions → `.local/` → librarian transcript `.md` |
-| **Last batch** | 2026-02-14 → 2026-02-21 (3 videos) |
-| **Next batch** | uploads before 2026-02-14 |
-| **Total ingested** | **24 videos** |
+| **Last batch** | 2026-02-04 → 2026-02-11 (3 videos) |
+| **Next batch** | uploads before 2026-02-04 |
+| **Total ingested** | **27 videos** |
 
 ### Batch 1 — 2026-05-19 → 2026-05-23 ✓
 
@@ -93,9 +95,17 @@ updated: 2026-05-29
 | 2026-02-19 | `rpFL_mEFPSg` | Trade Options Like a Casino |
 | 2026-02-14 | `WXBxLHdYFi8` | What Prop Desks Don't Want You To Know (ep. 10) |
 
+### Batch 9 — 2026-02-04 → 2026-02-11 ✓
+
+| Date | ID | Title |
+|------|-----|-------|
+| 2026-02-11 | `_cQnMSU5yGk` | 7 Things I Wish I Knew Before Day Trading |
+| 2026-02-07 | `k--WaRVTSFM` | 6 Career-Making Lessons from Gold & Silver Surge |
+| 2026-02-04 | `9EFSF444b7Q` | The Killer Mistake to Avoid at All Costs |
+
 ### Resume pointer
 
-Next session: channel uploads **before 2026-02-14** — `_cQnMSU5yGk`, `k--WaRVTSFM`, `9EFSF444b7Q` (run `yt-dlp --flat-playlist` on @smbcapital to refresh).
+Next session: channel uploads **before 2026-02-04** (run `yt-dlp --flat-playlist` on @smbcapital to refresh).
 
 ### Distribution workflow (mandatory — do not lose desk knowledge)
 

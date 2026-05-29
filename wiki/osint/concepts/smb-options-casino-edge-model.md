@@ -9,6 +9,7 @@ related:
   - concepts/xsp-put-credit-spread-small-account-smb.md
   - concepts/options-capital-velocity-credit-spreads-smb.md
   - concepts/wheel-options-strategy-smb.md
+  - concepts/options-martingale-1dte-iron-condor-warning-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29
@@ -20,6 +21,7 @@ updated: 2026-05-29
 - @sources/smb-capital-youtube-week-2026-02-14.md — Trade Options Like a Casino (2026-02-19)
 - @concepts/xsp-put-credit-spread-small-account-smb.md — complementary small-account credit structure
 - @concepts/options-capital-velocity-credit-spreads-smb.md — exit/roll discipline on credit spreads
+- @concepts/options-martingale-1dte-iron-condor-warning-smb.md — anti-pattern contrast (Martingale 1DTE condors)
 
 ## Raw Concept
 

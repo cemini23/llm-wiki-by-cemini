@@ -9,6 +9,7 @@ related:
   - concepts/a-plus-trade-grading-smb.md
   - concepts/trader-breakthrough-signs-smb.md
   - concepts/trading-account-blowup-red-flags-smb.md
+  - concepts/day-trading-beginner-survival-lessons-smb.md
   - concepts/day-trading-execution-mistakes-smb.md
 maturity: draft
 created: 2026-05-29

@@ -14,7 +14,9 @@ related:
   - concepts/prop-desk-team-trading-collaboration.md
   - sources/smb-capital-youtube-week-2026-02-28.md
   - sources/smb-capital-youtube-week-2026-02-14.md
+  - sources/smb-capital-youtube-week-2026-02-04.md
   - concepts/day-trading-competence-levels-smb.md
+  - concepts/day-trading-beginner-survival-lessons-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29
@@ -27,6 +29,8 @@ updated: 2026-05-29
 - @sources/smb-capital-youtube-week-2026-03-14.md — Max Ganik summit quote (2026-03-19)
 - @sources/smb-capital-youtube-week-2026-02-28.md — Jackie daily-stop % ladder (2026-03-05 levels video)
 - @sources/smb-capital-youtube-week-2026-02-14.md — Garrett sliding-scale chart + full-expression (2026-02-14)
+- @sources/smb-capital-youtube-week-2026-02-04.md — A+ "between the eyes" parabolic principle (2026-02-07)
+- @concepts/commodity-parabolic-short-playbook-smb.md — gold/silver A+ patience detail
 - @concepts/day-trading-competence-levels-smb.md — level-3 quality filter detail
 
 ## Raw Concept

@@ -9,6 +9,8 @@ related:
   - concepts/tape-reading-order-flow-day-trading.md
   - concepts/smb-earnings-catalyst-playbook.md
   - concepts/a-plus-trade-grading-smb.md
+  - sources/smb-capital-youtube-week-2026-02-04.md
+  - concepts/commodity-parabolic-short-playbook-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29
@@ -20,6 +22,7 @@ updated: 2026-05-29
 - @sources/smb-capital-youtube-week-2026-03-22.md — Trading Floor Podcast ep. 13
 - @concepts/tape-reading-order-flow-day-trading.md — clean tape check
 - @concepts/smb-earnings-catalyst-playbook.md — narrative/theme overlap
+- @concepts/commodity-parabolic-short-playbook-smb.md — HTF/intraday alignment on parabolic shorts
 
 ## Raw Concept
 

@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-05-29] ingest | K79 SMB Capital YouTube batch 9 (3 videos)
+
+**Source:** beginner survival lessons, gold/silver parabolic playbook, Martingale 1DTE warning → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-02-04-transcripts.md`
+
+- **1 source** — `smb-capital-youtube-week-2026-02-04.md`
+- **3 concepts** — `day-trading-beginner-survival-lessons-smb`, `commodity-parabolic-short-playbook-smb`, `options-martingale-1dte-iron-condor-warning-smb`
+- **4 updated** — `a-plus-trade-grading-smb`, `smb-options-casino-edge-model`, `smb-breakout-checks-in-favor`, `prop-desk-team-trading-collaboration`
+- **Rolling brief** updated + shipped to prod
+
 ## [2026-05-29] ingest | K79 SMB Capital YouTube batch 8 (3 videos)
 
 **Source:** A+ sliding scale, options casino edge, extended-hours ADV catalyst scanner → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-02-14-transcripts.md`
