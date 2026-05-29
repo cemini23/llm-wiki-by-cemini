@@ -7,6 +7,7 @@ related:
   - entities/organizations/smb-capital.md
   - meta/smb-capital-youtube-ingest-cadence.md
   - sources/smb-capital-youtube-week-2026-03-14.md
+  - sources/smb-capital-youtube-week-2026-02-14.md
   - concepts/trading-account-blowup-red-flags-smb.md
   - concepts/day-trading-competence-levels-smb.md
   - concepts/wheel-options-strategy-smb.md
@@ -23,6 +24,7 @@ clusters: [trading-education, options, risk-management]
 - @entities/organizations/smb-capital.md — channel publisher
 - @meta/smb-capital-youtube-ingest-cadence.md — batch 7 checkpoint
 - @sources/smb-capital-youtube-week-2026-03-14.md — prior batch (newer)
+- @sources/smb-capital-youtube-week-2026-02-14.md — next batch (older)
 - @concepts/trading-account-blowup-red-flags-smb.md — video 1
 - @concepts/day-trading-competence-levels-smb.md — video 2
 - @concepts/wheel-options-strategy-smb.md — video 3
@@ -51,7 +53,7 @@ clusters: [trading-education, options, risk-management]
 
 ### Next batch
 
-Resume backward — check channel for uploads **before 2026-02-28**.
+Resume backward — check channel for uploads **before 2026-02-14** (batch 8 done).
 
 ## Snippets
 

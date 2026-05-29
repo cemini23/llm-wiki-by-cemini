@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-05-29] ingest | K79 SMB Capital YouTube batch 8 (3 videos)
+
+**Source:** A+ sliding scale, options casino edge, extended-hours ADV catalyst scanner → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-02-14-transcripts.md`
+
+- **1 source** — `smb-capital-youtube-week-2026-02-14.md`
+- **1 concept** — `smb-options-casino-edge-model`
+- **2 updated** — `a-plus-trade-grading-smb` (Garrett 80/40/20/5% chart), `smb-earnings-catalyst-playbook` (≥20% EH ADV gate)
+- **Rolling brief** updated + shipped to prod
+
 ## [2026-05-29] ingest | K79 SMB Capital YouTube batch 7 (3 videos)
 
 **Source:** 7 red flags, 5 competence levels, wheel options → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-02-28-transcripts.md`

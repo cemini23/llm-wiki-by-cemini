@@ -10,7 +10,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-29 — K79)
 
-- **K79 ingest (2026-05-29)** — SMB Capital YouTube batches 1–7 (**21 videos**). Batch 7: red flags, competence levels, wheel. Prod brief updated + shipped.
+- **K79 ingest (2026-05-29)** — SMB Capital YouTube batches 1–8 (**24 videos**). Batch 8: A+ sliding scale, options casino edge, EH ADV catalyst scanner. Prod brief updated + shipped.
 - **K80 ingest (2026-05-29)** — **Batch 1–2:** 11 PM/Kalshi bot videos. Prod brief shipped. **Complete (bot cluster).**
 - **K81 ingest (2026-05-29)** — **Batch 3:** 6 macro/allocator podcasts (McKeown, Burry, Rowan, Coatue, Compound, Meldrum). **1 source + 3 people + 1 company**; PLTR backlink. Transcripts on librarian.
 
