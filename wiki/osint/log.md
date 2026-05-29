@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-05-29] ingest | K81 — Macro/allocator YouTube batch (6 podcasts)
+
+**Source:** Kirk McKeown, Meldrum/Warsh, Compound 2026, Burry, Marc Rowan/Apollo, Coatue → `cemini-librarian:/opt/cemini-bulk/research/youtube-macro-podcasts-batch-2026-05-29-transcripts.md`
+
+- **1 source** — `youtube-macro-podcasts-batch-2026-05-29.md`
+- **3 people** — `michael-burry`, `kirk-mckeown`, `marc-rowan`
+- **1 company** — `coatue-management`
+- **1 updated** — `pltr` (Burry backlink)
+
+## [2026-05-29] distribute | K80 YouTube PM/Kalshi — prod brief + wiki push
+
+- **Brief** — `briefs/2026-05-29_k80-youtube-pm-kalshi-bots-synthesis-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit WARN 88/100)
+- **Git** — `d72f77a` K80 wiki batches 1–2; librarian sync
+
 ## [2026-05-29] ingest | K80 — Kalshi YouTube batch 2 (7 URLs, 6 transcripts)
 
 **Source:** YouTube — ProcessOverProfit Night Shark OCR, Part Time Larry API tutorial, Prediction Engineer Claude bot, MomentumOdds signals, Beast Sports line divergence → `cemini-librarian:/opt/cemini-bulk/research/youtube-kalshi-bots-batch-2026-05-29-transcripts.md`

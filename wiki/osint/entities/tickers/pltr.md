@@ -6,16 +6,20 @@ category: high_beta
 ticker: PLTR
 related:
   - entities/ticker-watchlist.md
+  - entities/people/michael-burry.md
+  - sources/youtube-macro-podcasts-batch-2026-05-29.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-23
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-05-29
 ---
 
 ## Relations
 
 - @entities/ticker-watchlist.md — parent watchlist page
+- @entities/people/michael-burry.md — K81 podcast: OTM put structure + 13F distortion
+- @sources/youtube-macro-podcasts-batch-2026-05-29.md — Burry interview source
 
 ## Raw Concept
 

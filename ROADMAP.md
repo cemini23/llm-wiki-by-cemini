@@ -11,7 +11,8 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 ## Current state (2026-05-29 — K79)
 
 - **K79 ingest (2026-05-29)** — SMB Capital YouTube batches 1–6 (**paused**; resume playlist #19). Prod brief shipped.
-- **K80 ingest (2026-05-29)** — **Batch 1:** 4 Polymarket YouTube videos. **Batch 2:** 7 Kalshi/sports-bot URLs (6 transcripts + 1 age-gated). **2 sources + 1 concept + 4 tools + 1 person**; updates copy/weather/updown/kalshi/sports concepts. Transcripts on librarian. Wiki-only (no prod brief yet).
+- **K80 ingest (2026-05-29)** — **Batch 1–2:** 11 PM/Kalshi bot videos. Prod brief shipped. **Complete (bot cluster).**
+- **K81 ingest (2026-05-29)** — **Batch 3:** 6 macro/allocator podcasts (McKeown, Burry, Rowan, Coatue, Compound, Meldrum). **1 source + 3 people + 1 company**; PLTR backlink. Transcripts on librarian.
 
 ## Current state (2026-05-28 — K76)
 

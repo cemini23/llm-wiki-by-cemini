@@ -1149,6 +1149,7 @@ External firms whose research/track-record is ingested into the wiki.
 - [Pershing Square — Bill Ackman](entities/companies/pershing-square.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Concentrated 11-name book; new MSFT 15% position; Alphabet exited. — company, hedge-fund, activist, 13f, k48
 - [Gates Foundation Trust](entities/companies/gates-foundation-trust.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Endowment book: BRK.B 26%, WM 20%, railroads/industrials; near-static quarter. — company, endowment, 13f, k48
 - [Tiger Global Management — Chase Coleman](entities/companies/tiger-global-management.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Growth/tech book, 43 names; GOOGL top holding; semis added hard; MSFT −54%. — company, hedge-fund, growth-investing, 13f, k48
+- [Coatue Management](entities/companies/coatue-management.md) — `[DRAFT 2026-05-29]` K81 Sourcery podcast. ~$70B tech HF; Melvin/GameStop lesson; AI-native ad-tech; retail product. — company, hedge-fund, retail-flow, k81
 - [Greenlight Capital — David Einhorn](entities/companies/greenlight-capital.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Deep-value long book, 45 names; Green Brick 19% anchor; PTON +4004%. — company, hedge-fund, value-investing, 13f, k48
 - [TCI Fund Management — Chris Hohn](entities/companies/tci-fund-management.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Most concentrated — 10 names, top-4 ≈ 77%; GE Aero 30%; quality compounders. — company, hedge-fund, concentrated, 13f, k48
 - [Appaloosa Management — David Tepper](entities/companies/appaloosa-management.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. AMZN +98% top position; China-tech cut hard (BABA/PDD/JD/KWEB); VST +114%. — company, hedge-fund, macro, china-tech, 13f, k48
@@ -1203,6 +1204,9 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 #### K79 people additions (2026-05-29)
 
 - [Jack Schwager — Market Wizards author](entities/people/jack-schwager.md) — `[DRAFT 2026-05-29]` K79 SMB podcast. *Market Wizards: The Next Generation* (2026-06-09); Kenny Sharkness featured. — person, trading-literature, k79
+- [Kirk McKeown — ex-Point72 prop research](entities/people/kirk-mckeown.md) — `[DRAFT 2026-05-29]` K81 Odds on Open. Alpha as differentiated view; one-degree story change at Point72. — person, prop-research, k81
+- [Marc Rowan — Apollo CEO](entities/people/marc-rowan.md) — `[DRAFT 2026-05-29]` K81 Norges Bank podcast. Alt-credit disintermediation tailwind; Apollo AUM scale. — person, private-credit, k81
+- [Michael Burry — Big Short investor](entities/people/michael-burry.md) — `[DRAFT 2026-05-29]` K81 Michael Lewis podcast. PLTR/NVDA OTM puts; 13F reporting distortion. — person, contrarian, k81
 
 ## Concepts
 
@@ -1323,6 +1327,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 
 - [YouTube — Polymarket bots batch (May 2026, 4 videos)](sources/youtube-polymarket-bots-batch-2026-05-29.md) — `[VALIDATED 2026-05-29]` PolySniper promo, Odds Jam 30d copy experiment, Bullpen CLI build, Claude weather ensemble. — source, youtube, polymarket, k80
 - [YouTube — Kalshi bots batch (May 2026, 7 videos)](sources/youtube-kalshi-bots-batch-2026-05-29.md) — `[VALIDATED 2026-05-29]` Night Shark OCR 15-min crypto, Part Time Larry API Colab, Claude slippage bot, MomentumOdds webhooks, Beast Sports line divergence. — source, youtube, kalshi, k80
+- [YouTube — Macro & allocator podcasts batch (May 2026, 6 videos)](sources/youtube-macro-podcasts-batch-2026-05-29.md) — `[VALIDATED 2026-05-29]` Kirk McKeown/Point72 alpha, Burry PLTR+NVDA puts, Marc Rowan Apollo, Coatue retail+AI, Compound 2026, Meldrum/Warsh. — source, youtube, macro, k81
 - [Bullpen CLI — Polymarket programmatic trading CLI](entities/tools/bullpen-cli.md) — `[DRAFT 2026-05-29]` K80 Steal-from CONDITIONAL-GO; Claude Code copy bot. — tool, polymarket, cli, k80
 - [PolySniper — Polymarket up/down sniper (promotional)](entities/tools/polysniper.md) — `[DRAFT 2026-05-29]` K80 NO-GO closed-source 5-min BTC promo. — tool, polymarket, k80
 - [Odds Jam — Prediction Insiders (Polymarket copy alerts)](entities/tools/odds-jam-prediction-insiders.md) — `[DRAFT 2026-05-29]` K80 30-day $1K experiment reference. — tool, copy-trading, k80
