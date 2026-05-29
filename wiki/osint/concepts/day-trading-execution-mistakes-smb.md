@@ -11,6 +11,8 @@ related:
   - concepts/trader-breakthrough-signs-smb.md
   - concepts/trading-account-blowup-red-flags-smb.md
   - sources/smb-capital-youtube-week-2026-02-28.md
+  - sources/smb-capital-youtube-week-2026-01-24.md
+  - concepts/gap-trading-mistakes-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29
@@ -20,6 +22,8 @@ updated: 2026-05-29
 
 - @entities/organizations/smb-capital.md — Jeff Holden / SMB trader development
 - @sources/smb-capital-youtube-week-2026-05-05.md — primary source (2026-05-12 video)
+- @sources/smb-capital-youtube-week-2026-01-24.md — gap mistakes sibling framework (2026-01-28)
+- @concepts/gap-trading-mistakes-smb.md — ten gap errors + five lap patterns
 - @concepts/trading-account-blowup-red-flags-smb.md — seven-flag blow-up warning system (batch 7)
 - @sources/smb-capital-youtube-week-2026-02-28.md — batch 7 source
 - @concepts/tape-reading-order-flow-day-trading.md — mistake #3 requires tape confirmation

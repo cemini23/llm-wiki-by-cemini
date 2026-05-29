@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-05-29] ingest | K79 SMB Capital YouTube batch 10 (3 videos)
+
+**Source:** hidden RS, gap mistakes, drawdown cure → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-01-24-transcripts.md`
+
+- **1 source** — `smb-capital-youtube-week-2026-01-24.md`
+- **2 concepts** — `gap-trading-mistakes-smb`, `trading-drawdown-recovery-smb`
+- **3 updated** — `smb-breakout-checks-in-favor` (hidden RS detail), `day-trading-execution-mistakes-smb`, `commodity-parabolic-short-playbook-smb`
+- **Rolling brief** updated + shipped to prod
+
 ## [2026-05-29] ingest | K79 SMB Capital YouTube batch 9 (3 videos)
 
 **Source:** beginner survival lessons, gold/silver parabolic playbook, Martingale 1DTE warning → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-02-04-transcripts.md`

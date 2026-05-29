@@ -8,6 +8,7 @@ related:
   - sources/smb-capital-youtube-week-2026-02-04.md
   - concepts/day-trading-competence-levels-smb.md
   - concepts/trading-account-blowup-red-flags-smb.md
+  - concepts/trading-drawdown-recovery-smb.md
   - concepts/day-trading-execution-mistakes-smb.md
   - concepts/prop-desk-team-trading-collaboration.md
 maturity: draft

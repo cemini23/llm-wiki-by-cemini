@@ -10,7 +10,8 @@ related:
   - concepts/smb-earnings-catalyst-playbook.md
   - concepts/a-plus-trade-grading-smb.md
   - sources/smb-capital-youtube-week-2026-02-04.md
-  - concepts/commodity-parabolic-short-playbook-smb.md
+  - sources/smb-capital-youtube-week-2026-01-24.md
+  - concepts/gap-trading-mistakes-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29
@@ -20,6 +21,7 @@ updated: 2026-05-29
 
 - @entities/organizations/smb-capital.md — SMB breakout playbook
 - @sources/smb-capital-youtube-week-2026-03-22.md — Trading Floor Podcast ep. 13
+- @sources/smb-capital-youtube-week-2026-01-24.md — ep. 9 hidden RS deep dive (2026-01-31)
 - @concepts/tape-reading-order-flow-day-trading.md — clean tape check
 - @concepts/smb-earnings-catalyst-playbook.md — narrative/theme overlap
 - @concepts/commodity-parabolic-short-playbook-smb.md — HTF/intraday alignment on parabolic shorts
@@ -42,7 +44,21 @@ What prompted this page: SMB *The 7 Trading Signals You Can't Trade Without* (20
 | 4 | **Narrative** | Theme, short interest, fund growth, macro story — reason for re-rating |
 | 5 | **Volume moment** | Volume surge at breakout (distinct from background liquidity) |
 | 6 | **Clean tape** | Order flow confirms (lifts, no hidden seller) — ties to tape-reading concept |
-| 7 | **Hidden relative strength** | Name strong vs market/sector when tape looks mixed |
+| 7 | **Hidden relative strength** | Name strong vs market/sector when tape looks mixed — see below |
+
+### Hidden relative strength (check #7 detail) [TENTATIVE]
+
+From ep. 9 (2026-01-31) — **before** the obvious +10% day; institutional TWAP footprints on weak market days.
+
+**When to look:** market down days — "what's green?" or "what's only −0.25% when Q's −2–3%?"
+
+**Qualitative tape:** stock holds bids when SPY/Q's tick down; takes out morning high when indices don't; collects resilience data points pre-breakout.
+
+**Quant / chart:** custom relativity line (stock vs Q's/SPY/sector ETF) breaking out **while price still consolidates** — SNDK example: big red market day, name barely budged at 10-day → relativity line breakout preceded pink-line break.
+
+**Usage:** watch-list promotion alert, not necessarily same-day entry; may anticipate pink-line break (validated exception to wait-for-break rule). Pair with theme/narrative (Samsung pricing catalyst on SNDK).
+
+**Anti-pattern:** screening only for day's strongest gainer — "cat's out of the bag."
 
 ### Three question buckets
 
@@ -60,3 +76,5 @@ What prompted this page: SMB *The 7 Trading Signals You Can't Trade Without* (20
 > "Checks in favor are what we need to see in a trade to be able to quiet the noise, put our shoulders back, and put on risk with conviction." [Source: SMB Capital YouTube qqGXLNwcUk0, 2026-03-22]
 
 > "A+ pink line… higher time frame squeeze… blue sky… narrative… volume moment, clean tape, and hidden relative strength. That's seven." [Source: SMB Capital YouTube qqGXLNwcUk0, 2026-03-22]
+
+> "If you're waiting for the move to be obvious, you're 100% late." [Source: SMB Capital YouTube Eh6DUSgApIc, 2026-01-31]

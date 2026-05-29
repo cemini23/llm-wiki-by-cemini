@@ -6,6 +6,8 @@ keywords: [gold-silver, overextension, backside-pattern, process-over-pnl, commo
 related:
   - entities/organizations/smb-capital.md
   - sources/smb-capital-youtube-week-2026-02-04.md
+  - sources/smb-capital-youtube-week-2026-01-24.md
+  - concepts/trading-drawdown-recovery-smb.md
   - concepts/a-plus-trade-grading-smb.md
   - concepts/smb-breakout-checks-in-favor.md
   - concepts/prop-desk-team-trading-collaboration.md

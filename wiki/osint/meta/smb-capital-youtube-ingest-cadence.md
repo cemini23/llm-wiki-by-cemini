@@ -14,6 +14,7 @@ related:
   - sources/smb-capital-youtube-week-2026-02-28.md
   - sources/smb-capital-youtube-week-2026-02-14.md
   - sources/smb-capital-youtube-week-2026-02-04.md
+  - sources/smb-capital-youtube-week-2026-01-24.md
 maturity: core
 created: 2026-05-29
 updated: 2026-05-29
@@ -30,6 +31,7 @@ updated: 2026-05-29
 - @sources/smb-capital-youtube-week-2026-02-28.md — batch 7
 - @sources/smb-capital-youtube-week-2026-02-14.md — batch 8
 - @sources/smb-capital-youtube-week-2026-02-04.md — batch 9
+- @sources/smb-capital-youtube-week-2026-01-24.md — batch 10
 
 ## Narrative
 
@@ -38,9 +40,9 @@ updated: 2026-05-29
 | **Channel** | [SMB Capital (@smbcapital)](https://www.youtube.com/@smbcapital) |
 | **Direction** | Newest-first; work **backward** |
 | **Tooling** | `yt-dlp` auto-captions → `.local/` → librarian transcript `.md` |
-| **Last batch** | 2026-02-04 → 2026-02-11 (3 videos) |
-| **Next batch** | uploads before 2026-02-04 |
-| **Total ingested** | **27 videos** |
+| **Last batch** | 2026-01-24 → 2026-01-31 (3 videos) |
+| **Next batch** | playlist #31–33 (`YLrRxUUHl44`, `VREi7yTvz30`, `q5TjgmYiYQU`) |
+| **Total ingested** | **30 videos** |
 
 ### Batch 1 — 2026-05-19 → 2026-05-23 ✓
 
@@ -103,9 +105,17 @@ updated: 2026-05-29
 | 2026-02-07 | `k--WaRVTSFM` | 6 Career-Making Lessons from Gold & Silver Surge |
 | 2026-02-04 | `9EFSF444b7Q` | The Killer Mistake to Avoid at All Costs |
 
+### Batch 10 — 2026-01-24 → 2026-01-31 ✓
+
+| Date | ID | Title |
+|------|-----|-------|
+| 2026-01-31 | `Eh6DUSgApIc` | Secret Signal — hidden relative strength (ep. 9) |
+| 2026-01-28 | `Cz6YVuaRo38` | Top 10 Gap Trading Mistakes |
+| 2026-01-24 | `iLj4_O9phlQ` | 8 drawdown lessons and the cure |
+
 ### Resume pointer
 
-Next session: channel uploads **before 2026-02-04** (run `yt-dlp --flat-playlist` on @smbcapital to refresh).
+Next session: `YLrRxUUHl44`, `VREi7yTvz30`, `q5TjgmYiYQU` (playlist indices 31–33).
 
 ### Distribution workflow (mandatory — do not lose desk knowledge)
 

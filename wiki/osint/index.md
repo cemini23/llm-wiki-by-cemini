@@ -1308,6 +1308,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [SMB Capital YouTube — week of 2026-02-28 (3 videos)](sources/smb-capital-youtube-week-2026-02-28.md) — `[VALIDATED 2026-05-29]` K79 batch 7. Seven blow-up red flags, five competence levels, wheel options. — source, youtube, smb-capital, k79
 - [SMB Capital YouTube — week of 2026-02-14 (3 videos)](sources/smb-capital-youtube-week-2026-02-14.md) — `[VALIDATED 2026-05-29]` K79 batch 8. A+ sliding scale, options casino edge, extended-hours ADV catalyst scanner. — source, youtube, smb-capital, k79
 - [SMB Capital YouTube — week of 2026-02-04 (3 videos)](sources/smb-capital-youtube-week-2026-02-04.md) — `[VALIDATED 2026-05-29]` K79 batch 9. Beginner survival lessons, gold/silver parabolic shorts, Martingale 1DTE warning. — source, youtube, smb-capital, k79
+- [SMB Capital YouTube — week of 2026-01-24 (3 videos)](sources/smb-capital-youtube-week-2026-01-24.md) — `[VALIDATED 2026-05-29]` K79 batch 10. Hidden RS, gap mistakes, drawdown cure. — source, youtube, smb-capital, k79
 - [SMB elite trader summit lessons (eight conference takeaways)](concepts/smb-elite-trader-summit-lessons.md) — `[DRAFT 2026-05-29]` K79. Adaptability, Max Ganik selectivity, Lance report card. — concept, trader-development, k79
 - [Trader archetypes — finisher, runner, player (SMB)](concepts/trader-archetypes-finisher-runner-player-smb.md) — `[DRAFT 2026-05-29]` K79. Jeff Holden playbook alignment. — concept, trader-development, k79
 - [Options capital velocity — early close and roll (SMB)](concepts/options-capital-velocity-credit-spreads-smb.md) — `[DRAFT 2026-05-29]` K79. 76% rule, put spread recycle. — concept, options, k79
@@ -1329,9 +1330,11 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Day trading beginner survival lessons (SMB seven rules)](concepts/day-trading-beginner-survival-lessons-smb.md) — `[DRAFT 2026-05-29]` K79 batch 9. Paper-trading trap, tuition budget, community. — concept, trader-development, k79
 - [Commodity parabolic short playbook (SMB gold/silver)](concepts/commodity-parabolic-short-playbook-smb.md) — `[DRAFT 2026-05-29]` K79 batch 9. Overextension + backside patterns; process over P&L. — concept, commodities, k79
 - [Options Martingale 1DTE iron condor warning (SMB)](concepts/options-martingale-1dte-iron-condor-warning-smb.md) — `[DRAFT 2026-05-29]` K79 batch 9. Catastrophic tail-risk anti-pattern. — concept, options, k79
+- [Gap trading mistakes and lap patterns (SMB)](concepts/gap-trading-mistakes-smb.md) — `[DRAFT 2026-05-29]` K79 batch 10. Five gap errors + five lap trades. — concept, gap-trading, k79
+- [Trading drawdown recovery (SMB eight lessons)](concepts/trading-drawdown-recovery-smb.md) — `[DRAFT 2026-05-29]` K79 batch 10. Consistency cure, earn-your-risk. — concept, risk-management, k79
 - [Prop desk team trading and shared research infrastructure](concepts/prop-desk-team-trading-collaboration.md) — `[DRAFT 2026-05-29]` K79 batch 2. Theme tracker, PM volume gate, playbook catalog. — concept, prop-trading, k79
 - [Broken wing butterfly options](concepts/broken-wing-butterfly-options.md) — `[DRAFT 2026-05-29]` K79. SPX directional + non-directional BWB; backtest-first discipline. — concept, options, spx, k79
-- [SMB Capital YouTube ingest cadence](meta/smb-capital-youtube-ingest-cadence.md) — `[CORE 2026-05-29]` K79 channel backfill; **27 videos** ingested; next before 2026-02-04. — meta, youtube, cadence, k79
+- [SMB Capital YouTube ingest cadence](meta/smb-capital-youtube-ingest-cadence.md) — `[CORE 2026-05-29]` K79 channel backfill; **30 videos** ingested; next playlist #31–33. — meta, youtube, cadence, k79
 
 #### K80 ingest (2026-05-29 — Polymarket YouTube batch, 4 videos)
 

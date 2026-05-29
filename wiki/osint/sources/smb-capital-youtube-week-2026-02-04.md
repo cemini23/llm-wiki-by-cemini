@@ -7,6 +7,7 @@ related:
   - entities/organizations/smb-capital.md
   - meta/smb-capital-youtube-ingest-cadence.md
   - sources/smb-capital-youtube-week-2026-02-14.md
+  - sources/smb-capital-youtube-week-2026-01-24.md
   - concepts/day-trading-beginner-survival-lessons-smb.md
   - concepts/commodity-parabolic-short-playbook-smb.md
   - concepts/options-martingale-1dte-iron-condor-warning-smb.md
@@ -22,6 +23,7 @@ clusters: [trading-education, options, risk-management, commodities]
 - @entities/organizations/smb-capital.md — channel publisher
 - @meta/smb-capital-youtube-ingest-cadence.md — batch 9 checkpoint
 - @sources/smb-capital-youtube-week-2026-02-14.md — next batch (newer)
+- @sources/smb-capital-youtube-week-2026-01-24.md — prior batch (older)
 - @concepts/day-trading-beginner-survival-lessons-smb.md — video 1
 - @concepts/commodity-parabolic-short-playbook-smb.md — video 2
 - @concepts/options-martingale-1dte-iron-condor-warning-smb.md — video 3
