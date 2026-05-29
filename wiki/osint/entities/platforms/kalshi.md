@@ -47,9 +47,12 @@ related:
   - sources/kalshi1-3-29.md
   - sources/trading-3-4-5.md
   - concepts/parlay-market-making.md
+  - sources/youtube-kalshi-bots-batch-2026-05-29.md
+  - concepts/kalshi-ui-automation-bot-pattern.md
+  - entities/tools/momentum-odds.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 ## Relations

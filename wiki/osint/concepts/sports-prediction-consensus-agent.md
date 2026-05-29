@@ -12,9 +12,12 @@ related:
   - entities/tools/centpro.md
   - entities/tools/firecrawl.md
   - entities/platforms/polymarket.md
+  - sources/youtube-kalshi-bots-batch-2026-05-29.md
+  - entities/tools/momentum-odds.md
+  - entities/platforms/kalshi.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-29
 clusters: [polymarket, agents, sports]
 ---
 
@@ -27,6 +30,9 @@ clusters: [polymarket, agents, sports]
 - @entities/people/stacyonchain.md — author
 - @entities/tools/centpro.md — the commercial productized form the author sells; the recipe in this concept is the open architecture
 - @entities/tools/firecrawl.md — the scraping layer used to feed the agent
+- @sources/youtube-kalshi-bots-batch-2026-05-29.md — K80 Beast Sports + MomentumOdds videos
+- @entities/tools/momentum-odds.md — commercial 60+ sportsbook signal feed (webhook executor pattern)
+- @entities/platforms/kalshi.md — Kalshi sports totals/moneylines as execution venue
 
 ## Raw Concept
 
@@ -155,6 +161,17 @@ Current Cemini Polymarket coverage is heavy on weather + UpDown + arb (3-4 conce
 **Estimated build effort** (rough): low — most of the components already exist in the Cemini stack; the work is source-list curation + per-sport tier-weighting + sport-specific scraping rules + the sports-market discovery layer on top of Polymarket Gamma API.
 
 **Caveat on the @stacyonchain promotion**: the author promotes `centpro.bot` (15/50 spots, $49/mo subscription, closed-source Windows binary) as the productized form. **CentPRO is Rejected** (K55 tool eval URL 4 — see `@entities/tools/centpro.md`). The recipe in this concept is the open architecture; the bot for sale is the gated implementation. The recipe is useful regardless.
+
+### K80 — sportsbook line vs prediction-market line [TENTATIVE]
+
+Two K80 YouTube videos describe a **simpler cousin** of full multi-source consensus:
+
+| Pattern | Source | Mechanism |
+|---------|--------|-----------|
+| **Totals divergence** | Beast Sports Picks (`iF6ZWEbkxzM`) | Scraper compares Kalshi/Polymarket O/U line (e.g. 202) vs sportsbook consensus (e.g. 217) — buy PM line when implied win rate high vs book anchor |
+| **Sportsbook correlation feed** | MomentumOdds + Odds channel (`qPRY5ws3h60`) | SaaS aggregates 60+ books → webhook → local Kalshi bot |
+
+Architecturally this is **Stage 3 collapsed**: an external vendor already computed consensus; the bot only maps game → Kalshi ticker + sizes the bet. Same entry gates (edge threshold, exposure cap) apply. Cross-venue: Kalshi and Polymarket both listed for NBA/college totals in Beast Sports demo.
 
 ## Snippets
 

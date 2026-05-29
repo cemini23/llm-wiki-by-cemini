@@ -1,5 +1,23 @@
 # Wiki Log
 
+## [2026-05-29] ingest | K80 — Kalshi YouTube batch 2 (7 URLs, 6 transcripts)
+
+**Source:** YouTube — ProcessOverProfit Night Shark OCR, Part Time Larry API tutorial, Prediction Engineer Claude bot, MomentumOdds signals, Beast Sports line divergence → `cemini-librarian:/opt/cemini-bulk/research/youtube-kalshi-bots-batch-2026-05-29-transcripts.md`
+
+- **1 source** — `youtube-kalshi-bots-batch-2026-05-29.md` (6 deep-read + `xp1Lpe3TTMQ` age-gated unread)
+- **1 concept** — `kalshi-ui-automation-bot-pattern` (Night Shark OCR NO-GO vs API)
+- **1 tool** — `momentum-odds`
+- **5 updated** — `kalshi-api-reference`, `sports-prediction-consensus-agent`, `polymarket-copy-trading-strategy`, `polymarket-updown-bot-taxonomy`, `kalshi` entity + sibling Polymarket batch backlink
+
+## [2026-05-29] ingest | K80 — Polymarket YouTube batch (4 videos)
+
+**Source:** YouTube — PolySniper promo, Financial Wolf/Odds Jam, Sharbel/Bullpen CLI, Nates Tokens weather bot → `cemini-librarian:/opt/cemini-bulk/research/youtube-polymarket-bots-batch-2026-05-29-transcripts.md`
+
+- **1 source** — `youtube-polymarket-bots-batch-2026-05-29.md`
+- **3 tools** — `bullpen-cli`, `polysniper`, `odds-jam-prediction-insiders`
+- **1 person** — `alex-monahan`
+- **3 updated** — `polymarket-copy-trading-strategy`, `polymarket-weather-trading-strategy`, `polymarket-updown-bot-taxonomy`
+
 ## [2026-05-29] distribute | K79 SMB Capital YouTube — rolling prod brief + ship workflow
 
 - **Brief** — `briefs/2026-05-29_k79-smb-capital-youtube-synthesis-cemini.md` → `cemini-prod:/opt/cemini/briefs/`

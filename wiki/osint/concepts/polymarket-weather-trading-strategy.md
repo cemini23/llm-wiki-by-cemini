@@ -41,9 +41,10 @@ related:
   - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
   - concepts/polymarket-copy-trading-strategy.md
+  - sources/youtube-polymarket-bots-batch-2026-05-29.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -82,6 +83,7 @@ updated: 2026-05-27
 - @entities/tools/parity-polymarket-analytics.md — analytics platform fronting the K55 Top-7 trader profiles
 - @sources/alterego-eth-five-weather-methodologies-2026-05-27.md — K70 five-type bot survey (>30 via Parity)
 - @concepts/polymarket-weather-bot-methodology-taxonomy.md — K70 strategy-layer taxonomy (forecast / arb / base-rate / copy / AI-agent)
+- @sources/youtube-polymarket-bots-batch-2026-05-29.md — K80 Nates Tokens Claude ensemble bot
 
 ## Raw Concept
 
@@ -144,6 +146,16 @@ Independent promoter narrative reinforcing resolution discipline:
 - **Resolution:** Weather Underground station history (whole °F, station-specific URL, post-finalization revisions excluded) — aligns with @AlterEgo_eth station-coordinate lesson.
 - **Orchestration pattern:** parallel agents (market rules, Open-Meteo, NWS, NOAA baseline, Polymarket odds) — analogous to conductor multi-tool fan-out, not new alpha by itself.
 - **Reference implementation cited:** `github.com/weather_scanner` [NEEDS VERIFICATION 2026-05-22 — repo health/license not audited in K57].
+
+### K80 YouTube — Nates Tokens Claude ensemble bot [TENTATIVE]
+
+@sources/youtube-polymarket-bots-batch-2026-05-29.md (Nates Tokens, 2026-05-26):
+
+- **Build path:** Claude Code from competitor TikTok video (Optical) — no hand-written code; skills doc export for replay.
+- **Forecast:** **173-member ensemble** mean temperature; per-city **bias correction** from historical actual vs ensemble (NYC ~1–1.5°F; Miami coastal ~3–4% cooler — do not reuse NYC bias).
+- **Side selection:** prefer **NO** on bins — only one YES wins; NOs profit if ensemble overshoots by even 0.25–0.5°F; requires **≥3% buffer** from ensemble point estimate.
+- **Signal hygiene:** explicit **skip** days (wide range, split ensemble, bad bias); ~**58.8% win rate** / 17 signals cited — bumpy PnL, not set-and-forget.
+- **Contrast with paid Optical signals:** creator reports ~1–2 triggers/month with poor UX; self-built bot valued for explainability.
 
 ### Cemini posture
 

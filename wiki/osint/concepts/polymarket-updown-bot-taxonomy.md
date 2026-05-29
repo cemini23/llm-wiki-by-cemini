@@ -20,9 +20,13 @@ related:
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
   - concepts/polymarket-updown-15min-execution-latency.md
   - sources/trading-posts-compilation-38-2026-05-26.md
+  - sources/youtube-polymarket-bots-batch-2026-05-29.md
+  - entities/tools/polysniper.md
+  - concepts/kalshi-ui-automation-bot-pattern.md
+  - sources/youtube-kalshi-bots-batch-2026-05-29.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-24
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -38,6 +42,10 @@ updated: 2026-05-24
 - @concepts/polymarket-three-quadrant-blacklist-microtrend.md — K57: Gustafsson 5-min BTC refinements (blacklist + micro-trend)
 - @concepts/polymarket-btc-already-position-gate.md — K62: direction demoted; position-already first branch
 - @concepts/polymarket-sports-microstructure-bot-taxonomy.md — K69 sports 7-type taxonomy (same author, different market class)
+- @sources/youtube-polymarket-bots-batch-2026-05-29.md — K80 PolySniper 5-min BTC promo
+- @entities/tools/polysniper.md — closed-source directional sniper (NO-GO)
+- @concepts/kalshi-ui-automation-bot-pattern.md — Kalshi 15-min crypto OCR bot (ProcessOverProfit); same market class, UI path
+- @sources/youtube-kalshi-bots-batch-2026-05-29.md — K80 source batch
 
 ## Raw Concept
 

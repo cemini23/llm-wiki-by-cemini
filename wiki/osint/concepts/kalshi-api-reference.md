@@ -14,9 +14,11 @@ related:
   - entities/tools/suislanchez-polymarket-kalshi-weather-bot.md
   - concepts/cemini-backtest-report-kit.md
   - meta/kalshi-lp-backtest-cadence.md
+  - sources/youtube-kalshi-bots-batch-2026-05-29.md
+  - concepts/kalshi-ui-automation-bot-pattern.md
 maturity: validated
 created: 2026-05-05
-updated: 2026-05-24
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -31,6 +33,8 @@ updated: 2026-05-24
 - @entities/tools/suislanchez-polymarket-kalshi-weather-bot.md — K60 reference impl for KXHIGH series auto-discovery on weather markets
 - @concepts/cemini-backtest-report-kit.md — laptop pilot uses `series/.../markets/.../candlesticks` + trades fallback
 - @meta/kalshi-lp-backtest-cadence.md — quarterly sweep ritual
+- @sources/youtube-kalshi-bots-batch-2026-05-29.md — K80 Part Time Larry Colab tutorial (2024) + Claude Code slippage-preview bot (2026)
+- @concepts/kalshi-ui-automation-bot-pattern.md — anti-pattern contrast (Night Shark OCR vs API)
 
 ## Raw Concept
 
@@ -60,6 +64,13 @@ The snapshot below is ~175 endpoints across REST + FIX + WebSocket surfaces. Mos
 ### SDK posture
 
 Kalshi publishes official Python + TypeScript SDKs (~30 endpoints each in the index). Cemini does NOT use the official Python SDK — per [@entities/tools/pykalshi.md](../entities/tools/pykalshi.md) (K30 Adopt-tier), the third-party `pykalshi` client outperforms the official SDK on latency (relevant for the arb path) while preserving the same auth + signing semantics. The official SDKs are still the canonical reference for **method names** when reading endpoint detail — pykalshi mirrors the upstream method surface.
+
+### Retail onboarding tutorials [TENTATIVE]
+
+K80 YouTube ingest surfaces two **API-first** retail paths worth contrasting with @concepts/kalshi-ui-automation-bot-pattern.md:
+
+1. **Part Time Larry (2024-08)** — Colab walkthrough: `GET /events`, market discovery, auth + portfolio, cross-venue semantic matching vs Polymarket. Good pedagogical map of public vs authenticated surfaces.
+2. **The Prediction Engineer (2026-03)** — Claude Code generates a CLI bot: resolve ticker/URL → **order preview** (best price, average fill, slippage %) → confirm → market buy; **paper mode** first. Directly maps to `Get Market Orderbook` + `Create Order (V2)` pre-trade checks Cemini should always run on illiquid books.
 
 ### Concepts Cemini should track from this index
 

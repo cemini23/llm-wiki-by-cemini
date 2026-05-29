@@ -10,7 +10,8 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-29 — K79)
 
-- **K79 ingest (2026-05-29)** — SMB Capital YouTube channel backfill **batches 1–6** (18 videos, newest-first through 2026-03-14). **OSINT: 6 source pages + 14 concepts + 3 entities + 1 meta cadence**. **Prod brief:** `2026-05-29_k79-smb-capital-youtube-synthesis-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (rolling desk-validated synthesis; ship via `scripts/smb_youtube_ship.sh`). **Raw transcripts** on librarian. **Resume:** playlist #19. Channel backfill continues user-gated.
+- **K79 ingest (2026-05-29)** — SMB Capital YouTube batches 1–6 (**paused**; resume playlist #19). Prod brief shipped.
+- **K80 ingest (2026-05-29)** — **Batch 1:** 4 Polymarket YouTube videos. **Batch 2:** 7 Kalshi/sports-bot URLs (6 transcripts + 1 age-gated). **2 sources + 1 concept + 4 tools + 1 person**; updates copy/weather/updown/kalshi/sports concepts. Transcripts on librarian. Wiki-only (no prod brief yet).
 
 ## Current state (2026-05-28 — K76)
 

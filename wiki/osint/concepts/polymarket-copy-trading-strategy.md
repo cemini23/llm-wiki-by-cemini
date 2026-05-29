@@ -33,10 +33,13 @@ related:
   - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
   - concepts/polymarket-weather-trading-strategy.md
-
-maturity: draft
+  - sources/youtube-polymarket-bots-batch-2026-05-29.md
+  - sources/youtube-kalshi-bots-batch-2026-05-29.md
+  - entities/tools/bullpen-cli.md
+  - entities/tools/odds-jam-prediction-insiders.md
+  - sources/youtube-kalshi-bots-batch-2026-05-29.md
 created: 2026-05-21
-updated: 2026-05-27
+updated: 2026-05-29
 clusters: [polymarket, copy-trading]
 ---
 
@@ -60,6 +63,9 @@ clusters: [polymarket, copy-trading]
 - @sources/alterego-eth-five-weather-methodologies-2026-05-27.md — K70 type 4 (weather copy-trading / smart-money)
 - @concepts/polymarket-weather-bot-methodology-taxonomy.md — K70 five-type framework
 - @concepts/polymarket-weather-trading-strategy.md — weather-specific copy context
+- @sources/youtube-polymarket-bots-batch-2026-05-29.md — K80 Odds Jam 30d experiment + Bullpen CLI build
+- @entities/tools/bullpen-cli.md — Claude Code copy-bot stack (Sharbel tutorial)
+- @entities/tools/odds-jam-prediction-insiders.md — alert-feed copy product + measured ROI
 
 ## Raw Concept
 
@@ -179,6 +185,16 @@ For any Cemini directional bot, **must** include in the design:
 ### K67 anecdote — CAR wallet / Lebanon market [TENTATIVE]
 
 @undefinedKi (Post 31): **garbagefriends** wallet allegedly copied **CAR** into Israel–Lebanon March 20 market at **1¢** → $50→$3,456 in 72h. Illustrates **latency + wallet selection** story; not independently verified. Promotional copy-trading guide structure.
+
+### K80 YouTube — Odds Jam + Bullpen CLI [TENTATIVE]
+
+**Prediction Insiders (Odds Jam)** — @entities/tools/odds-jam-prediction-insiders.md: Financial Wolf $1K / 30-day trial. **54% win rate**, drawdown to ~$740 mid-challenge; final **~$224 PM profit** on ~$7.5K wagered vs ~$187 fee-drag baseline. Marketing stats (~481% product return) **not reproduced**. Lesson: alert-feed copy can beat random+fees slightly but underperforms hype; combine with confidence filters (>80 score in video).
+
+**Bullpen CLI + Claude Code** — @entities/tools/bullpen-cli.md: Sharbel tutorial builds TypeScript copy bot — top 10 **active weekly PnL** wallets, $5 fixed mirror, polling/watch loop, local dashboard. Steal-from for **rapid prototype** path vs Cemini `py-clob-client` stack [NEEDS VERIFICATION 2026-05-29].
+
+### K80 YouTube — Beast Sports whale tracker [TENTATIVE]
+
+Beast Sports Picks (`iF6ZWEbkxzM`) promotes a **closed-source tracker** sorting Polymarket wallets by win rate, ROI, active bets, and displayed wallet size — surfacing top-50 "sharps" with live positions (e.g. $80k Manchester United YES). Marketing claims (93% hit rate, $17M PnL) are **unverified** and likely survivorship-biased. Same category as @entities/tools/polymarketanalytics-com.md / @entities/tools/parity-polymarket-analytics.md wallet discovery — apply existing copy-trading hygiene (3-month rule, hedge-leg trap, latency filter).
 
 ## Snippets
 
