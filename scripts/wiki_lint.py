@@ -32,6 +32,9 @@ parser.add_argument("--apply", action="store_true",
 parser.add_argument("--hub-threshold", type=int, default=4,
                     help="With --fix-bidirectional: skip target pages with > N missing backlinks "
                          "(those are likely intentional hub-index pages). Default: 4")
+parser.add_argument("--fail-on-graph", action="store_true",
+                    help="Exit 1 if orphans, bidirectional gaps, or local dangling related: links exist "
+                         "(used by pre-commit hook).")
 args = parser.parse_args()
 TODAY = date.today()
 
@@ -555,3 +558,8 @@ if args.fix_bidirectional:
     else:
         print(f"  Dry-run complete. Re-run with --apply to write {sum(len(b) for _,b in proposed)} "
               f"backlinks. Adjust --hub-threshold to include/exclude hub targets.")
+
+if args.fail_on_graph and (orphans or gaps or dangling):
+    print("\nFAIL: graph integrity errors (orphans, bidirectional gaps, or dangling related: links).",
+          file=sys.stderr)
+    sys.exit(1)

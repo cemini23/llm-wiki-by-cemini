@@ -7,6 +7,7 @@ related:
   - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
   - sources/gemini-sports-prediction-bot-pitfalls-2026-05-29.md
   - sources/gemini-world-cup-squad-mispricing-analysis-2026-05-29.md
+  - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/cross-venue-arbitrage-pattern.md

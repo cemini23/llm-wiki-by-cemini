@@ -6,9 +6,12 @@ keywords: [deadball-tv, b-wade-picks, turkey, colombia, usa-fade, switzerland, t
 related:
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - sources/gemini-world-cup-squad-mispricing-analysis-2026-05-29.md
+  - sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md
+  - sources/gemini-wc2026-third-place-advancement-2026-05-29.md
+  - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
-maturity: draft
+maturity: validated
 created: 2026-05-29
 updated: 2026-05-29
 ---
@@ -16,11 +19,13 @@ updated: 2026-05-29
 ## Relations
 
 - @concepts/world-cup-advance-market-bot-v1.md — YAML conviction config consumes this matrix
-- @sources/gemini-world-cup-squad-mispricing-analysis-2026-05-29.md — book vs PM/Kalshi divergence column
+- @sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md — Group B LP tiers (K83)
+- @sources/gemini-wc2026-third-place-advancement-2026-05-29.md — third-place caps/skips
+- @sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md — live cross-venue verification
 
 ## Raw Concept
 
-Synthesis of **DeadBall TV** (11 group previews), **B Wade Picks**, batch-1 pundit videos, and **Gemini squad mispricing** report. All picks **[TENTATIVE]** — bot loads team list from config; **prices from Gamma at runtime**.
+Synthesis of **DeadBall TV** (11 group previews), **B Wade Picks**, batch-1 pundit videos, and **Gemini DR** reports (K82 + **K83 May 29 batch**). All picks **[TENTATIVE]** except K83 Group B / live gap rows marked validated — bot loads team list from config; **prices from Gamma at runtime**.
 
 ## Narrative
 
@@ -40,22 +45,20 @@ Synthesis of **DeadBall TV** (11 group previews), **B Wade Picks**, batch-1 pund
 | K | **Colombia (7)** | Portugal (6) | DR Congo (2) | Uzbek (1) | |
 | L | England (9) | Croatia (6) | Panama (3) | Ghana (0) | |
 
-**Group B missing (DeadBall):** B Wade — Switzerland win 53% Kalshi; Canada threat; Bosnia > Qatar advance rank.
+**Group B (Gemini DR K83 — DeadBall video still useful but tiers from DR):**
 
-### B Wade vs DeadBall splits
+| Team | Tier | Cap | Notes |
+|------|------|-----|-------|
+| Switzerland | bilateral / fade_watch | $2000 | Whale book ~87¢; bilateral only |
+| Canada | yes_conviction | **$2500** | Host edge; monitor Davies |
+| Bosnia | fade_watch | alert | 8–11pp PM vs Kalshi — no auto YES |
+| Qatar | skip + fade_watch | — | 11–14pp divergence |
 
-| Topic | DeadBall | B Wade |
-|-------|----------|--------|
-| Group A winner | Mexico | SK (groups) / Mexico (depth video) |
-| Group D | USA out | USA 45% win, R16+ |
-| Group F | Netherlands 1st | **Japan** 1st (26% Kalshi) |
-| Group K | Colombia 1st | Portugal 64% win |
-
-### Conviction LP seeds (YAML starting point)
+### Conviction LP seeds (YAML v3 — `world-cup-bot/config/conviction.yaml`)
 
 **YES advance — mid-tier (prefer mid 0.20–0.80):**
 
-`turkey`, `colombia`, `morocco`, `ecuador`, `senegal`, `norway`, `paraguay`, `algeria`, `cape-verde`, `japan` (if 3rd-place math clears)
+`canada`, `turkey`, `colombia`, `morocco`, `ecuador`, `senegal`, `norway`, `paraguay`, `algeria`, `cape-verde`, `japan`, `scotland`, **`ivory-coast`** (cap $2500 — +51pp mispricing K83)
 
 **Two-sided only (90¢+):**
 
@@ -63,17 +66,34 @@ Synthesis of **DeadBall TV** (11 group previews), **B Wade Picks**, batch-1 pund
 
 **Fade / cross-venue watch (not auto-size-up YES):**
 
-`usa`, `mexico`, `switzerland`, `england`, `croatia` — Gemini book vs Kalshi gaps
+`usa`, `mexico`, `switzerland`, `england`, `croatia`, **`bosnia`**, **`qatar`**
 
-### Cross-venue alert pairs (≥5pp research flag)
+**Skip (per_team):**
+
+`usa`, `qatar`, **`dr-congo`**, `ghana`, `haiti`, … (see YAML)
+
+### Cross-venue alert pairs
+
+**Live May 29 [CONFIRMED]:** group-winner pairs only; all gaps **<5pp** — no alerts fired. PM advance slugs **TBD** — see @sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md.
+
+**Prior book-vs-Kalshi advance gaps [TENTATIVE — not reproduced on live group-winner mids]:**
 
 | Market | Signal |
 |--------|--------|
-| USA advance | PM high vs Kalshi ~44% R16 |
-| Switzerland advance | Books 92% vs Kalshi 55% |
-| England advance | Books 99% vs Kalshi 74% |
+| USA advance | PM high vs Kalshi ~44% R16 (K82) |
+| Switzerland advance | Books 92% vs Kalshi 55% (K82) |
+| England advance | Books 99% vs Kalshi 74% (K82) |
 | Croatia advance | Books 82% vs Kalshi 35% [verify live] |
-| Turkey / Colombia group winner | DeadBall 1st vs market 2nd-favorite |
+
+### B Wade vs DeadBall splits
+
+| Topic | DeadBall | B Wade |
+|-------|----------|--------|
+| Group A winner | Mexico | SK (groups) / Mexico (depth video) |
+| Group B | (video exists — DR tiers above) | Switzerland win 53% Kalshi; Canada threat |
+| Group D | USA out | USA 45% win, R16+ |
+| Group F | Netherlands 1st | **Japan** 1st (26% Kalshi) |
+| Group K | Colombia 1st | Portugal 64% win |
 
 ### Third-place tiebreakers (48-team)
 
@@ -83,4 +103,4 @@ Points → GD → goals scored → H2H → fair play → lots. Bot should model 
 
 > DeadBall Group D: "In fourth, I got the USA on three points." [Source: world-cup-youtube-research-compilation-2026-05-29.md / DeadBall 3bqj4ObETss]
 
-> Gemini: Switzerland +37pp book vs Kalshi advance divergence. [Source: gemini-world-cup-squad-mispricing-analysis-2026-05-29.md]
+> K83 live gap sweep: group-winner PM↔Kalshi gaps all <5pp May 29; advance pairs blocked. [Source: gemini-wc2026-market-gap-live-verification-2026-05-29.md]

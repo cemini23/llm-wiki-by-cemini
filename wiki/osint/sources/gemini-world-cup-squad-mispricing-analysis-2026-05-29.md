@@ -6,6 +6,7 @@ keywords: [host-nation-premium, divergence, u23-alpha, group-draw, favorite-fall
 related:
   - sources/gemini-world-cup-market-structure-research-2026-05-29.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
+  - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
   - concepts/world-cup-2026-group-conviction-matrix.md
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/cross-venue-arbitrage-pattern.md
@@ -17,6 +18,7 @@ updated: 2026-05-29
 ## Relations
 
 - @concepts/world-cup-2026-group-conviction-matrix.md — conviction + divergence table synthesized here + YouTube
+- @sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md — live May 29 supersedes advance-gap rows for equivalent contracts
 - @concepts/world-cup-advance-market-bot-v1.md — cross-venue alert seeds
 
 ## Raw Concept
@@ -34,7 +36,9 @@ updated: 2026-05-29
 
 Forensic **mispricing / divergence** study: traditional sportsbooks vs **Kalshi/Polymarket** on advance and outright markets. Feeds **conviction YAML** and **cross-venue scanner** thresholds — not hardcoded prices.
 
-### >5pp divergence matrix (Round of 16 / advance — report snapshots)
+**K83 update:** @sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md live-verified **group-winner** pairs May 29 — gaps **<5pp**. Treat table below as **book-vs-PM/Kalshi narrative** until PM advance slugs are live and pairable.
+
+### >5pp divergence matrix (Round of 16 / advance — report snapshots) [TENTATIVE post-K83]
 
 | Team | Books (implied) | PM/Kalshi agg | Gap | Thesis |
 |------|-----------------|---------------|-----|--------|

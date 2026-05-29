@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-29] ingest | K83 — Gemini DR World Cup batch (4 reports)
+
+**Sources:** 4× Gemini Deep Research docx from `research to be indexed/` → `cemini-librarian:/opt/cemini-bulk/research/`
+
+- **4 sources** — Group B LP, third-place math, cross-venue arbitrage dynamics, market-gap live verification
+- **3 updated concepts** — `world-cup-2026-group-conviction-matrix` (validated), `cross-venue-arbitrage-pattern`, `world-cup-advance-market-bot-v1`
+- **1 updated entity** — `world-cup-bot.md`
+- **1 updated source** — `gemini-world-cup-squad-mispricing-analysis` (K83 supersession note)
+- **Bot repo** — `config/conviction.yaml` v3, new `config/cross_venue.yaml`, research flags updated
+- **Closed:** K82 open items — DeadBall Group B tiers, Gemini report #5 ticker map (group-winner only; advance blocked)
+
 ## [2026-05-29] build + eval | World Cup Bot calendar guard + GitHub Phase-0
 
 **Repo:** [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) — vendored CC0 fixtures, `calendar_guard` module, 4 pytest tests.

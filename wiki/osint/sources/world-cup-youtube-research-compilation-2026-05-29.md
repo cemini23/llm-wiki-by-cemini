@@ -7,6 +7,7 @@ related:
   - sources/gemini-world-cup-market-structure-research-2026-05-29.md
   - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
   - sources/gemini-world-cup-squad-mispricing-analysis-2026-05-29.md
+  - sources/gemini-wc2026-third-place-advancement-2026-05-29.md
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/world-cup-2026-group-conviction-matrix.md
   - concepts/polymarket-sports-lp-operating-rules.md

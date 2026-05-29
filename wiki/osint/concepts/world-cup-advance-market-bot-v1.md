@@ -8,6 +8,10 @@ related:
   - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
   - sources/gemini-sports-prediction-bot-pitfalls-2026-05-29.md
   - sources/gemini-world-cup-squad-mispricing-analysis-2026-05-29.md
+  - sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md
+  - sources/gemini-wc2026-third-place-advancement-2026-05-29.md
+  - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
+  - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/world-cup-2026-group-conviction-matrix.md
   - concepts/polymarket-sports-lp-operating-rules.md
@@ -37,6 +41,8 @@ clusters: [polymarket, world-cup, market-making, oss]
 - @entities/infrastructure/cemini-egress-fi.md — PM order POST egress (Finland)
 - @concepts/cross-venue-arbitrage-pattern.md — alert-only cross-venue pattern
 - @entities/tools/world-cup-bot.md — public MIT repo ([cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot))
+- @sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md — K83 Group B YAML tiers
+- @sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md — `cross_venue.yaml` seed
 
 ## Raw Concept
 

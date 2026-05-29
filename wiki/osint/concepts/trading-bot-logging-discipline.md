@@ -14,6 +14,7 @@ related:
   - sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md
   - concepts/shadow-to-live-transition-engineering.md
   - sources/algorithmic-trading-live-transition-strategies-2026-05-28.md
+  - entities/tools/world-cup-bot.md
 maturity: validated
 created: 2026-05-28
 updated: 2026-05-29

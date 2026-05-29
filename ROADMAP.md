@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-05-29 — K83)
+
+- **K83 ingest (2026-05-29)** — **4× Gemini DR** World Cup reports (Group B LP, third-place math, cross-venue arbitrage, **live market-gap verification**). **4 sources + 3 concept updates + world-cup-bot entity**. **Bot:** `conviction.yaml` v3 (Canada/IVC $2500, Bosnia/Qatar fade_watch, DR Congo skip), `cross_venue.yaml` seeded (group-winner pairs only; advance PM TBD). **Closed:** DeadBall Group B gap; K82 ticker map partial. **Next:** Module 6 scanner code; shadow live soak; re-verify when PM advance slugs list.
+
 ## Current state (2026-05-29 — K82)
 
 - **K82 ingest (2026-05-29)** — World Cup advance-market bot research wave. **4× Gemini DR + 35 YouTube videos** (DeadBall TV, B Wade, LP-farming, cross-venue). **5 sources + 4 concepts + 8 page updates**. Headline concept: `world-cup-advance-market-bot-v1` — dual deliverable (public MIT OSS + Cemini module); conviction LP + fill handler + alert-only PM↔Kalshi scanner; **all prices from Gamma/CLOB at runtime** (prod keys; no Exa/hardcoded mids). **Public repo:** [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) reserved 2026-05-29. **Build target:** 2026-05-30/31. **Marketing:** Outlier Weekly Issue 3 — **2026-06-03**. **Open:** Gemini report #5 (ticker map); DeadBall Group B; prod brief optional after bot shadow-live.

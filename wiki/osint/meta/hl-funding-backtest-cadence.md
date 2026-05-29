@@ -5,6 +5,7 @@ tags: [meta, cadence, hyperliquid, backtest]
 related:
   - entities/tools/hl-funding-sniper.md
   - concepts/cemini-backtest-report-kit.md
+  - meta/internal-benchmark-deployment-map.md
   - meta/pm-lp-backtest-cadence.md
 updated: 2026-05-29
 ---

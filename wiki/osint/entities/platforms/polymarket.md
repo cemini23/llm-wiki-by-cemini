@@ -91,6 +91,7 @@ related:
   - entities/tools/momentum-odds.md
   - concepts/world-cup-advance-market-bot-v1.md
   - sources/gemini-world-cup-market-structure-research-2026-05-29.md
+  - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
 
 maturity: validated
 created: 2026-04-23

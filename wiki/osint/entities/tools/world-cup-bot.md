@@ -5,6 +5,9 @@ tags: [tool, polymarket, kalshi, world-cup-2026, lp-bot, open-source, cemini23, 
 keywords: [world-cup-bot, advance-to-knockout, conviction-lp, github, mit, outlier-weekly, calendar-guard]
 related:
   - concepts/world-cup-advance-market-bot-v1.md
+  - sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md
+  - sources/gemini-wc2026-third-place-advancement-2026-05-29.md
+  - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
   - concepts/pnl-attribution-versioning.md
   - concepts/trading-bot-logging-discipline.md
   - concepts/polymarket-sports-lp-operating-rules.md
@@ -12,10 +15,11 @@ related:
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/polymarket-clob-api.md
   - entities/tools/openfootball-worldcup-json.md
+  - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-05-30
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -47,17 +51,19 @@ The repo is **fully public**. It ships MIT code, docs, and `.env.example` placeh
 
 Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code + private env on `cemini-prod` / `@entities/infrastructure/cemini-egress-fi.md`.
 
-### Status (2026-05-30)
+### Status (2026-05-29)
 
 | Module | State |
 |--------|-------|
 | Repo + docs | **Live** |
 | **Scanner (1)** | **Live** — `world_cup_bot/scanner.py` + `scan` CLI |
-| **Conviction filter (2)** | **Live** — `config/conviction.yaml` + `conviction.py` |
-| **Quoter (3)** | **Dry-run** — `quoter.py`; live CLOB on Cemini prod only |
+| **Conviction filter (2)** | **Live** — `config/conviction.yaml` **v3** (K83 Gemini DR ingest) |
+| **Quoter (3)** | **Dry-run** + live POST path — `clob_live.py`; prod via egress |
 | **Calendar guard (5)** | **Live** — CC0 `data/worldcup2026-fixtures.json` |
-| **P&L ledger (7)** | **Live** — JSONL + `logic_version` registry (`config/strategy_logic_versions.yaml`); `pnl --scope current` default per @concepts/pnl-attribution-versioning.md |
-| Fill handler (4) / cross-venue (6) | **Pending** |
+| **P&L ledger (7)** | **Live** — JSONL + `logic_version` registry |
+| **Cross-venue config (6)** | **Config only** — `config/cross_venue.yaml` (scanner code pending) |
+| Fill handler (4) | **Partial** — reconcile loop live |
+| Gemini DR prompts | **Live** — `prompts/gemini-deep-research/` + `research gemini` CLI |
 | CeminiSuite import | **Pending** prod brief |
 
 CLI:

@@ -35,6 +35,8 @@ related:
   - sources/gemini-world-cup-squad-mispricing-analysis-2026-05-29.md
   - sources/gemini-sports-prediction-bot-pitfalls-2026-05-29.md
   - sources/gemini-world-cup-market-structure-research-2026-05-29.md
+  - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
+  - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
 maturity: draft
 created: 2026-05-05
@@ -201,7 +203,16 @@ The pattern is the asset, not the code.
 | Price source | CLOB + Kalshi API at runtime | Same — **no hardcoded mids**; prod Gamma/CLOB keys on `cemini-prod` |
 | Inventory risk | Short horizon | Squad news / injury repricing — scanner is signal, LP bot handles inventory |
 
-Pending Gemini report #5 for full PM↔Kalshi ticker map. See @sources/gemini-world-cup-squad-mispricing-analysis-2026-05-29.md for divergence seeds (USA, Mexico, Switzerland, England).
+Pending Gemini report #5 for full PM↔Kalshi ticker map. **Resolved K83:** @sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md — group-winner map live; advance pairs blocked (PM TBD). Ticker seed: `world-cup-bot/config/cross_venue.yaml`.
+
+### World Cup 2026 live verification (K83) [CONFIRMED 2026-05-29]
+
+- **Pairable today:** `KXWCGROUPWIN` ↔ PM group-winner only (USA, SUI, ENG, CRO, MEX fade_watch set).
+- **Not pairable:** PM advance-to-knockout slugs TBD; Kalshi `KXWCGROUPQUAL` vs PM advance = rules mismatch.
+- **Alerts:** zero pairs ≥5pp raw on verified equivalents; fee-adjusted all negative EV.
+- **Bot config:** alert-only; no auto-hedge. Prior K82 book-gap narrative retained as fade_watch sentiment, not arb signal.
+
+See @sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md for contract taxonomy reference.
 
 ## Snippets
 

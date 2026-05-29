@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-# Pre-commit hook: wikilint entire wiki/ tree (requires `wikilint` on PATH).
+# Pre-commit hook: wiki graph lint via scripts/wiki_lint.py (orphans, bidirectional, local dangling).
+# Full strict audit (incl. missing_mention): wikilint wiki/ --strict
 set -euo pipefail
-if ! command -v wikilint >/dev/null 2>&1; then
-  echo "precommit_wikilint: install wikilint — pip install git+https://github.com/cemini23/wikilint.git"
-  exit 1
-fi
 ROOT="$(git rev-parse --show-toplevel)"
 cd "$ROOT"
-wikilint wiki/ --strict
+python3 scripts/wiki_lint.py --fail-on-graph

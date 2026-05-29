@@ -6,6 +6,7 @@ keywords: [pm-lp, backtest, quarterly, ritual]
 related:
   - concepts/cemini-backtest-report-kit.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - meta/internal-benchmark-deployment-map.md
   - meta/hl-funding-backtest-cadence.md
   - meta/kalshi-lp-backtest-cadence.md
 maturity: core
