@@ -163,6 +163,13 @@
 
 ---
 
+## [2026-05-29] query | NEEDS VERIFICATION sweep Wave 6 (defer tier)
+
+- **7 tags closed** — arXiv 2508.03474 Polymarket arb totals `[CONFIRMED]`; zostaff reverse-quant repo `[CONFIRMED]`; binary quant + Bullpen CLI `[TENTATIVE]`
+- **7 wiki pages** — marginal-polytope, reverse-quant, rag-binary-quantization, bullpen-cli, copy-trading, trading-posts 6/38
+- **Sweep tracker** — Wave 6 section in `wiki/sweeps/2026-05-29-needs-verification-revenue-plan.md`
+- **No new prod brief** — Wave 6 wiki-only; prod hooks remain Waves 1–5 brief on `cemini-prod`
+
 ## [2026-05-29] query | NEEDS VERIFICATION sweep Waves 1–5 (revenue-priority)
 
 - **30 tags closed** — 225 → 195 stale `[NEEDS VERIFICATION]` (live API, Exa, GitHub, prod SSH)

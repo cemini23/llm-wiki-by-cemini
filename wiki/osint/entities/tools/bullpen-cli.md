@@ -36,7 +36,7 @@ What prompted this page: YouTube *Full Polymarket Bot Build | Claude Code Tutori
 
 ### Cemini relevance
 
-- **Steal-from CONDITIONAL-GO** — evaluate vs existing `py-clob-client` + Gamma stack; useful for rapid Claude Code prototypes, not a prod dependency until Phase-0 (license, TOS, rate limits) [NEEDS VERIFICATION 2026-05-29].
+- **Steal-from CONDITIONAL-GO** — **`[TENTATIVE 2026-05-29]`** official docs at cli.bullpen.fi; binary/npm distribution (releases repo `BullpenFi/bullpen-cli-releases`, not open-source trading core). Alpha/beta — useful for Claude Code **prototypes** only; prod stack stays `py-clob-client-v2` + Gamma/Data API. TOS + custody model audit before any funded wallet link.
 - Distinct from Pretracer/Kreo Telegram bots — developer CLI path.
 
 ## Snippets

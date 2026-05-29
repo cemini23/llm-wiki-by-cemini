@@ -69,7 +69,7 @@ Small batch, high **Hermes + x402 + Obsidian/Claude workflow** density; limited 
 1. **x402 pay-per-use** lowers barrier to premium on-chain data (Nansen ~$0.03–0.07/call vs $100+/mo subs) — agent wallet hygiene critical [TENTATIVE].
 2. **Hermes skill bundles** (`/forensics-bundle`) consolidate multi-tool diligence into one command; overlaps K64 Hermes catalog thematically.
 3. **Posts 3 and 5** are near-duplicates (AlphaCartell promo vs 0xJeff walkthrough) — ingest once as shared pipeline concept; do not double-count as independent verification.
-4. **Binary quantization** is relevant to kb-server / vector index cost on librarian (float32 → binary + Hamming rerank pattern) [NEEDS VERIFICATION 2026-05-29].
+4. **Binary quantization** is relevant to kb-server / vector index cost on librarian (float32 → binary + Hamming rerank pattern) **`[TENTATIVE 2026-05-29]`** — technique standard; Cemini recall benchmark pending.
 5. **Macro Charts** Iran-deal rotation note is sentiment-only; cross-check vs prod macro regime tools before sizing.
 
 ### Cemini relevance

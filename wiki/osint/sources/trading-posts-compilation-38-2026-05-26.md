@@ -148,7 +148,7 @@ Posts 20–21, 24–25, 29–30, 33, 36 — Claude Code / Obsidian / repo-list m
 
 > "On historical data the setup held 96 percent. Live, by the export not the bot log, it ran in the low sixties." [Source: Posts.docx K67 Post 32, @Gustafssonkotte]
 
-> "From April 2024 to April 2025, quantitative traders extracted $39,688,585 in guaranteed arbitrage profits from Polymarket." [Source: Posts.docx K67 Post 26, citing 2025 research paper — [NEEDS VERIFICATION 2026-05-26]]
+> "From April 2024 to April 2025, quantitative traders extracted $39,688,585 in guaranteed arbitrage profits from Polymarket." [Source: Posts.docx K67 Post 26 — **`[CONFIRMED 2026-05-29]`** vs arXiv 2508.03474: paper reports **$39,587,585.02** realized estimate; "guaranteed" is promoter wording — arb is structural, not risk-free after fees/slippage]
 
 > "Every price series is secretly one of three things: trending, mean-reverting, or pure noise." [Source: Posts.docx K67 Post 27, @phosphenq]
 

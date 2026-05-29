@@ -33,7 +33,7 @@ Compress dense float32 embeddings to **binary vectors** (sign bit per dimension)
 ### Cemini / librarian angle
 
 - Relevant if `cemini-librarian` vector index grows beyond comfortable RAM for float32 wiki embeddings.
-- Requires quality eval: quantization recall loss vs latency/cost gain [NEEDS VERIFICATION 2026-05-29].
+- Requires quality eval: **`[TENTATIVE 2026-05-29]`** — binary embedding → Hamming rerank is standard (~32× memory vs float32 per dimension); Cemini-specific **recall@k loss on wiki embeddings** still needs librarian benchmark before reindex.
 - Pairs with existing Ollama embedding path — not a drop-in without reindex + benchmark.
 
 ## Snippets

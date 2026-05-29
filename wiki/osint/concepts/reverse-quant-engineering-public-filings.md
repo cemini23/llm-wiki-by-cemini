@@ -8,7 +8,7 @@ related:
   - concepts/hedge-fund-open-source-tooling.md
 maturity: draft
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -18,7 +18,7 @@ updated: 2026-05-26
 
 ## Raw Concept
 
-@zostaff (K67) argues **13F is a lagged, long-only mask** — no shorts, swaps as notionals only, 45-day delay, confidential treatment, window dressing. Real "reverse quant" uses **second-order traces**: ADV language shifts, hiring, patents, cross-jurisdiction filings. Open repo cited on GitHub (`zostaff`) [NEEDS VERIFICATION 2026-05-26].
+@zostaff (K67) argues **13F is a lagged, long-only mask** — no shorts, swaps as notionals only, 45-day delay, confidential treatment, window dressing. Real "reverse quant" uses **second-order traces**: ADV language shifts, hiring, patents, cross-jurisdiction filings. Open repo **`zostaff/reverse-research-funds`** **`[CONFIRMED 2026-05-29]`** — MIT, Python 3.11+, CI/ruff/mypy; README title "reverse-quant". Phase-0 steal-from **Defer** until methodology validated against Cemini entity pages.
 
 ## Narrative
 

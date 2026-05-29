@@ -192,7 +192,7 @@ For any Cemini directional bot, **must** include in the design:
 
 **Prediction Insiders (Odds Jam)** — @entities/tools/odds-jam-prediction-insiders.md: Financial Wolf $1K / 30-day trial. **54% win rate**, drawdown to ~$740 mid-challenge; final **~$224 PM profit** on ~$7.5K wagered vs ~$187 fee-drag baseline. Marketing stats (~481% product return) **not reproduced**. Lesson: alert-feed copy can beat random+fees slightly but underperforms hype; combine with confidence filters (>80 score in video).
 
-**Bullpen CLI + Claude Code** — @entities/tools/bullpen-cli.md: Sharbel tutorial builds TypeScript copy bot — top 10 **active weekly PnL** wallets, $5 fixed mirror, polling/watch loop, local dashboard. Steal-from for **rapid prototype** path vs Cemini `py-clob-client` stack [NEEDS VERIFICATION 2026-05-29].
+**Bullpen CLI + Claude Code** — @entities/tools/bullpen-cli.md: Sharbel tutorial builds TypeScript copy bot — top 10 **active weekly PnL** wallets, $5 fixed mirror, polling/watch loop, local dashboard. Steal-from for **rapid prototype** path vs Cemini `py-clob-client` stack **`[TENTATIVE 2026-05-29]`** — official CLI docs confirmed; binary distribution only.
 
 ### K80 YouTube — Beast Sports whale tracker [TENTATIVE]
 

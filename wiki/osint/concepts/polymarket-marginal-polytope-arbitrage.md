@@ -10,7 +10,7 @@ related:
   - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -32,7 +32,7 @@ Arbitrage on Polymarket is not only "YES + NO < $1" on one condition. **Logicall
 | Pairwise sum check | Misses cross-market logical implications |
 | Marginal polytope / ILP | Scans dependent constraints; sizes across book depth + fees |
 
-K67 cites paper *"Unravelling the Probabilistic Forest: Arbitrage in Prediction Markets"* (2025) [NEEDS VERIFICATION 2026-05-26]: **~$39.7M** extracted Apr 2024–Apr 2025; top wallet **~$2.0M / 4,049 trades** (~$496/trade) [TENTATIVE — from @robrtcode summary].
+K67 cites arXiv **2508.03474** *Unravelling the Probabilistic Forest: Arbitrage in Prediction Markets* (IMDEA Networks et al.) **`[CONFIRMED 2026-05-29]`** — **$39,587,585.02** realized profit Apr 2024–Apr 2025 (ε=$1/trade assumption); top wallet **$2,009,631.76** (paper Table 1; K67/@robrtcode rounded ~$39.7M / ~$2.0M). Not "guaranteed" in strict sense — extracted from detected arb executions on historical order books [Source: https://arxiv.org/abs/2508.03474].
 
 ### Why retail loses the race
 

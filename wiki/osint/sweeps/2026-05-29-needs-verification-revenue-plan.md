@@ -7,7 +7,7 @@ updated: 2026-05-29
 
 ## Scope
 
-- **Backlog:** 225 stale tags → **212** after Wave 1 → **~202** after Wave 2 → **~195** after Wave 3 → **198** after Wave 4 → **195** after Wave 5 (2026-05-29)
+- **Backlog:** 225 stale tags → **212** after Wave 1 → **~202** after Wave 2 → **~195** after Wave 3 → **198** after Wave 4 → **195** after Wave 5 → **~188** after Wave 6 (2026-05-29)
 - **Priority rule:** revenue path first (Polymarket execution, weather alpha, cross-venue, promotion gates)
 - **Verification rule:** no blind closure — every tag gets live API probe, Exa/web search, or GitHub/license check; outcome → `[CONFIRMED]` / `[TENTATIVE]` / `[RETRACTED]` / honest internal note
 - **Fresh tags (7–14d):** included when revenue-relevant (K79 SMB, K77 quant, Kalshi UI bot)
@@ -94,6 +94,19 @@ updated: 2026-05-29
 | LB-API `window` values | Live curl | `[CONFIRMED]` — `all`, `1d`, `7d`, `30d`; `1w`/`1m` → 400 |
 
 **Pages touched:** `deepseek-api`, `polymarket-websocket-api`, `polymarket-lb-api`, `polymarket-api-reference`
+
+### Wave 6 — DONE 2026-05-29 (defer tier batch, ~7 tags closed)
+
+| Claim | Method | Verdict |
+|-------|--------|---------|
+| Polymarket $39.7M arb (K67) | arXiv 2508.03474 fetch | `[CONFIRMED]` — $39,587,585.02; top wallet ~$2.01M |
+| zostaff reverse-quant repo | GitHub `zostaff/reverse-research-funds` | `[CONFIRMED]` — MIT, active 2026-05-27 |
+| Binary quantization 32× memory | Literature standard + internal gap | `[TENTATIVE]` — technique OK; Cemini recall benchmark pending |
+| Bullpen CLI Phase-0 | cli.bullpen.fi + releases repo | `[TENTATIVE]` — official alpha CLI; not open-source core |
+
+**Pages touched:** `polymarket-marginal-polytope-arbitrage`, `trading-posts-compilation-38`, `reverse-quant-engineering-public-filings`, `rag-binary-quantization-at-scale`, `trading-posts-compilation-6`, `bullpen-cli`, `polymarket-copy-trading-strategy`
+
+**Backlog after Wave 6:** ~188 stale tags (195 − 7)
 
 ### Steady state
 
