@@ -163,6 +163,12 @@
 
 ---
 
+## [2026-05-29] query | NEEDS VERIFICATION sweep Wave 8 (gemini-dr wave5b engineering)
+
+- **~8 tags closed** — poly-maker port feasibility, BTC bot 3.14 badge retracted, Pinax substreams remote, MCP secrets/rate-limiter, GPL backtest salvage retracted, 5 unavailable URLs re-fetched
+- **3 wiki pages** — `gemini-dr-wave5b`, `caiovicentino-polymarket-mcp-server`, `aulekator-polymarket-btc-bot`
+- **No prod brief** — defer tier; MCP prod adoption still gated on pip-licenses + soak test
+
 ## [2026-05-29] query | NEEDS VERIFICATION sweep Wave 7 (gemini-dr + WW179)
 
 - **~10 tags closed** — poly_data GPL metadata, Kronos-no-qlib, stash/firnflow license spot-checks, PTA SSRN abstract, RHEA token ID, LIF MAU glitch multi-source, ZeroCortex vendor marketing

@@ -7,7 +7,7 @@ updated: 2026-05-29
 
 ## Scope
 
-- **Backlog:** 225 stale tags → **212** after Wave 1 → **~202** after Wave 2 → **~195** after Wave 3 → **198** after Wave 4 → **195** after Wave 5 → **~188** after Wave 6 → **~178** after Wave 7 (2026-05-29)
+- **Backlog:** 225 stale tags → **212** after Wave 1 → **~202** after Wave 2 → **~195** after Wave 3 → **198** after Wave 4 → **195** after Wave 5 → **~188** after Wave 6 → **~178** after Wave 7 → **~170** after Wave 8 (2026-05-29)
 - **Priority rule:** revenue path first (Polymarket execution, weather alpha, cross-venue, promotion gates)
 - **Verification rule:** no blind closure — every tag gets live API probe, Exa/web search, or GitHub/license check; outcome → `[CONFIRMED]` / `[TENTATIVE]` / `[RETRACTED]` / honest internal note
 - **Fresh tags (7–14d):** included when revenue-relevant (K79 SMB, K77 quant, Kalshi UI bot)
@@ -124,6 +124,22 @@ updated: 2026-05-29
 **Pages touched:** `gemini-dr-wave5a/b`, `alash3al-stash`, `pta-metric-anchoring-ssrn`, `ww-issue-179`, `lif`, `warproxxx-poly-data`, `polymarket-research-throughput-bottleneck`, `zerocortex-ai`
 
 **Backlog after Wave 7:** ~178 open tags (~188 − 10)
+
+### Wave 8 — DONE 2026-05-29 (gemini-dr wave5b engineering, ~8 tags closed)
+
+| Claim | Method | Verdict |
+|-------|--------|---------|
+| poly-maker JS→Python | GitHub `poly_merger/` read (~140 LOC) | `[TENTATIVE]` — clean-room port feasible |
+| BTC bot Python 3.14+ exclusivity | Source scan `bot.py` | `[RETRACTED]` — badge only; no exclusive syntax |
+| Substreams remote (Pinax) | spkg.io + Pinax polygon endpoint docs | `[CONFIRMED]` — no local indexer required |
+| MCP rate-limiter under load | `rate_limiter.py` + perf tests | `[TENTATIVE]` — unit harness exists; prod soak pending |
+| MCP secret management | `.env.example` + docker-compose | `[CONFIRMED]` — solo-dev OK; vault for prod |
+| GPL backtest subset salvage | LICENSE file read (LGPL+MIT mix) | `[RETRACTED]` — no safe extract |
+| 5 unavailable URLs re-fetch | HTTP/GitHub/HF probes | `[CONFIRMED]` reachable; CoMeT Noncommercial Reject |
+
+**Pages touched:** `gemini-dr-wave5b`, `caiovicentino-polymarket-mcp-server`, `aulekator-polymarket-btc-bot`
+
+**Backlog after Wave 8:** ~170 open tags (~178 − 8)
 
 ### Steady state
 

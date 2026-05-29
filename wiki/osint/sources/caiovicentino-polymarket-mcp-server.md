@@ -107,11 +107,11 @@ All without custom integration code on the Cemini side — the MCP protocol prov
 
 1. **Bus-factor: 1 contributor on a 5.5-month-old repo with 1 release** — fork-and-maintain pattern is the only safe adoption path. **Mitigation**: pin v0.1.0 commit hash (or HEAD if newer commits exist beyond the v0.1.0 tag), fork to Cemini-controlled GitHub org, treat as in-house code from day 1.
 
-2. **Secret management hardening** [NEEDS VERIFICATION 2026-04-30] — the system uses `.env`-injected `POLYMARKET_PASSPHRASE` to sign blockchain transactions. Acceptable for solo-dev / small-scale deployment via Docker secrets; **production deployment must use a secrets manager** (HashiCorp Vault, AWS Secrets Manager, or equivalent) — bare `.env` files are a known footgun for institutional-grade compliance.
+2. **Secret management hardening** **`[CONFIRMED 2026-05-29]`** — `.env.example` + docker-compose env injection documented; solo-dev/laptop acceptable; **prod requires secrets manager** (Vault/AWS SM) before live trading — aligns with Cemini house policy.
 
-3. **Token-bucket rate-limiter under concurrent FastMCP load** [NEEDS VERIFICATION 2026-04-30] — the README indicates a token-bucket rate limiter; behavior under concurrent agent calls (multiple parallel DeepSeek-V4-Flash sessions hitting the MCP simultaneously) needs stress-testing before prod. Likely okay; verify before commit.
+3. **Token-bucket rate-limiter under concurrent FastMCP load** **`[TENTATIVE 2026-05-29]`** — `src/polymarket_mcp/utils/rate_limiter.py` implements category-scoped token buckets; `tests/test_performance.py` has 100-concurrent benchmark. Multi-agent prod soak still required before commit.
 
-4. **Single release (v0.1.0)** — the repo is at v0.1.0 still. Either the author considers it stable enough not to bump versions, or they've stopped iterating. The 2026-04-03 last-push date is recent so probably the former; verify by inspecting recent commits.
+4. **Single release (v0.1.0)** — the repo is at v0.1.0 still. Either the author considers it stable enough not to bump versions, or they've stopped iterating. The 2026-04-30 last-push date is recent so probably the former; verify by inspecting recent commits.
 
 5. **Polymarket TOS / regulatory exposure** — autonomous trading on prediction markets has its own regulatory profile (varies by jurisdiction; CFTC/state-level). **Pre-deployment gate**: legal review of Cemini's specific deployment configuration vs Polymarket's TOS + applicable regulation.
 

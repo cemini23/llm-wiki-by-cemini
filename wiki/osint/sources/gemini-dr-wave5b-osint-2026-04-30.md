@@ -139,13 +139,13 @@ Per the Wave 2/3/4/5A protocol, 4 URLs were verified via Exa `crawling_exa` agai
 - **URL 16: warproxxx/poly_data** — **GPL-3.0 (verified Exa repo-level)**. Comprehensive Polymarket data pipeline. **Reject**: license-metadata-discrepancy (GPL-3.0 LICENSE vs MIT pyproject.toml metadata; LICENSE file is canonical). 1,578 stars don't override license fact. Poison-pill family A (copyleft).
 - **URL 17: evan-kolberg/prediction-market-backtesting** — **GPL-3.0 + LGPL-3.0** (mixed copyleft). Advanced backtesting on NautilusTrader for Kalshi/Polymarket. **Reject**: poison-pill family A. Plus: massive local Hive-partitioned full-book Parquet mirrors footprint blowing any local hardware budget.
 
-### Per-URL summaries — Unavailable (5)
+### Per-URL summaries — Unavailable (5) — re-fetched 2026-05-29
 
-- URL 1: huggingface.co/inclusionAI/Ling-2.6-1T — network/access blocked
-- URL 4: Dirac-Robot/CoMeT-CC — connection error
-- URL 5: CheswickDEV/claude-opus-4.7-prompt-optimizer — connection error
-- URL 10: patrickelmore.com context-pollution-debris-not-capacity blog post — connection error
-- URL 18: kruschdev/pg-git-mcp — connection error
+- URL 1: `huggingface.co/inclusionAI/Ling-2.6-1T` — **`[TENTATIVE]`** reachable; HF card license **MIT**; model weights eval deferred.
+- URL 4: `Dirac-Robot/CoMeT-CC` — **`[CONFIRMED]`** reachable; **PolyForm Noncommercial 1.0.0** — Reject for prod/IP-sale.
+- URL 5: `CheswickDEV/claude-opus-4.7-prompt-optimizer` — **`[TENTATIVE]`** reachable; MIT; 15★ prompt-extraction reference.
+- URL 10: patrickelmore.com context-pollution blog — **`[CONFIRMED]`** HTTP 200; content not deep-read this wave.
+- URL 18: `kruschdev/pg-git-mcp` — **`[TENTATIVE]`** reachable; README claims **ISC**; 2★ pgvector semantic-git experiment.
 
 These are reasonable Tier-2 gap-fill targets for a future workflow re-evaluation pass.
 
@@ -168,13 +168,13 @@ These are reasonable Tier-2 gap-fill targets for a future workflow re-evaluation
 - **URL 9 BridgeWard license** [CONFIRMED 2026-05-17] — `github.com/bridge-mind/bridgeward` repo-level LICENSE = **MIT** (confirmed via Exa crawl + ClaudePluginHub listing). Clean for IP-sale-readiness. Steal-from verdict's license footing holds. Note: this is `bridge-mind/bridgeward` (BridgeMind suite, sole contributor matthewmiller2925, 24★, created 2026-04-30) — not to be confused with unrelated CC-BY-SA-4.0 skills in the same prompt-injection space.
 - **URL 9 BridgeWard runtime** [CONFIRMED 2026-05-17] — verified local-only: the README's "What BridgeWard Is Not" section states explicitly "Not a classifier model. **No ML inference, no API calls.** Pure reasoning discipline encoded as instructions." The `injection-auditor` is a read-only subagent (cannot write/edit/execute, cannot follow instructions in audited content). No external API — the good outcome; the Steal-from extract (regex red-flag patterns + refusal templates + auditor concept) is sound.
 - **URL 11 poly-maker license** [CONFIRMED 2026-05-17] — `github.com/warproxxx/poly-maker` repo-level LICENSE = **MIT** (Exa crawl confirmed: "License: MIT"). Despite warproxxx also authoring GPL-3.0 poly_data (URL 16), poly-maker itself is cleanly MIT-licensed. Steal-from verdict's license footing holds. Caveat unchanged: `poly_merger` is built on open-source Polymarket code and has a Node.js dependency.
-- **URL 11 poly-maker JS-to-Python conversion** [NEEDS VERIFICATION 2026-04-30] — feasibility of rewriting `poly_merger` Node.js logic to Python natively.
-- **URL 12 Polymarket-BTC-15-Min-Bot Python 3.14+ feature dependency** [NEEDS VERIFICATION 2026-04-30] — which exclusive Python 3.14+ features (asyncio task groups, advanced typing) are mandated by code.
-- **URL 13 polymarket-orderbook-substreams remote subscription** [NEEDS VERIFICATION 2026-04-30] — feasibility of consuming via The Graph or Pinax-managed infrastructure (avoids local Substreams indexer overhead).
-- **URL 14 polymarket-mcp-server rate-limiter under load** [NEEDS VERIFICATION 2026-04-30] — token-bucket algorithm under concurrent FastMCP load.
-- **URL 14 polymarket-mcp-server secret management** [NEEDS VERIFICATION 2026-04-30] — `.env`-injected POLYMARKET_PASSPHRASE in Docker is acceptable for solo-dev but needs hardening for prod.
-- **URL 17 prediction-market-backtesting subset salvage** [NEEDS VERIFICATION 2026-04-30] — corporate legal review for extractable non-GPL subset (charting / mathematical helpers).
-- **5 Unavailable URLs** [NEEDS VERIFICATION 2026-04-30] — re-fetch Ling-2.6-1T, CoMeT-CC, claude-opus-4.7-prompt-optimizer, patrickelmore.com, kruschdev/pg-git-mcp.
+- **URL 11 poly-maker JS-to-Python conversion** **`[TENTATIVE 2026-05-29]`** — `poly_merger/` is ~140 LOC Node (`merge.js` + ethers v5 Safe helpers); logic = `mergePositions` on ConditionalTokens/NegRisk — **clean-room Python/web3.py port feasible**; Cemini posture remains steal `trading.py` patterns, not runtime Node dependency.
+- **URL 12 Polymarket-BTC-15-Min-Bot Python 3.14+ feature dependency** **`[RETRACTED 2026-05-29]`** — README badge only; scanned `bot.py`/`15m_bot_runner.py` show no 3.14-exclusive syntax (no TaskGroup/template strings/`except*`). Burden = **runtime pin**, not language features; repo still NO-GO (no LICENSE, abandoned).
+- **URL 13 polymarket-orderbook-substreams remote subscription** **`[CONFIRMED 2026-05-29]`** — hosted `.spkg` + Pinax `polygon.substreams.pinax.network:443` works without local indexer; API key required. Reference-only for Cemini (official Gamma/CLOB APIs remain default).
+- **URL 14 polymarket-mcp-server rate-limiter under load** **`[TENTATIVE 2026-05-29]`** — `rate_limiter.py` implements per-category token buckets; `tests/test_performance.py` includes 100-concurrent-check harness. Multi-agent prod soak still pending before live trading.
+- **URL 14 polymarket-mcp-server secret management** **`[CONFIRMED 2026-05-29]`** — `.env.example` + docker-compose `${POLYGON_PRIVATE_KEY}` pattern; **solo-dev/laptop OK**; prod must migrate to secrets manager before funded trading (Cemini house policy unchanged).
+- **URL 17 prediction-market-backtesting subset salvage** **`[RETRACTED 2026-05-29]`** — repo LICENSE declares **mixed LGPLv3 + MIT** with NautilusTrader-derived paths; no clean non-copyleft subset without legal review — **Reject stands**, charting/math helpers not safely extractable.
+- **5 Unavailable URLs** **`[CONFIRMED 2026-05-29]`** re-fetch — all reachable now: Ling-2.6-1T (HF, MIT card), CoMeT-CC (**PolyForm Noncommercial** → Reject), claude-opus-4.7-prompt-optimizer (MIT), patrickelmore.com (HTTP 200), pg-git-mcp (ISC README badge). Tier-2 re-eval optional for MIT/ISC items only.
 
 ## Snippets
 

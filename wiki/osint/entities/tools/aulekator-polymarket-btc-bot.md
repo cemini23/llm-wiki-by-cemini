@@ -13,7 +13,7 @@ related:
   - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
 maturity: validated
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -75,7 +75,7 @@ This is the **single most operationally aligned K44 candidate** for the existing
 | G2 | License verification | **FAIL** | **No LICENSE file in repo**; MIT claim from K44 eval is unverified — auto-reject under Cemini house policy |
 | G3 | Polymarket adapter | **PASS** (TOS-safe) | py-clob-client 0.34.5 SDK for CLOB execution + Gamma API monkey-patch for market discovery. No scraping. Env-var credentials only. Architecture is **production-grade** even though bot is abandoned |
 | G4 | NautilusTrader version | **PASS** | Pinned to 1.222.0 release tag, not forked, upstream-trackable |
-| G5 | Python 3.14+ requirement | **PASS-burdensome** | Hard-required (3.14 confirmed via .pyc). Cemini-prod on 3.12/3.13 = upgrade burden |
+| G5 | Python 3.14+ requirement | **PASS-burdensome** | README badge claims 3.14+; **`[RETRACTED 2026-05-29]`** no 3.14-exclusive syntax in scanned entrypoints — runtime pin only. Cemini-prod on 3.12/3.13 = upgrade burden if ever adopted (bot remains NO-GO) |
 | G6 | Binance/Coinbase TOS | **PASS** | Public WebSocket/REST endpoints only; no API keys in code/config; env-var pattern correct |
 | G7 | Backtesting harness | **FAIL** | No BacktestEngine usage; live-trading-only; 15-min bar strategy unvalidated against history; only unit tests, no historical replay |
 | G8 | Failure modes / credential hygiene | **MEDIUM-RISK** | No hardcoded keys, env-vars only, no `.env` in git ✓. BUT: single-thread async with no documented crash recovery |
