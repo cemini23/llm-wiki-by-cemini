@@ -16,6 +16,8 @@ related:
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - concepts/cemini-backtest-report-kit.md
+  - concepts/world-cup-advance-market-bot-v1.md
+  - entities/tools/world-cup-bot.md
 
 maturity: validated
 created: 2026-05-13
@@ -33,6 +35,7 @@ updated: 2026-05-29
 - @sources/alterego-eth-polymarket-endpoint-cheatsheet.md — K51 @AlterEgo_eth cheat sheet; added keyset pagination + `/tags` + `closed=false` filters
 - @concepts/polymarket-bot-architecture.md — bot playbook that assumes correct Gamma/CLOB split
 - @concepts/polymarket-api-reference.md — canonical five-surface endpoint index Gamma is part of
+- @concepts/world-cup-advance-market-bot-v1.md — K82 WC scanner uses Gamma for advance-market discovery + reward params
 
 ## Raw Concept
 

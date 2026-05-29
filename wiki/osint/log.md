@@ -1,5 +1,31 @@
 # Wiki Log
 
+## [2026-05-29] build + eval | World Cup Bot calendar guard + GitHub Phase-0
+
+**Repo:** [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) — vendored CC0 fixtures, `calendar_guard` module, 4 pytest tests.
+
+- **1 source** — `world-cup-github-repo-eval-2026-05-29.md` (29-repo Phase-0)
+- **1 entity** — `openfootball-worldcup-json.md`
+- **2 updated** — `world-cup-bot.md`, `world-cup-advance-market-bot-v1.md`
+
+## [2026-05-29] file-back | World Cup Bot — public repo reserved
+
+**Repo:** [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) — product name **World Cup Bot**; MIT; README/SETUP/SECURITY only (no secrets).
+
+- **1 entity** — `entities/tools/world-cup-bot.md`
+- **1 updated** — `concepts/world-cup-advance-market-bot-v1.md` (public/private boundary table, repo URL, timeline)
+- **Local clone:** `~/Desktop/projects/world-cup-bot`
+
+## [2026-05-29] ingest | K82 — World Cup advance-market bot research wave
+
+**Sources:** 4× Gemini DR docx + 35 YouTube videos (4 batches). Raw → `cemini-librarian:/opt/cemini-bulk/research/` after SCP.
+
+- **5 sources** — `gemini-world-cup-market-structure-research-2026-05-29`, `gemini-polymarket-lp-rewards-world-cup-2026-05-29`, `gemini-sports-prediction-bot-pitfalls-2026-05-29`, `gemini-world-cup-squad-mispricing-analysis-2026-05-29`, `world-cup-youtube-research-compilation-2026-05-29`
+- **4 concepts** — `world-cup-advance-market-bot-v1` (OSS + Cemini module spec), `world-cup-2026-group-conviction-matrix`, `polymarket-sports-lp-operating-rules`, plus WC sections on existing pages
+- **8 updated** — `polymarket-lp-bot-phase0-spec`, `polymarket-lp-rewards-farming`, `cross-venue-arbitrage-pattern`, `cemini-egress-fi`, `polymarket-gamma-api`, `kalshi`, `polymarket-sports-microstructure-bot-taxonomy`, `index.md`
+- **Price posture:** runtime Gamma/CLOB only — no hardcoded mids; prod keys on `cemini-prod` / egress-fi
+- **Pending:** Gemini report #5 (PM↔Kalshi ticker map); DeadBall Group B; bot code + Outlier Weekly Issue 3 (2026-06-03)
+
 ## [2026-05-29] ingest | K79 SMB Capital YouTube batch 10 (3 videos)
 
 **Source:** hidden RS, gap mistakes, drawdown cure → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-01-24-transcripts.md`

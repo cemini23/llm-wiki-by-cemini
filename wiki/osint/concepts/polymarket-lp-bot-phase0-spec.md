@@ -21,6 +21,9 @@ related:
   - concepts/cemini-backtest-report-kit.md
   - meta/pm-lp-backtest-cadence.md
   - concepts/lp-algorithm-live-promotion-gates.md
+  - concepts/world-cup-advance-market-bot-v1.md
+  - concepts/polymarket-sports-lp-operating-rules.md
+  - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
 maturity: draft
 created: 2026-05-21
 updated: 2026-05-29
@@ -39,6 +42,8 @@ clusters: [polymarket, market-making, phase-0]
 - @concepts/polymarket-lp-weather-guard.md — pre-resolution exit when weather pass enabled
 - @concepts/cemini-backtest-report-kit.md — laptop LP spread sweep + HTML report before shadow-live
 - @meta/pm-lp-backtest-cadence.md — quarterly re-run ritual
+- @concepts/world-cup-advance-market-bot-v1.md — K82 sports/WC vertical implementing this architecture for FIFA advance markets
+- @concepts/polymarket-sports-lp-operating-rules.md — sports-specific cancel/fill invariants (6–10h pre-kickoff)
 
 ## Raw Concept
 
@@ -182,6 +187,21 @@ Run **MCPT** (@concepts/monte-carlo-permutation-test-mcpt.md) on 7-day shadow **
 2. **Alert channel** — reuse Cemini operator notify or new?
 3. **Boosted markets** — auto-prioritize Neymar-style 94¢ / tight-spread setups or manual whitelist only?
 4. **Concurrent workstreams** — LP bot runs alongside weather/taker bots; shared wallet or sub-account?
+
+### K82 extension — World Cup advance markets (2026-05-29)
+
+See @concepts/world-cup-advance-market-bot-v1.md for the full vertical spec. Delta vs this Phase-0 politics/geopolitics template:
+
+| Parameter | Phase-0 default | WC sports override |
+|-----------|-----------------|-------------------|
+| Mid band filter | 40–60¢ priority | 20–80¢ conviction + 90¢+ bilateral mode |
+| Resolution horizon | ≥14 days | Group-stage calendar; **hard exclude** if kickoff &lt;10h |
+| Rotation trigger | 4–6h + mid move 2¢ | **Match calendar guard** T-6h cancel all |
+| Fill handler | Limit exit 60s | Same + **queue depletion** ($300) + draw awareness |
+| Forecaster pool floor | $300/day | $300–600/day per team (Apr 2026 sports boost) |
+| Capital sweet spot | $200 tier | **$2–3K** per Gemini + live-test synthesis |
+
+WC bot is the **first Phase-1 implementation candidate** for this spec — public OSS + Cemini module, prices from Gamma/CLOB at runtime (no hardcoded mids).
 
 ## Snippets
 

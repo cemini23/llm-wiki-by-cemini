@@ -22,6 +22,8 @@ related:
   - concepts/polymarket-lp-bot-phase0-spec.md
   - entities/tools/polymarket-near-resolution-bot.md
   - concepts/cemini-backtest-report-kit.md
+  - concepts/world-cup-advance-market-bot-v1.md
+  - entities/tools/world-cup-bot.md
 
 maturity: validated
 created: 2026-05-13
@@ -42,6 +44,7 @@ updated: 2026-05-29
 - @entities/tools/polymarket-websocket-api.md — realtime push layer over the same CLOB order book
 - @concepts/polymarket-bot-architecture.md — bot playbook; 6-layer websocket system applies on top of CLOB reads
 - @concepts/polymarket-api-reference.md — canonical five-surface endpoint index CLOB is part of
+- @concepts/world-cup-advance-market-bot-v1.md — K82 WC bot posts limits + fill exits via authenticated CLOB
 
 ## Raw Concept
 

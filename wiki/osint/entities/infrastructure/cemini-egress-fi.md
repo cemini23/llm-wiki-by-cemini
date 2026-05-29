@@ -14,6 +14,7 @@ related:
   - entities/tools/camofox-browser.md
   - entities/tools/hl-funding-sniper.md
   - concepts/trading-dashboard-api-wiring.md
+  - concepts/world-cup-advance-market-bot-v1.md
 maturity: draft
 created: 2026-05-19
 updated: 2026-05-29
@@ -30,6 +31,7 @@ updated: 2026-05-29
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — @spottr_trade Post 7 (0-block vs detection)
 - @entities/tools/camofox-browser.md — K71: camofox is laptop-only; not deployed on egress-fi
 - @entities/tools/hl-funding-sniper.md — K72: **no** funding bot on egress; HL orders stay prod EMS + `HYPERLIQUID_PROXY`
+- @concepts/world-cup-advance-market-bot-v1.md — K82 World Cup Bot PM order POST routes through this relay
 
 ## Raw Concept
 

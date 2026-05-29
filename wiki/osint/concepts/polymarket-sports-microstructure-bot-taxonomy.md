@@ -7,9 +7,11 @@ related:
   - sources/trading-posts-compilation-20-2026-05-27.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
+  - concepts/world-cup-advance-market-bot-v1.md
+  - sources/world-cup-youtube-research-compilation-2026-05-29.md
 maturity: draft
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -17,6 +19,7 @@ updated: 2026-05-27
 - @sources/trading-posts-compilation-20-2026-05-27.md — Post 14 (@RetroValix)
 - @concepts/polymarket-updown-bot-taxonomy.md — K52 **crypto Up/Down** 6-type taxonomy (different market class)
 - @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — same author, prior Up/Down post
+- @concepts/world-cup-advance-market-bot-v1.md — K82 advance-market LP is Type 2 (stale probability) + conviction overlay, not in-play microstructure
 
 ## Raw Concept
 

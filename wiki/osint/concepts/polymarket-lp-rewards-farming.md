@@ -25,6 +25,10 @@ related:
   - concepts/zero-trade-edge-signal-diagnostics.md
   - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
   - concepts/cemini-backtest-report-kit.md
+  - concepts/world-cup-advance-market-bot-v1.md
+  - concepts/polymarket-sports-lp-operating-rules.md
+  - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
+  - sources/world-cup-youtube-research-compilation-2026-05-29.md
 maturity: validated
 created: 2026-05-20
 updated: 2026-05-29
@@ -47,6 +51,9 @@ clusters: [polymarket, market-making, yield-farming]
 - @concepts/polymarket-lp-bot-phase0-spec.md — Phase-0 implementation spec (K56 follow-up, design-only)
 - @concepts/polymarket-lp-weather-market-discovery.md — Cemini weather LP discover pass + retail validation (Seoul/Warsaw May 2026)
 - @concepts/polymarket-lp-weather-guard.md — pre-resolution exit on accidental weather LP fills
+- @concepts/world-cup-advance-market-bot-v1.md — K82 FIFA advance-market LP vertical (OSS + Cemini)
+- @concepts/polymarket-sports-lp-operating-rules.md — sports cancel/fill rules (6–10h pre-kickoff)
+- @sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md — WC LP economics deep-read
 
 ## Raw Concept
 

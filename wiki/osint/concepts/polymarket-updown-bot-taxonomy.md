@@ -13,6 +13,7 @@ related:
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
   - concepts/polymarket-sports-microstructure-bot-taxonomy.md
+  - sources/gemini-sports-prediction-bot-pitfalls-2026-05-29.md
   - concepts/polymarket-lp-rewards-farming.md
   - entities/people/gustafssonkotte.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md

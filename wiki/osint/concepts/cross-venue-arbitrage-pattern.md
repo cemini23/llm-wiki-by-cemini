@@ -31,9 +31,14 @@ related:
   - entities/tools/aruneshdev-kalshi-weather-xgboost.md
   - concepts/cemini-backtest-report-kit.md
   - meta/cross-venue-backtest-cadence.md
+  - concepts/world-cup-advance-market-bot-v1.md
+  - sources/gemini-world-cup-squad-mispricing-analysis-2026-05-29.md
+  - sources/gemini-sports-prediction-bot-pitfalls-2026-05-29.md
+  - sources/gemini-world-cup-market-structure-research-2026-05-29.md
+  - sources/world-cup-youtube-research-compilation-2026-05-29.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-24
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -59,6 +64,9 @@ updated: 2026-05-24
 - @entities/tools/aruneshdev-kalshi-weather-xgboost.md — K66: Kalshi-origin weather ML; Polymarket port per @AlterEgo_eth
 - @concepts/cemini-backtest-report-kit.md — Phase 3 laptop divergence lab (`scripts/cross_venue_backtest/`)
 - @meta/cross-venue-backtest-cadence.md — quarterly re-run ritual
+- @concepts/world-cup-advance-market-bot-v1.md — K82 FIFA advance-market alert-only scanner (v1)
+- @sources/gemini-world-cup-squad-mispricing-analysis-2026-05-29.md — book vs PM/Kalshi divergence table
+- @sources/world-cup-youtube-research-compilation-2026-05-29.md — SharpMoney Kalshi API + Dextrabot cross-venue mechanics
 
 ## Raw Concept
 
@@ -180,6 +188,20 @@ Recommended: standalone service for v1; bundle later if operations show that res
 - Hardcoded configuration values (re-tune for Cemini's cost/latency profile)
 
 The pattern is the asset, not the code.
+
+### K82 extension — World Cup advance markets (alert-only v1)
+
+@concepts/world-cup-advance-market-bot-v1.md applies this loop to **FIFA 2026 group-stage advance** contracts on Polymarket vs Kalshi. Key deltas vs BTC hourly arb:
+
+| Dimension | BTC arb reference | WC advance v1 |
+|-----------|-------------------|---------------|
+| Contract mapping | Same underlying, different tickers | **Semantic rules match** mandatory — UMA (PM) vs ESPN/FOX (Kalshi); 90-min vs ET |
+| Execution | Auto both legs | **Alert-only** — human or Phase-2 auto after ticker map validated |
+| Threshold | Fee + gas + slippage | **≥5pp** after venue fees; ignore &lt;3pp noise |
+| Price source | CLOB + Kalshi API at runtime | Same — **no hardcoded mids**; prod Gamma/CLOB keys on `cemini-prod` |
+| Inventory risk | Short horizon | Squad news / injury repricing — scanner is signal, LP bot handles inventory |
+
+Pending Gemini report #5 for full PM↔Kalshi ticker map. See @sources/gemini-world-cup-squad-mispricing-analysis-2026-05-29.md for divergence seeds (USA, Mexico, Switzerland, England).
 
 ## Snippets
 

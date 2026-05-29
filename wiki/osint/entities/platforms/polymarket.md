@@ -89,6 +89,8 @@ related:
   - sources/nber-w10504-wolfers-zitzewitz-prediction-markets-2004.md
   - concepts/prediction-markets-efficiency-wolfers-zitzewitz.md
   - entities/tools/momentum-odds.md
+  - concepts/world-cup-advance-market-bot-v1.md
+  - sources/gemini-world-cup-market-structure-research-2026-05-29.md
 
 maturity: validated
 created: 2026-04-23

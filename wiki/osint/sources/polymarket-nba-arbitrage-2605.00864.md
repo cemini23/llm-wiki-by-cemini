@@ -9,6 +9,7 @@ related:
   - concepts/cross-venue-arbitrage-pattern.md
   - entities/platforms/polymarket.md
   - concepts/polymarket-market-making-architectures.md
+  - sources/gemini-sports-prediction-bot-pitfalls-2026-05-29.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-09
