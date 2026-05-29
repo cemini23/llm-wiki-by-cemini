@@ -7,10 +7,11 @@ related:
   - concepts/agent-cost-routing-model-orchestra.md
   - entities/models/kimi-k2-6.md
   - entities/models/opus-4-7.md
+  - entities/tools/hermes-agent.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -18,6 +19,8 @@ updated: 2026-05-12
 - `@concepts/agent-cost-routing-model-orchestra.md` — distilled architecture concept
 - `@entities/models/kimi-k2-6.md` — Kimi K2.6 model entity
 - `@entities/models/opus-4-7.md` — Opus 4.7 model entity (sibling)
+
+- `@entities/tools/hermes-agent.md` — Hermes platform entity (Nous Research)
 
 ## Raw Concept
 
@@ -49,7 +52,9 @@ See `@concepts/agent-cost-routing-model-orchestra.md` for the distilled framewor
 
 ### About "Hermes"
 
-"Hermes" appears to be an agent platform with `/model`, `/branch`, `/reasoning`, `/queue`, `/insights`, `/rollback`, `/sage` slash commands. Specific vocabulary doesn't exactly match Claude Code, Augment Code, Factory.ai, or Kilo Code — could be alias, separate platform, or composite. **`[NEEDS VERIFICATION 2026-05-12]`** what "Hermes" is.
+**`[CONFIRMED 2026-05-29]`** — "Hermes" in this thread is **Nous Research's `hermes-agent`** (MIT, ~172k★): terminal TUI + gateway with slash-command autocomplete and provider-agnostic model switching (`hermes model`, OpenRouter/Moonshot routes). Not a Kilo Code / Augment / Factory.ai alias. See @entities/tools/hermes-agent.md.
+
+Playbook slash vocabulary (`/branch`, `/queue`, `/rollback`, `/sage`) aligns with Hermes-style agent UX; full command list not independently enumerated in Wave 10 — verify against Hermes docs before quoting verbatim.
 
 Lessons port to Claude Code regardless — the auxiliary-routing + thinking-mode-bloat + scope-lock patterns are model-agnostic.
 
@@ -106,10 +111,10 @@ Cemini already runs DeepSeek (price-competitive with Kimi); main-model savings a
 - Default-routing 3-word session titles to Opus 4.7 — author's load-bearing example.
 - Single-default-model assumption — auxiliary routing is independent of main-model choice.
 
-## NEEDS VERIFICATION
+## Verification status (Wave 10, 2026-05-29)
 
-- `[NEEDS VERIFICATION 2026-05-12]` "Hermes" platform identity — could be alias for Kilo Code, Augment, Factory.ai, or separate.
-- `[NEEDS VERIFICATION 2026-05-12]` SWE-Bench Pro scores (58.6 / 57.7 / 53.4) — cross-check against Artificial Analysis or BigCodeBench leaderboards.
-- `[NEEDS VERIFICATION 2026-05-12]` Cache pricing ($0.15/M input) — verify against Moonshot's current pricing page.
-- `[NEEDS VERIFICATION 2026-05-12]` Kilo Code "KiloClaw" published numbers — find CEO's public statement.
-- `[NEEDS VERIFICATION 2026-05-12]` `@nrehiew_` Zig inference engine tweet (Apr 20) — verify content matches author's restatement.
+- **`[CONFIRMED 2026-05-29]`** Hermes platform = `NousResearch/hermes-agent` (MIT, Nous Research).
+- **`[TENTATIVE 2026-05-29]`** Kimi K2.6 cache pricing — third-party mirrors of Moonshot pricing (May 2026) show **cache-hit ~$0.10–0.16/M input**; author's **$0.15/M** figure is plausible for cache hits. **Cache-miss K2.6 input ~$0.95/M** (not K2.5's $0.60/M) — restate cost math when citing K2.6 specifically.
+- **`[NEEDS VERIFICATION 2026-05-12]`** SWE-Bench Pro scores (58.6 / 57.7 / 53.4) — cross-check against Artificial Analysis or BigCodeBench leaderboards.
+- **`[NEEDS VERIFICATION 2026-05-12]`** Kilo Code "KiloClaw" published numbers — find CEO's public statement.
+- **`[NEEDS VERIFICATION 2026-05-12]`** `@nrehiew_` Zig inference engine tweet (Apr 20) — verify content matches author's restatement.

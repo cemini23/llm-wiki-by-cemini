@@ -9,6 +9,7 @@ related:
   - concepts/tool-evaluation-framework.md
   - concepts/reasoning-models.md
   - concepts/multi-agent-trading.md
+  - entities/tools/hermes-agent.md
   - entities/models/kimi-k2-6.md
   - sources/x-kirillk-kimi-agent-swarm-guide-2026-05-24.md
   - concepts/kimi-agent-swarm-vs-claude-agent-teams.md
@@ -17,7 +18,7 @@ related:
   - entities/tools/awesome-ai-agents-2026-zijian.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-24
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -137,9 +138,9 @@ Cemini already runs **DeepSeek hosted Chat Completions API** (`deepseek-chat` or
 
 ### Verification needed
 
+- **`[CONFIRMED 2026-05-29]`** "Hermes" = `NousResearch/hermes-agent` (Nous Research MIT agent platform). See @entities/tools/hermes-agent.md.
+- **`[TENTATIVE 2026-05-29]`** Kimi K2.6 cache pricing — cache-hit **~$0.10–0.16/M input** (Moonshot pricing mirrors, May 2026); author's **$0.15/M** plausible on hits; **miss-rate K2.6 ~$0.95/M input**.
 - `[NEEDS VERIFICATION 2026-05-12]` Specific SWE-Bench Pro scores (58.6 / 57.7 / 53.4) — cross-check against Artificial Analysis or BigCodeBench leaderboards before quoting in any external brief.
-- `[NEEDS VERIFICATION 2026-05-12]` Kimi K2.6 cache pricing ($0.15/M) — verify on Moonshot pricing page.
-- `[NEEDS VERIFICATION 2026-05-12]` "Hermes" agent platform identity — could be alias for one of Augment / Factory.ai / Kilo Code's product, OR a separate platform; the playbook's specific slash-command vocabulary (`/branch`, `/queue`, `/sage`, `/insights`, `/rollback`) doesn't exactly match Claude Code defaults.
 
 ## Snippets
 

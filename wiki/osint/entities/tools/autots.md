@@ -10,7 +10,7 @@ related:
   - concepts/cemini-license-posture.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-17
+updated: 2026-05-29
 gemini_eval_doc1_url: 9
 phase_0_verdict: CONDITIONAL-GO 2026-05-17 (MIT verified, MCP server real; conditions — resource benchmark on Hetzner box + torch-extra exclusion)
 adoption_status: PHASE-0-COMPLETE 2026-05-17
@@ -33,7 +33,7 @@ adoption_status: PHASE-0-COMPLETE 2026-05-17
 
 ## Narrative
 
-Automated time-series forecasting library; per Gemini eval won the M6 2023 financial-forecasting competition (`[NEEDS VERIFICATION 2026-05-12]`). MCP-compatible with scikit-learn API idioms. Direct integration target for Cemini's analyst-node prediction layer.
+Automated time-series forecasting library; **`[CONFIRMED 2026-05-29]`** author paper in-repo (`docs/catlin_m6_paper.tex`) documents AutoTS deployment in the **M6 Competition** and claims **won the investment decision challenge** (probabilistic monthly stock-basket forecasting). MCP-compatible with scikit-learn API idioms. Direct integration target for Cemini's analyst-node prediction layer.
 
 ### Integration vector
 
@@ -43,7 +43,7 @@ Schedule Phase-0 audit (license verification, runtime resource profile, MCP serv
 
 - Resource footprint (RAM + CPU per forecast batch) vs Cemini analyst-node budget
 - MCP compatibility tier (full MCP server vs callable-from-MCP-container)
-- M6 placement claim verification — important if cited externally
+- M6 placement claim — **`[CONFIRMED 2026-05-29]`** via maintainer paper in repo (investment-decision challenge win); cite `catlin_m6_paper.tex` for external material, not Gemini eval alone
 
 ## Phase-0 Audit (2026-05-17)
 
@@ -90,5 +90,5 @@ MIT-clean, mature (6.5 yr, 1,409★, active 1.0.3 release), light 4-package core
 
 1. **Install via the `mcp` extra only** (`pip install autots[mcp]`) — never `[additional]`. The `mcp` group already excludes TensorFlow; do not pull `torch` (TVA path stays disabled on the Hetzner box).
 2. **Benchmark resource footprint** — measure RAM/CPU per forecast batch with classical models only, on a representative ticker panel, against the analyst-node budget before sizing. Core deps are light but the AutoML search itself can be CPU-intensive over many model classes; cap `model_list` to a lightweight subset.
-3. **Verify the M6 2023 competition-placement claim** before citing it in any external Cemini material — `[NEEDS VERIFICATION 2026-05-17]`. Not a blocker for internal adoption.
+3. **Verify the M6 2023 competition-placement claim** before citing it in any external Cemini material — **`[CONFIRMED 2026-05-29]`** via in-repo `docs/catlin_m6_paper.tex` (investment decision challenge). Not a blocker for internal adoption.
 4. Single-maintainer bus factor: acceptable for an MIT lib (fork-safe), no mitigation required beyond pinning a known-good version.

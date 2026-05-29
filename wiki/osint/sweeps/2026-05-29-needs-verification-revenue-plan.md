@@ -7,7 +7,7 @@ updated: 2026-05-29
 
 ## Scope
 
-- **Backlog:** 225 stale tags → **212** after Wave 1 → **~202** after Wave 2 → **~195** after Wave 3 → **198** after Wave 4 → **195** after Wave 5 → **~188** after Wave 6 → **~178** after Wave 7 → **~170** after Wave 8 → **~148** after Wave 9 (2026-05-29)
+- **Backlog:** 225 stale tags → … → **~148** after Wave 9 → **~136** after Wave 10 (2026-05-29)
 - **Priority rule:** revenue path first (Polymarket execution, weather alpha, cross-venue, promotion gates)
 - **Verification rule:** no blind closure — every tag gets live API probe, Exa/web search, or GitHub/license check; outcome → `[CONFIRMED]` / `[TENTATIVE]` / `[RETRACTED]` / honest internal note
 - **Fresh tags (7–14d):** included when revenue-relevant (K79 SMB, K77 quant, Kalshi UI bot)
@@ -157,6 +157,23 @@ updated: 2026-05-29
 **Pages touched:** 17 K79 SMB concepts + `near`, `autots`, `caiovicentino-polymarket-mcp-server`, `gemini-dr-wave5a`, `alash3al-stash`, `x-docx-polymarket-claude-md`
 
 **Backlog after Wave 9:** ~148 open tags (~170 − 22)
+
+### Wave 10 — DONE 2026-05-29 (deployment map + PTA pilot + May-12 cluster, ~12 tags closed)
+
+| Tag / claim | Method | Outcome |
+|-------------|--------|---------|
+| PTA empirical repro | Laptop pilot + librarian ArcticDB | `[TENTATIVE]` — **negative** quintile spread; adoption blocked |
+| PTA micro-anchor | Same pilot | `[TENTATIVE]` — negative on 2017 slice |
+| Hermes platform identity | GitHub `NousResearch/hermes-agent` | `[CONFIRMED]` |
+| Kimi K2.6 cache $0.15/M | Pricing mirrors (May 2026) | `[TENTATIVE]` — plausible cache-hit; miss ~$0.95/M K2.6 |
+| AutoTS M6 win | `docs/catlin_m6_paper.tex` in repo | `[CONFIRMED]` investment-decision challenge |
+| LIF MAU glitch (WW#178) | SEC Q1 + AFR cross-ref | `[CONFIRMED]` |
+| NEAR halving (WW#178 snippet) | nearcore v2.9.0 (Wave 7) | `[CONFIRMED]` |
+| Forrest Chang 120k★ (index) | Entity page GitHub API | `[CONFIRMED]` |
+
+**New artifacts:** `wiki/meta/internal-benchmark-deployment-map.md`, `wiki/meta/pta-backtest-cadence.md`, `scripts/run_pta_backtest.sh`, `scripts/equity_signal_backtest/pta_pilot.py`, `entities/tools/hermes-agent.md`
+
+**Backlog after Wave 10:** ~136 open tags (~148 − 12)
 
 ### Steady state
 

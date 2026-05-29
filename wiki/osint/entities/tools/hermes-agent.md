@@ -4,6 +4,8 @@ type: entity
 tags: [entity, tool, llm-agent, agent-runtime, self-hosted, nous-research, self-improving, k52]
 keywords: [hermes-agent, nous-research, self-hosted-agent, self-improving-skills, persistent-memory, memory-md, user-md, cron-scheduling, messaging-gateway, openclaw-successor]
 related:
+  - sources/x-kimi-k2.6-hermes-routing-playbook-2026-05.md
+  - concepts/agent-cost-routing-model-orchestra.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - sources/trading-posts-compilation-20-2026-05-27.md
@@ -26,6 +28,8 @@ updated: 2026-05-29
 
 ## Relations
 
+- @sources/x-kimi-k2.6-hermes-routing-playbook-2026-05.md — K40 Kimi cost-routing thread; **`[CONFIRMED 2026-05-29]`** "Hermes" billing dashboard = this repo
+- @concepts/agent-cost-routing-model-orchestra.md — auxiliary-model orchestra distilled from Kimi/Hermes playbook
 - @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — Post 5 (@0xMovez), the source that surfaced Hermes Agent
 - @entities/tools/hermes-lcm.md — Lossless Context Management is a context-engine *plugin* for the Hermes Agent ecosystem; this page is the host runtime
 - @concepts/openclaw-security-taxonomy.md — Hermes Agent is positioned as the successor to OpenClaw (formerly Clawdbot / Moltbot); the security taxonomy there is the comparison frame
@@ -50,6 +54,8 @@ What prompted this page: K52 ingest of @0xMovez's X post deploying a Polymarket 
 Hermes Agent is an **open-source, self-hosted AI agent** built by **Nous Research** (the team behind YaRN, Nomos, and the Psyche model families). It is pitched not as a chatbot but as a persistent staff member: it remembers what you tell it, improves at recurring tasks, and stays reachable 24/7 even when your own machine is off. Supports Linux, macOS, and WSL2 (no native Windows).
 
 **Verified 2026-05-18** (GitHub API): `NousResearch/hermes-agent` — **MIT license**, **~156,554★**, repo created **2025-07-22**, last pushed 2026-05-19 (actively maintained), not archived, description "The agent that grows with you." The post's install path (`raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh`) resolves (HTTP 200). Note: the post's "released February 25, 2026" refers to a major version/announcement, not the repo's birth — the project predates that by seven months. Nous Research ships a real ecosystem around it (`hermes-agent-self-evolution`, `hermes-compression-eval`, `hermes-example-plugins`, `Hermes-Function-Calling`). At ~156k★ it is a top-tier project — maturity is not in question; the posture below is about *fit*, not credibility.
+
+**Wave 10 refresh (2026-05-29):** ~172k★; TUI documents slash-command autocomplete + `hermes model` provider switching (OpenRouter, Moonshot/Kimi, etc.). Resolves K40 open question — Hermes is **not** a Kilo Code / Augment alias.
 
 ### Three-layer model (per the @0xMovez / blockmates framing)
 
@@ -78,7 +84,7 @@ One-line installer: `curl -fsSL https://raw.githubusercontent.com/NousResearch/h
 - **Not an adoption candidate for the trading stack.** Cemini already has its own agent orchestration (Conductor / librarian; LangGraph). Hermes Agent is a *consumer-grade personal-agent runtime* — a parallel implementation of capability Cemini already has, which the Phase-0 pattern says not to adopt.
 - **Reference value is real.** The self-improving-skill loop (write a markdown skill after N tool calls, reload it next time) and the `MEMORY.md` / `USER.md` frozen-snapshot pattern are clean ideas worth comparing against Cemini's own memory/skill handling — and against the related @entities/tools/hermes-lcm.md context engine.
 - **Security note.** The post's deployment hands an agent a funded Polygon wallet's private key and runs unattended trading via copy-pasted prompts. That is a high-trust configuration; flagged here, not endorsed. The standard install also pipes a remote script straight into `bash`.
-- **Verified, mature, MIT.** The K52 source was one creator post, but the project itself is confirmed (see above): `NousResearch/hermes-agent`, MIT, ~156k★, actively maintained. The "not a Cemini adoption" verdict is therefore a *fit* decision (it duplicates Conductor), not a credibility one — and if Cemini's orchestration ever needs replacing, Hermes Agent is a serious, license-clean reference rather than a speculative one.
+- **Verified, mature, MIT.** The K52 source was one creator post, but the project itself is confirmed (see above): `NousResearch/hermes-agent`, MIT, ~172k★ (May 2026), actively maintained. The "not a Cemini adoption" verdict is therefore a *fit* decision (it duplicates Conductor), not a credibility one — and if Cemini's orchestration ever needs replacing, Hermes Agent is a serious, license-clean reference rather than a speculative one.
 
 ### K64 community catalog (@Shruti_0810) [TENTATIVE]
 

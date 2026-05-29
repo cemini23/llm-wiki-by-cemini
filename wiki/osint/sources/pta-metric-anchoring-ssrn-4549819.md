@@ -12,10 +12,12 @@ related:
   - entities/infrastructure/timescaledb.md
   - concepts/high-signal-paper-patterns.md
   - sources/lob-regime-detection-hiremath-2026.md
+  - meta/internal-benchmark-deployment-map.md
+  - meta/pta-backtest-cadence.md
 maturity: validated
 read_status: skimmed
 created: 2026-04-29
-updated: 2026-05-17
+updated: 2026-05-29
 clusters: [quant-finance]
 ---
 
@@ -27,6 +29,8 @@ clusters: [quant-finance]
 - @concepts/quant-finance.md — primary cluster hub for quantitative-finance research in the Cemini corpus
 - @concepts/ip-sale-readiness.md — multi-factor models with peer-reviewed academic alpha factors are valuation positives during IP-sale technical due diligence
 - @entities/infrastructure/timescaledb.md — prescribed implementation surface (continuous aggregate over `public.klines` hypertable handles the rolling 52-week-high/low calculation natively)
+- @meta/internal-benchmark-deployment-map.md — **where PTA/backtests run** (laptop compute + librarian data; never prod/egress)
+- @meta/pta-backtest-cadence.md — pilot cadence + command
 
 ## Raw Concept
 
@@ -124,11 +128,27 @@ PTA is the **second** quant-paper-to-Cemini-stack-adoption candidate in the corp
 
 This pattern is now templated. Future quant papers (e.g., if a future Wave surfaces a vol-surface model paper, a microstructure friction estimator, or a regime-detection methodology) follow the same flow.
 
+### Deployment + pilot (2026-05-29)
+
+- **Run:** laptop — `bash scripts/run_pta_backtest.sh`
+- **Data:** cemini-librarian ArcticDB `equity_bars` via SSH (same path as equity momentum lab)
+- **Never:** cemini-prod or cemini-egress-fi
+- **Report:** `.local/reports/pta-pilot-2026-05-29.md`
+
+**Pilot result (simplified quintile replication, 7 symbols, daily bars through ~2017-11):**
+
+| Window | High−low PTA quintile spread (past winners, 21d fwd) |
+|--------|-----------------------------------------------------|
+| 252d (52w) | **−0.16%** (wrong sign vs paper) |
+| 52d micro | **−0.22%** (wrong sign) |
+
+Verdict: **`[TENTATIVE 2026-05-29]`** — pilot executed on correct surfaces; **does not replicate paper direction** on stale ArcticDB slice. Block MAPPO/TimescaleDB adoption until fresher equity history + paper-exact past-winner horizon. See @meta/internal-benchmark-deployment-map.md.
+
 ### Open questions
 
 - **`[CONFIRMED 2026-05-29]`** — SSRN 4549819 abstract + JBF 2026 publication confirm PTA = **price-to-52-week-anchor** blending 52-week high **and** low (not PTH-only); high-PTA past-winners outperform low-PTA past-winners; bond leg on past-loser firms. K9's core summary holds; transaction-cost / sample-period caveats remain in full paper.
-- **[NEEDS VERIFICATION 2026-04-29]**: Empirical reproduction — does the high-PTA-past-winner-outperformance finding hold on a known dataset (CRSP, Wharton WRDS, or Cemini's own historical Polygon equity data once data depth is sufficient)?
-- **[NEEDS VERIFICATION 2026-04-29]**: Does scaled-down PTA (52-day or 52-hour micro-anchor) preserve the predictive signal, or does the signal decay?
+- **`[TENTATIVE 2026-05-29]`** — Empirical reproduction on Cemini librarian slice — pilot **negative** quintile spread (see above); inconclusive reject pending fresher data / methodology match.
+- **`[TENTATIVE 2026-05-29]`** — 52-day micro-anchor — pilot **negative** spread on same slice; no evidence signal preserves at shorter horizon here.
 - **[CONFIRMED 2026-05-17]**: Author identity / institutional affiliation / provenance — verified via SSRN abstract page (Exa crawl 2026-05-17). Authors: **Chen Chen, Sounak Saha, Mobina Shafaati, Licheng Sun** (Old Dominion University — Strome College of Business) and **Chris T. Stivers** (University of Louisville, Finance Dept — corresponding author). Exact title: *"Predicting Cross-Sectional Return Variation in Past-Winner Stocks and Past-Loser Bonds with a Stock's 52-week Price Anchor."* JEL G11/G12/G14; 75 pages; 53 references; 274 downloads. **K9 vintage correction**: posted 2023-08-24, last revised 2024-05-24, date-written 2024-06-04 — this is a **2023/2024 working paper, NOT a 2026 publication**. The "2026 publication" framing in K9 (and propagated into this page's `Vintage` field + `Snippets`) is [RETRACTED 2026-05-17] — see correction below. The abstract also confirms the metric covers **past-WINNER stocks AND past-LOSER corporate bonds** (the bond leg was abstracted away by K9's stock-only summary).
 
 ## Snippets

@@ -147,6 +147,6 @@ See entity stubs in `wiki/entities/tools/` for each URL — frontmatter carries 
 
 ## NEEDS VERIFICATION
 
-- `[NEEDS VERIFICATION 2026-05-12]` AutoTS M6 2023 competition placement — verify against M-competitions official site before any external citation.
+- `[CONFIRMED 2026-05-29]` AutoTS M6 competition placement — maintainer paper `docs/catlin_m6_paper.tex` documents **investment decision challenge win**; see @entities/tools/autots.md.
 - `[NEEDS VERIFICATION 2026-05-12]` voicemode + hunk star counts and last-commit dates — Gemini eval cited 1.2k / 3.8k stars; spot-check before adoption.
 - `[NEEDS VERIFICATION 2026-05-12]` claude-code-ultimate-guide CC-BY-SA-4.0 license — Share-Alike copyleft creates derivation risk; confirm whether "Steal-from" path is "copy ideas, not code" or "fork the repo." The former is fine, the latter triggers SA.

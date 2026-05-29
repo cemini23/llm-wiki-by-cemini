@@ -163,6 +163,14 @@
 
 ---
 
+---
+
+## [2026-05-29] query | NEEDS VERIFICATION sweep Wave 10 (deployment map + PTA pilot + May-12 cluster)
+
+- **~12 tags closed** — Hermes = NousResearch/hermes-agent `[CONFIRMED]`; Kimi cache pricing `[TENTATIVE]`; AutoTS M6 win `[CONFIRMED]`; LIF MAU + NEAR halving WW#178 `[CONFIRMED]`; PTA pilot **FAIL** on librarian slice `[TENTATIVE]`; Forrest Chang stars index fix
+- **New meta + scripts** — `internal-benchmark-deployment-map.md`, `pta-backtest-cadence.md`, `run_pta_backtest.sh`, `pta_pilot.py`; pilot report `.local/reports/pta-pilot-2026-05-29.md`
+- **Routing rule** — all backtests/benchmarks: **laptop compute + librarian data**; prod/egress **brief-only**
+
 ## [2026-05-29] query | NEEDS VERIFICATION sweep Wave 9 (K79 SMB + wave5a/MCP)
 
 - **~22 tags closed** — 17 K79 SMB internal-gate reclassifications; NEAR halving CONFIRMED; AutoTS MIT; MCP pip-licenses clean; stash pipeline structure; Kronos/firnflow internal benchmarks; Forrest Chang stars
