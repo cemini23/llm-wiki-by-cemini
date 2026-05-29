@@ -10,9 +10,10 @@ related:
   - sources/vibe-trading-hkuds.md
   - entities/tools/financetoolkit.md
   - sources/links-2-5-4-tool-eval.md
+  - concepts/equity-fair-value-evaluation.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-05-11
+updated: 2026-05-29
 ---
 
 ## Relations

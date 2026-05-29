@@ -8,9 +8,10 @@ related:
   - entities/tools/zerocortex-ai.md
   - entities/platforms/polymarket.md
   - concepts/polymarket-news-resolution-speed-game.md
+  - sources/trading-posts-compilation-38-2026-05-28.md
 maturity: draft
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 ## Relations

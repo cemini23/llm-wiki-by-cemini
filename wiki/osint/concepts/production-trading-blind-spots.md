@@ -16,9 +16,12 @@ related:
   - sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md
   - concepts/shadow-to-live-transition-engineering.md
   - sources/algorithmic-trading-live-transition-strategies-2026-05-28.md
+  - concepts/equity-fair-value-evaluation.md
+  - concepts/tick-staleness-ingestion-diagnosis.md
+  - sources/low-latency-tick-staleness-diagnosis-2026-05-28.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

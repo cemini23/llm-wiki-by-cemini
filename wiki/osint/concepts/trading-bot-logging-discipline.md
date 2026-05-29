@@ -12,9 +12,11 @@ related:
   - sources/x-polymarket-bot-playbook-punisher-2026-05.md
   - concepts/zero-trade-edge-signal-diagnostics.md
   - sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md
+  - concepts/shadow-to-live-transition-engineering.md
+  - sources/algorithmic-trading-live-transition-strategies-2026-05-28.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

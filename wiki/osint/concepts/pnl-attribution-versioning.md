@@ -13,9 +13,10 @@ related:
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - concepts/shadow-to-live-transition-engineering.md
   - concepts/lp-algorithm-live-promotion-gates.md
+  - entities/tools/fp-dcf.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

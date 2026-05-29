@@ -15,9 +15,11 @@ related:
   - sources/alterego-eth-polymarket-bridge-api.md
   - concepts/polymarket-bot-architecture.md
   - concepts/kalshi-api-reference.md
+  - concepts/trading-dashboard-api-wiring.md
+  - entities/tools/bullpen-cli.md
 maturity: validated
 created: 2026-05-18
-updated: 2026-05-19
+updated: 2026-05-29
 ---
 
 ## Relations

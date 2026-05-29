@@ -7,10 +7,12 @@ related:
   - concepts/polymarket-bot-architecture.md
   - entities/platforms/polymarket.md
   - sources/trading-posts-compilation-38-2026-05-26.md
+  - concepts/production-trading-blind-spots.md
+  - concepts/trading-bot-logging-discipline.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-12
-updated: 2026-05-26
+updated: 2026-05-29
 ---
 
 ## Relations

@@ -19,9 +19,10 @@ related:
   - concepts/markov-regime-switching-models.md
   - concepts/gmm-factor-lens-regime-modeling.md
   - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
+  - concepts/macro-rotation-momentum-signals-2026-05.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-23
+updated: 2026-05-29
 ---
 
 ## Relations

@@ -7,9 +7,10 @@ related:
   - concepts/cemini-backtest-report-kit.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - meta/hl-funding-backtest-cadence.md
+  - meta/kalshi-lp-backtest-cadence.md
 maturity: core
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 ## Relations

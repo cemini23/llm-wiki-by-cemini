@@ -24,9 +24,10 @@ related:
   - concepts/shadow-to-live-transition-engineering.md
   - concepts/zero-trade-edge-signal-diagnostics.md
   - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
+  - concepts/cemini-backtest-report-kit.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-28
+updated: 2026-05-29
 clusters: [polymarket, market-making, yield-farming]
 ---
 

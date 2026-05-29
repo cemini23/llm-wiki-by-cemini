@@ -19,10 +19,11 @@ related:
   - concepts/prediction-market-historical-analysis.md
   - entities/platforms/polymarket.md
   - concepts/koroushak-discretionary-trading-curriculum.md
+  - sources/trading-posts-compilation-6-2026-05-29.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-29
 clusters: [polymarket, trading-posts]
 ---
 

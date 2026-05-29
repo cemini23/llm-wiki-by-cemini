@@ -11,9 +11,14 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/shadow-to-live-transition-engineering.md
   - concepts/polymarket-weather-trading-strategy.md
+  - concepts/brier-score-model-promotion-framework.md
+  - concepts/polymarket-lp-rewards-farming.md
+  - entities/tools/kvrancic-algorithmic-trading-bot.md
+  - sources/diagnosing-trading-model-failures-2026-05-28.md
+  - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

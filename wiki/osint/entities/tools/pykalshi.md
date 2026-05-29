@@ -8,9 +8,10 @@ related:
   - entities/platforms/kalshi.md
   - entities/tools/kalshi-llms-txt.md
   - concepts/kalshi-api-reference.md
+  - concepts/kalshi-ui-automation-bot-pattern.md
 maturity: validated
 created: 2026-05-05
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

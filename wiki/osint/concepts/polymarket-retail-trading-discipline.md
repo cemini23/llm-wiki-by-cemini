@@ -11,9 +11,10 @@ related:
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
   - entities/tools/polymarket-clob-api.md
   - concepts/trading-account-blowup-red-flags-smb.md
+  - entities/tools/polysniper.md
 maturity: draft
 created: 2026-05-22
-updated: 2026-05-22
+updated: 2026-05-29
 clusters: [polymarket, risk]
 ---
 

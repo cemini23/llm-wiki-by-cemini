@@ -15,12 +15,12 @@ related:
   - entities/people/the-smart-ape.md
   - entities/platforms/polymarket.md
   - entities/platforms/hyperliquid.md
-  - @ccc-wiki/briefs/2026-05-27_k72-ccc-workflows-from-osint.md
-  - @seo-wiki/briefs/2026-05-27_k72-seo-obsidian-workflows-from-osint.md
+  - sources/trading-posts-compilation-38-2026-05-28.md
+  - sources/trading-posts-compilation-6-2026-05-29.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-29
 clusters: [trading-posts, polymarket, prediction-markets, claude-workflows]
 ---
 
@@ -35,8 +35,9 @@ clusters: [trading-posts, polymarket, prediction-markets, claude-workflows]
 - @entities/tools/zerocortex-ai.md — Post 9
 - @entities/tools/hl-funding-sniper.md — Post 16
 - @entities/people/the-smart-ape.md — Post 16
-- @ccc-wiki/briefs/2026-05-27_k72-ccc-workflows-from-osint.md
-- @seo-wiki/briefs/2026-05-27_k72-seo-obsidian-workflows-from-osint.md
+- @ccc-wiki/concepts/claude-code-finance-research-setup.md — K72 CCC workflow posts
+- @ccc-wiki/concepts/continual-harness-online-self-improvement.md — K72 harness self-improvement
+- @seo-wiki/concepts/obsidian-integration.md — K72 Obsidian / vault coherence posts
 - @ccc-wiki/concepts/agent-memory-stack-comparison.md
 - @ccc-wiki/concepts/claude-code-finance-research-setup.md
 - @ccc-wiki/concepts/continual-harness-online-self-improvement.md

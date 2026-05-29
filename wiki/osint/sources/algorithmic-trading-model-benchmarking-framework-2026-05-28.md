@@ -9,6 +9,7 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - concepts/lp-algorithm-live-promotion-gates.md
 maturity: draft
+read_status: read
 created: 2026-05-28
 updated: 2026-05-28
 ---

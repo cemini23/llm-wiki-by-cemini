@@ -21,10 +21,11 @@ related:
   - entities/tools/ai-polymarket-agent.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - entities/tools/polymarket-near-resolution-bot.md
+  - concepts/cemini-backtest-report-kit.md
 
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-20
+updated: 2026-05-29
 ---
 
 ## Relations

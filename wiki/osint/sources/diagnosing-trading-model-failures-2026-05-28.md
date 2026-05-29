@@ -8,6 +8,7 @@ related:
   - concepts/zero-trade-edge-signal-diagnostics.md
   - concepts/brier-score-model-promotion-framework.md
 maturity: draft
+read_status: read
 created: 2026-05-28
 updated: 2026-05-28
 ---

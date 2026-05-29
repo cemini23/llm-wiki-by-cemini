@@ -58,10 +58,14 @@ related:
   - concepts/production-trading-blind-spots.md
   - concepts/trading-bot-logging-discipline.md
   - concepts/pnl-attribution-versioning.md
+  - concepts/clean-room-software-design.md
+  - concepts/zero-trade-edge-signal-diagnostics.md
+  - sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md
+  - sources/clean-room-design-proprietary-software-2026-05-28.md
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

@@ -12,9 +12,11 @@ related:
   - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
   - concepts/claude-code-skills-md-workflow.md
   - sources/trading-posts-compilation-20-2026-05-27.md
+  - concepts/cemini-repository-topology.md
+  - concepts/declarative-data-labeling-skills.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

@@ -8,13 +8,11 @@ related:
   - concepts/claude-code-skills-md-workflow.md
   - sources/trading-posts-compilation-20-2026-05-27.md
   - entities/tools/hermes-agent.md
-  - ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md
-  - ccc-wiki/concepts/claude-md-five-section-template.md
-  - ccc-wiki/sources/trading-posts-macro-charts-skills-md-2026-05-28.md
+  - concepts/curator-skills.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 clusters: [trading-posts, equities, claude-workflows]
 ---
 

@@ -11,7 +11,7 @@ related:
   - concepts/claude-ai-trading-operational-workflows-smb.md
   - concepts/pre-market-ai-research-briefing-smb.md
   - concepts/prop-desk-team-trading-collaboration.md
-  - ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md
+  - entities/tools/bullpen-cli.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29

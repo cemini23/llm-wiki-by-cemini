@@ -7,11 +7,13 @@ ticker: NVDA
 related:
   - entities/ticker-watchlist.md
   - sources/american-call-options-pricing-with-modular-neural-networks.md
+  - entities/people/michael-burry.md
+  - sources/youtube-macro-podcasts-batch-2026-05-29.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-23
 created: 2026-04-23
-updated: 2026-05-16
+updated: 2026-05-29
 ---
 
 ## Relations

@@ -15,10 +15,11 @@ related:
   - concepts/polymarket-api-reference.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/cemini-backtest-report-kit.md
 
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-20
+updated: 2026-05-29
 ---
 
 ## Relations

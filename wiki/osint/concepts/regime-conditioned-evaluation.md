@@ -21,9 +21,13 @@ related:
   - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
   - concepts/lp-algorithm-live-promotion-gates.md
   - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
+  - concepts/brier-score-model-promotion-framework.md
+  - concepts/equity-fair-value-evaluation.md
+  - concepts/trading-model-failure-diagnostics.md
+  - sources/algorithmic-trading-model-benchmarking-framework-2026-05-28.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

@@ -5,10 +5,12 @@ tags: [docx, cemini-internal, infrastructure, llm-agents, prediction-markets, ex
 clusters: [llm-agents, prediction-markets, cemini-internal, infrastructure]
 related:
   - concepts/llm-agent-systems.md
+  - concepts/shadow-to-live-transition-engineering.md
+  - sources/algorithmic-trading-live-transition-strategies-2026-05-28.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-05-29
 ---
 
 ## Relations

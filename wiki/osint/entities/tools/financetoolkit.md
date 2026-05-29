@@ -13,9 +13,11 @@ related:
   - entities/tools/financedatabase.md
   - entities/tools/medskillaudit.md
   - concepts/equity-fair-value-evaluation.md
+  - entities/tools/fp-dcf.md
+  - entities/tools/value-investing-tools.md
 maturity: draft
 created: 2026-05-04
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

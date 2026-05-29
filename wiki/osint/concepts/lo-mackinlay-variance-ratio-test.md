@@ -5,9 +5,10 @@ tags: [concept, quant-finance, market-efficiency, variance-ratio, random-walk, b
 keywords: [variance-ratio, lo-mackinlay, market-efficiency, autocorrelation, random-walk, heteroskedasticity-consistent, crsp, backtest-sanity]
 related:
   - sources/lo-mackinlay-1988-variance-ratio.md
+  - concepts/cemini-backtest-report-kit.md
 maturity: validated
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-05-29
 clusters: [quant-finance, market-microstructure]
 ---
 

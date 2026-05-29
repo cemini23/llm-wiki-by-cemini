@@ -11,10 +11,11 @@ related:
   - concepts/cemini-license-posture.md
   - sources/multi-wiki-tool-eval-22url-2026-05-26.md
   - sources/arxiv-epicure-food-embeddings-2605.22391.md
+  - sources/multi-wiki-tool-eval-25url-2026-05-28.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-29
 clusters: [cemini-internal]
 ---
 

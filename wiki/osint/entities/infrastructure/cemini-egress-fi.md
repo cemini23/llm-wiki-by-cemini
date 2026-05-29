@@ -13,9 +13,10 @@ related:
   - concepts/laptop-prod-research-split.md
   - entities/tools/camofox-browser.md
   - entities/tools/hl-funding-sniper.md
+  - concepts/trading-dashboard-api-wiring.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-27
+updated: 2026-05-29
 # Live-probed 2026-05-20 (read-only SSH via cemini-prod jump host). Refresh on spec/role change.
 ---
 

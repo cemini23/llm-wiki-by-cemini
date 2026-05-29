@@ -8,6 +8,7 @@ related:
   - entities/tools/discountifu-polymarket-trading-bot.md
   - concepts/polymarket-bot-architecture.md
 maturity: draft
+read_status: read
 created: 2026-05-28
 updated: 2026-05-28
 ---

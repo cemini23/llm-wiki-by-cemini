@@ -50,6 +50,7 @@ related:
   - sources/youtube-kalshi-bots-batch-2026-05-29.md
   - concepts/kalshi-ui-automation-bot-pattern.md
   - entities/tools/momentum-odds.md
+  - concepts/sports-prediction-consensus-agent.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-05-29

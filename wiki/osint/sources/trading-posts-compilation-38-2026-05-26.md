@@ -28,10 +28,11 @@ related:
   - entities/platforms/polymarket.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - sources/trading-posts-compilation-20-2026-05-27.md
+  - sources/trading-posts-compilation-38-2026-05-28.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-26
-updated: 2026-05-27
+updated: 2026-05-29
 clusters: [trading-posts, polymarket, discretionary-crypto, quant-validation]
 ---
 

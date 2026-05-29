@@ -47,7 +47,7 @@ Prompt-optimization and many RL harness pipelines assume **reset between episode
 | Trajectory memory | stash episodic + wiki log + hot.md |
 | Co-learning | Not deployed — would pair prod rollouts with teacher relabeling |
 
-**Not a prod adoption** — no Pokémon stack on cemini-prod. **CCC relevance:** pairs with K72 Posts on agent memory (mem0, Hermes, Obsidian) in @ccc-wiki/briefs/2026-05-27_k72-ccc-workflows-from-osint.md.
+**Not a prod adoption** — no Pokémon stack on cemini-prod. **CCC relevance:** pairs with K72 Posts on agent memory (mem0, Hermes, Obsidian); see @ccc-wiki/concepts/claude-code-finance-research-setup.md and @ccc-wiki/concepts/continual-harness-online-self-improvement.md
 
 ## Snippets
 

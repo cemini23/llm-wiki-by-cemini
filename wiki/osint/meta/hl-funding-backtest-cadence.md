@@ -4,7 +4,9 @@ type: brief
 tags: [meta, cadence, hyperliquid, backtest]
 related:
   - entities/tools/hl-funding-sniper.md
-updated: 2026-05-27
+  - concepts/cemini-backtest-report-kit.md
+  - meta/pm-lp-backtest-cadence.md
+updated: 2026-05-29
 ---
 
 ## Schedule

@@ -8,9 +8,11 @@ related:
   - concepts/shadow-to-live-transition-engineering.md
   - concepts/prediction-market-statistical-arbitrage.md
   - entities/tools/discountifu-polymarket-trading-bot.md
+  - concepts/clean-room-software-design.md
+  - concepts/tick-staleness-ingestion-diagnosis.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

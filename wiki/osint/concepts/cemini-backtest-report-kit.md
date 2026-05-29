@@ -21,9 +21,10 @@ related:
   - meta/cross-venue-backtest-cadence.md
   - concepts/kalshi-api-reference.md
   - entities/platforms/kalshi.md
+  - sources/trading-posts-compilation-38-2026-05-28.md
 maturity: core
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 ## Relations

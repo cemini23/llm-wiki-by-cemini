@@ -20,9 +20,10 @@ related:
   - concepts/polymarket-lp-weather-guard.md
   - concepts/cemini-backtest-report-kit.md
   - meta/pm-lp-backtest-cadence.md
+  - concepts/lp-algorithm-live-promotion-gates.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-26
+updated: 2026-05-29
 clusters: [polymarket, market-making, phase-0]
 ---
 

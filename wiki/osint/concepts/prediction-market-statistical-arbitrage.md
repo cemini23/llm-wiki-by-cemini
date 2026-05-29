@@ -16,9 +16,12 @@ related:
   - entities/tools/polymarket-near-resolution-bot.md
   - sources/trading-posts-compilation-20-2026-05-27.md
   - concepts/prediction-market-btc-equity-transmission-hedge.md
+  - concepts/clob-rate-limit-mitigation-strategies.md
+  - concepts/shadow-trading-telemetry-accumulation.md
+  - sources/trading-posts-compilation-38-2026-05-28.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-29
 ---
 
 ## Relations

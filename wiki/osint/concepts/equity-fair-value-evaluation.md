@@ -13,9 +13,10 @@ related:
   - concepts/trading-dashboard-api-wiring.md
   - entities/tools/fp-dcf.md
   - entities/tools/value-investing-tools.md
+  - concepts/macro-rotation-momentum-signals-2026-05.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

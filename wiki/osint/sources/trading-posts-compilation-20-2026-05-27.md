@@ -17,10 +17,14 @@ related:
   - concepts/polymarket-bot-architecture.md
   - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
   - concepts/claude-code-skills-md-workflow.md
+  - concepts/cemini-repository-topology.md
+  - concepts/curator-skills.md
+  - sources/trading-posts-compilation-38-2026-05-28.md
+  - sources/trading-posts-compilation-6-2026-05-29.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-27
-updated: 2026-05-28
+updated: 2026-05-29
 clusters: [trading-posts, polymarket, prediction-markets, geo-aeo, claude-workflows]
 ---
 

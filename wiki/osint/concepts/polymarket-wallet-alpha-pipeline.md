@@ -14,6 +14,8 @@ related:
   - concepts/hermes-onchain-forensics-pipeline.md
   - sources/trading-posts-compilation-6-2026-05-29.md
   - entities/platforms/polymarket.md
+  - concepts/x402-agent-micropayments-data-access.md
+  - entities/tools/odds-jam-prediction-insiders.md
 maturity: draft
 created: 2026-05-24
 updated: 2026-05-29

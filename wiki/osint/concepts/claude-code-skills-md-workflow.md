@@ -8,11 +8,12 @@ related:
   - concepts/curator-skills.md
   - entities/tools/hermes-agent.md
   - concepts/cemini-repository-topology.md
-  - ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md
-  - ccc-wiki/concepts/claude-md-five-section-template.md
   - sources/trading-posts-compilation-6-2026-05-29.md
   - sources/smb-capital-youtube-week-2026-04-14.md
   - concepts/claude-code-trading-assistant-workflow-smb.md
+  - concepts/claude-ai-trading-operational-workflows-smb.md
+  - entities/people/damidefi.md
+  - sources/trading-posts-compilation-20-2026-05-27.md
 maturity: draft
 created: 2026-05-28
 updated: 2026-05-29

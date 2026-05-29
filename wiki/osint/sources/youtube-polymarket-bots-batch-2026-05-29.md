@@ -11,6 +11,7 @@ related:
   - entities/tools/bullpen-cli.md
   - entities/tools/polysniper.md
   - entities/tools/odds-jam-prediction-insiders.md
+  - entities/people/alex-monahan.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-29

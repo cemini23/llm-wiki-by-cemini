@@ -44,7 +44,7 @@ Princeton / DeepMind work on **reset-free harness self-improvement** for embodie
 
 **Co-learning extension:** online process-reward loop — open-source agent rollouts relabeled by frontier teacher → weight updates → sustained milestone progress on Red **without environment reset between training iterations**.
 
-**Cemini relevance:** not a trading paper — maps to **harness evolution** for conductor / server-Claude / multi-step research agents (online refinement from trajectories, not batch prompt-tuning). Distinct from Cemini's code-as-harness + MCP stack but informs **self-improving operator loops** and reviewer/refiner automation. See @ccc-wiki/briefs/2026-05-27_k72-ccc-workflows-from-osint.md for workflow posts routed from K72 Posts batch.
+**Cemini relevance:** not a trading paper — maps to **harness evolution** for conductor / server-Claude / multi-step research agents (online refinement from trajectories, not batch prompt-tuning). Distinct from Cemini's code-as-harness + MCP stack but informs **self-improving operator loops** and reviewer/refiner automation. See @ccc-wiki/concepts/continual-harness-online-self-improvement.md for workflow posts routed from K72 Posts batch.
 
 ## Snippets
 

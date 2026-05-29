@@ -11,9 +11,11 @@ related:
   - entities/people/paonx-eth.md
   - entities/tools/crisp-predict.md
   - concepts/polymarket-news-resolution-speed-game.md
+  - concepts/kalshi-ui-automation-bot-pattern.md
+  - entities/tools/polysniper.md
 maturity: draft
 created: 2026-05-26
-updated: 2026-05-26
+updated: 2026-05-29
 ---
 
 ## Relations

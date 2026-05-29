@@ -19,11 +19,13 @@ related:
   - entities/platforms/polymarket.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
+  - concepts/pnl-attribution-versioning.md
+  - concepts/production-trading-blind-spots.md
 
 maturity: validated
 read_status: deep-read
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-05-29
 clusters: [quant-finance, polymarket]
 ---
 

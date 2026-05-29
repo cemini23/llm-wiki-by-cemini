@@ -88,10 +88,11 @@ related:
   - entities/tools/zerocortex-ai.md
   - sources/nber-w10504-wolfers-zitzewitz-prediction-markets-2004.md
   - concepts/prediction-markets-efficiency-wolfers-zitzewitz.md
+  - entities/tools/momentum-odds.md
 
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 ## Relations

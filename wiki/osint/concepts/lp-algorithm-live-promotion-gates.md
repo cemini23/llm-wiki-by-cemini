@@ -13,9 +13,11 @@ related:
   - concepts/shadow-trading-telemetry-accumulation.md
   - concepts/pnl-attribution-versioning.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - sources/algorithmic-trading-model-benchmarking-framework-2026-05-28.md
+  - sources/shadow-trading-data-accumulation-strategies-2026-05-28.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

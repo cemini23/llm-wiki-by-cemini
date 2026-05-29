@@ -9,9 +9,11 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - concepts/lp-algorithm-live-promotion-gates.md
   - concepts/zero-trade-edge-signal-diagnostics.md
+  - concepts/trading-model-failure-diagnostics.md
+  - sources/diagnosing-trading-model-failures-2026-05-28.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations

@@ -38,6 +38,8 @@ related:
   - entities/tools/bullpen-cli.md
   - entities/tools/odds-jam-prediction-insiders.md
   - sources/youtube-kalshi-bots-batch-2026-05-29.md
+  - entities/tools/momentum-odds.md
+maturity: validated
 created: 2026-05-21
 updated: 2026-05-29
 clusters: [polymarket, copy-trading]

@@ -18,6 +18,7 @@ related:
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
   - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
   - "@ccc-wiki/entities/tools/hermes-agent.md"
+  - entities/people/damidefi.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-29

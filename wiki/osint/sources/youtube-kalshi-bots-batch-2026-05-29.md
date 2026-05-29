@@ -12,6 +12,7 @@ related:
   - concepts/polymarket-copy-trading-strategy.md
   - entities/tools/momentum-odds.md
   - entities/platforms/kalshi.md
+  - concepts/polymarket-updown-bot-taxonomy.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-29

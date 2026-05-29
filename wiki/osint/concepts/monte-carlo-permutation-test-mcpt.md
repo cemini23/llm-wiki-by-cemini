@@ -16,10 +16,13 @@ related:
   - concepts/polymarket-lp-bot-phase0-spec.md
   - concepts/lp-algorithm-live-promotion-gates.md
   - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
+  - concepts/brier-score-model-promotion-framework.md
+  - concepts/cemini-backtest-report-kit.md
+  - sources/algorithmic-trading-model-benchmarking-framework-2026-05-28.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-28
+updated: 2026-05-29
 clusters: [quant-validation, backtest]
 ---
 

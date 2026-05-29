@@ -9,9 +9,10 @@ related:
   - entities/tools/quantdinger.md
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
   - concepts/sports-prediction-consensus-agent.md
+  - sources/youtube-kalshi-bots-batch-2026-05-29.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-20
+updated: 2026-05-29
 ---
 
 ## Relations

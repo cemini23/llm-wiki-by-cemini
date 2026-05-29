@@ -8,9 +8,11 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/clean-room-software-design.md
   - concepts/clob-rate-limit-mitigation-strategies.md
+  - sources/clean-room-design-proprietary-software-2026-05-28.md
+  - sources/clob-rate-limit-mitigation-strategies-2026-05-28.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations
