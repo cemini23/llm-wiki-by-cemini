@@ -14,9 +14,10 @@ related:
   - concepts/shadow-to-live-transition-engineering.md
   - concepts/lp-algorithm-live-promotion-gates.md
   - entities/tools/fp-dcf.md
+  - entities/tools/world-cup-bot.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-29
+updated: 2026-05-30
 ---
 
 ## Relations
@@ -30,6 +31,7 @@ updated: 2026-05-29
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — Polymarket CSV as source-of-truth precedent
 - @concepts/shadow-to-live-transition-engineering.md — registry bump at live cutover
 - @concepts/lp-algorithm-live-promotion-gates.md — `pm_lp_rewards` promotion requires version bump
+- @entities/tools/world-cup-bot.md — public OSS mirror: `config/strategy_logic_versions.yaml` + JSONL ledger; Cemini import should reuse prod registry keys
 
 ## Raw Concept
 
