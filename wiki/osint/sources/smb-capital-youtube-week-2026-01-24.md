@@ -10,6 +10,10 @@ related:
   - concepts/smb-breakout-checks-in-favor.md
   - concepts/gap-trading-mistakes-smb.md
   - concepts/trading-drawdown-recovery-smb.md
+  - concepts/commodity-parabolic-short-playbook-smb.md
+  - concepts/day-trading-execution-mistakes-smb.md
+  - concepts/a-plus-trade-grading-smb.md
+  - concepts/prop-desk-team-trading-collaboration.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-29

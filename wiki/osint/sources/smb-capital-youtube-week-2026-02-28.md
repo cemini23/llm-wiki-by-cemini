@@ -12,6 +12,8 @@ related:
   - concepts/day-trading-competence-levels-smb.md
   - concepts/wheel-options-strategy-smb.md
   - concepts/a-plus-trade-grading-smb.md
+  - concepts/day-trading-execution-mistakes-smb.md
+  - concepts/gap-trading-mistakes-smb.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-29

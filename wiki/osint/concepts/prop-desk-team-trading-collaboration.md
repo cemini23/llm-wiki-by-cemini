@@ -16,6 +16,9 @@ related:
   - concepts/smb-elite-trader-summit-lessons.md
   - sources/smb-capital-youtube-week-2026-02-04.md
   - concepts/commodity-parabolic-short-playbook-smb.md
+  - concepts/a-plus-trade-grading-smb.md
+  - concepts/day-trading-beginner-survival-lessons-smb.md
+  - sources/smb-capital-youtube-week-2026-01-24.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29

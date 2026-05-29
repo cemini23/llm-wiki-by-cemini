@@ -12,6 +12,7 @@ related:
   - sources/smb-capital-youtube-week-2026-02-04.md
   - sources/smb-capital-youtube-week-2026-01-24.md
   - concepts/gap-trading-mistakes-smb.md
+  - concepts/commodity-parabolic-short-playbook-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29

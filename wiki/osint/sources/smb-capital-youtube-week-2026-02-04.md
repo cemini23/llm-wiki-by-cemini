@@ -11,6 +11,9 @@ related:
   - concepts/day-trading-beginner-survival-lessons-smb.md
   - concepts/commodity-parabolic-short-playbook-smb.md
   - concepts/options-martingale-1dte-iron-condor-warning-smb.md
+  - concepts/a-plus-trade-grading-smb.md
+  - concepts/smb-breakout-checks-in-favor.md
+  - concepts/prop-desk-team-trading-collaboration.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-29

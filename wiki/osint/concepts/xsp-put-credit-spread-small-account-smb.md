@@ -7,6 +7,9 @@ related:
   - entities/organizations/smb-capital.md
   - sources/smb-capital-youtube-week-2026-03-22.md
   - concepts/options-capital-velocity-credit-spreads-smb.md
+  - concepts/broken-wing-butterfly-options.md
+  - concepts/wheel-options-strategy-smb.md
+  - concepts/smb-options-casino-edge-model.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29

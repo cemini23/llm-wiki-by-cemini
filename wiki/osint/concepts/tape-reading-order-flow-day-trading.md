@@ -10,6 +10,7 @@ related:
   - sources/smb-capital-youtube-week-2026-03-22.md
   - concepts/day-trading-execution-mistakes-smb.md
   - concepts/smb-breakout-checks-in-favor.md
+  - concepts/gap-trading-mistakes-smb.md
   - sources/insights-from-a-gemini.md
 maturity: draft
 created: 2026-05-29

@@ -7,6 +7,7 @@ related:
   - entities/organizations/smb-capital.md
   - meta/smb-capital-youtube-ingest-cadence.md
   - sources/smb-capital-youtube-week-2026-03-22.md
+  - sources/smb-capital-youtube-week-2026-02-28.md
   - concepts/smb-elite-trader-summit-lessons.md
   - concepts/trader-archetypes-finisher-runner-player-smb.md
   - concepts/options-capital-velocity-credit-spreads-smb.md

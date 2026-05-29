@@ -11,6 +11,7 @@ related:
   - concepts/trading-drawdown-recovery-smb.md
   - concepts/day-trading-execution-mistakes-smb.md
   - concepts/prop-desk-team-trading-collaboration.md
+  - concepts/a-plus-trade-grading-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29

@@ -13,6 +13,8 @@ related:
   - sources/smb-capital-youtube-week-2026-02-28.md
   - sources/smb-capital-youtube-week-2026-01-24.md
   - concepts/gap-trading-mistakes-smb.md
+  - concepts/day-trading-beginner-survival-lessons-smb.md
+  - concepts/day-trading-competence-levels-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29

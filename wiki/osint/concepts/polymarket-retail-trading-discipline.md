@@ -10,6 +10,7 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
   - entities/tools/polymarket-clob-api.md
+  - concepts/trading-account-blowup-red-flags-smb.md
 maturity: draft
 created: 2026-05-22
 updated: 2026-05-22

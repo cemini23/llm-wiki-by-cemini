@@ -9,6 +9,8 @@ related:
   - concepts/day-trading-execution-mistakes-smb.md
   - concepts/day-trading-competence-levels-smb.md
   - concepts/polymarket-retail-trading-discipline.md
+  - concepts/day-trading-beginner-survival-lessons-smb.md
+  - concepts/trading-drawdown-recovery-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29

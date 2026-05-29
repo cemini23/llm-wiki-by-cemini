@@ -35,6 +35,7 @@ related:
   - concepts/smb-earnings-catalyst-playbook.md
   - concepts/trader-breakthrough-signs-smb.md
   - concepts/claude-code-trading-assistant-workflow-smb.md
+  - concepts/smb-elite-trader-summit-lessons.md
   - concepts/pre-market-ai-research-briefing-smb.md
   - concepts/broken-wing-butterfly-options.md
   - concepts/day-trading-execution-mistakes-smb.md

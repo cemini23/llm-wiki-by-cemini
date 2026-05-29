@@ -17,6 +17,9 @@ related:
   - sources/smb-capital-youtube-week-2026-02-04.md
   - concepts/day-trading-competence-levels-smb.md
   - concepts/day-trading-beginner-survival-lessons-smb.md
+  - concepts/commodity-parabolic-short-playbook-smb.md
+  - concepts/trading-drawdown-recovery-smb.md
+  - sources/smb-capital-youtube-week-2026-01-24.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29

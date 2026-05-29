@@ -9,6 +9,8 @@ related:
   - entities/people/brett-steenbarger.md
   - concepts/a-plus-trade-grading-smb.md
   - concepts/trader-archetypes-finisher-runner-player-smb.md
+  - concepts/day-trading-competence-levels-smb.md
+  - concepts/day-trading-execution-mistakes-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29

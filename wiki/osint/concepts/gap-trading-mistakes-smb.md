@@ -6,6 +6,7 @@ keywords: [gap-up, gap-fail, vwap, volume-compression, absorption, opening-drive
 related:
   - entities/organizations/smb-capital.md
   - sources/smb-capital-youtube-week-2026-01-24.md
+  - sources/smb-capital-youtube-week-2026-02-28.md
   - concepts/day-trading-execution-mistakes-smb.md
   - concepts/tape-reading-order-flow-day-trading.md
   - concepts/smb-breakout-checks-in-favor.md

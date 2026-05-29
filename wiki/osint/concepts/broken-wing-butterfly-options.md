@@ -9,6 +9,7 @@ related:
   - sources/smb-capital-youtube-week-2026-03-22.md
   - concepts/options-capital-velocity-credit-spreads-smb.md
   - concepts/xsp-put-credit-spread-small-account-smb.md
+  - concepts/wheel-options-strategy-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29
