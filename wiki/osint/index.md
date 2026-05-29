@@ -472,6 +472,10 @@ Total: **353 canonical stubs** (208 PDF + 109 docx + 25 md + 5 arxiv-only/deploy
 
 - [@AlterEgo_eth — five sustainable weather-bot methodologies](sources/alterego-eth-five-weather-methodologies-2026-05-27.md) — `[VALIDATED 2026-05-27]` K70. Parity survey of >30 bots → five-type taxonomy (forecast / arb / base-rate / copy / AI-agent). **1 concept** `polymarket-weather-bot-methodology-taxonomy`. Prod brief staged. — source, weather-trading, parity, k70
 
+#### K75 ingest (2026-05-28 — Weekly Wizdom #179, May 27)
+
+- [Weekly Wizdom Issue #179 — Middle East détente + GDP/PCE week](sources/ww-issue-179-2026-05-27.md) — `[VALIDATED 2026-05-28]` K75. Macro + equity (LIF add $38, INTU double-down, METC cut, FANG stop $180) + crypto technicals (SOL bearish, PUMP/LIT longs, NEAR chase, BTC VWAP, WLD/ONDO/BNB setups). **8 new ticker stubs** + **5 updated**. — source, weekly-wizdom, ww-179, k75
+
 #### K74 ingest (2026-05-28 — @AlterEgo_eth.docx, ECMWF/GFS bias map)
 
 - [@AlterEgo_eth — ECMWF/GFS bias map across Polymarket weather cities](sources/alterego-eth-ecmwf-gfs-bias-map-2026-05-28.md) — `[VALIDATED 2026-05-28]` K74. Single post focused on systematic model error by region/city (ECMWF, GFS, UKMO, CMC/GEM), reinforcing station-level correction requirements for 1-degree bins. Updated `alteregoeth` + `nwp-bias-correction-ml-weather-trading`. — source, weather-trading, nwp, bias-correction, k74

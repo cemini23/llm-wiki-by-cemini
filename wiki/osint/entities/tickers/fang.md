@@ -5,14 +5,16 @@ tags: [ticker, energy, oil, e&p, earnings]
 keywords: [FANG, Diamondback Energy, oil, hedge book, Q1 2026]
 related:
   - sources/donny-market-thoughts-2026-05-09.md
+  - sources/ww-issue-179-2026-05-27.md
 maturity: draft
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-05-28
 ---
 
 ## Relations
 
-- Source: @sources/donny-market-thoughts-2026-05-09.md
+- @sources/donny-market-thoughts-2026-05-09.md — Donny Q1 2026 recap
+- @sources/ww-issue-179-2026-05-27.md — WW #179: stop $180, in profit; tactical re-entry later
 
 ## Raw Concept
 

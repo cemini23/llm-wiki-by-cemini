@@ -5,15 +5,17 @@ tags: [ticker, crypto, layer-1, near-protocol, ai-super-app, halving-upgrade, zc
 keywords: [near, near-protocol, near-com-ai-super-app, halving-upgrade-5-to-2-5, near-intents-zcash-bridge, cup-and-handle-breakout, ww-178-1-55, target-1-87]
 related:
   - sources/ww-issue-178-2026-05-13.md
+  - sources/ww-issue-179-2026-05-27.md
   - entities/tickers/zec.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
 
 - @sources/ww-issue-178-2026-05-13.md — WW #178 first call: cup-and-handle breakout at $1.55, target $1.87
+- @sources/ww-issue-179-2026-05-27.md — WW #179: front-run; chase bids $2.30–$2.00, SL H4 &lt; $1.93
 - @entities/tickers/zec.md — paired thesis (NEAR Intents × Zcash bridge for privacy interop)
 
 ## Raw Concept

@@ -8,11 +8,12 @@ related:
   - entities/ticker-watchlist.md
   - concepts/crypto-asset-taxonomy.md
   - sources/ww-issue-178-2026-05-13.md
+  - sources/ww-issue-179-2026-05-27.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-23
 created: 2026-04-23
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
@@ -413,3 +414,9 @@ WW Issue #178 lists active **BTC long setup**:
 - Closed trade printed earlier in cycle: BTC +2.89%
 
 Macro frame: hot CPI yesterday + Trump-Xi summit May 14 are the immediate catalysts. WW portfolio composition remains heavily crypto-tilted (55%), with BTC as the safe-base allocation within that bucket. See @sources/ww-issue-178-2026-05-13.md.
+
+## WW #179 update (2026-05-27)
+
+- Long from ~$75.2K; **25% profits taken** at $77K; remainder at breakeven stop.
+- VWAP frame: reclaim **$77,200** for push to **$81K** else retest **$75K**; alt long on **$73.2K** sweep + H1 close inside **$74,590**.
+- See @sources/ww-issue-179-2026-05-27.md.

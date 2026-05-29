@@ -1,18 +1,20 @@
 ---
-title: "LIF (leadership / staffing — WW high-conviction May 13 2026)"
+title: "LIF (Life360 — WW high-conviction May 2026)"
 type: entity
 tags: [ticker, equity, leadership, staffing, mau-recovery, high-conviction, ww-178, k41-adjacent]
 keywords: [lif, q1-beat, mau-glitch-transient, ww-178-tp-65, add-zone-38, highest-conviction-equity]
 related:
   - sources/ww-issue-178-2026-05-13.md
+  - sources/ww-issue-179-2026-05-27.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-05-28
 ---
 
 ## Relations
 
-- @sources/ww-issue-178-2026-05-13.md — WW #178 first call: Q1 beat, MAU glitch transient, TP $65, add $38, highest-conviction equity in issue
+- @sources/ww-issue-178-2026-05-13.md — WW #178 first call: Q1 beat, MAU glitch transient, TP $65, add $38
+- @sources/ww-issue-179-2026-05-27.md — WW #179: filled add at $38; Android signup technical issue; TP1 $65, SL &lt; $32.50
 
 ## Raw Concept
 
@@ -21,7 +23,7 @@ What prompted this page: K41-adjacent ingest — LIF introduced in WW Issue #178
 ## Narrative
 
 - **Ticker**: LIF
-- **Sector**: Leadership / staffing (issue framing — verify entity identity on next read)
+- **Sector**: Consumer / family-safety app (Life360; ASX/NASDAQ LIF/LIFE — verify listing on trade)
 - **Last price**: $43.28 (May 13 2026)
 - **Catalyst**: Q1 earnings beat
 - **WW target**: $65 TP, add zone $38

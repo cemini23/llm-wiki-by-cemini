@@ -8,6 +8,7 @@ related:
   - entities/ticker-watchlist.md
   - concepts/crypto-asset-taxonomy.md
   - sources/ww-issue-178-2026-05-13.md
+  - sources/ww-issue-179-2026-05-27.md
   - sources/ww-issue-176-2026-04-29.md
 maturity: validated
 report_source: gemini-deep-research
@@ -423,3 +424,9 @@ WW Issue #178 lists active **SOL short setup**:
 - Targets: $88.68 / $83 (laddered)
 
 Threads forward from WW #176 (Apr 29 2026), which held 20-25% of initial SOL short position with potential adds layered at $85.5–87. WW #178 setup is a continuation/re-entry on the same short thesis at higher levels. See @sources/ww-issue-178-2026-05-13.md and @sources/ww-issue-176-2026-04-29.md.
+
+## WW #179 update (2026-05-27)
+
+- Bearish consolidation; final TP watch **$79.32** (then **$76.63** / toward **$68**).
+- Re-short scales: **$83** reaction after breakdown; heavier at **$88.68** (DCA ~**$91**).
+- See @sources/ww-issue-179-2026-05-27.md.

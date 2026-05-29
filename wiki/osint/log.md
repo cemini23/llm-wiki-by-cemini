@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-28] ingest | K75 — Weekly Wizdom #179 (WW_27May2026.pdf)
+
+**Source:** `WW_27May2026.pdf` (sha `c73b8a07…`, 25 pages) → `cemini-librarian:/opt/cemini-bulk/research/WW_27May2026.pdf`
+
+- **1 new source** — `ww-issue-179-2026-05-27.md`
+- **8 new stubs** — `intu`, `metc`, `pump`, `lit`, `aave`, `wld`, `ondo`, `bnb`
+- **9 updated** — `weekly-wizdom-newsletter`, `wizard-of-soho-llc`, `lif`, `fang`, `near`, `btc`, `sol`, `ww-issue-173/175/176/178` (backlinks)
+- **Preingest**: NEW
+
+---
+
 ## [2026-05-28] ingest | K77 — model promotion, CLOB limits, clean-room, diagnostics, tick staleness, shadow
 
 - **6 sources** — benchmarking framework, CLOB rate limits, clean-room design, model failure diagnostics, tick staleness, shadow accumulation (docx → librarian)
