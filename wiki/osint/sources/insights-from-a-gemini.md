@@ -11,10 +11,13 @@ related:
   - sources/signa.md
   - sources/bowtied-bull-solopreneur-leadgen-macro-2026-05-22.md
   - concepts/high-ticket-smb-lead-generation-ops.md
+  - entities/organizations/smb-capital.md
+  - sources/smb-capital-youtube-week-2026-05-22.md
+  - concepts/tape-reading-order-flow-day-trading.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
-updated: 2026-05-02
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -23,6 +26,8 @@ updated: 2026-05-02
 - @entities/platforms/kalshi.md — primary Cemini prediction-market venue; the 0DTE credit-spread and options-selling strategies reference exchange microstructure
 - @concepts/quant-finance.md — Quantitative Finance corpus-index hub; the risk-sizing (Zhawk RU system), barbell allocation, and capital preservation framework directly inform Cemini position-sizing logic
 - @sources/signa.md — sibling Cemini intelligence report; the Weinstein Stage Analysis and Wyckoff phases from signa.docx are used throughout this framework
+- @entities/organizations/smb-capital.md — K79 YouTube ingest; SMB PlayBook / tape-reading tier in framework table
+- @concepts/tape-reading-order-flow-day-trading.md — K79 expansion of Precision Tools / Time & Sales row
 
 ## Raw Concept
 

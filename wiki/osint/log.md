@@ -1,5 +1,67 @@
 # Wiki Log
 
+## [2026-05-29] ingest | K79 batch 6 — SMB Capital YouTube (week of 2026-03-14)
+
+**Source:** [@smbcapital](https://www.youtube.com/@smbcapital) — 3 videos (2026-03-14 – 2026-03-19) → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-03-14-transcripts.md`
+
+- **1 source** — `smb-capital-youtube-week-2026-03-14.md`
+- **3 concepts** — `smb-elite-trader-summit-lessons`, `trader-archetypes-finisher-runner-player-smb`, `options-capital-velocity-credit-spreads-smb`
+- **4 updated** — cadence meta, `smb-capital` entity, `prop-desk-team-trading-collaboration`, `brett-steenbarger` + options cross-links
+
+## [2026-05-29] ingest | K79 batch 5 — SMB Capital YouTube (week of 2026-03-22)
+
+**Source:** [@smbcapital](https://www.youtube.com/@smbcapital) — 3 videos (2026-03-22 – 2026-03-28) → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-03-22-transcripts.md`
+
+- **1 source** — `smb-capital-youtube-week-2026-03-22.md`
+- **3 concepts** — `smb-breakout-checks-in-favor`, `xsp-put-credit-spread-small-account-smb`, `a-plus-trade-grading-smb`
+- **3 updated** — cadence meta, `smb-capital` entity, `tape-reading-order-flow-day-trading` + `broken-wing-butterfly-options` backlinks
+
+## [2026-05-29] ingest | K79 batch 4 — SMB Capital YouTube (week of 2026-04-01)
+
+**Source:** [@smbcapital](https://www.youtube.com/@smbcapital) — 4 videos (2026-03-31 – 2026-04-08) → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-04-01-transcripts.md`
+
+- **1 source** — `smb-capital-youtube-week-2026-04-01.md`
+- **3 concepts** — `trader-breakthrough-signs-smb`, `smb-earnings-catalyst-playbook`, `claude-ai-trading-operational-workflows-smb`
+- **1 entity** — `brett-steenbarger`
+- **Next batch:** 2026-03-22 — 7 trading signals, $100 options, 8-Figure Table
+
+---
+
+## [2026-05-29] ingest | K79 batch 3 — SMB Capital YouTube (week of 2026-04-14)
+
+**Source:** [@smbcapital](https://www.youtube.com/@smbcapital) — 3 videos (2026-04-14 – 2026-04-25) → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-04-14-transcripts.md`
+
+- **1 source** — `smb-capital-youtube-week-2026-04-14.md`
+- **2 concepts** — `claude-code-trading-assistant-workflow-smb`, `pre-market-ai-research-briefing-smb`
+- **3 updated** — cadence meta, `smb-capital` entity, `claude-code-skills-md-workflow`
+- **Next batch:** 2026-04-01 — Steenbarger, profitable-trader signs, earnings strategy
+
+---
+
+## [2026-05-29] ingest | K79 batch 2 — SMB Capital YouTube (week of 2026-05-05)
+
+**Source:** [@smbcapital](https://www.youtube.com/@smbcapital) — 2 videos (2026-05-05 – 2026-05-12) → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-05-05-transcripts.md`
+
+- **1 source** — `smb-capital-youtube-week-2026-05-05.md`
+- **2 concepts** — `day-trading-execution-mistakes-smb`, `prop-desk-team-trading-collaboration`
+- **3 updated** — `smb-capital-youtube-ingest-cadence`, `smb-capital` entity, `tape-reading-order-flow-day-trading`
+- **Next batch:** 2026-04-18 — Claude AI trading assistant videos (`mssPkDuQnmY`, `45eaVU5NVi8`)
+
+---
+
+## [2026-05-29] ingest | K79 — SMB Capital YouTube batch 1 (week of 2026-05-22)
+
+**Source:** [@smbcapital](https://www.youtube.com/@smbcapital) — 3 videos (2026-05-19 – 2026-05-23) → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-05-22-transcripts.md`
+
+- **1 source** — `smb-capital-youtube-week-2026-05-22.md`
+- **2 concepts** — `tape-reading-order-flow-day-trading`, `broken-wing-butterfly-options`
+- **2 entities** — `smb-capital` (org), `jack-schwager` (person)
+- **1 meta** — `smb-capital-youtube-ingest-cadence.md` (resume at 2026-05-12 / `YqNXTEEn1HQ`)
+- **1 updated** — `insights-from-a-gemini.md` (SMB / tape-reading backlinks)
+- **Tooling:** yt-dlp auto-captions; local `.local/smb-capital-youtube/2026-05-22-week/`
+
+---
+
 ## [2026-05-29] ingest | K78 — Posts.docx (6 posts)
 
 **Source:** `Posts.docx` (sha `03a877cc…`, 6 posts) → `cemini-librarian:/opt/cemini-bulk/research/trading-posts-compilation-6-2026-05-29.docx`

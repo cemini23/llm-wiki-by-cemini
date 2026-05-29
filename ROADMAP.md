@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-05-29 — K79)
+
+- **K79 ingest (2026-05-29)** — SMB Capital YouTube channel backfill **batches 1–6** (18 videos, newest-first through 2026-03-14). **OSINT: 6 source pages + 14 concepts + 3 entities + 1 meta cadence**. Topics: tape reading, execution mistakes, prop-desk collaboration, Claude Code/ops workflows, earnings catalysts, breakout checks, XSP/credit-spread options, A+ grading, summit lessons, capital velocity. **Raw transcripts** on `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-*`. **No prod brief** — wiki-only education/reference; steal-from candidates (pre-market ADV gate, setup grading, options exit policy) gated on backtest. **Resume:** playlist #19 (`QHvp6sja4S4` …). User-gated channel backfill continues.
+
 ## Current state (2026-05-28 — K76)
 
 - **K76 ingest (2026-05-28)** — four inbox docs (3 engineering syntheses + 2-post `Posts.docx`). **OSINT: 4 sources + 5 concepts + 1 tool entity (REJECT) + 8 page updates**. Concepts: shadow→live transition, zero-trade diagnostics, LP promotion gates, macro rotation watchlist, Skills.md workflow stub. **Phase-0:** `kvrancic/algorithmic-trading-bot` REJECT (no LICENSE). **Prod brief:** `2026-05-28_k76-live-transition-zero-trade-lp-promotion-cemini.md` → `cemini-prod`. **Cross-wiki:** ccc brief for Skills.md/CLAUDE.md expansion. **Adoption:** OTel span workflow on prod ingest path (no new packages). Inbox emptied after librarian SCP.

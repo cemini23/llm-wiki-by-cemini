@@ -1163,6 +1163,7 @@ External firms whose research/track-record is ingested into the wiki.
 Newsletters, news outlets, research institutions referenced by the wiki.
 
 - [Weekly Wizdom newsletter](entities/organizations/weekly-wizdom-newsletter.md) — `[DRAFT 2026-05-13]` K41 ingest. Beehiiv-hosted weekly cross-asset trading newsletter; "Plan it. Alert it. Slam it." Issues #173/#175/#176 (Apr 2026) ingested. High overlap with Donny watchlist (5+ exact ticker matches) — treat as derived not independent confirmation. — organization, publication, retail-trading, k41
+- [SMB Capital — prop trading education (YouTube)](entities/organizations/smb-capital.md) — `[DRAFT 2026-05-29]` K79. @smbcapital channel ingest batch 1 (tape reading, options, Market Wizards). — organization, prop-trading, youtube, k79
 - [T3 Financial Crime Unit](entities/organizations/t3-financial-crime-unit.md) — `[DRAFT 2026-05-15]` K48 stub. Tether/TRON/TRM-Labs public-private crypto-crime task force; >$450M illicit USDT frozen across 23 jurisdictions. — organization, crypto-crime, illicit-finance, k48
 
 #### K55 organization addition (2026-05-20)
@@ -1197,6 +1198,10 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [@DextersSolab (X handle)](entities/people/dexterssolab.md) — `[DRAFT 2026-05-21]` K56. Pseudonymous KreoPolyBot promoter + substantive copy-trading guide author. **Hedge-leg trap insight** (copying visible leg of hedged position = directional risk source never had) is the original contribution. Self-reported $32.7k single month, 6 figs cumulative. — person, x-handle, polymarket-copy-trading, hedge-leg-trap, k56
 - [@phosphenq (Phosphen, X handle)](entities/people/phosphenq.md) — `[DRAFT 2026-05-21]` K56. Pseudonymous quant author writing on strategy validation discipline. Introduces Monte Carlo Permutation Test (MCPT) per Timothy Masters 2020 with a live Polymarket case study that fails the test (methodological integrity signal). — person, x-handle, quant-validation, mcpt, k56
 - [Yifan Guo](entities/people/yifan-guo.md) — `[DRAFT 2026-05-21]` K56. Author of the SSRN 5140015 survey paper (Jan 2025) on time-series analysis applications in quantitative finance. Affiliation not disclosed in extracted PDF. — person, academic, time-series-survey, k56
+
+#### K79 people additions (2026-05-29)
+
+- [Jack Schwager — Market Wizards author](entities/people/jack-schwager.md) — `[DRAFT 2026-05-29]` K79 SMB podcast. *Market Wizards: The Next Generation* (2026-06-09); Kenny Sharkness featured. — person, trading-literature, k79
 
 ## Concepts
 
@@ -1289,6 +1294,29 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 #### K78 ingest (2026-05-29 — Posts.docx, 6 posts)
 
 - [Trading posts compilation — 6 X long-forms (K78)](sources/trading-posts-compilation-6-2026-05-29.md) — `[VALIDATED 2026-05-29]` K78. Hermes+x402 forensics, RAG binary quantization, DamiDefi five-tool stack, cyrilXBT Obsidian workflows. **3 concepts** + **1 entity** + Hermes/wallet-alpha updates. — source, trading-posts, hermes, x402, k78
+- [SMB Capital YouTube — week of 2026-05-22 (3 videos)](sources/smb-capital-youtube-week-2026-05-22.md) — `[VALIDATED 2026-05-29]` K79 batch 1. Tape reading (UGRO), Schwager/Coyle *Market Wizards: Next Generation*, broken wing butterfly SPX. Channel backfill newest-first. — source, youtube, smb-capital, tape-reading, k79
+- [SMB Capital YouTube — week of 2026-05-05 (2 videos)](sources/smb-capital-youtube-week-2026-05-05.md) — `[VALIDATED 2026-05-29]` K79 batch 2. Five execution mistakes, 8-figure prop desk team structure. — source, youtube, smb-capital, execution, k79
+- [SMB Capital YouTube — week of 2026-04-14 (3 videos)](sources/smb-capital-youtube-week-2026-04-14.md) — `[VALIDATED 2026-05-29]` K79 batch 3. Claude Code 4-step assistant, pre-market email briefing. — source, youtube, smb-capital, claude-code, k79
+- [SMB Capital YouTube — week of 2026-04-01 (4 videos)](sources/smb-capital-youtube-week-2026-04-01.md) — `[VALIDATED 2026-05-29]` K79 batch 4. Steenbarger, breakthrough signs, earnings playbook, Claude ops. — source, youtube, smb-capital, k79
+- [SMB Capital YouTube — week of 2026-03-22 (3 videos)](sources/smb-capital-youtube-week-2026-03-22.md) — `[VALIDATED 2026-05-29]` K79 batch 5. Seven breakout checks, XSP put spread, A+ grading. — source, youtube, smb-capital, k79
+- [SMB Capital YouTube — week of 2026-03-14 (3 videos)](sources/smb-capital-youtube-week-2026-03-14.md) — `[VALIDATED 2026-05-29]` K79 batch 6. Summit lessons, capital velocity, trading pod. — source, youtube, smb-capital, k79
+- [SMB elite trader summit lessons (eight conference takeaways)](concepts/smb-elite-trader-summit-lessons.md) — `[DRAFT 2026-05-29]` K79. Adaptability, Max Ganik selectivity, Lance report card. — concept, trader-development, k79
+- [Trader archetypes — finisher, runner, player (SMB)](concepts/trader-archetypes-finisher-runner-player-smb.md) — `[DRAFT 2026-05-29]` K79. Jeff Holden playbook alignment. — concept, trader-development, k79
+- [Options capital velocity — early close and roll (SMB)](concepts/options-capital-velocity-credit-spreads-smb.md) — `[DRAFT 2026-05-29]` K79. 76% rule, put spread recycle. — concept, options, k79
+- [SMB breakout checks-in-favor (seven must-haves)](concepts/smb-breakout-checks-in-favor.md) — `[DRAFT 2026-05-29]` K79 batch 5. Pink line, blue sky, clean tape, hidden RS. — concept, breakouts, k79
+- [XSP put credit spread — sub-$100 small-account options (SMB)](concepts/xsp-put-credit-spread-small-account-smb.md) — `[DRAFT 2026-05-29]` K79. 20MA signal, Seth Freudberg. — concept, options, xsp, k79
+- [A+ trade grading and dynamic risk (SMB prop desk)](concepts/a-plus-trade-grading-smb.md) — `[DRAFT 2026-05-29]` K79. ≤1 A+/mo, 5× B risk, mental capital. — concept, risk-management, k79
+- [Brett Steenbarger — trading psychologist](entities/people/brett-steenbarger.md) — `[DRAFT 2026-05-29]` K79 batch 4. Positive trading psychology. — person, trading-psychology, k79
+- [Trader breakthrough signs (SMB five-sign framework)](concepts/trader-breakthrough-signs-smb.md) — `[DRAFT 2026-05-29]` K79. Month 14 valley; 3+ signs → 60–90d. — concept, trader-development, k79
+- [SMB earnings catalyst playbook](concepts/smb-earnings-catalyst-playbook.md) — `[DRAFT 2026-05-29]` K79. Four buckets + theme sequencing. — concept, earnings, k79
+- [Claude AI trading operational workflows (SMB five practices)](concepts/claude-ai-trading-operational-workflows-smb.md) — `[DRAFT 2026-05-29]` K79. Alerts, game plan, analytics, exits, autopsy. — concept, claude, k79
+- [Claude Code trading assistant workflow (SMB four-step)](concepts/claude-code-trading-assistant-workflow-smb.md) — `[DRAFT 2026-05-29]` K79. Plan → build → personalize → routines; HTML dashboard. — concept, claude-code, k79
+- [Pre-market AI research briefing (SMB email workflow)](concepts/pre-market-ai-research-briefing-smb.md) — `[DRAFT 2026-05-29]` K79. Inbox 5:00–8:30 → markdown → HTML scan. — concept, pre-market, k79
+- [Tape reading and order-flow day trading (SMB framework)](concepts/tape-reading-order-flow-day-trading.md) — `[DRAFT 2026-05-29]` K79. L2/T&S four-signal framework + 30-day learning protocol. — concept, order-flow, day-trading, k79
+- [Day trading execution mistakes (SMB five-mistake framework)](concepts/day-trading-execution-mistakes-smb.md) — `[DRAFT 2026-05-29]` K79 batch 2. 10:30 runner rule, resistance partials, tape confirmation. — concept, execution-discipline, k79
+- [Prop desk team trading and shared research infrastructure](concepts/prop-desk-team-trading-collaboration.md) — `[DRAFT 2026-05-29]` K79 batch 2. Theme tracker, PM volume gate, playbook catalog. — concept, prop-trading, k79
+- [Broken wing butterfly options](concepts/broken-wing-butterfly-options.md) — `[DRAFT 2026-05-29]` K79. SPX directional + non-directional BWB; backtest-first discipline. — concept, options, spx, k79
+- [SMB Capital YouTube ingest cadence](meta/smb-capital-youtube-ingest-cadence.md) — `[CORE 2026-05-29]` K79 channel backfill; **18 videos** ingested; next playlist #19. — meta, youtube, cadence, k79
 
 #### K77 ingest (2026-05-28 — model promotion, CLOB limits, clean-room, diagnostics, tick staleness, shadow telemetry)
 

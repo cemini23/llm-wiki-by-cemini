@@ -11,6 +11,8 @@ related:
   - ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md
   - ccc-wiki/concepts/claude-md-five-section-template.md
   - sources/trading-posts-compilation-6-2026-05-29.md
+  - sources/smb-capital-youtube-week-2026-04-14.md
+  - concepts/claude-code-trading-assistant-workflow-smb.md
 maturity: draft
 created: 2026-05-28
 updated: 2026-05-29
@@ -20,6 +22,8 @@ updated: 2026-05-29
 
 - @sources/trading-posts-macro-charts-skills-md-2026-05-28.md — Post 2 @NainsiDwiv50980
 - @sources/trading-posts-compilation-6-2026-05-29.md — K78 Posts 4 + 6 (Obsidian + Claude workflows)
+- @sources/smb-capital-youtube-week-2026-04-14.md — K79 SMB Claude Code four-step + routines
+- @concepts/claude-code-trading-assistant-workflow-smb.md — trader-built HTML dashboard pattern
 - @concepts/curator-skills.md — OSINT workspace skill accumulator
 - @entities/tools/hermes-agent.md — alternative persistent-memory product (runtime vs file-based Skills.md)
 - @concepts/cemini-repository-topology.md — subsystem CLAUDE.md recommendation
@@ -51,6 +55,10 @@ Hierarchy: **system setup (CLAUDE.md / Skills.md) → prompts → output**. Matc
 ### vs Hermes
 
 Hermes = runtime agent memory product. Skills.md = **version-controlled repo artifacts**. Cemini uses both patterns in different layers (wiki schema + stash episodic memory on librarian).
+
+### vs SMB Claude Code trading assistant
+
+@concepts/claude-code-trading-assistant-workflow-smb.md covers **project-based** Claude Code (plan → build → personalize → routines) for trader HTML dashboards. Skills.md covers **persistent rule files** — complementary; SMB pattern is closer to one-off builds + scheduled routines than repo-wide skill libraries.
 
 ## Snippets
 
