@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-05-29] ingest | K78 — Posts.docx (6 posts)
+
+**Source:** `Posts.docx` (sha `03a877cc…`, 6 posts) → `cemini-librarian:/opt/cemini-bulk/research/trading-posts-compilation-6-2026-05-29.docx`
+
+- **1 source** — `trading-posts-compilation-6-2026-05-29.md`
+- **3 concepts** — `x402-agent-micropayments-data-access`, `hermes-onchain-forensics-pipeline`, `rag-binary-quantization-at-scale`
+- **1 entity** — `damidefi`
+- **5 updated** — `hermes-agent`, `polymarket-wallet-alpha-pipeline`, `claude-code-skills-md-workflow`, `kb-server-retrieval-scaling`, `trading-posts-compilation-38-2026-05-28`
+- **Prod brief** — `briefs/2026-05-29_k78-forensics-x402-wallet-diligence-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+- **Librarian brief** — `briefs/2026-05-29_k78-kb-server-binary-quantization-librarian.md` (sync + eval backlog)
+- **Cross-wiki brief** — `briefs/2026-05-29_k78-five-tool-obsidian-workflows-from-osint.md` → `Cemini claude code CCC/briefs/`
+- **Egress** — no adoption (x402/Hermes forensics = laptop research reference only)
+- **Preingest**: LIKELY duplicate by filename only; new hash/content vs prior Posts.docx batches
+
+---
+
 ## [2026-05-28] ingest | K75 — Weekly Wizdom #179 (WW_27May2026.pdf)
 
 **Source:** `WW_27May2026.pdf` (sha `c73b8a07…`, 25 pages) → `cemini-librarian:/opt/cemini-bulk/research/WW_27May2026.pdf`

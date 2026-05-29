@@ -11,10 +11,12 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-copy-trading-strategy.md
   - concepts/prediction-market-historical-analysis.md
+  - concepts/hermes-onchain-forensics-pipeline.md
+  - sources/trading-posts-compilation-6-2026-05-29.md
   - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -25,6 +27,8 @@ updated: 2026-05-24
 - @concepts/polymarket-bot-architecture.md — shared lessons (pre-resolution exit, realistic backtests)
 - @concepts/polymarket-copy-trading-strategy.md — whale / top-wallet monitoring adjacency
 - @concepts/prediction-market-historical-analysis.md — 86M trade dataset use case
+- @concepts/hermes-onchain-forensics-pipeline.md — K78 token-level diligence stack (Nansen x402)
+- @sources/trading-posts-compilation-6-2026-05-29.md — K78 source
 
 ## Raw Concept
 

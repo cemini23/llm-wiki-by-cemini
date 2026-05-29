@@ -8,6 +8,9 @@ related:
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - sources/trading-posts-compilation-20-2026-05-27.md
   - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
+  - sources/trading-posts-compilation-6-2026-05-29.md
+  - concepts/hermes-onchain-forensics-pipeline.md
+  - concepts/x402-agent-micropayments-data-access.md
   - concepts/claude-code-skills-md-workflow.md
   - entities/tools/hermes-lcm.md
   - concepts/openclaw-security-taxonomy.md
@@ -17,7 +20,7 @@ related:
   - "@ccc-wiki/entities/tools/hermes-agent.md"
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-27
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -30,7 +33,10 @@ updated: 2026-05-27
 - @sources/alterego-eth-five-weather-methodologies-2026-05-27.md — K70 source
 - @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — K64 Post 2: community catalog of 276+ production use cases
 - @sources/trading-posts-compilation-20-2026-05-27.md — K69 Post 11 (@NainsiDwiv50980 persistent memory emphasis)
-- @ccc-wiki/entities/tools/hermes-agent.md — CCC routing stub (conductor comparison; not prod adopt)
+- @sources/trading-posts-compilation-6-2026-05-29.md — K78: x402 forensics bundle + skill bundling (@AlphaCartell / @0xJeff)
+- @concepts/hermes-onchain-forensics-pipeline.md — K78 pipeline synthesis
+- @concepts/x402-agent-micropayments-data-access.md — K78 payment layer
+- @ccc-wiki/entities/tools/hermes-agent.md — CCC routing stub
 
 ## Raw Concept
 
@@ -76,6 +82,10 @@ One-line installer: `curl -fsSL https://raw.githubusercontent.com/NousResearch/h
 ### K64 community catalog (@Shruti_0810) [TENTATIVE]
 
 Post 2 groups **276+** claimed production uses: dev swarms (“zero human company”), messaging + device integrations, business automation, autonomous content pipelines, research briefings, K8s enterprise. Framing: shift from “AI answers questions” (2024) → “AI helps work” (2025) → **persistent autonomous workers** (2026). No new technical artifact beyond reinforcing Hermes as **infrastructure-layer** competitor/reference to Conductor — compare @concepts/openclaw-security-taxonomy.md.
+
+### K78 forensics + x402 addendum (2026-05-29)
+
+Posts 3 + 5 document **skill-bundled on-chain forensics** (~$0.10/run): DexScreener → Nansen via x402 → RPC → Tokenomist → Cookie MCP. See @concepts/hermes-onchain-forensics-pipeline.md. Still reference-only for prod (Conductor owns orchestration).
 
 ## Snippets
 

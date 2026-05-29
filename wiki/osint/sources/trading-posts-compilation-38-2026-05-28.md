@@ -6,6 +6,7 @@ keywords: [posts-docx-k73, dani-avila, bloatedaislop, gajae-code, ridark-eth, ju
 related:
   - sources/trading-posts-compilation-38-2026-05-26.md
   - sources/trading-posts-compilation-25-2026-05-27.md
+  - sources/trading-posts-compilation-6-2026-05-29.md
   - sources/trading-posts-compilation-20-2026-05-27.md
   - concepts/polymarket-research-throughput-bottleneck.md
   - concepts/prediction-market-statistical-arbitrage.md
@@ -24,6 +25,7 @@ clusters: [trading-posts, claude-workflows, polymarket]
 - @sources/trading-posts-compilation-38-2026-05-26.md — prior 38-post Posts.docx batch (different hash + content)
 - @sources/trading-posts-compilation-25-2026-05-27.md — K72 batch baseline
 - @sources/trading-posts-compilation-20-2026-05-27.md — K69 batch baseline
+- @sources/trading-posts-compilation-6-2026-05-29.md — K78 batch (6 posts)
 - @concepts/polymarket-research-throughput-bottleneck.md — recurring 7-agent research-loop claims (ZeroCortex-style pattern)
 - @concepts/prediction-market-statistical-arbitrage.md — repeated @ridark_eth quant framing appears again
 - @concepts/multi-wiki-eval-doc-level-vs-phase-0.md — batch is heavily doc-level workflow/tooling content

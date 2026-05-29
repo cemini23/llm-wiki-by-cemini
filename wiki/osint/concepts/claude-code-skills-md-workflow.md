@@ -10,14 +10,16 @@ related:
   - concepts/cemini-repository-topology.md
   - ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md
   - ccc-wiki/concepts/claude-md-five-section-template.md
+  - sources/trading-posts-compilation-6-2026-05-29.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations
 
 - @sources/trading-posts-macro-charts-skills-md-2026-05-28.md — Post 2 @NainsiDwiv50980
+- @sources/trading-posts-compilation-6-2026-05-29.md — K78 Posts 4 + 6 (Obsidian + Claude workflows)
 - @concepts/curator-skills.md — OSINT workspace skill accumulator
 - @entities/tools/hermes-agent.md — alternative persistent-memory product (runtime vs file-based Skills.md)
 - @concepts/cemini-repository-topology.md — subsystem CLAUDE.md recommendation

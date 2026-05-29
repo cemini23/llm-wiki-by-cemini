@@ -1286,6 +1286,10 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Macro rotation momentum signals (May 2026)](concepts/macro-rotation-momentum-signals-2026-05.md) — `[DRAFT 2026-05-28]` K76 Post 1 Macro Charts discretionary rotation watchlist [TENTATIVE]. — concept, equities, momentum, k76
 - [Claude Code Skills.md workflow](concepts/claude-code-skills-md-workflow.md) — `[DRAFT 2026-05-28]` K76 Post 2 Skills.md + CLAUDE.md hierarchy stub; expand in ccc-wiki. — concept, claude-code, skills, k76
 
+#### K78 ingest (2026-05-29 — Posts.docx, 6 posts)
+
+- [Trading posts compilation — 6 X long-forms (K78)](sources/trading-posts-compilation-6-2026-05-29.md) — `[VALIDATED 2026-05-29]` K78. Hermes+x402 forensics, RAG binary quantization, DamiDefi five-tool stack, cyrilXBT Obsidian workflows. **3 concepts** + **1 entity** + Hermes/wallet-alpha updates. — source, trading-posts, hermes, x402, k78
+
 #### K77 ingest (2026-05-28 — model promotion, CLOB limits, clean-room, diagnostics, tick staleness, shadow telemetry)
 
 **Sources**
