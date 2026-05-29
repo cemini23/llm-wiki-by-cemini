@@ -163,6 +163,12 @@
 
 ---
 
+## [2026-05-29] query | NEEDS VERIFICATION sweep Wave 7 (gemini-dr + WW179)
+
+- **~10 tags closed** — poly_data GPL metadata, Kronos-no-qlib, stash/firnflow license spot-checks, PTA SSRN abstract, RHEA token ID, LIF MAU glitch multi-source, ZeroCortex vendor marketing
+- **11 wiki pages** — wave5a/b, alash3al-stash, PTA source, ww-issue-179, lif, poly_data entity, zerocortex cluster
+- **No prod brief** — wiki-only defer tier
+
 ## [2026-05-29] query | NEEDS VERIFICATION sweep Wave 6 (defer tier)
 
 - **7 tags closed** — arXiv 2508.03474 Polymarket arb totals `[CONFIRMED]`; zostaff reverse-quant repo `[CONFIRMED]`; binary quant + Bullpen CLI `[TENTATIVE]`
