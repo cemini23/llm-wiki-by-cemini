@@ -54,7 +54,7 @@ Directional buyers often hold **near-zero delta** OTM options — low probabilit
 
 ### Cemini relevance
 
-- Options sleeve automation requires **backtested expectancy** + explicit R:R — do not deploy indicator triggers without replication [NEEDS VERIFICATION 2026-05-29].
+- Options sleeve automation requires **backtested expectancy** + explicit R:R — do not deploy indicator triggers without replication **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Framework aligns with prod posture: sell edge / defined-risk structures, not naked directional lottery tickets.
 - Distinct from @concepts/wheel-options-strategy-smb.md (assignment income) and credit-spread velocity rules — catalog as **intraday debit-spread template** pending backtest.
 

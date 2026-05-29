@@ -105,7 +105,7 @@ Mnilax tested more than 12 rules: at 14+ rules, compliance dropped 76% → 52%. 
 - **Author signal posture**:
   - @AlterEgo_eth — verified technical content; specific endpoints + auth-free claims independently verifiable
   - @Mnilax — empirical claims (30 codebases / 6 weeks / 41% → 3% mistake rate) are author-asserted; not independently reproducible without the testing harness. Treat compliance numbers as illustrative not measured.
-  - Forrest Chang — original 4-rule repo claim of 120k stars / 60k bookmarks / fastest-growing 2026 single-file repo is **[NEEDS VERIFICATION 2026-05-13]** via GitHub trending or `gh api search/repositories`
+  - Forrest Chang — original 4-rule repo **`[CONFIRMED 2026-05-29]`** — `forrestchang/andrej-karpathy-skills` ~130k+★ (see @entities/people/forrest-chang.md); 60k bookmarks / "fastest single-file repo" remain `[TENTATIVE]`.
   - Andrej Karpathy — January 2026 X thread is the upstream source; not in this document, only second-hand description
 
 ## Snippets
@@ -120,6 +120,6 @@ Mnilax tested more than 12 rules: at 14+ rules, compliance dropped 76% → 52%. 
 
 ## Dead Ends
 
-- Did NOT verify Forrest Chang repo star count (120k) or "fastest single-file repo of 2026" claim via GitHub API; flagged `[NEEDS VERIFICATION 2026-05-13]`
+- Did NOT verify "fastest single-file repo of 2026" claim; star count **`[CONFIRMED 2026-05-29]`** via @entities/people/forrest-chang.md (~130k+★).
 - Did NOT verify Karpathy's January 2026 X thread directly; the thread content is described second-hand by Mnilax
 - Mnilax's empirical-comparison numbers (41% → 3% mistake rate, 78% → 76% compliance over 30 codebases / 6 weeks) are **author-asserted**, not in any published methodology document Cemini has visibility on. Treat as illustrative.

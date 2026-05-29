@@ -9,7 +9,7 @@ related:
   - entities/tickers/zec.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-28
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -36,7 +36,7 @@ What prompted this page: K41-adjacent ingest — NEAR introduced as new crypto p
 ### Three convergence catalysts (WW framing)
 
 1. **Near.com AI super-app** — launching as primary 2026 catalyst. AI-first consumer app on NEAR rails. Distribution surface for the protocol.
-2. **Halving Upgrade** — token-emission rate cut from **5% → 2.5%** inflation. **[NEEDS VERIFICATION 2026-05-13]** — cross-check against NEAR Foundation tokenomics docs / governance forum.
+2. **Halving Upgrade** — token-emission rate cut from **5% → 2.5%** inflation. **`[CONFIRMED 2026-05-29]`** — NEAR nearcore **v2.9.0** (protocol 81): max inflation 5%→2.5% when ≥80% validator stake adopts [Source: https://github.com/near/nearcore/releases/tag/2.9.0].
 3. **NEAR Intents × Zcash bridge** — privacy-interop story; pairs NEAR's AI super-app surface with Zcash's privacy primitive. See `@entities/tickers/zec.md`.
 
 ### Bullish thesis

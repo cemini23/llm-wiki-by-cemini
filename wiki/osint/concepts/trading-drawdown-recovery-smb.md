@@ -52,7 +52,7 @@ When in drawdown, **one focus only** — consistency on your best trades:
 
 ### Cemini relevance
 
-- Prod risk policy: drawdown mode = halve size + playbook whitelist until consistency restored [NEEDS VERIFICATION 2026-05-29].
+- Prod risk policy: drawdown mode = halve size + playbook whitelist until consistency restored **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Pairs with @concepts/game-of-attrition-doctrine.md at portfolio level.
 
 ## Snippets

@@ -82,7 +82,7 @@ From @sources/smb-capital-youtube-week-2026-02-28.md — market earns risk, defa
 
 ### Cemini relevance
 
-- Position-sizing policy input for prod — tiered risk by setup grade requires explicit classifier [NEEDS VERIFICATION 2026-05-29].
+- Position-sizing policy input for prod — tiered risk by setup grade requires explicit classifier **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Aligns with @concepts/game-of-attrition-doctrine.md Kelly/CVaR posture at portfolio level.
 
 ## Snippets

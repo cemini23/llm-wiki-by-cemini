@@ -41,7 +41,7 @@ What prompted this page: SMB *The $100 New Options Strategy* (Seth Freudberg, 20
 
 ### Cemini relevance
 
-- Education-only for index options sleeve — prod needs margin model + systematic backtest before any automation [NEEDS VERIFICATION 2026-05-29].
+- Education-only for index options sleeve — prod needs margin model + systematic backtest before any automation **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - XSP as SPX proxy already noted in BWB concept (@concepts/broken-wing-butterfly-options.md).
 
 ## Snippets

@@ -26,7 +26,7 @@ adoption_status: PHASE-0-COMPLETE 2026-05-17
 ## Raw Concept
 
 - **Repo**: `github.com/winedarksea/AutoTS`
-- **License** [per Gemini eval]: MIT — `[NEEDS VERIFICATION 2026-05-12]` confirm via `gh api repos/winedarksea/AutoTS --jq '.license.spdx_id'`
+- **License** **`[CONFIRMED 2026-05-29]`** — GitHub API **MIT** (`winedarksea/AutoTS`, ~1.4k★).
 - **Stars** [per Gemini eval]: ~1,400
 - **Tier**: Adopt
 - **Primary fit**: Cemini financial (analyst-node prediction layer)

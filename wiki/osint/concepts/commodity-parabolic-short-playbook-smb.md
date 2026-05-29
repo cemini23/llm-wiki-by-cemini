@@ -69,7 +69,7 @@ Basketball analogy (10-year-old daughter): practice after practice matters; goal
 
 ### Cemini relevance
 
-- Commodity sleeve needs **separate playbook registry** from equities [NEEDS VERIFICATION 2026-05-29].
+- Commodity sleeve needs **separate playbook registry** from equities **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Overextension scanner inputs: ATR distance, BB breach, volume expansion — candidate for morning briefing filters on GLD/SLV/GC/SI proxies.
 
 ## Snippets

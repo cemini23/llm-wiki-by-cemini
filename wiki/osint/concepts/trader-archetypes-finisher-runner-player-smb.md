@@ -40,7 +40,7 @@ SMB classifies traders by **where in the move they extract edge**, then insists 
 
 ### Cemini relevance
 
-- Trader **strategy tagging** in journal/analytics — map fills to archetype for promotion gates [NEEDS VERIFICATION 2026-05-29].
+- Trader **strategy tagging** in journal/analytics — map fills to archetype for promotion gates **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Complements @concepts/prop-desk-team-trading-collaboration.md specialization-by-strength at team level.
 
 ## Snippets

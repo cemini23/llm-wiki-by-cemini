@@ -114,7 +114,7 @@ Full deployment record: `briefs/2026-05-02_stash-deployment-record.md`.
 
 1. **Bus-factor: 1 contributor on a 6-day-old repo** — textbook fork-and-maintain situation. The project may evaporate if the maintainer pivots. **Mitigation**: pin v0.2.6, fork to Cemini-controlled GitHub org, treat as in-house code from day 1.
 
-2. **Token-cost amplification from 8-stage pipeline** [NEEDS VERIFICATION 2026-04-30] — measure tokens-per-1000-input-tokens ratio on Cemini's actual workload. If the ratio exceeds ~10:1, prod adoption is uneconomical without per-stage cost gating.
+2. **Token-cost amplification from 8-stage pipeline** **`[TENTATIVE 2026-05-29]`** — code confirms 7 LLM stages + SQL decay (`internal/brain/consolidate.go`); token-per-observation ratio on Cemini workload = **internal cost gate** (≥10:1 threshold from eval doc).
 
 3. **Transitive go.mod license sweep** **`[TENTATIVE 2026-05-29]`** — root Apache-2.0; direct deps pgx + mcp-go both MIT (GitHub API). Run `go-licenses` before prod commit; reputation-clean for librarian adopt.
 

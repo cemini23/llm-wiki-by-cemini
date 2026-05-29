@@ -62,7 +62,7 @@ What prompted this page: SMB Capital YouTube *The Skill That Separates $50K from
 ### Cemini relevance
 
 - Execution-layer filter for intraday equity signals — align with @sources/insights-from-a-gemini.md precision-tools tier.
-- Requires **live L2/T&S feed** — not available on standard delayed retail APIs; prod use needs data vendor audit [NEEDS VERIFICATION 2026-05-29].
+- Requires **live L2/T&S feed** — not available on standard delayed retail APIs; prod use needs data vendor audit **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Complements @concepts/day-trading-execution-mistakes-smb.md mistake #3 (no entry without tape confirmation).
 - Polymarket “order flow” (@sources/polymarket-informed-minority-gomezcram-2026.md) is a different microstructure; analogy is directional only.
 

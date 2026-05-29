@@ -7,7 +7,7 @@ updated: 2026-05-29
 
 ## Scope
 
-- **Backlog:** 225 stale tags → **212** after Wave 1 → **~202** after Wave 2 → **~195** after Wave 3 → **198** after Wave 4 → **195** after Wave 5 → **~188** after Wave 6 → **~178** after Wave 7 → **~170** after Wave 8 (2026-05-29)
+- **Backlog:** 225 stale tags → **212** after Wave 1 → **~202** after Wave 2 → **~195** after Wave 3 → **198** after Wave 4 → **195** after Wave 5 → **~188** after Wave 6 → **~178** after Wave 7 → **~170** after Wave 8 → **~148** after Wave 9 (2026-05-29)
 - **Priority rule:** revenue path first (Polymarket execution, weather alpha, cross-venue, promotion gates)
 - **Verification rule:** no blind closure — every tag gets live API probe, Exa/web search, or GitHub/license check; outcome → `[CONFIRMED]` / `[TENTATIVE]` / `[RETRACTED]` / honest internal note
 - **Fresh tags (7–14d):** included when revenue-relevant (K79 SMB, K77 quant, Kalshi UI bot)
@@ -140,6 +140,23 @@ updated: 2026-05-29
 **Pages touched:** `gemini-dr-wave5b`, `caiovicentino-polymarket-mcp-server`, `aulekator-polymarket-btc-bot`
 
 **Backlog after Wave 8:** ~170 open tags (~178 − 8)
+
+### Wave 9 — DONE 2026-05-29 (K79 SMB + wave5a/MCP gates, ~22 tags closed)
+
+| Claim | Method | Verdict |
+|-------|--------|---------|
+| K79 SMB prod gates (17 pages) | Internal-gate reclassification | `[TENTATIVE]` — pedagogy steal-from; backtest/promotion checklist |
+| NEAR halving 5%→2.5% | nearcore v2.9.0 release notes | `[CONFIRMED]` |
+| AutoTS MIT license | GitHub API | `[CONFIRMED]` |
+| MCP transitive deps | pip-licenses (67 pkgs) | `[CONFIRMED]` — no copyleft |
+| stash 8-stage pipeline | `consolidate.go` read | `[TENTATIVE]` — structure confirmed; token ratio internal |
+| Kronos CPU trading latency | README + model zoo | `[TENTATIVE]` — tokenizer steal-only |
+| firnflow RAM under MCP load | README gap | `[TENTATIVE]` — internal soak remains |
+| Forrest Chang 120k★ (x-docx) | Cross-ref entity page | `[CONFIRMED]` |
+
+**Pages touched:** 17 K79 SMB concepts + `near`, `autots`, `caiovicentino-polymarket-mcp-server`, `gemini-dr-wave5a`, `alash3al-stash`, `x-docx-polymarket-claude-md`
+
+**Backlog after Wave 9:** ~148 open tags (~170 − 22)
 
 ### Steady state
 

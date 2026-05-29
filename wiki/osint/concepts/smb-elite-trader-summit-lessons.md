@@ -48,7 +48,7 @@ Condensed **eight-lesson framework** for aspiring elite traders — mix of chara
 
 - Lessons 2 + 6 feed **setup grading + risk engine** policy (@concepts/a-plus-trade-grading-smb.md, Kelly/CVaR posture).
 - Lesson 7 validates existing Claude ops ingest (@concepts/claude-ai-trading-operational-workflows-smb.md) — intensity bar is high [TENTATIVE].
-- Lesson 5 → trade autopsy / post-mortem ritual in analyst workflow [NEEDS VERIFICATION 2026-05-29].
+- Lesson 5 → trade autopsy / post-mortem ritual in analyst workflow **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 
 ## Snippets
 

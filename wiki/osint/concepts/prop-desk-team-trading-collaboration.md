@@ -69,7 +69,7 @@ PM volume spike → team chat → earnings specialist validates inflection quart
 ### Cemini relevance
 
 - **Research ops pattern** for prod analyst team: ticker-attached notes + theme tags mirror wiki/librarian architecture (not a new tool — validates existing design).
-- Pre-market **relative volume gate** is steal-from for equity scanner / morning briefing automation [NEEDS VERIFICATION 2026-05-29].
+- Pre-market **relative volume gate** is steal-from for equity scanner / morning briefing automation **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Distinct from Polymarket copy-trading — this is **prop desk human collaboration**, not wallet mirroring.
 
 ## Snippets

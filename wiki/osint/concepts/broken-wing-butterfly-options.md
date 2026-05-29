@@ -53,7 +53,7 @@ A **broken wing butterfly (BWB)** is a butterfly spread with **asymmetric wing d
 ### Cemini relevance
 
 - Research catalog entry for **index options expression** of directional equity views — distinct from equity single-name options in ticker pages.
-- Prod adoption blocked pending: margin model, SPX data feed, and backtest harness for RSI-triggered BWB [NEEDS VERIFICATION 2026-05-29].
+- Prod adoption blocked pending: margin model, SPX data feed, and backtest harness for RSI-triggered BWB **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Related but not identical to **iron condor** references on ticker pages (e.g. @entities/tickers/intc.md).
 
 ## Snippets

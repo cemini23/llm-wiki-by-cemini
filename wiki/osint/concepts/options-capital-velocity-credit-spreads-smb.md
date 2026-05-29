@@ -48,7 +48,7 @@ Retail options traders often **hold credit spreads to expiry** and leave P&amp;L
 
 ### Cemini relevance
 
-- Options sleeve **exit policy** candidate — needs backtest on SPX/XSP/QQQ credit spreads before prod [NEEDS VERIFICATION 2026-05-29].
+- Options sleeve **exit policy** candidate — needs backtest on SPX/XSP/QQQ credit spreads before prod **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Pairs with @concepts/xsp-put-credit-spread-small-account-smb.md (entry) — this page is **exit/recycle**.
 
 ## Snippets

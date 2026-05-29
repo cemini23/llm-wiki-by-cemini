@@ -73,7 +73,7 @@ Jeff Holden walks **four tape moments** on ticker **UGRO**: (a) hidden seller ab
 
 ### Cemini relevance
 
-1. **Tape reading** — execution confirmation layer for intraday equity stack; needs L2 vendor [NEEDS VERIFICATION 2026-05-29].
+1. **Tape reading** — execution confirmation layer for intraday equity stack; L2 vendor required (Bookmap/TC2000/DAS — standard category) **`[TENTATIVE 2026-05-29]`** — methodology from SMB; prod L2 integration = internal gate.
 2. **BWB / SPX structures** — options research catalog; prod blocked without backtest kit.
 3. **Schwager / Shark** — process psychology reference; book ingest when published June 2026.
 

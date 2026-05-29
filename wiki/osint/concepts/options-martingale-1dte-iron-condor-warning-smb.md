@@ -57,7 +57,7 @@ Capital required scales faster than edge; **no unlimited bankroll** → bankrupt
 ### Cemini relevance
 
 - **Hard NO-GO** for any automated 1DTE condor + loss-recovery sizing in prod [CONFIRMED for policy — single authoritative warning source].
-- If options income sleeve exists, enforce **max daily loss**, **no Martingale**, **tail scenario stress** on short-call wings before deployment [NEEDS VERIFICATION 2026-05-29].
+- If options income sleeve exists, enforce **max daily loss**, **no Martingale**, **tail scenario stress** on short-call wings before deployment **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 
 ## Snippets
 

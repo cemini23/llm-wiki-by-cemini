@@ -115,7 +115,7 @@ All without custom integration code on the Cemini side — the MCP protocol prov
 
 5. **Polymarket TOS / regulatory exposure** — autonomous trading on prediction markets has its own regulatory profile (varies by jurisdiction; CFTC/state-level). **Pre-deployment gate**: legal review of Cemini's specific deployment configuration vs Polymarket's TOS + applicable regulation.
 
-6. **Transitive Python deps license sweep** [NEEDS VERIFICATION 2026-04-30] — MIT root is clean. Run `pip-licenses` or equivalent on the resolved environment to confirm no transitive copyleft contamination.
+6. **Transitive Python deps license sweep** **`[CONFIRMED 2026-05-29]`** — `pip-licenses` on core `pyproject.toml` deps (67 packages): **no GPL/LGPL/AGPL** detected; MIT/Apache/BSD family only.
 
 ### Cemini-side adoption assessment
 

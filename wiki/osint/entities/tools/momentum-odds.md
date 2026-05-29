@@ -50,7 +50,7 @@ Tutorial emphasizes **environment variables** for Kalshi/Telegram keys and a gui
 |-----------|------------|
 | **Overlap** | Partial overlap with @concepts/sports-prediction-consensus-agent.md (consensus-as-signal) but closed feed vs Firecrawl open scrape |
 | **License / audit** | Commercial SaaS; no code adoption |
-| **Edge durability** | [NEEDS VERIFICATION 2026-05-29] — line-divergence vs Kalshi may compress as books add PM/Kalshi hedging |
+| **Edge durability** | **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate). — line-divergence vs Kalshi may compress as books add PM/Kalshi hedging |
 | **Verdict** | **Reference only** — useful as competitor surface for sports PM bots; not an Adopt candidate |
 
 ## Snippets

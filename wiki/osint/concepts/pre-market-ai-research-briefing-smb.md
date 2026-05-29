@@ -43,7 +43,7 @@ Same functional job as SMB desk **theme widget + catalyst catalog** (@concepts/p
 
 ### Cemini relevance
 
-- Steal-from for **prod morning intel brief** — align with existing macro/regime tools + wiki synthesis; email access is laptop-trust-boundary [NEEDS VERIFICATION 2026-05-29].
+- Steal-from for **prod morning intel brief** — align with existing macro/regime tools + wiki synthesis; email access is laptop-trust-boundary **`[TENTATIVE 2026-05-29]`** — pattern confirmed from SMB demo; prod email ingest = internal gate.
 - Not a signal source — **information compression** layer before human/discretionary or analyst-agent decisions.
 
 ## Snippets

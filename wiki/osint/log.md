@@ -163,6 +163,12 @@
 
 ---
 
+## [2026-05-29] query | NEEDS VERIFICATION sweep Wave 9 (K79 SMB + wave5a/MCP)
+
+- **~22 tags closed** — 17 K79 SMB internal-gate reclassifications; NEAR halving CONFIRMED; AutoTS MIT; MCP pip-licenses clean; stash pipeline structure; Kronos/firnflow internal benchmarks; Forrest Chang stars
+- **25 wiki pages** — K79 concept cluster + near/autots/MCP/stash/wave5a/x-docx
+- **No prod brief** — SMB = pedagogy; MCP soak + stash token ratio remain internal gates
+
 ## [2026-05-29] query | NEEDS VERIFICATION sweep Wave 8 (gemini-dr wave5b engineering)
 
 - **~8 tags closed** — poly-maker port feasibility, BTC bot 3.14 badge retracted, Pinax substreams remote, MCP secrets/rate-limiter, GPL backtest salvage retracted, 5 unavailable URLs re-fetched

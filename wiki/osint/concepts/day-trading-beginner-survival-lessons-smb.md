@@ -61,7 +61,7 @@ What prompted this page: SMB trader journal confessional — seven lessons from 
 
 ### Cemini relevance
 
-- Onboarding doc for any human or agent trader sleeve — explicit runway + monthly loss cap before live capital [NEEDS VERIFICATION 2026-05-29].
+- Onboarding doc for any human or agent trader sleeve — explicit runway + monthly loss cap before live capital **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Complements @concepts/game-of-attrition-doctrine.md at portfolio level; this is **individual trader** tuition discipline.
 
 ## Snippets

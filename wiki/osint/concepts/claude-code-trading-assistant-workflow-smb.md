@@ -59,7 +59,7 @@ At decision time (e.g. breakout close below level): agent queries tagged history
 - **Laptop / workflow only** — mirrors OSINT wiki + Claude Code curation pattern; not prod trading path.
 - Steal-from for **analyst morning brief HTML** + **post-close review routine** — Conductor owns prod orchestration.
 - Complements @concepts/claude-code-skills-md-workflow.md (Skills.md persistence) vs SMB's project/routine pattern.
-- API/data wiring for live stats = `[NEEDS VERIFICATION 2026-05-29]` before prod-adjacent use.
+- API/data wiring for live stats = **`[TENTATIVE 2026-05-29]`** — SMB workflow steal-from; prod-adjacent wiring deferred to internal integration gate.
 
 ## Snippets
 

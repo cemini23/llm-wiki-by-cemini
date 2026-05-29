@@ -69,7 +69,7 @@ From ep. 9 (2026-01-31) — **before** the obvious +10% day; institutional TWAP 
 
 ### Cemini relevance
 
-- Structured **setup grading rubric** for equity breakout sleeve — steal-from for scanner + AM meeting checklist [NEEDS VERIFICATION 2026-05-29].
+- Structured **setup grading rubric** for equity breakout sleeve — steal-from for scanner + AM meeting checklist **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Complements execution-mistake framework (@concepts/day-trading-execution-mistakes-smb.md) — checks = entry conviction; mistakes = hold/exit discipline.
 
 ## Snippets

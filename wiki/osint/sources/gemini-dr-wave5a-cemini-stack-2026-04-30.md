@@ -136,12 +136,12 @@ Per the Wave 2/3/4 protocol, the 2 operationally-relevant URLs were verified via
 ### Open questions / NEEDS VERIFICATION
 
 - **URL 1 firnflow Cargo.lock audit** **`[TENTATIVE 2026-05-29]`** — spot-check of `gordonmurray/firnflow` Cargo.lock (705 crates): no `AGPL`/`GPL`/`SSPL` license fields in lockfile; root Apache-2.0. Full `cargo-deny` sweep still recommended before Workflow extract; Reference-only posture unchanged (S3 prereq block).
-- **URL 1 firnflow RAM footprint under load** [NEEDS VERIFICATION 2026-04-30] — measure resident RAM with simulated 130-FastMCP-tool concurrent load.
-- **URL 3 Kronos-small CPU latency** [NEEDS VERIFICATION 2026-04-30] — P99 inference latency of 24.7M-param model on standard AMD EPYC vCPU with PyTorch CPU optimizations. Determines if it can meet trading execution speed limits.
+- **URL 1 firnflow RAM footprint under load** **`[TENTATIVE 2026-05-29]`** — upstream README benchmarks query latency (S3→72µs warm), not RAM under 130-FastMCP concurrent load; **Reference-only** (S3 prereq) unchanged; soak = internal benchmark.
+- **URL 3 Kronos-small CPU latency** **`[TENTATIVE 2026-05-29]`** — Kronos-small **24.7M** params; public demo = 24h BTC forecast, not sub-second execution; **Steal tokenizer only** — CPU P99 trading-path latency unbenchmarked.
 - **URL 3 Kronos pyqlib transitive license audit** **`[CONFIRMED 2026-05-29]`** — no `qlib` dependency in `requirements.txt`; GitHub code search returns 0 hits. Default install path is MIT-only (torch/pandas/huggingface); pyqlib gate **closed**.
 - **URL 4 zeroboot egress networking roadmap** [RETRACTED 2026-05-17] — there is no egress-networking roadmap item. Zeroboot's no-networking is an architectural property of the CoW-fork model (serial-I/O-only sandboxes); the managed API at `api.zeroboot.dev` does not change it. Verified via zeroboot README + docs/ARCHITECTURE.md (Exa 2026-05-17).
 - **URL 5 stash go.mod transitive license sweep** **`[TENTATIVE 2026-05-29]`** — root **Apache-2.0**; direct deps `jackc/pgx` **MIT**, `mark3labs/mcp-go` **MIT** (GitHub API). Formal `go-licenses` sweep still advised before prod pin; Adopt posture for librarian MCP memory unchanged.
-- **URL 5 stash token-cost ratio** [NEEDS VERIFICATION 2026-04-30] — measure tokens-per-1000-input-tokens ratio for the 8-stage consolidation pipeline. Required to forecast operational cost.
+- **URL 5 stash token-cost ratio** **`[TENTATIVE 2026-05-29]`** — `consolidate.go` confirms **8 stages** (7 LLM + 1 pure-SQL decay) with `LLMCalls` counter; per-1k-input token ratio still needs Cemini workload measurement.
 
 ## Snippets
 

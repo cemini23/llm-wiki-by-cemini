@@ -62,7 +62,7 @@ Track **earnings order within theme** — first reporter sets street re-rating n
 ### Cemini relevance
 
 - Equity event sleeve: structured earnings taxonomy vs ad-hoc "choose your adventure" reads.
-- Requires theme registry + earnings calendar — steal-from for morning briefing automation [NEEDS VERIFICATION 2026-05-29].
+- Requires theme registry + earnings calendar — steal-from for morning briefing automation **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Distinct from Polymarket earnings markets — same catalyst discipline, different venue.
 
 ## Snippets

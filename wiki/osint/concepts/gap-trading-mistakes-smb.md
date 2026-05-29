@@ -52,7 +52,7 @@ What prompted this page: SMB *Top 10 Gap Trading Mistakes* — five **expensive 
 
 ### Cemini relevance
 
-- Morning gap scanner should flag HTF resistance intersection + PM ADV % before open automation [NEEDS VERIFICATION 2026-05-29].
+- Morning gap scanner should flag HTF resistance intersection + PM ADV % before open automation **`[TENTATIVE 2026-05-29]`** — SMB pedagogy steal-from; prod sleeve gated on backtest/promotion checklist (internal gate).
 - Complements equity event sleeve — distinct from earnings EH ADV gate in @concepts/smb-earnings-catalyst-playbook.md (intraday gap context).
 
 ## Snippets
