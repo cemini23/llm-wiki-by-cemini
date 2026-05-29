@@ -12,6 +12,8 @@ related:
   - concepts/smb-elite-trader-summit-lessons.md
   - concepts/trader-archetypes-finisher-runner-player-smb.md
   - concepts/prop-desk-team-trading-collaboration.md
+  - sources/smb-capital-youtube-week-2026-02-28.md
+  - concepts/day-trading-competence-levels-smb.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29
@@ -22,9 +24,8 @@ updated: 2026-05-29
 - @entities/organizations/smb-capital.md — ~$50M/yr team cited in video
 - @sources/smb-capital-youtube-week-2026-03-22.md — 8-Figure Table dinner (2026-03-28)
 - @sources/smb-capital-youtube-week-2026-03-14.md — Max Ganik summit quote (2026-03-19)
-- @concepts/trader-breakthrough-signs-smb.md — development path before A+ sizing
-- @concepts/smb-breakout-checks-in-favor.md — checks feed A+ grade
-- @concepts/prop-desk-team-trading-collaboration.md — team culture context
+- @sources/smb-capital-youtube-week-2026-02-28.md — Jackie daily-stop % ladder (2026-03-05 levels video)
+- @concepts/day-trading-competence-levels-smb.md — level-3 quality filter detail
 
 ## Raw Concept
 
@@ -37,6 +38,12 @@ What prompted this page: SMB *The "8-Figure Table"* — Nano + Max (~$50M yearly
 - **B setups** — several per week possible; baseline risk unit.
 - **A+ setups** — at most ~1/month for top traders; if more frequent, grading too loose.
 - **Risk differential** — A+ sized ~**5×** B risk when every nuance hits; backed by multi-year stats.
+
+### Daily stop % ladder (Jackie / level 3) [TENTATIVE]
+
+From @sources/smb-capital-youtube-week-2026-02-28.md — market earns risk, default **zero**:
+- C: 5% · B: 15% · A: 30% · A+: 80% of daily stop
+- B-sized risk requires ≥3:1 R:R; filters: technical criteria + see/feel opportunity
 
 ### Five themes from dinner
 

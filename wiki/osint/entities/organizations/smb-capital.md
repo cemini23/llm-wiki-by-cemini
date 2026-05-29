@@ -11,7 +11,10 @@ related:
   - sources/smb-capital-youtube-week-2026-04-01.md
   - sources/smb-capital-youtube-week-2026-03-22.md
   - sources/smb-capital-youtube-week-2026-03-14.md
-  - concepts/smb-elite-trader-summit-lessons.md
+  - sources/smb-capital-youtube-week-2026-02-28.md
+  - concepts/trading-account-blowup-red-flags-smb.md
+  - concepts/day-trading-competence-levels-smb.md
+  - concepts/wheel-options-strategy-smb.md
   - concepts/trader-archetypes-finisher-runner-player-smb.md
   - concepts/options-capital-velocity-credit-spreads-smb.md
   - entities/people/brett-steenbarger.md

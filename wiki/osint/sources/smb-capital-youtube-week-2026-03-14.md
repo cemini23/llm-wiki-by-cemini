@@ -26,6 +26,7 @@ clusters: [trading-education, options, prop-trading]
 - @entities/organizations/smb-capital.md — channel publisher
 - @meta/smb-capital-youtube-ingest-cadence.md — batch 6 checkpoint
 - @sources/smb-capital-youtube-week-2026-03-22.md — prior batch
+- @sources/smb-capital-youtube-week-2026-02-28.md — next batch (older)
 - @concepts/smb-elite-trader-summit-lessons.md — video 1
 - @concepts/trader-archetypes-finisher-runner-player-smb.md — video 1 (lesson 4)
 - @concepts/options-capital-velocity-credit-spreads-smb.md — video 2

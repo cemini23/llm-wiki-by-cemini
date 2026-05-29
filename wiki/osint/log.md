@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-05-29] ingest | K79 SMB Capital YouTube batch 7 (3 videos)
+
+**Source:** 7 red flags, 5 competence levels, wheel options → `cemini-librarian:/opt/cemini-bulk/research/smb-capital-youtube-week-2026-02-28-transcripts.md`
+
+- **1 source** — `smb-capital-youtube-week-2026-02-28.md`
+- **3 concepts** — `trading-account-blowup-red-flags-smb`, `day-trading-competence-levels-smb`, `wheel-options-strategy-smb`
+- **2 updated** — `a-plus-trade-grading-smb` (Jackie daily-stop ladder), `day-trading-execution-mistakes-smb`
+- **Rolling brief** updated + shipped to prod
+
 ## [2026-05-29] ingest | K81 — Macro/allocator YouTube batch (6 podcasts)
 
 **Source:** Kirk McKeown, Meldrum/Warsh, Compound 2026, Burry, Marc Rowan/Apollo, Coatue → `cemini-librarian:/opt/cemini-bulk/research/youtube-macro-podcasts-batch-2026-05-29-transcripts.md`

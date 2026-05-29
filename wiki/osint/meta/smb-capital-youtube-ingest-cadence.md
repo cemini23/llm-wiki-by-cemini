@@ -11,15 +11,21 @@ related:
   - sources/smb-capital-youtube-week-2026-04-01.md
   - sources/smb-capital-youtube-week-2026-03-22.md
   - sources/smb-capital-youtube-week-2026-03-14.md
+  - sources/smb-capital-youtube-week-2026-02-28.md
 maturity: core
 created: 2026-05-29
 updated: 2026-05-29
+---
+
+## Relations
+
 - @sources/smb-capital-youtube-week-2026-05-22.md — batch 1
 - @sources/smb-capital-youtube-week-2026-05-05.md — batch 2
 - @sources/smb-capital-youtube-week-2026-04-14.md — batch 3
 - @sources/smb-capital-youtube-week-2026-04-01.md — batch 4
 - @sources/smb-capital-youtube-week-2026-03-22.md — batch 5
 - @sources/smb-capital-youtube-week-2026-03-14.md — batch 6
+- @sources/smb-capital-youtube-week-2026-02-28.md — batch 7
 
 ## Narrative
 
@@ -28,9 +34,9 @@ updated: 2026-05-29
 | **Channel** | [SMB Capital (@smbcapital)](https://www.youtube.com/@smbcapital) |
 | **Direction** | Newest-first; work **backward** |
 | **Tooling** | `yt-dlp` auto-captions → `.local/` → librarian transcript `.md` |
-| **Last batch** | 2026-03-14 → 2026-03-19 (3 videos) |
-| **Next batch** | playlist #19–21 (see resume pointer) |
-| **Total ingested** | **18 videos** |
+| **Last batch** | 2026-02-28 → 2026-03-12 (3 videos) |
+| **Next batch** | uploads before 2026-02-28 (check channel) |
+| **Total ingested** | **21 videos** |
 
 ### Batch 1 — 2026-05-19 → 2026-05-23 ✓
 
@@ -69,11 +75,17 @@ updated: 2026-05-29
 | 2026-03-17 | `TpAPTwLMb44` | How to Maximize Options Profits |
 | 2026-03-14 | `V-ASQFpDL0g` | The Missing Piece That Made Trading 5× Easier |
 
+### Batch 7 — 2026-02-28 → 2026-03-12 ✓
+
+| Date | ID | Title |
+|------|-----|-------|
+| 2026-03-12 | `QHvp6sja4S4` | 7 red flags you are about to lose |
+| 2026-03-05 | `MlcwkmSpQaY` | The 5 Levels of Day Trading Competence |
+| 2026-02-28 | `K6YVPHULzPA` | The Wheel Options Strategy Explained |
+
 ### Resume pointer
 
-Next session (playlist order): **`QHvp6sja4S4`** (7 red flags, 2026-03-12), **`MlcwkmSpQaY`** (5 Levels of Competence, 2026-03-05), **`K6YVPHULzPA`** (Wheel Options, 2026-02-28).
-
-User-gated — agent does not auto-run channel backfill.
+Next session: channel uploads **before 2026-02-28** (run `yt-dlp --flat-playlist` on @smbcapital to refresh IDs).
 
 ### Distribution workflow (mandatory — do not lose desk knowledge)
 
