@@ -175,6 +175,8 @@ updated: 2026-05-29
 
 **Backlog after Wave 10:** ~136 open tags (~148 − 12)
 
+**Prod brief:** `briefs/2026-05-29_needs-verification-waves6-10-prod-hooks-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit WARN 88/100)
+
 ### Steady state
 
 - Target: **≤30** open dated tags (internal benchmarks only)

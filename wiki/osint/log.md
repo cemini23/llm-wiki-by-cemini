@@ -165,6 +165,14 @@
 
 ---
 
+---
+
+## [2026-05-29] distribute | NEEDS VERIFICATION Waves 6–10 prod brief
+
+- **Brief** — `briefs/2026-05-29_needs-verification-waves6-10-prod-hooks-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit WARN 88/100)
+- **Hooks** — MCP CONDITIONAL-GO (pip-licenses pass); poly_data REJECT; PTA NO-GO; AutoTS CONDITIONAL-GO; poly-maker steal-from; Pinax Substreams info
+- **Complements** — `2026-05-29_needs-verification-waves1-5-prod-hooks-cemini.md` already on prod
+
 ## [2026-05-29] query | NEEDS VERIFICATION sweep Wave 10 (deployment map + PTA pilot + May-12 cluster)
 
 - **~12 tags closed** — Hermes = NousResearch/hermes-agent `[CONFIRMED]`; Kimi cache pricing `[TENTATIVE]`; AutoTS M6 win `[CONFIRMED]`; LIF MAU + NEAR halving WW#178 `[CONFIRMED]`; PTA pilot **FAIL** on librarian slice `[TENTATIVE]`; Forrest Chang stars index fix
