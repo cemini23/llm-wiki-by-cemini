@@ -8,13 +8,21 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-05-30 — World Cup Bot)
+
+- **Build COMPLETE (2026-05-29/30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `581411b`. Modules **1–7 live**: scanner, conviction, quoter, fill handler + WS reconcile, calendar guard, **cross-venue scanner** (15 cohort pairs, alert-only), ledger + **rewards sync** (`GET /rewards/user`), go-live safety (auto-cancel, cancel-replace, kill-switch), operator webhooks, `shadow-status` CI gate. Logic version **`wc_advance_lp_v4`**. **106 pytest.** Public deploy: `deploy/systemd/` (monitor + trading profiles; no operator hostnames in git).
+- **Prod monitor DEPLOYED (2026-05-30)** — Server-Claude executed `2026-05-29_wc-monitor-systemd-enable.md` on `cemini-prod` (`worldcup` user; install root `/opt/world-cup-bot/repo`; monitor profile timers + cross-venue service).
+- **Wiki:** `entities/tools/world-cup-bot.md` → **validated** (2026-05-29).
+- **Marketing:** Outlier Weekly Issue 3 — **2026-06-03** (~4 days).
+- **Next:** SHADOW Phase 1 soak on prod (≥3 days shadow-plan → ledger; `shadow-status --min-phase 1` PASS); optional `WC_ALERT_WEBHOOK_URL`; re-run `discover` when PM advance slugs list; egress VPS trading profile (Phase 2+); CeminiSuite import brief.
+
 ## Current state (2026-05-29 — K83)
 
-- **K83 ingest (2026-05-29)** — **4× Gemini DR** World Cup reports (Group B LP, third-place math, cross-venue arbitrage, **live market-gap verification**). **4 sources + 3 concept updates + world-cup-bot entity**. **Bot:** `conviction.yaml` v3 (Canada/IVC $2500, Bosnia/Qatar fade_watch, DR Congo skip), `cross_venue.yaml` seeded (group-winner pairs only; advance PM TBD). **Closed:** DeadBall Group B gap; K82 ticker map partial. **Next:** Module 6 scanner code; shadow live soak; re-verify when PM advance slugs list.
+- **K83 ingest (2026-05-29)** — **4× Gemini DR** World Cup reports (Group B LP, third-place math, cross-venue arbitrage, **live market-gap verification**). **4 sources + 3 concept updates + world-cup-bot entity**. **Bot config:** `conviction.yaml` v3 (Canada/IVC $2500, Bosnia/Qatar fade_watch, DR Congo skip), `cross_venue.yaml` (group-winner + 15 advance cohort pairs; full advance map blocked until PM slugs firm). **Closed:** DeadBall Group B gap; K82 ticker map partial; Module 6 scanner code; prod monitor brief. **Open:** advance-pair refresh when PM lists markets; Gemini report #5 full ticker map (optional).
 
 ## Current state (2026-05-29 — K82)
 
-- **K82 ingest (2026-05-29)** — World Cup advance-market bot research wave. **4× Gemini DR + 35 YouTube videos** (DeadBall TV, B Wade, LP-farming, cross-venue). **5 sources + 4 concepts + 8 page updates**. Headline concept: `world-cup-advance-market-bot-v1` — dual deliverable (public MIT OSS + Cemini module); conviction LP + fill handler + alert-only PM↔Kalshi scanner; **all prices from Gamma/CLOB at runtime** (prod keys; no Exa/hardcoded mids). **Public repo:** [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) reserved 2026-05-29. **Build target:** 2026-05-30/31. **Marketing:** Outlier Weekly Issue 3 — **2026-06-03**. **Open:** Gemini report #5 (ticker map); DeadBall Group B; prod brief optional after bot shadow-live.
+- **K82 ingest (2026-05-29)** — World Cup advance-market bot research wave. **4× Gemini DR + 35 YouTube videos** (DeadBall TV, B Wade, LP-farming, cross-venue). **5 sources + 4 concepts + 8 page updates**. Headline concept: `world-cup-advance-market-bot-v1` — dual deliverable (public MIT OSS + Cemini module); conviction LP + fill handler + alert-only PM↔Kalshi scanner; **all prices from Gamma/CLOB at runtime**. **Public repo:** [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot). **Build:** shipped 2026-05-30 (see World Cup Bot section above). **Marketing:** Outlier Weekly Issue 3 — **2026-06-03**. **Open:** CeminiSuite module import (post shadow gate); DeadBall Group B live validation during tournament window.
 
 ## Current state (2026-05-29 — K79)
 
@@ -435,6 +443,14 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 | **1** — gap-detection lint (`wiki_gap_detect.py`) | Last run 2026-05-04 (clean baseline) |
 | **2** — proactive Exa sweeps (user-gated) | Active; last sweep 2026-05-09 (within 7-day cadence) |
 | **3** — fully autonomous outbound ingest | Rejected (drift / cost / trust grounds) |
+
+---
+
+## Done — 2026-05-30 World Cup Bot build + prod monitor deploy
+
+- **OSS repo** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot): modules 1–7, go-live safety, alerts, rewards sync, shadow-status; `581411b`; 106 tests; `deploy/systemd/` monitor + trading profiles.
+- **Prod** — monitor profile on `cemini-prod` via `2026-05-29_wc-monitor-systemd-enable.md` (executed by server-Claude).
+- **Wiki** — `entities/tools/world-cup-bot.md` validated; index + log updated.
 
 ---
 
