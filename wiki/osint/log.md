@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-05-30] ship | World Cup Bot paper arb prod docs + deploy template
+
+- **world-cup-bot** — docs/systemd: cross-venue loop adds `--record`, `WC_CROSS_VENUE_LEDGER_PATH`; README + ROADMAP Phase A/B/C table
+- **Prod brief** — `briefs/2026-05-30_wc-prod-deploy-pr1.md` updated → `/opt/cemini/briefs/` (pull `9f17058`, **DO** enable cross-venue `--record`; router flags stay OFF pre–Issue 3)
+
 ## [2026-05-30] ship | World Cup Bot phase router PR2 + prod deploy brief (updated)
 
 - **world-cup-bot** — `922a171` on `main`: multi-phase scanner, settlement gate, per-phase `cancel_hours`, SIGUSR1 reload, cross-venue phase gate; **142 pytest**
