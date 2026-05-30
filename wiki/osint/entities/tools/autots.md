@@ -8,11 +8,12 @@ related:
   - sources/multi-wiki-gemini-eval-prompt-2026-05-12.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
+  - meta/internal-benchmark-deployment-map.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-29
+updated: 2026-05-30
 gemini_eval_doc1_url: 9
-phase_0_verdict: CONDITIONAL-GO 2026-05-17 (MIT verified, MCP server real; conditions — resource benchmark on Hetzner box + torch-extra exclusion)
+phase_0_verdict: CONDITIONAL-GO 2026-05-17 (MIT verified, MCP server real; laptop resource benchmark PASS 2026-05-30; install `[mcp]` only)
 adoption_status: PHASE-0-COMPLETE 2026-05-17
 ---
 
@@ -22,6 +23,7 @@ adoption_status: PHASE-0-COMPLETE 2026-05-17
 - `@sources/multi-wiki-gemini-eval-prompt-2026-05-12.md` — corrected multi-wiki prompt
 - `@concepts/tool-evaluation-framework.md` — three-surface methodology
 - `@concepts/cemini-license-posture.md` — MIT-clean license posture
+- `@meta/internal-benchmark-deployment-map.md` — laptop benchmark routing
 
 ## Raw Concept
 
@@ -84,11 +86,22 @@ Maturity is the inverse of the aulekator failure pattern: a 6.5-year-old project
 
 Cemini's analyst-node currently has no dedicated automated-forecasting layer — the `three-formula-system` (`@concepts/three-formula-system-polymarket-rare-events.md`) is a rare-event sizing model, not a general time-series forecaster, and the NautilusTrader thread is execution/backtest infrastructure. AutoTS fills a genuine gap (general-purpose ticker/series forecasting) rather than duplicating existing coverage. The `extras['mcp']` group is the natural install target — it pairs the forecasting core with a ready MCP surface and deliberately omits TensorFlow.
 
+### Laptop resource benchmark (2026-05-30)
+
+**Laptop job** — `bash scripts/run_autots_benchmark.sh` on the OSINT workspace (yfinance panel; no librarian SSH). Report: `.local/reports/autots-laptop-benchmark-2026-05-30.md`.
+
+| Scenario | Symbols | Rows | Elapsed | Max RSS | Config |
+|----------|---------|------|---------|---------|--------|
+| single_spy | 1 | 501 | 6.2 s | 309 MB | `model_list=superfast`, `max_generations=1` |
+| panel_7 | 7 | 501 | 6.6 s | 312 MB | SPY, AAPL, MSFT, NVDA, XOM, TLT, GLD · 2y daily |
+
+Platform: macOS arm64 · AutoTS **1.0.3** · `pip install autots[mcp]` (no torch/TVA). Template eval errors in stdout are normal AutoML search noise; runs complete. **`[CONFIRMED 2026-05-30]`** — `superfast` batch fits analyst-node budget on a small box for occasional forecasts; cap `model_list` in prod.
+
 ### Decision — CONDITIONAL-GO
 
 MIT-clean, mature (6.5 yr, 1,409★, active 1.0.3 release), light 4-package core, and a real first-class MCP server. No copyleft, no abandoned-after-pump signal, no forced GPU/heavy-dep burden. Conditions before a Cemini-prod adoption brief:
 
 1. **Install via the `mcp` extra only** (`pip install autots[mcp]`) — never `[additional]`. The `mcp` group already excludes TensorFlow; do not pull `torch` (TVA path stays disabled on the Hetzner box).
-2. **Benchmark resource footprint** — measure RAM/CPU per forecast batch with classical models only, on a representative ticker panel, against the analyst-node budget before sizing. Core deps are light but the AutoML search itself can be CPU-intensive over many model classes; cap `model_list` to a lightweight subset.
+2. **Benchmark resource footprint** — **`[CONFIRMED 2026-05-30]`** laptop PASS (~310 MB RSS, ~7 s per `superfast` batch on 7-symbol panel). Re-benchmark if `model_list` or generation count increases in prod.
 3. **Verify the M6 2023 competition-placement claim** before citing it in any external Cemini material — **`[CONFIRMED 2026-05-29]`** via in-repo `docs/catlin_m6_paper.tex` (investment decision challenge). Not a blocker for internal adoption.
 4. Single-maintainer bus factor: acceptable for an MIT lib (fork-safe), no mitigation required beyond pinning a known-good version.

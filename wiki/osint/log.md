@@ -6767,3 +6767,11 @@ Substantial Cemini-relevant batch — three Adopt-candidates (ai-polymarket-agen
 ### Update — License-check follow-up (deferred)
 
 Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-API spot-checks before final verdict (osint_stuff_tool_collection, H4X-Tools, hackingtool-plugin, J.A.R.V.I.S, awesome-claude, scalar-field/centpro are commercial closed-source and need no check). Scheduled for next session. — see `@concepts/cemini-license-posture.md`.
+
+## [2026-05-30] benchmark | AutoTS laptop resource gate
+
+- **`scripts/run_autots_benchmark.sh`** + `scripts/autots_benchmark/run.py` — Phase-0 condition #2 for `@entities/tools/autots.md`
+- **Result PASS** — 7-symbol panel (2y daily): ~6.6 s, ~312 MB max RSS, `model_list=superfast`, AutoTS 1.0.3, `autots[mcp]` only
+- Report → `.local/reports/autots-laptop-benchmark-2026-05-30.md`
+- Updated `@meta/internal-benchmark-deployment-map.md` task routing row
+- **Prod brief** — `briefs/2026-05-30_autots-laptop-benchmark-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit WARN 88/100)

@@ -11,9 +11,10 @@ related:
   - meta/hl-funding-backtest-cadence.md
   - meta/pm-lp-backtest-cadence.md
   - sources/pta-metric-anchoring-ssrn-4549819.md
+  - entities/tools/autots.md
 maturity: core
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-05-30
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-29
 - @meta/equity-signal-backtest-cadence.md — equity momentum lab
 - @meta/pta-backtest-cadence.md — PTA reproduction gate
 - @sources/pta-metric-anchoring-ssrn-4549819.md — adopt candidate gated on pilot
+- @entities/tools/autots.md — Phase-0 resource benchmark (2026-05-30 PASS)
 
 ## Rule of thumb
 
@@ -48,6 +50,7 @@ updated: 2026-05-29
 | **MCP rate-limiter soak** | `pytest tests/test_performance.py` on forked `polymarket-mcp-server` | Laptop dev | Live Polymarket APIs (read) | Deploy brief → prod |
 | **stash token-cost ratio** | Measure on **librarian** stash instance | Librarian | Local Ollama + Postgres | Adopt gate for librarian MCP |
 | **firnflow RAM / 130-MCP soak** | Not scheduled — Reference-only architecture | — | — | No deploy |
+| **AutoTS resource bench** | `bash scripts/run_autots_benchmark.sh` | Laptop | yfinance daily panel | Brief after Phase-0 gate |
 | **Kronos CPU P99** | Optional laptop torch micro-bench | Laptop | HF model download | Steal tokenizer only |
 | **K79 SMB sleeve backtests** | Future per-playbook scripts | Laptop | Vendor-defined / Polygon when built | Policy briefs only |
 | **NEEDS VERIFICATION sweeps** | Wiki edits + Exa/GitHub/SSH probes | Laptop | External + read-only SSH | N/A |
