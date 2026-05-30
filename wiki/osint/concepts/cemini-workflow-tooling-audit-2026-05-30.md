@@ -14,7 +14,9 @@ related:
   - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
   - entities/tools/lazy-tool.md
   - concepts/wiki-tooling-evaluation.md
-maturity: draft
+  - meta/wc-lp-safety-cadence.md
+  - meta/wiki-gap-detect-cadence.md
+maturity: validated
 created: 2026-05-30
 updated: 2026-05-30
 ---
@@ -23,8 +25,10 @@ updated: 2026-05-30
 
 - @entities/tools/n8n-workflows.md — K42 Adopt; workflow audit recommends script-first before n8n host
 - @sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md — K84 per-team LP safety verdicts (time-volatile)
-- @sources/kepano-obsidian-skills.md — Workflow-Adopt; **not installed** on laptop `.claude/skills`
-- @sources/agriciDaniel-claude-obsidian.md — Steal-from visual Karpathy pattern; partial overlap with git wiki
+- @sources/kepano-obsidian-skills.md — Workflow-Adopt; installed in `.agents/skills/` + Obsidian vault overlay
+- @sources/agriciDaniel-claude-obsidian.md — Steal-from visual Karpathy pattern; `/save` adapted in cemini-wiki-graph skill
+- @meta/wc-lp-safety-cadence.md — weekly LP safety DR cadence
+- @meta/wiki-gap-detect-cadence.md — Tier 1 gap report cadence
 
 ## Raw Concept
 
@@ -93,17 +97,25 @@ v4 multi-wiki eval prompt (frozen in `Cemini claude code CCC/prompts/deep-resear
 
 → Draft **v5** before next tool-eval drop (see `Cemini claude code CCC/prompts/deep-research-multi-wiki-eval-v5-2026-05-30.md`).
 
-## Adopted (2026-05-30 session)
+## Adopted (2026-05-30 — gaps closed 2026-05-30 PM)
 
 | Item | Status | Notes |
 |------|--------|-------|
-| Inbox watcher | **Live** | `scripts/inbox_notify.sh` + LaunchAgent `com.cemini.inbox-notify` (WatchPaths on `research to be indexed/`) |
-| Wiki sync verify | **Live** | `scripts/verify_wiki_sync.sh`; hourly LaunchAgent + end of `sync_wiki_to_librarian.sh` |
-| License spot-check | **Script** | `scripts/license_spot_check.sh` — run post tool-eval ingest |
-| kepano obsidian-skills | **Installed** | HTTPS `npx skills add https://github.com/kepano/obsidian-skills.git` → `.agents/skills/obsidian-{markdown,cli}` |
-| v5 eval prompt | **Draft on disk** | CCC `prompts/deep-research-multi-wiki-eval-v5-2026-05-30.md` |
-| n8n host | **Deferred** | Script-first per recommendation |
-| Obsidian vault mirror | **Deferred** | Optional human curation layer |
+| Inbox watcher | **Live** | `inbox_notify.sh` + LaunchAgent; auto `post_tool_eval_license.sh` on tool-eval filenames |
+| Wiki sync verify | **Live** | Hourly LaunchAgent + end of `sync_wiki_to_librarian.sh` |
+| License spot-check | **Live** | `license_spot_check.sh` + `post_tool_eval_license.sh` wired to inbox |
+| WC LP safety cadence | **Live** | `wiki/meta/wc-lp-safety-cadence.md` + weekly LaunchAgent reminder |
+| Wiki gap detect Tier 1 | **Live** | `wiki/meta/wiki-gap-detect-cadence.md` + weekly report to `.local/reports/` |
+| kepano obsidian-skills | **Live** | `.agents/skills/obsidian-{markdown,cli}` |
+| Obsidian vault graph | **Live** | `setup_obsidian_vault.sh` → `wiki/.obsidian/`; skill `cemini-wiki-graph` |
+| claude-obsidian /save | **Live** | Adapted in `cemini-wiki-graph` skill (git canon, no second vault) |
+| NotebookLM on briefs | **Live** | `notebooklm_export_brief.sh` + existing bridge skill |
+| Canvas LP matrix | **Live** | `wc-lp-safety-k84.canvas.tsx` for Issue 3 prep |
+| v5 eval prompt | **Live** | CCC `prompts/deep-research-multi-wiki-eval-v5-2026-05-30.md` |
+| stash decisions | **Live** | K84 adoption episode in `/projects/osint-workspace` |
+| mem-search before re-Adopt | **Live** | `.cursor/rules/osint-workflow-operators.mdc` |
+| n8n host | **Script equivalent** | Script-first automations cover inbox/sync/license/gap/LP cadences; AI-BOM → license + pre-commit secrets |
+| n8n GUI workflows | **Deferred** | Only if non-dev operators need visual editor |
 
 ## Snippets
 

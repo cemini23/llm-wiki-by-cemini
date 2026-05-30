@@ -11,6 +11,7 @@ related:
   - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
   - sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md
   - sources/trading-posts-compilation-k84-2026-05-30.md
+  - meta/wc-lp-safety-cadence.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-30

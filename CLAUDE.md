@@ -355,7 +355,25 @@ If due: prompt to run `bash scripts/run_equity_signal_backtest.sh` (needs `ssh c
 
 If due: prompt to run `bash scripts/run_cross_venue_backtest.sh`. See `wiki/meta/cross-venue-backtest-cadence.md`.
 
-### 8. (Future ritual hooks land here.)
+### 8. WC LP safety DR cadence (weekly, Cup window)
+
+```bash
+./scripts/check_wc_lp_safety_due.sh
+```
+
+If exit code **0** (due): prompt to run `bash scripts/run_wc_lp_safety_reminder.sh` and re-run Gemini `03-team-lp-risk.md` before changing `conviction.yaml`. See `wiki/meta/wc-lp-safety-cadence.md`.
+
+### 9. Wiki gap detect Tier 1 cadence (weekly)
+
+```bash
+./scripts/check_wiki_gap_detect_due.sh
+```
+
+If due: prompt to run `bash scripts/run_wiki_gap_detect.sh` (~1 min). Report lands in `.local/reports/`. See `wiki/meta/wiki-gap-detect-cadence.md`. Tier 2 Exa remains user-gated.
+
+### 10. Obsidian vault (operator setup)
+
+If `wiki/.obsidian/` missing: `bash scripts/setup_obsidian_vault.sh`. Graph review ritual: `.cursor/skills/cemini-wiki-graph/SKILL.md`.
 
 Keep each check under 60 seconds. Rituals that grow into multi-minute operations should become opt-in commands instead.
 

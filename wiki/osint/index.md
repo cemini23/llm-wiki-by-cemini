@@ -1337,6 +1337,8 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [SMB Capital YouTube ingest cadence](meta/smb-capital-youtube-ingest-cadence.md) — `[CORE 2026-05-29]` K79 channel backfill; **30 videos** ingested; next playlist #31–33. — meta, youtube, cadence, k79
 - [Internal benchmark deployment map](meta/internal-benchmark-deployment-map.md) — `[CORE 2026-05-29]` canonical routing: laptop scripts + librarian data; **never prod/egress** for backtests/benchmarks. — meta, deployment, cadence
 - [PTA backtest cadence](meta/pta-backtest-cadence.md) — `[CORE 2026-05-29]` PTA pilot gate; last run 2026-05-29 **FAIL** on stale ArcticDB slice. — meta, pta, backtest, quant
+- [WC LP safety DR cadence](meta/wc-lp-safety-cadence.md) — `[CORE 2026-05-30]` weekly Gemini team LP safety re-run through Cup; next 2026-06-06. — meta, world-cup, lp-safety, k84
+- [Wiki gap detect cadence](meta/wiki-gap-detect-cadence.md) — `[CORE 2026-05-30]` Tier 1 weekly report; descriptive only. — meta, wiki, gap-detect, k84
 
 #### K80 ingest (2026-05-29 — Polymarket YouTube batch, 4 videos)
 

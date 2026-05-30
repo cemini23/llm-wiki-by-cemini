@@ -19,6 +19,7 @@ related:
   - sources/world-cup-github-repo-eval-2026-05-29.md
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
+  - meta/wc-lp-safety-cadence.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-30

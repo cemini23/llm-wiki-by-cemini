@@ -36,6 +36,15 @@ report=$(python3 "$ROOT/scripts/preingest_check.py" 2>&1) || true
 echo "$report" >> "$LOGFILE"
 echo "$report"
 
+# Auto license spot-check on tool-eval drops (K84 workflow)
+while IFS= read -r f; do
+  base=$(basename "$f")
+  if echo "$base" | grep -Eiq 'tool.?eval|evaluation|wiki.?fit'; then
+    log "tool-eval detected: $base — running post_tool_eval_license.sh"
+    bash "$ROOT/scripts/post_tool_eval_license.sh" "$f" >> "$LOGFILE" 2>&1 || true
+  fi
+done < <(find "$INBOX" -maxdepth 1 -type f ! -name '.*')
+
 # Optional webhook (set in env or ~/.cemini/inbox-webhook.url)
 WEBHOOK_FILE="$HOME/.cemini/inbox-webhook.url"
 if [[ -f "$WEBHOOK_FILE" ]]; then

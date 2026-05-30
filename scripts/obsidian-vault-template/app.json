@@ -1,0 +1,10 @@
+{
+  "alwaysUpdateLinks": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "sources",
+  "promptDelete": false,
+  "showLineNumber": true,
+  "strictLineBreaks": false,
+  "useMarkdownLinks": false,
+  "attachmentFolderPath": "attachments"
+}

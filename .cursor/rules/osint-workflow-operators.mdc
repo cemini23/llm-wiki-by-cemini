@@ -1,0 +1,42 @@
+---
+description: Operator workflow rituals closed in K84/K85 — Obsidian graph, NotebookLM, mem-search, cadence scripts.
+globs:
+  - wiki/**
+  - briefs/**
+  - scripts/**
+alwaysApply: false
+---
+
+# OSINT workflow operators (gap-closed)
+
+## Obsidian graph layer
+
+- One-time: `bash scripts/setup_obsidian_vault.sh --open`
+- Pre-commit: `python3 scripts/wiki_lint.py --fail-on-graph` then Obsidian Graph (orphans on)
+- Skill: `.cursor/skills/cemini-wiki-graph/SKILL.md`
+- Canonical remains git `wiki/` + `@path`; kb-server serves librarian copy
+
+## Tool eval ingest
+
+- Inbox drop auto-runs `post_tool_eval_license.sh` when filename matches tool-eval pattern
+- Manual: `bash scripts/post_tool_eval_license.sh path/to/eval.md`
+- Use **v5** eval prompt in CCC for new drops (inline `gh api` license step)
+
+## Before re-Adopt / Phase-0
+
+- Run **claude-mem** `mem-search` or wiki grep: "Did we already NO-GO this tool?"
+- Check `@concepts/wiki-tooling-evaluation.md` Phase-0 registry
+
+## Large briefs → NotebookLM
+
+- `bash scripts/notebooklm_export_brief.sh briefs/<file>.md`
+- Follow `.cursor/skills/notebooklm-osint-bridge/SKILL.md` — redact secrets first
+
+## Cadences (user-gated run)
+
+| Check | Script |
+|-------|--------|
+| WC LP safety DR | `./scripts/check_wc_lp_safety_due.sh` → `run_wc_lp_safety_reminder.sh` |
+| Wiki gap Tier 1 | `./scripts/check_wiki_gap_detect_due.sh` → `run_wiki_gap_detect.sh` |
+
+LaunchAgents: `bash scripts/install_workflow_launchagents.sh`
