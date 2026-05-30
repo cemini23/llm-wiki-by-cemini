@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-05-30 — K84)
+
+- **K84 ingest (2026-05-30)** — 8 inbox items (3× arXiv/PDF + 3× WC LP safety DR + Posts.docx + v4 tool eval). **OSINT: 6 sources + 4 concepts + 4 page updates**. WC LP verdicts: Spain **skip**, Brazil **reduce**, Morocco **human_review** — `[NEEDS VERIFICATION 2026-06-06]`. **conviction.yaml v4** shipped in world-cup-bot repo. Tool eval: 6/8 NO LICENSE Rejects overturned via `gh api`; PageIndex Adopt **rejected** (prior NO-GO). **Workflow audit:** `concepts/cemini-workflow-tooling-audit-2026-05-30.md`. **CCC:** v5 eval prompt + Codex harness brief staged. **SEO:** K84 style-pass logged. **Prod brief:** `2026-05-30_k84-world-cup-conviction-v4-lp-safety-cemini.md` (skill_audit PASS). **Open:** push world-cup-bot + prod pull; scp brief to prod.
+
 ## Current state (2026-05-30 — World Cup Bot)
 
 - **Build COMPLETE (2026-05-29/30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `581411b`. Modules **1–7 live**: scanner, conviction, quoter, fill handler + WS reconcile, calendar guard, **cross-venue scanner** (15 cohort pairs, alert-only), ledger + **rewards sync** (`GET /rewards/user`), go-live safety (auto-cancel, cancel-replace, kill-switch), operator webhooks, `shadow-status` CI gate. Logic version **`wc_advance_lp_v4`**. **106 pytest.** Public deploy: `deploy/systemd/` (monitor + trading profiles; no operator hostnames in git).

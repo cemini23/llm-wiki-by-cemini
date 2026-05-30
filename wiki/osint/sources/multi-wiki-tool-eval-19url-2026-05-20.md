@@ -11,6 +11,7 @@ related:
   - entities/tools/scalar-field.md
   - entities/tools/nexttrade.md
   - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
+  - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-20

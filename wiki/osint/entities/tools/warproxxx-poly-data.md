@@ -12,6 +12,8 @@ related:
   - entities/platforms/polymarket.md
   - concepts/polymarket-copy-trading-strategy.md
   - entities/people/farxxxxx1-polymarket.md
+  - sources/trading-posts-compilation-k84-2026-05-30.md
+  - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
 maturity: draft
 created: 2026-05-24
 updated: 2026-05-28

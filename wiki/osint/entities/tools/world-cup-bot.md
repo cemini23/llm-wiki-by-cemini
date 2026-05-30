@@ -17,6 +17,8 @@ related:
   - entities/tools/polymarket-clob-api.md
   - entities/tools/openfootball-worldcup-json.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
+  - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
+  - concepts/cemini-workflow-tooling-audit-2026-05-30.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-30
@@ -58,7 +60,7 @@ Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code 
 |--------|-------|
 | Repo + docs | **Live** |
 | **Scanner (1)** | **Live** — Gamma advance markets + reward params |
-| **Conviction filter (2)** | **Live** — `config/conviction.yaml` **v3** (K83 Gemini DR) |
+| **Conviction filter (2)** | **Live** — `config/conviction.yaml` **v4** (K84 LP safety gates) |
 | **Quoter (3)** | **Live** dry-run + live POST (`clob_live.py`); cancel-replace + calendar auto-cancel |
 | **Fill handler (4)** | **Live** — WS user channel + REST reconcile; kill-switch halt |
 | **Calendar guard (5)** | **Live** — CC0 `data/worldcup2026-fixtures.json` |

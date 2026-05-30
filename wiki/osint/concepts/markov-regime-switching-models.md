@@ -6,6 +6,7 @@ keywords: [markov-chain, transition-matrix, chapman-kolmogorov, stationary-distr
 related:
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
   - concepts/quant-finance.md
+  - sources/ai-for-trading-strategies-jevtic-zhaw-2022.md
   - concepts/regime-conditioned-evaluation.md
   - concepts/macro-weather-regime.md
   - concepts/prediction-market-statistical-arbitrage.md

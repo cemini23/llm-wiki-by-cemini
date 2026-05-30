@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-05-30] ingest | K84 — arXiv + WC LP safety + tool eval + Posts
+
+**Sources:** 8 inbox files → `cemini-librarian:/opt/cemini-bulk/research/` ✓
+
+- **Follow-up (same session):** conviction.yaml **v4** in world-cup-bot repo; seo K84 style-pass; prod brief `2026-05-30_k84-world-cup-conviction-v4-lp-safety-cemini.md` (PASS); CCC brief Codex harness
+
+- **6 sources** — SkillOpt (2605.23904), SIA (2605.27276), AI trading strategies (2208.07168), WC LP team safety (Spain/Brazil/Morocco), v4 tool eval (24 URLs), Posts.docx K84
+- **4 concepts** — skillopt optimizer, SIA unified loop, workflow tooling audit, (LP rules update)
+- **4 updated** — world-cup conviction matrix, polymarket-sports-lp-operating-rules, world-cup-bot entity, ROADMAP
+- **CCC** — v5 multi-wiki eval prompt (`deep-research-multi-wiki-eval-v5-2026-05-30.md`)
+- **License corrections** — poly-maker, hivemind, AgentLaboratory, open-collider false NO LICENSE in Gemini report
+- **Open** — conviction.yaml v4 seeds; seo style-pass; prod brief; weekly LP safety re-run
+
 ## [2026-05-29] update | World Cup Bot — rewards sync, wiki refresh, prod systemd brief
 
 **Repo:** [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) — `rewards sync` (CLOB `/rewards/user`), cancel-replace ledger audit, pnl-daily timer hook.

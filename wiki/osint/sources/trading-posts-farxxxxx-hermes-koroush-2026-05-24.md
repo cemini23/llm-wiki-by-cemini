@@ -20,6 +20,7 @@ related:
   - entities/platforms/polymarket.md
   - concepts/koroushak-discretionary-trading-curriculum.md
   - sources/trading-posts-compilation-6-2026-05-29.md
+  - sources/trading-posts-compilation-k84-2026-05-30.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-24

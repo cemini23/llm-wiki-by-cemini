@@ -15,6 +15,7 @@ related:
   - concepts/ai-organisation-design.md
   - sources/omc-talent-container-paper.md
   - sources/matching-accuracy-different-geometry-es-grpo.md
+  - sources/sia-self-improving-ai-harness-weight-updates-2026-05-30.md
   - concepts/policy-distillation.md
   - sources/4-3-link-research.md
   - sources/co-evolving-policy-distillation-2604.27083.md

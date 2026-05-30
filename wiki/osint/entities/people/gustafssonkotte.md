@@ -12,6 +12,7 @@ related:
   - concepts/polymarket-btc-already-position-gate.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
   - concepts/polymarket-bot-architecture.md
+  - sources/trading-posts-compilation-k84-2026-05-30.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - entities/tools/chainlink-data-streams.md
   - entities/platforms/polymarket.md

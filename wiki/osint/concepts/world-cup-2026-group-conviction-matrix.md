@@ -9,11 +9,12 @@ related:
   - sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md
   - sources/gemini-wc2026-third-place-advancement-2026-05-29.md
   - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
+  - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-05-30
 ---
 
 ## Relations
@@ -22,10 +23,11 @@ updated: 2026-05-29
 - @sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md — Group B LP tiers (K83)
 - @sources/gemini-wc2026-third-place-advancement-2026-05-29.md — third-place caps/skips
 - @sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md — live cross-venue verification
+- @sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md — K84 per-team LP safety verdicts (time-volatile)
 
 ## Raw Concept
 
-Synthesis of **DeadBall TV** (11 group previews), **B Wade Picks**, batch-1 pundit videos, and **Gemini DR** reports (K82 + **K83 May 29 batch**). All picks **[TENTATIVE]** except K83 Group B / live gap rows marked validated — bot loads team list from config; **prices from Gamma at runtime**.
+Synthesis of **DeadBall TV** (11 group previews), **B Wade Picks**, batch-1 pundit videos, and **Gemini DR** reports (K82 + **K83 May 29 batch** + **K84 May 30 LP safety**). All picks **[TENTATIVE]** except K83 Group B / live gap rows marked validated — bot loads team list from config; **prices from Gamma at runtime**. **LP safety verdicts `[NEEDS VERIFICATION 2026-06-06]`** — re-run before Group C/H kickoff (~Jun 13).
 
 ## Narrative
 
@@ -54,7 +56,7 @@ Synthesis of **DeadBall TV** (11 group previews), **B Wade Picks**, batch-1 pund
 | Bosnia | fade_watch | alert | 8–11pp PM vs Kalshi — no auto YES |
 | Qatar | skip + fade_watch | — | 11–14pp divergence |
 
-### Conviction LP seeds (YAML v3 — `world-cup-bot/config/conviction.yaml`)
+### Conviction LP seeds (YAML v4 — `world-cup-bot/config/conviction.yaml`)
 
 **YES advance — mid-tier (prefer mid 0.20–0.80):**
 
@@ -94,6 +96,16 @@ Synthesis of **DeadBall TV** (11 group previews), **B Wade Picks**, batch-1 pund
 | Group D | USA out | USA 45% win, R16+ |
 | Group F | Netherlands 1st | **Japan** 1st (26% Kalshi) |
 | Group K | Colombia 1st | Portugal 64% win |
+
+### K84 LP safety verdicts (May 30 snapshot — not prices)
+
+| Team | LP safety | Notes |
+|------|-----------|-------|
+| Spain | **skip** | Yamal injury + Jun 4/8 friendlies |
+| Brazil | **reduce** | Neymar calf; widen spreads / cut size |
+| Morocco | **human_review** | Aguerd injuries; depth unknown |
+
+**Shipped in repo (2026-05-30):** Spain skip, Brazil $500 cap, Morocco human_review — **do not** publish static mids in Issue 3.
 
 ### Third-place tiebreakers (48-team)
 

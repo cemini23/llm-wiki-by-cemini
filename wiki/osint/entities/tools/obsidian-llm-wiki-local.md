@@ -11,6 +11,7 @@ related:
   - entities/tools/academic-paper-skills.md
   - entities/tools/codex-startup-pressure-test-skill.md
   - entities/tools/research-paper-writing-skills.md
+  - concepts/cemini-workflow-tooling-audit-2026-05-30.md
 maturity: validated
 phase2_ported_as: scripts/_llm_retry.py (2026-05-10)
 created: 2026-05-06

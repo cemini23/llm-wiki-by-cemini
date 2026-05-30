@@ -9,6 +9,7 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/librarian-server-architecture.md
   - entities/tools/swarmvault.md
+  - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
 maturity: validated
 created: 2026-05-05
 updated: 2026-05-13

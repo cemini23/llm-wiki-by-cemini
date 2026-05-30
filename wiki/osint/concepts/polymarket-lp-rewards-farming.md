@@ -8,6 +8,7 @@ related:
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - concepts/polymarket-bot-architecture.md
+  - sources/trading-posts-compilation-k84-2026-05-30.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - concepts/non-latency-arbitrage-strategies.md

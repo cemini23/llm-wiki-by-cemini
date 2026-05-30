@@ -9,6 +9,7 @@ related:
   - concepts/world-cup-2026-group-conviction-matrix.md
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
+  - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-29

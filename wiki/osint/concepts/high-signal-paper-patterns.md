@@ -7,6 +7,8 @@ related:
   - sources/black-scholes-iv-explicit-schadner-2026.md
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - sources/agentic-harness-engineering.md
+  - sources/skillopt-executive-strategy-self-evolving-agent-skills-2026-05-30.md
+  - sources/sia-self-improving-ai-harness-weight-updates-2026-05-30.md
   - sources/incompressible-knowledge-probes-li-2026.md
   - sources/lob-regime-detection-hiremath-2026.md
   - sources/moe-efficiency-leverage-tian-2026.md

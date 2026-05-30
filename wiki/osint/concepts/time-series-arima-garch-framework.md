@@ -15,6 +15,7 @@ related:
   - concepts/monte-carlo-permutation-test-mcpt.md
   - entities/people/rohonchain.md
   - entities/people/yifan-guo.md
+  - sources/ai-for-trading-strategies-jevtic-zhaw-2022.md
 maturity: validated
 created: 2026-05-20
 updated: 2026-05-21

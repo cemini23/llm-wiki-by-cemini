@@ -9,18 +9,20 @@ related:
   - sources/gemini-sports-prediction-bot-pitfalls-2026-05-29.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/world-cup-advance-market-bot-v1.md
+  - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - entities/tools/world-cup-bot.md
   - entities/tools/openfootball-worldcup-json.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-05-30
 ---
 
 ## Relations
 
 - @concepts/polymarket-lp-rewards-farming.md — general LP strategy; this page is **sports-specific ops**
+- @sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md — K84 extreme-bound team verdicts
 - @concepts/world-cup-advance-market-bot-v1.md — primary consumer
 
 ## Raw Concept
@@ -62,6 +64,18 @@ Distilled from Gemini LP WC report + Seb Montgomery/DuneHammer podcast (`N8QP23v
 - **Cancel all orders 6–10 hours before kickoff** for affected teams.
 - **Never** quote during live play.
 - Kill switch: live-window fill → flatten + halt bot.
+
+### Extreme-bound markets (mid ≥ 90¢) — K84 team assessments
+
+When advance markets trade at **≥90¢**, bilateral quoting is mandatory and economics shift to **rewards-only** with elevated toxic flow:
+
+| Posture | When | Bot action |
+|---------|------|------------|
+| **skip** | Injury/friendly windows + skewed mid (Spain K84) | No quotes; monitor only |
+| **reduce** | Confirmed squad risk but still quotable (Brazil K84) | Min size, max spread, tight cancel |
+| **human_review** | Unknown depth / conflicting medical wires (Morocco K84) | Gate automation until operator OK |
+
+All such verdicts are **`[NEEDS VERIFICATION 2026-06-06]`** pre-tournament — re-run safety DR weekly through Cup window.
 
 ### Economics reminder
 

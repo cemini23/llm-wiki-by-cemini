@@ -53,6 +53,7 @@ related:
   - concepts/polymarket-btc-already-position-gate.md
   - concepts/polymarket-news-resolution-speed-game.md
   - sources/trading-posts-compilation-20-2026-05-27.md
+  - sources/trading-posts-compilation-k84-2026-05-30.md
   - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
   - concepts/production-trading-blind-spots.md

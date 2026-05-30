@@ -47,6 +47,8 @@ related:
   - sources/7onez-cti-expert.md
   - sources/spaceshift-sateais-api.md
   - concepts/mcp-tool-marketplace.md
+  - concepts/cemini-workflow-tooling-audit-2026-05-30.md
+  - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
   - sources/gemini-dr-wave5a-cemini-stack-2026-04-30.md
   - sources/gemini-dr-wave5b-osint-2026-04-30.md
   - sources/alash3al-stash.md

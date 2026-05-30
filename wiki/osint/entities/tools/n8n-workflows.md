@@ -5,8 +5,10 @@ tags: [tool, automation, n8n, workflow, ai-bom-scanner, trusera, adopt-tier, cyb
 keywords: [n8n-workflows, n8n, workflow automation, AI-BOM, MCP detection, hardcoded keys, LinkedIn scraping, FastAPI, SQLite FTS5]
 related:
   - sources/multi-wiki-link-eval-prompt-2026-05-13.md
+  - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
   - concepts/tool-evaluation-framework.md
   - concepts/mcp-tool-marketplace.md
+  - concepts/cemini-workflow-tooling-audit-2026-05-30.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-28

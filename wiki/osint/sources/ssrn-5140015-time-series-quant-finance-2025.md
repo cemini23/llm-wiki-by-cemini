@@ -10,6 +10,7 @@ related:
   - concepts/portfolio-strategy.md
   - concepts/quant-finance.md
   - entities/people/yifan-guo.md
+  - sources/ai-for-trading-strategies-jevtic-zhaw-2022.md
 maturity: validated
 created: 2026-05-21
 updated: 2026-05-21

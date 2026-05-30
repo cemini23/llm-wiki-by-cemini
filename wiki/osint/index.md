@@ -1439,6 +1439,18 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Cemini backtest report kit](concepts/cemini-backtest-report-kit.md) — `[CORE 2026-05-27]` Venue-agnostic Plotly sweep HTML: PM LP, Kalshi LP, equity momentum (ArcticDB/SSH), PM×Kalshi divergence, HL funding bridge; `scripts/backtest_common/`. — concept, backtest, polymarket, kalshi, plotly
 - [Polymarket LP bot — Phase-0 spec](concepts/polymarket-lp-bot-phase0-spec.md) — `[DRAFT 2026-05-21]` K56 follow-up. Design-only: scanner → forecaster → two-sided quotes → fill handler → rotation → reward accountant; capital tiers ($50/$200/$500); MCPT gate before live; CONDITIONAL-GO for shadow-live Phase-1. — concept, polymarket, lp-bot, phase-0, k56
 
+#### K84 ingest (2026-05-30)
+
+- [SkillOpt — self-evolving agent skills (arXiv:2605.23904)](sources/skillopt-executive-strategy-self-evolving-agent-skills-2026-05-30.md) — `[DRAFT 2026-05-30]` Microsoft text-space skill optimizer; validation-gated edits. — source, arxiv, agent-skills, k84
+- [SIA — harness + weight self-improvement (arXiv:2605.27276)](sources/sia-self-improving-ai-harness-weight-updates-2026-05-30.md) — `[DRAFT 2026-05-30]` Hexo Labs unified self-improvement loop. — source, arxiv, harness-engineering, k84
+- [AI for Trading Strategies (Jevtic ZHAW 2022)](sources/ai-for-trading-strategies-jevtic-zhaw-2022.md) — `[DRAFT 2026-05-30]` ML vs ARMA-GARCH on crude oil by regime. — source, academic, k84
+- [Gemini DR — WC LP team safety (Spain/Brazil/Morocco)](sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md) — `[DRAFT 2026-05-30]` skip/reduce/human_review; time-volatile pre-Cup. — source, gemini, world-cup, lp-safety, k84
+- [Multi-wiki tool eval v4 K84 (24 URLs)](sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md) — `[DRAFT 2026-05-30]` License false negatives; PageIndex Adopt overturned. — source, tool-eval, k84
+- [Trading posts K84 (Posts.docx)](sources/trading-posts-compilation-k84-2026-05-30.md) — `[DRAFT 2026-05-30]` @0xPhilanthrop stack, @polybacktest, Codex harness posts. — source, trading-posts, k84
+- [SkillOpt controllable skill optimizer](concepts/skillopt-controllable-skill-optimizer.md) — `[DRAFT 2026-05-30]` — concept, agent-skills, k84
+- [SIA unified harness/weight loop](concepts/sia-unified-harness-weight-self-improvement.md) — `[DRAFT 2026-05-30]` — concept, self-improving-agents, k84
+- [Cemini workflow tooling audit](concepts/cemini-workflow-tooling-audit-2026-05-30.md) — `[DRAFT 2026-05-30]` Obsidian/n8n/MCP gap map + v5 prompt need. — concept, workflow, audit, k84
+
 #### K82 World Cup advance-market bot (2026-05-29)
 
 - [World Cup advance-market bot — v1 spec (OSS + Cemini)](concepts/world-cup-advance-market-bot-v1.md) — `[DRAFT 2026-05-29]` K82. Conviction LP on FIFA 2026 advance-to-knockout; fill handler; alert-only PM↔Kalshi scanner; Gamma/CLOB runtime prices. Public repo: [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot). Outlier Weekly Issue 3 (2026-06-03). — concept, world-cup, polymarket, kalshi, lp-bot, oss, k82

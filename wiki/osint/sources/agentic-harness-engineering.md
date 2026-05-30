@@ -20,6 +20,12 @@ related:
   - entities/infrastructure/deepseek-api.md
   - sources/incompressible-knowledge-probes-li-2026.md
   - concepts/high-signal-paper-patterns.md
+  - concepts/skillopt-controllable-skill-optimizer.md
+  - concepts/sia-unified-harness-weight-self-improvement.md
+  - sources/skillopt-executive-strategy-self-evolving-agent-skills-2026-05-30.md
+  - sources/sia-self-improving-ai-harness-weight-updates-2026-05-30.md
+  - concepts/skillopt-controllable-skill-optimizer.md
+  - concepts/sia-unified-harness-weight-self-improvement.md
   - sources/training-free-grpo-cai-2025.md
   - sources/llms-corrupt-documents-laban-2026.md
   - sources/thinking-with-visual-primitives-deepseek-2026.md

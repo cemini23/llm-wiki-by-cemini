@@ -23,6 +23,7 @@ related:
   - concepts/autoresearch-loop-pattern.md
   - sources/xskill-2603-12056.md
   - sources/gemini-sci-research-2602-03837.md
+  - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - entities/tools/claude-osint.md
   - entities/tools/atlas-gic-autoresearch.md
 maturity: validated

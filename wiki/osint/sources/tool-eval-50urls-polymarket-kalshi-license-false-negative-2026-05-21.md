@@ -16,6 +16,7 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/polymarket-bot-architecture.md
   - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
+  - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-21

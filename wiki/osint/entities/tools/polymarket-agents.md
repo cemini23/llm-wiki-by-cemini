@@ -14,6 +14,8 @@ related:
   - entities/tools/polymarket-trackers.md
   - concepts/polymarket-market-making-architectures.md
   - entities/tools/ai-polymarket-agent.md
+  - sources/trading-posts-compilation-k84-2026-05-30.md
+  - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
 maturity: draft
 created: 2026-05-05
 updated: 2026-05-24

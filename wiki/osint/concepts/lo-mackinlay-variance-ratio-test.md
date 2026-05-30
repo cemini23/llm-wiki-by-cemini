@@ -6,6 +6,7 @@ keywords: [variance-ratio, lo-mackinlay, market-efficiency, autocorrelation, ran
 related:
   - sources/lo-mackinlay-1988-variance-ratio.md
   - concepts/cemini-backtest-report-kit.md
+  - sources/ai-for-trading-strategies-jevtic-zhaw-2022.md
 maturity: validated
 created: 2026-05-26
 updated: 2026-05-29
