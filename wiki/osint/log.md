@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-05-30] ship | World Cup Bot phase router PR1 + prod deploy brief
+
+- **world-cup-bot** — `43c7f60` on `main`: Module 1b FSM skeleton, `phase status/set/purge`, ledger phase fields; flags default OFF (`WC_PHASE_ROUTER_ENABLED=0`)
+- **Prod brief** — `briefs/2026-05-30_wc-prod-deploy-pr1.md` → `/opt/cemini/briefs/` (skill_audit PASS); pull only, no router enable before Issue 3
+- **Prod systemd** — `cemini-wc-shadow-plan.service` already runs `plan --record --liquidity-gate`; timer active
+
 ## [2026-05-30] ingest | K86 — Gemini DR 10 (phase router) + GitHub sports/PM landscape
 
 **Sources:** 2× Gemini DR docx → `cemini-librarian:/opt/cemini-bulk/research/`

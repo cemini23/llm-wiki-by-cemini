@@ -10,7 +10,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-30 — K86)
 
-- **K86 ingest (2026-05-30)** — Gemini DR **10** (tournament phase router) + **targeted GitHub sports/PM landscape**. **2 sources + 4 page updates.** DR 08–10 research chain **complete**; v2 implementation ~12 engineer-days post-group. **Open:** Phase-0 audit `GastonDeMichele/Polymarket-Sports-Bot`; LP safety DR **2026-06-06**; shadow soak.
+- **K86 ingest (2026-05-30)** — Gemini DR **10** (tournament phase router) + **targeted GitHub sports/PM landscape**. **2 sources + 4 page updates.** DR 08–10 research chain **complete**; **PR1 skeleton shipped** (`43c7f60`); PR2 ~10d remaining. **Open:** Phase-0 audit `GastonDeMichele/Polymarket-Sports-Bot`; LP safety DR **2026-06-06**; shadow soak (gate Mon 6/2).
 
 ## Current state (2026-05-30 — K84)
 
@@ -18,8 +18,8 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-30 — World Cup Bot)
 
-- **Build + automation (2026-05-30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `17708e1`. Modules **1–7 live** plus **CLOB liquidity gate** (asymmetric bid/ask band floors), conviction staleness, fixture-check, cross-venue `last_verified` staleness, fill-handler queue depletion + vol cooldown. **Shadow gate** prints ledger path. **systemd:** split `pnl-daily` (shadow ledger, no L2) vs opt-in `rewards-sync`. Logic **`wc_advance_lp_v4`**. **128 pytest.**
-- **Prod monitor DEPLOYED (2026-05-30)** — Server-Claude executed `2026-05-29_wc-monitor-systemd-enable.md` on `cemini-prod` (`worldcup` user; install root `/opt/world-cup-bot/repo`; monitor profile timers + cross-venue service). **Refresh units** after pull for liquidity-gate shadow-plan + split pnl/rewards.
+- **Build + automation (2026-05-30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `43c7f60`. Modules **1–7 live** + **Module 1b phase router skeleton** (flags off). **CLOB liquidity gate**, shadow-plan unit patched on prod (`--liquidity-gate`). Logic **`wc_advance_lp_v4`**. **133 pytest** (excl. flaky UI health).
+- **Prod deploy brief (2026-05-30)** — `2026-05-30_wc-prod-deploy-pr1.md` on `/opt/cemini/briefs/` — pull `43c7f60`, keep router disabled until post–Issue 3.
 - **Wiki:** `entities/tools/world-cup-bot.md` → **validated** (2026-05-30 doc sync).
 - **Marketing:** Outlier Weekly Issue 3 — **2026-06-03** (~4 days).
 - **Next:** SHADOW Phase 1 soak (≥3 days shadow-plan → shadow ledger; `shadow-status --min-phase 1` PASS); LP safety DR re-run **2026-06-06**; optional rewards-sync timer after L2; egress VPS trading profile (Phase 2+); CeminiSuite import brief.
