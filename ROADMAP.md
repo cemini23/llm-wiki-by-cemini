@@ -10,7 +10,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-30 — K84)
 
-- **K84 ingest (2026-05-30)** — 8 inbox items (3× arXiv/PDF + 3× WC LP safety DR + Posts.docx + v4 tool eval). **OSINT: 6 sources + 4 concepts + 4 page updates**. WC LP verdicts: Spain **skip**, Brazil **reduce**, Morocco **human_review** — `[NEEDS VERIFICATION 2026-06-06]`. **conviction.yaml v4** shipped + prod pull **done**. Tool eval: 6/8 NO LICENSE Rejects overturned via `gh api`; PageIndex Adopt **rejected** (prior NO-GO). **Workflow audit:** `concepts/cemini-workflow-tooling-audit-2026-05-30.md` — **scripts + LaunchAgents adopted**. **CCC:** v5 eval prompt on disk. **Prod brief:** scp'd to `cemini-prod:/opt/cemini/briefs/`. **Open:** commit adoption scripts; LP safety re-run 2026-06-06.
+- **K84 ingest (2026-05-30)** — 8 inbox items. **Workflow gaps closed** (Obsidian vault, cadences, canvas, LaunchAgents, v5 prompt in CCC). conviction v4 live on prod. **Open:** LP safety re-run 2026-06-06.
 
 ## Current state (2026-05-30 — World Cup Bot)
 
