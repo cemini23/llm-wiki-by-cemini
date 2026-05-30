@@ -12,7 +12,7 @@ related:
   - concepts/trading-bot-logging-discipline.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - concepts/world-cup-2026-group-conviction-matrix.md
-  - @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md
+  - "@seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md"
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/polymarket-clob-api.md
   - entities/tools/openfootball-worldcup-json.md

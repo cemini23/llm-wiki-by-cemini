@@ -12,7 +12,7 @@ related:
   - entities/tools/warproxxx-poly-data.md
   - entities/people/gustafssonkotte.md
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
-  - @seo-wiki/concepts/x-account-voice-and-format.md
+  - "@seo-wiki/concepts/x-account-voice-and-format.md"
 maturity: draft
 read_status: read
 created: 2026-05-30
@@ -25,6 +25,7 @@ clusters: [polymarket, trading-posts, agent-harness]
 - @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — prior `Posts.docx` filename (K64); different post set
 - @concepts/polymarket-bot-architecture.md — @0xPhilanthrop stack map extends operator taxonomy
 - @entities/tools/polymarket-agents.md — official agent framework cited in stack post
+- @seo-wiki/concepts/x-account-voice-and-format.md — K84 Posts.docx style pass (exemplar table + Article beats)
 
 ## Raw Concept
 
