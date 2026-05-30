@@ -12,13 +12,14 @@ related:
   - concepts/trading-bot-logging-discipline.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - concepts/world-cup-2026-group-conviction-matrix.md
+  - @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/polymarket-clob-api.md
   - entities/tools/openfootball-worldcup-json.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-05-30
 ---
 
 ## Relations
@@ -29,6 +30,7 @@ updated: 2026-05-29
 - @entities/tools/openfootball-worldcup-json.md — CC0 fixture data for calendar guard
 - @entities/tools/polymarket-gamma-api.md — market discovery + reward params at runtime
 - @entities/tools/polymarket-clob-api.md — quote POST, fill handler, rewards GET `/rewards/user`
+- @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md — Issue 3 marketing queue (2026-06-03)
 
 ## Raw Concept
 
