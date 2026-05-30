@@ -18,11 +18,9 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-30 — World Cup Bot)
 
-- **Build + automation (2026-05-30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `9f17058`. Modules **1–7 live** + **Module 1b phase router PR1+PR2** (flags off) + **Phase A paper cross-venue arb ledger**. Logic **`wc_advance_lp_v4`** / **`wc_cross_venue_paper_v1`**. **146 pytest**.
-- **Prod deploy brief (2026-05-30)** — `2026-05-30_wc-prod-deploy-pr1.md` on `/opt/cemini/briefs/` — pull `9f17058`, **enable cross-venue `--record`** on monitor loop; keep router disabled until post–Issue 3.
-- **Wiki:** `entities/tools/world-cup-bot.md` → **validated** (2026-05-30 doc sync).
-- **Marketing:** Outlier Weekly Issue 3 — **2026-06-03** (~4 days).
-- **Next:** SHADOW Phase 1 soak (≥3 days shadow-plan → shadow ledger; `shadow-status --min-phase 1` PASS); prod cross-venue `--record` patch; LP safety DR re-run **2026-06-06**; cross-venue Phase B/C backlog; phase router PR3; optional rewards-sync timer after L2; CeminiSuite import brief.
+- **Build + automation (2026-05-30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `cf26641`. Modules **1–7 live** + **Module 1b PR1–PR3** (flags off) + **Phase A/B cross-venue** paper + manual fills. Logic **`wc_advance_lp_v4`** / **`wc_cross_venue_paper_v1`**. **159 pytest**.
+- **Prod briefs (2026-05-30)** — `2026-05-30_wc-prod-deploy-pr1.md` (pull + `--record`); **`2026-05-30_wc-prod-pr3-reconcile.md`** (weekly reconcile timer). On `/opt/cemini/briefs/`.
+- **Next:** SHADOW Phase 1 soak; prod reconcile timer; LP safety DR **2026-06-06**; cross-venue Phase C; CeminiSuite import brief.
 
 ## Current state (2026-05-29 — K83)
 

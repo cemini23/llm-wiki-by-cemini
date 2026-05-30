@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-05-30] ship | World Cup Bot PR3 replay + weekly reconcile timer
+
+- **world-cup-bot** — `cf26641`: PR3 replay JSONL fixtures, FIFA match gate (`WC_FIFA_MATCH_GATE`), bilateral_threshold in plan, CI ruff format fix; weekly `cross-venue-fill reconcile` systemd (Sun 08:00 UTC); **159 pytest**
+- **Prod brief** — `briefs/2026-05-30_wc-prod-pr3-reconcile.md` → `/opt/cemini/briefs/` (enable reconcile timer; router/FIFA gates stay OFF pre–Issue 3)
+
 ## [2026-05-30] ship | World Cup Bot paper arb prod docs + deploy template
 
 - **world-cup-bot** — docs/systemd: cross-venue loop adds `--record`, `WC_CROSS_VENUE_LEDGER_PATH`; README + ROADMAP Phase A/B/C table
