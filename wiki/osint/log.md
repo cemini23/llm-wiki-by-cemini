@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-05-29] audit | World Cup Bot — CeminiSuite steal-from (K85)
+
+- **Briefs:** `briefs/2026-05-29_world-cup-bot-cemini-steal-from-audit.md`, `briefs/2026-05-29_world-cup-bot-cemini-import.md` (skill_audit WARN, no veto)
+- **world-cup-bot repo:** steal-from audit (K85), knockout DR prompts 08–10, `market_phases.yaml`, min_reward_shares fix (50)
+- **1 new concept** — `world-cup-tournament-phases-lp-strategy.md`
+- **1 updated entity** — `world-cup-bot.md`, advance-market-bot v1 v2 pointer
+
 ## [2026-05-30] docs | World Cup Bot OSS + wiki sync (`17708e1`)
 
 - **world-cup-bot repo:** README, SHADOW, SETUP, CLAUDE, new **ROADMAP.md**, deploy/systemd README — liquidity gate, split pnl/rewards, shadow ledger path, automation CLIs

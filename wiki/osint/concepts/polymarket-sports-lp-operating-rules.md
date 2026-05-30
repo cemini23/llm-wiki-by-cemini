@@ -14,6 +14,7 @@ related:
   - entities/tools/world-cup-bot.md
   - entities/tools/openfootball-worldcup-json.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
+  - concepts/world-cup-tournament-phases-lp-strategy.md
   - meta/wc-lp-safety-cadence.md
 maturity: validated
 created: 2026-05-29

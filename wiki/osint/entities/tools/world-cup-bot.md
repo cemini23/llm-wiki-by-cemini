@@ -18,11 +18,14 @@ related:
   - entities/tools/openfootball-worldcup-json.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
+  - concepts/production-trading-blind-spots.md
+  - concepts/shadow-to-live-transition-engineering.md
+  - concepts/world-cup-tournament-phases-lp-strategy.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - meta/wc-lp-safety-cadence.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-30
+updated: 2026-05-29
 ---
 
 ## Relations
@@ -76,9 +79,10 @@ Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code 
 | **Rewards ingestion** | **Live** — `rewards sync`; **separate** systemd timer (opt-in Phase 2+) |
 | Gemini DR prompts | **Live** — `prompts/gemini-deep-research/` + `research gemini` CLI |
 | Prod systemd (monitor) | **Deployed** on `cemini-prod` — refresh units after `17708e1` pull |
-| CeminiSuite import | **Pending** prod brief |
+| **Steal-from audit (K85)** | **Live** — daily adverse cap, 429 preflight, event log, CI TruffleHog/vet, shadow fixture gate |
+| CeminiSuite import | **Brief staged** — `briefs/2026-05-29_world-cup-bot-cemini-import.md` (OSINT) |
 
-Logic version: **`wc_advance_lp_v4`**. Tests: **128 pytest** (main @ `17708e1`).
+Logic version: **`wc_advance_lp_v4`**. Tests: **132 pytest** (steal-from audit wave).
 
 ### Deploy profiles (`deploy/systemd/`)
 

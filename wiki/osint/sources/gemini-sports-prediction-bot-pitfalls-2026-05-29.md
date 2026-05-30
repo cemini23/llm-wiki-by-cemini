@@ -11,6 +11,7 @@ related:
   - concepts/polymarket-updown-bot-taxonomy.md
   - concepts/cross-venue-arbitrage-pattern.md
   - sources/polymarket-nba-arbitrage-2605.00864.md
+  - concepts/world-cup-tournament-phases-lp-strategy.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-29

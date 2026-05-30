@@ -16,6 +16,7 @@ related:
   - concepts/clob-rate-limit-mitigation-strategies.md
   - concepts/shadow-trading-telemetry-accumulation.md
   - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
+  - entities/tools/world-cup-bot.md
   - concepts/polymarket-lp-rewards-farming.md
   - sources/clob-rate-limit-mitigation-strategies-2026-05-28.md
   - sources/shadow-trading-data-accumulation-strategies-2026-05-28.md

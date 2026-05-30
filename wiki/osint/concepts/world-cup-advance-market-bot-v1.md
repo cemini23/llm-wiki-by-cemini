@@ -25,12 +25,13 @@ related:
   - entities/tools/polymarket-clob-api.md
   - entities/platforms/polymarket.md
   - entities/platforms/kalshi.md
+  - concepts/world-cup-tournament-phases-lp-strategy.md
   - entities/tools/world-cup-bot.md
   - entities/tools/openfootball-worldcup-json.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-05-30
+updated: 2026-05-29
 clusters: [polymarket, world-cup, market-making, oss]
 ---
 
@@ -76,7 +77,11 @@ Nothing published publicly **connects to** operator prod unless an operator clon
 | **2. Repricing** | Manual/alert | Sell-before-resolution as group results land — bot exits fills; optional human directional adds |
 | **3. Cross-venue arb** | **Alert-only** | PM vs Kalshi advance/qualifier gaps ≥5pp after fees; semantic contract match required |
 
+### Out of v1 (v2 roadmap — @concepts/world-cup-tournament-phases-lp-strategy.md)
+
 **Out of v1:** match-level markets, in-play microstructure, auto Kalshi execution, winner futures bankroll, `$POLY` airdrop farming, Kalshi parlays.
+
+**v2 (post-group):** reach-final LP, knockout match markets (after DR 08–10), phase router, in-play hard halt + lineup gates.
 
 ### Timeline
 

@@ -12,6 +12,7 @@ related:
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
+  - concepts/world-cup-tournament-phases-lp-strategy.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-30
