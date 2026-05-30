@@ -126,4 +126,12 @@ removed=$(echo "$kb_output"  | grep -oE '[0-9]+ removed'   | grep -oE '[0-9]+' |
 embedded=$(echo "$kb_output" | grep -oE '[0-9]+ embedded'  | grep -oE '[0-9]+' || echo "0")
 log "kb vault reindex OK (indexed=$indexed unchanged=$unchanged removed=$removed embedded=$embedded)"
 
+# Step 3: freshness verify (K84 workflow adoption — non-fatal on warn)
+if bash "$WORKSPACE/scripts/verify_wiki_sync.sh"; then
+  log "verify_wiki_sync OK"
+else
+  verify_exit=$?
+  log "verify_wiki_sync exit=$verify_exit (see log — sync may still be OK)"
+fi
+
 exit 0

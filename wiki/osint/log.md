@@ -5,6 +5,7 @@
 **Sources:** 8 inbox files → `cemini-librarian:/opt/cemini-bulk/research/` ✓
 
 - **Follow-up (same session):** conviction.yaml **v4** in world-cup-bot repo; seo K84 style-pass; prod brief `2026-05-30_k84-world-cup-conviction-v4-lp-safety-cemini.md` (PASS); CCC brief Codex harness
+- **Follow-up (2026-05-30 PM):** prod brief scp'd; conviction v4 pulled on prod (`c143072`, pytest 11/11, scan shows Spain/Morocco/Brazil gates); workflow scripts (`inbox_notify`, `verify_wiki_sync`, `license_spot_check`, LaunchAgents); kepano obsidian-skills → `.agents/skills/`
 
 - **6 sources** — SkillOpt (2605.23904), SIA (2605.27276), AI trading strategies (2208.07168), WC LP team safety (Spain/Brazil/Morocco), v4 tool eval (24 URLs), Posts.docx K84
 - **4 concepts** — skillopt optimizer, SIA unified loop, workflow tooling audit, (LP rules update)

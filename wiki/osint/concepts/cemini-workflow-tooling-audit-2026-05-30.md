@@ -93,6 +93,18 @@ v4 multi-wiki eval prompt (frozen in `Cemini claude code CCC/prompts/deep-resear
 
 → Draft **v5** before next tool-eval drop (see `Cemini claude code CCC/prompts/deep-research-multi-wiki-eval-v5-2026-05-30.md`).
 
+## Adopted (2026-05-30 session)
+
+| Item | Status | Notes |
+|------|--------|-------|
+| Inbox watcher | **Live** | `scripts/inbox_notify.sh` + LaunchAgent `com.cemini.inbox-notify` (WatchPaths on `research to be indexed/`) |
+| Wiki sync verify | **Live** | `scripts/verify_wiki_sync.sh`; hourly LaunchAgent + end of `sync_wiki_to_librarian.sh` |
+| License spot-check | **Script** | `scripts/license_spot_check.sh` — run post tool-eval ingest |
+| kepano obsidian-skills | **Installed** | HTTPS `npx skills add https://github.com/kepano/obsidian-skills.git` → `.agents/skills/obsidian-{markdown,cli}` |
+| v5 eval prompt | **Draft on disk** | CCC `prompts/deep-research-multi-wiki-eval-v5-2026-05-30.md` |
+| n8n host | **Deferred** | Script-first per recommendation |
+| Obsidian vault mirror | **Deferred** | Optional human curation layer |
+
 ## Snippets
 
 > "NPX install path is one command — npx skills add git@github.com:kepano/obsidian-skills.git" [Source: kepano-obsidian-skills.md]
