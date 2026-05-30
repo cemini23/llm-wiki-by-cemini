@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-05-29] update | World Cup Bot — rewards sync, wiki refresh, prod systemd brief
+
+**Repo:** [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) — `rewards sync` (CLOB `/rewards/user`), cancel-replace ledger audit, pnl-daily timer hook.
+
+- **1 updated entity** — `world-cup-bot.md` (validated; modules 6–7 + safety + alerts)
+- **1 brief staged** — `briefs/2026-05-29_wc-monitor-systemd-enable.md` → CeminiSuite / server-Claude
+
 ## [2026-05-29] ingest | K83 — Gemini DR World Cup batch (4 reports)
 
 **Sources:** 4× Gemini Deep Research docx from `research to be indexed/` → `cemini-librarian:/opt/cemini-bulk/research/`
