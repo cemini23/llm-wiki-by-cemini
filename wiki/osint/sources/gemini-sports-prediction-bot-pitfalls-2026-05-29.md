@@ -8,10 +8,11 @@ related:
   - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - concepts/world-cup-advance-market-bot-v1.md
+  - concepts/world-cup-tournament-phases-lp-strategy.md
+  - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - concepts/cross-venue-arbitrage-pattern.md
   - sources/polymarket-nba-arbitrage-2605.00864.md
-  - concepts/world-cup-tournament-phases-lp-strategy.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-29

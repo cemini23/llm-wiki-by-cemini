@@ -10,6 +10,7 @@ related:
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
+  - sources/gemini-wc-knockout-market-map-2026-05-30.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-29

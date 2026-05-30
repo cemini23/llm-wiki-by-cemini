@@ -37,6 +37,7 @@ related:
   - sources/gemini-world-cup-market-structure-research-2026-05-29.md
   - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
   - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
+  - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
 maturity: draft
 created: 2026-05-05

@@ -15,6 +15,8 @@ related:
   - entities/tools/openfootball-worldcup-json.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
   - concepts/world-cup-tournament-phases-lp-strategy.md
+  - sources/gemini-wc-knockout-market-map-2026-05-30.md
+  - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - meta/wc-lp-safety-cadence.md
 maturity: validated
 created: 2026-05-29
@@ -63,9 +65,18 @@ Distilled from Gemini LP WC report + Seb Montgomery/DuneHammer podcast (`N8QP23v
 
 ### Match calendar guard
 
-- **Cancel all orders 6–10 hours before kickoff** for affected teams.
+- **Cancel all orders 6–10 hours before kickoff** for affected teams (v1 default).
+- **Phase-aware extensions (DR 09 — implement in v2):** final group MD3 → **12h**; knockout R32→Final → **24h**; ghost-quote rule → cancel team futures **≥5 min before** expected KO match end.
 - **Never** quote during live play.
 - Kill switch: live-window fill → flatten + halt bot.
+
+### Pregame information gates (DR 09)
+
+| Trigger | v1 action |
+|---------|-----------|
+| Confirmed XI / official injury at presser | Full skip; rely on T-10h cancel |
+| Unverified lineup leak | `human_review`; stop queue replenish |
+| Anomalous queue depletion | Pull quotes; do not replenish at prior tick |
 
 ### Extreme-bound markets (mid ≥ 90¢) — K84 team assessments
 

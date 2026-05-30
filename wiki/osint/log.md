@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-30] ingest | K85 — Gemini DR 08 + 09 (knockout map + in-play/pregame risks)
+
+**Sources:** 2× Gemini DR docx → `cemini-librarian:/opt/cemini-bulk/research/`
+
+- **2 sources** — `gemini-wc-knockout-market-map-2026-05-30.md`, `gemini-wc-inplay-pregame-lp-risks-2026-05-30.md`
+- **1 concept validated** — `world-cup-tournament-phases-lp-strategy.md` (DR 08+09 synthesis)
+- **2 concepts updated** — `polymarket-sports-lp-operating-rules` (phase cancel windows, pregame gates), `world-cup-bot` entity
+- **world-cup-bot repo** — `config/market_phases.yaml` populated; prompt 10 fixed (prose + JSON, not JSON-only)
+- **Open** — DR 10 phase router (user run ~14:40); DR 08 appendix JSON was corrupted in Gemini output — YAML hand-built from prose
+
 ## [2026-05-29] audit | World Cup Bot — CeminiSuite steal-from (K85)
 
 - **Briefs:** `briefs/2026-05-29_world-cup-bot-cemini-steal-from-audit.md`, `briefs/2026-05-29_world-cup-bot-cemini-import.md` (skill_audit WARN, no veto)

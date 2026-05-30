@@ -10,6 +10,8 @@ related:
   - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/world-cup-advance-market-bot-v1.md
+  - sources/gemini-wc-knockout-market-map-2026-05-30.md
+  - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - concepts/cross-venue-arbitrage-pattern.md
   - entities/platforms/polymarket.md
   - entities/platforms/kalshi.md

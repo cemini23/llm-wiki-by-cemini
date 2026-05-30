@@ -13,6 +13,8 @@ related:
   - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
   - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
+  - sources/gemini-wc-knockout-market-map-2026-05-30.md
+  - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/world-cup-2026-group-conviction-matrix.md
   - concepts/polymarket-sports-lp-operating-rules.md
