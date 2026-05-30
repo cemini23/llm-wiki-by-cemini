@@ -10,7 +10,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-30 — K86)
 
-- **K86 ingest (2026-05-30)** — Gemini DR **10** (tournament phase router) + **targeted GitHub sports/PM landscape**. **2 sources + 4 page updates.** DR 08–10 research chain **complete**; **PR1 skeleton shipped** (`43c7f60`); PR2 ~10d remaining. **Open:** Phase-0 audit `GastonDeMichele/Polymarket-Sports-Bot`; LP safety DR **2026-06-06**; shadow soak (gate Mon 6/2).
+- **K86 ingest (2026-05-30)** — Gemini DR **10** (tournament phase router) + **targeted GitHub sports/PM landscape**. **2 sources + 4 page updates.** DR 08–10 research chain **complete**; **Module 1b PR1+PR2 shipped** (`922a171`); PR3 replay/FIFA gates remain. **Open:** Phase-0 audit `GastonDeMichele/Polymarket-Sports-Bot`; LP safety DR **2026-06-06**; shadow soak (gate Mon 6/2).
 
 ## Current state (2026-05-30 — K84)
 
@@ -18,8 +18,8 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-30 — World Cup Bot)
 
-- **Build + automation (2026-05-30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `43c7f60`. Modules **1–7 live** + **Module 1b phase router skeleton** (flags off). **CLOB liquidity gate**, shadow-plan unit patched on prod (`--liquidity-gate`). Logic **`wc_advance_lp_v4`**. **133 pytest** (excl. flaky UI health).
-- **Prod deploy brief (2026-05-30)** — `2026-05-30_wc-prod-deploy-pr1.md` on `/opt/cemini/briefs/` — pull `43c7f60`, keep router disabled until post–Issue 3.
+- **Build + automation (2026-05-30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `922a171`. Modules **1–7 live** + **Module 1b phase router PR1+PR2** (flags off). Logic **`wc_advance_lp_v4`**. **142 pytest**.
+- **Prod deploy brief (2026-05-30)** — `2026-05-30_wc-prod-deploy-pr1.md` on `/opt/cemini/briefs/` — pull `922a171`, keep router disabled until post–Issue 3.
 - **Wiki:** `entities/tools/world-cup-bot.md` → **validated** (2026-05-30 doc sync).
 - **Marketing:** Outlier Weekly Issue 3 — **2026-06-03** (~4 days).
 - **Next:** SHADOW Phase 1 soak (≥3 days shadow-plan → shadow ledger; `shadow-status --min-phase 1` PASS); LP safety DR re-run **2026-06-06**; optional rewards-sync timer after L2; egress VPS trading profile (Phase 2+); CeminiSuite import brief.

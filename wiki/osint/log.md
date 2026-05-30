@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-05-30] ship | World Cup Bot phase router PR2 + prod deploy brief (updated)
+
+- **world-cup-bot** — `922a171` on `main`: multi-phase scanner, settlement gate, per-phase `cancel_hours`, SIGUSR1 reload, cross-venue phase gate; **142 pytest**
+- **Prod brief** — `briefs/2026-05-30_wc-prod-deploy-pr1.md` updated → `/opt/cemini/briefs/` (PR1+PR2 combined; flags stay OFF pre–Issue 3)
+
 ## [2026-05-30] ship | World Cup Bot phase router PR1 + prod deploy brief
 
 - **world-cup-bot** — `43c7f60` on `main`: Module 1b FSM skeleton, `phase status/set/purge`, ledger phase fields; flags default OFF (`WC_PHASE_ROUTER_ENABLED=0`)
