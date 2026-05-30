@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-05-30] docs | World Cup Bot OSS + wiki sync (`17708e1`)
+
+- **world-cup-bot repo:** README, SHADOW, SETUP, CLAUDE, new **ROADMAP.md**, deploy/systemd README — liquidity gate, split pnl/rewards, shadow ledger path, automation CLIs
+- **OSINT:** `entities/tools/world-cup-bot.md`, `concepts/world-cup-advance-market-bot-v1.md`, `index.md`, `ROADMAP.md` — commit hash, 128 tests, monitor unit refresh note
+
 ## [2026-05-30] ingest | K84 — arXiv + WC LP safety + tool eval + Posts
 
 **Sources:** 8 inbox files → `cemini-librarian:/opt/cemini-bulk/research/` ✓

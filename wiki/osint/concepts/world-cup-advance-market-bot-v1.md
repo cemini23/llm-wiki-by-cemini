@@ -30,7 +30,7 @@ related:
   - sources/world-cup-github-repo-eval-2026-05-29.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-05-30
 clusters: [polymarket, world-cup, market-making, oss]
 ---
 
@@ -49,7 +49,7 @@ clusters: [polymarket, world-cup, market-making, oss]
 
 K82 research wave (4× Gemini DR + 35 YouTube videos) synthesized into a **dual-deliverable** spec:
 
-1. **Public MIT repo — [World Cup Bot](https://github.com/cemini23/world-cup-bot)** (`@entities/tools/world-cup-bot.md`). Product name **World Cup Bot**; GitHub slug `world-cup-bot`. Repo shell secured **2026-05-29**; code scaffold during build sprint **2026-05-30/31**. Outlier Weekly Issue 3 marketing **2026-06-03**.
+1. **Public MIT repo — [World Cup Bot](https://github.com/cemini23/world-cup-bot)** (`@entities/tools/world-cup-bot.md`). Product name **World Cup Bot**; GitHub slug `world-cup-bot`. **Shipped 2026-05-30** (main @ `17708e1`, 128 pytest). Outlier Weekly Issue 3 marketing **2026-06-03**.
 2. **CeminiSuite module** — same codebase, private env on `cemini-prod` / egress path; **never** committed to the public repo.
 
 **No hardcoded prices** — all mids, spreads, reward params, and kickoff times fetched at runtime from **Gamma + CLOB**. Prod uses server credentials; public OSS uses `.env` only (see repo `SETUP.md`).
@@ -83,8 +83,8 @@ Nothing published publicly **connects to** operator prod unless an operator clon
 | Date | Event |
 |------|-------|
 | 2026-05-29 | **Repo reserved** — [github.com/cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) (README, SETUP, SECURITY; no secrets) |
-| 2026-05-30/31 | Build Python modules + shadow on prod API |
-| 2026-06-03 | Outlier Weekly Issue 3 + code launch on public repo |
+| 2026-05-30 | **v1 shipped** — modules 1–7, liquidity gate, shadow automation, systemd monitor profile |
+| 2026-06-03 | Outlier Weekly Issue 3 + public launch narrative |
 | 2026-06-11 | Group stage kickoff |
 | ~2026-06-28 | Advance markets resolve (PM) |
 
@@ -101,8 +101,8 @@ Nothing published publicly **connects to** operator prod unless an operator clon
                              ▼
 ┌──────────────────────────────────────────────────────────────┐
 │ 2. CONVICTION FILTER (YAML config)                           │
-│    Team list + max notional from @world-cup-2026-group-...   │
-│    Skip whale-only books; prioritize mid-tier mids 0.20–0.80 │
+│    Team list + max notional; human_review injury gates         │
+│    Optional: CLOB /book liquidity gate (operating.yaml)       │
 └────────────────────────────┬─────────────────────────────────┘
                              ▼
 ┌──────────────────────────────────────────────────────────────┐
@@ -114,7 +114,7 @@ Nothing published publicly **connects to** operator prod unless an operator clon
 ┌──────────────────────────────────────────────────────────────┐
 │ 4. FILL HANDLER (WS user channel)                            │
 │    Fill → limit exit ≤60s (break-even / small loss)          │
-│    Queue depletion: $300 ahead filled → pull quotes          │
+│    Queue depletion: $150 ahead filled → pull quotes (WC tune)│
 └────────────────────────────┬─────────────────────────────────┘
                              ▼
 ┌──────────────────────────────────────────────────────────────┐
@@ -133,7 +133,7 @@ Nothing published publicly **connects to** operator prod unless an operator clon
                              ▼
 ┌──────────────────────────────────────────────────────────────┐
 │ 7. DAILY P&L LEDGER                                          │
-│    rewards + rebates − adverse fills − fees; JSON/CSV         │
+│    JSONL + logic_version; pnl-daily vs rewards-sync split     │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -181,10 +181,12 @@ Public **SETUP.md** ([repo](https://github.com/cemini23/world-cup-bot/blob/main/
 
 ### Open items
 
-1. Gemini report **#5** — cross-venue ticker map (user: pending limit reset)
-2. DeadBall **Group B** video — conviction YAML row for Switzerland/Canada/Bosnia/Qatar
-3. Shadow-run 24–48h on prod API before Tuesday marketing claims
-4. ~~Calendar fixture data~~ — **done** 2026-05-29 via `@entities/tools/openfootball-worldcup-json.md` in public repo
+1. **SHADOW Phase 1 soak** — ≥3 days `plan --record --liquidity-gate` on prod shadow ledger
+2. **LP safety DR re-run** — **2026-06-06** per `@meta/wc-lp-safety-cadence.md`
+3. Gemini report **#5** — full cross-venue ticker map (optional)
+4. CeminiSuite module import — post shadow gate
+5. ~~Calendar fixture data~~ — **done** 2026-05-29 via `@entities/tools/openfootball-worldcup-json.md`
+6. ~~Module 6 scanner~~ — **done** 2026-05-30 in public repo in public repo
 
 ## Snippets
 

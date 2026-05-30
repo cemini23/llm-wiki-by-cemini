@@ -14,11 +14,11 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-30 — World Cup Bot)
 
-- **Build COMPLETE (2026-05-29/30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `581411b`. Modules **1–7 live**: scanner, conviction, quoter, fill handler + WS reconcile, calendar guard, **cross-venue scanner** (15 cohort pairs, alert-only), ledger + **rewards sync** (`GET /rewards/user`), go-live safety (auto-cancel, cancel-replace, kill-switch), operator webhooks, `shadow-status` CI gate. Logic version **`wc_advance_lp_v4`**. **106 pytest.** Public deploy: `deploy/systemd/` (monitor + trading profiles; no operator hostnames in git).
-- **Prod monitor DEPLOYED (2026-05-30)** — Server-Claude executed `2026-05-29_wc-monitor-systemd-enable.md` on `cemini-prod` (`worldcup` user; install root `/opt/world-cup-bot/repo`; monitor profile timers + cross-venue service).
-- **Wiki:** `entities/tools/world-cup-bot.md` → **validated** (2026-05-29).
+- **Build + automation (2026-05-30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `17708e1`. Modules **1–7 live** plus **CLOB liquidity gate** (asymmetric bid/ask band floors), conviction staleness, fixture-check, cross-venue `last_verified` staleness, fill-handler queue depletion + vol cooldown. **Shadow gate** prints ledger path. **systemd:** split `pnl-daily` (shadow ledger, no L2) vs opt-in `rewards-sync`. Logic **`wc_advance_lp_v4`**. **128 pytest.**
+- **Prod monitor DEPLOYED (2026-05-30)** — Server-Claude executed `2026-05-29_wc-monitor-systemd-enable.md` on `cemini-prod` (`worldcup` user; install root `/opt/world-cup-bot/repo`; monitor profile timers + cross-venue service). **Refresh units** after pull for liquidity-gate shadow-plan + split pnl/rewards.
+- **Wiki:** `entities/tools/world-cup-bot.md` → **validated** (2026-05-30 doc sync).
 - **Marketing:** Outlier Weekly Issue 3 — **2026-06-03** (~4 days).
-- **Next:** SHADOW Phase 1 soak on prod (≥3 days shadow-plan → ledger; `shadow-status --min-phase 1` PASS); optional `WC_ALERT_WEBHOOK_URL`; re-run `discover` when PM advance slugs list; egress VPS trading profile (Phase 2+); CeminiSuite import brief.
+- **Next:** SHADOW Phase 1 soak (≥3 days shadow-plan → shadow ledger; `shadow-status --min-phase 1` PASS); LP safety DR re-run **2026-06-06**; optional rewards-sync timer after L2; egress VPS trading profile (Phase 2+); CeminiSuite import brief.
 
 ## Current state (2026-05-29 — K83)
 
@@ -452,8 +452,8 @@ In-house Conductor build (v0.1.1 in shadow mode). 48.2% cost savings vs always-r
 
 ## Done — 2026-05-30 World Cup Bot build + prod monitor deploy
 
-- **OSS repo** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot): modules 1–7, go-live safety, alerts, rewards sync, shadow-status; `581411b`; 106 tests; `deploy/systemd/` monitor + trading profiles.
-- **Prod** — monitor profile on `cemini-prod` via `2026-05-29_wc-monitor-systemd-enable.md` (executed by server-Claude).
+- **OSS repo** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot): modules 1–7, liquidity gate, go-live safety, alerts, rewards sync (split systemd unit), shadow-status with ledger path; `17708e1`; 128 tests; `deploy/systemd/` monitor + trading profiles.
+- **Prod** — monitor profile on `cemini-prod` via `2026-05-29_wc-monitor-systemd-enable.md` (executed by server-Claude); unit refresh pending for K84 automation wave.
 - **Wiki** — `entities/tools/world-cup-bot.md` validated; index + log updated.
 
 ---

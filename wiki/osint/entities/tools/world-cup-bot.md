@@ -1,8 +1,8 @@
 ---
 title: World Cup Bot (public OSS)
 type: entity
-tags: [tool, polymarket, kalshi, world-cup-2026, lp-bot, open-source, cemini23, k82, k83]
-keywords: [world-cup-bot, advance-to-knockout, conviction-lp, github, mit, outlier-weekly, calendar-guard, cross-venue-scanner, rewards-sync, shadow-status]
+tags: [tool, polymarket, kalshi, world-cup-2026, lp-bot, open-source, cemini23, k82, k83, k84]
+keywords: [world-cup-bot, advance-to-knockout, conviction-lp, github, mit, outlier-weekly, calendar-guard, cross-venue-scanner, rewards-sync, shadow-status, liquidity-scanner]
 related:
   - concepts/world-cup-advance-market-bot-v1.md
   - sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md
@@ -32,8 +32,9 @@ updated: 2026-05-30
 - @concepts/trading-bot-logging-discipline.md — structured JSONL events with stable `event=` names
 - @entities/tools/openfootball-worldcup-json.md — CC0 fixture data for calendar guard
 - @entities/tools/polymarket-gamma-api.md — market discovery + reward params at runtime
-- @entities/tools/polymarket-clob-api.md — quote POST, fill handler, rewards GET `/rewards/user`
+- @entities/tools/polymarket-clob-api.md — quote POST, fill handler, rewards GET `/rewards/user`, public `/book` depth
 - @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md — Issue 3 marketing queue (2026-06-03)
+- @meta/wc-lp-safety-cadence.md — weekly DR re-run through tournament window (next **2026-06-06**)
 
 ## Raw Concept
 
@@ -55,34 +56,38 @@ The repo is **fully public**. It ships MIT code, docs, and `.env.example` placeh
 
 Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code + private env on dedicated VPS (monitor + non-US trading split). Generic systemd install: `deploy/systemd/` — no operator hostnames in git.
 
-### Status (2026-05-29)
+### Status (2026-05-30)
 
-| Module | State |
-|--------|-------|
-| Repo + docs | **Live** |
+| Module / feature | State |
+|------------------|-------|
+| Repo + docs | **Live** — README, SHADOW, SETUP, **ROADMAP**, CLAUDE |
 | **Scanner (1)** | **Live** — Gamma advance markets + reward params |
 | **Conviction filter (2)** | **Live** — `config/conviction.yaml` **v4** (K84 LP safety gates) |
-| **Quoter (3)** | **Live** dry-run + live POST (`clob_live.py`); cancel-replace + calendar auto-cancel |
-| **Fill handler (4)** | **Live** — WS user channel + REST reconcile; kill-switch halt |
-| **Calendar guard (5)** | **Live** — CC0 `data/worldcup2026-fixtures.json` |
-| **Cross-venue scanner (6)** | **Live** — 15 cohort pairs in `config/cross_venue.yaml`; alert-only loop + webhook |
-| **P&L ledger (7)** | **Live** — JSONL + `logic_version`; fills, cancels, **rewards sync** |
-| **Go-live safety** | **Live** — auto-cancel window, cancel-replace, kill-switch pull, `cancel` CLI |
-| **Operator alerts** | **Live** — optional `WC_ALERT_WEBHOOK_URL` (cancels + cross-venue ALERT) |
-| **Shadow gate** | **Live** — `shadow-status` CLI (CI exit codes) |
-| **Rewards ingestion** | **Live** — `rewards sync` → CLOB GET `/rewards/user` → `reward_accrual` rows |
+| **Quoter (3)** | **Live** dry-run + live POST; cancel-replace + calendar auto-cancel |
+| **Fill handler (4)** | **Live** — WS + REST reconcile; kill-switch; queue depletion + vol cooldown |
+| **Calendar guard (5)** | **Live** — CC0 fixtures; `fixture-check` upstream diff |
+| **Cross-venue scanner (6)** | **Live** — 15 cohort pairs; alert loop; `last_verified` staleness |
+| **P&L ledger (7)** | **Live** — JSONL + `logic_version`; fills, cancels, rewards sync |
+| **Liquidity gate** | **Live** — CLOB `/book`; bid $50 / ask $15 band floors (WC tune); auto-clear `human_review` |
+| **Go-live safety** | **Live** — auto-cancel, cancel-replace, kill-switch, `cancel` CLI |
+| **Operator automation** | **Live** — `conviction-staleness`, `conviction-patch`, fixture-check |
+| **Operator alerts** | **Live** — optional `WC_ALERT_WEBHOOK_URL` |
+| **Shadow gate** | **Live** — `shadow-status` prints ledger path + CI exit codes |
+| **Rewards ingestion** | **Live** — `rewards sync`; **separate** systemd timer (opt-in Phase 2+) |
 | Gemini DR prompts | **Live** — `prompts/gemini-deep-research/` + `research gemini` CLI |
-| Prod systemd (monitor) | **Brief staged** — `briefs/2026-05-29_wc-monitor-systemd-enable.md` |
+| Prod systemd (monitor) | **Deployed** on `cemini-prod` — refresh units after `17708e1` pull |
 | CeminiSuite import | **Pending** prod brief |
 
-Logic version: **`wc_advance_lp_v4`** (cancel safety + ledger cancel audit).
+Logic version: **`wc_advance_lp_v4`**. Tests: **128 pytest** (main @ `17708e1`).
 
 ### Deploy profiles (`deploy/systemd/`)
 
 | Profile | Host | Units |
 |---------|------|-------|
-| **monitor** | US OK | cross-venue service, shadow-plan, scan, calendar-guard, discover, pnl-daily (rewards+pnl) |
+| **monitor** | US OK | cross-venue, shadow-plan (`--liquidity-gate`), scan, calendar, discover, **pnl-daily** (PnL only), conviction-staleness, fixture-check; rewards-sync installed but timer off by default |
 | **trading** | Non-US only | preflight, watch, live-plan (Phase 4 manual enable) |
+
+Shadow ledger default on VPS: `data/local/shadow_ledger.jsonl` via `WC_LEDGER_PATH`.
 
 ```bash
 sudo bash deploy/systemd/install-systemd.sh --install-root /opt/world-cup-bot --profile monitor --enable
@@ -91,12 +96,15 @@ sudo bash deploy/systemd/install-systemd.sh --install-root /opt/world-cup-bot --
 ### CLI (operator)
 
 ```bash
-world-cup-bot scan --conviction
-world-cup-bot plan --record          # auto calendar-cancel + cancel-replace audit when --record
-world-cup-bot watch --record         # fills + reconcile + kill-switch
+world-cup-bot scan --conviction --liquidity
+world-cup-bot liquidity-scan
+world-cup-bot plan --record --liquidity-gate
+world-cup-bot watch --record
 world-cup-bot cancel --cancel-window
-world-cup-bot rewards sync --record  # yesterday UTC default; dedup by reward_key
+world-cup-bot rewards sync --record   # L2 required; separate cron unit
 world-cup-bot shadow-status --min-phase 1
+world-cup-bot conviction-staleness --notify
+world-cup-bot fixture-check --notify
 world-cup-bot cross-venue-scan --loop
 world-cup-bot pnl --scope current
 ```
@@ -104,6 +112,15 @@ world-cup-bot pnl --scope current
 ## Snippets
 
 > "Your fork uses your `.env` and your keys only." — [SECURITY.md](https://github.com/cemini23/world-cup-bot/blob/main/SECURITY.md)
+
+Liquidity operating thresholds (WC advance — not live prices):
+
+```yaml
+liquidity:
+  min_depth_within_reward_spread_usd: 50   # bid band
+  min_ask_depth_within_reward_spread_usd: 15
+  auto_clear_human_review: true
+```
 
 Ledger reward event (after `rewards sync --record`):
 
