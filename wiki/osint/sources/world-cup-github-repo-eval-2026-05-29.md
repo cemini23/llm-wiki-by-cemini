@@ -8,14 +8,16 @@ related:
   - entities/tools/openfootball-worldcup-json.md
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/polymarket-sports-lp-operating-rules.md
+  - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-05-30
 ---
 
 ## Relations
 
 - @entities/tools/world-cup-bot.md — public OSS; adopted openfootball fixtures 2026-05-29
+- @sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md — broader PM/agent landscape (K86); Phase-0 queue additions
 - @entities/tools/openfootball-worldcup-json.md — CC0 calendar data (Steal-from)
 - @concepts/world-cup-advance-market-bot-v1.md — v1 module map
 

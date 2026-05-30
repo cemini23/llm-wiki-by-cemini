@@ -20,6 +20,8 @@ related:
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
+  - sources/gemini-wc-tournament-phase-router-2026-05-30.md
+  - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - concepts/production-trading-blind-spots.md
   - concepts/shadow-to-live-transition-engineering.md
   - concepts/world-cup-tournament-phases-lp-strategy.md
@@ -79,7 +81,7 @@ Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code 
 | **Operator alerts** | **Live** — optional `WC_ALERT_WEBHOOK_URL` |
 | **Shadow gate** | **Live** — `shadow-status` prints ledger path + CI exit codes |
 | **Rewards ingestion** | **Live** — `rewards sync`; **separate** systemd timer (opt-in Phase 2+) |
-| Gemini DR prompts | **Live** — `prompts/gemini-deep-research/` + `research gemini` CLI; **DR 08–09 ingested 2026-05-30** → `config/market_phases.yaml` |
+| Gemini DR prompts | **Live** — `prompts/gemini-deep-research/` + `research gemini` CLI; **DR 08–10 ingested 2026-05-30** → `config/market_phases.yaml` + router spec |
 | Prod systemd (monitor) | **Deployed** on `cemini-prod` — refresh units after `17708e1` pull |
 | **Steal-from audit (K85)** | **Live** — daily adverse cap, 429 preflight, event log, CI TruffleHog/vet, shadow fixture gate |
 | CeminiSuite import | **Brief staged** — `briefs/2026-05-29_world-cup-bot-cemini-import.md` (OSINT) |

@@ -21,6 +21,8 @@ related:
   - sources/low-latency-tick-staleness-diagnosis-2026-05-28.md
   - entities/tools/world-cup-bot.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
+  - sources/gemini-wc-tournament-phase-router-2026-05-30.md
+  - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
 maturity: validated
 created: 2026-05-28
 updated: 2026-05-29

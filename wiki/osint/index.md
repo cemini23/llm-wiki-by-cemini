@@ -1455,7 +1455,9 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 
 #### K82 World Cup advance-market bot (2026-05-29)
 
-- [World Cup 2026 — tournament phases LP strategy](concepts/world-cup-tournament-phases-lp-strategy.md) — `[VALIDATED 2026-05-30]` Group→final; DR 08–09 ingested; DR 10 router pending. — concept, world-cup, knockout, k85
+- [World Cup 2026 — tournament phases LP strategy](concepts/world-cup-tournament-phases-lp-strategy.md) — `[VALIDATED 2026-05-30]` Group→final; DR 08–10 ingested. — concept, world-cup, knockout, k85, k86
+- [Gemini DR — WC tournament phase router](sources/gemini-wc-tournament-phase-router-2026-05-30.md) — `[VALIDATED 2026-05-30]` 10-state FSM; dual-validation; CLI + ledger; ~12d est. — source, gemini, phase-router, k86
+- [Gemini DR — GitHub sports/PM bot landscape](sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md) — `[VALIDATED 2026-05-30]` Targeted links; Phase-0 queue (Gaston PM router, nothing-ever-happens ops). — source, gemini, github, k86
 - [Gemini DR — WC knockout market map](sources/gemini-wc-knockout-market-map-2026-05-30.md) — `[VALIDATED 2026-05-30]` PM×Kalshi KO inventory; 48-team calendar; resolution classes. — source, gemini, knockout, k85
 - [Gemini DR — WC in-play / pregame LP risks](sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md) — `[VALIDATED 2026-05-30]` Hard halt; cancel 10/12/24h; ghost quote; v2 roadmap. — source, gemini, lp, k85
 - [World Cup advance-market bot — v1 spec (OSS + Cemini)](concepts/world-cup-advance-market-bot-v1.md) — `[DRAFT 2026-05-29]` K82. Conviction LP on FIFA 2026 advance-to-knockout; fill handler; alert-only PM↔Kalshi scanner; Gamma/CLOB runtime prices. Public repo: [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot). Outlier Weekly Issue 3 (2026-06-03). — concept, world-cup, polymarket, kalshi, lp-bot, oss, k82

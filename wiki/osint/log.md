@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-30] ingest | K86 — Gemini DR 10 (phase router) + GitHub sports/PM landscape
+
+**Sources:** 2× Gemini DR docx → `cemini-librarian:/opt/cemini-bulk/research/`
+
+- **2 sources** — `gemini-wc-tournament-phase-router-2026-05-30.md`, `gemini-github-sports-betting-repos-landscape-2026-05-30.md`
+- **1 concept updated** — `world-cup-tournament-phases-lp-strategy.md` (DR 10 FSM, ~12d est., dual-validation)
+- **4 pages updated** — `world-cup-bot` entity, `world-cup-advance-market-bot-v1`, `gemini-wc-knockout-market-map`, `world-cup-github-repo-eval` (K86 landscape backlink)
+- **Phase-0 queue** — `GastonDeMichele/Polymarket-Sports-Bot` (CONDITIONAL-GO), `sterlingcrispin/nothing-ever-happens` (ops steal-from)
+- **Note** — DR 10 appendix JSON partially corrupted (same as DR 08); prose authoritative
+
 ## [2026-05-30] ingest | K85 — Gemini DR 08 + 09 (knockout map + in-play/pregame risks)
 
 **Sources:** 2× Gemini DR docx → `cemini-librarian:/opt/cemini-bulk/research/`

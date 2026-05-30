@@ -15,6 +15,8 @@ related:
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
+  - sources/gemini-wc-tournament-phase-router-2026-05-30.md
+  - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/world-cup-2026-group-conviction-matrix.md
   - concepts/polymarket-sports-lp-operating-rules.md
@@ -33,7 +35,7 @@ related:
   - sources/world-cup-github-repo-eval-2026-05-29.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-05-30
 clusters: [polymarket, world-cup, market-making, oss]
 ---
 
@@ -83,7 +85,7 @@ Nothing published publicly **connects to** operator prod unless an operator clon
 
 **Out of v1:** match-level markets, in-play microstructure, auto Kalshi execution, winner futures bankroll, `$POLY` airdrop farming, Kalshi parlays.
 
-**v2 (post-group):** reach-final LP, knockout match markets (after DR 08–10), phase router, in-play hard halt + lineup gates.
+**v2 (post-group):** reach-final LP, knockout match markets (DR 08–10 ingested), **10-state phase router** (~12d est.), in-play hard halt + lineup gates.
 
 ### Timeline
 

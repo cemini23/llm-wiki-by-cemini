@@ -7,6 +7,7 @@ related:
   - sources/gemini-world-cup-market-structure-research-2026-05-29.md
   - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
+  - sources/gemini-wc-tournament-phase-router-2026-05-30.md
   - concepts/world-cup-tournament-phases-lp-strategy.md
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/polymarket-sports-lp-operating-rules.md
@@ -39,7 +40,7 @@ updated: 2026-05-30
 
 ## Narrative
 
-Gemini DR mapping **group → final** market inventory for Polymarket + Kalshi under the **48-team / 104-match** 2026 format. Primary bot upgrade path: extend Module 1 scanner beyond single `advance to knockout` regex via `config/market_phases.yaml` + phase router (DR 10 pending).
+Gemini DR mapping **group → final** market inventory for Polymarket + Kalshi under the **48-team / 104-match** 2026 format. Primary bot upgrade path: extend Module 1 scanner beyond single `advance to knockout` regex via `config/market_phases.yaml` + phase router (**DR 10 ingested 2026-05-30**).
 
 ### v2 LP priority sequence [TENTATIVE — single Gemini source]
 
@@ -90,7 +91,7 @@ Milestone markets (`Reach QF/SF/Final`) may **list before teams are known** — 
 
 ### Implementation estimate
 
-Report appendix JSON was **corrupted** (empty `market_phases` array) — prose recommends **~4 engineer-days** for scanner + phase config beyond v1. Hand-built YAML in `config/market_phases.yaml` pending DR 10 router spec.
+Report appendix JSON was **corrupted** (empty `market_phases` array) — prose recommends **~4 engineer-days** for scanner + phase config beyond v1. Hand-built YAML in `config/market_phases.yaml`; DR 10 router spec adds **~12d** FSM + ledger scope.
 
 ## Snippets
 

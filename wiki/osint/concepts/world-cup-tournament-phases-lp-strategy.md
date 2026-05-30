@@ -10,6 +10,7 @@ related:
   - sources/gemini-sports-prediction-bot-pitfalls-2026-05-29.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
+  - sources/gemini-wc-tournament-phase-router-2026-05-30.md
   - entities/tools/world-cup-bot.md
   - entities/platforms/polymarket.md
   - entities/platforms/kalshi.md
@@ -24,11 +25,12 @@ updated: 2026-05-30
 - @concepts/polymarket-sports-lp-operating-rules.md — cancel window, fill handler invariants apply to all phases
 - @sources/gemini-wc-knockout-market-map-2026-05-30.md — DR 08 market inventory + calendar
 - @sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md — DR 09 pregame/in-play/knockout gates
-- @entities/tools/world-cup-bot.md — `config/market_phases.yaml`; phase router DR 10 pending
+- @sources/gemini-wc-tournament-phase-router-2026-05-30.md — DR 10 FSM + CLI + ledger spec (ingested 2026-05-30)
+- @entities/tools/world-cup-bot.md — `config/market_phases.yaml`; phase router implementation next
 
 ## Raw Concept
 
-User requirement (K85): comprehensive World Cup bot through finals, not group-stage-only. **DR 08 + 09 ingested 2026-05-30.** v1 ships group advance LP (Issue 3); v2 adds knockout via phase router after DR 10.
+User requirement (K85): comprehensive World Cup bot through finals, not group-stage-only. **DR 08–10 ingested 2026-05-30.** v1 ships group advance LP (Issue 3); v2 implements phase router from DR 10 spec (~12 engineer-days est.).
 
 ## Narrative
 
@@ -63,9 +65,9 @@ Kalshi **`KXWCSTAGEOFELIM`** pairs to PM Reach markets with **inverted** logic �
 | In-play goals | **Hard halt** at Live | Opta auto-halt + optional wide-spread taker mode |
 | Cross-group contagion | Manual flat before MD3 concurrent kicks | 48-team advancement matrix |
 | 90-min vs To Advance | N/A (no match LP) | `resolution_class` tag + separate scanners |
-| Ghost quote (KO exit) | Manual cancel | Auto cancel team futures T-5min before expected end |
-| Elimination cascade | Manual cancel | `cancel --team` all phases |
-| Phase transition | Manual YAML | Phase router (DR 10) |
+| Ghost quote (KO exit) | Manual cancel | `phase purge --team` before ghost window (DR 10) |
+| Elimination cascade | Manual cancel | `--cancel-team` across all active phases |
+| Phase transition | Manual YAML | **10-state FSM** + dual-validation settlement (DR 10) |
 
 ### Cancel-window by phase (DR 09 — v2 config)
 
@@ -79,8 +81,8 @@ Kalshi **`KXWCSTAGEOFELIM`** pairs to PM Reach markets with **inverted** logic �
 
 | Artifact | Status |
 |----------|--------|
-| `config/market_phases.yaml` | Populated from DR 08 (research stubs for KO phases) |
-| DR 10 phase router | Pending user run (~2:40) — **use prose + JSON appendix**, not JSON-only |
+| `config/market_phases.yaml` | Populated from DR 08; extend with DR 10 FSM fields |
+| DR 10 phase router | **Ingested 2026-05-30** — implementation post-group |
 | `conviction-staleness` DR | Due 2026-06-06 LP safety cadence |
 
 ### Milestones
@@ -89,10 +91,12 @@ Kalshi **`KXWCSTAGEOFELIM`** pairs to PM Reach markets with **inverted** logic �
 |------|------|
 | 2026-06-03 | v1 launch (group advance) |
 | 2026-06-06 | LP safety DR + conviction refresh |
-| Post-group | Phase router implementation (~4d est. from DR 08) |
+| Post-group | Phase router implementation (~**12d** est. from DR 10) |
 
 ## Snippets
 
 > Zero-day transition 2026-06-27: all remaining advance markets resolve as third-place math finalizes while R32 match markets open. [Source: gemini-wc-knockout-market-map-2026-05-30.md]
+
+> Dual-validation: do not enter round_of_32 until 100% of group advance markets settled on-chain. [Source: gemini-wc-tournament-phase-router-2026-05-30.md]
 
 > v1: never quote Live; never chase live LP reward tiers. [Source: gemini-wc-inplay-pregame-lp-risks-2026-05-30.md]

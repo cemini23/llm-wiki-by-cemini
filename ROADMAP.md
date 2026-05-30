@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-05-30 — K86)
+
+- **K86 ingest (2026-05-30)** — Gemini DR **10** (tournament phase router) + **targeted GitHub sports/PM landscape**. **2 sources + 4 page updates.** DR 08–10 research chain **complete**; v2 implementation ~12 engineer-days post-group. **Open:** Phase-0 audit `GastonDeMichele/Polymarket-Sports-Bot`; LP safety DR **2026-06-06**; shadow soak.
+
 ## Current state (2026-05-30 — K84)
 
 - **K84 ingest (2026-05-30)** — 8 inbox items. **Workflow gaps closed** (Obsidian vault, cadences, canvas, LaunchAgents, v5 prompt in CCC). conviction v4 live on prod. **Open:** LP safety re-run 2026-06-06.

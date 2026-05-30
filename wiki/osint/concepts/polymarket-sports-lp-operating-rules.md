@@ -17,6 +17,7 @@ related:
   - concepts/world-cup-tournament-phases-lp-strategy.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
+  - sources/gemini-wc-tournament-phase-router-2026-05-30.md
   - meta/wc-lp-safety-cadence.md
 maturity: validated
 created: 2026-05-29

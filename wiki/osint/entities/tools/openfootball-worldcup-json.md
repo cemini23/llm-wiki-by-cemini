@@ -8,6 +8,7 @@ related:
   - entities/tools/world-cup-bot.md
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/polymarket-sports-lp-operating-rules.md
+  - sources/gemini-wc-tournament-phase-router-2026-05-30.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-29

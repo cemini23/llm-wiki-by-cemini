@@ -12,6 +12,7 @@ related:
   - concepts/mcp-tool-marketplace.md
   - entities/tools/world-cup-bot.md
   - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
+  - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - entities/tools/lazy-tool.md
   - concepts/wiki-tooling-evaluation.md
   - meta/wc-lp-safety-cadence.md
