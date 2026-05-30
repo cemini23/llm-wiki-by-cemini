@@ -18,9 +18,9 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-30 — World Cup Bot)
 
-- **Build + automation (2026-05-30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `cf26641`. Modules **1–7 live** + **Module 1b PR1–PR3** (flags off) + **Phase A/B cross-venue** paper + manual fills. Logic **`wc_advance_lp_v4`** / **`wc_cross_venue_paper_v1`**. **159 pytest**.
-- **Prod briefs (2026-05-30)** — `2026-05-30_wc-prod-deploy-pr1.md` (pull + `--record`); **`2026-05-30_wc-prod-pr3-reconcile.md`** (weekly reconcile timer). On `/opt/cemini/briefs/`.
-- **Next:** SHADOW Phase 1 soak; prod reconcile timer; LP safety DR **2026-06-06**; cross-venue Phase C; CeminiSuite import brief.
+- **Build + automation (2026-05-30)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main @ `10d9d1e`. Modules **1–7 live** + **Module 1b PR1–PR3** (flags off) + **Phase A/B/C cross-venue** paper + manual fills + **auto dual-leg exec** (gated OFF). Logic **`wc_advance_lp_v4`** / **`wc_cross_venue_paper_v1`** / **`wc_cross_venue_exec_v1`**. **164 pytest**.
+- **Prod briefs (2026-05-30)** — `2026-05-30_wc-prod-deploy-pr1.md` (pull + `--record`); **`2026-05-30_wc-prod-pr3-reconcile.md`** (weekly reconcile timer); **`2026-05-30_wc-prod-phase-c-exec.md`** (Phase C enable checklist — **do not enable** pre–SHADOW Phase 4). On `/opt/cemini/briefs/`.
+- **Next:** SHADOW Phase 1 soak; LP safety DR **2026-06-06**; CeminiSuite import brief; Phase C live only after non-US VPS + explicit GO.
 
 ## Current state (2026-05-29 — K83)
 

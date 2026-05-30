@@ -73,7 +73,7 @@ Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code 
 | **Quoter (3)** | **Live** dry-run + live POST; cancel-replace + calendar auto-cancel |
 | **Fill handler (4)** | **Live** — WS + REST reconcile; kill-switch; queue depletion + vol cooldown |
 | **Calendar guard (5)** | **Live** — CC0 fixtures; `fixture-check` upstream diff |
-| **Cross-venue scanner (6)** | **Live** — 15 cohort pairs; alert loop; `last_verified` staleness |
+| **Cross-venue scanner (6)** | **Live** — 15 cohort pairs; alert loop; paper `--record`; Phase B manual fills + reconcile; **Phase C auto exec** (gated OFF, `WC_CROSS_VENUE_AUTO_EXEC`) |
 | **P&L ledger (7)** | **Live** — JSONL + `logic_version`; fills, cancels, rewards sync |
 | **Liquidity gate** | **Live** — CLOB `/book`; bid $50 / ask $15 band floors (WC tune); auto-clear `human_review` |
 | **Go-live safety** | **Live** — auto-cancel, cancel-replace, kill-switch, `cancel` CLI |
@@ -86,7 +86,7 @@ Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code 
 | **Steal-from audit (K85)** | **Live** — daily adverse cap, 429 preflight, event log, CI TruffleHog/vet, shadow fixture gate |
 | CeminiSuite import | **Brief staged** — `briefs/2026-05-29_world-cup-bot-cemini-import.md` (OSINT) |
 
-Logic version: **`wc_advance_lp_v4`**. Tests: **132 pytest** (steal-from audit wave).
+Logic version: **`wc_advance_lp_v4`** · paper arb: **`wc_cross_venue_paper_v1`** · exec: **`wc_cross_venue_exec_v1`**. Main @ **`10d9d1e`**. Tests: **164 pytest**.
 
 ### Deploy profiles (`deploy/systemd/`)
 

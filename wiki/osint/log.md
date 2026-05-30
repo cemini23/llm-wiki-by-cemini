@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-05-30] ship | World Cup Bot Phase C auto dual-leg exec
+
+- **world-cup-bot** — `10d9d1e`: `cross-venue-exec` CLI (attempt/orphans/resolve-orphan), Kalshi RSA orders + PM hedge client, pilot caps (`auto_arb:`), orphan cancel path; **`WC_CROSS_VENUE_AUTO_EXEC=0`** default; logic **`wc_cross_venue_exec_v1`**; **164 pytest**
+- **Prod brief** — `briefs/2026-05-30_wc-prod-phase-c-exec.md` → `/opt/cemini/briefs/` (reference only; **do not enable** on monitor host pre–SHADOW Phase 4)
+
 ## [2026-05-30] ship | World Cup Bot PR3 replay + weekly reconcile timer
 
 - **world-cup-bot** — `cf26641`: PR3 replay JSONL fixtures, FIFA match gate (`WC_FIFA_MATCH_GATE`), bilateral_threshold in plan, CI ruff format fix; weekly `cross-venue-fill reconcile` systemd (Sun 08:00 UTC); **159 pytest**
