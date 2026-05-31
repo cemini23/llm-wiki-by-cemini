@@ -49,6 +49,8 @@ related:
   - sources/regime-conditioned-bo-evaluation.md
   - concepts/regime-conditioned-evaluation.md
   - concepts/cross-venue-arbitrage-pattern.md
+  - concepts/cemini-wiki-ingest-workflow.md
+  - meta/daily-research-digest-cadence.md
   - sources/gemini-sci-research-2602-03837.md
 created: 2026-04-29
 updated: 2026-05-11
@@ -62,6 +64,8 @@ maturity: validated
 - @sources/agentic-harness-engineering.md — Landing #3: empirical methodology paper for LLM-agent harness evolution; 7-component decoupled substrate; +10.1pp transfer to deepseek-v4-flash; arXiv 2604.25850.
 - @sources/incompressible-knowledge-probes-li-2026.md — Landing #4: black-box parameter-estimator; deepseek-v4-* in calibration set; refutes Densing Law for factual capacity; single-author Pine AI; arXiv 2604.24827.
 - @concepts/wiki-tooling-evaluation.md — sibling decision-record; Wave 1/2/3 ingest evaluation also used implicit criteria; this page makes them explicit.
+- @concepts/cemini-wiki-ingest-workflow.md — daily digest + Tier 2/2.5 sweeps score candidates against this rubric
+- @meta/daily-research-digest-cadence.md — Phase 1 morning discovery; references rubric in sweep next-steps
 - @concepts/ip-sale-readiness.md — license poison-pill families A and B are the negative-signal half of this rubric.
 - @concepts/llm-agent-systems.md — cluster hub for the LLM-agent landing area, where 2 of the 4 recent high-signal papers landed.
 - @sources/situational-awareness-aschenbrenner.md — Aschenbrenner 2024 (165pp); landmark AGI-timeline essay ingested as Wave 5.1 source page; deep-read pending (first 10pp skimmed)

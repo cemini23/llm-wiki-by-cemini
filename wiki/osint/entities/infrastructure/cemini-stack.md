@@ -23,7 +23,7 @@ related:
 maturity: draft
 created: 2026-05-03
 updated: 2026-05-31
-# Server-state probe baseline (2026-05-03): both hosts probed live; specs recorded match `free -h` / `df -h` / `nproc` output. Refresh on every spec change.
+# Server-state probe baseline (2026-05-03): both hosts probed live; specs recorded match `free -h` / `df -h` / `nproc` output. Refresh on every spec change. K89 probe 2026-05-31: 44 containers, disk ~40%, swap ~78%.
 ---
 
 ## Relations
@@ -42,6 +42,7 @@ updated: 2026-05-31
 - @concepts/trading-bot-logging-discipline.md — Grafana/Loki observability layer on this stack
 - @concepts/equity-fair-value-evaluation.md — `core/equity_valuation.py` on prod brain path
 - @concepts/cemini-repository-topology.md — deploy monorepo (`Cemini-Financial-Suite`) vs wiki federation
+- @concepts/cemini-knowledge-application-architecture.md — K89 prod audit; swap/disk probe refresh 2026-05-31
 
 ## Raw Concept
 
@@ -57,7 +58,7 @@ Cemini production runs on **two Hetzner Cloud VPS instances** in the same region
 
 | Role | Host alias | Hetzner SKU | vCPU | RAM | Disk | OS | Probed 2026-05-03 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Production (trading + intelligence) | `cemini-prod` | CPX31 | 2 | 8 GB allocated (7.6 GB measured) | 80 GB local + 25 GB volume | Ubuntu 22.04.5 LTS | 41 containers, Docker 29.2.1 + Compose v5.0.2; **disk 90% used** ⚠ |
+| Production (trading + intelligence) | `cemini-prod` | CPX31 | 2 | 8 GB allocated (7.6 GB measured) | 80 GB local + 25 GB volume | Ubuntu 22.04.5 LTS | **44** containers (K89 probe 2026-05-31); disk **~40%** used; **swap ~78%** ⚠ |
 | Librarian (RAG + episodic memory) | `cemini-librarian` | CPX21 | 3 | 4 GB allocated (3.7 GB measured) | 80 GB local | Ubuntu 24.04.4 LTS | kb-server + stash + Node 20+; disk 20% used |
 
 Connection details (SSH targets, IPs) live in `.local/server.md` — gitignored, never committed.
@@ -75,7 +76,7 @@ A single-server alternative is technically feasible at higher RAM (16 GB+) but l
 
 ### Production server (cemini-prod) — what runs
 
-41 Docker containers via `docker-compose` (server probe 2026-04-30, last K11 refresh; deployment manifest at `/opt/cemini/docker-compose.yml`). Container groupings:
+41 Docker containers via `docker-compose` (server probe 2026-04-30, last K11 refresh; **44 running** per K89 audit 2026-05-31; deployment manifest at `/opt/cemini/docker-compose.yml`). Container groupings:
 
 - **Infrastructure (7)**: `postgres` (timescale/timescaledb:latest-pg16), `redis` (redis:7-alpine), `pgadmin`, `portainer`, `cloudflare_tunnel`, `db_maintenance`, `cemini_proxy` (nginx:alpine).
 - **Observability (10)**: `grafana_viz`, `prometheus`, `alertmanager`, `loki`, `tempo`, `alloy`, `cadvisor`, `node_exporter`, `postgres_exporter`, `redis_exporter`.
@@ -109,10 +110,10 @@ Production /opt/cemini/  → DeepSeek API (cloud) → trading decisions
 
 The brain on production queries the librarian over the private Hetzner network for static wiki context (kb-server) and dynamic episodic memory (stash). The brain *itself* runs against the DeepSeek hosted API — no LLM weights are local on either server (see @entities/infrastructure/deepseek-api.md, and the @entities/infrastructure/deepseek-r1-14b.md / @entities/infrastructure/ollama.md retraction notes).
 
-### Known operational findings (2026-05-03 probe)
+### Known operational findings (2026-05-03 probe; K89 refresh 2026-05-31)
 
-- **Production disk pressure** — 64 GB used of 75 GB (90%). 25 GB attached volume present but its mount point and current utilization are not reflected in this probe. Action item: confirm volume usage and consider migrating Postgres data directory if not already on the volume.
-- **Production swap usage** — 3 GB of 6 GB swap in active use during probe → memory pressure. Symptomatic of running 41 containers on 8 GB RAM; mitigated by current container resource limits but worth tracking.
+- **Production disk pressure** — K89 probe: **~40%** used of 75 GB (improved vs 90% May 2026 earlier probe). Confirm volume mount for Postgres if not already migrated.
+- **Production swap usage** — K89: **~4.7G / 6G swap (~78%)** during off-hours probe → memory pressure persists. Symptomatic of 44 containers on 8 GB RAM; track alongside @concepts/cemini-knowledge-application-architecture.md G07.
 - **OS version drift** — production on Ubuntu 22.04.5, librarian on 24.04.4. Not blocking; recommend aligning on 24.04.x at next production rebuild.
 
 ### Region & regulatory considerations

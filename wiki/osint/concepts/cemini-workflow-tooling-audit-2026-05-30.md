@@ -19,6 +19,8 @@ related:
   - meta/wc-lp-safety-cadence.md
   - meta/wiki-gap-detect-cadence.md
   - concepts/cemini-knowledge-application-architecture.md
+  - concepts/cemini-wiki-ingest-workflow.md
+  - meta/daily-research-digest-cadence.md
 maturity: validated
 created: 2026-05-30
 updated: 2026-05-31
@@ -32,6 +34,8 @@ updated: 2026-05-31
 - @sources/agriciDaniel-claude-obsidian.md — Steal-from visual Karpathy pattern; `/save` adapted in cemini-wiki-graph skill
 - @meta/wc-lp-safety-cadence.md — weekly LP safety DR cadence
 - @meta/wiki-gap-detect-cadence.md — Tier 1 gap report cadence
+- @meta/daily-research-digest-cadence.md — Phase 1 morning digest cadence (K90)
+- @concepts/cemini-wiki-ingest-workflow.md — Phases 1–4 shipped 2026-05-31
 - @concepts/cemini-knowledge-application-architecture.md — prod-side mirror audit (K89); same DOCUMENTED-ONLY failure mode
 
 ## Raw Concept

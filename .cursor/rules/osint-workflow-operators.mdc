@@ -1,5 +1,5 @@
 ---
-description: Operator workflow rituals closed in K84/K85 — Obsidian graph, NotebookLM, mem-search, cadence scripts.
+description: Operator workflow rituals — discovery, inbox, ingest skill, cadence scripts (Phases 1–4).
 globs:
   - wiki/**
   - briefs/**
@@ -7,36 +7,56 @@ globs:
 alwaysApply: false
 ---
 
-# OSINT workflow operators (gap-closed)
+# OSINT workflow operators (Phases 1–4)
+
+## Phase 1 — Morning digest (automated discovery)
+
+```bash
+bash scripts/run_daily_research_digest.sh          # manual
+bash scripts/check_daily_research_digest_due.sh    # exit 0 = not run today
+bash scripts/install_workflow_launchagents.sh      # 08:00 LaunchAgent
+```
+
+Output: `wiki/sweeps/YYYY-MM-DD-daily.md` · Config: `scripts/daily_research_config.yaml` · Meta: `@meta/daily-research-digest-cadence.md`
+
+## Phase 2 — Inbox watcher
+
+Drop files → `research to be indexed/` → LaunchAgent runs `inbox_notify.sh`:
+
+- `preingest_check.py`
+- Appends to today's daily sweep (`append_inbox_to_daily_sweep.py`)
+- Tool-eval → `post_tool_eval_license.sh`
+- macOS notification (optional webhook: `~/.cemini/inbox-webhook.url`)
+
+## Phase 3 — Ingest assistant
+
+Skill: **`.cursor/skills/cemini-wiki-ingest/SKILL.md`**
+
+Triggers: daily sweep rows, Posts.docx, tool eval, K-batch. Ends with `ingest_session_gate.py` + lint.
+
+## Phase 4 — Human gates
+
+Rule: **`.cursor/rules/osint-ingest-gates.mdc`** — takeaways discussion, license verify, prod GO, no Tier 3 auto-ingest.
+
+Mechanical check: `python3 scripts/ingest_session_gate.py` (add `--strict` to block commit).
 
 ## Obsidian graph layer
 
 - One-time: `bash scripts/setup_obsidian_vault.sh --open`
-- Pre-commit: `python3 scripts/wiki_lint.py --fail-on-graph` then Obsidian Graph (orphans on)
+- Pre-commit: `python3 scripts/wiki_lint.py --fail-on-graph`
 - Skill: `.cursor/skills/cemini-wiki-graph/SKILL.md`
-- Canonical remains git `wiki/` + `@path`; kb-server serves librarian copy
-
-## Tool eval ingest
-
-- Inbox drop auto-runs `post_tool_eval_license.sh` when filename matches tool-eval pattern
-- Manual: `bash scripts/post_tool_eval_license.sh path/to/eval.md`
-- Use **v5** eval prompt in CCC for new drops (inline `gh api` license step)
 
 ## Before re-Adopt / Phase-0
 
-- Run **claude-mem** `mem-search` or wiki grep: "Did we already NO-GO this tool?"
-- Check `@concepts/wiki-tooling-evaluation.md` Phase-0 registry
+- claude-mem `mem-search` or wiki grep: prior NO-GO?
+- `@concepts/wiki-tooling-evaluation.md` Phase-0 registry
 
-## Large briefs → NotebookLM
-
-- `bash scripts/notebooklm_export_brief.sh briefs/<file>.md`
-- Follow `.cursor/skills/notebooklm-osint-bridge/SKILL.md` — redact secrets first
-
-## Cadences (user-gated run)
+## Cadences (user-gated)
 
 | Check | Script |
 |-------|--------|
-| WC LP safety DR | `./scripts/check_wc_lp_safety_due.sh` → `run_wc_lp_safety_reminder.sh` |
-| Wiki gap Tier 1 | `./scripts/check_wiki_gap_detect_due.sh` → `run_wiki_gap_detect.sh` |
+| Daily digest | `check_daily_research_digest_due.sh` → `run_daily_research_digest.sh` |
+| Wiki gap Tier 1 | `check_wiki_gap_detect_due.sh` → `run_wiki_gap_detect.sh` |
+| WC LP safety DR | `check_wc_lp_safety_due.sh` → `run_wc_lp_safety_reminder.sh` |
 
 LaunchAgents: `bash scripts/install_workflow_launchagents.sh`

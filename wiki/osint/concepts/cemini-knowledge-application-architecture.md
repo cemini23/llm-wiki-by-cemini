@@ -14,7 +14,8 @@ related:
   - entities/tools/world-cup-bot.md
   - sources/arxiv-self-healing-llm-agents-2605.06737.md
   - meta/wiki-gap-detect-cadence.md
-maturity: draft
+  - concepts/cemini-wiki-ingest-workflow.md
+maturity: validated
 created: 2026-05-31
 updated: 2026-05-31
 ---
@@ -29,6 +30,7 @@ updated: 2026-05-31
 - @concepts/exploration-graph-dead-ends.md — preserve abandoned paths so agents don't re-try them
 - @entities/tools/world-cup-bot.md — repeat-lesson motivator (build loop rediscovered solved problems)
 - @meta/wiki-gap-detect-cadence.md — wiki-side stale-claim detection; complementary, not substitute for prod retrofit
+- @concepts/cemini-wiki-ingest-workflow.md — four-phase ingest pipeline; briefs + ROADMAP step after wiki commit
 
 ## Raw Concept
 
@@ -68,9 +70,122 @@ Each arrow needs an **artifact** and a **verification step** — not just habit.
 | Surface | Audit | Status (2026-05-31) |
 |---------|-------|---------------------|
 | **Laptop / OSINT workspace** | @concepts/cemini-workflow-tooling-audit-2026-05-30.md | Gaps **closed** (Obsidian, cadences, v5 prompt, LaunchAgents) |
-| **Production `/opt/cemini`** | Prod brief + prompt (K89) | **Wave 1 pending** — server-Claude off-hours |
+| **Production `/opt/cemini`** | K89 Wave 1 report | **Complete** — Wave 2–3 **DONE**; R08 brain-only → **Wave 3b staged** |
 
-Symmetry matters: fixing laptop workflow without prod audit leaves **half the system** in `DOCUMENTED-ONLY` state.
+Symmetry: laptop clean; prod had same `DOCUMENTED-ONLY` pattern at scale. **Wave 2 briefs staged** to close the enforcement loop.
+
+### Wave 1 findings (2026-05-31) [CONFIRMED — prod audit report]
+
+**Report:** `cemini-prod:/opt/cemini/briefs/2026-05-31_cemini-knowledge-application-audit-report.md`  
+**Git SHA at audit:** `bb629289a4bc06a69924d0ecf7d5261182f15a20`  
+**Gap JSON:** `briefs/artifacts/knowledge-audit-2026-05-31.json`
+
+| Metric | Value |
+|--------|-------|
+| Containers probed | 44 up, 0 unhealthy |
+| Layer rows APPLIED | 14 |
+| PARTIAL | 16 |
+| DOCUMENTED-ONLY | 5 |
+| CONTRADICTED | 0 |
+| Brief backlog (May 25–31) | ~11/20 implemented, 6 partial/deferred, 2 not started |
+| 90-day brief completion artifact | ~60% **UNKNOWN** |
+
+**Headline answers (confirmed):**
+
+| Question | Wave 1 answer |
+|----------|---------------|
+| Self-learn? | **No** — operator-driven registry bumps only |
+| Self-heal? | **Minimal** — fail-open + kill switch, not replan taxonomy |
+| Strategies accurate? | **Mixed** — pm_lp live; pm_weather HOLD (falsification INSUFFICIENT_DATA); btc shadow-gated |
+| Bootstrap debt? | **`agents/orchestrator.py`** — logic_version yes; kb/stash no |
+| Wiki → brain? | **Analyst only** (`llm_analyst` → `fetch_wiki_context`); orchestrator does not query kb |
+
+**Top PnL-risk gaps:**
+
+1. Orchestrator without kb/stash (G01)
+2. No lesson registry (G02)
+3. pm_lp live vs pm_weather HOLD — asymmetric promotion (document or gate)
+4. Brief completion tracking ad hoc (G08)
+5. Swap **78%** on 7.6 GB RAM — OOM risk (ops)
+
+**Top retrofit queue (Wave 2 targets first 3):**
+
+| Rank | Item | Wave 2 brief |
+|------|------|--------------|
+| 1 | kb hook in orchestrator (visibility v1) | `2026-05-31_k89-wave2-brain-kb-context-hook-cemini.md` |
+| 2 | `wiki-lesson-registry.yaml` bootstrap | `2026-05-31_k89-wave2-wiki-lesson-registry-bootstrap-cemini.md` |
+| 3 | Brief completion template + lint | `2026-05-31_k89-wave2-brief-completion-template-cemini.md` |
+
+Deferred P2: stash on prod, self-healing taxonomy, SkillSpector wire, 30s vs 30min reconcile cadence.
+
+**Stash transport fix (2026-05-31):** Wave 4 `core/stash_remember.py` and `wiki_enforcement._stash_recall` incorrectly POSTed/GETed REST `/api/v1/remember|recall` on `:9090` (metrics-only). Fixed on prod via **`core/stash_mcp_client.py`** — MCP SSE `http://10.0.0.2:8080/sse` (`remember` / `recall` tools). `scripts/check_stash_remember_ready.py` now probes MCP and **PASS**. Env: `STASH_MCP_URL` (not `STASH_BASE_URL`). Enable `STASH_REMEMBER_ENABLED=true` when operator ready for automated F04 remember.
+
+### Wave 3 — accuracy, healing, enforcement (**DONE** 2026-05-31)
+
+**Principle:** shadow/paper first; **`pm_lp_rewards` never auto-blocked** in kb/stash v1.
+
+| Brief | Purpose | Live lp touch | Status |
+|-------|---------|---------------|--------|
+| promotion-sop-unified | One checklist + readiness script | Reconcile waivers | **DONE** |
+| failure-taxonomy-corrective-actions | Taxonomy + daily rollup + shadow auto-correct | Alert-only on lp | **DONE** |
+| prod-memory-swap-mitigation | Swap alert + budget doc | Ops; upgrade rec | **DONE** (swap still ~80%) |
+| kb-stash-behavior-enforcement | Registry + kb gates | **`log_only` denylist** | **DONE** (brain path only) |
+
+**Wave 3 verify caveat:** `check_wiki_enforcement` wired on **`brain_equity` orchestrator only** — PM executors pending Wave 3b.
+
+### Wave 3b — PM/WC executor wiring (**STAGED**)
+
+| Brief | Purpose |
+|-------|---------|
+| `k89-wave3b-pm-executor-wiki-enforcement` | `pm_btc_updown`, `pm_weather`, WC shadow — **not live lp** |
+
+**Recommended prod order:** Wave 3b → then Wave 4 (lp warn-only, stash auto).
+
+### Roadmap to target state (summary)
+
+| Phase | Outcome |
+|-------|---------|
+| Wave 2 | Visible + tracked lessons |
+| Wave 3 | Accurate promotion, shadow healing, kb/stash **binds shadow trades** |
+| Wave 4 (future) | pm_lp observe → warn on CONTRADICTED; prod stash remember on incidents (**MCP client wired 2026-05-31; flag still off**) |
+| Wave 5 (future) | Rule/threshold learning on shadow metrics only |
+
+### Wave 2 — enforcement loop (**DONE** 2026-05-31, operator confirmed)
+
+| Brief | Purpose | Expected outcome |
+|-------|---------|------------------|
+| wiki-lesson-registry-bootstrap | `docs/wiki-lesson-registry.yaml` + smoke script | Answer "is lesson X applied?" in one grep |
+| brief-completion-template | `BRIEF_TEMPLATE.md` + backfill 10 May briefs | Close brief→code verification gap |
+| brain-kb-context-hook | Orchestrator pre-cycle kb fetch, log-only v1 | Habitual wiki lookup at decision time |
+
+**Implementation order on prod:** registry bootstrap → completion template (dogfoods status block) → kb hook (updates G01 registry row).
+
+### Intent registry (meta — prevents scope drop)
+
+**Program tracker (prod canonical):** `cemini-prod:/opt/cemini/briefs/2026-05-31_k89-master-roadmap-cemini.md`
+
+Operator initial K89 intent named **self-learning, self-healing, accurate strategies, wiki enforcement, bootstrap debt retrofit** — Wave 1–2 alone did not satisfy that scope; Wave 3+ staged after explicit re-prompt (same failure mode this program fixes).
+
+| Rule | Enforcement |
+|------|-------------|
+| Every K89 brief cites capability id `R##` from master roadmap matrix | Brief authoring SOP in meta brief |
+| Program not closed until R01–R10 DONE; R11–R14 DONE or DEFERRED with date | Matrix in master roadmap |
+| New operator capability words → same session brief batch or **INTENT GAP** flag | `hot.md` + session summary |
+| Live lp never auto-skip until Wave 4 + operator GO | Program invariant in master roadmap |
+
+Capability matrix (abbreviated):
+
+| R## | Capability | Wave | Status |
+|-----|------------|------|--------|
+| R01–R02 | Audit + prompt | 1 | DONE |
+| R03–R05 | Registry, brief template, kb log-only | 2 | DONE |
+| R06–R07, R09 | Promotion SOP, failure taxonomy, memory | 3 | DONE |
+| R08 | kb/stash enforce (brain) | 3 | PARTIAL → APPLIED after 3b |
+| R08b | PM/WC executors | 3b | STAGED |
+| R10 | Master roadmap | meta | DONE |
+| R11–R14 | Self-learn, lp warn, stash auto, bootstrap | 4–6 | OPEN |
+
+Full matrix: master roadmap brief on prod.
 
 ### Wiki-side mechanisms (proposed)
 
@@ -92,9 +207,14 @@ Symmetry matters: fixing laptop workflow without prod audit leaves **half the sy
 |----------|----------|
 | Handoff brief | `cemini-prod:/opt/cemini/briefs/2026-05-31_cemini-knowledge-application-audit-cemini.md` |
 | Reusable prompt | `cemini-prod:/opt/cemini/prompts/cemini-knowledge-application-audit-v1-2026-05-31.md` |
-| Wave 1 report (pending) | `cemini-prod:/opt/cemini/briefs/YYYY-MM-DD_cemini-knowledge-application-audit-report.md` |
+| **Wave 1 report** | `cemini-prod:/opt/cemini/briefs/2026-05-31_cemini-knowledge-application-audit-report.md` |
+| Gap JSON | `cemini-prod:/opt/cemini/briefs/artifacts/knowledge-audit-2026-05-31.json` |
+| Wave 2 briefs (3) | `cemini-prod:/opt/cemini/briefs/2026-05-31_k89-wave2-*.md` |
+| Wave 3 briefs (4) | `cemini-prod:/opt/cemini/briefs/2026-05-31_k89-wave3-*.md` |
+| **Master roadmap (R## matrix)** | `cemini-prod:/opt/cemini/briefs/2026-05-31_k89-master-roadmap-cemini.md` |
+| Wave 3b brief | `cemini-prod:/opt/cemini/briefs/2026-05-31_k89-wave3b-pm-executor-wiki-enforcement-cemini.md` |
 
-Laptop copies: `briefs/2026-05-31_cemini-knowledge-application-audit-cemini.md`, `briefs/prompts/cemini-knowledge-application-audit-v1-2026-05-31.md`.
+Laptop copies: `briefs/` mirror (gitignored).
 
 **Seven audit layers** (prod prompt): knowledge plumbing → agent cognition → strategy versioning → execution plumbing → data fidelity → infrastructure debt → per-strategy vertical.
 
@@ -112,16 +232,14 @@ Use consistently in audits and registry rows:
 
 K84 laptop audit used the same pattern informally; K89 formalizes it for prod.
 
-### What agents do and do not do [TENTATIVE until Wave 1 report]
+### What agents do and do not do [CONFIRMED — Wave 1 2026-05-31]
 
-| Question | Expected answer (pre-audit) |
-|----------|----------------------------|
-| Self-learn (weights/rules from outcomes)? | **No** automatic loop in prod; coach/reviewer may suggest config changes |
-| Self-heal (failure detect + replan)? | **Partial** — compare to @sources/arxiv-self-healing-llm-agents-2605.06737.md; mostly try/except, not taxonomy-driven recovery |
-| Remember across sessions? | **stash/kb on librarian** — available, not mandatory in brain hot path |
-| Apply wiki at build time? | **Inconsistent** — depends on operator/agent discipline, not pipeline gate |
-
-Wave 1 prod report must confirm or revise each row with evidence.
+| Question | Answer |
+|----------|--------|
+| Self-learn (weights/rules from outcomes)? | **No** — RL retrain brief exists, not enabled; coach_analyzer has no verified write-back |
+| Self-heal (failure detect + replan)? | **Minimal** — fail-open wiki timeout; KillSwitch halt; not arXiv 2605.06737 taxonomy |
+| Remember across sessions? | **stash/kb on librarian** — prod MCP client wired (`stash_mcp_client.py`); auto-remember gated on `STASH_REMEMBER_ENABLED` |
+| Apply wiki at build time? | **Inconsistent** — orchestrator hot path has no kb hook (Wave 2 fixes visibility) |
 
 ### Retrofit priority (wiki guidance for prod queue)
 

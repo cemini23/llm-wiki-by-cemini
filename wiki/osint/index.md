@@ -1454,10 +1454,11 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [SkillOpt controllable skill optimizer](concepts/skillopt-controllable-skill-optimizer.md) — `[DRAFT 2026-05-30]` — concept, agent-skills, k84
 - [SIA unified harness/weight loop](concepts/sia-unified-harness-weight-self-improvement.md) — `[DRAFT 2026-05-30]` — concept, self-improving-agents, k84
 - [Cemini workflow tooling audit](concepts/cemini-workflow-tooling-audit-2026-05-30.md) — `[DRAFT 2026-05-30]` Obsidian/n8n/MCP gap map + v5 prompt need. — concept, workflow, audit, k84
+- [Cemini wiki ingest workflow](concepts/cemini-wiki-ingest-workflow.md) — `[CORE 2026-05-31]` Four-phase discovery→ingest pipeline (daily digest, inbox watch, ingest skill, human gates). — concept, workflow, automation, k90
 
 #### K89 knowledge-application audit (2026-05-31)
 
-- [Cemini knowledge-application architecture](concepts/cemini-knowledge-application-architecture.md) — `[DRAFT 2026-05-31]` Wiki→prod lesson loop; prod audit brief shipped; registry + completion-report proposal. — concept, audit, cemini-prod, k89
+- [Cemini knowledge-application architecture](concepts/cemini-knowledge-application-architecture.md) — `[VALIDATED 2026-05-31]` Wave 1 prod audit complete; Wave 2 enforcement briefs staged. — concept, audit, cemini-prod, k89
 
 #### K88 ingest (2026-05-31 — v5 tool eval + Posts.docx 42)
 

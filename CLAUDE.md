@@ -158,7 +158,7 @@ updated: 2026-04-23
 7. Update `wiki/index.md` — add rows for new pages
 8. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed
 9. **Move raw source to librarian**: `scp "research to be indexed/<filename>" cemini-librarian:/opt/cemini-bulk/research/` then `rm` the laptop copy. Verify with `ssh cemini-librarian "ls /opt/cemini-bulk/research/<filename>"`
-10. Run lint + commit + push (the wiki side; raw-source move is server-side, not in laptop git)
+10. Run lint + **`python3 scripts/ingest_session_gate.py`** + commit + push (the wiki side; raw-source move is server-side, not in laptop git)
 11. **Update ROADMAP.md + stage briefs in `briefs/` per `post_ingest_workflow` memory rule.** This is the immediately-next step after commit-and-push. Without it, ingest research dies in the wiki.
 12. A single ingest must touch 3-15 pages. If it touches 0 new pages, ask whether the source is worth ingesting
 
@@ -371,7 +371,15 @@ If exit code **0** (due): prompt to run `bash scripts/run_wc_lp_safety_reminder.
 
 If due: prompt to run `bash scripts/run_wiki_gap_detect.sh` (~1 min). Report lands in `.local/reports/`. See `wiki/meta/wiki-gap-detect-cadence.md`. Tier 2 Exa remains user-gated.
 
-### 10. Obsidian vault (operator setup)
+### 10. Daily research digest cadence
+
+```bash
+./scripts/check_daily_research_digest_due.sh
+```
+
+If exit code **0** (no report for today): prompt to run `bash scripts/run_daily_research_digest.sh` (~30s + Exa). Report: `wiki/sweeps/YYYY-MM-DD-daily.md`. See `wiki/meta/daily-research-digest-cadence.md` and `@concepts/cemini-wiki-ingest-workflow.md`.
+
+### 11. Obsidian vault (operator setup)
 
 If `wiki/.obsidian/` missing: `bash scripts/setup_obsidian_vault.sh`. Graph review ritual: `.cursor/skills/cemini-wiki-graph/SKILL.md`.
 

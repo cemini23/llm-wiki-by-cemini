@@ -4,9 +4,11 @@ type: concept
 tags: [meta, wiki, gap-detect, cadence, k84]
 keywords: [wiki-gap-detect, tier-1, needs-verification, cited-unread]
 related:
+  - meta/daily-research-digest-cadence.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - concepts/exploration-graph-dead-ends.md
   - concepts/cemini-knowledge-application-architecture.md
+  - concepts/cemini-wiki-ingest-workflow.md
 maturity: core
 created: 2026-05-30
 updated: 2026-05-31
@@ -15,6 +17,7 @@ updated: 2026-05-31
 ## Relations
 
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — K84 workflow adoption
+- @concepts/cemini-wiki-ingest-workflow.md — daily digest links gap-detect when due
 
 ## Narrative
 

@@ -1,0 +1,54 @@
+# Daily research digest — discovery-only (does NOT ingest)
+#
+# Steal-from: tier25_config.yaml + weekly_arxiv_sweep.sh
+# Read by: daily_research_digest_run.py
+#
+# Update `active_topics` when ROADMAP.md workstreams shift.
+# User gates ingest in Cursor after reviewing wiki/sweeps/YYYY-MM-DD-daily.md
+
+loop:
+  recency_window_days: 7
+  max_results_per_query: 3
+
+active_topics:
+  - "World Cup bot — shadow soak, LP safety DR 2026-06-06"
+  - "K89 wave 3b — PM executor wiki enforcement on prod"
+  - "Prediction markets — LP rewards, cross-venue, weather bots"
+  - "Agent tooling — Cursor skills, conductor, kb-server"
+  - "Wiki→prod loop — brief completion + lesson registry (K89)"
+
+# Web/news queries — broader than weekly arXiv sweep (research paper only).
+# One cluster per active Cemini surface; keep at 5 queries × 3 hits (~$0.15/day Exa).
+queries:
+  - cluster: prediction-markets
+    query: '"Polymarket" OR "Kalshi" prediction market bot OR LP rewards OR event contract trading'
+    category: news
+
+  - cluster: world-cup-pm
+    query: '"World Cup 2026" OR FIFA prediction market OR advance market Polymarket Kalshi'
+    category: news
+
+  - cluster: agent-harness
+    query: '"AI agent" OR "Claude Code" OR MCP workflow OR agent harness observability'
+    category: news
+
+  - cluster: quant-finance
+    query: '"algorithmic trading" OR "market microstructure" OR funding rate OR options skew'
+    category: news
+
+  - cluster: osint-research
+    query: '"open source intelligence" OR financial research automation OR knowledge base RAG wiki'
+    category: news
+
+social:
+  # Cron cannot run finance-skills readers without your local auth — run in Cursor.
+  manual_pass:
+    - tool: twitter-reader
+      prompt: "Search fintwit for Polymarket, Kalshi, agent tooling from last 24h"
+    - tool: opencli-reader
+      prompt: "HackerNews / arXiv frontpage for quant + agent harness"
+    - tool: telegram-reader
+      prompt: "Financial Telegram channels — PM/crypto macro headlines"
+
+output:
+  path_template: "wiki/sweeps/{date}-daily.md"

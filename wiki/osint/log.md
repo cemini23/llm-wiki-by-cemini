@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-05-31] workflow | Four-phase wiki ingest automation (Phases 1–4)
+
+- **Phase 1** — `run_daily_research_digest.sh` + LaunchAgent @ 08:00 → `wiki/sweeps/YYYY-MM-DD-daily.md`
+- **Phase 2** — `inbox_notify.sh` + `append_inbox_to_daily_sweep.py` (WatchPaths → daily sweep)
+- **Phase 3** — `.cursor/skills/cemini-wiki-ingest/SKILL.md` (Posts.docx, tool eval, K-batch)
+- **Phase 4** — `.cursor/rules/osint-ingest-gates.mdc` + `scripts/ingest_session_gate.py`
+- **Concept** — `concepts/cemini-wiki-ingest-workflow.md` · meta `daily-research-digest-cadence.md`
+
+## [2026-05-31] ship | World Cup Bot prod pull — scanner audit fixes @ ef097ef
+
+- **world-cup-bot** — pushed `ef097ef`: 8 scanner audit fixes + SHADOW blind-spot doc cleanup; **178 pytest**
+- **Prod brief** — `briefs/2026-05-31_wc-prod-scanner-fixes-pull.md` (pull only; router/Phase C flags unchanged)
+
 ## [2026-05-31] ship | World Cup Bot prod pull — knowledge audit @ 3d1f045
 
 - **Prod brief** — `briefs/2026-05-31_wc-prod-knowledge-audit-pull.md` → `/opt/cemini/briefs/` (pull `negative_filter_summary` + `venue-reconcile`; router/Phase C flags unchanged)
@@ -10,7 +23,7 @@
 - **Fix on prod:** `core/stash_mcp_client.py` → MCP SSE `http://10.0.0.2:8080/sse` (`remember` / `recall`)
 - **Updated:** `stash_remember.py`, `wiki_enforcement.py`, `check_stash_remember_ready.py`, `docs/post-incident-stash-ritual.md`
 - **Probe:** `check_stash_remember_ready.py` PASS; 4 unit tests pass
-- **Env:** `STASH_MCP_URL` replaces `STASH_BASE_URL`; `STASH_REMEMBER_ENABLED` still default false until operator enables
+- **Env:** `STASH_MCP_URL` replaces `STASH_BASE_URL`; `STASH_REMEMBER_ENABLED=true` on prod (`784edcd`, brain rebuilt)
 
 ## [2026-05-31] audit | World Cup Bot K88/K89 knowledge audit + gap fixes
 
