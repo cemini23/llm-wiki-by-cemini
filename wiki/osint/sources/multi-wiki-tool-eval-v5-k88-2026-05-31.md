@@ -84,9 +84,9 @@ K88 v5 batch: agent skills registries, MCP bridges, OSINT dashboard, browser aut
 
 | Target | Items |
 |--------|-------|
-| **ccc-wiki** | Webwright, book-to-skill, SkillNet, cc-thinking-skills, alirezarezvani/claude-skills, Skill_Seekers, claude-skill-registry, learnGitBranching |
-| **seo-wiki** | aaron-he-zhu/seo-geo-claude-skills (Apache-2.0) |
-| **cybersec-wiki** | SkillSpector primary fit; linux-basics notes Reject |
+| **ccc-wiki** | Webwright, book-to-skill, SkillNet, cc-thinking-skills, alirezarezvani/claude-skills, Skill_Seekers, claude-skill-registry, learnGitBranching | Brief: `Cemini claude code CCC/briefs/2026-05-31_k88-ccc-workflows-and-tool-eval-from-osint.md` |
+| **seo-wiki** | aaron-he-zhu/seo-geo-claude-skills (Apache-2.0) | Brief: `SEO:GEO B&M Business/briefs/2026-05-31_k88-seo-geo-claude-skills-from-osint.md` |
+| **cybersec-wiki** | SkillSpector primary fit; linux-basics notes Reject | Brief: `Cybersecurity wiki/briefs/2026-05-31_k88-skillspector-cybersec-from-osint.md` |
 
 ## Snippets
 

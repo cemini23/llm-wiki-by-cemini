@@ -11,6 +11,8 @@
 - **License spot-check** — 5/12 Gemini NO LICENSE rows overturned via `gh api`; finance-skills Reject overturned
 - **SEO style-pass** — K88 Posts → `@seo-wiki/concepts/x-account-voice-and-format.md` + seo log
 - **Prod brief** — `briefs/2026-05-31_k88-multi-wiki-posts-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS 100/100)
+- **Adoption briefs staged** — local, librarian, egress (OSINT `briefs/`); CCC + cybersec + seo sibling `briefs/`
+- **Adoptions executed** — finance-skills LICENSE file confirmed; librarian wiki sync; egress posture verified unchanged
 - **Phase-0 queue** — SkillSpector, OpenOSINT
 
 ## [2026-05-30] ingest K87 | Tier-2 arXiv sweep — GRPO/LOB + agentic-trading audit + RMATS + deep hedging

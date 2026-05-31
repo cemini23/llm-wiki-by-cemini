@@ -10,7 +10,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-05-31 — K88)
 
-- **K88 ingest (2026-05-31)** — v5 multi-wiki eval (29 URLs) + Posts.docx (42 posts). **2 sources + 6 tool stubs + 3 concepts.** finance-skills MIT overturn. **Phase-0 queue:** SkillSpector, OpenOSINT. Prod brief staged.
+- **K88 ingest (2026-05-31)** — v5 multi-wiki eval (29 URLs) + Posts.docx (42 posts). **2 sources + 6 tool stubs + 3 concepts.** finance-skills MIT overturn. **Adoptions done:** local LICENSE confirm, librarian sync+reindex, egress verify unchanged. Prod brief on `/opt/cemini/briefs/`. **Phase-0 queue:** SkillSpector, OpenOSINT. **Cross-wiki briefs on disk** — user sessions: ccc, cybersec, seo.
 
 ## Current state (2026-05-30 — K86)
 

@@ -70,7 +70,7 @@ Largest post count since K73/K67. **~60% agent-harness / Obsidian / Claude Code*
 
 ### P3 — CCC / workflow (cross-wiki, not OSINT concept pages)
 
-Karpathy 7 tips (@ScottyBeamIO), Cyril Hermes course (06), Obsidian purge (07), Khairallah Obsidian×Claude (09, 30), Claude harness posts (27–29, 32–34, 38), Ruflo swarm (@Damir_Akaza 41), subagent template (@0x_rody 02). **Route:** `@ccc-wiki` brief `briefs/2026-05-31_k88-posts-agent-harness-ccc.md` (gitignored staging).
+Karpathy 7 tips (@ScottyBeamIO), Cyril Hermes course (06), Obsidian purge (07), Khairallah Obsidian×Claude (09, 30), Claude harness posts (27–29, 32–34, 38), Ruflo swarm (@Damir_Akaza 41), subagent template (@0x_rody 02). **Route:** `Cemini claude code CCC/briefs/2026-05-31_k88-ccc-workflows-and-tool-eval-from-osint.md`
 
 ### SEO style-pass
 

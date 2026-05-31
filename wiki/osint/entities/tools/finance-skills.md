@@ -13,7 +13,7 @@ maturity: validated
 created: 2026-05-10
 updated: 2026-05-31
 laptop_install: VERIFIED 2026-05-10 — 6 plugins / 24 skills via `npx plugins add himself65/finance-skills --target claude-code --scope user -y`. Marketplace registered at `~/.claude/plugins/marketplaces/finance-skills`. All 6 enabled in `~/.claude/settings.json`. Requires Claude Code restart to load skills.
-upstream_issue: https://github.com/himself65/finance-skills/issues/64 (LICENSE missing despite README MIT claim — filed 2026-05-10)
+upstream_issue: https://github.com/himself65/finance-skills/issues/64 (filed 2026-05-10; LICENSE file added — close if resolved)
 ---
 
 ## Relations
@@ -26,7 +26,7 @@ upstream_issue: https://github.com/himself65/finance-skills/issues/64 (LICENSE m
 TypeScript monorepo implementing the open Agent Skills standard for financial analysis. Plugins query live market data (yfinance, Funda AI), execute sentiment analysis (Adanos API), monitor Telegram/Twitter/Discord social intelligence. Renders interactive Generative UI widgets in compatible chat interfaces.
 
 - **Repo**: `github.com/himself65/finance-skills`
-- **License**: **MIT `[CONFIRMED 2026-05-31]`** — GitHub API `license.spdx_id=MIT` (K88 spot-check). Prior K36 blocker (no LICENSE file, issue #64) appears resolved; verify LICENSE file in repo before prod embedding.
+- **License**: **MIT `[CONFIRMED 2026-05-31]`** — GitHub API `license.spdx_id=MIT` and **LICENSE file present** in repo root (K88 `gh api contents/LICENSE`). K36 blocker closed; close upstream issue #64 if still open.
 - **Install paths** (Phase-0 verified 2026-05-10):
   - Author's wrapper CLI: `npx plugins add himself65/finance-skills` (installs all 6 plugins) or `--plugin <name>` for one
   - Native Claude Code (no Claude restart required if marketplace API is reachable): `/plugin marketplace add himself65/finance-skills` then `/plugin install <name>@finance-skills` for each of 6: finance-market-analysis, finance-social-readers, finance-data-providers, finance-startup-tools, finance-ui-tools, finance-skill-creator
