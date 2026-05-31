@@ -5,6 +5,7 @@ tags: [source, trading-posts, polymarket, hyperliquid, agent-harness, k88]
 keywords: [karpathy, myttle, dankoweb3, fabianosolana, functionspace, betashop, cyrilXBT, polydao, ruflo]
 related:
   - sources/trading-posts-compilation-k84-2026-05-30.md
+  - sources/trading-posts-compilation-16-2026-05-31.md
   - sources/trading-posts-compilation-38-2026-05-26.md
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-negative-filter-trading.md

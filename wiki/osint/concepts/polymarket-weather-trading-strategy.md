@@ -28,6 +28,9 @@ related:
   - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - entities/people/coldmath-polymarket.md
   - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
+  - sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md
+  - sources/trading-posts-compilation-16-2026-05-31.md
+  - "@gambling-wiki/concepts/polymarket-weather-wagering-retail.md"
   - entities/tools/openpatchlab-polymarket-weather-trading-bot.md
   - entities/tools/katbrink-polymarket-weather-trading-bot.md
   - entities/tools/tsukamg-polymarket-weather-trading-engine.md

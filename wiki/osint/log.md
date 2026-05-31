@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-31] ingest | K90 — v6 tool eval (41 URLs) + Posts.docx (16 posts)
+
+- **2 sources** — `multi-wiki-tool-eval-v6-k90-2026-05-31.md`, `trading-posts-compilation-16-2026-05-31.md`
+- **2 tool stubs** — `harrier-pm-toolkits.md`, `polymarket-skills-mjunaidca.md`
+- **1 concept** — `macro-charts-regime-signals.md`
+- **Updated** — `polybot.md`, `polymarket-weather-trading-strategy.md`, `macro-weather-regime.md`, `caiovicentino-polymarket-mcp-server.md`
+- **Cross-wiki** — gambling-wiki (concept + 2 tool stubs + source stub + brief), ccc-wiki (2 source stubs + brief), seo-wiki (brief + style pass)
+- **Prod brief** — `briefs/2026-05-31_k90-multi-wiki-ingest-cemini.md`
+- **Raw** — scp to `cemini-librarian:/opt/cemini-bulk/research/`; laptop inbox cleared
+
 ## [2026-05-31] workflow | Four-phase wiki ingest automation (Phases 1–4)
 
 - **Phase 1** — `run_daily_research_digest.sh` + LaunchAgent @ 08:00 → `wiki/sweeps/YYYY-MM-DD-daily.md`

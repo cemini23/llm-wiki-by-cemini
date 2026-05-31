@@ -4,9 +4,10 @@ type: entity
 tags: [tool, prediction-markets, polymarket, mit, adopt-tier, official-sanctioned, agent-framework]
 keywords: [polymarket-agents, official-framework, autonomous-ai, polymarket-trading, agent-deployment, polymarket-stack-foundation]
 related:
+  - sources/caiovicentino-polymarket-mcp-server.md
   - sources/links-3-5-4-tool-eval.md
   - sources/polymarket-5-5-tool-eval.md
-  - sources/caiovicentino-polymarket-mcp-server.md
+  - entities/tools/polymarket-skills-mjunaidca.md
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - concepts/polymarket-wallet-alpha-pipeline.md
   - entities/platforms/polymarket.md

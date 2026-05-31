@@ -11,6 +11,7 @@ related:
   - entities/tools/momentum-odds.md
   - entities/tools/odds-jam-prediction-insiders.md
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
+  - sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md
 maturity: validated
 created: 2026-05-31
 updated: 2026-05-31

@@ -16,6 +16,9 @@ related:
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
   - sources/trading-posts-compilation-38-2026-05-26.md
+  - sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md
+  - entities/tools/harrier-pm-toolkits.md
+  - entities/tools/polymarket-skills-mjunaidca.md
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - concepts/polymarket-api-reference.md
   - concepts/polymarket-updown-bot-taxonomy.md

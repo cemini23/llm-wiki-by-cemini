@@ -5,15 +5,17 @@ tags: [tool, polymarket, trading, arbitrage, java, python, market-making]
 keywords: [polybot, Polymarket, arbitrage, market-making, replication scoring, ClickHouse, Java]
 related:
   - sources/project-link-evaluation-brief-5_10.md
+  - sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md
   - entities/tools/polymarket-paper-trader.md
   - concepts/tool-evaluation-framework.md
 maturity: draft
 created: 2026-05-10
-updated: 2026-05-28
+updated: 2026-05-31
 ---
 
 ## Relations
 - `@sources/project-link-evaluation-brief-5_10.md` — source evaluation brief (URL 3)
+- `@sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md` — K90 v6 Steal-from reaffirmed (MIT)
 - `@entities/tools/polymarket-paper-trader.md` — companion Polymarket tool (Adopt tier)
 
 ## Raw Concept

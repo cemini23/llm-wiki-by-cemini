@@ -16,16 +16,18 @@ related:
   - concepts/mcp-tool-marketplace.md
   - entities/platforms/polymarket.md
   - entities/tools/ai-polymarket-agent.md
-  - entities/infrastructure/deepseek-api.md
+  - entities/tools/polymarket-skills-mjunaidca.md
   - concepts/high-signal-paper-patterns.md
   - sources/3-26-b.md
   - entities/tools/polymarket-agents.md
   - sources/polymarket-5-5-tool-eval.md
+  - entities/infrastructure/deepseek-api.md
+  - sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md
   - sources/polymarket-microstructure-anatomy-2604.24366.md
 maturity: validated
 read_status: read
 created: 2026-04-30
-updated: 2026-05-11
+updated: 2026-05-31
 ---
 
 ## Relations

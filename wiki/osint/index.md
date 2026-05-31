@@ -1457,6 +1457,14 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Cemini wiki ingest workflow](concepts/cemini-wiki-ingest-workflow.md) — `[CORE 2026-05-31]` Four-phase discovery→ingest pipeline (daily digest, inbox watch, ingest skill, human gates). — concept, workflow, automation, k90
 - [Gambling wiki federation](concepts/gambling-wiki-federation.md) — `[VALIDATED 2026-05-31]` Cross-wiki hub for public `@gambling-wiki` (sports betting, casino, DFS); osint-wiki keeps PM bots/CeminiSuite. — concept, federation, gambling-wiki
 
+#### K90 ingest (2026-05-31 — v6 tool eval + Posts.docx 16)
+
+- [Multi-wiki tool eval v6 K90 (41 URLs)](sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md) — `[DRAFT 2026-05-31]` First gambling-wiki surface; Harrier PM toolkits, polymarket-skills; weather-bot graveyard. — source, tool-eval, k90, v6
+- [Trading posts K90 (Posts.docx, 16 posts)](sources/trading-posts-compilation-16-2026-05-31.md) — `[DRAFT 2026-05-31]` Macro Charts opener; AlterEgo weather retail; agent-harness → CCC. — source, trading-posts, k90
+- [HarrierOnChain PM toolkits](entities/tools/harrier-pm-toolkits.md) — `[DRAFT 2026-05-31]` K90 Adopt; Phase-0 pending. — tool, polymarket, k90
+- [polymarket-skills (mjunaidca)](entities/tools/polymarket-skills-mjunaidca.md) — `[DRAFT 2026-05-31]` K90 Adopt; null LICENSE on gh api. — tool, polymarket, k90
+- [Macro Charts regime signals](concepts/macro-charts-regime-signals.md) — `[DRAFT 2026-05-31]` K90 newsletter opener. — concept, macro, k90
+
 #### K89 knowledge-application audit (2026-05-31)
 
 - [Cemini knowledge-application architecture](concepts/cemini-knowledge-application-architecture.md) — `[VALIDATED 2026-05-31]` Wave 1 prod audit complete; Wave 2 enforcement briefs staged. — concept, audit, cemini-prod, k89

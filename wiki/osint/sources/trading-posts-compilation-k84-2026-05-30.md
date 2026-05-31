@@ -5,6 +5,7 @@ tags: [source, trading-posts, polymarket, codex, polybacktest, k84]
 keywords: [0xphilanthrop, coinman2, polybacktest, ziwenxu, codex-goal, polymarket-stack, spread-backtest]
 related:
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
+  - sources/trading-posts-compilation-16-2026-05-31.md
   - sources/trading-posts-compilation-38-2026-05-26.md
   - sources/trading-posts-compilation-42-2026-05-31.md
   - concepts/polymarket-bot-architecture.md

@@ -5,6 +5,7 @@ tags: [source, gemini-deep-research, tool-eval, v5-prompt, license-corrections, 
 keywords: [skillspector, openosint, webwright, skill-seekers, skillnet, finance-skills, machine-learning-for-trading, graph-r1]
 related:
   - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
+  - sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md
   - sources/tool-eval-50urls-polymarket-kalshi-license-false-negative-2026-05-21.md
   - concepts/cemini-license-posture.md
   - concepts/tool-evaluation-framework.md
