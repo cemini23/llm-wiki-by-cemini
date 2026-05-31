@@ -1,5 +1,47 @@
 # Wiki Log
 
+## [2026-05-31] fix | K89 stash MCP client on prod
+
+- **Problem:** Wave 4 `stash_remember.py` + `wiki_enforcement._stash_recall` hit REST `/api/v1/*` on `:9090` — 404 (metrics-only)
+- **Fix on prod:** `core/stash_mcp_client.py` → MCP SSE `http://10.0.0.2:8080/sse` (`remember` / `recall`)
+- **Updated:** `stash_remember.py`, `wiki_enforcement.py`, `check_stash_remember_ready.py`, `docs/post-incident-stash-ritual.md`
+- **Probe:** `check_stash_remember_ready.py` PASS; 4 unit tests pass
+- **Env:** `STASH_MCP_URL` replaces `STASH_BASE_URL`; `STASH_REMEMBER_ENABLED` still default false until operator enables
+
+## [2026-05-31] audit | World Cup Bot K88/K89 knowledge audit + gap fixes
+
+- **world-cup-bot** — knowledge audit vs K88/K89: `negative_filter_summary` on `plan`; `venue-reconcile compare` CLI (blind-spot #2); ROADMAP audit table; **167 pytest**
+- **Wiki** — `polymarket-negative-filter-trading.md` validated + WCB APPLIED; `world-cup-bot` entity updated
+- **Brief** — `briefs/2026-05-31_world-cup-bot-knowledge-audit.md`
+
+## [2026-05-31] wave3b + roadmap sync | K89
+
+- **Master roadmap updated** — R06–R07, R09, R10 DONE; R08 PARTIAL (brain only); **R08b STAGED**
+- **Wave 3b brief** — `k89-wave3b-pm-executor-wiki-enforcement` → pm_btc, pm_weather, WC; lp denylist unchanged
+- **Wiki** — concept page Wave 3 DONE + 3b staged; verify caveat documented
+- scp → prod
+
+## [2026-05-31] meta | K89 master roadmap — intent registry (R## matrix)
+
+- **Meta-brief** — `2026-05-31_k89-master-roadmap-cemini.md` → prod; prevents audit-only close when operator intent named self-learn/heal/enforcement
+- **Capability matrix** R01–R16; Wave 2 marked DONE; Wave 3 implement order; Wave 4/5 stub slugs
+- **Wiki** — intent registry section on `cemini-knowledge-application-architecture.md`
+- **Lesson:** initial prompt scope dropped until re-prompt — documented as anti-pattern
+
+## [2026-05-31] wave3 | K89 — promotion SOP, failure taxonomy, memory, kb/stash enforcement
+
+- **4 Wave 3 briefs** — promotion SOP, failure taxonomy + shadow corrective actions, swap mitigation, kb/stash enforcement (**pm_lp denylist / log-only**)
+- **skill_audit** PASS ×4; scp → `cemini-prod:/opt/cemini/briefs/`
+- **Wiki** — `cemini-knowledge-application-architecture.md` Wave 3 table + roadmap summary
+- **Implement order:** Wave 2 done → memory ∥ promotion SOP → failure taxonomy → kb/stash enforcement
+
+## [2026-05-31] wave2 | K89 — knowledge-application enforcement briefs + wiki update
+
+- **Wave 2 briefs staged** — registry bootstrap, brief completion template, brain kb-context hook (skill_audit PASS ×3)
+- **Wiki** — `concepts/cemini-knowledge-application-architecture.md` updated with Wave 1 findings + Wave 2 queue → **validated**
+- **Prod scp** — three Wave 2 briefs → `cemini-prod:/opt/cemini/briefs/`
+- **Open** — server-Claude implement Wave 2 in order: registry → template → kb hook
+
 ## [2026-05-31] brief + concept | K89 — Cemini knowledge-application audit
 
 - **Prod brief shipped** — `2026-05-31_cemini-knowledge-application-audit-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS 100/100)

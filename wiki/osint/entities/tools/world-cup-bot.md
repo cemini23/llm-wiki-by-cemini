@@ -28,6 +28,7 @@ related:
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - meta/wc-lp-safety-cadence.md
   - concepts/cemini-knowledge-application-architecture.md
+  - concepts/polymarket-negative-filter-trading.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-31
@@ -43,6 +44,7 @@ updated: 2026-05-31
 - @entities/tools/polymarket-clob-api.md — quote POST, fill handler, rewards GET `/rewards/user`, public `/book` depth
 - @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md — Issue 3 marketing queue (2026-06-03)
 - @meta/wc-lp-safety-cadence.md — weekly DR re-run through tournament window (next **2026-06-06**)
+- @concepts/polymarket-negative-filter-trading.md — K88 selection-before-speed; WCB `negative_filter_summary` + venue reconcile
 - @concepts/cemini-knowledge-application-architecture.md — build loop exemplar of repeat-lesson failure (K89)
 
 ## Raw Concept
@@ -86,9 +88,10 @@ Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code 
 | Gemini DR prompts | **Live** — `prompts/gemini-deep-research/` + `research gemini` CLI; **DR 08–10 ingested 2026-05-30** → `config/market_phases.yaml` + router spec |
 | Prod systemd (monitor) | **Deployed** on `cemini-prod` — refresh units after `17708e1` pull |
 | **Steal-from audit (K85)** | **Live** — daily adverse cap, 429 preflight, event log, CI TruffleHog/vet, shadow fixture gate |
+| **Knowledge audit (K88/K89)** | **2026-05-31** — `negative_filter_summary` on plan; `venue-reconcile compare`; Wave 3b wiki enforcement **prod-only** |
 | CeminiSuite import | **Brief staged** — `briefs/2026-05-29_world-cup-bot-cemini-import.md` (OSINT) |
 
-Logic version: **`wc_advance_lp_v4`** · paper arb: **`wc_cross_venue_paper_v1`** · exec: **`wc_cross_venue_exec_v1`**. Main @ **`10d9d1e`**. Tests: **164 pytest**.
+Logic version: **`wc_advance_lp_v4`** · paper arb: **`wc_cross_venue_paper_v1`** · exec: **`wc_cross_venue_exec_v1`**. **167 pytest**.
 
 ### Deploy profiles (`deploy/systemd/`)
 
@@ -117,6 +120,7 @@ world-cup-bot conviction-staleness --notify
 world-cup-bot fixture-check --notify
 world-cup-bot cross-venue-scan --loop
 world-cup-bot pnl --scope current
+world-cup-bot venue-reconcile compare polymarket-export.csv
 ```
 
 ## Snippets
