@@ -31,6 +31,7 @@ import argparse
 import hashlib
 import os
 import re
+import subprocess
 import sys
 import unicodedata
 from collections import defaultdict
@@ -62,6 +63,12 @@ parser.add_argument(
     type=int,
     default=15_000,
     help="Bytes of file content to scan for arXiv/DOI/URL extraction (default: 15000)",
+)
+parser.add_argument(
+    "--supply-scan",
+    action="store_true",
+    help="After dup check, run SkillSpector static scan on skill-like inbox drops "
+    "(.zip or dirs with SKILL.md) via scripts/skill_supply_scan.py --inbox",
 )
 args = parser.parse_args()
 
@@ -439,6 +446,24 @@ def main():
         print("⛔ DUPLICATE verdicts: do NOT ingest without first deciding (re-download? supersede existing? fold into existing?).")
     if n_likely:
         print("⚠️  LIKELY verdicts: human review recommended (could be a different version / different paper with similar title).")
+
+    if args.supply_scan:
+        print()
+        print("--- Skill supply scan (SkillSpector --no-llm) ---")
+        scan_script = REPO / "scripts" / "skill_supply_scan.py"
+        if not scan_script.is_file():
+            print(f"ERROR: {scan_script} not found — skip supply scan", file=sys.stderr)
+        else:
+            proc = subprocess.run(
+                [sys.executable, str(scan_script), "--inbox"],
+                cwd=str(REPO),
+            )
+            if proc.returncode != 0:
+                print(
+                    f"⚠️  supply scan exit {proc.returncode} "
+                    "(2=severity review, 3=scanner error; see output above)",
+                    file=sys.stderr,
+                )
     return 0
 
 

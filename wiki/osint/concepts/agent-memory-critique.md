@@ -14,9 +14,10 @@ related:
   - concepts/reviewer-agent-inference-time-feedback.md
   - sources/reinforced-agent-tool-calling-feedback.md
   - sources/signals-trajectory-triage.md
+  - concepts/cemini-knowledge-application-architecture.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-05-11
+updated: 2026-05-31
 ---
 
 ## Raw Concept
@@ -34,7 +35,7 @@ Current agent memory systems — kb-server's pgvector search, Stash's episodic s
 
 This is not an argument against memo systems. A memo pad is useful. The argument is that calling lookup "memory" creates false expectations about agent continuity and reliability.
 
-For Cemini: kb-server and Stash are legitimate memo infrastructure. They should be used for what they're good at (factual retrieval, calibration data storage for token-prior construction). They should not be expected to provide agent continuity across sessions — that requires capabilities beyond current infrastructure.
+For Cemini: kb-server and Stash are legitimate memo infrastructure. They should be used for what they're good at (factual retrieval, calibration data storage for token-prior construction). They should not be expected to provide agent continuity across sessions — that requires capabilities beyond current infrastructure. **Knowledge-application gap:** even when lessons are in the wiki, prod and agents treat retrieval as optional unless a **lesson registry + completion verification** loop exists — see @concepts/cemini-knowledge-application-architecture.md.
 
 **ARA connection**: The @concepts/agent-native-research-artifacts.md Live Research Manager partially addresses the memory gap for the narrow domain of research-process capture. It operates at session boundaries, distilling researcher-agent conversations into typed events (decisions, dead ends, experiments) that accumulate in the artifact's exploration graph. This is selective encoding + consolidation — two of the four missing criteria — but only for research trajectories, not general agent memory. The exploration graph's dead_end nodes with structured failure modes are a concrete implementation of "active forgetting via preservation" (keeping what was tried and abandoned, rather than silently discarding).
 

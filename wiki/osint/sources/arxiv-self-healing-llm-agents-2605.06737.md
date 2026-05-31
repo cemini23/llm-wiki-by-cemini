@@ -9,10 +9,11 @@ related:
   - concepts/cemini-ai-assistant.md
   - sources/agentic-harness-engineering.md
   - concepts/code-as-agent-harness.md
+  - concepts/cemini-knowledge-application-architecture.md
 maturity: draft
 read_status: skimmed
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-31
 ---
 
 ## Relations

@@ -19,9 +19,10 @@ related:
   - concepts/trading-bot-logging-discipline.md
   - concepts/equity-fair-value-evaluation.md
   - concepts/cemini-repository-topology.md
+  - concepts/cemini-knowledge-application-architecture.md
 maturity: draft
 created: 2026-05-03
-updated: 2026-05-28
+updated: 2026-05-31
 # Server-state probe baseline (2026-05-03): both hosts probed live; specs recorded match `free -h` / `df -h` / `nproc` output. Refresh on every spec change.
 ---
 

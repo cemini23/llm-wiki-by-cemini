@@ -6,9 +6,10 @@ keywords: [wiki-gap-detect, tier-1, needs-verification, cited-unread]
 related:
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - concepts/exploration-graph-dead-ends.md
+  - concepts/cemini-knowledge-application-architecture.md
 maturity: core
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-05-31
 ---
 
 ## Relations

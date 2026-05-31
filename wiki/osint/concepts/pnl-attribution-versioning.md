@@ -15,9 +15,10 @@ related:
   - concepts/lp-algorithm-live-promotion-gates.md
   - entities/tools/fp-dcf.md
   - entities/tools/world-cup-bot.md
+  - concepts/cemini-knowledge-application-architecture.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-30
+updated: 2026-05-31
 ---
 
 ## Relations

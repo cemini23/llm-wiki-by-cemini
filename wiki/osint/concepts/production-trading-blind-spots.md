@@ -23,9 +23,10 @@ related:
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - sources/gemini-wc-tournament-phase-router-2026-05-30.md
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
+  - concepts/cemini-knowledge-application-architecture.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-29
+updated: 2026-05-31
 ---
 
 ## Relations
@@ -43,7 +44,7 @@ updated: 2026-05-29
 
 ## Raw Concept
 
-What prompted this page: repeated pattern where Cemini (and independent Polymarket operators) spent **weeks to months** discovering operational bugs that look like strategy failure. Goal: a checklist wiki page that shortens time-to-diagnosis by naming failure classes before you feel them in PnL.
+What prompted this page: repeated pattern where Cemini (and independent Polymarket operators) spent **weeks to months** discovering operational bugs that look like strategy failure. Goal: a checklist wiki page that shortens time-to-diagnosis by naming failure classes before you feel them in PnL. **Application gap:** this catalog only helps if prod is audited against it — @concepts/cemini-knowledge-application-architecture.md (K89 prod audit).
 
 ## Narrative
 

@@ -27,9 +27,10 @@ related:
   - concepts/world-cup-tournament-phases-lp-strategy.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - meta/wc-lp-safety-cadence.md
+  - concepts/cemini-knowledge-application-architecture.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-30
+updated: 2026-05-31
 ---
 
 ## Relations
@@ -42,6 +43,7 @@ updated: 2026-05-30
 - @entities/tools/polymarket-clob-api.md — quote POST, fill handler, rewards GET `/rewards/user`, public `/book` depth
 - @seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md — Issue 3 marketing queue (2026-06-03)
 - @meta/wc-lp-safety-cadence.md — weekly DR re-run through tournament window (next **2026-06-06**)
+- @concepts/cemini-knowledge-application-architecture.md — build loop exemplar of repeat-lesson failure (K89)
 
 ## Raw Concept
 

@@ -12,7 +12,7 @@ maturity: validated
 created: 2026-05-31
 updated: 2026-05-31
 phase_0_verdict: CONDITIONAL-GO 2026-05-31 — Apache-2.0 verified; static scan PASS; wire `--no-llm` into laptop preingest only; not on PyPI; Python 3.12+; do not deploy on librarian until air-gap OSV probe
-adoption_status: PHASE-0-COMPLETE 2026-05-31
+adoption_status: PHASE-0-COMPLETE 2026-05-31; skill_supply_scan.py wired
 ---
 
 ## Relations
@@ -101,12 +101,28 @@ Wire **static-only** SkillSpector into **laptop preingest** (new skill drops, fi
 4. **Not on PyPI** — pin Git SHA in install docs; re-audit on upstream releases.
 5. **Cybersec-wiki** owns expanded entity narrative + MCP exposure policy (authorized research boundary).
 
-### Integration sketch (next brief, not shipped)
+### Integration sketch (shipped 2026-05-31)
 
 ```bash
-skillspector scan "$SKILL_PATH" --no-llm --format json --output /tmp/skillspector.json
-# Gate: risk_assessment.severity != LOW → human review before ingest
+# One-time install (Python 3.12+, ~228 MB venv under .local/)
+bash scripts/install_skillspector_venv.sh
+
+# Scan explicit skill tree
+bash scripts/run_skill_supply_scan.sh path/to/skill-dir
+
+# Scan skill drops in inbox (.zip or SKILL.md dirs)
+python3 scripts/skill_supply_scan.py --inbox
+
+# Audit installed workspace skills
+python3 scripts/skill_supply_scan.py --repo-skills
+
+# Pre-ingest dup check + supply scan
+python3 scripts/preingest_check.py --supply-scan
 ```
+
+Exit **2** when severity exceeds `--max-severity` (default **LOW**) — human review before install. Always uses **`--no-llm`** (static patterns only).
+
+Implementation: `scripts/skill_supply_scan.py` wraps `skillspector scan … --no-llm --format json`.
 
 ## Snippets
 

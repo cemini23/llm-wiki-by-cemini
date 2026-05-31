@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-05-31] brief + concept | K89 — Cemini knowledge-application audit
+
+- **Prod brief shipped** — `2026-05-31_cemini-knowledge-application-audit-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS 100/100)
+- **Audit prompt installed** — `cemini-knowledge-application-audit-v1-2026-05-31.md` → `/opt/cemini/prompts/` + `briefs/prompts/`
+- **New concept** — `concepts/cemini-knowledge-application-architecture.md` (wiki-side loop: lesson registry, completion reports, dual-surface audit)
+- **Updated backlinks** — workflow-tooling-audit, agent-memory-critique, production-trading-blind-spots, pnl-attribution-versioning, exploration-graph-dead-ends, world-cup-bot
+- **Open** — server-Claude Wave 1 prod audit (off-hours); report → wiki summary user-gated
+
+## [2026-05-31] ship | SkillSpector preingest wrapper
+
+- **Scripts** — `scripts/skill_supply_scan.py`, `install_skillspector_venv.sh`, `run_skill_supply_scan.sh`
+- **Preingest hook** — `preingest_check.py --supply-scan` runs static `--no-llm` scan on skill-like inbox drops
+- **Entity** — `@entities/tools/nvidia-skillspector.md` integration block updated
+
 ## [2026-05-31] phase-0 | K88 — SkillSpector + OpenOSINT
 
 - **SkillSpector** — clone audit `/tmp/ph0-skillspector/`; **CONDITIONAL-GO** — Apache-2.0, static `--no-llm` scan PASS (~1 s, kb-retriever SAFE); 228 MB venv; not on PyPI; Python 3.12+; OSV offline fallback confirmed in source

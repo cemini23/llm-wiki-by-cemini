@@ -1455,6 +1455,10 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [SIA unified harness/weight loop](concepts/sia-unified-harness-weight-self-improvement.md) — `[DRAFT 2026-05-30]` — concept, self-improving-agents, k84
 - [Cemini workflow tooling audit](concepts/cemini-workflow-tooling-audit-2026-05-30.md) — `[DRAFT 2026-05-30]` Obsidian/n8n/MCP gap map + v5 prompt need. — concept, workflow, audit, k84
 
+#### K89 knowledge-application audit (2026-05-31)
+
+- [Cemini knowledge-application architecture](concepts/cemini-knowledge-application-architecture.md) — `[DRAFT 2026-05-31]` Wiki→prod lesson loop; prod audit brief shipped; registry + completion-report proposal. — concept, audit, cemini-prod, k89
+
 #### K88 ingest (2026-05-31 — v5 tool eval + Posts.docx 42)
 
 - [NVIDIA SkillSpector](entities/tools/nvidia-skillspector.md) — `[VALIDATED 2026-05-31]` Phase-0 **CONDITIONAL-GO**; static skill supply-chain scanner. — tool, cybersec, k88
