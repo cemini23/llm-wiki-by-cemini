@@ -8,6 +8,7 @@
 # --- Raw sources (large, copyrighted, immutable; live local only) ------------
 research for cemini/
 research to be indexed/
+raw-sources/
 market dataset/
 
 # --- Outputs staged for distribution (operational; contain server IPs) -------

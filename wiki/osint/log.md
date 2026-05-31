@@ -8,6 +8,12 @@
 - **Updated backlinks** — workflow-tooling-audit, agent-memory-critique, production-trading-blind-spots, pnl-attribution-versioning, exploration-graph-dead-ends, world-cup-bot
 - **Open** — server-Claude Wave 1 prod audit (off-hours); report → wiki summary user-gated
 
+## [2026-05-31] setup | SkillSpector venv installed on laptop
+
+- **Install** — `bash scripts/install_skillspector_venv.sh` → `.local/skillspector-venv` (SkillSpector v2.0.0, Python 3.12.5)
+- **Smoke** — `run_skill_supply_scan.sh .claude/skills/kb-retriever` → LOW/SAFE
+- **Gitignore** — `raw-sources/` (transient docx drops, canonical on librarian)
+
 ## [2026-05-31] ship | SkillSpector preingest wrapper
 
 - **Scripts** — `scripts/skill_supply_scan.py`, `install_skillspector_venv.sh`, `run_skill_supply_scan.sh`

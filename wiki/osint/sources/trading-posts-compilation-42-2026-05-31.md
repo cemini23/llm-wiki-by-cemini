@@ -15,6 +15,11 @@ related:
   - entities/tools/finance-skills.md
   - entities/tools/hermes-agent.md
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
+  - "@ccc-wiki/sources/trading-posts-compilation-42-2026-05-31.md"
+  - "@ccc-wiki/concepts/karpathy-agent-infrastructure-basics.md"
+  - "@ccc-wiki/concepts/claude-code-subagent-templates.md"
+  - "@ccc-wiki/concepts/claude-harness-dynamic-workflows-k88.md"
+  - "@ccc-wiki/entities/tools/ruflo.md"
 maturity: draft
 read_status: read
 created: 2026-05-31
