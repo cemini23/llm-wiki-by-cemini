@@ -1453,6 +1453,13 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [SIA unified harness/weight loop](concepts/sia-unified-harness-weight-self-improvement.md) — `[DRAFT 2026-05-30]` — concept, self-improving-agents, k84
 - [Cemini workflow tooling audit](concepts/cemini-workflow-tooling-audit-2026-05-30.md) — `[DRAFT 2026-05-30]` Obsidian/n8n/MCP gap map + v5 prompt need. — concept, workflow, audit, k84
 
+#### K87 ingest (2026-05-30 — Tier-2 arXiv sweep: GRPO/LOB + agentic-trading audit + RMATS + deep hedging)
+
+- [DeepSeekMath Meets Order Book — GRPO/GSPO HFT directional trading (arXiv:2605.25527)](sources/arxiv-grpo-lob-hft-trading-2605.25527.md) — `[VALIDATED 2026-05-30]` K87 Tier-A. OFI state; group-aware PPO beats PPO/Q-learning on AAPL/AMZN/GOOG [TENTATIVE single-seed]. — source, arxiv, lob, grpo, hft, k87
+- [Agentic Trading — LLM agents survey + reproducibility audit (arXiv:2605.19337)](sources/arxiv-agentic-trading-survey-2605.19337.md) — `[VALIDATED 2026-05-30]` K87 Tier-A. 77-study ledger; 2/19 time-consistent splits; reporting checklist. — source, arxiv, llm-trading, survey, k87
+- [RMATS — recursive multi-agent portfolio under geopolitical risk (arXiv:2605.25311)](sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md) — `[VALIDATED 2026-05-30]` K87 Tier-B. MDD 9.62% vs MVO 15.49%; Sharpe −0.297 in 2023–25 bull. — source, arxiv, multi-agent, portfolio, k87
+- [Deep hedging delta corrections + symbolic distillation (arXiv:2605.21696)](sources/arxiv-deep-hedging-delta-corrections-2605.21696.md) — `[VALIDATED 2026-05-30]` K87 Tier-B. TD3 BS delta haircut; regime fragility 2022/2023. — source, arxiv, deep-hedging, options, k87
+
 #### K82 World Cup advance-market bot (2026-05-29)
 
 - [World Cup 2026 — tournament phases LP strategy](concepts/world-cup-tournament-phases-lp-strategy.md) — `[VALIDATED 2026-05-30]` Group→final; DR 08–10 ingested. — concept, world-cup, knockout, k85, k86

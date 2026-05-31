@@ -8,11 +8,12 @@ related:
   - concepts/rl-marl-research.md
   - concepts/portfolio-strategy.md
   - sources/arxiv-fpilot-rl-trading-2605-12653.md
+  - sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md
 
 maturity: validated
 read_status: skimmed
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-30
 ---
 
 ## Relations

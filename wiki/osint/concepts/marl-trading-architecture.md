@@ -10,9 +10,10 @@ related:
   - sources/3-29-18.md
   - concepts/rl-marl-research.md
   - concepts/rl-retrain-pipeline-hardening.md
+  - sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md
 maturity: validated
 created: 2026-05-16
-updated: 2026-05-16
+updated: 2026-05-30
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-16
 - @sources/3-29-18.md — RLAE: RL-assisted dynamic ensemble weighting for LLMs (anchor)
 - @concepts/rl-marl-research.md — RL/MARL corpus-index hub
 - @concepts/rl-retrain-pipeline-hardening.md — sibling Cemini-MARL concept: this page is *architecture*, that one is *retrain process*
+- @sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md — K87: recursive typed-message coordination until weight convergence; contrast with fixed TradingAgents debate rounds
 
 ## Raw Concept
 

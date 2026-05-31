@@ -48,9 +48,10 @@ related:
   - sources/mit-quant-bible.md
   - sources/evonash-marl.md
   - sources/ssrn-5140015-time-series-quant-finance-2025.md
+  - sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-16
+updated: 2026-05-30
 ---
 
 ## Relations
@@ -71,6 +72,7 @@ updated: 2026-05-16
 - @sources/3-5-git-pt-2.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/3-9-pm-research.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/arxiv-drl-portfolio-sac-2605.17307.md — SAC global-equity portfolio WFO (2003–2026); partial edge vs B&H [TENTATIVE]
+- @sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md — K87: drawdown-first multi-agent ETF sleeve; lowest MDD in 3/5 geopolitical stress events (2023–25 test)
 - @sources/4-4-link-re.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/4-5-links.md — Portfolio Strategy source in the Cemini research corpus
 - @sources/agent-7-4-4.md — Portfolio Strategy source in the Cemini research corpus

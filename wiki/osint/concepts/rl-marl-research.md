@@ -83,15 +83,23 @@ related:
   - sources/eggro-evolution-strategies-hyperscale-2026.md
   - sources/arxiv-fpilot-rl-trading-2605-12653.md
   - sources/arxiv-drl-portfolio-sac-2605.17307.md
+  - sources/arxiv-grpo-lob-hft-trading-2605.25527.md
+  - sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md
+  - sources/arxiv-deep-hedging-delta-corrections-2605.21696.md
+  - sources/arxiv-agentic-trading-survey-2605.19337.md
 maturity: draft
 created: 2026-04-26
-updated: 2026-05-15
+updated: 2026-05-30
 ---
 
 ## Relations
 
 - @sources/arxiv-fpilot-rl-trading-2605-12653.md — FPILOT: inference-time optimization (MPC-style planning) for pre-trained RL trading agents, retraining-free
 - @sources/3-10-agent-orchestration-research-audit.md — RL/MARL source in the Cemini research corpus
+- @sources/arxiv-grpo-lob-hft-trading-2605.25527.md — K87: GRPO/GSPO on LOB order-flow imbalance
+- @sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md — K87: recursive multi-agent ETF portfolio under geopolitical stress
+- @sources/arxiv-deep-hedging-delta-corrections-2605.21696.md — K87: TD3 delta haircut vs daily BS; symbolic distillation
+- @sources/arxiv-agentic-trading-survey-2605.19337.md — K87: LLM-trading reproducibility audit (77-study ledger)
 - @sources/3-10-engineering-audit.md — RL/MARL source in the Cemini research corpus
 - @sources/3-10-osint-research.md — RL/MARL source in the Cemini research corpus
 - @sources/3-17-git-research.md — RL/MARL source in the Cemini research corpus

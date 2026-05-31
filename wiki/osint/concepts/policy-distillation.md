@@ -13,9 +13,10 @@ related:
   - concepts/llm-listwise-alignment.md
   - concepts/recursive-multi-agent-systems.md
   - sources/recursive-multi-agent-systems-2604.25917.md
+  - sources/arxiv-deep-hedging-delta-corrections-2605.21696.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-05-11
+updated: 2026-05-30
 ---
 
 ## Raw Concept

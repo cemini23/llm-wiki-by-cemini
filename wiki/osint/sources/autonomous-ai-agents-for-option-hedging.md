@@ -7,10 +7,11 @@ related:
   - concepts/rl-marl-research.md
   - concepts/options-derivatives.md
   - entities/components/kelly-cvar-risk-engine.md
+  - sources/arxiv-deep-hedging-delta-corrections-2605.21696.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-27
-updated: 2026-05-16
+updated: 2026-05-30
 ---
 
 ## Relations

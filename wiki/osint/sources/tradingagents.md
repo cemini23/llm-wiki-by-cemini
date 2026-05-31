@@ -10,10 +10,12 @@ related:
   - sources/generative-agents-park-2023.md
   - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
   - entities/tools/tradingagents-cn.md
+  - sources/arxiv-agentic-trading-survey-2605.19337.md
+  - sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30
-updated: 2026-05-24
+updated: 2026-05-30
 ---
 
 ## Relations
@@ -21,6 +23,7 @@ updated: 2026-05-24
 - `@concepts/multi-agent-trading.md` — concept hub
 - `@sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md` — K63 TradingAgents-CN fork eval
 - `@entities/tools/tradingagents-cn.md` — Chinese implementation fork (distinct repo)
+- `@sources/arxiv-agentic-trading-survey-2605.19337.md` — K87 audit: TradingAgents in primary n=19 subset; field-wide protocol incomparability (2/19 time-consistent splits)
 
 ## Raw Concept
 - Original title: TradingAgents: Multi-Agents LLM Financial Trading Framework

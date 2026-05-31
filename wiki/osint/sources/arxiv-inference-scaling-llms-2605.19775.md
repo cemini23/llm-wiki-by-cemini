@@ -9,10 +9,11 @@ related:
   - concepts/librarian-server-architecture.md
   - entities/tools/lazy-tool.md
   - entities/infrastructure/cemini-egress-fi.md
+  - sources/arxiv-grpo-lob-hft-trading-2605.25527.md
 maturity: draft
 read_status: skimmed
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-05-30
 ---
 
 ## Relations

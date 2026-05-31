@@ -25,14 +25,16 @@ related:
   - concepts/equity-fair-value-evaluation.md
   - concepts/trading-model-failure-diagnostics.md
   - sources/algorithmic-trading-model-benchmarking-framework-2026-05-28.md
+  - sources/arxiv-agentic-trading-survey-2605.19337.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-29
+updated: 2026-05-30
 ---
 
 ## Relations
 
 - @sources/regime-conditioned-bo-evaluation.md — K33 anchor source: 42-page paper introducing PRS + No-Free-Leaderboard proposition + REGIMEPLANNER.
+- @sources/arxiv-agentic-trading-survey-2605.19337.md — K87: independent audit finding only 2/19 LLM-trading papers report time-consistent splits; reinforces split/cost/execution disclosure gates
 - @concepts/conductor-orchestrator.md — Conductor's fitness function is the highest-action-value Cemini target for regime-conditioned eval discipline.
 - @concepts/evidence-withheld-verification.md — sibling anti-fabrication structure; ARA hides answers, regime-disclosure makes the regime observable.
 - @concepts/high-signal-paper-patterns.md — this paper exemplifies the rubric: formal proposition + 79-condition empirical validation + actionable diagnostic + reporting protocol.

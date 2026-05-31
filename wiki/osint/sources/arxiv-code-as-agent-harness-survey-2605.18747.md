@@ -13,6 +13,7 @@ related:
   - sources/arxiv-grep-agent-harness-2605-15184.md
   - sources/arxiv-skillrae-agent-skills-2605.10114.md
   - sources/arxiv-graphflow-verifiable-workflows-2605.14968.md
+  - sources/arxiv-agentic-trading-survey-2605.19337.md
   - concepts/skillrae-retrieval-augmented-execution.md
   - concepts/graphflow-verifiable-agent-workflows.md
 

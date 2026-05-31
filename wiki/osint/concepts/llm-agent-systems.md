@@ -126,10 +126,12 @@ related:
   - sources/ai-6-4-3.md
   - sources/forex-2-4-4.md
   - sources/llm-4-3-7.md
+  - sources/arxiv-agentic-trading-survey-2605.19337.md
+  - sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md
 maturity: validated
 hub: true
 created: 2026-04-26
-updated: 2026-05-11
+updated: 2026-05-30
 ---
 
 ## Relations
@@ -137,6 +139,8 @@ updated: 2026-05-11
 - @concepts/ai-ethics-and-governance.md — sister hub: agent-architecture sources sit here, governance-of-those-agents (EU-AI-Act, harm typology, behavioral framing) sits in the ethics hub
 - @entities/frameworks/langgraph.md — the operative LLM orchestration framework in the Cemini stack; this hub indexes the broader agent-systems research that informed the LangGraph architecture choice
 - @sources/3-10-live-trading-research.md — LLM agent-systems source in the Cemini research corpus
+- @sources/arxiv-agentic-trading-survey-2605.19337.md — K87: 77-study LLM-trading audit; protocol incomparability (2/19 time-consistent splits in primary subset)
+- @sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md — K87: recursive multi-agent portfolio; typed message passing until weight convergence
 - @sources/3-17-agent-research.md — LLM agent-systems source in the Cemini research corpus
 - @sources/3-19-automated-trading-strategy-discovery-pipeline-research.md — LLM agent-systems source in the Cemini research corpus
 - @sources/3-26-d.md — LLM agent-systems source in the Cemini research corpus

@@ -34,9 +34,10 @@ related:
   - sources/gemini-dr-wave3-link-eval-2026-04-28.md
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - sources/mit-quant-bible.md
+  - sources/arxiv-deep-hedging-delta-corrections-2605.21696.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-16
+updated: 2026-05-30
 ---
 
 ## Relations
@@ -46,6 +47,7 @@ updated: 2026-05-16
 - @sources/3-19-trading-options-data-research.md — Options & Derivatives source in the Cemini research corpus
 - @sources/autonomous-ai-agents-for-option-hedging.md — deep-read 2026-05-16; shortfall-aware RL (QLBS/RLOP) option hedging benchmarked against Black-Scholes / jump-diffusion / Heston; IVRMSE shown to be a weak proxy for after-cost hedging quality
 - @sources/deep-hedging-with-reinforcement-learning.md — deep-read 2026-05-16; RL actor-critic (GAE) overlay hedging equity-index option exposure using option-surface + macro state features
+- @sources/arxiv-deep-hedging-delta-corrections-2605.21696.md — K87: TD3 delta haircut vs daily BS; downside-shortfall reward; symbolic distillation; 2022 regime fragility
 - @sources/3-26-blog-re-2.md — Options & Derivatives source in the Cemini research corpus
 - @sources/3-29-research-5.md — Options & Derivatives source in the Cemini research corpus
 - @sources/4-14-re.md — Options & Derivatives source in the Cemini research corpus

@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-05-30] ingest K87 | Tier-2 arXiv sweep — GRPO/LOB + agentic-trading audit + RMATS + deep hedging
+
+Tier-2 sweep `@sweeps/2026-05-30.md` — user approved all four Tier-A/B candidates.
+
+- **4 sources** — `arxiv-grpo-lob-hft-trading-2605.25527.md`, `arxiv-agentic-trading-survey-2605.19337.md`, `arxiv-rmats-geopolitical-multi-agent-2605.25311.md`, `arxiv-deep-hedging-delta-corrections-2605.21696.md`
+- **7 concept/source pages updated** — `rl-marl-research`, `market-microstructure`, `options-derivatives`, `portfolio-strategy`, `marl-trading-architecture`, `llm-agent-systems`, `regime-conditioned-evaluation`; backlinks on `tradingagents`, `deep-hedging-with-reinforcement-learning`
+- **Raw PDFs** → `cemini-librarian:/opt/cemini-bulk/research/` (4 files)
+- **Brief staged** — `briefs/2026-05-30_k87-arxiv-sweep-trading-rl-audit-cemini.md`
+- **Sweep report** — rubric table appended to `wiki/sweeps/2026-05-30.md`
+
 ## [2026-05-30] ship | World Cup Bot Phase C auto dual-leg exec
 
 - **world-cup-bot** — `10d9d1e`: `cross-venue-exec` CLI (attempt/orphans/resolve-orphan), Kalshi RSA orders + PM hedge client, pilot caps (`auto_arb:`), orphan cancel path; **`WC_CROSS_VENUE_AUTO_EXEC=0`** default; logic **`wc_cross_venue_exec_v1`**; **164 pytest**

@@ -67,10 +67,11 @@ related:
   - concepts/agent-authorization-stack.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - concepts/prediction-market-statistical-arbitrage.md
+  - sources/arxiv-grpo-lob-hft-trading-2605.25527.md
 maturity: draft
 hub: true
 created: 2026-04-27
-updated: 2026-05-18
+updated: 2026-05-30
 ---
 
 ## Relations
@@ -123,6 +124,7 @@ updated: 2026-05-18
 - @sources/kalshi1-3-29.md — Market Microstructure source in the Cemini research corpus
 - @concepts/parlay-market-making.md — K24 promotion: correlation-aware AMM for parlay joint-contract pricing (Ising model + shadow trades + composite-likelihood SGD)
 - @sources/polymarket-microstructure-anatomy-2604.24366.md — Polymarket microstructure anatomy; definitive cross-sectional tick-level study
+- @sources/arxiv-grpo-lob-hft-trading-2605.25527.md — K87: OFI-feature directional RL on LOB; GRPO/GSPO vs PPO/Q-learning (AAPL/AMZN/GOOG)
 - @sources/polymarket-nba-arbitrage-2605.00864.md — Polymarket NBA combinatorial arb; 75M snapshots, 7 single-market arbs, 290 combinatorial (depth-capped at ~14.8 shares)
 - @concepts/polymarket-microstructure-findings.md — distilled findings from Dubach 2026 for Cemini consumption
 - @sources/market-microstructure-and-liquidity-analysis-of-qqq-etf-on-2024-08-01.md — Market Microstructure source in the Cemini research corpus

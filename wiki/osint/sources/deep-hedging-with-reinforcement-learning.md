@@ -6,16 +6,18 @@ keywords: [deep-hedging, reinforcement-learning, actor-critic, GAE, option-overl
 related:
   - concepts/rl-marl-research.md
   - concepts/options-derivatives.md
+  - sources/arxiv-deep-hedging-delta-corrections-2605.21696.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-27
-updated: 2026-05-16
+updated: 2026-05-30
 ---
 
 ## Relations
 
 - @concepts/rl-marl-research.md — cluster hub for RL/MARL research in the Cemini corpus
 - @concepts/options-derivatives.md — RL deep-hedging applied to equity-index option exposure; option-surface features (ATM IV, term-structure slope, 25-delta skew) used as state
+- @sources/arxiv-deep-hedging-delta-corrections-2605.21696.md — K87 peer: TD3 delta haircut interpretability + regime fragility vs this paper's GAE overlay framing
 
 ## Raw Concept
 
