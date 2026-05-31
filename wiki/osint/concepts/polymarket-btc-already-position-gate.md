@@ -11,6 +11,7 @@ related:
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
   - concepts/polymarket-updown-bot-taxonomy.md
+  - concepts/polymarket-updown-indicator-stack.md
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-updown-15min-execution-latency.md
 maturity: draft

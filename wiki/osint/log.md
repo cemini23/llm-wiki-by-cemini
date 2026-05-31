@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-05-31] ingest | K88 — v5 multi-wiki eval (29 URLs) + Posts.docx (42 posts)
+
+**Sources:** 2× docx from `research to be indexed/` → `cemini-librarian:/opt/cemini-bulk/research/`
+
+- **2 sources** — `multi-wiki-tool-eval-v5-k88-2026-05-31.md`, `trading-posts-compilation-42-2026-05-31.md`
+- **6 entity stubs** — SkillSpector, OpenOSINT, Webwright, Skill_Seekers, book-to-skill, SkillNet
+- **3 concepts** — polymarket-negative-filter-trading, polymarket-updown-indicator-stack, hyperliquid-agent-trading
+- **4 updated** — finance-skills (MIT overturn), polymarket-bot-architecture, hyperliquid platform, index
+- **License spot-check** — 5/12 Gemini NO LICENSE rows overturned via `gh api`; finance-skills Reject overturned
+- **SEO style-pass** — K88 Posts → `@seo-wiki/concepts/x-account-voice-and-format.md` + seo log
+- **Prod brief** — `briefs/2026-05-31_k88-multi-wiki-posts-cemini.md` → `cemini-prod:/opt/cemini/briefs/`
+- **Phase-0 queue** — SkillSpector, OpenOSINT
+
 ## [2026-05-30] ingest K87 | Tier-2 arXiv sweep — GRPO/LOB + agentic-trading audit + RMATS + deep hedging
 
 Tier-2 sweep `@sweeps/2026-05-30.md` — user approved all four Tier-A/B candidates.

@@ -1,21 +1,24 @@
 ---
 title: "finance-skills (himself65) — Agent Skills for Financial Analysis"
 type: entity
-tags: [tool, steal-and-adopt, agent-skills, finance, yfinance, social-intelligence, generative-ui, adopted, license-blocker]
+tags: [tool, steal-and-adopt, agent-skills, finance, yfinance, social-intelligence, generative-ui, adopted]
 keywords: [finance-skills, Agent Skills, yfinance, Funda AI, Adanos, Telegram, Twitter, Discord, generative UI, market data]
 related:
   - sources/evaluating-code-for-trading-stacks.md
+  - sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md
+  - sources/trading-posts-compilation-42-2026-05-31.md
   - concepts/tool-evaluation-framework.md
   - concepts/declarative-data-labeling-skills.md
 maturity: validated
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-05-31
 laptop_install: VERIFIED 2026-05-10 — 6 plugins / 24 skills via `npx plugins add himself65/finance-skills --target claude-code --scope user -y`. Marketplace registered at `~/.claude/plugins/marketplaces/finance-skills`. All 6 enabled in `~/.claude/settings.json`. Requires Claude Code restart to load skills.
 upstream_issue: https://github.com/himself65/finance-skills/issues/64 (LICENSE missing despite README MIT claim — filed 2026-05-10)
 ---
 
 ## Relations
 - `@sources/evaluating-code-for-trading-stacks.md` — source evaluation brief (URL 15)
+- `@sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md` — Gemini Reject overturned; MIT on GitHub API 2026-05-31
 - `@concepts/declarative-data-labeling-skills.md` — Agent Skills pattern relevant here
 
 ## Raw Concept
@@ -23,7 +26,7 @@ upstream_issue: https://github.com/himself65/finance-skills/issues/64 (LICENSE m
 TypeScript monorepo implementing the open Agent Skills standard for financial analysis. Plugins query live market data (yfinance, Funda AI), execute sentiment analysis (Adanos API), monitor Telegram/Twitter/Discord social intelligence. Renders interactive Generative UI widgets in compatible chat interfaces.
 
 - **Repo**: `github.com/himself65/finance-skills`
-- **License**: **UNLICENSED [VERIFIED 2026-05-10 via Phase-0 audit]** — README claims MIT but no LICENSE file exists in repo; GitHub API reports `"license": null`. Under default copyright, code is "all rights reserved" — not safely extractable for Cemini prod re-implementation without upstream clarification. Laptop-as-tool use lower risk under monetization-priority stance.
+- **License**: **MIT `[CONFIRMED 2026-05-31]`** — GitHub API `license.spdx_id=MIT` (K88 spot-check). Prior K36 blocker (no LICENSE file, issue #64) appears resolved; verify LICENSE file in repo before prod embedding.
 - **Install paths** (Phase-0 verified 2026-05-10):
   - Author's wrapper CLI: `npx plugins add himself65/finance-skills` (installs all 6 plugins) or `--plugin <name>` for one
   - Native Claude Code (no Claude restart required if marketplace API is reachable): `/plugin marketplace add himself65/finance-skills` then `/plugin install <name>@finance-skills` for each of 6: finance-market-analysis, finance-social-readers, finance-data-providers, finance-startup-tools, finance-ui-tools, finance-skill-creator

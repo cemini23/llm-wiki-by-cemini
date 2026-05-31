@@ -13,6 +13,7 @@ related:
   - concepts/market-memory-hurst-regime.md
   - concepts/polymarket-updown-15min-execution-latency.md
   - sources/trading-posts-compilation-k84-2026-05-30.md
+  - sources/trading-posts-compilation-42-2026-05-31.md
   - concepts/polymarket-copy-trading-strategy.md
   - concepts/polymarket-btc-already-position-gate.md
   - concepts/reverse-quant-engineering-public-filings.md

@@ -15,9 +15,11 @@ related:
   - concepts/perps-dex-funding-carry-strategy.md
   - entities/tools/hl-funding-sniper.md
   - sources/trading-posts-compilation-25-2026-05-27.md
+  - sources/trading-posts-compilation-42-2026-05-31.md
+  - concepts/hyperliquid-agent-trading.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-27
+updated: 2026-05-31
 ---
 
 ## Relations

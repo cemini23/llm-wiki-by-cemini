@@ -54,6 +54,9 @@ related:
   - concepts/polymarket-news-resolution-speed-game.md
   - sources/trading-posts-compilation-20-2026-05-27.md
   - sources/trading-posts-compilation-k84-2026-05-30.md
+  - sources/trading-posts-compilation-42-2026-05-31.md
+  - concepts/polymarket-negative-filter-trading.md
+  - concepts/polymarket-updown-indicator-stack.md
   - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
   - concepts/production-trading-blind-spots.md
@@ -84,7 +87,8 @@ updated: 2026-05-29
 - `@sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md` — K55 source; @morpphhhaw perps-funding-carry bot independently corroborates the "infrastructure-first / failed-open-on-one-leg = first-class risk event" lessons
 - `@sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md` — K55 source; @Gustafssonkotte Polymarket BTC bot adds the broken-data + multi-module conflict-detector lessons (fourth independent operator confirmation)
 - `@concepts/polymarket-lp-rewards-farming.md` — K55: the *maker-side* yield strategy on Polymarket; complement to this taker-side bot architecture
-- `@concepts/multi-module-bot-conflict-detector-pattern.md` — K55: the multi-signal-synthesis pattern (`spread > THRESHOLD → SKIP`) is a structural addition to this playbook
+- `@sources/trading-posts-compilation-42-2026-05-31.md` — K88 @myttle_web3 negative-filter + @DankoWeb3 indicator stack
+- `@concepts/polymarket-negative-filter-trading.md` — skip-before-speed pattern
 - `@concepts/perps-dex-funding-carry-strategy.md` — K55: portable failure-mode lessons from cross-venue perps strategies; same "execution > strategy" thesis
 - `@concepts/production-trading-blind-spots.md` — K75: operational checklist including phantom-WIN and reconciliation rows from this playbook
 - `@concepts/pnl-attribution-versioning.md` — K75: prod `logic_version` pattern generalizes CSV-as-truth lesson

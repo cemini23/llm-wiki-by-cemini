@@ -14,9 +14,11 @@ related:
   - sources/trading-posts-compilation-20-2026-05-27.md
   - concepts/cemini-repository-topology.md
   - concepts/declarative-data-labeling-skills.md
+  - entities/tools/skill-seekers.md
+  - entities/tools/skillnet.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-29
+updated: 2026-05-31
 ---
 
 ## Relations

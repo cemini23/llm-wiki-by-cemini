@@ -1447,11 +1447,25 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [SIA — harness + weight self-improvement (arXiv:2605.27276)](sources/sia-self-improving-ai-harness-weight-updates-2026-05-30.md) — `[DRAFT 2026-05-30]` Hexo Labs unified self-improvement loop. — source, arxiv, harness-engineering, k84
 - [AI for Trading Strategies (Jevtic ZHAW 2022)](sources/ai-for-trading-strategies-jevtic-zhaw-2022.md) — `[DRAFT 2026-05-30]` ML vs ARMA-GARCH on crude oil by regime. — source, academic, k84
 - [Gemini DR — WC LP team safety (Spain/Brazil/Morocco)](sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md) — `[DRAFT 2026-05-30]` skip/reduce/human_review; time-volatile pre-Cup. — source, gemini, world-cup, lp-safety, k84
+- [Multi-wiki tool eval v5 K88 (29 URLs)](sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md) — `[DRAFT 2026-05-31]` SkillSpector, OpenOSINT, Webwright; finance-skills MIT overturn. — source, tool-eval, k88
+- [Trading posts K88 (Posts.docx, 42 posts)](sources/trading-posts-compilation-42-2026-05-31.md) — `[DRAFT 2026-05-31]` PM negative-filter, UP/DOWN indicators, HL agent ops. — source, trading-posts, k88
 - [Multi-wiki tool eval v4 K84 (24 URLs)](sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md) — `[DRAFT 2026-05-30]` License false negatives; PageIndex Adopt overturned. — source, tool-eval, k84
 - [Trading posts K84 (Posts.docx)](sources/trading-posts-compilation-k84-2026-05-30.md) — `[DRAFT 2026-05-30]` @0xPhilanthrop stack, @polybacktest, Codex harness posts. — source, trading-posts, k84
 - [SkillOpt controllable skill optimizer](concepts/skillopt-controllable-skill-optimizer.md) — `[DRAFT 2026-05-30]` — concept, agent-skills, k84
 - [SIA unified harness/weight loop](concepts/sia-unified-harness-weight-self-improvement.md) — `[DRAFT 2026-05-30]` — concept, self-improving-agents, k84
 - [Cemini workflow tooling audit](concepts/cemini-workflow-tooling-audit-2026-05-30.md) — `[DRAFT 2026-05-30]` Obsidian/n8n/MCP gap map + v5 prompt need. — concept, workflow, audit, k84
+
+#### K88 ingest (2026-05-31 — v5 tool eval + Posts.docx 42)
+
+- [NVIDIA SkillSpector](entities/tools/nvidia-skillspector.md) — `[DRAFT 2026-05-31]` K88 Adopt-candidate; skill supply-chain scanner. — tool, cybersec, k88
+- [OpenOSINT dashboard](entities/tools/openosint.md) — `[DRAFT 2026-05-31]` K88 Adopt-candidate; geospatial OSINT map. — tool, osint, k88
+- [Microsoft Webwright](entities/tools/microsoft-webwright.md) — `[DRAFT 2026-05-31]` K88 Adopt; browser harness (CCC-primary). — tool, browser, k88
+- [Skill_Seekers](entities/tools/skill-seekers.md) — `[DRAFT 2026-05-31]` K88 Adopt; doc→skill converter. — tool, skills, k88
+- [book-to-skill](entities/tools/book-to-skill.md) — `[DRAFT 2026-05-31]` K88 Adopt. — tool, skills, k88
+- [SkillNet (zjunlp)](entities/tools/skillnet.md) — `[DRAFT 2026-05-31]` K88 Adopt. — tool, skills, k88
+- [Polymarket negative-filter trading](concepts/polymarket-negative-filter-trading.md) — `[DRAFT 2026-05-31]` @myttle_web3 K88. — concept, polymarket, k88
+- [Polymarket UP/DOWN indicator stack](concepts/polymarket-updown-indicator-stack.md) — `[DRAFT 2026-05-31]` @DankoWeb3 K88. — concept, polymarket, k88
+- [Hyperliquid agent self-tuning](concepts/hyperliquid-agent-trading.md) — `[DRAFT 2026-05-31]` @betashop K88. — concept, hyperliquid, k88
 
 #### K87 ingest (2026-05-30 — Tier-2 arXiv sweep: GRPO/LOB + agentic-trading audit + RMATS + deep hedging)
 

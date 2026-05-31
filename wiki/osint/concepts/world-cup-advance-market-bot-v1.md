@@ -24,6 +24,7 @@ related:
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/polymarket-sports-microstructure-bot-taxonomy.md
+  - concepts/polymarket-negative-filter-trading.md
   - entities/infrastructure/cemini-egress-fi.md
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/polymarket-clob-api.md

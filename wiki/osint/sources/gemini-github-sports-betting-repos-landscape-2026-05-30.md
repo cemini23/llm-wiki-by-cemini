@@ -11,6 +11,7 @@ related:
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/production-trading-blind-spots.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
+  - entities/tools/skillnet.md
 maturity: validated
 created: 2026-05-30
 updated: 2026-05-30

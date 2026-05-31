@@ -13,6 +13,7 @@ related:
   - entities/tools/polymarket-agents.md
   - entities/tools/n8n-workflows.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
+  - sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-30

@@ -9,6 +9,7 @@ related:
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - concepts/polymarket-bot-architecture.md
   - sources/trading-posts-compilation-k84-2026-05-30.md
+  - sources/trading-posts-compilation-42-2026-05-31.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/polymarket-updown-bot-taxonomy.md
   - concepts/non-latency-arbitrage-strategies.md

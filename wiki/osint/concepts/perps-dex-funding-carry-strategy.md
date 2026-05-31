@@ -16,6 +16,7 @@ related:
   - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
   - concepts/pnl-attribution-versioning.md
   - concepts/production-trading-blind-spots.md
+  - concepts/hyperliquid-agent-trading.md
 maturity: validated
 created: 2026-05-20
 updated: 2026-05-28

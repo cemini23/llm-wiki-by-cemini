@@ -6,6 +6,7 @@ keywords: [0xphilanthrop, coinman2, polybacktest, ziwenxu, codex-goal, polymarke
 related:
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - sources/trading-posts-compilation-38-2026-05-26.md
+  - sources/trading-posts-compilation-42-2026-05-31.md
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-lp-rewards-farming.md
   - entities/tools/polymarket-agents.md
@@ -23,6 +24,7 @@ clusters: [polymarket, trading-posts, agent-harness]
 ## Relations
 
 - @sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md — prior `Posts.docx` filename (K64); different post set
+- @sources/trading-posts-compilation-42-2026-05-31.md — successor K88 batch (42 posts, May 31)
 - @concepts/polymarket-bot-architecture.md — @0xPhilanthrop stack map extends operator taxonomy
 - @entities/tools/polymarket-agents.md — official agent framework cited in stack post
 - @seo-wiki/concepts/x-account-voice-and-format.md — K84 Posts.docx style pass (exemplar table + Article beats)
