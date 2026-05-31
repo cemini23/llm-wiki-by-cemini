@@ -1,5 +1,9 @@
 # Wiki Log
 
+## [2026-05-31] ship | World Cup Bot prod pull — knowledge audit @ 3d1f045
+
+- **Prod brief** — `briefs/2026-05-31_wc-prod-knowledge-audit-pull.md` → `/opt/cemini/briefs/` (pull `negative_filter_summary` + `venue-reconcile`; router/Phase C flags unchanged)
+
 ## [2026-05-31] fix | K89 stash MCP client on prod
 
 - **Problem:** Wave 4 `stash_remember.py` + `wiki_enforcement._stash_recall` hit REST `/api/v1/*` on `:9090` — 404 (metrics-only)

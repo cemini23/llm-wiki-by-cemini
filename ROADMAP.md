@@ -23,7 +23,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 ## Current state (2026-05-30 — World Cup Bot)
 
 - **Build + automation (2026-05-31)** — [cemini23/world-cup-bot](https://github.com/cemini23/world-cup-bot) main (post knowledge audit). **K88/K89 audit:** negative-filter telemetry + venue CSV reconcile shipped. **167 pytest**.
-- **Prod briefs (2026-05-30–31)** — deploy, PR3 reconcile, Phase C exec; **`2026-05-31_world-cup-bot-knowledge-audit.md`** (OSS gaps closed)
+- **Prod briefs (2026-05-30–31)** — deploy, PR3 reconcile, Phase C exec; **`2026-05-31_wc-prod-knowledge-audit-pull.md`** (pull @ `3d1f045`)
 - **Next:** SHADOW Phase 1 soak; LP safety DR **2026-06-06**; K89 Wave 3b wiki enforcement on prod WC executors
 
 ## Current state (2026-05-29 — K83)
