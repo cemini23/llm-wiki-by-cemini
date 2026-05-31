@@ -6937,3 +6937,17 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - Report → `.local/reports/autots-laptop-benchmark-2026-05-30.md`
 - Updated `@meta/internal-benchmark-deployment-map.md` task routing row
 - **Prod brief** — `briefs/2026-05-30_autots-laptop-benchmark-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit WARN 88/100)
+
+## [2026-05-31] federation | gambling-wiki bootstrap
+
+- New public repo **Gambling-wiki** → `../projects/Gambling wiki/` (alias `gambling-wiki`)
+- 29 seed pages: sports betting, casino, poker, DFS, best ball, PM retail crossover
+- `@concepts/gambling-wiki-federation.md` — routing hub; backlinks on Kelly + FLB
+- `CLAUDE.md` Related Wikis table + librarian rsync path updated
+- GitHub: https://github.com/cemini23/Gambling-wiki
+
+## [2026-05-31] docs | gambling-wiki + v6 multi-wiki eval prompt
+
+- **v6 eval prompt** — `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v6-2026-05-31.md` (8 surfaces; gambling-wiki surface 3)
+- **Federation docs** — `docs/wiki-federation-snippet.md`, all README + CLAUDE Related Wikis tables, `sync_wiki_to_librarian.sh`
+- Updated: CCC `deep-research-evaluation-prompt.md`, `cross-wiki-routing.md`, OSINT `tool-evaluation-framework.md`, `gambling-wiki-federation.md`

@@ -1455,6 +1455,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [SIA unified harness/weight loop](concepts/sia-unified-harness-weight-self-improvement.md) — `[DRAFT 2026-05-30]` — concept, self-improving-agents, k84
 - [Cemini workflow tooling audit](concepts/cemini-workflow-tooling-audit-2026-05-30.md) — `[DRAFT 2026-05-30]` Obsidian/n8n/MCP gap map + v5 prompt need. — concept, workflow, audit, k84
 - [Cemini wiki ingest workflow](concepts/cemini-wiki-ingest-workflow.md) — `[CORE 2026-05-31]` Four-phase discovery→ingest pipeline (daily digest, inbox watch, ingest skill, human gates). — concept, workflow, automation, k90
+- [Gambling wiki federation](concepts/gambling-wiki-federation.md) — `[VALIDATED 2026-05-31]` Cross-wiki hub for public `@gambling-wiki` (sports betting, casino, DFS); osint-wiki keeps PM bots/CeminiSuite. — concept, federation, gambling-wiki
 
 #### K89 knowledge-application audit (2026-05-31)
 

@@ -31,6 +31,7 @@ WIKIS=(
   "/Users/claudiobarone/Desktop/projects/3d printing/wiki/|3d-printing-wiki/wiki/"
   "/Users/claudiobarone/Desktop/projects/SEO:GEO B&M Business/wiki/|seo-geo-wiki/wiki/"
   "/Users/claudiobarone/Desktop/projects/Cybersecurity wiki/wiki/|cybersecurity-wiki/wiki/"
+  "/Users/claudiobarone/Desktop/projects/Gambling wiki/wiki/|gambling-wiki/wiki/"
 )
 
 # Ensure log dir exists (macOS user logs)

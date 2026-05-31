@@ -103,7 +103,7 @@ v4 multi-wiki eval prompt (frozen in `Cemini claude code CCC/prompts/deep-resear
 - **Phase-0 NO-GO registry** (PageIndex, SwarmVault, …)
 - Inline **`gh api` license step**
 
-→ Draft **v5** before next tool-eval drop (see `Cemini claude code CCC/prompts/deep-research-multi-wiki-eval-v5-2026-05-30.md`).
+→ **v6** is current for new tool-eval drops (`@ccc-wiki/concepts/deep-research-evaluation-prompt.md`; adds `gambling-wiki` surface 3). v5 frozen for K88 reproducibility.
 
 ## Adopted (2026-05-30 — gaps closed 2026-05-30 PM)
 
@@ -119,7 +119,7 @@ v4 multi-wiki eval prompt (frozen in `Cemini claude code CCC/prompts/deep-resear
 | claude-obsidian /save | **Live** | Adapted in `cemini-wiki-graph` skill (git canon, no second vault) |
 | NotebookLM on briefs | **Live** | `notebooklm_export_brief.sh` + existing bridge skill |
 | Canvas LP matrix | **Live** | `wc-lp-safety-k84.canvas.tsx` for Issue 3 prep |
-| v5 eval prompt | **Live** | CCC `prompts/deep-research-multi-wiki-eval-v5-2026-05-30.md` |
+| v6 eval prompt | **Live** | CCC `prompts/deep-research-multi-wiki-eval-v6-2026-05-31.md` (8 surfaces incl. gambling-wiki) |
 | stash decisions | **Live** | K84 adoption episode in `/projects/osint-workspace` |
 | mem-search before re-Adopt | **Live** | `.cursor/rules/osint-workflow-operators.mdc` |
 | n8n host | **Script equivalent** | Script-first automations cover inbox/sync/license/gap/LP cadences; AI-BOM → license + pre-commit secrets |

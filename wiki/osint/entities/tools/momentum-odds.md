@@ -9,9 +9,10 @@ related:
   - concepts/polymarket-copy-trading-strategy.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
+  - concepts/gambling-wiki-federation.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-05-31
 ---
 
 ## Relations

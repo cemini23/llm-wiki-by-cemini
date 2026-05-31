@@ -17,6 +17,7 @@ related:
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/sports-prediction-consensus-agent.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/gambling-wiki-federation.md
 
 maturity: validated
 created: 2026-05-13
@@ -31,6 +32,7 @@ updated: 2026-05-20
 - @concepts/shannon-entropy-kl-divergence-prediction-markets.md — applies quarter-Kelly to KL-bits-sized signal
 - @concepts/taleb-fat-tails-barbell-prediction-markets.md — applies quarter-Kelly inside both buckets of the barbell
 - @concepts/polymarket-bot-architecture.md — "capital preservation > perfect entries" explicit principle
+- @concepts/gambling-wiki-federation.md — general Kelly theory in @gambling-wiki/concepts/kelly-criterion-betting.md
 
 ## Raw Concept
 

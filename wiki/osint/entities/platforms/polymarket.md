@@ -95,10 +95,11 @@ related:
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/gemini-world-cup-market-structure-research-2026-05-29.md
   - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
+  - concepts/gambling-wiki-federation.md
 
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-29
+updated: 2026-05-31
 ---
 
 ## Relations

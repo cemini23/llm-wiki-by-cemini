@@ -10,6 +10,7 @@ related:
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - concepts/non-latency-arbitrage-strategies.md
   - entities/tools/prediction-market-analysis.md
+  - concepts/gambling-wiki-federation.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-05-18
@@ -22,6 +23,7 @@ updated: 2026-05-18
 - @entities/platforms/polymarket.md
 - @concepts/non-latency-arbitrage-strategies.md — FLB's structural mispricing is one source of the standing inconsistencies that non-latency arb harvests
 - @entities/tools/prediction-market-analysis.md — its Polymarket/Kalshi trade dataset ships ready-made FLB analyses (`win_rate_by_price`, `mispricing_by_price`, `longshot_volume_share_over_time`) — an empirical substrate for measuring FLB on real data
+- @gambling-wiki/concepts/favorite-longshot-bias.md — general FLB theory + sportsbook angle
 
 ## Raw Concept
 

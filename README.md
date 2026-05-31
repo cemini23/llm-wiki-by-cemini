@@ -91,11 +91,12 @@ scripts/sync_wiki_to_librarian.sh
 
 ## Cemini wiki federation
 
-**Six** interlinked markdown wikis plus the **Cemini Financial Suite** trading stack. Page bodies use `@<alias>/path/to/page.md` (aliases in `CLAUDE.md` → Related Wikis).
+**Seven** interlinked markdown wikis plus the **Cemini Financial Suite** trading stack. Page bodies use `@<alias>/path/to/page.md` (aliases in `CLAUDE.md` → Related Wikis).
 
 | Alias | Repository | Visibility | Focus |
 |-------|------------|------------|--------|
-| **`osint-wiki`** | **This repo** (`llm-wiki-by-cemini`) | **Private** | Financial / quant / prediction markets; librarian kb-server; CeminiSuite briefs |
+| **`osint-wiki`** | **This repo** (`llm-wiki-by-cemini`) | **Private** | Financial / quant / prediction-market automation; librarian kb-server; CeminiSuite briefs |
+| `gambling-wiki` | [Gambling-wiki](https://github.com/cemini23/Gambling-wiki) | **Public** | Sports betting, casino, poker, DFS, best ball; PM retail strategy |
 | `ccc-wiki` | [cemini-claude-code-CCC](https://github.com/cemini23/cemini-claude-code-CCC) | **Public** | Cursor / Claude Code meta-wiki — MCP, skills, conductor, eval prompts |
 | `image-gen-wiki` | [uncensored-image-gen-wiki](https://github.com/cemini23/uncensored-image-gen-wiki) | Public | Image / video / voice generation, persona ops |
 | `seo-wiki` | [SEO-GEO-B-M-Wiki](https://github.com/cemini23/SEO-GEO-B-M-Wiki) | Public | Local SEO, GBP, GEO/AEO, creator marketing |
@@ -103,9 +104,11 @@ scripts/sync_wiki_to_librarian.sh
 | `cybersecurity-wiki` | [Cybersecurity-wiki](https://github.com/cemini23/Cybersecurity-wiki) | Public | Pentest, red team, SOC, certifications |
 | *Cemini Financial Suite* | Private trading stack (`Cemini-Financial-Suite`; not a wiki) | **Private** | Production `/opt/cemini` — read-only from this workspace |
 
-**Privacy:** This OSINT wiki and the financial suite are **private** (no public distribution of research canon or prod credentials). **`ccc-wiki`** and the four domain wikis are **public** on GitHub. Do not commit `.local/`, `briefs/`, or `hot.md`.
+**Privacy:** This OSINT wiki and the financial suite are **private**. **`ccc-wiki`** and the **five public domain wikis** (including `gambling-wiki`) are on GitHub. Do not commit `.local/`, `briefs/`, or `hot.md`.
 
-**Sync:** `scripts/sync_wiki_to_librarian.sh` (hourly cron + post-commit) rsyncs `osint-wiki`, `ccc-wiki`, `image-gen-wiki`, `seo-wiki`, `3d-printing-wiki`, and `cybersecurity-wiki` to `cemini-librarian:/opt/cemini-wiki/<alias>/wiki/`.
+**Sync:** `scripts/sync_wiki_to_librarian.sh` (hourly cron + post-commit) rsyncs all seven wikis to `cemini-librarian:/opt/cemini-wiki/<alias>/wiki/`.
+
+**Eval prompt:** `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v6-2026-05-31.md` (eight surfaces; `gambling-wiki` = surface 3).
 
 ## Cemini media
 

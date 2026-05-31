@@ -57,9 +57,10 @@ related:
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/world-cup-tournament-phases-lp-strategy.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
+  - concepts/gambling-wiki-federation.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-29
+updated: 2026-05-31
 ---
 
 ## Relations

@@ -398,9 +398,10 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 | `seo-wiki` | `../projects/SEO:GEO B&M Business/wiki/` | Public | Local SEO, GBP optimization, GEO/AEO, web design, social media, creator marketing |
 | `3d-printing-wiki` | `../projects/3d printing/wiki/` | Public | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |
 | `cybersecurity-wiki` | `../projects/Cybersecurity wiki/wiki/` | Public | Cybersecurity research — offensive security (pentest / red team / bug bounty / exploit dev), defensive operations (SOC / IR / threat hunting), certifications + careers, threat actors. Shared territory: OSINT tradecraft + investigative methodology |
+| `gambling-wiki` | `../projects/Gambling wiki/wiki/` | **Public** | Sports betting, casino, poker, DFS, best ball, prediction-market wagering (retail/strategy). Shared territory: Kelly, FLB, Kalshi/Polymarket cross-venue — osint-wiki owns bots/CeminiSuite |
 | `ccc-wiki` | `../projects/Cemini claude code CCC/wiki/` | **Public** | Cursor + Claude Code meta-wiki — workflow, subagents, MCP/conductor, hooks, skills, slash commands, /goal · Ralph · OpenSpec. Shared territory: agent orchestration, conductor/librarian architecture, skill audits |
 
-**Private (not public federation deliverables):** `osint-wiki`, **Cemini Financial Suite** (`../projects/CeminiSuite`). **Public on GitHub:** `ccc-wiki` and the four domain wikis. See root `README.md` for repo URLs.
+**Private (not public federation deliverables):** `osint-wiki`, **Cemini Financial Suite** (`../projects/CeminiSuite`). **Public on GitHub:** `ccc-wiki` and the five domain wikis (including `gambling-wiki`). See root `README.md` for repo URLs.
 
 ### Cross-wiki link syntax
 
@@ -410,10 +411,11 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 
 ### Using the conductor/librarian for unified search
 
-The OSINT workspace includes a **conductor** (MCP server that routes queries) + **librarian** (kb-server that serves wikis). To query across all four wikis:
+The OSINT workspace includes a **conductor** (MCP server that routes queries) + **librarian** (kb-server that serves wikis). To query across all wikis:
 1. Sync all wikis to the librarian:
    - `rsync -avz /Users/claudiobarone/Desktop/projects/Image\ gen/wiki/ cemini-librarian:/opt/cemini-wiki/image-gen-wiki/wiki/`
    - `rsync -avz "/Users/claudiobarone/Desktop/projects/SEO:GEO B&M Business/wiki/" cemini-librarian:/opt/cemini-wiki/seo-geo-wiki/wiki/`
+   - `rsync -avz "/Users/claudiobarone/Desktop/projects/Gambling wiki/wiki/" cemini-librarian:/opt/cemini-wiki/gambling-wiki/wiki/`
 2. Run `kb ingest` on the librarian to reindex
 3. Use `conductor_query` tool (exposed via OSINT's `conductor/mcp_server.py`) to query across all wikis
 
