@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-05-31] phase-0 | K88 — SkillSpector + OpenOSINT
+
+- **SkillSpector** — clone audit `/tmp/ph0-skillspector/`; **CONDITIONAL-GO** — Apache-2.0, static `--no-llm` scan PASS (~1 s, kb-retriever SAFE); 228 MB venv; not on PyPI; Python 3.12+; OSV offline fallback confirmed in source
+- **OpenOSINT** — clone audit `/tmp/ph0-openosint/`; **NO-GO** — K88 eval misidentified product (AI recon MCP/REPL, not WebGL/GDELT dashboard); MIT + PyPI 2.18.0; duplicates Exa/brave recon paths
+- **Updated** — `entities/tools/nvidia-skillspector.md`, `entities/tools/openosint.md`, K88 source outcomes, `index.md`
+
 ## [2026-05-31] ingest | K88 — v5 multi-wiki eval (29 URLs) + Posts.docx (42 posts)
 
 **Sources:** 2× docx from `research to be indexed/` → `cemini-librarian:/opt/cemini-bulk/research/`
@@ -13,7 +19,6 @@
 - **Prod brief** — `briefs/2026-05-31_k88-multi-wiki-posts-cemini.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS 100/100)
 - **Adoption briefs staged** — local, librarian, egress (OSINT `briefs/`); CCC + cybersec + seo sibling `briefs/`
 - **Adoptions executed** — finance-skills LICENSE file confirmed; librarian wiki sync; egress posture verified unchanged
-- **Phase-0 queue** — SkillSpector, OpenOSINT
 
 ## [2026-05-30] ingest K87 | Tier-2 arXiv sweep — GRPO/LOB + agentic-trading audit + RMATS + deep hedging
 

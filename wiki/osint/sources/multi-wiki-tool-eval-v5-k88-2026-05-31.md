@@ -16,6 +16,19 @@ related:
   - entities/tools/finance-skills.md
   - entities/tools/book-to-skill.md
   - entities/tools/skillnet.md
+  - "@ccc-wiki/sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md"
+  - "@ccc-wiki/entities/tools/webwright.md"
+  - "@ccc-wiki/entities/tools/skill-seekers.md"
+  - "@ccc-wiki/entities/tools/book-to-skill.md"
+  - "@ccc-wiki/entities/tools/skillnet.md"
+  - "@ccc-wiki/entities/tools/cc-thinking-skills.md"
+  - "@ccc-wiki/entities/tools/claude-skill-registry.md"
+  - "@ccc-wiki/entities/tools/alirezarezvani-claude-skills.md"
+  - "@ccc-wiki/entities/tools/jezweb-claude-skills.md"
+  - "@ccc-wiki/entities/tools/ruflo.md"
+  - "@ccc-wiki/concepts/karpathy-agent-infrastructure-basics.md"
+  - "@ccc-wiki/concepts/claude-code-subagent-templates.md"
+  - "@ccc-wiki/concepts/claude-harness-dynamic-workflows-k88.md"
 maturity: draft
 read_status: deep-read
 created: 2026-05-31
@@ -74,8 +87,8 @@ K88 v5 batch: agent skills registries, MCP bridges, OSINT dashboard, browser aut
 
 ### OSINT-priority outcomes
 
-1. **NVIDIA SkillSpector (Adopt)** — wire into `scripts/skill_audit.py` / preingest skill scanning; Phase-0 audit queued.
-2. **OpenOSINT (Adopt)** — Palantir-style OSINT dashboard; Phase-0 vs existing librarian/conductor stack.
+1. **NVIDIA SkillSpector (Adopt → CONDITIONAL-GO)** — Phase-0 complete 2026-05-31; wire static `--no-llm` into laptop preingest; see `@entities/tools/nvidia-skillspector.md`.
+2. **OpenOSINT (Adopt → NO-GO)** — Phase-0 overturn: eval misidentified product (AI recon MCP, not WebGL dashboard); see `@entities/tools/openosint.md`.
 3. **OpenWA (Steal-from)** — webhook/session patterns for world-cup-bot alert channel (module 6), not full gateway adopt.
 4. **stefan-jansen/MLFT (Steal-from)** — corroborates Wave-3 steal-from; strip-mine alpha factors only.
 5. **Graph-R1 (Reject)** — CC-BY-NC-SA 4.0 poison pill for IP-sale surfaces.

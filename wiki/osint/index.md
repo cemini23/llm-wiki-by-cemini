@@ -1457,8 +1457,8 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 
 #### K88 ingest (2026-05-31 — v5 tool eval + Posts.docx 42)
 
-- [NVIDIA SkillSpector](entities/tools/nvidia-skillspector.md) — `[DRAFT 2026-05-31]` K88 Adopt-candidate; skill supply-chain scanner. — tool, cybersec, k88
-- [OpenOSINT dashboard](entities/tools/openosint.md) — `[DRAFT 2026-05-31]` K88 Adopt-candidate; geospatial OSINT map. — tool, osint, k88
+- [NVIDIA SkillSpector](entities/tools/nvidia-skillspector.md) — `[VALIDATED 2026-05-31]` Phase-0 **CONDITIONAL-GO**; static skill supply-chain scanner. — tool, cybersec, k88
+- [OpenOSINT agent](entities/tools/openosint.md) — `[VALIDATED 2026-05-31]` Phase-0 **NO-GO** (eval product mismatch); AI recon MCP. — tool, osint, k88
 - [Microsoft Webwright](entities/tools/microsoft-webwright.md) — `[DRAFT 2026-05-31]` K88 Adopt; browser harness (CCC-primary). — tool, browser, k88
 - [Skill_Seekers](entities/tools/skill-seekers.md) — `[DRAFT 2026-05-31]` K88 Adopt; doc→skill converter. — tool, skills, k88
 - [book-to-skill](entities/tools/book-to-skill.md) — `[DRAFT 2026-05-31]` K88 Adopt. — tool, skills, k88
