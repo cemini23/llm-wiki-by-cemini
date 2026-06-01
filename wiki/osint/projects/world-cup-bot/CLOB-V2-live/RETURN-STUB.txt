@@ -1,0 +1,1 @@
+world-cup-bot CLOB V2 patch pack staged: briefs/out/world-cup-bot-clob-v2-2026-06-01/ @ 2026-06-01 — implement py-clob-client-v2 in cemini23/world-cup-bot then enable egress live-plan timer (see OPEN-GAPS.md)

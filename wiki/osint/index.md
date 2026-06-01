@@ -1603,6 +1603,7 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 - [World Cup Bot (repo)](projects/world-cup-bot/World Cup Bot.md) — Public MIT LP bot; architecture @ `17a6647` — `project`
 - [Architecture — World Cup Bot Overview](projects/world-cup-bot/Architecture/Architecture - Overview.md) — CLI + module flow @ `17a6647` — `architecture-overview`
 - [World Cup Bot — open gaps](projects/world-cup-bot/Architecture/OPEN-GAPS.md) — Shadow soak, router flags, DR cadence — `concept`
+- [World Cup Bot CLOB V2 live (index)](projects/world-cup-bot/CLOB-V2-live/Index.md) — `order_version_mismatch` patch pack @ `7054500` — `concept`
 
 ## How this index works
 

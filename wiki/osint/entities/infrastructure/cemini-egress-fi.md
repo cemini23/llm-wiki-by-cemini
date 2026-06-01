@@ -15,6 +15,7 @@ related:
   - entities/tools/hl-funding-sniper.md
   - concepts/trading-dashboard-api-wiring.md
   - concepts/world-cup-advance-market-bot-v1.md
+  - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - egress live layout.md
 maturity: draft
 created: 2026-05-19
 updated: 2026-05-29

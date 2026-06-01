@@ -41,6 +41,11 @@
 - **Closed** — exports CI sanitize script on repo; ROADMAP 189 tests; entity/index backlinks
 - **Still open** — SHADOW Phase 1 soak, LP DR 2026-06-06, phase-router prod flags — see OPEN-GAPS
 
+## [2026-06-01] ingest | World Cup Bot CLOB V2 handoff + implementation start
+
+- **Pull** — `scp` from `cemini-prod:/opt/cemini/briefs/out/world-cup-bot-clob-v2-2026-06-01/` → `wiki/projects/world-cup-bot/CLOB-V2-live/`
+- **world-cup-bot** — pushed `7054500`: py-clob-client-v2 migration; **196 pytest**
+
 ## [2026-06-01] ship | World Cup Bot prod pull — exports CI guard @ 36be032
 
 - **world-cup-bot** — pushed `36be032`: `check_exports_sanitize.py` in CI; **190 pytest**

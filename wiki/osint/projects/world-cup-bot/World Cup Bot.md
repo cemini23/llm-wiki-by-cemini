@@ -15,6 +15,11 @@ related:
   - projects/world-cup-bot/Architecture/Architecture - deploy.md
   - projects/world-cup-bot/Architecture/Architecture - Key decisions.md
   - projects/world-cup-bot/Architecture/OPEN-GAPS.md
+  - projects/world-cup-bot/CLOB-V2-live/Index.md
+  - projects/world-cup-bot/CLOB-V2-live/OPEN-GAPS.md
+  - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - CLOB V2 patch spec.md
+  - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - egress live layout.md
+  - projects/world-cup-bot/CLOB-V2-live/README.md
   - entities/tools/world-cup-bot.md
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/world-cup-tournament-phases-lp-strategy.md
@@ -50,8 +55,9 @@ Project hub for the **public MIT** repo `cemini23/world-cup-bot`: Polymarket FIF
 - [[projects/world-cup-bot/Architecture/Architecture - deploy|Architecture - deploy]]
 - [[projects/world-cup-bot/Architecture/Architecture - Key decisions|Architecture - Key decisions]]
 - [[projects/world-cup-bot/Architecture/OPEN-GAPS|OPEN-GAPS]]
+- [[projects/world-cup-bot/CLOB-V2-live/Index|CLOB V2 live handoff]] — `order_version_mismatch` patch spec (prod 2026-06-01)
 
 ## Recent activity
 
-- **2026-06-01** — `/obsidian-architect` first pass @ `17a6647`; Bugbot audit PR #2 closed; exports PII scrub shipped.
+- **2026-06-01** — CLOB V2 handoff ingested; `py-clob-client-v2` patch implemented (pending push).
 - **2026-06-01** — Prod brief `2026-06-01_wc-prod-bugbot-exports-pull.md` → `/opt/cemini/briefs/`.

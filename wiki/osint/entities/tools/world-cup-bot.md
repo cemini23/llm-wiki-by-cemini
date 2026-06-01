@@ -5,6 +5,9 @@ tags: [tool, polymarket, kalshi, world-cup-2026, lp-bot, open-source, cemini23, 
 keywords: [world-cup-bot, advance-to-knockout, conviction-lp, github, mit, outlier-weekly, calendar-guard, cross-venue-scanner, rewards-sync, shadow-status, liquidity-scanner]
 related:
   - projects/world-cup-bot/World Cup Bot.md
+  - projects/world-cup-bot/CLOB-V2-live/Index.md
+  - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - CLOB V2 patch spec.md
+  - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - egress live layout.md
   - projects/world-cup-bot/Architecture/Architecture - Overview.md
   - projects/world-cup-bot/Architecture/OPEN-GAPS.md
   - projects/world-cup-bot/Architecture/Architecture - Key decisions.md
