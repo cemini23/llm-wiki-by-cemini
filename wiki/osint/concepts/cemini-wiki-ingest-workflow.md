@@ -9,6 +9,7 @@ related:
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - concepts/cemini-knowledge-application-architecture.md
   - concepts/high-signal-paper-patterns.md
+  - projects/osint-workspace/Architecture/Architecture - wiki.md
 maturity: core
 created: 2026-05-31
 updated: 2026-06-01
@@ -20,6 +21,7 @@ updated: 2026-06-01
 - @meta/wiki-gap-detect-cadence.md — weekly Tier 1 gap report (linked from daily digest)
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — K84 gap map; Phase 1–4 closes inbox/n8n automation row
 - @concepts/cemini-knowledge-application-architecture.md — wiki→prod loop after ingest
+- @projects/osint-workspace/Architecture/Architecture - wiki.md — `wiki/` module map (catalog, lint, librarian sync)
 
 ## Raw Concept
 

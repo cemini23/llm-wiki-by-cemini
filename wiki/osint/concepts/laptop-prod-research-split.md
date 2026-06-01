@@ -11,9 +11,11 @@ related:
   - concepts/librarian-server-architecture.md
   - entities/infrastructure/cemini-egress-fi.md
   - concepts/cemini-repository-topology.md
+  - projects/osint-workspace/OSINT Workspace.md
+  - projects/osint-workspace/Architecture/Architecture - briefs.md
 maturity: validated
 created: 2026-05-23
-updated: 2026-05-28
+updated: 2026-06-01
 ---
 
 ## Relations
@@ -25,6 +27,8 @@ updated: 2026-05-28
 - @concepts/librarian-server-architecture.md — prod→librarian SSH via `10.0.0.2`
 - @entities/infrastructure/cemini-egress-fi.md — egress boundary (unchanged by this handoff)
 - @concepts/cemini-repository-topology.md — git/repo layout vs machine split (orthogonal concerns)
+- @projects/osint-workspace/OSINT Workspace.md — laptop repo where wiki + `briefs/` staging live
+- @projects/osint-workspace/Architecture/Architecture - briefs.md — gitignored briefs handoff to `/opt/cemini/briefs/`
 
 ## Raw Concept
 

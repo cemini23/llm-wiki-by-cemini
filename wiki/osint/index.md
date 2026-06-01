@@ -1586,6 +1586,13 @@ Librarian bookkeeping — index pages that cluster otherwise-orphaned source stu
 - [Corpus overflow — out-of-scope](concepts/corpus-overflow-out-of-scope.md) — Librarian "we looked, we passed" marker for source stubs that bootstrapped into the corpus but aren't aligned with any active Cemini research thread (currently 26: ML-systems infra, hardware accelerators, pure measure-theory math, extremal combinatorics, coding-interview prep, quantum-process RL, skyrmion-spintronics RL, traffic-signal MARL, clinical-trial biostatistics, gravitational-wave glitch ML, homelessness media-framing, multimodal IR, cryptographic binary RE, post-quantum-crypto policy, HLS hardware optimization, topology optimization, chemical-flowsheet generation, LoRa-network optimization, edge-device DNN inference, embodied navigation, sparse-retrieval GPU kernels, multi-robot inference, generative-AI textbook, phase-field simulation, MOOSE simulation agent, EAP writing-assessment pedagogy). Keeps the inventory honest and lint clean without force-routing. — concept, corpus-hygiene, out-of-scope
 - [TRACER Acceptor Gate — ML Surrogate Routing for LLM Cost Reduction in OSINT Ingest](concepts/tracer-acceptor-gate-ingest.md) — cross-wiki stub routed from ingest — `cross-wiki`
 
+## Projects
+
+Codebase hubs maintained for agent navigation (`/obsidian-architect`).
+
+- [OSINT Workspace (repo)](projects/osint-workspace/OSINT Workspace.md) — This git repo: wiki librarian, `scripts/`, laptop `conductor/` MCP, `briefs/` staging — `project`
+- [Architecture — OSINT Workspace Overview](projects/osint-workspace/Architecture/Architecture - Overview.md) — Stack + module diagram @ `b960aae` — `architecture-overview`
+
 ## How this index works
 
 - **Sources** are grouped by first matching cluster (`rl-marl`, `llm-agents`, etc.). Multi-cluster tags are shown in `[+tag, +tag]` notation after the row.

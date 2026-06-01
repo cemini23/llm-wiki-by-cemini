@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-01] architect | OSINT WORKSPACE — /obsidian-architect @ b960aae
+
+- **Scan** — `architect_scan.py` on repo root; commit `b960aae` clean
+- **New** — `projects/osint-workspace/` hub + `Architecture/` (Overview, conductor, wiki, briefs, ui, Key decisions) with `@generated` sentinels
+- **Backlink** — @concepts/cemini-repository-topology.md → architecture overview
+
 ## [2026-06-01] ship | World Cup Bot prod pull — Bugbot exports scrub @ 17a6647
 
 - **world-cup-bot** — pushed `17a6647`: scrub `exports/` PII/paths; threshold guard skips `#` comments; **189 pytest**; closed audit PR #2

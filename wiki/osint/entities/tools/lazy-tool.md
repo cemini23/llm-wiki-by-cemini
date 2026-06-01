@@ -15,6 +15,7 @@ related:
   - entities/tools/9router.md
   - sources/arxiv-inference-scaling-llms-2605.19775.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
+  - projects/osint-workspace/Architecture/Architecture - conductor.md
 maturity: validated
 created: 2026-05-09
 updated: 2026-05-11
@@ -33,6 +34,7 @@ license_verified: MIT
 - @entities/tools/claude-code-router.md — complementary proxy layer for OpenRouter traffic routing
 - @entities/tools/9router.md — K38 evaluation candidate DOWNGRADED to NO-GO 2026-05-11; eval brief framed 9router as a compression proxy, but Phase-0 audit found its 20-40% compression overlaps with lazy-tool's validated 46% at ~10× heavier footprint
 - @concepts/context-compression-resume-pattern.md — addresses the same context-window bloat problem from a state-persistence angle
+- @projects/osint-workspace/Architecture/Architecture - conductor.md — OSINT Cursor reaches `conductor_query` via lazy-tool proxy to prod conductor
 
 ## Raw Concept
 

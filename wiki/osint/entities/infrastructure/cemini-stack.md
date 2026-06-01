@@ -20,6 +20,7 @@ related:
   - concepts/equity-fair-value-evaluation.md
   - concepts/cemini-repository-topology.md
   - concepts/cemini-knowledge-application-architecture.md
+  - projects/osint-workspace/Architecture/Architecture - ui.md
 maturity: draft
 created: 2026-05-03
 updated: 2026-05-31
@@ -43,6 +44,7 @@ updated: 2026-05-31
 - @concepts/equity-fair-value-evaluation.md — `core/equity_valuation.py` on prod brain path
 - @concepts/cemini-repository-topology.md — deploy monorepo (`Cemini-Financial-Suite`) vs wiki federation
 - @concepts/cemini-knowledge-application-architecture.md — K89 prod audit; swap/disk probe refresh 2026-05-31
+- @projects/osint-workspace/Architecture/Architecture - ui.md — laptop `ui/` dev chat proxy tunnels to `cemini-egress-fi` gateway
 
 ## Raw Concept
 
