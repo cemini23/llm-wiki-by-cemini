@@ -38,6 +38,17 @@ bash scripts/setup_obsidian_vault.sh --open
 
 Domain wikis stay separate; this repo aggregates inbox counts, daily sweeps, git dirty state, and pending `*from-osint*` briefs.
 
+### Where to work (operator)
+
+| Task | Workspace | Why |
+|------|-----------|-----|
+| **Drop new sources, K-batch ingest, cross-wiki routing** | **OSINT WORKSPACE** (always) | Canonical ingest ritual, `preingest_check`, `cross_wiki_route.py`, briefs staged here first |
+| **Domain-only expansion** (CCC harness, SEO goaccess, …) | **Sibling wiki folder** in Cursor | Content lives in that wiki’s `wiki/`; open the brief listed in federation sweep |
+| **Morning triage, backlog, git dirty across repos** | **cemini-federation-hub** | Read-only control plane — do **not** author long-form wiki pages here |
+| **Query all wikis** | OSINT + lazy-tool `kb_search` / `conductor_query` | Librarian serves synced copies; federation hub does not replace kb-server |
+
+**Rule:** Ingest and route **in OSINT**; execute routed briefs **in the target wiki**; use federation hub **once per day** (or when clearing `*from-osint*` backlog).
+
 ## Snippets
 
 > "Separate wikis for schema; federation hub for operator attention." [CONFIRMED] design 2026-06-01
