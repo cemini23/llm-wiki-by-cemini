@@ -5,26 +5,28 @@ module: agents
 path: agents/
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff]
-keywords: [Cemini-Financial-Suite, /opt/cemini, deploy-monorepo]
+tags: [architecture, cemini-suite, prod-handoff, gap-close]
+keywords: [Cemini-Financial-Suite, /opt/cemini, de5ad93]
 deploy-root: /opt/cemini
-scanned-commit: e3674e4
-provenance: prod-briefs-out-architecture-2026-06-01
+scanned-commit: de5ad93
+provenance: prod-briefs-out-architecture-2026-06-01-gap-close
 ai-first: true
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Index.md
 maturity: validated
 ---
 
 ## Relations
 
-- @projects/cemini-financial-suite/Cemini Financial Suite.md
+- @projects/cemini-financial-suite/Cemini Financial Suite.md — project hub
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Index.md — MOC
 
 ## For future Claude
 
-Prod module note for `agents/` @ e3674e4; ingested from cemini-prod handoff pack.
+Prod module `agents` @ de5ad93; gap-close handoff.
 
 # agents — LangGraph Brain Orchestrator
 
@@ -51,6 +53,17 @@ Small top-level package (10 Python files) hosting the **primary brain cycle** im
 - Optional: `services.llm_analyst.conductor_client.ConductorClient` (macro overlay from librarian conductor)
 - Optional: `services.llm_analyst.autots_client.read_panel_from_redis` when `AUTOTS_ENABLED`
 - Optional Tree-of-Thought path when `TOT_ENABLED=true`
+
+## Publish path
+
+| Env / function | Role |
+|----------------|------|
+| `ENABLE_BRAIN_PUBLISH` | When true, `publish_signal_to_bus` publishes to Redis channel **`trade_signals`** |
+| `publish_signal_to_bus` | Validates via `safe_validate(TradeSignalEnvelope, …)` before publish |
+| `EXECUTION_CARD_ENABLED` | Optional execution-card branch inside publisher |
+| `core/wiki_enforcement` | May abort cycle if wiki policy fails (`log_enforcement_abort`) |
+
+Exits also publish to `trade_signals` (sync publish on module Redis client).
 
 ## Runtime environment (`docker/compose.intelligence.yml`)
 

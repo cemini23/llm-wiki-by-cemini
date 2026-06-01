@@ -5,26 +5,28 @@ module: ems
 path: ems/
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff]
-keywords: [Cemini-Financial-Suite, /opt/cemini, deploy-monorepo]
+tags: [architecture, cemini-suite, prod-handoff, gap-close]
+keywords: [Cemini-Financial-Suite, /opt/cemini, de5ad93]
 deploy-root: /opt/cemini
-scanned-commit: e3674e4
-provenance: prod-briefs-out-architecture-2026-06-01
+scanned-commit: de5ad93
+provenance: prod-briefs-out-architecture-2026-06-01-gap-close
 ai-first: true
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Index.md
 maturity: validated
 ---
 
 ## Relations
 
-- @projects/cemini-financial-suite/Cemini Financial Suite.md
+- @projects/cemini-financial-suite/Cemini Financial Suite.md — project hub
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Index.md — MOC
 
 ## For future Claude
 
-Prod module note for `ems/` @ e3674e4; ingested from cemini-prod handoff pack.
+Prod module `ems` @ de5ad93; gap-close handoff.
 
 # EMS — Execution Management System
 
@@ -40,6 +42,15 @@ Order routing and broker execution. Split across a **thin service package** (`em
 | `kalshi_market_status.py` | Freshness / active-market gate via sync Redis |
 | `kalshi_ping.py` | Health probe |
 <!-- @generated:end -->
+
+## Redis / governor
+
+| Setting | Default / role |
+|---------|----------------|
+| Channel | **`trade_signals`** — async listener in `main.py` |
+| `GOVERNOR_URL` | `http://risk_governor:8004` — pre-trade HTTP check |
+| `PAPER_MODE` | Env `PAPER_MODE` (default false string; paper adapter registered) |
+| Kalshi client | `KalshiRESTv2`, environment `demo` in code default |
 
 `main.py` initializes adapters: `PaperBrokerAdapter`, `CoinbaseAdapter`, `RobinhoodAdapter`, `HardRockBetAdapter`, optional `HyperliquidAdapter`, `OANDAAdapter`, plus `KalshiRESTv2`. Calls risk governor at `GOVERNOR_URL` (default `http://risk_governor:8004`). `PAPER_MODE` from env.
 

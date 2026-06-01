@@ -1,17 +1,18 @@
 ---
-title: Architecture - Key decisions (prod)
+title: Architecture — Key decisions (prod)
 type: architecture-overview
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff]
-keywords: [Cemini-Financial-Suite, /opt/cemini, deploy-monorepo]
+tags: [architecture, cemini-suite, prod-handoff, gap-close]
+keywords: [Cemini-Financial-Suite, /opt/cemini, de5ad93]
 deploy-root: /opt/cemini
-scanned-commit: e3674e4
-provenance: prod-briefs-out-architecture-2026-06-01
+scanned-commit: de5ad93
+provenance: prod-briefs-out-architecture-2026-06-01-gap-close
 ai-first: true
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Index.md
   - concepts/cemini-repository-topology.md
   - concepts/cemini-deployment.md
 maturity: validated
@@ -19,18 +20,19 @@ maturity: validated
 
 ## Relations
 
-- @projects/cemini-financial-suite/Cemini Financial Suite.md
+- @projects/cemini-financial-suite/Cemini Financial Suite.md — project hub
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Index.md
 - @concepts/cemini-repository-topology.md
 - @concepts/cemini-deployment.md
 
 ## For future Claude
 
-Commit-mined decision signals from prod `/opt/cemini` @ e3674e4; subjects only in generated table.
+Commit-mined + brief-referenced decisions @ de5ad93.
 
-# Key decisions — recent git signals
+# Key decisions — git signals & governing briefs
 
-Mined via `mine_commit_decisions.py --repo /opt/cemini` (obsidian-second-brain). **Anti-fabrication:** subjects only; no inferred design rationale beyond commit message text.
+## Mined commits (`mine_commit_decisions.py`)
 
 <!-- @generated:start -->
 | Date | SHA | Subject | Signal |
@@ -43,21 +45,23 @@ Mined via `mine_commit_decisions.py --repo /opt/cemini` (obsidian-second-brain).
 | 2026-05-21 | `fe22656` | feat(brain): exit-decision agent + paper-adapter BUY migration (#56) | decision |
 <!-- @generated:end -->
 
-## Themes (human summary — verify in diffs before citing as policy)
+## Topology decisions (compose / README)
 
-1. **Contract evolution** — `TradeSignalEnvelope` gained explicit `decision` field (`17cf48e`).
-2. **Brain exits** — exit-decision agent + paper BUY path (`fe22656`); orchestrator dedupe (`39f6e81`).
-3. **Weather ops** — TAF layers + EMOS promote wired to systemd (`f9e11f8`).
-4. **Operator UI** — PM/Kalshi sidebar naming clarity (`e3ee892`).
+| Decision | Evidence |
+|----------|----------|
+| QuantOS `signal_generator` disabled vs `brain` | `docker/compose.intelligence.yml` 2026-02-24 comment |
+| Paper default for brokers | Root `README.md` |
+| Compose split into 11 includes | `docker-compose.yml` header |
+| Import boundaries enforced in CI | `scripts/check_imports.py`, `deploy.yml` `import-boundary-check` |
+| Architecture handoff under `briefs/out/` | `de5ad93`, gap-close `2026-06-01_architecture-handoff-gap-close.md` |
 
-## Deploy topology decisions (from README / compose — not commit-mined)
+## Governing briefs (architectural — not mined)
 
-| Decision | Source |
-|----------|--------|
-| `signal_generator` (QuantOS) disabled vs `brain` | `docker/compose.intelligence.yml` comment 2026-02-24 |
-| Paper mode default for broker adapters | Root `README.md` |
-| Compose split into 11 included files | `docker-compose.yml` header |
+| Brief | Topic |
+|-------|-------|
+| `briefs/2026-06-01_cemini-suite-obsidian-architect.md` | Initial prod architect pass |
+| `briefs/2026-06-01_architecture-handoff-gap-close.md` | Gap analysis + P0–P2 close-out |
+| `briefs/2026-05-30_autots-analyst-node-adoption-cemini.md` | AutoTS MCP sidecar + Redis overlay |
+| `briefs/2026-05-26_k69-pm-shared-wallet-strategy-capital-ledger-cemini.md` | PM capital ledger |
 
 ## @user notes
-
-_Add prod-only operator decisions here after review._

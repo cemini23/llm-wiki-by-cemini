@@ -18,6 +18,7 @@ related:
   - concepts/librarian-server-architecture.md
   - concepts/cemini-repository-topology.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+  - projects/cemini-financial-suite/Architecture/OPEN-GAPS.md
 maturity: validated
 ---
 
@@ -26,6 +27,7 @@ maturity: validated
 - @projects/osint-workspace/OSINT Workspace.md — project hub
 - @concepts/librarian-server-architecture.md — kb-server + bulk storage on librarian
 - @concepts/cemini-repository-topology.md — deploy monorepo vs this research repo
+- @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md — prod architecture deferred areas
 
 ## For future Claude
 
@@ -117,4 +119,4 @@ See @concepts/laptop-prod-research-split.md for the operational split.
 
 - Vault-specific rules: `wiki/_CLAUDE.md` (no stock `/obsidian-init`; append ops to `wiki/log.md` not `Logs/`).
 - Federation map: @concepts/cemini-repository-topology.md.
-- Prod deploy detail: @projects/cemini-financial-suite/Architecture/Architecture - Overview.md @ `e3674e4`.
+- Prod deploy detail: @projects/cemini-financial-suite/Architecture/Architecture - Overview.md @ `de5ad93`; gaps: @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md.

@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-06-01] ingest | CeminiSuite architecture gap-close @ de5ad93
+
+- **Pull** — refresh `briefs/out/architecture-2026-06-01/` (P0–P2): +7 module pages, Index MOC, `OPEN-GAPS.md`
+- **Update** — all `wiki/projects/cemini-financial-suite/Architecture/*` @ `de5ad93`; hub + index
+
 ## [2026-06-01] ingest | CeminiSuite prod architecture handoff @ e3674e4
 
 - **Pull** — `scp` from `cemini-prod:/opt/cemini/briefs/out/architecture-2026-06-01/` (8 module notes + overview + key decisions)

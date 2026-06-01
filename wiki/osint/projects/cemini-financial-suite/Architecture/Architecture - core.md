@@ -5,26 +5,28 @@ module: core
 path: core/
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff]
-keywords: [Cemini-Financial-Suite, /opt/cemini, deploy-monorepo]
+tags: [architecture, cemini-suite, prod-handoff, gap-close]
+keywords: [Cemini-Financial-Suite, /opt/cemini, de5ad93]
 deploy-root: /opt/cemini
-scanned-commit: e3674e4
-provenance: prod-briefs-out-architecture-2026-06-01
+scanned-commit: de5ad93
+provenance: prod-briefs-out-architecture-2026-06-01-gap-close
 ai-first: true
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Index.md
 maturity: validated
 ---
 
 ## Relations
 
-- @projects/cemini-financial-suite/Cemini Financial Suite.md
+- @projects/cemini-financial-suite/Cemini Financial Suite.md — project hub
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Index.md — MOC
 
 ## For future Claude
 
-Prod module note for `core/` @ e3674e4; ingested from cemini-prod handoff pack.
+Prod module `core` @ de5ad93; gap-close handoff.
 
 # core — Shared Brain Contracts & Platform Logic
 
@@ -60,8 +62,12 @@ Largest shared Python package for cross-cutting trading intelligence, validation
 
 Runtime validation uses `cemini_contracts.safe_validate` and typed payloads (`TradeSignalEnvelope`, `IntelPayload`, `GovernorDecision`) imported from the sibling `cemini_contracts/` package (78 source files).
 
+## Import layer
+
+`core` may import: `cemini_contracts`, `logit_pricing` only (foundation + pricing). See @projects/cemini-financial-suite/Architecture/Architecture - Overview#import-layers-ci-enforced.md and `scripts/check_imports.py`.
+
 ## db/ sibling
 
-`db/` (85 files) holds SQL migrations and schema; pairs with TimescaleDB service in `docker/compose.infra.yml`. Not duplicated here — see `db/README.md`.
+`db/` (85 files) holds SQL migrations and schema; pairs with TimescaleDB service in `docker/compose.infra.yml`. **Deferred:** @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md — see `db/README.md`.
 
 ## @user notes

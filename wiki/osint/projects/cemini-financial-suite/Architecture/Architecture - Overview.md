@@ -1,184 +1,224 @@
 ---
-title: Architecture - Overview (prod)
+title: Architecture — Overview (prod)
 type: architecture-overview
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff]
-keywords: [Cemini-Financial-Suite, /opt/cemini, deploy-monorepo]
+tags: [architecture, cemini-suite, prod-handoff, gap-close]
+keywords: [Cemini-Financial-Suite, /opt/cemini, de5ad93]
 deploy-root: /opt/cemini
-scanned-commit: e3674e4
-provenance: prod-briefs-out-architecture-2026-06-01
+scanned-commit: de5ad93
+provenance: prod-briefs-out-architecture-2026-06-01-gap-close
 ai-first: true
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
-  - projects/cemini-financial-suite/Architecture/Architecture - QuantOS.md
-  - projects/cemini-financial-suite/Architecture/Architecture - Kalshi by Cemini.md
-  - projects/cemini-financial-suite/Architecture/Architecture - core.md
-  - projects/cemini-financial-suite/Architecture/Architecture - agents.md
-  - projects/cemini-financial-suite/Architecture/Architecture - ems.md
-  - projects/cemini-financial-suite/Architecture/Architecture - cemini_mcp.md
-  - projects/cemini-financial-suite/Architecture/Architecture - Key decisions.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Index.md
+  - projects/cemini-financial-suite/Architecture/OPEN-GAPS.md
   - projects/osint-workspace/Architecture/Architecture - Overview.md
   - concepts/cemini-repository-topology.md
   - entities/infrastructure/cemini-stack.md
   - concepts/librarian-server-architecture.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Docker services.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Kalshi by Cemini.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Key decisions.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Polymarket.md
+  - projects/cemini-financial-suite/Architecture/Architecture - QuantOS.md
+  - projects/cemini-financial-suite/Architecture/Architecture - agents.md
+  - projects/cemini-financial-suite/Architecture/Architecture - cemini_contracts.md
+  - projects/cemini-financial-suite/Architecture/Architecture - cemini_mcp.md
+  - projects/cemini-financial-suite/Architecture/Architecture - core.md
+  - projects/cemini-financial-suite/Architecture/Architecture - deploy-systemd.md
+  - projects/cemini-financial-suite/Architecture/Architecture - ems.md
+  - projects/cemini-financial-suite/Architecture/Architecture - services.md
+  - projects/cemini-financial-suite/Architecture/Architecture - trading_playbook.md
 maturity: validated
 ---
 
 ## Relations
 
 - @projects/cemini-financial-suite/Cemini Financial Suite.md — project hub
-- @projects/cemini-financial-suite/Architecture/Architecture - QuantOS.md
-- @projects/cemini-financial-suite/Architecture/Architecture - Kalshi by Cemini.md
-- @projects/cemini-financial-suite/Architecture/Architecture - core.md
-- @projects/cemini-financial-suite/Architecture/Architecture - agents.md
-- @projects/cemini-financial-suite/Architecture/Architecture - ems.md
-- @projects/cemini-financial-suite/Architecture/Architecture - cemini_mcp.md
-- @projects/cemini-financial-suite/Architecture/Architecture - Key decisions.md
-- @projects/osint-workspace/Architecture/Architecture - Overview.md — parallel OSINT laptop pass @ 992f96a
+- @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Index.md — MOC
+- @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md — deferred doc areas
+- @projects/osint-workspace/Architecture/Architecture - Overview.md — parallel OSINT laptop pass
 - @concepts/cemini-repository-topology.md
 - @entities/infrastructure/cemini-stack.md
 - @concepts/librarian-server-architecture.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Docker services.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Kalshi by Cemini.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Key decisions.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Polymarket.md
+- @projects/cemini-financial-suite/Architecture/Architecture - QuantOS.md
+- @projects/cemini-financial-suite/Architecture/Architecture - agents.md
+- @projects/cemini-financial-suite/Architecture/Architecture - cemini_contracts.md
+- @projects/cemini-financial-suite/Architecture/Architecture - cemini_mcp.md
+- @projects/cemini-financial-suite/Architecture/Architecture - core.md
+- @projects/cemini-financial-suite/Architecture/Architecture - deploy-systemd.md
+- @projects/cemini-financial-suite/Architecture/Architecture - ems.md
+- @projects/cemini-financial-suite/Architecture/Architecture - services.md
 
 ## For future Claude
 
-Prod `/opt/cemini` architecture map from server-Claude `/obsidian-architect` @ e3674e4 (2026-06-01). Mermaid stack diagram, module census, integration surfaces. Prefer this over laptop clone scan for deployed truth.
+Prod `/opt/cemini` architecture @ de5ad93 (gap-close P0–P2). Prefer over e3674e4 ingest; includes import layers + signal bus.
 
 # Cemini Financial Suite — Architecture Overview
 
-Private-use algorithmic trading monorepo on a single Hetzner VPS (`/opt/cemini`). **Phase:** paper trading / data accumulation; Kalshi prediction markets active per root README. Stack is orchestrated via `docker-compose.yml` (includes `docker/compose.{infra,ingestion,intelligence,execution,ui,observability,polymarket,hyperliquid,forex,crypto,arb}.yml`).
+Private-use algorithmic trading monorepo on a single Hetzner VPS (`/opt/cemini`). **Phase:** paper trading / data accumulation; Kalshi prediction markets active per root README. Stack orchestrated via `docker-compose.yml` (11 included compose files).
 
-## Stack diagram
+**Index:** @projects/cemini-financial-suite/Architecture/Architecture - Index.md · **Open gaps:** @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md
+
+## Logical data flow
 
 ```mermaid
 flowchart TB
-  subgraph ingest["Ingestion & scrapers"]
-    polygon[Polygon / Alpaca feeds]
-    gdelt[GDELT / FRED / Open-Meteo]
-    scrapers[scrapers/ + ingestion/]
+  subgraph ingest["Ingestion"]
+    ing[ingestion/ containers]
+    scr[scrapers/ host]
   end
 
   subgraph store["Data plane"]
-    ts[(TimescaleDB postgres)]
-    redis[(Redis intel:* bus)]
+    ts[(TimescaleDB)]
+    redis[(Redis)]
   end
 
-  subgraph brain["Brain / intelligence"]
-    agents[agents/orchestrator LangGraph]
-    core[core/ contracts + intel_bus]
-    playbook[trading_playbook]
-    contracts[cemini_contracts/]
+  subgraph intel["Intelligence"]
+    pb[playbook service]
+    brain[brain / agents]
+    contracts[cemini_contracts]
   end
 
   subgraph exec["Execution"]
-    ems_svc[ems/ service]
-    core_ems[core/ems adapters]
-    gov[risk_governor]
+    ems_svc[ems service]
+    gov[risk_governor HTTP]
   end
 
-  subgraph venues["Venue engines & sidecars"]
-    quant[QuantOS/]
-    kalshi[Kalshi by Cemini/]
-    pm[Polymarket compose profile]
-    hl[Hyperliquid shadow]
+  subgraph venues["Venue engines"]
+    kalshi[kalshi_autopilot]
+    quant[QuantOS profile]
+    pm[Polymarket MCP + scripts]
   end
 
-  subgraph expose["Operator surfaces"]
-    mcp[cemini_mcp :8002]
-    ui[ui/ Cemini OS + Grafana/nginx]
-  end
-
-  scrapers --> ts
-  polygon --> ts
-  gdelt --> redis
-  ingest --> redis
-  redis --> agents
-  ts --> agents
-  agents --> contracts
-  agents -->|TradeSignalEnvelope| redis
+  scr --> ts
+  ing --> ts
+  scr --> redis
+  ing --> redis
+  pb -->|intel:playbook_snapshot| redis
+  redis --> brain
+  ts --> brain
+  brain --> contracts
+  brain -->|trade_signals| redis
   redis --> ems_svc
-  ems_svc --> core_ems
-  core_ems --> quant
-  core_ems --> kalshi
-  kalshi --> ems_svc
-  quant -.->|signal_generator profile| redis
   gov --> ems_svc
-  redis --> mcp
-  ts --> mcp
-  mcp --> ui
+  ems_svc --> kalshi
+  kalshi -.->|parallel loop| kalshi
+  quant -.->|signal_generator profile| redis
+  pm -.-> archives[(archives/ logs/)]
+  redis --> mcp[cemini_mcp]
 ```
 
-## Personas (from README + compose; rationale marked where inferred)
+**Key Redis paths (evidence in code):**
 
-| Persona | Primary touchpoints | Role |
-|---------|---------------------|------|
-| **Platform operator** | `docker compose`, `deploy/systemd/`, Grafana/nginx | Keeps VPS stack healthy; does not flip trading gates without brief GO |
-| **Brain cycle** | `agents/orchestrator.py`, `brain` container | LangGraph cycle: regime gate → signals → `TradeSignalEnvelope` on Redis |
-| **EMS executor** | `ems/main.py`, `core/ems/router.py` | Subscribes to signals; routes orders through broker adapters (paper default) |
-| **Kalshi autopilot** | `Kalshi by Cemini/`, `kalshi_autopilot` service | 30s scan-and-execute loop for prediction markets |
-| **Quant researcher** | `research/`, `strategies/`, `QuantOS/` | Backtests and signal logic; QuantOS `signal_generator` profile disabled (redundant with `brain`) |
-| **MCP / agent client** | `cemini_mcp/server.py` | Read-only tools over `intel:*` + Postgres risk readers |
-| **Wiki / librarian** | kb-server on librarian host (not in this tree) | OSINT federation; conductor overlay optional via `ConductorClient` |
+| Key / channel | Producer | Consumer |
+|---------------|----------|----------|
+| `intel:playbook_snapshot` | `trading_playbook` / `playbook` | `agents` regime gate, MCP |
+| `trade_signals` | `agents/orchestrator.py` (`ENABLE_BRAIN_PUBLISH`) | `ems/main.py` |
+| `intel:*` | Harvesters, playbook, Kalshi rover | Brain, MCP, dashboards |
 
-(confidence: speculation) **Cemini OS** persona maps to Streamlit `ui/` served as `cemini_os` on port 8501 behind nginx.
+Kalshi **autopilot** runs as its own container; EMS also holds Kalshi REST credentials for brain-routed signals — not a single serial pipeline.
 
-## Deterministic module census (@e3674e4)
+## Docker runtime topology (summary)
+
+See @projects/cemini-financial-suite/Architecture/Architecture - Docker services.md for full tables. Grouped by compose file:
+
+```mermaid
+flowchart LR
+  infra[infra: postgres redis] --> intel[intelligence: brain playbook mcp]
+  intel --> exec[execution: ems kalshi_autopilot governor]
+  ing2[ingestion feeds] --> infra
+  pm2[polymarket MCP LP] --> infra
+  obs[observability] --> infra
+  ui2[ui: cemini_os grafana nginx] --> infra
+```
+
+## Import layers (CI-enforced)
+
+From `scripts/check_imports.py` — simplified:
+
+```mermaid
+flowchart BT
+  contracts[cemini_contracts]
+  logit[logit_pricing]
+  risk[risk]
+  core[core]
+  scrapers[scrapers / ingestion]
+  services[services]
+  agents[agents]
+  playbook[trading_playbook]
+  mcp[cemini_mcp]
+  contracts --> core
+  contracts --> risk
+  core --> agents
+  core --> services
+  services --> playbook
+  agents --> playbook
+  core --> mcp
+  contracts --> mcp
+```
+
+Violations fail CI (`import-boundary-check` in `deploy.yml`).
+
+## Personas
+
+| Persona | Touchpoints | Role |
+|---------|-------------|------|
+| **Platform operator** | `docker compose`, @projects/cemini-financial-suite/Architecture/Architecture - deploy-systemd.md, Grafana/nginx | Stack health; no gate flips without brief GO |
+| **Brain cycle** | `agents/orchestrator.py`, `brain` | LangGraph → `TradeSignalEnvelope` on `trade_signals` |
+| **Playbook** | `trading_playbook/runner.py`, `playbook` | Regime + risk observation → `intel:playbook_snapshot` |
+| **EMS executor** | `ems/main.py`, `core/ems/router.py` | Subscribes `trade_signals`; governor pre-check |
+| **Kalshi autopilot** | @projects/cemini-financial-suite/Architecture/Architecture - Kalshi by Cemini.md | Parallel prediction-market loop |
+| **PM operator** | @projects/cemini-financial-suite/Architecture/Architecture - Polymarket.md, `cemini-pm-*` timers | CLOB sleeves, host scripts |
+| **MCP client** | @projects/cemini-financial-suite/Architecture/Architecture - cemini_mcp.md | Read-only intel tools (29 @ `de5ad93`) |
+| **Wiki / librarian** | kb-server `10.0.0.2:3838` (external) | `wiki_search`, `core/wiki_enforcement` |
+
+## Module census (@8f319d9)
 
 <!-- @generated:start -->
 | Module | Path | source_files | role_hint |
 |--------|------|--------------|-----------|
-| services | `services/` | 141 | core |
-| tools | `tools/` | 129 | core |
-| core | `core/` | 107 | core |
-| db | `db/` | 85 | core |
-| QuantOS | `QuantOS/` | 80 | core |
-| cemini_contracts | `cemini_contracts/` | 78 | core |
-| Kalshi by Cemini | `Kalshi by Cemini/` | 71 | core |
+| services | `services/` | 141 | core — @projects/cemini-financial-suite/Architecture/Architecture - services.md |
+| tools | `tools/` | 129 | core — **open** @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md |
+| core | `core/` | 107 | core — @projects/cemini-financial-suite/Architecture/Architecture - core.md |
+| db | `db/` | 85 | core — **open** @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md |
+| QuantOS | `QuantOS/` | 80 | core — @projects/cemini-financial-suite/Architecture/Architecture - QuantOS.md |
+| cemini_contracts | `cemini_contracts/` | 78 | core — @projects/cemini-financial-suite/Architecture/Architecture - cemini_contracts.md |
+| Kalshi by Cemini | `Kalshi by Cemini/` | 71 | core — @projects/cemini-financial-suite/Architecture/Architecture - Kalshi by Cemini.md |
 | research | `research/` | 37 | core |
-| cemini_mcp | `cemini_mcp/` | 28 | core |
+| cemini_mcp | `cemini_mcp/` | 28 | core — @projects/cemini-financial-suite/Architecture/Architecture - cemini_mcp.md |
+| trading_playbook | `trading_playbook/` | 10 | core — @projects/cemini-financial-suite/Architecture/Architecture - trading_playbook.md |
+| agents | `agents/` | 10 | core — @projects/cemini-financial-suite/Architecture/Architecture - agents.md |
 | ingestion | `ingestion/` | 13 | core |
 | scrapers | `scrapers/` | 11 | core |
-| agents | `agents/` | 10 | core |
-| scripts | `scripts/` | (support) | support — ops/cron, not expanded here |
 
-**Not present on prod tree:** `Cemini-Suite/` (laptop reference clone listed it; prod scan has no such directory).
+**Absent on prod:** `Cemini-Suite/` (laptop-only in reference clone).
 
-**Languages (repo-wide):** Python 55.9%, Markdown 35.8%, Shell 4.8%, SQL 3.2%.
+**Languages:** Python 55.9%, Markdown 35.8%, Shell 4.8%, SQL 3.2%.
 <!-- @generated:end -->
-
-## Support modules (one line each)
-
-| Path | Role |
-|------|------|
-| `scrapers/` | Host-side harvesters (GDELT, FRED, Open-Meteo, macro) feeding DB/Redis |
-| `ingestion/` | Docker-oriented ingestors (Polygon, Alpaca, CCXT, calendars) |
-| `scripts/` | Cron, audits, probes, one-off ops (largest surface; support) |
-| `services/` | Long-running sidecars: `llm_analyst`, polymarket MCP adapters, harvesters |
-| `strategies/` | Playbook-adjacent strategy implementations |
-| `conductor/` | Reviewer/escalation prompts (librarian-side conductor referenced from agents) |
-| `orchestration/` | **Not a top-level directory on prod** — orchestration lives in `agents/` + `docker/compose.intelligence.yml` |
-| `ui/` | Streamlit Cemini OS + replay helpers |
-| `deploy/systemd/` | Host timers for weather, PM, WC sleeves outside compose |
 
 ## Integration surfaces
 
-| Surface | Location | Notes |
-|---------|----------|-------|
-| Typed contracts | `cemini_contracts/` | Pydantic envelopes (`TradeSignalEnvelope`, `IntelPayload`, PM/Kalshi domains) |
-| Compose entry | `docker-compose.yml` | Includes 11 sub-compose files; networks `edge_net`, `app_net`, `data_net` |
-| Redis | `core/intel_bus.py` | `intel:*` namespace; password from `.env` |
-| TimescaleDB | `docker/compose.infra.yml` → `postgres` | DB `qdb`, user `admin` |
-| MCP | `cemini_mcp/` | Port 8002, read-only FastMCP |
-| kb-server | External (`10.0.0.2:3838` per runbooks) | Wiki enforcement gates in `core/wiki_enforcement.py` |
-| Archives | `archives/`, `logs/` | JSONL audit / playbook / intent chains |
+| Surface | Location |
+|---------|----------|
+| Contracts | `cemini_contracts/` |
+| Compose | `docker-compose.yml` |
+| Redis intel bus | `core/intel_bus.py` |
+| TimescaleDB | `docker/compose.infra.yml` → `postgres` |
+| MCP | `cemini_mcp/` :8002 |
+| kb-server | External; wiki enforcement in `core/wiki_enforcement.py` |
+| Host timers | `deploy/systemd/` — @projects/cemini-financial-suite/Architecture/Architecture - deploy-systemd.md |
+| Secrets (do not edit in arch pass) | `.env`, `conviction.yaml`, token mounts |
 
-## Cross-wiki references (laptop OSINT federation)
+## Cross-wiki (laptop federation)
 
-- @concepts/librarian-server-architecture.md — kb-server + conductor (librarian host, not built from this tree)
-- @projects/osint-workspace/Architecture/Architecture - Overview.md — laptop pass @ 992f96a
+- `projects/osint-workspace/Architecture/` @ `992f96a` (parallel pass)
+- `concepts/librarian-server-architecture.md`, `concepts/cemini-repository-topology.md`
 
 ## @user notes
-
-<!-- Edit below generated blocks; do not edit between @generated markers -->
-
-_Add operator-specific prod deltas here after laptop ingest._

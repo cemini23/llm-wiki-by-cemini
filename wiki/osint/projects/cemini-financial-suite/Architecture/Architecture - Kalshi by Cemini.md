@@ -5,26 +5,28 @@ module: Kalshi by Cemini
 path: Kalshi by Cemini/
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff]
-keywords: [Cemini-Financial-Suite, /opt/cemini, deploy-monorepo]
+tags: [architecture, cemini-suite, prod-handoff, gap-close]
+keywords: [Cemini-Financial-Suite, /opt/cemini, de5ad93]
 deploy-root: /opt/cemini
-scanned-commit: e3674e4
-provenance: prod-briefs-out-architecture-2026-06-01
+scanned-commit: de5ad93
+provenance: prod-briefs-out-architecture-2026-06-01-gap-close
 ai-first: true
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Index.md
 maturity: validated
 ---
 
 ## Relations
 
-- @projects/cemini-financial-suite/Cemini Financial Suite.md
+- @projects/cemini-financial-suite/Cemini Financial Suite.md — project hub
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Index.md — MOC
 
 ## For future Claude
 
-Prod module note for `Kalshi by Cemini/` @ e3674e4; ingested from cemini-prod handoff pack.
+Prod module `Kalshi by Cemini` @ de5ad93; gap-close handoff.
 
 # Kalshi by Cemini — Prediction Market Engine
 

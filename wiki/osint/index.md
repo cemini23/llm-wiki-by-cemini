@@ -1592,8 +1592,10 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 
 - [OSINT Workspace (repo)](projects/osint-workspace/OSINT Workspace.md) — This git repo: wiki librarian, `scripts/`, laptop `conductor/` MCP, `briefs/` staging — `project`
 - [Architecture — OSINT Workspace Overview](projects/osint-workspace/Architecture/Architecture - Overview.md) — Stack + module diagram @ `b960aae` — `architecture-overview`
-- [Cemini Financial Suite (deploy monorepo)](projects/cemini-financial-suite/Cemini Financial Suite.md) — Prod `/opt/cemini` hub; handoff @ `e3674e4` — `project`
-- [Architecture — Cemini Financial Suite Overview (prod)](projects/cemini-financial-suite/Architecture/Architecture - Overview.md) — Mermaid compose map from prod scan — `architecture-overview`
+- [Cemini Financial Suite (deploy monorepo)](projects/cemini-financial-suite/Cemini Financial Suite.md) — Prod `/opt/cemini` hub; architecture @ `de5ad93` — `project`
+- [Architecture — Index (prod MOC)](projects/cemini-financial-suite/Architecture/Architecture - Index.md) — Map of all CeminiSuite architecture pages — `architecture-overview`
+- [Architecture — Cemini Financial Suite Overview (prod)](projects/cemini-financial-suite/Architecture/Architecture - Overview.md) — Mermaid + import layers @ `de5ad93` — `architecture-overview`
+- [CeminiSuite architecture — open gaps](projects/cemini-financial-suite/Architecture/OPEN-GAPS.md) — Deferred areas after P0–P2 (tools/, db/, ui/, …) — `concept`
 
 ## How this index works
 
