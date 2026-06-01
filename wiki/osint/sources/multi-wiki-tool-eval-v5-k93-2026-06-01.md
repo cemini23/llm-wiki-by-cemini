@@ -11,6 +11,12 @@ related:
   - entities/tools/agents-best-practices.md
   - entities/tools/goaccess.md
   - entities/tools/deptry.md
+  - "@ccc-wiki/entities/tools/revfactory-harness.md"
+  - "@ccc-wiki/entities/tools/agents-best-practices.md"
+  - "@ccc-wiki/concepts/thin-harness-fat-skills-garrytan.md"
+  - "@ccc-wiki/concepts/harness-updating-vs-benefit-nonmonotonic.md"
+  - "@ccc-wiki/concepts/federated-daily-research-digest.md"
+  - "@ccc-wiki/sources/multi-wiki-tool-eval-v5-k93-2026-06-01.md"
 maturity: validated
 read_status: deep-read
 created: 2026-06-01

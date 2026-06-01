@@ -10,7 +10,7 @@ KIT="$OSINT_ROOT/scripts/federation/daily_digest"
 
 mkdir -p "$WIKI_ROOT/scripts" "$WIKI_ROOT/wiki/sweeps" "$WIKI_ROOT/wiki/meta" "$WIKI_ROOT/research to be indexed"
 
-for f in daily_research_digest_run.py daily_research_fetch.py; do
+for f in daily_research_digest_run.py daily_research_fetch.py wiki_source_index.py; do
   if [[ -f "$OSINT_ROOT/scripts/$f" ]]; then
     cp "$OSINT_ROOT/scripts/$f" "$WIKI_ROOT/scripts/$f"
   fi

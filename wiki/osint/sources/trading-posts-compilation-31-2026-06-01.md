@@ -9,6 +9,8 @@ related:
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
   - entities/people/gustafssonkotte.md
   - concepts/macro-charts-regime-signals.md
+  - "@ccc-wiki/sources/trading-posts-compilation-31-2026-06-01.md"
+  - "@ccc-wiki/concepts/thin-harness-fat-skills-garrytan.md"
 maturity: validated
 read_status: deep-read
 created: 2026-06-01
