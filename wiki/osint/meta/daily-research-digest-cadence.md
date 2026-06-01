@@ -10,7 +10,7 @@ related:
   - concepts/cemini-wiki-ingest-workflow.md
 maturity: core
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-01
 ---
 
 ## Relations
@@ -23,15 +23,15 @@ updated: 2026-05-31
 
 | Field | Value |
 |-------|-------|
-| **Cadence** | Daily (discovery only — no auto-ingest) |
-| **Last run** | 2026-05-31 |
-| **Script** | `bash scripts/daily_research_digest.sh` |
+| **Cadence** | Daily — Exa papers (wiki-deduped) → inbox PDFs + news digest (no wiki ingest) |
+| **Last run** | 2026-06-01 |
+| **Script** | `cemini-daily-research-digest` (or `bash scripts/run_daily_research_digest.sh` from repo) |
 | **Config** | `scripts/daily_research_config.yaml` |
 | **Report** | `wiki/sweeps/YYYY-MM-DD-daily.md` |
 | **Template** | `wiki/sweeps/_daily-template.md` |
 
 Run manually each morning or via LaunchAgent (`com.cemini.daily-research-digest`, 08:00 local).
 
-**Workflow:** review digest → check rows → optional social pass in Cursor → ingest session.
+**Workflow:** overnight fetch lands non-duplicate arXiv PDFs in inbox → morning **full ingest** in Cursor → optional news-row picks + social pass.
 
 Tier 2 arXiv sweep (`weekly_arxiv_sweep.sh`) remains weekly; this digest covers broader news/web + inbox triage.

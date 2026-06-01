@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Daily research digest — Exa discovery + inbox triage → wiki/sweeps/YYYY-MM-DD-daily.md.
+"""Daily research digest — Exa discovery, wiki-deduped arXiv fetch → inbox, sweep report.
 
-Collection only. Does NOT ingest, commit, or write wiki pages.
-User reviews the sweep file and picks rows for a Cursor ingest session.
+Does NOT ingest wiki pages or commit. Fetched PDFs wait in `research to be indexed/`
+for a morning Cursor session ("full ingest").
 """
 
 from __future__ import annotations
@@ -17,11 +17,17 @@ import urllib.request
 from datetime import date, timedelta
 from pathlib import Path
 
+_SCRIPTS = Path(__file__).resolve().parent
+if str(_SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS))
+
 try:
     import yaml
 except ImportError:
     print("ERROR: PyYAML required — pip install pyyaml", file=sys.stderr)
     sys.exit(1)
+
+from daily_research_fetch import FetchOutcome, fetch_papers  # noqa: E402
 
 
 def load_exa_key() -> str:
@@ -127,32 +133,20 @@ def load_config(repo: Path) -> dict:
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 
-def main() -> int:
-    repo = Path(__file__).resolve().parent.parent
-    cfg = load_config(repo)
-    loop = cfg.get("loop") or {}
-    window = int(loop.get("recency_window_days", 7))
-    per_query = int(loop.get("max_results_per_query", 3))
-    today = date.today()
-    from_date = (today - timedelta(days=window)).isoformat()
-
-    out_tpl = (cfg.get("output") or {}).get("path_template", "wiki/sweeps/{date}-daily.md")
-    report = repo / out_tpl.format(date=today.isoformat())
-    report.parent.mkdir(parents=True, exist_ok=True)
-
-    api_key = load_exa_key()
-    queries = cfg.get("queries") or []
-    active_topics = cfg.get("active_topics") or []
-    social = cfg.get("social") or {}
-
-    seen_urls: set[str] = set()
+def run_queries(
+    api_key: str,
+    query_defs: list[dict],
+    from_date: str,
+    default_per_query: int,
+    seen_urls: set[str],
+) -> tuple[list[tuple[str, str, str | None, list[dict]]], bool]:
     sections: list[tuple[str, str, str | None, list[dict]]] = []
     partial = False
-
-    for q in queries:
+    for q in query_defs:
         cluster = q.get("cluster", "unknown")
         query = q.get("query", "")
         category = q.get("category")
+        per_query = int(q.get("num_results", default_per_query))
         if not query:
             continue
         try:
@@ -176,18 +170,78 @@ def main() -> int:
             seen_urls.add(key)
             deduped.append(r)
         sections.append((cluster, query, category, deduped))
+    return sections, partial
+
+
+def render_fetch_table(outcomes: list[FetchOutcome]) -> list[str]:
+    lines = [
+        "| Status | arXiv | Title | File / reason |",
+        "|--------|-------|-------|---------------|",
+    ]
+    for o in outcomes:
+        title = o.title.replace("|", "\\|")[:80]
+        file_col = o.path or o.detail[:80]
+        aid = o.arxiv_id or "—"
+        lines.append(f"| {o.status} | `{aid}` | {title} | {file_col} |")
+    return lines
+
+
+def main() -> int:
+    repo = Path(__file__).resolve().parent.parent
+    cfg = load_config(repo)
+    loop = cfg.get("loop") or {}
+    fetch_cfg = cfg.get("fetch") or {}
+    window = int(loop.get("recency_window_days", 7))
+    per_query = int(loop.get("max_results_per_query", 3))
+    per_paper = int(fetch_cfg.get("max_results_per_paper_query", 5))
+    today = date.today()
+    from_date = (today - timedelta(days=window)).isoformat()
+
+    out_tpl = (cfg.get("output") or {}).get("path_template", "wiki/sweeps/{date}-daily.md")
+    report = repo / out_tpl.format(date=today.isoformat())
+    report.parent.mkdir(parents=True, exist_ok=True)
+
+    api_key = load_exa_key()
+    paper_defs = cfg.get("paper_queries") or []
+    news_defs = cfg.get("queries") or []
+    active_topics = cfg.get("active_topics") or []
+    social = cfg.get("social") or {}
+
+    seen_urls: set[str] = set()
+    paper_sections, paper_partial = run_queries(
+        api_key, paper_defs, from_date, per_paper, seen_urls
+    )
+    news_sections, news_partial = run_queries(
+        api_key, news_defs, from_date, per_query, seen_urls
+    )
+    partial = paper_partial or news_partial
+
+    fetch_outcomes: list[FetchOutcome] = []
+    if fetch_cfg.get("enabled", True) and paper_sections:
+        fetch_outcomes = fetch_papers(
+            repo,
+            paper_sections,
+            max_downloads=int(fetch_cfg.get("max_downloads", 8)),
+            fetch_likely=bool(fetch_cfg.get("fetch_likely", False)),
+        )
 
     inbox = inbox_files(repo)
     gap_due, gap_msg = gap_detect_status(repo)
     preingest_out = run_preingest(repo) if inbox else ""
 
+    n_fetched = sum(1 for o in fetch_outcomes if o.status == "fetched")
+    n_skipped_dup = sum(1 for o in fetch_outcomes if o.status == "skipped-dup")
+    fetched_names = {o.path for o in fetch_outcomes if o.status == "fetched" and o.path}
+
     lines = [
         f"# Daily Research Digest — {today.isoformat()}",
         "",
-        f"Discovery-only. Window: `{from_date}` → `{today.isoformat()}` ({window} days). "
-        f"{len(queries)} Exa queries × up to {per_query} hits (deduped across queries).",
+        f"Window: `{from_date}` → `{today.isoformat()}` ({window} days). "
+        f"Paper lane: {len(paper_defs)} Exa queries (research paper, wiki-deduped). "
+        f"News lane: {len(news_defs)} queries (digest only).",
         "",
-        "Reference: `@scripts/daily_research_config.yaml`. **Does NOT ingest.**",
+        "Reference: `@scripts/daily_research_config.yaml`. "
+        "**Does NOT ingest wiki** — fetched arXiv PDFs go to `research to be indexed/`.",
         "",
         "---",
         "",
@@ -198,23 +252,56 @@ def main() -> int:
         lines.append(f"- {t}")
     lines.extend(["", "---", ""])
 
-    # Inbox
     lines.extend(["## Inbox (`research to be indexed/`)", ""])
     if inbox:
-        lines.append(f"**{len(inbox)} file(s) waiting** — triage before or alongside Exa picks:")
+        lines.append(
+            f"**{len(inbox)} file(s) ready** — say **full ingest** in Cursor to start the ingest ritual:"
+        )
         lines.append("")
         for p in inbox:
-            lines.append(f"- `{p.name}`")
-        lines.extend(["", "### preingest_check", "", "```", preingest_out[:4000], "```", ""])
+            tag = " _(new tonight)_" if p.name in fetched_names else ""
+            lines.append(f"- `{p.name}`{tag}")
+        lines.extend(["", "### preingest_check", "", "```", preingest_out[:6000], "```", ""])
     else:
-        lines.append("_Empty — no manual drops pending._")
+        lines.append("_Empty — no PDFs fetched overnight (all hits were dupes or non-arXiv)._")
         lines.append("")
 
-    lines.extend(["---", "", "## Exa candidates", ""])
+    if fetch_outcomes:
+        lines.extend(
+            [
+                "---",
+                "",
+                "## Auto-fetched papers (overnight)",
+                "",
+                f"Downloaded **{n_fetched}** new PDF(s); skipped **{n_skipped_dup}** wiki/inbox duplicates.",
+                "",
+            ]
+        )
+        lines.extend(render_fetch_table(fetch_outcomes))
+        lines.append("")
 
-    total = 0
+    lines.extend(["---", "", "## Paper candidates (Exa research paper)", ""])
+    paper_total = 0
+    for i, (cluster, query, category, results) in enumerate(paper_sections, 1):
+        cat_label = category or "research paper"
+        lines.append(f"### P{i}: {cluster} ({len(results)} hits)")
+        lines.append("")
+        lines.append(f"Query: `{query}` · category: `{cat_label}`")
+        lines.append("")
+        lines.append("| Date | Title | URL |")
+        lines.append("|------|-------|-----|")
+        for r in results:
+            url = r.get("url", "")
+            d = (r.get("publishedDate") or "")[:10]
+            title = title_from_result(r).replace("|", "\\|")[:100]
+            lines.append(f"| {d} | [{title}]({url}) | {url[:70]}… |" if len(url) > 70 else f"| {d} | [{title}]({url}) | {url} |")
+        lines.append("")
+        paper_total += len(results)
+
+    lines.extend(["---", "", "## News & links (not auto-downloaded)", ""])
+    news_total = 0
     row_id = 0
-    for i, (cluster, query, category, results) in enumerate(sections, 1):
+    for i, (cluster, query, category, results) in enumerate(news_sections, 1):
         cat_label = category or "auto"
         lines.append(f"### Q{i}: {cluster} ({len(results)} hits)")
         lines.append("")
@@ -234,16 +321,9 @@ def main() -> int:
                 else f"| [ ] R{row_id} | {d} | [{safe_title}]({url}) | {cluster} | {url} |"
             )
         lines.append("")
-        total += len(results)
+        news_total += len(results)
 
-    lines.extend(
-        [
-            "---",
-            "",
-            "## Wiki gap detect",
-            "",
-        ]
-    )
+    lines.extend(["---", "", "## Wiki gap detect", ""])
     if gap_due:
         lines.append(f"**DUE** — {gap_msg}. Run: `bash scripts/run_wiki_gap_detect.sh`")
     else:
@@ -263,13 +343,11 @@ def main() -> int:
         [
             "---",
             "",
-            "## Ingest session prompt (copy into Cursor)",
+            "## Morning ingest (copy into Cursor)",
             "",
             "```",
-            f"Ingest selected rows from wiki/sweeps/{today.isoformat()}-daily.md:",
-            "- Run preingest_check on any new URLs/files",
-            "- Deep-read approved candidates; discuss takeaways before writing",
-            "- Touch 3–15 wiki pages; lint; update ROADMAP + briefs if prod-touching",
+            "Full ingest — process everything in research to be indexed/ and any checked rows above.",
+            "- preingest_check → discuss takeaways → 3–15 wiki pages → lint → ingest_session_gate → commit",
             "```",
             "",
             "---",
@@ -278,16 +356,18 @@ def main() -> int:
             "",
             "| Metric | Count |",
             "|--------|-------|",
-            f"| Exa hits (deduped) | {total} |",
-            f"| Inbox files | {len(inbox)} |",
+            f"| Paper hits (deduped) | {paper_total} |",
+            f"| PDFs fetched to inbox | {n_fetched} |",
+            f"| Dupes skipped | {n_skipped_dup} |",
+            f"| News hits (digest only) | {news_total} |",
+            f"| Inbox files (total) | {len(inbox)} |",
             f"| Gap detect due | {'yes' if gap_due else 'no'} |",
             "",
             "### Next steps",
             "",
-            "1. Check boxes on rows worth fetching (`R1`, `R2`, …).",
-            "2. Optional: run social pass tools above in the same session.",
-            "3. Drop PDFs/docx into inbox or fetch URLs via Exa MCP in Cursor.",
-            "4. Ingest approved items — do not auto-commit from this script.",
+            "1. Say **full ingest** if inbox has PDFs.",
+            "2. Optional: check news rows `R1`… for URLs worth manual fetch.",
+            "3. Optional: social pass tools above.",
             "",
             f"### Discard",
             "",
@@ -298,6 +378,8 @@ def main() -> int:
 
     report.write_text("\n".join(lines), encoding="utf-8")
     print(f"Report: {report}")
+    if n_fetched:
+        print(f"Inbox: {n_fetched} new PDF(s) in research to be indexed/")
 
     meta = repo / "wiki" / "meta" / "daily-research-digest-cadence.md"
     if meta.is_file():

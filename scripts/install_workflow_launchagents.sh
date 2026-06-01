@@ -36,7 +36,26 @@ bash "$ROOT/scripts/setup_obsidian_vault.sh"
 mkdir -p "$AGENT_DIR"
 mkdir -p "$INBOX"
 mkdir -p "$HOME/Library/Logs"
+mkdir -p "$HOME/bin"
+mkdir -p "$HOME/.cemini"
 mkdir -p "$ROOT/.local/reports"
+
+install_daily_digest_wrapper() {
+  local wrapper_src="$ROOT/scripts/launchagent_wrappers/cemini-daily-research-digest.sh"
+  local wrapper_bin="$HOME/bin/cemini-daily-research-digest"
+  local repo_path_file="$HOME/.cemini/osint-workspace.path"
+
+  if [[ ! -f "$wrapper_src" ]]; then
+    echo "ERROR: missing $wrapper_src" >&2
+    exit 1
+  fi
+  printf '%s\n' "$ROOT" > "$repo_path_file"
+  chmod 600 "$repo_path_file"
+  cp "$wrapper_src" "$wrapper_bin"
+  chmod 755 "$wrapper_bin"
+  echo "  $wrapper_bin"
+  echo "  $repo_path_file"
+}
 
 write_agent() {
   local label="$1"
@@ -107,7 +126,15 @@ write_agent_calendar() {
   local script="$2"
   local hour="$3"
   local minute="$4"
+  local program="${5:-}"
   local plist="$AGENT_DIR/${label}.plist"
+  local -a prog_args=("/bin/bash")
+
+  if [[ -n "$program" ]]; then
+    prog_args+=("$program")
+  else
+    prog_args+=("${ROOT}/scripts/${script}")
+  fi
 
   cat > "$plist" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
@@ -118,8 +145,8 @@ write_agent_calendar() {
   <string>${label}</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/bin/bash</string>
-    <string>${ROOT}/scripts/${script}</string>
+    <string>${prog_args[0]}</string>
+    <string>${prog_args[1]}</string>
   </array>
   <key>StartCalendarInterval</key>
   <dict>
@@ -145,13 +172,15 @@ EOF
 }
 
 echo "Installing LaunchAgents..."
+install_daily_digest_wrapper
 write_agent "com.cemini.inbox-notify" "inbox_notify.sh" ""
 write_agent "com.cemini.wiki-sync-verify" "verify_wiki_sync.sh" "3600"
-write_agent_calendar "com.cemini.daily-research-digest" "daily_research_digest.sh" "8" "0"
+write_agent_calendar "com.cemini.daily-research-digest" "" "8" "0" "$HOME/bin/cemini-daily-research-digest"
 write_agent "com.cemini.wc-lp-safety-reminder" "run_wc_lp_safety_reminder.sh" "$WEEKLY"
 write_agent "com.cemini.wiki-gap-detect" "run_wiki_gap_detect.sh" "$WEEKLY"
 
 echo ""
 echo "Obsidian vault: wiki/.obsidian/ (run with --open to launch app)"
 echo "Logs: ~/Library/Logs/cemini-{inbox-watch,wiki-sync,daily-digest,workflow,wc-lp-safety,wiki-gap-detect}.log"
+echo "Daily digest (any directory): cemini-daily-research-digest"
 echo "Optional webhook: echo 'https://...' > ~/.cemini/inbox-webhook.url"

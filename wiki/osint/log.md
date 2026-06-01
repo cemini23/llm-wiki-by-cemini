@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-06-01] ship | World Cup Bot prod pull — Bugbot exports scrub @ 17a6647
+
+- **world-cup-bot** — pushed `17a6647`: scrub `exports/` PII/paths; threshold guard skips `#` comments; **189 pytest**; closed audit PR #2
+- **Prod brief** — `briefs/2026-06-01_wc-prod-bugbot-exports-pull.md` → `/opt/cemini/briefs/`
+
+## [2026-06-01] automation | Daily digest — wiki-deduped arXiv fetch + LaunchAgent wrapper
+
+- **Fetch lane** — `paper_queries` (Exa `research paper`) → `preingest`-style wiki dedupe → download NEW arXiv PDFs to `research to be indexed/` for morning **full ingest**
+- **Scripts** — `wiki_source_index.py`, `daily_research_fetch.py`, `launchagent_wrappers/cemini-daily-research-digest.sh`; config `fetch.max_downloads: 8`
+- **LaunchAgent** — `com.cemini.daily-research-digest` now calls `~/bin/cemini-daily-research-digest` (fixes macOS Desktop `Operation not permitted` @ 08:00)
+- **Docs** — `meta/daily-research-digest-cadence.md`, `cemini-wiki-ingest-workflow.md` Phase 1
+
 ## [2026-05-31] ingest | K91 — World Cup phase-router + conviction DR pair
 
 - **2 sources** — `gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md`, `gemini-wc-conviction-config-audit-2026-05-31.md`

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # daily_research_digest.sh
 #
-# Daily discovery digest: Exa web/news queries + inbox triage snapshot →
-# wiki/sweeps/YYYY-MM-DD-daily.md. Does NOT ingest.
+# Daily digest: Exa research papers (wiki-deduped) → inbox PDFs + news sweep report.
+# Does NOT ingest wiki — morning "full ingest" in Cursor handles that.
 #
 # Complements weekly_arxiv_sweep.sh (papers, 14d window) with broader
 # news/web coverage (7d window) aligned to ROADMAP active topics.
@@ -11,7 +11,8 @@
 #   1. Exa key: EXA_API_KEY env or ~/.cemini/exa-api-key (same as arxiv sweep)
 #   2. Test:     ./scripts/daily_research_digest.sh
 #   3. Schedule:  bash scripts/install_workflow_launchagents.sh
-#      (adds com.cemini.daily-research-digest @ 08:00 local)
+#      (adds com.cemini.daily-research-digest @ 08:00 via ~/bin wrapper)
+#   Manual (any cwd): cemini-daily-research-digest
 #
 # Cost: ~$0.15/day (5 queries × 3 hits).
 #

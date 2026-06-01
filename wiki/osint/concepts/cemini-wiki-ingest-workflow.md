@@ -11,7 +11,7 @@ related:
   - concepts/high-signal-paper-patterns.md
 maturity: core
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-01
 ---
 
 ## Relations
@@ -31,7 +31,7 @@ Operator request (2026-05-31): automate the daily loop — search social/web →
 
 **Scripts:** `run_daily_research_digest.sh` · `check_daily_research_digest_due.sh` · LaunchAgent `com.cemini.daily-research-digest` @ 08:00.
 
-Exa news queries (7d) + inbox snapshot → `wiki/sweeps/YYYY-MM-DD-daily.md`. Does **not** ingest.
+Exa paper queries (7d, wiki-deduped) download new arXiv PDFs to `research to be indexed/`; news queries fill `wiki/sweeps/YYYY-MM-DD-daily.md`. Does **not** write wiki pages — morning **full ingest** does.
 
 ### Phase 2 — Inbox watcher
 

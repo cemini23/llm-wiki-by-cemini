@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 # run_daily_research_digest.sh — morning discovery digest (Phase 1).
 #
-# Usage:
-#   bash scripts/run_daily_research_digest.sh
+# Usage (from anywhere, after install_workflow_launchagents.sh):
+#   cemini-daily-research-digest
+#   bash scripts/run_daily_research_digest.sh   # only when cwd is the repo
 
 set -euo pipefail
+
+WRAPPER="$HOME/bin/cemini-daily-research-digest"
+if [[ -x "$WRAPPER" ]]; then
+  exec "$WRAPPER"
+fi
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 TODAY=$(date +%Y-%m-%d)
