@@ -11,6 +11,14 @@ related:
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
   - "@ccc-wiki/sources/trading-posts-compilation-12-2026-06-01.md"
   - "@ccc-wiki/briefs/2026-06-01_k92-ccc-agent-harness-from-osint.md"
+  - "@ccc-wiki/concepts/harness-layer-competition-cursor-claude-perplexity.md"
+  - "@ccc-wiki/concepts/deepseek-coding-cost-routing.md"
+  - "@ccc-wiki/concepts/agentic-pm-review-artifacts.md"
+  - "@ccc-wiki/concepts/agent-personality-file-hermes-openclaw.md"
+  - "@ccc-wiki/entities/tools/obsidian-second-brain-eugeniughelbur.md"
+  - "@ccc-wiki/entities/tools/claude-trading-skills.md"
+  - "@ccc-wiki/entities/tools/slot-casino-game-developer-skills.md"
+  - "@ccc-wiki/sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md"
   - "@gambling-wiki/sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md"
 maturity: draft
 read_status: read

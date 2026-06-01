@@ -5,6 +5,14 @@
 - **world-cup-bot** — pushed `17a6647`: scrub `exports/` PII/paths; threshold guard skips `#` comments; **189 pytest**; closed audit PR #2
 - **Prod brief** — `briefs/2026-06-01_wc-prod-bugbot-exports-pull.md` → `/opt/cemini/briefs/`
 
+## [2026-06-01] sync | Federated wiki → cemini-librarian + kb reindex
+
+- `sync_wiki_to_librarian.sh` — all 7 wikis (incl. gambling-wiki K92 Phase-0 pages)
+
+## [2026-06-01] phase0 | K92 tool-eval Adopt/Steal-from — license + clone audits
+
+- Table on `sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md`; gambling + CCC entity pages updated
+
 ## [2026-06-01] ingest | K92 — 4-file batch (2 arXiv + Posts + link eval)
 
 - **2 arXiv sources** — AlphaForgeBench 2602.18481, signal-adaptive execution 2605.24242 → 2 concepts

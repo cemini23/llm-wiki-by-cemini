@@ -12,6 +12,10 @@ related:
   - "@gambling-wiki/entities/bots/wagerbrain.md"
   - "@gambling-wiki/concepts/gambling-bot-architecture.md"
   - "@ccc-wiki/sources/trading-posts-compilation-12-2026-06-01.md"
+  - "@ccc-wiki/sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md"
+  - "@ccc-wiki/entities/tools/obsidian-second-brain-eugeniughelbur.md"
+  - "@ccc-wiki/entities/tools/claude-trading-skills.md"
+  - "@ccc-wiki/entities/tools/slot-casino-game-developer-skills.md"
 maturity: draft
 read_status: read
 created: 2026-06-01
@@ -69,6 +73,25 @@ Gemini reports **NO LICENSE FOUND** on many URLs — treat as **unverified** unt
 > "WagerBrain" — Steal-from, Primary fit Cemini financial, world-cup-bot overlap: Extends module 3 (quoter). [Source: GitHub Repo Evaluation for Cemini.docx, URL sedemmler/WagerBrain]
 
 > "floatinghotpot/casino-server" — Steal-from for websocket→Redis state recovery; WC module 4 fill handler. [Source: same, URL 4]
+
+## Phase-0 audits (2026-06-01)
+
+`gh api` + shallow clone where noted. Full detail on entity pages.
+
+| Repo | Verdict | Home |
+|------|---------|------|
+| sedemmler/WagerBrain | **CONDITIONAL-GO** (steal-from; stale 2020) | @gambling-wiki/entities/bots/wagerbrain.md |
+| datamllab/rlcard | **CONDITIONAL-GO** (poker sim research) | @gambling-wiki/entities/tools/rlcard.md |
+| ctrlaltdylan/bovadaAPI | **NO-GO** (no license, 2015) | @gambling-wiki/entities/bots/bovada-api-reference.md |
+| furic/stake-engine-client | **NO-GO** (no LICENSE file) | @gambling-wiki/entities/bots/stake-engine-client.md |
+| tradermonty/claude-trading-skills | **GO** (MIT, active) | @ccc-wiki/entities/tools/claude-trading-skills.md |
+| eugeniughelbur/obsidian-second-brain | **GO** (MIT; see prior OSINT deep-read) | @sources/obsidian-second-brain-eugeniughelbur.md |
+| ClaudioDrews/memory-os | **CONDITIONAL-GO** (MIT, 57★) | Phase-0 pending entity |
+| zakirkun/deep-eye | **DEFER** (NOASSERTION license) | Cybersec — verify LICENSE text |
+| floatinghotpot/casino-server | **CONDITIONAL-GO** (steal-from WS pattern; stale) | OSINT WC module 4 only |
+| dickreuter/Poker | **NO-GO** (**GPL-3.0**) | Poison pill for prod |
+| andrewprock/pokerstove | **REFERENCE** (BSD-3) | Poker math reference |
+| fedden/poker_ai | **NO-GO** (archived, no SPDX) | — |
 
 ## Dead Ends
 
