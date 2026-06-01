@@ -66,6 +66,10 @@ Distilled from Gemini LP WC report + Seb Montgomery/DuneHammer podcast (`N8QP23v
 | Volatility | **25%** drop from local peak → cancel + cooldown |
 | Draw (football) | Do not assume two-sided hedge holds — still flatten |
 
+### Fill-state recovery pattern (K92 steal-from)
+
+`floatinghotpot/casino-server` (Node, **stale**, steal-from only) uses **socket.io + `socket.io-redis` adapter** so multiple game/login processes share live socket state in Redis — useful mental model for **WC module 4 / fill handler** when a worker restarts mid-session: persist minimal fill + queue position keys in Redis (or ArcticDB event log on Cemini), reconcile on reconnect before re-posting quotes. **Do not** adopt the casino codebase; port the **WS → shared state → reconcile** pattern only. [Source: @sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md]
+
 **Goal:** earn rewards **without** holding directional inventory through kickoff.
 
 ### Match calendar guard

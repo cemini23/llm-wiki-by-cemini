@@ -13,8 +13,9 @@ related:
 maturity: validated
 read_status: deep-read
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-06-01
 clusters: [llm-agents, librarian-tooling]
+laptop_install: VERIFIED 2026-06-01 — ~/.claude/skills/obsidian-second-brain ; vault=wiki/ ; policy .local/obsidian-second-brain-cemini-policy.md
 ---
 
 ## Relations
@@ -69,7 +70,7 @@ This tool directly augments the laptop's Obsidian + Claude Code curation methodo
 
 1. **API cost proliferation** — mandates Grok + Perplexity + Whisper + YouTube API keys. Separate, decentralised billing logic from the primary DeepSeek infrastructure. Estimate monthly spend before adopting; consider gating on user-provided budget envelope.
 2. **Data destruction risk** — autonomous agent with root permission to rewrite/consolidate proprietary Markdown carries severe data-loss risk if it misjudges a "duplicate" merge or "contradiction" resolution. **Mandatory mitigation**: vaults must be rigorously git-tracked BEFORE every agent execution. The workspace already has `wiki/` git-tracked; consolidation runs must be atomic and reversible via `git reset`.
-3. **Concurrent edit conflict** [NEEDS VERIFICATION 2026-04-29] — Gemini flagged: "Intensive verification is required to understand exactly how the internal context engine handles conflict resolution if a file is being actively edited by the human user concurrently during a background agent consolidation operation." Test by editing a wiki page during a nightly cron run and observing what happens.
+3. **Concurrent edit conflict** [NEEDS VERIFICATION 2026-06-01] — Gemini flagged: "Intensive verification is required to understand exactly how the internal context engine handles conflict resolution if a file is being actively edited by the human user concurrently during a background agent consolidation operation." Test by editing a wiki page during a nightly cron run and observing what happens.
 4. **Sole-contributor project** (eugeniughelbur) — bus factor concern. 10 releases in 5 weeks indicates engaged maintenance, but track quarterly.
 
 ### Integration vector (laptop only)
@@ -88,6 +89,12 @@ This tool directly augments the laptop's Obsidian + Claude Code curation methodo
 ```
 
 The "review-required" mode is the workspace's required adaptation — the upstream tool defaults to autonomous merge; this is too risky for a 380-page hand-curated wiki. Patch the cron scripts to write proposals to `/tmp/` and require manual `git apply`.
+
+### Adoption status [ADOPTED 2026-06-01]
+
+- Installed via `scripts/adopt_k92_phase0.sh` → `~/.claude/skills/obsidian-second-brain`, `OBSIDIAN_VAULT_PATH` = `wiki/`.
+- PostCompact background agent **disabled** (default); cron not enabled.
+- Operator next step: `/obsidian-init` in Claude Code with vault = `wiki/`.
 
 ## Snippets
 

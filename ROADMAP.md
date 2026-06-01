@@ -11,6 +11,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 ## Current state (2026-06-01 — K92)
 
 - **K92 ingest (2026-06-01)** — 4 inbox files: 2 arXiv (daily digest fetch) + Posts.docx (12) + GitHub eval (90 URLs, casino/poker/stake). **5 sources + 2 concepts** on OSINT; **gambling-wiki** eval slice + WagerBrain/Bovada bot entities; CCC/SEO cross-wiki. Raw → librarian; inbox cleared.
+- **K92 Phase-0 adoptions (2026-06-01)** — **Installed:** claude-trading-skills (5 no-API skills), obsidian-second-brain (wiki vault), rlcard venv (`.local/venv-gambling-research`). **Steal-from wired:** WagerBrain → gambling `bankroll-management`; casino-server WS/Redis → `polymarket-sports-lp-operating-rules`. **Skipped:** memory-os (Hermes-only), all NO-GO repos. Re-run: `bash scripts/adopt_k92_phase0.sh`.
 
 ## Current state (2026-05-31 — K91)
 

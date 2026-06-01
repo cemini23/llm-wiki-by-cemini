@@ -15,6 +15,7 @@ related:
   - "@ccc-wiki/sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md"
   - "@ccc-wiki/entities/tools/obsidian-second-brain-eugeniughelbur.md"
   - "@ccc-wiki/entities/tools/claude-trading-skills.md"
+  - entities/tools/memory-os.md
   - "@ccc-wiki/entities/tools/slot-casino-game-developer-skills.md"
 maturity: draft
 read_status: read
@@ -86,7 +87,7 @@ Gemini reports **NO LICENSE FOUND** on many URLs — treat as **unverified** unt
 | furic/stake-engine-client | **NO-GO** (no LICENSE file) | @gambling-wiki/entities/bots/stake-engine-client.md |
 | tradermonty/claude-trading-skills | **GO** (MIT, active) | @ccc-wiki/entities/tools/claude-trading-skills.md |
 | eugeniughelbur/obsidian-second-brain | **GO** (MIT; see prior OSINT deep-read) | @sources/obsidian-second-brain-eugeniughelbur.md |
-| ClaudioDrews/memory-os | **CONDITIONAL-GO** (MIT, 57★) | Phase-0 pending entity |
+| ClaudioDrews/memory-os | **CONDITIONAL-GO** (Hermes only; not Claude) | @entities/tools/memory-os.md |
 | zakirkun/deep-eye | **DEFER** (NOASSERTION license) | Cybersec — verify LICENSE text |
 | floatinghotpot/casino-server | **CONDITIONAL-GO** (steal-from WS pattern; stale) | OSINT WC module 4 only |
 | dickreuter/Poker | **NO-GO** (**GPL-3.0**) | Poison pill for prod |

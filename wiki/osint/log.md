@@ -5,6 +5,15 @@
 - **world-cup-bot** — pushed `17a6647`: scrub `exports/` PII/paths; threshold guard skips `#` comments; **189 pytest**; closed audit PR #2
 - **Prod brief** — `briefs/2026-06-01_wc-prod-bugbot-exports-pull.md` → `/opt/cemini/briefs/`
 
+## [2026-06-01] adopt | K92 Phase-0 laptop adoptions
+
+- **claude-trading-skills** — 5 no-API skills → `~/.claude/skills/trading-*`
+- **obsidian-second-brain** — skill + 43 commands; vault `wiki/`; policy `.local/obsidian-second-brain-cemini-policy.md`
+- **rlcard** — `.local/venv-gambling-research` via `scripts/gambling_research_venv.sh`
+- **WagerBrain** — steal-from table on @gambling-wiki/concepts/bankroll-management.md
+- **casino-server** — WS/Redis fill-state pattern on @concepts/polymarket-sports-lp-operating-rules.md
+- **memory-os** — entity; Hermes-only, not installed on Claude stack
+
 ## [2026-06-01] sync | Federated wiki → cemini-librarian + kb reindex
 
 - `sync_wiki_to_librarian.sh` — all 7 wikis (incl. gambling-wiki K92 Phase-0 pages)

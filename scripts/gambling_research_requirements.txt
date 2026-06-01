@@ -1,0 +1,3 @@
+# K92 Phase-0 adopt — poker RL sim (gambling-wiki research lane only)
+# Install: bash scripts/gambling_research_venv.sh
+rlcard>=1.2.0,<2
