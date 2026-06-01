@@ -24,6 +24,7 @@ related:
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
   - projects/cemini-financial-suite/Cemini Financial Suite.md
   - projects/cemini-financial-suite/Architecture/OPEN-GAPS.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
 maturity: draft
 created: 2026-05-03
 updated: 2026-05-31
@@ -51,6 +52,7 @@ updated: 2026-05-31
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md — compose services on prod @ e3674e4
 - @projects/cemini-financial-suite/Cemini Financial Suite.md — deploy monorepo hub
 - @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md — runtime-matrix gap (compose profiles actually up)
+- @projects/cemini-financial-suite/Architecture/Architecture - Overview.md — prod compose map @ e8fd49f
 
 ## Raw Concept
 

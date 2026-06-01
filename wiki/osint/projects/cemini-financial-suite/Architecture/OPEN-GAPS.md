@@ -3,16 +3,17 @@ title: CeminiSuite architecture — open gaps (prod)
 type: concept
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, gap-close]
-keywords: [Cemini-Financial-Suite, /opt/cemini, de5ad93]
+tags: [architecture, cemini-suite, prod-handoff, wave4]
+keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
 deploy-root: /opt/cemini
-scanned-commit: de5ad93
-provenance: prod-briefs-out-architecture-2026-06-01-gap-close
+scanned-commit: e8fd49f
+provenance: prod-briefs-out-architecture-2026-06-01-wave4
 ai-first: true
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
-  - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
   - projects/cemini-financial-suite/Architecture/Architecture - Index.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+  - projects/cemini-financial-suite/Architecture/tool-adopt-matrix.generated.md
   - projects/osint-workspace/Architecture/Architecture - Overview.md
   - concepts/cemini-repository-topology.md
   - entities/infrastructure/cemini-stack.md
@@ -22,47 +23,49 @@ maturity: validated
 
 ## Relations
 
-- @projects/cemini-financial-suite/Cemini Financial Suite.md — project hub
+- @projects/cemini-financial-suite/Cemini Financial Suite.md
+- @projects/cemini-financial-suite/Architecture/Architecture - Index.md
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
-- @projects/cemini-financial-suite/Architecture/Architecture - Index.md — MOC
-- @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md — deferred doc areas
-- @projects/osint-workspace/Architecture/Architecture - Overview.md — parallel OSINT laptop pass
+- @projects/cemini-financial-suite/Architecture/tool-adopt-matrix.generated.md
+- @projects/osint-workspace/Architecture/Architecture - Overview.md
 - @concepts/cemini-repository-topology.md
 - @entities/infrastructure/cemini-stack.md
 - @concepts/librarian-server-architecture.md
-- @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
 
 ## For future Claude
 
-Explicit deferred architecture areas after prod gap-close P0–P2 @ de5ad93. Prevents re-discovering the same holes; closed items listed at bottom.
+Deferred areas after wave 4 @ e8fd49f; db ERD + tools adopt matrix closed.
 
-# Open gaps (after P0–P2 close-out)
+# Open gaps (after wave 4 — ERD + adopt matrix)
 
-Items **intentionally not** documented in depth in this handoff pack. Use this file so laptop ingest and future agents do not re-discover the same holes.
+## Still open
 
-| Area | Path / topic | What's missing | Suggested next step |
-|------|----------------|----------------|---------------------|
-| Tools | `tools/` (~129 py) | Phase-0 clone inventory, adoption status | Brief + link `tools/README-phase0-clones.md` |
-| Database | `db/` (~85 py) | Schema ERD, dbmate migration flow, table ownership | Dedicated `Architecture - db.md` from `db/README.md` + migrations |
-| UI | `ui/`, `design/` | Streamlit vs static HTML desk map | Merge `design/README.md` into `Architecture - ui.md` |
-| Strategies | `strategies/` | vs `trading_playbook/` boundary | Doc `strategy_logic_versions` + playbook catalog |
-| Debate | `debate_protocol/` | Rubric + memory service flow | Cross-link librarian conductor + `services/debate_memory.py` |
-| Logit pricing | `logit_pricing/` | Rover fair-value pipeline | Tie to `rover_scanner` + `intel:logit_assessments` |
-| Conductor | `conductor/` (in-repo) | vs librarian conductor host | `concepts/librarian-server-architecture.md` on wiki |
-| Shared | `shared/` | Feature helpers used by RL/intelligence | Scan imports from `check_imports.py` consumers |
-| Runtime matrix | prod | Which compose profiles are **actually** up | Operator runbook snapshot (not architecture prose) |
-| Data science plane | ArcticDB, Deephaven volumes | Read paths from EMS/UI | Trace `arcticdb_data`, `deephaven` compose only |
-| Automation | `@generated` blocks | Scan JSON vs markdown tables | Extend `scripts/architect_refresh_handoff.sh` to patch census tables |
-| CI | docs-only PRs | Broken wikilinks in handoff | Optional `markdown-link-check` on `briefs/out/` |
-| Wiki federation | OSINT ingest | Obsidian links point to GitHub, not ingested wiki paths | Re-link after `wiki/projects/cemini-financial-suite/Architecture/` commit |
-| MCP tier-2 | `notify_operator` | Destructive tier — operator alerts | Document alert channels in ops runbook |
-| Cemini-Suite | laptop-only dir | N/A on prod | No action on prod tree |
+| Area | Why | Next step |
+|------|-----|-----------|
+| **Runtime snapshot** | `docker compose ps` goes stale | Dated `Architecture - prod-snapshot-YYYY-MM-DD.md` in ops runbook |
+| **`@generated` auto-patch** | Refresh script checks SHA only | Extend `architect_refresh_handoff.sh` to patch census + adopt matrix |
+| **CI link check** | No markdown CI on handoff | `markdown-link-check` on `briefs/out/` |
+| **Deephaven app wiring** | Compose only | Trace when queries run in prod |
+| **octotools on prod** | `tools/octotools-phase0/` committed | Operator: remove or gitignore; use `/tmp` per policy |
+| **Unset adopt verdicts (—)** | 3 k63 weather repos | License audit → update manifest |
+| **conviction.yaml / gates** | User-gated | Ops runbook only |
+| **Cemini-Suite/** | Laptop-only | N/A |
 
-## Closed in this pass (do not re-open without new evidence)
+## Closed in wave 4
 
-- Stale `scanned-commit` / MCP tool count
-- Missing pages: contracts, services, playbook, Docker catalog, Polymarket, systemd, Index
-- Overview signal bus (`trade_signals`, `intel:playbook_snapshot`)
-- Import layer summary in Overview
+- @projects/cemini-financial-suite/Architecture/Architecture - db ERD.md — 52 tables, logical domain diagram
+- @projects/cemini-financial-suite/Architecture/Architecture - tools.md — K71 manifest matrix (43 entries) + `scripts/export_tool_adopt_matrix.py`
+- `tool-adopt-matrix.generated.md` — regenerable artifact
 
-See [briefs/2026-06-01_architecture-handoff-gap-close.md](../../2026-06-01_architecture-handoff-gap-close.md) for full checklist.
+## Closed in wave 3
+
+See @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md history in `briefs/2026-06-01_architecture-handoff-gap-close.md`.
+
+## Wiki re-sync
+
+```bash
+scp -r cemini-prod:/opt/cemini/briefs/out/architecture-2026-06-01/ \
+  "<wiki>/projects/cemini-financial-suite/Architecture/"
+```
+
+Target commit after pull: check `RETURN-STUB.txt`.

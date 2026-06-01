@@ -1,16 +1,16 @@
 ---
 title: Architecture - cemini_mcp (prod)
 type: architecture-module
-module: cemini_mcp
-path: cemini_mcp/
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, gap-close]
-keywords: [Cemini-Financial-Suite, /opt/cemini, de5ad93]
+tags: [architecture, cemini-suite, prod-handoff, wave4]
+keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
 deploy-root: /opt/cemini
-scanned-commit: de5ad93
-provenance: prod-briefs-out-architecture-2026-06-01-gap-close
+scanned-commit: e8fd49f
+provenance: prod-briefs-out-architecture-2026-06-01-wave4
 ai-first: true
+module: cemini_mcp
+path: cemini_mcp/
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
@@ -20,13 +20,13 @@ maturity: validated
 
 ## Relations
 
-- @projects/cemini-financial-suite/Cemini Financial Suite.md — project hub
+- @projects/cemini-financial-suite/Cemini Financial Suite.md
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
-- @projects/cemini-financial-suite/Architecture/Architecture - Index.md — MOC
+- @projects/cemini-financial-suite/Architecture/Architecture - Index.md
 
 ## For future Claude
 
-Prod module `cemini_mcp` @ de5ad93; gap-close handoff.
+Prod `cemini_mcp` @ e8fd49f.
 
 # cemini_mcp — Read-Only MCP Intelligence Server
 
@@ -46,7 +46,7 @@ Exposes Cemini `intel:*` Redis state and selected Postgres risk readers as typed
 | `tests/test_tools.py` | Asserts tool inventory count (source of truth per CLAUDE.md) |
 <!-- @generated:end -->
 
-## Tool inventory (@8f319d9)
+## Tool inventory (@e8fd49f)
 
 <!-- @generated:start -->
 **29** `@mcp.tool` functions in `server.py` (see `cemini_mcp/tests/test_tools.py` — `len(tools) == 29`).
@@ -60,8 +60,12 @@ Exposes Cemini `intel:*` Redis state and selected Postgres risk readers as typed
 | `get_kalshi_intel`, `get_contract_pricing` | Kalshi |
 | `query_similar_situations`, `get_debate_summary`, `get_decision_journal`, `get_pnl_attribution`, `get_walk_forward_results`, `get_fuzzy_scalar` | Memory / debate |
 | `wiki_search` | kb-server bridge |
-| `notify_operator` | Tier 2 — `destructive: True` (operator alert; not read-only) |
+| `notify_operator` | Tier 2 — see below |
 <!-- @generated:end -->
+
+### `notify_operator` (tier 2, non-read-only)
+
+From `server.py`: validates `OperatorAlert`, **XADD** `stream:intel:operator_alerts` (MAXLEN ~1000). Phase 1 routes via **picobot** → Telegram (`telegram_dispatcher` service). RBAC tier 2 — failures return error dict, do not raise on hot path. Channels: `telegram` (wired), `discord` / `slack` / `whatsapp` validate but may no-op.
 
 ## Runtime (`cemini_mcp/CLAUDE.md`)
 

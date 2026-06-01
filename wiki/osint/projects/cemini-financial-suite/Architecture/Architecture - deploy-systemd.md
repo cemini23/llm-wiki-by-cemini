@@ -1,16 +1,16 @@
 ---
 title: Architecture - deploy-systemd (prod)
 type: architecture-module
-module: deploy-systemd
-path: deploy/systemd/
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, gap-close]
-keywords: [Cemini-Financial-Suite, /opt/cemini, de5ad93]
+tags: [architecture, cemini-suite, prod-handoff, wave4]
+keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
 deploy-root: /opt/cemini
-scanned-commit: de5ad93
-provenance: prod-briefs-out-architecture-2026-06-01-gap-close
+scanned-commit: e8fd49f
+provenance: prod-briefs-out-architecture-2026-06-01-wave4
 ai-first: true
+module: deploy-systemd
+path: deploy/systemd/
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
@@ -20,13 +20,13 @@ maturity: validated
 
 ## Relations
 
-- @projects/cemini-financial-suite/Cemini Financial Suite.md — project hub
+- @projects/cemini-financial-suite/Cemini Financial Suite.md
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
-- @projects/cemini-financial-suite/Architecture/Architecture - Index.md — MOC
+- @projects/cemini-financial-suite/Architecture/Architecture - Index.md
 
 ## For future Claude
 
-Prod module `deploy-systemd` @ de5ad93; gap-close handoff.
+Prod `deploy-systemd` @ e8fd49f.
 
 # deploy/systemd — Host timers (prod ops)
 

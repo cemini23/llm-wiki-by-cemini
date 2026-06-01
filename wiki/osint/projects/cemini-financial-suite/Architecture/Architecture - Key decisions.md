@@ -3,11 +3,11 @@ title: Architecture — Key decisions (prod)
 type: architecture-overview
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, gap-close]
-keywords: [Cemini-Financial-Suite, /opt/cemini, de5ad93]
+tags: [architecture, cemini-suite, prod-handoff, wave4]
+keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
 deploy-root: /opt/cemini
-scanned-commit: de5ad93
-provenance: prod-briefs-out-architecture-2026-06-01-gap-close
+scanned-commit: e8fd49f
+provenance: prod-briefs-out-architecture-2026-06-01-wave4
 ai-first: true
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
@@ -20,7 +20,7 @@ maturity: validated
 
 ## Relations
 
-- @projects/cemini-financial-suite/Cemini Financial Suite.md — project hub
+- @projects/cemini-financial-suite/Cemini Financial Suite.md
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
 - @projects/cemini-financial-suite/Architecture/Architecture - Index.md
 - @concepts/cemini-repository-topology.md
@@ -28,7 +28,7 @@ maturity: validated
 
 ## For future Claude
 
-Commit-mined + brief-referenced decisions @ de5ad93.
+Decisions @ e8fd49f.
 
 # Key decisions — git signals & governing briefs
 
@@ -53,7 +53,7 @@ Commit-mined + brief-referenced decisions @ de5ad93.
 | Paper default for brokers | Root `README.md` |
 | Compose split into 11 includes | `docker-compose.yml` header |
 | Import boundaries enforced in CI | `scripts/check_imports.py`, `deploy.yml` `import-boundary-check` |
-| Architecture handoff under `briefs/out/` | `de5ad93`, gap-close `2026-06-01_architecture-handoff-gap-close.md` |
+| Architecture handoff under `briefs/out/` | `e8fd49f`, gap-close `2026-06-01_architecture-handoff-gap-close.md` |
 
 ## Governing briefs (architectural — not mined)
 

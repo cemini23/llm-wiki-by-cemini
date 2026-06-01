@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-01] ingest | CeminiSuite architecture wave 4 @ e8fd49f
+
+- **Pull** — prod handoff resync: db + db ERD, tools + adopt matrix, ui, strategies, data plane, debate/conductor, logit_pricing, shared/intelligence
+- **Update** — 26 files under `wiki/projects/cemini-financial-suite/Architecture/`; OPEN-GAPS narrowed (wave 4)
+- **Sync** — `sync_wiki_to_librarian.sh` post-commit
+
 ## [2026-06-01] ingest | CeminiSuite architecture gap-close @ de5ad93
 
 - **Pull** — refresh `briefs/out/architecture-2026-06-01/` (P0–P2): +7 module pages, Index MOC, `OPEN-GAPS.md`

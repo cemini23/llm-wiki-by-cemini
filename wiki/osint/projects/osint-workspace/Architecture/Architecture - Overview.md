@@ -19,6 +19,7 @@ related:
   - concepts/cemini-repository-topology.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
   - projects/cemini-financial-suite/Architecture/OPEN-GAPS.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
 maturity: validated
 ---
 
@@ -119,4 +120,4 @@ See @concepts/laptop-prod-research-split.md for the operational split.
 
 - Vault-specific rules: `wiki/_CLAUDE.md` (no stock `/obsidian-init`; append ops to `wiki/log.md` not `Logs/`).
 - Federation map: @concepts/cemini-repository-topology.md.
-- Prod deploy detail: @projects/cemini-financial-suite/Architecture/Architecture - Overview.md @ `de5ad93`; gaps: @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md.
+- Prod deploy: @projects/cemini-financial-suite/Architecture/Architecture - Overview.md @ `e8fd49f`; gaps: @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md.
