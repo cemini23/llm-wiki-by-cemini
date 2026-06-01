@@ -1,14 +1,15 @@
 ---
 title: agents-best-practices — Claude agent workflow patterns (DenisSergeevitch)
 type: entity
-tags: [entity, tool, ccc, defer, k63]
+tags: [entity, tool, ccc, adopt, k63, k93]
 keywords: [agents-best-practices, claude, workflow, mit]
 related:
   - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
+  - sources/multi-wiki-tool-eval-v5-k93-2026-06-01.md
   - "@ccc-wiki/entities/tools/agents-best-practices.md"
-maturity: draft
+maturity: validated
 created: 2026-05-24
-updated: 2026-05-26
+updated: 2026-06-01
 ---
 
 ## Relations
@@ -22,9 +23,9 @@ updated: 2026-05-26
 
 ## Narrative
 
-### Verdict: **Defer (CCC)**
+### Verdict: **Adopt (CCC)** — K93 promotion
 
-Cherry-pick workflow patterns into ccc-wiki after dedup against @ccc-wiki/entities/tools/agents-best-practices.md — not a prod deploy.
+MIT confirmed `gh api` 2026-06-01. Cherry-pick workflow patterns into ccc-wiki after dedup against @ccc-wiki/entities/tools/agents-best-practices.md — not a prod deploy.
 
 ## Snippets
 

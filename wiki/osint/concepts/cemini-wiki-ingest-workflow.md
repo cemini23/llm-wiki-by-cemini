@@ -4,12 +4,18 @@ type: concept
 tags: [concept, workflow, automation, ingest, wiki, k90]
 keywords: [wiki-ingest, daily-digest, inbox-watcher, ingest-gates, tier-2, autoresearch]
 related:
+  - concepts/federated-daily-research-digest.md
+  - concepts/monokern-compounding-research-pipeline.md
   - meta/daily-research-digest-cadence.md
   - meta/wiki-gap-detect-cadence.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - concepts/cemini-knowledge-application-architecture.md
   - concepts/high-signal-paper-patterns.md
   - projects/osint-workspace/Architecture/Architecture - wiki.md
+  - concepts/harness-updating-vs-benefit-nonmonotonic.md
+  - entities/tools/deptry.md
+  - sources/arxiv-harness-updating-not-benefit-2605.30621.md
+  - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
 maturity: core
 created: 2026-05-31
 updated: 2026-06-01
@@ -17,6 +23,8 @@ updated: 2026-06-01
 
 ## Relations
 
+- @concepts/federated-daily-research-digest.md — K93 per-wiki digest rollout
+- @concepts/monokern-compounding-research-pipeline.md — weekly NotebookLM overlay
 - @meta/daily-research-digest-cadence.md — Phase 1 schedule + report path
 - @meta/wiki-gap-detect-cadence.md — weekly Tier 1 gap report (linked from daily digest)
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — K84 gap map; Phase 1–4 closes inbox/n8n automation row
@@ -59,3 +67,7 @@ Ends with `wiki_lint.py` + `ingest_session_gate.py` before commit.
 2. Pick rows + optional social pass (twitter/opencli in Cursor)
 3. Ingest session with cemini-wiki-ingest skill
 4. `ingest_session_gate.py` → commit → librarian sync → ROADMAP + briefs
+
+### Weekly Monokern pass (optional)
+
+After daily digest + inbox ingests, one session on `monokern_pipeline.active_topic` — YouTube/PDF/URL → NotebookLM → markdown into wiki/Obsidian. See @concepts/monokern-compounding-research-pipeline.md. **Not** a substitute for Phase 4 human gates.

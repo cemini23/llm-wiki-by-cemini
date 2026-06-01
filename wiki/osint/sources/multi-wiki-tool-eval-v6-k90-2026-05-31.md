@@ -28,10 +28,11 @@ related:
   - "@ccc-wiki/concepts/remote-hermes-access-pattern.md"
   - "@ccc-wiki/concepts/ai-agents-learning-roadmap-reference.md"
   - "@ccc-wiki/concepts/claude-artifacts-app-building.md"
+  - entities/tools/goaccess.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-01
 ---
 
 ## Relations

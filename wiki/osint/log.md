@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-06-01] ingest | K93 — monokern + harness paper + v5 eval + Posts (31)
+
+- **Inbox (4)** — `monokern.docx`, `2605.30621v1.pdf`, `Tool Evaluation and Wiki Fit.docx`, `Posts.docx` (31 posts, sha `86b6855…`)
+- **New sources (5)** — monokern pipeline, arXiv 2605.30621, tool eval v5, Posts K93
+- **New concepts (3)** — monokern-compounding-research-pipeline, harness-updating-vs-benefit-nonmonotonic, federated-daily-research-digest
+- **New/updated tools (5)** — revfactory-harness, shadowarcanist-netviz, goaccess, deptry; agents-best-practices Defer→Adopt
+- **Federation** — `scripts/federation/daily_digest/` install kit + `monokern_pipeline` in `daily_research_config.yaml`
+- **Cross-wiki briefs on disk** — ccc, cybersec, seo, gambling, image-gen, 3d-printing (digest install; operator sessions pending)
+- **Prod brief** — `briefs/2026-06-01_k93-full-ingest-cemini.md` → cemini-prod
+- **Raw** — SCP to librarian; laptop inbox cleared
+
 ## [2026-06-01] ingest | CeminiSuite architecture wave 5 @ 8faf94e
 
 - **Pull** — prod snapshot `Architecture - prod-snapshot-2026-06-01.md`; OPEN-GAPS narrowed (EMS down, octotools, gates)

@@ -7,9 +7,10 @@ related:
   - sources/trading-posts-compilation-16-2026-05-31.md
   - sources/trading-posts-compilation-12-2026-06-01.md
   - concepts/macro-weather-regime.md
+  - sources/trading-posts-compilation-31-2026-06-01.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-01
 ---
 
 ## Relations

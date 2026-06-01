@@ -8,9 +8,10 @@ related:
   - sources/multi-wiki-gemini-eval-prompt-2026-05-12.md
   - concepts/tool-evaluation-framework.md
   - concepts/conductor-orchestrator.md
+  - concepts/harness-updating-vs-benefit-nonmonotonic.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-06-01
 gemini_eval_doc2_url: 11
 phase_0_verdict: STEAL-FROM 2026-05-12 (Planner/Generator/Evaluator trinity — Cemini-direct integration)
 ---

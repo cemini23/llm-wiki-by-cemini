@@ -1,0 +1,46 @@
+# Wiki-local daily digest config — copy to scripts/daily_research_config.yaml and edit topics.
+# Parent reference: OSINT scripts/daily_research_config.yaml
+
+loop:
+  recency_window_days: 7
+  max_results_per_query: 3
+
+fetch:
+  enabled: true
+  max_downloads: 5
+  fetch_likely: false
+  max_results_per_paper_query: 5
+
+# EDIT: domain topics for this wiki only
+active_topics:
+  - "Replace with ROADMAP workstream 1"
+  - "Replace with ROADMAP workstream 2"
+
+paper_queries:
+  - cluster: domain-paper-1
+    query: "research paper <your domain keywords>"
+    category: research paper
+
+queries:
+  - cluster: domain-news-1
+    query: "<news query for this wiki>"
+    category: news
+
+# Weekly Monokern-style deep research (optional)
+monokern_pipeline:
+  enabled: true
+  cadence: weekly  # daily | weekly
+  default_deliverable: none  # infographic | mindmap | audio | none
+  source_modules:
+    - yt-dlp
+    - inbox_pdf
+    - web_url
+  skill_notes: "Use notebooklm-osint-bridge + skill-creator; laptop auth only."
+
+social:
+  manual_pass:
+    - tool: opencli-reader
+      prompt: "Domain-relevant frontpage / feeds last 24h"
+
+output:
+  path_template: "wiki/sweeps/{date}-daily.md"

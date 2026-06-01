@@ -89,6 +89,21 @@ Ingest selected rows from wiki/sweeps/YYYY-MM-DD-daily.md:
 - [ ] ROADMAP + briefs staged
 - [ ] skill_audit on prod briefs
 
+## E — Monokern weekly pipeline (optional)
+
+When `monokern_pipeline.enabled` in `daily_research_config.yaml`:
+
+1. Pick one `active_topics` row (or user topic)
+2. Run yt-search / inbox PDFs / URLs → `notebooklm-osint-bridge` skill
+3. Save markdown to wiki or Obsidian; one concept refresh max
+4. Do **not** skip takeaways gate for wiki writes
+
+See `@concepts/monokern-compounding-research-pipeline.md`.
+
+## F — Federated wikis
+
+Sibling wikis: `bash scripts/federation/daily_digest/install_federated_daily_digest.sh <wiki-root> <id>`. Briefs staged per wiki — operator opens folder and ingests. `@concepts/federated-daily-research-digest.md`.
+
 ## Social pass (same session, not cron)
 
 After digest triage, optional reads per `daily_research_config.yaml`:

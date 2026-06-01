@@ -12,10 +12,11 @@ related:
   - concepts/prediction-market-statistical-arbitrage.md
   - concepts/cemini-backtest-report-kit.md
   - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
+  - sources/trading-posts-compilation-31-2026-06-01.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-06-01
 clusters: [trading-posts, claude-workflows, polymarket]
 ---
 

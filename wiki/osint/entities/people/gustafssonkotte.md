@@ -16,9 +16,10 @@ related:
   - concepts/polymarket-updown-bot-taxonomy.md
   - entities/tools/chainlink-data-streams.md
   - entities/platforms/polymarket.md
+  - sources/trading-posts-compilation-31-2026-06-01.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-26
+updated: 2026-06-01
 ---
 
 ## Relations

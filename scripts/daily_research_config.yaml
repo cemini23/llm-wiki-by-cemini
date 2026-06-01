@@ -56,8 +56,21 @@ queries:
     query: '"AI agent" OR "Claude Code" OR MCP workflow OR agent harness observability'
     category: news
 
+# Weekly Monokern-style pipeline — Cursor + notebooklm-osint-bridge (see @concepts/monokern-compounding-research-pipeline.md)
+monokern_pipeline:
+  enabled: true
+  cadence: weekly
+  default_deliverable: none
+  source_modules:
+    - yt-dlp
+    - inbox_pdf
+    - web_url
+  ingest_hook: "After Sunday digest, run one /yt-pipeline or notebooklm brief on top active_topic"
+
 social:
   manual_pass:
+    - tool: notebooklm-osint-bridge
+      prompt: "Weekly Monokern pass on top ROADMAP topic — 10 sources, vault markdown"
     - tool: twitter-reader
       prompt: "Search fintwit for Polymarket, Kalshi, agent tooling from last 24h"
     - tool: opencli-reader

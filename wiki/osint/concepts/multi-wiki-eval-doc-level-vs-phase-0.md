@@ -15,9 +15,10 @@ related:
   - sources/tool-evaluation-wiki-fit-2026-05-15.md
   - sources/multi-wiki-tool-eval-25url-2026-05-28.md
   - sources/trading-posts-compilation-38-2026-05-28.md
+  - sources/multi-wiki-tool-eval-v5-k93-2026-06-01.md
 maturity: validated
 created: 2026-05-14
-updated: 2026-05-29
+updated: 2026-06-01
 ---
 
 ## Relations

@@ -8,9 +8,10 @@ related:
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - concepts/polymarket-lp-rewards-farming.md
   - entities/platforms/polymarket.md
+  - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-20
+updated: 2026-06-01
 ---
 
 ## Relations
@@ -55,7 +56,7 @@ X / Twitter: **@MatiasScalbi**
 
 ### Connections + cross-references
 
-- Cross-references **other Polymarket creators in his posts**: @lorden_eth (Polymarket Agents repo), @monokern (Gemini Deep Research workflow), @AlterEgo_eth (10-repo Polymarket toolkit), @RohOnChain (32-tool cheat sheet), @LunarResearcher (mass-bot tools), @0xMarioNawfal / @RoundtableSpace (backtesting framework). Forms a cluster of Polymarket-tooling creators interconnected by RT/quote-tweet activity.
+- Cross-references **other Polymarket creators in his posts**: @lorden_eth (Polymarket Agents repo), @monokern (Gemini Deep Research workflow; see @sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md), @AlterEgo_eth (10-repo Polymarket toolkit), @RohOnChain (32-tool cheat sheet), @LunarResearcher (mass-bot tools), @0xMarioNawfal / @RoundtableSpace (backtesting framework). Forms a cluster of Polymarket-tooling creators interconnected by RT/quote-tweet activity.
 - Two of the cross-referenced creators (@AlterEgo_eth, @RohOnChain) **are already wiki entities** with their own pages — see `@entities/people/alteregoeth.md`, `@entities/people/rohonchain.md`.
 
 ### Cemini relevance

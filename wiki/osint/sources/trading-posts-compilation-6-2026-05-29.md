@@ -15,10 +15,11 @@ related:
   - concepts/claude-code-skills-md-workflow.md
   - entities/tools/hermes-agent.md
   - entities/people/damidefi.md
+  - sources/trading-posts-compilation-31-2026-06-01.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-01
 clusters: [trading-posts, hermes, onchain-forensics, agent-workflows, macro]
 ---
 

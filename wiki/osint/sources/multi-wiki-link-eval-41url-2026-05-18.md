@@ -12,10 +12,11 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/cross-venue-arbitrage-pattern.md
   - sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md
+  - entities/tools/shadowarcanist-netviz.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-18
-updated: 2026-05-23
+updated: 2026-06-01
 clusters: [tool-evaluation]
 ---
 

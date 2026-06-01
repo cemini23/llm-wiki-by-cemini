@@ -1208,6 +1208,21 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Marc Rowan — Apollo CEO](entities/people/marc-rowan.md) — `[DRAFT 2026-05-29]` K81 Norges Bank podcast. Alt-credit disintermediation tailwind; Apollo AUM scale. — person, private-credit, k81
 - [Michael Burry — Big Short investor](entities/people/michael-burry.md) — `[DRAFT 2026-05-29]` K81 Michael Lewis podcast. PLTR/NVDA OTM puts; 13F reporting distortion. — person, contrarian, k81
 
+
+#### K93 ingest (2026-06-01)
+
+- [Monokern — Claude + NotebookLM + Obsidian pipeline](sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md) — `[VALIDATED]` compounding research workflow; weekly Monokern overlay on daily digest. — source, monokern, notebooklm, k93
+- [arXiv:2605.30621 — Harness updating vs harness benefit](sources/arxiv-harness-updating-not-benefit-2605.30621.md) — `[VALIDATED]` flat updating / non-monotonic benefit across LM tiers. — source, arxiv, agent-harness, k93
+- [Multi-Wiki Tool Evaluation v5 (34 URLs)](sources/multi-wiki-tool-eval-v5-k93-2026-06-01.md) — `[VALIDATED]` 5 Adopt (harness, netviz, agents-best-practices, goaccess, deptry); AGPL OGI reject. — source, tool-eval, k93
+- [Trading posts compilation — 31 X long-forms (Posts.docx K93)](sources/trading-posts-compilation-31-2026-06-01.md) — `[VALIDATED]` garrytan thin-harness thread, Gustafsson tape-speed, agent onboarding. — source, trading-posts, k93
+- [Monokern compounding research pipeline](concepts/monokern-compounding-research-pipeline.md) — `[VALIDATED]` daily+weekly cadence with NotebookLM offload. — concept, workflow, k93
+- [Harness updating vs benefit — non-monotonic](concepts/harness-updating-vs-benefit-nonmonotonic.md) — `[VALIDATED]` evolver vs executor budget rule. — concept, agent-harness, k93
+- [Federated daily research digest](concepts/federated-daily-research-digest.md) — `[CORE]` per-wiki Exa/inbox automation kit. — concept, meta, federation, k93
+- [revfactory/harness](entities/tools/revfactory-harness.md) — `[DRAFT]` K93 Adopt Apache-2.0. — tool, ccc, k93
+- [ShadowArcanist/netviz](entities/tools/shadowarcanist-netviz.md) — `[DRAFT]` K93 Adopt MIT. — tool, cybersec, k93
+- [goaccess](entities/tools/goaccess.md) — `[DRAFT]` K93 Adopt MIT. — tool, seo, k93
+- [deptry](entities/tools/deptry.md) — `[DRAFT]` K93 Adopt MIT. — tool, python, k93
+
 ## Concepts
 
 Topics, theses, methodologies, strategies — ideas the research examines.

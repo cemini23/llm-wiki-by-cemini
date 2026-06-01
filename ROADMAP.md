@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-01 — K93)
+
+- **K93 ingest (2026-06-01)** — 4 inbox files: monokern.docx + arXiv 2605.30621 + v5 tool eval (34 URL) + Posts.docx (31). **5 sources + 3 concepts + federation digest kit + 4 tool pages.** Monokern weekly pipeline in `daily_research_config.yaml`. **Cross-wiki briefs on disk** (6 wikis). Prod brief → cemini-prod. Inbox cleared.
+
 ## Current state (2026-06-01 — K92)
 
 - **K92 ingest (2026-06-01)** — 4 inbox files: 2 arXiv (daily digest fetch) + Posts.docx (12) + GitHub eval (90 URLs, casino/poker/stake). **5 sources + 2 concepts** on OSINT; **gambling-wiki** eval slice + WagerBrain/Bovada bot entities; CCC/SEO cross-wiki. Raw → librarian; inbox cleared.

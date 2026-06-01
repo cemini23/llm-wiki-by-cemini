@@ -13,6 +13,7 @@ related:
   - projects/osint-workspace/Architecture/Architecture - Overview.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/librarian-server-architecture.md
+  - concepts/federated-daily-research-digest.md
 maturity: core
 ---
 

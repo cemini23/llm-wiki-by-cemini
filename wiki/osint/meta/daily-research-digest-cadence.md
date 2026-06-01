@@ -8,6 +8,9 @@ related:
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - concepts/high-signal-paper-patterns.md
   - concepts/cemini-wiki-ingest-workflow.md
+  - concepts/federated-daily-research-digest.md
+  - concepts/monokern-compounding-research-pipeline.md
+  - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
 maturity: core
 created: 2026-05-31
 updated: 2026-06-01
@@ -15,6 +18,8 @@ updated: 2026-06-01
 
 ## Relations
 
+- @concepts/federated-daily-research-digest.md — per-wiki install kit (K93)
+- @concepts/monokern-compounding-research-pipeline.md — weekly deep-research overlay
 - @meta/wiki-gap-detect-cadence.md — weekly stale-claim / thin-page report; linked from daily digest
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — script-first automation posture
 - @concepts/cemini-wiki-ingest-workflow.md — four-phase pipeline overview
@@ -35,3 +40,7 @@ Run manually each morning or via LaunchAgent (`com.cemini.daily-research-digest`
 **Workflow:** overnight fetch lands non-duplicate arXiv PDFs in inbox → morning **full ingest** in Cursor → optional news-row picks + social pass.
 
 Tier 2 arXiv sweep (`weekly_arxiv_sweep.sh`) remains weekly; this digest covers broader news/web + inbox triage.
+
+**Weekly overlay:** `monokern_pipeline` in `scripts/daily_research_config.yaml` — one NotebookLM-heavy research session per top ROADMAP topic (see @concepts/monokern-compounding-research-pipeline.md).
+
+**Federation:** sibling wikis install via `scripts/federation/daily_digest/install_federated_daily_digest.sh` — @concepts/federated-daily-research-digest.md.
