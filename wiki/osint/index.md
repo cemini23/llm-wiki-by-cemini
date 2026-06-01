@@ -1217,6 +1217,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Trading posts compilation — 31 X long-forms (Posts.docx K93)](sources/trading-posts-compilation-31-2026-06-01.md) — `[VALIDATED]` garrytan thin-harness thread, Gustafsson tape-speed, agent onboarding. — source, trading-posts, k93
 - [Monokern compounding research pipeline](concepts/monokern-compounding-research-pipeline.md) — `[VALIDATED]` daily+weekly cadence with NotebookLM offload. — concept, workflow, k93
 - [Harness updating vs benefit — non-monotonic](concepts/harness-updating-vs-benefit-nonmonotonic.md) — `[VALIDATED]` evolver vs executor budget rule. — concept, agent-harness, k93
+- [Federation operator hub (stub)](meta/federation-operator-hub-stub.md) — `[CORE]` → `cemini-federation-hub` morning summary + triage. — meta, federation, operator
 - [Federated daily research digest](concepts/federated-daily-research-digest.md) — `[CORE]` per-wiki Exa/inbox automation kit. — concept, meta, federation, k93
 - [revfactory/harness](entities/tools/revfactory-harness.md) — `[DRAFT]` K93 Adopt Apache-2.0. — tool, ccc, k93
 - [ShadowArcanist/netviz](entities/tools/shadowarcanist-netviz.md) — `[DRAFT]` K93 Adopt MIT. — tool, cybersec, k93

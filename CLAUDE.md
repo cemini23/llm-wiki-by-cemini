@@ -371,7 +371,16 @@ If exit code **0** (due): prompt to run `bash scripts/run_wc_lp_safety_reminder.
 
 If due: prompt to run `bash scripts/run_wiki_gap_detect.sh` (~1 min). Report lands in `.local/reports/`. See `wiki/meta/wiki-gap-detect-cadence.md`. Tier 2 Exa remains user-gated.
 
-### 10. Daily research digest cadence
+### 10. Federation morning summary (operator hub)
+
+```bash
+cemini-federation-morning-summary
+# or: bash ../projects/cemini-federation-hub/scripts/run_federation_morning_summary.sh
+```
+
+Report: `cemini-federation-hub/hub/sweeps/YYYY-MM-DD-federation.md`. Install once: `bash ../projects/cemini-federation-hub/scripts/install_federation_hub.sh`. See `@meta/federation-operator-hub-stub.md`.
+
+### 11. Daily research digest cadence
 
 ```bash
 ./scripts/check_daily_research_digest_due.sh
@@ -379,7 +388,7 @@ If due: prompt to run `bash scripts/run_wiki_gap_detect.sh` (~1 min). Report lan
 
 If exit code **0** (no report for today): prompt to run `bash scripts/run_daily_research_digest.sh` (~30s + Exa). Report: `wiki/sweeps/YYYY-MM-DD-daily.md`. See `wiki/meta/daily-research-digest-cadence.md` and `@concepts/cemini-wiki-ingest-workflow.md`.
 
-### 11. Obsidian vault (operator setup)
+### 12. Obsidian vault (operator setup)
 
 If `wiki/.obsidian/` missing: `bash scripts/setup_obsidian_vault.sh`. Graph review ritual: `.cursor/skills/cemini-wiki-graph/SKILL.md`.
 
@@ -400,6 +409,7 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 | `cybersecurity-wiki` | `../projects/Cybersecurity wiki/wiki/` | Public | Cybersecurity research — offensive security (pentest / red team / bug bounty / exploit dev), defensive operations (SOC / IR / threat hunting), certifications + careers, threat actors. Shared territory: OSINT tradecraft + investigative methodology |
 | `gambling-wiki` | `../projects/Gambling wiki/wiki/` | **Public** | Sports betting, casino, poker, DFS, best ball, prediction-market wagering (retail/strategy). Shared territory: Kelly, FLB, Kalshi/Polymarket cross-venue — osint-wiki owns bots/CeminiSuite |
 | `ccc-wiki` | `../projects/Cemini claude code CCC/wiki/` | **Public** | Cursor + Claude Code meta-wiki — workflow, subagents, MCP/conductor, hooks, skills, slash commands, /goal · Ralph · OpenSpec. Shared territory: agent orchestration, conductor/librarian architecture, skill audits |
+| `federation-hub` | `../projects/cemini-federation-hub/hub/` | **Private** | Operator control plane — morning federation summary, wiki path catalog, Obsidian triage (`@meta/federation-operator-hub-stub.md`) |
 
 **Private (not public federation deliverables):** `osint-wiki`, **Cemini Financial Suite** (`../projects/CeminiSuite`). **Public on GitHub:** `ccc-wiki` and the five domain wikis (including `gambling-wiki`). See root `README.md` for repo URLs.
 

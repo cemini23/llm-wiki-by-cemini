@@ -15,9 +15,11 @@ related:
   - sources/youtube-kalshi-bots-batch-2026-05-29.md
   - entities/tools/momentum-odds.md
   - entities/platforms/kalshi.md
+  - entities/tools/polygnosis.md
+  - sources/polygnosis-2-polymarket-osint-2026-06-01.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-29
+updated: 2026-06-01
 clusters: [polymarket, agents, sports]
 ---
 

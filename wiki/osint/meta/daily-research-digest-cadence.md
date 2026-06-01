@@ -11,6 +11,7 @@ related:
   - concepts/federated-daily-research-digest.md
   - concepts/monokern-compounding-research-pipeline.md
   - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
+  - meta/federation-operator-hub-stub.md
 maturity: core
 created: 2026-05-31
 updated: 2026-06-01
@@ -18,6 +19,7 @@ updated: 2026-06-01
 
 ## Relations
 
+- @meta/federation-operator-hub-stub.md — operator morning summary (`cemini-federation-hub`)
 - @concepts/federated-daily-research-digest.md — per-wiki install kit (K93)
 - @concepts/monokern-compounding-research-pipeline.md — weekly deep-research overlay
 - @meta/wiki-gap-detect-cadence.md — weekly stale-claim / thin-page report; linked from daily digest

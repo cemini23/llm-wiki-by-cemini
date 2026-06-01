@@ -9,9 +9,10 @@ related:
   - concepts/polymarket-api-reference.md
   - concepts/polymarket-bot-architecture.md
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
+  - entities/tools/polygnosis.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-29
+updated: 2026-06-01
 ---
 
 ## Relations

@@ -4,6 +4,7 @@ type: concept
 tags: [concept, meta, automation, federation, k93]
 keywords: [federated-digest, daily-research, cross-wiki, launchagent, exa, inbox-watcher]
 related:
+  - meta/federation-operator-hub-stub.md
   - meta/daily-research-digest-cadence.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/monokern-compounding-research-pipeline.md
@@ -16,6 +17,7 @@ updated: 2026-06-01
 
 ## Relations
 
+- @meta/federation-operator-hub-stub.md — **cemini-federation-hub** operator UI (morning summary)
 - @meta/daily-research-digest-cadence.md — OSINT canonical implementation
 - @concepts/cemini-wiki-ingest-workflow.md — Phases 1–4
 - @concepts/monokern-compounding-research-pipeline.md — weekly deep-research overlay
@@ -58,6 +60,18 @@ Each sibling wiki gets a **copy of the script bundle** under its repo `scripts/`
 ### Monokern overlay (weekly)
 
 On top of daily Exa/inbox, run one **Monokern pipeline** session per wiki per week: structured sources → NotebookLM → markdown into that wiki's vault. Config: `monokern_pipeline` block in each wiki's `daily_research_config.yaml` (OSINT template in parent config).
+
+### Federation operator hub (2026-06-01)
+
+**Repo:** `~/Desktop/projects/cemini-federation-hub` — master triage panel (not a content wiki).
+
+| Piece | Path |
+|-------|------|
+| Hub page | `hub/meta/federation-operator-hub.md` |
+| Morning report | `hub/sweeps/YYYY-MM-DD-federation.md` |
+| Script | `cemini-federation-morning-summary` @ 08:05 (before per-wiki digests) |
+
+See @meta/federation-operator-hub-stub.md.
 
 ### Librarian
 

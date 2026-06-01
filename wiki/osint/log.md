@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-06-01] meta | Federation operator hub (`cemini-federation-hub`)
+
+- **New repo** — `~/Desktop/projects/cemini-federation-hub` — morning summary + Obsidian triage over all wikis
+- **OSINT** — `meta/federation-operator-hub-stub.md`, `concepts/federated-daily-research-digest.md`, `CLAUDE.md` federation-hub alias
+- **Run** — `cemini-federation-morning-summary` → `hub/sweeps/YYYY-MM-DD-federation.md`
+
+## [2026-06-01] cross-wiki | PolyGnosis 2.0 stub (gambling-wiki ingest)
+
+- **New** — `entities/tools/polygnosis.md`, `sources/polygnosis-2-polymarket-osint-2026-06-01.md` (arxiv 2605.25958; REFERENCE verdict)
+- **Backlinks** — `entities/platforms/polymarket.md`, `entities/data-sources/gdelt.md`
+- **Retail mirror** — `@gambling-wiki/sources/polygnosis-2-polymarket-osint-2026-06-01.md` + `concepts/pm-perspective-mismatch-trading.md`
+
 ## [2026-06-01] wc-bot | K93 adoptions — conviction v5 + weekly-osint-pipeline
 
 - **Repo** — `cemini23/world-cup-bot`: conviction.yaml v5, research mode, advisor hint, tests

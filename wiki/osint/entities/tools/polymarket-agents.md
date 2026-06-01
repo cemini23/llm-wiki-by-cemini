@@ -18,9 +18,10 @@ related:
   - sources/trading-posts-compilation-k84-2026-05-30.md
   - sources/multi-wiki-tool-eval-v4-k84-2026-05-30.md
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
+  - entities/tools/polygnosis.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-24
+updated: 2026-06-01
 ---
 
 ## Relations

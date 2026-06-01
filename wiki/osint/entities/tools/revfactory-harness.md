@@ -7,6 +7,7 @@ related:
   - sources/multi-wiki-tool-eval-v5-k93-2026-06-01.md
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
   - concepts/monokern-compounding-research-pipeline.md
+  - entities/tools/polygnosis.md
 maturity: draft
 created: 2026-06-01
 updated: 2026-06-01

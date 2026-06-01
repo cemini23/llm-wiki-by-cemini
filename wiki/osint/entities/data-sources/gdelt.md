@@ -17,6 +17,8 @@ related:
   - entities/frameworks/finbert.md
   - entities/data-sources/fred.md
   - entities/data-sources/finnhub.md
+  - entities/tools/polygnosis.md
+  - sources/polygnosis-2-polymarket-osint-2026-06-01.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-04-26

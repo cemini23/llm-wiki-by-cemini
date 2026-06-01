@@ -16,9 +16,11 @@ related:
   - entities/platforms/polymarket.md
   - concepts/x402-agent-micropayments-data-access.md
   - entities/tools/odds-jam-prediction-insiders.md
+  - entities/tools/polygnosis.md
+  - sources/polygnosis-2-polymarket-osint-2026-06-01.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-29
+updated: 2026-06-01
 ---
 
 ## Relations

@@ -69,10 +69,12 @@ related:
   - concepts/zero-trade-edge-signal-diagnostics.md
   - sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md
   - sources/clean-room-design-proprietary-software-2026-05-28.md
+  - entities/tools/polygnosis.md
+  - sources/polygnosis-2-polymarket-osint-2026-06-01.md
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-29
+updated: 2026-06-01
 ---
 
 ## Relations
