@@ -41,6 +41,11 @@
 - **Closed** — exports CI sanitize script on repo; ROADMAP 189 tests; entity/index backlinks
 - **Still open** — SHADOW Phase 1 soak, LP DR 2026-06-06, phase-router prod flags — see OPEN-GAPS
 
+## [2026-06-01] ship | World Cup Bot CLOB V2 egress pull @ 7054500
+
+- **CeminiSuite** — `install-wc-egress.sh` + README on `main` (units already tracked)
+- **Prod brief** — `briefs/2026-06-01_wc-prod-clob-v2-egress-pull.md` → `/opt/cemini/briefs/`
+
 ## [2026-06-01] ingest | World Cup Bot CLOB V2 handoff + implementation start
 
 - **Pull** — `scp` from `cemini-prod:/opt/cemini/briefs/out/world-cup-bot-clob-v2-2026-06-01/` → `wiki/projects/world-cup-bot/CLOB-V2-live/`

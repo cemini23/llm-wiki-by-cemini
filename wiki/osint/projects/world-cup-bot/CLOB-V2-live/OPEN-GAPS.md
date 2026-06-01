@@ -29,7 +29,7 @@ Updated: 2026-06-01
 | ID | Gap | Notes |
 |----|-----|-------|
 | G04 | Geoblock API labels FI IP as `DE/blocked` | POST reaches CLOB (400 not 403); P2 probe improvement in patch spec |
-| G05 | `install-wc-egress.sh` on Cemini `main` | Commit/push from prod if not on remote |
+| G05 | `install-wc-egress.sh` on Cemini `main` | **Shipped** — CeminiSuite @ commit after `4348d467` |
 | G06 | Wallet V2 / pUSD migration | Operator UI step before sizing live pilot |
 
 ## Shadow / PnL
