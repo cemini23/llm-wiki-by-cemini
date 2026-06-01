@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-01] ingest | CeminiSuite prod architecture handoff @ e3674e4
+
+- **Pull** — `scp` from `cemini-prod:/opt/cemini/briefs/out/architecture-2026-06-01/` (8 module notes + overview + key decisions)
+- **New** — `wiki/projects/cemini-financial-suite/` hub + `Architecture/*` (prod provenance, `@generated` preserved)
+- **Backlinks** — topology, cemini-stack, osint-workspace project + overview
+
 ## [2026-06-01] ship | CeminiSuite obsidian-architect brief → prod
 
 - **Sync** — `sync_wiki_to_librarian.sh` OK @ wiki `992f96a` (all 7 federated wikis + kb verify)

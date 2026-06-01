@@ -12,6 +12,7 @@ ai-first: true
 related:
   - projects/osint-workspace/Architecture/Architecture - Overview.md
   - projects/osint-workspace/Architecture/Architecture - Key decisions.md
+  - projects/cemini-financial-suite/Cemini Financial Suite.md
   - concepts/cemini-repository-topology.md
   - concepts/librarian-server-architecture.md
   - concepts/laptop-prod-research-split.md
@@ -25,6 +26,7 @@ maturity: validated
 - @concepts/cemini-repository-topology.md — why this repo stays separate from `Cemini-Financial-Suite`
 - @concepts/librarian-server-architecture.md — `cemini-librarian` serving path for synced `wiki/`
 - @concepts/laptop-prod-research-split.md — laptop curates; prod executes briefs only
+- @projects/cemini-financial-suite/Cemini Financial Suite.md — deploy monorepo prod architecture @ e3674e4
 
 ## For future Claude
 

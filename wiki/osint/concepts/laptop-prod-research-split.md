@@ -13,6 +13,7 @@ related:
   - concepts/cemini-repository-topology.md
   - projects/osint-workspace/OSINT Workspace.md
   - projects/osint-workspace/Architecture/Architecture - briefs.md
+  - projects/cemini-financial-suite/Cemini Financial Suite.md
 maturity: validated
 created: 2026-05-23
 updated: 2026-06-01
@@ -29,6 +30,7 @@ updated: 2026-06-01
 - @concepts/cemini-repository-topology.md — git/repo layout vs machine split (orthogonal concerns)
 - @projects/osint-workspace/OSINT Workspace.md — laptop repo where wiki + `briefs/` staging live
 - @projects/osint-workspace/Architecture/Architecture - briefs.md — gitignored briefs handoff to `/opt/cemini/briefs/`
+- @projects/cemini-financial-suite/Cemini Financial Suite.md — deploy monorepo on prod (`/opt/cemini`)
 
 ## Raw Concept
 

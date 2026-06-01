@@ -1592,6 +1592,8 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 
 - [OSINT Workspace (repo)](projects/osint-workspace/OSINT Workspace.md) — This git repo: wiki librarian, `scripts/`, laptop `conductor/` MCP, `briefs/` staging — `project`
 - [Architecture — OSINT Workspace Overview](projects/osint-workspace/Architecture/Architecture - Overview.md) — Stack + module diagram @ `b960aae` — `architecture-overview`
+- [Cemini Financial Suite (deploy monorepo)](projects/cemini-financial-suite/Cemini Financial Suite.md) — Prod `/opt/cemini` hub; handoff @ `e3674e4` — `project`
+- [Architecture — Cemini Financial Suite Overview (prod)](projects/cemini-financial-suite/Architecture/Architecture - Overview.md) — Mermaid compose map from prod scan — `architecture-overview`
 
 ## How this index works
 

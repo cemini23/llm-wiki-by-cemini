@@ -21,6 +21,8 @@ related:
   - concepts/cemini-repository-topology.md
   - concepts/cemini-knowledge-application-architecture.md
   - projects/osint-workspace/Architecture/Architecture - ui.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+  - projects/cemini-financial-suite/Cemini Financial Suite.md
 maturity: draft
 created: 2026-05-03
 updated: 2026-05-31
@@ -45,6 +47,8 @@ updated: 2026-05-31
 - @concepts/cemini-repository-topology.md — deploy monorepo (`Cemini-Financial-Suite`) vs wiki federation
 - @concepts/cemini-knowledge-application-architecture.md — K89 prod audit; swap/disk probe refresh 2026-05-31
 - @projects/osint-workspace/Architecture/Architecture - ui.md — laptop `ui/` dev chat proxy tunnels to `cemini-egress-fi` gateway
+- @projects/cemini-financial-suite/Architecture/Architecture - Overview.md — compose services on prod @ e3674e4
+- @projects/cemini-financial-suite/Cemini Financial Suite.md — deploy monorepo hub
 
 ## Raw Concept
 

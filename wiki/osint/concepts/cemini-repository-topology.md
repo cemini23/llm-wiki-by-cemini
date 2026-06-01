@@ -16,6 +16,9 @@ related:
   - projects/osint-workspace/OSINT Workspace.md
   - projects/osint-workspace/Architecture/Architecture - Overview.md
   - projects/osint-workspace/Architecture/Architecture - Key decisions.md
+  - projects/cemini-financial-suite/Cemini Financial Suite.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+  - projects/cemini-financial-suite/Architecture/Architecture - Key decisions.md
 maturity: validated
 created: 2026-05-28
 updated: 2026-06-01
@@ -26,6 +29,9 @@ updated: 2026-06-01
 - @projects/osint-workspace/OSINT Workspace.md — project hub for `llm-wiki-by-cemini`
 - @projects/osint-workspace/Architecture/Architecture - Overview.md — repo-level module map for this workspace (`/obsidian-architect`, 2026-06-01)
 - @projects/osint-workspace/Architecture/Architecture - Key decisions.md — ADRs including federation vs monorepo (D1)
+- @projects/cemini-financial-suite/Cemini Financial Suite.md — deploy monorepo hub
+- @projects/cemini-financial-suite/Architecture/Architecture - Overview.md — prod `/opt/cemini` @ e3674e4
+- @projects/cemini-financial-suite/Architecture/Architecture - Key decisions.md — prod commit-mined signals
 - @concepts/laptop-prod-research-split.md — which **machine** runs which research step (orthogonal to git layout)
 - @concepts/librarian-server-architecture.md — three-server runtime topology (prod / librarian / laptop editor)
 - @concepts/cemini-deployment.md — how the deploy monorepo lands on Hetzner
