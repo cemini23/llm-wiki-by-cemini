@@ -30,7 +30,7 @@ Gap list after `/obsidian-architect` @ `17a6647`. **Closed in this pass** items 
 | Gap | Fix |
 | --- | --- |
 | No OSINT architecture hub | `wiki/projects/world-cup-bot/Architecture/*` + project note |
-| Bugbot: exports leak paths/tracebacks | Scrubbed @ `17a6647`; CI `check_exports_sanitize.py` |
+| Bugbot: exports leak paths/tracebacks | Scrubbed @ `17a6647`; CI `check_exports_sanitize.py` @ `36be032` |
 | Bugbot: threshold guard false positives on `#` comments | `line_matches_threshold()` @ `17a6647` |
 | ROADMAP test count drift (187 vs 189) | ROADMAP → 189 pytest |
 | Entity page missing architecture links | Updated @entities/tools/world-cup-bot.md |

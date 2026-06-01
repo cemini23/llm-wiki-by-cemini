@@ -41,6 +41,11 @@
 - **Closed** — exports CI sanitize script on repo; ROADMAP 189 tests; entity/index backlinks
 - **Still open** — SHADOW Phase 1 soak, LP DR 2026-06-06, phase-router prod flags — see OPEN-GAPS
 
+## [2026-06-01] ship | World Cup Bot prod pull — exports CI guard @ 36be032
+
+- **world-cup-bot** — pushed `36be032`: `check_exports_sanitize.py` in CI; **190 pytest**
+- **Prod brief** — `briefs/2026-06-01_wc-prod-exports-ci-pull.md` → `/opt/cemini/briefs/`
+
 ## [2026-06-01] ship | World Cup Bot prod pull — Bugbot exports scrub @ 17a6647
 
 - **world-cup-bot** — pushed `17a6647`: scrub `exports/` PII/paths; threshold guard skips `#` comments; **189 pytest**; closed audit PR #2
