@@ -25,6 +25,14 @@ maturity: validated
 
 Gap list after `/obsidian-architect` @ `17a6647`. **Before live POST:** @projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md (mandatory). Re-run architect + pytest after each release.
 
+## Closed in K93 adoption pass (2026-06-01)
+
+| Gap | Fix |
+| --- | --- |
+| K91 fade_watch teams still on aggressive YAML lists | `conviction.yaml` v5 hygiene in world-cup-bot |
+| No weekly external-research CLI mode | `weekly-osint-pipeline` research mode + Monokern OSINT concept |
+| Advisor silent on injury-vs-YAML conflict | Restrictive-mode hint in `advisor.py` |
+
 ## Closed in architect pass (2026-06-01)
 
 | Gap | Fix |

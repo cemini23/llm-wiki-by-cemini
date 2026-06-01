@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-01] wc-bot | K93 adoptions — conviction v5 + weekly-osint-pipeline
+
+- **Repo** — `cemini23/world-cup-bot`: conviction.yaml v5, research mode, advisor hint, tests
+- **Wiki** — @entities/tools/world-cup-bot.md, OPEN-GAPS closed rows
+- **Prod brief** — `briefs/2026-06-01_k93-wc-bot-adoptions-cemini.md`
+
 ## [2026-06-01] ingest | K93 — monokern + harness paper + v5 eval + Posts (31)
 
 - **Inbox (4)** — `monokern.docx`, `2605.30621v1.pdf`, `Tool Evaluation and Wiki Fit.docx`, `Posts.docx` (31 posts, sha `86b6855…`)

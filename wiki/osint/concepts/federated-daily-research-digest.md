@@ -8,6 +8,7 @@ related:
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/monokern-compounding-research-pipeline.md
   - projects/osint-workspace/Architecture/Architecture - wiki.md
+  - "@3d-printing-wiki/meta/daily-research-digest-cadence.md"
 maturity: core
 created: 2026-06-01
 updated: 2026-06-01
@@ -19,6 +20,7 @@ updated: 2026-06-01
 - @concepts/cemini-wiki-ingest-workflow.md — Phases 1–4
 - @concepts/monokern-compounding-research-pipeline.md — weekly deep-research overlay
 - @projects/osint-workspace/Architecture/Architecture - wiki.md
+- @3d-printing-wiki/meta/daily-research-digest-cadence.md — sibling cadence stub
 
 ## Raw Concept
 
@@ -49,7 +51,7 @@ Each sibling wiki gets a **copy of the script bundle** under its repo `scripts/`
 | image-gen-wiki | `projects/Image gen` | `research to be indexed/` | `wiki/sweeps/` |
 | gambling-wiki | `projects/Gambling wiki` | `research to be indexed/` | `wiki/sweeps/` |
 | cybersecurity-wiki | `projects/Cybersecurity wiki` | `research to be indexed/` | `wiki/sweeps/` |
-| 3d-printing-wiki | `projects/3d printing` | `research to be indexed/` | `wiki/sweeps/` |
+| 3d-printing-wiki | `projects/3d printing` | `research to be indexed/` | `wiki/sweeps/` | Brief on disk — operator install pending |
 
 **LaunchAgent labels** must be unique per wiki (e.g. `com.cemini.daily-research-digest.seo`) — see federation `install_federated_daily_digest.sh`.
 

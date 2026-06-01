@@ -10,6 +10,7 @@ related:
   - concepts/cemini-wiki-ingest-workflow.md
   - entities/tools/revfactory-harness.md
   - sources/trading-posts-compilation-31-2026-06-01.md
+  - entities/tools/world-cup-bot.md
 maturity: validated
 created: 2026-06-01
 updated: 2026-06-01

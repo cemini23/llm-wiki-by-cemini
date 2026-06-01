@@ -39,9 +39,13 @@ related:
   - meta/wc-lp-safety-cadence.md
   - concepts/cemini-knowledge-application-architecture.md
   - concepts/polymarket-negative-filter-trading.md
+  - concepts/monokern-compounding-research-pipeline.md
+  - concepts/harness-updating-vs-benefit-nonmonotonic.md
+  - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
+  - sources/arxiv-harness-updating-not-benefit-2605.30621.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-06-02
+updated: 2026-06-01
 ---
 
 ## Relations
@@ -59,6 +63,19 @@ updated: 2026-06-02
 - @meta/wc-lp-safety-cadence.md — weekly DR re-run through tournament window (next **2026-06-06**)
 - @concepts/polymarket-negative-filter-trading.md — K88 selection-before-speed; WCB `negative_filter_summary` + venue reconcile
 - @concepts/cemini-knowledge-application-architecture.md — build loop exemplar of repeat-lesson failure (K89)
+- @concepts/monokern-compounding-research-pipeline.md — K93 weekly `research run weekly-osint-pipeline`
+- @concepts/harness-updating-vs-benefit-nonmonotonic.md — K93 advisor restrictive-mode discipline
+- @sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
+- @sources/arxiv-harness-updating-not-benefit-2605.30621.md
+
+### K93 adoptions (2026-06-01)
+
+| Item | Repo | Status |
+|------|------|--------|
+| Conviction YAML v5 | `config/conviction.yaml` | **Shipped** — K91 teams removed from aggressive lists; `per_team` fade_watch unchanged |
+| Weekly OSINT research mode | `prompts/deep-research-weekly-osint-pipeline.md` | **Shipped** |
+| Advisor injury-delta hint | `world_cup_bot/advisor.py` | **Shipped** |
+| Prod brief | `briefs/2026-06-01_k93-wc-bot-adoptions-cemini.md` | Staged → cemini-prod |
 
 ## Raw Concept
 
@@ -86,7 +103,7 @@ Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code 
 |------------------|-------|
 | Repo + docs | **Live** — README, SHADOW, SETUP, **ROADMAP**, CLAUDE |
 | **Scanner (1)** | **Live** — Gamma advance markets + reward params |
-| **Conviction filter (2)** | **Live** — `config/conviction.yaml` **v4** (K84 LP safety gates) |
+| **Conviction filter (2)** | **Live** — `config/conviction.yaml` **v5** (K91 fade_watch + K93 list hygiene) |
 | **Quoter (3)** | **Live** dry-run + live POST; cancel-replace + calendar auto-cancel |
 | **Fill handler (4)** | **Live** — WS + REST reconcile; kill-switch; queue depletion + vol cooldown |
 | **Calendar guard (5)** | **Live** — CC0 fixtures; `fixture-check` upstream diff |

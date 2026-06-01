@@ -8,6 +8,7 @@ related:
   - concepts/cemini-wiki-ingest-workflow.md
   - meta/daily-research-digest-cadence.md
   - entities/people/matias-scalbi.md
+  - entities/tools/world-cup-bot.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-01

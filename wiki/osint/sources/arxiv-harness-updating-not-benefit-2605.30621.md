@@ -7,6 +7,7 @@ related:
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
   - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
   - concepts/cemini-wiki-ingest-workflow.md
+  - entities/tools/world-cup-bot.md
 maturity: validated
 read_status: read
 created: 2026-06-01
