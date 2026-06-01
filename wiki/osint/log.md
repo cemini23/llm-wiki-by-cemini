@@ -5,6 +5,12 @@
 - **world-cup-bot** — pushed `17a6647`: scrub `exports/` PII/paths; threshold guard skips `#` comments; **189 pytest**; closed audit PR #2
 - **Prod brief** — `briefs/2026-06-01_wc-prod-bugbot-exports-pull.md` → `/opt/cemini/briefs/`
 
+## [2026-06-01] activate | obsidian-second-brain on Cemini wiki
+
+- `scripts/activate_obsidian_second_brain.sh` — setup.sh + `wiki/_CLAUDE.md` (Cemini init, not stock `/obsidian-init`)
+- SessionStart inject verified; 33 `obsidian-*` slash commands; bg agent **inert**
+- Cursor: `obsidian-vault` MCP in `.cursor/mcp.json`; Claude CLI: `obsidian-vault` user MCP
+
 ## [2026-06-01] adopt | K92 Phase-0 laptop adoptions
 
 - **claude-trading-skills** — 5 no-API skills → `~/.claude/skills/trading-*`

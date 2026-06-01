@@ -10,6 +10,7 @@ related:
   - sources/kepano-obsidian-skills.md
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/agriciDaniel-claude-obsidian.md
+  - _CLAUDE.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-28
@@ -25,6 +26,7 @@ laptop_install: VERIFIED 2026-06-01 — ~/.claude/skills/obsidian-second-brain ;
 - @concepts/ip-sale-readiness.md — MIT license clears IP-sale checks (Exa-verified 2026-04-28: 402 ★)
 - @sources/kepano-obsidian-skills.md — sibling Workflow-Adopt; both target the laptop Obsidian + Claude Code loop. Use kepano's skills for syntax + this for the autonomous-curation loop
 - @sources/atomicmemory-llm-wiki-compiler.md — relevant tension: this tool autonomously rewrites Markdown; llm-wiki-compiler treats Markdown as canonical input. Use this on laptop only — never on the librarian server's synced copy
+- @_CLAUDE.md — Cemini vault operating manual (SessionStart inject; replaces stock `/obsidian-init`)
 
 ## Raw Concept
 
@@ -94,7 +96,7 @@ The "review-required" mode is the workspace's required adaptation — the upstre
 
 - Installed via `scripts/adopt_k92_phase0.sh` → `~/.claude/skills/obsidian-second-brain`, `OBSIDIAN_VAULT_PATH` = `wiki/`.
 - PostCompact background agent **disabled** (default); cron not enabled.
-- Operator next step: `/obsidian-init` in Claude Code with vault = `wiki/`.
+- Operator: read `wiki/_CLAUDE.md` (Cemini bridge); **do not** run stock `/obsidian-init`. Background agent stays **off**.
 
 ## Snippets
 

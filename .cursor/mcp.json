@@ -34,6 +34,17 @@
         "mcp-fetch-server"
       ],
       "env": {}
+    },
+    "obsidian-vault": {
+      "type": "stdio",
+      "disabled": false,
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-obsidian",
+        "/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki"
+      ],
+      "env": {}
     }
   }
 }

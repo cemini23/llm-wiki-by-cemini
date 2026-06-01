@@ -151,7 +151,7 @@ all_paths = set()
 
 for p in WIKI.rglob("*.md"):
     rel = str(p.relative_to(WIKI))
-    if rel in ("index.md", "log.md", "dashboard.md"):  # navigational, exempt
+    if rel in ("index.md", "log.md", "dashboard.md"):  # navigational, exempt from index
         continue
     text = p.read_text(errors="replace")
     fm = parse_frontmatter(text)
@@ -196,8 +196,11 @@ for src, fm in pages.items():
 # orphans: pages with zero inbound edges (excluding index/log already excluded).
 # sweeps/ holds periodic Tier-2 sweep reports — append-only, like log.md; they
 # are legitimately orphan, so exempt them from the orphan check.
-orphans = sorted(p for p in all_paths
-                 if p not in inbound and not p.startswith("sweeps/"))
+_NAV_EXEMPT = frozenset({"index.md", "log.md", "dashboard.md", "_CLAUDE.md"})
+orphans = sorted(
+    p for p in all_paths
+    if p not in inbound and not p.startswith("sweeps/") and p not in _NAV_EXEMPT
+)
 
 # bidirectional gaps: src→tgt without tgt→src
 # Hub pages (frontmatter `hub: true`) are exempt: many spokes legitimately

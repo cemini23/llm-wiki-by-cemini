@@ -3,12 +3,12 @@ title: Wiki Dashboard
 type: meta
 tags: [dashboard, dataview, navigation]
 created: 2026-04-26
-updated: 2026-04-26
+updated: 2026-06-01
 ---
 
 # Wiki Dashboard
 
-Live in-editor views over the wiki frontmatter. Companion to `index.md` (catalog) and `log.md` (chronological); this page gives **dynamic**, sortable tables that update automatically as pages change.
+Live in-editor views over the wiki frontmatter. Companion to `index.md` (catalog), `log.md` (chronological), and `_CLAUDE.md` (agent vault manual for `/obsidian-*` commands); this page gives **dynamic**, sortable tables that update automatically as pages change.
 
 **Setup** (one-time, ~30 seconds):
 1. Obsidian → Settings (`⌘,`) → Community plugins → Browse → search **Dataview** → Install + Enable
