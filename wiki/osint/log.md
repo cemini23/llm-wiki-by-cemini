@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-01] ship | CeminiSuite obsidian-architect brief → prod
+
+- **Sync** — `sync_wiki_to_librarian.sh` OK @ wiki `992f96a` (all 7 federated wikis + kb verify)
+- **Brief** — `briefs/2026-06-01_cemini-suite-obsidian-architect.md` (`skill_audit` PASS) → `cemini-prod:/opt/cemini/briefs/`
+- **Ask** — server-Claude: `/obsidian-architect` on `/opt/cemini`; handoff under `briefs/out/architecture-2026-06-01/`
+
 ## [2026-06-01] architect | OSINT WORKSPACE — /obsidian-architect @ b960aae
 
 - **Scan** — `architect_scan.py` on repo root; commit `b960aae` clean
