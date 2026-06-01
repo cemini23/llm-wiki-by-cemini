@@ -2,7 +2,7 @@
 title: World Cup Bot CLOB V2 live — index
 type: concept
 date: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-02
 tags: [world-cup-bot, clob-v2, prod-handoff]
 ai-first: true
 related:
@@ -30,7 +30,7 @@ maturity: validated
 
 ## Context
 
-Shadow soak on **cemini-prod** completed Phase 1. **egress-fi** trading units installed 2026-06-01. Live POST blocked by **`order_version_mismatch`** until `py-clob-client-v2` lands in the public repo (**shipped** @ `7054500`).
+Shadow soak on **cemini-prod** completed Phase 1. **egress-fi** live plan verified 2026-06-01 (`py-clob-client-v2`, timer on). Public repo **`d5a2f8e`** — V2 @ `7054500`, builder fix @ `806aa25`.
 
 ## Quick links
 
