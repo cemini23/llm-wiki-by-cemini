@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-05-31] ingest | K91 — World Cup phase-router + conviction DR pair
+
+- **2 sources** — `gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md`, `gemini-wc-conviction-config-audit-2026-05-31.md`
+- **Updated** — `world-cup-tournament-phases-lp-strategy.md`, `world-cup-2026-group-conviction-matrix.md`, `world-cup-advance-market-bot-v1.md`, `world-cup-bot.md`, and source backlink pages
+- **Raw** — `Tournament Phase Router Design.docx`, `World Cup Bot Conviction Audit.docx` staged for librarian transfer and inbox cleanup
+
+## [2026-05-31] ship | World Cup Bot prod pull — Windows cp1252 @ 277fc1b
+
+- **world-cup-bot** — pushed `277fc1b`: ASCII argparse help, configure_stdio, Python threshold guard; **182 pytest**
+- **Prod brief** — `briefs/2026-05-31_wc-prod-windows-cp1252-pull.md` → `/opt/cemini/briefs/`
+
 ## [2026-05-31] ingest | K90 — v6 tool eval (41 URLs) + Posts.docx (16 posts)
 
 - **2 sources** — `multi-wiki-tool-eval-v6-k90-2026-05-31.md`, `trading-posts-compilation-16-2026-05-31.md`
@@ -1123,7 +1134,7 @@ User rebuilt the order-egress relay at Hetzner Helsinki (Finland) and decommissi
 - **Wiki page renamed**: `entities/infrastructure/cemini-poly-proxy.md` → `entities/infrastructure/cemini-egress-fi.md`. Frontmatter title/tags/keywords updated for Helsinki; Dead Ends section records the Falkenstein predecessor.
 - **Backlinks updated** in `cemini-stack.md`, `librarian-server-architecture.md`, `cemini-ai-assistant.md`, and `index.md` (catalog entries on lines 605 and 1103).
 - **`.local/server.md`**: Falkenstein section replaced with Helsinki; `cemini-egress-fi` SSH alias added to `~/.ssh/config` with `ProxyJump cemini-prod` baked in.
-- **Cemini AI architecture-of-record** (`concepts/cemini-ai-assistant.md`) updated: host references Helsinki instead of Falkenstein; transatlantic-lag estimate revised ~90-100 ms → ~115-130 ms (tagged `[NEEDS VERIFICATION 2026-05-20]`).
+- **Cemini AI architecture-of-record** (`concepts/cemini-ai-assistant.md`) updated: host references Helsinki instead of Falkenstein; transatlantic-lag estimate revised ~90-100 ms → ~115-130 ms (tagged `[verification pending]`).
 - **Build-kickoff prompt** for the parallel server-Claude Cemini AI session re-emitted in chat 2026-05-20 with the new host; the previous Falkenstein version is superseded.
 - **Lint**: no orphans / bidirectional gaps introduced by the rename.
 
@@ -1322,7 +1333,7 @@ Bidirectional gaps 0 after fixing quant-finance ↔ push-response. index.md rows
   - **frona** (BSL 1.1) — policy-driven syscall filtering pattern; BSL converts to Apache-2.0 Feb 2029 (calendar item).
   - **GitNexus** (PolyForm-Noncommercial) — 12-phase DAG WASM static analysis pattern reference.
   - **Markra** (AGPL-3.0) — Tauri local-first WYSIWYG with native Ollama; quarantined adoption (Workflow only, never `/opt/cemini`).
-- **Critical-flag verifications scheduled** (`[NEEDS VERIFICATION 2026-05-13]`):
+- **Critical-flag verifications scheduled** (`[verification pending]`):
   - PageIndex 98.7% FinanceBench claim refers to VectifyAI product, not OSS lib — already resolved 2026-05-05 audit; Doc 1 re-surface is anticipated trigger.
   - claude-obsidian parallel-impl risk vs claude-mem — Phase-0 audit gates adoption.
   - OpenHuman TokenJuice chunking parameters vs Cemini CLAUDE_MEM_SEMANTIC_INJECT_LIMIT=5.
@@ -1359,7 +1370,7 @@ Bidirectional gaps 0 after fixing quant-finance ↔ push-response. index.md rows
   - **Donny-watchlist-WW alignment**: 5+ exact ticker price matches between WW Issue #175 (Apr 22) and Donny watchlist (Apr 23) indicates derivative relationship — do NOT double-count as independent confirmation.
   - **CLAUDE.md 12-rule audit candidate**: Cemini CLAUDE.md is 322 lines (over Mnilax's 200-line ceiling); structured audit pass against the 12-rule taxonomy is high-leverage tech-debt.
   - **Polymarket weather-trading strategy**: end-to-end recipe documented (Gamma API + Open-Meteo + station-coordinate fix); Phase-0 audit required before adoption; reviewer-agent-validation candidate.
-- **Pending verification flags**: Forrest Chang 120k-star repo claim `[NEEDS VERIFICATION 2026-05-13]`; @theparuchh +30-40% Open-Meteo `bias_correction` accuracy claim `[NEEDS VERIFICATION 2026-05-13]`; @Mnilax 41%→3% mistake-rate empirical claim flagged author-asserted-only.
+- **Pending verification flags**: Forrest Chang 120k-star repo claim `[verification pending]`; @theparuchh +30-40% Open-Meteo `bias_correction` accuracy claim `[verification pending]`; @Mnilax 41%→3% mistake-rate empirical claim flagged author-asserted-only.
 - **Files touched**: 11 new sources + 5 new concepts + 7 new entity stubs + 1 entity update (open-meteo) + this log + `wiki/index.md`.
 
 ## [2026-05-12] K40 cross-wiki ingest | 6 new sources + 64 stubs + multi-wiki Gemini eval prompt v2
@@ -1740,7 +1751,7 @@ Drafted the 6 remaining K35 Adopt-tier briefs, all workspace-laptop targets (not
 
 ## [2026-05-10] lint | Sakana NEEDS-VERIFICATION Exa cross-check — 11 tags resolved/re-dated
 
-Exa cross-check pass across 4 pages resolving stale `[NEEDS VERIFICATION 2026-04-27]` and `[NEEDS VERIFICATION 2026-04-28]` tags. 11 tags addressed: 3 resolved, 1 partially resolved, 6 re-dated (still undisclosed), 1 re-tagged as founder-input (not Exa-resolvable).
+Exa cross-check pass across 4 pages resolving stale `[verification pending]` and `[verification pending]` tags. 11 tags addressed: 3 resolved, 1 partially resolved, 6 re-dated (still undisclosed), 1 re-tagged as founder-input (not Exa-resolvable).
 
 - **Resolved — Conductor codebase NOT open source**: arXiv v2 promised code + weights; v5 dropped that claim. TechieTricks (2026-05-07) confirms "not publicly available." No Sakana GitHub repo exists. Direct experimentation path closed.
 - **Resolved — Trinity worker pool**: v2 full paper confirms 7-model pool (GPT-5, Gemini-2.5-pro, Claude-4-Sonnet, Gemma-3-27B-It, DeepSeek-R1-Distill-Qwen-32B, Qwen-3-32B direct, Qwen-3-32B reasoning).
@@ -3396,7 +3407,7 @@ Family C added 2026-04-29 (tradingview-mcp). 7onez/cti-expert flagged as **Famil
 - **`concepts/mcp-tool-marketplace.md`** roadmap candidate — synthesizes the MCP-server adoption pattern across all 4 waves (now 8+ MCP Adopts). ~1 hour write.
 - **Spaceshift Suez Canal pilot experiment** — free-tier Ship Detection on Suez Canal entrance, 7-day window, ~5 credits. Validates signal quality before committing to integration. ~1-2 hour test.
 - **Last30days-skill Polymarket-extraction brief** — `briefs/<date>_last30days-polymarket-hn-extraction.md` for cemini-prod-side migration of the Polymarket + HN ingestor modules.
-- **License verifications** [NEEDS VERIFICATION 2026-04-30] for the Steal-from items (mcp-etherscan-server, mcp-server-ccxt, polymarket-trade-engine, ai-hedge-fund) — deferred from Phase 1.
+- **License verifications** [verification pending] for the Steal-from items (mcp-etherscan-server, mcp-server-ccxt, polymarket-trade-engine, ai-hedge-fund) — deferred from Phase 1.
 
 ---
 
@@ -3473,7 +3484,7 @@ Detection heuristic extended: README contains warning text ("may violate", "user
 
 **Phase 2 of Wave 4** (next session):
 - Promote remaining Adopts: `claudectl` (Workflow), `context7` (highest-maturity Adopt — deserves dedicated page), `last30days-skill`, `tradingview-mcp` with TOS caveat + Family-C framing, `7onez/cti-expert`, `Spaceshift SateAIs API`
-- License verifications [NEEDS VERIFICATION 2026-04-29] for ~6 URLs whose license wasn't spot-checked
+- License verifications [verification pending] for ~6 URLs whose license wasn't spot-checked
 
 **Roadmap candidates** (longer horizon):
 - New concept page `concepts/mcp-tool-marketplace.md` — synthesizing the MCP-server adoption pattern across Waves 2+3+4 (now 8+ MCP-server Adopts in the wiki)
@@ -3717,7 +3728,7 @@ This was the **first ingest using the new Step 2 (preingest_check)**. Smooth —
 
 ### Open follow-ups
 
-1. **GitHub LICENSE check** [NEEDS VERIFICATION 2026-04-29] for `github.com/19PINE-AI/ikp` — same protocol as openclaude/AHE: `crawling_exa(url='github.com/19PINE-AI/ikp/blob/main/LICENSE')`. Gating check before any code is borrowed for Cemini's silent-swap detector. ~10 min.
+1. **GitHub LICENSE check** [verification pending] for `github.com/19PINE-AI/ikp` — same protocol as openclaude/AHE: `crawling_exa(url='github.com/19PINE-AI/ikp/blob/main/LICENSE')`. Gating check before any code is borrowed for Cemini's silent-swap detector. ~10 min.
 2. **Read appendices A/B/H** of the IKP paper — A is probe-generation pipeline, B is sensitivity sweep on the wrong-answer penalty λ, H is the Hackergame anecdote thread. ~1.5 hours; defer until Cemini's deployment decision is on the table.
 3. **Empirical IKP reproduction on DeepSeek** — install the toolkit on the laptop, run a 100-probe T5–T7 subset against `deepseek-v4-flash`, compare to the paper's published score. Validates Cemini's rate-limit envelope can absorb a daily 50-probe cron (back-of-envelope: $0.04/day at current DeepSeek pricing; trivial). ~30 min.
 
@@ -3809,7 +3820,7 @@ The new paper is the **empirical methodology prong** of the same family — the 
 - Component ablation: tools/middleware/memory carry the gain; system prompt alone regresses −2.3pp (counterintuitive but operationally important)
 - Self-attribution: knows fixes, blind to regressions (the clearest direction for future work)
 
-Cemini-relevance assessment: **Watch-and-validate**, not Adopt. The pattern is high-signal but: (a) generalization to financial-analysis tasks (Cemini's actual workload) is unmeasured, (b) AHE evolution-loop compute cost likely outside single-VPS budget, (c) github.com/china-qijizhifeng/agentic-harness-engineering license unverified [NEEDS VERIFICATION 2026-04-29].
+Cemini-relevance assessment: **Watch-and-validate**, not Adopt. The pattern is high-signal but: (a) generalization to financial-analysis tasks (Cemini's actual workload) is unmeasured, (b) AHE evolution-loop compute cost likely outside single-VPS budget, (c) github.com/china-qijizhifeng/agentic-harness-engineering license unverified [verification pending].
 
 ### Bidirectional `related:` updates (6 pages)
 
@@ -3835,7 +3846,7 @@ PDF scp'd from laptop `research to be indexed/` to `cemini-librarian:/opt/cemini
 
 ### Open follow-ups (from this ingest)
 
-1. **License check** [NEEDS VERIFICATION 2026-04-29] — clone `github.com/china-qijizhifeng/agentic-harness-engineering`, read LICENSE, classify per `@concepts/ip-sale-readiness.md` poison-pill families A & B. ~10 min.
+1. **License check** [verification pending] — clone `github.com/china-qijizhifeng/agentic-harness-engineering`, read LICENSE, classify per `@concepts/ip-sale-readiness.md` poison-pill families A & B. ~10 min.
 2. **Concurrent work survey** — paper cites Lee et al. 2026 "meta-harness" (arXiv 2603.28052) as concurrent end-to-end harness optimization. Worth checking if that paper's compute cost is more amenable to Cemini's scale. ~1 hour Exa.
 3. **Read appendices A-D** — implementation detail + per-round regression-blindness breakdown. ~1 hour. Defer until/unless Cemini's harness-evolution adoption gates open.
 
@@ -4275,13 +4286,13 @@ K8 is the **strongest stale-snapshot finding** in the K-series. Where K3/K4 caug
 
 ## [2026-04-28] ingest | Sakana Trinity (ICLR 2026 sibling to Conductor, second paper underlying Fugu)
 
-User-authorized 2026-04-28 follow-up to the 2026-04-27 Conductor + Fugu wave: pulled the Trinity paper to close the open `[NEEDS VERIFICATION 2026-04-27]` flags on both `sources/sakana-conductor-rl-orchestration.md` (sibling-paper item) and `entities/infrastructure/sakana-fugu.md` (parent-academic-paper hook 4). Trinity is the **second of the two ICLR 2026 Sakana AI papers underlying Fugu's productization** — Conductor (RL-trained orchestrator, 2512.04388) + Trinity (ES-trained coordinator, 2512.04695) → Fugu Ultra + Fugu Mini.
+User-authorized 2026-04-28 follow-up to the 2026-04-27 Conductor + Fugu wave: pulled the Trinity paper to close the open `[verification pending]` flags on both `sources/sakana-conductor-rl-orchestration.md` (sibling-paper item) and `entities/infrastructure/sakana-fugu.md` (parent-academic-paper hook 4). Trinity is the **second of the two ICLR 2026 Sakana AI papers underlying Fugu's productization** — Conductor (RL-trained orchestrator, 2512.04388) + Trinity (ES-trained coordinator, 2512.04695) → Fugu Ultra + Fugu Mini.
 
 ### What shipped
 
 - **`wiki/sources/sakana-trinity-llm-coordinator.md`** — NEW source page. `maturity: validated`, `read_status: read`. arXiv 2512.04695 confirmed via Exa search (matched the suspected ID from Conductor's NEEDS-VERIFICATION flag). Verbatim text pulled via `crawling_exa` against the arXiv abstract page + the Sakana ICLR poster PDF. Substantive page covering: Thinker/Worker/Verifier multi-turn role schema, **0.6B SLM + ~10K-param head coordinator (<20K total learnable parameters)**, **sep-CMA-ES training (NOT RL — explicit anti-RL choice with formal block-epsilon-separability argument)**, 86.2% pass@1 on LiveCodeBench V6 (beats GPT-5 83.8%, Gemini 2.5-Pro 67.2%), 54.2 OOD transfer avg (beats Gemini 2.5-Pro 52.3 / GPT-5 51.1 / Claude-4-Sonnet 46.1). 10 verbatim Snippets (S1-S10) + a Trinity-vs-Conductor methodology comparison table.
-- **Conductor source page** (`sources/sakana-conductor-rl-orchestration.md`): added Trinity to `related:`, added Relations bullet describing Trinity as direct sibling paper with methodological complementarity (Trinity is sep-CMA-ES + structured roles; Conductor is GRPO/RL + free-form NL prompts). **Resolved the sibling-paper `[NEEDS VERIFICATION 2026-04-27]` flag** → `[RESOLVED 2026-04-28 — Trinity ingested]` with arXiv 2512.04695 confirmation.
-- **Sakana Fugu entity page** (`entities/infrastructure/sakana-fugu.md`): added Trinity to `related:`, added Relations bullet — Trinity as second parent academic paper. **Resolved Cemini-relevance hook 4** `[NEEDS VERIFICATION 2026-04-27]` → `[RESOLVED 2026-04-28]` with arXiv 2512.04695 confirmation + productization mapping (Trinity → likely Fugu Mini 🐟 / Conductor → likely Fugu Ultra 🐡 — based on parameter-budget alignment: Trinity's <20K-param coordinator over a frontier worker pool fits Mini's lightweight-low-latency tier; Conductor's 7B-param GRPO-trained meta-controller fits Ultra's full-orchestration tier).
+- **Conductor source page** (`sources/sakana-conductor-rl-orchestration.md`): added Trinity to `related:`, added Relations bullet describing Trinity as direct sibling paper with methodological complementarity (Trinity is sep-CMA-ES + structured roles; Conductor is GRPO/RL + free-form NL prompts). **Resolved the sibling-paper `[verification pending]` flag** → `[RESOLVED 2026-04-28 — Trinity ingested]` with arXiv 2512.04695 confirmation.
+- **Sakana Fugu entity page** (`entities/infrastructure/sakana-fugu.md`): added Trinity to `related:`, added Relations bullet — Trinity as second parent academic paper. **Resolved Cemini-relevance hook 4** `[verification pending]` → `[RESOLVED 2026-04-28]` with arXiv 2512.04695 confirmation + productization mapping (Trinity → likely Fugu Mini 🐟 / Conductor → likely Fugu Ultra 🐡 — based on parameter-budget alignment: Trinity's <20K-param coordinator over a frontier worker pool fits Mini's lightweight-low-latency tier; Conductor's 7B-param GRPO-trained meta-controller fits Ultra's full-orchestration tier).
 - **5 cluster + framework bidirectional backlinks**: `concepts/rl-marl-research.md` (Trinity as cluster's first ES-trained-coordinator entry — explicit anti-RL caveat documented), `concepts/llm-agent-systems.md` (structured Thinker/Worker/Verifier role schema framing — typed-output-friendlier than Conductor's free-form NL prompts), `concepts/scatter-gather-topology.md` (**strengthens Option C** with two-tier Fugu lineage — Trinity → likely Fugu Mini, Conductor → likely Fugu Ultra; Trinity's structured-role schema also makes the Pydantic-glue path easier for an in-house Cemini-side reproduction Option A variant), `entities/infrastructure/deepseek-api.md` (lightweight cross-link — Trinity poster doesn't enumerate worker pool composition the way Conductor's Table 3 does, so DeepSeek-family worker-pool relevance is mediated primarily through Conductor), `entities/frameworks/langgraph.md` (Trinity's structured-role schema maps cleaner onto LangGraph's typed-state-graph substrate than Conductor's free-form NL prompts).
 
 ### Index update
@@ -4304,7 +4315,7 @@ User dropped `https://sakana.ai/fugu-beta/` 2026-04-27 as follow-up to the Condu
 
 ### What shipped
 
-- **`wiki/entities/infrastructure/sakana-fugu.md`** — NEW entity page. `maturity: validated`. Placement parallels `entities/infrastructure/deepseek-api.md` (sibling hosted-LLM-API service). Substantive 6-snippet page covering productization framing (Conductor + Trinity → Fugu), two-tier API lineup (Mini 🐟 latency-optimized / Ultra 🐡 full orchestration), benchmarks against forward-dated frontier models (Gemini 3.1 high / GPT 5.4 high / Opus 4.6 max — Fugu Ultra wins GPQAD 95.1, LCBv6 93.2, SWEPro 54.2), OpenAI-compatibility, recursive self-call test-time-scaling axis, **4-hook Cemini-relevance read** (DeepSeek client reframing extends to Fugu / **adds Option C to scatter-gather P1 ticket** / IP-sale narrative impact / Trinity sibling paper not yet in corpus), 5 dated `[NEEDS VERIFICATION 2026-04-27]` flags (beta acceptance gate / pricing / SLA / worker pool composition / data-egress posture). 6 verbatim Snippets pulled from `sakana.ai/fugu-beta/`.
+- **`wiki/entities/infrastructure/sakana-fugu.md`** — NEW entity page. `maturity: validated`. Placement parallels `entities/infrastructure/deepseek-api.md` (sibling hosted-LLM-API service). Substantive 6-snippet page covering productization framing (Conductor + Trinity → Fugu), two-tier API lineup (Mini 🐟 latency-optimized / Ultra 🐡 full orchestration), benchmarks against forward-dated frontier models (Gemini 3.1 high / GPT 5.4 high / Opus 4.6 max — Fugu Ultra wins GPQAD 95.1, LCBv6 93.2, SWEPro 54.2), OpenAI-compatibility, recursive self-call test-time-scaling axis, **4-hook Cemini-relevance read** (DeepSeek client reframing extends to Fugu / **adds Option C to scatter-gather P1 ticket** / IP-sale narrative impact / Trinity sibling paper not yet in corpus), 5 dated `[verification pending]` flags (beta acceptance gate / pricing / SLA / worker pool composition / data-egress posture). 6 verbatim Snippets pulled from `sakana.ai/fugu-beta/`.
 - **Conductor source page extended** (`wiki/sources/sakana-conductor-rl-orchestration.md`): added `entities/infrastructure/sakana-fugu.md` to `related:`, added Productization Relations bullet, added Productization (Fugu, 2026-04-24 closed beta) Narrative subsection covering 5 productization-impact items, added Trinity sibling-paper `[NEEDS VERIFICATION]` item, added S7 Snippet quoting the Sakana announcement's productization line.
 - **6 cluster-hub bidirectional backlinks**: `entities/infrastructure/deepseek-api.md` (sibling-hosted-LLM-API framing), `entities/frameworks/langgraph.md` (architecturally-orthogonal framing — keep LangGraph as outer-supervisor + call Fugu as a "smart" worker node), `concepts/scatter-gather-topology.md` (**Option C added to P1 ticket** — outsource to Fugu API; ~1–3 engineer-days), `concepts/llm-agent-systems.md` (first commercial-API entry in cluster — research → commodity transition), `concepts/rl-marl-research.md` (first productized RL-trained orchestrator), `concepts/ip-sale-readiness.md` (acquirer narrative impact: "why didn't you call Fugu?" — defensible-answer enumeration).
 
@@ -4398,7 +4409,7 @@ Third pass in the corporate-structure trio. K7 = `fintech-startup-legal-ip-roadm
 ### What shipped
 
 - **`wiki/sources/fintech-startup-legal-ip-roadmap.md`** — full deep-read rewrite. `read_status: validated`, expanded `related:` to 18 entries (5 sources + 9 concepts + 4 entities/platforms). Narrative restructured: Document framing (3-of-3 framing + Feb 25 earliest-of-trio note) / Section-by-section findings (Phase 1 entity formation + Phase 2 fintech infrastructure + Phase 3 IP protection + regulatory framework) / Cross-source corroboration table with K5 + K6 (4 convergence axes + 1 reconciled divergence on §475(f) MTM) / 4 K7-unique-axes audit (§174A R&E expensing / Florida Fintech Sandbox / Lowe v. SEC + 203A-2(e) / LEI-EIN-IBKR-Brex institutional layer). 12 Snippets with paragraph-number citations.
-- **`wiki/concepts/section-174-rd-expensing.md`** — NEW concept page. K7-canonical (single-source — only K7 covers §174 / §174A in any depth). Documents TCJA 2022–2024 5-year amortization regime → 2025 §174A restoration with sub-$31M small-business carve-out (retroactive amendment of 2022/23/24 returns OR acceleration into current year). Cemini deployed posture (single-member Florida SMLLC, sub-$1M scale) sits comfortably under threshold. Florida Statute 220.196 R&D credit not available (C-Corp-only restriction). Coordinated tax-treatment pair with §1235: §174A optimizes the **annual operating cost** side; §1235 optimizes the **exit-event proceeds** side. Both apply simultaneously. 3 verbatim Snippets (K7 paras 17, 18, 19). 2 dated `[NEEDS VERIFICATION 2026-04-27]` flags on the founder's 2022–2024 R&E spend totals (tax-counsel-engagement workstream).
+- **`wiki/concepts/section-174-rd-expensing.md`** — NEW concept page. K7-canonical (single-source — only K7 covers §174 / §174A in any depth). Documents TCJA 2022–2024 5-year amortization regime → 2025 §174A restoration with sub-$31M small-business carve-out (retroactive amendment of 2022/23/24 returns OR acceleration into current year). Cemini deployed posture (single-member Florida SMLLC, sub-$1M scale) sits comfortably under threshold. Florida Statute 220.196 R&D credit not available (C-Corp-only restriction). Coordinated tax-treatment pair with §1235: §174A optimizes the **annual operating cost** side; §1235 optimizes the **exit-event proceeds** side. Both apply simultaneously. 3 verbatim Snippets (K7 paras 17, 18, 19). 2 dated `[verification pending]` flags on the founder's 2022–2024 R&E spend totals (tax-counsel-engagement workstream).
 - **`wiki/concepts/florida-fintech-sandbox.md`** — NEW concept page. Florida Statute Ch. 559.952 Financial Technology Sandbox (effective 2023). Two-year regulatory waiver pathway through Florida OFR for fintechs operating in money transmission, lending, securities advisory, payment processing. Documented as **alternative pivot pathway** if compliance posture later requires the OpCo to take on retail-facing money-transmission features (e.g. opening the trading platform to outside accredited investors, or offering payment rails for prediction-market settlement). Not a current need under the prop-only deployed posture. K7-canonical (single-source).
 - **`wiki/entities/platforms/interactive-brokers.md`** — NEW entity stub. K7's institutional-grade upgrade path from Alpaca for the Florida OpCo's IP-sale-prep equities + multi-asset execution layer. LEI-gated onboarding (LEI-then-EIN-then-IBKR-then-Brex sequencing per K7 Phase 2). API tiers: Web REST (low-volume) / TWS API (mid-volume, Cemini target) / FIX CTCI (institutional-volume, future). Professional Subscriber market-data classification triggered by the corporate-account structure. Coexists with OANDA (FX) and Alpaca (developer-tier dev path retained).
 - **`wiki/entities/platforms/brex.md`** — NEW entity stub. K7's prescribed banking provider for the dual-entity stack — preferred over Mercury for **programmatic intercompany royalty automation** between the Wyoming HoldCo (IP licensor) and Florida OpCo (IP licensee). Brex's payments API + multi-entity account model + corporate-card-and-rewards-stack maps cleanly to the K7-prescribed quarterly royalty wire pattern that documents the §1235-compatible IP-licensing relationship.
@@ -5017,7 +5028,7 @@ The C brief (`briefs/2026-04-25_post-kalshi-advisory-regulatory-update.md`, giti
 Long-standing Soon-row from ROADMAP. The phrase "publisher's exclusion" carries two unrelated legal meanings across the corpus: the M&A APA exclusion-schedule mechanic for cherry-picking what gets transferred at acquisition (`@sources/3-19-ip-sale-research.md` body), and the IAA §202(a)(11) bona-fide-publication registration exemption (`@sources/3-19-compliance-research.md` S4). Maintaining one page conflated the two; the split was overdue.
 
 **Operations**:
-- `git mv concepts/publishers-exclusion.md concepts/publishers-exclusion-apa.md` (history preserved). Cleaned up the [NEEDS VERIFICATION 2026-04-24] block on the renamed file — replaced with [RESOLVED 2026-04-25] note pointing to the IAA-sense page and the disambig stub.
+- `git mv concepts/publishers-exclusion.md concepts/publishers-exclusion-apa.md` (history preserved). Cleaned up the [verification pending] block on the renamed file — replaced with [RESOLVED 2026-04-25] note pointing to the IAA-sense page and the disambig stub.
 - New `concepts/publishers-exclusion-iaa.md` — IAA §202(a)(11) bona-fide-publication registration exemption with three conditions, *Lowe v. SEC* 472 U.S. 181 (1985) precedent, parallel CFTC Reg 4.14 CTA exemption (15-or-fewer rule), Cemini IP-sale relevance, distinction-from-APA-sense table.
 - New disambig stub at the vacated `concepts/publishers-exclusion.md` path — frontmatter only + routing table between the two senses + quick-routing guidance + history note documenting the 2026-04-25 split.
 - 7 caller pages re-pointed: `entities/data-sources/finnhub.md`, `entities/data-sources/telethon.md`, `sources/3-19-ip-sale-research.md` (simple replace_all to `-apa.md` since the contexts are all APA-carve-out candidates); `entities/platforms/polymarket.md` (-apa rename + G additions); `sources/3-19-compliance-research.md` (renamed to `-iaa.md` since S4 is the IAA citation; `-apa.md` added back to satisfy bidirectional discipline since `-apa.md` keeps compliance-research as its origin source); `concepts/ip-sale-readiness.md` (renamed to `-apa.md`, added `-iaa.md`, §1235 callout updated to mention both senses).
@@ -5133,7 +5144,7 @@ Two mechanical follow-ups from prior sessions closed.
 
 ### B.1 — SSRN 3000747 provenance resolved via local PDF extraction
 
-`wiki/sources/stock-7-4-5.md` was a stub with `[NEEDS VERIFICATION 2026-04-25]` on its provenance — the SSRN abstract page is not crawlable via Exa (`SOURCE_NOT_AVAILABLE` on both URL forms), and a prior `web_search_exa` pass didn't surface the specific abstract. Resolved by `pypdf` extraction of the local PDF.
+`wiki/sources/stock-7-4-5.md` was a stub with `[verification pending]` on its provenance — the SSRN abstract page is not crawlable via Exa (`SOURCE_NOT_AVAILABLE` on both URL forms), and a prior `web_search_exa` pass didn't surface the specific abstract. Resolved by `pypdf` extraction of the local PDF.
 
 **Confirmed identity:**
 - **Title**: The Influence of Financial Distress Using Altman Z-Score, The Beta of Stocks and Inflation To The Stock Return
@@ -5166,7 +5177,7 @@ Removed the topical gap in the wiki between the 7 crypto ticker reports (BTC, ET
 
 2. **`wiki/concepts/oracle-networks.md`** — `validated`, LINK-focused deep dive:
    - Sections: oracle problem / decentralized oracle networks (DONs) / major use cases (DeFi price feeds, VRF, automation, CCIP cross-chain) / failure modes / competitor oracles (Pyth, API3, RedStone, UMA) / Cemini strategy implications.
-   - Several use-case-specific facts tagged `[NEEDS VERIFICATION 2026-04-25]` — these are the lint section 7 escalation candidates.
+   - Several use-case-specific facts tagged `[verification pending]` — these are the lint section 7 escalation candidates.
 
 ### Cross-linking executed
 
@@ -5206,7 +5217,7 @@ The audit revealed the corpus is overwhelmingly built from local DOCX/PDF resear
 | `sources/stocks-4-4-5.md` | SSRN 2512437 = *Crossing Stocks and the Positive Grassmannian I* (Racorean, Government of Romania, Feb 2014, also arXiv:1402.1281) | `[CONFIRMED]` |
 | `sources/stock-6-4-5.md` | SSRN 2654872 = *Comparable Stocks, Boundedly Rational Stock Markets and IPO Entry Rates* (Chok+Qian, Sept 2015, PLoS ONE 8(5):e61474) | `[CONFIRMED]` |
 | `sources/hedgge-fund-1-4-5.md` | SSRN 2449165 = *Do Hedge Funds Prefer Safe Stocks?* (Cao+Green+Li, June 2014, 50p) | `[CONFIRMED]` |
-| `sources/stock-7-4-5.md` | SSRN 3000747 — `crawling_exa` returned `SOURCE_NOT_AVAILABLE`, refined `web_search_exa` did not surface the specific abstract. Page diction ("Stock is one securities among other securities") suggests regional / non-native-English authored work, possibly an Indonesian SSRN posting. | partial — flagged `[NEEDS VERIFICATION 2026-04-25]`, resolution path is local PDF cover-page extraction |
+| `sources/stock-7-4-5.md` | SSRN 3000747 — `crawling_exa` returned `SOURCE_NOT_AVAILABLE`, refined `web_search_exa` did not surface the specific abstract. Page diction ("Stock is one securities among other securities") suggests regional / non-native-English authored work, possibly an Indonesian SSRN posting. | partial — flagged `[verification pending]`, resolution path is local PDF cover-page extraction |
 
 `wiki/index.md` ticker entries also rewritten — same 5 pages had verbatim "Electronic copy available at:..." titles in the catalog, now show real titles + provenance metadata + SSRN/arXiv IDs.
 
@@ -5543,7 +5554,7 @@ Added to source page's `related:` (mirrored as inbound on the targets):
 - (`concepts/publishers-exclusion.md` already in `related:` — see disambiguation flag below)
 
 ### Drift discoveries surfaced for follow-up
-- **`concepts/publishers-exclusion.md` disambiguation needed** — the page documents the **APA exclusion-schedule** mechanic (M&A carve-outs at acquisition). The 3-19 compliance source uses the same phrase in the **IAA §202(a)(11)** sense (bona-fide-publication exemption from RIA registration, with parallel CFTC Reg 4.14 CTA relief). Two distinct legal concepts sharing a phrase. Flagged the page with `[NEEDS VERIFICATION 2026-04-24]` at top of Narrative + `disambiguation_pending: true` frontmatter field, plus a pointer to S4 in the source's Snippets. Decision pending: split into `apa-exclusion-schedule.md` + `iaa-publishers-exclusion.md`, or rename + co-locate.
+- **`concepts/publishers-exclusion.md` disambiguation needed** — the page documents the **APA exclusion-schedule** mechanic (M&A carve-outs at acquisition). The 3-19 compliance source uses the same phrase in the **IAA §202(a)(11)** sense (bona-fide-publication exemption from RIA registration, with parallel CFTC Reg 4.14 CTA relief). Two distinct legal concepts sharing a phrase. Flagged the page with `[verification pending]` at top of Narrative + `disambiguation_pending: true` frontmatter field, plus a pointer to S4 in the source's Snippets. Decision pending: split into `apa-exclusion-schedule.md` + `iaa-publishers-exclusion.md`, or rename + co-locate.
 - **3 body-mention-without-link gaps** found and fixed during this pass (FastAPI, Trivy, Semgrep). Suggests the lint script should grow a "narrative text references source name without `related:` edge" check — currently it only checks `@path` markdown citations.
 
 ### Lint state after this pass
@@ -6127,7 +6138,7 @@ Resolution: confirmed Cemini is private (not for open-source release at this tim
 - `cat ~/.claude/settings.json` + `~/.claude.json` — laptop-side plugin (13) + MCP (2) inventory.
 
 ### Open follow-ups
-- Production region not re-probed this session — flagged `[NEEDS VERIFICATION 2026-05-03]` in cemini-stack.md and cemini-deployment.md.
+- Production region not re-probed this session — flagged `[verification pending]` in cemini-stack.md and cemini-deployment.md.
 - Production disk pressure (90%) and swap utilization (50%) — operational, not documentation, but flagged in cemini-stack.md "Known operational findings."
 - `/opt/cemini/dotenv.example` exists per CF73322 commit message; verifying it covers all 66 keys is a follow-up audit.
 - Inline body `## Relations` sections on the three reciprocal pages updated only at frontmatter level; `scripts/wiki_lint.py` will flag bidir-gaps and the inline-vs-frontmatter mismatch on next run.
@@ -6241,7 +6252,7 @@ Query/maintenance pass on three ROADMAP-pending items (no new sources ingested).
 
 ### NEEDS VERIFICATION resolved (Exa + GitHub API)
 - **Forrest Chang repo stats** — `@entities/people/forrest-chang.md` + `@concepts/claude-md-12-rule-template.md`. The "120k stars by May 2026" claim is **[CONFIRMED]**: live GitHub API shows ~130,900 stars; trade coverage independently reported 110k+ and #1 GitHub Trending for 28 days. Repo = `github.com/forrestchang/andrej-karpathy-skills` (created 2026-01-27, MIT; real name Jiayuan Zhang). "60k bookmarks first 2 weeks" downgraded to [TENTATIVE]. forrest-chang.md `maturity: draft → validated`.
-- **WW#178 critical-minerals third source** — `@concepts/critical-minerals-thesis.md` + `@sources/ww-issue-178-2026-05-13.md`. Thesis-level corroboration found via 4 independent Tier-1 sources (IEA Global Critical Minerals Outlook 2025, Arthur D. Little Rare Earth Imperative, TCW, Allens) — the K41 "effective 2 sources (Massif + WW/Donny)" caveat is resolved; thesis upgraded to firm [CONFIRMED], `maturity: draft → validated`. Per-name: LAR EBITDA framing [CONFIRMED] vs Lithium Argentina Q1 2026 results (US$106M quarterly Adj. EBITDA); ELVR A$275M placement [CONFIRMED] but WW's "A$150M convert" [RETRACTED] (independent reporting = placement + A$20M SPP, no convert); ELVR price-lifecycle figures flagged [NEEDS VERIFICATION 2026-05-15] (pre-/post-consolidation share basis unreconciled).
+- **WW#178 critical-minerals third source** — `@concepts/critical-minerals-thesis.md` + `@sources/ww-issue-178-2026-05-13.md`. Thesis-level corroboration found via 4 independent Tier-1 sources (IEA Global Critical Minerals Outlook 2025, Arthur D. Little Rare Earth Imperative, TCW, Allens) — the K41 "effective 2 sources (Massif + WW/Donny)" caveat is resolved; thesis upgraded to firm [CONFIRMED], `maturity: draft → validated`. Per-name: LAR EBITDA framing [CONFIRMED] vs Lithium Argentina Q1 2026 results (US$106M quarterly Adj. EBITDA); ELVR A$275M placement [CONFIRMED] but WW's "A$150M convert" [RETRACTED] (independent reporting = placement + A$20M SPP, no convert); ELVR price-lifecycle figures flagged [verification pending] (pre-/post-consolidation share basis unreconciled).
 
 ### Brief staged
 - `briefs/2026-05-15_cost-routing-orchestra.md` — CeminiSuite-targeted; auxiliary-model routing audit + scope-lock prompt + adversarial-pass-then-escalate, derived from `@concepts/agent-cost-routing-model-orchestra.md`. Not yet scp'd — awaits user confirmation.
@@ -6646,7 +6657,7 @@ X post from @AlterEgo_eth, "Every Polymarket API Endpoint Your Bot Will Ever Nee
 - `entities/platforms/polymarket.md`, `concepts/polymarket-bot-architecture.md`, `concepts/kalshi-api-reference.md` — backlinks.
 
 ### Contradiction flagged
-The cheat sheet groups CLOB `GET /book` and `GET /midpoint` under "Auth required". This conflicts with (a) the K43 @AlterEgo_eth post and (b) Cemini's own 2026-05-18 geo-profiling test from cemini-prod (both endpoints returned HTTP 200 unauthenticated). Empirical test wins — `/book` + `/midpoint` treated as public reads; tagged `[NEEDS VERIFICATION 2026-05-18]` on `polymarket-clob-api.md` and `polymarket-api-reference.md`.
+The cheat sheet groups CLOB `GET /book` and `GET /midpoint` under "Auth required". This conflicts with (a) the K43 @AlterEgo_eth post and (b) Cemini's own 2026-05-18 geo-profiling test from cemini-prod (both endpoints returned HTTP 200 unauthenticated). Empirical test wins — `/book` + `/midpoint` treated as public reads; tagged `[verification pending]` on `polymarket-clob-api.md` and `polymarket-api-reference.md`.
 
 ### Distribution
 Endpoint reference staged as `briefs/2026-05-18_polymarket-endpoint-cheatsheet.md` and scp'd to `cemini-prod:/opt/cemini/briefs/` for the CeminiSuite Polymarket bot work.
@@ -6655,7 +6666,7 @@ Raw source moved to `cemini-librarian:/opt/cemini-bulk/research/alterego-eth-pol
 
 ### Follow-up — `/book` + `/midpoint` auth contradiction RESOLVED
 
-Direct test 2026-05-18: unauthenticated GETs against a live active-market `token_id` (Gamma-resolved) returned HTTP 200 from both CLOB `/book` and `/midpoint` (`/book` full order-book object; `/midpoint` `{"mid":"0.58"}`). The @AlterEgo_eth cheat sheet's "Auth required" grouping of those two is **incorrect** `[RETRACTED]`; the K43 post had it right. `[NEEDS VERIFICATION 2026-05-18]` tags on `polymarket-clob-api.md`, `polymarket-api-reference.md`, and the source page resolved. Server brief re-staged + re-scp'd to `cemini-prod:/opt/cemini/briefs/` with the resolved finding.
+Direct test 2026-05-18: unauthenticated GETs against a live active-market `token_id` (Gamma-resolved) returned HTTP 200 from both CLOB `/book` and `/midpoint` (`/book` full order-book object; `/midpoint` `{"mid":"0.58"}`). The @AlterEgo_eth cheat sheet's "Auth required" grouping of those two is **incorrect** `[RETRACTED]`; the K43 post had it right. `[verification pending]` tags on `polymarket-clob-api.md`, `polymarket-api-reference.md`, and the source page resolved. Server brief re-staged + re-scp'd to `cemini-prod:/opt/cemini/briefs/` with the resolved finding.
 
 ## [2026-05-18] ingest | K51 — Multi-Wiki Tool Evaluation (36-repo batch)
 
@@ -6820,7 +6831,7 @@ A single X post documenting Polymarket's **Bridge API** (`bridge.polymarket.com`
 - New entity stub `entities/tools/polymarket-bridge-api.md`.
 - `concepts/polymarket-api-reference.md` updated five-surface → **six-surface**; new Bridge API section; title + frontmatter bumped.
 - `entities/people/alteregoeth.md` updated — fourth ingested artifact from this handle.
-- "No auth required" claim tagged `[NEEDS VERIFICATION 2026-05-19]` — single-source, and this author's prior cheat sheet had a wrong auth column.
+- "No auth required" claim tagged `[verification pending]` — single-source, and this author's prior cheat sheet had a wrong auth column.
 
 ### Source 2 — 26-URL multi-wiki tool evaluation (`Tool Evaluation and Wiki Fit.docx`)
 

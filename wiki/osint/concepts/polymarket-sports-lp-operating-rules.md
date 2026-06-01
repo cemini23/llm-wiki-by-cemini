@@ -18,16 +18,18 @@ related:
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - sources/gemini-wc-tournament-phase-router-2026-05-30.md
+  - sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md
   - meta/wc-lp-safety-cadence.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-30
+updated: 2026-05-31
 ---
 
 ## Relations
 
 - @concepts/polymarket-lp-rewards-farming.md — general LP strategy; this page is **sports-specific ops**
 - @sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md — K84 extreme-bound team verdicts
+- @sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md — follow-up FSM hooks and transition-gating details for phase-aware risk control
 - @concepts/world-cup-advance-market-bot-v1.md — primary consumer
 
 ## Raw Concept

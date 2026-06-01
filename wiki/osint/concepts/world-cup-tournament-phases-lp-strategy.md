@@ -11,12 +11,13 @@ related:
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - sources/gemini-wc-tournament-phase-router-2026-05-30.md
+  - sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md
   - entities/tools/world-cup-bot.md
   - entities/platforms/polymarket.md
   - entities/platforms/kalshi.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-30
+updated: 2026-05-31
 ---
 
 ## Relations
@@ -26,6 +27,7 @@ updated: 2026-05-30
 - @sources/gemini-wc-knockout-market-map-2026-05-30.md — DR 08 market inventory + calendar
 - @sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md — DR 09 pregame/in-play/knockout gates
 - @sources/gemini-wc-tournament-phase-router-2026-05-30.md — DR 10 FSM + CLI + ledger spec (ingested 2026-05-30)
+- @sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md — expanded FSM implementation details, transition gating, and replay/shadow test posture
 - @entities/tools/world-cup-bot.md — `config/market_phases.yaml`; phase router implementation next
 
 ## Raw Concept

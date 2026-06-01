@@ -10,12 +10,13 @@ related:
   - sources/gemini-wc2026-third-place-advancement-2026-05-29.md
   - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
+  - sources/gemini-wc-conviction-config-audit-2026-05-31.md
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
   - concepts/world-cup-tournament-phases-lp-strategy.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-30
+updated: 2026-05-31
 ---
 
 ## Relations
@@ -25,6 +26,7 @@ updated: 2026-05-30
 - @sources/gemini-wc2026-third-place-advancement-2026-05-29.md — third-place caps/skips
 - @sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md — live cross-venue verification
 - @sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md — K84 per-team LP safety verdicts (time-volatile)
+- @sources/gemini-wc-conviction-config-audit-2026-05-31.md — full 43-team stale-config pass; urgent downgrade candidates before kickoff
 
 ## Raw Concept
 

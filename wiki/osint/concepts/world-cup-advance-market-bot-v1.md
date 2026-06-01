@@ -13,9 +13,11 @@ related:
   - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
   - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
+  - sources/gemini-wc-conviction-config-audit-2026-05-31.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - sources/gemini-wc-tournament-phase-router-2026-05-30.md
+  - sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/world-cup-2026-group-conviction-matrix.md
@@ -36,7 +38,7 @@ related:
   - sources/world-cup-github-repo-eval-2026-05-29.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-05-30
+updated: 2026-05-31
 clusters: [polymarket, world-cup, market-making, oss]
 ---
 

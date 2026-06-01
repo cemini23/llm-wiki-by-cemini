@@ -12,9 +12,10 @@ related:
   - concepts/production-trading-blind-spots.md
   - entities/tools/world-cup-bot.md
   - entities/tools/openfootball-worldcup-json.md
+  - sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md
 maturity: validated
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-05-31
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-05-30
 - @sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md — cancel-window + ghost-quote context (DR 09)
 - @concepts/world-cup-tournament-phases-lp-strategy.md — primary synthesis consumer
 - @entities/tools/world-cup-bot.md — implementation target (`wc_advance_lp_v4` → v1b)
+- @sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md — follow-up deep implementation spec for FSM hooks and ops controls
 
 ## Raw Concept
 

@@ -6,17 +6,19 @@ keywords: [wc-lp-safety, gemini-dr, conviction-yaml, weekly]
 related:
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
+  - sources/gemini-wc-conviction-config-audit-2026-05-31.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - entities/tools/world-cup-bot.md
 maturity: core
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-05-31
 ---
 
 ## Relations
 
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — K84 workflow adoption
 - @sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md — source verdicts
+- @sources/gemini-wc-conviction-config-audit-2026-05-31.md — full-matrix stale configuration audit input
 - @entities/tools/world-cup-bot.md — `conviction.yaml` consumer
 
 ## Narrative

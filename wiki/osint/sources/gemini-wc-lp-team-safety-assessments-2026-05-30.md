@@ -11,11 +11,12 @@ related:
   - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
   - sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md
   - sources/trading-posts-compilation-k84-2026-05-30.md
+  - sources/gemini-wc-conviction-config-audit-2026-05-31.md
   - meta/wc-lp-safety-cadence.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-05-31
 ---
 
 ## Relations
@@ -24,6 +25,7 @@ updated: 2026-05-30
 - @concepts/world-cup-2026-group-conviction-matrix.md — team-level safety verdicts folded into matrix (K84)
 - @entities/tools/world-cup-bot.md — `conviction.yaml` should consume verdicts; **re-run before kickoff**
 - @sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md — reward-farming vs conviction framing (K82/K83)
+- @sources/gemini-wc-conviction-config-audit-2026-05-31.md — broader 43-team stale-config audit extends this team-specific batch
 
 ## Raw Concept
 

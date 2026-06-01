@@ -21,6 +21,8 @@ related:
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - sources/gemini-wc-tournament-phase-router-2026-05-30.md
+  - sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md
+  - sources/gemini-wc-conviction-config-audit-2026-05-31.md
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - concepts/production-trading-blind-spots.md
   - concepts/shadow-to-live-transition-engineering.md
