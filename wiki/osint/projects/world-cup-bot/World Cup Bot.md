@@ -3,7 +3,7 @@ title: World Cup Bot (repo)
 type: project
 status: active
 date: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-02
 tags: [project, architecture, world-cup-2026, polymarket, open-source]
 keywords: [world-cup-bot, cemini23, advance-lp, MIT, shadow-mode]
 local-path: /Users/claudiobarone/Desktop/projects/world-cup-bot
@@ -59,5 +59,6 @@ Project hub for the **public MIT** repo `cemini23/world-cup-bot`: Polymarket FIF
 
 ## Recent activity
 
-- **2026-06-01** — CLOB V2 handoff ingested; `py-clob-client-v2` patch implemented (pending push).
+- **2026-06-02** — Prod egress live verified: `806aa25` builder fix + live plan timer active; public `main` @ `d5a2f8e`, CI green, 196 pytest.
+- **2026-06-01** — CLOB V2 handoff ingested; `py-clob-client-v2` @ `7054500`.
 - **2026-06-01** — Prod brief `2026-06-01_wc-prod-bugbot-exports-pull.md` → `/opt/cemini/briefs/`.

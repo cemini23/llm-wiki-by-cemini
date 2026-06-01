@@ -2,7 +2,7 @@
 title: World Cup Bot CLOB V2 — open gaps
 type: concept
 date: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-02
 tags: [world-cup-bot, clob-v2, gaps]
 ai-first: true
 related:
@@ -14,15 +14,15 @@ maturity: validated
 
 # OPEN-GAPS — World Cup Bot CLOB V2 live
 
-Updated: 2026-06-01
+Updated: 2026-06-02
 
 ## Blocking live POST
 
 | ID | Gap | Owner | Action |
 |----|-----|-------|--------|
-| G01 | **`py-clob-client` V1** in repo | world-cup-bot | **Shipped** @ `7054500` — see [[World Cup Bot - CLOB V2 patch spec]] |
-| G02 | **`order_version_mismatch`** on egress live plan | world-cup-bot | Verify on egress after pull + wallet V2 migration |
-| G03 | **`cemini-wc-live-plan.timer`** disabled on egress | operator | Enable after G01 + preflight PASS |
+| G01 | **`py-clob-client` V1** in repo | world-cup-bot | **Closed** @ `7054500` — see [[World Cup Bot - CLOB V2 patch spec]] |
+| G02 | **`order_version_mismatch`** on egress live plan | world-cup-bot | **Closed** 2026-06-01 — live plan cycle POST + cancel-replace OK on egress-fi |
+| G03 | **`cemini-wc-live-plan.timer`** disabled on egress | operator | **Closed** 2026-06-01 — timer enabled + active |
 
 ## Egress / ops
 
@@ -49,8 +49,9 @@ Updated: 2026-06-01
 
 ## After V2 merge
 
-- [ ] Pull + pip install on egress
-- [ ] One manual live plan smoke
-- [ ] Enable `cemini-wc-live-plan.timer`
-- [ ] Update this file — close G01–G03
+- [x] Pull + pip install on egress (`py_clob_client_v2` 1.0.1)
+- [x] Live plan smoke — quote_intent + order_cancel in ledger @ 2026-06-01T19:26Z
+- [x] `cemini-wc-live-plan.timer` enabled
+- [x] G01–G03 closed
+- [x] Egress `git pull` to `d5a2f8e` (806aa25 builder fix in tree)
 - [ ] Optional: export sanitized `shadow-status --json` to `exports/` for CI audit

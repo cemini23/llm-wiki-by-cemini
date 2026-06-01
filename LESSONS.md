@@ -6,6 +6,22 @@ Newest entries on top.
 
 ---
 
+## 2026-06-01 — New Polymarket order-path repos must inherit CeminiSuite CLOB V2 stack on day one
+
+World Cup Bot shipped with **`py-clob-client` V1** in `[live]` while CeminiSuite and the OSINT wiki already pinned **`py-clob-client-v2`** (Apr 2026 cutover). Shadow Phase 1 on **cemini-prod** (`DRY_RUN=true`) never POSTed orders, so preflight reported PASS and Bugbot/architect passes missed it until **egress-fi** ran the first live `plan` → `order_version_mismatch`.
+
+**Why the gates failed:**
+- Preflight checked V1 import until patched.
+- Bugbot = static diff review (exports, kill-switch, etc.) — not cross-repo dependency parity.
+- `/obsidian-architect` closed Bugbot items; no “match CeminiSuite Polymarket stack” checklist item.
+- `LESSONS.md` had no CLOB V2 line to trigger on “double-check lessons.”
+
+**Fix shipped:** `7054500` V2 migration + `check_clob_v2_import.py` + preflight `py_clob_client_v2` when `DRY_RUN=false`; egress live plan verified 2026-06-01.
+
+*Apply*: Any new repo with Polymarket **order POST** must (1) declare `py-clob-client-v2` in `[live]`, (2) pass `check_clob_v2_import.py` in CI, (3) run one **`DRY_RUN=false` plan smoke** on non-US egress before shadow/live sign-off — not only monitor dry-run. Cross-check `@concepts/polymarket-retail-trading-discipline.md` and `CeminiSuite/services/polymarket_clob_v2_adapter.py` before calling a bot “launch ready.”
+
+---
+
 ## 2026-05-13 — OpenSpec produces well-tested code but doesn't validate spec-vs-production alignment
 
 K42 OpenSpec adoption pilot, Phase-2: 4 of 5 sprints landed (Sprints 1-4, 105/105 tests pass, harmfulness-audit gate verified end-to-end against the bundled policy). At the Sprint 5 (rollout) gate, a read-only SSH probe of the actual production Conductor at `cemini-librarian:/opt/cemini/conductor/` surfaced the operational truth: **the production `ToolOrchestrator` dispatches only `kb_search` + `stash_recall` — both read-only.** None of the 8 Polymarket tools that the K37 spec + bundled `policy.yaml` enumerate (`place_order`, `withdraw`, `close_position`, `cancel_order`, `submit_research_query`, plus quote tools) exist in production yet.
