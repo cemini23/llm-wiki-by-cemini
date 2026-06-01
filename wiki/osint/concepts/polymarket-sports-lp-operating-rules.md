@@ -12,6 +12,8 @@ related:
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - entities/tools/world-cup-bot.md
+  - concepts/sequential-optimal-execution-quoting.md
+  - sources/arxiv-signal-adaptive-execution-2605-24242-2026-06-01.md
   - entities/tools/openfootball-worldcup-json.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
   - concepts/world-cup-tournament-phases-lp-strategy.md

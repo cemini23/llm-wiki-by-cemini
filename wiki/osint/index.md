@@ -1461,6 +1461,10 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 
 - [Multi-wiki tool eval v6 K90 (41 URLs)](sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md) — `[DRAFT 2026-05-31]` First gambling-wiki surface; Harrier PM toolkits, polymarket-skills; weather-bot graveyard. — source, tool-eval, k90, v6
 - [Trading posts K90 (Posts.docx, 16 posts)](sources/trading-posts-compilation-16-2026-05-31.md) — `[DRAFT 2026-05-31]` Macro Charts opener; AlterEgo weather retail; agent-harness → CCC. — source, trading-posts, k90
+- [Multi-wiki tool eval v7 K92 (90 URLs)](sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md) — `[DRAFT 2026-06-01]` Casino/poker/stake/bovada strip; WagerBrain steal-from; iGaming dead-end. — source, tool-eval, k92
+- [Trading posts K92 (Posts.docx, 12 posts)](sources/trading-posts-compilation-12-2026-06-01.md) — `[DRAFT 2026-06-01]` Harness/macro cluster; CCC + SEO routing. — source, trading-posts, k92
+- [AlphaForgeBench 2602.18481](sources/arxiv-alphaforgebench-2602-18481-2026-06-01.md) — `[DRAFT 2026-06-01]` LLM alpha-factor benchmark; not direct trading agents. — source, arxiv, k92
+- [Signal-adaptive execution quotes 2605.24242](sources/arxiv-signal-adaptive-execution-2605-24242-2026-06-01.md) — `[DRAFT 2026-06-01]` Explicit LOB quoting theory. — source, arxiv, k92
 - [HarrierOnChain PM toolkits](entities/tools/harrier-pm-toolkits.md) — `[DRAFT 2026-05-31]` K90 Adopt; Phase-0 pending. — tool, polymarket, k90
 - [polymarket-skills (mjunaidca)](entities/tools/polymarket-skills-mjunaidca.md) — `[DRAFT 2026-05-31]` K90 Adopt; null LICENSE on gh api. — tool, polymarket, k90
 - [Macro Charts regime signals](concepts/macro-charts-regime-signals.md) — `[DRAFT 2026-05-31]` K90 newsletter opener. — concept, macro, k90

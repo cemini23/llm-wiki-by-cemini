@@ -5,6 +5,13 @@
 - **world-cup-bot** — pushed `17a6647`: scrub `exports/` PII/paths; threshold guard skips `#` comments; **189 pytest**; closed audit PR #2
 - **Prod brief** — `briefs/2026-06-01_wc-prod-bugbot-exports-pull.md` → `/opt/cemini/briefs/`
 
+## [2026-06-01] ingest | K92 — 4-file batch (2 arXiv + Posts + link eval)
+
+- **2 arXiv sources** — AlphaForgeBench 2602.18481, signal-adaptive execution 2605.24242 → 2 concepts
+- **Posts.docx** — `trading-posts-compilation-12-2026-06-01.md` (12 posts, sha cc168e87…); CCC brief + SEO style pass
+- **Link eval** — `multi-wiki-tool-eval-v7-k92-2026-06-01.md` (90 URLs, casino/poker/stake strip); **gambling-wiki** slice + WagerBrain/Bovada entities
+- **Raw** — 4 inbox files → librarian; inbox cleared
+
 ## [2026-06-01] automation | Daily digest — wiki-deduped arXiv fetch + LaunchAgent wrapper
 
 - **Fetch lane** — `paper_queries` (Exa `research paper`) → `preingest`-style wiki dedupe → download NEW arXiv PDFs to `research to be indexed/` for morning **full ingest**

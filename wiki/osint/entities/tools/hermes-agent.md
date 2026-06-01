@@ -12,6 +12,7 @@ related:
   - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
   - sources/trading-posts-compilation-6-2026-05-29.md
   - sources/trading-posts-compilation-42-2026-05-31.md
+  - sources/trading-posts-compilation-12-2026-06-01.md
   - sources/trading-posts-compilation-16-2026-05-31.md
   - concepts/hermes-onchain-forensics-pipeline.md
   - concepts/x402-agent-micropayments-data-access.md

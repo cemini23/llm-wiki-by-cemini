@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-01 — K92)
+
+- **K92 ingest (2026-06-01)** — 4 inbox files: 2 arXiv (daily digest fetch) + Posts.docx (12) + GitHub eval (90 URLs, casino/poker/stake). **5 sources + 2 concepts** on OSINT; **gambling-wiki** eval slice + WagerBrain/Bovada bot entities; CCC/SEO cross-wiki. Raw → librarian; inbox cleared.
+
 ## Current state (2026-05-31 — K91)
 
 - **K91 ingest (2026-05-31)** — World Cup DR pair (`Tournament Phase Router Design.docx`, `World Cup Bot Conviction Audit.docx`). **2 new source pages + World Cup concept/entity backlink updates.** Router spec deepens FSM transition-gating + elimination-pruning/test posture; conviction audit flags stale-team downgrade candidates and mode-precedence discipline (`fade_watch` over bilateral in conflict windows). Raw docs moved to librarian; inbox cleared.

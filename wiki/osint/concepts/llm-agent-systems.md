@@ -18,6 +18,8 @@ related:
   - sources/arxiv-graphflow-verifiable-workflows-2605.14968.md
   - concepts/skillrae-retrieval-augmented-execution.md
   - concepts/graphflow-verifiable-agent-workflows.md
+  - concepts/llm-alpha-factor-benchmarking.md
+  - sources/arxiv-alphaforgebench-2602-18481-2026-06-01.md
   - sources/3-17-agent-research.md
   - sources/3-19-automated-trading-strategy-discovery-pipeline-research.md
   - sources/3-26-d.md

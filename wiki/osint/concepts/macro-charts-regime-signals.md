@@ -5,6 +5,7 @@ tags: [concept, macro, regime, newsletter, k90]
 keywords: [macro-charts, risk-on, 2026, regime-shift]
 related:
   - sources/trading-posts-compilation-16-2026-05-31.md
+  - sources/trading-posts-compilation-12-2026-06-01.md
   - concepts/macro-weather-regime.md
 maturity: draft
 created: 2026-05-31

@@ -4,6 +4,7 @@ type: source
 tags: [source, gemini-deep-research, tool-eval, v6-prompt, license-corrections, k90, gambling-wiki]
 keywords: [autohedge, harrier, polymarket-skills, polybot, finrl, sports-betting, fredbet, hyperframes, hermes-desktop]
 related:
+  - sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md
   - sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md
   - concepts/cemini-license-posture.md
   - concepts/tool-evaluation-framework.md

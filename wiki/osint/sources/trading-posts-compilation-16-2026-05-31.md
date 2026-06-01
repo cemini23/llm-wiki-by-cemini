@@ -5,6 +5,7 @@ tags: [source, trading-posts, macro, polymarket, agent-harness, k90]
 keywords: [macro-charts, saso_capital, voxyz, alterego, tipdrop, humanoid, weather-markets]
 related:
   - sources/trading-posts-compilation-42-2026-05-31.md
+  - sources/trading-posts-compilation-12-2026-06-01.md
   - sources/trading-posts-compilation-k84-2026-05-30.md
   - concepts/macro-charts-regime-signals.md
   - concepts/polymarket-weather-trading-strategy.md

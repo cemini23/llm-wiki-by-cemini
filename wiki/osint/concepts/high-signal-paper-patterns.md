@@ -23,6 +23,8 @@ related:
   - sources/polymarket-predictions-mcp.md
   - sources/mercurialsolo-claudectl.md
   - sources/upstash-context7.md
+  - sources/arxiv-alphaforgebench-2602-18481-2026-06-01.md
+  - concepts/llm-alpha-factor-benchmarking.md
   - sources/last30days-skill-mvanhorn.md
   - sources/arxiv-epicure-food-embeddings-2605.22391.md
   - concepts/llm-augmented-entity-consolidation.md

@@ -12,6 +12,8 @@ related:
   - concepts/market-microstructure.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/cross-venue-arbitrage-pattern.md
+  - sources/arxiv-signal-adaptive-execution-2605-24242-2026-06-01.md
+  - concepts/sequential-optimal-execution-quoting.md
   - concepts/event-based-prediction-market-ml.md
   - concepts/polymarket-copy-trading-strategy.md
   - concepts/prediction-market-historical-analysis.md
