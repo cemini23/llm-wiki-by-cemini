@@ -11,6 +11,7 @@ related:
   - projects/world-cup-bot/CLOB-V2-live/OPEN-GAPS.md
   - entities/tools/world-cup-bot.md
   - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - egress live layout.md
+  - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
 maturity: validated
 ---
 

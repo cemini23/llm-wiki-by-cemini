@@ -25,6 +25,7 @@ related:
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
   - projects/world-cup-bot/Architecture/Architecture - world_cup_bot.md
+  - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
 
 maturity: validated
 created: 2026-05-13

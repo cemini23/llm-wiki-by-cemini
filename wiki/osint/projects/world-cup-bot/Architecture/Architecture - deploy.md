@@ -10,6 +10,7 @@ ai-first: true
 related:
   - projects/world-cup-bot/Architecture/Architecture - Overview.md
   - projects/world-cup-bot/World Cup Bot.md
+  - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
   - concepts/shadow-to-live-transition-engineering.md
 maturity: validated
 ---
@@ -21,7 +22,7 @@ maturity: validated
 
 ## For future Claude
 
-**`deploy/systemd/`** ships generic operator units (no Cemini hostnames in git). Installed via `deploy/systemd/install-systemd.sh --profile monitor|trading`. Wrapper: `deploy/systemd/wc_run.sh` (prod may symlink from `/opt/cemini/scripts/wc_run.sh`).
+**`deploy/systemd/`** ships generic operator units (no Cemini hostnames in git). Installed via `deploy/systemd/install-systemd.sh --profile monitor|trading`. Wrapper: `deploy/systemd/wc_run.sh` (prod may symlink from `/opt/cemini/scripts/wc_run.sh`). **Enable trading profile / `live-plan` timer only after** @projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md.
 
 <!-- @generated:start -->
 

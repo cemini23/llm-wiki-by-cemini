@@ -1602,6 +1602,7 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 - [Architecture — tools (prod)](projects/cemini-financial-suite/Architecture/Architecture - tools.md) — K71 adopt matrix (43 entries) — `architecture-module`
 - [World Cup Bot (repo)](projects/world-cup-bot/World Cup Bot.md) — Public MIT LP bot; architecture @ `17a6647` — `project`
 - [Architecture — World Cup Bot Overview](projects/world-cup-bot/Architecture/Architecture - Overview.md) — CLI + module flow @ `17a6647` — `architecture-overview`
+- [Architecture — Pre-live POST checklist](projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md) — CLOB V2 + egress smoke gate before live timer — `architecture-module`
 - [World Cup Bot — open gaps](projects/world-cup-bot/Architecture/OPEN-GAPS.md) — Shadow soak, router flags, DR cadence — `concept`
 - [World Cup Bot CLOB V2 live (index)](projects/world-cup-bot/CLOB-V2-live/Index.md) — `order_version_mismatch` patch pack @ `7054500` — `concept`
 

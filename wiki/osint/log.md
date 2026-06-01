@@ -41,6 +41,11 @@
 - **Closed** — exports CI sanitize script on repo; ROADMAP 189 tests; entity/index backlinks
 - **Still open** — SHADOW Phase 1 soak, LP DR 2026-06-06, phase-router prod flags — see OPEN-GAPS
 
+## [2026-06-02] docs | World Cup Bot pre-live POST checklist (architect hub)
+
+- **New** — `wiki/projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md` (R1–H7 gates)
+- **Linked** — Overview, OPEN-GAPS, Key decisions, deploy, entity page, CLOB-V2 index, `LESSONS.md`
+
 ## [2026-06-02] verify | World Cup Bot prod egress live + OSS launch readiness
 
 - **egress-fi** — live plan @ 19:26Z: order_cancel + quote_intent in ledger; timer enabled; repo synced to `d5a2f8e`

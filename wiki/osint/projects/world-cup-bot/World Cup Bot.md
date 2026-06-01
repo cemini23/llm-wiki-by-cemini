@@ -14,6 +14,7 @@ related:
   - projects/world-cup-bot/Architecture/Architecture - world_cup_bot.md
   - projects/world-cup-bot/Architecture/Architecture - deploy.md
   - projects/world-cup-bot/Architecture/Architecture - Key decisions.md
+  - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
   - projects/world-cup-bot/Architecture/OPEN-GAPS.md
   - projects/world-cup-bot/CLOB-V2-live/Index.md
   - projects/world-cup-bot/CLOB-V2-live/OPEN-GAPS.md
@@ -31,6 +32,7 @@ maturity: validated
 
 - [[projects/world-cup-bot/Architecture/Architecture - Overview|Architecture - Overview]] — codebase map @ `17a6647` (`/obsidian-architect`)
 - [[projects/world-cup-bot/Architecture/Architecture - Key decisions|Architecture - Key decisions]] — ADRs + commit-mined decisions
+- [[projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist|Architecture - Pre-live POST checklist]] — **mandatory gate before `DRY_RUN=false` / live timer**
 - [[projects/world-cup-bot/Architecture/OPEN-GAPS|OPEN-GAPS]] — deferred operator + doc gaps after architect pass
 - @entities/tools/world-cup-bot.md — entity/tool page (features, prod boundary)
 - @concepts/world-cup-advance-market-bot-v1.md — private Cemini spec (shared codebase history)
@@ -54,6 +56,7 @@ Project hub for the **public MIT** repo `cemini23/world-cup-bot`: Polymarket FIF
 - [[projects/world-cup-bot/Architecture/Architecture - world_cup_bot|Architecture - world_cup_bot]]
 - [[projects/world-cup-bot/Architecture/Architecture - deploy|Architecture - deploy]]
 - [[projects/world-cup-bot/Architecture/Architecture - Key decisions|Architecture - Key decisions]]
+- [[projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist|Architecture - Pre-live POST checklist]] — mandatory before live POST
 - [[projects/world-cup-bot/Architecture/OPEN-GAPS|OPEN-GAPS]]
 - [[projects/world-cup-bot/CLOB-V2-live/Index|CLOB V2 live handoff]] — `order_version_mismatch` patch spec (prod 2026-06-01)
 

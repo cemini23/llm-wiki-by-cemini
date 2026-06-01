@@ -18,7 +18,7 @@ World Cup Bot shipped with **`py-clob-client` V1** in `[live]` while CeminiSuite
 
 **Fix shipped:** `7054500` V2 migration + `check_clob_v2_import.py` + preflight `py_clob_client_v2` when `DRY_RUN=false`; egress live plan verified 2026-06-01.
 
-*Apply*: Any new repo with Polymarket **order POST** must (1) declare `py-clob-client-v2` in `[live]`, (2) pass `check_clob_v2_import.py` in CI, (3) run one **`DRY_RUN=false` plan smoke** on non-US egress before shadow/live sign-off — not only monitor dry-run. Cross-check `@concepts/polymarket-retail-trading-discipline.md` and `CeminiSuite/services/polymarket_clob_v2_adapter.py` before calling a bot “launch ready.”
+*Apply*: Any new repo with Polymarket **order POST** must (1) declare `py-clob-client-v2` in `[live]`, (2) pass `check_clob_v2_import.py` in CI, (3) run one **`DRY_RUN=false` plan smoke** on non-US egress before shadow/live sign-off — not only monitor dry-run. **Checklist (architect hub):** `@osint-wiki/projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md`. Cross-check `@concepts/polymarket-retail-trading-discipline.md` and `CeminiSuite/services/polymarket_clob_v2_adapter.py` before calling a bot “launch ready.”
 
 ---
 

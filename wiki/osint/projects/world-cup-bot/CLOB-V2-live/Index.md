@@ -9,6 +9,7 @@ related:
   - projects/world-cup-bot/World Cup Bot.md
   - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - CLOB V2 patch spec.md
   - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - egress live layout.md
+  - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
   - projects/world-cup-bot/CLOB-V2-live/OPEN-GAPS.md
   - projects/world-cup-bot/CLOB-V2-live/README.md
   - entities/tools/world-cup-bot.md
@@ -26,6 +27,7 @@ maturity: validated
 
 - [[World Cup Bot - CLOB V2 patch spec]] — **start here** (repo patches)
 - [[World Cup Bot - egress live layout]] — cemini-prod vs egress-fi systemd
+- [[Architecture - Pre-live POST checklist]] — mandatory gate (reuse on every live-POST release)
 - [[OPEN-GAPS]] — follow-ups after V2 merge
 
 ## Context

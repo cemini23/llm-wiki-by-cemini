@@ -9,6 +9,7 @@ related:
   - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - CLOB V2 patch spec.md
   - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - egress live layout.md
   - projects/world-cup-bot/Architecture/Architecture - Overview.md
+  - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
   - projects/world-cup-bot/Architecture/OPEN-GAPS.md
   - projects/world-cup-bot/Architecture/Architecture - Key decisions.md
   - concepts/world-cup-advance-market-bot-v1.md
@@ -40,12 +41,13 @@ related:
   - concepts/polymarket-negative-filter-trading.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-06-01
+updated: 2026-06-02
 ---
 
 ## Relations
 
 - @projects/world-cup-bot/Architecture/Architecture - Overview.md — `/obsidian-architect` codebase map @ `17a6647`
+- @projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md — mandatory before live POST (CLOB V2 + egress smoke)
 - @projects/world-cup-bot/Architecture/OPEN-GAPS.md — architect gap tracker (shadow soak, router flags, DR cadence)
 - @concepts/world-cup-advance-market-bot-v1.md — full v1 architecture spec (private Cemini module shares this codebase)
 - @concepts/pnl-attribution-versioning.md — `logic_version` + scope=current pattern mirrored in OSS ledger

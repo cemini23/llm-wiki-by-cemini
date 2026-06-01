@@ -2,14 +2,14 @@
 title: World Cup Bot architecture — open gaps
 type: concept
 date: 2026-06-01
-updated: 2026-06-01
-tags: [architecture, world-cup-bot, gaps]
-scanned-commit: 17a6647
+updated: 2026-06-02
+scanned-commit: d5a2f8e
 ai-first: true
 related:
   - projects/world-cup-bot/World Cup Bot.md
   - projects/world-cup-bot/Architecture/Architecture - Overview.md
   - projects/world-cup-bot/Architecture/Architecture - Key decisions.md
+  - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
   - entities/tools/world-cup-bot.md
   - meta/wc-lp-safety-cadence.md
 maturity: validated
@@ -23,7 +23,7 @@ maturity: validated
 
 ## For future Claude
 
-Gap list after `/obsidian-architect` @ `17a6647`. **Closed in this pass** items are checked; re-run architect + pytest after each release.
+Gap list after `/obsidian-architect` @ `17a6647`. **Before live POST:** @projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md (mandatory). Re-run architect + pytest after each release.
 
 ## Closed in architect pass (2026-06-01)
 
@@ -34,6 +34,7 @@ Gap list after `/obsidian-architect` @ `17a6647`. **Closed in this pass** items 
 | Bugbot: threshold guard false positives on `#` comments | `line_matches_threshold()` @ `17a6647` |
 | ROADMAP test count drift (187 vs 189) | ROADMAP → 189 pytest |
 | Entity page missing architecture links | Updated @entities/tools/world-cup-bot.md |
+| No pre–live-POST stack parity gate | @projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md @ `d5a2f8e` |
 
 ## Still open (operator / product)
 
