@@ -4,6 +4,10 @@ type: entity
 tags: [tool, polymarket, kalshi, world-cup-2026, lp-bot, open-source, cemini23, k82, k83, k84]
 keywords: [world-cup-bot, advance-to-knockout, conviction-lp, github, mit, outlier-weekly, calendar-guard, cross-venue-scanner, rewards-sync, shadow-status, liquidity-scanner]
 related:
+  - projects/world-cup-bot/World Cup Bot.md
+  - projects/world-cup-bot/Architecture/Architecture - Overview.md
+  - projects/world-cup-bot/Architecture/OPEN-GAPS.md
+  - projects/world-cup-bot/Architecture/Architecture - Key decisions.md
   - concepts/world-cup-advance-market-bot-v1.md
   - sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md
   - sources/gemini-wc2026-third-place-advancement-2026-05-29.md
@@ -33,11 +37,13 @@ related:
   - concepts/polymarket-negative-filter-trading.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-31
+updated: 2026-06-01
 ---
 
 ## Relations
 
+- @projects/world-cup-bot/Architecture/Architecture - Overview.md — `/obsidian-architect` codebase map @ `17a6647`
+- @projects/world-cup-bot/Architecture/OPEN-GAPS.md — architect gap tracker (shadow soak, router flags, DR cadence)
 - @concepts/world-cup-advance-market-bot-v1.md — full v1 architecture spec (private Cemini module shares this codebase)
 - @concepts/pnl-attribution-versioning.md — `logic_version` + scope=current pattern mirrored in OSS ledger
 - @concepts/trading-bot-logging-discipline.md — structured JSONL events with stable `event=` names

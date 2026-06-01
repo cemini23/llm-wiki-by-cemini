@@ -3,11 +3,11 @@ title: Architecture - services (prod)
 type: architecture-module
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, wave4]
-keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
+tags: [architecture, cemini-suite, prod-handoff, wave5]
+keywords: [Cemini-Financial-Suite, /opt/cemini, 8faf94e]
 deploy-root: /opt/cemini
-scanned-commit: e8fd49f
-provenance: prod-briefs-out-architecture-2026-06-01-wave4
+scanned-commit: 8faf94e
+provenance: prod-briefs-out-architecture-2026-06-01-wave5
 ai-first: true
 module: services
 path: services/
@@ -26,11 +26,11 @@ maturity: validated
 
 ## For future Claude
 
-Prod `services` @ e8fd49f.
+Prod `services` @ 8faf94e.
 
 # services — Long-running sidecars & domain services
 
-Largest Python package in the monorepo (141 source files @ `e8fd49f`). Docker images for many intelligence/ingestion containers build from here. Import rules: may use `cemini_contracts`, `core`, `shared`, `intelligence`, `risk` (`check_imports.py`).
+Largest Python package in the monorepo (141 source files @ `8f319d9`). Docker images for many intelligence/ingestion containers build from here. Import rules: may use `cemini_contracts`, `core`, `shared`, `intelligence`, `risk` (`check_imports.py`).
 
 ## Subdirectories (compose-backed)
 

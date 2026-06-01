@@ -35,7 +35,7 @@ updated: 2026-06-01
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md — prod `/opt/cemini` @ e3674e4
 - @projects/cemini-financial-suite/Architecture/Architecture - Key decisions.md — prod commit-mined signals
 - @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md — deferred architecture areas post wave 4
-- @projects/cemini-financial-suite/Architecture/Architecture - Overview.md — prod stack @ e8fd49f
+- @projects/cemini-financial-suite/Architecture/Architecture - Overview.md — prod stack @ 8faf94e
 - @concepts/laptop-prod-research-split.md — which **machine** runs which research step (orthogonal to git layout)
 - @concepts/librarian-server-architecture.md — three-server runtime topology (prod / librarian / laptop editor)
 - @concepts/cemini-deployment.md — how the deploy monorepo lands on Hetzner

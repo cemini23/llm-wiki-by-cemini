@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-06-01] ingest | CeminiSuite architecture wave 5 @ 8faf94e
+
+- **Pull** — prod snapshot `Architecture - prod-snapshot-2026-06-01.md`; OPEN-GAPS narrowed (EMS down, octotools, gates)
+- **Update** — 27 architecture pages @ `8faf94e`; sync to librarian
+
 ## [2026-06-01] ingest | CeminiSuite architecture wave 4 @ e8fd49f
 
 - **Pull** — prod handoff resync: db + db ERD, tools + adopt matrix, ui, strategies, data plane, debate/conductor, logit_pricing, shared/intelligence
@@ -28,6 +33,13 @@
 - **Scan** — `architect_scan.py` on repo root; commit `b960aae` clean
 - **New** — `projects/osint-workspace/` hub + `Architecture/` (Overview, conductor, wiki, briefs, ui, Key decisions) with `@generated` sentinels
 - **Backlink** — @concepts/cemini-repository-topology.md → architecture overview
+
+## [2026-06-01] architect | World Cup Bot — /obsidian-architect @ 17a6647
+
+- **Scan** — `architect_scan.py` on `~/Desktop/projects/world-cup-bot`; commit `17a6647`
+- **New** — `wiki/projects/world-cup-bot/` hub + `Architecture/*` (overview, world_cup_bot, deploy, key decisions, OPEN-GAPS)
+- **Closed** — exports CI sanitize script on repo; ROADMAP 189 tests; entity/index backlinks
+- **Still open** — SHADOW Phase 1 soak, LP DR 2026-06-06, phase-router prod flags — see OPEN-GAPS
 
 ## [2026-06-01] ship | World Cup Bot prod pull — Bugbot exports scrub @ 17a6647
 

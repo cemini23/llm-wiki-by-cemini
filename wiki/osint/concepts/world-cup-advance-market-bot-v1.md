@@ -15,6 +15,7 @@ related:
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
   - sources/gemini-wc-conviction-config-audit-2026-05-31.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
+  - projects/world-cup-bot/World Cup Bot.md
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - sources/gemini-wc-tournament-phase-router-2026-05-30.md
   - sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md

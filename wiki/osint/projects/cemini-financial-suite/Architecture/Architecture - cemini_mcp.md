@@ -3,11 +3,11 @@ title: Architecture - cemini_mcp (prod)
 type: architecture-module
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, wave4]
-keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
+tags: [architecture, cemini-suite, prod-handoff, wave5]
+keywords: [Cemini-Financial-Suite, /opt/cemini, 8faf94e]
 deploy-root: /opt/cemini
-scanned-commit: e8fd49f
-provenance: prod-briefs-out-architecture-2026-06-01-wave4
+scanned-commit: 8faf94e
+provenance: prod-briefs-out-architecture-2026-06-01-wave5
 ai-first: true
 module: cemini_mcp
 path: cemini_mcp/
@@ -26,7 +26,7 @@ maturity: validated
 
 ## For future Claude
 
-Prod `cemini_mcp` @ e8fd49f.
+Prod `cemini_mcp` @ 8faf94e.
 
 # cemini_mcp — Read-Only MCP Intelligence Server
 
@@ -46,7 +46,7 @@ Exposes Cemini `intel:*` Redis state and selected Postgres risk readers as typed
 | `tests/test_tools.py` | Asserts tool inventory count (source of truth per CLAUDE.md) |
 <!-- @generated:end -->
 
-## Tool inventory (@e8fd49f)
+## Tool inventory (@8f319d9)
 
 <!-- @generated:start -->
 **29** `@mcp.tool` functions in `server.py` (see `cemini_mcp/tests/test_tools.py` — `len(tools) == 29`).

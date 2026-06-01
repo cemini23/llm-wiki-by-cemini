@@ -1592,13 +1592,17 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 
 - [OSINT Workspace (repo)](projects/osint-workspace/OSINT Workspace.md) — This git repo: wiki librarian, `scripts/`, laptop `conductor/` MCP, `briefs/` staging — `project`
 - [Architecture — OSINT Workspace Overview](projects/osint-workspace/Architecture/Architecture - Overview.md) — Stack + module diagram @ `b960aae` — `architecture-overview`
-- [Cemini Financial Suite (deploy monorepo)](projects/cemini-financial-suite/Cemini Financial Suite.md) — Prod `/opt/cemini` hub; architecture @ `e8fd49f` wave 4 — `project`
+- [Cemini Financial Suite (deploy monorepo)](projects/cemini-financial-suite/Cemini Financial Suite.md) — Prod `/opt/cemini` hub; architecture @ `8faf94e` wave 5 — `project`
 - [Architecture — Index (prod MOC)](projects/cemini-financial-suite/Architecture/Architecture - Index.md) — Map of all CeminiSuite architecture pages — `architecture-overview`
 - [Architecture — Cemini Financial Suite Overview (prod)](projects/cemini-financial-suite/Architecture/Architecture - Overview.md) — Mermaid + import layers @ `e8fd49f` — `architecture-overview`
-- [CeminiSuite architecture — open gaps](projects/cemini-financial-suite/Architecture/OPEN-GAPS.md) — Remaining deferred (runtime snapshot, CI, …) post wave 4 — `concept`
+- [CeminiSuite architecture — open gaps](projects/cemini-financial-suite/Architecture/OPEN-GAPS.md) — EMS down, octotools cached, gates (post wave 5) — `concept`
+- [Architecture — prod snapshot 2026-06-01](projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md) — Ephemeral `docker compose ps` + systemd — `architecture-module`
 - [Architecture — db (prod)](projects/cemini-financial-suite/Architecture/Architecture - db.md) — Schema ownership + dbmate flow — `architecture-module`
 - [Architecture — db ERD (prod)](projects/cemini-financial-suite/Architecture/Architecture - db ERD.md) — 52-table domain diagram — `architecture-module`
 - [Architecture — tools (prod)](projects/cemini-financial-suite/Architecture/Architecture - tools.md) — K71 adopt matrix (43 entries) — `architecture-module`
+- [World Cup Bot (repo)](projects/world-cup-bot/World Cup Bot.md) — Public MIT LP bot; architecture @ `17a6647` — `project`
+- [Architecture — World Cup Bot Overview](projects/world-cup-bot/Architecture/Architecture - Overview.md) — CLI + module flow @ `17a6647` — `architecture-overview`
+- [World Cup Bot — open gaps](projects/world-cup-bot/Architecture/OPEN-GAPS.md) — Shadow soak, router flags, DR cadence — `concept`
 
 ## How this index works
 

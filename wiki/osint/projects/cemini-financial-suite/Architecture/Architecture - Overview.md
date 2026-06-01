@@ -3,11 +3,11 @@ title: Architecture — Overview (prod)
 type: architecture-overview
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, wave4]
-keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
+tags: [architecture, cemini-suite, prod-handoff, wave5]
+keywords: [Cemini-Financial-Suite, /opt/cemini, 8faf94e]
 deploy-root: /opt/cemini
-scanned-commit: e8fd49f
-provenance: prod-briefs-out-architecture-2026-06-01-wave4
+scanned-commit: 8faf94e
+provenance: prod-briefs-out-architecture-2026-06-01-wave5
 ai-first: true
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
@@ -32,6 +32,7 @@ related:
   - projects/cemini-financial-suite/Architecture/Architecture - deploy-systemd.md
   - projects/cemini-financial-suite/Architecture/Architecture - ems.md
   - projects/cemini-financial-suite/Architecture/Architecture - logit_pricing.md
+  - projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md
   - projects/cemini-financial-suite/Architecture/Architecture - services.md
   - projects/cemini-financial-suite/Architecture/Architecture - shared and intelligence.md
   - projects/cemini-financial-suite/Architecture/Architecture - strategies.md
@@ -63,14 +64,14 @@ maturity: validated
 - @projects/cemini-financial-suite/Architecture/Architecture - deploy-systemd.md
 - @projects/cemini-financial-suite/Architecture/Architecture - ems.md
 - @projects/cemini-financial-suite/Architecture/Architecture - logit_pricing.md
+- @projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md
 - @projects/cemini-financial-suite/Architecture/Architecture - services.md
 - @projects/cemini-financial-suite/Architecture/Architecture - shared and intelligence.md
 - @projects/cemini-financial-suite/Architecture/Architecture - strategies.md
-- @projects/cemini-financial-suite/Architecture/Architecture - tools.md
 
 ## For future Claude
 
-Prod stack @ e8fd49f wave 4.
+Prod stack @ 8faf94e.
 
 # Cemini Financial Suite — Architecture Overview
 
@@ -188,27 +189,28 @@ Violations fail CI (`import-boundary-check` in `deploy.yml`).
 | **EMS executor** | `ems/main.py`, `core/ems/router.py` | Subscribes `trade_signals`; governor pre-check |
 | **Kalshi autopilot** | @projects/cemini-financial-suite/Architecture/Architecture - Kalshi by Cemini.md | Parallel prediction-market loop |
 | **PM operator** | @projects/cemini-financial-suite/Architecture/Architecture - Polymarket.md, `cemini-pm-*` timers | CLOB sleeves, host scripts |
-| **MCP client** | @projects/cemini-financial-suite/Architecture/Architecture - cemini_mcp.md | Read-only intel tools (29 @ `e8fd49f`) |
+| **MCP client** | @projects/cemini-financial-suite/Architecture/Architecture - cemini_mcp.md | Read-only intel tools (29 @ `8f319d9`) |
 | **Wiki / librarian** | kb-server `10.0.0.2:3838` (external) | `wiki_search`, `core/wiki_enforcement` |
 
-## Module census (@e8fd49f)
+## Module census (@8f319d9)
 
 <!-- @generated:start -->
 | Module | Path | source_files | role_hint |
 |--------|------|--------------|-----------|
 | services | `services/` | 141 | core — @projects/cemini-financial-suite/Architecture/Architecture - services.md |
-| tools | `tools/` | 129 | support — @projects/cemini-financial-suite/Architecture/Architecture - tools.md |
+| tools | `tools/` | 129 | core — @projects/cemini-financial-suite/Architecture/Architecture - tools.md |
 | core | `core/` | 107 | core — @projects/cemini-financial-suite/Architecture/Architecture - core.md |
 | db | `db/` | 85 | core — @projects/cemini-financial-suite/Architecture/Architecture - db.md |
-| QuantOS | `QuantOS/` | 80 | core — @projects/cemini-financial-suite/Architecture/Architecture - QuantOS.md |
+| QuantOS | `QuantOS/` | 80 | core |
 | cemini_contracts | `cemini_contracts/` | 78 | core — @projects/cemini-financial-suite/Architecture/Architecture - cemini_contracts.md |
-| Kalshi by Cemini | `Kalshi by Cemini/` | 71 | core — @projects/cemini-financial-suite/Architecture/Architecture - Kalshi by Cemini.md |
+| Kalshi by Cemini | `Kalshi by Cemini/` | 71 | core |
 | research | `research/` | 37 | core |
-| cemini_mcp | `cemini_mcp/` | 28 | core — @projects/cemini-financial-suite/Architecture/Architecture - cemini_mcp.md |
-| trading_playbook | `trading_playbook/` | 10 | core — @projects/cemini-financial-suite/Architecture/Architecture - trading_playbook.md |
-| agents | `agents/` | 10 | core — @projects/cemini-financial-suite/Architecture/Architecture - agents.md |
-| ingestion | `ingestion/` | 13 | core |
-| scrapers | `scrapers/` | 11 | core |
+| shared | `shared/` | 31 | core |
+| cemini_mcp | `cemini_mcp/` | 28 | core |
+| docker | `docker/` | 24 | core |
+| strategies | `strategies/` | 21 | core |
+| debate_protocol | `debate_protocol/` | 18 | core |
+| conductor | `conductor/` | 17 | core |
 
 **Absent on prod:** `Cemini-Suite/` (laptop-only in reference clone).
 

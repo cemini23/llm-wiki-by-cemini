@@ -3,11 +3,11 @@ title: Architecture - db ERD (prod)
 type: architecture-module
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, wave4]
-keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
+tags: [architecture, cemini-suite, prod-handoff, wave5]
+keywords: [Cemini-Financial-Suite, /opt/cemini, 8faf94e]
 deploy-root: /opt/cemini
-scanned-commit: e8fd49f
-provenance: prod-briefs-out-architecture-2026-06-01-wave4
+scanned-commit: 8faf94e
+provenance: prod-briefs-out-architecture-2026-06-01-wave5
 ai-first: true
 module: db ERD
 path: db/
@@ -28,11 +28,11 @@ maturity: validated
 
 ## For future Claude
 
-Prod `db ERD` @ e8fd49f.
+Prod `db ERD` @ 8faf94e.
 
 # db — Logical ERD & table ownership
 
-Derived from `db/schema.sql` (52 `public` tables @ `e8fd49f`). **No FK graph** in dump — relationships below are **logical** (producer → consumer), not enforced constraints.
+Derived from `db/schema.sql` (52 `public` tables @ `de5ad93`). **No FK graph** in dump — relationships below are **logical** (producer → consumer), not enforced constraints.
 
 ## Domain map
 

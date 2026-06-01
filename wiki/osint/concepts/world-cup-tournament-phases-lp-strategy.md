@@ -4,6 +4,7 @@ type: concept
 tags: [concept, world-cup-2026, polymarket, knockout, lp-bot, tournament-phases, k85]
 keywords: [knockout-round, reach-final, in-play, lineup-injury, phase-router, market-phases]
 related:
+  - projects/world-cup-bot/World Cup Bot.md
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - concepts/world-cup-2026-group-conviction-matrix.md

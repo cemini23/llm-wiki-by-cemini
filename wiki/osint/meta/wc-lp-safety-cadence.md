@@ -9,6 +9,7 @@ related:
   - sources/gemini-wc-conviction-config-audit-2026-05-31.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - entities/tools/world-cup-bot.md
+  - projects/world-cup-bot/Architecture/OPEN-GAPS.md
 maturity: core
 created: 2026-05-30
 updated: 2026-05-31

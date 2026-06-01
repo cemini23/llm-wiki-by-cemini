@@ -3,11 +3,11 @@ title: CeminiSuite tool adopt matrix (generated)
 type: concept
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, wave4]
-keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
+tags: [architecture, cemini-suite, prod-handoff, wave5]
+keywords: [Cemini-Financial-Suite, /opt/cemini, 8faf94e]
 deploy-root: /opt/cemini
-scanned-commit: e8fd49f
-provenance: prod-briefs-out-architecture-2026-06-01-wave4
+scanned-commit: 8faf94e
+provenance: prod-briefs-out-architecture-2026-06-01-wave5
 ai-first: true
 related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
@@ -24,7 +24,7 @@ maturity: validated
 
 ## For future Claude
 
-Regenerable K71 tool manifest; scripts/export_tool_adopt_matrix.py on prod.
+Regenerable adopt matrix.
 
 <!-- @generated:start tool-adopt-matrix -->
 | Slug | Verdict | Batch | Repo | Reason / notes |
@@ -32,10 +32,10 @@ Regenerable K71 tool manifest; scripts/export_tool_adopt_matrix.py on prod.
 | `suislanchez-weather` | **STEAL_FROM** | k60 | suislanchez/polymarket-kalshi-weather-bot | No LICENSE on main — pattern extract only |
 | `trademaster-ntu` | **STEAL_FROM** | k60 | TradeMaster-NTU/TradeMaster | Apache — eval/simulator patterns only; no prod install |
 | `coldmath-adversary` | **STEAL_FROM** | k61 | ColdMath/polymarket-weather | Adversary model K61 — watchlist only |
-| `katbrink-weather` | **—** | k63 | Katbrink/polymarket-weather-trading-bot |  |
-| `openpatchlab-weather` | **—** | k63 | OpenPatchLab/polymarket-weather-trading-bot | MIT weather bot — verify LICENSE on audit |
+| `katbrink-weather` | **DEFER** | k63 | Katbrink/polymarket-weather-trading-bot | k63 — license audit pending |
+| `openpatchlab-weather` | **DEFER** | k63 | OpenPatchLab/polymarket-weather-trading-bot | k63 — verify LICENSE file on main before GO/STEAL_FROM |
 | `pm-weather-bot-moonsat` | **REJECT** | k63 | MoonsatProtocol/Polymarket-Weather-Bot | No LICENSE; freemium |
-| `tsukamg-weather-engine` | **—** | k63 | Tsukamg/polymarket-weather-trading-engine |  |
+| `tsukamg-weather-engine` | **DEFER** | k63 | Tsukamg/polymarket-weather-trading-engine | k63 — license audit pending |
 | `arcticdb` | **STEAL_FROM** | k68 | man-group/ArcticDB | Step 189 — read-only bulk bars |
 | `aruneshdev-kalshi-weather` | **REJECT** | k68 | AruneshDev/Automated-Trading-System-Kalshi-Weather-Model | No LICENSE artifact (K68/K66 caution) |
 | `chronos-forecasting` | **DEFER** | k68 | amazon-science/chronos-forecasting | Step 64/109 comparison |
@@ -73,5 +73,5 @@ Regenerable K71 tool manifest; scripts/export_tool_adopt_matrix.py on prod.
 | `pmxt` | **STEAL_FROM** | k76 | pmxt-dev/pmxt | K76-D — fork+pin; PM+Kalshi only |
 | `zostaff-poly-arbitrage-bot` | **STEAL_FROM** | k76 | zostaff/poly-arbitrage-bot | K76-C — core/pm_kl_execution/partial_fill.py |
 
-**Manifest entries:** 43 (DEFER=10, GO=3, LAPTOP_ONLY=2, REJECT=7, STEAL_FROM=18, —=3)
+**Manifest entries:** 43 (DEFER=13, GO=3, LAPTOP_ONLY=2, REJECT=7, STEAL_FROM=18)
 <!-- @generated:end tool-adopt-matrix -->

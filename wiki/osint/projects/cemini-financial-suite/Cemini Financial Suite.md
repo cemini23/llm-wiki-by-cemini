@@ -30,6 +30,7 @@ related:
   - projects/cemini-financial-suite/Architecture/Architecture - deploy-systemd.md
   - projects/cemini-financial-suite/Architecture/Architecture - ems.md
   - projects/cemini-financial-suite/Architecture/Architecture - logit_pricing.md
+  - projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md
   - projects/cemini-financial-suite/Architecture/Architecture - services.md
   - projects/cemini-financial-suite/Architecture/Architecture - shared and intelligence.md
   - projects/cemini-financial-suite/Architecture/Architecture - strategies.md
@@ -42,22 +43,24 @@ related:
   - entities/infrastructure/cemini-stack.md
   - concepts/librarian-server-architecture.md
   - concepts/laptop-prod-research-split.md
+  - projects/world-cup-bot/World Cup Bot.md
 maturity: validated
 ---
 
 ## Relations
 
 - @projects/cemini-financial-suite/Architecture/Architecture - Index.md — MOC (26 pages @ wave 4)
-- @projects/cemini-financial-suite/Architecture/Architecture - Overview.md — prod stack @ **`e8fd49f`**
+- @projects/cemini-financial-suite/Architecture/Architecture - Overview.md — prod stack @ **`8faf94f`**
+- @projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md — live compose ps snapshot (ephemeral)
 - @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md — remaining deferred items (runtime snapshot, CI, …)
 - @projects/osint-workspace/OSINT Workspace.md — research wiki federation
+- @projects/world-cup-bot/World Cup Bot.md — related OSS bot (separate repo)
 
 ## For future Claude
 
-Deploy monorepo on **`cemini-prod:/opt/cemini`**. Architecture handoff wave 4 ingested **2026-06-01** @ **`e8fd49f`**: closed **db ERD**, **tools/** + adopt matrix, **ui**, **strategies**, **data plane**, **debate/conductor**, **logit_pricing**, **shared/intelligence**. Start at Index; open gaps only in OPEN-GAPS.md.
+Deploy monorepo on **`cemini-prod:/opt/cemini`**. Architecture @ **`8faf94f`** (wave 5): **prod runtime snapshot**, handoff CI, `@generated` patch scripts, Deephaven in data plane. Start at Index; remaining gaps in OPEN-GAPS.md (EMS down, octotools cached, gates).
 
 ## Recent activity
 
-- **2026-06-01** — Wave 4 resync @ `e8fd49f` (ERD + tools matrix + 9 new module pages).
-- **2026-06-01** — Gap-close P0–P2 @ `de5ad93`.
-- **2026-06-01** — Initial ingest @ `e3674e4`.
+- **2026-06-01** — Wave 5 resync @ `8faf94f` (`prod-snapshot-2026-06-01.md`, narrowed OPEN-GAPS).
+- **2026-06-01** — Wave 4 @ `e8fd49f`.

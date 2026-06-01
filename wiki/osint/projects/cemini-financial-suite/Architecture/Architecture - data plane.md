@@ -3,11 +3,11 @@ title: Architecture - data plane (prod)
 type: architecture-module
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, wave4]
-keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
+tags: [architecture, cemini-suite, prod-handoff, wave5]
+keywords: [Cemini-Financial-Suite, /opt/cemini, 8faf94e]
 deploy-root: /opt/cemini
-scanned-commit: e8fd49f
-provenance: prod-briefs-out-architecture-2026-06-01-wave4
+scanned-commit: 8faf94e
+provenance: prod-briefs-out-architecture-2026-06-01-wave5
 ai-first: true
 module: data plane
 path: db/
@@ -26,7 +26,7 @@ maturity: validated
 
 ## For future Claude
 
-Prod `data plane` @ e8fd49f.
+Prod `data plane` @ 8faf94e.
 
 # Data plane — Postgres, Redis, ArcticDB, Deephaven
 
@@ -49,7 +49,14 @@ Prod `data plane` @ e8fd49f.
 
 ## Deephaven
 
-Declared in `docker/compose.ui.yml` with `deephaven_data` volume. **Usage wiring in app code:** minimal in this tree — treat as operator analytics shell unless extended.
+| Item | Evidence |
+|------|----------|
+| Compose | `deephaven` in `docker/compose.ui.yml` — port **10000**, volume `deephaven_data` |
+| Notebooks mount | `../ui:/notebooks/ui:ro` — loads `ui/dashboard.py` |
+| App code | `ui/dashboard.py` — `deephaven.ui` + Postgres reads (`raw_market_ticks`, `ai_trade_logs`) |
+| Hardening | `tests/test_docker_user_audit.py` — PENDING_HARDENING (Java `/cache/` uid) |
+
+Operator analytics shell over TimescaleDB; not on the trading hot path.
 
 ## Related
 

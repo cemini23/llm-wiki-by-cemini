@@ -3,11 +3,11 @@ title: Architecture - Docker services (prod)
 type: architecture-module
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, wave4]
-keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
+tags: [architecture, cemini-suite, prod-handoff, wave5]
+keywords: [Cemini-Financial-Suite, /opt/cemini, 8faf94e]
 deploy-root: /opt/cemini
-scanned-commit: e8fd49f
-provenance: prod-briefs-out-architecture-2026-06-01-wave4
+scanned-commit: 8faf94e
+provenance: prod-briefs-out-architecture-2026-06-01-wave5
 ai-first: true
 module: Docker services
 path: docker/
@@ -15,6 +15,7 @@ related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
   - projects/cemini-financial-suite/Architecture/Architecture - Index.md
+  - projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md
 maturity: validated
 ---
 
@@ -23,10 +24,11 @@ maturity: validated
 - @projects/cemini-financial-suite/Cemini Financial Suite.md
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md
 - @projects/cemini-financial-suite/Architecture/Architecture - Index.md
+- @projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md
 
 ## For future Claude
 
-Prod `Docker services` @ e8fd49f.
+Prod `Docker services` @ 8faf94e.
 
 # Docker services — Compose catalog
 

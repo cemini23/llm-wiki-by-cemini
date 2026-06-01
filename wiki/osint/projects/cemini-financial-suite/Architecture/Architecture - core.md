@@ -3,11 +3,11 @@ title: Architecture - core (prod)
 type: architecture-module
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, wave4]
-keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
+tags: [architecture, cemini-suite, prod-handoff, wave5]
+keywords: [Cemini-Financial-Suite, /opt/cemini, 8faf94e]
 deploy-root: /opt/cemini
-scanned-commit: e8fd49f
-provenance: prod-briefs-out-architecture-2026-06-01-wave4
+scanned-commit: 8faf94e
+provenance: prod-briefs-out-architecture-2026-06-01-wave5
 ai-first: true
 module: core
 path: core/
@@ -26,7 +26,7 @@ maturity: validated
 
 ## For future Claude
 
-Prod `core` @ e8fd49f.
+Prod `core` @ 8faf94e.
 
 # core — Shared Brain Contracts & Platform Logic
 
@@ -64,7 +64,7 @@ Runtime validation uses `cemini_contracts.safe_validate` and typed payloads (`Tr
 
 ## Import layer
 
-`core` may import: `cemini_contracts`, `logit_pricing` only (foundation + pricing). See @projects/cemini-financial-suite/Architecture/Architecture - Overview#import-layers-ci-enforced.md and `scripts/check_imports.py`.
+`core` may import: `cemini_contracts`, `logit_pricing` only (foundation + pricing). See @projects/cemini-financial-suite/Architecture/Architecture - Overview.md (import layers) and `scripts/check_imports.py`.
 
 ## db/ sibling
 

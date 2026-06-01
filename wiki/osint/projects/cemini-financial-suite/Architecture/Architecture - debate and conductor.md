@@ -3,11 +3,11 @@ title: Architecture - debate and conductor (prod)
 type: architecture-module
 date: 2026-06-01
 updated: 2026-06-01
-tags: [architecture, cemini-suite, prod-handoff, wave4]
-keywords: [Cemini-Financial-Suite, /opt/cemini, e8fd49f]
+tags: [architecture, cemini-suite, prod-handoff, wave5]
+keywords: [Cemini-Financial-Suite, /opt/cemini, 8faf94e]
 deploy-root: /opt/cemini
-scanned-commit: e8fd49f
-provenance: prod-briefs-out-architecture-2026-06-01-wave4
+scanned-commit: 8faf94e
+provenance: prod-briefs-out-architecture-2026-06-01-wave5
 ai-first: true
 module: debate and conductor
 path: debate_protocol/
@@ -26,7 +26,7 @@ maturity: validated
 
 ## For future Claude
 
-Prod `debate and conductor` @ e8fd49f.
+Prod `debate and conductor` @ 8faf94e.
 
 # debate_protocol & conductor — Multi-agent governance
 
