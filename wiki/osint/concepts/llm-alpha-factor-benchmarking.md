@@ -5,12 +5,15 @@ tags: [concept, quant-finance, llm, benchmarking]
 keywords: [alphaforgebench, factor generation, reproducibility, llm trading]
 related:
   - sources/arxiv-alphaforgebench-2602-18481-2026-06-01.md
+  - sources/arxiv-portbench-llm-portfolio-2605-27887-2026-06-02.md
+  - sources/arxiv-llm-robust-portfolio-optimization-2605-27013-2026-06-02.md
   - concepts/llm-agent-systems.md
   - concepts/high-signal-paper-patterns.md
   - concepts/high-signal-paper-patterns.md
+  - concepts/llm-portfolio-management-benchmarking.md
 maturity: draft
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-02
 ---
 
 ## Relations

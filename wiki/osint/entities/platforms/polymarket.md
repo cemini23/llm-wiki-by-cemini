@@ -100,6 +100,8 @@ related:
   - concepts/gambling-wiki-federation.md
   - entities/tools/polygnosis.md
   - sources/polygnosis-2-polymarket-osint-2026-06-01.md
+  - sources/arxiv-pm-settlement-discounting-2605-31431-2026-06-02.md
+  - concepts/pm-capital-lock-up-settlement-discount.md
 
 maturity: validated
 created: 2026-04-23

@@ -8,10 +8,13 @@ related:
   - concepts/llm-agent-systems.md
   - concepts/high-signal-paper-patterns.md
   - sources/arxiv-signal-adaptive-execution-2605-24242-2026-06-01.md
+  - concepts/llm-portfolio-management-benchmarking.md
+  - sources/arxiv-llm-robust-portfolio-optimization-2605-27013-2026-06-02.md
+  - sources/arxiv-portbench-llm-portfolio-2605-27887-2026-06-02.md
 maturity: draft
 read_status: read
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-02
 clusters: [quant-finance, ml-methods, agent-harness]
 ---
 

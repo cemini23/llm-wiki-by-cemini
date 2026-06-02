@@ -25,10 +25,12 @@ related:
   - concepts/prediction-market-information-leakage-score.md
   - entities/tools/polymarket-insider-tracker.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/pm-capital-lock-up-settlement-discount.md
+  - sources/arxiv-pm-settlement-discounting-2605-31431-2026-06-02.md
 
 maturity: draft
 created: 2026-05-09
-updated: 2026-05-16
+updated: 2026-06-02
 ---
 
 ## Relations

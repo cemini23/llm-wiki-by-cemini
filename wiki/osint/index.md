@@ -1479,6 +1479,17 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Trading posts K90 (Posts.docx, 16 posts)](sources/trading-posts-compilation-16-2026-05-31.md) — `[DRAFT 2026-05-31]` Macro Charts opener; AlterEgo weather retail; agent-harness → CCC. — source, trading-posts, k90
 - [Multi-wiki tool eval v7 K92 (90 URLs)](sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md) — `[DRAFT 2026-06-01]` Casino/poker/stake/bovada strip; WagerBrain steal-from; iGaming dead-end. — source, tool-eval, k92
 - [Trading posts K92 (Posts.docx, 12 posts)](sources/trading-posts-compilation-12-2026-06-01.md) — `[DRAFT 2026-06-01]` Harness/macro cluster; CCC + SEO routing. — source, trading-posts, k92
+- [Agent skills survey 2605.07358](sources/arxiv-agent-skills-survey-2605-07358-2026-06-02.md) — `[DRAFT 2026-06-02]` Taxonomy; CCC-routed. — source, arxiv, k94
+- [LLM robust optimization portfolios 2605.27013](sources/arxiv-llm-robust-portfolio-optimization-2605-27013-2026-06-02.md) — `[DRAFT 2026-06-02]` Model-generation lane. — source, arxiv, k94
+- [Agyn agent platform 2605.27575](sources/arxiv-agyn-agent-platform-2605-27575-2026-06-02.md) — `[DRAFT 2026-06-02]` K8s/serverless agents; CCC-routed. — source, arxiv, k94
+- [Decoupled Intelligence traffic sim 2605.27685](sources/arxiv-decoupled-intelligence-traffic-sim-2605-27685-2026-06-02.md) — `[DRAFT 2026-06-02]` REFERENCE only. — source, arxiv, k94
+- [PortBench 2605.27887](sources/arxiv-portbench-llm-portfolio-2605-27887-2026-06-02.md) — `[DRAFT 2026-06-02]` LLM PM benchmark. — source, arxiv, k94
+- [Tool Forge 2605.28000](sources/arxiv-tool-forge-governed-agentic-2605-28000-2026-06-02.md) — `[DRAFT 2026-06-02]` Governed agentic tools; CCC-routed. — source, arxiv, k94
+- [PM settlement discounting 2605.31431](sources/arxiv-pm-settlement-discounting-2605-31431-2026-06-02.md) — `[DRAFT 2026-06-02]` Capital lock-up. — source, arxiv, k94
+- [Regime-adaptive portfolio CL 2606.00143](sources/arxiv-regime-adaptive-portfolio-learning-2606-00143-2026-06-02.md) — `[DRAFT 2026-06-02]` Continual learning PM. — source, arxiv, k94
+- [LLM portfolio management benchmarking](concepts/llm-portfolio-management-benchmarking.md) — `[DRAFT 2026-06-02]` PortBench synthesis. — concept, quant, k94
+- [PM capital lock-up settlement discount](concepts/pm-capital-lock-up-settlement-discount.md) — `[DRAFT 2026-06-02]` Near-certain pricing. — concept, polymarket, k94
+- [Regime-adaptive continual portfolio learning](concepts/regime-adaptive-continual-portfolio-learning.md) — `[DRAFT 2026-06-02]` Non-stationary PM. — concept, quant, k94
 - [AlphaForgeBench 2602.18481](sources/arxiv-alphaforgebench-2602-18481-2026-06-01.md) — `[DRAFT 2026-06-01]` LLM alpha-factor benchmark; not direct trading agents. — source, arxiv, k92
 - [Signal-adaptive execution quotes 2605.24242](sources/arxiv-signal-adaptive-execution-2605-24242-2026-06-01.md) — `[DRAFT 2026-06-01]` Explicit LOB quoting theory. — source, arxiv, k92
 - [HarrierOnChain PM toolkits](entities/tools/harrier-pm-toolkits.md) — `[DRAFT 2026-05-31]` K90 Adopt; Phase-0 pending. — tool, polymarket, k90

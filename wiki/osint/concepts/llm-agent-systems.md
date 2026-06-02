@@ -20,6 +20,10 @@ related:
   - concepts/graphflow-verifiable-agent-workflows.md
   - concepts/llm-alpha-factor-benchmarking.md
   - sources/arxiv-alphaforgebench-2602-18481-2026-06-01.md
+  - sources/arxiv-agent-skills-survey-2605-07358-2026-06-02.md
+  - sources/arxiv-agyn-agent-platform-2605-27575-2026-06-02.md
+  - sources/arxiv-tool-forge-governed-agentic-2605-28000-2026-06-02.md
+  - sources/arxiv-decoupled-intelligence-traffic-sim-2605-27685-2026-06-02.md
   - sources/3-17-agent-research.md
   - sources/3-19-automated-trading-strategy-discovery-pipeline-research.md
   - sources/3-26-d.md

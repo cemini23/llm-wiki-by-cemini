@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-02] ingest | K94 — daily digest 8 arXiv (AM fetch)
+
+- **Trigger** — `wiki/sweeps/2026-06-02-daily.md`; `daily_research_digest_run.py` OK (8 NEW PDFs)
+- **Sources (8)** — agent skills 07358, LLM portfolios 27013, Agyn 27575, traffic sim 27685 (REFERENCE), PortBench 27887, Tool Forge 28000, PM settlement 31431, regime PM 00143
+- **Concepts (3)** — llm-portfolio-management-benchmarking, pm-capital-lock-up-settlement-discount, regime-adaptive-continual-portfolio-learning
+- **Cross-wiki** — CCC brief `2026-06-02_k94-ccc-agent-skills-agyn-toolforge-from-osint` (skills + Agyn + Tool Forge)
+- **Prior Jun-1 sibling inboxes** — already ingested (CCC/cybersec/image-gen commits on disk)
+
 ## [2026-06-03] docs | World Cup Bot public launch (Issue 3)
 
 - **OSS** — `cemini23/world-cup-bot` @ `7e2b859`: README launch block, ROADMAP/SETUP/systemd ledger + geoblock notes, Pages get-started

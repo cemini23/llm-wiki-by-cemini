@@ -23,12 +23,15 @@ related:
   - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
   - concepts/brier-score-model-promotion-framework.md
   - concepts/equity-fair-value-evaluation.md
+  - concepts/regime-adaptive-continual-portfolio-learning.md
+  - sources/arxiv-regime-adaptive-portfolio-learning-2606-00143-2026-06-02.md
   - concepts/trading-model-failure-diagnostics.md
   - sources/algorithmic-trading-model-benchmarking-framework-2026-05-28.md
   - sources/arxiv-agentic-trading-survey-2605.19337.md
+  - sources/arxiv-llm-robust-portfolio-optimization-2605-27013-2026-06-02.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-30
+updated: 2026-06-02
 ---
 
 ## Relations
