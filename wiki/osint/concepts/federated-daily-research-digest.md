@@ -10,9 +10,10 @@ related:
   - concepts/monokern-compounding-research-pipeline.md
   - projects/osint-workspace/Architecture/Architecture - wiki.md
   - "@3d-printing-wiki/meta/daily-research-digest-cadence.md"
+  - concepts/autosci-research-lifecycle-memory.md
 maturity: core
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-02
 ---
 
 ## Relations

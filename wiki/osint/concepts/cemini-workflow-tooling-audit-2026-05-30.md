@@ -21,9 +21,10 @@ related:
   - concepts/cemini-knowledge-application-architecture.md
   - concepts/cemini-wiki-ingest-workflow.md
   - meta/daily-research-digest-cadence.md
+  - concepts/mcp-tool-calling-eval-scaffold.md
 maturity: validated
 created: 2026-05-30
-updated: 2026-05-31
+updated: 2026-06-02
 ---
 
 ## Relations

@@ -16,9 +16,10 @@ related:
   - concepts/declarative-data-labeling-skills.md
   - entities/tools/skill-seekers.md
   - entities/tools/skillnet.md
+  - "@ccc-wiki/concepts/muse-autoskill-skill-lifecycle.md"
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-31
+updated: 2026-06-02
 ---
 
 ## Relations
@@ -51,6 +52,16 @@ But blindly merging 5,500 lines of upstream skills dilutes the workflow. The dis
    - Cemini-specific adaptation notes (if any)
    - Date merged + curator who merged it
 4. **Phase 3**: periodic review — if a merged skill stops being used, retire it (and note the retirement here)
+
+### MUSE pre-promotion gate [Steal-from 2026-06-02]
+
+From @ccc-wiki/concepts/muse-autoskill-skill-lifecycle.md (arXiv 2605.27366): skills follow **create → store → manage → evaluate → refine**. Before any skill ships to `~/.claude/skills/`, prod finance-skills cache, or server hooks:
+
+1. **Phase-0** license + domain fit (`scripts/skill_audit.py` or manual checklist)
+2. **Unit-test / smoke** — one scripted invocation on a fixture task (pass/fail recorded on this page or in `wiki/log.md`)
+3. **Promotion** — only after smoke pass; bump `updated:` on upstream entity if mirrored from eval
+
+Aligns with existing `skill_audit.py` veto gates — MUSE adds explicit **evaluate-before-promote** wording.
 
 ### Format for each merged skill
 

@@ -5,6 +5,7 @@ tags: [source, arxiv, agent-harness, tools, ccc-routed, k94]
 keywords: [tool-forge, governed agentic execution, validation, mcp]
 related:
   - concepts/llm-agent-systems.md
+  - "@ccc-wiki/entities/tools/tool-forge.md"
 maturity: draft
 read_status: read
 created: 2026-06-02
@@ -14,7 +15,7 @@ clusters: [agent-harness, ccc-routed]
 
 ## Relations
 
-- CCC brief `2026-06-02_k94-ccc-agent-skills-agyn-toolforge-from-osint` — entity stub pending
+- @ccc-wiki/entities/tools/tool-forge.md — CCC Phase-0 entity (Apache-2.0)
 
 ## Raw Concept
 

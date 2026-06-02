@@ -16,9 +16,10 @@ related:
   - sources/arxiv-inference-scaling-llms-2605.19775.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - projects/osint-workspace/Architecture/Architecture - conductor.md
+  - concepts/mcp-tool-calling-eval-scaffold.md
 maturity: validated
 created: 2026-05-09
-updated: 2026-05-11
+updated: 2026-06-02
 adopted: 2026-05-09
 version: 1.0.2
 repo: https://github.com/rpgeeganage/lazy-tool

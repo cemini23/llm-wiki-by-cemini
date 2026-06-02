@@ -5,6 +5,8 @@ tags: [source, arxiv, agent-infra, kubernetes, ccc-routed, k94]
 keywords: [agyn, serverless agents, terraform, zero-trust, production agents]
 related:
   - concepts/llm-agent-systems.md
+  - entities/tools/agyn-platform.md
+  - "@ccc-wiki/entities/tools/agyn.md"
 maturity: draft
 read_status: read
 created: 2026-06-02
@@ -14,7 +16,8 @@ clusters: [agent-harness, ccc-routed]
 
 ## Relations
 
-- CCC K94 brief — Agyn entity pending operator session
+- @entities/tools/agyn-platform.md — OSINT REFERENCE entity
+- @ccc-wiki/entities/tools/agyn.md — CCC REFERENCE entity
 
 ## Raw Concept
 

@@ -10,9 +10,10 @@ related:
   - sources/llms-get-lost-multi-turn-laban-2025.md
   - concepts/llms-get-lost-mitigation-audit.md
   - entities/tools/claude-obsidian.md
+  - concepts/agent-memory-pipeline-eval-rubric.md
 maturity: validated
 created: 2026-05-10
-updated: 2026-05-13
+updated: 2026-06-02
 laptop_install: VERIFIED 2026-05-10 (v13.0.1)
 phase_2_smoke: PASS 2026-05-12 (12 sessions / 148 obs / 50-obs SessionStart injection cross-session verified)
 ---

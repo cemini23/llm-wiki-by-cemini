@@ -10,9 +10,12 @@ related:
   - meta/daily-research-digest-cadence.md
   - entities/tools/revfactory-harness.md
   - entities/tools/world-cup-bot.md
+  - concepts/autosci-research-lifecycle-memory.md
+  - "@ccc-wiki/concepts/autosci-memory-centric-research-agents.md"
+  - concepts/agent-memory-pipeline-eval-rubric.md
 maturity: validated
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-02
 ---
 
 ## Relations

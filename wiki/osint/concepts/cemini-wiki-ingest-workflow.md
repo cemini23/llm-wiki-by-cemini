@@ -16,9 +16,10 @@ related:
   - entities/tools/deptry.md
   - sources/arxiv-harness-updating-not-benefit-2605.30621.md
   - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
+  - concepts/autosci-research-lifecycle-memory.md
 maturity: core
 created: 2026-05-31
-updated: 2026-06-01
+updated: 2026-06-02
 ---
 
 ## Relations

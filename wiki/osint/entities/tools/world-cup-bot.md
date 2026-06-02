@@ -43,9 +43,10 @@ related:
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
   - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
   - sources/arxiv-harness-updating-not-benefit-2605.30621.md
+  - concepts/system-scaling-harness-evaluation.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-06-03
+updated: 2026-06-02
 ---
 
 ## Relations

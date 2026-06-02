@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-02] cross-wiki | K94 CCC steal-froms implemented
+
+- **Brief** — `briefs/2026-06-02_k94-ccc-daily-digest-harness-papers-from-ccc.md` → **wiki-ingested**
+- **New concepts (5)** — agent-memory-pipeline-eval-rubric, mcp-tool-calling-eval-scaffold, autosci-research-lifecycle-memory, system-scaling-harness-evaluation; entity `agyn-platform`
+- **Updated** — curator-skills (MUSE evaluate-before-promote), monokern + Agyn/Tool Forge source backlinks
+- **CCC reciprocal** — agent-skills-taxonomy, tool-forge entity + sources; backlinks on WorldMemArena, MAVEN, MUSE, AutoSci, system-scaling, agyn
+
 ## [2026-06-02] ingest | K94 — daily digest 8 arXiv (AM fetch)
 
 - **Trigger** — `wiki/sweeps/2026-06-02-daily.md`; `daily_research_digest_run.py` OK (8 NEW PDFs)
