@@ -22,6 +22,7 @@ related:
   - sources/gemini-wc-tournament-phase-router-2026-05-30.md
   - sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md
   - meta/wc-lp-safety-cadence.md
+  - concepts/polymarket-football-shock-recovery-trading.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-31

@@ -26,6 +26,7 @@ related:
   - entities/tools/world-cup-bot.md
   - projects/world-cup-bot/Architecture/Architecture - world_cup_bot.md
   - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
+  - projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md
 
 maturity: validated
 created: 2026-05-13

@@ -7,11 +7,14 @@ related:
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
+  - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
   - concepts/time-series-arima-garch-framework.md
   - concepts/markov-regime-switching-models.md
+  - concepts/polymarket-football-shock-recovery-trading.md
+  - entities/tools/world-cup-bot.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-21
+updated: 2026-06-02
 ---
 
 ## Relations
@@ -19,7 +22,9 @@ updated: 2026-05-21
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — K55 Post 1 (Time Series ARIMA/GARCH)
 - @sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md — K49 ingest source (Markov chain trading framework)
 - @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — K56 Post 8 is a re-share of @RohOnChain's time-series article already ingested in K55 (cross-referenced for source-handle completeness; no new content)
-- @concepts/time-series-arima-garch-framework.md — synthesized concept (this batch)
+- @sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md — K94 WC 2026 in-play shock-recovery bot framework
+- @concepts/polymarket-football-shock-recovery-trading.md — synthesized concept (K94)
+- @concepts/time-series-arima-garch-framework.md — synthesized concept (K55)
 - @concepts/markov-regime-switching-models.md — synthesized concept (K49)
 
 ## Raw Concept
@@ -43,8 +48,9 @@ X / Twitter: **@RohOnChain** (first name "Roan", per his own bio)
 | **Markov Chains for regime detection** | Published, K49 ingested | @concepts/markov-regime-switching-models.md |
 | **Neural Networks for signal generation** | Published (referenced; not yet ingested) | — |
 | **Time Series ARIMA + GARCH** | Published, K55 ingested | @concepts/time-series-arima-garch-framework.md |
+| **FIFA WC shock-recovery (in-play)** | Published, K94 ingested | @concepts/polymarket-football-shock-recovery-trading.md |
 
-The three layers are **designed to compose**: regime detection (Markov) + signal generation (NN) + position sizing on volatility regime (GARCH). Closing prompt of Post 1 (K55) explicitly explores GARCH × Markov agreement/disagreement as a multi-model orchestration pattern.
+The first three layers are **designed to compose**: regime detection (Markov) + signal generation (NN) + position sizing on volatility regime (GARCH). Closing prompt of Post 1 (K55) explicitly explores GARCH × Markov agreement/disagreement as a multi-model orchestration pattern.
 
 ### Other public output
 
@@ -59,4 +65,5 @@ The three layers are **designed to compose**: regime detection (Markov) + signal
 ### Cemini fit
 
 - **Reference**, like other K49 / K55 author entities. Content is the value, not the person; but recording the author as an entity makes cross-batch attribution clean.
-- **Neural Networks signal-generation post** is the missing third piece; worth tracking for a future ingest.
+- **Neural Networks signal-generation post** — published per author series table but not yet deep-read ingested.
+- **WC shock-recovery repo** — author DM-gates GitHub; track if public fork appears before 2026-06-11 kickoff.

@@ -9,6 +9,9 @@ related:
   - entities/tools/polyterm.md
   - concepts/cemini-license-posture.md
   - concepts/cross-venue-arbitrage-pattern.md
+  - concepts/polymarket-football-shock-recovery-trading.md
+  - projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md
+  - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
 maturity: draft
 created: 2026-05-16
 updated: 2026-05-21

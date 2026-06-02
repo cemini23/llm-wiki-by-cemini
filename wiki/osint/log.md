@@ -1,5 +1,32 @@
 # Wiki Log
 
+## [2026-06-02] wc-bot | pmxt librarian sync scripts
+
+- **Scripts** — `sync_pmxt_football_to_librarian.sh`, `run_pmxt_football_sync.sh`, `pmxt_parquet_to_jsonl.py`
+- **OSINT wrapper** — `scripts/sync_pmxt_football_to_librarian.sh`
+- **Brief updated** — automated librarian pipeline in `2026-06-02_wc-match-shock-pmxt-librarian-cemini.md`
+
+## [2026-06-02] wc-bot | unified LP→shock mode + pmxt ETL + prod brief
+
+- **Repo** — `trading_mode.py`, `export_pmxt_shock_tapes.py`, mode_handoff in `shock_match.yaml`; 18 pytest (shock + mode + ETL)
+- **Brief** — `briefs/2026-06-02_wc-match-shock-pmxt-librarian-cemini.md` (skill_audit PASS 100)
+- **Wiki** — Architecture match_shock_v1 updated (same-bot handoff)
+
+## [2026-06-02] wc-bot | match_shock_v1 scaffold + pmxt backtest design
+
+- **Repo** (`world-cup-bot`) — `match_shock.py`, `match_shock_config.py`, `config/shock_match.yaml`, `scripts/shock_backtest/run_bucket_backtest.py`, 10 pytest
+- **Wiki** — `Architecture - match_shock_v1.md`, `Architecture - match_shock_pmxt_backtest.md`
+- **OPEN-GAPS** — shock module scaffold marked shipped; live POST still open
+
+## [2026-06-02] ingest | K94 — @RohOnChain FIFA WC shock-recovery strategy (user paste)
+
+- **Source** — `sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md` (Roan / @RohOnChain in-play match-market framework)
+- **Concept** — `concepts/polymarket-football-shock-recovery-trading.md` — detect → 5D bucket → P50–P95 ladder → ~4¢ exit
+- **WC Bot verdict** — **orthogonal to v1 advance LP**; reinforces DR 09 `hard_halt`; v2 module candidate in OPEN-GAPS
+- **Updated** — `entities/people/rohonchain.md`, `entities/tools/world-cup-bot.md`, `world-cup-advance-market-bot-v1.md`, sports microstructure taxonomy, `gemini-wc-inplay-pregame-lp-risks`, OPEN-GAPS
+- **Verified** — Polymarket acquired Dome 2026-02-19 (YC Fall 2025)
+- **Not staged** — prod brief (no code change); repo DM-gated
+
 ## [2026-06-02] phase-0 + prod | K94 Tool Forge + Agyn harness steals
 
 - **Phase-0** — tool-forge: Apache-2.0, 187 pytest, NO-GO install (lazy-tool collision); agyn: AGPL-3.0, NO-GO install

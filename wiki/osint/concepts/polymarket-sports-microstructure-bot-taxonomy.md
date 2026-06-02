@@ -9,9 +9,11 @@ related:
   - sources/x-posts-quant-oss-polymarket-bots-2026-05.md
   - concepts/world-cup-advance-market-bot-v1.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
+  - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
+  - concepts/polymarket-football-shock-recovery-trading.md
 maturity: draft
 created: 2026-05-27
-updated: 2026-05-29
+updated: 2026-06-02
 ---
 
 ## Relations
@@ -20,6 +22,7 @@ updated: 2026-05-29
 - @concepts/polymarket-updown-bot-taxonomy.md — K52 **crypto Up/Down** 6-type taxonomy (different market class)
 - @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — same author, prior Up/Down post
 - @concepts/world-cup-advance-market-bot-v1.md — K82 advance-market LP is Type 2 (stale probability) + conviction overlay, not in-play microstructure
+- @concepts/polymarket-football-shock-recovery-trading.md — K94 **live shock recovery** on match win markets (@RohOnChain); distinct from advance LP
 
 ## Raw Concept
 
@@ -32,6 +35,7 @@ K69 @RetroValix: seven bot archetypes on **Polymarket sports** markets (not shor
 | 1 | Cross-line arb | Connected lines (ML, spread, O/U, BTTS) desync after live state change |
 | 2 | Stale probability | PM price vs external fair line / model |
 | 3–7 | (Author enumerates additional types in post) | Order-book / live-state lag patterns [TENTATIVE — read full post for labels] |
+| **8** | **Live shock recovery** (K94) | Goal/card price crash → percentile ladder → fixed-tick mean reversion on match markets (@RohOnChain) |
 
 **Relation to K52:** @RetroValix also authored the 6-type **Up/Down crypto** taxonomy (@concepts/polymarket-updown-bot-taxonomy.md). This page covers **sports** only.
 

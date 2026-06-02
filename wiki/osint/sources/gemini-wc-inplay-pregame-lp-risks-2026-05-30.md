@@ -14,9 +14,12 @@ related:
   - concepts/world-cup-tournament-phases-lp-strategy.md
   - concepts/production-trading-blind-spots.md
   - entities/tools/world-cup-bot.md
+  - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
+  - concepts/polymarket-football-shock-recovery-trading.md
+  - projects/world-cup-bot/Architecture/Architecture - match_shock_v1.md
 maturity: validated
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-06-02
 ---
 
 ## Relations

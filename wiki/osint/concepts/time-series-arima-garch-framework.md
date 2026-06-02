@@ -16,6 +16,7 @@ related:
   - entities/people/rohonchain.md
   - entities/people/yifan-guo.md
   - sources/ai-for-trading-strategies-jevtic-zhaw-2022.md
+  - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
 maturity: validated
 created: 2026-05-20
 updated: 2026-05-21

@@ -12,6 +12,9 @@ related:
   - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
   - entities/tools/world-cup-bot.md
   - meta/wc-lp-safety-cadence.md
+  - concepts/polymarket-football-shock-recovery-trading.md
+  - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
+  - projects/world-cup-bot/Architecture/Architecture - match_shock_v1.md
 maturity: validated
 ---
 
@@ -56,6 +59,7 @@ Gap list after `/obsidian-architect` @ `17a6647`. **Before live POST:** @project
 | **CeminiSuite import** | Post shadow gate | OSINT `briefs/2026-05-29_world-cup-bot-cemini-import.md` |
 | **Cross-venue pair refresh** | Slug drift | `discover` timer + manual `--discover-only` |
 | **Trading VPS profile** | Non-US live LP | Phase 2–4 after SHADOW 3–4 |
+| **In-play shock-recovery module** | K94 @RohOnChain framework; orthogonal to advance LP | **Scaffold shipped 2026-06-02** — `match_shock.py`, backtest CLI, tests; live POST + CLI subcommands still open |
 
 ## Still open (documentation / automation)
 

@@ -12,6 +12,8 @@ related:
   - projects/world-cup-bot/Architecture/Architecture - deploy.md
   - projects/world-cup-bot/Architecture/Architecture - Key decisions.md
   - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
+  - projects/world-cup-bot/Architecture/Architecture - match_shock_v1.md
+  - projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md
   - projects/world-cup-bot/Architecture/OPEN-GAPS.md
   - entities/tools/world-cup-bot.md
 maturity: validated

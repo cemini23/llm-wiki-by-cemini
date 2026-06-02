@@ -44,6 +44,11 @@ related:
   - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
   - sources/arxiv-harness-updating-not-benefit-2605.30621.md
   - concepts/system-scaling-harness-evaluation.md
+  - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
+  - concepts/polymarket-football-shock-recovery-trading.md
+  - projects/world-cup-bot/Architecture/Architecture - match_shock_v1.md
+  - projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md
+  - entities/people/rohonchain.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-06-02
@@ -68,6 +73,8 @@ updated: 2026-06-02
 - @concepts/harness-updating-vs-benefit-nonmonotonic.md — K93 advisor restrictive-mode discipline
 - @sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
 - @sources/arxiv-harness-updating-not-benefit-2605.30621.md
+- @sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md — K94 @RohOnChain in-play shock-recovery; **orthogonal to v1** advance LP (see @concepts/polymarket-football-shock-recovery-trading.md)
+- @concepts/polymarket-football-shock-recovery-trading.md — v2 module candidate; reinforces DR 09 `hard_halt` during live matches
 
 ### K93 adoptions (2026-06-01)
 
@@ -123,6 +130,12 @@ Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code 
 | CeminiSuite import | **Brief staged** — `briefs/2026-05-29_world-cup-bot-cemini-import.md` (OSINT) |
 
 Logic version: **`wc_advance_lp_v4`** · paper arb: **`wc_cross_venue_paper_v1`** · exec: **`wc_cross_venue_exec_v1`**. **167 pytest**.
+
+### K94 research note — in-play shock recovery (2026-06-02)
+
+@RohOnChain published a **match-market shock-recovery** framework (detect → 5D bucket → percentile ladder → 4¢ exit). **Not v1 scope** — WC Bot explicitly excludes in-play quoting. Indirect value: validates why advance LP must cancel before kickoff.
+
+**Scaffold shipped:** `match_shock.py`, `config/shock_match.yaml`, `scripts/shock_backtest/` (10 pytest). Spec: @projects/world-cup-bot/Architecture/Architecture - match_shock_v1.md · backtest: @projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md
 
 ### Deploy profiles (`deploy/systemd/`)
 
