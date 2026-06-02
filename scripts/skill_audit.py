@@ -18,7 +18,8 @@ Two phases:
     9. Risk discipline            ── Risks & mitigations depth: severity column, mitigation column, ≥2 rows (K36)
    10. Phasing                    ── Phase 1 minimum; Phase 2/3 + success criteria earn full credit (K36)
    11. Claim-evidence alignment  ── license/star/version/commit claims must co-locate with verification anchor (K32 research-paper-writing-skills port)
-   12. Abstract synthesis        ── ## Summary length + effort estimate + verdict-flavored opener (K32 research-paper-writing-skills port)
+    12. Abstract synthesis        ── ## Summary length + effort estimate + verdict-flavored opener (K32 research-paper-writing-skills port)
+    13. Harness dimensions        ── adoption/phase-0 briefs must name ≥4 of 6 system-scaling dimensions (K94)
 
   DYNAMIC (opt-in via --llm-mode, advisory by default — v0.5):
     Calls DeepSeek (via scripts/_llm_retry.py 3-tier retry) with a combined prompt
@@ -1018,6 +1019,51 @@ def run_dynamic_audit(
     )
 
 
+def check_harness_dimensions(text: str, target: str) -> CheckResult:
+    """K94 system-scaling steal-from: prod/adoption briefs must address harness subsystems."""
+    name = Path(target).name.lower()
+    applies = (
+        _is_adoption_brief(text, target)
+        or "phase0" in name
+        or "phase-0" in name
+        or "harness" in name
+    )
+    if not applies:
+        return CheckResult(
+            name="harness_dimensions",
+            severity="pass",
+            score_weight=0.03,
+            score_earned=0.03,
+            detail="N/A — not adoption/phase-0/harness brief",
+        )
+    dims = (
+        "memory",
+        "retrieval",
+        "tools",
+        "orchestration",
+        "verification",
+        "governance",
+    )
+    lower = text.lower()
+    found = [d for d in dims if d in lower]
+    if len(found) >= 4:
+        return CheckResult(
+            name="harness_dimensions",
+            severity="pass",
+            score_weight=0.03,
+            score_earned=0.03,
+            detail=f"Named {len(found)}/6 harness dimensions: {', '.join(found)}",
+        )
+    missing = [d for d in dims if d not in found]
+    return CheckResult(
+        name="harness_dimensions",
+        severity="warn",
+        score_weight=0.03,
+        score_earned=0.0,
+        detail=f"Only {len(found)}/6 harness dimensions; missing: {', '.join(missing)}",
+    )
+
+
 def assemble_report(
     target: str,
     text: str,
@@ -1040,6 +1086,7 @@ def assemble_report(
         check_phasing(text, sections, target),
         check_claim_evidence(text, target),
         check_abstract_synthesis(text, target),
+        check_harness_dimensions(text, target),
     ]
     veto_gates = [c.veto_reason for c in checks if c.severity == "veto" and c.veto_reason]
     static_score = round(sum(c.score_earned for c in checks) * 100, 1)

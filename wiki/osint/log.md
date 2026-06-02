@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-02] phase-0 + prod | K94 Tool Forge + Agyn harness steals
+
+- **Phase-0** — tool-forge: Apache-2.0, 187 pytest, NO-GO install (lazy-tool collision); agyn: AGPL-3.0, NO-GO install
+- **Wiki** — `agyn-platform.md`, CCC `tool-forge.md` / `agyn.md`, `skill-vetting` step 6; `skill_audit` harness-dimensions check
+- **Prod brief** — `briefs/2026-06-02_k94-phase0-harness-steals-cemini-prod.md` → scp `cemini-prod:/opt/cemini/briefs/`
+
 ## [2026-06-02] cross-wiki | K94 CCC steal-froms implemented
 
 - **Brief** — `briefs/2026-06-02_k94-ccc-daily-digest-harness-papers-from-ccc.md` → **wiki-ingested**

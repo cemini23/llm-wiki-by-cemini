@@ -10,7 +10,7 @@ related:
 maturity: draft
 created: 2026-06-02
 updated: 2026-06-02
-phase_0_verdict: REFERENCE 2026-06-02 — prod K8s agent ops; compare governance checklist vs Hetzner brief-driven deploy only
+phase_0_verdict: NO-GO install 2026-06-02 — AGPL-3.0 (agynio/platform); REFERENCE governance checklist vs Hetzner brief-driven deploy
 ---
 
 ## Relations
@@ -22,12 +22,16 @@ phase_0_verdict: REFERENCE 2026-06-02 — prod K8s agent ops; compare governance
 
 **Agyn** (arXiv 2605.27575) — open-source platform: signal-driven serverless agents on Kubernetes, Terraform “agent definition as code,” zero-trust access.
 
-| Check | Verdict |
-|-------|---------|
-| CeminiSuite prod migration | **NO-GO** — Hetzner brief-driven stack is canonical |
-| Governance checklist steal | **REFERENCE** — isolation, on-demand execution, privileged-tool boundaries vs prod-mcp |
+| Check | Result [CONFIRMED 2026-06-02] |
+|-------|-------------------------------|
+| Repo | `github.com/agynio/platform` (+ `agynio/bootstrap` k3d/Terraform) |
+| License | **AGPL-3.0** — network copyleft; **NO-GO** for CeminiSuite prod binary |
+| Stars / push | ~185★; active May 2026 |
+| Topology | Multi-service K8s — **not** current Hetzner VM + brief-driven deploy |
+| CeminiSuite migration | **NO-GO** |
+| Governance checklist steal | **REFERENCE** — prod brief `briefs/2026-06-02_k94-phase0-harness-steals-cemini-prod.md` maps controls → `agent_budget.py`, egress, HITL |
 
-**Conditional-GO:** Phase-0 doc compare only if prod topology review is scheduled — no install from this wiki session.
+**Prod:** ship checklist doc only; no Agyn bootstrap on prod or egress.
 
 ## Snippets
 
