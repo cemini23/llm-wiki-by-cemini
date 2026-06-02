@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-03] docs | World Cup Bot public launch (Issue 3)
+
+- **OSS** — `cemini23/world-cup-bot` @ `7e2b859`: README launch block, ROADMAP/SETUP/systemd ledger + geoblock notes, Pages get-started
+- **Entity** — `entities/tools/world-cup-bot.md` — public v1 status
+- **Cross-wiki** — Gambling-wiki README launch line; `@seo-wiki/concepts/outlier-weekly-issue3-world-cup-bot-notes.md` ship status
+
 ## [2026-06-01] meta | Federation operator hub (`cemini-federation-hub`)
 
 - **New repo** — `~/Desktop/projects/cemini-federation-hub` — morning summary + Obsidian triage over all wikis

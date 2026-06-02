@@ -45,7 +45,7 @@ related:
   - sources/arxiv-harness-updating-not-benefit-2605.30621.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-06-01
+updated: 2026-06-03
 ---
 
 ## Relations
@@ -97,11 +97,11 @@ The repo is **fully public**. It ships MIT code, docs, and `.env.example` placeh
 
 Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code + private env on dedicated VPS (monitor + non-US trading split). Generic systemd install: `deploy/systemd/` — no operator hostnames in git.
 
-### Status (2026-05-30)
+### Status (2026-06-03 — public launch)
 
 | Module / feature | State |
 |------------------|-------|
-| Repo + docs | **Live** — README, SHADOW, SETUP, **ROADMAP**, CLAUDE |
+| Repo + docs | **Public v1** — Outlier Weekly Issue 3; README launch section; SHADOW split-ledger trap @ `97e7745` |
 | **Scanner (1)** | **Live** — Gamma advance markets + reward params |
 | **Conviction filter (2)** | **Live** — `config/conviction.yaml` **v5** (K91 fade_watch + K93 list hygiene) |
 | **Quoter (3)** | **Live** dry-run + live POST; cancel-replace + calendar auto-cancel |
