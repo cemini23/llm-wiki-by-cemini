@@ -23,6 +23,7 @@ related:
   - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
   - concepts/brier-score-model-promotion-framework.md
   - concepts/equity-fair-value-evaluation.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
   - concepts/regime-adaptive-continual-portfolio-learning.md
   - sources/arxiv-regime-adaptive-portfolio-learning-2606-00143-2026-06-02.md
   - concepts/trading-model-failure-diagnostics.md

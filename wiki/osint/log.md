@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-03] ingest | K97 — Posts.docx (17 posts)
+
+- **Source** — `trading-posts-compilation-17-2026-06-03.md` (sha `bf5682b3…`, 17 posts)
+- **Updated (8)** — `rohonchain`, `gustafssonkotte`, `polymarket-marginal-polytope-arbitrage`, `polymarket-football-shock-recovery-trading`, `rohonchain-fifa-wc-shock-recovery-strategy`, `claude-code-skills-md-workflow`, `regime-conditioned-evaluation`, `hermes-agent`
+- **Cross-wiki** — CCC source stub + brief; SEO style pass K97
+- **Briefs** — `2026-06-03_k97-ccc-agent-harness-from-osint.md`, `2026-06-03_k97-gustafssonkotte-tape-speed-telemetry-cemini-prod.md` → scp prod
+- **Raw** — Posts.docx → librarian; inbox cleared
+
 ## [2026-06-03] wc-bot | Module 8 dual-path docs + prod brief
 
 - **world-cup-bot** — `match-shock-discover|export|record`, Data API + live WS; docs `MATCH_SHOCK_V1.md`, backtest README, RUNBOOK, ROADMAP

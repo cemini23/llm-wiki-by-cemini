@@ -5,6 +5,7 @@ tags: [source, trading-posts, macro, agent-harness, k92]
 keywords: [gtc, nvidia, bitcoin-onchain, claude-analyst, agentic-pm, deepseek-cost, obsidian, hermes, openclaw]
 related:
   - sources/trading-posts-compilation-16-2026-05-31.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
   - concepts/macro-charts-regime-signals.md
   - concepts/llm-agent-systems.md
   - entities/tools/hermes-agent.md
@@ -23,7 +24,7 @@ related:
 maturity: draft
 read_status: read
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-03
 clusters: [macro, agent-harness, seo-funnel]
 ---
 

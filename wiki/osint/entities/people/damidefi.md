@@ -7,9 +7,10 @@ related:
   - sources/trading-posts-compilation-6-2026-05-29.md
   - entities/tools/hermes-agent.md
   - concepts/claude-code-skills-md-workflow.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-03
 ---
 
 ## Relations

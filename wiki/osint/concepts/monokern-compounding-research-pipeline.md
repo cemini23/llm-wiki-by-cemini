@@ -13,9 +13,10 @@ related:
   - concepts/autosci-research-lifecycle-memory.md
   - "@ccc-wiki/concepts/autosci-memory-centric-research-agents.md"
   - concepts/agent-memory-pipeline-eval-rubric.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
 maturity: validated
 created: 2026-06-01
-updated: 2026-06-02
+updated: 2026-06-03
 ---
 
 ## Relations

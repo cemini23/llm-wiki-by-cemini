@@ -15,9 +15,10 @@ related:
   - projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md
   - entities/tools/pmxt.md
   - concepts/polymarket-sports-lp-operating-rules.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
 maturity: draft
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-03
 ---
 
 ## Relations

@@ -5,17 +5,21 @@ tags: [concept, polymarket, arbitrage, market-structure, k67]
 keywords: [marginal-polytope, combinatorial-arbitrage, dependent-markets, 40-million-arbitrage, robrtcode, probabilistic-forest-paper]
 related:
   - sources/trading-posts-compilation-38-2026-05-26.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
+  - entities/people/rohonchain.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/non-latency-arbitrage-strategies.md
   - entities/platforms/polymarket.md
 maturity: draft
 created: 2026-05-26
-updated: 2026-05-29
+updated: 2026-06-03
 ---
 
 ## Relations
 
 - @sources/trading-posts-compilation-38-2026-05-26.md — Post 26 (@robrtcode)
+- @sources/trading-posts-compilation-17-2026-06-03.md — K97 Post 15 (@RohOnChain popularization of same paper themes)
+- @entities/people/rohonchain.md — author Post 15
 - @concepts/cross-venue-arbitrage-pattern.md — cross-venue; this is **intra-platform logical** arb
 - @entities/platforms/polymarket.md — venue
 

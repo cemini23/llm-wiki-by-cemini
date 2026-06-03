@@ -8,13 +8,15 @@ related:
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
   - concepts/time-series-arima-garch-framework.md
   - concepts/markov-regime-switching-models.md
   - concepts/polymarket-football-shock-recovery-trading.md
+  - concepts/polymarket-marginal-polytope-arbitrage.md
   - entities/tools/world-cup-bot.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-06-02
+updated: 2026-06-03
 ---
 
 ## Relations
@@ -23,7 +25,9 @@ updated: 2026-06-02
 - @sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md — K49 ingest source (Markov chain trading framework)
 - @sources/posts-prediction-markets-quant-frameworks-2026-05-21.md — K56 Post 8 is a re-share of @RohOnChain's time-series article already ingested in K55 (cross-referenced for source-handle completeness; no new content)
 - @sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md — K94 WC 2026 in-play shock-recovery bot framework
+- @sources/trading-posts-compilation-17-2026-06-03.md — K97 Posts 15 (PM math roadmap) + Post 17 (FIFA article re-share; content = K94)
 - @concepts/polymarket-football-shock-recovery-trading.md — synthesized concept (K94)
+- @concepts/polymarket-marginal-polytope-arbitrage.md — K97 Post 15 math roadmap
 - @concepts/time-series-arima-garch-framework.md — synthesized concept (K55)
 - @concepts/markov-regime-switching-models.md — synthesized concept (K49)
 

@@ -17,9 +17,10 @@ related:
   - entities/tools/chainlink-data-streams.md
   - entities/platforms/polymarket.md
   - sources/trading-posts-compilation-31-2026-06-01.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-06-01
+updated: 2026-06-03
 ---
 
 ## Relations

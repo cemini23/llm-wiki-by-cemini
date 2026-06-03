@@ -14,9 +14,10 @@ related:
   - concepts/claude-ai-trading-operational-workflows-smb.md
   - entities/people/damidefi.md
   - sources/trading-posts-compilation-20-2026-05-27.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-05-29
+updated: 2026-06-03
 ---
 
 ## Relations

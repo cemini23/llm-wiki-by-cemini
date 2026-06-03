@@ -15,9 +15,10 @@ related:
   - projects/world-cup-bot/Architecture/Architecture - match_shock_v1.md
   - projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md
   - projects/world-cup-bot/Architecture/OPEN-GAPS.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
 maturity: validated
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-03
 ---
 
 ## Relations

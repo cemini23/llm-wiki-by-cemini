@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-03 — K97)
+
+- **K97 ingest (2026-06-03)** — `Posts.docx` (17 posts, sha `bf5682b3…`). **1 source + 8 page updates**; harness cluster → CCC brief; Roh Posts 15–17 (polytope + FIFA re-share = K94). **Prod brief scp'd:** `2026-06-03_k97-gustafssonkotte-tape-speed-telemetry-cemini-prod.md` (read-only telemetry). SEO style pass K97.
+
 ## Current state (2026-06-03 — K96)
 
 - **K96 ingest (2026-06-03)** — Friend CeminiSuite code audit (`Errors in code .docx`) + digest arXiv 2606.00579. **2 sources + `ems-execution-security-gaps` concept**; blind-spot row #14. **Prod brief scp'd:** `2026-06-03_cemini-external-audit-remediation-cemini-prod.md` (P0: Kalshi EMS bypass, PositionGate, RBAC fail-open).
