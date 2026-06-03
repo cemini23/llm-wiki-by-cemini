@@ -24,9 +24,11 @@ related:
   - sources/gemini-wc-tournament-phase-router-2026-05-30.md
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - concepts/cemini-knowledge-application-architecture.md
+  - concepts/ems-execution-security-gaps.md
+  - sources/cemini-external-code-audit-errors-2026-06-03.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-31
+updated: 2026-06-03
 ---
 
 ## Relations
@@ -41,6 +43,7 @@ updated: 2026-05-31
 - @sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md — journal vs CSV truth
 - @concepts/zero-trade-edge-signal-diagnostics.md — silent zero-trade aborts (K76)
 - @sources/algorithmic-trading-pipeline-zero-trade-analysis-2026-05-28.md — three-domain framework source
+- @concepts/ems-execution-security-gaps.md — **K96** external audit: EMS side-door + PositionGate error path + RBAC fail-open
 
 ## Raw Concept
 
@@ -67,6 +70,7 @@ When headline PnL "doesn't make sense," scan the table **top to bottom** before 
 | 11 | **Fair value change without version bump** | Sleeve attribution shifts | Hold/tactical mix changes after valuation deploy | Bump `brain_equity` in strategy registry |
 | 12 | **Mixing Brinson daily attribution with trade PnL** | Two reports disagree | Step 60 portfolio report vs FIFO script | Different tables/questions — don't merge blindly |
 | 13 | **Silent zero-trade abort** | Signal fired, nothing sent, no ERROR | Logs show decision but no `trade_aborted` reason | @concepts/zero-trade-edge-signal-diagnostics.md — tag `abort_reason` |
+| 14 | **EMS gate bypass (side door)** | Live orders skip exposure/PositionGate | Kalshi fills with gates "enabled" in env | @concepts/ems-execution-security-gaps.md — route all brokers through router |
 
 ### Cross-domain confirmation
 

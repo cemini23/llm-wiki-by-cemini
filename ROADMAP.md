@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-03 — K96)
+
+- **K96 ingest (2026-06-03)** — Friend CeminiSuite code audit (`Errors in code .docx`) + digest arXiv 2606.00579. **2 sources + `ems-execution-security-gaps` concept**; blind-spot row #14. **Prod brief scp'd:** `2026-06-03_cemini-external-audit-remediation-cemini-prod.md` (P0: Kalshi EMS bypass, PositionGate, RBAC fail-open).
+
 ## Current state (2026-06-03 — K95)
 
 - **K95 ingest (2026-06-03)** — Daily digest catch-up (Jun 2–3 LaunchAgent FDA gap; manual run all 7 wikis). **OSINT:** 3 arXiv (AlphaEval, trustworthy-AI fintech, CLI-Anything) + 3 concepts; **CCC:** 5 arXiv harness papers + CLI-Anything cross-wiki; **Image gen:** 6 arXiv; **Cybersec:** skill-injection cluster (3); **Gambling:** opponent modeling + DevFun S28 tournament brief; **3D:** self-improving CAD agents; **SEO:** K88/K90 brief pages ingested. **Prod briefs scp'd:** AlphaEval/governance, WC S28 shock recovery, SkillGuard permission steal. Federation hub sweep `2026-06-03`.

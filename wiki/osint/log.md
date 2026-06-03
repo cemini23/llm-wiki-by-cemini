@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-03] ingest | K96 — friend CeminiSuite audit + digest arXiv
+
+- **Source** — `cemini-external-code-audit-errors-2026-06-03.md` (Errors in code .docx) — 7 findings verified on local clone
+- **Source** — `arxiv-sandboxed-coding-agents-omni-mod-2606-00579-2026-06-03.md` (digest fetch)
+- **Concept** — `ems-execution-security-gaps.md`; updated `production-trading-blind-spots.md` row #14
+- **Prod brief** — `2026-06-03_cemini-external-audit-remediation-cemini-prod.md` → scp
+- **Raw** — docx + PDF → librarian; inbox cleared
+
 ## [2026-06-03] ingest | K95 — daily digest 3 arXiv
 
 - **Sources (3)** — AlphaEval 2508.13174, trustworthy AI fintech 2605.30650, CLI-Anything 2606.03854

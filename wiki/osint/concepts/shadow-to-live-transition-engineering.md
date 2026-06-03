@@ -22,9 +22,10 @@ related:
   - concepts/polymarket-lp-rewards-farming.md
   - sources/clob-rate-limit-mitigation-strategies-2026-05-28.md
   - sources/shadow-trading-data-accumulation-strategies-2026-05-28.md
+  - concepts/ems-execution-security-gaps.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-29
+updated: 2026-06-03
 ---
 
 ## Relations

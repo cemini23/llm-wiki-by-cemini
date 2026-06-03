@@ -6,6 +6,7 @@ keywords: [cli-anything, 2606.03854, hkuds, cli agent]
 related:
   - sources/arxiv-cli-anything-2606-03854-2026-06-03.md
   - "@ccc-wiki/concepts/cli-anything-agent-native-computer-use.md"
+  - sources/arxiv-sandboxed-coding-agents-omni-mod-2606-00579-2026-06-03.md
 maturity: draft
 created: 2026-06-03
 updated: 2026-06-03
