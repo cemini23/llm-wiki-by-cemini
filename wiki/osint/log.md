@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-06-04] wc-bot | Public-launch docs + prod/egress pull brief
+
+- **world-cup-bot** — README, RUNBOOK, MATCH_SHOCK_V1, SHADOW, SETUP, GitHub Pages aligned with Issue 3 (Module 8 shipped wording)
+- **Prod brief** — `2026-06-04_wc-prod-egress-pull-cemini.md` → scp (pull ≥ `86bc57a`, no live enables)
+
 ## [2026-06-03] wc-bot | K97 adoption pass — tournament-ops + pre-kickoff tapes
 
 - **world-cup-bot** — `tournament-ops` adds `match_shock_readiness` check; `shock_match.yaml` operator WC volume hypothesis (K97)
