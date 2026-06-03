@@ -11,10 +11,11 @@ related:
   - concepts/llm-portfolio-management-benchmarking.md
   - sources/arxiv-llm-robust-portfolio-optimization-2605-27013-2026-06-02.md
   - sources/arxiv-portbench-llm-portfolio-2605-27887-2026-06-02.md
+  - sources/arxiv-alphaeval-2508-13174-2026-06-03.md
 maturity: draft
 read_status: read
 created: 2026-06-01
-updated: 2026-06-02
+updated: 2026-06-03
 clusters: [quant-finance, ml-methods, agent-harness]
 ---
 

@@ -13,9 +13,10 @@ related:
   - concepts/monte-carlo-permutation-test-mcpt.md
   - concepts/prediction-market-historical-analysis.md
   - entities/people/alexo-0x.md
+  - concepts/alpha-eval-formula-mining-framework.md
 maturity: validated
 created: 2026-05-21
-updated: 2026-05-21
+updated: 2026-06-03
 clusters: [polymarket, quant-finance, machine-learning]
 ---
 

@@ -19,10 +19,12 @@ related:
   - concepts/brier-score-model-promotion-framework.md
   - concepts/cemini-backtest-report-kit.md
   - sources/algorithmic-trading-model-benchmarking-framework-2026-05-28.md
+  - concepts/alpha-eval-formula-mining-framework.md
+  - sources/arxiv-alphaeval-2508-13174-2026-06-03.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-29
+updated: 2026-06-03
 clusters: [quant-validation, backtest]
 ---
 

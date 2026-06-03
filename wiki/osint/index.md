@@ -1217,6 +1217,9 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Multi-Wiki Tool Evaluation v5 (34 URLs)](sources/multi-wiki-tool-eval-v5-k93-2026-06-01.md) — `[VALIDATED]` 5 Adopt (harness, netviz, agents-best-practices, goaccess, deptry); AGPL OGI reject. — source, tool-eval, k93
 - [Trading posts compilation — 31 X long-forms (Posts.docx K93)](sources/trading-posts-compilation-31-2026-06-01.md) — `[VALIDATED]` garrytan thin-harness thread, Gustafsson tape-speed, agent onboarding. — source, trading-posts, k93
 - [Monokern compounding research pipeline](concepts/monokern-compounding-research-pipeline.md) — `[VALIDATED]` daily+weekly cadence with NotebookLM offload. — concept, workflow, k93
+- [AlphaEval formula mining framework](concepts/alpha-eval-formula-mining-framework.md) — `[DRAFT 2026-06-03]` K95 REFERENCE eval rubric (2508.13174). — concept, quant-finance, k95
+- [Trustworthy AI in Fintech survey](concepts/trustworthy-ai-fintech-survey.md) — `[DRAFT 2026-06-03]` K95 governance axes (2605.30650). — concept, fintech, k95
+- [CLI-Anything agent-native computer use](concepts/cli-anything-agent-native-computer-use.md) — `[DRAFT 2026-06-03]` K95 CCC-routed REFERENCE (2606.03854). — concept, agent-harness, k95
 - [Agent memory pipeline eval rubric](concepts/agent-memory-pipeline-eval-rubric.md) — `[DRAFT 2026-06-02]` K94 steal-from WorldMemArena (CCC) — Write/Maintenance/Retrieval/Use stages for stash + claude-mem + librarian. — concept, agent-memory, evaluation, k94
 - [MCP tool-calling eval scaffold](concepts/mcp-tool-calling-eval-scaffold.md) — `[DRAFT 2026-06-02]` K94 steal-from MAVEN — cross-domain smoke matrix for lazy-tool / prod-mcp / conductor. — concept, mcp, evaluation, k94
 - [AutoSci research lifecycle memory](concepts/autosci-research-lifecycle-memory.md) — `[DRAFT 2026-06-02]` K94 steal-from AutoSci — SciMem + literature + experiments + briefs routing. — concept, research-workflow, k94

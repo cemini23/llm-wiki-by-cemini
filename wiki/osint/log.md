@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-03] ingest | K95 — daily digest 3 arXiv
+
+- **Sources (3)** — AlphaEval 2508.13174, trustworthy AI fintech 2605.30650, CLI-Anything 2606.03854
+- **Concepts (3)** — alpha-eval-formula-mining-framework, trustworthy-ai-fintech-survey, cli-anything-agent-native-computer-use
+- **Cross-wiki** — CCC brief CLI-Anything; prod briefs alphaeval-governance + wc S28 match day → scp
+- **Inbox** — 3 PDFs → librarian; rohonchain stub cleared (K94 canon)
+
 ## [2026-06-02] wc-bot | pmxt librarian sync scripts
 
 - **Scripts** — `sync_pmxt_football_to_librarian.sh`, `run_pmxt_football_sync.sh`, `pmxt_parquet_to_jsonl.py`

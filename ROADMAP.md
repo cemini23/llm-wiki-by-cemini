@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-03 — K95)
+
+- **K95 ingest (2026-06-03)** — Daily digest catch-up (Jun 2–3 LaunchAgent FDA gap; manual run all 7 wikis). **OSINT:** 3 arXiv (AlphaEval, trustworthy-AI fintech, CLI-Anything) + 3 concepts; **CCC:** 5 arXiv harness papers + CLI-Anything cross-wiki; **Image gen:** 6 arXiv; **Cybersec:** skill-injection cluster (3); **Gambling:** opponent modeling + DevFun S28 tournament brief; **3D:** self-improving CAD agents; **SEO:** K88/K90 brief pages ingested. **Prod briefs scp'd:** AlphaEval/governance, WC S28 shock recovery, SkillGuard permission steal. Federation hub sweep `2026-06-03`.
+
 ## Current state (2026-06-01 — K93)
 
 - **K93 ingest (2026-06-01)** — 4 inbox files: monokern.docx + arXiv 2605.30621 + v5 tool eval (34 URL) + Posts.docx (31). **5 sources + 3 concepts + federation digest kit + 4 tool pages.** Monokern weekly pipeline in `daily_research_config.yaml`. **Cross-wiki briefs on disk** (6 wikis). Prod brief → cemini-prod. Inbox cleared.
