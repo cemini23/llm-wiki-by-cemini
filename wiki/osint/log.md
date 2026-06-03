@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-03] wc-bot | K97 adoption pass — tournament-ops + pre-kickoff tapes
+
+- **world-cup-bot** — `tournament-ops` adds `match_shock_readiness` check; `shock_match.yaml` operator WC volume hypothesis (K97)
+- **Pipeline run** — discover 206 slugs; Data API export 21k trades; bucket grid A–D PASS (paper replay — not promotion sign-off)
+- **Wiki** — OPEN-GAPS + match_shock_v1 + football-shock concept synced to shipped Module 8
+
 ## [2026-06-03] ingest | K97 — Posts.docx (17 posts)
 
 - **Source** — `trading-posts-compilation-17-2026-06-03.md` (sha `bf5682b3…`, 17 posts)

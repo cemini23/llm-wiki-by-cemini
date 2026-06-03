@@ -96,12 +96,17 @@ WC_SHOCK_ENABLED=1 world-cup-bot match-shock-record --discovery data/local/match
 
 **Dome API EOL 2026-04-28** — historical trades via Polymarket Data API (`data-api.polymarket.com`), not Dome.
 
-## Not yet built
+## Shipped (repo @ 2026-06-03)
 
-- Live limit POST / order manager for shock ladders
-- `match-shock-plan` in-play scanner loop
-- systemd timer (monitor profile)
-- Match clock + score feed join for `elapsed_ms` / `goal_diff`
+- Live limit POST — `match_shock_post.py` + `match-shock-post` CLI (gated: `WC_MATCH_SHOCK_LIVE` + `WC_MATCH_SHOCK_LIVE_ACK`)
+- `match-shock-plan` paper/live loop — `match_shock_plan.py`
+- systemd — discover/plan timers (monitor); record + live-plan (trading, manual)
+- `tournament-ops check` — `_check_match_shock_readiness` (discovery + tapes + env gates)
+
+## Deferred (v1.1)
+
+- Match clock + score feed join for `elapsed_ms` / `goal_diff` precision beyond tape defaults
+- Operator sets `operator.wc_volume_hypothesis` in `shock_match.yaml` after K97 sizing debate (larger overreactions vs deeper liquidity)
 
 ## Detection parameters (YAML)
 
@@ -155,7 +160,7 @@ All rows: `logic_version=wc_match_shock_v1`, `strategy_key=pm_wc_match_shock`.
 | Flag | Meaning |
 |------|---------|
 | `WC_SHOCK_ENABLED=1` | Enable match-shock record path |
-| `WC_MATCH_SHOCK_LIVE=1` | Allow live limit POST (default off; not implemented) |
+| `WC_MATCH_SHOCK_LIVE=1` | Allow live limit POST (default off; requires ACK + preflight) |
 | `WC_MATCH_SHOCK_TAPE_DIR` | Export / live tape directory |
 | `WC_MATCH_SHOCK_LEDGER_PATH` | JSONL path |
 

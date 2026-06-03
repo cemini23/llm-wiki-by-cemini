@@ -45,13 +45,14 @@ related:
   - sources/arxiv-harness-updating-not-benefit-2605.30621.md
   - concepts/system-scaling-harness-evaluation.md
   - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
+  - sources/trading-posts-compilation-17-2026-06-03.md
   - concepts/polymarket-football-shock-recovery-trading.md
   - projects/world-cup-bot/Architecture/Architecture - match_shock_v1.md
   - projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md
   - entities/people/rohonchain.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-06-02
+updated: 2026-06-03
 ---
 
 ## Relations

@@ -65,27 +65,25 @@ Independent classifiers combine into a key like `deep|underdog|balanced|mid|leve
 
 ### Data for backtest
 
-- **Dome API** — unified PM/Kalshi historical OB + trades [CONFIRMED: Polymarket acquired Dome 2026-02-19 per crypto.news / YC]
-- **Cemini alternative:** @entities/tools/pmxt.md 1TB open orderbook archive + CLOB WS for live — no Dome dependency required for distribution build
+- **Polymarket Data API** — primary path in `world-cup-bot` (`match-shock-export`); **Dome API EOL 2026-04-28** [CONFIRMED]
+- **Live CLOB WS** — `match-shock-record` for WC 2026 slugs
+- **pmxt** — optional deep OB on librarian; deprioritized when football slugs sparse (see @projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md)
 
-### WC Bot integration — **orthogonal, not plug-in**
+### WC Bot integration — **Module 8 shipped (orthogonal to advance LP)**
 
-| Dimension | World Cup Bot v1 | Shock-recovery module |
-|-----------|------------------|----------------------|
+| Dimension | World Cup Bot v1 (Modules 1–7) | Shock-recovery (Module 8) |
+|-----------|-------------------------------|---------------------------|
 | Markets | Team **advance to knockout** | **Match winner / in-play** |
 | Timing | Pregame; cancel **≥10h** before kick | **During live play** |
 | Edge | Conviction + LP rewards | Overreaction mean reversion |
-| Policy | `hard_halt` in-play (DR 09) | Requires in-play quotes |
-| Codebase | `world-cup-bot` quoter/fill-handler | **New module** — shock detector + ladder executor |
+| Policy | `hard_halt` in-play (DR 09) | Separate path; `shock_match.yaml` `enabled: false` default |
+| Codebase | `quoter.py` / fill-handler | `match_shock.py` — **never** import from quoter |
 
-**How it helps WC Bot (indirectly):**
+**Handoff:** `trading_mode.py` — LP on advance markets until kickoff window; SHOCK on match slugs when promoted (`WC_SHOCK_ENABLED=1`).
 
-1. **Validates DR 09 posture** — Roan's edge is exactly the adverse flow that picks off resting advance-market LPs during live group matches (cross-market contagion when Group A goal reprices Group F advance odds).
-2. **Borrowable patterns** — 5D classifier could feed **fill-handler vol cooldown** or **cross-venue alert** severity (not yet wired).
-3. **v2 roadmap candidate** — `trading_mode.py` handoff in same bot: LP until T-10h on advance markets, SHOCK on match markets after kickoff.
-4. **Backtest hygiene** — min-sample bucket rule mirrors Cemini's MCPT / shadow-gate discipline.
+**K97 (@RohOnChain re-share):** open sizing question — WC retail influx may **widen** shock dips or **dampen** recovery; captured in `config/shock_match.yaml` `operator.wc_volume_hypothesis` (unset until bucket grid on WC tapes).
 
-**What NOT to do:** Enable shock-recovery on the same advance-LP quoter without isolation — strategy types conflict on cancel-window and inventory risk.
+**What NOT to do:** Enable shock live POST on the advance-LP wallet without isolation and separate promotion gates.
 
 ### Relation to taxonomy
 
