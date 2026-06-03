@@ -2,8 +2,8 @@
 title: Architecture — match_shock_v1 (in-play shock recovery)
 type: architecture-module
 date: 2026-06-02
-updated: 2026-06-02
-scanned-commit: scaffold
+updated: 2026-06-03
+scanned-commit: dual-path-cli
 ai-first: true
 related:
   - projects/world-cup-bot/Architecture/Architecture - Overview.md
@@ -19,13 +19,13 @@ maturity: draft
 ## Relations
 
 - @projects/world-cup-bot/Architecture/Architecture - Overview.md
-- @projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md — pmxt bucket backtest pipeline
+- @projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md — data paths (Data API, live WS, pmxt)
 - @concepts/polymarket-football-shock-recovery-trading.md — RoH framework synthesis
 - @sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md — advance LP stays `hard_halt`; this module is isolated v2
 
 ## For future Claude
 
-Module **8** — `wc_match_shock_v1`. Repo scaffold @ `world-cup-bot` (`match_shock.py`, `config/shock_match.yaml`). **Never** import from `quoter.py`. Pattern B logic version (inline `MATCH_SHOCK_SPEC`), same as cross-venue paper/exec.
+Module **8** — `wc_match_shock_v1`. Repo: `world-cup-bot` (`match_shock.py`, `config/shock_match.yaml`). **Never** import from `quoter.py`. Pattern B logic version (inline `MATCH_SHOCK_SPEC`), same as cross-venue paper/exec.
 
 ## Purpose
 
@@ -48,50 +48,60 @@ LP ends at the **same** `MIN_HOURS_BEFORE_KICKOFF` the calendar guard already en
 
 | Concern | Advance LP (Module 3) | Match shock (Module 8) |
 |---------|----------------------|-------------------------|
-| Markets | `advance to knockout` | Match win / 90-min |
+| Markets | `advance to knockout` | Match win / 90-min / beat |
 | Time | Pregame; cancel ≥10h | Live after kickoff (≤2h) |
 | Mode enum | `TradingMode.LP` | `TradingMode.SHOCK` |
 | Policy | DR 09 — no in-play advance quotes | Explicit in-play match only |
 | Registry | `strategy_logic_versions.yaml` | Inline `MATCH_SHOCK_SPEC` |
 | Wallet | Operator LP wallet | Same wallet OK if modes never overlap per slug |
 
-Roan's strategy explains **why** advance LP must cancel before kickoff: live shocks reprice related markets and pick off stale resting quotes.
-
 ## Component map
 
 ```
-┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│ Trade/OB ingest │────▶│ Shock detector   │────▶│ 5D classifier   │
-│ (WS / JSONL)    │     │ 2m window        │     │ bucket_key      │
-└─────────────────┘     └──────────────────┘     └────────┬────────┘
-                                                          │
-┌─────────────────┐     ┌──────────────────┐              ▼
+┌─────────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│ Tape ingest         │────▶│ Shock detector   │────▶│ 5D classifier   │
+│ Data API / WS / pmxt│     │ 2m window        │     │ bucket_key      │
+└─────────────────────┘     └──────────────────┘     └────────┬────────┘
+                                                              │
+┌─────────────────┐     ┌──────────────────┐                  ▼
 │ Paper / live    │◀────│ Ladder planner   │◀──── Distribution lookup
-│ execution       │     │ P50–P95 weights  │      (pmxt backtest JSON)
+│ execution       │     │ P50–P95 weights  │      (backtest JSON)
 └─────────────────┘     └──────────────────┘
 ```
 
-### Shipped scaffold (2026-06-02)
+## Shipped (2026-06-03)
 
 | Piece | Path |
 |-------|------|
 | Config | `config/shock_match.yaml` |
 | Core logic | `world_cup_bot/match_shock.py` |
 | Mode handoff | `world_cup_bot/trading_mode.py` |
-| Loader | `world_cup_bot/match_shock_config.py` |
+| Gamma discovery | `world_cup_bot/match_market_discovery.py` |
+| Data API client | `world_cup_bot/data_api_client.py` |
+| Tape export | `world_cup_bot/shock_tape_export.py` |
+| Live WS | `world_cup_bot/ws_market.py`, `match_shock_record.py` |
 | Backtest CLI | `scripts/shock_backtest/run_bucket_backtest.py` |
-| pmxt ETL | `scripts/shock_backtest/export_pmxt_shock_tapes.py` |
-| pmxt parquet → JSONL | `scripts/shock_backtest/pmxt_parquet_to_jsonl.py` |
-| Librarian sync | `scripts/shock_backtest/sync_pmxt_football_to_librarian.sh` |
-| Tests | `tests/test_match_shock.py` |
+| pmxt ETL (optional) | `scripts/shock_backtest/pmxt_parquet_to_jsonl.py`, sync scripts |
+| CLI | `match-shock-discover`, `match-shock-export`, `match-shock-record` |
 | Operator doc | `docs/MATCH_SHOCK_V1.md` |
+| Tests | `tests/test_match_shock.py`, `test_match_market_discovery.py`, `test_ws_market.py`, … |
 
-### Not yet built
+## CLI (operator)
 
-- CLOB WS live scanner + order POST layer
-- CLI subcommands (`match-shock-scan`, `match-shock-plan`)
+```bash
+world-cup-bot match-shock-discover --out data/local/match_markets.json
+world-cup-bot match-shock-export --discovery data/local/match_markets.json
+WC_SHOCK_ENABLED=1 world-cup-bot match-shock-record --discovery data/local/match_markets.json
+```
+
+**Dome API EOL 2026-04-28** — historical trades via Polymarket Data API (`data-api.polymarket.com`), not Dome.
+
+## Not yet built
+
+- Live limit POST / order manager for shock ladders
+- `match-shock-plan` in-play scanner loop
 - systemd timer (monitor profile)
-- Gemini DR prompt `12-match-shock-recovery-spec.md`
+- Match clock + score feed join for `elapsed_ms` / `goal_diff`
 
 ## Detection parameters (YAML)
 
@@ -121,7 +131,7 @@ Min **5** samples per bucket before trusting distribution; else conservative def
 
 Order TTL: 60s. Exit: **+4¢** recovery from fill (configurable).
 
-Backtest filter default: **`moderate_fav`** buckets only (RoH tuning claim — verify on pmxt data).
+Backtest filter default: **`moderate_fav`** buckets only (RoH tuning claim — verify on exported tapes).
 
 ## Ledger events
 
@@ -135,16 +145,18 @@ All rows: `logic_version=wc_match_shock_v1`, `strategy_key=pm_wc_match_shock`.
 
 ## Promotion gates
 
-1. pmxt (or Dome) bucket backtest → win rate ≥ 55% on filtered buckets
+1. Data API + live WS bucket backtest → win rate ≥ 55% on filtered buckets
 2. 3+ days paper ledger soak (`WC_MATCH_SHOCK_LIVE` unset)
 3. Operator sign-off — separate from SHADOW Phase 4 advance LP
 4. Non-US egress if live POST (same as Module 3)
 
-## Env flags (planned)
+## Env flags
 
 | Flag | Meaning |
 |------|---------|
-| `WC_MATCH_SHOCK_LIVE=1` | Allow live limit POST (default off) |
+| `WC_SHOCK_ENABLED=1` | Enable match-shock record path |
+| `WC_MATCH_SHOCK_LIVE=1` | Allow live limit POST (default off; not implemented) |
+| `WC_MATCH_SHOCK_TAPE_DIR` | Export / live tape directory |
 | `WC_MATCH_SHOCK_LEDGER_PATH` | JSONL path |
 
 Master YAML switch: `config/shock_match.yaml` → `enabled: false`.

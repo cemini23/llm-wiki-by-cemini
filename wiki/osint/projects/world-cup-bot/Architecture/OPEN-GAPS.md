@@ -2,7 +2,7 @@
 title: World Cup Bot architecture — open gaps
 type: concept
 date: 2026-06-01
-updated: 2026-06-02
+updated: 2026-06-03
 scanned-commit: d5a2f8e
 ai-first: true
 related:
@@ -59,7 +59,7 @@ Gap list after `/obsidian-architect` @ `17a6647`. **Before live POST:** @project
 | **CeminiSuite import** | Post shadow gate | OSINT `briefs/2026-05-29_world-cup-bot-cemini-import.md` |
 | **Cross-venue pair refresh** | Slug drift | `discover` timer + manual `--discover-only` |
 | **Trading VPS profile** | Non-US live LP | Phase 2–4 after SHADOW 3–4 |
-| **In-play shock-recovery module** | K94 @RohOnChain framework; orthogonal to advance LP | **Scaffold shipped 2026-06-02** — `match_shock.py`, backtest CLI, tests; live POST + CLI subcommands still open |
+| **In-play shock-recovery module** | K94 @RohOnChain; orthogonal to advance LP | **Dual-path CLI shipped 2026-06-03** — discover, Data API export, live WS record, backtest; **open:** live POST, `match-shock-plan`, bucket grid A–D, WC live soak |
 
 ## Still open (documentation / automation)
 

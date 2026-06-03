@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-03] wc-bot | Module 8 dual-path docs + prod brief
+
+- **world-cup-bot** — `match-shock-discover|export|record`, Data API + live WS; docs `MATCH_SHOCK_V1.md`, backtest README, RUNBOOK, ROADMAP
+- **Wiki** — updated `Architecture - match_shock_v1.md`, `Architecture - match_shock_pmxt_backtest.md` (Dome EOL → Data API), OPEN-GAPS
+- **Prod brief** — `2026-06-03_wc-match-shock-dual-path-cemini.md` → scp (read-only; no `/opt/cemini` code changes)
+
 ## [2026-06-03] ingest | K96 — friend CeminiSuite audit + digest arXiv
 
 - **Source** — `cemini-external-code-audit-errors-2026-06-03.md` (Errors in code .docx) — 7 findings verified on local clone
