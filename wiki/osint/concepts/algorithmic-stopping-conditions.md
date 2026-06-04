@@ -15,6 +15,7 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - concepts/monte-carlo-permutation-test-mcpt.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
+  - concepts/agent-team-five-gate-decision-memo.md
 maturity: validated
 created: 2026-04-30
 updated: 2026-05-07

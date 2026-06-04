@@ -19,6 +19,7 @@ related:
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
   - "@ccc-wiki/briefs/2026-06-03_k97-ccc-agent-harness-from-osint.md"
   - "@ccc-wiki/sources/trading-posts-compilation-17-2026-06-03.md"
+  - sources/trading-posts-compilation-18-2026-06-04.md
 maturity: draft
 read_status: read
 created: 2026-06-03

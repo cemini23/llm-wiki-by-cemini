@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-04] ingest | K98 — full inbox (5 files)
+
+- **Sources (5)** — `trading-posts-compilation-18-2026-06-04.md` (13 posts, sha `32400c1f…`); arXiv 2601.21372 NEMO; 2606.02302 SeClaw; 2606.04574 crypto pair DRL; `stanford-avellaneda-stoikov-hf-mm-gr5-2018.md`
+- **Concepts (7 new)** — `agent-team-five-gate-decision-memo`, `polymarket-binance-oracle-latency-fusion`, `polymarket-preopen-queue-priority`, `nemo-execution-aware-optimization-modeling`, `seclaw-agent-security-evaluation`, `crypto-pair-trading-drl-shielded-execution`, `avellaneda-stoikov-market-making-baseline`
+- **Updated (6)** — `polymarket-bot-architecture`, `regime-conditioned-evaluation`, `tradingagents`, `polymarket-updown-bot-taxonomy`, `polymarket-retail-trading-discipline`, `polymarket-market-making-architectures`, `conductor-orchestrator`
+- **Cross-wiki briefs** — CCC, cybersec SeClaw, SEO style pass
+- **Prod brief scp'd** — `2026-06-04_k98-pm-latency-fusion-queue-telemetry-cemini-prod.md` → `cemini-prod:/opt/cemini/briefs/`
+- **Raw** — 5 files → librarian; inbox cleared
+
 ## [2026-06-04] wc-bot | Public-launch docs + prod/egress pull brief
 
 - **world-cup-bot** — README, RUNBOOK, MATCH_SHOCK_V1, SHADOW, SETUP, GitHub Pages aligned with Issue 3 (Module 8 shipped wording)

@@ -53,6 +53,9 @@ related:
   - sources/alterego-eth-coldmath-weather-deconstruction-2026-05-24.md
   - entities/people/coldmath-polymarket.md
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
+  - sources/trading-posts-compilation-18-2026-06-04.md
+  - concepts/polymarket-binance-oracle-latency-fusion.md
+  - concepts/polymarket-preopen-queue-priority.md
   - concepts/polymarket-btc-already-position-gate.md
   - concepts/polymarket-news-resolution-speed-game.md
   - sources/trading-posts-compilation-20-2026-05-27.md
@@ -74,7 +77,7 @@ related:
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-06-01
+updated: 2026-06-04
 ---
 
 ## Relations
@@ -257,6 +260,19 @@ A *third* operator (@adiix_official, K52 `posts.docx` Post 6) published "Why you
 | Deploy to a \$5/mo VPS before live; laptop is not a deploy target | Latency targets / dedicated infra — `[CONFIRMED]` |
 | Half-Kelly sizing, hard 8%-of-portfolio cap, recalc portfolio before every trade | Sizing + risk (chunk, don't all-in) — corroborated |
 | Risk halts: daily −20% P&L halt, permanent halt below 60% of all-time high, 30-min pause after 5 losses | Stop losses + risk controls — `[CONFIRMED]`, with concrete thresholds |
+
+### K98 extension — fusion + pre-open queue (@0x_Punisher, Jun 2026)
+
+@sources/trading-posts-compilation-18-2026-06-04.md splits latency into two engineering surfaces (not new philosophy vs this page):
+
+| K98 topic | Page | Note |
+|---|---|---|
+| Binance CVD/OBI vs PM UP/DOWN lag | @concepts/polymarket-binance-oracle-latency-fusion.md | Type-1 cross-feed; corroborates Binance WS rows above |
+| Pre-open queue sniping | @concepts/polymarket-preopen-queue-priority.md | **New** — time-in-queue before window open, not post-open reaction |
+| Anti-hype / fake AI bot threads | @concepts/polymarket-retail-trading-discipline.md | Posts 7–8 — discipline only |
+| MiroFish + Claude simulation | — | REFERENCE [NEEDS VERIFICATION 2026-06-04] — no architecture detail |
+
+PnL marketing ($46k/mo, $16k, 67–76% concentration) stays `[TENTATIVE]` single-source.
 
 The genuinely new artifact in Post 6 is a **"battle-tested" Claude prompt** — a full production-bot spec (credentials / price-monitoring / edge-detection / position-sizing / risk-management / execution / monitoring / paper-mode blocks). It is a reusable scaffold for *generating* a Type-1 bot, not a new architecture; captured as a Snippet below. Post 6 also restates that **Polymarket is geo-blocked to US residents** — independent confirmation of the Cemini geo-routing findings (see `@concepts/cemini-deployment.md`). The 9-mistake list the article advertises did not survive the `.docx`→text extraction (embedded image/table); the prompt and setup checklist did.
 

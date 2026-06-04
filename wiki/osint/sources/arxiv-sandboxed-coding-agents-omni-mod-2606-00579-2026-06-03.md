@@ -6,6 +6,8 @@ keywords: [2606.00579, omni-coding, code-x, terminal-bench-o, sandboxed-agents]
 related:
   - concepts/cli-anything-agent-native-computer-use.md
   - sources/cemini-external-code-audit-errors-2026-06-03.md
+  - concepts/nemo-execution-aware-optimization-modeling.md
+  - sources/arxiv-nemo-execution-aware-optimization-2601-21372-2026-06-04.md
 read_status: skimmed
 maturity: draft
 created: 2026-06-03

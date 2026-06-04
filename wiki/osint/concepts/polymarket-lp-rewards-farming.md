@@ -31,6 +31,7 @@ related:
   - concepts/polymarket-sports-lp-operating-rules.md
   - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
+  - concepts/polymarket-preopen-queue-priority.md
 maturity: validated
 created: 2026-05-20
 updated: 2026-05-29

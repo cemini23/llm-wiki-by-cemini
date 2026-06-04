@@ -28,6 +28,7 @@ related:
   - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
   - projects/world-cup-bot/Architecture/Architecture - match_shock_pmxt_backtest.md
 
+  - concepts/polymarket-preopen-queue-priority.md
 maturity: validated
 created: 2026-05-13
 updated: 2026-05-29

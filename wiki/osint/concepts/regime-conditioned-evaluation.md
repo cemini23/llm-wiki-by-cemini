@@ -24,6 +24,7 @@ related:
   - concepts/brier-score-model-promotion-framework.md
   - concepts/equity-fair-value-evaluation.md
   - sources/trading-posts-compilation-17-2026-06-03.md
+  - sources/trading-posts-compilation-18-2026-06-04.md
   - concepts/regime-adaptive-continual-portfolio-learning.md
   - sources/arxiv-regime-adaptive-portfolio-learning-2606-00143-2026-06-02.md
   - concepts/trading-model-failure-diagnostics.md
@@ -32,7 +33,7 @@ related:
   - sources/arxiv-llm-robust-portfolio-optimization-2605-27013-2026-06-02.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-06-02
+updated: 2026-06-04
 ---
 
 ## Relations
@@ -160,6 +161,10 @@ Without these five numbers, the comparison ranks regimes, not algorithms.
 Paper's own honesty-bound: cross-benchmark Spearman CI [0.19, 0.80] excludes zero only with HPO-B included. PRS is a **within-domain ordering**, not a universal score. For Cemini, this means PRS calibration is **per-domain** (Conductor PRS ≠ strategy-backtest PRS ≠ brief-audit PRS thresholds). Each domain needs its own threshold-selection process via cross-validation on held-out cases.
 
 This is a non-trivial overhead that argues for **starting with the brief-audit gate** (lowest data needs, highest leverage) before extending to Conductor and strategy backtests.
+
+### K98 — Horizon retail quant filter (@horizon_trade_x)
+
+@sources/trading-posts-compilation-18-2026-06-04.md Post 5 markets a **four-question desk filter** (deflated Sharpe, sample size, regime stability, implementation realism) for plain-English backtests — aligns with No-Free-Leaderboard / brief-audit discipline but is **product funnel** copy for horizon.trade [TENTATIVE]. No new math beyond existing PRS narrative; captured for SEO + operator skepticism of viral "99 strategies rejected" threads.
 
 ## Snippets
 

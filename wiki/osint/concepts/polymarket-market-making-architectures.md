@@ -15,10 +15,12 @@ related:
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/polymarket-lp-rewards-farming.md
+  - concepts/avellaneda-stoikov-market-making-baseline.md
+  - sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md
 maturity: draft
 hub: true
 created: 2026-05-05
-updated: 2026-05-20
+updated: 2026-06-04
 ---
 
 ## Relations

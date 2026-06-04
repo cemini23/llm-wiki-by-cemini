@@ -24,6 +24,8 @@ related:
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
+  - concepts/avellaneda-stoikov-market-making-baseline.md
+  - sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md
 maturity: draft
 created: 2026-05-21
 updated: 2026-05-29

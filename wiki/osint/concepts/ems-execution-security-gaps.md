@@ -8,6 +8,8 @@ related:
   - concepts/production-trading-blind-spots.md
   - concepts/cemini-knowledge-application-architecture.md
   - concepts/shadow-to-live-transition-engineering.md
+  - concepts/seclaw-agent-security-evaluation.md
+  - sources/arxiv-seclaw-spec-driven-agent-security-2606-02302-2026-06-04.md
 maturity: validated
 created: 2026-06-03
 updated: 2026-06-03

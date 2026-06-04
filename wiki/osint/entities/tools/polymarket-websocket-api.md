@@ -10,6 +10,7 @@ related:
   - concepts/polymarket-bot-architecture.md
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - entities/tools/polygnosis.md
+  - concepts/polymarket-binance-oracle-latency-fusion.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-06-01

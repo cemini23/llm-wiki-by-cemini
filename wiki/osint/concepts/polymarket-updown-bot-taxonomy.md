@@ -25,9 +25,11 @@ related:
   - entities/tools/polysniper.md
   - concepts/kalshi-ui-automation-bot-pattern.md
   - sources/youtube-kalshi-bots-batch-2026-05-29.md
+  - concepts/polymarket-binance-oracle-latency-fusion.md
+  - sources/trading-posts-compilation-18-2026-06-04.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-29
+updated: 2026-06-04
 ---
 
 ## Relations

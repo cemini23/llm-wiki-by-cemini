@@ -12,10 +12,12 @@ related:
   - entities/tools/tradingagents-cn.md
   - sources/arxiv-agentic-trading-survey-2605.19337.md
   - sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md
+  - sources/trading-posts-compilation-18-2026-06-04.md
+  - concepts/agent-team-five-gate-decision-memo.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30
-updated: 2026-05-30
+updated: 2026-06-04
 ---
 
 ## Relations

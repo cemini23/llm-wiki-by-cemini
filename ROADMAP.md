@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-04 — K98)
+
+- **K98 ingest (2026-06-04)** — Full inbox: `Posts.docx` (13 posts, sha `32400c1f…`) + 3 arXiv + `gr5.pdf`. **5 sources + 7 concepts + 6 updates**. PM: Binance/PM fusion + pre-open queue priority. Agent: five-gate org chart; SeClaw + NEMO REFERENCE. **Briefs:** CCC/cybersec/SEO on disk; **prod brief scp'd** `2026-06-04_k98-pm-latency-fusion-queue-telemetry-cemini-prod.md`. **world-cup-bot:** ROADMAP K98 scope boundary only (no module changes). Raw → librarian; inbox cleared.
+
 ## Current state (2026-06-03 — K97)
 
 - **K97 ingest (2026-06-03)** — `Posts.docx` (17 posts, sha `bf5682b3…`). **1 source + 8 page updates**; harness cluster → CCC brief; Roh Posts 15–17 (polytope + FIFA re-share = K94). **Prod brief scp'd:** `2026-06-03_k97-gustafssonkotte-tape-speed-telemetry-cemini-prod.md` (read-only telemetry). SEO style pass K97.

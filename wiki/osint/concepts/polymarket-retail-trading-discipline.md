@@ -13,9 +13,10 @@ related:
   - concepts/trading-account-blowup-red-flags-smb.md
   - entities/tools/polysniper.md
   - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
+  - sources/trading-posts-compilation-18-2026-06-04.md
 maturity: draft
 created: 2026-05-22
-updated: 2026-05-29
+updated: 2026-06-04
 clusters: [polymarket, risk]
 ---
 
