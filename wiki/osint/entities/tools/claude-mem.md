@@ -11,15 +11,19 @@ related:
   - concepts/llms-get-lost-mitigation-audit.md
   - entities/tools/claude-obsidian.md
   - concepts/agent-memory-pipeline-eval-rubric.md
+  - concepts/interaction-native-knowledge-harness.md
+  - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
 maturity: validated
 created: 2026-05-10
-updated: 2026-06-02
+updated: 2026-06-04
 laptop_install: VERIFIED 2026-05-10 (v13.0.1)
 phase_2_smoke: PASS 2026-05-12 (12 sessions / 148 obs / 50-obs SessionStart injection cross-session verified)
 ---
 
 ## Relations
 - `@sources/evaluating-links-trading-wiki-stacks.md` — source evaluation brief (URL 18)
+- `@sources/arxiv-interaction-native-knowledge-harness-2606.01886.md` — persistent graph vs laptop session memory (K99)
+- `@concepts/interaction-native-knowledge-harness.md` — financial harness contrast
 
 ## Raw Concept
 

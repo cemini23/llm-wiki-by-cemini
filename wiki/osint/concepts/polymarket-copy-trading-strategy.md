@@ -23,6 +23,8 @@ related:
   - concepts/polymarket-retail-trading-discipline.md
   - entities/infrastructure/cemini-egress-fi.md
   - concepts/cemini-ai-assistant.md
+  - concepts/interaction-native-knowledge-harness.md
+  - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - sources/trading-posts-compilation-38-2026-05-26.md
   - sources/trading-posts-compilation-25-2026-05-27.md
@@ -41,7 +43,7 @@ related:
   - entities/tools/momentum-odds.md
 maturity: validated
 created: 2026-05-21
-updated: 2026-05-29
+updated: 2026-06-04
 clusters: [polymarket, copy-trading]
 ---
 

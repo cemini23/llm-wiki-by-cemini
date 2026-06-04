@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-04] ingest | K99 — InKH financial harness (CCC handoff)
+
+- **Source** — arXiv 2606.01886 (True Trading); preingest NEW; skimmed from CCC + handoff brief
+- **Concept** — `interaction-native-knowledge-harness` (temporal KG vs kb-server/stash; EMS governance pairing)
+- **Updated (7)** — `librarian-server-architecture`, `kb-server-retrieval-scaling`, `agent-memory-critique`, `ems-execution-security-gaps`, `conductor-orchestrator`, `polymarket-copy-trading-strategy`, `claude-mem`, `llm-wiki`
+- **Cross-wiki** — `@ccc-wiki` source/concept backlinked; brief mirrored to `briefs/2026-06-04_inkh-financial-knowledge-harness-osint-handoff.md`
+- **Raw** — PDF → librarian; laptop inbox cleared
+
 ## [2026-06-04] ops | launchd morning agents (Desktop TCC)
 
 - **Fix** — `~/bin/cemini-*` wrappers; payload sync to `~/.cemini/launchagent/`; `reinstall_morning_launchagents.sh`; Aqua plists; `CEMINI_WIKI_ROOT` / stdin-safe shell scripts

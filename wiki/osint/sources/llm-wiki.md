@@ -16,10 +16,12 @@ related:
   - entities/tools/swarmvault.md
   - sources/deep-graphrag-2601-11144.md
   - sources/gemini-sci-research-2602-03837.md
+  - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
+  - concepts/interaction-native-knowledge-harness.md
 maturity: validated
 read_status: validated
 created: 2026-04-23
-updated: 2026-05-11
+updated: 2026-06-04
 ---
 
 ## Relations

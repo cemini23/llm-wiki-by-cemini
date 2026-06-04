@@ -31,6 +31,8 @@ related:
   - entities/tools/swarmvault.md
   - entities/infrastructure/cemini-egress-fi.md
   - concepts/cemini-ai-assistant.md
+  - concepts/interaction-native-knowledge-harness.md
+  - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
   - sources/arxiv-inference-scaling-llms-2605.19775.md
   - concepts/laptop-prod-research-split.md
   - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
@@ -38,7 +40,7 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-05-28
+updated: 2026-06-04
 ---
 
 ## Relations
@@ -60,6 +62,8 @@ updated: 2026-05-28
 - @ccc-wiki/concepts/cross-wiki-routing.md — CCC-side concept on where new content belongs in the federation; references this page as the serving-layer canon
 - @entities/infrastructure/cemini-egress-fi.md — the third Hetzner server (Helsinki, Finland); same vendor as the librarian, different DC. Candidate Cemini AI host that would query this librarian's kb-server + stash over a transatlantic hop
 - @concepts/cemini-ai-assistant.md — proposed user-facing assistant; a new consumer of this librarian's kb-server (static wiki RAG) and stash (episodic memory)
+- @concepts/interaction-native-knowledge-harness.md — InKH temporal graph + wiki audit; kb-server/stash as partial implementation
+- @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — financial harness paper (K99 cross-wiki from CCC)
 
 ## Raw Concept
 

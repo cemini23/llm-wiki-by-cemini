@@ -13,6 +13,8 @@ related:
   - entities/frameworks/fastmcp.md
   - entities/infrastructure/deepseek-api.md
   - concepts/librarian-server-architecture.md
+  - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
+  - concepts/interaction-native-knowledge-harness.md
   - concepts/mcp-tool-marketplace.md
 maturity: validated
 read_status: read
@@ -22,6 +24,8 @@ updated: 2026-04-28
 
 ## Relations
 
+- @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — InKH temporal graph + RRF contrast (K99)
+- @concepts/interaction-native-knowledge-harness.md — financial harness mapping
 - @concepts/wiki-tooling-evaluation.md — synthesis page; **steal-architectural-details candidate** (Apache-2.0 license-clean; pipeline shape is reference-grade for the prescribed Python cpr-pattern wiring; runtime architecture wrong for our Python+7-GB-Hetzner constraints)
 - @concepts/context-compression-resume-pattern.md — K8 promotion concept page; agentmemory is the **end-to-end working implementation** of the 3-phase Compress / Preserve / Resume pattern this concept page documents
 - @sources/willynikes2-knowledge-base-server.md — sibling memory engine; opposite axis (kb-server = three-tier hot/warm/cold framing; agentmemory = compress-preserve-resume framing); both implement compounding-context loops

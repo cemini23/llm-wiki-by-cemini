@@ -23,6 +23,8 @@ related:
   - concepts/verbalized-sampling-llm-diversity.md
   - concepts/llms-get-lost-mitigation-audit.md
   - sources/arxiv-coordination-layer-multi-agent-2605-03310.md
+  - concepts/interaction-native-knowledge-harness.md
+  - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
 maturity: validated
 hub: true
 created: 2026-05-01
@@ -31,6 +33,8 @@ updated: 2026-06-04
 
 ## Relations
 
+- @concepts/interaction-native-knowledge-harness.md — passive injection vs query-time wiki-walk (K99)
+- @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — InKH retrieval model (K99)
 - @concepts/agent-team-five-gate-decision-memo.md — K98 five-gate org chart
 - @concepts/nemo-execution-aware-optimization-modeling.md — K98 sandboxed OR agents (REFERENCE)
 - @concepts/seclaw-agent-security-evaluation.md — K98 agent security eval (REFERENCE)

@@ -12,14 +12,17 @@ related:
   - sources/4-14-pvg5.md
   - sources/llm-re-4-3.md
   - concepts/cemini-ai-assistant.md
+  - concepts/interaction-native-knowledge-harness.md
+  - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
   - concepts/rag-binary-quantization-at-scale.md
 maturity: validated
 created: 2026-05-15
-updated: 2026-05-29
+updated: 2026-06-04
 ---
 
 ## Relations
 
+- @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — graph-for-retrieval vs wiki-for-audit split
 - @entities/infrastructure/conductor-librarian-architecture.md — kb-server is the librarian's retrieval layer; this page sets its scaling policy
 - @entities/tools/turbovec.md — benchmarked here as a candidate ANN index; staged on the librarian, not wired
 - @entities/tools/leann.md — benchmarked here as a candidate ANN index; staged on the librarian, not wired
@@ -28,6 +31,7 @@ updated: 2026-05-29
 - @sources/4-14-pvg5.md — K49 deep-read; HNSW→information-theoretic binarization — a third architectural option (exhaustive binary scan) for the scaling decision
 - @sources/llm-re-4-3.md — K49 deep-read; ByteRover's LLM-curated markdown memory outperforms vector/graph-DB pipelines — validates the librarian's no-vector-DB posture
 - @concepts/cemini-ai-assistant.md — proposed assistant whose RAG layer is this kb-server; its retrieval scale assumptions inherit this page's brute-force-under-2000 policy
+- @concepts/interaction-native-knowledge-harness.md — paper positions graph for online retrieval, wiki for audit; kb-server is retrieval slice only
 - @concepts/rag-binary-quantization-at-scale.md — K78 binary quantization pattern for index economics
 
 ## Raw Concept

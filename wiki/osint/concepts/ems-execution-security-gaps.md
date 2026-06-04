@@ -10,9 +10,11 @@ related:
   - concepts/shadow-to-live-transition-engineering.md
   - concepts/seclaw-agent-security-evaluation.md
   - sources/arxiv-seclaw-spec-driven-agent-security-2606-02302-2026-06-04.md
+  - concepts/interaction-native-knowledge-harness.md
+  - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
 maturity: validated
 created: 2026-06-03
-updated: 2026-06-03
+updated: 2026-06-04
 ---
 
 ## Relations
@@ -20,6 +22,8 @@ updated: 2026-06-03
 - @sources/cemini-external-code-audit-errors-2026-06-03.md — provenance (friend audit 2026-06-03)
 - @concepts/production-trading-blind-spots.md — operational failure taxonomy
 - @cybersec-wiki/concepts/agent-runtime-guardrails.md — RBAC / runtime guard patterns
+- @concepts/interaction-native-knowledge-harness.md — maturity × action-risk gates before prod memory writes
+- @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — InKH governance model (K99)
 
 ## Raw Concept
 

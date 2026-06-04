@@ -15,10 +15,17 @@ related:
   - sources/reinforced-agent-tool-calling-feedback.md
   - sources/signals-trajectory-triage.md
   - concepts/cemini-knowledge-application-architecture.md
+  - concepts/interaction-native-knowledge-harness.md
+  - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-05-31
+updated: 2026-06-04
 ---
+
+## Relations
+
+- @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — InKH claims consolidation + invalidation (K99)
+- @concepts/interaction-native-knowledge-harness.md — Cemini mapping vs memo critique
 
 ## Raw Concept
 

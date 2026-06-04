@@ -17,9 +17,11 @@ related:
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/ems-execution-security-gaps.md
   - sources/cemini-external-code-audit-errors-2026-06-03.md
+  - concepts/interaction-native-knowledge-harness.md
+  - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-06-03
+updated: 2026-06-04
 ---
 
 ## Relations
@@ -33,6 +35,7 @@ updated: 2026-06-03
 - @entities/tools/world-cup-bot.md — repeat-lesson motivator (build loop rediscovered solved problems)
 - @meta/wiki-gap-detect-cadence.md — wiki-side stale-claim detection; complementary, not substitute for prod retrofit
 - @concepts/cemini-wiki-ingest-workflow.md — four-phase ingest pipeline; briefs + ROADMAP step after wiki commit
+- @concepts/interaction-native-knowledge-harness.md — passive injection still needs lesson-registry for prod actions (K99)
 
 ## Raw Concept
 
