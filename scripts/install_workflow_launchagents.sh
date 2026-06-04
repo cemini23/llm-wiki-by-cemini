@@ -171,16 +171,13 @@ EOF
   echo "  $plist"
 }
 
-echo "Installing LaunchAgents..."
 install_daily_digest_wrapper
-write_agent "com.cemini.inbox-notify" "inbox_notify.sh" ""
-write_agent "com.cemini.wiki-sync-verify" "verify_wiki_sync.sh" "3600"
-write_agent_calendar "com.cemini.daily-research-digest" "" "8" "0" "$HOME/bin/cemini-daily-research-digest"
-write_agent "com.cemini.wc-lp-safety-reminder" "run_wc_lp_safety_reminder.sh" "$WEEKLY"
-write_agent "com.cemini.wiki-gap-detect" "run_wiki_gap_detect.sh" "$WEEKLY"
+echo ""
+echo "Installing launchd-safe morning agents (~/bin + ~/.cemini/launchagent payload)..."
+bash "$ROOT/scripts/reinstall_morning_launchagents.sh"
 
 echo ""
 echo "Obsidian vault: wiki/.obsidian/ (run with --open to launch app)"
-echo "Logs: ~/Library/Logs/cemini-{inbox-watch,wiki-sync,daily-digest,workflow,wc-lp-safety,wiki-gap-detect}.log"
+echo "Logs: ~/Library/Logs/cemini-{inbox-watch,wiki-sync,daily-digest,federation-summary,workflow}.log"
 echo "Daily digest (any directory): cemini-daily-research-digest"
 echo "Optional webhook: echo 'https://...' > ~/.cemini/inbox-webhook.url"

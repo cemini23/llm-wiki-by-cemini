@@ -7,7 +7,11 @@
 
 set -uo pipefail
 
+# shellcheck source=/dev/null
+source "${HOME}/.cemini/launchagent/_python3.sh"
+
 REPO_FILE="${HOME}/.cemini/osint-workspace.path"
+PAYLOAD="${HOME}/.cemini/launchagent/osint/daily_research_digest_run.py"
 LOG_FILE="${HOME}/Library/Logs/cemini-daily-digest.log"
 TODAY="$(date +%Y-%m-%d)"
 
@@ -33,9 +37,16 @@ if ! cd "${ROOT}"; then
 fi
 
 export PATH="/opt/homebrew/bin:/usr/local/bin:${PATH:-/usr/bin:/bin:/usr/sbin:/sbin}"
+export CEMINI_WIKI_ROOT="${ROOT}"
+PY="$(cemini_launchagent_python3)"
+
+if [[ ! -f "$PAYLOAD" ]]; then
+  log "ERROR: missing ${PAYLOAD} — run: bash scripts/reinstall_morning_launchagents.sh"
+  exit 1
+fi
 
 set +e
-python3 "${ROOT}/scripts/daily_research_digest_run.py" 2>&1 | tee -a "$LOG_FILE"
+"$PY" "$PAYLOAD" 2>&1 | tee -a "$LOG_FILE"
 DIGEST_RC=${PIPESTATUS[0]}
 set -e
 

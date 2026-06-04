@@ -6,6 +6,14 @@ Newest entries on top.
 
 ---
 
+## 2026-06-04 — launchd morning jobs ≠ Full Disk Access on Cursor/bash
+
+Federated digests and federation summary failed with `Operation not permitted` on `~/Desktop/...` even though Cursor and `/bin/bash` had FDA. **Cause:** launchd runs a minimal environment (`PATH=/usr/bin:/bin:…`); TCC grants are per-binary. Calendar triggers at 08:00 often succeed when the Aqua session is active; `launchctl kickstart` from Terminal can still fail.
+
+**Fix:** `bash scripts/reinstall_morning_launchagents.sh` — `~/bin/cemini-*` wrappers, scripts/Python copied to `~/.cemini/launchagent/`, `LimitLoadToSessionType=Aqua`, `CEMINI_WIKI_ROOT` / `CEMINI_FEDERATION_ROOT` env for repo data on Desktop. If 08:00 jobs fail while logged out, add FDA to the CLT `python3` path printed at reinstall end.
+
+---
+
 ## 2026-06-01 — New Polymarket order-path repos must inherit CeminiSuite CLOB V2 stack on day one
 
 World Cup Bot shipped with **`py-clob-client` V1** in `[live]` while CeminiSuite and the OSINT wiki already pinned **`py-clob-client-v2`** (Apr 2026 cutover). Shadow Phase 1 on **cemini-prod** (`DRY_RUN=true`) never POSTed orders, so preflight reported PASS and Bugbot/architect passes missed it until **egress-fi** ran the first live `plan` → `order_version_mismatch`.

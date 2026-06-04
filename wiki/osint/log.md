@@ -1,5 +1,10 @@
 # Wiki Log
 
+## [2026-06-04] ops | launchd morning agents (Desktop TCC)
+
+- **Fix** — `~/bin/cemini-*` wrappers; payload sync to `~/.cemini/launchagent/`; `reinstall_morning_launchagents.sh`; Aqua plists; `CEMINI_WIKI_ROOT` / stdin-safe shell scripts
+- **Docs** — `LESSONS.md`, `@meta/daily-research-digest-cadence.md`
+
 ## [2026-06-04] ingest | K98 — full inbox (5 files)
 
 - **Sources (5)** — `trading-posts-compilation-18-2026-06-04.md` (13 posts, sha `32400c1f…`); arXiv 2601.21372 NEMO; 2606.02302 SeClaw; 2606.04574 crypto pair DRL; `stanford-avellaneda-stoikov-hf-mm-gr5-2018.md`

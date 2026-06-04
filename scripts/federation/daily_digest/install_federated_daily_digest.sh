@@ -38,40 +38,11 @@ Script: \`scripts/daily_research_digest_run.py\`. Report: \`wiki/sweeps/YYYY-MM-
 EOF
 fi
 
-LABEL="com.cemini.daily-research-digest.${WIKI_ID}"
-PLIST="$HOME/Library/LaunchAgents/${LABEL}.plist"
-WRAPPER="$HOME/bin/cemini-daily-research-digest-${WIKI_ID}"
-
-cat > "$WRAPPER" <<EOF
-#!/usr/bin/env bash
-set -euo pipefail
-cd "$WIKI_ROOT"
-export WIKI_ROOT="$WIKI_ROOT"
-python3 scripts/daily_research_digest_run.py
-EOF
-chmod +x "$WRAPPER"
-
-cat > "$PLIST" <<EOF
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-  <key>Label</key>
-  <string>${LABEL}</string>
-  <key>ProgramArguments</key>
-  <array>
-    <string>${WRAPPER}</string>
-  </array>
-  <key>StartCalendarInterval</key>
-  <dict>
-    <key>Hour</key>
-    <integer>8</integer>
-    <key>Minute</key>
-    <integer>15</integer>
-  </dict>
-</dict>
-</plist>
-EOF
+mkdir -p "$HOME/.cemini/wiki-paths"
+printf '%s\n' "$WIKI_ROOT" > "$HOME/.cemini/wiki-paths/${WIKI_ID}.path"
+chmod 600 "$HOME/.cemini/wiki-paths/${WIKI_ID}.path"
 
 echo "Installed digest for $WIKI_ID at $WIKI_ROOT"
-echo "LaunchAgent: $PLIST (load with: launchctl load $PLIST)"
+echo "Path file: $HOME/.cemini/wiki-paths/${WIKI_ID}.path"
+echo "Reload all morning agents:"
+echo "  bash \"$OSINT_ROOT/scripts/reinstall_morning_launchagents.sh\""

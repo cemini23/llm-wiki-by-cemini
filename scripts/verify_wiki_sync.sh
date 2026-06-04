@@ -15,7 +15,14 @@
 
 set -uo pipefail
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# LaunchAgent wrapper may pipe this script (bash -s); BASH_SOURCE is empty then.
+if [[ -n "${CEMINI_OSINT_ROOT:-}" ]]; then
+  ROOT="${CEMINI_OSINT_ROOT}"
+elif [[ -n "${BASH_SOURCE[0]:-}" ]]; then
+  ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+else
+  ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+fi
 LIBRARIAN_HOST="${CEMINI_LIBRARIAN_HOST:-cemini-librarian}"
 REMOTE_WIKI="/opt/cemini-wiki/wiki"
 LOGFILE="${HOME}/Library/Logs/cemini-wiki-sync.log"

@@ -10,7 +10,13 @@
 
 set -uo pipefail
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+if [[ -n "${CEMINI_OSINT_ROOT:-}" ]]; then
+  ROOT="${CEMINI_OSINT_ROOT}"
+elif [[ -n "${BASH_SOURCE[0]:-}" ]]; then
+  ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+else
+  ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+fi
 INBOX="$ROOT/research to be indexed"
 LOGFILE="$HOME/Library/Logs/cemini-inbox-watch.log"
 TODAY=$(date +%Y-%m-%d)

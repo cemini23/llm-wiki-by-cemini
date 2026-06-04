@@ -186,8 +186,17 @@ def render_fetch_table(outcomes: list[FetchOutcome]) -> list[str]:
     return lines
 
 
+def repo_root() -> Path:
+    """Wiki repo root — env set by ~/bin LaunchAgent wrappers (not Desktop script path)."""
+    for key in ("CEMINI_WIKI_ROOT", "WIKI_ROOT"):
+        val = os.environ.get(key)
+        if val:
+            return Path(val)
+    return Path(__file__).resolve().parent.parent
+
+
 def main() -> int:
-    repo = Path(__file__).resolve().parent.parent
+    repo = repo_root()
     cfg = load_config(repo)
     loop = cfg.get("loop") or {}
     fetch_cfg = cfg.get("fetch") or {}
