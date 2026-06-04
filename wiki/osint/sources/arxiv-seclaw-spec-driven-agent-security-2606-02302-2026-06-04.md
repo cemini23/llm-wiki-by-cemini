@@ -7,8 +7,10 @@ related:
   - concepts/seclaw-agent-security-evaluation.md
   - sources/arxiv-cli-anything-2606-03854-2026-06-03.md
   - concepts/ems-execution-security-gaps.md
-  - "@cybersecurity-wiki/briefs/2026-06-04_k98-seclaw-agent-eval-from-osint.md"
   - sources/trading-posts-compilation-18-2026-06-04.md
+  - "@cybersecurity-wiki/briefs/2026-06-04_k98-seclaw-agent-eval-from-osint.md"
+  - "@cybersecurity-wiki/sources/arxiv-2606-02302-seclaw-spec-driven-agent-security.md"
+  - "@cybersecurity-wiki/entities/tools/seclaw-eval.md"
 read_status: skimmed
 maturity: draft
 created: 2026-06-04
@@ -19,7 +21,10 @@ updated: 2026-06-04
 
 - @concepts/seclaw-agent-security-evaluation.md — OSINT synthesis
 - @concepts/ems-execution-security-gaps.md — prod EMS/RBAC gaps (orthogonal: code audit vs agent benchmark)
-- @cybersecurity-wiki/briefs/2026-06-04_k98-seclaw-agent-eval-from-osint.md — cross-wiki handoff
+- @sources/trading-posts-compilation-18-2026-06-04.md — K98 ingest batch
+- @cybersecurity-wiki/briefs/2026-06-04_k98-seclaw-agent-eval-from-osint.md — cross-wiki handoff (processed 2026-06-04)
+- @cybersecurity-wiki/sources/arxiv-2606-02302-seclaw-spec-driven-agent-security.md — cybersec canonical source
+- @cybersecurity-wiki/entities/tools/seclaw-eval.md — cybersec entity (Reference tier)
 
 ## Raw Concept
 
