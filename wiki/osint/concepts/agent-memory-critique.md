@@ -17,15 +17,18 @@ related:
   - concepts/cemini-knowledge-application-architecture.md
   - concepts/interaction-native-knowledge-harness.md
   - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
+  - concepts/agent-memory-cross-scenario-generality.md
+  - sources/arxiv-cross-scenario-agentic-generality-2606.04315-2026-06-05.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-06-04
+updated: 2026-06-05
 ---
 
 ## Relations
 
 - @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — InKH claims consolidation + invalidation (K99)
 - @concepts/interaction-native-knowledge-harness.md — Cemini mapping vs memo critique
+- @concepts/agent-memory-cross-scenario-generality.md — representation + retrieval failure diagnostics (2606.04315)
 
 ## Raw Concept
 

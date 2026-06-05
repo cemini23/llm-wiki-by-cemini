@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-05] ingest | AutoMEM cross-scenario memory — prod handoff (OSINT)
+
+- **Handoff** — `cemini-prod:/opt/cemini/briefs/2026-06-05_automem-memory-cross-scenario-osint-handoff.md`
+- **Source** — `arxiv-cross-scenario-agentic-generality-2606.04315-2026-06-05.md` (read)
+- **Concept** — `agent-memory-cross-scenario-generality` — five-scenario matrix vs stash/conductor/InKH; CONDITIONAL-GO audit
+- **Updated (5)** — `interaction-native-knowledge-harness`, `agent-memory-critique`, `agent-memory-pipeline-eval-rubric`, `conductor-orchestrator`
+- **CCC** — stub backlink to OSINT primary
+
 ## [2026-06-05] deep-read | K100 OSINT — 2606.05882 + 2606.04217 + 2605.30738
 
 - **2606.05882** — `read_status: deep-read`; concept `market-informedness-market-making` validated (two-regime LP checklist)

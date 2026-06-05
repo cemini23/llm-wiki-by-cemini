@@ -9,9 +9,11 @@ related:
   - entities/tools/claude-mem.md
   - concepts/librarian-server-architecture.md
   - concepts/monokern-compounding-research-pipeline.md
+  - concepts/agent-memory-cross-scenario-generality.md
+  - sources/arxiv-cross-scenario-agentic-generality-2606.04315-2026-06-05.md
 maturity: draft
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-05
 cross-wiki-source: "@ccc-wiki/concepts/worldmemarena-multimodal-agent-memory-eval.md"
 ---
 
@@ -33,6 +35,8 @@ cross-wiki-source: "@ccc-wiki/concepts/worldmemarena-multimodal-agent-memory-eva
 | **Use** | Session tool choice, prod MCP allowlists, skill routing |
 
 **Use:** quarterly memory-stack review (stash + claude-mem + wiki) — score each stage before adding another memory product.
+
+**K100 extension:** pair pipeline stages with the **five-scenario matrix** from `@concepts/agent-memory-cross-scenario-generality.md` — do not certify memory stack on chat-QA alone.
 
 ## Snippets
 

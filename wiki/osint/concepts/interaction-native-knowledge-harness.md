@@ -15,9 +15,11 @@ related:
   - sources/agentmemory-rohitg00-cpr-impl.md
   - entities/tools/claude-mem.md
   - sources/llm-wiki.md
+  - concepts/agent-memory-cross-scenario-generality.md
+  - sources/arxiv-cross-scenario-agentic-generality-2606.04315-2026-06-05.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-05
 ---
 
 ## Relations
@@ -33,6 +35,7 @@ updated: 2026-06-04
 - `@sources/agentmemory-rohitg00-cpr-impl.md` — RRF graph+vector pipeline contrast
 - `@concepts/cemini-knowledge-application-architecture.md` — wiki→prod lesson registry vs passive injection
 - `@ccc-wiki/concepts/interaction-native-knowledge-harness.md` — CCC harness/wiki-audit steal-from
+- `@concepts/agent-memory-cross-scenario-generality.md` — InKH vs AutoMEM five-scenario eval (K100 handoff)
 - `briefs/2026-06-04_inkh-financial-knowledge-harness-osint-handoff.md` — cross-wiki handoff provenance
 
 ## Raw Concept

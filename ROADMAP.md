@@ -11,6 +11,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 ## Current state (2026-06-05 — K100)
 
 - **K100 federation ingest (2026-06-05)** — Morning digest backlog across 6 wikis. **OSINT:** 2606.05882 market informedness + MAVEN REFERENCE + PM-v1 DB REFERENCE; NeuroLog → cybersec. **Siblings:** CCC 3 papers, SEO 2, cybersec 5, gambling 1, image-gen 3. Raw → librarian; inboxes cleared.
+- **AutoMEM handoff (2026-06-05)** — Prod brief `2026-06-05_automem-memory-cross-scenario-osint-handoff.md` → OSINT `agent-memory-cross-scenario-generality` + 2606.04315 source. **Verdict:** REFERENCE; CONDITIONAL-GO five-scenario stash/conductor audit before AutoMEM tooling.
 
 ## Current state (2026-06-04 — K99)
 

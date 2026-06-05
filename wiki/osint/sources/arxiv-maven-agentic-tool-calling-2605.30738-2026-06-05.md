@@ -14,8 +14,8 @@ updated: 2026-06-05
 ## Relations
 
 - @concepts/conductor-orchestrator.md — OSINT tool-routing context
-- @ccc-wiki/sources/arxiv-maven-agentic-tool-calling-2605.30738-2026-06-05.md — CCC-primary ingest (K100)
-- @ccc-wiki/concepts/agentic-tool-calling-generalization.md — harness steal-from
+- @ccc-wiki/sources/arxiv-maven-agentic-tool-calling-2605.30738.md — CCC-primary ingest (K100)
+- @ccc-wiki/concepts/maven-agentic-tool-calling-generalization.md — harness steal-from
 
 ## Raw Concept
 
