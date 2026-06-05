@@ -30,7 +30,7 @@ updated: 2026-06-05
 | Title | Cross-Venue Market Scanner Research |
 | Author | Gemini Deep Research |
 | Type | docx |
-| Location | `research to be indexed/Cross-Venue Market Scanner Research.docx` |
+| Location | `cemini-librarian:/opt/cemini-bulk/research/gemini-wc2026-cross-venue-scanner-research-2026-06-05.docx` |
 | Retrieved | 2026-06-05 |
 | Read status | deep-read |
 

@@ -6,7 +6,12 @@
 - **Pages** — `gemini-wc2026-cross-venue-scanner-research-2026-06-05`, `gemini-wc2026-market-probability-gaps-2026-06-05`, `gemini-wc2026-knockout-market-map-2026-06-05`
 - **Updated** — `cross-venue-arbitrage-pattern` (K99 fee-adjusted + qualify pairs); `entities/tools/world-cup-bot` related links
 - **Prod** — `world-cup-bot` K99: fee-adjusted alert gate, `group_qualify` fade-watch pairs, `exports/k99-cross-venue-research-2026-06-05.json`
-- **Pending** — librarian scp for 3 docx; inbox can clear after transfer
+
+## [2026-06-05] ingest | K99 follow-up — librarian scp + GROUPQUAL PM match fix
+
+- **Raw** — 3 docx → `cemini-librarian:/opt/cemini-bulk/research/gemini-wc2026-*-2026-06-05.docx`; laptop inbox cleared
+- **Prod** — `pm_discovery` maps `group_qualify` pairs to live PM **advance_to_knockout** slugs; YAML hints updated
+- **Egress** — `cross-venue-scan --once` confirms USA/MEX/ENG/CRO/SUI qualify mids paired (no alerts; USA ~4pp raw suppressed fee-adj)
 
 ## [2026-06-05] ops | MCP allowlist populated (K100 cybersec brief steps 1–4)
 

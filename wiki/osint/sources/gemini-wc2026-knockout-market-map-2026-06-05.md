@@ -29,7 +29,7 @@ updated: 2026-06-05
 | Title | World Cup 2026 Knockout Market Map |
 | Author | Gemini Deep Research |
 | Type | docx |
-| Location | `research to be indexed/World Cup 2026 Knockout Market Map.docx` |
+| Location | `cemini-librarian:/opt/cemini-bulk/research/gemini-wc2026-knockout-market-map-2026-06-05.docx` |
 | Retrieved | 2026-06-05 |
 | Read status | deep-read |
 

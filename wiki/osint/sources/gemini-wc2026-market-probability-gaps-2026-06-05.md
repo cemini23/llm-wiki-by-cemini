@@ -28,7 +28,7 @@ updated: 2026-06-05
 | Title | World Cup 2026 Market Probability Gaps |
 | Author | Gemini Deep Research |
 | Type | docx |
-| Location | `research to be indexed/World Cup 2026 Market Probability Gaps.docx` |
+| Location | `cemini-librarian:/opt/cemini-bulk/research/gemini-wc2026-market-probability-gaps-2026-06-05.docx` |
 | Retrieved | 2026-06-05 |
 | Read status | deep-read |
 
