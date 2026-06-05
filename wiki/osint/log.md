@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-05] ops | MCP allowlist populated (K100 cybersec brief steps 1–4)
+
+- **Brief** — `briefs/2026-05-31_prod-mcp-allowlist-draft-k100-from-cybersec.md` (server-Claude pointer)
+- **Artifact** — `.cursor/mcp-allowlist-draft.yaml` — 47 tools from live `lazy-tool reindex`; prod-mcp 28 read + `notify_operator` blocked
+- **Updated** — `mcp-tool-calling-eval-scaffold` — allowlist + mcp-security-posture cross-link
+- **Open** — server Claude option B enforcement; lazy-tool invoke_proxy_tool filter (option A)
+
 ## [2026-06-05] ingest | AutoMEM cross-scenario memory — prod handoff (OSINT)
 
 - **Handoff** — `cemini-prod:/opt/cemini/briefs/2026-06-05_automem-memory-cross-scenario-osint-handoff.md`

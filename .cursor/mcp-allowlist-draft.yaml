@@ -1,0 +1,167 @@
+# mcp-allowlist-draft.yaml — K100 / mcp-attested pattern
+# Version: 2026-06-05-populated (live reindex)
+# Reviewer: operator + cursor-agent   Next review: on any MCP server version bump
+# Full rubric: Cybersecurity wiki/briefs/2026-05-31_prod-mcp-allowlist-draft-k100.md
+# OSINT handoff: briefs/2026-05-31_prod-mcp-allowlist-draft-k100-from-cybersec.md
+
+audit:
+  populated_at: "2026-06-05T09:36:03-04:00"
+  lazy_tool_reindex: true
+  catalog_capabilities: 47
+  tunnels:
+    prod_mcp: "406 (tunnel up — GET returns 406; POST MCP)"
+    stash: "200 (tunnel up)"
+  steps_completed:
+    - "1 pre-flight tunnels (restarted LaunchAgents)"
+    - "2 lazy-tool reindex --config .cursor/lazy-tool.yaml"
+    - "3 catalog export inventory → allowed_tools below"
+    - "4 defenseclaw discover OK; mcp-scanner CLI syntax drift — deferred prod manifest scan"
+  enforcement_recommendation:
+    laptop: "option A — lazy-tool invoke_proxy_tool filter"
+    prod: "option B — server-side prod-mcp gate (server Claude)"
+
+policy:
+  default_action: deny
+  require_human_go_for:
+    - write
+    - deploy
+    - trade
+    - delete
+    - admin
+    - shell
+  spi_retest_triggers:
+    - AGENTS.md or .cursor/rules change
+    - MCP server upgrade
+    - new skill with strong-persistence writes
+
+# Tag legend: R=read/query  W=write/mutate  N=network egress  P=persistent state
+tool_tags:
+  prod-mcp:
+    notify_operator: W  # XADD stream:intel:operator_alerts — block until operator GO
+    wiki_search: R
+    get_*: R
+    query_similar_situations: R
+  conductor:
+    conductor_query: R
+  fetch:
+    fetch_*: N
+  exa:
+    web_search_exa: N
+    web_fetch_exa: N
+    tools_list: R
+    web_search_help: R
+
+servers:
+  kb-server:
+    endpoint: ssh://cemini-librarian/opt/kb-server
+    clearance: librarian-read-only
+    enforcement: env KB_TOOL_ALLOWLIST  # SHIPPED — do not expand without review
+    allowed_tools:
+      - kb_search          # R
+      - kb_search_smart    # R
+      - kb_context         # R
+      - kb_read            # R
+      - kb_list            # R
+      - kb_vault_status    # R
+      - kb_safety_check    # R
+    blocked_tools:
+      - kb_write
+      - kb_ingest
+      - kb_classify
+      - kb_promote
+      - kb_synthesize
+      - kb_capture_*
+
+  prod-mcp:
+    endpoint: http://127.0.0.1:18002/mcp
+    clearance: production
+    enforcement: manual  # TODO option B server-side; option A lazy-tool wrapper on laptop
+    allowed_tools:
+      - get_agent_weights
+      - get_contract_pricing
+      - get_conviction
+      - get_data_health
+      - get_debate_summary
+      - get_decision_journal
+      - get_earnings_calendar
+      - get_ensemble_signal
+      - get_fred_macro
+      - get_fuzzy_scalar
+      - get_geopolitical_risk
+      - get_kalshi_intel
+      - get_playbook_snapshot
+      - get_pnl_attribution
+      - get_regime_adjusted_weights
+      - get_regime_status
+      - get_risk_metrics
+      - get_sector_rotation
+      - get_sentiment
+      - get_signal_detections
+      - get_strategy_mode
+      - get_stream_health
+      - get_ticker_conviction
+      - get_trust_scores
+      - get_vol_surface
+      - get_walk_forward_results
+      - query_similar_situations
+      - wiki_search
+    blocked_tools:
+      - notify_operator  # W — queues operator alert to Redis stream; human GO required
+    notes: |
+      Populated 2026-06-05 from lazy-tool reindex (29 upstream tools).
+      All get_*/query_/wiki_search classified R. notify_operator is sole W surface in current catalog.
+      Wave 5B / polymarket-mcp-server write surfaces — separate tier when indexed.
+      Reference: briefs/2026-06-02_wc-prod-security-audit-pull.md (GET allowlist pattern)
+
+  conductor:
+    endpoint: local stdio conductor/mcp_server.py
+    clearance: workspace-orchestration
+    allowed_tools:
+      - conductor_query  # R — multi-model analyst routing
+    blocked_tools: []
+
+  fetch:
+    endpoint: mcp-fetch-server
+    clearance: external-read
+    allowed_tools:
+      - fetch_html
+      - fetch_json
+      - fetch_markdown
+      - fetch_readable
+      - fetch_txt
+      - fetch_youtube_transcript
+    blocked_tools: []
+
+  exa:
+    endpoint: scripts/mcp_exa.sh
+    clearance: external-research
+    allowed_tools:
+      - web_search_exa
+      - web_fetch_exa
+      - tools_list
+      - web_search_help
+    blocked_tools: []
+
+  lazy-tool-meta:
+    clearance: catalog
+    allowed_tools:
+      - search_tools
+      - inspect_capability
+      - invoke_proxy_tool
+    notes: Meta-tools only — invoke_proxy_tool must check server allowlist before upstream call
+
+  stash:
+    scope: global  # not lazy-tool-indexed; ~/.cursor/mcp.json
+    clearance: episodic-memory
+    allowed_tools:
+      - remember  # P — SPI review on payloads
+      - recall
+    blocked_tools: []
+    spi_note: Strong persistence — SPI benchmark 32-42% E2E-ASR; audit remember payloads
+
+open_items:
+  - "[ ] Server Claude — option B prod-mcp server-side enforcement"
+  - "[ ] lazy-tool wrapper — filter invoke_proxy_tool by this YAML (option A)"
+  - "[ ] mcp-scanner prod manifest pass (CLI updated since brief; retry static/remote)"
+  - "[ ] SPI retest on stash + .cursor/rules after prod-mcp expansion"
+  - "[ ] Align with WC-SEC outbound allowlist patterns"
