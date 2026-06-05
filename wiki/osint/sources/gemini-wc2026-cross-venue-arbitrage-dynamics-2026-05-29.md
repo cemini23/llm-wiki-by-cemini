@@ -11,6 +11,8 @@ related:
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
+  - sources/gemini-wc2026-cross-venue-scanner-research-2026-06-05.md
+  - sources/gemini-wc2026-market-probability-gaps-2026-06-05.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-29

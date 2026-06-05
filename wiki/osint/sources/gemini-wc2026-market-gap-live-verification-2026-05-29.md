@@ -11,6 +11,8 @@ related:
   - concepts/world-cup-2026-group-conviction-matrix.md
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
+  - sources/gemini-wc2026-cross-venue-scanner-research-2026-06-05.md
+  - sources/gemini-wc2026-market-probability-gaps-2026-06-05.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-29

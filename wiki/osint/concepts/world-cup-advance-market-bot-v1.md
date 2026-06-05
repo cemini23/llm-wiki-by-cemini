@@ -19,6 +19,9 @@ related:
   - sources/gemini-wc-inplay-pregame-lp-risks-2026-05-30.md
   - sources/gemini-wc-tournament-phase-router-2026-05-30.md
   - sources/gemini-wc-tournament-phase-router-architectural-spec-2026-05-31.md
+  - sources/gemini-wc2026-cross-venue-scanner-research-2026-06-05.md
+  - sources/gemini-wc2026-market-probability-gaps-2026-06-05.md
+  - sources/gemini-wc2026-knockout-market-map-2026-06-05.md
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/world-cup-2026-group-conviction-matrix.md

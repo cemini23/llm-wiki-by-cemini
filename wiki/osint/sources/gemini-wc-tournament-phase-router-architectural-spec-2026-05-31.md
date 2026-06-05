@@ -9,6 +9,7 @@ related:
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
   - concepts/polymarket-sports-lp-operating-rules.md
+  - sources/gemini-wc2026-knockout-market-map-2026-06-05.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-31

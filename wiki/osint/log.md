@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-05] ingest | K99 — WC 2026 cross-venue Module 6 research (3× Gemini DR)
+
+- **Sources (3)** — `Cross-Venue Market Scanner Research.docx`, `World Cup 2026 Market Probability Gaps.docx`, `World Cup 2026 Knockout Market Map.docx` from `research to be indexed/`
+- **Pages** — `gemini-wc2026-cross-venue-scanner-research-2026-06-05`, `gemini-wc2026-market-probability-gaps-2026-06-05`, `gemini-wc2026-knockout-market-map-2026-06-05`
+- **Updated** — `cross-venue-arbitrage-pattern` (K99 fee-adjusted + qualify pairs); `entities/tools/world-cup-bot` related links
+- **Prod** — `world-cup-bot` K99: fee-adjusted alert gate, `group_qualify` fade-watch pairs, `exports/k99-cross-venue-research-2026-06-05.json`
+- **Pending** — librarian scp for 3 docx; inbox can clear after transfer
+
 ## [2026-06-05] ops | MCP allowlist populated (K100 cybersec brief steps 1–4)
 
 - **Brief** — `briefs/2026-05-31_prod-mcp-allowlist-draft-k100-from-cybersec.md` (server-Claude pointer)

@@ -14,6 +14,7 @@ related:
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
   - concepts/world-cup-tournament-phases-lp-strategy.md
+  - sources/gemini-wc2026-market-probability-gaps-2026-06-05.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-05-31

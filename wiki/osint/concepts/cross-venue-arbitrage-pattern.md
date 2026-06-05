@@ -38,11 +38,14 @@ related:
   - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
   - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
+  - sources/gemini-wc2026-cross-venue-scanner-research-2026-06-05.md
+  - sources/gemini-wc2026-market-probability-gaps-2026-06-05.md
+  - sources/gemini-wc2026-knockout-market-map-2026-06-05.md
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-05-29
+updated: 2026-06-05
 ---
 
 ## Relations
@@ -215,6 +218,17 @@ Pending Gemini report #5 for full PM↔Kalshi ticker map. **Resolved K83:** @sou
 - **Bot config:** alert-only; no auto-hedge. Prior K82 book-gap narrative retained as fade_watch sentiment, not arb signal.
 
 See @sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md for contract taxonomy reference.
+
+### K99 extension — fee-adjusted alerts + group qualify (2026-06-05)
+
+@sources/gemini-wc2026-cross-venue-scanner-research-2026-06-05.md + @sources/gemini-wc2026-market-probability-gaps-2026-06-05.md:
+
+| Change | Detail |
+|--------|--------|
+| Alert gate | Raw ≥5pp **and** fee-adjusted ≥0.5pp (USA 4pp raw → **suppress**) |
+| Verified pairs | Fade-watch `KXWCGROUPQUAL` ↔ PM R32 qualify (5 teams) in `cross_venue.yaml` |
+| Still blocked | Auto-discover `group_qualify`; `round_of_16_qualify`; PM R16 vs Kalshi qualify |
+| Knockout v2 | @sources/gemini-wc2026-knockout-market-map-2026-06-05.md → phase router backlog |
 
 ## Snippets
 

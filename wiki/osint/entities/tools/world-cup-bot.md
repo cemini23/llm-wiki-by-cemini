@@ -16,6 +16,9 @@ related:
   - sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md
   - sources/gemini-wc2026-third-place-advancement-2026-05-29.md
   - sources/gemini-wc2026-market-gap-live-verification-2026-05-29.md
+  - sources/gemini-wc2026-cross-venue-scanner-research-2026-06-05.md
+  - sources/gemini-wc2026-market-probability-gaps-2026-06-05.md
+  - sources/gemini-wc2026-knockout-market-map-2026-06-05.md
   - concepts/pnl-attribution-versioning.md
   - concepts/trading-bot-logging-discipline.md
   - concepts/polymarket-sports-lp-operating-rules.md
