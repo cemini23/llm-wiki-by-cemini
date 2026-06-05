@@ -25,16 +25,19 @@ related:
   - sources/arxiv-coordination-layer-multi-agent-2605-03310.md
   - concepts/interaction-native-knowledge-harness.md
   - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
+  - sources/arxiv-maven-agentic-tool-calling-2605.30738-2026-06-05.md
 maturity: validated
 hub: true
 created: 2026-05-01
-updated: 2026-06-04
+updated: 2026-06-05
 ---
 
 ## Relations
 
 - @concepts/interaction-native-knowledge-harness.md — passive injection vs query-time wiki-walk (K99)
 - @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — InKH retrieval model (K99)
+- @sources/arxiv-maven-agentic-tool-calling-2605.30738-2026-06-05.md — tool-calling OOD generalization REFERENCE (K100)
+- @ccc-wiki/concepts/agentic-tool-calling-generalization.md — CCC-primary MAVEN synthesis
 - @concepts/agent-team-five-gate-decision-memo.md — K98 five-gate org chart
 - @concepts/nemo-execution-aware-optimization-modeling.md — K98 sandboxed OR agents (REFERENCE)
 - @concepts/seclaw-agent-security-evaluation.md — K98 agent security eval (REFERENCE)

@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-05 — K100)
+
+- **K100 federation ingest (2026-06-05)** — Morning digest backlog across 6 wikis. **OSINT:** 2606.05882 market informedness + MAVEN REFERENCE + PM-v1 DB REFERENCE; NeuroLog → cybersec. **Siblings:** CCC 3 papers, SEO 2, cybersec 5, gambling 1, image-gen 3. Raw → librarian; inboxes cleared.
+
 ## Current state (2026-06-04 — K99)
 
 - **K99 ingest (2026-06-04)** — CCC handoff: arXiv 2606.01886 InKH (financial knowledge harness). **1 source + 1 concept + 7 updates**. Posture: REFERENCE for prod temporal-graph memory until EMS/RBAC review. Brief on disk: `briefs/2026-06-04_inkh-financial-knowledge-harness-osint-handoff.md`. Raw → librarian.

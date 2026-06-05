@@ -14,9 +14,10 @@ related:
   - entities/tools/polysniper.md
   - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
   - sources/trading-posts-compilation-18-2026-06-04.md
+  - concepts/market-informedness-market-making.md
 maturity: draft
 created: 2026-05-22
-updated: 2026-06-04
+updated: 2026-06-05
 clusters: [polymarket, risk]
 ---
 

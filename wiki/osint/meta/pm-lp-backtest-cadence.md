@@ -9,9 +9,10 @@ related:
   - meta/internal-benchmark-deployment-map.md
   - meta/hl-funding-backtest-cadence.md
   - meta/kalshi-lp-backtest-cadence.md
+  - concepts/market-informedness-market-making.md
 maturity: core
 created: 2026-05-27
-updated: 2026-05-29
+updated: 2026-06-05
 ---
 
 ## Relations

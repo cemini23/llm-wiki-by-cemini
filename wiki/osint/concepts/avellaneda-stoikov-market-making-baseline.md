@@ -7,9 +7,11 @@ related:
   - sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/market-informedness-market-making.md
+  - sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-05
 ---
 
 ## Relations

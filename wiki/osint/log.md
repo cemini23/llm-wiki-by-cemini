@@ -1,5 +1,27 @@
 # Wiki Log
 
+## [2026-06-05] deep-read | K100 OSINT — 2606.05882 + 2606.04217 + 2605.30738
+
+- **2606.05882** — `read_status: deep-read`; concept `market-informedness-market-making` validated (two-regime LP checklist)
+- **2606.04217** — `read_status: read` (REFERENCE); PM-v1 aggressor-ground-truth finding added to `polymarket-microstructure-findings`
+- **2605.30738 MAVEN** — `read_status: read` (REFERENCE→CCC)
+- **Lint** — deduped `related:` on microstructure-findings; 0 bidirectional gaps
+
+## [2026-06-05] ingest | K100 — federation morning batch (OSINT)
+
+- **Sources (3)** — arXiv 2606.05882 market informedness; 2605.30738 MAVEN (REFERENCE→CCC); 2606.04217 Polymarket-v1 DB (REFERENCE→gambling)
+- **Concept** — `market-informedness-market-making`
+- **Routed** — 2606.00669 NeuroLog → `@cybersec-wiki` (handoff brief on disk)
+- **Updated** — `conductor-orchestrator`, `polymarket-market-making-architectures`
+- **Federation** — CCC/SEO/cybersec/gambling/image-gen K100 parallel (15 PDFs total → librarian)
+- **Raw** — OSINT inbox cleared
+
+## [2026-06-04] adopt | LLM routing DeepSeek → OpenRouter failover
+
+- **Shipped** — `scripts/llm_routing.py`, `config/llm-routing.env.example`, `install_llm_routing_env.sh`, `source_llm_routing_env.sh`; `_llm_retry.py` + CeminiSuite `deepseek_client.py` failover; `cemini_hl_loop.sh` auto-source
+- **Installed** — `~/.cemini/llm-routing.env` (DEEPSEEK merged from laptop `.env`; OPENROUTER pending operator)
+- **Wiki** — `concepts/llm-routing-deepseek-openrouter-failover.md`; CCC + gambling cross-links
+
 ## [2026-06-04] ingest | K99 — InKH financial harness (CCC handoff)
 
 - **Source** — arXiv 2606.01886 (True Trading); preingest NEW; skimmed from CCC + handoff brief

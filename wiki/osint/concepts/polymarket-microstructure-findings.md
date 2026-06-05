@@ -16,7 +16,6 @@ related:
   - concepts/sequential-optimal-execution-quoting.md
   - concepts/event-based-prediction-market-ml.md
   - concepts/polymarket-copy-trading-strategy.md
-  - concepts/prediction-market-historical-analysis.md
   - sources/arxiv-coordination-layer-multi-agent-2605-03310.md
   - sources/arxiv-polymarket-fill-side-2605-11640.md
   - sources/polymarket-insider-trading-crackdown-2026-05.md
@@ -27,10 +26,13 @@ related:
   - concepts/polymarket-lp-bot-phase0-spec.md
   - concepts/pm-capital-lock-up-settlement-discount.md
   - sources/arxiv-pm-settlement-discounting-2605-31431-2026-06-02.md
+  - concepts/market-informedness-market-making.md
+  - sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md
+  - sources/arxiv-polymarket-v1-database-2606.04217-2026-06-05.md
 
 maturity: draft
 created: 2026-05-09
-updated: 2026-06-02
+updated: 2026-06-05
 ---
 
 ## Relations
@@ -45,6 +47,9 @@ updated: 2026-06-02
 - @entities/tools/polymarket-insider-tracker.md — K49 tool: operationalizes "informed money" detection (Fresh Wallets, DBSCAN Sniper Clusters) on Polymarket
 - @concepts/prediction-market-historical-analysis.md — historical-data backtest pipeline; replication package feeds Layer 1
 - @concepts/cross-venue-arbitrage-pattern.md — cross-venue arb; Polymarket's microstructure determines arb feasibility
+- @sources/arxiv-polymarket-v1-database-2606.04217-2026-06-05.md — K100: 1.2B-trade panel with ground-truth aggressor; tick rule ≈ random
+- @sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md — K100: informedness regime vs MM PnL (simulation)
+- @concepts/market-informedness-market-making.md — LP spread regime feature from 2606.05882
 
 ## Raw Concept
 
@@ -58,6 +63,8 @@ Full analysis: `@sources/polymarket-microstructure-anatomy-2604.24366.md`.
 ### The Headline Finding: Public Feed Direction is Unreliable
 
 The single most important result for Cemini: **trade direction inferred from Polymarket's public WebSocket feed is noise-dominated**.
+
+**K100 reinforcement (2606.04217 Polymarket-v1):** on a 1.2B-trade CTF Exchange v1 panel with **ground-truth aggressor side**, tick rule and bulk volume classifiers achieve **~50% aggregate accuracy**; inferred VPIN/OFI diverge from true measures and **attenuate** calibration predictors (true VPIN ↑ Brier; Gibbs spread ↓ Brier). Confirms Dubach (2604.24366) direction-unreliability finding at larger scale `[CONFIRMED — independent dataset]`.
 
 - Feed-inferred sign agreement with on-chain truth: **∼59%** (panel mean 0.615, barely above 50% chance baseline)
 - Effective half-spread **changes sign** on 67% of top-100 markets when comparing feed-inferred vs. on-chain direction
