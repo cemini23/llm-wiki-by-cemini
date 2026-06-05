@@ -1,9 +1,21 @@
 # Cemini Conductor — environment variables
 # Copy this to .env and fill in real values.
 # .env is gitignored; this template is committed.
+#
+# Cross-project LLM routing (DeepSeek + OpenRouter fallback):
+#   cp config/llm-routing.env.example ~/.cemini/llm-routing.env
+#   source scripts/source_llm_routing_env.sh
 
-# DeepSeek API (required for all LLM calls)
+# DeepSeek API (primary brain)
 DEEPSEEK_API_KEY=sk-your-deepseek-key
+DEEPSEEK_BASE_URL=https://api.deepseek.com/v1
+DEEPSEEK_MODEL=deepseek-v4-flash
+
+# OpenRouter (fallback when DeepSeek quota exhausted — also prod .env)
+OPENROUTER_API_KEY=
+OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+LLM_FALLBACK_MODEL=deepseek/deepseek-chat
+LLM_FALLBACK_ENABLED=true
 
 # Librarian kb-server (required for wiki search / context tools)
 LIBRARIAN_API_KEY=your-kb-server-key

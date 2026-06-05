@@ -18,9 +18,10 @@ related:
   - entities/frameworks/fastmcp.md
   - sources/tool-attention.md
   - sources/arxiv-inference-scaling-llms-2605.19775.md
+  - concepts/llm-routing-deepseek-openrouter-failover.md
 maturity: draft
 created: 2026-05-09
-updated: 2026-05-11
+updated: 2026-06-05
 ---
 
 ## Relations

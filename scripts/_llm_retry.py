@@ -47,7 +47,7 @@ Fill in this exact JSON structure with real content:
 Replace each placeholder string with actual content. Keep the same keys and types.
 Respond with nothing but the completed JSON object."""
 
-DEFAULT_MODEL = "deepseek-chat"
+DEFAULT_MODEL = "deepseek-v4-flash"
 DEFAULT_BASE_URL = "https://api.deepseek.com/v1"
 
 
@@ -174,14 +174,35 @@ def _try_parse(raw: str, model_class: type[T]) -> tuple[T | None, str]:
     return None, last_err
 
 
-def _get_client(api_key: str | None = None, base_url: str | None = None):
-    from openai import OpenAI
-    key = api_key or os.environ.get("DEEPSEEK_API_KEY")
-    if not key:
-        raise StructuredOutputError(
-            "DEEPSEEK_API_KEY not set (pass api_key= or export the env var)"
-        )
-    return OpenAI(api_key=key, base_url=base_url or DEFAULT_BASE_URL)
+def _get_routes(
+    api_key: str | None = None,
+    base_url: str | None = None,
+    model: str | None = None,
+):
+    """Return ordered LlmRoute list (DeepSeek, then OpenRouter fallback)."""
+    if api_key or base_url:
+        key = api_key or os.environ.get("DEEPSEEK_API_KEY")
+        if not key:
+            raise StructuredOutputError(
+                "DEEPSEEK_API_KEY not set (pass api_key= or export the env var)"
+            )
+        # Explicit override — single route, no failover (tests / one-off calls).
+        from llm_routing import LlmRoute
+
+        return [
+            LlmRoute(
+                provider="deepseek",
+                api_key=key,
+                base_url=base_url or DEFAULT_BASE_URL,
+                model=model or os.environ.get("DEEPSEEK_MODEL", DEFAULT_MODEL),
+            )
+        ]
+    from llm_routing import ordered_routes
+
+    try:
+        return ordered_routes(deepseek_model=model)
+    except ValueError as e:
+        raise StructuredOutputError(str(e)) from e
 
 
 def _emit_telemetry(
@@ -232,8 +253,11 @@ def request_structured(
     Raises:
         StructuredOutputError: if all attempts exhausted or DEEPSEEK_API_KEY missing
     """
-    if client is None:
-        client = _get_client(api_key=api_key, base_url=base_url)
+    from llm_routing import build_openai_client, should_failover
+
+    routes = _get_routes(api_key=api_key, base_url=base_url, model=model)
+    if client is not None:
+        routes = [routes[0]]
 
     schema_system = _schema_system(model_class)
     full_system = f"{system}\n\n{schema_system}" if system.strip() else schema_system
@@ -241,15 +265,24 @@ def request_structured(
     last_error: str = ""
     current_prompt = prompt
     total_latency_ms = 0
+    route_idx = 0
 
     for attempt in range(max_retries + 1):
-        log.debug("request_structured attempt %d/%d model=%s",
-                  attempt + 1, max_retries + 1, model)
+        route = routes[min(route_idx, len(routes) - 1)]
+        active_model = route.model
+        log.debug(
+            "request_structured attempt %d/%d model=%s provider=%s",
+            attempt + 1,
+            max_retries + 1,
+            active_model,
+            route.provider,
+        )
 
         t0 = time.time()
         try:
-            resp = client.chat.completions.create(
-                model=model,
+            call_client = client if client is not None else build_openai_client(route)
+            resp = call_client.chat.completions.create(
+                model=active_model,
                 messages=[
                     {"role": "system", "content": full_system},
                     {"role": "user", "content": current_prompt},
@@ -261,10 +294,24 @@ def request_structured(
         except Exception as e:
             total_latency_ms += int((time.time() - t0) * 1000)
             last_error = f"API call failed: {type(e).__name__}: {e}"
+            if (
+                client is None
+                and route_idx + 1 < len(routes)
+                and should_failover(e)
+            ):
+                route_idx += 1
+                log.warning(
+                    "LLM primary failed (%s); retrying on OpenRouter model=%s",
+                    type(e).__name__,
+                    routes[route_idx].model,
+                )
+                continue
             if attempt < max_retries:
                 continue
-            _emit_telemetry(stage, model, tier=-1, retries=attempt,
-                            latency_ms=total_latency_ms, error=last_error)
+            _emit_telemetry(
+                stage, active_model, tier=-1, retries=attempt,
+                latency_ms=total_latency_ms, error=last_error,
+            )
             raise StructuredOutputError(last_error) from e
 
         total_latency_ms += int((time.time() - t0) * 1000)
@@ -272,8 +319,10 @@ def request_structured(
         result, parse_err = _try_parse(raw, model_class)
         if result is not None:
             tier = 3 if attempt > 0 else 1
-            _emit_telemetry(stage, model, tier=tier, retries=attempt,
-                            latency_ms=total_latency_ms, error=None)
+            _emit_telemetry(
+                stage, active_model, tier=tier, retries=attempt,
+                latency_ms=total_latency_ms, error=None,
+            )
             return result
         last_error = parse_err
 
@@ -282,8 +331,10 @@ def request_structured(
             result, parse_err = _try_parse(extracted, model_class)
             if result is not None:
                 tier = 3 if attempt > 0 else 2
-                _emit_telemetry(stage, model, tier=tier, retries=attempt,
-                                latency_ms=total_latency_ms, error=None)
+                _emit_telemetry(
+                    stage, active_model, tier=tier, retries=attempt,
+                    latency_ms=total_latency_ms, error=None,
+                )
                 return result
             if parse_err:
                 last_error = parse_err
@@ -299,8 +350,11 @@ def request_structured(
                 f"Respond with ONLY valid JSON matching the schema. Nothing else."
             )
 
-    _emit_telemetry(stage, model, tier=-1, retries=max_retries,
-                    latency_ms=total_latency_ms, error=last_error)
+    _emit_telemetry(
+        stage, routes[min(route_idx, len(routes) - 1)].model,
+        tier=-1, retries=max_retries,
+        latency_ms=total_latency_ms, error=last_error,
+    )
     raise StructuredOutputError(
         f"Failed to get valid {model_class.__name__} after {max_retries + 1} "
         f"attempts. Last error: {last_error}"

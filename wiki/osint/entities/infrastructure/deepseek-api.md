@@ -52,9 +52,11 @@ related:
   - entities/tools/guidance-ai.md
   - entities/tools/deepteam.md
   - concepts/cemini-ai-assistant.md
+  - concepts/api-credential-registry.md
+  - concepts/llm-routing-deepseek-openrouter-failover.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-05-29
+updated: 2026-06-05
 ---
 
 ## Relations

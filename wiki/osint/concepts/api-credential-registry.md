@@ -5,14 +5,17 @@ tags: [concept, infrastructure, api, credentials, registry, operations]
 keywords: [api keys, credential inventory, free tier, rate limits, key rotation, signup urls, secrets management, dotenv]
 related:
   - entities/tools/public-apis-list.md
+  - concepts/llm-routing-deepseek-openrouter-failover.md
+  - entities/infrastructure/deepseek-api.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-18
+updated: 2026-06-04
 ---
 
 ## Relations
 
 - @entities/tools/public-apis-list.md — the *discovery* directory (find a NEW candidate API); this page is the *inventory* (APIs Cemini has committed to / holds keys for)
+- @concepts/llm-routing-deepseek-openrouter-failover.md — `~/.cemini/llm-routing.env` install path for `DEEPSEEK_*` + `OPENROUTER_*`
 
 ## Raw Concept
 
@@ -128,7 +131,7 @@ Populated 2026-05-18 from `.env` variable names on `cemini-prod:/opt/cemini/.env
 | Service | Purpose | Free tier (verify) | Signup / console URL | Key? | Stored at |
 |---|---|---|---|---|---|
 | DeepSeek API | LLM inference | Paid (no free tier) | https://platform.deepseek.com/ | ✅ | `prod .env: DEEPSEEK_API_KEY` · also `laptop .env: DEEPSEEK_API_KEY` |
-| OpenRouter | Multi-model LLM gateway | Pay-per-use; some free models | https://openrouter.ai/keys | ✅ | `prod .env: OPENROUTER_API_KEY` |
+| OpenRouter | Multi-model LLM gateway | Pay-per-use; some free models | https://openrouter.ai/keys | ✅ | `prod .env: OPENROUTER_API_KEY` · laptop: `~/.cemini/llm-routing.env` via `config/llm-routing.env.example` + `scripts/source_llm_routing_env.sh` (DeepSeek failover) |
 | Google Gemini | LLM inference | Free tier via AI Studio (rate-limited) | https://aistudio.google.com/apikey | ✅ | `laptop .env: GEMINI_API_KEY` |
 | Grok (xAI) | LLM inference | Paid, usage-billed | https://console.x.ai/ | ✅ | `laptop .env: GROK_API_KEY` |
 | Exa | Neural web search (research MCP) | Paid, usage-billed | https://dashboard.exa.ai/ | ❓ | MCP config: exa (not in `.env`) |
