@@ -39,6 +39,8 @@ cross-wiki-source: "@ccc-wiki/concepts/maven-agentic-tool-calling-generalization
 
 **K101 ADK Arena (2026-06-06):** MCP-Atlas is a named adapter in ADK Arena's benchmark suite — extend smoke matrix step (2) to include **MCP-native** intermediate state (tool catalog discovery → `invoke_proxy_tool` chain). Phase-0: `@entities/tools/adk-arena.md` **NO-GO** full install — steal **GTFA claim-coverage** scoring from `mcpatlas/adapter.py` for 1–3 manual smoke tasks only.
 
+**Smoke run (2026-06-06):** 3 tasks, mean GTFA **0.89 PASS** — report `.local/reports/mcp-smoke-2026-06-06.md`. Catalog chain 1.00; dual-domain + conductor 0.83 (kb retrieval skew when prod metrics injected without concept slug).
+
 ## Snippets
 
 > "Generalization across agentic tool-calling environments remains a central challenge." [Source: @ccc-wiki/sources/arxiv-maven-agentic-tool-calling-2605.30738.md]

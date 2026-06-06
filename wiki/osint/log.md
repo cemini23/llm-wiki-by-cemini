@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-06] ops | MCP smoke matrix (K101 MAVEN + GTFA)
+
+- **Report** — `.local/reports/mcp-smoke-2026-06-06.md`
+- **Tasks (3)** — dual-domain prod-mcp↔kb (0.83); catalog chain search→inspect→invoke (1.00); conductor + intermediate state (0.83)
+- **Mean GTFA** — 0.89 PASS (transport OK; partials = retrieval/synthesis)
+- **Findings** — lazy-tool FTS misses `polymarket health` (use `get_stream_health`); kb index lag until post-commit rsync; enriched prod metrics skew kb to architecture not eval scaffold
+
 ## [2026-06-06] deep-read | K101 — ALE quant slice + ADK Arena Phase-0
 
 - **ALE (2606.05405)** — deep-read; 5 `business_finance/` task cards from `rdi-berkeley/agents-last-exam`; concept expanded with tier map + Cemini harness mapping
