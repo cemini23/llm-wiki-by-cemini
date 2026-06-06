@@ -32,7 +32,8 @@ Search the local catalog with a short keyword phrase:
 
 - Wiki / RAG → `"kb_search"` or `"kb_context"`
 - Conductor routing → `"conductor_query"`
-- Prod stack → describe the action (e.g. `"polymarket"`, `"health"`)
+- Prod stack health → `"polymarket health"` or `"stream health"` (maps to `get_stream_health` / `get_data_health` after `scripts/lazy_tool_enrich_prod_health.sh`)
+- Prod stack other → describe the action (e.g. `"conviction"`, `"regime"`)
 - URL content → `"fetch"`
 - External research → `"exa"` or `"web_search"`
 

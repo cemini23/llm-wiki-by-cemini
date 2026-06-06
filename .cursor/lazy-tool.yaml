@@ -1,5 +1,7 @@
 # Workspace lazy-tool catalog — used by Cursor MCP (see .cursor/mcp.json).
-# Rebuild after tunnel changes: lazy-tool reindex --config .cursor/lazy-tool.yaml
+# Rebuild after tunnel changes:
+#   lazy-tool reindex --config .cursor/lazy-tool.yaml
+#   bash scripts/lazy_tool_enrich_prod_health.sh   # polymarket/stream health FTS aliases
 app:
   name: lazy-tool-osint
 

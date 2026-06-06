@@ -11,7 +11,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 ## Current state (2026-06-06 — K101)
 
 - **K101 ingest + deep-read (2026-06-06)** — Federation morning inbox (3 arXiv) + follow-up. **ALE:** 5-task `business_finance/` slice deep-read (repo task cards); mini-ALE harness mapping. **ADK Arena:** Phase-0 **NO-GO** entity (MIT, steal MCP-Atlas GTFA only). NeuroLog → cybersec handoff stub. **Cross-wiki:** CCC ADK Arena stub. Raw → librarian; inbox cleared.
-- **MCP smoke matrix (2026-06-06)** — 3-task lazy-tool run; mean GTFA **0.89 PASS**. Report: `.local/reports/mcp-smoke-2026-06-06.md`. Open: lazy-tool FTS alias for stream health; conductor synthesis should prefer `mcp-tool-calling-eval-scaffold` slug when eval discipline asked.
+- **MCP smoke matrix (2026-06-06)** — 3-task lazy-tool run; mean GTFA **0.89 PASS**. Report: `.local/reports/mcp-smoke-2026-06-06.md`. **Fixed:** `lazy_tool_enrich_prod_health.sh` (FTS aliases); federation YAML quoting (`fix_cross_wiki_yaml_frontmatter.py`, 28→0 kb errors); scaffold intermediate-state slug rule.
 
 ## Current state (2026-06-05 — K100)
 

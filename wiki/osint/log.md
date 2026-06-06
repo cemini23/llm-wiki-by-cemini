@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-06] fix | smoke findings — YAML reindex + lazy-tool FTS
+
+- **YAML** — `scripts/fix_cross_wiki_yaml_frontmatter.py` quoted `@wiki-alias` in 27 federation wiki files + `3d-printing` cursor `@file` keyword; `kb vault reindex` **0 errors** (was 28)
+- **lazy-tool** — `scripts/lazy_tool_enrich_prod_health.sh`; `search_tools("polymarket health")` now hits `get_data_health` / `get_stream_health`
+- **Scaffold** — intermediate-state rule: append `mcp-tool-calling-eval-scaffold` slug when kb step follows prod health
+
 ## [2026-06-06] ops | MCP smoke matrix (K101 MAVEN + GTFA)
 
 - **Report** — `.local/reports/mcp-smoke-2026-06-06.md`

@@ -41,6 +41,10 @@ cross-wiki-source: "@ccc-wiki/concepts/maven-agentic-tool-calling-generalization
 
 **Smoke run (2026-06-06):** 3 tasks, mean GTFA **0.89 PASS** — report `.local/reports/mcp-smoke-2026-06-06.md`. Catalog chain 1.00; dual-domain + conductor 0.83 (kb retrieval skew when prod metrics injected without concept slug).
 
+**Intermediate-state rule (2026-06-06 fix):** When step 1 is prod-mcp health/metrics and step 2 is kb_search for **eval discipline**, append concept slug `mcp-tool-calling-eval-scaffold` to the kb query — raw channel/lag tokens route to prod architecture pages.
+
+**lazy-tool aliases:** After `lazy-tool reindex`, run `bash scripts/lazy_tool_enrich_prod_health.sh` so `search_tools("polymarket health")` resolves `get_stream_health` / `get_data_health`.
+
 ## Snippets
 
 > "Generalization across agentic tool-calling environments remains a central challenge." [Source: @ccc-wiki/sources/arxiv-maven-agentic-tool-calling-2605.30738.md]
