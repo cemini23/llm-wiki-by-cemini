@@ -6,6 +6,8 @@ keywords: [anthropic, asan, docker, sandbox, c-cpp, vulnerability-harness]
 related:
   - sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md
   - concepts/cemini-license-posture.md
+  - "@cybersecurity-wiki/entities/tools/defending-code-reference-harness.md"
+  - "@cybersecurity-wiki/concepts/docker-agent-sandbox-allowlist-proxy.md"
 maturity: validated
 created: 2026-06-06
 updated: 2026-06-06
@@ -17,6 +19,8 @@ repo: https://github.com/anthropics/defending-code-reference-harness
 ## Relations
 
 - @concepts/cemini-license-posture.md — Apache-2.0 clean for steal/adopt
+- @cybersecurity-wiki/entities/tools/defending-code-reference-harness.md — canonical cybersec-wiki entity (K102 ingest)
+- @cybersecurity-wiki/concepts/docker-agent-sandbox-allowlist-proxy.md — vp-internal allowlist pattern
 
 ## Raw Concept
 

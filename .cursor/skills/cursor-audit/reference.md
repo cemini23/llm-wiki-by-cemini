@@ -65,6 +65,6 @@ Map subagent severities to parent action:
 For files under `briefs/`:
 
 1. Run cursor audit (multi-model, qualitative)
-2. Run `python3 scripts/skill_audit.py briefs/<file>.md` (mechanical veto gates)
+2. Run `python3 scripts/skill_audit.py briefs/<file>.md` or `vet briefs/<file>.md --profile brief` (mechanical veto gates)
 
 Static REJECT overrides multi-model SHIP.

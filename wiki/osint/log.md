@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-06] skill | cursor-audit — open-source distro (agent-toolkit-demo)
+
+- Public ship v1.0.1 — `agent-toolkit-demo/skills/cursor-audit/` (SKILL.md + reference.md + examples.md + README.md)
+- CI: `vet-cursor-audit` in agent-toolkit-demo workflow; `vet --profile skillmd --strict` PASS 100/100
+- OSINT mirror bumped; brief gates: `skill_audit.py` or `vet --profile brief`
+- Wiki: `@ccc-wiki/entities/skills/cursor-audit.md` install path updated
+
 ## [2026-06-06] ingest | K102 — Tool Evaluation Prompt Analysis (50 URL)
 
 - **Source** — `multi-wiki-tool-eval-50url-k102-2026-06-06.md` (NEW sha256 vs K68 22-URL batch)

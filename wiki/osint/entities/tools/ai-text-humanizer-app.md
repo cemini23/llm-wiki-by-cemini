@@ -5,6 +5,7 @@ tags: [entity, tool, seo, adopt, phase-0, k102]
 keywords: [humanizer, streamlit, nltk, spacy, mit, seo-content]
 related:
   - sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md
+  - "@seo-wiki/entities/tools/ai-text-humanizer-app.md"
 maturity: validated
 created: 2026-06-06
 updated: 2026-06-06
@@ -14,6 +15,9 @@ repo: https://github.com/DadaNanjesha/AI-Text-Humanizer-App
 ---
 
 ## Relations
+
+- @sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md
+- @seo-wiki/entities/tools/ai-text-humanizer-app.md
 
 ## Raw Concept
 

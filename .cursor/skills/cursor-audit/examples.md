@@ -40,6 +40,7 @@
 2. Mode: `brief-plan`
 3. Models: opus, codex, kimi
 4. Lens: displacement vs existing wiki tooling, statistical claims, phase 1 scope
+5. Run `scripts/skill_audit.py` or `vet briefs/<file>.md --profile brief` after synthesis
 
 **Conflict example:**
 
