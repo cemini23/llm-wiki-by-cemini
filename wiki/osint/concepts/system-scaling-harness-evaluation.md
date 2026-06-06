@@ -9,9 +9,14 @@ related:
   - concepts/tool-evaluation-framework.md
   - concepts/sia-unified-harness-weight-self-improvement.md
   - entities/tools/world-cup-bot.md
+  - concepts/agents-last-exam-benchmark.md
+  - concepts/adk-arena-framework-evaluation.md
+  - sources/arxiv-agents-last-exam-2606.05405-2026-06-06.md
+  - sources/arxiv-adk-arena-agent-dev-kits-2606.05548-2026-06-06.md
+  - entities/tools/adk-arena.md
 maturity: draft
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-06
 cross-wiki-source: "@ccc-wiki/concepts/system-scaling-harness-agentic-ai.md"
 ---
 
@@ -34,6 +39,8 @@ cross-wiki-source: "@ccc-wiki/concepts/system-scaling-harness-agentic-ai.md"
 | Orchestration | conductor, lazy-tool |
 
 **Use:** extend Gemini/Exa tool-eval prompts (v8+) and prod brief acceptance — require harness-dimension notes per Adopt candidate.
+
+**K101 extension:** `@concepts/agents-last-exam-benchmark.md` scores **whole professional workflows** (2.6% pass); `@concepts/adk-arena-framework-evaluation.md` isolates **framework choice** at ecosystem scale — complementary to subsystem checklist above.
 
 ## Snippets
 

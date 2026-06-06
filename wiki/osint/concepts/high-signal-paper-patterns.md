@@ -19,6 +19,8 @@ related:
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
   - sources/gemini-dr-wave4b-osint-2026-04-29.md
   - sources/microsoft-qlib.md
+  - sources/arxiv-agents-last-exam-2606.05405-2026-06-06.md
+  - concepts/agents-last-exam-benchmark.md
   - sources/dune-analytics-mcp.md
   - sources/polymarket-predictions-mcp.md
   - sources/mercurialsolo-claudectl.md

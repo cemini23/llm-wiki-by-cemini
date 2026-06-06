@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-06-06] deep-read | K101 — ALE quant slice + ADK Arena Phase-0
+
+- **ALE (2606.05405)** — deep-read; 5 `business_finance/` task cards from `rdi-berkeley/agents-last-exam`; concept expanded with tier map + Cemini harness mapping
+- **ADK Arena (2606.05548)** — Phase-0 clone; **NO-GO adopt** (MIT confirmed); entity `adk-arena.md`; steal MCP-Atlas GTFA + token proxy
+- **Updated** — both source pages → `deep-read` / `validated`; `mcp-tool-calling-eval-scaffold` GTFA steal note
+
+## [2026-06-06] ingest | K101 — federation morning inbox (3 arXiv)
+
+- **Sources (3)** — 2606.00669 NeuroLog (OSINT handoff stub → cybersec canon); 2606.05405 Agents' Last Exam; 2606.05548 ADK Arena
+- **Concepts (2)** — `agents-last-exam-benchmark`, `adk-arena-framework-evaluation`
+- **Updated (4)** — `mcp-tool-calling-eval-scaffold`, `conductor-orchestrator`, `system-scaling-harness-evaluation`, cybersec neurolog backlink
+- **Cross-wiki** — CCC `adk-arena-agent-framework-benchmark` stub
+- **Raw** — 3 PDFs → librarian; OSINT inbox cleared
+
 ## [2026-06-05] ingest | K99 — WC 2026 cross-venue Module 6 research (3× Gemini DR)
 
 - **Sources (3)** — `Cross-Venue Market Scanner Research.docx`, `World Cup 2026 Market Probability Gaps.docx`, `World Cup 2026 Knockout Market Map.docx` from `research to be indexed/`

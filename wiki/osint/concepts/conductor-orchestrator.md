@@ -27,14 +27,22 @@ related:
   - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
   - sources/arxiv-maven-agentic-tool-calling-2605.30738-2026-06-05.md
   - concepts/agent-memory-cross-scenario-generality.md
+  - concepts/agents-last-exam-benchmark.md
+  - concepts/adk-arena-framework-evaluation.md
+  - sources/arxiv-agents-last-exam-2606.05405-2026-06-06.md
+  - sources/arxiv-adk-arena-agent-dev-kits-2606.05548-2026-06-06.md
 maturity: validated
 hub: true
 created: 2026-05-01
-updated: 2026-06-05
+updated: 2026-06-06
 ---
 
 ## Relations
 
+- @concepts/agents-last-exam-benchmark.md — long-horizon professional workflow eval (REFERENCE)
+- @concepts/adk-arena-framework-evaluation.md — framework choice at ecosystem scale (REFERENCE)
+- @sources/arxiv-agents-last-exam-2606.05405-2026-06-06.md — ALE source (K101)
+- @sources/arxiv-adk-arena-agent-dev-kits-2606.05548-2026-06-06.md — ADK Arena source (K101)
 - @concepts/agent-memory-cross-scenario-generality.md — conductor fan-out vs agent-controlled recall (2606.04315)
 - @concepts/interaction-native-knowledge-harness.md — passive injection vs query-time wiki-walk (K99)
 - @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — InKH retrieval model (K99)

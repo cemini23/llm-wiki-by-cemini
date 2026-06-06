@@ -15,6 +15,7 @@ related:
   - sources/arxiv-self-healing-llm-agents-2605.06737.md
   - meta/wiki-gap-detect-cadence.md
   - concepts/cemini-wiki-ingest-workflow.md
+  - concepts/agents-last-exam-benchmark.md
   - concepts/ems-execution-security-gaps.md
   - sources/cemini-external-code-audit-errors-2026-06-03.md
   - concepts/interaction-native-knowledge-harness.md

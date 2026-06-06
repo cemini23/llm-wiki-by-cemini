@@ -11,6 +11,8 @@ related:
   - concepts/monokern-compounding-research-pipeline.md
   - concepts/agent-memory-cross-scenario-generality.md
   - sources/arxiv-cross-scenario-agentic-generality-2606.04315-2026-06-05.md
+  - sources/arxiv-agents-last-exam-2606.05405-2026-06-06.md
+  - concepts/agents-last-exam-benchmark.md
 maturity: draft
 created: 2026-06-02
 updated: 2026-06-05

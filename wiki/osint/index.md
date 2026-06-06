@@ -1242,6 +1242,12 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [MAVEN agentic tool calling (arXiv 2605.30738)](sources/arxiv-maven-agentic-tool-calling-2605.30738-2026-06-05.md) — `[DRAFT 2026-06-05]` REFERENCE; CCC-primary. — source, arxiv, tool-calling, k100
 - [Polymarket-v1 database (arXiv 2606.04217)](sources/arxiv-polymarket-v1-database-2606.04217-2026-06-05.md) — `[DRAFT 2026-06-05]` REFERENCE; gambling-primary. — source, arxiv, polymarket, k100
 - [Market informedness market-making](concepts/market-informedness-market-making.md) — `[DRAFT 2026-06-05]` LP regime + spread tiers. — concept, market-making, k100
+- [NeuroLog — OSINT handoff (arXiv 2606.00669)](sources/arxiv-neurolog-osint-handoff-2606.00669-2026-06-06.md) — `[DRAFT 2026-06-06]` cybersec-primary pointer; K101 librarian move. — source, arxiv, cross-wiki, k101
+- [Agents' Last Exam (arXiv 2606.05405)](sources/arxiv-agents-last-exam-2606.05405-2026-06-06.md) — `[VALIDATED 2026-06-06]` deep-read + 5-task finance slice from public repo. — source, arxiv, agent-evaluation, k101
+- [ADK Arena (arXiv 2606.05548)](sources/arxiv-adk-arena-agent-dev-kits-2606.05548-2026-06-06.md) — `[VALIDATED 2026-06-06]` deep-read + Phase-0 NO-GO entity. — source, arxiv, agent-harness, k101
+- [Agents' Last Exam benchmark](concepts/agents-last-exam-benchmark.md) — `[VALIDATED 2026-06-06]` 5 business_finance tasks + Cemini mini-ALE mapping. — concept, agent-evaluation, k101
+- [ADK Arena framework evaluation](concepts/adk-arena-framework-evaluation.md) — `[VALIDATED 2026-06-06]` REFERENCE + steal-from list. — concept, agent-harness, k101
+- [ADK Arena](entities/tools/adk-arena.md) — `[VALIDATED 2026-06-06]` Phase-0 NO-GO (MIT); MCP-Atlas patterns steal-only. — entity, tool, evaluation, k101
 - [Crypto pair trading DRL shielded execution](concepts/crypto-pair-trading-drl-shielded-execution.md) — `[DRAFT 2026-06-04]` filter-then-rank + deterministic shield. — concept, crypto, k98
 - [Avellaneda-Stoikov market making baseline](concepts/avellaneda-stoikov-market-making-baseline.md) — `[DRAFT 2026-06-04]` reservation price + inventory skew. — concept, market-making, k98
 - [Binance market data](entities/data-sources/binance.md) — `[DRAFT 2026-06-04]` spot/futures WS for PM fusion + crypto pair papers. — entity, data-source, k98

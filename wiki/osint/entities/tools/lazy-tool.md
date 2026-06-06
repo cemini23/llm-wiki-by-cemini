@@ -16,6 +16,7 @@ related:
   - sources/arxiv-inference-scaling-llms-2605.19775.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - projects/osint-workspace/Architecture/Architecture - conductor.md
+  - entities/tools/adk-arena.md
   - concepts/mcp-tool-calling-eval-scaffold.md
 maturity: validated
 created: 2026-05-09
