@@ -5,13 +5,14 @@ tags: [tool, data, world-cup-2026, open-source, cc0, calendar, k82]
 keywords: [openfootball, worldcup.json, fixtures, kickoff, calendar-guard]
 related:
   - sources/world-cup-github-repo-eval-2026-05-29.md
+  - sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md
   - entities/tools/world-cup-bot.md
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - sources/gemini-wc-tournament-phase-router-2026-05-30.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-06
 ---
 
 ## Relations
@@ -41,6 +42,8 @@ cemini23/world-cup-bot/data/worldcup2026-fixtures.json
 ```
 
 Refresh via curl documented in repo `data/DATA_ATTRIBUTION.md`.
+
+K102 reaffirms [openfootball/worldcup](https://github.com/openfootball/worldcup) Football.TXT sibling — **CC0**; canonical ingest path remains **worldcup.json** for structured JSON calendar guard.
 
 ## Snippets
 

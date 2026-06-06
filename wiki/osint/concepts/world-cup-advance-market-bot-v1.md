@@ -38,13 +38,15 @@ related:
   - entities/platforms/kalshi.md
   - concepts/world-cup-tournament-phases-lp-strategy.md
   - entities/tools/world-cup-bot.md
+  - entities/tools/mrfadi-polymarket-bot.md
   - entities/tools/openfootball-worldcup-json.md
+  - sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
   - concepts/polymarket-football-shock-recovery-trading.md
   - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-06-02
+updated: 2026-06-06
 clusters: [polymarket, world-cup, market-making, oss]
 ---
 

@@ -17,9 +17,10 @@ related:
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
   - entities/tools/claude-code-game-studios.md
   - concepts/production-trading-blind-spots.md
+  - entities/tools/mrfadi-polymarket-bot.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-29
+updated: 2026-06-06
 clusters: [polymarket, bot-architecture, risk-management]
 ---
 

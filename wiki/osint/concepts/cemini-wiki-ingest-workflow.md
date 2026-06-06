@@ -14,13 +14,14 @@ related:
   - projects/osint-workspace/Architecture/Architecture - wiki.md
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
   - entities/tools/deptry.md
+  - entities/tools/typst.md
   - sources/arxiv-harness-updating-not-benefit-2605.30621.md
   - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
   - concepts/autosci-research-lifecycle-memory.md
   - sources/arxiv-neurolog-osint-handoff-2606.00669-2026-06-06.md
 maturity: core
 created: 2026-05-31
-updated: 2026-06-02
+updated: 2026-06-06
 ---
 
 ## Relations

@@ -27,6 +27,8 @@ related:
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/polymarket-clob-api.md
   - entities/tools/openfootball-worldcup-json.md
+  - entities/tools/mrfadi-polymarket-bot.md
+  - sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md
   - sources/world-cup-github-repo-eval-2026-05-29.md
   - sources/gemini-wc-lp-team-safety-assessments-2026-05-30.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
@@ -120,7 +122,7 @@ Forks run on **bring-your-own-keys** via `.env`. Maintainer prod uses same code 
 | **Fill handler (4)** | **Live** — WS + REST reconcile; kill-switch; queue depletion + vol cooldown |
 | **Calendar guard (5)** | **Live** — CC0 fixtures; `fixture-check` upstream diff |
 | **Cross-venue scanner (6)** | **Live** — 15 cohort pairs; alert loop; paper `--record`; Phase B manual fills + reconcile; **Phase C auto exec** (gated OFF, `WC_CROSS_VENUE_AUTO_EXEC`) |
-| **P&L ledger (7)** | **Live** — JSONL + `logic_version`; fills, cancels, rewards sync |
+| **P&L ledger (7)** | **Live** — JSONL + `logic_version`; fills, cancels, rewards sync; **K102 open:** streak-based quote-size scaling + multi-layer PnL gates (steal from @entities/tools/mrfadi-polymarket-bot.md) |
 | **Liquidity gate** | **Live** — CLOB `/book`; bid $50 / ask $15 band floors (WC tune); auto-clear `human_review` |
 | **Go-live safety** | **Live** — auto-cancel, cancel-replace, kill-switch, `cancel` CLI |
 | **Operator automation** | **Live** — `conviction-staleness`, `conviction-patch`, fixture-check |

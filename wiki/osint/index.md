@@ -1248,6 +1248,12 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Agents' Last Exam benchmark](concepts/agents-last-exam-benchmark.md) — `[VALIDATED 2026-06-06]` 5 business_finance tasks + Cemini mini-ALE mapping. — concept, agent-evaluation, k101
 - [ADK Arena framework evaluation](concepts/adk-arena-framework-evaluation.md) — `[VALIDATED 2026-06-06]` REFERENCE + steal-from list. — concept, agent-harness, k101
 - [ADK Arena](entities/tools/adk-arena.md) — `[VALIDATED 2026-06-06]` Phase-0 NO-GO (MIT); MCP-Atlas patterns steal-only. — entity, tool, evaluation, k101
+- [Tool Evaluation Prompt Analysis — 50-URL (K102)](sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md) — `[VALIDATED 2026-06-06]` 50-link eval; 28 UNAVAILABLE resolved; WC Module 7 steal; 12 license overturns. — source, tool-evaluation, world-cup, k102
+- [MrFadiAi/Polymarket-bot](entities/tools/mrfadi-polymarket-bot.md) — `[VALIDATED 2026-06-06]` STEAL-FROM streak sizing + 4-layer gates (MIT). — entity, tool, polymarket, k102
+- [typst/typst](entities/tools/typst.md) — `[VALIDATED 2026-06-06]` CONDITIONAL-GO brief PDF compile (Apache-2.0). — entity, tool, document-generation, k102
+- [defending-code-reference-harness](entities/tools/defending-code-reference-harness.md) — `[VALIDATED 2026-06-06]` Anthropic Docker vuln pipeline (Apache-2.0). — entity, tool, cybersec, k102
+- [AI-Text-Humanizer-App](entities/tools/ai-text-humanizer-app.md) — `[VALIDATED 2026-06-06]` SEO Streamlit humanizer (MIT). — entity, tool, seo, k102
+- [flowforge-skill](entities/tools/flowforge-skill.md) — `[VALIDATED 2026-06-06]` draw.io Claude Code skill (MIT). — entity, tool, ccc, k102
 - [Crypto pair trading DRL shielded execution](concepts/crypto-pair-trading-drl-shielded-execution.md) — `[DRAFT 2026-06-04]` filter-then-rank + deterministic shield. — concept, crypto, k98
 - [Avellaneda-Stoikov market making baseline](concepts/avellaneda-stoikov-market-making-baseline.md) — `[DRAFT 2026-06-04]` reservation price + inventory skew. — concept, market-making, k98
 - [Binance market data](entities/data-sources/binance.md) — `[DRAFT 2026-06-04]` spot/futures WS for PM fusion + crypto pair papers. — entity, data-source, k98
@@ -1259,10 +1265,10 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Harness updating vs benefit — non-monotonic](concepts/harness-updating-vs-benefit-nonmonotonic.md) — `[VALIDATED]` evolver vs executor budget rule. — concept, agent-harness, k93
 - [Federation operator hub (stub)](meta/federation-operator-hub-stub.md) — `[CORE]` → `cemini-federation-hub` morning summary + triage. — meta, federation, operator
 - [Federated daily research digest](concepts/federated-daily-research-digest.md) — `[CORE]` per-wiki Exa/inbox automation kit. — concept, meta, federation, k93
-- [revfactory/harness](entities/tools/revfactory-harness.md) — `[DRAFT]` K93 Adopt Apache-2.0. — tool, ccc, k93
+- [revfactory/harness](entities/tools/revfactory-harness.md) — `[VALIDATED 2026-06-06]` K93/K102 Adopt Apache-2.0; Phase-0 CONDITIONAL-GO. — tool, ccc, k93, k102
 - [ShadowArcanist/netviz](entities/tools/shadowarcanist-netviz.md) — `[DRAFT]` K93 Adopt MIT. — tool, cybersec, k93
 - [goaccess](entities/tools/goaccess.md) — `[DRAFT]` K93 Adopt MIT. — tool, seo, k93
-- [deptry](entities/tools/deptry.md) — `[DRAFT]` K93 Adopt MIT. — tool, python, k93
+- [deptry](entities/tools/deptry.md) — `[VALIDATED 2026-06-06]` K93/K102 Adopt MIT; Phase-0 GO. — tool, python, k93, k102
 
 ## Concepts
 

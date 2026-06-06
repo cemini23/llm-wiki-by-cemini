@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-06 — K102)
+
+- **K102 ingest (2026-06-06)** — `Tool Evaluation Prompt Analysis.docx` (50 URL, NEW sha256). **1 source + 5 entities + 4 updates.** License batch overturned 12 eval claims; **28 UNAVAILABLE repos resolved** (mostly no-license WC spam). **Phase-0:** harness/typst/defending-code CONDITIONAL-GO; deptry GO; Polymarket-bot STEAL → **WC Module 7 brief**. **Briefs (5)** + prod scp; `adopt_k102_phase0.sh`. Raw → librarian; inbox cleared.
+
 ## Current state (2026-06-06 — K101)
 
 - **K101 ingest + deep-read (2026-06-06)** — Federation morning inbox (3 arXiv) + follow-up. **ALE:** 5-task `business_finance/` slice deep-read (repo task cards); mini-ALE harness mapping. **ADK Arena:** Phase-0 **NO-GO** entity (MIT, steal MCP-Atlas GTFA only). NeuroLog → cybersec handoff stub. **Cross-wiki:** CCC ADK Arena stub. Raw → librarian; inbox cleared.

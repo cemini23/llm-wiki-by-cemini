@@ -11,11 +11,12 @@ related:
   - entities/tools/claudish.md
   - entities/tools/aruneshdev-kalshi-weather-xgboost.md
   - sources/multi-wiki-tool-eval-27url-2026-05-27.md
+  - sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md
   - sources/multi-wiki-tool-eval-25url-2026-05-28.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-26
-updated: 2026-05-29
+updated: 2026-06-06
 clusters: [cemini-internal]
 ---
 
@@ -34,6 +35,7 @@ clusters: [cemini-internal]
 - @ccc-wiki/entities/tools/purple-cli.md — CCC CONDITIONAL-GO
 - @ccc-wiki/concepts/tools-we-dont-use.md — claudish overturn register
 - @sources/multi-wiki-tool-eval-27url-2026-05-27.md — K71 successor batch (27 URL)
+- @sources/multi-wiki-tool-eval-50url-k102-2026-06-06.md — K102 successor (50 URL, same filename new sha256)
 
 ## Raw Concept
 

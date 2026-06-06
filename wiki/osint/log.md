@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-06-06] ingest | K102 — Tool Evaluation Prompt Analysis (50 URL)
+
+- **Source** — `multi-wiki-tool-eval-50url-k102-2026-06-06.md` (NEW sha256 vs K68 22-URL batch)
+- **Entities (5 new + 4 updated)** — mrfadi-polymarket-bot, typst, defending-code-reference-harness, ai-text-humanizer-app, flowforge-skill; revfactory-harness, deptry, openfootball-worldcup-json, world-cup-bot Phase-0
+- **Unavailable resolution** — 28/28 eval-UNAVAILABLE repos reachable; 25 no-LICENSE WC spam (2026-06-06); poker-arena + WC ML sim MIT
+- **License overturns** — Polymarket-bot, deptry, flowforge, multiagent-coaching (NO LICENSE→MIT); awesome-rag (MIT→CC0); gate12 (→GPL-3.0)
+- **Phase-0** — harness CONDITIONAL-GO; typst CONDITIONAL-GO; deptry GO; defending-code CONDITIONAL-GO; Polymarket-bot STEAL-FROM
+- **Briefs (5)** — WC streak sizing prod; CCC harness/typst/flowforge; cybersec defending-code; SEO humanizer; gambling poker-arena
+- **Prod brief scp** — `2026-06-06_k102-wc-bot-streak-sizing-protection-cemini-prod.md` → `cemini-prod:/opt/cemini/briefs/`
+- **Adopt script** — `scripts/adopt_k102_phase0.sh`
+- **Raw** — Tool Evaluation Prompt Analysis.docx → librarian; inbox cleared
+
 ## [2026-06-06] fix | smoke findings — YAML reindex + lazy-tool FTS
 
 - **YAML** — `scripts/fix_cross_wiki_yaml_frontmatter.py` quoted `@wiki-alias` in 27 federation wiki files + `3d-printing` cursor `@file` keyword; `kb vault reindex` **0 errors** (was 28)
