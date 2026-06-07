@@ -65,6 +65,13 @@ package-lock.json
 # --- Environment variables (secrets; .env.example is the committed template) ----
 .env
 
+# --- Arena agent secrets (dev.fun poker) -------------------------------------
+agents/**/.arena-credentials
+agents/**/.arena-credentials.*
+agents/**/.arena-poker-state
+agents/**/.env
+agents/**/private/
+
 # --- Temp scratch -------------------------------------------------------------
 /tmp_*.txt
 /tmp_*.md

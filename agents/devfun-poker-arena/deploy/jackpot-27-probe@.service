@@ -1,0 +1,17 @@
+[Unit]
+Description=dev.fun S2 jackpot probe (%i)
+Documentation=https://docs.dev.fun/
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/devfun-poker-arena-jackpot
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=-/opt/devfun-poker-arena-jackpot/instances/%i.env
+ExecStart=/opt/devfun-poker-arena-jackpot/venv/bin/python examples/run_jackpot_27_lobby.py
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target
