@@ -9,6 +9,8 @@ related:
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
   - sources/trading-posts-compilation-17-2026-06-03.md
+  - sources/trading-posts-compilation-19-2026-06-07.md
+  - concepts/retail-pm-edge-myth-debunk.md
   - concepts/time-series-arima-garch-framework.md
   - concepts/markov-regime-switching-models.md
   - concepts/polymarket-football-shock-recovery-trading.md

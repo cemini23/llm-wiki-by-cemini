@@ -4,6 +4,7 @@ type: concept
 tags: [trading-strategy, arbitrage, prediction-markets, polymarket, kalshi, architectural-pattern, cross-doc-duplicate-signal, k30-synthesis]
 keywords: [cross-venue-arbitrage, polymarket-kalshi-arb, btc-arbitrage, atomic-execution, dual-venue-pricing, partial-fill-risk, cross-doc-duplicate]
 related:
+  - concepts/pyth-pro-saas-build-patterns.md
   - sources/5-5-links-2-tool-eval.md
   - sources/links-3-5-4-tool-eval.md
   - entities/platforms/polymarket.md

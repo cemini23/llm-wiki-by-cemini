@@ -14,6 +14,8 @@ related:
   - entities/tools/polysniper.md
   - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
   - sources/trading-posts-compilation-18-2026-06-04.md
+  - sources/trading-posts-compilation-19-2026-06-07.md
+  - concepts/retail-pm-edge-myth-debunk.md
   - concepts/market-informedness-market-making.md
 maturity: draft
 created: 2026-05-22

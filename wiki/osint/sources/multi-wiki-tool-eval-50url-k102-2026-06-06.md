@@ -15,6 +15,7 @@ related:
   - entities/tools/openfootball-worldcup-json.md
   - entities/tools/world-cup-bot.md
   - concepts/world-cup-advance-market-bot-v1.md
+  - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-06

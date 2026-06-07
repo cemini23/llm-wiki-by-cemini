@@ -12,6 +12,7 @@ related:
   - concepts/llm-listwise-alignment.md
   - concepts/cemini-license-posture.md
   - concepts/monte-carlo-permutation-test-mcpt.md
+  - sources/trading-posts-compilation-19-2026-06-07.md
   - sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md
   - sources/evonash-marl.md
   - concepts/prediction-market-information-leakage-score.md

@@ -14,6 +14,8 @@ related:
   - sources/arxiv-rmats-geopolitical-multi-agent-2605.25311.md
   - sources/trading-posts-compilation-18-2026-06-04.md
   - concepts/agent-team-five-gate-decision-memo.md
+  - entities/tools/pydantic-ai.md
+  - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30

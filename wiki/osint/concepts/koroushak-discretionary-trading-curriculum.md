@@ -9,6 +9,7 @@ related:
   - entities/people/koroushak.md
   - concepts/altcoin-screener-orion-workflow.md
   - concepts/market-memory-hurst-regime.md
+  - sources/trading-posts-compilation-19-2026-06-07.md
 maturity: draft
 created: 2026-05-26
 updated: 2026-05-26

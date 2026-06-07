@@ -4,13 +4,15 @@ type: entity
 tags: [entity, tool, oracle, market-data, pyth, k67, workflow]
 keywords: [pyth-terminal, app-pyth-com, pyth-network, csv-export, metamorphicc, pyth-terminalcsv, prediction-market-verification, pyth-pro]
 related:
+  - sources/trading-posts-compilation-19-2026-06-07.md
+  - concepts/pyth-pro-saas-build-patterns.md
   - sources/trading-posts-compilation-38-2026-05-26.md
   - entities/tools/chainlink-data-streams.md
   - entities/platforms/polymarket.md
   - concepts/cemini-license-posture.md
 maturity: draft
 created: 2026-05-26
-updated: 2026-05-28
+updated: 2026-06-07
 ---
 
 ## Relations

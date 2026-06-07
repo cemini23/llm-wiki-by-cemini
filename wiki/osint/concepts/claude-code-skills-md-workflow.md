@@ -4,6 +4,7 @@ type: concept
 tags: [concept, claude-code, skills, workflow, institutional-memory, k76]
 keywords: [skills-md, claude-md, persistent-context, compound-effect, developer-workflow]
 related:
+  - entities/tools/agent-skill-manager.md
   - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
   - concepts/curator-skills.md
   - entities/tools/hermes-agent.md

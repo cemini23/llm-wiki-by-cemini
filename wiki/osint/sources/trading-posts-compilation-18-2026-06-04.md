@@ -5,6 +5,7 @@ tags: [source, trading-posts, polymarket, agent-harness, quant-framework, k98]
 keywords: [voxyz-ai, tradingagents, bloome, 0x_punisher, binance-cvd, queue-priority, horizon-trade, mirofish, zephyr-hg, mcp-servers, nekt_0]
 related:
   - sources/trading-posts-compilation-17-2026-06-03.md
+  - sources/trading-posts-compilation-19-2026-06-07.md
   - concepts/agent-team-five-gate-decision-memo.md
   - concepts/polymarket-binance-oracle-latency-fusion.md
   - concepts/polymarket-preopen-queue-priority.md

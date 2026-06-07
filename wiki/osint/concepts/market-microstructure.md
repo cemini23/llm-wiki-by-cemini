@@ -4,6 +4,8 @@ type: concept
 tags: [concept, market-microstructure, order-book, research-index]
 keywords: [microstructure, order-book, limit-order, market-maker, bid-ask, latency, HFT, cemini-corpus]
 related:
+  - concepts/knuteson-overnight-intraday-anomaly.md
+  - sources/ssrn-knuteson-overnight-intraday-4619084-2026-06-07.md
   - sources/3-10-engineering-audit.md
   - sources/3-10-osint-research.md
   - sources/3-17-competition-research.md

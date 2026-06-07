@@ -4,6 +4,8 @@ type: concept
 tags: [concept, options-derivatives, derivatives, research-index]
 keywords: [options, derivatives, implied-volatility, delta-hedging, rough-volatility, variance-swap, cemini-corpus]
 related:
+  - concepts/derivative-informed-operator-learning.md
+  - sources/arxiv-derivative-informed-operator-learning-2606-05900-2026-06-07.md
   - sources/3-19-on-chain-alpha-research.md
   - sources/3-19-rl-research.md
   - sources/3-19-trading-options-data-research.md

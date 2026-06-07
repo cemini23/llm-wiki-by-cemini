@@ -7,6 +7,7 @@ related:
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - sources/gemini-dr-wave5b-osint-2026-04-30.md
   - concepts/polymarket-wallet-alpha-pipeline.md
+  - entities/tools/polymarket-data-sii.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/cemini-license-posture.md
   - entities/platforms/polymarket.md

@@ -6,6 +6,7 @@ keywords: [poly_data, wallet-screening, polymarket-cli, polymarket-agents, kelly
 related:
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md
   - entities/tools/warproxxx-poly-data.md
+  - entities/tools/polymarket-data-sii.md
   - entities/tools/polymarket-agents.md
   - entities/people/farxxxxx1-polymarket.md
   - concepts/polymarket-bot-architecture.md

@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-06-07] ingest | K103 — full inbox (4 files)
+
+- **Sources (4)** — `trading-posts-compilation-19`, `multi-wiki-tool-eval-v8-k103`, arXiv 2606.05900, SSRN 4619084
+- **Concepts (4 new)** — derivative-informed-operator-learning, knuteson-overnight-intraday-anomaly, pyth-pro-saas-build-patterns, retail-pm-edge-myth-debunk
+- **Entities (7 new + 3 updated)** — asm, polymarket-data-sii, pydantic-ai, application-skills (NO-GO), deep-scientist, autoresearch-claw, poker-query-language (NO-GO); pmxt, cloddsbot, pyth-terminal
+- **Phase-0** — pydantic-ai GO; asm/Polymarket_data/pmxt CONDITIONAL-GO; application-skills + PQL NO-GO
+- **Briefs (3 on disk, no prod scp)** — CCC harness, gambling reject cluster, pmxt+pydantic prod staging
+- **Adopt script** — `scripts/adopt_k103_phase0.sh`
+- **SEO style pass** — K103 Posts → seo-wiki `x-account-voice-and-format.md`
+- **Raw** — 4 inbox files → librarian; inbox cleared
+
 ## [2026-06-06] skill | cursor-audit — open-source distro (agent-toolkit-demo)
 
 - Public ship v1.0.1 — `agent-toolkit-demo/skills/cursor-audit/` (SKILL.md + reference.md + examples.md + README.md)

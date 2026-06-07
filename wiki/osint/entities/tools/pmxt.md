@@ -4,6 +4,7 @@ type: entity
 tags: [tool, prediction-markets, polymarket, kalshi, middleware, mcp, adopt, k49, k56]
 keywords: [pmxt, ccxt-for-prediction-markets, unified-api, polymarket, kalshi, limitless, hyperliquid, metaculus, gnosis-safe, eip-712, pmxt-mcp, mit-license, 1tb-orderbook-dataset, utility-marketing, samuel-tinnerholm]
 related:
+  - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
   - sources/tool-eval-wiki-fit-v3-iteration-2026-05-16.md
   - sources/analyzing-github-projects-agentic-infra-2026-05-21.md
   - entities/tools/polyterm.md
@@ -14,8 +15,8 @@ related:
   - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-21
-phase_0_verdict: "CONDITIONAL-GO 2026-05-16 — MIT verified (LICENSE + SPDX in both core/python SDK); real multi-venue adapters confirmed; condition 1: exclude the `baozi` Solana adapter from any cemini-prod build (its `@solana/web3.js` chain pulls LGPL-3.0-only `rpc-websockets` — weak copyleft, dynamic-link OK but cleanest to drop since baozi is not a Cemini target venue); condition 2: vendor-pin the third-party venue SDKs (`@polymarket/clob-client-v2`, `@limitless-exchange/sdk`, etc.) and re-verify their MIT status at integration time; condition 3: single-maintainer (Samuel EF. Tinnerholm) — treat as bus-factor-1, fork-and-pin before depending on it in production"
+updated: 2026-06-07
+phase_0_verdict: "CONDITIONAL-GO 2026-06-07 (reaffirmed K103) — MIT verified; ~1.8k★ active; same baozi/LGPL transitive guardrail; WC modules 1/3/4 overlap — prod brief only, fork+pin"
 ---
 
 ## Relations
@@ -44,7 +45,7 @@ Its key value for the Cemini financial suite: it natively resolves exchange-spec
 
 **Cemini fit**: candidate execution-abstraction layer for the `/opt/cemini` trading stack, replacing custom per-venue adapters. The MIT license clears it for the IP sale. Deployment belongs on **cemini-prod**, not the laptop/librarian — staged via adoption brief, not installed from this workspace.
 
-- `[NEEDS VERIFICATION 2026-05-16]` Compatibility of the `dome-to-pmxt` automated migration tool with Cemini's customized Redis Streams data structures. (`tools/dome-to-pmxt/` confirmed present in repo — `index.js` + `package.json` + `README.md`; functional compatibility still untested.)
+- `[NEEDS VERIFICATION 2026-06-07]` Compatibility of the `dome-to-pmxt` automated migration tool with Cemini's customized Redis Streams data structures. (`tools/dome-to-pmxt/` confirmed present in repo — `index.js` + `package.json` + `README.md`; functional compatibility still untested.)
 - `[CONFIRMED 2026-05-16]` Phase-0 clone audit complete — see `## Phase-0 Audit` below. MIT LICENSE present; one weak-copyleft transitive dep (`rpc-websockets` LGPL-3.0-only) isolated to the non-target `baozi` adapter.
 
 ## Phase-0 Audit (2026-05-16)
@@ -107,7 +108,7 @@ After saturating the retail-algo demographic, pmxt pivoted to **data democratiza
 - Goal: destroy the data-vendor paywall for prediction-market history; lock pmxt in as the foundational standard
 
 For Cemini, this is **enormously consequential**. We currently don't have a comprehensive Polymarket orderbook history dataset; this is the canonical free source. Adoption considerations:
-- License of the dataset itself: `[NEEDS VERIFICATION 2026-05-21]` — the library is MIT but the dataset distribution may be different. Verify before any commercial use.
+- License of the dataset itself: `[NEEDS VERIFICATION 2026-06-07]` — the library is MIT but the dataset distribution may be different. Verify before any commercial use.
 - Distribution channel: per K56, the release is on a mirror at `sourceforge.net/projects/pmxt.mirror/` plus the main GitHub. Storage scale (1TB+ growing) makes direct download impractical — likely staged via S3 or torrents.
 - Operational fit: a continuously-growing dataset of this scale belongs on **cemini-librarian** (`/opt/cemini-bulk/market-dataset/polymarket-orderbook/`) once we decide to ingest. Not laptop, not cemini-prod. Subsetting + selective sync recommended over full mirror.
 - **Action item**: a Phase-0 audit of the dataset's license, format, and update cadence would be valuable. Not blocking any current Cemini workstream.
