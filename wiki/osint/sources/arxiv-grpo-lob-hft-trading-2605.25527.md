@@ -7,18 +7,22 @@ clusters: [rl-marl, market-microstructure]
 related:
   - concepts/rl-marl-research.md
   - concepts/market-microstructure.md
+  - concepts/order-book-pressure-ml-market-making.md
+  - sources/stanford-ml-orderbook-mm-gr4-2017.md
   - sources/training-free-grpo-cai-2025.md
   - sources/arxiv-inference-scaling-llms-2605.19775.md
 maturity: validated
 read_status: skimmed
 created: 2026-05-30
-updated: 2026-05-30
+updated: 2026-06-07
 ---
 
 ## Relations
 
 - @concepts/rl-marl-research.md — first finance adaptation of DeepSeek-style group-aware policy optimization (GRPO/GSPO)
 - @concepts/market-microstructure.md — LOB order-flow imbalance (OFI) state; directional (not market-making) agent
+- @concepts/order-book-pressure-ml-market-making.md — sibling LOB-feature lane: MM skew (GR4) vs directional RL (this paper)
+- @sources/stanford-ml-orderbook-mm-gr4-2017.md — MM baseline comparison; RF OBP edge thin vs no-signal
 - @sources/training-free-grpo-cai-2025.md — TF-GRPO in agent harness space; this paper applies group-normalized RL to trading episodes
 - @sources/arxiv-inference-scaling-llms-2605.19775.md — sibling DeepSeek-family RL objective lineage (LLM training → trading transfer)
 

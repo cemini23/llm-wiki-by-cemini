@@ -65,6 +65,8 @@ related:
   - sources/trading-3-4-5.md
   - sources/lob-regime-detection-hiremath-2026.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
+  - sources/stanford-ml-orderbook-mm-gr4-2017.md
+  - concepts/order-book-pressure-ml-market-making.md
   - concepts/parlay-market-making.md
   - concepts/agent-authorization-stack.md
   - concepts/polymarket-updown-bot-taxonomy.md
@@ -73,7 +75,7 @@ related:
 maturity: draft
 hub: true
 created: 2026-04-27
-updated: 2026-05-30
+updated: 2026-06-07
 ---
 
 ## Relations
@@ -126,6 +128,8 @@ updated: 2026-05-30
 - @sources/kalshi1-3-29.md — Market Microstructure source in the Cemini research corpus
 - @concepts/parlay-market-making.md — K24 promotion: correlation-aware AMM for parlay joint-contract pricing (Ising model + shadow trades + composite-likelihood SGD)
 - @sources/polymarket-microstructure-anatomy-2604.24366.md — Polymarket microstructure anatomy; definitive cross-sectional tick-level study
+- @sources/stanford-ml-orderbook-mm-gr4-2017.md — K104: OBP ML market making (Stanford GR4)
+- @concepts/order-book-pressure-ml-market-making.md — OBP feature synthesis
 - @sources/arxiv-grpo-lob-hft-trading-2605.25527.md — K87: OFI-feature directional RL on LOB; GRPO/GSPO vs PPO/Q-learning (AAPL/AMZN/GOOG)
 - @sources/polymarket-nba-arbitrage-2605.00864.md — Polymarket NBA combinatorial arb; 75M snapshots, 7 single-market arbs, 290 combinatorial (depth-capped at ~14.8 shares)
 - @concepts/polymarket-microstructure-findings.md — distilled findings from Dubach 2026 for Cemini consumption

@@ -17,12 +17,14 @@ related:
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/avellaneda-stoikov-market-making-baseline.md
   - sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md
+  - sources/stanford-ml-orderbook-mm-gr4-2017.md
+  - concepts/order-book-pressure-ml-market-making.md
   - concepts/market-informedness-market-making.md
   - sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md
 maturity: draft
 hub: true
 created: 2026-05-05
-updated: 2026-06-05
+updated: 2026-06-07
 ---
 
 ## Relations
@@ -34,6 +36,8 @@ updated: 2026-06-05
 - @entities/tools/polymarket-agents.md — official-sanctioned framework foundation; any of the MM patterns below should be built ON Polymarket Agents, not parallel to it
 - @concepts/cross-venue-arbitrage-pattern.md — sibling K30 synthesis page; some MM impls below also bundle arbitrage as a strategy
 - @concepts/prediction-market-historical-analysis.md — sibling K30 synthesis page; historical data is the parameter-tuning input for any MM strategy
+- @sources/stanford-ml-orderbook-mm-gr4-2017.md — K104 negative evidence: raw OBP ML skew REFERENCE only on PM LP
+- @concepts/order-book-pressure-ml-market-making.md — LOB directional overlay discipline
 
 ## Raw Concept
 

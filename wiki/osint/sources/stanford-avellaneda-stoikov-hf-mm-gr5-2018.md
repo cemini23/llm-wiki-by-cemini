@@ -5,18 +5,22 @@ tags: [source, market-making, hft, academic, k98]
 keywords: [avellaneda-stoikov, gr5, stanford, inventory-risk, limit-order-book, spread-capture]
 related:
   - concepts/avellaneda-stoikov-market-making-baseline.md
+  - sources/stanford-ml-orderbook-mm-gr4-2017.md
+  - concepts/order-book-pressure-ml-market-making.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - entities/data-sources/open-meteo.md
 read_status: skimmed
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-07
 ---
 
 ## Relations
 
 - @concepts/avellaneda-stoikov-market-making-baseline.md — canonical formulas + Cemini mapping
+- @sources/stanford-ml-orderbook-mm-gr4-2017.md — sibling Stanford MM project (OBP ML overlay, K104)
+- @concepts/order-book-pressure-ml-market-making.md — LOB directional skew synthesis
 - @concepts/polymarket-market-making-architectures.md — MIT OSS PM MM refs build on same theoretical core
 
 ## Raw Concept

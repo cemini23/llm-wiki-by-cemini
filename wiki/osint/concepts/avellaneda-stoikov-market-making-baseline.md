@@ -5,18 +5,22 @@ tags: [concept, market-making, quant-finance, k98]
 keywords: [avellaneda-stoikov, reservation-price, spread, inventory-risk, gamma, logit]
 related:
   - sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md
+  - sources/stanford-ml-orderbook-mm-gr4-2017.md
+  - concepts/order-book-pressure-ml-market-making.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - concepts/market-informedness-market-making.md
   - sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-05
+updated: 2026-06-07
 ---
 
 ## Relations
 
 - @sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md — implementation reference (Stanford GR5)
+- @sources/stanford-ml-orderbook-mm-gr4-2017.md — sibling Stanford project: OBP ML skew vs A-S inventory skew
+- @concepts/order-book-pressure-ml-market-making.md — when LOB classifiers help (and fail) as MM overlay
 - @concepts/polymarket-market-making-architectures.md — PM-specific MIT OSS patterns built atop same theory
 
 ## Raw Concept

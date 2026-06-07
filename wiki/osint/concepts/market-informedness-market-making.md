@@ -5,6 +5,8 @@ tags: [concept, market-making, microstructure, prediction-markets, k100]
 keywords: [2606.05882, informedness, adverse-selection, spread, lp-risk, hawkes]
 related:
   - sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md
+  - sources/stanford-ml-orderbook-mm-gr4-2017.md
+  - concepts/order-book-pressure-ml-market-making.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/polymarket-microstructure-findings.md
   - concepts/polymarket-retail-trading-discipline.md
@@ -12,12 +14,14 @@ related:
   - concepts/avellaneda-stoikov-market-making-baseline.md
 maturity: validated
 created: 2026-06-05
-updated: 2026-06-05
+updated: 2026-06-07
 ---
 
 ## Relations
 
 - @sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md — arXiv 2606.05882 (deep-read)
+- @sources/stanford-ml-orderbook-mm-gr4-2017.md — OBP-only MM fails on event days without news layer
+- @concepts/order-book-pressure-ml-market-making.md — LOB classifier overlay; thin edge without informedness
 - @concepts/polymarket-market-making-architectures.md — Cemini LP modules
 - @meta/pm-lp-backtest-cadence.md — quarterly spread tier review hook
 
@@ -37,6 +41,8 @@ K100 federation ingest + deep-read 2026-06-05. Synthesizes Ochedzan & Antulov-Fa
 | **Higher baseline informedness** | Net MM profitability can **rise** | Price discovery improves; offsets adverse selection |
 
 This contradicts a simplistic "informed flow always hurts LPs" rule. Cemini spread tiers should be keyed on **(informedness level, event proximity, Hawkes intensity)** — not a static backtest spread alone.
+
+**GR4 counterpoint [CONFIRMED]:** Stanford `@sources/stanford-ml-orderbook-mm-gr4-2017.md` shows OBP-only directional skew barely beats naive quoting; tail losses align with missing news/event layer — same failure mode as low-informedness bursts in 2606.05882.
 
 ### Cemini LP checklist (draft)
 

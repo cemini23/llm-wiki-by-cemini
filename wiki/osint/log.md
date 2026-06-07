@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-07] ingest | K104 — gr4.pdf (Stanford ML order-book MM)
+
+- **Source (1)** — `stanford-ml-orderbook-mm-gr4-2017.md` (gr4.pdf deep-read)
+- **Concept (1 new)** — `order-book-pressure-ml-market-making.md`
+- **Updates (6)** — avellaneda-stoikov baseline, gr5 sibling, market-informedness, market-microstructure hub, polymarket-MM architectures, arxiv-grpo-lob
+- **Brief (1 on disk)** — `2026-06-07_k104-obp-mm-lob-overlay-reference.md` (REFERENCE; no prod scp)
+- **Raw** — gr4.pdf → librarian; inbox cleared
+
 ## [2026-06-07] ingest | K103 — full inbox (4 files)
 
 - **Sources (4)** — `trading-posts-compilation-19`, `multi-wiki-tool-eval-v8-k103`, arXiv 2606.05900, SSRN 4619084

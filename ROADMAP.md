@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-07 — K104)
+
+- **K104 ingest (2026-06-07)** — `gr4.pdf` (Stanford 2017 ML order-book MM). **1 source + 1 concept + 6 updates.** OBP+RF slight edge vs naive; SVM/SGD underperform; missing news layer = tail risk. **REFERENCE** for PM LP — pair with informedness regime. Brief on disk; no prod scp. Raw → librarian; inbox cleared.
+
 ## Current state (2026-06-07 — K103)
 
 - **K103 ingest (2026-06-07)** — Full inbox: Posts.docx (13) + 63-URL tool eval + arXiv 2606.05900 + SSRN 4619084. **4 sources + 4 concepts + 7 entities + 3 updates.** Phase-0 before briefs: pydantic-ai GO; pmxt/asm/Polymarket_data CONDITIONAL-GO; application-skills + Poker-Query-Language NO-GO. **Prod scp'd:** K103 pmxt/pydantic brief + **server-Claude sequence handoff** (K102 WC Module 7 → then K103). `adopt_k103_phase0.sh`. Raw → librarian; inbox cleared.
