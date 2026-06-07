@@ -6,6 +6,7 @@ keywords: [autoresearchclaw, aiming-lab, research-automation]
 related:
   - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
   - entities/tools/deep-scientist.md
+  - "@ccc-wiki/entities/tools/autoresearch-claw.md"
 maturity: draft
 created: 2026-06-07
 updated: 2026-06-07

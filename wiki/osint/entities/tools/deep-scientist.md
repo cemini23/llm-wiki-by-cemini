@@ -6,6 +6,7 @@ keywords: [deep-scientist, researai, autonomous-research]
 related:
   - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
   - entities/tools/autoresearch-claw.md
+  - "@ccc-wiki/entities/tools/deep-scientist.md"
 maturity: draft
 created: 2026-06-07
 updated: 2026-06-07

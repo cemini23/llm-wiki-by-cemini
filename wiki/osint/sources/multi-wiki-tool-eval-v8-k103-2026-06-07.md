@@ -17,6 +17,7 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
   - sources/tradingagents.md
+  - "@ccc-wiki/sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md"
 maturity: validated
 read_status: deep-read
 created: 2026-06-07

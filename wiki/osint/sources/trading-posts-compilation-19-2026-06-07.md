@@ -13,6 +13,7 @@ related:
   - entities/tools/pyth-terminal.md
   - entities/people/rohonchain.md
   - "@ccc-wiki/briefs/2026-06-07_k103-ccc-agent-harness-from-osint.md"
+  - "@ccc-wiki/sources/trading-posts-compilation-19-2026-06-07.md"
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
 maturity: draft
 read_status: read

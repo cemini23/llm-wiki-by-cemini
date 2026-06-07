@@ -6,6 +6,7 @@ keywords: [membranedev, application-skills, membrane-cli, no-go]
 related:
   - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
   - concepts/cemini-license-posture.md
+  - "@ccc-wiki/entities/tools/application-skills.md"
 maturity: draft
 created: 2026-06-07
 updated: 2026-06-07
