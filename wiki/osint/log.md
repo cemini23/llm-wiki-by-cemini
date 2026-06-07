@@ -10,6 +10,8 @@
 - **Adopt script** — `scripts/adopt_k103_phase0.sh`
 - **SEO style pass** — K103 Posts → seo-wiki `x-account-voice-and-format.md`
 - **Raw** — 4 inbox files → librarian; inbox cleared
+- **Prod brief scp** — `2026-06-07_k103-pmxt-pydantic-typed-agents-cemini-prod.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS)
+- **Cross-wiki briefs on disk** — CCC + gambling `briefs/` (gitignored in sibling repos)
 
 ## [2026-06-06] skill | cursor-audit — open-source distro (agent-toolkit-demo)
 
