@@ -12,7 +12,7 @@ raw-sources/
 market dataset/
 
 # --- Outputs staged for distribution (operational; contain server IPs) -------
-briefs/
+/briefs/
 
 # --- Server credentials & connection details (local-only) --------------------
 .local/

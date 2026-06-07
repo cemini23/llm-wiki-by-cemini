@@ -1,0 +1,8 @@
+{
+  "timestamp": "20260606T1556Z",
+  "models": [
+    "grok-4.3",
+    "deepseek-reasoner"
+  ],
+  "prompt_chars": 8079
+}
