@@ -578,6 +578,30 @@ def bb_ako_vulnerable_flop(*, villain_bet: int = 55, pot: int = 170) -> dict:
     )
 
 
+def sb_k2o_three_flush_river(*, villain_bet: int = 120, pot: int = 280) -> dict:
+    """K2o SB OOP top pair weak kicker on three-flush — HL R24 analyze #01."""
+    return six_max_table(
+        name="sb_k2o_three_flush_river",
+        hero_seat=2,
+        button_seat=1,
+        street="River",
+        board=["Kh", "7h", "Tc", "Qc", "6h"],
+        pot=pot,
+        hero_hole=["Kc", "2d"],
+        hero_stack=800,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={2: 800},
+        allowed=_allowed(
+            can_call=True,
+            can_raise=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            raise_range={"min": villain_bet * 2, "max": 800},
+        ),
+    )
+
+
 def sb_a8o_tptk_flop(*, villain_bet: int = 40, pot: int = 120) -> dict:
     """A8o SB OOP top pair weak kicker — analyze #03."""
     return six_max_table(

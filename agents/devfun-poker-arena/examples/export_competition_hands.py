@@ -281,6 +281,9 @@ def _write_jsonl(path: Path, records: list[dict]) -> None:
 
 
 def _load_existing_ids(path: Path, key: str) -> set[str]:
+    index_path = Path(str(path) + ".ids")
+    if index_path.is_file():
+        return {line.strip() for line in index_path.read_text(encoding="utf-8").splitlines() if line.strip()}
     if not path.is_file():
         return set()
     seen: set[str] = set()
@@ -295,6 +298,8 @@ def _load_existing_ids(path: Path, key: str) -> set[str]:
         val = rec.get(key)
         if val:
             seen.add(str(val))
+    if seen:
+        index_path.write_text("\n".join(sorted(seen)) + "\n", encoding="utf-8")
     return seen
 
 
@@ -304,11 +309,34 @@ def _append_jsonl(path: Path, records: list[dict], dedupe_key: str) -> int:
     if not new_rows:
         return 0
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("a", encoding="utf-8") as fh:
-        for rec in new_rows:
-            fh.write(json.dumps(rec, separators=(",", ":"), sort_keys=True))
-            fh.write("\n")
-    return len(new_rows)
+    index_path = Path(str(path) + ".ids")
+    lock_path = Path(str(path) + ".lock")
+    try:
+        import fcntl
+
+        with lock_path.open("a+", encoding="utf-8") as lock_fh:
+            fcntl.flock(lock_fh.fileno(), fcntl.LOCK_EX)
+            with path.open("a", encoding="utf-8") as fh:
+                new_ids: list[str] = []
+                for rec in new_rows:
+                    rid = str(rec.get(dedupe_key))
+                    if rid in seen:
+                        continue
+                    fh.write(json.dumps(rec, separators=(",", ":"), sort_keys=True))
+                    fh.write("\n")
+                    seen.add(rid)
+                    new_ids.append(rid)
+            if new_ids:
+                with index_path.open("a", encoding="utf-8") as idx:
+                    for rid in new_ids:
+                        idx.write(rid + "\n")
+            return len(new_ids)
+    except ImportError:
+        with path.open("a", encoding="utf-8") as fh:
+            for rec in new_rows:
+                fh.write(json.dumps(rec, separators=(",", ":"), sort_keys=True))
+                fh.write("\n")
+        return len(new_rows)
 
 
 def export_competition(

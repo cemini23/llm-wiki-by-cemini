@@ -11,7 +11,7 @@ WorkingDirectory=/opt/devfun-poker-arena
 Environment=PYTHONUNBUFFERED=1
 Environment=CEMINI_EXPORT_DIR=/opt/devfun-poker-arena/reports/exports/playground-s1-live
 EnvironmentFile=-/opt/devfun-poker-arena/.env
-ExecStart=/opt/devfun-poker-arena/venv/bin/python examples/export_competition_hands.py --append --top-agents 50 --stats-top 50 --out-dir /opt/devfun-poker-arena/reports/exports/playground-s1-live
+ExecStart=/opt/devfun-poker-arena/venv/bin/python examples/export_competition_hands.py --append --top-agents 200 --stats-top 200 --out-dir /opt/devfun-poker-arena/reports/exports/playground-s1-live
 UMask=0077
 
 [Install]

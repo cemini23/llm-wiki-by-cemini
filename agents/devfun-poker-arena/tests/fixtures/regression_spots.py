@@ -40,6 +40,7 @@ from tests.helpers.cemini_tables import (
     nuts_straight_river_value,
     overcommit_spot,
     sb_a8o_tptk_flop,
+    sb_k2o_three_flush_river,
     sb_22_overcard_turn,
     sb_43s_facing_open,
     sb_49s_river_leak,
@@ -563,5 +564,13 @@ def nuts_regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="Must not treat non-nut flush board spots as unbeatable.",
+        ),
+        RegressionSpot(
+            id="prod_k2o_sb_three_flush_river",
+            source="HL R24 analyze #01 — K2o SB on Kh7hTcQc6h vs bet",
+            table=sb_k2o_three_flush_river(),
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="OOP weak kicker top pair on three-flush — fold (MC overcalls).",
         ),
     ]

@@ -49,6 +49,7 @@ rsync -avz --delete \
   --exclude 'venv-pokerskill/' \
   --exclude '.git/' \
   --exclude '__pycache__/' \
+  --exclude 'reports/' \
   --exclude '.arena-credentials' \
   --exclude '.arena-credentials.*' \
   --exclude '.arena-poker-state' \
@@ -103,6 +104,10 @@ install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-export.service" \
   /etc/systemd/system/cemini-devfun-poker-export.service
 install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-export.timer" \
   /etc/systemd/system/cemini-devfun-poker-export.timer
+install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-export-crawl.service" \
+  /etc/systemd/system/cemini-devfun-poker-export-crawl.service
+install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-export-crawl.timer" \
+  /etc/systemd/system/cemini-devfun-poker-export-crawl.timer
 
 mkdir -p "${REMOTE_DIR}/reports/analyze"
 mkdir -p "${REMOTE_DIR}/reports/exports/playground-s1-live"
@@ -111,15 +116,19 @@ systemctl daemon-reload
 systemctl enable cemini-devfun-poker-lobby.service
 systemctl enable cemini-devfun-poker-monitor.timer
 systemctl enable cemini-devfun-poker-export.timer
+systemctl enable cemini-devfun-poker-export-crawl.timer
 systemctl restart cemini-devfun-poker-lobby.service
 systemctl start cemini-devfun-poker-monitor.service || true
 # Export oneshot is best-effort (arena 502s happen). Timer retries hourly — do not fail deploy.
 systemctl start cemini-devfun-poker-export.timer
+systemctl start cemini-devfun-poker-export-crawl.timer
 systemctl start cemini-devfun-poker-export.service || echo "WARN: export oneshot failed (timer will retry)" >&2
+systemctl start cemini-devfun-poker-export-crawl.service || echo "WARN: crawl oneshot failed (timer will retry)" >&2
 sleep 2
 systemctl --no-pager status cemini-devfun-poker-lobby.service || true
 systemctl --no-pager status cemini-devfun-poker-monitor.timer || true
 systemctl --no-pager status cemini-devfun-poker-export.timer || true
+systemctl --no-pager status cemini-devfun-poker-export-crawl.timer || true
 REMOTE
 
 echo ""

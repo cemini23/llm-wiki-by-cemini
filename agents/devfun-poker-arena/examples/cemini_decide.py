@@ -360,6 +360,17 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: SB medium pair on connected board — fold")
 
+    # SB/BB OOP weak kicker top pair on three-flush — K2o SB −100 (HL R24 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("SB", "BB") and not in_position
+            and _board_has_three_flush(board)
+            and not _hero_has_flush(hole, board)
+            and not _hero_cannot_lose()
+            and _weak_kicker_top_pair(hole, board)
+            and call_chips >= max(int(pot * 0.22), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: OOP weak top pair on three-flush — fold")
+
     # BTN/CO IP pocket under board pair — TT BTN −115 on JhJsAx (HL R8 #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and position in ("CO", "BTN") and in_position
@@ -1567,6 +1578,15 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
             and len(board) >= 4
             and _weak_kicker_top_pair(hole, board)
             and call_chips >= max(int(pot * 0.33), 1)
+            and "fold" in available):
+        return "fold", None
+
+    # SB/BB OOP weak kicker top pair on three-flush — K2o SB −100 (HL R24 #01).
+    if (position in ("SB", "BB") and not in_position
+            and _board_has_three_flush(board)
+            and not _hero_has_flush(hole, board)
+            and _weak_kicker_top_pair(hole, board)
+            and call_chips >= max(int(pot * 0.22), 1)
             and "fold" in available):
         return "fold", None
 

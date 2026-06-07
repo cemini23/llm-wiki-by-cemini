@@ -249,6 +249,7 @@ def analyze(tables: list[dict], chip_deltas: dict[str, int],
         lines.append(
             f"  #{i:02d}  {hole_str:7s}  {pos:3}  "
             f"delta={h['delta']:+d}  "
+            f"table={h.get('table_id') or '?'}  "
             f"board=[{h['board']}]  won by {h['winner']}"
         )
     lines.append("")
