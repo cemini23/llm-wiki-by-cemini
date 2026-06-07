@@ -12,7 +12,11 @@ import json
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
-from statistics import mean
+_EXAMPLES = Path(__file__).resolve().parent
+if str(_EXAMPLES) not in sys.path:
+    sys.path.insert(0, str(_EXAMPLES))
+
+from export_bundle import load_export_agents  # noqa: E402
 
 
 def _load_jsonl(path: Path) -> list[dict]:
@@ -67,7 +71,7 @@ def main(argv: list[str] | None = None) -> int:
     args = p.parse_args(argv)
 
     export_dir = args.export_dir
-    agents = _dedupe_agents(_load_jsonl(export_dir / "agents.jsonl"))
+    agents = load_export_agents(export_dir)
     tables = _load_jsonl(export_dir / "tables.jsonl")
     if not agents:
         print(f"No agents.jsonl in {export_dir}", file=sys.stderr)

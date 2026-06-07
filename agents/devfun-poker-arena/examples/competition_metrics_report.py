@@ -21,6 +21,7 @@ if str(_EXAMPLES) not in sys.path:
     sys.path.insert(0, str(_EXAMPLES))
 
 from competition_field_report import _dedupe_agents, _load_jsonl  # noqa: E402
+from export_bundle import crawl_progress, load_export_agents, load_export_submissions  # noqa: E402
 
 
 def _participant_bb100(
@@ -59,11 +60,8 @@ def main(argv: list[str] | None = None) -> int:
     args = p.parse_args(argv)
 
     export_dir = args.export_dir
-    agents = _dedupe_agents(_load_jsonl(export_dir / "agents.jsonl"))
-    subs_path = export_dir / "submissions.jsonl"
-    if not subs_path.is_file() and (export_dir / "submissions-all.jsonl").is_file():
-        subs_path = export_dir / "submissions-all.jsonl"
-    submissions = _load_jsonl(subs_path)
+    agents = load_export_agents(export_dir)
+    submissions = load_export_submissions(export_dir)
 
     hero_row = next((a for a in agents if a.get("handle") == args.hero), None)
     if not hero_row:
@@ -91,10 +89,7 @@ def main(argv: list[str] | None = None) -> int:
         if isinstance(v, (int, float))
     ]
 
-    crawl_state = export_dir / "crawl_state.json"
-    crawl = {}
-    if crawl_state.is_file():
-        crawl = json.loads(crawl_state.read_text())
+    crawl = crawl_progress(export_dir)
 
     report = {
         "export_dir": str(export_dir),
@@ -153,8 +148,8 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Export: {len(agents)} agents, {len(submissions)} submission rows")
     if crawl:
         total = crawl.get("leaderboard_total") or "?"
-        nxt = crawl.get("agent_offset", 0)
-        print(f"Crawl: offset {nxt}/{total}, cycles {crawl.get('cycles', 0)}")
+        done = len(crawl.get("completed_agent_ids") or [])
+        print(f"Crawl: {done}/{total} agents, cycles {crawl.get('cycles', 0)}")
     print("\n=== V2/V3 readiness ===")
     for line in report["v2_v3_readiness"]["mitigations"]:
         print(f"  • {line}")

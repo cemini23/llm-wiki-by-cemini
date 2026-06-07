@@ -138,11 +138,13 @@ def crawl_batch(
             time.sleep(sleep_s)
 
     if agent_records:
-        snap = out_dir / "agents-crawl-batch.jsonl"
+        ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        snap = out_dir / f"agents-crawl-batch-{ts}.jsonl"
         snap.write_text(
             "\n".join(json.dumps(r, sort_keys=True) for r in agent_records) + "\n",
             encoding="utf-8",
         )
+        _append_jsonl(out_dir / "agents-all.jsonl", agent_records, "agent_id")
 
     n_tables = 0
     if fetch_tables:
@@ -182,6 +184,17 @@ def main(argv: Optional[list[str]] = None) -> int:
     p.add_argument("--sleep", type=float, default=0.06, help="Pause between agents")
     p.add_argument("--stats-only", action="store_true", help="Skip submissions; refresh agent-stats only")
     p.add_argument("--no-tables", action="store_true", help="Skip recent-tables append")
+    p.add_argument(
+        "--until-complete",
+        action="store_true",
+        help="Run batches until pending agents reach 0 (research harvest)",
+    )
+    p.add_argument(
+        "--max-batches",
+        type=int,
+        default=0,
+        help="With --until-complete, stop after N batches (0=unlimited)",
+    )
     args = p.parse_args(argv)
 
     load_dotenv()
@@ -200,18 +213,30 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     client = ArenaClient(os.environ.get("ARENA_API_BASE", DEFAULT_BASE), api_key=api_key)
     try:
-        manifest = crawl_batch(
-            client,
-            competition_id,
-            out_dir,
-            batch_size=args.batch_size,
-            sleep_s=args.sleep,
-            fetch_submissions=not args.stats_only,
-            fetch_stats=True,
-            fetch_tables=not args.no_tables,
-        )
-        print(json.dumps(manifest, indent=2))
-        return 0
+        batches = 0
+        while True:
+            manifest = crawl_batch(
+                client,
+                competition_id,
+                out_dir,
+                batch_size=args.batch_size,
+                sleep_s=args.sleep,
+                fetch_submissions=not args.stats_only,
+                fetch_stats=True,
+                fetch_tables=not args.no_tables,
+            )
+            batches += 1
+            print(json.dumps(manifest, indent=2))
+            pending = int(manifest.get("pending_agents") or 0)
+            processed = int(manifest.get("batch_size") or manifest.get("processed") or 0)
+            if not args.until_complete:
+                return 0
+            if pending <= 0 and processed == 0:
+                print("[crawl] field complete", file=sys.stderr)
+                return 0
+            if args.max_batches and batches >= args.max_batches:
+                print(f"[crawl] stopped at max_batches={args.max_batches}", file=sys.stderr)
+                return 0
     finally:
         client.close()
 
