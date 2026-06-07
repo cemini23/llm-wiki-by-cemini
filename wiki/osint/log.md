@@ -11,6 +11,7 @@
 - **SEO style pass** — K103 Posts → seo-wiki `x-account-voice-and-format.md`
 - **Raw** — 4 inbox files → librarian; inbox cleared
 - **Prod brief scp** — `2026-06-07_k103-pmxt-pydantic-typed-agents-cemini-prod.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS)
+- **Prod handoff scp** — `2026-06-07_server-claude-k102-k103-execution-sequence-cemini-prod.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit WARN 82.5, no veto)
 - **Cross-wiki briefs on disk** — CCC + gambling `briefs/` (gitignored in sibling repos)
 
 ## [2026-06-06] skill | cursor-audit — open-source distro (agent-toolkit-demo)

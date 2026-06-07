@@ -10,7 +10,7 @@ CeminiSuite ships to an institutional buyer with a **verifiable execution-securi
 
 ## Current state (2026-06-07 — K103)
 
-- **K103 ingest (2026-06-07)** — Full inbox: Posts.docx (13) + 63-URL tool eval + arXiv 2606.05900 + SSRN 4619084. **4 sources + 4 concepts + 7 entities + 3 updates.** Phase-0 before briefs: pydantic-ai GO; pmxt/asm/Polymarket_data CONDITIONAL-GO; application-skills + Poker-Query-Language NO-GO. **Briefs (3)** — CCC + gambling on disk; **prod scp'd** `2026-06-07_k103-pmxt-pydantic-typed-agents-cemini-prod.md`. `adopt_k103_phase0.sh`. Raw → librarian; inbox cleared.
+- **K103 ingest (2026-06-07)** — Full inbox: Posts.docx (13) + 63-URL tool eval + arXiv 2606.05900 + SSRN 4619084. **4 sources + 4 concepts + 7 entities + 3 updates.** Phase-0 before briefs: pydantic-ai GO; pmxt/asm/Polymarket_data CONDITIONAL-GO; application-skills + Poker-Query-Language NO-GO. **Prod scp'd:** K103 pmxt/pydantic brief + **server-Claude sequence handoff** (K102 WC Module 7 → then K103). `adopt_k103_phase0.sh`. Raw → librarian; inbox cleared.
 
 ## Current state (2026-06-06 — K102)
 
