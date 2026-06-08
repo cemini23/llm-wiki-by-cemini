@@ -30,6 +30,7 @@ from session_memory import (  # noqa: E402
 from qualification_guard import fetch_qualification_status  # noqa: E402
 from blind_pressure import avg_blind_tax_per_hand, hands_to_erosion  # noqa: E402
 from pace_control import join_retry_seconds  # noqa: E402
+from hl_runtime_config import is_kill_switch_active, kill_switch_status, load_style_overrides  # noqa: E402
 from nemesis_seed import seed_nemesis_state  # noqa: E402
 from arena_client import (  # noqa: E402
     ArenaClient,
@@ -268,18 +269,30 @@ def run_lobby(args: argparse.Namespace) -> int:
         def ensure_joined(force: bool = False) -> None:
             nonlocal last_join_at, last_lobby_log_at, in_queue_only, last_pace_log_at
             now = time.time()
+            if is_kill_switch_active():
+                if (now - last_pace_log_at) >= LOBBY_LOG_INTERVAL_S:
+                    ks = kill_switch_status()
+                    print(
+                        f"[cemini-lobby] KILL SWITCH ACTIVE — no new joins: "
+                        f"{ks.get('reason', '?')}"
+                    )
+                    last_pace_log_at = now
+                return
             hero_stack = qual_status.get("chips")
             if hero_stack is not None:
                 try:
                     hero_stack = int(hero_stack)
                 except (TypeError, ValueError):
                     hero_stack = None
+            style = load_style_overrides()
+            mult = float(style.get("join_retry_multiplier") or 1.0)
             retry_s = join_retry_seconds(
                 first_protect=first_protect,
                 lead_protect=lead_protect,
                 qual_protect=qual_protect,
                 in_queue_only=in_queue_only,
                 hero_stack_chips=hero_stack,
+                retry_multiplier=mult,
             )
             if (first_protect or lead_protect or qual_protect) and (
                 now - last_pace_log_at
@@ -477,6 +490,8 @@ def run_lobby(args: argparse.Namespace) -> int:
                     ctx["lead_protect"] = True
                 if first_protect:
                     ctx["first_protect"] = True
+                if is_kill_switch_active():
+                    ctx["kill_switch"] = True
                 if _ko_survival_lane(state, qual_status):
                     ctx["ko_survival_lane"] = True
                     ctx["survival_mode"] = True

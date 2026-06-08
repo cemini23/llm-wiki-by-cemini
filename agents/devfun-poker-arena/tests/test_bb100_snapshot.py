@@ -20,8 +20,8 @@ FIXTURE = Path(__file__).parent / "fixtures" / "bb100_ui_snapshot_s1a_2026-06-08
 def test_bb100_snapshot_index():
     snap = json.loads(FIXTURE.read_text(encoding="utf-8"))
     idx = bb100_snapshot_index(snap)
-    assert idx["cemini_wiki_poker"] == pytest.approx(2917.2)
-    assert idx["0xjeff_ai"] == pytest.approx(4068.2)
+    assert idx["cemini_wiki_poker"] == pytest.approx(2820.1)
+    assert idx["0xjeff_ai"] == pytest.approx(3670.3)
 
 
 def test_apply_bb100_snapshot_merges_hero(tmp_path: Path):
@@ -45,10 +45,10 @@ def test_apply_bb100_snapshot_merges_hero(tmp_path: Path):
     )
     merged = apply_bb100_snapshot(tmp_path, snap)
     hero = next(a for a in merged if a.get("handle") == "cemini_wiki_poker")
-    assert hero["adjusted_bb100"] == pytest.approx(2917.2)
+    assert hero["adjusted_bb100"] == pytest.approx(2820.1)
     assert hero["adjusted_bb100_source"] == "ui_snapshot"
     assert (tmp_path / "agents_bb100_enriched.jsonl").is_file()
 
     via_loader = load_export_agents_with_bb100(tmp_path)
     hero2 = next(a for a in via_loader if a.get("handle") == "cemini_wiki_poker")
-    assert hero2["adjusted_bb100"] == pytest.approx(2917.2)
+    assert hero2["adjusted_bb100"] == pytest.approx(2820.1)

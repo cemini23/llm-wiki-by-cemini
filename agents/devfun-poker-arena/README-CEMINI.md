@@ -187,12 +187,34 @@ ssh cemini-prod journalctl -u cemini-devfun-poker-lobby -f
 ssh cemini-prod systemctl restart cemini-devfun-poker-lobby
 ```
 
-### Monitor (analyze + Eval poll)
+### Monitor (analyze + Eval poll + HL auto-analyst)
 
 Systemd timer on prod runs every **30 min**:
 - Playground failure analyze → `/opt/devfun-poker-arena/reports/analyze/`
 - Position metrics history → `reports/analyze/history.jsonl`
 - Poker Eval / Tournament availability → `reports/eval_poll.jsonl`, `reports/alerts.txt`
+- **DeepSeek HL auto-analyst** (if `DEEPSEEK_API_KEY` in prod `.env`):
+  - Reads latest analyze → proposes **runtime guards** + **style tweaks**
+  - **Kill switch** on catastrophic bleed (LLM or heuristic)
+  - Artifacts: `reports/hl-loop/auto_analyst_latest.md`, `runtime_guards.json`, `.arena-kill-switch.json`
+
+Env (prod `.env`):
+
+```bash
+DEEPSEEK_API_KEY=...          # primary
+OPENROUTER_API_KEY=...        # fallback when DeepSeek quota/outage (LLM_FALLBACK_ENABLED=1)
+LLM_FALLBACK_MODEL=deepseek/deepseek-chat   # optional OR slug override
+CEMINI_HL_AUTO_ANALYST=1      # set 0 to disable LLM pass
+CEMINI_HL_AUTO_APPLY=1        # set 0 to log-only (no guard/style writes)
+CEMINI_HL_HEURISTIC_KILL=1    # fast kill without LLM on extreme metrics
+```
+
+Kill switch (operator):
+
+```bash
+uv run python examples/arena_kill_switch.py status
+uv run python examples/arena_kill_switch.py clear --reason "false alarm"
+```
 
 ```bash
 # Local one-shot (same as prod timer)

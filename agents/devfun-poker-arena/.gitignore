@@ -4,6 +4,7 @@
 .arena-credentials.*
 .arena-poker-state
 .arena-poker-state.tmp
+.arena-kill-switch.json
 
 # v0.15 onboarding milestone state (per-project, local)
 .pokerkit-milestones.json

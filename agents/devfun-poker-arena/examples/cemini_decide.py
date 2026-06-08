@@ -133,6 +133,13 @@ def retrieve_solver_context(table: dict) -> dict:
     oh = build_opponent_hud(table)
     if oh:
         ctx["opponent_hud"] = oh
+    try:
+        from hl_runtime_config import load_style_overrides, is_kill_switch_active
+        ctx["hl_style_overrides"] = load_style_overrides()
+        if is_kill_switch_active():
+            ctx["kill_switch"] = True
+    except Exception:
+        pass
     return ctx
 
 
@@ -192,6 +199,7 @@ def decide(
     ps_library = ps.get("mode") == "library"
     ps_hand_eval = ps.get("hand_eval")
     position = chart.get("position") or ctx.get("position") or hero_position_label(table)
+    hc = _hand_class(hole) or chart.get("hand_class") or ""
     hud = ctx.get("opponent_hud") or {}
     hud_mode = hud.get("mode") or "unknown"
     qual_protect = bool(ctx.get("qualification_protect"))
@@ -226,6 +234,55 @@ def decide(
     )
     if survival:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.04, "call_margin_delta": 0.05})
+    style_ov = ctx.get("hl_style_overrides") or {}
+    if style_ov:
+        tweak: dict[str, float] = {}
+        for key in ("fold_slack_delta", "call_margin_delta"):
+            if style_ov.get(key) is not None:
+                tweak[key] = float(style_ov[key])
+        if tweak:
+            margins = _merge_margins(margins, tweak)
+
+    try:
+        from hl_runtime_config import (
+            is_kill_switch_active,
+            kill_switch_action,
+            match_runtime_guard,
+            apply_runtime_guard_action,
+        )
+        if ctx.get("kill_switch") or is_kill_switch_active():
+            ks_out = kill_switch_action(
+                table=table,
+                allowed=allowed,
+                available=available,
+                equity=equity,
+                pot_odds=pot_odds,
+                build_fn=_build,
+            )
+            if ks_out:
+                return ks_out
+        guard = match_runtime_guard(
+            street=street,
+            position=position,
+            hand_class=hc,
+            call_chips=call_chips,
+            can_check=bool(allowed.get("canCheck")),
+        )
+        if guard:
+            g_out = apply_runtime_guard_action(
+                guard,
+                table=table,
+                allowed=allowed,
+                available=available,
+                equity=equity,
+                pot_odds=pot_odds,
+                build_fn=_build,
+            )
+            if g_out:
+                return g_out
+    except Exception:
+        pass
+
     if qual_protect:
         margins = _merge_margins(margins, {"preflop_fold_margin_delta": 0.03})
     if lead_protect:

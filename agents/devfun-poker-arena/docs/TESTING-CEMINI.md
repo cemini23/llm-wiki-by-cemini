@@ -104,7 +104,8 @@ Manual steps (same pipeline):
 3. **Fix decide / chart / HUD**
 4. **Preflight** — `./scripts/cemini_preflight.sh --full`
 5. **Deploy** — rsync + `systemctl restart`
-6. **Monitor** — 30 min timer; re-analyze after ~50 hands
+6. **Monitor** — 30 min timer runs analyze + **DeepSeek auto-analyst** (guards/style/kill switch)
+7. **Cursor** — periodic commits to `cemini_decide.py` from `latest_brief.md` (manual HL rounds)
 
 ## What still won't be caught locally
 

@@ -114,6 +114,7 @@ def run_analyze_pass(
         "ts": _utc_now(),
         "competitionId": competition_id,
         "agentId": agent_id,
+        "report_path": str(out_path),
     })
 
     report = analyze(tables, chip_deltas, agent_id, top_n=top)
@@ -284,7 +285,46 @@ def run_once(args: argparse.Namespace, client: ArenaClient, agent_id: str) -> in
             auto_benchmark=args.auto_benchmark,
             benchmark_hands=args.benchmark_hands,
         )
+
+    if args.command in ("once", "analyze", None) and not getattr(args, "skip_auto_analyst", False):
+        _maybe_run_hl_auto_analyst(reports)
     return 0
+
+
+def _maybe_run_hl_auto_analyst(reports: Path) -> None:
+    """DeepSeek auto-analyst: guards, style tweaks, kill switch (after analyze)."""
+    if os.environ.get("CEMINI_HL_AUTO_ANALYST", "1").strip().lower() in ("0", "false", "no"):
+        return
+    hist = reports / "analyze" / "history.jsonl"
+    if not hist.is_file():
+        return
+    last_line = ""
+    for line in hist.read_text(encoding="utf-8").splitlines():
+        if line.strip():
+            last_line = line
+    if not last_line:
+        return
+    try:
+        metrics = json.loads(last_line)
+    except Exception:
+        return
+    report_path = metrics.get("report_path")
+    if not report_path or not Path(report_path).is_file():
+        # fallback: newest analyze txt
+        analyze_dir = reports / "analyze"
+        txts = sorted(analyze_dir.glob("*.txt"), key=lambda p: p.stat().st_mtime, reverse=True)
+        if not txts:
+            return
+        report_path = str(txts[0])
+    try:
+        from cemini_hl_auto_analyst import maybe_run_after_analyze
+        maybe_run_after_analyze(
+            report_path=Path(report_path),
+            metrics=metrics,
+            reports_dir=reports,
+        )
+    except Exception as exc:
+        print(f"[monitor] hl-auto-analyst failed: {exc}", file=sys.stderr)
 
 
 def main(argv: Optional[list[str]] = None) -> int:
@@ -305,6 +345,8 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("--benchmark-hands", type=int, default=50)
     parser.add_argument("--interval", type=int, default=1800,
                         help="watch mode: seconds between passes (default 1800)")
+    parser.add_argument("--skip-auto-analyst", action="store_true",
+                        help="Skip DeepSeek HL auto-analyst after analyze")
 
     args = parser.parse_args(argv)
 

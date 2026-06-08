@@ -27,6 +27,7 @@ def join_retry_seconds(
     in_queue_only: bool,
     hero_stack_chips: int | None = None,
     buy_in_chips: int | None = None,
+    retry_multiplier: float = 1.0,
 ) -> float:
     """Seconds between join attempts when idle (no pending actions).
 
@@ -51,5 +52,5 @@ def join_retry_seconds(
         buy_in = int(raw) if raw else DEFAULT_PLAYGROUND_BUY_IN
     if hero_stack_chips is not None and hero_stack_chips < buy_in:
         low = _env_float("CEMINI_LOW_STACK_JOIN_RETRY_S", DEFAULT_LOW_STACK_JOIN_RETRY_S)
-        return max(base, low)
-    return base
+        return max(base, low) * max(retry_multiplier, 1.0)
+    return base * max(retry_multiplier, 1.0)

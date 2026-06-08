@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# Cemini HL analyst loop: analyze → LLM brief → preflight → deploy
+# Cemini HL analyst loop: analyze → LLM auto-analyst (30 min monitor) → brief → preflight → deploy
+#
+# Prod monitor (every 30 min): arena_monitor.py → analyze + cemini_hl_auto_analyst.py
+#   (DeepSeek → OpenRouter failover). Writes runtime_guards.json, style_overrides.json,
+#   optional .arena-kill-switch.json. Cursor still owns git commits to cemini_decide.py.
 #
 # Self-play (EP VPIP, regression spots) is a DEPLOY GATE — not the trainer.
 # RL / overnight sweeps on egress are separate; do not conflate with this loop.

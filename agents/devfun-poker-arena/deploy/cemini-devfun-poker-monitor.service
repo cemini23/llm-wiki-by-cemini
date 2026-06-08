@@ -11,6 +11,8 @@ WorkingDirectory=/opt/devfun-poker-arena
 Environment=PYTHONUNBUFFERED=1
 Environment=ARENA_MONITOR_REPORTS_DIR=/opt/devfun-poker-arena/reports
 EnvironmentFile=-/opt/devfun-poker-arena/.env
+# Requires DEEPSEEK_API_KEY (primary) + OPENROUTER_API_KEY (fallback) in .env for hl-auto-analyst.
+# LLM_FALLBACK_ENABLED=1 (default): OpenRouter only after DeepSeek quota/outage — not parallel.
 ExecStart=/opt/devfun-poker-arena/venv/bin/python examples/arena_monitor.py once
 UMask=0077
 
