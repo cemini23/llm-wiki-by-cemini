@@ -110,18 +110,18 @@ def run_analyze_pass(
     chip_deltas = _fetch_replays(client, agent_id, limit)
     rows = _collect_hand_rows(tables, chip_deltas, agent_id)
     metrics = analyze_metrics(rows)
+    report = analyze(tables, chip_deltas, agent_id, top_n=top)
+    stamp = _utc_now().replace(":", "")
+    out_path = reports / "analyze" / f"{stamp}.txt"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(report, encoding="utf-8")
+
     metrics.update({
         "ts": _utc_now(),
         "competitionId": competition_id,
         "agentId": agent_id,
         "report_path": str(out_path),
     })
-
-    report = analyze(tables, chip_deltas, agent_id, top_n=top)
-    stamp = _utc_now().replace(":", "")
-    out_path = reports / "analyze" / f"{stamp}.txt"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(report, encoding="utf-8")
 
     _append_jsonl(reports / "analyze" / "history.jsonl", metrics)
 
