@@ -759,7 +759,7 @@ def run_live_benchmark(args: argparse.Namespace,
               f"terminal phases={sorted(terminal_phases)} | "
               f"statuses={sorted(terminal_statuses)}")
 
-        # 3. Start benchmark.
+        # 3. Start benchmark (or resume if match already exists).
         try:
             start_resp = client.post("/texas/benchmark/start",
                                      {"competitionId": competition_id})
@@ -768,6 +768,32 @@ def run_live_benchmark(args: argparse.Namespace,
                 print("[arena-pokerkit] competition has entry fee — pay manually or "
                       "pick a free competition", file=sys.stderr)
                 return 3
+            if e.status == 409 and "already exists" in str(e.body or "").lower():
+                status = client.get(
+                    f"/texas/benchmark/status?competitionId={competition_id}")
+                match = (status or {}).get("match") or {}
+                if (match.get("phase") in terminal_phases
+                        or match.get("status") in terminal_statuses):
+                    print(f"[arena-pokerkit] benchmark already terminal: "
+                          f"phase={match.get('phase')} "
+                          f"hands={match.get('completedHands')}/"
+                          f"{match.get('targetHands')} | "
+                          f"adjustedBbPer100={match.get('adjustedBbPer100')}")
+                    return 0
+                print(f"[arena-pokerkit] resuming existing benchmark: "
+                      f"phase={match.get('phase')} "
+                      f"hands={match.get('completedHands')}/"
+                      f"{match.get('targetHands')}")
+                return _run_benchmark_loop(
+                    client=client,
+                    args=args,
+                    competition_id=competition_id,
+                    decide_fn=decide_fn,
+                    retrieve_fn=retrieve_solver_context,
+                    terminal_phases=terminal_phases,
+                    terminal_statuses=terminal_statuses,
+                    label="",
+                )
             raise
         if not isinstance(start_resp, dict):
             raise ArenaError(0, str(start_resp)[:200], "benchmark/start malformed")
