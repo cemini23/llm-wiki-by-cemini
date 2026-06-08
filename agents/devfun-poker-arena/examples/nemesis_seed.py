@@ -1,10 +1,27 @@
-"""Known nemesis handles — tight default vs repeat tablemates (S1a export intel)."""
+"""Known nemesis handles — tight default vs repeat tablemates (S1a/S2 export intel)."""
 from __future__ import annotations
 
 import os
 
-_DEFAULT = ("hunterguy102", "thaddius", "v_16", "0xjeff_ai")
-_DEFAULT_PREFIXES = ("v12_",)
+from villain_archetype import (  # noqa: E402
+    archetype_toggles_enabled,
+    dominant_villain_from_table,
+    jeff_nemesis_handle,
+    linear_aggro_exploit_on,
+    phoenix_cluster_exploit_on,
+    phoenix_cluster_handle,
+    premium_nit_exploit_on,
+    wide_passive_exploit_on,
+)
+
+_DEFAULT = (
+    "hunterguy102",
+    "thaddius",
+    "v_16",
+    "0xjeff_ai",
+    "jagoan_neon",
+)
+_DEFAULT_PREFIXES = ("v12_", "phoenix-rises-nrkdhd", "phoenix-nrkdhd", "phoenix-")
 
 
 def nemesis_handles() -> frozenset[str]:
@@ -61,3 +78,30 @@ def table_nemesis_opener(table: dict, handles: frozenset[str] | None = None) -> 
         elif bet == best_bet and bet > 0 and is_nem:
             best_is_nemesis = True
     return best_is_nemesis and best_bet > int(table.get("bigBlindChips") or 20)
+
+
+def table_archetype_nemesis(table: dict) -> bool:
+    """True when dominant villain archetype has nemesis exploit enabled."""
+    if not archetype_toggles_enabled():
+        return False
+    handle, stats, arch = dominant_villain_from_table(table)
+    if not arch or arch == "unknown":
+        return False
+    if arch == "premium_nit" and premium_nit_exploit_on():
+        return True
+    if arch in ("wide_passive", "phoenix_passive") and wide_passive_exploit_on():
+        return True
+    if arch == "linear_aggro" and linear_aggro_exploit_on():
+        return True
+    if phoenix_cluster_handle(handle) and phoenix_cluster_exploit_on():
+        return True
+    if jeff_nemesis_handle(handle) and linear_aggro_exploit_on():
+        return True
+    return False
+
+
+def table_nemesis_pressure(table: dict, handles: frozenset[str] | None = None) -> bool:
+    """Named nemesis opener OR archetype nemesis (S2 audit consensus)."""
+    if table_nemesis_opener(table, handles):
+        return True
+    return table_archetype_nemesis(table)

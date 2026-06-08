@@ -97,6 +97,24 @@ _FIRST_PROTECT_CTX = {"first_protect": True, "qualification_protect": True}
 
 _EVAL_PANEL_CTX = {"eval_panel_mode": True}
 
+_PREMIUM_NIT_HUD_CTX = {
+    "opponent_hud": {
+        "archetype": "premium_nit",
+        "premium_concentration": 0.62,
+        "villain_handle": "alnitak",
+        "stats": {"vpip": 0.07, "pfr": 0.03, "sampleSize": 500},
+    },
+}
+
+_WIDE_PASSIVE_HUD_CTX = {
+    "opponent_hud": {
+        "archetype": "wide_passive",
+        "raise_gap": 0.36,
+        "vpip": 0.42,
+        "stats": {"vpip": 0.42, "pfr": 0.06, "sampleSize": 200},
+    },
+}
+
 
 def regression_spots() -> list[RegressionSpot]:
     return [
@@ -754,5 +772,23 @@ def nuts_regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"bet", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="eval_panel_mode: no KQs UTG open.",
+        ),
+        RegressionSpot(
+            id="s2_premium_nit_qto_fold",
+            source="S2 audit — QTo vs alnitak-class raise (PCI fold)",
+            table=co_facing_raise(["Qd", "Ts"], raise_to=60),
+            context=_PREMIUM_NIT_HUD_CTX,
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="Premium-nit HUD: fold dominated broadway vs raise.",
+        ),
+        RegressionSpot(
+            id="s2_seat_matrix_utg_ato",
+            source="S2 audit — seat matrix v2 UTG ATo block",
+            table=utg_unopened(["Ad", "Ts"]),
+            context={"CEMINI_SEAT_MATRIX_V2": "1"},
+            forbidden=frozenset({"bet", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="Seat matrix v2: UTG only premium band.",
         ),
     ]

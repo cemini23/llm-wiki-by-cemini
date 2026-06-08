@@ -126,8 +126,54 @@ def _apply_cold_start_guard(
 
 
 def build_opponent_hud(table: dict) -> dict:
-    del table
-    return {}
+    from villain_archetype import (  # noqa: WPS433
+        archetype_to_legacy_mode,
+        classify_villain_archetype,
+        dominant_villain_from_table,
+        enrich_hud_from_table,
+        exploit_margins_for_archetype,
+        premium_concentration_index,
+        raise_gap,
+    )
+
+    mode = (os.environ.get("TRAINING_OPPONENT_MODE") or "rock").lower()
+    if mode in ("rock", "nit", "tight"):
+        arch = "premium_nit"
+    elif mode in ("maniac", "lag"):
+        arch = "linear_aggro"
+    elif mode in ("passive", "loose-passive"):
+        arch = "wide_passive"
+    else:
+        handle, stats, arch = dominant_villain_from_table(table)
+        if arch == "unknown" and stats:
+            arch = classify_villain_archetype(stats, handle=handle)
+        if arch == "unknown":
+            arch = "premium_nit" if mode == "rock" else "unknown"
+
+    legacy = archetype_to_legacy_mode(arch) if arch != "unknown" else mode
+    vpip = 0.12 if arch == "premium_nit" else (0.42 if arch == "wide_passive" else 0.35)
+    pfr = 0.05 if arch == "premium_nit" else (0.06 if arch == "wide_passive" else 0.22)
+    stats = {"vpip": vpip, "pfr": pfr, "sampleSize": 50}
+    handle, seat_stats, table_arch = dominant_villain_from_table(table)
+    if seat_stats:
+        stats = {**stats, **seat_stats}
+        if table_arch != "unknown":
+            arch = table_arch
+            legacy = archetype_to_legacy_mode(arch)
+
+    hud = {
+        "mode": legacy,
+        "archetype": arch,
+        "stats": stats,
+        "vpip": stats.get("vpip"),
+        "pfr": stats.get("pfr"),
+        "premium_concentration": premium_concentration_index(stats),
+        "raise_gap": raise_gap(stats),
+        "margins": exploit_margins_for_archetype(arch),
+    }
+    if handle:
+        hud["villain_handle"] = handle
+    return enrich_hud_from_table(hud, table)
 
 
 def invalidate_opponent_cache(

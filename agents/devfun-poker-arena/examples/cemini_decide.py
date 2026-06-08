@@ -31,16 +31,19 @@ from agent import (  # noqa: E402
 )
 from position_utils import hero_is_in_position, hero_position_label  # noqa: E402
 from qualification_guard import max_playable_chips  # noqa: E402
-from opponent_hud import build_opponent_hud, exploit_margins  # noqa: E402
+from opponent_hud import build_opponent_hud, enrich_hud_from_table, exploit_margins  # noqa: E402
 from pokerskill_adapter import retrieve_pokerskill_hints  # noqa: E402
 from session_memory import exploit_from_memory  # noqa: E402
-from nemesis_seed import nemesis_handles, table_nemesis_opener  # noqa: E402
+from nemesis_seed import nemesis_handles, table_nemesis_opener, table_nemesis_pressure  # noqa: E402
 from s1b_exploit import (  # noqa: E402
     exploit_lane_active,
     try_defend_bb_vs_steal,
+    try_iso_vs_wide_passive_limp,
+    try_jeff_nemesis_4bet,
     try_three_bet_lag_vs_open,
     try_trap_aa_kk_vs_3bet,
 )
+from villain_archetype import premium_concentration_index, seat_matrix_v2_enabled  # noqa: E402
 from jackpot_27_decide import maybe_hunt_action  # noqa: E402
 from jackpot_rules import royal_showdown_action, royal_showdown_mode  # noqa: E402
 
@@ -140,7 +143,7 @@ def retrieve_solver_context(table: dict) -> dict:
         ctx.update(chart)
     oh = build_opponent_hud(table)
     if oh:
-        ctx["opponent_hud"] = oh
+        ctx["opponent_hud"] = enrich_hud_from_table(oh, table)
     try:
         from hl_runtime_config import load_style_overrides, is_kill_switch_active
         ctx["hl_style_overrides"] = load_style_overrides()
@@ -208,7 +211,8 @@ def decide(
     ps_hand_eval = ps.get("hand_eval")
     position = chart.get("position") or ctx.get("position") or hero_position_label(table)
     hc = _hand_class(hole) or chart.get("hand_class") or ""
-    hud = ctx.get("opponent_hud") or {}
+    hud = enrich_hud_from_table(ctx.get("opponent_hud") or {}, table)
+    ctx["opponent_hud"] = hud
     jp_out = maybe_hunt_action(
         table,
         allowed,
@@ -652,10 +656,9 @@ def decide(
             frozenset(str(h).lower() for h in nemesis_ctx)
             if nemesis_ctx else nemesis_handles()
         )
-        nemesis_opener = (
-            table_nemesis_opener(table, handles)
-            if _nemesis_tight_enabled() else False
-        )
+        nemesis_opener = False
+        if _nemesis_tight_enabled():
+            nemesis_opener = table_nemesis_pressure(table, handles)
         bb = int(table.get("bigBlindChips") or 20)
         hero_stack = _hero_stack_chips(table)
         action_name, amount = _preflop_vs_bet(
@@ -784,8 +787,19 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
         return "check", None
     if ps_library and ps_bias == "check" and "check" in available:
         return "check", None
+    # Seat matrix v2 — SB/BB never open non-premium trash (S2 audit blind bleed).
+    if (seat_matrix_v2_enabled() and position in ("SB", "BB")
+            and hand_class not in _NEMESIS_SB_DEFEND_OK
+            and hand_class in _WEAK_FACING_RAISE and "fold" in available):
+        return "fold", None
     # EP: chart-only — no HUD steals (74o MP -916 leak).
     if position in ("UTG", "MP") and hand_class in _WEAK_FACING_RAISE and "fold" in available:
+        return "fold", None
+    if (seat_matrix_v2_enabled() and position == "UTG"
+            and hand_class not in {
+                "AA", "KK", "QQ", "JJ", "TT", "99", "88", "77",
+                "AKs", "AKo", "AQs", "AQo", "AJs", "KQs",
+            } and "fold" in available):
         return "fold", None
     if position in ("UTG", "MP") and suggested != "raise":
         if "fold" in available:
@@ -878,10 +892,50 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     suggested = chart.get("suggested_action") or "fold"
     hud = hud or {}
 
+    # Premium-nit / tight-measured — overfold vs aggression (S2 audit HUD PCI).
+    pci = float(hud.get("premium_concentration") or 0.0)
+    if pci <= 0.0 and hud.get("stats"):
+        pci = premium_concentration_index(hud["stats"])
+    arch = (hud.get("archetype") or "").lower()
+    if (pci >= 0.45 or arch == "premium_nit") and call_chips > 0:
+        nit_premium = frozenset({
+            "AA", "KK", "QQ", "JJ", "AKs", "AKo", "AQs",
+        })
+        if hc not in nit_premium and "fold" in available:
+            ratio = call_chips / max(hero_stack_chips, 1)
+            if ratio >= 0.12 or call_chips >= big_blind * 4:
+                return "fold", None
+
     # Preflop stack-off discipline — fold dominated trash vs large commits (HL S2 R3 −100 cluster).
     if (_preflop_stackoff_should_fold(hc, call_chips, hero_stack_chips)
             and "fold" in available):
         return "fold", None
+
+    jeff_4b = try_jeff_nemesis_4bet(
+        hand_class=hc,
+        call_chips=call_chips,
+        big_blind=big_blind,
+        allowed=allowed,
+        available=available,
+        hero_stack_chips=hero_stack_chips,
+        villain_handle=str(hud.get("villain_handle") or ""),
+    )
+    if jeff_4b:
+        return jeff_4b
+
+    iso_lp = try_iso_vs_wide_passive_limp(
+        hand_class=hc,
+        position=position,
+        call_chips=call_chips,
+        pot=pot,
+        allowed=allowed,
+        available=available,
+        hero_stack_chips=hero_stack_chips,
+        big_blind=big_blind,
+        hud=hud,
+    )
+    if iso_lp:
+        return iso_lp
 
     # Static chart is open-range only — facing a raise, downgrade spurious "raise" (77 MP −100).
     if call_chips > 0 and suggested == "raise" and hc not in _PREFLOP_3BET_OK:

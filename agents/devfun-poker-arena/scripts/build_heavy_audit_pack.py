@@ -29,20 +29,66 @@ from export_bundle import (  # noqa: E402
     load_export_submissions,
 )
 
-PROMPT_TEMPLATE = ROOT / "prompts" / "s1a_gap_retrospective_audit.md"
+PROMPT_TEMPLATE = ROOT / "prompts" / "s2_gap_retrospective_audit.md"
 HERO_DEFAULT = "cemini_wiki_poker"
-TOP_RIVALS = (
+# Fallback if export has no 200h rivals yet
+TOP_RIVALS_FALLBACK = (
     "0xJeff_ai",
-    "jagoan_neon",
-    "grok_trips_prime",
-    "hunterguy102",
-    "Thaddius",
-    "v_16",
     "fefou_v2",
-    "batu_karang",
-    "grokshark_prime",
     "phoenix-rises-nrkdhd-v10",
+    "float_engine",
+    "crypto-bro-agent",
+    "alnitak",
+    "einstein",
+    "poker_brat_n9dl",
+    "wemby_guy_v2",
+    "long_tu",
 )
+
+
+def _select_rivals(
+    agents: list[dict],
+    hero: str,
+    *,
+    min_hands: int,
+    max_rivals: int,
+) -> list[str]:
+    """Top rivals by chip rank with at least min_hands (exclude hero)."""
+    pool = [
+        a for a in agents
+        if (a.get("handle") or "") != hero and int(a.get("hands") or 0) >= min_hands
+    ]
+    pool.sort(key=lambda a: (a.get("rank") or 9999, -(a.get("chips") or 0)))
+    handles = [str(a["handle"]) for a in pool[:max_rivals] if a.get("handle")]
+    return handles or list(TOP_RIVALS_FALLBACK)
+
+
+def _rivals_200plus_table(agents: list[dict], hero: str, *, min_hands: int = 200) -> str:
+    pool = [
+        a for a in agents
+        if (a.get("handle") or "") != hero and int(a.get("hands") or 0) >= min_hands
+    ]
+    pool.sort(key=lambda a: (a.get("rank") or 9999))
+    lines = [
+        f"Agents with ≥{min_hands} hands (excl hero): **{len(pool)}**",
+        "",
+        "| Rank | Handle | Hands | Chips | Style | VPIP | PFR | Sub rows |",
+        "|------|--------|-------|-------|-------|------|-----|----------|",
+    ]
+    for a in pool[:60]:
+        st = a.get("stats") or {}
+        vpip = st.get("vpip")
+        pfr = st.get("pfr")
+        vp = f"{vpip:.1%}" if isinstance(vpip, (int, float)) else "?"
+        pf = f"{pfr:.1%}" if isinstance(pfr, (int, float)) else "?"
+        lines.append(
+            f"| {a.get('rank', '?')} | {a.get('handle', '?')} | {a.get('hands', '?')} "
+            f"| {a.get('chips', '?')} | {st.get('playing_style', '?')} | {vp} | {pf} "
+            f"| {a.get('submission_rows', '?')} |"
+        )
+    if len(pool) > 60:
+        lines.append(f"\n(... {len(pool) - 60} more in export — see rival_samples/)")
+    return "\n".join(lines)
 
 
 def _hero_variance_bootstrap(submissions: list[dict], hero: str, *, n_boot: int = 500) -> dict:
@@ -110,13 +156,28 @@ def _payout_histogram(submissions: list[dict], hero: str) -> dict:
     return dict(buckets)
 
 
-def _rival_samples(submissions: list[dict], handle: str, *, limit: int = 25) -> str:
+def _rival_samples(
+    submissions: list[dict],
+    handle: str,
+    *,
+    limit: int = 25,
+    agent_row: dict | None = None,
+) -> str:
     rows = [r for r in submissions if (r.get("agent_handle") or "").lower() == handle.lower()]
     if not rows:
         return f"(no rows for {handle})"
-    wins = sorted(rows, key=lambda r: int(r.get("payout_chips") or 0), reverse=True)[:10]
-    losses = sorted(rows, key=lambda r: int(r.get("payout_chips") or 0))[:10]
+    win_n, loss_n = (15, 15) if len(rows) >= 200 else (10, 10)
+    wins = sorted(rows, key=lambda r: int(r.get("payout_chips") or 0), reverse=True)[:win_n]
+    losses = sorted(rows, key=lambda r: int(r.get("payout_chips") or 0))[:loss_n]
     lines = [f"## {handle} — {len(rows)} submission rows"]
+    if agent_row:
+        st = agent_row.get("stats") or {}
+        lines.append(
+            f"rank={agent_row.get('rank')} chips={agent_row.get('chips')} hands={agent_row.get('hands')} "
+            f"style={st.get('playing_style')} vpip={st.get('vpip')} pfr={st.get('pfr')}"
+        )
+        pot_wins = sum(1 for r in rows if int(r.get("payout_chips") or 0) > 0)
+        lines.append(f"pot_win_rate={pot_wins / len(rows):.1%} avg_payout={mean(int(r.get('payout_chips') or 0) for r in rows):.1f}")
     lines.append("### Top pot wins")
     for r in wins:
         lines.append(
@@ -185,6 +246,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("export_dir", type=Path)
     p.add_argument("--hero", default=HERO_DEFAULT)
     p.add_argument("--out", type=Path, default=ROOT / "reports/gap-audit/pack-s2-heavy")
+    p.add_argument("--min-hands", type=int, default=200, help="Min hands for rival sampling")
+    p.add_argument("--max-rivals", type=int, default=15, help="Max rival profiles in pack")
     args = p.parse_args(argv)
 
     export_dir = args.export_dir.resolve()
@@ -199,6 +262,12 @@ def main(argv: list[str] | None = None) -> int:
     hero_row = next((a for a in agents if a.get("handle") == args.hero), None)
 
     print(f"  agents={len(agents)} submissions={len(submissions)}", file=sys.stderr)
+
+    top_rivals = _select_rivals(
+        agents, args.hero, min_hands=args.min_hands, max_rivals=args.max_rivals
+    )
+    agents_by_handle = {a.get("handle"): a for a in agents if a.get("handle")}
+    print(f"  rivals (≥{args.min_hands}h, max {args.max_rivals}): {top_rivals}", file=sys.stderr)
 
     metrics_py = EXAMPLES / "competition_metrics_report.py"
     subprocess.run(
@@ -223,15 +292,22 @@ def main(argv: list[str] | None = None) -> int:
     (out / "field_report.txt").write_text(field_report.stdout or field_report.stderr, encoding="utf-8")
     (out / "field_style_distribution.md").write_text(_field_style_summary(agents), encoding="utf-8")
     (out / "worst_hero_hands.txt").write_text(_worst_hero_hands(submissions, args.hero, 80), encoding="utf-8")
+    rivals_table = _rivals_200plus_table(agents, args.hero, min_hands=args.min_hands)
+    (out / "rivals_200plus.md").write_text(rivals_table, encoding="utf-8")
     (out / "hero_vs_rivals.md").write_text(
-        _hero_vs_rival_tables(submissions, args.hero, list(TOP_RIVALS)), encoding="utf-8"
+        _hero_vs_rival_tables(submissions, args.hero, top_rivals), encoding="utf-8"
     )
 
     rival_dir = out / "rival_samples"
     rival_dir.mkdir(exist_ok=True)
     rival_blocks = []
-    for rival in TOP_RIVALS:
-        text = _rival_samples(submissions, rival, limit=25)
+    for rival in top_rivals:
+        text = _rival_samples(
+            submissions,
+            rival,
+            limit=40,
+            agent_row=agents_by_handle.get(rival),
+        )
         (rival_dir / f"{rival.replace('/', '_')}.md").write_text(text, encoding="utf-8")
         rival_blocks.append(text)
 
@@ -263,10 +339,16 @@ def main(argv: list[str] | None = None) -> int:
         "hero_adjusted_bb100": hero_row.get("adjusted_bb100") if hero_row else None,
         "variance": variance,
         "payout_histogram": hist,
-        "rival_handles_sampled": list(TOP_RIVALS),
+        "rival_handles_sampled": top_rivals,
+        "rivals_200plus_count": sum(
+            1 for a in agents
+            if (a.get("handle") or "") != args.hero and int(a.get("hands") or 0) >= args.min_hands
+        ),
+        "min_hands_rival_gate": args.min_hands,
         "data_note": (
-            "Full 280k+ rows aggregated in Python; models receive stats + 80 worst hero hands "
-            "+ 10 rival profiles (25 rows each), not raw jsonl."
+            f"Full export aggregated in Python; models receive stats + 80 worst hero hands "
+            f"+ {len(top_rivals)} rival profiles (40 showdown rows each for ≥{args.min_hands}h), "
+            "not raw jsonl."
         ),
     }
     (out / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
@@ -282,12 +364,12 @@ Bootstrap 95% CI: **{variance.get('bb100_bootstrap_95ci', '?')}**
 Payout histogram (hero): {json.dumps(hist)}
 
 ### Hero vs top rivals (table co-occurrence)
-{_hero_vs_rival_tables(submissions, args.hero, list(TOP_RIVALS))}
+{_hero_vs_rival_tables(submissions, args.hero, top_rivals)}
 
 ### Top rival showdown samples (full export slice)
-{chr(10).join(rival_blocks[:3])}
+{chr(10).join(rival_blocks[:4])}
 
-(... 7 more rivals in rival_samples/ — see pack directory)
+(... {max(0, len(top_rivals) - 4)} more rivals in rival_samples/ — see pack directory)
 """
 
     if PROMPT_TEMPLATE.is_file():
@@ -310,6 +392,7 @@ Payout histogram (hero): {json.dumps(hist)}
             bb100_snapshot=json.dumps(bb_snap.get("hero_analysis") or bb_snap, indent=2)
             if bb_snap
             else "(not available)",
+            rivals_200plus=rivals_table,
             crawl=json.dumps(crawl_trim, indent=2),
         )
         (out / "audit_prompt.md").write_text(filled, encoding="utf-8")
@@ -317,7 +400,8 @@ Payout histogram (hero): {json.dumps(hist)}
     (out / "AUDIT_README.md").write_text(
         f"# Heavy audit pack\n\nBuilt: {manifest['built_at']}\n\n"
         f"- Scanned {len(submissions):,} submission rows locally\n"
-        f"- 80 worst hero hands, 10 rival profiles\n"
+        f"- 80 worst hero hands, {len(top_rivals)} rival profiles (≥{args.min_hands}h)\n"
+        f"- {manifest.get('rivals_200plus_count', '?')} agents with ≥{args.min_hands} hands in field\n"
         f"- Use with cursor-audit (3 parallel subagents) or run_gap_premium_audit.py\n",
         encoding="utf-8",
     )

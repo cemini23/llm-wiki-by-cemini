@@ -55,6 +55,17 @@ def invalidate_opponent_cache(
 
 def classify_archetype(stats: dict) -> str:
     mod = _exploit_impl()
-    if mod is not None:
+    if mod is not None and hasattr(mod, "classify_archetype"):
         return mod.classify_archetype(stats)
-    return "unknown"
+    from villain_archetype import classify_villain_archetype  # noqa: WPS433
+
+    return classify_villain_archetype(stats)
+
+
+def enrich_hud_from_table(hud: dict, table: dict) -> dict:
+    mod = _exploit_impl()
+    if mod is not None and hasattr(mod, "enrich_hud_from_table"):
+        return mod.enrich_hud_from_table(hud, table)
+    from villain_archetype import enrich_hud_from_table as _enrich  # noqa: WPS433
+
+    return _enrich(hud, table)

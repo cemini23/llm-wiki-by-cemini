@@ -1,6 +1,7 @@
 """Playground leak regression — cemini decide() on prod-shaped 6-max spots."""
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
@@ -27,8 +28,21 @@ def _merge_context(table: dict, extra: dict | None) -> dict:
 
 
 def _run(spot_table: dict, context: dict | None = None) -> dict:
-    ctx = _merge_context(spot_table, context)
-    out = decide(spot_table, deadline_s=10.0, research_context=ctx)
+    env_saved: dict[str, str | None] = {}
+    ctx_extra = dict(context or {})
+    for key in list(ctx_extra.keys()):
+        if key.startswith(("CEMINI_", "JACKPOT_", "ARENA_")):
+            env_saved[key] = os.environ.get(key)
+            os.environ[key] = str(ctx_extra.pop(key))
+    try:
+        ctx = _merge_context(spot_table, ctx_extra or None)
+        out = decide(spot_table, deadline_s=10.0, research_context=ctx)
+    finally:
+        for key, prev in env_saved.items():
+            if prev is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = prev
     legal = set(spot_table["allowedActions"]["availableActions"])
     assert out["action"] in legal, (
         f"illegal {out['action']!r} legal={sorted(legal)}"
