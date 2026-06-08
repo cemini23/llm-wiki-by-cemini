@@ -461,12 +461,16 @@ def decide(
                       msg=f"{binding}: OOP weak top pair on three-flush — fold")
 
     # BTN/CO IP pocket under board pair — TT BTN −115 on JhJsAx (HL R8 #01).
+    # Small pairs (22–99): lower bar — 22 CO −9 on A88xA missed micro river (HL R1 #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and position in ("CO", "BTN") and in_position
-            and _pocket_under_board_pair(hole, board)
-            and call_chips >= max(int(pot * 0.28), 1)):
-        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
-                      msg=f"{binding}: IP underpair on paired board — fold")
+            and _pocket_under_board_pair(hole, board)):
+        ip_under_ratio = 0.12 if _small_pocket_pair(hc) else 0.28
+        if _board_has_ace_pair(board) and _small_pocket_pair(hc):
+            ip_under_ratio = 0.08
+        if call_chips >= max(int(pot * ip_under_ratio), 1):
+            return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                          msg=f"{binding}: IP underpair on paired board — fold")
 
     # EP OOP marginal top pair on paired runouts — T6o MP −290 (analyze #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available

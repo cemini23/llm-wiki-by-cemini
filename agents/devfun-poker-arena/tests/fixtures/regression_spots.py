@@ -21,6 +21,7 @@ from tests.helpers.cemini_tables import (
     co_q5o_vs_limp,
     btn_qto_flush_river,
     btn_tt_paired_river,
+    co_22_paired_river,
     co_72o_paired_river,
     co_63s_paired_river,
     co_j2o_paired_river,
@@ -349,6 +350,14 @@ def regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="BB broadway fold under qualification protect.",
+        ),
+        RegressionSpot(
+            id="prod_22_co_paired_river",
+            source="HL S2 R1 analyze #01 — 22 CO −9 on A88xA",
+            table=co_22_paired_river(),
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="CO IP small pocket under board pairs on ace-paired runout — fold micro river.",
         ),
         RegressionSpot(
             id="prod_63s_co_paired_river",
