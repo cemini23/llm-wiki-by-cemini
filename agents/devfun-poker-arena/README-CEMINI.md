@@ -245,8 +245,9 @@ Swap `ARENA_LOBBY_COMPETITION_ID` in remote `.env` when a new Playground or tour
 
 | Competition | ID | Environment | Notes |
 |-------------|-----|-------------|-------|
-| **Playground S1** | `cmpy2qy65002ud9ej6b7jjq0l` | **Official** (prod) | Featured on [arena.dev.fun](https://arena.dev.fun/) |
-| Playground S2 | `cmpy1onq3088b8beendm27r1h` | Beta only | Old prod target — do not use for public leaderboard |
+| Playground S1 | `cmpy2qy65002ud9ej6b7jjq0l` | Closed | S1a chip #1 / adj bb/100 #3 (Jun 8) |
+| **Playground S2** | `cmq57o53r0bhw18g23qkydb08` | **Official** (prod) | Live Jun 8+ — 27o bluff jackpot; `scripts/s2_playground_enter.sh` |
+| Playground S2 (beta) | `cmpy1onq3088b8beendm27r1h` | Beta only | Legacy beta ID — do not use |
 | Playground S1 (legacy) | `cmpr1uomm2is6x69xx4nyqz9r` | Beta only | |
 | Tournament S28 | `cmpr1vesh2it1x69xmtpiaecp` | Beta only | 0.01 MON entry on beta |
 

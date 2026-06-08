@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import os
 
-_DEFAULT = ("hunterguy102", "thaddius")
+_DEFAULT = ("hunterguy102", "thaddius", "v_16", "0xjeff_ai")
 _DEFAULT_PREFIXES = ("v12_",)
 
 

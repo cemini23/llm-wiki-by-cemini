@@ -35,6 +35,12 @@ from opponent_hud import build_opponent_hud, exploit_margins  # noqa: E402
 from pokerskill_adapter import retrieve_pokerskill_hints  # noqa: E402
 from session_memory import exploit_from_memory  # noqa: E402
 from nemesis_seed import nemesis_handles, table_nemesis_opener  # noqa: E402
+from s1b_exploit import (  # noqa: E402
+    exploit_lane_active,
+    try_defend_bb_vs_steal,
+    try_three_bet_lag_vs_open,
+    try_trap_aa_kk_vs_3bet,
+)
 
 try:
     from train_config import threshold as _train_threshold  # noqa: E402
@@ -544,12 +550,16 @@ def decide(
             table_nemesis_opener(table, handles)
             if _nemesis_tight_enabled() else False
         )
+        bb = int(table.get("bigBlindChips") or 20)
+        hero_stack = _hero_stack_chips(table)
         action_name, amount = _preflop_vs_bet(
             chart, allowed, available, equity, pot_odds, call_chips, pot,
             in_position=in_position, ps_bias=ps_bias, ps_library=ps_library,
             hud_mode=hud_mode, margins=margins, lead_protect=lead_protect,
             qual_protect=qual_protect, first_protect=first_protect,
-            nemesis_opener=nemesis_opener, eval_panel=eval_panel)
+            nemesis_opener=nemesis_opener, eval_panel=eval_panel,
+            ko_survival=ko_survival, cold_start=cold_start, hud=hud,
+            hero_stack_chips=hero_stack, big_blind=bb)
     elif call_chips == 0:
         action_name, amount = _postflop_free(
             equity, allowed, available, pot, pot_control=pot_control,
@@ -750,11 +760,17 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                     qual_protect: bool = False,
                     first_protect: bool = False,
                     nemesis_opener: bool = False,
-                    eval_panel: bool = False) -> tuple[str, Optional[int]]:
+                    eval_panel: bool = False,
+                    ko_survival: bool = False,
+                    cold_start: bool = False,
+                    hud: Optional[dict] = None,
+                    hero_stack_chips: int = 0,
+                    big_blind: int = 20) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     hc = chart.get("hand_class") or ""
     position = chart.get("position") or ""
     suggested = chart.get("suggested_action") or "fold"
+    hud = hud or {}
 
     # Static chart is open-range only — facing a raise, downgrade spurious "raise" (77 MP −100).
     if call_chips > 0 and suggested == "raise" and hc not in _PREFLOP_3BET_OK:
@@ -834,6 +850,51 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     if (nemesis_opener and position == "SB" and call_chips > 0
             and hc not in _NEMESIS_SB_DEFEND_OK and "fold" in available):
         return "fold", None
+
+    if exploit_lane_active(
+        qual_protect=qual_protect,
+        first_protect=first_protect,
+        ko_survival=ko_survival,
+        eval_panel=eval_panel,
+        cold_start=cold_start,
+        hud_mode=hud_mode,
+        hero_stack_bb=hero_stack_chips / max(big_blind, 1),
+        hud=hud,
+        nemesis_opener=nemesis_opener,
+    ):
+        lag_3b = try_three_bet_lag_vs_open(
+            hand_class=hc,
+            position=position,
+            call_chips=call_chips,
+            pot=pot,
+            allowed=allowed,
+            available=available,
+            hero_stack_chips=hero_stack_chips,
+            big_blind=big_blind,
+        )
+        if lag_3b:
+            return lag_3b
+        trap = try_trap_aa_kk_vs_3bet(
+            hand_class=hc,
+            call_chips=call_chips,
+            big_blind=big_blind,
+            available=available,
+            hero_stack_chips=hero_stack_chips,
+            hud=hud,
+        )
+        if trap:
+            return trap
+        defend = try_defend_bb_vs_steal(
+            hand_class=hc,
+            position=position,
+            call_chips=call_chips,
+            pot_odds=pot_odds,
+            equity=equity,
+            available=available,
+            hero_stack_chips=hero_stack_chips,
+        )
+        if defend:
+            return defend
 
     # SB: never complete/call/defend with chart trash (83o/72o −100 preflop leaks).
     _sb_defend_premium = frozenset({"AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQs"})

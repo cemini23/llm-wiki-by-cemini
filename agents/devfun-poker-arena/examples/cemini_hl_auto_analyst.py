@@ -185,6 +185,10 @@ def _heuristic_catastrophe(metrics: dict | None) -> tuple[bool, str]:
     """Fast path: activate kill without LLM if recent sample is extreme."""
     if not metrics:
         return False, ""
+    lobby = os.environ.get("ARENA_LOBBY_COMPETITION_ID", "").strip()
+    comp = str(metrics.get("competitionId") or "").strip()
+    if lobby and comp and comp != lobby:
+        return False, ""
     hands = int(metrics.get("hands") or 0)
     net = int(metrics.get("net_delta") or 0)
     losses = int(metrics.get("losses") or 0)
