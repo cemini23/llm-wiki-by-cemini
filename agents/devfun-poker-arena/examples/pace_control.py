@@ -5,6 +5,8 @@ import os
 
 DEFAULT_JOIN_RETRY_S = 60.0
 DEFAULT_IN_QUEUE_RETRY_S = 180.0
+DEFAULT_VOLUME_JOIN_RETRY_S = 20.0
+DEFAULT_VOLUME_IN_QUEUE_RETRY_S = 45.0
 DEFAULT_QUAL_JOIN_RETRY_S = 300.0  # 5 min — still seated, fewer new tables
 DEFAULT_LEAD_JOIN_RETRY_S = 900.0  # 15 min — time game > chip game when safely ahead
 DEFAULT_FIRST_JOIN_RETRY_S = 1800.0  # 30 min — rank #1: minimize new table intake
@@ -17,6 +19,10 @@ def _env_float(name: str, default: float) -> float:
     if raw is None or raw == "":
         return default
     return float(raw)
+
+
+def _pace_phase() -> str:
+    return os.environ.get("CEMINI_PACE_PHASE", "").strip().lower()
 
 
 def join_retry_seconds(
@@ -33,12 +39,21 @@ def join_retry_seconds(
 
     First place uses the longest backoff; lead protect is next; qualification
     protect is moderate; otherwise use the default lobby cadence (or in-queue wait).
+    ``CEMINI_PACE_PHASE=volume`` keeps joins fast for early-season volume even when
+    qual/lead protect is on (rank #1 ``first_protect`` still uses the slowest tier).
     When hero stack is below buy-in, use at least CEMINI_LOW_STACK_JOIN_RETRY_S.
     """
+    volume = _pace_phase() == "volume"
+
     if in_queue_only:
-        base = _env_float("CEMINI_IN_QUEUE_RETRY_S", DEFAULT_IN_QUEUE_RETRY_S)
+        default_in_q = (
+            DEFAULT_VOLUME_IN_QUEUE_RETRY_S if volume else DEFAULT_IN_QUEUE_RETRY_S
+        )
+        base = _env_float("CEMINI_IN_QUEUE_RETRY_S", default_in_q)
     elif first_protect:
         base = _env_float("CEMINI_FIRST_JOIN_RETRY_S", DEFAULT_FIRST_JOIN_RETRY_S)
+    elif volume:
+        base = _env_float("CEMINI_JOIN_RETRY_S", DEFAULT_VOLUME_JOIN_RETRY_S)
     elif lead_protect:
         base = _env_float("CEMINI_LEAD_JOIN_RETRY_S", DEFAULT_LEAD_JOIN_RETRY_S)
     elif qual_protect:

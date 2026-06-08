@@ -295,20 +295,27 @@ def run_lobby(args: argparse.Namespace) -> int:
                 hero_stack_chips=hero_stack,
                 retry_multiplier=mult,
             )
-            if (first_protect or lead_protect or qual_protect) and (
-                now - last_pace_log_at
-            ) >= LOBBY_LOG_INTERVAL_S:
+            pace_phase = (os.environ.get("CEMINI_PACE_PHASE") or "").strip().lower()
+            if (now - last_pace_log_at) >= LOBBY_LOG_INTERVAL_S:
                 if first_protect:
-                    tier = "first"
-                elif lead_protect:
-                    tier = "lead"
-                else:
-                    tier = "qualification"
-                print(
-                    f"[cemini-lobby] pace throttle ({tier}): "
-                    f"join retry {retry_s:.0f}s — fewer tables, preserve buffer"
-                )
-                last_pace_log_at = now
+                    print(
+                        f"[cemini-lobby] pace throttle (first): "
+                        f"join retry {retry_s:.0f}s — preserve #1 buffer"
+                    )
+                    last_pace_log_at = now
+                elif pace_phase == "volume":
+                    print(
+                        f"[cemini-lobby] pace volume: join retry {retry_s:.0f}s "
+                        f"(queue={'yes' if in_queue_only else 'no'})"
+                    )
+                    last_pace_log_at = now
+                elif lead_protect or qual_protect:
+                    tier = "lead" if lead_protect else "qualification"
+                    print(
+                        f"[cemini-lobby] pace throttle ({tier}): "
+                        f"join retry {retry_s:.0f}s — fewer tables, preserve buffer"
+                    )
+                    last_pace_log_at = now
             if not force and (now - last_join_at) < retry_s:
                 if in_queue_only and (now - last_lobby_log_at) >= LOBBY_LOG_INTERVAL_S:
                     _log_lobby_queue(client, competition_id)
