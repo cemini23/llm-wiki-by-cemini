@@ -553,6 +553,77 @@ def sb_qq_connected_river(*, river_bet: int = 450, pot: int = 900) -> dict:
     )
 
 
+def sb_63s_broadway_river(*, villain_bet: int = 60, pot: int = 200) -> dict:
+    """63s SB OOP on broadway river — HL R4 analyze #01 (−100)."""
+    return six_max_table(
+        name="sb_63s_broadway_river",
+        hero_seat=2,
+        button_seat=1,
+        street="River",
+        board=["Qs", "Jc", "2c", "Ts", "Kh"],
+        pot=pot,
+        hero_hole=["3d", "6s"],
+        hero_stack=400,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={2: 400},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def sb_a6o_vs_shove(*, shove_to: int = 1000, hero_stack: int = 1000) -> dict:
+    """A6o SB facing preflop stack-off — HL R4 analyze #02."""
+    return six_max_table(
+        name="sb_a6o_vs_shove",
+        hero_seat=2,
+        button_seat=1,
+        street="Preflop",
+        board=[],
+        pot=30 + shove_to,
+        hero_hole=["As", "6h"],
+        hero_stack=hero_stack,
+        hero_bet=0,
+        villain_bets={1: shove_to},
+        stacks={2: hero_stack},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_all_in=True,
+            call_chips=shove_to,
+            call_to=shove_to,
+            all_in_to=hero_stack,
+        ),
+    )
+
+
+def co_ato_paired_river(*, villain_bet: int = 80, pot: int = 240) -> dict:
+    """ATo CO OOP on paired river — HL R4 analyze #03 (−100)."""
+    return six_max_table(
+        name="co_ato_paired_river",
+        hero_seat=6,
+        button_seat=1,
+        street="River",
+        board=["Jc", "Qs", "7h", "Kc", "7c"],
+        pot=pot,
+        hero_hole=["Th", "Ad"],
+        hero_stack=400,
+        hero_bet=0,
+        villain_bets={5: villain_bet},
+        stacks={6: 400},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def sb_95s_paired_river(*, villain_bet: int = 50, pot: int = 180) -> dict:
     """95s SB OOP on ace-paired runout — HL S2 R3 analyze #01 (−100)."""
     return six_max_table(

@@ -413,6 +413,17 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: SB low suited on ace-paired board — fold")
 
+    # SB OOP low suited wheel on broadway river — 63s SB −100 (HL R4 #01).
+    if (street == "River" and call_chips > 0 and "fold" in available
+            and position == "SB" and not in_position
+            and _is_low_suited_wheel(hc)
+            and _board_broadway_count(board) >= 3
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.10), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: SB low suited on broadway river — fold")
+
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and not in_position
             and _is_wheel_offsuit(hc)
@@ -510,6 +521,31 @@ def decide(
             and call_chips >= max(int(pot * 0.28), 1)):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP weak ace second pair — fold")
+
+    # UTG/MP — never open chart trash (94o UTG −100 HL R4 #06).
+    if (street == "Preflop" and call_chips == 0 and position in ("UTG", "MP")
+            and hc in _WEAK_FACING_RAISE and "fold" in available):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP trash — fold")
+
+    hero_stack_early = _hero_stack_chips(table)
+    if (street == "Preflop" and call_chips > 0 and "fold" in available
+            and _preflop_stackoff_should_fold(hc, call_chips, hero_stack_early)
+            and not _hero_cannot_lose()):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: preflop stack-off — fold")
+
+    # CO/BTN weak broadway on paired river — ATo CO −100 (HL R4 #03).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "MP", "BTN")
+            and hc in _BB_BROADWAY_FOLD
+            and _board_is_paired(board)
+            and len(board) >= 5
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.15), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: weak broadway on paired river — fold")
 
     # CO weak connector offsuit — never open or call preflop (98o CO −100 HL R11 #01).
     if (street == "Preflop" and position == "CO" and hc in _CO_WEAK_CONNECTOR
@@ -831,6 +867,11 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and "fold" in available):
         return "fold", None
 
+    # SB: fold marginal ace vs any open (A6o SB −100 HL R4 #02).
+    if (position == "SB" and call_chips > 0 and _marginal_ace_kicker(hc)
+            and "fold" in available):
+        return "fold", None
+
     # BB: fold low suited trash vs opens (T2s, 98s — HL R6 #04/#05).
     if (position == "BB" and call_chips > 0 and _is_bb_suited_trash(hc)
             and "fold" in available):
@@ -1028,9 +1069,12 @@ def _preflop_stackoff_should_fold(
     ratio = call_chips / hero_stack_chips
     if ratio >= 0.45:
         return True
+    if ratio >= 0.22 and hc in _WEAK_FACING_RAISE:
+        return True
+    if ratio >= 0.22 and _marginal_ace_kicker(hc):
+        return True
     if ratio >= 0.28 and (
-        hc in _WEAK_FACING_RAISE
-        or _is_sb_complete_trash(hc)
+        _is_sb_complete_trash(hc)
         or hc in _CO_WEAK_CONNECTOR
         or hc in _BB_BROADWAY_FOLD
     ):
@@ -1399,6 +1443,14 @@ def _board_has_ace_pair(board: list[str]) -> bool:
         return False
     branks = [c[0].upper() for c in board]
     return Counter(branks).get("A", 0) >= 2
+
+
+def _board_broadway_count(board: list[str]) -> int:
+    """T+ ranks on board — 63s SB river leak on QJ2TK (HL R4 #01)."""
+    if not board:
+        return 0
+    t_idx = _RANKS.index("T")
+    return sum(1 for c in board if _RANKS.index(c[0].upper()) >= t_idx)
 
 
 def _hero_underpair_on_paired_board(hand_class: str, board: list[str]) -> bool:
