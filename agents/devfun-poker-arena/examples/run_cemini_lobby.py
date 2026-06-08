@@ -285,6 +285,20 @@ def run_lobby(args: argparse.Namespace) -> int:
                     hero_stack = int(hero_stack)
                 except (TypeError, ValueError):
                     hero_stack = None
+            buy_in = int(os.environ.get("ARENA_PLAYGROUND_START_CHIPS") or 1000)
+            big_blind = int(os.environ.get("ARENA_PLAYGROUND_BIG_BLIND") or 2)
+            # API: rebuy only when total chips < bigBlindChips (not merely < table buy-in).
+            if hero_stack is not None and hero_stack < big_blind:
+                print(
+                    f"[cemini-lobby] stack {hero_stack} < BB {big_blind} — rebuy attempt",
+                    file=sys.stderr,
+                )
+                if _try_rebuy(client, competition_id):
+                    refresh_qualification(force=True)
+                    try:
+                        hero_stack = int(qual_status.get("chips") or hero_stack)
+                    except (TypeError, ValueError):
+                        pass
             style = load_style_overrides()
             mult = float(style.get("join_retry_multiplier") or 1.0)
             retry_s = join_retry_seconds(
@@ -304,9 +318,13 @@ def run_lobby(args: argparse.Namespace) -> int:
                     )
                     last_pace_log_at = now
                 elif pace_phase == "volume":
+                    below = (
+                        hero_stack is not None and hero_stack < buy_in
+                    )
                     print(
                         f"[cemini-lobby] pace volume: join retry {retry_s:.0f}s "
-                        f"(queue={'yes' if in_queue_only else 'no'})"
+                        f"(queue={'yes' if in_queue_only else 'no'}"
+                        f"{', below buy-in' if below else ''})"
                     )
                     last_pace_log_at = now
                 elif lead_protect or qual_protect:

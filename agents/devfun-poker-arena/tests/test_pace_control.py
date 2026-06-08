@@ -89,14 +89,40 @@ def test_volume_phase_still_respects_first_protect(monkeypatch: pytest.MonkeyPat
     ) == DEFAULT_FIRST_JOIN_RETRY_S
 
 
-def test_low_stack_join_pace(monkeypatch: pytest.MonkeyPatch) -> None:
+def test_volume_phase_sub_buyin_bankroll_stays_fast(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("CEMINI_PACE_PHASE", "volume")
+    assert join_retry_seconds(
+        first_protect=False,
+        lead_protect=False,
+        qual_protect=False,
+        in_queue_only=False,
+        hero_stack_chips=997,
+        buy_in_chips=1000,
+    ) == 20.0
+
+
+def test_volume_phase_busted_below_bb_stays_fast(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("CEMINI_PACE_PHASE", "volume")
     monkeypatch.delenv("CEMINI_LOW_STACK_JOIN_RETRY_S", raising=False)
     assert join_retry_seconds(
         first_protect=False,
         lead_protect=False,
         qual_protect=False,
         in_queue_only=False,
-        hero_stack_chips=850,
+        hero_stack_chips=1,
+        buy_in_chips=1000,
+    ) == 20.0
+
+
+def test_low_stack_join_pace(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("CEMINI_PACE_PHASE", raising=False)
+    monkeypatch.delenv("CEMINI_LOW_STACK_JOIN_RETRY_S", raising=False)
+    assert join_retry_seconds(
+        first_protect=False,
+        lead_protect=False,
+        qual_protect=False,
+        in_queue_only=False,
+        hero_stack_chips=1,
         buy_in_chips=1000,
     ) == DEFAULT_LOW_STACK_JOIN_RETRY_S
     assert join_retry_seconds(
@@ -105,5 +131,13 @@ def test_low_stack_join_pace(monkeypatch: pytest.MonkeyPatch) -> None:
         qual_protect=True,
         in_queue_only=False,
         hero_stack_chips=850,
+        buy_in_chips=1000,
+    ) == DEFAULT_FIRST_JOIN_RETRY_S
+    assert join_retry_seconds(
+        first_protect=True,
+        lead_protect=True,
+        qual_protect=True,
+        in_queue_only=False,
+        hero_stack_chips=1,
         buy_in_chips=1000,
     ) == max(DEFAULT_FIRST_JOIN_RETRY_S, DEFAULT_LOW_STACK_JOIN_RETRY_S)

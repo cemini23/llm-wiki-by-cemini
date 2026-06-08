@@ -65,7 +65,12 @@ def join_retry_seconds(
     if buy_in is None:
         raw = os.environ.get("ARENA_PLAYGROUND_START_CHIPS")
         buy_in = int(raw) if raw else DEFAULT_PLAYGROUND_BUY_IN
-    if hero_stack_chips is not None and hero_stack_chips < buy_in:
-        low = _env_float("CEMINI_LOW_STACK_JOIN_RETRY_S", DEFAULT_LOW_STACK_JOIN_RETRY_S)
+    # Sub-buy-in bankroll (e.g. 997/1000) is normal — keep join cadence fast in volume mode.
+    big_blind = int(os.environ.get("ARENA_PLAYGROUND_BIG_BLIND") or 2)
+    if hero_stack_chips is not None and hero_stack_chips < big_blind:
+        low_default = (
+            DEFAULT_VOLUME_JOIN_RETRY_S if volume else DEFAULT_LOW_STACK_JOIN_RETRY_S
+        )
+        low = _env_float("CEMINI_LOW_STACK_JOIN_RETRY_S", low_default)
         return max(base, low) * max(retry_multiplier, 1.0)
     return base * max(retry_multiplier, 1.0)
