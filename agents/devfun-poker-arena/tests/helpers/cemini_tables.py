@@ -553,6 +553,79 @@ def sb_qq_connected_river(*, river_bet: int = 450, pot: int = 900) -> dict:
     )
 
 
+def sb_a9s_paired_river(*, villain_bet: int = 400, pot: int = 600) -> dict:
+    """A9s SB OOP on paired runout — HL R5 analyze #01 (−492)."""
+    return six_max_table(
+        name="sb_a9s_paired_river",
+        hero_seat=2,
+        button_seat=1,
+        street="River",
+        board=["7s", "Jc", "Jh", "Ks", "Ac"],
+        pot=pot,
+        hero_hole=["9s", "As"],
+        hero_stack=500,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={2: 500},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def co_facing_shove(hero_hole: list[str], *, shove_to: int = 1000, hero_stack: int = 1000) -> dict:
+    """CO facing large preflop shove — HL R5 QTo leak."""
+    return six_max_table(
+        name="co_facing_shove",
+        hero_seat=6,
+        button_seat=1,
+        street="Preflop",
+        board=[],
+        pot=30 + shove_to,
+        hero_hole=hero_hole,
+        hero_stack=hero_stack,
+        hero_bet=0,
+        villain_bets={5: shove_to},
+        stacks={6: hero_stack},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_all_in=True,
+            call_chips=shove_to,
+            call_to=shove_to,
+            all_in_to=hero_stack,
+        ),
+    )
+
+
+def mp_facing_shove(hero_hole: list[str], *, shove_to: int = 1000, hero_stack: int = 1000) -> dict:
+    """MP facing large preflop shove — HL R5 Q9o leak."""
+    return six_max_table(
+        name="mp_facing_shove",
+        hero_seat=5,
+        button_seat=1,
+        street="Preflop",
+        board=[],
+        pot=30 + shove_to,
+        hero_hole=hero_hole,
+        hero_stack=hero_stack,
+        hero_bet=0,
+        villain_bets={4: shove_to},
+        stacks={5: hero_stack},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_all_in=True,
+            call_chips=shove_to,
+            call_to=shove_to,
+            all_in_to=hero_stack,
+        ),
+    )
+
+
 def sb_63s_broadway_river(*, villain_bet: int = 60, pot: int = 200) -> dict:
     """63s SB OOP on broadway river — HL R4 analyze #01 (−100)."""
     return six_max_table(

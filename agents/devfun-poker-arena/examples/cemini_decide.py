@@ -424,6 +424,30 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: SB low suited on broadway river — fold")
 
+    # SB OOP marginal ace on paired runout — A9s SB −492 (HL R5 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position == "SB" and not in_position
+            and _marginal_ace_kicker(hc)
+            and _board_is_paired(board)
+            and len(board) >= 4
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_has_ace_on_paired_ace_board(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.12), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: SB marginal ace on paired board — fold")
+
+    # SB OOP king-low offsuit on ace-paired board — K3o SB −100 (HL R5 #03).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position == "SB" and not in_position
+            and _is_king_low_offsuit(hc)
+            and _board_has_ace_pair(board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.15), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: SB king-low on ace-paired board — fold")
+
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and not in_position
             and _is_wheel_offsuit(hc)
@@ -527,6 +551,18 @@ def decide(
             and hc in _WEAK_FACING_RAISE and "fold" in available):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP trash — fold")
+
+    # MP/UTG chart-trash vs any raise — Q9o MP −100 (HL R5 #04).
+    if (street == "Preflop" and call_chips > 0 and position in ("UTG", "MP")
+            and hc in _WEAK_FACING_RAISE and "fold" in available):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP trash vs raise — fold")
+
+    # CO dominated broadway vs raise — QTo CO −100 preflop (HL R5 #09).
+    if (street == "Preflop" and call_chips > 0 and position == "CO"
+            and hc in _BB_BROADWAY_FOLD and "fold" in available):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: CO broadway trash vs raise — fold")
 
     hero_stack_early = _hero_stack_chips(table)
     if (street == "Preflop" and call_chips > 0 and "fold" in available
@@ -897,6 +933,16 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and hc in _LOW_PAIRS_PROTECT and "fold" in available):
         return "fold", None
 
+    # EP chart-trash vs any raise — Q9o MP −100 (HL R5 #04).
+    if (position in ("UTG", "MP") and call_chips > 0
+            and hc in _WEAK_FACING_RAISE and "fold" in available):
+        return "fold", None
+
+    # CO broadway trash vs raise — QTo CO −100 (HL R5 #09).
+    if (position == "CO" and call_chips > 0 and hc in _BB_BROADWAY_FOLD
+            and "fold" in available):
+        return "fold", None
+
     # HL R25 #01: EP suited broadway vs raise — fold under first_protect (shove traps).
     if (first_protect and position in ("UTG", "MP") and call_chips > 0
             and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
@@ -1073,6 +1119,10 @@ def _preflop_stackoff_should_fold(
         return True
     if ratio >= 0.22 and _marginal_ace_kicker(hc):
         return True
+    if ratio >= 0.22 and hc in _EP_SUITED_BROADWAY_TRAP:
+        return True
+    if ratio >= 0.22 and position_hint in ("UTG", "MP") and hc in {"ATs", "A9s", "A8s", "KJs", "KTs", "QTs"}:
+        return True
     if ratio >= 0.28 and (
         _is_sb_complete_trash(hc)
         or hc in _CO_WEAK_CONNECTOR
@@ -1091,6 +1141,13 @@ def _marginal_ace_kicker(hc: str) -> bool:
     if len(hc) != 3 or hc[0] != "A":
         return False
     return _RANKS.index(hc[1]) <= _RANKS.index("9")
+
+
+def _is_king_low_offsuit(hc: str) -> bool:
+    """K5o and below — K3o SB ace-paired leak (HL R5 #03)."""
+    if len(hc) != 3 or hc[0] != "K" or hc[2] != "o" or hc[0] == hc[1]:
+        return False
+    return _RANKS.index(hc[1]) <= _RANKS.index("5")
 
 
 def _ace_kicker_second_pair(hole: list[str], board: list[str]) -> bool:
