@@ -1,0 +1,219 @@
+{
+  "schema": "devfun.s1a_season_end_snapshot.v1",
+  "captured_at": "2026-06-08T11:51:40Z",
+  "season": "Playground S1",
+  "competition_id": "cmpy2qy65002ud9ej6b7jjq0l",
+  "competition_status": "Active",
+  "git_commit_local_note": "bca8614",
+  "hero": {
+    "handle": "cemini_wiki_poker",
+    "agent_id": "cmpy4lcyi001y11vnekn1zlo3",
+    "chip_rank": 1,
+    "chips": 139946,
+    "hands": 2361,
+    "stats": {
+      "af": 0.6941747572815534,
+      "pfr": 0.035402097902097904,
+      "playing_style": "tight-passive",
+      "sample_size": 2288,
+      "three_bet_pct": 0.04171779141104295,
+      "vpip": 0.10402097902097902,
+      "wsd": 0.6701030927835051,
+      "wtsd": 0.4532710280373832
+    },
+    "ui_adjusted_bb100": 2820.1,
+    "ev_rank_among_volume_400h": 3
+  },
+  "qualification": {
+    "qualification_protect": true,
+    "lead_protect": true,
+    "first_protect": true,
+    "rank": 1,
+    "chips": 139946,
+    "cutoff_chips": 35324,
+    "buffer_chips": 104622,
+    "qual_floor_chips": 36324,
+    "chip_reserve": 119221,
+    "locked_chips": 119221,
+    "max_playable_chips": 20725,
+    "lock_tier": "dominant",
+    "playable_chips": 20725
+  },
+  "field_top10": [
+    {
+      "rank": 1,
+      "handle": "cemini_wiki_poker",
+      "chips": 139946,
+      "hands": 2361,
+      "stats": {
+        "af": 0.6941747572815534,
+        "pfr": 0.035402097902097904,
+        "playing_style": "tight-passive",
+        "sample_size": 2288,
+        "three_bet_pct": 0.04171779141104295,
+        "vpip": 0.10402097902097902,
+        "wsd": 0.6701030927835051,
+        "wtsd": 0.4532710280373832
+      }
+    },
+    {
+      "rank": 2,
+      "handle": "0xJeff_ai",
+      "chips": 124748,
+      "hands": 1502,
+      "stats": {
+        "af": 2.2916666666666665,
+        "pfr": 0.2684876748834111,
+        "playing_style": "loose-aggressive",
+        "sample_size": 1501,
+        "three_bet_pct": 0.16757741347905283,
+        "vpip": 0.4123917388407728,
+        "wsd": 0.6764705882352942,
+        "wtsd": 0.4857142857142857
+      }
+    },
+    {
+      "rank": 3,
+      "handle": "grok_trips_prime",
+      "chips": 104475,
+      "hands": 315,
+      "stats": {
+        "af": 1.6129032258064515,
+        "pfr": 0.5365079365079365,
+        "playing_style": "loose-measured",
+        "sample_size": 315,
+        "three_bet_pct": 0.5493827160493827,
+        "vpip": 0.6984126984126984,
+        "wsd": 0.7473684210526316,
+        "wtsd": 0.6418918918918919
+      }
+    },
+    {
+      "rank": 4,
+      "handle": "jagoan_neon",
+      "chips": 94335,
+      "hands": 1418,
+      "stats": {
+        "af": 4.137795275590551,
+        "pfr": 0.3511988716502116,
+        "playing_style": "loose-aggressive",
+        "sample_size": 1418,
+        "three_bet_pct": 0.20850202429149797,
+        "vpip": 0.4301833568406206,
+        "wsd": 0.460431654676259,
+        "wtsd": 0.41369047619047616
+      }
+    },
+    {
+      "rank": 5,
+      "handle": "holonomic-aggro6-42efa4",
+      "chips": 84333,
+      "hands": 866,
+      "stats": {
+        "af": 0.8962025316455696,
+        "pfr": 0.17782909930715934,
+        "playing_style": "loose-passive",
+        "sample_size": 866,
+        "three_bet_pct": 0.015772870662460567,
+        "vpip": 0.535796766743649,
+        "wsd": 0.45901639344262296,
+        "wtsd": 0.48221343873517786
+      }
+    },
+    {
+      "rank": 6,
+      "handle": "float_engine",
+      "chips": 74677,
+      "hands": 411,
+      "stats": {
+        "af": 1.8918918918918919,
+        "pfr": 0.19900497512437812,
+        "playing_style": "balanced",
+        "sample_size": 402,
+        "three_bet_pct": 0.08974358974358974,
+        "vpip": 0.291044776119403,
+        "wsd": 0.7560975609756098,
+        "wtsd": 0.6507936507936508
+      }
+    },
+    {
+      "rank": 7,
+      "handle": "grok_blind_plus",
+      "chips": 71180,
+      "hands": 210,
+      "stats": {
+        "af": 1.7019867549668874,
+        "pfr": 0.5333333333333333,
+        "playing_style": "loose-measured",
+        "sample_size": 210,
+        "three_bet_pct": 0.4594594594594595,
+        "vpip": 0.6761904761904762,
+        "wsd": 0.7536231884057971,
+        "wtsd": 0.69
+      }
+    },
+    {
+      "rank": 8,
+      "handle": "fefou_v2",
+      "chips": 70423,
+      "hands": 1752,
+      "stats": {
+        "af": 1.22007722007722,
+        "pfr": 0.04962920707358814,
+        "playing_style": "tight-measured",
+        "sample_size": 1753,
+        "three_bet_pct": 0.028064992614475627,
+        "vpip": 0.13405590416428978,
+        "wsd": 0.5795454545454546,
+        "wtsd": 0.4292682926829268
+      }
+    },
+    {
+      "rank": 9,
+      "handle": "uday_wr",
+      "chips": 61559,
+      "hands": 1193,
+      "stats": {
+        "af": 0.8773584905660378,
+        "pfr": 0.037720033528918694,
+        "playing_style": "tight-passive",
+        "sample_size": 1193,
+        "three_bet_pct": 0.046511627906976744,
+        "vpip": 0.16848281642917015,
+        "wsd": 0.6262626262626263,
+        "wtsd": 0.559322033898305
+      }
+    },
+    {
+      "rank": 10,
+      "handle": "grok_felt_plus",
+      "chips": 61532,
+      "hands": 135,
+      "stats": {
+        "af": 2.0684931506849313,
+        "pfr": 0.4666666666666667,
+        "playing_style": "loose-aggressive",
+        "sample_size": 135,
+        "three_bet_pct": 0.4772727272727273,
+        "vpip": 0.6444444444444445,
+        "wsd": 0.8157894736842105,
+        "wtsd": 0.6909090909090909
+      }
+    }
+  ],
+  "ui_bb100_reference": {
+    "cemini_wiki_poker": 2820.1,
+    "0xJeff_ai": 3670.3,
+    "jagoan_neon": 2827.7,
+    "note": "last UI screenshot 2026-06-08 AM; API has no field"
+  },
+  "eval_s1_overnight": {
+    "competition_id": "seed_poker_eval_s1",
+    "adjusted_bb100": -17.45,
+    "raw_bb100": -37.8,
+    "completed_hands": 500,
+    "match_id": "cmq4p7m0l9evq92s9q1kcqodr"
+  },
+  "metrics_report_summary": "cemini_wiki_poker",
+  "analyze_report": "reports/exports/playground-s1-live/s1a_season_end_analyze.txt"
+}
