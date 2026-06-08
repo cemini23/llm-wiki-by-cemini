@@ -14,6 +14,7 @@
 #   ./examples/cemini_hl_loop.sh --report path.txt  # skip fetch, build brief only
 #   ./examples/cemini_hl_loop.sh --preflight-only   # after you patched decide()
 #   ./examples/cemini_hl_loop.sh --deploy           # preflight + rsync prod (SKIP_ENV/CREDS default)
+#   ./examples/cemini_hl_loop.sh --deploy-fast     # regression-only gate (~1 min) + rsync
 #   ./examples/cemini_hl_loop.sh --full             # longer self-play gate (600 hands)
 #
 # Deploy convention (Cursor agent): always --deploy after HL patch; prod keeps .env + creds
@@ -36,7 +37,7 @@ AGENT_DIR="$(pwd)"
 
 HOST="${CEMINI_PROD_HOST:-cemini-prod}"
 REMOTE_DIR="/opt/devfun-poker-arena"
-MATCH="${ARENA_LOBBY_COMPETITION_ID:-cmpy2qy65002ud9ej6b7jjq0l}"
+MATCH="${ARENA_LOBBY_COMPETITION_ID:-cmq57o53r0bhw18g23qkydb08}"
 TOP="${HL_ANALYZE_TOP:-15}"
 ROUND="${HL_ROUND:-1}"
 REPORTS="${AGENT_DIR}/reports/hl-loop"
@@ -51,6 +52,7 @@ FROM_PROD=0
 REPORT_ARG=""
 PREFLIGHT_ONLY=0
 DEPLOY=0
+DEPLOY_FAST=0
 FULL_GATE=0
 SKIP_BRIEF=0
 
@@ -64,6 +66,7 @@ while [[ $# -gt 0 ]]; do
     --report) REPORT_ARG="${2:-}"; shift 2 ;;
     --preflight-only) PREFLIGHT_ONLY=1; shift ;;
     --deploy) DEPLOY=1; PREFLIGHT_ONLY=1; shift ;;
+    --deploy-fast) DEPLOY=1; DEPLOY_FAST=1; PREFLIGHT_ONLY=1; shift ;;
     --full) FULL_GATE=1; shift ;;
     --skip-brief) SKIP_BRIEF=1; shift ;;
     --round) ROUND="${2:-1}"; shift 2 ;;
@@ -238,11 +241,16 @@ fi
 
 # ── Step 3: PREFLIGHT (gate) ──────────────────────────────────────────────────
 echo ""
-echo "==> [3/4] Preflight gate (pytest + EP VPIP self-play + dry-run)"
-if [[ "${FULL_GATE}" -eq 1 ]]; then
-  ./scripts/cemini_preflight.sh --full
+if [[ "${DEPLOY_FAST}" -eq 1 ]]; then
+  echo "==> [3/4] Fast preflight (regression spots + dry-run only)"
+  ./scripts/cemini_preflight_fast.sh
 else
-  ./scripts/cemini_preflight.sh
+  echo "==> [3/4] Preflight gate (pytest + EP VPIP self-play + dry-run)"
+  if [[ "${FULL_GATE}" -eq 1 ]]; then
+    ./scripts/cemini_preflight.sh --full
+  else
+    ./scripts/cemini_preflight.sh
+  fi
 fi
 step_ok "Preflight PASS"
 

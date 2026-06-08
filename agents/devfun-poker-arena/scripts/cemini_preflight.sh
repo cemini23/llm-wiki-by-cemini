@@ -33,5 +33,9 @@ echo ""
 echo "==> [4/4] dry-run lobby path (no network)"
 uv run examples/agent.py --agent examples/cemini_decide.py --dry-run --max-hands 15
 
+mkdir -p reports/hl-loop
+date -u +%Y-%m-%dT%H:%M:%SZ > reports/hl-loop/preflight_ok.timestamp
+
 echo ""
 echo "PREFLIGHT OK — safe to deploy (rsync + systemctl restart)."
+echo "    stamp → reports/hl-loop/preflight_ok.timestamp (fast deploy valid 24h)"
