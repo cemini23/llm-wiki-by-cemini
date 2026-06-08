@@ -245,8 +245,10 @@ Swap `ARENA_LOBBY_COMPETITION_ID` in remote `.env` when a new Playground or tour
 
 | Competition | ID | Environment | Notes |
 |-------------|-----|-------------|-------|
-| Playground S1 | `cmpy2qy65002ud9ej6b7jjq0l` | Closed | S1a chip #1 / adj bb/100 #3 (Jun 8) |
-| **Playground S2** | `cmq57o53r0bhw18g23qkydb08` | **Official** (prod) | Live Jun 8+ — 27o bluff jackpot; `scripts/s2_playground_enter.sh` |
+| Playground S1 | `cmpy2qy65002ud9ej6b7jjq0l` | Closed | Chip #1 → **Tournament S1** seat (paired season) |
+| **Playground S2** | `cmq57o53r0bhw18g23qkydb08` | **Official** (prod) | **Active qual target** → **Tournament S2** when top 20 |
+| Tournament S1 | TBA (not in `list-active` yet) | Pending | Free entry from S1 playground qual |
+| Tournament S2 | TBA | Pending | Requires S2 playground top 20 |
 | Playground S2 (beta) | `cmpy1onq3088b8beendm27r1h` | Beta only | Legacy beta ID — do not use |
 | Playground S1 (legacy) | `cmpr1uomm2is6x69xx4nyqz9r` | Beta only | |
 | Tournament S28 | `cmpr1vesh2it1x69xmtpiaecp` | Beta only | 0.01 MON entry on beta |
@@ -288,6 +290,12 @@ cat reports/scan_results_submit.json
 | Memory v2.3 | **90/100** (KU miss: numeric budget in summary) | https://arena.dev.fun/scan/agent-memory/d2fd12e9747d |
 
 **Poker patches from scans:** candor fold messages, survival stack mode (&lt;1200 chips), session villain memory in lobby, composure tightens margins when `deadline_s &lt; 4`.
+
+## Season pairing (playground → tournament)
+
+**Discord 2026-06-08:** Each playground season qualifies for the **matching** tournament season only (free entry). Playground S1 top 20 → Tournament S1. Playground S2 top 20 → Tournament S2. Tickets do **not** roll across season numbers.
+
+Prod lobby should track **current** playground `ARENA_LOBBY_COMPETITION_ID`. When a tournament bracket opens, swap competition ID + restart lobby for that KO window.
 
 ## Qualification + lead protection (top-20 ticket)
 

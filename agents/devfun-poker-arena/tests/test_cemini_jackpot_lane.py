@@ -16,6 +16,7 @@ from tests.helpers.jackpot_27_tables import btn_72o_unopened  # noqa: E402
 
 def test_cemini_hunts_72o_btn_when_enabled():
     os.environ["JACKPOT_27_HUNT_ENABLED"] = "1"
+    os.environ["JACKPOT_27_PHASE"] = "early"
     os.environ["JACKPOT_27_COMPETITION_ID"] = "cmq57o53r0bhw18g23qkydb08"
     jackpot_27_state.reset_session()
     table = btn_72o_unopened()

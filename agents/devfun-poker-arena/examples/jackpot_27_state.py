@@ -16,7 +16,14 @@ _hand_hunting: str | None = None
 
 
 def max_attempts() -> int:
-    return int(os.environ.get("JACKPOT_27_MAX_ATTEMPTS", "3"))
+    raw = os.environ.get("JACKPOT_27_MAX_ATTEMPTS", "").strip()
+    if raw:
+        return int(raw)
+    phase = os.environ.get("JACKPOT_27_PHASE", "").strip().lower()
+    aggressive = os.environ.get("JACKPOT_27_AGGRESSIVE", "0").strip().lower()
+    if phase in ("early", "jackpot", "hunt") or aggressive in ("1", "true", "yes", "on"):
+        return 10
+    return 5
 
 
 def reset_session() -> None:

@@ -1,6 +1,7 @@
 """River unbeatable integration — CEMINI_NUTS_DETECT=1 only."""
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
@@ -75,8 +76,9 @@ def test_royal_equivalent_to_nuts_when_enabled():
             bet_range={"min": 20, "max": 900},
         ),
     )
+    os.environ.setdefault("JACKPOT_ROYAL_SHOWDOWN", "1")
     out = decide(table, deadline_s=10.0)
-    assert out["action"] in {"bet", "raise", "check"}
+    assert out["action"] == "check"
     assert "fold" not in out["action"]
 
 

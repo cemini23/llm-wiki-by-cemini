@@ -42,6 +42,7 @@ from s1b_exploit import (  # noqa: E402
     try_trap_aa_kk_vs_3bet,
 )
 from jackpot_27_decide import maybe_hunt_action  # noqa: E402
+from jackpot_rules import royal_showdown_action, royal_showdown_mode  # noqa: E402
 
 try:
     from train_config import threshold as _train_threshold  # noqa: E402
@@ -342,9 +343,11 @@ def decide(
             return True
         return river_unbeatable_flag
 
-    # Made royal — max value for the pot (S1 jackpot claimed; no draw chase).
+    # Made royal — showdown path for S2 jackpot (API: hand unfolded at showdown).
     if street != "Preflop" and _hero_made_royal_flush(hole, board):
-        out = _royal_made_action(table, allowed, available, pot, binding=binding)
+        out = _royal_made_action(
+            table, allowed, available, pot, binding=binding, call_chips=call_chips,
+        )
         if out:
             return _apply_chip_reserve(out, max_playable, table, hc)
 
@@ -1180,7 +1183,9 @@ def _emergency_made_hand_action(
     """Clock-pressure fast path — never fold royal / river nuts."""
     binding = "clock"
     if street != "Preflop" and _hero_made_royal_flush(hole, board):
-        out = _royal_made_action(table, allowed, available, pot, binding=binding)
+        out = _royal_made_action(
+            table, allowed, available, pot, binding=binding, call_chips=call_chips,
+        )
         if out:
             return out
     if (_nuts_detect_enabled() and street == "River" and len(board) == 5
@@ -1569,7 +1574,20 @@ def _royal_made_action(
     pot: int,
     *,
     binding: str,
+    call_chips: int = 0,
 ) -> Optional[dict]:
+    if royal_showdown_mode():
+        out = royal_showdown_action(
+            table,
+            allowed,
+            available,
+            pot,
+            build_fn=_build,
+            binding=binding,
+            call_chips=call_chips,
+        )
+        if out:
+            return out
     return _unbeatable_made_action(
         table, allowed, available, pot, binding=binding, label="royal flush",
     )

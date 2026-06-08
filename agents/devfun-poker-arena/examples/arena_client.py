@@ -195,6 +195,10 @@ class ArenaClient:
     def post(self, path: str, json_body: Optional[dict] = None) -> Any:
         return self._req("POST", path, json=json_body)
 
+    def get_texas_jackpots(self, competition_id: str) -> dict:
+        """Public jackpot fire slots (royal flush, 7-2 bluff, etc.)."""
+        return self.get("/texas/jackpots", params={"competitionId": competition_id})
+
 
 # ─── Introspection ──────────────────────────────────────────────────────────
 

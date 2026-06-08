@@ -12,20 +12,26 @@ dev.fun **Playground S1** → tournament knockout (Jun 2026). One claimed agent:
 
 ## Summary
 
-Qualification is **top 20 agents by chip score** per playground window (**not** top 25%). Two playground stages: **Jun 3–7** and **Jun 7–11** (future seasons announced). Knockout tournament stage advances **top 25** separately.
+Qualification is **top 20 agents by chip score** per **playground season** (**not** top 25%). **Season pairing (Discord 2026-06-08):** Playground **S*N*** top 20 → **free entry** to Tournament **S*N***. Qualifying on Playground S1 does **not** carry to Tournament S2 — each playground season is a fresh bankroll and a separate tournament ticket.
 
-**Update 2026-06-07:** S1a qualification **secured** — **rank #1 @ 138,758 chips**, 2,090 hands (~8.5% WR). **HL R21–R22 deployed** (survival lane + SB QJo fold). Next analyze **≥ 2,101 hands**. S1b window **Jun 7–11** — flip compete/env when operator ready.
+**S1 (closed):** qualification **secured** — **rank #1 @ ~140k chips** at S1 close → **Tournament S1** seat when that bracket opens.
+
+**S2 (active):** fresh 1000-chip runway on `cmq57o53r0bhw18g23qkydb08` — must re-qualify top 20 for **Tournament S2**. Early snapshot 2026-06-08: rank ~51 @ 999 chips (field still forming).
 
 ## Body
 
-### Qualification ladder (dev.fun)
+### Qualification ladder (dev.fun) — paired seasons
 
-| Stage | Window | Advance |
-|-------|--------|---------|
-| Playground S1a | Jun 3–7 | **Top 20** → tournament |
-| Playground S1b | Jun 7–11 | **Top 20** (second chance) |
-| Tournament KO | TBA | Top **25** → next round |
+| Playground season | Competition ID | Advance |
+|-------------------|----------------|---------|
+| **S1** (closed) | `cmpy2qy65002ud9ej6b7jjq0l` | Top **20** → **Tournament S1** (free entry) |
+| **S2** (active) | `cmq57o53r0bhw18g23qkydb08` | Top **20** → **Tournament S2** (free entry) |
+| **Tournament S*N*** KO | TBA per season | Top **25** within that bracket |
 | Researcher / finale | TBA | separate tracks |
+
+**Operator posture (Jun 8):** S1 ticket **in hand**; prod lobby on **S2 playground** until S2 top-20 secured. Swap `ARENA_LOBBY_COMPETITION_ID` only when intentionally changing season target.
+
+**S2 phase plan:** Days 1–2 — `JACKPOT_27_PHASE=early` (more 72o hunt volume; rebuy runway). Stay near qual zone, chase royal/27 slots. Days 3+ — `JACKPOT_27_PHASE=climb` + `AGGRESSIVE=0` to push top-20 rank.
 
 Leaderboard metric: **`totalScore`** (season chips). ~258 agents in field; rank **#20 ≈ 1607 chips** (moving target).
 
@@ -78,8 +84,8 @@ See `LESSONS.md` L6.
 ## Sources
 
 - https://dev.fun/ (playground top 20 / KO top 25)
-- @concepts/poker-hl-analyst-loop.md
-- @entities/bots/cemini-devfun-poker-agent.md
+- `agents/devfun-poker-arena/README-CEMINI.md` — season pairing + qual guards
+- Discord dev.fun team (2026-06-08) — Playground S*N* → Tournament S*N*
 
 ## Implementation status
 

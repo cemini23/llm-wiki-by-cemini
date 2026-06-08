@@ -1,11 +1,13 @@
-"""S2 jackpot satellite — hunt 72o/27o bluff wins ($2,500 trigger).
+"""S2 7-2 offsuit bluff jackpot hunt (API: TwoSevenOffsuitBluff).
 
-Separate from prod `cemini_decide.py`. Default: ultra-passive table presence.
-Only fires bluff lines on gated 27o spots (BTN/CO/SB, fold equity, attempt cap).
+Official rule: win an uncontested pot by folding everyone out while holding
+7-2 offsuit. S2 pool: 10× slots @ 4500 MON (see GET /texas/jackpots).
 
-Run:
+Integrated into qual bot via `maybe_hunt_action()` when JACKPOT_27_HUNT_ENABLED=1.
+Standalone probe loop (`run_jackpot_27_lobby.py`) is deprecated — use main bot.
+
+Run dry-run:
   uv run examples/agent.py --agent examples/jackpot_27_decide.py --dry-run --max-hands 20
-  uv run examples/run_jackpot_27_lobby.py --competition-id <playground-s2>
 """
 from __future__ import annotations
 
@@ -31,11 +33,41 @@ from jackpot_27_state import (  # noqa: E402
 
 _JACKPOT_HANDS = frozenset(
     h.strip()
-    for h in os.environ.get("JACKPOT_27_HANDS", "72o,27o").split(",")
+    for h in os.environ.get("JACKPOT_27_HANDS", "72o").split(",")
     if h.strip()
 )
-_HUNT_POSITIONS = frozenset({"CO", "BTN", "SB"})
+_DEFAULT_POSITIONS = frozenset({"CO", "BTN", "SB"})
 _MIN_STACK_BB = 15
+
+
+def _aggressive_phase() -> bool:
+    """Early S2: more hunt volume while rebuy runway exists (JACKPOT_27_PHASE=early)."""
+    phase = os.environ.get("JACKPOT_27_PHASE", "").strip().lower()
+    if phase in ("early", "jackpot", "hunt"):
+        return True
+    raw = os.environ.get("JACKPOT_27_AGGRESSIVE", "0").strip().lower()
+    return raw in ("1", "true", "yes", "on")
+
+
+def _hunt_positions() -> frozenset[str]:
+    raw = os.environ.get("JACKPOT_27_POSITIONS", "").strip()
+    if raw:
+        return frozenset(p.strip() for p in raw.split(",") if p.strip())
+    if _aggressive_phase():
+        return frozenset({"CO", "BTN", "SB", "BB"})
+    return _DEFAULT_POSITIONS
+
+
+def _max_villains() -> int:
+    if _aggressive_phase():
+        return int(os.environ.get("JACKPOT_27_MAX_VILLAINS", "3"))
+    return 2
+
+
+def _min_stack_bb() -> float:
+    if _aggressive_phase():
+        return float(os.environ.get("JACKPOT_27_MIN_STACK_BB", "12"))
+    return _MIN_STACK_BB
 
 
 def _hunt_enabled() -> bool:
@@ -95,10 +127,19 @@ def _villains_in_pot(table: dict) -> int:
 
 
 def _fold_equity_ok(hud: dict, position: str) -> bool:
+    positions = _hunt_positions()
     mode = (hud.get("mode") or "unknown").lower()
     if mode in ("rock", "passive", "nit"):
         return True
-    if hud.get("coldStart") and position in _HUNT_POSITIONS:
+    if _aggressive_phase():
+        if mode in ("maniac", "lag"):
+            return False
+        if mode in ("tag", "unknown") and position in positions:
+            return True
+        if hud.get("coldStart") and position in positions:
+            return True
+        return position in ("BTN", "SB")
+    if hud.get("coldStart") and position in positions:
         return True
     return False
 
@@ -114,11 +155,11 @@ def _hunt_allowed(
         return False
     if not _is_jackpot_hand(hc):
         return False
-    if position not in _HUNT_POSITIONS:
+    if position not in _hunt_positions():
         return False
-    if _hero_stack_bb(table) < _MIN_STACK_BB:
+    if _hero_stack_bb(table) < _min_stack_bb():
         return False
-    if _villains_in_pot(table) > 2:
+    if _villains_in_pot(table) > _max_villains():
         return False
     if not _fold_equity_ok(hud, position):
         return False

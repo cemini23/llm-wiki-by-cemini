@@ -7,15 +7,21 @@ status: ACTIVE — operator decisions; no official docs yet
 source: Discord (dev.fun team) — [NEEDS VERIFICATION on docs.dev.fun when site stable]
 ---
 
+## Target
+
+Operator — dev.fun Playground / Tournament season strategy (`cemini_wiki_poker`).
+
 ## Summary
 
 Arena site instability explains recent push/deploy friction — **rsync + manual restart** if SSH drops on deploy script; code still lands. **Nuts + R21–R22 live on prod.**
 
 Strategic priority stack:
 
-1. **Qualify** (top-20 playground) — chip survival, no rebuy mindset even in playground.
-2. **Main KO tournament** — largest prize pool; **no rebuy**; early cold-start/HUD recon must not bust the run.
+1. **Qualify** (top-20 **current** playground season) — chip survival, no rebuy mindset even in playground.
+2. **Main KO tournament** (paired season) — Playground S*N* → free entry Tournament S*N*; **no rebuy**; early cold-start/HUD recon must not bust the run.
 3. **Optimize** after qualification secured — field exploits, not playground vanity metrics.
+
+**Season pairing (Discord 2026-06-08, clarified):** Multiple tournament seasons; **Playground S2 → Tournament S2** same logic as S1. S1 playground qual = **Tournament S1** only — does **not** auto-enter S2 tournament. Re-qualify on each new playground season.
 
 Discord also flagged: uncertain multi-agent rules next season, X verification may apply to all entries, **more jackpot types** beyond S2 27o bluff.
 
@@ -131,7 +137,7 @@ X required for all entries?
   no  → probes stay unclaimed until claim gate
 
 Jackpot rules published?
-  yes → P3 jackpot register per @briefs/2026-06-04_s2-jackpot-27-bluff-scope.md
+  yes → P3 jackpot register per `agents/devfun-poker-arena/briefs/2026-06-04_s2-jackpot-27-bluff-scope.md`
   no  → feature-flag hands list; no prod bleed
 ```
 
@@ -154,13 +160,9 @@ Jackpot rules published?
 
 - No Discord quotes as public X content without scrubbing.
 - No prod credential rotation during site outage.
-- Jackpot + multi-agent code stays out of `cemini_decide.py` qualification path.
+- Jackpot hunt on main bot is gated (`maybe_hunt_action`); no parallel probe service.
 
----
+## Sources
 
-## Related
-
-- @briefs/2026-06-05_nuts-detection-spec.md
-- @briefs/2026-06-03_playground-top20-qualification.md
-- @briefs/2026-06-04_s2-jackpot-27-bluff-scope.md
-- @ROADMAP.md W6
+- Discord dev.fun team (2026-06-06, 2026-06-08 season pairing)
+- `agents/devfun-poker-arena/briefs/2026-06-03_playground-top20-qualification.md`

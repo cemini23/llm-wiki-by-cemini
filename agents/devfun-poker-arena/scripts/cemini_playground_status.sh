@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-# Playground S1 qualification snapshot — rank vs top-20 cutoff.
+# Playground qualification snapshot — rank vs top-20 cutoff (paired season → tournament).
 #
 # Usage:
 #   ./scripts/cemini_playground_status.sh
-#   ./scripts/cemini_playground_status.sh --competition cmpy2qy65002ud9ej6b7jjq0l
+#   ./scripts/cemini_playground_status.sh --competition cmq57o53r0bhw18g23qkydb08
 #   CEMINI_AGENT_HANDLE=cemini_wiki_poker ./scripts/cemini_playground_status.sh
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-COMP="${1:-${ARENA_LOBBY_COMPETITION_ID:-cmpy2qy65002ud9ej6b7jjq0l}}"
+COMP="${1:-${ARENA_LOBBY_COMPETITION_ID:-cmq57o53r0bhw18g23qkydb08}}"
 HANDLE="${CEMINI_AGENT_HANDLE:-cemini_wiki_poker}"
 CUTOFF_RANK=20
 
@@ -71,7 +71,7 @@ total = lb.get("total") if isinstance(lb, dict) else None
 print("=" * 60)
 print(f"  Playground qualification — {comp}")
 print(f"  Field size (reported): {total}")
-print(f"  Cutoff: top {cutoff_rank} advance to tournament knockout")
+print(f"  Cutoff: top {cutoff_rank} → free entry to paired Tournament season")
 print("=" * 60)
 
 if cutoff:
@@ -110,8 +110,9 @@ if me:
             break
 
 print("=" * 60)
-print("  Stages (dev.fun): Jun 3–7 + Jun 7–11 playground → top 20 each")
-print("  Knockout tournament → top 25 advance (separate stage)")
+print("  Season pairing (Discord 2026-06-08): Playground SN top 20 → Tournament SN")
+print("  S1 playground qual ≠ S2 tournament — re-qualify each playground season")
+print("  KO bracket: top 25 advance within that tournament season")
 print("=" * 60)
 client.close()
 PY
