@@ -9,10 +9,10 @@ User=root
 Group=root
 WorkingDirectory=/opt/devfun-poker-arena
 Environment=PYTHONUNBUFFERED=1
-Environment=CEMINI_EXPORT_DIR=/opt/devfun-poker-arena/reports/exports/playground-s1-live
+Environment=CEMINI_EXPORT_DIR=/opt/devfun-poker-arena/reports/exports/playground-s2-live
 EnvironmentFile=-/opt/devfun-poker-arena/.env
 # Checkpoint by stable agent_id set (not rank offset). Skip tables — hourly job owns those.
-ExecStart=/opt/devfun-poker-arena/venv/bin/python examples/export_field_crawl.py --out-dir /opt/devfun-poker-arena/reports/exports/playground-s1-live --batch-size 300 --sleep 0.04 --no-tables
+ExecStart=/bin/bash -c '/opt/devfun-poker-arena/venv/bin/python examples/export_field_crawl.py --out-dir ${CEMINI_EXPORT_DIR:-/opt/devfun-poker-arena/reports/exports/playground-s2-live} --batch-size 300 --sleep 0.04 --no-tables'
 UMask=0077
 
 [Install]

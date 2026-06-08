@@ -42,6 +42,21 @@ def _hunt_enabled() -> bool:
     return os.environ.get("JACKPOT_27_HUNT_ENABLED", "0").strip().lower() in ("1", "true", "yes")
 
 
+def _competition_ok(table: dict) -> bool:
+    """When JACKPOT_27_COMPETITION_ONLY=1, hunt only in target playground."""
+    if os.environ.get("JACKPOT_27_COMPETITION_ONLY", "1").strip().lower() in ("0", "false", "no"):
+        return True
+    comp = str(table.get("competitionId") or "")
+    target = (
+        os.environ.get("JACKPOT_27_COMPETITION_ID")
+        or os.environ.get("ARENA_LOBBY_COMPETITION_ID")
+        or ""
+    ).strip()
+    if not target:
+        return True
+    return comp == target
+
+
 def retrieve_solver_context(table: dict) -> dict:
     hud = build_opponent_hud(table) or {}
     return {
@@ -134,6 +149,77 @@ def _skill_reasoning(base: str, tag: str) -> str:
     if len(base) + len(jp) + 2 <= 150:
         return base[:-1] + f", {jp}}}" if base.endswith("}") else f"{{{jp}}}"
     return base[:150]
+
+
+def maybe_hunt_action(
+    table: dict,
+    allowed: dict,
+    available: list[str],
+    hole: list[str],
+    board: list[str],
+    street: str,
+    pot: int,
+    call_chips: int,
+    *,
+    research_context: dict,
+    deadline_s: float = 10.0,
+) -> Optional[dict]:
+    """Return hunt action when gates pass; None → main `cemini_decide` path."""
+    if not _hunt_enabled() or not _competition_ok(table):
+        return None
+    ctx = research_context
+    hud = ctx.get("opponent_hud") or {}
+    hc = _hand_class(hole) or ""
+    position = ctx.get("position") or hero_position_label(table)
+    pot_odds = call_chips / max(pot + call_chips, 1) if call_chips else 0.0
+
+    if _is_jackpot_hand(hc):
+        log_dealt(table, hole, hand_class=hc, position=position)
+
+    if not _hunt_allowed(table, hole, hc, position, hud):
+        return None
+
+    tag = f"hunt|{hc}@{position}|{hud.get('mode') or 'cold'}"
+    bb = int(table.get("bigBlindChips") or 20)
+    if street == "Preflop":
+        facing_aggression = call_chips > bb
+    else:
+        facing_aggression = call_chips > 0
+
+    if facing_aggression:
+        log_action(table, action="fold", phase="abort_vs_bet", notes=tag)
+        out = _build("fold", None, table, allowed, eq=0.05, po=pot_odds,
+                     msg=f"jp: abort vs bet — {hc}")
+        out["reasoning"] = _skill_reasoning(out.get("reasoning", ""), tag)
+        return out
+
+    if street == "Preflop" and allowed.get("canBet") and "bet" in available:
+        br = allowed.get("betRange") or {}
+        min_bet = int(br.get("min") or max(int(pot * 0.5), 1))
+        max_bet = int(br.get("max") or min_bet)
+        target = max(min_bet, min(int(pot * 0.75), max_bet))
+        log_action(table, action="bet", phase="preflop_open", notes=tag)
+        out = _build("bet", target, table, allowed, eq=0.35, po=0.0,
+                     msg=f"jp: preflop steal — {hc}@{position}")
+        out["reasoning"] = _skill_reasoning(out.get("reasoning", ""), tag)
+        return out
+
+    if allowed.get("canBet") and "bet" in available:
+        br = allowed.get("betRange") or {}
+        min_bet = int(br.get("min") or max(int(pot * 0.33), 1))
+        max_bet = int(br.get("max") or min_bet)
+        frac = 0.45 if len(board) >= 4 else 0.38
+        target = max(min_bet, min(int(pot * frac), max_bet))
+        phase = "turn_barrel" if len(board) >= 4 else "flop_cbet"
+        log_action(table, action="bet", phase=phase, notes=tag)
+        out = _build("bet", target, table, allowed, eq=0.22, po=0.0,
+                     msg=f"jp: {phase} — {hc}")
+        out["reasoning"] = _skill_reasoning(out.get("reasoning", ""), tag)
+        return out
+
+    out = _passive(table, allowed, available, binding="jp_giveup")
+    out["reasoning"] = _skill_reasoning(out.get("reasoning", ""), f"giveup|{hc}")
+    return out
 
 
 def decide(

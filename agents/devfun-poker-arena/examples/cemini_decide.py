@@ -41,6 +41,7 @@ from s1b_exploit import (  # noqa: E402
     try_three_bet_lag_vs_open,
     try_trap_aa_kk_vs_3bet,
 )
+from jackpot_27_decide import maybe_hunt_action  # noqa: E402
 
 try:
     from train_config import threshold as _train_threshold  # noqa: E402
@@ -207,6 +208,20 @@ def decide(
     position = chart.get("position") or ctx.get("position") or hero_position_label(table)
     hc = _hand_class(hole) or chart.get("hand_class") or ""
     hud = ctx.get("opponent_hud") or {}
+    jp_out = maybe_hunt_action(
+        table,
+        allowed,
+        available,
+        hole,
+        board,
+        street,
+        pot,
+        call_chips,
+        research_context=ctx,
+        deadline_s=deadline_s,
+    )
+    if jp_out is not None:
+        return jp_out
     hud_mode = hud.get("mode") or "unknown"
     qual_protect = bool(ctx.get("qualification_protect"))
     lead_protect = bool(ctx.get("lead_protect"))

@@ -9,6 +9,7 @@ Type=simple
 WorkingDirectory=/opt/devfun-poker-arena
 Environment=PYTHONUNBUFFERED=1
 Environment=ARENA_CREDENTIALS_FILE=.arena-credentials.jackpot-probe
+Environment=JACKPOT_27_JOIN_ENABLED=0
 Environment=JACKPOT_27_HUNT_ENABLED=0
 Environment=JACKPOT_27_MAX_ATTEMPTS=3
 Environment=JACKPOT_27_COMPETITION_ID=

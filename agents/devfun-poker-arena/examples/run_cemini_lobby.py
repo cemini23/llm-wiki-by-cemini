@@ -41,6 +41,7 @@ from arena_client import (  # noqa: E402
     save_state,
 )
 from output_sanitize import maybe_sanitize_action  # noqa: E402
+from playground_timeseries import append_playground_snapshot  # noqa: E402
 
 POLL_INTERVAL = 2.0
 POLL_JITTER = 0.5
@@ -456,6 +457,17 @@ def run_lobby(args: argparse.Namespace) -> int:
                     )
             except Exception as exc:
                 print(f"[cemini-lobby] qual status skip: {exc}", file=sys.stderr)
+            else:
+                try:
+                    append_playground_snapshot(
+                        client,
+                        agent_id=str(creds.get("agentId") or ""),
+                        competition_id=competition_id,
+                        qual_status=qual_status,
+                        hands_played=int(state.get("hands_played") or 0),
+                    )
+                except Exception as ts_exc:
+                    print(f"[cemini-lobby] timeseries skip: {ts_exc}", file=sys.stderr)
 
         refresh_qualification(force=True)
 
