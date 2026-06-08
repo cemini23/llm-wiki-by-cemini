@@ -6,7 +6,7 @@ from __future__ import annotations
 
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Optional
 
@@ -27,12 +27,104 @@ STYLE_OVERRIDES_PATH = Path(
     os.environ.get("CEMINI_STYLE_OVERRIDES_PATH", str(_HL_DIR / "style_overrides.json"))
 )
 AUTO_ANALYST_STATE_PATH = _HL_DIR / "auto_analyst_state.json"
+DEPLOY_GRACE_PATH = Path(
+    os.environ.get("CEMINI_DEPLOY_GRACE_PATH", str(_HL_DIR / "deploy_grace.json"))
+)
 
 MAX_RUNTIME_GUARDS = int(os.environ.get("CEMINI_HL_MAX_GUARDS", "25"))
+DEFAULT_DEPLOY_GRACE_HOURS = float(os.environ.get("CEMINI_HL_DEPLOY_GRACE_HOURS", "6"))
 
 
 def _utc_now() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def _parse_utc(ts: str) -> datetime | None:
+    if not ts:
+        return None
+    try:
+        return datetime.fromisoformat(ts.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def _deploy_grace_hours() -> float:
+    raw = os.environ.get("CEMINI_HL_DEPLOY_GRACE_HOURS", "").strip()
+    if not raw:
+        return DEFAULT_DEPLOY_GRACE_HOURS
+    try:
+        return max(0.0, float(raw))
+    except ValueError:
+        return DEFAULT_DEPLOY_GRACE_HOURS
+
+
+def load_deploy_grace() -> dict:
+    data = _read_json(DEPLOY_GRACE_PATH, {})
+    return data if isinstance(data, dict) else {}
+
+
+def record_deploy_grace(
+    *,
+    commit: str = "",
+    round_num: int | None = None,
+    hands: int | None = None,
+    source: str = "deploy",
+    grace_hours: float | None = None,
+) -> dict:
+    """Mark a code deploy — auto-analyst will not re-kill during grace window."""
+    hours = _deploy_grace_hours() if grace_hours is None else max(0.0, grace_hours)
+    deployed_at = datetime.now(timezone.utc)
+    expires_at = deployed_at + timedelta(hours=hours)
+    payload = {
+        "deployed_at": deployed_at.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "expires_at": expires_at.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "grace_hours": hours,
+        "commit": (commit or "unknown").strip() or "unknown",
+        "source": source,
+    }
+    if round_num is not None:
+        payload["round"] = int(round_num)
+    if hands is not None:
+        payload["hands"] = int(hands)
+    _write_json(DEPLOY_GRACE_PATH, payload)
+    return payload
+
+
+def deploy_grace_status() -> dict:
+    """Current deploy grace window, if any."""
+    data = load_deploy_grace()
+    if not data:
+        return {"active": False}
+    expires = _parse_utc(str(data.get("expires_at") or ""))
+    if expires is None:
+        return {"active": False, **data}
+    now = datetime.now(timezone.utc)
+    remaining_s = max(0.0, (expires - now).total_seconds())
+    active = remaining_s > 0
+    return {
+        "active": active,
+        "remaining_hours": round(remaining_s / 3600.0, 2),
+        **data,
+    }
+
+
+def is_deploy_grace_active() -> bool:
+    return bool(deploy_grace_status().get("active"))
+
+
+def kill_switch_suppressed_by_deploy_grace() -> tuple[bool, str]:
+    """True when auto-analyst must not activate kill switch (post-deploy soak)."""
+    status = deploy_grace_status()
+    if not status.get("active"):
+        return False, ""
+    commit = status.get("commit") or "unknown"
+    expires = status.get("expires_at") or "?"
+    remaining = status.get("remaining_hours")
+    rem = f", {remaining}h left" if remaining is not None else ""
+    return True, (
+        f"deploy grace until {expires} (commit {commit}{rem}) — "
+        "analyze may reflect pre-patch hands"
+    )
 
 
 def _read_json(path: Path, default: Any) -> Any:

@@ -6,12 +6,16 @@ from pathlib import Path
 import pytest
 
 from examples.cemini_decide import decide
+from examples.cemini_hl_auto_analyst import apply_response
 from examples.hl_runtime_config import (
     activate_kill_switch,
     clear_kill_switch,
+    deploy_grace_status,
+    is_deploy_grace_active,
     is_kill_switch_active,
     match_runtime_guard,
     merge_runtime_guards,
+    record_deploy_grace,
 )
 from examples.testing import _allowed, _table
 
@@ -79,3 +83,32 @@ def test_heuristic_catastrophe():
         "losses": 90,
     })
     assert trip is True
+
+
+def test_deploy_grace_active(tmp_path: Path, monkeypatch):
+    grace = tmp_path / "deploy_grace.json"
+    monkeypatch.setenv("CEMINI_DEPLOY_GRACE_PATH", str(grace))
+    monkeypatch.setenv("CEMINI_HL_DEPLOY_GRACE_HOURS", "6")
+    record_deploy_grace(commit="abc1234", round_num=3, hands=114, source="pytest")
+    assert is_deploy_grace_active()
+    status = deploy_grace_status()
+    assert status["commit"] == "abc1234"
+    assert status["remaining_hours"] > 0
+
+
+def test_apply_response_suppresses_kill_during_grace(tmp_path: Path, monkeypatch):
+    grace = tmp_path / "deploy_grace.json"
+    ks = tmp_path / "kill.json"
+    monkeypatch.setenv("CEMINI_DEPLOY_GRACE_PATH", str(grace))
+    monkeypatch.setenv("CEMINI_KILL_SWITCH_PATH", str(ks))
+    record_deploy_grace(commit="deadbeef", source="pytest")
+    out = apply_response({
+        "severity": "catastrophic",
+        "kill_switch": True,
+        "kill_reason": "test bleed",
+        "runtime_guards": [],
+        "style_tweaks": {},
+    })
+    assert "suppressed_kill_switch" in out["actions_taken"]
+    assert not is_kill_switch_active()
+    assert out.get("kill_switch_suppressed") is True

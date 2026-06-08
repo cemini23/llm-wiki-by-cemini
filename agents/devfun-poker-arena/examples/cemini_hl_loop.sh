@@ -145,6 +145,15 @@ state = {
 if phase in ("deployed", "preflight"):
     state["last_deploy_hands"] = int(hands)
     state["last_deploy_round"] = int(round_num)
+if phase == "deployed":
+    sys.path.insert(0, str(Path(agent_dir) / "examples"))
+    from hl_runtime_config import record_deploy_grace
+    record_deploy_grace(
+        commit=sha,
+        round_num=int(round_num),
+        hands=int(hands),
+        source="hl_loop",
+    )
 state_path.write_text(json.dumps(state, indent=2) + "\n")
 PY
 }

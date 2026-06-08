@@ -29,8 +29,11 @@ from hl_runtime_config import (  # noqa: E402
     activate_kill_switch,
     apply_style_overrides,
     clear_kill_switch,
+    deploy_grace_status,
+    is_deploy_grace_active,
     is_kill_switch_active,
     kill_switch_status,
+    kill_switch_suppressed_by_deploy_grace,
     load_runtime_guards,
     load_style_overrides,
     merge_runtime_guards,
@@ -85,6 +88,8 @@ Rules:
 - Max 3 runtime_guards per response; smallest targeted guards only.
 - style_tweaks deltas are small (0.0-0.08); join_retry_multiplier 1.0-3.0 only when chip bleed from table intake.
 - severity catastrophic => kill_switch must be true.
+- If deploy grace is active (recent code deploy), set kill_switch=false and note in operator_note;
+  metrics may still reflect pre-patch hands.
 """
 
 
@@ -129,6 +134,7 @@ def _build_user_prompt(
     guards = load_runtime_guards()
     style = load_style_overrides()
     ks = kill_switch_status()
+    grace = deploy_grace_status()
     wiki_block = ""
     if wiki_briefing.strip():
         wiki_block = f"""
@@ -151,6 +157,9 @@ Use for HL discipline (survival vs exploit, guard patterns). Do not contradict f
 
 ## Kill switch state
 {json.dumps(ks, indent=2)}
+
+## Deploy grace (post-patch soak — do not kill_switch while active)
+{json.dumps(grace, indent=2)}
 
 ## Active runtime guards ({len(guards)})
 {json.dumps(guards[:10], indent=2)}
@@ -210,13 +219,23 @@ def apply_response(data: dict[str, Any], *, dry_run: bool = False) -> dict[str, 
 
     if data.get("kill_switch"):
         reason = (data.get("kill_reason") or data.get("patch_summary") or "catastrophic leak").strip()
-        if not dry_run:
+        suppressed, grace_note = kill_switch_suppressed_by_deploy_grace()
+        if suppressed:
+            data["kill_switch_suppressed"] = True
+            data["kill_switch_suppressed_reason"] = grace_note
+            data["operator_note"] = (
+                f"{data.get('operator_note') or ''} [kill suppressed: {grace_note}]"
+            ).strip()
+            actions.append("suppressed_kill_switch")
+        elif not dry_run:
             activate_kill_switch(
                 reason=reason,
                 severity=str(data.get("severity") or "catastrophic"),
                 source="hl_auto_analyst",
             )
-        actions.append("activated_kill_switch")
+            actions.append("activated_kill_switch")
+        else:
+            actions.append("activated_kill_switch")
 
     guards = data.get("runtime_guards") or []
     if guards and os.environ.get("CEMINI_HL_AUTO_APPLY", "1").strip().lower() not in ("0", "false", "no"):
@@ -245,19 +264,23 @@ def run_auto_analyst(
     if metrics and os.environ.get("CEMINI_HL_HEURISTIC_KILL", "1").strip().lower() not in ("0", "false"):
         trip, reason = _heuristic_catastrophe(metrics)
         if trip:
-            if not dry_run:
-                activate_kill_switch(reason=reason, severity="catastrophic", source="hl_heuristic")
-            return {
-                "severity": "catastrophic",
-                "kill_switch": True,
-                "kill_reason": reason,
-                "runtime_guards": [],
-                "style_tweaks": {},
-                "patch_summary": "heuristic kill switch",
-                "operator_note": reason,
-                "actions_taken": ["activated_kill_switch"],
-                "_source": "heuristic",
-            }
+            suppressed, grace_note = kill_switch_suppressed_by_deploy_grace()
+            if suppressed:
+                print(f"[hl-auto-analyst] heuristic kill suppressed: {grace_note}")
+            else:
+                if not dry_run:
+                    activate_kill_switch(reason=reason, severity="catastrophic", source="hl_heuristic")
+                return {
+                    "severity": "catastrophic",
+                    "kill_switch": True,
+                    "kill_reason": reason,
+                    "runtime_guards": [],
+                    "style_tweaks": {},
+                    "patch_summary": "heuristic kill switch",
+                    "operator_note": reason,
+                    "actions_taken": ["activated_kill_switch"],
+                    "_source": "heuristic",
+                }
 
     wiki_meta = fetch_gambling_wiki_briefing(
         report_text=report_text,
@@ -340,9 +363,14 @@ def maybe_run_after_analyze(
     from datetime import datetime, timezone
     result["updated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     _write_artifacts(result)
+    grace_tag = ""
+    if result.get("kill_switch_suppressed"):
+        grace_tag = f" grace_suppressed={result.get('kill_switch_suppressed_reason', '')[:80]}"
+    elif is_deploy_grace_active():
+        grace_tag = " deploy_grace=active"
     print(
         f"[hl-auto-analyst] severity={result.get('severity')} "
-        f"kill={result.get('kill_switch')} actions={result.get('actions_taken')}"
+        f"kill={result.get('kill_switch')} actions={result.get('actions_taken')}{grace_tag}"
     )
     return result
 

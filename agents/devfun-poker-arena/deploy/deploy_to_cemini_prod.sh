@@ -113,6 +113,7 @@ install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-export-crawl.timer" \
   /etc/systemd/system/cemini-devfun-poker-export-crawl.timer
 
 mkdir -p "${REMOTE_DIR}/reports/analyze"
+mkdir -p "${REMOTE_DIR}/reports/hl-loop"
 mkdir -p "${REMOTE_DIR}/reports/exports/playground-s1-live"
 
 systemctl daemon-reload
@@ -132,6 +133,21 @@ systemctl --no-pager status cemini-devfun-poker-lobby.service || true
 systemctl --no-pager status cemini-devfun-poker-monitor.timer || true
 systemctl --no-pager status cemini-devfun-poker-export.timer || true
 systemctl --no-pager status cemini-devfun-poker-export-crawl.timer || true
+REMOTE
+
+DEPLOY_COMMIT="$(git -C "${AGENT_DIR}" rev-parse --short HEAD 2>/dev/null || echo unknown)"
+echo "==> Record deploy grace on prod (auto-analyst kill suppress, default 6h)"
+ssh -q "${HOST}" bash -s <<REMOTE
+set -euo pipefail
+cd "${REMOTE_DIR}"
+export CEMINI_HL_DEPLOY_GRACE_HOURS="\${CEMINI_HL_DEPLOY_GRACE_HOURS:-6}"
+./venv/bin/python -c "
+import sys
+sys.path.insert(0, 'examples')
+from hl_runtime_config import record_deploy_grace
+g = record_deploy_grace(commit='${DEPLOY_COMMIT}', source='deploy')
+print('deploy_grace OK until', g.get('expires_at'), 'commit', g.get('commit'))
+"
 REMOTE
 
 echo ""

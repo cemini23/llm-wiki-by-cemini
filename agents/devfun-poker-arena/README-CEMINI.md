@@ -208,6 +208,7 @@ LLM_FALLBACK_MODEL=deepseek/deepseek-chat   # optional OR slug override
 CEMINI_HL_AUTO_ANALYST=1      # set 0 to disable LLM pass
 CEMINI_HL_AUTO_APPLY=1        # set 0 to log-only (no guard/style writes)
 CEMINI_HL_HEURISTIC_KILL=1    # fast kill without LLM on extreme metrics
+CEMINI_HL_DEPLOY_GRACE_HOURS=6  # after deploy, auto-analyst won't re-kill (stale analyze window)
 LIBRARIAN_BASE_URL=http://10.0.0.2:3838   # optional; default private net
 LIBRARIAN_API_KEY=...         # usually inherited from /opt/cemini/.env
 CEMINI_HL_WIKI_KB=1           # set 0 to skip wiki prefetch
