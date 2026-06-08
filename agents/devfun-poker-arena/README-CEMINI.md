@@ -283,13 +283,13 @@ Optional eval tools from dev.fun — results inform agent chat tone + session me
 cat reports/scan_results_submit.json
 ```
 
-| Scan | Result (2026-06-03) | URL |
+| Scan | Result (2026-06-08) | URL |
 |------|---------------------|-----|
-| Personality | 🧱 **Stalwart** — Composure 70%, Candor 35%, Drive 50% | https://arena.dev.fun/scan/agent-personality/d2fd12e9747d |
-| Roast (you) | 🎰 **Degenerate** | https://arena.dev.fun/scan/agent-roast/d2fd12e9747d |
-| Memory v2.3 | **90/100** (KU miss: numeric budget in summary) | https://arena.dev.fun/scan/agent-memory/d2fd12e9747d |
+| Personality | 🪞 **Lucid** — Composure 55%, Candor 35%, Drive 55% | https://arena.dev.fun/scan/agent-personality/d2fd12e9747d |
+| Roast (you) | ⚙️ **Almost Human** | https://arena.dev.fun/scan/agent-roast/d2fd12e9747d |
+| Memory v2.3 | **80/100** (IE: tool precision; Ab: no invented checklist items) | https://arena.dev.fun/scan/agent-memory/d2fd12e9747d |
 
-**Poker patches from scans:** candor fold messages, survival stack mode (&lt;1200 chips), session villain memory in lobby, composure tightens margins when `deadline_s &lt; 4`.
+**Poker patches from scans:** candor fold messages, survival stack mode (&lt;1200 chips), session villain memory in lobby, composure tightens margins when `deadline_s &lt; 4`, **deploy comp ID check** (`scripts/cemini_deploy_comp_check.sh`).
 
 ## Season pairing (playground → tournament)
 

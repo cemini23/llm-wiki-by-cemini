@@ -1,7 +1,7 @@
 """Offline tests inspired by dev.fun Agent Scan suite (personality / memory).
 
 These do not call the Arena scan API — they lock in poker behaviors we derived
-from scan results (Stalwart: low candor → honest folds; memory KU → preserve nums).
+from scan results (Lucid: lower composure → deadline tightens; low candor → honest folds).
 """
 from __future__ import annotations
 
@@ -19,7 +19,11 @@ BASELINE = json.loads(FIXTURES.read_text())
 def test_scan_baseline_fixture_loaded():
     assert BASELINE["version"] == "v2.3"
     assert "personality_baseline" in BASELINE
-    assert len(BASELINE["personality_baseline"]["poker_patches"]) >= 4
+    pb = BASELINE["personality_baseline"]
+    assert pb["typeKey"] == "lucid"
+    assert pb["dimensions"]["composure_min"] == 0.55
+    assert len(pb["poker_patches"]) >= 5
+    assert "deploy_comp_id_check" in pb["poker_patches"]
 
 
 def test_candor_honest_fold_message_when_beat():
@@ -86,7 +90,7 @@ def test_qualification_protect_activates_survival_margins():
 
 
 def test_composure_tightens_under_deadline():
-    """Composure 70% → short clock, no hero call with weak equity."""
+    """Composure 55% (Lucid) → short clock, no hero call with weak equity."""
     table = ep_oop_postflop_weak(
         ["9c", "8d"],
         ["Ah", "Kc", "7s"],
@@ -129,8 +133,16 @@ def test_session_memory_abstains_low_confidence():
     assert exploit_from_memory(mem) == {}
 
 
+def test_memory_ab_fixture_lists_forbidden_inventions():
+    """Memory q10 — launch checklists must not invent details outside allowed bullets."""
+    ab = BASELINE["memory_ab_sample"]
+    checklist = "\n".join(f"- {b}" for b in ab["allowed_bullets"])
+    for bad in ab["forbidden_invented"]:
+        assert bad.lower() not in checklist.lower()
+
+
 def test_drive_richer_message_when_time_allows():
-    """Drive 50% → when deadline comfortable, session tags appear if memory present."""
+    """Drive 55% → when deadline comfortable, session tags appear if memory present."""
     table = six_max_table(
         name="btn_ip_check",
         hero_seat=1,

@@ -1,22 +1,40 @@
 {
   "version": "v2.3",
+  "scanned_at": "2026-06-08",
+  "scan_urls": {
+    "personality": "https://arena.dev.fun/scan/agent-personality/d2fd12e9747d",
+    "roast": "https://arena.dev.fun/scan/agent-roast/d2fd12e9747d",
+    "memory": "https://arena.dev.fun/scan/agent-memory/d2fd12e9747d"
+  },
   "personality_baseline": {
-    "typeKey": "stalwart",
+    "typeKey": "lucid",
+    "typeName": "Lucid",
+    "tagline": "Strong prior before constraints land — verify comp/state before act.",
     "dimensions": {
-      "composure_min": 0.65,
+      "composure_min": 0.55,
       "candor_target": 0.35,
-      "drive_min": 0.45
+      "drive_min": 0.55
     },
     "poker_patches": [
       "candor_fold_messages",
       "survival_stack_lt_1200",
       "composure_deadline_lt_4",
-      "session_villain_memory"
+      "session_villain_memory",
+      "deploy_comp_id_check"
     ]
   },
   "memory_ku_sample": {
     "context": "Prior memory: OpenAI API budget $200/month. Recent updates: cut API budget to $50/month.",
     "required_numeric": "50",
     "bad_pattern": "/mo API cap"
+  },
+  "memory_ab_sample": {
+    "allowed_bullets": [
+      "Verify local-first inference staging.",
+      "Ship Agent Scan inside dev.fun.",
+      "Run skill-recall benchmark next.",
+      "Target audience: Hermes power users + Chinese AI creators."
+    ],
+    "forbidden_invented": ["scan cards", "venue", "launch date"]
   }
 }

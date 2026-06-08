@@ -42,6 +42,9 @@ if [[ ! -f "${AGENT_DIR}/private/opponent_hud_exploit.py" ]]; then
   echo "WARN: ${AGENT_DIR}/private/opponent_hud_exploit.py missing — prod HUD exploits disabled." >&2
 fi
 
+echo "==> Competition ID guard (prod .env vs expected)"
+"${SCRIPT_DIR}/../scripts/cemini_deploy_comp_check.sh"
+
 echo "==> Rsync agent tree (exclude venv/creds/state)"
 rsync -avz --delete \
   --exclude '.venv/' \
