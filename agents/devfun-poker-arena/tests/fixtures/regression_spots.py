@@ -84,6 +84,8 @@ _COLD_START_CTX = {
 
 _NEMESIS_CTX = {"nemesis_handles": ["hunterguy102", "thaddius"]}
 
+_FIRST_PROTECT_CTX = {"first_protect": True, "qualification_protect": True}
+
 
 def regression_spots() -> list[RegressionSpot]:
     return [
@@ -572,5 +574,32 @@ def nuts_regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="OOP weak kicker top pair on three-flush — fold (MC overcalls).",
+        ),
+        RegressionSpot(
+            id="prod_qjs_mp_open_r25",
+            source="HL R25 analyze #01 — QJs EP open/call bleed",
+            table=mp_unopened(["Qd", "Jd"]),
+            context=_FIRST_PROTECT_CTX,
+            forbidden=frozenset({"bet", "raise", "all-in", "call"}),
+            required=frozenset({"fold"}),
+            notes="first_protect: no MP suited-broadway opens.",
+        ),
+        RegressionSpot(
+            id="prod_qjs_utg_vs_raise_r25",
+            source="HL R25 analyze #01 — Jd Qd UTG −100 preflop",
+            table=utg_facing_raise(["Jd", "Qd"]),
+            context=_FIRST_PROTECT_CTX,
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="first_protect: fold EP suited broadway vs raise.",
+        ),
+        RegressionSpot(
+            id="prod_kqs_utg_open_r25",
+            source="HL R25 analyze #12 — Qh Kh UTG −100 preflop",
+            table=utg_unopened(["Kh", "Qh"]),
+            context=_FIRST_PROTECT_CTX,
+            forbidden=frozenset({"bet", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="first_protect: no KQs UTG open.",
         ),
     ]

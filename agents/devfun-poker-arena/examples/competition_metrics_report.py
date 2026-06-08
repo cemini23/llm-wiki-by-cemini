@@ -21,7 +21,7 @@ if str(_EXAMPLES) not in sys.path:
     sys.path.insert(0, str(_EXAMPLES))
 
 from competition_field_report import _dedupe_agents, _load_jsonl  # noqa: E402
-from export_bundle import crawl_progress, load_export_agents, load_export_submissions  # noqa: E402
+from export_bundle import crawl_progress, load_export_agents_with_bb100, load_export_submissions  # noqa: E402
 
 
 def _participant_bb100(
@@ -60,7 +60,7 @@ def main(argv: list[str] | None = None) -> int:
     args = p.parse_args(argv)
 
     export_dir = args.export_dir
-    agents = load_export_agents(export_dir)
+    agents = load_export_agents_with_bb100(export_dir)
     submissions = load_export_submissions(export_dir)
 
     hero_row = next((a for a in agents if a.get("handle") == args.hero), None)
@@ -91,6 +91,21 @@ def main(argv: list[str] | None = None) -> int:
 
     crawl = crawl_progress(export_dir)
 
+    hero_adj = hero_row.get("adjusted_bb100")
+    agents_with_bb = [a for a in agents if a.get("adjusted_bb100") is not None]
+    ev_rank = None
+    chip_rank = hero_row.get("rank")
+    if hero_adj is not None and agents_with_bb:
+        by_ev = sorted(
+            agents_with_bb,
+            key=lambda a: float(a.get("adjusted_bb100") or 0),
+            reverse=True,
+        )
+        for i, a in enumerate(by_ev, start=1):
+            if a.get("handle") == args.hero:
+                ev_rank = i
+                break
+
     report = {
         "export_dir": str(export_dir),
         "hero": args.hero,
@@ -101,6 +116,12 @@ def main(argv: list[str] | None = None) -> int:
         "pfr": stats.get("pfr"),
         "three_bet_pct": stats.get("three_bet_pct"),
         "playing_style": stats.get("playing_style"),
+        "adjusted_bb100": hero_adj,
+        "ev_rank_among_export": ev_rank,
+        "chip_rank": chip_rank,
+        "chip_vs_ev_rank_delta": (
+            (chip_rank - ev_rank) if chip_rank and ev_rank else None
+        ),
         "chip_accumulation_proxy": chip_proxy,
         "hero_submissions": hero_sub,
         "field_top20_avg_vpip": round(mean(vpip_nums), 4) if vpip_nums else None,
@@ -110,19 +131,34 @@ def main(argv: list[str] | None = None) -> int:
         "submission_rows": len(submissions),
         "crawl_progress": crawl,
         "v2_v3_readiness": {
-            "playground_rank_metric": "totalChips (not adjustedBbPer100)",
-            "adjusted_bb100_visible": False,
+            "playground_rank_metric": (
+                "totalChips (qualification) + adjustedBbPer100 (UI test column, ephemeral S1a)"
+                if hero_adj is not None
+                else "totalChips; bb/100 from UI snapshot if bb100_ui_snapshot.json present"
+            ),
+            "adjusted_bb100_visible": hero_adj is not None,
+            "adjusted_bb100_source": hero_row.get("adjusted_bb100_source", "api_or_snapshot"),
+            "ui_snapshot_note": (
+                "S1a column was brief UI test — not sortable, removed same session. "
+                "See tests/fixtures/bb100_ui_snapshot_s1a_2026-06-08.json"
+                if (export_dir / "bb100_ui_snapshot.json").is_file()
+                or hero_row.get("adjusted_bb100_source") == "ui_snapshot"
+                else None
+            ),
             "street_actions_in_export": False,
             "replay_chip_delta_cap": 50,
             "risk": (
-                "Chip #1 with 10% VPIP may underperform when scoring switches to "
+                "Chip #1 may trail EV leaders on adjusted bb/100 — "
+                "0xJeff_ai-style LAGs can rank higher on EV with fewer chips"
+                if hero_adj is not None
+                else "Chip #1 with 10% VPIP may underperform when scoring switches to "
                 "all-in EV / AIVAT — need replay-backed leak audit + eval-style self-play"
             ),
             "mitigations": [
-                "Tier-1 hourly: recent-tables + top-200 submissions (live)",
-                "Tier-2 nightly: full-field stats + batched submissions-all crawl",
-                "Tier-3 selective: replay URLs for HL worst-15 table IDs only",
-                "Track participant totalChips/hands as chip proxy; do not confuse with EV bb/100",
+                "Refresh agents.jsonl export to capture leaderboard adjusted_bb100",
+                "Tier-2 crawl: full-field stats + submissions-all",
+                "Gap audit: compare chip rank vs adjusted bb/100 rank side-by-side",
+                "HL patches for structural leaks; do not widen for vanity EV",
             ],
         },
     }
@@ -137,6 +173,10 @@ def main(argv: list[str] | None = None) -> int:
         f"  Chip proxy bb/100: {chip_proxy['bb100_chip_proxy']:.1f} "
         f"(net {chip_proxy['net_chips']:,} chips — NOT all-in EV)"
     )
+    if hero_adj is not None:
+        print(f"  Adjusted bb/100 (leaderboard): {hero_adj:+.1f}")
+        if ev_rank and chip_rank:
+            print(f"  Chip rank #{chip_rank} vs EV rank #{ev_rank} among export")
     print(
         f"  Pot win rate (submissions): {hero_sub['win_rate_pot']:.1%} "
         f"({hero_sub['pot_wins']}/{hero_sub['submission_rows']} rows)"

@@ -35,8 +35,22 @@ Update export service paths to `playground-s1b-live` before enabling timers.
 | Hero replays (50 cap) | HL worst-15 queue | daily HL queue | **priority** — chipDelta for EV |
 | `competition_metrics_report` | chip proxy only | chip proxy | **track adjustedBbPer100** |
 | Participant status polling | rank/chips/hands | same | + eval fields if present |
+| **UI bb/100 snapshot** | ✅ S1a screenshots | screen record if column returns | merge via `import_bb100_snapshot.py` |
 
----
+### Ephemeral UI column (S1a lesson)
+
+dev.fun **briefly** showed **Adjusted BB/100** on the leaderboard — **not sortable**, removed same session, **no API field**. Canonical log:
+
+- `tests/fixtures/bb100_ui_snapshot_s1a_2026-06-08.json`
+- `briefs/2026-06-08_s1a-adjusted-bb100-ui-snapshot.md`
+
+When you see the column again:
+
+1. **Screen record** while scrolling (sort may stay broken)
+2. Transcribe visible rows into JSON (`schema: devfun.bb100_ui_snapshot.v1`)
+3. `uv run python examples/import_bb100_snapshot.py --snapshot path.json --export-dir reports/exports/<comp>/ --install --metrics`
+4. `detect_scoring_mode.py --export-dir …` will report `ui_snapshot_only` until API catches up
+
 
 ## Timers (research, not live ops)
 
@@ -78,6 +92,9 @@ reports/exports/playground-s1b-live/
   crawl_state.json
   metrics_report.json
   scoring_mode.json
+  bb100_ui_snapshot.json       # manual UI capture when API lacks field
+  agents_bb100_enriched.jsonl  # export agents merged with snapshot
+  bb100_snapshot_meta.json
 reports/gap-audit/pack/      # audit inputs (generated)
 reports/gap-audit/premium/   # 3-model outputs
 ```

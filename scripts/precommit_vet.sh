@@ -12,7 +12,7 @@ for f in "$@"; do
     */SKILL.md|*.cursor/skills/*/SKILL.md)
       vet "$f" --profile skillmd --strict
       ;;
-    briefs/*)
+    briefs/*|*/briefs/*.md)
       vet "$f" --profile brief --strict --root .
       ;;
     *)

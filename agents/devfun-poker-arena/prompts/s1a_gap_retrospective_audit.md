@@ -24,11 +24,12 @@ Answer: **Is our #1 chip rank skill or luck under the wrong metric?** What **str
 | Available | Missing |
 |-----------|---------|
 | Full/partial field `submissions-all` (hole, board, pot won ≥0) | Street-by-street actions |
-| `/texas/agent-stats` VPIP/PFR/style for crawled agents | `adjustedBbPer100` on S1a playground |
+| `/texas/agent-stats` VPIP/PFR/style for crawled agents | `adjustedBbPer100` on playground **API** (S1a) |
 | Hero HL analyze worst hands | Bulk replay for all rivals (cap 50 recent) |
 | Chip rank + participant totals | Chip delta per submission row |
+| **UI snapshot bb/100** (`bb100_ui_snapshot.json`) when column briefly visible | Sortable bb/100 in UI (was not sortable; column removed) |
 
-`payout_chips` = pot won, **not** chip delta. Do not claim true bb/100 from submissions alone.
+`payout_chips` = pot won, **not** chip delta. Do not claim true bb/100 from submissions alone. When `bb100_snapshot` is present, use it for **EV rank vs chip rank** — not for per-hand EV proof.
 
 ---
 
@@ -80,6 +81,14 @@ Answer: **Is our #1 chip rank skill or luck under the wrong metric?** What **str
 
 ```
 {hl_analyze}
+```
+
+## Adjusted BB/100 (UI snapshot — S1a ephemeral column)
+
+When present, this is **screenshot-derived**; API did not expose the field. Column was not sortable and was removed same session.
+
+```json
+{bb100_snapshot}
 ```
 
 ---

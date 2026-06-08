@@ -12,6 +12,7 @@ import json
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
+from statistics import mean
 _EXAMPLES = Path(__file__).resolve().parent
 if str(_EXAMPLES) not in sys.path:
     sys.path.insert(0, str(_EXAMPLES))

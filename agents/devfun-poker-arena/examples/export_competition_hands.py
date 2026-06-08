@@ -45,6 +45,23 @@ from arena_client import ArenaClient, ArenaError, CREDS_PATH, DEFAULT_BASE  # no
 
 PAGE_SIZE = 100
 
+_BB100_KEYS = (
+    "adjustedBbPer100",
+    "adjustedBBPer100",
+    "adjusted_bb_per_100",
+    "allInEvBbPer100",
+    "aivatBbPer100",
+)
+
+
+def leaderboard_adjusted_bb100(lb_row: dict) -> float | None:
+    """Extract adjusted bb/100 from a leaderboard row when the UI/API exposes it."""
+    for key in _BB100_KEYS:
+        val = lb_row.get(key)
+        if isinstance(val, (int, float)):
+            return float(val)
+    return None
+
 
 def _load_creds() -> tuple[Optional[str], Optional[str]]:
     if CREDS_PATH.exists():
@@ -194,6 +211,7 @@ def normalize_agent_row(lb_row: dict, stats: Optional[dict]) -> dict:
         "hands": lb_row.get("graduateCount"),
         "wins": lb_row.get("correctCount"),
         "total_submissions": lb_row.get("totalSubmissions"),
+        "adjusted_bb100": leaderboard_adjusted_bb100(lb_row),
     }
     if stats:
         out["stats"] = {

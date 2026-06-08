@@ -65,6 +65,8 @@ _SB_WEAK_SUITED_VS_OPEN = frozenset({
     "K9s", "K8s", "Q9s", "Q8s", "J9s", "J8s", "T9s", "T8s", "98s", "87s", "76s",
 })
 _PREFLOP_3BET_OK = frozenset({"AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQs", "AQo"})
+# HL R25: EP suited broadway opens/calls bleed vs LAG shoves (QJs UTG −100 #01, KQs UTG #12).
+_EP_SUITED_BROADWAY_TRAP = frozenset({"KQs", "QJs", "KJs", "JTs"})
 
 _RANKS = "23456789TJQKA"
 _ROYAL_IDX = tuple(_RANKS.index(r) for r in "AKQJT")
@@ -466,7 +468,8 @@ def decide(
             chart, allowed, available, equity, pot_odds, call_chips, pot,
             in_position=in_position, ps_bias=ps_bias, ps_library=ps_library,
             hud_mode=hud_mode, margins=margins, lead_protect=lead_protect,
-            qual_protect=qual_protect, nemesis_opener=nemesis_opener)
+            qual_protect=qual_protect, first_protect=first_protect,
+            nemesis_opener=nemesis_opener)
     elif call_chips == 0:
         action_name, amount = _postflop_free(
             equity, allowed, available, pot, pot_control=pot_control,
@@ -592,6 +595,10 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             return "fold", None
         if "check" in available:
             return "check", None
+    # HL R25: no EP suited-broadway opens under first_protect (QJs MP, KQs UTG chart leaks).
+    if (first_protect and position in ("UTG", "MP")
+            and hand_class in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
+        return "fold", None
     # Qual/lead protect: CO/BTN chart-only — no HUD steals (K8o/T7o CO −100 leaks).
     if (qual_protect or lead_protect) and position in ("CO", "BTN") and suggested != "raise":
         if (lead_protect and not first_protect and lead_blind_steal(hand_class, position)
@@ -648,6 +655,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                     margins: Optional[dict] = None,
                     lead_protect: bool = False,
                     qual_protect: bool = False,
+                    first_protect: bool = False,
                     nemesis_opener: bool = False) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     hc = chart.get("hand_class") or ""
@@ -687,6 +695,16 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     # EP/MP: no medium-pair calls vs raises (77 MP −100 analyze #02).
     if (position in ("UTG", "MP") and call_chips > 0
             and hc in _LOW_PAIRS_PROTECT and "fold" in available):
+        return "fold", None
+
+    # HL R25 #01: EP suited broadway vs raise — fold under first_protect (shove traps).
+    if (first_protect and position in ("UTG", "MP") and call_chips > 0
+            and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
+        return "fold", None
+
+    # v12 / nemesis opens — fold EP suited broadway even IP to the open.
+    if (nemesis_opener and position in ("UTG", "MP", "CO", "BTN") and call_chips > 0
+            and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
         return "fold", None
 
     # Lead protect: no wide CO/BTN defends — chart + premiums only.

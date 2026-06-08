@@ -26,7 +26,7 @@ PROMPT_TEMPLATE = ROOT / "prompts" / "s1a_gap_retrospective_audit.md"
 if str(EXAMPLES) not in sys.path:
     sys.path.insert(0, str(EXAMPLES))
 
-from export_bundle import crawl_progress, load_export_agents, load_export_submissions  # noqa: E402
+from export_bundle import crawl_progress, load_export_agents_with_bb100, load_export_submissions, load_bb100_snapshot  # noqa: E402
 
 
 def _hero_variance_bootstrap(
@@ -121,8 +121,9 @@ def main(argv: list[str] | None = None) -> int:
     out = args.out.resolve()
     out.mkdir(parents=True, exist_ok=True)
 
-    agents = load_export_agents(export_dir)
+    agents = load_export_agents_with_bb100(export_dir)
     submissions = load_export_submissions(export_dir)
+    bb_snap = load_bb100_snapshot(export_dir)
     crawl = crawl_progress(export_dir)
 
     hero = next((a for a in agents if a.get("handle") == args.hero), None)
@@ -156,6 +157,18 @@ def main(argv: list[str] | None = None) -> int:
     hl_analyze = ROOT / "reports/hl-loop/latest_analyze.txt"
     if hl_analyze.is_file():
         (out / "hl_analyze.txt").write_text(hl_analyze.read_text(encoding="utf-8"), encoding="utf-8")
+
+    if bb_snap:
+        (out / "bb100_ui_snapshot.json").write_text(
+            json.dumps(bb_snap, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+        )
+        hero_ev = bb_snap.get("hero_analysis") or {}
+        (out / "bb100_hero_analysis.md").write_text(
+            "## Hero EV vs chip rank (UI snapshot)\n\n"
+            + json.dumps(hero_ev, indent=2)
+            + "\n",
+            encoding="utf-8",
+        )
 
     manifest = {
         "built_at": datetime.now(timezone.utc).isoformat(),
@@ -194,6 +207,7 @@ def main(argv: list[str] | None = None) -> int:
             worst_hands=(out / "worst_hero_hands.txt").read_text(encoding="utf-8"),
             style_distribution=(out / "field_style_distribution.md").read_text(encoding="utf-8"),
             hl_analyze=(out / "hl_analyze.txt").read_text(encoding="utf-8") if (out / "hl_analyze.txt").is_file() else "(not available)",
+            bb100_snapshot=json.dumps(bb_snap.get("hero_analysis") or bb_snap, indent=2) if bb_snap else "(not available — see briefs/2026-06-08_s1a-adjusted-bb100-ui-snapshot.md)",
             crawl=json.dumps(crawl, indent=2),
         )
         (out / "audit_prompt.md").write_text(filled, encoding="utf-8")
