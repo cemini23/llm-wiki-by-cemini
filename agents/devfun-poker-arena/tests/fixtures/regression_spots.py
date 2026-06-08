@@ -602,4 +602,22 @@ def nuts_regression_spots() -> list[RegressionSpot]:
             required=frozenset({"fold"}),
             notes="first_protect: no KQs UTG open.",
         ),
+        RegressionSpot(
+            id="prod_62o_co_open_r26",
+            source="HL R26 analyze #01 — 2d 6d CO −100 preflop",
+            table=co_unopened(["2d", "6d"]),
+            context=_FIRST_PROTECT_CTX,
+            forbidden=frozenset({"bet", "raise", "all-in", "call"}),
+            required=frozenset({"fold"}),
+            notes="first_protect: no CO chart-trash opens.",
+        ),
+        RegressionSpot(
+            id="prod_62o_co_vs_raise_r26",
+            source="HL R26 analyze #01 — 62o CO vs shove",
+            table=co_facing_raise(["2d", "6d"]),
+            context=_FIRST_PROTECT_CTX,
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="first_protect: fold CO trash vs raise.",
+        ),
     ]

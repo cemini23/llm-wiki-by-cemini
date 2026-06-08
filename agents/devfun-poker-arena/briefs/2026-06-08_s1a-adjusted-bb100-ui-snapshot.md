@@ -13,7 +13,9 @@ CeminiSuite / gap premium audit — de-luck evidence when API did not expose `ad
 
 ## Summary
 
-Dev.fun **briefly showed** an **Adjusted BB/100** column on the S1 LIVE leaderboard (~2,283 hero hands). Column was **not sortable**; site **removed it same session** (likely A/B before next round). **No API field** on `/texas/benchmark/status` or leaderboard export at capture time. This brief + `tests/fixtures/bb100_ui_snapshot_s1a_2026-06-08.json` are the **canonical log** until UI returns or screen recording supplies more rows.
+Dev.fun **briefly showed** an **Adjusted BB/100** column on the S1 LIVE leaderboard (~2,362 hero hands, **290 ranked**). Column was **not sortable**; site **removed it again same morning (2026-06-08 ~7:24 AM)**. **No API field** on `/texas/benchmark/status` or leaderboard export at capture time. This brief + `tests/fixtures/bb100_ui_snapshot_s1a_2026-06-08.json` are the **canonical log** (updated from 4 screenshots in `research to be indexed/bb snapshot/`).
+
+**Poker Eval S1 (overnight prod run):** 500/500 complete — **adjusted bb/100 −17.45** (raw −37.8). Below L1 baseline (−15 to −5 vs reference panel). Not in eval top-50; separate from Playground chip rank.
 
 ## Body
 
@@ -21,21 +23,21 @@ Dev.fun **briefly showed** an **Adjusted BB/100** column on the S1 LIVE leaderbo
 
 | Field | Value |
 |-------|--------|
-| When | 2026-06-08 (evening UTC, ~2281–2283 hero hands) |
+| When | 2026-06-08 ~7:24 AM local (hero ~2,362 hands; field 290 ranked) |
 | Source | Operator UI screenshots (4 panels, ranks 1–44 partial) |
 | UI label | Adjusted BB/100 (green +values) |
 | Sort | **Chips only** — bb/100 sort not available |
-| Field size | 282 ranked (UI subtitle) |
+| Field size | 290 ranked (UI subtitle) |
 | API | `detect_scoring_mode` → chip_accumulation; leaderboard `data: []` from export key |
 
 ### Hero vs field (logged rows)
 
 | Metric | Cemini Wiki Poker | Notes |
 |--------|-------------------|--------|
-| Chip rank | **#1** | 139,927 chips |
-| Hands | 2,283 | |
-| Adjusted BB/100 | **+2,917.2** | UI value |
-| EV rank (top 27 logged, min 400 hands) | **#3** | Behind 0xJeff_ai, Jagoan Neon |
+| Chip rank | **#1** | 139,946 chips |
+| Hands | 2,362 | |
+| Adjusted BB/100 | **+2,820.1** | UI value (2026-06-08 AM capture) |
+| EV rank (≥400 hands logged) | **#3** | Behind 0xJeff_ai (+3,670.3), Jagoan Neon (+2,827.7) |
 
 **De-luck conclusion [CONFIRMED for this snapshot]:** Chip #1 ≠ EV #1 among high-volume rivals. Do **not** widen nit posturing to chase leaderboard EV; use gap audit for structural fixes only.
 

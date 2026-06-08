@@ -414,6 +414,12 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: CO weak connector — fold")
 
+    # HL R26 #01: CO chart-trash opens under first_protect (62o CO −100 preflop).
+    if (street == "Preflop" and first_protect and position == "CO"
+            and hc in _WEAK_FACING_RAISE and "fold" in available):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: first_protect CO trash — fold")
+
     # CO/BTN: never call limps/raises with dominated trash (Q9o/Q5o multiway −100 HL R20/R21).
     if (street == "Preflop" and position in ("CO", "BTN") and call_chips > 0
             and _is_sb_complete_trash(hc) and "fold" in available):
@@ -599,6 +605,10 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
     if (first_protect and position in ("UTG", "MP")
             and hand_class in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
         return "fold", None
+    # HL R26 #01: CO chart-trash — no opens while chip #1 (62o/Q2o CO −100).
+    if (first_protect and position == "CO" and hand_class in _WEAK_FACING_RAISE
+            and "fold" in available):
+        return "fold", None
     # Qual/lead protect: CO/BTN chart-only — no HUD steals (K8o/T7o CO −100 leaks).
     if (qual_protect or lead_protect) and position in ("CO", "BTN") and suggested != "raise":
         if (lead_protect and not first_protect and lead_blind_steal(hand_class, position)
@@ -690,6 +700,11 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     # CO: fold weak connector trash vs any raise (98o CO −100 HL R11 #01).
     if (position == "CO" and call_chips > 0 and hc in _CO_WEAK_CONNECTOR
             and "fold" in available):
+        return "fold", None
+
+    # HL R26 #01: CO chart-trash vs raise under first_protect (62o shove traps).
+    if (first_protect and position == "CO" and call_chips > 0
+            and hc in _WEAK_FACING_RAISE and "fold" in available):
         return "fold", None
 
     # EP/MP: no medium-pair calls vs raises (77 MP −100 analyze #02).
