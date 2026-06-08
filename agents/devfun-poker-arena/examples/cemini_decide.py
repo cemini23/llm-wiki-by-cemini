@@ -401,6 +401,17 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: SB underpair on paired board — fold")
 
+    # SB OOP low suited wheel on ace-paired runout — 95s SB −100 (HL S2 R3 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position == "SB" and not in_position
+            and _board_has_ace_pair(board)
+            and _is_low_suited_wheel(hc)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.15), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: SB low suited on ace-paired board — fold")
+
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and not in_position
             and _is_wheel_offsuit(hc)
@@ -511,10 +522,10 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: first_protect CO trash — fold")
 
-    # HL R27: always-on CO/SB panel trash — eval −100 preflop (not first_protect-gated).
-    if (street == "Preflop" and position in ("CO", "SB")
+    # HL R27 / S2 R3: CO/SB/BTN panel trash — eval −100 preflop cluster.
+    if (street == "Preflop" and position in ("CO", "SB", "BTN")
             and hc in _WEAK_FACING_RAISE and "fold" in available):
-        if call_chips > 0 or position == "CO":
+        if call_chips > 0 or position in ("CO", "BTN"):
             return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                           msg=f"{binding}: panel trash {position} — fold")
     if (street == "Preflop" and position == "SB" and call_chips == 0
@@ -708,8 +719,8 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             return "fold", None
         if "check" in available:
             return "check", None
-    # HL R27: CO/SB chart-trash opens — always (eval panel preflop −100 leaks).
-    if (position in ("CO", "SB") and hand_class in _WEAK_FACING_RAISE
+    # HL R27 / S2 R3: CO/SB/BTN chart-trash — never open (preflop −100 cluster).
+    if (position in ("CO", "SB", "BTN") and hand_class in _WEAK_FACING_RAISE
             and "fold" in available):
         return "fold", None
     # HL R25: no EP suited-broadway opens under first_protect (QJs MP, KQs UTG chart leaks).
@@ -794,6 +805,11 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     suggested = chart.get("suggested_action") or "fold"
     hud = hud or {}
 
+    # Preflop stack-off discipline — fold dominated trash vs large commits (HL S2 R3 −100 cluster).
+    if (_preflop_stackoff_should_fold(hc, call_chips, hero_stack_chips)
+            and "fold" in available):
+        return "fold", None
+
     # Static chart is open-range only — facing a raise, downgrade spurious "raise" (77 MP −100).
     if call_chips > 0 and suggested == "raise" and hc not in _PREFLOP_3BET_OK:
         suggested = "fold"
@@ -824,8 +840,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and "fold" in available):
         return "fold", None
 
-    # HL R27: CO/SB chart-trash vs raise — always (eval Kh2h SB, 62o CO −100).
-    if (position in ("CO", "SB") and call_chips > 0
+    # HL R27 / S2 R3: CO/SB/BTN chart-trash vs raise — always.
+    if (position in ("CO", "SB", "BTN") and call_chips > 0
             and hc in _WEAK_FACING_RAISE and "fold" in available):
         return "fold", None
 
@@ -991,6 +1007,36 @@ def _should_fold_weak_preflop(hc: str, equity: float, pot_odds: float) -> bool:
     return equity < pot_odds + _train_threshold("weak_preflop_margin", 0.07)
 
 
+def _is_low_suited_wheel(hc: str) -> bool:
+    """9-high and below suited wheel — 95s SB paired ace leak (HL S2 R3 #01)."""
+    if len(hc) != 3 or hc[2] != "s" or hc[0] == hc[1]:
+        return False
+    i1, i2 = _RANKS.index(hc[0]), _RANKS.index(hc[1])
+    hi, lo = max(i1, i2), min(i1, i2)
+    return hi <= _RANKS.index("9") and lo <= _RANKS.index("5")
+
+
+def _preflop_stackoff_should_fold(
+    hc: str, call_chips: int, hero_stack_chips: int,
+) -> bool:
+    """Fold non-premium vs large preflop commits (empty-board −100 cluster)."""
+    if call_chips <= 0 or hero_stack_chips <= 0 or not hc:
+        return False
+    if hc in _PREFLOP_3BET_OK or _is_strong_continue(hc):
+        return False
+    ratio = call_chips / hero_stack_chips
+    if ratio >= 0.45:
+        return True
+    if ratio >= 0.28 and (
+        hc in _WEAK_FACING_RAISE
+        or _is_sb_complete_trash(hc)
+        or hc in _CO_WEAK_CONNECTOR
+        or hc in _BB_BROADWAY_FOLD
+    ):
+        return True
+    return False
+
+
 def _weak_ace_offsuit(hc: str) -> bool:
     return len(hc) == 3 and hc[0] == "A" and hc[2] == "o"
 
@@ -1078,6 +1124,8 @@ def _is_paired_runout_trash(hc: str) -> bool:
     Rank/suit bands only — do not mirror _WEAK_FACING_RAISE (preflop set).
     """
     if _is_low_trash_offsuit(hc):
+        return True
+    if _is_low_suited_wheel(hc):
         return True
     if len(hc) != 3 or hc[0] == hc[1]:
         return False

@@ -553,6 +553,54 @@ def sb_qq_connected_river(*, river_bet: int = 450, pot: int = 900) -> dict:
     )
 
 
+def sb_95s_paired_river(*, villain_bet: int = 50, pot: int = 180) -> dict:
+    """95s SB OOP on ace-paired runout — HL S2 R3 analyze #01 (−100)."""
+    return six_max_table(
+        name="sb_95s_paired_river",
+        hero_seat=2,
+        button_seat=1,
+        street="River",
+        board=["Ah", "6h", "Qd", "Qc", "As"],
+        pot=pot,
+        hero_hole=["9s", "5s"],
+        hero_stack=400,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={2: 400},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def btn_facing_shove(hero_hole: list[str], *, shove_to: int = 1000, hero_stack: int = 1000) -> dict:
+    """BTN facing large preflop shove — HL S2 R3 −100 cluster."""
+    return six_max_table(
+        name="btn_facing_shove",
+        hero_seat=1,
+        button_seat=1,
+        street="Preflop",
+        board=[],
+        pot=30 + shove_to,
+        hero_hole=hero_hole,
+        hero_stack=hero_stack,
+        hero_bet=0,
+        villain_bets={4: shove_to},
+        stacks={1: hero_stack},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_all_in=True,
+            call_chips=shove_to,
+            call_to=shove_to,
+            all_in_to=hero_stack,
+        ),
+    )
+
+
 def sb_jj_paired_river(*, river_bet: int = 120, pot: int = 280) -> dict:
     """JJ SB OOP on paired runout — analyze #01 leak."""
     return six_max_table(
