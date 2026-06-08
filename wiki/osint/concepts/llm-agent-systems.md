@@ -39,6 +39,8 @@ related:
   - sources/4-14-pvg5.md
   - sources/agent1-4-4.md
   - sources/agentic-harness-engineering.md
+  - sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md
+  - entities/tools/rocketsmith.md
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
   - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
   - sources/arxiv-self-healing-llm-agents-2605.06737.md

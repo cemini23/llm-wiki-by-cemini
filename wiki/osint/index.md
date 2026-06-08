@@ -1231,6 +1231,8 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Crypto pair trading shielded DRL (arXiv:2606.04574)](sources/arxiv-crypto-pair-trading-drl-shielded-2606-04574-2026-06-04.md) — `[DRAFT 2026-06-04]` PPO+LSTM execution overlay; Binance futures. — source, arxiv, crypto, k98
 - [Stanford GR4 ML order-book MM (gr4.pdf)](sources/stanford-ml-orderbook-mm-gr4-2017.md) — `[VALIDATED 2026-06-07]` OBP features + RF/SVM/SGD; thin edge vs naive MM. — source, market-making, k104
 - [Order book pressure ML market making](concepts/order-book-pressure-ml-market-making.md) — `[VALIDATED 2026-06-07]` LOB skew overlay discipline for PM LP. — concept, market-making, k104
+- [RocketSmith agentic rocketry (arXiv 2606.00097)](sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md) — `[VALIDATED 2026-06-08]` physical-domain harness; 6 subagents + 7 skills; flight-tested. — source, arxiv, agent-harness, k105
+- [RocketSmith](entities/tools/rocketsmith.md) — `[DRAFT 2026-06-08]` MIT Claude Code/Gemini CLI plugin; REFERENCE steal patterns. — entity, tool, k105
 - [Stanford GR5 Avellaneda-Stoikov HF MM (gr5.pdf)](sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md) — `[DRAFT 2026-06-04]` inventory-skewed quoting + simulator. — source, market-making, k98
 - [Agent team five-gate decision memo](concepts/agent-team-five-gate-decision-memo.md) — `[DRAFT 2026-06-04]` org chart > model IQ; TradingAgents pattern. — concept, multi-agent, k98
 - [Polymarket Binance oracle latency fusion](concepts/polymarket-binance-oracle-latency-fusion.md) — `[DRAFT 2026-06-04]` CVD/OBI vs UP/DOWN lag. — concept, polymarket, k98

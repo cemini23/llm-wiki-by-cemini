@@ -31,14 +31,18 @@ related:
   - sources/thinking-with-visual-primitives-deepseek-2026.md
   - sources/sherry-ternary-quantization-tencent-2026.md
   - sources/piebald-claude-code-system-prompts.md
+  - sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md
+  - entities/tools/rocketsmith.md
 maturity: validated
 read_status: read
 created: 2026-04-29
-updated: 2026-04-30
+updated: 2026-06-08
 ---
 
 ## Relations
 
+- @sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md — **hand-authored domain harness** contrast: AHE auto-evolves generic coding harness; RocketSmith ships fixed skills/subagents for rocketry with flight-test oracle (K105)
+- @entities/tools/rocketsmith.md — MIT plugin entity
 - @sources/harness-4-5.md — Jiun Kim's 11p preprint **proposed** "harness engineering" as a named discipline in Feb 2026; this paper is the **empirical methodology prong** of that program (Kim was framing; this is implementation + measurement).
 - @sources/harness2-4-5.md — Maynard's STS commentary on the "harness" metaphor; the paper this critiqued has now been formalized into a falsifiable optimization framework — the metaphor's engineering-content claim (per Maynard's preview) is what AHE delivers.
 - @sources/claude-code-harness-chachamaru.md — chachamaru is a deployed instance of the same family (Claude Code harness with hooks); AHE is the academic generalization of the same concept (observability + auto-evolution).

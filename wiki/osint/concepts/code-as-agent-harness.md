@@ -6,6 +6,8 @@ keywords: [code-as-agent-harness, harness-interface, harness-mechanisms, multi-a
 related:
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
   - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
+  - sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md
+  - entities/tools/rocketsmith.md
   - concepts/continual-harness-online-self-improvement.md
   - concepts/llm-agent-systems.md
   - sources/agentic-harness-engineering.md
@@ -19,11 +21,13 @@ related:
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-27
+updated: 2026-06-08
 ---
 
 ## Relations
 
+- @sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md — **physical-domain harness** (K105): skills + subagents + MCP over OpenRocket/build123d; flight-test oracle
+- @entities/tools/rocketsmith.md — MIT plugin; REFERENCE-only for Cemini
 - @sources/arxiv-code-as-agent-harness-survey-2605.18747.md — primary synthesis source (UIUC/Meta/Stanford survey, May 2026)
 - @sources/arxiv-continual-harness-self-improving-agents-2605.09998.md — online reset-free harness refinement (embodied agents; refiner loop analogue)
 - @concepts/continual-harness-online-self-improvement.md — K72 synthesis
@@ -52,6 +56,10 @@ Prompted by Tier-2 sweep ingest of arXiv:2605.18747 — a 102-page survey codify
 - **Executable** — proposed actions must compile to verifiable tool calls (Cemini AI confirm gate).
 - **Verifiable** — harness changes need regression checks (skill_audit, MCPT for strategies).
 - **Stateful** — shared state across turns (stash, wiki log, hot.md) without silent drift.
+
+### Physical-domain instance (K105)
+
+@sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md — RocketSmith wraps OpenRocket (sim source of truth) → build123d (parametric STEP) → PrusaSlicer (weight oracle). Same three-layer model: harness interface = MCP tools; mechanisms = 6 subagents + 7 skills; scaling = GUI read mirror + human-in-the-loop for slicing/recovery timing. **Steal:** deterministic codegen + programmatic mass check ≈ backtest/replay gates before prod.
 
 ### Open problems called out in source (actionable)
 

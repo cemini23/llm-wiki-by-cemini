@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-08 — K105)
+
+- **K105 ingest (2026-06-08)** — Daily digest full ingest: RocketSmith arXiv 2606.00097 + Playground S1 bb snapshot. **1 source + 1 entity + 4 updates** (OSINT); gambling-wiki S1 close (chip #1, adj bb/100 #3 at ≥400h). RocketSmith **REFERENCE** — steal subagent/skill/MCP patterns. Brief staged; no prod scp. Raw → librarian; inbox cleared.
+
 ## Current state (2026-06-07 — K104)
 
 - **K104 ingest (2026-06-07)** — `gr4.pdf` (Stanford 2017 ML order-book MM). **1 source + 1 concept + 6 updates.** OBP+RF slight edge vs naive; SVM/SGD underperform; missing news layer = tail risk. **REFERENCE** for PM LP — pair with informedness regime. Brief on disk; no prod scp. Raw → librarian; inbox cleared.

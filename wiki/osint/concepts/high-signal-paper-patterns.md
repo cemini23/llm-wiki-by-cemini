@@ -7,6 +7,7 @@ related:
   - sources/black-scholes-iv-explicit-schadner-2026.md
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - sources/agentic-harness-engineering.md
+  - sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md
   - sources/skillopt-executive-strategy-self-evolving-agent-skills-2026-05-30.md
   - sources/sia-self-improving-ai-harness-weight-updates-2026-05-30.md
   - sources/incompressible-knowledge-probes-li-2026.md
@@ -57,7 +58,7 @@ related:
   - meta/daily-research-digest-cadence.md
   - sources/gemini-sci-research-2602-03837.md
 created: 2026-04-29
-updated: 2026-05-11
+updated: 2026-06-08
 maturity: validated
 ---
 
@@ -66,6 +67,7 @@ maturity: validated
 - @sources/black-scholes-iv-explicit-schadner-2026.md — Landing #1: refutes "BS-IV requires iteration"; closed-form math; CC BY 4.0; 223–235× empirical speedup. Quant-finance domain. Single-author.
 - @sources/pta-metric-anchoring-ssrn-4549819.md — Landing #2: novel cross-sectional return predictor; TimescaleDB-shaped; promoted from K9 link-aggregate (not a direct user drop).
 - @sources/agentic-harness-engineering.md — Landing #3: empirical methodology paper for LLM-agent harness evolution; 7-component decoupled substrate; +10.1pp transfer to deepseek-v4-flash; arXiv 2604.25850.
+- @sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md — K105: physical-domain harness with flight-test oracle; steal patterns (skills/subagents/MCP); REFERENCE not Adopt.
 - @sources/incompressible-knowledge-probes-li-2026.md — Landing #4: black-box parameter-estimator; deepseek-v4-* in calibration set; refutes Densing Law for factual capacity; single-author Pine AI; arXiv 2604.24827.
 - @concepts/wiki-tooling-evaluation.md — sibling decision-record; Wave 1/2/3 ingest evaluation also used implicit criteria; this page makes them explicit.
 - @concepts/cemini-wiki-ingest-workflow.md — daily digest + Tier 2/2.5 sweeps score candidates against this rubric

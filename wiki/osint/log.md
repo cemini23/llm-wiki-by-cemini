@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-08] ingest | K105 — daily digest full ingest
+
+- **RocketSmith** (arXiv 2606.00097) — 1 source + 1 entity + 3 concept updates. Physical-domain harness (6 subagents, 7 skills, MCP); 4 flight-tested rockets; 84% apogee sim accuracy. MIT repo; **REFERENCE** for Cemini (steal harness patterns).
+- **bb snapshot** — Playground S1 season-end UI leaderboard (ranks 1–74 partial); cross-wiki update to @gambling-wiki `cemini-devfun-poker-agent` + `devfun-poker-arena` (chip #1, EV #3 at ≥400h). JSON fixture already in `agents/devfun-poker-arena/tests/fixtures/`.
+- Raw PDF → librarian; bb PNGs → librarian `research/devfun-s1-leaderboard-2026-06-08/`; inbox cleared.
+
 ## [2026-06-07] ingest | K104 — gr4.pdf (Stanford ML order-book MM)
 
 - **Source (1)** — `stanford-ml-orderbook-mm-gr4-2017.md` (gr4.pdf deep-read)
