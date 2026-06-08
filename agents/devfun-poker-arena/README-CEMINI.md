@@ -194,6 +194,7 @@ Systemd timer on prod runs every **30 min**:
 - Position metrics history → `reports/analyze/history.jsonl`
 - Poker Eval / Tournament availability → `reports/eval_poll.jsonl`, `reports/alerts.txt`
 - **DeepSeek HL auto-analyst** (if `DEEPSEEK_API_KEY` in prod `.env`):
+  - Prefetches **gambling-wiki** via librarian `kb_context` (`project=gambling-wiki`, same `LIBRARIAN_API_KEY` as `/opt/cemini/.env`)
   - Reads latest analyze → proposes **runtime guards** + **style tweaks**
   - **Kill switch** on catastrophic bleed (LLM or heuristic)
   - Artifacts: `reports/hl-loop/auto_analyst_latest.md`, `runtime_guards.json`, `.arena-kill-switch.json`
@@ -207,6 +208,9 @@ LLM_FALLBACK_MODEL=deepseek/deepseek-chat   # optional OR slug override
 CEMINI_HL_AUTO_ANALYST=1      # set 0 to disable LLM pass
 CEMINI_HL_AUTO_APPLY=1        # set 0 to log-only (no guard/style writes)
 CEMINI_HL_HEURISTIC_KILL=1    # fast kill without LLM on extreme metrics
+LIBRARIAN_BASE_URL=http://10.0.0.2:3838   # optional; default private net
+LIBRARIAN_API_KEY=...         # usually inherited from /opt/cemini/.env
+CEMINI_HL_WIKI_KB=1           # set 0 to skip wiki prefetch
 ```
 
 Kill switch (operator):

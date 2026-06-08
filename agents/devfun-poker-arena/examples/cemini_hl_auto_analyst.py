@@ -3,6 +3,7 @@
 
 Called from arena_monitor.py after each analyze pass (~30 min on prod).
 Uses DEEPSEEK_API_KEY (+ OpenRouter failover) via llm_routing_client.
+Prefetches gambling-wiki context from librarian kb-server (``project=gambling-wiki``).
 
 Usage:
     uv run python examples/cemini_hl_auto_analyst.py --report reports/hl-loop/latest_analyze.txt
@@ -34,6 +35,7 @@ from hl_runtime_config import (  # noqa: E402
     load_style_overrides,
     merge_runtime_guards,
 )
+from gambling_wiki_kb import fetch_gambling_wiki_briefing, load_librarian_env  # noqa: E402
 from llm_routing_client import chat_json  # noqa: E402
 
 _AGENT_DIR = _EXAMPLES.parent
@@ -122,11 +124,20 @@ def _build_user_prompt(
     metrics: dict | None,
     metrics_history: list[dict],
     qual_summary: str,
+    wiki_briefing: str = "",
 ) -> str:
     guards = load_runtime_guards()
     style = load_style_overrides()
     ks = kill_switch_status()
-    return f"""## Arena analyze report
+    wiki_block = ""
+    if wiki_briefing.strip():
+        wiki_block = f"""
+## Gambling wiki context (kb-server, project=gambling-wiki)
+{wiki_briefing.strip()}
+
+Use for HL discipline (survival vs exploit, guard patterns). Do not contradict first_protect / rank #1 posture.
+"""
+    return f"""{wiki_block}## Arena analyze report
 {report_text.strip()}
 
 ## Latest metrics (this pass)
@@ -244,16 +255,28 @@ def run_auto_analyst(
                 "_source": "heuristic",
             }
 
+    wiki_meta = fetch_gambling_wiki_briefing(
+        report_text=report_text,
+        qual_summary=qual_summary,
+    )
     user = _build_user_prompt(
         report_text=report_text,
         metrics=metrics,
         metrics_history=metrics_history or [],
         qual_summary=qual_summary,
+        wiki_briefing=wiki_meta.get("text") or "",
     )
     raw = chat_json(system=_SYSTEM, user=user, max_tokens=4096)
     llm_meta = {k: raw.pop(k) for k in list(raw.keys()) if k.startswith("_llm")}
     result = apply_response(raw, dry_run=dry_run)
     result.update(llm_meta)
+    result["_wiki_kb"] = {
+        "char_count": wiki_meta.get("char_count", 0),
+        "wiki_hits": wiki_meta.get("wiki_hits") or [],
+        "queries": wiki_meta.get("queries") or [],
+        "skipped": wiki_meta.get("skipped"),
+        "error": wiki_meta.get("error"),
+    }
     return result
 
 
@@ -273,6 +296,10 @@ def _write_artifacts(result: dict[str, Any]) -> None:
         "",
         f"LLM: {result.get('_llm_provider')} / {result.get('_llm_model')}",
     ]
+    wiki_kb = result.get("_wiki_kb") or {}
+    if wiki_kb.get("wiki_hits"):
+        md.append("")
+        md.append(f"**Wiki hits:** {', '.join(wiki_kb['wiki_hits'][:8])}")
     _OUT_MD.write_text("\n".join(md) + "\n", encoding="utf-8")
     state = {
         "last_run": result.get("updated_at") or "",
@@ -319,6 +346,7 @@ def maybe_run_after_analyze(
 def main(argv: list[str] | None = None) -> int:
     load_dotenv()
     _load_osint_routing_env()
+    load_librarian_env()
     p = argparse.ArgumentParser(description="HL auto-analyst (DeepSeek + failover)")
     p.add_argument("--report", default=str(_DEFAULT_REPORT))
     p.add_argument("--dry-run", action="store_true", help="LLM only; do not write guards/kill")
