@@ -295,6 +295,7 @@ def decide(
             hand_class=hc,
             call_chips=call_chips,
             can_check=bool(allowed.get("canCheck")),
+            hero_stack_chips=_hero_stack_chips(table),
         )
         if guard:
             g_out = apply_runtime_guard_action(

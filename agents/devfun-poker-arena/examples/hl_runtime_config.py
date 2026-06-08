@@ -17,22 +17,44 @@ _REPORTS = Path(
 )
 _HL_DIR = _REPORTS / "hl-loop"
 
-KILL_SWITCH_PATH = Path(
-    os.environ.get("CEMINI_KILL_SWITCH_PATH", str(_AGENT_DIR / ".arena-kill-switch.json"))
-)
-RUNTIME_GUARDS_PATH = Path(
-    os.environ.get("CEMINI_RUNTIME_GUARDS_PATH", str(_HL_DIR / "runtime_guards.json"))
-)
-STYLE_OVERRIDES_PATH = Path(
-    os.environ.get("CEMINI_STYLE_OVERRIDES_PATH", str(_HL_DIR / "style_overrides.json"))
-)
+def _kill_switch_path() -> Path:
+    return Path(
+        os.environ.get("CEMINI_KILL_SWITCH_PATH", str(_AGENT_DIR / ".arena-kill-switch.json"))
+    )
+
+
+def _runtime_guards_path() -> Path:
+    return Path(
+        os.environ.get("CEMINI_RUNTIME_GUARDS_PATH", str(_HL_DIR / "runtime_guards.json"))
+    )
+
+
+def _style_overrides_path() -> Path:
+    return Path(
+        os.environ.get("CEMINI_STYLE_OVERRIDES_PATH", str(_HL_DIR / "style_overrides.json"))
+    )
+
+
+def _deploy_grace_path() -> Path:
+    return Path(
+        os.environ.get("CEMINI_DEPLOY_GRACE_PATH", str(_HL_DIR / "deploy_grace.json"))
+    )
+
+
 AUTO_ANALYST_STATE_PATH = _HL_DIR / "auto_analyst_state.json"
-DEPLOY_GRACE_PATH = Path(
-    os.environ.get("CEMINI_DEPLOY_GRACE_PATH", str(_HL_DIR / "deploy_grace.json"))
-)
+
+# Back-compat aliases (prefer env-aware helpers above in new code).
+KILL_SWITCH_PATH = _kill_switch_path()
+RUNTIME_GUARDS_PATH = _runtime_guards_path()
+STYLE_OVERRIDES_PATH = _style_overrides_path()
+DEPLOY_GRACE_PATH = _deploy_grace_path()
 
 MAX_RUNTIME_GUARDS = int(os.environ.get("CEMINI_HL_MAX_GUARDS", "25"))
 DEFAULT_DEPLOY_GRACE_HOURS = float(os.environ.get("CEMINI_HL_DEPLOY_GRACE_HOURS", "6"))
+MAX_FOLD_SLACK_DELTA = float(os.environ.get("CEMINI_HL_MAX_FOLD_SLACK", "0.08"))
+MAX_CALL_MARGIN_DELTA = float(os.environ.get("CEMINI_HL_MAX_CALL_MARGIN", "0.08"))
+DEFAULT_SHOVE_COMMIT_RATIO = float(os.environ.get("CEMINI_HL_SHOVE_COMMIT_RATIO", "0.28"))
+_PREMIUM_HANDS = frozenset({"AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQs", "AQo"})
 
 
 def _utc_now() -> str:
@@ -59,7 +81,7 @@ def _deploy_grace_hours() -> float:
 
 
 def load_deploy_grace() -> dict:
-    data = _read_json(DEPLOY_GRACE_PATH, {})
+    data = _read_json(_deploy_grace_path(), {})
     return data if isinstance(data, dict) else {}
 
 
@@ -86,7 +108,9 @@ def record_deploy_grace(
         payload["round"] = int(round_num)
     if hands is not None:
         payload["hands"] = int(hands)
-    _write_json(DEPLOY_GRACE_PATH, payload)
+    _write_json(_deploy_grace_path(), payload)
+    reset_style_overrides(source=source, commit=payload["commit"])
+    repair_runtime_guards(source=source)
     return payload
 
 
@@ -142,12 +166,12 @@ def _write_json(path: Path, data: Any) -> None:
 
 
 def is_kill_switch_active() -> bool:
-    data = _read_json(KILL_SWITCH_PATH, {})
+    data = _read_json(_kill_switch_path(), {})
     return bool(isinstance(data, dict) and data.get("active"))
 
 
 def kill_switch_status() -> dict:
-    data = _read_json(KILL_SWITCH_PATH, {})
+    data = _read_json(_kill_switch_path(), {})
     if not isinstance(data, dict):
         return {"active": False}
     return data
@@ -161,7 +185,7 @@ def activate_kill_switch(*, reason: str, severity: str = "catastrophic", source:
         "activated_at": _utc_now(),
         "activated_by": source,
     }
-    _write_json(KILL_SWITCH_PATH, payload)
+    _write_json(_kill_switch_path(), payload)
     return payload
 
 
@@ -172,12 +196,12 @@ def clear_kill_switch(*, reason: str = "operator clear", source: str = "operator
         "cleared_by": source,
         "clear_reason": reason.strip() or "operator clear",
     }
-    _write_json(KILL_SWITCH_PATH, payload)
+    _write_json(_kill_switch_path(), payload)
     return payload
 
 
 def load_runtime_guards() -> list[dict]:
-    data = _read_json(RUNTIME_GUARDS_PATH, {})
+    data = _read_json(_runtime_guards_path(), {})
     guards = data.get("guards") if isinstance(data, dict) else data
     if not isinstance(guards, list):
         return []
@@ -185,7 +209,7 @@ def load_runtime_guards() -> list[dict]:
 
 
 def load_style_overrides() -> dict:
-    data = _read_json(STYLE_OVERRIDES_PATH, {})
+    data = _read_json(_style_overrides_path(), {})
     return data if isinstance(data, dict) else {}
 
 
@@ -196,18 +220,52 @@ def merge_runtime_guards(new_guards: list[dict], *, source: str = "hl_auto_analy
         gid = g.get("id")
         if not gid:
             continue
-        g = dict(g)
+        g = normalize_runtime_guard(dict(g))
         g.setdefault("added_at", _utc_now())
         g.setdefault("source", source)
         existing[gid] = g
     merged = list(existing.values())
+    existing_ids = {g.get("id") for g in merged if g.get("id")}
+    for g in list(merged):
+        for comp in _shove_companion_guards(g):
+            cid = comp.get("id")
+            if cid and cid not in existing_ids:
+                comp.setdefault("added_at", _utc_now())
+                comp.setdefault("source", source)
+                merged.append(comp)
+                existing_ids.add(cid)
     merged.sort(key=lambda x: x.get("added_at") or "", reverse=True)
     merged = merged[:MAX_RUNTIME_GUARDS]
     _write_json(
-        RUNTIME_GUARDS_PATH,
+        _runtime_guards_path(),
         {"updated_at": _utc_now(), "source": source, "guards": merged},
     )
     return merged
+
+
+def _clamp_style_value(key: str, val: Any) -> Any:
+    if key == "fold_slack_delta":
+        return min(max(float(val), 0.0), MAX_FOLD_SLACK_DELTA)
+    if key == "call_margin_delta":
+        return min(max(float(val), 0.0), MAX_CALL_MARGIN_DELTA)
+    if key == "join_retry_multiplier":
+        return min(max(float(val), 1.0), 3.0)
+    return val
+
+
+def reset_style_overrides(*, source: str = "deploy", commit: str = "") -> dict:
+    """Clear cumulative HL style deltas after a code deploy."""
+    note = f"reset on deploy {commit}".strip() if commit else "reset on deploy"
+    payload = {
+        "fold_slack_delta": 0.0,
+        "call_margin_delta": 0.0,
+        "join_retry_multiplier": 1.0,
+        "notes": note,
+        "updated_at": _utc_now(),
+        "source": source,
+    }
+    _write_json(_style_overrides_path(), payload)
+    return payload
 
 
 def apply_style_overrides(tweaks: dict, *, source: str = "hl_auto_analyst") -> dict:
@@ -221,11 +279,105 @@ def apply_style_overrides(tweaks: dict, *, source: str = "hl_auto_analyst") -> d
     current = load_style_overrides()
     for key, val in tweaks.items():
         if key in allowed_keys and val is not None:
-            current[key] = val
+            if key in ("fold_slack_delta", "call_margin_delta", "join_retry_multiplier"):
+                current[key] = _clamp_style_value(key, val)
+            else:
+                current[key] = val
     current["updated_at"] = _utc_now()
     current["source"] = source
-    _write_json(STYLE_OVERRIDES_PATH, current)
+    _write_json(_style_overrides_path(), current)
     return current
+
+
+def _shove_commit_ratio(guard: dict) -> float:
+    raw = guard.get("min_commit_ratio")
+    if raw is not None:
+        try:
+            return max(0.0, float(raw))
+        except (TypeError, ValueError):
+            pass
+    return DEFAULT_SHOVE_COMMIT_RATIO
+
+
+def _commit_ratio(call_chips: int, hero_stack_chips: int) -> float:
+    if call_chips <= 0 or hero_stack_chips <= 0:
+        return 0.0
+    return call_chips / hero_stack_chips
+
+
+def _is_shove_leak_hand(hand_class: str) -> bool:
+    """Hands that must not call large preflop commits (offsuit trash / low suited)."""
+    hc = (hand_class or "").strip()
+    if not hc or hc in _PREMIUM_HANDS:
+        return False
+    if hc.endswith("o"):
+        return True
+    if hc.endswith("s") and len(hc) == 3:
+        ranks = "23456789TJQKA"
+        try:
+            return ranks.index(hc[0]) <= ranks.index("9") and ranks.index(hc[1]) <= ranks.index("9")
+        except ValueError:
+            return False
+    return False
+
+
+def normalize_runtime_guard(guard: dict) -> dict:
+    """Enforce mutually exclusive guard predicates."""
+    g = dict(guard)
+    if g.get("when_facing_shove"):
+        g["when_facing_bet"] = False
+        g["when_opening"] = False
+    elif g.get("when_opening"):
+        g["when_facing_bet"] = False
+        g["when_facing_shove"] = False
+    elif g.get("when_facing_bet"):
+        g["when_opening"] = False
+    return g
+
+
+def _shove_companion_guards(guard: dict) -> list[dict]:
+    """Opening guards listing trash hands also need a vs-shove companion."""
+    if not guard.get("when_opening"):
+        return []
+    gid = (guard.get("id") or "").strip()
+    if not gid or gid.endswith("_vs_shove"):
+        return []
+    hands = [
+        h for h in (guard.get("hand_classes") or [])
+        if _is_shove_leak_hand(str(h))
+    ]
+    if not hands:
+        return []
+    return [normalize_runtime_guard({
+        "id": f"{gid}_vs_shove",
+        "street": guard.get("street") or "Preflop",
+        "positions": list(guard.get("positions") or []),
+        "hand_classes": hands,
+        "when_facing_shove": True,
+        "min_commit_ratio": DEFAULT_SHOVE_COMMIT_RATIO,
+        "action": guard.get("action") or "fold",
+        "reason": f"vs shove — companion to {gid}",
+    })]
+
+
+def repair_runtime_guards(*, source: str = "guard_repair") -> list[dict]:
+    """Normalize guards and add missing vs-shove companions for opening rules."""
+    guards = [normalize_runtime_guard(g) for g in load_runtime_guards()]
+    existing_ids = {g.get("id") for g in guards if g.get("id")}
+    extras: list[dict] = []
+    for g in guards:
+        for comp in _shove_companion_guards(g):
+            if comp.get("id") not in existing_ids:
+                extras.append(comp)
+                existing_ids.add(comp["id"])
+    merged = guards + extras
+    merged.sort(key=lambda x: x.get("added_at") or "", reverse=True)
+    merged = merged[:MAX_RUNTIME_GUARDS]
+    _write_json(
+        _runtime_guards_path(),
+        {"updated_at": _utc_now(), "source": source, "guards": merged},
+    )
+    return merged
 
 
 def _guard_matches(
@@ -236,6 +388,7 @@ def _guard_matches(
     hand_class: str,
     call_chips: int,
     can_check: bool,
+    hero_stack_chips: int = 0,
 ) -> bool:
     g_street = (guard.get("street") or "").strip()
     if g_street and g_street.lower() != street.lower():
@@ -246,7 +399,12 @@ def _guard_matches(
     hand_classes = guard.get("hand_classes") or []
     if hand_classes and hand_class not in hand_classes:
         return False
-    if guard.get("when_facing_bet") and call_chips <= 0:
+    if guard.get("when_facing_shove"):
+        if call_chips <= 0:
+            return False
+        if _commit_ratio(call_chips, hero_stack_chips) < _shove_commit_ratio(guard):
+            return False
+    elif guard.get("when_facing_bet") and call_chips <= 0:
         return False
     if guard.get("when_opening") and call_chips > 0:
         return False
@@ -262,6 +420,7 @@ def match_runtime_guard(
     hand_class: str,
     call_chips: int,
     can_check: bool,
+    hero_stack_chips: int = 0,
 ) -> Optional[dict]:
     for guard in load_runtime_guards():
         if _guard_matches(
@@ -271,6 +430,7 @@ def match_runtime_guard(
             hand_class=hand_class,
             call_chips=call_chips,
             can_check=can_check,
+            hero_stack_chips=hero_stack_chips,
         ):
             return guard
     return None

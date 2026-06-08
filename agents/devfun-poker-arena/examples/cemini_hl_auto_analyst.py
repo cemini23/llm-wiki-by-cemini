@@ -37,7 +37,9 @@ from hl_runtime_config import (  # noqa: E402
     load_runtime_guards,
     load_style_overrides,
     merge_runtime_guards,
+    normalize_runtime_guard,
 )
+from hl_runtime_config import _clamp_style_value  # noqa: E402
 from gambling_wiki_kb import fetch_gambling_wiki_briefing, load_librarian_env  # noqa: E402
 from llm_routing_client import chat_json  # noqa: E402
 
@@ -67,9 +69,11 @@ Output ONLY valid JSON matching this schema:
       "id": "unique_snake_case",
       "street": "Preflop|Flop|Turn|River",
       "positions": ["SB","BB","UTG","MP","CO","BTN"],
-      "hand_classes": ["72o","Kh2h mapped as hand class like 72o"],
+      "hand_classes": ["72o","T5o","Q9o — standard hand_class tokens only"],
       "when_facing_bet": true,
+      "when_facing_shove": false,
       "when_opening": false,
+      "min_commit_ratio": 0.28,
       "action": "fold|check",
       "reason": "analyze row reference"
     }
@@ -78,8 +82,15 @@ Output ONLY valid JSON matching this schema:
   "operator_note": "2-4 sentences for human"
 }
 
+Guard predicates (mutually exclusive — pick ONE):
+- when_opening=true: fold trash opens (call_chips=0).
+- when_facing_shove=true: fold vs large commits (call_chips/stack >= min_commit_ratio, default 0.28).
+  Use for preflop -100 stack-offs (T5o BTN, Q9o BTN, QJo CO). NOT when_opening.
+- when_facing_bet=true: fold vs any bet (smaller raises; not stack-offs).
+
 Rules:
-- Prefer runtime_guards (JSON rules) over editing Python source.
+- Prefer runtime_guards for postflop / niche spots; preflop stack-offs belong in when_facing_shove guards.
+- Do NOT use when_opening for hands that leaked via calling a shove — use when_facing_shove instead.
 - kill_switch=true ONLY for catastrophic bugs (e.g. calling off 100bb with trash repeatedly,
   obvious infinite bleed pattern in analyze, logic that can zero stack in one orbit).
 - Do NOT kill_switch for normal variance or single -100 hands.
@@ -183,10 +194,16 @@ def _validate_response(data: dict[str, Any]) -> dict[str, Any]:
     if not isinstance(guards, list):
         data["runtime_guards"] = []
     else:
-        data["runtime_guards"] = [g for g in guards if isinstance(g, dict)][:3]
+        data["runtime_guards"] = [
+            normalize_runtime_guard(g) for g in guards if isinstance(g, dict)
+        ][:3]
     tweaks = data.get("style_tweaks")
     if not isinstance(tweaks, dict):
         data["style_tweaks"] = {}
+    else:
+        for key in ("fold_slack_delta", "call_margin_delta", "join_retry_multiplier"):
+            if tweaks.get(key) is not None:
+                tweaks[key] = _clamp_style_value(key, tweaks[key])
     return data
 
 

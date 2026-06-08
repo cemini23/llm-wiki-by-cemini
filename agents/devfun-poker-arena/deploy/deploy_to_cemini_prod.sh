@@ -144,9 +144,10 @@ export CEMINI_HL_DEPLOY_GRACE_HOURS="\${CEMINI_HL_DEPLOY_GRACE_HOURS:-6}"
 ./venv/bin/python -c "
 import sys
 sys.path.insert(0, 'examples')
-from hl_runtime_config import record_deploy_grace
+from hl_runtime_config import record_deploy_grace, repair_runtime_guards
 g = record_deploy_grace(commit='${DEPLOY_COMMIT}', source='deploy')
-print('deploy_grace OK until', g.get('expires_at'), 'commit', g.get('commit'))
+n = len(repair_runtime_guards(source='deploy'))
+print('deploy_grace OK until', g.get('expires_at'), 'commit', g.get('commit'), 'guards', n)
 "
 REMOTE
 

@@ -9,13 +9,17 @@ from examples.cemini_decide import decide
 from examples.cemini_hl_auto_analyst import apply_response
 from examples.hl_runtime_config import (
     activate_kill_switch,
+    apply_style_overrides,
     clear_kill_switch,
     deploy_grace_status,
     is_deploy_grace_active,
     is_kill_switch_active,
+    load_style_overrides,
     match_runtime_guard,
     merge_runtime_guards,
     record_deploy_grace,
+    repair_runtime_guards,
+    reset_style_overrides,
 )
 from examples.testing import _allowed, _table
 
@@ -94,6 +98,78 @@ def test_deploy_grace_active(tmp_path: Path, monkeypatch):
     status = deploy_grace_status()
     assert status["commit"] == "abc1234"
     assert status["remaining_hours"] > 0
+
+
+def test_when_facing_shove_guard(tmp_path: Path, monkeypatch):
+    guards = tmp_path / "guards.json"
+    monkeypatch.setenv("CEMINI_RUNTIME_GUARDS_PATH", str(guards))
+    merge_runtime_guards([{
+        "id": "btn_trash_vs_shove",
+        "street": "Preflop",
+        "positions": ["BTN"],
+        "hand_classes": ["T5o", "Q9o"],
+        "when_facing_shove": True,
+        "min_commit_ratio": 0.28,
+        "action": "fold",
+        "reason": "test",
+    }], source="pytest")
+    g = match_runtime_guard(
+        street="Preflop",
+        position="BTN",
+        hand_class="T5o",
+        call_chips=400,
+        can_check=False,
+        hero_stack_chips=1000,
+    )
+    assert g is not None
+    assert match_runtime_guard(
+        street="Preflop",
+        position="BTN",
+        hand_class="T5o",
+        call_chips=40,
+        can_check=False,
+        hero_stack_chips=1000,
+    ) is None
+
+
+def test_opening_guard_gets_shove_companion(tmp_path: Path, monkeypatch):
+    guards = tmp_path / "guards.json"
+    monkeypatch.setenv("CEMINI_RUNTIME_GUARDS_PATH", str(guards))
+    merge_runtime_guards([{
+        "id": "btn_co_open_fold_weak_offsuit",
+        "street": "Preflop",
+        "positions": ["BTN", "CO"],
+        "hand_classes": ["T5o", "QJo", "72o"],
+        "when_opening": True,
+        "action": "fold",
+        "reason": "test",
+    }], source="pytest")
+    repaired = repair_runtime_guards(source="pytest")
+    ids = {g["id"] for g in repaired}
+    assert "btn_co_open_fold_weak_offsuit_vs_shove" in ids
+    g = match_runtime_guard(
+        street="Preflop",
+        position="BTN",
+        hand_class="T5o",
+        call_chips=500,
+        can_check=False,
+        hero_stack_chips=1000,
+    )
+    assert g is not None
+    assert g["id"] == "btn_co_open_fold_weak_offsuit_vs_shove"
+
+
+def test_style_delta_clamp_and_reset_on_deploy(tmp_path: Path, monkeypatch):
+    style = tmp_path / "style.json"
+    grace = tmp_path / "grace.json"
+    monkeypatch.setenv("CEMINI_STYLE_OVERRIDES_PATH", str(style))
+    monkeypatch.setenv("CEMINI_DEPLOY_GRACE_PATH", str(grace))
+    apply_style_overrides({"fold_slack_delta": 0.12, "call_margin_delta": 0.15})
+    assert load_style_overrides()["fold_slack_delta"] == 0.08
+    assert load_style_overrides()["call_margin_delta"] == 0.08
+    record_deploy_grace(commit="abc1234", source="pytest")
+    assert load_style_overrides()["fold_slack_delta"] == 0.0
+    reset_style_overrides(source="pytest", commit="manual")
 
 
 def test_apply_response_suppresses_kill_during_grace(tmp_path: Path, monkeypatch):
