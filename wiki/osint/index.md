@@ -1254,6 +1254,11 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [ADK Arena](entities/tools/adk-arena.md) — `[VALIDATED 2026-06-06]` Phase-0 NO-GO (MIT); MCP-Atlas patterns steal-only. — entity, tool, evaluation, k101
 - [Tool Evaluation and Wiki Fit — 63-URL (K103)](sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md) — `[VALIDATED 2026-06-07]` 63-link eval; Phase-0 on 5 Adopt; application-skills NO-GO; pmxt reaffirmed. — source, tool-evaluation, k103
 - [Trading posts compilation K103 — 13 posts](sources/trading-posts-compilation-19-2026-06-07.md) — Pyth Pro SaaS + PM debunk + harness cluster. — source, trading-posts, k103
+- [Trading posts compilation K106 — 6 posts](sources/trading-posts-compilation-6-2026-06-08.md) — AS MM deep-dive + PM alert SaaS + DexScreener MCP. — source, trading-posts, k106
+- [Polymarket alert monitoring SaaS](concepts/polymarket-alert-monitoring-saas.md) — `[DRAFT 2026-06-08]` resolution traps + cross-venue gap feeds (REFERENCE). — concept, polymarket, k106
+- [DexScreener MCP](entities/tools/dexscreener-mcp.md) — `[DRAFT 2026-06-08]` Claude Desktop DEX research bridge. — entity, tool, mcp, k106
+- [@RuujSs](entities/people/ruujss.md) — AS market-making educator. — entity, person, k106
+- [@whydeso](entities/people/whydeso.md) — PM alert SaaS operator. — entity, person, k106
 - [Derivative-Informed Operator Learning (2606.05900)](sources/arxiv-derivative-informed-operator-learning-2606-05900-2026-06-07.md) — Greeks-aware neural operators; REFERENCE. — source, arxiv, quant-finance, k103
 - [Knuteson overnight/intraday (SSRN 4619084)](sources/ssrn-knuteson-overnight-intraday-4619084-2026-06-07.md) — satirical microstructure audit; skepticism prior. — source, ssrn, k103
 - [agent-skill-manager (asm)](entities/tools/agent-skill-manager.md) — `[VALIDATED 2026-06-07]` CONDITIONAL-GO CCC skill registry (MIT). — entity, tool, ccc, k103
@@ -1266,7 +1271,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [AI-Text-Humanizer-App](entities/tools/ai-text-humanizer-app.md) — `[VALIDATED 2026-06-06]` SEO Streamlit humanizer (MIT). — entity, tool, seo, k102
 - [flowforge-skill](entities/tools/flowforge-skill.md) — `[VALIDATED 2026-06-06]` draw.io Claude Code skill (MIT). — entity, tool, ccc, k102
 - [Crypto pair trading DRL shielded execution](concepts/crypto-pair-trading-drl-shielded-execution.md) — `[DRAFT 2026-06-04]` filter-then-rank + deterministic shield. — concept, crypto, k98
-- [Avellaneda-Stoikov market making baseline](concepts/avellaneda-stoikov-market-making-baseline.md) — `[DRAFT 2026-06-04]` reservation price + inventory skew. — concept, market-making, k98
+- [Avellaneda-Stoikov market making baseline](concepts/avellaneda-stoikov-market-making-baseline.md) — `[DRAFT 2026-06-08]` reservation price + inventory skew + K106 production adaptations. — concept, market-making, k98, k106
 - [Binance market data](entities/data-sources/binance.md) — `[DRAFT 2026-06-04]` spot/futures WS for PM fusion + crypto pair papers. — entity, data-source, k98
 - [Agent memory pipeline eval rubric](concepts/agent-memory-pipeline-eval-rubric.md) — `[DRAFT 2026-06-02]` K94 steal-from WorldMemArena (CCC) — Write/Maintenance/Retrieval/Use stages for stash + claude-mem + librarian. — concept, agent-memory, evaluation, k94
 - [MCP tool-calling eval scaffold](concepts/mcp-tool-calling-eval-scaffold.md) — `[DRAFT 2026-06-02]` K94 steal-from MAVEN — cross-domain smoke matrix for lazy-tool / prod-mcp / conductor. — concept, mcp, evaluation, k94

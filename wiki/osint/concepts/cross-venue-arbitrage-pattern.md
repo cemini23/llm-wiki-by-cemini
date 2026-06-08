@@ -5,6 +5,7 @@ tags: [trading-strategy, arbitrage, prediction-markets, polymarket, kalshi, arch
 keywords: [cross-venue-arbitrage, polymarket-kalshi-arb, btc-arbitrage, atomic-execution, dual-venue-pricing, partial-fill-risk, cross-doc-duplicate]
 related:
   - concepts/pyth-pro-saas-build-patterns.md
+  - concepts/polymarket-alert-monitoring-saas.md
   - sources/5-5-links-2-tool-eval.md
   - sources/links-3-5-4-tool-eval.md
   - entities/platforms/polymarket.md
@@ -46,7 +47,7 @@ related:
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-06-05
+updated: 2026-06-08
 ---
 
 ## Relations
@@ -63,6 +64,7 @@ updated: 2026-06-05
 - @concepts/prediction-market-historical-analysis.md — historical price-divergence statistics inform arb threshold-tuning + viability assessment
 - @concepts/non-latency-arbitrage-strategies.md — the slow-arb complement: standing-order strategies (Dutch-book, YES/NO complement, slow cross-venue, calendar) whose edge is a logical inconsistency rather than a ms-scale quote race
 - @concepts/prediction-market-statistical-arbitrage.md — the quant *signal* layer for this loop: cointegration + Ornstein-Uhlenbeck calibration decides *when* a Poly×Kalshi spread is tradeable and at what threshold; this page is the poll→execute→reconcile machinery that acts on it
+- @concepts/polymarket-alert-monitoring-saas.md — K106 subscription gap-alert framing (monitor-only)
 - @concepts/polymarket-updown-bot-taxonomy.md — K52 6-type bot taxonomy; its Type 4 (cross-timeframe lag, 5min↔15min) is the within-venue cousin of this cross-venue loop
 - @sources/x-posts-quant-oss-polymarket-bots-2026-05.md — K52 X-posts batch; Post 4 (@ridark_eth) supplies the quant math layer for this loop
 - @entities/tools/prediction-market-analysis.md — K52-verified MIT dataset; its cross-venue `comparison/` analyses + trade-price history are a backtest substrate for tuning this loop's profit thresholds

@@ -17,9 +17,10 @@ related:
   - entities/people/yifan-guo.md
   - sources/ai-for-trading-strategies-jevtic-zhaw-2022.md
   - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
+  - sources/trading-posts-compilation-6-2026-06-08.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-21
+updated: 2026-06-08
 clusters: [quant-finance, time-series]
 ---
 
@@ -34,6 +35,7 @@ clusters: [quant-finance, time-series]
 - @concepts/event-based-prediction-market-ml.md — K56 extension: documents why this equity-style framework fails when ported naively to Polymarket (event-resolution structural breaks)
 - @concepts/monte-carlo-permutation-test-mcpt.md — K56 complementary validation framework; MCPT tests whether the backtested edge is real vs data-mining bias
 - @entities/people/rohonchain.md — author
+- @sources/trading-posts-compilation-6-2026-06-08.md — K106 Post 1 refresh (2008 MBS opener; overlaps K55 body)
 - @entities/people/yifan-guo.md — author of the academic-foundation paper (SSRN 5140015)
 
 ## Raw Concept

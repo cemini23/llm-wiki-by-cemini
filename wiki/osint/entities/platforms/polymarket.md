@@ -30,6 +30,7 @@ related:
   - entities/tools/polymarket-python-order-utils.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/cross-venue-arbitrage-pattern.md
+  - concepts/polymarket-alert-monitoring-saas.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/polymarket-microstructure-findings.md
   - sources/polymarket-microstructure-anatomy-2604.24366.md
@@ -102,10 +103,11 @@ related:
   - sources/polygnosis-2-polymarket-osint-2026-06-01.md
   - sources/arxiv-pm-settlement-discounting-2605-31431-2026-06-02.md
   - concepts/pm-capital-lock-up-settlement-discount.md
-
+  - sources/trading-posts-compilation-6-2026-06-08.md
+  - entities/people/whydeso.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-31
+updated: 2026-06-08
 ---
 
 ## Relations
@@ -132,6 +134,8 @@ updated: 2026-05-31
 - @sources/trading-posts-compilation-25-2026-05-27.md — K72 Posts (ZeroCortex throughput, copy-trading refresh)
 - @concepts/prediction-markets-efficiency-wolfers-zitzewitz.md — academic efficiency prior (NBER w10504)
 - @concepts/polymarket-research-throughput-bottleneck.md — K72 research automation framing
+- @sources/trading-posts-compilation-6-2026-06-08.md — K106 alert SaaS + MM posts
+- @entities/people/whydeso.md — K106 PM alert subscription operator
 
 ## Raw Concept
 

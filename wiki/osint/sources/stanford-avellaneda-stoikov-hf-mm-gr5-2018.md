@@ -10,10 +10,11 @@ related:
   - concepts/polymarket-market-making-architectures.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - entities/data-sources/open-meteo.md
+  - entities/people/ruujss.md
 read_status: skimmed
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-07
+updated: 2026-06-08
 ---
 
 ## Relations
@@ -22,6 +23,7 @@ updated: 2026-06-07
 - @sources/stanford-ml-orderbook-mm-gr4-2017.md — sibling Stanford MM project (OBP ML overlay, K104)
 - @concepts/order-book-pressure-ml-market-making.md — LOB directional skew synthesis
 - @concepts/polymarket-market-making-architectures.md — MIT OSS PM MM refs build on same theoretical core
+- @entities/people/ruujss.md — K106 X Article educator (production adaptations)
 
 ## Raw Concept
 

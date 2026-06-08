@@ -26,6 +26,7 @@ related:
   - entities/tools/kalshi-llms-txt.md
   - concepts/kalshi-api-reference.md
   - concepts/cross-venue-arbitrage-pattern.md
+  - concepts/polymarket-alert-monitoring-saas.md
   - concepts/prediction-markets-efficiency-wolfers-zitzewitz.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/cemini-backtest-report-kit.md
@@ -60,7 +61,7 @@ related:
   - concepts/gambling-wiki-federation.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-31
+updated: 2026-06-08
 ---
 
 ## Relations

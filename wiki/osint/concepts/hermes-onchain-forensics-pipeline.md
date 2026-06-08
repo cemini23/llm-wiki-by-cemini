@@ -8,9 +8,10 @@ related:
   - concepts/x402-agent-micropayments-data-access.md
   - entities/tools/hermes-agent.md
   - concepts/polymarket-wallet-alpha-pipeline.md
+  - entities/tools/dexscreener-mcp.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-08
 ---
 
 ## Relations
@@ -19,6 +20,7 @@ updated: 2026-05-29
 - @concepts/x402-agent-micropayments-data-access.md — Nansen paid tier
 - @entities/tools/hermes-agent.md — host runtime + skill bundling
 - @concepts/polymarket-wallet-alpha-pipeline.md — complementary wallet-alpha stage
+- @entities/tools/dexscreener-mcp.md — K106 Claude Desktop path (free API; no x402)
 
 ## Raw Concept
 

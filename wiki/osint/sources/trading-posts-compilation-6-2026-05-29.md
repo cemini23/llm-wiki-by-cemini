@@ -5,6 +5,7 @@ tags: [source, trading-posts, x-twitter, hermes, x402, obsidian, rag, macro-rota
 keywords: [posts-docx-k78, macro-charts, suryanshti777, alphacartell, damidefi, 0xjeff, cyrilxbt, hermes-forensics, x402, binary-quantization]
 related:
   - sources/trading-posts-compilation-38-2026-05-28.md
+  - sources/trading-posts-compilation-6-2026-06-08.md
   - sources/trading-posts-compilation-25-2026-05-27.md
   - sources/trading-posts-compilation-20-2026-05-27.md
   - sources/trading-posts-farxxxxx-hermes-koroush-2026-05-24.md

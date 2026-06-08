@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-08] ingest | K106 — Posts.docx (6 posts)
+
+- **Source (1)** — `trading-posts-compilation-6-2026-06-08.md` (sha `76b26ee5…`, 6 posts)
+- **Concepts (1 new + 1 update)** — `polymarket-alert-monitoring-saas`; `avellaneda-stoikov-market-making-baseline` (K106 production adaptations)
+- **Entities (3 new + 4 updates)** — `ruujss`, `whydeso`, `dexscreener-mcp`; `rohonchain`, `polymarket`, `kalshi`, `time-series-arima-garch-framework`
+- **Cross-wiki** — SEO K106 style pass (@Zephyr_hg n8n); CCC brief on disk (DexScreener MCP)
+- **Briefs (1 on disk)** — `2026-06-08_k106-ccc-dexscreener-mcp-from-osint.md` (REFERENCE; no prod scp)
+- **Raw** — Posts.docx → librarian; inbox cleared
+
 ## [2026-06-08] ingest | K105 — daily digest full ingest
 
 - **RocketSmith** (arXiv 2606.00097) — 1 source + 1 entity + 3 concept updates. Physical-domain harness (6 subagents, 7 skills, MCP); 4 flight-tested rockets; 84% apogee sim accuracy. MIT repo; **REFERENCE** for Cemini (steal harness patterns).
