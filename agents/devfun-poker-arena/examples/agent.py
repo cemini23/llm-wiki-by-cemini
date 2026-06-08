@@ -545,6 +545,7 @@ def _run_benchmark_loop(
             deadline_s = (max(0.0, (deadline_ms / 1000.0) - time.time())
                           if deadline_ms else 10.0)
             research_context = _safe_research_context(table, retrieve_fn)
+            research_context["eval_panel_mode"] = True
             try:
                 action = decide_fn(table, deadline_s=deadline_s,
                                    research_context=research_context)

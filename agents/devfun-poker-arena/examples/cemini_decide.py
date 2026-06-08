@@ -205,8 +205,9 @@ def decide(
     qual_protect = bool(ctx.get("qualification_protect"))
     lead_protect = bool(ctx.get("lead_protect"))
     first_protect = bool(ctx.get("first_protect"))
+    eval_panel = bool(ctx.get("eval_panel_mode"))
     ko_survival = bool(ctx.get("ko_survival_lane"))
-    exploit_gate = qual_protect or first_protect or ko_survival
+    exploit_gate = qual_protect or first_protect or ko_survival or eval_panel
     if exploit_gate and hud_mode == "maniac":
         hud_mode = "unknown"
     margins = hud.get("margins") or exploit_margins(hud_mode)
@@ -216,6 +217,11 @@ def decide(
     else:
         mem_margins = exploit_from_memory(villain_mem) if villain_mem else {}
     margins = _merge_margins(margins, mem_margins)
+    if eval_panel:
+        margins = _merge_margins(
+            margins,
+            {"fold_slack_delta": 0.04, "call_margin_delta": 0.06},
+        )
     max_playable = ctx.get("max_playable_chips")
     if max_playable is None and (qual_protect or lead_protect or first_protect):
         max_playable = max_playable_chips(
@@ -477,6 +483,17 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: first_protect CO trash — fold")
 
+    # HL R27: always-on CO/SB panel trash — eval −100 preflop (not first_protect-gated).
+    if (street == "Preflop" and position in ("CO", "SB")
+            and hc in _WEAK_FACING_RAISE and "fold" in available):
+        if call_chips > 0 or position == "CO":
+            return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                          msg=f"{binding}: panel trash {position} — fold")
+    if (street == "Preflop" and position == "SB" and call_chips == 0
+            and _is_sb_complete_trash(hc) and "check" in available):
+        return _build("check", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: SB complete trash — check")
+
     # CO/BTN: never call limps/raises with dominated trash (Q9o/Q5o multiway −100 HL R20/R21).
     if (street == "Preflop" and position in ("CO", "BTN") and call_chips > 0
             and _is_sb_complete_trash(hc) and "fold" in available):
@@ -516,7 +533,7 @@ def decide(
             position=position, ps_bias=ps_bias, ps_library=ps_library,
             hud_mode=hud_mode, margins=margins, cold_start=cold_start,
             lead_protect=lead_protect, qual_protect=qual_protect,
-            first_protect=first_protect)
+            first_protect=first_protect, eval_panel=eval_panel)
     elif street == "Preflop" and call_chips > 0:
         nemesis_ctx = ctx.get("nemesis_handles")
         handles = (
@@ -532,7 +549,7 @@ def decide(
             in_position=in_position, ps_bias=ps_bias, ps_library=ps_library,
             hud_mode=hud_mode, margins=margins, lead_protect=lead_protect,
             qual_protect=qual_protect, first_protect=first_protect,
-            nemesis_opener=nemesis_opener)
+            nemesis_opener=nemesis_opener, eval_panel=eval_panel)
     elif call_chips == 0:
         action_name, amount = _postflop_free(
             equity, allowed, available, pot, pot_control=pot_control,
@@ -640,7 +657,8 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
                   cold_start: bool = False,
                   lead_protect: bool = False,
                   qual_protect: bool = False,
-                  first_protect: bool = False) -> tuple[str, Optional[int]]:
+                  first_protect: bool = False,
+                  eval_panel: bool = False) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     if (position == "SB" and _weak_ace_offsuit(hand_class)
             and suggested == "raise" and "check" in available):
@@ -658,8 +676,16 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             return "fold", None
         if "check" in available:
             return "check", None
+    # HL R27: CO/SB chart-trash opens — always (eval panel preflop −100 leaks).
+    if (position in ("CO", "SB") and hand_class in _WEAK_FACING_RAISE
+            and "fold" in available):
+        return "fold", None
     # HL R25: no EP suited-broadway opens under first_protect (QJs MP, KQs UTG chart leaks).
     if (first_protect and position in ("UTG", "MP")
+            and hand_class in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
+        return "fold", None
+    # eval_panel_mode: EP suited-broadway opens off (panel shove traps).
+    if (eval_panel and position in ("UTG", "MP")
             and hand_class in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
         return "fold", None
     # HL R26 #01: CO chart-trash — no opens while chip #1 (62o/Q2o CO −100).
@@ -723,7 +749,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                     lead_protect: bool = False,
                     qual_protect: bool = False,
                     first_protect: bool = False,
-                    nemesis_opener: bool = False) -> tuple[str, Optional[int]]:
+                    nemesis_opener: bool = False,
+                    eval_panel: bool = False) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     hc = chart.get("hand_class") or ""
     position = chart.get("position") or ""
@@ -759,6 +786,11 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and "fold" in available):
         return "fold", None
 
+    # HL R27: CO/SB chart-trash vs raise — always (eval Kh2h SB, 62o CO −100).
+    if (position in ("CO", "SB") and call_chips > 0
+            and hc in _WEAK_FACING_RAISE and "fold" in available):
+        return "fold", None
+
     # HL R26 #01: CO chart-trash vs raise under first_protect (62o shove traps).
     if (first_protect and position == "CO" and call_chips > 0
             and hc in _WEAK_FACING_RAISE and "fold" in available):
@@ -771,6 +803,9 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
 
     # HL R25 #01: EP suited broadway vs raise — fold under first_protect (shove traps).
     if (first_protect and position in ("UTG", "MP") and call_chips > 0
+            and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
+        return "fold", None
+    if (eval_panel and position in ("UTG", "MP") and call_chips > 0
             and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
         return "fold", None
 

@@ -86,6 +86,8 @@ _NEMESIS_CTX = {"nemesis_handles": ["hunterguy102", "thaddius"]}
 
 _FIRST_PROTECT_CTX = {"first_protect": True, "qualification_protect": True}
 
+_EVAL_PANEL_CTX = {"eval_panel_mode": True}
+
 
 def regression_spots() -> list[RegressionSpot]:
     return [
@@ -619,5 +621,41 @@ def nuts_regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="first_protect: fold CO trash vs raise.",
+        ),
+        RegressionSpot(
+            id="prod_62o_co_open_r27",
+            source="HL R27 eval — 62o CO −100 preflop (always-on, no first_protect)",
+            table=co_unopened(["2d", "6d"]),
+            context={},
+            forbidden=frozenset({"bet", "raise", "all-in", "call"}),
+            required=frozenset({"fold"}),
+            notes="R27: always fold CO chart-trash opens (eval panel).",
+        ),
+        RegressionSpot(
+            id="prod_62o_co_vs_raise_r27",
+            source="HL R27 eval — 62o CO vs shove (always-on)",
+            table=co_facing_raise(["2d", "6d"]),
+            context={},
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="R27: always fold CO trash vs raise.",
+        ),
+        RegressionSpot(
+            id="prod_k2o_sb_vs_open_r27",
+            source="HL R27 eval — Kh2h SB −100 preflop",
+            table=sb_facing_open(["Kh", "2h"]),
+            context={},
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="R27: SB K2o-type trash vs open — fold.",
+        ),
+        RegressionSpot(
+            id="prod_kqs_utg_open_eval_panel",
+            source="eval_panel_mode — Qh Kh UTG shove trap",
+            table=utg_unopened(["Kh", "Qh"]),
+            context=_EVAL_PANEL_CTX,
+            forbidden=frozenset({"bet", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="eval_panel_mode: no KQs UTG open.",
         ),
     ]
