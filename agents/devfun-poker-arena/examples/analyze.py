@@ -119,6 +119,20 @@ def _resolve_latest_competition(tables: list[dict]) -> Optional[str]:
     return None
 
 
+def _resolve_chip_delta(
+    table_id: str | None,
+    my_seat: dict,
+    chip_deltas: dict[str, int],
+) -> Optional[int]:
+    """Real chip delta only — never fabricate payout−100 (phantom −100 stack-offs)."""
+    if table_id and table_id in chip_deltas:
+        return int(chip_deltas[table_id])
+    raw = my_seat.get("chipDelta") or my_seat.get("chip_delta")
+    if raw is not None:
+        return int(raw)
+    return None
+
+
 def _collect_hand_rows(tables: list[dict], chip_deltas: dict[str, int],
                        self_agent_id: str) -> list[dict]:
     """Join recent-tables with replay chip deltas for our agent."""
@@ -136,9 +150,9 @@ def _collect_hand_rows(tables: list[dict], chip_deltas: dict[str, int],
         payout = int(my_seat.get("payoutChips") or 0)
         stack_end = int(my_seat.get("stackChips") or 0)
 
-        delta = chip_deltas.get(tid)
+        delta = _resolve_chip_delta(tid, my_seat, chip_deltas)
         if delta is None:
-            delta = payout - 100
+            continue
 
         winner = (t.get("winners") or [{}])[0]
         rows.append({
@@ -203,9 +217,20 @@ def analyze(tables: list[dict], chip_deltas: dict[str, int],
         )
 
     rows = _collect_hand_rows(tables, chip_deltas, self_agent_id)
+    seated = sum(
+        1 for t in tables
+        for s in (t.get("seats") or [])
+        if s.get("agentId") == self_agent_id
+    )
+    skipped = max(0, seated - len(rows))
     if not rows:
-        return ("No hands found where you were seated.\n"
-                "Check that --match competitionId matches a comp you played.\n")
+        hint = (
+            "No hands with verified chipDelta (replays + seat export).\n"
+            "Check that --match competitionId matches a comp you played.\n"
+        )
+        if skipped:
+            hint += f"Skipped {skipped} seated tables without chipDelta.\n"
+        return hint
 
     total = len(rows)
     wins = sum(1 for r in rows if r["delta"] > 0)
@@ -223,8 +248,12 @@ def analyze(tables: list[dict], chip_deltas: dict[str, int],
         f"Total hands       : {total}",
         f"Wins / Losses     : {wins} / {losses}"
         + (f" (push: {pushes})" if pushes else ""),
-        "",
     ]
+    if skipped:
+        lines.append(
+            f"Skipped (no chipDelta): {skipped} seated tables — not in stats below"
+        )
+    lines.append("")
 
     metrics = analyze_metrics(rows)
     lines.append("POSITION BREAKDOWN  (worst → best avg chip delta):")

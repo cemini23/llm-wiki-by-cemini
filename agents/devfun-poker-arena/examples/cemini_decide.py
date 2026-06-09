@@ -565,6 +565,33 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: CO weak two-pair paired board — fold")
 
+    # EP/MP/CO pocket 77–QQ on ace-paired runout — 99 MP −448 (HL R12 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP", "CO")
+            and _hero_vulnerable_pocket_on_ace_paired_board(hole, board, hc)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.22), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: OOP pocket under ace pair — fold")
+
+    # EP/MP/CO AK/AQ on paired runout — AK MP −624 on 8Ah4434 (HL R13 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP", "CO")
+            and _hero_ace_broadway_vulnerable_on_paired_board(hole, board, hc)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.22), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: ace broadway on paired board — fold")
+
+    # SB/BB/EP/CO small pocket under board ace — 55 BB −225 (HL R14 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP", "CO", "SB", "BB")
+            and _hero_small_pocket_under_board_ace(hole, board, hc)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.22), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: small pocket under board ace — fold")
+
     # BB OOP AK/AQ on A-high broadway flops — Kh As BB −116 on AJ4 (HL R10 #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and position == "BB" and not in_position
@@ -573,9 +600,9 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: BB vulnerable ace TPTK OOP — fold")
 
-    # EP/CO OOP ace-x second pair — A9o MP −100 (HL R9 #14).
+    # EP/MP/CO ace-x second pair — A9o MP −100 (HL R9 #14).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
-            and position in ("UTG", "MP", "CO") and not in_position
+            and position in ("UTG", "MP", "CO")
             and len(board) >= 4
             and _marginal_ace_kicker(hc)
             and _ace_kicker_second_pair(hole, board)
@@ -1269,9 +1296,15 @@ def _preflop_stackoff_should_fold(
     """Fold non-premium vs large preflop commits (empty-board −100 cluster)."""
     if call_chips <= 0 or hero_stack_chips <= 0 or not hc:
         return False
-    if hc in _PREFLOP_3BET_OK or _is_strong_continue(hc):
+    if hc in _PREFLOP_3BET_OK:
         return False
     ratio = call_chips / hero_stack_chips
+    if hc in {"AA", "KK", "QQ", "AKs", "AKo"}:
+        return False
+    if hc in {"JJ", "TT", "AQs"}:
+        return ratio >= 0.40
+    if hc in {"99", "88", "AQo", "AJs", "KQs"}:
+        return ratio >= 0.25
     if ratio >= 0.40:
         return True
     if ratio >= 0.18 and hc in _WEAK_FACING_RAISE:
@@ -1341,6 +1374,61 @@ def _hero_has_ace_on_paired_ace_board(hole: list[str], board: list[str]) -> bool
     if len(hole) != 2 or not _board_has_ace_pair(board):
         return False
     return any(c[0].upper() == "A" for c in hole)
+
+
+def _hero_small_pocket_under_board_ace(
+    hole: list[str], board: list[str], hc: str,
+) -> bool:
+    """22–99 under board ace — dominated (55 BB −225 on 2c7hAsT9d HL R14)."""
+    if len(board) < 4 or not _board_has_ace(board):
+        return False
+    if not _small_pocket_pair(hc):
+        return False
+    if _hero_made_hand_exempt(hole, board) or _hero_pocket_set(hole, board):
+        return False
+    return _RANKS.index(hc[0]) < _RANKS.index("A")
+
+
+def _hero_ace_broadway_vulnerable_on_paired_board(
+    hole: list[str], board: list[str], hc: str,
+) -> bool:
+    """AK/AQ two-pair on paired runout — dominated by any board-pair trips (AK MP −624)."""
+    if len(board) < 4 or not _board_is_paired(board):
+        return False
+    if hc not in {"AKs", "AKo", "AQs", "AQo"}:
+        return False
+    if _hero_made_hand_exempt(hole, board) or _hero_boat_or_quads_on_paired_board(
+        hole, board,
+    ):
+        return False
+    hranks = [c[0].upper() for c in hole]
+    if "A" not in hranks:
+        return False
+    branks = [c[0].upper() for c in board]
+    bc = Counter(branks)
+    for r in hranks:
+        if bc.get(r, 0) >= 2:
+            return False
+    return True
+
+
+def _hero_vulnerable_pocket_on_ace_paired_board(
+    hole: list[str], board: list[str], hc: str,
+) -> bool:
+    """Pocket 77–QQ on AAx without set/boat — dominated two pair (99 MP −448 HL R12)."""
+    if not _board_has_ace_pair(board) or len(board) < 4:
+        return False
+    if not (_small_pocket_pair(hc) or _medium_pocket_pair(hc)):
+        return False
+    if _hero_made_hand_exempt(hole, board) or _hero_pocket_set(hole, board):
+        return False
+    if _hero_boat_or_quads_on_paired_board(hole, board):
+        return False
+    hranks = [c[0].upper() for c in hole]
+    if len(hranks) != 2 or hranks[0] != hranks[1]:
+        return False
+    branks = [c[0].upper() for c in board]
+    return hranks[0] not in branks
 
 
 def _hero_weak_two_pair_on_paired_board(hole: list[str], board: list[str]) -> bool:
@@ -1687,6 +1775,10 @@ def _board_is_paired(board: list[str]) -> bool:
         return False
     branks = [c[0].upper() for c in board]
     return max(Counter(branks).values()) >= 2
+
+
+def _board_has_ace(board: list[str]) -> bool:
+    return any(c and c[0].upper() == "A" for c in board)
 
 
 def _board_has_ace_pair(board: list[str]) -> bool:
@@ -2066,7 +2158,7 @@ def _postflop_mix_allowed(
         return False
     if _board_is_paired(board) and _weak_broadway_offsuit(hand_class):
         return False
-    if position in ("UTG", "MP", "CO") and not in_position and not _is_strong_continue(hand_class):
+    if position in ("UTG", "MP", "CO") and not _is_strong_continue(hand_class):
         return False
     if _board_paired_hero_missed(hole, board) or _hero_overcards_only(hole, board):
         return False
@@ -2219,6 +2311,24 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
             and "fold" in available):
         return "fold", None
 
+    if (position in ("UTG", "MP", "CO")
+            and _hero_vulnerable_pocket_on_ace_paired_board(hole, board, hand_class)
+            and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("UTG", "MP", "CO")
+            and _hero_ace_broadway_vulnerable_on_paired_board(hole, board, hand_class)
+            and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("UTG", "MP", "CO", "SB", "BB")
+            and _hero_small_pocket_under_board_ace(hole, board, hand_class)
+            and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
     # SB OOP TT–QQ on connected runout vs big bet — QQ SB −1000 (HL R12 #01).
     if (position == "SB" and not in_position
             and _medium_pocket_pair(hand_class)
@@ -2270,8 +2380,8 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
             and "fold" in available):
         return "fold", None
 
-    # EP/CO OOP ace-x second pair — A9o MP −100 (HL R9 #14).
-    if (position in ("UTG", "MP", "CO") and not in_position
+    # EP/MP/CO ace-x second pair — A9o MP −100 (HL R9 #14).
+    if (position in ("UTG", "MP", "CO")
             and len(board) >= 4
             and _marginal_ace_kicker(hand_class)
             and _ace_kicker_second_pair(hole, board)

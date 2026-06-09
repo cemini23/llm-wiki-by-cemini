@@ -33,6 +33,8 @@ import argparse
 import json
 import os
 import random
+
+_EQUITY_RNG = random.Random(2026)
 import sys
 import time
 from typing import Any, Optional
@@ -127,12 +129,11 @@ def estimate_equity(hole: list[str], board: list[str], sims: int = 200,
         hero = [TreysCard.new(_to_treys(c)) for c in hole]
         board_t = [TreysCard.new(_to_treys(c)) for c in board]
         used = set(hero) | set(board_t)
-        rng = random.Random(2026)
         wins = ties = 0
         for _ in range(sims):
             deck = TreysDeck()
             deck.cards = [c for c in deck.cards if c not in used]
-            rng.shuffle(deck.cards)
+            _EQUITY_RNG.shuffle(deck.cards)
             opp = [deck.cards.pop(), deck.cards.pop()]
             runout = []
             needed = 5 - len(board_t)
