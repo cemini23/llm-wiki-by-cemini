@@ -187,6 +187,29 @@ def utg_unopened(hero_hole: list[str]) -> dict:
     )
 
 
+def utg_a3s_paired_river(*, villain_bet: int = 400, pot: int = 900) -> dict:
+    """A3s UTG OOP on double-paired runout — HL R9 analyze #01 (−887)."""
+    return six_max_table(
+        name="utg_a3s_paired_river",
+        hero_seat=4,
+        button_seat=1,
+        street="River",
+        board=["6s", "Jc", "5s", "Js", "5c"],
+        pot=pot,
+        hero_hole=["As", "3s"],
+        hero_stack=450,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={4: 450},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def utg_facing_raise(hero_hole: list[str], *, raise_to: int = 60) -> dict:
     """Hero UTG facing a standard open from CO."""
     return six_max_table(

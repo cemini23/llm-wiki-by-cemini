@@ -568,6 +568,18 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP suited broadway trap — fold open")
 
+    # EP OOP weak suited ace on paired runout — A3s UTG −887 (HL R9 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP") and not in_position
+            and _is_weak_suited_ace(hc)
+            and _board_is_paired(board)
+            and len(board) >= 4
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.10), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP weak suited ace paired board — fold")
+
     # CO dominated broadway vs raise — QTo CO −100 preflop (HL R5 #09).
     if (street == "Preflop" and call_chips > 0 and position == "CO"
             and hc in _BB_BROADWAY_FOLD and "fold" in available):
@@ -1170,13 +1182,23 @@ def _is_ep_low_suited_trash(hc: str) -> bool:
     return lo <= _RANKS.index("6") and hi <= _RANKS.index("9")
 
 
+def _is_weak_suited_ace(hc: str) -> bool:
+    """A2s–A6s — EP open/stack-off traps (A3s UTG −887 HL R9)."""
+    if len(hc) != 3 or hc[2] != "s" or hc[0] != "A" or hc[1] == "A":
+        return False
+    kicker = _RANKS.index(hc[1])
+    return kicker <= _RANKS.index("6")
+
+
 def _is_ep_preflop_trash(hc: str) -> bool:
     """UTG/MP chart trash — offsuit wheel + low suited opens."""
     if not hc:
         return False
     if hc in _WEAK_FACING_RAISE or _is_low_trash_offsuit(hc):
         return True
-    return _is_ep_low_suited_trash(hc)
+    if _is_weak_suited_ace(hc) or _is_ep_low_suited_trash(hc):
+        return True
+    return False
 
 
 def _preflop_stackoff_should_fold(

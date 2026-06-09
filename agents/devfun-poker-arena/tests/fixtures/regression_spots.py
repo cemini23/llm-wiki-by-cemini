@@ -64,6 +64,7 @@ from tests.helpers.cemini_tables import (
     sb_qq_connected_river,
     sb_tt_ace_pair_river,
     second_nut_flush_river,
+    utg_a3s_paired_river,
     utg_facing_raise,
     utg_unopened,
 )
@@ -826,5 +827,23 @@ def nuts_regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"bet", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="HL R8: EP suited broadway — fold open without first_protect.",
+        ),
+        RegressionSpot(
+            id="s2_r9_a3s_utg_open",
+            source="S2 R9 analyze #01 — A3s UTG −887 (no EP open)",
+            table=utg_unopened(["As", "3s"]),
+            context={},
+            forbidden=frozenset({"bet", "raise", "all-in", "call"}),
+            required=frozenset({"fold"}),
+            notes="HL R9: weak suited ace — never open UTG.",
+        ),
+        RegressionSpot(
+            id="s2_r9_a3s_utg_paired_river",
+            source="S2 R9 analyze #01 — A3s UTG paired river −887",
+            table=utg_a3s_paired_river(),
+            context={},
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="HL R9: EP OOP weak suited ace on paired board — fold.",
         ),
     ]
