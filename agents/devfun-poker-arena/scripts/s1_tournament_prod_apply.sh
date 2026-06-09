@@ -84,7 +84,7 @@ grep -E '^(ARENA_LOBBY|S1_TOURNAMENT|CEMINI_HL_PRIMARY|S2_PLAYGROUND|AGENT_VERSI
 import json
 from pathlib import Path
 comp = "${COMP}"
-old = "${OLD}"
+old = "${OLD_PLAYGROUND}"
 path = Path("reports/hl-loop/multi_comp_config.json")
 cfg = {}
 if path.is_file():
