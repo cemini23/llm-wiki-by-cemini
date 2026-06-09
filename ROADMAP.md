@@ -8,9 +8,13 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-09 — K109)
+
+- **K109 ingest (2026-06-09)** — WC prediction markets DR docx (sha `ee93a59a…`) + GS Eq positioning PDF (equity skim). **2 sources + 4 concept/entity updates.** Full PM/Kalshi inventory, `REJ_01`–`04` semantic blocklist, `wc_market_registry.json` vendoring spec. **Prod briefs scp'd (2):** K109 cross-venue scanner recommendations; K108 retail hygiene bot posture. Raw → librarian; inbox cleared.
+
 ## Current state (2026-06-09 — K108)
 
-- **K108 ingest (2026-06-09)** — `Posts.docx` (6 posts, sha `b7956893…`). **1 source + 1 concept + 3 entities + 4 updates.** WC retail hygiene (@GodEyeDotFun); Arrakis HL lead-lag; omnifs/42.space stubs. **Phase-0:** omnifs **CONDITIONAL-GO** (Apache-2.0; laptop CCC eval only). **Cross-wiki:** CCC THE HIVE + /ship brief; gambling WC checklist. SEO style pass. No prod scp. Raw → librarian; inbox cleared.
+- **K108 ingest (2026-06-09)** — `Posts.docx` (6 posts, sha `b7956893…`). **1 source + 1 concept + 3 entities + 4 updates.** WC retail hygiene (@GodEyeDotFun); Arrakis HL lead-lag; omnifs/42.space stubs. **Phase-0:** omnifs **CONDITIONAL-GO** (Apache-2.0; laptop CCC eval only). **Cross-wiki:** CCC THE HIVE + /ship brief; gambling WC checklist. SEO style pass. K108 WC bot posture brief staged with K109.
 
 ## Current state (2026-06-09 — K107)
 

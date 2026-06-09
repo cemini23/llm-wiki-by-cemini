@@ -8,6 +8,8 @@ related:
   - concepts/conductor-orchestrator.md
   - concepts/wiki-tooling-evaluation.md
   - "@ccc-wiki/briefs/2026-06-09_k107-ccc-dynamic-workflows-skills-from-osint.md"
+  - "@ccc-wiki/entities/tools/aarri-bench.md"
+  - "@ccc-wiki/sources/arxiv-aarri-research-intern-bench-2606-07462-2026-06-09.md"
 maturity: draft
 created: 2026-06-09
 updated: 2026-06-09

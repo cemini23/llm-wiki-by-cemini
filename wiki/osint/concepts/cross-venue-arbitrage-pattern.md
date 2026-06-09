@@ -43,11 +43,12 @@ related:
   - sources/gemini-wc2026-cross-venue-scanner-research-2026-06-05.md
   - sources/gemini-wc2026-market-probability-gaps-2026-06-05.md
   - sources/gemini-wc2026-knockout-market-map-2026-06-05.md
+  - sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
 maturity: draft
 created: 2026-05-05
-updated: 2026-06-08
+updated: 2026-06-09
 ---
 
 ## Relations
@@ -232,6 +233,10 @@ See @sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md for cont
 | Verified pairs | Fade-watch `KXWCGROUPQUAL` ↔ PM R32 qualify (5 teams) in `cross_venue.yaml` |
 | Still blocked | Auto-discover `group_qualify`; `round_of_16_qualify`; PM R16 vs Kalshi qualify |
 | Knockout v2 | @sources/gemini-wc2026-knockout-market-map-2026-06-05.md → phase router backlog |
+
+### K109 extension — full inventory + semantic blocklist (2026-06-09)
+
+@sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md supersedes partial maps with **392+ PM / 440+ Kalshi** indexed markets, `resolution_class` routing tags, and explicit `REJ_01`–`REJ_04` blocklist. Machine-readable JSON appendix for `wc_market_registry.json`. Prod brief: `briefs/2026-06-09_k109-wc-bot-cross-venue-inventory-recommendations-cemini-prod.md`.
 
 ## Snippets
 

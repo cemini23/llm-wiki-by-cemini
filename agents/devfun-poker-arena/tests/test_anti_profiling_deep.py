@@ -29,16 +29,15 @@ def test_anti_profiling_audit_gate():
 
 def test_regression_spots_identical_mix_on_off():
     """Hard leak guards must not flip when mixing is enabled (repeat for MC variance)."""
-    sys.path.insert(0, str(ROOT / "examples"))
-    from cemini_decide import decide  # noqa: WPS433
     from tests.fixtures.regression_spots import regression_spots  # noqa: WPS433
+    from tests.test_cemini_regression import _run  # noqa: WPS433
 
     for spot in regression_spots():
         os.environ["CEMINI_MIX_POSTFLOP"] = "0"
-        off = decide(spot.table, deadline_s=10.0)
+        off = _run(spot.table, spot.context)
         for _ in range(8):
             os.environ["CEMINI_MIX_POSTFLOP"] = "1"
-            on = decide(spot.table, deadline_s=10.0)
+            on = _run(spot.table, spot.context)
             if spot.forbidden:
                 assert on["action"] not in spot.forbidden, spot.id
             if spot.required:

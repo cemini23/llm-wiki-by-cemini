@@ -5,6 +5,10 @@ import os
 from typing import Any
 
 DEFAULT_CUTOFF_RANK = 20
+
+
+def cutoff_rank_threshold() -> int:
+    return max(1, _safe_int(os.environ.get("CEMINI_QUAL_CUTOFF_RANK"), DEFAULT_CUTOFF_RANK))
 DEFAULT_BUFFER_CHIPS = 1000  # chips above rank-20 floor before protect mode
 DEFAULT_LEAD_RANK = 5
 DEFAULT_LEAD_BUFFER_CHIPS = 3000  # extra cushion before lead-protect tier
@@ -205,7 +209,7 @@ def fetch_qualification_status(
     client: Any,
     competition_id: str,
     *,
-    cutoff_rank: int = DEFAULT_CUTOFF_RANK,
+    cutoff_rank: int | None = None,
     buffer_chips: int | None = None,
     lead_rank: int | None = None,
     lead_buffer_chips: int | None = None,
@@ -215,6 +219,8 @@ def fetch_qualification_status(
     qualification_protect: rank <= cutoff_rank AND chips >= floor + buffer_chips
     lead_protect: rank <= lead_rank AND chips >= floor + lead_buffer_chips
     """
+    if cutoff_rank is None:
+        cutoff_rank = cutoff_rank_threshold()
     if buffer_chips is None:
         buffer_chips = _buffer_threshold()
     if lead_rank is None:

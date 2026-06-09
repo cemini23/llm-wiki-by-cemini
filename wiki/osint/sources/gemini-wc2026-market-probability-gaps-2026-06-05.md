@@ -11,9 +11,10 @@ related:
   - concepts/world-cup-advance-market-bot-v1.md
   - concepts/world-cup-2026-group-conviction-matrix.md
   - entities/tools/world-cup-bot.md
+  - sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md
 maturity: validated
 created: 2026-06-05
-updated: 2026-06-05
+updated: 2026-06-09
 ---
 
 ## Relations

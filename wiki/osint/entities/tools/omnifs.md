@@ -10,6 +10,9 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/omnifs.md
   - "@ccc-wiki/briefs/2026-06-09_k108-ccc-hive-ship-omnifs-from-osint.md"
+  - "@ccc-wiki/entities/tools/omnifs.md"
+  - "@ccc-wiki/concepts/the-hive-loop-routines-pattern.md"
+  - "@ccc-wiki/concepts/ship-subagent-writer-reviewer-tester.md"
 maturity: draft
 created: 2026-06-09
 updated: 2026-06-09
@@ -49,6 +52,20 @@ K108 Posts.docx — @raulvk launch post for **/omnifs** (`omnifs.dev`, `github.c
 **Steal-from (no install required):** path namespace as agent handoff primitive; Wasm provider / host-callout trust boundary pattern for future MCP hardening.
 
 **Re-check before install:** `bash scripts/adopt_k108_phase0.sh` + `gh api repos/0xff-ai/omnifs/license`
+
+### Laptop trial (2026-06-09)
+
+| Step | Result |
+|------|--------|
+| `npm install -g @0xff-ai/omnifs` | **FAIL** — `minimum-release-age=10080` in operator `.npmrc` blocks v0.2.1; broken platform binary path in postinstall |
+| GitHub release `omnifs-cli-darwin-arm64.tar.xz` v0.2.1 | **PASS** — install to `~/.local/bin/omnifs-real` |
+| Docker Desktop required | **PASS** — `omnifs up` pulls `ghcr.io/0xff-ai/omnifs:0.2.1` |
+| `init dns` + `init arxiv` (`--no-input`) | **PASS** |
+| `init github --yes` (gh credential import) | **PASS** — authenticated as cemini23 |
+| Smoke: `/dns/cloudflare.com/A`, `/github/0xff-ai/omnifs/repo.json` | **PASS** |
+| Smoke: arXiv `/arxiv/papers/1706.03762/*` | **PARTIAL** — version dirs present; title/paper.json paths not as in promo |
+
+CCC handoff: `@ccc-wiki/briefs/2026-06-09_k108-ccc-hive-ship-omnifs-from-osint.md`
 
 ## Snippets
 

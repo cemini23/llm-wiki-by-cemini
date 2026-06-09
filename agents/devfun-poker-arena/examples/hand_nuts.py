@@ -55,6 +55,8 @@ def _remaining_deck(dead: set[int]) -> list[int]:
 def river_unbeatable(
     hole: list[str],
     board: list[str],
+    *,
+    extra_dead_arena: Optional[list[str]] = None,
 ) -> tuple[bool, Optional[int], str]:
     """Return (unbeatable, hero_treys_score, hero_class_str).
 
@@ -72,8 +74,17 @@ def river_unbeatable(
         return False, None, "unknown"
 
     dead = set(hole_t) | set(board_t)
-    if len(dead) != 7:
+    if len(hole_t) != 2 or len(board_t) != 5:
         return False, None, "unknown"
+    if len(set(hole_t)) != 2 or len(set(board_t)) != 5:
+        return False, None, "unknown"
+    if set(hole_t) & set(board_t):
+        return False, None, "unknown"
+
+    if extra_dead_arena:
+        extra_t = _to_treys_cards(list(extra_dead_arena))
+        if extra_t:
+            dead |= set(extra_t)
 
     ev = _evaluator()
     hero_score = ev.evaluate(board_t, hole_t)
@@ -86,7 +97,12 @@ def river_unbeatable(
     return True, hero_score, hero_class
 
 
-def best_possible_river_score(hole: list[str], board: list[str]) -> Optional[int]:
+def best_possible_river_score(
+    hole: list[str],
+    board: list[str],
+    *,
+    extra_dead_arena: Optional[list[str]] = None,
+) -> Optional[int]:
     """Strongest hand any player could hold (minimum treys score), given dead cards."""
     if not _HAS_TREYS or len(hole) != 2 or len(board) != 5:
         return None
@@ -95,8 +111,14 @@ def best_possible_river_score(hole: list[str], board: list[str]) -> Optional[int
     if hole_t is None or board_t is None:
         return None
     dead = set(hole_t) | set(board_t)
-    if len(dead) != 7:
+    if len(set(hole_t)) != 2 or len(set(board_t)) != 5:
         return None
+    if set(hole_t) & set(board_t):
+        return None
+    if extra_dead_arena:
+        extra_t = _to_treys_cards(list(extra_dead_arena))
+        if extra_t:
+            dead |= set(extra_t)
     ev = _evaluator()
     best = 7462
     for c1, c2 in combinations(_remaining_deck(dead), 2):

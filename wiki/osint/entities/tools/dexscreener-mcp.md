@@ -7,6 +7,8 @@ related:
   - sources/trading-posts-compilation-6-2026-06-08.md
   - concepts/hermes-onchain-forensics-pipeline.md
   - "@ccc-wiki/briefs/2026-06-08_k106-ccc-dexscreener-mcp-from-osint.md"
+  - "@ccc-wiki/entities/tools/dexscreener-mcp.md"
+  - "@ccc-wiki/concepts/mcp-pre-trade-diligence-boundary.md"
 maturity: draft
 created: 2026-06-08
 updated: 2026-06-08

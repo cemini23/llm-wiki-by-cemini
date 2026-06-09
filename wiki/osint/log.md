@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-09] ingest | K109 — WC prediction markets inventory + GS positioning
+
+- **Sources (2)** — `gemini-wc2026-prediction-markets-inventory-2026-06-09.md` (WC PM/Kalshi full catalog, sha `ee93a59a…`); `goldman-sachs-eq-positioning-key-levels-2026-06-08.md` (GS PB/CTA skim — equity only)
+- **Updates (4)** — `cross-venue-arbitrage-pattern`, `world-cup-advance-market-bot-v1`, `world-cup-bot`, `trading-posts-compilation-8`; `gemini-wc2026-cross-venue-scanner-research` backlink
+- **Prod briefs (2)** — `k109-wc-bot-cross-venue-inventory-recommendations-cemini-prod.md`; `k108-wc-retail-hygiene-bot-posture-cemini-prod.md` → scp
+- **Raw** — WC docx + Eq PDF → librarian; inbox cleared
+
 ## [2026-06-09] ingest | K108 — Posts.docx (6 posts)
 
 - **Source (1)** — `trading-posts-compilation-8-2026-06-09.md` (sha `b7956893…`, 6 posts)

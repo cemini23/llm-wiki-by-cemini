@@ -98,6 +98,7 @@ related:
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - sources/gemini-world-cup-market-structure-research-2026-05-29.md
   - sources/gemini-wc2026-cross-venue-arbitrage-dynamics-2026-05-29.md
+  - sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md
   - concepts/gambling-wiki-federation.md
   - entities/tools/polygnosis.md
   - sources/polygnosis-2-polymarket-osint-2026-06-01.md

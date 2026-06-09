@@ -122,3 +122,12 @@ def test_not_unbeatable_has_at_least_one_beater() -> None:
 def test_arena_to_treys_ten() -> None:
     assert arena_to_treys("10h") == "Th"
     assert arena_to_treys("Ah") == "Ah"
+
+
+def test_extra_dead_arena_second_nut_becomes_unbeatable() -> None:
+    hole = ["Kh", "Qh"]
+    board = ["Jh", "Th", "5h", "2h", "3c"]
+    ok, _, _ = river_unbeatable(hole, board)
+    assert ok is False
+    ok2, _, _ = river_unbeatable(hole, board, extra_dead_arena=["Ah", "2d"])
+    assert ok2 is True

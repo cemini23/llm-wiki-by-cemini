@@ -1256,6 +1256,8 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Trading posts compilation K103 — 13 posts](sources/trading-posts-compilation-19-2026-06-07.md) — Pyth Pro SaaS + PM debunk + harness cluster. — source, trading-posts, k103
 - [Trading posts compilation K106 — 6 posts](sources/trading-posts-compilation-6-2026-06-08.md) — AS MM deep-dive + PM alert SaaS + DexScreener MCP. — source, trading-posts, k106
 - [Trading posts compilation K107 — 17 posts](sources/trading-posts-compilation-7-2026-06-09.md) — dynamic workflows + LP farm window + OLS alpha + Arena PFR bug. — source, trading-posts, k107
+- [WC 2026 prediction markets inventory (Gemini DR)](sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md) — Full PM/Kalshi catalog + semantic blocklist K109. — source, world-cup-2026, cross-venue, k109
+- [Goldman Sachs Eq Positioning (2026-06-08)](sources/goldman-sachs-eq-positioning-key-levels-2026-06-08.md) — CTA/PB/buybacks skim; equity macro only. — source, equity, k109
 - [Trading posts compilation K108 — 6 posts](sources/trading-posts-compilation-8-2026-06-09.md) — WC retail hygiene + THE HIVE + Arrakis HL lead-lag + omnifs. — source, trading-posts, k108
 - [Strategic resource acquisition (2606.06882)](sources/arxiv-strategic-resource-acquisition-2606-06882-2026-06-09.md) — BNE multi-agent execution game. — source, arxiv, k107
 - [AARRI-Bench (2606.07462)](sources/arxiv-aarri-research-intern-bench-2606-07462-2026-06-09.md) — research-intern agent eval; repo NO-GO. — source, arxiv, k107

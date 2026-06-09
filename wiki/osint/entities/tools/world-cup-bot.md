@@ -19,6 +19,8 @@ related:
   - sources/gemini-wc2026-cross-venue-scanner-research-2026-06-05.md
   - sources/gemini-wc2026-market-probability-gaps-2026-06-05.md
   - sources/gemini-wc2026-knockout-market-map-2026-06-05.md
+  - sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md
+  - sources/trading-posts-compilation-8-2026-06-09.md
   - concepts/pnl-attribution-versioning.md
   - concepts/trading-bot-logging-discipline.md
   - concepts/polymarket-sports-lp-operating-rules.md
@@ -57,7 +59,7 @@ related:
   - entities/people/rohonchain.md
 maturity: validated
 created: 2026-05-29
-updated: 2026-06-03
+updated: 2026-06-09
 ---
 
 ## Relations

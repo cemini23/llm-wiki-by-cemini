@@ -158,6 +158,12 @@ def retrieve_solver_context(table: dict) -> dict:
             ctx["kill_switch"] = True
     except Exception:
         pass
+    try:
+        from table_chat_intel import extract_chat_intel
+
+        ctx["chat_intel"] = extract_chat_intel(table)
+    except Exception:
+        pass
     return ctx
 
 
@@ -352,7 +358,12 @@ def decide(
     river_unbeatable_flag = False
     if (_nuts_detect_enabled() and street == "River" and len(board) == 5
             and deadline_s >= 2.0 and treys_available()):
-        river_unbeatable_flag, _, _ = river_unbeatable(hole, board)
+        from table_chat_intel import nuts_extra_dead_cards
+
+        extra_dead = nuts_extra_dead_cards(table, hole, board, ctx.get("chat_intel"))
+        river_unbeatable_flag, _, _ = river_unbeatable(
+            hole, board, extra_dead_arena=extra_dead or None,
+        )
 
     def _hero_cannot_lose() -> bool:
         if street != "Preflop" and _hero_made_royal_flush(hole, board):
@@ -542,6 +553,17 @@ def decide(
             and call_chips >= max(int(pot * 0.28), 1)):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP weak top pair on paired board — fold")
+
+    # CO weak two-pair on paired board — Q7o CO −747 bust (HL R11 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position == "CO"
+            and _board_is_paired(board)
+            and len(board) >= 4
+            and _hero_weak_two_pair_on_paired_board(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.18), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: CO weak two-pair paired board — fold")
 
     # BB OOP AK/AQ on A-high broadway flops — Kh As BB −116 on AJ4 (HL R10 #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
@@ -900,7 +922,13 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
         target = max(min_bet, min(int(pot * 0.5), max_bet))
         return "bet", target
     if (suggested == "raise" and allowed.get("canBet") and "bet" in available
-            and not _should_block_chart_open(hand_class, position, lead_protect=lead_protect)):
+            and not _should_block_chart_open(hand_class, position, lead_protect=lead_protect)
+            and not (
+                _cold_start_no_steal_enabled()
+                and cold_start
+                and position in ("CO", "BTN")
+                and hand_class not in _COLD_START_OPEN_OK
+            )):
         br = allowed.get("betRange") or {}
         min_bet = int(br.get("min") or max(int(pot * 0.5), 1))
         max_bet = int(br.get("max") or min_bet)
@@ -1315,6 +1343,32 @@ def _hero_has_ace_on_paired_ace_board(hole: list[str], board: list[str]) -> bool
     return any(c[0].upper() == "A" for c in hole)
 
 
+def _hero_weak_two_pair_on_paired_board(hole: list[str], board: list[str]) -> bool:
+    """Small hole-board pair + board pair — dominated two-pair (Q7 on 3T7338)."""
+    if len(hole) != 2 or len(board) < 4 or not _board_is_paired(board):
+        return False
+    if _hero_made_hand_exempt(hole, board):
+        return False
+    hranks = [c[0].upper() for c in hole]
+    branks = [c[0].upper() for c in board]
+    bc = Counter(branks)
+    if hranks[0] == hranks[1]:
+        pocket = hranks[0]
+        on_board = bc.get(pocket, 0)
+        if on_board == 1:
+            return False
+        if on_board == 0 and _RANKS.index(pocket) >= _RANKS.index("T"):
+            return False
+        return False
+    singletons = {r for r, n in bc.items() if n == 1}
+    matches = [r for r in hranks if r in singletons]
+    if not matches:
+        return False
+    pair_rank = max(matches, key=lambda r: _RANKS.index(r))
+    top_board = max(branks, key=lambda r: _RANKS.index(r))
+    return _RANKS.index(pair_rank) < _RANKS.index(top_board)
+
+
 def _hero_made_hand_exempt(hole: list[str], board: list[str]) -> bool:
     """Skip trash-class postflop fold guards — set+, boat+, top trips (not bottom trips)."""
     if len(hole) != 2 or len(board) < 3:
@@ -1479,7 +1533,12 @@ def _emergency_made_hand_action(
             return out
     if (_nuts_detect_enabled() and street == "River" and len(board) == 5
             and treys_available()):
-        unbeatable, _, _ = river_unbeatable(hole, board)
+        from table_chat_intel import nuts_extra_dead_cards
+
+        extra_dead = nuts_extra_dead_cards(table, hole, board)
+        unbeatable, _, _ = river_unbeatable(
+            hole, board, extra_dead_arena=extra_dead or None,
+        )
         if unbeatable:
             out = _unbeatable_made_action(table, allowed, available, pot, binding=binding)
             if out:

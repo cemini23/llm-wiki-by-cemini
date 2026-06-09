@@ -14,6 +14,7 @@ Environment=CEMINI_SANITIZE_OUTPUT=1
 Environment=CEMINI_MIX_POSTFLOP=1
 Environment=CEMINI_STAGGER_LOCKS=1
 EnvironmentFile=-/opt/devfun-poker-arena/.env
+# S1-only until tournament ends (~Jun 14–15). Re-enable dual via enable_s2_parallel_lobby.sh.
 ExecStart=/opt/devfun-poker-arena/venv/bin/python examples/run_cemini_lobby.py
 Restart=always
 RestartSec=15

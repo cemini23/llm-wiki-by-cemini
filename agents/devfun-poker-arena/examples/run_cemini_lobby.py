@@ -72,6 +72,57 @@ def _ko_survival_min_stack() -> int:
         return 2000
 
 
+def _lobby_role_label(competition_id: str) -> tuple[str, str]:
+    """Resolve human label + registry role for logs and timeseries."""
+    s1 = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
+    s2 = os.environ.get("S2_PLAYGROUND_COMP", "").strip()
+    if competition_id and competition_id == s1:
+        return "Tournament S1", "s1_tournament"
+    if competition_id and competition_id == s2:
+        return "Playground S2", "s2_playground"
+    label = os.environ.get("CEMINI_LOBBY_LABEL", "").strip().replace("_", " ")
+    role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip()
+    return label or competition_id, role or "lobby"
+
+
+def _lobby_log_scope(competition_id: str) -> str:
+    label, role = _lobby_role_label(competition_id)
+    return f"comp={competition_id} role={role} label={label}"
+
+
+def _apply_competition_posture(competition_id: str) -> None:
+    """Per-comp env — shared .env loses to systemd on some hosts; comp id is source of truth."""
+    s1 = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
+    s2 = os.environ.get("S2_PLAYGROUND_COMP", "cmq57o53r0bhw18g23qkydb08").strip()
+    if competition_id == s2:
+        # S2-only volume push — faster joins than default volume (20/45/30).
+        os.environ.update({
+            "CEMINI_TOURNAMENT_MODE": "0",
+            "JACKPOT_ROYAL_ENABLED": "1",
+            "JACKPOT_ROYAL_SHOWDOWN": "1",
+            "JACKPOT_27_HUNT_ENABLED": "0",
+            "CEMINI_PACE_PHASE": "volume",
+            "CEMINI_JOIN_RETRY_S": "12",
+            "CEMINI_IN_QUEUE_RETRY_S": "25",
+            "CEMINI_LOW_STACK_JOIN_RETRY_S": "15",
+            "CEMINI_S1B_MIN_STACK_BB": "60",
+            "CEMINI_QUAL_CUTOFF_RANK": "20",
+            "CEMINI_EVAL_PANEL_GATE": "0",
+        })
+    elif competition_id == s1 or os.environ.get("CEMINI_TOURNAMENT_MODE", "").strip().lower() in (
+        "1", "true", "yes", "on",
+    ):
+        os.environ.update({
+            "CEMINI_TOURNAMENT_MODE": "1",
+            "JACKPOT_ROYAL_ENABLED": "0",
+            "JACKPOT_ROYAL_SHOWDOWN": "0",
+            "JACKPOT_27_HUNT_ENABLED": "0",
+            "CEMINI_JOIN_RETRY_S": "12",
+            "CEMINI_IN_QUEUE_RETRY_S": "25",
+            "CEMINI_LOW_STACK_JOIN_RETRY_S": "15",
+        })
+
+
 def _sync_competition_scope(state: dict, competition_id: str) -> None:
     """Reset per-season counters when the lobby competition changes (board reset)."""
     prev = state.get("lobby_competition_id")
@@ -245,6 +296,20 @@ def run_lobby(args: argparse.Namespace) -> int:
         args.competition_id or os.environ.get("ARENA_LOBBY_COMPETITION_ID")
         or "cmpr1vesh2it1x69xmtpiaecp"
     )
+    dual_comp = (
+        getattr(args, "also_competition_id", None)
+        or os.environ.get("CEMINI_DUAL_LOBBY_COMP", "")
+    ).strip()
+    s1_comp = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
+    if dual_comp and dual_comp == competition_id:
+        dual_comp = ""
+    _apply_competition_posture(competition_id)
+    if dual_comp:
+        print(
+            f"[cemini-lobby] dual lobby: primary {_lobby_log_scope(competition_id)} "
+            f"+ secondary {_lobby_log_scope(dual_comp)} (S1 priority on deadline ties)",
+            flush=True,
+        )
     decide_fn = cemini_decide.decide
     retrieve_fn = cemini_decide.retrieve_solver_context
     state = load_state()
@@ -262,10 +327,15 @@ def run_lobby(args: argparse.Namespace) -> int:
     qual_status: dict = {}
     in_queue_only = False
     last_pace_log_at = 0.0
+    dual_last_join_at = 0.0
+    dual_in_queue_only = False
 
     try:
         creds = load_or_register(client, args.handle, args.name, args.quote)
-        print(f"[cemini-lobby] agent={creds.get('agentId')} competition={competition_id}")
+        print(
+            f"[cemini-lobby] agent={creds.get('agentId')} "
+            f"{_lobby_log_scope(competition_id)}"
+        )
 
         def ensure_joined(force: bool = False) -> None:
             nonlocal last_join_at, last_lobby_log_at, in_queue_only, last_pace_log_at
@@ -411,8 +481,11 @@ def run_lobby(args: argparse.Namespace) -> int:
                     print("[cemini-lobby] X claim required — verify owner on dev.fun",
                           file=sys.stderr)
                     raise SystemExit(3) from e
-                if e.status == 409 and "not enough chips" in err_text:
+                if e.status == 409 and (
+                    "not enough chips" in err_text or "insufficient_chips" in err_text
+                ):
                     if _try_rebuy(client, competition_id):
+                        refresh_qualification(force=True)
                         last_join_at = 0.0
                         in_queue_only = False
                     else:
@@ -496,6 +569,43 @@ def run_lobby(args: argparse.Namespace) -> int:
 
         refresh_qualification(force=True)
 
+        def ensure_dual_joined(force: bool = False) -> None:
+            nonlocal dual_last_join_at, dual_in_queue_only
+            if not dual_comp:
+                return
+            now = time.time()
+            retry_s = float(os.environ.get("CEMINI_JOIN_RETRY_S", "12"))
+            if not force and (now - dual_last_join_at) < retry_s:
+                return
+            _apply_competition_posture(dual_comp)
+            try:
+                join_resp = _join(client, dual_comp)
+                dual_last_join_at = now
+                dual_in_queue_only = False
+                print(
+                    f"[cemini-lobby] {_lobby_log_scope(dual_comp)} "
+                    f"join: {json.dumps(join_resp, sort_keys=True)[:300]}"
+                )
+            except ArenaError as e:
+                err_text = _arena_error_text(e.body).lower()
+                dual_last_join_at = now
+                if e.status == 409 and "already in the matchmaking lobby" in err_text:
+                    dual_in_queue_only = True
+                    return
+                if e.status == 409 and "max_concurrent_tables" in err_text:
+                    # Discord: limit is per competition — API may still return global.
+                    print(
+                        f"[cemini-lobby] {_lobby_log_scope(dual_comp)} "
+                        f"join blocked (max_concurrent_tables) — keep polling pending",
+                        file=sys.stderr,
+                    )
+                    return
+                print(
+                    f"[cemini-lobby] {_lobby_log_scope(dual_comp)} "
+                    f"join note: {e.status} {e.body}",
+                    file=sys.stderr,
+                )
+
         while True:
             try:
                 pending = _pending(client, competition_id)
@@ -508,13 +618,45 @@ def run_lobby(args: argparse.Namespace) -> int:
             tables = pending.get("tables") if isinstance(pending, dict) else []
             if not isinstance(tables, list):
                 tables = []
-            tables = sorted(tables, key=lambda t: (t.get("actionDeadlineAt") or 0))
+            if dual_comp:
+                try:
+                    pending2 = _pending(client, dual_comp)
+                    extra = pending2.get("tables") if isinstance(pending2, dict) else []
+                    if isinstance(extra, list):
+                        for row in extra:
+                            cid = row.get("competitionId") or dual_comp
+                            tables.append({**row, "competitionId": cid})
+                except ArenaError as e:
+                    print(
+                        f"[cemini-lobby] {_lobby_log_scope(dual_comp)} "
+                        f"pending-actions error: {e}",
+                        file=sys.stderr,
+                    )
+
+            def _table_sort_key(row: dict) -> tuple[int, int]:
+                cid = row.get("competitionId") or competition_id
+                # S1 tournament wins deadline ties (operator priority).
+                pri = 0 if s1_comp and cid == s1_comp else 1
+                return (pri, int(row.get("actionDeadlineAt") or 0))
+
+            tables = sorted(tables, key=_table_sort_key)
 
             if tables:
                 in_queue_only = False
+                dual_in_queue_only = False
                 table = tables[0]
+                table_comp = table.get("competitionId") or competition_id
                 if not table.get("competitionId"):
-                    table = {**table, "competitionId": competition_id}
+                    table = {**table, "competitionId": table_comp}
+                _apply_competition_posture(table_comp)
+                if table_comp != competition_id:
+                    st = fetch_qualification_status(client, table_comp)
+                    qual_protect = bool(st.get("qualification_protect"))
+                    lead_protect = bool(st.get("lead_protect"))
+                    first_protect = bool(st.get("first_protect"))
+                    qual_status = st
+                else:
+                    refresh_qualification()
                 deadline_ms = table.get("actionDeadlineAt") or 0
                 deadline_s = (
                     max(0.0, (deadline_ms / 1000.0) - time.time()) if deadline_ms else 10.0
@@ -529,7 +671,7 @@ def run_lobby(args: argparse.Namespace) -> int:
                     ctx["first_protect"] = True
                 if is_kill_switch_active():
                     ctx["kill_switch"] = True
-                if _ko_survival_lane(state, qual_status):
+                if table_comp == competition_id and _ko_survival_lane(state, qual_status):
                     ctx["ko_survival_lane"] = True
                     ctx["survival_mode"] = True
                 nemesis = state.get("nemesis_handles")
@@ -566,7 +708,10 @@ def run_lobby(args: argparse.Namespace) -> int:
                     state["hands_played"] = state.get("hands_played", 0) + 1
                     update_session_memory(state, table)
                     save_state(state)
-                    print(f"[cemini-lobby] action={action.get('action')} hands_acted={hands_acted}")
+                    print(
+                        f"[cemini-lobby] {_lobby_log_scope(table_comp)} "
+                        f"action={action.get('action')} hands_acted={hands_acted}"
+                    )
                 except ArenaError as e:
                     if e.status == 409:
                         continue
@@ -595,6 +740,7 @@ def run_lobby(args: argparse.Namespace) -> int:
                     _log_lobby_queue(client, competition_id)
                     last_lobby_log_at = now
                 ensure_joined(force=False)
+                ensure_dual_joined(force=False)
                 time.sleep(POLL_INTERVAL + rng.uniform(-POLL_JITTER, POLL_JITTER))
     finally:
         client.close()
@@ -610,6 +756,11 @@ def main(argv: Optional[list[str]] = None) -> int:
     _apply_prod_defense_defaults()
     p = argparse.ArgumentParser(description="Cemini dev.fun texas lobby loop")
     p.add_argument("--competition-id", default=None)
+    p.add_argument(
+        "--also-competition-id",
+        default=None,
+        help="Second competition in same loop (per-event table limit; S1 priority on ties)",
+    )
     p.add_argument("--max-actions", type=int, default=0,
                    help="Stop after N actions submitted (0 = run until interrupt)")
     p.add_argument("--skip-join", action="store_true",

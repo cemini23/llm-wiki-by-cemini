@@ -13,7 +13,14 @@ related:
   - entities/tools/lighter-xyz.md
   - entities/people/gustafssonkotte.md
   - "@ccc-wiki/briefs/2026-06-09_k108-ccc-hive-ship-omnifs-from-osint.md"
+  - "@ccc-wiki/sources/trading-posts-compilation-8-2026-06-09.md"
+  - "@ccc-wiki/concepts/the-hive-loop-routines-pattern.md"
+  - "@ccc-wiki/concepts/ship-subagent-writer-reviewer-tester.md"
+  - "@ccc-wiki/entities/tools/omnifs.md"
   - "@gambling-wiki/briefs/2026-06-09_k108-gambling-wc-retail-hygiene-from-osint.md"
+  - sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md
+  - concepts/world-cup-advance-market-bot-v1.md
+  - entities/tools/world-cup-bot.md
   - "@seo-wiki/concepts/x-account-voice-and-format.md"
 maturity: draft
 read_status: read
@@ -63,7 +70,7 @@ K108 inbox-only batch (6 posts). **~25% WC retail hygiene** (Post 0) → retail 
 
 ### Prod notes
 
-- Post 0 sports taker fees ~0.75% peak + spread friction → align with WC LP safety DR before conviction changes [TENTATIVE].
+- Post 0 sports taker fees ~0.75% peak + spread friction → **prod brief** `briefs/2026-06-09_k108-wc-retail-hygiene-bot-posture-cemini-prod.md` + LP safety DR before conviction changes [TENTATIVE].
 - Post 5 falsifies "HL displaced Binance for price discovery" on 29/29 assets — relevant to any HL oracle/latency fusion claims [CONFIRMED methodology on Arrakis blog; venue claims [TENTATIVE] for Cemini until replicated].
 - Post 3 is affiliate promo (`42.space/join/…`); no Phase-0 without operator request [REFERENCE].
 

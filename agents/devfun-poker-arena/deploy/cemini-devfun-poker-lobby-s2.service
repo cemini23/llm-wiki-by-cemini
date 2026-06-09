@@ -1,0 +1,41 @@
+[Unit]
+Description=Cemini dev.fun Poker Arena lobby loop — Playground S2 (parallel comp)
+Documentation=https://docs.dev.fun/
+After=network-online.target cemini-devfun-poker-lobby.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/devfun-poker-arena
+Environment=PYTHONUNBUFFERED=1
+Environment=CEMINI_SANITIZE_OUTPUT=1
+Environment=CEMINI_MIX_POSTFLOP=1
+Environment=CEMINI_STAGGER_LOCKS=1
+EnvironmentFile=-/opt/devfun-poker-arena/.env
+# CLI comp id wins over .env ARENA_LOBBY (tournament primary in shared .env).
+Environment=CEMINI_LOBBY_STATE_FILE=.arena-poker-state-s2
+Environment=CEMINI_LOBBY_LABEL=Playground_S2
+Environment=CEMINI_LOBBY_ROLE=s2_playground
+Environment=CEMINI_TOURNAMENT_MODE=0
+Environment=CEMINI_PLAYGROUND_TIMESERIES=1
+# S2 qual climb (top 20 → Tournament S2 + free rebuys). 27o jackpots claimed — royal only.
+Environment=JACKPOT_ROYAL_ENABLED=1
+Environment=JACKPOT_ROYAL_SHOWDOWN=1
+Environment=JACKPOT_27_HUNT_ENABLED=0
+Environment=CEMINI_PACE_PHASE=volume
+Environment=CEMINI_JOIN_RETRY_S=12
+Environment=CEMINI_IN_QUEUE_RETRY_S=25
+Environment=CEMINI_LOW_STACK_JOIN_RETRY_S=15
+Environment=CEMINI_S1B_MIN_STACK_BB=60
+Environment=CEMINI_QUAL_CUTOFF_RANK=20
+Environment=CEMINI_EVAL_PANEL_GATE=0
+ExecStart=/opt/devfun-poker-arena/venv/bin/python examples/run_cemini_lobby.py --competition-id cmq57o53r0bhw18g23qkydb08
+Restart=always
+RestartSec=15
+WatchdogSec=0
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

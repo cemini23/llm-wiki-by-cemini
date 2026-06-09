@@ -84,10 +84,21 @@ def append_playground_snapshot(
     st = qual_status or {}
     commit = _git_commit_short()
     grace = _deploy_grace_active()
+    s1 = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
+    s2 = os.environ.get("S2_PLAYGROUND_COMP", "").strip()
+    if competition_id == s1:
+        label, role = "Tournament S1", "s1_tournament"
+    elif competition_id == s2:
+        label, role = "Playground S2", "s2_playground"
+    else:
+        label = os.environ.get("CEMINI_LOBBY_LABEL", "").strip().replace("_", " ")
+        role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip()
     row: dict[str, Any] = {
         "schema": "devfun.playground_timeseries.v1",
         "ts": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "competition_id": competition_id,
+        "competition_label": label or None,
+        "role": role or None,
         "agent_id": agent_id,
         "hands_played_session": hands_played,
         "rank": st.get("rank"),

@@ -18,6 +18,7 @@ related:
   - entities/platforms/kalshi.md
   - entities/platforms/42-space.md
   - sources/gemini-wc2026-knockout-market-map-2026-06-05.md
+  - sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md
 maturity: validated
 created: 2026-05-29
 updated: 2026-06-09

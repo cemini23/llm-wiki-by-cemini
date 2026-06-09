@@ -22,6 +22,8 @@ related:
   - sources/gemini-wc2026-cross-venue-scanner-research-2026-06-05.md
   - sources/gemini-wc2026-market-probability-gaps-2026-06-05.md
   - sources/gemini-wc2026-knockout-market-map-2026-06-05.md
+  - sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md
+  - sources/trading-posts-compilation-8-2026-06-09.md
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/world-cup-2026-group-conviction-matrix.md
@@ -46,7 +48,7 @@ related:
   - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-06-06
+updated: 2026-06-09
 clusters: [polymarket, world-cup, market-making, oss]
 ---
 

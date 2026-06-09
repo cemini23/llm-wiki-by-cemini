@@ -43,16 +43,34 @@ def _set_env(key: str, value: Optional[str]) -> None:
         os.environ[key] = value
 
 
+def _merge_context(table: dict, extra: dict | None) -> dict:
+    from cemini_decide import retrieve_solver_context  # noqa: WPS433
+
+    ctx = retrieve_solver_context(table)
+    if not extra:
+        return ctx
+    for key, val in extra.items():
+        if key == "opponent_hud" and isinstance(val, dict):
+            base = dict(ctx.get("opponent_hud") or {})
+            base.update(val)
+            ctx["opponent_hud"] = base
+        else:
+            ctx[key] = val
+    return ctx
+
+
 def _run_spot(
     spot_table: dict,
     *,
     mix: bool,
     deadline: float = 10.0,
     sanitize: bool = False,
+    context: dict | None = None,
 ) -> dict:
     _set_env("CEMINI_MIX_POSTFLOP", "1" if mix else "0")
     _set_env("CEMINI_SANITIZE_OUTPUT", "1" if sanitize else "0")
-    return decide(spot_table, deadline_s=deadline)
+    ctx = _merge_context(spot_table, context)
+    return decide(spot_table, deadline_s=deadline, research_context=ctx)
 
 
 def _check_spot_constraints(spot, out: dict) -> Optional[str]:
@@ -73,14 +91,14 @@ def check_regression_baseline_vs_mix_off() -> CheckResult:
     """Mix OFF must match frozen baseline actions (no behavior drift)."""
     baseline: dict[str, str] = {}
     for spot in regression_spots():
-        out = _run_spot(spot.table, mix=False)
+        out = _run_spot(spot.table, mix=False, context=spot.context)
         err = _check_spot_constraints(spot, out)
         if err:
             return CheckResult("regression_mix_off", False, f"{spot.id}: {err}")
         baseline[spot.id] = out["action"]
 
     for spot in regression_spots():
-        out = _run_spot(spot.table, mix=False)
+        out = _run_spot(spot.table, mix=False, context=spot.context)
         if out["action"] != baseline[spot.id]:
             return CheckResult(
                 "regression_mix_off_stable",
@@ -95,7 +113,7 @@ def check_regression_mix_on_forbidden(*, repeats: int = 8) -> CheckResult:
     failures: list[str] = []
     for spot in regression_spots():
         for rep in range(repeats):
-            out = _run_spot(spot.table, mix=True)
+            out = _run_spot(spot.table, mix=True, context=spot.context)
             err = _check_spot_constraints(spot, out)
             if err:
                 failures.append(f"{spot.id}[{rep}]: {err}")
@@ -166,7 +184,7 @@ def check_scan_behaviors_mix_on() -> CheckResult:
 def check_sanitize_preserves_action() -> CheckResult:
     _set_env("CEMINI_SANITIZE_OUTPUT", "1")
     for spot in regression_spots():
-        raw = _run_spot(spot.table, mix=False, sanitize=False)
+        raw = _run_spot(spot.table, mix=False, sanitize=False, context=spot.context)
         _set_env("CEMINI_SANITIZE_OUTPUT", "1")
         sanitized = maybe_sanitize_action(raw)
         if sanitized["action"] != raw["action"]:

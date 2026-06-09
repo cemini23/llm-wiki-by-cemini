@@ -33,6 +33,7 @@ CREDS_PATH = Path(os.environ.get("ARENA_CREDENTIALS_FILE", ".arena-credentials")
 # Holds the previous creds while we attempt re-registration. Restored if
 # re-registration fails so a transient 5xx can't leave the user keyless.
 CREDS_BACKUP_PATH = Path(".arena-credentials.rejected")
+# Default state file; per-comp lobby sets CEMINI_LOBBY_STATE_FILE before load_state().
 STATE_PATH = Path(".arena-poker-state")
 RETRY_MAX = 3
 
@@ -384,6 +385,10 @@ def _default_state() -> dict:
     }
 
 
+def _state_path() -> Path:
+    return Path(os.environ.get("CEMINI_LOBBY_STATE_FILE", str(STATE_PATH)))
+
+
 def load_state() -> dict:
     """Load .arena-poker-state with schema migration.
 
@@ -391,9 +396,10 @@ def load_state() -> dict:
     Older state files (v0.11 and earlier) lack this key; we default it to
     [] so the read path keeps working without a manual reset. All other
     legacy keys are preserved as-is."""
-    if STATE_PATH.exists():
+    path = _state_path()
+    if path.exists():
         try:
-            state = json.loads(STATE_PATH.read_text())
+            state = json.loads(path.read_text())
             if isinstance(state, dict):
                 # v0.12 migration: ensure iterations key exists.
                 if "iterations" not in state or not isinstance(
@@ -409,7 +415,7 @@ def load_state() -> dict:
 
 
 def save_state(state: dict) -> None:
-    _atomic_write(STATE_PATH, json.dumps(state, indent=2))
+    _atomic_write(_state_path(), json.dumps(state, indent=2))
 
 
 def append_iteration(entry: dict) -> dict:
