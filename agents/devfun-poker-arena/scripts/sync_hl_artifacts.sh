@@ -14,8 +14,14 @@ LOCAL="${AGENT_DIR}/reports/hl-loop"
 
 mkdir -p "${LOCAL}"
 
+PULL_STATE=0
+for arg in "$@"; do
+  case "$arg" in
+    --pull-state) PULL_STATE=1 ;;
+  esac
+done
+
 FILES=(
-  state.json
   deploy_grace.json
   deploys.jsonl
   eval_timeseries.jsonl
@@ -27,6 +33,11 @@ FILES=(
 )
 
 echo "==> Sync HL artifacts from ${HOST}:${REMOTE_DIR}/reports/hl-loop/"
+if [[ "${PULL_STATE}" -eq 1 ]]; then
+  FILES=(state.json "${FILES[@]}")
+else
+  echo "  (skip state.json — laptop is canonical; use --pull-state to overwrite)"
+fi
 for f in "${FILES[@]}"; do
   if scp -q "${HOST}:${REMOTE_DIR}/reports/hl-loop/${f}" "${LOCAL}/${f}" 2>/dev/null; then
     echo "  ✓ ${f}"

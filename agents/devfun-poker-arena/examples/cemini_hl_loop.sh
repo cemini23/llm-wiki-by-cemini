@@ -165,6 +165,22 @@ if phase == "deployed":
         preflight=_os.environ.get("CEMINI_HL_PREFLIGHT", "full"),
     )
 state_path.write_text(json.dumps(state, indent=2) + "\n")
+if phase == "deployed":
+    import subprocess as _sp
+    host = _os.environ.get("CEMINI_PROD_HOST", "cemini-prod")
+    remote = _os.environ.get("CEMINI_REMOTE_DIR", "/opt/devfun-poker-arena")
+    try:
+        _sp.run(
+            [
+                "scp", "-q", str(state_path),
+                f"{host}:{remote}/reports/hl-loop/state.json",
+            ],
+            check=True,
+            timeout=30,
+        )
+        print(f"state pushed → {host}:{remote}/reports/hl-loop/state.json")
+    except Exception as exc:
+        print(f"WARN: state push failed: {exc}", file=sys.stderr)
 PY
 }
 
@@ -279,7 +295,7 @@ step_ok "Preflight PASS"
 if [[ "${DEPLOY}" -eq 1 ]]; then
   echo ""
   echo "==> [4/4] Deploy to ${HOST}"
-  ./deploy/deploy_to_cemini_prod.sh
+  CEMINI_HL_LOOP_DEPLOY=1 ./deploy/deploy_to_cemini_prod.sh
   step_ok "Deployed — monitor: ssh ${HOST} journalctl -u cemini-devfun-poker-lobby -f"
   HANDS="$(fetch_hand_count || echo 0)"
   write_hl_state "deployed" "${HANDS}" "${ROUND}"

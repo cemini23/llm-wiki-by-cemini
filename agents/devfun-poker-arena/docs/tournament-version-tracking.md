@@ -45,6 +45,8 @@ Full preflight now includes **eval-panel gate** (150 hands default, `CEMINI_EVAL
 
 ```bash
 ./scripts/sync_hl_artifacts.sh
+# state.json stays on laptop (canonical). Prod copy updates on each HL deploy.
+# Only pull prod state if you know it is newer: ./scripts/sync_hl_artifacts.sh --pull-state
 ```
 
 ### 4. Rank candidates for tournament

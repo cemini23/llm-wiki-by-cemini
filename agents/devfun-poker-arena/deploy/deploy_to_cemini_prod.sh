@@ -159,8 +159,9 @@ print('deploy_grace OK until', g.get('expires_at'), 'commit', g.get('commit'), '
 "
 REMOTE
 
-echo "==> Append deploy record on laptop"
-uv run python -c "
+if [[ -z "${CEMINI_HL_LOOP_DEPLOY:-}" ]]; then
+  echo "==> Append deploy record on laptop"
+  uv run python -c "
 import sys
 sys.path.insert(0, 'examples')
 from deploy_registry import append_deploy_record
@@ -172,6 +173,7 @@ append_deploy_record(
 )
 print('deploys.jsonl updated')
 "
+fi
 
 echo ""
 echo "Done. Tail logs:"
