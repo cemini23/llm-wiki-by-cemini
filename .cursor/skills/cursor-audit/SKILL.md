@@ -208,6 +208,7 @@ Optional args in the same message:
 
 ## Related patterns
 
+- [super-audit](../super-audit/SKILL.md) — 5-model variant (3 Cursor + 2 API via OpenRouter/DeepSeek) for pre-ship prod reviews
 - `@ccc-wiki/entities/patterns/glasswing-deliberate-disagreement.md` — disagreement gating
 - `@ccc-wiki/concepts/subagent-orchestration.md` — parallel Task dispatch
 - `@ccc-wiki/entities/skills/cursor-audit.md` — wiki canonical page

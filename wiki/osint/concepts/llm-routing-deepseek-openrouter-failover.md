@@ -9,10 +9,11 @@ related:
   - entities/infrastructure/deepseek-api.md
   - entities/tools/claude-code-router.md
   - "@ccc-wiki/concepts/llm-routing-deepseek-openrouter-failover.md"
+  - "@ccc-wiki/entities/skills/super-audit.md"
   - "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-09
 ---
 
 ## Relations
@@ -21,6 +22,7 @@ updated: 2026-06-04
 - @concepts/mcp-context-optimization.md — Layer 2 claude-code-router (complementary)
 - @entities/infrastructure/deepseek-api.md — prod brain
 - @ccc-wiki/concepts/llm-routing-deepseek-openrouter-failover.md — operator-facing CCC copy (same contract)
+- @ccc-wiki/entities/skills/super-audit.md — API leg discovers `OPENROUTER_*` / `DEEPSEEK_*` / `ADVISOR_*` via `discover_api_keys.py`
 - @gambling-wiki/concepts/poker-hl-analyst-loop.md — HL loop sources env at start
 
 ## Raw Concept

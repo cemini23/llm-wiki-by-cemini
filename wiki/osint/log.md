@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-09] skill | super-audit — CCC wiki entity + public distro cross-link
+
+- **Skill** — `.cursor/skills/super-audit/` (5-model council: 3 Cursor + 2 API); public [agent-toolkit-demo/skills/super-audit](https://github.com/cemini23/agent-toolkit-demo/tree/main/skills/super-audit) commit `40b97db`
+- **CCC** — `wiki/entities/skills/super-audit.md` + `.cursor/skills/super-audit/` mirror; backlinks on cursor-audit, glasswing, subagent-orchestration, tier1-tier2, council-of-high-intelligence, tech-debt-audit, agent-rubrics, skill-vetting
+- **OSINT** — `@concepts/llm-routing-deepseek-openrouter-failover.md` backlink to super-audit API key discovery
+
 ## [2026-06-09] ingest | K107 — full inbox + daily digest arXiv
 
 - **Sources (5)** — 4 arXiv (2606.06882 strategic acquisition, 2606.07462 AARRI-Bench, 2606.08791 covariance regret, 2606.09104 BAVAR-BLED) + `trading-posts-compilation-7-2026-06-09.md` (17 posts, sha `5b174d74…`)
