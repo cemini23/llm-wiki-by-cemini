@@ -580,6 +580,18 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP weak suited ace paired board — fold")
 
+    # EP OOP low suited trash on paired runout — 94s UTG −100 (HL R10 #02).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP") and not in_position
+            and _is_ep_low_suited_trash(hc)
+            and _board_is_paired(board)
+            and len(board) >= 4
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.10), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP low suited trash paired board — fold")
+
     # CO dominated broadway vs raise — QTo CO −100 preflop (HL R5 #09).
     if (street == "Preflop" and call_chips > 0 and position == "CO"
             and hc in _BB_BROADWAY_FOLD and "fold" in available):

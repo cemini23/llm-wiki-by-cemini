@@ -210,6 +210,52 @@ def utg_a3s_paired_river(*, villain_bet: int = 400, pot: int = 900) -> dict:
     )
 
 
+def utg_94s_paired_river(*, villain_bet: int = 400, pot: int = 800) -> dict:
+    """94s UTG OOP on double-paired broadway runout — HL R10 analyze #02 (−100)."""
+    return six_max_table(
+        name="utg_94s_paired_river",
+        hero_seat=4,
+        button_seat=1,
+        street="River",
+        board=["Ad", "Qd", "Kd", "Qc", "Kh"],
+        pot=pot,
+        hero_hole=["4d", "9d"],
+        hero_stack=500,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={4: 500},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def co_t3s_paired_turn(*, villain_bet: int = 300, pot: int = 600) -> dict:
+    """T3s CO OOP on paired 88 + ace turn — HL R10 analyze #10 (−100)."""
+    return six_max_table(
+        name="co_t3s_paired_turn",
+        hero_seat=6,
+        button_seat=1,
+        street="Turn",
+        board=["8d", "8s", "Ac"],
+        pot=pot,
+        hero_hole=["Tc", "3s"],
+        hero_stack=600,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={6: 600},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def utg_facing_raise(hero_hole: list[str], *, raise_to: int = 60) -> dict:
     """Hero UTG facing a standard open from CO."""
     return six_max_table(

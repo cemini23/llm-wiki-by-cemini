@@ -28,6 +28,7 @@ from tests.helpers.cemini_tables import (
     co_ato_paired_river,
     co_j2o_paired_river,
     co_t5o_river,
+    co_t3s_paired_turn,
     co_unopened,
     co_facing_raise,
     co_facing_shove,
@@ -66,6 +67,7 @@ from tests.helpers.cemini_tables import (
     second_nut_flush_river,
     utg_a3s_paired_river,
     utg_facing_raise,
+    utg_94s_paired_river,
     utg_unopened,
 )
 
@@ -845,5 +847,32 @@ def nuts_regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="HL R9: EP OOP weak suited ace on paired board — fold.",
+        ),
+        RegressionSpot(
+            id="s2_r10_q5o_mp_open",
+            source="S2 R10 analyze #01 — Qd 5h MP −100 preflop",
+            table=mp_unopened(["Qd", "5h"]),
+            context={},
+            forbidden=frozenset({"bet", "raise", "all-in", "call"}),
+            required=frozenset({"fold"}),
+            notes="HL R10: MP Q5o — never open.",
+        ),
+        RegressionSpot(
+            id="s2_r10_94s_utg_paired_river",
+            source="S2 R10 analyze #02 — 4d 9d UTG paired river −100",
+            table=utg_94s_paired_river(),
+            context={},
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="HL R10: EP OOP low suited trash on paired board — fold.",
+        ),
+        RegressionSpot(
+            id="s2_r10_t3s_co_paired_turn",
+            source="S2 R10 analyze #10 — Tc 3s CO paired turn −100",
+            table=co_t3s_paired_turn(),
+            context={},
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="HL R10: CO trash suited on paired board — fold.",
         ),
     ]
