@@ -550,17 +550,23 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP weak ace second pair — fold")
 
-    # UTG/MP — never open chart trash (94o UTG −100 HL R4 #06).
+    # UTG/MP — never open chart trash (35o UTG, 94o UTG — HL R4/R8).
     if (street == "Preflop" and call_chips == 0 and position in ("UTG", "MP")
-            and hc in _WEAK_FACING_RAISE and "fold" in available):
+            and _is_ep_preflop_trash(hc) and "fold" in available):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP trash — fold")
 
-    # MP/UTG chart-trash vs any raise — Q9o MP −100 (HL R5 #04).
+    # MP/UTG chart-trash vs any raise — K3o MP, Q9o MP (HL R5/R8).
     if (street == "Preflop" and call_chips > 0 and position in ("UTG", "MP")
-            and hc in _WEAK_FACING_RAISE and "fold" in available):
+            and _is_ep_preflop_trash(hc) and "fold" in available):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP trash vs raise — fold")
+
+    # EP suited broadway — always fold opens (eval panel shove traps; HL R8 always-on).
+    if (street == "Preflop" and call_chips == 0 and position in ("UTG", "MP")
+            and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP suited broadway trap — fold open")
 
     # CO dominated broadway vs raise — QTo CO −100 preflop (HL R5 #09).
     if (street == "Preflop" and call_chips > 0 and position == "CO"
@@ -570,7 +576,8 @@ def decide(
 
     hero_stack_early = _hero_stack_chips(table)
     if (street == "Preflop" and call_chips > 0 and "fold" in available
-            and _preflop_stackoff_should_fold(hc, call_chips, hero_stack_early)
+            and _preflop_stackoff_should_fold(
+                hc, call_chips, hero_stack_early, position=position)
             and not _hero_cannot_lose()):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: preflop stack-off — fold")
@@ -793,7 +800,10 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             and hand_class in _WEAK_FACING_RAISE and "fold" in available):
         return "fold", None
     # EP: chart-only — no HUD steals (74o MP -916 leak).
-    if position in ("UTG", "MP") and hand_class in _WEAK_FACING_RAISE and "fold" in available:
+    if position in ("UTG", "MP") and _is_ep_preflop_trash(hand_class) and "fold" in available:
+        return "fold", None
+    if (position in ("UTG", "MP") and hand_class in _EP_SUITED_BROADWAY_TRAP
+            and "fold" in available):
         return "fold", None
     if (seat_matrix_v2_enabled() and position == "UTG"
             and hand_class not in {
@@ -810,14 +820,7 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
     if (position in ("CO", "SB", "BTN") and hand_class in _WEAK_FACING_RAISE
             and "fold" in available):
         return "fold", None
-    # HL R25: no EP suited-broadway opens under first_protect (QJs MP, KQs UTG chart leaks).
-    if (first_protect and position in ("UTG", "MP")
-            and hand_class in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
-        return "fold", None
-    # eval_panel_mode: EP suited-broadway opens off (panel shove traps).
-    if (eval_panel and position in ("UTG", "MP")
-            and hand_class in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
-        return "fold", None
+    # HL R8: EP suited-broadway opens off (always-on — eval + playground).
     # HL R26 #01: CO chart-trash — no opens while chip #1 (62o/Q2o CO −100).
     if (first_protect and position == "CO" and hand_class in _WEAK_FACING_RAISE
             and "fold" in available):
@@ -907,7 +910,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                 return "fold", None
 
     # Preflop stack-off discipline — fold dominated trash vs large commits (HL S2 R3 −100 cluster).
-    if (_preflop_stackoff_should_fold(hc, call_chips, hero_stack_chips)
+    if (_preflop_stackoff_should_fold(
+            hc, call_chips, hero_stack_chips, position=position)
             and "fold" in available):
         return "fold", None
 
@@ -997,11 +1001,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and "fold" in available):
         return "fold", None
 
-    # HL R25 #01: EP suited broadway vs raise — fold under first_protect (shove traps).
-    if (first_protect and position in ("UTG", "MP") and call_chips > 0
-            and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
-        return "fold", None
-    if (eval_panel and position in ("UTG", "MP") and call_chips > 0
+    # HL R8: EP suited broadway vs raise — always fold (eval shove traps).
+    if (position in ("UTG", "MP") and call_chips > 0
             and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
         return "fold", None
 
@@ -1158,8 +1159,32 @@ def _is_low_suited_wheel(hc: str) -> bool:
     return hi <= _RANKS.index("9") and lo <= _RANKS.index("5")
 
 
+def _is_ep_low_suited_trash(hc: str) -> bool:
+    """EP opens with low suited junk (65s UTG −100 HL R8)."""
+    if len(hc) != 3 or hc[2] != "s" or hc[0] == hc[1]:
+        return False
+    hi, lo = _RANKS.index(hc[0]), _RANKS.index(hc[1])
+    hi, lo = max(hi, lo), min(hi, lo)
+    if hi > _RANKS.index("T"):
+        return False
+    return lo <= _RANKS.index("6") and hi <= _RANKS.index("9")
+
+
+def _is_ep_preflop_trash(hc: str) -> bool:
+    """UTG/MP chart trash — offsuit wheel + low suited opens."""
+    if not hc:
+        return False
+    if hc in _WEAK_FACING_RAISE or _is_low_trash_offsuit(hc):
+        return True
+    return _is_ep_low_suited_trash(hc)
+
+
 def _preflop_stackoff_should_fold(
-    hc: str, call_chips: int, hero_stack_chips: int,
+    hc: str,
+    call_chips: int,
+    hero_stack_chips: int,
+    *,
+    position: str = "",
 ) -> bool:
     """Fold non-premium vs large preflop commits (empty-board −100 cluster)."""
     if call_chips <= 0 or hero_stack_chips <= 0 or not hc:
@@ -1167,20 +1192,24 @@ def _preflop_stackoff_should_fold(
     if hc in _PREFLOP_3BET_OK or _is_strong_continue(hc):
         return False
     ratio = call_chips / hero_stack_chips
-    if ratio >= 0.45:
+    if ratio >= 0.40:
         return True
-    if ratio >= 0.22 and hc in _WEAK_FACING_RAISE:
+    if ratio >= 0.18 and hc in _WEAK_FACING_RAISE:
         return True
-    if ratio >= 0.22 and _marginal_ace_kicker(hc):
+    if ratio >= 0.18 and _is_low_trash_offsuit(hc):
         return True
-    if ratio >= 0.22 and hc in _EP_SUITED_BROADWAY_TRAP:
+    if ratio >= 0.18 and _marginal_ace_kicker(hc):
         return True
-    if ratio >= 0.22 and position_hint in ("UTG", "MP") and hc in {"ATs", "A9s", "A8s", "KJs", "KTs", "QTs"}:
+    if ratio >= 0.18 and hc in _EP_SUITED_BROADWAY_TRAP:
         return True
-    if ratio >= 0.28 and (
+    if (ratio >= 0.18 and position in ("UTG", "MP")
+            and hc in {"ATs", "A9s", "A8s", "KJs", "KTs", "QTs"}):
+        return True
+    if ratio >= 0.22 and (
         _is_sb_complete_trash(hc)
         or hc in _CO_WEAK_CONNECTOR
         or hc in _BB_BROADWAY_FOLD
+        or _is_ep_low_suited_trash(hc)
     ):
         return True
     return False
