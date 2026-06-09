@@ -56,32 +56,20 @@ append_timeseries() {
   local hands="$1"
   local bb100="$2"
   local tag="$3"
-  uv run python - <<PY "${TIMESERIES}" "${hands}" "${bb100}" "${tag}" "${EVAL_COMP}"
-import json, subprocess, sys
-from datetime import datetime, timezone
-from pathlib import Path
+  uv run python - <<PY "${hands}" "${bb100}" "${tag}" "${EVAL_COMP}"
+import sys
+sys.path.insert(0, "examples")
+from deploy_registry import append_eval_record
 
-path, hands, bb100, tag, comp = sys.argv[1:6]
-try:
-    sha = subprocess.check_output(
-        ["git", "rev-parse", "--short", "HEAD"],
-        stderr=subprocess.DEVNULL, text=True,
-    ).strip()
-except Exception:
-    sha = "unknown"
-row = {
-    "ts": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-    "tag": tag,
-    "competition_id": comp,
-    "hands": int(hands),
-    "adjustedBbPer100": float(bb100),
-    "commit": sha,
-}
-p = Path(path)
-p.parent.mkdir(parents=True, exist_ok=True)
-with p.open("a") as f:
-    f.write(json.dumps(row) + "\n")
-print(f"logged → {p}")
+hands, bb100, tag, comp = sys.argv[1:5]
+row = append_eval_record(
+    hands=int(hands),
+    adjusted_bb100=float(bb100),
+    tag=tag,
+    competition_id=comp,
+    source="eval_smoke",
+)
+print(f"logged → eval_timeseries.jsonl tag={row['tag']} bb100={row['adjustedBbPer100']}")
 PY
 }
 

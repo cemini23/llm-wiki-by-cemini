@@ -39,4 +39,15 @@ ssh cemini-prod 'journalctl -u cemini-devfun-poker-lobby.service -n 5 --no-pager
 
 ## HL state
 
-Update `reports/hl-loop/state.json` after deploy (round, hands, commit sha).
+`cemini_hl_loop.sh --deploy` updates `reports/hl-loop/state.json` (round, hands, commit).
+
+## Version + tournament tracking
+
+Every deploy appends to `reports/hl-loop/deploys.jsonl` (commit, env digest, preflight eval).
+
+```bash
+./scripts/sync_hl_artifacts.sh
+uv run python scripts/pick_deploy_for_tournament.py
+```
+
+Full operator guide: `docs/tournament-version-tracking.md`.

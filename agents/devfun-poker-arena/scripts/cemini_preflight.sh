@@ -14,15 +14,15 @@ for arg in "$@"; do
   esac
 done
 
-echo "==> [1/3] pytest (unit + cemini regression + scenarios)"
+echo "==> [1/5] pytest (unit + cemini regression + scenarios)"
 uv run python -m pytest tests/ -q --tb=short
 
 echo ""
-echo "==> [2/4] anti-profiling deep audit (mix+s sanitize ON)"
+echo "==> [2/5] anti-profiling deep audit (mix+s sanitize ON)"
 uv run python examples/cemini_anti_profiling_audit.py --gate --hands 400 --seed 42
 
 echo ""
-echo "==> [3/4] cemini self-play KPI audit (report, mix OFF baseline)"
+echo "==> [3/5] cemini self-play KPI audit (report, mix OFF baseline)"
 if [[ "$FULL" -eq 1 ]]; then
   uv run python examples/cemini_selfplay_audit.py --hands 600 --seed 42 --gate
 else
@@ -30,7 +30,17 @@ else
 fi
 
 echo ""
-echo "==> [4/4] dry-run lobby path (no network)"
+echo "==> [4/5] eval-panel gate (tournament-shaped self-play)"
+EVAL_GATE_HANDS="${CEMINI_EVAL_GATE_HANDS:-150}"
+if uv run python -c "import os; exit(0 if os.environ.get('CEMINI_EVAL_PANEL_GATE','').strip() in ('1','true','yes','on') else 1)" 2>/dev/null; then
+  uv run python examples/eval_panel_gate.py --gate --hands "${EVAL_GATE_HANDS}" --write-metrics
+else
+  echo "    CEMINI_EVAL_PANEL_GATE off — report only (no gate)"
+  uv run python examples/eval_panel_gate.py --hands "${EVAL_GATE_HANDS}" --write-metrics
+fi
+
+echo ""
+echo "==> [5/5] dry-run lobby path (no network)"
 uv run examples/agent.py --agent examples/cemini_decide.py --dry-run --max-hands 15
 
 mkdir -p reports/hl-loop

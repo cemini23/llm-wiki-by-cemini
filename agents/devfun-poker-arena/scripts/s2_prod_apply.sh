@@ -114,8 +114,47 @@ systemctl is-active cemini-devfun-poker-lobby.service
 systemctl is-enabled jackpot-27-lobby.service 2>&1 || echo "jackpot probe: not enabled"
 REMOTE
 
+DEPLOY_COMMIT="$(git -C "${AGENT_DIR}" rev-parse --short HEAD 2>/dev/null || echo unknown)"
+echo "==> Record deploy grace + deploy registry on prod"
+ssh -q "${HOST}" bash -s <<REMOTE
+set -euo pipefail
+cd "${REMOTE_DIR}"
+export CEMINI_HL_DEPLOY_GRACE_HOURS="\${CEMINI_HL_DEPLOY_GRACE_HOURS:-6}"
+./venv/bin/python -c "
+import sys
+sys.path.insert(0, 'examples')
+from hl_runtime_config import record_deploy_grace
+from deploy_registry import append_deploy_record
+from pathlib import Path
+g = record_deploy_grace(commit='${DEPLOY_COMMIT}', source='s2_prod_apply')
+append_deploy_record(
+    source='s2_prod_apply',
+    commit='${DEPLOY_COMMIT}',
+    competition_id='${COMP}',
+    preflight='none',
+    env_file=Path('.env'),
+    notes='S2 season rollover env matrix',
+)
+print('deploy_grace until', g.get('expires_at'))
+"
+REMOTE
+
+uv run python -c "
+import sys
+sys.path.insert(0, 'examples')
+from deploy_registry import append_deploy_record
+append_deploy_record(
+    source='s2_prod_apply',
+    commit='${DEPLOY_COMMIT}',
+    competition_id='${COMP}',
+    preflight='none',
+    notes='S2 season rollover env matrix',
+)
+"
+
 echo ""
 echo "✓ S2 prod apply complete."
 echo "  Lobby: ssh ${HOST} journalctl -u cemini-devfun-poker-lobby.service -f"
 echo "  Timeseries: ssh ${HOST} tail -f ${REMOTE_DIR}/reports/hl-loop/playground_timeseries.jsonl"
 echo "  Export: ssh ${HOST} ls ${REMOTE_DIR}/reports/exports/${EXPORT_SLUG}/"
+echo "  Deploy log: reports/hl-loop/deploys.jsonl"

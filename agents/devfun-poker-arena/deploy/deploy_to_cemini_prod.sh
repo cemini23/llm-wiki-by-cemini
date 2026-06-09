@@ -145,11 +145,33 @@ export CEMINI_HL_DEPLOY_GRACE_HOURS="\${CEMINI_HL_DEPLOY_GRACE_HOURS:-6}"
 import sys
 sys.path.insert(0, 'examples')
 from hl_runtime_config import record_deploy_grace, repair_runtime_guards
+from deploy_registry import append_deploy_record
+import os
 g = record_deploy_grace(commit='${DEPLOY_COMMIT}', source='deploy')
 n = len(repair_runtime_guards(source='deploy'))
+append_deploy_record(
+    source='deploy_to_cemini_prod',
+    commit='${DEPLOY_COMMIT}',
+    preflight=os.environ.get('CEMINI_HL_PREFLIGHT', 'none'),
+    env_file=__import__('pathlib').Path('.env'),
+)
 print('deploy_grace OK until', g.get('expires_at'), 'commit', g.get('commit'), 'guards', n)
 "
 REMOTE
+
+echo "==> Append deploy record on laptop"
+uv run python -c "
+import sys
+sys.path.insert(0, 'examples')
+from deploy_registry import append_deploy_record
+import os
+append_deploy_record(
+    source='deploy_to_cemini_prod',
+    commit='${DEPLOY_COMMIT}',
+    preflight=os.environ.get('CEMINI_HL_PREFLIGHT', 'none'),
+)
+print('deploys.jsonl updated')
+"
 
 echo ""
 echo "Done. Tail logs:"

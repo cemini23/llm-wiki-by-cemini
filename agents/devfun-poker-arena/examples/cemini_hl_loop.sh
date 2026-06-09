@@ -148,11 +148,21 @@ if phase in ("deployed", "preflight"):
 if phase == "deployed":
     sys.path.insert(0, str(Path(agent_dir) / "examples"))
     from hl_runtime_config import record_deploy_grace
+    from deploy_registry import append_deploy_record
+    import os as _os
     record_deploy_grace(
         commit=sha,
         round_num=int(round_num),
         hands=int(hands),
         source="hl_loop",
+    )
+    append_deploy_record(
+        source="hl_loop",
+        commit=sha,
+        hl_round=int(round_num),
+        hands=int(hands),
+        competition_id=comp,
+        preflight=_os.environ.get("CEMINI_HL_PREFLIGHT", "full"),
     )
 state_path.write_text(json.dumps(state, indent=2) + "\n")
 PY
@@ -252,9 +262,11 @@ fi
 echo ""
 if [[ "${DEPLOY_FAST}" -eq 1 ]]; then
   echo "==> [3/4] Fast preflight (regression spots + dry-run only)"
+  export CEMINI_HL_PREFLIGHT=fast
   ./scripts/cemini_preflight_fast.sh
 else
   echo "==> [3/4] Preflight gate (pytest + EP VPIP self-play + dry-run)"
+  export CEMINI_HL_PREFLIGHT=full
   if [[ "${FULL_GATE}" -eq 1 ]]; then
     ./scripts/cemini_preflight.sh --full
   else
