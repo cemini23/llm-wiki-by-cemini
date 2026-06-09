@@ -36,6 +36,7 @@ related:
   - concepts/ip-sale-readiness.md
   - concepts/dcm-state-preemption.md
   - entities/platforms/polymarket.md
+  - entities/platforms/42-space.md
   - entities/data-sources/open-meteo.md
   - concepts/ensemble-weather-forecasting.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
@@ -61,7 +62,7 @@ related:
   - concepts/gambling-wiki-federation.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-06-08
+updated: 2026-06-09
 ---
 
 ## Relations

@@ -17,9 +17,10 @@ related:
   - concepts/pnl-attribution-versioning.md
   - concepts/production-trading-blind-spots.md
   - concepts/hyperliquid-agent-trading.md
+  - concepts/perp-dex-price-discovery-lead-lag.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-28
+updated: 2026-06-09
 clusters: [quant-finance, crypto, market-neutral]
 ---
 

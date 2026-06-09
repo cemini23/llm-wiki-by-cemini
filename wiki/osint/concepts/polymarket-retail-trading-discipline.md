@@ -17,9 +17,11 @@ related:
   - sources/trading-posts-compilation-19-2026-06-07.md
   - concepts/retail-pm-edge-myth-debunk.md
   - concepts/market-informedness-market-making.md
+  - sources/trading-posts-compilation-8-2026-06-09.md
+  - "@gambling-wiki/briefs/2026-06-09_k108-gambling-wc-retail-hygiene-from-osint.md"
 maturity: draft
 created: 2026-05-22
-updated: 2026-06-05
+updated: 2026-06-09
 clusters: [polymarket, risk]
 ---
 
@@ -31,10 +33,12 @@ clusters: [polymarket, risk]
 - @concepts/polymarket-bot-architecture.md — parent
 - @entities/tools/polymarket-clob-api.md — `py-clob-client-v2` reference client
 - @concepts/polymarket-three-quadrant-blacklist-microtrend.md — complementary bot-side subtractive filters
+- @sources/trading-posts-compilation-8-2026-06-09.md — K108 Post 0 (@GodEyeDotFun WC 2026 ten mistakes)
+- @gambling-wiki/briefs/2026-06-09_k108-gambling-wc-retail-hygiene-from-osint.md — operator checklist handoff
 
 ## Raw Concept
 
-K57 Posts.docx Post 4 — @vorty2797 educational thread (referral-linked). Synthesizes **retail-survival** mechanics distinct from bot-architecture posts: the game is mispricing vs market mid, not outcome prediction.
+K57 Posts.docx Post 4 — @vorty2797 educational thread (referral-linked). Synthesizes **retail-survival** mechanics distinct from bot-architecture posts: the game is mispricing vs market mid, not outcome prediction. **K108 extension:** @GodEyeDotFun WC 2026 hygiene list (rules/fees/UMA/cross-venue/format) — tournament-specific overlay on tactics 1–7.
 
 ## Narrative
 
@@ -59,12 +63,29 @@ K57 Posts.docx Post 4 — @vorty2797 educational thread (referral-linked). Synth
 
 Post claims **`py-clob-client-v2`** is the current official Python CLOB client and legacy `py-clob-client` archived May 2026. **`[CONFIRMED 2026-05-29]`** — Polymarket docs list `py-clob-client-v2` as the official Python SDK; legacy `py-clob-client` GitHub repo is **archived** and explicitly states V1 no longer works against production CLOB V2 [Sources: https://docs.polymarket.com/api-reference/clients-sdks, https://docs.polymarket.com/v2-migration, https://github.com/Polymarket/py-clob-client (retrieved 2026-05-29)]. **Cemini action:** pin `py-clob-client-v2` for any new Polymarket order-path work; do not install `py-clob-client`.
 
+### WC 2026 overlay (K108 Post 0)
+
+| # | Mistake | Tie to existing tactics |
+|---|---------|-------------------------|
+| 1 | Trade title not rules | Extends tactic 7 (resolution hygiene) — ET/penalties/abandonment |
+| 2 | Ignore fees + spread | Sports taker ~0.75% peak at 50¢; maker rebates; round-trip 1–2% on liquid books |
+| 3 | Longshot festival | Favorite-longshot bias; needs concrete mispricing thesis |
+| 4 | Outright winner lockup | Prefer stage markets (group, R16) for capital velocity |
+| 5 | Thin niche books | Extends tactic 5 (depth/slippage) |
+| 6 | Gut sizing | Reinforces tactic 1; pre-commit drawdown brakes (20/40/50%) |
+| 7 | Revenge trading | Daily trade cap during group-stage density |
+| 8 | UMA dispute latency | 2h challenge → 48–96h DVM; favor templated sports rules |
+| 9 | Single-venue anchor | Cross-venue de-vig vs Kalshi/books; stale PM liquidity |
+| 10 | 48-team format drift | Third-place math, extra knockout round, heat/fatigue |
+
 ### Cemini posture
 
-Informational for **human operators** and **risk gates** on any future retail-facing Cemini UI — not a deployment spec. Complements `@concepts/polymarket-copy-trading-strategy.md` adversary model (informed vs uninformed flow).
+Informational for **human operators** and **risk gates** on any future retail-facing Cemini UI — not a deployment spec. Complements `@concepts/polymarket-copy-trading-strategy.md` adversary model (informed vs uninformed flow). WC overlay feeds `@gambling-wiki` operator checklist and WC LP safety DR — not bot deployment.
 
 ## Snippets
 
 > "You are not losing because you guessed wrong. You are losing because you did not understand what game you are playing." [Source: Posts.docx — @vorty2797 Post 4]
 
 > "If your model says 0.75 and the mid says 0.62, you have something. If you cannot articulate why your number is different, close the tab." [Source: Posts.docx — @vorty2797 Post 4]
+
+> "Always price the trade after costs, and consider posting limit orders instead of crossing the spread." [Source: Posts.docx K108, @GodEyeDotFun Post 0]

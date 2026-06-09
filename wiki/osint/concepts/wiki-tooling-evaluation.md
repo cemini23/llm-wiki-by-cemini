@@ -57,10 +57,11 @@ related:
   - sources/agriciDaniel-claude-obsidian.md
   - sources/piebald-claude-code-system-prompts.md
   - sources/bytemover-agent-native-memory.md
+  - entities/tools/omnifs.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-04-30
+updated: 2026-06-09
 ---
 
 ## Relations

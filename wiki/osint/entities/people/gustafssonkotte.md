@@ -18,9 +18,11 @@ related:
   - entities/platforms/polymarket.md
   - sources/trading-posts-compilation-31-2026-06-01.md
   - sources/trading-posts-compilation-17-2026-06-03.md
+  - sources/trading-posts-compilation-8-2026-06-09.md
+  - entities/platforms/42-space.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-06-03
+updated: 2026-06-09
 ---
 
 ## Relations
@@ -35,6 +37,8 @@ updated: 2026-06-03
 - @concepts/polymarket-bot-architecture.md — fourth independent operator confirming the broader bot-discipline lessons
 - @concepts/polymarket-updown-bot-taxonomy.md — short-resolution UpDown market specialist
 - @entities/tools/chainlink-data-streams.md — price-feed oracle his bot uses (separate from execution venue)
+- @sources/trading-posts-compilation-8-2026-06-09.md — K108 Post 3 (42.space WC book; affiliate)
+- @entities/platforms/42-space.md — promo venue entity
 
 ## Raw Concept
 

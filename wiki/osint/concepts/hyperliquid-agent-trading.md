@@ -7,15 +7,17 @@ related:
   - sources/trading-posts-compilation-42-2026-05-31.md
   - entities/platforms/hyperliquid.md
   - concepts/perps-dex-funding-carry-strategy.md
+  - concepts/perp-dex-price-discovery-lead-lag.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-09
 ---
 
 ## Relations
 
 - @sources/trading-posts-compilation-42-2026-05-31.md — Post 39 (@betashop)
 - @entities/platforms/hyperliquid.md — venue context
+- @concepts/perp-dex-price-discovery-lead-lag.md — agents reading HL tape lag Binance ~700 ms [TENTATIVE]
 
 ## Raw Concept
 

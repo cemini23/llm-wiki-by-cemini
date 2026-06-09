@@ -9,9 +9,10 @@ related:
   - concepts/polymarket-updown-bot-taxonomy.md
   - entities/tools/polymarket-websocket-api.md
   - entities/data-sources/binance.md
+  - concepts/perp-dex-price-discovery-lead-lag.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-09
 ---
 
 ## Relations

@@ -5,6 +5,8 @@ tags: [source, trading-posts, polymarket, agent-harness, quant-framework, poker,
 keywords: [dynamic-workflows, claude-skills, lp-farming, ols-alpha, open-spot-preflop, notebooklm, fear-index, weather-markets, kaiynne-org]
 related:
   - sources/trading-posts-compilation-6-2026-06-08.md
+  - sources/trading-posts-compilation-8-2026-06-09.md
+  - sources/trading-posts-compilation-8-2026-06-09.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/ols-alpha-signal-framework.md
   - concepts/agent-team-five-gate-decision-memo.md
@@ -22,6 +24,7 @@ clusters: [polymarket-quant, agent-harness, market-making, poker]
 ## Relations
 
 - @sources/trading-posts-compilation-6-2026-06-08.md — prior batch (K106)
+- @sources/trading-posts-compilation-8-2026-06-09.md — next batch (K108)
 - @concepts/polymarket-lp-rewards-farming.md — Post 14 LP window tactics
 - @concepts/ols-alpha-signal-framework.md — Post 15 OLS alpha pipeline
 - @concepts/agent-team-five-gate-decision-memo.md — Post 7 org layers (extends K98)

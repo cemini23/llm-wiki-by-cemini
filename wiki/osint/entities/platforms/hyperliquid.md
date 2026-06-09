@@ -17,9 +17,12 @@ related:
   - sources/trading-posts-compilation-25-2026-05-27.md
   - sources/trading-posts-compilation-42-2026-05-31.md
   - concepts/hyperliquid-agent-trading.md
+  - sources/trading-posts-compilation-8-2026-06-09.md
+  - concepts/perp-dex-price-discovery-lead-lag.md
+  - entities/tools/lighter-xyz.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-31
+updated: 2026-06-09
 ---
 
 ## Relations
@@ -35,6 +38,8 @@ updated: 2026-05-31
 - @sources/trading-posts-compilation-25-2026-05-27.md — K72 Post 16 (`hl-funding-sniper`)
 - @concepts/perps-dex-funding-carry-strategy.md — funding-carry template
 - @entities/tools/hl-funding-sniper.md
+- @sources/trading-posts-compilation-8-2026-06-09.md — K108 Arrakis lead-lag study
+- @concepts/perp-dex-price-discovery-lead-lag.md — Binance leads HL ~700 ms on 29/29 assets [TENTATIVE single study]
 
 ## Raw Concept
 
@@ -74,6 +79,10 @@ Hyperliquid integration is on the **deal-killer ledger** at @concepts/ip-sale-re
 2. **MEV-protection angle**: institutional buyers expect Flashbots-Protect-style private routing for any DEX-touching strategy; absence is a remediation item rather than a deal-killer, but it lengthens diligence cycles.
 
 Both items map to Phase 1 work in the K4 source — zero-cost foundation work that the audit explicitly prescribes as the prerequisite to scaling crypto exposure.
+
+### Price discovery vs liquidity (K108, 2026-06-09)
+
+Arrakis Finance cross-venue study (Hayashi–Yoshida on trade tapes, 29 major perps, Feb 2026 window) finds **Binance leads Hyperliquid fills by ~600–700 ms on all 29 assets** tested — contradicting CT claims that HL is the primary discovery venue. Hypothesized mechanism: HyperBFT two-block maker-taker round-trip after Binance moves. See `@concepts/perp-dex-price-discovery-lead-lag.md`. HL remains strong on OI/HIP-3 novel markets; latency-sensitive arb should assume **Binance → HL**, not reverse [TENTATIVE until replicated].
 
 ### What the previous narrative got wrong (and why)
 The pre-K4 page collapsed prescription into description on four claims:

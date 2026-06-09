@@ -8,14 +8,17 @@ related:
   - concepts/crypto-pair-trading-drl-shielded-execution.md
   - sources/arxiv-crypto-pair-trading-drl-shielded-2606-04574-2026-06-04.md
   - sources/trading-posts-compilation-18-2026-06-04.md
+  - concepts/perp-dex-price-discovery-lead-lag.md
+  - entities/tools/lighter-xyz.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-09
 ---
 
 ## Relations
 
 - @concepts/polymarket-binance-oracle-latency-fusion.md — K98 CVD/OBI leading signal for PM up/down
+- @concepts/perp-dex-price-discovery-lead-lag.md — K108 Arrakis: Binance leads HL ~700 ms on perp fills [TENTATIVE]
 - @sources/arxiv-crypto-pair-trading-drl-shielded-2606-04574-2026-06-04.md — USD-M futures 1h backtest venue
 
 ## Raw Concept

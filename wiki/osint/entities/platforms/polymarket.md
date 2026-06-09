@@ -105,9 +105,10 @@ related:
   - concepts/pm-capital-lock-up-settlement-discount.md
   - sources/trading-posts-compilation-6-2026-06-08.md
   - entities/people/whydeso.md
+  - entities/platforms/42-space.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-06-08
+updated: 2026-06-09
 ---
 
 ## Relations

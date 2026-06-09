@@ -21,9 +21,10 @@ related:
   - projects/cemini-financial-suite/Architecture/Architecture - Key decisions.md
   - projects/cemini-financial-suite/Architecture/OPEN-GAPS.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
+  - entities/tools/omnifs.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-06-01
+updated: 2026-06-09
 ---
 
 ## Relations

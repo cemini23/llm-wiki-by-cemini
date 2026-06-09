@@ -16,9 +16,10 @@ related:
   - entities/people/damidefi.md
   - sources/trading-posts-compilation-20-2026-05-27.md
   - sources/trading-posts-compilation-17-2026-06-03.md
+  - entities/tools/omnifs.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-06-03
+updated: 2026-06-09
 ---
 
 ## Relations

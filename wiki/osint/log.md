@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-06-09] ingest | K108 — Posts.docx (6 posts)
+
+- **Source (1)** — `trading-posts-compilation-8-2026-06-09.md` (sha `b7956893…`, 6 posts)
+- **Concepts (1 new + 3 updates)** — `perp-dex-price-discovery-lead-lag`; `polymarket-retail-trading-discipline`, `hyperliquid-agent-trading`; HL entity narrative
+- **Entities (3 new + 2 updates)** — `omnifs`, `42-space`, `lighter-xyz`; `gustafssonkotte`, `hyperliquid`
+- **Cross-wiki** — SEO K108 style pass; CCC brief (THE HIVE + /ship + omnifs); gambling WC retail checklist brief
+- **Phase-0** — `scripts/adopt_k108_phase0.sh` (omnifs CONDITIONAL-GO; Apache-2.0; laptop eval only)
+- **Briefs (2 on disk)** — CCC harness; gambling WC hygiene (REFERENCE; no prod scp)
+- **Raw** — Posts.docx → librarian; inbox cleared
+
 ## [2026-06-09] skill | super-audit — CCC wiki entity + public distro cross-link
 
 - **Skill** — `.cursor/skills/super-audit/` (5-model council: 3 Cursor + 2 API); public [agent-toolkit-demo/skills/super-audit](https://github.com/cemini23/agent-toolkit-demo/tree/main/skills/super-audit) commit `40b97db`
