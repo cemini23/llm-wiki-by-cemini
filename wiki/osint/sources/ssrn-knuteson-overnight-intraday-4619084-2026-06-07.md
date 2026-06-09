@@ -6,6 +6,7 @@ keywords: [knuteson, overnight-returns, intraday-returns, market-manipulation, n
 related:
   - concepts/knuteson-overnight-intraday-anomaly.md
   - concepts/market-microstructure.md
+  - sources/arxiv-covariance-regret-algorithmic-audit-2606-08791-2026-06-09.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-07

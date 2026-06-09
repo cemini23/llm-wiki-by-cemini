@@ -32,9 +32,10 @@ related:
   - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/polymarket-preopen-queue-priority.md
+  - sources/trading-posts-compilation-7-2026-06-09.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-05-29
+updated: 2026-06-09
 clusters: [polymarket, market-making, yield-farming]
 ---
 
@@ -260,6 +261,10 @@ Rewards-per-capital efficiency is **back-loaded at small sizes** because the lea
 ### Weather LP retail validation (2026-05-26) `[CONFIRMED — screenshot]`
 
 X thread @GnatykA promoted a “limit buy + 99¢ sell” lifehack on **weather markets** with **~5% per day** returns. Operator screenshot + prod brief corroborate **same-day city temperature bins** (Seoul 25°C+, Warsaw 26°C on May 26) with fills at **30¢ / 48¢** and a **$5.96 maker rebate** exceeding individual **~$4.80** sell legs. See @concepts/polymarket-lp-weather-market-discovery.md for Cemini discover gates and tuning backlog. The 99¢ meme is likely **not** the paying mechanism; **maker rebate + two-sided mid quotes** are.
+
+## K107 LP window tactics — @0xbobaaa (2026-06-09)
+
+Retail framing: platform fees ~**$1M/day**; maker rewards for **resting near midpoint**, ideally **unfilled**. K107 Post 14 checklist [TENTATIVE — single source]: target markets **21–24h** to resolution; quote **both sides within ~2% of mid**; if either side **< $0.10**, post both sides; getting filled = directional gamble not farm. WC pre-kickoff inflows (digest R3–R5) deepen books — higher reward pool and adverse-fill risk [TENTATIVE 2026-06-09].
 
 ## Dead Ends
 

@@ -52,14 +52,51 @@ def call_chips(table: dict) -> int:
     return int(allowed.get("callChips") or 0)
 
 
+def max_table_bet_chips(table: dict) -> int:
+    seats = table.get("seats") or []
+    if not seats:
+        return 0
+    return max(int(s.get("currentBetChips") or 0) for s in seats)
+
+
+def preflop_facing_raise(table: dict, allowed: dict | None = None, call_cc: int | None = None) -> bool:
+    """True when hero must respond to a raise above the big blind."""
+    allowed = allowed or table.get("allowedActions") or {}
+    cc = call_cc if call_cc is not None else int(allowed.get("callChips") or 0)
+    if cc <= 0:
+        return False
+    bb = int(table.get("bigBlindChips") or 20)
+    if allowed.get("canRaise") and cc > max(bb, 1):
+        return True
+    return max_table_bet_chips(table) > bb
+
+
+def is_preflop_open_spot(table: dict, allowed: dict | None = None, call_cc: int | None = None) -> bool:
+    """Unopened / blinds-only preflop — first-in opens, not limp-defense or vs raise.
+
+    Arena often sets callChips=BB for UTG first-in; call_chips==0 alone misroutes to limp path.
+    """
+    allowed = allowed or table.get("allowedActions") or {}
+    cc = call_cc if call_cc is not None else int(allowed.get("callChips") or 0)
+    if cc <= 0:
+        return True
+    if preflop_facing_raise(table, allowed, cc):
+        return False
+    bb = int(table.get("bigBlindChips") or 20)
+    sb = int(table.get("smallBlindChips") or 10)
+    max_bet = max_table_bet_chips(table)
+    pot = int(table.get("potChips") or 0)
+    blinds_pot = sb + bb
+    return max_bet <= bb and pot <= blinds_pot + 2
+
+
 def spot_kind(table: dict) -> str:
     """unopened | facing_bet | facing_raise (heuristic)."""
-    cc = call_chips(table)
-    if cc <= 0:
-        return "unopened"
-    bb = int(table.get("bigBlindChips") or 0)
     allowed = table.get("allowedActions") or {}
-    if allowed.get("canRaise") and cc > max(bb, 1):
+    cc = call_chips(table)
+    if is_preflop_open_spot(table, allowed, cc):
+        return "unopened"
+    if preflop_facing_raise(table, allowed, cc):
         return "facing_raise"
     return "facing_bet"
 

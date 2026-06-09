@@ -11,6 +11,7 @@ related:
   - concepts/quant-finance.md
   - entities/people/yifan-guo.md
   - sources/ai-for-trading-strategies-jevtic-zhaw-2022.md
+  - concepts/ols-alpha-signal-framework.md
 maturity: validated
 created: 2026-05-21
 updated: 2026-05-21

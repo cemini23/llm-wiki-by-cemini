@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-09] ingest | K107 — full inbox + daily digest arXiv
+
+- **Sources (5)** — 4 arXiv (2606.06882 strategic acquisition, 2606.07462 AARRI-Bench, 2606.08791 covariance regret, 2606.09104 BAVAR-BLED) + `trading-posts-compilation-7-2026-06-09.md` (17 posts, sha `5b174d74…`)
+- **Concepts (3 new + 3 updates)** — strategic-resource-acquisition-game-theory, algorithmic-auditing-covariance-regret, ols-alpha-signal-framework; polymarket-lp-rewards-farming, agent-team-five-gate-decision-memo, regime-conditioned-evaluation
+- **Entities (1 new)** — aarri-bench (Phase-0 NO-GO)
+- **Phase-0** — `scripts/adopt_k107_phase0.sh` (AARRI NO-GO; vorty279 list reference-only)
+- **Briefs (7 prod/cross + 1 arena)** — prod scp: LP farming window, covariance regret audit, WC inflows, poker S1 super-audit handoff; cross: CCC dynamic workflows; gambling: open-spot PFR; arena: open-spot audit
+- **Raw** — 4 PDFs + Posts.docx → librarian; inbox cleared
+
 ## [2026-06-08] ingest | K106 — Posts.docx (6 posts)
 
 - **Source (1)** — `trading-posts-compilation-6-2026-06-08.md` (sha `76b26ee5…`, 6 posts)

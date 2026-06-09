@@ -4,6 +4,7 @@ type: concept
 tags: [concept, multi-agent, conductor, tradingagents, k98]
 keywords: [intake, specialist, adversary, lead, memo, tradingagents, ai-hedge-fund, bloome, decision-memo]
 related:
+  - sources/trading-posts-compilation-7-2026-06-09.md
   - sources/trading-posts-compilation-18-2026-06-04.md
   - sources/tradingagents.md
   - concepts/algorithmic-stopping-conditions.md
@@ -11,7 +12,7 @@ related:
   - "@ccc-wiki/briefs/2026-06-04_k98-ccc-agent-org-chart-mcp-from-osint.md"
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-04
+updated: 2026-06-09
 ---
 
 ## Relations
@@ -39,6 +40,10 @@ Repeatable **multi-agent research pipeline** beats single-chat "play five person
 **Cemini mapping:** Conductor already routes wiki/kb specialists; Devil's Advocate / brief-audit layers cover Adversary + Memo. Gap: formal **Intake gate** on user queries (horizon/risk/universe) before expensive prod-touching briefs [TENTATIVE].
 
 Buffett/Graham example: translate "legend personas" into **executable filters** (moat vs margin-of-safety), not voice imitation — aligns with TradingAgents structured communication [CONFIRMED] via @sources/tradingagents.md + K98 post.
+
+### K107 extension — @kaiynne four layers (2026-06-09)
+
+@kaiynne maps **Research → Planning → Execution → Growth** as optimizable org layers. Execution-only 10× speed without lane separation = "50mph humans in a 5mph factory." Complements five-gate memo: add **Planning** and **Growth** as explicit conductor phases before prod-touching briefs ship [TENTATIVE 2026-06-09].
 
 ## Snippets
 

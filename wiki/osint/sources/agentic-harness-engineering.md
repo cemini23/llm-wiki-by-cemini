@@ -17,6 +17,7 @@ related:
   - concepts/graphflow-verifiable-agent-workflows.md
   - concepts/code-as-agent-harness.md
   - sources/arxiv-self-healing-llm-agents-2605.06737.md
+  - sources/arxiv-aarri-research-intern-bench-2606-07462-2026-06-09.md
   - entities/infrastructure/deepseek-api.md
   - sources/incompressible-knowledge-probes-li-2026.md
   - concepts/high-signal-paper-patterns.md

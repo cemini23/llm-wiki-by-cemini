@@ -137,6 +137,14 @@ def regression_spots() -> list[RegressionSpot]:
             notes="UTG: chart fold — no open.",
         ),
         RegressionSpot(
+            id="prod_aa_utg_open_spot",
+            source="Open-spot fix — UTG first-in must open (callChips=BB)",
+            table=utg_unopened(["As", "Ad"]),
+            forbidden=frozenset({"fold", "call", "check"}),
+            required=frozenset({"bet"}),
+            notes="Arena callChips=BB on first-in; open path not limp.",
+        ),
+        RegressionSpot(
             id="prod_j2o_co_steal_rock",
             source="HUD open-steal vs rock — J2o CO",
             table=co_unopened_steal_vs_rock(["Jc", "2d"]),

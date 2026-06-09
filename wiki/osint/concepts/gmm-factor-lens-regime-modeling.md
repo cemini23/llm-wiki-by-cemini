@@ -11,6 +11,7 @@ related:
   - concepts/quant-finance.md
   - concepts/hedge-fund-open-source-tooling.md
   - sources/lob-regime-detection-hiremath-2026.md
+  - sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md
 maturity: draft
 created: 2026-05-23
 updated: 2026-05-23

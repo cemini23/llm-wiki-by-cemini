@@ -19,6 +19,9 @@ related:
   - concepts/brier-score-model-promotion-framework.md
   - concepts/cemini-backtest-report-kit.md
   - sources/algorithmic-trading-model-benchmarking-framework-2026-05-28.md
+  - concepts/algorithmic-auditing-covariance-regret.md
+  - concepts/ols-alpha-signal-framework.md
+  - sources/arxiv-covariance-regret-algorithmic-audit-2606-08791-2026-06-09.md
   - concepts/alpha-eval-formula-mining-framework.md
   - sources/arxiv-alphaeval-2508-13174-2026-06-03.md
 

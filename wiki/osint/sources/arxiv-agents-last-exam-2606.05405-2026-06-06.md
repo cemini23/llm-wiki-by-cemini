@@ -9,6 +9,7 @@ related:
   - concepts/agent-memory-pipeline-eval-rubric.md
   - concepts/conductor-orchestrator.md
   - concepts/high-signal-paper-patterns.md
+  - sources/arxiv-aarri-research-intern-bench-2606-07462-2026-06-09.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-06

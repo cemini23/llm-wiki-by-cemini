@@ -5,6 +5,7 @@ tags: [source, trading-posts, market-making, polymarket, quant-framework, mcp, k
 keywords: [ruujss, rohonchain, whydeso, zephyr-hg, ritonchain, alphacartell, avellaneda-stoikov, alert-saas, dexscreener-mcp, n8n-content]
 related:
   - sources/trading-posts-compilation-19-2026-06-07.md
+  - sources/trading-posts-compilation-7-2026-06-09.md
   - sources/trading-posts-compilation-6-2026-05-29.md
   - concepts/avellaneda-stoikov-market-making-baseline.md
   - concepts/polymarket-alert-monitoring-saas.md

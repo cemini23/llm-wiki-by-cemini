@@ -11,6 +11,8 @@ related:
   - concepts/zero-trade-edge-signal-diagnostics.md
   - concepts/trading-model-failure-diagnostics.md
   - sources/diagnosing-trading-model-failures-2026-05-28.md
+  - concepts/algorithmic-auditing-covariance-regret.md
+  - sources/arxiv-covariance-regret-algorithmic-audit-2606-08791-2026-06-09.md
 maturity: draft
 created: 2026-05-28
 updated: 2026-05-29

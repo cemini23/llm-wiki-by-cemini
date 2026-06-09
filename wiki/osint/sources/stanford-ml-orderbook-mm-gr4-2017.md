@@ -11,6 +11,7 @@ related:
   - sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md
   - concepts/market-informedness-market-making.md
   - sources/arxiv-grpo-lob-hft-trading-2605.25527.md
+  - sources/arxiv-strategic-resource-acquisition-2606-06882-2026-06-09.md
 read_status: deep-read
 maturity: validated
 created: 2026-06-07

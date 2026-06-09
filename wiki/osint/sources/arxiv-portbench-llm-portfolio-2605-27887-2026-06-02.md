@@ -9,6 +9,7 @@ related:
   - concepts/llm-portfolio-management-benchmarking.md
   - concepts/regime-adaptive-continual-portfolio-learning.md
   - sources/arxiv-regime-adaptive-portfolio-learning-2606-00143-2026-06-02.md
+  - sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md
 maturity: draft
 read_status: read
 created: 2026-06-02

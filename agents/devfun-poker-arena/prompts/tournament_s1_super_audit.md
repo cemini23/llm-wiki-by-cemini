@@ -61,7 +61,8 @@ Deliver:
 | Artifact | Value |
 |----------|-------|
 | Prod decide commit (last deploy) | `ca5845f` (HL R10) |
-| Best eval-panel candidate | `70f2527` at **−17.45** bb/100 (500h live eval) |
+| Shipped decide | `4a6df45` lane-gate (not raw `70f2527` revert) |
+| Tournament preflight | **−9.37** bb/100 (150h); eval_panel **−26.67** with lane_tight |
 | Current local panel gate | **−26.67** bb/100 (150h, `eval_panel_mode`) — fails floor |
 | Regression spots | 80+ frozen leaks in `tests/fixtures/regression_spots.py` |
 | Runtime LLM | **None** in prod decide; HL auto-analyst JSON guards sparse on prod |

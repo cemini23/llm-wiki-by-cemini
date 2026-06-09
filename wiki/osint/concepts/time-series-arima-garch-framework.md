@@ -16,6 +16,7 @@ related:
   - entities/people/rohonchain.md
   - entities/people/yifan-guo.md
   - sources/ai-for-trading-strategies-jevtic-zhaw-2022.md
+  - concepts/ols-alpha-signal-framework.md
   - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
   - sources/trading-posts-compilation-6-2026-06-08.md
 maturity: validated

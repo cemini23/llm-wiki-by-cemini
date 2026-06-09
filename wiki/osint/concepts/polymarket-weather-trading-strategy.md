@@ -14,6 +14,7 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/polymarket-market-making-architectures.md
   - concepts/ensemble-weather-forecasting.md
+  - sources/trading-posts-compilation-7-2026-06-09.md
   - concepts/macro-weather-regime.md
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
   - entities/people/polymarketsuccubus.md

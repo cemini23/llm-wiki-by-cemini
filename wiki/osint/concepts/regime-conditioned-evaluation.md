@@ -19,6 +19,10 @@ related:
   - sources/test-time-adaptation-for-non-stationary-time-series.md
   - concepts/markov-regime-switching-models.md
   - concepts/gmm-factor-lens-regime-modeling.md
+  - concepts/algorithmic-auditing-covariance-regret.md
+  - concepts/ols-alpha-signal-framework.md
+  - sources/arxiv-strategic-resource-acquisition-2606-06882-2026-06-09.md
+  - sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md
   - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
   - concepts/lp-algorithm-live-promotion-gates.md
   - sources/quant-bot-lp-live-promotion-criteria-2026-05-28.md
@@ -32,9 +36,11 @@ related:
   - sources/algorithmic-trading-model-benchmarking-framework-2026-05-28.md
   - sources/arxiv-agentic-trading-survey-2605.19337.md
   - sources/arxiv-llm-robust-portfolio-optimization-2605-27013-2026-06-02.md
+  - sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md
+  - sources/arxiv-covariance-regret-algorithmic-audit-2606-08791-2026-06-09.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-06-04
+updated: 2026-06-09
 ---
 
 ## Relations

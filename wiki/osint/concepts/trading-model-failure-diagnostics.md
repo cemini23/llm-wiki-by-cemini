@@ -8,6 +8,7 @@ related:
   - concepts/zero-trade-edge-signal-diagnostics.md
   - concepts/brier-score-model-promotion-framework.md
   - concepts/regime-conditioned-evaluation.md
+  - concepts/algorithmic-auditing-covariance-regret.md
 maturity: draft
 created: 2026-05-28
 updated: 2026-05-28

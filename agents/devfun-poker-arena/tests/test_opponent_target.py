@@ -11,9 +11,17 @@ if str(_EXAMPLES) not in sys.path:
 from opponent_target import (  # noqa: E402
     active_villain_count,
     is_multiway,
+    is_preflop_open_spot,
     last_aggressor_seat,
+    preflop_facing_raise,
     select_target_agent_id,
     spot_kind,
+)
+
+from helpers.cemini_tables import (  # noqa: E402
+    btn_q9o_vs_limp,
+    utg_facing_raise,
+    utg_unopened,
 )
 
 
@@ -63,3 +71,24 @@ def test_unopened_steal_targets_rock():
     assert reason == "steal_vs_rock"
     assert aid == "v3"
     assert meta["spot"] == "unopened"
+
+
+def test_preflop_open_spot_utg_first_in():
+    t = utg_unopened(["As", "Ad"])
+    allowed = t["allowedActions"]
+    assert is_preflop_open_spot(t, allowed, int(allowed["callChips"])) is True
+    assert preflop_facing_raise(t, allowed, int(allowed["callChips"])) is False
+
+
+def test_preflop_open_spot_vs_limp_not_open():
+    t = btn_q9o_vs_limp()
+    allowed = t["allowedActions"]
+    assert is_preflop_open_spot(t, allowed, int(allowed["callChips"])) is False
+    assert spot_kind(t) == "facing_bet"
+
+
+def test_preflop_facing_raise():
+    t = utg_facing_raise(["Jd", "Qd"])
+    allowed = t["allowedActions"]
+    assert preflop_facing_raise(t, allowed, int(allowed["callChips"])) is True
+    assert is_preflop_open_spot(t, allowed, int(allowed["callChips"])) is False

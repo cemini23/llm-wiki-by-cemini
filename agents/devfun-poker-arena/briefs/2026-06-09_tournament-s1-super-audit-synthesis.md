@@ -3,8 +3,10 @@ title: Tournament S1 SUPER AUDIT — 5-model synthesis
 type: brief
 tags: [brief, poker, devfun-arena, tournament, cursor-audit, super-audit]
 created: 2026-06-09
-status: ACTIVE — implement P0 before 9 AM EST
+updated: 2026-06-09
+status: SHIPPED — superseded P0 deploy table; see current posture below
 pack: reports/gap-audit/pack-tournament-s1
+ship_commit: 4a6df45
 models:
   - claude-opus-4-8-thinking-high (cursor)
   - gpt-5.3-codex (cursor)
@@ -15,99 +17,88 @@ models:
 
 ## Target
 
-Operator — **Tournament S1** today (equal stacks, **5 rebuys**, placement / prize pool; jackpots irrelevant).
+Operator — **Tournament S1** (equal stacks, **5 rebuys**, placement / prize pool; jackpots irrelevant).
 
 ## Summary
 
-**Overall: SHIP-WITH-FIXES (WARN rollup).** All five auditors agree current **`ca5845f`** is **over-tight** for equal-stack accumulation and fails the local eval-panel record (−26.67 vs −17.45 floor). **Consensus deploy: `70f2527`** (locked candidate) + tournament survival env — **not** S2 playground comp ID.
+**Audit rollup (2026-06-09 morning):** 4/5 auditors recommended reverting S2 over-tightening to **`70f2527`** (−17.45 eval-panel floor). **What shipped instead:** hybrid **lane-gate** on **`4a6df45`** — `lane_tight` (first/qual/lead/eval_panel) keeps R8–R10 EP/suited folds; **tournament baseline** (`CEMINI_TOURNAMENT_MODE=1`) does not.
 
-**Operator hypothesis (lead-defense):** **Half right.** `lead_protect` / `first_protect` do **not fire** at equal stacks (no buffer). Real live tighteners: **`ko_survival` + `_survival_mode` (<1200 chips)** stacking fold margins, plus **R8–R10 always-on** preflop folds. Do **not** “play looser” globally — target **12–16% VPIP** rock band, not field LAG (~36%).
+**Current prod posture (post-ship):**
 
-**Version string for today:** `s1t.ca5845f.r10.survival-rebuy5` (prod — full `70f2527` revert breaks nuts regression; P1 hybrid revert)
+| Item | Value |
+|------|--------|
+| Git | `4a6df45` on `main`, deployed `cemini-prod` |
+| `AGENT_VERSION` | `s1t.4a6df45.tournament-s1` (via `s1_tournament_prod_apply.sh`) |
+| Tournament mode | `CEMINI_TOURNAMENT_MODE=1`, eval panel gate off |
+| KO survival | `CEMINI_KO_SURVIVAL_HANDS=60`, min stack tuned for start stack |
+| Jackpots | `JACKPOT_ROYAL_ENABLED=0`, `JACKPOT_27_HUNT_ENABLED=0` |
+| Preflight | Tournament posture **−9.37** bb/100 (150h); eval_panel lane **−26.67** (expected — lane_tight on) |
+| VPIP target | **12–16%** rock band — do not chase field LAG (~36%) |
+| Lobby | Swap when bracket opens: `TOURNAMENT_COMP=cmp... ./scripts/s1_tournament_prod_apply.sh` |
+| Oracle | S1 primary for deploy; S2 intel-only (`multi_comp_registry`) |
 
-**P0 applied on prod (post-audit):** `AGENT_VERSION`, `CEMINI_KO_SURVIVAL_HANDS=60`, `JACKPOT_ROYAL_ENABLED=0`, lobby restarted.
+**Follow-up shipped same day:** open-spot preflop routing — `is_preflop_open_spot()` (not `call_chips==0`) so UTG first-in opens instead of limp path → PFR recovery. See `@agents/devfun-poker-arena/briefs/2026-06-09_open-spot-pfr-preflop-audit.md`.
+
+**Operator hypothesis (lead-defense):** Half right — `lead_protect` / `first_protect` do not fire at equal stacks. Live tighteners were KO survival margins + always-on R8–R10; tournament mode + lane-gate addresses without full `70f2527` revert (nuts regression on full revert).
 
 ## Body
 
-### Cursor audit rollup
+### Cursor audit rollup (historical)
 
-| Auditor | Verdict | Deploy commit |
-|---------|---------|---------------|
+| Auditor | Verdict | Deploy commit (audit) |
+|---------|---------|------------------------|
 | Opus (cursor) | WARN | `70f2527` |
 | Codex (cursor) | WARN | `70f2527` |
 | Gemini (cursor) | FAIL | `70f2527` |
 | Grok (openrouter) | WARN | `ca5845f` + lane disables |
 | DeepSeek (reasoner) | WARN | `70f2527` |
 
-**Overall:** 4/5 → `70f2527`; Grok minority keep `ca5845f` + disable protect lanes.
+**Ship decision:** lane-gate hybrid on `4a6df45` — not raw `70f2527` checkout (regression: `prod_a9s_sb_paired_river`).
 
-### Consensus (≥3 auditors)
+### Consensus (≥3 auditors) — still valid
 
-1. **Do not ship `ca5845f` logic as tournament baseline** — R8–R10 always-on EP/suited folds hurt eval (−26.67) and accumulation.
-2. **Deploy `70f2527`** or equivalent pre-S2-overtight baseline (−17.45 live eval).
-3. **Tournament env:** `CEMINI_EVAL_PANEL_GATE=0`, `CEMINI_KO_SURVIVAL=1`, `JACKPOT_27_HUNT_ENABLED=0`, survival pace — **not** volume / jackpot chase.
-4. **VPIP target ~10–16%** — S1 rock (10.3%), slight widen with rebuys OK; **never** chase ~36% field LAG.
-5. **Wrong metrics:** `payout_chips`, chip rank alone, stale adj bb/100 without volume, copied preflight −26.67 across commits.
-6. **Swap `ARENA_LOBBY_COMPETITION_ID`** when Tournament S1 appears in `list-active` (still on S2 playground `cmq57o53r0bhw18g23qkydb08`).
-7. **Add `AGENT_VERSION`** on every deploy + per-regime telemetry tags.
+1. Do not run S2 over-tight baseline as tournament default.
+2. Tournament env: eval panel gate off, KO survival on, jackpots off, neutral pace.
+3. VPIP **~12–16%** — S1 rock; rebuy runway via auto-rebuy, not spew.
+4. Wrong metrics: `payout_chips`, chip rank alone, stale adj bb/100 without volume.
+5. `AGENT_VERSION` + per-regime telemetry on every deploy.
 
-### Unique angles (investigate)
+### P0 (completed)
 
-| Source | Angle |
-|--------|--------|
-| Opus | Lead lanes **dead** at equal stacks; survival stack **double-merge** is the live tightener — tune `CEMINI_KO_SURVIVAL_MIN_STACK` to start stack |
-| Codex | `exploit_gate` off during `ko_survival` — can't adapt HUD while survival active |
-| DeepSeek | Rebuy-aware aggression module missing (speculative jam band with rebuys > 0) — **P1**, not 45-min default |
-| Grok | Keep `ca5845f`, only disable protect lanes + revert 3 weakest EP folds — minority |
+| # | Action | Status |
+|---|--------|--------|
+| 1 | Lane-gate decide + tournament env | **Done** `4a6df45` |
+| 2 | `s1_tournament_prod_apply.sh` + multi-comp oracle | **Done** |
+| 3 | Eval panel smoke + tournament preflight in metrics | **Done** |
+| 4 | Open-spot preflop routing fix | **Done** (same session) |
+| 5 | Bracket lobby swap when S1 comp live | **Pending** — run apply script |
 
-### Conflicts
+### P1 (open)
 
-| Topic | Resolution |
-|-------|------------|
-| `70f2527` vs `ca5845f` | **Ship `70f2527`** (4/5 + locked candidate); regression: 1 spot fails on 70f2527 (`prod_a9s_sb_paired_river`) — cherry-pick that guard only if needed |
-| Royal jackpot ON vs OFF | Opus OFF for placement; prod script ON — **OFF** for tournament (`JACKPOT_ROYAL_ENABLED=0`) |
-| `CEMINI_S1B_EXPLOIT` | Gemini OFF for tournament; prod ON — **keep ON** with `CEMINI_S1B_MIN_STACK_BB=80` (exploit when stack built) |
-| Rebuy aggression | DeepSeek widen with rebuys — **defer P1**; use auto-rebuy + don't spew |
-
-### P0 implementation (next 45 min)
-
-| # | Action | Command / file |
-|---|--------|----------------|
-| 1 | Deploy decide at **`70f2527`** (+ optional A9s SB guard cherry-pick) | `git checkout 70f2527 -- examples/cemini_decide.py` → pytest regression → deploy-fast |
-| 2 | Set **`AGENT_VERSION=s1t.70f2527.r26.survival-rebuy5`** in prod `.env` | `set_kv AGENT_VERSION ...` |
-| 3 | Tune KO survival: `CEMINI_KO_SURVIVAL_HANDS=60`, `CEMINI_KO_SURVIVAL_MIN_STACK` ≈ 60% of **known** start stack | ssh prod `.env` |
-| 4 | `CEMINI_PACE_PHASE` → neutral join (not `survival` throttle) | env |
-| 5 | `JACKPOT_ROYAL_ENABLED=0` | env |
-| 6 | When bracket opens: `TOURNAMENT_COMP=cmp... ./scripts/s1_tournament_prod_apply.sh` | new script |
-| 7 | Per-deploy: full `env_flags` in `deploys.jsonl` + fresh `preflight_ts` | deploy_registry |
-
-### P1 (post-start / tonight)
-
-- Replay-backed **`chipDelta`** per hand (not `payout_chips`)
-- Per-commit eval panel stamp (kill copied −26.67)
-- Archetype nemesis only (drop stale S2 name list for tournament field)
-- Optional: `CEMINI_REBUY_REMAINING` loosen band (DeepSeek) — needs API rebuy count wiring
+- Replay-backed `chipDelta` per hand (export path has `chip_delta`; prod telemetry wiring)
+- Per-commit eval panel stamp (avoid copied −26.67 across commits)
+- Archetype nemesis only for tournament field
+- Optional rebuy-aware aggression (DeepSeek) — needs API rebuy count
 
 ### Artifacts
 
 ```
-reports/gap-audit/pack-tournament-s1/          # audit pack + audit_prompt.md
-reports/gap-audit/premium-tournament-s1/       # grok + deepseek outputs
-reports/hl-loop/tournament_candidate.json      # lock 70f2527
-prompts/tournament_s1_super_audit.md
-scripts/build_tournament_super_audit_pack.py
-scripts/run_tournament_super_audit_api.py
+reports/gap-audit/pack-tournament-s1/
+reports/gap-audit/premium-tournament-s1/
+reports/hl-loop/tournament_candidate.json   # updated to 4a6df45
 scripts/s1_tournament_prod_apply.sh
+scripts/run_s1_tournament_hl_cycle.sh
+examples/multi_comp_registry.py
 ```
 
-### Regime discipline (from article + recap)
+### Regime discipline
 
 | Regime | ID | Optimize for |
 |--------|-----|--------------|
 | Playground S1 | `cmpy2qy65002ud9ej6b7jjq0l` | Chip survival + nit (won) |
-| Playground S2 | `cmq57o53r0bhw18g23qkydb08` | Qual ticket — **not** today's event |
-| Eval panel | `seed_poker_eval_s1` | Deploy widen **blocker** only |
-| **Tournament S1** | TBA at 9 AM | Placement + rebuy runway |
+| Playground S2 | `cmq57o53r0bhw18g23qkydb08` | Qual ticket — intel only |
+| Eval panel | `seed_poker_eval_s1` | Deploy widen blocker only |
+| **Tournament S1** | TBA at bracket | Placement + rebuy runway |
 
 ## Sources
 
@@ -115,4 +106,3 @@ scripts/s1_tournament_prod_apply.sh
 - `reports/gap-audit/pack-tournament-s1/`
 - `2026-06-08_s2-heavy-audit-synthesis-v2.md`
 - `docs/tournament-version-tracking.md`
-- `.cursor/skills/cursor-audit/SKILL.md`

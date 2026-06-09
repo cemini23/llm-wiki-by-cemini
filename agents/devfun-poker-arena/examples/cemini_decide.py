@@ -35,6 +35,7 @@ from opponent_hud import build_opponent_hud, enrich_hud_from_table, exploit_marg
 from pokerskill_adapter import retrieve_pokerskill_hints  # noqa: E402
 from session_memory import exploit_from_memory  # noqa: E402
 from nemesis_seed import nemesis_handles, table_nemesis_opener, table_nemesis_pressure  # noqa: E402
+from opponent_target import is_preflop_open_spot  # noqa: E402
 from s1b_exploit import (  # noqa: E402
     exploit_lane_active,
     try_defend_bb_vs_steal,
@@ -561,7 +562,8 @@ def decide(
                       msg=f"{binding}: EP weak ace second pair — fold")
 
     # UTG/MP — never open chart trash (35o UTG, 94o UTG — HL R4/R8).
-    if (street == "Preflop" and call_chips == 0 and position in ("UTG", "MP")
+    if (street == "Preflop" and is_preflop_open_spot(table, allowed, call_chips)
+            and position in ("UTG", "MP")
             and _is_ep_preflop_trash(hc) and "fold" in available):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP trash — fold")
@@ -573,7 +575,8 @@ def decide(
                       msg=f"{binding}: EP trash vs raise — fold")
 
     # EP suited broadway — fold opens under protect/eval lanes (HL R8; not tournament baseline).
-    if (street == "Preflop" and call_chips == 0 and lane_tight
+    if (street == "Preflop" and is_preflop_open_spot(table, allowed, call_chips)
+            and lane_tight
             and position in ("UTG", "MP")
             and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
@@ -683,7 +686,7 @@ def decide(
                  or equity < pot_odds + 0.04)):
         action_name, amount = "fold", None
     # Chart drives opens — library bias can nudge HU opens/checks.
-    elif street == "Preflop" and call_chips == 0:
+    elif street == "Preflop" and is_preflop_open_spot(table, allowed, call_chips):
         eff = _effective_preflop_open(suggested, ps_library, ps_bias, equity)
         action_name, amount = _preflop_open(
             eff, allowed, available, pot, equity,

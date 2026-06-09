@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "examples"))
 sys.path.insert(0, str(ROOT))
 
-from cemini_decide import decide  # noqa: E402
+from cemini_decide import decide, retrieve_solver_context  # noqa: E402
 from hand_nuts import treys_available  # noqa: E402
 from tests.fixtures.regression_spots import (  # noqa: E402
     nuts_regression_spots,
@@ -26,8 +26,36 @@ def _nuts_on(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setenv("CEMINI_NUTS_DETECT", "1")
 
 
-def _run(spot_table: dict) -> dict:
-    out = decide(spot_table, deadline_s=10.0)
+def _merge_context(table: dict, extra: dict | None) -> dict:
+    ctx = retrieve_solver_context(table)
+    if not extra:
+        return ctx
+    for key, val in extra.items():
+        if key == "opponent_hud" and isinstance(val, dict):
+            base = dict(ctx.get("opponent_hud") or {})
+            base.update(val)
+            ctx["opponent_hud"] = base
+        else:
+            ctx[key] = val
+    return ctx
+
+
+def _run(spot_table: dict, context: dict | None = None) -> dict:
+    env_saved: dict[str, str | None] = {}
+    ctx_extra = dict(context or {})
+    for key in list(ctx_extra.keys()):
+        if key.startswith(("CEMINI_", "JACKPOT_", "ARENA_")):
+            env_saved[key] = os.environ.get(key)
+            os.environ[key] = str(ctx_extra.pop(key))
+    try:
+        ctx = _merge_context(spot_table, ctx_extra or None)
+        out = decide(spot_table, deadline_s=10.0, research_context=ctx)
+    finally:
+        for key, prev in env_saved.items():
+            if prev is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = prev
     legal = set(spot_table["allowedActions"]["availableActions"])
     assert out["action"] in legal
     return out
@@ -35,7 +63,7 @@ def _run(spot_table: dict) -> dict:
 
 def test_nuts_regression_spots():
     for spot in nuts_regression_spots():
-        action = _run(spot.table)["action"]
+        action = _run(spot.table, spot.context)["action"]
         if spot.forbidden:
             assert action not in spot.forbidden, (
                 f"{spot.id}: got {action!r}, forbidden={sorted(spot.forbidden)}"
@@ -50,7 +78,7 @@ def test_nuts_flag_off_matches_baseline_regression(monkeypatch: pytest.MonkeyPat
     """CEMINI_NUTS_DETECT=0 must not change existing leak guards."""
     monkeypatch.setenv("CEMINI_NUTS_DETECT", "0")
     for spot in regression_spots():
-        action = decide(spot.table, deadline_s=10.0)["action"]
+        action = _run(spot.table, spot.context)["action"]
         if spot.forbidden:
             assert action not in spot.forbidden, spot.id
         if spot.required:

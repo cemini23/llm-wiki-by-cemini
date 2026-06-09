@@ -12,6 +12,7 @@ related:
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/polymarket-copy-trading-strategy.md
   - concepts/polymarket-marginal-polytope-arbitrage.md
+  - concepts/strategic-resource-acquisition-game-theory.md
 maturity: draft
 created: 2026-05-18
 updated: 2026-05-26

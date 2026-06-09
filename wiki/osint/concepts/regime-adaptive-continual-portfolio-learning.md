@@ -7,6 +7,7 @@ related:
   - sources/arxiv-regime-adaptive-portfolio-learning-2606-00143-2026-06-02.md
   - concepts/regime-conditioned-evaluation.md
   - sources/arxiv-portbench-llm-portfolio-2605-27887-2026-06-02.md
+  - sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md
 maturity: draft
 created: 2026-06-02
 updated: 2026-06-02

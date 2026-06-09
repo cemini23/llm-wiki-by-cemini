@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-09 — K107)
+
+- **K107 ingest (2026-06-09)** — Full inbox: Posts.docx (17) + 4 arXiv from daily digest. **5 sources + 3 concepts + 1 entity + 3 updates.** Phase-0: AARRI-bench **NO-GO** (no license). **Prod briefs scp'd (4):** LP farming window, covariance-regret audit REFERENCE, WC inflows posture, poker S1 super-audit handoff. **Cross-wiki:** CCC dynamic workflows/skills brief. **Poker:** open-spot PFR audit. Raw → librarian; inbox cleared.
+
 ## Current state (2026-06-08 — K106)
 
 - **K106 ingest (2026-06-08)** — `Posts.docx` (6 posts, sha `76b26ee5…`). **1 source + 1 concept + 3 entities + 5 updates.** AS production adaptations (@RuujSs); PM alert SaaS REFERENCE (@whydeso); DexScreener MCP laptop tooling. SEO style pass; CCC brief on disk. No prod scp. Raw → librarian; inbox cleared.
