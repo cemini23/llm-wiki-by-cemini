@@ -69,6 +69,12 @@ def _stagger_locks_enabled() -> bool:
     return raw not in ("0", "false", "no", "off")
 
 
+def tournament_mode_enabled() -> bool:
+    """Tournament bracket — no playground qual/lead protect or stagger locks."""
+    raw = os.environ.get("CEMINI_TOURNAMENT_MODE", "").strip().lower()
+    return raw in ("1", "true", "yes", "on")
+
+
 def _first_lock_surplus_pct() -> float:
     return _safe_float(os.environ.get("CEMINI_FIRST_LOCK_SURPLUS_PCT"), _DEFAULT_FIRST_LOCK_SURPLUS_PCT)
 
@@ -263,6 +269,11 @@ def fetch_qualification_status(
 
     buffer = int(chips) - int(cutoff_chips)
     out["buffer_chips"] = buffer
+
+    if tournament_mode_enabled():
+        out["lock_tier"] = "tournament"
+        return out
+
     if buffer >= buffer_chips and int(rank) <= cutoff_rank:
         out["qualification_protect"] = True
     if buffer >= lead_buffer_chips and int(rank) <= lead_rank:

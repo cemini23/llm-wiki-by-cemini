@@ -105,6 +105,9 @@ def append_playground_snapshot(
     row.update(_hl_state_fields())
     if commit and "commit" not in row:
         row["commit"] = commit
+    agent_version = os.environ.get("AGENT_VERSION", "").strip()
+    if agent_version:
+        row["agent_version"] = agent_version
     path = timeseries_path()
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as fh:

@@ -111,28 +111,38 @@ install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-export-crawl.service" \
   /etc/systemd/system/cemini-devfun-poker-export-crawl.service
 install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-export-crawl.timer" \
   /etc/systemd/system/cemini-devfun-poker-export-crawl.timer
+install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-multi-comp-snapshot.service" \
+  /etc/systemd/system/cemini-devfun-poker-multi-comp-snapshot.service
+install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-multi-comp-snapshot.timer" \
+  /etc/systemd/system/cemini-devfun-poker-multi-comp-snapshot.timer
 
 mkdir -p "${REMOTE_DIR}/reports/analyze"
 mkdir -p "${REMOTE_DIR}/reports/hl-loop"
 mkdir -p "${REMOTE_DIR}/reports/exports/playground-s1-live"
+mkdir -p "${REMOTE_DIR}/reports/exports/s1-tournament-live"
+mkdir -p "${REMOTE_DIR}/reports/exports/s2-playground-live"
 
 systemctl daemon-reload
 systemctl enable cemini-devfun-poker-lobby.service
 systemctl enable cemini-devfun-poker-monitor.timer
 systemctl enable cemini-devfun-poker-export.timer
 systemctl enable cemini-devfun-poker-export-crawl.timer
+systemctl enable cemini-devfun-poker-multi-comp-snapshot.timer
 systemctl restart cemini-devfun-poker-lobby.service
 systemctl start cemini-devfun-poker-monitor.service || true
 # Export oneshot is best-effort (arena 502s happen). Timer retries hourly — do not fail deploy.
 systemctl start cemini-devfun-poker-export.timer
 systemctl start cemini-devfun-poker-export-crawl.timer
+systemctl start cemini-devfun-poker-multi-comp-snapshot.timer
 systemctl start cemini-devfun-poker-export.service || echo "WARN: export oneshot failed (timer will retry)" >&2
 systemctl start cemini-devfun-poker-export-crawl.service || echo "WARN: crawl oneshot failed (timer will retry)" >&2
+systemctl start cemini-devfun-poker-multi-comp-snapshot.service || echo "WARN: multi-comp snapshot failed (timer will retry)" >&2
 sleep 2
 systemctl --no-pager status cemini-devfun-poker-lobby.service || true
 systemctl --no-pager status cemini-devfun-poker-monitor.timer || true
 systemctl --no-pager status cemini-devfun-poker-export.timer || true
 systemctl --no-pager status cemini-devfun-poker-export-crawl.timer || true
+systemctl --no-pager status cemini-devfun-poker-multi-comp-snapshot.timer || true
 REMOTE
 
 DEPLOY_COMMIT="$(git -C "${AGENT_DIR}" rev-parse --short HEAD 2>/dev/null || echo unknown)"

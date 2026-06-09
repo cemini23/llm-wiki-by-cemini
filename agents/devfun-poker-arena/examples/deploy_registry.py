@@ -25,6 +25,7 @@ EVAL_SCHEMA = "devfun.eval_timeseries.v1"
 CANDIDATE_SCHEMA = "devfun.tournament_candidate.v1"
 
 _ENV_PREFIXES = ("CEMINI_", "ARENA_LOBBY", "JACKPOT_", "NUTS_")
+_DEPLOY_META_KEYS = ("AGENT_VERSION",)
 
 
 def _utc_now() -> str:
@@ -75,7 +76,7 @@ def _parse_env_file(path: Path) -> dict[str, str]:
             continue
         key, _, val = line.partition("=")
         key = key.strip()
-        if any(key.startswith(p) for p in _ENV_PREFIXES):
+        if any(key.startswith(p) for p in _ENV_PREFIXES) or key in _DEPLOY_META_KEYS:
             out[key] = val.strip().strip('"').strip("'")
     return out
 
@@ -88,7 +89,7 @@ def collect_env_snapshot(
     """Merge os.environ CEMINI_* / ARENA_* flags with optional .env file."""
     snap: dict[str, str] = {}
     for key, val in sorted(os.environ.items()):
-        if any(key.startswith(p) for p in _ENV_PREFIXES):
+        if any(key.startswith(p) for p in _ENV_PREFIXES) or key in _DEPLOY_META_KEYS:
             snap[key] = val
     if env_file:
         snap.update(_parse_env_file(env_file))
@@ -190,6 +191,9 @@ def append_deploy_record(
     }
     if notes:
         row["notes"] = notes
+    agent_version = snap.get("AGENT_VERSION") or os.environ.get("AGENT_VERSION", "").strip()
+    if agent_version:
+        row["agent_version"] = agent_version
 
     _append_jsonl(deploys_path(), row)
     return row

@@ -49,10 +49,11 @@ def test_normalize_submission() -> None:
         },
         "submittedAt": 1780522525822,
     }
-    rec = normalize_submission(raw, competition_id="comp1")
+    rec = normalize_submission(raw, competition_id="comp1", chip_delta=-42)
     assert rec["record_type"] == "submission"
     assert rec["table_id"] == "tbl2"
     assert rec["hole_cards"] == ["5d", "9c"]
+    assert rec["chip_delta"] == -42
 
 
 def test_build_summary_win_rate() -> None:

@@ -26,6 +26,8 @@ FILES=(
   deploys.jsonl
   eval_timeseries.jsonl
   playground_timeseries.jsonl
+  multi_comp_config.json
+  multi_comp_timeseries.jsonl
   tournament_candidate.json
   tournament_candidates.jsonl
   preflight_metrics.json

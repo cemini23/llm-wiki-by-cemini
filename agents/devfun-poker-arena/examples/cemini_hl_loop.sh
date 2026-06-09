@@ -37,7 +37,15 @@ AGENT_DIR="$(pwd)"
 
 HOST="${CEMINI_PROD_HOST:-cemini-prod}"
 REMOTE_DIR="/opt/devfun-poker-arena"
-MATCH="${ARENA_LOBBY_COMPETITION_ID:-cmq57o53r0bhw18g23qkydb08}"
+# S1 tournament primary wins over lobby/S2 when multi-comp oracle is configured.
+MATCH="${CEMINI_HL_PRIMARY_COMP:-}"
+if [[ -z "${MATCH}" ]]; then
+  MATCH="$(uv run python -c "
+from multi_comp_registry import primary_competition_id
+print(primary_competition_id())
+" 2>/dev/null || true)"
+fi
+MATCH="${MATCH:-${ARENA_LOBBY_COMPETITION_ID:-cmq57o53r0bhw18g23qkydb08}}"
 TOP="${HL_ANALYZE_TOP:-15}"
 ROUND="${HL_ROUND:-1}"
 REPORTS="${AGENT_DIR}/reports/hl-loop"

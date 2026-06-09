@@ -6,6 +6,7 @@ from qualification_guard import (
     DEFAULT_LEAD_BUFFER_CHIPS,
     fetch_qualification_status,
     staggered_chip_lock,
+    tournament_mode_enabled,
 )
 
 
@@ -164,3 +165,19 @@ def test_no_protect_when_rank_outside_top_20():
 def test_default_thresholds():
     assert DEFAULT_BUFFER_CHIPS == 1000
     assert DEFAULT_LEAD_BUFFER_CHIPS == 3000
+
+
+def test_tournament_mode_disables_all_protect_lanes(monkeypatch):
+    monkeypatch.setenv("CEMINI_TOURNAMENT_MODE", "1")
+    assert tournament_mode_enabled()
+    client = _FakeClient(
+        {"leaderboard": [{"arenaId": "comp1", "rank": 1, "totalScore": 50000}]},
+        cutoff_score=1000,
+    )
+    st = fetch_qualification_status(client, "comp1")
+    assert st["rank"] == 1
+    assert st["qualification_protect"] is False
+    assert st["lead_protect"] is False
+    assert st["first_protect"] is False
+    assert st["lock_tier"] == "tournament"
+    assert st["max_playable_chips"] is None

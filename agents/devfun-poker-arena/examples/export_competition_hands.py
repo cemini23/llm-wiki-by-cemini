@@ -41,6 +41,7 @@ _EXAMPLES = Path(__file__).resolve().parent
 if str(_EXAMPLES) not in sys.path:
     sys.path.insert(0, str(_EXAMPLES))
 
+from analyze import _fetch_replays  # noqa: E402
 from arena_client import ArenaClient, ArenaError, CREDS_PATH, DEFAULT_BASE  # noqa: E402
 
 PAGE_SIZE = 100
@@ -129,17 +130,29 @@ def fetch_agent_stats(
         return None
 
 
-def normalize_table(table: dict, *, competition_id: str) -> dict:
+def normalize_table(
+    table: dict,
+    *,
+    competition_id: str,
+    chip_deltas: Optional[dict[str, dict[str, int]]] = None,
+) -> dict:
+    chip_deltas = chip_deltas or {}
+    table_id = str(table.get("id") or table.get("tableId") or "")
+    seat_deltas = chip_deltas.get(table_id) or {}
     seats = []
     for s in table.get("seats") or []:
-        seats.append({
-            "agent_id": s.get("agentId"),
+        agent_id = s.get("agentId")
+        seat = {
+            "agent_id": agent_id,
             "handle": s.get("agentHandle") or s.get("agentName"),
             "seat": s.get("seatNumber"),
             "hole_cards": list(s.get("holeCards") or []),
             "payout_chips": int(s.get("payoutChips") or 0),
             "stack_chips": int(s.get("stackChips") or 0),
-        })
+        }
+        if agent_id and str(agent_id) in seat_deltas:
+            seat["chip_delta"] = seat_deltas[str(agent_id)]
+        seats.append(seat)
     winners = []
     for w in table.get("winners") or []:
         winners.append({
@@ -165,7 +178,12 @@ def normalize_table(table: dict, *, competition_id: str) -> dict:
     }
 
 
-def normalize_submission(sub: dict, *, competition_id: str) -> dict:
+def normalize_submission(
+    sub: dict,
+    *,
+    competition_id: str,
+    chip_delta: Optional[int] = None,
+) -> dict:
     data = sub.get("data") or {}
     ch = sub.get("challenge") or {}
     result = ch.get("result") or {}
@@ -179,7 +197,7 @@ def normalize_submission(sub: dict, *, competition_id: str) -> dict:
             "amount": int(w.get("amount") or 0),
             "hand_name": w.get("handName") or "",
         })
-    return {
+    out = {
         "record_type": "submission",
         "submission_id": sub.get("id"),
         "table_id": ch.get("id"),
@@ -197,6 +215,9 @@ def normalize_submission(sub: dict, *, competition_id: str) -> dict:
         "small_blind": meta.get("smallBlindChips"),
         "big_blind": meta.get("bigBlindChips"),
     }
+    if chip_delta is not None:
+        out["chip_delta"] = int(chip_delta)
+    return out
 
 
 def normalize_agent_row(lb_row: dict, stats: Optional[dict]) -> dict:
@@ -237,6 +258,8 @@ def build_summary(
         "showdowns": 0,
         "wins": 0,
         "payout_sum": 0,
+        "chip_delta_sum": 0,
+        "chip_delta_n": 0,
         "losses": 0,
     })
     for rec in tables:
@@ -265,6 +288,25 @@ def build_summary(
         row["hero_hands"] = row.get("hero_hands", 0) + 1
         payout = int(rec.get("payout_chips") or 0)
         row["hero_payout_sum"] = row.get("hero_payout_sum", 0) + payout
+        if rec.get("chip_delta") is not None:
+            row["chip_delta_sum"] += int(rec["chip_delta"])
+            row["chip_delta_n"] += 1
+
+    hero_chip_delta_sum = None
+    hero_chip_delta_n = 0
+    hero_bb100_from_delta = None
+    for rec in submissions:
+        if rec.get("chip_delta") is None:
+            continue
+        hero_chip_delta_n += 1
+        hero_chip_delta_sum = (hero_chip_delta_sum or 0) + int(rec["chip_delta"])
+    if hero_chip_delta_n and hero_chip_delta_sum is not None:
+        bb_vals = [int(r.get("big_blind") or 0) for r in submissions if r.get("big_blind")]
+        bb = max(bb_vals) if bb_vals else 0
+        if bb > 0:
+            hero_bb100_from_delta = round(
+                (hero_chip_delta_sum / bb) * (100 / hero_chip_delta_n), 2
+            )
 
     top_showdown = sorted(
         (
@@ -282,10 +324,14 @@ def build_summary(
         "submission_records": len(submissions),
         "agent_records": len(agents),
         "unique_handles_in_tables": len(by_handle),
+        "hero_chip_delta_sum": hero_chip_delta_sum,
+        "hero_chip_delta_n": hero_chip_delta_n,
+        "hero_bb100_from_chip_delta": hero_bb100_from_delta,
         "top_showdown_performers": top_showdown,
         "notes": (
             "recent-tables is a rolling ~200-table window; use --mode full for "
-            "per-agent submission history. No street-by-street actions in API."
+            "per-agent submission history. chip_delta from /agent/replays when "
+            "--with-replays; payout_chips is pot won, not chip delta."
         ),
     }
 
@@ -357,6 +403,25 @@ def _append_jsonl(path: Path, records: list[dict], dedupe_key: str) -> int:
         return len(new_rows)
 
 
+def _replay_deltas_by_agent(
+    client: ArenaClient,
+    agent_ids: list[str],
+    *,
+    sleep_s: float = 0.05,
+) -> dict[str, dict[str, int]]:
+    """{agent_id: {table_id: chipDelta}} — server caps replays at 50 per agent."""
+    out: dict[str, dict[str, int]] = {}
+    for aid in agent_ids:
+        if not aid:
+            continue
+        deltas = _fetch_replays(client, aid, limit=50)
+        if deltas:
+            out[str(aid)] = {str(tid): int(v) for tid, v in deltas.items()}
+        if sleep_s:
+            time.sleep(sleep_s)
+    return out
+
+
 def export_competition(
     client: ArenaClient,
     competition_id: str,
@@ -366,11 +431,29 @@ def export_competition(
     fetch_stats: bool = True,
     stats_top: int = 50,
     sleep_s: float = 0.05,
+    with_replays: bool = True,
+    hero_agent_id: Optional[str] = None,
 ) -> dict[str, Any]:
     """Run export; return dict of record lists keyed by output file stem."""
+    replay_by_agent: dict[str, dict[str, int]] = {}
+    if with_replays and hero_agent_id:
+        print(f"[export] fetching replays for hero {hero_agent_id}…", file=sys.stderr)
+        replay_by_agent = _replay_deltas_by_agent(
+            client, [hero_agent_id], sleep_s=sleep_s
+        )
+    hero_replays = replay_by_agent.get(str(hero_agent_id or ""), {})
+
     print(f"[export] fetching recent-tables for {competition_id}…", file=sys.stderr)
     raw_tables = fetch_recent_tables(client, competition_id)
-    tables = [normalize_table(t, competition_id=competition_id) for t in raw_tables]
+    table_chip_map: dict[str, dict[str, int]] = {}
+    if hero_agent_id and hero_replays:
+        table_chip_map = {
+            tid: {str(hero_agent_id): delta} for tid, delta in hero_replays.items()
+        }
+    tables = [
+        normalize_table(t, competition_id=competition_id, chip_deltas=table_chip_map)
+        for t in raw_tables
+    ]
     print(f"[export] tables={len(tables)}", file=sys.stderr)
 
     print("[export] fetching leaderboard…", file=sys.stderr)
@@ -404,9 +487,18 @@ def export_competition(
             continue
         handle = ag.get("handle") or ag.get("name") or aid
         subs = fetch_agent_submissions(client, aid, competition_id)
-        submissions.extend(
-            normalize_submission(s, competition_id=competition_id) for s in subs
-        )
+        agent_replays = replay_by_agent.get(str(aid), {})
+        if with_replays and not agent_replays and aid == hero_agent_id:
+            agent_replays = hero_replays
+        for s in subs:
+            ch = s.get("challenge") or {}
+            tid = ch.get("id")
+            cd = agent_replays.get(str(tid)) if tid is not None else None
+            submissions.append(
+                normalize_submission(
+                    s, competition_id=competition_id, chip_delta=cd
+                )
+            )
         print(f"[export]   {i + 1}/{len(targets)} {handle}: {len(subs)} hands", file=sys.stderr)
         if sleep_s:
             time.sleep(sleep_s)
@@ -464,10 +556,15 @@ def main(argv: Optional[list[str]] = None) -> int:
         default=50,
         help="Fetch agent-stats for top N leaderboard rows (default 50)",
     )
+    p.add_argument(
+        "--no-replays",
+        action="store_true",
+        help="Skip /agent/replays chipDelta merge (payout_chips only)",
+    )
     args = p.parse_args(argv)
 
     load_dotenv()
-    api_key, _ = _load_creds()
+    api_key, agent_id = _load_creds()
     if not api_key:
         print("ERROR: set ARENA_API_KEY or run pokerkit run once for .arena-credentials",
               file=sys.stderr)
@@ -498,6 +595,8 @@ def main(argv: Optional[list[str]] = None) -> int:
             top_agents=top_agents,
             fetch_stats=not args.no_stats,
             stats_top=args.stats_top,
+            with_replays=not args.no_replays,
+            hero_agent_id=agent_id,
         )
 
         if args.append:

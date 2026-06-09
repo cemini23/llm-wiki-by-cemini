@@ -81,7 +81,13 @@ _EP_SUITED_BROADWAY_TRAP = frozenset({"KQs", "QJs", "KJs", "JTs"})
 
 _RANKS = "23456789TJQKA"
 _ROYAL_IDX = tuple(_RANKS.index(r) for r in "AKQJT")
-_SURVIVAL_STACK_CHIPS = 1200  # below ~buy-in — preserve stack for qualification
+def _survival_stack_threshold() -> int:
+    """Below this stack, chart-first survival margins apply (tournament: ~80% of 1000)."""
+    raw = os.environ.get("CEMINI_SURVIVAL_STACK_CHIPS", "800")
+    try:
+        return max(0, int(raw))
+    except ValueError:
+        return 800
 _COLD_START_OPEN_OK = frozenset({"AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQs", "AQo"})
 _NEMESIS_SB_DEFEND_OK = frozenset({
     "AA", "KK", "QQ", "JJ", "TT", "99", "88", "77",
@@ -101,7 +107,7 @@ def _nemesis_tight_enabled() -> bool:
 
 def _survival_mode(self_seat: dict) -> bool:
     stack = int(self_seat.get("stackChips") or 99999)
-    return stack < _SURVIVAL_STACK_CHIPS
+    return stack < _survival_stack_threshold()
 
 
 def _merge_margins(base: dict, *extras: dict) -> dict:
@@ -233,7 +239,9 @@ def decide(
     first_protect = bool(ctx.get("first_protect"))
     eval_panel = bool(ctx.get("eval_panel_mode"))
     ko_survival = bool(ctx.get("ko_survival_lane"))
-    exploit_gate = qual_protect or first_protect or ko_survival or eval_panel
+    lane_tight = first_protect or qual_protect or lead_protect or eval_panel
+    # Tournament hour-one: keep HUD exploit; do not treat ko_survival as exploit_gate.
+    exploit_gate = qual_protect or first_protect or eval_panel
     if exploit_gate and hud_mode == "maniac":
         hud_mode = "unknown"
     margins = hud.get("margins") or exploit_margins(hud_mode)
@@ -257,15 +265,17 @@ def decide(
             lead_protect=lead_protect,
             first_protect=first_protect,
         )
-    survival = (
+    survival_tight = (
         _survival_mode(self_seat)
         or bool(ctx.get("survival_mode"))
-        or ko_survival
         or qual_protect
         or lead_protect
     )
-    if survival:
+    survival = survival_tight or ko_survival
+    if survival_tight:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.04, "call_margin_delta": 0.05})
+    elif ko_survival:
+        margins = _merge_margins(margins, {"fold_slack_delta": 0.02, "call_margin_delta": 0.02})
     style_ov = ctx.get("hl_style_overrides") or {}
     if style_ov:
         tweak: dict[str, float] = {}
@@ -562,8 +572,9 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP trash vs raise — fold")
 
-    # EP suited broadway — always fold opens (eval panel shove traps; HL R8 always-on).
-    if (street == "Preflop" and call_chips == 0 and position in ("UTG", "MP")
+    # EP suited broadway — fold opens under protect/eval lanes (HL R8; not tournament baseline).
+    if (street == "Preflop" and call_chips == 0 and lane_tight
+            and position in ("UTG", "MP")
             and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP suited broadway trap — fold open")
@@ -630,8 +641,8 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: first_protect CO trash — fold")
 
-    # HL R27 / S2 R3: CO/SB/BTN panel trash — eval −100 preflop cluster.
-    if (street == "Preflop" and position in ("CO", "SB", "BTN")
+    # HL R27 / S2 R3: CO/SB/BTN panel trash — protect/eval lanes only (tournament S1 ship).
+    if (street == "Preflop" and lane_tight and position in ("CO", "SB", "BTN")
             and hc in _WEAK_FACING_RAISE and "fold" in available):
         if call_chips > 0 or position in ("CO", "BTN"):
             return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
@@ -680,7 +691,8 @@ def decide(
             position=position, ps_bias=ps_bias, ps_library=ps_library,
             hud_mode=hud_mode, margins=margins, cold_start=cold_start,
             lead_protect=lead_protect, qual_protect=qual_protect,
-            first_protect=first_protect, eval_panel=eval_panel)
+            first_protect=first_protect, eval_panel=eval_panel,
+            lane_tight=lane_tight)
     elif street == "Preflop" and call_chips > 0:
         nemesis_ctx = ctx.get("nemesis_handles")
         handles = (
@@ -698,6 +710,7 @@ def decide(
             hud_mode=hud_mode, margins=margins, lead_protect=lead_protect,
             qual_protect=qual_protect, first_protect=first_protect,
             nemesis_opener=nemesis_opener, eval_panel=eval_panel,
+            lane_tight=lane_tight,
             ko_survival=ko_survival, cold_start=cold_start, hud=hud,
             hero_stack_chips=hero_stack, big_blind=bb)
     elif call_chips == 0:
@@ -808,7 +821,8 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
                   lead_protect: bool = False,
                   qual_protect: bool = False,
                   first_protect: bool = False,
-                  eval_panel: bool = False) -> tuple[str, Optional[int]]:
+                  eval_panel: bool = False,
+                  lane_tight: bool = False) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     if (position == "SB" and _weak_ace_offsuit(hand_class)
             and suggested == "raise" and "check" in available):
@@ -826,7 +840,7 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
     # EP: chart-only — no HUD steals (74o MP -916 leak).
     if position in ("UTG", "MP") and _is_ep_preflop_trash(hand_class) and "fold" in available:
         return "fold", None
-    if (position in ("UTG", "MP") and hand_class in _EP_SUITED_BROADWAY_TRAP
+    if (lane_tight and position in ("UTG", "MP") and hand_class in _EP_SUITED_BROADWAY_TRAP
             and "fold" in available):
         return "fold", None
     if (seat_matrix_v2_enabled() and position == "UTG"
@@ -840,8 +854,8 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             return "fold", None
         if "check" in available:
             return "check", None
-    # HL R27 / S2 R3: CO/SB/BTN chart-trash — never open (preflop −100 cluster).
-    if (position in ("CO", "SB", "BTN") and hand_class in _WEAK_FACING_RAISE
+    # HL R27 / S2 R3: CO/SB/BTN chart-trash — protect/eval lanes only (tournament S1).
+    if (lane_tight and position in ("CO", "SB", "BTN") and hand_class in _WEAK_FACING_RAISE
             and "fold" in available):
         return "fold", None
     # HL R8: EP suited-broadway opens off (always-on — eval + playground).
@@ -908,6 +922,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                     first_protect: bool = False,
                     nemesis_opener: bool = False,
                     eval_panel: bool = False,
+                    lane_tight: bool = False,
                     ko_survival: bool = False,
                     cold_start: bool = False,
                     hud: Optional[dict] = None,
@@ -1000,8 +1015,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and "fold" in available):
         return "fold", None
 
-    # HL R27 / S2 R3: CO/SB/BTN chart-trash vs raise — always.
-    if (position in ("CO", "SB", "BTN") and call_chips > 0
+    # HL R27 / S2 R3: CO/SB/BTN chart-trash vs raise — protect/eval lanes only.
+    if (lane_tight and position in ("CO", "SB", "BTN") and call_chips > 0
             and hc in _WEAK_FACING_RAISE and "fold" in available):
         return "fold", None
 
@@ -1015,8 +1030,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and hc in _LOW_PAIRS_PROTECT and "fold" in available):
         return "fold", None
 
-    # EP chart-trash vs any raise — Q9o MP −100 (HL R5 #04).
-    if (position in ("UTG", "MP") and call_chips > 0
+    # EP chart-trash vs raise — protect/eval lanes (tournament baseline uses chart).
+    if (lane_tight and position in ("UTG", "MP") and call_chips > 0
             and hc in _WEAK_FACING_RAISE and "fold" in available):
         return "fold", None
 
@@ -1025,8 +1040,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and "fold" in available):
         return "fold", None
 
-    # HL R8: EP suited broadway vs raise — always fold (eval shove traps).
-    if (position in ("UTG", "MP") and call_chips > 0
+    # HL R8: EP suited broadway vs raise — protect/eval lanes (eval shove traps).
+    if (lane_tight and position in ("UTG", "MP") and call_chips > 0
             and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
         return "fold", None
 

@@ -17,10 +17,19 @@ Main KO uses **S1-shaped scoring** (eval panel / bb/100), not playground chip ra
 | `deploys.jsonl` | Every prod deploy: commit, HL round, hands, env digest, preflight eval |
 | `eval_timeseries.jsonl` | Eval smoke/full runs (`run_eval_smoke.sh`) |
 | `playground_timeseries.jsonl` | Live rank/chips/replay delta (lobby, every poll) |
+| `multi_comp_config.json` | S1 primary + S2 secondary comp IDs (`drives_deploy` flags) |
+| `multi_comp_timeseries.jsonl` | Oracle snapshots per comp (hands, chip_delta, rank) |
 | `preflight_metrics.json` | Last full preflight: local eval-panel bb/100 |
 | `state.json` | HL round, hands, commit |
 | `tournament_candidate.json` | Locked pick for main KO (operator or `--lock`) |
 | `tournament_candidates.jsonl` | History of lock decisions |
+
+### Multi-comp oracle (S1 priority)
+
+- **Primary** (`s1_tournament`): drives analyze, export (`s1-tournament-live`), HL loop `--match`, deploy gate.
+- **Secondary** (`s2_playground`): intel only in oracle — **never** authorizes deploy.
+- Prod: `cemini-devfun-poker-multi-comp-snapshot.timer` (30 min) exports **primary only**.
+- Laptop: `./scripts/run_multi_comp_snapshot.sh` or `./scripts/run_s1_tournament_hl_cycle.sh`
 
 Schemas: `devfun.deploy_record.v1`, `devfun.eval_timeseries.v1`, `devfun.tournament_candidate.v1`.
 
