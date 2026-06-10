@@ -9,10 +9,13 @@ related:
   - concepts/polymarket-microstructure-findings.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - concepts/avellaneda-stoikov-market-making-baseline.md
+  - concepts/instrumental-probability-learnable-alpha.md
+  - sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md
+  - sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-05
-updated: 2026-06-05
+updated: 2026-06-10
 ---
 
 ## Relations

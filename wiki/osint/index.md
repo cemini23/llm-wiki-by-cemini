@@ -1262,6 +1262,10 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Strategic resource acquisition (2606.06882)](sources/arxiv-strategic-resource-acquisition-2606-06882-2026-06-09.md) — BNE multi-agent execution game. — source, arxiv, k107
 - [AARRI-Bench (2606.07462)](sources/arxiv-aarri-research-intern-bench-2606-07462-2026-06-09.md) — research-intern agent eval; repo NO-GO. — source, arxiv, k107
 - [Covariance regret audit (2606.08791)](sources/arxiv-covariance-regret-algorithmic-audit-2606-08791-2026-06-09.md) — Aldridge black-box strategy audit. — source, arxiv, k107
+- [Instrumental probability — hard to predict (2606.08209)](sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md) — `[VALIDATED 2026-06-10]` P–Q wedge, capacity layer, net exploitability vs random-walk sloppiness. — source, arxiv, k110
+- [TT-DAC-PS optimal execution (2606.08379)](sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md) — `[VALIDATED 2026-06-10]` RL IS% benchmarks on equity LOB; twin-target TD3 + adaptive OU. — source, arxiv, execution, k110
+- [Less Context, Better Agents (2606.10209)](sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md) — `[VALIDATED 2026-06-10]` MCP context prune N=5 + summary W=3 beats full history. — source, arxiv, llm-agents, k110
+- [Instrumental probability and learnable alpha limits](concepts/instrumental-probability-learnable-alpha.md) — K110 synthesis: no-arbitrage vs efficiency vs net exploitability; capacity-scaling discipline. — concept, quant-finance, k110
 - [BAVAR-BLED portfolio DRL (2606.09104)](sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md) — regime + fat-tail PO. — source, arxiv, k107
 - [Strategic resource acquisition game theory](concepts/strategic-resource-acquisition-game-theory.md) — `[DRAFT 2026-06-09]` competitive execution overlay. — concept, k107
 - [Algorithmic auditing — covariance regret](concepts/algorithmic-auditing-covariance-regret.md) — `[DRAFT 2026-06-09]` external sequential audit metric. — concept, k107

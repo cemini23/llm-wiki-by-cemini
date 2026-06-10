@@ -29,10 +29,12 @@ related:
   - concepts/market-informedness-market-making.md
   - sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md
   - sources/arxiv-polymarket-v1-database-2606.04217-2026-06-05.md
+  - concepts/instrumental-probability-learnable-alpha.md
+  - sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md
 
 maturity: draft
 created: 2026-05-09
-updated: 2026-06-05
+updated: 2026-06-10
 ---
 
 ## Relations

@@ -12,9 +12,11 @@ related:
   - concepts/polymarket-retail-trading-discipline.md
   - meta/pm-lp-backtest-cadence.md
   - concepts/avellaneda-stoikov-market-making-baseline.md
+  - concepts/instrumental-probability-learnable-alpha.md
+  - sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md
 maturity: validated
 created: 2026-06-05
-updated: 2026-06-07
+updated: 2026-06-10
 ---
 
 ## Relations

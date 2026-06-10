@@ -28,10 +28,11 @@ related:
   - sources/3-17-agent-research.md
   - sources/3-25-git-research.md
   - sources/git-3-5-pt3.md
+  - sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md
 maturity: draft
 hub: true
 created: 2026-04-28
-updated: 2026-05-01
+updated: 2026-06-10
 ---
 
 ## Relations
@@ -50,6 +51,7 @@ updated: 2026-05-01
 - @sources/3-17-agent-research.md — K16 deep-read 2026-05-01; Redis semantic caching as compression mechanism (hash prompt+model+temperature → bypass LLM)
 - @sources/3-25-git-research.md — K17 deep-read 2026-05-01; Context Reset vs Context Compaction distinction (Anthropic harness): structured handoff artifact → PostgreSQL → fresh session; State Compactor threshold-triggered automatic Reset routine
 - @sources/git-3-5-pt3.md — K18 deep-read 2026-05-01; three-layer context architecture (Layer 0 auto-loaded rules / Layer 1 progressive disclosure / Layer 2 hot working memory) extends cpr-pattern's granularity model + progressive disclosure formalized as architectural pattern
+- @sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md — K110 empirical MCP benchmark: prune last **5** tool pairs (79% task completion, −64% tokens) + rolling summary window **3** (91.6%, ~same tokens as prune-only). Strongest published evidence that **less context beats full history** on long-horizon enterprise tool loops — starting hyperparameters for conductor/kb-server budget policy.
 
 ## Raw Concept
 

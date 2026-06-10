@@ -8,9 +8,10 @@ related:
   - concepts/market-microstructure.md
   - concepts/polymarket-bot-architecture.md
   - concepts/non-latency-arbitrage-strategies.md
+  - sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md
 maturity: draft
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-06-10
 ---
 
 ## Relations

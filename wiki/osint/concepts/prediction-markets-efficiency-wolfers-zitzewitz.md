@@ -9,9 +9,11 @@ related:
   - entities/platforms/kalshi.md
   - concepts/polymarket-microstructure-findings.md
   - concepts/prediction-market-statistical-arbitrage.md
+  - concepts/instrumental-probability-learnable-alpha.md
+  - sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md
 maturity: core
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-06-10
 ---
 
 ## Relations

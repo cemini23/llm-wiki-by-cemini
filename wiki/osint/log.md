@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-10] ingest | K110 — daily digest full ingest (3 arXiv)
+
+- **Sources (3)** — 2606.08209 instrumental probability / P–Q wedge; 2606.08379 TT-DAC-PS optimal execution; 2606.10209 MCP context engineering (Microsoft)
+- **Concepts (1 new + 7 updates)** — `instrumental-probability-learnable-alpha`; `context-compression-resume-pattern`, `sequential-optimal-execution-quoting`, `regime-conditioned-evaluation`, `llm-agent-systems`, `conductor-orchestrator`, `polymarket-microstructure-findings`, `prediction-markets-efficiency-wolfers-zitzewitz`, `librarian-server-architecture`
+- **Briefs (1 on disk)** — `k110-context-pruning-mcp-conductor-reference-cemini-prod.md` (REFERENCE; no prod scp)
+- **Raw** — 3 PDFs → librarian; inbox cleared
+
 ## [2026-06-09] ingest | K109 — WC prediction markets inventory + GS positioning
 
 - **Sources (2)** — `gemini-wc2026-prediction-markets-inventory-2026-06-09.md` (WC PM/Kalshi full catalog, sha `ee93a59a…`); `goldman-sachs-eq-positioning-key-levels-2026-06-08.md` (GS PB/CTA skim — equity only)

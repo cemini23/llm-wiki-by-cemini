@@ -7,6 +7,7 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/scatter-gather-topology.md
   - concepts/context-compression-resume-pattern.md
+  - sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md
   - concepts/ip-sale-readiness.md
   - entities/infrastructure/hetzner.md
   - entities/infrastructure/deepseek-api.md
@@ -40,7 +41,7 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-06-04
+updated: 2026-06-10
 ---
 
 ## Relations

@@ -31,10 +31,12 @@ related:
   - concepts/adk-arena-framework-evaluation.md
   - sources/arxiv-agents-last-exam-2606.05405-2026-06-06.md
   - sources/arxiv-adk-arena-agent-dev-kits-2606.05548-2026-06-06.md
+  - sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md
+  - concepts/context-compression-resume-pattern.md
 maturity: validated
 hub: true
 created: 2026-05-01
-updated: 2026-06-06
+updated: 2026-06-10
 ---
 
 ## Relations

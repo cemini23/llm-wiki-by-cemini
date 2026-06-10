@@ -38,9 +38,12 @@ related:
   - sources/arxiv-llm-robust-portfolio-optimization-2605-27013-2026-06-02.md
   - sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md
   - sources/arxiv-covariance-regret-algorithmic-audit-2606-08791-2026-06-09.md
+  - sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md
+  - sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md
+  - concepts/instrumental-probability-learnable-alpha.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-06-09
+updated: 2026-06-10
 ---
 
 ## Relations
@@ -172,6 +175,10 @@ This is a non-trivial overhead that argues for **starting with the brief-audit g
 ### K98 — Horizon retail quant filter (@horizon_trade_x)
 
 @sources/trading-posts-compilation-18-2026-06-04.md Post 5 markets a **four-question desk filter** (deflated Sharpe, sample size, regime stability, implementation realism) for plain-English backtests — aligns with No-Free-Leaderboard / brief-audit discipline but is **product funnel** copy for horizon.trade [TENTATIVE]. No new math beyond existing PRS narrative; captured for SEO + operator skepticism of viral "99 strategies rejected" threads.
+
+### K110 — Instrumental probability + capacity layer (2606.08209)
+
+@sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md formalises why **positive signals ≠ scalable alpha**: separates no-arbitrage, informational efficiency, and **net exploitability** after costs/capacity/competition. Reinforces existing gates (deflated Sharpe, multiple testing) with vocabulary — not new thresholds. @sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md adds **IS% + 95% CI** reporting template for any future execution backtests.
 
 ## Snippets
 
