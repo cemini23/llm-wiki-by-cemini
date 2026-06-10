@@ -743,6 +743,29 @@ def sb_a6o_vs_shove(*, shove_to: int = 1000, hero_stack: int = 1000) -> dict:
     )
 
 
+def co_a8o_paired_river(*, villain_bet: int = 100, pot: int = 200) -> dict:
+    """A8o CO ace-high on paired runout — HL R16 analyze #01 (−100 on 9669JQh)."""
+    return six_max_table(
+        name="co_a8o_paired_river",
+        hero_seat=6,
+        button_seat=1,
+        street="River",
+        board=["9d", "6h", "9h", "Jh", "Qh"],
+        pot=pot,
+        hero_hole=["Ac", "8c"],
+        hero_stack=300,
+        hero_bet=0,
+        villain_bets={5: villain_bet},
+        stacks={6: 300},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def co_ato_paired_river(*, villain_bet: int = 80, pot: int = 240) -> dict:
     """ATo CO OOP on paired river — HL R4 analyze #03 (−100)."""
     return six_max_table(

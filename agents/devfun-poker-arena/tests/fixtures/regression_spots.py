@@ -28,6 +28,7 @@ from tests.helpers.cemini_tables import (
     co_22_paired_river,
     co_72o_paired_river,
     co_63s_paired_river,
+    co_a8o_paired_river,
     co_ato_paired_river,
     co_66_ace_river,
     co_99_ace_paired_river,
@@ -459,6 +460,14 @@ def regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="CO OOP weak two-pair on paired board — fold.",
+        ),
+        RegressionSpot(
+            id="prod_a8o_co_paired_river",
+            source="HL R16 analyze #01 — A8o CO −100 on 9669JQh",
+            table=co_a8o_paired_river(),
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="CO weak ace-high no pair on paired board — fold.",
         ),
         RegressionSpot(
             id="prod_kk_bb_low_straight_river",

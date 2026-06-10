@@ -705,6 +705,15 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: weak broadway on paired river — fold")
 
+    # CO/BTN weak ace-high on paired board — A8o CO −100 on 9669JQh (HL R16 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "BTN")
+            and _ip_weak_ace_ace_high_paired(hole, board, hc)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.15), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: IP weak ace-high paired — fold")
+
     # CO weak connector offsuit — never open or call preflop (98o CO −100 HL R11 #01).
     if (street == "Preflop" and position == "CO" and hc in _CO_WEAK_CONNECTOR
             and "fold" in available):
@@ -1509,6 +1518,24 @@ def _weak_ace_vulnerable_on_paired_board(hole: list[str], board: list[str], hc: 
     if not _weak_ace_offsuit(hc) or not _board_is_paired(board):
         return False
     return not _hero_has_ace_on_paired_ace_board(hole, board)
+
+
+def _hero_pairs_board_rank(hole: list[str], board: list[str]) -> bool:
+    if len(hole) != 2 or len(board) < 3:
+        return False
+    branks = {c[0].upper() for c in board}
+    return any(c[0].upper() in branks for c in hole)
+
+
+def _ip_weak_ace_ace_high_paired(
+    hole: list[str], board: list[str], hc: str,
+) -> bool:
+    """A8o CO −100 on 9669JQh — ace-high with no pair on paired runout (HL R16 #01)."""
+    if len(board) < 4 or not _board_is_paired(board) or not _weak_ace_offsuit(hc):
+        return False
+    if _hero_made_hand_exempt(hole, board):
+        return False
+    return not _hero_pairs_board_rank(hole, board)
 
 
 def _is_wheel_offsuit(hc: str) -> bool:
@@ -2404,6 +2431,12 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
     if (position in ("SB", "BB") and not in_position
             and _oop_suited_broadway_vulnerable_paired(hole, board, hand_class)
             and call_chips >= max(int(pot * 0.18), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("CO", "BTN")
+            and _ip_weak_ace_ace_high_paired(hole, board, hand_class)
+            and call_chips >= max(int(pot * 0.15), 1)
             and "fold" in available):
         return "fold", None
 
