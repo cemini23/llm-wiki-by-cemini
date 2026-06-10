@@ -592,6 +592,30 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: small pocket under board ace — fold")
 
+    # TT+ overpair on low straight-heavy board — KK −1132 on 86532 (HL R15 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and _pocket_vulnerable_on_low_straight_board(hole, board, hc)
+            and not _hero_cannot_lose()):
+        stack = _hero_stack_chips(table)
+        ratio = call_chips / max(stack, 1)
+        if hc in {"KK", "QQ"} and ratio >= 0.45:
+            if call_chips >= max(int(pot * 0.28), 1):
+                return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                              msg=f"{binding}: overpair on straight board — fold")
+        elif (_medium_pocket_pair(hc) or _small_pocket_pair(hc)):
+            if call_chips >= max(int(pot * 0.22), 1):
+                return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                              msg=f"{binding}: pocket on straight board — fold")
+
+    # SB/BB suited broadway on paired board — KQs BB −51 (HL R15 analyze #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("SB", "BB") and not in_position
+            and _oop_suited_broadway_vulnerable_paired(hole, board, hc)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.18), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: OOP suited broadway paired — fold")
+
     # BB OOP AK/AQ on A-high broadway flops — Kh As BB −116 on AJ4 (HL R10 #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and position == "BB" and not in_position
@@ -1788,6 +1812,49 @@ def _board_has_ace_pair(board: list[str]) -> bool:
     return Counter(branks).get("A", 0) >= 2
 
 
+def _board_low_straight_heavy(board: list[str]) -> bool:
+    """86532-style runout — straights likely (KK −1132 HL R15 export)."""
+    if len(board) < 5:
+        return False
+    idxs = sorted({_RANKS.index(c[0].upper()) for c in board})
+    if max(idxs) > _RANKS.index("T"):
+        return False
+    return len(idxs) >= 4 and (idxs[-1] - idxs[0]) <= 6
+
+
+def _pocket_vulnerable_on_low_straight_board(
+    hole: list[str], board: list[str], hc: str,
+) -> bool:
+    """TT+ overpair on low connected board without set — loses to straights."""
+    if len(hole) != 2 or len(board) < 5 or hc == "AA":
+        return False
+    if hole[0][0] != hole[1][0]:
+        return False
+    if _RANKS.index(hc[0]) < _RANKS.index("T"):
+        return False
+    if not _board_low_straight_heavy(board):
+        return False
+    if _hero_made_hand_exempt(hole, board) or _hero_pocket_set(hole, board):
+        return False
+    return True
+
+
+_OOP_SUITED_BROADWAY_PAIRED = frozenset({"KQs", "KJs", "QJs", "JTs"})
+
+
+def _oop_suited_broadway_vulnerable_paired(
+    hole: list[str], board: list[str], hc: str,
+) -> bool:
+    """KQs BB −51 on paired 99443 — no boat/trips."""
+    if len(board) < 4 or not _board_is_paired(board):
+        return False
+    if hc not in _OOP_SUITED_BROADWAY_PAIRED:
+        return False
+    if _hero_made_hand_exempt(hole, board):
+        return False
+    return True
+
+
 def _board_broadway_count(board: list[str]) -> int:
     """T+ ranks on board — 63s SB river leak on QJ2TK (HL R4 #01)."""
     if not board:
@@ -2326,6 +2393,17 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
     if (position in ("UTG", "MP", "CO", "SB", "BB")
             and _hero_small_pocket_under_board_ace(hole, board, hand_class)
             and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (_pocket_vulnerable_on_low_straight_board(hole, board, hand_class)
+            and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("SB", "BB") and not in_position
+            and _oop_suited_broadway_vulnerable_paired(hole, board, hand_class)
+            and call_chips >= max(int(pot * 0.18), 1)
             and "fold" in available):
         return "fold", None
 

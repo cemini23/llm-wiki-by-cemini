@@ -1203,6 +1203,52 @@ def co_99_ace_paired_river(*, villain_bet: int = 400, pot: int = 900) -> dict:
     )
 
 
+def bb_kk_low_straight_river(*, villain_bet: int = 800, pot: int = 1200) -> dict:
+    """KK on 86532 — HL R15 export #01 (−1132)."""
+    return six_max_table(
+        name="bb_kk_low_straight_river",
+        hero_seat=3,
+        button_seat=1,
+        street="River",
+        board=["8s", "6h", "5d", "3d", "2s"],
+        pot=pot,
+        hero_hole=["Kc", "Kd"],
+        hero_stack=1132,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={3: 1132},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def bb_kqs_paired_river(*, villain_bet: int = 51, pot: int = 120) -> dict:
+    """KQs BB on paired runout — HL R15 analyze #01 (−51 on 249443)."""
+    return six_max_table(
+        name="bb_kqs_paired_river",
+        hero_seat=3,
+        button_seat=1,
+        street="River",
+        board=["2s", "4d", "9h", "4c", "3h"],
+        pot=pot,
+        hero_hole=["Kh", "Qh"],
+        hero_stack=200,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={3: 200},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def bb_55_ace_river(*, villain_bet: int = 225, pot: int = 500) -> dict:
     """55 BB on ace-high river — HL R14 analyze #01 (−225 on 2c7hAsT9d)."""
     return six_max_table(

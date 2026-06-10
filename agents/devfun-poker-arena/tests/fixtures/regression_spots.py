@@ -8,6 +8,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from tests.helpers.cemini_tables import (
+    bb_kk_low_straight_river,
+    bb_kqs_paired_river,
     bb_55_ace_river,
     bb_a6o_paired_river,
     bb_ako_vulnerable_flop,
@@ -457,6 +459,22 @@ def regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="CO OOP weak two-pair on paired board — fold.",
+        ),
+        RegressionSpot(
+            id="prod_kk_bb_low_straight_river",
+            source="HL R15 export #01 — KK −1132 on 86532",
+            table=bb_kk_low_straight_river(),
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="KK overpair on low straight board — fold big commit.",
+        ),
+        RegressionSpot(
+            id="prod_kqs_bb_paired_river",
+            source="HL R15 analyze #01 — KQs BB −51 on 249443",
+            table=bb_kqs_paired_river(),
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="BB suited broadway on paired board — fold.",
         ),
         RegressionSpot(
             id="prod_55_bb_ace_river",
