@@ -179,5 +179,17 @@ def test_tournament_mode_disables_all_protect_lanes(monkeypatch):
     assert st["qualification_protect"] is False
     assert st["lead_protect"] is False
     assert st["first_protect"] is False
+    assert st["placement_protect"] is True
     assert st["lock_tier"] == "tournament"
     assert st["max_playable_chips"] is None
+
+
+def test_tournament_mode_no_placement_protect_below_cutoff(monkeypatch):
+    monkeypatch.setenv("CEMINI_TOURNAMENT_MODE", "1")
+    monkeypatch.setenv("CEMINI_QUAL_CUTOFF_RANK", "10")
+    client = _FakeClient(
+        {"leaderboard": [{"arenaId": "comp1", "rank": 15, "totalScore": 5000}]},
+        cutoff_score=1000,
+    )
+    st = fetch_qualification_status(client, "comp1")
+    assert st["placement_protect"] is False

@@ -244,9 +244,12 @@ def decide(
     qual_protect = bool(ctx.get("qualification_protect"))
     lead_protect = bool(ctx.get("lead_protect"))
     first_protect = bool(ctx.get("first_protect"))
+    placement_protect = bool(ctx.get("placement_protect"))
     eval_panel = bool(ctx.get("eval_panel_mode"))
     ko_survival = bool(ctx.get("ko_survival_lane"))
-    lane_tight = first_protect or qual_protect or lead_protect or eval_panel
+    lane_tight = (
+        first_protect or qual_protect or lead_protect or eval_panel or placement_protect
+    )
     # Tournament hour-one: keep HUD exploit; do not treat ko_survival as exploit_gate.
     exploit_gate = qual_protect or first_protect or eval_panel
     if exploit_gate and hud_mode == "maniac":
@@ -283,6 +286,8 @@ def decide(
         margins = _merge_margins(margins, {"fold_slack_delta": 0.04, "call_margin_delta": 0.05})
     elif ko_survival:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.02, "call_margin_delta": 0.02})
+    elif placement_protect:
+        margins = _merge_margins(margins, {"fold_slack_delta": 0.03, "call_margin_delta": 0.03})
     style_ov = ctx.get("hl_style_overrides") or {}
     if style_ov:
         tweak: dict[str, float] = {}

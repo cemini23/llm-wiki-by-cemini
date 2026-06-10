@@ -106,6 +106,7 @@ _COLD_START_CTX = {
 _NEMESIS_CTX = {"nemesis_handles": ["hunterguy102", "thaddius"]}
 
 _FIRST_PROTECT_CTX = {"first_protect": True, "qualification_protect": True}
+_PLACEMENT_PROTECT_CTX = {"placement_protect": True}
 
 _EVAL_PANEL_CTX = {"eval_panel_mode": True}
 
@@ -819,6 +820,15 @@ def nuts_regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"bet", "raise", "all-in", "call"}),
             required=frozenset({"fold"}),
             notes="first_protect: no CO chart-trash opens.",
+        ),
+        RegressionSpot(
+            id="prod_62o_co_open_placement_r17",
+            source="HL R17 — tournament top-10 placement_protect lane",
+            table=co_unopened(["2d", "6d"]),
+            context=_PLACEMENT_PROTECT_CTX,
+            forbidden=frozenset({"bet", "raise", "all-in", "call"}),
+            required=frozenset({"fold"}),
+            notes="placement_protect: no CO chart-trash opens in money zone.",
         ),
         RegressionSpot(
             id="prod_62o_co_vs_raise_r26",

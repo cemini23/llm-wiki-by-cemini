@@ -322,6 +322,7 @@ def run_lobby(args: argparse.Namespace) -> int:
     last_lobby_log_at = 0.0
     last_qual_check_at = 0.0
     qual_protect = False
+    placement_protect = False
     lead_protect = False
     first_protect = False
     qual_status: dict = {}
@@ -506,7 +507,8 @@ def run_lobby(args: argparse.Namespace) -> int:
             ensure_joined(force=True)
 
         def refresh_qualification(force: bool = False) -> None:
-            nonlocal last_qual_check_at, qual_protect, lead_protect, first_protect, qual_status
+            nonlocal last_qual_check_at, qual_protect, lead_protect, first_protect
+            nonlocal placement_protect, qual_status
             now = time.time()
             if not force and (now - last_qual_check_at) < QUAL_STATUS_INTERVAL_S:
                 return
@@ -517,6 +519,7 @@ def run_lobby(args: argparse.Namespace) -> int:
                 qual_protect = bool(st.get("qualification_protect"))
                 lead_protect = bool(st.get("lead_protect"))
                 first_protect = bool(st.get("first_protect"))
+                placement_protect = bool(st.get("placement_protect"))
                 lock_note = ""
                 if st.get("max_playable_chips") is not None:
                     lock_note = (
@@ -547,6 +550,12 @@ def run_lobby(args: argparse.Namespace) -> int:
                         f"rank={st.get('rank')} chips={st.get('chips')} "
                         f"buffer=+{st.get('buffer_chips')} vs #{st.get('cutoff_chips')}"
                         f"{lock_note}"
+                    )
+                elif placement_protect:
+                    print(
+                        f"[cemini-lobby] PLACEMENT protect ON "
+                        f"rank={st.get('rank')} chips={st.get('chips')} "
+                        f"buffer=+{st.get('buffer_chips')} vs #{st.get('cutoff_chips')}"
                     )
                 elif st.get("rank") is not None:
                     print(
@@ -654,6 +663,7 @@ def run_lobby(args: argparse.Namespace) -> int:
                     qual_protect = bool(st.get("qualification_protect"))
                     lead_protect = bool(st.get("lead_protect"))
                     first_protect = bool(st.get("first_protect"))
+                    placement_protect = bool(st.get("placement_protect"))
                     qual_status = st
                 else:
                     refresh_qualification()
@@ -669,6 +679,8 @@ def run_lobby(args: argparse.Namespace) -> int:
                     ctx["lead_protect"] = True
                 if first_protect:
                     ctx["first_protect"] = True
+                if placement_protect:
+                    ctx["placement_protect"] = True
                 if is_kill_switch_active():
                     ctx["kill_switch"] = True
                 if table_comp == competition_id and _ko_survival_lane(state, qual_status):

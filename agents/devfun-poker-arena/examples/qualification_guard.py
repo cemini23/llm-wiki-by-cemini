@@ -232,6 +232,7 @@ def fetch_qualification_status(
         "qualification_protect": False,
         "lead_protect": False,
         "first_protect": False,
+        "placement_protect": False,
         "rank": None,
         "chips": None,
         "cutoff_chips": None,
@@ -278,6 +279,9 @@ def fetch_qualification_status(
 
     if tournament_mode_enabled():
         out["lock_tier"] = "tournament"
+        # Money zone (rank inside cutoff, chips above floor): lane_tight without chip locks.
+        if int(rank) <= cutoff_rank and buffer > 0:
+            out["placement_protect"] = True
         return out
 
     if buffer >= buffer_chips and int(rank) <= cutoff_rank:
