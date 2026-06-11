@@ -387,6 +387,9 @@ def decide(
     def _hero_cannot_lose() -> bool:
         if street != "Preflop" and _hero_made_royal_flush(hole, board):
             return True
+        if river_unbeatable_flag and _weak_ace_offsuit(hc):
+            if _hero_ace_high_no_pair(hole, board):
+                return False
         return river_unbeatable_flag
 
     # Made royal — showdown path for S2 jackpot (API: hand unfolded at showdown).
@@ -398,7 +401,10 @@ def decide(
             return _apply_chip_reserve(out, max_playable, table, hc)
 
     # River unbeatable (enumeration) — never fold; value when free (CEMINI_NUTS_DETECT=1).
-    if river_unbeatable_flag:
+    nuts_skip_call = (
+        _weak_ace_offsuit(hc) and _hero_ace_high_no_pair(hole, board)
+    )
+    if river_unbeatable_flag and not nuts_skip_call:
         out = _unbeatable_made_action(table, allowed, available, pot, binding=binding)
         if out:
             return _apply_chip_reserve(out, max_playable, table, hc)
