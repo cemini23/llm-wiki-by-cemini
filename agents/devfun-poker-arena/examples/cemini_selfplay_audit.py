@@ -127,6 +127,7 @@ class GateThresholds:
     max_ep_trash_raises: int = 0
     min_bb_per_100_rock: float = -25.0
     min_bb_per_100_maniac: float = -40.0
+    min_vpip: float = 0.0
 
 
 def _rate(num: int, den: int) -> float:
@@ -229,6 +230,10 @@ def run_audit(
             f"bb/100 vs maniac {maniac['bb_per_100']:+.1f} < "
             f"{thresholds.min_bb_per_100_maniac:+.1f}"
         )
+    if thresholds.min_vpip > 0 and vpip_rate < thresholds.min_vpip:
+        failures.append(
+            f"VPIP {vpip_rate:.1%} < min {thresholds.min_vpip:.1%}"
+        )
 
     if failures:
         print("  GATE FAIL:")
@@ -255,10 +260,14 @@ def main(argv: Optional[list[str]] = None) -> int:
     p.add_argument("--min-bb-maniac", type=float, default=GateThresholds.min_bb_per_100_maniac)
     args = p.parse_args(argv)
 
+    min_vpip = 0.18 if os.environ.get("CEMINI_GIN_STYLE", "").strip().lower() in (
+        "1", "true", "yes", "on",
+    ) else 0.0
     th = GateThresholds(
         max_ep_vpip=args.max_ep_vpip,
         min_bb_per_100_rock=args.min_bb_rock,
         min_bb_per_100_maniac=args.min_bb_maniac,
+        min_vpip=min_vpip,
     )
     return run_audit(
         hands=args.hands,

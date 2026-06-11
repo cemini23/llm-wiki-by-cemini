@@ -100,6 +100,8 @@ class RegressionSpot:
 
 
 _COLD_START_CTX = {
+    "CEMINI_GIN_STYLE": "0",
+    "CEMINI_COLD_START_NO_STEAL": "1",
     "opponent_hud": {
         "mode": "unknown",
         "coldStart": True,

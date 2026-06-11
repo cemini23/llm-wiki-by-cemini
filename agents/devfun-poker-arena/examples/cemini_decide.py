@@ -19,6 +19,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 from blind_pressure import lead_blind_steal, placement_chase_steal
+from gin_style import gin_style_postflop_enabled, gin_style_preflop_enabled, try_postflop_free, try_preflop
 
 _EXAMPLES = Path(__file__).resolve().parent
 if str(_EXAMPLES) not in sys.path:
@@ -722,6 +723,32 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP weak ace high only — fold")
 
+    gin_skip = (
+        cold_start and not placement_chase
+    ) or (
+        call_chips > 0 and position == "SB" and hc in _BB_BROADWAY_FOLD
+    ) or (
+        placement_chase and position == "UTG"
+        and is_preflop_open_spot(table, allowed, call_chips)
+        and not placement_chase_steal(hc, position)
+    )
+    if (street == "Preflop" and gin_style_preflop_enabled()
+            and not lane_tight and not gin_skip):
+        gin_pair = try_preflop(
+            table, allowed, available, hole, position, in_position=in_position,
+        )
+        if gin_pair is not None:
+            g_act, g_amt = gin_pair
+            if g_act in ("fold", "check", "call"):
+                g_amt = None
+            from gin_style import preflop_score as _gin_score  # noqa: WPS433
+
+            out = _build(
+                g_act, g_amt, table, allowed, eq=equity, po=pot_odds,
+                msg=f"{binding}: gin score {_gin_score(hole)} — {g_act}",
+            )
+            return _apply_chip_reserve(out, max_playable, table, hc)
+
     # BTN low connector offsuit opens — 97o BTN −10 (HL R21 #03).
     if (street == "Preflop" and is_preflop_open_spot(table, allowed, call_chips)
             and position == "BTN" and hc in {"97o", "86o", "96o", "85o", "T7o", "64o"}
@@ -908,11 +935,19 @@ def decide(
             hero_stack_chips=hero_stack, big_blind=bb,
             placement_chase=placement_chase)
     elif call_chips == 0:
-        action_name, amount = _postflop_free(
-            equity, allowed, available, pot, pot_control=pot_control,
-            ps_bias=ps_bias, ps_library=ps_library,
-            hand_eval=ps_hand_eval,
-            hand_class=hc, hud_mode=hud_mode, margins=margins)
+        gin_free = (
+            try_postflop_free(table, allowed, available, hole, board)
+            if gin_style_postflop_enabled()
+            else None
+        )
+        if gin_free is not None:
+            action_name, amount = gin_free
+        else:
+            action_name, amount = _postflop_free(
+                equity, allowed, available, pot, pot_control=pot_control,
+                ps_bias=ps_bias, ps_library=ps_library,
+                hand_eval=ps_hand_eval,
+                hand_class=hc, hud_mode=hud_mode, margins=margins)
     else:
         action_name, amount = _postflop_facing_bet(
             equity, pot_odds, allowed, available, call_chips, pot,
@@ -1076,7 +1111,8 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             return "check", None
     # Cold start: chart-only CO/BTN opens — no marginal steals until HUD sample (HL R21).
     chase_open_ok = placement_chase_steal(hand_class, position)
-    if (_cold_start_no_steal_enabled() and cold_start and position in ("CO", "BTN", "SB")
+    if (_cold_start_no_steal_enabled() and cold_start and not placement_chase
+            and position in ("CO", "BTN", "SB")
             and suggested == "raise"
             and hand_class not in _COLD_START_OPEN_OK
             and not (placement_chase and chase_open_ok)):
@@ -1117,6 +1153,7 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             and not (
                 _cold_start_no_steal_enabled()
                 and cold_start
+                and not placement_chase
                 and position in ("CO", "BTN", "SB")
                 and hand_class not in _COLD_START_OPEN_OK
                 and not (placement_chase and chase_open_ok)

@@ -85,6 +85,11 @@ set_kv CEMINI_FIELD_EXPORT_HUD 1
 set_kv CEMINI_FIELD_EXPORT_DIR "reports/exports/s1-tournament-live"
 set_kv CEMINI_FIELD_EXPORT_HUD_TTL_S 3600
 set_kv CEMINI_FIELD_EXPORT_MIN_LIVE_SAMPLE 8
+set_kv CEMINI_COLD_START_NO_STEAL 0
+set_kv CEMINI_GIN_STYLE 1
+set_kv CEMINI_GIN_STYLE_PREFLOP 1
+set_kv CEMINI_GIN_STYLE_POSTFLOP 1
+set_kv CEMINI_GIN_STYLE_GATE 1
 # Single-table API: S1-only lobby until tournament ends (~Jun 14–15).
 if grep -q '^CEMINI_DUAL_LOBBY_COMP=' .env 2>/dev/null; then
   sed -i.bak '/^CEMINI_DUAL_LOBBY_COMP=/d' .env

@@ -19,11 +19,22 @@ if [[ -f "${STAMP}" ]]; then
 fi
 
 echo "==> [1/2] pytest regression spots only"
-uv run python -m pytest tests/test_cemini_regression.py tests/test_cemini_nuts.py -q --tb=short
+CEMINI_GIN_STYLE=0 CEMINI_GIN_STYLE_PREFLOP=0 CEMINI_GIN_STYLE_POSTFLOP=0 \
+  uv run python -m pytest tests/test_cemini_regression.py tests/test_cemini_nuts.py -q --tb=short
 
 echo ""
-echo "==> [2/2] dry-run lobby path (no network)"
+echo "==> [2/3] dry-run lobby path (no network)"
 uv run examples/agent.py --agent examples/cemini_decide.py --dry-run --max-hands 15
+
+if uv run python -c "import os; exit(0 if os.environ.get('CEMINI_GIN_STYLE_GATE','').strip().lower() in ('1','true','yes','on') else 1)" 2>/dev/null; then
+  echo ""
+  echo "==> [3/3] gin-style gate (VPIP + bb/100 vs tight-passive)"
+  CEMINI_GIN_STYLE=1 CEMINI_GIN_STYLE_PREFLOP=1 CEMINI_GIN_STYLE_POSTFLOP=1 \
+    CEMINI_COLD_START_NO_STEAL=0 uv run python examples/gin_style_gate.py --gate --hands 200
+else
+  echo ""
+  echo "==> [3/3] gin-style gate skipped (set CEMINI_GIN_STYLE_GATE=1 to enable)"
+fi
 
 echo ""
 echo "PREFLIGHT FAST OK — safe for code-only deploy."
