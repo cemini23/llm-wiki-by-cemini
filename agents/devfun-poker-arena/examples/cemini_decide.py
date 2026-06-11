@@ -678,6 +678,33 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP trash vs raise — fold")
 
+    # EP/MP medium pairs vs raise — 66 MP −100 (HL R20 #03).
+    if (street == "Preflop" and call_chips > 0 and position in ("UTG", "MP")
+            and hc in _LOW_PAIRS_PROTECT and "fold" in available):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP medium pair vs raise — fold")
+
+    # SB weak ace ace-high only — Ah3h −355 on T7QK8 (HL R20 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position == "SB" and not in_position
+            and _weak_ace_offsuit(hc)
+            and _hero_ace_high_no_pair(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.10), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: SB weak ace high only — fold")
+
+    # MP OOP weak broadway on connected runout — KTo MP −110 (HL R20 #02).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position == "MP" and not in_position
+            and _weak_broadway_offsuit(hc)
+            and len(board) >= 4
+            and _board_has_three_consecutive_ranks(board)
+            and not _hero_made_hand_exempt(hole, board)
+            and call_chips >= max(int(pot * 0.18), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: MP weak broadway connected — fold")
+
     # EP suited broadway — fold opens under protect/eval lanes (HL R8; not tournament baseline).
     if (street == "Preflop" and is_preflop_open_spot(table, allowed, call_chips)
             and lane_tight
@@ -2079,6 +2106,19 @@ def _hero_pairs_flop(hole: list[str], board: list[str]) -> bool:
     return bool(hr & br)
 
 
+def _hero_ace_high_no_pair(hole: list[str], board: list[str]) -> bool:
+    """Hero holds an ace but no pair on board (A3o SB −355 on T7QK8)."""
+    if len(hole) != 2 or len(board) < 3:
+        return False
+    if _hero_made_hand_exempt(hole, board) or _hero_pairs_flop(hole, board):
+        return False
+    hranks = [c[0].upper() for c in hole]
+    if "A" not in hranks:
+        return False
+    branks = [c[0].upper() for c in board]
+    return not any(r in branks for r in hranks)
+
+
 def _bb_oop_missed_k_high(hole: list[str], board: list[str], hand_class: str) -> bool:
     """BB defended trash that whiffs K-high flops — J8s on K65 (HL R7 #01)."""
     if len(board) < 3:
@@ -2588,13 +2628,15 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
             and equity < 0.52 and "fold" in available):
         return "fold", None
 
-    # SB OOP weak ace top-pair — A8 on J86 monotone (analyze #03).
+    # SB OOP weak ace — ace-high only or weak top pair (A3o −355; A8 analyze #03).
     if (position == "SB" and not in_position
             and _weak_ace_offsuit(hand_class)
             and not _hero_made_hand_exempt(hole, board)
             and len(board) >= 3
-            and call_chips >= max(int(pot * 0.30), 1)
+            and call_chips >= max(int(pot * 0.10), 1)
             and "fold" in available):
+        if _hero_ace_high_no_pair(hole, board):
+            return "fold", None
         wet = _board_has_three_flush(board)
         eq_cap = 0.68 if wet else 0.62
         if equity < eq_cap:

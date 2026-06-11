@@ -1001,6 +1001,30 @@ def sb_k2o_three_flush_river(*, villain_bet: int = 120, pot: int = 280) -> dict:
     )
 
 
+def sb_a3o_ace_high_river(*, villain_bet: int = 120, pot: int = 400) -> dict:
+    """A3o SB OOP ace-high only on connected runout — HL R20 #01 (−355)."""
+    return six_max_table(
+        name="sb_a3o_ace_high_river",
+        hero_seat=2,
+        button_seat=1,
+        street="River",
+        board=["Ts", "7h", "Qh", "Kc", "8c"],
+        pot=pot,
+        hero_hole=["Ah", "3h"],
+        hero_stack=600,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={2: 600},
+        allowed=_allowed(
+            can_call=True,
+            can_raise=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            raise_range={"min": villain_bet * 2, "max": 600},
+        ),
+    )
+
+
 def sb_a8o_tptk_flop(*, villain_bet: int = 40, pot: int = 120) -> dict:
     """A8o SB OOP top pair weak kicker — analyze #03."""
     return six_max_table(
