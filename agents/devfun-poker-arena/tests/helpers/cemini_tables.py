@@ -1001,6 +1001,78 @@ def sb_k2o_three_flush_river(*, villain_bet: int = 120, pot: int = 280) -> dict:
     )
 
 
+def sb_98s_missed_ace_flop(*, villain_bet: int = 30, pot: int = 70) -> dict:
+    """98s SB OOP missed on A-high flop — HL R21 #01 (−25)."""
+    return six_max_table(
+        name="sb_98s_missed_ace_flop",
+        hero_seat=2,
+        button_seat=1,
+        street="Flop",
+        board=["Ac", "Qs", "6s"],
+        pot=pot,
+        hero_hole=["9c", "8c"],
+        hero_stack=900,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={2: 900},
+        allowed=_allowed(
+            can_call=True,
+            can_raise=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            raise_range={"min": villain_bet * 2, "max": 900},
+        ),
+    )
+
+
+def btn_97o_unopened(hero_hole: list[str] | None = None) -> dict:
+    """97o BTN unopened — HL R21 #03."""
+    hole = hero_hole or ["7s", "9c"]
+    return six_max_table(
+        name="btn_97o_unopened",
+        hero_seat=1,
+        button_seat=1,
+        street="Preflop",
+        board=[],
+        pot=30,
+        hero_hole=hole,
+        hero_stack=980,
+        villain_bets={2: 10, 3: 20},
+        allowed=_allowed(
+            can_check=False,
+            can_call=True,
+            can_bet=True,
+            call_chips=20,
+            call_to=20,
+            bet_range={"min": 40, "max": 980},
+        ),
+    )
+
+
+def utg_a8o_ace_high_river(*, villain_bet: int = 50, pot: int = 150) -> dict:
+    """A8o UTG OOP ace-high river — HL R21 #02."""
+    return six_max_table(
+        name="utg_a8o_ace_high_river",
+        hero_seat=4,
+        button_seat=1,
+        street="River",
+        board=["6c", "9d", "Qc", "Th", "2h"],
+        pot=pot,
+        hero_hole=["Ah", "8h"],
+        hero_stack=850,
+        hero_bet=0,
+        villain_bets={6: villain_bet},
+        stacks={4: 850},
+        allowed=_allowed(
+            can_call=True,
+            can_raise=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            raise_range={"min": villain_bet * 2, "max": 850},
+        ),
+    )
+
+
 def sb_a3o_ace_high_river(*, villain_bet: int = 120, pot: int = 400) -> dict:
     """A3o SB OOP ace-high only on connected runout — HL R20 #01 (−355)."""
     return six_max_table(

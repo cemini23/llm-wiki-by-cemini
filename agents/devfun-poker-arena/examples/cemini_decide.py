@@ -504,6 +504,17 @@ def decide(
 
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and position == "SB" and not in_position
+            and hc in _SB_WEAK_SUITED_VS_OPEN
+            and _board_has_ace(board)
+            and not _hero_pairs_flop(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.10), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: SB weak suited missed A-high — fold")
+
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position == "SB" and not in_position
             and len(board) == 3
             and hc in _SB_WEAK_SUITED_VS_OPEN
             and not _hero_cannot_lose()
@@ -693,6 +704,24 @@ def decide(
             and call_chips >= max(int(pot * 0.10), 1)):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: SB weak ace high only — fold")
+
+    # EP weak ace ace-high on runout — A8o UTG −25 (HL R21 #02).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP") and not in_position
+            and _weak_ace_offsuit(hc)
+            and _hero_ace_high_no_pair(hole, board)
+            and len(board) >= 4
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.10), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP weak ace high only — fold")
+
+    # BTN low connector offsuit opens — 97o BTN −10 (HL R21 #03).
+    if (street == "Preflop" and is_preflop_open_spot(table, allowed, call_chips)
+            and position == "BTN" and hc in {"97o", "86o", "96o", "85o", "T7o", "64o"}
+            and "fold" in available):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: BTN low connector offsuit — fold")
 
     # MP OOP weak broadway on connected runout — KTo MP −110 (HL R20 #02).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
@@ -967,7 +996,7 @@ def _blocks_open_steal(hand_class: str, position: str) -> bool:
         if hand_class[0] == hand_class[1]:
             return False
         hi, lo = _RANKS.index(hand_class[0]), _RANKS.index(hand_class[1])
-        if hi <= 9 and lo <= 4:
+        if hi <= 9 and lo <= 6:
             return True
     return False
 
