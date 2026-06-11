@@ -214,14 +214,22 @@ def dominant_villain_from_table(table: dict) -> tuple[str, dict, str]:
 
 def enrich_hud_from_table(hud: dict, table: dict) -> dict:
     """Attach archetype + concentration metrics to opponent HUD dict."""
+    from field_export_hud import (  # noqa: WPS433
+        enrich_table_seats_from_export,
+        overlay_export_field_stats,
+    )
+
     out = dict(hud)
     handle, stats, arch = dominant_villain_from_table(table)
     if handle:
         out["villain_handle"] = handle
+    stats = overlay_export_field_stats(handle, stats or {})
     if stats:
         out.setdefault("stats", stats)
         out["vpip"] = stats.get("vpip")
         out["pfr"] = stats.get("pfr")
+    if stats and arch == "unknown":
+        arch = classify_villain_archetype(stats, handle=handle)
     if arch != "unknown":
         out["archetype"] = arch
         out["mode"] = archetype_to_legacy_mode(arch)
@@ -231,6 +239,9 @@ def enrich_hud_from_table(hud: dict, table: dict) -> dict:
     if stats:
         out["premium_concentration"] = premium_concentration_index(stats)
         out["raise_gap"] = raise_gap(stats)
+    seat_field = enrich_table_seats_from_export(table)
+    if seat_field:
+        out["field_export_seats"] = seat_field
     return out
 
 

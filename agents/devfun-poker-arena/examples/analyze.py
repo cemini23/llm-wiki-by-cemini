@@ -50,14 +50,18 @@ _SEAT_POS = {1: "BTN", 2: "SB", 3: "BB", 4: "UTG", 5: "MP", 6: "CO"}
 
 
 def _load_creds() -> tuple[Optional[str], Optional[str]]:
-    """Load (api_key, agent_id) from .arena-credentials if present, else env."""
+    """Env wins for apiKey on prod (.env via systemd); file supplies agentId fallback."""
+    env_key = (os.environ.get("ARENA_API_KEY") or "").strip() or None
+    env_agent = (os.environ.get("ARENA_AGENT_ID") or "").strip() or None
     if CREDS_PATH.exists():
         try:
             c = json.loads(CREDS_PATH.read_text())
-            return c.get("apiKey"), c.get("agentId") or c.get("id")
+            key = env_key or c.get("apiKey")
+            agent = env_agent or c.get("agentId") or c.get("id")
+            return key, agent
         except Exception:
             pass
-    return os.environ.get("ARENA_API_KEY"), os.environ.get("ARENA_AGENT_ID")
+    return env_key, env_agent
 
 
 def _fetch_recent_tables(client: ArenaClient, agent_id: str,
@@ -77,12 +81,20 @@ def _fetch_recent_tables(client: ArenaClient, agent_id: str,
     return []
 
 
-def _fetch_replays(client: ArenaClient, agent_id: str, limit: int) -> dict[str, int]:
+def _fetch_replays(
+    client: ArenaClient,
+    agent_id: str,
+    limit: int,
+    competition_id: Optional[str] = None,
+) -> dict[str, int]:
     """GET /agent/{id}/replays → {tableId: chipDelta}. Returns {} on failure.
-    Server caps limit at 50."""
+    Server caps limit at 50. competitionId is required on production arena."""
     capped = min(limit, 50)
+    qs = f"?limit={capped}"
+    if competition_id:
+        qs += f"&competitionId={competition_id}"
     try:
-        body = client.get(f"/agent/{agent_id}/replays?limit={capped}")
+        body = client.get(f"/agent/{agent_id}/replays{qs}")
     except ArenaError as e:
         print(f"[analyze] replays fetch failed (will use payoutChips instead): {e}",
               file=sys.stderr)
@@ -363,7 +375,9 @@ def main(argv: Optional[list[str]] = None) -> int:
             return 2
 
         tables = _fetch_recent_tables(client, agent_id, competition_id, args.limit)
-        chip_deltas = _fetch_replays(client, agent_id, args.limit)
+        chip_deltas = _fetch_replays(
+            client, agent_id, args.limit, competition_id=competition_id
+        )
         report = analyze(tables, chip_deltas, agent_id, top_n=args.top)
 
         if args.out:

@@ -78,7 +78,13 @@ set_kv CEMINI_S1B_MIN_STACK_BB 80
 set_kv CEMINI_NEMESIS_EXPLOIT 1
 set_kv CEMINI_NEMESIS_TIGHT 1
 set_kv CEMINI_JOIN_RETRY_S 25
+set_kv CEMINI_CHASE_JOIN_RETRY_S 10
 set_kv CEMINI_IN_QUEUE_RETRY_S 60
+set_kv CEMINI_EXPORT_DIR "reports/exports/s1-tournament-live"
+set_kv CEMINI_FIELD_EXPORT_HUD 1
+set_kv CEMINI_FIELD_EXPORT_DIR "reports/exports/s1-tournament-live"
+set_kv CEMINI_FIELD_EXPORT_HUD_TTL_S 3600
+set_kv CEMINI_FIELD_EXPORT_MIN_LIVE_SAMPLE 8
 # Single-table API: S1-only lobby until tournament ends (~Jun 14–15).
 if grep -q '^CEMINI_DUAL_LOBBY_COMP=' .env 2>/dev/null; then
   sed -i.bak '/^CEMINI_DUAL_LOBBY_COMP=/d' .env

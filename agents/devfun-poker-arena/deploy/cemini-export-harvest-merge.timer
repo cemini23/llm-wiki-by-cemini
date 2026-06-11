@@ -1,0 +1,13 @@
+[Unit]
+Description=Merge remote harvest shards after worker timers
+
+[Timer]
+OnBootSec=35min
+OnCalendar=*-*-* 02:45:00
+OnCalendar=*-*-* 08:45:00
+OnCalendar=*-*-* 14:45:00
+OnCalendar=*-*-* 20:45:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

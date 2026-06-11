@@ -232,7 +232,9 @@ def snapshot_competition(
     replay_delta_n = 0
     replay_delta_avg: float | None = None
     if agent_id:
-        replays = _fetch_replays(client, agent_id, limit=50)
+        replays = _fetch_replays(
+            client, agent_id, limit=50, competition_id=comp_id
+        )
         if replays:
             vals = list(replays.values())
             replay_delta_sum = sum(vals)
@@ -277,6 +279,16 @@ def append_timeseries_row(row: dict[str, Any]) -> Path:
     return path
 
 
+def _export_int_env(name: str, default: int) -> int:
+    raw = os.environ.get(name, "").strip()
+    if not raw:
+        return default
+    try:
+        return max(0, int(raw))
+    except ValueError:
+        return default
+
+
 def run_export_append(
     client: ArenaClient,
     entry: dict[str, Any],
@@ -286,20 +298,27 @@ def run_export_append(
     comp_id = str(entry.get("competition_id") or "")
     export_dir = entry.get("export_dir") or f"reports/exports/{comp_id}"
     out = Path(_AGENT_ROOT) / export_dir
+    top_agents = _export_int_env("CEMINI_EXPORT_TOP_AGENTS", 200)
+    stats_top = _export_int_env("CEMINI_EXPORT_STATS_TOP", 200)
+    replays_top = _export_int_env("CEMINI_EXPORT_REPLAYS_TOP", 50)
     data = export_competition(
         client,
         comp_id,
         mode="recent",
-        top_agents=30,
-        fetch_stats=False,
-        stats_top=0,
+        top_agents=top_agents,
+        fetch_stats=True,
+        stats_top=stats_top,
         with_replays=True,
+        replays_top_agents=replays_top,
         hero_agent_id=hero_agent_id,
     )
     from export_competition_hands import _append_jsonl  # noqa: WPS433
 
+    from export_competition_hands import _append_chip_delta_sidecar  # noqa: WPS433
+
     n_tables = _append_jsonl(out / "tables.jsonl", data["tables"], "table_id")
     n_subs = _append_jsonl(out / "submissions.jsonl", data["submissions"], "submission_id")
+    n_delta = _append_chip_delta_sidecar(out, data["submissions"])
     (out / "agents.jsonl").write_text(
         "\n".join(json.dumps(r, sort_keys=True) for r in data["agents"]) + "\n",
         encoding="utf-8",
@@ -308,7 +327,7 @@ def run_export_append(
         json.dumps(data["summary"], indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
-    return n_tables + n_subs
+    return n_tables + n_subs + n_delta
 
 
 def run_snapshot(

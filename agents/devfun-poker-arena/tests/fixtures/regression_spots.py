@@ -110,6 +110,7 @@ _NEMESIS_CTX = {"nemesis_handles": ["hunterguy102", "thaddius"]}
 
 _FIRST_PROTECT_CTX = {"first_protect": True, "qualification_protect": True}
 _PLACEMENT_PROTECT_CTX = {"placement_protect": True}
+_PLACEMENT_CHASE_CTX = {"placement_chase": True}
 
 _EVAL_PANEL_CTX = {"eval_panel_mode": True}
 
@@ -901,6 +902,33 @@ def nuts_regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"bet", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="eval_panel_mode: no KQs UTG open.",
+        ),
+        RegressionSpot(
+            id="prod_tdjd_utg_chase_fold_r28",
+            source="HL R28 chase — Td Jd UTG −30 preflop",
+            table=utg_unopened(["Td", "Jd"]),
+            context=_PLACEMENT_CHASE_CTX,
+            forbidden=frozenset({"bet", "raise", "all-in", "call"}),
+            required=frozenset({"fold"}),
+            notes="placement_chase does not widen UTG trash opens.",
+        ),
+        RegressionSpot(
+            id="prod_kqs_co_chase_vs_raise_r28",
+            source="HL R28 chase — Qs Ks CO vs open",
+            table=co_facing_raise(["Ks", "Qs"]),
+            context=_PLACEMENT_CHASE_CTX,
+            forbidden=frozenset({"fold"}),
+            required=frozenset({"call", "raise", "bet", "all-in"}),
+            notes="placement_chase: KQs CO vs open — defend (call or 3-bet).",
+        ),
+        RegressionSpot(
+            id="prod_98s_co_chase_open_r28",
+            source="HL R28 chase — 9h 8h CO steal widen",
+            table=co_unopened(["9h", "8h"]),
+            context=_PLACEMENT_CHASE_CTX,
+            forbidden=frozenset({"fold", "check", "call"}),
+            required=frozenset({"bet", "raise", "all-in"}),
+            notes="placement_chase: suited connector CO open.",
         ),
         RegressionSpot(
             id="s2_premium_nit_qto_fold",

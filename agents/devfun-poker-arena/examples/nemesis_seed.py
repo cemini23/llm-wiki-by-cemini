@@ -22,6 +22,14 @@ _DEFAULT = (
     "jagoan_neon",
 )
 _DEFAULT_PREFIXES = ("v12_", "phoenix-rises-nrkdhd", "phoenix-nrkdhd", "phoenix-")
+# Linear-aggro nemesis — defend/3-bet IP; do not blanket-fold suited broadway (S1 export).
+_LINEAR_AGGRO_NEMESIS = frozenset({
+    "thaddius",
+    "maxcaution",
+    "bingbong",
+    "vector_ai",
+    "ed_209_charlie",
+})
 
 
 def nemesis_handles() -> frozenset[str]:
@@ -38,6 +46,14 @@ def nemesis_prefixes() -> tuple[str, ...]:
         parts = (p.strip().lower() for p in raw.split(","))
         return tuple(p for p in parts if p)
     return _DEFAULT_PREFIXES
+
+
+def linear_aggro_nemesis_handles() -> frozenset[str]:
+    raw = os.environ.get("CEMINI_LINEAR_AGGRO_NEMESIS", "")
+    if raw.strip():
+        parts = (p.strip().lower() for p in raw.split(","))
+        return frozenset(p for p in parts if p)
+    return _LINEAR_AGGRO_NEMESIS
 
 
 def _seat_is_nemesis(seat: dict, handles: frozenset[str], prefixes: tuple[str, ...]) -> bool:
@@ -78,6 +94,34 @@ def table_nemesis_opener(table: dict, handles: frozenset[str] | None = None) -> 
         elif bet == best_bet and bet > 0 and is_nem:
             best_is_nemesis = True
     return best_is_nemesis and best_bet > int(table.get("bigBlindChips") or 20)
+
+
+def table_nemesis_opener_handle(
+    table: dict,
+    handles: frozenset[str] | None = None,
+) -> str:
+    """Lowercase handle of the nemesis seat with the largest preflop bet, else ''."""
+    if not handles:
+        handles = nemesis_handles()
+    prefixes = nemesis_prefixes()
+    hero = table.get("selfSeatNumber")
+    best_bet = -1
+    best_handle = ""
+    for seat in table.get("seats") or []:
+        sn = seat.get("seatNumber")
+        if sn == hero:
+            continue
+        if not _seat_is_nemesis(seat, handles, prefixes):
+            continue
+        bet = int(seat.get("currentBetChips") or 0)
+        handle = (seat.get("agentHandle") or seat.get("agentName") or "").lower()
+        if bet > best_bet:
+            best_bet = bet
+            best_handle = handle
+    bb = int(table.get("bigBlindChips") or 20)
+    if best_bet <= bb:
+        return ""
+    return best_handle
 
 
 def table_archetype_nemesis(table: dict) -> bool:

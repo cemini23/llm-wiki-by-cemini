@@ -107,7 +107,9 @@ def run_analyze_pass(
 ) -> dict:
     """Fetch Arena hands, write report + history line. Returns metrics dict."""
     tables = _fetch_recent_tables(client, agent_id, competition_id, limit)
-    chip_deltas = _fetch_replays(client, agent_id, limit)
+    chip_deltas = _fetch_replays(
+        client, agent_id, limit, competition_id=competition_id
+    )
     rows = _collect_hand_rows(tables, chip_deltas, agent_id)
     metrics = analyze_metrics(rows)
     report = analyze(tables, chip_deltas, agent_id, top_n=top)

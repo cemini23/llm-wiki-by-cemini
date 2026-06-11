@@ -9,9 +9,14 @@ User=root
 Group=root
 WorkingDirectory=/opt/devfun-poker-arena
 Environment=PYTHONUNBUFFERED=1
-Environment=CEMINI_EXPORT_DIR=/opt/devfun-poker-arena/reports/exports/playground-s1-live
+Environment=CEMINI_EXPORT_DIR=/opt/devfun-poker-arena/reports/exports/s1-tournament-live
+Environment=CEMINI_EXPORT_TOP_AGENTS=200
+Environment=CEMINI_EXPORT_STATS_TOP=200
+Environment=CEMINI_EXPORT_REPLAYS_TOP=50
+Environment=CEMINI_EXPORT_SHARD_INDEX=0
+Environment=CEMINI_EXPORT_SHARD_COUNT=3
 EnvironmentFile=-/opt/devfun-poker-arena/.env
-ExecStart=/opt/devfun-poker-arena/venv/bin/python examples/export_competition_hands.py --append --top-agents 200 --stats-top 200 --out-dir /opt/devfun-poker-arena/reports/exports/playground-s1-live
+ExecStart=/bin/bash -c '/opt/devfun-poker-arena/venv/bin/python examples/export_competition_hands.py --append --top-agents ${CEMINI_EXPORT_TOP_AGENTS:-200} --stats-top ${CEMINI_EXPORT_STATS_TOP:-200} --replays-top-agents ${CEMINI_EXPORT_REPLAYS_TOP:-50} --shard-index ${CEMINI_EXPORT_SHARD_INDEX:-0} --shard-count ${CEMINI_EXPORT_SHARD_COUNT:-3} --out-dir ${CEMINI_EXPORT_DIR:-/opt/devfun-poker-arena/reports/exports/s1-tournament-live} --match ${S1_TOURNAMENT_COMP:-${ARENA_LOBBY_COMPETITION_ID}}'
 UMask=0077
 
 [Install]

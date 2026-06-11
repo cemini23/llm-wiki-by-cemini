@@ -6,6 +6,7 @@ import os
 import pytest
 
 from pace_control import (
+    DEFAULT_CHASE_JOIN_RETRY_S,
     DEFAULT_FIRST_JOIN_RETRY_S,
     DEFAULT_JOIN_RETRY_S,
     DEFAULT_LEAD_JOIN_RETRY_S,
@@ -35,6 +36,17 @@ def test_lead_pace(monkeypatch: pytest.MonkeyPatch) -> None:
         first_protect=False,
         lead_protect=True, qual_protect=True, in_queue_only=False
     ) == DEFAULT_LEAD_JOIN_RETRY_S
+
+
+def test_chase_pace(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("CEMINI_CHASE_JOIN_RETRY_S", raising=False)
+    assert join_retry_seconds(
+        first_protect=False,
+        lead_protect=False,
+        qual_protect=False,
+        placement_chase=True,
+        in_queue_only=False,
+    ) == DEFAULT_CHASE_JOIN_RETRY_S
 
 
 def test_first_pace(monkeypatch: pytest.MonkeyPatch) -> None:

@@ -38,15 +38,23 @@ from export_competition_hands import (  # noqa: E402
     normalize_submission,
     normalize_table,
 )
+from export_shard import (  # noqa: E402
+    agent_in_shard,
+    crawl_state_name,
+    filter_leaderboard_shard,
+    shard_index_count,
+)
 
 
 def _load_creds() -> Optional[str]:
+    env_key = (os.environ.get("ARENA_API_KEY") or "").strip() or None
     if CREDS_PATH.exists():
         try:
-            return json.loads(CREDS_PATH.read_text()).get("apiKey")
+            file_key = json.loads(CREDS_PATH.read_text()).get("apiKey")
+            return env_key or file_key
         except Exception:
             pass
-    return os.environ.get("ARENA_API_KEY")
+    return env_key
 
 
 def _load_state(path: Path) -> dict[str, Any]:
@@ -93,14 +101,23 @@ def crawl_batch(
     fetch_submissions: bool,
     fetch_stats: bool,
     fetch_tables: bool,
+    shard_index: int = 0,
+    shard_count: int = 1,
 ) -> dict[str, Any]:
-    state_path = out_dir / "crawl_state.json"
+    shard_index, shard_count = shard_index_count(shard_index, shard_count)
+    state_path = out_dir / crawl_state_name(shard_index, shard_count)
     state = _load_state(state_path)
     lb_rows = _stable_leaderboard(fetch_leaderboard(client, competition_id))
-    total = len(lb_rows)
+    lb_shard = filter_leaderboard_shard(lb_rows, shard_index, shard_count)
+    total = len(lb_shard)
     state["leaderboard_total"] = total
+    state["shard_index"] = shard_index
+    state["shard_count"] = shard_count
     completed = set(state.get("completed_agent_ids") or [])
-    pending = [r for r in lb_rows if (r.get("agent") or {}).get("id") not in completed]
+    pending = [
+        r for r in lb_shard
+        if (r.get("agent") or {}).get("id") not in completed
+    ]
     batch = pending[:batch_size]
     if not batch and total:
         state["cycles"] = int(state.get("cycles") or 0) + 1
@@ -147,7 +164,7 @@ def crawl_batch(
         _append_jsonl(out_dir / "agents-all.jsonl", agent_records, "agent_id")
 
     n_tables = 0
-    if fetch_tables:
+    if fetch_tables and (shard_count <= 1 or shard_index == 0):
         raw = fetch_recent_tables(client, competition_id)
         tables = [normalize_table(t, competition_id=competition_id) for t in raw]
         n_tables = _append_jsonl(out_dir / "tables.jsonl", tables, "table_id")
@@ -168,6 +185,8 @@ def crawl_batch(
         "agents_stats": n_stats,
         "new_tables": n_tables,
         "cycles_complete": state.get("cycles"),
+        "shard_index": shard_index,
+        "shard_count": shard_count,
     }
     (out_dir / "crawl_last.json").write_text(
         json.dumps(manifest, indent=2, sort_keys=True) + "\n",
@@ -195,6 +214,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         default=0,
         help="With --until-complete, stop after N batches (0=unlimited)",
     )
+    p.add_argument("--shard-index", type=int, default=None, help="Worker shard (0-based)")
+    p.add_argument("--shard-count", type=int, default=None, help="Total shards (default env or 1)")
     args = p.parse_args(argv)
 
     load_dotenv()
@@ -205,11 +226,19 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     competition_id = (
         args.match
+        or os.environ.get("S1_TOURNAMENT_COMP", "").strip()
         or os.environ.get("ARENA_LOBBY_COMPETITION_ID")
         or "cmpy2qy65002ud9ej6b7jjq0l"
     )
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    shard_index, shard_count = shard_index_count(args.shard_index, args.shard_count)
+    if shard_count > 1:
+        print(
+            f"[crawl] shard {shard_index}/{shard_count}",
+            file=sys.stderr,
+        )
 
     client = ArenaClient(os.environ.get("ARENA_API_BASE", DEFAULT_BASE), api_key=api_key)
     try:
@@ -224,6 +253,8 @@ def main(argv: Optional[list[str]] = None) -> int:
                 fetch_submissions=not args.stats_only,
                 fetch_stats=True,
                 fetch_tables=not args.no_tables,
+                shard_index=shard_index,
+                shard_count=shard_count,
             )
             batches += 1
             print(json.dumps(manifest, indent=2))

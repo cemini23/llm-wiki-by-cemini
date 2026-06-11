@@ -11,6 +11,7 @@ DEFAULT_QUAL_JOIN_RETRY_S = 300.0  # 5 min — still seated, fewer new tables
 DEFAULT_LEAD_JOIN_RETRY_S = 900.0  # 15 min — time game > chip game when safely ahead
 DEFAULT_FIRST_JOIN_RETRY_S = 1800.0  # 30 min — rank #1: minimize new table intake
 DEFAULT_LOW_STACK_JOIN_RETRY_S = 3600.0  # stack < buy-in — avoid 409 join loops
+DEFAULT_CHASE_JOIN_RETRY_S = 10.0  # rank outside prize zone — faster table intake
 DEFAULT_PLAYGROUND_BUY_IN = 1000
 
 
@@ -30,6 +31,7 @@ def join_retry_seconds(
     first_protect: bool = False,
     lead_protect: bool,
     qual_protect: bool,
+    placement_chase: bool = False,
     in_queue_only: bool,
     hero_stack_chips: int | None = None,
     buy_in_chips: int | None = None,
@@ -58,6 +60,8 @@ def join_retry_seconds(
         base = _env_float("CEMINI_LEAD_JOIN_RETRY_S", DEFAULT_LEAD_JOIN_RETRY_S)
     elif qual_protect:
         base = _env_float("CEMINI_QUAL_JOIN_RETRY_S", DEFAULT_QUAL_JOIN_RETRY_S)
+    elif placement_chase:
+        base = _env_float("CEMINI_CHASE_JOIN_RETRY_S", DEFAULT_CHASE_JOIN_RETRY_S)
     else:
         base = _env_float("CEMINI_JOIN_RETRY_S", DEFAULT_JOIN_RETRY_S)
 

@@ -8,7 +8,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 AGENT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-SLUG="${1:-playground-s1-live}"
+SLUG="${1:-s1-tournament-live}"
 HOST="${CEMINI_PROD_HOST:-cemini-prod}"
 REMOTE="/opt/devfun-poker-arena/reports/exports/${SLUG}"
 LOCAL="${AGENT_DIR}/reports/exports/${SLUG}-archive"

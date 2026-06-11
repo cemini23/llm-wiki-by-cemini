@@ -43,6 +43,11 @@ if str(_EXAMPLES) not in sys.path:
 
 from analyze import _fetch_replays  # noqa: E402
 from arena_client import ArenaClient, ArenaError, CREDS_PATH, DEFAULT_BASE  # noqa: E402
+from export_shard import (  # noqa: E402
+    agent_in_shard,
+    filter_leaderboard_shard,
+    shard_index_count,
+)
 
 PAGE_SIZE = 100
 
@@ -65,13 +70,18 @@ def leaderboard_adjusted_bb100(lb_row: dict) -> float | None:
 
 
 def _load_creds() -> tuple[Optional[str], Optional[str]]:
+    """Env wins for apiKey on prod (.env via systemd); file supplies agentId fallback."""
+    env_key = (os.environ.get("ARENA_API_KEY") or "").strip() or None
+    env_agent = (os.environ.get("ARENA_AGENT_ID") or "").strip() or None
     if CREDS_PATH.exists():
         try:
             c = json.loads(CREDS_PATH.read_text())
-            return c.get("apiKey"), c.get("agentId") or c.get("id")
+            key = env_key or c.get("apiKey")
+            agent = env_agent or c.get("agentId") or c.get("id")
+            return key, agent
         except Exception:
             pass
-    return os.environ.get("ARENA_API_KEY"), os.environ.get("ARENA_AGENT_ID")
+    return env_key, env_agent
 
 
 def _paginate(client: ArenaClient, path: str) -> tuple[list[dict], int]:
@@ -367,6 +377,26 @@ def _load_existing_ids(path: Path, key: str) -> set[str]:
     return seen
 
 
+def _append_chip_delta_sidecar(out_dir: Path, submissions: list[dict]) -> int:
+    """Append chip_delta rows when submissions.jsonl dedupe skips updates."""
+    rows: list[dict] = []
+    for s in submissions:
+        cd = s.get("chip_delta")
+        sid = s.get("submission_id")
+        if cd is None or not sid:
+            continue
+        rows.append({
+            "record_type": "chip_delta",
+            "submission_id": sid,
+            "table_id": s.get("table_id"),
+            "agent_handle": s.get("agent_handle"),
+            "chip_delta": int(cd),
+        })
+    if not rows:
+        return 0
+    return _append_jsonl(out_dir / "chip_deltas.jsonl", rows, "submission_id")
+
+
 def _append_jsonl(path: Path, records: list[dict], dedupe_key: str) -> int:
     seen = _load_existing_ids(path, dedupe_key)
     new_rows = [r for r in records if str(r.get(dedupe_key)) not in seen]
@@ -403,10 +433,40 @@ def _append_jsonl(path: Path, records: list[dict], dedupe_key: str) -> int:
         return len(new_rows)
 
 
+def _table_id_by_number(raw_tables: list[dict]) -> dict[int, str]:
+    """Map arena tableNumber → recent-tables id (matches /agent/replays tableId)."""
+    out: dict[int, str] = {}
+    for t in raw_tables:
+        num = t.get("tableNumber")
+        tid = t.get("id") or t.get("tableId")
+        if num is not None and tid:
+            out[int(num)] = str(tid)
+    return out
+
+
+def _submission_chip_delta(
+    sub: dict,
+    agent_replays: dict[str, int],
+    table_id_by_number: dict[int, str],
+) -> Optional[int]:
+    """Join submission to replay chipDelta via table id or tableNumber bridge."""
+    ch = sub.get("challenge") or {}
+    tid = ch.get("id")
+    if tid is not None and str(tid) in agent_replays:
+        return agent_replays[str(tid)]
+    num = (ch.get("data") or {}).get("tableNumber")
+    if num is not None:
+        real_tid = table_id_by_number.get(int(num))
+        if real_tid and real_tid in agent_replays:
+            return agent_replays[real_tid]
+    return None
+
+
 def _replay_deltas_by_agent(
     client: ArenaClient,
     agent_ids: list[str],
     *,
+    competition_id: str,
     sleep_s: float = 0.05,
 ) -> dict[str, dict[str, int]]:
     """{agent_id: {table_id: chipDelta}} — server caps replays at 50 per agent."""
@@ -414,7 +474,7 @@ def _replay_deltas_by_agent(
     for aid in agent_ids:
         if not aid:
             continue
-        deltas = _fetch_replays(client, aid, limit=50)
+        deltas = _fetch_replays(client, aid, limit=50, competition_id=competition_id)
         if deltas:
             out[str(aid)] = {str(tid): int(v) for tid, v in deltas.items()}
         if sleep_s:
@@ -432,51 +492,105 @@ def export_competition(
     stats_top: int = 50,
     sleep_s: float = 0.05,
     with_replays: bool = True,
+    replays_top_agents: int = 0,
     hero_agent_id: Optional[str] = None,
+    shard_index: int | None = None,
+    shard_count: int | None = None,
 ) -> dict[str, Any]:
     """Run export; return dict of record lists keyed by output file stem."""
-    replay_by_agent: dict[str, dict[str, int]] = {}
-    if with_replays and hero_agent_id:
-        print(f"[export] fetching replays for hero {hero_agent_id}…", file=sys.stderr)
-        replay_by_agent = _replay_deltas_by_agent(
-            client, [hero_agent_id], sleep_s=sleep_s
+    shard_index, shard_count = shard_index_count(shard_index, shard_count)
+    if shard_count > 1:
+        print(
+            f"[export] shard {shard_index}/{shard_count} "
+            f"(IP-spread worker; tables/agents snapshot on shard 0 only)",
+            file=sys.stderr,
         )
-    hero_replays = replay_by_agent.get(str(hero_agent_id or ""), {})
-
-    print(f"[export] fetching recent-tables for {competition_id}…", file=sys.stderr)
-    raw_tables = fetch_recent_tables(client, competition_id)
-    table_chip_map: dict[str, dict[str, int]] = {}
-    if hero_agent_id and hero_replays:
-        table_chip_map = {
-            tid: {str(hero_agent_id): delta} for tid, delta in hero_replays.items()
-        }
-    tables = [
-        normalize_table(t, competition_id=competition_id, chip_deltas=table_chip_map)
-        for t in raw_tables
-    ]
-    print(f"[export] tables={len(tables)}", file=sys.stderr)
 
     print("[export] fetching leaderboard…", file=sys.stderr)
     lb_rows = fetch_leaderboard(client, competition_id)
+
+    replay_by_agent: dict[str, dict[str, int]] = {}
+    replay_agent_ids: list[str] = []
+    if with_replays:
+        if hero_agent_id and agent_in_shard(str(hero_agent_id), shard_index, shard_count):
+            replay_agent_ids.append(str(hero_agent_id))
+        if replays_top_agents > 0:
+            for row in lb_rows[:replays_top_agents]:
+                aid = (row.get("agent") or {}).get("id")
+                if not aid or not agent_in_shard(str(aid), shard_index, shard_count):
+                    continue
+                if str(aid) not in replay_agent_ids:
+                    replay_agent_ids.append(str(aid))
+        if replay_agent_ids:
+            print(
+                f"[export] fetching replays for {len(replay_agent_ids)} agents "
+                f"(cap 50 tables/agent)…",
+                file=sys.stderr,
+            )
+            replay_by_agent = _replay_deltas_by_agent(
+                client,
+                replay_agent_ids,
+                competition_id=competition_id,
+                sleep_s=sleep_s,
+            )
+    hero_replays = replay_by_agent.get(str(hero_agent_id or ""), {})
+
+    tables: list[dict] = []
+    table_id_by_number: dict[int, str] = {}
+    if shard_count <= 1 or shard_index == 0:
+        print(f"[export] fetching recent-tables for {competition_id}…", file=sys.stderr)
+        raw_tables = fetch_recent_tables(client, competition_id)
+        table_chip_map: dict[str, dict[str, int]] = {}
+        if hero_agent_id and hero_replays:
+            table_chip_map = {
+                tid: {str(hero_agent_id): delta} for tid, delta in hero_replays.items()
+            }
+        table_id_by_number = _table_id_by_number(raw_tables)
+        tables = [
+            normalize_table(t, competition_id=competition_id, chip_deltas=table_chip_map)
+            for t in raw_tables
+        ]
+        print(f"[export] tables={len(tables)}", file=sys.stderr)
+    else:
+        print("[export] skip recent-tables (non-zero shard)", file=sys.stderr)
+
     agent_records: list[dict] = []
-    for i, row in enumerate(lb_rows):
-        ag = row.get("agent") or {}
-        aid = ag.get("id")
-        stats = None
-        if fetch_stats and aid and (i < stats_top or not stats_top):
-            stats = fetch_agent_stats(client, aid, competition_id)
-            if sleep_s:
-                time.sleep(sleep_s)
-        agent_records.append(normalize_agent_row(row, stats))
-    print(f"[export] agents={len(agent_records)}", file=sys.stderr)
+    if shard_count <= 1 or shard_index == 0:
+        for i, row in enumerate(lb_rows):
+            ag = row.get("agent") or {}
+            aid = ag.get("id")
+            stats = None
+            if fetch_stats and aid and (i < stats_top or not stats_top):
+                stats = fetch_agent_stats(client, aid, competition_id)
+                if sleep_s:
+                    time.sleep(sleep_s)
+            agent_records.append(normalize_agent_row(row, stats))
+        print(f"[export] agents={len(agent_records)}", file=sys.stderr)
+    else:
+        lb_shard = filter_leaderboard_shard(lb_rows, shard_index, shard_count)
+        for row in lb_shard:
+            ag = row.get("agent") or {}
+            aid = ag.get("id")
+            if not aid:
+                continue
+            stats = None
+            if fetch_stats:
+                stats = fetch_agent_stats(client, aid, competition_id)
+                if sleep_s:
+                    time.sleep(sleep_s)
+            agent_records.append(normalize_agent_row(row, stats))
+        print(f"[export] agents-shard={len(agent_records)}", file=sys.stderr)
 
     submissions: list[dict] = []
     if mode == "full":
-        targets = lb_rows
+        targets = filter_leaderboard_shard(lb_rows, shard_index, shard_count)
         print(f"[export] full mode — submissions for {len(targets)} agents…", file=sys.stderr)
     elif top_agents > 0:
-        targets = lb_rows[:top_agents]
-        print(f"[export] top-agents={top_agents} submissions…", file=sys.stderr)
+        targets = filter_leaderboard_shard(lb_rows[:top_agents], shard_index, shard_count)
+        print(
+            f"[export] top-agents={top_agents} shard targets={len(targets)}…",
+            file=sys.stderr,
+        )
     else:
         targets = []
 
@@ -488,12 +602,8 @@ def export_competition(
         handle = ag.get("handle") or ag.get("name") or aid
         subs = fetch_agent_submissions(client, aid, competition_id)
         agent_replays = replay_by_agent.get(str(aid), {})
-        if with_replays and not agent_replays and aid == hero_agent_id:
-            agent_replays = hero_replays
         for s in subs:
-            ch = s.get("challenge") or {}
-            tid = ch.get("id")
-            cd = agent_replays.get(str(tid)) if tid is not None else None
+            cd = _submission_chip_delta(s, agent_replays, table_id_by_number)
             submissions.append(
                 normalize_submission(
                     s, competition_id=competition_id, chip_delta=cd
@@ -561,6 +671,14 @@ def main(argv: Optional[list[str]] = None) -> int:
         action="store_true",
         help="Skip /agent/replays chipDelta merge (payout_chips only)",
     )
+    p.add_argument(
+        "--replays-top-agents",
+        type=int,
+        default=0,
+        help="Fetch /agent/replays chipDelta for top N leaderboard agents (50 cap/agent)",
+    )
+    p.add_argument("--shard-index", type=int, default=None, help="Worker shard (0-based)")
+    p.add_argument("--shard-count", type=int, default=None, help="Total shards (IP spread)")
     args = p.parse_args(argv)
 
     load_dotenv()
@@ -572,6 +690,7 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     competition_id = (
         args.match
+        or os.environ.get("S1_TOURNAMENT_COMP", "").strip()
         or os.environ.get("ARENA_LOBBY_COMPETITION_ID")
         or "cmpy2qy65002ud9ej6b7jjq0l"
     )
@@ -588,6 +707,14 @@ def main(argv: Optional[list[str]] = None) -> int:
         elif top_agents <= 0:
             top_agents = 0
 
+        replays_top = max(0, int(args.replays_top_agents))
+        if replays_top <= 0:
+            raw = os.environ.get("CEMINI_EXPORT_REPLAYS_TOP", "").strip()
+            if raw:
+                replays_top = max(0, int(raw))
+
+        shard_index, shard_count = shard_index_count(args.shard_index, args.shard_count)
+
         data = export_competition(
             client,
             competition_id,
@@ -596,7 +723,10 @@ def main(argv: Optional[list[str]] = None) -> int:
             fetch_stats=not args.no_stats,
             stats_top=args.stats_top,
             with_replays=not args.no_replays,
+            replays_top_agents=replays_top,
             hero_agent_id=agent_id,
+            shard_index=shard_index,
+            shard_count=shard_count,
         )
 
         if args.append:
@@ -605,6 +735,9 @@ def main(argv: Optional[list[str]] = None) -> int:
             n_subs = _append_jsonl(
                 out_dir / "submissions.jsonl", data["submissions"], "submission_id"
             )
+            n_delta = _append_chip_delta_sidecar(out_dir, data["submissions"])
+            if n_delta:
+                print(f"[export] chip_deltas sidecar +{n_delta}", file=sys.stderr)
             (out_dir / "agents.jsonl").write_text(
                 "\n".join(json.dumps(r, sort_keys=True) for r in data["agents"]) + "\n",
                 encoding="utf-8",

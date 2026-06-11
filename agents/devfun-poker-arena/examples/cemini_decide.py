@@ -18,7 +18,7 @@ from collections import Counter
 from pathlib import Path
 from typing import Any, Optional
 
-from blind_pressure import lead_blind_steal
+from blind_pressure import lead_blind_steal, placement_chase_steal
 
 _EXAMPLES = Path(__file__).resolve().parent
 if str(_EXAMPLES) not in sys.path:
@@ -34,10 +34,17 @@ from qualification_guard import max_playable_chips  # noqa: E402
 from opponent_hud import build_opponent_hud, enrich_hud_from_table, exploit_margins  # noqa: E402
 from pokerskill_adapter import retrieve_pokerskill_hints  # noqa: E402
 from session_memory import exploit_from_memory  # noqa: E402
-from nemesis_seed import nemesis_handles, table_nemesis_opener, table_nemesis_pressure  # noqa: E402
+from nemesis_seed import (  # noqa: E402
+    linear_aggro_nemesis_handles,
+    nemesis_handles,
+    table_nemesis_opener,
+    table_nemesis_opener_handle,
+    table_nemesis_pressure,
+)
 from opponent_target import is_preflop_open_spot  # noqa: E402
 from s1b_exploit import (  # noqa: E402
     exploit_lane_active,
+    s1b_exploit_enabled,
     try_defend_bb_vs_steal,
     try_iso_vs_wide_passive_limp,
     try_jeff_nemesis_4bet,
@@ -94,6 +101,9 @@ _COLD_START_OPEN_OK = frozenset({"AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQ
 _NEMESIS_SB_DEFEND_OK = frozenset({
     "AA", "KK", "QQ", "JJ", "TT", "99", "88", "77",
     "AKs", "AKo", "AQs", "AQo",
+})
+_NEMESIS_SB_DEFEND_CHASE = _NEMESIS_SB_DEFEND_OK | frozenset({
+    "AJs", "ATs", "KQs", "KJs", "QJs", "66", "55",
 })
 
 
@@ -809,7 +819,7 @@ def decide(
             hud_mode=hud_mode, margins=margins, cold_start=cold_start,
             lead_protect=lead_protect, qual_protect=qual_protect,
             first_protect=first_protect, eval_panel=eval_panel,
-            lane_tight=lane_tight)
+            lane_tight=lane_tight, placement_chase=placement_chase)
     elif street == "Preflop" and call_chips > 0:
         nemesis_ctx = ctx.get("nemesis_handles")
         handles = (
@@ -817,8 +827,11 @@ def decide(
             if nemesis_ctx else nemesis_handles()
         )
         nemesis_opener = False
+        nemesis_opener_linear = False
         if _nemesis_tight_enabled():
             nemesis_opener = table_nemesis_pressure(table, handles)
+            opener_h = table_nemesis_opener_handle(table, handles)
+            nemesis_opener_linear = opener_h in linear_aggro_nemesis_handles()
         bb = int(table.get("bigBlindChips") or 20)
         hero_stack = _hero_stack_chips(table)
         action_name, amount = _preflop_vs_bet(
@@ -826,10 +839,12 @@ def decide(
             in_position=in_position, ps_bias=ps_bias, ps_library=ps_library,
             hud_mode=hud_mode, margins=margins, lead_protect=lead_protect,
             qual_protect=qual_protect, first_protect=first_protect,
-            nemesis_opener=nemesis_opener, eval_panel=eval_panel,
+            nemesis_opener=nemesis_opener, nemesis_opener_linear=nemesis_opener_linear,
+            eval_panel=eval_panel,
             lane_tight=lane_tight,
             ko_survival=ko_survival, cold_start=cold_start, hud=hud,
-            hero_stack_chips=hero_stack, big_blind=bb)
+            hero_stack_chips=hero_stack, big_blind=bb,
+            placement_chase=placement_chase)
     elif call_chips == 0:
         action_name, amount = _postflop_free(
             equity, allowed, available, pot, pot_control=pot_control,
@@ -891,8 +906,11 @@ def _should_block_chart_open(
     position: str,
     *,
     lead_protect: bool = False,
+    placement_chase: bool = False,
 ) -> bool:
     """Block chart-suggested opens for trash (KTo UTG, K8o CO chart bypass)."""
+    if placement_chase and placement_chase_steal(hand_class, position):
+        return False
     if position in ("UTG", "MP"):
         return hand_class in _WEAK_FACING_RAISE
     if position in ("CO", "BTN"):
@@ -939,7 +957,8 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
                   qual_protect: bool = False,
                   first_protect: bool = False,
                   eval_panel: bool = False,
-                  lane_tight: bool = False) -> tuple[str, Optional[int]]:
+                  lane_tight: bool = False,
+                  placement_chase: bool = False) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     if (position == "SB" and _weak_ace_offsuit(hand_class)
             and suggested == "raise" and "check" in available):
@@ -994,12 +1013,26 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
         if "check" in available:
             return "check", None
     # Cold start: chart-only CO/BTN opens — no marginal steals until HUD sample (HL R21).
-    if (_cold_start_no_steal_enabled() and cold_start and position in ("CO", "BTN")
-            and suggested == "raise" and hand_class not in _COLD_START_OPEN_OK):
+    chase_open_ok = placement_chase_steal(hand_class, position)
+    if (_cold_start_no_steal_enabled() and cold_start and position in ("CO", "BTN", "SB")
+            and suggested == "raise"
+            and hand_class not in _COLD_START_OPEN_OK
+            and not (placement_chase and chase_open_ok)):
         if "check" in available:
             return "check", None
         if "fold" in available:
             return "fold", None
+    # placement_chase: widen CO/BTN/SB opens toward top-20 field VPIP (not margin-only).
+    chase_eq = float(margins.get("chase_open_equity", 0.38))
+    if (placement_chase and not lane_tight and position in ("CO", "BTN", "SB")
+            and chase_open_ok and equity >= chase_eq
+            and allowed.get("canBet") and "bet" in available
+            and not _is_sb_complete_trash(hand_class)):
+        br = allowed.get("betRange") or {}
+        min_bet = int(br.get("min") or max(int(pot * 0.5), 1))
+        max_bet = int(br.get("max") or min_bet)
+        target = max(min_bet, min(int(pot * 0.5), max_bet))
+        return "bet", target
     # vs rock: steal when chart is passive but equity supports an open (CO/BTN only).
     steal_eq = float(margins.get("open_steal_equity", 0.99))
     if (not lead_protect and not qual_protect and not cold_start and hud_mode == "rock"
@@ -1014,12 +1047,17 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
         target = max(min_bet, min(int(pot * 0.5), max_bet))
         return "bet", target
     if (suggested == "raise" and allowed.get("canBet") and "bet" in available
-            and not _should_block_chart_open(hand_class, position, lead_protect=lead_protect)
+            and not _should_block_chart_open(
+                hand_class, position,
+                lead_protect=lead_protect,
+                placement_chase=placement_chase,
+            )
             and not (
                 _cold_start_no_steal_enabled()
                 and cold_start
-                and position in ("CO", "BTN")
+                and position in ("CO", "BTN", "SB")
                 and hand_class not in _COLD_START_OPEN_OK
+                and not (placement_chase and chase_open_ok)
             )):
         br = allowed.get("betRange") or {}
         min_bet = int(br.get("min") or max(int(pot * 0.5), 1))
@@ -1044,13 +1082,15 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                     qual_protect: bool = False,
                     first_protect: bool = False,
                     nemesis_opener: bool = False,
+                    nemesis_opener_linear: bool = False,
                     eval_panel: bool = False,
                     lane_tight: bool = False,
                     ko_survival: bool = False,
                     cold_start: bool = False,
                     hud: Optional[dict] = None,
                     hero_stack_chips: int = 0,
-                    big_blind: int = 20) -> tuple[str, Optional[int]]:
+                    big_blind: int = 20,
+                    placement_chase: bool = False) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     hc = chart.get("hand_class") or ""
     position = chart.get("position") or ""
@@ -1103,6 +1143,35 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     if iso_lp:
         return iso_lp
 
+    # placement_chase: BB defend / LAG 3-bet before static broadway-fold guards.
+    if placement_chase and s1b_exploit_enabled() and hero_stack_chips >= big_blind * 60:
+        lag_3b = try_three_bet_lag_vs_open(
+            hand_class=hc,
+            position=position,
+            call_chips=call_chips,
+            pot=pot,
+            allowed=allowed,
+            available=available,
+            hero_stack_chips=hero_stack_chips,
+            big_blind=big_blind,
+        )
+        if lag_3b:
+            return lag_3b
+        defend = try_defend_bb_vs_steal(
+            hand_class=hc,
+            position=position,
+            call_chips=call_chips,
+            pot_odds=pot_odds,
+            equity=equity,
+            available=available,
+            hero_stack_chips=hero_stack_chips,
+        )
+        if defend:
+            return defend
+
+    steal_sized = call_chips > 0 and call_chips <= big_blind * 4
+    bb_chase_steal = placement_chase and position == "BB" and steal_sized
+
     # Static chart is open-range only — facing a raise, downgrade spurious "raise" (77 MP −100).
     if call_chips > 0 and suggested == "raise" and hc not in _PREFLOP_3BET_OK:
         suggested = "fold"
@@ -1114,8 +1183,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         return "fold", None
 
     # BB: fold dominated broadway vs opens (KQo BB −100 analyze #10).
-    if (position == "BB" and call_chips > 0 and hc in _BB_BROADWAY_FOLD
-            and "fold" in available):
+    if (not bb_chase_steal and position == "BB" and call_chips > 0
+            and hc in _BB_BROADWAY_FOLD and "fold" in available):
         return "fold", None
 
     # SB: fold dominated broadway vs opens (QJo SB −100 HL R22 #01).
@@ -1168,8 +1237,9 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
         return "fold", None
 
-    # v12 / nemesis opens — fold EP suited broadway even IP to the open.
-    if (nemesis_opener and position in ("UTG", "MP", "CO", "BTN") and call_chips > 0
+    # v12 / nemesis opens — fold EP suited broadway (not IP chase / linear-aggro nemesis).
+    if (nemesis_opener and not placement_chase and not nemesis_opener_linear
+            and position in ("UTG", "MP") and call_chips > 0
             and hc in _EP_SUITED_BROADWAY_TRAP and "fold" in available):
         return "fold", None
 
@@ -1190,8 +1260,11 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         return "fold", None
 
     # Nemesis tight: SB vs known hunters — premiums only (HL R21 S1a export).
+    nemesis_sb_ok = _NEMESIS_SB_DEFEND_OK
+    if placement_chase or nemesis_opener_linear:
+        nemesis_sb_ok = _NEMESIS_SB_DEFEND_CHASE
     if (nemesis_opener and position == "SB" and call_chips > 0
-            and hc not in _NEMESIS_SB_DEFEND_OK and "fold" in available):
+            and hc not in nemesis_sb_ok and "fold" in available):
         return "fold", None
 
     if exploit_lane_active(
@@ -1204,6 +1277,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         hero_stack_bb=hero_stack_chips / max(big_blind, 1),
         hud=hud,
         nemesis_opener=nemesis_opener,
+        placement_chase=placement_chase,
     ):
         lag_3b = try_three_bet_lag_vs_open(
             hand_class=hc,

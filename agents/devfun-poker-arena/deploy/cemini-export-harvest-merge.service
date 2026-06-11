@@ -1,0 +1,21 @@
+[Unit]
+Description=Pull remote harvest shards and merge into canonical tournament export
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+WorkingDirectory=/opt/devfun-poker-arena
+Environment=PYTHONUNBUFFERED=1
+ExecStartPre=/bin/bash -c 'mkdir -p reports/exports/s1-tournament-live-incoming/shard1 reports/exports/s1-tournament-live-incoming/shard2'
+ExecStartPre=/bin/bash -c 'rsync -az cemini-librarian:/opt/devfun-poker-arena-harvest/reports/exports/s1-tournament-live/ reports/exports/s1-tournament-live-incoming/shard1/ || true'
+ExecStartPre=/bin/bash -c 'rsync -az cemini-egress-fi:/opt/devfun-poker-arena-harvest/reports/exports/s1-tournament-live/ reports/exports/s1-tournament-live-incoming/shard2/ || true'
+ExecStart=/opt/devfun-poker-arena/venv/bin/python scripts/merge_export_harvest.py \
+  --canonical reports/exports/s1-tournament-live \
+  --worker reports/exports/s1-tournament-live-incoming/shard1 \
+  --worker reports/exports/s1-tournament-live-incoming/shard2
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

@@ -379,6 +379,7 @@ def run_lobby(args: argparse.Namespace) -> int:
                 first_protect=first_protect,
                 lead_protect=lead_protect,
                 qual_protect=qual_protect,
+                placement_chase=placement_chase,
                 in_queue_only=in_queue_only,
                 hero_stack_chips=hero_stack,
                 retry_multiplier=mult,
