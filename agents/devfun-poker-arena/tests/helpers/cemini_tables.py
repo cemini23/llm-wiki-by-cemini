@@ -743,6 +743,52 @@ def sb_a6o_vs_shove(*, shove_to: int = 1000, hero_stack: int = 1000) -> dict:
     )
 
 
+def sb_t7s_paired_flop(*, villain_bet: int = 45, pot: int = 90) -> dict:
+    """T7s SB on paired 88 flop — HL R19 analyze #01 (−45)."""
+    return six_max_table(
+        name="sb_t7s_paired_flop",
+        hero_seat=2,
+        button_seat=1,
+        street="Flop",
+        board=["8s", "5c", "8h"],
+        pot=pot,
+        hero_hole=["7c", "Tc"],
+        hero_stack=200,
+        hero_bet=0,
+        villain_bets={3: villain_bet},
+        stacks={2: 200},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def utg_jts_paired_turn(*, villain_bet: int = 30, pot: int = 80) -> dict:
+    """JTs UTG on paired 5443 turn — HL R19 analyze #02 (−30)."""
+    return six_max_table(
+        name="utg_jts_paired_turn",
+        hero_seat=0,
+        button_seat=5,
+        street="Turn",
+        board=["5h", "4h", "4c", "3h"],
+        pot=pot,
+        hero_hole=["Td", "Jd"],
+        hero_stack=250,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={0: 250},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def co_t4o_broadway_flop(*, villain_bet: int = 10, pot: int = 40) -> dict:
     """T4o CO flop top pair weak kicker — HL R18 analyze #02 (−10 on TQ6)."""
     return six_max_table(

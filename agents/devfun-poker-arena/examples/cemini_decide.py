@@ -74,7 +74,8 @@ _LOW_PAIRS_PROTECT = frozenset({"77", "66", "55", "44", "33", "22"})
 _CO_WEAK_CONNECTOR = frozenset({"98o", "87o", "T8o", "97o", "86o", "76o", "65o"})
 _BB_BROADWAY_FOLD = frozenset({"KQo", "QJo", "KJo", "KTo", "QTo", "JTo", "AJo", "ATo"})
 _SB_WEAK_SUITED_VS_OPEN = frozenset({
-    "K9s", "K8s", "Q9s", "Q8s", "J9s", "J8s", "T9s", "T8s", "98s", "87s", "76s",
+    "K9s", "K8s", "Q9s", "Q8s", "J9s", "J8s", "T9s", "T8s", "T7s", "97s", "86s",
+    "98s", "87s", "76s", "65s",
 })
 _PREFLOP_3BET_OK = frozenset({"AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQs", "AQo"})
 # HL R25: EP suited broadway opens/calls bleed vs LAG shoves (QJs UTG −100 #01, KQs UTG #12).
@@ -587,6 +588,18 @@ def decide(
             and call_chips >= max(int(pot * 0.22), 1)):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: ace broadway on paired board — fold")
+
+    # EP/MP suited broadway on paired runout — JTs UTG −30 on 5443 (HL R19 #02).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP") and not in_position
+            and hc in _EP_SUITED_BROADWAY_TRAP
+            and _board_is_paired(board)
+            and len(board) >= 4
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.22), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP suited broadway paired — fold")
 
     # SB/BB/EP/CO small pocket under board ace — 55 BB −225 (HL R14 #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
@@ -2438,6 +2451,14 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
 
     if (position in ("UTG", "MP", "CO")
             and _hero_ace_broadway_vulnerable_on_paired_board(hole, board, hand_class)
+            and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("UTG", "MP") and not in_position
+            and hand_class in _EP_SUITED_BROADWAY_TRAP
+            and _board_is_paired(board)
+            and len(board) >= 4
             and call_chips >= max(int(pot * 0.22), 1)
             and "fold" in available):
         return "fold", None
