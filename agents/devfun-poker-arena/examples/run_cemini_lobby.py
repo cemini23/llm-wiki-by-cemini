@@ -676,7 +676,7 @@ def run_lobby(args: argparse.Namespace) -> int:
                     lead_protect = bool(st.get("lead_protect"))
                     first_protect = bool(st.get("first_protect"))
                     placement_protect = bool(st.get("placement_protect"))
-                placement_chase = bool(st.get("placement_chase"))
+                    placement_chase = bool(st.get("placement_chase"))
                     qual_status = st
                 else:
                     refresh_qualification()
