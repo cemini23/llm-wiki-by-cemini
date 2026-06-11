@@ -719,6 +719,17 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: IP weak ace-high paired — fold")
 
+    # CO/BTN weak kicker top pair on broadway flop — T4o CO −10 on TQ6 (HL R18 #02).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "BTN")
+            and _board_broadway_heavy_flop(board)
+            and _weak_kicker_top_pair(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.15), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: weak top pair broadway flop — fold")
+
     # CO weak connector offsuit — never open or call preflop (98o CO −100 HL R11 #01).
     if (street == "Preflop" and position == "CO" and hc in _CO_WEAK_CONNECTOR
             and "fold" in available):
@@ -1523,6 +1534,15 @@ def _weak_ace_vulnerable_on_paired_board(hole: list[str], board: list[str], hc: 
     if not _weak_ace_offsuit(hc) or not _board_is_paired(board):
         return False
     return not _hero_has_ace_on_paired_ace_board(hole, board)
+
+
+def _board_broadway_heavy_flop(board: list[str]) -> bool:
+    """Flop top card Q+ — T4o CO −10 on TQ6 (HL R18 #02)."""
+    if len(board) < 3:
+        return False
+    branks = [c[0].upper() for c in board[:3]]
+    top = max(branks, key=lambda r: _RANKS.index(r))
+    return _RANKS.index(top) >= _RANKS.index("Q")
 
 
 def _hero_pairs_board_rank(hole: list[str], board: list[str]) -> bool:
@@ -2441,6 +2461,13 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
 
     if (position in ("CO", "BTN")
             and _ip_weak_ace_ace_high_paired(hole, board, hand_class)
+            and call_chips >= max(int(pot * 0.15), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("CO", "BTN")
+            and _board_broadway_heavy_flop(board)
+            and _weak_kicker_top_pair(hole, board)
             and call_chips >= max(int(pot * 0.15), 1)
             and "fold" in available):
         return "fold", None

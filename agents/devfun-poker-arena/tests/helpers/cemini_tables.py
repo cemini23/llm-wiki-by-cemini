@@ -743,6 +743,29 @@ def sb_a6o_vs_shove(*, shove_to: int = 1000, hero_stack: int = 1000) -> dict:
     )
 
 
+def co_t4o_broadway_flop(*, villain_bet: int = 10, pot: int = 40) -> dict:
+    """T4o CO flop top pair weak kicker — HL R18 analyze #02 (−10 on TQ6)."""
+    return six_max_table(
+        name="co_t4o_broadway_flop",
+        hero_seat=6,
+        button_seat=1,
+        street="Flop",
+        board=["Td", "Qh", "6h"],
+        pot=pot,
+        hero_hole=["4d", "Ts"],
+        hero_stack=300,
+        hero_bet=0,
+        villain_bets={5: villain_bet},
+        stacks={6: 300},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def co_a8o_paired_river(*, villain_bet: int = 100, pot: int = 200) -> dict:
     """A8o CO ace-high on paired runout — HL R16 analyze #01 (−100 on 9669JQh)."""
     return six_max_table(
