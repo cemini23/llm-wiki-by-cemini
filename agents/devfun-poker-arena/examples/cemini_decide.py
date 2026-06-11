@@ -246,6 +246,7 @@ def decide(
     lead_protect = bool(ctx.get("lead_protect"))
     first_protect = bool(ctx.get("first_protect"))
     placement_protect = bool(ctx.get("placement_protect"))
+    placement_chase = bool(ctx.get("placement_chase"))
     eval_panel = bool(ctx.get("eval_panel_mode"))
     ko_survival = bool(ctx.get("ko_survival_lane"))
     lane_tight = (
@@ -289,6 +290,8 @@ def decide(
         margins = _merge_margins(margins, {"fold_slack_delta": 0.02, "call_margin_delta": 0.02})
     elif placement_protect:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.03, "call_margin_delta": 0.03})
+    elif placement_chase:
+        margins = _merge_margins(margins, {"fold_slack_delta": -0.02, "call_margin_delta": -0.02})
     style_ov = ctx.get("hl_style_overrides") or {}
     if style_ov:
         tweak: dict[str, float] = {}

@@ -59,6 +59,8 @@ set_kv AGENT_VERSION "\${AGENT_VERSION}"
 # Tournament = placement EV; not eval-panel self-play gate or jackpot volume chase.
 set_kv CEMINI_EVAL_PANEL_GATE 0
 set_kv CEMINI_TOURNAMENT_MODE 1
+set_kv CEMINI_PRIZE_CUTOFF_RANK 10
+set_kv CEMINI_QUAL_CUTOFF_RANK 10
 set_kv CEMINI_STAGGER_LOCKS 0
 set_kv CEMINI_QUAL_BUFFER_CHIPS 999999
 set_kv CEMINI_LEAD_BUFFER_CHIPS 999999

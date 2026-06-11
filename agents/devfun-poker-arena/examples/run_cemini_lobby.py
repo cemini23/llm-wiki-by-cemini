@@ -114,6 +114,8 @@ def _apply_competition_posture(competition_id: str) -> None:
     ):
         os.environ.update({
             "CEMINI_TOURNAMENT_MODE": "1",
+            "CEMINI_PRIZE_CUTOFF_RANK": "10",
+            "CEMINI_QUAL_CUTOFF_RANK": "10",
             "JACKPOT_ROYAL_ENABLED": "0",
             "JACKPOT_ROYAL_SHOWDOWN": "0",
             "JACKPOT_27_HUNT_ENABLED": "0",
@@ -323,6 +325,7 @@ def run_lobby(args: argparse.Namespace) -> int:
     last_qual_check_at = 0.0
     qual_protect = False
     placement_protect = False
+    placement_chase = False
     lead_protect = False
     first_protect = False
     qual_status: dict = {}
@@ -508,7 +511,7 @@ def run_lobby(args: argparse.Namespace) -> int:
 
         def refresh_qualification(force: bool = False) -> None:
             nonlocal last_qual_check_at, qual_protect, lead_protect, first_protect
-            nonlocal placement_protect, qual_status
+            nonlocal placement_protect, placement_chase, qual_status
             now = time.time()
             if not force and (now - last_qual_check_at) < QUAL_STATUS_INTERVAL_S:
                 return
@@ -520,6 +523,7 @@ def run_lobby(args: argparse.Namespace) -> int:
                 lead_protect = bool(st.get("lead_protect"))
                 first_protect = bool(st.get("first_protect"))
                 placement_protect = bool(st.get("placement_protect"))
+                placement_chase = bool(st.get("placement_chase"))
                 lock_note = ""
                 if st.get("max_playable_chips") is not None:
                     lock_note = (
@@ -553,9 +557,17 @@ def run_lobby(args: argparse.Namespace) -> int:
                     )
                 elif placement_protect:
                     print(
-                        f"[cemini-lobby] PLACEMENT protect ON "
+                        f"[cemini-lobby] MONEY ZONE protect ON "
+                        f"(top {st.get('prize_cutoff_rank', 10)}) "
                         f"rank={st.get('rank')} chips={st.get('chips')} "
                         f"buffer=+{st.get('buffer_chips')} vs #{st.get('cutoff_chips')}"
+                    )
+                elif placement_chase:
+                    print(
+                        f"[cemini-lobby] CHASE zone "
+                        f"(need top {st.get('prize_cutoff_rank', 10)} for prize) "
+                        f"rank={st.get('rank')} chips={st.get('chips')} "
+                        f"gap to bubble={st.get('buffer_chips')}"
                     )
                 elif st.get("rank") is not None:
                     print(
@@ -664,6 +676,7 @@ def run_lobby(args: argparse.Namespace) -> int:
                     lead_protect = bool(st.get("lead_protect"))
                     first_protect = bool(st.get("first_protect"))
                     placement_protect = bool(st.get("placement_protect"))
+                placement_chase = bool(st.get("placement_chase"))
                     qual_status = st
                 else:
                     refresh_qualification()
@@ -681,6 +694,8 @@ def run_lobby(args: argparse.Namespace) -> int:
                     ctx["first_protect"] = True
                 if placement_protect:
                     ctx["placement_protect"] = True
+                if placement_chase:
+                    ctx["placement_chase"] = True
                 if is_kill_switch_active():
                     ctx["kill_switch"] = True
                 if table_comp == competition_id and _ko_survival_lane(state, qual_status):

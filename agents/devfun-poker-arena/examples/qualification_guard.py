@@ -5,10 +5,21 @@ import os
 from typing import Any
 
 DEFAULT_CUTOFF_RANK = 20
+DEFAULT_PRIZE_CUTOFF_RANK = 10  # S1 tournament pays top 10 (not playground qual top 20)
 
 
 def cutoff_rank_threshold() -> int:
     return max(1, _safe_int(os.environ.get("CEMINI_QUAL_CUTOFF_RANK"), DEFAULT_CUTOFF_RANK))
+
+
+def prize_cutoff_rank_threshold() -> int:
+    """Prize-money bubble rank (tournament S1: top 10 earns; top 20 is meaningless)."""
+    raw = os.environ.get("CEMINI_PRIZE_CUTOFF_RANK")
+    if raw is not None and str(raw).strip() != "":
+        return max(1, _safe_int(raw, DEFAULT_PRIZE_CUTOFF_RANK))
+    if tournament_mode_enabled():
+        return DEFAULT_PRIZE_CUTOFF_RANK
+    return cutoff_rank_threshold()
 DEFAULT_BUFFER_CHIPS = 1000  # chips above rank-20 floor before protect mode
 DEFAULT_LEAD_RANK = 5
 DEFAULT_LEAD_BUFFER_CHIPS = 3000  # extra cushion before lead-protect tier
@@ -233,6 +244,8 @@ def fetch_qualification_status(
         "lead_protect": False,
         "first_protect": False,
         "placement_protect": False,
+        "placement_chase": False,
+        "prize_cutoff_rank": prize_cutoff_rank_threshold(),
         "rank": None,
         "chips": None,
         "cutoff_chips": None,
@@ -260,10 +273,12 @@ def fetch_qualification_status(
     out["rank"] = rank
     out["chips"] = chips
 
+    prize_cut = prize_cutoff_rank_threshold()
+    floor_rank = prize_cut if tournament_mode_enabled() else cutoff_rank
     try:
         lb = client.get(
             f"/competition/leaderboard?competitionId={competition_id}"
-            f"&limit=1&offset={max(cutoff_rank - 1, 0)}"
+            f"&limit=1&offset={max(floor_rank - 1, 0)}"
         )
         cutoff_rows = lb.get("data") or []
         cutoff_chips = cutoff_rows[0].get("totalScore") if cutoff_rows else None
@@ -271,6 +286,7 @@ def fetch_qualification_status(
         cutoff_chips = None
 
     out["cutoff_chips"] = cutoff_chips
+    out["prize_cutoff_rank"] = prize_cut
     if rank is None or chips is None or cutoff_chips is None:
         return out
 
@@ -279,9 +295,11 @@ def fetch_qualification_status(
 
     if tournament_mode_enabled():
         out["lock_tier"] = "tournament"
-        # Money zone (rank inside cutoff, chips above floor): lane_tight without chip locks.
-        if int(rank) <= cutoff_rank and buffer > 0:
+        # Money zone: rank inside top-N prize bubble AND chips above Nth-place score.
+        if int(rank) <= prize_cut and buffer > 0:
             out["placement_protect"] = True
+        elif int(rank) > prize_cut:
+            out["placement_chase"] = True
         return out
 
     if buffer >= buffer_chips and int(rank) <= cutoff_rank:
