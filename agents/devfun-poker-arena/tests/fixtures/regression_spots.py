@@ -46,6 +46,7 @@ from tests.helpers.cemini_tables import (
     ep_oop_postflop_weak,
     mp_a9o_second_pair_river,
     mp_ak_paired_river,
+    mp_ak_river_stackoff_r24,
     mp_99_ace_paired_river,
     mp_t6o_paired_river,
     mp_t4o_river_leak,
@@ -543,6 +544,14 @@ def regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="MP AK on paired runout — fold vs bet.",
+        ),
+        RegressionSpot(
+            id="prod_ak_mp_river_stackoff_r24",
+            source="HL R24 analyze #01 — AK MP −2203 on Qh8d3d2cKd",
+            table=mp_ak_river_stackoff_r24(),
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="MP OOP AK single pair vs stack-off river — fold (MC overcalls).",
         ),
         RegressionSpot(
             id="prod_99_mp_ace_paired_river",

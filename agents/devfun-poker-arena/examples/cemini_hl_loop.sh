@@ -35,6 +35,14 @@ fi
 cd "$(dirname "$0")/.."
 AGENT_DIR="$(pwd)"
 
+# Resolve S1_TOURNAMENT_COMP / lobby IDs from local .env when not exported.
+if [[ -f "${AGENT_DIR}/.env" ]]; then
+  set -a
+  # shellcheck disable=SC1091
+  source "${AGENT_DIR}/.env" 2>/dev/null || true
+  set +a
+fi
+
 HOST="${CEMINI_PROD_HOST:-cemini-prod}"
 REMOTE_DIR="/opt/devfun-poker-arena"
 # S1 tournament primary wins over lobby/S2 when multi-comp oracle is configured.
@@ -45,7 +53,7 @@ from multi_comp_registry import primary_competition_id
 print(primary_competition_id())
 " 2>/dev/null || true)"
 fi
-MATCH="${MATCH:-${ARENA_LOBBY_COMPETITION_ID:-cmq57o53r0bhw18g23qkydb08}}"
+MATCH="${MATCH:-${S1_TOURNAMENT_COMP:-${ARENA_LOBBY_COMPETITION_ID:-cmq57o53r0bhw18g23qkydb08}}}"
 TOP="${HL_ANALYZE_TOP:-15}"
 ROUND="${HL_ROUND:-1}"
 REPORTS="${AGENT_DIR}/reports/hl-loop"

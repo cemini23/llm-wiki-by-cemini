@@ -178,11 +178,11 @@ def primary_competition_id(cfg: Optional[dict] = None) -> str:
     cid = (primary.get("competition_id") or "").strip()
     if cid:
         return cid
-    env = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
-    if env:
-        return env
-    env = os.environ.get("CEMINI_HL_PRIMARY_COMP", "").strip()
-    return env
+    for key in ("S1_TOURNAMENT_COMP", "CEMINI_HL_PRIMARY_COMP", "ARENA_LOBBY_COMPETITION_ID"):
+        env = os.environ.get(key, "").strip()
+        if env:
+            return env
+    return ""
 
 
 def all_comp_entries(cfg: dict[str, Any]) -> list[dict[str, Any]]:

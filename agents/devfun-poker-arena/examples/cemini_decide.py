@@ -620,6 +620,20 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: ace broadway on paired board — fold")
 
+    # MP/UTG OOP AK — single pair vs stack-off river (R24 #01 −2203 on Q823K).
+    if (street == "River" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP") and not in_position
+            and _hero_ak_oop_river_single_pair_only(hole, board, hc)
+            and not _board_is_paired(board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(
+                int(_effective_stack_chips(table, max_playable) * 0.32),
+                int(pot * 0.35),
+                1,
+            )):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: OOP AK single pair — fold stack-off")
+
     # EP/MP suited broadway on paired runout — JTs UTG −30 on 5443 (HL R19 #02).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and position in ("UTG", "MP") and not in_position
@@ -1648,6 +1662,24 @@ def _hero_ace_broadway_vulnerable_on_paired_board(
         if bc.get(r, 0) >= 2:
             return False
     return True
+
+
+def _hero_ak_oop_river_single_pair_only(
+    hole: list[str], board: list[str], hc: str,
+) -> bool:
+    """AK with only one pair on non-paired boards — not trips/two-pair (R24 #01 −2203)."""
+    if hc not in {"AKs", "AKo"} or len(board) < 5:
+        return False
+    if _hero_pocket_set(hole, board) or _hero_boat_or_quads_on_paired_board(hole, board):
+        return False
+    hranks = [c[0].upper() for c in hole]
+    branks = [c[0].upper() for c in board]
+    bc = Counter(branks)
+    for r in hranks:
+        if bc.get(r, 0) >= 2:
+            return False
+    pair_hits = sum(1 for r in hranks if r in branks)
+    return pair_hits == 1
 
 
 def _hero_vulnerable_pocket_on_ace_paired_board(
