@@ -167,12 +167,66 @@ def _join(client: ArenaClient, competition_id: str, tx_hash: Optional[str] = Non
     return client.post("/texas/join", body)
 
 
+def _wallet_native_balance(client: ArenaClient, chain: str = "monad") -> Optional[dict]:
+    try:
+        body = client.get(f"/agent/wallet?chain={chain}")
+        if isinstance(body, dict):
+            return body.get("nativeBalance") if isinstance(body.get("nativeBalance"), dict) else None
+    except ArenaError:
+        return None
+    return None
+
+
+def _payment_amount_insufficient(wallet_bal: Optional[dict], payment: dict) -> bool:
+    """Heuristic: compare wei strings when both sides look like integer token amounts."""
+    if not wallet_bal or not payment:
+        return False
+    try:
+        have = int(str(wallet_bal.get("value") or "0"))
+        need = int(str(payment.get("amount") or "0"))
+    except (TypeError, ValueError):
+        return False
+    # Arena rebuy fees are whole-MON strings (e.g. "250"); wallet value is wei.
+    if need > 0 and need < 10_000 and have < need * 10 ** 15:
+        return True
+    return have < need
+
+
+def _mark_rebuy_fund_block(state: dict, reason: str, hours: float = 6.0) -> None:
+    state["rebuy_fund_blocked_until"] = time.time() + hours * 3600.0
+    state["rebuy_fund_block_reason"] = reason[:500]
+
+
+def _rebuy_fund_blocked(state: dict) -> bool:
+    until = state.get("rebuy_fund_blocked_until")
+    if until is None:
+        return False
+    try:
+        return time.time() < float(until)
+    except (TypeError, ValueError):
+        return False
+
+
 def _pay_entry_fee(client: ArenaClient, payment: dict) -> str:
     """Pay competition entry from agent wallet; return txHash."""
     dest = payment.get("to")
     amt = payment.get("amount")
     if not dest or not amt:
         raise ValueError(f"invalid payment requirements: {payment}")
+    chain = payment.get("chain") or "monad"
+    bal = _wallet_native_balance(client, chain)
+    if _payment_amount_insufficient(bal, payment):
+        have_fmt = bal.get("formatted") if bal else "?"
+        raise ArenaError(
+            402,
+            {
+                "error": "wallet_underfunded",
+                "message": (
+                    f"wallet native {have_fmt} {payment.get('currency') or 'MON'} "
+                    f"< rebuy/entry fee {amt} — fund agent wallet then retry"
+                ),
+            },
+        )
     resp = client.post("/agent/wallet/transfer/native", {
         "chain": payment.get("chain") or "monad",
         "to": dest,
@@ -264,11 +318,23 @@ def _rebuy_with_payment(
     raise RuntimeError("rebuy with payment failed")
 
 
-def _try_rebuy(client: ArenaClient, competition_id: str) -> bool:
+def _try_rebuy(
+    client: ArenaClient,
+    competition_id: str,
+    state: Optional[dict] = None,
+    save_state_fn=None,
+) -> bool:
     """Rebuy chips when table buy-in exceeds stack. Returns True if rebuy attempted."""
+    if state is not None and _rebuy_fund_blocked(state):
+        return False
     try:
         resp = client.post("/texas/rebuy", {"competitionId": competition_id})
         print(f"[cemini-lobby] rebuy: {json.dumps(resp, sort_keys=True)[:300]}")
+        if state is not None:
+            state.pop("rebuy_fund_blocked_until", None)
+            state.pop("rebuy_fund_block_reason", None)
+            if save_state_fn:
+                save_state_fn(state)
         return True
     except ArenaError as e:
         if e.status != 402:
@@ -278,10 +344,42 @@ def _try_rebuy(client: ArenaClient, competition_id: str) -> bool:
         try:
             resp = _rebuy_with_payment(client, competition_id, pay)
             print(f"[cemini-lobby] rebuy after pay: {json.dumps(resp, sort_keys=True)[:300]}")
+            if state is not None:
+                state.pop("rebuy_fund_blocked_until", None)
+                state.pop("rebuy_fund_block_reason", None)
+                if save_state_fn:
+                    save_state_fn(state)
             return True
         except ArenaError as pay_err:
             print(f"[cemini-lobby] rebuy pay failed: {pay_err.status} {pay_err.body}",
                   file=sys.stderr)
+            err_body = pay_err.body if isinstance(pay_err.body, dict) else {}
+            if pay_err.status in (402, 503):
+                bal = _wallet_native_balance(client, pay.get("chain") or "monad")
+                if bal:
+                    print(
+                        f"[cemini-lobby] wallet native {bal.get('formatted')} "
+                        f"{pay.get('currency') or 'MON'} — fee amount {pay.get('amount')}",
+                        file=sys.stderr,
+                    )
+                if state is not None and (
+                    err_body.get("error") in (
+                        "NATIVE_TRANSFER_PREFLIGHT_FAILED",
+                        "wallet_underfunded",
+                    )
+                    or pay_err.status == 402
+                ):
+                    _mark_rebuy_fund_block(
+                        state,
+                        str(err_body.get("message") or err_body.get("error") or pay_err.body),
+                    )
+                    if save_state_fn:
+                        save_state_fn(state)
+                    print(
+                        "[cemini-lobby] rebuy fund block — pausing rebuy attempts for 6h "
+                        "(fund wallet or manual Arena rebuy)",
+                        file=sys.stderr,
+                    )
             return False
         except Exception as exc:
             print(f"[cemini-lobby] rebuy pay error: {exc}", file=sys.stderr)
@@ -363,11 +461,16 @@ def run_lobby(args: argparse.Namespace) -> int:
             big_blind = int(os.environ.get("ARENA_PLAYGROUND_BIG_BLIND") or 2)
             # API: rebuy only when total chips < bigBlindChips (not merely < table buy-in).
             if hero_stack is not None and hero_stack < big_blind:
-                print(
-                    f"[cemini-lobby] stack {hero_stack} < BB {big_blind} — rebuy attempt",
-                    file=sys.stderr,
-                )
-                if _try_rebuy(client, competition_id):
+                if _rebuy_fund_blocked(state):
+                    if not state.get("rebuy_fund_block_logged"):
+                        print(
+                            f"[cemini-lobby] stack {hero_stack} < BB {big_blind} — "
+                            f"rebuy paused: {state.get('rebuy_fund_block_reason', '?')}",
+                            file=sys.stderr,
+                        )
+                        state["rebuy_fund_block_logged"] = True
+                        save_state(state)
+                elif _try_rebuy(client, competition_id, state, save_state):
                     refresh_qualification(force=True)
                     try:
                         hero_stack = int(qual_status.get("chips") or hero_stack)
@@ -489,7 +592,7 @@ def run_lobby(args: argparse.Namespace) -> int:
                 if e.status == 409 and (
                     "not enough chips" in err_text or "insufficient_chips" in err_text
                 ):
-                    if _try_rebuy(client, competition_id):
+                    if _try_rebuy(client, competition_id, state, save_state):
                         refresh_qualification(force=True)
                         last_join_at = 0.0
                         in_queue_only = False
