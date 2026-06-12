@@ -17,9 +17,10 @@ related:
   - concepts/nwp-model-stack-polymarket-weather.md
   - concepts/nwp-bias-correction-ml-weather-trading.md
   - concepts/polymarket-lp-weather-market-discovery.md
+  - sources/arxiv-resa-convlstm-nwp-bias-2504.15322-2026-06-11.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-26
+updated: 2026-06-11
 ---
 
 ## Relations
@@ -35,6 +36,7 @@ updated: 2026-05-26
 - @concepts/nwp-model-stack-polymarket-weather.md — K66: when to use ICON-D2 EPS etc. for threshold binaries
 - @sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md — K66: distribution vs deterministic for PM weather
 - @concepts/polymarket-lp-weather-market-discovery.md — LP on temperature bins (orthogonal to ensemble edge)
+- @sources/arxiv-resa-convlstm-nwp-bias-2504.15322-2026-06-11.md — K111 ReSA-ConvLSTM ECMWF→ERA5 bias correction (~20% RMSE gain)
 
 ## Raw Concept
 

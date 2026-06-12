@@ -101,6 +101,8 @@ related:
   - entities/frameworks/autoagent.md
   - concepts/context-compression-resume-pattern.md
   - sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md
+  - sources/arxiv-weavebench-2606.09426-2026-06-11.md
+  - sources/arxiv-siga-scientific-sim-adapters-2606.09774-2026-06-11.md
   - concepts/ai-organisation-design.md
   - sources/omc-talent-container-paper.md
   - concepts/high-signal-paper-patterns.md

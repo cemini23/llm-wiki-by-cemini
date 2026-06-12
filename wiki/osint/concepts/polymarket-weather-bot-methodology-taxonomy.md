@@ -15,6 +15,7 @@ related:
   - entities/tools/hermes-agent.md
   - entities/tools/clawdbot.md
   - sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md
+  - sources/arxiv-resa-convlstm-nwp-bias-2504.15322-2026-06-11.md
 maturity: validated
 created: 2026-05-27
 updated: 2026-05-29

@@ -1264,6 +1264,16 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Covariance regret audit (2606.08791)](sources/arxiv-covariance-regret-algorithmic-audit-2606-08791-2026-06-09.md) — Aldridge black-box strategy audit. — source, arxiv, k107
 - [Instrumental probability — hard to predict (2606.08209)](sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md) — `[VALIDATED 2026-06-10]` P–Q wedge, capacity layer, net exploitability vs random-walk sloppiness. — source, arxiv, k110
 - [TT-DAC-PS optimal execution (2606.08379)](sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md) — `[VALIDATED 2026-06-10]` RL IS% benchmarks on equity LOB; twin-target TD3 + adaptive OU. — source, arxiv, execution, k110
+- [AS/CJ forced uniqueness (2606.01477)](sources/arxiv-as-cj-forced-uniqueness-2606.01477-2026-06-11.md) — `[VALIDATED 2026-06-11]` ϕ=γσ²/2; CJ as AS expansion. — source, arxiv, market-making, k111
+- [GIFT FinRL interface (2606.08450)](sources/arxiv-gift-llm-state-reward-2606.08450-2026-06-11.md) — `[VALIDATED 2026-06-11]` LLM-guided state/reward; repo NO-GO. — source, arxiv, financial-rl, k111
+- [FPQC-SAC quantum FinRL (2606.10448)](sources/arxiv-fpqc-sac-quantum-finrl-2606.10448-2026-06-11.md) — `[DRAFT 2026-06-11]` Financial Entropy Trap; repo NO-GO. — source, arxiv, financial-rl, k111
+- [WeaveBench hybrid CUA (2606.09426)](sources/arxiv-weavebench-2606.09426-2026-06-11.md) — `[VALIDATED 2026-06-11]` GUI+CLI long-horizon; trajectory judge. — source, arxiv, agent-harness, k111
+- [SIGA scientific sim adapters (2606.09774)](sources/arxiv-siga-scientific-sim-adapters-2606.09774-2026-06-11.md) — `[VALIDATED 2026-06-11]` DSL grounding adapter pattern. — source, arxiv, coding-agents, k111
+- [ReSA-ConvLSTM NWP bias (2504.15322)](sources/arxiv-resa-convlstm-nwp-bias-2504.15322-2026-06-11.md) — `[DRAFT 2026-06-11]` ECMWF→ERA5 ~20% RMSE. — source, arxiv, weather, k111
+- [MIT HFT system design thesis (2009)](sources/mit-hft-system-design-process-2009.md) — `[DRAFT 2026-06-11]` backtest/process management REFERENCE. — source, thesis, hft, k111
+- [LLM-guided financial RL interface](concepts/llm-guided-financial-rl-interface.md) — K111 GIFT + FPQC-SAC cluster. — concept, financial-rl, k111
+- [GIFT FinRL repo](entities/tools/gift-finrl.md) — Phase-0 NO-GO. — tool, financial-rl, k111
+- [FPQC-SAC repo](entities/tools/fpqc-sac.md) — Phase-0 NO-GO. — tool, financial-rl, k111
 - [Less Context, Better Agents (2606.10209)](sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md) — `[VALIDATED 2026-06-10]` MCP context prune N=5 + summary W=3 beats full history. — source, arxiv, llm-agents, k110
 - [Instrumental probability and learnable alpha limits](concepts/instrumental-probability-learnable-alpha.md) — K110 synthesis: no-arbitrage vs efficiency vs net exploitability; capacity-scaling discipline. — concept, quant-finance, k110
 - [BAVAR-BLED portfolio DRL (2606.09104)](sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md) — regime + fat-tail PO. — source, arxiv, k107

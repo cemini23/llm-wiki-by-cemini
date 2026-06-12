@@ -16,6 +16,7 @@ related:
   - sources/moe-surpass-dense-equal-resource-li-2026.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - sources/training-free-grpo-cai-2025.md
+  - sources/mit-hft-system-design-process-2009.md
   - sources/llms-corrupt-documents-laban-2026.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
   - sources/gemini-dr-wave4b-osint-2026-04-29.md

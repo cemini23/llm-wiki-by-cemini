@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-12] ingest | K111 — full inbox (7 PDFs)
+
+- **Sources (7)** — 4 arXiv digest (GIFT 2606.08450, WeaveBench 2606.09426, SIGA 2606.09774, FPQC-SAC 2606.10448) + AS/CJ forced uniqueness 2606.01477 + ReSA-ConvLSTM 2504.15322 + MIT HFT thesis 2009
+- **Concepts (1 new + 3 updates)** — `llm-guided-financial-rl-interface`; `avellaneda-stoikov-market-making-baseline`, `llm-agent-systems`, `ensemble-weather-forecasting`
+- **Entities (2)** — `gift-finrl`, `fpqc-sac` (Phase-0 NO-GO both)
+- **Phase-0** — `scripts/adopt_k111_phase0.sh`
+- **Briefs (2 prod)** — gin-style S1 deploy; WC kickoff LP safety + cross-venue → scp
+- **Raw** — 7 PDFs → librarian; inbox cleared
+
 ## [2026-06-10] ingest | K110 — daily digest full ingest (3 arXiv)
 
 - **Sources (3)** — 2606.08209 instrumental probability / P–Q wedge; 2606.08379 TT-DAC-PS optimal execution; 2606.10209 MCP context engineering (Microsoft)

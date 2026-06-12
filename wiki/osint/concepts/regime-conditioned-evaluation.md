@@ -16,6 +16,7 @@ related:
   - sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md
   - sources/evonash-marl.md
   - concepts/prediction-market-information-leakage-score.md
+  - sources/mit-hft-system-design-process-2009.md
   - sources/test-time-adaptation-for-non-stationary-time-series.md
   - concepts/markov-regime-switching-models.md
   - concepts/gmm-factor-lens-regime-modeling.md

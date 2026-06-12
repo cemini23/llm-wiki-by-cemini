@@ -4,6 +4,7 @@ type: concept
 tags: [concept, market-making, quant-finance, k98]
 keywords: [avellaneda-stoikov, reservation-price, spread, inventory-risk, gamma, logit]
 related:
+  - sources/arxiv-as-cj-forced-uniqueness-2606.01477-2026-06-11.md
   - sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md
   - sources/stanford-ml-orderbook-mm-gr4-2017.md
   - sources/trading-posts-compilation-6-2026-06-08.md
@@ -15,11 +16,12 @@ related:
   - entities/people/ruujss.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-08
+updated: 2026-06-11
 ---
 
 ## Relations
 
+- @sources/arxiv-as-cj-forced-uniqueness-2606.01477-2026-06-11.md — K111 forced ϕ=γσ²/2; CJ as AS second-order expansion
 - @sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md — implementation reference (Stanford GR5)
 - @sources/stanford-ml-orderbook-mm-gr4-2017.md — sibling Stanford project: OBP ML skew vs A-S inventory skew
 - @sources/trading-posts-compilation-6-2026-06-08.md — K106 @RuujSs production adaptation table
@@ -49,6 +51,10 @@ Canonical academic MM model for spread capture with inventory penalty; ingested 
 | Continuous Brownian mid | Circuit-breaker layer outside core AS math | Pause quotes on discontinuous jumps |
 
 Adaptive wrapper pattern: keep core reservation price + spread formulas intact; layer vol feed + circuit breaker separately — matches Cemini separation of **math core** vs **ops risk shell**.
+
+### Parameter forcing (K111 — Feys 2606.01477)
+
+Desk calibrating Cartea–Jaimungal **ϕ** and Avellaneda–Stoikov **γ** independently should run consistency check **γ = 2ϕ/σ²**. Terminal liquidation coefficient **α = ½ L″(0)** is microstructure-derived, not a taste parameter. Over-parametrizing (ϕ, α, γ) as three free knobs is a common LP config smell.
 
 ## Snippets
 

@@ -16,6 +16,7 @@ related:
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
   - sources/trading-posts-2-time-series-openhuman-conflict-detector-lp-tactics-2026-05.md
+  - sources/arxiv-as-cj-forced-uniqueness-2606.01477-2026-06-11.md
   - concepts/polymarket-lp-weather-market-discovery.md
   - concepts/polymarket-lp-weather-guard.md
   - concepts/cemini-backtest-report-kit.md
