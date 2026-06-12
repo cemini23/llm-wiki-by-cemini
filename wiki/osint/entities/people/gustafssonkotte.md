@@ -19,10 +19,11 @@ related:
   - sources/trading-posts-compilation-31-2026-06-01.md
   - sources/trading-posts-compilation-17-2026-06-03.md
   - sources/trading-posts-compilation-8-2026-06-09.md
+  - sources/trading-posts-compilation-9-2026-06-12.md
   - entities/platforms/42-space.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-06-09
+updated: 2026-06-12
 ---
 
 ## Relations

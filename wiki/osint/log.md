@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-12] ingest | K112 — Posts.docx + 3 arXiv
+
+- **Sources (4)** — `trading-posts-compilation-9` (8 posts, sha `d8f7d4a6…`); PandaAI 2606.06823; CFD 2606.09084; AgentBeats 2606.13608
+- **Concepts (3 new + 5 updates)** — `context-fractured-decomposition-attacks`, `agentified-agent-assessment`, `strategy-half-life-live-monitoring`; `gustafssonkotte`, `llm-agent-systems`, `seclaw-agent-security-evaluation`, `conductor-orchestrator`, `regime-conditioned-evaluation`
+- **Entities (2)** — `agentbeats` (CONDITIONAL-GO); `pandaai` (REFERENCE)
+- **Phase-0** — `scripts/adopt_k112_phase0.sh`
+- **Prod briefs (2)** — PM UpDown log-chain reconciliation; MCP artifact provenance CFD → scp
+- **Raw** — Posts.docx + 3 PDFs → librarian; inbox cleared
+
 ## [2026-06-12] ingest | K111 — full inbox (7 PDFs)
 
 - **Sources (7)** — 4 arXiv digest (GIFT 2606.08450, WeaveBench 2606.09426, SIGA 2606.09774, FPQC-SAC 2606.10448) + AS/CJ forced uniqueness 2606.01477 + ReSA-ConvLSTM 2504.15322 + MIT HFT thesis 2009

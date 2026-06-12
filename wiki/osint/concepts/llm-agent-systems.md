@@ -103,6 +103,10 @@ related:
   - sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md
   - sources/arxiv-weavebench-2606.09426-2026-06-11.md
   - sources/arxiv-siga-scientific-sim-adapters-2606.09774-2026-06-11.md
+  - sources/arxiv-agentbeats-aaa-assessment-2606.13608-2026-06-12.md
+  - sources/arxiv-context-fractured-decomposition-cfd-2606.09084-2026-06-12.md
+  - concepts/agentified-agent-assessment.md
+  - concepts/context-fractured-decomposition-attacks.md
   - concepts/ai-organisation-design.md
   - sources/omc-talent-container-paper.md
   - concepts/high-signal-paper-patterns.md

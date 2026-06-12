@@ -6,6 +6,7 @@ keywords: [2504.15322, ReSA-ConvLSTM, ECMWF, ERA5, bias-correction, weather-fore
 related:
   - concepts/ensemble-weather-forecasting.md
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
+  - sources/trading-posts-compilation-9-2026-06-12.md
 maturity: draft
 read_status: skimmed
 created: 2026-06-11

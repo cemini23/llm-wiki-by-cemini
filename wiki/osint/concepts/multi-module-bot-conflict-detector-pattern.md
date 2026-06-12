@@ -14,6 +14,7 @@ related:
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md
   - concepts/polymarket-btc-already-position-gate.md
   - sources/gustafssonkotte-cheat-code-position-already-2026-05-24.md
+  - sources/trading-posts-compilation-9-2026-06-12.md
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
   - entities/tools/claude-code-game-studios.md
   - concepts/production-trading-blind-spots.md

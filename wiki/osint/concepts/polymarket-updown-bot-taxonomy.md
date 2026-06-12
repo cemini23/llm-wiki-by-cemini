@@ -14,6 +14,7 @@ related:
   - concepts/multi-module-bot-conflict-detector-pattern.md
   - concepts/polymarket-sports-microstructure-bot-taxonomy.md
   - sources/gemini-sports-prediction-bot-pitfalls-2026-05-29.md
+  - sources/trading-posts-compilation-9-2026-06-12.md
   - concepts/polymarket-lp-rewards-farming.md
   - entities/people/gustafssonkotte.md
   - concepts/polymarket-three-quadrant-blacklist-microtrend.md

@@ -10,6 +10,8 @@ related:
   - concepts/polymarket-microstructure-findings.md
   - sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md
   - concepts/market-informedness-market-making.md
+  - concepts/strategy-half-life-live-monitoring.md
+  - sources/arxiv-pandaai-neuro-symbolic-quant-2606.06823-2026-06-12.md
 maturity: draft
 created: 2026-06-10
 updated: 2026-06-10

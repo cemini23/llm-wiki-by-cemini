@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-12 — K112)
+
+- **K112 ingest (2026-06-12)** — Posts.docx (8) + 3 arXiv. **4 sources + 3 concepts + 5 updates + 2 tool entities.** CFD provenance-gap attacks; AgentBeats AAA eval; PandaAI neuro-symbolic REFERENCE; Gustafsson log-vs-chain reconciliation. **Phase-0:** `adopt_k112_phase0.sh` (AgentBeats CONDITIONAL-GO). **Prod briefs scp'd (2):** PM UpDown reconciliation telemetry; MCP artifact provenance CFD. Raw → librarian; inbox cleared.
+
 ## Current state (2026-06-11 — K111)
 
 - **K111 ingest (2026-06-11)** — Full inbox: 7 PDFs (4 digest arXiv + 3 backlog). **7 sources + 1 concept + 3 updates + 2 tool entities.** AS/CJ ϕ–γ forcing (2606.01477); GIFT + FPQC-SAC FinRL cluster (NO-GO repos); WeaveBench + SIGA agent eval/adapter patterns; ReSA-ConvLSTM weather bias; MIT HFT process thesis. **Poker:** gin-style S1 lane (`2785b1d`). **Phase-0:** `adopt_k111_phase0.sh` (GIFT + FPQC-SAC NO-GO). **Prod briefs scp'd (2):** gin-style S1 deploy; WC kickoff LP safety + cross-venue refresh. Raw → librarian; inbox cleared.

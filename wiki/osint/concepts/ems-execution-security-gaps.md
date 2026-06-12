@@ -12,6 +12,8 @@ related:
   - sources/arxiv-seclaw-spec-driven-agent-security-2606-02302-2026-06-04.md
   - concepts/interaction-native-knowledge-harness.md
   - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
+  - concepts/context-fractured-decomposition-attacks.md
+  - sources/arxiv-context-fractured-decomposition-cfd-2606.09084-2026-06-12.md
 maturity: validated
 created: 2026-06-03
 updated: 2026-06-04

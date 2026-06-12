@@ -9,6 +9,8 @@ related:
   - concepts/llm-agent-systems.md
   - entities/tools/gift-finrl.md
   - entities/tools/fpqc-sac.md
+  - entities/tools/pandaai.md
+  - sources/arxiv-pandaai-neuro-symbolic-quant-2606.06823-2026-06-12.md
 maturity: draft
 created: 2026-06-11
 updated: 2026-06-11

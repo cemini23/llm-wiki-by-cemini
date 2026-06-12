@@ -4,6 +4,7 @@ type: concept
 tags: [concept, validation, backtest, monte-carlo, permutation-test, overfitting, data-mining-bias, quant-validation, timothy-masters, polymarket, k56]
 keywords: [monte-carlo-permutation-test, mcpt, timothy-masters-2020, permutation-and-randomization-tests, alpha-vs-data-mining-bias, profit-factor, sharpe-ratio, walk-forward-overfitting, goodharts-law-validation-set, in-sample-out-of-sample, phosphenq]
 related:
+  - concepts/strategy-half-life-live-monitoring.md
   - sources/posts-prediction-markets-quant-frameworks-2026-05-21.md
   - concepts/event-based-prediction-market-ml.md
   - concepts/time-series-arima-garch-framework.md

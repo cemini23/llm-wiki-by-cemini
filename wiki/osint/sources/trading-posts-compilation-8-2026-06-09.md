@@ -5,6 +5,7 @@ tags: [source, trading-posts, polymarket, agent-harness, perps, world-cup-2026, 
 keywords: [godeyedotfun, omnifs, the-hive, bcherny, 42-space, arrakis, hyperliquid, lighter, wc-retail-hygiene]
 related:
   - sources/trading-posts-compilation-7-2026-06-09.md
+  - sources/trading-posts-compilation-9-2026-06-12.md
   - concepts/polymarket-retail-trading-discipline.md
   - concepts/perp-dex-price-discovery-lead-lag.md
   - entities/tools/omnifs.md

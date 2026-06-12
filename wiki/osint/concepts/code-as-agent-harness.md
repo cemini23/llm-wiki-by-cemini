@@ -20,6 +20,8 @@ related:
   - concepts/graphflow-verifiable-agent-workflows.md
   - sources/arxiv-weavebench-2606.09426-2026-06-11.md
   - sources/arxiv-siga-scientific-sim-adapters-2606.09774-2026-06-11.md
+  - concepts/agentified-agent-assessment.md
+  - sources/arxiv-agentbeats-aaa-assessment-2606.13608-2026-06-12.md
 
 maturity: draft
 created: 2026-05-21

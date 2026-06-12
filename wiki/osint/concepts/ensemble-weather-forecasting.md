@@ -18,6 +18,7 @@ related:
   - concepts/nwp-bias-correction-ml-weather-trading.md
   - concepts/polymarket-lp-weather-market-discovery.md
   - sources/arxiv-resa-convlstm-nwp-bias-2504.15322-2026-06-11.md
+  - sources/trading-posts-compilation-9-2026-06-12.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-06-11

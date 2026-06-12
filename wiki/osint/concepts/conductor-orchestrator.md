@@ -33,10 +33,12 @@ related:
   - sources/arxiv-adk-arena-agent-dev-kits-2606.05548-2026-06-06.md
   - sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md
   - concepts/context-compression-resume-pattern.md
+  - concepts/context-fractured-decomposition-attacks.md
+  - sources/arxiv-context-fractured-decomposition-cfd-2606.09084-2026-06-12.md
 maturity: validated
 hub: true
 created: 2026-05-01
-updated: 2026-06-10
+updated: 2026-06-12
 ---
 
 ## Relations
@@ -53,6 +55,7 @@ updated: 2026-06-10
 - @concepts/agent-team-five-gate-decision-memo.md — K98 five-gate org chart
 - @concepts/nemo-execution-aware-optimization-modeling.md — K98 sandboxed OR agents (REFERENCE)
 - @concepts/seclaw-agent-security-evaluation.md — K98 agent security eval (REFERENCE)
+- @concepts/context-fractured-decomposition-attacks.md — K112 provenance gap / CFD (artifact lineage)
 - @concepts/llm-agent-systems.md — Conductor is the orchestration layer for the LLM agent systems cluster.
 - @sources/arxiv-coordination-layer-multi-agent-2605-03310.md — argues coordination should be a separable, configurable architectural layer; Brier/Murphy evaluation method applicable to the conductor
 - @concepts/scatter-gather-topology.md — Conductor replaces manual scatter-gather topology selection with learned routing decisions.

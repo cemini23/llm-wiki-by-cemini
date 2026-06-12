@@ -17,6 +17,8 @@ related:
   - sources/evonash-marl.md
   - concepts/prediction-market-information-leakage-score.md
   - sources/mit-hft-system-design-process-2009.md
+  - concepts/strategy-half-life-live-monitoring.md
+  - sources/trading-posts-compilation-9-2026-06-12.md
   - sources/test-time-adaptation-for-non-stationary-time-series.md
   - concepts/markov-regime-switching-models.md
   - concepts/gmm-factor-lens-regime-modeling.md
