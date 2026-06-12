@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-12] trial | K113 laptop smoke — SkillClaw + Hermes + Orchestra inventory
+
+- **SkillClaw** — `pip install -e` + CLI PASS; `doctor hermes` blocked (no setup / no Hermes)
+- **hermes-workspace** — Node 24 + npm dry-run PASS; `hermes-agent` not installed
+- **AI-Research-SKILLs** — 98 skills inventoried; cybersec cherry-pick → `@cybersecurity-wiki/entities/tools/ai-research-skills.md`
+- **Report** — `.local/reports/k113-laptop-trial-2026-06-12.md`
+
 ## [2026-06-12] ingest | K113 — tool eval v5 (28 URLs) + K112 cross-wiki close-out
 
 - **Source (1)** — `multi-wiki-tool-eval-v5-k113` (sha `1e2475fc…`); 28 URLs; license spot-check 2026-06-12

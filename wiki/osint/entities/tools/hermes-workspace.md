@@ -37,4 +37,14 @@ Native web workspace for Hermes Agent: streaming chat, PTY terminal, memory brow
 
 **Phase-0:** `bash scripts/adopt_k113_phase0.sh` — clone + README install smoke.
 
+### Laptop trial (2026-06-12)
+
+| Check | Result |
+|-------|--------|
+| Node v24.13 | PASS (≥22) |
+| `npm install --dry-run` | PASS |
+| `hermes-agent` installed | **No** — UI start blocked until Nous installer runs |
+
+Report: `.local/reports/k113-laptop-trial-2026-06-12.md`
+
 **NO-GO:** prod `/opt/cemini`, 24/7 trading path, librarian replacement.

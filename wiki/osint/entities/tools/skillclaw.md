@@ -36,3 +36,13 @@ Post-task skill evolution for Hermes: deduplicate/merge `~/.hermes/skills` from 
 **Risks:** skill pollution if evolution loop lacks human veto; isolate trial skills dir.
 
 **Phase-0:** clone + README; no prod wiring.
+
+### Laptop trial (2026-06-12)
+
+| Check | Result |
+|-------|--------|
+| `pip install -e .` | PASS |
+| `skillclaw --help` | PASS |
+| `skillclaw doctor hermes` | BLOCKER — needs `skillclaw setup`; Hermes not installed |
+
+Report: `.local/reports/k113-laptop-trial-2026-06-12.md`
