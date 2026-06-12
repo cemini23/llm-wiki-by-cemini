@@ -18,6 +18,7 @@ related:
   - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
   - sources/tradingagents.md
   - "@ccc-wiki/sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md"
+  - sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-07

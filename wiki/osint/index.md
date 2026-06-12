@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **393 canonical stubs** (K107 +5 pages 2026-06-09; K106 +6 2026-06-08)
+Total: **400 canonical stubs** (K113 +7 pages 2026-06-12; K112 cross-wiki close-out)
 
 
 ### rl-marl (104)
@@ -1274,7 +1274,8 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [LLM-guided financial RL interface](concepts/llm-guided-financial-rl-interface.md) — K111 GIFT + FPQC-SAC cluster. — concept, financial-rl, k111
 - [GIFT FinRL repo](entities/tools/gift-finrl.md) — Phase-0 NO-GO. — tool, financial-rl, k111
 - [FPQC-SAC repo](entities/tools/fpqc-sac.md) — Phase-0 NO-GO. — tool, financial-rl, k111
-- [Trading posts compilation K112 (8 posts)](sources/trading-posts-compilation-9-2026-06-12.md) — `[DRAFT 2026-06-12]` Gustafsson log-chain; Horizon half-life; AlterEgo ReSA. — source, trading-posts, k112
+- [Trading posts compilation K112 (8 posts)](sources/trading-posts-compilation-9-2026-06-12.md) — `[VALIDATED 2026-06-12]` Gustafsson log-chain; Horizon half-life; cross-wiki briefs ingested. — source, trading-posts, k112
+- [Tool Evaluation v5 — 28-URL Hermes batch (K113)](sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md) — `[VALIDATED 2026-06-12]` 4 Adopt CONDITIONAL-GO; ConvLSTM weather repos Reject. — source, tool-evaluation, k113
 - [CFD attacks on tool agents (2606.09084)](sources/arxiv-context-fractured-decomposition-cfd-2606.09084-2026-06-12.md) — `[VALIDATED 2026-06-12]` provenance gap; +28pp jailbreak. — source, arxiv, agent-security, k112
 - [AgentBeats AAA assessment (2606.13608)](sources/arxiv-agentbeats-aaa-assessment-2606.13608-2026-06-12.md) — `[VALIDATED 2026-06-12]` judge agents via A2A+MCP. — source, arxiv, agent-eval, k112
 - [PandaAI neuro-symbolic quant (2606.06823)](sources/arxiv-pandaai-neuro-symbolic-quant-2606.06823-2026-06-12.md) — `[DRAFT 2026-06-12]` constrained MCTS alpha; commercial REFERENCE. — source, arxiv, quant, k112
@@ -1282,6 +1283,11 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Agentified Agent Assessment (AAA)](concepts/agentified-agent-assessment.md) — AgentBeats paradigm. — concept, agent-eval, k112
 - [Strategy half-life live monitoring](concepts/strategy-half-life-live-monitoring.md) — edge decay ops framework. — concept, quant-ops, k112
 - [AgentBeats tool](entities/tools/agentbeats.md) — Phase-0 CONDITIONAL-GO. — tool, agent-eval, k112
+- [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113
+- [SkillClaw](entities/tools/skillclaw.md) — K113 collective Hermes skill evolution. — tool, hermes, k113
+- [AI-Research-SKILLs](entities/tools/ai-research-skills.md) — Orchestra ML research skills library. — tool, skills, k113
+- [wondelai/skills](entities/tools/wondelai-skills.md) — UX/CRO agent skills; SEO primary. — tool, skills, k113
+- [all-agentic-architectures](entities/tools/all-agentic-architectures.md) — K113 Steal-from; 35 agent patterns. — tool, steal-from, k113
 - [Less Context, Better Agents (2606.10209)](sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md) — `[VALIDATED 2026-06-10]` MCP context prune N=5 + summary W=3 beats full history. — source, arxiv, llm-agents, k110
 - [Instrumental probability and learnable alpha limits](concepts/instrumental-probability-learnable-alpha.md) — K110 synthesis: no-arbitrage vs efficiency vs net exploitability; capacity-scaling discipline. — concept, quant-finance, k110
 - [BAVAR-BLED portfolio DRL (2606.09104)](sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md) — regime + fat-tail PO. — source, arxiv, k107

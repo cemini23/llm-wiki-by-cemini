@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-12] ingest | K113 — tool eval v5 (28 URLs) + K112 cross-wiki close-out
+
+- **Source (1)** — `multi-wiki-tool-eval-v5-k113` (sha `1e2475fc…`); 28 URLs; license spot-check 2026-06-12
+- **Entities (5 new + 1 update)** — hermes-workspace, skillclaw, ai-research-skills, wondelai-skills, all-agentic-architectures; cloddsbot K113 reaffirm
+- **Phase-0** — `scripts/adopt_k113_phase0.sh` (4 Adopt CONDITIONAL-GO)
+- **Cross-wiki ingested** — CCC honesty/critic; gambling WC narrative; cybersec Google fuzzing; CCC K113 Hermes stubs; SEO wondelai entity
+- **Raw** — `Cemini URL Evaluation Framework.docx` → librarian; inbox cleared
+
 ## [2026-06-12] ingest | K112 — Posts.docx + 3 arXiv
 
 - **Sources (4)** — `trading-posts-compilation-9` (8 posts, sha `d8f7d4a6…`); PandaAI 2606.06823; CFD 2606.09084; AgentBeats 2606.13608
@@ -8,6 +16,8 @@
 - **Phase-0** — `scripts/adopt_k112_phase0.sh`
 - **Prod briefs (2)** — PM UpDown log-chain reconciliation; MCP artifact provenance CFD → scp
 - **Raw** — Posts.docx + 3 PDFs → librarian; inbox cleared
+- **SEO style pass** — `@seo-wiki/concepts/x-account-voice-and-format.md` K112 exemplars (8 authors)
+- **Cross-wiki briefs (3)** — CCC honesty/critic; gambling WC narrative; cybersec Google discovery-doc fuzzing
 
 ## [2026-06-12] ingest | K111 — full inbox (7 PDFs)
 

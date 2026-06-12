@@ -18,7 +18,11 @@ related:
   - concepts/ensemble-weather-forecasting.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
   - concepts/polymarket-updown-bot-taxonomy.md
-maturity: draft
+  - "@ccc-wiki/briefs/2026-06-12_k112-ccc-claude-honesty-critic-from-osint.md"
+  - "@gambling-wiki/briefs/2026-06-12_k112-gambling-wc-2026-narrative-from-osint.md"
+  - "@cybersecurity-wiki/briefs/2026-06-12_k112-cybersec-google-ai-api-fuzzing-from-osint.md"
+  - sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md
+maturity: validated
 read_status: read
 created: 2026-06-12
 updated: 2026-06-12
@@ -32,6 +36,9 @@ clusters: [polymarket-quant, agent-harness, weather-nwp, world-cup-2026, strateg
 - @concepts/strategy-half-life-live-monitoring.md — Post 2 Horizon framework
 - @sources/arxiv-resa-convlstm-nwp-bias-2504.15322-2026-06-11.md — Post 3 AlterEgo cites ReSA-ConvLSTM (K111)
 - @concepts/llm-agent-systems.md — Posts 7–8 (honesty harness, KV cache)
+- @ccc-wiki/briefs/2026-06-12_k112-ccc-claude-honesty-critic-from-osint.md — Post 7 @zodchiii
+- @gambling-wiki/briefs/2026-06-12_k112-gambling-wc-2026-narrative-from-osint.md — Post 5 @Lutchyn13
+- @cybersecurity-wiki/briefs/2026-06-12_k112-cybersec-google-ai-api-fuzzing-from-osint.md — Post 4 Arvin Shivram
 
 ## Raw Concept
 

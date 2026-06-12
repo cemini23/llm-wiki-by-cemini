@@ -5,13 +5,14 @@ tags: [tool, trading-bot, multi-agent, nodejs, steal-from, k38]
 keywords: [cloddsbot, steal-from, three-surface-eval]
 related:
   - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
+  - sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md
   - sources/link-evaluation-brief-trading-stack.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
   - entities/tools/gabagool.md
 maturity: validated
 created: 2026-05-11
-updated: 2026-06-07
+updated: 2026-06-12
 license_verified: MIT
 ---
 
@@ -44,6 +45,10 @@ TypeScript→Python translation of async order execution is high-risk for financ
 ### Phase-0 reaffirm (K103, 2026-06-07)
 
 Clone: `/tmp/k103-phase0-audit/CloddsBot`. **CONDITIONAL-GO steal-from** — MIT; ~327★; M2M settlement patterns for WC module 4 reference only; no Node prod install.
+
+### K113 reaffirm (2026-06-12)
+
+Eval URL 11 — **world-cup-bot overlap:** Solana DEX + Meteora DBC patterns absent from WC advance module 4 fill handler. License re-verified **MIT** (`gh api`); eval erroneously claimed null license. Steal-only; see `@sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md`.
 
 ### Phase-0 clone audit (2026-05-28)
 
