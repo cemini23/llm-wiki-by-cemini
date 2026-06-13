@@ -6,7 +6,13 @@ keywords: [agent-swarm, codex, opus, fable, planner, executor, milestone-gates]
 related:
   - concepts/game-dev-wiki-scope.md
   - concepts/vertical-slice-v0.md
+  - concepts/indie-kingdom-builder-lessons.md
+  - concepts/ai-assisted-game-dev-workflows.md
+  - concepts/ai-game-dev-tool-stack-2026.md
+  - concepts/ccgs-workflow-extraction.md
   - entities/tools/claude-code-game-studios.md
+  - entities/tools/godot-mcp-landscape.md
+  - meta/sibling-wiki-inventory.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
 maturity: draft
 created: 2026-06-13
@@ -15,9 +21,16 @@ updated: 2026-06-13
 
 ## Relations
 
-- @ccc-wiki/concepts/subagent-orchestration.md — generic orchestration
+- @concepts/ai-assisted-game-dev-workflows.md — **general** AI game dev patterns (any project)
+- @concepts/ai-game-dev-tool-stack-2026.md — MCP, automation, CCGS catalog
 - @ccc-wiki/entities/tools/claude-code-game-studios.md — role graph steal-from
-- @osint-wiki/entities/tools/hermes-agent.md — optional 24/7 operator path (out of scope for v0)
+- @ccc-wiki/concepts/ship-subagent-writer-reviewer-tester.md — writer + tester → reviewer gate
+- @ccc-wiki/concepts/agent-completion-verification-gates.md — done = tests + playtest
+- @ccc-wiki/entities/patterns/scatter-gather.md — parallel Godot subsystems
+- @ccc-wiki/concepts/skill-vetting.md — before untrusted skills
+- @cybersecurity-wiki/concepts/mcp-security-posture.md — MCP admission (W2+)
+- @cybersecurity-wiki/concepts/agent-skill-injection.md — SKILL.md poisoning
+- @meta/sibling-wiki-inventory.md — full cross-wiki map
 
 ## Raw Concept
 
@@ -38,9 +51,9 @@ Fable withdrawn from Cursor subagents 2026-06-13 — Opus is default planner. [C
 ### Per-milestone workflow
 
 1. **Research** — ingest sources into this wiki; update slice spec
-2. **Plan** — Opus writes task breakdown in `briefs/` (gitignored) from wiki spec
-3. **Execute** — Codex subagents implement **one subsystem** in `castle-sim` repo
-4. **Verify** — operator playtest + automated lint/tests; log failures in `wiki/log.md`
+2. **Plan** — Opus writes task breakdown in `briefs/` (gitignored) from wiki spec — use CCGS P0 skills as checklist (@concepts/ccgs-workflow-extraction.md)
+3. **Execute** — Codex subagents implement **one subsystem** in `castle-sim` repo (`/dev-story` equivalent)
+4. **Verify** — operator playtest + automated lint/tests; `PROCEED/PIVOT/KILL` on M0/M1 (@concepts/vertical-slice-v0.md)
 5. **Promote** — update concept maturity when slice criteria pass
 
 ### Anti-patterns

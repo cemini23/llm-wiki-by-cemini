@@ -6,7 +6,9 @@ keywords: [stronghold, firefly, economy, siege, ai, castle-building]
 related:
   - concepts/scope-tiers.md
   - concepts/vertical-slice-v0.md
+  - concepts/stronghold-systems-inventory.md
   - entities/games/stronghold-series.md
+  - entities/engines/godot-4.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
 maturity: draft
 created: 2026-06-13

@@ -7,7 +7,11 @@ related:
   - concepts/game-dev-wiki-scope.md
   - concepts/stronghold-deconstruction.md
   - concepts/vertical-slice-v0.md
-  - concepts/agent-harness-castle-project.md
+  - concepts/indie-kingdom-builder-lessons.md
+  - concepts/rts-pathfinding-approaches.md
+  - concepts/medieval-sim-fun-vs-accuracy.md
+  - concepts/llm-npc-runtime-ai-shelf.md
+  - concepts/agentic-pcg-level-design.md
   - entities/engines/godot-4.md
   - entities/games/stronghold-series.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
@@ -42,6 +46,8 @@ Honest scope ladder for a solo (+ friends) Stronghold-inspired project. Prevents
 - No campaign / historical missions
 - No real-time internet multiplayer
 - No 3D Stronghold 2-style engine (prefer 2D isometric)
+- No runtime LLM NPC dialogue (@concepts/llm-npc-runtime-ai-shelf.md)
+- No runtime agentic map generation (@concepts/agentic-pcg-level-design.md)
 
 ## Snippets
 

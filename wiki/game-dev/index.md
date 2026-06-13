@@ -8,33 +8,60 @@ Catalog of all wiki pages. Updated on each ingest.
 |------|----------|---------|
 | [game-dev-wiki-scope](concepts/game-dev-wiki-scope.md) | core | Scope vs @ccc-wiki, @image-gen-wiki, @osint-wiki |
 | [scope-tiers](concepts/scope-tiers.md) | validated | Toy castle → mini-Stronghold → full clone (explicit cuts) |
-| [stronghold-deconstruction](concepts/stronghold-deconstruction.md) | draft | Systems inventory from reference title |
-| [vertical-slice-v0](concepts/vertical-slice-v0.md) | draft | First playable milestone spec |
-| [agent-harness-castle-project](concepts/agent-harness-castle-project.md) | draft | Plan → swarm → verify loop |
+| [stronghold-deconstruction](concepts/stronghold-deconstruction.md) | draft | Systems checklist + engineering risk order |
+| [stronghold-systems-inventory](concepts/stronghold-systems-inventory.md) | validated | SH1 buildings, units, economy; Crusader/SH2+ deltas |
+| [vertical-slice-v0](concepts/vertical-slice-v0.md) | validated | First playable milestone + spike gate |
+| [agent-harness-castle-project](concepts/agent-harness-castle-project.md) | draft | Plan → swarm → verify loop (castle-sim instance) |
+| [ai-assisted-game-dev-workflows](concepts/ai-assisted-game-dev-workflows.md) | validated | General AI+human workflows, case studies |
+| [ai-game-dev-tool-stack-2026](concepts/ai-game-dev-tool-stack-2026.md) | validated | MCP, CCGS, automation tool catalog |
+| [ccgs-workflow-extraction](concepts/ccgs-workflow-extraction.md) | validated | CCGS 49 agents / 73 skills → Cursor port |
+| [llm-npc-runtime-ai-shelf](concepts/llm-npc-runtime-ai-shelf.md) | draft | Runtime LLM NPCs — Tier 3+ shelf |
+| [agentic-npc-design-guardrails](concepts/agentic-npc-design-guardrails.md) | validated | Adaptive NPC balance + lore fences |
+| [agentic-pcg-level-design](concepts/agentic-pcg-level-design.md) | validated | Tool-using LLM level design research |
+| [art-pipeline-v0-requirements](concepts/art-pipeline-v0-requirements.md) | draft | Placeholder art spec → @image-gen-wiki |
+| [rts-pathfinding-approaches](concepts/rts-pathfinding-approaches.md) | validated | Grid vs navmesh vs flow fields — castle-sim guide |
+| [flow-field-pathfinding](concepts/flow-field-pathfinding.md) | validated | Integration/flow fields, Emerson tiles, Tier 2 gate |
+| [godot-pathfinding-patterns](concepts/godot-pathfinding-patterns.md) | validated | Flood-fill, AStarGrid2D, isometric snap, flow Tier 2 |
+| [indie-kingdom-builder-lessons](concepts/indie-kingdom-builder-lessons.md) | validated | GDC/Northgard/Firefly scope lessons |
+| [medieval-sim-fun-vs-accuracy](concepts/medieval-sim-fun-vs-accuracy.md) | validated | History vs Stronghold fantasy |
+| [rts-networking-deferred](concepts/rts-networking-deferred.md) | draft | Lockstep shelf — MP later |
+| [rts-siege-ai-reference](concepts/rts-siege-ai-reference.md) | draft | Tier 2+ siege AI pointer |
 
 ## Entities — Engines
 
 | Page | Maturity | Summary |
 |------|----------|---------|
-| [godot-4](entities/engines/godot-4.md) | draft | Phase-0 candidate engine |
+| [godot-4](entities/engines/godot-4.md) | validated | Phase-0 **CONDITIONAL-GO** |
+
+## Entities — Projects
+
+| Page | Maturity | Summary |
+|------|----------|---------|
+| [castle-sim](entities/projects/castle-sim.md) | draft | Godot implementation repo pointer |
 
 ## Entities — Tools
 
 | Page | Maturity | Summary |
 |------|----------|---------|
 | [claude-code-game-studios](entities/tools/claude-code-game-studios.md) | draft | Steal role graphs from CCC entity |
+| [godot-mcp-landscape](entities/tools/godot-mcp-landscape.md) | draft | Godot MCP repos — WATCH, not vetted |
+| [hi-godot-ai](entities/tools/hi-godot-ai.md) | validated | Godot MCP — **CONDITIONAL-GO** W2 |
+| [sods2-godot-mcp](entities/tools/sods2-godot-mcp.md) | validated | Node MCP alt — **CONDITIONAL-GO** W2 |
+| [godot-stagehand](entities/tools/godot-stagehand.md) | validated | CI automation — **CONDITIONAL-GO** W2 |
+| [godot-ai-playtest](entities/tools/godot-ai-playtest.md) | validated | TCP automation alt — **CONDITIONAL-GO** W2 |
 
 ## Entities — Games (reference)
 
 | Page | Maturity | Summary |
 |------|----------|---------|
-| [stronghold-series](entities/games/stronghold-series.md) | draft | Design reference — Firefly castle sims |
+| [stronghold-series](entities/games/stronghold-series.md) | validated | Franchise timeline, engines, game modes |
 
 ## Meta
 
 | Page | Maturity |
 |------|----------|
 | [cross-wiki-routing](meta/cross-wiki-routing.md) | core |
+| [sibling-wiki-inventory](meta/sibling-wiki-inventory.md) | validated |
 | [daily-research-digest-cadence](meta/daily-research-digest-cadence.md) | validated |
 
 ## Sources
@@ -42,3 +69,43 @@ Catalog of all wiki pages. Updated on each ingest.
 | Page | Read status |
 |------|-------------|
 | [bootstrap-game-dev-wiki-2026-06-13](sources/bootstrap-game-dev-wiki-2026-06-13.md) | read |
+| [godot-4-phase-0-audit-2026-06-13](sources/godot-4-phase-0-audit-2026-06-13.md) | read |
+| [stronghold-hd-manual-2001](sources/stronghold-hd-manual-2001.md) | read |
+| [stronghold-series-wikipedia-2026-06-13](sources/stronghold-series-wikipedia-2026-06-13.md) | read |
+| [exa-deep-research-batch-2026-06-13](sources/exa-deep-research-batch-2026-06-13.md) | read |
+| [exa-flowfields-firefly-batch-2026-06-13](sources/exa-flowfields-firefly-batch-2026-06-13.md) | read |
+| [emerson-game-ai-pro-flow-field-tiles-2013](sources/emerson-game-ai-pro-flow-field-tiles-2013.md) | read |
+| [leifnode-flow-field-pathfinding-2013](sources/leifnode-flow-field-pathfinding-2013.md) | read |
+| [vav-labs-godot-flow-fields-2026](sources/vav-labs-godot-flow-fields-2026.md) | read |
+| [redblobgames-flow-field-pathfinding-2024](sources/redblobgames-flow-field-pathfinding-2024.md) | read |
+| [gamespy-stronghold-2-bradbury-qa-2004](sources/gamespy-stronghold-2-bradbury-qa-2004.md) | read |
+| [firefly-about-us-studio-history](sources/firefly-about-us-studio-history.md) | read |
+| [firefly-making-of-stronghold-legends-2018](sources/firefly-making-of-stronghold-legends-2018.md) | partial |
+| [exa-ai-gamedev-tools-batch-2026-06-13](sources/exa-ai-gamedev-tools-batch-2026-06-13.md) | read |
+| [pchojecki-catvivors-claude-code-steam-2026](sources/pchojecki-catvivors-claude-code-steam-2026.md) | read |
+| [morinaga-shin-koikoi-claude-godot-2026](sources/morinaga-shin-koikoi-claude-godot-2026.md) | read |
+| [bsymbolic-lava-leap-ai-pair-programmer-2026](sources/bsymbolic-lava-leap-ai-pair-programmer-2026.md) | read |
+| [bigdevsoon-void-balls-ai-10days-2025](sources/bigdevsoon-void-balls-ai-10days-2025.md) | read |
+| [luden-superweird-gdd-prototype-cursor-2025](sources/luden-superweird-gdd-prototype-cursor-2025.md) | partial |
+| [exa-npc-pcg-ccgs-batch-2026-06-13](sources/exa-npc-pcg-ccgs-batch-2026-06-13.md) | read |
+| [ubisoft-teammates-ai-experiment-2025](sources/ubisoft-teammates-ai-experiment-2025.md) | read |
+| [nvidia-ace-qwen3-on-device-npc-2025](sources/nvidia-ace-qwen3-on-device-npc-2025.md) | read |
+| [ixie-agentic-npc-balance-2026](sources/ixie-agentic-npc-balance-2026.md) | read |
+| [agentic-pcg-jiang-2026](sources/agentic-pcg-jiang-2026.md) | read |
+| [ccgs-workflow-catalog-2026](sources/ccgs-workflow-catalog-2026.md) | read |
+| [starlog-ccgs-49-agents-2026](sources/starlog-ccgs-49-agents-2026.md) | read |
+| [llmunity-unity-npc-plugin](sources/llmunity-unity-npc-plugin.md) | partial |
+| [morganpage-local-npc-dialogue-2026](sources/morganpage-local-npc-dialogue-2026.md) | partial |
+| [hi-godot-ai-phase-0-audit-2026-06-13](sources/hi-godot-ai-phase-0-audit-2026-06-13.md) | read |
+| [sods2-godot-mcp-phase-0-audit-2026-06-13](sources/sods2-godot-mcp-phase-0-audit-2026-06-13.md) | read |
+| [godot-stagehand-phase-0-audit-2026-06-13](sources/godot-stagehand-phase-0-audit-2026-06-13.md) | read |
+| [godot-ai-playtest-phase-0-audit-2026-06-13](sources/godot-ai-playtest-phase-0-audit-2026-06-13.md) | read |
+| [claude-code-game-studios-phase-0-audit-2026-06-13](sources/claude-code-game-studios-phase-0-audit-2026-06-13.md) | read |
+| [gdc-kingdoms-and-castles-postmortem-2019](sources/gdc-kingdoms-and-castles-postmortem-2019.md) | read |
+| [simon-bradbury-stronghold-heaven-sh3-2011](sources/simon-bradbury-stronghold-heaven-sh3-2011.md) | read |
+| [northgard-economy-case-study-2018](sources/northgard-economy-case-study-2018.md) | read |
+| [leiden-medieval-city-builder-accuracy-2020](sources/leiden-medieval-city-builder-accuracy-2020.md) | read |
+| [liquid-fire-godot-tactics-pathfinding-2024](sources/liquid-fire-godot-tactics-pathfinding-2024.md) | read |
+| [kobold-tactics-tilemap-pathfinding-2023](sources/kobold-tactics-tilemap-pathfinding-2023.md) | read |
+| [gdc-total-war-warhammer-siege-ai](sources/gdc-total-war-warhammer-siege-ai.md) | read |
+| [arxiv-1705.09704-lockstep-simulation](sources/arxiv-1705.09704-lockstep-simulation.md) | read |
