@@ -6,6 +6,7 @@ keywords: [routing, ccc-wiki, image-gen-wiki, osint-wiki, ingest]
 related:
   - concepts/game-dev-wiki-scope.md
   - meta/daily-research-digest-cadence.md
+  - meta/sibling-wiki-inventory.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
 maturity: core
 created: 2026-06-13
@@ -33,7 +34,7 @@ Ingest routing when a source touches game design, agent harness, or art pipeline
 ### Route to @ccc-wiki (stub + brief)
 
 - Generic subagent orchestration, Cursor skills, MCP infra
-- Multi-wiki eval prompt updates (surface 9)
+- Multi-wiki eval prompt updates (CCC surface 9 — not game-dev surface 8)
 
 ### Route to @image-gen-wiki
 
@@ -47,7 +48,7 @@ Ingest routing when a source touches game design, agent harness, or art pipeline
 
 ### Bulk URL evaluation
 
-Use `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` (v7 body at CCC `prompts/deep-research-multi-wiki-eval-v7-2026-06-13.md`) — **game-dev-wiki** = surface 9.
+Use `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` (v7 body at CCC `prompts/deep-research-multi-wiki-eval-v7-2026-06-13.md`) — **game-dev-wiki** = surface 8.
 
 From OSINT ingest: `python3 scripts/cross_wiki_route.py --target-wiki game-dev-wiki`
 
