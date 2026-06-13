@@ -757,6 +757,11 @@ def decide(
         placement_chase and position == "UTG"
         and is_preflop_open_spot(table, allowed, call_chips)
         and not placement_chase_steal(hc, position)
+    ) or (
+        street == "Preflop" and call_chips > 0
+        and _hero_stack_chips(table) > 0
+        and call_chips >= int(_hero_stack_chips(table) * 0.18)
+        and _marginal_ace_kicker(hc)
     )
     if (street == "Preflop" and gin_style_preflop_enabled()
             and not lane_tight and not gin_skip):
@@ -1576,6 +1581,8 @@ def _preflop_stackoff_should_fold(
     if ratio >= 0.18 and _is_low_trash_offsuit(hc):
         return True
     if ratio >= 0.18 and _marginal_ace_kicker(hc):
+        return True
+    if ratio >= 0.15 and position in ("BTN", "CO", "SB") and _marginal_ace_kicker(hc):
         return True
     if ratio >= 0.18 and hc in _EP_SUITED_BROADWAY_TRAP:
         return True

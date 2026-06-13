@@ -24,6 +24,7 @@ from tests.helpers.cemini_tables import (
     co_q5o_vs_limp,
     btn_qto_flush_river,
     btn_facing_shove,
+    btn_a9s_vs_shove_r25,
     btn_tt_paired_river,
     btn_99_paired_river_stackoff_r25,
     co_22_paired_river,
@@ -601,6 +602,14 @@ def regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="BTN dominated trash vs stack-off — fold.",
+        ),
+        RegressionSpot(
+            id="prod_a9s_btn_vs_shove_r25",
+            source="S2 HL R25 #01 — A9s BTN −674 preflop (gin overcalled)",
+            table=btn_a9s_vs_shove_r25(),
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="BTN marginal suited ace vs stack-off — fold (not gin call).",
         ),
         RegressionSpot(
             id="prod_22_co_paired_river",

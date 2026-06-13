@@ -929,6 +929,11 @@ def btn_facing_shove(hero_hole: list[str], *, shove_to: int = 1000, hero_stack: 
     )
 
 
+def btn_a9s_vs_shove_r25(*, shove_to: int = 674, hero_stack: int = 842) -> dict:
+    """A9s BTN vs stack-off — S2 HL R25 #01 (−674 preflop)."""
+    return btn_facing_shove(["9h", "Ah"], shove_to=shove_to, hero_stack=hero_stack)
+
+
 def sb_jj_paired_river(*, river_bet: int = 120, pot: int = 280) -> dict:
     """JJ SB OOP on paired runout — analyze #01 leak."""
     return six_max_table(
