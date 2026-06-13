@@ -7,6 +7,7 @@ related:
   - concepts/scope-tiers.md
   - concepts/vertical-slice-v0.md
   - entities/games/stronghold-series.md
+  - sources/bootstrap-game-dev-wiki-2026-06-13.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-06-13

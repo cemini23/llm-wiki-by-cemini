@@ -10,6 +10,7 @@ related:
   - concepts/vertical-slice-v0.md
   - concepts/agent-harness-castle-project.md
   - meta/daily-research-digest-cadence.md
+  - meta/cross-wiki-routing.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-13

@@ -6,6 +6,7 @@ keywords: [claude-code-game-studios, role-graph, planner, implementer]
 related:
   - concepts/agent-harness-castle-project.md
   - concepts/game-dev-wiki-scope.md
+  - entities/engines/godot-4.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-06-13

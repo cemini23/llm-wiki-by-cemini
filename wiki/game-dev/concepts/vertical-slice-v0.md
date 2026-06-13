@@ -8,6 +8,7 @@ related:
   - concepts/stronghold-deconstruction.md
   - concepts/agent-harness-castle-project.md
   - entities/engines/godot-4.md
+  - sources/bootstrap-game-dev-wiki-2026-06-13.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-06-13

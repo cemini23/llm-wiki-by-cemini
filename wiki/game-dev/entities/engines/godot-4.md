@@ -4,8 +4,9 @@ type: entity
 tags: [entity, engine, godot, phase-0]
 keywords: [godot, godot-4, isometric, rts, grid-building, mit-license]
 related:
-  - concepts/vertical-slice-v0.md
-  - concepts/scope-tiers.md
+  - concepts/game-dev-wiki-scope.md
+  - concepts/agent-harness-castle-project.md
+  - entities/engines/godot-4.md
   - entities/tools/claude-code-game-studios.md
 maturity: draft
 created: 2026-06-13

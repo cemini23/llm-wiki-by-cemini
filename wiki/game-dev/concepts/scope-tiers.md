@@ -8,7 +8,9 @@ related:
   - concepts/stronghold-deconstruction.md
   - concepts/vertical-slice-v0.md
   - concepts/agent-harness-castle-project.md
+  - entities/engines/godot-4.md
   - entities/games/stronghold-series.md
+  - sources/bootstrap-game-dev-wiki-2026-06-13.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-13

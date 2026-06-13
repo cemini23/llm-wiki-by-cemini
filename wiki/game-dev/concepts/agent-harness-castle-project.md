@@ -4,9 +4,10 @@ type: concept
 tags: [concept, agents, harness, codex, opus, fable]
 keywords: [agent-swarm, codex, opus, fable, planner, executor, milestone-gates]
 related:
-  - concepts/vertical-slice-v0.md
   - concepts/game-dev-wiki-scope.md
+  - concepts/vertical-slice-v0.md
   - entities/tools/claude-code-game-studios.md
+  - sources/bootstrap-game-dev-wiki-2026-06-13.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-06-13
