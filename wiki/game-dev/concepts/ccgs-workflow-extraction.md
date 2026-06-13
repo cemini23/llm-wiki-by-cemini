@@ -116,7 +116,7 @@ Implementer: one story, one subsystem
 Reviewer: diff + playtest checklist from vertical-slice-v0
 ```
 
-Optional: copy `workflow-catalog.yaml` ideas into `briefs/WORKFLOW.md` with artifact globs for lint script later.
+Optional: copy `workflow-catalog.yaml` ideas into `briefs/WORKFLOW.md` with artifact globs for lint script later. **Ported 2026-06-13** — local gitignored operator doc with P0 checklist.
 
 ### Model economics (from Starlog / CCGS)
 

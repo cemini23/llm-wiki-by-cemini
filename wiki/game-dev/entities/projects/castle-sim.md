@@ -8,6 +8,7 @@ related:
   - concepts/stronghold-systems-inventory.md
   - entities/engines/godot-4.md
   - concepts/agent-harness-castle-project.md
+  - concepts/godot-stagehand-ci-smoke-plan.md
   - concepts/art-pipeline-v0-requirements.md
 maturity: draft
 created: 2026-06-13

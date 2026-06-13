@@ -30,16 +30,17 @@ updated: 2026-06-13
 
 Exa deep batch 2026-06-13; summary from [Game Developer coverage](https://www.gamedeveloper.com/design/video-a-postmortem-of-indie-kingdom-builder-i-kingdoms-and-castles-i-) and GDC Vault listing.
 
-### Key takeaways [TENTATIVE — from talk summary, not full transcript]
+### Key takeaways [TENTATIVE — Game Developer summary + GDC listing]
 
-- **Audience validation before ship** — tested interest pre-release to de-risk commercial flop
+- **Audience validation before ship** — tested interest pre-release to de-risk commercial flop [CONFIRMED — Game Developer Aug 2019]
 - **Scope evolution** — game changed substantially during dev; postmortem covers ups/downs explicitly
-- **Commercial success factors** — Angstadt walks what made K&C work as a small-team city builder with castle defense hooks
-- **Indie lesson** — kingdom-builder genre is viable solo/small team if scope is disciplined and marketing validated early
+- **Commercial success factors** — Angstadt walks what made K&C work as small-team city builder + castle defense hooks
+- **Indie lesson** — kingdom-builder viable solo/small team if scope disciplined and marketing validated early
+- **Not Stronghold** — gridless organic cities, simplified military; borrow process not mechanics
 
 ### Relevance to castle-sim
 
-Not Stronghold, but closest GDC postmortem in Exa cluster for **castle + economy + defense** hybrid. Borrow: pre-release validation, scope trimming narrative — not mechanics wholesale.
+Not Stronghold, but closest GDC postmortem in corpus for **castle + economy + defense** hybrid. Borrow: pre-release validation, scope trimming narrative — not mechanics wholesale. Pairs with @sources/northgard-economy-case-study-2018.md anti-snowball patterns.
 
 ## Snippets
 

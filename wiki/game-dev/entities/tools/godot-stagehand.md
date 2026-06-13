@@ -7,7 +7,9 @@ related:
   - concepts/ai-game-dev-tool-stack-2026.md
   - entities/tools/godot-ai-playtest.md
   - concepts/agent-harness-castle-project.md
+  - concepts/godot-stagehand-ci-smoke-plan.md
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md
+  - sources/godot-stagehand-castle-sim-ci-eval-2026-06-13.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-13

@@ -25,7 +25,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [indie-kingdom-builder-lessons](concepts/indie-kingdom-builder-lessons.md) | validated | GDC/Northgard/Firefly scope lessons |
 | [medieval-sim-fun-vs-accuracy](concepts/medieval-sim-fun-vs-accuracy.md) | validated | History vs Stronghold fantasy |
 | [rts-networking-deferred](concepts/rts-networking-deferred.md) | draft | Lockstep shelf — MP later |
-| [rts-siege-ai-reference](concepts/rts-siege-ai-reference.md) | draft | Tier 2+ siege AI pointer |
+| [rts-siege-ai-reference](concepts/rts-siege-ai-reference.md) | validated | Tier 2+ siege AI shelf |
+| [godot-stagehand-ci-smoke-plan](concepts/godot-stagehand-ci-smoke-plan.md) | validated | W2 CI smoke research (castle-sim) |
 
 ## Entities — Engines
 
@@ -44,7 +45,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | Page | Maturity | Summary |
 |------|----------|---------|
 | [claude-code-game-studios](entities/tools/claude-code-game-studios.md) | draft | Steal role graphs from CCC entity |
-| [godot-mcp-landscape](entities/tools/godot-mcp-landscape.md) | draft | Godot MCP repos — WATCH, not vetted |
+| [godot-mcp-landscape](entities/tools/godot-mcp-landscape.md) | validated | Godot MCP repos — Phase-0 complete |
 | [hi-godot-ai](entities/tools/hi-godot-ai.md) | validated | Godot MCP — **CONDITIONAL-GO** W2 |
 | [sods2-godot-mcp](entities/tools/sods2-godot-mcp.md) | validated | Node MCP alt — **CONDITIONAL-GO** W2 |
 | [godot-stagehand](entities/tools/godot-stagehand.md) | validated | CI automation — **CONDITIONAL-GO** W2 |
@@ -108,4 +109,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [liquid-fire-godot-tactics-pathfinding-2024](sources/liquid-fire-godot-tactics-pathfinding-2024.md) | read |
 | [kobold-tactics-tilemap-pathfinding-2023](sources/kobold-tactics-tilemap-pathfinding-2023.md) | read |
 | [gdc-total-war-warhammer-siege-ai](sources/gdc-total-war-warhammer-siege-ai.md) | read |
+| [shaggydev-tactics-engine-devlog-2023](sources/shaggydev-tactics-engine-devlog-2023.md) | read |
+| [shaggydev-udd-navigation-2025](sources/shaggydev-udd-navigation-2025.md) | read |
+| [papierkorp-godot-4-tactical-movement-2023](sources/papierkorp-godot-4-tactical-movement-2023.md) | read |
+| [godot-stagehand-castle-sim-ci-eval-2026-06-13](sources/godot-stagehand-castle-sim-ci-eval-2026-06-13.md) | read |
 | [arxiv-1705.09704-lockstep-simulation](sources/arxiv-1705.09704-lockstep-simulation.md) | read |

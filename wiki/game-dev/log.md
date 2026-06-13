@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-13] ingest | W4 research — devlogs, GDC siege, harness workflow
+
+- `briefs/WORKFLOW.md` — CCGS P0 skills port (local gitignored)
+- Shaggydev: tactics engine + UDD navigation sources → godot-pathfinding-patterns Pattern 7
+- papierkorp: grid tactical movement tutorial (UI/range reference)
+- GDC Total War siege AI ingested (GDC blurb + TW forum recap); rts-siege-ai-reference validated
+- godot-stagehand CI smoke plan + eval source (W2 execute in castle-sim)
+- ROADMAP W4 devlog/GDC/stagehand items closed
+
+---
+
 ## [2026-06-13] ingest | Phase-0 tool audits + CI lint fix
 
 - Phase-0: hi-godot-ai, sods2-godot-mcp, godot-stagehand, godot-ai-playtest, CCGS (steal-from)

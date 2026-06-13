@@ -7,9 +7,13 @@ related:
   - concepts/rts-pathfinding-approaches.md
   - concepts/flow-field-pathfinding.md
   - entities/engines/godot-4.md
+  - entities/projects/castle-sim.md
   - sources/liquid-fire-godot-tactics-pathfinding-2024.md
   - sources/kobold-tactics-tilemap-pathfinding-2023.md
   - sources/vav-labs-godot-flow-fields-2026.md
+  - sources/shaggydev-tactics-engine-devlog-2023.md
+  - sources/shaggydev-udd-navigation-2025.md
+  - sources/papierkorp-godot-4-tactical-movement-2023.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-13
@@ -18,6 +22,8 @@ updated: 2026-06-13
 ## Relations
 
 - @entities/projects/castle-sim.md — spike implementation
+- @sources/shaggydev-tactics-engine-devlog-2023.md
+- @sources/shaggydev-udd-navigation-2025.md
 
 ## Raw Concept
 
@@ -48,6 +54,20 @@ Enable avoidance only when units crowd; pathfind on grid, optionally nudge with 
 ### Pattern 6 — Flow field (Tier 2)
 
 From @sources/vav-labs-godot-flow-fields-2026.md: when many units share a goal, build **integration field from goal** + **flow field** on the same blocked grid as walls. Rebuild on `wall_changed` or goal move — not every frame. Hybrid: A* for lone peasants, flow for rally/stockpile crowds (@concepts/flow-field-pathfinding.md).
+
+### Pattern 7 — Navigation Service autoload (Shaggy Dev)
+
+From @sources/shaggydev-tactics-engine-devlog-2023.md and @sources/shaggydev-udd-navigation-2025.md:
+
+- Single autoload owns `AStarGrid2D` or `AStar2D` built from TileMap custom data (`is_solid`, optional `blocks_movement`)
+- Wall grid emits `wall_changed`; service updates solids — peasants query service, not TileMap
+- Temporary disable of soft blockers during path query when units occupy cells (Tier 1 crowding)
+
+**castle-sim M0 default:** Pattern 1 + Pattern 7 thin slice.
+
+### Pattern 8 — Range highlight only (papierkorp)
+
+From @sources/papierkorp-godot-4-tactical-movement-2023.md: Manhattan `range` loops + hover TileMap layer for **debug UI** ("where can unit reach in N steps without walls"). Not a substitute for A* around walls.
 
 ## Snippets
 

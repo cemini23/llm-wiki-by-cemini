@@ -7,23 +7,53 @@ related:
   - sources/gdc-total-war-warhammer-siege-ai.md
   - concepts/stronghold-systems-inventory.md
   - concepts/vertical-slice-v0.md
-maturity: draft
+  - concepts/scope-tiers.md
+maturity: validated
 created: 2026-06-13
 updated: 2026-06-13
 ---
 
+## Relations
+
+- @sources/gdc-total-war-warhammer-siege-ai.md — AAA role/reserve architecture (ingested 2026-06-13)
+
 ## Raw Concept
 
-Placeholder for enemy siege behavior research when castle-sim passes v0.
+Enemy siege behavior research shelf when castle-sim passes v0 — Stronghold mechanics + TW GDC patterns, scaled down.
 
 ## Narrative
 
-v0 explicitly excludes enemy raids and siege engines. When adding waves:
+v0 explicitly excludes enemy raids and siege engines. When adding waves (Tier 2):
 
-- Stronghold: ladder/range/tower counters, wall segment targeting, pitch
-- GDC Total War siege AI talk — AAA reference (@sources/gdc-total-war-warhammer-siege-ai.md)
-- Start with **timer spawn + direct path** before lord AI
+### Stronghold-first (primary)
+
+From @concepts/stronghold-systems-inventory.md:
+
+- Ladder / siege tower / ram counters
+- Wall segment targeting, pitch, engineer units
+- Popularity / fear hooks optional Tier 2.5
+
+### AAA reference (secondary)
+
+From @sources/gdc-total-war-warhammer-siege-ai.md [TENTATIVE — forum recap of GDC 2016]:
+
+| TW pattern | castle-sim mini version |
+|------------|-------------------------|
+| Assault roles (breach, suppress, reserve) | 3 unit types max: grunt, archer, ram |
+| Reserve pool / tactic fail | Second wave only if first stalls N seconds |
+| Wall phase → courtyard phase | Raid ends if wall held; breach triggers courtyard spawn |
+| Fast epic pacing | **Invert** — one slow raid timer, SH1 pacing |
+
+### Minimum viable raid AI
+
+1. **Timer spawn** + single attack vector (gate or wall segment)
+2. **Direct path** on same grid as peasants (no lord AI)
+3. **No withdraw** OK for wolves — TW's withdraw gap is a caution for human-like lords Tier 3+
 
 ## Snippets
 
 Tier 2 minimum: one enemy type, one attack vector, no multi-lord skirmish.
+
+## Dead Ends
+
+- Grand tactical analyzer at hobby scale — start timer + path

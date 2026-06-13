@@ -10,6 +10,8 @@ related:
   - concepts/ai-assisted-game-dev-workflows.md
   - concepts/ai-game-dev-tool-stack-2026.md
   - concepts/ccgs-workflow-extraction.md
+  - concepts/godot-stagehand-ci-smoke-plan.md
+  - entities/tools/godot-stagehand.md
   - entities/tools/claude-code-game-studios.md
   - entities/tools/godot-mcp-landscape.md
   - meta/sibling-wiki-inventory.md
