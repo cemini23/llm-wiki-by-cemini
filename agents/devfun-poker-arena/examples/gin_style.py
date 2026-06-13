@@ -49,6 +49,26 @@ def gin_style_postflop_enabled() -> bool:
     return raw.strip().lower() in ("1", "true", "yes", "on")
 
 
+def _gin_style_gate_open() -> bool:
+    return os.environ.get("CEMINI_GIN_STYLE_GATE", "").strip().lower() in (
+        "1", "true", "yes", "on",
+    )
+
+
+def _gin_preflop_thresholds(ip: bool) -> tuple[int, int, int, int, int]:
+    """Return play, bet-open, raise-open, premium-raise ip/oop score floors."""
+    if _gin_style_gate_open():
+        # S2 prep — wider opens so Arena PFR moves off ~1% nit baseline.
+        return (34, 46, 58 if ip else 64, 82 if ip else 88, 88 if ip else 92)
+    return (
+        38 if ip else 44,
+        56,
+        72 if ip else 78,
+        88 if ip else 92,
+        92 if ip else 96,
+    )
+
+
 def preflop_score(hole_cards: list[str]) -> int:
     hole_cards = _norm_cards(hole_cards)
     if len(hole_cards) != 2:
@@ -311,9 +331,9 @@ def try_preflop(
     score = preflop_score(hole)
     open_spot = is_preflop_open_spot(table, allowed, call_amount)
 
-    play_threshold = 38 if ip else 44
-    raise_threshold = 72 if ip else 78
-    premium_threshold = 88 if ip else 92
+    play_threshold, bet_open_threshold, raise_threshold, premium_threshold, _ = (
+        _gin_preflop_thresholds(ip)
+    )
 
     if call_amount > 0 and not open_spot:
         if "raise" in available and score >= raise_threshold:
@@ -334,7 +354,7 @@ def try_preflop(
         amount = _raise_amount(table, allowed, strong=score >= premium_threshold)
         if amount is not None:
             return "raise", amount
-    if "bet" in available and score >= 56:
+    if "bet" in available and score >= bet_open_threshold:
         amount = _value_bet_amount(pot, allowed)
         return "bet", amount
     if "check" in available:

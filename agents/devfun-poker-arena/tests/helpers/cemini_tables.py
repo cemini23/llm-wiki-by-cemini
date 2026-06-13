@@ -1531,6 +1531,31 @@ def mp_ak_river_stackoff_r24(*, villain_bet: int = 2200, pot: int = 3000) -> dic
     )
 
 
+def btn_99_paired_river_stackoff_r25(*, villain_bet: int = 574, pot: int = 900) -> dict:
+    """99 BTN IP single pair vs stack-off — S1 bust −574 on KsQh3h3cTd."""
+    return six_max_table(
+        name="btn_99_paired_river_stackoff_r25",
+        hero_seat=1,
+        button_seat=1,
+        street="River",
+        board=["Ks", "Qh", "3h", "3c", "Td"],
+        pot=pot,
+        hero_hole=["9c", "9s"],
+        hero_stack=574,
+        hero_bet=0,
+        villain_bets={3: villain_bet},
+        stacks={1: 574},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_all_in=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            all_in_to=574,
+        ),
+    )
+
+
 def mp_99_ace_paired_river(*, villain_bet: int = 400, pot: int = 900) -> dict:
     """99 MP OOP on ace-paired runout — HL R12 analyze #01 (−448)."""
     return six_max_table(

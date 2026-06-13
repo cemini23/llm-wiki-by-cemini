@@ -25,6 +25,7 @@ from tests.helpers.cemini_tables import (
     btn_qto_flush_river,
     btn_facing_shove,
     btn_tt_paired_river,
+    btn_99_paired_river_stackoff_r25,
     co_22_paired_river,
     co_72o_paired_river,
     co_63s_paired_river,
@@ -552,6 +553,14 @@ def regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="MP OOP AK single pair vs stack-off river — fold (MC overcalls).",
+        ),
+        RegressionSpot(
+            id="prod_99_btn_paired_river_stackoff_r25",
+            source="S1 bust — 99 BTN −574 on KsQh3h3cTd",
+            table=btn_99_paired_river_stackoff_r25(),
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="BTN pocket 99 single pair on paired river — fold stack-off (MC overcalls).",
         ),
         RegressionSpot(
             id="prod_99_mp_ace_paired_river",

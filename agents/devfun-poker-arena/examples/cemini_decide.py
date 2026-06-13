@@ -634,6 +634,18 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: OOP AK single pair — fold stack-off")
 
+    # Pocket pair single-pair on paired river vs stack-off — 99 BTN −574 KQ33T (S1 bust).
+    if (street == "River" and call_chips > 0 and "fold" in available
+            and _hero_pocket_paired_river_stackoff_vulnerable(hole, board, hc)
+            and not _hero_cannot_lose()
+            and call_chips >= max(
+                int(_effective_stack_chips(table, max_playable) * 0.32),
+                int(pot * 0.35),
+                1,
+            )):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: pocket single pair paired river — fold stack-off")
+
     # EP/MP suited broadway on paired runout — JTs UTG −30 on 5443 (HL R19 #02).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and position in ("UTG", "MP") and not in_position
@@ -1680,6 +1692,38 @@ def _hero_ak_oop_river_single_pair_only(
             return False
     pair_hits = sum(1 for r in hranks if r in branks)
     return pair_hits == 1
+
+
+def _hero_pocket_paired_river_stackoff_vulnerable(
+    hole: list[str], board: list[str], hc: str,
+) -> bool:
+    """Pocket 22–TT with only one pair on paired river — MC overcalls (99 BTN −574 KQ33T)."""
+    if len(board) < 5 or not _board_is_paired(board):
+        return False
+    if not (_small_pocket_pair(hc) or _medium_pocket_pair(hc)):
+        return False
+    if _hero_made_hand_exempt(hole, board) or _hero_pocket_set(hole, board):
+        return False
+    if _hero_boat_or_quads_on_paired_board(hole, board):
+        return False
+    hranks = [c[0].upper() for c in hole]
+    if len(hranks) != 2 or hranks[0] != hranks[1]:
+        return False
+    pr = hranks[0]
+    branks = [c[0].upper() for c in board]
+    bc = Counter(branks)
+    if bc.get(pr, 0) >= 2:
+        return False
+    if bc.get(pr, 0) == 1:
+        return False
+    top_board = max(branks, key=lambda r: _RANKS.index(r))
+    if _RANKS.index(top_board) > _RANKS.index(pr):
+        return True
+    board_pair_ranks = [r for r, c in bc.items() if c >= 2]
+    if not board_pair_ranks:
+        return False
+    pair_rank = max(board_pair_ranks, key=lambda r: _RANKS.index(r))
+    return _RANKS.index(pr) < _RANKS.index(pair_rank)
 
 
 def _hero_vulnerable_pocket_on_ace_paired_board(
