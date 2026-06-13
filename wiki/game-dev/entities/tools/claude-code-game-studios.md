@@ -9,7 +9,7 @@ related:
 maturity: draft
 created: 2026-06-13
 updated: 2026-06-13
-cross-wiki-source: "@ccc-wiki/entities/tools/claude-code-game-studios.md"
+cross-wiki-source: @ccc-wiki/entities/tools/claude-code-game-studios.md
 ---
 
 ## Relations
