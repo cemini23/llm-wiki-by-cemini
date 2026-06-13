@@ -7,6 +7,7 @@ related:
   - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
   - entities/tools/hermes-workspace.md
   - entities/tools/skillclaw.md
+  - concepts/hermes-laptop-operator-playbook.md
   - entities/tools/ai-research-skills.md
   - entities/tools/wondelai-skills.md
   - entities/tools/all-agentic-architectures.md

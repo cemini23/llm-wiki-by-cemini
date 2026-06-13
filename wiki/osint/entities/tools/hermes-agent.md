@@ -18,6 +18,9 @@ related:
   - concepts/x402-agent-micropayments-data-access.md
   - concepts/claude-code-skills-md-workflow.md
   - entities/tools/hermes-lcm.md
+  - entities/tools/hermes-workspace.md
+  - entities/tools/skillclaw.md
+  - concepts/hermes-laptop-operator-playbook.md
   - concepts/openclaw-security-taxonomy.md
   - concepts/polymarket-weather-trading-strategy.md
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
@@ -27,7 +30,7 @@ related:
   - sources/trading-posts-compilation-17-2026-06-03.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-06-03
+updated: 2026-06-13
 ---
 
 ## Relations
@@ -46,6 +49,9 @@ updated: 2026-06-03
 - @concepts/hermes-onchain-forensics-pipeline.md — K78 pipeline synthesis
 - @concepts/x402-agent-micropayments-data-access.md — K78 payment layer
 - @ccc-wiki/entities/tools/hermes-agent.md — CCC routing stub
+- @concepts/hermes-laptop-operator-playbook.md — K113 split laptop/librarian ops
+- @entities/tools/hermes-workspace.md — laptop GUI
+- @entities/tools/skillclaw.md — skill evolution proxy
 
 ## Raw Concept
 
@@ -86,6 +92,7 @@ One-line installer: `curl -fsSL https://raw.githubusercontent.com/NousResearch/h
 ### Cemini posture
 
 - **Not an adoption candidate for the trading stack.** Cemini already has its own agent orchestration (Conductor / librarian; LangGraph). Hermes Agent is a *consumer-grade personal-agent runtime* — a parallel implementation of capability Cemini already has, which the Phase-0 pattern says not to adopt.
+- **Operator layer — GO deployed (2026-06-13):** Laptop UI + SkillClaw for dev; **cemini-librarian** headless gateway + Telegram for always-on phone reachability (`hermes-gateway.service` active; crons `wiki-gap-tier1-due` + `daily-digest-due`). Still **NO-GO** on **cemini-prod**. Canon: @concepts/hermes-laptop-operator-playbook.md.
 - **Reference value is real.** The self-improving-skill loop (write a markdown skill after N tool calls, reload it next time) and the `MEMORY.md` / `USER.md` frozen-snapshot pattern are clean ideas worth comparing against Cemini's own memory/skill handling — and against the related @entities/tools/hermes-lcm.md context engine.
 - **Security note.** The post's deployment hands an agent a funded Polygon wallet's private key and runs unattended trading via copy-pasted prompts. That is a high-trust configuration; flagged here, not endorsed. The standard install also pipes a remote script straight into `bash`.
 - **Verified, mature, MIT.** The K52 source was one creator post, but the project itself is confirmed (see above): `NousResearch/hermes-agent`, MIT, ~172k★ (May 2026), actively maintained. The "not a Cemini adoption" verdict is therefore a *fit* decision (it duplicates Conductor), not a credibility one — and if Cemini's orchestration ever needs replacing, Hermes Agent is a serious, license-clean reference rather than a speculative one.

@@ -4,17 +4,18 @@ type: entity
 tags: [entity, tool, ccc, multi-agent, steal-from, k63]
 keywords: [claude-code-game-studios, donchitos, multi-agent, game-dev, harness]
 related:
+  - concepts/game-dev-wiki-federation.md
   - sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md
   - concepts/multi-module-bot-conflict-detector-pattern.md
 maturity: draft
 created: 2026-05-24
-updated: 2026-05-24
+updated: 2026-06-13
 ---
 
 ## Relations
 
 - @sources/multi-wiki-tool-eval-36url-wiki-ingestion-2026-05-24.md — K63 URL 8 Steal-from
-- @concepts/multi-module-bot-conflict-detector-pattern.md — parallel multi-module orchestration interest
+- @game-dev-wiki/entities/tools/claude-code-game-studios.md — game-dev mirror (K115)
 
 ## Raw Concept
 

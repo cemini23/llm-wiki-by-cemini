@@ -11,7 +11,7 @@ WIKI_ROOT="/path/to/wiki-repo"
 bash "/Users/claudiobarone/Desktop/OSINT WORKSPACE/scripts/federation/daily_digest/install_federated_daily_digest.sh" "$WIKI_ROOT" "<wiki-id>"
 ```
 
-`<wiki-id>`: `ccc` | `seo` | `image-gen` | `gambling` | `cybersec` | `3d-printing`
+`<wiki-id>`: `ccc` | `seo` | `image-gen` | `gambling` | `game-dev` | `cybersec` | `3d-printing`
 
 Creates:
 

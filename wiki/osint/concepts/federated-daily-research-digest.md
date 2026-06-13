@@ -10,10 +10,11 @@ related:
   - concepts/monokern-compounding-research-pipeline.md
   - projects/osint-workspace/Architecture/Architecture - wiki.md
   - "@3d-printing-wiki/meta/daily-research-digest-cadence.md"
+  - concepts/game-dev-wiki-federation.md
   - concepts/autosci-research-lifecycle-memory.md
 maturity: core
 created: 2026-06-01
-updated: 2026-06-02
+updated: 2026-06-13
 ---
 
 ## Relations
@@ -24,6 +25,7 @@ updated: 2026-06-02
 - @concepts/monokern-compounding-research-pipeline.md — weekly deep-research overlay
 - @projects/osint-workspace/Architecture/Architecture - wiki.md
 - @3d-printing-wiki/meta/daily-research-digest-cadence.md — sibling cadence stub
+- @game-dev-wiki/meta/daily-research-digest-cadence.md — K115 game-dev federated digest
 
 ## Raw Concept
 
@@ -53,6 +55,7 @@ Each sibling wiki gets a **copy of the script bundle** under its repo `scripts/`
 | seo-wiki | `projects/SEO:GEO B&M Business` | `research to be indexed/` | `wiki/sweeps/` |
 | image-gen-wiki | `projects/Image gen` | `research to be indexed/` | `wiki/sweeps/` |
 | gambling-wiki | `projects/Gambling wiki` | `research to be indexed/` | `wiki/sweeps/` |
+| game-dev-wiki | `projects/Game Dev wiki` | `research to be indexed/` | `wiki/sweeps/` |
 | cybersecurity-wiki | `projects/Cybersecurity wiki` | `research to be indexed/` | `wiki/sweeps/` |
 | 3d-printing-wiki | `projects/3d printing` | `research to be indexed/` | `wiki/sweeps/` | Brief on disk — operator install pending |
 

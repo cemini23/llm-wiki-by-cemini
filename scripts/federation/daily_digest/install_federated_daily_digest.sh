@@ -4,7 +4,7 @@
 set -euo pipefail
 
 WIKI_ROOT="${1:?wiki repo root required}"
-WIKI_ID="${2:?wiki-id required (ccc|seo|image-gen|gambling|cybersec|3d-printing)}"
+WIKI_ID="${2:?wiki-id required (ccc|seo|image-gen|gambling|game-dev|cybersec|3d-printing)}"
 OSINT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)"
 KIT="$OSINT_ROOT/scripts/federation/daily_digest"
 

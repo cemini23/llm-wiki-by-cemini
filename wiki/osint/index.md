@@ -620,6 +620,7 @@ Six-section institutional template: Business Overview · Competitive Landscape �
 - [Ethereum (ETH)](entities/tickers/eth.md) — crypto native — ticker-report, gemini-deep-research
 - [Diamondback Energy (FANG)](entities/tickers/fang.md) — energy / E&P (Donny note 2026-05-09) — market-research
 - [Corning (GLW)](entities/tickers/glw.md) — industrials (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
+- [The GEO Group (GEO)](entities/tickers/geo.md) — `[DRAFT 2026-06-13]` K114 corrections REIT; ICE turnkey investigative briefs — osint, geo-group
 - [Alphabet (GOOGL)](entities/tickers/googl.md) — mega cap — ticker-report, gemini-deep-research
 - [Intel (INTC)](entities/tickers/intc.md) — mega cap (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
 - [iShares Russell 2000 ETF (IWM)](entities/tickers/iwm.md) — indices / small-cap (indexed 2026-04-27) — ticker-report, gemini-deep-research
@@ -1149,6 +1150,7 @@ External firms whose research/track-record is ingested into the wiki.
 - [Berkshire Hathaway — Warren Buffett](entities/companies/berkshire-hathaway.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. AAPL 22% anchor; GOOGL +204% new big add; CVX −35%; STZ −95%. — company, conglomerate, value-investing, 13f, k48
 - [Pershing Square — Bill Ackman](entities/companies/pershing-square.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Concentrated 11-name book; new MSFT 15% position; Alphabet exited. — company, hedge-fund, activist, 13f, k48
 - [Gates Foundation Trust](entities/companies/gates-foundation-trust.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Endowment book: BRK.B 26%, WM 20%, railroads/industrials; near-static quarter. — company, endowment, 13f, k48
+- [The GEO Group, Inc.](entities/companies/geo-group.md) — `[DRAFT 2026-06-13]` K114 ICE/detention REIT; investigative brief cluster — company, corrections, osint, k114
 - [Tiger Global Management — Chase Coleman](entities/companies/tiger-global-management.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Growth/tech book, 43 names; GOOGL top holding; semis added hard; MSFT −54%. — company, hedge-fund, growth-investing, 13f, k48
 - [Coatue Management](entities/companies/coatue-management.md) — `[DRAFT 2026-05-29]` K81 Sourcery podcast. ~$70B tech HF; Melvin/GameStop lesson; AI-native ad-tech; retail product. — company, hedge-fund, retail-flow, k81
 - [Greenlight Capital — David Einhorn](entities/companies/greenlight-capital.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Deep-value long book, 45 names; Green Brick 19% anchor; PTON +4004%. — company, hedge-fund, value-investing, 13f, k48
@@ -1263,6 +1265,8 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [AARRI-Bench (2606.07462)](sources/arxiv-aarri-research-intern-bench-2606-07462-2026-06-09.md) — research-intern agent eval; repo NO-GO. — source, arxiv, k107
 - [Covariance regret audit (2606.08791)](sources/arxiv-covariance-regret-algorithmic-audit-2606-08791-2026-06-09.md) — Aldridge black-box strategy audit. — source, arxiv, k107
 - [Instrumental probability — hard to predict (2606.08209)](sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md) — `[VALIDATED 2026-06-10]` P–Q wedge, capacity layer, net exploitability vs random-walk sloppiness. — source, arxiv, k110
+- [Can AI Agents Synthesize Scientific Conclusions? (2606.11337)](sources/arxiv-2606-11337-sciconbench-scientific-synthesis-agents-2026-06-13.md) — `[DRAFT 2026-06-13]` K114 SciConBench + clean-room harness. — source, arxiv, agent-eval, k114
+- [GEO Group ICE turnkey investigation (April 2026)](sources/geo-group-ice-turnkey-investigation-2026-04-09.md) — `[DRAFT 2026-06-13]` K114 investigative brief cluster. — source, osint, geo-group, k114
 - [TT-DAC-PS optimal execution (2606.08379)](sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md) — `[VALIDATED 2026-06-10]` RL IS% benchmarks on equity LOB; twin-target TD3 + adaptive OU. — source, arxiv, execution, k110
 - [AS/CJ forced uniqueness (2606.01477)](sources/arxiv-as-cj-forced-uniqueness-2606.01477-2026-06-11.md) — `[VALIDATED 2026-06-11]` ϕ=γσ²/2; CJ as AS expansion. — source, arxiv, market-making, k111
 - [GIFT FinRL interface (2606.08450)](sources/arxiv-gift-llm-state-reward-2606.08450-2026-06-11.md) — `[VALIDATED 2026-06-11]` LLM-guided state/reward; repo NO-GO. — source, arxiv, financial-rl, k111
@@ -1283,8 +1287,12 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Agentified Agent Assessment (AAA)](concepts/agentified-agent-assessment.md) — AgentBeats paradigm. — concept, agent-eval, k112
 - [Strategy half-life live monitoring](concepts/strategy-half-life-live-monitoring.md) — edge decay ops framework. — concept, quant-ops, k112
 - [AgentBeats tool](entities/tools/agentbeats.md) — Phase-0 CONDITIONAL-GO. — tool, agent-eval, k112
+- [Hermes operator playbook](concepts/hermes-laptop-operator-playbook.md) — split laptop UI + librarian always-on Telegram. — hermes, skillclaw, k113
+- [GEO ICE turnkey acquisition thesis](concepts/geo-ice-turnkey-acquisition-thesis.md) — K114 investigative OSINT synthesis (April 2026 briefs). — geo-group, ice, osint, k114
+- [Scientific conclusion synthesis eval](concepts/scientific-conclusion-synthesis-eval.md) — SciConBench clean-room pattern (K114). — agent-eval, sciconbench, k114
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113
 - [SkillClaw](entities/tools/skillclaw.md) — K113 collective Hermes skill evolution. — tool, hermes, k113
+- [SciConBench](entities/benchmarks/sciconbench.md) — K114 scientific conclusion synthesis benchmark (MIT). — benchmark, agent-eval, k114
 - [AI-Research-SKILLs](entities/tools/ai-research-skills.md) — Orchestra ML research skills library. — tool, skills, k113
 - [wondelai/skills](entities/tools/wondelai-skills.md) — UX/CRO agent skills; SEO primary. — tool, skills, k113
 - [all-agentic-architectures](entities/tools/all-agentic-architectures.md) — K113 Steal-from; 35 agent patterns. — tool, steal-from, k113
@@ -1576,6 +1584,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Cemini workflow tooling audit](concepts/cemini-workflow-tooling-audit-2026-05-30.md) — `[DRAFT 2026-05-30]` Obsidian/n8n/MCP gap map + v5 prompt need. — concept, workflow, audit, k84
 - [Cemini wiki ingest workflow](concepts/cemini-wiki-ingest-workflow.md) — `[CORE 2026-05-31]` Four-phase discovery→ingest pipeline (daily digest, inbox watch, ingest skill, human gates). — concept, workflow, automation, k90
 - [Gambling wiki federation](concepts/gambling-wiki-federation.md) — `[VALIDATED 2026-05-31]` Cross-wiki hub for public `@gambling-wiki` (sports betting, casino, DFS); osint-wiki keeps PM bots/CeminiSuite. — concept, federation, gambling-wiki
+- [Game dev wiki federation](concepts/game-dev-wiki-federation.md) — `[VALIDATED 2026-06-13]` Cross-wiki hub for public `@game-dev-wiki` (hobby castle/RTS, Godot evals, agent harness); ccc-wiki keeps generic orchestration. — concept, federation, game-dev-wiki
 
 #### K90 ingest (2026-05-31 — v6 tool eval + Posts.docx 16)
 

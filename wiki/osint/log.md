@@ -1,5 +1,63 @@
 # Wiki Log
 
+## [2026-06-13] bootstrap | K115 — game-dev-wiki federation
+
+- **Repo** — `cemini23/Game-Dev-wiki` (public); alias `game-dev-wiki`
+- **Federation** — sync, daily digest (`game-dev`), hub paths, OSINT pointer concept, CCC eval v7 surface 9
+- **Seed** — 5 concepts, 3 entities, 2 meta, 1 source; Phase 0 research only
+
+## [2026-06-13] local eval | K114 GraphAnything + GEO Exa + benchmark smoke
+
+- **GraphAnything** — 5-page Hermes slice: YAML date bug blocks ingest; 0 `@` wikilinks; kb-server wins on query — REFERENCE not kb replacement
+- **PerspectiveGap** — bundled fixture score PASS (`uv run score_predictions.py`)
+- **SciConBench** — dataset load blocked (laptop lzma; librarian no datasets)
+- **GEO Exa** — turnkey talks + McFarland activation CONFIRMED; Apr-17 8-K thesis RETRACTED; revolver CORRECTED to $550M expansion
+- **Report** — `.local/reports/k114-local-eval-2026-06-13.md`
+
+## [2026-06-13] ingest | K114 federation wave — GEO cluster + SciConBench + sibling wikis
+
+- **OSINT (8 pages)** — `geo-group-ice-turnkey-investigation` source; `geo-group` company + `geo` ticker; `geo-ice-turnkey-acquisition-thesis`; SciConBench source + concept + benchmark entity
+- **CCC (11)** — 4 arXiv harness/KG sources + 3 concepts (PerspectiveGap, IoAI, Agents-K1); index/log; 7 backlink updates
+- **Cybersecurity (8)** — VATS + containment gap sources; `agentic-containment-principles`; MCP/guardrails updates
+- **Gambling (7)** — Nous PM paper REFERENCE; K102–K108 brief close-out (starter-kit, reject cluster, HL loop, WC hygiene)
+- **Image gen (6)** — MentisOculi source + concept + benchmark entity
+- **Phase-0** — `scripts/adopt_k114_phase0.sh` (SciConBench, PerspectiveGap, GraphAnything)
+- **Prod briefs (3)** — VATS error-path; containment gap memory integrity; SciConBench clean-room → scp
+- **Note** — GEO ingest files April 2026 briefs as `draft`/`TENTATIVE`; prior DRI schema retraction (2026-04-23) cited on source page
+
+## [2026-06-13] ops | Hermes operational — adoption status for pre-ingest
+
+- **Deployed** — librarian gateway active; Telegram inbound + 2 crons; laptop SkillClaw + workspace GO
+- **Wiki** — playbook operational banner; `hermes-agent` posture → operator GO; CCC cross-links for adoption audit before federation ingest
+
+## [2026-06-13] ops | picobot off + Hermes Telegram inbound
+
+- **picobot** — `docker stop picobot` on cemini-prod; Hermes owns @Cemini23_bot polling on librarian
+- **Alerts** — `cemini-wiki-gap-due.sh` silent unless degraded; `wrap_response: false`
+- **Allowlist** — `TELEGRAM_ALLOWED_USERS=6652585143`
+
+## [2026-06-12] ops | Hermes librarian secrets + gateway systemd
+
+- **Secrets** — DeepSeek from librarian `/opt/cemini/.env`; Telegram @Cemini23_bot from prod `/opt/cemini/.env` via `configure_hermes_librarian_secrets.py`
+- **Gateway** — `hermes-gateway.service` on librarian; Telegram inbound **disabled** (picobot owns getUpdates on prod)
+- **Cron** — `wiki-gap-tier1-due` on librarian, deliver telegram; needs `TELEGRAM_HOME_CHANNEL`
+- **Blocker** — interactive Hermes on same bot requires new BotFather bot or picobot handoff
+
+## [2026-06-12] ops | Hermes wiki audit + split topology (librarian + Telegram)
+
+- **Audit** — consolidated Hermes pages in playbook wiki map; updated hermes-agent, skillclaw, hermes-workspace entities
+- **Laptop optimize** — `MEMORY.md`, `USER.md`; gap-due script auto-detects `/opt/cemini-osint-workspace`
+- **Librarian path** — `scripts/install_hermes_librarian_gateway.sh`, `sync_hermes_profile_to_librarian.sh`; CONDITIONAL-GO headless gateway (not prod)
+- **Phone** — Telegram via `hermes setup gateway` on librarian; migrate cron `--deliver telegram`
+
+## [2026-06-12] ops | Hermes pilots A→B→C (laptop)
+
+- **Pilot A** — SkillClaw config + daemon; `doctor hermes` PASS; `~/.hermes/SOUL.md` honesty; skills `honesty-critic`, `cemini-librarian-readonly`; OSINT `.hermes.md`
+- **Pilot B** — Hermes cron `wiki-gap-tier1-due` (7d, no-agent); gap detect run → `.local/reports/wiki-gap-detect-2026-06-12.txt`; cadence bumped
+- **Pilot C** — librarian read-only SSH verify (`index.md` 2026-06-12)
+- **Wiki** — `concepts/hermes-laptop-operator-playbook.md`; `hermes-workspace` entity updated
+- **Server verdict** — laptop GO; prod + librarian Hermes NO-GO (default)
+
 ## [2026-06-12] trial | K113 laptop smoke — SkillClaw + Hermes + Orchestra inventory
 
 - **SkillClaw** — `pip install -e` + CLI PASS; `doctor hermes` blocked (no setup / no Hermes)

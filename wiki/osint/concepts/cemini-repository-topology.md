@@ -59,7 +59,7 @@ Cemini is **not** a single-repo project today. Repositories are split by **role*
 | --- | --- | --- | --- |
 | **Deploy monorepo** | `cemini23/Cemini-Financial-Suite` → `/opt/cemini` on prod | Runnable trading stack: Docker Compose, brain, EMS, ingest, MCP, UI | Private (IP-sensitive) |
 | **Financial research wiki** | `llm-wiki-by-cemini` — laptop `OSINT WORKSPACE/wiki/` | Ingest, curate, briefs → `/opt/cemini/briefs/` | Private |
-| **Domain wikis** | ccc, cybersec, **gambling**, image-gen, seo, 3d-printing | Cross-domain knowledge; federated via `@wiki-alias/` | Public (except osint) |
+| **Domain wikis** | ccc, cybersec, **gambling**, **game-dev**, image-gen, seo, 3d-printing | Cross-domain knowledge; federated via `@wiki-alias/` | Public (except osint) |
 | **Runtime** | `cemini-prod`, `cemini-librarian`, `cemini-egress-fi` | Integration at deploy time — Redis, Postgres, HTTP, private net | N/A (servers) |
 
 The deploy monorepo **internally** contains multiple products in one tree: `QuantOS/`, `Kalshi by Cemini/`, `core/`, `agents/`, `cemini_mcp/`, etc. That internal layout is a **monorepo**; the outer project is a **federation**.
@@ -109,7 +109,7 @@ Large org monorepos (Google, Meta) enforce boundaries via **folder ownership + b
 | Three products in one folder (`QuantOS/`, `Kalshi by Cemini/`, `core/`) | **No** — use subsystem `CLAUDE.md`, ownership map, contract imports |
 | Three Cursor worlds (OSINT / CeminiSuite / prod SSH) | **No** — document "open this folder when…" in each repo README |
 | Laptop git ≠ prod tree 1:1 | **No** — record deploy SHA on prod; briefs as handoff |
-| Seven federated wikis + cross-links | **No** — already correct for IP/visibility; use `@wiki-alias/` consistently |
+| Seven federated wikis + cross-links | **No** — already correct for IP/visibility; use `@wiki-alias/` consistently (eight domain wikis as of K115 `game-dev-wiki`) |
 
 ### Low-cost clarity improvements (no migration)
 

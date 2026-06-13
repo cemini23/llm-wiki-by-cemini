@@ -19,9 +19,11 @@ related:
   - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
   - concepts/autosci-research-lifecycle-memory.md
   - sources/arxiv-neurolog-osint-handoff-2606.00669-2026-06-06.md
+  - concepts/scientific-conclusion-synthesis-eval.md
+  - sources/arxiv-2606-11337-sciconbench-scientific-synthesis-agents-2026-06-13.md
 maturity: core
 created: 2026-05-31
-updated: 2026-06-06
+updated: 2026-06-13
 ---
 
 ## Relations

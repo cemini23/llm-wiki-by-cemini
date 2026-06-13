@@ -4,9 +4,11 @@ type: entity
 tags: [tool, hermes, skills, continual-learning, k113]
 keywords: [skillclaw, amap-ml, skill-dedup, hermes-skills]
 related:
+  - entities/tools/hermes-agent.md
   - sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md
   - concepts/tool-evaluation-framework.md
   - concepts/llm-agent-systems.md
+  - concepts/hermes-laptop-operator-playbook.md
   - "@ccc-wiki/entities/tools/skillclaw.md"
 maturity: draft
 created: 2026-06-12
@@ -43,6 +45,10 @@ Post-task skill evolution for Hermes: deduplicate/merge `~/.hermes/skills` from 
 |-------|--------|
 | `pip install -e .` | PASS |
 | `skillclaw --help` | PASS |
-| `skillclaw doctor hermes` | BLOCKER — needs `skillclaw setup`; Hermes not installed |
+| `skillclaw doctor hermes` | PASS (proxy_match 2026-06-12) |
+| PRM | Disabled (cost discipline) |
 
-Report: `.local/reports/k113-laptop-trial-2026-06-12.md`
+Report: `.local/reports/k113-laptop-trial-2026-06-12.md`  
+Playbook: @concepts/hermes-laptop-operator-playbook.md
+
+**Placement:** laptop SkillClaw **GO**; librarian **defer** (direct DeepSeek on server saves RAM).

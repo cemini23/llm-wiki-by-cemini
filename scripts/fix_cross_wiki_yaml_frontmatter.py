@@ -22,6 +22,7 @@ WIKI_DIRS = [
     PROJECTS / "SEO:GEO B&M Business" / "wiki",
     PROJECTS / "Cybersecurity wiki" / "wiki",
     PROJECTS / "Gambling wiki" / "wiki",
+    PROJECTS / "Game Dev wiki" / "wiki",
 ]
 
 FM_RE = re.compile(r"\A(---\n)(.*?)(\n---\n)", re.DOTALL)

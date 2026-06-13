@@ -32,6 +32,7 @@ WIKI_REPOS=(
   "ccc|${PROJECTS}/Cemini claude code CCC"
   "cybersec|${PROJECTS}/Cybersecurity wiki"
   "gambling|${PROJECTS}/Gambling wiki"
+  "game-dev|${PROJECTS}/Game Dev wiki"
   "image-gen|${PROJECTS}/Image gen"
   "3d-printing|${PROJECTS}/3d printing"
 )

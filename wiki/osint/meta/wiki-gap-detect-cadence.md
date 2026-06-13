@@ -9,9 +9,10 @@ related:
   - concepts/exploration-graph-dead-ends.md
   - concepts/cemini-knowledge-application-architecture.md
   - concepts/cemini-wiki-ingest-workflow.md
+  - concepts/hermes-laptop-operator-playbook.md
 maturity: core
 created: 2026-05-30
-updated: 2026-05-31
+updated: 2026-06-12
 ---
 
 ## Relations
@@ -24,8 +25,8 @@ updated: 2026-05-31
 | Field | Value |
 |-------|-------|
 | **Cadence** | Weekly (descriptive only — no auto Exa) |
-| **Last run** | 2026-05-30 |
-| **Next due** | 2026-06-06 |
+| **Last run** | 2026-06-12 |
+| **Next due** | 2026-06-19 |
 | **Script** | `python3 scripts/wiki_gap_detect.py` |
 | **Report** | `.local/reports/wiki-gap-detect-YYYY-MM-DD.txt` |
 

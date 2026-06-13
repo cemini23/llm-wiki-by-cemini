@@ -91,12 +91,13 @@ scripts/sync_wiki_to_librarian.sh
 
 ## Cemini wiki federation
 
-**Seven** interlinked markdown wikis plus the **Cemini Financial Suite** trading stack. Page bodies use `@<alias>/path/to/page.md` (aliases in `CLAUDE.md` → Related Wikis).
+**Eight** interlinked markdown wikis plus the **Cemini Financial Suite** trading stack. Page bodies use `@<alias>/path/to/page.md` (aliases in `CLAUDE.md` → Related Wikis).
 
 | Alias | Repository | Visibility | Focus |
 |-------|------------|------------|--------|
 | **`osint-wiki`** | **This repo** (`llm-wiki-by-cemini`) | **Private** | Financial / quant / prediction-market automation; librarian kb-server; CeminiSuite briefs |
 | `gambling-wiki` | [Gambling-wiki](https://github.com/cemini23/Gambling-wiki) | **Public** | Sports betting, casino, poker, DFS, best ball; PM retail strategy |
+| `game-dev-wiki` | [Game-Dev-wiki](https://github.com/cemini23/Game-Dev-wiki) | **Public** | Hobby game dev — castle/RTS research, Godot evals, agent harness |
 | `ccc-wiki` | [cemini-claude-code-CCC](https://github.com/cemini23/cemini-claude-code-CCC) | **Public** | Cursor / Claude Code meta-wiki — MCP, skills, conductor, eval prompts |
 | `image-gen-wiki` | [uncensored-image-gen-wiki](https://github.com/cemini23/uncensored-image-gen-wiki) | Public | Image / video / voice generation, persona ops |
 | `seo-wiki` | [SEO-GEO-B-M-Wiki](https://github.com/cemini23/SEO-GEO-B-M-Wiki) | Public | Local SEO, GBP, GEO/AEO, creator marketing |

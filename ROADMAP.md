@@ -8,6 +8,14 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
 
+## Current state (2026-06-13 — K115)
+
+- **K115 game-dev-wiki bootstrap (2026-06-13)** — New public federation wiki for hobby castle/RTS research + agent harness. **Repo:** `cemini23/Game-Dev-wiki`. Wired: `sync_wiki_to_librarian.sh`, federated daily digest (`game-dev`), federation hub paths, OSINT `@concepts/game-dev-wiki-federation.md`, CCC eval v7 surface 9. Phase 0 research only — no `castle-sim` code repo yet.
+
+## Current state (2026-06-13 — K114)
+
+- **K114 federation ingest (2026-06-13)** — Full wave across 5 wikis + OSINT inbox (7 files). **OSINT:** GEO investigative cluster + SciConBench. **CCC:** 4 arXiv harness/KG. **Cybersec:** VATS + containment gap. **Gambling:** Nous PM + K102–K108 brief close-out. **Image gen:** MentisOculi. **Phase-0:** `adopt_k114_phase0.sh`. **Prod briefs scp'd (3):** VATS MCP error-path; containment gap memory integrity; SciConBench clean-room eval.
+
 ## Current state (2026-06-12 — K112)
 
 - **K112 ingest (2026-06-12)** — Posts.docx (8) + 3 arXiv. **4 sources + 3 concepts + 5 updates + 2 tool entities.** CFD provenance-gap attacks; AgentBeats AAA eval; PandaAI neuro-symbolic REFERENCE; Gustafsson log-vs-chain reconciliation. **Phase-0:** `adopt_k112_phase0.sh` (AgentBeats CONDITIONAL-GO). **Prod briefs scp'd (2):** PM UpDown reconciliation telemetry; MCP artifact provenance CFD. Raw → librarian; inbox cleared.

@@ -4,6 +4,7 @@ type: concept
 tags: [concept, meta, federation, gambling-wiki]
 keywords: [gambling-wiki, sports-betting, dfs, scope, routing]
 related:
+  - concepts/game-dev-wiki-federation.md
   - concepts/kelly-sizing-quarter.md
   - concepts/favorite-longshot-bias.md
   - entities/platforms/kalshi.md
@@ -15,12 +16,13 @@ related:
   - sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-13
 ---
 
 ## Relations
 
 - @gambling-wiki/concepts/gambling-wiki-scope.md — scope boundary (primary)
+- @game-dev-wiki/concepts/game-dev-wiki-scope.md — sibling federation wiki (K115)
 - @gambling-wiki/concepts/prediction-markets-crossover.md — Kalshi/Polymarket retail lens
 - @gambling-wiki/concepts/kelly-criterion-betting.md — general Kelly
 - @concepts/kelly-sizing-quarter.md — quarter-Kelly bot default (osint primary)

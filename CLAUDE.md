@@ -408,10 +408,11 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 | `3d-printing-wiki` | `../projects/3d printing/wiki/` | Public | FDM/FFF printing, Bambu, materials, slicers, print farms, store ops |
 | `cybersecurity-wiki` | `../projects/Cybersecurity wiki/wiki/` | Public | Cybersecurity research — offensive security (pentest / red team / bug bounty / exploit dev), defensive operations (SOC / IR / threat hunting), certifications + careers, threat actors. Shared territory: OSINT tradecraft + investigative methodology |
 | `gambling-wiki` | `../projects/Gambling wiki/wiki/` | **Public** | Sports betting, casino, poker, DFS, best ball, prediction-market wagering (retail/strategy). Shared territory: Kelly, FLB, Kalshi/Polymarket cross-venue — osint-wiki owns bots/CeminiSuite |
+| `game-dev-wiki` | `../projects/Game Dev wiki/wiki/` | **Public** | Hobby game dev — castle/RTS research, engine evals, agent-assisted slice workflow. Shared territory: subagent harness — ccc-wiki owns primitives |
 | `ccc-wiki` | `../projects/Cemini claude code CCC/wiki/` | **Public** | Cursor + Claude Code meta-wiki — workflow, subagents, MCP/conductor, hooks, skills, slash commands, /goal · Ralph · OpenSpec. Shared territory: agent orchestration, conductor/librarian architecture, skill audits |
 | `federation-hub` | `../projects/cemini-federation-hub/hub/` | **Private** | Operator control plane — morning federation summary, wiki path catalog, Obsidian triage (`@meta/federation-operator-hub-stub.md`) |
 
-**Private (not public federation deliverables):** `osint-wiki`, **Cemini Financial Suite** (`../projects/CeminiSuite`). **Public on GitHub:** `ccc-wiki` and the five domain wikis (including `gambling-wiki`). See root `README.md` for repo URLs.
+**Private (not public federation deliverables):** `osint-wiki`, **Cemini Financial Suite** (`../projects/CeminiSuite`). **Public on GitHub:** `ccc-wiki` and the six domain wikis (including `gambling-wiki`, `game-dev-wiki`). See root `README.md` for repo URLs.
 
 ### Cross-wiki link syntax
 
@@ -426,6 +427,7 @@ The OSINT workspace includes a **conductor** (MCP server that routes queries) + 
    - `rsync -avz /Users/claudiobarone/Desktop/projects/Image\ gen/wiki/ cemini-librarian:/opt/cemini-wiki/image-gen-wiki/wiki/`
    - `rsync -avz "/Users/claudiobarone/Desktop/projects/SEO:GEO B&M Business/wiki/" cemini-librarian:/opt/cemini-wiki/seo-geo-wiki/wiki/`
    - `rsync -avz "/Users/claudiobarone/Desktop/projects/Gambling wiki/wiki/" cemini-librarian:/opt/cemini-wiki/gambling-wiki/wiki/`
+   - `rsync -avz "/Users/claudiobarone/Desktop/projects/Game Dev wiki/wiki/" cemini-librarian:/opt/cemini-wiki/game-dev-wiki/wiki/`
 2. Run `kb ingest` on the librarian to reindex
 3. Use `conductor_query` tool (exposed via OSINT's `conductor/mcp_server.py`) to query across all wikis
 

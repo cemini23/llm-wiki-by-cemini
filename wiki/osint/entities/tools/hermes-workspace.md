@@ -4,9 +4,11 @@ type: entity
 tags: [tool, hermes, agent-ui, k113]
 keywords: [hermes-workspace, outsourc-e, monaco, tmux, kb-server]
 related:
+  - entities/tools/hermes-agent.md
   - sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md
   - concepts/tool-evaluation-framework.md
   - concepts/librarian-server-architecture.md
+  - concepts/hermes-laptop-operator-playbook.md
   - "@ccc-wiki/entities/tools/hermes-workspace.md"
 maturity: draft
 created: 2026-06-12
@@ -43,8 +45,13 @@ Native web workspace for Hermes Agent: streaming chat, PTY terminal, memory brow
 |-------|--------|
 | Node v24.13 | PASS (≥22) |
 | `npm install --dry-run` | PASS |
-| `hermes-agent` installed | **No** — UI start blocked until Nous installer runs |
+| `hermes-agent` v0.16.0 | PASS (`~/.local/bin/hermes`) |
+| Gateway + UI | PASS (8642 + :3000) |
+| SkillClaw + `doctor hermes` | PASS 2026-06-12 |
 
-Report: `.local/reports/k113-laptop-trial-2026-06-12.md`
+Report: `.local/reports/k113-laptop-trial-2026-06-12.md`  
+Playbook: @concepts/hermes-laptop-operator-playbook.md
 
-**NO-GO:** prod `/opt/cemini`, 24/7 trading path, librarian replacement.
+**NO-GO:** prod `/opt/cemini`, 24/7 trading path.
+
+**Librarian:** headless gateway + Telegram **CONDITIONAL-GO** (no workspace UI). See @concepts/hermes-laptop-operator-playbook.md.
