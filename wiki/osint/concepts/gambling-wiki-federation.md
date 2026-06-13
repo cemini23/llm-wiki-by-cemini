@@ -38,7 +38,7 @@ Pointer hub for the public **@gambling-wiki** repo (`../projects/Gambling wiki/`
 
 ### Eval prompt (bulk URL batches)
 
-Use `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` (v6 body at CCC `prompts/deep-research-multi-wiki-eval-v6-2026-05-31.md`) — eight surfaces; **gambling-wiki** = surface 3 (retail betting/DFS vs OSINT bots).
+Use `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` (v7 body at CCC `prompts/deep-research-multi-wiki-eval-v7-2026-06-13.md`) — nine surfaces; **gambling-wiki** = surface 3 (retail betting/DFS vs OSINT bots). **game-dev-wiki** = surface 8.
 
 ### Split
 

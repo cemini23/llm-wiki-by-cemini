@@ -7,6 +7,7 @@ related:
   - concepts/gambling-wiki-federation.md
   - concepts/federated-daily-research-digest.md
   - entities/tools/claude-code-game-studios.md
+  - @ccc-wiki/concepts/deep-research-evaluation-prompt.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-13
@@ -18,6 +19,7 @@ updated: 2026-06-13
 - @game-dev-wiki/concepts/agent-harness-castle-project.md — game-specific harness
 - @game-dev-wiki/meta/cross-wiki-routing.md — ingest routing
 - @ccc-wiki/entities/tools/claude-code-game-studios.md — role graph steal-from
+- @ccc-wiki/concepts/deep-research-evaluation-prompt.md — v7 eval surface 8 (game-dev)
 - @concepts/federated-daily-research-digest.md — per-wiki digest rollout
 
 ## Raw Concept
@@ -28,7 +30,7 @@ Pointer hub for the public **@game-dev-wiki** repo (`../projects/Game Dev wiki/`
 
 ### Eval prompt (bulk URL batches)
 
-Use `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` (v7 body at `prompts/deep-research-multi-wiki-eval-v7-2026-06-13.md`) — nine surfaces; **game-dev-wiki** = surface 9 (hobby game dev, engines, agent-assisted slices).
+Use `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` (v7 body at `prompts/deep-research-multi-wiki-eval-v7-2026-06-13.md`) — nine surfaces; **game-dev-wiki** = surface 8 (hobby game dev, engines, agent-assisted slices).
 
 ### Split
 

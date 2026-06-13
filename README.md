@@ -109,7 +109,7 @@ scripts/sync_wiki_to_librarian.sh
 
 **Sync:** `scripts/sync_wiki_to_librarian.sh` (hourly cron + post-commit) rsyncs all seven wikis to `cemini-librarian:/opt/cemini-wiki/<alias>/wiki/`.
 
-**Eval prompt:** `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v6-2026-05-31.md` (eight surfaces; `gambling-wiki` = surface 3).
+**Eval prompt:** `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v7-2026-06-13.md` (nine surfaces; `gambling-wiki` = surface 3; `game-dev-wiki` = surface 8).
 
 ## Cemini media
 

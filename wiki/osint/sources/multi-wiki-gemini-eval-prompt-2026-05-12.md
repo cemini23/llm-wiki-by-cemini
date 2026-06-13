@@ -55,7 +55,7 @@ updated: 2026-05-21
 - **Use**: Copy `## Snippets → ## The prompt (verbatim, copy-paste ready)` into Gemini Deep Research alongside the URL list to be evaluated.
 - **Superseded for new batches (2026-05-21):** v3 + v4 at `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` — `prompts/deep-research-multi-wiki-eval-v4-2026-05-21.md` (current), `prompts/deep-research-multi-wiki-eval-v3-2026-05-21.md` (frozen for K53–K55). v3 fixes v2's mislabeled surface 7 ("Workflow") → **CCC wiki**.
 
-> **Archive (v2, May 2026).** Superseded for new eval batches by `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` (v6; eight surfaces incl. `gambling-wiki`). Kept as historical record of the false-NO-GO fix and v1→v2 design changes.
+> **Archive (v2, May 2026).** Superseded for new eval batches by `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` (v7; nine surfaces incl. `gambling-wiki` + `game-dev-wiki`). Kept as historical record of the false-NO-GO fix and v1→v2 design changes.
 
 ## Narrative
 
