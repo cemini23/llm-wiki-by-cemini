@@ -743,6 +743,29 @@ def sb_a6o_vs_shove(*, shove_to: int = 1000, hero_stack: int = 1000) -> dict:
     )
 
 
+def sb_k4o_flop_r26(*, villain_bet: int = 12, pot: int = 40) -> dict:
+    """K4o SB missed flop — HL R26 #01 (−6 on 9d3hQc)."""
+    return six_max_table(
+        name="sb_k4o_flop_r26",
+        hero_seat=2,
+        button_seat=1,
+        street="Flop",
+        board=["9d", "3h", "Qc"],
+        pot=pot,
+        hero_hole=["4d", "Kd"],
+        hero_stack=200,
+        hero_bet=0,
+        villain_bets={3: villain_bet},
+        stacks={2: 200},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def sb_t7s_paired_flop(*, villain_bet: int = 45, pot: int = 90) -> dict:
     """T7s SB on paired 88 flop — HL R19 analyze #01 (−45)."""
     return six_max_table(

@@ -31,6 +31,7 @@ from tests.helpers.cemini_tables import (
     co_72o_paired_river,
     co_63s_paired_river,
     sb_t7s_paired_flop,
+    sb_k4o_flop_r26,
     utg_jts_paired_turn,
     co_t4o_broadway_flop,
     co_a8o_paired_river,
@@ -482,6 +483,14 @@ def regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"call", "raise", "all-in"}),
             required=frozenset({"fold"}),
             notes="SB weak suited gap on paired flop — fold.",
+        ),
+        RegressionSpot(
+            id="prod_k4o_sb_flop_r26",
+            source="HL R26 #01 — K4o SB −6 on 9d3hQc",
+            table=sb_k4o_flop_r26(),
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="SB king-low offsuit missed flop — fold vs bet.",
         ),
         RegressionSpot(
             id="prod_jts_utg_paired_turn",

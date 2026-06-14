@@ -500,6 +500,18 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: SB king-low on ace-paired board — fold")
 
+    # SB OOP king-low offsuit missed flop — K4o SB −6 on 9d3hQc (HL R26 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position == "SB" and not in_position
+            and len(board) >= 3
+            and _is_king_low_offsuit(hc)
+            and not _hero_pairs_flop(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.10), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: SB king-low missed flop — fold")
+
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and not in_position
             and _is_wheel_offsuit(hc)
