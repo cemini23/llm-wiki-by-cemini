@@ -6,12 +6,14 @@ keywords: [godot-stagehand, playwright, mcp, automation]
 related:
   - entities/tools/godot-stagehand.md
   - concepts/ai-game-dev-tool-stack-2026.md
+  - concepts/godot-stagehand-ci-smoke-plan.md
+  - entities/tools/godot-mcp-landscape.md
 read_status: read
 source_type: operator-audit
 source_url: https://github.com/mrf/godot-stagehand
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Raw Concept

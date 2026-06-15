@@ -7,12 +7,13 @@ related:
   - entities/games/stronghold-series.md
   - concepts/stronghold-systems-inventory.md
   - concepts/stronghold-deconstruction.md
+  - concepts/vertical-slice-v0.md
 read_status: read
 source_type: official-manual
 source_url: https://cdn.akamai.steamstatic.com/steam/apps/40950/manuals/Stronghold%20HD%20Manual%20-%20English.pdf
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

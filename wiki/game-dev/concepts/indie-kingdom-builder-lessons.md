@@ -11,9 +11,10 @@ related:
   - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
   - sources/gamespy-stronghold-2-bradbury-qa-2004.md
   - sources/firefly-about-us-studio-history.md
+  - concepts/agent-harness-castle-project.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

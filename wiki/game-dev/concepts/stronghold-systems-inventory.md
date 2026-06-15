@@ -10,9 +10,17 @@ related:
   - concepts/scope-tiers.md
   - sources/stronghold-hd-manual-2001.md
   - sources/stronghold-series-wikipedia-2026-06-13.md
+  - concepts/rts-siege-ai-reference.md
+  - concepts/stronghold-2-systems-inventory.md
+  - concepts/stronghold-modding-ecosystem-shelf.md
+  - entities/projects/castle-sim.md
+  - entities/tools/unofficial-crusader-patch2.md
+  - sources/gamespy-stronghold-2-bradbury-qa-2004.md
+  - sources/gdc-total-war-warhammer-siege-ai.md
+  - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations
@@ -208,6 +216,8 @@ Personalities with distinct castle layouts and aggression — e.g. Saladin (bala
 
 ### Stronghold 2 additions (reference only — Tier 2+)
 
+Full inventory: @concepts/stronghold-2-systems-inventory.md
+
 - **Full 3D** castle construction; wall/tower types changed
 - **Crime system** — peasants commit crimes; guards, courthouse, trials
 - **Punishments** — stocks → torture devices → gallows (honour tradeoffs)
@@ -266,4 +276,4 @@ walls + wood + peasants + archers ≈ 5% of SH1 building count, ~15% of unit ros
 ## Dead Ends
 
 - **Cloning Crusader mercenary economy in v0** — gold instant army skips the workshop fantasy; defer.
-- **SH2 crime/honour in Tier 1** — doubles systems surface; belongs in Tier 2 if ever.
+- **SH2 crime/honour in Tier 1** — was deferred when target was SH1; **reopened** for operator SH2 clone — phase after popularity spine (@concepts/operator-vision-sh2-personal-clone.md).

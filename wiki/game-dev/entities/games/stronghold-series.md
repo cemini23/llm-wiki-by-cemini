@@ -14,9 +14,18 @@ related:
   - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
   - sources/firefly-about-us-studio-history.md
   - sources/firefly-making-of-stronghold-legends-2018.md
+  - entities/tools/unofficial-crusader-patch2.md
+  - concepts/stronghold-modding-ecosystem-shelf.md
+  - concepts/operator-vision-sh2-personal-clone.md
+  - concepts/stronghold-2-systems-inventory.md
+  - sources/stronghold-2-heaven-gameinfo-2026-06-13.md
+  - sources/mobygames-stronghold-2-2026-06-13.md
+  - concepts/medieval-sim-fun-vs-accuracy.md
+  - sources/leiden-medieval-city-builder-accuracy-2020.md
+  - sources/unofficial-crusader-patch2-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations
@@ -26,8 +35,9 @@ updated: 2026-06-13
 - @sources/gamespy-stronghold-2-bradbury-qa-2004.md — siege/wall design (no GDC postmortem exists)
 - @sources/simon-bradbury-stronghold-heaven-sh3-2011.md — scope discipline, SH1 return
 - @sources/firefly-about-us-studio-history.md — studio timeline, Definitive Edition success
-
-## Raw Concept
+- @entities/tools/unofficial-crusader-patch2.md — community MIT patch (AIV / balance study)
+- @concepts/stronghold-2-systems-inventory.md — **SH2 mechanics depth** (operator clone target)
+- @concepts/operator-vision-sh2-personal-clone.md — personal-use north star
 
 Firefly Studios **Stronghold** franchise as design north star — mechanics and feel are fair research; assets and lore are not.
 
@@ -42,7 +52,7 @@ Firefly Studios **Stronghold** franchise as design north star — mechanics and 
 | Generation | Engine | Titles | Perspective | Hobby Tier 1 fit |
 |------------|--------|--------|-------------|------------------|
 | **1 — 2D isometric** | Proprietary 2D (DirectX 7 era); pre-rendered-style sprites | Stronghold (2001), Crusader (2002), Crusader Extreme (2008), Kingdoms (2012 MMO) | Isometric 2D | **Primary reference** |
-| **2 — Early 3D** | Vision Engine (buggy at launch) | Stronghold 2 (2005), Legends (2006) | Full 3D castle | Out of scope v0 |
+| **2 — Early 3D** | Vision Engine (buggy at launch) | Stronghold 2 (2005), Legends (2006) | Full 3D castle | **Operator north star** — @concepts/operator-vision-sh2-personal-clone.md |
 | **3 — Later 3D** | New proprietary 3D | Stronghold 3 (2011), Crusader II (2014), Warlords (2021) | 3D, free-angle walls (SH3+) | Out of scope |
 | **4 — UE5** | Unreal Engine 5 | Stronghold 4 (announced 2026) | Modern 3D | Watch only |
 
@@ -103,4 +113,4 @@ Study **systems** (economy loops, wall placement feel, siege pacing). Do not shi
 
 ## Snippets
 
-> Tier 1 hobby target = **Stronghold (2001) + slice of Crusader skirmish energy**, implemented in Godot 2D isometric — not SH2 honour/crime sim, not SH3 3D engine.
+> **Operator target (2026-06-13):** personal **Stronghold 2** clone — mechanics + feel, not Firefly assets. Implementation may stay 2D (Fork A) while layering SH2 honour/crime/kingmaker. See `briefs/GDD-sh2-personal-clone.md`.

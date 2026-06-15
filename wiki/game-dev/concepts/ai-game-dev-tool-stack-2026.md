@@ -10,10 +10,22 @@ related:
   - entities/tools/hi-godot-ai.md
   - entities/tools/godot-stagehand.md
   - entities/tools/godot-ai-playtest.md
+  - entities/tools/serpent-ai.md
+  - entities/tools/airtest.md
   - sources/exa-ai-gamedev-tools-batch-2026-06-13.md
+  - sources/tool-evaluation-cross-wiki-routing-2026-06-13.md
+  - sources/serpent-ai-phase-0-audit-2026-06-13.md
+  - sources/airtest-phase-0-audit-2026-06-13.md
+  - concepts/agent-harness-castle-project.md
+  - concepts/game-dev-wiki-scope.md
+  - concepts/llm-npc-runtime-ai-shelf.md
+  - concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md
+  - sources/bigdevsoon-void-balls-ai-10days-2025.md
+  - sources/godot-stagehand-phase-0-audit-2026-06-13.md
+  - sources/hi-godot-ai-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations
@@ -67,6 +79,13 @@ Catalog of **AI + automation tools** for game development — codegen, editor MC
 | [godot-runtime-bridge](https://github.com/Aesthetic-Engine/godot-runtime-bridge) | — | Runtime inspect | WATCH — play/debug |
 
 **Default for castle-sim v0:** markdown spec + Cursor — **no MCP write access** until Phase-0 audit (@entities/tools/godot-mcp-landscape.md).
+
+### Visual / screen automation
+
+| Tool | Mechanism | Posture | Notes |
+|------|-----------|---------|-------|
+| [Airtest](https://github.com/AirtestProject/Airtest) | Image template matching | **Adopt** @ccc-wiki | @entities/tools/airtest.md — Phase-0 CONDITIONAL-GO |
+| [SerpentAI](https://github.com/SerpentAI/SerpentAI) | Pixel agent environments | **STEAL-FROM** | Dormant; @entities/tools/serpent-ai.md — Phase-0 complete |
 
 ### Testing & playtest automation
 

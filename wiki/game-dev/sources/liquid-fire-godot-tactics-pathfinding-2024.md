@@ -7,12 +7,13 @@ related:
   - concepts/godot-pathfinding-patterns.md
   - concepts/rts-pathfinding-approaches.md
   - entities/engines/godot-4.md
+  - sources/shaggydev-tactics-engine-devlog-2023.md
 read_status: read
 source_type: tutorial-series
 source_url: https://theliquidfire.com/2024/04/11/godot-tactics-rpg-05-pathfinding/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

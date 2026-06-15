@@ -6,12 +6,13 @@ keywords: [godot, tilemap, pathfinding, astar]
 related:
   - concepts/godot-pathfinding-patterns.md
   - entities/engines/godot-4.md
+  - sources/papierkorp-godot-4-tactical-movement-2023.md
 read_status: read
 source_type: tutorial
 source_url: https://koboldtactics.com/tilemap-pathfinding-made-simple-godot-4-c/
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

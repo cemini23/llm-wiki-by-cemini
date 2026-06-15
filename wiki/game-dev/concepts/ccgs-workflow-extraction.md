@@ -11,9 +11,10 @@ related:
   - sources/ccgs-workflow-catalog-2026.md
   - sources/starlog-ccgs-49-agents-2026.md
   - sources/exa-npc-pcg-ccgs-batch-2026-06-13.md
+  - sources/claude-code-game-studios-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

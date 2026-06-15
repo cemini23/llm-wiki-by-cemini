@@ -6,12 +6,13 @@ keywords: [leifnode, flow-field, dijkstra, integration-field, cost-field]
 related:
   - concepts/flow-field-pathfinding.md
   - sources/emerson-game-ai-pro-flow-field-tiles-2013.md
+  - sources/redblobgames-flow-field-pathfinding-2024.md
 read_status: read
 source_type: blog
 source_url: https://leifnode.com/2013/12/flow-field-pathfinding/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

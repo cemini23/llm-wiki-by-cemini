@@ -7,9 +7,10 @@ related:
   - concepts/ai-game-dev-tool-stack-2026.md
   - entities/tools/godot-stagehand.md
   - sources/godot-ai-playtest-phase-0-audit-2026-06-13.md
+  - entities/tools/godot-mcp-landscape.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

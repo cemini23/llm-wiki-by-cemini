@@ -8,6 +8,8 @@ related:
   - meta/sibling-wiki-inventory.md
   - entities/engines/godot-4.md
   - entities/projects/castle-sim.md
+  - entities/tools/gamedev-resources.md
+  - sources/tool-evaluation-cross-wiki-routing-2026-06-13.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-06-13
@@ -31,6 +33,8 @@ Minimum art spec for Tier 1 vertical slice — placeholders acceptable; final pi
 Vertical slice v0 does **not** require Stronghold-quality pre-rendered isometric art. Accept:
 
 - Flat-color or Kenney-style placeholder tiles
+- [OpenGameArt](https://opengameart.org/) CC0/CC-BY assets — index via @entities/tools/gamedev-resources.md
+- [Poly Haven](https://polyhaven.com/) — PBR reference if 3D props added later
 - Single wall segment, tree, peasant, archer silhouettes
 - 32×16 or 64×32 isometric cell (match `TileSet` tile shape)
 
@@ -62,9 +66,9 @@ See @meta/sibling-wiki-inventory.md § image-gen-wiki.
 
 ```
 v0 placeholder checklist:
-[ ] 1 ground tile
-[ ] 1 wall segment (+ optional crenellation variant)
-[ ] 1 tree resource node
-[ ] 1 peasant walk cycle (4 frames OK)
-[ ] 1 archer + projectile sprite
+[x] 1 ground tile
+[x] 1 wall segment (+ optional crenellation variant)
+[x] 1 tree resource node
+[x] 1 peasant walk cycle (4 frames OK)
+[x] 1 archer + projectile sprite
 ```

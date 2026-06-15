@@ -12,9 +12,10 @@ related:
   - sources/llmunity-unity-npc-plugin.md
   - sources/morganpage-local-npc-dialogue-2026.md
   - sources/exa-npc-pcg-ccgs-batch-2026-06-13.md
+  - sources/ixie-agentic-npc-balance-2026.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

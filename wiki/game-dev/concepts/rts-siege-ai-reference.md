@@ -8,9 +8,11 @@ related:
   - concepts/stronghold-systems-inventory.md
   - concepts/vertical-slice-v0.md
   - concepts/scope-tiers.md
+  - concepts/stronghold-modding-ecosystem-shelf.md
+  - entities/tools/unofficial-crusader-patch2.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

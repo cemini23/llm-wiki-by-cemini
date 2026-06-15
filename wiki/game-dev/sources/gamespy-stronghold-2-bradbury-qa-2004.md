@@ -9,12 +9,17 @@ related:
   - concepts/indie-kingdom-builder-lessons.md
   - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
   - sources/exa-flowfields-firefly-batch-2026-06-13.md
+  - concepts/godot-3d-sh2-architect-spike-plan.md
+  - concepts/stronghold-2-architect-controls.md
+  - concepts/stronghold-2-systems-inventory.md
+  - sources/firefly-about-us-studio-history.md
+  - sources/firefly-making-of-stronghold-legends-2018.md
 read_status: read
 source_type: interview
 source_url: http://pc.gamespy.com/pc/stronghold-2/570447p1.html
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

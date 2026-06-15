@@ -7,12 +7,13 @@ related:
   - concepts/ai-assisted-game-dev-workflows.md
   - concepts/ai-game-dev-tool-stack-2026.md
   - sources/exa-deep-research-batch-2026-06-13.md
+  - sources/exa-npc-pcg-ccgs-batch-2026-06-13.md
 read_status: read
 source_type: exa-batch
 source_url: wiki/sweeps/2026-06-13-exa-ai-gamedev-tools-batch.json
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Raw Concept

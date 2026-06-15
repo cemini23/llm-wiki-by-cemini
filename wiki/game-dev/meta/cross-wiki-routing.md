@@ -8,9 +8,11 @@ related:
   - meta/daily-research-digest-cadence.md
   - meta/sibling-wiki-inventory.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
+  - sources/tool-evaluation-cross-wiki-routing-2026-06-13.md
+  - concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md
 maturity: core
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations
@@ -51,6 +53,17 @@ Ingest routing when a source touches game design, agent harness, or art pipeline
 Use `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` (v7 body at CCC `prompts/deep-research-multi-wiki-eval-v7-2026-06-13.md`) — **game-dev-wiki** = surface 8.
 
 From OSINT ingest: `python3 scripts/cross_wiki_route.py --target-wiki game-dev-wiki`
+
+### Pending stubs (2026-06-13 tool eval batch)
+
+| Sibling | Topic | game-dev anchor |
+|---------|-------|-----------------|
+| @ccc-wiki | SerpentAI visual parsing for lazy-tool | @entities/tools/serpent-ai.md |
+| @ccc-wiki | Airtest Adopt + install path | @entities/tools/airtest.md |
+| @ccc-wiki | AITradeGame multi-provider LLM hooks | @sources/tool-evaluation-cross-wiki-routing-2026-06-13.md |
+| @cybersecurity-wiki | UCP2 memory hooking case study | @entities/tools/unofficial-crusader-patch2.md |
+| @cybersecurity-wiki | AI-Aimbot adversarial baseline | @concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md |
+| @image-gen-wiki | GameDev-Resources → OpenGameArt / Poly Haven | @entities/tools/gamedev-resources.md |
 
 ## Snippets
 

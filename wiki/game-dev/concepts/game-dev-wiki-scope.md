@@ -12,9 +12,14 @@ related:
   - meta/cross-wiki-routing.md
   - meta/daily-research-digest-cadence.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
+  - concepts/deferred-engine-candidates.md
+  - concepts/rts-networking-deferred.md
+  - entities/tools/claude-code-game-studios.md
+  - meta/sibling-wiki-inventory.md
+  - sources/arxiv-1705-09704-lockstep-simulation.md
 maturity: core
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

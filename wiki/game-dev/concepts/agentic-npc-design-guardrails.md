@@ -7,9 +7,11 @@ related:
   - concepts/llm-npc-runtime-ai-shelf.md
   - sources/ixie-agentic-npc-balance-2026.md
   - sources/ubisoft-teammates-ai-experiment-2025.md
+  - sources/exa-npc-pcg-ccgs-batch-2026-06-13.md
+  - sources/morganpage-local-npc-dialogue-2026.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

@@ -6,12 +6,13 @@ keywords: [ccgs, workflow-catalog, phases, artifacts, gate-check]
 related:
   - concepts/ccgs-workflow-extraction.md
   - entities/tools/claude-code-game-studios.md
+  - sources/claude-code-game-studios-phase-0-audit-2026-06-13.md
 read_status: read
 source_type: upstream-config
 source_url: https://github.com/Donchitos/Claude-Code-Game-Studios/blob/main/.claude/docs/workflow-catalog.yaml
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Raw Concept

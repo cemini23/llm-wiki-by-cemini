@@ -9,9 +9,10 @@ related:
   - concepts/art-pipeline-v0-requirements.md
   - concepts/agent-harness-castle-project.md
   - entities/projects/castle-sim.md
+  - sources/exa-deep-research-batch-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

@@ -10,9 +10,14 @@ related:
   - concepts/godot-stagehand-ci-smoke-plan.md
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md
   - sources/godot-stagehand-castle-sim-ci-eval-2026-06-13.md
+  - entities/tools/airtest.md
+  - entities/tools/godot-mcp-landscape.md
+  - entities/tools/serpent-ai.md
+  - sources/airtest-phase-0-audit-2026-06-13.md
+  - sources/godot-ai-playtest-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

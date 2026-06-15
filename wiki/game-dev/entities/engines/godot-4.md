@@ -8,32 +8,47 @@ related:
   - concepts/scope-tiers.md
   - concepts/stronghold-deconstruction.md
   - entities/tools/claude-code-game-studios.md
+  - concepts/godot-3d-sh2-architect-spike-plan.md
+  - concepts/operator-vision-sh2-personal-clone.md
+  - entities/projects/castle-sim.md
   - sources/godot-4-phase-0-audit-2026-06-13.md
+  - concepts/art-pipeline-v0-requirements.md
+  - concepts/deferred-engine-candidates.md
+  - concepts/godot-pathfinding-patterns.md
+  - concepts/rts-pathfinding-approaches.md
+  - entities/tools/hi-godot-ai.md
+  - sources/kobold-tactics-tilemap-pathfinding-2023.md
+  - sources/liquid-fire-godot-tactics-pathfinding-2024.md
+  - sources/morinaga-shin-koikoi-claude-godot-2026.md
+  - sources/pchojecki-catvivors-claude-code-steam-2026.md
+  - sources/vav-labs-godot-flow-fields-2026.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations
 
-- @concepts/vertical-slice-v0.md — first slice target; repo gate cleared at **CONDITIONAL-GO**
+- @concepts/godot-3d-sh2-architect-spike-plan.md — **Fork B** 3D SH2 line (2026-06-13)
+- @concepts/operator-vision-sh2-personal-clone.md — fork locked
+- @concepts/vertical-slice-v0.md — 2D slice gate (historical); 3D spike supersedes presentation
 - @concepts/stronghold-deconstruction.md — pathfinding flagged high risk; mitigated below
 - @image-gen-wiki/index.md — sprite/tile art pipeline
 - @sources/godot-4-phase-0-audit-2026-06-13.md — audit trail (clone + kit scan)
 
 ## Raw Concept
 
-Phase-0 candidate for Tier 1 castle sim — 2D isometric, grid building, Mac-native editor.
+Phase-0 **CONDITIONAL-GO** — 2D spike validated; **3D SH2 clone** is active presentation target (Fork B).
 
 ## Narrative
 
 ### Why Godot for this project
 
-- MIT license, Mac editor, strong 2D path
-- First-class isometric `TileMapLayer` + grid snap via `local_to_map` / `map_to_local`
-- `AStarGrid2D` matches dynamic wall obstacles without navmesh rebakes
-- Agent codegen tooling has growing Godot corpus
-- RTS networking **not** built-in — defer MP research
+- MIT license, Mac-native editor (Apple Silicon universal)
+- **3D (Fork B):** `NavigationAgent3D`, CSG/instanced walls, orthographic architect camera — SH2 build fantasy
+- **2D (legacy):** `AStarGrid2D` + TileMap — sim logic prototype; do not extend presentation
+- Agent codegen corpus strong for GDScript
+- RTS MP not built-in — defer
 
 ### Phase-0 audit (2026-06-13)
 

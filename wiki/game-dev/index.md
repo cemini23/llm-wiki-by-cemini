@@ -27,6 +27,17 @@ Catalog of all wiki pages. Updated on each ingest.
 | [rts-networking-deferred](concepts/rts-networking-deferred.md) | draft | Lockstep shelf — MP later |
 | [rts-siege-ai-reference](concepts/rts-siege-ai-reference.md) | validated | Tier 2+ siege AI shelf |
 | [godot-stagehand-ci-smoke-plan](concepts/godot-stagehand-ci-smoke-plan.md) | validated | W2 CI smoke research (castle-sim) |
+| [tool-evaluation-cross-wiki-batch-2026-06-13](concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md) | validated | 56-target tool eval + routing verdicts |
+| [stronghold-modding-ecosystem-shelf](concepts/stronghold-modding-ecosystem-shelf.md) | validated | Crusader mod repos; UCP2 MIT exception |
+| [stronghold-2-systems-inventory](concepts/stronghold-2-systems-inventory.md) | draft | SH2 honour/crime/kingmaker — clone target |
+| [stronghold-2-popularity-model](concepts/stronghold-2-popularity-model.md) | validated | SH2 eight-category popularity tables |
+| [stronghold-2-crime-punishment-loop](concepts/stronghold-2-crime-punishment-loop.md) | validated | Crime state machine + punishment roster |
+| [stronghold-2-economy-storage-chains](concepts/stronghold-2-economy-storage-chains.md) | validated | Stockpile/granary chains + labor caps |
+| [stronghold-2-architect-controls](concepts/stronghold-2-architect-controls.md) | validated | Spacebar architect + hotkeys for Fork B |
+| [stronghold-2-github-ecosystem-shelf](concepts/stronghold-2-github-ecosystem-shelf.md) | validated | SH2 GitHub patches, trainers, S2M RE |
+| [operator-vision-sh2-personal-clone](concepts/operator-vision-sh2-personal-clone.md) | validated | Personal SH2 north star; **Fork B 3D** |
+| [godot-3d-sh2-architect-spike-plan](concepts/godot-3d-sh2-architect-spike-plan.md) | draft | M0.3D architect camera + wall spike |
+| [deferred-engine-candidates](concepts/deferred-engine-candidates.md) | draft | libGDX + Duality defer shelf |
 
 ## Entities — Engines
 
@@ -38,7 +49,7 @@ Catalog of all wiki pages. Updated on each ingest.
 
 | Page | Maturity | Summary |
 |------|----------|---------|
-| [castle-sim](entities/projects/castle-sim.md) | draft | Godot implementation repo pointer |
+| [castle-sim](entities/projects/castle-sim.md) | validated | SH2 personal clone target; Godot repo |
 
 ## Entities — Tools
 
@@ -50,6 +61,12 @@ Catalog of all wiki pages. Updated on each ingest.
 | [sods2-godot-mcp](entities/tools/sods2-godot-mcp.md) | validated | Node MCP alt — **CONDITIONAL-GO** W2 |
 | [godot-stagehand](entities/tools/godot-stagehand.md) | validated | CI automation — **CONDITIONAL-GO** W2 |
 | [godot-ai-playtest](entities/tools/godot-ai-playtest.md) | validated | TCP automation alt — **CONDITIONAL-GO** W2 |
+| [serpent-ai](entities/tools/serpent-ai.md) | validated | Visual automation — **STEAL-FROM** (Phase-0) |
+| [airtest](entities/tools/airtest.md) | validated | Image UI test — **CONDITIONAL-GO** @ccc |
+| [unofficial-crusader-patch2](entities/tools/unofficial-crusader-patch2.md) | validated | SHC mod — **STEAL-FROM** (AIV study) |
+| [stronghold2-mp-ai-patch](entities/tools/stronghold2-mp-ai-patch.md) | validated | SH2 MP AI unlock — MIT pattern patch |
+| [stronghold2-analyse-hub](entities/tools/stronghold2-analyse-hub.md) | draft | SH2 DX9 research overlay — MIT |
+| [gamedev-resources](entities/tools/gamedev-resources.md) | validated | CC0 asset link index |
 
 ## Entities — Games (reference)
 
@@ -114,3 +131,11 @@ Catalog of all wiki pages. Updated on each ingest.
 | [papierkorp-godot-4-tactical-movement-2023](sources/papierkorp-godot-4-tactical-movement-2023.md) | read |
 | [godot-stagehand-castle-sim-ci-eval-2026-06-13](sources/godot-stagehand-castle-sim-ci-eval-2026-06-13.md) | read |
 | [arxiv-1705.09704-lockstep-simulation](sources/arxiv-1705.09704-lockstep-simulation.md) | read |
+| [tool-evaluation-cross-wiki-routing-2026-06-13](sources/tool-evaluation-cross-wiki-routing-2026-06-13.md) | read |
+| [serpent-ai-phase-0-audit-2026-06-13](sources/serpent-ai-phase-0-audit-2026-06-13.md) | read |
+| [airtest-phase-0-audit-2026-06-13](sources/airtest-phase-0-audit-2026-06-13.md) | read |
+| [unofficial-crusader-patch2-phase-0-audit-2026-06-13](sources/unofficial-crusader-patch2-phase-0-audit-2026-06-13.md) | read |
+| [stronghold-2-heaven-gameinfo-2026-06-13](sources/stronghold-2-heaven-gameinfo-2026-06-13.md) | read |
+| [stronghold-2-heaven-targeted-2026-06-13](sources/stronghold-2-heaven-targeted-2026-06-13.md) | read |
+| [github-stronghold-2-scan-2026-06-13](sources/github-stronghold-2-scan-2026-06-13.md) | read |
+| [mobygames-stronghold-2-2026-06-13](sources/mobygames-stronghold-2-2026-06-13.md) | read |

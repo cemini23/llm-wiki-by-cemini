@@ -7,12 +7,13 @@ related:
   - entities/games/stronghold-series.md
   - concepts/indie-kingdom-builder-lessons.md
   - sources/gamespy-stronghold-2-bradbury-qa-2004.md
+  - sources/firefly-making-of-stronghold-legends-2018.md
 read_status: read
 source_type: official
 source_url: https://fireflyworlds.com/about-us/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

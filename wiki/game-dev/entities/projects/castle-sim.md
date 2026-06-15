@@ -10,9 +10,18 @@ related:
   - concepts/agent-harness-castle-project.md
   - concepts/godot-stagehand-ci-smoke-plan.md
   - concepts/art-pipeline-v0-requirements.md
-maturity: draft
+  - concepts/godot-3d-sh2-architect-spike-plan.md
+  - concepts/operator-vision-sh2-personal-clone.md
+  - concepts/flow-field-pathfinding.md
+  - concepts/godot-pathfinding-patterns.md
+  - concepts/rts-pathfinding-approaches.md
+  - concepts/stronghold-2-systems-inventory.md
+  - meta/sibling-wiki-inventory.md
+  - sources/godot-stagehand-castle-sim-ci-eval-2026-06-13.md
+  - sources/shaggydev-udd-navigation-2025.md
+maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations
@@ -32,18 +41,27 @@ Separate git repo for runnable Godot code. Wiki holds spec; repo holds implement
 | **Visibility** | Local (private GitHub TBD — ROADMAP D3) |
 | **Engine** | Godot 4.5+ (pin 4.5.2 or 4.6.x stable) |
 | **Language** | GDScript |
-| **Status** | Scaffolded 2026-06-13; milestone 1 = pathfinding spike |
+| **Status** | Tier 2 slice 1 **Done** (food/popularity); Tier 1 complete |
+| **North star** | Personal **Stronghold 2** clone — Fork **B (3D)** |
+| **Next gate** | M0.3D architect spike — `briefs/story-005-3d-architect-spike.md` |
+| **GDD** | `briefs/GDD-sh2-personal-clone.md` (local) |
+| **Decision log** | `castle-sim/docs/PROJECT_LOG.md` |
 
 ### Repo layout
 
 ```
 castle-sim/
   project.godot
-  scenes/main.tscn
-  scenes/spike/pathfinding_spike.tscn
+  scenes/game_3d/                # Fork B primary (story-005+)
+  scenes/game/game.tscn          # 2D logic lab — maintenance only
+  scripts/world3d/               # architect camera, wall placer
+  scripts/labor/                 # port to 3D after M0.3D PROCEED
   scripts/grid/wall_grid.gd
-  scripts/pathfinding/pathfinding_spike.gd
-  assets/placeholders/
+  assets/placeholders/           # Kenney-style PNGs (tools/art/generate_placeholders.py)
+  scripts/rendering/placeholder_art.gd
+  docs/PROJECT_LOG.md            # ADR-lite + session log
+  addons/stagehand/              # godot-stagehand (pin: STAGEHAND_PIN.txt)
+  scripts/ci/stagehand_l0_smoke.sh
 ```
 
 ### Cursor workflow

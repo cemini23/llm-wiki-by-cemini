@@ -9,9 +9,11 @@ related:
   - entities/engines/godot-4.md
   - concepts/agent-harness-castle-project.md
   - sources/hi-godot-ai-phase-0-audit-2026-06-13.md
+  - entities/tools/sods2-godot-mcp.md
+  - sources/sods2-godot-mcp-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

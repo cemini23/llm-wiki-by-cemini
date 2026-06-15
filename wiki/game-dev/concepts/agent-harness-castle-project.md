@@ -16,9 +16,11 @@ related:
   - entities/tools/godot-mcp-landscape.md
   - meta/sibling-wiki-inventory.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
+  - entities/projects/castle-sim.md
+  - entities/tools/hi-godot-ai.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

@@ -6,12 +6,13 @@ keywords: [godot-ai-playtest, tcp, json-rpc, automation]
 related:
   - entities/tools/godot-ai-playtest.md
   - entities/tools/godot-stagehand.md
+  - entities/tools/godot-mcp-landscape.md
 read_status: read
 source_type: operator-audit
 source_url: https://github.com/marcushale/godot-ai-playtest
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Raw Concept

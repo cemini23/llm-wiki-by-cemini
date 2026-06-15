@@ -8,12 +8,13 @@ related:
   - concepts/rts-pathfinding-approaches.md
   - sources/shaggydev-tactics-engine-devlog-2023.md
   - entities/projects/castle-sim.md
+  - sources/papierkorp-godot-4-tactical-movement-2023.md
 read_status: read
 source_type: devlog
 source_url: https://shaggydev.com/2025/05/19/udd-navigation/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

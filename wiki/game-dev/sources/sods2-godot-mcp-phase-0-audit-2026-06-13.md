@@ -6,12 +6,13 @@ keywords: [sods2, godot-mcp, typescript, phase-0]
 related:
   - entities/tools/godot-mcp-landscape.md
   - entities/tools/hi-godot-ai.md
+  - entities/tools/sods2-godot-mcp.md
 read_status: read
 source_type: operator-audit
 source_url: https://github.com/Sods2/godot-mcp
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Raw Concept

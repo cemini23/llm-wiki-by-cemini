@@ -12,9 +12,19 @@ related:
   - entities/engines/godot-4.md
   - entities/projects/castle-sim.md
   - sources/stronghold-hd-manual-2001.md
+  - concepts/ccgs-workflow-extraction.md
+  - concepts/godot-stagehand-ci-smoke-plan.md
+  - concepts/indie-kingdom-builder-lessons.md
+  - concepts/operator-vision-sh2-personal-clone.md
+  - concepts/rts-pathfinding-approaches.md
+  - concepts/rts-siege-ai-reference.md
+  - entities/games/stronghold-series.md
+  - sources/bootstrap-game-dev-wiki-2026-06-13.md
+  - sources/gdc-kingdoms-and-castles-postmortem-2019.md
+  - sources/godot-4-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations
@@ -71,6 +81,10 @@ Food chain, stone, popularity, enemy raids, save/load (nice-to-have later). See 
 ### Repo gate
 
 Godot Phase-0 **CONDITIONAL-GO** (2026-06-13). **`castle-sim` scaffolded** at `/Users/claudiobarone/Desktop/projects/castle-sim/`. Open as separate Cursor workspace for code.
+
+### Tier 1 rendering (2026-06-13)
+
+**Accepted exception:** top-down colored grid + placeholder rects for Tier 1 close-out (`castle-sim` D-014). Isometric `TileMapLayer` deferred to W3 art pass (`art-pipeline-v0-requirements.md`). Does not block M1 v0 **PROCEED** or story-003 gate.
 
 ## Snippets
 

@@ -8,12 +8,14 @@ related:
   - meta/sibling-wiki-inventory.md
   - sources/gdc-kingdoms-and-castles-postmortem-2019.md
   - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
+  - sources/exa-ai-gamedev-tools-batch-2026-06-13.md
+  - sources/exa-flowfields-firefly-batch-2026-06-13.md
 read_status: read
 source_type: exa-batch
 source_url: wiki/sweeps/2026-06-13-exa-deep-batch.json
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Raw Concept

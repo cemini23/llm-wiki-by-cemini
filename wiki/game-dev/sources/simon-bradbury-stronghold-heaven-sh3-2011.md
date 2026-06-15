@@ -7,12 +7,15 @@ related:
   - entities/games/stronghold-series.md
   - concepts/stronghold-systems-inventory.md
   - concepts/indie-kingdom-builder-lessons.md
+  - concepts/stronghold-2-systems-inventory.md
+  - sources/exa-deep-research-batch-2026-06-13.md
+  - sources/gamespy-stronghold-2-bradbury-qa-2004.md
 read_status: read
 source_type: interview
 source_url: https://stronghold.heavengames.com/fair/interviews/askff20110522/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

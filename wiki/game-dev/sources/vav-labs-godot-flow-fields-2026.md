@@ -7,12 +7,14 @@ related:
   - concepts/flow-field-pathfinding.md
   - concepts/godot-pathfinding-patterns.md
   - entities/engines/godot-4.md
+  - concepts/rts-pathfinding-approaches.md
+  - sources/exa-flowfields-firefly-batch-2026-06-13.md
 read_status: read
 source_type: blog
 source_url: https://vav-labs.com/blog/godot-flow-fields-shared-goal/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

@@ -7,12 +7,14 @@ related:
   - concepts/indie-kingdom-builder-lessons.md
   - concepts/scope-tiers.md
   - concepts/vertical-slice-v0.md
+  - sources/exa-deep-research-batch-2026-06-13.md
+  - sources/gdc-total-war-warhammer-siege-ai.md
 read_status: read
 source_type: conference-talk
 source_url: https://www.gdcvault.com/play/1026241/-Kingdoms-and-Castles
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations

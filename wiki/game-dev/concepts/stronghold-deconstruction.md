@@ -10,9 +10,13 @@ related:
   - entities/games/stronghold-series.md
   - entities/engines/godot-4.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
+  - concepts/game-dev-wiki-scope.md
+  - concepts/stronghold-2-systems-inventory.md
+  - sources/northgard-economy-case-study-2018.md
+  - sources/stronghold-hd-manual-2001.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-15
 ---
 
 ## Relations
