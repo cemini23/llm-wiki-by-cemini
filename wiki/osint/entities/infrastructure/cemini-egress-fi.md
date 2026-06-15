@@ -19,7 +19,7 @@ related:
   - entities/tools/camofox-browser.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-06-14
+updated: 2026-06-15
 # Live-probed 2026-05-20 (read-only SSH via cemini-prod jump host). Refresh on spec/role change.
 ---
 
@@ -69,6 +69,10 @@ This supersedes (a) the abandoned server-side WireGuard on `cemini-prod` (droppe
 Live Hetzner fleet: **`cemini-prod`** (Ashburn trading) + **`cemini-egress-fi`** (this box, Helsinki egress). **`cemini-librarian` deleted 2026-06-14** — see @meta/librarian-decommission-2026-06-14.md.
 
 Historical: this was the **third** server alongside prod and librarian (Ashburn). Helsinki-to-Ashburn RTT ~118–120 ms to former librarian IP `[CONFIRMED 2026-05-22]`.
+
+### Federation raw-source cold store (2026-06-15)
+
+Post-ingest PDFs/docx from all federation wikis land at **`/opt/cemini-bulk/research/<wiki-id>/`** (~65 GB disk free 2026-06-15). Uploaded via `scripts/archive_raw_to_egress.sh` from the laptop; **read-only bulk** — no services, no indexing. Co-located with order egress but separate path from tunnel traffic. See @meta/librarian-decommission-2026-06-14.md.
 
 ### Spare capacity — candidate Cemini AI host
 

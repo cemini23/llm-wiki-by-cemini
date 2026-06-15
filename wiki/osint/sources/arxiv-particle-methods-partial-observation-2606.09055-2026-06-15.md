@@ -30,7 +30,7 @@ clusters: [quant-finance, rl-marl, ml-methods]
 | **Authors** | Laurière, Tan, Yang (NYU Shanghai / CUHK) |
 | **arXiv** | 2606.09055 |
 | **sha256** | `b61c38e68ec25bc3…` |
-| **Location** | `.local/archives/research/arxiv-2606.09055-particle-methods-with-deep-learning-for-stochast.pdf` |
+| **Location** | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2606.09055-particle-methods-with-deep-learning-for-stochast.pdf` |
 | **Retrieved** | 2026-06-15 |
 | **Read status** | read (abstract + §2–3 + financial application pointers) |
 

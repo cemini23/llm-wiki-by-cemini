@@ -15,7 +15,7 @@ related:
   - meta/internal-benchmark-deployment-map.md
 maturity: core
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-15
 ---
 
 ## Relations
@@ -48,12 +48,22 @@ updated: 2026-06-14
 
 | Before | After |
 |--------|-------|
-| Raw PDFs → `cemini-librarian:/opt/cemini-bulk/research/` | Archive under laptop `.local/archives/research/` (or keep in `research to be indexed/` until ingested) |
+| Raw PDFs → `cemini-librarian:/opt/cemini-bulk/research/` | **`cemini-egress-fi:/opt/cemini-bulk/research/<wiki-id>/`** via `scripts/archive_raw_to_egress.sh` (federation-wide; laptop copy removed on success) |
 | Wiki sync hourly → kb-server | **No sync.** Laptop `wiki/` + sibling wiki repos are canonical |
 | `lazy-tool` → kb_search / conductor_query | **Fails** — use Read/grep on local wikis; Exa for gaps |
 | Global **stash** MCP (`localhost:8088` tunnel) | **Offline** — disable tunnel LaunchAgent or expect red MCP |
 | Equity backtest via librarian Arctic | `scripts/refresh_arctic_equity_bars.py` + `.local/arctic-market-dataset/` on laptop |
-| Ingest step 9 scp to librarian | **Removed** from `CLAUDE.md` ingest ritual |
+| Ingest step 9 scp to librarian | **`archive_raw_to_egress.sh`** — scp to egress-fi per wiki id |
+
+### Raw-source cold store (2026-06-15)
+
+Federation wikis archive ingested files to **`cemini-egress-fi:/opt/cemini-bulk/research/<wiki-id>/`** (`osint`, `ccc`, `seo`, `image-gen`, `gambling`, `game-dev`, `cybersec`, `3d-printing`). Run from any wiki root:
+
+```bash
+bash /path/to/OSINT\ WORKSPACE/scripts/archive_raw_to_egress.sh --wiki-id <id> "<local-file>"
+```
+
+Bulk is **read-only cold storage** on the egress box (~65 GB free as of 2026-06-15). It does not participate in order routing (`sshd` tunnel only). Historical librarian bulk on the deleted host is not recoverable unless restored from snapshot.
 
 ### Historical provenance on source pages
 

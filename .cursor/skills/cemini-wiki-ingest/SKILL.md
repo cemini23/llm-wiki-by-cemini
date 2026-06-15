@@ -2,7 +2,7 @@
 name: cemini-wiki-ingest
 description: >-
   OSINT wiki ingest ritual — daily sweep triage, Posts.docx batches, tool-eval
-  docx, K-batch standard flow, preingest, lint, librarian move, ROADMAP/briefs.
+  docx, K-batch standard flow, preingest, lint, egress archive, ROADMAP/briefs.
   Use when ingesting sources, running a K-batch, processing wiki/sweeps/*-daily.md,
   tool evaluation drops, or Posts.docx from research to be indexed/.
 license: MIT
@@ -33,10 +33,9 @@ Read `@.cursor/rules/osint-ingest-gates.mdc` first — human gates are non-negot
 5. **`wiki/index.md`** + **`wiki/log.md`** append
 6. **`python3 scripts/wiki_lint.py`** — fix orphans, bidirectional gaps, dangling links
 7. **`python3 scripts/ingest_session_gate.py`** — mechanical pre-commit check
-8. **`python3 scripts/sync_wiki_to_librarian.sh`** after commit (or post-commit hook)
-9. **`scp` raw to librarian** + rm laptop copy
-10. **ROADMAP.md** + stage **`briefs/`** if prod-touching
-11. **`python3 scripts/skill_audit.py briefs/<file>.md`** before any prod scp
+8. **`bash scripts/archive_raw_to_egress.sh --wiki-id osint "<file>"`** — scp raw to egress-fi; rm local on success
+9. **`ROADMAP.md`** + stage **`briefs/`** if prod-touching
+10. **`python3 scripts/skill_audit.py briefs/<file>.md`** before any prod scp
 
 ## A — Daily sweep ingest
 
@@ -85,7 +84,7 @@ Ingest selected rows from wiki/sweeps/YYYY-MM-DD-daily.md:
 - [ ] index.md + log.md updated
 - [ ] wiki_lint clean
 - [ ] ingest_session_gate.py
-- [ ] librarian scp + laptop rm
+- [ ] archive_raw_to_egress.sh (wiki-id) + Location field on source page
 - [ ] ROADMAP + briefs staged
 - [ ] skill_audit on prod briefs
 

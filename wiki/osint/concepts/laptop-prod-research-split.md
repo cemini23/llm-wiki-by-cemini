@@ -17,12 +17,12 @@ related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
 maturity: validated
 created: 2026-05-23
-updated: 2026-06-14
+updated: 2026-06-15
 ---
 
 ## Relations
 
-- @meta/librarian-decommission-2026-06-14.md — Arctic/stash/kb-server offline
+- @meta/librarian-decommission-2026-06-14.md — Arctic/stash/kb-server offline; raw bulk on egress-fi
 - @entities/tools/arcticdb.md — laptop `.local/arctic-market-dataset/` path
 - @entities/tools/lazy-tool.md — kb_search unavailable without librarian
 
@@ -47,7 +47,7 @@ updated: 2026-06-14
 
 | Step | Task | Run on |
 |------|------|--------|
-| **OSINT wiki / ingest** | Pages, briefs, lint | **Laptop** |
+| **OSINT wiki / ingest** | Pages, briefs, lint; raw archive → egress-fi | **Laptop** (+ **egress-fi** bulk) |
 | **Lane A / live trading** | XSP, PM, HL, Kalshi | **cemini-prod** (+ **egress-fi** for HL/PM orders) |
 | **189 ArcticDB / equity backtest** | `refresh_arctic_equity_bars.py`, `.local/arctic-market-dataset/` | **Laptop** |
 | **109 Kronos** | (rejected) prompt A/B | **cemini-prod** if re-run |
@@ -92,7 +92,7 @@ From **laptop**: `ssh cemini-librarian` (ProxyJump via prod public IP) — uncha
 
 ### Pickup path
 
-Canonical files: `cemini-librarian:/opt/cemini-bulk/research/cemini-handoff/` (also copied to local `briefs/` for agents).
+`[SUPERSEDED 2026-06-15]` Raw sources: `cemini-egress-fi:/opt/cemini-bulk/research/<wiki-id>/`. Historical: `cemini-librarian:/opt/cemini-bulk/research/cemini-handoff/` (deleted host).
 
 ## Snippets
 

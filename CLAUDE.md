@@ -16,9 +16,9 @@ Distribution is a deliberate step, not a default. Stage candidates in `briefs/` 
 
 ## Architecture — three layers
 
-1. **Raw sources** — immutable. You read them, never modify them. **Canonical location: laptop** (`.local/archives/research/` after ingest, or transient `research to be indexed/` before ingest). `[DECOMMISSIONED 2026-06-14]` The Hetzner host `cemini-librarian` and `/opt/cemini-bulk/` were deleted; source pages may still cite old `cemini-librarian:` paths as ingest-time provenance only.
-   - **Drop pattern**: `research to be indexed/` → ingest → archive to `.local/archives/research/<filename>` (gitignored)
-   - **Read pattern**: local file open / Preview; no server `ssh cat` path
+1. **Raw sources** — immutable. You read them, never modify them. **Canonical location: `cemini-egress-fi:/opt/cemini-bulk/research/<wiki-id>/`** after ingest (transient drop: `research to be indexed/` before ingest). `[DECOMMISSIONED 2026-06-14]` Old `cemini-librarian` bulk deleted; source pages may still cite `cemini-librarian:` paths as immutable ingest-time provenance.
+   - **Drop pattern**: `research to be indexed/` → ingest → `bash scripts/archive_raw_to_egress.sh --wiki-id osint "<file>"` (scp + rm local)
+   - **Read pattern**: `ssh cemini-egress-fi cat /opt/cemini-bulk/research/osint/<filename>` or laptop Preview while file is still in inbox
 
 2. **The wiki** — LLM-written, human-read. **Canonical location: laptop `wiki/`** (git). Sibling federation wikis live in their own repos under `~/Desktop/projects/`. No 24/7 kb-server sync — see `@meta/librarian-decommission-2026-06-14.md`.
 
@@ -35,9 +35,9 @@ Staging/output lives outside the wiki:
 
 Two Hetzner servers for **trading**; laptop for **research authoring**. See `@meta/librarian-decommission-2026-06-14.md`.
 
-- **Laptop** (this workspace) — canonical git wiki, raw-source archive, briefs, local backtests. Powered off = curation pauses only; **no** remote wiki serving dependency.
+- **Laptop** (this workspace) — canonical git wiki, briefs, local backtests. Powered off = curation pauses only; **no** remote wiki serving dependency.
 - **cemini-prod** (`/opt/cemini`) — 24/7 CeminiSuite trading stack (Lane A, PM, Kalshi, HL adapters, Redis `intel:*`).
-- **cemini-egress-fi** (Helsinki) — order egress relay for Hyperliquid + Polymarket `POST /order` (SSH tunnel from prod).
+- **cemini-egress-fi** (Helsinki) — order egress relay for Hyperliquid + Polymarket `POST /order` (SSH tunnel from prod); **federation raw-source cold store** at `/opt/cemini-bulk/research/<wiki-id>/` (read-only bulk, separate from order path).
 - **`cemini-librarian`** — **DELETED 2026-06-14.** Historical design: `@concepts/librarian-server-architecture.md`.
 
 Rule: do not assume kb-server, stash, or librarian SSH paths exist. Query wikis via Read/grep locally; use Exa for external gaps.
@@ -63,8 +63,10 @@ LAPTOP (~/Desktop/OSINT WORKSPACE/):
   .local/                      # gitignored, local-only (server connection details, etc.)
 
 .local/ (gitignored):
-  archives/research/           # post-ingest raw source archive (replaces librarian bulk)
   arctic-market-dataset/     # optional laptop Arctic LMDB for equity backtests
+
+cemini-egress-fi (cold store — all federation wikis):
+  /opt/cemini-bulk/research/<wiki-id>/   # osint, ccc, seo, image-gen, gambling, game-dev, cybersec, 3d-printing
 ```
 
 Pages can be nested inside `entities/` when `Domain > Topic > Subtopic` hierarchy is warranted (e.g. `entities/companies/geo-group.md`, `entities/tickers/nvda.md`, `entities/tools/swarmvault.md`). `concepts/` and `sources/` are flat by convention.
@@ -153,7 +155,7 @@ updated: 2026-04-23
    - If no page: create a stub (frontmatter + one-line Narrative + Relations). Real content accumulates over subsequent ingests
 7. Update `wiki/index.md` — add rows for new pages
 8. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed
-9. **Archive raw source on laptop**: `mkdir -p .local/archives/research && mv "research to be indexed/<filename>" .local/archives/research/` — update source page location field to laptop path. **Do not** scp to librarian (host deleted 2026-06-14).
+9. **Archive raw source to egress-fi**: `bash scripts/archive_raw_to_egress.sh --wiki-id osint "research to be indexed/<filename>"` — update source page `Location` to `cemini-egress-fi:/opt/cemini-bulk/research/osint/<filename>`. Sibling wikis use their federation id (see `federation_paths.yaml`). Script removes local copy on success; pass `--keep-local` to retain inbox/raw-sources copy.
 10. Run lint + **`python3 scripts/ingest_session_gate.py`** + commit + push (wiki only)
 11. **Update ROADMAP.md + stage briefs in `briefs/` per `post_ingest_workflow` memory rule.** This is the immediately-next step after commit-and-push. Without it, ingest research dies in the wiki.
 12. A single ingest must touch 3-15 pages. If it touches 0 new pages, ask whether the source is worth ingesting

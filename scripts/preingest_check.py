@@ -219,6 +219,7 @@ def build_wiki_index():
         if location:
             # parse the basename out of the location string
             # supports "research for cemini/foo.pdf", "/opt/cemini-bulk/research/foo.pdf",
+            # "cemini-egress-fi:/opt/cemini-bulk/research/osint/foo.pdf",
             # "cemini-librarian:/opt/cemini-bulk/research/foo.pdf", "foo.pdf"
             bn = os.path.basename(location.strip("`'\"").split()[-1] if location else "")
             if bn:

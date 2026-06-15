@@ -24,3 +24,13 @@ Creates:
 1. Morning: review `wiki/sweeps/YYYY-MM-DD-daily.md`
 2. Say **full ingest** in Cursor for that wiki folder
 3. Weekly: optional Monokern pipeline (`monokern_pipeline.enabled` in config)
+
+## Raw source archive (all federation wikis)
+
+After ingest, archive immutables to egress-fi (replaces laptop `raw-sources/` / `.local/archives/research/`):
+
+```bash
+bash "/Users/claudiobarone/Desktop/OSINT WORKSPACE/scripts/archive_raw_to_egress.sh" --wiki-id <wiki-id> "research to be indexed/<file>"
+```
+
+Remote: `cemini-egress-fi:/opt/cemini-bulk/research/<wiki-id>/`. See `@osint-wiki/meta/librarian-decommission-2026-06-14.md`.

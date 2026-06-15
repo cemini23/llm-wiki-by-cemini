@@ -32,7 +32,7 @@ clusters: [quant-finance, time-series, ml-methods]
 | **Authors** | Fang, Ślepaczuk (University of Warsaw) |
 | **arXiv** | 2606.09478 |
 | **sha256** | `399e2ff424309ccb…` |
-| **Location** | `.local/archives/research/arxiv-2606.09478-volatility-forecasting-and-return-prediction-und.pdf` |
+| **Location** | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2606.09478-volatility-forecasting-and-return-prediction-und.pdf` |
 | **Retrieved** | 2026-06-15 |
 | **Read status** | read (abstract + §2–4 methodology + walk-forward design) |
 

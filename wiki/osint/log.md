@@ -7,7 +7,14 @@
 - **4 updates** — `markov-regime-switching-models`, `time-series-arima-garch-framework`, `stochastic-calculus-foundations`, `index.md`
 - **Phase-0** — `adopt_k117_phase0.sh` (REFERENCE only; SciConBench clone smoke)
 - **Briefs (2)** — regime vol gating equity signals; SciConBench clean-room eval → scp prod
-- **Archive** — inbox PDFs → `.local/archives/research/`; inbox cleared
+- **Archive** — inbox PDFs → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`; inbox cleared
+
+## [2026-06-15] ops | Federation raw archive → egress-fi
+
+- **Script** — `scripts/archive_raw_to_egress.sh` (`--wiki-id` per `federation_paths.yaml`)
+- **Remote** — `cemini-egress-fi:/opt/cemini-bulk/research/<wiki-id>/` (~65 GB free)
+- **Docs** — `CLAUDE.md` ingest step 9, `librarian-decommission`, `laptop-prod-research-split`, `cemini-egress-fi` entity; sibling wiki `CLAUDE.md` files (8 repos)
+- **Migrated** — 2 K117 PDFs from laptop `.local/archives/research/` → egress `osint/`; source pages updated
 
 ## [2026-06-14] concept | XSP hedge-fund core book + four-lane framework (K116)
 
