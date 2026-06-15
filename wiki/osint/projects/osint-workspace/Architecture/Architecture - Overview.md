@@ -2,7 +2,7 @@
 title: Architecture — OSINT Workspace Overview
 type: architecture-overview
 date: 2026-06-01
-updated: 2026-06-01
+updated: 2026-06-14
 project: "[[projects/osint-workspace/OSINT Workspace]]"
 stack: [Markdown, Python 3.11+, Shell, TypeScript (minimal), GitHub Actions]
 scanned-commit: b960aae
@@ -38,7 +38,7 @@ Top-level map of the **OSINT WORKSPACE** git repo as of commit `b960aae` (2026-0
 
 ## What this repository is
 
-**Cemini OSINT Research Workspace** — local knowledge hub: immutable raw sources on `cemini-librarian`, LLM-curated `wiki/`, schema in root `CLAUDE.md`, and Python automation. [Source: `README.md` at repo root, retrieved 2026-06-01]
+**Cemini OSINT Research Workspace** — local knowledge hub: LLM-curated `wiki/` on laptop git, schema in root `CLAUDE.md`, Python automation. `[DECOMMISSIONED 2026-06-14]` No `cemini-librarian` — see `@meta/librarian-decommission-2026-06-14.md`.
 
 This is **not** `/opt/cemini` (CeminiSuite). Prod code changes happen in `Cemini-Financial-Suite`; this repo stages research and ships **briefs** only across the deployment boundary.
 

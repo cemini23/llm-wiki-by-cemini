@@ -4,6 +4,8 @@ type: concept
 tags: [concept, options, xsp, small-account, index-options, k79]
 keywords: [xsp, put-credit-spread, 20-day-ma, small-account, seth-freudberg, options-selling]
 related:
+  - concepts/xsp-lane-trading-framework.md
+  - concepts/xsp-hedge-fund-core-book-thesis.md
   - entities/organizations/smb-capital.md
   - sources/smb-capital-youtube-week-2026-03-22.md
   - concepts/options-capital-velocity-credit-spreads-smb.md
@@ -12,10 +14,13 @@ related:
   - concepts/smb-options-casino-edge-model.md
 maturity: draft
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-14
 ---
 
 ## Relations
+
+- @concepts/xsp-hedge-fund-core-book-thesis.md — **contrast**: mentor long-call core book vs SMB short put credit on same XSP instrument
+- @concepts/xsp-lane-trading-framework.md — operator long-call lanes (orthogonal to this sell-side SMB page)
 
 - @entities/organizations/smb-capital.md — SMB options desk
 - @sources/smb-capital-youtube-week-2026-03-22.md — Seth Freudberg walkthrough

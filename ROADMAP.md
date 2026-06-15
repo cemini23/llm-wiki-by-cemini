@@ -6,7 +6,16 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 ## Vision
 
-CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **24/7 librarian MCP** serving the deployed brain. Each K-series deep-read adds one reusable architectural primitive. The wiki is the IP catalog.
+CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
+
+## Current state (2026-06-15 — K117)
+
+- **K117 ingest (2026-06-15)** — Daily digest full ingest: 2 arXiv from inbox. **2 sources + 1 concept + 4 updates.** Particle partial-observation control (2606.09055) REFERENCE; regime vol + return prediction CSI 300 (2606.09478) REFERENCE — low-vol gating steal. **Phase-0:** `adopt_k117_phase0.sh`. **Prod briefs scp'd (2):** regime vol gating equity signals; SciConBench clean-room eval (K114 backlog). Archive → laptop `.local/archives/research/`; inbox cleared. **Also committed:** K114 GEO/SciConBench + K116 XSP + librarian decommission backlog.
+
+## Current state (2026-06-14 — K116)
+
+- **XSP wiki (2026-06-14)** — thesis + four-lane framework; **Lane B prod brief** staged (LEAPS inventory + put-hedge alerts).
+- **Librarian decommission (2026-06-14)** — Hetzner `cemini-librarian` **deleted**.
 
 ## Current state (2026-06-13 — K115)
 

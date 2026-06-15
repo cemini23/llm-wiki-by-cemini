@@ -6,6 +6,14 @@ Newest entries on top.
 
 ---
 
+## 2026-06-14 — Librarian deleted: laptop wiki canon, prod+egress only
+
+`cemini-librarian` removed after Lane A / prod-first decision — trading does not need 24/7 kb-server. **Fleet:** `cemini-prod` + `cemini-egress-fi` only. **Canon:** laptop `wiki/` git + `.local/archives/research/`. **Broken until restored:** lazy-tool `kb_search`, stash MCP, Arctic on server, hourly wiki sync.
+
+**Do not** bulk-edit `cemini-librarian:` strings on source pages — historical ingest provenance. **Do** update living architecture docs; see `wiki/meta/librarian-decommission-2026-06-14.md`.
+
+---
+
 ## 2026-06-04 — launchd morning jobs ≠ Full Disk Access on Cursor/bash
 
 Federated digests and federation summary failed with `Operation not permitted` on `~/Desktop/...` even though Cursor and `/bin/bash` had FDA. **Cause:** launchd runs a minimal environment (`PATH=/usr/bin:/bin:…`); TCC grants are per-binary. Calendar triggers at 08:00 often succeed when the Aqua session is active; `launchctl kickstart` from Terminal can still fail.

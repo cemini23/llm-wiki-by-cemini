@@ -17,10 +17,11 @@ related:
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - projects/osint-workspace/Architecture/Architecture - conductor.md
   - entities/tools/adk-arena.md
+  - meta/librarian-decommission-2026-06-14.md
   - concepts/mcp-tool-calling-eval-scaffold.md
 maturity: validated
 created: 2026-05-09
-updated: 2026-06-02
+updated: 2026-06-14
 adopted: 2026-05-09
 version: 1.0.2
 repo: https://github.com/rpgeeganage/lazy-tool
@@ -36,7 +37,7 @@ license_verified: MIT
 - @entities/tools/claude-code-router.md — complementary proxy layer for OpenRouter traffic routing
 - @entities/tools/9router.md — K38 evaluation candidate DOWNGRADED to NO-GO 2026-05-11; eval brief framed 9router as a compression proxy, but Phase-0 audit found its 20-40% compression overlaps with lazy-tool's validated 46% at ~10× heavier footprint
 - @concepts/context-compression-resume-pattern.md — addresses the same context-window bloat problem from a state-persistence angle
-- @projects/osint-workspace/Architecture/Architecture - conductor.md — OSINT Cursor reaches `conductor_query` via lazy-tool proxy to prod conductor
+- @meta/librarian-decommission-2026-06-14.md — kb-server / conductor proxy targets offline
 
 ## Raw Concept
 
@@ -45,6 +46,10 @@ license_verified: MIT
 **Which sources synthesize into this**: `llm-proxy-context-reduction.md` (primary), `openrouter-efficiency-context-audit.md` (complementary caching strategy).
 
 ## Narrative
+
+### Post-decommission (2026-06-14)
+
+`kb_search`, `kb_context`, and librarian-backed `conductor_query` fail — `cemini-librarian` deleted. lazy-tool remains useful for **prod-mcp** and **exa/fetch**. Wiki research: Read/grep local files. See @meta/librarian-decommission-2026-06-14.md.
 
 ### What It Is
 

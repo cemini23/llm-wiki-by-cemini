@@ -18,9 +18,10 @@ related:
   - sources/ssrn-5140015-time-series-quant-finance-2025.md
   - concepts/gmm-factor-lens-regime-modeling.md
   - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
+  - sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md
 maturity: draft
 created: 2026-05-16
-updated: 2026-05-23
+updated: 2026-06-15
 ---
 
 ## Relations
@@ -34,6 +35,7 @@ updated: 2026-05-23
 - @concepts/time-series-arima-garch-framework.md — K55: the ARIMA/GARCH framework explicitly closes with a Markov × GARCH agreement/disagreement multi-model orchestration prompt — adopted as a Cemini-wide pattern
 - @concepts/gmm-factor-lens-regime-modeling.md — K58: Two Sigma GMM on factor panel (cross-sectional clusters) vs this page’s temporal Markov/HMM machinery
 - @sources/two-sigma-gmm-regime-modeling-street-view-2021.md — K58 primary source for GMM approach
+- @sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md — K117: MS-GJR-GARCH filtered regimes fed into HARQ + XGBoost; return signal concentrated in low-vol states
 
 ## Raw Concept
 

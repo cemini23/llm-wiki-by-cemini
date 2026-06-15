@@ -12,10 +12,11 @@ related:
   - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
   - entities/tools/dataset-viewer.md
   - concepts/cemini-backtest-report-kit.md
+  - meta/librarian-decommission-2026-06-14.md
   - meta/equity-signal-backtest-cadence.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-05-27
+updated: 2026-06-14
 ---
 
 ## Relations
@@ -27,9 +28,13 @@ updated: 2026-05-27
 - @concepts/cemini-backtest-report-kit.md — Phase 2 equity momentum backtest reads `equity_bars` via SSH
 - @meta/equity-signal-backtest-cadence.md — quarterly sweep ritual
 
+- @meta/librarian-decommission-2026-06-14.md — librarian LMDB deleted; laptop `.local/arctic-market-dataset/`
+
 ## Raw Concept
 
-What prompted this page: K52 ingest of @zostaff's hedge-fund OSS catalog. ArcticDB stood out as the single entry that maps onto a real Cemini need — the historical market-data layer (`cemini-librarian:/opt/cemini-bulk/market-dataset/`) — so it gets its own entity page with a Phase-0 framing rather than living only as a catalog row.
+`[POST-DECOMMISSION 2026-06-14]` Server LMDB on deleted `cemini-librarian` is gone unless restored from snapshot. Equity backtest: `scripts/refresh_arctic_equity_bars.py` → laptop `.local/arctic-market-dataset/`.
+
+What prompted this page: K52 ingest of @zostaff's hedge-fund OSS catalog.
 
 ## Narrative
 

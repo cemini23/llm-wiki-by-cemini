@@ -1,9 +1,10 @@
 ---
-title: "Laptop vs prod vs librarian — Cemini research deployment split"
+title: "Laptop vs prod — Cemini research deployment split"
 type: concept
 tags: [concept, infrastructure, cemini-internal, research-ops, flox, kronos, arcticdb]
-keywords: [laptop, cemini-prod, cemini-librarian, flox, kronos, arcticdb, ssh, private-net, ab-test]
+keywords: [laptop, cemini-prod, flox, kronos, arcticdb, egress-fi]
 related:
+  - meta/librarian-decommission-2026-06-14.md
   - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
   - entities/tools/flox.md
   - entities/tools/arcticdb.md
@@ -16,17 +17,21 @@ related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
 maturity: validated
 created: 2026-05-23
-updated: 2026-06-01
+updated: 2026-06-14
 ---
 
 ## Relations
+
+- @meta/librarian-decommission-2026-06-14.md — Arctic/stash/kb-server offline
+- @entities/tools/arcticdb.md — laptop `.local/arctic-market-dataset/` path
+- @entities/tools/lazy-tool.md — kb_search unavailable without librarian
 
 - @sources/cemini-laptop-prod-research-handoff-2026-05-23.md — canonical operator brief (from prod → librarian pickup)
 - @entities/tools/flox.md — Step 197 **laptop/dev only** (cmake build, not A/B)
 - @entities/tools/arcticdb.md — Step 189 live benchmark on librarian bulk data
 - @sources/shiyu-coder-kronos.md — Step 109 prompt A/B on prod — **REJECT** 2026-05-23
 - @concepts/librarian-server-architecture.md — prod→librarian SSH via `10.0.0.2`
-- @entities/infrastructure/cemini-egress-fi.md — egress boundary (unchanged by this handoff)
+- @entities/infrastructure/cemini-egress-fi.md — HL + PM order egress (live)
 - @concepts/cemini-repository-topology.md — git/repo layout vs machine split (orthogonal concerns)
 - @projects/osint-workspace/OSINT Workspace.md — laptop repo where wiki + `briefs/` staging live
 - @projects/osint-workspace/Architecture/Architecture - briefs.md — gitignored briefs handoff to `/opt/cemini/briefs/`
@@ -34,11 +39,21 @@ updated: 2026-06-01
 
 ## Raw Concept
 
-Prod server-Claude staged handoff on **cemini-librarian** (`/opt/cemini-bulk/research/cemini-handoff/`, 2026-05-23) so laptop OSINT agents know **where each research step runs**.
+`[SUPERSEDED 2026-06-14]` Librarian host deleted — see @meta/librarian-decommission-2026-06-14.md. Historical handoff on **cemini-librarian** (`/opt/cemini-bulk/research/cemini-handoff/`, 2026-05-23).
 
 ## Narrative
 
-### Where to work
+### Where to work (2026-06-14)
+
+| Step | Task | Run on |
+|------|------|--------|
+| **OSINT wiki / ingest** | Pages, briefs, lint | **Laptop** |
+| **Lane A / live trading** | XSP, PM, HL, Kalshi | **cemini-prod** (+ **egress-fi** for HL/PM orders) |
+| **189 ArcticDB / equity backtest** | `refresh_arctic_equity_bars.py`, `.local/arctic-market-dataset/` | **Laptop** |
+| **109 Kronos** | (rejected) prompt A/B | **cemini-prod** if re-run |
+| **197 FLOX** | C++ benchmark | **Laptop / dev** |
+
+### Historical — where to work (pre-decommission)
 
 | Step | Task | Run on |
 |------|------|--------|

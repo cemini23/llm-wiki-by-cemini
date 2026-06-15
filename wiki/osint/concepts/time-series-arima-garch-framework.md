@@ -19,9 +19,10 @@ related:
   - concepts/ols-alpha-signal-framework.md
   - sources/rohonchain-fifa-wc-shock-recovery-strategy-2026-06-02.md
   - sources/trading-posts-compilation-6-2026-06-08.md
+  - sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-06-08
+updated: 2026-06-15
 clusters: [quant-finance, time-series]
 ---
 
@@ -38,6 +39,7 @@ clusters: [quant-finance, time-series]
 - @entities/people/rohonchain.md — author
 - @sources/trading-posts-compilation-6-2026-06-08.md — K106 Post 1 refresh (2008 MBS opener; overlaps K55 body)
 - @entities/people/yifan-guo.md — author of the academic-foundation paper (SSRN 5140015)
+- @sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md — K117 empirical confirmation: regime-augmented vol forecasts beat HARQ; directional return alpha weak except low-vol regimes — reinforces GARCH-scaling > direction thesis
 
 ## Raw Concept
 

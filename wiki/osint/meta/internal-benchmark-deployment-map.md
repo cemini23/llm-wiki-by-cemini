@@ -7,20 +7,22 @@ related:
   - concepts/cemini-deployment.md
   - concepts/librarian-server-architecture.md
   - meta/equity-signal-backtest-cadence.md
-  - meta/pta-backtest-cadence.md
+  - meta/librarian-decommission-2026-06-14.md
   - meta/hl-funding-backtest-cadence.md
   - meta/pm-lp-backtest-cadence.md
   - sources/pta-metric-anchoring-ssrn-4549819.md
   - entities/tools/autots.md
+  - meta/pta-backtest-cadence.md
 maturity: core
 created: 2026-05-29
-updated: 2026-05-30
+updated: 2026-06-15
 ---
 
 ## Relations
 
 - @concepts/cemini-deployment.md — prod vs laptop vs librarian boundary
-- @concepts/librarian-server-architecture.md — ArcticDB + stash serving host
+- @concepts/librarian-server-architecture.md — ArcticDB + stash serving host (historical)
+- @meta/librarian-decommission-2026-06-14.md — librarian deleted; laptop Arctic path
 - @meta/equity-signal-backtest-cadence.md — equity momentum lab
 - @meta/pta-backtest-cadence.md — PTA reproduction gate
 - @sources/pta-metric-anchoring-ssrn-4549819.md — adopt candidate gated on pilot
@@ -30,8 +32,8 @@ updated: 2026-05-30
 
 | Surface | Role |
 |---------|------|
-| **Laptop (OSINT workspace)** | Run scripts, generate HTML/MD reports under `.local/reports/`, stage briefs |
-| **cemini-librarian** | Canonical **read-only** data for backtests (ArcticDB `equity_bars`, bulk research); stash MCP memory; **never** run ingest sweeps or prod trading |
+| **Laptop (OSINT workspace)** | Run scripts, generate HTML/MD reports under `.local/reports/`, stage briefs; **Arctic LMDB** under `.local/arctic-market-dataset/` |
+| **cemini-librarian** | **DELETED 2026-06-14** — was Arctic/stash/kb-server; see @meta/librarian-decommission-2026-06-14.md |
 | **cemini-prod (`/opt/cemini`)** | 24/7 trading stack — receives **briefs only** from this workspace; **no** backtest/benchmark jobs |
 | **cemini-egress-fi** | Egress proxy for prod API calls — **not** a backtest compute host |
 

@@ -11,14 +11,15 @@ related:
   - sources/arxiv-inference-scaling-llms-2605.19775.md
   - sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md
   - concepts/laptop-prod-research-split.md
-  - entities/tools/camofox-browser.md
+  - meta/librarian-decommission-2026-06-14.md
   - entities/tools/hl-funding-sniper.md
   - concepts/trading-dashboard-api-wiring.md
   - concepts/world-cup-advance-market-bot-v1.md
   - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - egress live layout.md
+  - entities/tools/camofox-browser.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-05-29
+updated: 2026-06-14
 # Live-probed 2026-05-20 (read-only SSH via cemini-prod jump host). Refresh on spec/role change.
 ---
 
@@ -26,7 +27,7 @@ updated: 2026-05-29
 
 - @concepts/cemini-ai-assistant.md — candidate host for the Cemini AI assistant gateway during its internal-only phase (this box has the headroom)
 - @entities/infrastructure/cemini-stack.md — the umbrella production topology; this is the third Hetzner server (added 2026-05-19, swapped DC 2026-05-20)
-- @concepts/librarian-server-architecture.md — the librarian (kb-server + stash) this box would query if it hosts Cemini AI; both are Hetzner, different DCs (Helsinki vs Ashburn)
+- @concepts/laptop-prod-research-split.md — live fleet routing post-decommission
 - @sources/arxiv-inference-scaling-llms-2605.19775.md — K48: long chain-of-thought reasoning is KV **capacity-bound**; this host (4 GB, no GPU) is **API-gateway-only** for frontier reasoning — do not install local CoT weights here
 - @concepts/polymarket-copy-trading-strategy.md — K57: hybrid Polymarket CLOB copy latency; gateway must not promise sub-block parity
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — @spottr_trade Post 7 (0-block vs detection)
@@ -63,9 +64,11 @@ The routing mechanism is lightweight: there is **no WireGuard and no proxy proce
 
 This supersedes (a) the abandoned server-side WireGuard on `cemini-prod` (dropped as fragile, see `hot.md`), (b) the laptop-side `polymarket_proxy.py` forward-tunnel (a validation harness that violated the deployment boundary), and (c) the now-decommissioned Falkenstein predecessor (`cemini-poly-proxy`; see Dead Ends).
 
-### Relationship to the rest of the fleet
+### Relationship to the rest of the fleet (2026-06-14)
 
-It is the **third** Hetzner server, joining `cemini-prod` (Ashburn, trading stack) and `cemini-librarian` (Ashburn, knowledge serving). Unlike those two it is in a different datacentre — Helsinki, not Ashburn — a deliberate consequence of needing a non-US egress IP. Helsinki-to-Ashburn is a transatlantic hop of **~118–120 ms RTT** server-to-server `[CONFIRMED 2026-05-22 — ping from cemini-egress-fi to cemini-librarian 5.161.179.207, 3 samples avg 119 ms]`, slightly longer than the previous Falkenstein-to-Ashburn (~90-100 ms) but inside the same order of magnitude; the choice was venue-coverage-driven, not latency-driven.
+Live Hetzner fleet: **`cemini-prod`** (Ashburn trading) + **`cemini-egress-fi`** (this box, Helsinki egress). **`cemini-librarian` deleted 2026-06-14** — see @meta/librarian-decommission-2026-06-14.md.
+
+Historical: this was the **third** server alongside prod and librarian (Ashburn). Helsinki-to-Ashburn RTT ~118–120 ms to former librarian IP `[CONFIRMED 2026-05-22]`.
 
 ### Spare capacity — candidate Cemini AI host
 

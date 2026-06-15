@@ -1,9 +1,13 @@
 ---
-description: OSINT MCP — always use lazy-tool for proxied tools; wiki-first; stash is global only
+description: OSINT MCP — lazy-tool for prod; wiki-first local grep; stash offline if librarian deleted
 alwaysApply: true
 ---
 
 # OSINT workspace — MCP rules (agents must follow)
+
+## Librarian status (2026-06-14)
+
+**`cemini-librarian` is deleted.** `kb_search`, `kb_context`, and `conductor_query` via lazy-tool will **fail**. Query wikis with Read/grep locally. **stash** MCP is red unless tunnel restored — do not block sessions on it. See `wiki/meta/librarian-decommission-2026-06-14.md`.
 
 ## Which MCP servers exist here
 
@@ -12,7 +16,7 @@ alwaysApply: true
 | **This folder only** | `lazy-tool`, `prod-mcp`, `exa`, `fetch` | Open **OSINT WORKSPACE** as the workspace root |
 | **Global (every chat)** | `stash`, `brave-search`, `playwright` | From `~/.cursor/mcp.json` |
 
-**Home / no folder open:** only global MCP loads. `lazy-tool` will show **off** — that is normal. `stash` may show **red** if the SSH tunnel to `localhost:8088` is down; fix tunnels, then Retry in MCP settings.
+**Home / no folder open:** only global MCP loads. `lazy-tool` will show **off** — that is normal. **stash** may show **red** — expected after librarian decommission (2026-06-14); disable `com.cemini.stash-tunnel` or ignore.
 
 **Do not** look for project servers named `conductor`, `kb-server`, or `librarian-stash` — they are reached **through lazy-tool** only.
 
@@ -76,11 +80,10 @@ Then Retry MCP in Cursor and search again.
 
 ## Research order
 
-1. `wiki/index.md` and wiki pages (Read / grep)
-2. lazy-tool → **kb-server** tools
-3. lazy-tool → **conductor_query** for analyst-style synthesis
-4. **exa** / **fetch** for gaps and URL verification
-5. **stash** to persist cross-session insights when appropriate
+1. `wiki/index.md` and wiki pages (Read / grep) — **primary** (librarian offline)
+2. lazy-tool → **prod-mcp** health / trading tools only
+3. **exa** / **fetch** for gaps and URL verification
+4. **stash** — offline unless librarian restored; skip if red
 
 ---
 

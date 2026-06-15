@@ -16,13 +16,11 @@ Distribution is a deliberate step, not a default. Stage candidates in `briefs/` 
 
 ## Architecture — three layers
 
-1. **Raw sources** — immutable. You read them, never modify them. Canonical location: `cemini-librarian:/opt/cemini-bulk/` (migrated 2026-04-28; backed up via Hetzner daily snapshots).
-   - `cemini-librarian:/opt/cemini-bulk/research/` — long-form PDFs / docx / notes
-   - `cemini-librarian:/opt/cemini-bulk/market-dataset/` — historical market data
-   - **Read pattern**: `ssh cemini-librarian "cat /opt/cemini-bulk/research/<filename>"` for quick inspection; `scp cemini-librarian:/opt/cemini-bulk/research/<filename> /tmp/` for local deep-read sessions in Preview/Adobe/etc.
-   - **Drop pattern (new sources)**: drop into laptop's `research to be indexed/` (transient), ingest pipeline reads + synthesizes, then `scp` to librarian and remove laptop copy.
+1. **Raw sources** — immutable. You read them, never modify them. **Canonical location: laptop** (`.local/archives/research/` after ingest, or transient `research to be indexed/` before ingest). `[DECOMMISSIONED 2026-06-14]` The Hetzner host `cemini-librarian` and `/opt/cemini-bulk/` were deleted; source pages may still cite old `cemini-librarian:` paths as ingest-time provenance only.
+   - **Drop pattern**: `research to be indexed/` → ingest → archive to `.local/archives/research/<filename>` (gitignored)
+   - **Read pattern**: local file open / Preview; no server `ssh cat` path
 
-2. **The wiki** — LLM-written, human-read. Canonical location: laptop `wiki/`, synced to `cemini-librarian:/opt/cemini-wiki/wiki/` for kb-server MCP serving (hourly cron via `scripts/sync_wiki_to_librarian.sh`).
+2. **The wiki** — LLM-written, human-read. **Canonical location: laptop `wiki/`** (git). Sibling federation wikis live in their own repos under `~/Desktop/projects/`. No 24/7 kb-server sync — see `@meta/librarian-decommission-2026-06-14.md`.
 
 3. **The schema** — this file.
 
@@ -35,13 +33,14 @@ Staging/output lives outside the wiki:
 
 ## Deployment boundary — what runs where
 
-Three machines, split by function. **Anything that must be continuously available is deployed on the Hetzner servers, never the laptop.**
+Two Hetzner servers for **trading**; laptop for **research authoring**. See `@meta/librarian-decommission-2026-06-14.md`.
 
-- **Laptop** (this workspace) — authoring/curation of the wiki; canonical git source. Not in any serving path: it can be powered off at any time without affecting running systems. When off, only *curation* pauses (no ingests/edits/lint) — the served wiki simply stays at its last-synced state.
-- **cemini-librarian** — 24/7 knowledge serving: kb-server (wiki RAG/MCP), Ollama (embeddings), stash (episodic memory). The synced wiki copy and the raw-source canon (`/opt/cemini-bulk`) live here.
-- **cemini-prod** (`/opt/cemini`) — 24/7 CeminiSuite trading stack — the "brain" that consumes the library.
+- **Laptop** (this workspace) — canonical git wiki, raw-source archive, briefs, local backtests. Powered off = curation pauses only; **no** remote wiki serving dependency.
+- **cemini-prod** (`/opt/cemini`) — 24/7 CeminiSuite trading stack (Lane A, PM, Kalshi, HL adapters, Redis `intel:*`).
+- **cemini-egress-fi** (Helsinki) — order egress relay for Hyperliquid + Polymarket `POST /order` (SSH tunnel from prod).
+- **`cemini-librarian`** — **DELETED 2026-06-14.** Historical design: `@concepts/librarian-server-architecture.md`.
 
-Rule: any wiki-serving component (e.g. a vector index for kb-server) belongs on `cemini-librarian`. A laptop install is a benchmark/workflow tool only and never serves the wiki. See `@concepts/librarian-server-architecture.md` and `@concepts/kb-server-retrieval-scaling.md`.
+Rule: do not assume kb-server, stash, or librarian SSH paths exist. Query wikis via Read/grep locally; use Exa for external gaps.
 
 ## Folder layout
 
@@ -53,7 +52,7 @@ LAPTOP (~/Desktop/OSINT WORKSPACE/):
   hot.md                       # session-state cache (gitignored)
   research to be indexed/      # transient drop zone (gitignored)
   briefs/                      # staging for outputs → claude.ai or CeminiSuite (gitignored)
-  wiki/                        # canonical wiki (synced → librarian for serving)
+  wiki/                        # canonical wiki (laptop git only)
     index.md                   # content-oriented catalog of all wiki pages
     log.md                     # append-only chronological operations log
     sources/                   # one page per ingested source
@@ -63,12 +62,9 @@ LAPTOP (~/Desktop/OSINT WORKSPACE/):
   ui/                          # local dev tooling (e.g. Cemini AI chat front-end + proxy to cemini-egress-fi gateway)
   .local/                      # gitignored, local-only (server connection details, etc.)
 
-LIBRARIAN (cemini-librarian:/opt/):
-  cemini-bulk/                 # raw layer canonical home
-    research/                  # PDFs/docx
-    market-dataset/            # historical market data
-  cemini-wiki/                 # serving layer
-    wiki/                      # synced copy from laptop (kb-server REST API serves this)
+.local/ (gitignored):
+  archives/research/           # post-ingest raw source archive (replaces librarian bulk)
+  arctic-market-dataset/     # optional laptop Arctic LMDB for equity backtests
 ```
 
 Pages can be nested inside `entities/` when `Domain > Topic > Subtopic` hierarchy is warranted (e.g. `entities/companies/geo-group.md`, `entities/tickers/nvda.md`, `entities/tools/swarmvault.md`). `concepts/` and `sources/` are flat by convention.
@@ -157,8 +153,8 @@ updated: 2026-04-23
    - If no page: create a stub (frontmatter + one-line Narrative + Relations). Real content accumulates over subsequent ingests
 7. Update `wiki/index.md` — add rows for new pages
 8. Append to `wiki/log.md`: `## [YYYY-MM-DD] ingest | <source title>` with bullets of what changed
-9. **Move raw source to librarian**: `scp "research to be indexed/<filename>" cemini-librarian:/opt/cemini-bulk/research/` then `rm` the laptop copy. Verify with `ssh cemini-librarian "ls /opt/cemini-bulk/research/<filename>"`
-10. Run lint + **`python3 scripts/ingest_session_gate.py`** + commit + push (the wiki side; raw-source move is server-side, not in laptop git)
+9. **Archive raw source on laptop**: `mkdir -p .local/archives/research && mv "research to be indexed/<filename>" .local/archives/research/` — update source page location field to laptop path. **Do not** scp to librarian (host deleted 2026-06-14).
+10. Run lint + **`python3 scripts/ingest_session_gate.py`** + commit + push (wiki only)
 11. **Update ROADMAP.md + stage briefs in `briefs/` per `post_ingest_workflow` memory rule.** This is the immediately-next step after commit-and-push. Without it, ingest research dies in the wiki.
 12. A single ingest must touch 3-15 pages. If it touches 0 new pages, ask whether the source is worth ingesting
 
@@ -420,16 +416,15 @@ Paths below are relative to this CLAUDE.md file's directory. Resolve `../` again
 - Bidirectional: if OSINT page A references Image Gen page B, add a matching `@osint-wiki/...` backlink on page B
 - When creating a stub in another wiki, note the cross-wiki dependency in `## Relations`
 
-### Using the conductor/librarian for unified search
+### Querying wikis (laptop-only; librarian decommissioned 2026-06-14)
 
-The OSINT workspace includes a **conductor** (MCP server that routes queries) + **librarian** (kb-server that serves wikis). To query across all wikis:
-1. Sync all wikis to the librarian:
-   - `rsync -avz /Users/claudiobarone/Desktop/projects/Image\ gen/wiki/ cemini-librarian:/opt/cemini-wiki/image-gen-wiki/wiki/`
-   - `rsync -avz "/Users/claudiobarone/Desktop/projects/SEO:GEO B&M Business/wiki/" cemini-librarian:/opt/cemini-wiki/seo-geo-wiki/wiki/`
-   - `rsync -avz "/Users/claudiobarone/Desktop/projects/Gambling wiki/wiki/" cemini-librarian:/opt/cemini-wiki/gambling-wiki/wiki/`
-   - `rsync -avz "/Users/claudiobarone/Desktop/projects/Game Dev wiki/wiki/" cemini-librarian:/opt/cemini-wiki/game-dev-wiki/wiki/`
-2. Run `kb ingest` on the librarian to reindex
-3. Use `conductor_query` tool (exposed via OSINT's `conductor/mcp_server.py`) to query across all wikis
+kb-server and 24/7 conductor→librarian routing are **offline**. To answer questions:
+
+1. Read `wiki/index.md` and grep across `wiki/` and sibling wiki repos (`@wiki-alias/...`)
+2. Use **lazy-tool** only for **prod-mcp** health/tools — `kb_search` / `conductor_query` will fail unless librarian is restored
+3. **exa** / **fetch** for external gaps
+
+Historical sync/rsync instructions are archived in `@meta/librarian-decommission-2026-06-14.md`.
 
 ## Related — read-only from this workspace
 

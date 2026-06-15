@@ -44,9 +44,10 @@ related:
   - sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md
   - sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md
   - concepts/instrumental-probability-learnable-alpha.md
+  - sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-06-10
+updated: 2026-06-15
 ---
 
 ## Relations
@@ -65,6 +66,7 @@ updated: 2026-06-10
 - @sources/test-time-adaptation-for-non-stationary-time-series.md — applied example: TTA paper splits real markets into pandemic/high-inflation/recovery regimes and gates claims with Diebold–Mariano + Newey–West HAC tests.
 - @sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md — exemplar of the controlled-study discipline: disentangles six debate factors against a fixed anchor instead of reporting a single aggregate "debate helps" number.
 - @sources/evonash-marl.md — applies the conservative-validation half of this discipline (walk-forward, White Reality Check, SPA-lite, deflated Sharpe) and honestly reports non-significance rather than overclaiming alpha.
+- @sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md — K117: walk-forward regime disclosure + low-vol gating as implementation discipline
 
 ## Raw Concept
 

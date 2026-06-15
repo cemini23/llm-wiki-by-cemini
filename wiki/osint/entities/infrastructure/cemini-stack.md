@@ -1,8 +1,8 @@
 ---
-title: Cemini Stack — Two-Server Production Topology
+title: Cemini Stack — Prod + Egress Trading Topology
 type: entity
-tags: [infrastructure, cemini-deployment, hetzner, two-server]
-keywords: [CPX21, CPX31, Hetzner Cloud, Ubuntu 22.04, Ubuntu 24.04, Docker Compose, kb-server, librarian, production]
+tags: [infrastructure, cemini-deployment, hetzner, prod, egress-fi]
+keywords: [CPX31, Hetzner Cloud, Docker Compose, prod, egress-fi, librarian-decommissioned]
 related:
   - entities/infrastructure/hetzner.md
   - entities/infrastructure/redis.md
@@ -10,6 +10,7 @@ related:
   - entities/infrastructure/pgvector.md
   - entities/infrastructure/deepseek-api.md
   - concepts/librarian-server-architecture.md
+  - meta/librarian-decommission-2026-06-14.md
   - concepts/cemini-deployment.md
   - concepts/cemini-license-posture.md
   - entities/tools/pybroker.md
@@ -26,9 +27,9 @@ related:
   - projects/cemini-financial-suite/Architecture/OPEN-GAPS.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
   - projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md
-maturity: draft
+maturity: core
 created: 2026-05-03
-updated: 2026-05-31
+updated: 2026-06-14
 # Server-state probe baseline (2026-05-03): both hosts probed live; specs recorded match `free -h` / `df -h` / `nproc` output. Refresh on every spec change. K89 probe 2026-05-31: 44 containers, disk ~40%, swap ~78%.
 ---
 
@@ -39,7 +40,8 @@ updated: 2026-05-31
 - @entities/infrastructure/timescaledb.md — primary persistence in production
 - @entities/infrastructure/pgvector.md — vector-similarity layer co-tenant with TimescaleDB on production; also used by stash on librarian
 - @entities/infrastructure/deepseek-api.md — LLM brain (hosted, not self-served)
-- @concepts/librarian-server-architecture.md — librarian-side architectural rationale (Option C kb-server pattern)
+- @meta/librarian-decommission-2026-06-14.md — **authoritative** fleet posture as of 2026-06-14
+- @concepts/librarian-server-architecture.md — historical two-server RAG design (librarian host deleted)
 - @concepts/cemini-deployment.md — installation procedure layered on top of this topology
 - @concepts/cemini-license-posture.md — license obligations attached to deployed components
 - @entities/infrastructure/cemini-egress-fi.md — the third Hetzner server (Helsinki, order-routing relay); this page's two-server framing predates it. Originally provisioned at Falkenstein 2026-05-19 as `cemini-poly-proxy`; rebuilt at Helsinki 2026-05-20 for joint Polymarket + Hyperliquid coverage
@@ -64,18 +66,30 @@ Created 2026-05-03 in response to the user's request for a setup-and-recommendat
 
 ## Narrative
 
-### Two-server topology — recommended
+### Fleet topology — prod + egress (2026-06-14)
 
-Cemini production runs on **two Hetzner Cloud VPS instances** in the same region, joined by a private network:
+`[DECOMMISSIONED 2026-06-14]` The librarian host (`cemini-librarian`) was **deleted**. Live Hetzner fleet:
+
+| Role | Host alias | Status | Notes |
+| --- | --- | --- | --- |
+| Production (trading) | `cemini-prod` | **ON** | CPX31, Ashburn; ~44 containers (K89 baseline) |
+| Order egress (HL + PM) | `cemini-egress-fi` | **ON** | Helsinki; SSH tunnel from prod |
+| Knowledge / RAG | `cemini-librarian` | **DELETED** | Was CPX21 kb-server + stash + Arctic |
+
+Wiki and raw-source canon: **laptop git** only. See @meta/librarian-decommission-2026-06-14.md.
+
+### Historical — two-server prod + librarian (pre-2026-06-14)
+
+Cemini previously ran **two Ashburn servers** joined by private network `10.0.0.2`:
 
 | Role | Host alias | Hetzner SKU | vCPU | RAM | Disk | OS | Probed 2026-05-03 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Production (trading + intelligence) | `cemini-prod` | CPX31 | 2 | 8 GB allocated (7.6 GB measured) | 80 GB local + 25 GB volume | Ubuntu 22.04.5 LTS | **44** containers (K89 probe 2026-05-31); disk **~40%** used; **swap ~78%** ⚠ |
-| Librarian (RAG + episodic memory) | `cemini-librarian` | CPX21 | 3 | 4 GB allocated (3.7 GB measured) | 80 GB local | Ubuntu 24.04.4 LTS | kb-server + stash + Node 20+; disk 20% used |
+| Librarian (RAG + episodic memory) | `cemini-librarian` | CPX21 | 3 | 4 GB allocated (3.7 GB measured) | 80 GB local | Ubuntu 24.04.4 LTS | **deleted 2026-06-14** |
 
 Connection details (SSH targets, IPs) live in `.local/server.md` — gitignored, never committed.
 
-### Why two servers (separation of concerns)
+### Why librarian existed (historical)
 
 The two-server split is intentional and provides four operational properties that a single combined host would not:
 

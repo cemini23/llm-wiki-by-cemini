@@ -2,8 +2,8 @@
 
 A local knowledge hub for OSINT and financial research, organized as an
 LLM-curated, human-read wiki. This repo holds the **schema, the wiki, and
-the helper scripts**. Raw sources live on a dedicated librarian server;
-wiki pages are synced there for 24/7 MCP serving.
+the helper scripts**. Raw sources archive on the laptop; **no 24/7 librarian
+server** (decommissioned 2026-06-14).
 
 ## What's tracked
 
@@ -22,6 +22,7 @@ wiki pages are synced there for 24/7 MCP serving.
   ingest. Gitignored.
 - **`briefs/`** — operational deliverables staged for distribution to
   claude.ai or the CeminiSuite dev stack. Gitignored.
+- **`.local/archives/research/`** — post-ingest raw PDFs/docx. Gitignored.
 - **`hot.md`** — session-state cache (curator working memory across
   compaction boundaries). Gitignored (changes every session).
 - **`.local/`** — server connection details (SSH targets, IPs). Gitignored.
@@ -29,89 +30,52 @@ wiki pages are synced there for 24/7 MCP serving.
   Gitignored.
 - **`.DS_Store`, `__pycache__/`, etc.** — OS and tooling cruft.
 
-## Architecture — three layers + librarian server
+## Architecture — laptop wiki + prod trading fleet
 
-1. **Raw sources** — immutable. Canonical location: `cemini-librarian:/opt/cemini-bulk/`
-   (migrated from laptop 2026-04-28). Backed by Hetzner daily snapshots.
-   - `research/` — ~283 PDFs and reports (642 MB)
-   - `market-dataset/` — ~17.6k files of historical market data (1.6 GB)
-   - **Read pattern**: `ssh cemini-librarian "cat /opt/cemini-bulk/research/<filename>"`
-     or `scp` to `/tmp/` for local deep-read sessions.
-   - **Drop pattern**: scp new sources to librarian after ingest; remove from laptop.
+1. **Raw sources** — immutable. **Laptop archive:** `.local/archives/research/`
+   after ingest. Transient drop: `research to be indexed/`.
+   - Older source pages may cite `cemini-librarian:/opt/cemini-bulk/...` as
+     historical provenance only (host deleted 2026-06-14).
 
 2. **The wiki** (`wiki/`, tracked) — LLM-written, human-read, cross-linked
-   markdown pages with YAML frontmatter. ~455 pages. Synced to
-   `cemini-librarian:/opt/cemini-wiki/wiki/` for 24/7 MCP serving via kb-server
-   (FTS5 BM25, port 3838).
+   markdown. **Canonical on laptop git** (~455+ pages). Federation wikis in
+   sibling repos under `~/Desktop/projects/`.
 
 3. **The schema** (`CLAUDE.md`, tracked) — how the LLM runs the wiki.
-   Co-evolves with the workspace.
 
-4. **Librarian server** — dedicated Hetzner CPX21 (Ashburn, $13.99/mo, 3 vCPU,
-   4 GB RAM, 80 GB NVMe). Runs kb-server (`willynikes2/knowledge-base-server`,
-   MIT) on port 3838. Wiki synced hourly via `scripts/sync_wiki_to_librarian.sh`.
-   See `@concepts/librarian-server-architecture.md` for the full plan.
+4. **Hetzner fleet (trading only)**
+   - **`cemini-prod`** — CeminiSuite trading stack (`/opt/cemini`)
+   - **`cemini-egress-fi`** — Helsinki order egress (HL + PM)
+   - **`cemini-librarian`** — **deleted** — see `wiki/meta/librarian-decommission-2026-06-14.md`
 
-See `CLAUDE.md` for the full operational schema (page formats, ingest
-workflow, citation tags, distribution rules, session-start rituals).
+## Fleet posture (2026-06-14)
 
-## Distribution targets
+| Host | Purpose |
+|------|---------|
+| prod | Live trading, Lane A, streams |
+| egress-fi | HL / PM order routing |
+| laptop | Wiki, ingest, briefs, research |
 
-The wiki is the librarian; consumers live elsewhere:
+kb-server / stash / lazy-tool `kb_search` are **not** available until librarian is
+restored from snapshot.
 
-- **claude.ai** — context for conversations and writing tasks.
-- **CeminiSuite** — the production trading stack on a Hetzner host.
-  Connection details in `.local/server.md` (gitignored). This workspace
-  ships briefs into `/opt/cemini/briefs/` only; everything else on the
-  server is read-only from here.
-- **Librarian MCP** — kb-server at `cemini-librarian:3838` serves wiki
-  content to the Cemini production brain via MCP (Phase 4 wiring shipped,
-  verification pending; server-stack scope).
-
-## Getting started
+## Quick start
 
 ```bash
-# clone
-git clone <this repo>
-cd "OSINT WORKSPACE"
-
-# scripts assume Python 3.11+ with python-docx; install as needed:
-pip install python-docx
-
-# raw sources are on the librarian server, not the laptop.
-# verify connectivity:
-ssh cemini-librarian "ls /opt/cemini-bulk/research/ | head -5"
-
-# wiki lint (run after any wiki edit):
+# Wiki health
 python3 scripts/wiki_lint.py
 
-# wiki sync to librarian (or wait for hourly cron):
-scripts/sync_wiki_to_librarian.sh
+# Gap detection (Tier 1)
+python3 scripts/wiki_gap_detect.py
+
+# Pre-distribution brief check
+python3 scripts/skill_audit.py briefs/<file>.md
 ```
 
-## Cemini wiki federation
+## Related repos
 
-**Eight** interlinked markdown wikis plus the **Cemini Financial Suite** trading stack. Page bodies use `@<alias>/path/to/page.md` (aliases in `CLAUDE.md` → Related Wikis).
+- **CeminiSuite** — `~/Desktop/projects/CeminiSuite` (prod deploy monorepo)
+- **Federation hub** — `~/Desktop/projects/cemini-federation-hub`
+- **CCC wiki** and six public domain wikis — see `CLAUDE.md` Related Wikis table
 
-| Alias | Repository | Visibility | Focus |
-|-------|------------|------------|--------|
-| **`osint-wiki`** | **This repo** (`llm-wiki-by-cemini`) | **Private** | Financial / quant / prediction-market automation; librarian kb-server; CeminiSuite briefs |
-| `gambling-wiki` | [Gambling-wiki](https://github.com/cemini23/Gambling-wiki) | **Public** | Sports betting, casino, poker, DFS, best ball; PM retail strategy |
-| `game-dev-wiki` | [Game-Dev-wiki](https://github.com/cemini23/Game-Dev-wiki) | **Public** | Hobby game dev — castle/RTS research, Godot evals, agent harness |
-| `ccc-wiki` | [cemini-claude-code-CCC](https://github.com/cemini23/cemini-claude-code-CCC) | **Public** | Cursor / Claude Code meta-wiki — MCP, skills, conductor, eval prompts |
-| `image-gen-wiki` | [uncensored-image-gen-wiki](https://github.com/cemini23/uncensored-image-gen-wiki) | Public | Image / video / voice generation, persona ops |
-| `seo-wiki` | [SEO-GEO-B-M-Wiki](https://github.com/cemini23/SEO-GEO-B-M-Wiki) | Public | Local SEO, GBP, GEO/AEO, creator marketing |
-| `3d-printing-wiki` | [3D-Printing-Wiki](https://github.com/cemini23/3D-Printing-Wiki) | Public | FDM/FFF, Bambu, slicers, print farms |
-| `cybersecurity-wiki` | [Cybersecurity-wiki](https://github.com/cemini23/Cybersecurity-wiki) | Public | Pentest, red team, SOC, certifications |
-| *Cemini Financial Suite* | Private trading stack (`Cemini-Financial-Suite`; not a wiki) | **Private** | Production `/opt/cemini` — read-only from this workspace |
-
-**Privacy:** This OSINT wiki and the financial suite are **private**. **`ccc-wiki`** and the **five public domain wikis** (including `gambling-wiki`) are on GitHub. Do not commit `.local/`, `briefs/`, or `hot.md`.
-
-**Sync:** `scripts/sync_wiki_to_librarian.sh` (hourly cron + post-commit) rsyncs all seven wikis to `cemini-librarian:/opt/cemini-wiki/<alias>/wiki/`.
-
-**Eval prompt:** `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v7-2026-06-13.md` (nine surfaces; `gambling-wiki` = surface 3; `game-dev-wiki` = surface 8).
-
-## Cemini media
-
-- Newsletter: [Outlier Weekly](https://outlierweekly.substack.com)
-- YouTube: [@Cemini23](https://www.youtube.com/@Cemini23)
+See `CLAUDE.md` for full operating schema and `ROADMAP.md` for active workstreams.

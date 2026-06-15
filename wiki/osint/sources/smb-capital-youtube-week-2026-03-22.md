@@ -10,14 +10,15 @@ related:
   - sources/smb-capital-youtube-week-2026-03-14.md
   - concepts/smb-breakout-checks-in-favor.md
   - concepts/xsp-put-credit-spread-small-account-smb.md
-  - concepts/a-plus-trade-grading-smb.md
+  - concepts/xsp-hedge-fund-core-book-thesis.md
   - concepts/prop-desk-team-trading-collaboration.md
   - concepts/tape-reading-order-flow-day-trading.md
   - concepts/broken-wing-butterfly-options.md
+  - concepts/a-plus-trade-grading-smb.md
 maturity: validated
 read_status: deep-read
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-06-14
 clusters: [trading-education, breakouts, options, prop-trading]
 ---
 

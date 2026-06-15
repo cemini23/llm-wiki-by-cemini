@@ -38,10 +38,11 @@ related:
   - concepts/laptop-prod-research-split.md
   - sources/cemini-laptop-prod-research-handoff-2026-05-23.md
   - concepts/cemini-repository-topology.md
-maturity: validated
+  - meta/librarian-decommission-2026-06-14.md
+maturity: retracted
 hub: true
 created: 2026-04-28
-updated: 2026-06-10
+updated: 2026-06-14
 ---
 
 ## Relations
@@ -67,6 +68,8 @@ updated: 2026-06-10
 - @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — financial harness paper (K99 cross-wiki from CCC)
 
 ## Raw Concept
+
+`[RETRACTED 2026-06-14]` Host **deleted**. This page is **historical design record** only. Live posture: @meta/librarian-decommission-2026-06-14.md — prod + egress-fi; laptop wiki canon.
 
 `[DECISION 2026-04-28]` Architectural commitment to a dedicated Hetzner Cloud server hosting the workspace librarian (llm-wiki-compiler + Ollama + nomic-embed-text + canonical wiki copy) separately from both the local laptop (current canonical editor) and the production trading-stack Hetzner host. **Driver**: crypto markets run 24/7; the deployed Cemini brain (`services/llm_analyst/deepseek_client.py` analyst nodes operating against the LangGraph scatter-gather topology) must be able to query the wiki/library for context **at any time** market signals fire, with no laptop-availability dependency, no lid-closed-sleep risk, and no home-network-reliability dependency. Laptop-as-host fails this SLA; sync-to-existing-Hetzner (Option A in `wiki/concepts/wiki-tooling-evaluation.md`) is feasible but loads the already-tight 7 GB RAM production box and creates SPOF risk on shared infrastructure. **Option C — new dedicated CX-class server** is the committed path.
 

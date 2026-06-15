@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **400 canonical stubs** (K113 +7 pages 2026-06-12; K112 cross-wiki close-out)
+Total: **403 canonical stubs** (K117 +3 pages 2026-06-15; K114/K116 backlog in same commit)
 
 
 ### rl-marl (104)
@@ -1290,6 +1290,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Hermes operator playbook](concepts/hermes-laptop-operator-playbook.md) — split laptop UI + librarian always-on Telegram. — hermes, skillclaw, k113
 - [GEO ICE turnkey acquisition thesis](concepts/geo-ice-turnkey-acquisition-thesis.md) — K114 investigative OSINT synthesis (April 2026 briefs). — geo-group, ice, osint, k114
 - [Scientific conclusion synthesis eval](concepts/scientific-conclusion-synthesis-eval.md) — SciConBench clean-room pattern (K114). — agent-eval, sciconbench, k114
+- [Partial-observation stochastic control](concepts/partial-observation-stochastic-control.md) — K117: particle + DeepSets for latent-state control; REFERENCE for execution research. — concept, stochastic-control, k117
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113
 - [SkillClaw](entities/tools/skillclaw.md) — K113 collective Hermes skill evolution. — tool, hermes, k113
 - [SciConBench](entities/benchmarks/sciconbench.md) — K114 scientific conclusion synthesis benchmark (MIT). — benchmark, agent-eval, k114
@@ -1298,7 +1299,9 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [all-agentic-architectures](entities/tools/all-agentic-architectures.md) — K113 Steal-from; 35 agent patterns. — tool, steal-from, k113
 - [Less Context, Better Agents (2606.10209)](sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md) — `[VALIDATED 2026-06-10]` MCP context prune N=5 + summary W=3 beats full history. — source, arxiv, llm-agents, k110
 - [Instrumental probability and learnable alpha limits](concepts/instrumental-probability-learnable-alpha.md) — K110 synthesis: no-arbitrage vs efficiency vs net exploitability; capacity-scaling discipline. — concept, quant-finance, k110
-- [BAVAR-BLED portfolio DRL (2606.09104)](sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md) — regime + fat-tail PO. — source, arxiv, k107
+- [BAVAR-BLED portfolio DRL (2606.09104)](sources/arxiv-bavar-bled-portfolio-regime-2606.09104-2026-06-09.md) — regime + fat-tail PO. — source, arxiv, k107
+- [Volatility forecasting + return prediction under regimes — CSI 300 (2606.09478)](sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md) — `[DRAFT 2026-06-15]` K117: MS-GJR-GARCH + HARQ vol wins; return alpha low-vol only. — source, arxiv, k117
+- [Particle methods + deep learning for partial-observation control (2606.09055)](sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md) — `[DRAFT 2026-06-15]` K117: particle + DeepSets + Deep BSDE; liquidation / allocation. — source, arxiv, k117
 - [Strategic resource acquisition game theory](concepts/strategic-resource-acquisition-game-theory.md) — `[DRAFT 2026-06-09]` competitive execution overlay. — concept, k107
 - [Algorithmic auditing — covariance regret](concepts/algorithmic-auditing-covariance-regret.md) — `[DRAFT 2026-06-09]` external sequential audit metric. — concept, k107
 - [OLS alpha signal framework](concepts/ols-alpha-signal-framework.md) — `[DRAFT 2026-06-09]` intercept-as-edge discipline. — concept, quant, k107
@@ -1327,6 +1330,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [System scaling harness evaluation](concepts/system-scaling-harness-evaluation.md) — `[DRAFT 2026-06-02]` K94 steal-from harness-scaling paper — six subsystem dimensions (not model-only metrics). — concept, agent-harness, evaluation, k94
 - [Agyn platform](entities/tools/agyn-platform.md) — `[DRAFT 2026-06-02]` K94 REFERENCE — prod agent ops vs Hetzner brief-driven deploy; pairs with CCC `agyn.md`. — entity, agent-platform, k94
 - [Harness updating vs benefit — non-monotonic](concepts/harness-updating-vs-benefit-nonmonotonic.md) — `[VALIDATED]` evolver vs executor budget rule. — concept, agent-harness, k93
+- [Librarian decommission (2026-06-14)](meta/librarian-decommission-2026-06-14.md) — `[CORE]` Hetzner `cemini-librarian` deleted; prod + egress-fi fleet; laptop wiki canon. — meta, infrastructure, decommission
 - [Federation operator hub (stub)](meta/federation-operator-hub-stub.md) — `[CORE]` → `cemini-federation-hub` morning summary + triage. — meta, federation, operator
 - [Federated daily research digest](concepts/federated-daily-research-digest.md) — `[CORE]` per-wiki Exa/inbox automation kit. — concept, meta, federation, k93
 - [revfactory/harness](entities/tools/revfactory-harness.md) — `[VALIDATED 2026-06-06]` K93/K102 Adopt Apache-2.0; Phase-0 CONDITIONAL-GO. — tool, ccc, k93, k102
@@ -1439,6 +1443,8 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Trader archetypes — finisher, runner, player (SMB)](concepts/trader-archetypes-finisher-runner-player-smb.md) — `[DRAFT 2026-05-29]` K79. Jeff Holden playbook alignment. — concept, trader-development, k79
 - [Options capital velocity — early close and roll (SMB)](concepts/options-capital-velocity-credit-spreads-smb.md) — `[DRAFT 2026-05-29]` K79. 76% rule, put spread recycle. — concept, options, k79
 - [SMB breakout checks-in-favor (seven must-haves)](concepts/smb-breakout-checks-in-favor.md) — `[DRAFT 2026-05-29]` K79 batch 5. Pink line, blue sky, clean tape, hidden RS. — concept, breakouts, k79
+- [XSP hedge-fund core book thesis — long-dated index calls](concepts/xsp-hedge-fund-core-book-thesis.md) — `[DRAFT 2026-06-14]` K116. Mentor narrative: 30–50% long SPX/XSP LEAPS, put hedge over time, delta-adjusted scoring, index-flow. — concept, options, xsp, leaps, k116
+- [XSP four-lane trading framework (operator playbook)](concepts/xsp-lane-trading-framework.md) — `[DRAFT 2026-06-14]` Lanes A–D; Lane B = core book; Lane A prod exit brief. — concept, options, xsp, playbook, k116
 - [XSP put credit spread — sub-$100 small-account options (SMB)](concepts/xsp-put-credit-spread-small-account-smb.md) — `[DRAFT 2026-05-29]` K79. 20MA signal, Seth Freudberg. — concept, options, xsp, k79
 - [A+ trade grading and dynamic risk (SMB prop desk)](concepts/a-plus-trade-grading-smb.md) — `[DRAFT 2026-05-29]` K79. ≤1 A+/mo, 5× B risk, mental capital. — concept, risk-management, k79
 - [Brett Steenbarger — trading psychologist](entities/people/brett-steenbarger.md) — `[DRAFT 2026-05-29]` K79 batch 4. Positive trading psychology. — person, trading-psychology, k79

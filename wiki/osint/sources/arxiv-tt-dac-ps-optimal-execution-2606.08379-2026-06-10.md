@@ -8,10 +8,12 @@ related:
   - concepts/strategic-resource-acquisition-game-theory.md
   - concepts/regime-conditioned-evaluation.md
   - sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md
+  - sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md
+  - concepts/partial-observation-stochastic-control.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-06-15
 ---
 
 ## Relations
@@ -20,6 +22,7 @@ updated: 2026-06-10
 - @concepts/strategic-resource-acquisition-game-theory.md — Almgren–Chriss solo-execution vs multi-agent
 - @concepts/regime-conditioned-evaluation.md — IS% benchmarking discipline
 - @sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md — LOB / MM microstructure sibling
+- @sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md — K117 partial-observation contrast (latent drift vs fully observed state)
 
 ## Raw Concept
 

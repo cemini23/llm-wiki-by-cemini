@@ -8,9 +8,11 @@ related:
   - sources/smb-capital-youtube-week-2026-02-28.md
   - concepts/options-capital-velocity-credit-spreads-smb.md
   - concepts/xsp-put-credit-spread-small-account-smb.md
-  - concepts/broken-wing-butterfly-options.md
+  - concepts/xsp-hedge-fund-core-book-thesis.md
+  - concepts/xsp-lane-trading-framework.md
   - concepts/smb-options-casino-edge-model.md
   - concepts/options-martingale-1dte-iron-condor-warning-smb.md
+  - concepts/broken-wing-butterfly-options.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29

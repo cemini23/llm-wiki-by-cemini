@@ -113,9 +113,11 @@ related:
   - sources/ssrn-5140015-time-series-quant-finance-2025.md
   - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
   - concepts/gmm-factor-lens-regime-modeling.md
+  - concepts/partial-observation-stochastic-control.md
+  - sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-23
+updated: 2026-06-15
 ---
 
 ## Relations

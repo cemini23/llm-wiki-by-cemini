@@ -1,5 +1,31 @@
 # Wiki Log
 
+## [2026-06-15] ingest | K117 daily digest — 2 arXiv + backlog close-out
+
+- **2 sources** — arXiv 2606.09055 (particle partial-observation stochastic control + DeepSets); arXiv 2606.09478 (regime HARQ + XGBoost CSI 300 walk-forward)
+- **1 concept** — `partial-observation-stochastic-control.md`
+- **4 updates** — `markov-regime-switching-models`, `time-series-arima-garch-framework`, `stochastic-calculus-foundations`, `index.md`
+- **Phase-0** — `adopt_k117_phase0.sh` (REFERENCE only; SciConBench clone smoke)
+- **Briefs (2)** — regime vol gating equity signals; SciConBench clean-room eval → scp prod
+- **Archive** — inbox PDFs → `.local/archives/research/`; inbox cleared
+
+## [2026-06-14] concept | XSP hedge-fund core book + four-lane framework (K116)
+
+- **2 concepts** — `xsp-hedge-fund-core-book-thesis` (mentor: LEAPS core book, put hedge, delta-adjusted returns, index algos); `xsp-lane-trading-framework` (lanes A–D, Lane B = structural weight)
+- **1 update** — `xsp-put-credit-spread-small-account-smb` contrast backlink
+- **Context** — complements prod brief `2026-06-14_xsp-lane-a-overnight-swing-monitor-cemini-prod.md`
+- **Lane B brief** — `briefs/2026-06-14_xsp-lane-b-leaps-hedge-monitor-cemini-prod.md` → scp prod
+
+## [2026-06-14] infra | Librarian decommission — prod + egress-fi fleet
+
+- **Deleted** — Hetzner `cemini-librarian` (kb-server, stash, Ollama, Arctic LMDB, wiki sync target)
+- **Canon** — laptop `wiki/` git + `.local/archives/research/` for raw post-ingest
+- **Fleet** — `cemini-prod` + `cemini-egress-fi` only for 24/7 ops
+- **Docs** — `meta/librarian-decommission-2026-06-14.md`; `CLAUDE.md`, `README.md`, `ROADMAP.md`, `cemini-stack.md`, MCP rules updated
+- **Scripts** — `sync_wiki_to_librarian.sh` exits deprecated; remove hourly sync cron on laptop
+- **Laptop cleanup (2026-06-14)** — crontab: removed sync + librarian healthcheck (prod 5am health retained); LaunchAgents `stash-tunnel` + `wiki-sync-verify` → `.plist.disabled`; `post-commit.sh` no-op
+- **Source pages** — retain `cemini-librarian:` location strings as historical provenance (no bulk edit)
+
 ## [2026-06-13] bootstrap | K115 — game-dev-wiki federation
 
 - **Repo** — `cemini23/Game-Dev-wiki` (public); alias `game-dev-wiki`

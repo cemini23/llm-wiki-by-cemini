@@ -11,6 +11,7 @@ related:
   - concepts/wheel-options-strategy-smb.md
   - concepts/smb-options-casino-edge-model.md
   - concepts/options-martingale-1dte-iron-condor-warning-smb.md
+  - concepts/xsp-hedge-fund-core-book-thesis.md
 maturity: draft
 created: 2026-05-29
 updated: 2026-05-29
