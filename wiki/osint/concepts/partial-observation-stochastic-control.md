@@ -8,9 +8,11 @@ related:
   - concepts/stochastic-calculus-foundations.md
   - concepts/quant-finance.md
   - sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md
+  - concepts/time-inconsistent-stochastic-control.md
+  - sources/arxiv-dpg-time-inconsistent-equilibrium-2606.11798-2026-06-16.md
 maturity: draft
 created: 2026-06-15
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 
 ## Relations
@@ -19,6 +21,8 @@ updated: 2026-06-15
 - @concepts/stochastic-calculus-foundations.md — measure-valued filtering background
 - @concepts/quant-finance.md — corpus cluster
 - @sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md — fully observed execution RL contrast
+- @concepts/time-inconsistent-stochastic-control.md — K118: time-inconsistent objectives break naive DP
+- @sources/arxiv-dpg-time-inconsistent-equilibrium-2606.11798-2026-06-16.md — K118 DPG equilibrium learner
 
 ## Raw Concept
 

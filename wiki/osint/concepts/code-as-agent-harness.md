@@ -22,10 +22,12 @@ related:
   - sources/arxiv-siga-scientific-sim-adapters-2606.09774-2026-06-11.md
   - concepts/agentified-agent-assessment.md
   - sources/arxiv-agentbeats-aaa-assessment-2606.13608-2026-06-12.md
+  - concepts/agents-all-the-way-down-methodology.md
+  - sources/arxiv-agents-all-the-way-down-2606.11869-2026-06-16.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-06-08
+updated: 2026-06-16
 ---
 
 ## Relations

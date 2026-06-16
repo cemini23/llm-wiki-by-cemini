@@ -12,9 +12,11 @@ related:
   - concepts/llm-agent-systems.md
   - concepts/regime-conditioned-evaluation.md
   - entities/tools/blade-github.md
+  - concepts/orchestration-reward-modeling-orch-rm.md
+  - sources/arxiv-orch-rm-multi-agent-orchestration-2606.13598-2026-06-16.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-06-16
 ---
 
 ## Relations

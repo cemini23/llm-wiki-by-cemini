@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **403 canonical stubs** (K117 +3 pages 2026-06-15; K114/K116 backlog in same commit)
+Total: **411 canonical stubs** (K118 +8 pages 2026-06-16; K117 2026-06-15)
 
 
 ### rl-marl (104)
@@ -1291,6 +1291,11 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [GEO ICE turnkey acquisition thesis](concepts/geo-ice-turnkey-acquisition-thesis.md) — K114 investigative OSINT synthesis (April 2026 briefs). — geo-group, ice, osint, k114
 - [Scientific conclusion synthesis eval](concepts/scientific-conclusion-synthesis-eval.md) — SciConBench clean-room pattern (K114). — agent-eval, sciconbench, k114
 - [Partial-observation stochastic control](concepts/partial-observation-stochastic-control.md) — K117: particle + DeepSets for latent-state control; REFERENCE for execution research. — concept, stochastic-control, k117
+- [Time-inconsistent stochastic control](concepts/time-inconsistent-stochastic-control.md) — K118: extended HJB equilibrium + DPG two-stage RL. — concept, stochastic-control, k118
+- [Agents All the Way Down methodology](concepts/agents-all-the-way-down-methodology.md) — K118: custom agent P1–P5; Turtle CLI + agent-tests-agent. — concept, llm-agents, k118
+- [Orchestration reward modeling (Orch-RM)](concepts/orchestration-reward-modeling-orch-rm.md) — K118: plan-level Bradley-Terry RM for MAS orchestrators. — concept, llm-agents, k118
+- [Tokenized fixed income price discovery](concepts/tokenized-fixed-income-price-discovery.md) — K118: admissibility + reconciliation before basis trades. — concept, tokenization, k118
+- [OrchRM](entities/tools/orchrm.md) — K118 stub; Wang-ML-Lab repo pending publish. — entity, tool, k118
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113
 - [SkillClaw](entities/tools/skillclaw.md) — K113 collective Hermes skill evolution. — tool, hermes, k113
 - [SciConBench](entities/benchmarks/sciconbench.md) — K114 scientific conclusion synthesis benchmark (MIT). — benchmark, agent-eval, k114
@@ -1302,6 +1307,10 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [BAVAR-BLED portfolio DRL (2606.09104)](sources/arxiv-bavar-bled-portfolio-regime-2606.09104-2026-06-09.md) — regime + fat-tail PO. — source, arxiv, k107
 - [Volatility forecasting + return prediction under regimes — CSI 300 (2606.09478)](sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md) — `[DRAFT 2026-06-15]` K117: MS-GJR-GARCH + HARQ vol wins; return alpha low-vol only. — source, arxiv, k117
 - [Particle methods + deep learning for partial-observation control (2606.09055)](sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md) — `[DRAFT 2026-06-15]` K117: particle + DeepSets + Deep BSDE; liquidation / allocation. — source, arxiv, k117
+- [Deterministic policy gradient for time-inconsistent equilibrium (2606.11798)](sources/arxiv-dpg-time-inconsistent-equilibrium-2606.11798-2026-06-16.md) — `[DRAFT 2026-06-16]` K118: DPG + two-stage fixed point; mean-variance / non-exponential discounting. — source, arxiv, k118
+- [Agents All the Way Down — custom agent methodology (2606.11869)](sources/arxiv-agents-all-the-way-down-2606.11869-2026-06-16.md) — `[DRAFT 2026-06-16]` K118: P1–P5 substrate→CLI; agent-tests-agent QA. — source, arxiv, k118
+- [Reward modeling for multi-agent orchestration — Orch-RM (2606.13598)](sources/arxiv-orch-rm-multi-agent-orchestration-2606.13598-2026-06-16.md) — `[DRAFT 2026-06-16]` K118: orchestration-level BoN; repo not yet published. — source, arxiv, k118
+- [Price-discovery admissibility in tokenized fixed income (2606.13822)](sources/arxiv-tokenized-fixed-income-admissibility-2606.13822-2026-06-16.md) — `[DRAFT 2026-06-16]` K118: measurement reconciliation + 1/4 admissible; affine basis model. — source, arxiv, k118
 - [Strategic resource acquisition game theory](concepts/strategic-resource-acquisition-game-theory.md) — `[DRAFT 2026-06-09]` competitive execution overlay. — concept, k107
 - [Algorithmic auditing — covariance regret](concepts/algorithmic-auditing-covariance-regret.md) — `[DRAFT 2026-06-09]` external sequential audit metric. — concept, k107
 - [OLS alpha signal framework](concepts/ols-alpha-signal-framework.md) — `[DRAFT 2026-06-09]` intercept-as-edge discipline. — concept, quant, k107

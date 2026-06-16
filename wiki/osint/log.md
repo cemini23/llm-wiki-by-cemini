@@ -1,5 +1,23 @@
 # Wiki Log
 
+## [2026-06-16] ingest | K118 daily digest — 4 arXiv full ingest
+
+- **4 sources** — arXiv 2606.11798 (DPG time-inconsistent equilibrium); 2606.11869 (Agents All the Way Down); 2606.13598 (Orch-RM); 2606.13822 (tokenized FI admissibility)
+- **4 concepts** — `time-inconsistent-stochastic-control`, `agents-all-the-way-down-methodology`, `orchestration-reward-modeling-orch-rm`, `tokenized-fixed-income-price-discovery`
+- **1 entity** — `orchrm` stub (repo 404)
+- **8 updates** — `stochastic-calculus-foundations`, `partial-observation-stochastic-control`, `conductor-orchestrator`, `mcp-tool-calling-eval-scaffold`, `llm-agent-systems`, `tokenized-us-equities-onchain-basis-trade`, `index.md`
+- **Phase-0** — `adopt_k118_phase0.sh` (REFERENCE only; OrchRM pending publish)
+- **Briefs (2 prod)** — Orch-RM conductor design; agent-tests-agent eval layer → scp prod
+- **Cross-wiki** — CCC `briefs/2026-06-16_agents-all-the-way-down-handoff.md`
+- **Archive** — inbox PDFs → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`; inbox cleared
+
+## [2026-06-16] cross-wiki | Tournament S1 Article brief → seo-wiki
+
+- **Handoff** — `@seo-wiki/briefs/2026-06-16_devfun-tournament-s1-article-handoff.md` (full data pack for X Article)
+- **SEO stub** — `@seo-wiki/concepts/devfun-tournament-s1-article-notes.md`
+- **OSINT sources** — `agents/devfun-poker-arena/briefs/2026-06-12_why-cemini-last-s1.md`, S1 export `s1-tournament-live`, premium audit `claude-opus_20260616T1135Z.md`
+- **Hook** — Playground S1 chip #1 → Tournament S1 bust (#116, 11% VPIP / 2% PFR vs field 28% / 18%)
+
 ## [2026-06-15] ingest | K117 daily digest — 2 arXiv + backlog close-out
 
 - **2 sources** — arXiv 2606.09055 (particle partial-observation stochastic control + DeepSets); arXiv 2606.09478 (regime HARQ + XGBoost CSI 300 walk-forward)

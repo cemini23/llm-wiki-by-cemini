@@ -10,10 +10,12 @@ related:
   - sources/arxiv-market-informedness-mm-profitability-2606.05882-2026-06-05.md
   - sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md
   - concepts/partial-observation-stochastic-control.md
+  - sources/arxiv-dpg-time-inconsistent-equilibrium-2606.11798-2026-06-16.md
+  - concepts/time-inconsistent-stochastic-control.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-10
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 
 ## Relations

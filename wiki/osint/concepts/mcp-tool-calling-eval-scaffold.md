@@ -12,9 +12,11 @@ related:
   - concepts/adk-arena-framework-evaluation.md
   - sources/arxiv-adk-arena-agent-dev-kits-2606.05548-2026-06-06.md
   - entities/tools/adk-arena.md
+  - sources/arxiv-agents-all-the-way-down-2606.11869-2026-06-16.md
+  - concepts/agents-all-the-way-down-methodology.md
 maturity: draft
 created: 2026-06-02
-updated: 2026-06-06
+updated: 2026-06-16
 cross-wiki-source: "@ccc-wiki/concepts/maven-agentic-tool-calling-generalization.md"
 ---
 
@@ -22,6 +24,8 @@ cross-wiki-source: "@ccc-wiki/concepts/maven-agentic-tool-calling-generalization
 
 - @ccc-wiki/concepts/maven-agentic-tool-calling-generalization.md — CCC canon (2605.30738)
 - @entities/tools/lazy-tool.md — deferred MCP discovery on laptop
+- @concepts/agents-all-the-way-down-methodology.md — K118 P5 agent-tests-agent complements deterministic tests
+- @sources/arxiv-agents-all-the-way-down-2606.11869-2026-06-16.md — K118 source
 
 ## Narrative
 
@@ -44,6 +48,8 @@ cross-wiki-source: "@ccc-wiki/concepts/maven-agentic-tool-calling-generalization
 **Intermediate-state rule (2026-06-06 fix):** When step 1 is prod-mcp health/metrics and step 2 is kb_search for **eval discipline**, append concept slug `mcp-tool-calling-eval-scaffold` to the kb query — raw channel/lag tokens route to prod architecture pages.
 
 **lazy-tool aliases:** After `lazy-tool reindex`, run `bash scripts/lazy_tool_enrich_prod_health.sh` so `search_tools("polymarket health")` resolves `get_stream_health` / `get_data_health`.
+
+**K118 agent-tests-agent (2026-06-16):** @concepts/agents-all-the-way-down-methodology.md P5 — general-purpose agent drives custom agent (prod-mcp CLI, lazy-tool) through scenario scripts; record tool traces + pass/fail. Complements GTFA smoke matrix above; does not replace pytest on prod code.
 
 ## Snippets
 

@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
+## Current state (2026-06-16 — K118)
+
+- **K118 ingest (2026-06-16)** — Daily digest full ingest: 4 arXiv from inbox. **4 sources + 4 concepts + 1 entity + 8 updates.** DPG time-inconsistent equilibrium (2606.11798) REFERENCE; Agents All the Way Down (2606.11869) REFERENCE — P4/P5 steal; Orch-RM (2606.13598) REFERENCE — repo 404; tokenized FI admissibility (2606.13822) REFERENCE — 1/4 products informative. **Phase-0:** `adopt_k118_phase0.sh`. **Prod briefs scp'd (2):** Orch-RM conductor BoN design; agent-tests-agent MCP eval layer. **Cross-wiki:** CCC agents-all-the-way-down handoff. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-15 — K117)
 
 - **K117 ingest (2026-06-15)** — Daily digest full ingest: 2 arXiv from inbox. **2 sources + 1 concept + 4 updates.** Particle partial-observation control (2606.09055) REFERENCE; regime vol + return prediction CSI 300 (2606.09478) REFERENCE — low-vol gating steal. **Phase-0:** `adopt_k117_phase0.sh`. **Prod briefs scp'd (2):** regime vol gating equity signals; SciConBench clean-room eval (K114 backlog). Archive → laptop `.local/archives/research/`; inbox cleared. **Also committed:** K114 GEO/SciConBench + K116 XSP + librarian decommission backlog.

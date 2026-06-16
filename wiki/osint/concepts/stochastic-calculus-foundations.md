@@ -10,10 +10,12 @@ related:
   - concepts/markov-regime-switching-models.md
   - entities/people/zura-kakushadze.md
   - concepts/partial-observation-stochastic-control.md
+  - concepts/time-inconsistent-stochastic-control.md
   - sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md
+  - sources/arxiv-dpg-time-inconsistent-equilibrium-2606.11798-2026-06-16.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-06-15
+updated: 2026-06-16
 clusters: [quant-finance, foundations, education]
 ---
 
@@ -24,6 +26,8 @@ clusters: [quant-finance, foundations, education]
 - @concepts/time-series-arima-garch-framework.md — empirical-modeling complement (Phynance gives the theoretical underpinnings, ARIMA/GARCH gives the practical implementation)
 - @concepts/markov-regime-switching-models.md — Markov property is invoked in the binomial-tree and risk-neutral-measure chapters
 - @concepts/partial-observation-stochastic-control.md — K117: filtering distribution as infinite-dimensional control state; particle finite-dimensional surrogate
+- @concepts/time-inconsistent-stochastic-control.md — K118: equilibrium via extended HJB + DPG two-stage reformulation
+- @sources/arxiv-dpg-time-inconsistent-equilibrium-2606.11798-2026-06-16.md — K118 source
 
 ## Raw Concept
 

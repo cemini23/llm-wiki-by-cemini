@@ -35,10 +35,14 @@ related:
   - concepts/context-compression-resume-pattern.md
   - concepts/context-fractured-decomposition-attacks.md
   - sources/arxiv-context-fractured-decomposition-cfd-2606.09084-2026-06-12.md
+  - sources/arxiv-orch-rm-multi-agent-orchestration-2606.13598-2026-06-16.md
+  - concepts/orchestration-reward-modeling-orch-rm.md
+  - sources/arxiv-agents-all-the-way-down-2606.11869-2026-06-16.md
+  - concepts/agents-all-the-way-down-methodology.md
 maturity: validated
 hub: true
 created: 2026-05-01
-updated: 2026-06-12
+updated: 2026-06-16
 ---
 
 ## Relations
@@ -56,6 +60,10 @@ updated: 2026-06-12
 - @concepts/nemo-execution-aware-optimization-modeling.md — K98 sandboxed OR agents (REFERENCE)
 - @concepts/seclaw-agent-security-evaluation.md — K98 agent security eval (REFERENCE)
 - @concepts/context-fractured-decomposition-attacks.md — K112 provenance gap / CFD (artifact lineage)
+- @concepts/orchestration-reward-modeling-orch-rm.md — K118: orchestration-level BoN + reward-guided continued training
+- @sources/arxiv-orch-rm-multi-agent-orchestration-2606.13598-2026-06-16.md — Orch-RM source (K118)
+- @concepts/agents-all-the-way-down-methodology.md — K118: ship-as-CLI + agent-tests-agent eval layer
+- @sources/arxiv-agents-all-the-way-down-2606.11869-2026-06-16.md — Agents All the Way Down source (K118)
 - @concepts/llm-agent-systems.md — Conductor is the orchestration layer for the LLM agent systems cluster.
 - @sources/arxiv-coordination-layer-multi-agent-2605-03310.md — argues coordination should be a separable, configurable architectural layer; Brier/Murphy evaluation method applicable to the conductor
 - @concepts/scatter-gather-topology.md — Conductor replaces manual scatter-gather topology selection with learned routing decisions.

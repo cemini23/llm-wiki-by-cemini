@@ -11,10 +11,12 @@ related:
   - sources/agentic-harness-engineering.md
   - sources/arxiv-cli-anything-2606-03854-2026-06-03.md
   - concepts/high-signal-paper-patterns.md
+  - sources/arxiv-agents-all-the-way-down-2606.11869-2026-06-16.md
+  - concepts/agents-all-the-way-down-methodology.md
 maturity: validated
 read_status: read
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-06-16
 ---
 
 ## Relations

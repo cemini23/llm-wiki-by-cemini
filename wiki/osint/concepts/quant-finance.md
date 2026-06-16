@@ -115,9 +115,11 @@ related:
   - concepts/gmm-factor-lens-regime-modeling.md
   - concepts/partial-observation-stochastic-control.md
   - sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md
+  - concepts/tokenized-fixed-income-price-discovery.md
+  - sources/arxiv-tokenized-fixed-income-admissibility-2606.13822-2026-06-16.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 
 ## Relations
