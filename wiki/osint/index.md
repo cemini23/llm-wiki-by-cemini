@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **411 canonical stubs** (K118 +8 pages 2026-06-16; K117 2026-06-15)
+Total: **417 canonical stubs** (K119 +6 pages 2026-06-16; K118 2026-06-16)
 
 
 ### rl-marl (104)
@@ -1296,6 +1296,9 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Orchestration reward modeling (Orch-RM)](concepts/orchestration-reward-modeling-orch-rm.md) — K118: plan-level Bradley-Terry RM for MAS orchestrators. — concept, llm-agents, k118
 - [Tokenized fixed income price discovery](concepts/tokenized-fixed-income-price-discovery.md) — K118: admissibility + reconciliation before basis trades. — concept, tokenization, k118
 - [OrchRM](entities/tools/orchrm.md) — K118 stub; Wang-ML-Lab repo pending publish. — entity, tool, k118
+- [Claw-SWE-Bench](entities/tools/claw-swe-bench.md) — K119 MIT harness benchmark (opensquilla). — entity, tool, k119
+- [Claw-SWE-Bench harness evaluation](concepts/claw-swe-bench-harness-evaluation.md) — K119: harness as controlled variable on SWE-Lite-80. — concept, llm-agents, k119
+- [Post-Rejection Follow-up Sampling (PRFS)](concepts/post-rejection-follow-up-sampling.md) — K119: counterfactual rejection audit for filters. — concept, quant-finance, k119
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113
 - [SkillClaw](entities/tools/skillclaw.md) — K113 collective Hermes skill evolution. — tool, hermes, k113
 - [SciConBench](entities/benchmarks/sciconbench.md) — K114 scientific conclusion synthesis benchmark (MIT). — benchmark, agent-eval, k114
@@ -1311,6 +1314,9 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Agents All the Way Down — custom agent methodology (2606.11869)](sources/arxiv-agents-all-the-way-down-2606.11869-2026-06-16.md) — `[DRAFT 2026-06-16]` K118: P1–P5 substrate→CLI; agent-tests-agent QA. — source, arxiv, k118
 - [Reward modeling for multi-agent orchestration — Orch-RM (2606.13598)](sources/arxiv-orch-rm-multi-agent-orchestration-2606.13598-2026-06-16.md) — `[DRAFT 2026-06-16]` K118: orchestration-level BoN; repo not yet published. — source, arxiv, k118
 - [Price-discovery admissibility in tokenized fixed income (2606.13822)](sources/arxiv-tokenized-fixed-income-admissibility-2606.13822-2026-06-16.md) — `[DRAFT 2026-06-16]` K118: measurement reconciliation + 1/4 admissible; affine basis model. — source, arxiv, k118
+- [Claw-SWE-Bench — OpenClaw harness eval on coding tasks (2606.12344)](sources/arxiv-claw-swe-bench-2606.12344-2026-06-16.md) — `[DRAFT 2026-06-16]` K119: harness attribution on SWE-Lite-80; API cost vs pass@1. — source, arxiv, k119
+- [HarnessFix — failed-trajectory harness repair (2606.06324)](sources/arxiv-harnessfix-trace-repair-2606.06324-2026-06-16.md) — `[DRAFT 2026-06-16]` K119: HTIR trace repair; CCC deep-read exists. — source, arxiv, k119
+- [PRFS — counterfactual DEX rejection audit (2606.08228)](sources/arxiv-prfs-counterfactual-dex-2606.08228-2026-06-16.md) — `[DRAFT 2026-06-16]` K119: post-rejection forward sampling methodology. — source, arxiv, k119
 - [Strategic resource acquisition game theory](concepts/strategic-resource-acquisition-game-theory.md) — `[DRAFT 2026-06-09]` competitive execution overlay. — concept, k107
 - [Algorithmic auditing — covariance regret](concepts/algorithmic-auditing-covariance-regret.md) — `[DRAFT 2026-06-09]` external sequential audit metric. — concept, k107
 - [OLS alpha signal framework](concepts/ols-alpha-signal-framework.md) — `[DRAFT 2026-06-09]` intercept-as-edge discipline. — concept, quant, k107

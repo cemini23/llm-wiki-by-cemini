@@ -14,9 +14,11 @@ related:
   - concepts/prediction-market-historical-analysis.md
   - entities/people/alexo-0x.md
   - concepts/alpha-eval-formula-mining-framework.md
+  - concepts/post-rejection-follow-up-sampling.md
+  - sources/arxiv-prfs-counterfactual-dex-2606.08228-2026-06-16.md
 maturity: validated
 created: 2026-05-21
-updated: 2026-06-03
+updated: 2026-06-16
 clusters: [polymarket, quant-finance, machine-learning]
 ---
 

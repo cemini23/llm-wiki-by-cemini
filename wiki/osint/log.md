@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-06-16] ingest | K119 Tier-2 sweep — 3 arXiv full ingest
+
+- **Sweep** — `weekly_arxiv_sweep.sh` → `wiki/sweeps/2026-06-16.md` (23 hits, 14-day window)
+- **3 sources** — arXiv 2606.12344 (Claw-SWE-Bench); 2606.06324 (HarnessFix); 2606.08228 (PRFS)
+- **2 concepts** — `claw-swe-bench-harness-evaluation`, `post-rejection-follow-up-sampling`
+- **1 entity** — `claw-swe-bench` (MIT, opensquilla)
+- **Updates** — `llm-agent-systems`, `code-as-agent-harness`, `mcp-tool-calling-eval-scaffold`, `agent-memory-cross-scenario-generality`, `openclaw-security-taxonomy`, `quant-finance`, `event-based-prediction-market-ml`, `index.md`
+- **Phase-0** — `adopt_k119_phase0.sh` (Claw CONDITIONAL-GO; HarnessFix + PRFS REFERENCE)
+- **Briefs (2 prod)** — Claw-SWE-Bench harness attribution; PRFS rejection-followup audit → scp prod
+- **Archive** — inbox PDFs → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`; inbox cleared
+
 ## [2026-06-16] ingest | K118 daily digest — 4 arXiv full ingest
 
 - **4 sources** — arXiv 2606.11798 (DPG time-inconsistent equilibrium); 2606.11869 (Agents All the Way Down); 2606.13598 (Orch-RM); 2606.13822 (tokenized FI admissibility)

@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
+## Current state (2026-06-16 — K119)
+
+- **K119 ingest (2026-06-16)** — Tier-2 sweep + full ingest: 3 arXiv from sweep triage. **3 sources + 2 concepts + 1 entity + 8 updates.** Claw-SWE-Bench (2606.12344) CONDITIONAL-GO — MIT harness attribution benchmark; HarnessFix (2606.06324) REFERENCE — CCC deep-read exists; PRFS (2606.08228) REFERENCE — rejection audit methodology. **Phase-0:** `adopt_k119_phase0.sh`. **Prod briefs scp'd (2):** Claw harness attribution smoke; PRFS filter audit discipline. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-16 — K118)
 
 - **K118 ingest (2026-06-16)** — Daily digest full ingest: 4 arXiv from inbox. **4 sources + 4 concepts + 1 entity + 8 updates.** DPG time-inconsistent equilibrium (2606.11798) REFERENCE; Agents All the Way Down (2606.11869) REFERENCE — P4/P5 steal; Orch-RM (2606.13598) REFERENCE — repo 404; tokenized FI admissibility (2606.13822) REFERENCE — 1/4 products informative. **Phase-0:** `adopt_k118_phase0.sh`. **Prod briefs scp'd (2):** Orch-RM conductor BoN design; agent-tests-agent MCP eval layer. **Cross-wiki:** CCC agents-all-the-way-down handoff. Archive → egress-fi; inbox cleared.

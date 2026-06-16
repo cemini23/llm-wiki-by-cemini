@@ -147,6 +147,12 @@ related:
   - concepts/agents-all-the-way-down-methodology.md
   - sources/arxiv-orch-rm-multi-agent-orchestration-2606.13598-2026-06-16.md
   - concepts/orchestration-reward-modeling-orch-rm.md
+  - sources/arxiv-claw-swe-bench-2606.12344-2026-06-16.md
+  - concepts/claw-swe-bench-harness-evaluation.md
+  - entities/tools/claw-swe-bench.md
+  - sources/arxiv-harnessfix-trace-repair-2606.06324-2026-06-16.md
+  - sources/arxiv-prfs-counterfactual-dex-2606.08228-2026-06-16.md
+  - concepts/post-rejection-follow-up-sampling.md
 maturity: validated
 hub: true
 created: 2026-04-26

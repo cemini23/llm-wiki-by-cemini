@@ -117,6 +117,8 @@ related:
   - sources/arxiv-particle-methods-partial-observation-2606.09055-2026-06-15.md
   - concepts/tokenized-fixed-income-price-discovery.md
   - sources/arxiv-tokenized-fixed-income-admissibility-2606.13822-2026-06-16.md
+  - concepts/post-rejection-follow-up-sampling.md
+  - sources/arxiv-prfs-counterfactual-dex-2606.08228-2026-06-16.md
 maturity: draft
 created: 2026-04-27
 updated: 2026-06-16
@@ -211,6 +213,8 @@ updated: 2026-06-16
 - @concepts/stochastic-calculus-foundations.md — K55 synthesized reference: Itô, Girsanov, martingales, Black-Scholes, binomial trees
 - @concepts/time-series-arima-garch-framework.md — K55 synthesized concept: ARMA-family + GARCH framework with walk-forward + volatility-scaled sizing
 - @concepts/hiring-quant-talent-philosophy.md — K55 synthesized concept: Simons / Renaissance hiring + structural-design principles
+- @concepts/post-rejection-follow-up-sampling.md — K119 PRFS counterfactual rejection audit methodology
+- @sources/arxiv-prfs-counterfactual-dex-2606.08228-2026-06-16.md — K119 PRFS source (DEX filter calibration)
 
 ## Raw Concept
 

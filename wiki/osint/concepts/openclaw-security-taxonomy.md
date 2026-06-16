@@ -19,13 +19,17 @@ related:
   - sources/safeharness-2604.13630.md
   - concepts/mitre-atlas-taxonomy.md
   - entities/tools/hermes-agent.md
+  - entities/tools/claw-swe-bench.md
+  - concepts/claw-swe-bench-harness-evaluation.md
+  - sources/arxiv-claw-swe-bench-2606.12344-2026-06-16.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-18
+updated: 2026-06-16
 ---
 
 ## Relations
 
+- @entities/tools/claw-swe-bench.md — K119 MIT harness benchmark on OpenClaw-style tasks
 - @sources/ai-2-4-3.md — canonical source: Suwansathit, SUCCESS Lab, Texas A&M, arXiv:2603.27517v1, February 2026
 - @concepts/sae-execution-contract.md — SAE is the defense counterpart; this taxonomy catalogs the threat model SAE's six mitigations address
 - @concepts/cryptographic-audit-trail.md — K20's provenance model + Gateway RCE chain as audit-trail detection targets

@@ -24,6 +24,10 @@ related:
   - sources/arxiv-agentbeats-aaa-assessment-2606.13608-2026-06-12.md
   - concepts/agents-all-the-way-down-methodology.md
   - sources/arxiv-agents-all-the-way-down-2606.11869-2026-06-16.md
+  - sources/arxiv-claw-swe-bench-2606.12344-2026-06-16.md
+  - concepts/claw-swe-bench-harness-evaluation.md
+  - entities/tools/claw-swe-bench.md
+  - sources/arxiv-harnessfix-trace-repair-2606.06324-2026-06-16.md
 
 maturity: draft
 created: 2026-05-21

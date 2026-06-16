@@ -13,9 +13,10 @@ related:
   - entities/tools/claude-mem.md
   - "@ccc-wiki/concepts/agentic-memory-cross-scenario-generality.md"
   - "@ccc-wiki/concepts/failed-trajectory-harness-repair.md"
+  - sources/arxiv-harnessfix-trace-repair-2606.06324-2026-06-16.md
 maturity: validated
 created: 2026-06-05
-updated: 2026-06-05
+updated: 2026-06-16
 cross-wiki-source: "@ccc-wiki/concepts/agentic-memory-cross-scenario-generality.md"
 ---
 
@@ -26,6 +27,7 @@ cross-wiki-source: "@ccc-wiki/concepts/agentic-memory-cross-scenario-generality.
 - @concepts/agent-memory-critique.md — lookup vs true memory; representation/retrieval failure lens
 - @concepts/conductor-orchestrator.md — federation query fan-out vs agent-controlled recall
 - @ccc-wiki/concepts/failed-trajectory-harness-repair.md — HarnessFix repairs harness; this paper optimizes **what to remember**
+- @sources/arxiv-harnessfix-trace-repair-2606.06324-2026-06-16.md — K119 OSINT source (Tier-2 sweep)
 
 ## Raw Concept
 
