@@ -139,3 +139,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [stronghold-2-heaven-targeted-2026-06-13](sources/stronghold-2-heaven-targeted-2026-06-13.md) | read |
 | [github-stronghold-2-scan-2026-06-13](sources/github-stronghold-2-scan-2026-06-13.md) | read |
 | [mobygames-stronghold-2-2026-06-13](sources/mobygames-stronghold-2-2026-06-13.md) | read |
+| [stronghold2-analyse-hub-phase-0-audit-2026-06-13](sources/stronghold2-analyse-hub-phase-0-audit-2026-06-13.md) | read |
+| [stronghold2-mp-ai-patch-phase-0-audit-2026-06-13](sources/stronghold2-mp-ai-patch-phase-0-audit-2026-06-13.md) | read |
+| [gamedev-resources-phase-0-audit-2026-06-13](sources/gamedev-resources-phase-0-audit-2026-06-13.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-16](sources/inbox-arxiv-reject-batch-2026-06-16.md) | read |

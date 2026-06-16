@@ -15,9 +15,10 @@ related:
   - entities/tools/airtest.md
   - sources/airtest-phase-0-audit-2026-06-13.md
   - sources/serpent-ai-phase-0-audit-2026-06-13.md
+  - sources/gamedev-resources-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 
 ## Relations

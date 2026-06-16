@@ -14,6 +14,7 @@ related:
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
   - concepts/deferred-engine-candidates.md
   - concepts/rts-networking-deferred.md
+  - sources/inbox-arxiv-reject-batch-2026-06-16.md
   - entities/tools/claude-code-game-studios.md
   - meta/sibling-wiki-inventory.md
   - sources/arxiv-1705-09704-lockstep-simulation.md

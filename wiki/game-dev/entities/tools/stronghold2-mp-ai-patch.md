@@ -8,9 +8,10 @@ related:
   - concepts/stronghold-2-systems-inventory.md
   - concepts/operator-vision-sh2-personal-clone.md
   - sources/github-stronghold-2-scan-2026-06-13.md
+  - sources/stronghold2-mp-ai-patch-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 ---
 
 ## Relations
@@ -44,7 +45,7 @@ Fork: [Przodownik/Stronghold2-MP-AI-Patch](https://github.com/Przodownik/Strongh
 
 - **Do not** ship patcher inside Godot repo
 - **Do not** depend on patch for sim development — greenfield AI is JSON-driven
-- OK to document install steps in gitignored `briefs/` for local retail setup
+- OK to document install steps in gitignored `briefs/sh2-mp-ai-patch-install.md` for local retail setup
 
 ### Phase-0 verdict
 

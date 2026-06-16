@@ -11,9 +11,11 @@ related:
   - sources/github-stronghold-2-scan-2026-06-13.md
   - entities/tools/stronghold2-mp-ai-patch.md
   - entities/tools/stronghold2-analyse-hub.md
+  - sources/stronghold2-analyse-hub-phase-0-audit-2026-06-13.md
+  - sources/stronghold2-mp-ai-patch-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 ---
 
 ## Relations

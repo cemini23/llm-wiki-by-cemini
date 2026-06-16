@@ -7,9 +7,10 @@ related:
   - concepts/art-pipeline-v0-requirements.md
   - concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md
   - sources/tool-evaluation-cross-wiki-routing-2026-06-13.md
+  - sources/gamedev-resources-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 cross-wiki-stub: @image-gen-wiki
 ---
 

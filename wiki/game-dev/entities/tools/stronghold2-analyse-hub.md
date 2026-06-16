@@ -8,9 +8,10 @@ related:
   - concepts/stronghold-2-architect-controls.md
   - concepts/operator-vision-sh2-personal-clone.md
   - sources/github-stronghold-2-scan-2026-06-13.md
-maturity: draft
+  - sources/stronghold2-analyse-hub-phase-0-audit-2026-06-13.md
+maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-16
 ---
 
 ## Relations
@@ -47,7 +48,7 @@ Render-pass analysis, wireframe toggles, **pathfinding visualization**, AI timin
 
 ### Install sketch [NEEDS VERIFICATION on Steam EXE build]
 
-Build Win32 Release DLL → inject into `Stronghold2.exe` → read `Stronghold2AnalyseHub.log` beside EXE.
+Build Win32 Release DLL → inject into `Stronghold2.exe` → read `Stronghold2AnalyseHub.log` beside EXE. Steps: `briefs/sh2-analyse-hub-install.md` (local).
 
 ## Dead Ends
 

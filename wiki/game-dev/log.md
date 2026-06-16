@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-16] ingest | Phase-0 closeout + inbox triage + brief sync
+
+- Phase-0 audits: @sources/stronghold2-analyse-hub-phase-0-audit-2026-06-13.md, @sources/stronghold2-mp-ai-patch-phase-0-audit-2026-06-13.md, @sources/gamedev-resources-phase-0-audit-2026-06-13.md
+- Inbox: 7 arXiv PDFs rejected (robotics/sports/AV) → @sources/inbox-arxiv-reject-batch-2026-06-16.md; archived to egress
+- Tool Evaluation docx duplicate — skipped (already @sources/tool-evaluation-cross-wiki-routing-2026-06-13.md)
+- Briefs: `sh2-mp-ai-patch-install.md`, `sh2-analyse-hub-install.md`, `story-011-tier2-hunters-meat.md` → rsync to `castle-sim/briefs/`
+- Entity maturity bumps: stronghold2-analyse-hub → validated
+
+---
+
 ## [2026-06-13] research | GitHub Stronghold 2 ecosystem scan
 
 - Swept GitHub for SH2 patches, trainers, S2M tools; no Crusader-scale UCP equivalent

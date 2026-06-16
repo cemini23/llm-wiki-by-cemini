@@ -9,6 +9,7 @@ related:
   - entities/engines/godot-4.md
   - entities/projects/castle-sim.md
   - entities/tools/gamedev-resources.md
+  - sources/gamedev-resources-phase-0-audit-2026-06-13.md
   - sources/tool-evaluation-cross-wiki-routing-2026-06-13.md
 maturity: draft
 created: 2026-06-13
