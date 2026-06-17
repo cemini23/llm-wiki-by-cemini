@@ -926,6 +926,19 @@ def nuts_regression_spots() -> list[RegressionSpot]:
             notes="BTN marginal ace vs shove — fold.",
         ),
         RegressionSpot(
+            id="prod_ajo_btn_vs_shove_r34",
+            source="HL R34 — Jc Ad BTN −95 preflop (gin lane overcall)",
+            table=btn_facing_shove(["Jc", "Ad"], shove_to=95, hero_stack=100),
+            forbidden=frozenset({"call", "raise", "bet", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="BTN dominated broadway vs stack-off — fold (gin must not call).",
+            context={
+                "CEMINI_GIN_STYLE": "1",
+                "CEMINI_GIN_STYLE_PREFLOP": "1",
+                "CEMINI_GIN_STYLE_GATE": "1",
+            },
+        ),
+        RegressionSpot(
             id="prod_k6_btn_aa_board_r32",
             source="HL R32 — 6c Kh BTN −334 on AAx",
             table=btn_k6_aa_board_r32(),

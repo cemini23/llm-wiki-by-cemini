@@ -916,7 +916,11 @@ def decide(
         street == "Preflop" and call_chips > 0
         and _hero_stack_chips(table) > 0
         and call_chips >= int(_hero_stack_chips(table) * 0.18)
-        and _marginal_ace_kicker(hc)
+        and (
+            _marginal_ace_kicker(hc)
+            # HL R34: gin called AJo BTN −95 — defer to stack-off guards.
+            or (position in ("BTN", "CO") and hc in _BB_BROADWAY_FOLD)
+        )
     )
     if (street == "Preflop" and gin_style_preflop_enabled()
             and not lane_tight and not gin_skip):
