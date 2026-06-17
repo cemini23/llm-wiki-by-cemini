@@ -7,9 +7,10 @@ related:
   - concepts/xsp-hedge-fund-core-book-thesis.md
   - concepts/xsp-put-credit-spread-small-account-smb.md
   - concepts/wheel-options-strategy-smb.md
+  - concepts/active-project-research-routing.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-06-14
+updated: 2026-06-17
 ---
 
 ## Relations

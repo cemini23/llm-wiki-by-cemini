@@ -15,6 +15,7 @@ related:
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - concepts/strategic-resource-acquisition-game-theory.md
+  - concepts/active-project-research-routing.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md
   - sources/trading-posts-compilation-38-2026-05-26.md
   - sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md

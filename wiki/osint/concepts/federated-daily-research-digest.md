@@ -12,9 +12,11 @@ related:
   - "@3d-printing-wiki/meta/daily-research-digest-cadence.md"
   - concepts/game-dev-wiki-federation.md
   - concepts/autosci-research-lifecycle-memory.md
+  - sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md
+  - entities/tools/wikikv.md
 maturity: core
 created: 2026-06-01
-updated: 2026-06-13
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -26,6 +28,8 @@ updated: 2026-06-13
 - @projects/osint-workspace/Architecture/Architecture - wiki.md
 - @3d-printing-wiki/meta/daily-research-digest-cadence.md — sibling cadence stub
 - @game-dev-wiki/meta/daily-research-digest-cadence.md — K115 game-dev federated digest
+- @sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md — K121 WikiKV hierarchical wiki storage
+- @entities/tools/wikikv.md — Phase-0 REFERENCE entity
 
 ## Raw Concept
 

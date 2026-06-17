@@ -58,10 +58,13 @@ related:
   - sources/piebald-claude-code-system-prompts.md
   - sources/bytemover-agent-native-memory.md
   - entities/tools/omnifs.md
+  - sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md
+  - entities/tools/wikikv.md
+  - meta/librarian-decommission-2026-06-14.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-06-09
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -313,6 +316,7 @@ The candidate list expanded after the K28 SwarmVault audit and K30 ingest:
 | **SwarmVault** (K28 candidate) | **NO-GO 2026-05-04** | Same flat-layout disease as llm-wiki-compiler. Audit at `@entities/tools/swarmvault.md`. |
 | **PageIndex** (K30 candidate, `@entities/tools/pageindex.md`) | **NO-GO 2026-05-05** | "Vectorless reasoning-based RAG" (MIT, VectifyAI/PageIndex). Phase-0 audit verdict: single-file API only (600+ index instances for the wiki); agentic reasoning at query time (~$0.001-0.005/query vs kb-server's $0); cross-link graph + frontmatter metadata both lost. Right tool for long-form professional documents, wrong tool for flat wiki retrieval. Stays shelved unless Cemini begins indexing long-form documents as a separate retrieval tier. |
 | **Deep GraphRAG** (K30 reference, `@sources/deep-graphrag-2601-11144.md`) | **Deferred — re-evaluate if wiki develops graph-density signal** | 3-stage hierarchical retrieval (inter-community → community-refine → entity-fine) + DW-GRPO trained Knowledge Integration Module. Architecturally distinct from kb-server/PageIndex (graph-community-aware vs flat). Now that PageIndex NO-GO is recorded, Deep GraphRAG is the only remaining librarian-tooling alternative on file — but the alternative isn't urgent: kb-server works. **Upgrade to candidate if (a) Cemini's wiki develops cross-link graph density that flat retrieval clearly fails on, OR (b) the user decides graph-aware retrieval is operationally worth the complexity**. Until then, holds reference-only status. |
+| **WikiKV** (K121, `@sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md`) | **REFERENCE — post-librarian pattern steal** | Tencent production path-indexed KV for LLM-curated wikis; O(1) path lookup + `NAV(q,B)` routing; no OSS. After librarian decommission (2026-06-14), federation uses laptop git wikis + grep/read — steal hierarchical navigation + Error Book (`log.md`) discipline; entity at `@entities/tools/wikikv.md`. |
 
 The SwarmVault NO-GO and PageIndex audit (still pending) together set the gate for whether a third Karpathy-pattern alternative needs to be evaluated. Deep GraphRAG is the most architecturally interesting candidate-in-waiting because it doesn't share the flat-layout assumption with the other two — its hierarchy IS the design. But it adds graph-community detection complexity that's not justified unless flat-RAG approaches definitively underperform. Re-evaluate when one of those gates triggers.
 

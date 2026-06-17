@@ -8,9 +8,10 @@ related:
   - concepts/federated-daily-research-digest.md
   - entities/tools/claude-code-game-studios.md
   - @ccc-wiki/concepts/deep-research-evaluation-prompt.md
+  - concepts/active-project-research-routing.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-17
 ---
 
 ## Relations

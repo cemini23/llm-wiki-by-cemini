@@ -10,11 +10,12 @@ related:
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/federated-daily-research-digest.md
   - concepts/monokern-compounding-research-pipeline.md
+  - concepts/active-project-research-routing.md
   - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
   - meta/federation-operator-hub-stub.md
 maturity: core
 created: 2026-05-31
-updated: 2026-06-04
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -22,6 +23,7 @@ updated: 2026-06-04
 - @meta/federation-operator-hub-stub.md — operator morning summary (`cemini-federation-hub`)
 - @concepts/federated-daily-research-digest.md — per-wiki install kit (K93)
 - @concepts/monokern-compounding-research-pipeline.md — weekly deep-research overlay
+- @concepts/active-project-research-routing.md — brief targets: castle-sim, poker, XSP, PM/Kalshi (2026-06-17)
 - @meta/wiki-gap-detect-cadence.md — weekly stale-claim / thin-page report; linked from daily digest
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — script-first automation posture
 - @concepts/cemini-wiki-ingest-workflow.md — four-phase pipeline overview
@@ -31,7 +33,7 @@ updated: 2026-06-04
 | Field | Value |
 |-------|-------|
 | **Cadence** | Daily — Exa papers (wiki-deduped) → inbox PDFs + news digest (no wiki ingest) |
-| **Last run** | 2026-06-16 |
+| **Last run** | 2026-06-17 |
 | **Script** | `cemini-daily-research-digest` (or `bash scripts/run_daily_research_digest.sh` from repo) |
 | **Config** | `scripts/daily_research_config.yaml` |
 | **Report** | `wiki/sweeps/YYYY-MM-DD-daily.md` |
@@ -41,7 +43,7 @@ Run manually each morning or via LaunchAgent (`com.cemini.daily-research-digest`
 
 **Launchd / macOS privacy (2026-06-04):** morning jobs use `~/bin/cemini-*` wrappers and a synced payload under `~/.cemini/launchagent/` (not executing `.py`/`.sh` paths on Desktop). Reinstall after wrapper changes: `bash scripts/reinstall_morning_launchagents.sh`. Full Disk Access on Cursor or `/bin/bash` does **not** propagate to launchd’s Python — if jobs fail while the Mac is locked/logged out, add FDA to the interpreter shown at reinstall time (usually `/Library/Developer/CommandLineTools/usr/bin/python3`). `launchctl kickstart` tests can fail even when the 08:00 calendar run succeeds.
 
-**Workflow:** overnight fetch lands non-duplicate arXiv PDFs in inbox → morning **full ingest** in Cursor → optional news-row picks + social pass.
+**Workflow:** overnight fetch lands non-duplicate arXiv PDFs in inbox → morning **full ingest** in Cursor → briefs route per `scripts/active_project_brief_targets.yaml` (not default legacy CeminiSuite prod).
 
 Tier 2 arXiv sweep (`weekly_arxiv_sweep.sh`) remains weekly; this digest covers broader news/web + inbox triage.
 

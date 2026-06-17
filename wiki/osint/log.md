@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-06-17] ops | Research workflow pivot — active-project brief routing
+
+- **Config** — `scripts/daily_research_config.yaml` retargeted: castle-sim, poker, XSP killer, PM/Kalshi
+- **Routing** — `scripts/active_project_brief_targets.yaml` + `@concepts/active-project-research-routing.md`
+- **Ingest** — `.cursor/skills/cemini-wiki-ingest/SKILL.md` + `osint-ingest-gates.mdc`; legacy MAPPO/Riskfolio/conductor briefs wiki-only by default
+- **ROADMAP** — Active workstreams table
+
+## [2026-06-17] cross-wiki | K121 WikiKV from seo-wiki digest
+
+- **Source** — @sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md (Tencent hierarchical path-KV; AUTHTRACE 63.2%)
+- **Entity** — @entities/tools/wikikv.md (REFERENCE — no OSS)
+- **Updated** — @concepts/wiki-tooling-evaluation.md (K121 candidate row), @meta/librarian-decommission-2026-06-14.md
+- **Prod brief** — @seo-wiki/briefs/2026-06-17_k121-wikikv-hierarchical-wiki-storage-cemini-prod.md → scp prod
+
 ## [2026-06-17] ingest | K120 daily digest — 2 arXiv full ingest
 
 - **2 sources** — arXiv 2502.17518 (Ensemble RL + classifiers); 2606.12612 (HPO theory)

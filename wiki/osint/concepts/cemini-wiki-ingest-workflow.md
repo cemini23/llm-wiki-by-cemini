@@ -6,6 +6,7 @@ keywords: [wiki-ingest, daily-digest, inbox-watcher, ingest-gates, tier-2, autor
 related:
   - concepts/federated-daily-research-digest.md
   - concepts/monokern-compounding-research-pipeline.md
+  - concepts/active-project-research-routing.md
   - meta/daily-research-digest-cadence.md
   - meta/wiki-gap-detect-cadence.md
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md

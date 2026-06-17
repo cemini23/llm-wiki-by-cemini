@@ -13,9 +13,12 @@ related:
   - entities/tools/lazy-tool.md
   - meta/equity-signal-backtest-cadence.md
   - meta/internal-benchmark-deployment-map.md
+  - sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md
+  - entities/tools/wikikv.md
+  - concepts/wiki-tooling-evaluation.md
 maturity: core
 created: 2026-06-14
-updated: 2026-06-15
+updated: 2026-06-17
 ---
 
 ## Relations

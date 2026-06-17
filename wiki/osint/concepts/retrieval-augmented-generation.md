@@ -7,9 +7,10 @@ related:
   - sources/retrieve-during-reasoning.md
   - concepts/reasoning-models.md
   - concepts/cemini-deployment.md
+  - sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-13
+updated: 2026-06-17
 ---
 
 ## Relations
