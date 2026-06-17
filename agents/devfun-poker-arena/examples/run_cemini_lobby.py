@@ -24,6 +24,7 @@ import cemini_decide  # noqa: E402
 from agent import _normalize_action_name, _safe_research_context  # noqa: E402
 from session_memory import (  # noqa: E402
     exploit_from_memory,
+    poll_showdown_memory,
     update_session_memory,
     villain_memory_for_table,
 )
@@ -153,6 +154,7 @@ def _sync_competition_scope(state: dict, competition_id: str) -> None:
     state["lobby_competition_id"] = competition_id
     state["hands_played"] = 0
     state.pop("session_villain_memory", None)
+    state.pop("showdown_tables_seen", None)
     seed_nemesis_state(state)
 
 
@@ -866,6 +868,9 @@ def run_lobby(args: argparse.Namespace) -> int:
                     hands_acted += 1
                     state["hands_played"] = state.get("hands_played", 0) + 1
                     update_session_memory(state, table)
+                    hero_aid = str(creds.get("agentId") or "")
+                    if hero_aid:
+                        poll_showdown_memory(client, state, hero_aid, table_comp)
                     save_state(state)
                     print(
                         f"[cemini-lobby] {_lobby_log_scope(table_comp)} "
@@ -900,6 +905,11 @@ def run_lobby(args: argparse.Namespace) -> int:
                     last_lobby_log_at = now
                 ensure_joined(force=False)
                 ensure_dual_joined(force=False)
+                hero_aid = str(creds.get("agentId") or "")
+                if hero_aid:
+                    poll_showdown_memory(client, state, hero_aid, competition_id)
+                    if dual_comp:
+                        poll_showdown_memory(client, state, hero_aid, dual_comp)
                 time.sleep(POLL_INTERVAL + rng.uniform(-POLL_JITTER, POLL_JITTER))
     finally:
         client.close()
