@@ -9,9 +9,10 @@ related:
   - concepts/brier-score-model-promotion-framework.md
   - concepts/regime-conditioned-evaluation.md
   - concepts/algorithmic-auditing-covariance-regret.md
+  - concepts/classifier-assisted-rl-ensemble-trading.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -20,6 +21,7 @@ updated: 2026-05-28
 - @concepts/zero-trade-edge-signal-diagnostics.md — execution-side abort vs model-side
 - @concepts/brier-score-model-promotion-framework.md — reliability fixes
 - @concepts/regime-conditioned-evaluation.md — regime-specific drift
+- @concepts/classifier-assisted-rl-ensemble-trading.md — K120 τ-gating before multi-policy promotion
 
 ## Raw Concept
 

@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-17] ingest | K120 daily digest — 2 arXiv full ingest
+
+- **2 sources** — arXiv 2502.17518 (Ensemble RL + classifiers); 2606.12612 (HPO theory)
+- **2 concepts** — `classifier-assisted-rl-ensemble-trading`, `heuristic-portfolio-optimization-hpo`
+- **6 updates** — `trademaster`, `riskfolio-lib`, `regime-conditioned-evaluation`, `regime-adaptive-continual-portfolio-learning`, `toplogical-risk-parity`, `arxiv-bavar-bled-portfolio-regime`, `index.md`
+- **Phase-0** — `adopt_k120_phase0.sh` (Ensemble RL CONDITIONAL-GO MIT; HPO REFERENCE)
+- **Briefs (2 prod)** — classifier variance-gating RL ensemble; HPO GRS allocation ladder → scp prod
+- **Archive** — inbox PDFs → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`; inbox cleared
+
 ## [2026-06-16] ingest | K119 Tier-2 sweep — 3 arXiv full ingest
 
 - **Sweep** — `weekly_arxiv_sweep.sh` → `wiki/sweeps/2026-06-16.md` (23 hits, 14-day window)

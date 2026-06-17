@@ -6,16 +6,20 @@ keywords: [trademaster, ntu, reinforcement-learning, prudex-compass, algorithmic
 related:
   - sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md
   - sources/arxiv-fpilot-rl-trading-2605-12653.md
+  - sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md
+  - concepts/classifier-assisted-rl-ensemble-trading.md
   - concepts/polymarket-bot-architecture.md
 maturity: draft
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-06-17
 ---
 
 ## Relations
 
 - @sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md — K60 URL 4 Steal-from
 - @sources/arxiv-fpilot-rl-trading-2605-12653.md — cites TradeMaster DJ30 benchmark
+- @sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md — K120 ensemble RL uses TradeMaster DJ30/SSE50 data
+- @concepts/classifier-assisted-rl-ensemble-trading.md — variance-threshold gating over RL policies
 
 ## Raw Concept
 

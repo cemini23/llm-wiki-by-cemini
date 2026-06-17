@@ -9,9 +9,11 @@ related:
   - concepts/quant-finance.md
   - concepts/rl-marl-research.md
   - concepts/llm-agent-systems.md
+  - sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md
+  - concepts/classifier-assisted-rl-ensemble-trading.md
 maturity: validated
 created: 2026-04-30
-updated: 2026-05-01
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -21,6 +23,8 @@ updated: 2026-05-01
 - @concepts/quant-finance.md — Quantitative Finance corpus-index hub
 - @concepts/rl-marl-research.md — RL/MARL hub; STOCKBENCH provides standardized evaluation layer the MAPPO agent currently lacks
 - @concepts/llm-agent-systems.md — LLM agent-systems cluster hub; STOCKBENCH is the primary trading-agent benchmark entry
+- @sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md — K120: multi-regime gate before ensemble RL promotion
+- @concepts/classifier-assisted-rl-ensemble-trading.md — variance-threshold policy gating sibling
 
 ## Raw Concept
 

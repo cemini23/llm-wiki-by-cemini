@@ -9,10 +9,12 @@ related:
   - concepts/regime-adaptive-continual-portfolio-learning.md
   - sources/arxiv-portbench-llm-portfolio-2605-27887-2026-06-02.md
   - sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md
+  - sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md
+  - sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md
 maturity: draft
 read_status: read
 created: 2026-06-09
-updated: 2026-06-15
+updated: 2026-06-17
 clusters: [quant-finance, rl-marl, portfolio-strategy]
 ---
 
@@ -23,6 +25,8 @@ clusters: [quant-finance, rl-marl, portfolio-strategy]
 - @concepts/regime-adaptive-continual-portfolio-learning.md — sibling continual PO
 - @sources/arxiv-portbench-llm-portfolio-2605-27887-2026-06-02.md — LLM portfolio benchmark
 - @sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md — K117 sibling regime vol/return framework
+- @sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md — K120 sibling portfolio RL ensemble
+- @sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md — K120 HPO theory sibling
 
 ## Raw Concept
 

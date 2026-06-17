@@ -8,15 +8,17 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - sources/arxiv-portbench-llm-portfolio-2605-27887-2026-06-02.md
   - sources/arxiv-bavar-bled-portfolio-regime-2606-09104-2026-06-09.md
+  - concepts/heuristic-portfolio-optimization-hpo.md
 maturity: draft
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-17
 ---
 
 ## Relations
 
 - @concepts/regime-conditioned-evaluation.md — Conductor/backtest regime disclosure
 - @sources/arxiv-regime-adaptive-portfolio-learning-2606-00143-2026-06-02.md
+- @concepts/heuristic-portfolio-optimization-hpo.md — K120 RLPO bridge: dynamic layer on static HPO prior
 
 ## Narrative
 

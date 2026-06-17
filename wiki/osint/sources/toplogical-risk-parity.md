@@ -7,10 +7,12 @@ related:
   - concepts/portfolio-strategy.md
   - entities/tools/riskfolio-lib.md
   - entities/components/kelly-cvar-risk-engine.md
+  - sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md
+  - concepts/heuristic-portfolio-optimization-hpo.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-27
-updated: 2026-05-16
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -18,6 +20,8 @@ updated: 2026-05-16
 - @concepts/portfolio-strategy.md — Portfolio Strategy corpus-index hub; TRP is a risk-parity / allocation method
 - @entities/tools/riskfolio-lib.md — Riskfolio-Lib implements classical HRP; TRP is positioned as a non-binary, long/short-capable alternative to HRP
 - @entities/components/kelly-cvar-risk-engine.md — Cemini's portfolio-risk module; TRP is a candidate topology-aware weighting layer upstream of Kelly/CVaR sizing
+- @sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md — K120 HPO exact optimality conditions for classical HRP
+- @concepts/heuristic-portfolio-optimization-hpo.md — Schur-complement HRP coincidence regimes
 
 ## Raw Concept
 

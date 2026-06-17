@@ -10,9 +10,11 @@ related:
   - entities/tools/hftbacktest.md
   - sources/jpm-portfolio-impact-investment-saltuk-2012.md
   - sources/toplogical-risk-parity.md
+  - sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md
+  - concepts/heuristic-portfolio-optimization-hpo.md
 maturity: draft
 created: 2026-05-04
-updated: 2026-05-16
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -21,6 +23,8 @@ updated: 2026-05-16
 - @entities/tools/financetoolkit.md — companion Adopt-tier from same batch; complementary integration vector (Riskfolio-Lib for sizing, FinanceToolkit for fundamentals)
 - @entities/tools/probablyprofit.md — Steal-from-tier (5_4-links URL 12); probablyprofit's Kelly implementation is one possible alternative to Riskfolio-Lib's; Riskfolio's BSD-3-Clause is cleaner than probablyprofit's wholesale extraction
 - @sources/toplogical-risk-parity.md — Topological Risk Parity (TRP) paper; positions itself as a non-binary, long/short-capable alternative to the classical HRP that Riskfolio-Lib implements
+- @sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md — K120 HPO theory: GRS falsification for HRP/ERC rules Riskfolio implements
+- @concepts/heuristic-portfolio-optimization-hpo.md — optimality-set discipline before prod weight changes
 
 ## Raw Concept
 

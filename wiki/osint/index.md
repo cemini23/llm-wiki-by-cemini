@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **417 canonical stubs** (K119 +6 pages 2026-06-16; K118 2026-06-16)
+Total: **421 canonical stubs** (K120 +4 pages 2026-06-17; K119 2026-06-16)
 
 
 ### rl-marl (104)
@@ -1299,6 +1299,8 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Claw-SWE-Bench](entities/tools/claw-swe-bench.md) — K119 MIT harness benchmark (opensquilla). — entity, tool, k119
 - [Claw-SWE-Bench harness evaluation](concepts/claw-swe-bench-harness-evaluation.md) — K119: harness as controlled variable on SWE-Lite-80. — concept, llm-agents, k119
 - [Post-Rejection Follow-up Sampling (PRFS)](concepts/post-rejection-follow-up-sampling.md) — K119: counterfactual rejection audit for filters. — concept, quant-finance, k119
+- [Classifier-assisted RL ensemble trading](concepts/classifier-assisted-rl-ensemble-trading.md) — K120: variance-threshold gating over multi-policy RL. — concept, rl-marl, k120
+- [Heuristic Portfolio Optimization (HPO)](concepts/heuristic-portfolio-optimization-hpo.md) — K120: optimality sets + GRS falsification for EW/HRP/ERC. — concept, portfolio-strategy, k120
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113
 - [SkillClaw](entities/tools/skillclaw.md) — K113 collective Hermes skill evolution. — tool, hermes, k113
 - [SciConBench](entities/benchmarks/sciconbench.md) — K114 scientific conclusion synthesis benchmark (MIT). — benchmark, agent-eval, k114
@@ -1317,6 +1319,8 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Claw-SWE-Bench — OpenClaw harness eval on coding tasks (2606.12344)](sources/arxiv-claw-swe-bench-2606.12344-2026-06-16.md) — `[DRAFT 2026-06-16]` K119: harness attribution on SWE-Lite-80; API cost vs pass@1. — source, arxiv, k119
 - [HarnessFix — failed-trajectory harness repair (2606.06324)](sources/arxiv-harnessfix-trace-repair-2606.06324-2026-06-16.md) — `[DRAFT 2026-06-16]` K119: HTIR trace repair; CCC deep-read exists. — source, arxiv, k119
 - [PRFS — counterfactual DEX rejection audit (2606.08228)](sources/arxiv-prfs-counterfactual-dex-2606.08228-2026-06-16.md) — `[DRAFT 2026-06-16]` K119: post-rejection forward sampling methodology. — source, arxiv, k119
+- [Ensemble RL through Classifier Models (2502.17518)](sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md) — `[DRAFT 2026-06-17]` K120: τ-gated classifier ensemble over A2C/PPO/SAC; TradeMaster DJ30. — source, arxiv, k120
+- [The Mathematics of Heuristic Portfolio Optimization (2606.12612)](sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md) — `[DRAFT 2026-06-17]` K120: HPO optimality map + RLPO bridge; GRS diagnostics. — source, arxiv, k120
 - [Strategic resource acquisition game theory](concepts/strategic-resource-acquisition-game-theory.md) — `[DRAFT 2026-06-09]` competitive execution overlay. — concept, k107
 - [Algorithmic auditing — covariance regret](concepts/algorithmic-auditing-covariance-regret.md) — `[DRAFT 2026-06-09]` external sequential audit metric. — concept, k107
 - [OLS alpha signal framework](concepts/ols-alpha-signal-framework.md) — `[DRAFT 2026-06-09]` intercept-as-edge discipline. — concept, quant, k107

@@ -8,6 +8,10 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
+## Current state (2026-06-17 — K120)
+
+- **K120 ingest (2026-06-17)** — Daily digest full ingest: 2 arXiv from inbox. **2 sources + 2 concepts + 6 updates.** Ensemble RL + classifiers (2502.17518) CONDITIONAL-GO — MIT repro + TradeMaster DJ30 smoke; HPO theory (2606.12612) REFERENCE — GRS/optimality-map steal for Riskfolio ladder. **Phase-0:** `adopt_k120_phase0.sh`. **Prod briefs scp'd (2):** classifier variance-gating; HPO allocation ladder diagnostics. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-16 — K119)
 
 - **K119 ingest (2026-06-16)** — Tier-2 sweep + full ingest: 3 arXiv from sweep triage. **3 sources + 2 concepts + 1 entity + 8 updates.** Claw-SWE-Bench (2606.12344) CONDITIONAL-GO — MIT harness attribution benchmark; HarnessFix (2606.06324) REFERENCE — CCC deep-read exists; PRFS (2606.08228) REFERENCE — rejection audit methodology. **Phase-0:** `adopt_k119_phase0.sh`. **Prod briefs scp'd (2):** Claw harness attribution smoke; PRFS filter audit discipline. Archive → egress-fi; inbox cleared.

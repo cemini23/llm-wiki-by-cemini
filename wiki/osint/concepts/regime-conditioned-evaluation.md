@@ -45,9 +45,13 @@ related:
   - sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md
   - concepts/instrumental-probability-learnable-alpha.md
   - sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md
+  - sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md
+  - sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md
+  - concepts/classifier-assisted-rl-ensemble-trading.md
+  - concepts/heuristic-portfolio-optimization-hpo.md
 maturity: draft
 created: 2026-05-07
-updated: 2026-06-15
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -67,6 +71,10 @@ updated: 2026-06-15
 - @sources/controlled-study-of-multi-agent-debate-in-logical-reasoning.md — exemplar of the controlled-study discipline: disentangles six debate factors against a fixed anchor instead of reporting a single aggregate "debate helps" number.
 - @sources/evonash-marl.md — applies the conservative-validation half of this discipline (walk-forward, White Reality Check, SPA-lite, deflated Sharpe) and honestly reports non-significance rather than overclaiming alpha.
 - @sources/arxiv-regime-vol-forecast-return-prediction-2606.09478-2026-06-15.md — K117: walk-forward regime disclosure + low-vol gating as implementation discipline
+- @sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md — K120: τ-sensitivity + universe-conditional ensemble gains require regime split
+- @sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md — K120: GRS zero-alpha tests as falsification gate before heuristic promotion
+- @concepts/classifier-assisted-rl-ensemble-trading.md — K120 synthesis: variance-threshold policy gating
+- @concepts/heuristic-portfolio-optimization-hpo.md — K120 synthesis: optimality-set / allocation-ladder discipline
 
 ## Raw Concept
 
