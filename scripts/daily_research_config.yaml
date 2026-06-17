@@ -4,6 +4,7 @@
 # Read by: daily_research_digest_run.py
 #
 # Update `active_topics` when ROADMAP.md workstreams shift.
+# Brief routing: scripts/active_project_brief_targets.yaml
 # Overnight: non-duplicate arXiv PDFs land in `research to be indexed/` for morning "full ingest".
 
 loop:
@@ -13,50 +14,67 @@ loop:
 fetch:
   enabled: true
   max_downloads: 8
-  # Only auto-download hits that are NEW vs wiki/inbox (not LIKELY fuzzy title matches)
   fetch_likely: false
   max_results_per_paper_query: 5
 
+# Pivot 2026-06-17 — active hobby bots + PM/Kalshi exploration (not legacy CeminiSuite equity sleeve)
 active_topics:
-  - "World Cup bot — shadow soak, LP safety DR 2026-06-06"
-  - "K89 wave 3b — PM executor wiki enforcement on prod"
-  - "Prediction markets — LP rewards, cross-venue, weather bots"
-  - "Agent tooling — Cursor skills, conductor, kb-server"
-  - "Wiki→prod loop — brief completion + lesson registry (K89)"
+  - "castle-sim — Godot vertical slice, playtest parity, SH2 harness (→ game-dev-wiki + castle-sim/briefs/)"
+  - "Poker Arena — tournament S28, HL analyst loop, 6-max EP/PFR leaks (→ agents/devfun-poker-arena/briefs/)"
+  - "XSP killer bot — Lane A overnight exits + Lane B LEAPS hedge monitor on Robinhood"
+  - "PM / Kalshi retail bot — CLOB botting, cross-venue, maker/taker postmortems (exploratory)"
+  - "Agent harness for game dev + poker sessions — Cursor/Stagehand, not prod conductor KPIs"
+
+brief_routing_note: |
+  Full ingest briefs route per `scripts/active_project_brief_targets.yaml`.
+  Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers.
+  castle-sim → ../projects/castle-sim/briefs/ · poker → agents/devfun-poker-arena/briefs/
+  xsp-killer + pm-kalshi → briefs/ → cemini-prod only when source matches those projects.
 
 # arXiv / research-paper lane — deduped against wiki; PDFs → inbox when NEW
 paper_queries:
-  - cluster: prediction-markets-paper
-    query: "research paper prediction market microstructure Polymarket Kalshi event contract"
+  - cluster: pm-kalshi-paper
+    query: "research paper prediction market microstructure Polymarket Kalshi event contract market making"
+    category: research paper
+
+  - cluster: poker-agent-paper
+    query: "research paper poker reinforcement learning opponent modeling imperfect information game"
+    category: research paper
+
+  - cluster: options-index-paper
+    query: "research paper index options LEAPS volatility surface mini-SPX XSP hedging"
+    category: research paper
+
+  - cluster: rts-game-ai-paper
+    query: "research paper real-time strategy pathfinding influence map game AI arxiv"
     category: research paper
 
   - cluster: agent-harness-paper
-    query: "research paper LLM coding agent harness orchestration MCP tool use"
-    category: research paper
-
-  - cluster: quant-finance-paper
-    query: "research paper algorithmic trading reinforcement learning market microstructure"
-    category: research paper
-
-  - cluster: financial-rl-paper
-    query: "research paper reinforcement learning portfolio optimization execution"
+    query: "research paper LLM agent harness playtesting verification game development OR poker"
     category: research paper
 
 # Web/news — listed in digest only (not auto-downloaded)
 queries:
-  - cluster: prediction-markets
-    query: '"Polymarket" OR "Kalshi" prediction market bot OR LP rewards OR event contract trading'
+  - cluster: pm-kalshi-retail-bot
+    query: '"Polymarket" OR "Kalshi" retail bot OR CLOB OR market making OR API trading tutorial'
     category: news
 
-  - cluster: world-cup-pm
-    query: '"World Cup 2026" OR FIFA prediction market OR advance market Polymarket Kalshi'
+  - cluster: poker-arena
+    query: 'poker bot tournament OR "poker AI" OR "opponent modeling" OR dev.fun arena OR PokerKit'
     category: news
 
-  - cluster: agent-harness
-    query: '"AI agent" OR "Claude Code" OR MCP workflow OR agent harness observability'
+  - cluster: xsp-options
+    query: 'XSP OR "Mini SPX" options LEAPS OR index call hedge Robinhood OR Cboe mini options'
     category: news
 
-# Weekly Monokern-style pipeline — Cursor + notebooklm-osint-bridge (see @concepts/monokern-compounding-research-pipeline.md)
+  - cluster: castle-sim-godot
+    query: 'Godot RTS OR Stronghold castle builder OR isometric siege game dev GDC indie'
+    category: news
+
+  - cluster: agent-game-poker
+    query: '"Claude Code" OR Cursor agent game development OR poker analysis LLM workflow'
+    category: news
+
 monokern_pipeline:
   enabled: true
   cadence: weekly
@@ -65,18 +83,18 @@ monokern_pipeline:
     - yt-dlp
     - inbox_pdf
     - web_url
-  ingest_hook: "After Sunday digest, run one /yt-pipeline or notebooklm brief on top active_topic"
+  ingest_hook: "After Sunday digest, one NotebookLM pass on top active_topic (castle-sim OR poker OR PM)"
 
 social:
   manual_pass:
     - tool: notebooklm-osint-bridge
-      prompt: "Weekly Monokern pass on top ROADMAP topic — 10 sources, vault markdown"
+      prompt: "Weekly Monokern pass on top active project — castle-sim, poker, XSP, or PM/Kalshi"
     - tool: twitter-reader
-      prompt: "Search fintwit for Polymarket, Kalshi, agent tooling from last 24h"
+      prompt: "fintwit Polymarket Kalshi bot OR poker AI OR options flow XSP last 24h"
     - tool: opencli-reader
-      prompt: "HackerNews / arXiv frontpage for quant + agent harness"
+      prompt: "HN gamedev Godot RTS OR prediction market bot headlines"
     - tool: telegram-reader
-      prompt: "Financial Telegram channels — PM/crypto macro headlines"
+      prompt: "PM/crypto macro + options vol headlines"
 
 output:
   path_template: "wiki/sweeps/{date}-daily.md"

@@ -1,0 +1,72 @@
+# Active project brief routing — read on every full ingest (2026-06-17 pivot)
+#
+# Agents: before staging a prod brief to cemini-prod, check whether the source
+# maps to an active project below. Default = wiki-only unless a row says scp.
+#
+# Sync with ROADMAP.md "Active workstreams" and scripts/daily_research_config.yaml
+
+default_posture: wiki-only
+
+projects:
+  castle-sim:
+    label: "castle-sim (Godot RTS vertical slice)"
+    code_root: "../projects/castle-sim"
+    wiki: "@game-dev-wiki"
+    brief_dir: "../projects/castle-sim/briefs"
+    scp_target: null
+    steal_from:
+      - "Godot pathfinding, grid building, siege AI, playtest parity"
+      - "Agent harness CI (godot-stagehand, Stagehand smoke)"
+      - "Stronghold-like economy / labour contention patterns"
+    skip_brief_if:
+      - "Generic quant-finance RL with no game-dev hook"
+
+  poker-arena:
+    label: "dev.fun Poker Arena (cemini_decide)"
+    code_root: "agents/devfun-poker-arena"
+    wiki: "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
+    brief_dir: "agents/devfun-poker-arena/briefs"
+    scp_target: null
+    steal_from:
+      - "6-max preflop discipline, HUD exploit, blind pressure, tournament ICM"
+      - "Opponent modeling, multi-agent poker RL eval"
+      - "Regression spots + HL analyst loop leaks"
+    skip_brief_if:
+      - "Casino slots / sportsbook unrelated to arena-pokerkit"
+      - "Legacy CeminiSuite conductor eval unless poker-session tooling"
+
+  xsp-killer:
+    label: "XSP killer bot — Robinhood long-call lanes A/B"
+    code_root: null
+    wiki: "@osint-wiki/concepts/xsp-lane-trading-framework.md"
+    brief_dir: "briefs"
+    scp_target: "cemini-prod:/opt/cemini/briefs/"
+    brief_name_prefix: "xsp-"
+    steal_from:
+      - "XSP / Mini-SPX options flow, LEAPS inventory, put-hedge rolls"
+      - "Index vol regime gates (GREEN playbook_snapshot)"
+      - "Overnight swing exit rules, delta-adjusted scoring"
+    skip_brief_if:
+      - "SMB short put credit unless contrast-noted"
+
+  pm-kalshi-bot:
+    label: "PM / Kalshi retail bot (exploratory)"
+    code_root: null
+    wiki: "@osint-wiki/concepts/polymarket-bot-architecture.md"
+    brief_dir: "briefs"
+    scp_target: "cemini-prod:/opt/cemini/briefs/"
+    brief_name_prefix: "pm-"
+    steal_from:
+      - "CLOB/Gamma API patterns, maker rebates, cross-venue arb"
+      - "Retail bot postmortems, LP vs directional, weather/sports niches"
+      - "Kalshi trade-api, fee model, settlement mechanics"
+    skip_brief_if:
+      - "Institutional CeminiSuite Lane A executor unless WC/PM module explicit"
+
+legacy_deprioritized:
+  stacks:
+    - "MAPPO equity sleeve / STOCKBENCH promotion"
+    - "Riskfolio / HRP allocation ladder on prod"
+    - "Conductor harness attribution / Orch-RM BoN"
+    - "Generic portfolio optimization theory without PM/XSP/poker hook"
+  action: "wiki + concept page only; brief only if user asks or ROADMAP row reopens"

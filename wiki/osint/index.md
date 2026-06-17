@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **421 canonical stubs** (K120 +4 pages 2026-06-17; K119 2026-06-16)
+Total: **425 canonical stubs** (K121 WikiKV + workflow pivot 2026-06-17; K120 2026-06-17)
 
 
 ### rl-marl (104)
@@ -1301,7 +1301,10 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Post-Rejection Follow-up Sampling (PRFS)](concepts/post-rejection-follow-up-sampling.md) — K119: counterfactual rejection audit for filters. — concept, quant-finance, k119
 - [Classifier-assisted RL ensemble trading](concepts/classifier-assisted-rl-ensemble-trading.md) — K120: variance-threshold gating over multi-policy RL. — concept, rl-marl, k120
 - [Heuristic Portfolio Optimization (HPO)](concepts/heuristic-portfolio-optimization-hpo.md) — K120: optimality sets + GRS falsification for EW/HRP/ERC. — concept, portfolio-strategy, k120
+- [Active project research routing](concepts/active-project-research-routing.md) — K121: brief targets castle-sim / poker / XSP / PM-Kalshi. — concept, meta, k121
+- [FinAcumen financial experience memory](concepts/finacumen-financial-experience-memory.md) — K121 cross-wiki stub from CCC FinAcumen paper. — concept, finance, k121
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113
+- [WikiKV](entities/tools/wikikv.md) — K121 REFERENCE; hierarchical path-KV for wiki navigation (no public repo). — tool, wiki, k121
 - [SkillClaw](entities/tools/skillclaw.md) — K113 collective Hermes skill evolution. — tool, hermes, k113
 - [SciConBench](entities/benchmarks/sciconbench.md) — K114 scientific conclusion synthesis benchmark (MIT). — benchmark, agent-eval, k114
 - [AI-Research-SKILLs](entities/tools/ai-research-skills.md) — Orchestra ML research skills library. — tool, skills, k113
@@ -1321,6 +1324,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [PRFS — counterfactual DEX rejection audit (2606.08228)](sources/arxiv-prfs-counterfactual-dex-2606.08228-2026-06-16.md) — `[DRAFT 2026-06-16]` K119: post-rejection forward sampling methodology. — source, arxiv, k119
 - [Ensemble RL through Classifier Models (2502.17518)](sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md) — `[DRAFT 2026-06-17]` K120: τ-gated classifier ensemble over A2C/PPO/SAC; TradeMaster DJ30. — source, arxiv, k120
 - [The Mathematics of Heuristic Portfolio Optimization (2606.12612)](sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md) — `[DRAFT 2026-06-17]` K120: HPO optimality map + RLPO bridge; GRS diagnostics. — source, arxiv, k120
+- [WikiKV hierarchical path-indexed wiki storage (2606.14275)](sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md) — `[VALIDATED 2026-06-17]` K121: path-KV navigation; REFERENCE no OSS. — source, arxiv, k121
 - [Strategic resource acquisition game theory](concepts/strategic-resource-acquisition-game-theory.md) — `[DRAFT 2026-06-09]` competitive execution overlay. — concept, k107
 - [Algorithmic auditing — covariance regret](concepts/algorithmic-auditing-covariance-regret.md) — `[DRAFT 2026-06-09]` external sequential audit metric. — concept, k107
 - [OLS alpha signal framework](concepts/ols-alpha-signal-framework.md) — `[DRAFT 2026-06-09]` intercept-as-edge discipline. — concept, quant, k107

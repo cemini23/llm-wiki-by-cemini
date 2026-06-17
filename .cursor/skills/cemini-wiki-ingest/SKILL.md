@@ -34,7 +34,7 @@ Read `@.cursor/rules/osint-ingest-gates.mdc` first — human gates are non-negot
 6. **`python3 scripts/wiki_lint.py`** — fix orphans, bidirectional gaps, dangling links
 7. **`python3 scripts/ingest_session_gate.py`** — mechanical pre-commit check
 8. **`bash scripts/archive_raw_to_egress.sh --wiki-id osint "<file>"`** — scp raw to egress-fi; rm local on success
-9. **`ROADMAP.md`** + stage **`briefs/`** if prod-touching
+9. **`ROADMAP.md`** + stage briefs per `scripts/active_project_brief_targets.yaml` (not default cemini-prod)
 10. **`python3 scripts/skill_audit.py briefs/<file>.md`** before any prod scp
 
 ## A — Daily sweep ingest
@@ -85,10 +85,23 @@ Ingest selected rows from wiki/sweeps/YYYY-MM-DD-daily.md:
 - [ ] wiki_lint clean
 - [ ] ingest_session_gate.py
 - [ ] archive_raw_to_egress.sh (wiki-id) + Location field on source page
-- [ ] ROADMAP + briefs staged
-- [ ] skill_audit on prod briefs
+- [ ] ROADMAP + briefs staged (route per `scripts/active_project_brief_targets.yaml`)
+- [ ] skill_audit on prod briefs (only xsp-killer + pm-kalshi-bot → cemini-prod by default)
 
-## E — Monokern weekly pipeline (optional)
+## E — Active-project brief routing (2026-06-17)
+
+Read `scripts/active_project_brief_targets.yaml` + `@concepts/active-project-research-routing.md` **before** staging briefs.
+
+| Project | Brief home | Prod `scp`? |
+|---------|------------|-------------|
+| castle-sim | `../projects/castle-sim/briefs/` | No |
+| Poker Arena | `agents/devfun-poker-arena/briefs/` | No (`cemini_hl_loop.sh`) |
+| XSP killer | `briefs/xsp-*` | Yes → cemini-prod |
+| PM / Kalshi | `briefs/pm-*` | Yes when bot-touching |
+
+**Legacy deprioritized** (wiki-only unless user/ROADMAP reopens): MAPPO equity, Riskfolio/HPO ladder, conductor harness KPIs.
+
+## F — Monokern weekly pipeline (optional)
 
 When `monokern_pipeline.enabled` in `daily_research_config.yaml`:
 
@@ -99,7 +112,7 @@ When `monokern_pipeline.enabled` in `daily_research_config.yaml`:
 
 See `@concepts/monokern-compounding-research-pipeline.md`.
 
-## F — Federated wikis
+## G — Federated wikis
 
 Sibling wikis: `bash scripts/federation/daily_digest/install_federated_daily_digest.sh <wiki-root> <id>`. Briefs staged per wiki — operator opens folder and ingests. `@concepts/federated-daily-research-digest.md`.
 

@@ -18,7 +18,7 @@ Automation covers **discovery** (daily digest, inbox watch) and **mechanical che
 | **Discuss takeaways before writing** | Prevents low-signal page sprawl; user steers K-batch scope |
 | **License claims from tool evals** | Eval NO LICENSE layer is systematically wrong — `gh api` every Adopt/Reject |
 | **Cross-wiki routing (brief vs stub)** | Wrong wiki = maintenance debt; when in doubt → brief |
-| **Prod brief GO / scp to cemini-prod** | Deployment boundary; `skill_audit.py` PASS + explicit user OK |
+| **Prod brief GO / scp to cemini-prod** | Only **xsp-killer** + **pm-kalshi-bot** by default; see `scripts/active_project_brief_targets.yaml` |
 | **Contradiction / maturity promotion** | `draft` → `validated` → `core` needs evidence judgment |
 | **Tier 3 outbound ingest** | Fully autonomous fetch→write→commit is out of scope (cost, trust, injection) |
 | **Phase-0 adoption GO** | Parallel implementations rejected by pattern; audit before install |
@@ -28,7 +28,7 @@ Automation covers **discovery** (daily digest, inbox watch) and **mechanical che
 1. After preingest + fetch, **present takeaways and proposed page list** — wait for user direction.
 2. On tool eval: show license spot-check report; **do not trust docx verdicts**.
 3. Before commit: run `python3 scripts/ingest_session_gate.py`; treat WARN as blockers unless user waives.
-4. Before prod brief: `python3 scripts/skill_audit.py` — REJECT stops the line.
+4. Before prod brief: `skill_audit.py` PASS + route matches `active_project_brief_targets.yaml` — no auto-scp for legacy MAPPO/Riskfolio/conductor briefs.
 5. On `[NEEDS VERIFICATION YYYY-MM-DD]` ≥7d: Exa cross-check or ask user before leaving stale.
 
 ## Tier model (reference)

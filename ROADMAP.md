@@ -8,6 +8,19 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
+## Active workstreams (2026-06-17 — operator pivot)
+
+Research digest + ingest briefs target these first (`scripts/active_project_brief_targets.yaml`):
+
+| Priority | Project | Brief home | Prod scp |
+|----------|---------|------------|----------|
+| 1 | **castle-sim** — Godot RTS slice, playtest parity | `../projects/castle-sim/briefs/` | No |
+| 2 | **Poker Arena** — tournament / HL analyst loop | `agents/devfun-poker-arena/briefs/` | rsync only |
+| 3 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
+| 4 | **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
+
+**Deprioritized for auto-briefs:** legacy CeminiSuite MAPPO equity, Riskfolio ladder, conductor harness KPIs — wiki-only unless explicitly reopened.
+
 ## Current state (2026-06-17 — K120)
 
 - **K120 ingest (2026-06-17)** — Daily digest full ingest: 2 arXiv from inbox. **2 sources + 2 concepts + 6 updates.** Ensemble RL + classifiers (2502.17518) CONDITIONAL-GO — MIT repro + TradeMaster DJ30 smoke; HPO theory (2606.12612) REFERENCE — GRS/optimality-map steal for Riskfolio ladder. **Phase-0:** `adopt_k120_phase0.sh`. **Prod briefs scp'd (2):** classifier variance-gating; HPO allocation ladder diagnostics. Archive → egress-fi; inbox cleared.
