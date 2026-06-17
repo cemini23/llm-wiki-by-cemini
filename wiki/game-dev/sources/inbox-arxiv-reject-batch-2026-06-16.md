@@ -10,12 +10,14 @@ read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-06-17
 ---
 
 ## Raw Concept
 
 Seven arXiv PDFs dropped in `research to be indexed/` 2026-06-14–16. Pre-ingest check: all **NEW** vs wiki. **Rejected** for game-dev-wiki — robotics, sports analytics, autonomous driving; no castle/RTS/game-design hook.
+
+**Re-drop 2026-06-17:** Five of seven PDFs re-appeared in inbox (digest lane mis-route). Same SHA256 as 2026-06-16 archive — no re-ingest; archived again to egress and cleared locally.
 
 ## Narrative
 
@@ -35,4 +37,4 @@ Seven arXiv PDFs dropped in `research to be indexed/` 2026-06-14–16. Pre-inges
 
 ## Snippets
 
-Pre-ingest: `python3 scripts/preingest_check.py` — 7 NEW, 1 DUPLICATE (docx).
+Pre-ingest: `python3 scripts/preingest_check.py` — 7 NEW, 1 DUPLICATE (docx) on 2026-06-16; 5 re-drop NEW on 2026-06-17 (subset, same files).

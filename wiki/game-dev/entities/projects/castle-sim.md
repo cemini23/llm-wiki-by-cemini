@@ -21,7 +21,7 @@ related:
   - sources/shaggydev-udd-navigation-2025.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -41,9 +41,9 @@ Separate git repo for runnable Godot code. Wiki holds spec; repo holds implement
 | **Visibility** | Local (private GitHub TBD — ROADMAP D3) |
 | **Engine** | Godot 4.5+ (pin 4.5.2 or 4.6.x stable) |
 | **Language** | GDScript |
-| **Status** | Tier 2 slice 1 **Done** (food/popularity); Tier 1 complete |
+| **Status** | **Phase 7 3D Done** — story-012–029; operator perf PASS 2026-06-17 |
 | **North star** | Personal **Stronghold 2** clone — Fork **B (3D)** |
-| **Next gate** | M0.3D architect spike — `briefs/story-005-3d-architect-spike.md` |
+| **Next gate** | SH2 retail playtest parity — `briefs/story-030-sh2-playtest-parity.md` |
 | **GDD** | `briefs/GDD-sh2-personal-clone.md` (local) |
 | **Decision log** | `castle-sim/docs/PROJECT_LOG.md` |
 

@@ -4,6 +4,15 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-17] ingest | Inbox re-drop + brief ladder sync + castle-sim status
+
+- Inbox: 5 arXiv PDFs re-dropped (digest mis-route) — folded into @sources/inbox-arxiv-reject-batch-2026-06-16.md; re-archived to egress
+- Brief sync: castle-sim story-012–029 → wiki `briefs/`; new `story-030-sh2-playtest-parity.md`; W2-harness-kickoff + GDD phase map updated
+- Entity: @entities/projects/castle-sim.md — Phase 7 3D done, next playtest parity gate
+- No new Phase-0 tool targets in inbox
+
+---
+
 ## [2026-06-16] ingest | Phase-0 closeout + inbox triage + brief sync
 
 - Phase-0 audits: @sources/stronghold2-analyse-hub-phase-0-audit-2026-06-13.md, @sources/stronghold2-mp-ai-patch-phase-0-audit-2026-06-13.md, @sources/gamedev-resources-phase-0-audit-2026-06-13.md
