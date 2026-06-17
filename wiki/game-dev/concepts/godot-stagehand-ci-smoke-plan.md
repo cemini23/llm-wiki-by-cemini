@@ -10,9 +10,10 @@ related:
   - concepts/agent-harness-castle-project.md
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md
   - sources/godot-stagehand-castle-sim-ci-eval-2026-06-13.md
+  - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-17
 ---
 
 ## Relations

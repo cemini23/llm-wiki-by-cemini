@@ -14,9 +14,10 @@ related:
   - sources/sods2-godot-mcp-phase-0-audit-2026-06-13.md
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md
   - sources/godot-ai-playtest-phase-0-audit-2026-06-13.md
+  - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-17
 ---
 
 ## Relations

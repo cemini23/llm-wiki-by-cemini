@@ -11,6 +11,7 @@ related:
   - concepts/godot-stagehand-ci-smoke-plan.md
   - concepts/art-pipeline-v0-requirements.md
   - concepts/godot-3d-sh2-architect-spike-plan.md
+  - concepts/godot-castle-sim-tool-gap-shelf.md
   - concepts/operator-vision-sh2-personal-clone.md
   - concepts/flow-field-pathfinding.md
   - concepts/godot-pathfinding-patterns.md
@@ -18,6 +19,7 @@ related:
   - concepts/stronghold-2-systems-inventory.md
   - meta/sibling-wiki-inventory.md
   - sources/godot-stagehand-castle-sim-ci-eval-2026-06-13.md
+  - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
   - sources/shaggydev-udd-navigation-2025.md
 maturity: validated
 created: 2026-06-13

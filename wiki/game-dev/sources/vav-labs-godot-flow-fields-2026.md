@@ -9,6 +9,7 @@ related:
   - entities/engines/godot-4.md
   - concepts/rts-pathfinding-approaches.md
   - sources/exa-flowfields-firefly-batch-2026-06-13.md
+  - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
 read_status: read
 source_type: blog
 source_url: https://vav-labs.com/blog/godot-flow-fields-shared-goal/

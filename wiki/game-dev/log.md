@@ -4,6 +4,15 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-17] research | Godot castle-sim tool gap shelf + operator brief
+
+- Code audit: monolithic `Game3DController`, CLI-only tests, Stagehand on 2D spike, CSG art, grid A*
+- New: @concepts/godot-castle-sim-tool-gap-shelf.md, @sources/godot-castle-sim-tool-gap-research-2026-06-17.md
+- Operator brief: `briefs/research/godot-castle-sim-tool-gap-research.md` — GdUnit4, Kenney steal, stagehand L1, flow-field spike queue
+- Phase-0 queue: GdUnit4, Kenney kit, VectorFieldNavigation (not run)
+
+---
+
 ## [2026-06-17] ingest | Inbox re-drop + brief ladder sync + castle-sim status
 
 - Inbox: 5 arXiv PDFs re-dropped (digest mis-route) — folded into @sources/inbox-arxiv-reject-batch-2026-06-16.md; re-archived to egress

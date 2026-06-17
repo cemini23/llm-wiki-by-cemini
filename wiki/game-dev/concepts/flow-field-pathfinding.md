@@ -12,9 +12,11 @@ related:
   - sources/vav-labs-godot-flow-fields-2026.md
   - sources/redblobgames-flow-field-pathfinding-2024.md
   - sources/exa-flowfields-firefly-batch-2026-06-13.md
+  - concepts/godot-castle-sim-tool-gap-shelf.md
+  - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-17
 ---
 
 ## Relations

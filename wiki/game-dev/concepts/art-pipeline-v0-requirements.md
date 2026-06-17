@@ -11,9 +11,10 @@ related:
   - entities/tools/gamedev-resources.md
   - sources/gamedev-resources-phase-0-audit-2026-06-13.md
   - sources/tool-evaluation-cross-wiki-routing-2026-06-13.md
+  - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-17
 ---
 
 ## Relations

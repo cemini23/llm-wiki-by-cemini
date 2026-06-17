@@ -15,9 +15,10 @@ related:
   - sources/shaggydev-udd-navigation-2025.md
   - sources/papierkorp-godot-4-tactical-movement-2023.md
   - concepts/godot-3d-sh2-architect-spike-plan.md
+  - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-17
 ---
 
 ## Relations

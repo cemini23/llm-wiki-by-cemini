@@ -37,6 +37,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [stronghold-2-github-ecosystem-shelf](concepts/stronghold-2-github-ecosystem-shelf.md) | validated | SH2 GitHub patches, trainers, S2M RE |
 | [operator-vision-sh2-personal-clone](concepts/operator-vision-sh2-personal-clone.md) | validated | Personal SH2 north star; **Fork B 3D** |
 | [godot-3d-sh2-architect-spike-plan](concepts/godot-3d-sh2-architect-spike-plan.md) | draft | M0.3D architect camera + wall spike |
+| [godot-castle-sim-tool-gap-shelf](concepts/godot-castle-sim-tool-gap-shelf.md) | validated | Post–Phase 7 Godot tools + workflow gaps |
 | [deferred-engine-candidates](concepts/deferred-engine-candidates.md) | draft | libGDX + Duality defer shelf |
 
 ## Entities — Engines
@@ -143,3 +144,4 @@ Catalog of all wiki pages. Updated on each ingest.
 | [stronghold2-mp-ai-patch-phase-0-audit-2026-06-13](sources/stronghold2-mp-ai-patch-phase-0-audit-2026-06-13.md) | read |
 | [gamedev-resources-phase-0-audit-2026-06-13](sources/gamedev-resources-phase-0-audit-2026-06-13.md) | read |
 | [inbox-arxiv-reject-batch-2026-06-16](sources/inbox-arxiv-reject-batch-2026-06-16.md) | read |
+| [godot-castle-sim-tool-gap-research-2026-06-17](sources/godot-castle-sim-tool-gap-research-2026-06-17.md) | read |
