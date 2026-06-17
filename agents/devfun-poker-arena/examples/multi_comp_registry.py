@@ -146,28 +146,85 @@ def init_config() -> Path:
     return write_config(default_config())
 
 
-def _is_tournament_s1(comp: dict) -> bool:
+def _fetch_all_competitions(client: ArenaClient) -> list[dict]:
+    try:
+        body = client.get("/competition/list-all")
+        data = body.get("data") if isinstance(body, dict) else body
+        return list(data or [])
+    except ArenaError as e:
+        print(f"[registry] list-all failed: {e}", file=sys.stderr)
+        return []
+
+
+def _is_tournament_season(comp: dict, season: int) -> bool:
     name = (comp.get("name") or comp.get("title") or "").lower()
     if "tournament" not in name:
         return False
-    return "s1" in name or "season 1" in name or re.search(r"\bs1\b", name)
+    sn = comp.get("seasonNumber")
+    if sn is not None and int(sn) == season:
+        return True
+    tag = f"s{season}"
+    return tag in name or f"season {season}" in name or re.search(
+        rf"\bs{season}\b", name
+    )
+
+
+def _tournament_discoverable(comp: dict) -> bool:
+    status = (comp.get("status") or "").lower()
+    return status in ("active", "upcoming")
 
 
 def discover_s1_tournament(client: ArenaClient) -> Optional[dict]:
     for comp in _fetch_active_competitions(client):
-        if _is_tournament_s1(comp):
+        if _is_tournament_season(comp, 1) and _tournament_discoverable(comp):
+            return comp
+    for comp in _fetch_all_competitions(client):
+        if _is_tournament_season(comp, 1) and _tournament_discoverable(comp):
             return comp
     return None
 
 
-def discover_and_update_config(client: ArenaClient) -> dict[str, Any]:
+def discover_s2_tournament(client: ArenaClient) -> Optional[dict]:
+    for comp in _fetch_active_competitions(client):
+        if _is_tournament_season(comp, 2) and _tournament_discoverable(comp):
+            return comp
+    for comp in _fetch_all_competitions(client):
+        if _is_tournament_season(comp, 2) and _tournament_discoverable(comp):
+            return comp
+    return None
+
+
+def discover_tournament_for_season(client: ArenaClient, season: int) -> Optional[dict]:
+    if season == 1:
+        return discover_s1_tournament(client)
+    if season == 2:
+        return discover_s2_tournament(client)
+    for comp in _fetch_all_competitions(client):
+        if _is_tournament_season(comp, season) and _tournament_discoverable(comp):
+            return comp
+    return None
+
+
+def discover_and_update_config(
+    client: ArenaClient,
+    *,
+    season: Optional[int] = None,
+) -> dict[str, Any]:
     cfg = load_config()
-    found = discover_s1_tournament(client)
+    if season is None:
+        raw = os.environ.get("CEMINI_TOURNAMENT_SEASON", "2").strip()
+        try:
+            season = int(raw)
+        except ValueError:
+            season = 2
+    found = discover_tournament_for_season(client, season)
     if found and found.get("id"):
         cfg.setdefault("primary", {})
         cfg["primary"]["competition_id"] = found["id"]
         cfg["primary"]["label"] = found.get("name") or cfg["primary"].get("label")
+        cfg["primary"]["role"] = f"s{season}_tournament"
         cfg["primary"]["discovered_at"] = _utc_now()
+        cfg["primary"]["season"] = season
     write_config(cfg)
     return cfg
 
@@ -404,7 +461,13 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     sub.add_parser("init-config", help="Write default multi_comp_config.json")
 
-    sub.add_parser("discover", help="Discover S1 tournament in list-active")
+    dis = sub.add_parser("discover", help="Discover tournament in list-active / list-all")
+    dis.add_argument(
+        "--season",
+        type=int,
+        default=None,
+        help="Tournament season (default: CEMINI_TOURNAMENT_SEASON or 2)",
+    )
 
     snap = sub.add_parser("snapshot", help="Append oracle row per configured comp")
     snap.add_argument("--export", action="store_true", help="Append export for primary only")
@@ -428,9 +491,12 @@ def main(argv: Optional[list[str]] = None) -> int:
     client = ArenaClient(os.environ.get("ARENA_API_BASE", DEFAULT_BASE), api_key=key)
     try:
         if args.cmd == "discover":
-            cfg = discover_and_update_config(client)
-            cid = (cfg.get("primary") or {}).get("competition_id")
-            print(f"primary competition_id={cid or 'NOT FOUND'}")
+            cfg = discover_and_update_config(client, season=args.season)
+            primary = cfg.get("primary") or {}
+            cid = primary.get("competition_id")
+            status = primary.get("discovered_at")
+            label = primary.get("label") or ""
+            print(f"primary competition_id={cid or 'NOT FOUND'} label={label} discovered_at={status}")
             return 0 if cid else 1
 
         if args.cmd == "snapshot":

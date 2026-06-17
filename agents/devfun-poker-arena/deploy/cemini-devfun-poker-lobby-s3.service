@@ -1,0 +1,44 @@
+[Unit]
+Description=Cemini dev.fun Poker Arena lobby loop — Playground S3 (parallel comp)
+Documentation=https://docs.dev.fun/
+After=network-online.target cemini-devfun-poker-lobby.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/opt/devfun-poker-arena
+Environment=PYTHONUNBUFFERED=1
+Environment=CEMINI_SANITIZE_OUTPUT=1
+Environment=CEMINI_MIX_POSTFLOP=1
+EnvironmentFile=-/opt/devfun-poker-arena/.env
+# CLI comp id wins over .env ARENA_LOBBY (tournament primary in shared .env).
+Environment=CEMINI_LOBBY_STATE_FILE=.arena-poker-state-s3
+Environment=CEMINI_LOBBY_LABEL=Playground_S3
+Environment=CEMINI_LOBBY_ROLE=s3_playground
+Environment=CEMINI_TOURNAMENT_MODE=0
+Environment=CEMINI_EVAL_PANEL_GATE=0
+Environment=CEMINI_PLAYGROUND_TIMESERIES=1
+Environment=CEMINI_PACE_PHASE=volume
+Environment=CEMINI_QUAL_CUTOFF_RANK=20
+Environment=CEMINI_PRIZE_CUTOFF_RANK=20
+Environment=CEMINI_JOIN_RETRY_S=12
+Environment=CEMINI_IN_QUEUE_RETRY_S=25
+Environment=CEMINI_LOW_STACK_JOIN_RETRY_S=15
+Environment=CEMINI_GIN_STYLE=1
+Environment=CEMINI_GIN_STYLE_PREFLOP=1
+Environment=CEMINI_GIN_STYLE_POSTFLOP=1
+Environment=CEMINI_GIN_STYLE_GATE=1
+Environment=CEMINI_NEMESIS_TIGHT=0
+Environment=JACKPOT_ROYAL_ENABLED=0
+Environment=JACKPOT_ROYAL_SHOWDOWN=0
+Environment=JACKPOT_27_HUNT_ENABLED=0
+ExecStart=/opt/devfun-poker-arena/venv/bin/python examples/run_cemini_lobby.py --competition-id cmqf827h30u7dfca3x2aqvzjv
+Restart=always
+RestartSec=15
+WatchdogSec=0
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

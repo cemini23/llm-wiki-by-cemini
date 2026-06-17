@@ -24,3 +24,10 @@ def test_lead_blind_steal_btn():
 def test_lead_blind_steal_co_tighter():
     assert lead_blind_steal("JTs", "CO")
     assert not lead_blind_steal("A9o", "CO")
+
+
+def test_placement_chase_steal_mp():
+    from blind_pressure import placement_chase_steal
+
+    assert placement_chase_steal("98s", "MP")
+    assert not placement_chase_steal("72o", "MP")

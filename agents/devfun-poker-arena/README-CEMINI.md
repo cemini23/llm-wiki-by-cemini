@@ -249,9 +249,10 @@ Swap `ARENA_LOBBY_COMPETITION_ID` in remote `.env` when a new Playground or tour
 | Competition | ID | Environment | Notes |
 |-------------|-----|-------------|-------|
 | Playground S1 | `cmpy2qy65002ud9ej6b7jjq0l` | Closed | Chip #1 → **Tournament S1** seat (paired season) |
-| **Playground S2** | `cmq57o53r0bhw18g23qkydb08` | **Official** (prod) | **Active qual target** → **Tournament S2** when top 20 |
-| Tournament S1 | TBA (not in `list-active` yet) | Pending | Free entry from S1 playground qual |
-| Tournament S2 | TBA | Pending | Requires S2 playground top 20 |
+| **Playground S2** | `cmq57o53r0bhw18g23qkydb08` | Ended | Qual → Tournament S2 (top 20) |
+| **Playground S3** | `cmqf827h30u7dfca3x2aqvzjv` | **Active** (parallel lobby) | Qual → **Tournament S3** (top 20, free entry) |
+| Tournament S1 | `cmq6l1gnq0lkz60y9i9d9eca1` | Ended | Free entry from S1 playground qual |
+| **Tournament S2** | `cmqggiv9k37am11ydmppz466e` | **Upcoming** (prod lobby queued) | Free entry from S2 playground qual |
 | Playground S2 (beta) | `cmpy1onq3088b8beendm27r1h` | Beta only | Legacy beta ID — do not use |
 | Playground S1 (legacy) | `cmpr1uomm2is6x69xx4nyqz9r` | Beta only | |
 | Tournament S28 | `cmpr1vesh2it1x69xmtpiaecp` | Beta only | 0.01 MON entry on beta |

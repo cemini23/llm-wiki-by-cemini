@@ -55,18 +55,32 @@ def _gin_style_gate_open() -> bool:
     )
 
 
-def _gin_preflop_thresholds(ip: bool) -> tuple[int, int, int, int, int]:
+def _gin_preflop_thresholds(
+    ip: bool,
+    *,
+    placement_chase: bool = False,
+) -> tuple[int, int, int, int, int]:
     """Return play, bet-open, raise-open, premium-raise ip/oop score floors."""
     if _gin_style_gate_open():
         # S2 prep — wider opens so Arena PFR moves off ~1% nit baseline.
-        return (34, 46, 58 if ip else 64, 82 if ip else 88, 88 if ip else 92)
-    return (
-        38 if ip else 44,
-        56,
-        72 if ip else 78,
-        88 if ip else 92,
-        92 if ip else 96,
-    )
+        play, bet_open, raise_open, premium_ip, premium_oop = (
+            34, 46, 58 if ip else 64, 82 if ip else 88, 88 if ip else 92
+        )
+    else:
+        play, bet_open, raise_open, premium_ip, premium_oop = (
+            38 if ip else 44,
+            56,
+            72 if ip else 78,
+            88 if ip else 92,
+            92 if ip else 96,
+        )
+    if placement_chase:
+        play -= 6
+        bet_open -= 8
+        raise_open -= 8
+        premium_ip -= 4
+        premium_oop -= 4
+    return play, bet_open, raise_open, premium_ip, premium_oop
 
 
 def preflop_score(hole_cards: list[str]) -> int:
@@ -319,6 +333,7 @@ def try_preflop(
     position: str,
     *,
     in_position: Optional[bool] = None,
+    placement_chase: bool = False,
 ) -> Optional[ActionPair]:
     """Score-based preflop (anti_threshold thresholds). None = defer to chart."""
     if not gin_style_preflop_enabled():
@@ -332,7 +347,7 @@ def try_preflop(
     open_spot = is_preflop_open_spot(table, allowed, call_amount)
 
     play_threshold, bet_open_threshold, raise_threshold, premium_threshold, _ = (
-        _gin_preflop_thresholds(ip)
+        _gin_preflop_thresholds(ip, placement_chase=placement_chase)
     )
 
     if call_amount > 0 and not open_spot:

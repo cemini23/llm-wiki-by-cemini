@@ -87,7 +87,31 @@ def is_preflop_open_spot(table: dict, allowed: dict | None = None, call_cc: int 
     max_bet = max_table_bet_chips(table)
     pot = int(table.get("potChips") or 0)
     blinds_pot = sb + bb
-    return max_bet <= bb and pot <= blinds_pot + 2
+    if max_bet <= bb and (pot <= blinds_pot + 2 or cc == sb):
+        return True
+    return False
+
+
+def preflop_limped_pot(table: dict, allowed: dict | None = None, call_cc: int | None = None) -> bool:
+    """True when facing a limp (not blinds-only open, not a raise) — K118 F7."""
+    allowed = allowed or table.get("allowedActions") or {}
+    cc = call_cc if call_cc is not None else int(allowed.get("callChips") or 0)
+    if cc <= 0 or preflop_facing_raise(table, allowed, cc):
+        return False
+    return not is_preflop_open_spot(table, allowed, cc)
+
+
+def _count_preflop_limps(table: dict) -> int:
+    bb = int(table.get("bigBlindChips") or 20)
+    n = 0
+    for seat in table.get("seats") or []:
+        if not isinstance(seat, dict):
+            continue
+        if (seat.get("status") or "Active").lower() in ("folded", "out", "empty"):
+            continue
+        if int(seat.get("currentBetChips") or 0) == bb:
+            n += 1
+    return n
 
 
 def spot_kind(table: dict) -> str:

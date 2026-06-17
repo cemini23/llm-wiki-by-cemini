@@ -164,6 +164,98 @@ def mp_unopened(hero_hole: list[str], *, equity_boost: bool = False) -> dict:
     )
 
 
+def utg_a7s_ace_high_turn_r33(*, villain_bet: int = 233, pot: int = 500) -> dict:
+    """A7s UTG ace-high turn — HL R33 #01."""
+    return six_max_table(
+        name="utg_a7s_ace_high_turn_r33",
+        hero_seat=4,
+        button_seat=1,
+        street="Turn",
+        board=["6d", "4s", "Th", "2h"],
+        pot=pot,
+        hero_hole=["As", "7s"],
+        hero_stack=400,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={4: 400},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def utg_77_paired_river_r33(*, villain_bet: int = 78, pot: int = 200) -> dict:
+    """77 UTG underpair paired — HL R33 #02."""
+    return six_max_table(
+        name="utg_77_paired_river_r33",
+        hero_seat=4,
+        button_seat=1,
+        street="River",
+        board=["Ts", "Jh", "3d", "3c", "4d"],
+        pot=pot,
+        hero_hole=["7d", "7c"],
+        hero_stack=200,
+        hero_bet=0,
+        villain_bets={6: villain_bet},
+        stacks={4: 200},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def utg_q6_kk_flop_r33(*, villain_bet: int = 41, pot: int = 120) -> dict:
+    """Q6s UTG air on KK flop — HL R33 #05."""
+    return six_max_table(
+        name="utg_q6_kk_flop_r33",
+        hero_seat=4,
+        button_seat=1,
+        street="Flop",
+        board=["Ks", "Kd", "3c"],
+        pot=pot,
+        hero_hole=["Qh", "6h"],
+        hero_stack=300,
+        hero_bet=0,
+        villain_bets={6: villain_bet},
+        stacks={4: 300},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def mp_j3_weak_top_r33(*, villain_bet: int = 40, pot: int = 150) -> dict:
+    """J3s MP weak top pair — HL R33 #06."""
+    return six_max_table(
+        name="mp_j3_weak_top_r33",
+        hero_seat=5,
+        button_seat=1,
+        street="River",
+        board=["Jd", "8d", "7c", "Kd", "As"],
+        pot=pot,
+        hero_hole=["Js", "3s"],
+        hero_stack=200,
+        hero_bet=0,
+        villain_bets={6: villain_bet},
+        stacks={5: 200},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def utg_unopened(hero_hole: list[str]) -> dict:
     """Hero UTG first to act (after blinds)."""
     return six_max_table(
@@ -296,6 +388,29 @@ def mp_facing_raise(hero_hole: list[str], *, raise_to: int = 60) -> dict:
             call_chips=raise_to,
             call_to=raise_to,
             raise_range={"min": raise_to * 2, "max": 980},
+        ),
+    )
+
+
+def co_first_in_raise_only(hero_hole: list[str]) -> dict:
+    """CO first-in when Arena exposes raise but not bet (K118 selfplay/Arena shape)."""
+    return six_max_table(
+        name="co_raise_only_open",
+        hero_seat=6,
+        button_seat=1,
+        street="Preflop",
+        board=[],
+        pot=30,
+        hero_hole=hero_hole,
+        hero_stack=980,
+        villain_bets={2: 10, 3: 20},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_raise=True,
+            call_chips=20,
+            call_to=20,
+            raise_range={"min": 40, "max": 980},
         ),
     )
 
@@ -636,6 +751,100 @@ def sb_a9s_paired_river(*, villain_bet: int = 400, pot: int = 600) -> dict:
         hero_bet=0,
         villain_bets={1: villain_bet},
         stacks={2: 500},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def btn_facing_shove(hero_hole: list[str], *, shove_to: int = 1329, hero_stack: int = 1329) -> dict:
+    """BTN facing preflop shove — HL R32 A9o −1329."""
+    return six_max_table(
+        name="btn_facing_shove",
+        hero_seat=5,
+        button_seat=1,
+        street="Preflop",
+        board=[],
+        pot=30 + shove_to,
+        hero_hole=hero_hole,
+        hero_stack=hero_stack,
+        hero_bet=0,
+        villain_bets={6: shove_to},
+        stacks={5: hero_stack},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_all_in=True,
+            call_chips=shove_to,
+            call_to=shove_to,
+            all_in_to=hero_stack,
+        ),
+    )
+
+
+def btn_k6_aa_board_r32(*, villain_bet: int = 334, pot: int = 700) -> dict:
+    """K6 BTN on double-ace board — HL R32 #03."""
+    return six_max_table(
+        name="btn_k6_aa_board_r32",
+        hero_seat=5,
+        button_seat=1,
+        street="Turn",
+        board=["As", "Ad", "9d", "3s"],
+        pot=pot,
+        hero_hole=["6c", "Kh"],
+        hero_stack=400,
+        hero_bet=0,
+        villain_bets={6: villain_bet},
+        stacks={5: 400},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def btn_k3_top_pair_flop_r32(*, villain_bet: int = 22, pot: int = 60) -> dict:
+    """K3 BTN top pair weak kicker flop — HL R32 #12."""
+    return six_max_table(
+        name="btn_k3_top_pair_flop_r32",
+        hero_seat=5,
+        button_seat=1,
+        street="Flop",
+        board=["3h", "5d", "Kc"],
+        pot=pot,
+        hero_hole=["Kh", "3s"],
+        hero_stack=200,
+        hero_bet=0,
+        villain_bets={6: villain_bet},
+        stacks={5: 200},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def btn_t9_paired_board_r32(*, villain_bet: int = 220, pot: int = 500) -> dict:
+    """T9 BTN on paired 8s — HL R32 #04."""
+    return six_max_table(
+        name="btn_t9_paired_board_r32",
+        hero_seat=5,
+        button_seat=1,
+        street="River",
+        board=["9s", "6c", "8h", "8s", "Js"],
+        pot=pot,
+        hero_hole=["9d", "Tc"],
+        hero_stack=300,
+        hero_bet=0,
+        villain_bets={6: villain_bet},
+        stacks={5: 300},
         allowed=_allowed(
             can_fold=True,
             can_call=True,
@@ -1488,6 +1697,98 @@ def bb_55_ace_river(*, villain_bet: int = 225, pot: int = 500) -> dict:
     )
 
 
+def co_55_paired_river_r31(*, villain_bet: int = 110, pot: int = 280) -> dict:
+    """55 CO on paired runout — HL R31 #02 (−110 on Td Qc 3c 3s 8s)."""
+    return six_max_table(
+        name="co_55_paired_river_r31",
+        hero_seat=6,
+        button_seat=1,
+        street="River",
+        board=["Td", "Qc", "3c", "3s", "8s"],
+        pot=pot,
+        hero_hole=["5c", "5s"],
+        hero_stack=200,
+        hero_bet=0,
+        villain_bets={5: villain_bet},
+        stacks={6: 200},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def co_77_overcard_river_r31(*, villain_bet: int = 50, pot: int = 150) -> dict:
+    """77 CO under J/K board — HL R31 #04."""
+    return six_max_table(
+        name="co_77_overcard_river_r31",
+        hero_seat=6,
+        button_seat=1,
+        street="River",
+        board=["Js", "Kd", "8d", "3c", "2d"],
+        pot=pot,
+        hero_hole=["7c", "7d"],
+        hero_stack=200,
+        hero_bet=0,
+        villain_bets={5: villain_bet},
+        stacks={6: 200},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def co_t9_kq_river_r31(*, villain_bet: int = 118, pot: int = 350) -> dict:
+    """T9d CO on K+Q runout — HL R31 #01."""
+    return six_max_table(
+        name="co_t9_kq_river_r31",
+        hero_seat=6,
+        button_seat=1,
+        street="River",
+        board=["2c", "5h", "Qc", "Kd", "4c"],
+        pot=pot,
+        hero_hole=["Td", "9d"],
+        hero_stack=300,
+        hero_bet=0,
+        villain_bets={5: villain_bet},
+        stacks={6: 300},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def btn_t7_paired_river_r31(*, villain_bet: int = 30, pot: int = 90) -> dict:
+    """T7 BTN on paired 9s — HL R31 #08."""
+    return six_max_table(
+        name="btn_t7_paired_river_r31",
+        hero_seat=5,
+        button_seat=1,
+        street="River",
+        board=["9d", "Ks", "9s", "8c", "Td"],
+        pot=pot,
+        hero_hole=["Th", "7c"],
+        hero_stack=150,
+        hero_bet=0,
+        villain_bets={6: villain_bet},
+        stacks={5: 150},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def co_66_ace_river(*, villain_bet: int = 250, pot: int = 550) -> dict:
     """66 CO on ace-high river — HL R13 export #02 (−292 on Js9hAh4h7c)."""
     return six_max_table(
@@ -1930,6 +2231,29 @@ def sb_j3o_flop_leak(*, villain_bet: int = 40, pot: int = 80) -> dict:
         board=["Ts", "Qc", "9d"],
         pot=pot,
         hero_hole=["3d", "Jh"],
+        hero_stack=900,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={2: 900},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def sb_j4o_flop_r29(*, villain_bet: int = 50, pot: int = 100) -> dict:
+    """J4o SB OOP weak top pair — HL R29 S2T analyze #01 (4c Js −128)."""
+    return six_max_table(
+        name="sb_j4o_flop_r29",
+        hero_seat=2,
+        button_seat=1,
+        street="Flop",
+        board=["7c", "2d", "Jd"],
+        pot=pot,
+        hero_hole=["4c", "Js"],
         hero_stack=900,
         hero_bet=0,
         villain_bets={1: villain_bet},

@@ -461,6 +461,7 @@ def run_selfplay(decide_fn: Callable, n_hands: int, opponent_label: str,
                               starting_stack=starting_stack,
                               small_blind=small_blind, big_blind=big_blind,
                               hand_id=i + 1,
+                              hero_idx=i % n_players,
                               training_hud=training_hud)
         except Exception as e:
             print(f"  [selfplay] WARN: hand {i+1} failed ({e}); counted as 0",

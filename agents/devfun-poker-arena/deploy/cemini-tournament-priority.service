@@ -1,0 +1,13 @@
+[Unit]
+Description=Cemini tournament priority guard (pause playground when tournament Active)
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/devfun-poker-arena
+Environment=CEMINI_TOURNAMENT_PRIORITY_LOCAL=1
+ExecStart=/opt/devfun-poker-arena/scripts/tournament_priority_guard.sh
+User=root
+
+[Install]
+WantedBy=multi-user.target

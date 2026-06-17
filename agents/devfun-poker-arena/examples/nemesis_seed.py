@@ -20,8 +20,27 @@ _DEFAULT = (
     "v_16",
     "0xjeff_ai",
     "jagoan_neon",
+    # S1 tournament top rivals (export 2026-06-08)
+    "niceh",
+    "friend",
+    "agents_are_the_product",
+    "stariy_physe",
+    "ed_209_charlie",
+    "lone_wolff",
+    "nomindart",
+    # S2 playground leaders / audit rivals
+    "float_engine",
+    "fefou_v2",
+    "long_ngu_poker",
+    "holonomic-aggro6-42efa4",
 )
-_DEFAULT_PREFIXES = ("v12_", "phoenix-rises-nrkdhd", "phoenix-nrkdhd", "phoenix-")
+_DEFAULT_PREFIXES = (
+    "v12_",
+    "phoenix-rises-nrkdhd",
+    "phoenix-nrkdhd",
+    "phoenix-",
+    "holonomic-",
+)
 # Linear-aggro nemesis — defend/3-bet IP; do not blanket-fold suited broadway (S1 export).
 _LINEAR_AGGRO_NEMESIS = frozenset({
     "thaddius",
@@ -29,6 +48,12 @@ _LINEAR_AGGRO_NEMESIS = frozenset({
     "bingbong",
     "vector_ai",
     "ed_209_charlie",
+    "friend",
+    "agents_are_the_product",
+    "stariy_physe",
+    "lone_wolff",
+    "redline_habit",
+    "acp35",
 })
 
 

@@ -75,11 +75,17 @@ def _ko_survival_min_stack() -> int:
 def _lobby_role_label(competition_id: str) -> tuple[str, str]:
     """Resolve human label + registry role for logs and timeseries."""
     s1 = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
+    s2t = os.environ.get("S2_TOURNAMENT_COMP", "").strip()
     s2 = os.environ.get("S2_PLAYGROUND_COMP", "").strip()
+    s3 = os.environ.get("S3_PLAYGROUND_COMP", "").strip()
     if competition_id and competition_id == s1:
         return "Tournament S1", "s1_tournament"
+    if competition_id and competition_id == s2t:
+        return "Tournament S2", "s2_tournament"
     if competition_id and competition_id == s2:
         return "Playground S2", "s2_playground"
+    if competition_id and competition_id == s3:
+        return "Playground S3", "s3_playground"
     label = os.environ.get("CEMINI_LOBBY_LABEL", "").strip().replace("_", " ")
     role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip()
     return label or competition_id, role or "lobby"
@@ -91,10 +97,26 @@ def _lobby_log_scope(competition_id: str) -> str:
 
 
 def _apply_competition_posture(competition_id: str) -> None:
-    """Per-comp env — shared .env loses to systemd on some hosts; comp id is source of truth."""
+    """Per-comp env — comp id is source of truth (not global CEMINI_TOURNAMENT_MODE)."""
     s1 = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
+    s2t = os.environ.get("S2_TOURNAMENT_COMP", "").strip()
     s2 = os.environ.get("S2_PLAYGROUND_COMP", "cmq57o53r0bhw18g23qkydb08").strip()
-    if competition_id == s2:
+    s3 = os.environ.get("S3_PLAYGROUND_COMP", "").strip()
+    if competition_id == s3:
+        os.environ.update({
+            "CEMINI_TOURNAMENT_MODE": "0",
+            "CEMINI_EVAL_PANEL_GATE": "0",
+            "CEMINI_PACE_PHASE": "volume",
+            "CEMINI_JOIN_RETRY_S": "12",
+            "CEMINI_IN_QUEUE_RETRY_S": "25",
+            "CEMINI_LOW_STACK_JOIN_RETRY_S": "15",
+            "CEMINI_QUAL_CUTOFF_RANK": "20",
+            "CEMINI_PRIZE_CUTOFF_RANK": "20",
+            "JACKPOT_ROYAL_ENABLED": "0",
+            "JACKPOT_ROYAL_SHOWDOWN": "0",
+            "JACKPOT_27_HUNT_ENABLED": "0",
+        })
+    elif competition_id == s2:
         # S2-only volume push — faster joins than default volume (20/45/30).
         os.environ.update({
             "CEMINI_TOURNAMENT_MODE": "0",
@@ -109,9 +131,7 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_QUAL_CUTOFF_RANK": "20",
             "CEMINI_EVAL_PANEL_GATE": "0",
         })
-    elif competition_id == s1 or os.environ.get("CEMINI_TOURNAMENT_MODE", "").strip().lower() in (
-        "1", "true", "yes", "on",
-    ):
+    elif competition_id in (s1, s2t):
         os.environ.update({
             "CEMINI_TOURNAMENT_MODE": "1",
             "CEMINI_PRIZE_CUTOFF_RANK": "10",
@@ -401,13 +421,22 @@ def run_lobby(args: argparse.Namespace) -> int:
         or os.environ.get("CEMINI_DUAL_LOBBY_COMP", "")
     ).strip()
     s1_comp = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
+    s2t_comp = os.environ.get("S2_TOURNAMENT_COMP", "").strip()
+
+    def _tournament_table_priority(cid: str) -> int:
+        """Lower = higher priority. Tournament comps beat playground on deadline ties."""
+        if s1_comp and cid == s1_comp:
+            return 0
+        if s2t_comp and cid == s2t_comp:
+            return 1
+        return 2
     if dual_comp and dual_comp == competition_id:
         dual_comp = ""
     _apply_competition_posture(competition_id)
     if dual_comp:
         print(
             f"[cemini-lobby] dual lobby: primary {_lobby_log_scope(competition_id)} "
-            f"+ secondary {_lobby_log_scope(dual_comp)} (S1 priority on deadline ties)",
+            f"+ secondary {_lobby_log_scope(dual_comp)} (tournament priority on deadline ties)",
             flush=True,
         )
     decide_fn = cemini_decide.decide
@@ -760,8 +789,7 @@ def run_lobby(args: argparse.Namespace) -> int:
 
             def _table_sort_key(row: dict) -> tuple[int, int]:
                 cid = row.get("competitionId") or competition_id
-                # S1 tournament wins deadline ties (operator priority).
-                pri = 0 if s1_comp and cid == s1_comp else 1
+                pri = _tournament_table_priority(cid)
                 return (pri, int(row.get("actionDeadlineAt") or 0))
 
             tables = sorted(tables, key=_table_sort_key)

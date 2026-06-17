@@ -18,7 +18,7 @@ _NEUTRAL_MARGINS: dict[str, float] = {
     "call_margin_delta": 0.0,
     "fold_slack_delta": 0.0,
     "preflop_fold_margin_delta": 0.0,
-    "open_steal_equity": 0.99,
+    "open_steal_equity": 0.55,
 }
 
 
@@ -41,7 +41,9 @@ def build_opponent_hud(table: dict) -> dict:
     mod = _exploit_impl()
     if mod is not None:
         return mod.build_opponent_hud(table)
-    return {}
+    from opponent_hud_stub import build_opponent_hud as _stub  # noqa: WPS433
+
+    return _stub(table)
 
 
 def invalidate_opponent_cache(

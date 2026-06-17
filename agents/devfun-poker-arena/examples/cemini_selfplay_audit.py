@@ -128,6 +128,8 @@ class GateThresholds:
     min_bb_per_100_rock: float = -25.0
     min_bb_per_100_maniac: float = -40.0
     min_vpip: float = 0.0
+    min_pfr: float = 0.06  # rock selfplay floor; live S2 ~11% PFR (K118 gate vs 2.2% passive)
+    max_vpip_pfr_gap: float = 0.06
 
 
 def _rate(num: int, den: int) -> float:
@@ -189,6 +191,7 @@ def run_audit(
 
     vpip_rate = _rate(merged.vpip, merged.preflop_seen)
     pfr_rate = _rate(merged.pfr, merged.preflop_seen)
+    vpip_pfr_gap = vpip_rate - pfr_rate
     ep_seen = merged.by_position.get("UTG", 0) + merged.by_position.get("MP", 0)
     ep_vpip = merged.vpip_by_position.get("UTG", 0) + merged.vpip_by_position.get("MP", 0)
     ep_vpip_rate = _rate(ep_vpip, ep_seen)
@@ -201,6 +204,7 @@ def run_audit(
     print(f"  VPIP (all)  : {vpip_rate:.1%}  ({merged.vpip}/{merged.preflop_seen})")
     print(f"  VPIP (EP)   : {ep_vpip_rate:.1%}  ({ep_vpip}/{ep_seen})  ← gate metric")
     print(f"  PFR         : {pfr_rate:.1%}  ({merged.pfr}/{merged.preflop_seen})")
+    print(f"  VPIP − PFR  : {vpip_pfr_gap:.1%}  ← passive-limp gate")
     print(f"  EP trash opens: {merged.ep_trash_raises}  {merged.trash_hands_opened[:5]}")
     print(f"  bb/100 rock : {rock['bb_per_100']:+.1f}")
     print(f"  bb/100 maniac: {maniac['bb_per_100']:+.1f}")
@@ -234,6 +238,14 @@ def run_audit(
         failures.append(
             f"VPIP {vpip_rate:.1%} < min {thresholds.min_vpip:.1%}"
         )
+    if thresholds.min_pfr > 0 and pfr_rate < thresholds.min_pfr:
+        failures.append(
+            f"PFR {pfr_rate:.1%} < min {thresholds.min_pfr:.1%}"
+        )
+    if thresholds.max_vpip_pfr_gap > 0 and vpip_pfr_gap > thresholds.max_vpip_pfr_gap:
+        failures.append(
+            f"VPIP−PFR gap {vpip_pfr_gap:.1%} > max {thresholds.max_vpip_pfr_gap:.1%}"
+        )
 
     if failures:
         print("  GATE FAIL:")
@@ -258,6 +270,8 @@ def main(argv: Optional[list[str]] = None) -> int:
     p.add_argument("--max-ep-vpip", type=float, default=GateThresholds.max_ep_vpip)
     p.add_argument("--min-bb-rock", type=float, default=GateThresholds.min_bb_per_100_rock)
     p.add_argument("--min-bb-maniac", type=float, default=GateThresholds.min_bb_per_100_maniac)
+    p.add_argument("--min-pfr", type=float, default=GateThresholds.min_pfr)
+    p.add_argument("--max-vpip-pfr-gap", type=float, default=GateThresholds.max_vpip_pfr_gap)
     args = p.parse_args(argv)
 
     min_vpip = 0.18 if os.environ.get("CEMINI_GIN_STYLE", "").strip().lower() in (
@@ -268,6 +282,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         min_bb_per_100_rock=args.min_bb_rock,
         min_bb_per_100_maniac=args.min_bb_maniac,
         min_vpip=min_vpip,
+        min_pfr=args.min_pfr,
+        max_vpip_pfr_gap=args.max_vpip_pfr_gap,
     )
     return run_audit(
         hands=args.hands,

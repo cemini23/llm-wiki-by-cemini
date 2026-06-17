@@ -55,16 +55,23 @@ def lead_blind_steal(hand_class: str, position: str) -> bool:
 # placement_chase (rank > prize cutoff): widen steals toward top-20 VPIP (~25%) without maniac.
 _CHASE_BTN_STEAL = _BTN_LEAD_STEAL | frozenset({
     "22", "33", "44",
-    "A2o", "A3o", "A4o", "A5o", "A6o", "A7o", "A8o",
-    "K8s", "K9o", "K8o", "Q9o", "Q9s", "Q8s", "J9o", "J9s", "J8s",
-    "T9o", "T8s", "98o", "98s", "87s", "76s", "65s", "54s", "97s", "86s",
+    "A2o", "A3o", "A4o", "A5o", "A6o", "A7o",
+    "K8s", "K9o", "K8o", "K7s", "Q9o", "Q9s", "Q8s", "Q8o",
+    "J9o", "J9s", "J8s", "T9o", "T8s", "T8o", "98o", "98s",
+    "87s", "76s", "65s", "54s", "97s", "86s", "96o", "85o",
 })
 
 _CHASE_CO_STEAL = _CO_LEAD_STEAL | frozenset({
     "22", "33", "44",
     "A2s", "A3s", "A4s", "A5s", "A6s", "A7s", "A8s", "A8o", "A9o",
-    "K9s", "K9o", "Q9s", "Q9o", "J9s", "J9o", "T9s", "T9o", "98o",
-    "98s", "87s", "76s", "65s",
+    "K9s", "K9o", "K8s", "K7s", "Q9s", "Q9o", "Q8s", "J9s", "J9o", "J8s",
+    "T9s", "T9o", "T8s", "98o", "98s", "87s", "76s", "65s", "54s",
+})
+
+_CHASE_MP_STEAL = frozenset({
+    "66", "77", "88", "99", "TT", "JJ", "QQ", "KK", "AA",
+    "ATs", "AJs", "AQs", "AKs", "AQo", "AKo", "AJo",
+    "KQs", "KJs", "QJs", "JTs", "T9s", "98s", "87s",
 })
 
 _CHASE_SB_STEAL = frozenset({
@@ -76,11 +83,13 @@ _CHASE_SB_STEAL = frozenset({
 
 
 def placement_chase_steal(hand_class: str, position: str) -> bool:
-    """True when placement_chase should open-steal (CO/BTN/SB pressure lane)."""
+    """True when placement_chase should open-steal (CO/BTN/SB/MP pressure lane)."""
     if position == "BTN":
         return hand_class in _CHASE_BTN_STEAL
     if position == "CO":
         return hand_class in _CHASE_CO_STEAL
     if position == "SB":
         return hand_class in _CHASE_SB_STEAL
+    if position == "MP":
+        return hand_class in _CHASE_MP_STEAL
     return False

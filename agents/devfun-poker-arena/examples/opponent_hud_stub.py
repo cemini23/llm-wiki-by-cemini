@@ -63,7 +63,7 @@ def exploit_margins(mode: str) -> dict[str, float]:
         "call_margin_delta": 0.0,
         "fold_slack_delta": 0.0,
         "preflop_fold_margin_delta": 0.0,
-        "open_steal_equity": 0.99,
+        "open_steal_equity": 0.55,
     }
 
 

@@ -12,6 +12,7 @@ Run:
 """
 from __future__ import annotations
 
+import json
 import os
 import sys
 from collections import Counter
@@ -42,7 +43,12 @@ from nemesis_seed import (  # noqa: E402
     table_nemesis_opener_handle,
     table_nemesis_pressure,
 )
-from opponent_target import is_preflop_open_spot  # noqa: E402
+from opponent_target import (  # noqa: E402
+    _count_preflop_limps,
+    is_preflop_open_spot,
+    preflop_limped_pot,
+    spot_kind,
+)
 from s1b_exploit import (  # noqa: E402
     exploit_lane_active,
     s1b_exploit_enabled,
@@ -80,6 +86,12 @@ _WEAK_FACING_RAISE = frozenset({
 
 _LOW_PAIRS_PROTECT = frozenset({"77", "66", "55", "44", "33", "22"})
 _CO_WEAK_CONNECTOR = frozenset({"98o", "87o", "T8o", "97o", "86o", "76o", "65o"})
+# BTN/CO marginal ace offsuit — never stack off (A9o BTN −1329 HL R32 #01).
+_BTN_CO_MARGINAL_ACE_OFFSUIT = frozenset({
+    "A2o", "A3o", "A4o", "A5o", "A6o", "A7o", "A8o", "A9o",
+})
+# K118 F4: default rock-steal bar when margins omit open_steal_equity (was 0.99 → never steal).
+_DEFAULT_OPEN_STEAL_EQUITY = 0.55
 _BB_BROADWAY_FOLD = frozenset({"KQo", "QJo", "KJo", "KTo", "QTo", "JTo", "AJo", "ATo"})
 _SB_WEAK_SUITED_VS_OPEN = frozenset({
     "K9s", "K8s", "Q9s", "Q8s", "J9s", "J8s", "T9s", "T8s", "T7s", "97s", "86s",
@@ -129,6 +141,43 @@ def _merge_margins(base: dict, *extras: dict) -> dict:
         for key, delta in extra.items():
             out[key] = out.get(key, 0.0) + float(delta)
     return out
+
+
+def _preflop_log_enabled() -> bool:
+    return os.environ.get("CEMINI_PREFLOP_LOG", "").strip().lower() in ("1", "true", "yes", "on")
+
+
+def _log_preflop_decision(
+    table: dict,
+    *,
+    hand_class: str,
+    action: str,
+    amount: Optional[int],
+) -> None:
+    """F8 — append spot_kind + hand_class for analyze tuning (CEMINI_PREFLOP_LOG=1)."""
+    if not _preflop_log_enabled():
+        return
+    try:
+        log_path = Path(
+            os.environ.get(
+                "CEMINI_PREFLOP_LOG_PATH",
+                str(_EXAMPLES.parent / "reports" / "analyze" / "preflop_decisions.jsonl"),
+            )
+        )
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        row = {
+            "tableId": table.get("tableId"),
+            "competitionId": table.get("competitionId"),
+            "hand_class": hand_class,
+            "position": hero_position_label(table),
+            "spot_kind": spot_kind(table),
+            "action": action,
+            "amount": amount,
+        }
+        with log_path.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(row, separators=(",", ":")) + "\n")
+    except Exception:
+        pass
 
 
 def retrieve_solver_context(table: dict) -> dict:
@@ -302,7 +351,14 @@ def decide(
     elif placement_protect:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.03, "call_margin_delta": 0.03})
     elif placement_chase:
-        margins = _merge_margins(margins, {"fold_slack_delta": -0.02, "call_margin_delta": -0.02})
+        margins = _merge_margins(
+            margins,
+            {
+                "fold_slack_delta": -0.02,
+                "call_margin_delta": -0.02,
+                "chase_open_equity": 0.30,
+            },
+        )
     style_ov = ctx.get("hl_style_overrides") or {}
     if style_ov:
         tweak: dict[str, float] = {}
@@ -371,6 +427,7 @@ def decide(
         margins = _merge_margins(margins, {"fold_slack_delta": 0.03})
     cold_start = bool(hud.get("coldStart"))
     hc = chart.get("hand_class") or _hand_class(hole) or ""
+    limped_pot = preflop_limped_pot(table, allowed, call_chips)
 
     action_name: str
     amount: Optional[int] = None
@@ -614,6 +671,45 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: CO weak two-pair paired board — fold")
 
+    # CO/BTN IP pocket under paired-board top rank — 55 CO −110 (HL R31 #02).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "BTN") and in_position
+            and _hero_underpair_on_paired_board(hc, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.22), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: IP underpair on paired board — fold")
+
+    # CO/BTN IP pocket under board overcards — 77 CO −50 (HL R31 #04).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "BTN") and in_position
+            and _hero_pocket_under_board_overcards(hole, board, hc)
+            and not _hero_cannot_lose()
+            and len(board) >= 4
+            and call_chips >= max(int(pot * 0.22), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: IP pocket under overcards — fold")
+
+    # CO/BTN IP weak top on K+Q runout — T9d CO −118 (HL R31 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "BTN") and in_position
+            and _hero_ip_weak_top_on_kq_runout(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.20), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: IP weak top KQ runout — fold")
+
+    # CO/BTN IP weak kicker on board pair — T7 BTN −30 (HL R31 #08).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "BTN") and in_position
+            and _hero_weak_kicker_on_board_pair(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.18), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: IP weak kicker board pair — fold")
+
     # EP/MP/CO pocket 77–QQ on ace-paired runout — 99 MP −448 (HL R12 #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and position in ("UTG", "MP", "CO")
@@ -761,14 +857,61 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: EP weak ace high only — fold")
 
+    # EP OOP marginal suited ace ace-high only — A7s UTG −233 (HL R33 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP") and not in_position
+            and _is_marginal_suited_ace(hc)
+            and _hero_ace_high_no_pair(hole, board)
+            and len(board) >= 3
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.12), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP suited ace high only — fold")
+
+    # EP/MP OOP underpair on paired board — 77 UTG −78 (HL R33 #02).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP") and not in_position
+            and _hero_underpair_on_paired_board(hc, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.22), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP underpair on paired board — fold")
+
+    # EP OOP air vs high paired board — Q6s UTG −41 on KK3 (HL R33 #05).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP") and not in_position
+            and _hero_air_vs_high_pair_board(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.15), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP air vs high pair board — fold")
+
+    # EP/MP/CO OOP weak kicker top pair rainbow — J3s MP −40 (HL R33 #06).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP", "CO") and not in_position
+            and len(board) >= 3
+            and not _board_has_three_flush(board)
+            and _weak_kicker_top_pair(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.18), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP OOP weak kicker top pair — fold")
+
+    open_spot = is_preflop_open_spot(table, allowed, call_chips)
+    chase_steal_open = (
+        placement_chase and open_spot and placement_chase_steal(hc, position)
+    )
     gin_skip = (
         cold_start and not placement_chase
     ) or (
         call_chips > 0 and position == "SB" and hc in _BB_BROADWAY_FOLD
     ) or (
         placement_chase and position == "UTG"
-        and is_preflop_open_spot(table, allowed, call_chips)
+        and open_spot
         and not placement_chase_steal(hc, position)
+    ) or (
+        chase_steal_open
     ) or (
         street == "Preflop" and call_chips > 0
         and _hero_stack_chips(table) > 0
@@ -779,6 +922,7 @@ def decide(
             and not lane_tight and not gin_skip):
         gin_pair = try_preflop(
             table, allowed, available, hole, position, in_position=in_position,
+            placement_chase=placement_chase,
         )
         if gin_pair is not None:
             g_act, g_amt = gin_pair
@@ -850,11 +994,50 @@ def decide(
 
     hero_stack_early = _hero_stack_chips(table)
     if (street == "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("BTN", "CO")
+            and hc in _BTN_CO_MARGINAL_ACE_OFFSUIT
+            and hero_stack_early > 0
+            and call_chips >= max(int(hero_stack_early * 0.08), int(table.get("bigBlindChips") or 20) * 3)
+            and not _hero_cannot_lose()):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: BTN/CO marginal ace vs commit — fold")
+
+    if (street == "Preflop" and call_chips > 0 and "fold" in available
             and _preflop_stackoff_should_fold(
                 hc, call_chips, hero_stack_early, position=position)
             and not _hero_cannot_lose()):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: preflop stack-off — fold")
+
+    # CO/BTN IP weak kicker top pair — K3o BTN −22 (HL R32 #12); any street ≥ flop.
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "BTN") and in_position
+            and len(board) >= 3
+            and _weak_kicker_top_pair(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.18), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: IP weak kicker top pair — fold")
+
+    # CO/BTN IP air on ace-paired board — K6o BTN −334 (HL R32 #03).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "BTN") and in_position
+            and _hero_air_on_ace_paired_board(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.15), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: IP air on ace-paired board — fold")
+
+    # CO/BTN IP weak top pair on paired board — T9o −220 on 9-8-8-J (HL R32 #04).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "BTN") and in_position
+            and _hero_weak_top_pair_on_paired_board(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.20), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: IP weak top on paired board — fold")
 
     # CO/BTN weak broadway on paired river — ATo CO −100 (HL R4 #03).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
@@ -907,9 +1090,13 @@ def decide(
             return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                           msg=f"{binding}: panel trash {position} — fold")
     if (street == "Preflop" and position == "SB" and call_chips == 0
-            and _is_sb_complete_trash(hc) and "check" in available):
-        return _build("check", None, table, allowed, eq=equity, po=pot_odds,
-                      msg=f"{binding}: SB complete trash — check")
+            and _is_sb_complete_trash(hc)):
+        if "fold" in available:
+            return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                          msg=f"{binding}: SB complete trash — fold")
+        if "check" in available:
+            return _build("check", None, table, allowed, eq=equity, po=pot_odds,
+                          msg=f"{binding}: SB complete trash — check")
 
     # CO/BTN: never call limps/raises with dominated trash (Q9o/Q5o multiway −100 HL R20/R21).
     if (street == "Preflop" and position in ("CO", "BTN") and call_chips > 0
@@ -976,7 +1163,9 @@ def decide(
             lane_tight=lane_tight,
             ko_survival=ko_survival, cold_start=cold_start, hud=hud,
             hero_stack_chips=hero_stack, big_blind=bb,
-            placement_chase=placement_chase)
+            placement_chase=placement_chase,
+            limped_pot=limped_pot,
+            table=table)
     elif call_chips == 0:
         gin_free = (
             try_postflop_free(table, allowed, available, hole, board)
@@ -1012,6 +1201,8 @@ def decide(
     out = _apply_chip_reserve(out, max_playable, table, hc)
     out["reasoning"] = _skill_reasoning(
         out.get("reasoning", ""), binding, suggested, chart, ps, hud_mode=hud_mode)
+    if street == "Preflop":
+        _log_preflop_decision(table, hand_class=hc, action=action_name, amount=amount)
     return out
 
 
@@ -1085,6 +1276,29 @@ def _blocks_open_steal(hand_class: str, position: str) -> bool:
     return False
 
 
+def _preflop_first_in_wager(
+    allowed: dict,
+    available: list,
+    pot: int,
+    *,
+    size_frac: float = 0.55,
+) -> tuple[Optional[str], Optional[int]]:
+    """First-in open — bet when unopened, raise when call_chips > 0 (Arena/selfplay)."""
+    if allowed.get("canBet") and "bet" in available:
+        br = allowed.get("betRange") or {}
+        min_w = int(br.get("min") or max(int(pot * size_frac), 1))
+        max_w = int(br.get("max") or min_w)
+        target = max(min_w, min(int(pot * size_frac), max_w))
+        return "bet", target
+    if allowed.get("canRaise") and "raise" in available:
+        rr = allowed.get("raiseRange") or {}
+        min_w = int(rr.get("min") or max(int(pot * size_frac), 1))
+        max_w = int(rr.get("max") or min_w)
+        target = max(min_w, min(int(pot * size_frac), max_w))
+        return "raise", target
+    return None, None
+
+
 def _preflop_open(suggested: str, allowed: dict, available: list,
                   pot: int, equity: float,
                   hand_class: str = "", position: str = "",
@@ -1103,9 +1317,11 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
     if (position == "SB" and _weak_ace_offsuit(hand_class)
             and suggested == "raise" and "check" in available):
         return "check", None
-    if (position == "SB" and _is_sb_complete_trash(hand_class)
-            and "check" in available):
-        return "check", None
+    if (position == "SB" and _is_sb_complete_trash(hand_class)):
+        if "fold" in available:
+            return "fold", None
+        if "check" in available:
+            return "check", None
     if ps_library and ps_bias == "check" and "check" in available:
         return "check", None
     # Seat matrix v2 — SB/BB never open non-premium trash (S2 audit blind bleed).
@@ -1140,14 +1356,13 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             and "fold" in available):
         return "fold", None
     # Qual/lead protect: CO/BTN chart-only — no HUD steals (K8o/T7o CO −100 leaks).
-    if (qual_protect or lead_protect) and position in ("CO", "BTN") and suggested != "raise":
-        if (lead_protect and not first_protect and lead_blind_steal(hand_class, position)
-                and allowed.get("canBet") and "bet" in available):
-            br = allowed.get("betRange") or {}
-            min_bet = int(br.get("min") or max(int(pot * 0.5), 1))
-            max_bet = int(br.get("max") or min_bet)
-            target = max(min_bet, min(int(pot * 0.5), max_bet))
-            return "bet", target
+    # placement_chase bypasses this lane (F5 — chase opens use placement_chase_steal path).
+    if ((qual_protect or lead_protect) and not placement_chase
+            and position in ("CO", "BTN") and suggested != "raise"):
+        if (lead_protect and not first_protect and lead_blind_steal(hand_class, position)):
+            act, target = _preflop_first_in_wager(allowed, available, pot)
+            if act:
+                return act, target
         if "fold" in available:
             return "fold", None
         if "check" in available:
@@ -1165,29 +1380,34 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             return "fold", None
     # placement_chase: widen CO/BTN/SB opens toward top-20 field VPIP (not margin-only).
     chase_eq = float(margins.get("chase_open_equity", 0.38))
-    if (placement_chase and not lane_tight and position in ("CO", "BTN", "SB")
+    if (placement_chase and not lane_tight
+            and position in ("CO", "BTN", "SB", "MP")
             and chase_open_ok and equity >= chase_eq
-            and allowed.get("canBet") and "bet" in available
             and not _is_sb_complete_trash(hand_class)):
-        br = allowed.get("betRange") or {}
-        min_bet = int(br.get("min") or max(int(pot * 0.5), 1))
-        max_bet = int(br.get("max") or min_bet)
-        target = max(min_bet, min(int(pot * 0.5), max_bet))
-        return "bet", target
+        act, target = _preflop_first_in_wager(allowed, available, pot, size_frac=0.5)
+        if act:
+            return act, target
+    # K118 F4: chart steal hands vs rock — open without MC equity bar (chart said check/fold).
+    if (not lead_protect and not qual_protect and not cold_start and hud_mode == "rock"
+            and position in ("CO", "BTN")
+            and placement_chase_steal(hand_class, position)
+            and not _blocks_open_steal(hand_class, position)
+            and not _is_sb_complete_trash(hand_class)):
+        act, target = _preflop_first_in_wager(allowed, available, pot, size_frac=0.5)
+        if act:
+            return act, target
     # vs rock: steal when chart is passive but equity supports an open (CO/BTN only).
-    steal_eq = float(margins.get("open_steal_equity", 0.99))
+    steal_eq = float(margins.get("open_steal_equity", _DEFAULT_OPEN_STEAL_EQUITY))
     if (not lead_protect and not qual_protect and not cold_start and hud_mode == "rock"
             and suggested in ("check", "fold")
             and position in ("CO", "BTN")
-            and equity >= steal_eq and allowed.get("canBet") and "bet" in available
+            and equity >= steal_eq
             and not _is_sb_complete_trash(hand_class)
             and not _blocks_open_steal(hand_class, position)):
-        br = allowed.get("betRange") or {}
-        min_bet = int(br.get("min") or max(int(pot * 0.5), 1))
-        max_bet = int(br.get("max") or min_bet)
-        target = max(min_bet, min(int(pot * 0.5), max_bet))
-        return "bet", target
-    if (suggested == "raise" and allowed.get("canBet") and "bet" in available
+        act, target = _preflop_first_in_wager(allowed, available, pot, size_frac=0.5)
+        if act:
+            return act, target
+    if (suggested == "raise"
             and not _should_block_chart_open(
                 hand_class, position,
                 lead_protect=lead_protect,
@@ -1201,11 +1421,9 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
                 and hand_class not in _COLD_START_OPEN_OK
                 and not (placement_chase and chase_open_ok)
             )):
-        br = allowed.get("betRange") or {}
-        min_bet = int(br.get("min") or max(int(pot * 0.5), 1))
-        max_bet = int(br.get("max") or min_bet)
-        target = max(min_bet, min(int(pot * 0.55), max_bet))
-        return "bet", target
+        act, target = _preflop_first_in_wager(allowed, available, pot)
+        if act:
+            return act, target
     if suggested == "fold" and "fold" in available:
         return "fold", None
     if "check" in available:
@@ -1232,12 +1450,31 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                     hud: Optional[dict] = None,
                     hero_stack_chips: int = 0,
                     big_blind: int = 20,
-                    placement_chase: bool = False) -> tuple[str, Optional[int]]:
+                    placement_chase: bool = False,
+                    limped_pot: bool = False,
+                    table: Optional[dict] = None) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     hc = chart.get("hand_class") or ""
     position = chart.get("position") or ""
     suggested = chart.get("suggested_action") or "fold"
     hud = hud or {}
+
+    # K118 F2: chart raise vs limp / SB complete (not an open-spot but still PFR).
+    if (suggested == "raise" and 0 < call_chips <= big_blind
+            and allowed.get("canRaise") and "raise" in available):
+        rr = allowed.get("raiseRange") or {}
+        min_r = int(rr.get("min") or call_chips * 2)
+        max_r = int(rr.get("max") or min_r)
+        target = max(min_r, min(int(pot * 0.55 + call_chips * 2), max_r))
+        return "raise", target
+
+    # K118 F7: block marginal CO/BTN flats when ≥2 limpers (multiway limp pot).
+    if (limped_pot and table and position in ("CO", "BTN")
+            and _count_preflop_limps(table) >= 2
+            and suggested != "raise"
+            and (hand_class in _WEAK_FACING_RAISE or hand_class in _CO_WEAK_CONNECTOR)
+            and "fold" in available):
+        return "fold", None
 
     # Premium-nit / tight-measured — overfold vs aggression (S2 audit HUD PCI).
     pci = float(hud.get("premium_concentration") or 0.0)
@@ -1556,6 +1793,13 @@ def _is_weak_suited_ace(hc: str) -> bool:
     return kicker <= _RANKS.index("6")
 
 
+def _is_marginal_suited_ace(hc: str) -> bool:
+    """A2s–A9s — EP ace-high overcall traps (A7s UTG −233 HL R33)."""
+    if len(hc) != 3 or hc[2] != "s" or hc[0] != "A" or hc[1] == "A":
+        return False
+    return _RANKS.index(hc[1]) <= _RANKS.index("9")
+
+
 def _is_ep_preflop_trash(hc: str) -> bool:
     """UTG/MP chart trash — offsuit wheel + low suited opens."""
     if not hc:
@@ -1595,6 +1839,8 @@ def _preflop_stackoff_should_fold(
     if ratio >= 0.18 and _marginal_ace_kicker(hc):
         return True
     if ratio >= 0.15 and position in ("BTN", "CO", "SB") and _marginal_ace_kicker(hc):
+        return True
+    if ratio >= 0.08 and position in ("BTN", "CO") and hc in _BTN_CO_MARGINAL_ACE_OFFSUIT:
         return True
     if ratio >= 0.18 and hc in _EP_SUITED_BROADWAY_TRAP:
         return True
@@ -2216,6 +2462,123 @@ def _hero_underpair_on_paired_board(hand_class: str, board: list[str]) -> bool:
     return _RANKS.index(top) > _RANKS.index(pr)
 
 
+def _hero_pocket_under_board_overcards(
+    hole: list[str], board: list[str], hc: str,
+) -> bool:
+    """Pocket 22–QQ with no set when top board card beats pocket (77 on J K 8x)."""
+    if len(board) < 3 or not (_small_pocket_pair(hc) or _medium_pocket_pair(hc)):
+        return False
+    if _hero_pocket_set(hole, board) or _hero_made_hand_exempt(hole, board):
+        return False
+    hranks = [c[0].upper() for c in hole]
+    if len(hranks) != 2 or hranks[0] != hranks[1]:
+        return False
+    pr = hranks[0]
+    branks = [c[0].upper() for c in board]
+    if pr in branks:
+        return False
+    top = max(branks, key=lambda r: _RANKS.index(r))
+    return _RANKS.index(top) > _RANKS.index(pr)
+
+
+def _hero_ip_weak_top_on_kq_runout(hole: list[str], board: list[str]) -> bool:
+    """Top pair weak kicker when board shows both K and Q (T9 CO −118)."""
+    if len(board) < 4 or len(hole) != 2:
+        return False
+    hranks = [c[0].upper() for c in hole]
+    if hranks[0] == hranks[1]:
+        return False
+    branks = [c[0].upper() for c in board]
+    if "K" not in branks or "Q" not in branks:
+        return False
+    hits = [r for r in hranks if r in branks]
+    if len(hits) != 1:
+        return False
+    paired_rank = hits[0]
+    kicker = hranks[1] if hranks[0] == paired_rank else hranks[0]
+    return _RANKS.index(kicker) <= _RANKS.index("T")
+
+
+def _hero_weak_kicker_on_board_pair(hole: list[str], board: list[str]) -> bool:
+    """Shares board pair rank with kicker ≤T — T7 on 9x9 (HL R31 #08)."""
+    if len(board) < 3 or len(hole) != 2:
+        return False
+    hranks = [c[0].upper() for c in hole]
+    if hranks[0] == hranks[1]:
+        return False
+    bc = Counter(c[0].upper() for c in board)
+    pair_ranks = [r for r, c in bc.items() if c >= 2]
+    if not pair_ranks:
+        return False
+    for pr in pair_ranks:
+        if pr not in hranks:
+            continue
+        kicker = hranks[1] if hranks[0] == pr else hranks[0]
+        if kicker == pr:
+            continue
+        if _RANKS.index(kicker) <= _RANKS.index("T"):
+            return True
+    return False
+
+
+def _hero_air_vs_high_pair_board(hole: list[str], board: list[str]) -> bool:
+    """No made hand when board pairs T+ — Q6 on KK3 (HL R33 #05)."""
+    if len(board) < 3 or not _board_is_paired(board):
+        return False
+    if _hero_made_hand_exempt(hole, board):
+        return False
+    hranks = [c[0].upper() for c in hole]
+    if len(hranks) != 2:
+        return False
+    bc = Counter(c[0].upper() for c in board)
+    pair_ranks = [r for r, c in bc.items() if c >= 2]
+    if not pair_ranks:
+        return False
+    top_pair = max(pair_ranks, key=lambda r: _RANKS.index(r))
+    if _RANKS.index(top_pair) < _RANKS.index("T"):
+        return False
+    branks = [c[0].upper() for c in board]
+    if any(r in branks for r in hranks):
+        return False
+    return True
+
+
+def _hero_air_on_ace_paired_board(hole: list[str], board: list[str]) -> bool:
+    """No pair / no ace participation on AAx boards — K6 on As Ad 9x (HL R32 #03)."""
+    if len(board) < 3 or not _board_has_ace_pair(board):
+        return False
+    if _hero_made_hand_exempt(hole, board):
+        return False
+    hranks = [c[0].upper() for c in hole]
+    if len(hranks) != 2:
+        return False
+    if hranks[0] == hranks[1] == "A":
+        return False
+    branks = [c[0].upper() for c in board]
+    if any(r in branks for r in hranks):
+        return False
+    if "A" in hranks:
+        return False
+    return True
+
+
+def _hero_weak_top_pair_on_paired_board(hole: list[str], board: list[str]) -> bool:
+    """Single top pair weak kicker when board is paired — 9T on 9-8-8-J (HL R32 #04)."""
+    if len(board) < 3 or not _board_is_paired(board) or len(hole) != 2:
+        return False
+    hranks = [c[0].upper() for c in hole]
+    if hranks[0] == hranks[1]:
+        return False
+    bc = Counter(c[0].upper() for c in board)
+    for r in hranks:
+        if r not in bc or bc[r] != 1:
+            continue
+        kicker = hranks[1] if hranks[0] == r else hranks[0]
+        if _RANKS.index(kicker) <= _RANKS.index("T"):
+            return True
+    return False
+
+
 def _hero_pocket_set(hole: list[str], board: list[str]) -> bool:
     """Pocket pair flopped a set (or better) on this board."""
     if len(hole) != 2 or len(board) < 3:
@@ -2673,6 +3036,35 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
             and "fold" in available):
         return "fold", None
 
+    # SB/BB OOP weak kicker top pair rainbow flop+ — J4o SB −128 vs Thaddius (HL R29 S2T).
+    if (position in ("SB", "BB", "UTG", "MP", "CO") and not in_position
+            and len(board) >= 3
+            and not _board_has_three_flush(board)
+            and _weak_kicker_top_pair(hole, board)
+            and call_chips >= max(int(pot * 0.18), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("UTG", "MP") and not in_position
+            and _hero_underpair_on_paired_board(hand_class, board)
+            and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("UTG", "MP") and not in_position
+            and _is_marginal_suited_ace(hand_class)
+            and _hero_ace_high_no_pair(hole, board)
+            and len(board) >= 3
+            and call_chips >= max(int(pot * 0.12), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("UTG", "MP") and not in_position
+            and _hero_air_vs_high_pair_board(hole, board)
+            and call_chips >= max(int(pot * 0.15), 1)
+            and "fold" in available):
+        return "fold", None
+
     # EP OOP: fold weak hands vs significant bets without strong equity.
     if (position in ("UTG", "MP") and not in_position and call_chips > 0
             and not _is_strong_continue(hand_class)
@@ -2691,6 +3083,56 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
     if (position == "SB" and not in_position
             and _hero_underpair_on_paired_board(hand_class, board)
             and call_chips >= max(int(pot * 0.32), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("CO", "BTN") and in_position
+            and _hero_underpair_on_paired_board(hand_class, board)
+            and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("CO", "BTN") and in_position
+            and _hero_pocket_under_board_overcards(hole, board, hand_class)
+            and len(board) >= 4
+            and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("CO", "BTN") and in_position
+            and _hero_ip_weak_top_on_kq_runout(hole, board)
+            and call_chips >= max(int(pot * 0.20), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("CO", "BTN") and in_position
+            and _hero_weak_kicker_on_board_pair(hole, board)
+            and call_chips >= max(int(pot * 0.18), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("CO", "BTN") and in_position
+            and _hero_weak_kicker_on_board_pair(hole, board)
+            and call_chips >= max(int(pot * 0.18), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("CO", "BTN") and in_position
+            and _weak_kicker_top_pair(hole, board)
+            and len(board) >= 3
+            and call_chips >= max(int(pot * 0.18), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("CO", "BTN") and in_position
+            and _hero_air_on_ace_paired_board(hole, board)
+            and call_chips >= max(int(pot * 0.15), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (position in ("CO", "BTN") and in_position
+            and _hero_weak_top_pair_on_paired_board(hole, board)
+            and call_chips >= max(int(pot * 0.20), 1)
             and "fold" in available):
         return "fold", None
 
