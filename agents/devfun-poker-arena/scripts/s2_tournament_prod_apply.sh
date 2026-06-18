@@ -88,6 +88,7 @@ set_kv CEMINI_GIN_STYLE 1
 set_kv CEMINI_GIN_STYLE_PREFLOP 1
 set_kv CEMINI_GIN_STYLE_POSTFLOP 1
 set_kv CEMINI_GIN_STYLE_GATE 1
+set_kv CEMINI_GIN_V008 1
 set_kv CEMINI_COLD_START_NO_STEAL 0
 
 # Exploit stack — archetype over blanket nemesis-tight (S1 tournament mistake).

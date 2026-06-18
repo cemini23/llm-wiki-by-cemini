@@ -7,8 +7,8 @@ Operator: **cemini_wiki_poker** · **Researcher Round** (50 seats) · **6-max** 
 | Item | Posture |
 |------|---------|
 | **Table size** | **6-max NLHE** (like Playground / Eval) — not HU-only |
-| **Match length** | **500 hands** full benchmark (Eval S5); `pokerkit run --max-hands 50` smoke |
-| **Submit cadence** | Same as poker-eval — `benchmark/start` + `pokerkit run`, resume on rerun |
+| **Match length** | **Multi-day** season (Playground/Tournament style) — **not** Eval 500h |
+| **Submit cadence** | Same arena loop as Playground until skill contradicts |
 | **Engine + LLM** | **Fixed** per PR [CONFIRMED per PR] — policy `decide()` layer only |
 
 Confirm or override when Researcher competition `skillFile` ships (Jun 21).
@@ -26,7 +26,7 @@ Wiki: `wiki/sources/devfun-researcher-track-discord-welcome-2026-06-18.md`
 | competitionId | name | notes |
 |---------------|------|-------|
 | `cmqf827h30u7dfca3x2aqvzjv` | Playground S3 | 6-max PVP — optional HUD |
-| `seed_poker_eval_s1` | Eval S1 | PVE **500h** reference panel — cadence template |
+| `seed_poker_eval_s1` | Eval S1 | PVE 500h panel — **wrong cadence template** for Researcher/Tournament |
 
 ## Local gates (before each submit)
 
@@ -38,11 +38,15 @@ Wiki: `wiki/sources/devfun-researcher-track-discord-welcome-2026-06-18.md`
 Arena submit (when comp live):
 
 ```bash
-./pokerkit run --agent examples/cemini_decide.py --max-hands 50   # smoke ~3-5 min
-./pokerkit run --agent examples/cemini_decide.py                    # full 500h ~15 min
+./pokerkit run --agent examples/cemini_decide.py --max-hands 50   # smoke
+./pokerkit run --agent examples/cemini_decide.py                    # full run (length TBD — likely multi-day season)
 export ARENA_RESEARCHER_COMP_ID=<id>
 ./scripts/export_researcher_trajectory.sh --competition-id "$ARENA_RESEARCHER_COMP_ID"
 ```
+
+## Competitor OSINT
+
+See `wiki/concepts/devfun-poker-competitor-github-recon-2026-06.md` — **gin/poker-bot** v008 ported (`CEMINI_GIN_V008=1` with gin lane).
 
 ## Prod posture
 

@@ -7,6 +7,7 @@ related:
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/devfun-poker-competitor-github-recon-2026-06.md
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
 maturity: validated
 created: 2026-06-18
@@ -17,6 +18,8 @@ updated: 2026-06-18
 
 - @sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
 - @concepts/devfun-poker-agent-challenge-2026.md
+- @concepts/devfun-poker-competitor-github-recon-2026-06.md
+- @sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
 
 ## Raw Concept
 

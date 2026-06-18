@@ -20,7 +20,7 @@ echo "==> 6-max regression (full + HU smoke)"
 uv run pytest tests/test_cemini_regression.py tests/test_hu_regression.py -q --tb=line
 
 echo "==> 6-max selfplay gate (${HANDS} hands, cemini_decide vs tight)"
-CEMINI_GIN_STYLE=1 CEMINI_GIN_STYLE_PREFLOP=1 CEMINI_GIN_STYLE_POSTFLOP=1 \
+CEMINI_GIN_STYLE=1 CEMINI_GIN_STYLE_PREFLOP=1 CEMINI_GIN_STYLE_POSTFLOP=1 CEMINI_GIN_V008=1 \
   uv run python examples/selfplay.py \
   --agent examples/cemini_decide.py \
   --hands "$HANDS" \
@@ -47,5 +47,4 @@ fi
 
 echo ""
 echo "RESEARCHER SANDBOX GATE OK — bundle: ${BUNDLE_DIR}"
-echo "Arena submit: pokerkit run --max-hands 50 (smoke) then pokerkit run (500h default)"
-echo "Full match length assumed same as Eval S5 until Researcher skill contradicts."
+echo "Arena submit: pokerkit run --max-hands 50 (smoke); full season multi-day when Researcher comp live"

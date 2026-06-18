@@ -1328,7 +1328,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [The Mathematics of Heuristic Portfolio Optimization (2606.12612)](sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md) — `[DRAFT 2026-06-17]` K120: HPO optimality map + RLPO bridge; GRS diagnostics. — source, arxiv, k120
 - [WikiKV hierarchical path-indexed wiki storage (2606.14275)](sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md) — `[VALIDATED 2026-06-17]` K121: path-KV navigation; REFERENCE no OSS. — source, arxiv, k121
 - [dev.fun Poker Agent Challenge one-pager (2026-06)](sources/devfun-poker-agent-challenge-onepager-2026-06-18.md) — Researcher track invite; one-pager HU text vs 6-max sandbox assumption. — source, devfun, poker, k122
-- [dev.fun researcher-track Discord welcome (2026-06)](sources/devfun-researcher-track-discord-welcome-2026-06-18.md) — Researcher Round $30K / 50 seats; trajectory export; how-not-only-win eval. — source, devfun, poker, k122
+- [dev.fun Poker competitor GitHub recon (2026-06)](concepts/devfun-poker-competitor-github-recon-2026-06.md) — gin/poker-bot, kecodot, system7 public bots. — concept, devfun, osint, k122
 - [Poker Arena multi-axis eval (arXiv 2606.13815)](sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md) — Raeth/IIT Roorkee; memory ablation + nine-axis profile. — source, arxiv, poker, k122
 - [Strategic resource acquisition game theory](concepts/strategic-resource-acquisition-game-theory.md) — `[DRAFT 2026-06-09]` competitive execution overlay. — concept, k107
 - [Algorithmic auditing — covariance regret](concepts/algorithmic-auditing-covariance-regret.md) — `[DRAFT 2026-06-09]` external sequential audit metric. — concept, k107

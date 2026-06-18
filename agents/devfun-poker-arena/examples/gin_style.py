@@ -49,6 +49,29 @@ def gin_style_postflop_enabled() -> bool:
     return raw.strip().lower() in ("1", "true", "yes", "on")
 
 
+def gin_v008_preflop_enabled() -> bool:
+    """gin/poker-bot auto_research_v008 marginal defend + blind widen."""
+    explicit = os.environ.get("CEMINI_GIN_V008", "").strip().lower()
+    if explicit in ("0", "false", "no", "off"):
+        return False
+    if explicit in ("1", "true", "yes", "on"):
+        return True
+    return gin_style_preflop_enabled()
+
+
+# Ported from gin/poker-bot auto_research_v008 (2026-06 GitHub recon).
+PREFLOP_LOOSE_CALL_MIN_SCORE = 38
+PREFLOP_LOOSE_CALL_SCORE_THRESHOLD = 50
+PREFLOP_LOOSE_CALL_MAX_PRICE_IP = 0.28
+PREFLOP_LOOSE_CALL_MAX_PRICE_BB = 0.25
+PREFLOP_LOOSE_CALL_MAX_PRICE_OOP = 0.20
+PREFLOP_LOOSE_CALL_MAX_OPPONENTS = 3
+PREFLOP_DEFENSE_MIN_SCORE = 50
+PREFLOP_DEFENSE_MAX_PRICE: dict[str, float] = {"BB": 0.40, "SB": 0.24}
+PREFLOP_DEFENSE_MAX_STACK_FRACTION = 0.12
+PREFLOP_V008_MAX_STACK_FRACTION = 0.15
+
+
 def _gin_style_gate_open() -> bool:
     return os.environ.get("CEMINI_GIN_STYLE_GATE", "").strip().lower() in (
         "1", "true", "yes", "on",
@@ -377,6 +400,121 @@ def try_preflop(
     if "fold" in available:
         return "fold", None
     return None
+
+
+def _hero_hole_cards(table: dict) -> list[str]:
+    self_num = table.get("selfSeatNumber")
+    for seat in table.get("seats") or []:
+        if seat.get("seatNumber") == self_num:
+            return list(seat.get("holeCards") or [])
+    return []
+
+
+def _hero_stack_chips(table: dict) -> int:
+    self_num = table.get("selfSeatNumber")
+    for seat in table.get("seats") or []:
+        if seat.get("seatNumber") == self_num:
+            return int(seat.get("stackChips") or 0)
+    return 0
+
+
+def _loose_call_max_price(position: str) -> float:
+    if position in ("BTN", "CO"):
+        return PREFLOP_LOOSE_CALL_MAX_PRICE_IP
+    if position == "BB":
+        return PREFLOP_LOOSE_CALL_MAX_PRICE_BB
+    return PREFLOP_LOOSE_CALL_MAX_PRICE_OOP
+
+
+def try_preflop_loose_call(
+    table: dict,
+    allowed: dict,
+    available: list[str],
+    hole: list[str],
+    position: str,
+) -> Optional[ActionPair]:
+    """Marginal score 38–49: call when pot odds within position cap (gin v008)."""
+    call_amount = _call_chips(allowed)
+    if call_amount <= 0 or "call" not in available:
+        return None
+
+    score = preflop_score(hole)
+    if (
+        score < PREFLOP_LOOSE_CALL_MIN_SCORE
+        or score >= PREFLOP_LOOSE_CALL_SCORE_THRESHOLD
+    ):
+        return None
+
+    if active_opponents(table) > PREFLOP_LOOSE_CALL_MAX_OPPONENTS:
+        return None
+
+    pot = int(table.get("potChips") or 0)
+    required = pot_odds(call_amount, pot)
+    max_price = _loose_call_max_price(position)
+    if required > max_price:
+        return None
+
+    stack = _hero_stack_chips(table)
+    if stack > 0 and call_amount > stack * PREFLOP_V008_MAX_STACK_FRACTION:
+        return None
+
+    return "call", call_amount
+
+
+def try_preflop_blind_defense(
+    table: dict,
+    allowed: dict,
+    available: list[str],
+    hole: list[str],
+    position: str,
+) -> Optional[ActionPair]:
+    """BB/SB defend wider vs full-ring fold threshold (gin v008 telemetry fix)."""
+    max_price = PREFLOP_DEFENSE_MAX_PRICE.get(position)
+    if max_price is None:
+        return None
+
+    call_amount = _call_chips(allowed)
+    if call_amount <= 0 or "call" not in available:
+        return None
+
+    score = preflop_score(hole)
+    if score < PREFLOP_DEFENSE_MIN_SCORE:
+        return None
+
+    pot = int(table.get("potChips") or 0)
+    required = pot_odds(call_amount, pot)
+    if required > max_price:
+        return None
+
+    stack = _hero_stack_chips(table)
+    if stack > 0 and call_amount > stack * PREFLOP_DEFENSE_MAX_STACK_FRACTION:
+        return None
+
+    return "call", call_amount
+
+
+def try_preflop_v008_rescue(
+    table: dict,
+    allowed: dict,
+    available: list[str],
+    hole: list[str],
+    position: str,
+    proposed_action: str,
+    *,
+    lane_tight: bool = False,
+) -> Optional[ActionPair]:
+    """Intercept chart/gin folds with gin v008 loose-call + blind-defense layers."""
+    if not gin_v008_preflop_enabled() or lane_tight:
+        return None
+    if proposed_action != "fold":
+        return None
+    if not hole:
+        hole = _hero_hole_cards(table)
+
+    loose = try_preflop_loose_call(table, allowed, available, hole, position)
+    if loose is not None:
+        return loose
+    return try_preflop_blind_defense(table, allowed, available, hole, position)
 
 
 def try_postflop_free(

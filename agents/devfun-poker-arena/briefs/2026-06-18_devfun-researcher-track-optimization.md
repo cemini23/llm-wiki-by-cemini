@@ -6,7 +6,7 @@ Operator: **cemini_wiki_poker** — **Researcher Round** (50 invited seats, $30K
 
 ## Summary
 
-Optimize for **Researcher Round** sandbox LB: **6-max NLHE** (operator assumption — same engine family as Playground/Eval), trajectory + multi-axis eval, not only bb/100. **Jun 21** closed beta · **Jun 25** public · Early July finale. Assume **500-hand** benchmark matches and **pokerkit run** submit cadence like Eval S5 until skill file contradicts. PR: fixed engine + base LLM — compete on poker skill layer.
+Optimize for **Researcher Round** sandbox LB: **6-max NLHE**, trajectory + multi-axis eval. **Multi-day** season grind (not 500h Eval). **Jun 21** beta. PR: fixed engine + base LLM.
 
 ## Body
 
@@ -23,8 +23,8 @@ Optimize for **Researcher Round** sandbox LB: **6-max NLHE** (operator assumptio
 | Item | Posture |
 |------|---------|
 | **Table size** | **6-max** — not HU-only (one-pager HU may be finale/publish wording) |
-| **Match length** | **500 hands** full benchmark (Eval S5); `--max-hands 50` for smoke |
-| **Submit cadence** | Same as poker-eval — `pokerkit run`, resume on rerun, iterative submits |
+| **Match length** | **Multi-day** season (Playground/Tournament style) — not Eval 500h; TBD |
+| **Submit cadence** | Same as existing poker comps (`pokerkit run` / lobby loop) |
 | **Engine / LLM** | Fixed per PR [CONFIRMED per PR] — policy `decide()` only until skill contradicts |
 
 ### Prize / status

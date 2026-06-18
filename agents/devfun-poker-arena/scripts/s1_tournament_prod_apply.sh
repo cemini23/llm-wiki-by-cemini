@@ -90,6 +90,7 @@ set_kv CEMINI_GIN_STYLE 1
 set_kv CEMINI_GIN_STYLE_PREFLOP 1
 set_kv CEMINI_GIN_STYLE_POSTFLOP 1
 set_kv CEMINI_GIN_STYLE_GATE 1
+set_kv CEMINI_GIN_V008 1
 # Single-table API: S1-only lobby until tournament ends (~Jun 14–15).
 if grep -q '^CEMINI_DUAL_LOBBY_COMP=' .env 2>/dev/null; then
   sed -i.bak '/^CEMINI_DUAL_LOBBY_COMP=/d' .env

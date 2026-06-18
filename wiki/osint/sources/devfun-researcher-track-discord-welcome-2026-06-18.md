@@ -7,6 +7,7 @@ related:
   - concepts/devfun-poker-agent-challenge-2026.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - entities/platforms/devfun-arena.md
+  - concepts/devfun-poker-competitor-github-recon-2026-06.md
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
 maturity: validated
 read_status: read
@@ -20,7 +21,8 @@ clusters: [prediction-markets, llm-agents]
 - @concepts/devfun-poker-agent-challenge-2026.md
 - @sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
 - @entities/platforms/devfun-arena.md
-- @sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md — multi-axis eval aligns with “how agents play” framing
+- @concepts/devfun-poker-competitor-github-recon-2026-06.md — public competitor repos (gin/poker-bot, kecodot, system7)
+- @sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
 
 ## Raw Concept
 
@@ -56,8 +58,8 @@ One-pager shared again in-channel (see `@sources/devfun-poker-agent-challenge-on
 | Item | Working assumption |
 |------|-------------------|
 | Table size | **6-max** (like Playground / Eval), not HU-only |
-| Match length | **500 hands** default benchmark (Eval S5 pattern) until skill contradicts |
-| Submit cadence | Same as poker-eval — `pokerkit run`, resume supported, iterative submits |
+| Match length | **Multi-day** continuous season (like Playground/Tournament) — **not** Eval 500h; official params not posted |
+| Submit cadence | Same arena loop as existing poker comps until skill contradicts |
 | Fixed engine + LLM | Accept PR wording [CONFIRMED per PR] until sandbox skill contradicts |
 
 ## Snippets

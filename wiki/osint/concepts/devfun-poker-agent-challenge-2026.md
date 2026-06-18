@@ -4,6 +4,7 @@ type: concept
 tags: [concept, poker, devfun, six-max, agent-eval, researcher-track]
 keywords: [poker agent challenge, researcher track, BenchFlow, 6-max, Tom Dwan, session memory, trajectory]
 related:
+  - concepts/devfun-poker-competitor-github-recon-2026-06.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - entities/platforms/devfun-arena.md
@@ -20,6 +21,7 @@ updated: 2026-06-18
 - @sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
 - @sources/devfun-researcher-track-discord-welcome-2026-06-18.md — official channel welcome (Researcher Round)
 - @sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md — multi-axis eval + memory ablation (Raeth)
+- @concepts/devfun-poker-competitor-github-recon-2026-06.md
 - @gambling-wiki/concepts/poker-hl-analyst-loop.md — HL loop for live leak patches (shared methodology)
 
 ## Raw Concept
@@ -35,8 +37,8 @@ Cemini was accepted into the **dev.fun researcher track** (invite-only sandbox, 
 | Format | 6-max NLHE PVP lobby | **6-max NLHE** sandbox benchmark [TENTATIVE — operator; one-pager text says HU for publish/finale framing] |
 | Goal | Season chip grind / qual | Sandbox LB + trajectory contribution + **publish as champion bot** |
 | Eval | Live lobby + HL analyze | **Sandbox submit** → scored benchmark match |
-| Match length | Continuous bankroll | **Assume 500-hand** benchmark like Eval S5 until skill file contradicts [TENTATIVE] |
-| Submit cadence | Lobby poll loop | **Same as poker-eval** — `pokerkit run` / `benchmark/start`, resume on rerun [TENTATIVE] |
+| Match length | Continuous multi-day grind | Same — **not** 500-hand Eval; details TBD [operator 2026-06-18] |
+| Submit cadence | Lobby poll loop | Same client loop as Playground until skill file says otherwise |
 | Timeline | Season-long | **Jun 21** beta · **Jun 25** public · **Early Jul** finale |
 | Our rank | ~103 / 3450 chips (Jun 18) | Separate LB · **50 seats** invited |
 
@@ -73,7 +75,7 @@ Three-layer memory + nine-axis cognitive profile vs scalar chips. Cemini ships *
 
 ### Optimization pillars (operator order)
 
-1. **Sandbox readiness (P0, Jun 21)** — pin `competitionId`; `pokerkit run --max-hands 50` smoke then full **500-hand** match; full **6-max regression** green.
+1. **Sandbox readiness (P0, Jun 21)** — pin `competitionId`; smoke `pokerkit run --max-hands 50`; plan for **multi-day** season stamina (not 500h eval); full **6-max regression** green.
 2. **6-max policy** — continue HL loop on Playground intel + regression gates; no HU-only fork unless skill file mandates HU.
 3. **Memory** — extend F6; align with Raeth ablation lessons.
 4. **Trajectory discipline** — `export_researcher_trajectory.sh` after every benchmark run; post axis proxies in channel.
@@ -85,7 +87,7 @@ Three-layer memory + nine-axis cognitive profile vs scalar chips. Cemini ships *
 | When | Deliverable |
 |------|-------------|
 | **Jun 18–20** | Wiki posture; 6-max gate; API recon |
-| **Jun 21** | Closed beta — first **500-hand** sandbox submit |
+| **Jun 21** | Closed beta — first sandbox submit (duration TBD; plan for **multi-day** season not 500h eval) |
 | **Jun 25** | Public — iterative `pokerkit run` submits |
 | **Early Jul** | Finale qual via LB (table format TBD — may differ from sandbox) |
 

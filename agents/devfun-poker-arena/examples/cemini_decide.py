@@ -20,7 +20,13 @@ from pathlib import Path
 from typing import Any, Optional
 
 from blind_pressure import lead_blind_steal, placement_chase_steal
-from gin_style import gin_style_postflop_enabled, gin_style_preflop_enabled, try_postflop_free, try_preflop
+from gin_style import (
+    gin_style_postflop_enabled,
+    gin_style_preflop_enabled,
+    try_postflop_free,
+    try_preflop,
+    try_preflop_v008_rescue,
+)
 
 _EXAMPLES = Path(__file__).resolve().parent
 if str(_EXAMPLES) not in sys.path:
@@ -133,6 +139,37 @@ def _nemesis_tight_enabled() -> bool:
 def _survival_mode(self_seat: dict) -> bool:
     stack = int(self_seat.get("stackChips") or 99999)
     return stack < _survival_stack_threshold()
+
+
+def _hole_cards_from_table(table: Optional[dict]) -> list[str]:
+    if not table:
+        return []
+    self_num = table.get("selfSeatNumber")
+    for seat in table.get("seats") or []:
+        if seat.get("seatNumber") == self_num:
+            return list(seat.get("holeCards") or [])
+    return []
+
+
+def _apply_v008_preflop_rescue(
+    action: str,
+    amount: Optional[int],
+    table: dict,
+    allowed: dict,
+    available: list,
+    hole: list[str],
+    position: str,
+    *,
+    lane_tight: bool = False,
+) -> tuple[str, Optional[int]]:
+    """gin v008 marginal call / blind defend when chart path would fold."""
+    rescue = try_preflop_v008_rescue(
+        table, allowed, available, hole, position, action, lane_tight=lane_tight,
+    )
+    if rescue is None:
+        return action, amount
+    act, amt = rescue
+    return act, amt if act == "call" else None
 
 
 def _merge_margins(base: dict, *extras: dict) -> dict:
@@ -930,6 +967,11 @@ def decide(
         )
         if gin_pair is not None:
             g_act, g_amt = gin_pair
+            if g_act == "fold" and call_chips > 0:
+                g_act, g_amt = _apply_v008_preflop_rescue(
+                    g_act, g_amt, table, allowed, available, hole, position,
+                    lane_tight=lane_tight,
+                )
             if g_act in ("fold", "check", "call"):
                 g_amt = None
             from gin_style import preflop_score as _gin_score  # noqa: WPS433
@@ -1704,12 +1746,18 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
 
     if ps_library and ps_bias == "fold" and "fold" in available:
         if _should_fold_weak_preflop(hc, equity, pot_odds) or equity < pot_odds + 0.04:
-            return "fold", None
+            return _apply_v008_preflop_rescue(
+                "fold", None, table, allowed, available,
+                _hole_cards_from_table(table), position, lane_tight=lane_tight,
+            )
     if ps_library and ps_bias == "call" and equity >= pot_odds and "call" in available:
         return "call", None
 
     if _should_fold_weak_preflop(hc, equity, pot_odds) and "fold" in available:
-        return "fold", None
+        return _apply_v008_preflop_rescue(
+            "fold", None, table, allowed, available,
+            _hole_cards_from_table(table), position, lane_tight=lane_tight,
+        )
     # EP facing raise: strict chart — no wide defends (MP/UTG VPIP leak).
     if (position in ("UTG", "MP") and suggested == "fold"
             and hc not in {"AA", "KK", "QQ", "JJ", "AKs", "AKo"}
@@ -1755,8 +1803,17 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     if equity >= pot_odds + call_margin and "call" in available:
         return "call", None
     if equity < pot_odds - fold_margin and "fold" in available:
-        return "fold", None
-    return ("call" if "call" in available else "fold"), None
+        return _apply_v008_preflop_rescue(
+            "fold", None, table, allowed, available,
+            _hole_cards_from_table(table), position, lane_tight=lane_tight,
+        )
+    final = ("call" if "call" in available else "fold"), None
+    if final[0] == "fold":
+        return _apply_v008_preflop_rescue(
+            final[0], final[1], table, allowed, available,
+            _hole_cards_from_table(table), position, lane_tight=lane_tight,
+        )
+    return final
 
 
 def _should_fold_weak_preflop(hc: str, equity: float, pot_odds: float) -> bool:
