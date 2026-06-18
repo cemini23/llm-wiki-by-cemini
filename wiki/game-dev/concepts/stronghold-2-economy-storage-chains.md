@@ -6,12 +6,17 @@ keywords: [stockpile, granary, armoury, market, production-chain]
 related:
   - concepts/stronghold-2-popularity-model.md
   - concepts/stronghold-2-crime-punishment-loop.md
+  - concepts/stronghold-2-estates-system.md
   - concepts/stronghold-2-systems-inventory.md
   - sources/stronghold-2-heaven-targeted-2026-06-13.md
+  - concepts/stronghold-2-kingmaker-strategy.md
+  - sources/sh2-heaven-kingmaker-strategy-2026-06-17.md
+  - concepts/stronghold-2-production-buildings.md
+  - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
   - concepts/stronghold-2-github-ecosystem-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-18
 ---
 
 ## Relations

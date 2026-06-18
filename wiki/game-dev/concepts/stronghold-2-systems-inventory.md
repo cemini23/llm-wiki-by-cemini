@@ -19,13 +19,37 @@ related:
   - sources/stronghold-2-heaven-gameinfo-2026-06-13.md
   - sources/stronghold-2-heaven-targeted-2026-06-13.md
   - sources/github-stronghold-2-scan-2026-06-13.md
+  - entities/tools/sh2-mp-ai-enabler.md
   - sources/mobygames-stronghold-2-2026-06-13.md
   - concepts/godot-3d-sh2-architect-spike-plan.md
   - concepts/stronghold-2-github-ecosystem-shelf.md
+  - concepts/stronghold-2-kingmaker-strategy.md
+  - concepts/stronghold-2-siege-warfare.md
+  - concepts/stronghold-2-estates-system.md
+  - sources/sh2-exa-youtube-deep-research-2026-06-17.md
+  - sources/sh2-heaven-kingmaker-strategy-2026-06-17.md
+  - sources/gamespot-stronghold-2-qanda-2004.md
+  - sources/gamespot-stronghold-2-honor-sieges-2004.md
+  - sources/gamespy-stronghold-2-siege-dev-diary-2005.md
+  - sources/firefly-sh2-production-interview-youtube-2026-06-17.md
+  - concepts/stronghold-2-ai-lords.md
+  - concepts/stronghold-2-campaign-economy-curriculum.md
+  - concepts/stronghold-2-military-units.md
+  - sources/sh2-heaven-military-units-2026-06-17.md
+  - sources/sh2-heaven-campaign-walkthroughs-2026-06-17.md
+  - sources/sh2-heaven-pow-missions-2026-06-18.md
+  - sources/sh2-heaven-castle-structures-2026-06-18.md
+  - sources/sh2-heaven-kingmaker-ranks-2026-06-18.md
+  - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
+  - concepts/stronghold-2-production-buildings.md
+  - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
+  - sources/sh2-nation-fandom-ai-lords-2026-06-18.md
+  - concepts/stronghold-2-castle-structures.md
+  - sources/sh2-youtube-parity-watchlist-2026-06-17.md
   - entities/tools/stronghold2-mp-ai-patch.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-18
 ---
 
 ## Relations
@@ -37,7 +61,10 @@ updated: 2026-06-15
 - @concepts/stronghold-2-economy-storage-chains.md — **storage + production graph**
 - @concepts/stronghold-2-architect-controls.md — **Space / camera for Fork B**
 - @concepts/stronghold-2-github-ecosystem-shelf.md — **GitHub patches, trainers, S2M tools**
-- @sources/gamespy-stronghold-2-bradbury-qa-2004.md — siege/wall design intent
+- @concepts/stronghold-2-kingmaker-strategy.md — **opening builds, tax/pop automation**
+- @concepts/stronghold-2-siege-warfare.md — **siege attack/defense roster**
+- @concepts/stronghold-2-estates-system.md — **multi-estate carter logistics**
+- @sources/sh2-exa-youtube-deep-research-2026-06-17.md — **2026-06-17 deep research batch**
 
 ## Raw Concept
 
@@ -168,7 +195,7 @@ Notable SH2-only or emphasized vs SH1:
 - **Estates** (map-level, not a building tab)
 - Traps: man trap, killing pit, pitch ditch, brazier, rolling logs, moat, tunnel
 
-Industry + castle services costs → @concepts/stronghold-2-economy-storage-chains.md + crime doc. Military unit stats → deferred Phase D [NEEDS VERIFICATION 2026-06-20].
+Industry + castle services costs → @concepts/stronghold-2-production-buildings.md + @concepts/stronghold-2-economy-storage-chains.md + crime doc. Military/siege stats → @concepts/stronghold-2-military-units.md; tactics → @concepts/stronghold-2-siege-warfare.md. Walls/towers → @concepts/stronghold-2-castle-structures.md. Campaign tutorial order → @concepts/stronghold-2-campaign-economy-curriculum.md. Kingmaker AI → @concepts/stronghold-2-ai-lords.md (Nation/Fandom pass).
 
 ### Military & siege (overview)
 
@@ -205,8 +232,8 @@ Base roster + Deluxe adds **The Queen, The Pontifex, Sir Grey** [CONFIRMED — M
 | Food chains (4+ types) | Wood only | Phase B |
 | Gong/falconer | — | Phase C |
 | Feasts/joust/dance | — | Phase C |
-| Estates | — | Phase E |
-| Siege roster | Archer v0 | Phase D–E |
+| Estates | — | Phase E — @concepts/stronghold-2-estates-system.md |
+| Siege roster | Archer v0 | Phase D–E — see @concepts/stronghold-2-siege-warfare.md |
 | No wall-hacking | N/A (grid walls) | Phase D siege |
 | Lord avatar combat | — | Phase E optional |
 

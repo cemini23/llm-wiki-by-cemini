@@ -5,6 +5,7 @@ tags: [concept, scope, stronghold-2, operator, vision]
 keywords: [stronghold-2, personal, clone, scope, north-star]
 related:
   - concepts/stronghold-2-systems-inventory.md
+  - sources/gamespot-stronghold-2-qanda-2004.md
   - concepts/scope-tiers.md
   - concepts/vertical-slice-v0.md
   - entities/projects/castle-sim.md
@@ -17,9 +18,14 @@ related:
   - entities/tools/stronghold2-analyse-hub.md
   - entities/tools/stronghold2-mp-ai-patch.md
   - sources/stronghold-2-heaven-gameinfo-2026-06-13.md
+  - sources/sh2-youtube-parity-watchlist-2026-06-17.md
+  - concepts/stronghold-2-mod-ecosystem-shelf.md
+  - sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
+  - entities/tools/sh2-mp-ai-enabler.md
+  - concepts/stronghold-2-visual-qol-presets.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -67,7 +73,13 @@ First gate: `briefs/story-005-3d-architect-spike.md` → @concepts/godot-3d-sh2-
 
 ### Mac reference play (while building)
 
-**Stronghold 2: Steam Edition** has no native Mac build. **CrossOver 24+** — community rating “Runs Great”; install Windows Steam in bottle; launch `Stronghold2.exe` if Firefly launcher fails. Use for side-by-side UX reference, not asset extraction.
+**Operator decision (2026-06-17):** No CrossOver purchase; no paid compatibility layer. Reference stack:
+
+1. **YouTube parity watchlist** — `castle-sim/docs/playtest/sh2-youtube-parity-watchlist.md` (story-030 closed)
+2. **SH2 Heaven** + wiki concept pages (popularity, crime, architect controls)
+3. **Optional free retail** — CrossOver trial, Whisky, friend's Windows PC — see `briefs/sh2-retail-setup.md` "skip retail"
+
+Do not block clone work on retail install.
 
 ### Phase ladder (Kingmaker-aligned, after M0.3D PROCEED)
 
@@ -89,6 +101,20 @@ Each phase should be **playable alone** — clone Crusader/SH2 scope only at the
 3. @sources/gamespy-stronghold-2-bradbury-qa-2004.md — siege/wall design
 4. @sources/simon-bradbury-stronghold-heaven-sh3-2011.md — what fans rejected (scope caution)
 5. MobyGames / Firefly press sheet — modes and feature list
+6. @sources/sh2-youtube-parity-watchlist-2026-06-17.md — story-030 YouTube parity (closed)
+7. @sources/sh2-exa-youtube-deep-research-2026-06-17.md — strategy/siege/estates batch
+
+### Playtest gap rank (YouTube path, 2026-06-17)
+
+From `briefs/research/sh2-playsession-checklist.md` — tags `[OBSERVED-YT]` unless noted:
+
+| Rank | Gap vs castle-sim | Notes |
+|------|-------------------|-------|
+| 1 | 8-category popularity + advisor voice | HUD tour *UaSfyPXD4i8*; rising/falling voice *cEXhEXHypzo* |
+| 2 | Tax office before taxing; market income | *bsfB7Fnay3c* |
+| 3 | Architect wall-hide + zoom handoff | Spacebar friction *UaSfyPXD4i8* |
+| 4 | Ox cart / tether haul loop | *7xxSQypdKu8*, *baK1Kiib7gY* |
+| 5 | Crime alert + stocks default | "Peasant gone bad" *cEXhEXHypzo* |
 
 ### Wiki / repo routing
 

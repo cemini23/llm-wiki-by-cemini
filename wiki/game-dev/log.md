@@ -4,6 +4,58 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-18] ingest | SH2 buildings + castle-sim LordProfile stub
+
+- Heaven industry/farm/civilian/cservices/military1 → @sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md, @concepts/stronghold-2-production-buildings.md
+- castle-sim: `data/sh2/lord_profiles.json`, `LordProfile`, `LordAIDirector3D`, unit tests
+
+---
+
+## [2026-06-18] ingest | SH2 second pass — PoW, structures, ranks, AI lords
+
+- PoW: 19-mission roster scraped from Heaven walkthrough index → @sources/sh2-heaven-pow-missions-2026-06-18.md
+- Castle: gatehouses/towers/walls from `cstructures1–3` → @sources/sh2-heaven-castle-structures-2026-06-18.md, @concepts/stronghold-2-castle-structures.md
+- Kingmaker: full rank unlock table (Merepatra) → @sources/sh2-heaven-kingmaker-ranks-2026-06-18.md
+- AI lords: Nation + Fandom batch → @sources/sh2-nation-fandom-ai-lords-2026-06-18.md; @concepts/stronghold-2-ai-lords.md promoted to validated
+
+---
+
+## [2026-06-17] ingest | SH2 Heaven military + campaign walkthrough follow-up
+
+- Military: units1–5 + siege1–5 → @sources/sh2-heaven-military-units-2026-06-17.md, @concepts/stronghold-2-military-units.md
+- Campaign: PoP mission list + walkthrough economy beats → @sources/sh2-heaven-campaign-walkthroughs-2026-06-17.md, @concepts/stronghold-2-campaign-economy-curriculum.md
+- AI lords: Edwin, Sir Grey, Olaf (+ forum sketches) → @concepts/stronghold-2-ai-lords.md
+- @sources/stronghold-2-heaven-gameinfo-2026-06-13.md follow-up queue updated
+
+---
+
+## [2026-06-17] ingest | SH2 deep research — Exa + Heaven + YouTube dev interviews
+
+- Exa batch: GameSpot Q&A + honor preview, GameSpy siege dev diary, Kingmaker tips, Fandom AI notes
+- YouTube transcripts: Paul Harris SH2/Legends production (Jo5pwX9RQIc), Bradbury Stronghold Sessions (m5CI9ch7b0U), Firefly MP UX (baK1Kiib7gY)
+- New concepts: @concepts/stronghold-2-kingmaker-strategy.md, @concepts/stronghold-2-siege-warfare.md, @concepts/stronghold-2-estates-system.md
+- New sources: @sources/sh2-exa-youtube-deep-research-2026-06-17.md (+ 5 child source pages)
+- @concepts/stronghold-2-systems-inventory.md — cross-links; military deferred → siege concept
+
+---
+
+## [2026-06-17] decision | SH2 retail skipped — zero spend
+
+- Operator: no CrossOver purchase; story-030 **closed** on YouTube path
+- @sources/sh2-youtube-parity-watchlist-2026-06-17.md remains primary UX reference
+- @concepts/operator-vision-sh2-personal-clone.md — Mac reference stack updated (wiki + YT, not paid bottle)
+
+---
+
+## [2026-06-17] ingest | SH2 YouTube parity watchlist (story-030)
+
+- 7 videos from `castle-sim/docs/playtest/sh2-youtube-parity-watchlist.md` — transcripts via `youtube-transcript-api`
+- New: @sources/sh2-youtube-parity-watchlist-2026-06-17.md
+- Operator brief filled: `briefs/research/sh2-playsession-checklist.md` — `[OBSERVED-YT]` tags, top-5 gap rank
+- @concepts/operator-vision-sh2-personal-clone.md — playtest gap table (YouTube path)
+
+---
+
 ## [2026-06-17] research | Godot castle-sim tool gap shelf + operator brief
 
 - Code audit: monolithic `Game3DController`, CLI-only tests, Stagehand on 2D spike, CSG art, grid A*
@@ -32,7 +84,24 @@ Append-only chronological log.
 
 ---
 
-## [2026-06-13] research | GitHub Stronghold 2 ecosystem scan
+## [2026-06-18] research | Visual QoL + Nevikov balance follow-up
+
+- Visual mods promoted to Tier A′ QoL (HD, ENB, Matteele, Winter, Pixel)
+- Scraped Nevikov New Balance Google Sheet (Crusader crossover — not Matteele SH2 stats)
+- New: @concepts/stronghold-2-visual-qol-presets.md, @sources/sh2-nevikov-new-balance-sheet-2026-06-18.md
+- castle-sim: `data/sh2/graphics_presets.json`, `balance_presets.json` + loaders + unit tests
+
+---
+
+
+- Scanned ModDB/Nexus/YouTube/Stronghold Nation + refreshed GitHub star list
+- Finding: **no SH2 balance patch**; QoL = MP AI enabler, Lord Editor, spear fix, debug overlay
+- New: @concepts/stronghold-2-mod-ecosystem-shelf.md, @sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
+- New entities: @entities/tools/sh2-mp-ai-enabler.md, @entities/tools/sh2-community-lord-editor.md
+- castle-sim QoL backlog: co-op vs AI, sim speed slider, fixed King/Hawk weapons, debug overlay
+
+---
+
 
 - Swept GitHub for SH2 patches, trainers, S2M tools; no Crusader-scale UCP equivalent
 - MIT adopt: MP-AI patch (Jpnock), AnalyseHub (crycodebaby); entity pages added

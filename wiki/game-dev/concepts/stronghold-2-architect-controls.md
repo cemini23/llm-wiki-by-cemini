@@ -4,15 +4,17 @@ type: concept
 tags: [concept, stronghold-2, ux, 3d, controls]
 keywords: [architect-view, spacebar, camera, hotkeys, godot-spike]
 related:
+  - concepts/stronghold-2-castle-structures.md
   - concepts/godot-3d-sh2-architect-spike-plan.md
   - concepts/operator-vision-sh2-personal-clone.md
   - sources/gamespy-stronghold-2-bradbury-qa-2004.md
   - sources/stronghold-2-heaven-targeted-2026-06-13.md
+  - sources/sh2-youtube-parity-watchlist-2026-06-17.md
   - concepts/stronghold-2-systems-inventory.md
   - entities/tools/stronghold2-analyse-hub.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-17
 ---
 
 ## Relations
@@ -68,13 +70,11 @@ Non-goals for spike: estate cycling, bookmark keys, full jump-to-building hotkey
 
 ### Play-session capture prompts
 
-While running retail SH2 (CrossOver + Steam Edition):
+YouTube parity path filled 2026-06-17 — see @sources/sh2-youtube-parity-watchlist-2026-06-17.md:
 
-- [ ] Does architect mode feel **instant** or animated?
-- [ ] Wall **paint drag** — click chain vs segment queue?
-- [ ] Popularity panel — all **8 rows** visible at once?
-- [ ] Monthly tick — audible/visual cue?
-- [ ] Crime noose — how far do guards chase from granary post?
+- [x] Architect toggle — **instant cut**, walls hidden in overhead mode; **zoom resets** on toggle `[OBSERVED-YT]` *UaSfyPXD4i8*
+- [x] Wall placement — segment/gatehouse clicks, not drag paint `[OBSERVED-YT]` *cEXhEXHypzo*
+- [ ] Retail-only: gap highlight material, exact zoom limits
 
 Log answers in `briefs/research/sh2-playsession-checklist.md`.
 

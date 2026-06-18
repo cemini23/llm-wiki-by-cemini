@@ -8,9 +8,14 @@ related:
   - concepts/stronghold-2-systems-inventory.md
   - concepts/stronghold-2-economy-storage-chains.md
   - sources/stronghold-2-heaven-targeted-2026-06-13.md
+  - concepts/stronghold-2-campaign-economy-curriculum.md
+  - concepts/stronghold-2-systems-inventory.md
+  - sources/sh2-youtube-parity-watchlist-2026-06-17.md
+  - concepts/stronghold-2-production-buildings.md
+  - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-17
 ---
 
 ## Relations

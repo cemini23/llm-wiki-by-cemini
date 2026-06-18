@@ -12,8 +12,12 @@ related:
   - concepts/godot-3d-sh2-architect-spike-plan.md
   - concepts/stronghold-2-architect-controls.md
   - concepts/stronghold-2-systems-inventory.md
-  - sources/firefly-about-us-studio-history.md
+  - concepts/stronghold-2-siege-warfare.md
+  - sources/gamespy-stronghold-2-siege-dev-diary-2005.md
   - sources/firefly-making-of-stronghold-legends-2018.md
+  - sources/firefly-about-us-studio-history.md
+  - sources/gamespot-stronghold-2-qanda-2004.md
+  - sources/firefly-sh2-production-interview-youtube-2026-06-17.md
 read_status: read
 source_type: interview
 source_url: http://pc.gamespy.com/pc/stronghold-2/570447p1.html

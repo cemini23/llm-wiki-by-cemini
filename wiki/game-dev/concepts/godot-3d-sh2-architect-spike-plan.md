@@ -6,6 +6,7 @@ keywords: [godot-3d, architect-camera, wall-build, navigation-region3d]
 related:
   - concepts/operator-vision-sh2-personal-clone.md
   - concepts/stronghold-2-systems-inventory.md
+  - concepts/stronghold-2-castle-structures.md
   - concepts/stronghold-2-architect-controls.md
   - entities/engines/godot-4.md
   - entities/projects/castle-sim.md
@@ -32,7 +33,7 @@ Phase-0 **3D presentation spike** for personal SH2 clone: Godot 4 **3D** with **
 
 Operator would buy SH2 on Mac if 2D were enough — **3D castle building and tower sightlines are the product**. A 2D fork duplicates neither SH2 nor the motivation to build a personal clone.
 
-**Reference play on Mac:** no native Apple Silicon port. **Stronghold 2: Steam Edition** runs on Mac via **CrossOver** (rated “Runs Great” on recent CrossOver 24.x) — Windows Steam bottle, sometimes launch `Stronghold2.exe` directly if launcher fails. Use for UX reference while building Godot clone.
+**Reference play on Mac:** no native port. **Operator: zero spend** — use YouTube parity ingest (@sources/sh2-youtube-parity-watchlist-2026-06-17.md) + SH2 Heaven; optional free retail only (Whisky / CrossOver trial / friend's PC). Godot clone does not require running retail SH2.
 
 ### What to salvage from current `castle-sim` (2D)
 

@@ -14,6 +14,7 @@ related:
   - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
   - sources/firefly-about-us-studio-history.md
   - sources/firefly-making-of-stronghold-legends-2018.md
+  - sources/firefly-sh2-production-interview-youtube-2026-06-17.md
   - entities/tools/unofficial-crusader-patch2.md
   - concepts/stronghold-modding-ecosystem-shelf.md
   - concepts/operator-vision-sh2-personal-clone.md

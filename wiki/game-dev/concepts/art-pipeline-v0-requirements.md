@@ -11,6 +11,8 @@ related:
   - entities/tools/gamedev-resources.md
   - sources/gamedev-resources-phase-0-audit-2026-06-13.md
   - sources/tool-evaluation-cross-wiki-routing-2026-06-13.md
+  - concepts/stronghold-2-mod-ecosystem-shelf.md
+  - concepts/stronghold-2-visual-qol-presets.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: draft
 created: 2026-06-13

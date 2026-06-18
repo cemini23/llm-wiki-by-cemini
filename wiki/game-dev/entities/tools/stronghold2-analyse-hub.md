@@ -8,6 +8,8 @@ related:
   - concepts/stronghold-2-architect-controls.md
   - concepts/operator-vision-sh2-personal-clone.md
   - sources/github-stronghold-2-scan-2026-06-13.md
+  - concepts/stronghold-2-mod-ecosystem-shelf.md
+  - sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
   - sources/stronghold2-analyse-hub-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13

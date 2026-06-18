@@ -9,9 +9,14 @@ related:
   - concepts/stronghold-2-economy-storage-chains.md
   - concepts/operator-vision-sh2-personal-clone.md
   - sources/stronghold-2-heaven-targeted-2026-06-13.md
+  - sources/sh2-youtube-parity-watchlist-2026-06-17.md
+  - concepts/stronghold-2-kingmaker-strategy.md
+  - concepts/stronghold-2-campaign-economy-curriculum.md
+  - sources/sh2-heaven-kingmaker-strategy-2026-06-17.md
+  - sources/gamespot-stronghold-2-qanda-2004.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-17
 ---
 
 ## Relations

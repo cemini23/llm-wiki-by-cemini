@@ -7,6 +7,8 @@ related:
   - entities/games/stronghold-series.md
   - entities/tools/unofficial-crusader-patch2.md
   - concepts/stronghold-2-github-ecosystem-shelf.md
+  - concepts/stronghold-2-mod-ecosystem-shelf.md
+  - sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
   - concepts/stronghold-systems-inventory.md
   - concepts/rts-siege-ai-reference.md
   - sources/tool-evaluation-cross-wiki-routing-2026-06-13.md

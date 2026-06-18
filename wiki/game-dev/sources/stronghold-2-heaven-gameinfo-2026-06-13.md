@@ -5,15 +5,27 @@ tags: [source, stronghold-2, community, wiki]
 keywords: [stronghold-2-heaven, honour, kingmaker, popularity]
 related:
   - concepts/stronghold-2-systems-inventory.md
+  - concepts/stronghold-2-kingmaker-strategy.md
+  - concepts/stronghold-2-military-units.md
   - concepts/operator-vision-sh2-personal-clone.md
   - entities/games/stronghold-series.md
   - sources/stronghold-2-heaven-targeted-2026-06-13.md
+  - sources/sh2-heaven-military-units-2026-06-17.md
+  - sources/sh2-nation-fandom-ai-lords-2026-06-18.md
+  - sources/sh2-heaven-kingmaker-ranks-2026-06-18.md
+  - sources/sh2-heaven-pow-missions-2026-06-18.md
+  - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
+  - sources/sh2-heaven-castle-structures-2026-06-18.md
+  - concepts/stronghold-2-castle-structures.md
+  - concepts/stronghold-2-production-buildings.md
+  - sources/sh2-heaven-campaign-walkthroughs-2026-06-17.md
+  - entities/projects/castle-sim.md
 read_status: read
 source_type: community-wiki
 source_url: https://stronghold2.heavengames.com/gameinfo/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-17
 ---
 
 ## Raw Concept
@@ -32,10 +44,10 @@ Primary **mechanics reference** for SH2 personal-clone research. Indexed section
 | Popularity | `/gameinfo/popularity/` | same § popularity |
 | Kingmaker ranks | `/gameinfo/kingmaker/` | same § rank table |
 | Buildings | `/gameinfo/buildings/` | index only — per-building follow-up |
-| Military | `/gameinfo/military/` | stub — unit stats follow-up |
+| Military | `/gameinfo/military/` | @concepts/stronghold-2-military-units.md |
 | Crime & Punishment | linked from index | @concepts/stronghold-2-crime-punishment-loop.md |
 | Resources / storage | `/gameinfo/resources/` | @concepts/stronghold-2-economy-storage-chains.md |
-| Buildings (partial) | `/gameinfo/buildings/*` | industry + cservices + civilian |
+| Buildings (partial) | `/gameinfo/buildings/*` | @concepts/stronghold-2-production-buildings.md + @concepts/stronghold-2-castle-structures.md |
 
 ### Follow-up ingest queue
 
@@ -43,10 +55,13 @@ Primary **mechanics reference** for SH2 personal-clone research. Indexed section
 - [x] Resources storage/pricing → @concepts/stronghold-2-economy-storage-chains.md
 - [x] Crime/punishment devices → @concepts/stronghold-2-crime-punishment-loop.md
 - [x] Architect controls → @concepts/stronghold-2-architect-controls.md
-- [ ] Military unit stat pages
-- [ ] AI characters page
-- [ ] Path of Peace mission list
-- [ ] Castle structure / walls (404 on numbered pages — try index)
+- [x] Military unit stat pages → @sources/sh2-heaven-military-units-2026-06-17.md, @concepts/stronghold-2-military-units.md
+- [x] AI characters → @concepts/stronghold-2-ai-lords.md (Heaven 3 + Nation/Fandom 2026-06-18)
+- [x] Path of War mission list → @sources/sh2-heaven-pow-missions-2026-06-18.md
+- [x] Castle structure / walls → @sources/sh2-heaven-castle-structures-2026-06-18.md, @concepts/stronghold-2-castle-structures.md
+- [x] Kingmaker rank table → @sources/sh2-heaven-kingmaker-ranks-2026-06-18.md
+- [x] Per-building industry/civilian stat pages → @sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
+- [ ] Stockpile per-good section caps (resources page deep-read)
 
 ## Snippets
 

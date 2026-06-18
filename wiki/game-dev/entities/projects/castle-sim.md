@@ -20,6 +20,29 @@ related:
   - meta/sibling-wiki-inventory.md
   - sources/godot-stagehand-castle-sim-ci-eval-2026-06-13.md
   - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
+  - sources/sh2-youtube-parity-watchlist-2026-06-17.md
+  - sources/sh2-exa-youtube-deep-research-2026-06-17.md
+  - concepts/stronghold-2-kingmaker-strategy.md
+  - concepts/stronghold-2-siege-warfare.md
+  - concepts/stronghold-2-estates-system.md
+  - concepts/stronghold-2-ai-lords.md
+  - concepts/stronghold-2-campaign-economy-curriculum.md
+  - concepts/stronghold-2-castle-structures.md
+  - sources/sh2-heaven-castle-structures-2026-06-18.md
+  - sources/sh2-heaven-pow-missions-2026-06-18.md
+  - sources/sh2-heaven-kingmaker-ranks-2026-06-18.md
+  - sources/sh2-nation-fandom-ai-lords-2026-06-18.md
+  - sources/sh2-heaven-campaign-walkthroughs-2026-06-17.md
+  - sources/stronghold-2-heaven-gameinfo-2026-06-13.md
+  - concepts/stronghold-2-production-buildings.md
+  - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
+  - concepts/stronghold-2-mod-ecosystem-shelf.md
+  - sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
+  - sources/sh2-nevikov-new-balance-sheet-2026-06-18.md
+  - entities/tools/sh2-mp-ai-enabler.md
+  - concepts/stronghold-2-visual-qol-presets.md
+  - entities/tools/sh2-community-lord-editor.md
+  - concepts/stronghold-2-military-units.md
   - sources/shaggydev-udd-navigation-2025.md
 maturity: validated
 created: 2026-06-13

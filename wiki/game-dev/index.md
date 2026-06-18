@@ -29,12 +29,22 @@ Catalog of all wiki pages. Updated on each ingest.
 | [godot-stagehand-ci-smoke-plan](concepts/godot-stagehand-ci-smoke-plan.md) | validated | W2 CI smoke research (castle-sim) |
 | [tool-evaluation-cross-wiki-batch-2026-06-13](concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md) | validated | 56-target tool eval + routing verdicts |
 | [stronghold-modding-ecosystem-shelf](concepts/stronghold-modding-ecosystem-shelf.md) | validated | Crusader mod repos; UCP2 MIT exception |
+| [stronghold-2-mod-ecosystem-shelf](concepts/stronghold-2-mod-ecosystem-shelf.md) | validated | SH2 ModDB/Nexus/YouTube mods; QoL → castle-sim map |
+| [stronghold-2-visual-qol-presets](concepts/stronghold-2-visual-qol-presets.md) | validated | HD/ENB/Matteele/Winter → Godot graphics presets |
 | [stronghold-2-systems-inventory](concepts/stronghold-2-systems-inventory.md) | draft | SH2 honour/crime/kingmaker — clone target |
 | [stronghold-2-popularity-model](concepts/stronghold-2-popularity-model.md) | validated | SH2 eight-category popularity tables |
 | [stronghold-2-crime-punishment-loop](concepts/stronghold-2-crime-punishment-loop.md) | validated | Crime state machine + punishment roster |
 | [stronghold-2-economy-storage-chains](concepts/stronghold-2-economy-storage-chains.md) | validated | Stockpile/granary chains + labor caps |
 | [stronghold-2-architect-controls](concepts/stronghold-2-architect-controls.md) | validated | Spacebar architect + hotkeys for Fork B |
 | [stronghold-2-github-ecosystem-shelf](concepts/stronghold-2-github-ecosystem-shelf.md) | validated | SH2 GitHub patches, trainers, S2M RE |
+| [stronghold-2-estates-system](concepts/stronghold-2-estates-system.md) | validated | Multi-estate carters + village capture |
+| [stronghold-2-ai-lords](concepts/stronghold-2-ai-lords.md) | validated | Kingmaker AI lord profiles (12 lords) |
+| [stronghold-2-production-buildings](concepts/stronghold-2-production-buildings.md) | validated | Industry/farm/civilian building costs |
+| [stronghold-2-campaign-economy-curriculum](concepts/stronghold-2-campaign-economy-curriculum.md) | validated | PoP/PoW tutorial system unlock ladder |
+| [stronghold-2-military-units](concepts/stronghold-2-military-units.md) | validated | Full unit + siege cost/stat tables |
+| [stronghold-2-castle-structures](concepts/stronghold-2-castle-structures.md) | validated | Walls, towers, gatehouses + rank gates |
+| [stronghold-2-kingmaker-strategy](concepts/stronghold-2-kingmaker-strategy.md) | validated | Opening builds, tax/pop automation |
+| [stronghold-2-siege-warfare](concepts/stronghold-2-siege-warfare.md) | validated | Siege/defense roster + attack pipeline |
 | [operator-vision-sh2-personal-clone](concepts/operator-vision-sh2-personal-clone.md) | validated | Personal SH2 north star; **Fork B 3D** |
 | [godot-3d-sh2-architect-spike-plan](concepts/godot-3d-sh2-architect-spike-plan.md) | draft | M0.3D architect camera + wall spike |
 | [godot-castle-sim-tool-gap-shelf](concepts/godot-castle-sim-tool-gap-shelf.md) | validated | Post–Phase 7 Godot tools + workflow gaps |
@@ -66,6 +76,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [airtest](entities/tools/airtest.md) | validated | Image UI test — **CONDITIONAL-GO** @ccc |
 | [unofficial-crusader-patch2](entities/tools/unofficial-crusader-patch2.md) | validated | SHC mod — **STEAL-FROM** (AIV study) |
 | [stronghold2-mp-ai-patch](entities/tools/stronghold2-mp-ai-patch.md) | validated | SH2 MP AI unlock — MIT pattern patch |
+| [sh2-mp-ai-enabler](entities/tools/sh2-mp-ai-enabler.md) | validated | SH2 MP AI — GitLab/questforgaming (maintained) |
+| [sh2-community-lord-editor](entities/tools/sh2-community-lord-editor.md) | validated | SH2 gameRules.dat lord editor — design ref |
 | [stronghold2-analyse-hub](entities/tools/stronghold2-analyse-hub.md) | draft | SH2 DX9 research overlay — MIT |
 | [gamedev-resources](entities/tools/gamedev-resources.md) | validated | CC0 asset link index |
 
@@ -137,6 +149,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [airtest-phase-0-audit-2026-06-13](sources/airtest-phase-0-audit-2026-06-13.md) | read |
 | [unofficial-crusader-patch2-phase-0-audit-2026-06-13](sources/unofficial-crusader-patch2-phase-0-audit-2026-06-13.md) | read |
 | [stronghold-2-heaven-gameinfo-2026-06-13](sources/stronghold-2-heaven-gameinfo-2026-06-13.md) | read |
+| [sh2-youtube-parity-watchlist-2026-06-17](sources/sh2-youtube-parity-watchlist-2026-06-17.md) | read |
 | [stronghold-2-heaven-targeted-2026-06-13](sources/stronghold-2-heaven-targeted-2026-06-13.md) | read |
 | [github-stronghold-2-scan-2026-06-13](sources/github-stronghold-2-scan-2026-06-13.md) | read |
 | [mobygames-stronghold-2-2026-06-13](sources/mobygames-stronghold-2-2026-06-13.md) | read |
@@ -145,3 +158,18 @@ Catalog of all wiki pages. Updated on each ingest.
 | [gamedev-resources-phase-0-audit-2026-06-13](sources/gamedev-resources-phase-0-audit-2026-06-13.md) | read |
 | [inbox-arxiv-reject-batch-2026-06-16](sources/inbox-arxiv-reject-batch-2026-06-16.md) | read |
 | [godot-castle-sim-tool-gap-research-2026-06-17](sources/godot-castle-sim-tool-gap-research-2026-06-17.md) | read |
+| [sh2-exa-youtube-deep-research-2026-06-17](sources/sh2-exa-youtube-deep-research-2026-06-17.md) | read |
+| [gamespot-stronghold-2-qanda-2004](sources/gamespot-stronghold-2-qanda-2004.md) | read |
+| [gamespot-stronghold-2-honor-sieges-2004](sources/gamespot-stronghold-2-honor-sieges-2004.md) | read |
+| [gamespy-stronghold-2-siege-dev-diary-2005](sources/gamespy-stronghold-2-siege-dev-diary-2005.md) | read |
+| [sh2-heaven-kingmaker-strategy-2026-06-17](sources/sh2-heaven-kingmaker-strategy-2026-06-17.md) | read |
+| [firefly-sh2-production-interview-youtube-2026-06-17](sources/firefly-sh2-production-interview-youtube-2026-06-17.md) | read |
+| [sh2-heaven-military-units-2026-06-17](sources/sh2-heaven-military-units-2026-06-17.md) | read |
+| [sh2-heaven-campaign-walkthroughs-2026-06-17](sources/sh2-heaven-campaign-walkthroughs-2026-06-17.md) | read |
+| [sh2-heaven-pow-missions-2026-06-18](sources/sh2-heaven-pow-missions-2026-06-18.md) | read |
+| [sh2-heaven-castle-structures-2026-06-18](sources/sh2-heaven-castle-structures-2026-06-18.md) | read |
+| [sh2-heaven-kingmaker-ranks-2026-06-18](sources/sh2-heaven-kingmaker-ranks-2026-06-18.md) | read |
+| [sh2-nation-fandom-ai-lords-2026-06-18](sources/sh2-nation-fandom-ai-lords-2026-06-18.md) | read |
+| [sh2-heaven-buildings-industry-civilian-2026-06-18](sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md) | read |
+| [sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18](sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md) | read |
+| [sh2-nevikov-new-balance-sheet-2026-06-18](sources/sh2-nevikov-new-balance-sheet-2026-06-18.md) | read |

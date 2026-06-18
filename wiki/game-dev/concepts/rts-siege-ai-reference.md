@@ -10,6 +10,7 @@ related:
   - concepts/scope-tiers.md
   - concepts/stronghold-modding-ecosystem-shelf.md
   - entities/tools/unofficial-crusader-patch2.md
+  - concepts/stronghold-2-siege-warfare.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-15
