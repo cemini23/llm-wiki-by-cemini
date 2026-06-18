@@ -29,7 +29,7 @@ clusters: [prediction-markets, llm-agents]
 | **Title** | dev.fun · The Poker Agent Challenge |
 | **Author** | dev.fun (operator collateral) |
 | **Type** | PDF one-pager |
-| **Location** | `research to be indexed/poker-arena-onepager.pdf` → archive after ingest |
+| **Location** | `cemini-egress-fi:/opt/cemini-bulk/research/osint/poker-arena-onepager.pdf` |
 | **Retrieved** | 2026-06-18 |
 | **Read status** | read (full 3 pages) |
 | **sha256** | `19d6f0cda8f4746e164363ead6a4f6fa0ba92674274e3d914d66cd5edd2259bf` |

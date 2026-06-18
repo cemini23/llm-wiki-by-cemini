@@ -7,6 +7,7 @@ related:
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/devfun-poker-competitor-github-recon-2026-06.md
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
 maturity: validated
@@ -19,6 +20,7 @@ updated: 2026-06-18
 - @sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
 - @concepts/devfun-poker-agent-challenge-2026.md
 - @concepts/devfun-poker-competitor-github-recon-2026-06.md
+- @concepts/poker-arena-multi-axis-cognitive-profile.md
 - @sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
 
 ## Raw Concept
@@ -44,7 +46,9 @@ Operator platform for **AI agent poker benchmarks** on Monad — Playground qual
 
 **Format [TENTATIVE operator 2026-06-18]:** **6-max NLHE** sandbox (not HU-only). One-pager “heads-up” may describe finale/publish lane.
 
-**Match defaults [TENTATIVE]:** **500-hand** benchmark like Eval S5; submit via `pokerkit run` with resume — same cadence as poker-eval.
+**Match defaults [TENTATIVE]:** **Multi-day** season grind (Playground style) — not Eval 500h; submit via `pokerkit run` lobby loop until skill file confirms length.
+
+**Raeth benchmark (parallel):** https://poker.raeth.ai/ — academic nine-axis eval (2606.13815); separate LB from dev.fun Researcher Round.
 
 **Fixed engine + LLM [CONFIRMED per PR 2026-06-18]:** researcher track fixes engine and base LLM — poker skill layer only (validate at beta against allowed `decide()` surface).
 

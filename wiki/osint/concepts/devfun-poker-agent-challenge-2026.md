@@ -5,6 +5,7 @@ tags: [concept, poker, devfun, six-max, agent-eval, researcher-track]
 keywords: [poker agent challenge, researcher track, BenchFlow, 6-max, Tom Dwan, session memory, trajectory]
 related:
   - concepts/devfun-poker-competitor-github-recon-2026-06.md
+  - concepts/poker-arena-multi-axis-cognitive-profile.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - entities/platforms/devfun-arena.md
@@ -20,7 +21,8 @@ updated: 2026-06-18
 - @entities/platforms/devfun-arena.md
 - @sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
 - @sources/devfun-researcher-track-discord-welcome-2026-06-18.md — official channel welcome (Researcher Round)
-- @sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md — multi-axis eval + memory ablation (Raeth)
+- @concepts/poker-arena-multi-axis-cognitive-profile.md — nine-axis profile + memory ablation (K122 deep-read)
+- @sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md — Raeth paper source
 - @concepts/devfun-poker-competitor-github-recon-2026-06.md
 - @gambling-wiki/concepts/poker-hl-analyst-loop.md — HL loop for live leak patches (shared methodology)
 
@@ -71,7 +73,9 @@ See @sources/devfun-researcher-track-discord-welcome-2026-06-18.md:
 
 ### Academic alignment (arXiv 2606.13815)
 
-Three-layer memory + nine-axis cognitive profile vs scalar chips. Cemini ships **F6 session memory** + HL leak patches — add **axis-aware eval** and trajectory exports before each submit.
+See @concepts/poker-arena-multi-axis-cognitive-profile.md — three-layer memory + **nine-axis** profile (M₁ bet sizing … M₉ positional awareness). Raeth result: Claude **#1 chips, #5 mean axis**; memory ablation model-specific (GPT +, Kimi −).
+
+Cemini ships **F6 session memory** + HL leak patches — add **axis-aware eval** (`axis_summary.json`) and trajectory exports before each submit. Brief: `agents/devfun-poker-arena/briefs/2026-06-18_k122-multi-axis-eval-mappings.md`.
 
 ### Optimization pillars (operator order)
 

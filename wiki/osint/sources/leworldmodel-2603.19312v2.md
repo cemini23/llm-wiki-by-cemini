@@ -5,6 +5,10 @@ tags: [leworldmodel, world-model, reinforcement-learning, computer-vision, joint
 keywords: [LeWorldModel, JEPA, world model, reinforcement learning, computer vision, stable training, representation collapse]
 related:
   - concepts/exploration-graph-dead-ends.md
+  - concepts/moverse-panoramic-video-world-model.md
+  - concepts/multi-agent-embodied-autonomous-driving-survey.md
+  - sources/arxiv-moverse-panoramic-world-model-2606.13376-2026-06-18.md
+  - sources/arxiv-maead-shared-world-models-2606.13840-2026-06-18.md
   - entities/frameworks/pettingzoo.md
   - entities/tools/blade-github.md
 maturity: draft
@@ -17,7 +21,8 @@ updated: 2026-05-09
 
 - @concepts/exploration-graph-dead-ends.md — potential dead-end tracking for world-model research line
 - @entities/frameworks/pettingzoo.md — PettingZoo multi-agent RL framework; LeWM could be evaluated with PettingZoo environments
-- @entities/tools/blade-github.md — Blade research accelerator; potentially relevant for scaling LeWM training
+- @sources/arxiv-maead-shared-world-models-2606.13840-2026-06-18.md — MAEAD survey sibling
+- @sources/arxiv-moverse-panoramic-world-model-2606.13376-2026-06-18.md — MoVerse visual world model sibling
 
 ## Raw Concept
 

@@ -5,18 +5,21 @@ tags: [concept, game-theory, optimal-execution, multi-agent, k107]
 keywords: [bayesian-nash-equilibrium, strategic-acquisition, price-of-anarchy, partial-information, simultaneous-learning]
 related:
   - sources/arxiv-strategic-resource-acquisition-2606-06882-2026-06-09.md
+  - sources/arxiv-equilibrium-efgsas-2606.13093-2026-06-18.md
+  - concepts/extensive-form-games-stochastic-action-sets.md
   - concepts/market-microstructure.md
   - concepts/polymarket-bot-architecture.md
   - concepts/non-latency-arbitrage-strategies.md
   - sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md
 maturity: draft
 created: 2026-06-09
-updated: 2026-06-10
+updated: 2026-06-18
 ---
 
 ## Relations
 
 - @sources/arxiv-strategic-resource-acquisition-2606-06882-2026-06-09.md — K107 anchor
+- @concepts/extensive-form-games-stochastic-action-sets.md — EFGSAS / stochastic action menus (K122)
 - @concepts/market-microstructure.md — shared execution cluster
 - @concepts/polymarket-bot-architecture.md — multi-bot taker/LP interaction surface
 

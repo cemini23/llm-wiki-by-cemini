@@ -19,7 +19,11 @@ Research digest + ingest briefs target these first (`scripts/active_project_brie
 | 3 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | 4 | **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
 
-**Poker focus (Jun 18):** Accepted **researcher track** — optimize for **6-max Researcher Round** sandbox LB (500h benchmark assumed, trajectory + multi-axis). Playground S3 continues for optional HUD intel. See `@concepts/devfun-poker-agent-challenge-2026.md`.
+**Poker focus (Jun 18):** Accepted **researcher track** — optimize for **6-max Researcher Round** sandbox LB (multi-day season, trajectory + Raeth nine-axis steal). Playground S3 continues for optional HUD intel. See `@concepts/devfun-poker-agent-challenge-2026.md`.
+
+## Current state (2026-06-18 — K122)
+
+- **K122 ingest (2026-06-18)** — Daily digest full ingest: 5 inbox (4 arXiv + one-pager). **5 sources + 4 concepts + 6 updates.** EFGSAS/SI-CFR (2606.13093) REFERENCE; MoVerse (2606.13376) REFERENCE — no GitHub license; Poker Arena (2606.13815) deep-read + nine-axis concept; MAEAD survey (2606.13840) REFERENCE. **Phase-0:** `adopt_k122_phase0.sh`. **Briefs (2):** poker multi-axis eval mappings; castle-sim MoVerse steal. Archive → egress-fi; inbox cleared.
 
 ## Active workstreams (2026-06-17 — operator pivot)
 

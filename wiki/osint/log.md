@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-18] ingest | K122 daily digest — 5 inbox full ingest
+
+- **5 sources** — arXiv 2606.13093 (EFGSAS); 2606.13376 (MoVerse); 2606.13815 (Poker Arena deep-read); 2606.13840 (MAEAD survey); poker-arena-onepager (LIKELY dup — archived)
+- **4 concepts** — `extensive-form-games-stochastic-action-sets`, `poker-arena-multi-axis-cognitive-profile`, `moverse-panoramic-video-world-model`, `multi-agent-embodied-autonomous-driving-survey`
+- **6 updates** — `devfun-poker-agent-challenge-2026`, `devfun-arena`, `strategic-resource-acquisition-game-theory`, `index.md`, one-pager + 2606.13815 source pages
+- **Phase-0** — `adopt_k122_phase0.sh` (MoVerse REFERENCE no license; Poker Arena steal-from; EFGSAS/MAEAD REFERENCE)
+- **Briefs (2)** — poker multi-axis eval mappings; castle-sim MoVerse steal-from (no prod scp)
+- **Archive** — inbox PDFs → egress-fi; inbox cleared
+
 ## [2026-06-18] query | Researcher Round format correction — 6-max default
 
 - **Operator posture** — Researcher sandbox = **6-max** (not HU-only); one-pager HU likely finale/publish lane

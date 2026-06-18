@@ -1303,6 +1303,13 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Classifier-assisted RL ensemble trading](concepts/classifier-assisted-rl-ensemble-trading.md) — K120: variance-threshold gating over multi-policy RL. — concept, rl-marl, k120
 - [Heuristic Portfolio Optimization (HPO)](concepts/heuristic-portfolio-optimization-hpo.md) — K120: optimality sets + GRS falsification for EW/HRP/ERC. — concept, portfolio-strategy, k120
 - [Active project research routing](concepts/active-project-research-routing.md) — K121: brief targets castle-sim / poker / XSP / PM-Kalshi. — concept, meta, k121
+- [Poker Arena multi-axis cognitive profile](concepts/poker-arena-multi-axis-cognitive-profile.md) — K122: Raeth nine-axis + memory ablation. — concept, poker, k122
+- [Extensive-form games with stochastic action sets](concepts/extensive-form-games-stochastic-action-sets.md) — K122: EFGSAS / SI-CFR. — concept, game-theory, k122
+- [MoVerse panoramic video world model](concepts/moverse-panoramic-video-world-model.md) — K122: single-image → 360° → Gaussian scaffold. — concept, world-model, k122
+- [MAEAD shared world models survey](concepts/multi-agent-embodied-autonomous-driving-survey.md) — K122: V2X / cooperative driving REFERENCE. — concept, survey, k122
+- [EFGSAS equilibrium computation (2606.13093)](sources/arxiv-equilibrium-efgsas-2606.13093-2026-06-18.md) — `[DRAFT 2026-06-18]` K122: SI-CFR; REFERENCE. — source, arxiv, k122
+- [MoVerse panoramic world model (2606.13376)](sources/arxiv-moverse-panoramic-world-model-2606.13376-2026-06-18.md) — `[DRAFT 2026-06-18]` K122: 8 FPS RTX 4090; castle-sim steal. — source, arxiv, k122
+- [MAEAD shared world models (2606.13840)](sources/arxiv-maead-shared-world-models-2606.13840-2026-06-18.md) — `[DRAFT 2026-06-18]` K122: 380-paper survey; REFERENCE. — source, arxiv, k122
 - [dev.fun Poker Agent Challenge 2026 — researcher track](concepts/devfun-poker-agent-challenge-2026.md) — 6-max Researcher Round sandbox; trajectory eval; Jun 21 beta. — concept, devfun, poker, k122
 - [FinAcumen financial experience memory](concepts/finacumen-financial-experience-memory.md) — K121 cross-wiki stub from CCC FinAcumen paper. — concept, finance, k121
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113
@@ -1329,7 +1336,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [WikiKV hierarchical path-indexed wiki storage (2606.14275)](sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md) — `[VALIDATED 2026-06-17]` K121: path-KV navigation; REFERENCE no OSS. — source, arxiv, k121
 - [dev.fun Poker Agent Challenge one-pager (2026-06)](sources/devfun-poker-agent-challenge-onepager-2026-06-18.md) — Researcher track invite; one-pager HU text vs 6-max sandbox assumption. — source, devfun, poker, k122
 - [dev.fun Poker competitor GitHub recon (2026-06)](concepts/devfun-poker-competitor-github-recon-2026-06.md) — gin/poker-bot, kecodot, system7 public bots. — concept, devfun, osint, k122
-- [Poker Arena multi-axis eval (arXiv 2606.13815)](sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md) — Raeth/IIT Roorkee; memory ablation + nine-axis profile. — source, arxiv, poker, k122
+- [Poker Arena multi-axis eval (arXiv 2606.13815)](sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md) — Raeth/IIT Roorkee; nine-axis profile + memory ablation [VALIDATED]. — source, arxiv, poker, k122
 - [Strategic resource acquisition game theory](concepts/strategic-resource-acquisition-game-theory.md) — `[DRAFT 2026-06-09]` competitive execution overlay. — concept, k107
 - [Algorithmic auditing — covariance regret](concepts/algorithmic-auditing-covariance-regret.md) — `[DRAFT 2026-06-09]` external sequential audit metric. — concept, k107
 - [OLS alpha signal framework](concepts/ols-alpha-signal-framework.md) — `[DRAFT 2026-06-09]` intercept-as-edge discipline. — concept, quant, k107
