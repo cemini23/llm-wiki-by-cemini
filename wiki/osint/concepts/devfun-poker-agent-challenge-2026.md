@@ -1,8 +1,8 @@
 ---
 title: dev.fun Poker Agent Challenge 2026 — researcher track
 type: concept
-tags: [concept, poker, devfun, heads-up, agent-eval, researcher-track]
-keywords: [poker agent challenge, researcher track, BenchFlow, heads-up, Tom Dwan, session memory]
+tags: [concept, poker, devfun, six-max, agent-eval, researcher-track]
+keywords: [poker agent challenge, researcher track, BenchFlow, 6-max, Tom Dwan, session memory, trajectory]
 related:
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
@@ -24,75 +24,78 @@ updated: 2026-06-18
 
 ## Raw Concept
 
-Cemini was accepted into the **dev.fun researcher track** (invite-only sandbox, BenchFlow eval). Operator goal: climb Challenge leaderboard, earn researcher pool share + platform credits, and qualify for **Early July** finale seat vs **Tom Dwan / Jungleman** on stream. Top agents become **published challenge bots**.
+Cemini was accepted into the **dev.fun researcher track** (invite-only sandbox, BenchFlow eval). Operator goal: climb Researcher Round leaderboard, earn pool share + platform credits, and qualify for **Early July** finale vs **Tom Dwan / Jungleman** on stream. Top agents become **published challenge bots**.
 
 ## Narrative
 
 ### Challenge vs current prod
 
-| Dimension | Playground S3 (current prod) | Poker Agent Challenge (target) |
-|-----------|------------------------------|--------------------------------|
-| Format | 6-max NLHE seasons | **Heads-up** (one-pager) |
-| Goal | Top-20 qual → tournament entry | Sandbox LB + **publish as champion bot** |
-| Eval | Live lobby + HL analyze | **Sandbox submit** → scored match |
-| Timeline | Season-long grind | **Jun 21** beta · **Jun 25** public · **Early Jul** finale |
-| Our rank | ~103 / 3450 chips (Jun 18) | Researcher sandbox (separate LB) · **50 seats** invited |
+| Dimension | Playground S3 (current prod) | Researcher Round (target) |
+|-----------|------------------------------|---------------------------|
+| Format | 6-max NLHE PVP lobby | **6-max NLHE** sandbox benchmark [TENTATIVE — operator; one-pager text says HU for publish/finale framing] |
+| Goal | Season chip grind / qual | Sandbox LB + trajectory contribution + **publish as champion bot** |
+| Eval | Live lobby + HL analyze | **Sandbox submit** → scored benchmark match |
+| Match length | Continuous bankroll | **Assume 500-hand** benchmark like Eval S5 until skill file contradicts [TENTATIVE] |
+| Submit cadence | Lobby poll loop | **Same as poker-eval** — `pokerkit run` / `benchmark/start`, resume on rerun [TENTATIVE] |
+| Timeline | Season-long | **Jun 21** beta · **Jun 25** public · **Early Jul** finale |
+| Our rank | ~103 / 3450 chips (Jun 18) | Separate LB · **50 seats** invited |
 
-Do **not** assume the same `competition_id` or API surface — confirm sandbox IDs when Researcher Round comp appears in API (expected Jun 21).
+Do **not** assume the same `competition_id` as Playground or Eval S1 — pin Researcher Round ID when it appears in API (expected Jun 21).
 
-**API check 2026-06-18:** `list-active` shows Tournament S2, Playground S3, Eval S1 only — **no Researcher Round competition yet**. Re-run `agents/devfun-poker-arena/scripts/list_arena_competitions.sh` daily until Jun 21.
+**API check 2026-06-18:** `list-active` shows Tournament S2, Playground S3, Eval S1 only — **no Researcher Round competition yet**. Re-run `agents/devfun-poker-arena/scripts/list_arena_competitions.sh` daily.
 
-### Researcher Round — Discord confirmation [CONFIRMED 2026-06-18]
+### Format note — 6-max vs one-pager HU
 
-Operator welcome in `#researcher-track` (@sources/devfun-researcher-track-discord-welcome-2026-06-18.md):
+- **One-pager PDF** markets "heads-up" for the public Challenge / finale narrative [Source: poker-arena-onepager.pdf].
+- **Operator assumption (2026-06-18):** Researcher Round **plays 6-max** like existing Arena poker — same engine family as Playground / Eval, not a separate HU-only sandbox.
+- **Discord welcome** did not specify table size; deferred to one-pager link.
+- **Implication:** optimize **`cemini_decide.py` 6-max path** (gin lane, seat matrix, HL regression) — not a HU-only policy fork. HU regression spots remain cheap smoke tests only.
 
-- **$30K** pool · **50 seats** (invited only) · **Jun 21** closed beta.
-- Explicit eval framing: study **how** agents play, not only win rate — aligns with multi-axis profiling (2606.13815).
-- **Full trajectory export** after arena runs — log structured `reasoning` + action sequences for submission/analysis.
-- Community input shapes **next eval version** — opportunity to contribute axis metrics / memory ablation narrative.
+### Researcher Round — Discord [CONFIRMED 2026-06-18]
 
-### Researcher track constraints [NEEDS VERIFICATION 2026-06-18]
+See @sources/devfun-researcher-track-discord-welcome-2026-06-18.md:
 
-Press release states researcher track may **fix engine and underlying LLM** so entrants compete on **poker skill alone**. Implications:
+- **$30K** · **50 seats** · **Jun 21** closed beta.
+- Eval thesis: **how** agents play, not only win rate — multi-axis profiling (2606.13815).
+- **Full trajectory export** after runs.
+- Shapes **next eval version**.
 
-- Strategy may be a **policy plug-in** (chart / rules / small `decide()`) not full stack with OpenRouter routing.
-- Our **session memory (K118 F6)** and **multi-axis** tuning still matter if the sandbox exposes opponent history and repeated sessions.
-- Validate whether **gin lane**, **MC equity**, and **HUD export** are allowed in sandbox or stripped to fixed inference.
+### Researcher track constraints [CONFIRMED per PR 2026-06-18]
+
+[PR Newswire launch](https://www.prnewswire.com/news-releases/devfun-launches-poker-arena-the-first-public-benchmark-for-ai-agent-reasoning-302804245.html): Researcher track **fixes engine and underlying LLM** — compete on **poker skill layer**. Operator accepts PR wording until sandbox skill contradicts.
+
+- Strategy = policy plug-in (`decide()`, charts, memory) not OpenRouter-at-runtime.
+- Confirm at beta whether **gin lane**, **MC equity**, and **HUD** remain in allowed surface.
 
 ### Academic alignment (arXiv 2606.13815)
 
-Raeth / IIT Roorkee **Poker Arena** paper (same name, workshop) stresses:
-
-- **Three-layer memory:** within-hand, session, cross-session.
-- **Nine-axis cognitive profile** beats scalar chip leaderboard for ranking models (Claude Opus won chips but mid-pack on axis score).
-
-Cemini already ships **session showdown memory (F6)** and **HL scalar leak patches** — researcher optimization should add **axis-aware eval** (bet sizing, positional awareness) not only bb/100.
+Three-layer memory + nine-axis cognitive profile vs scalar chips. Cemini ships **F6 session memory** + HL leak patches — add **axis-aware eval** and trajectory exports before each submit.
 
 ### Optimization pillars (operator order)
 
-1. **Sandbox readiness (P0, by Jun 21)** — register researcher sandbox; document submit command, match length, allowed dependencies; HU regression suite green.
-2. **HU policy** — dedicated `decide()` path or table-size branch: gin `try_preflop` / `try_postflop_free` already HU-oriented; extend selfplay gate to **HU 500-hand** BenchFlow mirror.
-3. **Memory** — extend F6 to within-hand action sequence + cross-session villain file; align with Raeth ablation lessons.
-4. **Eval discipline** — multi-axis proxy metrics in selfplay (open sizing buckets, positional fold rates) before each sandbox submit; **export trajectory JSON** after each run for researcher contribution narrative.
-5. **6-max deprioritize** — keep playground lobby for data/HUD only; stop chasing top-20 qual.
-6. **Publish narrative** — scan scores (personality/memory) + stable agent handle for "bot to beat" branding.
+1. **Sandbox readiness (P0, Jun 21)** — pin `competitionId`; `pokerkit run --max-hands 50` smoke then full **500-hand** match; full **6-max regression** green.
+2. **6-max policy** — continue HL loop on Playground intel + regression gates; no HU-only fork unless skill file mandates HU.
+3. **Memory** — extend F6; align with Raeth ablation lessons.
+4. **Trajectory discipline** — `export_researcher_trajectory.sh` after every benchmark run; post axis proxies in channel.
+5. **Playground** — optional HUD/field intel; not the Researcher LB.
+6. **Publish narrative** — structured policy + regression gates + trajectory contribution.
 
 ### Milestones
 
 | When | Deliverable |
 |------|-------------|
-| **Jun 18–20** | Wiki + brief; HU test matrix; sandbox API recon |
-| **Jun 21** | Closed beta — first sandbox submission |
-| **Jun 25** | Public launch — iterative submits |
-| **Early Jul** | Finale qualification via LB rank |
+| **Jun 18–20** | Wiki posture; 6-max gate; API recon |
+| **Jun 21** | Closed beta — first **500-hand** sandbox submit |
+| **Jun 25** | Public — iterative `pokerkit run` submits |
+| **Early Jul** | Finale qual via LB (table format TBD — may differ from sandbox) |
 
 ## Snippets
 
 - One-pager: "BUILD → SUBMIT → SCORE → PUBLISH" [Source: poker-arena-onepager.pdf]
-- Discord: "sandbox benchmark for studying how poker agents actually play, not just whether they win" [Source: Discord #researcher-track welcome (retrieved 2026-06-18)]
-- "Top agents go live on as champion agents that everyone else can come and challenge."
+- Discord: trajectory + "how agents play" [Source: Discord #researcher-track welcome (retrieved 2026-06-18)]
+- PR: researcher track fixes engine + LLM [Source: PR Newswire 2026-06-18]
 
 ## Dead Ends
 
-- Optimizing **only** 6-max Playground rank without HU sandbox path does not advance Challenge LB.
-- Single scalar HL patches without bet-sizing / position axes may mis-rank vs multi-axis eval (2606.13815).
+- **HU-only optimization** for Researcher Round if sandbox is 6-max — misallocates effort away from prod-shaped regression.
+- Scalar HL patches without bet-sizing / position axes may mis-rank vs multi-axis eval (2606.13815).

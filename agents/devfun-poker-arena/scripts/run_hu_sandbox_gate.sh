@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# HU sandbox pre-submit gate — researcher track / Poker Agent Challenge.
+# Researcher Round pre-submit gate — 6-max regression + selfplay + trajectory.
 #
 #   ./scripts/run_hu_sandbox_gate.sh
 #   ./scripts/run_hu_sandbox_gate.sh --hands 500
@@ -16,15 +16,16 @@ BUNDLE_DIR="reports/researcher-round/gate-${TS}"
 TRAJ_FILE="${BUNDLE_DIR}/selfplay_trajectory.jsonl"
 mkdir -p "$BUNDLE_DIR"
 
-echo "==> HU regression spots"
-uv run pytest tests/test_hu_regression.py -q --tb=line
+echo "==> 6-max regression (full + HU smoke)"
+uv run pytest tests/test_cemini_regression.py tests/test_hu_regression.py -q --tb=line
 
-echo "==> HU selfplay gate (${HANDS} hands, cemini_decide vs tight)"
+echo "==> 6-max selfplay gate (${HANDS} hands, cemini_decide vs tight)"
 CEMINI_GIN_STYLE=1 CEMINI_GIN_STYLE_PREFLOP=1 CEMINI_GIN_STYLE_POSTFLOP=1 \
   uv run python examples/selfplay.py \
   --agent examples/cemini_decide.py \
   --hands "$HANDS" \
-  --opponent tight \
+  --players 6 \
+  --opponent mixed \
   --seed 42 \
   --trajectory-out "$TRAJ_FILE"
 
@@ -45,5 +46,6 @@ if [[ -n "${ARENA_RESEARCHER_COMP_ID:-}" ]]; then
 fi
 
 echo ""
-echo "HU SANDBOX GATE OK — bundle: ${BUNDLE_DIR}"
-echo "Confirm with pokerkit run / BenchFlow before Jun 21 submit"
+echo "RESEARCHER SANDBOX GATE OK — bundle: ${BUNDLE_DIR}"
+echo "Arena submit: pokerkit run --max-hands 50 (smoke) then pokerkit run (500h default)"
+echo "Full match length assumed same as Eval S5 until Researcher skill contradicts."

@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-18] query | Researcher Round format correction — 6-max default
+
+- **Operator posture** — Researcher sandbox = **6-max** (not HU-only); one-pager HU likely finale/publish lane
+- **Match cadence** — assume **500-hand** benchmark + `pokerkit run` iterative submits (Eval S5 pattern)
+- **Engine** — accept PR fixed engine+LLM [CONFIRMED per PR] until skill contradicts
+- **Gate script** — `run_hu_sandbox_gate.sh` now runs full 6-max regression + 6-max selfplay
+
 ## [2026-06-18] query | dev.fun Researcher Round — Discord welcome
 
 - **Source** — `@sources/devfun-researcher-track-discord-welcome-2026-06-18.md` (operator relay from `#researcher-track`)

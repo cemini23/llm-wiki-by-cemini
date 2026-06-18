@@ -15,11 +15,11 @@ Research digest + ingest briefs target these first (`scripts/active_project_brie
 | Priority | Project | Brief home | Prod scp |
 |----------|---------|------------|----------|
 | 1 | **castle-sim** — Godot RTS slice, playtest parity | `../projects/castle-sim/briefs/` | No |
-| 2 | **Poker Arena — dev.fun Researcher Track / HU Challenge** | `agents/devfun-poker-arena/briefs/` | sandbox + rsync |
+| 2 | **Poker Arena — dev.fun Researcher Round** | `agents/devfun-poker-arena/briefs/` | sandbox + rsync |
 | 3 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | 4 | **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
 
-**Poker focus (Jun 18):** Accepted **researcher track** — optimize for **heads-up sandbox LB** (Jun 21 closed beta, Jun 25 public, Early Jul finale). Playground 6-max (`cmqf827h30u7dfca3x2aqvzjv`) continues for HUD/field intel only (~rank 103). See `@concepts/devfun-poker-agent-challenge-2026.md` + `agents/devfun-poker-arena/briefs/2026-06-18_devfun-researcher-track-optimization.md`.
+**Poker focus (Jun 18):** Accepted **researcher track** — optimize for **6-max Researcher Round** sandbox LB (500h benchmark assumed, trajectory + multi-axis). Playground S3 continues for optional HUD intel. See `@concepts/devfun-poker-agent-challenge-2026.md`.
 
 ## Active workstreams (2026-06-17 — operator pivot)
 

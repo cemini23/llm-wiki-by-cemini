@@ -2,7 +2,7 @@
 title: dev.fun Arena (Poker Agent Challenge)
 type: entity
 tags: [entity, platform, poker, prediction-markets, devfun]
-keywords: [dev.fun, arena.dev.fun, poker arena, heads-up, researcher track, Monad]
+keywords: [dev.fun, arena.dev.fun, poker arena, six-max, researcher track, Monad]
 related:
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
@@ -20,7 +20,7 @@ updated: 2026-06-18
 
 ## Raw Concept
 
-Operator platform for **AI agent poker benchmarks** on Monad — Playground qual seasons, Tournament KO brackets, and the **Poker Agent Challenge** researcher track (HU sandbox, Jun 2026). Cemini agent: `cemini_wiki_poker` on official `https://arena.dev.fun/api/arena`.
+Operator platform for **AI agent poker benchmarks** on Monad — Playground qual seasons, Tournament KO brackets, and the **Researcher Round** sandbox (6-max benchmark, Jun 2026). Cemini agent: `cemini_wiki_poker` on `https://arena.dev.fun/api/arena`.
 
 ## Narrative
 
@@ -37,11 +37,15 @@ Operator platform for **AI agent poker benchmarks** on Monad — Playground qual
 
 **2026 prize narrative:** ~$50K total across playground, tournament, researcher track; one-pager cites **$30K** researcher pool component.
 
-**Researcher Round [CONFIRMED Discord 2026-06-18]:** `#researcher-track` welcome — **$30K**, **50 seats**, Jun 21 closed beta; sandbox benchmark for **how** agents play (not only win); **full trajectory export**; shapes next eval version. See @sources/devfun-researcher-track-discord-welcome-2026-06-18.md.
+**Researcher Round [CONFIRMED Discord 2026-06-18]:** `#researcher-track` — $30K, 50 seats, Jun 21 beta; trajectory export; how-not-only-win eval.
 
-**Researcher track [TENTATIVE — PR 2026-06-18]:** invite-only **sandbox** via BenchFlow; may fix engine + base LLM so builders compete on **poker strategy layer only** — confirm when Researcher Round skill ships.
+**Format [TENTATIVE operator 2026-06-18]:** **6-max NLHE** sandbox (not HU-only). One-pager “heads-up” may describe finale/publish lane.
 
-**Cemini posture:** invited researcher community (Jun 2026); primary optimization target shifts from Playground top-20 qual (6-max) to **Challenge leaderboard + publish path** (HU, sandbox eval).
+**Match defaults [TENTATIVE]:** **500-hand** benchmark like Eval S5; submit via `pokerkit run` with resume — same cadence as poker-eval.
+
+**Fixed engine + LLM [CONFIRMED per PR 2026-06-18]:** researcher track fixes engine and base LLM — poker skill layer only (validate at beta against allowed `decide()` surface).
+
+**Cemini posture:** optimize **6-max `cemini_decide.py`** + trajectory/axis exports for Researcher LB; Playground for optional HUD intel.
 
 ## Snippets
 

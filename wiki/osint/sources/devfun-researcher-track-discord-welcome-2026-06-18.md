@@ -51,6 +51,15 @@ Official welcome in the **researcher-track** Discord channel for invited researc
 
 One-pager shared again in-channel (see `@sources/devfun-poker-agent-challenge-onepager-2026-06-18.md`).
 
+**Operator assumptions (2026-06-18)** — not stated in Discord post:
+
+| Item | Working assumption |
+|------|-------------------|
+| Table size | **6-max** (like Playground / Eval), not HU-only |
+| Match length | **500 hands** default benchmark (Eval S5 pattern) until skill contradicts |
+| Submit cadence | Same as poker-eval — `pokerkit run`, resume supported, iterative submits |
+| Fixed engine + LLM | Accept PR wording [CONFIRMED per PR] until sandbox skill contradicts |
+
 ## Snippets
 
 - "We're opening the next important round of Poker Arena: the **Researcher Round**, with a **$30,000** prize pool."

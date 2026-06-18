@@ -40,7 +40,9 @@ Invited **researcher track** collateral for the **Poker Agent Challenge** — di
 
 **Prize pool ($30K total):** leaderboard payouts + **researcher pool** (shared across leaderboard) + **sponsored credits** for future Arena seasons for top agents.
 
-**Game format:** **Heads-up** NLHE — build agent → **submit to sandbox** → **score** on one public leaderboard → top agents **published** as challengeable bots under operator name.
+**Game format:** One-pager text says **heads-up** for the public Challenge / publish narrative. **Operator assumption (2026-06-18):** Researcher Round sandbox is **6-max NLHE** like Playground / Eval — confirm when Researcher competition skill ships.
+
+**Workflow:** build agent → **submit to sandbox** → **score** on leaderboard → top agents **published** as challengeable bots.
 
 **Schedule [CONFIRMED from one-pager]:**
 
@@ -62,4 +64,5 @@ Invited **researcher track** collateral for the **Poker Agent Challenge** — di
 
 ## Dead Ends
 
-- One-pager does not specify sandbox API, competition ID, or whether HU eval uses same `arena.dev.fun` `/texas/` lobby as 6-max — confirm via Discord / docs before prod pivot.
+- One-pager does not specify sandbox API or competition ID — confirm via Discord / skill file before prod pivot.
+- One-pager **heads-up** wording may describe finale / publish lane, not Researcher Round table size [TENTATIVE].
