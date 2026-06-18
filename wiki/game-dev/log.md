@@ -4,6 +4,15 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-18] ingest | Phase-0 SH2 tools + inbox triage + operator briefs
+
+- Phase-0: @sources/sh2-mp-ai-enabler-phase-0-audit-2026-06-18.md (CONDITIONAL-GO), @sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md (STEAL-FROM)
+- Inbox: 5 arXiv digest PDFs → @sources/inbox-arxiv-reject-batch-2026-06-18.md; archived to egress; inbox cleared
+- Gitignored briefs: `sh2-mp-ai-enabler-install.md`, `sh2-community-lord-editor-install.md`, `sh2-visual-mod-stack.md`, `story-031-balance-graphics-presets.md`; `sh2-retail-setup.md` updated for optional visual QoL
+- Briefs synced → `castle-sim/briefs/`
+
+---
+
 ## [2026-06-18] ingest | SH2 buildings + castle-sim LordProfile stub
 
 - Heaven industry/farm/civilian/cservices/military1 → @sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md, @concepts/stronghold-2-production-buildings.md

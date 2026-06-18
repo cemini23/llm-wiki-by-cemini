@@ -173,3 +173,6 @@ Catalog of all wiki pages. Updated on each ingest.
 | [sh2-heaven-buildings-industry-civilian-2026-06-18](sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md) | read |
 | [sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18](sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md) | read |
 | [sh2-nevikov-new-balance-sheet-2026-06-18](sources/sh2-nevikov-new-balance-sheet-2026-06-18.md) | read |
+| [sh2-mp-ai-enabler-phase-0-audit-2026-06-18](sources/sh2-mp-ai-enabler-phase-0-audit-2026-06-18.md) | read |
+| [sh2-community-lord-editor-phase-0-audit-2026-06-18](sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-18](sources/inbox-arxiv-reject-batch-2026-06-18.md) | read |

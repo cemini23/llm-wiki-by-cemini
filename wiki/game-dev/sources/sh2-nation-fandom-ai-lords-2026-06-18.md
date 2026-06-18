@@ -13,6 +13,7 @@ related:
   - concepts/stronghold-2-military-units.md
   - sources/sh2-heaven-military-units-2026-06-17.md
   - entities/tools/sh2-community-lord-editor.md
+  - sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
 read_status: read
 source_type: community-guide

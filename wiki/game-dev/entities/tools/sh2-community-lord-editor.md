@@ -8,6 +8,7 @@ related:
   - concepts/stronghold-2-ai-lords.md
   - entities/projects/castle-sim.md
   - sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
+  - sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md
   - sources/sh2-nation-fandom-ai-lords-2026-06-18.md
   - concepts/stronghold-2-github-ecosystem-shelf.md
   - entities/tools/stronghold2-mp-ai-patch.md

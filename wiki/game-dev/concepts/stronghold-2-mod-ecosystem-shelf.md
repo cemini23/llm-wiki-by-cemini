@@ -15,6 +15,8 @@ related:
   - entities/tools/stronghold2-mp-ai-patch.md
   - entities/tools/sh2-mp-ai-enabler.md
   - entities/tools/sh2-community-lord-editor.md
+  - sources/sh2-mp-ai-enabler-phase-0-audit-2026-06-18.md
+  - sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md
   - entities/tools/stronghold2-analyse-hub.md
   - concepts/stronghold-2-visual-qol-presets.md
   - concepts/art-pipeline-v0-requirements.md

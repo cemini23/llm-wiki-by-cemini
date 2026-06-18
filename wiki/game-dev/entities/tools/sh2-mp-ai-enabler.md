@@ -8,6 +8,7 @@ related:
   - concepts/stronghold-2-mod-ecosystem-shelf.md
   - concepts/stronghold-2-github-ecosystem-shelf.md
   - sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
+  - sources/sh2-mp-ai-enabler-phase-0-audit-2026-06-18.md
   - concepts/operator-vision-sh2-personal-clone.md
   - concepts/stronghold-2-systems-inventory.md
   - entities/projects/castle-sim.md

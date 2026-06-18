@@ -42,6 +42,7 @@ related:
   - entities/tools/sh2-mp-ai-enabler.md
   - concepts/stronghold-2-visual-qol-presets.md
   - entities/tools/sh2-community-lord-editor.md
+  - sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md
   - concepts/stronghold-2-military-units.md
   - sources/shaggydev-udd-navigation-2025.md
 maturity: validated

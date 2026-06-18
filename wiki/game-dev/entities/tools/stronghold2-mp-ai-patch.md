@@ -11,6 +11,7 @@ related:
   - concepts/stronghold-2-mod-ecosystem-shelf.md
   - sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
   - entities/tools/sh2-mp-ai-enabler.md
+  - sources/sh2-mp-ai-enabler-phase-0-audit-2026-06-18.md
   - sources/stronghold2-mp-ai-patch-phase-0-audit-2026-06-13.md
   - entities/tools/sh2-community-lord-editor.md
 maturity: validated

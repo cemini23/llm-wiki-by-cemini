@@ -6,6 +6,7 @@ keywords: [arxiv, triage, reject, routing]
 related:
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-06-18.md
 read_status: read
 source_type: operator-triage
 maturity: validated
