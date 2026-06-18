@@ -8,6 +8,19 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
+## Active workstreams (2026-06-18 — researcher track pivot)
+
+Research digest + ingest briefs target these first (`scripts/active_project_brief_targets.yaml`):
+
+| Priority | Project | Brief home | Prod scp |
+|----------|---------|------------|----------|
+| 1 | **castle-sim** — Godot RTS slice, playtest parity | `../projects/castle-sim/briefs/` | No |
+| 2 | **Poker Arena — dev.fun Researcher Track / HU Challenge** | `agents/devfun-poker-arena/briefs/` | sandbox + rsync |
+| 3 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
+| 4 | **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
+
+**Poker focus (Jun 18):** Accepted **researcher track** — optimize for **heads-up sandbox LB** (Jun 21 closed beta, Jun 25 public, Early Jul finale). Playground 6-max (`cmqf827h30u7dfca3x2aqvzjv`) continues for HUD/field intel only (~rank 103). See `@concepts/devfun-poker-agent-challenge-2026.md` + `agents/devfun-poker-arena/briefs/2026-06-18_devfun-researcher-track-optimization.md`.
+
 ## Active workstreams (2026-06-17 — operator pivot)
 
 Research digest + ingest briefs target these first (`scripts/active_project_brief_targets.yaml`):

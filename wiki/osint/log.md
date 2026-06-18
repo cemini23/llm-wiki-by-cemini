@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-18] ingest | dev.fun Poker Agent Challenge — researcher track
+
+- **Source** — `poker-arena-onepager.pdf` (operator invite collateral)
+- **Concept** — `@concepts/devfun-poker-agent-challenge-2026.md` (HU sandbox, timeline, optimization pillars)
+- **Entity** — `@entities/platforms/devfun-arena.md`
+- **Stub** — arXiv 2606.13815 Poker Arena multi-axis eval (daily digest inbox)
+- **Brief** — `agents/devfun-poker-arena/briefs/2026-06-18_devfun-researcher-track-optimization.md`
+- **ROADMAP** — poker priority → researcher track / HU Challenge
+
 ## [2026-06-18] ops | Playground morning check + daily digest
 
 - **Poker prod** — stopped duplicate S3 lobby (main owns `cmqf827h30u7dfca3x2aqvzjv`); disabled `cemini-devfun-poker-lobby-s3.service`; tournament-priority guard skips S3 when main lobby on same comp

@@ -27,9 +27,11 @@ projects:
     wiki: "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
     brief_dir: "agents/devfun-poker-arena/briefs"
     scp_target: null
+    primary_goal: "dev.fun Poker Agent Challenge — researcher track sandbox LB (HU), Jun 21 beta"
     steal_from:
       - "6-max preflop discipline, HUD exploit, blind pressure, tournament ICM"
-      - "Opponent modeling, multi-agent poker RL eval"
+      - "Heads-up gin lanes, BenchFlow sandbox submit, multi-axis eval (2606.13815)"
+      - "Opponent modeling, session/cross-session memory (F6+)"
       - "Regression spots + HL analyst loop leaks"
     skip_brief_if:
       - "Casino slots / sportsbook unrelated to arena-pokerkit"

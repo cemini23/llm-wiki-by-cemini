@@ -7,12 +7,14 @@ related:
   - meta/daily-research-digest-cadence.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/game-dev-wiki-federation.md
+  - concepts/devfun-poker-agent-challenge-2026.md
+  - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
   - concepts/xsp-lane-trading-framework.md
   - concepts/polymarket-bot-architecture.md
 maturity: core
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-06-18
 ---
 
 ## Relations
@@ -22,7 +24,8 @@ updated: 2026-06-17
 - @concepts/game-dev-wiki-federation.md — castle-sim wiki sibling
 - @gambling-wiki/concepts/poker-hl-analyst-loop.md — Poker Arena fix loop
 - @concepts/xsp-lane-trading-framework.md — XSP killer lanes A–D
-- @concepts/polymarket-bot-architecture.md — PM/Kalshi bot exploration
+- @concepts/devfun-poker-agent-challenge-2026.md — researcher track pivot (K122)
+- @sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
 
 ## Raw Concept
 

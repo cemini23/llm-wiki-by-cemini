@@ -659,6 +659,7 @@ Execution and reference venues wired into (or referenced by) the Cemini stack.
 
 - [Kalshi](entities/platforms/kalshi.md) — CFTC-regulated DCM for event contracts; primary prediction-market venue for Cemini — platform, prediction-markets, cemini-venue
 - [Polymarket](entities/platforms/polymarket.md) — On-chain prediction market (Polygon); cross-venue reference, not primary execution — platform, on-chain, cemini-venue-adjacent
+- [dev.fun Arena](entities/platforms/devfun-arena.md) — Poker Agent Challenge + Playground/Tournament seasons; researcher track sandbox (HU) — platform, poker, devfun, prediction-markets
 - [Hyperliquid](entities/platforms/hyperliquid.md) — On-chain perpetuals DEX; Agent-Wallet integration + Flashbots Protect — platform, crypto, cemini-venue
 - [OANDA](entities/platforms/oanda.md) — Forex/CFD broker; primary FX execution venue — platform, forex, cemini-venue
 - [Alpaca](entities/platforms/alpaca.md) — US equities + options broker (API-first); primary equities venue — platform, equities, cemini-venue
@@ -1302,6 +1303,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Classifier-assisted RL ensemble trading](concepts/classifier-assisted-rl-ensemble-trading.md) — K120: variance-threshold gating over multi-policy RL. — concept, rl-marl, k120
 - [Heuristic Portfolio Optimization (HPO)](concepts/heuristic-portfolio-optimization-hpo.md) — K120: optimality sets + GRS falsification for EW/HRP/ERC. — concept, portfolio-strategy, k120
 - [Active project research routing](concepts/active-project-research-routing.md) — K121: brief targets castle-sim / poker / XSP / PM-Kalshi. — concept, meta, k121
+- [dev.fun Poker Agent Challenge 2026 — researcher track](concepts/devfun-poker-agent-challenge-2026.md) — HU sandbox LB, Jun 21 beta; optimization pivot from 6-max qual. — concept, devfun, poker, k122
 - [FinAcumen financial experience memory](concepts/finacumen-financial-experience-memory.md) — K121 cross-wiki stub from CCC FinAcumen paper. — concept, finance, k121
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113
 - [WikiKV](entities/tools/wikikv.md) — K121 REFERENCE; hierarchical path-KV for wiki navigation (no public repo). — tool, wiki, k121
@@ -1325,6 +1327,8 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Ensemble RL through Classifier Models (2502.17518)](sources/arxiv-ensemble-rl-classifier-models-2502-17518-2026-06-17.md) — `[DRAFT 2026-06-17]` K120: τ-gated classifier ensemble over A2C/PPO/SAC; TradeMaster DJ30. — source, arxiv, k120
 - [The Mathematics of Heuristic Portfolio Optimization (2606.12612)](sources/arxiv-heuristic-portfolio-optimization-2606-12612-2026-06-17.md) — `[DRAFT 2026-06-17]` K120: HPO optimality map + RLPO bridge; GRS diagnostics. — source, arxiv, k120
 - [WikiKV hierarchical path-indexed wiki storage (2606.14275)](sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md) — `[VALIDATED 2026-06-17]` K121: path-KV navigation; REFERENCE no OSS. — source, arxiv, k121
+- [dev.fun Poker Agent Challenge one-pager (2026-06)](sources/devfun-poker-agent-challenge-onepager-2026-06-18.md) — Researcher track invite; HU sandbox; Jun 21/25 / Early Jul finale. — source, devfun, poker, k122
+- [Poker Arena multi-axis eval (arXiv 2606.13815)](sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md) — Raeth/IIT Roorkee; memory ablation + nine-axis profile. — source, arxiv, poker, k122
 - [Strategic resource acquisition game theory](concepts/strategic-resource-acquisition-game-theory.md) — `[DRAFT 2026-06-09]` competitive execution overlay. — concept, k107
 - [Algorithmic auditing — covariance regret](concepts/algorithmic-auditing-covariance-regret.md) — `[DRAFT 2026-06-09]` external sequential audit metric. — concept, k107
 - [OLS alpha signal framework](concepts/ols-alpha-signal-framework.md) — `[DRAFT 2026-06-09]` intercept-as-edge discipline. — concept, quant, k107
