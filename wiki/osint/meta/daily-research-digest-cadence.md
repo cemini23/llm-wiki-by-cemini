@@ -15,7 +15,7 @@ related:
   - meta/federation-operator-hub-stub.md
 maturity: core
 created: 2026-05-31
-updated: 2026-06-17
+updated: 2026-06-18
 ---
 
 ## Relations
@@ -33,7 +33,7 @@ updated: 2026-06-17
 | Field | Value |
 |-------|-------|
 | **Cadence** | Daily — Exa papers (wiki-deduped) → inbox PDFs + news digest (no wiki ingest) |
-| **Last run** | 2026-06-17 |
+| **Last run** | 2026-06-18 |
 | **Script** | `cemini-daily-research-digest` (or `bash scripts/run_daily_research_digest.sh` from repo) |
 | **Config** | `scripts/daily_research_config.yaml` |
 | **Report** | `wiki/sweeps/YYYY-MM-DD-daily.md` |

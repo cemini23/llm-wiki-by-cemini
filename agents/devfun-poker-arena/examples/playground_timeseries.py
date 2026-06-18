@@ -52,9 +52,19 @@ def _deploy_grace_active() -> bool | None:
         return None
 
 
+def _timeseries_enabled() -> bool:
+    raw = os.environ.get("CEMINI_PLAYGROUND_TIMESERIES", "1").strip().lower()
+    return raw not in ("0", "false", "no", "off", "")
+
+
 def timeseries_path() -> Path:
+    explicit = os.environ.get("CEMINI_PLAYGROUND_TIMESERIES_PATH", "").strip()
+    if explicit:
+        return Path(explicit)
     raw = os.environ.get("CEMINI_PLAYGROUND_TIMESERIES", "").strip()
-    return Path(raw) if raw else _DEFAULT_PATH
+    if raw and raw.lower() not in ("1", "true", "yes", "on", "0", "false", "no", "off"):
+        return Path(raw)
+    return _DEFAULT_PATH
 
 
 def append_playground_snapshot(
@@ -66,12 +76,7 @@ def append_playground_snapshot(
     hands_played: int = 0,
 ) -> None:
     """Fetch replays (chipDelta cap 50) + qual rank; append one JSONL row."""
-    if os.environ.get("CEMINI_PLAYGROUND_TIMESERIES", "1").strip().lower() in (
-        "0",
-        "false",
-        "no",
-        "off",
-    ):
+    if not _timeseries_enabled():
         return
 
     from analyze import _fetch_replays  # noqa: WPS433 — shared API helper

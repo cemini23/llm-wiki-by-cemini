@@ -108,6 +108,11 @@ if [[ -f /etc/systemd/system/cemini-devfun-poker-export-crawl.service ]]; then
 fi
 
 systemctl daemon-reload
+# Main lobby owns this comp — stop parallel S3 unit (same agent, 1-table limit).
+if systemctl is-active cemini-devfun-poker-lobby-s3.service 2>/dev/null | grep -q active; then
+  echo "==> Stop parallel S3 lobby (main owns comp \${COMP})"
+  systemctl stop cemini-devfun-poker-lobby-s3.service || true
+fi
 systemctl restart cemini-devfun-poker-lobby.service
 if systemctl list-unit-files cemini-devfun-poker-lobby-s2.service --no-legend 2>/dev/null | grep -q enabled; then
   sed -i "s|--competition-id .*|--competition-id \${COMP}|" \

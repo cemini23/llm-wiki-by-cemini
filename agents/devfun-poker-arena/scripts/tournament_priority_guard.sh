@@ -24,7 +24,14 @@ if [[ "${CEMINI_TOURNAMENT_PRIORITY_LOCAL:-}" == "1" ]]; then
     fi
     systemctl start cemini-devfun-poker-lobby.service 2>/dev/null || true
   elif [[ "${resume}" == "True" ]]; then
-    if ! systemctl is-active cemini-devfun-poker-lobby-s3.service 2>/dev/null | grep -q active; then
+    # Main lobby already on this playground comp — do not start parallel S3 (1-table agent limit).
+    lobby_comp="$(grep -E '^ARENA_LOBBY_COMPETITION_ID=' .env 2>/dev/null | cut -d= -f2- | tr -d '"' || true)"
+    if [[ -n "${lobby_comp}" && "${lobby_comp}" == "${S3}" ]]; then
+      echo "[tournament-priority] Main lobby owns playground ${S3} — skip S3 parallel unit"
+      if systemctl is-active cemini-devfun-poker-lobby-s3.service 2>/dev/null | grep -q active; then
+        systemctl stop cemini-devfun-poker-lobby-s3.service || true
+      fi
+    elif ! systemctl is-active cemini-devfun-poker-lobby-s3.service 2>/dev/null | grep -q active; then
       if systemctl is-enabled cemini-devfun-poker-lobby-s3.service 2>/dev/null | grep -q enabled; then
         echo "[tournament-priority] Tournament not blocking — resuming Playground S3 qual"
         systemctl start cemini-devfun-poker-lobby-s3.service

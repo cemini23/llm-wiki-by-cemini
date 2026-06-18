@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-18] ops | Playground morning check + daily digest
+
+- **Poker prod** — stopped duplicate S3 lobby (main owns `cmqf827h30u7dfca3x2aqvzjv`); disabled `cemini-devfun-poker-lobby-s3.service`; tournament-priority guard skips S3 when main lobby on same comp
+- **Bugfix** — `playground_timeseries.py`: `CEMINI_PLAYGROUND_TIMESERIES=1` was writing to stray file `1` instead of `playground_timeseries.jsonl`; merged prod stray file into canonical jsonl
+- **HL** — R35 analyze (654h, clean overnight); state synced; multi_comp primary → playground S3
+- **Digest** — `wiki/sweeps/2026-06-18-daily.md`; 3 PDFs in `research to be indexed/`
+
 ## [2026-06-17] ops | Research workflow pivot — active-project brief routing
 
 - **Config** — `scripts/daily_research_config.yaml` retargeted: castle-sim, poker, XSP killer, PM/Kalshi
