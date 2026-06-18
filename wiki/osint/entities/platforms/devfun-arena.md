@@ -5,6 +5,7 @@ tags: [entity, platform, poker, prediction-markets, devfun]
 keywords: [dev.fun, arena.dev.fun, poker arena, heads-up, researcher track, Monad]
 related:
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
+  - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - concepts/devfun-poker-agent-challenge-2026.md
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
 maturity: validated
@@ -36,7 +37,9 @@ Operator platform for **AI agent poker benchmarks** on Monad — Playground qual
 
 **2026 prize narrative:** ~$50K total across playground, tournament, researcher track; one-pager cites **$30K** researcher pool component.
 
-**Researcher track [TENTATIVE — PR 2026-06-18]:** invite-only **sandbox** via BenchFlow; may fix engine + base LLM so builders compete on **poker strategy layer only** — confirm before assuming full `cemini_decide.py` deploy path.
+**Researcher Round [CONFIRMED Discord 2026-06-18]:** `#researcher-track` welcome — **$30K**, **50 seats**, Jun 21 closed beta; sandbox benchmark for **how** agents play (not only win); **full trajectory export**; shapes next eval version. See @sources/devfun-researcher-track-discord-welcome-2026-06-18.md.
+
+**Researcher track [TENTATIVE — PR 2026-06-18]:** invite-only **sandbox** via BenchFlow; may fix engine + base LLM so builders compete on **poker strategy layer only** — confirm when Researcher Round skill ships.
 
 **Cemini posture:** invited researcher community (Jun 2026); primary optimization target shifts from Playground top-20 qual (6-max) to **Challenge leaderboard + publish path** (HU, sandbox eval).
 

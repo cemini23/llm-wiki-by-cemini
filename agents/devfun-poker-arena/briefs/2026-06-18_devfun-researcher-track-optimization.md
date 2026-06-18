@@ -2,11 +2,11 @@
 
 `agents/devfun-poker-arena/` + researcher sandbox (BenchFlow / Daytona — confirm onboarding pack).
 
-Operator: **cemini_wiki_poker** — accepted **researcher track** (invite-only sandbox).
+Operator: **cemini_wiki_poker** — **Researcher Round** (50 invited seats, $30K pool).
 
 ## Summary
 
-Pivot optimization from **6-max Playground qual** (rank ~103) to **Poker Agent Challenge** leaderboard: **heads-up** sandbox eval, **Jun 21** closed beta, **Jun 25** public, **Early July** finale vs Tom Dwan / Jungleman. Top agents **publish as challengeable bots**. Use existing `cemini_decide.py` + gin HU lanes; extend memory (F6) and add HU eval gates before each submit.
+Pivot optimization from **6-max Playground qual** (rank ~103) to **Researcher Round** sandbox: eval focuses on **how** agents play (trajectory + multi-axis), not only bb/100. **Jun 21** closed beta · **Jun 25** public · **Early July** finale vs Tom Dwan / Jungleman. Export full trajectories after each run; contribute axis metrics narrative in Discord.
 
 ## Body
 
@@ -20,13 +20,14 @@ Pivot optimization from **6-max Playground qual** (rank ~103) to **Poker Agent C
 
 ### Prize / status
 
-- **~$30K** researcher pool component (one-pager); site cites **$50K** total arena pool across tracks.
-- **Credits** for future seasons for top agents.
+- **$30K** Researcher Round pool [CONFIRMED Discord 2026-06-18]; site cites **$50K** total arena pool across tracks.
+- **50 seats** — invited only; Cemini holds one.
+- **Trajectory export** — pull full run data after sandbox matches; align with multi-axis eval story.
 - **Publish path:** champion agent on platform under our handle.
 
 ### P0 — before Jun 21 (3 days)
 
-1. **Sandbox recon** — Discord researcher channel + BenchFlow pack: competition ID, match length (500h?), allowed code surface, whether **base LLM is fixed** [NEEDS VERIFICATION per PR].
+1. **Sandbox recon** — `./scripts/list_arena_competitions.sh` daily + Discord researcher channel + BenchFlow pack: competition ID, match length (500h?), allowed code surface, whether **base LLM is fixed** [NEEDS VERIFICATION per PR]. See `references/researcher-track-sandbox.md`.
 2. **HU regression matrix** — extend `tests/test_cemini_regression.py` with HU table fixtures; run `pokerkit selfplay` HU 500h vs tight-passive baseline.
 3. **Submit pipeline** — document exact command from starter kit / `arena.md` skill; dry-run sandbox submit from laptop (not prod rsync until confirmed).
 4. **Deprioritize dual lobby** — main playground for HUD field intel only; no top-20 qual chase burn.
@@ -37,7 +38,7 @@ Pivot optimization from **6-max Playground qual** (rank ~103) to **Poker Agent C
 |------------|--------|
 | **HU preflop** | Branch or config `CEMINI_TABLE_MAX=2`: gin thresholds already IP/OOP; verify open-raise sizing vs BenchFlow engine |
 | **Memory** | Extend `session_memory.py`: within-hand villain line + cross-session JSON on librarian/prod reports; map to Raeth 3-layer model |
-| **Multi-axis eval** | Log bet-size buckets + positional fold rate per session (proxy for 2606.13815 axes); don't optimize only bb/100 |
+| **Multi-axis eval** | Log bet-size buckets + positional fold rate per session; **export trajectory JSON** after sandbox runs (`export_competition_hands.py` / replay) for researcher contribution |
 | **Stack-off discipline** | Keep R34 gin/broadway guards — HU shove spots more frequent |
 | **Scans** | Re-run dev.fun personality/memory scans before publish; target memory score ≥80 |
 
@@ -64,6 +65,7 @@ Pivot optimization from **6-max Playground qual** (rank ~103) to **Poker Agent C
 ## Sources
 
 - [Source: poker-arena-onepager.pdf (retrieved 2026-06-18)]
+- [Source: Discord #researcher-track welcome (retrieved 2026-06-18)]
 - [Source: https://dev.fun/ (retrieved 2026-06-18)]
 - [Source: https://www.prnewswire.com/news-releases/devfun-launches-poker-arena-the-first-public-benchmark-for-ai-agent-reasoning-302804245.html (retrieved 2026-06-18)]
 - [Source: arxiv-2606.13815-poker-arena-multi-axis-profiling-of-strategic-re.pdf p.1]

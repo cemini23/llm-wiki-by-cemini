@@ -7,6 +7,7 @@ related:
   - concepts/devfun-poker-agent-challenge-2026.md
   - entities/platforms/devfun-arena.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
+  - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
 maturity: draft
 read_status: unread-stub
 created: 2026-06-18

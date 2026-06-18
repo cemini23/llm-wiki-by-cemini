@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import importlib.util
+import json
 import os
 import random
 import sys
@@ -387,7 +388,8 @@ def play_one_hand(decide_fn: Callable, opponents: list[Callable],
                   hand_id: int, hero_idx: int = 0,
                   max_actions: int = 200,
                   *,
-                  training_hud: bool = False) -> int:
+                  training_hud: bool = False,
+                  trajectory: Optional[list[dict]] = None) -> int:
     """Play a single hand; return hero's chip delta (final stack -
     starting stack)."""
     n = 1 + len(opponents)
@@ -417,6 +419,7 @@ def play_one_hand(decide_fn: Callable, opponents: list[Callable],
     table_id = f"local-{hand_id:05d}"
     train_cid = "training-local" if training_hud else None
     steps = 0
+    hero_step = 0
     while state.status and state.actor_index is not None and steps < max_actions:
         actor = state.actor_index
         table = _build_table(
@@ -435,24 +438,105 @@ def play_one_hand(decide_fn: Callable, opponents: list[Callable],
             action = fn(table)
         if not isinstance(action, dict):
             action = {"action": "fold"}
+        if trajectory is not None and actor == hero_idx:
+            hero_step += 1
+            trajectory.append(_hero_trajectory_row(
+                hand_id=hand_id,
+                step=hero_step,
+                table=table,
+                action=action,
+                n_players=n,
+                big_blind=big_blind,
+            ))
         _apply_action(state, action, big_blind)
         steps += 1
 
     final = int(state.stacks[hero_idx])
+    if trajectory is not None:
+        trajectory.append({
+            "record_type": "hand_result",
+            "hand_id": hand_id,
+            "chip_delta": final - starting_stack,
+            "hero_decisions": hero_step,
+        })
     return final - starting_stack
+
+
+def _hero_trajectory_row(
+    hand_id: int,
+    step: int,
+    table: dict,
+    action: dict,
+    n_players: int,
+    big_blind: int,
+) -> dict:
+    """One hero decision for Researcher Round trajectory export."""
+    aa = table.get("allowedActions") or {}
+    reasoning = str(action.get("reasoning") or "")
+    pos = "?"
+    try:
+        from position_utils import hero_position_label  # noqa: WPS433
+        pos = hero_position_label(table)
+    except Exception:
+        pass
+    pot = int(table.get("potChips") or 0)
+    amt = action.get("amount")
+    bet_bucket = _bet_size_bucket(action.get("action"), amt, pot, big_blind)
+    return {
+        "record_type": "decision",
+        "hand_id": hand_id,
+        "step": step,
+        "street": table.get("street"),
+        "position": pos,
+        "n_players": n_players,
+        "action": action.get("action"),
+        "amount": amt,
+        "pot_chips": pot,
+        "call_chips": aa.get("callChips"),
+        "bet_size_bucket": bet_bucket,
+        "reasoning_len": len(reasoning),
+    }
+
+
+def _bet_size_bucket(
+    action_name: Optional[str],
+    amount: Optional[int],
+    pot: int,
+    big_blind: int,
+) -> str:
+    name = (action_name or "").lower()
+    if name not in ("bet", "raise", "all-in"):
+        return "none"
+    if amount is None:
+        return "unknown"
+    try:
+        amt = int(amount)
+    except (TypeError, ValueError):
+        return "unknown"
+    ref = max(pot, big_blind * 2, 1)
+    ratio = amt / ref
+    if ratio <= 0.4:
+        return "small"
+    if ratio <= 0.75:
+        return "medium"
+    if ratio <= 1.25:
+        return "pot"
+    return "large"
 
 
 def run_selfplay(decide_fn: Callable, n_hands: int, opponent_label: str,
                  n_players: int, starting_stack: int, small_blind: int,
                  big_blind: int, seed: Optional[int] = None,
                  *,
-                 training_hud: bool = False) -> dict:
+                 training_hud: bool = False,
+                 trajectory_out: Optional[Path] = None) -> dict:
     """Run N hands and return aggregate stats."""
     if seed is not None:
         random.seed(seed)
     # Build opponents list (length = n_players - 1).
     opponents = _opponents_for_selfplay(n_players, opponent_label)
 
+    trajectory: list[dict] = []
     deltas: list[int] = []
     t0 = time.time()
     for i in range(n_hands):
@@ -462,7 +546,8 @@ def run_selfplay(decide_fn: Callable, n_hands: int, opponent_label: str,
                               small_blind=small_blind, big_blind=big_blind,
                               hand_id=i + 1,
                               hero_idx=i % n_players,
-                              training_hud=training_hud)
+                              training_hud=training_hud,
+                              trajectory=trajectory if trajectory_out else None)
         except Exception as e:
             print(f"  [selfplay] WARN: hand {i+1} failed ({e}); counted as 0",
                   file=sys.stderr)
@@ -478,6 +563,14 @@ def run_selfplay(decide_fn: Callable, n_hands: int, opponent_label: str,
     pushes = n_hands - wins - losses
     bb_per_100 = (net / big_blind) / max(n_hands, 1) * 100
 
+    trajectory_path: Optional[str] = None
+    if trajectory_out is not None:
+        trajectory_out.parent.mkdir(parents=True, exist_ok=True)
+        with trajectory_out.open("w", encoding="utf-8") as fh:
+            for row in trajectory:
+                fh.write(json.dumps(row, sort_keys=True) + "\n")
+        trajectory_path = str(trajectory_out)
+
     return {
         "hands": n_hands,
         "opponent": opponent_label,
@@ -489,6 +582,10 @@ def run_selfplay(decide_fn: Callable, n_hands: int, opponent_label: str,
         "bb_per_100": bb_per_100,
         "elapsed_s": elapsed,
         "hands_per_s": n_hands / max(elapsed, 0.001),
+        "trajectory_path": trajectory_path,
+        "trajectory_decisions": sum(
+            1 for r in trajectory if r.get("record_type") == "decision"
+        ),
     }
 
 
@@ -520,6 +617,8 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("--training-hud", action="store_true",
                         help="Exercise cemini HUD path offline (competitionId=training-local; "
                              "set TRAINING_OPPONENT_MODE or match --opponent rock/maniac)")
+    parser.add_argument("--trajectory-out", default=None,
+                        help="Write hero decision trajectory JSONL (Researcher Round)")
     args = parser.parse_args(argv)
 
     if args.training_hud and args.opponent in ("rock", "maniac", "tight"):
@@ -551,6 +650,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         print(f"[selfplay] training HUD mode={os.environ.get('TRAINING_OPPONENT_MODE', '?')} "
               f"(private opponent_hud_exploit required)")
 
+    traj_out = Path(args.trajectory_out) if args.trajectory_out else None
+
     stats = run_selfplay(
         decide_fn=decide_fn,
         n_hands=args.hands,
@@ -561,6 +662,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         big_blind=args.big_blind,
         seed=args.seed,
         training_hud=args.training_hud,
+        trajectory_out=traj_out,
     )
 
     sep = "─" * 56
@@ -574,6 +676,9 @@ def main(argv: Optional[list[str]] = None) -> int:
     print(f"  bb/100      : {stats['bb_per_100']:+.1f}")
     print(f"  elapsed     : {stats['elapsed_s']:.1f}s  "
           f"({stats['hands_per_s']:.0f} hands/s)")
+    if stats.get("trajectory_path"):
+        print(f"  trajectory  : {stats['trajectory_path']} "
+              f"({stats.get('trajectory_decisions', 0)} decisions)")
     print(sep)
     print("")
     print("  Reminder: this is vs SIMPLE local bots, NOT DeepCFR.")

@@ -6,6 +6,7 @@ keywords: [poker agent challenge, dev.fun, heads-up, Tom Dwan, Jungleman, BenchF
 related:
   - concepts/devfun-poker-agent-challenge-2026.md
   - concepts/active-project-research-routing.md
+  - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
   - entities/platforms/devfun-arena.md
 maturity: validated

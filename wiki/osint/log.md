@@ -1,6 +1,16 @@
 # Wiki Log
 
-## [2026-06-18] ingest | dev.fun Poker Agent Challenge — researcher track
+## [2026-06-18] query | dev.fun Researcher Round — Discord welcome
+
+- **Source** — `@sources/devfun-researcher-track-discord-welcome-2026-06-18.md` (operator relay from `#researcher-track`)
+- **Confirmed** — $30K pool · 50 seats · Jun 21 closed beta · trajectory export · eval = how agents play (not only win)
+- **Updates** — concept, entity, optimization brief, `references/researcher-track-sandbox.md`, index
+
+## [2026-06-18] ops | Researcher Round trajectory export + HU gate
+
+- **Trajectory** — `selfplay --trajectory-out`, `export_researcher_trajectory.sh`, `researcher_trajectory_summary.py` (axis proxies → `axis_summary.json`)
+- **Gate** — `run_hu_sandbox_gate.sh` bundles regression + selfplay + trajectory per run
+- **Tests** — HU regression (5 spots) + trajectory summary smoke
 
 - **Source** — `poker-arena-onepager.pdf` (operator invite collateral)
 - **Concept** — `@concepts/devfun-poker-agent-challenge-2026.md` (HU sandbox, timeline, optimization pillars)

@@ -139,6 +139,133 @@ def six_max_table(
     }
 
 
+def hu_table(
+    *,
+    name: str,
+    hero_seat: int,
+    street: str,
+    board: list[str],
+    pot: int,
+    hero_hole: list[str],
+    hero_stack: int,
+    allowed: dict,
+    hero_bet: int = 0,
+    villain_bets: dict[int, int] | None = None,
+    stacks: dict[int, int] | None = None,
+    button_seat: int = 1,
+    competition_id: str = "regression-hu",
+    recent_events: list[dict] | None = None,
+) -> dict:
+    """Heads-up table — seat 1 = BTN/SB, seat 2 = BB (Challenge-shaped)."""
+    villain_bets = villain_bets or {}
+    stacks = stacks or {}
+    seats = []
+    for num in range(1, 3):
+        is_hero = num == hero_seat
+        seats.append(
+            _seat(
+                num,
+                agent_id="hero" if is_hero else "villain",
+                hole=hero_hole if is_hero else None,
+                stack=stacks.get(num, hero_stack if is_hero else 200),
+                bet=villain_bets.get(num, hero_bet if is_hero else 0),
+                training_archetype="tight" if num != hero_seat else None,
+            )
+        )
+    return {
+        "id": f"tbl_hu_{name}",
+        "tableId": f"tbl_hu_{name}",
+        "competitionId": competition_id,
+        "status": "Active",
+        "street": street,
+        "potChips": pot,
+        "boardCards": board,
+        "smallBlindChips": 1,
+        "bigBlindChips": 2,
+        "buttonSeatNumber": button_seat,
+        "selfSeatNumber": hero_seat,
+        "actingSeatNumber": hero_seat,
+        "maxPlayers": 2,
+        "seats": seats,
+        "allowedActions": allowed,
+        "recentEvents": recent_events or [],
+    }
+
+
+def hu_btn_vs_shove(
+    hero_hole: list[str], *, shove_to: int = 95, hero_stack: int = 100
+) -> dict:
+    """HU BTN/SB facing BB shove — R34 AJo leak shape."""
+    return hu_table(
+        name="btn_vs_shove",
+        hero_seat=1,
+        street="Preflop",
+        board=[],
+        pot=3 + shove_to,
+        hero_hole=hero_hole,
+        hero_stack=hero_stack,
+        hero_bet=1,
+        villain_bets={1: 1, 2: shove_to},
+        stacks={1: hero_stack, 2: shove_to},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_all_in=True,
+            call_chips=shove_to - 1,
+            call_to=shove_to,
+            all_in_to=hero_stack,
+        ),
+    )
+
+
+def hu_sb_unopened(hero_hole: list[str], *, hero_stack: int = 198) -> dict:
+    """HU SB first-in — should open premium, fold trash."""
+    return hu_table(
+        name="sb_unopened",
+        hero_seat=1,
+        street="Preflop",
+        board=[],
+        pot=3,
+        hero_hole=hero_hole,
+        hero_stack=hero_stack,
+        hero_bet=1,
+        villain_bets={1: 1, 2: 2},
+        stacks={1: hero_stack, 2: 198},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_raise=True,
+            call_chips=1,
+            call_to=2,
+            raise_range={"min": 4, "max": hero_stack},
+        ),
+    )
+
+
+def hu_bb_vs_minraise(hero_hole: list[str], *, raise_to: int = 6, hero_stack: int = 194) -> dict:
+    """HU BB facing BTN min-raise — defend discipline."""
+    return hu_table(
+        name="bb_vs_minraise",
+        hero_seat=2,
+        street="Preflop",
+        board=[],
+        pot=3 + raise_to,
+        hero_hole=hero_hole,
+        hero_stack=hero_stack,
+        hero_bet=2,
+        villain_bets={1: raise_to, 2: 2},
+        stacks={1: 194, 2: hero_stack},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_raise=True,
+            call_chips=raise_to - 2,
+            call_to=raise_to,
+            raise_range={"min": raise_to * 2, "max": hero_stack},
+        ),
+    )
+
+
 def mp_unopened(hero_hole: list[str], *, equity_boost: bool = False) -> dict:
     """Hero MP, 6-max, unopened pot — classic 74o leak spot."""
     # seat layout: BTN=1, SB=2, BB=3, UTG=4, MP=5, CO=6
