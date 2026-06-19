@@ -15,6 +15,8 @@ related:
   - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
   - sources/firefly-sh2-production-interview-youtube-2026-06-17.md
   - entities/projects/castle-sim.md
+  - sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md
+  - sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md
 read_status: read
 source_type: web-scan
 maturity: validated

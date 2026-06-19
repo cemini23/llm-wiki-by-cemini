@@ -16,6 +16,9 @@ related:
   - sources/github-stronghold-2-scan-2026-06-13.md
   - sources/unofficial-crusader-patch2-phase-0-audit-2026-06-13.md
   - concepts/stronghold-franchise-best-of-shelf.md
+  - sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md
+  - entities/tools/evrey-shc-aiv.md
+  - entities/tools/krarilotus-crusader-efficient-ai.md
   - concepts/stronghold-crusader-ai-modding-shelf.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
 maturity: validated

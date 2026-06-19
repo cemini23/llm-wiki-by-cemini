@@ -4,7 +4,14 @@ Append-only chronological log.
 
 ---
 
-## [2026-06-18] ingest | Franchise BO1–BO5 locked + pass-2 research
+## [2026-06-19] ingest | Inbox triage + Crusader AIV Phase-0 + briefs
+
+- Inbox: 5 arXiv digest PDFs → @sources/inbox-arxiv-reject-batch-2026-06-19.md; Shachi 2509.21862 **defer @ccc-wiki**; archived to egress; inbox cleared
+- Phase-0: @sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md, @sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md → STEAL-FROM entities
+- Briefs: `story-033-sh2-kingmaker-youtube-watchlist.md`, `briefs/research/crusader-aiv-study-loop.md`; synced → `castle-sim/briefs/`
+- Sweep: @sweeps/2026-06-19-daily.md
+
+---
 
 - Operator: crime-only (no fear), capped emergency levy, estate picker, night scenarios, no fantasy
 - Brief: `briefs/story-032-franchise-cherry-picks.md`; `castle-sim/data/sh2/emergency_levy.json`

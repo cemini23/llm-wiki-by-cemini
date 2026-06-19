@@ -77,6 +77,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [serpent-ai](entities/tools/serpent-ai.md) | validated | Visual automation — **STEAL-FROM** (Phase-0) |
 | [airtest](entities/tools/airtest.md) | validated | Image UI test — **CONDITIONAL-GO** @ccc |
 | [unofficial-crusader-patch2](entities/tools/unofficial-crusader-patch2.md) | validated | SHC mod — **STEAL-FROM** (AIV study) |
+| [evrey-shc-aiv](entities/tools/evrey-shc-aiv.md) | validated | Crusader AIV pack — **STEAL-FROM** (layout) |
+| [krarilotus-crusader-efficient-ai](entities/tools/krarilotus-crusader-efficient-ai.md) | validated | Crusader efficient AIV + aggressive AIC — **STEAL-FROM (WIP)** |
 | [stronghold2-mp-ai-patch](entities/tools/stronghold2-mp-ai-patch.md) | validated | SH2 MP AI unlock — MIT pattern patch |
 | [sh2-mp-ai-enabler](entities/tools/sh2-mp-ai-enabler.md) | validated | SH2 MP AI — GitLab/questforgaming (maintained) |
 | [sh2-community-lord-editor](entities/tools/sh2-community-lord-editor.md) | validated | SH2 gameRules.dat lord editor — design ref |
@@ -180,3 +182,6 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-06-18](sources/inbox-arxiv-reject-batch-2026-06-18.md) | read |
 | [stronghold-franchise-research-pass2-2026-06-18](sources/stronghold-franchise-research-pass2-2026-06-18.md) | read |
 | [stronghold-franchise-best-of-research-2026-06-18](sources/stronghold-franchise-best-of-research-2026-06-18.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-19](sources/inbox-arxiv-reject-batch-2026-06-19.md) | read |
+| [evrey-shc-aiv-phase-0-audit-2026-06-19](sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md) | read |
+| [krarilotus-efficient-ai-phase-0-audit-2026-06-19](sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md) | read |

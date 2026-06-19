@@ -9,18 +9,25 @@ related:
   - concepts/stronghold-2-ai-lords.md
   - concepts/stronghold-2-kingmaker-strategy.md
   - entities/tools/unofficial-crusader-patch2.md
+  - entities/tools/evrey-shc-aiv.md
+  - entities/tools/krarilotus-crusader-efficient-ai.md
   - entities/projects/castle-sim.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
+  - sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md
+  - sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md
   - sources/github-stronghold-2-scan-2026-06-13.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-19
 ---
 
 ## Relations
 
 - @entities/tools/unofficial-crusader-patch2.md — MIT Phase-0 GO
+- @entities/tools/evrey-shc-aiv.md — STEAL-FROM AIV layouts (Phase-0 2026-06-19)
+- @entities/tools/krarilotus-crusader-efficient-ai.md — STEAL-FROM aggressive AIC + WIP AIV (Phase-0 2026-06-19)
 - @concepts/stronghold-2-ai-lords.md — SH2 lord tables to transcribe into JSON
+- Gitignored brief: `briefs/research/crusader-aiv-study-loop.md`
 
 ## Raw Concept
 
@@ -56,8 +63,8 @@ castle-sim: lord_profiles.json + castle_templates/*.json
 | Repo | Focus |
 |------|-------|
 | [UnofficialCrusaderPatch2](https://github.com/UnofficialCrusaderPatch/UnofficialCrusaderPatch2) | AI Swapper, ByBurton AIC editor integration |
-| [Evrey/SHC_AIV](https://github.com/Evrey/SHC_AIV) | Full skirmish AIV replacement set |
-| [Krarilotus/Stronghold-Crusader-efficient-AI](https://github.com/Krarilotus/Stronghold-Crusader-efficient-AI) | Per-lord prototype castles + build order docs |
+| @entities/tools/evrey-shc-aiv.md | Full skirmish AIV replacement set — **STEAL-FROM** |
+| @entities/tools/krarilotus-crusader-efficient-ai.md | Per-lord prototype castles + aggressive AIC — **STEAL-FROM (WIP)** |
 | [Monsterfisch/StrongholdsOfConquest_](https://github.com/Monsterfisch/StrongholdsOfConquest_) | Historical ↔ AIV + aggressive AIC bundle |
 | [NMme/CrusaderAIManager](https://github.com/NMme/CrusaderAIManager) | Load custom lord into base mod |
 | [gynt/stronghold-mapeditortools](https://github.com/gynt/stronghold-mapeditortools) | SH1/Crusader map editor utilities |

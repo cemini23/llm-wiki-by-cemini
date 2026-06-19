@@ -16,6 +16,9 @@ related:
   - entities/tools/sh2-community-lord-editor.md
   - sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md
   - sources/sh2-nation-fandom-ai-lords-2026-06-18.md
+  - entities/tools/evrey-shc-aiv.md
+  - entities/tools/krarilotus-crusader-efficient-ai.md
+  - concepts/stronghold-crusader-ai-modding-shelf.md
   - concepts/stronghold-2-production-buildings.md
   - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
   - entities/projects/castle-sim.md

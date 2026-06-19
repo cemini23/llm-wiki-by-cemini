@@ -47,6 +47,8 @@ related:
   - sources/shaggydev-udd-navigation-2025.md
   - concepts/stronghold-franchise-best-of-shelf.md
   - concepts/stronghold-crusader-ai-modding-shelf.md
+  - entities/tools/evrey-shc-aiv.md
+  - entities/tools/krarilotus-crusader-efficient-ai.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
 maturity: validated
 created: 2026-06-13
