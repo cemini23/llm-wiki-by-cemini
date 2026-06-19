@@ -15,9 +15,11 @@ related:
   - concepts/stronghold-2-ai-lords.md
   - entities/projects/castle-sim.md
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
+  - sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md
+  - concepts/stronghold-2-lord-feasts-luxury-chains.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-19
 ---
 
 ## Relations
@@ -49,7 +51,7 @@ Bread: wheatfarm(15w) → mill(20w,3) → bakery(10w)
 Ale: hopfarm(15w) → brewery(10w) → inn(100w)
 Cloth: sheepfarm(20w) → weaver(10w) → market/cloth goal
 Weapons: ironmine + poleturner/fletcher/blacksmith/armourer/tanner → armoury
-Honour food: garden/pig/vineyard/vintner/fishpond → lord's kitchen
+Honour food: garden/pig/vineyard/vintner/fishpond → lord's kitchen — detail @concepts/stronghold-2-lord-feasts-luxury-chains.md
 ```
 
 ### Gold-heavy buildings (Kingmaker economy pressure)
@@ -82,4 +84,4 @@ Reference implementation stub: `castle-sim/data/sh2/lord_profiles.json` for AI; 
 
 ## Dead Ends
 
-- Numeric **stockpile section caps** per good — defer to @sources/stronghold-2-heaven-targeted-2026-06-13.md resources page
+- Numeric **stockpile section caps** — @sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md (2026-06-19)

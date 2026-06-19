@@ -14,6 +14,7 @@ related:
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - entities/projects/castle-sim.md
   - concepts/stronghold-franchise-best-of-shelf.md
+  - concepts/stronghold-2-lord-feasts-luxury-chains.md
 maturity: validated
 created: 2026-06-17
 updated: 2026-06-17

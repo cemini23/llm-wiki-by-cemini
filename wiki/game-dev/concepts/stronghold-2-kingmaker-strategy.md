@@ -23,6 +23,7 @@ related:
   - sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
   - concepts/stronghold-crusader-ai-modding-shelf.md
   - entities/projects/castle-sim.md
+  - concepts/stronghold-2-lord-feasts-luxury-chains.md
 maturity: validated
 created: 2026-06-17
 updated: 2026-06-19

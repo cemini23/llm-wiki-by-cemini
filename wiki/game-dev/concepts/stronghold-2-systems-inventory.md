@@ -8,6 +8,7 @@ related:
   - concepts/stronghold-2-popularity-model.md
   - concepts/stronghold-2-crime-punishment-loop.md
   - concepts/stronghold-2-economy-storage-chains.md
+  - concepts/stronghold-2-lord-feasts-luxury-chains.md
   - concepts/stronghold-2-architect-controls.md
   - concepts/stronghold-systems-inventory.md
   - concepts/stronghold-deconstruction.md
@@ -28,6 +29,7 @@ related:
   - concepts/stronghold-2-estates-system.md
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - sources/sh2-heaven-kingmaker-strategy-2026-06-17.md
+  - sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md
   - sources/gamespot-stronghold-2-qanda-2004.md
   - sources/gamespot-stronghold-2-honor-sieges-2004.md
   - sources/gamespy-stronghold-2-siege-dev-diary-2005.md

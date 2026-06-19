@@ -4,6 +4,14 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-19] research | Heaven resources + luxury feast deep-read
+
+- Stockpile per-section caps + armoury market prices → @sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md
+- Concept: @concepts/stronghold-2-lord-feasts-luxury-chains.md (Phase C feast/inn/Lady loops)
+- Closed gameinfo follow-up queue item; W5 → implementation phase
+
+---
+
 ## [2026-06-19] research | Story-033 Kingmaker YouTube watchlist
 
 - Transcripts: 5/7 videos (1 private, 1 no captions)

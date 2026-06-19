@@ -12,6 +12,7 @@ related:
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
+  - concepts/stronghold-2-lord-feasts-luxury-chains.md
 read_status: read
 source_type: community-guide
 source_url: https://stronghold2.heavengames.com/strategy/kingmakertips/

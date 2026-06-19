@@ -37,6 +37,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [stronghold-2-popularity-model](concepts/stronghold-2-popularity-model.md) | validated | SH2 eight-category popularity tables |
 | [stronghold-2-crime-punishment-loop](concepts/stronghold-2-crime-punishment-loop.md) | validated | Crime state machine + punishment roster |
 | [stronghold-2-economy-storage-chains](concepts/stronghold-2-economy-storage-chains.md) | validated | Stockpile/granary chains + labor caps |
+| [stronghold-2-lord-feasts-luxury-chains](concepts/stronghold-2-lord-feasts-luxury-chains.md) | validated | Lord's Kitchen, feasts, ale/inn, Lady dance |
 | [stronghold-2-architect-controls](concepts/stronghold-2-architect-controls.md) | validated | Spacebar architect + hotkeys for Fork B |
 | [stronghold-2-github-ecosystem-shelf](concepts/stronghold-2-github-ecosystem-shelf.md) | validated | SH2 GitHub patches, trainers, S2M RE |
 | [stronghold-2-estates-system](concepts/stronghold-2-estates-system.md) | validated | Multi-estate carters + village capture |
@@ -183,6 +184,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [stronghold-franchise-research-pass2-2026-06-18](sources/stronghold-franchise-research-pass2-2026-06-18.md) | read |
 | [stronghold-franchise-best-of-research-2026-06-18](sources/stronghold-franchise-best-of-research-2026-06-18.md) | read |
 | [sh2-kingmaker-youtube-watchlist-2026-06-19](sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md) | read |
+| [sh2-heaven-resources-luxury-deep-read-2026-06-19](sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md) | read |
 | [inbox-arxiv-reject-batch-2026-06-19](sources/inbox-arxiv-reject-batch-2026-06-19.md) | read |
 | [evrey-shc-aiv-phase-0-audit-2026-06-19](sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md) | read |
 | [krarilotus-efficient-ai-phase-0-audit-2026-06-19](sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md) | read |

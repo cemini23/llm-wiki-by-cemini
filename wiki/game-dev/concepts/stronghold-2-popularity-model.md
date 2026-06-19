@@ -7,6 +7,8 @@ related:
   - concepts/stronghold-2-systems-inventory.md
   - concepts/stronghold-2-crime-punishment-loop.md
   - concepts/stronghold-2-economy-storage-chains.md
+  - concepts/stronghold-2-lord-feasts-luxury-chains.md
+  - sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md
   - concepts/operator-vision-sh2-personal-clone.md
   - sources/stronghold-2-heaven-targeted-2026-06-13.md
   - sources/sh2-youtube-parity-watchlist-2026-06-17.md

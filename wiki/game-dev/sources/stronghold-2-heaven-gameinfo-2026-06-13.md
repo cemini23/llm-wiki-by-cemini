@@ -20,12 +20,14 @@ related:
   - concepts/stronghold-2-production-buildings.md
   - sources/sh2-heaven-campaign-walkthroughs-2026-06-17.md
   - entities/projects/castle-sim.md
+  - concepts/stronghold-2-lord-feasts-luxury-chains.md
+  - sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md
 read_status: read
 source_type: community-wiki
 source_url: https://stronghold2.heavengames.com/gameinfo/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-17
+updated: 2026-06-19
 ---
 
 ## Raw Concept
@@ -61,7 +63,8 @@ Primary **mechanics reference** for SH2 personal-clone research. Indexed section
 - [x] Castle structure / walls → @sources/sh2-heaven-castle-structures-2026-06-18.md, @concepts/stronghold-2-castle-structures.md
 - [x] Kingmaker rank table → @sources/sh2-heaven-kingmaker-ranks-2026-06-18.md
 - [x] Per-building industry/civilian stat pages → @sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
-- [ ] Stockpile per-good section caps (resources page deep-read)
+- [x] Stockpile per-good section caps → @sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md, @concepts/stronghold-2-economy-storage-chains.md
+- [x] Luxury / Lord's Kitchen feast chains → @concepts/stronghold-2-lord-feasts-luxury-chains.md
 
 ## Snippets
 

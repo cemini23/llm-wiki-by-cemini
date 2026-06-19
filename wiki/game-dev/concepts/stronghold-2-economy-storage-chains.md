@@ -14,9 +14,11 @@ related:
   - concepts/stronghold-2-production-buildings.md
   - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
   - concepts/stronghold-2-github-ecosystem-shelf.md
+  - sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md
+  - concepts/stronghold-2-lord-feasts-luxury-chains.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-18
+updated: 2026-06-19
 ---
 
 ## Relations
@@ -34,12 +36,26 @@ Four storage buildings anchor logistics: **Stockpile** (12 goods), **Armoury** (
 
 | Building | Holds | Notes |
 |----------|-------|-------|
-| Stockpile | 12 resource types | 30 sections each; **max 3 stockpiles per estate**, must be **adjacent** |
+| Stockpile | 12 resource types | 30 sections each; **adjacent** stockpiles allowed (Heaven); community uses 2–3 for layout |
 | Armoury | Weapons + armour | Feeds Barracks equipping |
 | Granary | Apples, bread, cheese, meat | Ration + popularity |
 | Lord's Kitchen | Eels, geese, pigs, vegetables, wine | Feasts → honour |
 
-Load sizes and section caps vary by good — see tables below.
+Load sizes and section caps vary by good — see tables below. **Full stockpile stalls production** for affected goods [CONFIRMED — community; granary does not overfill-block].
+
+### Armoury weapons — market prices [CONFIRMED — resources 2026-06-19]
+
+| Item | Buy | Sell |
+|------|-----|------|
+| Bows | 31 | 15 |
+| Crossbows | 58 | 30 |
+| Spears | 20 | 10 |
+| Pikes | 36 | 18 |
+| Maces / Swords | 58 | 30 |
+| Leather armour | 25 | 12 |
+| Plate armour | 58 | 30 |
+
+Kingmaker PvE often **buys weapons** instead of full workshop chains — @concepts/stronghold-2-kingmaker-strategy.md.
 
 ### Peasant labor rules [CONFIRMED — FAQ gameplay]
 
@@ -137,7 +153,7 @@ flowchart LR
 | Wood / stone | Tier 1–2 ✓ |
 | Wheat → bread | Tier 2 ✓ |
 | Meat (hunter) | story-011 planned |
-| Ale / church / lord kitchen | Phase C |
+| Ale / church / lord kitchen | Phase C | @concepts/stronghold-2-lord-feasts-luxury-chains.md |
 | Weapons → armoury | Phase D |
 
 ## Snippets
@@ -146,5 +162,5 @@ Saw Pit delivers **16 wood per cart load**; iron ore **8 per load**.
 
 ## Dead Ends
 
-- **Fourth stockpile** — hard cap 3 per estate
+- **Fourth stockpile** — Heaven allows unlimited **adjacent** stockpiles; 3 is community layout habit, not engine cap
 - **Tanner without dairy** — needs live cow from Dairy Farm
