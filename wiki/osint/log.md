@@ -1,5 +1,81 @@
 # Wiki Log
 
+## [2026-06-19] researcher-track | 7-model super-audit P0 fixes + gate + deploy
+
+- **P0 shipped:** series `match_win` (80h/match TrueSkill proxy), `lag` opponent in audit, maniac bb/100 demoted to advisory, prod `CEMINI_TABLE_FORMAT=auto` (Playground S3 6-max intel)
+- **Policy:** wider HU BB defend/3-bet chart + S1B exploit ordering; SB→BTN chart map; `open_steal_equity` merge fix
+- **Gate 500h HU PASS:** PFR 21.4%, VPIP−PFR 7.4%; series_win rock 100% (5/5), maniac 40% (2/5, advisory ≥38%), lag 40%
+- **Memory ablation HU:** paired 150h tight — zero axis delta (memory on/off identical on this sample)
+- **Prod:** `researcher-hu.8d633f3.2026-06-19` redeploy; `CEMINI_TABLE_FORMAT=auto` until `ARENA_RESEARCHER_COMP_ID` pinned
+
+## [2026-06-19] cross-wiki | K122 validation — gambling ↔ OSINT readiness
+
+- Gambling: `@gambling-wiki/concepts/heads-up-arena-strategy.md`, `@gambling-wiki/sources/research-k122-poker-paper-landscape-2026-06-19.md`, operator plan `@gambling-wiki/briefs/2026-06-19_k122-poker-researcher-track-research-plan.md`
+- OSINT: `@concepts/devfun-researcher-track-readiness-2026-06.md` — K122 validation table (recommendation vs shipped vs gap)
+- Gaps flagged: **HU PFR limp** (9.4% PFR, 29.3% VPIP−PFR), **match W/L** metric not wired; **hold** style/SDK/Kaggle until Jun 21 beta
+- OSINT: `@concepts/devfun-researcher-pro-style-targets-2026-06.md` — K122 lit → F6 only, no runtime LLM
+
+## [2026-06-19] researcher-track | Hold code changes — rules incoming
+
+- dev.fun: more rules shortly; defer Jungleman/Dwan emulation + Kaggle submit wiring
+- Continue: HU gates, trajectory/axis, prod posture, recon when comp lists
+
+## [2026-06-19] cross-wiki | Dwan + Jungleman pro profiles (gambling ingest)
+
+- Canonical: `@gambling-wiki/sources/web-pro-villain-profiles-dwan-cates-2026-06-19.md` + entity pages
+- OSINT: `@concepts/devfun-researcher-pro-style-targets-2026-06.md` — Jungleman default HU emulation; finale exploit backlog
+
+## [2026-06-19] cross-wiki | dev.fun researcher track email (K121 gambling ingest)
+
+- Canonical: `@gambling-wiki/sources/devfun-poker-researcher-track-email-2026-06-19.md`
+- OSINT stub + synthesis: `@sources/devfun-poker-researcher-track-email-2026-06-19.md`
+- Updates: TrueSkill LB, style rep selection, Kaggle/SDK; refreshed `@entities/platforms/devfun-arena.md`, challenge + readiness concepts
+
+## [2026-06-08] researcher-track | HL auto-analyst off + guards cleared
+
+- Prod: `CEMINI_HL_AUTO_ANALYST=0`, `CEMINI_HL_AUTO_APPLY=0`; cleared 6-max `runtime_guards.json`
+- Manual HL only: HU trajectory evidence + regression + axis gate — not Playground fold patches
+
+## [2026-06-08] researcher-track | Prod PRIMARY + HU push
+
+- `researcher_prod_prep_apply.sh`: `CEMINI_PRIMARY_TRACK=researcher`, slow Playground intel, stop `lobby-s3` volume service
+- `run_cemini_lobby.py`: researcher comp highest priority; S3 intel pace when Researcher primary
+- Prod deploy: `researcher-hu.*` AGENT_VERSION, `CEMINI_TABLE_FORMAT=hu`
+
+## [2026-06-08] researcher-track | HU format confirmed
+
+- dev.fun confirmed Researcher sandbox is **heads-up** (operator relay)
+- New @sources/devfun-researcher-track-hu-format-2026-06-08.md; retracted 6-max assumption on Discord welcome source
+- Code: gate default `CEMINI_TABLE_FORMAT=hu`; soak 2p; M₉ BTN–BB when no UTG; prod prep sets `hu`
+- Wiki: readiness hub + pre-submit recon pivoted to HU-primary
+
+## [2026-06-19] researcher-track | Pre-submit recon ritual + eval-as-gate wiki
+
+- New @concepts/devfun-researcher-pre-submit-recon.md — sit-down rule, A–E phases, decision matrix
+- Readiness hub: eval-is-the-gate section + mandatory recon before submit
+- Tooling: `run_researcher_comp_recon.sh` + `researcher_comp_recon.py` (skillFile, introspection, report)
+
+## [2026-06-19] researcher-track | Format funnel note (eval → challenge champions)
+
+- Operator alignment: one-pager = sandbox LB then **published top agents to challenge** (HU-ish); sandbox likely 6-max until `skillFile` confirms
+- No prod pivot to HU-only; `CEMINI_TABLE_FORMAT=auto` stays insurance
+- Wiki: `devfun-researcher-track-readiness-2026-06.md` funnel table updated
+
+## [2026-06-19] researcher-track | Prod deploy + 500h gate + 2000h soak
+
+- **Gate** — `CEMINI_TABLE_FORMAT=auto` 500-hand dual gate PASS (`gate-auto-20260619T125013Z`)
+- **Soak** — 2000-hand 6-max trajectory + axis gate PASS (`soak-20260619T130615Z`)
+- **Prod** — rsync researcher bundle; `AGENT_VERSION=researcher-prep.8d633f3.2026-06-19`; lobby+s3 **active**
+- **API** — Researcher comp still absent (Playground S3 / Tournament S2 / Eval only)
+
+## [2026-06-19] researcher-track | Super-audit P0/P1 closure
+
+- **Agent** — Researcher runtime profile (`CEMINI_RESEARCHER_MODE`, no eval_panel/chase/sanitize bleed)
+- **Trajectory** — hero export always; M₁–M₉ proxies + `--gate` (schema v2); export cp fix
+- **HU** — `CEMINI_TABLE_FORMAT=auto|hu|6max`; HU preflop chart; **29** HU regression spots
+- **Ops** — `run_hu_sandbox_gate.sh` dual gate; memory ablation + soak scripts; preflight wire
+- **Wiki** — `devfun-researcher-track-readiness-2026-06.md` + super-audit synthesis status
+
 ## [2026-06-19] ingest | K123 daily digest — VERITAS + ScholarQuest cross-wiki
 
 - **1 inbox source** — arXiv 2606.18247 (VERITAS generator-verifier) → archived
@@ -7630,3 +7706,12 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **v6 eval prompt** — `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v6-2026-05-31.md` (8 surfaces; gambling-wiki surface 3)
 - **Federation docs** — `docs/wiki-federation-snippet.md`, all README + CLAUDE Related Wikis tables, `sync_wiki_to_librarian.sh`
 - Updated: CCC `deep-research-evaluation-prompt.md`, `cross-wiki-routing.md`, OSINT `tool-evaluation-framework.md`, `gambling-wiki-federation.md`
+
+## [2026-06-19] ops | K122 full sequence — HU gate 500 + prod deploy
+
+- **W-PFR / W-MATCH / S1B HU 3-bet** — `cemini_decide.py`, `s1b_exploit.py`, `research_static_chart.py`; PFR 20.5%, gap 6.1%; `match_win_rate` in selfplay/audit
+- **500h gate PASS** — `reports/researcher-round/gate-hu-20260619T214432Z`; maniac match_win **29.4%** advisory (target ≥38%)
+- **Starter-kit diff** — `agents/devfun-poker-arena/briefs/2026-06-19_starter-kit-vs-cemini-diff.md`
+- **Arena comps** — no Researcher HU comp yet (Playground S3, Tournament S2, Eval only)
+- **Prod deploy** — `researcher_prod_prep_apply.sh` + `CEMINI_S1B_EXPLOIT=1`
+- **7-model super audit** — `briefs/2026-06-19_researcher-hu-7model-super-audit-synthesis.md` → SHIP-WITH-FIXES; P0 metric/gate fixes before first sandbox submit

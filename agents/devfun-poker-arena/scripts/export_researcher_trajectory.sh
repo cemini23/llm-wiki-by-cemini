@@ -32,10 +32,11 @@ mkdir -p "$OUT_DIR"
 
 if [[ -n "$COMP" ]]; then
   ARENA_EXPORT="${OUT_DIR}/arena-export"
-  echo "==> Arena export competitionId=${COMP}"
+  TOP_AGENTS="${CEMINI_EXPORT_TOP_AGENTS:-50}"
+  echo "==> Arena export competitionId=${COMP} top-agents=${TOP_AGENTS} (+hero always)"
   uv run python examples/export_competition_hands.py \
     --match "$COMP" \
-    --top-agents 1 \
+    --top-agents "$TOP_AGENTS" \
     --replays-top-agents 1 \
     --out-dir "$ARENA_EXPORT"
   EXPORT_DIR="$ARENA_EXPORT"
@@ -43,8 +44,13 @@ fi
 
 SUMMARY_ARGS=(--out-dir "$OUT_DIR" --hero "$HERO")
 if [[ -n "$SELFPLAY" ]]; then
-  cp "$SELFPLAY" "${OUT_DIR}/selfplay_trajectory.jsonl"
-  SUMMARY_ARGS+=(--selfplay "${OUT_DIR}/selfplay_trajectory.jsonl")
+  dest="${OUT_DIR}/selfplay_trajectory.jsonl"
+  if [[ "$SELFPLAY" != "$dest" ]]; then
+    cp "$SELFPLAY" "$dest"
+    SUMMARY_ARGS+=(--selfplay "$dest")
+  else
+    SUMMARY_ARGS+=(--selfplay "$SELFPLAY")
+  fi
 fi
 if [[ -n "$EXPORT_DIR" ]]; then
   SUMMARY_ARGS+=(--export-dir "$EXPORT_DIR")

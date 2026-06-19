@@ -22,6 +22,38 @@ from __future__ import annotations
 from typing import Optional
 
 from position_utils import hero_position_label
+from table_format_utils import resolve_table_format  # noqa: E402
+
+# HU NLHE — BTN/SB combined seat uses BTN chart; BB defends wider than 6-max BB chart.
+_HU_OPEN_CHART = {
+    "BTN": {
+        "raise": {
+            "AA", "KK", "QQ", "JJ", "TT", "99", "88", "77", "66", "55", "44", "33", "22",
+            "AKs", "AKo", "AQs", "AQo", "AJs", "AJo", "ATs", "ATo", "A9s", "A8s", "A7s",
+            "A6s", "A5s", "A4s", "A3s", "A2s",
+            "KQs", "KQo", "KJs", "KJo", "KTs", "K9s", "K8s", "K7s", "K6s", "K5s",
+            "QJs", "QJo", "QTs", "Q9s", "Q8s",
+            "JTs", "J9s", "J8s", "T9s", "T8s", "98s", "97s", "87s", "86s", "76s", "65s",
+            "54s",
+        },
+        "call": set(),
+    },
+    "BB": {
+        "raise": {
+            "AA", "KK", "QQ", "JJ", "TT", "99", "88", "AKs", "AKo", "AQs", "AQo",
+            "AJs", "AJo", "KQs", "KJs", "QJs",
+            "A5s", "A4s", "A3s", "A2s", "76s", "65s", "54s", "87s", "86s", "98s",
+        },
+        "call": {
+            "TT", "99", "88", "77", "66", "55", "44", "33", "22",
+            "AQo", "AJs", "AJo", "ATs", "A9s", "A8s", "A7s", "A6s",
+            "KQs", "KJs", "KTs", "K9s", "K8s", "K7s", "K6s", "K5s", "K4s", "K3s", "K2s",
+            "QJs", "QTs", "Q9s", "Q8s", "Q7s", "Q6s", "Q5s",
+            "JTs", "J9s", "J8s", "T9s", "T8s", "T7s", "98s", "97s", "87s", "86s",
+            "76s", "65s", "54s", "43s", "53s", "64s", "75s", "56s",
+        },
+    },
+}
 
 
 # 6-max NLHE opening ranges, position × hand class → suggested action.
@@ -116,7 +148,11 @@ def research_static_chart(table: dict) -> dict:
         return {}
 
     pos = hero_position_label(table)
-    rules = _OPEN_CHART.get(pos) or {}
+    fmt = resolve_table_format(table)
+    chart_source = _HU_OPEN_CHART if fmt == "hu" else _OPEN_CHART
+    if fmt == "hu" and pos == "SB":
+        pos = "BTN"
+    rules = chart_source.get(pos) or {}
     if cls in rules.get("raise", set()):
         action = "raise"
     elif cls in rules.get("call", set()):
@@ -128,7 +164,8 @@ def research_static_chart(table: dict) -> dict:
         "preflop_action": action,
         "hand_class": cls,
         "position": pos,
-        "source": "static-chart-v1",
+        "source": f"static-chart-v1-{fmt}",
+        "table_format": fmt,
     }
 
 

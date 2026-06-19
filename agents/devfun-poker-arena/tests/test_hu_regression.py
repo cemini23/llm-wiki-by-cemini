@@ -27,4 +27,4 @@ def test_hu_regression_spots():
 
 
 def test_hu_regression_count():
-    assert len(hu_regression_spots()) >= 5
+    assert len(hu_regression_spots()) >= 20

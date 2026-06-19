@@ -8,6 +8,7 @@ K118 F6: per-villain deque of last 5 showdown outcomes (won/lost + preflop aggre
 """
 from __future__ import annotations
 
+import os
 from typing import Any
 
 _MIN_SAMPLES = 3
@@ -16,6 +17,11 @@ _SHOWDOWN_QUEUE_MAX = 5
 _PROCESSED_TABLES_MAX = 400
 _SHOWDOWN_MIN_FOR_EXPLOIT = 2
 _SHOWDOWN_DOMINANCE = 3  # of last ≤5
+
+
+def _session_memory_enabled() -> bool:
+    raw = str(os.environ.get("CEMINI_SESSION_MEMORY", "1")).strip().lower()
+    return raw not in {"", "0", "false", "off", "no"}
 
 
 def _seat_agent_map(table: dict) -> dict[int, str]:
@@ -264,6 +270,8 @@ def update_session_memory(state: dict, table: dict) -> None:
 
 def villain_memory_for_table(state: dict, table: dict) -> dict[str, Any]:
     """Return memory slice for active villains at this table."""
+    if not _session_memory_enabled():
+        return {"villains": {}, "note": "abstain — session memory disabled"}
     mem = state.get("session_villain_memory") or {}
     hero = _hero_seat(table)
     agents = _seat_agent_map(table)

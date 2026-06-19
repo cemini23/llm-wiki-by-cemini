@@ -39,6 +39,13 @@ else
   uv run python examples/eval_panel_gate.py --hands "${EVAL_GATE_HANDS}" --write-metrics
 fi
 
+if uv run python -c "import os; exit(0 if os.environ.get('CEMINI_RESEARCHER_MODE','').strip() in ('1','true','yes','on') else 1)" 2>/dev/null; then
+  echo ""
+  RESEARCHER_GATE_HANDS="${CEMINI_RESEARCHER_GATE_HANDS:-100}"
+  echo "==> [4b] Researcher sandbox gate (${RESEARCHER_GATE_HANDS} hands, axis gates)"
+  bash scripts/run_hu_sandbox_gate.sh --hands "$RESEARCHER_GATE_HANDS"
+fi
+
 echo ""
 echo "==> [5/5] dry-run lobby path (no network)"
 uv run examples/agent.py --agent examples/cemini_decide.py --dry-run --max-hands 15

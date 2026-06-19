@@ -19,6 +19,10 @@ _ACTION_MESSAGES = {
 
 def sanitize_output_enabled() -> bool:
     raw = os.environ.get("CEMINI_SANITIZE_OUTPUT", "")
+    if os.environ.get("CEMINI_RESEARCHER_MODE", "").strip().lower() in (
+        "1", "true", "yes", "on",
+    ):
+        return False
     return raw.lower() in ("1", "true", "yes")
 
 

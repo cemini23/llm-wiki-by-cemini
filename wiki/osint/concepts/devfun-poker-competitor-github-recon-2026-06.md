@@ -5,8 +5,8 @@ tags: [concept, poker, devfun, osint, competitor-recon]
 keywords: [github, poker-agent, gin poker-bot, system7, kecodot, arena-pokerkit]
 related:
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/devfun-researcher-track-readiness-2026-06.md
   - entities/platforms/devfun-arena.md
-  - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
 maturity: draft
 created: 2026-06-18
 updated: 2026-06-18

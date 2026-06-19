@@ -11,6 +11,7 @@ from typing import Optional
 
 from opponent_target import is_preflop_open_spot  # noqa: E402
 from position_utils import hero_is_in_position
+from table_format_utils import resolve_table_format
 
 RANK_VALUES = {rank: index for index, rank in enumerate("23456789TJQKA", start=2)}
 _RANK_CHARS = set(RANK_VALUES.keys())
@@ -372,14 +373,20 @@ def try_preflop(
     play_threshold, bet_open_threshold, raise_threshold, premium_threshold, _ = (
         _gin_preflop_thresholds(ip, placement_chase=placement_chase)
     )
+    hu = resolve_table_format(table) == "hu"
+    if hu:
+        raise_threshold = min(raise_threshold, bet_open_threshold)
 
     if call_amount > 0 and not open_spot:
-        if "raise" in available and score >= raise_threshold:
+        hu_raise_floor = raise_threshold - (14 if hu else 0)
+        if "raise" in available and score >= hu_raise_floor:
             amount = _raise_amount(table, allowed, strong=score >= premium_threshold)
             if amount is not None:
                 return "raise", amount
         if "call" in available:
-            if score >= play_threshold or required <= 0.12:
+            call_floor = play_threshold + (10 if hu else 0)
+            max_price = 0.10 if hu else 0.12
+            if score >= call_floor or required <= max_price:
                 return "call", call_amount
             if "check" in available:
                 return "check", None
@@ -395,6 +402,8 @@ def try_preflop(
     if "bet" in available and score >= bet_open_threshold:
         amount = _value_bet_amount(pot, allowed)
         return "bet", amount
+    if hu:
+        return None
     if "check" in available:
         return "check", None
     if "fold" in available:

@@ -167,6 +167,33 @@ def bot_maniac(table: dict, **_: Any) -> dict:
     return {"action": "fold"} if "fold" in avail else {"action": "call"}
 
 
+def bot_balanced_lag(table: dict, **_: Any) -> dict:
+    """Balanced LAG — wide opens, frequent raises, disciplined calls (not random)."""
+    allowed = table.get("allowedActions") or {}
+    avail = allowed.get("availableActions") or []
+    call_chips = int(allowed.get("callChips") or 0)
+    pot = int(table.get("potChips") or 0)
+
+    if call_chips == 0:
+        if "bet" in avail and random.random() < 0.58:
+            br = allowed.get("betRange") or {}
+            lo, hi = int(br.get("min") or 1), int(br.get("max") or 1)
+            target = max(lo, min(int(pot * 0.55 + 1), hi))
+            return {"action": "bet", "amount": target}
+        if "check" in avail:
+            return {"action": "check"}
+        return {"action": "fold"} if "fold" in avail else {"action": "check"}
+
+    if "raise" in avail and random.random() < 0.32:
+        rr = allowed.get("raiseRange") or {}
+        lo, hi = int(rr.get("min") or 1), int(rr.get("max") or 1)
+        target = max(lo, min(int(pot * 0.7 + call_chips * 2), hi))
+        return {"action": "raise", "amount": target}
+    if "call" in avail and random.random() < 0.62:
+        return {"action": "call"}
+    return {"action": "fold"} if "fold" in avail else {"action": "call"}
+
+
 BOT_POOL = {
     "tight": bot_tight_passive,
     "loose": bot_loose_passive,
@@ -174,6 +201,7 @@ BOT_POOL = {
     "call": bot_always_check_call,
     "rock": bot_rock,
     "maniac": bot_maniac,
+    "lag": bot_balanced_lag,
 }
 
 
@@ -211,6 +239,22 @@ def _opponents_for_selfplay(n_players: int, opponent_label: str) -> list[Callabl
     return [bot] * (n_players - 1)
 
 
+def _arena_card_str(card: Any) -> str:
+    """Normalize pokerkit Card / nested list shapes to Arena strings (e.g. ``Ah``)."""
+    if isinstance(card, (list, tuple)):
+        if not card:
+            return ""
+        return _arena_card_str(card[0])
+    short = repr(card).strip()
+    if short.startswith("'") and short.endswith("'"):
+        short = short[1:-1]
+    if len(short) >= 2 and short[0] == "[" and short[-1] == "]":
+        short = short[1:-1]
+    if " OF " in short and "(" in short and short.endswith(")"):
+        short = short[short.rfind("(") + 1 : -1]
+    return short
+
+
 def _street_label(state: State) -> str:
     # 0 cards → Preflop; 3 → Flop; 4 → Turn; 5 → River.
     n = len(state.board_cards)
@@ -239,7 +283,7 @@ def _build_table(state: State, hero_idx: int, table_id: str,
     train_tags = _training_seat_archetypes(len(starting_stacks)) if competition_id else None
     for i in range(len(starting_stacks)):
         hole = list(state.hole_cards[i]) if i < len(state.hole_cards) else []
-        hole_strs = [repr(c) for c in hole] if (i == hero_idx and hole) else []
+        hole_strs = [_arena_card_str(c) for c in hole] if (i == hero_idx and hole) else []
         street_bet = int(bets[i]) if i < len(bets) else 0
         seat: dict = {
             "seatNumber": i + 1,
@@ -258,7 +302,7 @@ def _build_table(state: State, hero_idx: int, table_id: str,
         "tableId": table_id,
         "potChips": int(pot_total),
         "street": _street_label(state),
-        "boardCards": [repr(c) for c in state.board_cards],
+        "boardCards": [_arena_card_str(c) for c in state.board_cards],
         "selfSeatNumber": hero_idx + 1,
         "smallBlindChips": int(small_blind),
         "bigBlindChips": int(big_blind),
@@ -479,6 +523,17 @@ def _hero_trajectory_row(
         pos = hero_position_label(table)
     except Exception:
         pass
+    hole_key = ""
+    try:
+        self_num = table.get("selfSeatNumber")
+        seats = table.get("seats") or []
+        self_seat = next(
+            (s for s in seats if s.get("seatNumber") == self_num), {},
+        )
+        cards = self_seat.get("holeCards") or []
+        hole_key = "".join(str(c) for c in cards)
+    except Exception:
+        pass
     pot = int(table.get("potChips") or 0)
     amt = action.get("amount")
     bet_bucket = _bet_size_bucket(action.get("action"), amt, pot, big_blind)
@@ -495,6 +550,8 @@ def _hero_trajectory_row(
         "call_chips": aa.get("callChips"),
         "bet_size_bucket": bet_bucket,
         "reasoning_len": len(reasoning),
+        "reasoning": reasoning[:180],
+        "hole_key": hole_key,
     }
 
 
@@ -524,12 +581,46 @@ def _bet_size_bucket(
     return "large"
 
 
+def _match_win_rate(wins: int, losses: int) -> Optional[float]:
+    """Win rate excluding pushes; None when no decisive outcomes."""
+    decisive = wins + losses
+    if decisive <= 0:
+        return None
+    return wins / decisive
+
+
+def _match_series_from_deltas(deltas: list[int], match_hands: int) -> dict:
+    """Aggregate hand deltas into fixed-size matches (net chips per match)."""
+    match_wins = match_losses = match_pushes = 0
+    for start in range(0, len(deltas), match_hands):
+        chunk = deltas[start:start + match_hands]
+        if len(chunk) < match_hands:
+            break
+        net = sum(chunk)
+        if net > 0:
+            match_wins += 1
+        elif net < 0:
+            match_losses += 1
+        else:
+            match_pushes += 1
+    return {
+        "match_hands": match_hands,
+        "matches": match_wins + match_losses + match_pushes,
+        "match_wins": match_wins,
+        "match_losses": match_losses,
+        "match_pushes": match_pushes,
+        "match_win_rate": _match_win_rate(match_wins, match_losses),
+    }
+
+
 def run_selfplay(decide_fn: Callable, n_hands: int, opponent_label: str,
                  n_players: int, starting_stack: int, small_blind: int,
                  big_blind: int, seed: Optional[int] = None,
                  *,
                  training_hud: bool = False,
-                 trajectory_out: Optional[Path] = None) -> dict:
+                 trajectory_out: Optional[Path] = None,
+                 match_hands: Optional[int] = None,
+                 n_matches: Optional[int] = None) -> dict:
     """Run N hands and return aggregate stats."""
     if seed is not None:
         random.seed(seed)
@@ -563,6 +654,19 @@ def run_selfplay(decide_fn: Callable, n_hands: int, opponent_label: str,
     pushes = n_hands - wins - losses
     bb_per_100 = (net / big_blind) / max(n_hands, 1) * 100
 
+    match_stats: dict = {}
+    if n_players == 2:
+        match_stats["hand_match_win_rate"] = _match_win_rate(wins, losses)
+    if match_hands is not None and match_hands > 0:
+        match_stats.update(_match_series_from_deltas(deltas, match_hands))
+    elif n_players == 2:
+        match_stats.update({
+            "match_wins": wins,
+            "match_losses": losses,
+            "match_pushes": pushes,
+            "match_win_rate": match_stats["hand_match_win_rate"],
+        })
+
     trajectory_path: Optional[str] = None
     if trajectory_out is not None:
         trajectory_out.parent.mkdir(parents=True, exist_ok=True)
@@ -571,7 +675,7 @@ def run_selfplay(decide_fn: Callable, n_hands: int, opponent_label: str,
                 fh.write(json.dumps(row, sort_keys=True) + "\n")
         trajectory_path = str(trajectory_out)
 
-    return {
+    result = {
         "hands": n_hands,
         "opponent": opponent_label,
         "players": n_players,
@@ -587,6 +691,8 @@ def run_selfplay(decide_fn: Callable, n_hands: int, opponent_label: str,
             1 for r in trajectory if r.get("record_type") == "decision"
         ),
     }
+    result.update(match_stats)
+    return result
 
 
 def main(argv: Optional[list[str]] = None) -> int:
@@ -603,7 +709,7 @@ def main(argv: Optional[list[str]] = None) -> int:
                         help="Total players including hero, 2-6 (default 2 = HU)")
     parser.add_argument("--opponent", default="tight",
                         choices=["tight", "loose", "random", "call", "mixed",
-                                 "rock", "maniac"],
+                                 "rock", "maniac", "lag"],
                         help="Opponent profile (default tight)")
     parser.add_argument("--agent", default=None,
                         help="Path to a Python file defining decide(); "
@@ -619,6 +725,12 @@ def main(argv: Optional[list[str]] = None) -> int:
                              "set TRAINING_OPPONENT_MODE or match --opponent rock/maniac)")
     parser.add_argument("--trajectory-out", default=None,
                         help="Write hero decision trajectory JSONL (Researcher Round)")
+    parser.add_argument("--match-hands", type=int, default=None,
+                        help="HU: treat N hands as one match (net chips); "
+                             "use with --matches for a series")
+    parser.add_argument("--matches", type=int, default=None,
+                        help="HU: number of matches when --match-hands is set "
+                             "(total hands = match-hands × matches)")
     args = parser.parse_args(argv)
 
     if args.training_hud and args.opponent in ("rock", "maniac", "tight"):
@@ -627,6 +739,24 @@ def main(argv: Optional[list[str]] = None) -> int:
     if args.players < 2 or args.players > 6:
         print("ERROR: --players must be between 2 and 6.", file=sys.stderr)
         return 2
+
+    match_hands = args.match_hands
+    n_matches = args.matches
+    n_hands = args.hands
+    if match_hands is not None:
+        if match_hands < 1:
+            print("ERROR: --match-hands must be >= 1.", file=sys.stderr)
+            return 2
+        if n_matches is None:
+            n_matches = max(1, n_hands // match_hands)
+        if n_matches < 1:
+            print("ERROR: --matches must be >= 1.", file=sys.stderr)
+            return 2
+        n_hands = match_hands * n_matches
+        if args.players != 2:
+            print("ERROR: --match-hands / --matches require --players 2 (HU).",
+                  file=sys.stderr)
+            return 2
 
     # Load decide().
     if args.agent:
@@ -645,7 +775,11 @@ def main(argv: Optional[list[str]] = None) -> int:
     print(f"[selfplay] opponents={args.opponent} x{args.players - 1}  "
           f"players={args.players}  stacks={args.starting_stack}  "
           f"blinds={args.small_blind}/{args.big_blind}  seed={args.seed}")
-    print(f"[selfplay] playing {args.hands} hands ...")
+    if match_hands is not None:
+        print(f"[selfplay] playing {n_matches} matches × {match_hands} hands "
+              f"({n_hands} total) ...")
+    else:
+        print(f"[selfplay] playing {n_hands} hands ...")
     if args.training_hud:
         print(f"[selfplay] training HUD mode={os.environ.get('TRAINING_OPPONENT_MODE', '?')} "
               f"(private opponent_hud_exploit required)")
@@ -654,7 +788,7 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     stats = run_selfplay(
         decide_fn=decide_fn,
-        n_hands=args.hands,
+        n_hands=n_hands,
         opponent_label=args.opponent,
         n_players=args.players,
         starting_stack=args.starting_stack,
@@ -663,6 +797,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         seed=args.seed,
         training_hud=args.training_hud,
         trajectory_out=traj_out,
+        match_hands=match_hands,
+        n_matches=n_matches,
     )
 
     sep = "─" * 56
@@ -672,6 +808,18 @@ def main(argv: Optional[list[str]] = None) -> int:
     print(f"  opponent    : {stats['opponent']} x{stats['players'] - 1}")
     print(f"  wins/losses : {stats['wins']}/{stats['losses']}  "
           f"(push: {stats['pushes']})")
+    if stats.get("players") == 2 and stats.get("hand_match_win_rate") is not None:
+        hw = stats["wins"]
+        hl = stats["losses"]
+        print(f"  hand_win_rate: {stats['hand_match_win_rate']:.1%}  ({hw}/{hw + hl})")
+    if match_hands is not None and stats.get("matches") is not None:
+        mw = stats.get("match_wins", 0)
+        ml = stats.get("match_losses", 0)
+        mwr = stats.get("match_win_rate")
+        mwr_s = f"{mwr:.1%}" if mwr is not None else "n/a"
+        print(f"  match series: {mw}/{ml}  (push: {stats['match_pushes']})  "
+              f"series_win_rate={mwr_s}  "
+              f"@ {match_hands} hands/match × {stats['matches']} matches")
     print(f"  net chips   : {stats['net_chips']:+d}")
     print(f"  bb/100      : {stats['bb_per_100']:+.1f}")
     print(f"  elapsed     : {stats['elapsed_s']:.1f}s  "

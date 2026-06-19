@@ -19,10 +19,15 @@ echo ""
 echo "==> Filter: challenge / researcher / heads-up / eval / benchmark"
 curl -sS -H "x-arena-api-key: $ARENA_KEY" "$BASE/competition/list-all" | python3 -c "
 import json, sys
-data = json.load(sys.stdin)
+raw = json.load(sys.stdin)
+data = raw.get('data', raw) if isinstance(raw, dict) else raw
+if not isinstance(data, list):
+    raise SystemExit(f'unexpected list-all payload: {type(data)}')
 keys = ('challenge', 'researcher', 'heads', 'head-to', 'bench', 'sandbox', 'eval', 'pve')
 for c in data:
+    if not isinstance(c, dict):
+        continue
     blob = (c.get('name', '') + ' ' + c.get('description', '')).lower()
     if any(k in blob for k in keys):
-        print(f\"{c['id']}  {c.get('name')}  season={c.get('seasonNumber')}\")
+        print(f\"{c.get('id')}  {c.get('name')}  season={c.get('seasonNumber')}\")
 "

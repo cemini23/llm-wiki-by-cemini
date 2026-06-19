@@ -17,12 +17,12 @@ AGENT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 HOST="${CEMINI_PROD_HOST:-cemini-prod}"
 REMOTE_DIR="/opt/devfun-poker-arena"
 
-# Expected: explicit env → local .env → S2 playground default
+# Expected: explicit env → local .env → Playground S3 (main lobby default Jun 2026)
 EXPECTED="${ARENA_LOBBY_COMPETITION_ID:-}"
 if [[ -z "${EXPECTED}" && -f "${AGENT_DIR}/.env" ]]; then
   EXPECTED="$(grep -E '^ARENA_LOBBY_COMPETITION_ID=' "${AGENT_DIR}/.env" | head -1 | cut -d= -f2- | tr -d '"' || true)"
 fi
-EXPECTED="${EXPECTED:-cmq57o53r0bhw18g23qkydb08}"
+EXPECTED="${EXPECTED:-${S3_PLAYGROUND_COMP:-cmqf827h30u7dfca3x2aqvzjv}}"
 
 PROD="$(ssh -q "${HOST}" "grep -E '^ARENA_LOBBY_COMPETITION_ID=' '${REMOTE_DIR}/.env' 2>/dev/null | head -1 | cut -d= -f2-" || true)"
 PROD="${PROD//$'\r'/}"

@@ -482,6 +482,29 @@ def _replay_deltas_by_agent(
     return out
 
 
+def _ensure_hero_in_targets(
+    lb_rows: list[dict],
+    targets: list[dict],
+    hero_agent_id: Optional[str],
+) -> list[dict]:
+    """Always fetch hero submissions even when hero is outside --top-agents slice."""
+    if not hero_agent_id:
+        return targets
+    hero_id = str(hero_agent_id)
+    seen = {
+        str((row.get("agent") or {}).get("id"))
+        for row in targets
+        if (row.get("agent") or {}).get("id")
+    }
+    if hero_id in seen:
+        return targets
+    for row in lb_rows:
+        aid = (row.get("agent") or {}).get("id")
+        if aid and str(aid) == hero_id:
+            return targets + [row]
+    return targets + [{"agent": {"id": hero_id, "handle": "hero"}}]
+
+
 def export_competition(
     client: ArenaClient,
     competition_id: str,
@@ -593,6 +616,8 @@ def export_competition(
         )
     else:
         targets = []
+
+    targets = _ensure_hero_in_targets(lb_rows, targets, hero_agent_id)
 
     for i, row in enumerate(targets):
         ag = row.get("agent") or {}

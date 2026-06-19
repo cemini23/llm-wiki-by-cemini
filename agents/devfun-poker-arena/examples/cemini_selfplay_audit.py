@@ -130,10 +130,54 @@ class GateThresholds:
     min_vpip: float = 0.0
     min_pfr: float = 0.06  # rock selfplay floor; live S2 ~11% PFR (K118 gate vs 2.2% passive)
     max_vpip_pfr_gap: float = 0.06
+    min_match_win_rate: float = 0.0
+    min_match_win_rate_maniac: float = 0.0
+    min_match_win_rate_lag: float = 0.0
+    gate_bb_maniac: bool = False  # advisory by default (negatively correlated w/ match-win)
 
 
 def _rate(num: int, den: int) -> float:
     return num / den if den else 0.0
+
+
+def _series_or_hand_mwr(run: dict) -> Optional[float]:
+    if run.get("match_hands") and run.get("match_win_rate") is not None:
+        return float(run["match_win_rate"])
+    return run.get("hand_match_win_rate") or run.get("match_win_rate")
+
+
+def _run_profile(
+    raw_decide: Any,
+    *,
+    label: str,
+    hands: int,
+    players: int,
+    seed: Optional[int],
+    match_hands: Optional[int],
+) -> tuple[dict, HeroAudit]:
+    audit = HeroAudit()
+    decide_fn = _wrap_decide(raw_decide, audit)
+    os.environ["TRAINING_OPPONENT_MODE"] = label
+    n_matches: Optional[int] = None
+    n_hands = hands
+    mh = match_hands if players == 2 and match_hands else None
+    if mh:
+        n_matches = max(1, hands // mh)
+        n_hands = mh * n_matches
+    stats = run_selfplay(
+        decide_fn=decide_fn,
+        n_hands=n_hands,
+        opponent_label=label,
+        n_players=players,
+        starting_stack=500,
+        small_blind=10,
+        big_blind=20,
+        seed=seed,
+        training_hud=True,
+        match_hands=mh,
+        n_matches=n_matches,
+    )
+    return stats, audit
 
 
 def run_audit(
@@ -143,50 +187,52 @@ def run_audit(
     seed: Optional[int],
     gate: bool,
     thresholds: GateThresholds,
+    match_hands: Optional[int] = None,
 ) -> int:
     decide_path = _EXAMPLES / "cemini_decide.py"
     raw_decide = _load_decide_from_path(str(decide_path))
-    audit = HeroAudit()
-    decide_fn = _wrap_decide(raw_decide, audit)
 
-    os.environ.setdefault("TRAINING_OPPONENT_MODE", "rock")
-    rock = run_selfplay(
-        decide_fn=decide_fn,
-        n_hands=hands,
-        opponent_label="rock",
-        n_players=players,
-        starting_stack=500,
-        small_blind=10,
-        big_blind=20,
-        seed=seed,
-        training_hud=True,
-    )
+    hu_mode = players == 2
+    profiles = ("rock", "maniac", "lag") if hu_mode else ("rock", "maniac")
+    mh = match_hands if hu_mode else None
+    if hu_mode and mh is None:
+        mh = 80
 
-    audit2 = HeroAudit()
-    decide_fn2 = _wrap_decide(raw_decide, audit2)
-    os.environ["TRAINING_OPPONENT_MODE"] = "maniac"
-    maniac = run_selfplay(
-        decide_fn=decide_fn2,
-        n_hands=hands,
-        opponent_label="maniac",
-        n_players=players,
-        starting_stack=500,
-        small_blind=10,
-        big_blind=20,
-        seed=(seed + 1) if seed is not None else None,
-        training_hud=True,
-    )
+    runs: dict[str, dict] = {}
+    audits: list[HeroAudit] = []
+    for i, label in enumerate(profiles):
+        s, a = _run_profile(
+            raw_decide,
+            label=label,
+            hands=hands,
+            players=players,
+            seed=(seed + i) if seed is not None else None,
+            match_hands=mh,
+        )
+        runs[label] = s
+        audits.append(a)
 
-    # Merge audits (both runs contribute to VPIP picture)
+    rock = runs["rock"]
+    maniac = runs["maniac"]
+    lag = runs.get("lag")
+
+    by_pos: Counter = Counter()
+    vpip_pos: Counter = Counter()
+    trash: list[str] = []
+    for a in audits:
+        by_pos.update(a.by_position)
+        vpip_pos.update(a.vpip_by_position)
+        trash.extend(a.trash_hands_opened)
+
     merged = HeroAudit(
-        preflop_seen=audit.preflop_seen + audit2.preflop_seen,
-        vpip=audit.vpip + audit2.vpip,
-        pfr=audit.pfr + audit2.pfr,
-        ep_opportunities=audit.ep_opportunities + audit2.ep_opportunities,
-        ep_trash_raises=audit.ep_trash_raises + audit2.ep_trash_raises,
-        by_position=audit.by_position + audit2.by_position,
-        vpip_by_position=audit.vpip_by_position + audit2.vpip_by_position,
-        trash_hands_opened=audit.trash_hands_opened + audit2.trash_hands_opened,
+        preflop_seen=sum(a.preflop_seen for a in audits),
+        vpip=sum(a.vpip for a in audits),
+        pfr=sum(a.pfr for a in audits),
+        ep_opportunities=sum(a.ep_opportunities for a in audits),
+        ep_trash_raises=sum(a.ep_trash_raises for a in audits),
+        by_position=by_pos,
+        vpip_by_position=vpip_pos,
+        trash_hands_opened=trash,
     )
 
     vpip_rate = _rate(merged.vpip, merged.preflop_seen)
@@ -198,7 +244,10 @@ def run_audit(
 
     sep = "─" * 58
     print(sep)
-    print(f"  cemini self-play audit  ({hands} hands × rock + maniac, {players}-max)")
+    profile_label = "rock + maniac + lag" if lag else "rock + maniac"
+    print(f"  cemini self-play audit  ({hands} hands × {profile_label}, {players}-max)")
+    if mh:
+        print(f"  match series: {mh} hands/match  (TrueSkill proxy)")
     print(f"  seed={seed}  training-hud=ON")
     print(sep)
     print(f"  VPIP (all)  : {vpip_rate:.1%}  ({merged.vpip}/{merged.preflop_seen})")
@@ -207,7 +256,22 @@ def run_audit(
     print(f"  VPIP − PFR  : {vpip_pfr_gap:.1%}  ← passive-limp gate")
     print(f"  EP trash opens: {merged.ep_trash_raises}  {merged.trash_hands_opened[:5]}")
     print(f"  bb/100 rock : {rock['bb_per_100']:+.1f}")
-    print(f"  bb/100 maniac: {maniac['bb_per_100']:+.1f}")
+    print(f"  bb/100 maniac: {maniac['bb_per_100']:+.1f}  (advisory — not gated)")
+    if lag:
+        print(f"  bb/100 lag   : {lag['bb_per_100']:+.1f}  (advisory)")
+    if players == 2:
+        for label, run in runs.items():
+            hw = run.get("hand_match_win_rate")
+            if hw is not None:
+                w, l = run["wins"], run["losses"]
+                print(f"  hand_win_rate ({label}): {hw:.1%}  ({w}/{w + l})")
+            swr = _series_or_hand_mwr(run)
+            if swr is not None and run.get("match_hands"):
+                mw, ml = run.get("match_wins", 0), run.get("match_losses", 0)
+                print(
+                    f"  series_win_rate ({label}): {swr:.1%}  "
+                    f"({mw}/{mw + ml} matches, {run.get('match_hands')}h)"
+                )
     print("  VPIP by seat:")
     for pos in ("UTG", "MP", "CO", "BTN", "SB", "BB"):
         seen = merged.by_position.get(pos, 0)
@@ -229,7 +293,7 @@ def run_audit(
         failures.append(
             f"bb/100 vs rock {rock['bb_per_100']:+.1f} < {thresholds.min_bb_per_100_rock:+.1f}"
         )
-    if maniac["bb_per_100"] < thresholds.min_bb_per_100_maniac:
+    if thresholds.gate_bb_maniac and maniac["bb_per_100"] < thresholds.min_bb_per_100_maniac:
         failures.append(
             f"bb/100 vs maniac {maniac['bb_per_100']:+.1f} < "
             f"{thresholds.min_bb_per_100_maniac:+.1f}"
@@ -246,6 +310,30 @@ def run_audit(
         failures.append(
             f"VPIP−PFR gap {vpip_pfr_gap:.1%} > max {thresholds.max_vpip_pfr_gap:.1%}"
         )
+    if players == 2 and thresholds.min_match_win_rate > 0:
+        mwr = _series_or_hand_mwr(rock)
+        if mwr is None or mwr < thresholds.min_match_win_rate:
+            shown = f"{mwr:.1%}" if mwr is not None else "n/a"
+            failures.append(
+                f"series_win_rate vs rock {shown} < "
+                f"{thresholds.min_match_win_rate:.1%}"
+            )
+    if players == 2 and thresholds.min_match_win_rate_maniac > 0:
+        mwr = _series_or_hand_mwr(maniac)
+        if mwr is None or mwr < thresholds.min_match_win_rate_maniac:
+            shown = f"{mwr:.1%}" if mwr is not None else "n/a"
+            failures.append(
+                f"series_win_rate vs maniac {shown} < "
+                f"{thresholds.min_match_win_rate_maniac:.1%}"
+            )
+    if players == 2 and lag and thresholds.min_match_win_rate_lag > 0:
+        mwr = _series_or_hand_mwr(lag)
+        if mwr is None or mwr < thresholds.min_match_win_rate_lag:
+            shown = f"{mwr:.1%}" if mwr is not None else "n/a"
+            failures.append(
+                f"series_win_rate vs lag {shown} < "
+                f"{thresholds.min_match_win_rate_lag:.1%}"
+            )
 
     if failures:
         print("  GATE FAIL:")
@@ -270,20 +358,60 @@ def main(argv: Optional[list[str]] = None) -> int:
     p.add_argument("--max-ep-vpip", type=float, default=GateThresholds.max_ep_vpip)
     p.add_argument("--min-bb-rock", type=float, default=GateThresholds.min_bb_per_100_rock)
     p.add_argument("--min-bb-maniac", type=float, default=GateThresholds.min_bb_per_100_maniac)
-    p.add_argument("--min-pfr", type=float, default=GateThresholds.min_pfr)
-    p.add_argument("--max-vpip-pfr-gap", type=float, default=GateThresholds.max_vpip_pfr_gap)
+    p.add_argument("--min-pfr", type=float, default=None,
+                   help="Min PFR rate (default 0.12 HU / 0.06 6-max)")
+    p.add_argument("--max-vpip-pfr-gap", type=float, default=None,
+                   help="Max VPIP−PFR gap (default 0.10 HU / 0.06 6-max)")
+    p.add_argument("--min-match-win-rate", type=float,
+                   default=GateThresholds.min_match_win_rate,
+                   help="HU only: min win rate vs rock; 0 disables")
+    p.add_argument("--min-match-win-maniac", type=float,
+                   default=GateThresholds.min_match_win_rate_maniac,
+                   help="HU only: min win rate vs maniac; 0 disables")
+    p.add_argument("--min-match-win-lag", type=float,
+                   default=GateThresholds.min_match_win_rate_lag,
+                   help="HU only: min series win rate vs lag; 0 disables")
+    p.add_argument("--match-hands", type=int, default=None,
+                   help="HU: hands per TrueSkill-style match series (default 80)")
+    p.add_argument("--gate-bb-maniac", action="store_true",
+                   help="Gate on bb/100 vs maniac (default off — advisory)")
     args = p.parse_args(argv)
+
+    hu_mode = (
+        args.players == 2
+        or os.environ.get("CEMINI_TABLE_FORMAT", "").strip().lower() in (
+            "hu", "heads-up", "headsup", "2max", "2-max",
+        )
+    )
+    min_pfr = args.min_pfr if args.min_pfr is not None else (
+        0.12 if hu_mode else GateThresholds.min_pfr
+    )
+    max_vpip_pfr_gap = (
+        args.max_vpip_pfr_gap if args.max_vpip_pfr_gap is not None else (
+            0.10 if hu_mode else GateThresholds.max_vpip_pfr_gap
+        )
+    )
 
     min_vpip = 0.18 if os.environ.get("CEMINI_GIN_STYLE", "").strip().lower() in (
         "1", "true", "yes", "on",
     ) else 0.0
+    match_hands = args.match_hands
+    if hu_mode and match_hands is None:
+        match_hands = 80
+    min_match_rock = args.min_match_win_rate
+    if hu_mode and args.gate and min_match_rock == 0:
+        min_match_rock = 0.55
     th = GateThresholds(
         max_ep_vpip=args.max_ep_vpip,
         min_bb_per_100_rock=args.min_bb_rock,
         min_bb_per_100_maniac=args.min_bb_maniac,
         min_vpip=min_vpip,
-        min_pfr=args.min_pfr,
-        max_vpip_pfr_gap=args.max_vpip_pfr_gap,
+        min_pfr=min_pfr,
+        max_vpip_pfr_gap=max_vpip_pfr_gap,
+        min_match_win_rate=min_match_rock,
+        min_match_win_rate_maniac=args.min_match_win_maniac,
+        min_match_win_rate_lag=args.min_match_win_lag,
+        gate_bb_maniac=args.gate_bb_maniac,
     )
     return run_audit(
         hands=args.hands,
@@ -291,6 +419,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         seed=args.seed,
         gate=args.gate,
         thresholds=th,
+        match_hands=match_hands,
     )
 
 

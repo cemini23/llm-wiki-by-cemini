@@ -1125,6 +1125,29 @@ def sb_t7s_paired_flop(*, villain_bet: int = 45, pot: int = 90) -> dict:
     )
 
 
+def mp_j9o_turn_facing_bet(*, villain_bet: int = 45, pot: int = 180) -> dict:
+    """J9o MP OOP turn top pair — K5J6 (HL R37 #01)."""
+    return six_max_table(
+        name="mp_j9o_turn_facing_bet",
+        hero_seat=5,
+        button_seat=1,
+        street="Turn",
+        board=["Ks", "5h", "Jc", "6d"],
+        pot=pot,
+        hero_hole=["9c", "Js"],
+        hero_stack=400,
+        hero_bet=0,
+        villain_bets={4: villain_bet},
+        stacks={5: 400},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
 def utg_jts_paired_turn(*, villain_bet: int = 30, pot: int = 80) -> dict:
     """JTs UTG on paired 5443 turn — HL R19 analyze #02 (−30)."""
     return six_max_table(
@@ -1551,6 +1574,52 @@ def btn_q9o_vs_limp(*, call_chips: int = 20) -> dict:
             call_chips=call_chips,
             call_to=call_chips,
             bet_range={"min": call_chips * 2, "max": 980},
+        ),
+    )
+
+
+def btn_q6o_flop_j74(*, villain_bet: int = 40, pot: int = 120) -> dict:
+    """Q6o BTN flop air — J74 c-bet (HL R36 #02)."""
+    return six_max_table(
+        name="btn_q6o_flop_j74",
+        hero_seat=6,
+        button_seat=6,
+        street="Flop",
+        board=["4s", "Jc", "7c"],
+        pot=pot,
+        hero_hole=["Qc", "6h"],
+        hero_stack=900,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={6: 900},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def utg_j4s_flop_tk8(*, villain_bet: int = 50, pot: int = 120) -> dict:
+    """J4s UTG flop junk — Th Kc 8d (HL R36 #04)."""
+    return six_max_table(
+        name="utg_j4s_flop_tk8",
+        hero_seat=2,
+        button_seat=6,
+        street="Flop",
+        board=["Th", "Kc", "8d"],
+        pot=pot,
+        hero_hole=["Jc", "4s"],
+        hero_stack=900,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={2: 900},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
         ),
     )
 
@@ -2062,6 +2131,30 @@ def mp_t6o_paired_river(*, villain_bet: int = 180, pot: int = 520) -> dict:
 def sb_43s_facing_open(*, raise_to: int = 60) -> dict:
     """43s SB vs open — analyze round 3 #08."""
     return sb_facing_open(["4s", "3s"], raise_to=raise_to)
+
+
+def bb_a8o_paired_runout(*, villain_bet: int = 80, pot: int = 320) -> dict:
+    """A8o BB OOP top pair on paired runout — As8c BB −29 9822 (HL R36 #01)."""
+    return six_max_table(
+        name="bb_a8o_paired_runout",
+        hero_seat=3,
+        button_seat=1,
+        street="River",
+        board=["8d", "9c", "Jc", "2h", "2s"],
+        pot=pot,
+        hero_hole=["As", "8c"],
+        hero_stack=500,
+        hero_bet=0,
+        villain_bets={1: villain_bet},
+        stacks={3: 500},
+        allowed=_allowed(
+            can_call=True,
+            can_raise=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            raise_range={"min": villain_bet * 2, "max": 500},
+        ),
+    )
 
 
 def bb_a6o_paired_river(*, villain_bet: int = 100, pot: int = 280) -> dict:

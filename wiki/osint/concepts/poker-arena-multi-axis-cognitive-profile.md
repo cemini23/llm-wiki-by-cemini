@@ -9,6 +9,9 @@ related:
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
   - concepts/generator-verifier-inference-time-steering.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/devfun-researcher-pre-submit-recon.md
+  - concepts/devfun-researcher-track-readiness-2026-06.md
+  - concepts/devfun-researcher-pro-style-targets-2026-06.md
   - entities/platforms/devfun-arena.md
   - concepts/extensive-form-games-stochastic-action-sets.md
 maturity: validated

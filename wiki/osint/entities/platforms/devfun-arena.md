@@ -5,15 +5,19 @@ tags: [entity, platform, poker, prediction-markets, devfun]
 keywords: [dev.fun, arena.dev.fun, poker arena, six-max, researcher track, Monad]
 related:
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
+  - sources/devfun-poker-researcher-track-email-2026-06-19.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
+  - sources/devfun-researcher-track-hu-format-2026-06-08.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/devfun-researcher-track-readiness-2026-06.md
+  - concepts/devfun-researcher-pre-submit-recon.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/devfun-poker-competitor-github-recon-2026-06.md
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-19
 ---
 
 ## Relations
@@ -26,7 +30,7 @@ updated: 2026-06-18
 
 ## Raw Concept
 
-Operator platform for **AI agent poker benchmarks** on Monad — Playground qual seasons, Tournament KO brackets, and the **Researcher Round** sandbox (6-max benchmark, Jun 2026). Cemini agent: `cemini_wiki_poker` on `https://arena.dev.fun/api/arena`.
+Operator platform for **AI agent poker benchmarks** on Monad — Playground qual seasons, Tournament KO brackets, and the **Researcher track** (**HU** sandbox, Jun 2026). Cemini agent: `cemini_wiki_poker` on `https://arena.dev.fun/api/arena`.
 
 ## Narrative
 
@@ -40,20 +44,21 @@ Operator platform for **AI agent poker benchmarks** on Monad — Playground qual
 | API base (prod) | `https://arena.dev.fun/api/arena` |
 | Onboarding skill | `https://arena.dev.fun/skills/arena.md` |
 | Starter kit | `devfun-org/poker-arena-starter-kit` / `arena-pokerkit` |
+| Researcher (email) | Self-play SDK + **Kaggle** competition page [URL in operator email — pin at signup] |
 
 **2026 prize narrative:** ~$50K total across playground, tournament, researcher track; one-pager cites **$30K** researcher pool component.
 
-**Researcher Round [CONFIRMED Discord 2026-06-18]:** `#researcher-track` — $30K, 50 seats, Jun 21 beta; trajectory export; how-not-only-win eval.
+**Researcher track [CONFIRMED email 2026-06-19]:** **Heads-up** sandbox ranked by **TrueSkill**; top agent becomes **field benchmark**; Dwan + Jungleman select **style-matched** bots for representation. Tooling: self-play SDK, Kaggle, sponsored sandbox credits. Timeline: **Jun 21** beta · **Jun 25** public.
 
-**Format [TENTATIVE operator 2026-06-18]:** **6-max NLHE** sandbox (not HU-only). One-pager “heads-up” may describe finale/publish lane.
+**Researcher Round Discord [CONFIRMED 2026-06-18]:** trajectory export; how-not-only-win eval — complements TrueSkill LB with research/axis narrative.
 
-**Match defaults [TENTATIVE]:** **Multi-day** season grind (Playground style) — not Eval 500h; submit via `pokerkit run` lobby loop until skill file confirms length.
+**Match defaults [TENTATIVE]:** multi-day or SDK-driven sandbox length — confirm Kaggle rules + `skillFile` at beta.
 
-**Raeth benchmark (parallel):** https://poker.raeth.ai/ — academic nine-axis eval (2606.13815); separate LB from dev.fun Researcher Round.
+**Raeth benchmark (parallel):** https://poker.raeth.ai/ — academic nine-axis eval (2606.13815); useful for axis discipline; **LB sort may be TrueSkill on dev.fun sandbox**.
 
-**Fixed engine + LLM [CONFIRMED per PR 2026-06-18]:** researcher track fixes engine and base LLM — poker skill layer only (validate at beta against allowed `decide()` surface).
+**Fixed engine + LLM [CONFIRMED PR; email broadens submit types]:** PR says fixed engine for strategy layer; email allows weights / LLM+w/key — **verify Kaggle interface** vs our pure `decide()` agent.
 
-**Cemini posture:** optimize **6-max `cemini_decide.py`** + trajectory/axis exports for Researcher LB; Playground for optional HUD intel.
+**Cemini posture:** **Researcher PRIMARY** — HU `cemini_decide.py`, TrueSkill-oriented HU selfplay, trajectory/axis gates before submit; Playground = background intel only.
 
 ## Snippets
 

@@ -5,6 +5,7 @@ tags: [source, brief, poker, devfun, k118, cross-wiki]
 keywords: [k118, cemini_decide, PFR, hl-loop]
 related:
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/devfun-researcher-track-readiness-2026-06.md
   - entities/platforms/devfun-arena.md
 maturity: validated
 created: 2026-06-18

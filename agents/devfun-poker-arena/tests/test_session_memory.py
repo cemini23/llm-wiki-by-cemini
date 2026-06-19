@@ -22,6 +22,25 @@ def test_villain_memory_abstains_without_samples():
     assert mem.get("note") or not mem.get("villains")
 
 
+def test_villain_memory_can_be_disabled(monkeypatch):
+    monkeypatch.setenv("CEMINI_SESSION_MEMORY", "0")
+    state = {
+        "session_villain_memory": {
+            "v1": {"aggressive_acts": 6, "passive_acts": 1, "samples": 7},
+        }
+    }
+    table = {
+        "selfSeatNumber": 1,
+        "seats": [
+            {"seatNumber": 1, "agentId": "hero"},
+            {"seatNumber": 2, "agentId": "v1"},
+        ],
+    }
+    mem = villain_memory_for_table(state, table)
+    assert mem["villains"] == {}
+    assert "disabled" in str(mem.get("note") or "")
+
+
 def test_villain_memory_aggro_after_samples():
     state = {
         "session_villain_memory": {

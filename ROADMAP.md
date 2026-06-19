@@ -19,7 +19,7 @@ Research digest + ingest briefs target these first (`scripts/active_project_brie
 | 3 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | 4 | **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
 
-**Poker focus (Jun 18):** Accepted **researcher track** — optimize for **6-max Researcher Round** sandbox LB (multi-day season, trajectory + Raeth nine-axis steal). Playground S3 continues for optional HUD intel. See `@concepts/devfun-poker-agent-challenge-2026.md`.
+**Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
 ## Current state (2026-06-19 — K123)
 

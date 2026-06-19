@@ -5,6 +5,8 @@ tags: [source, devfun, poker-arena, tournament, heads-up, researcher-track]
 keywords: [poker agent challenge, dev.fun, heads-up, Tom Dwan, Jungleman, BenchFlow, Daytona, $30K]
 related:
   - concepts/devfun-poker-agent-challenge-2026.md
+  - concepts/devfun-researcher-pre-submit-recon.md
+  - concepts/devfun-researcher-track-readiness-2026-06.md
   - concepts/active-project-research-routing.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md

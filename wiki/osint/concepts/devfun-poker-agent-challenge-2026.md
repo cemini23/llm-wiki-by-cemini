@@ -1,14 +1,18 @@
 ---
 title: dev.fun Poker Agent Challenge 2026 — researcher track
 type: concept
-tags: [concept, poker, devfun, six-max, agent-eval, researcher-track]
-keywords: [poker agent challenge, researcher track, BenchFlow, 6-max, Tom Dwan, session memory, trajectory]
+tags: [concept, poker, devfun, heads-up, agent-eval, researcher-track, trueskill]
+keywords: [poker agent challenge, researcher track, TrueSkill, heads-up, Tom Dwan, trajectory, Kaggle]
 related:
+  - concepts/devfun-researcher-pro-style-targets-2026-06.md
+  - concepts/devfun-researcher-track-readiness-2026-06.md
+  - concepts/devfun-researcher-pre-submit-recon.md
   - concepts/devfun-poker-competitor-github-recon-2026-06.md
   - concepts/generator-verifier-inference-time-steering.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
+  - sources/devfun-poker-researcher-track-email-2026-06-19.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - entities/platforms/devfun-arena.md
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
@@ -16,7 +20,7 @@ related:
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-19
 ---
 
 ## Relations
@@ -38,26 +42,32 @@ Cemini was accepted into the **dev.fun researcher track** (invite-only sandbox, 
 
 ### Challenge vs current prod
 
-| Dimension | Playground S3 (current prod) | Researcher Round (target) |
-|-----------|------------------------------|---------------------------|
-| Format | 6-max NLHE PVP lobby | **6-max NLHE** sandbox benchmark [TENTATIVE — operator; one-pager text says HU for publish/finale framing] |
-| Goal | Season chip grind / qual | Sandbox LB + trajectory contribution + **publish as champion bot** |
-| Eval | Live lobby + HL analyze | **Sandbox submit** → scored benchmark match |
-| Match length | Continuous multi-day grind | Same — **not** 500-hand Eval; details TBD [operator 2026-06-18] |
-| Submit cadence | Lobby poll loop | Same client loop as Playground until skill file says otherwise |
+| Dimension | Playground S3 (background intel) | Researcher track (target) |
+|-----------|----------------------------------|---------------------------|
+| Format | 6-max NLHE PVP lobby | **Heads-up** sandbox [CONFIRMED email 2026-06-19] |
+| Goal | Optional HUD intel | **TrueSkill** LB; top agent = **benchmark bot** |
+| Eval | Slow lobby sample | **TrueSkill** + trajectory export; Kaggle + self-play SDK |
+| Pro hook | — | Dwan + Jungleman pick **style-matched** bots |
 | Timeline | Season-long | **Jun 21** beta · **Jun 25** public · **Early Jul** finale |
-| Our rank | ~103 / 3450 chips (Jun 18) | Separate LB · **50 seats** invited |
+| Our rank | ~103 / 3450 chips (Jun 18) | Separate LB · invite cohort |
 
-Do **not** assume the same `competition_id` as Playground or Eval S1 — pin Researcher Round ID when it appears in API (expected Jun 21).
+Do **not** assume the same `competition_id` as Playground — pin Researcher ID when API / Kaggle lists it (expected Jun 21).
 
-**API check 2026-06-18:** `list-active` shows Tournament S2, Playground S3, Eval S1 only — **no Researcher Round competition yet**. Re-run `agents/devfun-poker-arena/scripts/list_arena_competitions.sh` daily.
+### Format — HU [CONFIRMED]
 
-### Format note — 6-max vs one-pager HU
+- **devlord email (2026-06-19):** HU sandbox, TrueSkill ranking — `@sources/devfun-poker-researcher-track-email-2026-06-19.md`
+- **Operator relay (2026-06-08):** `@sources/devfun-researcher-track-hu-format-2026-06-08.md`
+- **Implication:** HU chart + 2-player gates; 6-max Playground logic is intel-only, not the submit target.
 
-- **One-pager PDF** markets "heads-up" for the public Challenge / finale narrative [Source: poker-arena-onepager.pdf].
-- **Operator assumption (2026-06-18):** Researcher Round **plays 6-max** like existing Arena poker — same engine family as Playground / Eval, not a separate HU-only sandbox.
-- **Discord welcome** did not specify table size; deferred to one-pager link.
-- **Implication:** optimize **`cemini_decide.py` 6-max path** (gin lane, seat matrix, HL regression) — not a HU-only policy fork. HU regression spots remain cheap smoke tests only.
+### Scoring — TrueSkill vs trajectory
+
+| Source | Says |
+|--------|------|
+| Email (devlord) | Sandbox ranked by **TrueSkill**; champion = benchmark bot |
+| Discord welcome | Trajectory export; how agents play (research contribution) |
+| Raeth 2606.13815 | Nine-axis cognitive profile — discipline for exports, not necessarily dev.fun LB sort |
+
+Optimize for **HU win rate / TrueSkill** in sandbox opponent mix; keep trajectory + M₁–M₉ gates as **submit hygiene** and style-rep insurance.
 
 ### Researcher Round — Discord [CONFIRMED 2026-06-18]
 

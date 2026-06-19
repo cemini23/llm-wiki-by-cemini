@@ -1,17 +1,31 @@
 # Researcher track — sandbox recon (Cemini)
 
-Operator: **cemini_wiki_poker** · **Researcher Round** (50 seats) · **6-max** sandbox LB + trajectory contribution.
+Operator: **cemini_wiki_poker** · **Researcher Round** (50 seats) · **heads-up** sandbox LB + trajectory contribution.
 
-## Working assumptions [operator 2026-06-18]
+## Format [CONFIRMED 2026-06-08]
+
+Researcher sandbox is **HU** (2-player NLHE). Source: `@wiki/sources/devfun-researcher-track-hu-format-2026-06-08.md`.
+
+6-max gates remain for **Playground S3** intel only — not the Researcher optimization target.
+
+## Working assumptions
 
 | Item | Posture |
 |------|---------|
-| **Table size** | **6-max NLHE** (like Playground / Eval) — not HU-only |
+| **Table size** | **Heads-up** [CONFIRMED dev.fun 2026-06-08] |
 | **Match length** | **Multi-day** season (Playground/Tournament style) — **not** Eval 500h |
 | **Submit cadence** | Same arena loop as Playground until skill contradicts |
 | **Engine + LLM** | **Fixed** per PR [CONFIRMED per PR] — policy `decide()` layer only |
 
-Confirm or override when Researcher competition `skillFile` ships (Jun 21).
+Still read `skillFile` for hand count, rubric weights, and economics when API ships (Jun 21).
+
+## Challenge funnel (one-pager)
+
+1. Submit → **sandbox LB** (trajectory + multi-axis — BenchFlow eval partner).
+2. Top agents → **published champion bots** (“everyone else can come and challenge”).
+3. Finale → HU vs Dwan/Jungleman on stream.
+
+**Before first submit:** `bash scripts/run_researcher_comp_recon.sh --competition-id '<id>'` — see `wiki/concepts/devfun-researcher-pre-submit-recon.md`.
 
 ## Discord welcome [CONFIRMED 2026-06-18]
 
@@ -19,7 +33,7 @@ Channel: `#researcher-track` — $30K · 50 seats · Jun 21 · trajectory export
 
 Wiki: `wiki/sources/devfun-researcher-track-discord-welcome-2026-06-18.md`
 
-## API recon (2026-06-18)
+## API recon
 
 `scripts/list_arena_competitions.sh` — daily until Researcher comp appears.
 
@@ -31,9 +45,21 @@ Wiki: `wiki/sources/devfun-researcher-track-discord-welcome-2026-06-18.md`
 ## Local gates (before each submit)
 
 ```bash
-./scripts/run_hu_sandbox_gate.sh --hands 500   # 6-max regression + selfplay + trajectory
+CEMINI_TABLE_FORMAT=hu ./scripts/run_hu_sandbox_gate.sh --hands 500
 ./scripts/export_researcher_trajectory.sh --competition-id "$ARENA_RESEARCHER_COMP_ID"
 ```
+
+`CEMINI_TABLE_FORMAT` controls the local gate shape:
+
+- `hu` (default) — HU regression + 2-player selfplay (Researcher sandbox)
+- `6max` — 6-max regression + selfplay (Playground parity)
+- `auto` — both bundles merged for combined gate
+
+Current M8/M9 submit thresholds from `examples/researcher_trajectory_summary.py`:
+
+- `M8_hallucination_rate <= 0.05`
+- `M8_hole_leak_rate <= 0.02`
+- `M9 positional vpip gap >= -0.20` (6-max: BTN–UTG; HU: BTN–BB)
 
 Arena submit (when comp live):
 
@@ -50,5 +76,6 @@ See `wiki/concepts/devfun-poker-competitor-github-recon-2026-06.md` — **gin/po
 
 ## Prod posture
 
-- **Playground S3** — optional field intel; Researcher LB is separate comp.
-- Ship same **`cemini_decide.py`** 6-max stack unless beta skill restricts surface.
+- **Researcher Round** — **primary** optimization target (HU gates, trajectory, axis discipline).
+- **Playground S3** — optional **background intel** only (`CEMINI_PACE_PHASE=intel`, ~1h join cadence); parallel S3 volume service **disabled** on prod prep apply.
+- Ship **`cemini_decide.py`** with `CEMINI_TABLE_FORMAT=hu` for Researcher; 6-max gin lane for incidental Playground hands only.

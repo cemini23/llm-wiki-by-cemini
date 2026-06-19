@@ -41,6 +41,8 @@ from typing import Any, Optional
 
 from dotenv import load_dotenv
 
+from position_utils import hero_is_in_position, hero_position_label  # noqa: E402
+
 from arena_client import (
     ArenaClient,
     ArenaError,
@@ -266,6 +268,32 @@ def _build(action: str, amount: Optional[int], table: dict, allowed: dict,
 _FALLBACK_REASONING = '{vr: "std", ke: "legal", pp: "pot control"}'
 
 
+def _env_on(name: str, default: str = "0") -> bool:
+    return os.environ.get(name, default).strip().lower() in ("1", "true", "yes", "on")
+
+
+def _researcher_runtime() -> bool:
+    return _env_on("CEMINI_RESEARCHER_MODE")
+
+
+def _eval_panel_runtime() -> bool:
+    """Local eval-panel lane only — never default on live benchmark / Researcher."""
+    return _env_on("CEMINI_EVAL_PANEL_MODE")
+
+
+def _apply_researcher_runtime_context(ctx: dict) -> dict:
+    """Researcher submit profile: no eval_panel lane, no placement chase, no sanitize."""
+    if not _researcher_runtime():
+        return ctx
+    out = dict(ctx)
+    out["researcher_mode"] = True
+    out.pop("eval_panel_mode", None)
+    out["placement_chase"] = False
+    out["placement_protect"] = False
+    out["researcher_mix"] = True
+    return out
+
+
 def _build_reasoning(action: str, equity: float, pot_odds: float,
                      table: dict, allowed: dict) -> str:
     """YAML flow style under 150 chars. Build capped field values first;
@@ -273,9 +301,8 @@ def _build_reasoning(action: str, equity: float, pot_odds: float,
     never blind-slice to 150."""
     board = table.get("boardCards") or []
     street = (table.get("street") or "Preflop")
-    self_seat = table.get("selfSeatNumber") or 0
-    # crude position label
-    pos_label = "IP" if self_seat and self_seat % 2 == 0 else "OOP"
+    pos_tag = hero_position_label(table)
+    pos_label = "IP" if hero_is_in_position(table) else "OOP"
     plan_map = {"Preflop": "see flop", "Flop": "barrel T", "Turn": "ck R",
                 "River": "showdown"}
     pp = f"{pos_label} {plan_map.get(street, 'pot ctrl')}"[:30]
@@ -299,8 +326,9 @@ def _build_reasoning(action: str, equity: float, pot_odds: float,
         sr = f"po {int(round(pot_odds * 100))}% covered"[:30]
     else:
         sr = ""
+    st_short = street[:3].lower() if street else "unk"
     parts = [
-        f'vr: "ln:unknown"',
+        f'vr: "ln:{st_short}@{pos_tag}"',
         f'ke: "{ke}"',
         f'bf: {bf}',
         f'pp: "{pp}"',
@@ -546,7 +574,9 @@ def _run_benchmark_loop(
             deadline_s = (max(0.0, (deadline_ms / 1000.0) - time.time())
                           if deadline_ms else 10.0)
             research_context = _safe_research_context(table, retrieve_fn)
-            research_context["eval_panel_mode"] = True
+            research_context = _apply_researcher_runtime_context(research_context)
+            if not _researcher_runtime() and _eval_panel_runtime():
+                research_context["eval_panel_mode"] = True
             try:
                 action = decide_fn(table, deadline_s=deadline_s,
                                    research_context=research_context)

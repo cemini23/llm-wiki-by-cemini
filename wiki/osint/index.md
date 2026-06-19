@@ -1315,6 +1315,10 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [MoVerse panoramic world model (2606.13376)](sources/arxiv-moverse-panoramic-world-model-2606.13376-2026-06-18.md) — `[DRAFT 2026-06-18]` K122: 8 FPS RTX 4090; castle-sim steal. — source, arxiv, k122
 - [MAEAD shared world models (2606.13840)](sources/arxiv-maead-shared-world-models-2606.13840-2026-06-18.md) — `[DRAFT 2026-06-18]` K122: 380-paper survey; REFERENCE. — source, arxiv, k122
 - [dev.fun Poker Agent Challenge 2026 — researcher track](concepts/devfun-poker-agent-challenge-2026.md) — 6-max Researcher Round sandbox; trajectory eval; Jun 21 beta. — concept, devfun, poker, k122
+- [dev.fun Researcher — pro style targets (Dwan vs Jungleman)](concepts/devfun-researcher-pro-style-targets-2026-06.md) — HU emulation vs finale exploit; Jungleman default for TrueSkill + rep. — concept, devfun, researcher-track
+- [dev.fun researcher track invite email (2026-06-19)](sources/devfun-poker-researcher-track-email-2026-06-19.md) — HU, TrueSkill, Kaggle/SDK; cross-wiki @gambling-wiki ingest K121. — source, devfun, researcher-track
+- [dev.fun Researcher Track readiness hub (Jun 2026)](concepts/devfun-researcher-track-readiness-2026-06.md) — Prep checklist, eval-as-gate, HU/6-max fork, operator commands. — concept, devfun, researcher-track
+- [dev.fun Researcher — pre-submit recon ritual](concepts/devfun-researcher-pre-submit-recon.md) — Sit-down rule: analyze skillFile/rules before first hand; recon script + decision matrix. — concept, devfun, researcher-track, evaluation
 - [FinAcumen financial experience memory](concepts/finacumen-financial-experience-memory.md) — K121 cross-wiki stub from CCC FinAcumen paper. — concept, finance, k121
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113
 - [WikiKV](entities/tools/wikikv.md) — K121 REFERENCE; hierarchical path-KV for wiki navigation (no public repo). — tool, wiki, k121

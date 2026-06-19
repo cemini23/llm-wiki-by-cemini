@@ -73,12 +73,28 @@ def _ko_survival_min_stack() -> int:
         return 2000
 
 
+def _researcher_track_primary() -> bool:
+    """Researcher Round is the optimization target; Playground is optional intel."""
+    role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip().lower()
+    track = os.environ.get("CEMINI_PRIMARY_TRACK", "").strip().lower()
+    if os.environ.get("CEMINI_RESEARCHER_MODE", "").strip().lower() in ("1", "true", "yes", "on"):
+        return True
+    return role in ("researcher_primary", "researcher_prep") or track == "researcher"
+
+
 def _lobby_role_label(competition_id: str) -> tuple[str, str]:
     """Resolve human label + registry role for logs and timeseries."""
     s1 = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
     s2t = os.environ.get("S2_TOURNAMENT_COMP", "").strip()
     s2 = os.environ.get("S2_PLAYGROUND_COMP", "").strip()
     s3 = os.environ.get("S3_PLAYGROUND_COMP", "").strip()
+    rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
+    if competition_id and competition_id == rcomp:
+        return "Researcher Round", "researcher_round"
+    label = os.environ.get("CEMINI_LOBBY_LABEL", "").strip().replace("_", " ")
+    role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip()
+    if label and role:
+        return label, role
     if competition_id and competition_id == s1:
         return "Tournament S1", "s1_tournament"
     if competition_id and competition_id == s2t:
@@ -103,20 +119,54 @@ def _apply_competition_posture(competition_id: str) -> None:
     s2t = os.environ.get("S2_TOURNAMENT_COMP", "").strip()
     s2 = os.environ.get("S2_PLAYGROUND_COMP", "cmq57o53r0bhw18g23qkydb08").strip()
     s3 = os.environ.get("S3_PLAYGROUND_COMP", "").strip()
-    if competition_id == s3:
+    rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
+    if rcomp and competition_id == rcomp:
         os.environ.update({
+            "CEMINI_RESEARCHER_MODE": "1",
+            "CEMINI_TABLE_FORMAT": "hu",
             "CEMINI_TOURNAMENT_MODE": "0",
             "CEMINI_EVAL_PANEL_GATE": "0",
-            "CEMINI_PACE_PHASE": "volume",
-            "CEMINI_JOIN_RETRY_S": "12",
-            "CEMINI_IN_QUEUE_RETRY_S": "25",
-            "CEMINI_LOW_STACK_JOIN_RETRY_S": "15",
-            "CEMINI_QUAL_CUTOFF_RANK": "20",
-            "CEMINI_PRIZE_CUTOFF_RANK": "20",
+            "CEMINI_PLACEMENT_CHASE": "0",
+            "CEMINI_SANITIZE_OUTPUT": "0",
+            "CEMINI_PACE_PHASE": "researcher",
+            "CEMINI_JOIN_RETRY_S": "60",
+            "CEMINI_IN_QUEUE_RETRY_S": "120",
+            "CEMINI_LOW_STACK_JOIN_RETRY_S": "300",
             "JACKPOT_ROYAL_ENABLED": "0",
             "JACKPOT_ROYAL_SHOWDOWN": "0",
             "JACKPOT_27_HUNT_ENABLED": "0",
         })
+    elif competition_id == s3:
+        if _researcher_track_primary():
+            # Playground S3 — background intel only while Researcher is primary.
+            os.environ.update({
+                "CEMINI_TOURNAMENT_MODE": "0",
+                "CEMINI_EVAL_PANEL_GATE": "0",
+                "CEMINI_PACE_PHASE": "intel",
+                "CEMINI_JOIN_RETRY_S": "3600",
+                "CEMINI_IN_QUEUE_RETRY_S": "600",
+                "CEMINI_LOW_STACK_JOIN_RETRY_S": "3600",
+                "CEMINI_QUAL_CUTOFF_RANK": "20",
+                "CEMINI_PRIZE_CUTOFF_RANK": "20",
+                "CEMINI_PLAYGROUND_TIMESERIES": "0",
+                "JACKPOT_ROYAL_ENABLED": "0",
+                "JACKPOT_ROYAL_SHOWDOWN": "0",
+                "JACKPOT_27_HUNT_ENABLED": "0",
+            })
+        else:
+            os.environ.update({
+                "CEMINI_TOURNAMENT_MODE": "0",
+                "CEMINI_EVAL_PANEL_GATE": "0",
+                "CEMINI_PACE_PHASE": "volume",
+                "CEMINI_JOIN_RETRY_S": "12",
+                "CEMINI_IN_QUEUE_RETRY_S": "25",
+                "CEMINI_LOW_STACK_JOIN_RETRY_S": "15",
+                "CEMINI_QUAL_CUTOFF_RANK": "20",
+                "CEMINI_PRIZE_CUTOFF_RANK": "20",
+                "JACKPOT_ROYAL_ENABLED": "0",
+                "JACKPOT_ROYAL_SHOWDOWN": "0",
+                "JACKPOT_27_HUNT_ENABLED": "0",
+            })
     elif competition_id == s2:
         # S2-only volume push — faster joins than default volume (20/45/30).
         os.environ.update({
@@ -424,9 +474,12 @@ def run_lobby(args: argparse.Namespace) -> int:
     ).strip()
     s1_comp = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
     s2t_comp = os.environ.get("S2_TOURNAMENT_COMP", "").strip()
+    rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
 
     def _tournament_table_priority(cid: str) -> int:
-        """Lower = higher priority. Tournament comps beat playground on deadline ties."""
+        """Lower = higher priority. Researcher + tournament beat playground on deadline ties."""
+        if rcomp and cid == rcomp:
+            return -1
         if s1_comp and cid == s1_comp:
             return 0
         if s2t_comp and cid == s2t_comp:
