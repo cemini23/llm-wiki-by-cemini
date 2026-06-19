@@ -1303,6 +1303,10 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Classifier-assisted RL ensemble trading](concepts/classifier-assisted-rl-ensemble-trading.md) — K120: variance-threshold gating over multi-policy RL. — concept, rl-marl, k120
 - [Heuristic Portfolio Optimization (HPO)](concepts/heuristic-portfolio-optimization-hpo.md) — K120: optimality sets + GRS falsification for EW/HRP/ERC. — concept, portfolio-strategy, k120
 - [Active project research routing](concepts/active-project-research-routing.md) — K121: brief targets castle-sim / poker / XSP / PM-Kalshi. — concept, meta, k121
+- [ScholarQuest agentic academic search (2606.20235)](sources/arxiv-scholarquest-agentic-academic-search-2606.20235-2026-06-19.md) — `[VALIDATED 2026-06-19]` K123 cross-wiki; CONDITIONAL-GO no license. — source, arxiv, k123
+- [ScholarQuest](entities/tools/scholarquest.md) — K123 agentic paper-search benchmark. — entity, tool, k123
+- [Generator-verifier inference-time steering](concepts/generator-verifier-inference-time-steering.md) — K123: VERITAS Best-of-N + D_auto flywheel. — concept, verifier, k123
+- [VERITAS visual verification (2606.18247)](sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md) — `[DRAFT 2026-06-18]` K123: inference-time steering; poker steal. — source, arxiv, k123
 - [Poker Arena multi-axis cognitive profile](concepts/poker-arena-multi-axis-cognitive-profile.md) — K122: Raeth nine-axis + memory ablation. — concept, poker, k122
 - [Extensive-form games with stochastic action sets](concepts/extensive-form-games-stochastic-action-sets.md) — K122: EFGSAS / SI-CFR. — concept, game-theory, k122
 - [MoVerse panoramic video world model](concepts/moverse-panoramic-video-world-model.md) — K122: single-image → 360° → Gaussian scaffold. — concept, world-model, k122

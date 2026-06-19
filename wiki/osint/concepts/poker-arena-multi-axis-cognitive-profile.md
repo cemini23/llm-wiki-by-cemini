@@ -6,6 +6,8 @@ keywords: [nine-axis, Raeth, memory ablation, bet sizing, positional awareness, 
 related:
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
   - sources/arxiv-equilibrium-efgsas-2606.13093-2026-06-18.md
+  - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
+  - concepts/generator-verifier-inference-time-steering.md
   - concepts/devfun-poker-agent-challenge-2026.md
   - entities/platforms/devfun-arena.md
   - concepts/extensive-form-games-stochastic-action-sets.md

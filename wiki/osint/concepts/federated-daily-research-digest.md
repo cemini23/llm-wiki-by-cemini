@@ -8,15 +8,19 @@ related:
   - meta/daily-research-digest-cadence.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/monokern-compounding-research-pipeline.md
+  - entities/tools/scholarquest.md
+  - sources/arxiv-scholarquest-agentic-academic-search-2606.20235-2026-06-19.md
   - projects/osint-workspace/Architecture/Architecture - wiki.md
   - "@3d-printing-wiki/meta/daily-research-digest-cadence.md"
   - concepts/game-dev-wiki-federation.md
   - concepts/autosci-research-lifecycle-memory.md
   - sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md
   - entities/tools/wikikv.md
+  - sources/arxiv-scholarquest-agentic-academic-search-2606.20235-2026-06-19.md
+  - entities/tools/scholarquest.md
 maturity: core
 created: 2026-06-01
-updated: 2026-06-17
+updated: 2026-06-19
 ---
 
 ## Relations
@@ -30,6 +34,8 @@ updated: 2026-06-17
 - @game-dev-wiki/meta/daily-research-digest-cadence.md — K115 game-dev federated digest
 - @sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md — K121 WikiKV hierarchical wiki storage
 - @entities/tools/wikikv.md — Phase-0 REFERENCE entity
+- @sources/arxiv-scholarquest-agentic-academic-search-2606.20235-2026-06-19.md — K123 cross-wiki from seo-wiki digest
+- @entities/tools/scholarquest.md — agentic literature search eval
 
 ## Raw Concept
 

@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-06-19] ingest | K123 daily digest — VERITAS + ScholarQuest cross-wiki
+
+- **1 inbox source** — arXiv 2606.18247 (VERITAS generator-verifier) → archived
+- **1 cross-wiki source** — arXiv 2606.20235 (ScholarQuest) from seo-wiki digest routing
+- **1 concept** — `generator-verifier-inference-time-steering`
+- **1 entity** — `scholarquest` (CONDITIONAL-GO — no GitHub license)
+- **7 updates** — `devfun-poker-agent-challenge-2026`, `llm-agent-systems`, `continual-harness`, digest/monokern/ingest concepts, `index.md`
+- **Phase-0** — `adopt_k123_phase0.sh`
+- **Brief (1)** — poker verifier inference steering
+- **Fix** — `brief-k118-poker-agent-research-gaps` dangling related paths
+- **Archive** — VERITAS PDF → egress-fi; inbox cleared
+
 ## [2026-06-18] ingest | K122 daily digest — 5 inbox full ingest
 
 - **5 sources** — arXiv 2606.13093 (EFGSAS); 2606.13376 (MoVerse); 2606.13815 (Poker Arena deep-read); 2606.13840 (MAEAD survey); poker-arena-onepager (LIKELY dup — archived)

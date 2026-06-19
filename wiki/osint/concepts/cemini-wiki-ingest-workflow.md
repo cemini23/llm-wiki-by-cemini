@@ -12,6 +12,8 @@ related:
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - concepts/cemini-knowledge-application-architecture.md
   - concepts/high-signal-paper-patterns.md
+  - entities/tools/scholarquest.md
+  - sources/arxiv-scholarquest-agentic-academic-search-2606.20235-2026-06-19.md
   - projects/osint-workspace/Architecture/Architecture - wiki.md
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
   - entities/tools/deptry.md
@@ -35,6 +37,7 @@ updated: 2026-06-13
 - @meta/wiki-gap-detect-cadence.md — weekly Tier 1 gap report (linked from daily digest)
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — K84 gap map; Phase 1–4 closes inbox/n8n automation row
 - @concepts/cemini-knowledge-application-architecture.md — wiki→prod loop after ingest
+- @entities/tools/scholarquest.md — K123 agentic paper-search eval steal
 - @projects/osint-workspace/Architecture/Architecture - wiki.md — `wiki/` module map (catalog, lint, librarian sync)
 
 ## Raw Concept

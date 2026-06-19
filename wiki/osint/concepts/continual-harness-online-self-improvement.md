@@ -5,7 +5,9 @@ tags: [concept, agent-harness, self-improvement, online-learning, embodied-agent
 keywords: [continual-harness, reset-free-adaptation, harness-refiner, process-reward-co-learning, gemini-plays-pokemon]
 related:
   - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
+  - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
   - concepts/code-as-agent-harness.md
+  - concepts/generator-verifier-inference-time-steering.md
   - concepts/llm-agent-systems.md
   - sources/agentic-harness-engineering.md
 cross-wiki:
@@ -18,6 +20,8 @@ updated: 2026-05-27
 ## Relations
 
 - @sources/arxiv-continual-harness-self-improving-agents-2605.09998.md — primary source
+- @sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md — external verifier vs harness-edit (K123)
+- @concepts/generator-verifier-inference-time-steering.md
 - @concepts/code-as-agent-harness.md — static / human-curated harness design space
 - @concepts/llm-agent-systems.md — parent
 - @sources/agentic-harness-engineering.md — observability-driven harness evolution (complementary)

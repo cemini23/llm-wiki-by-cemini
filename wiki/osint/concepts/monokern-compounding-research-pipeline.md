@@ -7,6 +7,8 @@ related:
   - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/federated-daily-research-digest.md
+  - entities/tools/scholarquest.md
+  - sources/arxiv-scholarquest-agentic-academic-search-2606.20235-2026-06-19.md
   - meta/daily-research-digest-cadence.md
   - entities/tools/revfactory-harness.md
   - entities/tools/world-cup-bot.md
@@ -25,6 +27,7 @@ updated: 2026-06-03
 - @concepts/cemini-wiki-ingest-workflow.md
 - @concepts/federated-daily-research-digest.md
 - @meta/daily-research-digest-cadence.md
+- @entities/tools/scholarquest.md — K123 literature eval benchmark
 
 ## Raw Concept
 

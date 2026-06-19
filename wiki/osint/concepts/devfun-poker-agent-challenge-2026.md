@@ -5,12 +5,15 @@ tags: [concept, poker, devfun, six-max, agent-eval, researcher-track]
 keywords: [poker agent challenge, researcher track, BenchFlow, 6-max, Tom Dwan, session memory, trajectory]
 related:
   - concepts/devfun-poker-competitor-github-recon-2026-06.md
+  - concepts/generator-verifier-inference-time-steering.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
+  - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - entities/platforms/devfun-arena.md
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
   - concepts/active-project-research-routing.md
+  - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
 maturity: validated
 created: 2026-06-18
 updated: 2026-06-18
@@ -21,7 +24,8 @@ updated: 2026-06-18
 - @entities/platforms/devfun-arena.md
 - @sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
 - @sources/devfun-researcher-track-discord-welcome-2026-06-18.md — official channel welcome (Researcher Round)
-- @concepts/poker-arena-multi-axis-cognitive-profile.md — nine-axis profile + memory ablation (K122 deep-read)
+- @concepts/generator-verifier-inference-time-steering.md — VERITAS inference-time verifier steal (K123)
+- @sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
 - @sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md — Raeth paper source
 - @concepts/devfun-poker-competitor-github-recon-2026-06.md
 - @gambling-wiki/concepts/poker-hl-analyst-loop.md — HL loop for live leak patches (shared methodology)
@@ -82,9 +86,10 @@ Cemini ships **F6 session memory** + HL leak patches — add **axis-aware eval**
 1. **Sandbox readiness (P0, Jun 21)** — pin `competitionId`; smoke `pokerkit run --max-hands 50`; plan for **multi-day** season stamina (not 500h eval); full **6-max regression** green.
 2. **6-max policy** — continue HL loop on Playground intel + regression gates; no HU-only fork unless skill file mandates HU.
 3. **Memory** — extend F6; align with Raeth ablation lessons.
-4. **Trajectory discipline** — `export_researcher_trajectory.sh` after every benchmark run; post axis proxies in channel.
-5. **Playground** — optional HUD/field intel; not the Researcher LB.
-6. **Publish narrative** — structured policy + regression gates + trajectory contribution.
+4. **Verifier steering (K123)** — gradient-free verifier stack + optional Best-of-N before submit (`CEMINI_VERIFIER_BON`).
+5. **Trajectory discipline** — `export_researcher_trajectory.sh` after every benchmark run; post axis proxies in channel.
+6. **Playground** — optional HUD/field intel; not the Researcher LB.
+7. **Publish narrative** — structured policy + regression gates + trajectory contribution.
 
 ### Milestones
 
