@@ -17,6 +17,7 @@ related:
   - sources/firefly-sh2-production-interview-youtube-2026-06-17.md
   - entities/tools/unofficial-crusader-patch2.md
   - concepts/stronghold-modding-ecosystem-shelf.md
+  - concepts/stronghold-franchise-best-of-shelf.md
   - concepts/operator-vision-sh2-personal-clone.md
   - concepts/stronghold-2-systems-inventory.md
   - sources/stronghold-2-heaven-gameinfo-2026-06-13.md
@@ -24,9 +25,10 @@ related:
   - concepts/medieval-sim-fun-vs-accuracy.md
   - sources/leiden-medieval-city-builder-accuracy-2020.md
   - sources/unofficial-crusader-patch2-phase-0-audit-2026-06-13.md
+  - sources/stronghold-franchise-best-of-research-2026-06-18.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-18
 ---
 
 ## Relations

@@ -13,6 +13,7 @@ related:
   - sources/sh2-heaven-campaign-walkthroughs-2026-06-17.md
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - entities/projects/castle-sim.md
+  - concepts/stronghold-franchise-best-of-shelf.md
 maturity: validated
 created: 2026-06-17
 updated: 2026-06-17
@@ -66,7 +67,9 @@ Move to villages:
 
 Primary estate → **military + honor + market hub** only.
 
-### Honour & gold from estates [CONFIRMED]
+### Franchise upgrade (Legends → castle-sim) [TENTATIVE — @concepts/stronghold-franchise-best-of-shelf.md]
+
+Retail SH2 fixes each village estate's industry to the map. **Stronghold Legends** lets the capturing player **choose production type** on takeover (village resets, carter resumes). Recommended **best-of** graft for Phase C estates — keeps SH2 honour/carter loop, adds player agency.
 
 - Village purchase: **100 gold** (+ honour gate in missions)
 - Estate tax income lower than primary cruel tax

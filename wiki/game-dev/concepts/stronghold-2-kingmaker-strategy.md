@@ -18,6 +18,9 @@ related:
   - concepts/stronghold-2-campaign-economy-curriculum.md
   - concepts/stronghold-2-military-units.md
   - concepts/stronghold-2-siege-warfare.md
+  - concepts/stronghold-franchise-best-of-shelf.md
+  - sources/stronghold-franchise-research-pass2-2026-06-18.md
+  - concepts/stronghold-crusader-ai-modding-shelf.md
   - entities/projects/castle-sim.md
 maturity: validated
 created: 2026-06-17
@@ -79,14 +82,16 @@ castle-sim: expose as **preset buttons** ("Kingmaker economy") not manual spread
 | Market | Sell excess stone/wood/food/luxury |
 | Estates | Secondary estate tax (lower rate) |
 
-**Weapon buying:** many players skip fletcher/poleturner chains — buy weapons when market available [TENTATIVE — difficulty dependent].
+**Weapon buying:** many players skip fletcher/poleturner chains — buy weapons when market available [TENTATIVE — Matt Logan PvE guide prefers market weapons over workshops].
+
+**Emergency levy (castle-sim):** honour/gold capped packs — see `data/sh2/emergency_levy.json`; **not** 50+ merc horse archer meta.
 
 ### Military meta (PvE) [TENTATIVE — forums + guides]
 
 | Unit | Role |
 |------|------|
 | Archers on keep | Core defense; elevation matters |
-| Horse archers (merc) | Raiding, estate capture |
+| Horse archers | Raiding, estate capture — **retail:** merc post spam; **clone:** capped emergency levy only (BO2) |
 | Knights (mounted) | Late-game rush lord kill |
 | Crossbowmen | Wall defense vs armored attackers |
 
@@ -119,6 +124,10 @@ AI is **hard-coded**, not Crusader-style `.aic` modding [CONFIRMED — Fandom].
 | AI raids | No AI lord | Phase E |
 | Estate capture | N/A | Phase E |
 
+### Estate outsourcing [CONFIRMED — Matt Logan pass2]
+
+Move **innkeeper/vintner** to secondary estates — higher crime recidivism on primary [@sources/stronghold-franchise-research-pass2-2026-06-18.md].
+
 ### QoL lessons for clone
 
 - **Auto-sell thresholds** when stockpile full (community wish — not in SH2)
@@ -129,3 +138,4 @@ AI is **hard-coded**, not Crusader-style `.aic` modding [CONFIRMED — Fandom].
 
 - Chasing **ranked MP meta** — operator clone is solo; PvE openings sufficient
 - Starting at **Freeman** vs pre-ranked Duke — difficulty option only
+- Cloning Matt Logan **50+ horse archer merc** opening — conflicts with BO2 emergency levy cap

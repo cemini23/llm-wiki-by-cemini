@@ -43,10 +43,13 @@ related:
   - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
   - concepts/stronghold-2-production-buildings.md
   - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
+  - concepts/stronghold-franchise-best-of-shelf.md
+  - sources/stronghold-franchise-best-of-research-2026-06-18.md
   - sources/sh2-nation-fandom-ai-lords-2026-06-18.md
   - concepts/stronghold-2-castle-structures.md
   - sources/sh2-youtube-parity-watchlist-2026-06-17.md
   - entities/tools/stronghold2-mp-ai-patch.md
+  - concepts/stronghold-franchise-best-of-shelf.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-06-18

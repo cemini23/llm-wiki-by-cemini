@@ -8,6 +8,8 @@ related:
   - concepts/stronghold-systems-inventory.md
   - concepts/stronghold-deconstruction.md
   - concepts/vertical-slice-v0.md
+  - concepts/stronghold-franchise-best-of-shelf.md
+  - sources/stronghold-franchise-best-of-research-2026-06-18.md
 read_status: read
 source_type: official-manual
 source_url: https://cdn.akamai.steamstatic.com/steam/apps/40950/manuals/Stronghold%20HD%20Manual%20-%20English.pdf

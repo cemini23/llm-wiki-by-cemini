@@ -10,6 +10,7 @@ related:
   - concepts/stronghold-2-systems-inventory.md
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - concepts/stronghold-2-siege-warfare.md
+  - sources/stronghold-franchise-research-pass2-2026-06-18.md
 read_status: read
 source_type: youtube-transcript
 maturity: validated

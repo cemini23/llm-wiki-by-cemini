@@ -20,12 +20,15 @@ related:
   - sources/stronghold-2-heaven-gameinfo-2026-06-13.md
   - sources/sh2-youtube-parity-watchlist-2026-06-17.md
   - concepts/stronghold-2-mod-ecosystem-shelf.md
+  - concepts/stronghold-franchise-best-of-shelf.md
+  - concepts/stronghold-franchise-best-of-shelf.md
+  - sources/stronghold-franchise-best-of-research-2026-06-18.md
   - sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
   - entities/tools/sh2-mp-ai-enabler.md
   - concepts/stronghold-2-visual-qol-presets.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-17
+updated: 2026-06-18
 ---
 
 ## Relations
@@ -91,6 +94,7 @@ See `briefs/GDD-sh2-personal-clone.md` for story breakdown. Summary:
 4. **SH2 war** — no wall-hacking, siege ladder/ram, rank-gated units
 5. **SH2 fantasy** — joust, fair, Lady/dance, monastery, estates
 6. **Kingmaker mode** — full rank table as skirmish sandbox
+7. **Franchise cherry-picks** — @concepts/stronghold-franchise-best-of-shelf.md (estate picker, fear factor, warlord edicts, Crusader AI depth)
 
 Each phase should be **playable alone** — clone Crusader/SH2 scope only at the end.
 
@@ -103,6 +107,7 @@ Each phase should be **playable alone** — clone Crusader/SH2 scope only at the
 5. MobyGames / Firefly press sheet — modes and feature list
 6. @sources/sh2-youtube-parity-watchlist-2026-06-17.md — story-030 YouTube parity (closed)
 7. @sources/sh2-exa-youtube-deep-research-2026-06-17.md — strategy/siege/estates batch
+8. @concepts/stronghold-franchise-best-of-shelf.md — cross-title steal matrix (2026-06-18)
 
 ### Playtest gap rank (YouTube path, 2026-06-17)
 

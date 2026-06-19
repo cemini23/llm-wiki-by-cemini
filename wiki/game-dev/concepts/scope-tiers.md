@@ -15,6 +15,7 @@ related:
   - entities/engines/godot-4.md
   - concepts/operator-vision-sh2-personal-clone.md
   - concepts/stronghold-2-systems-inventory.md
+  - concepts/stronghold-franchise-best-of-shelf.md
   - entities/games/stronghold-series.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
   - concepts/rts-networking-deferred.md
@@ -48,6 +49,7 @@ Honest scope ladder for a solo (+ friends) Stronghold-inspired project. Prevents
 | **2 — Mini Stronghold** | 6–18 months | Food+wood+stone economy, wave raids, one siege weapon, hot-seat | Hard |
 | **3 — Stronghold feel** | Years (studio-scale) | AI lords, full siege roster, skirmish, real-time online MP | Very hard solo |
 | **3b — SH2 personal clone** | Years part-time | Popularity + honour + crime + Kingmaker + estates + SH2 siege rules | Operator goal — see @concepts/stronghold-2-systems-inventory.md |
+| **3c — Best-of franchise** | +months after 3b core | Cherry-picks from @concepts/stronghold-franchise-best-of-shelf.md (fear factor, estate picker, warlord edicts, Crusader AI) | Operator stretch — not before SH2 identity playable |
 
 **Project default:** complete **Tier 1 spine** on current repo, then climb SH2 phases in `briefs/GDD-sh2-personal-clone.md` — do not skip economy before honour.
 

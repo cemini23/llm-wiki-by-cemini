@@ -15,6 +15,9 @@ related:
   - concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md
   - sources/github-stronghold-2-scan-2026-06-13.md
   - sources/unofficial-crusader-patch2-phase-0-audit-2026-06-13.md
+  - concepts/stronghold-franchise-best-of-shelf.md
+  - concepts/stronghold-crusader-ai-modding-shelf.md
+  - sources/stronghold-franchise-research-pass2-2026-06-18.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-15

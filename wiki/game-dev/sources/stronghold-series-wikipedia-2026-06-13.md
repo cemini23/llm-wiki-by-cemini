@@ -6,6 +6,7 @@ keywords: [stronghold, firefly, crusader, warlords, definitive-edition]
 related:
   - entities/games/stronghold-series.md
   - concepts/stronghold-systems-inventory.md
+  - sources/stronghold-franchise-best-of-research-2026-06-18.md
 read_status: read
 source_type: encyclopedia
 source_url: https://en.wikipedia.org/wiki/Stronghold_(series)

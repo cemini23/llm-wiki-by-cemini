@@ -19,6 +19,7 @@ related:
   - sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md
   - entities/tools/stronghold2-analyse-hub.md
   - concepts/stronghold-2-visual-qol-presets.md
+  - concepts/stronghold-franchise-best-of-shelf.md
   - concepts/art-pipeline-v0-requirements.md
   - sources/github-stronghold-2-scan-2026-06-13.md
 maturity: validated

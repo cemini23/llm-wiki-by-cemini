@@ -45,6 +45,9 @@ related:
   - sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md
   - concepts/stronghold-2-military-units.md
   - sources/shaggydev-udd-navigation-2025.md
+  - concepts/stronghold-franchise-best-of-shelf.md
+  - concepts/stronghold-crusader-ai-modding-shelf.md
+  - sources/stronghold-franchise-research-pass2-2026-06-18.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-17

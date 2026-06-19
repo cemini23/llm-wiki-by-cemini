@@ -19,6 +19,8 @@ related:
   - concepts/stronghold-2-production-buildings.md
   - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
   - entities/projects/castle-sim.md
+  - concepts/stronghold-franchise-best-of-shelf.md
+  - concepts/stronghold-crusader-ai-modding-shelf.md
 maturity: validated
 created: 2026-06-17
 updated: 2026-06-18

@@ -8,8 +8,11 @@ related:
   - concepts/stronghold-systems-inventory.md
   - concepts/indie-kingdom-builder-lessons.md
   - concepts/stronghold-2-systems-inventory.md
+  - concepts/stronghold-franchise-best-of-shelf.md
   - sources/exa-deep-research-batch-2026-06-13.md
   - sources/gamespy-stronghold-2-bradbury-qa-2004.md
+  - sources/stronghold-franchise-best-of-research-2026-06-18.md
+  - sources/stronghold-franchise-research-pass2-2026-06-18.md
 read_status: read
 source_type: interview
 source_url: https://stronghold.heavengames.com/fair/interviews/askff20110522/

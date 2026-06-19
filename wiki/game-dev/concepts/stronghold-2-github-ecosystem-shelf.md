@@ -17,6 +17,7 @@ related:
   - entities/tools/sh2-mp-ai-enabler.md
   - entities/tools/sh2-community-lord-editor.md
   - sources/stronghold2-mp-ai-patch-phase-0-audit-2026-06-13.md
+  - sources/stronghold-franchise-research-pass2-2026-06-18.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-16

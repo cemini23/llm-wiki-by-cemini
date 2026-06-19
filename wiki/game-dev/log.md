@@ -4,6 +4,24 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-18] ingest | Franchise BO1–BO5 locked + pass-2 research
+
+- Operator: crime-only (no fear), capped emergency levy, estate picker, night scenarios, no fantasy
+- Brief: `briefs/story-032-franchise-cherry-picks.md`; `castle-sim/data/sh2/emergency_levy.json`
+- Pass-2: @sources/stronghold-franchise-research-pass2-2026-06-18.md — Matt Logan Kingmaker scrape, YouTube shelf, UCP/AIV GitHub
+- Concept: @concepts/stronghold-crusader-ai-modding-shelf.md
+
+---
+
+## [2026-06-18] ingest | Stronghold franchise best-of research
+
+- Cross-title feature harvest → @concepts/stronghold-franchise-best-of-shelf.md (SH2 baseline + steal matrix)
+- Source: @sources/stronghold-franchise-best-of-research-2026-06-18.md
+- Top grafts: Legends estate production picker, SH1 fear factor, Warlords edicts/housing tiers, Crusader AI depth
+- Updated: @concepts/operator-vision-sh2-personal-clone.md phase ladder, @concepts/stronghold-2-estates-system.md
+
+---
+
 ## [2026-06-18] ingest | Phase-0 SH2 tools + inbox triage + operator briefs
 
 - Phase-0: @sources/sh2-mp-ai-enabler-phase-0-audit-2026-06-18.md (CONDITIONAL-GO), @sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md (STEAL-FROM)

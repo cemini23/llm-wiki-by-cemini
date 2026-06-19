@@ -12,12 +12,14 @@ related:
   - sources/stronghold-series-wikipedia-2026-06-13.md
   - concepts/rts-siege-ai-reference.md
   - concepts/stronghold-2-systems-inventory.md
+  - concepts/stronghold-franchise-best-of-shelf.md
   - concepts/stronghold-modding-ecosystem-shelf.md
   - entities/projects/castle-sim.md
   - entities/tools/unofficial-crusader-patch2.md
   - sources/gamespy-stronghold-2-bradbury-qa-2004.md
   - sources/gdc-total-war-warhammer-siege-ai.md
   - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
+  - sources/stronghold-franchise-best-of-research-2026-06-18.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-15

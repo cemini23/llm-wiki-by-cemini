@@ -30,6 +30,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [tool-evaluation-cross-wiki-batch-2026-06-13](concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md) | validated | 56-target tool eval + routing verdicts |
 | [stronghold-modding-ecosystem-shelf](concepts/stronghold-modding-ecosystem-shelf.md) | validated | Crusader mod repos; UCP2 MIT exception |
 | [stronghold-2-mod-ecosystem-shelf](concepts/stronghold-2-mod-ecosystem-shelf.md) | validated | SH2 ModDB/Nexus/YouTube mods; QoL → castle-sim map |
+| [stronghold-franchise-best-of-shelf](concepts/stronghold-franchise-best-of-shelf.md) | validated | Cross-title steal matrix; SH2 baseline + Crusader/Legends/Warlords grafts |
+| [stronghold-crusader-ai-modding-shelf](concepts/stronghold-crusader-ai-modding-shelf.md) | validated | UCP/AIV/AIC toolchain → lord director study |
 | [stronghold-2-visual-qol-presets](concepts/stronghold-2-visual-qol-presets.md) | validated | HD/ENB/Matteele/Winter → Godot graphics presets |
 | [stronghold-2-systems-inventory](concepts/stronghold-2-systems-inventory.md) | draft | SH2 honour/crime/kingmaker — clone target |
 | [stronghold-2-popularity-model](concepts/stronghold-2-popularity-model.md) | validated | SH2 eight-category popularity tables |
@@ -176,3 +178,5 @@ Catalog of all wiki pages. Updated on each ingest.
 | [sh2-mp-ai-enabler-phase-0-audit-2026-06-18](sources/sh2-mp-ai-enabler-phase-0-audit-2026-06-18.md) | read |
 | [sh2-community-lord-editor-phase-0-audit-2026-06-18](sources/sh2-community-lord-editor-phase-0-audit-2026-06-18.md) | read |
 | [inbox-arxiv-reject-batch-2026-06-18](sources/inbox-arxiv-reject-batch-2026-06-18.md) | read |
+| [stronghold-franchise-research-pass2-2026-06-18](sources/stronghold-franchise-research-pass2-2026-06-18.md) | read |
+| [stronghold-franchise-best-of-research-2026-06-18](sources/stronghold-franchise-best-of-research-2026-06-18.md) | read |

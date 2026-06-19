@@ -11,6 +11,7 @@ related:
   - sources/tool-evaluation-cross-wiki-routing-2026-06-13.md
   - sources/unofficial-crusader-patch2-phase-0-audit-2026-06-13.md
   - concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md
+  - concepts/stronghold-crusader-ai-modding-shelf.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-15

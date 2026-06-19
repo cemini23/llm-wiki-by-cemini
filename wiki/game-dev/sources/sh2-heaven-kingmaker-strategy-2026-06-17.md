@@ -10,6 +10,7 @@ related:
   - concepts/stronghold-2-estates-system.md
   - concepts/stronghold-2-systems-inventory.md
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
+  - sources/stronghold-franchise-research-pass2-2026-06-18.md
 read_status: read
 source_type: community-guide
 source_url: https://stronghold2.heavengames.com/strategy/kingmakertips/

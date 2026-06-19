@@ -14,6 +14,7 @@ related:
   - sources/sh2-mod-ecosystem-scan-youtube-moddb-2026-06-18.md
   - sources/stronghold2-mp-ai-patch-phase-0-audit-2026-06-13.md
   - concepts/stronghold-2-mod-ecosystem-shelf.md
+  - concepts/stronghold-crusader-ai-modding-shelf.md
 read_status: read
 source_type: github-scan
 source_url: https://github.com/search?q=stronghold2&type=repositories
