@@ -15,6 +15,7 @@ related:
   - entities/projects/castle-sim.md
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md
+  - concepts/stronghold-2-lord-feasts-luxury-chains.md
 read_status: read
 source_type: community-wiki
 source_url: https://stronghold2.heavengames.com/gameinfo/buildings/
