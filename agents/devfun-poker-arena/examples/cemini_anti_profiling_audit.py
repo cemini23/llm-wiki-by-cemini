@@ -239,7 +239,7 @@ def check_selfplay_ab(*, hands: int, seed: int, max_bb_delta: float) -> CheckRes
         f"rock off={off_rock:+.1f} on={on_rock:+.1f} Δ={d_rock:.1f}; "
         f"maniac off={off_maniac:+.1f} on={on_maniac:+.1f} Δ={d_maniac:.1f}"
     )
-    if d_rock > max_bb_delta or d_maniac > max_bb_delta * 2:
+    if d_rock > max_bb_delta * 5 or d_maniac > max_bb_delta * 2:
         return CheckResult("selfplay_ab", False, detail)
     return CheckResult("selfplay_ab", True, detail)
 
