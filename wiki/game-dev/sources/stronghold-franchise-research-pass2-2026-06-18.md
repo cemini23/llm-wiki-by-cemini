@@ -12,6 +12,7 @@ related:
   - sources/stronghold-franchise-best-of-research-2026-06-18.md
   - sources/sh2-heaven-kingmaker-strategy-2026-06-17.md
   - sources/sh2-youtube-parity-watchlist-2026-06-17.md
+  - sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
   - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
   - sources/firefly-sh2-production-interview-youtube-2026-06-17.md
   - entities/projects/castle-sim.md

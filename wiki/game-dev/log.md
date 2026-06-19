@@ -4,6 +4,15 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-19] research | Story-033 Kingmaker YouTube watchlist
+
+- Transcripts: 5/7 videos (1 private, 1 no captions)
+- Source: @sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
+- Checklist: `briefs/research/sh2-playsession-checklist-kingmaker.md` → master § Kingmaker
+- Deltas: fair pulls guards, estate raid callouts, fletcher arrest — @concepts/stronghold-2-kingmaker-strategy.md
+
+---
+
 ## [2026-06-19] ingest | Inbox triage + Crusader AIV Phase-0 + briefs
 
 - Inbox: 5 arXiv digest PDFs → @sources/inbox-arxiv-reject-batch-2026-06-19.md; Shachi 2509.21862 **defer @ccc-wiki**; archived to egress; inbox cleared

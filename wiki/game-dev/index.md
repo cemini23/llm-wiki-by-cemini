@@ -182,6 +182,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-06-18](sources/inbox-arxiv-reject-batch-2026-06-18.md) | read |
 | [stronghold-franchise-research-pass2-2026-06-18](sources/stronghold-franchise-research-pass2-2026-06-18.md) | read |
 | [stronghold-franchise-best-of-research-2026-06-18](sources/stronghold-franchise-best-of-research-2026-06-18.md) | read |
+| [sh2-kingmaker-youtube-watchlist-2026-06-19](sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md) | read |
 | [inbox-arxiv-reject-batch-2026-06-19](sources/inbox-arxiv-reject-batch-2026-06-19.md) | read |
 | [evrey-shc-aiv-phase-0-audit-2026-06-19](sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md) | read |
 | [krarilotus-efficient-ai-phase-0-audit-2026-06-19](sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md) | read |

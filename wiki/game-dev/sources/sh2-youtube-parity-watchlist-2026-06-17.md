@@ -13,6 +13,7 @@ related:
   - entities/projects/castle-sim.md
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
+  - sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
 read_status: read
 source_type: youtube-transcript
 maturity: validated

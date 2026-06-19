@@ -16,6 +16,7 @@ related:
   - sources/sh2-heaven-pow-missions-2026-06-18.md
   - concepts/stronghold-2-production-buildings.md
   - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
+  - sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
 read_status: read
 source_type: community-wiki
 source_url: https://stronghold2.heavengames.com/gameinfo/characters/king/

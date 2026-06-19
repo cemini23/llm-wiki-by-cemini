@@ -20,17 +20,19 @@ related:
   - concepts/stronghold-2-siege-warfare.md
   - concepts/stronghold-franchise-best-of-shelf.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
+  - sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
   - concepts/stronghold-crusader-ai-modding-shelf.md
   - entities/projects/castle-sim.md
 maturity: validated
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-06-19
 ---
 
 ## Relations
 
 - @concepts/stronghold-2-systems-inventory.md — rank unlock spine
 - @sources/sh2-heaven-kingmaker-strategy-2026-06-17.md — Matt Logan cheat sheet
+- @sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md — story-033 YouTube Kingmaker batch
 
 ## Raw Concept
 
@@ -127,6 +129,22 @@ AI is **hard-coded**, not Crusader-style `.aic` modding [CONFIRMED — Fandom].
 ### Estate outsourcing [CONFIRMED — Matt Logan pass2]
 
 Move **innkeeper/vintner** to secondary estates — higher crime recidivism on primary [@sources/stronghold-franchise-research-pass2-2026-06-18.md].
+
+### YouTube Kingmaker observations (story-033) [OBSERVED-YT — 2026-06-19]
+
+From @sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md (5/7 transcripts):
+
+| Finding | Video | clone note |
+|---------|-------|------------|
+| Kingmaker = skirmish; menu not under Multiplayer | *2xcDg5RscRc* | Lobby UX |
+| Enemy lord **promotion announced** during PvE | *MD8MfO3BuZw* | Rival rank HUD |
+| **Estate raid** advisor line (≠ keep siege) | *MD8MfO3BuZw* | AI `estate_target_weight` |
+| Carter post **first-use tutorial** popup | *MD8MfO3BuZw* | Onboarding |
+| **Traveling fair pulls guards** off posts | *fJ8wjeMdz9k* | Guard priority > fair radius |
+| Crime **jails fletchers** → bow production halt | *P0SrfrucRTo* | Industry worker arrest |
+| Riding archer / horse raid voice lines (Three Bridges) | *MD8MfO3BuZw* | BO2 levy cap — not 50+ merc |
+
+Matt Logan automation profile (double ration + tax) **confirmed** on video — not new.
 
 ### QoL lessons for clone
 
