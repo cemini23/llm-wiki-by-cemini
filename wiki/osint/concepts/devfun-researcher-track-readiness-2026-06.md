@@ -7,6 +7,7 @@ related:
   - concepts/devfun-poker-agent-challenge-2026.md
   - concepts/devfun-researcher-pre-submit-recon.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
+  - concepts/multi-agent-fictitious-play-llm.md
   - concepts/devfun-poker-competitor-github-recon-2026-06.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - concepts/devfun-researcher-pro-style-targets-2026-06.md
@@ -18,7 +19,7 @@ related:
   - entities/platforms/devfun-arena.md
 maturity: validated
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-20
 cross-wiki:
   - "@gambling-wiki/entities/platforms/devfun-poker-arena.md"
   - "@gambling-wiki/concepts/poker-hl-analyst-loop.md"

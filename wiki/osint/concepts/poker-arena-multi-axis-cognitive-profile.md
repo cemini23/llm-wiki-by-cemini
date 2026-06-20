@@ -14,9 +14,13 @@ related:
   - concepts/devfun-researcher-pro-style-targets-2026-06.md
   - entities/platforms/devfun-arena.md
   - concepts/extensive-form-games-stochastic-action-sets.md
+  - concepts/multi-agent-fictitious-play-llm.md
+  - concepts/team-zero-sum-games-complexity.md
+  - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
+  - sources/arxiv-team-zero-sum-games-2606.16139-2026-06-20.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-20
 ---
 
 ## Relations
@@ -25,6 +29,8 @@ updated: 2026-06-18
 - @concepts/devfun-poker-agent-challenge-2026.md — Cemini Researcher Round optimization target
 - @entities/platforms/devfun-arena.md — dev.fun + Raeth benchmark surfaces
 - @sources/arxiv-equilibrium-efgsas-2606.13093-2026-06-18.md — CFR/equilibrium theory sibling
+- @concepts/multi-agent-fictitious-play-llm.md — fictitious-play equilibrium seeking (K124)
+- @concepts/team-zero-sum-games-complexity.md — multi-agent equilibrium hardness (K124)
 
 ## Raw Concept
 

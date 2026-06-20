@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **425 canonical stubs** (K121 WikiKV + workflow pivot 2026-06-17; K120 2026-06-17)
+Total: **430 canonical stubs** (K124 daily digest 2026-06-20; K123 2026-06-19)
 
 
 ### rl-marl (104)
@@ -1307,6 +1307,15 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [ScholarQuest](entities/tools/scholarquest.md) — K123 agentic paper-search benchmark. — entity, tool, k123
 - [Generator-verifier inference-time steering](concepts/generator-verifier-inference-time-steering.md) — K123: VERITAS Best-of-N + D_auto flywheel. — concept, verifier, k123
 - [VERITAS visual verification (2606.18247)](sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md) — `[DRAFT 2026-06-18]` K123: inference-time steering; poker steal. — source, arxiv, k123
+- [MAFP fictitious play (2606.19308)](sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md) — `[DRAFT 2026-06-20]` K124: stance entanglement; poker offline charts. — source, arxiv, k124
+- [Trainee-to-Trainer (2606.17682)](sources/arxiv-trainee-to-trainer-2606.17682-2026-06-20.md) — `[DRAFT 2026-06-20]` K124: LLM env engineer; CONDITIONAL-GO. — source, arxiv, k124
+- [Qwen-RobotNav (2606.18112)](sources/arxiv-qwen-robotnav-2606.18112-2026-06-20.md) — `[DRAFT 2026-06-20]` K124: agentic nav memory; repo 404. — source, arxiv, k124
+- [Team zero-sum PPAD (2606.16139)](sources/arxiv-team-zero-sum-games-2606.16139-2026-06-20.md) — `[DRAFT 2026-06-20]` K124: equilibrium hardness; REFERENCE. — source, arxiv, k124
+- [Multi-Agent Fictitious Play](concepts/multi-agent-fictitious-play-llm.md) — K124: MAFP equilibrium seeking for LLM decisions. — concept, game-theory, k124
+- [LLM environment engineer RL curriculum](concepts/llm-environment-engineer-rl-curriculum.md) — K124: failure-driven env config loop. — concept, rl, k124
+- [Agentic navigation memory strategy](concepts/agentic-navigation-memory-strategy.md) — K124: task-conditioned obs interface. — concept, navigation, k124
+- [Team zero-sum games complexity](concepts/team-zero-sum-games-complexity.md) — K124: PPAD-complete Nash. — concept, game-theory, k124
+- [Trainee-to-Trainer](entities/tools/trainee-to-trainer.md) — K124 MAPF env-engineer tool. — entity, tool, k124
 - [Poker Arena multi-axis cognitive profile](concepts/poker-arena-multi-axis-cognitive-profile.md) — K122: Raeth nine-axis + memory ablation. — concept, poker, k122
 - [Extensive-form games with stochastic action sets](concepts/extensive-form-games-stochastic-action-sets.md) — K122: EFGSAS / SI-CFR. — concept, game-theory, k122
 - [MoVerse panoramic video world model](concepts/moverse-panoramic-video-world-model.md) — K122: single-image → 360° → Gaussian scaffold. — concept, world-model, k122

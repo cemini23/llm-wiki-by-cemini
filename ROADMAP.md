@@ -21,6 +21,10 @@ Research digest + ingest briefs target these first (`scripts/active_project_brie
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-20 — K124)
+
+- **K124 ingest (2026-06-20)** — Daily digest full ingest: 4 arXiv from inbox. **4 sources + 4 concepts + 1 entity + 4 updates.** Team zero-sum PPAD (2606.16139) REFERENCE; Trainee-to-Trainer (2606.17682) CONDITIONAL-GO — NOASSERTION license; Qwen-RobotNav (2606.18112) REFERENCE — repo 404; MAFP fictitious play (2606.19308) REFERENCE — poker steal. **Phase-0:** `adopt_k124_phase0.sh`. **Briefs (2):** poker MAFP offline charts; castle-sim RobotNav memory + env-engineer playtest. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-19 — K123)
 
 - **K123 ingest (2026-06-19)** — Daily digest: VERITAS inbox + ScholarQuest cross-wiki. **2 sources + 1 concept + 1 entity + 7 updates.** VERITAS (2606.18247) REFERENCE — generator-verifier steering; ScholarQuest (2606.20235) CONDITIONAL-GO — no license. **Phase-0:** `adopt_k123_phase0.sh`. **Brief (1):** poker verifier inference steering. Archive → egress-fi; inbox cleared.

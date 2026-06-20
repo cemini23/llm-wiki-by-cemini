@@ -7,9 +7,13 @@ related:
   - sources/arxiv-equilibrium-efgsas-2606.13093-2026-06-18.md
   - concepts/strategic-resource-acquisition-game-theory.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
+  - concepts/team-zero-sum-games-complexity.md
+  - sources/arxiv-team-zero-sum-games-2606.16139-2026-06-20.md
+  - concepts/multi-agent-fictitious-play-llm.md
+  - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
 maturity: draft
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-20
 ---
 
 ## Relations
@@ -17,6 +21,7 @@ updated: 2026-06-18
 - @sources/arxiv-equilibrium-efgsas-2606.13093-2026-06-18.md — primary source (Schwarz, Sim, Ling)
 - @concepts/strategic-resource-acquisition-game-theory.md — competitive resource games under constraints
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — strategic mixing axis uses GTO/CFR baselines
+- @concepts/team-zero-sum-games-complexity.md — team zero-sum PPAD hardness (K124)
 
 ## Raw Concept
 

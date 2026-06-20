@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-06-20] ingest | K124 daily digest — 4 arXiv
+
+- **Sources (4):** team zero-sum PPAD (2606.16139); Trainee-to-Trainer env engineer (2606.17682); Qwen-RobotNav (2606.18112); MAFP fictitious play (2606.19308)
+- **Concepts (4):** `@concepts/team-zero-sum-games-complexity.md`, `@concepts/llm-environment-engineer-rl-curriculum.md`, `@concepts/agentic-navigation-memory-strategy.md`, `@concepts/multi-agent-fictitious-play-llm.md`
+- **Entity (1):** `@entities/tools/trainee-to-trainer.md` — CONDITIONAL-GO (NOASSERTION)
+- **Updates:** poker multi-axis profile, EFGSAS concept — K124 backlinks
+- **Phase-0:** `scripts/adopt_k124_phase0.sh`
+- **Briefs (2):** `agents/devfun-poker-arena/briefs/2026-06-20_k124-mafp-fictitious-play-steal.md`; `../projects/castle-sim/briefs/2026-06-20_k124-robotnav-playtest-memory-steal.md`
+- **Archive:** 4 PDFs → egress-fi; inbox cleared
+
 ## [2026-06-19] researcher-track | 7-model super-audit P0 fixes + gate + deploy
 
 - **P0 shipped:** series `match_win` (80h/match TrueSkill proxy), `lag` opponent in audit, maniac bb/100 demoted to advisory, prod `CEMINI_TABLE_FORMAT=auto` (Playground S3 6-max intel)

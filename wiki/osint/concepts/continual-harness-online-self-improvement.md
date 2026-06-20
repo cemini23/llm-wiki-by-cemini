@@ -8,13 +8,14 @@ related:
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
   - concepts/code-as-agent-harness.md
   - concepts/generator-verifier-inference-time-steering.md
+  - concepts/llm-environment-engineer-rl-curriculum.md
   - concepts/llm-agent-systems.md
   - sources/agentic-harness-engineering.md
 cross-wiki:
   - ccc-wiki/concepts/continual-harness-online-self-improvement.md
 maturity: validated
 created: 2026-05-27
-updated: 2026-05-27
+updated: 2026-06-20
 ---
 
 ## Relations
