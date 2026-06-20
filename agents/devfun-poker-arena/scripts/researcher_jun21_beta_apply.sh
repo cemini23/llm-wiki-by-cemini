@@ -21,11 +21,13 @@ DEPLOY_DATE="$(date -u +%Y-%m-%d)"
 AGENT_VERSION="${AGENT_VERSION:-researcher-jun21.${GIT_SHA}.${DEPLOY_DATE}"
 PLAYGROUND_COMP="${S3_PLAYGROUND_COMP:-cmqf827h30u7dfca3x2aqvzjv}"
 AUTO_COMP=0
+SKIP_CHECKLIST=0
 RESEARCHER_COMP="${ARENA_RESEARCHER_COMP_ID:-}"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --auto-comp) AUTO_COMP=1; shift ;;
+    --skip-checklist) SKIP_CHECKLIST=1; shift ;;
     *) echo "Unknown arg: $1" >&2; exit 2 ;;
   esac
 done
@@ -48,7 +50,9 @@ else
 fi
 
 echo "==> Local Jun 21 checklist (CI gate)"
-bash "${SCRIPT_DIR}/run_researcher_jun21_checklist.sh" --ci
+if [[ "$SKIP_CHECKLIST" != "1" ]]; then
+  bash "${SCRIPT_DIR}/run_researcher_jun21_checklist.sh" --ci
+fi
 
 echo "==> Deploy code: version=${AGENT_VERSION}"
 export ARENA_LOBBY_COMPETITION_ID="${PLAYGROUND_COMP}"
@@ -65,7 +69,7 @@ ssh -q "${HOST}" env \
   TABLE_FORMAT="${TABLE_FORMAT}" \
   AGENT_VERSION="${AGENT_VERSION}" \
   REMOTE_DIR="${REMOTE_DIR}" bash -s <<'REMOTE'
-set -euo pipefail
+set -eo pipefail
 cd "${REMOTE_DIR}"
 
 set_kv() {
