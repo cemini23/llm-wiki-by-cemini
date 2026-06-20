@@ -16,9 +16,11 @@ related:
   - "@ccc-wiki/concepts/autosci-memory-centric-research-agents.md"
   - concepts/agent-memory-pipeline-eval-rubric.md
   - sources/trading-posts-compilation-17-2026-06-03.md
+  - sources/arxiv-metaresearcher-deep-research-2606.19893-2026-06-20.md
+  - entities/tools/metaresearcher.md
 maturity: validated
 created: 2026-06-01
-updated: 2026-06-03
+updated: 2026-06-20
 ---
 
 ## Relations
@@ -28,6 +30,7 @@ updated: 2026-06-03
 - @concepts/federated-daily-research-digest.md
 - @meta/daily-research-digest-cadence.md
 - @entities/tools/scholarquest.md — K123 literature eval benchmark
+- @entities/tools/metaresearcher.md — K124 adversarial deep-research eval steal
 
 ## Raw Concept
 

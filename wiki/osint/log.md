@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-20] cross-wiki | K124 SEO digest — MetaResearcher adversarial deep research
+
+- **Source** — arXiv 2606.19893 (MetaResearcher); cross-route from @seo-wiki/sweeps/2026-06-20-daily.md
+- **New** — @sources/arxiv-metaresearcher-deep-research-2606.19893-2026-06-20.md, @entities/tools/metaresearcher.md
+- **Updated** — @concepts/federated-daily-research-digest.md, @concepts/monokern-compounding-research-pipeline.md, @entities/tools/scholarquest.md (LICENSE re-check still null)
+- **Brief** — `briefs/2026-06-20_k124-metaresearcher-deep-research-handoff.md`
+- **Phase-0** — REFERENCE (no public code; planned GAIA validation)
+- **ScholarQuest** — PDF re-archived from SEO inbox; pages unchanged (K123)
+
 ## [2026-06-20] ingest | K124 daily digest — 4 arXiv
 
 - **Sources (4):** team zero-sum PPAD (2606.16139); Trainee-to-Trainer env engineer (2606.17682); Qwen-RobotNav (2606.18112); MAFP fictitious play (2606.19308)

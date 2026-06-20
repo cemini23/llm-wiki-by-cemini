@@ -8,9 +8,11 @@ related:
   - concepts/federated-daily-research-digest.md
   - concepts/monokern-compounding-research-pipeline.md
   - concepts/cemini-wiki-ingest-workflow.md
+  - sources/arxiv-metaresearcher-deep-research-2606.19893-2026-06-20.md
+  - entities/tools/metaresearcher.md
 maturity: draft
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-20
 phase_0_verdict: CONDITIONAL-GO
 license_verified: false
 repo: https://github.com/pty12345/ScholarQuest
@@ -22,6 +24,8 @@ cross-wiki-source: "@seo-wiki/sweeps/2026-06-19-daily.md"
 - @sources/arxiv-scholarquest-agentic-academic-search-2606.20235-2026-06-19.md
 - @concepts/federated-daily-research-digest.md — eval target for overnight paper fetch quality
 - @concepts/monokern-compounding-research-pipeline.md — weekly synthesis literature coverage
+- @sources/arxiv-metaresearcher-deep-research-2606.19893-2026-06-20.md — K124 digest batch mate
+- @entities/tools/metaresearcher.md — K124 adversarial deep-research framework
 
 ## Raw Concept
 
@@ -33,7 +37,7 @@ Phase-0 from K123 SEO digest cross-route — arXiv 2606.20235 + GitHub `pty12345
 
 | Check | Result |
 |-------|--------|
-| License | **None** on GitHub API (2026-06-19) — block adoption until SPDX confirmed |
+| License | **None** on GitHub API (2026-06-19, re-check 2026-06-20) — block adoption until SPDX confirmed |
 | Maturity | 0 stars; last push 2026-05-19; paper + code claimed public |
 | Failure mode | Reproducibility depends on ScholarBase backend availability |
 | Wiki overlap | Federation daily digest uses Exa + preingest_check — ScholarQuest offers structured agentic eval |

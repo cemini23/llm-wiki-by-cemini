@@ -16,11 +16,11 @@ related:
   - concepts/autosci-research-lifecycle-memory.md
   - sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md
   - entities/tools/wikikv.md
-  - sources/arxiv-scholarquest-agentic-academic-search-2606.20235-2026-06-19.md
-  - entities/tools/scholarquest.md
+  - sources/arxiv-metaresearcher-deep-research-2606.19893-2026-06-20.md
+  - entities/tools/metaresearcher.md
 maturity: core
 created: 2026-06-01
-updated: 2026-06-19
+updated: 2026-06-20
 ---
 
 ## Relations
@@ -36,6 +36,8 @@ updated: 2026-06-19
 - @entities/tools/wikikv.md — Phase-0 REFERENCE entity
 - @sources/arxiv-scholarquest-agentic-academic-search-2606.20235-2026-06-19.md — K123 cross-wiki from seo-wiki digest
 - @entities/tools/scholarquest.md — agentic literature search eval
+- @sources/arxiv-metaresearcher-deep-research-2606.19893-2026-06-20.md — K124 SEO cross-wiki: adversarial deep-research RL
+- @entities/tools/metaresearcher.md — Phase-0 REFERENCE
 
 ## Raw Concept
 
