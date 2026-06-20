@@ -17,6 +17,8 @@ related:
   - meta/sibling-wiki-inventory.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
   - entities/projects/castle-sim.md
+  - concepts/game-ai-rl-augmentation-shelf.md
+  - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
   - entities/tools/hi-godot-ai.md
 maturity: draft
 created: 2026-06-13

@@ -6,6 +6,8 @@ keywords: [krarilotus, aic, aiv, crusader, aggressive]
 related:
   - sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md
   - entities/tools/evrey-shc-aiv.md
+  - entities/tools/crusader-ai-manager.md
+  - entities/tools/monsterfisch-strongholds-of-conquest.md
   - entities/tools/unofficial-crusader-patch2.md
   - concepts/stronghold-crusader-ai-modding-shelf.md
   - concepts/stronghold-modding-ecosystem-shelf.md

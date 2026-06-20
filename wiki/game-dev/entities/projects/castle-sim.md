@@ -52,10 +52,14 @@ related:
   - concepts/stronghold-crusader-ai-modding-shelf.md
   - entities/tools/evrey-shc-aiv.md
   - entities/tools/krarilotus-crusader-efficient-ai.md
+  - entities/tools/crusader-ai-manager.md
+  - entities/tools/monsterfisch-strongholds-of-conquest.md
+  - concepts/game-ai-rl-augmentation-shelf.md
+  - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-17
+updated: 2026-06-20
 ---
 
 ## Relations

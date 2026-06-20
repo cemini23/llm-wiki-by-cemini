@@ -9,7 +9,9 @@ related:
   - concepts/stronghold-modding-ecosystem-shelf.md
   - entities/tools/unofficial-crusader-patch2.md
   - entities/tools/krarilotus-crusader-efficient-ai.md
-  - sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md
+  - entities/tools/crusader-ai-manager.md
+  - entities/tools/monsterfisch-strongholds-of-conquest.md
+  - sources/monsterfisch-conquest-aiv-phase-0-audit-2026-06-20.md
   - concepts/stronghold-2-ai-lords.md
   - entities/projects/castle-sim.md
 maturity: validated

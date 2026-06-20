@@ -4,7 +4,15 @@ Append-only chronological log.
 
 ---
 
-## [2026-06-19] research | Heaven resources + luxury feast deep-read
+## [2026-06-20] ingest | Inbox triage + Crusader Phase-0 + EA DRL shelf
+
+- Inbox: 5 arXiv digest PDFs → @sources/inbox-arxiv-reject-batch-2026-06-20.md; **2606.20210 ingest** → @sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md; **2606.17682 defer @ccc-wiki**; archived to egress; inbox cleared
+- Concept: @concepts/game-ai-rl-augmentation-shelf.md (Phase E+ modular RL leaves)
+- Phase-0: @sources/crusader-ai-manager-phase-0-audit-2026-06-20.md, @sources/monsterfisch-conquest-aiv-phase-0-audit-2026-06-20.md → STEAL-FROM entities
+- Briefs: `story-034-phase-c-lord-feasts-luxury.md`, `briefs/research/crusader-aiv-study-loop.md`; synced → `castle-sim/briefs/`
+- Sweep: @sweeps/2026-06-20-daily.md
+
+---
 
 - Stockpile per-section caps + armoury market prices → @sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md
 - Concept: @concepts/stronghold-2-lord-feasts-luxury-chains.md (Phase C feast/inn/Lady loops)

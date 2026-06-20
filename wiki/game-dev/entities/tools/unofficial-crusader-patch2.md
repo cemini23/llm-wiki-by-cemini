@@ -14,8 +14,10 @@ related:
   - concepts/stronghold-crusader-ai-modding-shelf.md
   - entities/tools/evrey-shc-aiv.md
   - entities/tools/krarilotus-crusader-efficient-ai.md
-  - sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md
-  - sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md
+  - entities/tools/crusader-ai-manager.md
+  - entities/tools/monsterfisch-strongholds-of-conquest.md
+  - sources/crusader-ai-manager-phase-0-audit-2026-06-20.md
+  - sources/monsterfisch-conquest-aiv-phase-0-audit-2026-06-20.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-19

@@ -32,6 +32,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [stronghold-2-mod-ecosystem-shelf](concepts/stronghold-2-mod-ecosystem-shelf.md) | validated | SH2 ModDB/Nexus/YouTube mods; QoL → castle-sim map |
 | [stronghold-franchise-best-of-shelf](concepts/stronghold-franchise-best-of-shelf.md) | validated | Cross-title steal matrix; SH2 baseline + Crusader/Legends/Warlords grafts |
 | [stronghold-crusader-ai-modding-shelf](concepts/stronghold-crusader-ai-modding-shelf.md) | validated | UCP/AIV/AIC toolchain → lord director study |
+| [game-ai-rl-augmentation-shelf](concepts/game-ai-rl-augmentation-shelf.md) | validated | EA DRL augments BT/FSM — Phase E+ deferred |
 | [stronghold-2-visual-qol-presets](concepts/stronghold-2-visual-qol-presets.md) | validated | HD/ENB/Matteele/Winter → Godot graphics presets |
 | [stronghold-2-systems-inventory](concepts/stronghold-2-systems-inventory.md) | draft | SH2 honour/crime/kingmaker — clone target |
 | [stronghold-2-popularity-model](concepts/stronghold-2-popularity-model.md) | validated | SH2 eight-category popularity tables |
@@ -80,6 +81,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [unofficial-crusader-patch2](entities/tools/unofficial-crusader-patch2.md) | validated | SHC mod — **STEAL-FROM** (AIV study) |
 | [evrey-shc-aiv](entities/tools/evrey-shc-aiv.md) | validated | Crusader AIV pack — **STEAL-FROM** (layout) |
 | [krarilotus-crusader-efficient-ai](entities/tools/krarilotus-crusader-efficient-ai.md) | validated | Crusader efficient AIV + aggressive AIC — **STEAL-FROM (WIP)** |
+| [crusader-ai-manager](entities/tools/crusader-ai-manager.md) | validated | Crusader lord slot swap — **STEAL-FROM (MIT)** |
+| [monsterfisch-strongholds-of-conquest](entities/tools/monsterfisch-strongholds-of-conquest.md) | validated | Historical Crusader AIV pack — **STEAL-FROM** |
 | [stronghold2-mp-ai-patch](entities/tools/stronghold2-mp-ai-patch.md) | validated | SH2 MP AI unlock — MIT pattern patch |
 | [sh2-mp-ai-enabler](entities/tools/sh2-mp-ai-enabler.md) | validated | SH2 MP AI — GitLab/questforgaming (maintained) |
 | [sh2-community-lord-editor](entities/tools/sh2-community-lord-editor.md) | validated | SH2 gameRules.dat lord editor — design ref |
@@ -188,3 +191,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-06-19](sources/inbox-arxiv-reject-batch-2026-06-19.md) | read |
 | [evrey-shc-aiv-phase-0-audit-2026-06-19](sources/evrey-shc-aiv-phase-0-audit-2026-06-19.md) | read |
 | [krarilotus-efficient-ai-phase-0-audit-2026-06-19](sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-20](sources/inbox-arxiv-reject-batch-2026-06-20.md) | read |
+| [arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20](sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md) | read |
+| [crusader-ai-manager-phase-0-audit-2026-06-20](sources/crusader-ai-manager-phase-0-audit-2026-06-20.md) | read |
+| [monsterfisch-conquest-aiv-phase-0-audit-2026-06-20](sources/monsterfisch-conquest-aiv-phase-0-audit-2026-06-20.md) | read |

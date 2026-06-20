@@ -16,6 +16,7 @@ related:
   - concepts/operator-vision-sh2-personal-clone.md
   - concepts/stronghold-2-systems-inventory.md
   - concepts/stronghold-franchise-best-of-shelf.md
+  - concepts/game-ai-rl-augmentation-shelf.md
   - entities/games/stronghold-series.md
   - sources/bootstrap-game-dev-wiki-2026-06-13.md
   - concepts/rts-networking-deferred.md

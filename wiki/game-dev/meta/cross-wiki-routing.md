@@ -13,9 +13,12 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-06-16.md
   - sources/inbox-arxiv-reject-batch-2026-06-18.md
   - sources/inbox-arxiv-reject-batch-2026-06-19.md
+  - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
+  - sources/inbox-arxiv-reject-batch-2026-06-20.md
+  - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
 maturity: core
 created: 2026-06-13
-updated: 2026-06-19
+updated: 2026-06-20
 ---
 
 ## Relations
@@ -65,6 +68,7 @@ From OSINT ingest: `python3 scripts/cross_wiki_route.py --target-wiki game-dev-w
 | @ccc-wiki | Airtest Adopt + install path | @entities/tools/airtest.md |
 | @ccc-wiki | AITradeGame multi-provider LLM hooks | @sources/tool-evaluation-cross-wiki-routing-2026-06-13.md |
 | @ccc-wiki | Shachi LLM agent-based modeling (arXiv 2509.21862) | @sources/inbox-arxiv-reject-batch-2026-06-19.md |
+| @ccc-wiki | Trainee-to-Trainer LLM RL env design (arXiv 2606.17682) | @sources/inbox-arxiv-reject-batch-2026-06-20.md |
 | @cybersecurity-wiki | UCP2 memory hooking case study | @entities/tools/unofficial-crusader-patch2.md |
 | @cybersecurity-wiki | AI-Aimbot adversarial baseline | @concepts/tool-evaluation-cross-wiki-batch-2026-06-13.md |
 | @image-gen-wiki | GameDev-Resources → OpenGameArt / Poly Haven | @entities/tools/gamedev-resources.md |

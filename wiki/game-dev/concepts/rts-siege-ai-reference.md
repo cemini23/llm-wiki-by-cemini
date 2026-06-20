@@ -11,14 +11,18 @@ related:
   - concepts/stronghold-modding-ecosystem-shelf.md
   - entities/tools/unofficial-crusader-patch2.md
   - concepts/stronghold-2-siege-warfare.md
+  - concepts/game-ai-rl-augmentation-shelf.md
+  - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
+  - concepts/stronghold-crusader-ai-modding-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-20
 ---
 
 ## Relations
 
 - @sources/gdc-total-war-warhammer-siege-ai.md — AAA role/reserve architecture (ingested 2026-06-13)
+- @concepts/game-ai-rl-augmentation-shelf.md — modular RL leaves on hand-coded siege director (EA 2026)
 
 ## Raw Concept
 

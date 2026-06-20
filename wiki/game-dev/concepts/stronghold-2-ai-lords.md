@@ -23,10 +23,8 @@ related:
   - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
   - entities/projects/castle-sim.md
   - concepts/stronghold-franchise-best-of-shelf.md
-  - concepts/stronghold-crusader-ai-modding-shelf.md
-maturity: validated
-created: 2026-06-17
-updated: 2026-06-18
+  - concepts/game-ai-rl-augmentation-shelf.md
+  - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
 ---
 
 ## Relations
