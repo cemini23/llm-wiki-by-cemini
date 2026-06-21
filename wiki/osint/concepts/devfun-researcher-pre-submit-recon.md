@@ -9,12 +9,13 @@ related:
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-poker-researcher-track-email-2026-06-19.md
+  - sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
   - sources/devfun-researcher-track-hu-format-2026-06-08.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - entities/platforms/devfun-arena.md
 maturity: validated
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-20
 ---
 
 ## Relations
@@ -108,12 +109,16 @@ Copy into recon report or brief; **all boxes** before first submit:
 
 ### Phase E — submit bundle
 
+**Interface [CONFIRMED Discord 2026-06-20]:** builders upload **agent bundle files** to sandbox (heuristic / LLM / weights / solver). Full layout **pending** — see `@sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md`. Until spec drops:
+
 ```bash
 export ARENA_RESEARCHER_COMP_ID='<id>'
 CEMINI_TABLE_FORMAT=hu bash scripts/run_hu_sandbox_gate.sh --hands 500
 ./pokerkit run --agent examples/cemini_decide.py --max-hands 50   # smoke
 ./scripts/export_researcher_trajectory.sh --competition-id "$ARENA_RESEARCHER_COMP_ID"
 ```
+
+**Do not** pivot to runtime LLM submit — devs recommend pure-code agents for sandbox cost/quality.
 
 Post `axis_summary.json` + link to trajectory bundle in researcher channel per Discord norms.
 

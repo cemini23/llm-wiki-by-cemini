@@ -9,6 +9,7 @@ related:
   - concepts/devfun-researcher-pre-submit-recon.md
   - concepts/devfun-researcher-pro-style-targets-2026-06.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
+  - sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
   - sources/devfun-researcher-track-hu-format-2026-06-08.md
   - sources/web-pro-villain-profiles-dwan-cates-2026-06-19.md
   - entities/platforms/devfun-arena.md

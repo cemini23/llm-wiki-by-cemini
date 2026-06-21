@@ -13,6 +13,7 @@ related:
   - concepts/devfun-researcher-pro-style-targets-2026-06.md
   - sources/web-pro-villain-profiles-dwan-cates-2026-06-19.md
   - sources/devfun-poker-researcher-track-email-2026-06-19.md
+  - sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
   - sources/devfun-researcher-track-hu-format-2026-06-08.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
@@ -36,6 +37,7 @@ cross-wiki:
 - @gambling-wiki/concepts/heads-up-arena-strategy.md — HU preflop/postflop + TrueSkill doctrine (K122)
 - @gambling-wiki/sources/research-k122-poker-paper-landscape-2026-06-19.md — paper verdicts vs K118 F6/F12 lanes
 - @sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md — Raeth 9-axis eval anchor
+- @sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md — bundle submit + LLM posture
 - Super-audit synthesis: `agents/devfun-poker-arena/briefs/2026-06-19_researcher-track-super-audit-synthesis.md`
 
 ## Narrative
@@ -192,15 +194,31 @@ bash agents/devfun-poker-arena/scripts/run_researcher_soak.sh --hands 2000
 bash agents/devfun-poker-arena/scripts/run_researcher_memory_ablation.sh
 ```
 
-### Waiting on dev.fun rules [2026-06-19]
+### Sandbox bundle submission [CONFIRMED Discord 2026-06-20]
 
-dev.fun will send **more rules shortly** (Kaggle / SDK / sandbox rubric). **Hold** until then:
+Source: `@sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md` (canonical `@gambling-wiki/sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md`).
+
+| Item | Detail |
+|------|--------|
+| **Submit surface** | **Bundle files** to sandbox → eval → TrueSkill leaderboard |
+| **Allowed agents** | Heuristic, LLM, fine-tuned weights, solver — must match **submission interface** |
+| **Finale goal** | Pick HU bot to face **pros heads-up** |
+| **Beta** | Cohort test window opening soon — feedback loop to devs |
+| **LLM BYOK** | Encrypted keys; **per-submission isolated sandbox** only |
+| **Dev recommendation** | **Do not use LLM agents** for sandbox yet (cost + weak play) |
+
+**Cemini posture:** stay on `cemini_decide.py` pure-code path — **validated** by dev team. Prod lobby = intel/smoke; **canonical submit** = bundle upload once interface spec drops. **Hold:** bundle packaging script until dev.fun publishes layout.
+
+### Waiting on dev.fun rules [updated 2026-06-20]
+
+**Still pending:** full **bundle submission interface** (layout, clock, upload path). **Hold** until published:
 
 - Jungleman / Dwan **style emulation** code (`CEMINI_RESEARCHER_STYLE_TARGET`, villain overlays)
-- Kaggle vs `pokerkit run` submit path
+- **Bundle pack + upload** ritual (may supersede lone `pokerkit run` as primary submit)
+- Kaggle URL wiring if distinct from sandbox bundle path
 - TrueSkill opponent pool + match length assumptions
 
-**Continue now (unchanged):** HU gates (`run_hu_sandbox_gate.sh`), trajectory + axis discipline, prod Researcher PRIMARY posture, daily `list_arena_competitions.sh`, recon ritual when comp appears.
+**Continue now (unchanged):** HU gates (`run_hu_sandbox_gate.sh`), trajectory + axis discipline, prod Researcher PRIMARY posture, daily `list_arena_competitions.sh`, recon when comp appears. **No runtime LLM** for sandbox submit.
 
 **Prep ready:** `@concepts/devfun-researcher-pro-style-targets-2026-06.md`, gambling-wiki Dwan/Jungleman profiles — implement after rules confirm interface + scoring detail.
 

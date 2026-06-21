@@ -14,6 +14,7 @@ related:
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-poker-researcher-track-email-2026-06-19.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
+  - sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
   - entities/platforms/devfun-arena.md
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
   - concepts/active-project-research-routing.md

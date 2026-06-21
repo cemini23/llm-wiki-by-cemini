@@ -25,7 +25,9 @@ Operator checklist from gambling-wiki K123 — automated gates via `run_research
 |------|--------|------------|
 | Read `skillFile` + axis rubric | On comp drop | `run_researcher_comp_recon.sh --competition-id <id>` |
 | Pin `competitionId` | **WAITING API** | `pick_researcher_competition.py` / daily `list_arena_competitions.sh` |
+| **Bundle submit** | **WAITING spec** | Discord [CONFIRMED 2026-06-20]: bundle files to sandbox; interface docs soon |
 | Legal actions + clock safety | **DONE** | `cemini_decide.py` deadline fallbacks |
+| **No runtime LLM** | **CONFIRMED dev posture** | Pure-code `cemini_decide.py`; devs discourage LLM sandbox agents |
 | SDK / Kaggle URL | Operator | email/Discord |
 | Trajectory + axis before submit | **DONE** | `export_researcher_trajectory.sh` + `researcher_trajectory_summary.py --gate` |
 
@@ -49,6 +51,7 @@ Operator checklist from gambling-wiki K123 — automated gates via `run_research
 
 ## Sources
 
-- Gambling wiki: `wiki/sources/brief-k123-researcher-jun21-checklist-2026-06-20.md` (public stub)
+- Gambling wiki: `wiki/sources/brief-k123-researcher-jun21-checklist-2026-06-20.md`
+- Gambling wiki: `wiki/sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md`
 - OSINT: `wiki/concepts/devfun-researcher-track-readiness-2026-06.md`
 - `briefs/2026-06-19_k122-validation-execution-plan.md`

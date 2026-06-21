@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **430 canonical stubs** (K124 daily digest 2026-06-20; K123 2026-06-19)
+Total: **431 canonical stubs** (K124 bundle Discord 2026-06-20; K124 daily digest 2026-06-20)
 
 
 ### rl-marl (104)
@@ -1329,6 +1329,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [dev.fun Researcher — pro style targets (Dwan vs Jungleman)](concepts/devfun-researcher-pro-style-targets-2026-06.md) — HU emulation vs finale exploit; Jungleman default for TrueSkill + rep. — concept, devfun, researcher-track
 - [dev.fun researcher track invite email (2026-06-19)](sources/devfun-poker-researcher-track-email-2026-06-19.md) — HU, TrueSkill, Kaggle/SDK; cross-wiki @gambling-wiki ingest K121. — source, devfun, researcher-track
 - [dev.fun Researcher Track readiness hub (Jun 2026)](concepts/devfun-researcher-track-readiness-2026-06.md) — Prep checklist, eval-as-gate, HU/6-max fork, operator commands. — concept, devfun, researcher-track
+- [dev.fun Researcher sandbox bundle Discord (2026-06-20)](sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md) — `[VALIDATED 2026-06-20]` K123 bundle submit + LLM posture. — source, devfun, researcher-track, k123
 - [dev.fun Researcher — pre-submit recon ritual](concepts/devfun-researcher-pre-submit-recon.md) — Sit-down rule: analyze skillFile/rules before first hand; recon script + decision matrix. — concept, devfun, researcher-track, evaluation
 - [FinAcumen financial experience memory](concepts/finacumen-financial-experience-memory.md) — K121 cross-wiki stub from CCC FinAcumen paper. — concept, finance, k121
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113

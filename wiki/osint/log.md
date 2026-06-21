@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-20] ingest | K123 Discord — researcher sandbox bundle submission
+
+- **Source** — `@sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md` (gambling-wiki canonical + OSINT stub)
+- **Updates** — `@concepts/devfun-researcher-track-readiness-2026-06.md`, `@concepts/devfun-researcher-pre-submit-recon.md`, agents K123 brief
+- **Gambling-wiki** — platform entity, K123 checklist, heads-up strategy, cemini bot backlinks
+
 ## [2026-06-20] cross-wiki | K124 SEO digest — MetaResearcher adversarial deep research
 
 - **Source** — arXiv 2606.19893 (MetaResearcher); cross-route from @seo-wiki/sweeps/2026-06-20-daily.md

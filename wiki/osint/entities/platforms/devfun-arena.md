@@ -7,6 +7,7 @@ related:
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-poker-researcher-track-email-2026-06-19.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
+  - sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
   - sources/devfun-researcher-track-hu-format-2026-06-08.md
   - concepts/devfun-poker-agent-challenge-2026.md
   - concepts/devfun-researcher-track-readiness-2026-06.md
