@@ -37,6 +37,7 @@ Portfolio repo added 2026-06-20. Hourly Discord alerts when FIFA World Cup 2026 
 
 ### Ingest routing
 
+- **Secondary tier** — route briefs when source is physical-ticket resale (not co-primary morning digest)
 - Secondary-market scraping, floor calibration, alert dedupe → **this entity + code briefs**
 - PM/Kalshi WC advance markets, LP conviction → `@entities/tools/world-cup-bot.md`
 - Sportsbook WC wagering retail hygiene → `@gambling-wiki`

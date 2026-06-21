@@ -22,19 +22,20 @@ fetch:
 active_topics:
   - "Poker Arena — Researcher Round HU sandbox (Jun 21 β), MAFP/verifier steals, 6-max EP/PFR, HL loop (→ agents/devfun-poker-arena/briefs/)"
   - "CeminiDFS — NFL projection pipeline, nflverse calibration, ownership sim, pydfs MME (→ @gambling-wiki + ../projects/CeminiDFS/briefs/)"
-  - "wc-ticket-monitor — FIFA WC26 knockout resale price alerts, secondary market floors (→ ../projects/wc-ticket-monitor/briefs/)"
+  - "XSP killer bot — Lane A overnight exits + Lane B LEAPS hedge monitor on Robinhood (→ briefs/xsp-* → cemini-prod)"
   - "castle-sim — Godot vertical slice, playtest parity, SH2 harness (→ game-dev-wiki + castle-sim/briefs/)"
-  - "XSP killer bot — Lane A overnight exits + Lane B LEAPS hedge monitor on Robinhood"
+  - "wc-ticket-monitor — FIFA WC26 knockout resale alerts (secondary — route when source matches)"
   - "PM / Kalshi retail bot — CLOB botting, cross-venue, maker/taker postmortems (exploratory)"
   - "Agent harness for game dev + poker sessions — Cursor/Stagehand, not prod conductor KPIs"
 
 brief_routing_note: |
-  Co-primary ingest targets (equal priority): poker-arena · ceminidfs · wc-ticket-monitor · castle-sim.
+  Co-primary ingest targets (equal priority): poker-arena · ceminidfs · xsp-killer · castle-sim.
+  Secondary (route when source matches): wc-ticket-monitor · pm-kalshi-bot.
   Full ingest briefs route per `scripts/active_project_brief_targets.yaml`.
   Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers.
   poker → agents/devfun-poker-arena/briefs/ · ceminidfs → ../projects/CeminiDFS/briefs/
-  wc-ticket-monitor → ../projects/wc-ticket-monitor/briefs/ · castle-sim → ../projects/castle-sim/briefs/
-  xsp-killer + pm-kalshi → briefs/ → cemini-prod only when source matches those projects.
+  xsp-killer → briefs/xsp-* → cemini-prod · castle-sim → ../projects/castle-sim/briefs/
+  wc-ticket-monitor → ../projects/wc-ticket-monitor/briefs/ (wiki-only unless ticket-resale hook).
 
 # arXiv / research-paper lane — deduped against wiki; PDFs → inbox when NEW
 paper_queries:
@@ -136,14 +137,14 @@ monokern_pipeline:
     - yt-dlp
     - inbox_pdf
     - web_url
-  ingest_hook: "After Sunday digest, one NotebookLM pass on co-primary active_topic (poker, CeminiDFS, wc-ticket-monitor, castle-sim, or PM)"
+  ingest_hook: "After Sunday digest, one NotebookLM pass on co-primary active_topic (poker, CeminiDFS, xsp-killer, castle-sim, or PM)"
 
 social:
   manual_pass:
     - tool: notebooklm-osint-bridge
-      prompt: "Weekly Monokern pass on co-primary project — poker Researcher Round, CeminiDFS, wc-ticket-monitor, castle-sim, XSP, or PM/Kalshi"
+      prompt: "Weekly Monokern pass on co-primary project — poker Researcher Round, CeminiDFS, xsp-killer, castle-sim, or PM/Kalshi"
     - tool: twitter-reader
-      prompt: "dev.fun poker HU sandbox Researcher Round; MAFP fictitious play; NFL DFS FanDuel; FIFA WC26 ticket resale; PM/Kalshi bot last 24h"
+      prompt: "dev.fun poker HU sandbox; XSP Mini-SPX LEAPS/options flow; NFL DFS FanDuel; PM/Kalshi bot last 24h"
     - tool: opencli-reader
       prompt: "HN poker AI dev.fun arena OR r/poker heads-up; gamedev Godot RTS; WC tickets; prediction market bot"
     - tool: telegram-reader

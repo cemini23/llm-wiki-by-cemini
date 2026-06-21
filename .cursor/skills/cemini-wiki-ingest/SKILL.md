@@ -92,16 +92,16 @@ Ingest selected rows from wiki/sweeps/YYYY-MM-DD-daily.md:
 
 Read `scripts/active_project_brief_targets.yaml` + `@concepts/active-project-research-routing.md` **before** staging briefs.
 
-**Co-primary (equal priority):** poker · ceminidfs · wc-ticket-monitor · castle-sim — ingest research specific to these active codebases first.
+**Co-primary (equal priority):** poker · ceminidfs · xsp-killer · castle-sim — ingest research specific to these active codebases first.
 
 | Project | Brief home | Prod `scp`? |
 |---------|------------|-------------|
 | Poker Arena | `agents/devfun-poker-arena/briefs/` | No (`cemini_hl_loop.sh`) |
 | CeminiDFS | `../projects/CeminiDFS/briefs/` + `@gambling-wiki` | No |
-| wc-ticket-monitor | `../projects/wc-ticket-monitor/briefs/` | No |
-| castle-sim | `../projects/castle-sim/briefs/` | No |
 | XSP killer | `briefs/xsp-*` | Yes → cemini-prod |
-| PM / Kalshi | `briefs/pm-*` | Yes when bot-touching |
+| castle-sim | `../projects/castle-sim/briefs/` | No |
+| wc-ticket-monitor | `../projects/wc-ticket-monitor/briefs/` | No (secondary) |
+| PM / Kalshi | `briefs/pm-*` | Yes when bot-touching (secondary) |
 
 **Legacy deprioritized** (wiki-only unless user/ROADMAP reopens): MAPPO equity, Riskfolio/HPO ladder, conductor harness KPIs.
 

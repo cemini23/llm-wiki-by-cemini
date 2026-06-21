@@ -18,7 +18,7 @@ related:
   - concepts/polymarket-bot-architecture.md
 maturity: core
 created: 2026-06-17
-updated: 2026-06-20
+updated: 2026-06-21
 ---
 
 ## Relations
@@ -35,7 +35,7 @@ updated: 2026-06-20
 
 Operator pivot (2026-06-17): research discovery and ingest briefs should serve **active hobby bots**, not automatic prod handoffs to legacy CeminiSuite stacks (MAPPO equity, Riskfolio ladder, conductor harness KPIs).
 
-**Portfolio add (2026-06-20):** **CeminiDFS** and **wc-ticket-monitor** join the morning digest. **Poker Arena stays co-primary** — Researcher Round HU sandbox (Jun 21 β) is not deprioritized by new repos.
+**Portfolio add (2026-06-20):** **CeminiDFS** joins co-primary digest routing. **XSP killer** promoted to co-primary (2026-06-21). **wc-ticket-monitor** demoted to secondary — route when source matches ticket-resale hook. **Poker Arena stays co-primary** — Researcher Round HU sandbox (Jun 21 β).
 
 ## Narrative
 
@@ -45,14 +45,14 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 |---------|-------------------|-------------|
 | **Poker Arena** | `agents/devfun-poker-arena/briefs/` | No — deploy via `cemini_hl_loop.sh` / rsync |
 | **CeminiDFS** | `../projects/CeminiDFS/briefs/` + `@gambling-wiki` | No — laptop pipeline repo |
-| **wc-ticket-monitor** | `../projects/wc-ticket-monitor/briefs/` | No — Discord alert cron |
+| **XSP killer bot** | `briefs/xsp-*` → `cemini-prod:/opt/cemini/briefs/` | Yes — Lane A/B monitors only |
 | **castle-sim** | `../projects/castle-sim/briefs/` + `@game-dev-wiki` | No — laptop Godot repo |
 
 ### Secondary (route when source matches)
 
 | Project | Code / brief home | Prod `scp`? |
 |---------|-------------------|-------------|
-| **XSP killer bot** | `briefs/xsp-*` → `cemini-prod:/opt/cemini/briefs/` | Yes — Lane A/B monitors only |
+| **wc-ticket-monitor** | `../projects/wc-ticket-monitor/briefs/` | No — Discord alert cron |
 | **PM / Kalshi bot** | `briefs/pm-*` → prod when bot-touching | Yes — exploratory retail bot |
 
 ### Default ingest rule

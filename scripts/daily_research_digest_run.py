@@ -369,7 +369,7 @@ def main() -> int:
             "```",
             "Full ingest — process everything in research to be indexed/ and any checked rows above.",
             "- preingest_check → discuss takeaways → 3–15 wiki pages → lint → ingest_session_gate → commit",
-            "- Briefs: co-primary per scripts/active_project_brief_targets.yaml (poker · ceminidfs · wc-ticket-monitor · castle-sim; then xsp / pm-kalshi)",
+            "- Briefs: co-primary per scripts/active_project_brief_targets.yaml (poker · ceminidfs · xsp-killer · castle-sim); secondary: wc-ticket-monitor · pm-kalshi",
             "- Do NOT auto-scp generic quant-finance / MAPPO / Riskfolio briefs to cemini-prod",
             "```",
             "",

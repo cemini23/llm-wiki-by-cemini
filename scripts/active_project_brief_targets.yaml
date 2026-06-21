@@ -7,7 +7,7 @@
 
 default_posture: wiki-only
 
-# Co-primary — equal morning ingest priority (2026-06-20). Order is documentation only.
+# Co-primary — equal morning ingest priority. Order is documentation only.
 projects:
   poker-arena:
     label: "dev.fun Poker Arena (cemini_decide)"
@@ -45,21 +45,20 @@ projects:
       - "NBA/other-sport DFS unless NFL methodology transfer explicit"
       - "Paid-tool affiliate content without reproducible methodology"
 
-  wc-ticket-monitor:
-    label: "wc-ticket-monitor — FIFA WC26 knockout ticket price alerts"
-    code_root: "../projects/wc-ticket-monitor"
-    wiki: "@osint-wiki/entities/tools/wc-ticket-monitor.md"
-    brief_dir: "../projects/wc-ticket-monitor/briefs"
-    scp_target: null
+  xsp-killer:
+    label: "XSP killer bot — Robinhood long-call lanes A/B"
+    code_root: null
+    wiki: "@osint-wiki/concepts/xsp-lane-trading-framework.md"
+    brief_dir: "briefs"
+    scp_target: "cemini-prod:/opt/cemini/briefs/"
+    brief_name_prefix: "xsp-"
     co_primary: true
     steal_from:
-      - "FIFA official resale API patterns, Great Reviewer / TicketWave scrapers"
-      - "Secondary market pricing (StubHub, Viagogo, Ticombo) for knockout rounds"
-      - "Per-round floor calibration, outlier detection, dedupe/cooldown alerting"
-      - "Discord embed observability, degraded-source handling, cron/LaunchAgent ops"
+      - "XSP / Mini-SPX options flow, LEAPS inventory, put-hedge rolls"
+      - "Index vol regime gates (GREEN playbook_snapshot)"
+      - "Overnight swing exit rules, delta-adjusted scoring"
     skip_brief_if:
-      - "World Cup prediction-market LP bot content (→ pm-kalshi / world-cup-bot)"
-      - "Sportsbook wagering lines without physical-ticket resale hook"
+      - "SMB short put credit unless contrast-noted"
 
   castle-sim:
     label: "castle-sim (Godot RTS vertical slice)"
@@ -75,19 +74,20 @@ projects:
     skip_brief_if:
       - "Generic quant-finance RL with no game-dev hook"
 
-  xsp-killer:
-    label: "XSP killer bot — Robinhood long-call lanes A/B"
-    code_root: null
-    wiki: "@osint-wiki/concepts/xsp-lane-trading-framework.md"
-    brief_dir: "briefs"
-    scp_target: "cemini-prod:/opt/cemini/briefs/"
-    brief_name_prefix: "xsp-"
+  wc-ticket-monitor:
+    label: "wc-ticket-monitor — FIFA WC26 knockout ticket price alerts"
+    code_root: "../projects/wc-ticket-monitor"
+    wiki: "@osint-wiki/entities/tools/wc-ticket-monitor.md"
+    brief_dir: "../projects/wc-ticket-monitor/briefs"
+    scp_target: null
     steal_from:
-      - "XSP / Mini-SPX options flow, LEAPS inventory, put-hedge rolls"
-      - "Index vol regime gates (GREEN playbook_snapshot)"
-      - "Overnight swing exit rules, delta-adjusted scoring"
+      - "FIFA official resale API patterns, Great Reviewer / TicketWave scrapers"
+      - "Secondary market pricing (StubHub, Viagogo, Ticombo) for knockout rounds"
+      - "Per-round floor calibration, outlier detection, dedupe/cooldown alerting"
+      - "Discord embed observability, degraded-source handling, cron/LaunchAgent ops"
     skip_brief_if:
-      - "SMB short put credit unless contrast-noted"
+      - "World Cup prediction-market LP bot content (→ pm-kalshi / world-cup-bot)"
+      - "Sportsbook wagering lines without physical-ticket resale hook"
 
   pm-kalshi-bot:
     label: "PM / Kalshi retail bot (exploratory)"

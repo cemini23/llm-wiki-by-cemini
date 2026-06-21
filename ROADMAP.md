@@ -18,14 +18,14 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 |---------|------------|----------|
 | **Poker Arena — dev.fun Researcher Round** | `agents/devfun-poker-arena/briefs/` | sandbox + rsync |
 | **CeminiDFS** — NFL DIY projection pipeline | `../projects/CeminiDFS/briefs/` | No |
-| **wc-ticket-monitor** — FIFA WC26 knockout ticket alerts | `../projects/wc-ticket-monitor/briefs/` | No |
+| **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **castle-sim** — Godot RTS slice, playtest parity | `../projects/castle-sim/briefs/` | No |
 
 ### Secondary (route when source matches)
 
 | Project | Brief home | Prod scp |
 |---------|------------|----------|
-| **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
+| **wc-ticket-monitor** — FIFA WC26 knockout ticket alerts | `../projects/wc-ticket-monitor/briefs/` | No |
 | **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
