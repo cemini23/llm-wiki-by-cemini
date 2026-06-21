@@ -88,14 +88,18 @@ Ingest selected rows from wiki/sweeps/YYYY-MM-DD-daily.md:
 - [ ] ROADMAP + briefs staged (route per `scripts/active_project_brief_targets.yaml`)
 - [ ] skill_audit on prod briefs (only xsp-killer + pm-kalshi-bot → cemini-prod by default)
 
-## E — Active-project brief routing (2026-06-17)
+## E — Active-project brief routing (2026-06-20)
 
 Read `scripts/active_project_brief_targets.yaml` + `@concepts/active-project-research-routing.md` **before** staging briefs.
 
+**Co-primary (equal priority):** poker · ceminidfs · wc-ticket-monitor · castle-sim — ingest research specific to these active codebases first.
+
 | Project | Brief home | Prod `scp`? |
 |---------|------------|-------------|
-| castle-sim | `../projects/castle-sim/briefs/` | No |
 | Poker Arena | `agents/devfun-poker-arena/briefs/` | No (`cemini_hl_loop.sh`) |
+| CeminiDFS | `../projects/CeminiDFS/briefs/` + `@gambling-wiki` | No |
+| wc-ticket-monitor | `../projects/wc-ticket-monitor/briefs/` | No |
+| castle-sim | `../projects/castle-sim/briefs/` | No |
 | XSP killer | `briefs/xsp-*` | Yes → cemini-prod |
 | PM / Kalshi | `briefs/pm-*` | Yes when bot-touching |
 

@@ -2,9 +2,12 @@
 title: Gambling wiki federation (cross-wiki)
 type: concept
 tags: [concept, meta, federation, gambling-wiki]
-keywords: [gambling-wiki, sports-betting, dfs, scope, routing]
+keywords: [gambling-wiki, sports-betting, dfs, ceminidfs, scope, routing]
 related:
   - concepts/game-dev-wiki-federation.md
+  - concepts/active-project-research-routing.md
+  - "@gambling-wiki/entities/tools/ceminidfs.md"
+  - "@gambling-wiki/concepts/diy-nfl-dfs-model-architecture.md"
   - concepts/kelly-sizing-quarter.md
   - concepts/favorite-longshot-bias.md
   - entities/platforms/kalshi.md
@@ -16,7 +19,7 @@ related:
   - sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md
 maturity: validated
 created: 2026-05-31
-updated: 2026-06-13
+updated: 2026-06-20
 ---
 
 ## Relations
@@ -45,7 +48,9 @@ Use `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` (v7 body at CCC `pro
 | Topic | gambling-wiki | osint-wiki |
 |-------|---------------|------------|
 | Sportsbook / DFS / casino / poker | **Primary** | cross-link |
+| **CeminiDFS** (NFL DIY pipeline) | **Primary** (`@gambling-wiki/entities/tools/ceminidfs.md`) | brief routing only |
 | PM/Kalshi bots, LP, CeminiSuite | cross-link | **Primary** |
+| WC physical-ticket resale alerts | cross-link (`@entities/tools/wc-ticket-monitor.md`) | entity + brief routing |
 | Kelly, FLB (theory) | general pages | PM implementations |
 
 ### Shared pages to keep bidirectional

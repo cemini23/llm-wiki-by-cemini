@@ -11,11 +11,12 @@ related:
   - concepts/federated-daily-research-digest.md
   - concepts/monokern-compounding-research-pipeline.md
   - concepts/active-project-research-routing.md
+  - entities/tools/wc-ticket-monitor.md
   - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
   - meta/federation-operator-hub-stub.md
 maturity: core
 created: 2026-05-31
-updated: 2026-06-18
+updated: 2026-06-20
 ---
 
 ## Relations
@@ -23,7 +24,8 @@ updated: 2026-06-18
 - @meta/federation-operator-hub-stub.md — operator morning summary (`cemini-federation-hub`)
 - @concepts/federated-daily-research-digest.md — per-wiki install kit (K93)
 - @concepts/monokern-compounding-research-pipeline.md — weekly deep-research overlay
-- @concepts/active-project-research-routing.md — brief targets: castle-sim, poker, XSP, PM/Kalshi (2026-06-17)
+- @concepts/active-project-research-routing.md — brief targets: ceminidfs, wc-ticket-monitor, castle-sim, poker, XSP, PM/Kalshi (2026-06-20)
+- @entities/tools/wc-ticket-monitor.md — portfolio repo (knockout ticket resale alerts)
 - @meta/wiki-gap-detect-cadence.md — weekly stale-claim / thin-page report; linked from daily digest
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — script-first automation posture
 - @concepts/cemini-wiki-ingest-workflow.md — four-phase pipeline overview

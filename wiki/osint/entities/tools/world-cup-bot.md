@@ -12,6 +12,7 @@ related:
   - projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md
   - projects/world-cup-bot/Architecture/OPEN-GAPS.md
   - projects/world-cup-bot/Architecture/Architecture - Key decisions.md
+  - entities/tools/wc-ticket-monitor.md
   - concepts/world-cup-advance-market-bot-v1.md
   - sources/gemini-wc2026-group-b-lp-analysis-2026-05-29.md
   - sources/gemini-wc2026-third-place-advancement-2026-05-29.md

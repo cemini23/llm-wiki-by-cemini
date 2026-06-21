@@ -1,4 +1,4 @@
-# Active project brief routing — read on every full ingest (2026-06-17 pivot)
+# Active project brief routing — read on every full ingest (2026-06-20 pivot)
 #
 # Agents: before staging a prod brief to cemini-prod, check whether the source
 # maps to an active project below. Default = wiki-only unless a row says scp.
@@ -7,35 +7,73 @@
 
 default_posture: wiki-only
 
+# Co-primary — equal morning ingest priority (2026-06-20). Order is documentation only.
 projects:
-  castle-sim:
-    label: "castle-sim (Godot RTS vertical slice)"
-    code_root: "../projects/castle-sim"
-    wiki: "@game-dev-wiki"
-    brief_dir: "../projects/castle-sim/briefs"
-    scp_target: null
-    steal_from:
-      - "Godot pathfinding, grid building, siege AI, playtest parity"
-      - "Agent harness CI (godot-stagehand, Stagehand smoke)"
-      - "Stronghold-like economy / labour contention patterns"
-    skip_brief_if:
-      - "Generic quant-finance RL with no game-dev hook"
-
   poker-arena:
     label: "dev.fun Poker Arena (cemini_decide)"
     code_root: "agents/devfun-poker-arena"
     wiki: "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
     brief_dir: "agents/devfun-poker-arena/briefs"
     scp_target: null
+    co_primary: true
     primary_goal: "dev.fun Poker Agent Challenge — researcher track sandbox LB (HU), Jun 21 beta"
     steal_from:
+      - "Researcher Round HU sandbox — trajectory, TrueSkill, nine-axis eval (2606.13815)"
+      - "MAFP fictitious play, multi-agent equilibrium learning (2606.19308)"
+      - "Generator-verifier inference steering for decide() (VERITAS / K123–K124 cluster)"
       - "6-max preflop discipline, HUD exploit, blind pressure, tournament ICM"
-      - "Heads-up gin lanes, BenchFlow sandbox submit, multi-axis eval (2606.13815)"
-      - "Opponent modeling, session/cross-session memory (F6+)"
+      - "Heads-up gin lanes, BenchFlow sandbox submit, opponent modeling, F6+ memory"
       - "Regression spots + HL analyst loop leaks"
     skip_brief_if:
       - "Casino slots / sportsbook unrelated to arena-pokerkit"
       - "Legacy CeminiSuite conductor eval unless poker-session tooling"
+
+  ceminidfs:
+    label: "CeminiDFS — DIY NFL projection pipeline (FanDuel-primary)"
+    code_root: "../projects/CeminiDFS"
+    wiki: "@gambling-wiki/concepts/diy-nfl-dfs-model-architecture.md"
+    brief_dir: "../projects/CeminiDFS/briefs"
+    scp_target: null
+    co_primary: true
+    steal_from:
+      - "nflverse PBP → volume/usage/stat projection layers"
+      - "Vegas implied team totals, weather adjustments, injury workflow"
+      - "Ownership projection, copula/sim rerank, late-swap pydfs integration"
+      - "Backtest/calibration vs Stokastic/FantasyLabs paid benchmarks"
+      - "FanDuel slate strategy, stacking/correlation, MME pool generation"
+    skip_brief_if:
+      - "NBA/other-sport DFS unless NFL methodology transfer explicit"
+      - "Paid-tool affiliate content without reproducible methodology"
+
+  wc-ticket-monitor:
+    label: "wc-ticket-monitor — FIFA WC26 knockout ticket price alerts"
+    code_root: "../projects/wc-ticket-monitor"
+    wiki: "@osint-wiki/entities/tools/wc-ticket-monitor.md"
+    brief_dir: "../projects/wc-ticket-monitor/briefs"
+    scp_target: null
+    co_primary: true
+    steal_from:
+      - "FIFA official resale API patterns, Great Reviewer / TicketWave scrapers"
+      - "Secondary market pricing (StubHub, Viagogo, Ticombo) for knockout rounds"
+      - "Per-round floor calibration, outlier detection, dedupe/cooldown alerting"
+      - "Discord embed observability, degraded-source handling, cron/LaunchAgent ops"
+    skip_brief_if:
+      - "World Cup prediction-market LP bot content (→ pm-kalshi / world-cup-bot)"
+      - "Sportsbook wagering lines without physical-ticket resale hook"
+
+  castle-sim:
+    label: "castle-sim (Godot RTS vertical slice)"
+    code_root: "../projects/castle-sim"
+    wiki: "@game-dev-wiki"
+    brief_dir: "../projects/castle-sim/briefs"
+    scp_target: null
+    co_primary: true
+    steal_from:
+      - "Godot pathfinding, grid building, siege AI, playtest parity"
+      - "Agent harness CI (godot-stagehand, Stagehand smoke)"
+      - "Stronghold-like economy / labour contention patterns"
+    skip_brief_if:
+      - "Generic quant-finance RL with no game-dev hook"
 
   xsp-killer:
     label: "XSP killer bot — Robinhood long-call lanes A/B"

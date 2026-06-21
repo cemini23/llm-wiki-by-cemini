@@ -13,32 +13,49 @@ loop:
 
 fetch:
   enabled: true
-  max_downloads: 8
+  max_downloads: 12
   fetch_likely: false
   max_results_per_paper_query: 5
 
-# Pivot 2026-06-17 — active hobby bots + PM/Kalshi exploration (not legacy CeminiSuite equity sleeve)
+# Co-primary (2026-06-20) — equal morning ingest priority for active codebases.
+# Route briefs per scripts/active_project_brief_targets.yaml; wiki always.
 active_topics:
+  - "Poker Arena — Researcher Round HU sandbox (Jun 21 β), MAFP/verifier steals, 6-max EP/PFR, HL loop (→ agents/devfun-poker-arena/briefs/)"
+  - "CeminiDFS — NFL projection pipeline, nflverse calibration, ownership sim, pydfs MME (→ @gambling-wiki + ../projects/CeminiDFS/briefs/)"
+  - "wc-ticket-monitor — FIFA WC26 knockout resale price alerts, secondary market floors (→ ../projects/wc-ticket-monitor/briefs/)"
   - "castle-sim — Godot vertical slice, playtest parity, SH2 harness (→ game-dev-wiki + castle-sim/briefs/)"
-  - "Poker Arena — tournament S28, HL analyst loop, 6-max EP/PFR leaks (→ agents/devfun-poker-arena/briefs/)"
   - "XSP killer bot — Lane A overnight exits + Lane B LEAPS hedge monitor on Robinhood"
   - "PM / Kalshi retail bot — CLOB botting, cross-venue, maker/taker postmortems (exploratory)"
   - "Agent harness for game dev + poker sessions — Cursor/Stagehand, not prod conductor KPIs"
 
 brief_routing_note: |
+  Co-primary ingest targets (equal priority): poker-arena · ceminidfs · wc-ticket-monitor · castle-sim.
   Full ingest briefs route per `scripts/active_project_brief_targets.yaml`.
   Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers.
-  castle-sim → ../projects/castle-sim/briefs/ · poker → agents/devfun-poker-arena/briefs/
+  poker → agents/devfun-poker-arena/briefs/ · ceminidfs → ../projects/CeminiDFS/briefs/
+  wc-ticket-monitor → ../projects/wc-ticket-monitor/briefs/ · castle-sim → ../projects/castle-sim/briefs/
   xsp-killer + pm-kalshi → briefs/ → cemini-prod only when source matches those projects.
 
 # arXiv / research-paper lane — deduped against wiki; PDFs → inbox when NEW
 paper_queries:
-  - cluster: pm-kalshi-paper
-    query: "research paper prediction market microstructure Polymarket Kalshi event contract market making"
-    category: research paper
-
   - cluster: poker-agent-paper
     query: "research paper poker reinforcement learning opponent modeling imperfect information game"
+    category: research paper
+
+  - cluster: poker-hu-researcher-paper
+    query: "research paper heads-up poker Texas holdem sandbox benchmark agent evaluation TrueSkill"
+    category: research paper
+
+  - cluster: poker-mafp-fictitious-play-paper
+    query: "research paper multi-agent fictitious play poker game theory equilibrium learning"
+    category: research paper
+
+  - cluster: poker-verifier-steering-paper
+    query: "research paper generator verifier LLM inference steering game agent poker holdem"
+    category: research paper
+
+  - cluster: pm-kalshi-paper
+    query: "research paper prediction market microstructure Polymarket Kalshi event contract market making"
     category: research paper
 
   - cluster: options-index-paper
@@ -53,14 +70,30 @@ paper_queries:
     query: "research paper LLM agent harness playtesting verification game development OR poker"
     category: research paper
 
+  - cluster: nfl-dfs-projection-paper
+    query: "research paper NFL daily fantasy sports player projection ownership simulation FanDuel DraftKings"
+    category: research paper
+
+  - cluster: sports-ticket-resale-paper
+    query: "research paper secondary ticket market resale pricing sports event demand forecasting"
+    category: research paper
+
 # Web/news — listed in digest only (not auto-downloaded)
 queries:
-  - cluster: pm-kalshi-retail-bot
-    query: '"Polymarket" OR "Kalshi" retail bot OR CLOB OR market making OR API trading tutorial'
+  - cluster: poker-arena
+    query: '"dev.fun" OR "arena pokerkit" OR poker agent challenge researcher track heads-up sandbox 2026'
     category: news
 
-  - cluster: poker-arena
-    query: 'poker bot tournament OR "poker AI" OR "opponent modeling" OR dev.fun arena OR PokerKit'
+  - cluster: poker-hu-exploit
+    query: 'poker heads-up NLHE opponent modeling exploit LLM agent sandbox benchmark MAFP fictitious play 2026'
+    category: news
+
+  - cluster: poker-verifier-eval
+    query: 'poker AI verifier generator steering multi-axis evaluation imperfect information agent 2026'
+    category: news
+
+  - cluster: pm-kalshi-retail-bot
+    query: '"Polymarket" OR "Kalshi" retail bot OR CLOB OR market making OR API trading tutorial'
     category: news
 
   - cluster: xsp-options
@@ -75,6 +108,26 @@ queries:
     query: '"Claude Code" OR Cursor agent game development OR poker analysis LLM workflow'
     category: news
 
+  - cluster: ceminidfs-nflverse
+    query: 'nflverse play-by-play NFL DFS projection OR FanDuel salary slate modeling python 2026'
+    category: news
+
+  - cluster: ceminidfs-ownership-calibration
+    query: 'DFS ownership projection calibration Stokastic OR FantasyLabs OR pydfs lineup optimizer MME'
+    category: news
+
+  - cluster: wc-ticket-resale
+    query: '"World Cup 2026" knockout ticket resale OR StubHub OR Viagogo OR FIFA official resale price'
+    category: news
+
+  - cluster: wc-ticket-monitor-sources
+    query: 'TicketWave OR "The Great Reviewer" FIFA World Cup ticket tracker secondary market API'
+    category: news
+
+  - cluster: wc-fifa-ticket-policy
+    query: 'FIFA World Cup 2026 ticket resale policy official exchange knockout round pricing'
+    category: news
+
 monokern_pipeline:
   enabled: true
   cadence: weekly
@@ -83,18 +136,18 @@ monokern_pipeline:
     - yt-dlp
     - inbox_pdf
     - web_url
-  ingest_hook: "After Sunday digest, one NotebookLM pass on top active_topic (castle-sim OR poker OR PM)"
+  ingest_hook: "After Sunday digest, one NotebookLM pass on co-primary active_topic (poker, CeminiDFS, wc-ticket-monitor, castle-sim, or PM)"
 
 social:
   manual_pass:
     - tool: notebooklm-osint-bridge
-      prompt: "Weekly Monokern pass on top active project — castle-sim, poker, XSP, or PM/Kalshi"
+      prompt: "Weekly Monokern pass on co-primary project — poker Researcher Round, CeminiDFS, wc-ticket-monitor, castle-sim, XSP, or PM/Kalshi"
     - tool: twitter-reader
-      prompt: "fintwit Polymarket Kalshi bot OR poker AI OR options flow XSP last 24h"
+      prompt: "dev.fun poker HU sandbox Researcher Round; MAFP fictitious play; NFL DFS FanDuel; FIFA WC26 ticket resale; PM/Kalshi bot last 24h"
     - tool: opencli-reader
-      prompt: "HN gamedev Godot RTS OR prediction market bot headlines"
+      prompt: "HN poker AI dev.fun arena OR r/poker heads-up; gamedev Godot RTS; WC tickets; prediction market bot"
     - tool: telegram-reader
-      prompt: "PM/crypto macro + options vol headlines"
+      prompt: "PM/crypto macro + options vol + WC ticket/resale headlines"
 
 output:
   path_template: "wiki/sweeps/{date}-daily.md"

@@ -8,16 +8,25 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
-## Active workstreams (2026-06-18 — researcher track pivot)
+## Active workstreams (2026-06-20 — co-primary portfolio + researcher track)
 
-Research digest + ingest briefs target these first (`scripts/active_project_brief_targets.yaml`):
+Research digest + ingest briefs target **co-primary codebases equally** (`scripts/active_project_brief_targets.yaml`):
 
-| Priority | Project | Brief home | Prod scp |
-|----------|---------|------------|----------|
-| 1 | **castle-sim** — Godot RTS slice, playtest parity | `../projects/castle-sim/briefs/` | No |
-| 2 | **Poker Arena — dev.fun Researcher Round** | `agents/devfun-poker-arena/briefs/` | sandbox + rsync |
-| 3 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
-| 4 | **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
+### Co-primary (equal morning ingest priority)
+
+| Project | Brief home | Prod scp |
+|---------|------------|----------|
+| **Poker Arena — dev.fun Researcher Round** | `agents/devfun-poker-arena/briefs/` | sandbox + rsync |
+| **CeminiDFS** — NFL DIY projection pipeline | `../projects/CeminiDFS/briefs/` | No |
+| **wc-ticket-monitor** — FIFA WC26 knockout ticket alerts | `../projects/wc-ticket-monitor/briefs/` | No |
+| **castle-sim** — Godot RTS slice, playtest parity | `../projects/castle-sim/briefs/` | No |
+
+### Secondary (route when source matches)
+
+| Project | Brief home | Prod scp |
+|---------|------------|----------|
+| **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
+| **PM / Kalshi retail bot** — exploratory botting | `briefs/pm-*` | cemini-prod when bot-touching |
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 

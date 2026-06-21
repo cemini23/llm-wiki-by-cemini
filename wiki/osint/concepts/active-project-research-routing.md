@@ -2,19 +2,23 @@
 title: Active project research routing — brief targets vs legacy CeminiSuite
 type: concept
 tags: [concept, meta, workflow, briefs, k121]
-keywords: [brief-routing, castle-sim, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
+keywords: [brief-routing, ceminidfs, wc-ticket-monitor, castle-sim, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
 related:
   - meta/daily-research-digest-cadence.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/game-dev-wiki-federation.md
+  - concepts/gambling-wiki-federation.md
   - concepts/devfun-poker-agent-challenge-2026.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
+  - "@gambling-wiki/concepts/diy-nfl-dfs-model-architecture.md"
+  - "@gambling-wiki/entities/tools/ceminidfs.md"
+  - entities/tools/wc-ticket-monitor.md
   - "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
   - concepts/xsp-lane-trading-framework.md
   - concepts/polymarket-bot-architecture.md
 maturity: core
 created: 2026-06-17
-updated: 2026-06-18
+updated: 2026-06-20
 ---
 
 ## Relations
@@ -31,14 +35,23 @@ updated: 2026-06-18
 
 Operator pivot (2026-06-17): research discovery and ingest briefs should serve **active hobby bots**, not automatic prod handoffs to legacy CeminiSuite stacks (MAPPO equity, Riskfolio ladder, conductor harness KPIs).
 
+**Portfolio add (2026-06-20):** **CeminiDFS** and **wc-ticket-monitor** join the morning digest. **Poker Arena stays co-primary** — Researcher Round HU sandbox (Jun 21 β) is not deprioritized by new repos.
+
 ## Narrative
 
-### Active projects (priority order)
+### Co-primary projects (equal ingest priority)
 
 | Project | Code / brief home | Prod `scp`? |
 |---------|-------------------|-------------|
-| **castle-sim** | `../projects/castle-sim/briefs/` + `@game-dev-wiki` | No — laptop Godot repo |
 | **Poker Arena** | `agents/devfun-poker-arena/briefs/` | No — deploy via `cemini_hl_loop.sh` / rsync |
+| **CeminiDFS** | `../projects/CeminiDFS/briefs/` + `@gambling-wiki` | No — laptop pipeline repo |
+| **wc-ticket-monitor** | `../projects/wc-ticket-monitor/briefs/` | No — Discord alert cron |
+| **castle-sim** | `../projects/castle-sim/briefs/` + `@game-dev-wiki` | No — laptop Godot repo |
+
+### Secondary (route when source matches)
+
+| Project | Code / brief home | Prod `scp`? |
+|---------|-------------------|-------------|
 | **XSP killer bot** | `briefs/xsp-*` → `cemini-prod:/opt/cemini/briefs/` | Yes — Lane A/B monitors only |
 | **PM / Kalshi bot** | `briefs/pm-*` → prod when bot-touching | Yes — exploratory retail bot |
 
@@ -59,6 +72,8 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 
 ### Cross-wiki
 
+- **CeminiDFS** deep ingest → open Gambling wiki folder; OSINT may stub-route methodology via `cross_wiki_route.py`.
+- **wc-ticket-monitor** stays OSINT entity + code repo; cross-ref `@entities/tools/world-cup-bot.md` for PM bot boundary (retail tickets ≠ advance markets).
 - **castle-sim** deep ingest → open Game Dev wiki folder; OSINT may stub-route via `cross_wiki_route.py`.
 - **Poker** session intel stays in `agents/devfun-poker-arena/`; wiki holds methodology (`poker-hl-analyst-loop`).
 - **PM/Kalshi** OSINT wiki owns architecture; prod execution still server-Claude boundary.
