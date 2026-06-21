@@ -76,6 +76,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [sods2-godot-mcp](entities/tools/sods2-godot-mcp.md) | validated | Node MCP alt — **CONDITIONAL-GO** W2 |
 | [godot-stagehand](entities/tools/godot-stagehand.md) | validated | CI automation — **CONDITIONAL-GO** W2 |
 | [godot-ai-playtest](entities/tools/godot-ai-playtest.md) | validated | TCP automation alt — **CONDITIONAL-GO** W2 |
+| [binarytracking](entities/tools/binarytracking.md) | draft | BinTrack spatial QA — **CONDITIONAL-GO** K125 cross-wiki |
 | [serpent-ai](entities/tools/serpent-ai.md) | validated | Visual automation — **STEAL-FROM** (Phase-0) |
 | [airtest](entities/tools/airtest.md) | validated | Image UI test — **CONDITIONAL-GO** @ccc |
 | [unofficial-crusader-patch2](entities/tools/unofficial-crusader-patch2.md) | validated | SHC mod — **STEAL-FROM** (AIV study) |
@@ -88,6 +89,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [sh2-community-lord-editor](entities/tools/sh2-community-lord-editor.md) | validated | SH2 gameRules.dat lord editor — design ref |
 | [stronghold2-analyse-hub](entities/tools/stronghold2-analyse-hub.md) | draft | SH2 DX9 research overlay — MIT |
 | [gamedev-resources](entities/tools/gamedev-resources.md) | validated | CC0 asset link index |
+| [gamedevbench](entities/tools/gamedevbench.md) | validated | Godot agent benchmark — **STEAL-FROM** (Apache-2.0) |
+| [ziva-godot-agent](entities/tools/ziva-godot-agent.md) | validated | In-editor Godot agent — **CONDITIONAL-GO** (proprietary) |
 
 ## Entities — Games (reference)
 
@@ -193,5 +196,9 @@ Catalog of all wiki pages. Updated on each ingest.
 | [krarilotus-efficient-ai-phase-0-audit-2026-06-19](sources/krarilotus-efficient-ai-phase-0-audit-2026-06-19.md) | read |
 | [inbox-arxiv-reject-batch-2026-06-20](sources/inbox-arxiv-reject-batch-2026-06-20.md) | read |
 | [arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20](sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md) | read |
+| [arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21](sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md) | read |
 | [crusader-ai-manager-phase-0-audit-2026-06-20](sources/crusader-ai-manager-phase-0-audit-2026-06-20.md) | read |
 | [monsterfisch-conquest-aiv-phase-0-audit-2026-06-20](sources/monsterfisch-conquest-aiv-phase-0-audit-2026-06-20.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-21](sources/inbox-arxiv-reject-batch-2026-06-21.md) | read |
+| [gamedevbench-phase-0-audit-2026-06-21](sources/gamedevbench-phase-0-audit-2026-06-21.md) | read |
+| [ziva-godot-agent-phase-0-audit-2026-06-21](sources/ziva-godot-agent-phase-0-audit-2026-06-21.md) | read |

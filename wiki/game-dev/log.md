@@ -4,6 +4,27 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-21] cross-wiki | K125 SEO digest — BinTrack spatial QA
+
+- **Source** — arXiv 2606.16902 (BinTrack / GangnamLoop); cross-route from @seo-wiki/sweeps/2026-06-21-daily.md
+- **New** — @sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md, @entities/tools/binarytracking.md
+- **Updated** — @concepts/godot-pathfinding-patterns.md
+- **Brief** — `briefs/research/bintrack-spatial-qa-steal-2026-06-21.md` → castle-sim pattern spike
+- **Phase-0** — CONDITIONAL-GO (GitHub no LICENSE, 0 stars)
+- **Sweep** — @sweeps/2026-06-21-daily.md (SEO inbox batch; game-dev digest had 2606.16902 capped earlier)
+
+---
+
+## [2026-06-21] ingest | Inbox re-drop + GameDevBench + Ziva Phase-0
+
+- Inbox: 5 arXiv re-drops → @sources/inbox-arxiv-reject-batch-2026-06-21.md (2606.20485 new reject); archived; inbox cleared
+- Phase-0: @sources/gamedevbench-phase-0-audit-2026-06-21.md → **STEAL-FROM** @entities/tools/gamedevbench.md (Apache-2.0, 333 Godot tasks)
+- Phase-0: @sources/ziva-godot-agent-phase-0-audit-2026-06-21.md → **CONDITIONAL-GO** @entities/tools/ziva-godot-agent.md
+- Brief: `briefs/research/gamedevbench-harness-eval.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-21-daily.md
+
+---
+
 ## [2026-06-20] ingest | Inbox triage + Crusader Phase-0 + EA DRL shelf
 
 - Inbox: 5 arXiv digest PDFs → @sources/inbox-arxiv-reject-batch-2026-06-20.md; **2606.20210 ingest** → @sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md; **2606.17682 defer @ccc-wiki**; archived to egress; inbox cleared

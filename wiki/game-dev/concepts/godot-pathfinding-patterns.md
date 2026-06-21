@@ -14,11 +14,12 @@ related:
   - sources/shaggydev-tactics-engine-devlog-2023.md
   - sources/shaggydev-udd-navigation-2025.md
   - sources/papierkorp-godot-4-tactical-movement-2023.md
-  - concepts/godot-3d-sh2-architect-spike-plan.md
+  - sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md
+  - entities/tools/binarytracking.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-17
+updated: 2026-06-21
 ---
 
 ## Relations
@@ -26,6 +27,8 @@ updated: 2026-06-17
 - @entities/projects/castle-sim.md — spike implementation
 - @sources/shaggydev-tactics-engine-devlog-2023.md
 - @sources/shaggydev-udd-navigation-2025.md
+- @sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md — K125 binary segment search steal
+- @entities/tools/binarytracking.md
 
 ## Raw Concept
 
