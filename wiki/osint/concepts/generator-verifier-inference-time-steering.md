@@ -5,6 +5,9 @@ tags: [concept, verifier, self-improvement, inference-time, k123]
 keywords: [VERITAS, Best-of-N, generator-verifier, gradient-free verifier, D_auto, policy steering]
 related:
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
+  - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
+  - concepts/probabilistic-agent-policy-verification.md
+  - concepts/non-markov-belief-state-benchmarks.md
   - concepts/generator-verifier-inference-time-steering.md
   - concepts/llm-agent-systems.md
   - concepts/continual-harness-online-self-improvement.md
@@ -13,12 +16,14 @@ related:
   - concepts/devfun-poker-agent-challenge-2026.md
 maturity: draft
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-21
 ---
 
 ## Relations
 
 - @sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md — VERITAS robotics paper (K123)
+- @sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md — trajectory risk bounds (K125)
+- @concepts/probabilistic-agent-policy-verification.md — DRO global bound vs pointwise Best-of-N
 - @concepts/continual-harness-online-self-improvement.md — harness self-edit vs external verifier
 - @concepts/code-as-agent-harness.md — static harness tests as verifier substrate
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — multi-axis scores as verifier signals
@@ -47,7 +52,9 @@ K123 ingest of arXiv **2606.18247**. Separates **action generation** from **acti
 
 Distinct from **Raeth nine-axis** (post-hoc eval) — verifier runs **before** action submit. Distinct from **continual harness** (2605.09998) — VERITAS does not edit prompts/harness; it filters generator outputs.
 
-**Posture:** REFERENCE until VERITAS code license verified. Poker brief stages Best-of-N verifier spike for Researcher Round.
+**K125 extension:** arXiv 2606.20510 adds **trajectory-level** conservative risk bounds when individual verifier predicates are noisy/correlated — stack under K123 pointwise gates for multi-street hands.
+
+**Posture:** REFERENCE until VERITAS / Google code licenses verified. Poker briefs stage Best-of-N (K123) + trajectory bound spike (K125) for Researcher Round.
 
 ## Snippets
 

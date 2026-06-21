@@ -14,6 +14,8 @@ related:
   - entities/tools/polymarket-gamma-api.md
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
+  - concepts/active-project-research-routing.md
+  - sources/github-nfl-repo-eval-cemini-2026-06-21.md
   - concepts/strategic-resource-acquisition-game-theory.md
   - concepts/active-project-research-routing.md
   - sources/trading-posts-ai-workflow-polymarket-markov-2026-05.md

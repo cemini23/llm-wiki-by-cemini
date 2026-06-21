@@ -16,6 +16,7 @@ related:
   - "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
   - concepts/xsp-lane-trading-framework.md
   - concepts/polymarket-bot-architecture.md
+  - sources/github-nfl-repo-eval-cemini-2026-06-21.md
 maturity: core
 created: 2026-06-17
 updated: 2026-06-21

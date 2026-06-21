@@ -155,10 +155,14 @@ related:
   - sources/arxiv-harnessfix-trace-repair-2606.06324-2026-06-16.md
   - sources/arxiv-prfs-counterfactual-dex-2606.08228-2026-06-16.md
   - concepts/post-rejection-follow-up-sampling.md
+  - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
+  - sources/arxiv-rng-bench-non-markov-mllm-2606.19338-2026-06-21.md
+  - concepts/probabilistic-agent-policy-verification.md
+  - concepts/non-markov-belief-state-benchmarks.md
 maturity: validated
 hub: true
 created: 2026-04-26
-updated: 2026-06-16
+updated: 2026-06-21
 ---
 
 ## Relations

@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-21 — K125)
+
+- **K125 ingest (2026-06-21)** — Daily digest full ingest: 2 arXiv + NFL tool eval docx from inbox. **3 sources + 2 concepts + 4 updates.** Probabilistic verification (2606.20510) REFERENCE — trajectory risk bound steal for poker verifier stack; RNG-Bench (2606.19338) REFERENCE — Memory Gap diagnostic; NFL repo eval REFERENCE — nflverse confirmed, danmorse314 EPA clean-room only. **Phase-0:** `adopt_k125_phase0.sh`. **Briefs (3):** poker probabilistic trajectory verifier; castle-sim Memory Gap playtest; CeminiDFS EPA clean-room. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-20 — K124)
 
 - **K124 ingest (2026-06-20)** — Daily digest full ingest: 4 arXiv from inbox. **4 sources + 4 concepts + 1 entity + 4 updates.** Team zero-sum PPAD (2606.16139) REFERENCE; Trainee-to-Trainer (2606.17682) CONDITIONAL-GO — NOASSERTION license; Qwen-RobotNav (2606.18112) REFERENCE — repo 404; MAFP fictitious play (2606.19308) REFERENCE — poker steal. **Phase-0:** `adopt_k124_phase0.sh`. **Briefs (2):** poker MAFP offline charts; castle-sim RobotNav memory + env-engineer playtest. Archive → egress-fi; inbox cleared.

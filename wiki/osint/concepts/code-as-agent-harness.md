@@ -9,6 +9,8 @@ related:
   - sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md
   - entities/tools/rocketsmith.md
   - concepts/continual-harness-online-self-improvement.md
+  - concepts/probabilistic-agent-policy-verification.md
+  - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
   - concepts/generator-verifier-inference-time-steering.md
   - concepts/llm-agent-systems.md
   - sources/agentic-harness-engineering.md

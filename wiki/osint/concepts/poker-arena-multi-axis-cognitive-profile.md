@@ -18,9 +18,13 @@ related:
   - concepts/team-zero-sum-games-complexity.md
   - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
   - sources/arxiv-team-zero-sum-games-2606.16139-2026-06-20.md
+  - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
+  - sources/arxiv-rng-bench-non-markov-mllm-2606.19338-2026-06-21.md
+  - concepts/non-markov-belief-state-benchmarks.md
+  - concepts/probabilistic-agent-policy-verification.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-20
+updated: 2026-06-21
 ---
 
 ## Relations
@@ -31,6 +35,8 @@ updated: 2026-06-20
 - @sources/arxiv-equilibrium-efgsas-2606.13093-2026-06-18.md — CFR/equilibrium theory sibling
 - @concepts/multi-agent-fictitious-play-llm.md — fictitious-play equilibrium seeking (K124)
 - @concepts/team-zero-sum-games-complexity.md — multi-agent equilibrium hardness (K124)
+- @concepts/non-markov-belief-state-benchmarks.md — Memory Gap diagnostic for F6 ablation (K125)
+- @concepts/probabilistic-agent-policy-verification.md — trajectory verifier risk bounds (K125)
 
 ## Raw Concept
 
@@ -81,6 +87,7 @@ Same research lineage (Raeth author on paper; dev.fun PR cites multi-axis eval) 
 2. Export trajectory JSON every Researcher submit — Discord expects full traces.
 3. Memory ablation discipline: test F6 **on/off** before publish — don't assume memory always helps.
 4. Regression gates on M₈ (no card hallucination) and M₉ (positional VPIP) — Kimi's losses traced to those axes.
+5. **Memory Gap (K125):** on trajectory export, tag errors where F6 off caused wrong action vs wrong action with memory on — separates forgetting from mis-decide.
 
 ## Snippets
 

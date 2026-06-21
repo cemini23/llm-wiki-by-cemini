@@ -11,6 +11,10 @@ related:
   - concepts/generator-verifier-inference-time-steering.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
+  - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
+  - sources/arxiv-rng-bench-non-markov-mllm-2606.19338-2026-06-21.md
+  - concepts/probabilistic-agent-policy-verification.md
+  - concepts/non-markov-belief-state-benchmarks.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-poker-researcher-track-email-2026-06-19.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
@@ -21,7 +25,7 @@ related:
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-19
+updated: 2026-06-21
 ---
 
 ## Relations
@@ -30,6 +34,8 @@ updated: 2026-06-19
 - @sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
 - @sources/devfun-researcher-track-discord-welcome-2026-06-18.md — official channel welcome (Researcher Round)
 - @concepts/generator-verifier-inference-time-steering.md — VERITAS inference-time verifier steal (K123)
+- @concepts/probabilistic-agent-policy-verification.md — trajectory risk bounds (K125)
+- @concepts/non-markov-belief-state-benchmarks.md — Memory Gap ablation rubric (K125)
 - @sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
 - @sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md — Raeth paper source
 - @concepts/devfun-poker-competitor-github-recon-2026-06.md

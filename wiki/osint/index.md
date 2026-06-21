@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **431 canonical stubs** (K124 bundle Discord 2026-06-20; K124 daily digest 2026-06-20)
+Total: **436 canonical stubs** (K125 daily digest 2026-06-21)
 
 
 ### rl-marl (104)
@@ -1318,6 +1318,11 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Agentic navigation memory strategy](concepts/agentic-navigation-memory-strategy.md) — K124: task-conditioned obs interface. — concept, navigation, k124
 - [Team zero-sum games complexity](concepts/team-zero-sum-games-complexity.md) — K124: PPAD-complete Nash. — concept, game-theory, k124
 - [Trainee-to-Trainer](entities/tools/trainee-to-trainer.md) — K124 MAPF env-engineer tool. — entity, tool, k124
+- [Probabilistic agent verification (2606.20510)](sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md) — `[DRAFT 2026-06-21]` K125: DRO trajectory bounds; poker verifier steal. — source, arxiv, k125
+- [RNG-Bench non-Markov MLLM (2606.19338)](sources/arxiv-rng-bench-non-markov-mllm-2606.19338-2026-06-21.md) — `[DRAFT 2026-06-21]` K125: Memory Gap benchmark; REFERENCE. — source, arxiv, k125
+- [GitHub NFL/DFS repo eval (K125)](sources/github-nfl-repo-eval-cemini-2026-06-21.md) — `[DRAFT 2026-06-21]` tool eval; nflverse confirmed; EPA clean-room. — source, tool-eval, k125
+- [Probabilistic agent policy verification](concepts/probabilistic-agent-policy-verification.md) — K125: trajectory risk bounds for noisy verifiers. — concept, verifier, k125
+- [Non-Markov belief-state benchmarks](concepts/non-markov-belief-state-benchmarks.md) — K125: RNG-Bench Memory Gap pattern. — concept, benchmark, k125
 - [Poker Arena multi-axis cognitive profile](concepts/poker-arena-multi-axis-cognitive-profile.md) — K122: Raeth nine-axis + memory ablation. — concept, poker, k122
 - [Extensive-form games with stochastic action sets](concepts/extensive-form-games-stochastic-action-sets.md) — K122: EFGSAS / SI-CFR. — concept, game-theory, k122
 - [MoVerse panoramic video world model](concepts/moverse-panoramic-video-world-model.md) — K122: single-image → 360° → Gaussian scaffold. — concept, world-model, k122

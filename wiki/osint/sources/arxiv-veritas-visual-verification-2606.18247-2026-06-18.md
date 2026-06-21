@@ -4,6 +4,7 @@ type: source
 tags: [source, arxiv, robotics, verifier, self-improvement, k123]
 keywords: [2606.18247, VERITAS, generator-verifier, inference-time steering, Best-of-N, policy improvement]
 related:
+  - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
   - concepts/generator-verifier-inference-time-steering.md
   - concepts/llm-agent-systems.md
   - concepts/continual-harness-online-self-improvement.md

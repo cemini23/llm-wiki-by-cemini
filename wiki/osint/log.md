@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-21] ingest | K125 daily digest — 2 arXiv + tool eval
+
+- **Sources (3):** probabilistic agent verification (2606.20510); RNG-Bench non-Markov MLLM (2606.19338); GitHub NFL/DFS repo eval docx
+- **Concepts (2):** `@concepts/probabilistic-agent-policy-verification.md`, `@concepts/non-markov-belief-state-benchmarks.md`
+- **Updates:** generator-verifier steering, poker multi-axis profile, devfun challenge, llm-agent-systems hub — K125 backlinks
+- **Phase-0:** `scripts/adopt_k125_phase0.sh`
+- **Briefs (3):** poker probabilistic trajectory verifier; castle-sim Memory Gap playtest; CeminiDFS EPA clean-room
+- **Archive:** 2 PDFs + docx → egress-fi; inbox cleared
+
 ## [2026-06-20] ingest | K123 Discord — researcher sandbox bundle submission
 
 - **Source** — `@sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md` (gambling-wiki canonical + OSINT stub)
