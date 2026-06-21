@@ -12,6 +12,8 @@ related:
   - concepts/ccgs-workflow-extraction.md
   - concepts/godot-stagehand-ci-smoke-plan.md
   - entities/tools/godot-stagehand.md
+  - entities/tools/gamedevbench.md
+  - sources/gamedevbench-phase-0-audit-2026-06-21.md
   - entities/tools/claude-code-game-studios.md
   - entities/tools/godot-mcp-landscape.md
   - meta/sibling-wiki-inventory.md
@@ -20,9 +22,11 @@ related:
   - concepts/game-ai-rl-augmentation-shelf.md
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
   - entities/tools/hi-godot-ai.md
+  - entities/tools/ziva-godot-agent.md
+  - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-21
 ---
 
 ## Relations

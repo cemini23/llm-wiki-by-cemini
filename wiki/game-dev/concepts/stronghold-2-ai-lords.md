@@ -25,6 +25,9 @@ related:
   - concepts/stronghold-franchise-best-of-shelf.md
   - concepts/game-ai-rl-augmentation-shelf.md
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
+maturity: validated
+created: 2026-06-17
+updated: 2026-06-21
 ---
 
 ## Relations

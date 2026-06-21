@@ -17,6 +17,8 @@ related:
   - concepts/godot-pathfinding-patterns.md
   - concepts/rts-pathfinding-approaches.md
   - entities/tools/hi-godot-ai.md
+  - entities/tools/gamedevbench.md
+  - sources/gamedevbench-phase-0-audit-2026-06-21.md
   - sources/kobold-tactics-tilemap-pathfinding-2023.md
   - sources/liquid-fire-godot-tactics-pathfinding-2024.md
   - sources/morinaga-shin-koikoi-claude-godot-2026.md

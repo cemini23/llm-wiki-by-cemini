@@ -56,6 +56,8 @@ related:
   - entities/tools/monsterfisch-strongholds-of-conquest.md
   - concepts/game-ai-rl-augmentation-shelf.md
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
+  - entities/tools/gamedevbench.md
+  - sources/gamedevbench-phase-0-audit-2026-06-21.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
 maturity: validated
 created: 2026-06-13

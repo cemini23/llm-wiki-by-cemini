@@ -9,6 +9,9 @@ related:
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-06-21.md
+  - sources/inbox-arxiv-reject-batch-2026-06-20.md
+  - sources/inbox-arxiv-reject-batch-2026-06-21.md
 read_status: read
 source_type: operator-triage
 maturity: validated

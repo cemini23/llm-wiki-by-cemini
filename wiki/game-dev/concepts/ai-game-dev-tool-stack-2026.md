@@ -10,6 +10,10 @@ related:
   - entities/tools/hi-godot-ai.md
   - entities/tools/godot-stagehand.md
   - entities/tools/godot-ai-playtest.md
+  - entities/tools/gamedevbench.md
+  - entities/tools/ziva-godot-agent.md
+  - sources/gamedevbench-phase-0-audit-2026-06-21.md
+  - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
   - entities/tools/serpent-ai.md
   - entities/tools/airtest.md
   - sources/exa-ai-gamedev-tools-batch-2026-06-13.md
@@ -25,7 +29,7 @@ related:
   - sources/hi-godot-ai-phase-0-audit-2026-06-13.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-21
 ---
 
 ## Relations
@@ -93,6 +97,8 @@ Catalog of **AI + automation tools** for game development — codegen, editor MC
 |------|--------|-----------|---------|
 | [godot-stagehand](https://github.com/mrf/godot-stagehand) | Godot | External Go driver, Playwright-like | **EVAL** for W2 harness |
 | [godot-ai-playtest](https://github.com/marcushale/godot-ai-playtest) | Godot 4 | TCP JSON-RPC plugin + Python client | WATCH |
+| @entities/tools/gamedevbench.md | Godot 4 | 333-task agent eval suite (Apache-2.0) | **STEAL-FROM** — capability baseline |
+| @entities/tools/ziva-godot-agent.md | Godot 4.2+ | In-editor proprietary agent + MCP export | **CONDITIONAL-GO** — operator IDE only |
 | [testplay-runner](https://github.com/Kubonsang/testplay-runner) | Unity | Go CLI, JSON stdout for agents | Unity only |
 | modl.ai | Unity/Unreal | Autonomous playtest bots | Commercial; studio scale |
 | LLM playtest papers | — | arXiv 2509.22170 etc. | Research shelf |

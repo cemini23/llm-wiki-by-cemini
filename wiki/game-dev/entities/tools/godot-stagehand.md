@@ -6,6 +6,10 @@ keywords: [godot-stagehand, playwright, mcp, ci, automation]
 related:
   - concepts/ai-game-dev-tool-stack-2026.md
   - entities/tools/godot-ai-playtest.md
+  - entities/tools/gamedevbench.md
+  - sources/gamedevbench-phase-0-audit-2026-06-21.md
+  - entities/tools/ziva-godot-agent.md
+  - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
   - concepts/agent-harness-castle-project.md
   - concepts/godot-stagehand-ci-smoke-plan.md
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md

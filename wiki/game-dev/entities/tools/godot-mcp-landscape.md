@@ -6,10 +6,15 @@ keywords: [mcp, godot, llm, agent, codegen, hi-godot]
 related:
   - concepts/agent-harness-castle-project.md
   - concepts/ai-game-dev-tool-stack-2026.md
+  - entities/tools/gamedevbench.md
   - entities/tools/hi-godot-ai.md
   - entities/tools/sods2-godot-mcp.md
   - entities/tools/godot-stagehand.md
   - entities/tools/godot-ai-playtest.md
+  - entities/tools/gamedevbench.md
+  - entities/tools/ziva-godot-agent.md
+  - sources/gamedevbench-phase-0-audit-2026-06-21.md
+  - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
   - sources/hi-godot-ai-phase-0-audit-2026-06-13.md
   - sources/sods2-godot-mcp-phase-0-audit-2026-06-13.md
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md
@@ -17,7 +22,7 @@ related:
   - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-17
+updated: 2026-06-21
 ---
 
 ## Relations
