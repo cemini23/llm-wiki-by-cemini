@@ -39,7 +39,7 @@ What prompted this page: K126 links.docx Adopt-tier evaluation of [mattpocock/sk
 | `grill-me` | pre-ship review ritual before arena poker submit |
 | Composable single-purpose skills | CCC wiki ingest / federation hub operator flows |
 
-**Cross-wiki:** Game-dev-wiki brief hook for castle-sim task generation (see K126 CCC brief).
+**Cross-wiki:** Game-dev-wiki brief hook for castle-sim task generation (see K126 CCC brief). **CCC adopted 2026-06-22:** `@ccc-wiki/entities/skills/to-issues.md`, `@ccc-wiki/entities/skills/grill-with-docs.md` in `.cursor/skills/`.
 
 ## Snippets
 
