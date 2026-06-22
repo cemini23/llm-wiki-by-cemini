@@ -61,10 +61,13 @@ related:
   - sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md
   - entities/tools/wikikv.md
   - meta/librarian-decommission-2026-06-14.md
+  - sources/links-6-22-tool-eval.md
+  - entities/tools/nvidia-skills.md
+  - entities/tools/mattpocock-skills.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-06-17
+updated: 2026-06-22
 ---
 
 ## Relations

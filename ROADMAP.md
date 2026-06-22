@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-22 — K126)
+
+- **K126 ingest (2026-06-22)** — Full ingest: links.docx (146 URLs, collapsed table export) + arXiv 2606.20495 continuum robots. **2 sources + 2 concepts + 2 entities + 1 update.** links.docx: 2 Adopt (mattpocock MIT; nvidia dual-license → CONDITIONAL-GO), 18 Steal-from (ClarusC64 NFL coherence suite), 83 Reject aggregated. Continuum robots REFERENCE — AHP+GA path diversity → castle-sim. **Phase-0:** `adopt_k126_phase0.sh`. **Briefs (4):** CeminiDFS coherence-risk; castle-sim path planning; poker Kuhn SFT reference; CCC skills adopt. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-21 — K125)
 
 - **K125 ingest (2026-06-21)** — Daily digest full ingest: 2 arXiv + NFL tool eval docx from inbox. **3 sources + 2 concepts + 4 updates.** Probabilistic verification (2606.20510) REFERENCE — trajectory risk bound steal for poker verifier stack; RNG-Bench (2606.19338) REFERENCE — Memory Gap diagnostic; NFL repo eval REFERENCE — nflverse confirmed, danmorse314 EPA clean-room only. **Phase-0:** `adopt_k125_phase0.sh`. **Briefs (3):** poker probabilistic trajectory verifier; castle-sim Memory Gap playtest; CeminiDFS EPA clean-room. Archive → egress-fi; inbox cleared.

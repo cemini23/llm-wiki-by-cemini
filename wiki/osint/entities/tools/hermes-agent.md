@@ -28,9 +28,10 @@ related:
   - "@ccc-wiki/entities/tools/hermes-agent.md"
   - entities/people/damidefi.md
   - sources/trading-posts-compilation-17-2026-06-03.md
+  - sources/links-6-22-tool-eval.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-06-13
+updated: 2026-06-22
 ---
 
 ## Relations
@@ -52,6 +53,7 @@ updated: 2026-06-13
 - @concepts/hermes-laptop-operator-playbook.md — K113 split laptop/librarian ops
 - @entities/tools/hermes-workspace.md — laptop GUI
 - @entities/tools/skillclaw.md — skill evolution proxy
+- @sources/links-6-22-tool-eval.md — K126 Steal-from refresh (v2026.6.19 release tag)
 
 ## Raw Concept
 

@@ -7,10 +7,11 @@ related:
   - sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
+  - entities/tools/nvidia-skills.md
   - "@cybersecurity-wiki/entities/tools/nvidia-skillspector.md"
 maturity: validated
 created: 2026-05-31
-updated: 2026-05-31
+updated: 2026-06-22
 phase_0_verdict: CONDITIONAL-GO 2026-05-31 — Apache-2.0 verified; static scan PASS; wire `--no-llm` into laptop preingest only; not on PyPI; Python 3.12+; do not deploy on librarian until air-gap OSV probe
 adoption_status: PHASE-0-COMPLETE 2026-05-31; skill_supply_scan.py wired
 ---

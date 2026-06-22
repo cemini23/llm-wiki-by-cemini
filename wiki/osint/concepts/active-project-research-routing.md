@@ -17,9 +17,13 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - concepts/polymarket-bot-architecture.md
   - sources/github-nfl-repo-eval-cemini-2026-06-21.md
+  - sources/links-6-22-tool-eval.md
+  - concepts/nfl-coherence-risk-features.md
+  - concepts/castle-sim-pathfinding-steals.md
+  - sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md
 maturity: core
 created: 2026-06-17
-updated: 2026-06-21
+updated: 2026-06-22
 ---
 
 ## Relations

@@ -20,6 +20,7 @@ related:
   - sources/5-5-links-2-tool-eval.md
   - sources/5-5-links-tool-eval.md
   - sources/links-3-5-4-tool-eval.md
+  - sources/links-6-22-tool-eval.md
 maturity: draft
 read_status: deep-read
 created: 2026-05-04

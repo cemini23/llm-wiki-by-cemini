@@ -17,9 +17,11 @@ related:
   - sources/trading-posts-compilation-20-2026-05-27.md
   - sources/trading-posts-compilation-17-2026-06-03.md
   - entities/tools/omnifs.md
+  - entities/tools/nvidia-skills.md
+  - entities/tools/mattpocock-skills.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-06-09
+updated: 2026-06-22
 ---
 
 ## Relations
@@ -30,6 +32,8 @@ updated: 2026-06-09
 - @concepts/claude-code-trading-assistant-workflow-smb.md — trader-built HTML dashboard pattern
 - @concepts/curator-skills.md — OSINT workspace skill accumulator
 - @entities/tools/hermes-agent.md — alternative persistent-memory product (runtime vs file-based Skills.md)
+- @entities/tools/nvidia-skills.md — K126 signed skill distribution (CONDITIONAL-GO)
+- @entities/tools/mattpocock-skills.md — K126 Adopt composable skill library
 - @concepts/cemini-repository-topology.md — subsystem CLAUDE.md recommendation
 - @ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md — expanded ccc concept (K76 fill-out)
 - @ccc-wiki/concepts/claude-md-five-section-template.md — five-section CLAUDE.md template (K76 fill-out)

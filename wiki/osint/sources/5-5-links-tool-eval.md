@@ -9,6 +9,7 @@ related:
   - sources/polymarket-5-5-tool-eval.md
   - sources/5-4-links-tool-eval.md
   - sources/links-2-5-4-tool-eval.md
+  - sources/links-6-22-tool-eval.md
   - concepts/cemini-license-posture.md
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/pageindex.md

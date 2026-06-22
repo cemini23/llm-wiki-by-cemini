@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-06-22] ingest | K126 links.docx + arXiv 2606.20495
+
+- **Sources (2):** `@sources/links-6-22-tool-eval.md` (146 URLs; table format collapsed — tiers from `Tier:` field); `@sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md` (REFERENCE castle-sim)
+- **Concepts (2):** `@concepts/nfl-coherence-risk-features.md`, `@concepts/castle-sim-pathfinding-steals.md`
+- **Entities (2):** `@entities/tools/nvidia-skills.md` (CONDITIONAL-GO), `@entities/tools/mattpocock-skills.md` (Adopt)
+- **Updates:** `@entities/tools/hermes-agent.md` — K126 release-tag backlink
+- **Phase-0:** `scripts/adopt_k126_phase0.sh` — nvidia/skills license corrected (NOT MIT)
+- **Briefs (4):** CeminiDFS coherence-risk; castle-sim AHP pathfinding; poker Kuhn SFT reference; CCC nvidia+mattpocock skills
+- **Archive:** PDF + docx → egress-fi; inbox cleared
+
 ## [2026-06-21] ingest | K125 daily digest — 2 arXiv + tool eval
 
 - **Sources (3):** probabilistic agent verification (2606.20510); RNG-Bench non-Markov MLLM (2606.19338); GitHub NFL/DFS repo eval docx
