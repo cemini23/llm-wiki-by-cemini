@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-06-22] query | Researcher pre-launch polish (K125 P1 + MAFP + HU PvP S3 stub)
+
+- **Entity:** `@entities/platforms/devfun-heads-up-pvp-s3.md` — `cmqnvili2002gwb82l1qba0gm` [NEEDS VERIFICATION 2026-06-22]
+- **Agent:** K125 P1 `CEMINI_TRAJECTORY_BOUND` wrapper on `cemini_decide._build`; researcher apply enables bound + MAFP; jun21 checklist runs MAFP if chart missing
+- **Updates:** `@entities/platforms/devfun-arena.md`, `@concepts/devfun-researcher-track-readiness-2026-06.md`
+
 ## [2026-06-22] query | K126 Kuhn SFT reference implementation + wiki filing
 
 - **Concept:** `@concepts/kuhn-poker-sft-curriculum-reference.md` — steal matrix, NO LICENSE posture, devfun-poker-arena tooling paths

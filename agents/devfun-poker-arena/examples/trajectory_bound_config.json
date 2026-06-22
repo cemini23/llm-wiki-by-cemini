@@ -1,0 +1,32 @@
+{
+  "schema": "devfun.trajectory_bound.v1",
+  "tau": 0.05,
+  "mode": "independent",
+  "predicates": {
+    "legality": {
+      "enabled": true,
+      "u": 0.0001,
+      "source": "deterministic allowedActions oracle; epsilon ~= 0"
+    },
+    "mc_equity": {
+      "enabled": true,
+      "u": 0.03,
+      "source": "Monte Carlo equity estimator variance proxy"
+    },
+    "m8_factual": {
+      "enabled": true,
+      "u": 0.05,
+      "source": "M8 reasoning factuality regex proxy"
+    },
+    "regression": {
+      "enabled": true,
+      "u": 0.02,
+      "source": "HL regression spot replay/match guard"
+    },
+    "axis_floor": {
+      "enabled": true,
+      "u": 0.05,
+      "source": "Researcher multi-axis floor gate"
+    }
+  }
+}

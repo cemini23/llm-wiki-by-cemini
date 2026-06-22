@@ -34,9 +34,17 @@ if str(_EXAMPLES) not in sys.path:
     sys.path.insert(0, str(_EXAMPLES))
 
 from agent import (  # noqa: E402
-    _build,
+    _build as _build_agent,
     _hand_class,
     estimate_equity,
+)
+from cemini_trajectory_bound import (  # noqa: E402
+    BoundConfig,
+    contribution_from_features,
+    evaluate_veto,
+    propagate,
+    safest_legal_action,
+    TrajectoryBoundState,
 )
 from position_utils import hero_is_in_position, hero_position_label  # noqa: E402
 from qualification_guard import max_playable_chips  # noqa: E402
@@ -79,6 +87,128 @@ except ImportError:
 from research_static_chart import research_static_chart  # noqa: E402
 from action_mix import resolve_postflop_call_fold  # noqa: E402
 from hand_nuts import river_unbeatable, treys_available  # noqa: E402
+
+_TRAJECTORY_BOUND_CFG: BoundConfig | None = None
+_TRAJECTORY_BOUND_STATE = TrajectoryBoundState()
+_TRAJECTORY_BOUND_HAND_KEY: str | None = None
+_CURRENT_DECIDE_DEADLINE_S = 10.0
+
+
+def _trajectory_bound_enabled() -> bool:
+    return os.environ.get("CEMINI_TRAJECTORY_BOUND", "0").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+        "on",
+    )
+
+
+def _trajectory_bound_config() -> BoundConfig:
+    global _TRAJECTORY_BOUND_CFG
+    if _TRAJECTORY_BOUND_CFG is not None:
+        return _TRAJECTORY_BOUND_CFG
+    cfg_path = _EXAMPLES / "trajectory_bound_config.json"
+    preds: dict[str, Any] = {}
+    tau = 0.05
+    if cfg_path.is_file():
+        try:
+            raw = json.loads(cfg_path.read_text(encoding="utf-8"))
+            tau = float(raw.get("tau", tau))
+            preds = raw.get("predicates") or {}
+        except (json.JSONDecodeError, TypeError, ValueError):
+            preds = {}
+    _TRAJECTORY_BOUND_CFG = BoundConfig(
+        veto_threshold=tau,
+        m8_factual_u=float((preds.get("m8_factual") or {}).get("u", 0.04)),
+        legality_u=float((preds.get("legality") or {}).get("u", 0.0)),
+        unknown_equity_u=float((preds.get("mc_equity") or {}).get("u", 0.03)),
+        regression_forbidden_u=float((preds.get("regression") or {}).get("u", 1.0)),
+        axis_floor_u=float((preds.get("axis_floor") or {}).get("u", 0.0)),
+    )
+    return _TRAJECTORY_BOUND_CFG
+
+
+def _trajectory_hand_key(table: dict) -> str:
+    return str(
+        table.get("tableId")
+        or table.get("handId")
+        or table.get("handNumber")
+        or ""
+    )
+
+
+def _hole_key(hole: list[str]) -> str:
+    if not hole:
+        return ""
+    return "".join(str(c) for c in hole)
+
+
+def _apply_trajectory_bound_veto(
+    table: dict,
+    allowed: dict,
+    out: dict,
+    hole: list[str],
+    board: list[str],
+    equity: float,
+    sims: int,
+) -> dict:
+    if not _trajectory_bound_enabled():
+        return out
+    global _TRAJECTORY_BOUND_STATE, _TRAJECTORY_BOUND_HAND_KEY
+    cfg = _trajectory_bound_config()
+    hand_key = _trajectory_hand_key(table)
+    if hand_key and hand_key != _TRAJECTORY_BOUND_HAND_KEY:
+        _TRAJECTORY_BOUND_STATE = TrajectoryBoundState()
+        _TRAJECTORY_BOUND_HAND_KEY = hand_key
+    features = {
+        "hand_id": hand_key or None,
+        "action": out.get("action"),
+        "street": table.get("street"),
+        "reasoning": out.get("reasoning"),
+        "hole_key": _hole_key(hole),
+        "board": board,
+        "equity": equity,
+        "sims": sims,
+        "available_actions": allowed.get("availableActions") or [],
+        "matches_regression_forbidden": False,
+    }
+    contrib = contribution_from_features(features, cfg)
+    _TRAJECTORY_BOUND_STATE = propagate(_TRAJECTORY_BOUND_STATE, contrib)
+    veto = evaluate_veto(_TRAJECTORY_BOUND_STATE, allowed, cfg)
+    if not veto.veto:
+        return out
+    safe = safest_legal_action(
+        allowed,
+        cfg,
+        regression_oracle_action=str(out.get("action") or ""),
+    )
+    safe_out = _build_agent(
+        safe,
+        None,
+        table,
+        allowed,
+        eq=equity,
+        po=0.0,
+        msg=f"K125 trajectory bound — {veto.reason}",
+    )
+    safe_out["reasoning"] = '{vr: "std", ke: "bound", pp: "safe line"}'
+    return safe_out
+
+
+def _build(
+    action: str,
+    amount: Optional[int],
+    table: dict,
+    allowed: dict,
+    eq: float,
+    po: float,
+    msg: str,
+) -> dict:
+    out = _build_agent(action, amount, table, allowed, eq=eq, po=po, msg=msg)
+    hole = _hole_cards_from_table(table)
+    board = list(table.get("boardCards") or [])
+    sims = 500 if _CURRENT_DECIDE_DEADLINE_S > 5 else 200
+    return _apply_trajectory_bound_veto(table, allowed, out, hole, board, eq, sims)
 
 # Preflop trash facing a raise — fold unless equity clearly covers price.
 _WEAK_FACING_RAISE = frozenset({
@@ -375,6 +505,8 @@ def decide(
     deadline_s: float = 10.0,
     research_context: Optional[dict] = None,
 ) -> dict:
+    global _CURRENT_DECIDE_DEADLINE_S
+    _CURRENT_DECIDE_DEADLINE_S = deadline_s
     allowed = table.get("allowedActions") or {}
     available = allowed.get("availableActions") or []
 
@@ -432,7 +564,10 @@ def decide(
         deadline_s=deadline_s,
     )
     if jp_out is not None:
-        return jp_out
+        bound_sims = 500 if deadline_s > 5 else 200
+        return _apply_trajectory_bound_veto(
+            table, allowed, jp_out, hole, board, equity, bound_sims,
+        )
     hud_mode = hud.get("mode") or "unknown"
     hud_mode_raw = hud_mode
     qual_protect = bool(ctx.get("qualification_protect"))

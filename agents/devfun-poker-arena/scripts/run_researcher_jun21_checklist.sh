@@ -43,21 +43,36 @@ if [[ "$SMOKE" == "1" ]]; then
   uv run python examples/researcher_trajectory_summary.py \
     --selfplay "$TRAJ" \
     --out-dir reports/researcher-round/jun21-smoke
+  # K125: optional probabilistic trajectory-bound smoke.
+  if [[ -f scripts/calibrate_trajectory_bounds.py && -f examples/trajectory_bound_report.py ]]; then
+    bash scripts/run_trajectory_bound_calibration.sh
+  else
+    echo "==> K125 trajectory-bound smoke skipped (tools not present)"
+  fi
   echo "CHECKLIST SMOKE OK"
   exit 0
 fi
 
-echo "==> pytest (HU + MAFP + selfplay card format)"
+echo "==> pytest (HU + MAFP + trajectory bound + selfplay card format)"
 if [[ "$CI" == "1" ]]; then
   uv run pytest tests/test_hu_regression.py \
     tests/test_mafp_chart_refinement.py \
+    tests/test_cemini_trajectory_bound_integration.py \
+    tests/test_trajectory_bound.py \
     tests/test_selfplay_card_format.py \
     tests/test_cemini_preflop_guards.py -q --tb=line
 else
   uv run pytest tests/test_hu_regression.py \
     tests/test_mafp_chart_refinement.py \
+    tests/test_cemini_trajectory_bound_integration.py \
+    tests/test_trajectory_bound.py \
     tests/test_selfplay_card_format.py \
     tests/test_cemini_regression.py -q --tb=line
+fi
+
+if [[ ! -f research/mafp_hu_chart.json ]]; then
+  echo "==> MAFP HU chart missing — offline refinement (quick)"
+  bash scripts/run_mafp_chart_refinement.sh
 fi
 
 echo "==> pick researcher competition (advisory)"

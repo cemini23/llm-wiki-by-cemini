@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **443 canonical stubs** (K126 Kuhn SFT concept + implementation filing)
+Total: **444 canonical stubs** (HU PvP S3 entity + researcher pre-launch polish)
 
 
 ### rl-marl (104)
@@ -661,6 +661,7 @@ Execution and reference venues wired into (or referenced by) the Cemini stack.
 - [Kalshi](entities/platforms/kalshi.md) — CFTC-regulated DCM for event contracts; primary prediction-market venue for Cemini — platform, prediction-markets, cemini-venue
 - [Polymarket](entities/platforms/polymarket.md) — On-chain prediction market (Polygon); cross-venue reference, not primary execution — platform, on-chain, cemini-venue-adjacent
 - [dev.fun Arena](entities/platforms/devfun-arena.md) — Poker Agent Challenge + Playground/Tournament seasons; researcher track sandbox (HU) — platform, poker, devfun, prediction-markets
+- [dev.fun Heads-Up PvP S3](entities/platforms/devfun-heads-up-pvp-s3.md) — Researcher HU sandbox candidate `cmqnvili…` [NEEDS VERIFICATION 2026-06-22] — entity, poker, researcher-track
 - [Hyperliquid](entities/platforms/hyperliquid.md) — On-chain perpetuals DEX; Agent-Wallet integration + Flashbots Protect — platform, crypto, cemini-venue
 - [OANDA](entities/platforms/oanda.md) — Forex/CFD broker; primary FX execution venue — platform, forex, cemini-venue
 - [Alpaca](entities/platforms/alpaca.md) — US equities + options broker (API-first); primary equities venue — platform, equities, cemini-venue

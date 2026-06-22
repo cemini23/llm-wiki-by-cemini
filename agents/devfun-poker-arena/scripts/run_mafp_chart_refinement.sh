@@ -44,7 +44,9 @@ CMD=(uv run python examples/mafp_chart_refinement.py
 if [[ "$ROBUSTNESS" == "1" ]]; then
   CMD+=(--robustness --hands "$HANDS")
 fi
-CMD+=("${EXTRA_ARGS[@]}")
+if [[ ${#EXTRA_ARGS[@]} -gt 0 ]]; then
+  CMD+=("${EXTRA_ARGS[@]}")
+fi
 
 echo "==> MAFP chart refinement (HU, offline)"
 "${CMD[@]}"

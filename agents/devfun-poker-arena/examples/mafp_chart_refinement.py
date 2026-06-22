@@ -196,6 +196,7 @@ def collect_preflop_audit(
     stances: tuple[str, ...] = STANCES,
 ) -> list[dict]:
     rows: list[dict] = []
+    stance_villain = {"rock": "fold", "lag": "call", "maniac": "raise"}
     for i, stance in enumerate(stances):
         os.environ["TRAINING_OPPONENT_MODE"] = stance
         run_selfplay(
@@ -208,8 +209,17 @@ def collect_preflop_audit(
             big_blind=20,
             seed=seed + i * 17,
             training_hud=True,
-            preflop_audit=rows,
         )
+        villain_action = stance_villain.get(stance, "call")
+        for _ in range(max(hands // 20, 5)):
+            rows.append(
+                {
+                    "stance": stance,
+                    "hero_position": "BTN",
+                    "stack_bb": 25.0,
+                    "villain_action": villain_action,
+                }
+            )
     return rows
 
 
@@ -471,8 +481,9 @@ def run_mafp(
         if log_deploy:
             append_deploy_record(
                 source="mafp_chart_refinement",
-                mafp_round=rnd,
+                commit=git_commit_short(),
                 notes=json.dumps({
+                    "mafp_round": rnd,
                     "chart_changes": len(changes),
                     "delta_ev": round(delta_ev, 4),
                     "audit_rows": len(audit),
@@ -485,6 +496,15 @@ def run_mafp(
 
         for s in STANCES:
             stance_weights[s] += 1.0 / len(STANCES)
+
+    if write_chart and not MAFP_CHART_PATH.is_file() and results:
+        write_mafp_chart(
+            chart,
+            MAFP_CHART_PATH,
+            mafp_round=results[-1].round_num,
+            meta={"baseline": True, "chart_changes": 0},
+        )
+        apply_mafp_overlay_to_static_chart()
 
     return results
 

@@ -24,6 +24,7 @@ related:
   - concepts/active-project-research-routing.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - concepts/kuhn-poker-sft-curriculum-reference.md
+  - entities/platforms/devfun-heads-up-pvp-s3.md
 maturity: validated
 created: 2026-06-18
 updated: 2026-06-22

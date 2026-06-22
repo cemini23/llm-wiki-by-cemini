@@ -26,6 +26,9 @@ from arena_client import ArenaClient, DEFAULT_BASE  # noqa: E402
 
 _AGENT_ROOT = _EXAMPLES.parent
 
+# Pin when Heads-Up PvP S3 is publicly joinable [NEEDS VERIFICATION 2026-06-22].
+HEADS_UP_PVP_S3_COMP_ID = "cmqnvili2002gwb82l1qba0gm"
+
 
 def fetch_candidates(client: ArenaClient) -> list[dict[str, Any]]:
     body = client.get("/competition/list-all")
@@ -52,18 +55,31 @@ def main(argv: list[str] | None = None) -> int:
         print("Run: bash scripts/list_arena_competitions.sh")
         return 1
 
-    best = candidates[0]
-    for c in candidates:
+    def _score(c: dict) -> tuple[int, int, str]:
         blob = f"{c.get('name', '')} {c.get('description', '')}".lower()
-        if "researcher" in blob or "sandbox" in blob:
-            best = c
-            break
+        # Prefer live HU PvP sandbox (Researcher track) over legacy beta sandbox ids.
+        tier = 0
+        if "heads-up pvp" in blob or "heads up pvp" in blob:
+            tier = 3
+        elif "researcher" in blob:
+            tier = 2
+        elif "sandbox" in blob and "pvp" in blob:
+            tier = 1
+        season = int(c.get("seasonNumber") or 0)
+        return (tier, season, str(c.get("id") or ""))
+
+    best = max(candidates, key=_score)
 
     cid = str(best.get("id") or "")
     print(f"candidate_id={cid}")
     print(f"name={best.get('name')}")
     print(f"season={best.get('seasonNumber')}")
     print(f"skillFile={best.get('skillFile')}")
+    if "heads-up pvp" in f"{best.get('name', '')} {best.get('description', '')}".lower():
+        if cid == HEADS_UP_PVP_S3_COMP_ID:
+            print(f"hu_pvp_s3_match={HEADS_UP_PVP_S3_COMP_ID}")
+        else:
+            print(f"hu_pvp_s3_expected={HEADS_UP_PVP_S3_COMP_ID}")
 
     if args.write_env and cid:
         path = Path(args.write_env)
