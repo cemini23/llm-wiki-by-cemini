@@ -10,9 +10,10 @@ related:
   - concepts/devfun-poker-agent-challenge-2026.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/llm-agent-systems.md
+  - concepts/kuhn-poker-sft-curriculum-reference.md
 maturity: draft
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-06-22
 ---
 
 ## Relations

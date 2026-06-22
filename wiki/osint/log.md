@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-22] query | K126 Kuhn SFT reference implementation + wiki filing
+
+- **Concept:** `@concepts/kuhn-poker-sft-curriculum-reference.md` — steal matrix, NO LICENSE posture, devfun-poker-arena tooling paths
+- **Updates:** `@sources/links-6-22-tool-eval.md`, `@concepts/devfun-poker-agent-challenge-2026.md` — bidirectional backlinks
+- **Agent repo:** `agents/devfun-poker-arena/` — `kuhn_sft_format_reference.py`, tests, runner (`--live` HF preview), `references/kuhn-poker-sft-curriculum.md`
+- **Live check:** datasets-server first-row preview for both HF corpora; assistant CoT exceeds Arena `reasoning` 150-char cap
+
 ## [2026-06-22] ingest | K126 links.docx + arXiv 2606.20495
 
 - **Sources (2):** `@sources/links-6-22-tool-eval.md` (146 URLs; table format collapsed — tiers from `Tier:` field); `@sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md` (REFERENCE castle-sim)

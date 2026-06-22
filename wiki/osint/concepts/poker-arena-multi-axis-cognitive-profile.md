@@ -22,9 +22,10 @@ related:
   - sources/arxiv-rng-bench-non-markov-mllm-2606.19338-2026-06-21.md
   - concepts/non-markov-belief-state-benchmarks.md
   - concepts/probabilistic-agent-policy-verification.md
+  - concepts/kuhn-poker-sft-curriculum-reference.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-21
+updated: 2026-06-22
 ---
 
 ## Relations

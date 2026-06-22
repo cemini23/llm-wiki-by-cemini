@@ -165,3 +165,4 @@ if deadline_s < 2.0:
   may reject it.
 - Don't return a `reasoning` string longer than 150 chars — fall back
   to `'{vr: "std", ke: "legal", pp: "pot control"}'` instead.
+- Don't treat `references/kuhn-poker-sft-curriculum.md` as an NLHE action oracle; it is only a minimal-game SFT reference for K126.

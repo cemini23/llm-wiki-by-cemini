@@ -16,6 +16,7 @@ related:
   - concepts/active-project-research-routing.md
   - sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md
   - concepts/castle-sim-pathfinding-steals.md
+  - concepts/kuhn-poker-sft-curriculum-reference.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-22
@@ -32,6 +33,7 @@ updated: 2026-06-22
 - @entities/tools/nvidia-skills.md — URL 61; docx Adopt → **CONDITIONAL-GO** after license re-check (Apache-2.0 + CC-BY-4.0 dual)
 - @entities/tools/mattpocock-skills.md — URL 62; Adopt confirmed (MIT)
 - @entities/tools/hermes-agent.md — URL 63; Steal-from refresh (MIT, v2026.6.19)
+- @concepts/kuhn-poker-sft-curriculum-reference.md — Kuhn/Spiral HF SFT corpora; offline format steal (NO LICENSE)
 
 ## Raw Concept
 

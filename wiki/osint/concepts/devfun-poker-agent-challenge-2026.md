@@ -23,9 +23,10 @@ related:
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
   - concepts/active-project-research-routing.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
+  - concepts/kuhn-poker-sft-curriculum-reference.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-21
+updated: 2026-06-22
 ---
 
 ## Relations

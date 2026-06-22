@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **442 canonical stubs** (K126 links.docx + arXiv 2026-06-22)
+Total: **443 canonical stubs** (K126 Kuhn SFT concept + implementation filing)
 
 
 ### rl-marl (104)
@@ -1328,6 +1328,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Continuum robots path planning (2606.20495)](sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md) — K126 REFERENCE; castle-sim AHP+GA steal. — source, arxiv, k126
 - [NFL coherence-risk features](concepts/nfl-coherence-risk-features.md) — K126 ClarusC64 suite → CeminiDFS stage 2. — concept, nfl, k126
 - [castle-sim pathfinding steals](concepts/castle-sim-pathfinding-steals.md) — K126 multi-criteria route scoring. — concept, game-dev, k126
+- [Kuhn poker SFT curriculum reference](concepts/kuhn-poker-sft-curriculum-reference.md) — K126 HF NO LICENSE corpora; offline format steal for `decide()`. — concept, poker, k126
 - [NVIDIA Skills](entities/tools/nvidia-skills.md) — K126 CONDITIONAL-GO (Apache-2.0 + CC-BY-4.0). — entity, tool, k126
 - [mattpocock/skills](entities/tools/mattpocock-skills.md) — K126 Adopt MIT skill library. — entity, tool, k126
 - [Poker Arena multi-axis cognitive profile](concepts/poker-arena-multi-axis-cognitive-profile.md) — K122: Raeth nine-axis + memory ablation. — concept, poker, k122

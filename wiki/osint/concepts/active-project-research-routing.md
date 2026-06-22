@@ -20,6 +20,7 @@ related:
   - sources/links-6-22-tool-eval.md
   - concepts/nfl-coherence-risk-features.md
   - concepts/castle-sim-pathfinding-steals.md
+  - concepts/kuhn-poker-sft-curriculum-reference.md
   - sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md
 maturity: core
 created: 2026-06-17

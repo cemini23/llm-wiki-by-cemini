@@ -1,0 +1,38 @@
+[
+  {
+    "dataset": "the-acorn-ai/kuhn-poker-Qwen-QwQ-32B-5000-sft",
+    "license": "NO LICENSE",
+    "split": "train",
+    "row_idx": 17,
+    "row": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "Round ID: acorn-k-001\nYou are playing one hand of Kuhn poker.\nYour card is: K\nPot: 1 chip.\nAvailable actions: [check], [bet]\nRespond with a short analysis and a final boxed action."
+        },
+        {
+          "role": "assistant",
+          "content": "<think>With K I am in the middle of the deck, so I should respect that A dominates me while J is behind. If I bet every time I create pressure, but I also risk putting chips in against a stronger range that can continue. In a toy Kuhn setting, balancing matters less than preserving a simple disciplined line. Checking keeps the pot controlled, protects against overcommitting with a medium-strength hand, and still lets me react to later aggression without forcing a thin value bet now.</think>\n\nFinal answer: \\boxed{[check]}"
+        }
+      ]
+    }
+  },
+  {
+    "dataset": "spiral-rl/Spiral-Kuhn-Poker-Qwen3-32B-SFT",
+    "license": "NO LICENSE",
+    "split": "train",
+    "row_idx": 4,
+    "row": {
+      "messages": [
+        {
+          "role": "user",
+          "content": "Round ID: spiral-q-004\nSingle-step Kuhn poker decision.\nYour card is: Q\nHistory: unopened pot.\nAvailable actions: [check], [bet]\nThink briefly, then provide the final action in a boxed format."
+        },
+        {
+          "role": "assistant",
+          "content": "<think>Q is the weakest card in Kuhn, so passive checking concedes initiative and allows stronger holdings to realize for free. Betting gives me fold equity against J and lets me define the line immediately, which is useful in a tiny action space where initiative carries outsized value. Even though A can punish me, the legal action set is simple and the aggressive option captures the structural lesson of forcing a response instead of drifting into a capped checking range with the bottom card.</think>\n\nFinal answer: \\boxed{[bet]}"
+        }
+      ]
+    }
+  }
+]
