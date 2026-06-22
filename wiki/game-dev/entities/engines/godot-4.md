@@ -24,6 +24,7 @@ related:
   - sources/morinaga-shin-koikoi-claude-godot-2026.md
   - sources/pchojecki-catvivors-claude-code-steam-2026.md
   - sources/vav-labs-godot-flow-fields-2026.md
+  - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-15

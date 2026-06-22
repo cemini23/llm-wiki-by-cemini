@@ -13,6 +13,7 @@ related:
   - sources/exa-deep-research-batch-2026-06-13.md
   - sources/exa-flowfields-firefly-batch-2026-06-13.md
   - sources/vav-labs-godot-flow-fields-2026.md
+  - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
   - concepts/agentic-pcg-level-design.md
   - concepts/scope-tiers.md
   - sources/shaggydev-tactics-engine-devlog-2023.md

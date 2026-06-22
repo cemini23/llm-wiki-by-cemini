@@ -16,10 +16,12 @@ related:
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
   - sources/inbox-arxiv-reject-batch-2026-06-21.md
   - sources/gamedevbench-phase-0-audit-2026-06-21.md
+  - sources/inbox-arxiv-reject-batch-2026-06-22.md
+  - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
   - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
 maturity: core
 created: 2026-06-13
-updated: 2026-06-21
+updated: 2026-06-22
 ---
 
 ## Relations

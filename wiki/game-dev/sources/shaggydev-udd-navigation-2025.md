@@ -9,7 +9,7 @@ related:
   - sources/shaggydev-tactics-engine-devlog-2023.md
   - entities/projects/castle-sim.md
   - sources/papierkorp-godot-4-tactical-movement-2023.md
-read_status: read
+  - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
 source_type: devlog
 source_url: https://shaggydev.com/2025/05/19/udd-navigation/
 maturity: validated

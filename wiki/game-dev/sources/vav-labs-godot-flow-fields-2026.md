@@ -10,12 +10,13 @@ related:
   - concepts/rts-pathfinding-approaches.md
   - sources/exa-flowfields-firefly-batch-2026-06-13.md
   - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
+  - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
 read_status: read
 source_type: blog
 source_url: https://vav-labs.com/blog/godot-flow-fields-shared-goal/
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-22
 ---
 
 ## Relations

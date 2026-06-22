@@ -15,11 +15,12 @@ related:
   - sources/shaggydev-udd-navigation-2025.md
   - sources/papierkorp-godot-4-tactical-movement-2023.md
   - sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md
+  - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
   - entities/tools/binarytracking.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-21
+updated: 2026-06-22
 ---
 
 ## Relations
@@ -27,6 +28,7 @@ updated: 2026-06-21
 - @entities/projects/castle-sim.md — spike implementation
 - @sources/shaggydev-tactics-engine-devlog-2023.md
 - @sources/shaggydev-udd-navigation-2025.md
+- @sources/vav-labs-astargrid2d-gotchas-2026-06-22.md — AStarGrid2D init + diagonal/JPS checklist
 - @sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md — K125 binary segment search steal
 - @entities/tools/binarytracking.md
 
@@ -39,6 +41,8 @@ Godot-specific pathfinding patterns for grid castle-sim — beyond Phase-0 one-l
 ### Pattern 1 — Job path (v0)
 
 `AStarGrid2D` aligned 1:1 with wall grid. On wall place/remove → `set_point_solid`. Peasant requests path on job assign + on `wall_changed` signal (local invalidation).
+
+**Init checklist** (@sources/vav-labs-astargrid2d-gotchas-2026-06-22.md): `DIAGONAL_MODE_ONLY_IF_NO_OBSTACLES`, `jumping_enabled = false`, Octile heuristic on 8-dir grids; call `update()` only on region resize then re-sync all solids.
 
 ### Pattern 2 — Reachable-area preview (v1)
 

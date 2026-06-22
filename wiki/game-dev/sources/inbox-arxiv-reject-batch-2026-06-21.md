@@ -9,6 +9,7 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-06-18.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-06-22.md
   - sources/gamedevbench-phase-0-audit-2026-06-21.md
   - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
 read_status: read

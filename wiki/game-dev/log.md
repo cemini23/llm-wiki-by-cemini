@@ -4,7 +4,14 @@ Append-only chronological log.
 
 ---
 
-## [2026-06-21] cross-wiki | K125 SEO digest — BinTrack spatial QA
+## [2026-06-22] ingest | Inbox re-drop + vav_labs AStarGrid2D gotchas
+
+- Inbox: 5 arXiv re-drops → @sources/inbox-arxiv-reject-batch-2026-06-22.md (2606.20495 new reject); archived; inbox cleared
+- Source: @sources/vav-labs-astargrid2d-gotchas-2026-06-22.md → @concepts/godot-pathfinding-patterns.md Pattern 1 checklist
+- Brief: `briefs/research/astargrid2d-gotchas-checklist.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-22-daily.md
+
+---
 
 - **Source** — arXiv 2606.16902 (BinTrack / GangnamLoop); cross-route from @seo-wiki/sweeps/2026-06-21-daily.md
 - **New** — @sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md, @entities/tools/binarytracking.md

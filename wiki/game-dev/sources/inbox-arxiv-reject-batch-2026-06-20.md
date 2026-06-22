@@ -10,13 +10,12 @@ related:
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
   - sources/inbox-arxiv-reject-batch-2026-06-21.md
-  - sources/inbox-arxiv-reject-batch-2026-06-20.md
-  - sources/inbox-arxiv-reject-batch-2026-06-21.md
+  - sources/inbox-arxiv-reject-batch-2026-06-22.md
 read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-22
 ---
 
 ## Raw Concept

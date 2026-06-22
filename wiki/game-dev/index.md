@@ -119,6 +119,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [emerson-game-ai-pro-flow-field-tiles-2013](sources/emerson-game-ai-pro-flow-field-tiles-2013.md) | read |
 | [leifnode-flow-field-pathfinding-2013](sources/leifnode-flow-field-pathfinding-2013.md) | read |
 | [vav-labs-godot-flow-fields-2026](sources/vav-labs-godot-flow-fields-2026.md) | read |
+| [vav-labs-astargrid2d-gotchas-2026-06-22](sources/vav-labs-astargrid2d-gotchas-2026-06-22.md) | read |
 | [redblobgames-flow-field-pathfinding-2024](sources/redblobgames-flow-field-pathfinding-2024.md) | read |
 | [gamespy-stronghold-2-bradbury-qa-2004](sources/gamespy-stronghold-2-bradbury-qa-2004.md) | read |
 | [firefly-about-us-studio-history](sources/firefly-about-us-studio-history.md) | read |
@@ -201,4 +202,5 @@ Catalog of all wiki pages. Updated on each ingest.
 | [monsterfisch-conquest-aiv-phase-0-audit-2026-06-20](sources/monsterfisch-conquest-aiv-phase-0-audit-2026-06-20.md) | read |
 | [inbox-arxiv-reject-batch-2026-06-21](sources/inbox-arxiv-reject-batch-2026-06-21.md) | read |
 | [gamedevbench-phase-0-audit-2026-06-21](sources/gamedevbench-phase-0-audit-2026-06-21.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-22](sources/inbox-arxiv-reject-batch-2026-06-22.md) | read |
 | [ziva-godot-agent-phase-0-audit-2026-06-21](sources/ziva-godot-agent-phase-0-audit-2026-06-21.md) | read |
