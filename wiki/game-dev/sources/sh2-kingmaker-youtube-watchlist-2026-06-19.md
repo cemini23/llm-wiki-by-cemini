@@ -16,7 +16,7 @@ read_status: read
 source_type: youtube-transcript
 maturity: validated
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-23
 ---
 
 ## Raw Concept
@@ -79,6 +79,17 @@ Transcript archive (local session): `/tmp/sh2-kingmaker-yt-transcripts.json`
 | India map choke | `[UNKNOWN]` — no captions |
 | Beginners economy build order video | `[UNKNOWN]` — private |
 | Exact merc post UI / horse archer count | `[INFERRED]` from PvE voice lines |
+
+### Transcript retry (2026-06-23)
+
+Re-fetched via `youtube_transcript_api` 1.2.4 (instance API: `YouTubeTranscriptApi().fetch()`):
+
+| ID | Result |
+|----|--------|
+| 1NDb5LxGY1I | Still **private** — VideoUnplayable |
+| DBD-20osfiA | Still **subtitles disabled** — no auto-en track |
+
+No wiki delta; Heaven/Matt Logan fallback unchanged. Five successful transcripts from 2026-06-19 remain canonical for `[OBSERVED-YT]` Kingmaker rows.
 
 ## Snippets
 

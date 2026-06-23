@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-23] ingest | YouTube watchlist transcript sweep
+
+- Transcript retry: all pending watchlist IDs via `youtube_transcript_api` 1.2.4
+- SH2 parity @sources/sh2-youtube-parity-watchlist-2026-06-17.md — **7/7** (unchanged, prior session)
+- Kingmaker @sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md — **5/7**; `1NDb5LxGY1I` still private, `DBD-20osfiA` still no subs
+- Godot RTS @sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md — `9TVAnK6bRPs` **premiere ~2026-06-24**; pre-transcript metadata + reject list; retry checklist added
+- Brief/docs: `briefs/research/godot-rts-rpg-youtube-watchlist.md`; synced → `castle-sim/briefs/research/` + `docs/playtest/godot-rts-rpg-youtube-watchlist.md`
+- Archive: `/tmp/godot-rts-yt-transcripts.json`
+
+---
+
 ## [2026-06-23] ingest | Inbox re-drop + GDQuest glossary + RTS YouTube shelf
 
 - Inbox: 4 arXiv re-drops → @sources/inbox-arxiv-reject-batch-2026-06-23.md; archived; inbox cleared
