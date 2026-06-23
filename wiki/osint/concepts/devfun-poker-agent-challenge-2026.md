@@ -28,6 +28,7 @@ related:
   - concepts/garip-running-average-self-play.md
   - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
+  - meta/sandbox-season-harvest-cadence.md
 maturity: validated
 created: 2026-06-18
 updated: 2026-06-23

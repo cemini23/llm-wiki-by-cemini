@@ -8,6 +8,7 @@ related:
   - concepts/multi-agent-fictitious-play-llm.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/devfun-poker-agent-challenge-2026.md
+  - meta/sandbox-season-harvest-cadence.md
   - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
   - concepts/active-project-research-routing.md
 maturity: draft
@@ -19,6 +20,7 @@ updated: 2026-06-23
 
 - @sources/arxiv-garip-self-play-2606.22688-2026-06-23.md — primary source (Savcı)
 - @concepts/multi-agent-fictitious-play-llm.md — K124 fictitious-play cluster (orthogonal axis: stance vs gradient magnet)
+- @meta/sandbox-season-harvest-cadence.md — post-10k harvest for offline GARIP/chart iteration
 
 ## Raw Concept
 

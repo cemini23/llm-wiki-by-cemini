@@ -168,13 +168,16 @@ run_summary "$SELFPLAY_TRAJ_FOR_GATE" "$BUNDLE_DIR" 1
 
 if [[ -n "${ARENA_RESEARCHER_COMP_ID:-}" ]]; then
   echo "==> Arena trajectory pull (ARENA_RESEARCHER_COMP_ID)"
-  ./scripts/export_researcher_trajectory.sh \
+  if ./scripts/export_researcher_trajectory.sh \
     --competition-id "$ARENA_RESEARCHER_COMP_ID" \
-    --out-dir "${BUNDLE_DIR}/arena"
-  uv run python examples/researcher_trajectory_summary.py \
-    --selfplay "$SELFPLAY_TRAJ_FOR_GATE" \
-    --export-dir "${BUNDLE_DIR}/arena/arena-export" \
-    --out-dir "$BUNDLE_DIR"
+    --out-dir "${BUNDLE_DIR}/arena"; then
+    uv run python examples/researcher_trajectory_summary.py \
+      --selfplay "$SELFPLAY_TRAJ_FOR_GATE" \
+      --export-dir "${BUNDLE_DIR}/arena/arena-export" \
+      --out-dir "$BUNDLE_DIR"
+  else
+    echo "WARN: Arena export skipped — comp may have no recent-tables yet (bundle submit path OK)"
+  fi
 fi
 
 echo ""

@@ -378,6 +378,9 @@ def try_preflop(
         raise_threshold = min(raise_threshold, bet_open_threshold)
 
     if call_amount > 0 and not open_spot:
+        # HU BB: defer to research_static_chart + S1B defend (gin score floors over-fold).
+        if hu and position == "BB":
+            return None
         hu_raise_floor = raise_threshold - (14 if hu else 0)
         if "raise" in available and score >= hu_raise_floor:
             amount = _raise_amount(table, allowed, strong=score >= premium_threshold)

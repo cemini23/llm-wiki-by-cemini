@@ -1555,6 +1555,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [PTA backtest cadence](meta/pta-backtest-cadence.md) — `[CORE 2026-05-29]` PTA pilot gate; last run 2026-05-29 **FAIL** on stale ArcticDB slice. — meta, pta, backtest, quant
 - [WC LP safety DR cadence](meta/wc-lp-safety-cadence.md) — `[CORE 2026-05-30]` weekly Gemini team LP safety re-run through Cup; next 2026-06-06. — meta, world-cup, lp-safety, k84
 - [Wiki gap detect cadence](meta/wiki-gap-detect-cadence.md) — `[CORE 2026-05-30]` Tier 1 weekly report; descriptive only. — meta, wiki, gap-detect, k84
+- [Sandbox beta S1 season harvest cadence](meta/sandbox-season-harvest-cadence.md) — `[VALIDATED 2026-06-23]` post-10k Arena export + trajectory pull via `run_sandbox_season_harvest.sh`. — meta, poker, sandbox, researcher
 
 #### K80 ingest (2026-05-29 — Polymarket YouTube batch, 4 videos)
 

@@ -613,16 +613,41 @@ def decide(
     if exploit_gate and hud_mode == "maniac":
         hud_mode = "unknown"
     margins = hud.get("margins") or exploit_margins(hud_mode)
+    villain_archetype = (hud.get("archetype") or "").lower()
+    villain_vpip: float | None = None
+    for _vk in ("vpip", "VPIP"):
+        if hud.get(_vk) is not None:
+            villain_vpip = float(hud[_vk])
+            break
+    if villain_vpip is None:
+        _vstats = hud.get("stats") or {}
+        if isinstance(_vstats, dict) and _vstats.get("vpip") is not None:
+            villain_vpip = float(_vstats["vpip"])
     if _is_hu_table(table) and hud_mode_raw == "maniac":
-        margins = _merge_margins(
-            margins,
-            {
-                "bet_bar_delta": 0.10,
-                "call_margin_delta": -0.05,
-                "fold_slack_delta": -0.06,
-                "preflop_fold_margin_delta": -0.04,
-            },
+        hyper_maniac = villain_archetype != "linear_aggro" and (
+            villain_vpip is None or villain_vpip >= 0.48
         )
+        if hyper_maniac:
+            margins = _merge_margins(
+                margins,
+                {
+                    "bet_bar_delta": -0.08,
+                    "call_margin_delta": 0.04,
+                    "fold_slack_delta": 0.03,
+                    "preflop_fold_margin_delta": 0.02,
+                },
+            )
+        else:
+            # LAG / linear_aggro — call down for value; moderate pressure
+            margins = _merge_margins(
+                margins,
+                {
+                    "bet_bar_delta": -0.05,
+                    "call_margin_delta": -0.03,
+                    "fold_slack_delta": -0.04,
+                    "preflop_fold_margin_delta": -0.02,
+                },
+            )
     villain_mem = ctx.get("session_villain_memory") or {}
     if exploit_gate:
         mem_margins: dict[str, float] = {}
@@ -1577,6 +1602,8 @@ def decide(
             table=table, position=position, lead_protect=lead_protect,
             max_playable=max_playable,
             researcher_mode=bool(ctx.get("researcher_mix")),
+            villain_archetype=villain_archetype,
+            villain_vpip=villain_vpip,
         )
 
     if action_name in ("fold", "check", "call"):
@@ -3534,7 +3561,9 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
                          position: str = "",
                          lead_protect: bool = False,
                          max_playable: int | None = None,
-                         researcher_mode: bool = False) -> tuple[str, Optional[int]]:
+                         researcher_mode: bool = False,
+                         villain_archetype: str = "",
+                         villain_vpip: float | None = None) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     hole = hole or []
     board = board or []
@@ -3899,6 +3928,17 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
     if hud_mode == "rock" and not in_position and equity < rock_oop_eq and "fold" in available:
         fold_slack += 0.02
     raise_bar = 0.82 if in_position else 0.86
+    arch = (villain_archetype or "").lower()
+    hyper_maniac = hud_mode == "maniac" and arch != "linear_aggro" and (
+        villain_vpip is None or villain_vpip >= 0.48
+    )
+    lag_like = arch == "linear_aggro" or hud_mode == "lag" or (
+        hud_mode == "maniac" and not hyper_maniac
+    )
+    if hyper_maniac:
+        raise_bar -= 0.10
+    elif lag_like:
+        raise_bar -= 0.05
     if equity > raise_bar and allowed.get("canRaise") and "raise" in available:
         rr = allowed.get("raiseRange") or {}
         min_r = int(rr.get("min") or call_chips * 2)

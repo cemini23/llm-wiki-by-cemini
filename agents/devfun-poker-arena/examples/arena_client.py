@@ -27,7 +27,10 @@ from typing import Any, Optional
 import httpx
 
 
-DEFAULT_BASE = "https://b-arena.dev.fun/api/arena"
+DEFAULT_BASE = os.environ.get(
+    "ARENA_API_BASE",
+    "https://arena.dev.fun/api/arena",
+).rstrip("/")
 MOCK_BASE = "http://mock.local/api/arena"  # --dry-run rebinds to this
 CREDS_PATH = Path(os.environ.get("ARENA_CREDENTIALS_FILE", ".arena-credentials"))
 # Holds the previous creds while we attempt re-registration. Restored if

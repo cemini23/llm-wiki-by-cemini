@@ -26,8 +26,8 @@ from arena_client import ArenaClient, DEFAULT_BASE  # noqa: E402
 
 _AGENT_ROOT = _EXAMPLES.parent
 
-# Pin when Heads-Up PvP S3 is publicly joinable [NEEDS VERIFICATION 2026-06-22].
-HEADS_UP_PVP_S3_COMP_ID = "cmqnvili2002gwb82l1qba0gm"
+# Pin when Heads-Up PvP is publicly joinable [NEEDS VERIFICATION 2026-06-23].
+HEADS_UP_PVP_S3_COMP_ID = "cmqqqs05i1u7ppnu7stqbw7d8"
 
 
 def fetch_candidates(client: ArenaClient) -> list[dict[str, Any]]:

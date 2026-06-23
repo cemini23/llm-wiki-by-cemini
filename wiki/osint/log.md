@@ -1,6 +1,12 @@
 # Wiki Log
 
-## [2026-06-23] ingest | K127 inbox — 3 arXiv + 2 tool eval docx
+## [2026-06-23] ops | Sandbox beta S1 — super-audit fixes + season harvest cadence
+
+- **Poker agent:** HU sandbox exploit split (hyper-maniac vs LAG), gin BB defer, s1b 3-bet sizing, bundle submit tooling (`harness/`, `submit_sandbox_pvp.py`), arena API base fix
+- **Meta:** `@meta/sandbox-season-harvest-cadence.md` — `run_sandbox_season_harvest.sh` for 10k-hand pull
+- **Gate:** maniac + lag series_win 40% @ 200h (post-tune)
+- **Arena:** submission `59e6c951…` live; LAG-tuned bundle blocked by daily submit cap until UTC reset
+
 
 - **Sources (5):** Agentic Time Machine (2606.21013); GARIP self-play (2606.22688); AOHP harness (2606.23449); Cemini Tool Evaluation Plan (62 URLs); Hugging Face Model Evals (74 URLs)
 - **Concepts (3):** `@concepts/agentic-time-machine-forecasting-eval.md`, `@concepts/garip-running-average-self-play.md`, `@concepts/aohp-os-level-agent-harness.md`
