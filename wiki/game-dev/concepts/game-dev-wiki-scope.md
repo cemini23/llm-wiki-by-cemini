@@ -16,6 +16,7 @@ related:
   - concepts/rts-networking-deferred.md
   - sources/inbox-arxiv-reject-batch-2026-06-20.md
   - sources/inbox-arxiv-reject-batch-2026-06-22.md
+  - sources/inbox-arxiv-reject-batch-2026-06-23.md
   - sources/inbox-arxiv-reject-batch-2026-06-19.md
   - sources/inbox-arxiv-reject-batch-2026-06-16.md
   - sources/inbox-arxiv-reject-batch-2026-06-18.md

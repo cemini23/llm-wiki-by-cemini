@@ -203,4 +203,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-06-21](sources/inbox-arxiv-reject-batch-2026-06-21.md) | read |
 | [gamedevbench-phase-0-audit-2026-06-21](sources/gamedevbench-phase-0-audit-2026-06-21.md) | read |
 | [inbox-arxiv-reject-batch-2026-06-22](sources/inbox-arxiv-reject-batch-2026-06-22.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-23](sources/inbox-arxiv-reject-batch-2026-06-23.md) | read |
+| [gdquest-pathfinding-glossary-2026-06-23](sources/gdquest-pathfinding-glossary-2026-06-23.md) | read |
+| [godot-rts-rpg-youtube-watchlist-2026-06-23](sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md) | read |
 | [ziva-godot-agent-phase-0-audit-2026-06-21](sources/ziva-godot-agent-phase-0-audit-2026-06-21.md) | read |

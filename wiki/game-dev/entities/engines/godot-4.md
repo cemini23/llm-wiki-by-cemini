@@ -25,9 +25,11 @@ related:
   - sources/pchojecki-catvivors-claude-code-steam-2026.md
   - sources/vav-labs-godot-flow-fields-2026.md
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
+  - sources/gdquest-pathfinding-glossary-2026-06-23.md
+  - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-23
 ---
 
 ## Relations

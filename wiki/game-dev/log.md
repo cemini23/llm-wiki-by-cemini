@@ -4,6 +4,15 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-23] ingest | Inbox re-drop + GDQuest glossary + RTS YouTube shelf
+
+- Inbox: 4 arXiv re-drops → @sources/inbox-arxiv-reject-batch-2026-06-23.md; archived; inbox cleared
+- Sources: @sources/gdquest-pathfinding-glossary-2026-06-23.md, @sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+- Brief: `briefs/research/godot-rts-rpg-youtube-watchlist.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-23-daily.md
+
+---
+
 ## [2026-06-22] ingest | Inbox re-drop + vav_labs AStarGrid2D gotchas
 
 - Inbox: 5 arXiv re-drops → @sources/inbox-arxiv-reject-batch-2026-06-22.md (2606.20495 new reject); archived; inbox cleared

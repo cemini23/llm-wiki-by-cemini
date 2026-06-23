@@ -16,11 +16,13 @@ related:
   - sources/papierkorp-godot-4-tactical-movement-2023.md
   - sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
+  - sources/gdquest-pathfinding-glossary-2026-06-23.md
+  - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
   - entities/tools/binarytracking.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-22
+updated: 2026-06-23
 ---
 
 ## Relations
@@ -29,6 +31,7 @@ updated: 2026-06-22
 - @sources/shaggydev-tactics-engine-devlog-2023.md
 - @sources/shaggydev-udd-navigation-2025.md
 - @sources/vav-labs-astargrid2d-gotchas-2026-06-22.md — AStarGrid2D init + diagonal/JPS checklist
+- @sources/gdquest-pathfinding-glossary-2026-06-23.md — AStar vs NavigationRegion primer
 - @sources/arxiv-na-2026-binary-tracking-spatial-qa-2606.16902-2026-06-21.md — K125 binary segment search steal
 - @entities/tools/binarytracking.md
 

@@ -11,13 +11,14 @@ related:
   - entities/engines/godot-4.md
   - entities/projects/castle-sim.md
   - sources/inbox-arxiv-reject-batch-2026-06-22.md
+  - sources/gdquest-pathfinding-glossary-2026-06-23.md
   - meta/cross-wiki-routing.md
 read_status: read
 source_type: web-article
 source_url: https://dev.to/vav_labs/astargrid2d-in-godot-4-the-gotchas-and-an-interactive-sandbox-3dl8
 maturity: validated
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-06-23
 ---
 
 ## Raw Concept

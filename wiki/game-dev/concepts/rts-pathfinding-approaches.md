@@ -14,6 +14,8 @@ related:
   - sources/exa-flowfields-firefly-batch-2026-06-13.md
   - sources/vav-labs-godot-flow-fields-2026.md
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
+  - sources/gdquest-pathfinding-glossary-2026-06-23.md
+  - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
   - concepts/agentic-pcg-level-design.md
   - concepts/scope-tiers.md
   - sources/shaggydev-tactics-engine-devlog-2023.md
