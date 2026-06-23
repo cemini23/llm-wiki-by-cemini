@@ -143,6 +143,27 @@ def _hole_key(hole: list[str]) -> str:
     return "".join(str(c) for c in hole)
 
 
+def _legal_available_actions(allowed: dict) -> list[str]:
+    """Action names for trajectory bound — never pass raw allowedActions flags dict."""
+    explicit = allowed.get("availableActions")
+    if explicit:
+        return list(explicit)
+    out: list[str] = []
+    if allowed.get("canFold"):
+        out.append("fold")
+    if allowed.get("canCheck"):
+        out.append("check")
+    if allowed.get("canCall"):
+        out.append("call")
+    if allowed.get("canBet"):
+        out.append("bet")
+    if allowed.get("canRaise"):
+        out.append("raise")
+    if allowed.get("canAllIn"):
+        out.append("all-in")
+    return out
+
+
 def _apply_trajectory_bound_veto(
     table: dict,
     allowed: dict,
@@ -169,16 +190,17 @@ def _apply_trajectory_bound_veto(
         "board": board,
         "equity": equity,
         "sims": sims,
-        "available_actions": allowed.get("availableActions") or [],
+        "available_actions": _legal_available_actions(allowed),
         "matches_regression_forbidden": False,
     }
     contrib = contribution_from_features(features, cfg)
     _TRAJECTORY_BOUND_STATE = propagate(_TRAJECTORY_BOUND_STATE, contrib)
-    veto = evaluate_veto(_TRAJECTORY_BOUND_STATE, allowed, cfg)
+    legal_available = _legal_available_actions(allowed)
+    veto = evaluate_veto(_TRAJECTORY_BOUND_STATE, legal_available, cfg)
     if not veto.veto:
         return out
     safe = safest_legal_action(
-        allowed,
+        legal_available,
         cfg,
         regression_oracle_action=str(out.get("action") or ""),
     )
