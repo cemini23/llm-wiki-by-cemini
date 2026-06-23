@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-23 — K127)
+
+- **K127 ingest (2026-06-23)** — Full ingest: 3 arXiv + 2 tool eval docx from inbox. **5 sources + 3 concepts + 2 entities + 5 updates.** Agentic Time Machine (2606.21013) REFERENCE — PM offline eval + leakage filter; GARIP (2606.22688) REFERENCE — running-average self-play magnet → poker; AOHP (2606.23449) CONDITIONAL-GO — Apache-2.0 OS harness → CCC; Cemini Tool Eval (62 URL) — sportsdataverse-py Adopt MIT; HF Model Evals (74 URL) — 52 UNAVAILABLE, Poker_LORA steal. **Phase-0:** `adopt_k127_phase0.sh`. **Briefs (4):** poker GARIP; pm Agentic TM; CeminiDFS sportsdataverse; CCC AOHP. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-22 — K126)
 
 - **K126 ingest (2026-06-22)** — Full ingest: links.docx (146 URLs, collapsed table export) + arXiv 2606.20495 continuum robots. **2 sources + 2 concepts + 2 entities + 1 update.** links.docx: 2 Adopt (mattpocock MIT; nvidia dual-license → CONDITIONAL-GO), 18 Steal-from (ClarusC64 NFL coherence suite), 83 Reject aggregated. Continuum robots REFERENCE — AHP+GA path diversity → castle-sim. **Phase-0:** `adopt_k126_phase0.sh`. **Briefs (4):** CeminiDFS coherence-risk; castle-sim path planning; poker Kuhn SFT reference; CCC skills adopt. Archive → egress-fi; inbox cleared.

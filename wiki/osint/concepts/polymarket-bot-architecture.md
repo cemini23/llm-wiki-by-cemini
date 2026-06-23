@@ -78,10 +78,12 @@ related:
   - sources/clean-room-design-proprietary-software-2026-05-28.md
   - entities/tools/polygnosis.md
   - sources/polygnosis-2-polymarket-osint-2026-06-01.md
+  - concepts/agentic-time-machine-forecasting-eval.md
+  - sources/arxiv-agentic-time-machine-2606.21013-2026-06-23.md
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-06-04
+updated: 2026-06-23
 ---
 
 ## Relations

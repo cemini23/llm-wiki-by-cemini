@@ -35,7 +35,7 @@ updated: 2026-06-20
 | Field | Value |
 |-------|-------|
 | **Cadence** | Daily — Exa papers (wiki-deduped) → inbox PDFs + news digest (no wiki ingest) |
-| **Last run** | 2026-06-21 |
+| **Last run** | 2026-06-23 |
 | **Script** | `cemini-daily-research-digest` (or `bash scripts/run_daily_research_digest.sh` from repo) |
 | **Config** | `scripts/daily_research_config.yaml` |
 | **Report** | `wiki/sweeps/YYYY-MM-DD-daily.md` |

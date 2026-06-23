@@ -5,18 +5,21 @@ tags: [concept, llm-agents, game-theory, poker, k124]
 keywords: [MAFP, fictitious play, stance entanglement, tournament strength, robustness]
 related:
   - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
+  - concepts/garip-running-average-self-play.md
+  - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/team-zero-sum-games-complexity.md
   - concepts/extensive-form-games-stochastic-action-sets.md
   - concepts/devfun-researcher-track-readiness-2026-06.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-23
 ---
 
 ## Relations
 
 - @sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md — primary source (Shen et al., NUS)
+- @concepts/garip-running-average-self-play.md — K127 gradient self-play magnet (orthogonal to MAFP stance play)
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — multi-stakeholder poker eval
 - @concepts/devfun-researcher-track-readiness-2026-06.md — Researcher Round target
 

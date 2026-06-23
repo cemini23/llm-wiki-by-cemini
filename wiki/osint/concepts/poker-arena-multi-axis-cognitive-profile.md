@@ -23,9 +23,11 @@ related:
   - concepts/non-markov-belief-state-benchmarks.md
   - concepts/probabilistic-agent-policy-verification.md
   - concepts/kuhn-poker-sft-curriculum-reference.md
+  - concepts/garip-running-average-self-play.md
+  - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-22
+updated: 2026-06-23
 ---
 
 ## Relations

@@ -17,10 +17,11 @@ related:
   - sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md
   - concepts/castle-sim-pathfinding-steals.md
   - concepts/kuhn-poker-sft-curriculum-reference.md
+  - sources/huggingface-model-evals-74url-2026-06-23.md
 maturity: validated
 read_status: deep-read
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-06-23
 ---
 
 ## Relations

@@ -22,9 +22,14 @@ related:
   - concepts/castle-sim-pathfinding-steals.md
   - concepts/kuhn-poker-sft-curriculum-reference.md
   - sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md
+  - sources/cemini-tool-evaluation-plan-62url-2026-06-23.md
+  - sources/huggingface-model-evals-74url-2026-06-23.md
+  - entities/tools/sportsdataverse-py.md
+  - concepts/garip-running-average-self-play.md
+  - concepts/agentic-time-machine-forecasting-eval.md
 maturity: core
 created: 2026-06-17
-updated: 2026-06-22
+updated: 2026-06-23
 ---
 
 ## Relations

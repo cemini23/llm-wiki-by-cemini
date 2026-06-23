@@ -64,10 +64,14 @@ related:
   - sources/links-6-22-tool-eval.md
   - entities/tools/nvidia-skills.md
   - entities/tools/mattpocock-skills.md
+  - sources/cemini-tool-evaluation-plan-62url-2026-06-23.md
+  - sources/huggingface-model-evals-74url-2026-06-23.md
+  - entities/tools/sportsdataverse-py.md
+  - entities/tools/aohp-os.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-06-22
+updated: 2026-06-23
 ---
 
 ## Relations

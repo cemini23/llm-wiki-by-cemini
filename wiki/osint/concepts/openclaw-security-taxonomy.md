@@ -22,9 +22,12 @@ related:
   - entities/tools/claw-swe-bench.md
   - concepts/claw-swe-bench-harness-evaluation.md
   - sources/arxiv-claw-swe-bench-2606.12344-2026-06-16.md
+  - sources/arxiv-aohp-os-agent-harness-2606.23449-2026-06-23.md
+  - sources/huggingface-model-evals-74url-2026-06-23.md
+  - concepts/aohp-os-level-agent-harness.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-06-16
+updated: 2026-06-23
 ---
 
 ## Relations

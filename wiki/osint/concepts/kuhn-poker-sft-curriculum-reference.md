@@ -11,9 +11,10 @@ related:
   - concepts/probabilistic-agent-policy-verification.md
   - concepts/active-project-research-routing.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
+  - sources/huggingface-model-evals-74url-2026-06-23.md
 maturity: validated
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-06-23
 ---
 
 ## Relations

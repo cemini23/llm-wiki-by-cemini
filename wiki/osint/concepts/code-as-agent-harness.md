@@ -31,10 +31,13 @@ related:
   - concepts/claw-swe-bench-harness-evaluation.md
   - entities/tools/claw-swe-bench.md
   - sources/arxiv-harnessfix-trace-repair-2606.06324-2026-06-16.md
+  - sources/arxiv-aohp-os-agent-harness-2606.23449-2026-06-23.md
+  - concepts/aohp-os-level-agent-harness.md
+  - entities/tools/aohp-os.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-06-16
+updated: 2026-06-23
 ---
 
 ## Relations

@@ -12,9 +12,11 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - sources/arxiv-polymarket-fill-side-2605-11640.md
   - entities/tools/polymarket-insider-tracker.md
+  - concepts/agentic-time-machine-forecasting-eval.md
+  - sources/arxiv-agentic-time-machine-2606.21013-2026-06-23.md
 maturity: draft
 created: 2026-05-23
-updated: 2026-05-23
+updated: 2026-06-23
 clusters: [polymarket, market-microstructure]
 ---
 

@@ -8,10 +8,12 @@ related:
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/team-zero-sum-games-complexity.md
   - concepts/extensive-form-games-stochastic-action-sets.md
+  - concepts/garip-running-average-self-play.md
+  - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
 maturity: draft
 read_status: read
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-23
 clusters: [llm-agents, rl-marl]
 ---
 

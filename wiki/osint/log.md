@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-06-23] ingest | K127 inbox — 3 arXiv + 2 tool eval docx
+
+- **Sources (5):** Agentic Time Machine (2606.21013); GARIP self-play (2606.22688); AOHP harness (2606.23449); Cemini Tool Evaluation Plan (62 URLs); Hugging Face Model Evals (74 URLs)
+- **Concepts (3):** `@concepts/agentic-time-machine-forecasting-eval.md`, `@concepts/garip-running-average-self-play.md`, `@concepts/aohp-os-level-agent-harness.md`
+- **Entities (2):** `@entities/tools/sportsdataverse-py.md` (Adopt MIT), `@entities/tools/aohp-os.md` (CONDITIONAL-GO Apache-2.0)
+- **Updates:** `@concepts/multi-agent-fictitious-play-llm.md`, `@concepts/polymarket-bot-architecture.md`, `@concepts/llm-agent-systems.md`, `@concepts/code-as-agent-harness.md`, `@concepts/wiki-tooling-evaluation.md`
+- **Phase-0:** `scripts/adopt_k127_phase0.sh`
+- **Briefs (4):** poker GARIP magnet; pm Agentic TM eval; CeminiDFS sportsdataverse-py; CCC AOHP secure interfaces
+- **Archive:** 5 inbox files → egress-fi; inbox cleared
+
 ## [2026-06-22] query | Researcher pre-launch polish (K125 P1 + MAFP + HU PvP S3 stub)
 
 - **Entity:** `@entities/platforms/devfun-heads-up-pvp-s3.md` — `cmqnvili2002gwb82l1qba0gm` [NEEDS VERIFICATION 2026-06-22]

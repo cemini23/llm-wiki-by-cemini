@@ -12,6 +12,8 @@ related:
   - entities/tools/centpro.md
   - entities/tools/firecrawl.md
   - entities/platforms/polymarket.md
+  - concepts/agentic-time-machine-forecasting-eval.md
+  - sources/arxiv-agentic-time-machine-2606.21013-2026-06-23.md
   - sources/youtube-kalshi-bots-batch-2026-05-29.md
   - entities/tools/momentum-odds.md
   - entities/platforms/kalshi.md
@@ -19,7 +21,7 @@ related:
   - sources/polygnosis-2-polymarket-osint-2026-06-01.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-06-01
+updated: 2026-06-23
 clusters: [polymarket, agents, sports]
 ---
 

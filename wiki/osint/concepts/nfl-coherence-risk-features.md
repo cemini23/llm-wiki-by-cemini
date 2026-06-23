@@ -5,16 +5,19 @@ tags: [concept, nfl, dfs, ceminidfs, feature-engineering, gambling, k126]
 keywords: [clarusc64, coherence-risk, playcall, pass-protection, nflverse, stage-2-features, ceminidfs]
 related:
   - sources/links-6-22-tool-eval.md
+  - sources/cemini-tool-evaluation-plan-62url-2026-06-23.md
+  - entities/tools/sportsdataverse-py.md
   - concepts/active-project-research-routing.md
   - "@gambling-wiki/concepts/diy-nfl-dfs-model-architecture.md"
 maturity: draft
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-06-23
 ---
 
 ## Relations
 
 - @sources/links-6-22-tool-eval.md — K126 tool eval URLs 30–39 (10× MIT ClarusC64 datasets + Karmane rest/travel sample)
+- @entities/tools/sportsdataverse-py.md — K127 Adopt fetch client (MIT); optional nflverse-adjacent ingestion
 - @gambling-wiki/concepts/diy-nfl-dfs-model-architecture.md — CeminiDFS canonical pipeline architecture (stage 2 projection layer); bidirectional K126 backlink
 
 ## Raw Concept
