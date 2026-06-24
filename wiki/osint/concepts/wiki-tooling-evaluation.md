@@ -68,10 +68,12 @@ related:
   - sources/huggingface-model-evals-74url-2026-06-23.md
   - entities/tools/sportsdataverse-py.md
   - entities/tools/aohp-os.md
+  - sources/tool-eval-metaplan-81url-2026-06-24.md
+  - entities/tools/bbmod.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-06-23
+updated: 2026-06-24
 ---
 
 ## Relations

@@ -20,6 +20,8 @@ related:
   - entities/tools/polymarket-gamma-api.md
   - entities/tools/ai-polymarket-agent.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/cl-amm-dynamic-fees-lvr.md
+  - sources/arxiv-cl-amm-dynamic-fees-lvr-2606.23070-2026-06-24.md
   - concepts/polymarket-lp-weather-market-discovery.md
   - concepts/polymarket-lp-weather-guard.md
   - concepts/lp-algorithm-live-promotion-gates.md
@@ -35,7 +37,7 @@ related:
   - sources/trading-posts-compilation-7-2026-06-09.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-06-09
+updated: 2026-06-24
 clusters: [polymarket, market-making, yield-farming]
 ---
 

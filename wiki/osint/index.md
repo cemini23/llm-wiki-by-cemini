@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **444 canonical stubs** (HU PvP S3 entity + researcher pre-launch polish)
+Total: **448 canonical stubs** (K128 ingest +4 sources)
 
 
 ### rl-marl (104)
@@ -140,6 +140,10 @@ Total: **444 canonical stubs** (HU PvP S3 entity + researcher pre-launch polish)
 - [Agentic Time Machine — future-event forecasting (2606.21013)](sources/arxiv-agentic-time-machine-2606.21013-2026-06-23.md) — K127 REFERENCE; TM leakage-filter replay + planner-solver-aggregator; Polymarket offline eval steal. — `pdf` [+arxiv, +prediction-markets, +k127]
 - [GARIP running-average self-play (2606.22688)](sources/arxiv-garip-self-play-2606.22688-2026-06-23.md) — K127 REFERENCE; Polyak magnet vs R-NaD snapshot; poker HU chart anchor. — `pdf` [+arxiv, +game-theory, +k127]
 - [AOHP OS-level agent harness (2606.23449)](sources/arxiv-aohp-os-agent-harness-2606.23449-2026-06-23.md) — K127 CONDITIONAL-GO repo Apache-2.0; AOSP agent-native patterns → CCC. — `pdf` [+arxiv, +agent-harness, +k127]
+- [IPO Finance Agent eval (2606.23032)](sources/arxiv-ipo-finance-agent-2606.23032-2026-06-24.md) — K128 REFERENCE; S-1 contextual retrieval + rubric evaluator-optimizer; wiki-only. — `pdf` [+arxiv, +llm-agents, +k128]
+- [CL-AMM dynamic fees vs LVR (2606.23070)](sources/arxiv-cl-amm-dynamic-fees-lvr-2606.23070-2026-06-24.md) — K128 REFERENCE; Uniswap v3 ABM; pm LP toxicity steal. — `pdf` [+arxiv, +market-microstructure, +k128]
+- [Square-root law AAPL (2606.24019)](sources/arxiv-square-root-law-aapl-2606.24019-2026-06-24.md) — K128 REFERENCE; anonymous ITCH metaorders; pm √Q/V sizing. — `pdf` [+arxiv, +market-microstructure, +k128]
+- [Tool Evaluation Metaplan.docx — 81 URLs (2026-06-24)](sources/tool-eval-metaplan-81url-2026-06-24.md) — K128; 1 Adopt BBMOD MIT (game-dev); CeminiDFS duplicates Reference-only. — `docx` [+tool-evaluation, +k128]
 - [Cemini Tool Evaluation Plan.docx — 62 URLs (2026-06-23)](sources/cemini-tool-evaluation-plan-62url-2026-06-23.md) — K127; 1 Adopt sportsdataverse-py MIT, 42 Reject, 16 Reference-only. — `docx` [+tool-evaluation, +k127]
 - [Hugging Face Model Evals.docx — 74 URLs (2026-06-23)](sources/huggingface-model-evals-74url-2026-06-23.md) — K127; 52 UNAVAILABLE, MARSHAL Kuhn Reject NO LICENSE, Poker_LORA steal. — `docx` [+tool-evaluation, +poker, +k127]
 - [links 2 5_4 — Primary Software Repositories Evaluation (14 candidates)](sources/links-2-5-4-tool-eval.md) — Cemini-internal evaluation of 14 candidates 2026-05-04. 4 Adopt (codegraph, leaf, Riskfolio-Lib, FinanceToolkit), 2 Steal-from (agentic-soc-platform Redis+LangGraph, atlas-gic autoresearch loop), 3 Reference-only (shannon, repowise, QuantConnect/Lean), 2 Defer (Lumibot dual-license MIT-vs-GPL, yfinance polygon-doctrine), 3 Reject. New dual-license-ambiguity license pattern surfaced. — `docx` [+audit-security, +license-compliance, +financial-research, +cemini-internal]

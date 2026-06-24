@@ -8,9 +8,9 @@ related:
   - entities/tools/agentbeats.md
   - concepts/llm-agent-systems.md
   - concepts/code-as-agent-harness.md
-maturity: draft
-created: 2026-06-12
-updated: 2026-06-12
+  - concepts/ipo-finance-agent-benchmark.md
+  - sources/arxiv-ipo-finance-agent-2606.23032-2026-06-24.md
+updated: 2026-06-24
 ---
 
 ## Relations

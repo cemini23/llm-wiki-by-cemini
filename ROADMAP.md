@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-24 — K128)
+
+- **K128 ingest (2026-06-24)** — Full ingest: 3 arXiv + Metaplan tool eval docx from inbox. **4 sources + 3 concepts + 1 entity + 4 updates.** IPO Finance Agent (2606.23032) REFERENCE — automated rubric eval wiki-only; CL-AMM LVR (2606.23070) REFERENCE → pm LP toxicity steal; square-root law AAPL (2606.24019) REFERENCE → pm √Q/V sizing; Metaplan eval — BBMOD Adopt MIT (game-dev, not castle-sim). **Phase-0:** `adopt_k128_phase0.sh`. **Briefs (3):** pm LVR; pm SRL; game-dev BBMOD. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-23 — K127)
 
 - **K127 ingest (2026-06-23)** — Full ingest: 3 arXiv + 2 tool eval docx from inbox. **5 sources + 3 concepts + 2 entities + 5 updates.** Agentic Time Machine (2606.21013) REFERENCE — PM offline eval + leakage filter; GARIP (2606.22688) REFERENCE — running-average self-play magnet → poker; AOHP (2606.23449) CONDITIONAL-GO — Apache-2.0 OS harness → CCC; Cemini Tool Eval (62 URL) — sportsdataverse-py Adopt MIT; HF Model Evals (74 URL) — 52 UNAVAILABLE, Poker_LORA steal. **Phase-0:** `adopt_k127_phase0.sh`. **Briefs (4):** poker GARIP; pm Agentic TM; CeminiDFS sportsdataverse; CCC AOHP. Archive → egress-fi; inbox cleared.

@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-06-24] ingest | K128 daily inbox — 3 arXiv + Metaplan tool eval
+
+- **Sources (4):** IPO Finance Agent (2606.23032); CL-AMM dynamic fees / LVR (2606.23070); square-root law AAPL (2606.24019); Tool Evaluation Analysis Metaplan.docx (81 URLs)
+- **Concepts (3):** `@concepts/ipo-finance-agent-benchmark.md`, `@concepts/cl-amm-dynamic-fees-lvr.md`, `@concepts/square-root-law-market-impact.md`
+- **Entities (1):** `@entities/tools/bbmod.md` (Adopt MIT — game-dev only; NO-GO castle-sim Godot)
+- **Updates:** `@concepts/polymarket-bot-architecture.md`, `@concepts/polymarket-lp-rewards-farming.md`, `@concepts/llm-agent-systems.md`, `@concepts/wiki-tooling-evaluation.md`
+- **Phase-0:** `scripts/adopt_k128_phase0.sh` — BBMOD MIT confirmed; pydfs duplicate CeminiDFS
+- **Briefs (3):** pm LVR toxicity gate; pm SRL clip sizing; @game-dev-wiki BBMOD reference (cross-wiki)
+- **Archive:** 4 inbox files → egress-fi; inbox cleared
+
 ## [2026-06-23] ops | Sandbox beta S1 — super-audit fixes + season harvest cadence
 
 - **Poker agent:** HU sandbox exploit split (hyper-maniac vs LAG), gin BB defer, s1b 3-bet sizing, bundle submit tooling (`harness/`, `submit_sandbox_pvp.py`), arena API base fix

@@ -12,10 +12,8 @@ related:
   - sources/huggingface-model-evals-74url-2026-06-23.md
   - concepts/active-project-research-routing.md
   - sources/arxiv-agentic-time-machine-2606.21013-2026-06-23.md
-maturity: draft
-read_status: deep-read
-created: 2026-06-23
-updated: 2026-06-23
+  - sources/tool-eval-metaplan-81url-2026-06-24.md
+updated: 2026-06-24
 ---
 
 ## Relations

@@ -27,9 +27,13 @@ related:
   - entities/tools/sportsdataverse-py.md
   - concepts/garip-running-average-self-play.md
   - concepts/agentic-time-machine-forecasting-eval.md
+  - entities/tools/bbmod.md
+  - sources/tool-eval-metaplan-81url-2026-06-24.md
+  - concepts/cl-amm-dynamic-fees-lvr.md
+  - concepts/square-root-law-market-impact.md
 maturity: core
 created: 2026-06-17
-updated: 2026-06-23
+updated: 2026-06-24
 ---
 
 ## Relations

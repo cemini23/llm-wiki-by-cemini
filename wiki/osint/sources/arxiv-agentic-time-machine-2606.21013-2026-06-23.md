@@ -12,6 +12,8 @@ related:
   - sources/cemini-tool-evaluation-plan-62url-2026-06-23.md
   - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
   - sources/arxiv-aohp-os-agent-harness-2606.23449-2026-06-23.md
+  - sources/arxiv-ipo-finance-agent-2606.23032-2026-06-24.md
+  - concepts/ipo-finance-agent-benchmark.md
 maturity: draft
 read_status: read
 created: 2026-06-23

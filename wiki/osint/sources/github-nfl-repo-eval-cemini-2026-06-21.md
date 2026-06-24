@@ -11,10 +11,8 @@ related:
   - concepts/polymarket-bot-architecture.md
   - sources/cemini-tool-evaluation-plan-62url-2026-06-23.md
   - entities/tools/sportsdataverse-py.md
-maturity: draft
-read_status: deep-read
-created: 2026-06-21
-updated: 2026-06-23
+  - sources/tool-eval-metaplan-81url-2026-06-24.md
+updated: 2026-06-24
 clusters: [cemini-internal]
 ---
 

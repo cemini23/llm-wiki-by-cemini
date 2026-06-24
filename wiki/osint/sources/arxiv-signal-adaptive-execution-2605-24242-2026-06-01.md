@@ -9,9 +9,9 @@ related:
   - concepts/polymarket-microstructure-findings.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - sources/arxiv-alphaforgebench-2602-18481-2026-06-01.md
-maturity: draft
-read_status: read
-created: 2026-06-01
+  - concepts/square-root-law-market-impact.md
+  - sources/arxiv-square-root-law-aapl-2606.24019-2026-06-24.md
+updated: 2026-06-24
 updated: 2026-06-01
 clusters: [quant-finance, market-microstructure]
 ---

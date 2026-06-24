@@ -12,10 +12,9 @@ related:
   - concepts/partial-observation-stochastic-control.md
   - sources/arxiv-dpg-time-inconsistent-equilibrium-2606.11798-2026-06-16.md
   - concepts/time-inconsistent-stochastic-control.md
-maturity: validated
-read_status: deep-read
-created: 2026-06-10
-updated: 2026-06-16
+  - concepts/square-root-law-market-impact.md
+  - sources/arxiv-square-root-law-aapl-2606.24019-2026-06-24.md
+updated: 2026-06-24
 ---
 
 ## Relations

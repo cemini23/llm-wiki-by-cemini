@@ -80,10 +80,15 @@ related:
   - sources/polygnosis-2-polymarket-osint-2026-06-01.md
   - concepts/agentic-time-machine-forecasting-eval.md
   - sources/arxiv-agentic-time-machine-2606.21013-2026-06-23.md
+  - concepts/cl-amm-dynamic-fees-lvr.md
+  - concepts/square-root-law-market-impact.md
+  - sources/arxiv-cl-amm-dynamic-fees-lvr-2606.23070-2026-06-24.md
+  - sources/arxiv-square-root-law-aapl-2606.24019-2026-06-24.md
+  - sources/tool-eval-metaplan-81url-2026-06-24.md
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-06-23
+updated: 2026-06-24
 ---
 
 ## Relations
@@ -118,6 +123,8 @@ updated: 2026-06-23
 - `@concepts/polymarket-btc-already-position-gate.md` — K62 synthesized pattern
 - `@sources/alterego-eth-five-weather-methodologies-2026-05-27.md` — K70 weather-specific strategy taxonomy (types 1–2 ↔ this engineering playbook)
 - `@concepts/polymarket-weather-bot-methodology-taxonomy.md` — K70 five-type framework
+- `@concepts/cl-amm-dynamic-fees-lvr.md` — K128 LVR + dynamic fee compensation framing for LP modules
+- `@concepts/square-root-law-market-impact.md` — K128 √Q/V clip sizing for thin CLOB books
 
 ## Raw Concept
 

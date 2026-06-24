@@ -8,10 +8,9 @@ related:
   - concepts/event-based-prediction-market-ml.md
   - concepts/quant-finance.md
   - concepts/llm-agent-systems.md
-maturity: draft
-read_status: read
-created: 2026-06-16
-updated: 2026-06-16
+  - concepts/cl-amm-dynamic-fees-lvr.md
+  - sources/arxiv-cl-amm-dynamic-fees-lvr-2606.23070-2026-06-24.md
+updated: 2026-06-24
 clusters: [quant-finance, crypto, prediction-markets]
 ---
 
