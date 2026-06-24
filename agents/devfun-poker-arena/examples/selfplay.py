@@ -484,6 +484,14 @@ def play_one_hand(decide_fn: Callable, opponents: list[Callable],
             action = {"action": "fold"}
         if trajectory is not None and actor == hero_idx:
             hero_step += 1
+            # K125 P2: collect telemetry from cemini_decide if available
+            telemetry = None
+            if fn.__module__ == "cemini_decide":
+                try:
+                    from cemini_decide import get_trajectory_bound_telemetry  # noqa: WPS433
+                    telemetry = get_trajectory_bound_telemetry()
+                except Exception:
+                    pass
             trajectory.append(_hero_trajectory_row(
                 hand_id=hand_id,
                 step=hero_step,
@@ -491,6 +499,7 @@ def play_one_hand(decide_fn: Callable, opponents: list[Callable],
                 action=action,
                 n_players=n,
                 big_blind=big_blind,
+                telemetry=telemetry,
             ))
         _apply_action(state, action, big_blind)
         steps += 1
@@ -513,8 +522,13 @@ def _hero_trajectory_row(
     action: dict,
     n_players: int,
     big_blind: int,
+    telemetry: Optional[dict] = None,
 ) -> dict:
-    """One hero decision for Researcher Round trajectory export."""
+    """One hero decision for Researcher Round trajectory export.
+
+    Args:
+        telemetry: Optional telemetry dict from cemini_decide.get_trajectory_bound_telemetry()
+    """
     aa = table.get("allowedActions") or {}
     reasoning = str(action.get("reasoning") or "")
     pos = "?"
@@ -537,7 +551,7 @@ def _hero_trajectory_row(
     pot = int(table.get("potChips") or 0)
     amt = action.get("amount")
     bet_bucket = _bet_size_bucket(action.get("action"), amt, pot, big_blind)
-    return {
+    row: dict = {
         "record_type": "decision",
         "hand_id": hand_id,
         "step": step,
@@ -553,6 +567,12 @@ def _hero_trajectory_row(
         "reasoning": reasoning[:180],
         "hole_key": hole_key,
     }
+    # K125 P2 Memory-Gap telemetry (only when using cemini_decide)
+    if telemetry:
+        row["session_memory_on"] = telemetry.get("session_memory_on")
+        row["trajectory_bound_risk"] = telemetry.get("cumulative_risk")
+        row["trajectory_bound_veto"] = telemetry.get("veto_applied")
+    return row
 
 
 def _bet_size_bucket(

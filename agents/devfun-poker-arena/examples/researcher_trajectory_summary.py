@@ -98,6 +98,51 @@ def _allowed_cards(hole_key: str, board: list[str] | None = None) -> set[str]:
     return allowed
 
 
+def compute_memory_gap(decisions: list[dict]) -> dict:
+    """Compute memory-gap statistics for trajectory analysis.
+
+    Heuristic:
+    - bound_veto_memory_off: veto applied when session_memory_on is False
+    - misdecide_memory_on: veto applied when session_memory_on is True OR
+      high hallucination rate when memory is off
+
+    Returns dict with counts:
+    - bound_veto_total: total vetoes
+    - bound_veto_memory_off: vetoes when memory was off
+    - misdecide_memory_on: mis-decisions (veto when memory on)
+    """
+    if not decisions:
+        return {
+            "bound_veto_total": 0,
+            "bound_veto_memory_off": 0,
+            "misdecide_memory_on": 0,
+        }
+
+    bound_veto_total = 0
+    bound_veto_memory_off = 0
+    misdecide_memory_on = 0
+
+    for d in decisions:
+        veto = bool(d.get("trajectory_bound_veto"))
+        memory_on = d.get("session_memory_on")
+        # Handle None case - default to True if telemetry missing
+        if memory_on is None:
+            continue
+
+        if veto:
+            bound_veto_total += 1
+            if not memory_on:
+                bound_veto_memory_off += 1
+            else:
+                misdecide_memory_on += 1
+
+    return {
+        "bound_veto_total": bound_veto_total,
+        "bound_veto_memory_off": bound_veto_memory_off,
+        "misdecide_memory_on": misdecide_memory_on,
+    }
+
+
 def compute_selfplay_axes(decisions: list[dict], results: list[dict]) -> dict[str, Any]:
     """Deterministic Raeth proxies on hero trajectory rows."""
     if not decisions:
@@ -271,6 +316,7 @@ def summarize_selfplay_trajectory(rows: list[dict]) -> dict[str, Any]:
     net = sum(int(r.get("chip_delta") or 0) for r in results)
     hands = len(results) or len({d.get("hand_id") for d in decisions})
     axes = compute_selfplay_axes(decisions, results)
+    memory_gap = compute_memory_gap(decisions)
 
     return {
         "source": "selfplay",
@@ -288,6 +334,7 @@ def summarize_selfplay_trajectory(rows: list[dict]) -> dict[str, Any]:
             int(d.get("n_players") or 0) for d in decisions
         ).most_common(1)[0][0] if decisions else None,
         "axes": axes,
+        "memory_gap": memory_gap,
     }
 
 
@@ -352,6 +399,9 @@ def build_manifest(
         "selfplay": selfplay_summary,
         "arena": arena_summary,
     }
+    # Include memory_gap block in axis_summary if available
+    if selfplay_summary and "memory_gap" in selfplay_summary:
+        manifest["memory_gap"] = selfplay_summary["memory_gap"]
     manifest["gate_failures"] = evaluate_gates(manifest)
     manifest["gate_pass"] = not manifest["gate_failures"]
     return manifest

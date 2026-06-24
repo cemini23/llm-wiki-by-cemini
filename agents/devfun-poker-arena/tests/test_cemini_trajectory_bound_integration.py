@@ -36,6 +36,30 @@ def _minimal_table(can_check: bool = True) -> dict:
     }
 
 
+def _minimal_bon_table() -> dict:
+    return {
+        "tableId": "tb_verifier_bon",
+        "street": "Flop",
+        "boardCards": ["Ah", "7d", "2c"],
+        "selfSeatNumber": 1,
+        "seats": [
+            {
+                "seatNumber": 1,
+                "holeCards": ["Ks", "Qh"],
+                "stackChips": 1000,
+            },
+            {"seatNumber": 2, "holeCards": [], "stackChips": 1000},
+        ],
+        "allowedActions": {
+            "availableActions": ["bet", "check", "fold"],
+            "canBet": True,
+            "canCheck": True,
+            "canFold": True,
+            "betRange": {"min": 25, "max": 200},
+        },
+    }
+
+
 def test_trajectory_bound_disabled_by_default():
     os.environ.pop("CEMINI_TRAJECTORY_BOUND", None)
     table = _minimal_table()
@@ -99,3 +123,53 @@ def test_trajectory_bound_veto_legacy_allowed_without_available_list():
     assert out["action"] not in ("actionhint", "callchips", "cancheck")
     os.environ.pop("CEMINI_TRAJECTORY_BOUND", None)
     cemini_decide._TRAJECTORY_BOUND_CFG = None
+
+
+def test_verifier_bon_optional_on_marginal_postflop():
+    table = _minimal_bon_table()
+    allowed = table["allowedActions"]
+    cfg = cemini_decide.BoundConfig(
+        veto_threshold=1.0,
+        composition_mode="union",
+        river_bluff_floor=0.60,
+        m8_factual_u=0.0,
+        legality_u=0.0,
+        regression_forbidden_u=0.0,
+        axis_floor_u=0.0,
+        unknown_equity_u=0.0,
+    )
+    try:
+        os.environ["CEMINI_TRAJECTORY_BOUND"] = "1"
+        os.environ.pop("CEMINI_VERIFIER_BON", None)
+        cemini_decide._TRAJECTORY_BOUND_STATE = cemini_decide.TrajectoryBoundState()
+        cemini_decide._TRAJECTORY_BOUND_HAND_KEY = None
+        cemini_decide._TRAJECTORY_BOUND_CFG = cfg
+        out = cemini_decide._build(
+            "bet",
+            25,
+            table,
+            allowed,
+            eq=0.50,
+            po=0.0,
+            msg="thin flop value",
+        )
+        assert out["action"] == "bet"
+
+        os.environ["CEMINI_VERIFIER_BON"] = "1"
+        cemini_decide._TRAJECTORY_BOUND_STATE = cemini_decide.TrajectoryBoundState()
+        cemini_decide._TRAJECTORY_BOUND_HAND_KEY = None
+        out = cemini_decide._build(
+            "bet",
+            25,
+            table,
+            allowed,
+            eq=0.50,
+            po=0.0,
+            msg="thin flop value",
+        )
+        assert out["action"] == "check"
+    finally:
+        os.environ.pop("CEMINI_TRAJECTORY_BOUND", None)
+        os.environ.pop("CEMINI_VERIFIER_BON", None)
+        cemini_decide._TRAJECTORY_BOUND_CFG = None
+        cemini_decide._TRAJECTORY_BOUND_HAND_KEY = None

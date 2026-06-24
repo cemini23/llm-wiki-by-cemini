@@ -69,6 +69,13 @@ def _flatten_mixture_rates(
     return vals
 
 
+def decayed_alpha(base_alpha: float, round_num: int, decay: float = 0.0) -> float:
+    """EMA-style schedule: α_t = base * decay^(round-1). decay=0 keeps constant α (GARIP default)."""
+    if decay <= 0.0 or round_num <= 1:
+        return max(0.0, min(1.0, base_alpha))
+    return max(0.0, min(1.0, base_alpha * (decay ** (round_num - 1))))
+
+
 def mixture_l2_drift(
     a: dict[str, dict[str, dict[str, dict[str, float]]]],
     b: dict[str, dict[str, dict[str, dict[str, float]]]],

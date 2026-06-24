@@ -9,6 +9,7 @@ sys.path.insert(0, str(ROOT / "examples"))
 
 from researcher_trajectory_summary import (  # noqa: E402
     build_manifest,
+    compute_memory_gap,
     compute_selfplay_axes,
     evaluate_gates,
     summarize_selfplay_trajectory,
@@ -102,3 +103,51 @@ def test_gate_pass_selfplay():
     )
     assert manifest["gate_pass"] is True
     assert evaluate_gates(manifest) == []
+
+
+def test_memory_gap_bound_veto_memory_off():
+    """Test that bound vetoes when memory is off are correctly counted."""
+    decisions = [
+        {"trajectory_bound_veto": True, "session_memory_on": False},
+        {"trajectory_bound_veto": True, "session_memory_on": False},
+        {"trajectory_bound_veto": False, "session_memory_on": False},
+    ]
+    result = compute_memory_gap(decisions)
+    assert result["bound_veto_total"] == 2
+    assert result["bound_veto_memory_off"] == 2
+    assert result["misdecide_memory_on"] == 0
+
+
+def test_memory_gap_misdecide_memory_on():
+    """Test that mis-decisions (veto when memory is on) are correctly counted."""
+    decisions = [
+        {"trajectory_bound_veto": True, "session_memory_on": True},  # misdecide
+        {"trajectory_bound_veto": True, "session_memory_on": True},  # misdecide
+        {"trajectory_bound_veto": True, "session_memory_on": False},
+        {"trajectory_bound_veto": False, "session_memory_on": True},
+    ]
+    result = compute_memory_gap(decisions)
+    assert result["bound_veto_total"] == 3
+    assert result["bound_veto_memory_off"] == 1
+    assert result["misdecide_memory_on"] == 2
+
+
+def test_memory_gap_empty_decisions():
+    """Test that empty decisions return zero counts."""
+    result = compute_memory_gap([])
+    assert result["bound_veto_total"] == 0
+    assert result["bound_veto_memory_off"] == 0
+    assert result["misdecide_memory_on"] == 0
+
+
+def test_memory_gap_missing_telemetry():
+    """Test that decisions without telemetry are skipped."""
+    decisions = [
+        {"trajectory_bound_veto": True},  # missing session_memory_on
+        {"trajectory_bound_veto": False, "session_memory_on": True},
+    ]
+    result = compute_memory_gap(decisions)
+    # First decision skipped, second counted
+    assert result["bound_veto_total"] == 0
+    assert result["bound_veto_memory_off"] == 0
+    assert result["misdecide_memory_on"] == 0

@@ -40,8 +40,11 @@ from agent import (  # noqa: E402
 )
 from cemini_trajectory_bound import (  # noqa: E402
     BoundConfig,
+    compose_decision,
     contribution_from_features,
     evaluate_veto,
+    per_decision_bounds,
+    PredicateBound,
     propagate,
     safest_legal_action,
     TrajectoryBoundState,
@@ -93,9 +96,43 @@ _TRAJECTORY_BOUND_STATE = TrajectoryBoundState()
 _TRAJECTORY_BOUND_HAND_KEY: str | None = None
 _CURRENT_DECIDE_DEADLINE_S = 10.0
 
+# Telemetry tracking for trajectory export (K125 P2 Memory-Gap)
+_TRAJECTORY_BOUND_LAST_VETO_APPLIED: bool = False
+
+
+def _session_memory_enabled() -> bool:
+    """Check if CEMINI_SESSION_MEMORY environment variable is enabled."""
+    raw = str(os.environ.get("CEMINI_SESSION_MEMORY", "1")).strip().lower()
+    return raw not in ("", "0", "false", "off", "no")
+
+
+def get_trajectory_bound_telemetry() -> dict:
+    """Expose last trajectory bound state for trajectory export.
+
+    Returns dict with:
+    - cumulative_risk: float from current TrajectoryBoundState
+    - veto_applied: bool if veto was applied in last decision
+    - session_memory_on: bool from CEMINI_SESSION_MEMORY env
+    """
+    global _TRAJECTORY_BOUND_STATE
+    return {
+        "cumulative_risk": float(_TRAJECTORY_BOUND_STATE.cumulative_risk),
+        "veto_applied": bool(_TRAJECTORY_BOUND_LAST_VETO_APPLIED),
+        "session_memory_on": bool(_session_memory_enabled()),
+    }
+
 
 def _trajectory_bound_enabled() -> bool:
     return os.environ.get("CEMINI_TRAJECTORY_BOUND", "0").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+        "on",
+    )
+
+
+def _verifier_bon_enabled() -> bool:
+    return os.environ.get("CEMINI_VERIFIER_BON", "0").strip().lower() in (
         "1",
         "true",
         "yes",
@@ -164,6 +201,131 @@ def _legal_available_actions(allowed: dict) -> list[str]:
     return out
 
 
+def _trajectory_bound_features(
+    hand_key: str,
+    action_out: dict,
+    street: str,
+    hole: list[str],
+    board: list[str],
+    equity: float,
+    sims: int,
+    legal_available: list[str],
+) -> dict[str, Any]:
+    return {
+        "hand_id": hand_key or None,
+        "action": action_out.get("action"),
+        "street": street,
+        "reasoning": action_out.get("reasoning"),
+        "hole_key": _hole_key(hole),
+        "board": board,
+        "equity": equity,
+        "sims": sims,
+        "available_actions": legal_available,
+        "matches_regression_forbidden": False,
+    }
+
+
+def _verifier_candidate_amount(action: str, allowed: dict) -> Optional[int]:
+    if action == "bet":
+        br = allowed.get("betRange") or {}
+        target = int(br.get("min") or 0)
+        return target if target > 0 else None
+    if action == "raise":
+        rr = allowed.get("raiseRange") or {}
+        target = int(rr.get("min") or 0)
+        return target if target > 0 else None
+    if action == "all-in":
+        target = int(allowed.get("allInToAmount") or allowed.get("maxCommit") or 0)
+        return target if target > 0 else None
+    return None
+
+
+def _is_marginal_postflop_spot(
+    street: str,
+    action: str,
+    legal_available: list[str],
+    equity: float,
+    pot_odds: float,
+) -> bool:
+    if street not in {"Flop", "Turn", "River"} or len(legal_available) < 2:
+        return False
+    if action in {"bet", "raise", "all-in"}:
+        return 0.45 <= equity <= 0.72
+    return abs(equity - pot_odds) <= 0.08
+
+
+def _select_verifier_bon_action(
+    table: dict,
+    allowed: dict,
+    out: dict,
+    hole: list[str],
+    board: list[str],
+    equity: float,
+    pot_odds: float,
+    sims: int,
+    hand_key: str,
+    state: TrajectoryBoundState,
+    cfg: BoundConfig,
+    legal_available: list[str],
+) -> dict:
+    if not _verifier_bon_enabled():
+        return out
+    street = str(table.get("street") or "")
+    primary_action = str(out.get("action") or "")
+    if not _is_marginal_postflop_spot(street, primary_action, legal_available, equity, pot_odds):
+        return out
+    candidates: list[tuple[dict, bool]] = [(out, True)]
+    for action in legal_available:
+        if action == primary_action:
+            continue
+        if len(candidates) >= 3:
+            break
+        amount = _verifier_candidate_amount(action, allowed)
+        if action in {"bet", "raise", "all-in"} and amount is None:
+            continue
+        candidates.append(
+            (
+                _build_agent(
+                    action,
+                    amount,
+                    table,
+                    allowed,
+                    eq=equity,
+                    po=pot_odds,
+                    msg=f"K123 verifier BoN — lower-risk {action}",
+                ),
+                False,
+            )
+        )
+    best = out
+    best_score: tuple[float, int] | None = None
+    for candidate, is_primary in candidates:
+        features = _trajectory_bound_features(
+            hand_key,
+            candidate,
+            street,
+            hole,
+            board,
+            equity,
+            sims,
+            legal_available,
+        )
+        decision_bounds = per_decision_bounds(features, cfg)
+        decision_risk = compose_decision(decision_bounds, cfg.composition_mode)
+        total_risk = compose_decision(
+            (
+                PredicateBound("prior_trajectory", state.cumulative_risk),
+                PredicateBound("decision", decision_risk),
+            ),
+            cfg.composition_mode,
+        )
+        score = (total_risk, 0 if is_primary else 1)
+        if best_score is None or score < best_score:
+            best = candidate
+            best_score = score
+    return best
+
+
 def _apply_trajectory_bound_veto(
     table: dict,
     allowed: dict,
@@ -171,9 +333,12 @@ def _apply_trajectory_bound_veto(
     hole: list[str],
     board: list[str],
     equity: float,
+    pot_odds: float,
     sims: int,
 ) -> dict:
+    global _TRAJECTORY_BOUND_LAST_VETO_APPLIED
     if not _trajectory_bound_enabled():
+        _TRAJECTORY_BOUND_LAST_VETO_APPLIED = False
         return out
     global _TRAJECTORY_BOUND_STATE, _TRAJECTORY_BOUND_HAND_KEY
     cfg = _trajectory_bound_config()
@@ -181,24 +346,38 @@ def _apply_trajectory_bound_veto(
     if hand_key and hand_key != _TRAJECTORY_BOUND_HAND_KEY:
         _TRAJECTORY_BOUND_STATE = TrajectoryBoundState()
         _TRAJECTORY_BOUND_HAND_KEY = hand_key
-    features = {
-        "hand_id": hand_key or None,
-        "action": out.get("action"),
-        "street": table.get("street"),
-        "reasoning": out.get("reasoning"),
-        "hole_key": _hole_key(hole),
-        "board": board,
-        "equity": equity,
-        "sims": sims,
-        "available_actions": _legal_available_actions(allowed),
-        "matches_regression_forbidden": False,
-    }
+    legal_available = _legal_available_actions(allowed)
+    out = _select_verifier_bon_action(
+        table,
+        allowed,
+        out,
+        hole,
+        board,
+        equity,
+        pot_odds,
+        sims,
+        hand_key,
+        _TRAJECTORY_BOUND_STATE,
+        cfg,
+        legal_available,
+    )
+    features = _trajectory_bound_features(
+        hand_key,
+        out,
+        str(table.get("street") or ""),
+        hole,
+        board,
+        equity,
+        sims,
+        legal_available,
+    )
     contrib = contribution_from_features(features, cfg)
     _TRAJECTORY_BOUND_STATE = propagate(_TRAJECTORY_BOUND_STATE, contrib)
-    legal_available = _legal_available_actions(allowed)
     veto = evaluate_veto(_TRAJECTORY_BOUND_STATE, legal_available, cfg)
     if not veto.veto:
+        _TRAJECTORY_BOUND_LAST_VETO_APPLIED = False
         return out
+    _TRAJECTORY_BOUND_LAST_VETO_APPLIED = True
     safe = safest_legal_action(
         legal_available,
         cfg,
@@ -230,7 +409,7 @@ def _build(
     hole = _hole_cards_from_table(table)
     board = list(table.get("boardCards") or [])
     sims = 500 if _CURRENT_DECIDE_DEADLINE_S > 5 else 200
-    return _apply_trajectory_bound_veto(table, allowed, out, hole, board, eq, sims)
+    return _apply_trajectory_bound_veto(table, allowed, out, hole, board, eq, po, sims)
 
 # Preflop trash facing a raise — fold unless equity clearly covers price.
 _WEAK_FACING_RAISE = frozenset({
@@ -665,13 +844,14 @@ def decide(
             villain_vpip is None or villain_vpip >= 0.48
         )
         if hyper_maniac:
+            # Call down vs hyper-maniac — prior +call/+fold margins crushed series win rate.
             margins = _merge_margins(
                 margins,
                 {
                     "bet_bar_delta": -0.08,
-                    "call_margin_delta": 0.04,
-                    "fold_slack_delta": 0.03,
-                    "preflop_fold_margin_delta": 0.02,
+                    "call_margin_delta": -0.05,
+                    "fold_slack_delta": -0.04,
+                    "preflop_fold_margin_delta": -0.03,
                 },
             )
         else:

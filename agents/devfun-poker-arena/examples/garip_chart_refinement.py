@@ -25,6 +25,7 @@ if str(_EXAMPLES) not in sys.path:
 
 from deploy_registry import append_deploy_record, git_commit_short  # noqa: E402
 from garip_mixture import (  # noqa: E402
+    decayed_alpha,
     mixture_l2_drift,
     polyak_update_mixtures,
     snapshot_mixtures,
@@ -67,6 +68,7 @@ def run_garip(
     write_chart: bool,
     log_deploy: bool,
     r_nad_snapshot_every: int = 0,
+    garip_alpha_decay: float = 0.0,
 ) -> list[GaripRoundResult]:
     decide_path = _EXAMPLES / "cemini_decide.py"
     raw_decide = _load_decide_from_path(str(decide_path))
@@ -91,7 +93,8 @@ def run_garip(
 
         mixes_t = aggregate_stance_mixtures(audit)
         prev_avg = running_avg
-        running_avg = polyak_update_mixtures(prev_avg, mixes_t, garip_alpha)
+        round_alpha = decayed_alpha(garip_alpha, rnd, garip_alpha_decay)
+        running_avg = polyak_update_mixtures(prev_avg, mixes_t, round_alpha)
         drift = mixture_l2_drift(mixes_t, running_avg) if running_avg else 0.0
 
         if r_nad_snapshot_every > 0 and (
@@ -130,7 +133,7 @@ def run_garip(
 
         print(
             f"GARIP round {rnd}: changes={len(changes)} ΔEV={delta_ev:.4f} "
-            f"drift={drift:.4f} α={garip_alpha}"
+            f"drift={drift:.4f} α={round_alpha}"
         )
 
         if write_chart and changes:
@@ -140,7 +143,9 @@ def run_garip(
                 mafp_round=rnd,
                 meta={
                     "garip": True,
-                    "garip_alpha": garip_alpha,
+                    "garip_alpha": round_alpha,
+                    "garip_alpha_base": garip_alpha,
+                    "garip_alpha_decay": garip_alpha_decay,
                     "mixture_l2_drift": round(drift, 4),
                     "chart_changes": len(changes),
                 },
@@ -153,7 +158,9 @@ def run_garip(
                 commit=git_commit_short(),
                 notes=json.dumps({
                     "garip_round": rnd,
-                    "garip_alpha": garip_alpha,
+                    "garip_alpha": round_alpha,
+                    "garip_alpha_base": garip_alpha,
+                    "garip_alpha_decay": garip_alpha_decay,
                     "mixture_l2_drift": round(drift, 4),
                     "chart_changes": len(changes),
                     "delta_ev": round(delta_ev, 4),
@@ -201,6 +208,12 @@ def main(argv: Optional[list[str]] = None) -> int:
         default=DEFAULT_R_NAD_SNAPSHOT_EVERY,
         help="P1 ablation: snapshot μ_t every N audit rows (0=off)",
     )
+    p.add_argument(
+        "--garip-alpha-decay",
+        type=float,
+        default=0.0,
+        help="EMA decay per round (0=constant α; e.g. 0.85 → EMAgnet-style schedule)",
+    )
     args = p.parse_args(argv)
 
     print(f"GARIP chart refinement (commit {git_commit_short()})")
@@ -214,6 +227,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         write_chart=args.write,
         log_deploy=not args.no_deploy_log,
         r_nad_snapshot_every=args.r_nad_snapshot_every,
+        garip_alpha_decay=args.garip_alpha_decay,
     )
     if not results:
         return 1

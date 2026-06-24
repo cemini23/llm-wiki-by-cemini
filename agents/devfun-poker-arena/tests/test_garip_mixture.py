@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "examples"))
 
 from garip_mixture import (  # noqa: E402
+    decayed_alpha,
     mixture_l2_drift,
     polyak_update_mixtures,
     snapshot_mixtures,
@@ -49,3 +50,14 @@ def test_mixture_l2_drift_positive_on_change():
     a = _sample_mix(0.9)
     b = _sample_mix(0.1)
     assert mixture_l2_drift(a, b) > 0.0
+
+
+def test_decayed_alpha_constant_when_decay_zero():
+    assert decayed_alpha(0.3, 3, 0.0) == 0.3
+
+
+def test_decayed_alpha_shrinks_per_round():
+    a1 = decayed_alpha(0.3, 1, 0.5)
+    a3 = decayed_alpha(0.3, 3, 0.5)
+    assert a1 == 0.3
+    assert a3 < a1
