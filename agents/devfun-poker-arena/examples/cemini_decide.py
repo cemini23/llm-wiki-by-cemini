@@ -132,7 +132,8 @@ def _trajectory_bound_enabled() -> bool:
 
 
 def _verifier_bon_enabled() -> bool:
-    return os.environ.get("CEMINI_VERIFIER_BON", "0").strip().lower() in (
+    """K123 Best-of-N on marginal postflop — only invoked inside trajectory-bound path."""
+    return os.environ.get("CEMINI_VERIFIER_BON", "1").strip().lower() in (
         "1",
         "true",
         "yes",

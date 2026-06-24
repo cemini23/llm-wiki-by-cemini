@@ -21,7 +21,7 @@ Opus planning pass + parallel execution (Kimi/GPT workers). Stack was **already 
 | Item | Files |
 |------|-------|
 | K125 P2 Memory-Gap tagging | `cemini_decide.get_trajectory_bound_telemetry`, `selfplay` trajectory fields, `researcher_trajectory_summary.compute_memory_gap` |
-| K123 P1 Best-of-N verifier | `CEMINI_VERIFIER_BON=0` default; marginal postflop alt scoring |
+| K123 P1 Best-of-N verifier | `CEMINI_VERIFIER_BON=1` default on (researcher + trajectory-bound path) |
 | Hyper-maniac margin fix | `cemini_decide` — call-down vs +fold margins that crushed maniac series |
 | GARIP EMA decay (EMAgnet micro-spike) | `garip_mixture.decayed_alpha`, `--garip-alpha-decay` CLI |
 

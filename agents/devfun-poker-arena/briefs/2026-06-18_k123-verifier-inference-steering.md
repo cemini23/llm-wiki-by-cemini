@@ -34,7 +34,7 @@ When primary `decide()` returns marginal spot (e.g., borderline steal / thin val
 - Score each with verifier sum: legality + regression match bonus + MC equity + positional VPIP guard.
 - Submit argmax — profile latency on `pokerkit run --dry-run --max-hands 10`.
 
-**Timeout risk:** Arena action deadlines may forbid N>2 on prod — gate behind env flag `CEMINI_VERIFIER_BON=0` default off until smoke passes.
+**Timeout risk:** Arena action deadlines — BoN only runs on marginal postflop with ≤2 alt actions (no extra MC). Default **on** with `CEMINI_TRAJECTORY_BOUND=1`; set `CEMINI_VERIFIER_BON=0` to disable.
 
 ### P2 — D_auto flywheel
 

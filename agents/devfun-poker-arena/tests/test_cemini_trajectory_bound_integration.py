@@ -140,7 +140,7 @@ def test_verifier_bon_optional_on_marginal_postflop():
     )
     try:
         os.environ["CEMINI_TRAJECTORY_BOUND"] = "1"
-        os.environ.pop("CEMINI_VERIFIER_BON", None)
+        os.environ["CEMINI_VERIFIER_BON"] = "0"
         cemini_decide._TRAJECTORY_BOUND_STATE = cemini_decide.TrajectoryBoundState()
         cemini_decide._TRAJECTORY_BOUND_HAND_KEY = None
         cemini_decide._TRAJECTORY_BOUND_CFG = cfg
