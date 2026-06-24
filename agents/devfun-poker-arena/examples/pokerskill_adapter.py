@@ -24,6 +24,7 @@ if str(_EXAMPLES) not in sys.path:
 
 from agent import _hand_class  # noqa: E402
 
+from opponent_target import is_preflop_open_spot  # noqa: E402
 from position_utils import _active_seat_numbers, hero_position_label  # noqa: E402
 from pokerskill_prompt import merge_prompt_hints  # noqa: E402
 
@@ -307,7 +308,7 @@ def retrieve_pokerskill_hints(table: dict) -> dict[str, Any]:
             out.update(_stub_postflop_hint(street, out["board_texture"], in_position))
     else:
         out["pokerskill_state_ok"] = False
-        if street == "preflop" and call_chips == 0:
+        if street == "preflop" and is_preflop_open_spot(table, allowed, call_chips):
             out.update({"scenario": "multiway_open", "bias": "chart", "layer": "P2-stub"})
         elif street == "preflop":
             out.update({"scenario": "multiway_defend", "bias": "equity", "layer": "P2-stub"})

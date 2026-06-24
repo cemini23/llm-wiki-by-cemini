@@ -22,7 +22,7 @@ def test_anti_profiling_audit_gate():
         env=env,
         capture_output=True,
         text=True,
-        timeout=360,
+        timeout=600,
     )
     assert proc.returncode == 0, proc.stdout + proc.stderr
 

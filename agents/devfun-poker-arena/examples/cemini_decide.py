@@ -286,6 +286,43 @@ def _cold_start_no_steal_enabled() -> bool:
     return raw.strip().lower() not in ("0", "false", "no", "off")
 
 
+_COLD_START_MARGINAL_STEAL = frozenset({
+    "98s", "87s", "76s", "65s", "54s", "43s", "32s",
+    "T8s", "T7s", "97s", "86s", "75s", "64s", "53s", "42s",
+}) | _CO_WEAK_CONNECTOR
+
+
+def _is_cold_start_marginal_steal(hand_class: str, position: str) -> bool:
+    """HL R21 marginal chart steals — block during HUD cold start (98s BTN, not A9s CO)."""
+    if position not in ("CO", "BTN", "SB"):
+        return False
+    if hand_class in _COLD_START_OPEN_OK:
+        return False
+    if hand_class in _WEAK_FACING_RAISE or _is_sb_complete_trash(hand_class):
+        return True
+    if hand_class in _CO_WEAK_CONNECTOR:
+        return True
+    if hand_class in _COLD_START_MARGINAL_STEAL:
+        return True
+    return _blocks_open_steal(hand_class, position)
+
+
+def _raise_only_first_in_open(
+    table: dict,
+    allowed: dict,
+    available: list,
+) -> bool:
+    """K118 — Arena first-in exposes raise but not bet (co_raise_only_open)."""
+    cc = int(allowed.get("callChips") or 0)
+    if not is_preflop_open_spot(table, allowed, cc):
+        return False
+    if not allowed.get("canRaise"):
+        return False
+    if allowed.get("canBet"):
+        return False
+    return "raise" in available and "bet" not in available
+
+
 def _nemesis_tight_enabled() -> bool:
     raw = os.environ.get("CEMINI_NEMESIS_TIGHT", "1")
     return raw.strip().lower() not in ("0", "false", "no", "off")
@@ -1794,11 +1831,12 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             return "fold", None
         if "check" in available:
             return "check", None
-    # Cold start: chart-only CO/BTN opens — no marginal steals until HUD sample (HL R21).
+    # Cold start: no marginal chart steals until HUD sample (HL R21).
     if (_cold_start_no_steal_enabled() and cold_start and not placement_chase
             and position in ("CO", "BTN", "SB")
             and suggested == "raise"
             and hand_class not in _COLD_START_OPEN_OK
+            and _is_cold_start_marginal_steal(hand_class, position)
             and not (placement_chase and chase_open_ok)):
         if "check" in available:
             return "check", None
@@ -1814,6 +1852,7 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
         if act:
             return act, target
     # Chart PFR before multiway marginal blocks (K118 co_raise_only_open / A9s CO).
+    raise_only_open = _raise_only_first_in_open(table or {}, allowed, available)
     hu_chart_pfr = (
         _is_hu_table(table or {})
         and suggested == "raise"
@@ -1821,7 +1860,8 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
     )
     if (suggested == "raise"
             and (
-                hu_chart_pfr
+                raise_only_open
+                or hu_chart_pfr
                 or not _should_block_chart_open(
                     hand_class, position,
                     lead_protect=lead_protect,
@@ -1829,11 +1869,13 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
                 )
             )
             and not (
-                _cold_start_no_steal_enabled()
+                not raise_only_open
+                and _cold_start_no_steal_enabled()
                 and cold_start
                 and not placement_chase
                 and position in ("CO", "BTN", "SB")
                 and hand_class not in _COLD_START_OPEN_OK
+                and _is_cold_start_marginal_steal(hand_class, position)
                 and not (placement_chase and chase_open_ok)
             )):
         act, target = _preflop_first_in_wager(allowed, available, pot)
