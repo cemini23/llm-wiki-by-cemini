@@ -282,7 +282,7 @@ def _eval_panel_runtime() -> bool:
 
 
 def _apply_researcher_runtime_context(ctx: dict) -> dict:
-    """Researcher submit profile: no eval_panel lane, no placement chase, no sanitize."""
+    """Researcher submit profile: no eval_panel lane, no placement chase."""
     if not _researcher_runtime():
         return ctx
     out = dict(ctx)

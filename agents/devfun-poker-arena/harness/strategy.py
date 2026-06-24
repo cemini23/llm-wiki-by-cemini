@@ -61,24 +61,22 @@ def _deadline_s(table: dict) -> float:
     return max(floor, min(10.0, float(os.environ.get("CEMINI_DECIDE_DEADLINE_S", "8.0"))))
 
 
-def _sanitize_enabled() -> bool:
-    return os.environ.get("CEMINI_SANITIZE_OUTPUT", "").strip().lower() in (
-        "1", "true", "yes", "on",
-    )
-
-
 def choose_action(table: dict) -> Any:
     decide = _import_decide()
     out = decide(table, deadline_s=_deadline_s(table))
+    try:
+        from output_sanitize import maybe_sanitize_action  # noqa: WPS433
+
+        out = maybe_sanitize_action(out)
+    except ImportError:
+        pass
     action = str(out.get("action") or "fold")
     amount = out.get("amount")
-    if _sanitize_enabled():
-        if amount is not None:
-            return {"action": action, "amount": amount}
-        return action
-    reasoning = out.get("reasoning") or out.get("reasoning_text") or ""
-    if amount is not None:
-        return {"action": action, "amount": amount, "reasoning_text": str(reasoning)}
+    payload_keys = ("action", "amount", "message", "reasoning")
+    if amount is not None or out.get("message") or out.get("reasoning"):
+        payload = {k: out[k] for k in payload_keys if k in out and out[k] is not None}
+        payload["action"] = action
+        return payload
     return action
 
 

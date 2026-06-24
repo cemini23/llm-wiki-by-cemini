@@ -98,3 +98,22 @@ def test_sanitize_strips_telegraphy():
         assert "32%" not in out["reasoning"]
     finally:
         os.environ.pop("CEMINI_SANITIZE_OUTPUT", None)
+
+
+def test_sanitize_on_in_researcher_mode():
+    os.environ["CEMINI_SANITIZE_OUTPUT"] = "1"
+    os.environ["CEMINI_RESEARCHER_MODE"] = "1"
+    try:
+        assert sanitize_output_enabled()
+        out = maybe_sanitize_action({
+            "action": "raise",
+            "amount": 40,
+            "message": "chart says raise; executing raise for value",
+            "reasoning": '{sk: "multiway_open|raise@CO|stub|-"}',
+        })
+        assert out["message"] == "raise"
+        assert "chart" not in out["message"]
+        assert "multiway" not in out["reasoning"]
+    finally:
+        os.environ.pop("CEMINI_SANITIZE_OUTPUT", None)
+        os.environ.pop("CEMINI_RESEARCHER_MODE", None)

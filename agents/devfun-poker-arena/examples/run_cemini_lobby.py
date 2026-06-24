@@ -127,7 +127,7 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_TOURNAMENT_MODE": "0",
             "CEMINI_EVAL_PANEL_GATE": "0",
             "CEMINI_PLACEMENT_CHASE": "0",
-            "CEMINI_SANITIZE_OUTPUT": "0",
+            "CEMINI_SANITIZE_OUTPUT": "1",
             "CEMINI_PACE_PHASE": "researcher",
             "CEMINI_JOIN_RETRY_S": "60",
             "CEMINI_IN_QUEUE_RETRY_S": "120",
