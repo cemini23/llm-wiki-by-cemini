@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-# Reinstall morning LaunchAgents with ~/bin wrappers (launchd-safe Desktop access).
+# Reinstall morning LaunchAgents with ~/bin wrappers (launchd-safe repo access).
 #
 # Fixes:
-#   - verify_wiki_sync: bash < script (no exec of Desktop .sh)
+#   - verify_wiki_sync: bash < script (no exec of repo .sh from launchd)
 #   - federated digests: PATH + logging + ~/.cemini/wiki-paths/*.path
 #   - federation summary: path file + logging
+#   - Desktop/OSINT WORKSPACE inbox symlink → canonical ~/Projects/OSINT WORKSPACE inbox
 #
 # Usage:
 #   bash scripts/reinstall_morning_launchagents.sh
@@ -23,8 +24,20 @@ BACKFILL=0
 
 WRAPPER_SRC="$ROOT/scripts/launchagent_wrappers"
 PAYLOAD_DIR="$CEMINI_DIR/launchagent"
-PROJECTS="$HOME/Desktop/projects"
+PROJECTS="${CEMINI_PROJECTS_ROOT:-$HOME/Projects}"
 FED_HUB="${PROJECTS}/cemini-federation-hub"
+DESKTOP_OSINT="$HOME/Desktop/OSINT WORKSPACE"
+
+resolve_3d_printing_repo() {
+  local candidate
+  for candidate in "${PROJECTS}/3D printing" "${PROJECTS}/3d printing"; do
+    if [[ -d "$candidate" ]]; then
+      printf '%s\n' "$candidate"
+      return 0
+    fi
+  done
+  printf '%s\n' "${PROJECTS}/3D printing"
+}
 
 # id|absolute-path (bash 3.2 safe — no associative arrays)
 WIKI_REPOS=(
@@ -34,8 +47,28 @@ WIKI_REPOS=(
   "gambling|${PROJECTS}/Gambling wiki"
   "game-dev|${PROJECTS}/Game Dev wiki"
   "image-gen|${PROJECTS}/Image gen"
-  "3d-printing|${PROJECTS}/3d printing"
+  "3d-printing|$(resolve_3d_printing_repo)"
 )
+
+ensure_desktop_inbox_symlink() {
+  local canonical_root="$1"
+  local canonical_inbox="${canonical_root}/research to be indexed"
+  local desktop_inbox="${DESKTOP_OSINT}/research to be indexed"
+
+  mkdir -p "$canonical_inbox"
+  [[ -d "$DESKTOP_OSINT" ]] || return 0
+
+  if [[ -L "$desktop_inbox" ]]; then
+    echo "  Desktop inbox symlink already present"
+    return 0
+  fi
+  if [[ -d "$desktop_inbox" && ! -L "$desktop_inbox" ]]; then
+    echo "WARN: ${desktop_inbox} exists as a real directory — not replacing with symlink" >&2
+    return 0
+  fi
+  ln -s "$canonical_inbox" "$desktop_inbox"
+  echo "  ${desktop_inbox} → ${canonical_inbox}"
+}
 
 mkdir -p "$BIN_DIR" "$CEMINI_DIR" "$PATHS_DIR" "$HOME/Library/Logs"
 
@@ -173,6 +206,7 @@ EOF
 echo "=== OSINT workspace path ==="
 sync_launchagent_payload
 write_path "$CEMINI_DIR/osint-workspace.path" "$ROOT"
+ensure_desktop_inbox_symlink "$ROOT"
 
 echo "=== Federation hub path ==="
 write_path "$CEMINI_DIR/federation-hub.path" "${PROJECTS}/cemini-federation-hub"
@@ -195,6 +229,7 @@ for entry in "${WIKI_REPOS[@]}"; do
     echo "WARN: skip $id — missing $repo" >&2
     continue
   fi
+  mkdir -p "${repo}/research to be indexed"
   write_path "$PATHS_DIR/${id}.path" "$repo"
   dest="$BIN_DIR/cemini-daily-research-digest-${id}"
   cp "$FED_TEMPLATE" "$dest"
