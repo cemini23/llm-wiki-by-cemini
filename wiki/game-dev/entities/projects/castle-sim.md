@@ -27,6 +27,7 @@ related:
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
   - sources/gdquest-pathfinding-glossary-2026-06-23.md
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+  - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - concepts/stronghold-2-kingmaker-strategy.md
   - concepts/stronghold-2-siege-warfare.md
@@ -80,7 +81,7 @@ Separate git repo for runnable Godot code. Wiki holds spec; repo holds implement
 
 | Field | Value |
 |-------|-------|
-| **Path** | `/Users/claudiobarone/Desktop/projects/castle-sim/` |
+| **Path** | `/Users/claudiobarone/Projects/castle-sim/` |
 | **Visibility** | Local (private GitHub TBD — ROADMAP D3) |
 | **Engine** | Godot 4.5+ (pin 4.5.2 or 4.6.x stable) |
 | **Language** | GDScript |
@@ -114,5 +115,5 @@ Open **castle-sim** as its own folder for implementation. Keep **Game Dev wiki**
 ## Snippets
 
 ```bash
-open -a Cursor "/Users/claudiobarone/Desktop/projects/castle-sim"
+open -a Cursor "/Users/claudiobarone/Projects/castle-sim"
 ```

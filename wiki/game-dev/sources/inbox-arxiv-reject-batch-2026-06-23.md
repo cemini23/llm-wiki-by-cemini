@@ -11,6 +11,7 @@ related:
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
   - sources/gdquest-pathfinding-glossary-2026-06-23.md
+  - sources/inbox-arxiv-reject-batch-2026-06-24.md
 read_status: read
 source_type: operator-triage
 maturity: validated

@@ -20,9 +20,10 @@ related:
   - concepts/stronghold-crusader-ai-modding-shelf.md
   - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
   - sources/stronghold-hd-manual-2001.md
+  - sources/stronghold-4-public-demo-2026-06-24.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-06-24
 ---
 
 ## Relations

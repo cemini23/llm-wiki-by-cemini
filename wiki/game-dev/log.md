@@ -4,6 +4,18 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-24] ingest | Inbox re-drop + Cooperative-ORCA MAPF + SH4 demo
+
+- Inbox: 10 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-24.md; **2606.22757 ingest** → @sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md; archived; inbox cleared
+- News: @sources/stronghold-4-public-demo-2026-06-24.md → @entities/games/stronghold-series.md demo row
+- Concepts: @concepts/rts-pathfinding-approaches.md MAPF/ORCA shelf; Pattern 5 in @concepts/godot-pathfinding-patterns.md
+- Brief: `briefs/research/cooperative-orca-local-avoidance-shelf.md`; synced → `castle-sim/briefs/research/`
+- YouTube: `9TVAnK6bRPs` premiere retry still blocked — @sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+- Sweep: @sweeps/2026-06-24-daily.md
+- Path fix: castle-sim canonical path → `/Users/claudiobarone/Projects/castle-sim/`
+
+---
+
 ## [2026-06-23] ingest | YouTube watchlist transcript sweep
 
 - Transcript retry: all pending watchlist IDs via `youtube_transcript_api` 1.2.4
@@ -425,7 +437,7 @@ Append-only chronological log.
 - Entity: `entities/projects/castle-sim.md`
 - Vertical slice v0 tightened (spike gate, SH1 mapping, playtest script)
 - Harness: CCC ship/verify/scatter-gather + cybersec MCP links
-- Implementation: `/Users/claudiobarone/Desktop/projects/castle-sim/` (Godot 4.5 scaffold)
+- Implementation: `/Users/claudiobarone/Projects/castle-sim/` (Godot 4.5 scaffold)
 - ROADMAP W1 marked complete
 
 ---

@@ -16,13 +16,14 @@ related:
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
   - sources/gdquest-pathfinding-glossary-2026-06-23.md
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+  - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
   - concepts/agentic-pcg-level-design.md
   - concepts/scope-tiers.md
   - sources/shaggydev-tactics-engine-devlog-2023.md
   - sources/shaggydev-udd-navigation-2025.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-24
 ---
 
 ## Relations
@@ -50,7 +51,8 @@ Decision guide for castle-sim unit movement around **dynamic walls** — synthes
 | **Navmesh rebake** | Expensive per wall; tile-dense = slow queries | Medium if static | `NavigationRegion2D` | **NO-GO v0** |
 | **Flow fields** | Recompute integration on wall change; O(1) per-agent steer | **High** shared destination | Custom; see @concepts/flow-field-pathfinding.md | **Tier 2** if many units same goal |
 | **Potential fields (RTS AI papers)** | Soft steering; complements grid | AI micro, not peasants | Custom | Tier 2 combat |
-| **RVO / NavigationAgent avoidance** | Does not replace pathfind | Small groups | `NavigationAgent2D` | Optional polish |
+| **RVO / NavigationAgent avoidance** | Does not replace pathfind | Small groups | `NavigationAgent2D` / `NavigationAgent3D` | Optional polish |
+| **MAPF / ORCA-class local steer** | Complements global planner | Crowds in chokes | Custom or ORCA libs | **Tier 2+** — @sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md |
 
 ### Exa paper cluster (filtered for games)
 
@@ -59,6 +61,7 @@ Decision guide for castle-sim unit movement around **dynamic walls** — synthes
 | Springer "Path-Planning for RTS Games Based on Potential Fields" | Micro/combat steering — not wall placement |
 | "An Improved Pathfinding Algorithm in RTS Games" | General RTS grid — reference only |
 | Nature 2025 flow-field BFS integration | Academic; validate before adopt |
+| arXiv 2606.22757 Cooperative-ORCA* MAPF | **STEAL-FROM** local avoidance shelf — proactive deadlock vs reactive fallback |
 | arXiv UAV/robotics papers in default digest | **Noise** — tighten paper queries |
 
 ### Recommended evolution
@@ -67,6 +70,7 @@ Decision guide for castle-sim unit movement around **dynamic walls** — synthes
 v0:  AStarGrid2D synced to wall TileMapLayer
 v1:  Flood-fill for "reachable job sites" preview (see @concepts/godot-pathfinding-patterns.md)
 v2:  Flow field for shared goals (stockpile, rally) if unit count > ~30 — @concepts/flow-field-pathfinding.md
+v2b: ORCA/RVO nudge if gate deadlocks persist — @sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
 MP:  Deterministic sim + lockstep if ever needed (@concepts/rts-networking-deferred.md)
 ```
 

@@ -18,6 +18,7 @@ related:
   - entities/tools/stronghold2-analyse-hub.md
   - entities/tools/stronghold2-mp-ai-patch.md
   - sources/stronghold-2-heaven-gameinfo-2026-06-13.md
+  - sources/stronghold-4-public-demo-2026-06-24.md
   - sources/sh2-youtube-parity-watchlist-2026-06-17.md
   - sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
   - concepts/stronghold-2-mod-ecosystem-shelf.md

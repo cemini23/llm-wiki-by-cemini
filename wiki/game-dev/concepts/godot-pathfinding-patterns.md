@@ -18,6 +18,7 @@ related:
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
   - sources/gdquest-pathfinding-glossary-2026-06-23.md
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+  - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
   - entities/tools/binarytracking.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: validated
@@ -59,9 +60,9 @@ From @sources/liquid-fire-godot-tactics-pathfinding-2024.md: **flood-fill** with
 
 Exa hit: [Kobold Tactics TileMap pathfinding](https://koboldtactics.com/tilemap-pathfinding-made-simple-godot-4-c/) — C# but documents Godot 4 `TileMapLayer` + A* integration. **Reference only** — castle-sim uses GDScript.
 
-### Pattern 5 — NavigationAgent2D (defer)
+### Pattern 5 — NavigationAgent avoidance + ORCA shelf (defer)
 
-Enable avoidance only when units crowd; pathfind on grid, optionally nudge with RVO for collision resolution.
+Enable avoidance only when units crowd; pathfind on grid, optionally nudge with RVO for collision resolution. If gate deadlocks persist at Tier 2, read MAPF/ORCA proactive-deadlock literature — @sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md (global planner + local steer split).
 
 ### Pattern 6 — Flow field (Tier 2)
 

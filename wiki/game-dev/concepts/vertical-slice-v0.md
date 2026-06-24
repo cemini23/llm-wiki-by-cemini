@@ -80,7 +80,7 @@ Food chain, stone, popularity, enemy raids, save/load (nice-to-have later). See 
 
 ### Repo gate
 
-Godot Phase-0 **CONDITIONAL-GO** (2026-06-13). **`castle-sim` scaffolded** at `/Users/claudiobarone/Desktop/projects/castle-sim/`. Open as separate Cursor workspace for code.
+Godot Phase-0 **CONDITIONAL-GO** (2026-06-13). **`castle-sim` scaffolded** at `/Users/claudiobarone/Projects/castle-sim/`. Open as separate Cursor workspace for code.
 
 ### Tier 1 rendering (2026-06-13)
 

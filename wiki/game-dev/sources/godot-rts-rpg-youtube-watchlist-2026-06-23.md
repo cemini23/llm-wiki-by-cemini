@@ -18,7 +18,7 @@ source_type: operator-watchlist
 source_url: https://www.youtube.com/watch?v=9TVAnK6bRPs
 maturity: validated
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-06-24
 ---
 
 ## Raw Concept
@@ -31,9 +31,9 @@ Optional Godot 4 RTS/RPG long-form tutorial for **camera, selection, and command
 
 | ID | Title | Channel | Transcript | Status |
 |----|-------|---------|------------|--------|
-| 9TVAnK6bRPs | Build a Complete RTS RPG in Godot 4 \| Full Game Tutorial 11h | KIMS MAKING GAMES | ❌ | **Premiere** — unplayable via API until ~2026-06-24 |
+| 9TVAnK6bRPs | Build a Complete RTS RPG in Godot 4 \| Full Game Tutorial 11h | KIMS MAKING GAMES | ❌ | **Premiere retry 2026-06-24** — still unplayable via API (~14 min at fetch) |
 
-Transcript archive (session): `/tmp/godot-rts-yt-transcripts.json` — entry `9TVAnK6bRPs` status `unavailable` (VideoUnplayable: premieres in ~23h at fetch time).
+Transcript archive (session): `/tmp/godot-rts-yt-transcripts.json` — entry `9TVAnK6bRPs` status `unavailable` (VideoUnplayable: premieres in ~14 minutes at 2026-06-24 fetch).
 
 **Fetch command (retry after premiere):**
 

@@ -26,9 +26,10 @@ related:
   - sources/leiden-medieval-city-builder-accuracy-2020.md
   - sources/unofficial-crusader-patch2-phase-0-audit-2026-06-13.md
   - sources/stronghold-franchise-best-of-research-2026-06-18.md
+  - sources/stronghold-4-public-demo-2026-06-24.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-18
+updated: 2026-06-24
 ---
 
 ## Relations
@@ -79,7 +80,7 @@ Sound: Miles Sound System (AIL). Map editor: **real-time** in SH1/Crusader; repl
 | 2023 | **Stronghold: Definitive Edition** | SH1 remaster; 500k+ sales reported ~14 months [TENTATIVE] |
 | 2024 | **Stronghold Castles** | Mobile; commercial failure reported [TENTATIVE] |
 | 2025 | **Crusader: Definitive Edition** | Remaster; new AI, larger maps, co-op |
-| 2026 | **Stronghold 4** | UE5; Windows/Steam [NEEDS VERIFICATION 2026-06-20] |
+| 2026 | **Stronghold 4** | UE5; Windows/Steam; **public demo** 2026-06-23 [CONFIRMED — @sources/stronghold-4-public-demo-2026-06-24.md] |
 
 ### Game modes (Stronghold 2001 baseline)
 

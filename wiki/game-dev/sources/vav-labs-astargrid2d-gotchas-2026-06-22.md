@@ -12,6 +12,7 @@ related:
   - entities/projects/castle-sim.md
   - sources/inbox-arxiv-reject-batch-2026-06-22.md
   - sources/gdquest-pathfinding-glossary-2026-06-23.md
+  - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
   - meta/cross-wiki-routing.md
 read_status: read
 source_type: web-article
