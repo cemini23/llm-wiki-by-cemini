@@ -50,11 +50,25 @@ def treys_card_list(key: str) -> list[int]:
     return cards
 
 
+def _preflop_strength_norm(hole_key: str) -> float:
+    """Rough 0–1 strength when board is incomplete (<5 cards for treys evaluate)."""
+    cards = treys_card_list(hole_key)
+    if len(cards) < 2:
+        return 0.5
+    r1 = Card.get_rank_int(cards[0])
+    r2 = Card.get_rank_int(cards[1])
+    high = max(r1, r2)
+    pair_bonus = 0.25 if r1 == r2 else 0.0
+    return min(1.0, (high / 12.0) * 0.75 + pair_bonus)
+
+
 def hand_strength_norm(hole_key: str, board_key: str) -> float:
     if len(hole_key) < 4:
         return 0.5
     hand = treys_card_list(hole_key)
     board = treys_card_list(board_key) if board_key else []
+    if len(board) + len(hand) < 5:
+        return _preflop_strength_norm(hole_key)
     rank = EVALUATOR.evaluate(board, hand)
     return 1.0 - (float(rank) / MAX_HAND_RANK)
 
