@@ -25,11 +25,14 @@ related:
   - concepts/kuhn-poker-sft-curriculum-reference.md
   - concepts/garip-running-average-self-play.md
   - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
+  - concepts/emagnet-parameter-space-ema-self-play.md
+  - concepts/self-enforcing-transfer-equilibrium.md
+  - concepts/irumai-indian-rummy-rl.md
   - concepts/ipo-finance-agent-benchmark.md
   - sources/arxiv-ipo-finance-agent-2606.23032-2026-06-24.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 ## Relations

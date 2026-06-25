@@ -29,10 +29,12 @@ related:
   - sources/3-25-git-research.md
   - sources/git-3-5-pt3.md
   - sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md
+  - concepts/self-compacting-language-model-agents.md
+  - entities/tools/headroom.md
 maturity: draft
 hub: true
 created: 2026-04-28
-updated: 2026-06-10
+updated: 2026-06-25
 ---
 
 ## Relations

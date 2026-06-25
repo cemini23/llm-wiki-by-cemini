@@ -12,8 +12,24 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **448 canonical stubs** (K128 ingest +4 sources)
+Total: **461 canonical stubs** (K129 ingest +13 sources)
 
+
+### k129-ingest (13)
+
+- [Cemini URL Evaluation Research.docx — 37 URL tool eval (2026-06-25)](sources/eval-url-cemini-research-2026-06-25.md) — K129: 6 Adopt (MIT/Apache-2.0 gh-verified), 6 Steal-from, Rejects aggregated. — `docx` [+agent-harness, +wiki-tooling]
+- [EMAgnet parameter-space EMA self-play (2606.23995)](sources/arxiv-emagnet-parameter-space-ema-2606.23995-2026-06-25.md) — Riot Games; PPO self-play magnet vs uniform entropy; poker steal. — `pdf` [+rl-marl, +poker]
+- [IRumAI Indian Rummy RL (2606.21975)](sources/arxiv-irumai-indian-rummy-ppo-2606.21975-2026-06-25.md) — First RL rummy agent; PPO; cross-route gambling-wiki. — `pdf` [+rl-marl, +poker]
+- [Equilibrium with Internal Transfers / SETE (2606.20960)](sources/arxiv-equilibrium-internal-transfers-seate-2606.20960-2026-06-25.md) — MIT game theory; budget-balanced transfers before play. — `pdf` [+game-theory]
+- [Fara-1.5 computer use agents (2606.20785)](sources/arxiv-fara-1-5-computer-use-2606.20785-2026-06-25.md) — Microsoft FaraGen pipeline; browser CUA training. — `pdf` [+llm-agents]
+- [Metanym Game LLM benchmark (2606.21008)](sources/arxiv-metanym-game-llm-benchmark-2606.21008-2026-06-25.md) — Contamination-resistant LLM peer benchmark. — `pdf` [+llm-agents]
+- [False Summit and Silent Drift (2606.21841)](sources/arxiv-false-summit-silent-drift-2606.21841-2026-06-25.md) — LLM-assisted simulation failure taxonomy. — `pdf` [+llm-agents]
+- [ForEx Lean4 fallacy verification (2606.21867)](sources/arxiv-forex-lean4-fallacy-detection-2606.21867-2026-06-25.md) — Formal verification of LLM explanations. — `pdf` [+llm-agents]
+- [Moral Geometry Nash-Kantian (2606.21967)](sources/arxiv-moral-geometry-nash-kantian-2606.21967-2026-06-25.md) — Endogenous scaling in Kantian games. — `pdf` [+game-theory]
+- [SCOPE symbolic world planning (2606.22488)](sources/arxiv-scope-symbolic-world-planning-2606.22488-2026-06-25.md) — Open-ended embodied planning; castle-sim steal. — `pdf` [+rl-marl]
+- [Cooperative-ORCA* MAPF (2606.22757)](sources/arxiv-cooperative-orca-mapf-2606.22757-2026-06-25.md) — Proactive deadlock avoidance; castle-sim steal. — `pdf` [+rl-marl]
+- [SelfCompact LM agents (2606.23525)](sources/arxiv-selfcompact-lm-agents-2606.23525-2026-06-25.md) — Model-invoked context compaction rubric. — `pdf` [+llm-agents]
+- [Line Planning at Scale (2606.24386)](sources/arxiv-line-planning-transit-scale-2606.24386-2026-06-25.md) — Transit planning; wiki-only weak hook. — `pdf`
 
 ### rl-marl (104)
 

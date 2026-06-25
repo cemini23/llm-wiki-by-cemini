@@ -5,14 +5,17 @@ tags: [tool, financial-services, mcp, anthropic, prompt-engineering, reference-a
 keywords: [Anthropic, financial services, MCP connectors, prompt schemas, FactSet, S&P Global, LSEG, Apache-2.0]
 related:
   - sources/project-link-evaluation-brief.md
+  - sources/eval-url-cemini-research-2026-06-25.md
   - concepts/tool-evaluation-framework.md
+  - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-06-25
 ---
 
 ## Relations
 - `@sources/project-link-evaluation-brief.md` — source evaluation brief (URL 4)
+- `@sources/eval-url-cemini-research-2026-06-25.md` — K129 Adopt reconfirm (Apache-2.0)
 
 ## Raw Concept
 
@@ -39,6 +42,6 @@ This repository provides production-grade blueprints for financial reasoning age
 
 ### Open questions
 
-- Explicit dependency list in `requirements.txt` to confirm absence of transitive AGPL/SSPL libraries `[NEEDS VERIFICATION 2026-05-10]`
+- Explicit dependency list in `requirements.txt` to confirm absence of transitive AGPL/SSPL libraries `[NEEDS VERIFICATION 2026-06-25]`
 
 [Source: Project Link Evaluation Brief.docx, URL 4]

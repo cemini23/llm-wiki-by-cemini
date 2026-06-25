@@ -5,6 +5,7 @@ tags: [concept, game-theory, self-play, poker, marl, k127]
 keywords: [GARIP, running average, Polyak magnet, R-NaD, DeepNash, MMD, last-iterate convergence, exploitability]
 related:
   - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
+  - concepts/emagnet-parameter-space-ema-self-play.md
   - concepts/multi-agent-fictitious-play-llm.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/devfun-poker-agent-challenge-2026.md
@@ -13,12 +14,13 @@ related:
   - concepts/active-project-research-routing.md
 maturity: draft
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-06-25
 ---
 
 ## Relations
 
 - @sources/arxiv-garip-self-play-2606.22688-2026-06-23.md — primary source (Savcı)
+- @concepts/emagnet-parameter-space-ema-self-play.md — K129 parameter-space EMA magnet (orthogonal to mixture-space running average)
 - @concepts/multi-agent-fictitious-play-llm.md — K124 fictitious-play cluster (orthogonal axis: stance vs gradient magnet)
 - @meta/sandbox-season-harvest-cadence.md — post-10k harvest for offline GARIP/chart iteration
 

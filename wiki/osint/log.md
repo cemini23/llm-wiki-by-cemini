@@ -1,6 +1,14 @@
 # Wiki Log
 
-## [2026-06-24] ingest | K128 daily inbox — 3 arXiv + Metaplan tool eval
+## [2026-06-25] ingest | K129 daily inbox — 12 arXiv + URL tool eval (37 URLs)
+
+- **Sources (13):** 12× arXiv (2606.20785–2606.24386) + `eval-url-cemini-research-2026-06-25.md` (37-URL docx)
+- **Concepts (6):** `@concepts/emagnet-parameter-space-ema-self-play.md`, `@concepts/irumai-indian-rummy-rl.md`, `@concepts/self-enforcing-transfer-equilibrium.md`, `@concepts/self-compacting-language-model-agents.md`, `@concepts/scope-symbolic-world-planning.md`, `@concepts/fara-computer-use-agent-training.md`
+- **Entities (5 new + 1 update):** loop-engineering, no-mistakes, headroom, reverse-skill, design-dna; `@entities/tools/anthropics-financial-services.md` K129 backlink
+- **Phase-0:** `scripts/adopt_k129_phase0.sh` — 6 Adopt MIT/Apache-2.0 confirmed; Rejects aggregated on source page
+- **Briefs (5 + 3 cross-wiki):** poker EMAgnet + IRumAI; castle-sim SCOPE/C-ORCA; CCC harness trio; CeminiDFS Sleeper reference; gambling/cybersec/image-gen cross-wiki briefs
+- **Archive:** 13 inbox files → egress-fi; inbox cleared
+
 
 - **Sources (4):** IPO Finance Agent (2606.23032); CL-AMM dynamic fees / LVR (2606.23070); square-root law AAPL (2606.24019); Tool Evaluation Analysis Metaplan.docx (81 URLs)
 - **Concepts (3):** `@concepts/ipo-finance-agent-benchmark.md`, `@concepts/cl-amm-dynamic-fees-lvr.md`, `@concepts/square-root-law-market-impact.md`

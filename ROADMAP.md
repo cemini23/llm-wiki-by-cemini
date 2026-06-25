@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-25 — K129)
+
+- **K129 ingest (2026-06-25)** — Full ingest: 12 arXiv + 37-URL tool eval from inbox. **13 sources + 6 concepts + 5 entities.** EMAgnet/IRumAI → poker briefs; SCOPE/C-ORCA → castle-sim; loop-engineering/headroom/no-mistakes → CCC harness brief. **Phase-0:** `adopt_k129_phase0.sh`. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-24 — K128)
 
 - **K128 ingest (2026-06-24)** — Full ingest: 3 arXiv + Metaplan tool eval docx from inbox. **4 sources + 3 concepts + 1 entity + 4 updates.** IPO Finance Agent (2606.23032) REFERENCE — automated rubric eval wiki-only; CL-AMM LVR (2606.23070) REFERENCE → pm LP toxicity steal; square-root law AAPL (2606.24019) REFERENCE → pm √Q/V sizing; Metaplan eval — BBMOD Adopt MIT (game-dev, not castle-sim). **Phase-0:** `adopt_k128_phase0.sh`. **Briefs (3):** pm LVR; pm SRL; game-dev BBMOD. Archive → egress-fi; inbox cleared.

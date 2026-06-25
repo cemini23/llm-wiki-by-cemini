@@ -34,10 +34,13 @@ related:
   - sources/arxiv-aohp-os-agent-harness-2606.23449-2026-06-23.md
   - concepts/aohp-os-level-agent-harness.md
   - entities/tools/aohp-os.md
+  - concepts/self-compacting-language-model-agents.md
+  - concepts/fara-computer-use-agent-training.md
+  - entities/tools/loop-engineering.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-06-23
+updated: 2026-06-25
 ---
 
 ## Relations
