@@ -210,3 +210,6 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-06-24](sources/inbox-arxiv-reject-batch-2026-06-24.md) | read |
 | [arxiv-2606.22757-cooperative-orca-mapf-2026-06-24](sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md) | read |
 | [stronghold-4-public-demo-2026-06-24](sources/stronghold-4-public-demo-2026-06-24.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-25](sources/inbox-arxiv-reject-batch-2026-06-25.md) | read |
+| [chierhu-ai-coding-tools-game-dev-2026-06-21](sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md) | read |
+| [godot-47-release-shelf-2026-06-25](sources/godot-47-release-shelf-2026-06-25.md) | read |

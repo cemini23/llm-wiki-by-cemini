@@ -11,6 +11,7 @@ related:
   - entities/projects/castle-sim.md
   - sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
   - sources/shaggydev-tactics-engine-devlog-2023.md
+  - sources/inbox-arxiv-reject-batch-2026-06-25.md
   - sources/inbox-arxiv-reject-batch-2026-06-23.md
   - meta/cross-wiki-routing.md
 read_status: read
@@ -18,12 +19,12 @@ source_type: operator-watchlist
 source_url: https://www.youtube.com/watch?v=9TVAnK6bRPs
 maturity: validated
 created: 2026-06-23
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 ## Raw Concept
 
-Optional Godot 4 RTS/RPG long-form tutorial for **camera, selection, and command HUD** patterns — not SH2 parity. Transcript fetch attempted 2026-06-23; **blocked until premiere** (~2026-06-24). Pre-transcript metadata only.
+Optional Godot 4 RTS/RPG long-form tutorial (**~11h**, KIMS MAKING GAMES) for **camera, selection, building input, and NavigationAgent2D** patterns — not SH2 parity. EN transcript fetched 2026-06-25: **11,786 segments**, ~653 min.
 
 ## Narrative
 
@@ -31,36 +32,30 @@ Optional Godot 4 RTS/RPG long-form tutorial for **camera, selection, and command
 
 | ID | Title | Channel | Transcript | Status |
 |----|-------|---------|------------|--------|
-| 9TVAnK6bRPs | Build a Complete RTS RPG in Godot 4 \| Full Game Tutorial 11h | KIMS MAKING GAMES | ❌ | **Premiere retry 2026-06-24** — still unplayable via API (~14 min at fetch) |
+| 9TVAnK6bRPs | Build a Complete RTS RPG in Godot 4 \| Full Game Tutorial 11h | KIMS MAKING GAMES | ✅ | **11,786 segments** — sampled; archive `/tmp/godot-rts-yt-transcripts.json` |
 
-Transcript archive (session): `/tmp/godot-rts-yt-transcripts.json` — entry `9TVAnK6bRPs` status `unavailable` (VideoUnplayable: premieres in ~14 minutes at 2026-06-24 fetch).
+### `[OBSERVED-YT]` steal candidates (timestamp samples)
 
-**Fetch command (retry after premiere):**
+| # | Pattern | Timestamp | Notes |
+|---|---------|-----------|-------|
+| 1 | **Input map actions** — `confirm_build`, `cancel_build`, pause | ~03:53–04:58 | Maps to castle-sim architect confirm/cancel wall placement |
+| 2 | **Grid snap** for building placement | ~07:42 | Enable grid on build preview — adjacency to Fork B wall snap |
+| 3 | **NavigationAgent2D** on units | ~64:52, 65:23, 93:49 | Per-unit nav agent naming/layout; complements A* service Pattern 7 |
+| 4 | **Camera pan/zoom** rig | ~45:21, 100:52 | Orthographic RTS camera child setup |
+| 5 | **Selection UI** node | ~424:18 | Dedicated `selection` scene branch — author notes single-select limitations ~134:54, 200:06 |
+| 6 | **Health bar** child UI | ~230:36 | Unit overlay pattern — defer for castle-sim (no hero HP focus) |
 
-```python
-from youtube_transcript_api import YouTubeTranscriptApi
-api = YouTubeTranscriptApi()
-data = api.fetch("9TVAnK6bRPs", languages=["en"])
-```
+**Not observed in keyword sweep:** flow fields, AStarGrid2D, economy chains, minimap — tutorial is RPG/combat-heavy after early RTS scaffolding.
 
 ### Pre-transcript metadata `[TENTATIVE-META]`
-
-From oEmbed + channel marketing (not `[OBSERVED-YT]`):
 
 | Field | Value |
 |-------|-------|
 | Project | **Tiny Sword Goblin Slayers** (itch.io) |
 | Stated topics | RTS gameplay, player combat, goblin AI, defense, RPG progression, UI structure |
 | Asset pack | Pixel Frog Treasure Hunters |
-| Godot pin | 4.6.x mentioned in related uploads |
 
-**Steal candidates (hypothesis — verify against transcript chapters):**
-
-1. **RTS camera + command layer** — orthographic/pan rig, unit group orders (castle-sim Fork B 3D architect adjacency)
-2. **Box / multi-select + command panel layout** — bottom-bar resource + selection panel (SH2 HUD parity, not RPG stats pane)
-3. **Villager/job automation** — channel trailer mentions AI job system for pawns; may overlap peasant task queue — **only if transcript shows grid/building hooks, not RPG XP**
-
-### Explicit reject list (pre-transcript scope fence)
+### Explicit reject list (confirmed scope fence)
 
 Per @concepts/scope-tiers.md — do **not** import without operator sign-off:
 
@@ -68,29 +63,29 @@ Per @concepts/scope-tiers.md — do **not** import without operator sign-off:
 - Quest log / journal / narrative campaign structure
 - Party inventory, loot drops, boss encounter design
 - Hero direct-action combat as core loop (goblin-slayer fantasy)
-- Day/night cycle (unless architect-only cosmetic)
+- Explosion/VFX-heavy combat polish as priority over economy loop
 - Full 11h follow-along port of Tiny Sword codebase
 
-### Cross-watchlist status (2026-06-23)
+### Cross-watchlist status (2026-06-25)
 
 | Watchlist | Videos | Transcripts OK | Blocked |
 |-----------|--------|----------------|---------|
 | @sources/sh2-youtube-parity-watchlist-2026-06-17.md | 7 | 7 | 0 |
 | @sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md | 7 | 5 | 2 (private / no subs) |
-| This shelf | 1 | 0 | 1 (premiere) |
+| This shelf | 1 | 1 | 0 |
 
-### Post-premiere ingest checklist
+### Post-transcript checklist
 
-1. Fetch EN transcript → segment by timestamps (sample every ~15–20 min; do not paste full 11h text into wiki)
-2. Tag `[OBSERVED-YT]` steal/reject rows with video IDs + timestamps
-3. If ≥3 RTS UI/camera patterns repeat → delta @concepts/godot-pathfinding-patterns.md or Fork B architect brief only
-4. Update `briefs/research/godot-rts-rpg-youtube-watchlist.md` acceptance boxes
+1. [x] Fetch EN transcript
+2. [x] Sample timestamps (~15–20 min + keyword hits) — not full 11h paste
+3. [ ] Operator skim chapters for box-select / command panel if implementing Fork B HUD
+4. [x] Update `briefs/research/godot-rts-rpg-youtube-watchlist.md`
 
-**Verdict:** **STEAL-FROM (patterns, optional watch)** — gitignored `briefs/research/godot-rts-rpg-youtube-watchlist.md`; **transcript pending premiere**.
+**Verdict:** **STEAL-FROM (patterns, optional watch)** — gitignored `briefs/research/godot-rts-rpg-youtube-watchlist.md`; transcript **unblocked 2026-06-25**.
 
 Cross-ref: SH2-specific parity stays @sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
 
 ## Dead Ends
 
 - Treating RPG leveling/combat as castle-sim scope — out of @concepts/scope-tiers.md north star
-- Substituting older KIMS uploads (`nhuhLbUCL9I`, `mMSsBrIjM24`) for this watchlist ID — different cuts; not operator-curated list
+- Substituting older KIMS uploads for watchlist ID `9TVAnK6bRPs`

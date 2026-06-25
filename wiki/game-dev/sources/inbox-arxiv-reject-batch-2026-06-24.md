@@ -10,6 +10,7 @@ related:
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
   - sources/stronghold-4-public-demo-2026-06-24.md
+  - sources/inbox-arxiv-reject-batch-2026-06-25.md
 read_status: read
 source_type: operator-triage
 maturity: validated

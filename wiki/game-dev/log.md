@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-25] ingest | Inbox re-drop + Godot RTS transcript + AI workflow article
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-25.md (SIGMA → defer @ccc-wiki); archived; inbox cleared
+- Transcript: `9TVAnK6bRPs` **11,786 segments** → @sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md; `/tmp/godot-rts-yt-transcripts.json`
+- News: @sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md, @sources/godot-47-release-shelf-2026-06-25.md; SH4 + GamingOnLinux ref
+- Briefs: `briefs/research/` audit + sync → `castle-sim/briefs/research/` (godot-rts updated; bintrack + parity watchlist copied)
+- Sweep: @sweeps/2026-06-25-daily.md
+
+---
+
 ## [2026-06-24] ingest | Inbox re-drop + Cooperative-ORCA MAPF + SH4 demo
 
 - Inbox: 10 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-24.md; **2606.22757 ingest** → @sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md; archived; inbox cleared

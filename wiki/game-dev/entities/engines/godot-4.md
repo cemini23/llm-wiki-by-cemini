@@ -27,9 +27,10 @@ related:
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
   - sources/gdquest-pathfinding-glossary-2026-06-23.md
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+  - sources/godot-47-release-shelf-2026-06-25.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-23
+updated: 2026-06-25
 ---
 
 ## Relations
@@ -77,6 +78,7 @@ Audit method: clone `godotengine/godot` @ `4.5.2-stable` to `/tmp/godot-audit/`,
 | Distribution | Code-signed & notarized (Prehensile Tales B.V.) per official download page |
 | Failure modes | Third-party macOS window managers (Magnet, Swish) reported to cause editor input lag — disable if seen [TENTATIVE] |
 | Pin recommendation | **4.5.2-stable** (audited) or **4.6.x stable**; avoid preview builds for slice |
+| **4.7 watch** (2026-06-25) | Editor workflow, AreaLight3D, Asset Store — @sources/godot-47-release-shelf-2026-06-25.md; bump pin only after castle-sim regression pass |
 
 Use **standard** (GDScript) build, not .NET, unless C# is explicitly chosen.
 

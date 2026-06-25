@@ -13,12 +13,13 @@ related:
   - sources/bsymbolic-lava-leap-ai-pair-programmer-2026.md
   - sources/bigdevsoon-void-balls-ai-10days-2025.md
   - sources/luden-superweird-gdd-prototype-cursor-2025.md
+  - sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md
   - sources/exa-ai-gamedev-tools-batch-2026-06-13.md
   - concepts/agentic-pcg-level-design.md
   - concepts/ccgs-workflow-extraction.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-25
 ---
 
 ## Relations
