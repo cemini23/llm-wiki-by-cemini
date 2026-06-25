@@ -26,9 +26,11 @@ if str(_EXAMPLES) not in sys.path:
 from deploy_registry import append_deploy_record, git_commit_short  # noqa: E402
 from garip_mixture import (  # noqa: E402
     decayed_alpha,
+    exploitability_proxy,
     mixture_l2_drift,
     polyak_update_mixtures,
     snapshot_mixtures,
+    uniform_stance_mixture,
 )
 from mafp_chart_refinement import (  # noqa: E402
     DEFAULT_AGGREGATE_HANDS,
@@ -55,6 +57,9 @@ class GaripRoundResult:
     delta_ev: float = 0.0
     mixture_l2_drift: float = 0.0
     r_nad_delta_ev_gap: float = 0.0
+    uniform_delta_ev: float = 0.0
+    exploitability_proxy: float = 0.0
+    emagnet_tau: float = 0.0
 
 
 def run_garip(
@@ -112,6 +117,15 @@ def run_garip(
             ev_threshold=ev_threshold,
         )
 
+        uniform_mix = uniform_stance_mixture(mixes_t)
+        _, delta_uniform = best_response_chart_update(
+            _deep_copy_hu_chart(),
+            uniform_mix,
+            stance_weights,
+            ev_threshold=ev_threshold,
+        )
+        exp_proxy = exploitability_proxy(delta_ev, delta_uniform)
+
         r_nad_gap = 0.0
         if r_nad_snapshot is not None and r_nad_snapshot_every > 0:
             _, delta_snapshot = best_response_chart_update(
@@ -128,12 +142,15 @@ def run_garip(
             delta_ev=delta_ev,
             mixture_l2_drift=drift,
             r_nad_delta_ev_gap=r_nad_gap,
+            uniform_delta_ev=delta_uniform,
+            exploitability_proxy=exp_proxy,
+            emagnet_tau=round_alpha,
         )
         results.append(res)
 
         print(
             f"GARIP round {rnd}: changes={len(changes)} ΔEV={delta_ev:.4f} "
-            f"drift={drift:.4f} α={round_alpha}"
+            f"drift={drift:.4f} α={round_alpha} exp_proxy={exp_proxy:.4f}"
         )
 
         if write_chart and changes:
@@ -159,11 +176,14 @@ def run_garip(
                 notes=json.dumps({
                     "garip_round": rnd,
                     "garip_alpha": round_alpha,
+                    "emagnet_tau": round_alpha,
                     "garip_alpha_base": garip_alpha,
                     "garip_alpha_decay": garip_alpha_decay,
                     "mixture_l2_drift": round(drift, 4),
                     "chart_changes": len(changes),
                     "delta_ev": round(delta_ev, 4),
+                    "uniform_delta_ev": round(delta_uniform, 4),
+                    "exploitability_proxy": exp_proxy,
                     "r_nad_delta_ev_gap": round(r_nad_gap, 4),
                     "audit_rows": len(audit),
                 }),

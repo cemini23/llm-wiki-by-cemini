@@ -10,6 +10,39 @@ import math
 from typing import Any, Optional
 
 ACTION_KEYS = ("fold", "call", "raise")
+UNIFORM_ACTION_RATE = 1.0 / 3.0
+
+
+def uniform_action_rates() -> dict[str, float]:
+    return {k: UNIFORM_ACTION_RATE for k in ACTION_KEYS}
+
+
+def uniform_stance_mixture(
+    template: dict[str, dict[str, dict[str, dict[str, float]]]],
+) -> dict[str, dict[str, dict[str, dict[str, float]]]]:
+    """Uniform-entropy baseline: ⅓ fold/call/raise at every stance×position×bucket key."""
+    rates = uniform_action_rates()
+    out: dict[str, dict[str, dict[str, dict[str, float]]]] = {}
+    for stance, pos_map in template.items():
+        out[stance] = {}
+        for pos, bucket_map in pos_map.items():
+            out[stance][pos] = {}
+            for bucket in bucket_map.keys():
+                out[stance][pos][bucket] = dict(rates)
+    return out
+
+
+def exploitability_proxy(
+    garip_delta_ev: float,
+    uniform_delta_ev: float,
+    *,
+    lag_bb100: float | None = None,
+) -> float:
+    """Offline proxy: uniform-magnet BR EV minus GARIP/EMA anchor BR EV (higher → less exploitable)."""
+    proxy = float(uniform_delta_ev) - float(garip_delta_ev)
+    if lag_bb100 is not None:
+        proxy += max(0.0, -float(lag_bb100)) * 0.01
+    return round(proxy, 4)
 
 
 def snapshot_mixtures(

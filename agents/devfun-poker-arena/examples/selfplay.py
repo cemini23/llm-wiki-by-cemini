@@ -506,13 +506,35 @@ def play_one_hand(decide_fn: Callable, opponents: list[Callable],
 
     final = int(state.stacks[hero_idx])
     if trajectory is not None:
-        trajectory.append({
+        hand_result: dict = {
             "record_type": "hand_result",
             "hand_id": hand_id,
             "chip_delta": final - starting_stack,
             "hero_decisions": hero_step,
-        })
+        }
+        if n == 2:
+            probe = _hu_showdown_probe_labels(state, hero_idx)
+            if probe:
+                hand_result.update(probe)
+        trajectory.append(hand_result)
     return final - starting_stack
+
+
+def _hu_showdown_probe_labels(state: State, hero_idx: int) -> dict:
+    """K129 IRumAI probe: villain hole + board at hand end (HU selfplay only)."""
+    villain_idx = 1 if hero_idx == 0 else 0
+    if villain_idx >= len(state.hole_cards):
+        return {}
+    vhole = list(state.hole_cards[villain_idx])
+    if len(vhole) < 2:
+        return {}
+    board = [_arena_card_str(c) for c in state.board_cards]
+    villain_key = "".join(_arena_card_str(c) for c in vhole)
+    return {
+        "board_key": "".join(board),
+        "villain_hole_key": villain_key,
+        "villain_seat": villain_idx + 1,
+    }
 
 
 def _hero_trajectory_row(

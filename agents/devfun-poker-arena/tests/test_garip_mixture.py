@@ -9,9 +9,11 @@ sys.path.insert(0, str(ROOT / "examples"))
 
 from garip_mixture import (  # noqa: E402
     decayed_alpha,
+    exploitability_proxy,
     mixture_l2_drift,
     polyak_update_mixtures,
     snapshot_mixtures,
+    uniform_stance_mixture,
 )
 
 
@@ -61,3 +63,13 @@ def test_decayed_alpha_shrinks_per_round():
     a3 = decayed_alpha(0.3, 3, 0.5)
     assert a1 == 0.3
     assert a3 < a1
+
+
+def test_uniform_stance_mixture_entropy():
+    template = _sample_mix()
+    uniform = uniform_stance_mixture(template)
+    assert uniform["rock"]["BTN"]["mid"]["fold"] == 1 / 3
+
+
+def test_exploitability_proxy_sign():
+    assert exploitability_proxy(0.02, 0.08) == 0.06
