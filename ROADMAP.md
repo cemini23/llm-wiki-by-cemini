@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-26 — K130)
+
+- **K130 ingest (2026-06-26)** — Poker GitHub repo eval (30 URLs). **1 source + 2 entities.** pokerkit Adopt confirmed (already in Arena); rlcard Adopt for offline baseline. **Phase-0:** `adopt_k130_phase0.sh`. Brief → poker-arena stack. Archive → egress-fi.
+
 ## Current state (2026-06-25 — K129)
 
 - **K129 ingest (2026-06-25)** — Full ingest: 12 arXiv + 37-URL tool eval from inbox. **13 sources + 6 concepts + 5 entities.** EMAgnet/IRumAI → poker briefs; SCOPE/C-ORCA → castle-sim; loop-engineering/headroom/no-mistakes → CCC harness brief. **Phase-0:** `adopt_k129_phase0.sh`. Archive → egress-fi; inbox cleared.

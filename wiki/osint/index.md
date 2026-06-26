@@ -12,8 +12,12 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **461 canonical stubs** (K129 ingest +13 sources)
+Total: **464 canonical stubs** (K130 ingest +1 source +2 entities)
 
+
+### k130-ingest (1)
+
+- [Poker GitHub Repository Evaluation.docx — 30-repo eval (2026-06-26)](sources/eval-poker-github-repos-2026-06-26.md) — K130: Adopt pokerkit (Arena confirmed) + rlcard; GPL rejects aggregated. — `docx` [+poker, +eval]
 
 ### k129-ingest (13)
 

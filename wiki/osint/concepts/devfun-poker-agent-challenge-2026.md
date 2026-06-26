@@ -25,13 +25,16 @@ related:
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - concepts/kuhn-poker-sft-curriculum-reference.md
   - sources/huggingface-model-evals-74url-2026-06-23.md
+  - sources/eval-poker-github-repos-2026-06-26.md
+  - entities/tools/pokerkit.md
+  - entities/tools/rlcard.md
   - concepts/garip-running-average-self-play.md
   - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
   - meta/sandbox-season-harvest-cadence.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-23
+updated: 2026-06-26
 ---
 
 ## Relations

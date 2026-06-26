@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-26] ingest | K130 poker GitHub repo eval (30 URLs)
+
+- **Source (1):** `eval-poker-github-repos-2026-06-26.md` — Poker GitHub Repository Evaluation.docx
+- **Entities (2):** `@entities/tools/pokerkit.md` (Adopt — Arena confirmed), `@entities/tools/rlcard.md` (Adopt — offline baseline)
+- **Updates:** `@concepts/devfun-poker-agent-challenge-2026.md`
+- **Phase-0:** `scripts/adopt_k130_phase0.sh` — pokerkit + rlcard MIT; GPL rejects aggregated
+- **Brief (1):** `agents/devfun-poker-arena/briefs/2026-06-26_k130-poker-stack-baseline-steal.md`
+- **Archive:** docx → egress-fi; inbox cleared
+
 ## [2026-06-25] ingest | K129 daily inbox — 12 arXiv + URL tool eval (37 URLs)
 
 - **Sources (13):** 12× arXiv (2606.20785–2606.24386) + `eval-url-cemini-research-2026-06-25.md` (37-URL docx)

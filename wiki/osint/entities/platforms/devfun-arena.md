@@ -17,8 +17,11 @@ related:
   - sources/arxiv-poker-arena-multi-axis-2606-13815-2026-06-18.md
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
+  - entities/tools/pokerkit.md
+  - sources/eval-poker-github-repos-2026-06-26.md
 maturity: validated
 created: 2026-06-18
+updated: 2026-06-26
 updated: 2026-06-22
 ---
 
