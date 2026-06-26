@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-06-26] ingest | K131 daily inbox — 5 arXiv
+
+- **Sources (5):** RLVF legal AI (2606.23913); NLP algorithm co-occurrence (2606.24099); theme-park visitor typology (2606.24434); Relaxed NFL auto-formalization (2606.24443); ToolBench-X tool unreliability (2606.25819)
+- **Concepts (3):** `@concepts/rlvf-verifier-feedback-training.md`, `@concepts/relaxed-nfl-auto-formalization.md`, `@concepts/toolbench-x-tool-reliability-hazards.md`
+- **Entities (1):** `@entities/tools/toolbench-x.md` (REFERENCE — NO LICENSE)
+- **Updates:** `@concepts/generator-verifier-inference-time-steering.md`, `@concepts/probabilistic-agent-policy-verification.md`, `@concepts/code-as-agent-harness.md`, `@sources/arxiv-forex-lean4-fallacy-detection-2606.21867-2026-06-25.md`, `@concepts/llm-agent-systems.md`
+- **Phase-0:** `scripts/adopt_k131_phase0.sh` — ToolBench-X NO LICENSE; paper-only steals
+- **Briefs (3):** poker Relaxed NFL verifier; poker ToolBench-X arena-tool hazards; CCC ToolBench-X hazard recovery (`briefs/` gitignored)
+- **Archive:** 5 PDFs → egress-fi; inbox cleared
+
 ## [2026-06-26] ingest | K130 poker GitHub repo eval (30 URLs)
 
 - **Source (1):** `eval-poker-github-repos-2026-06-26.md` — Poker GitHub Repository Evaluation.docx

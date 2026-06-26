@@ -5,12 +5,16 @@ tags: [source, arxiv, formal-verification, lean4, llm-reasoning, k129]
 keywords: [2606.21867, ForEx, Lean4, logical fallacy, LLM Argument Verification Matrix]
 related:
   - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
+  - sources/arxiv-relaxed-nfl-auto-formalization-2606.24443-2026-06-26.md
+  - sources/arxiv-rlvf-formally-verified-law-2606.23913-2026-06-26.md
+  - concepts/generator-verifier-inference-time-steering.md
+  - concepts/relaxed-nfl-auto-formalization.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/devfun-poker-agent-challenge-2026.md
 maturity: draft
 read_status: read
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-06-26
 clusters: [llm-agents]
 ---
 

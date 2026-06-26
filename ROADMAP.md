@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-26 — K131)
+
+- **K131 ingest (2026-06-26)** — Daily digest: 5 arXiv from inbox. **5 sources + 3 concepts + 1 entity + 5 updates.** RLVF (2606.23913) + Relaxed NFL (2606.24443) → verifier cluster + poker brief; ToolBench-X (2606.25819) REFERENCE (NO LICENSE) → CCC hazard-recovery brief; 24099 + 24434 wiki-only. **Phase-0:** `adopt_k131_phase0.sh`. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-26 — K130)
 
 - **K130 ingest (2026-06-26)** — Poker GitHub repo eval (30 URLs). **1 source + 2 entities.** pokerkit Adopt confirmed (already in Arena); rlcard Adopt for offline baseline. **Phase-0:** `adopt_k130_phase0.sh`. Brief → poker-arena stack. Archive → egress-fi.

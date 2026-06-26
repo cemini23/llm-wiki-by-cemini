@@ -36,11 +36,13 @@ related:
   - entities/tools/aohp-os.md
   - concepts/self-compacting-language-model-agents.md
   - concepts/fara-computer-use-agent-training.md
-  - entities/tools/loop-engineering.md
+  - sources/arxiv-toolbench-x-tool-unreliability-2606.25819-2026-06-26.md
+  - concepts/toolbench-x-tool-reliability-hazards.md
+  - entities/tools/toolbench-x.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-06-25
+updated: 2026-06-26
 ---
 
 ## Relations

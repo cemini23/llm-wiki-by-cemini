@@ -12,8 +12,16 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **464 canonical stubs** (K130 ingest +1 source +2 entities)
+Total: **470 canonical stubs** (K131 ingest +5 sources +3 concepts +1 entity)
 
+
+### k131-ingest (5)
+
+- [RLVF — Formally Verified Law as verifier reward (2606.23913)](sources/arxiv-rlvf-formally-verified-law-2606.23913-2026-06-26.md) — RLVF training loop; verifier cluster. — `pdf` [+llm-agents, +verifier]
+- [NLP algorithm co-occurrence influence (2606.24099)](sources/arxiv-nlp-algorithm-cooccurrence-influence-2606.24099-2026-06-26.md) — Bibliometric co-occurrence networks; wiki-only. — `pdf` [+meta-research]
+- [Theme-park visitor movement — waders/swimmers/divers (2606.24434)](sources/arxiv-theme-park-visitor-movement-waders-2606.24434-2026-06-26.md) — GPS pilot study; wiki-only. — `pdf` [+simulation]
+- [Relaxed NFL auto-formalization (2606.24443)](sources/arxiv-relaxed-nfl-auto-formalization-2606.24443-2026-06-26.md) — Two-stage informal→formal; poker verifier steal. — `pdf` [+llm-agents, +verifier, +poker]
+- [ToolBench-X tool-environment unreliability (2606.25819)](sources/arxiv-toolbench-x-tool-unreliability-2606.25819-2026-06-26.md) — Five recoverable hazard types; NO LICENSE repo. — `pdf` [+llm-agents, +agent-harness]
 
 ### k130-ingest (1)
 
@@ -1383,6 +1391,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [dev.fun researcher track invite email (2026-06-19)](sources/devfun-poker-researcher-track-email-2026-06-19.md) — HU, TrueSkill, Kaggle/SDK; cross-wiki @gambling-wiki ingest K121. — source, devfun, researcher-track
 - [dev.fun Researcher Track readiness hub (Jun 2026)](concepts/devfun-researcher-track-readiness-2026-06.md) — Prep checklist, eval-as-gate, HU/6-max fork, operator commands. — concept, devfun, researcher-track
 - [dev.fun Researcher sandbox bundle Discord (2026-06-20)](sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md) — `[VALIDATED 2026-06-20]` K123 bundle submit + LLM posture. — source, devfun, researcher-track, k123
+- [dev.fun Sandbox Researcher Guide (official docs)](sources/devfun-researcher-sandbox-researcher-guide-2026-06-08.md) — `[VALIDATED 2026-06-08]` harness/assets/skills layout, reasoning policy, PvP submit. — source, devfun, researcher-track, sandbox
 - [dev.fun Researcher — pre-submit recon ritual](concepts/devfun-researcher-pre-submit-recon.md) — Sit-down rule: analyze skillFile/rules before first hand; recon script + decision matrix. — concept, devfun, researcher-track, evaluation
 - [FinAcumen financial experience memory](concepts/finacumen-financial-experience-memory.md) — K121 cross-wiki stub from CCC FinAcumen paper. — concept, finance, k121
 - [Hermes Workspace](entities/tools/hermes-workspace.md) — K113 Adopt CONDITIONAL-GO; web GUI for Hermes. — tool, hermes, k113

@@ -6,7 +6,10 @@ keywords: [VERITAS, Best-of-N, generator-verifier, gradient-free verifier, D_aut
 related:
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
   - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
-  - concepts/probabilistic-agent-policy-verification.md
+  - sources/arxiv-rlvf-formally-verified-law-2606.23913-2026-06-26.md
+  - sources/arxiv-relaxed-nfl-auto-formalization-2606.24443-2026-06-26.md
+  - concepts/rlvf-verifier-feedback-training.md
+  - concepts/relaxed-nfl-auto-formalization.md
   - concepts/non-markov-belief-state-benchmarks.md
   - concepts/generator-verifier-inference-time-steering.md
   - concepts/llm-agent-systems.md
@@ -17,7 +20,7 @@ related:
   - concepts/kuhn-poker-sft-curriculum-reference.md
 maturity: draft
 created: 2026-06-18
-updated: 2026-06-22
+updated: 2026-06-26
 ---
 
 ## Relations
@@ -55,7 +58,9 @@ Distinct from **Raeth nine-axis** (post-hoc eval) — verifier runs **before** a
 
 **K125 extension:** arXiv 2606.20510 adds **trajectory-level** conservative risk bounds when individual verifier predicates are noisy/correlated — stack under K123 pointwise gates for multi-street hands.
 
-**Posture:** REFERENCE until VERITAS / Google code licenses verified. Poker briefs stage Best-of-N (K123) + trajectory bound spike (K125) for Researcher Round.
+**K131 extension:** **RLVF** (2606.23913) trains toward verifier-pass trajectories; **Relaxed NFL** (2606.24443) adds two-stage informal→elaborated→verified pipeline — complements inference-time Best-of-N.
+
+**Posture:** REFERENCE until VERITAS / Google code licenses verified. Poker briefs stage Best-of-N (K123) + trajectory bound spike (K125) + Relaxed NFL trace schema (K131) for Researcher Round.
 
 ## Snippets
 
@@ -64,4 +69,4 @@ Distinct from **Raeth nine-axis** (post-hoc eval) — verifier runs **before** a
 ## Dead Ends
 
 - Pixel visual verifier does not transfer to NLHE — need symbolic/state verifier design.
-- Best-of-N at Arena latency may blow action timeout budget [NEEDS VERIFICATION 2026-06-18] — profile on `--dry-run` first.
+- Best-of-N at Arena latency may blow action timeout budget [NEEDS VERIFICATION 2026-06-26] — profile on `--dry-run` first.

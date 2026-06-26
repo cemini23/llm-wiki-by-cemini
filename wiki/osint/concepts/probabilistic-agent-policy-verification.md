@@ -5,7 +5,11 @@ tags: [concept, verifier, security, agents, k125]
 keywords: [probabilistic verification, Datalog, derivation graph, DRO, trajectory risk, reference monitor]
 related:
   - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
+  - sources/arxiv-relaxed-nfl-auto-formalization-2606.24443-2026-06-26.md
+  - sources/arxiv-rlvf-formally-verified-law-2606.23913-2026-06-26.md
   - concepts/generator-verifier-inference-time-steering.md
+  - concepts/rlvf-verifier-feedback-training.md
+  - concepts/relaxed-nfl-auto-formalization.md
   - concepts/code-as-agent-harness.md
   - concepts/devfun-poker-agent-challenge-2026.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
@@ -13,7 +17,7 @@ related:
   - concepts/kuhn-poker-sft-curriculum-reference.md
 maturity: draft
 created: 2026-06-21
-updated: 2026-06-22
+updated: 2026-06-26
 ---
 
 ## Relations
