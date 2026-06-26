@@ -31,6 +31,23 @@ def _norm_card(card: str) -> str:
 def _norm_cards(cards: list[str]) -> list[str]:
     return [_norm_card(c) for c in cards if c]
 
+
+def _hand_class(hole_cards: list[str]) -> str:
+    cards = _norm_cards(hole_cards)
+    if len(cards) != 2:
+        return ""
+    ranks = "23456789TJQKA"
+    r1, s1 = cards[0][0].upper(), cards[0][1]
+    r2, s2 = cards[1][0].upper(), cards[1][1]
+    if r1 not in ranks or r2 not in ranks:
+        return ""
+    if ranks.index(r1) < ranks.index(r2):
+        r1, r2 = r2, r1
+        s1, s2 = s2, s1
+    if r1 == r2:
+        return r1 + r2
+    return f"{r1}{r2}{'s' if s1 == s2 else 'o'}"
+
 ActionPair = tuple[str, Optional[int]]
 
 
@@ -71,6 +88,12 @@ PREFLOP_DEFENSE_MIN_SCORE = 50
 PREFLOP_DEFENSE_MAX_PRICE: dict[str, float] = {"BB": 0.40, "SB": 0.24}
 PREFLOP_DEFENSE_MAX_STACK_FRACTION = 0.12
 PREFLOP_V008_MAX_STACK_FRACTION = 0.15
+HU_SB_STEAL_BET_OPEN = 42
+HU_SB_STEAL_RAISE = 40
+HU_TARGET_VPIP_MIN = 0.28
+HU_TARGET_VPIP_MAX = 0.38
+HU_BB_DEFEND_MIN_SCORE = 44
+HU_SB_STEAL_TRIM = frozenset({"A5o", "A4o", "85s", "53s", "43s"})
 
 
 def _gin_style_gate_open() -> bool:
@@ -376,6 +399,13 @@ def try_preflop(
     hu = resolve_table_format(table) == "hu"
     if hu:
         raise_threshold = min(raise_threshold, bet_open_threshold)
+    if hu and open_spot and position in ("SB", "BTN"):
+        bet_open_threshold = max(38, min(bet_open_threshold, HU_SB_STEAL_BET_OPEN))
+        raise_threshold = max(38, min(raise_threshold, HU_SB_STEAL_RAISE))
+        if _hand_class(hole) in HU_SB_STEAL_TRIM:
+            if "fold" in available:
+                return "fold", None
+            return None
 
     if call_amount > 0 and not open_spot:
         # HU BB: defer to research_static_chart + S1B defend (gin score floors over-fold).
@@ -438,6 +468,21 @@ def _loose_call_max_price(position: str) -> float:
     return PREFLOP_LOOSE_CALL_MAX_PRICE_OOP
 
 
+def _preflop_defense_min_score(table: dict, position: str) -> int:
+    if resolve_table_format(table) == "hu" and position == "BB":
+        return HU_BB_DEFEND_MIN_SCORE
+    return PREFLOP_DEFENSE_MIN_SCORE
+
+
+def _preflop_defense_max_price(table: dict, position: str) -> float | None:
+    max_price = PREFLOP_DEFENSE_MAX_PRICE.get(position)
+    if max_price is None:
+        return None
+    if resolve_table_format(table) == "hu" and position == "BB":
+        return 0.48
+    return max_price
+
+
 def try_preflop_loose_call(
     table: dict,
     allowed: dict,
@@ -449,6 +494,10 @@ def try_preflop_loose_call(
     call_amount = _call_chips(allowed)
     if call_amount <= 0 or "call" not in available:
         return None
+
+    if resolve_table_format(table) == "hu" and position in ("SB", "BTN"):
+        if is_preflop_open_spot(table, allowed, call_amount) and call_amount > 0:
+            return None  # HU: no limp-complete — open or fold
 
     score = preflop_score(hole)
     if (
@@ -481,7 +530,7 @@ def try_preflop_blind_defense(
     position: str,
 ) -> Optional[ActionPair]:
     """BB/SB defend wider vs full-ring fold threshold (gin v008 telemetry fix)."""
-    max_price = PREFLOP_DEFENSE_MAX_PRICE.get(position)
+    max_price = _preflop_defense_max_price(table, position)
     if max_price is None:
         return None
 
@@ -490,7 +539,7 @@ def try_preflop_blind_defense(
         return None
 
     score = preflop_score(hole)
-    if score < PREFLOP_DEFENSE_MIN_SCORE:
+    if score < _preflop_defense_min_score(table, position):
         return None
 
     pot = int(table.get("potChips") or 0)
@@ -503,6 +552,48 @@ def try_preflop_blind_defense(
         return None
 
     return "call", call_amount
+
+
+def try_preflop_bb_defend_floor(
+    table: dict,
+    allowed: dict,
+    available: list[str],
+    hole: list[str],
+    position: str,
+) -> Optional[ActionPair]:
+    """HU BB defend floor: widen calls vs small opens without touching BTN opens."""
+    if resolve_table_format(table) != "hu" or position != "BB":
+        return None
+    return try_preflop_blind_defense(table, allowed, available, hole, position)
+
+
+def try_preflop_sb_steal_floor(
+    table: dict,
+    allowed: dict,
+    available: list[str],
+    hole: list[str],
+    position: str,
+) -> Optional[ActionPair]:
+    """HU SB/BTN first-in floor: open any hand that clears the steal score."""
+    if resolve_table_format(table) != "hu":
+        return None
+    if position not in ("SB", "BTN"):
+        return None
+    if not is_preflop_open_spot(table, allowed, _call_chips(allowed)):
+        return None
+    if _hand_class(hole) in HU_SB_STEAL_TRIM:
+        return None
+    if preflop_score(hole) < HU_SB_STEAL_BET_OPEN:
+        return None
+
+    if "raise" in available:
+        amount = _raise_amount(table, allowed)
+        if amount is not None:
+            return "raise", amount
+    if "bet" in available:
+        pot = int(table.get("potChips") or 0)
+        return "bet", _value_bet_amount(pot, allowed)
+    return None
 
 
 def try_preflop_v008_rescue(

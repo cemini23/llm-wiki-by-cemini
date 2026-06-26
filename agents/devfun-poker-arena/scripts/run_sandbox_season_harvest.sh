@@ -18,7 +18,14 @@
 #   SANDBOX_TARGET_HANDS      (default: 10000)
 #   SANDBOX_POLL_INTERVAL_S   (default: 300)
 set -euo pipefail
-cd "$(dirname "$0")/.."
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+AGENT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+cd "${AGENT_DIR}"
+
+PY=("${AGENT_DIR}/venv/bin/python")
+if [[ ! -x "${PY[0]}" ]]; then
+  PY=("$(command -v uv)" run python)
+fi
 
 COMP="${ARENA_RESEARCHER_COMP_ID:-cmqqqs05i1u7ppnu7stqbw7d8}"
 HERO="${ARENA_HERO_HANDLE:-cemini_wiki_poker}"
@@ -42,7 +49,7 @@ mkdir -p "$OUT_ROOT"
 
 poll_submissions() {
   export SANDBOX_TARGET_HANDS="$TARGET_HANDS"
-  uv run python - <<'PY' "$COMP" "$OUT_ROOT" "$SUBMISSION_IDS" "$(pwd)"
+  "${PY[@]}" - <<'PY' "$COMP" "$OUT_ROOT" "$SUBMISSION_IDS" "$AGENT_DIR"
 import json, os, sys
 from pathlib import Path
 import httpx
@@ -116,7 +123,7 @@ if [[ "$MODE" == "poll" ]]; then
 fi
 
 echo "==> Full competition export (mode=full, hero + top 50)…"
-uv run python examples/export_competition_hands.py \
+"${PY[@]}" examples/export_competition_hands.py \
   --match "$COMP" \
   --mode full \
   --top-agents 50 \

@@ -35,6 +35,7 @@ dist/
 
 # venv / uv
 .venv/
+.venv-rlcard/
 venv/
 .uv/
 uv.lock

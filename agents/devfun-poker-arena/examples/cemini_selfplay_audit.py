@@ -92,12 +92,12 @@ class HeroAudit:
             self._vpip_hands.add(hand_key)
             self.vpip += 1
             self.vpip_by_position[pos] += 1
-            if not facing_raise:
-                self._pfr_hands.add(hand_key)
-                self.pfr += 1
-                if pos in ("UTG", "MP") and hc in self._TRASH:
-                    self.ep_trash_raises += 1
-                    self.trash_hands_opened.append(f"{hc}@{pos}")
+            # PFR includes 3-bets / re-raises (gap metric); EP trash opens only unopened.
+            self._pfr_hands.add(hand_key)
+            self.pfr += 1
+            if not facing_raise and pos in ("UTG", "MP") and hc in self._TRASH:
+                self.ep_trash_raises += 1
+                self.trash_hands_opened.append(f"{hc}@{pos}")
         elif act == "call":
             # BB check behind unopened pot is not VPIP; SB complete is.
             is_bb_free = pos == "BB" and call_chips == 0
@@ -134,6 +134,12 @@ class GateThresholds:
     min_match_win_rate_maniac: float = 0.0
     min_match_win_rate_lag: float = 0.0
     gate_bb_maniac: bool = False  # advisory by default (negatively correlated w/ match-win)
+
+
+HU_MIN_VPIP_FLOOR = 0.26
+HU_MAX_VPIP_ADVISORY = 0.42
+# HU BB defend calls vs opens inflate raw VPIP−PFR vs 6-max limp metric (K131b).
+HU_MAX_VPIP_PFR_GAP = 0.12
 
 
 def _rate(num: int, den: int) -> float:
@@ -278,6 +284,11 @@ def run_audit(
         vp = merged.vpip_by_position.get(pos, 0)
         if seen:
             print(f"    {pos:3s}  {_rate(vp, seen):.1%}  ({vp}/{seen})")
+    if vpip_rate > HU_MAX_VPIP_ADVISORY:
+        print(
+            f"  WARN: VPIP {vpip_rate:.1%} > {HU_MAX_VPIP_ADVISORY:.1%} advisory ceiling "
+            "(over-loose)"
+        )
     print(sep)
 
     failures: list[str] = []
@@ -360,6 +371,8 @@ def main(argv: Optional[list[str]] = None) -> int:
     p.add_argument("--min-bb-maniac", type=float, default=GateThresholds.min_bb_per_100_maniac)
     p.add_argument("--min-pfr", type=float, default=None,
                    help="Min PFR rate (default 0.12 HU / 0.06 6-max)")
+    p.add_argument("--min-vpip", type=float, default=None,
+                   help="Min VPIP rate (default 0.26 HU / 0.18 6-max with gin-style)")
     p.add_argument("--max-vpip-pfr-gap", type=float, default=None,
                    help="Max VPIP−PFR gap (default 0.10 HU / 0.06 6-max)")
     p.add_argument("--min-match-win-rate", type=float,
@@ -388,13 +401,17 @@ def main(argv: Optional[list[str]] = None) -> int:
     )
     max_vpip_pfr_gap = (
         args.max_vpip_pfr_gap if args.max_vpip_pfr_gap is not None else (
-            0.10 if hu_mode else GateThresholds.max_vpip_pfr_gap
+            HU_MAX_VPIP_PFR_GAP if hu_mode else GateThresholds.max_vpip_pfr_gap
         )
     )
 
     min_vpip = 0.18 if os.environ.get("CEMINI_GIN_STYLE", "").strip().lower() in (
         "1", "true", "yes", "on",
     ) else 0.0
+    if hu_mode:
+        min_vpip = max(min_vpip, HU_MIN_VPIP_FLOOR)
+    if args.min_vpip is not None:
+        min_vpip = args.min_vpip
     match_hands = args.match_hands
     if hu_mode and match_hands is None:
         match_hands = 80

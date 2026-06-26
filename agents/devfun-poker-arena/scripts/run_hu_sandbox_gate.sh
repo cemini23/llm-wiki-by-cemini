@@ -140,10 +140,15 @@ case "$TABLE_FORMAT" in
         --match-hands 80 \
         --min-match-win-rate 0.55 \
         --min-match-win-maniac 0 \
+        --min-match-win-lag 0.45 \
         | tee "${BUNDLE_DIR}/maniac-audit/audit_gate.txt"
     maniac_swr="$(grep 'series_win_rate (maniac):' "${BUNDLE_DIR}/maniac-audit/audit_gate.txt" | tail -1 || true)"
     if [[ -n "$maniac_swr" ]]; then
       echo "==> Advisory maniac: ${maniac_swr#  } (target ≥38% pre-Jun 21)"
+    fi
+    lag_swr="$(grep 'series_win_rate (lag):' "${BUNDLE_DIR}/maniac-audit/audit_gate.txt" | tail -1 || true)"
+    if [[ -n "$lag_swr" ]]; then
+      echo "==> Advisory lag: ${lag_swr#  } (gated target ≥45%)"
     fi
     SELFPLAY_TRAJ_FOR_GATE="${BUNDLE_DIR}/selfplay_trajectory.jsonl"
     ;;

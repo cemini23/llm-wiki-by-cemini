@@ -87,6 +87,33 @@ def hu_regression_spots() -> list[RegressionSpot]:
             required=frozenset({"raise"}),
             notes="K122: BTN suited connector must raise first-in.",
         ),
+        RegressionSpot(
+            id="hu_sb_kto_open",
+            source="HU SB widen steal — KTo",
+            table=hu_sb_unopened(["Kd", "Th"]),
+            context=_gin_v008_ctx(),
+            forbidden=frozenset({"fold"}),
+            required=frozenset({"raise", "bet"}),
+            notes="K131 Track A: HU SB should open widened offsuit broadway.",
+        ),
+        RegressionSpot(
+            id="hu_sb_q7s_open",
+            source="HU SB widen steal — Q7s",
+            table=hu_sb_unopened(["Qs", "7s"]),
+            context=_gin_v008_ctx(),
+            forbidden=frozenset({"fold"}),
+            required=frozenset({"raise", "bet"}),
+            notes="K131 Track A: HU SB should open widened suited fill-in.",
+        ),
+        RegressionSpot(
+            id="hu_sb_j9o_open",
+            source="HU SB widen steal — J9o",
+            table=hu_sb_unopened(["Jh", "9c"]),
+            context=_gin_v008_ctx(),
+            forbidden=frozenset({"fold"}),
+            required=frozenset({"raise", "bet"}),
+            notes="K131 Track A: HU SB should open widened offsuit connector.",
+        ),
         # Trash folds (SB unopened)
         RegressionSpot(
             id="hu_sb_72o_fold",

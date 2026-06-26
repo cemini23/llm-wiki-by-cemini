@@ -28,6 +28,14 @@ from gin_style import (
     try_preflop,
     try_preflop_v008_rescue,
 )
+from gin_v2_exploits import (
+    gin_v2_exploits_enabled,
+    try_high_wtsd_thin_value_bet,
+    try_ip_dry_board_cbet,
+    try_lag_facing_bet_defend,
+    try_spr_commitment_lock,
+    try_weak_top_pair_pot_control,
+)
 
 _EXAMPLES = Path(__file__).resolve().parent
 if str(_EXAMPLES) not in sys.path:
@@ -70,12 +78,14 @@ from opponent_target import (  # noqa: E402
 )
 from s1b_exploit import (  # noqa: E402
     exploit_lane_active,
+    hu_bb_defend_hand,
     s1b_exploit_enabled,
     try_defend_bb_vs_steal,
     try_iso_vs_wide_passive_limp,
     try_jeff_nemesis_4bet,
     try_three_bet_lag_vs_open,
     try_trap_aa_kk_vs_3bet,
+    try_hu_bb_value_3bet_vs_steal,
     try_hu_three_bet_vs_aggro,
 )
 from villain_archetype import premium_concentration_index, seat_matrix_v2_enabled  # noqa: E402
@@ -528,6 +538,22 @@ def _is_hu_table(table: dict) -> bool:
     return resolve_table_format(table) == "hu"
 
 
+def _hu_bb_stackoff_exempt(
+    table: dict,
+    position: str,
+    hc: str,
+    chart_suggested: str,
+) -> bool:
+    """HU BB chart/S1B defend — do not stack-off fold before defend lanes."""
+    if not table or not _is_hu_table(table) or position != "BB":
+        return False
+    if chart_suggested == "call":
+        return True
+    if s1b_exploit_enabled() and hu_bb_defend_hand(hc):
+        return True
+    return False
+
+
 def _hu_preflop_pfr_open(
     table: dict,
     allowed: dict,
@@ -580,6 +606,25 @@ def _hu_bb_chart_raise_vs_open(
     return "raise", target
 
 
+def _hu_bb_chart_call_vs_open(
+    table: dict,
+    allowed: dict,
+    available: list,
+    call_chips: int,
+    *,
+    suggested: str,
+    position: str,
+) -> tuple[str, Optional[int]] | None:
+    """HU BB: call when static chart says call vs open/complete."""
+    if not _is_hu_table(table) or position != "BB":
+        return None
+    if call_chips <= 0 or suggested != "call":
+        return None
+    if "call" in available:
+        return "call", call_chips
+    return None
+
+
 def _apply_v008_preflop_rescue(
     action: str,
     amount: Optional[int],
@@ -594,16 +639,61 @@ def _apply_v008_preflop_rescue(
 ) -> tuple[str, Optional[int]]:
     """gin v008 marginal call / blind defend when chart path would fold."""
     call_chips = int(allowed.get("callChips") or 0)
+    from gin_style import (  # noqa: WPS433
+        HU_SB_STEAL_BET_OPEN,
+        HU_SB_STEAL_TRIM,
+        _hand_class as _gin_hand_class,
+        gin_v008_preflop_enabled,
+        preflop_score as _gin_preflop_score,
+        try_preflop_bb_defend_floor,
+        try_preflop_sb_steal_floor,
+    )
+
+    if (
+        action == "fold"
+        and _is_hu_table(table)
+        and position == "BB"
+        and call_chips > 0
+    ):
+        if chart_suggested == "call" and "call" in available:
+            return "call", call_chips
+        bb_floor = try_preflop_bb_defend_floor(
+            table, allowed, available, hole, position,
+        )
+        if bb_floor is not None:
+            return bb_floor
+
+    trim_hc = _gin_hand_class(hole)
+    if (
+        action == "fold"
+        and trim_hc in HU_SB_STEAL_TRIM
+        and _is_hu_table(table)
+        and is_preflop_open_spot(table, allowed, call_chips)
+        and position in ("BTN", "SB")
+    ):
+        return action, amount
+
+    steal_score_ok = (
+        gin_v008_preflop_enabled()
+        and _gin_preflop_score(hole) >= HU_SB_STEAL_BET_OPEN
+    )
     if (
         action == "fold"
         and _is_hu_table(table)
         and is_preflop_open_spot(table, allowed, call_chips)
-        and chart_suggested == "raise"
         and position in ("BTN", "SB")
+        and trim_hc not in HU_SB_STEAL_TRIM
+        and (chart_suggested in ("raise", "call") or steal_score_ok)
     ):
-        act, target = _preflop_first_in_wager(allowed, available, int(table.get("potChips") or 0))
-        if act:
-            return act, target
+        steal_floor = try_preflop_sb_steal_floor(table, allowed, available, hole, position)
+        if steal_floor is not None:
+            return steal_floor
+        if chart_suggested in ("raise", "call"):
+            act, target = _preflop_first_in_wager(
+                allowed, available, int(table.get("potChips") or 0),
+            )
+            if act:
+                return act, target
     rescue = try_preflop_v008_rescue(
         table, allowed, available, hole, position, action, lane_tight=lane_tight,
     )
@@ -805,7 +895,7 @@ def decide(
     if jp_out is not None:
         bound_sims = 500 if deadline_s > 5 else 200
         return _apply_trajectory_bound_veto(
-            table, allowed, jp_out, hole, board, equity, bound_sims,
+            table, allowed, jp_out, hole, board, equity, pot_odds, bound_sims,
         )
     hud_mode = hud.get("mode") or "unknown"
     hud_mode_raw = hud_mode
@@ -1614,7 +1704,8 @@ def decide(
     if (street == "Preflop" and call_chips > 0 and "fold" in available
             and _preflop_stackoff_should_fold(
                 hc, call_chips, hero_stack_early, position=position)
-            and not _hero_cannot_lose()):
+            and not _hero_cannot_lose()
+            and not _hu_bb_stackoff_exempt(table, position, hc, suggested or "")):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: preflop stack-off — fold")
 
@@ -1797,19 +1888,33 @@ def decide(
             hud_mode_raw=hud_mode_raw,
         )
     elif call_chips == 0:
-        gin_free = (
-            try_postflop_free(table, allowed, available, hole, board)
-            if gin_style_postflop_enabled()
-            else None
-        )
-        if gin_free is not None:
-            action_name, amount = gin_free
+        v2_bet = None
+        if gin_v2_exploits_enabled():
+            v2_bet = (
+                try_high_wtsd_thin_value_bet(
+                    table, allowed, available, hole, board, hud=hud, pot=pot,
+                )
+                or try_ip_dry_board_cbet(
+                    table, allowed, available, hole, board,
+                    hud=hud, pot=pot, in_position=in_position,
+                )
+            )
+        if v2_bet is not None:
+            action_name, amount = v2_bet
         else:
-            action_name, amount = _postflop_free(
-                equity, allowed, available, pot, pot_control=pot_control,
-                ps_bias=ps_bias, ps_library=ps_library,
-                hand_eval=ps_hand_eval,
-                hand_class=hc, hud_mode=hud_mode, margins=margins)
+            gin_free = (
+                try_postflop_free(table, allowed, available, hole, board)
+                if gin_style_postflop_enabled()
+                else None
+            )
+            if gin_free is not None:
+                action_name, amount = gin_free
+            else:
+                action_name, amount = _postflop_free(
+                    equity, allowed, available, pot, pot_control=pot_control,
+                    ps_bias=ps_bias, ps_library=ps_library,
+                    hand_eval=ps_hand_eval,
+                    hand_class=hc, hud_mode=hud_mode, margins=margins)
     else:
         action_name, amount = _postflop_facing_bet(
             equity, pot_odds, allowed, available, call_chips, pot,
@@ -1823,6 +1928,41 @@ def decide(
             villain_archetype=villain_archetype,
             villain_vpip=villain_vpip,
         )
+        if action_name == "fold" and street != "Preflop":
+            # K131b Track B: vs-LAG postflop defend (before SPR lock)
+            if gin_v2_exploits_enabled():
+                lag_defend = try_lag_facing_bet_defend(
+                    table, allowed, available, hole, board,
+                    proposed_action=action_name,
+                    equity=equity,
+                    pot_odds=pot_odds,
+                    hud=hud,
+                    call_chips=call_chips,
+                )
+                if lag_defend is not None:
+                    action_name, amount = lag_defend
+            # SPR commitment lock (fold -> call/ai with strong hands low SPR)
+            if action_name == "fold":
+                locked = try_spr_commitment_lock(
+                    table, allowed, available, hole, board,
+                    proposed_action="fold",
+                    effective_stack=_effective_stack_chips(table, max_playable),
+                    pot=pot,
+                    call_chips=call_chips,
+                )
+                if locked is not None:
+                    action_name, amount = locked
+        # Weak top pair pot control: downgrade call/raise to fold vs big bets
+        if gin_v2_exploits_enabled() and action_name in ("call", "raise", "all-in") and street != "Preflop":
+            capped = try_weak_top_pair_pot_control(
+                table, allowed, available, hole, board,
+                proposed_action=action_name,
+                call_chips=call_chips,
+                pot=pot,
+                effective_stack=_effective_stack_chips(table, max_playable),
+            )
+            if capped is not None:
+                action_name, amount = capped
 
     if action_name in ("fold", "check", "call"):
         amount = None
@@ -1949,6 +2089,15 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
                   placement_chase: bool = False,
                   table: Optional[dict] = None) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
+    if (
+        _is_hu_table(table or {})
+        and position in ("BTN", "SB")
+        and hand_class in {"A5o", "A4o", "85s", "53s", "43s"}
+    ):
+        if "fold" in available:
+            return "fold", None
+        if "check" in available:
+            return "check", None
     if (position == "SB" and _weak_ace_offsuit(hand_class)
             and suggested == "raise" and "check" in available):
         return "check", None
@@ -2122,7 +2271,11 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     hud_mode_raw = hud_mode_raw or hud_mode
     hc = chart.get("hand_class") or ""
     position = chart.get("position") or ""
-    suggested = chart.get("suggested_action") or "fold"
+    suggested = (
+        chart.get("suggested_action")
+        or chart.get("preflop_action")
+        or "fold"
+    )
     hud = hud or {}
 
     hu_bb_raise = _hu_bb_chart_raise_vs_open(
@@ -2131,6 +2284,27 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     )
     if hu_bb_raise is not None:
         return hu_bb_raise
+
+    hu_bb_value_3b = try_hu_bb_value_3bet_vs_steal(
+        hand_class=hc,
+        position=position,
+        call_chips=call_chips,
+        pot=pot,
+        allowed=allowed,
+        available=available,
+        hero_stack_chips=hero_stack_chips,
+        big_blind=big_blind,
+        table=table,
+    )
+    if hu_bb_value_3b is not None:
+        return hu_bb_value_3b
+
+    hu_bb_call = _hu_bb_chart_call_vs_open(
+        table, allowed, available, call_chips,
+        suggested=suggested, position=position,
+    )
+    if hu_bb_call is not None:
+        return hu_bb_call
 
     if table and _is_hu_table(table) and call_chips > 0:
         hu_aggro_3b = try_hu_three_bet_vs_aggro(
@@ -2179,9 +2353,13 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                 return "fold", None
 
     # Preflop stack-off discipline — fold dominated trash vs large commits (HL S2 R3 −100 cluster).
-    if (_preflop_stackoff_should_fold(
-            hc, call_chips, hero_stack_chips, position=position)
-            and "fold" in available):
+    if (
+        _preflop_stackoff_should_fold(
+            hc, call_chips, hero_stack_chips, position=position,
+        )
+        and "fold" in available
+        and not _hu_bb_stackoff_exempt(table or {}, position, hc, suggested)
+    ):
         return "fold", None
 
     jeff_4b = try_jeff_nemesis_4bet(
@@ -2232,6 +2410,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             equity=equity,
             available=available,
             hero_stack_chips=hero_stack_chips,
+            table=table,
+            hud_mode=hud_mode_raw or hud_mode,
         )
         if defend:
             return defend
@@ -2239,14 +2419,36 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     steal_sized = call_chips > 0 and call_chips <= big_blind * 4
     bb_chase_steal = placement_chase and position == "BB" and steal_sized
 
+    if (
+        _is_hu_table(table or {})
+        and s1b_exploit_enabled()
+        and position == "BB"
+        and call_chips > 0
+    ):
+        defend = try_defend_bb_vs_steal(
+            hand_class=hc,
+            position=position,
+            call_chips=call_chips,
+            pot_odds=pot_odds,
+            equity=equity,
+            available=available,
+            hero_stack_chips=hero_stack_chips,
+            table=table,
+            hud_mode=hud_mode_raw or hud_mode,
+        )
+        if defend:
+            return defend
+
     # Static chart is open-range only — facing a raise, downgrade spurious "raise" (77 MP −100).
     if (call_chips > 0 and suggested == "raise" and hc not in _PREFLOP_3BET_OK
             and not (_is_hu_table(table or {}) and position == "BB")):
         suggested = "fold"
 
     # BB: never defend chart-trash vs raises (Q6o BB −100 — IP preflop pricing leak).
+    # HU: S1B defend lane handles BB vs steal — do not auto-fold weak facing-raise set.
     if (position == "BB" and call_chips > 0 and hc in _WEAK_FACING_RAISE
             and hc not in {"AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQs", "AQo"}
+            and not (_is_hu_table(table or {}) and s1b_exploit_enabled())
             and "fold" in available):
         return "fold", None
 
@@ -2311,6 +2513,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                 equity=equity,
                 available=available,
                 hero_stack_chips=hero_stack_chips,
+                table=table,
+                hud_mode=hud_mode_raw or hud_mode,
             )
             if defend:
                 return defend
@@ -2443,6 +2647,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             equity=equity,
             available=available,
             hero_stack_chips=hero_stack_chips,
+            table=table,
+            hud_mode=hud_mode_raw or hud_mode,
         )
         if defend:
             return defend
@@ -2501,6 +2707,9 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         return "raise", target
     call_margin = 0.03 if in_position else 0.06
     fold_margin = 0.08 if in_position else 0.05
+    if hud_mode in ("lag", "maniac") and position == "BB":
+        call_margin -= 0.05
+        fold_margin += 0.04
     if position in ("UTG", "MP"):
         call_margin += 0.05
         fold_margin -= 0.03
