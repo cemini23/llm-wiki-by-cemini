@@ -10,6 +10,7 @@ related:
   - concepts/game-dev-wiki-scope.md
   - sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+  - sources/inbox-arxiv-reject-batch-2026-06-26.md
 read_status: read
 source_type: operator-triage
 maturity: validated

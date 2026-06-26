@@ -91,6 +91,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [gamedev-resources](entities/tools/gamedev-resources.md) | validated | CC0 asset link index |
 | [gamedevbench](entities/tools/gamedevbench.md) | validated | Godot agent benchmark — **STEAL-FROM** (Apache-2.0) |
 | [ziva-godot-agent](entities/tools/ziva-godot-agent.md) | validated | In-editor Godot agent — **CONDITIONAL-GO** (proprietary) |
+| [hera-agent-godot](entities/tools/hera-agent-godot.md) | validated | Low-token CLI editor control — **CONDITIONAL-GO** W2 (4.7+) |
 
 ## Entities — Games (reference)
 
@@ -213,3 +214,6 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-06-25](sources/inbox-arxiv-reject-batch-2026-06-25.md) | read |
 | [chierhu-ai-coding-tools-game-dev-2026-06-21](sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md) | read |
 | [godot-47-release-shelf-2026-06-25](sources/godot-47-release-shelf-2026-06-25.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-26](sources/inbox-arxiv-reject-batch-2026-06-26.md) | read |
+| [notnull92-hera-agent-godot-devto-2026-06-25](sources/notnull92-hera-agent-godot-devto-2026-06-25.md) | read |
+| [hera-agent-godot-phase-0-audit-2026-06-26](sources/hera-agent-godot-phase-0-audit-2026-06-26.md) | read |

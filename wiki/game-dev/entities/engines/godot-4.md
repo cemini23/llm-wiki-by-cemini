@@ -28,6 +28,7 @@ related:
   - sources/gdquest-pathfinding-glossary-2026-06-23.md
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
   - sources/godot-47-release-shelf-2026-06-25.md
+  - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-25

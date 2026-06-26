@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-26] ingest | Inbox re-drop + hera-agent-godot Phase-0
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-26.md (all reject/re-drop); archived; inbox cleared
+- Phase-0: @sources/hera-agent-godot-phase-0-audit-2026-06-26.md → **CONDITIONAL-GO** @entities/tools/hera-agent-godot.md (Godot 4.7+ pin)
+- News: @sources/notnull92-hera-agent-godot-devto-2026-06-25.md
+- Brief: `briefs/research/hera-agent-godot-w2-pilot.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-26-daily.md
+
+---
+
 ## [2026-06-25] ingest | Inbox re-drop + Godot RTS transcript + AI workflow article
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-25.md (SIGMA → defer @ccc-wiki); archived; inbox cleared

@@ -13,8 +13,10 @@ related:
   - entities/tools/godot-ai-playtest.md
   - entities/tools/gamedevbench.md
   - entities/tools/ziva-godot-agent.md
+  - entities/tools/hera-agent-godot.md
   - sources/gamedevbench-phase-0-audit-2026-06-21.md
   - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
+  - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
   - sources/hi-godot-ai-phase-0-audit-2026-06-13.md
   - sources/sods2-godot-mcp-phase-0-audit-2026-06-13.md
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md
@@ -22,7 +24,7 @@ related:
   - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-21
+updated: 2026-06-26
 ---
 
 ## Relations
@@ -44,6 +46,7 @@ Comparative landscape of Godot + LLM/MCP and automation tools — **Phase-0 audi
 | @entities/tools/sods2-godot-mcp.md | **CONDITIONAL-GO** | W2 alt if Node/debugger needed |
 | @entities/tools/godot-stagehand.md | **CONDITIONAL-GO** | W2 CI smoke (preferred automation) |
 | @entities/tools/godot-ai-playtest.md | **CONDITIONAL-GO** | W2 alt — pick one with stagehand |
+| @entities/tools/hera-agent-godot.md | **CONDITIONAL-GO** | W2 low-token CLI verify (4.7+ pin) |
 | Farraskuy/Godot-MCP (168 tools claimed) | **NO-GO** | Unverified; skip |
 | funplay, dreamer568, etc. | **WATCH** | No Phase-0 |
 
