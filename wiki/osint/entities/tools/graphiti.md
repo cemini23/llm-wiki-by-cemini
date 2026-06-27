@@ -8,7 +8,7 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/claude-mem.md
   - entities/tools/gbrain.md
-maturity: draft
+maturity: validated
 created: 2026-06-27
 updated: 2026-06-27
 ---
@@ -34,6 +34,8 @@ K132 Phase-0 on [getzep/graphiti](https://github.com/getzep/graphiti) — tempor
 
 **Not prod trading stack.** Pair with laptop wiki authoring; distinct from retired gbrain MCP (see `@entities/tools/gbrain.md`).
 
+**K132 operator spike: PASS (2026-06-27).** Not pending. Aura holds r2+ episodes; v1 extracted facts may still appear in hybrid search until manual purge.
+
 Brief: `briefs/ccc-2026-06-27_k132-graphiti-temporal-kg-spike.md`
 
 ### K132 spike status (2026-06-27)
@@ -45,9 +47,10 @@ Runner: `.local/graphiti_spike_ingest.py` + venv `.local/venv-graphiti-spike/` (
 | Neo4j Aura (`NEO4J_*` in repo `.env`) | **PASS** — direct connect + indices |
 | Episode ingest (20 `wiki/entities/tools/` pages) | **PASS** — all 20 episodes OK |
 | Hybrid search — gbrain RETIRED vs Adopt | **PASS** — top facts include *distinct from retired gbrain MCP* |
-| Cross-encoder rerank (`search_` + OpenRouter) | **WARN** — logprob zip error; basic `search()` fallback works |
+| Cross-encoder rerank (`search_` + OpenRouter) | **SKIP** — OpenRouter logprobs incompatible; default `GRAPHITI_SEARCH_MODE=basic` |
+| Re-ingest verification (2026-06-27) | **PASS** — r2 episodes ingested; fresh facts present (legacy v1 may coexist in Aura) |
 
-**Env wiring:** Neo4j from `OSINT WORKSPACE/.env`; LLM + embeddings from `~/.cemini/llm-routing.env` (`OPENROUTER_API_KEY`, default models `google/gemini-2.5-flash` + `openai/text-embedding-3-small`). Re-run: `source scripts/source_llm_routing_env.sh && python3 .local/graphiti_spike_ingest.py` (add `--search-only` to skip re-ingest).
+**Env wiring:** Neo4j from `OSINT WORKSPACE/.env`; LLM + embeddings from `~/.cemini/llm-routing.env` (`OPENROUTER_API_KEY`, default models `google/gemini-2.5-flash` + `openai/text-embedding-3-small`). Optional native rerank: `GRAPHITI_CROSS_ENCODER=openai` when `OPENAI_API_KEY` set. Re-run: `source scripts/source_llm_routing_env.sh && python3 .local/graphiti_spike_ingest.py` (add `--search-only` or `--verify-only`).
 
 Report: `.local/reports/graphiti-spike-2026-06-27.md`. Posture remains **Adopt** for laptop-side temporal KG eval; not prod trading stack.
 

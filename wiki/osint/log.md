@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-27] spike | Graphiti re-ingest + verification (r2/r3)
+
+- **Runner:** `.local/graphiti_spike_ingest.py` — basic search default, optional fixes, `--only` flag
+- **Re-ingest:** 20 pages r2 + graphiti/gbrain r3; **VERIFY PASS**
+- **Note:** legacy v1 Aura facts may coexist until manual purge; fresh r2+ facts authoritative
+- **Update:** `@entities/tools/graphiti.md` → `validated`
+
 ## [2026-06-27] spike | Graphiti P0 — Aura ingest + hybrid search
 
 - **Runner:** `.local/graphiti_spike_ingest.py` + `.local/venv-graphiti-spike/`
