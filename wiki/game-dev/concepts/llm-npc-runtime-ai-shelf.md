@@ -13,9 +13,10 @@ related:
   - sources/morganpage-local-npc-dialogue-2026.md
   - sources/exa-npc-pcg-ccgs-batch-2026-06-13.md
   - sources/ixie-agentic-npc-balance-2026.md
+  - sources/unity-sentis-practical-shelf-2026-06-23.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-27
 ---
 
 ## Relations
@@ -45,6 +46,7 @@ updated: 2026-06-15
 | NVIDIA ACE + Qwen3-8B SLM | On-device inference, TTS, IGI SDK | UE middleware | AAA PC; not Godot hobby path [@sources/nvidia-ace-qwen3-on-device-npc-2025.md] |
 | Ubisoft Teammates / Neo NPC | Voice commands, squad AI, authored "fences" for improv | Custom research FPS | Design patterns for guardrails [@sources/ubisoft-teammates-ai-experiment-2025.md] |
 | GDC 2025 ACE talk | On-device SLMs for character reasoning | — | Watch for Godot ports |
+| Unity Sentis (ONNX inference) | Small classifiers — difficulty, perception, gestures; **not LLMs** | Unity 6 only | Contrast shelf [@sources/unity-sentis-practical-shelf-2026-06-23.md] |
 
 ### Indie / open-source implementations
 

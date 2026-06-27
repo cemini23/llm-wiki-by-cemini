@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-27] ingest | Inbox re-drop + Unity Sentis contrast shelf
+
+- Inbox: 4 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-27.md (all reject/re-drop); archived; inbox cleared
+- News: @sources/unity-sentis-practical-shelf-2026-06-23.md → @concepts/llm-npc-runtime-ai-shelf.md (small-ML ≠ LLM NPC)
+- Phase-0: none (Sentis is Unity-bundled; out of Godot scope)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity check)
+- Sweep: @sweeps/2026-06-27-daily.md
+
+---
+
 ## [2026-06-26] ingest | Inbox re-drop + hera-agent-godot Phase-0
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-26.md (all reject/re-drop); archived; inbox cleared

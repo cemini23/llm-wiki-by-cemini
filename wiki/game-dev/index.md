@@ -217,3 +217,5 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-06-26](sources/inbox-arxiv-reject-batch-2026-06-26.md) | read |
 | [notnull92-hera-agent-godot-devto-2026-06-25](sources/notnull92-hera-agent-godot-devto-2026-06-25.md) | read |
 | [hera-agent-godot-phase-0-audit-2026-06-26](sources/hera-agent-godot-phase-0-audit-2026-06-26.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-27](sources/inbox-arxiv-reject-batch-2026-06-27.md) | read |
+| [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |

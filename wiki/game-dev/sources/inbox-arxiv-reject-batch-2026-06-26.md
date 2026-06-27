@@ -10,6 +10,7 @@ related:
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
   - sources/notnull92-hera-agent-godot-devto-2026-06-25.md
+  - sources/inbox-arxiv-reject-batch-2026-06-27.md
 read_status: read
 source_type: operator-triage
 maturity: validated
