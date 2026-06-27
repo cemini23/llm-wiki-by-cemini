@@ -1251,6 +1251,109 @@ def merge_dynamic_report(
         report.veto_gates = report.veto_gates + [f"dynamic-audit-reject ({dynamic.model})"]
     return report
 
+# ----------------------------------------------------------------- curator mode --
+
+CURATE_STALE_DAYS = 30
+
+
+def _parse_frontmatter_dates(text: str) -> tuple[str | None, str | None]:
+    if not text.startswith("---"):
+        return None, None
+    end = text.find("\n---", 3)
+    if end == -1:
+        return None, None
+    block = text[3:end]
+    created = updated = None
+    for line in block.splitlines():
+        if line.startswith("created:"):
+            created = line.split(":", 1)[1].strip()
+        elif line.startswith("updated:"):
+            updated = line.split(":", 1)[1].strip()
+    return created, updated
+
+
+def _index_topic_tokens(index_path: Path) -> set[str]:
+    if not index_path.exists():
+        return set()
+    tokens: set[str] = set()
+    for line in index_path.read_text(encoding="utf-8", errors="replace").splitlines():
+        for word in re.findall(r"[a-z0-9][a-z0-9-]{2,}", line.lower()):
+            tokens.add(word)
+    return tokens
+
+
+def curate_skills_and_rules(
+    *,
+    skills_dir: Path,
+    rules_dir: Path,
+    report_path: Path,
+    stale_days: int = CURATE_STALE_DAYS,
+) -> Path:
+    """Hermes curator pattern: propose prune/consolidate; never delete."""
+    index_tokens = _index_topic_tokens(WIKI / "index.md")
+    now = datetime.now()
+    rows: list[dict[str, str]] = []
+
+    def scan(path: Path, kind: str) -> None:
+        if not path.exists():
+            return
+        if kind == "skill":
+            candidates = sorted(path.glob("*/SKILL.md"))
+        else:
+            candidates = sorted(path.glob("*.mdc"))
+        for fp in candidates:
+            rel = fp.relative_to(ROOT)
+            text = fp.read_text(encoding="utf-8", errors="replace")
+            mtime_age = (now - datetime.fromtimestamp(fp.stat().st_mtime)).days
+            _, updated = _parse_frontmatter_dates(text)
+            title = fp.parent.name if kind == "skill" else fp.stem
+            body_tokens = set(re.findall(r"[a-z0-9][a-z0-9-]{2,}", text.lower()))
+            overlap = len(body_tokens & index_tokens)
+            reasons: list[str] = []
+            if mtime_age >= stale_days:
+                reasons.append(f"stale ({mtime_age}d since mtime)")
+            if overlap == 0 and len(body_tokens) > 20:
+                reasons.append("low wiki/index overlap")
+            if kind == "skill" and title in {"goal", "to-issues", "grill-with-docs"}:
+                reasons.append("federation canon — KEEP")
+            decision = "KEEP" if "federation canon" in " ".join(reasons) else (
+                "PRUNE?" if reasons else "KEEP"
+            )
+            rows.append(
+                {
+                    "path": str(rel),
+                    "kind": kind,
+                    "title": title,
+                    "updated": updated or "—",
+                    "mtime_days": str(mtime_age),
+                    "index_overlap": str(overlap),
+                    "reasons": "; ".join(reasons) if reasons else "active",
+                    "decision": decision,
+                }
+            )
+
+    scan(skills_dir, "skill")
+    scan(rules_dir, "rule")
+
+    report_path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [
+        f"# Skill / rule curator report — {TODAY.isoformat()}",
+        "",
+        "Hermes curator pattern (K132): **proposal only** — human approves before delete.",
+        "",
+        "| Decision | Kind | Path | Updated | Mtime(d) | Index overlap | Reasons |",
+        "|----------|------|------|---------|----------|---------------|---------|",
+    ]
+    for r in sorted(rows, key=lambda x: (x["decision"] != "PRUNE?", x["path"])):
+        lines.append(
+            f"| {r['decision']} | {r['kind']} | `{r['path']}` | {r['updated']} | "
+            f"{r['mtime_days']} | {r['index_overlap']} | {r['reasons']} |"
+        )
+    lines.extend(["", f"Total scanned: {len(rows)}", ""])
+    report_path.write_text("\n".join(lines), encoding="utf-8")
+    return report_path
+
+
 # ----------------------------------------------------------------- entrypoint --
 
 
@@ -1259,7 +1362,40 @@ def main():
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    p.add_argument("brief", help="Path to brief / skill / prompt file")
+    p.add_argument(
+        "brief",
+        nargs="?",
+        help="Path to brief / skill / prompt file (omit with --curate)",
+    )
+    p.add_argument(
+        "--curate",
+        action="store_true",
+        help="Scan .cursor/skills + .cursor/rules; write prune proposal report (no deletes)",
+    )
+    p.add_argument(
+        "--skills-dir",
+        type=Path,
+        default=ROOT / ".cursor" / "skills",
+        help="Skills root for --curate (default: .cursor/skills)",
+    )
+    p.add_argument(
+        "--rules-dir",
+        type=Path,
+        default=ROOT / ".cursor" / "rules",
+        help="Rules dir for --curate (default: .cursor/rules)",
+    )
+    p.add_argument(
+        "--report",
+        type=Path,
+        default=None,
+        help="Report path for --curate (default: .local/reports/skill-curate-YYYY-MM-DD.md)",
+    )
+    p.add_argument(
+        "--curate-stale-days",
+        type=int,
+        default=CURATE_STALE_DAYS,
+        help="Flag skills/rules untouched this many days (default: 30)",
+    )
     p.add_argument("--json", action="store_true", help="Emit JSON report instead of text")
     p.add_argument("--strict", action="store_true", help="Treat warnings as veto gates")
     p.add_argument(
@@ -1289,6 +1425,23 @@ def main():
         help="Force inline static checks; do not delegate to `vet` CLI.",
     )
     args = p.parse_args()
+
+    if args.curate:
+        report = args.report or (
+            ROOT / ".local" / "reports" / f"skill-curate-{TODAY.isoformat()}.md"
+        )
+        out = curate_skills_and_rules(
+            skills_dir=args.skills_dir,
+            rules_dir=args.rules_dir,
+            report_path=report,
+            stale_days=args.curate_stale_days,
+        )
+        print(f"Curator report written: {out}")
+        print(f"Scanned skills under {args.skills_dir} and rules under {args.rules_dir}")
+        sys.exit(0)
+
+    if not args.brief:
+        p.error("brief path required unless --curate is set")
 
     path = Path(args.brief)
     if not path.exists():

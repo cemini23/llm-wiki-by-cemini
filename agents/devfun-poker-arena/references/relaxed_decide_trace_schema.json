@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cemini.dev/schemas/relaxed_decide_trace/v1",
+  "title": "Relaxed DecideTrace Schema",
+  "description": "Permissive K131 stub for recording poker decide() traces. Only street and action_class are required; sizing and chip counts may be omitted.",
+  "type": "object",
+  "required": ["street", "action_class"],
+  "properties": {
+    "street": {
+      "type": "string",
+      "enum": ["preflop", "flop", "turn", "river", "showdown"],
+      "description": "Betting street for the action."
+    },
+    "action_class": {
+      "type": "string",
+      "enum": ["fold", "check", "call", "bet", "raise", "all-in"],
+      "description": "Normalized action family."
+    },
+    "sizing_intent": {
+      "type": "string",
+      "description": "Optional high-level sizing tag such as small, medium, large, or jam."
+    },
+    "rationale": {
+      "type": "string",
+      "description": "Optional short human-readable explanation."
+    },
+    "hero_stack": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Optional hero chip count."
+    },
+    "villain_stack": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Optional villain chip count."
+    },
+    "pot": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Optional pot size snapshot."
+    }
+  },
+  "additionalProperties": true,
+  "examples": [
+    {
+      "street": "preflop",
+      "action_class": "raise",
+      "sizing_intent": "medium",
+      "rationale": "button open versus passive blind"
+    },
+    {
+      "street": "turn",
+      "action_class": "check"
+    }
+  ]
+}

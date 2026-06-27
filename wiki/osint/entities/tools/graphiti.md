@@ -36,6 +36,10 @@ K132 Phase-0 on [getzep/graphiti](https://github.com/getzep/graphiti) — tempor
 
 Brief: `briefs/ccc-2026-06-27_k132-graphiti-temporal-kg-spike.md`
 
+### K132 spike status (2026-06-27)
+
+Runner: `.local/graphiti_spike_ingest.py` + venv `.local/venv-graphiti-spike/` (`graphiti-core` installed). **Blocked:** Graphiti defaults to **Neo4j** driver — needs `NEO4J_URI` / running Neo4j (or FalkorDB per Graphiti docs), plus embedder API key. Not fully ingested this session; posture **Adopt pending operator spike PASS**.
+
 ## Snippets
 
 > Apache-2.0 temporal knowledge graph for AI agent memory [Source: getzep/graphiti GitHub (retrieved 2026-06-27)]
