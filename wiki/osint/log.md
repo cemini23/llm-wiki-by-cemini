@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-27] spike | Graphiti P0 — Aura ingest + hybrid search
+
+- **Runner:** `.local/graphiti_spike_ingest.py` + `.local/venv-graphiti-spike/`
+- **Neo4j:** Aura creds from repo `.env` — 20 tool-entity episodes ingested
+- **Search:** PASS on gbrain RETIRED signal (basic hybrid; cross-encoder rerank WARN on OpenRouter)
+- **Update:** `@entities/tools/graphiti.md` spike table; report `.local/reports/graphiti-spike-2026-06-27.md`
+
 ## [2026-06-27] ingest | K132 — Hermes routing eval + 2 arXiv
 
 - **Sources (3):** `eval-tool-routing-hermes-plan-2026-06-27.md` (71 URLs, Hermes keyword collision); Morality Game (2606.24037); FDN spatiotemporal (2606.25201)

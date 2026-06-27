@@ -38,7 +38,18 @@ Brief: `briefs/ccc-2026-06-27_k132-graphiti-temporal-kg-spike.md`
 
 ### K132 spike status (2026-06-27)
 
-Runner: `.local/graphiti_spike_ingest.py` + venv `.local/venv-graphiti-spike/` (`graphiti-core` installed). **Blocked:** Graphiti defaults to **Neo4j** driver — needs `NEO4J_URI` / running Neo4j (or FalkorDB per Graphiti docs), plus embedder API key. Not fully ingested this session; posture **Adopt pending operator spike PASS**.
+Runner: `.local/graphiti_spike_ingest.py` + venv `.local/venv-graphiti-spike/` (`graphiti-core`).
+
+| Check | Result |
+|-------|--------|
+| Neo4j Aura (`NEO4J_*` in repo `.env`) | **PASS** — direct connect + indices |
+| Episode ingest (20 `wiki/entities/tools/` pages) | **PASS** — all 20 episodes OK |
+| Hybrid search — gbrain RETIRED vs Adopt | **PASS** — top facts include *distinct from retired gbrain MCP* |
+| Cross-encoder rerank (`search_` + OpenRouter) | **WARN** — logprob zip error; basic `search()` fallback works |
+
+**Env wiring:** Neo4j from `OSINT WORKSPACE/.env`; LLM + embeddings from `~/.cemini/llm-routing.env` (`OPENROUTER_API_KEY`, default models `google/gemini-2.5-flash` + `openai/text-embedding-3-small`). Re-run: `source scripts/source_llm_routing_env.sh && python3 .local/graphiti_spike_ingest.py` (add `--search-only` to skip re-ingest).
+
+Report: `.local/reports/graphiti-spike-2026-06-27.md`. Posture remains **Adopt** for laptop-side temporal KG eval; not prod trading stack.
 
 ## Snippets
 
