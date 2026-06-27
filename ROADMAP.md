@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-27 — K132)
+
+- **K132 ingest (2026-06-27)** — Hermes routing eval docx (71 URLs) + 2 arXiv. **3 sources + 2 concepts + 2 entities + 3 updates.** graphiti Adopt; screenpipe CONDITIONAL-GO; gbrain RETIRED reaffirmed with hybrid-search spike brief; hermes curator steal → CCC. Morality Game + FDN wiki-only. **Phase-0:** `adopt_k132_phase0.sh`. PNG field notes skipped. Archive → egress-fi.
+
 ## Current state (2026-06-26 — K131)
 
 - **K131 ingest (2026-06-26)** — Daily digest: 5 arXiv from inbox. **5 sources + 3 concepts + 1 entity + 5 updates.** RLVF (2606.23913) + Relaxed NFL (2606.24443) → verifier cluster + poker brief; ToolBench-X (2606.25819) REFERENCE (NO LICENSE) → CCC hazard-recovery brief; 24099 + 24434 wiki-only. **Phase-0:** `adopt_k131_phase0.sh`. Archive → egress-fi; inbox cleared.

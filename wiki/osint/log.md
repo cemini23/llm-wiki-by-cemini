@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-06-27] ingest | K132 — Hermes routing eval + 2 arXiv
+
+- **Sources (3):** `eval-tool-routing-hermes-plan-2026-06-27.md` (71 URLs, Hermes keyword collision); Morality Game (2606.24037); FDN spatiotemporal (2606.25201)
+- **Concepts (2):** `@concepts/morality-game-cooperation-platform.md`, `@concepts/fdn-future-decomposition-networks.md`
+- **Entities (2 new + 3 updates):** graphiti (Adopt), screenpipe (CONDITIONAL-GO); gbrain K132 re-eval, no-mistakes reaffirmed, hermes-agent curator steal note
+- **Phase-0:** `scripts/adopt_k132_phase0.sh` — screenpipe NOASSERTION; firecrawl AGPL reject; gbrain spike not full Adopt
+- **Briefs (3):** CCC hermes curator prune; gbrain hybrid-search spike; graphiti temporal KG spike (`briefs/` gitignored)
+- **Skipped:** `llmwiki field notes.png` — unsupported type; left in inbox for operator triage
+- **Archive:** docx + 2 PDFs → egress-fi
+
 ## [2026-06-26] ingest | K131 daily inbox — 5 arXiv
 
 - **Sources (5):** RLVF legal AI (2606.23913); NLP algorithm co-occurrence (2606.24099); theme-park visitor typology (2606.24434); Relaxed NFL auto-formalization (2606.24443); ToolBench-X tool unreliability (2606.25819)

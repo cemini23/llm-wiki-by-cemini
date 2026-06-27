@@ -69,14 +69,15 @@ related:
   - entities/tools/sportsdataverse-py.md
   - entities/tools/aohp-os.md
   - sources/tool-eval-metaplan-81url-2026-06-24.md
-  - entities/tools/bbmod.md
+  - entities/tools/graphiti.md
+  - entities/tools/screenpipe.md
   - sources/arxiv-toolbench-x-tool-unreliability-2606.25819-2026-06-26.md
   - entities/tools/toolbench-x.md
   - concepts/toolbench-x-tool-reliability-hazards.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-06-26
+updated: 2026-06-27
 ---
 
 ## Relations
@@ -330,6 +331,8 @@ The candidate list expanded after the K28 SwarmVault audit and K30 ingest:
 | **Deep GraphRAG** (K30 reference, `@sources/deep-graphrag-2601-11144.md`) | **Deferred — re-evaluate if wiki develops graph-density signal** | 3-stage hierarchical retrieval (inter-community → community-refine → entity-fine) + DW-GRPO trained Knowledge Integration Module. Architecturally distinct from kb-server/PageIndex (graph-community-aware vs flat). Now that PageIndex NO-GO is recorded, Deep GraphRAG is the only remaining librarian-tooling alternative on file — but the alternative isn't urgent: kb-server works. **Upgrade to candidate if (a) Cemini's wiki develops cross-link graph density that flat retrieval clearly fails on, OR (b) the user decides graph-aware retrieval is operationally worth the complexity**. Until then, holds reference-only status. |
 | **WikiKV** (K121, `@sources/arxiv-wikikv-hierarchical-kv-2606.14275-2026-06-17.md`) | **REFERENCE — post-librarian pattern steal** | Tencent production path-indexed KV for LLM-curated wikis; O(1) path lookup + `NAV(q,B)` routing; no OSS. After librarian decommission (2026-06-14), federation uses laptop git wikis + grep/read — steal hierarchical navigation + Error Book (`log.md`) discipline; entity at `@entities/tools/wikikv.md`. |
 | **ToolBench-X** (K131, `@entities/tools/toolbench-x.md`) | **REFERENCE — NO LICENSE** | arXiv 2606.25819 benchmark for tool-environment unreliability; steal five hazard injection patterns for harness tests; do not vendor `Foreverskyou/ToolBench-X`. |
+| **Graphiti** (K132, `@entities/tools/graphiti.md`) | **Adopt (laptop spike)** | Apache-2.0 temporal KG (getzep/graphiti); bi-temporal wiki entity facts; brief in `briefs/ccc-2026-06-27_k132-graphiti-temporal-kg-spike.md`. |
+| **screenpipe** (K132, `@entities/tools/screenpipe.md`) | **CONDITIONAL-GO** | Docx claimed MIT; `gh api` → NOASSERTION — manual LICENSE read before install. |
 
 The SwarmVault NO-GO and PageIndex audit (still pending) together set the gate for whether a third Karpathy-pattern alternative needs to be evaluated. Deep GraphRAG is the most architecturally interesting candidate-in-waiting because it doesn't share the flat-layout assumption with the other two — its hierarchy IS the design. But it adds graph-community detection complexity that's not justified unless flat-RAG approaches definitively underperform. Re-evaluate when one of those gates triggers.
 

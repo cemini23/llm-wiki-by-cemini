@@ -5,12 +5,13 @@ tags: [entity, tool, git, validation, ccc, k129]
 keywords: [no-mistakes, kunchenguid, MIT, git proxy, pre-push validation, worktree]
 related:
   - sources/eval-url-cemini-research-2026-06-25.md
+  - sources/eval-tool-routing-hermes-plan-2026-06-27.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/tracer-acceptor-gate-ingest.md
   - concepts/npm-supply-chain-defense.md
 maturity: draft
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-06-27
 ---
 
 ## Relations

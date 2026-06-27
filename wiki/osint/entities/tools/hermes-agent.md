@@ -29,9 +29,10 @@ related:
   - entities/people/damidefi.md
   - sources/trading-posts-compilation-17-2026-06-03.md
   - sources/links-6-22-tool-eval.md
+  - sources/eval-tool-routing-hermes-plan-2026-06-27.md
 maturity: draft
 created: 2026-05-18
-updated: 2026-06-22
+updated: 2026-06-27
 ---
 
 ## Relations
@@ -106,6 +107,10 @@ Post 2 groups **276+** claimed production uses: dev swarms (“zero human compan
 ### K78 forensics + x402 addendum (2026-05-29)
 
 Posts 3 + 5 document **skill-bundled on-chain forensics** (~$0.10/run): DexScreener → Nansen via x402 → RPC → Tokenomist → Cookie MCP. See @concepts/hermes-onchain-forensics-pipeline.md. Still reference-only for prod (Conductor owns orchestration).
+
+### K132 curator steal (2026-06-27)
+
+K132 `eval-tool-routing-hermes-plan-2026-06-27.md` re-confirms **Steal-from** (not Adopt): extract `agent/curator.py` 7-day skill grade/consolidate/prune loop into OSINT `skill_audit.py` + rules hygiene. Brief: `briefs/ccc-2026-06-27_k132-hermes-curator-skill-prune-steal.md`. ~204k★ MIT (`gh api` 2026-06-27).
 
 ## Snippets
 

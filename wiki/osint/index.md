@@ -12,8 +12,14 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **470 canonical stubs** (K131 ingest +5 sources +3 concepts +1 entity)
+Total: **475 canonical stubs** (K132 ingest +3 sources +2 concepts +2 entities)
 
+
+### k132-ingest (3)
+
+- [Tool Evaluation and Routing Plan.docx — Hermes-keyword eval (2026-06-27)](sources/eval-tool-routing-hermes-plan-2026-06-27.md) — 71 URLs; gbrain re-eval; graphiti Adopt; screenpipe CONDITIONAL-GO. — `docx` [+agent-harness, +wiki-tooling]
+- [Morality Game cooperation platform (2606.24037)](sources/arxiv-morality-game-cooperation-platform-2606.24037-2026-06-27.md) — Online game-theory experiments; wiki-only. — `pdf` [+game-theory]
+- [FDN interpretable spatiotemporal forecasting (2606.25201)](sources/arxiv-fdn-spatiotemporal-forecasting-2606.25201-2026-06-27.md) — Activity-pattern decomposition; wiki-only. — `pdf` [+forecasting]
 
 ### k131-ingest (5)
 
