@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-06-28] ingest | K133 — 3 tool-eval docx + Karpathy field notes PNG
+
+- **Sources (4):** multi-wiki Discord link eval (20 URLs); repo plan 2 TipDrop legacy (18 URLs); GitHub UW MCP batch (20 URLs); Karpathy LLM-WIKI field notes PNG (nine rules)
+- **Entities (2):** unusualwhales-mcp (Adopt MIT), discord-alerts-trader (Steal-from BSD-3-Clause)
+- **Phase-0:** `scripts/adopt_k133_phase0.sh` — 33 UNAVAILABLE aggregated; self-bot + StockTips reject
+- **Briefs (5):** TipDrop kit ×3 (MCP adopt, DiscordAlertsTrader steal, Form4 crossref); CCC OpenClaw pairing; game-dev UWB EKF reference (`briefs/` + tipdrop-workspace-kit gitignored/OSINT briefs)
+- **Archive:** 3 docx + PNG → egress-fi; inbox cleared
+
 ## [2026-06-27] spike | Graphiti re-ingest + verification (r2/r3)
 
 - **Runner:** `.local/graphiti_spike_ingest.py` — basic search default, optional fixes, `--only` flag

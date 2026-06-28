@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-28 — K133)
+
+- **K133 ingest (2026-06-28)** — 3 Gemini tool-eval docx + Karpathy field notes PNG. **4 sources + 2 entities.** unusualwhales-mcp Adopt (MIT); DiscordAlertsTrader steal; 33 dead URLs aggregated. TipDrop briefs → `tipdrop-workspace-kit/briefs/`. **Phase-0:** `adopt_k133_phase0.sh`. Archive → egress-fi.
+
 ## Current state (2026-06-27 — K132)
 
 - **K132 ingest (2026-06-27)** — Hermes routing eval docx (71 URLs) + 2 arXiv. **3 sources + 2 concepts + 2 entities + 3 updates.** graphiti Adopt; screenpipe CONDITIONAL-GO; gbrain RETIRED reaffirmed with hybrid-search spike brief; hermes curator steal → CCC. Morality Game + FDN wiki-only. **Phase-0:** `adopt_k132_phase0.sh`. PNG field notes skipped. Archive → egress-fi.

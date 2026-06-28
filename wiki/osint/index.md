@@ -12,8 +12,15 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **475 canonical stubs** (K132 ingest +3 sources +2 concepts +2 entities)
+Total: **479 canonical stubs** (K133 ingest +4 sources +2 entities)
 
+
+### k133-ingest (4)
+
+- [Multi-Wiki Link Evaluation.docx — Discord batch (2026-06-28)](sources/eval-multi-wiki-discord-link-2026-06-28.md) — 20 URLs; DiscordAlertsTrader steal; self-bot reject. — `docx` [+wiki-tooling, +tipdrop]
+- [Repo Evaluation Plan 2.docx — TipDrop legacy (2026-06-28)](sources/eval-repo-plan-tipdrop-legacy-2026-06-28.md) — StockTips reject; UWB math → game-dev brief. — `docx` [+wiki-tooling]
+- [GitHub Batch Evaluation.docx — Unusual Whales MCP (2026-06-28)](sources/eval-github-batch-unusualwhales-2026-06-28.md) — unusualwhales-mcp Adopt MIT. — `docx` [+wiki-tooling, +tipdrop]
+- [Karpathy LLM-WIKI field notes PNG (v040426)](sources/karpathy-llm-wiki-field-notes-png-2026-04-26.md) — nine rules poster; maps to CLAUDE.md ingest. — `png` [+wiki-tooling]
 
 ### k132-ingest (3)
 
