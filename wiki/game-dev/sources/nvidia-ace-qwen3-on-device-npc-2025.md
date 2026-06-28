@@ -5,6 +5,7 @@ tags: [source, nvidia, ace, npc, slm, unreal]
 keywords: [nvidia-ace, qwen3, on-device, npc, igi-sdk]
 related:
   - concepts/llm-npc-runtime-ai-shelf.md
+  - sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md
 read_status: read
 source_type: official
 source_url: https://developer.nvidia.com/blog/nvidia-ace-adds-open-source-qwen3-slm-for-on-device-deployment-in-pc-games/

@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-28] ingest | Inbox re-drop + skeleton-implementation fence + PUBG Ally shelf
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-28.md (all reject/re-drop); archived; inbox cleared
+- News: @sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md → @concepts/ai-assisted-game-dev-workflows.md (Skeleton Implementation)
+- News: @sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md → @concepts/llm-npc-runtime-ai-shelf.md
+- Phase-0: none (re-drop batch; no new tool repos)
+- Brief: `briefs/research/agent-skeleton-implementation-fence.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-28-daily.md
+
+---
+
 ## [2026-06-27] ingest | Inbox re-drop + Unity Sentis contrast shelf
 
 - Inbox: 4 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-27.md (all reject/re-drop); archived; inbox cleared

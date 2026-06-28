@@ -4,6 +4,7 @@ type: source
 tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, re-drop]
 related:
+  - sources/inbox-arxiv-reject-batch-2026-06-28.md
   - sources/inbox-arxiv-reject-batch-2026-06-26.md
   - sources/inbox-arxiv-reject-batch-2026-06-24.md
   - sources/unity-sentis-practical-shelf-2026-06-23.md

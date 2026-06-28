@@ -14,12 +14,13 @@ related:
   - sources/bigdevsoon-void-balls-ai-10days-2025.md
   - sources/luden-superweird-gdd-prototype-cursor-2025.md
   - sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md
+  - sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md
   - sources/exa-ai-gamedev-tools-batch-2026-06-13.md
   - concepts/agentic-pcg-level-design.md
   - concepts/ccgs-workflow-extraction.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-25
+updated: 2026-06-28
 ---
 
 ## Relations
@@ -75,6 +76,19 @@ Blueprint (markdown GDD/readme)
 3. **Platform export** — Steam/itch/macOS signing often longer than core gameplay coding
 4. **Art direction** — constrain palette/style or output looks random (Void Balls 7-color rule)
 5. **Security** — MCP write access to editor = vet first (@cybersecurity-wiki)
+6. **Comprehension debt** — AI code that runs locally but operator cannot explain = **Skeleton Implementation** [@sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md]; pairs with METR perception gap [@sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md]
+
+### Skeleton Implementation (Godot + Claude Code) [TENTATIVE]
+
+Practitioner essay on Claude Code + MCP Godot workflows [@sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md]:
+
+| Symptom | Mitigation |
+|---------|------------|
+| Viewport/camera/scene-tree bugs after "working" AI PR | Flag spatial edits for human review; do not trust screenshot-only verify |
+| MCP session memory substitutes for learning | Decision log in wiki/briefs; read generated code before merge |
+| Short-term velocity, long-term debug tax | Monthly manual subsystem (no AI) to retain engine intuition |
+
+**AI-safe vs protect:** boilerplate autoloads/signals → agent; architect camera, nav semantics, game feel → operator. Castle-sim fence: gitignored `briefs/research/agent-skeleton-implementation-fence.md`.
 
 ### Multi-agent structure (why not one chat)
 

@@ -24,9 +24,10 @@ related:
   - entities/tools/hi-godot-ai.md
   - entities/tools/ziva-godot-agent.md
   - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
+  - sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-21
+updated: 2026-06-28
 ---
 
 ## Relations
