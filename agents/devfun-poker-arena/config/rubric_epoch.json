@@ -1,0 +1,29 @@
+{
+  "rubric_version": 1,
+  "epoch": 1,
+  "frozen": true,
+  "weights": {
+    "correctness": 1.0,
+    "efficiency": 1.0,
+    "critical_point": 1.0
+  },
+  "thresholds": {
+    "efficiency_hard_deadline_s": 10.0,
+    "efficiency_soft_ratio": 0.9,
+    "max_idle_poll_loops": 3
+  },
+  "promotion": {
+    "epsilon": 0.0,
+    "holdout_suite": "k134_holdout_v1",
+    "advisory_only": true
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "rubric_version": 1,
+      "promoted_at": "2026-06-29T00:00:00Z",
+      "reason": "genesis epoch (K132 thresholds frozen)",
+      "evaluator_id": "PLACEHOLDER_FILL_AT_RUNTIME"
+    }
+  ]
+}

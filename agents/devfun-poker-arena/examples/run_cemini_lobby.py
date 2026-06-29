@@ -73,6 +73,13 @@ def _ko_survival_min_stack() -> int:
         return 2000
 
 
+def _sandbox_pvp_submit_only() -> bool:
+    """Sandbox PvP comps use bundle submit — not texas/join lobby."""
+    return os.environ.get("CEMINI_SANDBOX_PVP_SUBMIT_ONLY", "").strip().lower() in (
+        "1", "true", "yes", "on",
+    )
+
+
 def _researcher_track_primary() -> bool:
     """Researcher Round is the optimization target; Playground is optional intel."""
     role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip().lower()
@@ -526,6 +533,15 @@ def run_lobby(args: argparse.Namespace) -> int:
         def ensure_joined(force: bool = False) -> None:
             nonlocal last_join_at, last_lobby_log_at, in_queue_only, last_pace_log_at
             now = time.time()
+            if _sandbox_pvp_submit_only():
+                if force or (now - last_lobby_log_at) >= LOBBY_LOG_INTERVAL_S:
+                    print(
+                        "[cemini-lobby] sandbox PvP submit-only — skip texas/join "
+                        f"(poll submit_sandbox_pvp.py; intel comp={dual_comp or competition_id})",
+                        flush=True,
+                    )
+                    last_lobby_log_at = now
+                return
             if is_kill_switch_active():
                 if (now - last_pace_log_at) >= LOBBY_LOG_INTERVAL_S:
                     ks = kill_switch_status()

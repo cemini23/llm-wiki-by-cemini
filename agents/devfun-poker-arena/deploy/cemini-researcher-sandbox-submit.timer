@@ -1,0 +1,14 @@
+[Unit]
+Description=Retry Cemini Researcher sandbox submit when daily Arena limit resets
+
+[Timer]
+# UTC — Arena sandbox_daily_limit is 3/day; retry after likely reset windows
+OnBootSec=45min
+OnCalendar=*-*-* 00:12:00
+OnCalendar=*-*-* 06:12:00
+OnCalendar=*-*-* 12:12:00
+OnCalendar=*-*-* 18:12:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

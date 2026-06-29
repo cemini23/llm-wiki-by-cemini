@@ -23,8 +23,10 @@ os.environ.setdefault("CEMINI_VERIFIER_BON", "1")
 os.environ.setdefault("CEMINI_GIN_STYLE", "1")
 os.environ.setdefault("CEMINI_GIN_STYLE_PREFLOP", "1")
 os.environ.setdefault("CEMINI_GIN_STYLE_POSTFLOP", "1")
+os.environ.setdefault("CEMINI_GIN_V008", "1")
 os.environ.setdefault("CEMINI_GIN_V2_EXPLOITS", "1")
-os.environ.setdefault("CEMINI_SANITIZE_OUTPUT", "1")
+# Sandbox trajectory rejects generic reasoning (docs.dev.fun researcher guide).
+os.environ.setdefault("CEMINI_SANITIZE_OUTPUT", "0")
 os.environ.setdefault("CEMINI_MIX_POSTFLOP", "1")
 os.environ.setdefault("CEMINI_S1B_EXPLOIT", "1")
 os.environ.setdefault("CEMINI_NEMESIS_EXPLOIT", "1")
@@ -63,6 +65,22 @@ def _deadline_s(table: dict) -> float:
     return max(floor, min(10.0, float(os.environ.get("CEMINI_DECIDE_DEADLINE_S", "8.0"))))
 
 
+def _action_payload(out: dict[str, Any], action: str) -> dict[str, Any]:
+    """Normalize decide() output for Arena static-agent + trajectory rubric."""
+    payload: dict[str, Any] = {"action": action}
+    if out.get("amount") is not None:
+        payload["amount"] = out["amount"]
+    message = out.get("message")
+    if message is not None:
+        payload["message"] = message
+    reasoning = out.get("reasoning") or out.get("reasoning_text")
+    if reasoning is not None:
+        payload["reasoning"] = reasoning
+        # arena-tool docs use reasoning_text; static-agent accepts reasoning — send both.
+        payload["reasoning_text"] = reasoning
+    return payload
+
+
 def choose_action(table: dict) -> Any:
     decide = _import_decide()
     out = decide(table, deadline_s=_deadline_s(table))
@@ -73,12 +91,10 @@ def choose_action(table: dict) -> Any:
     except ImportError:
         pass
     action = str(out.get("action") or "fold")
-    amount = out.get("amount")
-    payload_keys = ("action", "amount", "message", "reasoning")
-    if amount is not None or out.get("message") or out.get("reasoning"):
-        payload = {k: out[k] for k in payload_keys if k in out and out[k] is not None}
-        payload["action"] = action
-        return payload
+    if out.get("amount") is not None or out.get("message") or out.get("reasoning") or out.get(
+        "reasoning_text"
+    ):
+        return _action_payload(out, action)
     return action
 
 

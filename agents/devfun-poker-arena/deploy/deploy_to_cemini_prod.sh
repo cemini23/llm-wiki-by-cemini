@@ -48,6 +48,7 @@ echo "==> Competition ID guard (prod .env vs expected)"
 echo "==> Rsync agent tree (exclude venv/creds/state)"
 rsync -avz --delete \
   --exclude '.venv/' \
+  --exclude '.venv-rlcard/' \
   --exclude 'venv/' \
   --exclude 'venv-pokerskill/' \
   --exclude '.git/' \
@@ -115,12 +116,22 @@ install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-multi-comp-snapshot.ser
   /etc/systemd/system/cemini-devfun-poker-multi-comp-snapshot.service
 install -m 644 "${REMOTE_DIR}/deploy/cemini-devfun-poker-multi-comp-snapshot.timer" \
   /etc/systemd/system/cemini-devfun-poker-multi-comp-snapshot.timer
+install -m 644 "${REMOTE_DIR}/deploy/cemini-researcher-sandbox-submit.service" \
+  /etc/systemd/system/cemini-researcher-sandbox-submit.service
+install -m 644 "${REMOTE_DIR}/deploy/cemini-researcher-sandbox-submit.timer" \
+  /etc/systemd/system/cemini-researcher-sandbox-submit.timer
 
 mkdir -p "${REMOTE_DIR}/reports/analyze"
 mkdir -p "${REMOTE_DIR}/reports/hl-loop"
 mkdir -p "${REMOTE_DIR}/reports/exports/playground-s1-live"
 mkdir -p "${REMOTE_DIR}/reports/exports/s1-tournament-live"
 mkdir -p "${REMOTE_DIR}/reports/exports/s2-playground-live"
+mkdir -p "${REMOTE_DIR}/reports/researcher-round"
+mkdir -p "${REMOTE_DIR}/config"
+
+chmod +x "${REMOTE_DIR}/scripts/run_researcher_sandbox_auto_submit.sh" \
+  "${REMOTE_DIR}/scripts/pin_researcher_sandbox_submit.sh" \
+  "${REMOTE_DIR}/scripts/verify_sandbox_bundle_layout.sh" 2>/dev/null || true
 
 systemctl daemon-reload
 systemctl enable cemini-devfun-poker-lobby.service

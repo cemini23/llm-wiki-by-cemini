@@ -463,7 +463,7 @@ def main(argv: list[str] | None = None) -> int:
 
     index_path = Path("reports/hl-loop/researcher_trajectory_index.jsonl")
     index_path.parent.mkdir(parents=True, exist_ok=True)
-    index_row = {
+    index_row: dict[str, Any] = {
         "at": manifest["generated_at"],
         "bundle_dir": str(out_dir),
         "selfplay_decisions": (selfplay_summary or {}).get("decision_count"),
@@ -472,6 +472,18 @@ def main(argv: list[str] | None = None) -> int:
         "bb100": (arena_summary or {}).get("hero_adjusted_bb100"),
         "gate_pass": manifest.get("gate_pass"),
     }
+
+    # K134: Add rubric epoch and evaluator_id (best effort, guarded)
+    try:
+        from sandbox_rubric_epoch import load_rubric_config, current_epoch, evaluator_id
+
+        _cfg = load_rubric_config()
+        index_row["rubric_epoch"] = current_epoch(_cfg)
+        index_row["evaluator_id"] = evaluator_id(_cfg)
+    except Exception:
+        # Backward compat: if rubric epoch tooling unavailable, omit keys
+        pass
+
     with index_path.open("a", encoding="utf-8") as fh:
         fh.write(json.dumps(index_row, sort_keys=True) + "\n")
 

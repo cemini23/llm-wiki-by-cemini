@@ -1,0 +1,17 @@
+[Unit]
+Description=Cemini Researcher HU sandbox auto-submit (static-agent bundle)
+Documentation=https://docs.dev.fun/arena/poker-arena-and-prize/the-sandbox-researcher-guide
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+WorkingDirectory=/opt/devfun-poker-arena
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=-/opt/devfun-poker-arena/.env
+ExecStart=/bin/bash /opt/devfun-poker-arena/scripts/run_researcher_sandbox_auto_submit.sh
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

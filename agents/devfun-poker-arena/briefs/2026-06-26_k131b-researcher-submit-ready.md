@@ -1,12 +1,14 @@
 ## Target
 
-Researcher Round HU sandbox — `examples/cemini_decide.py` via `pokerkit run`.
+Researcher Round HU sandbox — static-agent bundle via `submit_sandbox_pvp.py`.
 
 ## Summary
 
-K131 + K131b bundle is **gate-green** locally. Submit **one agent** (`cemini_decide.py`); Tracks A/B were implementation splits only.
+K131 + K131b bundle is **gate-green** locally. Submit **one agent** (`cemini_decide.py` via `harness/strategy.py`); Tracks A/B were implementation splits only.
 
 **Latest gate bundle:** `reports/researcher-round/gate-hu-*Z/` (run `run_hu_sandbox_gate.sh --hands 200` before submit).
+
+Official guide: https://docs.dev.fun/arena/poker-arena-and-prize/the-sandbox-researcher-guide
 
 ## Body
 
@@ -21,14 +23,16 @@ CEMINI_GIN_V008=1
 CEMINI_S1B_EXPLOIT=1
 CEMINI_GIN_V2_EXPLOITS=1
 CEMINI_RESEARCHER_MODE=1
+CEMINI_SANITIZE_OUTPUT=0
 ```
 
 ### Pre-submit checklist
 
 1. `CEMINI_TABLE_FORMAT=hu ./scripts/run_hu_sandbox_gate.sh --hands 200` → audit **GATE PASS**, trajectory **PASS**
 2. `uv run pytest tests/ -q` (ignore `test_cold_start_hud.py` if flaky)
-3. Smoke on Arena: `pokerkit run --agent examples/cemini_decide.py --max-hands 50`
-4. Full season when comp live (multi-day per AGENTS.md)
+3. `bash scripts/verify_sandbox_bundle_layout.sh`
+4. Arena PvP: `uv run python examples/submit_sandbox_pvp.py --build --replace --competition-id "$ARENA_RESEARCHER_COMP_ID"`
+5. Poll: `submit_sandbox_pvp.py --poll <submissionId>` until PvP season progresses
 
 ### K131b follow-ups shipped (gap / PFR)
 

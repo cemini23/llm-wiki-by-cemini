@@ -1,4 +1,8 @@
-"""Strip strategy telegraphy from Arena action payloads (prod anti-profiling)."""
+"""Strip strategy telegraphy from Arena action payloads (prod anti-profiling).
+
+Sandbox static-agent bundles should set CEMINI_SANITIZE_OUTPUT=0 — Arena trajectory
+rejects generic reasoning (docs.dev.fun researcher guide).
+"""
 from __future__ import annotations
 
 import os

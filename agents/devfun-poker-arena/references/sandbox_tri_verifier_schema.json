@@ -1,0 +1,363 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cemini.dev/schemas/sandbox_tri_verifier/v1",
+  "title": "Tri-Verifier Score Output Schema",
+  "description": "JSON Schema for FaraGen1.5 tri-verifier scoring output (correctness, efficiency, critical-point) adapted for arena-tool MCP static-agent bundle regression.",
+  "x-rubric-schema-version": 2,
+  "oneOf": [
+    {
+      "$ref": "#/$defs/TrajectoryScore"
+    },
+    {
+      "$ref": "#/$defs/ActionScore"
+    }
+  ],
+  "$defs": {
+    "ActionScore": {
+      "type": "object",
+      "description": "Score result for a single action across three dimensions",
+      "required": ["action", "pass", "dimensions"],
+      "properties": {
+        "action": {
+          "type": "string",
+          "description": "The action taken (e.g., fold, check, call, bet, raise, all-in)"
+        },
+        "pass": {
+          "type": "boolean",
+          "description": "True if all three dimensions pass"
+        },
+        "dimensions": {
+          "type": "object",
+          "required": ["correctness", "efficiency", "critical_point"],
+          "properties": {
+            "correctness": {
+              "$ref": "#/$defs/DimensionResult"
+            },
+            "efficiency": {
+              "$ref": "#/$defs/DimensionResult"
+            },
+            "critical_point": {
+              "$ref": "#/$defs/DimensionResult"
+            }
+          }
+        },
+        "rubric_epoch": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "RQGM epoch under which this report was produced. Absent on pre-K134 reports (backward compatible)."
+        },
+        "rubric_version": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Rubric weight/threshold schema version. Absent on pre-K134 reports."
+        },
+        "evaluator_id": {
+          "type": "string",
+          "pattern": "^tri-v[0-9]+-e[0-9]+-[0-9a-f]{8}$",
+          "description": "Deterministic id of the frozen evaluator (tri-v{ver}-e{epoch}-{fp8})."
+        }
+      }
+    },
+    "TrajectoryScore": {
+      "type": "object",
+      "description": "Score result for a full trajectory (session) of actions",
+      "required": ["trajectory_pass", "summary", "dimensions", "actions"],
+      "properties": {
+        "trajectory_pass": {
+          "type": "boolean",
+          "description": "True if all actions in trajectory pass all dimensions"
+        },
+        "summary": {
+          "type": "object",
+          "required": ["total_actions", "passed_actions", "failed_actions", "pass_rate"],
+          "properties": {
+            "total_actions": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Total number of actions scored"
+            },
+            "passed_actions": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of actions that passed all dimensions"
+            },
+            "failed_actions": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of actions that failed at least one dimension"
+            },
+            "pass_rate": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Ratio of passed_actions / total_actions"
+            }
+          }
+        },
+        "dimensions": {
+          "type": "object",
+          "required": ["correctness", "efficiency", "critical_point"],
+          "properties": {
+            "correctness": {
+              "$ref": "#/$defs/DimensionSummary"
+            },
+            "efficiency": {
+              "$ref": "#/$defs/DimensionSummary"
+            },
+            "critical_point": {
+              "$ref": "#/$defs/DimensionSummary"
+            }
+          }
+        },
+        "actions": {
+          "type": "array",
+          "description": "Per-action detailed scores in trajectory order",
+          "items": {
+            "$ref": "#/$defs/ActionScore"
+          }
+        },
+        "rubric_epoch": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "RQGM epoch under which this report was produced. Absent on pre-K134 reports (backward compatible)."
+        },
+        "rubric_version": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Rubric weight/threshold schema version. Absent on pre-K134 reports."
+        },
+        "evaluator_id": {
+          "type": "string",
+          "pattern": "^tri-v[0-9]+-e[0-9]+-[0-9a-f]{8}$",
+          "description": "Deterministic id of the frozen evaluator (tri-v{ver}-e{epoch}-{fp8})."
+        }
+      }
+    },
+    "PromotionGate": {
+      "type": "object",
+      "description": "Advisory promotion gate result for RQGM epoch advancement",
+      "required": ["verdict", "incumbent_pass_rate", "challenger_pass_rate", "epsilon", "delta", "advisory"],
+      "properties": {
+        "verdict": {
+          "enum": ["PROMOTE", "HOLD"],
+          "description": "Promotion recommendation"
+        },
+        "advisory": {
+          "type": "boolean",
+          "description": "True if this is advisory only (no auto-promotion)"
+        },
+        "incumbent_pass_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Pass rate of incumbent epoch"
+        },
+        "challenger_pass_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Pass rate of challenger epoch"
+        },
+        "epsilon": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Minimum delta required for promotion"
+        },
+        "delta": {
+          "type": "number",
+          "description": "Actual difference (challenger - incumbent)"
+        },
+        "reason": {
+          "type": "string",
+          "description": "Human-readable explanation"
+        }
+      }
+    },
+    "DimensionResult": {
+      "type": "object",
+      "description": "Result for a single dimension check on a single action",
+      "required": ["pass"],
+      "properties": {
+        "pass": {
+          "type": "boolean",
+          "description": "True if this dimension passes for this action"
+        },
+        "hazard": {
+          "type": ["string", "null"],
+          "description": "K131 ToolBench-X hazard code if failed, null if passed",
+          "enum": [
+            null,
+            "correctness:no_allowed_actions_oracle",
+            "correctness:illegal_action",
+            "efficiency:timeout_hard_deadline",
+            "efficiency:deadline_exceeded_soft",
+            "efficiency:excessive_polling",
+            "critical_point:generic_reasoning",
+            "critical_point:session_forfeit"
+          ]
+        },
+        "details": {
+          "type": "object",
+          "description": "Dimension-specific diagnostic details",
+          "additionalProperties": true
+        }
+      }
+    },
+    "DimensionSummary": {
+      "type": "object",
+      "description": "Aggregated statistics for a dimension across a trajectory",
+      "required": ["pass", "fail", "hazards"],
+      "properties": {
+        "pass": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of actions passing this dimension"
+        },
+        "fail": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of actions failing this dimension"
+        },
+        "hazards": {
+          "type": "object",
+          "description": "Histogram of hazard types encountered",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "description": "Single action score example",
+      "value": {
+        "action": "raise",
+        "pass": true,
+        "dimensions": {
+          "correctness": {
+            "pass": true,
+            "hazard": null,
+            "details": {
+              "action": "raise",
+              "allowed": ["fold", "check", "call", "raise"]
+            }
+          },
+          "efficiency": {
+            "pass": true,
+            "hazard": null,
+            "details": {
+              "elapsed_s": 2.5,
+              "deadline_s": 10.0,
+              "poll_loops": 0,
+              "ratio": 0.25
+            }
+          },
+          "critical_point": {
+            "pass": true,
+            "hazard": null,
+            "details": {
+              "reasoning_text_present": true,
+              "hand_specific_markers_found": true,
+              "table_phase": "preflop"
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "Trajectory score example with failures",
+      "value": {
+        "trajectory_pass": false,
+        "summary": {
+          "total_actions": 3,
+          "passed_actions": 1,
+          "failed_actions": 2,
+          "pass_rate": 0.333
+        },
+        "dimensions": {
+          "correctness": {
+            "pass": 2,
+            "fail": 1,
+            "hazards": {
+              "correctness:illegal_action": 1
+            }
+          },
+          "efficiency": {
+            "pass": 2,
+            "fail": 1,
+            "hazards": {
+              "efficiency:excessive_polling": 1
+            }
+          },
+          "critical_point": {
+            "pass": 2,
+            "fail": 1,
+            "hazards": {
+              "critical_point:generic_reasoning": 1
+            }
+          }
+        },
+        "actions": [
+          {
+            "action": "raise",
+            "pass": true,
+            "dimensions": {
+              "correctness": {"pass": true, "hazard": null, "details": {}},
+              "efficiency": {"pass": true, "hazard": null, "details": {}},
+              "critical_point": {"pass": true, "hazard": null, "details": {}}
+            }
+          },
+          {
+            "action": "call",
+            "pass": false,
+            "dimensions": {
+              "correctness": {"pass": true, "hazard": null, "details": {}},
+              "efficiency": {"pass": true, "hazard": null, "details": {}},
+              "critical_point": {
+                "pass": false,
+                "hazard": "critical_point:generic_reasoning",
+                "details": {"generic_detected": true}
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "description": "Trajectory with K134 rubric epoch annotations (genesis epoch 1)",
+      "value": {
+        "trajectory_pass": true,
+        "rubric_epoch": 1,
+        "rubric_version": 1,
+        "evaluator_id": "tri-v1-e1-a1b2c3d4",
+        "summary": {
+          "total_actions": 2,
+          "passed_actions": 2,
+          "failed_actions": 0,
+          "pass_rate": 1.0
+        },
+        "dimensions": {
+          "correctness": {"pass": 2, "fail": 0, "hazards": {}},
+          "efficiency": {"pass": 2, "fail": 0, "hazards": {}},
+          "critical_point": {"pass": 2, "fail": 0, "hazards": {}}
+        },
+        "actions": [
+          {
+            "action": "raise",
+            "pass": true,
+            "rubric_epoch": 1,
+            "rubric_version": 1,
+            "evaluator_id": "tri-v1-e1-a1b2c3d4",
+            "dimensions": {
+              "correctness": {"pass": true, "hazard": null, "details": {}},
+              "efficiency": {"pass": true, "hazard": null, "details": {}},
+              "critical_point": {"pass": true, "hazard": null, "details": {}}
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

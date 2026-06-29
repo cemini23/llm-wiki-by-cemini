@@ -2,19 +2,57 @@
 
 Operator: **cemini_wiki_poker** · **Researcher Round** (50 seats) · **heads-up** sandbox LB + trajectory contribution.
 
+Official guide: https://docs.dev.fun/arena/poker-arena-and-prize/the-sandbox-researcher-guide
+
 ## Format [CONFIRMED 2026-06-08]
 
 Researcher sandbox is **HU** (2-player NLHE). Source: `@wiki/sources/devfun-researcher-track-hu-format-2026-06-08.md`.
 
 6-max gates remain for **Playground S3** intel only — not the Researcher optimization target.
 
+## Sandbox PvP submit (static-agent) [CONFIRMED 2026-06-26]
+
+Researcher **heads-up sandbox** uses **static-agent bundle** + scheduler PvP — **not** `pokerkit run` on that comp (403 `sandbox_submission_required`) and **not** `texas/join` lobby (409 `benchmark_lobby_unavailable`).
+
+```bash
+export ARENA_RESEARCHER_COMP_ID='<researcher-comp-id>'   # e.g. cmqqqs05i1u7ppnu7stqbw7d8
+
+# Local gates first
+CEMINI_TABLE_FORMAT=hu ./scripts/run_hu_sandbox_gate.sh --hands 200
+bash scripts/verify_sandbox_bundle_layout.sh
+
+# Build + submit (replace unfinished active bot)
+uv run python examples/submit_sandbox_pvp.py --build --replace --competition-id "$ARENA_RESEARCHER_COMP_ID"
+
+# Poll
+uv run python examples/submit_sandbox_pvp.py --poll '<submissionId>'
+
+# Clear active slot (fold placeholder) before a fresh submit if needed
+uv run python examples/submit_sandbox_pvp.py --discard-active --competition-id "$ARENA_RESEARCHER_COMP_ID"
+```
+
+**Bundle layout** (zip root → Daytona `/app/workspace`):
+
+| Path | Contents |
+|------|----------|
+| `harness/strategy.py` | `choose_action(table)` → `cemini_decide.decide()` |
+| `assets/` | Policy + `_vendor/` deps |
+| `skills/` | Operator notes (`skills/sandbox/researcher-guide.md`) |
+
+**Reasoning:** harness defaults `CEMINI_SANITIZE_OUTPUT=0` — Arena rejects generic reasoning on trajectory. Playground lobby may keep `CEMINI_SANITIZE_OUTPUT=1`.
+
+**Leaderboard:** ranks **best finalized** bot (TrueSkill μ−σ). Replace does not reset LB until new bot finishes a season.
+
+**Prod auto-submit:** `cemini-researcher-sandbox-submit.timer` (00/06/12/18:12 UTC) → `scripts/run_researcher_sandbox_auto_submit.sh` → `examples/researcher_sandbox_auto_submit.py`: try `--replace`; on `sandbox_agent_already_running` **wait for active PvP to finish**, then submit **fresh** bundle (no replace). Pin: `config/researcher_sandbox_submit.pin.json`.
+
+
 ## Working assumptions
 
 | Item | Posture |
 |------|---------|
 | **Table size** | **Heads-up** [CONFIRMED dev.fun 2026-06-08] |
-| **Match length** | **Multi-day** season (Playground/Tournament style) — **not** Eval 500h |
-| **Submit cadence** | Same arena loop as Playground until skill contradicts |
+| **Match length** | Multi-day PvP season (~10k hands per finalized bot) |
+| **Submit cadence** | Bundle submit + poll; daily limit via `/submissions/settings` |
 | **Engine + LLM** | **Fixed** per PR [CONFIRMED per PR] — policy `decide()` layer only |
 
 Still read `skillFile` for hand count, rubric weights, and economics when API ships (Jun 21).
@@ -39,14 +77,16 @@ Wiki: `wiki/sources/devfun-researcher-track-discord-welcome-2026-06-18.md`
 
 | competitionId | name | notes |
 |---------------|------|-------|
-| `cmqf827h30u7dfca3x2aqvzjv` | Playground S3 | 6-max PVP — optional HUD |
-| `seed_poker_eval_s1` | Eval S1 | PVE 500h panel — **wrong cadence template** for Researcher/Tournament |
+| `cmqf827h30u7dfca3x2aqvzjv` | Playground S3 | 6-max PVP — optional HUD intel |
+| `cmqqqs05i1u7ppnu7stqbw7d8` | Researcher HU sandbox | static-agent PvP submit |
+| `seed_poker_eval_s1` | Eval S1 | PVE 500h panel — **wrong cadence** for Researcher |
 
 ## Local gates (before each submit)
 
 ```bash
 CEMINI_TABLE_FORMAT=hu ./scripts/run_hu_sandbox_gate.sh --hands 500
 ./scripts/export_researcher_trajectory.sh --competition-id "$ARENA_RESEARCHER_COMP_ID"
+bash scripts/verify_sandbox_bundle_layout.sh
 ```
 
 `CEMINI_TABLE_FORMAT` controls the local gate shape:
@@ -59,16 +99,11 @@ Current M8/M9 submit thresholds from `examples/researcher_trajectory_summary.py`
 
 - `M8_hallucination_rate <= 0.05`
 - `M8_hole_leak_rate <= 0.02`
-- `M9 positional vpip gap >= -0.20` (6-max: BTN–UTG; HU: BTN–BB)
+- `M9_positional vpip gap >= -0.20` (6-max: BTN–UTG; HU: BTN–BB)
 
-Arena submit (when comp live):
+## arena-tool vs static-agent
 
-```bash
-./pokerkit run --agent examples/cemini_decide.py --max-hands 50   # smoke
-./pokerkit run --agent examples/cemini_decide.py                    # full run (length TBD — likely multi-day season)
-export ARENA_RESEARCHER_COMP_ID=<id>
-./scripts/export_researcher_trajectory.sh --competition-id "$ARENA_RESEARCHER_COMP_ID"
-```
+The official guide documents **arena-tool MCP** (`join_pve`, `submit_action` with `reasoning_text`) for LLM agents in Daytona. Cemini uses the **static-agent** path: BenchFlow calls `harness/strategy.choose_action(table)` — no direct Arena HTTP from the sandbox. Both require hand-specific reasoning, not generic placeholders.
 
 ## Competitor OSINT
 
@@ -78,4 +113,4 @@ See `wiki/concepts/devfun-poker-competitor-github-recon-2026-06.md` — **gin/po
 
 - **Researcher Round** — **primary** optimization target (HU gates, trajectory, axis discipline).
 - **Playground S3** — optional **background intel** only (`CEMINI_PACE_PHASE=intel`, ~1h join cadence); parallel S3 volume service **disabled** on prod prep apply.
-- Ship **`cemini_decide.py`** with `CEMINI_TABLE_FORMAT=hu` for Researcher; 6-max gin lane for incidental Playground hands only.
+- Ship **`cemini_decide.py`** via **bundle submit** for Researcher; 6-max gin lane for incidental Playground hands only.

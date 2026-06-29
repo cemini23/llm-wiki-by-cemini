@@ -4,7 +4,7 @@
 # Without ARENA_RESEARCHER_COMP_ID: Researcher PRIMARY posture, Playground slow intel,
 # RESEARCHER_MODE=0 until comp pinned.
 #
-# With ARENA_RESEARCHER_COMP_ID (or auto-detect): lobby → researcher comp, MODE=1, hu.
+# With ARENA_RESEARCHER_COMP_ID (or auto-detect): sandbox PvP submit-only; lobby stays Playground intel.
 #
 # Usage:
 #   ./scripts/researcher_jun21_beta_apply.sh
@@ -43,8 +43,9 @@ LOBBY_COMP="$PLAYGROUND_COMP"
 TABLE_FORMAT="hu"
 if [[ -n "$RESEARCHER_COMP" ]]; then
   RESEARCHER_MODE=1
-  LOBBY_COMP="$RESEARCHER_COMP"
-  echo "==> Researcher comp pinned: ${RESEARCHER_COMP}"
+  # Sandbox PvP (skill sandbox-pvp.md) — no texas/join; bundle submit only.
+  LOBBY_COMP="$PLAYGROUND_COMP"
+  echo "==> Researcher comp pinned: ${RESEARCHER_COMP} (lobby intel → ${PLAYGROUND_COMP})"
 else
   echo "==> No researcher comp id — PRIMARY posture, Playground intel (${PLAYGROUND_COMP})"
 fi
@@ -55,6 +56,10 @@ if [[ "$SKIP_CHECKLIST" != "1" ]]; then
 fi
 
 echo "==> Deploy code: version=${AGENT_VERSION}"
+if [[ -n "${RESEARCHER_COMP}" ]]; then
+  ARENA_RESEARCHER_COMP_ID="${RESEARCHER_COMP}" AGENT_VERSION="${AGENT_VERSION}" \
+    bash "${SCRIPT_DIR}/pin_researcher_sandbox_submit.sh"
+fi
 export ARENA_LOBBY_COMPETITION_ID="${PLAYGROUND_COMP}"
 export CEMINI_SKIP_ENV=1
 export CEMINI_SKIP_CREDS=1
@@ -89,6 +94,7 @@ set_kv CEMINI_PRIMARY_TRACK researcher
 set_kv CEMINI_LOBBY_LABEL "Researcher_Jun21_beta"
 set_kv CEMINI_LOBBY_ROLE researcher_primary
 set_kv CEMINI_RESEARCHER_MODE "${RESEARCHER_MODE}"
+set_kv CEMINI_SANDBOX_PVP_SUBMIT_ONLY "${RESEARCHER_MODE}"
 set_kv CEMINI_PLACEMENT_CHASE 0
 set_kv CEMINI_EVAL_PANEL_MODE 0
 set_kv CEMINI_TABLE_FORMAT "${TABLE_FORMAT}"
@@ -106,6 +112,7 @@ set_kv CEMINI_GIN_STYLE 1
 set_kv CEMINI_GIN_STYLE_PREFLOP 1
 set_kv CEMINI_GIN_STYLE_POSTFLOP 1
 set_kv CEMINI_GIN_V008 1
+set_kv CEMINI_GIN_V2_EXPLOITS 1
 
 # Playground background intel only
 set_kv CEMINI_FIRST_RANK 0
@@ -127,6 +134,12 @@ printf '%s\n' "{\"updated_at\":\"${TS}\",\"source\":\"jun21_beta_apply\",\"guard
   > reports/hl-loop/runtime_guards.json
 
 systemctl restart cemini-devfun-poker-lobby.service
+if [[ -n "${RESEARCHER_COMP}" ]]; then
+  bash scripts/pin_researcher_sandbox_submit.sh
+  systemctl enable cemini-researcher-sandbox-submit.timer
+  systemctl start cemini-researcher-sandbox-submit.timer
+  systemctl start cemini-researcher-sandbox-submit.service || echo "WARN: auto-submit oneshot failed (timer will retry)" >&2
+fi
 if systemctl list-unit-files cemini-devfun-poker-lobby-s3.service --no-legend 2>/dev/null | grep -q enabled; then
   systemctl stop cemini-devfun-poker-lobby-s3.service || true
   systemctl disable cemini-devfun-poker-lobby-s3.service || true

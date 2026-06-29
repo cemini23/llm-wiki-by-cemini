@@ -171,6 +171,13 @@ esac
 echo "==> Trajectory + axis summary (submit gates)"
 run_summary "$SELFPLAY_TRAJ_FOR_GATE" "$BUNDLE_DIR" 1
 
+echo "==> K132 tri-verifier (Fara harness regression)"
+bash scripts/run_sandbox_tri_verifier.sh
+
+echo "==> K134 RQGM epoch stamp + advisory promotion gate"
+uv run python examples/sandbox_rubric_epoch.py --print | tee "${BUNDLE_DIR}/rubric_epoch.txt"
+uv run python examples/sandbox_rubric_epoch.py --gate  | tee "${BUNDLE_DIR}/promotion_gate.txt" || true
+
 if [[ -n "${ARENA_RESEARCHER_COMP_ID:-}" ]]; then
   echo "==> Arena trajectory pull (ARENA_RESEARCHER_COMP_ID)"
   if ./scripts/export_researcher_trajectory.sh \
