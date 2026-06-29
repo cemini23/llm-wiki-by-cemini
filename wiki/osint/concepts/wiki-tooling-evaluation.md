@@ -22,6 +22,8 @@ related:
   - sources/wave-5-1-link-eval-more.md
   - sources/wave-5-1-link-eval-even-more.md
   - concepts/librarian-server-architecture.md
+  - sources/eval-github-repos-plan-multi-wiki-2026-06-29.md
+  - concepts/red-queen-controlled-utility-evolution.md
   - sources/gemini-dr-link-eval-2026-04-28.md
   - sources/omc-talent-container-paper.md
   - concepts/ai-organisation-design.md
@@ -546,6 +548,22 @@ Wave 5 was a **dual docx pair** following the Wave 4 pattern: Wave 5A (`Codebase
 - Wave 5B adds 3 dedicated source pages: caiovicentino's Polymarket MCP (Adopt-Cemini-stack, dual-MCP pattern with kukapay's MCP) + claude-obsidian (Steal-from, third Karpathy-pattern member) + piebald's claude-code-system-prompts (Steal-from, prompt-extraction-pattern with Anthropic IP caveat).
 - 9 new cross-wave patterns documented (1-9 above).
 - License poison-pill family: GPL-3.0 confirmation (poly_data), LGPL-3.0 transitive taint (NautilusTrader), license-metadata-discrepancy resolution sub-pattern (poly_data).
+
+## Wave K134 — Gemini DR runtime batch (2026-06-29)
+
+Ingest: `GitHub Repository Evaluation Plan.docx` (20 URLs) + arXiv 2606.26294 (RQGM). Source: @sources/eval-github-repos-plan-multi-wiki-2026-06-29.md.
+
+| Tier | Count | Headline |
+|------|-------|----------|
+| **Adopt GO** | 2 | deepsec (Apache-2.0); Anthropic-Cybersecurity-Skills (Apache-2.0) |
+| **CONDITIONAL-GO** | 2 | codebase-memory-mcp (MIT binary trust); Agent-Reach (MIT ToS) |
+| **Steal-from** | 2 | daily_stock_analysis (downgrade from docx Adopt); stealth-browser-mcp (downgrade) |
+| **Reaffirm Adopt** | 1 | mattpocock/skills (K126 entity) |
+| **Reject aggregated** | 6 | GPL/AGPL/CC-BY-NC + Metabase |
+
+**Paper REFERENCE:** RQGM (2606.26294) — `@concepts/red-queen-controlled-utility-evolution.md`; poker rubric-epoch brief only.
+
+Phase-0 script: `scripts/adopt_k134_phase0.sh`.
 
 ## Snippets
 

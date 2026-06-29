@@ -8,6 +8,7 @@ related:
   - sources/arxiv-relaxed-nfl-auto-formalization-2606.24443-2026-06-26.md
   - sources/arxiv-rlvf-formally-verified-law-2606.23913-2026-06-26.md
   - concepts/generator-verifier-inference-time-steering.md
+  - concepts/red-queen-controlled-utility-evolution.md
   - concepts/rlvf-verifier-feedback-training.md
   - concepts/relaxed-nfl-auto-formalization.md
   - concepts/code-as-agent-harness.md

@@ -4,18 +4,21 @@ type: entity
 tags: [entity, tool, agent-skills, ccc-wiki, castle-sim, k126]
 keywords: [mattpocock-skills, to-issues, grill-me, skill-md, cursor-rules, vertical-slice]
 related:
+  - sources/eval-github-repos-plan-multi-wiki-2026-06-29.md
   - sources/links-6-22-tool-eval.md
   - concepts/claude-code-skills-md-workflow.md
   - concepts/castle-sim-pathfinding-steals.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/codebase-memory-mcp.md
   - "@ccc-wiki/entities/tools/mattpocock-skills.md"
 maturity: draft
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-06-29
 ---
 
 ## Relations
 
+- @sources/eval-github-repos-plan-multi-wiki-2026-06-29.md — K134 URL 5 reaffirms Adopt
 - @sources/links-6-22-tool-eval.md — K126 URL 62; **Adopt** confirmed MIT
 - @concepts/claude-code-skills-md-workflow.md — SKILL.md operational patterns
 - @concepts/castle-sim-pathfinding-steals.md — cross-route: `to-issues` for Godot vertical-slice task generation

@@ -10,6 +10,7 @@ related:
   - sources/polymarket-5-5-tool-eval.md
   - concepts/cemini-license-posture.md
   - entities/tools/hftbacktest.md
+  - entities/tools/daily-stock-analysis.md
   - entities/tools/guidance-ai.md
   - entities/tools/letta-memgpt.md
   - entities/tools/ttok.md

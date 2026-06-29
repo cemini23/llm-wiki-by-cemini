@@ -8,6 +8,7 @@ related:
   - concepts/xsp-put-credit-spread-small-account-smb.md
   - concepts/wheel-options-strategy-smb.md
   - concepts/active-project-research-routing.md
+  - entities/tools/daily-stock-analysis.md
 maturity: draft
 created: 2026-06-14
 updated: 2026-06-17

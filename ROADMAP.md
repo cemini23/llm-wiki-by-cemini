@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-29 — K134)
+
+- **K134 ingest (2026-06-29)** — GitHub eval docx (20 URLs) + RQGM arXiv 2606.26294. **2 sources + 1 concept + 6 entities + 4 updates.** deepsec + Anthropic-Cybersecurity-Skills Adopt; codebase-memory-mcp + Agent-Reach CONDITIONAL-GO; daily_stock_analysis + stealth-browser-mcp steal downgrades; RQGM → poker rubric-epoch brief. **Phase-0:** `adopt_k134_phase0.sh`. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-28 — K133)
 
 - **K133 ingest (2026-06-28)** — 3 Gemini tool-eval docx + Karpathy field notes PNG. **4 sources + 2 entities.** unusualwhales-mcp Adopt (MIT); DiscordAlertsTrader steal; 33 dead URLs aggregated. TipDrop briefs → `tipdrop-workspace-kit/briefs/`. **Phase-0:** `adopt_k133_phase0.sh`. Archive → egress-fi.

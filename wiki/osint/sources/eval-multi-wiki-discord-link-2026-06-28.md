@@ -9,6 +9,7 @@ related:
   - entities/tools/discord-alerts-trader.md
   - sources/eval-github-batch-unusualwhales-2026-06-28.md
   - sources/eval-repo-plan-tipdrop-legacy-2026-06-28.md
+  - sources/eval-github-repos-plan-multi-wiki-2026-06-29.md
 maturity: draft
 read_status: read
 created: 2026-06-28

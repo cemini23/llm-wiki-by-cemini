@@ -4,6 +4,8 @@ type: concept
 tags: [concept, verifier, self-improvement, inference-time, k123]
 keywords: [VERITAS, Best-of-N, generator-verifier, gradient-free verifier, D_auto, policy steering]
 related:
+  - sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md
+  - concepts/red-queen-controlled-utility-evolution.md
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
   - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
   - sources/arxiv-rlvf-formally-verified-law-2606.23913-2026-06-26.md
@@ -20,11 +22,13 @@ related:
   - concepts/kuhn-poker-sft-curriculum-reference.md
 maturity: draft
 created: 2026-06-18
-updated: 2026-06-26
+updated: 2026-06-29
 ---
 
 ## Relations
 
+- @sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md — RQGM epoch co-evolution (K134)
+- @concepts/red-queen-controlled-utility-evolution.md — controlled utility evolution pattern
 - @sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md — VERITAS robotics paper (K123)
 - @sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md — trajectory risk bounds (K125)
 - @concepts/probabilistic-agent-policy-verification.md — DRO global bound vs pointwise Best-of-N
@@ -60,7 +64,9 @@ Distinct from **Raeth nine-axis** (post-hoc eval) — verifier runs **before** a
 
 **K131 extension:** **RLVF** (2606.23913) trains toward verifier-pass trajectories; **Relaxed NFL** (2606.24443) adds two-stage informal→elaborated→verified pipeline — complements inference-time Best-of-N.
 
-**Posture:** REFERENCE until VERITAS / Google code licenses verified. Poker briefs stage Best-of-N (K123) + trajectory bound spike (K125) + Relaxed NFL trace schema (K131) for Researcher Round.
+**K134 extension:** **RQGM** (2606.26294) co-evolves evaluators across **epochs** with GT-gated promotion + selective erasure — extends static Best-of-N to **versioned rubric** upgrades for sandbox tri-verifier (see `@concepts/red-queen-controlled-utility-evolution.md`).
+
+**Posture:** REFERENCE until VERITAS / Google / RQGM code licenses verified. Poker briefs stage Best-of-N (K123) + trajectory bound spike (K125) + Relaxed NFL trace schema (K131) + rubric epoch promotion (K134) for Researcher Round.
 
 ## Snippets
 

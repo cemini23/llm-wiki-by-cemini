@@ -12,8 +12,20 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **479 canonical stubs** (K133 ingest +4 sources +2 entities)
+Total: **487 canonical stubs** (K134 ingest +2 sources +1 concept +6 entities)
 
+
+### k134-ingest (9)
+
+- [GitHub Repository Evaluation Plan.docx — multi-wiki runtime (2026-06-29)](sources/eval-github-repos-plan-multi-wiki-2026-06-29.md) — 20 URLs; deepsec + cybersec-skills Adopt; codebase-memory CONDITIONAL-GO. — `docx` [+wiki-tooling, +k134]
+- [Red Queen Gödel Machine (2606.26294)](sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md) — co-evolving evaluators; poker rubric-epoch steal. — `pdf` [+arxiv, +verifier, +k134]
+- [Red Queen controlled utility evolution](concepts/red-queen-controlled-utility-evolution.md) — epoch + selective erasure pattern. — concept [+k134]
+- [vercel-labs/deepsec](entities/tools/deepsec.md) — K134 Adopt Apache-2.0 AppSec scanner. — entity, tool, k134
+- [DeusData/codebase-memory-mcp](entities/tools/codebase-memory-mcp.md) — K134 CONDITIONAL-GO MIT MCP graph. — entity, tool, k134
+- [Panniantong/Agent-Reach](entities/tools/agent-reach.md) — K134 CONDITIONAL-GO social CLI. — entity, tool, k134
+- [Anthropic-Cybersecurity-Skills](entities/tools/anthropic-cybersecurity-skills.md) — K134 Adopt skill corpus. — entity, tool, k134
+- [stealth-browser-mcp](entities/tools/stealth-browser-mcp.md) — K134 Steal-from (browser overlap). — entity, tool, k134
+- [daily_stock_analysis](entities/tools/daily-stock-analysis.md) — K134 Steal-from xsp GHA patterns. — entity, tool, k134
 
 ### k133-ingest (4)
 

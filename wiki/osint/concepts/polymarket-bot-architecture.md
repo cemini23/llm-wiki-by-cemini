@@ -12,6 +12,7 @@ related:
   - entities/tools/bukosabino-ta.md
   - entities/tools/polymarket-clob-api.md
   - entities/tools/polymarket-gamma-api.md
+  - entities/tools/agent-reach.md
   - sources/alterego-eth-polymarket-gamma-vs-clob.md
   - sources/alterego-eth-polymarket-endpoint-cheatsheet.md
   - concepts/active-project-research-routing.md

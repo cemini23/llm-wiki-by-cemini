@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-06-29] ingest | K134 — GitHub eval docx + RQGM arXiv
+
+- **Sources (2):** GitHub Repository Evaluation Plan.docx (20 URLs); Red Queen Gödel Machine arXiv 2606.26294
+- **Concepts (1):** `@concepts/red-queen-controlled-utility-evolution.md`
+- **Entities (6):** deepsec, codebase-memory-mcp, agent-reach, anthropic-cybersecurity-skills, stealth-browser-mcp, daily-stock-analysis
+- **Updates (4):** generator-verifier steering, wiki-tooling-evaluation K134 wave, llm-agent-systems, mattpocock-skills K134 backlink
+- **Phase-0:** `scripts/adopt_k134_phase0.sh` — 2 Adopt GO, 2 CONDITIONAL-GO, 2 steal downgrades, RQGM reference-only
+- **Briefs (5):** poker RQGM rubric epoch; CCC codebase-memory MCP; OSINT Agent-Reach conditional; cybersec deepsec; xsp daily_stock_analysis steal
+- **Archive:** docx + PDF → egress-fi; inbox cleared
+
 ## [2026-06-28] ingest | K133 — 3 tool-eval docx + Karpathy field notes PNG
 
 - **Sources (4):** multi-wiki Discord link eval (20 URLs); repo plan 2 TipDrop legacy (18 URLs); GitHub UW MCP batch (20 URLs); Karpathy LLM-WIKI field notes PNG (nine rules)

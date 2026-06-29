@@ -5,6 +5,7 @@ tags: [docx, rl-marl, llm-agents, prediction-markets, cemini-internal, audit-sec
 clusters: [rl-marl, llm-agents, prediction-markets, cemini-internal, audit-security]
 related:
   - concepts/rl-marl-research.md
+  - entities/tools/codebase-memory-mcp.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23

@@ -46,6 +46,9 @@ related:
   - sources/arxiv-self-healing-llm-agents-2605.06737.md
   - concepts/code-as-agent-harness.md
   - concepts/continual-harness-online-self-improvement.md
+  - concepts/red-queen-controlled-utility-evolution.md
+  - sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md
+  - sources/eval-github-repos-plan-multi-wiki-2026-06-29.md
   - concepts/generator-verifier-inference-time-steering.md
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
   - sources/agents-7.md

@@ -8,6 +8,7 @@ related:
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
   - concepts/code-as-agent-harness.md
   - concepts/generator-verifier-inference-time-steering.md
+  - concepts/red-queen-controlled-utility-evolution.md
   - concepts/llm-environment-engineer-rl-curriculum.md
   - concepts/llm-agent-systems.md
   - sources/agentic-harness-engineering.md

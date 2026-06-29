@@ -15,6 +15,8 @@ related:
   - entities/platforms/devfun-arena.md
   - concepts/extensive-form-games-stochastic-action-sets.md
   - concepts/multi-agent-fictitious-play-llm.md
+  - concepts/red-queen-controlled-utility-evolution.md
+  - sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md
   - concepts/team-zero-sum-games-complexity.md
   - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
   - sources/arxiv-team-zero-sum-games-2606.16139-2026-06-20.md
