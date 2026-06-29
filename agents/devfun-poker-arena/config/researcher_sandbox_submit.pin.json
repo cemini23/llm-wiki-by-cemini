@@ -2,8 +2,9 @@
   "competitionId": "cmqqqs05i1u7ppnu7stqbw7d8",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "a31e56a7-a25f-49f7-8a40-fae4d70f012c",
+  "activeSubmissionId": "cdd81d48-87af-483c-8dcb-597bd4d8e15f",
   "watchSubmissionIds": [
+    "cdd81d48-87af-483c-8dcb-597bd4d8e15f",
     "a31e56a7-a25f-49f7-8a40-fae4d70f012c",
     "8fd40050-4a02-4df4-b200-aff1fc53e6ed"
   ],
@@ -11,6 +12,6 @@
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
   "agentVersion": "researcher-jun21.701d776.2026-06-26",
   "gitCommit": "701d776",
-  "pinnedAt": "2026-06-08T12:00:00Z",
-  "notes": "Primary activeSubmissionId = live bot a31e56a7 (~7931/10k). 8fd40050 zombie at 1600 kept in watch list for ticket."
+  "pinnedAt": "2026-06-29T12:00:00Z",
+  "notes": "New season cdd81d48 after a31e56a7 finished 10k+ (~67 TS). Zombies in watch only."
 }

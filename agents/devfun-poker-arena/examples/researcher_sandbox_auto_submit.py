@@ -167,10 +167,22 @@ def find_active_pvp_submission(
             return
         ch, th, status = pvp_progress(full)
         st = status.lower()
+        top = str(full.get("status") or "").lower()
+        if th > 0 and ch >= th:
+            return
+        if top in ("succeeded", "finished", "failed", "error"):
+            return
         if st == "active" or (th > 0 and ch < th and st not in ("finished", "failed", "error")):
             candidates.append(full)
 
     for sid in _submission_ids_from_pin(pin or {}):
+        if sid in seen:
+            continue
+        # Only the pinned primary ID gates submit/wait; watchSubmissionIds are monitor-only.
+        pin_primary = str((pin or {}).get("activeSubmissionId") or "")
+        watch_only = pin.get("watchSubmissionIds") or []
+        if pin_primary and sid != pin_primary and sid in watch_only:
+            continue
         consider(sid)
     for sid in _submission_ids_from_state(state):
         consider(sid)
@@ -357,17 +369,19 @@ def run_auto(
         print(f"==> WAIT: active PvP {ch}/{th} ({status}) — will submit fresh bundle when finished")
         return 0
 
-    if prefer_replace and active and pvp_is_finished(active):
-        prefer_replace = False
-        print("==> Active season finished — submitting fresh bundle (no replace)")
-
-    if not prefer_replace and prev_state and prev_state.get("status") in (
-        "waiting_for_finish",
-        "stuck_zombie",
+    if (
+        not prefer_replace
+        and prev_state
+        and prev_state.get("status") in ("waiting_for_finish", "stuck_zombie")
+        and active
+        and not pvp_is_finished(active)
     ):
         print("==> SKIP submit: prior state indicates in-flight or stuck bot — replace disabled in pin")
         write_state(state_path, {**prev_state, "checkedAt": now})
         return 0
+
+    if active and pvp_is_finished(active):
+        print("==> Prior PvP finished — submitting fresh bundle (no replace)")
 
     if prefer_replace:
         print(f"==> Submit with replace to {competition_id}")
