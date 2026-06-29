@@ -28,6 +28,8 @@ Indexes repo ASTs into persistent graph; **14 MCP tools** for call-graph, archit
 
 **Phase-0 (2026-06-29):** **CONDITIONAL-GO** — MIT confirmed; 20.7k★; 186 open issues. Pre-install gates: (1) verify static binary checksum / build from source on laptop; (2) MCP tool allowlist — read-only graph queries only; (3) compare vs lazy-tool catalog before duplicating prod-mcp paths.
 
+**Laptop adoption (2026-06-29):** Binary `~/.local/bin/codebase-memory-mcp` v0.8.1; federation sync via `scripts/sync_federation_codebase_memory_mcp.sh` (18 workspaces + global `~/.cursor/mcp.json`). Prod brief: `2026-06-29_k134-codebase-memory-cursor-federation-prod.md` on cemini-prod.
+
 **Primary surface:** CCC-wiki federation repo comprehension; optional TipDrop kit extension (docx overlap flag).
 
 **Reject overlap:** Not a wiki compiler — nested-wiki serving still laptop git + Read/grep.

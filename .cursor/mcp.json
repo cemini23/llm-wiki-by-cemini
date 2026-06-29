@@ -45,6 +45,13 @@
         "/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki"
       ],
       "env": {}
+    },
+    "codebase-memory-mcp": {
+      "type": "stdio",
+      "disabled": false,
+      "command": "/Users/claudiobarone/.local/bin/codebase-memory-mcp",
+      "args": [],
+      "env": {}
     }
   }
 }

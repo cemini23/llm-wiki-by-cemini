@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-06-29] gap-detect | Tier 1 weekly report
+
+- **Report:** `.local/reports/wiki-gap-detect-2026-06-29.txt` — 24 Type A cited-unread stubs, 121 stale NV tags (descriptive only)
+- **Cadence:** last run 2026-06-29; next due 2026-07-06
+
+## [2026-06-29] adopt | K134 codebase-memory-mcp federation MCP
+
+- **Binary:** `~/.local/bin/codebase-memory-mcp` v0.8.1 (checksum-verified release)
+- **Sync:** `scripts/sync_federation_codebase_memory_mcp.sh` — 18 federation workspaces + global Cursor MCP
+- **Skills:** `sync_federation_cursor_skills.sh` re-run (goal · to-issues · grill-with-docs)
+- **Prod brief:** `2026-06-29_k134-codebase-memory-cursor-federation-prod.md` → cemini-prod:/opt/cemini/briefs/
+
 ## [2026-06-29] ingest | K134 — GitHub eval docx + RQGM arXiv
 
 - **Sources (2):** GitHub Repository Evaluation Plan.docx (20 URLs); Red Queen Gödel Machine arXiv 2606.26294
