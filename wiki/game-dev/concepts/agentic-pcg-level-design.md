@@ -9,9 +9,10 @@ related:
   - concepts/ai-assisted-game-dev-workflows.md
   - sources/agentic-pcg-jiang-2026.md
   - sources/exa-npc-pcg-ccgs-batch-2026-06-13.md
+  - sources/unreal-engine-58-mcp-shelf-2026-06-24.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-29
 ---
 
 ## Relations

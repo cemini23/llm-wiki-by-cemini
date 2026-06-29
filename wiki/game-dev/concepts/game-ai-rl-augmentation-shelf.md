@@ -11,9 +11,10 @@ related:
   - concepts/agent-harness-castle-project.md
   - concepts/scope-tiers.md
   - entities/projects/castle-sim.md
+  - sources/inbox-arxiv-reject-batch-2026-06-29.md
 maturity: validated
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-29
 ---
 
 ## Relations

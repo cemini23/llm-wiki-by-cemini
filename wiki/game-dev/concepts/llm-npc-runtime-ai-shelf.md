@@ -15,9 +15,10 @@ related:
   - sources/ixie-agentic-npc-balance-2026.md
   - sources/unity-sentis-practical-shelf-2026-06-23.md
   - sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md
+  - sources/hero-rl-llm-npc-springer-2026-06-26.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-28
+updated: 2026-06-29
 ---
 
 ## Relations
@@ -49,6 +50,7 @@ updated: 2026-06-28
 | GDC 2025 ACE talk | On-device SLMs for character reasoning | — | Watch for Godot ports |
 | Unity Sentis (ONNX inference) | Small classifiers — difficulty, perception, gestures; **not LLMs** | Unity 6 only | Contrast shelf [@sources/unity-sentis-practical-shelf-2026-06-23.md] |
 | Krafton PUBG Ally | Co-playable squad teammate (gameplay agency, not chat-only) | UE + NVIDIA ACE | Industry ref [@sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md] |
+| HeRoN (Springer 2026) | Mediated RL + LLM adaptive NPC | Research framework | Academic WATCH [@sources/hero-rl-llm-npc-springer-2026-06-26.md] |
 
 ### Indie / open-source implementations
 

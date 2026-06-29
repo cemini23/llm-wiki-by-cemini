@@ -11,6 +11,7 @@ related:
   - entities/projects/castle-sim.md
   - sources/sh2-kingmaker-youtube-watchlist-2026-06-19.md
   - sources/shaggydev-tactics-engine-devlog-2023.md
+  - sources/inbox-arxiv-reject-batch-2026-06-29.md
   - sources/inbox-arxiv-reject-batch-2026-06-25.md
   - sources/inbox-arxiv-reject-batch-2026-06-23.md
   - meta/cross-wiki-routing.md
@@ -19,7 +20,7 @@ source_type: operator-watchlist
 source_url: https://www.youtube.com/watch?v=9TVAnK6bRPs
 maturity: validated
 created: 2026-06-23
-updated: 2026-06-25
+updated: 2026-06-29
 ---
 
 ## Raw Concept
@@ -33,6 +34,7 @@ Optional Godot 4 RTS/RPG long-form tutorial (**~11h**, KIMS MAKING GAMES) for **
 | ID | Title | Channel | Transcript | Status |
 |----|-------|---------|------------|--------|
 | 9TVAnK6bRPs | Build a Complete RTS RPG in Godot 4 \| Full Game Tutorial 11h | KIMS MAKING GAMES | ✅ | **11,786 segments** — sampled; archive `/tmp/godot-rts-yt-transcripts.json` |
+| ays6TU7rI-k | PEST-RTS Devlog #5 — Auto Doors, New Assets & The Future | (indie Godot RTS) | — | **WATCH** — digest 2026-06-28; auto doors + asset pipeline patterns |
 
 ### `[OBSERVED-YT]` steal candidates (timestamp samples)
 

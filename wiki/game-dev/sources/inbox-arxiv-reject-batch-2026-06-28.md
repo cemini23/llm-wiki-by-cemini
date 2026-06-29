@@ -4,6 +4,7 @@ type: source
 tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, re-drop]
 related:
+  - sources/inbox-arxiv-reject-batch-2026-06-29.md
   - sources/inbox-arxiv-reject-batch-2026-06-27.md
   - sources/inbox-arxiv-reject-batch-2026-06-26.md
   - sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md

@@ -4,6 +4,18 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-29] ingest | Inbox re-drop + UE 5.8 MCP shelf + HeRoN NPC research
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-29.md (all reject; 2 new mis-routes); archived; inbox cleared
+- News: @sources/unreal-engine-58-mcp-shelf-2026-06-24.md → @concepts/ai-game-dev-tool-stack-2026.md
+- News: @sources/hero-rl-llm-npc-springer-2026-06-26.md → @concepts/llm-npc-runtime-ai-shelf.md
+- News: PEST-RTS devlog row → @sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
+- Phase-0: none (UE MCP is bundled engine feature; HeRoN is academic)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity)
+- Sweep: @sweeps/2026-06-29-daily.md
+
+---
+
 ## [2026-06-28] ingest | Inbox re-drop + skeleton-implementation fence + PUBG Ally shelf
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-28.md (all reject/re-drop); archived; inbox cleared

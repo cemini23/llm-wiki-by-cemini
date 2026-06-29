@@ -27,9 +27,10 @@ related:
   - sources/bigdevsoon-void-balls-ai-10days-2025.md
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md
   - sources/hi-godot-ai-phase-0-audit-2026-06-13.md
+  - sources/unreal-engine-58-mcp-shelf-2026-06-24.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-21
+updated: 2026-06-29
 ---
 
 ## Relations
@@ -105,11 +106,12 @@ Catalog of **AI + automation tools** for game development — codegen, editor MC
 
 Pair with @ccc-wiki verification gates: automated tests **do not replace** human fun pass.
 
-### Unity-specific (reference)
+### Unity / Unreal-specific (reference)
 
 | Tool | Role |
 |------|------|
 | Unity MCP | Claude ↔ scene hierarchy (Void Balls workflow) |
+| **Unreal Engine 5.8 MCP** | First-party experimental editor MCP [@sources/unreal-engine-58-mcp-shelf-2026-06-24.md] |
 | UniGen | NL → Unity 3D multi-agent (research) |
 
 Not on castle-sim path (Godot chosen) but patterns transfer.
