@@ -38,7 +38,9 @@ def exploitability_proxy(
     *,
     lag_bb100: float | None = None,
 ) -> float:
-    """Offline proxy: uniform-magnet BR EV minus GARIP/EMA anchor BR EV (higher → less exploitable)."""
+    """Offline BR-EV delta proxy: uniform-magnet BR EV minus GARIP/EMA anchor BR EV
+    (higher -> less exploitable). This is a relative *proxy*, NOT Nash exploitability
+    epsilon(sigma); for true generalized exploitability see examples/kuhn3p_solver.py."""
     proxy = float(uniform_delta_ev) - float(garip_delta_ev)
     if lag_bb100 is not None:
         proxy += max(0.0, -float(lag_bb100)) * 0.01

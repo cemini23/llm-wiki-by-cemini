@@ -8,6 +8,7 @@ related:
   - sources/3-28-links-1.md
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/mattpocock-skills.md
+  - "@ccc-wiki/entities/tools/codebase-memory-mcp.md"
 maturity: draft
 created: 2026-06-29
 updated: 2026-06-29
@@ -17,6 +18,7 @@ updated: 2026-06-29
 
 - @sources/eval-github-repos-plan-multi-wiki-2026-06-29.md — K134 Adopt
 - @sources/3-28-links-1.md — prior steal-from mention (67× token reduction claim)
+- @ccc-wiki/entities/tools/codebase-memory-mcp.md — CCC-primary federation deploy canon
 
 ## Raw Concept
 

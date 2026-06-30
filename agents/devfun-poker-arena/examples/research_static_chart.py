@@ -207,6 +207,9 @@ def _export_preflop_json(out_path: str = "research/preflop.json") -> str:
     import os
     from pathlib import Path
 
+    # K136: Local import to keep module-level imports minimal (lazy import pattern)
+    from solver_provenance import solver_provenance, stamp_chart_provenance
+
     path = Path(out_path)
     path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -229,6 +232,13 @@ def _export_preflop_json(out_path: str = "research/preflop.json") -> str:
                 "Hands not listed default to fold. Postflop is not covered.",
         "ranges": chart,
     }
+
+    # K136: Stamp solver provenance (backward-compatible optional key)
+    payload = stamp_chart_provenance(payload, solver_provenance(
+        "static_chart",
+        equilibrium_selection="heuristic",
+        notes="hand-authored 6-max opening caricature; not solver output",
+    ))
 
     # Unique temp name (NamedTemporaryFile-style) to avoid collisions when
     # two concurrent runs write the same target — fixed `.tmp` suffix would

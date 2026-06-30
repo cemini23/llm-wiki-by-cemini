@@ -45,6 +45,34 @@ chmod +x examples/cemini_hl_loop.sh    # once
 
 Wiki: `@wiki/concepts/poker-hl-analyst-loop.md` · Prompt: `prompts/cemini_hl_analyst_prompt.md`
 
+### What the self-play `--gate` measures (and what it does not)
+
+`cemini_selfplay_audit.py --gate` is a **regression + style gate**, not an
+equilibrium solver. It checks three things, none of which is Nash ε:
+
+| Signal | What it is | What it is NOT |
+|--------|------------|----------------|
+| **KPI / regression gate** | EP VPIP ≤ 22%, EP trash opens = 0, VPIP−PFR gap, bb/100 floors vs rock/maniac | A distance-to-equilibrium measure |
+| **TrueSkill match-win proxy** (HU) | Series win-rate over `--match-hands` matches — a *relative* skill estimate vs fixed bots | Absolute exploitability of our policy |
+| **Nash exploitability ε(σ)** | Generalized exploitability (best-response gap summed over players) | **Not computed in the live loop at all** |
+
+**Do not relabel `--gate` as a "Nash ε improvement."** Beating rock/maniac in
+self-play lowers KPI risk and raises a TrueSkill proxy; it says nothing about
+ε(σ). True exploitability lives only in the offline K136 toy-game spike
+(`examples/kuhn3p_solver.py`: FP→PED on 3-player Kuhn, provenance-stamped via
+`examples/solver_provenance.py`), and **Kuhn results do not transfer to NLHE
+without measurement** (arXiv 2606.28308 / 2606.29169). The `exploitability_proxy`
+in `examples/garip_mixture.py` is a best-response-EV *delta*, also **not** ε(σ).
+
+Wiki: `@wiki/concepts/projected-exploitability-descent.md` ·
+`@wiki/sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md`
+
+_Further reading (external, no install):_ MIT
+[`imperfect-information-deal-games`](https://github.com/mit-ll/imperfect-information-deal-games)
+exploitability harness (OpenSpiel deal-games ladder, arXiv 2606.29457) — CFR/MMD/PSRO
+win when tabular, PPO/PPG only give a learned *lower bound* at scale. Reference
+only; no dependency, no clone in this repo.
+
 See **`docs/TESTING-CEMINI.md`** for the full postmortem and end-of-session workflow (analyze → regression spot → preflight → deploy).
 
 ## Private training (starter kit — recommended before tournament)

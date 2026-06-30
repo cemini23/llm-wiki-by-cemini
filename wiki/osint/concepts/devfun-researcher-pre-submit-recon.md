@@ -9,14 +9,14 @@ related:
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/devfun-poker-researcher-track-email-2026-06-19.md
-  - sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md
+  - sources/devfun-researcher-sandbox-researcher-guide-2026-06-08.md
   - sources/devfun-researcher-track-hu-format-2026-06-08.md
   - sources/devfun-researcher-track-discord-welcome-2026-06-18.md
   - entities/platforms/devfun-arena.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
 maturity: validated
 created: 2026-06-19
-updated: 2026-06-20
+updated: 2026-06-08
 ---
 
 ## Relations
@@ -53,7 +53,8 @@ Do **not** run `pokerkit run`, flip prod lobby, or burn buy-in until this ritual
 | **B. Recon** | First sight of Researcher comp + **before every format change** | `run_researcher_comp_recon.sh` |
 | **C. Decide** | Human reads report + skillFile | Filled checklist below |
 | **D. Gate** | After decisions locked | `run_hu_sandbox_gate.sh --hands 500` with `CEMINI_TABLE_FORMAT=hu` |
-| **E. Submit** | Gate PASS | smoke `pokerkit run --max-hands 50` → season → trajectory export |
+| **E. Submit** | Gate PASS | `verify_sandbox_bundle_layout.sh` → `submit_sandbox_pvp.py --build --replace` → poll |
+
 
 ### Phase B — automated recon
 
@@ -76,7 +77,7 @@ Writes `reports/researcher-round/recon-<ts>/`:
 
 Manual supplements (automation does not replace):
 
-- Read Discord `#researcher-track` + any BenchFlow / Daytona docs linked at launch
+- Read Discord `#researcher-track` + official guide https://docs.dev.fun/arena/poker-arena-and-prize/the-sandbox-researcher-guide
 - Open https://b-arena.dev.fun/skills/ if skill path is non-obvious
 - Compare one-pager finale (HU) vs sandbox skill (table size, hand count, rubric)
 
@@ -110,16 +111,21 @@ Copy into recon report or brief; **all boxes** before first submit:
 
 ### Phase E — submit bundle
 
-**Interface [CONFIRMED Discord 2026-06-20]:** builders upload **agent bundle files** to sandbox (heuristic / LLM / weights / solver). Full layout **pending** — see `@sources/devfun-researcher-sandbox-bundle-discord-2026-06-20.md`. Until spec drops:
+**Interface [CONFIRMED 2026-06-26]:** Researcher HU sandbox uses **static-agent zip** (`harness/`, `assets/`, `skills/`) via `POST /submissions` with `template=static-agent`. See `@sources/devfun-researcher-sandbox-researcher-guide-2026-06-08.md` and `agents/devfun-poker-arena/references/researcher-track-sandbox.md`.
+
+**Do not** use `pokerkit run` on the Researcher PvP comp (403) or lobby `texas/join` on that comp (409). Prod lobby stays on Playground for intel when Researcher comp is pinned.
 
 ```bash
 export ARENA_RESEARCHER_COMP_ID='<id>'
 CEMINI_TABLE_FORMAT=hu bash scripts/run_hu_sandbox_gate.sh --hands 500
-./pokerkit run --agent examples/cemini_decide.py --max-hands 50   # smoke
+bash scripts/verify_sandbox_bundle_layout.sh
+uv run python examples/submit_sandbox_pvp.py --build --replace --competition-id "$ARENA_RESEARCHER_COMP_ID"
 ./scripts/export_researcher_trajectory.sh --competition-id "$ARENA_RESEARCHER_COMP_ID"
 ```
 
-**Do not** pivot to runtime LLM submit — devs recommend pure-code agents for sandbox cost/quality.
+**Reasoning:** harness bundle ships `CEMINI_SANITIZE_OUTPUT=0` — generic reasoning is rejected on trajectory (official guide). Playground lobby may keep sanitize on.
+
+**Do not** pivot to runtime LLM submit for cost/quality — static `decide()` is the Cemini path; arena-tool MCP is the LLM-agent alternative documented in the same guide.
 
 Post `axis_summary.json` + link to trajectory bundle in researcher channel per Discord norms.
 

@@ -34,6 +34,7 @@ from research_static_chart import (  # noqa: E402
     research_static_chart,
 )
 from selfplay import run_selfplay, _load_decide_from_path  # noqa: E402
+from solver_provenance import solver_provenance, stamp_chart_provenance  # noqa: E402
 
 STANCES = ("rock", "maniac", "lag")
 MAFP_CHART_PATH = _AGENT_ROOT / "research" / "mafp_hu_chart.json"
@@ -309,6 +310,15 @@ def write_mafp_chart(
         "ranges": ranges,
         "meta": meta or {},
     }
+    # K136: Stamp solver provenance (backward-compatible optional key)
+    prov = solver_provenance(
+        "mafp",
+        version="1",
+        equilibrium_selection="time_average",   # FP time-average member
+        nash_set_singleton=None,                 # not analyzed for HU NLHE chart space
+        notes="K124 MAFP stance fictitious play; not a tabular NE solver",
+    )
+    payload = stamp_chart_provenance(payload, prov)
     tmp = path.with_suffix(path.suffix + ".tmp")
     tmp.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     os.replace(tmp, path)

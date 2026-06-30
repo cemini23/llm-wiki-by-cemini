@@ -43,6 +43,8 @@ Preflight runs `cemini_selfplay_audit.py --gate`:
 
 Do NOT tune decide() to maximize self-play bb/100. Tune to fix **live Arena leaks**
 from analyze; self-play only blocks obvious regressions.
+The gate is a KPI/regression + TrueSkill match-win proxy, NOT a Nash exploitability
+(epsilon) metric — never describe a gate pass as an equilibrium/exploitability gain.
 
 ## Regression spots (must stay green)
 

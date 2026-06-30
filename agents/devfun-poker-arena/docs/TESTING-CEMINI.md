@@ -63,6 +63,12 @@ Checks: 20 regression spots × mix off/on (8 repeats), sanitize preserves action
 
 Tracks **VPIP, PFR, EP trash opens, bb/100** vs rock + maniac with `--training-hud`:
 
+> **Gate semantics:** this is a KPI/regression gate plus a HU TrueSkill match-win
+> proxy — **not** a Nash exploitability (ε) measure. Do not relabel `--gate` as an
+> equilibrium improvement. True exploitability lives only in the offline K136 spike:
+> `examples/kuhn3p_solver.py` (FP→PED on 3-player Kuhn) + `examples/solver_provenance.py`
+> (solver-family provenance). Kuhn ≠ NLHE without measurement (arXiv 2606.28308 / 2606.29169).
+
 ```bash
 uv run python examples/cemini_selfplay_audit.py --hands 400 --seed 42 --gate
 ```
@@ -133,3 +139,5 @@ Treat local tests as **necessary, not sufficient**. Eval benchmark is the confir
 | `examples/cemini_hl_brief.py` | Build OSINT-shaped brief from analyze report |
 | `prompts/cemini_hl_analyst_prompt.md` | Cursor patch prompt (cemini_decide only) |
 | `examples/export_regression_spots.py` | Analyze → spot stubs |
+| `examples/kuhn3p_solver.py` | K136 FP→PED exploitability spike (offline literacy; not a live gate) |
+| `examples/solver_provenance.py` | K136 solver-family provenance + guarded chart diff |

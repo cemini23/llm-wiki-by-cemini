@@ -12,6 +12,12 @@ Usage:
     uv run python examples/cemini_selfplay_audit.py --hands 800 --seed 42 --gate
 
 Exit 0 = pass (or report-only). Exit 1 = gate failed.
+
+Gate semantics: this audit enforces KPI/regression thresholds and a HU
+TrueSkill-style match-win proxy. It is NOT a Nash exploitability (epsilon)
+measure and must not be relabeled as one. For true generalized exploitability
+on a toy game see examples/kuhn3p_solver.py (K136 FP->PED spike); for
+solver-family provenance see examples/solver_provenance.py.
 """
 from __future__ import annotations
 
@@ -140,6 +146,12 @@ HU_MIN_VPIP_FLOOR = 0.26
 HU_MAX_VPIP_ADVISORY = 0.42
 # HU BB defend calls vs opens inflate raw VPIP−PFR vs 6-max limp metric (K131b).
 HU_MAX_VPIP_PFR_GAP = 0.12
+
+# K134: one-line guardrail so the gate is never read as an equilibrium metric.
+GATE_SEMANTICS_NOTE = (
+    "gate = KPI/regression + TrueSkill match-win proxy; "
+    "NOT Nash exploitability (epsilon). See examples/kuhn3p_solver.py for true ED."
+)
 
 
 def _rate(num: int, den: int) -> float:
@@ -290,6 +302,7 @@ def run_audit(
             "(over-loose)"
         )
     print(sep)
+    print(f"  note: {GATE_SEMANTICS_NOTE}")
 
     failures: list[str] = []
     if ep_vpip_rate > thresholds.max_ep_vpip:

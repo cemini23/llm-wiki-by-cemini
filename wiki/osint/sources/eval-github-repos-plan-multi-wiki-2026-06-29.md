@@ -8,6 +8,7 @@ related:
   - concepts/cemini-license-posture.md
   - entities/tools/deepsec.md
   - entities/tools/codebase-memory-mcp.md
+  - "@ccc-wiki/entities/tools/codebase-memory-mcp.md"
   - entities/tools/agent-reach.md
   - entities/tools/anthropic-cybersecurity-skills.md
   - entities/tools/stealth-browser-mcp.md
@@ -25,7 +26,7 @@ clusters: [agent-harness, wiki-tooling, osint, cybersec]
 
 - @concepts/wiki-tooling-evaluation.md — K134 wave register
 - @entities/tools/deepsec.md — Adopt (Apache-2.0)
-- @entities/tools/codebase-memory-mcp.md — CONDITIONAL-GO (MIT)
+- @ccc-wiki/entities/tools/codebase-memory-mcp.md — CONDITIONAL-GO (MIT); CCC-primary deploy
 - @entities/tools/agent-reach.md — CONDITIONAL-GO (MIT; ToS/cookie risk)
 - @entities/tools/anthropic-cybersecurity-skills.md — Adopt (Apache-2.0)
 - @entities/tools/stealth-browser-mcp.md — Steal-from (MIT; overlaps built-in browser)

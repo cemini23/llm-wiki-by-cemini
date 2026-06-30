@@ -22,4 +22,4 @@
 
 **Librarian:** `osint-wiki`, `ccc-wiki`, `gambling-wiki`, `game-dev-wiki`, and all public domain wikis sync via OSINT `scripts/sync_wiki_to_librarian.sh` → `cemini-librarian:/opt/cemini-wiki/<alias>/wiki/`.
 
-**Eval prompt:** `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v7-2026-06-13.md` — nine surfaces (includes `game-dev-wiki` as surface 8).
+**Eval prompt:** `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v9-2026-06-28.md` — ten surfaces (surface 1 = active prod bots: XSP, poker arena; surface 10 = TipDrop.io).

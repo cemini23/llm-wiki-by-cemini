@@ -167,8 +167,12 @@ def append_deploy_record(
     env_file: Optional[Path] = None,
     env_extra: Optional[dict[str, str]] = None,
     notes: str = "",
+    solver_family: str = "",
 ) -> dict[str, Any]:
-    """Append one deploy row; returns the row written."""
+    """Append one deploy row; returns the row written.
+
+    K136: Optional solver_family kwarg for Nash-solver provenance tracking.
+    """
     sha = commit or git_commit_short()
     state = read_state()
     snap = collect_env_snapshot(env_file=env_file, extra=env_extra)
@@ -194,6 +198,12 @@ def append_deploy_record(
     agent_version = snap.get("AGENT_VERSION") or os.environ.get("AGENT_VERSION", "").strip()
     if agent_version:
         row["agent_version"] = agent_version
+
+    # K136: Optional solver_family provenance (backward-compat: empty -> omitted)
+    if solver_family:
+        # Local import to keep stdlib-only top level; normalize to canonical family name
+        from solver_provenance import normalize_family
+        row["solver_family"] = normalize_family(solver_family)
 
     _append_jsonl(deploys_path(), row)
     return row
