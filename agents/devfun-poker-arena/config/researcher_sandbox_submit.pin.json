@@ -1,17 +1,15 @@
 {
-  "competitionId": "cmqqqs05i1u7ppnu7stqbw7d8",
+  "competitionId": "cmr0jmqlt08bi13n8neory9xb",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "cdd81d48-87af-483c-8dcb-597bd4d8e15f",
+  "activeSubmissionId": "5f6f3aec-6547-4166-8d18-eaae2ad54d91",
   "watchSubmissionIds": [
-    "cdd81d48-87af-483c-8dcb-597bd4d8e15f",
-    "a31e56a7-a25f-49f7-8a40-fae4d70f012c",
-    "8fd40050-4a02-4df4-b200-aff1fc53e6ed"
+    "5f6f3aec-6547-4166-8d18-eaae2ad54d91"
   ],
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-jun21.701d776.2026-06-26",
-  "gitCommit": "701d776",
-  "pinnedAt": "2026-06-29T12:00:00Z",
-  "notes": "New season cdd81d48 after a31e56a7 finished 10k+ (~67 TS). Zombies in watch only."
+  "agentVersion": "researcher-s2.6704963.2026-06-30",
+  "gitCommit": "6704963",
+  "pinnedAt": "2026-06-30T12:00:00Z",
+  "notes": "S2 beta sandbox — fresh submit after cursor-audit; S1 bots left in watch only."
 }
