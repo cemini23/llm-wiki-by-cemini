@@ -67,10 +67,15 @@ Five parallel research tracks executed; cross-track synthesis filed locally.
 
 **Synthesis:** `.local/reports/ice-turnkey-research/synthesis-tier2-2026-06-30.md`
 
-### Tier 3 (in progress)
+### Tier 3 complete (2026-06-30)
 
-1. **ADS-B N5000P** — DC weekend negotiation cadence export spec
-2. **Warehouse disposition** — 7-of-11 offload → turnkey capital reallocation
+| Track | Key result |
+|-------|------------|
+| 3A — N5000P ADS-B | Jun **DC weekend cadence** (hex A63C56); negotiation signal; premium export spec in local report |
+| 3B — Warehouse exit | **7/11** offloaded/reevaluating; OIG chill; capital reallocation **theoretical** — pipeline frozen |
+
+**Synthesis:** `.local/reports/ice-turnkey-research/synthesis-tier3-2026-06-30.md`  
+**Full stack:** `.local/reports/ice-turnkey-research/synthesis-tier0-2026-06-30.md` through `synthesis-tier3-2026-06-30.md`
 
 ### Falsifiers (watch)
 

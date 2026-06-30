@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-30] research | ICE turnkey Tier 3 (N5000P + warehouse disposition)
+
+- **3A:** `.local/reports/ice-turnkey-research/tier3/track-3a-n5000p-adsb-dc-cadence-2026-06-30.md`
+- **3B:** `.local/reports/ice-turnkey-research/tier3/track-3b-warehouse-disposition-2026-06-30.md` — 7/11 warehouse retreat; OIG chill; capital reallocation frozen
+- **Synthesis:** `.local/reports/ice-turnkey-research/synthesis-tier3-2026-06-30.md`
+- **Wiki:** `@concepts/ice-turnkey-research-backlog-2026-06-30.md` — **Tiers 0–3 complete**
+
 ## [2026-06-30] research | ICE turnkey Tier 2 (NEPA Gilroy + Otay vs Cal City)
 
 - **2A:** `.local/reports/ice-turnkey-research/tier2/track-2a-nepa-apa-gilroy-2026-06-30.md` — Gilroy PI Oct 7; NEPA delay not kill
