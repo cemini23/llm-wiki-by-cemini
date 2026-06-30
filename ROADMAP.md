@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-30 — K137)
+
+- **K137 ingest (2026-06-30)** — Multi-Wiki Link Evaluation docx (20 URLs). **1 source + 6 entities + 3 updates.** Adopt: DeepSpec (MIT), OpenClaw-RL (Apache-2.0). Steal: clawhub, open-im-server, mission-control, zero-token. Prod briefs: DeepSpec latency, mission-control fleet audit; CCC/TipDrop clawhub validation. **Phase-0:** `adopt_k137_phase0.sh`. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-06-30 — K136)
 
 - **K136 ingest (2026-06-30)** — 3 arXiv from inbox. **3 sources + 3 concepts + 7 updates.** Nash solver selection (28308) + PED/FP-PED (29169) → poker brief; HRL-IM/CBS StarCraft (30092) → castle-sim micromanagement brief (Game Dev wiki). **Phase-0:** `adopt_k136_phase0.sh` (REFERENCE only). Archive → egress-fi; inbox cleared.

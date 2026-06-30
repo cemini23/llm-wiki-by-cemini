@@ -13,18 +13,27 @@ related:
   - sources/ai-2-4-3.md
   - sources/eval-github-batch-unusualwhales-2026-06-28.md
   - entities/tools/claw-swe-bench.md
+  - entities/tools/clawhub.md
+  - entities/tools/deepspec.md
+  - entities/tools/openclaw-rl.md
+  - entities/tools/openclaw-mission-control.md
+  - entities/tools/openclaw-zero-token.md
+  - sources/eval-multi-wiki-openclaw-ecosystem-2026-06-30.md
   - concepts/llm-agent-systems.md
   - concepts/sae-execution-contract.md
   - concepts/reasoning-safety-monitor.md
   - sources/crypto-7-4-11.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-06-30
 ---
 
 ## Relations
 
 - @sources/openclaw-ios-node-2026-06-29.md — K135 iOS/Android first-party apps (2026-06-29)
+- @sources/eval-multi-wiki-openclaw-ecosystem-2026-06-30.md — K137 ecosystem eval (20 URLs)
+- @entities/tools/clawhub.md — official skill registry; steal validation patterns
+- @entities/tools/openclaw-rl.md — async RL from traces (Apache-2.0 Adopt)
 - @concepts/openclaw-security-taxonomy.md — K20 threat model (gateway-focused)
 - @entities/tools/hermes-agent.md — positioned successor; OpenClaw still wider channel coverage
 - @entities/tools/clawdbot.md — K55 name-collision stub (ColdMath "Clawdbot" may = this project)

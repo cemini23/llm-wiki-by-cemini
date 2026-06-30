@@ -49,9 +49,10 @@ related:
   - concepts/agent-authorization-stack.md
   - concepts/autoresearch-loop-pattern.md
   - sources/xskill-2603-12056.md
+  - entities/tools/open-im-server.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-11
+updated: 2026-06-30
 ---
 
 ## Relations

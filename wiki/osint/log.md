@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-30] ingest | K137 — OpenClaw ecosystem multi-wiki eval
+
+- **Source (1):** `Multi-Wiki Link Evaluation.docx` — 20 URLs (OpenClaw extensions + DeepSpec)
+- **Entities (6):** deepspec + openclaw-rl **Adopt**; clawhub, open-im-server, openclaw-mission-control, openclaw-zero-token **Steal-from**
+- **Updates (3):** openclaw.md, openclaw-security-taxonomy, wiki-tooling-evaluation
+- **Phase-0:** `scripts/adopt_k137_phase0.sh`
+- **Briefs:** prod deepspec + mission-control; CCC clawhub; TipDrop clawhub compliance
+- **Archive:** egress-fi osint
+
 ## [2026-06-30] ingest | K136 — Nash solver selection + PED + StarCraft HRL
 
 - **Sources (3):** arXiv 2606.28308, 2606.29169, 2606.30092

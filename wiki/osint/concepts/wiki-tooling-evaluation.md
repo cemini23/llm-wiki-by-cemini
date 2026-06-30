@@ -23,6 +23,7 @@ related:
   - sources/wave-5-1-link-eval-even-more.md
   - concepts/librarian-server-architecture.md
   - sources/eval-github-repos-plan-multi-wiki-2026-06-29.md
+  - sources/eval-multi-wiki-openclaw-ecosystem-2026-06-30.md
   - concepts/red-queen-controlled-utility-evolution.md
   - sources/gemini-dr-link-eval-2026-04-28.md
   - sources/omc-talent-container-paper.md

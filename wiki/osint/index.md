@@ -12,8 +12,18 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **495 canonical stubs** (K136 ingest +3 sources +3 concepts)
+Total: **502 canonical stubs** (K137 OpenClaw ecosystem eval +1 source +6 entities)
 
+
+### k137-ingest (7)
+
+- [Multi-Wiki Link Evaluation.docx — OpenClaw ecosystem (2026-06-30)](sources/eval-multi-wiki-openclaw-ecosystem-2026-06-30.md) — 20 URLs; DeepSpec + OpenClaw-RL Adopt; clawhub steal. — `docx` [+openclaw, +k137]
+- [DeepSpec — speculative decoding (DeepSeek)](entities/tools/deepspec.md) — K137 Adopt MIT. — entity, tool, k137
+- [OpenClaw-RL — async agent RL (Gen-Verse)](entities/tools/openclaw-rl.md) — K137 Adopt Apache-2.0. — entity, tool, k137
+- [ClawHub — official OpenClaw skill registry](entities/tools/clawhub.md) — K137 Steal-from MIT. — entity, tool, k137
+- [OpenIM Server — Go IM backend](entities/tools/open-im-server.md) — K137 Steal-from Apache-2.0. — entity, tool, k137
+- [OpenClaw Mission Control — fleet dashboard](entities/tools/openclaw-mission-control.md) — K137 Steal-from MIT. — entity, tool, k137
+- [openclaw-zero-token — CDP browser bridge](entities/tools/openclaw-zero-token.md) — K137 Steal-from MIT. — entity, tool, k137
 
 ### k136-ingest (6)
 

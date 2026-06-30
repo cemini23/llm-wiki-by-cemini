@@ -8,16 +8,20 @@ related:
   - concepts/xsp-put-credit-spread-small-account-smb.md
   - concepts/wheel-options-strategy-smb.md
   - concepts/active-project-research-routing.md
-  - entities/tools/daily-stock-analysis.md
+  - entities/tools/deepspec.md
+  - entities/tools/openclaw-mission-control.md
+  - concepts/active-project-research-routing.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-06-17
+updated: 2026-06-30
 ---
 
 ## Relations
 
 - @concepts/xsp-hedge-fund-core-book-thesis.md — **Lane B** implements the institutional core-book idea on XSP
 - @concepts/xsp-put-credit-spread-small-account-smb.md — orthogonal SMB selling strategy on same instrument
+- @entities/tools/deepspec.md — K137 inference latency Adopt (speculative decoding)
+- @entities/tools/openclaw-mission-control.md — K137 fleet audit steal patterns
 
 ## Raw Concept
 
