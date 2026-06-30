@@ -12,9 +12,12 @@ related:
   - concepts/active-project-research-routing.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
   - sources/huggingface-model-evals-74url-2026-06-23.md
+  - concepts/nash-equilibrium-solver-selection.md
+  - sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md
+  - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
 maturity: validated
 created: 2026-06-22
-updated: 2026-06-23
+updated: 2026-06-30
 ---
 
 ## Relations
@@ -23,6 +26,7 @@ updated: 2026-06-23
 - @concepts/devfun-poker-agent-challenge-2026.md — Researcher Round `decide()` + trajectory eval
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — axis gates on submit reasoning
 - @concepts/active-project-research-routing.md — implementation lives in `agents/devfun-poker-arena/`
+- @concepts/nash-equilibrium-solver-selection.md — K136: solver-family affects which Nash member is selected in Kuhn
 
 ## Raw Concept
 

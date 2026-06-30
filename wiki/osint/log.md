@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-06-30] ingest | K136 — Nash solver selection + PED + StarCraft HRL
+
+- **Sources (3):** arXiv 2606.28308, 2606.29169, 2606.30092
+- **Concepts (3):** `@concepts/nash-equilibrium-solver-selection.md`, `@concepts/projected-exploitability-descent.md`, `@concepts/castle-sim-rts-micromanagement-steals.md`
+- **Updates (7):** extensive-form-games, kuhn-poker-sft, poker-arena-multi-axis, multi-agent-fictitious-play, team-zero-sum, castle-sim-pathfinding
+- **Phase-0:** `scripts/adopt_k136_phase0.sh` — REFERENCE only
+- **Briefs:** poker `2026-06-30_k136-nash-solver-fp-ped-steal.md`; game-dev `2026-06-30_k136-hrl-influence-map-micromanagement-steal.md`
+- **Archive:** egress-fi osint (3 PDFs); inbox cleared
+
 ## [2026-06-30] research | Pre-hearing signing / reps-warranties frame (friend intel)
 
 - **Logic:** Pre-Jul 7 close cleaner than post-denial on headline, price, indemnity/escrow, federal RE reps & warranties; supremacy = backstop not preferred path

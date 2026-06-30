@@ -10,10 +10,13 @@ related:
   - concepts/team-zero-sum-games-complexity.md
   - sources/arxiv-team-zero-sum-games-2606.16139-2026-06-20.md
   - concepts/multi-agent-fictitious-play-llm.md
-  - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
+  - concepts/nash-equilibrium-solver-selection.md
+  - concepts/projected-exploitability-descent.md
+  - sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md
+  - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
 maturity: draft
 created: 2026-06-18
-updated: 2026-06-20
+updated: 2026-06-30
 ---
 
 ## Relations
@@ -22,6 +25,8 @@ updated: 2026-06-20
 - @concepts/strategic-resource-acquisition-game-theory.md — competitive resource games under constraints
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — strategic mixing axis uses GTO/CFR baselines
 - @concepts/team-zero-sum-games-complexity.md — team zero-sum PPAD hardness (K124)
+- @concepts/nash-equilibrium-solver-selection.md — K136: CFR vs regularized equilibrium member selection on Nash polytopes
+- @sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md — K136 source (Kuhn poker testbed)
 
 ## Raw Concept
 

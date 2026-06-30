@@ -10,10 +10,14 @@ related:
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/team-zero-sum-games-complexity.md
   - concepts/extensive-form-games-stochastic-action-sets.md
+  - concepts/projected-exploitability-descent.md
+  - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
   - concepts/devfun-researcher-track-readiness-2026-06.md
+  - concepts/projected-exploitability-descent.md
+  - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-23
+updated: 2026-06-30
 ---
 
 ## Relations
@@ -21,6 +25,7 @@ updated: 2026-06-23
 - @sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md — primary source (Shen et al., NUS)
 - @concepts/garip-running-average-self-play.md — K127 gradient self-play magnet (orthogonal to MAFP stance play)
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — multi-stakeholder poker eval
+- @concepts/projected-exploitability-descent.md — K136 FP-PED hybrid for multiplayer toy games
 - @concepts/devfun-researcher-track-readiness-2026-06.md — Researcher Round target
 
 ## Raw Concept

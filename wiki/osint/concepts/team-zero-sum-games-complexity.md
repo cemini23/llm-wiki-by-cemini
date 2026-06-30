@@ -9,9 +9,11 @@ related:
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/multi-agent-fictitious-play-llm.md
   - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
+  - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
+  - concepts/projected-exploitability-descent.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-06-30
 ---
 
 ## Relations

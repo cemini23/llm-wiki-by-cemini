@@ -7,16 +7,18 @@ related:
   - sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md
   - sources/links-6-22-tool-eval.md
   - concepts/scope-symbolic-world-planning.md
+  - concepts/castle-sim-rts-micromanagement-steals.md
   - concepts/active-project-research-routing.md
   - entities/tools/mattpocock-skills.md
 maturity: draft
 created: 2026-06-22
-updated: 2026-06-25
+updated: 2026-06-30
 ---
 
 ## Relations
 
 - @sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md — K126 REFERENCE source for AHP + GA vs A* tradeoffs
+- @concepts/castle-sim-rts-micromanagement-steals.md — K136 squad-level influence-map + cluster scripts
 - @concepts/scope-symbolic-world-planning.md — K129 evolving symbolic world (complements route scoring)
 - @sources/links-6-22-tool-eval.md — co-primary K126 ingest batch
 

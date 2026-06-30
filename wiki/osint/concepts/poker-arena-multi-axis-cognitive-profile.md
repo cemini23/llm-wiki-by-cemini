@@ -20,6 +20,11 @@ related:
   - concepts/team-zero-sum-games-complexity.md
   - sources/arxiv-mafp-fictitious-play-2606.19308-2026-06-20.md
   - sources/arxiv-team-zero-sum-games-2606.16139-2026-06-20.md
+  - concepts/nash-equilibrium-solver-selection.md
+  - concepts/projected-exploitability-descent.md
+  - concepts/projected-exploitability-descent.md
+  - sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md
+  - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
   - sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md
   - sources/arxiv-rng-bench-non-markov-mllm-2606.19338-2026-06-21.md
   - concepts/non-markov-belief-state-benchmarks.md

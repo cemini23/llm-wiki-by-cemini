@@ -12,8 +12,17 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **489 canonical stubs** (K135 OpenClaw iOS +1 source +1 entity)
+Total: **495 canonical stubs** (K136 ingest +3 sources +3 concepts)
 
+
+### k136-ingest (6)
+
+- [Which Nash Equilibrium? Solver-Dependent Selection — arXiv 2606.28308](sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md) — CFR vs R-NaD equilibrium member selection; Kuhn testbed. — `pdf` [+game-theory, +poker, +k136]
+- [Projected Exploitability Descent (PED) — arXiv 2606.29169](sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md) — FP-PED hybrid on 3p Kuhn. — `pdf` [+game-theory, +poker, +k136]
+- [HRL-IM/CBS StarCraft micromanagement — arXiv 2606.30092](sources/arxiv-hrl-influence-map-starcraft-2606.30092-2026-06-30.md) — influence maps + cluster scripts; castle-sim steal. — `pdf` [+rl-marl, +game-dev, +k136]
+- [Nash equilibrium solver selection (K136)](concepts/nash-equilibrium-solver-selection.md) — max-entropy vs CFR-face on Nash polytopes. — concept [+k136]
+- [Projected exploitability descent (PED) — K136](concepts/projected-exploitability-descent.md) — sequence-form FP-PED pattern. — concept [+k136]
+- [castle-sim — RTS micromanagement steals (K136)](concepts/castle-sim-rts-micromanagement-steals.md) — influence hash + cluster scripts. — concept [+k136, +castle-sim]
 
 ### k135-openclaw-ios (2)
 
