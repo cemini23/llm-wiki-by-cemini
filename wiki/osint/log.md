@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-06-30] research | ICE turnkey Tier 2 (NEPA Gilroy + Otay vs Cal City)
+
+- **2A:** `.local/reports/ice-turnkey-research/tier2/track-2a-nepa-apa-gilroy-2026-06-30.md` — Gilroy PI Oct 7; NEPA delay not kill
+- **2B:** `.local/reports/ice-turnkey-research/tier2/track-2b-otay-vs-cal-city-2026-06-30.md` — Otay first CA close; Cal City tranche 2/delayed
+- **Synthesis:** `.local/reports/ice-turnkey-research/synthesis-tier2-2026-06-30.md`
+- **Wiki:** `@concepts/ice-turnkey-research-backlog-2026-06-30.md` — Tier 2 complete
+
+## [2026-06-30] research | ICE turnkey Tier 1 parallel tracks (4 subagents)
+
+- **Tier 1 outputs:** `.local/reports/ice-turnkey-research/tier1/track-1{a-d}-*-2026-06-30.md` — Schroyer freeze, Jul 7 prep, Q2 earnings watch, OPR/§218 scorecard
+- **Synthesis:** `.local/reports/ice-turnkey-research/synthesis-tier1-2026-06-30.md`
+- **Wiki:** `@concepts/ice-turnkey-research-backlog-2026-06-30.md` — Tier 1 complete; Tier 2 queued
+- **Key delta:** Gomez Ruiz monitor → ODO Failure pathway; Jul 7 = site plan not BL; Aug 5–10 earnings = next falsifier window
+
 ## [2026-06-30] research | ICE turnkey Tier 0 parallel tracks (master plan + 5 subagents)
 
 - **Master plan:** `.local/reports/ice-turnkey-master-research-plan-2026-06-30.md` — 12 tracks, catalyst calendar, wiki checklist

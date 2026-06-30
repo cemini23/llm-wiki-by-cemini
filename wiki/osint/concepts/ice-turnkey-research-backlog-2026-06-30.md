@@ -14,6 +14,7 @@ related:
 maturity: validated
 created: 2026-06-30
 updated: 2026-06-30
+tier1_completed: 2026-06-30
 ---
 
 ## Relations
@@ -46,19 +47,30 @@ Five parallel research tracks executed; cross-track synthesis filed locally.
 
 **Integrated verdict:** Program **real and funded**; execution **delayed**; **contract continuity base case**; Cal City **tranche 2**.
 
-### Tier 1 queue (next 14 days)
+### Tier 1 complete (2026-06-30)
 
-1. **Q2 earnings monitor** (Aug) — Swindle/Zoley language on active sales
-2. **Schroyer confirmation** — ICE signing authority pause
-3. **OPR score pull** — §218 risk at CCDF/Otay/Delaney (FOIA)
-4. **Cal City Jul 7** — PC site plan appeal + Grayson BL track
+| Track | Key result |
+|-------|------------|
+| 1A — Q2 earnings | **Aug 5** GEO BMO / CXW AMC (CXW alt Aug 10); confirm/falsify rubric at `.local/reports/ice-turnkey-research/tier1/track-1a-q2-earnings-watch-2026-06-30.md` |
+| 1B — Schroyer | Signing authority **frozen through Q3**; Venturella ethics + confirmation pause |
+| 1C — OPR / §218 | CCDF monitor → ODO Failure path; **§218 defund before buy**; Otay 7/10, Delaney excluded |
+| 1D — Jul 7 | **Site plan only**; Grayson BL sharper; **2,304 bed** cap; 15–25% quorum fail |
 
-### Tier 2–3 (backlog)
+**Synthesis:** `.local/reports/ice-turnkey-research/synthesis-tier1-2026-06-30.md`
 
-- NEPA/APA post-buy template (*Santa Clara v. ICE* Gilroy)
-- Otay vs Cal City CA asset comparison
-- ADS-B N5000P DC cadence export
-- Warehouse 7-of-11 disposition → turnkey capital reallocation
+### Tier 2 complete (2026-06-30)
+
+| Track | Key result |
+|-------|------------|
+| 2A — NEPA/APA | Gilroy template (5:26-cv-05604); PI hearing **Oct 7**; NEPA = **delay not veto**; CATEX challenged via extraordinary circumstances |
+| 2B — Otay vs Cal City | **Otay closes first** in CA tranche 2; Cal City delayed by monitor + entitlements + 2304 cap |
+
+**Synthesis:** `.local/reports/ice-turnkey-research/synthesis-tier2-2026-06-30.md`
+
+### Tier 3 (in progress)
+
+1. **ADS-B N5000P** — DC weekend negotiation cadence export spec
+2. **Warehouse disposition** — 7-of-11 offload → turnkey capital reallocation
 
 ### Falsifiers (watch)
 
