@@ -1366,6 +1366,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Hermes operator playbook](concepts/hermes-laptop-operator-playbook.md) — split laptop UI + librarian always-on Telegram. — hermes, skillclaw, k113
 - [GEO ICE turnkey acquisition thesis](concepts/geo-ice-turnkey-acquisition-thesis.md) — K114 investigative OSINT synthesis (April 2026 briefs). — geo-group, ice, osint, k114
 - [CoreCivic California City ICE turnkey research (June 2026)](concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md) — CXW/CA legal stack + bull/bear scorecard; Gomez Ruiz PI — corecivic, ice, california, osint
+- [ICE turnkey research backlog (June 2026)](concepts/ice-turnkey-research-backlog-2026-06-30.md) — Tier 0 parallel tracks complete; Tier 1–3 queue — geo-group, corecivic, ice, osint
 - [Scientific conclusion synthesis eval](concepts/scientific-conclusion-synthesis-eval.md) — SciConBench clean-room pattern (K114). — agent-eval, sciconbench, k114
 - [Partial-observation stochastic control](concepts/partial-observation-stochastic-control.md) — K117: particle + DeepSets for latent-state control; REFERENCE for execution research. — concept, stochastic-control, k117
 - [Time-inconsistent stochastic control](concepts/time-inconsistent-stochastic-control.md) — K118: extended HJB equilibrium + DPG two-stage RL. — concept, stochastic-control, k118

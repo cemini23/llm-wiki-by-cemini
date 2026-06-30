@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-30] research | ICE turnkey Tier 0 parallel tracks (master plan + 5 subagents)
+
+- **Master plan:** `.local/reports/ice-turnkey-master-research-plan-2026-06-30.md` — 12 tracks, catalyst calendar, wiki checklist
+- **Tier 0 outputs:** `.local/reports/ice-turnkey-research/track-{a-e}-*-2026-06-30.md` — sale confirmation, funding, site ranking, purchase-vs-contract, demand/oversight
+- **Synthesis:** `.local/reports/ice-turnkey-research/synthesis-tier0-2026-06-30.md` — 50% contract-only / 45% buy / 5% termination; Cal City tranche 2
+- **Wiki:** `@concepts/ice-turnkey-research-backlog-2026-06-30.md` — backlog stub + Tier 1 queue
+
 ## [2026-06-30] super-audit + legal patch | Cal City regime switch / preemption
 
 - **Concept:** `@concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md` — §3112/§3312, GEO v. Newsom, concurrent jurisdiction, OPLA/indemnity diligence, underwrite **2,304** beds, delay-not-block thesis
@@ -7911,3 +7918,4 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Arena comps** — no Researcher HU comp yet (Playground S3, Tournament S2, Eval only)
 - **Prod deploy** — `researcher_prod_prep_apply.sh` + `CEMINI_S1B_EXPLOIT=1`
 - **7-model super audit** — `briefs/2026-06-19_researcher-hu-7model-super-audit-synthesis.md` → SHIP-WITH-FIXES; P0 metric/gate fixes before first sandbox submit
+

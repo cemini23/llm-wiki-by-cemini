@@ -9,6 +9,7 @@ related:
   - entities/facilities/california-city-detention-facility.md
   - entities/companies/geo-group.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
+  - concepts/ice-turnkey-research-backlog-2026-06-30.md
 maturity: draft
 created: 2026-06-29
 updated: 2026-06-30
@@ -21,6 +22,7 @@ updated: 2026-06-30
 - @entities/facilities/california-city-detention-facility.md — 2,560-bed ICE site (Kern County)
 - @entities/companies/geo-group.md — parallel turnkey peer (GEO)
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — shared ICE acquisition thesis (GEO-led April briefs)
+- @concepts/ice-turnkey-research-backlog-2026-06-30.md — Tier 0 whole-thesis research (site rank #7, contract base case)
 
 ## Raw Concept
 
@@ -236,6 +238,10 @@ July 7 is **quorum-fragile** and **forum-contested** — not a reliable binary c
 | 5 | **SB 1367** + **AB 1801** progression | CA Legislature |
 | 6 | Schroyer confirmation | Senate |
 | 7 | CXW **Q2 call** (~Aug 2026) | Buyback vs sale posture |
+
+### Tier 0 whole-thesis update (2026-06-30)
+
+Parallel research tracks (sale confirmation, funding, site ranking, purchase-vs-contract, demand/oversight) integrated in `@concepts/ice-turnkey-research-backlog-2026-06-30.md`. Key deltas for Cal City: **no 8-K through Jun 29** `[CONFIRMED]`; **rank #7 / ~4–10 first-tranche**; **50% contract-only base case**; OBBBA funding **not** the bottleneck — warehouse IG chill + Schroyer pause + DRC pricing stalemate are.
 
 **Cemini posture:** wiki-only synthesis; no prod brief unless operator reopens CXW/GEO workstream.
 

@@ -10,10 +10,11 @@ related:
   - entities/tickers/cxw.md
   - entities/facilities/california-city-detention-facility.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
+  - concepts/ice-turnkey-research-backlog-2026-06-30.md
   - sources/geo-group-ice-turnkey-investigation-2026-04-09.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-29
+updated: 2026-06-30
 ---
 
 ## Relations
@@ -24,6 +25,7 @@ updated: 2026-06-29
 - @entities/tickers/cxw.md
 - @entities/facilities/california-city-detention-facility.md — messiest CXW CA node (June 2026 research)
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — CXW/CA legal + bull/bear synthesis
+- @concepts/ice-turnkey-research-backlog-2026-06-30.md — Tier 0 site ranking (Montgomery #1, Tacoma strategic #4); no 8-K confirm
 - @sources/geo-group-ice-turnkey-investigation-2026-04-09.md
 
 ## Raw Concept
