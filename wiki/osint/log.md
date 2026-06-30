@@ -1,5 +1,26 @@
 # Wiki Log
 
+## [2026-06-30] super-audit + legal patch | Cal City regime switch / preemption
+
+- **Concept:** `@concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md` — §3112/§3312, GEO v. Newsom, concurrent jurisdiction, OPLA/indemnity diligence, underwrite **2,304** beds, delay-not-block thesis
+- **Local audit:** `.local/reports/audit/super-audit-cal-city-local-2026-06-30.md` (11-model)
+- **Facility stub:** `@entities/facilities/california-city-detention-facility.md` — cross-link
+
+## [2026-06-30] super-audit | ICE turnkey / CXW California City mega council (11-model)
+
+- **Audit:** `.local/reports/audit/super-audit-ice-turnkey-mega-2026-06-30.md` — 6 API (Fusion, GLM 5.2, Opus 4.6, DeepSeek reasoner, Kimi K2, Gemini 2.5 Pro) + 5 Cursor; unanimous **WARN**; overall **REWORK**
+- **Complete thesis:** `.local/reports/audit/ice-turnkey-complete-thesis-2026-06-30.md`
+- **P0 gap closed:** Jun 25 House Approps HS **Mullin oversight** (deaths/HRW, WEXMAC end, warehouse reassessment) — was missing from wiki
+- **Wiki patch:** `@concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md` — congressional layer, S.2 +$70B, H.R. 9310 §218/§223, purchase-vs-contract split
+- **Cursor leg complete (5/5):** all WARN; synthesis updated with unified cursor table
+
+## [2026-06-29] query | CoreCivic California City ICE turnkey OSINT
+
+- **Concept (1):** `@concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md` — federal buy vs local appeal, Gomez Ruiz PI, Bonta letters, bull/bear scorecard
+- **Entities (3):** `@entities/companies/corecivic.md`, `@entities/tickers/cxw.md`, `@entities/facilities/california-city-detention-facility.md`
+- **Updates (3):** `@concepts/geo-ice-turnkey-acquisition-thesis.md`, `@entities/companies/geo-group.md`, `@entities/tickers/geo.md` — CXW parallel + cross-links
+- **Subagent merge:** … + **N5000P** GEO jet identified (Geo Leasing LLC / Zoley; EJM55 callsign resolved)
+
 ## [2026-06-29] query | OpenClaw corpus tag sweep (K135)
 
 - **Tag/posture pass (8):** `clawdbot.md` (OpenClaw lineage disambiguation), `3-17-agent-research.md`, `4-3-link-re-2.md`, `sae-execution-contract.md`, `crypto-7-4-11.md`, `llm-agent-systems.md`, `reasoning-safety-monitor.md`, `openclaw-security-taxonomy.md`

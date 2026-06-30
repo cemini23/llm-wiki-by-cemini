@@ -5,16 +5,20 @@ tags: [entity, company, corrections, reit, ice]
 keywords: [GEO Group, private prisons, ICE contracts, McFarland, turnkey]
 related:
   - entities/tickers/geo.md
+  - entities/companies/corecivic.md
+  - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - sources/geo-group-ice-turnkey-investigation-2026-04-09.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-29
 ---
 
 ## Relations
 
 - @entities/tickers/geo.md — listed equity
+- @entities/companies/corecivic.md — peer in ICE turnkey sale talks (~10 sites)
+- @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — CXW/CA parallel research
 - @sources/geo-group-ice-turnkey-investigation-2026-04-09.md — April 2026 investigative brief cluster
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — synthesized open-source thesis
 
@@ -26,7 +30,7 @@ Entity stub from K114 ingest of operator-dropped GEO/ICE investigative briefs (2
 
 **The GEO Group, Inc.** — U.S. corrections / detention REIT operating private prisons and ICE detention facilities. NYSE: **GEO**.
 
-April 2026 brief cluster alleges advanced staging of a **multi-facility ICE turnkey acquisition**. Public reporting (May–Jun 2026) **confirms sale discussions** and **McFarland facility activation**; the brief's **April 17 8-K timing** and **revolver-draw liquidity** framing are **not supported** as stated — see @concepts/geo-ice-turnkey-acquisition-thesis.md `[CONFIRMED]` / `[RETRACTED]` table.
+April 2026 brief cluster alleges advanced staging of a **multi-facility ICE turnkey acquisition**. Public reporting (May–Jun 2026) **confirms sale discussions** at both GEO and CoreCivic. Corporate jet **N5000P** (Geo Leasing LLC, Zoley manager; callsign **EJM55**) — operator-reported **two consecutive DC weekends** Jun 2026 **`[TENTATIVE routing]`**. See @concepts/geo-ice-turnkey-acquisition-thesis.md.
 
 **Cemini posture:** OSINT entity page only — not wired to CeminiSuite trading stack.
 

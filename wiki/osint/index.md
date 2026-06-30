@@ -683,6 +683,7 @@ Six-section institutional template: Business Overview · Competitive Landscape �
 - [Broadcom (AVGO)](entities/tickers/avgo.md) — high beta — ticker-report, gemini-deep-research
 - [Bitcoin (BTC)](entities/tickers/btc.md) — crypto native — ticker-report, gemini-deep-research
 - [Coinbase Global (COIN)](entities/tickers/coin.md) — crypto proxy — ticker-report, gemini-deep-research
+- [CoreCivic (CXW)](entities/tickers/cxw.md) — `[DRAFT 2026-06-29]` ICE detention operator; California City turnkey OSINT — osint, corecivic, ice
 - [The Walt Disney Company (DIS)](entities/tickers/dis.md) — consumer tech — ticker-report, gemini-deep-research
 - [Dogecoin (DOGE)](entities/tickers/doge.md) — crypto native — ticker-report, gemini-deep-research
 - [Ethereum (ETH)](entities/tickers/eth.md) — crypto native — ticker-report, gemini-deep-research
@@ -1221,6 +1222,7 @@ External firms whose research/track-record is ingested into the wiki.
 - [Pershing Square — Bill Ackman](entities/companies/pershing-square.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Concentrated 11-name book; new MSFT 15% position; Alphabet exited. — company, hedge-fund, activist, 13f, k48
 - [Gates Foundation Trust](entities/companies/gates-foundation-trust.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Endowment book: BRK.B 26%, WM 20%, railroads/industrials; near-static quarter. — company, endowment, 13f, k48
 - [The GEO Group, Inc.](entities/companies/geo-group.md) — `[DRAFT 2026-06-13]` K114 ICE/detention REIT; investigative brief cluster — company, corrections, osint, k114
+- [CoreCivic, Inc.](entities/companies/corecivic.md) — `[DRAFT 2026-06-29]` ICE detention operator; California City + turnkey sale OSINT — company, corrections, osint, ice
 - [Tiger Global Management — Chase Coleman](entities/companies/tiger-global-management.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Growth/tech book, 43 names; GOOGL top holding; semis added hard; MSFT −54%. — company, hedge-fund, growth-investing, 13f, k48
 - [Coatue Management](entities/companies/coatue-management.md) — `[DRAFT 2026-05-29]` K81 Sourcery podcast. ~$70B tech HF; Melvin/GameStop lesson; AI-native ad-tech; retail product. — company, hedge-fund, retail-flow, k81
 - [Greenlight Capital — David Einhorn](entities/companies/greenlight-capital.md) — `[DRAFT 2026-05-15]` Q1 2026 13F. Deep-value long book, 45 names; Green Brick 19% anchor; PTON +4004%. — company, hedge-fund, value-investing, 13f, k48
@@ -1232,6 +1234,10 @@ External firms whose research/track-record is ingested into the wiki.
 #### K55 company addition (2026-05-20)
 
 - [Renaissance Technologies LLC](entities/companies/renaissance-technologies.md) — `[DRAFT 2026-05-20]` K55 ingest of the Simons interview. Long-island quantitative hedge fund (East Setauket, NY). Medallion Fund. Founder Jim Simons (1982); current sole-CEO Peter Brown (since 2009). One-continuously-improved-model architecture; math-not-finance hiring; thousands-of-person-years moat. — company, hedge-fund, quant-finance, k55
+
+### Facilities
+
+- [California City Detention Facility (CoreCivic / ICE)](entities/facilities/california-city-detention-facility.md) — `[DRAFT 2026-06-29]` 2,560-bed largest CA ICE site; Gomez Ruiz PI + local appeal — facility, ice, california, corecivic
 
 ### Organizations / publications
 
@@ -1359,6 +1365,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [AgentBeats tool](entities/tools/agentbeats.md) — Phase-0 CONDITIONAL-GO. — tool, agent-eval, k112
 - [Hermes operator playbook](concepts/hermes-laptop-operator-playbook.md) — split laptop UI + librarian always-on Telegram. — hermes, skillclaw, k113
 - [GEO ICE turnkey acquisition thesis](concepts/geo-ice-turnkey-acquisition-thesis.md) — K114 investigative OSINT synthesis (April 2026 briefs). — geo-group, ice, osint, k114
+- [CoreCivic California City ICE turnkey research (June 2026)](concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md) — CXW/CA legal stack + bull/bear scorecard; Gomez Ruiz PI — corecivic, ice, california, osint
 - [Scientific conclusion synthesis eval](concepts/scientific-conclusion-synthesis-eval.md) — SciConBench clean-room pattern (K114). — agent-eval, sciconbench, k114
 - [Partial-observation stochastic control](concepts/partial-observation-stochastic-control.md) — K117: particle + DeepSets for latent-state control; REFERENCE for execution research. — concept, stochastic-control, k117
 - [Time-inconsistent stochastic control](concepts/time-inconsistent-stochastic-control.md) — K118: extended HJB equilibrium + DPG two-stage RL. — concept, stochastic-control, k118

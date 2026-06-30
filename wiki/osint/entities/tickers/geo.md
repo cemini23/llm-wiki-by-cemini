@@ -5,16 +5,20 @@ tags: [entity, ticker, reit, corrections]
 keywords: [GEO, NYSE, GEO Group, detention REIT]
 related:
   - entities/companies/geo-group.md
+  - entities/tickers/cxw.md
+  - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - sources/geo-group-ice-turnkey-investigation-2026-04-09.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-06-29
 ---
 
 ## Relations
 
 - @entities/companies/geo-group.md — issuer
+- @entities/tickers/cxw.md — peer ticker (CoreCivic turnkey parallel)
+- @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — CXW/CA research
 - @sources/geo-group-ice-turnkey-investigation-2026-04-09.md — investigative briefs
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — event-study style thesis (historical window)
 
