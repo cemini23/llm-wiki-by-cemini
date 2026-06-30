@@ -13,10 +13,11 @@ related:
   - concepts/stronghold-2-siege-warfare.md
   - concepts/game-ai-rl-augmentation-shelf.md
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
+  - sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md
   - concepts/stronghold-crusader-ai-modding-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-20
+updated: 2026-06-30
 ---
 
 ## Relations
@@ -56,6 +57,10 @@ From @sources/gdc-total-war-warhammer-siege-ai.md [TENTATIVE — forum recap of 
 1. **Timer spawn** + single attack vector (gate or wall segment)
 2. **Direct path** on same grid as peasants (no lord AI)
 3. **No withdraw** OK for wolves — TW's withdraw gap is a caution for human-like lords Tier 3+
+
+### Influence maps + macro scripts (research shelf)
+
+@sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md — StarCraft **HRL-IM/CBS**: influence map hashing + cluster-based scripts for interpretable micromanagement. **Steal pattern, not training stack:** low-res friendly/hostile density grid for raid target bias; unit **clusters** as macro actions (archers vs ram). Tier 2+ before any RL leaf (@concepts/game-ai-rl-augmentation-shelf.md). Brief: gitignored `briefs/research/starcraft-influence-map-hrl-shelf.md`.
 
 ## Snippets
 

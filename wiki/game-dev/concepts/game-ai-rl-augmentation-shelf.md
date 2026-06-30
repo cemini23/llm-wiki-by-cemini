@@ -12,9 +12,10 @@ related:
   - concepts/scope-tiers.md
   - entities/projects/castle-sim.md
   - sources/inbox-arxiv-reject-batch-2026-06-29.md
+  - sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md
 maturity: validated
 created: 2026-06-20
-updated: 2026-06-29
+updated: 2026-06-30
 ---
 
 ## Relations

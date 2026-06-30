@@ -15,9 +15,10 @@ related:
   - concepts/godot-castle-sim-tool-gap-shelf.md
   - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
   - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
+  - sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-24
+updated: 2026-06-30
 ---
 
 ## Relations

@@ -77,6 +77,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [godot-stagehand](entities/tools/godot-stagehand.md) | validated | CI automation — **CONDITIONAL-GO** W2 |
 | [godot-ai-playtest](entities/tools/godot-ai-playtest.md) | validated | TCP automation alt — **CONDITIONAL-GO** W2 |
 | [binarytracking](entities/tools/binarytracking.md) | draft | BinTrack spatial QA — **CONDITIONAL-GO** K125 cross-wiki |
+| [pcgodot](entities/tools/pcgodot.md) | validated | UE PCG-style node graph — **CONDITIONAL-GO** Tier 2+ |
 | [serpent-ai](entities/tools/serpent-ai.md) | validated | Visual automation — **STEAL-FROM** (Phase-0) |
 | [airtest](entities/tools/airtest.md) | validated | Image UI test — **CONDITIONAL-GO** @ccc |
 | [unofficial-crusader-patch2](entities/tools/unofficial-crusader-patch2.md) | validated | SHC mod — **STEAL-FROM** (AIV study) |
@@ -224,4 +225,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-06-29](sources/inbox-arxiv-reject-batch-2026-06-29.md) | read |
 | [unreal-engine-58-mcp-shelf-2026-06-24](sources/unreal-engine-58-mcp-shelf-2026-06-24.md) | read |
 | [hero-rl-llm-npc-springer-2026-06-26](sources/hero-rl-llm-npc-springer-2026-06-26.md) | read |
+| [inbox-arxiv-reject-batch-2026-06-30](sources/inbox-arxiv-reject-batch-2026-06-30.md) | read |
+| [arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30](sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md) | read |
+| [pcgodot-phase-0-audit-2026-06-30](sources/pcgodot-phase-0-audit-2026-06-30.md) | read |
+| [ramen-aura-15-commercial-shelf-2026-06-26](sources/ramen-aura-15-commercial-shelf-2026-06-26.md) | read |
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |

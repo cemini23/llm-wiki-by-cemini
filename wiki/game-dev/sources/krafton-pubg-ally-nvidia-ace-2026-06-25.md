@@ -14,12 +14,12 @@ source_type: news-digest
 source_url: https://gamedev.net/news/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace-r4114/
 maturity: validated
 created: 2026-06-28
-updated: 2026-06-28
+updated: 2026-06-30
 ---
 
 ## Raw Concept
 
-Digest pick (2026-06-25): Krafton **PUBG Ally** — co-playable teammate powered by **NVIDIA ACE** stack. Industry reference for runtime LLM NPCs; not Godot/castle-sim path.
+Digest pick (2026-06-25): Krafton **PUBG Ally** — co-playable teammate powered by **NVIDIA ACE** stack. Industry reference for runtime LLM NPCs; not Godot/castle-sim path. **Beta debut** noted in digest 2026-06-27 [@sources/inbox-arxiv-reject-batch-2026-06-30.md parallel news].
 
 ## Narrative
 
@@ -30,6 +30,7 @@ Digest pick (2026-06-25): Krafton **PUBG Ally** — co-playable teammate powered
 | Runtime | ACE-powered ally joins squad as AI teammate (not chat-only bark) |
 | Stack | Extends @sources/nvidia-ace-qwen3-on-device-npc-2025.md on-device SLM + animation pipeline |
 | Design | Co-playable = gameplay agency, not dialogue novelty |
+| Beta | Public beta reported Jun 2026 (NVIDIA ACE TTS + behavior trees) [TENTATIVE — digest R9] |
 
 ### castle-sim relevance
 

@@ -28,9 +28,11 @@ related:
   - sources/godot-stagehand-phase-0-audit-2026-06-13.md
   - sources/hi-godot-ai-phase-0-audit-2026-06-13.md
   - sources/unreal-engine-58-mcp-shelf-2026-06-24.md
+  - sources/ramen-aura-15-commercial-shelf-2026-06-26.md
+  - entities/tools/pcgodot.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-29
+updated: 2026-06-30
 ---
 
 ## Relations
@@ -112,6 +114,7 @@ Pair with @ccc-wiki verification gates: automated tests **do not replace** human
 |------|------|
 | Unity MCP | Claude ↔ scene hierarchy (Void Balls workflow) |
 | **Unreal Engine 5.8 MCP** | First-party experimental editor MCP [@sources/unreal-engine-58-mcp-shelf-2026-06-24.md] |
+| **Ramen Aura 15.0** | Commercial UE/Unity AI assistant [@sources/ramen-aura-15-commercial-shelf-2026-06-26.md] |
 | UniGen | NL → Unity 3D multi-agent (research) |
 
 Not on castle-sim path (Godot chosen) but patterns transfer.
@@ -123,6 +126,7 @@ Not on castle-sim path (Godot chosen) but patterns transfer.
 | AgenticPCG | Agent-driven PCG | Research |
 | SceneSynth | Scene generation | WATCH |
 | hayba | — | WATCH |
+| @entities/tools/pcgodot.md | UE PCG-style node graph for Godot 4.4+ | **CONDITIONAL-GO** Tier 2+ |
 
 Defer until core loop ships — PCG without fun loop = pretty empty levels.
 

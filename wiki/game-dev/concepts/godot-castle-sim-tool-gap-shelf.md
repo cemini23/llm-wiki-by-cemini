@@ -12,9 +12,10 @@ related:
   - concepts/godot-pathfinding-patterns.md
   - concepts/art-pipeline-v0-requirements.md
   - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
+  - entities/tools/pcgodot.md
 maturity: validated
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-06-30
 ---
 
 ## Relations
@@ -48,6 +49,7 @@ Targeted Godot tool/workflow research after castle-sim story-012–029 — close
 | godot-stagehand | **GO** extend | L1 `game_3d` smoke |
 | Kenney City Builder kit | **STEAL-FROM** | 3D art + GridMap patterns |
 | Custom flow field (Vav Labs) | **STEAL-FROM** | Spike before any addon |
+| PCGODOT | **CONDITIONAL-GO** | Tier 2+ prop scatter — @entities/tools/pcgodot.md |
 | VectorFieldNavigation addon | **EVAL** | Phase-0 clone first |
 | rluders/rts-framework | **STEAL-FROM** | Signal decoupling only |
 | godot-debug-menu | **GO** | Dev perf overlay |

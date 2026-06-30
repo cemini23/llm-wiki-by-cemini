@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-06-30] ingest | StarCraft influence-map HRL + PCGODOT Phase-0
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-30.md (4 reject + **2606.30092 ingest**); archived; inbox cleared
+- Paper: @sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md → @concepts/rts-siege-ai-reference.md + @concepts/game-ai-rl-augmentation-shelf.md
+- Phase-0: @sources/pcgodot-phase-0-audit-2026-06-30.md → **CONDITIONAL-GO** @entities/tools/pcgodot.md (Tier 2+ PCG)
+- News: @sources/ramen-aura-15-commercial-shelf-2026-06-26.md; PUBG Ally beta note → @sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md
+- Briefs: `starcraft-influence-map-hrl-shelf.md`, `pcgodot-tier2-pcg-watch.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-06-30-daily.md
+
+---
+
 ## [2026-06-29] ingest | Inbox re-drop + UE 5.8 MCP shelf + HeRoN NPC research
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-29.md (all reject; 2 new mis-routes); archived; inbox cleared
