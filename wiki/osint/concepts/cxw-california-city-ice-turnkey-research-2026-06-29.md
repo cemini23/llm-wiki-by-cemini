@@ -90,8 +90,18 @@ Zoley (GEO) and Swindle (CoreCivic) confirmed active sale discussions on Q1 2026
 |-------|---------------------|---------------|
 | **Dirty entitlement file** (appeals pending, Aug 2025 ops before Feb 2026 approvals) | **Closing conditions** — reps/warranties, **indemnity/escrow** (ICE OPLA / buyer counsel) | Mostly moot for title |
 | **Bed-count mismatch** | **Underwrite at 2,304** (1998 CUP) until cured; 2,560 = operator claim; 2,816 = city staff cite — **256-bed / ~10% capacity haircut** on purchase math at risk `[INFERENCE]` | CUP cap limits **growth/pricing**, not current ops (1,817 < 2,304) |
-| **Two appeal tracks** | Site plan → **PC (July 7)**; business license → **City Manager Grayson** (separate, sharper ops lever) | Moot for federal mission |
-| **Purchase delay vs accelerate** | **Delay ~6–8/10** (diligence, price, optics); **accelerate ~2–4/10** (escape motive ≠ fast close) | Federal buy removes local license/zoning leverage |
+| **Two appeal tracks** | **Jul 7:** BL **3:30 p.m.** → Grayson (no public comment); PC **6:00 p.m.** site plan de novo (public comment) | Moot for federal mission |
+| **Purchase delay vs accelerate** | **Delay ~6–8/10** (diligence, price, optics); **pre-Jul 7 close ~4–6/10** if docs ready (see below) | Federal buy removes local license/zoning leverage |
+
+**Pre-hearing vs post-hearing signing (friend intel + OPLA diligence frame, 2026-06-30):** `[LIKELY]` — aligns with dirty-file / closing-conditions thesis above.
+
+| Timing | Headline / legal posture | Procurement impact |
+|--------|--------------------------|-------------------|
+| **Before Jul 7 denial** (appeals pending, entitlements still staff-approved on paper) | *"Federal government acquiring facility to support federal detention needs"* | Cleaner **reps & warranties** — seller can represent permits in place pending appeal; lower **indemnity/escrow**; less **price haircut** |
+| **After Jul 7 denial** (BL revoked and/or site plan rejected de novo) | *"ICE buys facility local authorities said was illegally operating"* — **condemned-asset** narrative | **Reps & warranties trap** — standard federal RE contracts require fully permitted property; OPLA forced to buy **dirty asset** or walk; higher escrow, closing conditions, litigation optics |
+| **Supremacy nuance** | Federal mission can eventually override local denial | ICE/DHS **prefer not** to step into active local zoning bloodbath — supremacy is **backstop**, not preferred closing path `[INFERENCE]` |
+
+**Conclusion:** If purchase docs are ready, **pre-hearing signing is strategically superior** to post-denial signing on price, indemnities, escrow, and optics — independent of whether supremacy would ultimately win. This **strengthens the conditional motive** for a Cal City close before **3:30 p.m. Jul 7** but does **not** overcome Schroyer signing freeze, tranche-2 sequencing, or absent 8-K through Jun 29.
 
 **Operator thesis validated:** local friction **delays/reprices** federal purchase; **does not** permanently block federal detention or empty ~1,817 beds in 30–90 days `[TENTATIVE]`.
 
@@ -100,7 +110,7 @@ Zoley (GEO) and Swindle (CoreCivic) confirmed active sale discussions on Q1 2026
 | Tool | Pre-purchase (private CXW) | Post-federal ownership |
 |------|---------------------------|-------------------------|
 | **SB 29** local permit | Active — @entities/facilities/california-city-detention-facility.md DNDC suit | Bypassed for acquisition |
-| **City license / site plan appeal** | July 7 PC site plan `[LIKELY]`; BL → City Manager Grayson | **Moot for core federal ops**; contractor/neutral-law friction may remain |
+| **City license / site plan appeal** | Jul 7 dual hearings — BL 3:30 Grayson / PC 6:00 de novo `[CONFIRMED]` | **Moot for core federal ops**; contractor/neutral-law friction may remain |
 | **AB 32** private-detention ban | Unenforceable vs ICE contractors (GEO v. Newsom, 9th Cir. 2022) | Stronger federal shield |
 | **AB 103** AG inspections | Bonta inspected Nov 2025; 5th report May 2026; Dec 19, 2025 DHS letter | **Weakened** — non-discriminatory inspection upheld (*U.S. v. California*, 921 F.3d 865) but access cooperation-dependent vs federally owned+operated site `[TENTATIVE]` |
 | **AB 1801** (2025–26) | Assembly passed Apr 2026; Senate Judiciary + Local Gov — **not enacted** | **No effect** on direct federal purchase |
@@ -114,11 +124,21 @@ Zoley (GEO) and Swindle (CoreCivic) confirmed active sale discussions on Q1 2026
 - **Feb 26, 2026:** City staff approved business license + site plan; administrative appeals filed late Feb 2026 `[CONFIRMED]`.
 - **June 15, 2026:** AG Rob Bonta letter urges rejection of both appeals; cites SB 29, AB 103 conditions, federal litigation; asks ≥10-day public notice before hearings `[CONFIRMED]`.
 - **June 16, 2026:** **Planning Commission meeting canceled — lack of quorum**; next regular PC meeting scheduled **July 7** `[CONFIRMED]` (city PDF).
-- **July 7, 2026 — site plan appeal hearing:** **Multi-source scheduled** — city PC calendar (post–Jun 16 cancel), coalition notices (`bit.ly/iceout7726`), **Dolores Huerta Foundation flyer** (Jul 7, 5–6pm press / **6–8pm Site Plan Review Appeal**, 21000 Hacienda Blvd) `[LIKELY]`. Aligns with Bonta letter: **site plan appeal → Planning Commission**; **business license appeal → separate track** (City Manager Grayson per OAG letter, not necessarily same evening/Council vote). **Not a dispositive federal-purchase catalyst**; quorum-fail risk (Jun 16 precedent). Official city agenda PDF still ideal confirmation `[NEEDS VERIFICATION 2026-07-01]`.
+- **July 7, 2026 — dual appeal hearings (same venue):** `[CONFIRMED]` KGET 17 News + city PC cancellation PDF. **21000 Hacienda Blvd, California City.**
+
+| Time | Forum | Officer | Public comment | Decision scope |
+|------|-------|---------|----------------|----------------|
+| **3:30 p.m. Tue Jul 7** | **Business license appeal** | **City Manager Sean Grayson** (hearing officer; **final BL decision**) | **No** — Mayor Hawkins to 17 News | BL approval/denial on appeal |
+| **6:00 p.m. Tue Jul 7** | **Planning Commission — site plan review appeal** | Planning Commission | **Yes** — community testimony | **De novo** reconsideration: complete admin record, staff report, oral/written comments |
+
+- **Appellant:** Jehan Laner / **Dignity Not Detention Coalition** — appeal letter on **both** business license and site plan (Feb 2026 staff approvals) `[CONFIRMED]` [KGET Jul 7 hearings article].
+- **Prior:** June 16 PC meeting **canceled — lack of quorum**; next regular PC = Jul 7 6 p.m. `[CONFIRMED]` (city PDF).
+- **Interpretation:** BL track is **administratively sharper** (Grayson solo, no public comment, **earlier same day**); PC track is **political/noise amplifier** (de novo, public testimony). Federal fee-simple purchase **before Jul 7** would moot both local tracks via regime switch — creates a **conditional pre-hearing window (Jul 2–3 / Mon–Tue premarket)** distinct from portfolio-wide 8-K timing.
+- Official city agenda PDF still ideal for final packet confirmation `[NEEDS VERIFICATION 2026-07-04]`.
 - **Mayor Hawkins:** AG comments are recommendations; city **cannot halt federal detention**; lacks resources for litigation; will follow appeals process `[CONFIRMED]`. Council **quorum gaps** (2026) stalled formal action `[CONFIRMED]`.
 - **Inadvertent.news (May 12, 2026):** CoreCivic Aug 2025 SB 29 **indemnification** letter; mayor says city paying defense on "city's dime" `[CONFIRMED]`.
 
-**Appeal process:** Administrative appeal of Feb 26 entitlements lands at **City Council** (Municipal Code Title 1 Ch. 4 — Sec. 1-4.09; business license Sec. 3-2.3.204 appealable to Council; site plan Sec. 9-2.212). Bonta's substantive hooks: incomplete application materials; **detention use vs 1998 prison CUP**; bed-count mismatch `[CONFIRMED]`. **Appellant identity not named** in public sources `[NEEDS VERIFICATION 2026-06-29]`.
+**Appeal process:** Administrative appeal of Feb 26 entitlements. **Appellant:** Jehan Laner / Dignity Not Detention Coalition `[CONFIRMED]` KGET. Bonta's substantive hooks: incomplete application materials; **detention use vs 1998 prison CUP**; bed-count mismatch `[CONFIRMED]`.
 
 ### Litigation (high-signal items often missed)
 
@@ -223,7 +243,28 @@ Would bar cities/counties from approving new land uses / change-of-use for deten
 
 **Turnkey program is real (~6.5/10 bull-leaning)** but **closed Cal City purchase in Q2–Q3 2026 is unlikely**. Cal City reads as **delay-prone revenue continuity**, not critical-path capacity. **First tranche** likely cleaner GEO sites (Tacoma, Aurora) + stabilized non-CA CXW assets — unless ICE **prioritizes CA purchases to escape AB 103/SB 29** (Lever), in which case Cal City could be **discounted tranche 1**, not clean tranche 1. **Price stalemate** (Swindle replacement-cost vs ICE diligence) can slip any deal past Q3.
 
-July 7 is **quorum-fragile** and **forum-contested** — not a reliable binary catalyst.
+July 7 is **quorum-fragile on PC track** (Jun 16 precedent) but **BL decision may not need PC quorum** — Grayson hearing at **3:30 p.m.** is the sharper same-day lever; **not a reliable binary catalyst** for federal purchase.
+
+#### Announcement timing — objective-dependent (friend intel + OSINT, 2026-06-30)
+
+| Objective | Best timing | Cal City / CXW read |
+|-----------|-------------|---------------------|
+| **Minimize activist/media cycle** | Jul 2–3 / holiday-adjacent | Fits **Cal City-only** preemption before Jul 7; bad fit if CXW wants **deleveraging rerating** |
+| **Maximize Wall Street attention** | **Mon/Tue premarket + investor call** | Fits **Benchmark $680M / portfolio sale** narrative — shareholders want rerating, not bury |
+| **Avoid local adverse action** | **Before Jul 7 hearings** | Federal title moots BL + PC appeals; creates **Jul 2–3 OR Mon Jun 30 / Tue Jul 1 premarket** conditional window |
+
+**Integrated prob (conditional on deal ready — still low given Schroyer freeze, tranche 2, no 8-K, UW neutral):**
+
+| Scenario | Approx. prob | Notes |
+|----------|--------------|-------|
+| **Portfolio / multi-site sale 8-K** on Jul 2–3 holiday bury | **~1–2%** | Conflicts with transformational deleveraging + investor-call norm |
+| **Portfolio sale** Mon/Tue premarket + call | **~3–5%** if signing unfreezes | Aligns with UW Aug skew for *near-term* — still not base case |
+| **Cal City-only** pre-Jul 7 close (any weekday) | **~4–8%** | Preemption + **pre-denial reps/warranties** motive; execution still blocked |
+| **Jul 2–3 Cal City-only** (media minimization objective) | **~2–5%** | Friend tradecraft valid; **DHS objective ≠ CXW IR objective** on portfolio scale |
+
+**Diligence logic (friend, 2026-06-30):** Pre-hearing close avoids **condemned-asset** headline and **reps & warranties trap** if Grayson/PC deny Jul 7 — supremacy is backstop, not preferred path. **If docs ready, pre-hearing signing is strategically superior** — does not imply docs *are* ready.
+
+**Base case unchanged:** contract continuity **52–55%**; no imminent 8-K; **Aug 5–10 Q2 earnings** primary public falsifier.
 
 ### Watchlist
 
@@ -231,7 +272,7 @@ July 7 is **quorum-fragile** and **forum-contested** — not a reliable binary c
 |----------|----------|---------|
 | 1 | CXW/GEO **8-K** facility sale | Any day Q3 |
 | 1b | **Senate Approps HS markup** + Schroyer confirmation | Congress.gov |
-| 2 | **July 7 forum + agenda + quorum** (local noise) | City PDF / Granicus 72 hrs prior; PC vs Council |
+| 2 | **July 7 dual hearings** (BL 3:30 Grayson / PC 6:00 de novo) | [KGET Jul 7 hearings](https://www.kget.com/news/local-news/california-city-officials-to-reconsider-ice-detention-facility-approval-during-appeal-hearings-july-7/); city agenda PDF |
 | 2b | **N5000P / EJM55** DC weekend ADS-B export | Hex A63C56; ADS-B Exchange premium |
 | 3 | **Gomez Ruiz** monitor / compliance escalation | E.D. Cal. docket |
 | 4 | ICE **detained-population trend** | Vera / Deportation Data Project |
@@ -239,9 +280,9 @@ July 7 is **quorum-fragile** and **forum-contested** — not a reliable binary c
 | 6 | Schroyer confirmation | Senate |
 | 7 | CXW **Q2 call** (~Aug 2026) | Buyback vs sale posture |
 
-### Tier 0–2 + David UW updates (2026-06-30 EOD)
+### Tier 0–2 + David UW + Jul 7 KGET updates (2026-06-30)
 
-Integrated in `@concepts/ice-turnkey-research-backlog-2026-06-30.md`. **Probability revision:** contract-only **52–55%**, turnkey 8-K **40–42%** (David full UW §3). Cal City deltas unchanged: tranche 2, Jul 7 site plan only, 2304 beds. **Jul 2–3 holiday dump tail ~2–5%** (friend intel + UW: no Nov positioning, Schroyer window quiet on GEO). EOD summary: `.local/reports/ice-turnkey-research/EXECUTIVE-SUMMARY-2026-06-30.md`.
+Integrated in `@concepts/ice-turnkey-research-backlog-2026-06-30.md`. **Probability revision:** contract-only **52–55%**, turnkey 8-K **40–42%** (David full UW §3). **Jul 7 confirmed dual hearings:** BL **3:30 p.m.** (Grayson, no public comment) + PC **6:00 p.m.** (de novo, public comment) `[CONFIRMED]` KGET 17 News. **Announcement timing is objective-dependent:** Jul 2–3 = media minimization; Mon/Tue premarket + IR call = deleveraging rerating; pre-Jul 7 = local preemption — portfolio holiday-dump tail **~1–2%**, Cal City pre-hearing tail **~2–5%**. EOD summary: `.local/reports/ice-turnkey-research/EXECUTIVE-SUMMARY-2026-06-30.md`.
 
 **Cemini posture:** wiki-only synthesis; no prod brief unless operator reopens CXW/GEO workstream.
 
@@ -261,6 +302,12 @@ Integrated in `@concepts/ice-turnkey-research-backlog-2026-06-30.md`. **Probabil
 
 > Bonta urges California City to reject CoreCivic business license and site plan appeals; cites dangerous conditions under AB 103 and ongoing federal litigation.
 > — [Source: OAG press release 2026-06-15](https://oag.ca.gov/news/press-releases/attorney-general-bonta-urges-city-leaders-reject-corecivic%E2%80%99s-applications)
+
+> "The appeal hearing on the business license approval is set for 3:30 p.m. Tuesday, July 7… City Manager Sean Grayson will reportedly serve as the hearing officer… Members of the public can't comment at this hearing… The Planning Commission public hearing on the approved site plan review is set for 6 p.m. on the same day… The community will have a chance to speak at this hearing."
+> — [Source: KGET 17 News (retrieved 2026-06-30)](https://www.kget.com/news/local-news/california-city-officials-to-reconsider-ice-detention-facility-approval-during-appeal-hearings-july-7/)
+
+> Pre-hearing federal acquisition: "Federal government is acquiring this facility to support federal detention needs." Post-denial: "ICE buys facility local authorities said was illegally operating" — worse for price, indemnities, escrow, and reps/warranties even if supremacy eventually prevails.
+> — [Source: operator friend intel + OPLA diligence frame (2026-06-30); aligns with dirty-entitlement closing-conditions thesis]
 
 ## Dead Ends
 

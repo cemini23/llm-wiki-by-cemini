@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-06-30] research | Pre-hearing signing / reps-warranties frame (friend intel)
+
+- **Logic:** Pre-Jul 7 close cleaner than post-denial on headline, price, indemnity/escrow, federal RE reps & warranties; supremacy = backstop not preferred path
+- **Wiki:** `@concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md` — pre-hearing vs post-hearing table; Cal City conditional tail **~4–8%**
+
+## [2026-06-30] research | Cal City Jul 7 dual hearings (KGET) + announcement-timing framework
+
+- **Source:** [KGET 17 News — Jul 7 appeal hearings](https://www.kget.com/news/local-news/california-city-officials-to-reconsider-ice-detention-facility-approval-during-appeal-hearings-july-7/) — BL 3:30 p.m. Grayson (no public comment); PC 6:00 p.m. de novo (public comment); appellant Dignity Not Detention Coalition
+- **Friend intel:** objective-dependent timing — Jul 2–3 media minimization vs Mon/Tue premarket deleveraging rerating vs pre-Jul 7 local preemption
+- **Wiki:** `@concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md`, `@concepts/ice-turnkey-research-backlog-2026-06-30.md`
+
 ## [2026-06-30] research | David full UW §3 + EOD summary (GEO/CXW ICE turnkey)
 
 - **David UW:** `tipdrop-workspace-kit` commits `070b2f4`, `3b0f1f9` — paginated 90d flow-alerts, event windows, GEX, DP, OI

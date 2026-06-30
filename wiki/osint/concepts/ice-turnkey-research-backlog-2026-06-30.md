@@ -99,7 +99,7 @@ Handoff: `tipdrop-workspace-kit/briefs/2026-06-30_cxw-geo-ice-turnkey-david-hand
 
 **UW verdict:** **Neutral for near-term 8-K** both names. Call skew into **Aug/Sep expiries + LEAPs**, not Nov FY26 → **reinforces contract-only / slipped timing**. Optional probability revision: **52–55% contract / 40–42% buy / 5% termination** (from 50/45/5).
 
-**Holiday Jul 2–3 dump tail:** ~**2–5%** for Cal City 8-K — UW shows no Schroyer-window GEO spike, no Nov-chain positioning.
+**Holiday Jul 2–3 dump tail:** ~**2–5%** Cal City-only; ~**1–2%** portfolio bury. **Pre-Jul 7 close** strategically superior on reps/warranties if docs ready (pre-denial vs condemned-asset headline) — conditional Cal City tail **~4–8%**, execution still blocked (Schroyer freeze, no 8-K).
 
 **EOD summary:** `.local/reports/ice-turnkey-research/EXECUTIVE-SUMMARY-2026-06-30.md`
 
