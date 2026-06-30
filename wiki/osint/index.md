@@ -12,8 +12,13 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **487 canonical stubs** (K134 ingest +2 sources +1 concept +6 entities)
+Total: **489 canonical stubs** (K135 OpenClaw iOS +1 source +1 entity)
 
+
+### k135-openclaw-ios (2)
+
+- [OpenClaw official iOS node app (2026-06-29)](sources/openclaw-ios-node-2026-06-29.md) — first-party App Store node; relay attestation + pairing gates; posture revision. — `news+docs` [+openclaw, +mobile, +k135]
+- [OpenClaw — personal AI gateway + mobile nodes](entities/tools/openclaw.md) — MIT; Tier A CONDITIONAL-GO mobile; Tier C prod NO-GO retained. — entity, tool, k135
 
 ### k134-ingest (9)
 

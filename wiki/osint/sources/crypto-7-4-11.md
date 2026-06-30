@@ -17,11 +17,13 @@ related:
   - entities/frameworks/langgraph.md
   - sources/ai-2-4-3.md
   - concepts/openclaw-security-taxonomy.md
+  - entities/tools/openclaw.md
+  - sources/openclaw-ios-node-2026-06-29.md
   - concepts/agent-authorization-stack.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
-updated: 2026-05-01
+updated: 2026-06-29
 clusters:
   - llm-agents
   - quant-finance
@@ -101,7 +103,7 @@ Reproducible offline replay on BTCUSDT/ETHUSDT perpetuals, 15m bars, 2025-09-01�
 
 SAE is the **highest-intersection academic paper in the K-series** with Cemini's architecture. It directly addresses gaps identified across four prior K-series docs:
 
-- **K14 (OpenClaw rejection)** — SAE is the OpenClaw-compatible execution contract K14's analysis implied was missing
+- **K14 (OpenClaw Tier C rejection; K135 Tier A carve-out)** — SAE is the OpenClaw-compatible execution contract K14's analysis implied was missing. Tier A personal gateway still requires execution-boundary enforcement; prod trading integration unchanged NO-GO (@entities/tools/openclaw.md).
 - **K16 (sandboxed observer)** — SAE provides the enforcement layer K16's observation-only pipeline needs at the boundary
 - **K17 (agentic decision anchoring)** — SAE's ExecutionDecision (ALLOW/LIMIT/BLOCK) complements K17's debate-cycle anchoring with execution-level enforcement
 - **K18 (ToxicSkills + ABAC guardrails)** — SAE's trust-state conditioned budgeting (z_t) operationalizes both ToxicSkills threat detection and ABAC-style attribute-based access control at the execution boundary

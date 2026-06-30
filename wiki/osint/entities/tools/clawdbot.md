@@ -1,9 +1,11 @@
 ---
 title: "Clawdbot — Claude-powered AI agent framework for Polymarket weather bots"
 type: entity
-tags: [entity, tool, polymarket, claude-bot-framework, weather-trading, automation, k55]
-keywords: [clawdbot, claude-bot-framework, coldmath, polymarket-weather-trader-1, pilot-aviation-reports, 24-7-bot]
+tags: [entity, tool, polymarket, claude-bot-framework, weather-trading, automation, k55, openclaw-lineage]
+keywords: [clawdbot, openclaw, coldmath, polymarket-weather-trader-1, pilot-aviation-reports, 24-7-bot, name-collision]
 related:
+  - entities/tools/openclaw.md
+  - sources/openclaw-ios-node-2026-06-29.md
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
   - concepts/polymarket-weather-trading-strategy.md
   - entities/people/polymarketsuccubus.md
@@ -15,11 +17,12 @@ related:
   - sources/alterego-eth-five-weather-methodologies-2026-05-27.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-27
+updated: 2026-06-29
 ---
 
 ## Relations
 
+- @entities/tools/openclaw.md — **disambiguation:** Steinberger project renamed Clawdbot → Moltbot → **OpenClaw** (MIT); K55 Posts.docx "Clawdbot" may name ColdMath's stack OR pre-rename framework [TENTATIVE]
 - @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — K55 Posts.docx Post 5 references Clawdbot as the framework underpinning ColdMath (#1 weather trader, +$124K PnL)
 - @concepts/polymarket-weather-trading-strategy.md — concept page where Clawdbot is now cross-referenced
 - @entities/people/polymarketsuccubus.md — referencing creator
@@ -47,10 +50,10 @@ K55 ingest surfaces Clawdbot as "a Claude-powered AI agent framework" used by Co
 
 ### Open questions [NEEDS VERIFICATION 2026-05-20]
 
-1. **Public or proprietary?** Is Clawdbot a public open-source framework, a closed-source product, or a custom internal framework that ColdMath self-named? The @polysuccubus post describes it but does not link to a repo or product page.
-2. **License?** If public, what license — MIT? Apache? Closed?
-3. **Architecture?** "Claude-powered AI agent framework" is broad — does it use MCP? Is it Claude-API-direct? Does it wrap Claude Code?
-4. **Adoption surface?** If openly licensed, it's a candidate for Phase-0 audit; if proprietary, it's reference-only.
+1. **Same artifact as OpenClaw?** The public **OpenClaw** gateway (formerly Clawdbot/Moltbot, MIT, @entities/tools/openclaw.md) may be what ColdMath's post meant — confirm via ColdMath primary source before merging pages.
+2. **License?** If OpenClaw: **MIT** confirmed (2026-06-29). If separate proprietary fork: reference-only.
+3. **Architecture?** If OpenClaw: gateway + optional iOS node; weather bot = gateway skills/channels on isolated host.
+4. **Adoption surface?** OpenClaw **Tier C NO-GO** on cemini-prod trading; **Tier A CONDITIONAL-GO** for operator personal gateway only (@sources/openclaw-ios-node-2026-06-29.md).
 
 ### Cemini-relevant signal
 
@@ -58,10 +61,9 @@ Whether or not Clawdbot is adoptable, the **datapoint that a Claude-driven bot f
 
 ### Cemini fit
 
-- **Deferred** pending verification of Clawdbot's existence as a public artifact (1) and its license (2).
-- If it turns out to be open + permissively licensed, this becomes an Adopt-candidate to evaluate against Hermes Agent (already in wiki, K52) and against the Cemini conductor architecture.
-- If it turns out to be proprietary or a custom internal framework, this page stays Reference-only and the surfacing of the *strategy class* (Claude-driven weather-market bot) is the actual takeaway.
+- **If OpenClaw lineage [TENTATIVE]:** evaluate via @entities/tools/openclaw.md — not a PM bot framework substitute; weather strategy class remains the takeaway.
+- **If proprietary ColdMath fork:** Reference-only; compare to Hermes (@entities/tools/hermes-agent.md) for self-hosted agent patterns.
 
 ### Follow-up action
 
-Web search for "Clawdbot Claude framework" or "ColdMath Clawdbot Polymarket" to find the canonical artifact (GitHub repo, product page, or absent both, a tweet thread). Defer to next session.
+Confirm ColdMath ↔ OpenClaw link via operator OSINT or primary tweet/repo. Until then, keep this page as **name-collision stub** pointing to @entities/tools/openclaw.md for the public framework.

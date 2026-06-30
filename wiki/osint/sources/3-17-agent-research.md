@@ -1,8 +1,8 @@
 ---
 title: 'Technical Research Audit: Integration of Local AI Agents in the Cemini Financial Suite'
 type: source
-tags: [docx, llm-agents, quant-finance, prediction-markets, cemini-internal, k16, prescribed-not-built]
-keywords: [local-ai-agents, hetzner-pricing-shock, abliterated-models, redis-semantic-caching, prompt-injection, deepseek-r1-distill, openclaw-rejection, ollama-llamacpp, cpu-inference, m-and-a-due-diligence]
+tags: [docx, llm-agents, quant-finance, prediction-markets, cemini-internal, k16, prescribed-not-built, openclaw-tier-c-no-go, k135]
+keywords: [local-ai-agents, hetzner-pricing-shock, abliterated-models, redis-semantic-caching, prompt-injection, deepseek-r1-distill, openclaw-rejection, openclaw-tier-c, ollama-llamacpp, cpu-inference, m-and-a-due-diligence]
 related:
   - concepts/llm-agent-systems.md
   - concepts/quant-finance.md
@@ -15,6 +15,7 @@ related:
   - entities/infrastructure/timescaledb.md
   - entities/infrastructure/redis.md
   - sources/4-3-link-re-2.md
+  - entities/tools/openclaw.md
   - sources/3-10-cryptographic-research.md
   - sources/4-5-links.md
   - sources/3-25-git-research.md
@@ -23,10 +24,11 @@ related:
   - concepts/sae-execution-contract.md
   - sources/ai-2-4-3.md
   - concepts/openclaw-security-taxonomy.md
+  - sources/openclaw-ios-node-2026-06-29.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
-updated: 2026-05-01
+updated: 2026-06-29
 clusters:
   - llm-agents
   - quant-finance
@@ -190,11 +192,13 @@ K16 is the **last systematic defense of the local-model path** in the Cemini-int
 
 > "The developer should bookmark the DeepHermes model weights for specific financial reasoning tasks, but must actively avoid deploying the complex Atropos reinforcement learning framework until post-IP sale when institutional GPU resources become available." [line 113]
 
-### Rejected: OpenClaw
+### Rejected: OpenClaw (Tier C — prod; revised K135)
 
 > "Cybersecurity researchers have documented that up to 20% of available plugins are malicious, containing zero-click exploits that can be triggered simply by an agent processing a poisoned prompt." [line 141]
 
 > "Integrating OpenClaw into an algorithmic trading suite handling proprietary financial data is an immediate disqualifier for an IP sale." [line 142]
+
+**K135 revision (2026-06-29):** Rejection **unchanged for cemini-prod / IP-sale trading**. OpenClaw **Tier A CONDITIONAL-GO** for operator personal gateway + iOS mobile node only — see @entities/tools/openclaw.md and @sources/openclaw-ios-node-2026-06-29.md. SAE/K20 taxonomy still applies to gateway host.
 
 ### Rejected: Direct agentic execution of uncensored models
 

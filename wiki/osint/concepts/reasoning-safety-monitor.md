@@ -6,6 +6,8 @@ keywords: [reasoning-safety, chain-of-thought, safety-monitor, nine-category-tax
 related:
   - sources/3-29-15.md
   - concepts/openclaw-security-taxonomy.md
+  - entities/tools/openclaw.md
+  - sources/openclaw-ios-node-2026-06-29.md
   - concepts/sae-execution-contract.md
   - concepts/llm-agent-systems.md
   - concepts/algorithmic-stopping-conditions.md
@@ -17,13 +19,14 @@ related:
   - sources/agents-of-chaos-2602.20021.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-11
+updated: 2026-06-29
 ---
 
 ## Relations
 
 - @sources/3-29-15.md — canonical source: Wang, Zhou et al., HKUST, arXiv:2603.25412v1, March 2026
 - @concepts/openclaw-security-taxonomy.md — K20 threat model; reasoning safety monitor detects Context Manipulation as it occurs in the CoT, closing K20 §6.6's context-window provenance gap
+- @entities/tools/openclaw.md — K135 Tier A gateway; K22 still applies to gateway reasoning chains before tool exec
 - @concepts/sae-execution-contract.md — K19 enforcement at execution boundary; K22 enforcement at reasoning boundary. Together they bracket the full attack surface
 - @concepts/llm-agent-systems.md — cluster hub; reasoning safety is a new dimension of agent security orthogonal to content safety
 - @concepts/algorithmic-stopping-conditions.md — K14 execution-level stopping conditions; K22 provides reasoning-level stopping conditions (loop/DoS detection)

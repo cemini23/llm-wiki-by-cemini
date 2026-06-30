@@ -7,6 +7,8 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/cemini-license-posture.md
   - entities/tools/unusualwhales-mcp.md
+  - entities/tools/openclaw.md
+  - sources/openclaw-ios-node-2026-06-29.md
   - sources/eval-multi-wiki-discord-link-2026-06-28.md
   - sources/eval-repo-plan-tipdrop-legacy-2026-06-28.md
 maturity: draft
@@ -55,7 +57,7 @@ K133 batch — **20 URLs** on Unusual Whales API clients, MCP servers, DiscordMo
 
 ### Cross-wiki steals (no OSINT entity stubs)
 
-- **OpenClaw** DM pairing (`dmPolicy="pairing"`) → cybersec-wiki brief (webhook adversarial input)
+- **OpenClaw** DM pairing (`dmPolicy="pairing"`) → @entities/tools/openclaw.md + K133 cybersec brief; iOS node hardening → @sources/openclaw-ios-node-2026-06-29.md
 - **danwagnerco** filter heuristics (min_volume_oi_ratio, RepeatedHits) → reference-only rewrite
 
 ### TipDrop compliance gate

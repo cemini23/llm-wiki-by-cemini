@@ -1,7 +1,7 @@
 ---
 title: OpenClaw security taxonomy
 type: concept
-tags: [concept, security, agent-framework, taxonomy, kill-chain, execution-safety, architectural-primitive]
+tags: [concept, security, agent-framework, taxonomy, kill-chain, execution-safety, architectural-primitive, k135, openclaw-tier-c-no-go]
 keywords: [openclaw, security taxonomy, two-axis taxonomy, context manipulation, kill chain, exec allowlist bypass, prompt injection, supply chain, provenance model, inter-layer enforcement, closed-world assumption, lexical-vs-semantic]
 related:
   - sources/ai-2-4-3.md
@@ -11,6 +11,7 @@ related:
   - concepts/scatter-gather-topology.md
   - sources/crypto-7-4-11.md
   - sources/3-17-agent-research.md
+  - sources/4-3-link-re-2.md
   - sources/3-25-git-research.md
   - sources/git-3-5-pt3.md
   - sources/3-29-15.md
@@ -20,6 +21,8 @@ related:
   - concepts/mitre-atlas-taxonomy.md
   - entities/tools/hermes-agent.md
   - entities/tools/claw-swe-bench.md
+  - entities/tools/openclaw.md
+  - sources/openclaw-ios-node-2026-06-29.md
   - concepts/claw-swe-bench-harness-evaluation.md
   - sources/arxiv-claw-swe-bench-2606.12344-2026-06-16.md
   - sources/arxiv-aohp-os-agent-harness-2606.23449-2026-06-23.md
@@ -27,7 +30,7 @@ related:
   - concepts/aohp-os-level-agent-harness.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-06-23
+updated: 2026-06-29
 ---
 
 ## Relations
@@ -40,12 +43,15 @@ updated: 2026-06-23
 - @concepts/scatter-gather-topology.md — §6.7 unified inter-layer enforcement composes with scatter-gather's execution-leaf placement
 - @sources/crypto-7-4-11.md — K19 SAE paper: "here's the defense"; K20 = "here's what it defends against"
 - @sources/3-17-agent-research.md — K16 sandboxed observer shares the closed-world-assumption critique
+- @sources/4-3-link-re-2.md — K14 Doc 3 snippets-only source; promoted to this concept (K20)
 - @sources/3-25-git-research.md — K17 debate-cycle decision anchoring; provenance model complements debate with origin-level trust
 - @sources/git-3-5-pt3.md — K18 ToxicSkills threat vector directly instanced by yahoofinance malicious skill
 - @sources/3-29-15.md — K22 deep-read 2026-05-01; reasoning safety monitor provides the detection layer that catches Context Manipulation as it unfolds in the CoT — closes K20 §6.6's context-window provenance gap
 - @concepts/reasoning-safety-monitor.md — K22 promotion; reusable architectural primitive for parallel CoT inspection — nine-category taxonomy + interrupt signal before corrupted reasoning reaches execution
 - @concepts/agent-authorization-stack.md — K19+K22+K23+K24 cross-cluster synthesis; threat model that informs all four authorization layers.
 - @sources/safeharness-2604.13630.md — K25 SafeHarness lifecycle-integrated harness security; defends against the threat surface K20 catalogs at the harness-internal level.
+- @entities/tools/openclaw.md — K135 entity; Tier A mobile node CONDITIONAL-GO vs Tier C prod NO-GO
+- @sources/openclaw-ios-node-2026-06-29.md — iOS relay attestation + pairing approval mitigations
 - @entities/tools/hermes-agent.md — K52 Nous Research Hermes Agent, positioned as OpenClaw's successor; this taxonomy is the comparison frame for its security posture
 
 ## Raw Concept
@@ -139,6 +145,19 @@ The gap: K20's §6.6 — "mandatory provenance tag for every string entering the
 **K22 closes this gap.** The Reasoning Safety Monitor (@concepts/reasoning-safety-monitor.md, from @sources/3-29-15.md) provides the missing detection layer. It inspects each reasoning step as it's generated, classifies unsafe behaviors into a nine-category taxonomy, and dispatches an interrupt signal BEFORE corrupted reasoning reaches tool execution. The monitor's per-step verdict (safety flag + error type code + confidence + location quote) is precisely the context-window provenance signal K20 §6.6 prescribed: it identifies which reasoning step was manipulated, by what attack mechanism (BadChain → Goal Deviation; Preemptive Answer → Calculation Error + Premature Conclusion; OverThink → Misinterpretation; Deadlock → Reasoning Loop), and with what confidence.
 
 K19+K20+K22 now form a complete execution-security architecture: K19 enforces at the execution boundary (SAE), K20 catalogs the threat model (OpenClaw taxonomy), and K22 detects at the reasoning boundary (Reasoning Safety Monitor). The monitor's interrupt signal can feed into SAE's trust-state as a reasoning-integrity component — z_t now carries both provenance (p_prov_t, from M2) and reasoning-safety (I_reasoning, from K22).
+
+### iOS / mobile node mitigations (K135 — 2026-06-29)
+
+The **2026-06-29** first-party iOS/Android apps change the **deployment** picture without retracting the gateway taxonomy. The phone is a **paired node**, not a second gateway:
+
+| K20 condition | Gateway (still applies) | iOS node mitigation |
+|---------------|-------------------------|---------------------|
+| Closed-world assumption | Channel/skill inputs still untrusted on host | Node receives **scoped** `node.invoke` only; capabilities opt-in per sensor |
+| Absent inter-layer enforcement | Gateway RCE chains unchanged | **Manual pairing approval** + gateway-scoped relay registration |
+| Ungoverned distribution | Skill marketplace on gateway | App Store build uses **App Attest + StoreKit JWS** for relay; blocks unofficial builds on hosted relay |
+| Context manipulation | LLM context on gateway | Mobile chat is another channel surface — same injection class, smaller exec blast radius on phone |
+
+**Posture revision:** K14/K17 **NO-GO for prod trading integration** stands. **CONDITIONAL-GO** for operator personal gateway + iOS node (approvals, Talk, share-in) with gates in @entities/tools/openclaw.md. See @sources/openclaw-ios-node-2026-06-29.md.
 
 ### When to consult this page
 

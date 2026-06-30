@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-06-29] query | OpenClaw corpus tag sweep (K135)
+
+- **Tag/posture pass (8):** `clawdbot.md` (OpenClaw lineage disambiguation), `3-17-agent-research.md`, `4-3-link-re-2.md`, `sae-execution-contract.md`, `crypto-7-4-11.md`, `llm-agent-systems.md`, `reasoning-safety-monitor.md`, `openclaw-security-taxonomy.md`
+- **Pattern:** wholesale OpenClaw reject → **Tier C prod NO-GO** retained; **Tier A CONDITIONAL-GO** (personal gateway + iOS node) cross-linked via `@entities/tools/openclaw.md`
+
+## [2026-06-29] query | OpenClaw iOS node — posture revision
+
+- **Source (1):** `openclaw-ios-node-2026-06-29.md` — first-party App Store/Android node; docs + press
+- **Entity (1):** `@entities/tools/openclaw.md` — Tier A CONDITIONAL-GO (personal gateway + mobile); Tier C prod NO-GO unchanged
+- **Updates (3):** `openclaw-security-taxonomy.md` (iOS mitigations section), `hermes-agent.md`, `llm-agent-systems.md`, `eval-github-batch-unusualwhales-2026-06-28.md`
+
 ## [2026-06-29] gap-detect | Tier 1 weekly report
 
 - **Report:** `.local/reports/wiki-gap-detect-2026-06-29.txt` — 24 Type A cited-unread stubs, 121 stale NV tags (descriptive only)

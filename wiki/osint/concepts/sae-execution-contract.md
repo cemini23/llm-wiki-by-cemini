@@ -17,6 +17,8 @@ related:
   - sources/4-5-links.md
   - sources/ai-2-4-3.md
   - concepts/openclaw-security-taxonomy.md
+  - entities/tools/openclaw.md
+  - sources/openclaw-ios-node-2026-06-29.md
   - sources/3-29-15.md
   - concepts/reasoning-safety-monitor.md
   - concepts/agent-authorization-stack.md
@@ -24,7 +26,7 @@ related:
   - concepts/mitre-atlas-taxonomy.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-05-11
+updated: 2026-06-29
 ---
 
 ## Relations
@@ -124,7 +126,7 @@ A theoretical bound links projection to worst-case loss reduction: if per-step l
 
 SAE directly addresses the execution-boundary gap identified across four K-series docs:
 
-- **K14 (OpenClaw rejection)**: SAE is the OpenClaw-compatible execution contract K14 implied was missing — it plugs into tool interception and enforces domain-specific constraints
+- **K14 (OpenClaw Tier C rejection; K135 Tier A carve-out)**: SAE is the OpenClaw-compatible execution contract K14 implied was missing — it plugs into tool interception and enforces domain-specific constraints. **Personal OpenClaw gateway** (Tier A) still needs SAE-style gates on any trading-adjacent tool path; prod integration remains NO-GO (@entities/tools/openclaw.md).
 - **K16 (sandboxed observer)**: SAE provides the enforcement layer K16's observation-only pipeline needs at the boundary where observation becomes action
 - **K17 (agentic decision anchoring)**: SAE's ExecutionDecision (ALLOW/LIMIT/BLOCK) complements K17's debate-cycle anchoring with execution-level enforcement — debate produces decisions, SAE gates their execution
 - **K18 (ToxicSkills + ABAC guardrails)**: SAE's trust-state conditioned budgeting (z_t) operationalizes both the ToxicSkills threat vector (I_inj flag) and ABAC-style attribute-based access control (provenance + capability risk → budget tightening) at the execution boundary

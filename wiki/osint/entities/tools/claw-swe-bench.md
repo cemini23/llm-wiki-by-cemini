@@ -7,6 +7,7 @@ related:
   - sources/arxiv-claw-swe-bench-2606.12344-2026-06-16.md
   - concepts/claw-swe-bench-harness-evaluation.md
   - concepts/openclaw-security-taxonomy.md
+  - entities/tools/openclaw.md
   - concepts/code-as-agent-harness.md
   - concepts/llm-agent-systems.md
 maturity: draft

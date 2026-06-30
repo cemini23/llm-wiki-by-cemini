@@ -22,6 +22,8 @@ related:
   - entities/tools/skillclaw.md
   - concepts/hermes-laptop-operator-playbook.md
   - concepts/openclaw-security-taxonomy.md
+  - entities/tools/openclaw.md
+  - sources/openclaw-ios-node-2026-06-29.md
   - concepts/polymarket-weather-trading-strategy.md
   - concepts/polymarket-weather-bot-methodology-taxonomy.md
   - sources/alterego-eth-five-weather-methodologies-2026-05-27.md

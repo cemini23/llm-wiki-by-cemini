@@ -1,7 +1,7 @@
 ---
 title: "4_3 link re 2.docx — Cemini-internal multi-topic competitive intelligence (K14; 11 H2 documents; sibling to K13)"
 type: source
-tags: [cemini-internal, competitive-intelligence, multi-topic-aggregate, k14, k-series, prescribed-not-built, april-2026]
+tags: [cemini-internal, competitive-intelligence, multi-topic-aggregate, k14, k-series, prescribed-not-built, april-2026, openclaw-tier-c-no-go, k135]
 keywords: [timesfm, chronos, moirai, memory-forgetting, openclaw, automoose, archbench, xcpd, spectral-decomposition, ldp, leaps, diversity-aware-rl, uiformer, gta, dynamic-quantization, claude-code-plugins, firecrawl, agpl-poison, stop-hook, ghost-token-compaction]
 clusters: [llm-agents, quant-finance, time-series]
 related:
@@ -24,10 +24,13 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/quant-finance.md
   - concepts/rl-marl-research.md
+  - entities/tools/openclaw.md
+  - concepts/openclaw-security-taxonomy.md
+  - sources/openclaw-ios-node-2026-06-29.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-23
-updated: 2026-05-11
+updated: 2026-06-29
 ---
 
 ## Relations
@@ -46,6 +49,9 @@ updated: 2026-05-11
 - @entities/frameworks/langgraph.md — K14 Docs 2, 3, 4, 5, 7, 11 reference LangGraph state-machine patterns.
 - @entities/frameworks/fastmcp.md — K14 Docs 1, 3, 4 reference FastMCP tool integration patterns.
 - @entities/infrastructure/timescaledb.md — K14 Docs 2 (pgvector relevance scoring) and 6 (FFT on klines hypertable) reference TimescaleDB.
+- @entities/tools/openclaw.md — K135 entity; Doc 3 snippets promoted to @concepts/openclaw-security-taxonomy.md
+- @concepts/openclaw-security-taxonomy.md — K20 promotion of Doc 3 OpenClaw security taxonomy
+- @sources/openclaw-ios-node-2026-06-29.md — K135 Tier A mobile mitigations (post-K14 prod rejection)
 
 ## Raw Concept
 
@@ -135,6 +141,8 @@ License: academic (formulas extractable ✅). Cemini relevance: pgvector-acceler
 > "The taxonomy proves that string-based pattern matching (regex) and lexical parsing are easily circumvented by abbreviation manipulation and line continuations. To secure the multi-broker EMS, the system must utilize Abstract Syntax Tree (AST) validation or strict JSON-schema enforcement for all agent outputs." [para 63]
 
 > "Assuming that an OS-level hypervisor or container namespace provides adequate security against unpredictable reinforcement learning outputs is a massive miscalculation. Security must be enforced deterministically at the application layer before reaching the operating system layer." [para 68]
+
+**K135 (2026-06-29):** K14 snippets promoted to @concepts/openclaw-security-taxonomy.md (K20) + @entities/tools/openclaw.md. Prod trading NO-GO retained; **Tier A CONDITIONAL-GO** for operator personal gateway + iOS node (@sources/openclaw-ios-node-2026-06-29.md).
 
 ### Document 4: AutoMOOSE / MOOSEnger (Snippets-only)
 
