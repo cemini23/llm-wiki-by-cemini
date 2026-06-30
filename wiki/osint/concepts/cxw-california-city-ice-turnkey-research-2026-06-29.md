@@ -239,9 +239,9 @@ July 7 is **quorum-fragile** and **forum-contested** — not a reliable binary c
 | 6 | Schroyer confirmation | Senate |
 | 7 | CXW **Q2 call** (~Aug 2026) | Buyback vs sale posture |
 
-### Tier 0–2 whole-thesis updates (2026-06-30)
+### Tier 0–2 + David UW updates (2026-06-30 EOD)
 
-Integrated in `@concepts/ice-turnkey-research-backlog-2026-06-30.md`. Cal City deltas: **no 8-K** `[CONFIRMED]`; **rank #7**; **50% contract-only**; **Otay closes before Cal City** in CA tranche 2 (Tier 2B); NEPA/Gilroy adds **95% delay / 70% kill prob** on CCDF purchase vs contract continuity (Tier 2A); Jul 7 = site plan only; Grayson BL sharper; underwrite **2,304 beds**.
+Integrated in `@concepts/ice-turnkey-research-backlog-2026-06-30.md`. **Probability revision:** contract-only **52–55%**, turnkey 8-K **40–42%** (David full UW §3). Cal City deltas unchanged: tranche 2, Jul 7 site plan only, 2304 beds. **Jul 2–3 holiday dump tail ~2–5%** (friend intel + UW: no Nov positioning, Schroyer window quiet on GEO). EOD summary: `.local/reports/ice-turnkey-research/EXECUTIVE-SUMMARY-2026-06-30.md`.
 
 **Cemini posture:** wiki-only synthesis; no prod brief unless operator reopens CXW/GEO workstream.
 

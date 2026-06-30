@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-06-30] research | David full UW §3 + EOD summary (GEO/CXW ICE turnkey)
+
+- **David UW:** `tipdrop-workspace-kit` commits `070b2f4`, `3b0f1f9` — paginated 90d flow-alerts, event windows, GEX, DP, OI
+- **Verdict:** Neutral near-term 8-K; Aug/Sep/LEAP skew not Nov; prob tweak **52–55% / 40–42% / 5%**
+- **Wiki:** `@concepts/ice-turnkey-research-backlog-2026-06-30.md`, `@concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md`
+- **EOD summary:** `.local/reports/ice-turnkey-research/EXECUTIVE-SUMMARY-2026-06-30.md`
+
 ## [2026-06-30] research | ICE turnkey Tier 3 (N5000P + warehouse disposition)
 
 - **3A:** `.local/reports/ice-turnkey-research/tier3/track-3a-n5000p-adsb-dc-cadence-2026-06-30.md`

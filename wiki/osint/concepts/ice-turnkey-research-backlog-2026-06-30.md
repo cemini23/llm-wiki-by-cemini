@@ -1,5 +1,5 @@
 ---
-title: ICE turnkey research backlog — Tier 0 complete, Tier 1–3 queued
+title: ICE turnkey research backlog — Tiers 0–3 + David UW complete
 type: concept
 tags: [concept, osint, corecivic, geo-group, ice, research-backlog]
 keywords: [turnkey, DRI, OBBBA, H.R. 9310, site ranking, 8-K, research-plan]
@@ -15,6 +15,9 @@ maturity: validated
 created: 2026-06-30
 updated: 2026-06-30
 tier1_completed: 2026-06-30
+tier2_completed: 2026-06-30
+tier3_completed: 2026-06-30
+david_uw_full: 2026-06-30
 ---
 
 ## Relations
@@ -42,7 +45,7 @@ Five parallel research tracks executed; cross-track synthesis filed locally.
 | A — Sale confirmation | Any 8-K / federal award? | **No** GEO/CXW facility-sale 8-K through Jun 29; bridge FPDS mods active |
 | B — Funding | Where does M&A $ come from? | **OBBBA $45B** primary; **S.2 $38.5B to ICE** ops/maintenance only; H.R. 9310 §218/§223/§228 reported Jun 12 |
 | C — Site ranking | First tranche? | **Montgomery TX #1**, **Central LA #2**, **Leavenworth KS #3**; **Cal City #7** (~4/10 first-tranche) |
-| D — Purchase vs contract | Ownership or IGSA? | **50% contract-only** / **45% buy** / **5% termination** (12mo) |
+| D — Purchase vs contract | Ownership or IGSA? | **52–55% contract-only** / **40–42% buy** / **5% termination** (12mo; revised post-David UW) |
 | E — Demand + oversight | ADP kills program? | **Re-sequences, doesn't kill**; ADP ~59k vs ~73k peak; warehouse IG + Mullin chill |
 
 **Integrated verdict:** Program **real and funded**; execution **delayed**; **contract continuity base case**; Cal City **tranche 2**.
@@ -77,6 +80,29 @@ Five parallel research tracks executed; cross-track synthesis filed locally.
 **Synthesis:** `.local/reports/ice-turnkey-research/synthesis-tier3-2026-06-30.md`  
 **Full stack:** `.local/reports/ice-turnkey-research/synthesis-tier0-2026-06-30.md` through `synthesis-tier3-2026-06-30.md`
 
+### David — Unusual Whales full §3 protocol (2026-06-30)
+
+Handoff: `tipdrop-workspace-kit/briefs/2026-06-30_cxw-geo-ice-turnkey-david-handoff.md` · Reply + full protocol: commits `070b2f4`, `3b0f1f9`.
+
+| Finding | GEO | CXW |
+|---------|-----|-----|
+| IV rank | 43 | **68** |
+| 30d net call−put (alerts)* | +$33.5M | **+$88.2M** |
+| May 6–8 earnings window | **+ $10.6M, call 3.3× baseline** | +$2.4M weak |
+| Jun 24–26 Mullin | **−$4.1M put-heavy** | −$754k |
+| Jun 27–30 Schroyer | $0 | +$617k modest |
+| Nov-20 OI / vol | 3,366 / **0** | 5,988 / 19 |
+| Short % float | **10.5%** | 3.5% |
+| DP Jun 29 sample | **~$6.4M** | ~$2.4M |
+
+*Alert premium sums may inflate on duplicate rule hits — prefer event-window ratios.*
+
+**UW verdict:** **Neutral for near-term 8-K** both names. Call skew into **Aug/Sep expiries + LEAPs**, not Nov FY26 → **reinforces contract-only / slipped timing**. Optional probability revision: **52–55% contract / 40–42% buy / 5% termination** (from 50/45/5).
+
+**Holiday Jul 2–3 dump tail:** ~**2–5%** for Cal City 8-K — UW shows no Schroyer-window GEO spike, no Nov-chain positioning.
+
+**EOD summary:** `.local/reports/ice-turnkey-research/EXECUTIVE-SUMMARY-2026-06-30.md`
+
 ### Falsifiers (watch)
 
 1. No facility-sale 8-K by **Nov 30, 2026** (FY26 DRI deadline)
@@ -85,6 +111,9 @@ Five parallel research tracks executed; cross-track synthesis filed locally.
 4. ADP sustained **<45k** through Q3/Q4
 
 ## Snippets
+
+> David UW (2026-06-30): "Full protocol contradicts near-term 8-K positioning — Nov OI/vol thin; May earnings call spike is not M&A-specific; Mullin week put-heavy on GEO."
+> — [Source: `tipdrop-workspace-kit/briefs/2026-06-30_cxw-geo-uw-flow-reply-david.md` (commit 3b0f1f9)]
 
 > Tier 0 synthesis: "Funding is not the bottleneck. Execution is bottlenecked by warehouse-scandal diligence chill, Schroyer confirmation pause, pricing stalemate, and falling ADP."
 > — [Source: `.local/reports/ice-turnkey-research/synthesis-tier0-2026-06-30.md` (2026-06-30)]
