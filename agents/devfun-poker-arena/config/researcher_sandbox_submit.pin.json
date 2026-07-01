@@ -1,15 +1,18 @@
 {
   "competitionId": "cmr0jmqlt08bi13n8neory9xb",
   "template": "static-agent",
-  "replace": false,
-  "activeSubmissionId": "5f6f3aec-6547-4166-8d18-eaae2ad54d91",
+  "replace": true,
+  "activeSubmissionId": "41651659-7105-43e6-be0e-8e151879863e",
   "watchSubmissionIds": [
+    "41651659-7105-43e6-be0e-8e151879863e",
+    "8545120c-e3cd-4c1a-bb3c-d2d5254f18ca",
     "5f6f3aec-6547-4166-8d18-eaae2ad54d91"
   ],
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-s2.6704963.2026-06-30",
-  "gitCommit": "6704963",
-  "pinnedAt": "2026-06-30T12:00:00Z",
-  "notes": "S2 beta sandbox — fresh submit after cursor-audit; S1 bots left in watch only."
+  "agentVersion": "researcher-s2.cemini-k131b.2026-07-02",
+  "sandboxEngine": "cemini",
+  "gitCommit": "7c99ea1",
+  "pinnedAt": "2026-07-02T00:00:00Z",
+  "notes": "Revert gin->cemini K131b. Daily limit hit 2026-07-02; replace:true for next timer/submit."
 }

@@ -7,9 +7,9 @@ related:
   - concepts/devfun-poker-agent-challenge-2026.md
   - concepts/devfun-researcher-track-readiness-2026-06.md
   - entities/platforms/devfun-arena.md
-maturity: draft
+maturity: validated
 created: 2026-06-18
-updated: 2026-06-18
+updated: 2026-07-01
 ---
 
 ## Relations
@@ -68,12 +68,27 @@ GitHub code search for live `arena_sk_*` keys: **examples and test placeholders 
 4. **system7** — board texture grades + SPR commit rules + archetype exploit deviations gated on HUD sample size (N<100 = baseline).
 5. **HF reasoned-decisions** — calibrate public `reasoning` YAML quality for Researcher trajectory contribution.
 
+### gin v3 `hu004` — Option A sandbox engine [CONFIRMED ship 2026-07-01]
+
+Luigi v4 (#1 S1 sandbox LB) links **gin/poker-bot v3**. Full HU brain is **`hu004.py`** (~8k lines, stdlib-only, self-contained `choose_action`) — not the v008 preflop layer we partially ported.
+
+| Local benchmark (2k HU, seed 42) | bb/100 vs `profiled_counter_adaptive` |
+|----------------------------------|---------------------------------------|
+| gin `hu004` | **+39.5** |
+| gin `auto_research_v008` | **−12.1** |
+| `cemini_decide` vs `tight` | +18–22 (different opponent pool) |
+
+**Cemini posture:** vendored `vendor/gin_hu004/hu004.py` + `gin_hu004_bridge.py`; sandbox default `CEMINI_SANDBOX_ENGINE=gin_hu004`. Live S2 submission `8545120c` on comp `cmr0jmqlt08bi13n8neory9xb`. Brief: `agents/devfun-poker-arena/briefs/2026-07-01_k139-gin-hu004-option-a-sandbox-ship.md`.
+
+Still **no LICENSE** in upstream — sync via `scripts/sync_gin_hu004.sh`; algorithm port only.
+
 ### Phase-0 next steps
 
 - ~~Clone `gin/poker-bot` → diff `survival_sixmax` open ranges vs our seat matrix / gin lane.~~
 - ~~Run `auto_research_v008` selfplay vs our gate; port proven patches as regression spots.~~ **Done 2026-06-18** — `gin_style.py` `try_preflop_v008_rescue` (loose-call 38–50 + BB/SB blind defense); `tests/test_gin_v008_preflop.py`; gate PASS with `CEMINI_GIN_V008=1`.
-- Do **not** copy repo wholesale — gin repo has **no LICENSE file** [TENTATIVE]; ported algorithm only with source comment in `gin_style.py`.
-- Deferred: kecodot `StrategyMixer`, system7 postflop taxonomy, v007 river bluff-catch (action_mix may cover).
+- ~~Port full HU stack for Researcher sandbox.~~ **Done 2026-07-01** — Option A vendored `hu004` (see above); rollback via `CEMINI_SANDBOX_ENGINE=cemini`.
+- Do **not** copy repo wholesale — gin repo has **no LICENSE file** [TENTATIVE]; ported algorithm only with source comment in `gin_style.py` / vendor README.
+- Deferred: kecodot `StrategyMixer`, system7 postflop taxonomy, v007 river bluff-catch (action_mix may cover); K138 AI_pokergame YAML villain profile.
 
 ## Snippets
 

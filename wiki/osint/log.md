@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-07-02] ops | Cursor audit — cemini revert tooling + gate alignment
+
+- **Arena evidence:** gin `8545120c` +7.3 TS @ 5k vs cemini `5f6f3aec` +19 TS; tranche2 gin `41651659` ~1323/5k (negative early TS)
+- **Shipped:** gate via `harness_sandbox_agent.py`; pin-driven `CEMINI_SANDBOX_ENGINE`; bundle omits gin vendor when cemini; auto-submit PvP-wait fix retained; prod rsync
+- **Blocked:** cemini `--replace` submit — `sandbox_daily_limit` (3/day); next at UTC reset or timer `cemini-researcher-sandbox-submit.timer`
+- **Refs:** `agents/devfun-poker-arena/references/researcher-track-sandbox.md`, `skills/sandbox/researcher-guide.md`, K139 brief §Update 2026-07-02
+
+## [2026-07-01] research | K139 — gin hu004 Option A sandbox ship
+
+- **Arena:** vendored gin/poker-bot v3 `hu004` → `CEMINI_SANDBOX_ENGINE=gin_hu004`; S2 submit `8545120c` (replaced cemini `5f6f3aec` @ 5k)
+- **Findings:** S2 public LB empty until ~20k hands; early TS sample inflation (109 @ 1.6k vs +19 finalized); local hu004 +39.5 bb/100 vs profiled_counter vs v008 −12.1
+- **Wiki:** `@concepts/devfun-poker-competitor-github-recon-2026-06.md` — Option A section, maturity → validated
+- **Brief:** `agents/devfun-poker-arena/briefs/2026-07-01_k139-gin-hu004-option-a-sandbox-ship.md`
+- **Refs:** `references/researcher-track-sandbox.md`, `skills/sandbox/researcher-guide.md`
+- **K138 defer:** AI_pokergame YAML villain; deal-games solver provenance on toy JSON
+
 ## [2026-07-01] ingest | K138 — DFS/MARL/poker eval + settlement manipulation
 
 - **Sources (3):** GitHub Repository Evaluation Plan docx (20 URLs); arXiv 2606.29457 (deal games / PPO vs CFR); arXiv 2606.31675 (PM settlement manipulation)

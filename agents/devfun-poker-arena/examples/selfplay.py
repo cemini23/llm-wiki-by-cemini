@@ -204,6 +204,13 @@ BOT_POOL = {
     "lag": bot_balanced_lag,
 }
 
+try:
+    from ai_pokergame_villain import bot_ai_pokergame_hard  # noqa: WPS433
+
+    BOT_POOL["ai_pokergame_hard"] = bot_ai_pokergame_hard
+except ImportError:
+    pass
+
 
 # ─── pokerkit state → arena table dict adapter ──────────────────────────────
 
@@ -750,8 +757,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("--players", type=int, default=2,
                         help="Total players including hero, 2-6 (default 2 = HU)")
     parser.add_argument("--opponent", default="tight",
-                        choices=["tight", "loose", "random", "call", "mixed",
-                                 "rock", "maniac", "lag"],
+                        choices=sorted(set(BOT_POOL.keys()) | {"mixed"}),
                         help="Opponent profile (default tight)")
     parser.add_argument("--agent", default=None,
                         help="Path to a Python file defining decide(); "

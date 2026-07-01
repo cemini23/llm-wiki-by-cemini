@@ -30,6 +30,11 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-07-02 — cemini revert + audit tooling)
+
+- **Cursor audit fixes (2026-07-02)** — Live engine reverted **gin → cemini** (+19 vs +7.3 TS @ 5k). Shipped: gate via `harness_sandbox_agent.py`, pin-driven `CEMINI_SANDBOX_ENGINE`, bundle omits gin vendor when cemini, auto-submit env lock. **Blocked:** cemini `--replace` — Arena `sandbox_daily_limit`; timer at UTC 00/06/12/18:12. Active gin tranche2 `41651659` ~1323/5k (negative early TS).
+- **K139 ship (2026-07-01)** — gin/poker-bot v3 **`hu004`** vendored (Option A). PvP **`8545120c`** completed +7.3 TS. Superseded for live by cemini revert; gin retained for local gate villain. Brief `2026-07-01_k139-gin-hu004-option-a-sandbox-ship.md` §Update 2026-07-02.
+
 ## Current state (2026-07-01 — K138)
 
 - **K138 ingest (2026-07-01)** — GitHub eval docx (20 URLs) + 2 arXiv from inbox. **3 sources + 2 concepts + 4 entities + 4 updates.** espn-api Adopt MIT; draftfast CONDITIONAL-GO (no LICENSE); settlement manipulation (31675) → pm prod guard brief; deal games (29457) + AI_pokergame → poker briefs. **Phase-0:** `adopt_k138_phase0.sh`. Archive → egress-fi; inbox cleared.

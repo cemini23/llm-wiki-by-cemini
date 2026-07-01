@@ -35,13 +35,19 @@ uv run python examples/submit_sandbox_pvp.py --discard-active --competition-id "
 
 | Path | Contents |
 |------|----------|
-| `harness/strategy.py` | `choose_action(table)` → `cemini_decide.decide()` |
-| `assets/` | Policy + `_vendor/` deps |
-| `skills/` | Operator notes (`skills/sandbox/researcher-guide.md`) |
+| `harness/strategy.py` | `choose_action(table)` → `gin_hu004_bridge` or `cemini_decide` per `CEMINI_SANDBOX_ENGINE` |
+| `assets/cemini_decide.py` | **Live default** — K131b stack (`CEMINI_SANDBOX_ENGINE=cemini`) |
+| `assets/gin_hu004_bridge.py` | Option A — vendored gin v3 `hu004` (superseded for live; retained for local gate) |
+| `assets/_vendor/gin_hu004/hu004.py` | Full HU brain (~290KB); sync `scripts/sync_gin_hu004.sh`; omitted from bundle when engine=cemini |
+| `skills/` | Optional — **omit from zip** (Arena rejects `skills/` in bundle) |
 
 **Reasoning:** harness defaults `CEMINI_SANITIZE_OUTPUT=0` — Arena rejects generic reasoning on trajectory. Playground lobby may keep `CEMINI_SANITIZE_OUTPUT=1`.
 
 **Leaderboard:** ranks **best finalized** bot (TrueSkill μ−σ). Replace does not reset LB until new bot finishes a season.
+
+**S2 public LB visibility [TENTATIVE 2026-07-01]:** Discord (#researcher-track) — S2 runs longer seasons; **public leaderboard may show zero agents until ~20k hands**. Track score on agent page + `--poll` until gate clears. S1 leaders (~21k–31k hands) are not comparable cadence to early S2 5k seasons.
+
+**Active engine (2026-07-02):** `CEMINI_SANDBOX_ENGINE=cemini` (K131b). Pin: `config/researcher_sandbox_submit.pin.json` → `replace: true`, submission `41651659`, comp `cmr0jmqlt08bi13n8neory9xb`. **Gin Option A archived:** submission `8545120c` finished +7.3 TS @ 5k — superseded for live; vendored `hu004` remains for local gate villain when bundle omits it.
 
 **Prod auto-submit:** `cemini-researcher-sandbox-submit.timer` (00/06/12/18:12 UTC) → `scripts/run_researcher_sandbox_auto_submit.sh` → `examples/researcher_sandbox_auto_submit.py`: try `--replace`; on `sandbox_agent_already_running` **wait for active PvP to finish**, then submit **fresh** bundle (no replace). Pin: `config/researcher_sandbox_submit.pin.json`.
 
@@ -78,7 +84,8 @@ Wiki: `wiki/sources/devfun-researcher-track-discord-welcome-2026-06-18.md`
 | competitionId | name | notes |
 |---------------|------|-------|
 | `cmqf827h30u7dfca3x2aqvzjv` | Playground S3 | 6-max PVP — optional HUD intel |
-| `cmqqqs05i1u7ppnu7stqbw7d8` | Researcher HU sandbox | static-agent PvP submit |
+| `cmqqqs05i1u7ppnu7stqbw7d8` | Researcher HU sandbox (S1) | static-agent PvP submit |
+| `cmr0jmqlt08bi13n8neory9xb` | Researcher HU sandbox — beta **S2** | **current** submit target |
 | `seed_poker_eval_s1` | Eval S1 | PVE 500h panel — **wrong cadence** for Researcher |
 
 ## Local gates (before each submit)
@@ -107,7 +114,7 @@ The official guide documents **arena-tool MCP** (`join_pve`, `submit_action` wit
 
 ## Competitor OSINT
 
-See `wiki/concepts/devfun-poker-competitor-github-recon-2026-06.md` — **gin/poker-bot** v008 ported (`CEMINI_GIN_V008=1` with gin lane).
+See `wiki/concepts/devfun-poker-competitor-github-recon-2026-06.md` — **gin/poker-bot** v008 in `gin_style.py` (`CEMINI_GIN_V008=1`); **full HU stack** vendored as `hu004` for optional local gate (`CEMINI_SANDBOX_ENGINE=gin_hu004`). Live sandbox reverted to cemini 2026-07-02. Ship brief: `briefs/2026-07-01_k139-gin-hu004-option-a-sandbox-ship.md`.
 
 ## Prod posture
 

@@ -1,4 +1,4 @@
-"""Arena static-agent entrypoint — maps sandbox choose_action → cemini_decide."""
+"""Arena static-agent entrypoint — cemini_decide or gin hu004 (Option A)."""
 from __future__ import annotations
 
 import os
@@ -7,6 +7,11 @@ import time
 from pathlib import Path
 from typing import Any, Optional
 
+_ENGINE = os.environ.get("CEMINI_SANDBOX_ENGINE", "cemini").strip().lower()
+
+if os.environ.get("CEMINI_SANDBOX_LOG_ENGINE") == "1":
+    print(f"sandbox engine: {_ENGINE}", file=sys.stderr)
+
 _ASSETS = Path(__file__).resolve().parent.parent / "assets"
 _VENDOR = _ASSETS / "_vendor"
 if _VENDOR.is_dir() and str(_VENDOR) not in sys.path:
@@ -14,33 +19,37 @@ if _VENDOR.is_dir() and str(_VENDOR) not in sys.path:
 if _ASSETS.is_dir() and str(_ASSETS) not in sys.path:
     sys.path.insert(0, str(_ASSETS))
 
-# Researcher HU sandbox posture (server-side; no prod .env on Arena runner).
-os.environ.setdefault("CEMINI_TABLE_FORMAT", "hu")
-os.environ.setdefault("CEMINI_RESEARCHER_MODE", "1")
-os.environ.setdefault("CEMINI_MAFP_CHART", "1")
-os.environ.setdefault("CEMINI_TRAJECTORY_BOUND", "1")
-os.environ.setdefault("CEMINI_VERIFIER_BON", "1")
-os.environ.setdefault("CEMINI_GIN_STYLE", "1")
-os.environ.setdefault("CEMINI_GIN_STYLE_PREFLOP", "1")
-os.environ.setdefault("CEMINI_GIN_STYLE_POSTFLOP", "1")
-os.environ.setdefault("CEMINI_GIN_V008", "1")
-os.environ.setdefault("CEMINI_GIN_V2_EXPLOITS", "1")
-# Sandbox trajectory rejects generic reasoning (docs.dev.fun researcher guide).
 os.environ.setdefault("CEMINI_SANITIZE_OUTPUT", "0")
-os.environ.setdefault("CEMINI_MIX_POSTFLOP", "1")
-os.environ.setdefault("CEMINI_S1B_EXPLOIT", "1")
-os.environ.setdefault("CEMINI_NEMESIS_EXPLOIT", "1")
-os.environ.setdefault("CEMINI_ISO_PASSIVE_LP", "1")
+os.environ.setdefault("POKER_BOT_STRATEGY", "hu004")
+
+if _ENGINE in ("cemini", "cemini_decide", "default"):
+    os.environ.setdefault("CEMINI_TABLE_FORMAT", "hu")
+    os.environ.setdefault("CEMINI_RESEARCHER_MODE", "1")
+    os.environ.setdefault("CEMINI_MAFP_CHART", "1")
+    os.environ.setdefault("CEMINI_TRAJECTORY_BOUND", "1")
+    os.environ.setdefault("CEMINI_VERIFIER_BON", "1")
+    os.environ.setdefault("CEMINI_GIN_STYLE", "1")
+    os.environ.setdefault("CEMINI_GIN_STYLE_PREFLOP", "1")
+    os.environ.setdefault("CEMINI_GIN_STYLE_POSTFLOP", "1")
+    os.environ.setdefault("CEMINI_GIN_V008", "1")
+    os.environ.setdefault("CEMINI_GIN_V2_EXPLOITS", "1")
+    os.environ.setdefault("CEMINI_MIX_POSTFLOP", "1")
+    os.environ.setdefault("CEMINI_S1B_EXPLOIT", "1")
+    os.environ.setdefault("CEMINI_NEMESIS_EXPLOIT", "1")
+    os.environ.setdefault("CEMINI_ISO_PASSIVE_LP", "1")
 
 
 def _import_decide():
+    if _ENGINE in ("gin", "gin_hu004", "hu004"):
+        from gin_hu004_bridge import decide  # noqa: WPS433
+
+        return decide
     from cemini_decide import decide  # noqa: WPS433
 
     return decide
 
 
 def _deadline_s(table: dict) -> float:
-    """Use table deadline when present; floor at 2s for sim budget."""
     raw = table.get("actionDeadlineAt") or table.get("deadlineAt")
     if raw is not None:
         try:
@@ -66,7 +75,6 @@ def _deadline_s(table: dict) -> float:
 
 
 def _action_payload(out: dict[str, Any], action: str) -> dict[str, Any]:
-    """Normalize decide() output for Arena static-agent + trajectory rubric."""
     payload: dict[str, Any] = {"action": action}
     if out.get("amount") is not None:
         payload["amount"] = out["amount"]
@@ -76,7 +84,6 @@ def _action_payload(out: dict[str, Any], action: str) -> dict[str, Any]:
     reasoning = out.get("reasoning") or out.get("reasoning_text")
     if reasoning is not None:
         payload["reasoning"] = reasoning
-        # arena-tool docs use reasoning_text; static-agent accepts reasoning — send both.
         payload["reasoning_text"] = reasoning
     return payload
 
@@ -84,6 +91,8 @@ def _action_payload(out: dict[str, Any], action: str) -> dict[str, Any]:
 def choose_action(table: dict) -> Any:
     decide = _import_decide()
     out = decide(table, deadline_s=_deadline_s(table))
+    if _ENGINE in ("gin", "gin_hu004", "hu004"):
+        return out
     try:
         from output_sanitize import maybe_sanitize_action  # noqa: WPS433
 

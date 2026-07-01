@@ -72,7 +72,7 @@ run_selfplay_bundle() {
   CEMINI_GIN_STYLE=1 CEMINI_GIN_STYLE_PREFLOP=1 CEMINI_GIN_STYLE_POSTFLOP=1 CEMINI_GIN_V008=1 \
     CEMINI_S1B_EXPLOIT=1 CEMINI_RESEARCHER_MODE=1 \
     uv run python examples/selfplay.py \
-    --agent examples/cemini_decide.py \
+    --agent examples/harness_sandbox_agent.py \
     --hands "$HANDS" \
     --players "$players" \
     --opponent "$opponent" \

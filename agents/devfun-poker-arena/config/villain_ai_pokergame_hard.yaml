@@ -1,0 +1,28 @@
+# K138 — extracted from PENEEEEE732/AI_pokergame HardStrategy (MIT).
+# Reference villain only; not Arena decide() merge. See examples/ai_pokergame_villain.py
+
+id: ai_pokergame_hard
+source: https://github.com/PENEEEEE732/AI_pokergame backend/app/poker/ai.py HardStrategy
+license: MIT
+
+preflop:
+  hand_potential:
+    pair: "0.6 + rank/40"
+    suited_connector_gap1: "0.5 + rank/100"
+    both_broadway_ge_10: "0.5 + (r1+r2)/100"
+    default: "(r1+r2)/50"
+  high_stakes_fold:
+    call_over_stack_ratio: 0.4
+    min_potential: 0.85
+  strong_open:
+    min_potential: 0.7
+    max_current_bet_bb_mult: 2.0
+    raise_pot_fraction: 0.7
+
+postflop:
+  pot_odds_call:
+    min_potential_over_pot_odds: true
+  semi_bluff:
+    probability: 0.2
+    requires_current_bet_zero: true
+  default: fold_if_no_check

@@ -48,6 +48,9 @@ if [[ "${DRY_RUN}" == "1" ]]; then
 fi
 
 log "auto-submit orchestrator start"
+if [[ -z "${CEMINI_SANDBOX_ENGINE:-}" && -f config/researcher_sandbox_submit.pin.json ]]; then
+  export CEMINI_SANDBOX_ENGINE="$(python3 -c "import json; print(json.load(open('config/researcher_sandbox_submit.pin.json')).get('sandboxEngine','cemini'))")"
+fi
 set +e
 run_py examples/researcher_sandbox_auto_submit.py --state-file "${STATE}" 2>&1 | tee -a "${LOG}"
 EXIT=$?

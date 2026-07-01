@@ -170,9 +170,13 @@ def find_active_pvp_submission(
         top = str(full.get("status") or "").lower()
         if th > 0 and ch >= th:
             return
-        if top in ("succeeded", "finished", "failed", "error"):
+        pvp_in_flight = st == "active" or (
+            th > 0 and ch < th and st not in ("finished", "failed", "error")
+        )
+        # Benchflow smoke can be Succeeded (5/5) while PvP season still runs.
+        if top in ("succeeded", "finished", "failed", "error") and not pvp_in_flight:
             return
-        if st == "active" or (th > 0 and ch < th and st not in ("finished", "failed", "error")):
+        if pvp_in_flight:
             candidates.append(full)
 
     for sid in _submission_ids_from_pin(pin or {}):
@@ -327,6 +331,12 @@ def run_auto(
     prev_state = read_state(state_path)
     now = time.time()
 
+    engine = str(
+        pin.get("sandboxEngine") or os.environ.get("CEMINI_SANDBOX_ENGINE") or "cemini"
+    ).strip().lower()
+    os.environ["CEMINI_SANDBOX_ENGINE"] = engine
+    print(f"==> sandboxEngine={engine} (from pin)")
+
     print(f"==> Building {bundle}")
     build_bundle(bundle)
     bundle_sha = __import__("hashlib").sha256(bundle.read_bytes()).hexdigest()
@@ -455,6 +465,22 @@ def run_auto(
             print(json.dumps(skip, indent=2))
             write_state(state_path, skip)
             return 0
+        if exc.code == "sandbox_agent_already_running":
+            active = find_active_pvp_submission(
+                competition_id, pin=pin, state=prev_state
+            )
+            if active and not pvp_is_finished(active):
+                payload = waiting_payload(
+                    competition_id=competition_id,
+                    bundle=bundle,
+                    active=active,
+                    bundle_sha=bundle_sha,
+                    now=now,
+                )
+                print(json.dumps(payload, indent=2))
+                write_state(state_path, payload)
+                print("==> WAIT: fresh submit rejected — active PvP still running")
+                return 0
         if exc.status_code in TRANSIENT_HTTP:
             skip = {
                 "status": "skipped",

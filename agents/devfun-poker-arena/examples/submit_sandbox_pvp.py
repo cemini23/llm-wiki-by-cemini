@@ -54,6 +54,10 @@ def _vendor_packages() -> list[str]:
     return ["treys", "httpx", "httpcore", "h11", "certifi", "idna", "anyio", "sniffio", "dotenv"]
 
 
+def _sandbox_engine() -> str:
+    return os.environ.get("CEMINI_SANDBOX_ENGINE", "cemini").strip().lower()
+
+
 def build_bundle(out_zip: Path) -> Path:
     """Zip harness/, assets/, skills/ per docs.dev.fun researcher guide."""
     harness = _AGENT_ROOT / "harness" / "strategy.py"
@@ -103,6 +107,16 @@ def build_bundle(out_zip: Path) -> Path:
                     shutil.copytree(src, vendor / pkg, dirs_exist_ok=True)
                 elif src.with_suffix(".py").is_file():
                     shutil.copy2(src.with_suffix(".py"), vendor / f"{pkg}.py")
+        engine = _sandbox_engine()
+        if engine in ("gin", "gin_hu004", "hu004"):
+            gin_hu004 = _AGENT_ROOT / "vendor" / "gin_hu004" / "hu004.py"
+            if gin_hu004.is_file():
+                dest = assets / "_vendor" / "gin_hu004"
+                dest.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(gin_hu004, dest / "hu004.py")
+                init_py = _AGENT_ROOT / "vendor" / "gin_hu004" / "__init__.py"
+                if init_py.is_file():
+                    shutil.copy2(init_py, dest / "__init__.py")
 
         out_zip.parent.mkdir(parents=True, exist_ok=True)
         if out_zip.exists():
