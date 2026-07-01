@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-01] ingest | MORL re-drop + SH4 press + ProtocolBench defer
+
+- Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-07-01.md (2606.26397 re-drop); archived; inbox cleared
+- News: @sources/stronghold-4-public-demo-2026-06-24.md (AZ World hands-on + GWO wishlists)
+- News: @sources/protocolbench-llm-multiagent-protocol-shelf-2026-06-24.md → defer @ccc-wiki
+- Phase-0: none
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity)
+- Sweep: @sweeps/2026-07-01-daily.md
+
+---
+
 ## [2026-06-30] ingest | StarCraft influence-map HRL + PCGODOT Phase-0
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-06-30.md (4 reject + **2606.30092 ingest**); archived; inbox cleared

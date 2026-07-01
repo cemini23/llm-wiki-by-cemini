@@ -229,4 +229,6 @@ Catalog of all wiki pages. Updated on each ingest.
 | [arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30](sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md) | read |
 | [pcgodot-phase-0-audit-2026-06-30](sources/pcgodot-phase-0-audit-2026-06-30.md) | read |
 | [ramen-aura-15-commercial-shelf-2026-06-26](sources/ramen-aura-15-commercial-shelf-2026-06-26.md) | read |
+| [inbox-arxiv-reject-batch-2026-07-01](sources/inbox-arxiv-reject-batch-2026-07-01.md) | read |
+| [protocolbench-llm-multiagent-protocol-shelf-2026-06-24](sources/protocolbench-llm-multiagent-protocol-shelf-2026-06-24.md) | read |
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |

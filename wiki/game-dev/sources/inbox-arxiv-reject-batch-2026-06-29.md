@@ -5,6 +5,7 @@ tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, re-drop]
 related:
   - sources/inbox-arxiv-reject-batch-2026-06-30.md
+  - sources/inbox-arxiv-reject-batch-2026-07-01.md
   - sources/inbox-arxiv-reject-batch-2026-06-28.md
   - sources/inbox-arxiv-reject-batch-2026-06-27.md
   - sources/unreal-engine-58-mcp-shelf-2026-06-24.md

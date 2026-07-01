@@ -7,12 +7,13 @@ related:
   - entities/games/stronghold-series.md
   - concepts/stronghold-systems-inventory.md
   - sources/stronghold-franchise-best-of-research-2026-06-18.md
+  - sources/stronghold-4-public-demo-2026-06-24.md
 read_status: read
 source_type: encyclopedia
 source_url: https://en.wikipedia.org/wiki/Stronghold_(series)
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-07-01
 ---
 
 ## Relations
@@ -29,7 +30,7 @@ Wikipedia franchise overview for release timeline, engine generations, and spin-
 
 - Engine generation split (2D isometric vs Vision vs later 3D vs UE5 Stronghold 4)
 - Release dates: Definitive Edition (2023), Crusader DE (2025), Warlords (2021), Castles mobile (2024)
-- Devolver ownership note; Stronghold 4 demo June 2026 [NEEDS VERIFICATION 2026-06-20]
+- Devolver ownership note; Stronghold 4 public demo June 2026 [CONFIRMED — @sources/stronghold-4-public-demo-2026-06-24.md]
 
 ### Not used for
 
