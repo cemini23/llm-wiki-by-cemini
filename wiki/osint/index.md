@@ -12,8 +12,20 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **502 canonical stubs** (K137 OpenClaw ecosystem eval +1 source +6 entities)
+Total: **511 canonical stubs** (K138 DFS/MARL/poker eval + settlement manipulation +1 source +4 entities +2 concepts)
 
+
+### k138-ingest (10)
+
+- [GitHub Repository Evaluation Plan.docx — DFS / MARL / poker / OSINT (2026-07-01)](sources/eval-github-repo-plan-dfs-marl-poker-osint-2026-07-01.md) — 20 URLs; espn-api Adopt; draftfast CONDITIONAL-GO. — `docx` [+k138, +dfs, +poker]
+- [Takeover auction diligence — arXiv 2606.29457](sources/arxiv-takeover-auction-diligence-2606.29457-2026-07-01.md) — PPO vs CFR on deal games; diligence signal economics. — `pdf` [+k138, +game-theory]
+- [Settlement manipulation in PM — arXiv 2606.31675](sources/arxiv-settlement-manipulation-pm-2606.31675-2026-07-01.md) — 5-min BTC spot push; horizon remedy. — `pdf` [+k138, +polymarket]
+- [Settlement manipulation in prediction markets (K138)](concepts/settlement-manipulation-prediction-markets.md) — pm-kalshi NO-GO on 5-min lanes. — concept [+k138]
+- [Takeover auction diligence and solvers (K138)](concepts/takeover-auction-diligence-solvers.md) — exact vs PG crossover. — concept [+k138]
+- [espn-api — ESPN Fantasy wrapper](entities/tools/espn-api.md) — K138 Adopt MIT → CeminiDFS. — entity [+k138]
+- [draftfast — DFS lineup optimizer](entities/tools/draftfast.md) — K138 CONDITIONAL-GO (no LICENSE). — entity [+k138]
+- [AI_pokergame — tiered Hold'em AI](entities/tools/ai-pokergame.md) — K138 Steal-from MIT. — entity [+k138]
+- [sportsbook-api (api-evangelist)](entities/tools/sportsbook-api-evangelist.md) — apis.json OSINT index. — entity [+k138]
 
 ### k137-ingest (7)
 

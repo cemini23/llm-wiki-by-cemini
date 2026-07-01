@@ -52,6 +52,8 @@ related:
   - sources/analyzing-github-projects-agentic-infra-2026-05-21.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - concepts/cme-settlement-mechanics-for-prediction-markets.md
+  - concepts/settlement-manipulation-prediction-markets.md
+  - sources/arxiv-settlement-manipulation-pm-2606.31675-2026-07-01.md
   - entities/tools/polymarket-near-resolution-bot.md
   - sources/tool-eval-50urls-polymarket-kalshi-license-false-negative-2026-05-21.md
   - sources/trading-posts-oil-polymarket-html-dex-sniping-2026-05-21.md
@@ -90,7 +92,7 @@ related:
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-06-24
+updated: 2026-07-01
 ---
 
 ## Relations
@@ -313,8 +315,22 @@ A full production-bot spec the article supplies as a copy-paste Claude prompt. R
 > **Paper mode** — default; three explicit flags to enable live (`--live --confirm --i-understand-risks`); paper trades logged to SQLite.
 > [Source: posts-2026-05-18.docx — Post 6, @adiix_official]
 
+## K138 — settlement manipulation hazard (2606.31675)
+
+@sources/arxiv-settlement-manipulation-pm-2606.31675-2026-07-01.md documents **cash-settlement manipulation** on Polymarket **5-min BTC up/down**: final-10s Binance spot flow spikes and post-settlement reversals; wealth transfer from PM liquidity traders to manipulators. **15-min horizon largely attenuates** the footprint.
+
+**Bot posture overlay** (supplements Type-1 latency playbook above):
+
+| Lane | K138 gate |
+|------|-----------|
+| 5-min BTC/ETH up/down directional | **NO-GO** for prod bot — structural manipulation + adverse LP odds |
+| 15-min crypto up/down | Proceed only with manipulation monitor + wider settlement-window quotes |
+| Election / sports oracle markets | Distinct mechanism — do not generalize K138 model without read |
+
+Brief: `briefs/2026-07-01_k138-pm-settlement-manipulation-guard-prod.md`
+
 ## Dead Ends
 
 - RSI + MACD + divergence-layer stacks — author explicitly flags as load-bearing failure pattern across the 1000+ bots he's seen break.
-- 5-minute BTC windows for beginners — too noisy; author recommends 15-min as starting point.
+- 5-minute BTC windows for beginners — too noisy; author recommends 15-min as starting point; **K138 adds structural manipulation reason to avoid 5-min asset-oracle lanes entirely**.
 - Trusting public PnL profiles without on-chain verification — author flags that competitor "magic 0¢-100% wallets" are usually Polymarket's NegRisk contract infrastructure, not real bots.

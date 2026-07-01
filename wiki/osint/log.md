@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-07-01] ingest | K138 — DFS/MARL/poker eval + settlement manipulation
+
+- **Sources (3):** GitHub Repository Evaluation Plan docx (20 URLs); arXiv 2606.29457 (deal games / PPO vs CFR); arXiv 2606.31675 (PM settlement manipulation)
+- **Concepts (2):** `@concepts/settlement-manipulation-prediction-markets.md`, `@concepts/takeover-auction-diligence-solvers.md`
+- **Entities (4):** espn-api **Adopt**; draftfast **CONDITIONAL-GO**; ai-pokergame + sportsbook-api-evangelist **Steal-from**
+- **Updates (4):** polymarket-bot-architecture, polymarket platform, nash-equilibrium-solver-selection, wiki-tooling-evaluation
+- **Phase-0:** `scripts/adopt_k138_phase0.sh`
+- **Briefs:** prod pm settlement guard; poker deal-games + AI_pokergame; CeminiDFS espn-api + draftfast; game-dev CastleSimWeb reference
+- **Archive:** egress-fi osint (3 inbox files); inbox cleared
+
 ## [2026-06-30] ingest | K137 — OpenClaw ecosystem multi-wiki eval
 
 - **Source (1):** `Multi-Wiki Link Evaluation.docx` — 20 URLs (OpenClaw extensions + DeepSpec)

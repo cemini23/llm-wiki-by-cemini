@@ -11,14 +11,17 @@ related:
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - concepts/multi-agent-fictitious-play-llm.md
   - concepts/team-zero-sum-games-complexity.md
+  - concepts/takeover-auction-diligence-solvers.md
+  - sources/arxiv-takeover-auction-diligence-2606.29457-2026-07-01.md
 maturity: draft
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-01
 ---
 
 ## Relations
 
 - @sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md — primary source (Leal, 2606.28308)
+- @concepts/takeover-auction-diligence-solvers.md — K138 PPO vs exact CFR on deal auctions (2606.29457)
 - @concepts/extensive-form-games-stochastic-action-sets.md — CFR theory cluster (K122)
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — M₇ strategic-mixing axis
 

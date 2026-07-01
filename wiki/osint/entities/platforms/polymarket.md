@@ -36,6 +36,8 @@ related:
   - sources/polymarket-microstructure-anatomy-2604.24366.md
   - sources/polymarket-nba-arbitrage-2605.00864.md
   - concepts/polymarket-bot-architecture.md
+  - concepts/settlement-manipulation-prediction-markets.md
+  - sources/arxiv-settlement-manipulation-pm-2606.31675-2026-07-01.md
   - concepts/polymarket-updown-indicator-stack.md
   - concepts/polymarket-wallet-alpha-pipeline.md
   - entities/tools/warproxxx-poly-data.md
@@ -193,6 +195,10 @@ The 2026-05-13 ingest (@AlterEgo_eth + @de1lymoon) formalized two complementary 
 - `@concepts/insider-detection-entropy-collapse.md` — defensive sub-signal; 3σ entropy drop + no-news ⇒ stay out
 - `@concepts/kelly-sizing-quarter.md` — universal sizing primitive
 - `@entities/tools/a-stock-data-toolkit.md` — quant-finance tool entity
+
+## K138 — 5-min BTC settlement manipulation (2026-07-01)
+
+@sources/arxiv-settlement-manipulation-pm-2606.31675-2026-07-01.md — empirical footprint on Polymarket **5-min BTC up/down** (Binance spot push at close). See @concepts/settlement-manipulation-prediction-markets.md. Cemini read-only posture unchanged; **prod bot NO-GO** on 5-min asset-oracle lanes.
 
 ## Snippets
 
