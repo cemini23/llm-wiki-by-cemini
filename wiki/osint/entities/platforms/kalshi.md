@@ -61,9 +61,11 @@ related:
   - concepts/world-cup-tournament-phases-lp-strategy.md
   - sources/gemini-wc-knockout-market-map-2026-05-30.md
   - concepts/gambling-wiki-federation.md
+  - sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md
+  - concepts/kalshi-implied-macro-belief-distributions.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-06-09
+updated: 2026-07-02
 ---
 
 ## Relations
@@ -150,6 +152,10 @@ Kalshi's combo (parlay) market operates via a request-for-quote (RFQ) protocol: 
 Kalshi's current configuration (open dealer participation + relaxed collateral) achieves liquidity consistency and information aggregation, but leaves tail exposures unconstrained. Empirically, this manifests as **Fréchet upper-bound violations**: 39% of sampled two-leg Kalshi combo quotes exceed min(P(A), P(B)), which is impossible under any joint probability distribution. Combo bid-ask spreads average 11.89 cents vs. 5.12 cents for base markets — more than 2× wider.
 
 The ParlayMarket design (Ising-model AMM with shadow trades + composite-likelihood SGD) provides a correlation-aware alternative. In historical replay on Kalshi's 2026-03-07 NBA slate (732 base markets, 5,918 combos), the standalone market-maker achieves Sharpe 1.0049 vs. Kalshi native 0.7151 — a ~40% risk-adjusted improvement. The model can be deployed as a drop-in quoting engine layered on top of existing Kalshi RFQ without replacing the platform. See @concepts/parlay-market-making.md for the architectural primitive.
+
+### CPI threshold ladders — distributional beliefs (K140)
+
+@sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md — adjacent CPI/core CPI threshold contracts recover **release-level distributions** (tail mass, uncertainty) beyond Reuters point consensus. See @concepts/kalshi-implied-macro-belief-distributions.md. Bot hook: ingest threshold ladder prices pre-release as tail-risk overlay.
 
 ## Snippets
 

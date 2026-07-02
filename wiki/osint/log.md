@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-07-02] ingest | K140 — Kalshi macro beliefs + Zeta* path planning + AI-native games
+
+- **Sources (3):** arXiv 2606.30040 (Kalshi CPI distributions), 2607.00065 (Zeta* any-angle), 2607.00527 (AI-native games survey)
+- **Concepts (2):** `@concepts/kalshi-implied-macro-belief-distributions.md`, `@concepts/ai-native-games-taxonomy.md`
+- **Updates (2):** `@concepts/castle-sim-pathfinding-steals.md`, `@entities/platforms/kalshi.md`
+- **Phase-0:** `scripts/adopt_k140_phase0.sh` — REFERENCE only
+- **Briefs:** prod Kalshi CPI tail; game-dev Zeta* + G/N taxonomy; poker mechanical-invariants rubric
+- **Archive:** egress-fi osint (3 PDFs); inbox cleared
+
 ## [2026-07-02] ship | K131b finish + sandbox ops P0 (GLM/Kimi audit)
 
 - **Ops:** pin self-heal in auto-submit, `replace:false`, closed-set `pvp_is_finished`, retry guard, timer git-rev + bundle verify, season counters
@@ -57,7 +66,12 @@
 - **Logic:** Pre-Jul 7 close cleaner than post-denial on headline, price, indemnity/escrow, federal RE reps & warranties; supremacy = backstop not preferred path
 - **Wiki:** `@concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md` — pre-hearing vs post-hearing table; Cal City conditional tail **~4–8%**
 
-## [2026-06-30] research | Cal City Jul 7 dual hearings (KGET) + announcement-timing framework
+## [2026-07-02] research | Bonta Jun 15 letter PDF — application swap + zoning/CUP attacks
+
+- **Source:** [CA AG letter + exhibits (Jun 15, 2026)](https://oag.ca.gov/system/files/attachments/press-docs/BEJ%20Letter%20to%20California%20City%20Regarding%20CCDF%20Entitlement%20Appeal%20With%20Exhibits%20%2806.15.2026%29.pdf) — 88 pp; PDF parsed locally
+- **Verified:** July 2025 apps described ICE detention → Aug 2025 rewrite omitted ICE, cited USMS; O/RA zoning; prison ≠ civil detention; CUP 97-01 = 2,304-bed prison cap; 2,816 = erroneous CUP 98-02 add
+- **Updated:** `@concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md` — Bonta legal-attacks table; reinforces pre-Jul 7 close > post-denial for federal buyer diligence (not stock timing alone)
+
 
 - **Source:** [KGET 17 News — Jul 7 appeal hearings](https://www.kget.com/news/local-news/california-city-officials-to-reconsider-ice-detention-facility-approval-during-appeal-hearings-july-7/) — BL 3:30 p.m. Grayson (no public comment); PC 6:00 p.m. de novo (public comment); appellant Dignity Not Detention Coalition
 - **Friend intel:** objective-dependent timing — Jul 2–3 media minimization vs Mon/Tue premarket deleveraging rerating vs pre-Jul 7 local preemption

@@ -12,8 +12,16 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **511 canonical stubs** (K138 DFS/MARL/poker eval + settlement manipulation +1 source +4 entities +2 concepts)
+Total: **520 canonical stubs** (K140 macro beliefs + path planning + AI-native survey +3 sources +2 concepts +2 updates)
 
+
+### k140-ingest (8)
+
+- [Kalshi macroeconomic beliefs — arXiv 2606.30040](sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md) — CPI threshold ladders; tail signal beyond Reuters. — `pdf` [+k140, +kalshi]
+- [Zeta* any-angle path planning — arXiv 2607.00065](sources/arxiv-zeta-any-angle-path-planning-2607.00065-2026-07-02.md) — optimal grid paths static+dynamic. — `pdf` [+k140, +castle-sim]
+- [AI Native Games survey — arXiv 2607.00527](sources/arxiv-ai-native-games-survey-2607.00527-2026-07-02.md) — G/N taxonomy n=53 corpus. — `pdf` [+k140, +game-dev]
+- [Kalshi-implied macro belief distributions (K140)](concepts/kalshi-implied-macro-belief-distributions.md) — tail overlay for pm-kalshi. — concept [+k140]
+- [AI-native games G/N taxonomy (K140)](concepts/ai-native-games-taxonomy.md) — mechanical invariants. — concept [+k140]
 
 ### k138-ingest (10)
 

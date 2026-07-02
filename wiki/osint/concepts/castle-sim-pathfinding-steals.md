@@ -5,6 +5,7 @@ tags: [concept, game-dev, pathfinding, castle-sim, multi-criteria, k126]
 keywords: [AHP, genetic-algorithm, A-star, siege-ai, godot-navigation, route-diversity, castle-sim]
 related:
   - sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md
+  - sources/arxiv-zeta-any-angle-path-planning-2607.00065-2026-07-02.md
   - sources/links-6-22-tool-eval.md
   - concepts/scope-symbolic-world-planning.md
   - concepts/castle-sim-rts-micromanagement-steals.md
@@ -12,12 +13,13 @@ related:
   - entities/tools/mattpocock-skills.md
 maturity: draft
 created: 2026-06-22
-updated: 2026-06-30
+updated: 2026-07-02
 ---
 
 ## Relations
 
 - @sources/arxiv-continuum-robots-resilience-2606.20495-2026-06-22.md — K126 REFERENCE source for AHP + GA vs A* tradeoffs
+- @sources/arxiv-zeta-any-angle-path-planning-2607.00065-2026-07-02.md — K140 optimal any-angle Zeta* / Zeta*-SIPP
 - @concepts/castle-sim-rts-micromanagement-steals.md — K136 squad-level influence-map + cluster scripts
 - @concepts/scope-symbolic-world-planning.md — K129 evolving symbolic world (complements route scoring)
 - @sources/links-6-22-tool-eval.md — co-primary K126 ingest batch
@@ -50,6 +52,19 @@ Castle-sim Godot vertical slice needs siege AI that picks **diverse, resilient a
 2. Score each with weighted sum (start weights: distance 0.4, exposure 0.3, diversity 0.2, arrival 0.1)
 3. Pick argmax; tie-break with seed for replay determinism in tests
 4. Playtest parity: log chosen route family per seed in Stagehand smoke
+
+### K140 — optimal any-angle (Zeta*)
+
+@sources/arxiv-zeta-any-angle-path-planning-2607.00065-2026-07-02.md adds **provably shortest** grid paths (vs Theta* heuristics):
+
+| Algorithm | Regime | Steal |
+|-----------|--------|-------|
+| **Zeta*** | Static siege maps | Elliptical expansion + FoV visibility — Anya-comparable optimality |
+| **Zeta*-SIPP** | Moving defenders / dynamic obstacles | >20× vs TO-AA-SIPP; preferred when units block lanes mid-route |
+
+Godot sketch: navigation grid + dynamic obstacle layer → evaluate Zeta*-SIPP pattern before falling back to A* + post-hoc smooth. No code repo at ingest `[NEEDS VERIFICATION 2026-07-02]`.
+
+Brief: `../projects/Game Dev wiki/briefs/2026-07-02_k140-zeta-any-angle-path-planning-steal.md`
 
 ### Out of scope
 
