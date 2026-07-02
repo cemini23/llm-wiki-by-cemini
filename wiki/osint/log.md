@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-07-02] ship | K140 + K136 poker harness steals
+
+- **K140 mechanical invariants:** `examples/sandbox_mechanical_invariants.py` — P0 crosswalk + P1 pre-axis gate in `sandbox_tri_verifier.score_action()`
+- **K136 Tool-RL collapse:** `examples/tool_rl_collapse_detector.py` — polluted/collapsed format gate wired as `tool_rl_collapse` tri-verifier dimension
+- **Runner:** `scripts/run_sandbox_tri_verifier.sh` — collapse + optional mechanical-invariant tests
+- **Arena:** live submit `0175ce41-8b0a-4df6-b794-dbb6c7413022` (pin `replace:false`)
+- **Briefs:** `agents/devfun-poker-arena/briefs/2026-07-02_k140-mechanical-invariants-rubric-steal.md`, `agents/devfun-poker-arena/briefs/2026-07-02_k136-tool-rl-structural-collapse-steal.md`
+
 ## [2026-07-02] ingest | K140 — Kalshi macro beliefs + Zeta* path planning + AI-native games
 
 - **Sources (3):** arXiv 2606.30040 (Kalshi CPI distributions), 2607.00065 (Zeta* any-angle), 2607.00527 (AI-native games survey)

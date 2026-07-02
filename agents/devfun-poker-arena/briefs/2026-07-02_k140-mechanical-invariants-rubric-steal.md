@@ -30,6 +30,18 @@ Document in researcher-guide.md § eval invariants.
 
 - Building AI-native NLHE (Arena is not LLM-native core loop)
 
+## Shipped (2026-07-02)
+
+| Item | Artifact |
+|------|----------|
+| **P0 — doc / crosswalk** | `examples/sandbox_mechanical_invariants.py` — goals · rules · state · feedback · pacing (deferred) · agency; invariant hazard vocabulary |
+| **P1 — verifier gate** | `verify_mechanical_invariants()` called in `sandbox_tri_verifier.score_action()` before Fara axis scoring; violations logged as `invariant:*` hazards (separate from strategic quality) |
+| **Runner** | `scripts/run_sandbox_tri_verifier.sh` — optional `test_sandbox_mechanical_invariants.py` when present |
+
+**Live sandbox:** pin `activeSubmissionId` `0175ce41-8b0a-4df6-b794-dbb6c7413022` (`replace:false`).
+
+**Deferred:** `skills/sandbox/researcher-guide.md` § eval invariants prose (module doc is canonical for now).
+
 ## Sources
 
 - @wiki/concepts/ai-native-games-taxonomy.md

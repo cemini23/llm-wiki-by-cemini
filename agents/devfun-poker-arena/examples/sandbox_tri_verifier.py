@@ -16,6 +16,9 @@ import json
 import re
 from typing import Any, Optional
 
+from sandbox_mechanical_invariants import verify_mechanical_invariants
+from tool_rl_collapse_detector import verify_action_payload_collapse
+
 # Import FALLBACK_REASONING patterns from output_sanitize for is_generic_reasoning
 # Duplicated here to avoid import dependency in sandbox bundle context
 FALLBACK_REASONING = '{vr: "std", ke: "legal", pp: "pot control"}'
@@ -308,6 +311,13 @@ def score_action(
         eff_kwargs["soft_ratio"] = thresholds.get("soft_ratio", _EFFICIENCY_SOFT_RATIO)
         eff_kwargs["max_poll_loops"] = thresholds.get("max_poll_loops", _MAX_IDLE_POLL_LOOPS)
 
+    mechanical_invariants = verify_mechanical_invariants(
+        table,
+        action,
+        allowed_actions,
+        action_payload=action_payload,
+    )
+
     correctness = verify_correctness(
         action,
         allowed_actions,
@@ -316,20 +326,37 @@ def score_action(
     )
     efficiency = verify_efficiency(elapsed_s, deadline_s, poll_loops, **eff_kwargs)
     critical_point = verify_critical_point(action_payload, table)
+    collapse_result = verify_action_payload_collapse(action_payload)
+    tool_rl_collapse = {
+        "pass": collapse_result["mode"] == "ok",
+        "hazard": collapse_result["hazards"][0] if collapse_result["hazards"] else None,
+        "mode": collapse_result["mode"],
+        "hazards": collapse_result["hazards"],
+        "details": collapse_result["details"],
+    }
 
     all_pass = (
-        correctness.get("pass", False)
+        mechanical_invariants.get("pass", False)
+        and correctness.get("pass", False)
         and efficiency.get("pass", False)
         and critical_point.get("pass", False)
+        and tool_rl_collapse.get("pass", False)
     )
 
     return {
         "action": action,
         "pass": all_pass,
+        "mechanical_invariants": {
+            "pass": mechanical_invariants.get("pass", False),
+            "hazards": mechanical_invariants.get("hazards", []),
+            "details": mechanical_invariants.get("details", {}),
+        },
         "dimensions": {
+            "mechanical_invariants": mechanical_invariants,
             "correctness": correctness,
             "efficiency": efficiency,
             "critical_point": critical_point,
+            "tool_rl_collapse": tool_rl_collapse,
         },
     }
 
@@ -371,9 +398,11 @@ def score_trajectory(events: list[dict[str, Any]]) -> dict[str, Any]:
     passed = sum(1 for s in scored_actions if s.get("pass", False))
 
     dim_counts: dict[str, dict[str, int]] = {
+        "mechanical_invariants": {"pass": 0, "fail": 0, "hazards": {}},
         "correctness": {"pass": 0, "fail": 0, "hazards": {}},
         "efficiency": {"pass": 0, "fail": 0, "hazards": {}},
         "critical_point": {"pass": 0, "fail": 0, "hazards": {}},
+        "tool_rl_collapse": {"pass": 0, "fail": 0, "hazards": {}},
     }
 
     for s in scored_actions:
@@ -385,11 +414,18 @@ def score_trajectory(events: list[dict[str, Any]]) -> dict[str, Any]:
                 dim_counts[dim_name]["pass"] += 1
             else:
                 dim_counts[dim_name]["fail"] += 1
-                hazard = dim_data.get("hazard")
-                if hazard:
-                    dim_counts[dim_name]["hazards"][hazard] = (
-                        dim_counts[dim_name]["hazards"].get(hazard, 0) + 1
-                    )
+                hazard_list = dim_data.get("hazards")
+                if isinstance(hazard_list, list) and hazard_list:
+                    for hazard in hazard_list:
+                        dim_counts[dim_name]["hazards"][hazard] = (
+                            dim_counts[dim_name]["hazards"].get(hazard, 0) + 1
+                        )
+                else:
+                    hazard = dim_data.get("hazard")
+                    if hazard:
+                        dim_counts[dim_name]["hazards"][hazard] = (
+                            dim_counts[dim_name]["hazards"].get(hazard, 0) + 1
+                        )
 
     return {
         "trajectory_pass": passed == total and total > 0,

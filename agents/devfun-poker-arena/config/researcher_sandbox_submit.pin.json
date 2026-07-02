@@ -2,18 +2,19 @@
   "competitionId": "cmr0jmqlt08bi13n8neory9xb",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "3b48d01d-3f33-4467-a108-8111d03c2163",
+  "activeSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
   "watchSubmissionIds": [
+    "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
+    "0175ce41-8b0a-4df6-b794-dbb6c7413022",
     "3b48d01d-3f33-4467-a108-8111d03c2163",
     "41651659-7105-43e6-be0e-8e151879863e",
-    "8545120c-e3cd-4c1a-bb3c-d2d5254f18ca",
-    "5f6f3aec-6547-4166-8d18-eaae2ad54d91"
+    "8545120c-e3cd-4c1a-bb3c-d2d5254f18ca"
   ],
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
   "agentVersion": "researcher-s2.cemini-k131b-finish.2026-07-02",
   "sandboxEngine": "cemini",
-  "gitCommit": "fde803a",
-  "pinnedAt": "2026-07-02T00:00:00Z",
-  "notes": "Ops P0: replace:false — wait for 3b48d01d PvP finish, then fresh submit. Pin self-heal + season tracking enabled."
+  "gitCommit": "unknown",
+  "pinnedAt": "2026-07-02T12:59:10Z",
+  "notes": "Ops P0: replace:false \u2014 wait for 3b48d01d PvP finish, then fresh submit. Pin self-heal + season tracking enabled."
 }

@@ -33,3 +33,20 @@ Playground lobby intel may still use `CEMINI_SANITIZE_OUTPUT=1` for anti-profili
 **Optional gin engine:** `CEMINI_SANDBOX_ENGINE=gin_hu004`, `POKER_BOT_STRATEGY=hu004` — vendored via pin when explicitly enabled; local gate villain only when pin omits hu004.
 
 S2 public LB may stay empty until **>20k hands** — poll submission + agent page.
+
+## Eval invariants (K140)
+
+Steal from arXiv **2607.00527** (AI-native games survey): open-ended `decide()` outputs must pass **mechanical invariants** before nine-axis / tri-verifier strategic scoring. Implemented in `examples/sandbox_mechanical_invariants.py`; wired as first gate in `examples/sandbox_tri_verifier.py` `score_action()`.
+
+| Invariant (survey) | Arena analog | Hazard code |
+|--------------------|--------------|---------------|
+| Goals | Stack preservation / exploit objective — hero seat identifiable (`selfSeatNumber`) | `invariant:missing_hero` |
+| Rules | PokerKit legality + `allowedActions` block on table | `invariant:missing_rules` |
+| State | Observable cards, pot (`potChips`), stacks (`stackChips` per seat) | `invariant:missing_state` |
+| Feedback | Non-empty `reasoning` / `reasoning_text` when field present on payload | `invariant:empty_reasoning` |
+| Pacing | Hand/time limits in sandbox | _(tri-verifier efficiency axis)_ |
+| Agency | Legal action set only — action ∈ `allowedActions` | `invariant:agency_violation` |
+
+**Gate order:** `verify_mechanical_invariants()` → correctness → efficiency → critical-point → tool-RL collapse. Invariant failures log under top-level `mechanical_invariants` and `dimensions.mechanical_invariants` separately from strategic quality hazards.
+
+Brief: `briefs/2026-07-02_k140-mechanical-invariants-rubric-steal.md`
