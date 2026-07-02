@@ -12,7 +12,7 @@ related:
   - concepts/ice-turnkey-research-backlog-2026-06-30.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-02
 ---
 
 ## Relations
@@ -122,7 +122,7 @@ Zoley (GEO) and Swindle (CoreCivic) confirmed active sale discussions on Q1 2026
 #### Local proceedings (California City)
 
 - **Feb 26, 2026:** City staff approved business license + site plan; administrative appeals filed late Feb 2026 `[CONFIRMED]`.
-- **June 15, 2026:** AG Rob Bonta letter urges rejection of both appeals; cites SB 29, AB 103 conditions, federal litigation; asks ≥10-day public notice before hearings `[CONFIRMED]`.
+- **June 15, 2026:** AG Rob Bonta **88-page letter + exhibits** urges rejection of both appeals; cites SB 29, AB 103 conditions, federal litigation; asks ≥10-day public notice before hearings `[CONFIRMED]`. [PDF](https://oag.ca.gov/system/files/attachments/press-docs/BEJ%20Letter%20to%20California%20City%20Regarding%20CCDF%20Entitlement%20Appeal%20With%20Exhibits%20%2806.15.2026%29.pdf) parsed 2026-07-02.
 - **June 16, 2026:** **Planning Commission meeting canceled — lack of quorum**; next regular PC meeting scheduled **July 7** `[CONFIRMED]` (city PDF).
 - **July 7, 2026 — dual appeal hearings (same venue):** `[CONFIRMED]` KGET 17 News + city PC cancellation PDF. **21000 Hacienda Blvd, California City.**
 
@@ -138,7 +138,24 @@ Zoley (GEO) and Swindle (CoreCivic) confirmed active sale discussions on Q1 2026
 - **Mayor Hawkins:** AG comments are recommendations; city **cannot halt federal detention**; lacks resources for litigation; will follow appeals process `[CONFIRMED]`. Council **quorum gaps** (2026) stalled formal action `[CONFIRMED]`.
 - **Inadvertent.news (May 12, 2026):** CoreCivic Aug 2025 SB 29 **indemnification** letter; mayor says city paying defense on "city's dime" `[CONFIRMED]`.
 
-**Appeal process:** Administrative appeal of Feb 26 entitlements. **Appellant:** Jehan Laner / Dignity Not Detention Coalition `[CONFIRMED]` KGET. Bonta's substantive hooks: incomplete application materials; **detention use vs 1998 prison CUP**; bed-count mismatch `[CONFIRMED]`.
+**Appeal process:** Administrative appeal of Feb 26 entitlements. **Appellant:** Jehan Laner / Dignity Not Detention Coalition `[CONFIRMED]` KGET.
+
+#### Bonta letter — core legal attacks (Jun 15, 2026 PDF, verified)
+
+Two independent grounds — **incomplete/misleading applications** and **zoning/CUP nonconformance** — not just policy opposition.
+
+| Attack | Bonta claim | Tag |
+|--------|-------------|-----|
+| **Application swap** | **July 2025** BL + site plan accurately described **ICE immigration processing/detention**; CoreCivic **withdrew** and replaced with **August 2025** versions omitting ICE/immigrant detention, describing facility generically as **"Detention Facility/Prison"** under **U.S. Marshals Service** contract — while actual ops are **ICE civil detention** | `[CONFIRMED]` Exs. A–H |
+| **Misrepresentation hook** | City may not approve apps with **material misrepresentations** or missing required materials (workers' comp proof, complete site plan) | `[CONFIRMED]` §§ 3-2.3.208, 9-2.212 |
+| **SB 29 context** | City staff determined immigrant detention would trigger **SB 29** (180-day notice + two hearings); CoreCivic **disputed**, then **revised** applications — Bonta frames revision as obscuring true use | `[CONFIRMED]` |
+| **Zoning** | Site at **22844 Virginia Blvd** zoned **Open Space (O) / Residential Agricultural (RA)**; **immigrant detention not permitted** in O/RA district | `[CONFIRMED]` |
+| **Prison ≠ civil detention** | Even conditional-use category allowing **"correction, probation, or prison facilities"** does **not** cover **immigrant detention**; CA law treats them as **separate use types** | `[CONFIRMED]` |
+| **CUP No. 97-01 (1998)** | Authorizes **2,304-bed prison facility** only — **not** immigrant detention; EIR/permit record correctional-only | `[CONFIRMED]` Ex. I |
+| **Bed cap** | **2,304** authorized under CUP 97-01; operator claims **2,560**; city staff letter cited **2,816** by **erroneously adding** never-built CUP 98-02 expansion (512 beds) | `[CONFIRMED]` |
+| **Aug 2025 ops without license** | Facility opened **Aug 27, 2025** receiving detainees **without** BL or other Municipal Code entitlements | `[CONFIRMED]` |
+
+**Strategic read (ICE buyer counsel / OPLA):** Bonta is building a record for **denial on appeal**, not blocking federal acquisition directly. While **CoreCivic owns**, fight is **"private operator violated city zoning / business license rules."** After **federal title transfer**, fight shifts to **federal supremacy vs state/local** — stronger for ICE on core detention mission, but **worse closing file** if city denies first (reps/warranties, escrow, "condemned asset" headline). See pre-hearing vs post-hearing table below `[INFERENCE]`.
 
 ### Litigation (high-signal items often missed)
 
@@ -253,16 +270,17 @@ July 7 is **quorum-fragile on PC track** (Jun 16 precedent) but **BL decision ma
 | **Maximize Wall Street attention** | **Mon/Tue premarket + investor call** | Fits **Benchmark $680M / portfolio sale** narrative — shareholders want rerating, not bury |
 | **Avoid local adverse action** | **Before Jul 7 hearings** | Federal title moots BL + PC appeals; creates **Jul 2–3 OR Mon Jun 30 / Tue Jul 1 premarket** conditional window |
 
-**Integrated prob (conditional on deal ready — still low given Schroyer freeze, tranche 2, no 8-K, UW neutral):**
+**Integrated prob (revised 2026-07-02 — delay = signatory/politics, not doc prep):**
 
-| Scenario | Approx. prob | Notes |
-|----------|--------------|-------|
-| **Portfolio / multi-site sale 8-K** on Jul 2–3 holiday bury | **~1–2%** | Conflicts with transformational deleveraging + investor-call norm |
-| **Portfolio sale** Mon/Tue premarket + call | **~3–5%** if signing unfreezes | Aligns with UW Aug skew for *near-term* — still not base case |
-| **Cal City-only** pre-Jul 7 close (any weekday) | **~4–8%** | Preemption + **pre-denial reps/warranties** motive; execution still blocked |
-| **Jul 2–3 Cal City-only** (media minimization objective) | **~2–5%** | Friend tradecraft valid; **DHS objective ≠ CXW IR objective** on portfolio scale |
+| Scenario | Prior (Jun 30) | **Revised (Jul 2)** | Notes |
+|----------|----------------|---------------------|-------|
+| **Portfolio / multi-site sale 8-K** Jul 2–Jul 6 | ~1–2% | **~3–6%** | Zoley window active; DHS pause ≠ shredded drafts |
+| **Portfolio sale** Mon/Tue premarket + call | ~3–5% | **~5–10%** | If signatory delegates below director level |
+| **Cal City-only** sign before Jul 7 | ~4–8% | **~10–18%** | Bonta **raises urgency**; tranche-2 rank caps |
+| **Cal City-only close before Jul 7** | (subsumed) | **~6–12%** | Close > sign; reps/warranties motive stronger post-Bonta exhibits |
+| **Jul 2–3 Cal City-only** (holiday bury) | ~2–5% | **~4–8%** | Docs-ready assumption; signatory still gating |
 
-**Diligence logic (friend, 2026-06-30):** Pre-hearing close avoids **condemned-asset** headline and **reps & warranties trap** if Grayson/PC deny Jul 7 — supremacy is backstop, not preferred path. **If docs ready, pre-hearing signing is strategically superior** — does not imply docs *are* ready.
+**Diligence logic:** Pre-hearing close avoids **condemned-asset** headline and **reps & warranties trap** if Grayson/PC deny Jul 7. **Bonta Jun 15 PDF** (application swap ICE→USMS, O/RA zoning) makes post-denial file **materially worse** — increases ICE/OPLA **incentive** to execute **before Jul 7** if a Cal City PSA exists in draft. **Does not prove** execution will happen — only that **motive ↑** while **public evidence (8-K) = none**.
 
 **Base case unchanged:** contract continuity **52–55%**; no imminent 8-K; **Aug 5–10 Q2 earnings** primary public falsifier.
 
@@ -308,6 +326,12 @@ Integrated in `@concepts/ice-turnkey-research-backlog-2026-06-30.md`. **Probabil
 
 > Pre-hearing federal acquisition: "Federal government is acquiring this facility to support federal detention needs." Post-denial: "ICE buys facility local authorities said was illegally operating" — worse for price, indemnities, escrow, and reps/warranties even if supremacy eventually prevails.
 > — [Source: operator friend intel + OPLA diligence frame (2026-06-30); aligns with dirty-entitlement closing-conditions thesis]
+
+> CoreCivic withdrew the business license and site plan applications it originally submitted in July 2025, which accurately described CoreCivic's operations … as immigration processing and detention subject to a contract with ICE, and replaced it with new versions in August 2025 that omit any reference to immigrant detention and ICE's involvement. Instead, the August 2025 application materials describe the Facility generically as a "Detention Facility/Prison" and state that CoreCivic "will be operating…under a contract with the United States Marshals Service."
+> — [Source: CA AG Bonta letter to California City, Jun 15, 2026, p. 4–5 (PDF)](https://oag.ca.gov/system/files/attachments/press-docs/BEJ%20Letter%20to%20California%20City%20Regarding%20CCDF%20Entitlement%20Appeal%20With%20Exhibits%20%2806.15.2026%29.pdf)
+
+> Immigrant detention is not an allowed use within this zone district … Further, immigrant detention is not covered by the one functionally comparable use category … "Governmental or quasi-governmental correction, probation or prison facilities and services." The plain meaning of "correction, probation, and prison facilities" does not include immigrant detention facilities.
+> — [Source: CA AG Bonta letter, Jun 15, 2026, p. 8–9 (PDF)](https://oag.ca.gov/system/files/attachments/press-docs/BEJ%20Letter%20to%20California%20City%20Regarding%20CCDF%20Entitlement%20Appeal%20With%20Exhibits%20%2806.15.2026%29.pdf)
 
 ## Dead Ends
 

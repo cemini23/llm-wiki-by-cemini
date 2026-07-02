@@ -13,7 +13,7 @@ related:
   - entities/facilities/california-city-detention-facility.md
 maturity: validated
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-02
 tier1_completed: 2026-06-30
 tier2_completed: 2026-06-30
 tier3_completed: 2026-06-30
@@ -99,7 +99,17 @@ Handoff: `tipdrop-workspace-kit/briefs/2026-06-30_cxw-geo-ice-turnkey-david-hand
 
 **UW verdict:** **Neutral for near-term 8-K** both names. Call skew into **Aug/Sep expiries + LEAPs**, not Nov FY26 → **reinforces contract-only / slipped timing**. Optional probability revision: **52–55% contract / 40–42% buy / 5% termination** (from 50/45/5).
 
-**Holiday Jul 2–3 dump tail:** ~**2–5%** Cal City-only; ~**1–2%** portfolio bury. **Pre-Jul 7 close** strategically superior on reps/warranties if docs ready (pre-denial vs condemned-asset headline) — conditional Cal City tail **~4–8%**, execution still blocked (Schroyer freeze, no 8-K).
+**Holiday Jul 2–3 dump tail:** ~**2–5%** Cal City-only; ~**1–2%** portfolio bury. **Pre-Jul 7 close** strategically superior on reps/warranties (pre-denial vs condemned-asset headline).
+
+**Pre-Jul 7 execution prob (revised 2026-07-02 — docs-not-binding):** Prior **~4–8%** wrongly treated **document readiness** as the binding constraint. Q1–Q2 earnings + Axios + Zoley **Q2–Q3 window** imply **term sheets / PSA drafts likely circulated**; delay attributed to **DHS warehouse-IG chill**, **Mullin oversight friction**, **Venturella ethics cloud**, then **Schroyer confirmation pause** — not greenfield legal drafting. Revised (Cal City-specific, before Jul 7 3:30 p.m. BL hearing):
+
+| Event | Prior | **Revised** | Binding constraint |
+|-------|-------|-------------|-------------------|
+| **Portfolio/multi-site sign or 8-K** Jul 2–Jul 6 | ~1–2% bury | **~3–6%** | Signatory + IR timing; still no 8-K through Jul 2 |
+| **Cal City sign (PSA)** before Jul 7 | ~4–8% "if docs ready" | **~10–18%** | Tranche-2 rank (#7); Otay first in CA; Schroyer/Venturella signatory |
+| **Cal City close (title)** before Jul 7 | (subsumed) | **~6–12%** | Closing logistics + reps; Bonta strengthens **motive** to close pre-denial |
+
+**Still not base case** because: no public 8-K/FPGS real-property award through Jul 2; UW Jul 1 flow = disclosure rerating not deal-close positioning; Cal City remains **messiest** CA node (monitor + entitlements + application-swap record).
 
 **EOD summary:** `.local/reports/ice-turnkey-research/EXECUTIVE-SUMMARY-2026-06-30.md`
 
