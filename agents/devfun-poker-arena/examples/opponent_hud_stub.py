@@ -126,6 +126,7 @@ def _apply_cold_start_guard(
 
 
 def build_opponent_hud(table: dict) -> dict:
+    from finale_villain import finale_exploit_enabled, overlay_finale_hud, resolve_finale_villain_from_context  # noqa: WPS433
     from villain_archetype import (  # noqa: WPS433
         archetype_to_legacy_mode,
         classify_villain_archetype,
@@ -137,7 +138,14 @@ def build_opponent_hud(table: dict) -> dict:
     )
 
     mode = (os.environ.get("TRAINING_OPPONENT_MODE") or "rock").lower()
-    if mode in ("rock", "nit", "tight"):
+    finale_vid = resolve_finale_villain_from_context(table=table)
+    if finale_vid == "durrrr":
+        arch = "linear_aggro"
+        mode = "maniac"
+    elif finale_vid == "jungleman":
+        arch = "wide_passive"
+        mode = "lag"
+    elif mode in ("rock", "nit", "tight"):
         arch = "premium_nit"
     elif mode in ("maniac", "lag"):
         arch = "linear_aggro"
@@ -173,6 +181,8 @@ def build_opponent_hud(table: dict) -> dict:
     }
     if handle:
         hud["villain_handle"] = handle
+    if finale_exploit_enabled() and finale_vid != "none":
+        hud = overlay_finale_hud(hud, {"session": {"villain_id": finale_vid}}, table)
     return enrich_hud_from_table(hud, table)
 
 

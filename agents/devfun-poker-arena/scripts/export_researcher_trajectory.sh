@@ -11,6 +11,7 @@ SELFPLAY=""
 EXPORT_DIR=""
 COMP=""
 OUT_DIR=""
+TAG=""
 HERO="${ARENA_HERO_HANDLE:-cemini_wiki_poker}"
 
 while [[ $# -gt 0 ]]; do
@@ -20,13 +21,18 @@ while [[ $# -gt 0 ]]; do
     --competition-id) COMP="$2"; shift 2 ;;
     --out-dir) OUT_DIR="$2"; shift 2 ;;
     --hero) HERO="$2"; shift 2 ;;
+    --tag) TAG="$2"; shift 2 ;;
     *) echo "Unknown arg: $1" >&2; exit 1 ;;
   esac
 done
 
 if [[ -z "$OUT_DIR" ]]; then
   TS=$(date -u +%Y%m%dT%H%M%SZ)
-  OUT_DIR="reports/researcher-round/${TS}"
+  if [[ -n "$TAG" ]]; then
+    OUT_DIR="reports/researcher-round/${TS}-${TAG}"
+  else
+    OUT_DIR="reports/researcher-round/${TS}"
+  fi
 fi
 mkdir -p "$OUT_DIR"
 

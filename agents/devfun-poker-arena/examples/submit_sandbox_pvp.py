@@ -63,6 +63,22 @@ _CEMINI_EXCLUDE_ASSETS = frozenset(
         "ai_pokergame_villain.py",
     }
 )
+_FINALE_ASSETS = frozenset(
+    {
+        "finale_villain.py",
+        "finale_exploit.py",
+        "finale_durrrr_exploit.py",
+        "finale_jungleman_exploit.py",
+    }
+)
+
+
+def _bundle_includes_finale() -> bool:
+    raw = os.environ.get("CEMINI_BUNDLE_FINALE", "").strip().lower()
+    if raw in ("1", "true", "yes", "on"):
+        return True
+    av = _read_pin_manifest_fields().get("agentVersion", "")
+    return "finale" in av.lower()
 
 
 def _read_pin_manifest_fields() -> dict[str, str]:
@@ -114,6 +130,8 @@ def build_bundle(out_zip: Path) -> Path:
         engine = _sandbox_engine()
         for py in _EXAMPLES.glob("*.py"):
             if engine in ("cemini", "cemini_decide", "default") and py.name in _CEMINI_EXCLUDE_ASSETS:
+                continue
+            if not _bundle_includes_finale() and py.name in _FINALE_ASSETS:
                 continue
             shutil.copy2(py, assets / py.name)
         pin_fields = _read_pin_manifest_fields()

@@ -14,10 +14,15 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 HANDS=200
+FINALE=""
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --hands)
       HANDS="${2:-200}"
+      shift 2
+      ;;
+    --finale)
+      FINALE="${2:-}"
       shift 2
       ;;
     *)
@@ -84,6 +89,26 @@ run_selfplay_bundle() {
       echo "==> ${label} ${match_line#  }"
     fi
   fi
+  run_summary "$traj_file" "$out_dir" 0
+}
+
+run_finale_gate() {
+  local villain="$1"
+  local opponent="$2"
+  local out_dir="$3"
+  local traj_file="${out_dir}/selfplay_trajectory.jsonl"
+  mkdir -p "$out_dir"
+  echo "==> Finale gate (${villain}, ${HANDS}h vs ${opponent})"
+  CEMINI_TABLE_FORMAT=hu CEMINI_RESEARCHER_MODE=1 \
+    CEMINI_FINALE_EXPLOIT=1 CEMINI_FINALE_VILLAIN="${villain}" \
+    CEMINI_S1B_EXPLOIT=0 CEMINI_NEMESIS_EXPLOIT=0 \
+    uv run python examples/selfplay.py \
+    --agent examples/harness_sandbox_agent.py \
+    --hands "$HANDS" \
+    --players 2 \
+    --opponent "$opponent" \
+    --seed 42 \
+    --trajectory-out "$traj_file" | tee "${out_dir}/finale_summary.txt"
   run_summary "$traj_file" "$out_dir" 0
 }
 
@@ -177,6 +202,25 @@ bash scripts/run_sandbox_tri_verifier.sh
 echo "==> K134 RQGM epoch stamp + advisory promotion gate"
 uv run python examples/sandbox_rubric_epoch.py --print | tee "${BUNDLE_DIR}/rubric_epoch.txt"
 uv run python examples/sandbox_rubric_epoch.py --gate  | tee "${BUNDLE_DIR}/promotion_gate.txt" || true
+
+if [[ -n "$FINALE" ]]; then
+  case "$FINALE" in
+    durrrr)
+      run_finale_gate durrrr durrrr_bomb "${BUNDLE_DIR}/finale-durrrr"
+      ;;
+    jungleman)
+      run_finale_gate jungleman jungleman_calldown "${BUNDLE_DIR}/finale-jungleman"
+      ;;
+    all)
+      run_finale_gate durrrr durrrr_bomb "${BUNDLE_DIR}/finale-durrrr"
+      run_finale_gate jungleman jungleman_calldown "${BUNDLE_DIR}/finale-jungleman"
+      ;;
+    *)
+      echo "ERROR: --finale must be durrrr, jungleman, or all" >&2
+      exit 2
+      ;;
+  esac
+fi
 
 if [[ -n "${ARENA_RESEARCHER_COMP_ID:-}" ]]; then
   echo "==> Arena trajectory pull (ARENA_RESEARCHER_COMP_ID)"

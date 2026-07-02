@@ -88,6 +88,8 @@ from s1b_exploit import (  # noqa: E402
     try_hu_bb_value_3bet_vs_steal,
     try_hu_three_bet_vs_aggro,
 )
+from finale_exploit import apply_finale_action_overlay  # noqa: E402
+from finale_villain import finale_exploit_enabled, overlay_finale_hud  # noqa: E402
 from villain_archetype import premium_concentration_index, seat_matrix_v2_enabled  # noqa: E402
 from jackpot_27_decide import maybe_hunt_action  # noqa: E402
 from jackpot_rules import royal_showdown_action, royal_showdown_mode  # noqa: E402
@@ -879,6 +881,8 @@ def decide(
     position = chart.get("position") or ctx.get("position") or hero_position_label(table)
     hc = _hand_class(hole) or chart.get("hand_class") or ""
     hud = enrich_hud_from_table(ctx.get("opponent_hud") or {}, table)
+    if finale_exploit_enabled():
+        hud = overlay_finale_hud(hud, ctx, table)
     ctx["opponent_hud"] = hud
     jp_out = maybe_hunt_action(
         table,
@@ -1963,6 +1967,25 @@ def decide(
             )
             if capped is not None:
                 action_name, amount = capped
+
+    fin_overlay = apply_finale_action_overlay(
+        table=table,
+        allowed=allowed,
+        available=available,
+        hole=hole,
+        board=board,
+        street=street,
+        action_name=action_name,
+        amount=amount,
+        equity=equity,
+        pot_odds=pot_odds,
+        call_chips=call_chips,
+        pot=pot,
+        in_position=in_position,
+        ctx=ctx,
+    )
+    if fin_overlay is not None:
+        action_name, amount = fin_overlay
 
     if action_name in ("fold", "check", "call"):
         amount = None

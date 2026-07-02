@@ -8032,3 +8032,12 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Prod deploy** — `researcher_prod_prep_apply.sh` + `CEMINI_S1B_EXPLOIT=1`
 - **7-model super audit** — `briefs/2026-06-19_researcher-hu-7model-super-audit-synthesis.md` → SHIP-WITH-FIXES; P0 metric/gate fixes before first sandbox submit
 
+## [2026-06-08] ship | Human-table finale exploit layer + ladder #1
+
+- **Ladder poll** — `cemini_wiki_poker` **#1/17** S2 comp @ 5,400h, TS ~114 (`f8d4f05f` continuous); `scripts/poll_ladder_rank.py`
+- **Finale overlay** — `finale_villain.py`, `finale_durrrr_exploit.py`, `finale_jungleman_exploit.py`, `cemini_decide.py` hook; default bundle excludes finale modules
+- **Gate** — `run_hu_sandbox_gate.sh --finale durrrr|jungleman|all`; selfplay bots `durrrr_bomb`, `jungleman_calldown`
+- **Brief** — `agents/devfun-poker-arena/briefs/2026-06-08_human-table-exploit-layer-brief.md`
+- **Wiki** — `@concepts/devfun-researcher-pro-style-targets-2026-06.md` backlog updated
+- **Open** — X claim; finale-only Arena submit after qualify
+

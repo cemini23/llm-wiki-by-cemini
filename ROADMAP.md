@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-06-08 — human-table finale exploit)
+
+- **Finale exploit layer** — `CEMINI_FINALE_VILLAIN=durrrr|jungleman` overlay shipped; excluded from default ladder bundle. Ladder **#1/17** @ 5,400h TS ~114 (`f8d4f05f` continuous). Brief `2026-06-08_human-table-exploit-layer-brief.md`. **Open:** X claim; finale-only submit after qualify.
+
 ## Current state (2026-07-02 — K131b finish + ops P0)
 
 - **K131b finish + ops P0 (2026-07-02)** — GLM/Kimi audit fixes shipped: pin self-heal, `replace:false`, K131b A3/B2, S2 nemesis, bundle manifest. Live **`3b48d01d`** cemini PvP — wait for 5k; K131b-finish on next **fresh** submit. Brief `2026-07-02_k131b-finish-ops-p0-ship.md`.

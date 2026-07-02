@@ -11,7 +11,7 @@ related:
   - sources/web-pro-villain-profiles-dwan-cates-2026-06-19.md
 maturity: validated
 created: 2026-06-19
-updated: 2026-06-19
+updated: 2026-06-08
 cross-wiki:
   - "@gambling-wiki/entities/people/tom-dwan.md"
   - "@gambling-wiki/entities/people/daniel-cates-jungleman.md"
@@ -70,6 +70,8 @@ Dwan emulation adds: larger sizing, more merge lines, thinner value — risks M�
 
 Not implemented in `cemini_decide.py` yet (`durrrr` / `jungleman` not in `nemesis_seed` / `villain_archetype`).
 
+**Update 2026-06-08:** Finale exploit overlay **shipped** as separate lane — `CEMINI_FINALE_EXPLOIT=1` + `CEMINI_FINALE_VILLAIN=durrrr|jungleman`; default ladder bundle **excludes** `finale_*.py`. See `agents/devfun-poker-arena/briefs/2026-06-08_human-table-exploit-layer-brief.md`.
+
 | vs | Exploit direction |
 |----|-------------------|
 | **Dwan** | Call wider vs bombs; thinner value; **fewer** bluffs into call-down |
@@ -79,10 +81,10 @@ Gambling-wiki entity tables: `@gambling-wiki/entities/people/tom-dwan.md` § Bot
 
 ### Code backlog (private repo)
 
-1. `CEMINI_RESEARCHER_STYLE_TARGET=jungleman|dwan|balanced` — HU sandbox emulation profile (preflop width, probe raises, 3-bet mix)
-2. `villain_id: durrrr | jungleman` in session memory / HUD for finale seats
-3. HU selfplay opponent mix: include **passive** + **LAG call-down** bots to stress-test TrueSkill, not only `tight`
-4. Trajectory review: pros may judge **sizing shape + frequency**, not only win rate — export before every submit
+1. `CEMINI_RESEARCHER_STYLE_TARGET=jungleman|dwan|balanced` — HU sandbox **emulation** profile (ladder grind; separate from finale exploit) — **open**
+2. **`CEMINI_FINALE_VILLAIN` + `villain_id` HUD** — **shipped 2026-06-08** (`finale_villain.py`, `opponent_hud_stub.py`; excluded from default sandbox bundle)
+3. HU selfplay **`durrrr_bomb` / `jungleman_calldown`** bots + `run_hu_sandbox_gate.sh --finale` — **shipped 2026-06-08**
+4. Trajectory **`export_researcher_trajectory.sh --tag finale-*`** — **shipped 2026-06-08**; operator review before stream still required
 
 **Do not** wire Dwan/Jungleman overlays into Playground `CEMINI_NEMESIS_HANDLES` — those handles are arena bot names, not pro profiles.
 

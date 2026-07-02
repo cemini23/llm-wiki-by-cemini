@@ -194,6 +194,57 @@ def bot_balanced_lag(table: dict, **_: Any) -> dict:
     return {"action": "fold"} if "fold" in avail else {"action": "call"}
 
 
+def bot_durrrr_bomb(table: dict, **_: Any) -> dict:
+    """Dwan-shaped bomb LAG — oversized bets/raises for finale durrrr sim."""
+    allowed = table.get("allowedActions") or {}
+    avail = allowed.get("availableActions") or []
+    call_chips = int(allowed.get("callChips") or 0)
+    pot = int(table.get("potChips") or 0)
+
+    if call_chips == 0:
+        if "bet" in avail:
+            br = allowed.get("betRange") or {}
+            lo, hi = int(br.get("min") or 1), int(br.get("max") or 1)
+            target = max(lo, min(int(max(pot, 1) * 0.85), hi))
+            return {"action": "bet", "amount": target}
+        if "check" in avail:
+            return {"action": "check"}
+        return {"action": "fold"} if "fold" in avail else {"action": "check"}
+
+    if "raise" in avail and random.random() < 0.55:
+        rr = allowed.get("raiseRange") or {}
+        lo, hi = int(rr.get("min") or 1), int(rr.get("max") or 1)
+        target = max(lo, min(int(pot * 1.1 + call_chips * 2), hi))
+        return {"action": "raise", "amount": target}
+    if "call" in avail and random.random() < 0.55:
+        return {"action": "call"}
+    return {"action": "fold"} if "fold" in avail else {"action": "call"}
+
+
+def bot_jungleman_calldown(table: dict, **_: Any) -> dict:
+    """Jungleman-shaped wide call-down — probes small, calls wide vs pressure."""
+    allowed = table.get("allowedActions") or {}
+    avail = allowed.get("availableActions") or []
+    call_chips = int(allowed.get("callChips") or 0)
+    pot = int(table.get("potChips") or 0)
+
+    if call_chips == 0:
+        if "bet" in avail and random.random() < 0.45:
+            br = allowed.get("betRange") or {}
+            lo, hi = int(br.get("min") or 1), int(br.get("max") or 1)
+            target = max(lo, min(int(max(pot, 1) * 0.33), hi))
+            return {"action": "bet", "amount": target}
+        if "check" in avail:
+            return {"action": "check"}
+        return {"action": "fold"} if "fold" in avail else {"action": "check"}
+
+    if call_chips <= int(max(pot, 1) * 0.55) and "call" in avail:
+        return {"action": "call"}
+    if "call" in avail and random.random() < 0.72:
+        return {"action": "call"}
+    return {"action": "fold"} if "fold" in avail else {"action": "call"}
+
+
 BOT_POOL = {
     "tight": bot_tight_passive,
     "loose": bot_loose_passive,
@@ -202,6 +253,8 @@ BOT_POOL = {
     "rock": bot_rock,
     "maniac": bot_maniac,
     "lag": bot_balanced_lag,
+    "durrrr_bomb": bot_durrrr_bomb,
+    "jungleman_calldown": bot_jungleman_calldown,
 }
 
 try:
