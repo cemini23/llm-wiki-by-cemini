@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-07-02] query | ICE turnkey Tier 4 — Montgomery recorder + SEC falsifier
+
+- **Tier 4 tracks:** recorder Montgomery TX #1 (Kofile automated), SEC 0×8-K Jun–Jul, Jul 7 catalyst calendar, Benchmark CXW PT $36 `[TENTATIVE]`
+- **Script:** `kofile_publicsearch` backend + `montgomery_geo` site in `ice-turnkey-recorder-sites.yaml`
+- **Updates (1):** `@concepts/ice-turnkey-research-backlog-2026-06-30.md`
+- **Report:** `.local/reports/ice-turnkey-research/tier4-track-2026-07-02.md`
+- **Posture:** contract continuity base case; no deed/8-K confirm through Jul 2
+
 ## [2026-07-02] ship | ICE recorder automation hardening (prod) + Florence wiki
 
 - **Recorder:** `scripts/ice_turnkey_recorder_check.py` — stealth browser, per-portal nav, WAF/CAPTCHA fallbacks, `--portal-timeout`, Pinal dedupe; deployed `cemini-prod:/opt/cemini/intel/ice-turnkey-recorder/`; timer `+ --portal-timeout 180`

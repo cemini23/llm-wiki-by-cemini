@@ -17,6 +17,7 @@ updated: 2026-07-02
 tier1_completed: 2026-06-30
 tier2_completed: 2026-06-30
 tier3_completed: 2026-06-30
+tier4_in_progress: 2026-07-02
 david_uw_full: 2026-06-30
 ---
 
@@ -112,6 +113,19 @@ Handoff: `tipdrop-workspace-kit/briefs/2026-06-30_cxw-geo-ice-turnkey-david-hand
 **Still not base case** because: no public 8-K/FPGS real-property award through Jul 2; UW Jul 1 flow = disclosure rerating not deal-close positioning; Cal City remains **messiest** CA node (monitor + entitlements + application-swap record).
 
 **EOD summary:** `.local/reports/ice-turnkey-research/EXECUTIVE-SUMMARY-2026-06-30.md`
+
+### Tier 4 in progress (2026-07-02)
+
+| Track | Key result |
+|-------|------------|
+| **4A — Recorder prod** | Kern + **Montgomery TX #1** automated; SD/SB/Pinal CAPTCHA/WAF fallbacks on prod 4h timer |
+| **4B — SEC falsifier** | **0** GEO/CXW facility-sale 8-K Jun 1–Jul 3 2026 (EDGAR) |
+| **4C — Florence wiki** | SPC vs CAFCC — `@entities/facilities/florence-az-detention-cluster.md` |
+| **4D — Jul 7 catalyst** | **5 days** — BL 3:30 Grayson / PC 6:00 de novo |
+| **4E — Montgomery deed** | Kofile: **no** grant-deed U.S. grantee Mar–Jul 2026 |
+| **4F — Benchmark CXW** | PT $36; 80% 2-facility sale ~$680M `[TENTATIVE]` — vs UW near-term 8-K neutral |
+
+**Synthesis:** `.local/reports/ice-turnkey-research/tier4-track-2026-07-02.md`
 
 ### Falsifiers (watch)
 

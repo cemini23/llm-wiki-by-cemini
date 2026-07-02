@@ -99,3 +99,15 @@ sites:
       backend: tyler_acclaim
       portal: https://arcselfservice.sbcounty.gov/web/
       notes: "reCAPTCHA on disclaimer — automation records manual fallback; index search after I Accept."
+
+  - id: montgomery_geo
+    label: Montgomery Processing Center (GEO)
+    operator: GEO Group
+    ticker: GEO
+    address: "806 Hilbig St, Conroe, TX 77301"
+    county: Montgomery
+    state: TX
+    recorder:
+      backend: kofile_publicsearch
+      portal: https://montgomery.tx.publicsearch.us/
+      notes: "Tier 0 site rank #1; Kofile GovOS — automated without CAPTCHA (2026-07-02 probe)."

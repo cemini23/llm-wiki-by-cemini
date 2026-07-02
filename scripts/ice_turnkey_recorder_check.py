@@ -499,6 +499,64 @@ def kern_search_party(
     return parse_doc_rows_kern(page.content())
 
 
+def kofile_name_search(
+    page: Any,
+    portal: str,
+    party: str,
+    start: dt.date,
+    end: dt.date,
+) -> list[dict[str, str]]:
+    """Kofile PublicSearch (GovOS) — grantor/grantee quick search."""
+    page.goto(portal, wait_until="domcontentloaded", timeout=120_000)
+    page.wait_for_timeout(2000)
+    blocked = _portal_blocked(page)
+    if blocked:
+        raise PortalWAFBlocked(f"{portal}: {blocked}")
+
+    search_box = page.locator("#basicSearchInputBox")
+    if search_box.count() == 0:
+        raise PortalWAFBlocked(f"{portal}: search form not available")
+    search_box.fill(party)
+    start_s = f"{start.month}/{start.day}/{start.year}"
+    end_s = f"{end.month}/{end.day}/{end.year}"
+    page.get_by_label("Starting Recorded Date").fill(start_s)
+    page.get_by_label("Ending Recorded Date").fill(end_s)
+    submit = page.locator('[data-testid="searchSubmitButton"]')
+    if submit.count():
+        submit.click()
+    else:
+        page.get_by_role("button", name="Search", exact=True).click()
+    page.wait_for_timeout(4000)
+    body = _body_text(page)
+    if "0 results" in body.lower() or "no results" in body.lower():
+        return []
+
+    rows: list[dict[str, str]] = []
+    for tr in page.locator("tr").all():
+        text = re.sub(r"\s+", " ", tr.inner_text()).strip()
+        if not re.search(r"\d{2}/\d{2}/\d{4}", text) or len(text) < 25:
+            continue
+        if "DOC NUMBER" in text.upper():
+            continue
+        doc_date = ""
+        m_date = re.search(r"(\d{1,2}/\d{1,2}/\d{4})", text)
+        if m_date:
+            doc_date = m_date.group(1)
+        doc_number = ""
+        m_doc = re.search(r"\b(20\d{7})\b", text)
+        if m_doc:
+            doc_number = m_doc.group(1)
+        rows.append(
+            {
+                "raw_line": text,
+                "doc_date": doc_date,
+                "doc_number": doc_number,
+                "description": text,
+            }
+        )
+    return rows
+
+
 def manual_checklist(config: dict[str, Any], start: dt.date, end: dt.date) -> str:
     lines = [
         "## Manual recorder checklist",
@@ -581,6 +639,41 @@ def run_browser_sweep(
                                 row.get("description", ""), keywords
                             )
                         findings.extend(rows)
+            except Exception as exc:  # noqa: BLE001
+                errors.append(f"{site_id}: {exc}")
+
+        for site in config.get("sites", []):
+            if site["recorder"]["backend"] != "kofile_publicsearch":
+                continue
+            site_id = site["id"]
+            portal = site["recorder"]["portal"]
+            try:
+                with portal_batch_timeout(portal_timeout_s):
+                    for party in grantees[:2] + grantors[:2]:
+                        role = "grantee" if party in grantees else "grantor"
+                        rows = kofile_name_search(page, portal, party, start, end)
+                        for row in rows:
+                            row["site_id"] = site_id
+                            row["party_searched"] = f"{party} ({role})"
+                            row["sale_signal"] = is_sale_signal(
+                                row.get("description") or row.get("raw_line", ""),
+                                keywords,
+                            )
+                        findings.extend(rows)
+            except (PortalWAFBlocked, PortalCaptchaBlocked) as exc:
+                errors.append(f"{site_id}: {exc}")
+                findings.append(
+                    {
+                        "site_id": site_id,
+                        "doc_date": "",
+                        "doc_number": "",
+                        "description": (
+                            f"Automation blocked ({exc}) — manual index check: {portal}"
+                        ),
+                        "sale_signal": False,
+                        "party_searched": "",
+                    }
+                )
             except Exception as exc:  # noqa: BLE001
                 errors.append(f"{site_id}: {exc}")
 
