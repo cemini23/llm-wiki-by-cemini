@@ -32,6 +32,11 @@ TRANSIENT_HTTP = frozenset({502, 503, 504})
 # Arena /agent/submissions often returns empty — never rely on it alone for active-bot detection.
 STUCK_HANDS_UNCHANGED_SEC = int(os.environ.get("CEMINI_SANDBOX_STUCK_SEC", "7200"))  # 2h
 
+PVP_FINISHED = frozenset(
+    {"finished", "failed", "error", "cancelled", "canceled", "complete", "completed"}
+)
+PVP_IN_FLIGHT = frozenset({"active", "running", "pending", "paused", "queued"})
+
 
 def _api_base() -> str:
     return (
@@ -56,6 +61,95 @@ def _load_creds() -> dict[str, Any]:
 
 def _load_pin(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def write_pin_atomic(pin_path: Path, pin: dict[str, Any]) -> None:
+    pin_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = pin_path.with_suffix(pin_path.suffix + ".tmp")
+    tmp.write_text(json.dumps(pin, indent=2) + "\n", encoding="utf-8")
+    tmp.replace(pin_path)
+
+
+def sync_pin_from_submission(
+    pin_path: Path,
+    pin: dict[str, Any],
+    submission_id: str,
+    *,
+    git_commit: str,
+    agent_version: str,
+) -> dict[str, Any]:
+    updated = dict(pin)
+    updated["activeSubmissionId"] = submission_id
+    watch = list(updated.get("watchSubmissionIds") or [])
+    if submission_id not in watch:
+        watch.insert(0, submission_id)
+    updated["watchSubmissionIds"] = watch[:5]
+    updated["gitCommit"] = git_commit
+    updated["agentVersion"] = agent_version
+    updated["pinnedAt"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    write_pin_atomic(pin_path, updated)
+    return updated
+
+
+def heal_pin_on_active_detect(
+    pin_path: Path,
+    pin: dict[str, Any],
+    active_rec: dict[str, Any],
+) -> dict[str, Any]:
+    active_id = str(active_rec.get("id") or "")
+    if not active_id:
+        return pin
+    pin_active = str(pin.get("activeSubmissionId") or "")
+    if pin_active == active_id:
+        return pin
+    print(f"==> PIN heal: activeSubmissionId {pin_active or '(empty)'} -> {active_id}")
+    updated = dict(pin)
+    updated["activeSubmissionId"] = active_id
+    watch = list(updated.get("watchSubmissionIds") or [])
+    if active_id not in watch:
+        watch.insert(0, active_id)
+    updated["watchSubmissionIds"] = watch[:5]
+    write_pin_atomic(pin_path, updated)
+    return updated
+
+
+def _git_head_short() -> str:
+    import subprocess
+
+    try:
+        return subprocess.check_output(
+            ["git", "-C", str(_AGENT_ROOT), "rev-parse", "--short", "HEAD"],
+            text=True,
+        ).strip()
+    except (OSError, subprocess.CalledProcessError):
+        return "unknown"
+
+
+def _season_counters(
+    prev: Optional[dict[str, Any]],
+    *,
+    increment_from: Optional[dict[str, Any]] = None,
+) -> tuple[int, int]:
+    finalized = int((prev or {}).get("finalizedSeasons") or 0)
+    cumulative = int((prev or {}).get("cumulativeHands") or 0)
+    if increment_from and pvp_is_finished(increment_from):
+        ch, th, _ = pvp_progress(increment_from)
+        if th > 0 and ch >= th:
+            finalized += 1
+            cumulative += ch
+    return finalized, cumulative
+
+
+def _attach_season_counters(
+    payload: dict[str, Any],
+    prev: Optional[dict[str, Any]],
+    *,
+    increment_from: Optional[dict[str, Any]] = None,
+) -> dict[str, Any]:
+    finalized, cumulative = _season_counters(prev, increment_from=increment_from)
+    payload["finalizedSeasons"] = finalized
+    payload["cumulativeHands"] = cumulative
+    return payload
 
 
 def fetch_agent_submissions(competition_id: str) -> list[dict[str, Any]]:
@@ -102,9 +196,11 @@ def pvp_is_finished(rec: dict[str, Any]) -> bool:
     if th > 0 and ch >= th:
         return True
     st = status.lower()
-    if st and st not in ("active", "running", "pending"):
+    if st in PVP_IN_FLIGHT:
+        return False
+    if st in PVP_FINISHED:
         return True
-    return False
+    return bool(st)
 
 
 def _poll_submission_safe(submission_id: str) -> Optional[dict[str, Any]]:
@@ -170,8 +266,8 @@ def find_active_pvp_submission(
         top = str(full.get("status") or "").lower()
         if th > 0 and ch >= th:
             return
-        pvp_in_flight = st == "active" or (
-            th > 0 and ch < th and st not in ("finished", "failed", "error")
+        pvp_in_flight = st in PVP_IN_FLIGHT or (
+            th > 0 and ch < th and st not in PVP_FINISHED
         )
         # Benchflow smoke can be Succeeded (5/5) while PvP season still runs.
         if top in ("succeeded", "finished", "failed", "error") and not pvp_in_flight:
@@ -234,9 +330,10 @@ def stuck_payload(
     active: dict[str, Any],
     bundle_sha: str,
     unchanged_sec: int,
+    prev_state: Optional[dict[str, Any]] = None,
 ) -> dict[str, Any]:
     ch, th, status = pvp_progress(active)
-    return {
+    payload = {
         "status": "stuck_zombie",
         "competitionId": competition_id,
         "bundle": str(bundle),
@@ -248,6 +345,7 @@ def stuck_payload(
         "unchangedSeconds": unchanged_sec,
         "note": "Hands unchanged since last timer run — arena scheduler zombie; do not replace",
     }
+    return _attach_season_counters(payload, prev_state)
 
 
 def detect_stuck(
@@ -279,9 +377,10 @@ def waiting_payload(
     active: dict[str, Any],
     bundle_sha: str,
     now: float,
+    prev_state: Optional[dict[str, Any]] = None,
 ) -> dict[str, Any]:
     ch, th, status = pvp_progress(active)
-    return {
+    payload = {
         "status": "waiting_for_finish",
         "competitionId": competition_id,
         "bundle": str(bundle),
@@ -293,6 +392,37 @@ def waiting_payload(
         "checkedAt": now,
         "lastHandsAt": now,
     }
+    return _attach_season_counters(payload, prev_state)
+
+
+def _submission_id_from_out(out: dict[str, Any]) -> str:
+    sub = out.get("submission")
+    if isinstance(sub, dict):
+        sid = sub.get("id") or sub.get("submissionId")
+        if sid:
+            return str(sid)
+    return ""
+
+
+def _finalize_submit_state(
+    *,
+    pin_path: Path,
+    pin: dict[str, Any],
+    out: dict[str, Any],
+    prev_state: Optional[dict[str, Any]],
+    increment_from: Optional[dict[str, Any]] = None,
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    sid = _submission_id_from_out(out)
+    if sid:
+        pin = sync_pin_from_submission(
+            pin_path,
+            pin,
+            sid,
+            git_commit=_git_head_short(),
+            agent_version=str(pin.get("agentVersion") or ""),
+        )
+    payload = _attach_season_counters(dict(out), prev_state, increment_from=increment_from)
+    return pin, payload
 
 
 def try_submit(
@@ -344,6 +474,7 @@ def run_auto(
 
     active = find_active_pvp_submission(competition_id, pin=pin, state=prev_state)
     if active and not pvp_is_finished(active):
+        pin = heal_pin_on_active_detect(pin_path, pin, active)
         ch, th, status = pvp_progress(active)
         is_stuck, unchanged_sec = detect_stuck(prev_state, active, now)
         if is_stuck:
@@ -353,6 +484,7 @@ def run_auto(
                 active=active,
                 bundle_sha=bundle_sha,
                 unchanged_sec=unchanged_sec,
+                prev_state=prev_state,
             )
             print(json.dumps(payload, indent=2))
             write_state(state_path, payload)
@@ -368,6 +500,7 @@ def run_auto(
             active=active,
             bundle_sha=bundle_sha,
             now=now,
+            prev_state=prev_state,
         )
         # Preserve lastHandsAt when hand count unchanged between timer runs.
         if prev_state and str(prev_state.get("activeSubmissionId") or "") == str(active.get("id")):
@@ -393,12 +526,21 @@ def run_auto(
     if active and pvp_is_finished(active):
         print("==> Prior PvP finished — submitting fresh bundle (no replace)")
 
+    season_increment_from = active if active and pvp_is_finished(active) else None
+
     if prefer_replace:
         print(f"==> Submit with replace to {competition_id}")
         try:
             out = try_submit(competition_id=competition_id, bundle=bundle, replace=True)
             print(json.dumps(out.get("submission"), indent=2))
-            write_state(state_path, out)
+            pin, payload = _finalize_submit_state(
+                pin_path=pin_path,
+                pin=pin,
+                out=out,
+                prev_state=prev_state,
+                increment_from=season_increment_from,
+            )
+            write_state(state_path, payload)
             return 0
         except SubmissionRejected as exc:
             if exc.code == "sandbox_daily_limit":
@@ -416,12 +558,14 @@ def run_auto(
                     competition_id, pin=pin, state=prev_state
                 )
                 if active and not pvp_is_finished(active):
+                    pin = heal_pin_on_active_detect(pin_path, pin, active)
                     payload = waiting_payload(
                         competition_id=competition_id,
                         bundle=bundle,
                         active=active,
                         bundle_sha=bundle_sha,
                         now=now,
+                        prev_state=prev_state,
                     )
                     print(json.dumps(payload, indent=2))
                     write_state(state_path, payload)
@@ -452,7 +596,14 @@ def run_auto(
     try:
         out = try_submit(competition_id=competition_id, bundle=bundle, replace=False)
         print(json.dumps(out.get("submission"), indent=2))
-        write_state(state_path, out)
+        pin, payload = _finalize_submit_state(
+            pin_path=pin_path,
+            pin=pin,
+            out=out,
+            prev_state=prev_state,
+            increment_from=season_increment_from,
+        )
+        write_state(state_path, payload)
         return 0
     except SubmissionRejected as exc:
         if exc.code == "sandbox_daily_limit":
@@ -470,12 +621,14 @@ def run_auto(
                 competition_id, pin=pin, state=prev_state
             )
             if active and not pvp_is_finished(active):
+                pin = heal_pin_on_active_detect(pin_path, pin, active)
                 payload = waiting_payload(
                     competition_id=competition_id,
                     bundle=bundle,
                     active=active,
                     bundle_sha=bundle_sha,
                     now=now,
+                    prev_state=prev_state,
                 )
                 print(json.dumps(payload, indent=2))
                 write_state(state_path, payload)

@@ -47,6 +47,14 @@ if [[ "${DRY_RUN}" == "1" ]]; then
   exit 0
 fi
 
+PIN="${AGENT_DIR}/config/researcher_sandbox_submit.pin.json"
+HEAD_SHA="$(git -C "${AGENT_DIR}" rev-parse --short HEAD 2>/dev/null || echo unknown)"
+PIN_SHA="$(python3 -c "import json; print(json.load(open('${PIN}')).get('gitCommit',''))" 2>/dev/null || true)"
+if [[ "${CEMINI_SUBMIT_SKIP_REV_CHECK:-}" != "1" && -n "${PIN_SHA}" && "${HEAD_SHA}" != "${PIN_SHA}" ]]; then
+  log "WARN: git HEAD ${HEAD_SHA} != pin gitCommit ${PIN_SHA} — skip submit (CEMINI_SUBMIT_SKIP_REV_CHECK=1 to override)"
+  exit 0
+fi
+
 log "auto-submit orchestrator start"
 if [[ -z "${CEMINI_SANDBOX_ENGINE:-}" && -f config/researcher_sandbox_submit.pin.json ]]; then
   export CEMINI_SANDBOX_ENGINE="$(python3 -c "import json; print(json.load(open('config/researcher_sandbox_submit.pin.json')).get('sandboxEngine','cemini'))")"
@@ -59,6 +67,12 @@ set -e
 if [[ "${EXIT}" -ne 0 ]]; then
   log "FAIL: orchestrator exited ${EXIT}"
   exit 1
+fi
+
+if [[ -f "${AGENT_DIR}/dist/sandbox-pvp-bundle.zip" ]]; then
+  bash "${SCRIPT_DIR}/verify_sandbox_bundle_layout.sh" "${AGENT_DIR}/dist/sandbox-pvp-bundle.zip" 2>&1 | tee -a "${LOG}" || {
+    log "WARN: bundle layout verify failed"
+  }
 fi
 
 STATUS="$(python3 -c "import json; print(json.load(open('${STATE}')).get('status',''))" 2>/dev/null || true)"

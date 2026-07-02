@@ -16,6 +16,7 @@ import subprocess
 import sys
 import tempfile
 import zipfile
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
@@ -54,8 +55,40 @@ def _vendor_packages() -> list[str]:
     return ["treys", "httpx", "httpcore", "h11", "certifi", "idna", "anyio", "sniffio", "dotenv"]
 
 
+_PIN_PATH = _AGENT_ROOT / "config" / "researcher_sandbox_submit.pin.json"
+_CEMINI_EXCLUDE_ASSETS = frozenset(
+    {
+        "gin_hu004_bridge.py",
+        "gin_hu004_decide.py",
+        "ai_pokergame_villain.py",
+    }
+)
+
+
+def _read_pin_manifest_fields() -> dict[str, str]:
+    """Read agentVersion, gitCommit, sandboxEngine from the sandbox submit pin."""
+    if not _PIN_PATH.is_file():
+        return {}
+    try:
+        data = json.loads(_PIN_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+    out: dict[str, str] = {}
+    for key in ("agentVersion", "gitCommit", "sandboxEngine"):
+        val = data.get(key)
+        if val is not None and str(val).strip():
+            out[key] = str(val).strip()
+    return out
+
+
 def _sandbox_engine() -> str:
-    return os.environ.get("CEMINI_SANDBOX_ENGINE", "cemini").strip().lower()
+    raw = os.environ.get("CEMINI_SANDBOX_ENGINE", "").strip().lower()
+    if raw:
+        return raw
+    pin_engine = _read_pin_manifest_fields().get("sandboxEngine", "").strip().lower()
+    if pin_engine:
+        return pin_engine
+    return "cemini"
 
 
 def build_bundle(out_zip: Path) -> Path:
@@ -78,8 +111,25 @@ def build_bundle(out_zip: Path) -> Path:
         shutil.copy2(harness, root / "harness" / "strategy.py")
         assets = root / "assets"
         assets.mkdir()
+        engine = _sandbox_engine()
         for py in _EXAMPLES.glob("*.py"):
+            if engine in ("cemini", "cemini_decide", "default") and py.name in _CEMINI_EXCLUDE_ASSETS:
+                continue
             shutil.copy2(py, assets / py.name)
+        pin_fields = _read_pin_manifest_fields()
+        manifest = {
+            "agentVersion": pin_fields.get("agentVersion", ""),
+            "gitCommit": pin_fields.get("gitCommit", ""),
+            "sandboxEngine": engine,
+            "builtAt": datetime.now(timezone.utc)
+            .replace(microsecond=0)
+            .isoformat()
+            .replace("+00:00", "Z"),
+        }
+        (assets / "manifest.json").write_text(
+            json.dumps(manifest, indent=2) + "\n",
+            encoding="utf-8",
+        )
         traj_cfg = _EXAMPLES / "trajectory_bound_config.json"
         if traj_cfg.is_file():
             shutil.copy2(traj_cfg, assets / traj_cfg.name)
@@ -107,7 +157,6 @@ def build_bundle(out_zip: Path) -> Path:
                     shutil.copytree(src, vendor / pkg, dirs_exist_ok=True)
                 elif src.with_suffix(".py").is_file():
                     shutil.copy2(src.with_suffix(".py"), vendor / f"{pkg}.py")
-        engine = _sandbox_engine()
         if engine in ("gin", "gin_hu004", "hu004"):
             gin_hu004 = _AGENT_ROOT / "vendor" / "gin_hu004" / "hu004.py"
             if gin_hu004.is_file():

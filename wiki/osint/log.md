@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-07-02] ship | K131b finish + sandbox ops P0 (GLM/Kimi audit)
+
+- **Ops:** pin self-heal in auto-submit, `replace:false`, closed-set `pvp_is_finished`, retry guard, timer git-rev + bundle verify, season counters
+- **Bot:** K131b A3 BTN trim (8 combos), B2 LAG thin-value floor, S2 nemesis (range_ledger, arjun_c, rvkkv1, damon)
+- **Bundle:** `assets/manifest.json`, cemini asset whitelist, engine-aware `POKER_BOT_STRATEGY`
+- **Arena:** live `3b48d01d` cemini PvP — no replace until 5k complete; K131b-finish on next fresh submit
+- **Brief:** `agents/devfun-poker-arena/briefs/2026-07-02_k131b-finish-ops-p0-ship.md`
+
 ## [2026-07-02] ops | Cursor audit — cemini revert tooling + gate alignment
 
 - **Arena evidence:** gin `8545120c` +7.3 TS @ 5k vs cemini `5f6f3aec` +19 TS; tranche2 gin `41651659` ~1323/5k (negative early TS)

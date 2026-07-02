@@ -33,6 +33,11 @@ _DEFAULT = (
     "fefou_v2",
     "long_ngu_poker",
     "holonomic-aggro6-42efa4",
+    # K131b S2 export rivals
+    "range_ledger",
+    "arjun_c",
+    "rvkkv1",
+    "damon",
 )
 _DEFAULT_PREFIXES = (
     "v12_",

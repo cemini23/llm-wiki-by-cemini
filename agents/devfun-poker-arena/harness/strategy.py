@@ -20,7 +20,8 @@ if _ASSETS.is_dir() and str(_ASSETS) not in sys.path:
     sys.path.insert(0, str(_ASSETS))
 
 os.environ.setdefault("CEMINI_SANITIZE_OUTPUT", "0")
-os.environ.setdefault("POKER_BOT_STRATEGY", "hu004")
+_DEFAULT_STRATEGY = "hu004" if _ENGINE in ("gin", "gin_hu004", "hu004") else "cemini_k131b"
+os.environ.setdefault("POKER_BOT_STRATEGY", _DEFAULT_STRATEGY)
 
 if _ENGINE in ("cemini", "cemini_decide", "default"):
     os.environ.setdefault("CEMINI_TABLE_FORMAT", "hu")

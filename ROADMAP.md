@@ -30,10 +30,11 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
-## Current state (2026-07-02 — cemini revert + audit tooling)
+## Current state (2026-07-02 — K131b finish + ops P0)
 
-- **Cursor audit fixes (2026-07-02)** — Live engine reverted **gin → cemini** (+19 vs +7.3 TS @ 5k). Shipped: gate via `harness_sandbox_agent.py`, pin-driven `CEMINI_SANDBOX_ENGINE`, bundle omits gin vendor when cemini, auto-submit env lock. **Blocked:** cemini `--replace` — Arena `sandbox_daily_limit`; timer at UTC 00/06/12/18:12. Active gin tranche2 `41651659` ~1323/5k (negative early TS).
-- **K139 ship (2026-07-01)** — gin/poker-bot v3 **`hu004`** vendored (Option A). PvP **`8545120c`** completed +7.3 TS. Superseded for live by cemini revert; gin retained for local gate villain. Brief `2026-07-01_k139-gin-hu004-option-a-sandbox-ship.md` §Update 2026-07-02.
+- **K131b finish + ops P0 (2026-07-02)** — GLM/Kimi audit fixes shipped: pin self-heal, `replace:false`, K131b A3/B2, S2 nemesis, bundle manifest. Live **`3b48d01d`** cemini PvP — wait for 5k; K131b-finish on next **fresh** submit. Brief `2026-07-02_k131b-finish-ops-p0-ship.md`.
+- **Cursor audit (2026-07-02)** — gate via harness, pin-driven engine, cemini bundle whitelist. Synthesis `2026-07-02_postfix-cursor-audit-synthesis-glm-kimi.md`.
+- **K139 ship (2026-07-01)** — gin hu004 vendored; live reverted to cemini (+19 vs +7.3 TS @ 5k). Brief §Update 2026-07-02.
 
 ## Current state (2026-07-01 — K138)
 

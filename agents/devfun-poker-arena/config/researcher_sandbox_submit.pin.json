@@ -1,18 +1,19 @@
 {
   "competitionId": "cmr0jmqlt08bi13n8neory9xb",
   "template": "static-agent",
-  "replace": true,
-  "activeSubmissionId": "41651659-7105-43e6-be0e-8e151879863e",
+  "replace": false,
+  "activeSubmissionId": "3b48d01d-3f33-4467-a108-8111d03c2163",
   "watchSubmissionIds": [
+    "3b48d01d-3f33-4467-a108-8111d03c2163",
     "41651659-7105-43e6-be0e-8e151879863e",
     "8545120c-e3cd-4c1a-bb3c-d2d5254f18ca",
     "5f6f3aec-6547-4166-8d18-eaae2ad54d91"
   ],
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-s2.cemini-k131b.2026-07-02",
+  "agentVersion": "researcher-s2.cemini-k131b-finish.2026-07-02",
   "sandboxEngine": "cemini",
-  "gitCommit": "7c99ea1",
+  "gitCommit": "7124dd8",
   "pinnedAt": "2026-07-02T00:00:00Z",
-  "notes": "Revert gin->cemini K131b. Daily limit hit 2026-07-02; replace:true for next timer/submit."
+  "notes": "Ops P0: replace:false — wait for 3b48d01d PvP finish, then fresh submit. Pin self-heal + season tracking enabled."
 }

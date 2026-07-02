@@ -1,7 +1,7 @@
 """Bundle build respects CEMINI_SANDBOX_ENGINE (cemini vs gin_hu004 vendor)."""
 from __future__ import annotations
 
-import os
+import json
 import sys
 import zipfile
 from pathlib import Path
@@ -28,8 +28,13 @@ def test_cemini_bundle_excludes_gin_vendor(monkeypatch: pytest.MonkeyPatch, out_
     build_bundle(out_zip)
     with zipfile.ZipFile(out_zip) as zf:
         names = zf.namelist()
+        manifest = json.loads(zf.read("assets/manifest.json"))
     assert "harness/strategy.py" in names
+    assert "assets/manifest.json" in names
+    assert "assets/gin_hu004_bridge.py" not in names
     assert GIN_VENDOR_PATH not in names
+    assert manifest["sandboxEngine"] == "cemini"
+    assert manifest.get("builtAt")
 
 
 def test_gin_engine_bundle_includes_gin_vendor(
