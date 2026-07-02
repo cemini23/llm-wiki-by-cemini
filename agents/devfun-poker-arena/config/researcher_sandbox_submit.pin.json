@@ -13,7 +13,7 @@
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
   "agentVersion": "researcher-s2.cemini-k131b-finish.2026-07-02",
   "sandboxEngine": "cemini",
-  "gitCommit": "7124dd8",
+  "gitCommit": "fde803a",
   "pinnedAt": "2026-07-02T00:00:00Z",
   "notes": "Ops P0: replace:false — wait for 3b48d01d PvP finish, then fresh submit. Pin self-heal + season tracking enabled."
 }
