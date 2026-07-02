@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-02] ingest | VR dynamic feedback + quant reject + genre news
+
+- Inbox: 2 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-02.md (2606.29018 reject → @osint-wiki; **2606.26925 ingest**); archived; inbox cleared
+- Paper: @sources/arxiv-2606.26925-vr-dynamic-feedback-pointing-2026-07-02.md → architect UX shelf
+- News: @sources/mandate-order-city-walls-shelf-2026-06-25.md, @sources/phaser-game-agent-shelf-2026-06-30.md, @sources/ziva-godot-asset-store-listing-2026-06-27.md
+- Phase-0: none (Ziva listing note only)
+- Brief: `briefs/research/dynamic-feedback-architect-shelf.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-07-02-daily.md
+
+---
+
 ## [2026-07-01] ingest | MORL re-drop + SH4 press + ProtocolBench defer
 
 - Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-07-01.md (2606.26397 re-drop); archived; inbox cleared

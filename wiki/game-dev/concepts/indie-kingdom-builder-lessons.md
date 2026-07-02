@@ -11,10 +11,12 @@ related:
   - sources/simon-bradbury-stronghold-heaven-sh3-2011.md
   - sources/gamespy-stronghold-2-bradbury-qa-2004.md
   - sources/firefly-about-us-studio-history.md
+  - sources/mandate-order-city-walls-shelf-2026-06-25.md
+  - sources/arxiv-2606.26925-vr-dynamic-feedback-pointing-2026-07-02.md
   - concepts/agent-harness-castle-project.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-07-02
 ---
 
 ## Relations
@@ -38,6 +40,7 @@ Cross-source lessons for hobby castle-sim from GDC postmortems, Firefly intervie
 | Firefly about-us | Definitive/Crusader DE sales prove **return-to-SH1** market — validates Tier 1 scope |
 | Northgard analysis | Anti-snowball via caps + drains — don't add all systems at once |
 | Vertical slice v0 | One resource, one military type, no AI lord |
+| Mandate Order (2026 press) | Walls as whole-settlement test — genre active [@sources/mandate-order-city-walls-shelf-2026-06-25.md] |
 
 ### Economy patterns (Tier 2 candidates)
 

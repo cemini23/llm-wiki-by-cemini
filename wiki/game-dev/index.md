@@ -231,4 +231,9 @@ Catalog of all wiki pages. Updated on each ingest.
 | [ramen-aura-15-commercial-shelf-2026-06-26](sources/ramen-aura-15-commercial-shelf-2026-06-26.md) | read |
 | [inbox-arxiv-reject-batch-2026-07-01](sources/inbox-arxiv-reject-batch-2026-07-01.md) | read |
 | [protocolbench-llm-multiagent-protocol-shelf-2026-06-24](sources/protocolbench-llm-multiagent-protocol-shelf-2026-06-24.md) | read |
+| [inbox-arxiv-reject-batch-2026-07-02](sources/inbox-arxiv-reject-batch-2026-07-02.md) | read |
+| [arxiv-2606.26925-vr-dynamic-feedback-pointing-2026-07-02](sources/arxiv-2606.26925-vr-dynamic-feedback-pointing-2026-07-02.md) | read |
+| [mandate-order-city-walls-shelf-2026-06-25](sources/mandate-order-city-walls-shelf-2026-06-25.md) | read |
+| [phaser-game-agent-shelf-2026-06-30](sources/phaser-game-agent-shelf-2026-06-30.md) | read |
+| [ziva-godot-asset-store-listing-2026-06-27](sources/ziva-godot-asset-store-listing-2026-06-27.md) | read |
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |

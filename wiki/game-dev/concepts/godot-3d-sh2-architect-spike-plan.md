@@ -12,9 +12,10 @@ related:
   - entities/projects/castle-sim.md
   - sources/gamespy-stronghold-2-bradbury-qa-2004.md
   - concepts/godot-pathfinding-patterns.md
+  - sources/arxiv-2606.26925-vr-dynamic-feedback-pointing-2026-07-02.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-07-02
 ---
 
 ## Relations

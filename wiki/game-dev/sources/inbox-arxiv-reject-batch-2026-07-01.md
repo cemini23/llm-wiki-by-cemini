@@ -4,6 +4,7 @@ type: source
 tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, re-drop]
 related:
+  - sources/inbox-arxiv-reject-batch-2026-07-02.md
   - sources/inbox-arxiv-reject-batch-2026-06-30.md
   - sources/inbox-arxiv-reject-batch-2026-06-29.md
   - concepts/game-ai-rl-augmentation-shelf.md
