@@ -6,11 +6,12 @@ keywords: [California City, CoreCivic, ICE, CCDF, Gomez Ruiz, Bonta, SB 29]
 related:
   - entities/companies/corecivic.md
   - entities/tickers/cxw.md
+  - entities/facilities/florence-az-detention-cluster.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-02
 ---
 
 ## Relations
@@ -19,6 +20,7 @@ updated: 2026-06-30
 - @entities/tickers/cxw.md — listed parent equity
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — full legal + thesis synthesis
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — shared federal turnkey acquisition frame
+- @entities/facilities/florence-az-detention-cluster.md — peer CXW AZ site (SPC vs CAFCC)
 
 ## Raw Concept
 

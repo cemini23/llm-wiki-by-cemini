@@ -1,0 +1,101 @@
+# ICE turnkey / DRI facility sale — county recorder watchlist
+# Grantee = federal buyer; grantor = private operator (CXW/GEO) on fee-simple transfer.
+# Run: bash scripts/run_ice_turnkey_recorder_check.sh
+# Discord: bash scripts/setup_recorder_discord_webhook.sh
+# Schedule: bash scripts/install_recorder_discord_launchagent.sh  (every 4h + --notify)
+
+default_lookback_days: 120
+
+discord:
+  webhook_file: ~/.cemini/recorder-discord-webhook.url
+  fallback_webhook_file: ~/.cemini/inbox-webhook.url
+  env_var: DISCORD_WEBHOOK_URL
+  test: bash scripts/run_ice_turnkey_recorder_check.sh --test-discord
+
+# Document description substrings that count as a sale signal (index text varies by county)
+sale_doc_keywords:
+  - DEED
+  - GRANT DEED
+  - WARRANTY DEED
+  - QUIT CLAIM
+  - TRUSTEE
+  - BARGAIN
+  - CONVEY
+
+# Party names to search (grantor and grantee). Add LLC variants when discovered on index.
+party_names:
+  grantors:
+    - CORECIVIC
+    - CORE CIVIC
+    - CORRECTIONS CORP OF AMER
+    - CORRECTIONS CORPORATION OF AMERICA
+    - GEO GROUP
+    - THE GEO GROUP
+  grantees:
+    - UNITED STATES OF AMER
+    - UNITED STATES OF AMERICA
+    - UNITED STATES
+    - DEPARTMENT OF HOMELAND
+    - HOMELAND SECURITY
+    - IMMIGRATION AND CUSTOMS
+
+sites:
+  - id: cal_city_cxw
+    label: California City Detention Facility (CoreCivic)
+    operator: CoreCivic
+    ticker: CXW
+    address: "22844 Virginia Blvd, California City, CA 93505"
+    county: Kern
+    state: CA
+    recorder:
+      backend: kern_legacy
+      portal: https://recorderonline.co.kern.ca.us/cgi-bin/osearchg.mbr/input
+      notes: "Index only online; no APN search (AB 1785). Legacy CORRECTIONS CORP OF AMER INC hits are pre-2001."
+
+  - id: otay_mesa_cxw
+    label: Otay Mesa Detention Center (CoreCivic)
+    operator: CoreCivic
+    ticker: CXW
+    address: "7488 Calzada de la Fuente, San Diego, CA 92154"
+    county: San Diego
+    state: CA
+    recorder:
+      backend: tyler_acclaim
+      portal: https://arcc-acclaim.sdcounty.ca.gov/search
+      owner_alert: https://www.sdarcc.gov/owneralert/
+      notes: "Grantor/Grantee index 1970–present; headless blocked by Akamai WAF — use Owner Alert subscription."
+
+  - id: florence_az_ice
+    label: Florence AZ cluster (ICE SPC + CoreCivic CAFCC)
+    operator: "ICE / CoreCivic"
+    ticker: CXW
+    address: "Florence, AZ (Pinal County)"
+    county: Pinal
+    state: AZ
+    recorder:
+      backend: tyler_acclaim
+      portal: https://acclaim.pinalcountyaz.gov/AcclaimWeb/
+      notes: "Cloudflare Turnstile intermittent in headless; Kern-style manual when automation blocked."
+
+  - id: eloy_cxw
+    label: Eloy Detention Center (CoreCivic)
+    operator: CoreCivic
+    ticker: CXW
+    address: "Eloy, AZ (Pinal County)"
+    county: Pinal
+    state: AZ
+    recorder:
+      backend: tyler_acclaim
+      portal: https://acclaim.pinalcountyaz.gov/AcclaimWeb/
+
+  - id: adelanto_geo
+    label: Adelanto ICE Processing Center (GEO)
+    operator: GEO Group
+    ticker: GEO
+    address: "10400 Rancho Road, Adelanto, CA 92301"
+    county: San Bernardino
+    state: CA
+    recorder:
+      backend: tyler_acclaim
+      portal: https://arcselfservice.sbcounty.gov/web/
+      notes: "reCAPTCHA on disclaimer — automation records manual fallback; index search after I Accept."

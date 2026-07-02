@@ -1277,6 +1277,7 @@ External firms whose research/track-record is ingested into the wiki.
 ### Facilities
 
 - [California City Detention Facility (CoreCivic / ICE)](entities/facilities/california-city-detention-facility.md) — `[DRAFT 2026-06-29]` 2,560-bed largest CA ICE site; Gomez Ruiz PI + local appeal — facility, ice, california, corecivic
+- [Florence AZ detention cluster (ICE SPC vs CoreCivic CAFCC)](entities/facilities/florence-az-detention-cluster.md) — `[DRAFT 2026-07-02]` J&A-26-0143 read; Idaho DOC mixed-customer CAFCC; Pinal recorder negative — facility, ice, arizona, corecivic, florence
 
 ### Organizations / publications
 

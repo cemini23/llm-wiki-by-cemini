@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-07-02] ship | ICE recorder automation hardening (prod) + Florence wiki
+
+- **Recorder:** `scripts/ice_turnkey_recorder_check.py` — stealth browser, per-portal nav, WAF/CAPTCHA fallbacks, `--portal-timeout`, Pinal dedupe; deployed `cemini-prod:/opt/cemini/intel/ice-turnkey-recorder/`; timer `+ --portal-timeout 180`
+- **Automated counties:** Kern ✅; Pinal/SB/SD record manual fallback (Turnstile / reCAPTCHA / Akamai)
+- **Entity (1):** `@entities/facilities/florence-az-detention-cluster.md`
+- **Updates (5):** corecivic, cxw, cal-city facility, geo-ice-turnkey thesis, index
+
+## [2026-07-02] query | Florence AZ detention cluster — wiki entity
+
+- **Entity (1):** `@entities/facilities/florence-az-detention-cluster.md` — SPC (3250) vs EOIR (3260) vs CAFCC (1155); J&A-26-0143 federal expansion read; Idaho DOC mixed-customer; Pinal recorder negative (2026-07-02 sweep)
+- **Updates (4):** `@entities/companies/corecivic.md`, `@entities/tickers/cxw.md`, `@concepts/geo-ice-turnkey-acquisition-thesis.md`, `wiki/index.md`
+- **Context:** CXW/GEO turnkey OSINT session; prod `cemini-ice-recorder-watch.timer` live
+
 ## [2026-07-02] ship | K140 + K136 poker harness steals
 
 - **K140 mechanical invariants:** `examples/sandbox_mechanical_invariants.py` — P0 crosswalk + P1 pre-axis gate in `sandbox_tri_verifier.score_action()`

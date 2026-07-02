@@ -6,17 +6,19 @@ keywords: [CXW, NYSE, CoreCivic, ICE, turnkey]
 related:
   - entities/companies/corecivic.md
   - entities/facilities/california-city-detention-facility.md
+  - entities/facilities/florence-az-detention-cluster.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-02
 ---
 
 ## Relations
 
 - @entities/companies/corecivic.md — issuer
 - @entities/facilities/california-city-detention-facility.md — flagship CA ICE site
+- @entities/facilities/florence-az-detention-cluster.md — CAFCC vs federal SPC (AZ)
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — June 2026 research synthesis
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — shared turnkey event-study frame (GEO-led briefs)
 
