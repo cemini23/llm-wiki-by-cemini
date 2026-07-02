@@ -14,7 +14,7 @@
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
   "agentVersion": "researcher-s2.cemini-k131b-finish.2026-07-02",
   "sandboxEngine": "cemini",
-  "gitCommit": "unknown",
+  "gitCommit": "0a4466d",
   "pinnedAt": "2026-07-02T12:59:10Z",
-  "notes": "Ops P0: replace:false \u2014 wait for 3b48d01d PvP finish, then fresh submit. Pin self-heal + season tracking enabled."
+  "notes": "Season 1: 0175ce41 +141.7 TS @ 5k. Season 2 fresh: f8d4f05f. K140/K136 gates on prod."
 }
