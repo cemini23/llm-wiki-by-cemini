@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""One-shot S2 leaderboard rank for cemini_wiki_poker."""
+"""Leaderboard rank for cemini_wiki_poker on the pinned heads-up ladder comp."""
 from __future__ import annotations
 
 import json
@@ -12,14 +12,35 @@ sys.path.insert(0, str(ROOT / "examples"))
 from arena_client import ArenaClient, DEFAULT_BASE, load_or_register  # noqa: E402
 from export_competition_hands import fetch_leaderboard, leaderboard_adjusted_bb100  # noqa: E402
 
-COMP = "cmr0jmqlt08bi13n8neory9xb"
+PIN_PATH = ROOT / "config" / "researcher_sandbox_submit.pin.json"
 HERO = "cemini_wiki_poker"
+DEFAULT_COMP = "cmr3n8tft01nilecm1u5jlny7"
+
+
+def _read_pin() -> dict:
+    if not PIN_PATH.is_file():
+        return {}
+    try:
+        return json.loads(PIN_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def _claim_status(client: ArenaClient) -> dict:
+    try:
+        return client.get("/auth/claim/status") or {}
+    except Exception:
+        return {}
 
 
 def main() -> int:
+    pin = _read_pin()
+    comp = pin.get("competitionId") or DEFAULT_COMP
+    active_sub = pin.get("activeSubmissionId")
+
     c = ArenaClient(DEFAULT_BASE)
     load_or_register(c, HERO, "c", "q")
-    lb = fetch_leaderboard(c, COMP)
+    lb = fetch_leaderboard(c, comp)
     hero_rank = None
     hero_row = None
     for i, row in enumerate(lb, 1):
@@ -29,14 +50,22 @@ def main() -> int:
             hero_row = row
             break
 
-    out = {
-        "competitionId": COMP,
+    claim = _claim_status(c)
+    out: dict = {
+        "competitionId": comp,
+        "competitionName": "[poker] heads-up ladder S1",
         "leaderboardTotal": len(lb),
         "heroListed": hero_row is not None,
         "heroRank": hero_rank,
         "hero": None,
         "top15": [],
-        "claimed": (c.get("/agent/me") or {}).get("claimed"),
+        "claim": {
+            "claimed": claim.get("claimed"),
+            "xHandle": claim.get("xHandle"),
+            "status": claim.get("status"),
+        },
+        "activeSubmissionId": active_sub,
+        "pvp": None,
     }
     if hero_row:
         a = hero_row.get("agent") or {}
@@ -64,6 +93,23 @@ def main() -> int:
                 "adjustedBbPer100": leaderboard_adjusted_bb100(row),
             }
         )
+
+    if active_sub:
+        try:
+            from submit_sandbox_pvp import poll_submission  # noqa: WPS433
+
+            polled = poll_submission(active_sub)
+            pvp = polled.get("pvp") or {}
+            out["pvp"] = {
+                "status": pvp.get("status"),
+                "completedHands": pvp.get("completedHands"),
+                "trueskillScore": pvp.get("trueskillScore"),
+                "adjustedBbPer100": pvp.get("adjustedBbPer100"),
+                "continuous": pvp.get("continuous"),
+            }
+        except Exception as exc:
+            out["pvp"] = {"error": str(exc)}
+
     print(json.dumps(out, indent=2))
     return 0
 

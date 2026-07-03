@@ -1,20 +1,20 @@
 {
-  "competitionId": "cmr0jmqlt08bi13n8neory9xb",
+  "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
+  "activeSubmissionId": "11f0e241-5778-4467-99f8-f31f5fac7563",
   "watchSubmissionIds": [
     "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
     "0175ce41-8b0a-4df6-b794-dbb6c7413022",
-    "3b48d01d-3f33-4467-a108-8111d03c2163",
-    "41651659-7105-43e6-be0e-8e151879863e",
-    "8545120c-e3cd-4c1a-bb3c-d2d5254f18ca"
+    "3b48d01d-3f33-4467-a108-8111d03c2163"
   ],
+  "legacyCompetitionId": "cmr0jmqlt08bi13n8neory9xb",
+  "legacyActiveSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-s2.cemini-k131b-finish.2026-07-02",
+  "agentVersion": "researcher-ladder-s1.cemini-k131b-finish.2026-07-03",
   "sandboxEngine": "cemini",
-  "gitCommit": "0a4466d",
-  "pinnedAt": "2026-07-02T12:59:10Z",
-  "notes": "Season 1: 0175ce41 +141.7 TS @ 5k. Season 2 fresh: f8d4f05f. K140/K136 gates on prod."
+  "gitCommit": "f159d22",
+  "pinnedAt": "2026-07-03T13:15:00Z",
+  "notes": "Public heads-up ladder S1 (headsup-ladder.md). Migrated from legacy beta S2 cmr0jmqlt. Fresh submit 2026-07-03."
 }

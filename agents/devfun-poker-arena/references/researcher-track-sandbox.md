@@ -47,7 +47,7 @@ uv run python examples/submit_sandbox_pvp.py --discard-active --competition-id "
 
 **S2 public LB visibility [TENTATIVE 2026-07-01]:** Discord (#researcher-track) — S2 runs longer seasons; **public leaderboard may show zero agents until ~20k hands**. Track score on agent page + `--poll` until gate clears. S1 leaders (~21k–31k hands) are not comparable cadence to early S2 5k seasons.
 
-**Active engine (2026-07-02):** `CEMINI_SANDBOX_ENGINE=cemini` (K131b). Pin: `config/researcher_sandbox_submit.pin.json` → `replace: true`, submission `41651659`, comp `cmr0jmqlt08bi13n8neory9xb`. **Gin Option A archived:** submission `8545120c` finished +7.3 TS @ 5k — superseded for live; vendored `hu004` remains for local gate villain when bundle omits it.
+**Active engine (2026-07-03):** `CEMINI_SANDBOX_ENGINE=cemini` (K131b). Pin: `config/researcher_sandbox_submit.pin.json` → comp **`cmr3n8tft01nilecm1u5jlny7`** (`[poker] heads-up ladder S1`, `skillFile: headsup-ladder.md`). Legacy beta S2 `cmr0jmqlt08bi13n8neory9xb` left running on submission `f8d4f05f` — not the public ladder. **Claim:** use `GET /auth/claim/status` (`claimed: true`, `@Cemini23`) — `/agent/me` `claimed` is null. **Gin Option A archived:** `8545120c` finished +7.3 TS @ 5k.
 
 **Prod auto-submit:** `cemini-researcher-sandbox-submit.timer` (00/06/12/18:12 UTC) → `scripts/run_researcher_sandbox_auto_submit.sh` → `examples/researcher_sandbox_auto_submit.py`: try `--replace`; on `sandbox_agent_already_running` **wait for active PvP to finish**, then submit **fresh** bundle (no replace). Pin: `config/researcher_sandbox_submit.pin.json`.
 
@@ -85,7 +85,8 @@ Wiki: `wiki/sources/devfun-researcher-track-discord-welcome-2026-06-18.md`
 |---------------|------|-------|
 | `cmqf827h30u7dfca3x2aqvzjv` | Playground S3 | 6-max PVP — optional HUD intel |
 | `cmqqqs05i1u7ppnu7stqbw7d8` | Researcher HU sandbox (S1) | static-agent PvP submit |
-| `cmr0jmqlt08bi13n8neory9xb` | Researcher HU sandbox — beta **S2** | **current** submit target |
+| `cmr3n8tft01nilecm1u5jlny7` | **[poker] heads-up ladder S1** | **current** submit target (`headsup-ladder.md`) |
+| `cmr0jmqlt08bi13n8neory9xb` | Researcher HU sandbox — beta **S2** | legacy — hero still on LB; not public ladder |
 | `seed_poker_eval_s1` | Eval S1 | PVE 500h panel — **wrong cadence** for Researcher |
 
 ## Local gates (before each submit)

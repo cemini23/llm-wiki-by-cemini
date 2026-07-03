@@ -9,7 +9,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 AGENT_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 PIN="${AGENT_DIR}/config/researcher_sandbox_submit.pin.json"
-COMP="${ARENA_RESEARCHER_COMP_ID:-cmqqqs05i1u7ppnu7stqbw7d8}"
+COMP="${ARENA_RESEARCHER_COMP_ID:-cmr3n8tft01nilecm1u5jlny7}"
 AGENT_VERSION="${AGENT_VERSION:-}"
 GIT_SHA="$(git -C "${AGENT_DIR}" rev-parse --short HEAD 2>/dev/null || echo unknown)"
 if [[ "${GIT_SHA}" == "unknown" && -f "${PIN}" ]]; then

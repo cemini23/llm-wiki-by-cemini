@@ -3,7 +3,7 @@
 # Run on prod: bash scripts/retry_cemini_replace_submit.sh
 set -euo pipefail
 cd "$(dirname "$0")/.."
-COMP="${ARENA_RESEARCHER_COMP_ID:-cmr0jmqlt08bi13n8neory9xb}"
+COMP="${ARENA_RESEARCHER_COMP_ID:-cmr3n8tft01nilecm1u5jlny7}"
 PIN="config/researcher_sandbox_submit.pin.json"
 LOG="reports/researcher-round/retry-cemini-replace.log"
 mkdir -p reports/researcher-round

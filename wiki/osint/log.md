@@ -8073,3 +8073,10 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Wiki** — `@concepts/devfun-researcher-pro-style-targets-2026-06.md` backlog updated
 - **Open** — X claim; finale-only Arena submit after qualify
 
+## [2026-07-03] ship | Public heads-up ladder S1 repoint
+
+- **Comp migration** — pin + prod `.env` → `cmr3n8tft01nilecm1u5jlny7` (`[poker] heads-up ladder S1`); legacy S2 `cmr0jmqlt` / `f8d4f05f` left running
+- **Submit** — fresh `11f0e241-5778-4467-99f8-f31f5fac7563` Running (`researcher-ladder-s1.cemini-k131b-finish.2026-07-03`)
+- **poll_ladder_rank.py** — claim from `/auth/claim/status` (`@Cemini23` Active); comp from pin
+- **Ops** — `scripts/rsync_poker_arena_code.sh` (never overwrite prod creds); restored `cmpy4lcyi001y11vnekn1zlo3` creds after accidental dry-creds rsync
+
