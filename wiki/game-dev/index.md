@@ -236,4 +236,6 @@ Catalog of all wiki pages. Updated on each ingest.
 | [mandate-order-city-walls-shelf-2026-06-25](sources/mandate-order-city-walls-shelf-2026-06-25.md) | read |
 | [phaser-game-agent-shelf-2026-06-30](sources/phaser-game-agent-shelf-2026-06-30.md) | read |
 | [ziva-godot-asset-store-listing-2026-06-27](sources/ziva-godot-asset-store-listing-2026-06-27.md) | read |
+| [inbox-arxiv-reject-batch-2026-07-03](sources/inbox-arxiv-reject-batch-2026-07-03.md) | read |
+| [godot-engine-ai-contribution-policy-2026-07-01](sources/godot-engine-ai-contribution-policy-2026-07-01.md) | read |
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |

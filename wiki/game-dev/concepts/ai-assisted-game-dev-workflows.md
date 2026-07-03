@@ -15,12 +15,13 @@ related:
   - sources/luden-superweird-gdd-prototype-cursor-2025.md
   - sources/chierhu-ai-coding-tools-game-dev-2026-06-21.md
   - sources/devto-claude-code-godot-skeleton-implementation-2026-06-28.md
+  - sources/godot-engine-ai-contribution-policy-2026-07-01.md
   - sources/exa-ai-gamedev-tools-batch-2026-06-13.md
   - concepts/agentic-pcg-level-design.md
   - concepts/ccgs-workflow-extraction.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-28
+updated: 2026-07-03
 ---
 
 ## Relations
@@ -89,6 +90,8 @@ Practitioner essay on Claude Code + MCP Godot workflows [@sources/devto-claude-c
 | Short-term velocity, long-term debug tax | Monthly manual subsystem (no AI) to retain engine intuition |
 
 **AI-safe vs protect:** boilerplate autoloads/signals → agent; architect camera, nav semantics, game feel → operator. Castle-sim fence: gitignored `briefs/research/agent-skeleton-implementation-fence.md`.
+
+**Engine vs game repo:** Godot Foundation bans most AI in **upstream engine PRs** only [@sources/godot-engine-ai-contribution-policy-2026-07-01.md] — castle-sim harness unchanged.
 
 ### Multi-agent structure (why not one chat)
 

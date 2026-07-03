@@ -29,9 +29,10 @@ related:
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
   - sources/godot-47-release-shelf-2026-06-25.md
   - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
+  - sources/godot-engine-ai-contribution-policy-2026-07-01.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-25
+updated: 2026-07-03
 ---
 
 ## Relations
@@ -168,6 +169,10 @@ func set_wall_solid(cell: Vector2i, blocked: bool) -> void:
 ```bash
 git clone --depth 1 --branch 4.5.2-stable https://github.com/godotengine/godot.git /tmp/godot-audit/godot
 ```
+
+### Upstream AI contribution policy (2026-07-01)
+
+Godot Foundation bans most genAI in **engine** PRs [@sources/godot-engine-ai-contribution-policy-2026-07-01.md]. **Does not affect** castle-sim private repo or MCP harness. Brief: gitignored `briefs/research/godot-upstream-pr-ai-policy-fence.md`.
 
 ## Dead Ends
 

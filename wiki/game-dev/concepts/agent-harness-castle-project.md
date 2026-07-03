@@ -26,9 +26,11 @@ related:
   - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
   - sources/inbox-arxiv-reject-batch-2026-06-30.md
   - sources/protocolbench-llm-multiagent-protocol-shelf-2026-06-24.md
+  - sources/godot-engine-ai-contribution-policy-2026-07-01.md
+  - entities/engines/godot-4.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-01
+updated: 2026-07-03
 ---
 
 ## Relations

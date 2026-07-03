@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-03] ingest | AV sim reject + Godot upstream AI policy
+
+- Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-07-03.md (2607.01382 reject); archived; inbox cleared
+- News: @sources/godot-engine-ai-contribution-policy-2026-07-01.md → @entities/engines/godot-4.md + @concepts/agent-harness-castle-project.md
+- Phase-0: none (CommonRoad-Game is AV sim; policy is governance not a tool)
+- Brief: `briefs/research/godot-upstream-pr-ai-policy-fence.md`; synced → `castle-sim/briefs/research/`
+- Sweep: @sweeps/2026-07-03-daily.md
+
+---
+
 ## [2026-07-02] ingest | VR dynamic feedback + quant reject + genre news
 
 - Inbox: 2 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-02.md (2606.29018 reject → @osint-wiki; **2606.26925 ingest**); archived; inbox cleared

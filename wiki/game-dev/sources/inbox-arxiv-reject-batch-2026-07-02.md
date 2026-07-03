@@ -4,6 +4,7 @@ type: source
 tags: [source, triage, reject, arxiv, ingest]
 keywords: [arxiv, triage, reject, ingest, digest]
 related:
+  - sources/inbox-arxiv-reject-batch-2026-07-03.md
   - sources/inbox-arxiv-reject-batch-2026-07-01.md
   - sources/arxiv-2606.26925-vr-dynamic-feedback-pointing-2026-07-02.md
   - meta/cross-wiki-routing.md
