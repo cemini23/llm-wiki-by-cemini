@@ -14,6 +14,8 @@ server** (decommissioned 2026-06-14).
 | `LESSONS.md`   | Meta-lessons about *how we work* (distinct from `wiki/log.md`).   |
 | `wiki/`        | The library: `index.md`, `log.md`, `sources/`, `entities/`, `concepts/`. |
 | `scripts/`     | Python helpers — docx extraction, stub generation, lint, gap detection. |
+| `agents/`      | Agent harnesses (e.g. `devfun-poker-arena/` — tracked briefs + examples). |
+| `.cursor/`     | Cursor rules + federation skills (`/goal`, `to-issues`, `grill-with-docs`). |
 | `.gitignore`   | This file's enforcement layer.                                    |
 
 ## What's not tracked (and why)
@@ -38,7 +40,7 @@ server** (decommissioned 2026-06-14).
      historical provenance only (host deleted 2026-06-14).
 
 2. **The wiki** (`wiki/`, tracked) — LLM-written, human-read, cross-linked
-   markdown. **Canonical on laptop git** (~455+ pages). Federation wikis in
+   markdown. **Canonical on laptop git** (~536 pages). Federation wikis in
    sibling repos under `~/Desktop/projects/`.
 
 3. **The schema** (`CLAUDE.md`, tracked) — how the LLM runs the wiki.
@@ -79,3 +81,26 @@ python3 scripts/skill_audit.py briefs/<file>.md
 - **CCC wiki** and six public domain wikis — see `CLAUDE.md` Related Wikis table
 
 See `CLAUDE.md` for full operating schema and `ROADMAP.md` for active workstreams.
+
+## Collaborators
+
+**New to this repo?** Read in order:
+
+1. **`CLAUDE.md`** — how agents and humans operate the wiki (ingest, query, lint, distribution).
+2. **`wiki/index.md`** — page catalog; **`wiki/log.md`** — recent operations.
+3. **`.cursor/README.md`** — MCP setup (lazy-tool must be **On** when this folder is open).
+
+**What stays private (gitignored):**
+
+- **`briefs/`** — prod / CCC staging briefs (server IPs, deploy steps). Not in git by design.
+- **`.local/`** — SSH targets, API keys, reports. Never commit.
+- **`research to be indexed/`** — transient inbox before ingest.
+
+**TipDrop (David):** product wiki + handoff briefs live in **`tipdrop-workspace-kit`** (`~/Desktop/projects/tipdrop-workspace-kit`). This repo holds research canon; TipDrop kit gets operator-actionable briefs that cite `@osint-wiki/...` pages. Ritual: `tipdrop-workspace-kit/briefs/OSINT-HANDOFF-INGEST-RITUAL.md`.
+
+**Health checks before pushing:**
+
+```bash
+python3 scripts/wiki_lint.py
+python3 scripts/ingest_session_gate.py
+```
