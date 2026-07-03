@@ -4,13 +4,15 @@ type: entity
 tags: [tool, skill-eval, nodejs, defer, k38]
 keywords: [agent, skills, eval, defer, three-surface-eval]
 related:
+  - sources/eval-huggingface-models-v2-2026-07-03.md
+  - entities/tools/agentskills.md
   - sources/link-evaluation-brief-trading-stack.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
   - entities/tools/agent-skills.md
 maturity: draft
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-07-03
 ---
 
 ## Relations

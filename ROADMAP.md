@@ -40,6 +40,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 - **Cursor audit (2026-07-02)** — gate via harness, pin-driven engine, cemini bundle whitelist. Synthesis `2026-07-02_postfix-cursor-audit-synthesis-glm-kimi.md`.
 - **K139 ship (2026-07-01)** — gin hu004 vendored; live reverted to cemini (+19 vs +7.3 TS @ 5k). Brief §Update 2026-07-02.
 
+## Current state (2026-07-03 — K141)
+
+- **K141 ingest (2026-07-03)** — 2 eval docx + 2 arXiv from inbox. **4 sources + 2 concepts + 9 entities + 3 updates.** Adopt: page-agent, strix, chrome-devtools-mcp, agentskills, Unlimited-OCR; SWE-INTERACT + LMP REFERENCE briefs. **TipDrop/David:** Unlimited-OCR M4 + rampart M2. **Phase-0:** `adopt_k141_phase0.sh`. Archive → egress-fi; inbox cleared.
+
 ## Current state (2026-07-02 — K140)
 
 - **K140 ingest (2026-07-02)** — 3 arXiv from inbox. **3 sources + 2 concepts + 2 updates.** Kalshi CPI distributional beliefs (30040) → pm prod tail brief; Zeta* path planning (00065) → castle-sim brief; AI-native games survey (00527) → game-dev + poker rubric briefs. **Phase-0:** `adopt_k140_phase0.sh` (REFERENCE). Archive → egress-fi; inbox cleared.

@@ -6,17 +6,20 @@ keywords: [influence map, cluster scripts, hierarchical Q-table, micromanagement
 related:
   - sources/arxiv-hrl-influence-map-starcraft-2606.30092-2026-06-30.md
   - concepts/castle-sim-pathfinding-steals.md
+  - concepts/latent-maps-performance-counterfactual-feedback.md
+  - sources/arxiv-2607.00190-latent-maps-performance-2026-07-03.md
   - concepts/active-project-research-routing.md
   - concepts/rl-marl-research.md
 maturity: draft
 created: 2026-06-30
-updated: 2026-06-30
+updated: 2026-07-03
 ---
 
 ## Relations
 
 - @sources/arxiv-hrl-influence-map-starcraft-2606.30092-2026-06-30.md — K136 REFERENCE source (HRL-IM/CBS)
 - @concepts/castle-sim-pathfinding-steals.md — K126 route-diversity steals (complementary layer)
+- @concepts/latent-maps-performance-counterfactual-feedback.md — K141 counterfactual coaching in latent space
 - @concepts/active-project-research-routing.md — brief → Game Dev wiki
 
 ## Raw Concept

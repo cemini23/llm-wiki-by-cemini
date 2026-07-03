@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-07-03] ingest | K141 — agent harness eval + HF models + SWE-INTERACT + LMP
+
+- **Sources (4):** HF Model Evaluation 2 docx (20 URLs); Multi-Wiki Link Evaluation Plan 1 docx (20 URLs); arXiv 2606.30573 (SWE-INTERACT); arXiv 2607.00190 (Latent Maps of Performance)
+- **Concepts (2):** `@concepts/swe-interact-user-driven-coding-eval.md`, `@concepts/latent-maps-performance-counterfactual-feedback.md`
+- **Entities (9):** page-agent, strix, chrome-devtools-mcp, agentskills, cube-sandbox, unlimited-ocr, rampart, agents-a1, swe-interact
+- **Updates (3):** wiki-tooling-evaluation, castle-sim-rts-micromanagement-steals, agent-skills-eval
+- **Phase-0:** `scripts/adopt_k141_phase0.sh`
+- **Briefs:** CCC ×3; cybersec strix; poker SWE-INTERACT; game-dev LMP; TipDrop/David ×2 (Unlimited-OCR, rampart)
+- **Archive:** egress-fi osint (4 inbox files); inbox cleared
+
 ## [2026-07-02] query | ICE turnkey Tier 4 — Montgomery recorder + SEC falsifier
 
 - **Tier 4 tracks:** recorder Montgomery TX #1 (Kofile automated), SEC 0×8-K Jun–Jul, Jul 7 catalyst calendar, Benchmark CXW PT $36 `[TENTATIVE]`

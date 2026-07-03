@@ -12,8 +12,23 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **520 canonical stubs** (K140 macro beliefs + path planning + AI-native survey +3 sources +2 concepts +2 updates)
+Total: **536 canonical stubs** (K141 agent harness + HF eval + SWE-INTERACT + LMP +4 sources +2 concepts +9 entities +3 updates)
 
+
+### k141-ingest (15)
+
+- [Hugging Face Model Evaluation 2.docx (2026-07-03)](sources/eval-huggingface-models-v2-2026-07-03.md) — 20 HF models; Unlimited-OCR + rampart → TipDrop. — `docx` [+k141]
+- [Multi-Wiki Link Evaluation Plan 1.docx (2026-07-03)](sources/eval-multi-wiki-agent-harness-v2-2026-07-03.md) — page-agent, strix, agentskills Adopt. — `docx` [+k141]
+- [SWE-INTERACT — arXiv 2606.30573](sources/arxiv-2606.30573-swe-interact-2026-07-03.md) — multi-turn user-driven coding eval. — `pdf` [+k141]
+- [Latent Maps of Performance — arXiv 2607.00190](sources/arxiv-2607.00190-latent-maps-performance-2026-07-03.md) — SC2 counterfactual feedback. — `pdf` [+k141]
+- [SWE-INTERACT user-driven coding eval (K141)](concepts/swe-interact-user-driven-coding-eval.md) — 50%→25% transfer gap. — concept [+k141]
+- [Latent Maps counterfactual feedback (K141)](concepts/latent-maps-performance-counterfactual-feedback.md) — Guided VAE coaching. — concept [+k141]
+- [page-agent (Alibaba)](entities/tools/page-agent.md) — K141 Adopt MIT. — entity [+k141]
+- [Strix pentest agent](entities/tools/strix.md) — K141 Adopt Apache-2.0. — entity [+k141]
+- [chrome-devtools-mcp](entities/tools/chrome-devtools-mcp.md) — K141 Adopt. — entity [+k141]
+- [agentskills SKILL.md standard](entities/tools/agentskills.md) — K141 Adopt. — entity [+k141]
+- [Unlimited-OCR (Baidu)](entities/tools/unlimited-ocr.md) — K141 Adopt → TipDrop. — entity [+k141]
+- [Rampart PII redaction](entities/tools/rampart.md) — K141 CONDITIONAL-GO → TipDrop M2. — entity [+k141]
 
 ### k140-ingest (8)
 
