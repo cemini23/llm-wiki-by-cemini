@@ -175,7 +175,12 @@ def build_bundle(out_zip: Path) -> Path:
             for pkg in _vendor_packages():
                 src = site_packages / pkg
                 if src.is_dir():
-                    shutil.copytree(src, vendor / pkg, dirs_exist_ok=True)
+                    shutil.copytree(
+                        src,
+                        vendor / pkg,
+                        dirs_exist_ok=True,
+                        ignore=shutil.ignore_patterns("__pycache__", "*.pyc", "*.pyo"),
+                    )
                 elif src.with_suffix(".py").is_file():
                     shutil.copy2(src.with_suffix(".py"), vendor / f"{pkg}.py")
         if engine in ("gin", "gin_hu004", "hu004"):
@@ -193,7 +198,7 @@ def build_bundle(out_zip: Path) -> Path:
             out_zip.unlink()
         with zipfile.ZipFile(out_zip, "w", zipfile.ZIP_DEFLATED) as zf:
             for path in root.rglob("*"):
-                if path.is_file():
+                if path.is_file() and "__pycache__" not in path.parts:
                     zf.write(path, path.relative_to(root).as_posix())
     return out_zip
 

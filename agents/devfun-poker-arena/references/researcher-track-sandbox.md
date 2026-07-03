@@ -45,9 +45,11 @@ uv run python examples/submit_sandbox_pvp.py --discard-active --competition-id "
 
 **Leaderboard:** ranks **best finalized** bot (TrueSkill μ−σ). Replace does not reset LB until new bot finishes a season.
 
-**S2 public LB visibility [TENTATIVE 2026-07-01]:** Discord (#researcher-track) — S2 runs longer seasons; **public leaderboard may show zero agents until ~20k hands**. Track score on agent page + `--poll` until gate clears. S1 leaders (~21k–31k hands) are not comparable cadence to early S2 5k seasons.
+**S2 public LB visibility [SUPERSEDED on public ladder]:** `headsup-ladder.md` — listed once `pvp.status=Active`; no hidden-until-20k gate. The **20k-hand** mark is a **representative-bot** preference (longest sample wins on agent page), not LB visibility. Legacy beta S2 Discord note may still apply to `cmr0jmqlt` only.
 
-**Active engine (2026-07-03):** `CEMINI_SANDBOX_ENGINE=cemini` (K131b). Pin: `config/researcher_sandbox_submit.pin.json` → comp **`cmr3n8tft01nilecm1u5jlny7`** (`[poker] heads-up ladder S1`, `skillFile: headsup-ladder.md`). Legacy beta S2 `cmr0jmqlt08bi13n8neory9xb` left running on submission `f8d4f05f` — not the public ladder. **Claim:** use `GET /auth/claim/status` (`claimed: true`, `@Cemini23`) — `/agent/me` `claimed` is null. **Gin Option A archived:** `8545120c` finished +7.3 TS @ 5k.
+**Arena onboarding (canonical):** `https://arena.dev.fun/skills/arena.md` → Step 0 returning player; competition skill `headsup-ladder.md` for submit/poll loop (no `/texas/*`).
+
+**Active engine (2026-07-03):** `CEMINI_SANDBOX_ENGINE=cemini` (K131b). Pin: comp **`cmr3n8tft01nilecm1u5jlny7`**, submission **`8e0c63f0`** (`pvp: Active`, continuous). Legacy S2 `f8d4f05f` on `cmr0jmqlt` — separate track. **Claim:** `GET /auth/claim/status` (`@Cemini23`, Active).
 
 **Prod auto-submit:** `cemini-researcher-sandbox-submit.timer` (00/06/12/18:12 UTC) → `scripts/run_researcher_sandbox_auto_submit.sh` → `examples/researcher_sandbox_auto_submit.py`: try `--replace`; on `sandbox_agent_already_running` **wait for active PvP to finish**, then submit **fresh** bundle (no replace). Pin: `config/researcher_sandbox_submit.pin.json`.
 

@@ -126,7 +126,22 @@ def _apply_cold_start_guard(
 
 
 def build_opponent_hud(table: dict) -> dict:
-    from finale_villain import finale_exploit_enabled, overlay_finale_hud, resolve_finale_villain_from_context  # noqa: WPS433
+    try:
+        from finale_villain import (  # noqa: WPS433
+            finale_exploit_enabled,
+            overlay_finale_hud,
+            resolve_finale_villain_from_context,
+        )
+    except ImportError:
+        def finale_exploit_enabled() -> bool:  # noqa: E402
+            return False
+
+        def overlay_finale_hud(hud: dict, _ctx: dict, _table: dict) -> dict:  # noqa: E402
+            return hud
+
+        def resolve_finale_villain_from_context(**_kwargs: object) -> str:  # noqa: E402
+            return "none"
+
     from villain_archetype import (  # noqa: WPS433
         archetype_to_legacy_mode,
         classify_villain_archetype,

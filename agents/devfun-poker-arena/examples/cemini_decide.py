@@ -88,8 +88,18 @@ from s1b_exploit import (  # noqa: E402
     try_hu_bb_value_3bet_vs_steal,
     try_hu_three_bet_vs_aggro,
 )
-from finale_exploit import apply_finale_action_overlay  # noqa: E402
-from finale_villain import finale_exploit_enabled, overlay_finale_hud  # noqa: E402
+try:
+    from finale_exploit import apply_finale_action_overlay  # noqa: E402
+    from finale_villain import finale_exploit_enabled, overlay_finale_hud  # noqa: E402
+except ImportError:
+    def finale_exploit_enabled() -> bool:  # noqa: E402
+        return False
+
+    def overlay_finale_hud(hud: dict, ctx: dict, table: dict) -> dict:  # noqa: E402
+        return hud
+
+    def apply_finale_action_overlay(**_kwargs: Any) -> None:  # noqa: E402
+        return None
 from villain_archetype import premium_concentration_index, seat_matrix_v2_enabled  # noqa: E402
 from jackpot_27_decide import maybe_hunt_action  # noqa: E402
 from jackpot_rules import royal_showdown_action, royal_showdown_mode  # noqa: E402
