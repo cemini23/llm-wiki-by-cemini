@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-07-03 — K141 partial-spec eval ship)
+
+- **K141 SWE-INTERACT steal** — phased rubric reveal in `sandbox_partial_spec_eval.py`; tri-verifier attaches `partial_spec` block. Brief `2026-07-03_k141-swe-interact-multiturn-steal.md` § Shipped.
+
 ## Current state (2026-06-08 — human-table finale exploit)
 
 - **Finale exploit layer** — `CEMINI_FINALE_VILLAIN=durrrr|jungleman` overlay shipped; excluded from default ladder bundle. Ladder **#1/17** @ 5,400h TS ~114 (`f8d4f05f` continuous). Brief `2026-06-08_human-table-exploit-layer-brief.md`. **Open:** X claim; finale-only submit after qualify.

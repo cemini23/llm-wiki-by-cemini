@@ -13,6 +13,7 @@ No external deps beyond stdlib.
 from __future__ import annotations
 
 import json
+import os
 import re
 from typing import Any, Optional
 
@@ -427,7 +428,7 @@ def score_trajectory(events: list[dict[str, Any]]) -> dict[str, Any]:
                             dim_counts[dim_name]["hazards"].get(hazard, 0) + 1
                         )
 
-    return {
+    result = {
         "trajectory_pass": passed == total and total > 0,
         "summary": {
             "total_actions": total,
@@ -438,6 +439,26 @@ def score_trajectory(events: list[dict[str, Any]]) -> dict[str, Any]:
         "dimensions": dim_counts,
         "actions": scored_actions,
     }
+    return _attach_partial_spec(result, events)
+
+
+def _attach_partial_spec(result: dict[str, Any], events: list[dict[str, Any]]) -> dict[str, Any]:
+    """K141 phased rubric eval — supplemental; does not change trajectory_pass by default."""
+    try:
+        from sandbox_partial_spec_eval import verify_partial_spec_trajectory
+
+        pspec = verify_partial_spec_trajectory(events, base_score=result)
+        result["partial_spec"] = pspec
+        if os.environ.get("CEMINI_PARTIAL_SPEC_GATE", "").strip().lower() in ("1", "true", "yes"):
+            result["trajectory_pass"] = bool(
+                result.get("trajectory_pass") and pspec.get("partial_spec_pass")
+            )
+    except Exception as exc:  # pragma: no cover - scenario file missing in broken deploy
+        result["partial_spec"] = {
+            "partial_spec_pass": False,
+            "error": str(exc),
+        }
+    return result
 
 
 def format_score_report(score_result: dict[str, Any]) -> str:

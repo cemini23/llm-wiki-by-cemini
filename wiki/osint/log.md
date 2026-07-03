@@ -7,6 +7,7 @@
 - **Entities (9):** page-agent, strix, chrome-devtools-mcp, agentskills, cube-sandbox, unlimited-ocr, rampart, agents-a1, swe-interact
 - **Updates (3):** wiki-tooling-evaluation, castle-sim-rts-micromanagement-steals, agent-skills-eval
 - **Phase-0:** `scripts/adopt_k141_phase0.sh`
+- **Poker ship (2026-07-03):** K141 partial-spec eval in tri-verifier (`sandbox_partial_spec_eval.py`)
 - **Briefs:** CCC ×3; cybersec strix; poker SWE-INTERACT; game-dev LMP; TipDrop/David ×2 (Unlimited-OCR, rampart)
 - **Archive:** egress-fi osint (4 inbox files); inbox cleared
 

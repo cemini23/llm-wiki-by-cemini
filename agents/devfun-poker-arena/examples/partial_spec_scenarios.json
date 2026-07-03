@@ -1,0 +1,20 @@
+{
+  "researcher_rubric_reveal_v1": {
+    "description": "Join with incomplete rubric; axis gates revealed on turn 2 (K141 SWE-INTERACT steal).",
+    "reveal_at_action": 2,
+    "phase1_dimensions": ["mechanical_invariants", "correctness"],
+    "phase2_dimensions": [
+      "mechanical_invariants",
+      "correctness",
+      "efficiency",
+      "critical_point",
+      "tool_rl_collapse"
+    ],
+    "memory": {
+      "forbid_generic_reasoning_after_reveal": true
+    },
+    "rework": {
+      "max_action_flips_per_street": 2
+    }
+  }
+}

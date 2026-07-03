@@ -8,6 +8,7 @@ PYTEST_ARGS=(
   tests/test_sandbox_tri_verifier.py
   tests/test_sandbox_rubric_epoch.py
   tests/test_tool_rl_collapse_detector.py
+  tests/test_sandbox_partial_spec_eval.py
 )
 if [[ -f tests/test_sandbox_mechanical_invariants.py ]]; then
   PYTEST_ARGS+=(tests/test_sandbox_mechanical_invariants.py)

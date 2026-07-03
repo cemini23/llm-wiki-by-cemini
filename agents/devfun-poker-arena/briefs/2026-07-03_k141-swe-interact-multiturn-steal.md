@@ -36,6 +36,14 @@ Researcher Round offline patches arrive as **evolving briefs** — vague initial
 - Draft one **partial-spec** bundle scenario for private regression (join with incomplete rubric → reveal on turn 2).
 - Read Apache-2.0 `scaleapi/SWE-Interact` user-sim schema before building custom sim.
 
+## Shipped
+
+- `examples/sandbox_partial_spec_eval.py` — phased rubric reveal (vague start, progressive reveal, requirement memory, rework)
+- `examples/partial_spec_scenarios.json` — default `researcher_rubric_reveal_v1` (reveal at action 2)
+- `sandbox_tri_verifier.score_trajectory` attaches `partial_spec` block; strict gate via `CEMINI_PARTIAL_SPEC_GATE=1`
+- `tests/test_sandbox_partial_spec_eval.py` (6 tests); wired in `run_sandbox_tri_verifier.sh`
+- Bundle ships `partial_spec_scenarios.json` in assets
+
 ## Sources
 
 - [Source: arXiv:2606.30573 (retrieved 2026-07-03)]

@@ -45,6 +45,8 @@ What prompted this page: K141 arXiv **2606.30573** — orthogonal eval axis for 
 
 Briefs: `agents/devfun-poker-arena/briefs/2026-07-03_k141-swe-interact-multiturn-steal.md`, `briefs/ccc-2026-07-03_k141-swe-interact-harness-steal.md`
 
+**Shipped 2026-07-03 (poker arena):** `sandbox_partial_spec_eval.py` + `researcher_rubric_reveal_v1` scenario in tri-verifier harness.
+
 ## Snippets
 
 > "Tests whether agents can discover user intent, adapt to evolving requirements, and preserve correctness across turns." [Source: arxiv-2606.30573 §1 (retrieved 2026-07-03)]

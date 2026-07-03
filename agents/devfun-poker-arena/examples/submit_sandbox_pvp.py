@@ -151,6 +151,9 @@ def build_bundle(out_zip: Path) -> Path:
         traj_cfg = _EXAMPLES / "trajectory_bound_config.json"
         if traj_cfg.is_file():
             shutil.copy2(traj_cfg, assets / traj_cfg.name)
+        pspec_cfg = _EXAMPLES / "partial_spec_scenarios.json"
+        if pspec_cfg.is_file():
+            shutil.copy2(pspec_cfg, assets / pspec_cfg.name)
         priv = _EXAMPLES / "private"
         if priv.is_dir():
             shutil.copytree(priv, assets / "private", dirs_exist_ok=True)
