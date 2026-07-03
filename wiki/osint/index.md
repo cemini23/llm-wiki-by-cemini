@@ -12,8 +12,18 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **536 canonical stubs** (K141 agent harness + HF eval + SWE-INTERACT + LMP +4 sources +2 concepts +9 entities +3 updates)
+Total: **541 canonical stubs** (K142 multi-wiki URL eval +1 source +4 entities +2 updates)
 
+
+### k142-ingest (8)
+
+- [Multi-Wiki URL Evaluation.docx (2026-07-03)](sources/multi-wiki-url-evaluation-2026-07-03.md) — 20 URLs; OCR, CCC harnesses, TipDrop M2/M4. — `docx` [+k142]
+- [olmOCR (Ai2)](entities/tools/olmocr.md) — K142 Adopt Apache-2.0 → OSINT/TipDrop M4 OCR. — entity [+k142]
+- [claude-real-video](entities/tools/claude-real-video.md) — K142 Steal-from local video ingest. — entity [+k142]
+- [iFixAi](entities/tools/ifixai.md) — K142 Adopt Apache-2.0 → Cybersec/TipDrop M2 diagnostics. — entity [+k142]
+- [Meetily](entities/tools/meetily.md) — K142 Defer local ASR reference. — entity [+k142]
+- [Agent-Reach](entities/tools/agent-reach.md) — K142 refresh: Defer for TipDrop social ingest. — entity update [+k142]
+- [agent-skills (addyosmani)](entities/tools/agent-skills-addyosmani.md) — K142 refresh: selective adoption only. — entity update [+k142]
 
 ### k141-ingest (15)
 
@@ -783,7 +793,7 @@ Execution and reference venues wired into (or referenced by) the Cemini stack.
 - [Kalshi](entities/platforms/kalshi.md) — CFTC-regulated DCM for event contracts; primary prediction-market venue for Cemini — platform, prediction-markets, cemini-venue
 - [Polymarket](entities/platforms/polymarket.md) — On-chain prediction market (Polygon); cross-venue reference, not primary execution — platform, on-chain, cemini-venue-adjacent
 - [dev.fun Arena](entities/platforms/devfun-arena.md) — Poker Agent Challenge + Playground/Tournament seasons; researcher track sandbox (HU) — platform, poker, devfun, prediction-markets
-- [dev.fun Heads-Up PvP S3](entities/platforms/devfun-heads-up-pvp-s3.md) — Researcher HU sandbox candidate `cmqnvili…` [NEEDS VERIFICATION 2026-06-22] — entity, poker, researcher-track
+- [dev.fun Heads-Up PvP S3](entities/platforms/devfun-heads-up-pvp-s3.md) — Researcher HU sandbox candidate `cmqnvili…` (verification pending as of 2026-06-22) — entity, poker, researcher-track
 - [Hyperliquid](entities/platforms/hyperliquid.md) — On-chain perpetuals DEX; Agent-Wallet integration + Flashbots Protect — platform, crypto, cemini-venue
 - [OANDA](entities/platforms/oanda.md) — Forex/CFD broker; primary FX execution venue — platform, forex, cemini-venue
 - [Alpaca](entities/platforms/alpaca.md) — US equities + options broker (API-first); primary equities venue — platform, equities, cemini-venue

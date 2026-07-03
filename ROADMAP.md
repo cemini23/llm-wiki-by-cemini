@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-07-03 — K142)
+
+- **K142 ingest (2026-07-03)** — Multi-Wiki URL Evaluation docx + model-selection screenshot. **1 source + 4 entities + 2 updates.** Adopt: olmOCR, iFixAi, Caveman, Zero, Addy Agent Skills; Steal-from: Astryx, claude-real-video, Portable LLM Wiki; Defer: Agent-Reach, Meetily, Instatic, Langflow. **TipDrop/David:** olmOCR M4, Portable LLM Wiki OKF M4, iFixAi M2, Agent-Reach Defer. **Phase-0:** `adopt_k142_phase0.sh`.
+
 ## Current state (2026-07-03 — K141 partial-spec eval ship)
 
 - **K141 SWE-INTERACT steal** — phased rubric reveal in `sandbox_partial_spec_eval.py`; tri-verifier attaches `partial_spec` block. Brief `2026-07-03_k141-swe-interact-multiturn-steal.md` § Shipped.

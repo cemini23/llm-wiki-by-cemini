@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-07-03] ingest | K142 — multi-wiki URL eval + model-selection note
+
+- **Sources (1):** Multi-Wiki URL Evaluation docx (20 URLs) + `x.jpeg` operator model-selection note
+- **Entities (4 new + 2 updates):** olmOCR Adopt; claude-real-video Steal-from; iFixAi Adopt; Meetily Defer; Agent-Reach downgrade to Defer; Addy Agent Skills selective-adopt refresh
+- **Phase-0:** `scripts/adopt_k142_phase0.sh` + subagent source audits
+- **Briefs:** CCC ×6 (Astryx, Caveman, Zero, Agent Skills, Portable LLM Wiki, model selection); Cybersec iFixAi; TipDrop/David ×4 (olmOCR, iFixAi, Portable LLM Wiki, Agent-Reach Defer)
+- **Routing:** no cemini-prod scp; TipDrop pages/briefs staged in `tipdrop-workspace-kit`; CCC/Cybersec pages staged in sibling wikis
+
 ## [2026-07-03] ingest | K141 — agent harness eval + HF models + SWE-INTERACT + LMP
 
 - **Sources (4):** HF Model Evaluation 2 docx (20 URLs); Multi-Wiki Link Evaluation Plan 1 docx (20 URLs); arXiv 2606.30573 (SWE-INTERACT); arXiv 2607.00190 (Latent Maps of Performance)
@@ -293,7 +301,7 @@
 
 ## [2026-06-22] query | Researcher pre-launch polish (K125 P1 + MAFP + HU PvP S3 stub)
 
-- **Entity:** `@entities/platforms/devfun-heads-up-pvp-s3.md` — `cmqnvili2002gwb82l1qba0gm` [NEEDS VERIFICATION 2026-06-22]
+- **Entity:** `@entities/platforms/devfun-heads-up-pvp-s3.md` — `cmqnvili2002gwb82l1qba0gm` (verification pending as of 2026-06-22)
 - **Agent:** K125 P1 `CEMINI_TRAJECTORY_BOUND` wrapper on `cemini_decide._build`; researcher apply enables bound + MAFP; jun21 checklist runs MAFP if chart missing
 - **Updates:** `@entities/platforms/devfun-arena.md`, `@concepts/devfun-researcher-track-readiness-2026-06.md`
 
@@ -2574,7 +2582,7 @@ Bidirectional gaps 0 after fixing quant-finance ↔ push-response. index.md rows
 - **Core extraction (load-bearing)**: asymmetric-penalty equation `E_q[r(criticize,q)] > E_q[r(endorse,q)] ∀ P(q)` (distribution-independent); 5 output patterns; 6-category Rhetorical Catalog (replication protocol: ≥4 of 6 categories fire on any sufficiently complex document); 5-tell Forensic Scorecard (0-2 genuine / 3-5 suspicious / 6+ LLM artifact); 4 mitigations (training / inference / architecture / social layers).
 - **Why it matters for Cemini**: (1) **reviewer-agent (K37) gets structural justification** as Mitigation 3+4 in miniature; (2) **`scripts/skill_audit.py` gets a steal-candidate** — opt-in `--rlhf-tell-mode` flag could port the 5-tell scorecard (FOLLOW-UP brief, user-gated, **deferred**); (3) **the mirror failure mode (eval-brief endorsement direction)** provides structural explanation for K28+K30+K38's 6 mischaracterization catches.
 - **Sibling preference-data failure taxonomy now codified**: typicality bias (VS / K39) + asymmetric-penalty bias (this / K40) + sycophancy (Sharma 2024). All three are data-level, all three survive perfect reward models, all three have training-free inference-time mitigations.
-- **NEEDS VERIFICATION 2026-05-11** flagged on two empirical anchors: (1) "ARK Research Division" affiliation has no independent web presence; (2) Pangram Labs Nov 2025 21%-of-75800-ICLR-2026-reviews-AI-generated finding is cited but original Pangram report not in wiki — independent methodology audit required before treating as settled fact.
+- **Verification pending as of 2026-05-11** on two empirical anchors: (1) "ARK Research Division" affiliation has no independent web presence; (2) Pangram Labs Nov 2025 21%-of-75800-ICLR-2026-reviews-AI-generated finding is cited but original Pangram report not in wiki — independent methodology audit required before treating as settled fact.
 - **Dead Ends documented**: Patent Clerk Test (Einstein-as-rejected-author thought experiment) is rhetorically powerful but **structurally unfalsifiable** — counterfactual cannot be tested; "Ghost Committee" / "automated stagnation engine" framings are stylistic, not analytic — do NOT import into Cemini wiki narrative voice.
 - **Adoption decisions**: NO author entity page (single-author, self-published, no independent corroboration of affiliation). NO cross-wiki routing (fully on-topic for OSINT). NO follow-up brief shipped yet — `skill_audit.py` integration deferred until user-gated authorization.
 - **Raw source move**: `scp` to `cemini-librarian:/opt/cemini-bulk/research/rlhf_critic_bias.pdf` + `rm` laptop copy + `ssh ls` verification.
