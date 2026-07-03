@@ -8,7 +8,12 @@ _EXAMPLES = Path(__file__).resolve().parents[1] / "examples"
 if str(_EXAMPLES) not in sys.path:
     sys.path.insert(0, str(_EXAMPLES))
 
-from cemini_decide import _blocks_open_steal, _preflop_open  # noqa: E402
+from cemini_decide import (  # noqa: E402
+    _blocks_open_steal,
+    _preflop_open,
+    _preflop_pot_committed_should_call,
+    _preflop_vs_bet,
+)
 
 
 def test_blocks_j2o_co_steal():
@@ -48,3 +53,41 @@ def test_overcommit_fold_weak_hand():
     table = {"selfSeatNumber": 1, "seats": [{"seatNumber": 1, "stackChips": 500}]}
     assert _overcommit_should_fold(table, "74o", 0.35, 200) is True
     assert _overcommit_should_fold(table, "AKs", 0.60, 200) is False
+
+
+def test_preflop_pot_committed_call_guard():
+    assert _preflop_pot_committed_should_call(50, 1900, ["fold", "call"]) is True
+    assert _preflop_pot_committed_should_call(200, 300, ["fold", "call"]) is False
+
+
+def test_preflop_vs_bet_calls_when_pot_committed_with_weak_ace():
+    allowed = {
+        "canFold": True,
+        "canCall": True,
+        "availableActions": ["fold", "call"],
+        "callChips": 50,
+    }
+    table = {
+        "selfSeatNumber": 1,
+        "bigBlindChips": 20,
+        "potChips": 1900,
+        "allowedActions": allowed,
+        "seats": [{"seatNumber": 1, "stackChips": 50}],
+    }
+    chart = {"hand_class": "A6o", "position": "SB", "suggested_action": "fold"}
+
+    action, amount = _preflop_vs_bet(
+        chart,
+        allowed,
+        ["fold", "call"],
+        equity=0.25,
+        pot_odds=50 / 1950,
+        call_chips=50,
+        pot=1900,
+        in_position=False,
+        table=table,
+        hero_stack_chips=50,
+        big_blind=20,
+    )
+
+    assert (action, amount) == ("call", None)

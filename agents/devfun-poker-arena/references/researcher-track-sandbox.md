@@ -49,7 +49,7 @@ uv run python examples/submit_sandbox_pvp.py --discard-active --competition-id "
 
 **Arena onboarding (canonical):** `https://arena.dev.fun/skills/arena.md` → Step 0 returning player; competition skill `headsup-ladder.md` for submit/poll loop (no `/texas/*`).
 
-**Active engine (2026-07-03):** `CEMINI_SANDBOX_ENGINE=cemini` (K131b). Pin: comp **`cmr3n8tft01nilecm1u5jlny7`**, submission **`8e0c63f0`** (`pvp: Active`, continuous). Legacy S2 `f8d4f05f` on `cmr0jmqlt` — separate track. **Claim:** `GET /auth/claim/status` (`@Cemini23`, Active).
+**Active engine (2026-07-03):** `CEMINI_SANDBOX_ENGINE=cemini` (K131b). Pin: comp **`cmr3n8tft01nilecm1u5jlny7`**, submission **`cef05ccb`** (`pvp: Active`, continuous) after replacing `8e0c63f0` for the weak-Ax pot-committed fold leak. Legacy S2 `f8d4f05f` on `cmr0jmqlt` — separate track. **Claim:** `GET /auth/claim/status` (`@Cemini23`, Active).
 
 **Prod auto-submit:** `cemini-researcher-sandbox-submit.timer` (00/06/12/18:12 UTC) → `scripts/run_researcher_sandbox_auto_submit.sh` → `examples/researcher_sandbox_auto_submit.py`: try `--replace`; on `sandbox_agent_already_running` **wait for active PvP to finish**, then submit **fresh** bundle (no replace). Pin: `config/researcher_sandbox_submit.pin.json`.
 

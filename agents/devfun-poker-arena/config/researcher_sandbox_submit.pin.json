@@ -2,8 +2,9 @@
   "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "8e0c63f0-ba0c-469d-9dd4-443a1666920b",
+  "activeSubmissionId": "cef05ccb-1693-44d7-96a3-1bfc4925e57c",
   "watchSubmissionIds": [
+    "8e0c63f0-ba0c-469d-9dd4-443a1666920b",
     "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
     "0175ce41-8b0a-4df6-b794-dbb6c7413022",
     "3b48d01d-3f33-4467-a108-8111d03c2163"
@@ -14,7 +15,7 @@
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
   "agentVersion": "researcher-ladder-s1.cemini-k131b-finish.2026-07-03",
   "sandboxEngine": "cemini",
-  "gitCommit": "f159d22",
-  "pinnedAt": "2026-07-03T13:15:00Z",
-  "notes": "Public heads-up ladder S1 (headsup-ladder.md). Migrated from legacy beta S2 cmr0jmqlt. Fresh submit 2026-07-03."
+  "gitCommit": "",
+  "pinnedAt": "2026-07-03T20:30:30Z",
+  "notes": "Public heads-up ladder S1. Replaced 8e0c63f0 after 50-replay audit found weak-Ax pot-committed preflop folds (-950/-940); cef05ccb active with pot-committed call guard."
 }

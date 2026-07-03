@@ -8080,3 +8080,9 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **poll_ladder_rank.py** — claim from `/auth/claim/status` (`@Cemini23` Active); comp from pin
 - **Ops** — `scripts/rsync_poker_arena_code.sh` (never overwrite prod creds); restored `cmpy4lcyi001y11vnekn1zlo3` creds after accidental dry-creds rsync
 
+## [2026-07-03] fix | Heads-up ladder weak-Ax pot-committed fold leak
+
+- **Audit** — exported S1 ladder recent tables/replays (`reports/researcher-round/s1-ladder-audit-20260703T2024Z` on prod): 50 verified hero replays vs `cosmometrics` / Luigi v4, 16–34, two catastrophic uncontested preflop losses (`A6o -950`, `A2s -940`) after ~95% stack commitment
+- **Patch** — `cemini_decide.py` preflop pot-committed call guard (`call / (pot + call) <= 10%`) before weak-hand stackoff folds; regression in `test_cemini_preflop_guards.py`
+- **Gate** — focused pytest PASS; `run_hu_sandbox_gate.sh --hands 100` PASS (+20 bb/100 tight smoke; tri-verifier PASS)
+- **Submit** — replaced `8e0c63f0` with `cef05ccb-1693-44d7-96a3-1bfc4925e57c`; validation Succeeded, `pvp.status=Active`, continuous

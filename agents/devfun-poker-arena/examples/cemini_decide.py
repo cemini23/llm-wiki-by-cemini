@@ -2376,6 +2376,9 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     if pci <= 0.0 and hud.get("stats"):
         pci = premium_concentration_index(hud["stats"])
     arch = (hud.get("archetype") or "").lower()
+    if _preflop_pot_committed_should_call(call_chips, pot, available):
+        return "call", None
+
     if (pci >= 0.45 or arch == "premium_nit") and call_chips > 0:
         nit_premium = frozenset({
             "AA", "KK", "QQ", "JJ", "AKs", "AKo", "AQs",
@@ -2874,6 +2877,19 @@ def _preflop_stackoff_should_fold(
     ):
         return True
     return False
+
+
+def _preflop_pot_committed_should_call(
+    call_chips: int,
+    pot: int,
+    available: list,
+    *,
+    max_price: float = 0.10,
+) -> bool:
+    """Never fold the last few chips after already committing most of stack."""
+    if call_chips <= 0 or "call" not in available:
+        return False
+    return call_chips / max(pot + call_chips, 1) <= max_price
 
 
 def _weak_ace_offsuit(hc: str) -> bool:
