@@ -4,6 +4,7 @@ type: source
 tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, mis-route]
 related:
+  - sources/inbox-arxiv-reject-batch-2026-07-04.md
   - sources/inbox-arxiv-reject-batch-2026-07-02.md
   - sources/inbox-arxiv-reject-batch-2026-07-01.md
   - meta/cross-wiki-routing.md

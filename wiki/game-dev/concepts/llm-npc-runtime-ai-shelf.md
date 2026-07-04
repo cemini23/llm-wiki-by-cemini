@@ -16,9 +16,10 @@ related:
   - sources/unity-sentis-practical-shelf-2026-06-23.md
   - sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md
   - sources/hero-rl-llm-npc-springer-2026-06-26.md
+  - sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-29
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -51,6 +52,7 @@ updated: 2026-06-29
 | Unity Sentis (ONNX inference) | Small classifiers — difficulty, perception, gestures; **not LLMs** | Unity 6 only | Contrast shelf [@sources/unity-sentis-practical-shelf-2026-06-23.md] |
 | Krafton PUBG Ally | Co-playable squad teammate (gameplay agency, not chat-only) | UE + NVIDIA ACE | Industry ref [@sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md] |
 | HeRoN (Springer 2026) | Mediated RL + LLM adaptive NPC | Research framework | Academic WATCH [@sources/hero-rl-llm-npc-springer-2026-06-26.md] |
+| 36Kr expert roundtable | Chatbot NPC caution; AI-native loops over bolt-on dialogue | Industry commentary | Guardrail shelf [@sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md] |
 
 ### Indie / open-source implementations
 

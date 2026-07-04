@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-04] ingest | Urban planning + AV rejects, AI narrative guardrails
+
+- Inbox: 2 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-04.md (2408.05140 reject; 2607.01382 re-drop); archived; inbox cleared
+- News: @sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md → @concepts/llm-npc-runtime-ai-shelf.md + @concepts/agentic-npc-design-guardrails.md
+- Phase-0: none (CommonRoad-Game out of scope; no new game-dev tool repo)
+- Briefs: no new adoption brief; rsync `briefs/research/` → `castle-sim/briefs/research/` (parity)
+- Sweep: @sweeps/2026-07-04-daily.md
+
+---
+
 ## [2026-07-03] ingest | AV sim reject + Godot upstream AI policy
 
 - Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-07-03.md (2607.01382 reject); archived; inbox cleared

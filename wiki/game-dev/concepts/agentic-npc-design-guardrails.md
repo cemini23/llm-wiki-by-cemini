@@ -9,9 +9,10 @@ related:
   - sources/ubisoft-teammates-ai-experiment-2025.md
   - sources/exa-npc-pcg-ccgs-batch-2026-06-13.md
   - sources/morganpage-local-npc-dialogue-2026.md
+  - sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-15
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -29,6 +30,8 @@ Design framework for **adaptive NPCs** that do not break game balance, lore, or 
 > Scripted NPCs are **content**. Agentic NPCs are **systems**.
 
 Systems need policy, telemetry, replay, regression harnesses — not line-by-line script review.
+
+36Kr expert roundtable [@sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md] adds a narrative-design warning: generic "in-game Siri" NPCs often reduce authorial intent. Runtime AI should either be a bounded component in an AI-native loop or stay out of the shipped feature set.
 
 ### Failure modes
 
