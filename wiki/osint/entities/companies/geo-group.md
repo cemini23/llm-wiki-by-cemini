@@ -11,7 +11,7 @@ related:
   - concepts/geo-ice-turnkey-acquisition-thesis.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-29
+updated: 2026-07-03
 ---
 
 ## Relations
@@ -31,6 +31,12 @@ Entity stub from K114 ingest of operator-dropped GEO/ICE investigative briefs (2
 **The GEO Group, Inc.** — U.S. corrections / detention REIT operating private prisons and ICE detention facilities. NYSE: **GEO**.
 
 April 2026 brief cluster alleges advanced staging of a **multi-facility ICE turnkey acquisition**. Public reporting (May–Jun 2026) **confirms sale discussions** at both GEO and CoreCivic. Corporate jet **N5000P** (Geo Leasing LLC, Zoley manager; callsign **EJM55**) — operator-reported **two consecutive DC weekends** Jun 2026 **`[TENTATIVE routing]`**. See @concepts/geo-ice-turnkey-acquisition-thesis.md.
+
+**Contract-only precedent:** Delaney Hall (Newark) is company-owned GEO capacity under a **15-year fixed-price ICE support-services contract** announced Feb 2025, with exclusive ICE use, expected **>$60M annualized first-year revenue**, and estimated **~$1B** 15-year value. This is a live example of ICE obtaining exclusive company-owned capacity **without buying the deed**, reinforcing the current contract-continuity base case.
+
+**Jun 26 analyst read:** Northland raised GEO PT **$30 → $40** and kept Outperform, citing comfort that H2 2026 should be active and that timing around the government's private-detention-facility acquisition initiative remains on track `[CONFIRMED media / TENTATIVE model]`.
+
+**2026 standards / optics:** WaPo/Yahoo reported GEO privately asked ICE to remove state/local-law compliance language and support its detainee-work-program legal position; the 2026 National Detention Standards adopted some changes, including language that detainee volunteers are not employees entitled to wages/benefits. Bull read: operator-burden reduction. Bear read: litigation / ethics / headline risk.
 
 **Cemini posture:** OSINT entity page only — not wired to CeminiSuite trading stack.
 

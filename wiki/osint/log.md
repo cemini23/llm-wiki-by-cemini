@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-07-03] research | Agent-Reach CXW/GEO social sweep
+
+- **Agent-Reach/OpenCLI DRY_RUN:** X + Reddit sweep for CXW/GEO turnkey, Florence J&A, BOP privatization chatter; raw snapshot `.local/agent-reach-daily/2026-07-03/social-snapshot.json`
+- **Verified leads:** Northland PT $40 on both GEO/CXW; WaPo/Yahoo ICE standards changes after GEO outreach; CA commissary boycott / SB 941; Delaney Hall 15-year $1B contract-only precedent
+- **Updates (3):** `@concepts/ice-turnkey-research-backlog-2026-06-30.md`, `@entities/companies/geo-group.md`, `@entities/companies/corecivic.md`
+- **SEO handoff:** `@seo-wiki/briefs/2026-07-03_cxw-geo-outlier-front-to-back-thesis.md`
+- **Report:** `.local/reports/ice-turnkey-research/agent-reach-cxw-geo-2026-07-03.md`
+
 ## [2026-07-03] adopt | Agent Reach federation daily social lane
 
 - **OSINT daily digest:** added `scripts/agent_reach_daily_social.py` and `agent_reach_social` config for X/Twitter, Reddit, and Instagram OpenCLI queries; output remains `.local/agent-reach-daily/{date}/` DRY_RUN with wrapper validation and operator review.

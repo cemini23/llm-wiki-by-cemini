@@ -123,7 +123,10 @@ Handoff: `tipdrop-workspace-kit/briefs/2026-06-30_cxw-geo-ice-turnkey-david-hand
 | **4C — Florence wiki** | SPC vs CAFCC — `@entities/facilities/florence-az-detention-cluster.md` |
 | **4D — Jul 7 catalyst** | **5 days** — BL 3:30 Grayson / PC 6:00 de novo |
 | **4E — Montgomery deed** | Kofile: **no** grant-deed U.S. grantee Mar–Jul 2026 |
-| **4F — Benchmark CXW** | PT $36; 80% 2-facility sale ~$680M `[TENTATIVE]` — vs UW near-term 8-K neutral |
+| **4F — analyst revisions** | Benchmark CXW PT $36; **Northland CXW/GEO PT $40** with H2 2026 facility-acquisition timing "on track" `[CONFIRMED media / TENTATIVE model]` — vs UW near-term 8-K neutral |
+| **4G — Agent-Reach social scan** | X/Reddit sweep found WSB propagation of the "beds" thesis, plus leads on ICE 2026 standards, CA commissary boycott / SB 941, and BOP-closure misinformation |
+| **4H — contract-only precedent** | GEO Delaney Hall = company-owned facility, **15-year fixed-price ICE support-services contract**, ~$60M first-year annualized revenue / ~$1B value — supports contract-continuity base case |
+| **4I — operator-regulatory environment** | WaPo/Yahoo: GEO asked ICE to remove state/local-law and $1/day work-program language; 2026 standards adopted some requests. Bull for operator burden, bear for optics/litigation. |
 
 **Synthesis:** `.local/reports/ice-turnkey-research/tier4-track-2026-07-02.md`
 
@@ -141,3 +144,6 @@ Handoff: `tipdrop-workspace-kit/briefs/2026-06-30_cxw-geo-ice-turnkey-david-hand
 
 > Tier 0 synthesis: "Funding is not the bottleneck. Execution is bottlenecked by warehouse-scandal diligence chill, Schroyer confirmation pause, pricing stalemate, and falling ADP."
 > — [Source: `.local/reports/ice-turnkey-research/synthesis-tier0-2026-06-30.md` (2026-06-30)]
+
+> Northland raised GEO to $40 from $30 and CXW to $40 from $32 on Jun 26, citing increased comfort that H2 2026 is positioned to be active and that timing around the government's initiative to acquire private detention facilities remains on track.
+> — [Sources: TipRanks/TheFly GEO + CXW notes, 2026-06-26; Agent-Reach lead verified 2026-07-03]
