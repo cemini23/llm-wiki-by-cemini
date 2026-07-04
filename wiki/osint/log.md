@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-07-03] adopt | Agent-Reach wrapper-only local social snapshots
+
+- **Wrapper:** `scripts/agent_reach_wrapper/` — manual snapshot validator only; no browser cookies, profiles, live scraping, network calls, prod handoff, or Discord output.
+- **Controls:** source/domain/author allowlist, strict provenance schema, duplicate rejection, prompt-injection rejection, `operator_review: true`, workspace-confined `.local/agent-reach-wrapper/` output.
+- **Verdict:** `@entities/tools/agent-reach.md` updated to **Adopt wrapper-only**; upstream Agent-Reach direct integration remains blocked.
+
 ## [2026-07-03] ingest | K142 — multi-wiki URL eval + model-selection note
 
 - **Sources (1):** Multi-Wiki URL Evaluation docx (20 URLs) + `x.jpeg` operator model-selection note

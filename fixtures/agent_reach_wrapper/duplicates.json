@@ -1,0 +1,21 @@
+{
+  "connector": "manual_snapshot",
+  "captures": [
+    {
+      "source": "manual_snapshot",
+      "source_url": "https://x.com/osint_fixture/status/4001",
+      "author_or_channel": "@osint_fixture",
+      "captured_at": "2026-07-03T18:20:00Z",
+      "raw_text": "Synthetic duplicate fixture: the same social text appears twice.",
+      "license_or_terms_note": "Synthetic fixture for local validation only."
+    },
+    {
+      "source": "manual_snapshot",
+      "source_url": "https://reddit.com/r/osint_fixture/comments/4002/example",
+      "author_or_channel": "r/osint_fixture",
+      "captured_at": "2026-07-03T18:21:00Z",
+      "raw_text": "Synthetic duplicate fixture: the same social text appears twice.",
+      "license_or_terms_note": "Synthetic fixture for local validation only."
+    }
+  ]
+}

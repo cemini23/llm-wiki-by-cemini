@@ -1,0 +1,21 @@
+{
+  "connector": "manual_snapshot",
+  "captures": [
+    {
+      "source": "manual_snapshot",
+      "source_url": "https://x.com/osint_fixture/status/1001",
+      "author_or_channel": "@osint_fixture",
+      "captured_at": "2026-07-03T18:00:00Z",
+      "raw_text": "Synthetic fixture: public market chatter mentions unusual options volume in a broad market context.",
+      "license_or_terms_note": "Synthetic fixture for local validation only."
+    },
+    {
+      "source": "manual_snapshot",
+      "source_url": "https://reddit.com/r/osint_fixture/comments/1002/example",
+      "author_or_channel": "r/osint_fixture",
+      "captured_at": "2026-07-03T18:05:00Z",
+      "raw_text": "Synthetic fixture: community discussion asks whether volume is news driven or expiration related.",
+      "license_or_terms_note": "Synthetic fixture for local validation only."
+    }
+  ]
+}

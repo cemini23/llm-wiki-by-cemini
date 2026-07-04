@@ -24,7 +24,7 @@ clusters: [wiki-tooling, agent-harness, ocr, tipdrop]
 - @entities/tools/olmocr.md — Adopt, Apache-2.0; OSINT + TipDrop M4 PDF OCR
 - @entities/tools/claude-real-video.md — Steal-from, MIT; local video ingest pattern
 - @entities/tools/ifixai.md — Adopt, Apache-2.0; agent deception/compliance diagnostics
-- @entities/tools/agent-reach.md — Defer; social scraping value blocked by cookie/security risk
+- @entities/tools/agent-reach.md — Adopt wrapper-only; upstream scraping blocked by cookie/security risk
 - @entities/tools/meetily.md — Defer; local ASR engine useful but monolithic desktop shape
 - @entities/tools/agent-skills-addyosmani.md — Adopt selectively; avoid always-on context bloat
 - @concepts/cemini-wiki-ingest-workflow.md — ingestion pipeline target surface
@@ -53,8 +53,9 @@ K142 is a multi-wiki tool-eval batch centered on **OCR/OSINT extraction**, **age
 | Tier | Count | Items |
 |------|-------|-------|
 | **Adopt** | 5 | `allenai/olmocr`, `JuliusBrussee/caveman`, `Gitlawb/zero`, `ifixai-ai/iFixAi`, `addyosmani/agent-skills` |
+| **Adopt wrapper-only** | 1 | `Panniantong/Agent-Reach` local manual snapshot wrapper |
 | **Steal-from** | 3 | `facebook/astryx`, `HUANGCHIHHUNGLeo/claude-real-video`, `portablellm.wiki` |
-| **Defer** | 4 | `CoreBunch/Instatic`, `Panniantong/Agent-Reach`, `Zackriya-Solutions/meetily`, `langflow-ai/langflow` |
+| **Defer** | 3 | `CoreBunch/Instatic`, `Zackriya-Solutions/meetily`, `langflow-ai/langflow` |
 | **Reference-only** | 5 | `logto-io/logto`, `harvard-edge/cs249r_book`, `Shubhamsaboo/awesome-llm-apps`, `autonomous-ai/autonomous-computer`, `tasteskill.dev` |
 | **Reject** | 3 | `hcengineering/platform`, `microsoft/qlib`, `Archive228/loopkit` |
 
@@ -63,7 +64,7 @@ K142 is a multi-wiki tool-eval batch centered on **OCR/OSINT extraction**, **age
 - **OSINT / TipDrop M4:** `olmocr` is Adopt for complex PDFs, gated by local GPU/quality benchmarking against current parsers.
 - **OSINT multimedia:** `claude-real-video` is Steal-from for scene-aware frames + transcript manifests; do not adopt dependency until fast-cut/context behavior is benchmarked.
 - **Cybersec / TipDrop M2:** `iFixAi` is Adopt as an agent-output diagnostic harness, not as a legal compliance certification.
-- **TipDrop M4 social ingest:** Agent-Reach is downgraded to **Defer** because cookie/session reuse and setup blast radius dominate its scraping utility.
+- **OSINT / TipDrop social ingest:** Agent-Reach upstream direct integration stays **Defer**, but OSINT now **Adopts wrapper-only** for manual snapshots after local P0 tests and operator approval.
 - **CCC:** Astryx, Caveman, Zero, Addy Agent Skills, Portable LLM Wiki, and the `x.jpeg` model-selection note route to CCC as operator/harness material.
 
 ## Snippets

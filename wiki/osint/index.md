@@ -22,7 +22,7 @@ Total: **541 canonical stubs** (K142 multi-wiki URL eval +1 source +4 entities +
 - [claude-real-video](entities/tools/claude-real-video.md) — K142 Steal-from local video ingest. — entity [+k142]
 - [iFixAi](entities/tools/ifixai.md) — K142 Adopt Apache-2.0 → Cybersec/TipDrop M2 diagnostics. — entity [+k142]
 - [Meetily](entities/tools/meetily.md) — K142 Defer local ASR reference. — entity [+k142]
-- [Agent-Reach](entities/tools/agent-reach.md) — K142 refresh: Defer for TipDrop social ingest. — entity update [+k142]
+- [Agent-Reach](entities/tools/agent-reach.md) — K142 refresh: Adopt wrapper-only for local social snapshots; upstream direct integration blocked. — entity update [+k142]
 - [agent-skills (addyosmani)](entities/tools/agent-skills-addyosmani.md) — K142 refresh: selective adoption only. — entity update [+k142]
 
 ### k141-ingest (15)
@@ -91,7 +91,7 @@ Total: **541 canonical stubs** (K142 multi-wiki URL eval +1 source +4 entities +
 - [Red Queen controlled utility evolution](concepts/red-queen-controlled-utility-evolution.md) — epoch + selective erasure pattern. — concept [+k134]
 - [vercel-labs/deepsec](entities/tools/deepsec.md) — K134 Adopt Apache-2.0 AppSec scanner. — entity, tool, k134
 - [DeusData/codebase-memory-mcp](entities/tools/codebase-memory-mcp.md) — K134 CONDITIONAL-GO MIT MCP graph. — entity, tool, k134
-- [Panniantong/Agent-Reach](entities/tools/agent-reach.md) — K134 CONDITIONAL-GO social CLI. — entity, tool, k134
+- [Panniantong/Agent-Reach](entities/tools/agent-reach.md) — K134 CONDITIONAL-GO social CLI; K142 Adopt wrapper-only. — entity, tool, k134
 - [Anthropic-Cybersecurity-Skills](entities/tools/anthropic-cybersecurity-skills.md) — K134 Adopt skill corpus. — entity, tool, k134
 - [stealth-browser-mcp](entities/tools/stealth-browser-mcp.md) — K134 Steal-from (browser overlap). — entity, tool, k134
 - [daily_stock_analysis](entities/tools/daily-stock-analysis.md) — K134 Steal-from xsp GHA patterns. — entity, tool, k134

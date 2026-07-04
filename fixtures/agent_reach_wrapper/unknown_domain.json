@@ -1,0 +1,13 @@
+{
+  "connector": "manual_snapshot",
+  "captures": [
+    {
+      "source": "manual_snapshot",
+      "source_url": "https://example.invalid/social/post/3001",
+      "author_or_channel": "@osint_fixture",
+      "captured_at": "2026-07-03T18:15:00Z",
+      "raw_text": "Synthetic fixture: this URL should be rejected because the domain is not allowlisted.",
+      "license_or_terms_note": "Synthetic fixture for local validation only."
+    }
+  ]
+}

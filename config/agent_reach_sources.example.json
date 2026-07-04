@@ -1,0 +1,17 @@
+{
+  "allowed_sources": [
+    "manual_snapshot"
+  ],
+  "allowed_domains": [
+    "x.com",
+    "reddit.com",
+    "youtube.com",
+    "youtu.be"
+  ],
+  "allowed_author_or_channel": [
+    "@osint_fixture",
+    "r/osint_fixture",
+    "OSINT fixture channel"
+  ],
+  "notes": "Example only. No tokens, cookies, account sessions, or production destinations belong here."
+}
