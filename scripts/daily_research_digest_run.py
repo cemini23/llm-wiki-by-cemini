@@ -27,6 +27,7 @@ except ImportError:
     print("ERROR: PyYAML required — pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+from agent_reach_daily_social import run_agent_reach_social_pass  # noqa: E402
 from daily_research_fetch import FetchOutcome, fetch_papers  # noqa: E402
 
 
@@ -216,6 +217,7 @@ def main() -> int:
     active_topics = cfg.get("active_topics") or []
     brief_note = (cfg.get("brief_routing_note") or "").strip()
     social = cfg.get("social") or {}
+    agent_reach_social = run_agent_reach_social_pass(repo, cfg, today)
 
     seen_urls: set[str] = set()
     paper_sections, paper_partial = run_queries(
@@ -352,6 +354,9 @@ def main() -> int:
     lines.append("")
 
     manual = social.get("manual_pass") or []
+    if agent_reach_social.enabled:
+        lines.extend(agent_reach_social.lines)
+
     if manual:
         lines.extend(["---", "", "## Social pass (Cursor session — not automated)", ""])
         for item in manual:

@@ -50,7 +50,7 @@ class SourceAllowlist:
 
         if source not in self.allowed_sources:
             raise AllowlistError(f"source is not allowlisted: {source!r}")
-        if author not in self.allowed_author_or_channel:
+        if "*" not in self.allowed_author_or_channel and author not in self.allowed_author_or_channel:
             raise AllowlistError(f"author_or_channel is not allowlisted: {author!r}")
 
         domain = urlparse(url).hostname

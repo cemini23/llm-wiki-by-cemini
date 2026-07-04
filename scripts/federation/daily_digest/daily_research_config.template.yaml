@@ -42,5 +42,25 @@ social:
     - tool: opencli-reader
       prompt: "Domain-relevant frontpage / feeds last 24h"
 
+# Optional federation-wide Agent Reach/OpenCLI lane.
+# Requires Agent Reach install pack on the operator laptop. Output stays under
+# `.local/agent-reach-daily/{date}/` and is rendered into the daily digest as
+# review-only social candidates. No wiki ingest or prod handoff is automatic.
+agent_reach_social:
+  enabled: false
+  timeout_seconds: 45
+  max_items_per_query: 5
+  allowlist: "config/agent_reach_daily_sources.example.json"
+  queries:
+    - cluster: domain-x
+      platform: twitter
+      command: ["opencli", "twitter", "search", "<domain query>", "-f", "yaml"]
+    - cluster: domain-reddit
+      platform: reddit
+      command: ["opencli", "reddit", "search", "<domain query>", "-f", "yaml"]
+    - cluster: domain-instagram
+      platform: instagram
+      command: ["opencli", "instagram", "profile", "<account>", "-f", "yaml"]
+
 output:
   path_template: "wiki/sweeps/{date}-daily.md"

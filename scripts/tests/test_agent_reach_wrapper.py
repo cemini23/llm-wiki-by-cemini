@@ -41,6 +41,30 @@ class AgentReachWrapperTests(unittest.TestCase):
         self.assertFalse(result.ok)
         self.assertEqual(result.rejections[0].reason, "ALLOWLIST_REJECTED")
 
+    def test_wildcard_author_allowlist_accepts_discovery_results(self):
+        allowlist = SourceAllowlist.from_mapping(
+            {
+                "allowed_sources": ["manual_snapshot"],
+                "allowed_domains": ["x.com"],
+                "allowed_author_or_channel": ["*"],
+            }
+        )
+        captures = [
+            {
+                "source": "manual_snapshot",
+                "source_url": "https://x.com/arbitrary/status/1",
+                "author_or_channel": "arbitrary",
+                "captured_at": "2026-07-03T18:30:00Z",
+                "raw_text": "Synthetic arbitrary public discovery result.",
+                "license_or_terms_note": "Synthetic fixture.",
+            }
+        ]
+
+        result = process_captures(captures, allowlist)
+
+        self.assertTrue(result.ok)
+        self.assertEqual(len(result.items), 1)
+
     def test_rejects_duplicate_content_fixture(self):
         allowlist = SourceAllowlist.from_file(ALLOWLIST)
         captures = load_snapshot(FIXTURE_DIR / "duplicates.json")

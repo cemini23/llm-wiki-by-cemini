@@ -150,5 +150,28 @@ social:
     - tool: telegram-reader
       prompt: "PM/crypto macro + options vol + WC ticket/resale headlines"
 
+agent_reach_social:
+  enabled: true
+  timeout_seconds: 45
+  max_items_per_query: 5
+  allowlist: "config/agent_reach_daily_sources.example.json"
+  note: "Optional DRY_RUN social lane. OpenCLI results are normalized by scripts.agent_reach_wrapper and written to .local/agent-reach-daily/{date}/."
+  queries:
+    - cluster: x-agent-research
+      platform: twitter
+      command: ["opencli", "twitter", "search", "AI agents OR Claude Code OR Cursor agents", "-f", "yaml"]
+    - cluster: x-prediction-markets
+      platform: twitter
+      command: ["opencli", "twitter", "search", "Polymarket OR Kalshi OR prediction market bot", "-f", "yaml"]
+    - cluster: reddit-agent-research
+      platform: reddit
+      command: ["opencli", "reddit", "search", "AI agents production workflows", "-f", "yaml"]
+    - cluster: reddit-prediction-markets
+      platform: reddit
+      command: ["opencli", "reddit", "search", "Polymarket Kalshi prediction markets", "-f", "yaml"]
+    - cluster: instagram-tipdrop-competitor-scan
+      platform: instagram
+      command: ["opencli", "instagram", "profile", "unusualwhales", "-f", "yaml"]
+
 output:
   path_template: "wiki/sweeps/{date}-daily.md"

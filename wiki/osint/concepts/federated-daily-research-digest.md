@@ -1,8 +1,8 @@
 ---
 title: Federated daily research digest — per-wiki automated learning loop
 type: concept
-tags: [concept, meta, automation, federation, k93]
-keywords: [federated-digest, daily-research, cross-wiki, launchagent, exa, inbox-watcher]
+tags: [concept, meta, automation, federation, k93, agent-reach]
+keywords: [federated-digest, daily-research, cross-wiki, launchagent, exa, inbox-watcher, agent-reach, opencli]
 related:
   - meta/federation-operator-hub-stub.md
   - meta/daily-research-digest-cadence.md
@@ -20,7 +20,7 @@ related:
   - entities/tools/metaresearcher.md
 maturity: core
 created: 2026-06-01
-updated: 2026-06-20
+updated: 2026-07-03
 ---
 
 ## Relations
@@ -76,6 +76,17 @@ Each sibling wiki gets a **copy of the script bundle** under its repo `scripts/`
 ### Monokern overlay (weekly)
 
 On top of daily Exa/inbox, run one **Monokern pipeline** session per wiki per week: structured sources → NotebookLM → markdown into that wiki's vault. Config: `monokern_pipeline` block in each wiki's `daily_research_config.yaml` (OSINT template in parent config).
+
+### Agent Reach / OpenCLI social lane (optional)
+
+2026-07-03 federation rollout: the OSINT reference runner can append an **Agent Reach social pass** to the daily digest. It calls OpenCLI for X/Twitter, Reddit, Instagram, or other configured channels, converts returned YAML into the local `manual_snapshot` schema, runs the Agent-Reach wrapper controls, and writes review-only output under `.local/agent-reach-daily/{date}/`.
+
+Rules:
+
+- Disabled by default in the federation template; enable per wiki only after installing Agent Reach/OpenCLI on the operator laptop.
+- Output is **DRY_RUN / review-only**. It never writes wiki pages, posts to Discord, or ships to prod.
+- Each wiki owns its `agent_reach_social.queries` and `config/agent_reach_daily_sources.example.json` allowlist.
+- Same Phase 4 gates apply: operator reviews social rows before ingest, briefs, or cross-wiki routing.
 
 ### Federation operator hub (2026-06-01)
 

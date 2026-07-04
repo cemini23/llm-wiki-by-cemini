@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-07-03] adopt | Agent Reach federation daily social lane
+
+- **OSINT daily digest:** added `scripts/agent_reach_daily_social.py` and `agent_reach_social` config for X/Twitter, Reddit, and Instagram OpenCLI queries; output remains `.local/agent-reach-daily/{date}/` DRY_RUN with wrapper validation and operator review.
+- **Federation template:** `scripts/federation/daily_digest/daily_research_config.template.yaml` now includes an optional disabled-by-default Agent Reach social lane for sibling wikis.
+- **Docs/tests:** `@concepts/federated-daily-research-digest.md` documents rollout rules; tests cover wildcard discovery allowlists and fake OpenCLI YAML normalization.
+
 ## [2026-07-03] adopt | Agent-Reach wrapper-only local social snapshots
 
 - **Wrapper:** `scripts/agent_reach_wrapper/` — manual snapshot validator only; no browser cookies, profiles, live scraping, network calls, prod handoff, or Discord output.
