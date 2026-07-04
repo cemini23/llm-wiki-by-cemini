@@ -93,10 +93,13 @@ related:
   - entities/tools/strix.md
   - entities/tools/chrome-devtools-mcp.md
   - entities/tools/agentskills.md
+  - sources/cemini-repository-evaluation-plan-runtime-2026-07-04.md
+  - entities/tools/obsidian-mind.md
+  - entities/tools/headroom.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-03
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -577,6 +580,18 @@ Ingest: `GitHub Repository Evaluation Plan.docx` (20 URLs) + arXiv 2606.26294 (R
 **Paper REFERENCE:** RQGM (2606.26294) — `@concepts/red-queen-controlled-utility-evolution.md`; poker rubric-epoch brief only.
 
 Phase-0 script: `scripts/adopt_k134_phase0.sh`.
+
+## Wave K143 — Runtime / Fable harness batch (2026-07-04)
+
+Ingest: `Cemini Repository Evaluation Plan.docx` plus two Nash-solver arXiv papers. Source: @sources/cemini-repository-evaluation-plan-runtime-2026-07-04.md.
+
+| Tier | Count | Headline |
+|------|-------|----------|
+| **Adopt reaffirmed** | 1 | `@entities/tools/headroom.md` — Apache-2.0; stronger maturity; CCC/OSINT context compression stays optional laptop/CCC infrastructure |
+| **Steal-from** | 1 promoted page | `@entities/tools/obsidian-mind.md` — MIT, mature, but no wholesale TipDrop/David adoption; steal vault-manifest, QMD index/MCP wrapper, hook-test discipline |
+| **Reference / aggregate** | many | Free LLM API indexes and Fable harness repos stay source-table material unless a later CCC-specific pass picks a concrete integration |
+
+**Routing correction:** docx marked `obsidian-mind` Adopt for TipDrop M4, but Phase-0 found the fit indirect and the install surface too broad. No David/TipDrop brief and no prod scp from K143 runtime batch. `headroom` needs no new standalone brief unless an implementation runbook is requested.
 
 ## Snippets
 

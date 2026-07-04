@@ -31,10 +31,11 @@ related:
   - sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md
   - concepts/self-compacting-language-model-agents.md
   - entities/tools/headroom.md
+  - entities/tools/obsidian-mind.md
 maturity: draft
 hub: true
 created: 2026-04-28
-updated: 2026-06-25
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -54,6 +55,7 @@ updated: 2026-06-25
 - @sources/3-25-git-research.md — K17 deep-read 2026-05-01; Context Reset vs Context Compaction distinction (Anthropic harness): structured handoff artifact → PostgreSQL → fresh session; State Compactor threshold-triggered automatic Reset routine
 - @sources/git-3-5-pt3.md — K18 deep-read 2026-05-01; three-layer context architecture (Layer 0 auto-loaded rules / Layer 1 progressive disclosure / Layer 2 hot working memory) extends cpr-pattern's granularity model + progressive disclosure formalized as architectural pattern
 - @sources/arxiv-less-context-better-agents-2606.10209-2026-06-10.md — K110 empirical MCP benchmark: prune last **5** tool pairs (79% task completion, −64% tokens) + rolling summary window **3** (91.6%, ~same tokens as prune-only). Strongest published evidence that **less context beats full history** on long-horizon enterprise tool loops — starting hyperparameters for conductor/kb-server budget policy.
+- @entities/tools/obsidian-mind.md — K143 Steal-from vault manifest/QMD/hook-test memory patterns; not a wholesale adoption.
 
 ## Raw Concept
 

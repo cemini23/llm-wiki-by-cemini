@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-07-04] ingest | K143 — runtime eval + Nash solver papers
+
+- **Sources (3):** `@sources/cemini-repository-evaluation-plan-runtime-2026-07-04.md` (20 runtime/Fable harness URLs); `@sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md`; `@sources/arxiv-variable-bound-tightening-nash-2606.25997-2026-07-04.md`
+- **Concepts/entities (2 new):** `@concepts/exact-multiplayer-nash-computation.md`; `@entities/tools/obsidian-mind.md`
+- **Updates (6):** `@entities/tools/headroom.md`, `@concepts/wiki-tooling-evaluation.md`, `@concepts/nash-equilibrium-solver-selection.md`, `@concepts/projected-exploitability-descent.md`, `@concepts/multi-agent-fictitious-play-llm.md`, `@concepts/poker-arena-multi-axis-cognitive-profile.md`
+- **Phase-0:** `scripts/adopt_k143_phase0.sh` + subagent audits. `headroom` Adopt reaffirmed; `obsidian-mind` downgraded to Steal-from.
+- **Briefs/scp:** none. No David/TipDrop adoption brief and no cemini-prod scp; K143 runtime batch is wiki/CCC-pattern material only.
+
 ## [2026-07-03] research | Agent-Reach CXW/GEO social sweep
 
 - **Agent-Reach/OpenCLI DRY_RUN:** X + Reddit sweep for CXW/GEO turnkey, Florence J&A, BOP privatization chatter; raw snapshot `.local/agent-reach-daily/2026-07-03/social-snapshot.json`

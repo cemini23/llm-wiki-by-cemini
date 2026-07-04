@@ -12,8 +12,19 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **541 canonical stubs** (K142 multi-wiki URL eval +1 source +4 entities +2 updates)
+Total: **546 canonical stubs** (K143 runtime/Nash ingest +3 sources +1 concept +1 entity + updates)
 
+
+### k143-ingest (8)
+
+- [Cemini Repository Evaluation Plan.docx (2026-07-04)](sources/cemini-repository-evaluation-plan-runtime-2026-07-04.md) — runtime/Fable harness eval; `obsidian-mind` downgraded to Steal-from; `headroom` reaffirmed Adopt. — `docx` [+k143]
+- [Quadratic programming for multiplayer imperfect-information Nash — arXiv 2509.25618](sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md) — exact NCP/QP solver for reduced 3-player Kuhn. — `pdf` [+k143, +poker]
+- [Variable-bound tightening for multiplayer imperfect-information Nash — arXiv 2606.25997](sources/arxiv-variable-bound-tightening-nash-2606.25997-2026-07-04.md) — slack-bound tightening solves full 3-player Kuhn in 1.160s. — `pdf` [+k143, +poker]
+- [Exact multiplayer imperfect-information Nash computation](concepts/exact-multiplayer-nash-computation.md) — NCP/QP + slack-bound toy-game baseline literacy. — concept [+k143]
+- [obsidian-mind](entities/tools/obsidian-mind.md) — Phase-0 Steal-from; no David/TipDrop adoption brief. — entity [+k143]
+- [Headroom](entities/tools/headroom.md) — K143 refresh: Adopt reaffirmed with CCR TTL/cache caveats. — entity update [+k143]
+- [Nash equilibrium solver selection](concepts/nash-equilibrium-solver-selection.md) — K143 exactness/solution-concept provenance note. — concept update [+k143]
+- [Projected exploitability descent](concepts/projected-exploitability-descent.md) — K143 exact-solver sibling note. — concept update [+k143]
 
 ### k142-ingest (8)
 

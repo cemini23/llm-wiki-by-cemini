@@ -22,6 +22,9 @@ related:
   - sources/arxiv-team-zero-sum-games-2606.16139-2026-06-20.md
   - concepts/nash-equilibrium-solver-selection.md
   - concepts/projected-exploitability-descent.md
+  - concepts/exact-multiplayer-nash-computation.md
+  - sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md
+  - sources/arxiv-variable-bound-tightening-nash-2606.25997-2026-07-04.md
   - concepts/projected-exploitability-descent.md
   - sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
@@ -39,7 +42,7 @@ related:
   - sources/arxiv-ipo-finance-agent-2606.23032-2026-06-24.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-25
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -52,6 +55,7 @@ updated: 2026-06-25
 - @concepts/team-zero-sum-games-complexity.md — multi-agent equilibrium hardness (K124)
 - @concepts/non-markov-belief-state-benchmarks.md — Memory Gap diagnostic for F6 ablation (K125)
 - @concepts/probabilistic-agent-policy-verification.md — trajectory verifier risk bounds (K125)
+- @concepts/exact-multiplayer-nash-computation.md — K143 small-game exact baselines for M₇ strategic mixing literacy
 
 ## Raw Concept
 
@@ -103,6 +107,7 @@ Same research lineage (Raeth author on paper; dev.fun PR cites multi-axis eval) 
 3. Memory ablation discipline: test F6 **on/off** before publish — don't assume memory always helps.
 4. Regression gates on M₈ (no card hallucination) and M₉ (positional VPIP) — Kimi's losses traced to those axes.
 5. **Memory Gap (K125):** on trajectory export, tag errors where F6 off caused wrong action vs wrong action with memory on — separates forgetting from mis-decide.
+6. **Solver provenance (K143):** when using toy-game baselines for M₇ strategic mixing, record whether the chart came from exact NCP/QP, logit QRE, PED/FP-PED, CFR, or fictitious play; these are not interchangeable.
 
 ## Snippets
 

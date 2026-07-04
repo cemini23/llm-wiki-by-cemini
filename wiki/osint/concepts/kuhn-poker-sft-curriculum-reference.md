@@ -15,9 +15,12 @@ related:
   - concepts/nash-equilibrium-solver-selection.md
   - sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
+  - concepts/exact-multiplayer-nash-computation.md
+  - sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md
+  - sources/arxiv-variable-bound-tightening-nash-2606.25997-2026-07-04.md
 maturity: validated
 created: 2026-06-22
-updated: 2026-06-30
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -27,6 +30,7 @@ updated: 2026-06-30
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — axis gates on submit reasoning
 - @concepts/active-project-research-routing.md — implementation lives in `agents/devfun-poker-arena/`
 - @concepts/nash-equilibrium-solver-selection.md — K136: solver-family affects which Nash member is selected in Kuhn
+- @concepts/exact-multiplayer-nash-computation.md — K143: exact NCP/QP and slack-bound-tightened baselines for 3-player Kuhn
 
 ## Raw Concept
 

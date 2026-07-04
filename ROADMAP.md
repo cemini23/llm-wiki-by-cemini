@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-07-04 — K143)
+
+- **K143 ingest (2026-07-04)** — Cemini Repository Evaluation Plan docx + two Nash-solver PDFs. **3 sources + 1 concept + 1 entity + 6 updates.** Adopt reaffirmed: Headroom (OSINT/CCC optional context compression; no prod path). Steal-from: obsidian-mind vault-manifest/QMD/hook-test patterns; **no David/TipDrop adoption brief**. Papers: exact multiplayer imperfect-information Nash computation; slack-bound tightening solves full 3-player Kuhn in 1.160s. **Phase-0:** `adopt_k143_phase0.sh`.
+
 ## Current state (2026-07-03 — K142)
 
 - **K142 ingest (2026-07-03)** — Multi-Wiki URL Evaluation docx + model-selection screenshot. **1 source + 4 entities + 2 updates.** Adopt: olmOCR, iFixAi, Caveman, Zero, Addy Agent Skills; Adopt wrapper-only: Agent-Reach local manual snapshots; Steal-from: Astryx, claude-real-video, Portable LLM Wiki; Defer: Meetily, Instatic, Langflow. **TipDrop/David:** olmOCR M4, Portable LLM Wiki OKF M4, iFixAi M2, Agent-Reach wrapper-only approved. **Phase-0:** `adopt_k142_phase0.sh`.

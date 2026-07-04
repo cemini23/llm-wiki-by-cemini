@@ -12,12 +12,14 @@ related:
   - concepts/extensive-form-games-stochastic-action-sets.md
   - concepts/projected-exploitability-descent.md
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
+  - concepts/exact-multiplayer-nash-computation.md
+  - sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md
   - concepts/devfun-researcher-track-readiness-2026-06.md
   - concepts/projected-exploitability-descent.md
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-30
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -26,6 +28,7 @@ updated: 2026-06-30
 - @concepts/garip-running-average-self-play.md — K127 gradient self-play magnet (orthogonal to MAFP stance play)
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — multi-stakeholder poker eval
 - @concepts/projected-exploitability-descent.md — K136 FP-PED hybrid for multiplayer toy games
+- @concepts/exact-multiplayer-nash-computation.md — K143 exact-solver baseline literacy for small multiplayer imperfect-info games
 - @concepts/devfun-researcher-track-readiness-2026-06.md — Researcher Round target
 
 ## Raw Concept
@@ -48,6 +51,8 @@ Prompted by arXiv **2606.19308** (K124). **Stance entanglement** — mutually de
 **Not in scope:** runtime multi-LLM call chain on Arena action deadline — offline chart synthesis only unless latency spike passes dry-run.
 
 **Posture:** **REFERENCE** — brief to poker-arena; no prod scp.
+
+**K143 note:** exact NCP/QP solvers are complementary to MAFP rather than replacements. MAFP is a language-policy/stance iteration pattern; K143 exact solvers are small-game ground-truth tools that can sanity-check toy abstractions before any chart logic graduates into Arena-facing heuristics.
 
 ## Snippets
 

@@ -6,6 +6,9 @@ keywords: [Nash polytope, maximum-entropy, CFR+, R-NaD, fictitious play, solver 
 related:
   - sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
+  - concepts/exact-multiplayer-nash-computation.md
+  - sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md
+  - sources/arxiv-variable-bound-tightening-nash-2606.25997-2026-07-04.md
   - concepts/extensive-form-games-stochastic-action-sets.md
   - concepts/kuhn-poker-sft-curriculum-reference.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
@@ -15,12 +18,13 @@ related:
   - sources/arxiv-takeover-auction-diligence-2606.29457-2026-07-01.md
 maturity: draft
 created: 2026-06-30
-updated: 2026-07-01
+updated: 2026-07-04
 ---
 
 ## Relations
 
 - @sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md — primary source (Leal, 2606.28308)
+- @concepts/exact-multiplayer-nash-computation.md — K143 exact-solver sibling cluster
 - @concepts/takeover-auction-diligence-solvers.md — K138 PPO vs exact CFR on deal auctions (2606.29457)
 - @concepts/extensive-form-games-stochastic-action-sets.md — CFR theory cluster (K122)
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — M₇ strategic-mixing axis
@@ -47,6 +51,10 @@ Differences vanish on **symmetric** Nash geometry; emerge on **asymmetric** poly
 - **Not for NLHE prod:** tabular ground truth infeasible; literacy only.
 
 **Posture:** REFERENCE — brief steal → `agents/devfun-poker-arena/briefs/`.
+
+### K143 extension: exactness vs selected member
+
+K143 shifts the adjacent question from **which equilibrium member** a solver selects to **which solution concept/exactness target** the solver can support in multiplayer imperfect-information games. NCP/QP exact solvers, logit QRE approximations, PED/FP-PED refiners, and CFR/FP baselines should not be treated as interchangeable "Nash-ish" chart generators. For any toy-game chart, record solver family, preprocessing (dominated-action removal), and whether the output is exact Nash, QRE approximation, exploitability descent, or regret-average baseline.
 
 ## Snippets
 
