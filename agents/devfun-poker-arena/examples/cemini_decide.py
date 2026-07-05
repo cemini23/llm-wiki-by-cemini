@@ -678,6 +678,20 @@ def _apply_v008_preflop_rescue(
     trim_hc = _gin_hand_class(hole)
     if (
         action == "fold"
+        and _is_hu_table(table)
+        and is_preflop_open_spot(table, allowed, call_chips)
+        and position in ("BTN", "SB")
+        and _hu_wide_open_hand(trim_hc)
+        and trim_hc not in HU_SB_STEAL_TRIM
+    ):
+        act, target = _preflop_first_in_wager(
+            allowed, available, int(table.get("potChips") or 0),
+        )
+        if act:
+            return act, target
+
+    if (
+        action == "fold"
         and trim_hc in HU_SB_STEAL_TRIM
         and _is_hu_table(table)
         and is_preflop_open_spot(table, allowed, call_chips)
@@ -1442,6 +1456,39 @@ def decide(
             if call_chips >= max(int(pot * 0.22), 1):
                 return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                               msg=f"{binding}: pocket on straight board — fold")
+
+    # Non-nut set on 4-straight board — JcJs on 9-J-5-T-8 (ladder R3).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and _hero_set_vulnerable_on_four_straight(hole, board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(
+                int(_effective_stack_chips(table, max_playable) * 0.22),
+                int(pot * 0.30),
+                1,
+            )):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: set on 4-straight board — fold stack-off")
+
+    # OOP SB/BTN: one-pair or worse on 4-flush without hero flush (ladder R6/R7).
+    if (street in ("Turn", "River") and call_chips > 0 and "fold" in available
+            and not in_position
+            and _board_four_to_flush(board)
+            and not _hero_has_flush(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_pocket_set(hole, board)
+            and call_chips >= max(int(pot * 0.28), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: OOP no flush on 4-flush — fold")
+
+    # OOP weak made hand on 4-straight river (ladder R1/R4).
+    if (street == "River" and call_chips > 0 and "fold" in available
+            and not in_position
+            and _board_four_in_straight_window(board)
+            and not _hero_pocket_set(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and call_chips >= max(int(pot * 0.32), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: OOP weak on 4-straight river — fold")
 
     # SB/BB suited broadway on paired board — KQs BB −51 (HL R15 analyze #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
@@ -2719,8 +2766,13 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         return "fold", None
     # SB OOP: don't defend chart-fold trash without a clear price edge.
     if (position == "SB" and suggested == "fold"
+            and not _is_hu_table(table or {})
             and equity < pot_odds + 0.08 and "fold" in available):
         return "fold", None
+    if (table and _is_hu_table(table) and position == "BB" and call_chips > 0
+            and _hu_ladder_bb_defend(hc, call_chips, pot)
+            and "call" in available):
+        return "call", None
     if (_is_low_trash_offsuit(hc) and not in_position
             and equity < pot_odds + 0.06 and "fold" in available):
         return "fold", None
@@ -2743,6 +2795,9 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         return "raise", target
     call_margin = 0.03 if in_position else 0.06
     fold_margin = 0.08 if in_position else 0.05
+    if table and _is_hu_table(table):
+        call_margin = -0.02 if position == "BB" else 0.02
+        fold_margin = 0.10 if position == "BB" else 0.06
     if hud_mode in ("lag", "maniac") and position == "BB":
         call_margin -= 0.05
         fold_margin += 0.04
@@ -3787,6 +3842,75 @@ def _board_has_three_flush(board: list[str]) -> bool:
     return max(Counter(suits).values()) >= 3
 
 
+def _board_four_to_flush(board: list[str]) -> bool:
+    """Four cards of one suit on board — non-flush hero is often dead."""
+    if len(board) < 4:
+        return False
+    suits = [c[-1].lower() for c in board]
+    return max(Counter(suits).values()) >= 4
+
+
+def _board_four_in_straight_window(board: list[str]) -> bool:
+    """Board has four ranks inside some 5-card straight window (HU ladder R3)."""
+    if len(board) < 4:
+        return False
+    idxs = {_RANKS.index(c[0].upper()) for c in board}
+    for low in range(0, len(_RANKS) - 4):
+        window = set(range(low, low + 5))
+        if len(idxs & window) >= 4:
+            return True
+    return False
+
+
+def _hero_set_vulnerable_on_four_straight(hole: list[str], board: list[str]) -> bool:
+    """Pocket set when board completes obvious straights — JJ on 9-J-5-T-8."""
+    if not _hero_pocket_set(hole, board) or not _board_four_in_straight_window(board):
+        return False
+    hc = _hand_class(hole) if hole else ""
+    if hc == "AA":
+        return False
+    return True
+
+
+def _hu_wide_open_hand(hc: str) -> bool:
+    """HU SB/BTN first-in — ~70th percentile open (ladder P0-1)."""
+    if len(hc) == 2 and hc[0] == hc[1]:
+        return True
+    if not hc or len(hc) != 3:
+        return False
+    r0, r1, suited = hc[0], hc[1], hc[2] == "s"
+    if r0 == "A":
+        return True
+    if r0 == "K":
+        return True
+    if r0 == "Q":
+        return _RANKS.index(r1) >= _RANKS.index("2")
+    if r0 == "J":
+        return suited or _RANKS.index(r1) >= _RANKS.index("7")
+    if r0 == "T":
+        return suited or _RANKS.index(r1) >= _RANKS.index("8")
+    if suited:
+        return _RANKS.index(r0) >= _RANKS.index("4") or _RANKS.index(r1) >= _RANKS.index("4")
+    return False
+
+
+def _hu_ladder_bb_defend(
+    hc: str,
+    call_chips: int,
+    pot: int,
+    *,
+    max_price: float = 0.40,
+) -> bool:
+    """HU BB vs minraise — defend wide when price is good (ladder P0-2)."""
+    if call_chips <= 0:
+        return False
+    if call_chips / max(pot + call_chips, 1) > max_price:
+        return False
+    return _hu_wide_open_hand(hc) or hc in {
+        "98o", "87o", "76o", "65o", "54o", "K9o", "Q9o", "J9o", "T9o",
+    }
+
+
 def _board_overcard_to_pocket(hc: str, board: list[str]) -> bool:
     if not _small_pocket_pair(hc) or len(board) < 3:
         return False
@@ -4250,6 +4374,28 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
 
     if (_pocket_vulnerable_on_low_straight_board(hole, board, hand_class)
             and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (_hero_set_vulnerable_on_four_straight(hole, board)
+            and call_chips >= max(int(pot * 0.30), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (not in_position and _board_four_to_flush(board)
+            and not _hero_has_flush(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_pocket_set(hole, board)
+            and len(board) >= 4
+            and call_chips >= max(int(pot * 0.28), 1)
+            and "fold" in available):
+        return "fold", None
+
+    if (not in_position and len(board) >= 5
+            and _board_four_in_straight_window(board)
+            and not _hero_pocket_set(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and call_chips >= max(int(pot * 0.32), 1)
             and "fold" in available):
         return "fold", None
 

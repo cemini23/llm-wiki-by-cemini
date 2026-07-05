@@ -1,8 +1,8 @@
 {
   "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
-  "replace": false,
-  "activeSubmissionId": "cef05ccb-1693-44d7-96a3-1bfc4925e57c",
+  "replace": true,
+  "activeSubmissionId": "ef651e76-397a-47fd-8868-9559e1e34929",
   "watchSubmissionIds": [
     "8e0c63f0-ba0c-469d-9dd4-443a1666920b",
     "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
@@ -13,9 +13,9 @@
   "legacyActiveSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-ladder-s1.cemini-k131b-finish.2026-07-03",
+  "agentVersion": "researcher-ladder-s1.cemini-hu-upgrade.2026-07-05",
   "sandboxEngine": "cemini",
   "gitCommit": "",
-  "pinnedAt": "2026-07-03T20:30:30Z",
-  "notes": "Public heads-up ladder S1. Replaced 8e0c63f0 after 50-replay audit found weak-Ax pot-committed preflop folds (-950/-940); cef05ccb active with pot-committed call guard."
+  "pinnedAt": "2026-07-05T13:30:00Z",
+  "notes": "Premium audit Jul 2026: HU wide open/defend, set-on-4-straight fold, 4-flush OOP fold. Replaced cef05ccb."
 }
