@@ -11,9 +11,10 @@ related:
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - concepts/ice-turnkey-research-backlog-2026-06-30.md
   - meta/ice-facility-jobs-cadence.md
+  - sources/ca-doj-immigration-detention-2026-ab103.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-07-04
+updated: 2026-07-05
 ---
 
 ## Relations
@@ -25,6 +26,7 @@ updated: 2026-07-04
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — shared ICE acquisition thesis (GEO-led April briefs)
 - @concepts/ice-turnkey-research-backlog-2026-06-30.md — Tier 0 whole-thesis research (site rank #7, contract base case)
 - @meta/ice-facility-jobs-cadence.md — recurring jobs anomaly monitor; Cal City scored as medium compliance/stabilization signal on first run
+- @sources/ca-doj-immigration-detention-2026-ab103.md — May 2026 AB 103 primary (Otay, Cal City overcrowding)
 
 ## Raw Concept
 
@@ -114,7 +116,7 @@ Zoley (GEO) and Swindle (CoreCivic) confirmed active sale discussions on Q1 2026
 | **SB 29** local permit | Active — @entities/facilities/california-city-detention-facility.md DNDC suit | Bypassed for acquisition |
 | **City license / site plan appeal** | Jul 7 dual hearings — BL 3:30 Grayson / PC 6:00 de novo `[CONFIRMED]` | **Moot for core federal ops**; contractor/neutral-law friction may remain |
 | **AB 32** private-detention ban | Unenforceable vs ICE contractors (GEO v. Newsom, 9th Cir. 2022) | Stronger federal shield |
-| **AB 103** AG inspections | Bonta inspected Nov 2025; 5th report May 2026; Dec 19, 2025 DHS letter | **Weakened** — non-discriminatory inspection upheld (*U.S. v. California*, 921 F.3d 865) but access cooperation-dependent vs federally owned+operated site `[TENTATIVE]` |
+| **AB 103** AG inspections | Bonta inspected Nov 2025; **5th report May 15, 2026** (`@sources/ca-doj-immigration-detention-2026-ab103.md` — Otay 1,433/1,142, Cal City crisis staffing); Dec 19, 2025 DHS letter | **Weakened** — non-discriminatory inspection upheld (*U.S. v. California*, 921 F.3d 865) but access cooperation-dependent vs federally owned+operated site `[TENTATIVE]` |
 | **AB 1801** (2025–26) | Assembly passed Apr 2026; Senate Judiciary + Local Gov — **not enacted** | **No effect** on direct federal purchase |
 | **Gomez Ruiz PI + monitor** | Binds ICE/CoreCivic operations | **Still binds operations** (federal court) |
 | **Federal procedural (NEPA/INA/APA)** | Gilroy model available | **Primary remaining CA lever** post-purchase — *Santa Clara v. ICE* (N.D. Cal. 5:26-cv-05604, filed Jun 10, 2026) `[CONFIRMED]` |

@@ -9,9 +9,10 @@ related:
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - entities/facilities/florence-az-detention-cluster.md
   - sources/ice-ja-26-0143-first-american-escrow-2026.md
+  - sources/ca-doj-immigration-detention-2026-ab103.md
 maturity: draft
 created: 2026-07-04
-updated: 2026-07-04
+updated: 2026-07-05
 ---
 
 ## Relations
@@ -21,6 +22,7 @@ updated: 2026-07-04
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — facility watchlist
 - @entities/facilities/florence-az-detention-cluster.md — escrow J&A Florence disambiguation
 - @sources/ice-ja-26-0143-first-american-escrow-2026.md — First American title/escrow J&A primary source
+- @sources/ca-doj-immigration-detention-2026-ab103.md — CA DOJ point-in-time counts vs ICE ADP/gtd min
 
 ## Narrative
 
@@ -42,7 +44,7 @@ updated: 2026-07-04
 
 Congress requires ICE to publish detention statistics **twice monthly** (H.R. 1158 / DHS Appropriations). The `Facilities FY26` sheet in each workbook lists facility-level **FY26 year-to-date average daily population (ADP)** by gender/criminality, plus **Guaranteed Minimum** where applicable. This is the canonical **public** occupancy lane — Vera (`vera-institute/ice-fytd-stats`) and Deportation Data Project mirror drops because ICE overwrites prior files.
 
-**Method limits:** ADP is a fiscal YTD average, not a live headcount. `Guaranteed Minimum` is a contract floor, not rated capacity. TRAC's Jul 2025 overcapacity report used **FOIA** for point-in-time contractual capacity + census on 2025-04-13. Use this monitor for **screening and publish-gap detection**; escalate to FOIA/TRAC capacity for true overcapacity math.
+**Method limits:** ADP is a fiscal YTD average, not a live headcount. `Guaranteed Minimum` is a contract floor, not rated capacity. TRAC's Jul 2025 overcapacity report used **FOIA** for point-in-time contractual capacity + census on 2025-04-13. **CA DOJ AB 103 (May 2026)** provides independent **2025 inspection-date headcounts** vs ICE contract bed caps — e.g. Otay **1,433** vs **1,142** (Oct 2025) vs ICE excel ~**1,380 ADP** vs **750** gtd min (Apr 2026 pull). Use this monitor for **screening and publish-gap detection**; cross-check DOJ/TRAC for point-in-time overcapacity.
 
 On the last available file (pull 2026-04-02), escrow-cluster stress by ADP vs guaranteed min: **Krome** +410, **Otay Mesa** +630, **Batavia** +87; **Florence SPC** under min (−64). Monitor Discord-alerts on **new workbook publish** (`--notify`). **Prod:** ICE.gov returns Akamai 403 from Hetzner — sync laptop xlsx cache via `sync_ice_detention_cache_to_prod.sh`; prod re-parses cached workbook.
 

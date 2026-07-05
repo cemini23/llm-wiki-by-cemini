@@ -14,9 +14,10 @@ related:
   - concepts/ice-turnkey-research-backlog-2026-06-30.md
   - meta/ice-facility-jobs-cadence.md
   - sources/geo-group-ice-turnkey-investigation-2026-04-09.md
+  - sources/ca-doj-immigration-detention-2026-ab103.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-04
+updated: 2026-07-05
 ---
 
 ## Relations
@@ -31,6 +32,7 @@ updated: 2026-07-04
 - @concepts/ice-turnkey-research-backlog-2026-06-30.md — Tier 0 site ranking (Montgomery #1, Tacoma strategic #4); no 8-K confirm
 - @meta/ice-facility-jobs-cadence.md — recurring jobs anomaly monitor for GEO/CXW target clusters
 - @sources/geo-group-ice-turnkey-investigation-2026-04-09.md
+- @sources/ca-doj-immigration-detention-2026-ab103.md — CA overcrowding primary (May 2026)
 
 ## Raw Concept
 

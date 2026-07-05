@@ -3,6 +3,14 @@
 updated: 2026-07-05
 ---
 
+## [2026-07-05] ingest | CA DOJ 5th AB 103 immigration detention report (May 2026)
+
+- **Source:** `@sources/ca-doj-immigration-detention-2026-ab103.md` — 175pp PDF; Otay 1,433 vs 1,142 contract beds; Mesa Verde +802%; Golden State +258%; six CA deaths Sep 2025–Mar 2026; Central Valley Annex noted Apr 2026 (not inspected)
+- **Archive:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/immigration-detention-2026-ca-doj.pdf`
+- **Entities (3):** `@entities/companies/geo-group.md`, `@entities/companies/corecivic.md`, `@entities/facilities/california-city-detention-facility.md`
+- **Concepts/meta (4):** `@concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md`, `@concepts/geo-ice-turnkey-acquisition-thesis.md`, `@concepts/ice-turnkey-research-backlog-2026-06-30.md`, `@meta/ice-detention-stats-cadence.md`
+- **Provenance:** Duck Hunter Jul 5 X post source trace; primary for CA overcrowding weak-signal lane
+
 ## [2026-07-05] ingest | K146 — morning PDFs + Gemini MCP eval batch
 
 - **Sources (5 new):** `@sources/arxiv-steerability-constraints-2607.02389-2026-07-05.md`; `@sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md`; `@sources/eval-multi-wiki-github-mcp-2026-07-05.md`; `@sources/eval-github-repo-mcp-plan-2026-07-05.md`; `@sources/eval-huggingface-models-k146-refresh-2026-07-05.md`

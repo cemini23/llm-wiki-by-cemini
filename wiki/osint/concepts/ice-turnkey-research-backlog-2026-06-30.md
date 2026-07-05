@@ -13,9 +13,10 @@ related:
   - entities/facilities/california-city-detention-facility.md
   - meta/ice-facility-jobs-cadence.md
   - meta/ice-detention-stats-cadence.md
+  - sources/ca-doj-immigration-detention-2026-ab103.md
 maturity: validated
 created: 2026-06-30
-updated: 2026-07-04
+updated: 2026-07-05
 tier1_completed: 2026-06-30
 tier2_completed: 2026-06-30
 tier3_completed: 2026-06-30
@@ -34,6 +35,7 @@ david_uw_full: 2026-06-30
 - @entities/facilities/california-city-detention-facility.md — messiest CXW CA node
 - @meta/ice-facility-jobs-cadence.md — recurring CXW/GEO jobs anomaly lane
 - @meta/ice-detention-stats-cadence.md — ICE biweekly facility ADP / publish-gap lane
+- @sources/ca-doj-immigration-detention-2026-ab103.md — CA DOJ point-in-time overcrowding primary
 
 ## Raw Concept
 
@@ -132,7 +134,7 @@ Handoff: `tipdrop-workspace-kit/briefs/2026-06-30_cxw-geo-ice-turnkey-david-hand
 | **4H — contract-only precedent** | GEO Delaney Hall = company-owned facility, **15-year fixed-price ICE support-services contract**, ~$60M first-year annualized revenue / ~$1B value — supports contract-continuity base case |
 | **4I — operator-regulatory environment** | WaPo/Yahoo: GEO asked ICE to remove state/local-law and $1/day work-program language; 2026 standards adopted some requests. Bull for operator burden, bear for optics/litigation. |
 | **4J — jobs/hiring anomaly lane** | `scripts/intel/monitors/jobs.py` first baseline (2026-07-04): **1,102** live CXW/GEO jobs; strongest live clusters **MRRC/Leavenworth**, **Florence/Pinal/Eloy** (noisy), **GEO Adelanto/Desert View**, **GEO Aurora**, **GEO Conroe/Montgomery**; Cal City = medium compliance/stabilization signal |
-| **4K — detention stats / occupancy lane** | `scripts/intel/monitors/detention_stats.py` (2026-07-04): last ICE publish **2026-04-09** (**86d stale**); escrow-screen ADP vs gtd min — **Krome +410**, **Otay +630**, **Batavia +87**; J&A-26-0143 archived `@sources/ice-ja-26-0143-first-american-escrow-2026.md` |
+| **4K — detention stats / occupancy lane** | `scripts/intel/monitors/detention_stats.py` (2026-07-04): last ICE publish **2026-04-09** (**86d stale**); escrow-screen ADP vs gtd min — **Krome +410**, **Otay +630**, **Batavia +87**; J&A-26-0143 archived `@sources/ice-ja-26-0143-first-american-escrow-2026.md`; **CA DOJ AB 103 May 2026** ingested `@sources/ca-doj-immigration-detention-2026-ab103.md` (Otay **1,433/1,142**, Mesa Verde **802%**, Golden State **258%**) |
 
 **Synthesis:** `.local/reports/ice-turnkey-research/tier4-track-2026-07-02.md`
 

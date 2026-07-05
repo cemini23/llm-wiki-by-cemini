@@ -9,9 +9,10 @@ related:
   - entities/facilities/florence-az-detention-cluster.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
+  - sources/ca-doj-immigration-detention-2026-ab103.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-07-02
+updated: 2026-07-05
 ---
 
 ## Relations
@@ -21,6 +22,7 @@ updated: 2026-07-02
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — full legal + thesis synthesis
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — shared federal turnkey acquisition frame
 - @entities/facilities/florence-az-detention-cluster.md — peer CXW AZ site (SPC vs CAFCC)
+- @sources/ca-doj-immigration-detention-2026-ab103.md — Nov 2025 AB 103 site visit findings
 
 ## Raw Concept
 
@@ -40,7 +42,7 @@ Facility entity stub from June 2026 OSINT on CoreCivic's California City ICE det
 ### Active legal / regulatory layers
 
 1. **Local:** Business license + site plan approved Feb 26, 2026; **Council appeal pending** (license); **Planning Commission site plan appeal scheduled Jul 7, 2026** (6–8pm, multi-source incl. DHF flyer) `[LIKELY]` — verify via [Granicus](https://californiacity.granicus.com/viewpublisher?view_id=1) / City Clerk 760-373-7140.
-2. **State:** AG Bonta AB 103 inspection (Nov 2025); June 15, 2026 letter urging appeal rejection; Dec 19, 2025 letter to DHS on conditions.
+2. **State:** AG Bonta AB 103 inspection (Nov 2025); **5th report May 15, 2026** — crisis-level medical staffing, NDS (not PBNDS), intakes in vacant pod `@sources/ca-doj-immigration-detention-2026-ab103.md`; June 15, 2026 letter urging appeal rejection; Dec 19, 2025 letter to DHS on conditions.
 3. **Federal — conditions:** **Gomez Ruiz v. ICE** (3:25-cv-09757) — PI granted Feb 10, 2026; external monitor appointed Mar 30, 2026; CoreCivic stay denied May 2026.
 4. **Federal — permits:** **Dignity Not Detention v. California City / CoreCivic** (1:25-cv-01292) — SB 29 challenge; motion to dismiss pending (6+ mo judicial delay Mar 2026).
 
