@@ -7,15 +7,19 @@ related:
   - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
   - concepts/macro-weather-regime.md
   - concepts/equity-fair-value-evaluation.md
+  - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
+  - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-05-28
+updated: 2026-07-05
 ---
 
 ## Relations
 
 - @sources/trading-posts-macro-charts-skills-md-2026-05-28.md — Post 1 Macro Charts newsletter excerpt
 - @concepts/macro-weather-regime.md — separate macro gate (GREEN/YELLOW/RED); this page is discretionary TA rotation
+- @concepts/macro-charts-sox-tech-correction-watch-2026-06.md — K144 SOX correction extension of semis-rotation caution
+- @sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md — K144 paid issues
 - @concepts/equity-fair-value-evaluation.md — fair-value sleeve for names like APP/MSFT if in brain universe
 
 ## Raw Concept

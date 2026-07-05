@@ -5,6 +5,8 @@ tags: [source, trading-posts, x-twitter, equities, claude-code, skills]
 keywords: [macro-charts, rotation, skills-md, claude-md, institutional-memory, k76]
 related:
   - concepts/macro-rotation-momentum-signals-2026-05.md
+  - concepts/macro-charts-regime-signals.md
+  - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
   - concepts/claude-code-skills-md-workflow.md
   - sources/trading-posts-compilation-20-2026-05-27.md
   - entities/tools/hermes-agent.md
@@ -12,13 +14,14 @@ related:
 maturity: validated
 read_status: deep-read
 created: 2026-05-28
-updated: 2026-05-29
+updated: 2026-07-05
 clusters: [trading-posts, equities, claude-workflows]
 ---
 
 ## Relations
 
 - @concepts/macro-rotation-momentum-signals-2026-05.md — Post 1 equities rotation thesis
+- @sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md — K144 paid arc extends Post 1 rotation/SOX themes
 - @concepts/claude-code-skills-md-workflow.md — Post 2 Skills.md + CLAUDE.md hierarchy
 - @sources/trading-posts-compilation-20-2026-05-27.md — prior 20-post batch (different sha256)
 - @entities/tools/hermes-agent.md — Post 2 overlaps persistent-memory theme (different product)

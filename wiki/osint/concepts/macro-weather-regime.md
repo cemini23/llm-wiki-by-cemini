@@ -21,10 +21,13 @@ related:
   - sources/two-sigma-gmm-regime-modeling-street-view-2021.md
   - concepts/macro-rotation-momentum-signals-2026-05.md
   - concepts/macro-charts-regime-signals.md
+  - concepts/macro-charts-gold-reversal-thesis-2026-06.md
+  - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
+  - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
   - sources/trading-posts-compilation-16-2026-05-31.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-31
+updated: 2026-07-05
 ---
 
 ## Relations

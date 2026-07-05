@@ -26,9 +26,10 @@ related:
   - sources/arxiv-neurolog-osint-handoff-2606.00669-2026-06-06.md
   - concepts/scientific-conclusion-synthesis-eval.md
   - sources/arxiv-2606-11337-sciconbench-scientific-synthesis-agents-2026-06-13.md
+  - meta/macro-charts-email-ingest-cadence.md
 maturity: core
 created: 2026-05-31
-updated: 2026-06-20
+updated: 2026-07-05
 ---
 
 ## Relations
@@ -37,6 +38,7 @@ updated: 2026-06-20
 - @concepts/monokern-compounding-research-pipeline.md — weekly NotebookLM overlay
 - @meta/daily-research-digest-cadence.md — Phase 1 schedule + report path
 - @meta/wiki-gap-detect-cadence.md — weekly Tier 1 gap report (linked from daily digest)
+- @meta/macro-charts-email-ingest-cadence.md — Macro Charts RSS + Vincent Gmail auto-drop (Phase 2)
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — K84 gap map; Phase 1–4 closes inbox/n8n automation row
 - @concepts/cemini-knowledge-application-architecture.md — wiki→prod loop after ingest
 - @entities/tools/scholarquest.md — K123 agentic paper-search eval steal

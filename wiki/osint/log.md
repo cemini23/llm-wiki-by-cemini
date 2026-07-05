@@ -1,7 +1,16 @@
 # Wiki Log
 
-updated: 2026-07-04
+updated: 2026-07-05
 ---
+
+## [2026-07-05] ingest | K144 — Macro Charts paid forwards (Vincent)
+
+- **Automation:** Gmail/RSS poller backfill — 8 Vincent forwards → inbox; fixed non-retroactive label query
+- **1 source** — `macro-charts-paid-forwards-vincent-2026-06-22-07-05.md` (6 issues + 2 chat stubs)
+- **3 concepts** — refreshed `macro-charts-regime-signals.md`; new `macro-charts-gold-reversal-thesis-2026-06.md`, `macro-charts-sox-tech-correction-watch-2026-06.md`
+- **1 meta** — `macro-charts-email-ingest-cadence.md`
+- **Backlinks** — `macro-rotation-momentum-signals-2026-05.md`, `macro-weather-regime.md`
+- **Posture:** all Macro Charts claims `[TENTATIVE]` — sentiment overlay vs prod macro regime
 
 ## [2026-07-04] refactor | intel monitor package layout
 

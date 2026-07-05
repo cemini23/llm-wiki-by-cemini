@@ -1,0 +1,45 @@
+# Macro Charts auto-drop — RSS (free) + cousin email forwards (paid)
+#
+# Phase 2: markdown → research to be indexed/ → inbox_notify + preingest
+# Phase 4: wiki writes stay human-gated in Cursor
+#
+# Setup: bash scripts/setup_macro_charts_email_ingest.sh
+
+rss:
+  feed_url: "https://www.macrocharts.com/feed"
+  poll_interval_seconds: 1800  # 30 min LaunchAgent
+  # Only export items newer than this many days on first run (backfill cap).
+  max_age_days: 14
+  user_agent: "CeminiOSINT-MacroCharts/1.0"
+
+gmail:
+  label: "Cemini/Macro-Charts"
+  processed_label: "Cemini/Macro-Charts/processed"
+  # OAuth (outside git):
+  #   ~/.cemini/gmail-oauth-client.json
+  #   ~/.cemini/gmail-oauth-token.json
+  poll_interval_seconds: 900  # 15 min
+
+forwarders:
+  - "vinnyb64@gmail.com"
+
+macro_charts_signals:
+  - "macrocharts.com"
+  - "macrocharts.substack.com"
+  - "substack.com/@macrocharts"
+  - "from: macro charts"
+  - "from:macro charts"
+  - "macro charts <"
+  - "email.mg.substack.com"
+  - "macrocharts@substack.com"
+
+deny_senders: []
+
+inbox:
+  rss_filename_prefix: "macro-charts-rss"
+  email_filename_prefix: "macro-charts-paid-forward"
+  slug_max_len: 48
+
+state:
+  posts_registry: ".local/state/macro-charts-posts.json"
+  gmail_message_ids: ".local/state/macro-charts-email.json"

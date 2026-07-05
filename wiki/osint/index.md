@@ -1848,7 +1848,11 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Signal-adaptive execution quotes 2605.24242](sources/arxiv-signal-adaptive-execution-2605-24242-2026-06-01.md) — `[DRAFT 2026-06-01]` Explicit LOB quoting theory. — source, arxiv, k92
 - [HarrierOnChain PM toolkits](entities/tools/harrier-pm-toolkits.md) — `[DRAFT 2026-05-31]` K90 Adopt; Phase-0 pending. — tool, polymarket, k90
 - [polymarket-skills (mjunaidca)](entities/tools/polymarket-skills-mjunaidca.md) — `[DRAFT 2026-05-31]` K90 Adopt; null LICENSE on gh api. — tool, polymarket, k90
-- [Macro Charts regime signals](concepts/macro-charts-regime-signals.md) — `[DRAFT 2026-05-31]` K90 newsletter opener. — concept, macro, k90
+- [Macro Charts regime signals](concepts/macro-charts-regime-signals.md) — `[DRAFT 2026-07-05]` K90 opener + K144 Great Reversal arc (Jun–Jul paid forwards). — concept, macro, k90, k144
+- [Macro Charts gold / metals reversal thesis (Jun–Jul 2026)](concepts/macro-charts-gold-reversal-thesis-2026-06.md) — `[DRAFT 2026-07-05]` K144 gold/DXY/rates/yen synthesis [TENTATIVE]. — concept, gold, k144
+- [Macro Charts SOX / tech correction watch (Jun 2026)](concepts/macro-charts-sox-tech-correction-watch-2026-06.md) — `[DRAFT 2026-07-05]` K144 Korea chip shock + SOX top watch [TENTATIVE]. — concept, semiconductors, k144
+- [Macro Charts paid forwards Vincent Jun 22–Jul 5 2026](sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md) — `[DRAFT 2026-07-05]` 6 paid issues + 2 chat stubs; Gmail auto-drop. — source, macro-charts, k144
+- [Macro Charts email ingest cadence](meta/macro-charts-email-ingest-cadence.md) — `[VALIDATED 2026-07-05]` RSS + Vincent Gmail poller → inbox. — meta, automation
 
 #### K89 knowledge-application audit (2026-05-31)
 

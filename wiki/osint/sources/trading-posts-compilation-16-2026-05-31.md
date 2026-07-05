@@ -8,8 +8,8 @@ related:
   - sources/trading-posts-compilation-12-2026-06-01.md
   - sources/trading-posts-compilation-k84-2026-05-30.md
   - concepts/macro-charts-regime-signals.md
+  - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
   - concepts/polymarket-weather-trading-strategy.md
-  - concepts/macro-charts-regime-signals.md
   - concepts/macro-weather-regime.md
   - entities/tools/hermes-agent.md
   - "@gambling-wiki/concepts/polymarket-weather-wagering-retail.md"
@@ -29,6 +29,7 @@ clusters: [macro, polymarket-retail, agent-harness, seo-funnel]
 
 - @sources/trading-posts-compilation-42-2026-05-31.md — prior batch (different sha256; 42 posts)
 - @concepts/polymarket-weather-trading-strategy.md — OSINT bot/strategy layer; K90 Post 15 is **retail copy-trading** angle → gambling-wiki
+- @sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md — K144 paid Macro Charts arc extends K90 opener
 - @gambling-wiki/concepts/polymarket-weather-wagering-retail.md — cross-wiki brief from Post 15
 - @seo-wiki/concepts/x-account-voice-and-format.md — K90 style pass
 
