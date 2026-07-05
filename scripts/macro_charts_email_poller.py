@@ -272,7 +272,7 @@ def poll_gmail(cfg: dict[str, Any], *, dry_run: bool, backfill_days: int | None 
     prefix = (cfg.get("inbox") or {}).get("email_filename_prefix", "macro-charts-paid-forward")
     state_cfg = cfg.get("state") or {}
     gmail_state_path = REPO_ROOT / state_cfg.get("gmail_message_ids", ".local/state/macro-charts-email.json")
-    posts_state_path = REPO_ROOT / state_cfg.get("posts_registry", ".local/state/macro-charts-posts.json")
+    posts_state_path = REPO_ROOT / state_cfg.get("posts_registry", ".local/state/substack-rss-posts.json")
     processed_ids = read_gmail_ids(gmail_state_path)
     posts_state = read_post_state(posts_state_path)
 

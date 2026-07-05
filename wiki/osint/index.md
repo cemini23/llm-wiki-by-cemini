@@ -1853,6 +1853,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Macro Charts SOX / tech correction watch (Jun 2026)](concepts/macro-charts-sox-tech-correction-watch-2026-06.md) — `[DRAFT 2026-07-05]` K144 Korea chip shock + SOX top watch [TENTATIVE]. — concept, semiconductors, k144
 - [Macro Charts paid forwards Vincent Jun 22–Jul 5 2026](sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md) — `[DRAFT 2026-07-05]` 6 paid issues + 2 chat stubs; Gmail auto-drop. — source, macro-charts, k144
 - [Macro Charts email ingest cadence](meta/macro-charts-email-ingest-cadence.md) — `[VALIDATED 2026-07-05]` RSS + Vincent Gmail poller → inbox. — meta, automation
+- [Substack RSS ingest cadence](meta/substack-rss-ingest-cadence.md) — `[VALIDATED 2026-07-05]` curated finance Substack RSS feeds → inbox. — meta, automation
 
 #### K89 knowledge-application audit (2026-05-31)
 

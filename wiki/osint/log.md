@@ -3,6 +3,16 @@
 updated: 2026-07-05
 ---
 
+## [2026-07-05] automation | Substack RSS multi-feed ingest
+
+- **Config:** `config/substack-rss-ingest.yaml` — 9 feeds (Macro Charts, Klement, Outlier Weekly, Moontower, Last Bear Standing, Capital Flows, Apricitas, Kyla, Wu Blockchain)
+- **Cross-wiki add:** +11 feeds for gambling-wiki, cybersecurity-wiki, seo-wiki, ccc-wiki (`cross_wiki:` frontmatter)
+- **Cross-wiki route:** `scripts/route_newsletter_inbox_cross_wiki.py` — 28 inbox drops → sibling `sources/` pages (7 gambling, 18 ccc, 2 cyber, 1 seo); fixed `cross_wiki_route.py` `~/Projects` path resolution
+- **Gambling synthesis:** `@gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md`, `kalshi-michigan-sports-injunction-2026-06.md`, `pm-whale-conviction-bias-2026-07.md`; inbox RSS archived to egress-fi
+- **Poller:** `scripts/substack_rss_poller.py` + LaunchAgent `com.cemini.substack-rss-poller`
+- **Meta:** `meta/substack-rss-ingest-cadence.md`; updated `macro-charts-email-ingest-cadence.md`
+- **State:** unified `.local/state/substack-rss-posts.json` (migrates legacy macro-charts registry)
+
 ## [2026-07-05] ingest | K144 — Macro Charts paid forwards (Vincent)
 
 - **Automation:** Gmail/RSS poller backfill — 8 Vincent forwards → inbox; fixed non-retroactive label query

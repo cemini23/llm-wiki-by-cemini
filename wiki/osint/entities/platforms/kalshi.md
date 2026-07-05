@@ -63,9 +63,11 @@ related:
   - concepts/gambling-wiki-federation.md
   - sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md
   - concepts/kalshi-implied-macro-belief-distributions.md
+  - gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - gambling-wiki/concepts/kalshi-michigan-sports-injunction-2026-06.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-02
+updated: 2026-07-05
 ---
 
 ## Relations
@@ -77,7 +79,8 @@ updated: 2026-07-02
 - @sources/3-19-alternative-data-for-prediction-markets-research.md
 - @sources/3-19-compliance-research.md
 - @sources/3-19-ip-sale-research.md
-- @sources/3-19-kalshi-trading-strategy-research.md
+- @gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md — retail oracle / stream-botting risk
+- @gambling-wiki/concepts/kalshi-michigan-sports-injunction-2026-06.md — Michigan sports-contract TRO
 - @sources/3-29-research-4.md
 - @sources/3-9-pm-research.md
 - @sources/fintech-startup-legal-ip-roadmap.md — K7 deep-read 2026-04-27 — K7's regulatory framework section names Kalshi as the **CFTC-DCM venue whose jurisdictional cleanliness reinforces the IP-sale-prep story**; the K7 prescription (Florida OpCo + Wyoming HoldCo) keeps Kalshi-domiciled event-contract trading under the CFTC's federal-preemption shield, complementing role 3 (compliance leverage point) documented in this entity's narrative

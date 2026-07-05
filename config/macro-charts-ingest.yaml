@@ -41,5 +41,5 @@ inbox:
   slug_max_len: 48
 
 state:
-  posts_registry: ".local/state/macro-charts-posts.json"
+  posts_registry: ".local/state/substack-rss-posts.json"
   gmail_message_ids: ".local/state/macro-charts-email.json"

@@ -66,7 +66,7 @@ def post_already_exported(state: dict[str, Any], url: str, *, prefer_source: str
     entry = (state.get("posts") or {}).get(key)
     if not entry:
         return False
-    if prefer_source == "email" and entry.get("source") == "rss":
+    if prefer_source == "email" and str(entry.get("source", "")).startswith("rss"):
         return False
     return True
 
@@ -90,10 +90,12 @@ def inbox_has_url(url: str) -> bool:
     slug = post_slug_from_url(url)
     if not INBOX.is_dir():
         return False
-    for path in INBOX.glob("macro-charts-*.md"):
-        text = path.read_text(encoding="utf-8", errors="replace")
-        if url in text or slug in path.name:
-            return True
+    patterns = ("macro-charts-*.md", "substack-rss-*.md", "newsletter-rss-*.md")
+    for pattern in patterns:
+        for path in INBOX.glob(pattern):
+            text = path.read_text(encoding="utf-8", errors="replace")
+            if url in text or slug in path.name:
+                return True
     return False
 
 
@@ -105,7 +107,9 @@ def trigger_inbox_notify() -> None:
         subprocess.run(["/bin/bash", str(script)], check=False)
 
 
-def is_rss_teaser_only(html_content: str, plain: str) -> bool:
-    """Substack free RSS items end with a Read more link; paid posts are absent from feed."""
-    blob = f"{html_content}\n{plain}".lower()
-    return "read more" in blob and "macrocharts.com/p/" in blob
+def is_rss_teaser_only(html_content: str, plain: str, link: str = "") -> bool:
+    """Substack free RSS items often end with a Read more link when body is truncated."""
+    blob = f"{html_content}\n{plain}\n{link}".lower()
+    if "read more" not in blob:
+        return False
+    return "/p/" in blob or "substack.com" in blob

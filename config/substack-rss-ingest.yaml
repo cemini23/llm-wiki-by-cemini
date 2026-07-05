@@ -1,0 +1,173 @@
+# Substack / finance newsletter RSS → research to be indexed/
+#
+# Free-tier posts only (paid content needs email forward path like Macro Charts).
+# Phase 4: wiki writes stay human-gated in Cursor.
+#
+# Poll: bash scripts/run_substack_rss_poller.sh
+# Setup LaunchAgent: bash scripts/setup_macro_charts_email_ingest.sh (installs RSS + Gmail agents)
+
+poll_interval_seconds: 1800
+max_age_days: 7
+user_agent: "CeminiOSINT-SubstackRSS/1.0"
+
+state:
+  posts_registry: ".local/state/substack-rss-posts.json"
+
+feeds:
+  - id: macrocharts
+    name: Macro Charts
+    feed_url: https://www.macrocharts.com/feed
+    filename_prefix: macro-charts-rss
+    max_age_days: 14
+    tags: [macro, technical-analysis, substack]
+    enabled: true
+
+  - id: klement
+    name: Klement on Investing
+    feed_url: https://klementoninvesting.substack.com/feed
+    filename_prefix: substack-rss-klement
+    tags: [macro, prediction-markets, research]
+    cross_wiki: [gambling-wiki]
+    enabled: true
+
+  - id: outlier-weekly
+    name: Outlier Weekly
+    feed_url: https://outlierweekly.substack.com/feed
+    filename_prefix: substack-rss-outlier-weekly
+    tags: [prediction-markets, polymarket, kalshi]
+    cross_wiki: [gambling-wiki]
+    enabled: true
+
+  - id: moontower
+    name: Moontower Meta
+    feed_url: https://moontowermeta.com/feed
+    filename_prefix: substack-rss-moontower
+    tags: [options, trading, quant]
+    enabled: true
+
+  - id: last-bear-standing
+    name: The Last Bear Standing
+    feed_url: https://www.thelastbearstanding.com/feed
+    filename_prefix: substack-rss-last-bear
+    tags: [macro, equities, substack]
+    enabled: true
+
+  - id: capital-flows
+    name: Capital Flows
+    feed_url: https://www.capitalflowsresearch.com/feed
+    filename_prefix: substack-rss-capital-flows
+    tags: [macro, global-macro, substack]
+    enabled: true
+
+  - id: apricitas
+    name: Apricitas Economics
+    feed_url: https://www.apricitas.io/feed
+    filename_prefix: substack-rss-apricitas
+    tags: [macro, economics, data]
+    enabled: true
+
+  - id: kyla
+    name: Kyla's Newsletter
+    feed_url: https://kyla.substack.com/feed
+    filename_prefix: substack-rss-kyla
+    tags: [macro, retail, markets]
+    enabled: true
+
+  - id: wublock
+    name: Wu Blockchain
+    feed_url: https://wublock.substack.com/feed
+    filename_prefix: substack-rss-wublock
+    tags: [crypto, perps, quant]
+    enabled: true
+
+  # --- gambling-wiki (prediction markets + sports betting retail) ---
+  - id: event-horizon
+    name: Event Horizon
+    feed_url: https://nexteventhorizon.substack.com/feed
+    filename_prefix: substack-rss-event-horizon
+    tags: [prediction-markets, kalshi, polymarket]
+    cross_wiki: [gambling-wiki]
+    enabled: true
+
+  - id: the-closing-line
+    name: The Closing Line
+    feed_url: https://theclosingline.substack.com/feed
+    filename_prefix: substack-rss-closing-line
+    tags: [sports-betting, gambling-industry]
+    cross_wiki: [gambling-wiki]
+    enabled: true
+
+  # --- cybersecurity-wiki ---
+  - id: tldrsec
+    name: tl;dr sec
+    feed_url: https://rss.beehiiv.com/feeds/xgTKUmMmUm.xml
+    filename_prefix: newsletter-rss-tldrsec
+    tags: [cybersecurity, offensive-security, agents]
+    cross_wiki: [cybersecurity-wiki]
+    enabled: true
+
+  - id: secpro
+    name: Packt SecPro
+    feed_url: https://secpro.substack.com/feed
+    filename_prefix: substack-rss-secpro
+    tags: [cybersecurity, blue-team]
+    cross_wiki: [cybersecurity-wiki]
+    enabled: true
+
+  - id: seceng-weekly
+    name: The Engineering Club — Security Edition
+    feed_url: https://secengweekly.substack.com/feed
+    filename_prefix: substack-rss-seceng-weekly
+    tags: [cybersecurity, engineering]
+    cross_wiki: [cybersecurity-wiki]
+    enabled: true
+
+  # --- seo-wiki (GEO/AEO + local SEO) ---
+  - id: lily-ray
+    name: Lily Ray on SEO
+    feed_url: https://lilyraynyc.substack.com/feed
+    filename_prefix: substack-rss-lily-ray
+    tags: [seo, geo, aeo]
+    cross_wiki: [seo-wiki]
+    enabled: true
+
+  - id: sparktoro
+    name: SparkToro Blog
+    feed_url: https://sparktoro.com/blog/feed
+    filename_prefix: newsletter-rss-sparktoro
+    tags: [seo, audience-research, marketing]
+    cross_wiki: [seo-wiki]
+    enabled: true
+
+  - id: sterling-sky
+    name: Sterling Sky
+    feed_url: https://sterlingsky.ca/feed
+    filename_prefix: newsletter-rss-sterling-sky
+    tags: [local-seo, gbp]
+    cross_wiki: [seo-wiki]
+    enabled: true
+
+  # --- ccc-wiki (agents, Cursor, eng leadership) ---
+  - id: pragmatic-engineer
+    name: The Pragmatic Engineer
+    feed_url: https://newsletter.pragmaticengineer.com/feed
+    filename_prefix: newsletter-rss-pragmatic-engineer
+    tags: [engineering, cursor, agents]
+    cross_wiki: [ccc-wiki]
+    enabled: true
+
+  - id: latent-space
+    name: Latent Space
+    feed_url: https://www.latent.space/feed
+    filename_prefix: newsletter-rss-latent-space
+    tags: [ai-engineering, agents, llm]
+    cross_wiki: [ccc-wiki]
+    enabled: true
+
+  - id: addy-osmani
+    name: Addy Osmani's Blog
+    feed_url: https://addyo.substack.com/feed
+    filename_prefix: substack-rss-addy-osmani
+    tags: [web-dev, ai, engineering]
+    cross_wiki: [ccc-wiki]
+    enabled: true

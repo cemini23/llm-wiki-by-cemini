@@ -39,6 +39,32 @@ def _find_claude_md():
     return REPO_ROOT / "CLAUDE.md"
 
 
+def resolve_wiki_path(path_str: str, repo_root: Path) -> Path | None:
+    """Resolve a wiki path from CLAUDE.md table, trying ../projects and ~/Projects."""
+    raw = path_str.strip().rstrip("/")
+    candidates: list[Path] = []
+    p = Path(raw)
+    if p.is_absolute():
+        candidates.append(p)
+    else:
+        candidates.append((repo_root / raw).resolve())
+        expanded = Path(raw.replace("../projects/", str(Path.home() / "Projects") + "/"))
+        if expanded != candidates[0]:
+            candidates.append(expanded.resolve())
+        desktop_projects = Path(raw.replace("../projects/", str(repo_root.parent / "projects") + "/"))
+        if desktop_projects not in candidates:
+            candidates.append(desktop_projects.resolve())
+
+    for wiki_path in candidates:
+        if wiki_path.is_dir():
+            return wiki_path
+        if (wiki_path / "wiki").is_dir():
+            return wiki_path / "wiki"
+        if wiki_path.parent.is_dir() and (wiki_path.parent / "wiki").is_dir():
+            return wiki_path.parent / "wiki"
+    return None
+
+
 def load_wiki_aliases(claude_md_path=None):
     """Parse CLAUDE.md 'Related Wikis' table for alias -> absolute wiki path.
 
@@ -46,25 +72,21 @@ def load_wiki_aliases(claude_md_path=None):
     """
     if claude_md_path is None:
         claude_md_path = _find_claude_md()
+    repo_root = claude_md_path.parent
     aliases = {}
     if not claude_md_path.exists():
         return aliases
     text = claude_md_path.read_text(errors="replace")
-    # Match the Related Wikis table rows
     table_re = re.compile(
         r"^\|\s*`([a-z0-9_-]+)`\s*\|\s*`?([^`\n|]+)`?\s*\|",
-        re.MULTILINE
+        re.MULTILINE,
     )
     for m in table_re.finditer(text):
         alias = m.group(1).strip()
         path_str = m.group(2).strip().rstrip("/")
-        wiki_path = Path(path_str)
-        if wiki_path.is_dir():
+        wiki_path = resolve_wiki_path(path_str, repo_root)
+        if wiki_path is not None:
             aliases[alias] = wiki_path
-        elif (wiki_path / "wiki").is_dir():
-            aliases[alias] = wiki_path / "wiki"
-        elif (wiki_path.parent / "wiki").is_dir():
-            aliases[alias] = wiki_path.parent / "wiki"
     return aliases
 
 
