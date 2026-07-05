@@ -30,7 +30,7 @@ updated: 2026-05-11
 - **Original title**: Targeted Extraction Audit: Cemini Financial Suite
 - **Author(s)**: Cemini internal (LLM-generated extraction audit)
 - **Type**: DOCX (3,079,696 bytes)
-- **Location**: cemini-librarian:/opt/cemini-bulk/research/3_27 links re 2.docx
+- **Location**: `cemini-egress-fi:/opt/cemini-bulk/research/osint/3_27 links re 2.docx` (re-drop archived 2026-07-05; sha256 `7275b5e5b3985076…`)
 - **Retrieved**: 2026-04-23 (stub); deep-read 2026-05-02 (via `extract_docx.py` after `scp` from librarian)
 - **Length**: 612 lines extracted text; 20 source analyses + works cited
 - **Read status**: deep-read

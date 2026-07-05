@@ -12,8 +12,31 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **547 canonical stubs** (K143 runtime/Nash ingest +3 sources +1 concept +1 entity + updates)
+Total: **562 canonical stubs** (K146 morning ingest +5 sources +2 concepts +11 entities + updates)
 
+
+### k146-ingest (20)
+
+- [Steerability via constraints — arXiv 2607.02389](sources/arxiv-steerability-constraints-2607.02389-2026-07-05.md) — substrate constraints + docs CLI for coding-agent audit. — `pdf` [+k146, +agent-harness]
+- [Human capital hybrid forecasting — arXiv 2607.02467](sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md) — Cyborg/Validator/Automator trimodal PM pilot. — `pdf` [+k146, +prediction-markets]
+- [Cemini Multi-Wiki GitHub Evaluation.docx (2026-07-05)](sources/eval-multi-wiki-github-mcp-2026-07-05.md) — 20 URLs; taste-skill, gastown, brightdata, dbhub Adopt. — `docx` [+k146]
+- [GitHub Repo Evaluation Plan.docx (2026-07-05)](sources/eval-github-repo-mcp-plan-2026-07-05.md) — 19 MCP URLs; firecrawl-mcp-server, tavily, searxng, unity-mcp. — `docx` [+k146]
+- [HF Model Evals refresh (2026-07-05)](sources/eval-huggingface-models-k146-refresh-2026-07-05.md) — 74 URL re-drop; points to K127. — `docx` [+k146]
+- [Coding-agent substrate steerability](concepts/coding-agent-substrate-steerability.md) — enforceable linters + projection CLI. — concept [+k146]
+- [Hybrid intelligence human capital](concepts/hybrid-intelligence-human-capital-forecasting.md) — collaboration traits vs g. — concept [+k146]
+- [taste-skill](entities/tools/taste-skill.md) — K146 Adopt MIT → TipDrop UI. — entity [+k146]
+- [gastown](entities/tools/gastown.md) — K146 Adopt MIT → TipDrop Module 1 handoff. — entity [+k146]
+- [brightdata-mcp](entities/tools/brightdata-mcp.md) — K146 Adopt MIT proxy MCP. — entity [+k146]
+- [dbhub](entities/tools/dbhub.md) — K146 Adopt MIT database MCP. — entity [+k146]
+- [firecrawl-mcp-server](entities/tools/firecrawl-mcp-server.md) — K146 Adopt MIT (≠ AGPL core). — entity [+k146]
+- [tavily-mcp](entities/tools/tavily-mcp.md) — K146 Adopt RAG search MCP. — entity [+k146]
+- [mcp-searxng](entities/tools/mcp-searxng.md) — K146 Adopt self-hosted search. — entity [+k146]
+- [unity-mcp](entities/tools/unity-mcp.md) — K146 Adopt → game-dev. — entity [+k146]
+- [serena](entities/tools/serena.md) — K146 Steal-from LSP retrieval. — entity [+k146]
+- [snyk studio-mcp](entities/tools/snyk-studio-mcp.md) — K146 Adopt CVE gate. — entity [+k146]
+- [hf-mcp-server](entities/tools/hf-mcp-server.md) — K146 Adopt HF hub MCP. — entity [+k146]
+- [chrome-devtools-mcp](entities/tools/chrome-devtools-mcp.md) — K146 reaffirm Adopt. — entity update [+k146]
+- [marketingskills](entities/tools/marketingskills.md) — K146 marketing-loops steal refresh. — entity update [+k146]
 
 ### k143-ingest (8)
 

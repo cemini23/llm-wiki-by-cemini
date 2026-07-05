@@ -13,8 +13,8 @@ related:
   - concepts/rlvf-verifier-feedback-training.md
   - concepts/relaxed-nfl-auto-formalization.md
   - concepts/non-markov-belief-state-benchmarks.md
-  - concepts/generator-verifier-inference-time-steering.md
-  - concepts/llm-agent-systems.md
+  - concepts/coding-agent-substrate-steerability.md
+  - sources/arxiv-steerability-constraints-2607.02389-2026-07-05.md
   - concepts/continual-harness-online-self-improvement.md
   - concepts/code-as-agent-harness.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
@@ -22,7 +22,7 @@ related:
   - concepts/kuhn-poker-sft-curriculum-reference.md
 maturity: draft
 created: 2026-06-18
-updated: 2026-06-29
+updated: 2026-07-05
 ---
 
 ## Relations
@@ -32,7 +32,7 @@ updated: 2026-06-29
 - @sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md — VERITAS robotics paper (K123)
 - @sources/arxiv-probabilistic-agent-verification-2606.20510-2026-06-21.md — trajectory risk bounds (K125)
 - @concepts/probabilistic-agent-policy-verification.md — DRO global bound vs pointwise Best-of-N
-- @concepts/continual-harness-online-self-improvement.md — harness self-edit vs external verifier
+- @concepts/coding-agent-substrate-steerability.md — K146 enforceable substrate complement to prompt-level steering — harness self-edit vs external verifier
 - @concepts/code-as-agent-harness.md — static harness tests as verifier substrate
 - @concepts/poker-arena-multi-axis-cognitive-profile.md — multi-axis scores as verifier signals
 - @concepts/devfun-poker-agent-challenge-2026.md — Cemini deployment context

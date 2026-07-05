@@ -22,7 +22,7 @@ updated: 2026-05-16
 - **Original title**: Cemini Financial Suite: Targeted Extraction Audit Report
 - **Author(s)**: Cemini internal research (commissioned repo-audit brief; web-sourced telemetry + GitHub indexing)
 - **Type**: DOCX
-- **Location**: research for cemini/3_27 links 1.docx
+- **Location**: `cemini-egress-fi:/opt/cemini-bulk/research/osint/3_27 links 1.docx` (re-drop archived 2026-07-05; sha256 `6146404e598f7a39…`)
 - **Retrieved**: 2026-04-23 (filename date reflects download date, not publication)
 - **Length**: ~8,900 words; 18 numbered entries (per repo/SaaS/blog)
 - **Read status**: deep-read

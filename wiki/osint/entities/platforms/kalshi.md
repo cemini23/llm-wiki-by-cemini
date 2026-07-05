@@ -64,7 +64,8 @@ related:
   - sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md
   - concepts/kalshi-implied-macro-belief-distributions.md
   - gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md
-  - gambling-wiki/concepts/kalshi-michigan-sports-injunction-2026-06.md
+  - concepts/hybrid-intelligence-human-capital-forecasting.md
+  - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-07-05

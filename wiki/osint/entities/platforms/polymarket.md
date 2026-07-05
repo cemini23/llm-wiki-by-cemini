@@ -15,6 +15,8 @@ related:
   - concepts/publishers-exclusion-apa.md
   - concepts/dcm-state-preemption.md
   - entities/platforms/kalshi.md
+  - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md
+  - concepts/hybrid-intelligence-human-capital-forecasting.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - sources/polymarket-predictions-mcp.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
@@ -111,7 +113,7 @@ related:
   - entities/platforms/42-space.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-06-09
+updated: 2026-07-05
 ---
 
 ## Relations

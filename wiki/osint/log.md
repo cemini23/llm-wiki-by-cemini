@@ -3,6 +3,15 @@
 updated: 2026-07-05
 ---
 
+## [2026-07-05] ingest | K146 — morning PDFs + Gemini MCP eval batch
+
+- **Sources (5 new):** `@sources/arxiv-steerability-constraints-2607.02389-2026-07-05.md`; `@sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md`; `@sources/eval-multi-wiki-github-mcp-2026-07-05.md`; `@sources/eval-github-repo-mcp-plan-2026-07-05.md`; `@sources/eval-huggingface-models-k146-refresh-2026-07-05.md`
+- **Re-drop archive only (2):** `3_27 links 1.docx` + `3_27 links re 2.docx` → existing `@sources/3-27-links-1.md` / `@sources/3-27-links-re-2.md`; egress location updated
+- **Concepts (2):** `@concepts/coding-agent-substrate-steerability.md`; `@concepts/hybrid-intelligence-human-capital-forecasting.md`
+- **Entities (11 new + 3 updates):** taste-skill, gastown, brightdata-mcp, dbhub, firecrawl-mcp-server, tavily-mcp, mcp-searxng, unity-mcp, serena, snyk-studio-mcp, hf-mcp-server; refresh chrome-devtools-mcp, marketingskills, firecrawl (AGPL vs MCP split)
+- **Phase-0:** `scripts/adopt_k146_phase0.sh` — MIT/Apache-2.0 confirmed on Adopt tier via `gh api`
+- **Briefs:** TipDrop ×3 (`gastown`, `taste-skill`, `marketing-loops`); CeminiDFS fetch MCP stack; game-dev unity-mcp; poker-arena substrate steerability steal. **No cemini-prod scp.**
+
 ## [2026-07-05] automation | Substack RSS multi-feed ingest
 
 - **Config:** `config/substack-rss-ingest.yaml` — 9 feeds (Macro Charts, Klement, Outlier Weekly, Moontower, Last Bear Standing, Capital Flows, Apricitas, Kyla, Wu Blockchain)

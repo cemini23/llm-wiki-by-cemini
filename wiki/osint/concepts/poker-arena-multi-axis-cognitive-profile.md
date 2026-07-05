@@ -24,7 +24,10 @@ related:
   - concepts/projected-exploitability-descent.md
   - concepts/exact-multiplayer-nash-computation.md
   - sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md
-  - sources/arxiv-variable-bound-tightening-nash-2606.25997-2026-07-04.md
+  - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md
+  - sources/arxiv-steerability-constraints-2607.02389-2026-07-05.md
+  - concepts/hybrid-intelligence-human-capital-forecasting.md
+  - concepts/coding-agent-substrate-steerability.md
   - concepts/projected-exploitability-descent.md
   - sources/arxiv-nash-solver-selection-2606.28308-2026-06-30.md
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
@@ -42,7 +45,7 @@ related:
   - sources/arxiv-ipo-finance-agent-2606.23032-2026-06-24.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-07-04
+updated: 2026-07-05
 ---
 
 ## Relations
@@ -108,6 +111,7 @@ Same research lineage (Raeth author on paper; dev.fun PR cites multi-axis eval) 
 4. Regression gates on M₈ (no card hallucination) and M₉ (positional VPIP) — Kimi's losses traced to those axes.
 5. **Memory Gap (K125):** on trajectory export, tag errors where F6 off caused wrong action vs wrong action with memory on — separates forgetting from mis-decide.
 6. **Solver provenance (K143):** when using toy-game baselines for M₇ strategic mixing, record whether the chart came from exact NCP/QP, logit QRE, PED/FP-PED, CFR, or fictitious play; these are not interchangeable.
+7. **Collaboration style (K146, `[TENTATIVE]`):** log Automator / Validator / Cyborg-style LLM use from `@concepts/hybrid-intelligence-human-capital-forecasting.md` when running human-in-loop decide sessions — Validator pattern can underperform model-only.
 
 ## Snippets
 

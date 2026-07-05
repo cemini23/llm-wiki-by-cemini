@@ -30,8 +30,11 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
-## Current state (2026-07-04 — K143)
+## Current state (2026-07-05 — K146)
 
+- **K146 ingest (2026-07-05)** — Morning digest PDFs (2607.02389 substrate steerability, 2607.02467 human-capital hybrid forecasting) + two Gemini MCP eval docx + HF eval refresh. **5 sources + 2 concepts + 11 entities + updates.** Adopt: taste-skill, gastown, brightdata-mcp, dbhub, firecrawl-mcp-server, tavily-mcp, mcp-searxng, unity-mcp, hf-mcp-server, snyk/studio-mcp; chrome-devtools-mcp reaffirmed. **Briefs:** TipDrop ×3, CeminiDFS fetch MCP, game-dev unity-mcp, poker substrate steal. **No prod scp.** `3_27` docx re-drop archived to existing K49/K25 pages. **Phase-0:** `adopt_k146_phase0.sh`.
+- **K145 (2026-07-05)** — Substack RSS multi-feed poller + cross-wiki newsletter routing (28 stubs).
+- **K144 (2026-07-05)** — Macro Charts Gmail/RSS paid-forward ingest.
 - **K143 ingest (2026-07-04)** — Cemini Repository Evaluation Plan docx + two Nash-solver PDFs. **3 sources + 1 concept + 1 entity + 6 updates.** Adopt reaffirmed: Headroom (OSINT/CCC optional context compression; no prod path). Steal-from: obsidian-mind vault-manifest/QMD/hook-test patterns; **no David/TipDrop adoption brief**. Papers: exact multiplayer imperfect-information Nash computation; slack-bound tightening solves full 3-player Kuhn in 1.160s. **Phase-0:** `adopt_k143_phase0.sh`.
 
 ## Current state (2026-07-03 — K142)

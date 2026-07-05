@@ -4,6 +4,7 @@ type: source
 tags: [tool-evaluation, huggingface, poker, marl, license-compliance, k127]
 keywords: [huggingface-model-evals, MARSHAL, Kuhn poker, Poker_LORA, balatro-poker-cards, MCP security]
 related:
+  - sources/eval-huggingface-models-k146-refresh-2026-07-05.md
   - concepts/cemini-license-posture.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/kuhn-poker-sft-curriculum-reference.md
@@ -15,7 +16,7 @@ related:
 maturity: draft
 read_status: deep-read
 created: 2026-06-23
-updated: 2026-06-23
+updated: 2026-07-05
 ---
 
 ## Relations

@@ -96,6 +96,15 @@ related:
   - sources/cemini-repository-evaluation-plan-runtime-2026-07-04.md
   - entities/tools/obsidian-mind.md
   - entities/tools/headroom.md
+  - sources/eval-multi-wiki-github-mcp-2026-07-05.md
+  - sources/eval-github-repo-mcp-plan-2026-07-05.md
+  - sources/eval-huggingface-models-k146-refresh-2026-07-05.md
+  - sources/arxiv-steerability-constraints-2607.02389-2026-07-05.md
+  - entities/tools/taste-skill.md
+  - entities/tools/gastown.md
+  - entities/tools/firecrawl-mcp-server.md
+  - entities/tools/tavily-mcp.md
+  - entities/tools/mcp-searxng.md
 maturity: validated
 hub: true
 created: 2026-04-28
@@ -592,6 +601,20 @@ Ingest: `Cemini Repository Evaluation Plan.docx` plus two Nash-solver arXiv pape
 | **Reference / aggregate** | many | Free LLM API indexes and Fable harness repos stay source-table material unless a later CCC-specific pass picks a concrete integration |
 
 **Routing correction:** docx marked `obsidian-mind` Adopt for TipDrop M4, but Phase-0 found the fit indirect and the install surface too broad. No David/TipDrop brief and no prod scp from K143 runtime batch. `headroom` needs no new standalone brief unless an implementation runbook is requested.
+
+## Wave K146 — Morning digest PDFs + Gemini MCP evals (2026-07-05)
+
+Ingest: two arXiv papers (2607.02389 substrate steerability, 2607.02467 human-capital hybrid forecasting), `Cemini Multi-Wiki GitHub Evaluation.docx` (20 URLs), `GitHub Repo Evaluation Plan.docx` (19 MCP URLs), HF eval refresh (74 URLs, same as K127). Phase-0: `scripts/adopt_k146_phase0.sh`.
+
+| Tier | Count | Headline |
+|------|-------|----------|
+| **Adopt (new entities)** | 12 | taste-skill, gastown, brightdata-mcp, dbhub, firecrawl-mcp-server, tavily-mcp, mcp-searxng, unity-mcp, hf-mcp-server, snyk/studio-mcp; chrome-devtools-mcp reaffirmed |
+| **Steal-from** | 3+ | serena (LSP), marketingskills (marketing-loops), rigour/topos/scrapegraph on source page only |
+| **Concepts (2)** | | `@concepts/coding-agent-substrate-steerability.md`, `@concepts/hybrid-intelligence-human-capital-forecasting.md` |
+| **Duplicate re-drop** | 2 | `3_27 links 1/re 2.docx` — already `@sources/3-27-links-1.md` / `@sources/3-27-links-re-2.md`; archive only |
+| **HF refresh** | 0 new | `@sources/eval-huggingface-models-k146-refresh-2026-07-05.md` points to K127 |
+
+**Brief routing:** TipDrop (gastown, taste-skill, marketing-loops); CeminiDFS (fetch MCP stack); game-dev (unity-mcp); poker-arena (substrate steerability steal). No cemini-prod scp unless xsp operator confirms tavily lane.
 
 ## Snippets
 

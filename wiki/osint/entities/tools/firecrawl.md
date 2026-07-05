@@ -5,16 +5,20 @@ tags: [entity, tool, web-scraping, llm-agent-tooling, javascript-rendering, spor
 keywords: [firecrawl, web-scraping, js-rendering, llm-friendly-scraper, search-with-url-filter, sports-analytics-scraper]
 related:
   - sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md
+  - sources/eval-github-repo-mcp-plan-2026-07-05.md
+  - entities/tools/firecrawl-mcp-server.md
   - concepts/sports-prediction-consensus-agent.md
+  - concepts/wiki-tooling-evaluation.md
   - entities/people/stacyonchain.md
 maturity: draft
 created: 2026-05-20
-updated: 2026-05-28
+updated: 2026-07-05
 ---
 
 ## Relations
 
 - @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — K55 Posts.docx Post 4 explicitly cites Firecrawl as the scraping layer
+- @entities/tools/firecrawl-mcp-server.md — **MIT MCP client** (K146 Adopt) — distinct from this AGPL core repo
 - @concepts/sports-prediction-consensus-agent.md — the synthesized concept uses Firecrawl in its data-layer stage
 - @entities/people/stacyonchain.md — referencing author
 
@@ -71,6 +75,7 @@ for article in response.results:
 ### Cemini fit
 
 - **Phase-0 outcome (2026-05-28): REJECT for code adoption in prod** — canonical repo `firecrawl/firecrawl` is **AGPL-3.0**. Hosted API usage can still be considered as an external SaaS dependency if needed, but self-host/code import is outside Cemini IP-sale posture.
+- **K146 note:** `@entities/tools/firecrawl-mcp-server.md` is a separate **MIT** MCP package; Adopt for CeminiDFS API-client path only — do not merge with this AGPL entity verdict.
 - If not, existing Browserbase / Playwright stack is probably sufficient.
 
 ### Phase-0 audit (2026-05-28)

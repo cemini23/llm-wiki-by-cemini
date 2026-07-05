@@ -5,15 +5,17 @@ tags: [tool, claude-code, skills, marketing, adopt-tier, seo-wiki, workflow, cro
 keywords: [marketingskills, marketing skills, claude code plugin, .agents/skills/, content automation, image generation skill]
 related:
   - sources/multi-wiki-link-eval-prompt-2026-05-13.md
+  - sources/eval-multi-wiki-github-mcp-2026-07-05.md
   - concepts/tool-evaluation-framework.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-05-28
+updated: 2026-07-05
 ---
 
 ## Relations
 
 - `@sources/multi-wiki-link-eval-prompt-2026-05-13.md` — origin source (Doc 2, K42), Adopt-tier
+- `@sources/eval-multi-wiki-github-mcp-2026-07-05.md` — K146 marketing-loops steal refresh for TipDrop M6
 - `@concepts/tool-evaluation-framework.md` — methodology
 
 ## Raw Concept
@@ -28,7 +30,9 @@ Stub from Doc 2 K42 eval. Adopt-tier; SEO/Workflow primary fit + Image-gen cross
 
 ### Phase-0 audit (2026-05-28)
 
-Repo: `coreyhaines31/marketingskills` — **MIT**, ~30.8k stars, active (updated 2026-05-28).
+Repo: `coreyhaines31/marketingskills` — **MIT**, ~36k stars (K146 docx), active.
+
+**K146 refresh:** Steal **marketing-loops** cadence pattern (scheduled autonomous copy generation with idempotency markers) for TipDrop Module 6 Ollama drafts — brief `../projects/tipdrop-workspace-kit/briefs/2026-07-05_k146-marketing-loops-steal.md`. CFTC 4.41 guardrails in docx align with TipDrop compliance copy rules.
 
 | Check | Result |
 |---|---|

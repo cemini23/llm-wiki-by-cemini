@@ -5,16 +5,18 @@ tags: [entity, tool, mcp, browser, k141]
 keywords: [chrome-devtools-mcp, CDP, MCP, Apache-2.0, Lighthouse]
 related:
   - sources/eval-multi-wiki-agent-harness-v2-2026-07-03.md
+  - sources/eval-github-repo-mcp-plan-2026-07-05.md
   - entities/tools/page-agent.md
   - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-07-03
-updated: 2026-07-03
+updated: 2026-07-05
 ---
 
 ## Relations
 
 - @sources/eval-multi-wiki-agent-harness-v2-2026-07-03.md — K141 Adopt row
+- @sources/eval-github-repo-mcp-plan-2026-07-05.md — K146 reaffirm + telemetry flag
 
 ## Raw Concept
 
@@ -26,7 +28,7 @@ K141 Phase-0 on [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDe
 |-------|-------|
 | **Repo** | `ChromeDevTools/chrome-devtools-mcp` |
 | **License** | **Apache-2.0** (`gh api` 2026-07-03) |
-| **Stars / pushed** | ~45k★; pushed 2026-07-03 |
+| **Stars / pushed** | ~46k★; pushed 2026-07-05 (`gh api` K146) |
 | **Verdict** | **Adopt** — CCC default browser MCP (pairs with built-in Cursor browser rule) |
 | **Ops** | Enforce `--no-usage-statistics`; avoid thousand-tab profiles |
 
