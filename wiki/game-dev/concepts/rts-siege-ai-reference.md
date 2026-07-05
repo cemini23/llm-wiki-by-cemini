@@ -14,10 +14,11 @@ related:
   - concepts/game-ai-rl-augmentation-shelf.md
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
   - sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md
+  - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
   - concepts/stronghold-crusader-ai-modding-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-30
+updated: 2026-07-05
 ---
 
 ## Relations
@@ -61,6 +62,10 @@ From @sources/gdc-total-war-warhammer-siege-ai.md [TENTATIVE — forum recap of 
 ### Influence maps + macro scripts (research shelf)
 
 @sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md — StarCraft **HRL-IM/CBS**: influence map hashing + cluster-based scripts for interpretable micromanagement. **Steal pattern, not training stack:** low-res friendly/hostile density grid for raid target bias; unit **clusters** as macro actions (archers vs ram). Tier 2+ before any RL leaf (@concepts/game-ai-rl-augmentation-shelf.md). Brief: gitignored `briefs/research/starcraft-influence-map-hrl-shelf.md`.
+
+### LLM multi-domain lord planning (research shelf — Tier 3+)
+
+@sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md — **SAGA**: scene-graph spatial grounding + tool-augmented per-domain specialists + dual-horizon feedback on CivRealm/FreeCiv. **Not for v0–v2 raid timer** — contrast pattern when Phase E lord director grows past JSON FSM. Brief: gitignored `briefs/research/saga-civrealm-strategy-agent-shelf.md`.
 
 ## Snippets
 

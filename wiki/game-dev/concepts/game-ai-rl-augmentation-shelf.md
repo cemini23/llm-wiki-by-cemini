@@ -13,6 +13,7 @@ related:
   - entities/projects/castle-sim.md
   - sources/inbox-arxiv-reject-batch-2026-06-29.md
   - sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md
+  - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
 maturity: validated
 created: 2026-06-20
 updated: 2026-06-30

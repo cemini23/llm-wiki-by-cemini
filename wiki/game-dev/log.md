@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-05] ingest | SAGA CivRealm strategy agents + AV re-drop
+
+- Inbox: 2 arXiv PDFs → @sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md (ingest); @sources/inbox-arxiv-reject-batch-2026-07-05.md (2607.01382 re-drop ×3); archived; inbox cleared
+- Brief: `briefs/research/saga-civrealm-strategy-agent-shelf.md`; synced → `castle-sim/briefs/research/` (18 files parity)
+- Wiki fill: flow-field benchmark brief backlink on @concepts/flow-field-pathfinding.md
+- Phase-0: none (SAGA repo no license; CommonRoad AV out of scope)
+- Sweep: @sweeps/2026-07-05-daily.md
+
+---
+
 ## [2026-07-04] ingest | Urban planning + AV rejects, AI narrative guardrails
 
 - Inbox: 2 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-04.md (2408.05140 reject; 2607.01382 re-drop); archived; inbox cleared

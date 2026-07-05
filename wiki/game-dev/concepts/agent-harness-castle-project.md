@@ -27,6 +27,7 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-06-30.md
   - sources/protocolbench-llm-multiagent-protocol-shelf-2026-06-24.md
   - sources/godot-engine-ai-contribution-policy-2026-07-01.md
+  - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
   - entities/engines/godot-4.md
 maturity: draft
 created: 2026-06-13

@@ -239,5 +239,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-07-03](sources/inbox-arxiv-reject-batch-2026-07-03.md) | read |
 | [godot-engine-ai-contribution-policy-2026-07-01](sources/godot-engine-ai-contribution-policy-2026-07-01.md) | read |
 | [inbox-arxiv-reject-batch-2026-07-04](sources/inbox-arxiv-reject-batch-2026-07-04.md) | read |
+| [inbox-arxiv-reject-batch-2026-07-05](sources/inbox-arxiv-reject-batch-2026-07-05.md) | read |
+| [arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05](sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md) | read |
 | [36kr-ai-game-story-gameplay-guardrails-2026-06-30](sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md) | read |
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |

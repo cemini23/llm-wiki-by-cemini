@@ -17,6 +17,7 @@ related:
   - sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md
   - sources/hero-rl-llm-npc-springer-2026-06-26.md
   - sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md
+  - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-07-04

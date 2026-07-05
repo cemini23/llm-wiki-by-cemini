@@ -85,6 +85,8 @@ Wall place/remove → mark affected cells impassable in cost field → re-run in
 
 ## Snippets
 
+**Operator benchmark (castle-sim spike):** gitignored `briefs/research/flow-field-benchmark-2026-06-17.md` — 20×20 grid, 50 agents, A* vs flow build/query; flow wins at shared-goal steady state.
+
 Adoption gate (pseudocode):
 
 ```gdscript

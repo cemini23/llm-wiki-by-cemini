@@ -23,6 +23,8 @@ related:
   - sources/sh2-heaven-buildings-industry-civilian-2026-06-18.md
   - entities/projects/castle-sim.md
   - concepts/stronghold-franchise-best-of-shelf.md
+  - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
+  - concepts/llm-npc-runtime-ai-shelf.md
   - concepts/game-ai-rl-augmentation-shelf.md
   - sources/arxiv-2606.20210-augmenting-game-ai-drl-2026-06-20.md
 maturity: validated
@@ -170,6 +172,10 @@ Strong → weak: King, Queen, Hammer, William, Hawk, Bishop, Seren, Bull, Olaf, 
 3. Economy: AI buys estates at honour threshold OR ranks up (coin flip)
 
 **Data stub:** `castle-sim/data/sh2/lord_profiles.json` + `LordProfile` / `LordAIDirector3D` loaders (2026-06-18).
+
+### LLM lord research contrast (Tier 3+ shelf)
+
+@sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md documents **multi-domain specialist decomposition** (economy / military / diplomacy) under long-horizon sparse reward — useful contrast when JSON lord weights feel too flat, but **not** a replacement for SH2-authentic scripted cycles in Phase E. Brief: gitignored `briefs/research/saga-civrealm-strategy-agent-shelf.md`.
 
 ## Dead Ends
 
