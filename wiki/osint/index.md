@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **546 canonical stubs** (K143 runtime/Nash ingest +3 sources +1 concept +1 entity + updates)
+Total: **547 canonical stubs** (K143 runtime/Nash ingest +3 sources +1 concept +1 entity + updates)
 
 
 ### k143-ingest (8)
@@ -1419,6 +1419,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Instrumental probability — hard to predict (2606.08209)](sources/arxiv-instrumental-probability-hard-to-predict-2606.08209-2026-06-10.md) — `[VALIDATED 2026-06-10]` P–Q wedge, capacity layer, net exploitability vs random-walk sloppiness. — source, arxiv, k110
 - [Can AI Agents Synthesize Scientific Conclusions? (2606.11337)](sources/arxiv-2606-11337-sciconbench-scientific-synthesis-agents-2026-06-13.md) — `[DRAFT 2026-06-13]` K114 SciConBench + clean-room harness. — source, arxiv, agent-eval, k114
 - [GEO Group ICE turnkey investigation (April 2026)](sources/geo-group-ice-turnkey-investigation-2026-04-09.md) — `[DRAFT 2026-06-13]` K114 investigative brief cluster. — source, osint, geo-group, k114
+- [ICE J&A-26-0143 — First American title/escrow (Florence/Krome/Batavia)](sources/ice-ja-26-0143-first-american-escrow-2026.md) — `[DRAFT 2026-07-04]` federal SPC expansion J&A; archived egress-fi. — source, ice, sam, escrow
 - [TT-DAC-PS optimal execution (2606.08379)](sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md) — `[VALIDATED 2026-06-10]` RL IS% benchmarks on equity LOB; twin-target TD3 + adaptive OU. — source, arxiv, execution, k110
 - [AS/CJ forced uniqueness (2606.01477)](sources/arxiv-as-cj-forced-uniqueness-2606.01477-2026-06-11.md) — `[VALIDATED 2026-06-11]` ϕ=γσ²/2; CJ as AS expansion. — source, arxiv, market-making, k111
 - [GIFT FinRL interface (2606.08450)](sources/arxiv-gift-llm-state-reward-2606.08450-2026-06-11.md) — `[VALIDATED 2026-06-11]` LLM-guided state/reward; repo NO-GO. — source, arxiv, financial-rl, k111
@@ -1702,6 +1703,8 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [PTA backtest cadence](meta/pta-backtest-cadence.md) — `[CORE 2026-05-29]` PTA pilot gate; last run 2026-05-29 **FAIL** on stale ArcticDB slice. — meta, pta, backtest, quant
 - [WC LP safety DR cadence](meta/wc-lp-safety-cadence.md) — `[CORE 2026-05-30]` weekly Gemini team LP safety re-run through Cup; next 2026-06-06. — meta, world-cup, lp-safety, k84
 - [Wiki gap detect cadence](meta/wiki-gap-detect-cadence.md) — `[CORE 2026-05-30]` Tier 1 weekly report; descriptive only. — meta, wiki, gap-detect, k84
+- [ICE facility jobs monitor cadence](meta/ice-facility-jobs-cadence.md) — `[DRAFT 2026-07-04]` daily CXW/GEO jobs anomaly monitor; baseline report stored locally. — meta, ice, hiring, cadence
+- [ICE detention stats monitor cadence](meta/ice-detention-stats-cadence.md) — `[DRAFT 2026-07-04]` biweekly ICE facility ADP vs guaranteed-min screen; last publish 2026-04-09 (86d stale). — meta, ice, detention, cadence
 - [Sandbox beta S1 season harvest cadence](meta/sandbox-season-harvest-cadence.md) — `[VALIDATED 2026-06-23]` post-10k Arena export + trajectory pull via `run_sandbox_season_harvest.sh`. — meta, poker, sandbox, researcher
 
 #### K80 ingest (2026-05-29 — Polymarket YouTube batch, 4 videos)

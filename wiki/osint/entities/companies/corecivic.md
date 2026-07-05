@@ -10,9 +10,10 @@ related:
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - entities/companies/geo-group.md
+  - meta/ice-facility-jobs-cadence.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-07-03
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-07-03
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — June 2026 OSINT synthesis
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — parallel GEO turnkey thesis
 - @entities/companies/geo-group.md — peer operator in ICE turnkey discussions
+- @meta/ice-facility-jobs-cadence.md — recurring CXW/GEO jobs anomaly monitor
 
 ## Raw Concept
 

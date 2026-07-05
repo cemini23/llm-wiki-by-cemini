@@ -9,9 +9,10 @@ related:
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - sources/geo-group-ice-turnkey-investigation-2026-04-09.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
+  - meta/ice-facility-jobs-cadence.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-03
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -21,6 +22,7 @@ updated: 2026-07-03
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — CXW/CA parallel research
 - @sources/geo-group-ice-turnkey-investigation-2026-04-09.md — April 2026 investigative brief cluster
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — synthesized open-source thesis
+- @meta/ice-facility-jobs-cadence.md — recurring GEO/CXW jobs anomaly monitor
 
 ## Raw Concept
 

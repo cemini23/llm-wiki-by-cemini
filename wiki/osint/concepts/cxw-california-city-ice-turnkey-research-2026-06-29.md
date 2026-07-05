@@ -10,9 +10,10 @@ related:
   - entities/companies/geo-group.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - concepts/ice-turnkey-research-backlog-2026-06-30.md
+  - meta/ice-facility-jobs-cadence.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-07-02
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-07-02
 - @entities/companies/geo-group.md — parallel turnkey peer (GEO)
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — shared ICE acquisition thesis (GEO-led April briefs)
 - @concepts/ice-turnkey-research-backlog-2026-06-30.md — Tier 0 whole-thesis research (site rank #7, contract base case)
+- @meta/ice-facility-jobs-cadence.md — recurring jobs anomaly monitor; Cal City scored as medium compliance/stabilization signal on first run
 
 ## Raw Concept
 

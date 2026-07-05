@@ -12,10 +12,11 @@ related:
   - entities/facilities/florence-az-detention-cluster.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/ice-turnkey-research-backlog-2026-06-30.md
+  - meta/ice-facility-jobs-cadence.md
   - sources/geo-group-ice-turnkey-investigation-2026-04-09.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-02
+updated: 2026-07-04
 ---
 
 ## Relations
@@ -28,6 +29,7 @@ updated: 2026-07-02
 - @entities/facilities/florence-az-detention-cluster.md — SPC vs CAFCC disambiguation (Jul 2026)
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — CXW/CA legal + bull/bear synthesis
 - @concepts/ice-turnkey-research-backlog-2026-06-30.md — Tier 0 site ranking (Montgomery #1, Tacoma strategic #4); no 8-K confirm
+- @meta/ice-facility-jobs-cadence.md — recurring jobs anomaly monitor for GEO/CXW target clusters
 - @sources/geo-group-ice-turnkey-investigation-2026-04-09.md
 
 ## Raw Concept

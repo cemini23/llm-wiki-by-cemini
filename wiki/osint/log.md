@@ -1,5 +1,29 @@
 # Wiki Log
 
+updated: 2026-07-04
+---
+
+## [2026-07-04] refactor | intel monitor package layout
+
+- **Package:** `scripts/intel/{core,monitors}` — shared state/http/discord/staleness + jobs/detention_stats/recorder monitors
+- **Thesis config:** `config/theses/ice-turnkey/{jobs,detention-stats,recorder-sites}.yaml`
+- **Runner:** `scripts/run_ice_turnkey_monitors.sh`; prod cache sync `scripts/sync_ice_detention_cache_to_prod.sh`
+- **Shims:** legacy `scripts/ice_*_monitor.py` entrypoints preserved
+
+## [2026-07-04] automation | ICE detention stats monitor + J&A archive
+
+- **Automation:** `scripts/ice_detention_stats_monitor.py`, `config/ice-detention-stats.yaml`, run/check wrappers, unit tests; bundled into `run_ice_facility_jobs_monitor.sh` + prod install
+- **First sweep:** `.local/reports/ice-detention-stats/2026-07-04-stats-sweep.md` — last ICE publish **2026-04-09** (86d stale); escrow ADP vs gtd min Krome +410, Otay +630, Batavia +87
+- **Source:** `@sources/ice-ja-26-0143-first-american-escrow-2026.md` — J&A PDF archived `cemini-egress-fi:/opt/cemini-bulk/research/osint/JA-26-0143-ice-first-american-escrow-2026.pdf`
+- **Docs:** `@meta/ice-detention-stats-cadence.md`; Tier **4K** on `@concepts/ice-turnkey-research-backlog-2026-06-30.md`
+
+## [2026-07-04] research | ICE facility jobs anomaly monitor
+
+- **Automation:** `scripts/ice_facility_jobs_monitor.py`, `config/ice-facility-jobs.yaml`, run/check wrappers, and unit tests for CXW/GEO live jobs feeds, cluster radius matching, role scoring, baseline comparison, snapshot deltas, and Discord-ready alerts
+- **First baseline:** `.local/reports/ice-facility-jobs/2026-07-04-jobs-sweep.md` + `.local/ice-jobs-daily/2026-07-04/snapshot.json` — **1,102** active jobs fetched; no first-run alerts
+- **Research synthesis:** parallel passes on expired job backfill, same-operator baselines, vendor labor lanes, and event cross-checks; strongest live clusters MRRC/Leavenworth, GEO Adelanto/Desert View, GEO Aurora, GEO Conroe/Montgomery; Cal City medium compliance/stabilization signal
+- **Docs:** `@meta/ice-facility-jobs-cadence.md`; Tier 4J added to `@concepts/ice-turnkey-research-backlog-2026-06-30.md`
+
 ## [2026-07-04] ingest | K143 — runtime eval + Nash solver papers
 
 - **Sources (3):** `@sources/cemini-repository-evaluation-plan-runtime-2026-07-04.md` (20 runtime/Fable harness URLs); `@sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md`; `@sources/arxiv-variable-bound-tightening-nash-2606.25997-2026-07-04.md`

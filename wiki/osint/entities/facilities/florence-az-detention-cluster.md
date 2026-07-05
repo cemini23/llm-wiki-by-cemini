@@ -8,6 +8,8 @@ related:
   - entities/tickers/cxw.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - entities/facilities/california-city-detention-facility.md
+  - sources/ice-ja-26-0143-first-american-escrow-2026.md
+  - meta/ice-detention-stats-cadence.md
 maturity: draft
 created: 2026-07-02
 updated: 2026-07-02
@@ -19,6 +21,8 @@ updated: 2026-07-02
 - @entities/tickers/cxw.md — listed parent equity
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — federal turnkey + OAFM real-property frame
 - @entities/facilities/california-city-detention-facility.md — peer CXW ICE site (different legal stack)
+- @sources/ice-ja-26-0143-first-american-escrow-2026.md — First American J&A primary source (archived)
+- @meta/ice-detention-stats-cadence.md — facility ADP vs guaranteed-min screen
 
 ## Raw Concept
 

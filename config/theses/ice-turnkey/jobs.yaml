@@ -1,0 +1,330 @@
+# ICE turnkey thesis — facility hiring monitor
+# Package: scripts/intel/monitors/jobs.py
+# Config: config/theses/ice-turnkey/jobs.yaml
+# Reports: .local/reports/ice-facility-jobs/YYYY-MM-DD-jobs-sweep.md
+
+settings:
+  recent_days: 45
+  default_radius_miles: 40
+  alert_min_signal_score: 6
+  excluded_context_keywords:
+    corecivic:
+      - corporate
+      - residential reentry
+      - transitional center
+    geo:
+      - BI Incorporated
+      - BI Boulder
+      - Boulder
+      - corporate
+      - ISAP
+      - reentry
+      - day reporting
+      - manufacturing
+
+sources:
+  corecivic:
+    enabled: true
+    operator: CoreCivic
+    ticker: CXW
+    endpoint: https://jobs.corecivic.com/widgets
+    ref_num: CCRCUS
+  geo:
+    enabled: true
+    operator: GEO Group
+    ticker: GEO
+    endpoint: https://jobs.geogroup.com/api/jobs
+
+role_weights:
+  security: 3
+  intake_admin: 3
+  transport: 4
+  leadership: 4
+  maintenance: 2
+  food: 2
+  case_programs: 2
+  health: 1
+  other: 0
+
+role_keywords:
+  security:
+    - officer
+    - detention
+    - correctional
+    - security
+    - sergeant
+    - lieutenant
+    - captain
+    - case processing
+    - monitor
+  intake_admin:
+    - intake
+    - records
+    - admin
+    - administrative
+    - clerk
+    - case processing
+    - classification
+    - grievance
+    - mailroom
+    - coordinator
+    - receptionist
+    - secretary
+  transport:
+    - transport
+    - transcor
+    - driver
+    - flight
+    - removal
+    - air detention
+  leadership:
+    - administrator
+    - warden
+    - facility administrator
+    - assistant facility
+    - director
+    - manager
+    - supervisor
+    - chief
+  maintenance:
+    - maintenance
+    - mechanic
+    - locksmith
+    - janitor
+    - hvac
+    - electrician
+    - plumber
+    - grounds
+  food:
+    - food
+    - cook
+    - kitchen
+    - diet
+    - commissary
+    - warehouse
+  case_programs:
+    - case manager
+    - program
+    - recreation
+    - counselor
+    - education
+    - teacher
+    - substance
+    - social services
+    - library
+  health:
+    - nurse
+    - rn
+    - lvn
+    - lpn
+    - psych
+    - physician
+    - medical
+    - health
+    - dental
+    - mental
+    - practitioner
+    - psychiatrist
+    - cma
+
+clusters:
+  - id: cxw_cal_city_kern
+    label: CoreCivic California City / Kern labor pool
+    operator_source: corecivic
+    ticker: CXW
+    anchor:
+      lat: 35.127
+      lon: -117.985
+    radius_miles: 40
+    target_facilities:
+      - California City
+    signal_category: compliance
+    acquisition_relevance: low
+    thesis_read: "Active ICE facility; current signal is health/compliance stabilization more than idle activation."
+
+  - id: cxw_otay_mesa_sd
+    label: CoreCivic Otay Mesa / San Diego county
+    operator_source: corecivic
+    ticker: CXW
+    anchor:
+      lat: 32.57
+      lon: -116.938
+    radius_miles: 40
+    target_facilities:
+      - Otay Mesa Detention Center
+    signal_category: compliance
+    acquisition_relevance: medium
+    thesis_read: "CA inspection/litigation pressure plus case-processing and medical staffing."
+
+  - id: cxw_leavenworth_mrrc
+    label: CoreCivic Leavenworth / Midwest Regional Reception Center
+    operator_source: corecivic
+    ticker: CXW
+    anchor:
+      lat: 39.312
+      lon: -94.923
+    radius_miles: 40
+    target_facilities:
+      - Midwest Regional Reception Center
+    signal_category: activation
+    acquisition_relevance: low
+    thesis_read: "Clean activation/reopening signal; also a clean CXW watch site."
+
+  - id: cxw_florence_pinal
+    label: CoreCivic Florence / Eloy / Pinal transfer pool
+    operator_source: corecivic
+    ticker: CXW
+    anchor:
+      lat: 33.031
+      lon: -111.387
+    radius_miles: 40
+    target_facilities:
+      - Central Arizona Florence Correctional Complex
+      - Eloy Detention Center
+      - La Palma Correctional Center
+      - Saguaro Correctional Center
+      - Red Rock Correctional Center
+    signal_category: transfer_pool
+    acquisition_relevance: low
+    thesis_read: "Large transfer-labor pool; noisy because CAFCC is mixed-customer and Eloy/Pinal are already active."
+
+  - id: geo_adelanto_desert_view
+    label: GEO Adelanto / Desert View High Desert
+    operator_source: geo
+    ticker: GEO
+    anchor:
+      lat: 34.582
+      lon: -117.41
+    radius_miles: 40
+    target_facilities:
+      - 196CA - ADELANTO ICE PROCESSING CENTER
+      - 272CA - DESERT VIEW ICE PROCESSING CENTER
+    signal_category: activation
+    acquisition_relevance: medium
+    thesis_read: "Recent records/training/security/admin roles around two adjacent GEO ICE facilities."
+
+  - id: geo_mcfarland_bakersfield
+    label: GEO McFarland / Bakersfield / Mesa Verde
+    operator_source: geo
+    ticker: GEO
+    anchor:
+      lat: 35.678
+      lon: -119.229
+    radius_miles: 40
+    target_facilities:
+      - 273CA - CENTRAL VALLEY ANNEX
+      - 274CA - GOLDEN STATE ICE PROCESSING CENTER
+      - 186CA - MESA VERDE ICE PROCESSING CENTER
+    signal_category: activation
+    acquisition_relevance: medium
+    thesis_read: "Active CA cluster; mostly health/admin/food and legally noisy."
+
+  - id: geo_aurora_denver
+    label: GEO Aurora / Denver metro
+    operator_source: geo
+    ticker: GEO
+    anchor:
+      lat: 39.762
+      lon: -104.85
+    radius_miles: 40
+    target_facilities:
+      - 195CO - AURORA ICE PROCESSING CENTER
+    signal_category: operating_stack
+    acquisition_relevance: medium
+    thesis_read: "High breadth single-site signal with transport/case-processing/admin/security roles."
+
+  - id: geo_tacoma_nwipc
+    label: GEO Tacoma / Northwest ICE Processing Center
+    operator_source: geo
+    ticker: GEO
+    anchor:
+      lat: 47.255
+      lon: -122.42
+    radius_miles: 40
+    target_facilities:
+      - NORTHWEST ICE PROCESSING CENTER
+    signal_category: watch_only
+    acquisition_relevance: medium
+    thesis_read: "Low current live count; strategic watch due WA inspection fight and bridge-extension posture."
+
+  - id: geo_conroe_montgomery
+    label: GEO Conroe / Montgomery / Joe Corley
+    operator_source: geo
+    ticker: GEO
+    anchor:
+      lat: 30.304
+      lon: -95.458
+    radius_miles: 40
+    target_facilities:
+      - 173TX - JOE CORLEY ICE PROCESSING CENTER
+      - 270TX - MONTGOMERY ICE PROCESSING CENTER
+    signal_category: operating_stack
+    acquisition_relevance: high
+    thesis_read: "Broad operating stack across adjacent Hilbig facilities; recorder remains the key falsifier."
+
+  - id: geo_central_la_jena
+    label: GEO Central Louisiana / Jena + Alexandria
+    operator_source: geo
+    ticker: GEO
+    anchor:
+      lat: 31.684
+      lon: -92.133
+    radius_miles: 40
+    target_facilities:
+      - 131LA - CENTRAL LOUISIANA ICE PROCESSING CENTER
+      - 248LA - ALEXANDRIA STAGING FACILITY
+      - 2A2LA - ALEXANDRIA AVIATION LA
+    signal_category: transport
+    acquisition_relevance: medium
+    thesis_read: "Small but sharp transport/aviation/security support signal."
+
+vendor_lanes:
+  - id: transcor
+    label: TransCor secure transport
+    sources:
+      - https://transcor.com/field-offices
+      - https://transcor.com/apply-online
+    search_terms:
+      - TransCor California City
+      - TransCor Eloy Florence
+      - TransCor Leavenworth
+      - TransCor Houston
+  - id: geo_gti_transport
+    label: GEO Transport / GTI
+    search_terms:
+      - GEO Transportation Officer
+      - GEO Sr Transportation Officer
+      - GEO Flight Security Officer
+      - GEO Air Detention Officer
+  - id: medical_vendors
+    label: IHSC medical staffing vendors
+    search_terms:
+      - Amergis IHSC
+      - STGi ICE Health Service Corps
+      - Planned Systems International IHSC
+      - MDPerm ICE MED FAC
+      - Posterity Group ICE psychiatrist
+  - id: food_vendors
+    label: Correctional food and commissary vendors
+    search_terms:
+      - Trinity Services Group correctional
+      - TKC Holdings correctional
+      - Aramark corrections
+      - Union Supply Group commissary
+  - id: lasalle_winn
+    label: LaSalle Corrections / Winn Processing Center
+    search_terms:
+      - LaSalle Corrections Winn Processing Center jobs
+      - Winn Correctional Center ICE jobs
+      - Winnfield Louisiana detention hiring
+      - LaSalle ICE Processing Center jobs
+
+event_watch:
+  - "8-K Item 1.01 / 2.01 facility-sale disclosure (confirmation/falsifier, not alpha source)"
+  - "County recorder grantor/grantee hits for GEO/CoreCivic to United States/DHS/ICE"
+  - "SAM.gov/USAspending appraisal, escrow, survey, environmental, or title services tied to named facilities"
+  - "Pre-disclosure signals: title/escrow/appraisal vendors, local agenda items, recruiter feed churn, and federal-side staffing/vendor backfill"
+  - "Q2 earnings sale vs contract-extension language"
+  - "ODO/OPR/AB103/monitor reports, especially California City, Otay, Aurora, Tacoma"
+  - "ICE ADP rebound toward 70k+ or collapse below 45k"
+  - "Alexandria ICE Air / transport expansion and corporate-air DC cadence"

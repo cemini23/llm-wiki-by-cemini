@@ -1,6 +1,6 @@
-# ICE turnkey / DRI facility sale — county recorder watchlist
-# Grantee = federal buyer; grantor = private operator (CXW/GEO) on fee-simple transfer.
-# Run: bash scripts/run_ice_turnkey_recorder_check.sh
+# ICE turnkey thesis — county recorder watchlist
+# Package: scripts/intel/monitors/recorder.py
+# Config: config/theses/ice-turnkey/recorder-sites.yaml
 # Discord: bash scripts/setup_recorder_discord_webhook.sh
 # Schedule: bash scripts/install_recorder_discord_launchagent.sh  (every 4h + --notify)
 

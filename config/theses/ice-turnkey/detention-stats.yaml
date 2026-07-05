@@ -1,0 +1,78 @@
+# ICE turnkey thesis — biweekly detention statistics monitor
+# Package: scripts/intel/monitors/detention_stats.py
+# Config: config/theses/ice-turnkey/detention-stats.yaml
+# Reports: .local/reports/ice-detention-stats/YYYY-MM-DD-stats-sweep.md
+
+settings:
+  page_url: https://www.ice.gov/detain/detention-management
+  fallback_xlsx_url: /doclib/detention/FY26_detentionStats_04092026.xlsx
+  biweekly_days: 14
+  stale_warn_days: 21
+  alert_on_new_publish: true
+
+# Target facilities for CXW/GEO turnkey + escrow J&A cluster screening.
+# Names are matched as substrings against the ICE Facilities sheet.
+targets:
+  - id: otay_mesa
+    label: Otay Mesa (CXW)
+    match: OTAY MESA
+    operator: CoreCivic
+    ticker: CXW
+    thesis_lane: overcrowding / CA first-mover
+  - id: krome
+    label: Krome North SPC
+    match: KROME NORTH
+    operator: ICE federal
+    thesis_lane: escrow J&A expansion
+  - id: batavia
+    label: Buffalo/Batavia SPC
+    match: BUFFALO SERVICE
+    operator: ICE federal
+    thesis_lane: escrow J&A expansion
+  - id: florence_spc
+    label: Florence SPC
+    match: FLORENCE SERVICE PROCESSING
+    operator: ICE federal
+    thesis_lane: escrow J&A expansion
+  - id: cca_florence
+    label: CCA Florence (CXW)
+    match: CCA, FLORENCE
+    operator: CoreCivic
+    ticker: CXW
+    thesis_lane: private AZ corridor
+  - id: cal_city
+    label: California City (CXW)
+    match: CALIFORNIA CITY IMMIGRATION
+    operator: CoreCivic
+    ticker: CXW
+    thesis_lane: CXW CA watch
+  - id: montgomery
+    label: Montgomery (GEO)
+    match: MONTGOMERY ICE
+    operator: GEO Group
+    ticker: GEO
+    thesis_lane: GEO overcrowding
+  - id: stewart
+    label: Stewart (CXW)
+    match: STEWART DETENTION
+    operator: CoreCivic
+    ticker: CXW
+    thesis_lane: overcrowding
+  - id: pine_prairie
+    label: Pine Prairie (GEO)
+    match: PINE PRAIRIE ICE
+    operator: GEO Group
+    ticker: GEO
+    thesis_lane: overcrowding
+  - id: karnes
+    label: Karnes (GEO)
+    match: KARNES COUNTY IMMIGRATION
+    operator: GEO Group
+    ticker: GEO
+    thesis_lane: overcrowding
+  - id: nevada_southern
+    label: Nevada Southern (CXW)
+    match: NEVADA SOUTHERN
+    operator: CoreCivic
+    ticker: CXW
+    thesis_lane: overcrowding
