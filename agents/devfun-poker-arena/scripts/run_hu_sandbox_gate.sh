@@ -156,6 +156,8 @@ case "$TABLE_FORMAT" in
   hu)
     echo "==> HU regression"
     uv run pytest tests/test_hu_regression.py -q --tb=line
+    echo "==> K146 substrate gate (docs CLI + AST audit)"
+    bash scripts/run_substrate_gate.sh "${BUNDLE_DIR}/substrate"
     run_selfplay_bundle "HU-tight" 2 tight "$BUNDLE_DIR"
     echo "==> HU maniac/lag series audit (400h, 80h/match)"
     mkdir -p "${BUNDLE_DIR}/maniac-audit"
@@ -183,6 +185,8 @@ case "$TABLE_FORMAT" in
     run_selfplay_bundle "6-max" 6 mixed "${BUNDLE_DIR}/6max"
     echo "==> HU regression"
     uv run pytest tests/test_hu_regression.py -q --tb=line
+    echo "==> K146 substrate gate (docs CLI + AST audit)"
+    bash scripts/run_substrate_gate.sh "${BUNDLE_DIR}/substrate"
     run_selfplay_bundle "HU" 2 tight "${BUNDLE_DIR}/hu"
     echo "==> Merge 6-max + HU trajectories for combined gate"
     merge_trajectories \

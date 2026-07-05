@@ -6,6 +6,8 @@ Poker Arena — `agents/devfun-poker-arena/` verifier / decide harness.
 
 K146 **Steal-from** — arXiv 2607.02389 substrate + ~200 LoC docs CLI pattern for sandbox code audit before Researcher submit. Pair with existing K123 verifier steering; add enforceable linters + AST projection, not prompt-only review.
 
+**Shipped (2026-07-05):** `scripts/docs_cli.py` (`module` / `symbol` / `audit`), `scripts/run_substrate_gate.sh`, wired into `run_hu_sandbox_gate.sh` (HU + auto paths). Tests: `tests/test_docs_cli.py`. **Pilot:** `prepare_substrate_reviewer_pack.py` + `run_substrate_reviewer_pilot.py` (Gemma-class via OpenRouter).
+
 ## Body
 
 Wiki canon:
@@ -14,6 +16,19 @@ Wiki canon:
 - `@entities/tools/serena.md`
 
 **Pilot:** run Gemma-class or local small model reviewer on one HU bot patch with ruff + docs CLI stub.
+
+```bash
+# Projection (reviewer-facing topology)
+uv run python scripts/docs_cli.py module examples/cemini_decide.py
+uv run python scripts/docs_cli.py symbol examples/cemini_decide.py decide
+
+# Enforceable gate (forbidden calls + decide() presence + optional ruff E9/F*)
+bash scripts/run_substrate_gate.sh reports/researcher-round/substrate-latest
+
+# Pilot reviewer (topology-only prompt → Gemma-class)
+bash scripts/run_substrate_reviewer_pilot.sh
+bash scripts/run_substrate_reviewer_pilot.sh --dry-run
+```
 
 ## Sources
 
