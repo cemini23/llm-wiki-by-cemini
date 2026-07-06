@@ -12,12 +12,15 @@ related:
   - entities/facilities/florence-az-detention-cluster.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/ice-turnkey-research-backlog-2026-06-30.md
+  - concepts/corrections-reit-asset-sale-event-study.md
   - meta/ice-facility-jobs-cadence.md
   - sources/geo-group-ice-turnkey-investigation-2026-04-09.md
   - sources/ca-doj-immigration-detention-2026-ab103.md
+  - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
+  - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-05
+updated: 2026-07-06
 ---
 
 ## Relations
@@ -33,6 +36,9 @@ updated: 2026-07-05
 - @meta/ice-facility-jobs-cadence.md — recurring jobs anomaly monitor for GEO/CXW target clusters
 - @sources/geo-group-ice-turnkey-investigation-2026-04-09.md
 - @sources/ca-doj-immigration-detention-2026-ab103.md — CA overcrowding primary (May 2026)
+- @sources/corecivic-ice-facility-sale-8k-2026-07-06.md — CXW first tranche closed; GEO leg open
+- @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Northland GEO PT $40
+- @concepts/corrections-reit-asset-sale-event-study.md — GEO announce scenario / sell-the-news
 
 ## Raw Concept
 
@@ -116,6 +122,10 @@ WaPo draft (Dec 2025) lists **2 CoreCivic + 6 GEO** facilities on ICE acquisitio
 **Florence AZ cluster (Jul 2026):** J&A-26-0143 ($240k First American title/escrow) names Florence with Krome FL and Batavia NY — **federal SPC expansion** pattern, **not** a named CoreCivic seller. CAFCC (1155 N. Pinal) is **multi-customer** (Idaho DOC actively filling dedicated unit Mar 2026); Pinal recorder sweep **no** 2026 U.S. grantee deed. Detail: @entities/facilities/florence-az-detention-cluster.md.
 
 **Cemini posture:** wiki-only; no prod brief unless operator reopens GEO/CXW workstream.
+
+### CXW first tranche closed (Jul 2026) `[CONFIRMED]`
+
+CoreCivic **$1.5B** gross / **~$1.1B** net on Cal City + Otay (Jul 2 close, Jul 6 PR). **GEO has not filed** a matching ICE facility-sale 8-K. Event-study read: CXW **sell-the-news** Jul 6 despite sell-side PT cluster — GEO forward scenario (5–8 sites @ ~$300k/bed) defaults to **same shape, possibly larger headline pop, same fade risk** unless leak-absent + explicit buyback. Full analysis: @concepts/corrections-reit-asset-sale-event-study.md.
 
 ## Snippets
 

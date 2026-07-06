@@ -1457,6 +1457,9 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [GEO Group ICE turnkey investigation (April 2026)](sources/geo-group-ice-turnkey-investigation-2026-04-09.md) — `[DRAFT 2026-06-13]` K114 investigative brief cluster. — source, osint, geo-group, k114
 - [ICE J&A-26-0143 — First American title/escrow (Florence/Krome/Batavia)](sources/ice-ja-26-0143-first-american-escrow-2026.md) — `[DRAFT 2026-07-04]` federal SPC expansion J&A; archived egress-fi. — source, ice, sam, escrow
 - [CA DOJ — Immigration Detention in California (5th AB 103 report, May 2026)](sources/ca-doj-immigration-detention-2026-ab103.md) — `[DRAFT 2026-07-05]` Otay 1,433/1,142, GEO surge stats, six CA deaths; archived egress-fi. — source, ice, california, ab103, overcrowding
+- [CoreCivic 8-K — Cal City + Otay ICE sales (Jul 2026)](sources/corecivic-ice-facility-sale-8k-2026-07-06.md) — `[VALIDATED 2026-07-06]` $1.5B gross / ~$1.1B net; Jul 2 close, Jul 6 PR. — source, corecivic, ice, 8-k
+- [Zacks SCR — CXW asset sale takeaways (Marin, Jul 2026)](sources/zacks-scr-cxw-marin-2026-07-06.md) — `[DRAFT 2026-07-06]` Sponsored PT $36; $323k/bed; walks back full SOTP; archived egress-fi. — source, corecivic, sell-side
+- [Sell-side — CXW/GEO turnkey notes (Jun 26 2026)](sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md) — `[DRAFT 2026-07-06]` Benchmark $36 CXW; Northland $40 GEO/CXW. — source, sell-side, turnkey
 - [TT-DAC-PS optimal execution (2606.08379)](sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md) — `[VALIDATED 2026-06-10]` RL IS% benchmarks on equity LOB; twin-target TD3 + adaptive OU. — source, arxiv, execution, k110
 - [AS/CJ forced uniqueness (2606.01477)](sources/arxiv-as-cj-forced-uniqueness-2606.01477-2026-06-11.md) — `[VALIDATED 2026-06-11]` ϕ=γσ²/2; CJ as AS expansion. — source, arxiv, market-making, k111
 - [GIFT FinRL interface (2606.08450)](sources/arxiv-gift-llm-state-reward-2606.08450-2026-06-11.md) — `[VALIDATED 2026-06-11]` LLM-guided state/reward; repo NO-GO. — source, arxiv, financial-rl, k111
@@ -1481,6 +1484,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [GEO ICE turnkey acquisition thesis](concepts/geo-ice-turnkey-acquisition-thesis.md) — K114 investigative OSINT synthesis (April 2026 briefs). — geo-group, ice, osint, k114
 - [CoreCivic California City ICE turnkey research (June 2026)](concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md) — CXW/CA legal stack + bull/bear scorecard; Gomez Ruiz PI — corecivic, ice, california, osint
 - [ICE turnkey research backlog (June 2026)](concepts/ice-turnkey-research-backlog-2026-06-30.md) — Tier 0 parallel tracks complete; Tier 1–3 queue — geo-group, corecivic, ice, osint
+- [Corrections / REIT asset-sale event study (Jul 2026)](concepts/corrections-reit-asset-sale-event-study.md) — CXW Jul 6 fade; GEO 5–8 site sell-the-news base case; Lawton + Campbell precedents — corecivic, geo-group, event-study
 - [Scientific conclusion synthesis eval](concepts/scientific-conclusion-synthesis-eval.md) — SciConBench clean-room pattern (K114). — agent-eval, sciconbench, k114
 - [Partial-observation stochastic control](concepts/partial-observation-stochastic-control.md) — K117: particle + DeepSets for latent-state control; REFERENCE for execution research. — concept, stochastic-control, k117
 - [Time-inconsistent stochastic control](concepts/time-inconsistent-stochastic-control.md) — K118: extended HJB equilibrium + DPG two-stage RL. — concept, stochastic-control, k118

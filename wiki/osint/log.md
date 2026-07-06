@@ -8197,3 +8197,11 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Patch** — `cemini_decide.py` preflop pot-committed call guard (`call / (pot + call) <= 10%`) before weak-hand stackoff folds; regression in `test_cemini_preflop_guards.py`
 - **Gate** — focused pytest PASS; `run_hu_sandbox_gate.sh --hands 100` PASS (+20 bb/100 tight smoke; tri-verifier PASS)
 - **Submit** — replaced `8e0c63f0` with `cef05ccb-1693-44d7-96a3-1bfc4925e57c`; validation Succeeded, `pvp.status=Active`, continuous
+
+## [2026-07-06] query | CXW sale vindication — sell-side + event study + GEO scenario
+
+- **Ingest** — Zacks SCR Marin PDF archived `cemini-egress-fi:/opt/cemini-bulk/research/osint/zacks_scr_cxw_marin_2026-07-06.pdf`
+- **Sources** — `zacks-scr-cxw-marin-2026-07-06.md`, `corecivic-ice-facility-sale-8k-2026-07-06.md`, `sell-side-cxw-geo-turnkey-notes-2026-06-26.md`
+- **Concept** — `corrections-reit-asset-sale-event-study.md` (CXW Jul 6 fade; Campbell REIT lit; GEO Lawton 2025; GEO 5–8 @ ~$300k/bed sell-the-news base case)
+- **Entities** — `corecivic.md`, `geo-group.md`; concepts `cxw-california-city-ice-turnkey-research`, `geo-ice-turnkey-acquisition-thesis`
+- **Finding** — Market prices **de-risk + debt waterfall**, not $/bed × portfolio; GEO **higher YTD (+87%)** + **7.3% short** = asymmetric but **default CXW-shaped fade**

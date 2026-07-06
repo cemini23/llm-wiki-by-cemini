@@ -8,10 +8,14 @@ related:
   - entities/facilities/california-city-detention-facility.md
   - entities/facilities/florence-az-detention-cluster.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
+  - concepts/corrections-reit-asset-sale-event-study.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - entities/companies/geo-group.md
   - meta/ice-facility-jobs-cadence.md
   - sources/ca-doj-immigration-detention-2026-ab103.md
+  - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
+  - sources/zacks-scr-cxw-marin-2026-07-06.md
+  - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
 maturity: draft
 created: 2026-06-29
 updated: 2026-07-06
@@ -27,6 +31,10 @@ updated: 2026-07-06
 - @entities/companies/geo-group.md — peer operator in ICE turnkey discussions
 - @meta/ice-facility-jobs-cadence.md — recurring CXW/GEO jobs anomaly monitor
 - @sources/ca-doj-immigration-detention-2026-ab103.md — May 2026 AB 103 overcrowding primary (Otay, Cal City)
+- @sources/corecivic-ice-facility-sale-8k-2026-07-06.md — Jul 2 close / Jul 6 8-K
+- @sources/zacks-scr-cxw-marin-2026-07-06.md — sponsored Jul 6 sell-side (PT $36, fade context)
+- @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Benchmark / Northland Jun 26 cluster
+- @concepts/corrections-reit-asset-sale-event-study.md — Jul 6 sell-the-news synthesis
 
 ## Raw Concept
 
@@ -40,7 +48,7 @@ Entity stub from June 2026 OSINT session on ICE turnkey acquisition thesis and C
 
 **Central Arizona Florence Correctional Complex (CAFCC)** — ~5,000-bed **mixed-customer** private plant (Coolidge, Mesa, Yaqui Tribe, **Idaho DOC**, Montana DOC, USMS); ICE detainees are a **contract population**, not the whole facility. **Federal Florence SPC** (3250 N. Pinal Pkwy) is **ICE-owned** — separate from CAFCC; First American J&A-26-0143 likely targets **federal campus expansion**, not CAFCC turnkey buy — @entities/facilities/florence-az-detention-cluster.md.
 
-**Turnkey sale thesis:** **FIRST TRANCHE CLOSED Jul 2, 2026** — DHS purchased **California City** ($732.6M) + **Otay Mesa** ($739.2M) for **$1.5B gross** (~$1.1B net after tax/expenses); 8-K filed Jul 6 `[CONFIRMED]`. CXW expects to **retain ICE management** on both; additional ICE acquisition talks ongoing with no assurance `[CONFIRMED 8-K]`. WaPo draft two-CA-site list **validated**. Prior negotiating frame: ~10 operator-owned facilities; GEO tranche **still open** — @concepts/geo-ice-turnkey-acquisition-thesis.md. CEO Swindle (Q1 call): depreciated replacement cost pricing — **Otay ~$371k/bed, Cal City ~$286k/bed blended ~$329k** on this close `[CONFIRMED]`. Apr 2026 **$100M term loan** + asset-sale liquidity language `[CONFIRMED]`. **Benchmark (Jun 26, 2026):** 80% × 2 facilities scenario **realized** (gross exceeds modeled $680M after-tax). **Northland (Jun 26, 2026):** PT **$32 → $40**, Outperform `[CONFIRMED media]`. **Warren letter (May 27, 2026)** — program-wide optics risk, GEO-weighted `[CONFIRMED]`. Full scorecard: @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md.
+**Turnkey sale thesis:** **FIRST TRANCHE CLOSED Jul 2, 2026** — DHS purchased **California City** ($732.6M) + **Otay Mesa** ($739.2M) for **$1.5B gross** (~$1.1B net after tax/expenses); 8-K filed Jul 6 `[CONFIRMED]`. CXW expects to **retain ICE management** on both; additional ICE acquisition talks ongoing with no assurance `[CONFIRMED 8-K]`. WaPo draft two-CA-site list **validated** — CXW may have **completed its WaPo allocation**. GEO tranche **still open**. **Jul 6 tape:** premarket **~+8%** → close **~$30.42 (−2%)**; stock **flat on Jul 2 close** (leak tell) `[CONFIRMED market]`. Sell-side cluster Jun 26 (Benchmark **$36**, Northland **$40**, Zacks SCR **$36** Jul 6) **failed to hold stock** — market priced **de-risk + debt paydown**, not SOTP moonshot `@sources/zacks-scr-cxw-marin-2026-07-06.md`, `@concepts/corrections-reit-asset-sale-event-study.md`. CEO Swindle: **Otay ~$371k/bed, Cal City ~$286k/bed, blended ~$329k** `[CONFIRMED]`. **Warren letter (May 27, 2026)** — program-wide optics risk, GEO-weighted `[CONFIRMED]`. Full scorecard: @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md.
 
 **California commissary / SB 941 risk (Jul 2026):** detainees at California City (CoreCivic) and Golden State Annex (GEO) launched a commissary boycott over alleged markups; SB 941 would cap private-detention commissary markups at **35%** above vendor cost and had moved through the CA Senate / Assembly Public Safety with unanimous support. Thesis read: reinforces California headline / state-regulatory pressure; does **not** prove a turnkey sale.
 

@@ -10,11 +10,15 @@ related:
   - entities/companies/geo-group.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - concepts/ice-turnkey-research-backlog-2026-06-30.md
+  - concepts/corrections-reit-asset-sale-event-study.md
   - meta/ice-facility-jobs-cadence.md
   - sources/ca-doj-immigration-detention-2026-ab103.md
-maturity: draft
+  - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
+  - sources/zacks-scr-cxw-marin-2026-07-06.md
+  - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
+maturity: validated
 created: 2026-06-29
-updated: 2026-07-05
+updated: 2026-07-06
 ---
 
 ## Relations
@@ -27,6 +31,10 @@ updated: 2026-07-05
 - @concepts/ice-turnkey-research-backlog-2026-06-30.md — Tier 0 whole-thesis research (site rank #7, contract base case)
 - @meta/ice-facility-jobs-cadence.md — recurring jobs anomaly monitor; Cal City scored as medium compliance/stabilization signal on first run
 - @sources/ca-doj-immigration-detention-2026-ab103.md — May 2026 AB 103 primary (Otay, Cal City overcrowding)
+- @sources/corecivic-ice-facility-sale-8k-2026-07-06.md — Jul 2 close vindication
+- @sources/zacks-scr-cxw-marin-2026-07-06.md — Jul 6 sponsored sell-side + fade
+- @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Benchmark / Northland Jun 26
+- @concepts/corrections-reit-asset-sale-event-study.md — sell-the-news + GEO forward scenario
 
 ## Raw Concept
 
@@ -286,13 +294,26 @@ July 7 is **quorum-fragile on PC track** (Jun 16 precedent) but **BL decision ma
 
 **Diligence logic:** Pre-hearing close avoids **condemned-asset** headline and **reps & warranties trap** if Grayson/PC deny Jul 7. **Bonta Jun 15 PDF** (application swap ICE→USMS, O/RA zoning) makes post-denial file **materially worse** — increases ICE/OPLA **incentive** to execute **before Jul 7** if a Cal City PSA exists in draft. **Does not prove** execution will happen — only that **motive ↑** while **public evidence (8-K) = none**.
 
-**Base case unchanged:** contract continuity **52–55%**; no imminent 8-K; **Aug 5–10 Q2 earnings** primary public falsifier.
+**Base case unchanged:** contract continuity **52–55%**; ~~no imminent 8-K~~ **CXW 8-K CLOSED Jul 2/6 2026** — Cal City + Otay; GEO leg open; **Aug 5–10 Q2 earnings** next public falsifier for buyback/debt split.
+
+### Jul 6 vindication + fade (2026-07-06) `[CONFIRMED]`
+
+| Item | Result |
+|------|--------|
+| WaPo 2× CXW CA sites | **Validated** — Cal City + Otay |
+| Gross / net | **$1.5B** / **~$1.1B** |
+| $/bed | **~$329k** blended |
+| Jul 2 close tape | **Flat** (+0.06%) — leak |
+| Jul 6 announce | Premarket **~+8%** → close **−2%** |
+| Sell-side | Benchmark **$36**, Northland **$40**, Zacks **$36** — **did not hold** |
+
+**Read:** Thesis **real**; equity catalyst **spent**. "More sales" language **ignored**. Full event study + GEO 5–8 site scenario: @concepts/corrections-reit-asset-sale-event-study.md.
 
 ### Watchlist
 
 | Priority | Catalyst | Trigger |
 |----------|----------|---------|
-| 1 | CXW/GEO **8-K** facility sale | Any day Q3 |
+| 1 | CXW/GEO **8-K** facility sale | **CXW done Jul 6**; **GEO open** |
 | 1b | **Senate Approps HS markup** + Schroyer confirmation | Congress.gov |
 | 2 | **July 7 dual hearings** (BL 3:30 Grayson / PC 6:00 de novo) | [KGET Jul 7 hearings](https://www.kget.com/news/local-news/california-city-officials-to-reconsider-ice-detention-facility-approval-during-appeal-hearings-july-7/); city agenda PDF |
 | 2b | **N5000P / EJM55** DC weekend ADS-B export | Hex A63C56; ADS-B Exchange premium |

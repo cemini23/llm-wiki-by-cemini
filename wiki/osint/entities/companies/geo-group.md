@@ -7,13 +7,15 @@ related:
   - entities/tickers/geo.md
   - entities/companies/corecivic.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
+  - concepts/corrections-reit-asset-sale-event-study.md
   - sources/geo-group-ice-turnkey-investigation-2026-04-09.md
   - sources/ca-doj-immigration-detention-2026-ab103.md
+  - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - meta/ice-facility-jobs-cadence.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-05
+updated: 2026-07-06
 ---
 
 ## Relations
@@ -25,6 +27,8 @@ updated: 2026-07-05
 - @sources/ca-doj-immigration-detention-2026-ab103.md — May 2026 AB 103 overcrowding/deaths primary
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — synthesized open-source thesis
 - @meta/ice-facility-jobs-cadence.md — recurring GEO/CXW jobs anomaly monitor
+- @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Northland PT $40 / H2 active
+- @concepts/corrections-reit-asset-sale-event-study.md — GEO 5–8 site sell-the-news base case
 
 ## Raw Concept
 
@@ -38,7 +42,9 @@ April 2026 brief cluster alleges advanced staging of a **multi-facility ICE turn
 
 **Contract-only precedent:** Delaney Hall (Newark) is company-owned GEO capacity under a **15-year fixed-price ICE support-services contract** announced Feb 2025, with exclusive ICE use, expected **>$60M annualized first-year revenue**, and estimated **~$1B** 15-year value. This is a live example of ICE obtaining exclusive company-owned capacity **without buying the deed**, reinforcing the current contract-continuity base case.
 
-**Jun 26 analyst read:** Northland raised GEO PT **$30 → $40** and kept Outperform, citing comfort that H2 2026 should be active and that timing around the government's private-detention-facility acquisition initiative remains on track `[CONFIRMED media / TENTATIVE model]`.
+**Jun 26 analyst read:** Northland raised GEO PT **$30 → $40** and kept Outperform, citing comfort that H2 2026 should be active and that timing around the government's private-detention-facility acquisition initiative remains on track `@sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md` `[CONFIRMED media]`.
+
+**Post-CXW 8-K (Jul 6, 2026):** GEO **did not** sympathy-rip — **$30.33 → $29.72** while CXW faded; market treats GEO as **still-open leg** but not urgent chase. **YTD ~+87%** (vs CXW ~+60%) = **more** sell-the-news risk on announce. **Short interest ~7.3% float** (May 29) = squeeze wildcard. **Lawton precedent (2025):** $312M / 2,388 beds (**~$131k/bed**) to Oklahoma DOC — announce day **−2%**, close day **+6%**; ops **not** retained (unlike ICE model). Zoley: ICE sites deserve **meaningfully higher** $/bed than Lawton `[CONFIRMED Q1 call]`. Forward 5–8 site scenario at **~$300k/bed** → **~$1.8–2.8B gross**; base case **sell-the-news** per CXW template — detail: @concepts/corrections-reit-asset-sale-event-study.md `[TENTATIVE]`.
 
 **2026 standards / optics:** WaPo/Yahoo reported GEO privately asked ICE to remove state/local-law compliance language and support its detainee-work-program legal position; the 2026 National Detention Standards adopted some changes, including language that detainee volunteers are not employees entitled to wages/benefits. Bull read: operator-burden reduction. Bear read: litigation / ethics / headline risk.
 
