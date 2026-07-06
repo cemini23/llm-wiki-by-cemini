@@ -6,6 +6,7 @@ keywords: [CoreCivic, CXW, private prisons, ICE contracts, California City, turn
 related:
   - entities/tickers/cxw.md
   - entities/facilities/california-city-detention-facility.md
+  - entities/facilities/otay-mesa-detention-center.md
   - entities/facilities/florence-az-detention-cluster.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/corrections-reit-asset-sale-event-study.md
@@ -16,6 +17,8 @@ related:
   - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
   - sources/zacks-scr-cxw-marin-2026-07-06.md
   - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
+  - sources/san-diego-county-otay-oversight-2026.md
+  - sources/abc10news-cxw-otay-sale-2026-07-06.md
 maturity: draft
 created: 2026-06-29
 updated: 2026-07-06
@@ -25,6 +28,7 @@ updated: 2026-07-06
 
 - @entities/tickers/cxw.md — listed equity
 - @entities/facilities/california-city-detention-facility.md — 2,560-bed ICE site (California)
+- @entities/facilities/otay-mesa-detention-center.md — 1,994-bed ICE site (San Diego); county inspection litigation
 - @entities/facilities/florence-az-detention-cluster.md — CAFCC vs federal Florence SPC (Arizona)
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — June 2026 OSINT synthesis
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — parallel GEO turnkey thesis
@@ -35,6 +39,8 @@ updated: 2026-07-06
 - @sources/zacks-scr-cxw-marin-2026-07-06.md — sponsored Jul 6 sell-side (PT $36, fade context)
 - @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Benchmark / Northland Jun 26 cluster
 - @concepts/corrections-reit-asset-sale-event-study.md — Jul 6 sell-the-news synthesis
+- @sources/san-diego-county-otay-oversight-2026.md — Otay county inspection lawsuit (Mar–Jun 2026)
+- @sources/abc10news-cxw-otay-sale-2026-07-06.md — local Jul 6 sale coverage
 
 ## Raw Concept
 

@@ -8205,3 +8205,10 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Concept** — `corrections-reit-asset-sale-event-study.md` (CXW Jul 6 fade; Campbell REIT lit; GEO Lawton 2025; GEO 5–8 @ ~$300k/bed sell-the-news base case)
 - **Entities** — `corecivic.md`, `geo-group.md`; concepts `cxw-california-city-ice-turnkey-research`, `geo-ice-turnkey-acquisition-thesis`
 - **Finding** — Market prices **de-risk + debt waterfall**, not $/bed × portfolio; GEO **higher YTD (+87%)** + **7.3% short** = asymmetric but **default CXW-shaped fade**
+
+## [2026-07-06] wiki | Otay Mesa facility stub + San Diego oversight sources
+
+- **Facility** — `entities/facilities/otay-mesa-detention-center.md` (1,994 beds; AB 103 1,433/1,142; sold $739.2M Jul 2)
+- **Sources** — `san-diego-county-otay-oversight-2026.md` (lawsuit 3:26-cv-01520; inspection Jun 26); `abc10news-cxw-otay-sale-2026-07-06.md`
+- **Backlinks** — `corecivic.md`, `california-city-detention-facility.md`, `ca-doj-immigration-detention-2026-ab103.md`, `corecivic-ice-facility-sale-8k`
+- **Watch** — County inspection **report expected Jul 2026** — potential GEO CA sale headline analog

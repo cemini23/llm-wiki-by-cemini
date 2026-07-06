@@ -11,6 +11,7 @@ related:
   - sources/geo-group-ice-turnkey-investigation-2026-04-09.md
   - sources/ca-doj-immigration-detention-2026-ab103.md
   - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
+  - sources/zacks-scr-cxw-marin-2026-07-06.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - meta/ice-facility-jobs-cadence.md
 maturity: draft
@@ -28,6 +29,7 @@ updated: 2026-07-06
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — synthesized open-source thesis
 - @meta/ice-facility-jobs-cadence.md — recurring GEO/CXW jobs anomaly monitor
 - @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Northland PT $40 / H2 active
+- @sources/zacks-scr-cxw-marin-2026-07-06.md — CXW sale read-through / peer comp
 - @concepts/corrections-reit-asset-sale-event-study.md — GEO 5–8 site sell-the-news base case
 
 ## Raw Concept

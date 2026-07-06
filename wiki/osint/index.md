@@ -1349,6 +1349,7 @@ External firms whose research/track-record is ingested into the wiki.
 ### Facilities
 
 - [California City Detention Facility (CoreCivic / ICE)](entities/facilities/california-city-detention-facility.md) — `[DRAFT 2026-06-29]` 2,560-bed largest CA ICE site; Gomez Ruiz PI + local appeal — facility, ice, california, corecivic
+- [Otay Mesa Detention Center (CoreCivic / ICE)](entities/facilities/otay-mesa-detention-center.md) — `[DRAFT 2026-07-06]` 1,994-bed; AB 103 overcrowding; county lawsuit; sold Jul 2 — facility, ice, california, otay, corecivic
 - [Florence AZ detention cluster (ICE SPC vs CoreCivic CAFCC)](entities/facilities/florence-az-detention-cluster.md) — `[DRAFT 2026-07-02]` J&A-26-0143 read; Idaho DOC mixed-customer CAFCC; Pinal recorder negative — facility, ice, arizona, corecivic, florence
 
 ### Organizations / publications
@@ -1460,6 +1461,8 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [CoreCivic 8-K — Cal City + Otay ICE sales (Jul 2026)](sources/corecivic-ice-facility-sale-8k-2026-07-06.md) — `[VALIDATED 2026-07-06]` $1.5B gross / ~$1.1B net; Jul 2 close, Jul 6 PR. — source, corecivic, ice, 8-k
 - [Zacks SCR — CXW asset sale takeaways (Marin, Jul 2026)](sources/zacks-scr-cxw-marin-2026-07-06.md) — `[DRAFT 2026-07-06]` Sponsored PT $36; $323k/bed; walks back full SOTP; archived egress-fi. — source, corecivic, sell-side
 - [Sell-side — CXW/GEO turnkey notes (Jun 26 2026)](sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md) — `[DRAFT 2026-07-06]` Benchmark $36 CXW; Northland $40 GEO/CXW. — source, sell-side, turnkey
+- [San Diego County — Otay Mesa oversight litigation (2026)](sources/san-diego-county-otay-oversight-2026.md) — `[DRAFT 2026-07-06]` 3:26-cv-01520; PI Jun 4; inspection Jun 26; sale Jul 2. — source, ice, otay, litigation
+- [ABC 10News — CXW Otay sale (Jul 6 2026)](sources/abc10news-cxw-otay-sale-2026-07-06.md) — `[DRAFT 2026-07-06]` Local KGTV recap + lawsuit frame. — source, corecivic, otay, local-news
 - [TT-DAC-PS optimal execution (2606.08379)](sources/arxiv-tt-dac-ps-optimal-execution-2606.08379-2026-06-10.md) — `[VALIDATED 2026-06-10]` RL IS% benchmarks on equity LOB; twin-target TD3 + adaptive OU. — source, arxiv, execution, k110
 - [AS/CJ forced uniqueness (2606.01477)](sources/arxiv-as-cj-forced-uniqueness-2606.01477-2026-06-11.md) — `[VALIDATED 2026-06-11]` ϕ=γσ²/2; CJ as AS expansion. — source, arxiv, market-making, k111
 - [GIFT FinRL interface (2606.08450)](sources/arxiv-gift-llm-state-reward-2606.08450-2026-06-11.md) — `[VALIDATED 2026-06-11]` LLM-guided state/reward; repo NO-GO. — source, arxiv, financial-rl, k111

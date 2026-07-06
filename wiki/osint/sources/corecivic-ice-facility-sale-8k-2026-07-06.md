@@ -5,11 +5,14 @@ tags: [source, corecivic, cxw, ice, 8-k, turnkey, sec]
 keywords: [8-K, $1.5B, $1.1B net, DHS, Jul 2 close, Jul 6 announce, management retained]
 related:
   - entities/companies/corecivic.md
+  - entities/facilities/otay-mesa-detention-center.md
   - entities/facilities/california-city-detention-facility.md
   - sources/zacks-scr-cxw-marin-2026-07-06.md
   - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
   - concepts/corrections-reit-asset-sale-event-study.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
+  - sources/san-diego-county-otay-oversight-2026.md
+  - sources/abc10news-cxw-otay-sale-2026-07-06.md
 maturity: validated
 created: 2026-07-06
 updated: 2026-07-06
@@ -19,8 +22,11 @@ updated: 2026-07-06
 
 - @entities/companies/corecivic.md
 - @entities/facilities/california-city-detention-facility.md
+- @entities/facilities/otay-mesa-detention-center.md
 - @sources/zacks-scr-cxw-marin-2026-07-06.md
 - @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
+- @sources/san-diego-county-otay-oversight-2026.md
+- @sources/abc10news-cxw-otay-sale-2026-07-06.md
 - @concepts/corrections-reit-asset-sale-event-study.md
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
 

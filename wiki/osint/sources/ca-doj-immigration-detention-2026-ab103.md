@@ -7,13 +7,15 @@ related:
   - entities/companies/geo-group.md
   - entities/companies/corecivic.md
   - entities/facilities/california-city-detention-facility.md
+  - entities/facilities/otay-mesa-detention-center.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
   - concepts/ice-turnkey-research-backlog-2026-06-30.md
   - meta/ice-detention-stats-cadence.md
+  - sources/san-diego-county-otay-oversight-2026.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-07-06
 ---
 
 ## Relations
@@ -21,6 +23,8 @@ updated: 2026-07-05
 - @entities/companies/geo-group.md — Adelanto, Desert View, Mesa Verde, Golden State Annex operator
 - @entities/companies/corecivic.md — Otay Mesa, California City operator
 - @entities/facilities/california-city-detention-facility.md — Cal City Nov 2025 site visit findings
+- @entities/facilities/otay-mesa-detention-center.md — Otay Oct 2025 visit; only CA site over contract cap
+- @sources/san-diego-county-otay-oversight-2026.md — county inspection litigation post-AB 103
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — AB 103 / CA regulatory stack
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — CA overcrowding + expansion pressure frame
 - @concepts/ice-turnkey-research-backlog-2026-06-30.md — occupancy lane cross-check

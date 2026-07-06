@@ -9,10 +9,14 @@ related:
   - entities/facilities/florence-az-detention-cluster.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
+  - entities/facilities/otay-mesa-detention-center.md
   - sources/ca-doj-immigration-detention-2026-ab103.md
+  - sources/san-diego-county-otay-oversight-2026.md
+  - sources/abc10news-cxw-otay-sale-2026-07-06.md
+  - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-07-05
+updated: 2026-07-06
 ---
 
 ## Relations
@@ -22,7 +26,9 @@ updated: 2026-07-05
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — full legal + thesis synthesis
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — shared federal turnkey acquisition frame
 - @entities/facilities/florence-az-detention-cluster.md — peer CXW AZ site (SPC vs CAFCC)
+- @entities/facilities/otay-mesa-detention-center.md — sister CXW CA ICE site; sold Jul 2, 2026
 - @sources/ca-doj-immigration-detention-2026-ab103.md — Nov 2025 AB 103 site visit findings
+- @sources/san-diego-county-otay-oversight-2026.md — Otay local oversight litigation
 
 ## Raw Concept
 
@@ -48,7 +54,7 @@ Facility entity stub from June 2026 OSINT on CoreCivic's California City ICE det
 
 ### Turnkey thesis posture
 
-Likely on WaPo draft **two-site CoreCivic California acquisition list** (with Otay Mesa) `[TENTATIVE]`. Federal ICE purchase would **moot** local entitlement appeals but **not** Gomez Ruiz PI compliance. Assessed as **tranche 2 / discounted** vs cleaner GEO or Otay assets — @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md.
+Likely on WaPo draft **two-site CoreCivic California acquisition list** (with Otay Mesa) `[CONFIRMED Jul 2026]`. **SOLD to DHS Jul 2, 2026** ($732.6M) — see @entities/facilities/otay-mesa-detention-center.md for sister site. Federal ICE purchase would **moot** local entitlement appeals but **not** Gomez Ruiz PI compliance.
 
 **11-model local-entitlement super-audit (2026-06-30):** **WARN** — delay-not-block validated; regime-switch + §3112/§3312 in @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md. Synthesis: `.local/reports/audit/super-audit-cal-city-local-2026-06-30.md`.
 

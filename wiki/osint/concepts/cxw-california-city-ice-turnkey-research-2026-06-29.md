@@ -15,7 +15,9 @@ related:
   - sources/ca-doj-immigration-detention-2026-ab103.md
   - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
   - sources/zacks-scr-cxw-marin-2026-07-06.md
-  - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
+  - entities/facilities/otay-mesa-detention-center.md
+  - sources/san-diego-county-otay-oversight-2026.md
+  - sources/abc10news-cxw-otay-sale-2026-07-06.md
 maturity: validated
 created: 2026-06-29
 updated: 2026-07-06
@@ -34,6 +36,8 @@ updated: 2026-07-06
 - @sources/corecivic-ice-facility-sale-8k-2026-07-06.md — Jul 2 close vindication
 - @sources/zacks-scr-cxw-marin-2026-07-06.md — Jul 6 sponsored sell-side + fade
 - @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Benchmark / Northland Jun 26
+- @entities/facilities/otay-mesa-detention-center.md — sold Jul 2; county litigation timeline
+- @sources/san-diego-county-otay-oversight-2026.md — inspection Jun 26 → sale Jul 2
 - @concepts/corrections-reit-asset-sale-event-study.md — sell-the-news + GEO forward scenario
 
 ## Raw Concept

@@ -6,6 +6,9 @@ keywords: [sell the news, Lawton, $300k per bed, short interest, Campbell REIT, 
 related:
   - entities/companies/corecivic.md
   - entities/companies/geo-group.md
+  - entities/facilities/otay-mesa-detention-center.md
+  - sources/san-diego-county-otay-oversight-2026.md
+  - sources/abc10news-cxw-otay-sale-2026-07-06.md
   - sources/zacks-scr-cxw-marin-2026-07-06.md
   - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
   - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
@@ -20,9 +23,12 @@ updated: 2026-07-06
 
 - @entities/companies/corecivic.md — Jul 2026 first tranche closed
 - @entities/companies/geo-group.md — primary forward scenario
+- @entities/facilities/otay-mesa-detention-center.md — Jul 2026 close + local optics template
 - @sources/zacks-scr-cxw-marin-2026-07-06.md — sponsored bull case + $323k/bed walk-back
 - @sources/corecivic-ice-facility-sale-8k-2026-07-06.md — Jul 2 close / Jul 6 PR
 - @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Jun 26 PT cluster
+- @sources/san-diego-county-otay-oversight-2026.md — Otay litigation / inspection timeline
+- @sources/abc10news-cxw-otay-sale-2026-07-06.md — local Jul 6 coverage
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — site list + probabilities
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — GEO investigative frame
 
