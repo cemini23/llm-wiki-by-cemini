@@ -13,6 +13,7 @@ related:
   - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
   - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
+  - sources/corecivic-investor-deck-proforma-2026-07.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
 maturity: draft
 created: 2026-07-06
@@ -29,6 +30,7 @@ updated: 2026-07-06
 - @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Jun 26 PT cluster
 - @sources/san-diego-county-otay-oversight-2026.md — Otay litigation / inspection timeline
 - @sources/abc10news-cxw-otay-sale-2026-07-06.md — local Jul 6 coverage
+- @sources/corecivic-investor-deck-proforma-2026-07.md — pro forma cap table + owned-beds slides
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — site list + probabilities
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — GEO investigative frame
 
@@ -54,6 +56,33 @@ Synthesized after CXW **$1.5B** ICE facility sale (Jul 2026): why the stock **fa
 4. **Cash waterfall** — **~$716M** debt first; buybacks **conditional** on covenants.
 5. **Pipeline language worthless** — "additional discussions" ignored post-print.
 6. **SOTP walk-back** — even bulls say **$323k × 57.8k beds ≠ trading multiple**.
+
+### CXW investor deck — pro forma balance sheet (Jul 2026) `[CONFIRMED slide]`
+
+Source: @sources/corecivic-investor-deck-proforma-2026-07.md
+
+| Metric | Pre (Mar 31) | Pro forma |
+|--------|--------------|-----------|
+| Total debt | $1,406M | **$741M** |
+| Cash | $210M | **$618M** |
+| **Net debt** | **$1,196M** | **$123M** |
+| **Enterprise value** | **$4,273M** | **$3,200M** |
+| Net debt / Adj EBITDA | **2.8x** | Slide: **0.0x**; honest: **~0.27x** ($123M ÷ ~$460M FY26E) |
+
+**Why 0.0x ≠ your math:** Slide holds EBITDA flat (footnote 4) while showing **$123M** net debt — division yields **~0.3x**, not zero. Treat **0.0x** as **marketing / secured-leverage / rounding**; footnote admits **post-sale EBITDA may drop** (mgmt-only), which would **raise** true leverage.
+
+**EV bridge (fade tell):** **~$1.07B EV destruction** on **$1.5B gross** sale with **flat equity mcap** (~$3,077M @ $30.38). Tape priced **asset out > delever benefit**.
+
+**Owned beds by agency (pre → post):**
+
+| | Pre | Post |
+|---|-----|------|
+| ICE (owned) | 25% | **20%** |
+| State DOC | 43% | **46%** |
+| USMS | 20% | 21% |
+| **Idle** | **10%** | **11%** |
+
+Sold Otay + Cal City were **active ICE** sites (not idle). **Idle % rises** because sold beds leave the denominator; ~**7k idle beds** elsewhere unchanged. Bull “sold idle at $300k” narrative **does not fit** CXW — GEO bull case must distinguish **reactivated operating ICE** vs **true idle** book.
 
 ### Sell-side coverage map (Jul 2026)
 

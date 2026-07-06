@@ -3,6 +3,12 @@
 updated: 2026-07-06
 ---
 
+## [2026-07-06] query | CoreCivic investor deck — pro forma + owned-beds slides
+
+- **Source (new):** `@sources/corecivic-investor-deck-proforma-2026-07.md` — pro forma cap table ($123M net debt, EV $4.27B→$3.2B); owned beds ICE 25%→20%, idle 10%→11%; 0.0x leverage vs ~0.27x honest math
+- **Concept:** `@concepts/corrections-reit-asset-sale-event-study.md` — deck section + idle-vs-active rebuttal
+- **Entity:** `@entities/companies/corecivic.md` — investor deck bullet
+
 ## [2026-07-06] ingest | K147 — Copilot SDK eval + Jul 6 RSS batch
 
 - **Source (1 new eval):** `@sources/eval-github-repo-multi-wiki-copilot-2026-07-06.md` — 20 URLs; Adopt repo-bootcamp + ripgrep; Steal OctoBrowser + SYSAdmin-CoPilot

@@ -14,6 +14,7 @@ related:
   - sources/san-diego-county-otay-oversight-2026.md
   - sources/abc10news-cxw-otay-sale-2026-07-06.md
   - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
+  - sources/corecivic-investor-deck-proforma-2026-07.md
 maturity: draft
 created: 2026-06-29
 updated: 2026-07-06
@@ -29,6 +30,8 @@ updated: 2026-07-06
 - @entities/facilities/otay-mesa-detention-center.md — sister CXW CA ICE site; sold Jul 2, 2026
 - @sources/ca-doj-immigration-detention-2026-ab103.md — Nov 2025 AB 103 site visit findings
 - @sources/san-diego-county-otay-oversight-2026.md — Otay local oversight litigation
+- @sources/corecivic-ice-facility-sale-8k-2026-07-06.md — Jul 2 DHS purchase
+- @sources/corecivic-investor-deck-proforma-2026-07.md — pro forma cap table post-sale
 
 ## Raw Concept
 

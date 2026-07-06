@@ -10,6 +10,7 @@ related:
   - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
   - concepts/corrections-reit-asset-sale-event-study.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
+  - sources/corecivic-investor-deck-proforma-2026-07.md
 maturity: draft
 created: 2026-07-06
 updated: 2026-07-06
@@ -23,6 +24,7 @@ updated: 2026-07-06
 - @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Benchmark / Northland cluster same week
 - @concepts/corrections-reit-asset-sale-event-study.md — Jul 6 fade + GEO scenario synthesis
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — turnkey scorecard
+- @sources/corecivic-investor-deck-proforma-2026-07.md — pro forma EV / leverage context
 
 ## Raw Concept
 

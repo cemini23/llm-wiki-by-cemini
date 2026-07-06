@@ -13,6 +13,7 @@ related:
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - sources/san-diego-county-otay-oversight-2026.md
   - sources/abc10news-cxw-otay-sale-2026-07-06.md
+  - sources/corecivic-investor-deck-proforma-2026-07.md
 maturity: validated
 created: 2026-07-06
 updated: 2026-07-06
@@ -27,6 +28,7 @@ updated: 2026-07-06
 - @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
 - @sources/san-diego-county-otay-oversight-2026.md
 - @sources/abc10news-cxw-otay-sale-2026-07-06.md
+- @sources/corecivic-investor-deck-proforma-2026-07.md
 - @concepts/corrections-reit-asset-sale-event-study.md
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
 
