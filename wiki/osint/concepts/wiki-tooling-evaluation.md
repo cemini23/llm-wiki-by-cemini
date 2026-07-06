@@ -616,6 +616,19 @@ Ingest: two arXiv papers (2607.02389 substrate steerability, 2607.02467 human-ca
 
 **Brief routing:** TipDrop (gastown, taste-skill, marketing-loops); CeminiDFS (fetch MCP stack); game-dev (unity-mcp); poker-arena (substrate steerability steal). No cemini-prod scp unless xsp operator confirms tavily lane.
 
+## Wave K147 — Copilot SDK eval + Jul 6 RSS batch (2026-07-06)
+
+Ingest: `GitHub Repo Multi-Wiki Evaluation.docx` (20 URLs, Copilot SDK cluster), duplicate `Multi-Wiki Link Evaluation Plan.docx` (archive only → `@sources/last30days-skill-mvanhorn.md`), 8 RSS newsletters (moontower×3, capital-flows, wublock, event-horizon ep23, klement×2). Phase-0: `scripts/adopt_k147_phase0.sh`.
+
+| Tier | Count | Headline |
+|------|-------|----------|
+| **Adopt** | 2 | repo-bootcamp (TipDrop M4 Zod), ripgrep (default `rg`) |
+| **Steal-from** | 2 | OctoBrowser (OSINT stealth), SYSAdmin-CoPilot (gateway matrix) |
+| **RSS OSINT** | 5 new + 3 upgraded | moontower, capital-flows, wublock; event-horizon/klement cross-wiki pointers |
+| **Duplicate** | 1 | Multi-Wiki Link Evaluation Plan.docx — same URL set as last30days skill |
+
+**Brief routing:** TipDrop (repo-bootcamp M4); xsp-killer (moontower VIX regime steal → `briefs/xsp-2026-07-06_moontower-vix-regime-steal.md` scp prod). Gambling-wiki stubs for event-horizon + klement (sibling repo commit).
+
 ## Snippets
 
 ### From `sources/atomicmemory-llm-wiki-compiler.md` (covers GitHub + llmwiki.app)

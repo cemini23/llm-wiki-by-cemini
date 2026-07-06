@@ -10,10 +10,10 @@ related:
   - concepts/active-project-research-routing.md
   - entities/tools/deepspec.md
   - entities/tools/openclaw-mission-control.md
-  - concepts/active-project-research-routing.md
+  - sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-06-30
+updated: 2026-07-06
 ---
 
 ## Relations
@@ -22,6 +22,7 @@ updated: 2026-06-30
 - @concepts/xsp-put-credit-spread-small-account-smb.md — orthogonal SMB selling strategy on same instrument
 - @entities/tools/deepspec.md — K137 inference latency Adopt (speculative decoding)
 - @entities/tools/openclaw-mission-control.md — K137 fleet audit steal patterns
+- @sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md — K147 vol regime steal (inverse VIX spike sizing)
 
 ## Raw Concept
 

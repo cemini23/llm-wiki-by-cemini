@@ -1,7 +1,22 @@
 # Wiki Log
 
-updated: 2026-07-05
+updated: 2026-07-06
 ---
+
+## [2026-07-06] ingest | K147 — Copilot SDK eval + Jul 6 RSS batch
+
+- **Source (1 new eval):** `@sources/eval-github-repo-multi-wiki-copilot-2026-07-06.md` — 20 URLs; Adopt repo-bootcamp + ripgrep; Steal OctoBrowser + SYSAdmin-CoPilot
+- **Duplicate archive only:** `Multi-Wiki Link Evaluation Plan.docx` → existing `@sources/last30days-skill-mvanhorn.md`
+- **Entities (4 new):** `@entities/tools/repo-bootcamp.md`, `ripgrep.md`, `octobrowser.md`, `sysadmin-copilot.md`
+- **RSS sources (5 new + 3 upgraded):** moontower×3, capital-flows start-here, wublock VC report; event-horizon ep23 + klement×2 cross-wiki pointers
+- **Phase-0:** `scripts/adopt_k147_phase0.sh`
+- **Briefs:** TipDrop repo-bootcamp M4; xsp moontower VIX regime steal → `briefs/xsp-2026-07-06_moontower-vix-regime-steal.md` (scp prod). Gambling-wiki sibling commit for routed stubs.
+
+## [2026-07-06] event | CoreCivic turnkey sale 8-K — Cal City + Otay $1.5B to DHS
+
+- **Filing:** Form 8-K event **Jul 2**, filed **Jul 6** — California City $732.6M + Otay Mesa $739.2M; ~$1.1B net proceeds; retains ICE management; more sales discussed
+- **Entity:** `@entities/companies/corecivic.md` updated
+- **SEO handoff:** `@seo-wiki/briefs/2026-07-06_cxw-turnkey-8k-vindication-x-article.md` — X Article + GEO chase brief
 
 ## [2026-07-05] ingest | CA DOJ 5th AB 103 immigration detention report (May 2026)
 

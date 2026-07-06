@@ -64,6 +64,7 @@ related:
   - sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md
   - concepts/kalshi-implied-macro-belief-distributions.md
   - gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md
   - concepts/hybrid-intelligence-human-capital-forecasting.md
   - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md
 maturity: validated
@@ -81,6 +82,7 @@ updated: 2026-07-05
 - @sources/3-19-compliance-research.md
 - @sources/3-19-ip-sale-research.md
 - @gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md — retail oracle / stream-botting risk
+- @sources/substack-rss-event-horizon-2026-07-06-episode-23-silliness-in-prediction-markets-about.md — K147 ep23 Spotify oracle thread
 - @gambling-wiki/concepts/kalshi-michigan-sports-injunction-2026-06.md — Michigan sports-contract TRO
 - @sources/3-29-research-4.md
 - @sources/3-9-pm-research.md

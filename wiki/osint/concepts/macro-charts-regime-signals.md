@@ -12,9 +12,10 @@ related:
   - concepts/macro-charts-gold-reversal-thesis-2026-06.md
   - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
   - sources/trading-posts-compilation-31-2026-06-01.md
+  - sources/substack-rss-capital-flows-2026-07-05-start-here-capital-flows-a-daily-macro-map-to-ta.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-05
+updated: 2026-07-06
 ---
 
 ## Relations
@@ -22,6 +23,7 @@ updated: 2026-07-05
 - @sources/trading-posts-compilation-16-2026-05-31.md — K90 Post 0 (Macro Charts May 31 opener)
 - @sources/trading-posts-macro-charts-skills-md-2026-05-28.md — K76 Post 1 rotation precursor
 - @sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md — K144 paid arc (Jun 22–Jul 5)
+- @sources/substack-rss-capital-flows-2026-07-05-start-here-capital-flows-a-daily-macro-map-to-ta.md — K147 parallel macro livestream (reference only)
 
 ## Raw Concept
 

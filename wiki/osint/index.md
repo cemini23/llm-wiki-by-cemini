@@ -12,8 +12,21 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **562 canonical stubs** (K146 morning ingest +5 sources +2 concepts +11 entities + updates)
+Total: **571 canonical stubs** (K147 ingest +1 eval +4 entities +5 RSS +3 RSS upgrades)
 
+
+### k147-ingest (10)
+
+- [GitHub Repo Multi-Wiki Evaluation.docx (2026-07-06)](sources/eval-github-repo-multi-wiki-copilot-2026-07-06.md) — Copilot SDK 20 URLs; repo-bootcamp + ripgrep Adopt. — `docx` [+k147]
+- [repo-bootcamp](entities/tools/repo-bootcamp.md) — K147 Adopt MIT → TipDrop M4 Zod. — entity [+k147]
+- [ripgrep](entities/tools/ripgrep.md) — K147 Adopt Unlicense. — entity [+k147]
+- [octobrowser](entities/tools/octobrowser.md) — K147 Steal-from stealth browser. — entity [+k147]
+- [sysadmin-copilot](entities/tools/sysadmin-copilot.md) — K147 Steal-from gateway. — entity [+k147]
+- [Moontower — VIX and buy signals](sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md) — xsp vol regime steal. — `rss` [+k147]
+- [Moontower — delta-hedged risk reversals](sources/substack-rss-moontower-2026-07-05-delta-hedged-risk-reversals.md) — RR attribution. — `rss` [+k147]
+- [Moontower #319](sources/substack-rss-moontower-2026-07-05-moontower-319.md) — issue wrapper. — `rss` [+k147]
+- [Capital Flows — Start Here](sources/substack-rss-capital-flows-2026-07-05-start-here-capital-flows-a-daily-macro-map-to-ta.md) — macro reference overlay. — `rss` [+k147]
+- [Wu Blockchain — June VC report](sources/substack-rss-wublock-2026-07-06-june-vc-report-funding-amount-and-deal-count-hit.md) — crypto VC stats. — `rss` [+k147]
 
 ### k146-ingest (20)
 

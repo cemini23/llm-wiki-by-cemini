@@ -30,7 +30,9 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
-## Current state (2026-07-05 — K146)
+## Current state (2026-07-06 — K147)
+
+- **K147 ingest (2026-07-06)** — `GitHub Repo Multi-Wiki Evaluation.docx` (Copilot SDK, 20 URLs) + Jul 6 RSS batch (moontower×3, capital-flows, wublock, event-horizon ep23, klement×2). Duplicate `Multi-Wiki Link Evaluation Plan.docx` archived only. **1 eval source + 4 entities + 5 RSS sources.** Adopt: repo-bootcamp (TipDrop M4), ripgrep. Steal: OctoBrowser, SYSAdmin-CoPilot. **Briefs:** TipDrop repo-bootcamp; xsp moontower VIX steal (**scp prod**). **Phase-0:** `adopt_k147_phase0.sh`. Gambling-wiki cross-wiki stubs committed sibling.
 
 - **K146 ingest (2026-07-05)** — Morning digest PDFs (2607.02389 substrate steerability, 2607.02467 human-capital hybrid forecasting) + two Gemini MCP eval docx + HF eval refresh. **5 sources + 2 concepts + 11 entities + updates.** Adopt: taste-skill, gastown, brightdata-mcp, dbhub, firecrawl-mcp-server, tavily-mcp, mcp-searxng, unity-mcp, hf-mcp-server, snyk/studio-mcp; chrome-devtools-mcp reaffirmed. **Briefs:** TipDrop ×3, CeminiDFS fetch MCP, game-dev unity-mcp, poker substrate steal. **No prod scp.** `3_27` docx re-drop archived to existing K49/K25 pages. **Phase-0:** `adopt_k146_phase0.sh`.
 - **K145 (2026-07-05)** — Substack RSS multi-feed poller + cross-wiki newsletter routing (28 stubs).
