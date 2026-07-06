@@ -1,13 +1,15 @@
 {
   "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
-  "replace": true,
-  "activeSubmissionId": "ef651e76-397a-47fd-8868-9559e1e34929",
+  "replace": false,
+  "activeSubmissionId": "19fdf72b-322c-45f9-bd06-cccb58d85fcd",
   "watchSubmissionIds": [
-    "8e0c63f0-ba0c-469d-9dd4-443a1666920b",
-    "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
-    "0175ce41-8b0a-4df6-b794-dbb6c7413022",
-    "3b48d01d-3f33-4467-a108-8111d03c2163"
+    "19fdf72b-322c-45f9-bd06-cccb58d85fcd",
+    "8b0686c2-dd89-4d37-b340-057d02a46c83",
+    "ef651e76-397a-47fd-8868-9559e1e34929",
+    "a2fb738f-adbe-455b-ac08-299b3fcc2e2b",
+    "49b98df4-a796-4b1a-bdde-dd792da67946",
+    "8e0c63f0-ba0c-469d-9dd4-443a1666920b"
   ],
   "legacyCompetitionId": "cmr0jmqlt08bi13n8neory9xb",
   "legacyActiveSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
@@ -15,7 +17,7 @@
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
   "agentVersion": "researcher-ladder-s1.cemini-hu-upgrade.2026-07-05",
   "sandboxEngine": "cemini",
-  "gitCommit": "",
-  "pinnedAt": "2026-07-05T13:30:00Z",
-  "notes": "Premium audit Jul 2026: HU wide open/defend, set-on-4-straight fold, 4-flush OOP fold. Replaced cef05ccb."
+  "gitCommit": "dc76fc1",
+  "pinnedAt": "2026-07-06T21:06:00Z",
+  "notes": "replace:false — let 19fdf72b run to 2k+ hands. Timer must WAIT on active PvP, not --replace. HU upgrade code synced from laptop."
 }
