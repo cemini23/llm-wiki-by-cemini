@@ -8,15 +8,16 @@ related:
   - sources/3-19-compliance-research.md
   - entities/platforms/hyperliquid.md
   - sources/vibe-trading-hkuds.md
+  - sources/eval-repository-revenue-integration-2026-07-07.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-26
+updated: 2026-07-07
 ---
 
 ## Relations
 
 - @sources/3-18-crypto-integration-technical-audit.md — primary; deep-read 2026-04-26 (K4)
-- @sources/3-19-compliance-research.md
+- @sources/eval-repository-revenue-integration-2026-07-07.md — K148 Integrate reaffirm (xsp-killer multi-venue)
 - @entities/platforms/hyperliquid.md
 
 ## Raw Concept

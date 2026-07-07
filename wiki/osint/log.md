@@ -9,6 +9,17 @@ updated: 2026-07-06
 - **Concept:** `@concepts/corrections-reit-asset-sale-event-study.md` — deck section + idle-vs-active rebuttal
 - **Entity:** `@entities/companies/corecivic.md` — investor deck bullet
 
+## [2026-07-07] ingest | K148 — revenue eval + Macro Charts backfill + Jul 7 RSS
+
+- **Eval source:** `@sources/eval-repository-revenue-integration-2026-07-07.md` — Integrate lightweight-charts, ccxt, hyperliquid-python-sdk; Extract claude-video
+- **Entities (3 new + 1 update):** `lightweight-charts`, `hyperliquid-python-sdk`, `claude-video`; refresh `ccxt`
+- **ArXiv (2):** `@sources/arxiv-policy-representation-2607.01498-2026-07-07.md`; `@sources/arxiv-advent-predicate-invention-2607.01585-2026-07-07.md`
+- **Concept:** `@concepts/policy-representation-learning-imperfect-info.md`
+- **Macro backfill:** `@sources/macro-charts-paid-forwards-vincent-2026-05-28-07-07.md` (11 Gmail forwards May 28–Jul 7)
+- **RSS:** capital-flows AI compute; event-horizon NC PM; cross-wiki klement×2, latent-space→ccc, seceng→cyber
+- **Phase-0:** `scripts/adopt_k148_phase0.sh`
+- **Briefs:** TipDrop lightweight-charts; xsp ccxt+HL SDK (scp prod); poker claude-video + substrate steal
+
 ## [2026-07-06] ingest | K147 — Copilot SDK eval + Jul 6 RSS batch
 
 - **Source (1 new eval):** `@sources/eval-github-repo-multi-wiki-copilot-2026-07-06.md` — 20 URLs; Adopt repo-bootcamp + ripgrep; Steal OctoBrowser + SYSAdmin-CoPilot

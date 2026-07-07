@@ -13,9 +13,11 @@ related:
   - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
   - sources/trading-posts-compilation-31-2026-06-01.md
   - sources/substack-rss-capital-flows-2026-07-05-start-here-capital-flows-a-daily-macro-map-to-ta.md
+  - sources/macro-charts-paid-forwards-vincent-2026-05-28-07-07.md
+  - sources/substack-rss-capital-flows-2026-07-07-the-ai-compute-playbook.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-06
+updated: 2026-07-07
 ---
 
 ## Relations

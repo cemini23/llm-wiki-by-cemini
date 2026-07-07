@@ -629,6 +629,19 @@ Ingest: `GitHub Repo Multi-Wiki Evaluation.docx` (20 URLs, Copilot SDK cluster),
 
 **Brief routing:** TipDrop (repo-bootcamp M4); xsp-killer (moontower VIX regime steal → `briefs/xsp-2026-07-06_moontower-vix-regime-steal.md` scp prod). Gambling-wiki stubs for event-horizon + klement (sibling repo commit).
 
+## Wave K148 — Revenue/integration eval + Macro Charts backfill (2026-07-07)
+
+Ingest: `Repository Revenue and Integration Evaluation.docx` (47 URLs), arXiv 2607.01498 + 2607.01585, 11 Macro Charts paid forwards (May 28–Jul 7), Jul 7 RSS batch. Phase-0: `scripts/adopt_k148_phase0.sh`.
+
+| Tier | Count | Headline |
+|------|-------|----------|
+| **Integrate** | 3 | lightweight-charts (TipDrop UI), ccxt reaffirm (xsp), hyperliquid-python-sdk (xsp HL shadow) |
+| **Extract** | 1 | claude-video (poker multimodal) |
+| **Concept** | 1 | policy-representation-learning-imperfect-info (2607.01498) |
+| **Macro** | 11 files | K148 backfill bundle predating K144 automation window |
+
+**Brief routing:** TipDrop lightweight-charts; xsp ccxt+HL SDK (`briefs/xsp-2026-07-07_ccxt-hl-sdk-integrate.md` scp prod); poker claude-video + substrate steal.
+
 ## Snippets
 
 ### From `sources/atomicmemory-llm-wiki-compiler.md` (covers GitHub + llmwiki.app)

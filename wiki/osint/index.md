@@ -12,8 +12,22 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **571 canonical stubs** (K147 ingest +1 eval +4 entities +5 RSS +3 RSS upgrades)
+Total: **584 canonical stubs** (K148 ingest +1 eval +4 entities +1 concept +3 arxiv/macro sources +RSS upgrades)
 
+
+### k148-ingest (12)
+
+- [Repository Revenue and Integration Evaluation.docx (2026-07-07)](sources/eval-repository-revenue-integration-2026-07-07.md) — Integrate lightweight-charts, ccxt, HL SDK. — `docx` [+k148]
+- [lightweight-charts](entities/tools/lightweight-charts.md) — K148 Integrate → TipDrop UI. — entity [+k148]
+- [hyperliquid-python-sdk](entities/tools/hyperliquid-python-sdk.md) — K148 Integrate → xsp shadow. — entity [+k148]
+- [claude-video](entities/tools/claude-video.md) — K148 Extract → poker multimodal. — entity [+k148]
+- [Policy representation learning (2607.01498)](concepts/policy-representation-learning-imperfect-info.md) — poker opponent embeddings. — concept [+k148]
+- [arXiv 2607.01498 policy representations](sources/arxiv-policy-representation-2607.01498-2026-07-07.md) — poker source. — `pdf` [+k148]
+- [arXiv 2607.01585 ADVENT ILP](sources/arxiv-advent-predicate-invention-2607.01585-2026-07-07.md) — agent harness stub. — `pdf` [+k148]
+- [Macro Charts paid forwards May 28–Jul 7 2026](sources/macro-charts-paid-forwards-vincent-2026-05-28-07-07.md) — 11-file backfill bundle. — source [+k148]
+- [Capital Flows — AI Compute Playbook](sources/substack-rss-capital-flows-2026-07-07-the-ai-compute-playbook.md) — macro reference. — `rss` [+k148]
+- [Event Horizon — NC PM budget](sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md) — Kalshi policy. — `rss` [+k148]
+- [CCXT](entities/frameworks/ccxt.md) — K148 Integrate reaffirm. — entity update [+k148]
 
 ### k147-ingest (10)
 

@@ -30,7 +30,9 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
-## Current state (2026-07-06 — K147)
+## Current state (2026-07-07 — K148)
+
+- **K148 ingest (2026-07-07)** — `Repository Revenue and Integration Evaluation.docx` (47 URLs) + arXiv 2607.01498/01585 + 11 Macro Charts paid backfill + Jul 7 RSS batch. **Integrate:** lightweight-charts (TipDrop), ccxt + hyperliquid-python-sdk (xsp). **Extract:** claude-video (poker). **Briefs:** TipDrop charts; xsp ccxt+HL (**scp prod**); poker ×2. **Phase-0:** `adopt_k148_phase0.sh`. Sibling wiki commits: gambling, ccc, cybersec.
 
 - **K147 ingest (2026-07-06)** — `GitHub Repo Multi-Wiki Evaluation.docx` (Copilot SDK, 20 URLs) + Jul 6 RSS batch (moontower×3, capital-flows, wublock, event-horizon ep23, klement×2). Duplicate `Multi-Wiki Link Evaluation Plan.docx` archived only. **1 eval source + 4 entities + 5 RSS sources.** Adopt: repo-bootcamp (TipDrop M4), ripgrep. Steal: OctoBrowser, SYSAdmin-CoPilot. **Briefs:** TipDrop repo-bootcamp; xsp moontower VIX steal (**scp prod**). **Phase-0:** `adopt_k147_phase0.sh`. Gambling-wiki cross-wiki stubs committed sibling.
 
