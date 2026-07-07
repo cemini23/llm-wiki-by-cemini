@@ -7,9 +7,10 @@ related:
   - concepts/scope-tiers.md
   - sources/arxiv-1705-09704-lockstep-simulation.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-07-07.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-06-13
+updated: 2026-07-07
 ---
 
 ## Relations
@@ -40,6 +41,10 @@ After vertical slice v0 + optional hot-seat pass:
 1. Audit sim for fixed-point or integer-only critical paths
 2. Read Glenn Fiedler deterministic lockstep series [TENTATIVE]
 3. Prototype LAN two-client wall place + peasant sync
+
+### Determinism as a formal property (research aside)
+
+@sources/inbox-arxiv-reject-batch-2026-07-07.md — arXiv 2607.04958 ("Look-Ahead-Freedom as Temporal Non-Interference") frames "no later state influences an earlier decision" as **temporal non-interference over a time-indexed lattice**. Same shape as a **lockstep replay** invariant: a deterministic tick must consume only ≤t state. Primary home is @osint-wiki (quant backtesting); logged here only as a Tier-N replay-verification analogy — **not** a slice adoption.
 
 ## Snippets
 

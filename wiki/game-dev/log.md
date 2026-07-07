@@ -4,6 +4,18 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-07] ingest | arXiv-API fallback mis-route (5 rejects); empty 07-06 sweep
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-07.md (all reject); archived; inbox cleared
+- Triage: 2607.04768 facial FEM (graphics), 2607.04770/04803/04953 autonomous-driving, 2607.04958 quant backtesting (route @osint-wiki)
+- Fallback cause: `game-navmesh-dynamic` cluster used free arXiv API (Exa 0 hits) → pulled off-topic papers
+- Wiki fill: temporal-non-interference / lockstep-replay aside on @concepts/rts-networking-deferred.md
+- Phase-0: none (no game-dev tool repos); no new brief (no adoption surfaced)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 18 files)
+- Sweeps: @sweeps/2026-07-06-daily.md (empty record), @sweeps/2026-07-07-daily.md
+
+---
+
 ## [2026-07-05] ingest | SAGA CivRealm strategy agents + AV re-drop
 
 - Inbox: 2 arXiv PDFs → @sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md (ingest); @sources/inbox-arxiv-reject-batch-2026-07-05.md (2607.01382 re-drop ×3); archived; inbox cleared
