@@ -55,7 +55,9 @@ updated: 2026-07-07
 
 | Firm | Analyst | Ticker | Action | PT | Prior |
 |------|---------|--------|--------|-----|-------|
-| Benchmark | (media) | CXW | Buy (maintained) | **$41** | $36 |
+| Benchmark | Bill Sutherland | CXW | Buy (maintained) | **$41** | $36 |
+
+_Analyst named + rating confirmed via Benzinga Newswire, 9:29 a.m. EDT 2026-07-07 (same Bill Sutherland who set the Jun 26 $28→$36 raise)._
 
 - **PT bridge:** prior **$36** embedded **80% × 2-site ≈ $700M net**; revised **$41** adds the **~$400M realized upside** now that the sale actually closed above the modeled proceeds `[CONFIRMED media]`.
 - **Buyback unlock (material):** CXW plans **~$600M of proceeds → debt reduction**, cutting leverage **under 2:1** and **enabling unrestricted share repurchases**; company now at **zero net debt**; mgmt reportedly **aggressively buying back shares** `[CONFIRMED media / TENTATIVE on pace]`. This is the **repurchase-over-debt** trigger the Campbell REIT event-study literature associates with **positive** abnormal returns — the catalyst absent on Jul 6.
@@ -73,3 +75,6 @@ updated: 2026-07-07
 
 > Benchmark raised its price target on CoreCivic stock to $41 from $36 while maintaining a Buy rating … The company plans to use $600 million of the proceeds for debt reduction, lowering leverage to under 2:1 and enabling unrestricted share repurchases … CoreCivic now has zero net debt … The Department of Homeland Security remains committed to purchasing at least 10 turnkey facilities.
 > — [Source: Investing.com 2026-07-07](https://ca.investing.com/news/stock-market-news/benchmark-raises-corecivic-stock-price-target-on-facility-sales-93CH-4723445) (retrieved 2026-07-07)
+
+> Benchmark analyst Bill Sutherland maintains CoreCivic (NYSE:CXW) with a Buy and raises the price target from $36 to $41.
+> — [Source: Benzinga Newswire, 9:29 a.m. EDT 2026-07-07 (retrieved 2026-07-07)]
