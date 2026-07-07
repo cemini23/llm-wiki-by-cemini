@@ -127,15 +127,15 @@ def run_agent_reach_social_pass(repo: Path, cfg: dict[str, Any], today: date) ->
         allowlist = SourceAllowlist.from_file(allowlist_path)
         result = process_captures(captures, allowlist)
         write_audit_log(audit_path, connector="manual_snapshot", snapshot_path=snapshot_path, result=result)
-        if result.ok:
+        if result.items:
             write_output(output_path, result.items)
-        _render_social_lines(lines, rows, result, snapshot_path, output_path, audit_path)
+        _render_social_lines(lines, rows, result, snapshot_path, output_path if result.items else None, audit_path)
         return SocialPassResult(
             enabled=True,
-            ok=result.ok,
+            ok=bool(result.items),
             lines=lines,
             snapshot_path=snapshot_path,
-            output_path=output_path if result.ok else None,
+            output_path=output_path if result.items else None,
             audit_path=audit_path,
         )
 

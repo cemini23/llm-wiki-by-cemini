@@ -11,6 +11,11 @@ fetch:
   fetch_likely: false
   max_results_per_paper_query: 5
 
+arxiv_fallback:
+  enabled: true
+  request_interval_seconds: 3
+  max_terms_per_query: 6
+
 # EDIT: domain topics for this wiki only
 active_topics:
   - "Replace with ROADMAP workstream 1"

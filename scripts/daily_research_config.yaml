@@ -17,6 +17,12 @@ fetch:
   fetch_likely: false
   max_results_per_paper_query: 5
 
+# Free fallback when Exa fails (402 quota, outage) — uses export.arxiv.org API
+arxiv_fallback:
+  enabled: true
+  request_interval_seconds: 3
+  max_terms_per_query: 6
+
 # Co-primary (2026-06-20) — equal morning ingest priority for active codebases.
 # Route briefs per scripts/active_project_brief_targets.yaml; wiki always.
 active_topics:

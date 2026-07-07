@@ -58,6 +58,8 @@ class SourceAllowlist:
             raise AllowlistError("source_url is missing a hostname")
 
         normalized_domain = domain.lower().rstrip(".")
+        if normalized_domain.startswith("www."):
+            normalized_domain = normalized_domain[4:]
         if normalized_domain not in self.allowed_domains:
             raise AllowlistError(f"domain is not allowlisted: {normalized_domain}")
 

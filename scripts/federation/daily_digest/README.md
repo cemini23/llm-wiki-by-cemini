@@ -2,6 +2,8 @@
 
 Copy this directory's Python modules into a sibling wiki repo's `scripts/` folder, then run `install_federated_daily_digest.sh` from that repo root.
 
+**Keep in sync:** `bash scripts/federation/daily_digest/sync_federation_digest_bundle.sh` (OSINT canonical → all federation wikis + `~/.cemini/launchagent/osint/`).
+
 **Canonical reference:** OSINT `scripts/daily_research_digest_run.py` + `daily_research_fetch.py` (keep in sync manually until shared package exists).
 
 ## Quick install (per wiki)

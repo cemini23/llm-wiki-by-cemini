@@ -110,9 +110,7 @@ def process_captures(
         except SnapshotError as exc:
             rejections.append(Rejection("SNAPSHOT_REJECTED", str(exc), index, content_hash))
 
-    if rejections:
-        return ProcessResult(ok=False, items=[], rejections=rejections)
-    return ProcessResult(ok=True, items=accepted, rejections=[])
+    return ProcessResult(ok=bool(accepted), items=accepted, rejections=rejections)
 
 
 def write_output(path: Path, items: list[dict[str, Any]]) -> None:

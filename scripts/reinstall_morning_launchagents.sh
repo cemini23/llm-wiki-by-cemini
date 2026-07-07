@@ -81,7 +81,11 @@ sync_launchagent_payload() {
   cp "$ROOT/scripts/inbox_notify.sh" "$PAYLOAD_DIR/osint/inbox_notify.sh"
   cp "$ROOT/scripts/daily_research_digest_run.py" "$PAYLOAD_DIR/osint/daily_research_digest_run.py"
   cp "$ROOT/scripts/daily_research_fetch.py" "$PAYLOAD_DIR/osint/daily_research_fetch.py"
+  cp "$ROOT/scripts/arxiv_api_search.py" "$PAYLOAD_DIR/osint/arxiv_api_search.py"
   cp "$ROOT/scripts/wiki_source_index.py" "$PAYLOAD_DIR/osint/wiki_source_index.py"
+  cp "$ROOT/scripts/agent_reach_daily_social.py" "$PAYLOAD_DIR/osint/agent_reach_daily_social.py"
+  rm -rf "$PAYLOAD_DIR/osint/agent_reach_wrapper"
+  cp -R "$ROOT/scripts/agent_reach_wrapper" "$PAYLOAD_DIR/osint/agent_reach_wrapper"
   chmod 755 "$PAYLOAD_DIR/osint/"*.sh
   chmod 644 "$PAYLOAD_DIR/osint/"*.py
   if [[ -f "$FED_HUB/scripts/run_federation_morning_summary.py" ]]; then
@@ -205,6 +209,7 @@ EOF
 
 echo "=== OSINT workspace path ==="
 sync_launchagent_payload
+bash "$ROOT/scripts/federation/daily_digest/sync_federation_digest_bundle.sh"
 write_path "$CEMINI_DIR/osint-workspace.path" "$ROOT"
 ensure_desktop_inbox_symlink "$ROOT"
 

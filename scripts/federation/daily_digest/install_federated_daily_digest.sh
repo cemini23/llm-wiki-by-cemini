@@ -10,11 +10,17 @@ KIT="$OSINT_ROOT/scripts/federation/daily_digest"
 
 mkdir -p "$WIKI_ROOT/scripts" "$WIKI_ROOT/wiki/sweeps" "$WIKI_ROOT/wiki/meta" "$WIKI_ROOT/research to be indexed"
 
-for f in daily_research_digest_run.py daily_research_fetch.py wiki_source_index.py; do
+for f in daily_research_digest_run.py daily_research_fetch.py arxiv_api_search.py wiki_source_index.py agent_reach_daily_social.py; do
   if [[ -f "$OSINT_ROOT/scripts/$f" ]]; then
     cp "$OSINT_ROOT/scripts/$f" "$WIKI_ROOT/scripts/$f"
   fi
 done
+rm -rf "$WIKI_ROOT/scripts/agent_reach_wrapper"
+cp -R "$OSINT_ROOT/scripts/agent_reach_wrapper" "$WIKI_ROOT/scripts/agent_reach_wrapper"
+mkdir -p "$WIKI_ROOT/config"
+if [[ ! -f "$WIKI_ROOT/config/agent_reach_daily_sources.example.json" ]]; then
+  cp "$OSINT_ROOT/config/agent_reach_daily_sources.example.json" "$WIKI_ROOT/config/"
+fi
 
 if [[ ! -f "$WIKI_ROOT/scripts/daily_research_config.yaml" ]]; then
   cp "$KIT/daily_research_config.template.yaml" "$WIKI_ROOT/scripts/daily_research_config.yaml"
