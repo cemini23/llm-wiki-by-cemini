@@ -2,8 +2,9 @@
   "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "19fdf72b-322c-45f9-bd06-cccb58d85fcd",
+  "activeSubmissionId": "627b7ae9-7350-4f44-b0b7-5005cfe7a26e",
   "watchSubmissionIds": [
+    "627b7ae9-7350-4f44-b0b7-5005cfe7a26e",
     "19fdf72b-322c-45f9-bd06-cccb58d85fcd",
     "8b0686c2-dd89-4d37-b340-057d02a46c83",
     "ef651e76-397a-47fd-8868-9559e1e34929",
@@ -15,9 +16,9 @@
   "legacyActiveSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-ladder-s1.cemini-hu-upgrade.2026-07-05",
+  "agentVersion": "researcher-ladder-s1.k148.2026-07-07",
   "sandboxEngine": "cemini",
-  "gitCommit": "dc76fc1",
-  "pinnedAt": "2026-07-06T21:06:00Z",
-  "notes": "replace:false — let 19fdf72b run to 2k+ hands. Timer must WAIT on active PvP, not --replace. HU upgrade code synced from laptop."
+  "gitCommit": "9d14ccf",
+  "pinnedAt": "2026-07-07T12:48:30Z",
+  "notes": "K148 substrate+coaching extract; QQ top-set guard; VPIP-PFR epsilon. Intentional replace submit — timer replace:false."
 }
