@@ -16,6 +16,7 @@ rsync -avz \
   --exclude '.arena-credentials.*' \
   --exclude '.arena-poker-state' \
   --exclude '.env' \
+  --exclude 'dist/' \
   "${AGENT_DIR}/" "${HOST}:${REMOTE_DIR}/"
 
 echo "Done (creds + .env preserved on ${HOST})."
