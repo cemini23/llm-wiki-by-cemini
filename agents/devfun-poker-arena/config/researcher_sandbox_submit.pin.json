@@ -2,14 +2,13 @@
   "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "627b7ae9-7350-4f44-b0b7-5005cfe7a26e",
+  "activeSubmissionId": "19fdf72b-322c-45f9-bd06-cccb58d85fcd",
   "watchSubmissionIds": [
-    "627b7ae9-7350-4f44-b0b7-5005cfe7a26e",
     "19fdf72b-322c-45f9-bd06-cccb58d85fcd",
+    "f6c8eeb9-6289-48b6-9265-e745e7d936ce",
+    "627b7ae9-7350-4f44-b0b7-5005cfe7a26e",
     "8b0686c2-dd89-4d37-b340-057d02a46c83",
     "ef651e76-397a-47fd-8868-9559e1e34929",
-    "a2fb738f-adbe-455b-ac08-299b3fcc2e2b",
-    "49b98df4-a796-4b1a-bdde-dd792da67946",
     "8e0c63f0-ba0c-469d-9dd4-443a1666920b"
   ],
   "legacyCompetitionId": "cmr0jmqlt08bi13n8neory9xb",
@@ -18,7 +17,7 @@
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
   "agentVersion": "researcher-ladder-s1.k148.2026-07-07",
   "sandboxEngine": "cemini",
-  "gitCommit": "9d14ccf",
-  "pinnedAt": "2026-07-07T12:48:30Z",
-  "notes": "K148 substrate+coaching extract; QQ top-set guard; VPIP-PFR epsilon. Intentional replace submit — timer replace:false."
+  "gitCommit": "unknown",
+  "pinnedAt": "2026-07-07T12:52:00Z",
+  "notes": "Live bot 19fdf72b — K148 replace submits failed sandbox_internal_error (627b7ae9, f6c8eeb9). Code on prod via rsync; retry replace when Arena healthy. replace:false."
 }
