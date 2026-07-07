@@ -64,8 +64,9 @@ Synthesized after CXW **$1.5B** ICE facility sale (Jul 2026): why the stock **fa
 
 Benchmark **$36 → $41** (Buy) and Noble/Gomes sponsored "Validation of Asset Worth" landed Jul 7 with a **materially different capital-return story** than the Jul 6 deck implied:
 
-- **$600M proceeds → debt reduction**, leverage **under 2:1**, **zero net debt**, and — critically — **unrestricted share repurchases now enabled**; mgmt reportedly **aggressively buying back**.
-- This flips fade-mechanism **#4**: the Campbell REIT literature (below) says **debt-paydown proceeds → muted returns**, but **repurchase proceeds → positive returns**. Jul 6 traded the debt-first read; Jul 7 the market began pricing the **repurchase unlock**.
+- **$600M proceeds → debt reduction**, leverage **under 2:1**, **zero net debt**, and — per Benchmark — **unrestricted share repurchases now enabled**.
+- This *partly* addresses fade-mechanism **#4**: the Campbell REIT literature (below) says **debt-paydown proceeds → muted returns**, but **repurchase proceeds → positive returns**. Jul 6 traded the debt-first read; Jul 7 the market began pricing the **repurchase capacity**.
+- **⚠ Capacity ≠ commitment (deck p.4 correction):** CXW's own use-of-proceeds slide splits proceeds **three ways** — debt reduction ("intends to repay"), **growth acquisitions** (Clinical Solutions Pharmacy comp), and return of capital, where buyback expansion is only **"being considered and under evaluation."** Benchmark's "unrestricted repurchases" = **covenant headroom unlocked**, not a committed program. This is still the **hedged-capital-return** profile the REIT literature ties to **muted** returns; the clean "repurchase → positive return" trigger is **not yet confirmed**. See @sources/corecivic-investor-deck-proforma-2026-07.md.
 - **DHS committed to ≥10 turnkey facilities** — makes fade-mechanism **#5** ("pipeline worthless") too harsh: pipeline is now **quantified**, not vague.
 - **PT bridge:** $36 (80% × 2-site ≈ $700M) → **$41** adds **~$400M realized upside**. New PT still ~**+31%** over ~$31.20 spot.
 - **Convergence read (ties to the 10-day drift thesis):** +0.8% Jul 7 off the $30.42 low is a **weak, early** confirmation that the market is **absorbing**, not panicking. Not yet a repricing to $41 — needs sustained repurchase evidence + Q2 print. See "post-event convergence watch" below.

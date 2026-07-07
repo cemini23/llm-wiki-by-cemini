@@ -3,6 +3,12 @@
 updated: 2026-07-06
 ---
 
+## [2026-07-07] correction | CXW use-of-proceeds slide — buyback is "under evaluation," not committed
+
+- **Slide (deck p.4):** proceeds split **3 ways** — debt reduction (revolver $270M + $108M + $100M term loans + $238M 4.75% notes due Oct 2027), growth acquisitions (Clinical Solutions Pharmacy comp), return of capital
+- **Key nuance:** share-repurchase expansion is **"being considered and under evaluation"** — Benchmark's "unrestricted repurchases" = **covenant capacity**, not a committed program. Re-arms the muted-return (hedged capital return) fade read; provable only at Q2
+- **Updated:** `@sources/corecivic-investor-deck-proforma-2026-07.md` (use-of-proceeds table), `@concepts/corrections-reit-asset-sale-event-study.md` (capacity≠commitment caveat), `@entities/companies/corecivic.md`
+
 ## [2026-07-07] event | CXW Jul 7 — Benchmark $41, buyback unlock, Noble validation, Q2 date
 
 - **Source (new):** `@sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md` — Noble/Gomes sponsored "Validation of Asset Worth"; Cal City $286,172/bed, Otay $370,712/bed

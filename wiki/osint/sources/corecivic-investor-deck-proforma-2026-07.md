@@ -89,6 +89,18 @@ Slides from CoreCivic Jul 2026 investor materials (post **California City + Otay
 - **Idle share rises** (10% → 11%) because **denominator shrinks** after removing ~4,554 sold beds; idle absolute beds **unchanged** (~7k per Q1 commentary).
 - Portfolio **more state-DOC weighted** post-sale; ICE **owned** exposure down **5pp** while CXW **retains ICE management** on sold sites.
 
+### Use-of-proceeds slide (deck p.4) — three competing buckets `[CONFIRMED slide]`
+
+Company frames proceeds across **three** uses — buyback is **one of three**, and the softest-committed:
+
+| Bucket | Detail | Commitment language |
+|--------|--------|---------------------|
+| **1. Debt reduction** | Repay revolver ($270M), $108M Initial + $100M Incremental Term Loans, remaining **$238M of 4.75% senior notes due Oct 2027** | "**intends to repay**" — firmest |
+| **2. Growth opportunities** | Acquisitions in existing lines / complementary services / diversify cash flows; **comp: Clinical Solutions Pharmacy (Apr 2026)** | "**expects to maintain flexibility**" — active intent |
+| **3. Return of capital** | Remaining cash **could** be returned, **potentially on an accelerated basis** | "Expansion of the **share repurchase program is being considered and is under evaluation**" — **softest** |
+
+**Key nuance (walks back the "buyback unlocked" read):** Benchmark's Jul 7 phrasing "enabling unrestricted share repurchases" describes **covenant capacity** (leverage <2:1 removes the restriction), **not a committed buyback**. CXW's own slide keeps repurchase expansion at **"considered / under evaluation,"** and explicitly earmarks proceeds for **debt first** and **growth acquisitions** as competing uses. This is the **hedged-capital-return** profile the Campbell REIT event-study literature ties to **muted** announcement returns — consistent with the Jul 6 fade, and a caution on over-crediting the Jul 7 buyback catalyst. Real repurchase intent will only be provable at **Q2 (Aug 5/6)**.
+
 ### Why slide didn't save the stock (Jul 6)
 
 Credit metrics improved; **EV down ~$1B**; **no committed buyback $** on slide; Jul 2 **flat** leak tell; stock **premarket +8% → close −2%**. See @concepts/corrections-reit-asset-sale-event-study.md.
