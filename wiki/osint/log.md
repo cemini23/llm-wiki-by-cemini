@@ -3,6 +3,14 @@
 updated: 2026-07-06
 ---
 
+## [2026-07-07] event | CXW Jul 7 — Benchmark $41, buyback unlock, Noble validation, Q2 date
+
+- **Source (new):** `@sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md` — Noble/Gomes sponsored "Validation of Asset Worth"; Cal City $286,172/bed, Otay $370,712/bed
+- **Benchmark PT $36 → $41 (Buy):** +$400M realized upside; **$600M → debt reduction → leverage <2:1 → unrestricted share repurchases unlocked**; zero net debt; DHS committed to **≥10 turnkey facilities**; per-bed vs ~$250k national new-build — added to `@sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md`
+- **Reframe:** buyback unlock flips fade-mechanism #4 (debt-first → repurchase); Campbell REIT lit ties repurchase to **positive** abnormal returns. Added Jul 7 event row + **post-event convergence watch** to `@concepts/corrections-reit-asset-sale-event-study.md`
+- **Catalyst:** **Q2 2026 earnings — release Aug 5 (after close); call Aug 6, 11:00 a.m. ET** (Globe Newswire)
+- **Entity:** `@entities/companies/corecivic.md` updated; tape ~$31.20 (+0.8%) Jul 7 vs $30.42 Jul 6 close
+
 ## [2026-07-06] query | CoreCivic investor deck — pro forma + owned-beds slides
 
 - **Source (new):** `@sources/corecivic-investor-deck-proforma-2026-07.md` — pro forma cap table ($123M net debt, EV $4.27B→$3.2B); owned beds ICE 25%→20%, idle 10%→11%; 0.0x leverage vs ~0.27x honest math

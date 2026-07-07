@@ -11,6 +11,7 @@ related:
   - concepts/corrections-reit-asset-sale-event-study.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - sources/corecivic-investor-deck-proforma-2026-07.md
+  - sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md
 maturity: draft
 created: 2026-07-06
 updated: 2026-07-06
@@ -25,6 +26,7 @@ updated: 2026-07-06
 - @concepts/corrections-reit-asset-sale-event-study.md — Jul 6 fade + GEO scenario synthesis
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — turnkey scorecard
 - @sources/corecivic-investor-deck-proforma-2026-07.md — pro forma EV / leverage context
+- @sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md — peer sponsored per-bed validation
 
 ## Raw Concept
 

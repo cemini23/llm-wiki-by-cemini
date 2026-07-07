@@ -15,6 +15,7 @@ related:
   - sources/abc10news-cxw-otay-sale-2026-07-06.md
   - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
   - sources/corecivic-investor-deck-proforma-2026-07.md
+  - sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md
 maturity: draft
 created: 2026-06-29
 updated: 2026-07-06
@@ -32,6 +33,7 @@ updated: 2026-07-06
 - @sources/san-diego-county-otay-oversight-2026.md — Otay local oversight litigation
 - @sources/corecivic-ice-facility-sale-8k-2026-07-06.md — Jul 2 DHS purchase
 - @sources/corecivic-investor-deck-proforma-2026-07.md — pro forma cap table post-sale
+- @sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md — $286,172/bed sale validation
 
 ## Raw Concept
 

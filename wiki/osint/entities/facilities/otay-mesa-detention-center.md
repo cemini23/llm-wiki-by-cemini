@@ -14,6 +14,7 @@ related:
   - sources/abc10news-cxw-otay-sale-2026-07-06.md
   - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
   - sources/corecivic-investor-deck-proforma-2026-07.md
+  - sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md
 maturity: draft
 created: 2026-07-06
 updated: 2026-07-06
@@ -31,6 +32,7 @@ updated: 2026-07-06
 - @sources/abc10news-cxw-otay-sale-2026-07-06.md — local sale announcement coverage
 - @sources/corecivic-ice-facility-sale-8k-2026-07-06.md — federal purchase terms
 - @sources/corecivic-investor-deck-proforma-2026-07.md — owned-beds ICE mix post-sale
+- @sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md — $370,712/bed sale validation
 
 ## Raw Concept
 

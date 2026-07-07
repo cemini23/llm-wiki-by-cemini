@@ -14,6 +14,7 @@ related:
   - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - sources/corecivic-investor-deck-proforma-2026-07.md
+  - sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
 maturity: draft
 created: 2026-07-06
@@ -31,6 +32,7 @@ updated: 2026-07-06
 - @sources/san-diego-county-otay-oversight-2026.md — Otay litigation / inspection timeline
 - @sources/abc10news-cxw-otay-sale-2026-07-06.md — local Jul 6 coverage
 - @sources/corecivic-investor-deck-proforma-2026-07.md — pro forma cap table + owned-beds slides
+- @sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md — Jul 7 sponsored per-bed validation
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — site list + probabilities
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — GEO investigative frame
 
@@ -47,15 +49,28 @@ Synthesized after CXW **$1.5B** ICE facility sale (Jul 2026): why the stock **fa
 | 2026-06-26 | Benchmark PT **$28→$36**; Northland **$32→$40** | ~$30.29 | Sale **priced in** before close |
 | 2026-07-02 | **Transaction closes** | **$31.03** (+0.06%) | **Leak tell** — no pop on close |
 | 2026-07-06 | 8-K + PR + Zacks SCR **$36** | **$30.42** (−2%) | Premarket **~+8%** → fade |
+| 2026-07-07 | Benchmark **$36→$41**; Noble/Gomes "validation"; buyback unlock | **~$31.20** (+0.8%) | **Drift up** — early convergence, not rip |
 
 **Mechanism (layered):**
 
 1. **Buy-the-rumor** — YTD **~+60%**, Jun 26 analyst raises embedded **80% × 2-site** sale.
 2. **Close-before-PR** — Jul 2 flat = informed money done buying.
 3. **Earnings-neutral framing** — Zacks + mgmt: **minimal cash-flow impact** with retained management; not a windfall EPS event.
-4. **Cash waterfall** — **~$716M** debt first; buybacks **conditional** on covenants.
+4. **Cash waterfall** — **~$600–716M** debt first; buybacks were **conditional** on covenants **on Jul 6** → **unlocked Jul 7** (see below).
 5. **Pipeline language worthless** — "additional discussions" ignored post-print.
 6. **SOTP walk-back** — even bulls say **$323k × 57.8k beds ≠ trading multiple**.
+
+### Jul 7 update — buyback unlock reframes the fade `[CONFIRMED media]`
+
+Benchmark **$36 → $41** (Buy) and Noble/Gomes sponsored "Validation of Asset Worth" landed Jul 7 with a **materially different capital-return story** than the Jul 6 deck implied:
+
+- **$600M proceeds → debt reduction**, leverage **under 2:1**, **zero net debt**, and — critically — **unrestricted share repurchases now enabled**; mgmt reportedly **aggressively buying back**.
+- This flips fade-mechanism **#4**: the Campbell REIT literature (below) says **debt-paydown proceeds → muted returns**, but **repurchase proceeds → positive returns**. Jul 6 traded the debt-first read; Jul 7 the market began pricing the **repurchase unlock**.
+- **DHS committed to ≥10 turnkey facilities** — makes fade-mechanism **#5** ("pipeline worthless") too harsh: pipeline is now **quantified**, not vague.
+- **PT bridge:** $36 (80% × 2-site ≈ $700M) → **$41** adds **~$400M realized upside**. New PT still ~**+31%** over ~$31.20 spot.
+- **Convergence read (ties to the 10-day drift thesis):** +0.8% Jul 7 off the $30.42 low is a **weak, early** confirmation that the market is **absorbing**, not panicking. Not yet a repricing to $41 — needs sustained repurchase evidence + Q2 print. See "post-event convergence watch" below.
+
+**Next hard catalyst:** **Q2 2026 earnings — release Aug 5 2026 (after close); call Aug 6, 11:00 a.m. ET.** First print to show **buyback pace + reduced-share count + updated leverage** — the metrics that determine whether the drift-to-fair-value bet pays.
 
 ### CXW investor deck — pro forma balance sheet (Jul 2026) `[CONFIRMED slide]`
 
@@ -88,12 +103,13 @@ Sold Otay + Cal City were **active ICE** sites (not idle). **Idle % rises** beca
 
 | Source | Type | CXW PT | Key claim |
 |--------|------|--------|-----------|
-| Benchmark / Sutherland | Independent (media) | $36 | Turnkey + valuation framework |
+| Benchmark / Sutherland | Independent (media) | **$41** (Jul 7; was $36) | +$400M realized upside; buyback unlock |
 | Northland / Gibas | Independent (media) | $40 | H2 active |
 | Zacks SCR / Marin | **Sponsored** | $36 | 13.3× FFO; de-risk; no full SOTP |
-| TipRanks consensus | Aggregator | ~$36 | Moderate Buy cluster |
+| Noble Capital / Gomes | **Sponsored** | gated | $286k/$371k per bed; asset-worth validation |
+| TipRanks consensus | Aggregator | ~$36–41 | Moderate Buy cluster |
 
-Full notes: @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md, @sources/zacks-scr-cxw-marin-2026-07-06.md.
+Full notes: @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md, @sources/zacks-scr-cxw-marin-2026-07-06.md, @sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md.
 
 ### Academic / REIT precedents (not corrections-specific)
 
@@ -204,6 +220,20 @@ Requires **stack**:
 | Site count | Staged (2–3) | **5–8** one-shot |
 | Mgmt contracts | Detailed fee terms | Vague "modified" |
 | YTD GEO | <+50% | **>+80%** (current) |
+
+### Post-event convergence watch (CXW, Jul 2026)
+
+Reframes the trade from **"gap and sustain on print"** (failed Jul 6) to **"does price converge toward fair value within ~10 trading days"** — a **liquidity + positioning + catalyst** bet, not a fundamental one. What would confirm convergence vs a stuck/failed drift:
+
+| Signal | Convergence (bull) | Stuck / failed (bear) |
+|--------|--------------------|-----------------------|
+| Daily tape post-Jul 6 | Higher lows, holds >$31 | Fade back toward/below $30.42 |
+| Buyback evidence | Volume + 10b5-1 / accelerated repo disclosed | "Considering" only; no prints |
+| Analyst follow-through | More $40+ PTs, upgrades | PT cluster stalls at $36 |
+| Volume / short cover | Rising vol on up days | Short **volume** stays elevated on down days |
+| Macro / sector | Neutral-to-risk-on | Risk-off (Jul 7: oil spike, AI wobble, VIX +5.5%) pressures small caps |
+
+**Base rate caution:** post-sale mispricings can persist until a **hard catalyst** forces recognition. For CXW that catalyst is **Q2 earnings (Aug 5/6)** — likely **outside a 10-day window** from Jul 6. A pure 10-day bet therefore leans on **fund repositioning + repurchase flow**, not on the print. "Fundamentally right, path-dependent" is the operative risk.
 
 ### Working conclusion
 

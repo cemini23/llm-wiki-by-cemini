@@ -20,9 +20,10 @@ related:
   - sources/san-diego-county-otay-oversight-2026.md
   - sources/abc10news-cxw-otay-sale-2026-07-06.md
   - sources/corecivic-investor-deck-proforma-2026-07.md
+  - sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-07-06
+updated: 2026-07-07
 ---
 
 ## Relations
@@ -43,6 +44,7 @@ updated: 2026-07-06
 - @sources/san-diego-county-otay-oversight-2026.md — Otay county inspection lawsuit (Mar–Jun 2026)
 - @sources/abc10news-cxw-otay-sale-2026-07-06.md — local Jul 6 sale coverage
 - @sources/corecivic-investor-deck-proforma-2026-07.md — Jul 2026 pro forma cap table + owned-beds slides
+- @sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md — Jul 7 Noble/Gomes sponsored per-bed validation
 
 ## Raw Concept
 
@@ -56,7 +58,7 @@ Entity stub from June 2026 OSINT session on ICE turnkey acquisition thesis and C
 
 **Central Arizona Florence Correctional Complex (CAFCC)** — ~5,000-bed **mixed-customer** private plant (Coolidge, Mesa, Yaqui Tribe, **Idaho DOC**, Montana DOC, USMS); ICE detainees are a **contract population**, not the whole facility. **Federal Florence SPC** (3250 N. Pinal Pkwy) is **ICE-owned** — separate from CAFCC; First American J&A-26-0143 likely targets **federal campus expansion**, not CAFCC turnkey buy — @entities/facilities/florence-az-detention-cluster.md.
 
-**Turnkey sale thesis:** **FIRST TRANCHE CLOSED Jul 2, 2026** — DHS purchased **California City** ($732.6M) + **Otay Mesa** ($739.2M) for **$1.5B gross** (~$1.1B net after tax/expenses); 8-K filed Jul 6 `[CONFIRMED]`. CXW expects to **retain ICE management** on both; additional ICE acquisition talks ongoing with no assurance `[CONFIRMED 8-K]`. WaPo draft two-CA-site list **validated** — CXW may have **completed its WaPo allocation**. GEO tranche **still open**. **Jul 6 tape:** premarket **~+8%** → close **~$30.42 (−2%)**; stock **flat on Jul 2 close** (leak tell) `[CONFIRMED market]`. Sell-side cluster Jun 26 (Benchmark **$36**, Northland **$40**, Zacks SCR **$36** Jul 6) **failed to hold stock** — market priced **de-risk + debt paydown**, not SOTP moonshot `@sources/zacks-scr-cxw-marin-2026-07-06.md`, `@concepts/corrections-reit-asset-sale-event-study.md`. **Investor deck (Jul 2026):** pro forma **net debt $123M**, slide **0.0x** leverage (honest **~0.27x**); **EV $4,273M → $3,200M** (~$1.07B drop); owned ICE beds **25% → 20%**, idle **10% → 11%** (sold sites were **active ICE**, not idle) — `@sources/corecivic-investor-deck-proforma-2026-07.md`. CEO Swindle: **Otay ~$371k/bed, Cal City ~$286k/bed, blended ~$329k** `[CONFIRMED]`. **Warren letter (May 27, 2026)** — program-wide optics risk, GEO-weighted `[CONFIRMED]`. Full scorecard: @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md.
+**Turnkey sale thesis:** **FIRST TRANCHE CLOSED Jul 2, 2026** — DHS purchased **California City** ($732.6M) + **Otay Mesa** ($739.2M) for **$1.5B gross** (~$1.1B net after tax/expenses); 8-K filed Jul 6 `[CONFIRMED]`. CXW expects to **retain ICE management** on both; additional ICE acquisition talks ongoing with no assurance `[CONFIRMED 8-K]`. WaPo draft two-CA-site list **validated** — CXW may have **completed its WaPo allocation**. GEO tranche **still open**. **Jul 6 tape:** premarket **~+8%** → close **~$30.42 (−2%)**; stock **flat on Jul 2 close** (leak tell) `[CONFIRMED market]`. Sell-side cluster Jun 26 (Benchmark **$36**, Northland **$40**, Zacks SCR **$36** Jul 6) **failed to hold stock** — market priced **de-risk + debt paydown**, not SOTP moonshot `@sources/zacks-scr-cxw-marin-2026-07-06.md`, `@concepts/corrections-reit-asset-sale-event-study.md`. **Investor deck (Jul 2026):** pro forma **net debt $123M**, slide **0.0x** leverage (honest **~0.27x**); **EV $4,273M → $3,200M** (~$1.07B drop); owned ICE beds **25% → 20%**, idle **10% → 11%** (sold sites were **active ICE**, not idle) — `@sources/corecivic-investor-deck-proforma-2026-07.md`. CEO Swindle: **Otay ~$371k/bed, Cal City ~$286k/bed, blended ~$329k** `[CONFIRMED]`. **Jul 7 update:** Benchmark PT **$36 → $41** (Buy) on realized upside; **$600M proceeds → debt reduction → leverage <2:1 → unrestricted share repurchases unlocked** (zero net debt; mgmt reportedly buying back); DHS committed to **≥10 turnkey facilities**; per-bed vs **~$250k national new-build** — `@sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md`, `@sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md`. Buyback unlock is the **repurchase-over-debt** trigger the REIT event-study literature ties to **positive** returns (absent on Jul 6). **Q2 2026 earnings: release Aug 5 (after close); call Aug 6, 11:00 a.m. ET** — first buyback-pace print `[CONFIRMED]`. **Warren letter (May 27, 2026)** — program-wide optics risk, GEO-weighted `[CONFIRMED]`. Full scorecard: @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md.
 
 **California commissary / SB 941 risk (Jul 2026):** detainees at California City (CoreCivic) and Golden State Annex (GEO) launched a commissary boycott over alleged markups; SB 941 would cap private-detention commissary markups at **35%** above vendor cost and had moved through the CA Senate / Assembly Public Safety with unanimous support. Thesis read: reinforces California headline / state-regulatory pressure; does **not** prove a turnkey sale.
 
