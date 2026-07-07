@@ -1,0 +1,46 @@
+{
+  "updated_at": "2026-07-07T17:41:54.623848+00:00",
+  "verified_predicates": [
+    "folds_premium_bb_defend",
+    "opens_trash_sb_hu",
+    "calls_off_dominated_broadway_vs_shove"
+  ],
+  "detail": {
+    "folds_premium_bb_defend": {
+      "name": "folds_premium_bb_defend",
+      "description": "Hero folds AA/KK/QQ in BB vs a minraise (must never fold premium).",
+      "applicable_spots": 2,
+      "fired_spots": [],
+      "verified": true,
+      "tags": [
+        "preflop",
+        "bb-defend"
+      ],
+      "invented_by": "advent-llm-proposed"
+    },
+    "opens_trash_sb_hu": {
+      "name": "opens_trash_sb_hu",
+      "description": "Hero opens (raises) obvious trash offsuit from SB/BTN first-in.",
+      "applicable_spots": 2,
+      "fired_spots": [],
+      "verified": true,
+      "tags": [
+        "preflop",
+        "open"
+      ],
+      "invented_by": "advent-llm-proposed"
+    },
+    "calls_off_dominated_broadway_vs_shove": {
+      "name": "calls_off_dominated_broadway_vs_shove",
+      "description": "Hero calls/jams dominated offsuit broadway vs a stack-off shove.",
+      "applicable_spots": 12,
+      "fired_spots": [],
+      "verified": true,
+      "tags": [
+        "preflop",
+        "stack-off"
+      ],
+      "invented_by": "advent-llm-proposed"
+    }
+  }
+}
