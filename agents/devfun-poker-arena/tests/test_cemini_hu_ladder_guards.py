@@ -29,6 +29,9 @@ def test_jj_set_vulnerable_on_straight_runout():
     assert _hero_set_vulnerable_on_four_straight(hole, board) is True
     hole_aa = ["As", "Ad"]
     assert _hero_set_vulnerable_on_four_straight(hole_aa, board) is False
+    hole_qq = ["Qs", "Qd"]
+    board_qjt = ["Qh", "Jc", "Td", "8s", "2c"]
+    assert _hero_set_vulnerable_on_four_straight(hole_qq, board_qjt) is False
 
 
 def test_four_flush_board_detect():

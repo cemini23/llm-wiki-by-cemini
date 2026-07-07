@@ -142,9 +142,19 @@ def _require_symbols(path: Path, names: frozenset[str]) -> list[str]:
 
 
 def _run_ruff(paths: list[Path]) -> tuple[bool, str]:
+    import os
+
     ruff = shutil.which("ruff")
+    require = os.environ.get("CEMINI_SUBSTRATE_REQUIRE_RUFF", "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+        "on",
+    )
     if not ruff:
-        return True, "ruff not installed — skipped (install ruff for stricter substrate)"
+        if require:
+            return False, "ruff required (CEMINI_SUBSTRATE_REQUIRE_RUFF) but not on PATH"
+        return True, "ruff not installed — skipped (set CEMINI_SUBSTRATE_REQUIRE_RUFF=1 to enforce)"
     cmd = [ruff, "check", "--select", "E9,F63,F7,F82", *[str(p) for p in paths]]
     proc = subprocess.run(cmd, capture_output=True, text=True, cwd=ROOT)
     out = (proc.stdout or "") + (proc.stderr or "")

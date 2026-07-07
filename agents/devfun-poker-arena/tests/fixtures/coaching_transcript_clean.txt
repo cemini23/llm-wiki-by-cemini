@@ -1,0 +1,6 @@
+In heads-up no limit, we open the small blind around 2.5x with a wide range.
+The big blind should defend about 40 percent versus a min-raise.
+On the flop we c-bet small about 33 percent pot with range advantage.
+When facing a check-raise, we sometimes fold middle pair without a draw.
+River overbet bluffs are rare — frequency maybe 15 percent in these spots.
+We never limp first in from the button in this structure.

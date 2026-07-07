@@ -6,6 +6,8 @@
 
 K148 **Extract** — steal `bradautomates/claude-video` (MIT, ~4.8k★) pattern for hand-history / coaching video → structured heuristics for `decide()`. Untrusted transcript immunization required.
 
+**Shipped (2026-07-07):** `scripts/coaching_video_extract.py`, `scripts/sanitize_untrusted_text.py`, `scripts/run_coaching_extract_gate.sh`, `references/coaching-video-extract.md`. Tests: `tests/test_k148_coaching_extract.py`.
+
 ## Body
 
 Read wiki first:

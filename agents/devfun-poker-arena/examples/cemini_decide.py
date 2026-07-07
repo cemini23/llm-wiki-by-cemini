@@ -3863,12 +3863,15 @@ def _board_four_in_straight_window(board: list[str]) -> bool:
 
 
 def _hero_set_vulnerable_on_four_straight(hole: list[str], board: list[str]) -> bool:
-    """Pocket set when board completes obvious straights — JJ on 9-J-5-T-8."""
+    """Pocket set on 4-in-straight window — fold JJ and below; QQ+ and AA call (ladder R3)."""
     if not _hero_pocket_set(hole, board) or not _board_four_in_straight_window(board):
         return False
     hc = _hand_class(hole) if hole else ""
     if hc == "AA":
         return False
+    if len(hc) == 2 and hc[0] == hc[1]:
+        if _RANKS.index(hc[0]) >= _RANKS.index("Q"):
+            return False
     return True
 
 

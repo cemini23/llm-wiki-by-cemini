@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Pre-deploy gate for cemini Playground / tournament seasons.
 #
+# K148 cognitive security: regression spots + pytest gate deploy; LLM review is advisory only.
 # Run before rsync to prod or after any decide() / HUD change:
 #   ./scripts/cemini_preflight.sh
 #   ./scripts/cemini_preflight.sh --full   # slower self-play audit with --gate

@@ -6,6 +6,8 @@
 
 K148 steals: **constraint substrate** (2607.02389) for auditable agent code; **cognitive security** literacy (2606.30587); **Ganzfried QP** exact-NE anchor (2509.25618) — theory only.
 
+**Shipped (2026-07-07):** `run_substrate_gate.sh` now sets `CEMINI_SUBSTRATE_REQUIRE_RUFF=1` (ruff E9/F* required). `references/cognitive-security-deploy.md` + `references/ganzfried-qp-ne.md`. Builds on K146 `docs_cli.py` gate wired in `run_hu_sandbox_gate.sh`.
+
 ## Body
 
 ### Constraint substrate (02389) — P0 adoption
