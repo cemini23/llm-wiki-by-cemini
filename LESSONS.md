@@ -6,6 +6,18 @@ Newest entries on top.
 
 ---
 
+## 2026-07-07 — Continuous Arena bots: deploy once, never on a timer (`--replace` wipes the season)
+
+The Poker Arena Researcher bot is **continuous / unlimited** (`pvp.continuous=true`, `handLimit="unlimited"`, never self-finishes). The dev.fun guide states plainly: *"one active bot per competition; `--replace` discards unfinished PvP work; leaderboard ranks the **best finalized season**."* We had a `systemd` timer (`cemini-researcher-sandbox-submit.timer`) firing **4×/day** with pin `replace:true`, so it ran `--replace` **3×/day until it hit `sandbox_daily_limit`** — **discarding the in-flight season every 6 hours.** The bot never accumulated a real sample; live TrueSkill sat at `mu=-50` (losing). We initially misread repeated `sandbox_internal_error` on manual re-submits as an Arena outage — the real problem was our own resubmit-thrash pattern plus a genuinely underwater strategy.
+
+**Why it hid:** each `--replace` returned `Queued`/`OK` so logs looked healthy; the damage (season reset) was invisible unless you polled the `pvp` sub-object (`completedHands`, `continuous`, `finishedAt`), not the top-level bench fields (`5/5 Succeeded`). `sandbox_daily_limit` is a **distinct** error code — if you see `sandbox_internal_error` with `completedHands: null`, that's Arena bench infra failing to start, **not** rate limiting.
+
+**Fix shipped:** timer stopped + `disable`d (removed from `timers.target.wants`); pin `replace:false` with a documented `autoSubmitTimer: DISABLED` note. Deploy is now **event-driven**: one `submit_sandbox_pvp.py --build --replace` per genuinely-new version, then leave it to play a full season.
+
+*Apply:* For any **continuous** ladder/Arena entrant — (1) **never** schedule recurring `--replace`; deploy once per new version and let the season finalize. (2) Judge health from the `pvp` sub-object, not the bench result. (3) Distinguish `sandbox_daily_limit` (quota) from `sandbox_internal_error`+`completedHands:null` (platform bench) from an actual agent bug. (4) A recurring resubmit timer only makes sense for **finite-match** competitions where you must re-enter to keep playing.
+
+---
+
 ## 2026-06-14 — Librarian deleted: laptop wiki canon, prod+egress only
 
 `cemini-librarian` removed after Lane A / prod-first decision — trading does not need 24/7 kb-server. **Fleet:** `cemini-prod` + `cemini-egress-fi` only. **Canon:** laptop `wiki/` git + `.local/archives/research/`. **Broken until restored:** lazy-tool `kb_search`, stash MCP, Arctic on server, hourly wiki sync.
