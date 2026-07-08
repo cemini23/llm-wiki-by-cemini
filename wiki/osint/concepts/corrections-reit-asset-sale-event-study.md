@@ -16,6 +16,7 @@ related:
   - sources/corecivic-investor-deck-proforma-2026-07.md
   - sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
+  - concepts/government-single-buyer-asset-rerating.md
 maturity: draft
 created: 2026-07-06
 updated: 2026-07-06
@@ -35,6 +36,7 @@ updated: 2026-07-06
 - @sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md — Jul 7 sponsored per-bed validation
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — site list + probabilities
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — GEO investigative frame
+- @concepts/government-single-buyer-asset-rerating.md — cross-sector playbook this instance seeds
 
 ## Raw Concept
 

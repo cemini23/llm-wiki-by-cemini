@@ -318,11 +318,20 @@ vendor_lanes:
       - Winn Correctional Center ICE jobs
       - Winnfield Louisiana detention hiring
       - LaSalle ICE Processing Center jobs
+  - id: target_hospitality
+    label: Target Hospitality — ICE/HHS modular housing (gov-asset-rerate tier A)
+    search_terms:
+      - Target Hospitality Dilley jobs
+      - Target Hospitality Pecos family residential
+      - Target Hospitality government hospitality operations
+      - South Texas Family Residential Center hiring
+    note: "Cross-thesis (gov-asset-rerate). Closest CXW/GEO operational analog; hiring surge at Dilley/Pecos = family-residential reactivation signal."
 
 event_watch:
   - "8-K Item 1.01 / 2.01 facility-sale disclosure (confirmation/falsifier, not alpha source)"
-  - "County recorder grantor/grantee hits for GEO/CoreCivic to United States/DHS/ICE"
-  - "SAM.gov/USAspending appraisal, escrow, survey, environmental, or title services tied to named facilities"
+  - "SEC EDGAR full-text (efts.sec.gov) coincident catch: 'turnkey' / 'definitive agreement' / 'sale of facility' — highest-value cheap lane (see gov-asset-rerate/watchlist.yaml)"
+  - "County recorder grantor/grantee hits for GEO/CoreCivic to United States/DHS/ICE (LAGGING — recorder is falsifier, not alpha; see government-single-buyer-asset-rerating.md dead-end)"
+  - "SAM.gov/USAspending appraisal, escrow, survey, environmental, or title services tied to named facilities (EARLIEST lane — build next)"
   - "Pre-disclosure signals: title/escrow/appraisal vendors, local agenda items, recruiter feed churn, and federal-side staffing/vendor backfill"
   - "Q2 earnings sale vs contract-extension language"
   - "ODO/OPR/AB103/monitor reports, especially California City, Otay, Aurora, Tacoma"

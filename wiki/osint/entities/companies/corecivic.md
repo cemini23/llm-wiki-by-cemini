@@ -11,6 +11,7 @@ related:
   - concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md
   - concepts/corrections-reit-asset-sale-event-study.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
+  - concepts/government-single-buyer-asset-rerating.md
   - entities/companies/geo-group.md
   - meta/ice-facility-jobs-cadence.md
   - sources/ca-doj-immigration-detention-2026-ab103.md
@@ -34,6 +35,7 @@ updated: 2026-07-07
 - @entities/facilities/florence-az-detention-cluster.md — CAFCC vs federal Florence SPC (Arizona)
 - @concepts/cxw-california-city-ice-turnkey-research-2026-06-29.md — June 2026 OSINT synthesis
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — parallel GEO turnkey thesis
+- @concepts/government-single-buyer-asset-rerating.md — cross-sector generalization of the CXW template
 - @entities/companies/geo-group.md — peer operator in ICE turnkey discussions
 - @meta/ice-facility-jobs-cadence.md — recurring CXW/GEO jobs anomaly monitor
 - @sources/ca-doj-immigration-detention-2026-ab103.md — May 2026 AB 103 overcrowding primary (Otay, Cal City)

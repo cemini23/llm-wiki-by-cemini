@@ -1,0 +1,49 @@
+# Government single-buyer asset re-rating — SEC EDGAR full-text watcher
+# Package: scripts/intel/monitors/edgar_fulltext.py
+# Entrypoint: python3 scripts/gov_asset_edgar_monitor.py --thesis gov-asset-rerate
+# Reports: .local/reports/gov-asset-edgar/YYYY-MM-DD-edgar-sweep.md
+# Concept: wiki/concepts/government-single-buyer-asset-rerating.md
+#
+# Coincident (day-of) lane: catches an 8-K the day it files. Would have flagged
+# CoreCivic's Jul 6 turnkey 8-K same-day (recorder lane never did — see concept
+# page dead-end). Runs against efts.sec.gov (no key; SEC UA policy respected).
+
+settings:
+  lookback_days: 3
+  forms:
+    - 8-K
+    - 8-K/A
+    - 10-Q
+    - 10-K
+  alert_on_new: true
+
+# Exact-phrase queries (each wrapped in quotes by the monitor).
+query_terms:
+  - turnkey
+  - definitive agreement
+  - purchase and sale agreement
+  - sale of facility
+  - asset purchase agreement
+
+# Optional filter — restrict hits to watched filers. Empty = all filers.
+# CIKs are leading-zero-insensitive. Names match as case-insensitive substrings
+# against EDGAR display_names ("CoreCivic, Inc. (CXW)").
+watch_ciks:
+  - "1070985"   # CoreCivic (CXW)
+  - "923796"    # GEO Group (GEO)
+watch_names:
+  - CoreCivic
+  - GEO Group
+  - Target Hospitality
+  - MP Materials
+  - USA Rare Earth
+  - Perpetua
+  - Lithium Americas
+  - Centrus
+  - Palantir
+  - Easterly Government
+  - Postal Realty
+
+# NOTE: CIKs above are best-effort and flagged for verification.
+# [NEEDS VERIFICATION 2026-07-07] confirm CoreCivic/GEO CIKs via
+# https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=corecivic

@@ -3,6 +3,21 @@
 updated: 2026-07-06
 ---
 
+## [2026-07-07] concept | Government single-buyer asset re-rating — cross-sector playbook + monitor wiring
+
+- **New concept:** `@concepts/government-single-buyer-asset-rerating.md` — generalizes CXW/GEO into a 4-ingredient screen; candidate tiers (TH, GEO / MP, USAR, PPTA, LAC, LEU, PLTR / DEA, PSTL); monitor-lane map ranked by lead time
+- **Recorder-miss lesson `[CONFIRMED]`:** monitor never fired on Jul 6 — (1) no LaunchAgent installed (last report 2026-07-02), (2) Cal City manual-only + Otay Akamai-WAF blind spots, (3) deed recording lags 8-K. Recorder re-classed as **falsifier, not alpha**; prioritize EDGAR full-text + SAM.gov lanes
+- **Config wiring:** new `config/theses/gov-asset-rerate/watchlist.yaml`; added Target Hospitality vendor lane + EDGAR/SAM event_watch notes to `config/theses/ice-turnkey/jobs.yaml` (YAML validated, jobs tests 6/6 pass)
+- **Backlinks:** corecivic, geo-group, pltr, corrections-reit event study; index + log
+
+### build (same day) — EDGAR full-text runner + multi-thesis paths
+
+- **Parameterized thesis paths:** `scripts/intel/paths.py` now reads `CEMINI_THESIS_ID` (default `ice-turnkey`) + per-call `thesis_id=` — one monitor codebase serves multiple theses without forking; backward compatible
+- **New monitor:** `scripts/intel/monitors/edgar_fulltext.py` + entrypoint `scripts/gov_asset_edgar_monitor.py` + `scripts/run_gov_asset_edgar_monitor.sh` — SEC EDGAR full-text coincident (day-of) 8-K catch; config `config/theses/gov-asset-rerate/edgar-fulltext.yaml`
+- **Validated live** against efts.sec.gov (22 "turnkey" 8-Ks in a June–July window); **8 new unit + offline-lifecycle tests** (`scripts/tests/test_edgar_fulltext_monitor.py`), monitor suite 26/26 pass
+- **Recorder lesson applied:** EDGAR = coincident lane that would have caught CXW Jul 6 same-day; recorder stays falsifier. Next build: SAM.gov/USASpending early-diligence lane
+- **Pre-existing unrelated failure:** `test_agent_reach_wrapper.py::test_rejects_duplicate_content_fixture` (untouched module; not a regression; CI runs wiki_lint only)
+
 ## [2026-07-07] correction | CXW use-of-proceeds slide — buyback is "under evaluation," not committed
 
 - **Slide (deck p.4):** proceeds split **3 ways** — debt reduction (revolver $270M + $108M + $100M term loans + $238M 4.75% notes due Oct 2027), growth acquisitions (Clinical Solutions Pharmacy comp), return of capital

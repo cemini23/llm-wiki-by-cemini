@@ -13,10 +13,11 @@ related:
   - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
   - sources/zacks-scr-cxw-marin-2026-07-06.md
   - concepts/geo-ice-turnkey-acquisition-thesis.md
+  - concepts/government-single-buyer-asset-rerating.md
   - meta/ice-facility-jobs-cadence.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-06
+updated: 2026-07-07
 ---
 
 ## Relations
@@ -27,6 +28,7 @@ updated: 2026-07-06
 - @sources/geo-group-ice-turnkey-investigation-2026-04-09.md — April 2026 investigative brief cluster
 - @sources/ca-doj-immigration-detention-2026-ab103.md — May 2026 AB 103 overcrowding/deaths primary
 - @concepts/geo-ice-turnkey-acquisition-thesis.md — synthesized open-source thesis
+- @concepts/government-single-buyer-asset-rerating.md — cross-sector generalization (GEO = tier-A analog)
 - @meta/ice-facility-jobs-cadence.md — recurring GEO/CXW jobs anomaly monitor
 - @sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md — Northland PT $40 / H2 active
 - @sources/zacks-scr-cxw-marin-2026-07-06.md — CXW sale read-through / peer comp

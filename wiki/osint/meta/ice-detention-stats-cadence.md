@@ -10,9 +10,10 @@ related:
   - entities/facilities/florence-az-detention-cluster.md
   - sources/ice-ja-26-0143-first-american-escrow-2026.md
   - sources/ca-doj-immigration-detention-2026-ab103.md
+  - concepts/government-single-buyer-asset-rerating.md
 maturity: draft
 created: 2026-07-04
-updated: 2026-07-05
+updated: 2026-07-07
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-07-05
 - @entities/facilities/florence-az-detention-cluster.md — escrow J&A Florence disambiguation
 - @sources/ice-ja-26-0143-first-american-escrow-2026.md — First American title/escrow J&A primary source
 - @sources/ca-doj-immigration-detention-2026-ab103.md — CA DOJ point-in-time counts vs ICE ADP/gtd min
+- @concepts/government-single-buyer-asset-rerating.md — utilization = weeks–months signal lane in the cross-sector monitor map
 
 ## Narrative
 

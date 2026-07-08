@@ -1,0 +1,123 @@
+# Government single-buyer asset re-rating — cross-sector watchlist
+# Concept: wiki/concepts/government-single-buyer-asset-rerating.md
+#
+# STATUS (2026-07-07): thesis is now runnable.
+#   - paths.py THESIS_ID is parameterized (CEMINI_THESIS_ID env / thesis_id= arg).
+#   - edgar_fulltext lane BUILT: scripts/intel/monitors/edgar_fulltext.py
+#     (config: edgar-fulltext.yaml; run: scripts/gov_asset_edgar_monitor.py).
+#   - sam_gov / defense_doe lanes: still specs (not built) — next build.
+#   This file remains the master candidate/ticker list; the EDGAR runner reads
+#   edgar-fulltext.yaml, not this file.
+
+thesis_id: gov-asset-rerate
+
+# Ranked by lead time — build top-down.
+lanes:
+  edgar_fulltext:
+    status: built           # 2026-07-07 — scripts/intel/monitors/edgar_fulltext.py
+    priority: 1
+    lead_time: coincident   # day-of 8-K
+    source: https://efts.sec.gov/LATEST/search-index
+    config: config/theses/gov-asset-rerate/edgar-fulltext.yaml
+    run: python3 scripts/gov_asset_edgar_monitor.py --thesis gov-asset-rerate --notify
+    note: "Cheapest coincident catch; would have flagged CXW on Jul 6 same-day. Live-validated 2026-07-07."
+
+  sam_gov:
+    status: not_built
+    priority: 2
+    lead_time: earliest     # pre-deal diligence
+    sources:
+      - https://sam.gov/search
+      - https://www.usaspending.gov/search
+    signal_terms:
+      - appraisal
+      - escrow
+      - title services
+      - environmental site assessment
+      - survey
+      - "justification and approval"
+    note: "Pre-close diligence vendors tied to named assets. J&A precedent: ice-ja-26-0143."
+
+  defense_doe:
+    status: not_built
+    priority: 3
+    lead_time: days_weeks
+    sources:
+      - https://www.defense.gov/News/Contracts/
+      - https://www.federalregister.gov/
+    signal_terms:
+      - "Defense Production Act"
+      - "Title III"
+      - offtake
+      - "price floor"
+      - "strategic reserve"
+    note: "Minerals/uranium re-rate catalysts."
+
+# Candidate tickers by tier (see concept page table).
+watch:
+  tier_a_direct:
+    - ticker: TH
+      name: Target Hospitality
+      buyer: ICE / HHS / DHS
+      mechanism: family-residential + workforce housing contracts; land + modular assets
+      lanes: [edgar_fulltext, sam_gov, jobs, detention_stats]
+      open_q: "owns vs leases land under ICE/HHS sites? (Dilley/Frio, Pecos/Reeves TX)"
+    - ticker: GEO
+      name: GEO Group
+      buyer: ICE / USMS / BOP
+      mechanism: turnkey facility sale ~$300k/bed; BI Inc electronic monitoring
+      lanes: [edgar_fulltext, sam_gov, jobs, detention_stats, recorder]
+      note: "already covered by ice-turnkey thesis configs"
+
+  tier_b_cross_sector:
+    - ticker: MP
+      name: MP Materials
+      buyer: DoD / DOE
+      mechanism: price floor + offtake + equity stake (DPA Title III)
+      lanes: [edgar_fulltext, defense_doe]
+      confidence: NEEDS_VERIFICATION_2026-07-07
+    - ticker: USAR
+      name: USA Rare Earth
+      buyer: DoD / DOE
+      mechanism: offtake / DPA award
+      lanes: [edgar_fulltext, defense_doe]
+      confidence: NEEDS_VERIFICATION_2026-07-07
+    - ticker: PPTA
+      name: Perpetua Resources
+      buyer: DoD (antimony)
+      mechanism: DPA Title III + EXIM financing
+      lanes: [edgar_fulltext, defense_doe]
+      confidence: NEEDS_VERIFICATION_2026-07-07
+    - ticker: LAC
+      name: Lithium Americas
+      buyer: DOE
+      mechanism: DOE loan / offtake
+      lanes: [edgar_fulltext, defense_doe]
+      confidence: NEEDS_VERIFICATION_2026-07-07
+    - ticker: LEU
+      name: Centrus Energy
+      buyer: DOE
+      mechanism: HALEU/LEU enrichment offtake; strategic reserve
+      lanes: [edgar_fulltext, defense_doe]
+      confidence: NEEDS_VERIFICATION_2026-07-07
+    - ticker: PLTR
+      name: Palantir
+      buyer: DHS / CBP / DoD
+      mechanism: ImmigrationOS / data-platform awards (software multiple, not hard asset)
+      lanes: [edgar_fulltext, sam_gov]
+      note: "see wiki/entities/tickers/pltr.md"
+
+  tier_c_counter_case:
+    - ticker: DEA
+      name: Easterly Government Properties
+      buyer: GSA
+      mechanism: gov buys leased buildings -> asset re-rate
+      lanes: [edgar_fulltext]
+      counter_risk: "DOGE lease terminations cut the other way"
+      confidence: TENTATIVE
+    - ticker: PSTL
+      name: Postal Realty Trust
+      buyer: USPS
+      mechanism: gov-tenant asset value vs policy
+      lanes: [edgar_fulltext]
+      confidence: TENTATIVE

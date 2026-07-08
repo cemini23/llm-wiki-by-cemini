@@ -10,9 +10,10 @@ related:
   - entities/companies/corecivic.md
   - entities/companies/geo-group.md
   - meta/ice-detention-stats-cadence.md
+  - concepts/government-single-buyer-asset-rerating.md
 maturity: draft
 created: 2026-07-04
-updated: 2026-07-04
+updated: 2026-07-07
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-07-04
 - @entities/companies/corecivic.md — CXW operator
 - @entities/companies/geo-group.md — GEO operator
 - @meta/ice-detention-stats-cadence.md — paired ICE biweekly occupancy / publish-gap lane
+- @concepts/government-single-buyer-asset-rerating.md — jobs = weeks-lead signal lane in the cross-sector monitor map
 
 ## Narrative
 
