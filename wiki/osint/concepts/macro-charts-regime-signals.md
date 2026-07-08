@@ -4,6 +4,7 @@ type: concept
 tags: [concept, macro, regime, newsletter, k90, k144]
 keywords: [macro-charts, risk-on, great-reversal, 2026, regime-shift]
 related:
+  - sources/substack-rss-klement-2026-07-08-eu-p7-trade-blessing.md
   - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
   - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
   - sources/trading-posts-compilation-16-2026-05-31.md
@@ -15,9 +16,11 @@ related:
   - sources/substack-rss-capital-flows-2026-07-05-start-here-capital-flows-a-daily-macro-map-to-ta.md
   - sources/macro-charts-paid-forwards-vincent-2026-05-28-07-07.md
   - sources/substack-rss-capital-flows-2026-07-07-the-ai-compute-playbook.md
+  - sources/macro-charts-paid-forward-chat-2026-07-08.md
+  - sources/substack-rss-capital-flows-2026-07-08-liquidity-event-horizon.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-07
+updated: 2026-07-08
 ---
 
 ## Relations
@@ -47,6 +50,10 @@ Paid-issue sequence (Vincent forwards) reframes tape as multi-asset **reversal s
 | **Dollar / rates / yen** | Crowded DXY top; yields rolling; USDJPY intervention risk | same |
 | **SOX / tech** | Korea chip crash; SOX momentum extreme; correction watch | `@concepts/macro-charts-sox-tech-correction-watch-2026-06.md` |
 | **Q3 2026** | Jul 5 opener — "major opportunity across asset classes"; new macro trade idea flagged | K144 source index |
+
+### Jul 8 2026 (K149 chat)
+
+Subscriber chat: China risk-on vs Korea chip wipe → **Great Reversal** realloc out of concentrated Semis/Memory; Dow ATH while SMH/KOSPI deep drawdowns. WTI tactical long toward $85 gap then fade. `@sources/macro-charts-paid-forward-chat-2026-07-08.md`.
 
 Pair with `@concepts/macro-weather-regime.md` when prod macro stack ingests external newsletter signals — sentiment counterpoint, not primary classifier.
 

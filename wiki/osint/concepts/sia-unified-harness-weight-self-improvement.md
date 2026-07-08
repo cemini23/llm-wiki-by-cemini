@@ -4,6 +4,7 @@ type: concept
 tags: [concept, self-improving-agents, harness-engineering, test-time-training, k84]
 keywords: [sia, feedback-agent, harness-update, weight-update, hexo-labs]
 related:
+  - sources/newsletter-rss-latent-space-2026-07-08-harness-engineering-rsi.md
   - sources/sia-self-improving-ai-harness-weight-updates-2026-05-30.md
   - sources/agentic-harness-engineering.md
   - concepts/skillopt-controllable-skill-optimizer.md
@@ -11,7 +12,7 @@ related:
   - concepts/system-scaling-harness-evaluation.md
 maturity: draft
 created: 2026-05-30
-updated: 2026-06-02
+updated: 2026-07-08
 ---
 
 ## Relations

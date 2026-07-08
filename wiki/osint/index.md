@@ -12,8 +12,26 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **584 canonical stubs** (K148 ingest +1 eval +4 entities +1 concept +3 arxiv/macro sources +RSS upgrades)
+Total: **597 canonical stubs** (K149 ingest — 1 eval + 6 tool entities + 6 RSS/chat sources + concept updates)
 
+
+
+### k149-ingest (14)
+
+- [Klement — globalisation in the 2020s](sources/substack-rss-klement-2026-07-07-globalisation-in-the-2020s.md) — prior-day pair for P7 FTA note. — `rss` [+index-fill]
+- [URL Revenue Evaluation Plan.docx (20 URLs)](sources/eval-url-revenue-plan-20url-2026-07-08.md) — Integrate context-skills + managed-agents pattern; Extract legislators/OpenAPI; castle.io Reject. — `docx` [+k149]
+- [Agent-Skills-for-Context-Engineering](entities/tools/agent-skills-for-context-engineering.md) — MIT Integrate → TipDrop/David + poker + CCC. — entity [+k149]
+- [congress-legislators](entities/tools/congress-legislators.md) — CC0 Extract → PM entity resolve. — entity [+k149]
+- [openapi-directory](entities/tools/openapi-directory.md) — CC0 Extract → MCP harvest. — entity [+k149]
+- [CyberChef](entities/tools/cyberchef.md) — Apache Context. — entity [+k149]
+- [Open MCT](entities/tools/openmct.md) — Watch telemetry. — entity [+k149]
+- [API Umbrella](entities/tools/api-umbrella.md) — MIT Watch → TipDrop. — entity [+k149]
+- [Macro Charts chat Jul 8](sources/macro-charts-paid-forward-chat-2026-07-08.md) — Great Reversal rotation. — source [+k149]
+- [Latent Space — Weng harness RSI](sources/newsletter-rss-latent-space-2026-07-08-harness-engineering-rsi.md) — CCC route. — `rss` [+k149]
+- [Pragmatic Engineer hiring part 3](sources/newsletter-rss-pragmatic-engineer-2026-07-07-tech-jobs-market-part-3.md) — labor context. — `rss` [+k149]
+- [Capital Flows — liquidity event](sources/substack-rss-capital-flows-2026-07-08-liquidity-event-horizon.md) — rotation thesis. — `rss` [+k149]
+- [Event Horizon — Kalshi SDNY PI](sources/substack-rss-event-horizon-2026-07-08-kalshi-sdny-pi-denial.md) — NY sports preemption loss. — `rss` [+k149]
+- [Klement — EU P7 trade](sources/substack-rss-klement-2026-07-08-eu-p7-trade-blessing.md) — macro FTA sim. — `rss` [+k149]
 
 ### k148-ingest (12)
 
@@ -1662,6 +1680,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Agent Authorization Stack — Five-Layer Architecture](concepts/agent-authorization-stack.md) — K19+K20+K22+K24+K25 cross-cluster synthesis. Five-layer authorization architecture: Nomotic AI (framework) → Reasoning Safety Monitor (detection) → SafeHarness (harness-internal monitoring) → SAE (enforcement) → ParlayMarket/RFQ trilemma (market-design constraints). Each layer independently verifiable; composition closes the gap from governance philosophy to market-structure constraint. IP-sale asset: demonstrates architectural depth beyond any single paper. — concept, authorization, governance, execution-safety, reasoning-safety, agent-security, cross-cluster-synthesis
 - [LLM List-wise Alignment — Bayesian Ranking over Listwise Outputs](concepts/llm-listwise-alignment.md) — `[DRAFT 2026-05-07]` K33 ingest. Concept hub for BLADE methodology + 5 Cemini application surfaces (ticker watchlist re-ranking, news/source ranking, Conductor routing, brief screening, strategy ensemble selection). Diagnoses two failure modes (Indiscriminate Supervision + Gradient Decay) of BoN-style listwise rewards; specifies the Bayesian fix (prior over latent permutations × relevance-gap-scaled likelihood). — concept, ml-methods, listwise-alignment, ranking, conductor-relevant
 - [Reviewer Agent — Inference-Time Feedback for Tool-Calling](concepts/reviewer-agent-inference-time-feedback.md) — `[DRAFT 2026-05-11]` K37 ingest from Apple Reinforced Agent paper. Reviewer-agent gates provisional tool calls pre-execution. Helpfulness-Harmfulness metric framework. Cemini integration: DeepSeek-R1 reviewer + DeepSeek-V3 base; selective-trigger gating on side-effecting tools (place_order, withdraw) to recover single-turn latency. — concept, agent-architecture, tool-calling, inference-time-feedback, conductor-relevant
+- [Reviewer passive-injection corpus — K37 context bundle](concepts/reviewer-passive-injection-corpus.md) — `[VALIDATED 2026-07-08]` Manifest-driven `context_bundle.md` for K37 reviewer-agent; **XSP killer** (Robinhood lanes A/B) not Polymarket. Build: `scripts/build_reviewer_context.sh`. Prod wiring DEFERRED. — concept, conductor, reviewer-agent, passive-injection, xsp, k37
 - [Agent Trajectory Triage — Cheap Non-LLM Signals for Sampling](concepts/agent-trajectory-triage-signals.md) — `[DRAFT 2026-05-11]` K37 ingest from DigitalOcean Signals paper. Signal taxonomy: interaction (misalignment/stagnation/disengagement/satisfaction), execution (failure/loop), environment (exhaustion). 82% vs 74% vs 54% informativeness. Cemini integration: Conductor audit JSONL signal-attachment, claude-mem observation prioritization, operator dashboard, future preference-data pipeline. ~200-300 LOC drop-in. — concept, agent-trajectories, triage, observability, signal-taxonomy, conductor-relevant
 - [Verbalized Sampling — Training-Free Diversity Restoration for Aligned LLMs](concepts/verbalized-sampling-llm-diversity.md) — `[DRAFT 2026-05-11]` K39 ingest from Stanford/NEU/WVU VS paper. Mode collapse driver = typicality bias in preference data. Fix: prompt model for distribution-over-N-responses instead of single response. 1.6-2.1× diversity, +6.9 pts synthetic-SFT downstream accuracy, no factuality/safety loss. Third orthogonal training-free Conductor layer (after K37 reviewer-agent + signals). — concept, llm-prompting, diversity, mode-collapse, synthetic-data, training-free, conductor-relevant
 - [RLHF Critic Bias — asymmetric-penalty preference-data failure mode and operational audit primitives](concepts/rlhf-critic-bias.md) — `[DRAFT 2026-05-11]` K40 ingest from Al-Zawahreh self-published April 2026 pre-print. **Sibling preference-data failure mode to VS**: where VS = typicality bias (annotators prefer familiar → mode collapse), Critic Bias = asymmetric-penalty (annotators penalize false endorsement > false criticism → systematic negativity on evals). Both data-level, both survive perfect reward models, both have training-free inference-time mitigations. Operational checklists (5 patterns + 6-cat Rhetorical Catalog + 5-tell Forensic Scorecard + 4 mitigations) port into `scripts/skill_audit.py`; polemical rhetoric (Ghost Committee, Patent Clerk Test) does not. Two-mode preference-data failure taxonomy now: typicality (VS) + asymmetric-penalty (Critic Bias) [+ sycophancy from Sharma 2024 = three-mode]. — concept, rlhf, llm-evaluation, preference-data, structural-bias, audit-primitives, conductor-relevant, methodology

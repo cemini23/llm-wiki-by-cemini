@@ -4,6 +4,7 @@ type: source
 tags: [source, macro-charts, substack, newsletter, k148, email-forward]
 keywords: [macro-charts, time-to-shine, wipeout, sox, gold, vincent-barone]
 related:
+  - sources/macro-charts-paid-forward-chat-2026-07-08.md
   - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
   - concepts/macro-charts-regime-signals.md
   - concepts/macro-charts-gold-reversal-thesis-2026-06.md
@@ -12,7 +13,7 @@ related:
 maturity: draft
 read_status: skimmed
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-08
 ---
 
 ## Relations

@@ -1,7 +1,37 @@
 # Wiki Log
 
-updated: 2026-07-06
+updated: 2026-07-08
 ---
+
+## [2026-07-08] amend | XSP regime policy — not universal GREEN-only entry
+
+- **Operator correction:** dip-buying lanes (esp. Lane B LEAPS) must not be blocked solely on non-GREEN Macro Weather
+- **Updated:** `policy.yaml` (`regime_entry_policy`, reviewer_mandate), `lane_contract.py`, `xsp-lane-trading-framework.md`, `macro-weather-regime.md` § XSP exception, reviewer corpus hub + manifest
+- **Rebuilt:** `context_bundle.md`; brief + tarball re-scp'd to `cemini-prod:/opt/cemini/briefs/`
+
+## [2026-07-08] concept | K37 reviewer passive-injection corpus (Phase 0 pilot)
+
+- **New concept:** `@concepts/reviewer-passive-injection-corpus.md` — manifest-driven context bundle for conductor reviewer-agent; passive injection not kb_search
+- **New artifacts:** `conductor/reviewer/corpus/{manifest.yaml, build_context_bundle.py, context_bundle.md}` + `scripts/build_reviewer_context.sh` + unit test
+- **Backlinks:** reviewer-agent-inference-time-feedback, interaction-native-knowledge-harness, ems-execution-security-gaps; index row
+- **Prod:** DEFERRED — Sprint 5 re-opens when XSP EMS order path is reviewer-wired
+
+## [2026-07-08] amend | K37 reviewer corpus — cross-wiki cybersec + Kelly caps
+
+- **Manifest +3 cybersec:** `igac_intent_scope`, `mcp_execution_invariants`, `agent_guardrail_failure_modes` (`wiki: cybersec`)
+- **Manifest +1 osint:** `kelly_sizing_caps` (fractional Kelly + hard caps)
+- **Build script:** federation `wiki:` alias resolution (`osint` / `cybersec` / `ccc` / `gambling`)
+- **Backlinks:** cybersec-wiki IGAC, MCP invariants, agent-runtime-guardrails → `@osint-wiki/concepts/reviewer-passive-injection-corpus.md`
+
+## [2026-07-08] amend | K37 lane_id contract (pre-prod gate)
+
+- **policy.yaml:** `lane_id_contract` block — 7 lane ids, refuse_only on orders, reviewer mandate
+- **Code:** `conductor/reviewer/lane_contract.py` + tests (deterministic pre-LLM validation)
+- **Hub + xsp-lane-trading-framework:** Pre-prod gates section; lane_id table for v1 automation
+
+- **Manifest:** `polymarket_tool_semantics` → `xsp_lane_framework` + `xsp_regime_gate`
+- **policy.yaml:** Robinhood/XSP EMS tools (`get_regime_status`, `get_playbook_snapshot`, `notify_operator`)
+- **Hub:** `@concepts/reviewer-passive-injection-corpus.md` updated; backlinks on xsp-lane-trading-framework + macro-weather-regime
 
 ## [2026-07-07] concept | Government single-buyer asset re-rating — cross-sector playbook + monitor wiring
 
@@ -8282,3 +8312,39 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Sources** — `san-diego-county-otay-oversight-2026.md` (lawsuit 3:26-cv-01520; inspection Jun 26); `abc10news-cxw-otay-sale-2026-07-06.md`
 - **Backlinks** — `corecivic.md`, `california-city-detention-facility.md`, `ca-doj-immigration-detention-2026-ab103.md`, `corecivic-ice-facility-sale-8k`
 - **Watch** — County inspection **report expected Jul 2026** — potential GEO CA sale headline analog
+
+## [2026-07-08] ingest | K149 — URL Revenue eval (20) + RSS/chat batch
+
+### Inbox (7 → egress)
+
+1. `URL Revenue Evaluation Plan.docx` (20 URLs; sha256 `83d1861d…`)
+2. Macro Charts paid chat forward (Great Reversal / semis rotation)
+3. Latent Space — Weng harness engineering for RSI
+4. Pragmatic Engineer — tech jobs 2026 part 3
+5. Capital Flows — liquidity event horizon
+6. Event Horizon — Kalshi SDNY PI denial
+7. Klement — EU P7 trade blessing
+
+### Eval rollup (Phase-0 `scripts/adopt_k149_phase0.sh`)
+
+| Tier | Action |
+|------|--------|
+| **Integrate** | Agent-Skills-for-Context-Engineering (**MIT**) → TipDrop/David + poker + CCC; Claude managed multi-agent **pattern steal** (lock-in caution) |
+| **Extract** | congress-legislators (**CC0**); openapi-directory (**CC0**); DoorDash hybrid scout/reviewer → CCC |
+| **Watch** | openmct (NOASSERTION); api-umbrella (**MIT**) → TipDrop arch |
+| **Context** | CyberChef (**Apache-2.0**) |
+| **Reject/ops** | castle.io fingerprint-evasion Extract **downgraded** — no spoof brief |
+| **Pass** | 8 (job-search, PhotoGIMP GPL, gov playbooks, CERN, …) |
+
+### Wiki pages
+
+- Sources: eval + 6 newsletter/chat pages
+- Entities: 6 new tools; updates `claude-managed-agents`, `kalshi`
+- Concepts: `macro-charts-regime-signals`, SOX watch, `dcm-state-preemption`, SIA harness, wiki-tooling-evaluation
+
+### Briefs + delivery
+
+- **Prod scp:** `pm-2026-07-08_k149-congress-legislators-entity-resolve.md`, `pm-2026-07-08_k149-kalshi-sdny-pi-denial-ops.md` → cemini-prod
+- **David/TipDrop:** context-engineering adopt + api-umbrella watch
+- **Poker / CeminiDFS / CCC / cyber / gambling:** sibling briefs staged
+

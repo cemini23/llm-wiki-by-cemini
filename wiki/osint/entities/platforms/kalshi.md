@@ -4,6 +4,8 @@ type: entity
 tags: [platform, prediction-markets, exchange, cemini-venue]
 keywords: []
 related:
+  - sources/substack-rss-event-horizon-2026-07-08-kalshi-sdny-pi-denial.md
+  - entities/tools/congress-legislators.md
   - sources/3-10-algorithmic-trading-ip-sale-audit.md
   - sources/3-10-cryptographic-research.md
   - sources/3-17-competition-research.md
@@ -69,7 +71,7 @@ related:
   - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-05
+updated: 2026-07-08
 ---
 
 ## Relations

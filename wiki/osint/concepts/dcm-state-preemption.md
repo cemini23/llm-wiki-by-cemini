@@ -4,6 +4,8 @@ type: concept
 tags: [concept, legal, regulatory, preemption, prediction-markets, cftc, dcm, cemini-leverage]
 keywords: [DCM, exclusive jurisdiction, swap, gaming, preemption, CEA Section 5c(c)(5)(C), Sixth Circuit split, Younger abstention]
 related:
+  - entities/tools/congress-legislators.md
+  - sources/substack-rss-event-horizon-2026-07-08-kalshi-sdny-pi-denial.md
   - sources/3-19-compliance-research.md
   - sources/cftc-anprm-prediction-markets-2026-03-16.md
   - sources/cftc-selig-house-ag-testimony-2026-04-16.md
@@ -13,7 +15,7 @@ related:
   - concepts/ip-sale-readiness.md
 maturity: validated
 created: 2026-04-25
-updated: 2026-04-25
+updated: 2026-07-08
 ---
 
 ## Relations
@@ -56,6 +58,10 @@ The structural tension this concedes:
 
 The MindCast AI public comment (2026-04-17) captures the strategic exposure even pro-CFTC commenters acknowledge:
 > "deference vulnerabilities under *Loper Bright* that could undermine the Commission's preemption cases in the Ninth and Fourth Circuits"
+
+### SDNY Kalshi PI denial (2026-07-08 — K149)
+
+SDNY denied Kalshi's TRO/PI against **New York** gaming enforcement on sports event contracts — finding CEA does **not** preempt NY gambling laws as applied; presumption against preemption in traditional police-power field. Kalshi → **Second Circuit** appeal. Elevates **home-state enforcement risk** even where other circuits/TROs favored DCM jurisdiction. Source: `@sources/substack-rss-event-horizon-2026-07-08-kalshi-sdny-pi-denial.md`.
 
 ### Current circuit alignment (as of 2026-04-25)
 

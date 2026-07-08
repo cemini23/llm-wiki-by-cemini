@@ -4,11 +4,12 @@ type: source
 tags: [source, newsletter-rss, macro, capital-flows, ai, k148]
 keywords: [capital-flows, ai-compute, macro, positioning]
 related:
+  - sources/substack-rss-capital-flows-2026-07-08-liquidity-event-horizon.md
   - sources/substack-rss-capital-flows-2026-07-05-start-here-capital-flows-a-daily-macro-map-to-ta.md
   - concepts/macro-charts-regime-signals.md
 maturity: draft
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-08
 read_status: skimmed
 ---
 

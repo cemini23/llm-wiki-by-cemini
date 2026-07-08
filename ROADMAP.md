@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-07-08 — K149)
+
+- **K149 ingest (2026-07-08)** — `URL Revenue Evaluation Plan.docx` (20 URLs) + Macro Charts chat + Latent Space/PragEng/Capital Flows/Event Horizon/Klement RSS. **Integrate:** Agent-Skills-for-Context-Engineering (MIT) → TipDrop/David + poker + CCC; managed-agents pattern steal (CeminiDFS). **Extract:** congress-legislators + openapi-directory (+ DoorDash hybrid → CCC). **Watch:** api-umbrella (TipDrop), openmct. **Reject/ops:** castle.io evasion. **Briefs:** pm×2 (**scp prod**); TipDrop×2; poker; DFS; CCC×3; cyber/gambling siblings. **Phase-0:** `adopt_k149_phase0.sh`.
+
 ## Current state (2026-07-07 — K148)
 
 - **Poker Arena deploy posture fix (2026-07-07)** — Recurring `cemini-researcher-sandbox-submit.timer` **DISABLED** on prod. Root cause of low TrueSkill: with pin `replace:true`, the timer fired `--replace` **3×/day, discarding the in-flight continuous season each time** (guide: "`--replace` discards unfinished PvP work"). Bot is **continuous/unlimited** — deploy is now **event-driven** (one `--build --replace`, then let it play a full season). K148 deploys via one-shot `at` job 2026-07-08 00:05Z. **NEXT SESSION (priority): investigate why live S1 bot is losing — `trueskillMu=-50`, `adjustedBbPer100=-1.38` over 3000 hands. K148 edge-case fix won't move this; strategy is underwater on S1.**

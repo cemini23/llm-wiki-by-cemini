@@ -4,11 +4,12 @@ type: source
 tags: [source, newsletter-rss, inbox-auto, event-horizon]
 keywords: [rss, newsletter, event-horizon, kalshi, north-carolina, k148]
 related:
+  - sources/substack-rss-event-horizon-2026-07-08-kalshi-sdny-pi-denial.md
   - entities/platforms/kalshi.md
   - gambling-wiki/sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md
 maturity: draft
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-08
 read_status: skimmed
 ---
 

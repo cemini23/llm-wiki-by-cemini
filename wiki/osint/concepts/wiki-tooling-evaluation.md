@@ -4,6 +4,7 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-url-revenue-plan-20url-2026-07-08.md
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/willynikes2-knowledge-base-server.md
   - sources/wastedcode-memex.md
@@ -108,7 +109,7 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-04
+updated: 2026-07-08
 ---
 
 ## Relations

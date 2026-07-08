@@ -4,12 +4,13 @@ type: entity
 tags: [entity, tool, skills, ccc, k141]
 keywords: [agentskills, SKILL.md, progressive disclosure, Apache-2.0]
 related:
+  - entities/tools/agent-skills-for-context-engineering.md
   - sources/eval-multi-wiki-agent-harness-v2-2026-07-03.md
   - entities/tools/agent-skills-eval.md
   - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-07-03
-updated: 2026-07-03
+updated: 2026-07-08
 ---
 
 ## Relations

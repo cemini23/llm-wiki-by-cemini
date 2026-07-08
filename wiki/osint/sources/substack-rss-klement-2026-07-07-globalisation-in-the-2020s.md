@@ -3,14 +3,16 @@ title: Klement on Investing — Globalisation in the 2020s
 type: source
 tags: [source, newsletter-rss, inbox-auto, klement]
 keywords: [rss, newsletter, klement]
-related: []
+related:
+  - sources/substack-rss-klement-2026-07-08-eu-p7-trade-blessing.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-07-08
 read_status: skimmed
 ---
 
 ## Relations
+- @sources/substack-rss-klement-2026-07-08-eu-p7-trade-blessing.md — K149 P7 FTA follow-on
 - @gambling-wiki/sources/substack-rss-klement-2026-07-07-globalisation-in-the-2020s.md  (cross-wiki stub)
 
 ## Raw Concept
