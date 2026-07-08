@@ -14,7 +14,7 @@ The Poker Arena Researcher bot is **continuous / unlimited** (`pvp.continuous=tr
 
 **Fix shipped:** timer stopped + `disable`d (removed from `timers.target.wants`); pin `replace:false` with a documented `autoSubmitTimer: DISABLED` note. Deploy is now **event-driven**: one `submit_sandbox_pvp.py --build --replace` per genuinely-new version, then leave it to play a full season.
 
-*Apply:* For any **continuous** ladder/Arena entrant — (1) **never** schedule recurring `--replace`; deploy once per new version and let the season finalize. (2) Judge health from the `pvp` sub-object, not the bench result. (3) Distinguish `sandbox_daily_limit` (quota) from `sandbox_internal_error`+`completedHands:null` (platform bench) from an actual agent bug. (4) A recurring resubmit timer only makes sense for **finite-match** competitions where you must re-enter to keep playing.
+*Apply:* For any **continuous** ladder/Arena entrant — (1) **never** schedule recurring `--replace`; deploy once per new version and let the season finalize. (2) Judge health from the `pvp` sub-object, not the bench result. (3) Distinguish `sandbox_daily_limit` (quota) from `sandbox_internal_error`+`completedHands:null` (platform bench) from an actual agent bug. (4) A recurring resubmit timer only makes sense for **finite-match** competitions where you must re-enter to keep playing. (5) **Always pass `--competition-id` from pin** (or source `.env` before submit) — `submit_sandbox_pvp.py` defaults to sandbox S1 (`cmqqqs…`), not ladder S1 (`cmr3n8…`); bare `at` jobs do not load `.env` unless the script sources it.
 
 ---
 
