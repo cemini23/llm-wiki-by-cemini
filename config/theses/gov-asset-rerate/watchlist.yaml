@@ -5,7 +5,9 @@
 #   - paths.py THESIS_ID is parameterized (CEMINI_THESIS_ID env / thesis_id= arg).
 #   - edgar_fulltext lane BUILT: scripts/intel/monitors/edgar_fulltext.py
 #     (config: edgar-fulltext.yaml; run: scripts/gov_asset_edgar_monitor.py).
-#   - sam_gov / defense_doe lanes: still specs (not built) — next build.
+#   - sam_gov (procurement) lane BUILT via USASpending: procurement.py
+#     (config: usaspending.yaml; run: scripts/gov_asset_procurement_monitor.py).
+#   - defense_doe lane: still a spec (not built) — next build.
 #   This file remains the master candidate/ticker list; the EDGAR runner reads
 #   edgar-fulltext.yaml, not this file.
 
@@ -23,12 +25,14 @@ lanes:
     note: "Cheapest coincident catch; would have flagged CXW on Jul 6 same-day. Live-validated 2026-07-07."
 
   sam_gov:
-    status: not_built
+    status: built           # 2026-07-07 — scripts/intel/monitors/procurement.py (USASpending; SAM.gov opps need API key)
     priority: 2
     lead_time: earliest     # pre-deal diligence
     sources:
-      - https://sam.gov/search
-      - https://www.usaspending.gov/search
+      - https://api.usaspending.gov/api/v2/search/spending_by_award/
+      - https://sam.gov/search   # opportunities API — needs data.gov key (future)
+    config: config/theses/gov-asset-rerate/usaspending.yaml
+    run: python3 scripts/gov_asset_procurement_monitor.py --thesis gov-asset-rerate --notify
     signal_terms:
       - appraisal
       - escrow
@@ -36,7 +40,7 @@ lanes:
       - environmental site assessment
       - survey
       - "justification and approval"
-    note: "Pre-close diligence vendors tied to named assets. J&A precedent: ice-ja-26-0143."
+    note: "Pre-close diligence vendors tied to named assets. J&A precedent: ice-ja-26-0143. Live 2026-07-07: surfaced First American Title → U.S. ICE awards."
 
   defense_doe:
     status: not_built

@@ -1,0 +1,50 @@
+# Government single-buyer asset re-rating — federal procurement watcher (USASpending)
+# Package: scripts/intel/monitors/procurement.py
+# Entrypoint: python3 scripts/gov_asset_procurement_monitor.py --thesis gov-asset-rerate --notify
+# Reports: .local/reports/gov-asset-procurement/YYYY-MM-DD-procurement-sweep.md
+# Concept: wiki/concepts/government-single-buyer-asset-rerating.md
+#
+# EARLIEST lane: title/escrow/appraisal/environmental spend precedes a facility
+# sale by weeks–months. Keyless (USASpending). SAM.gov opportunities would add
+# pre-award solicitations but needs a data.gov API key — future extension.
+#
+# Signal precedent: First American title/escrow J&A for Florence/Krome/Batavia
+# (@sources/ice-ja-26-0143-first-american-escrow-2026.md).
+
+settings:
+  lookback_days: 120
+  # A/B/C/D = definitive contracts + IDVs (BPA/GWAC excluded to cut noise).
+  award_type_codes: [A, B, C, D]
+  limit: 100
+  alert_on_new: true
+
+# Each query maps to one USASpending request. keywords are OR'd; recipient uses
+# recipient_search_text; agencies filters to awarding toptier agency.
+queries:
+  - id: title_escrow_dhs
+    keywords: [escrow, "title services", "title insurance", "settlement services"]
+    agencies: [Department of Homeland Security]
+  - id: appraisal_realproperty_dhs
+    keywords: [appraisal, "real property", "real estate acquisition"]
+    agencies: [Department of Homeland Security]
+  - id: environmental_site_dhs
+    keywords: ["environmental site assessment", "phase i", "phase ii", "due diligence"]
+    agencies: [Department of Homeland Security]
+  - id: detention_facility_acquisition
+    keywords: ["detention facility", "detention center", "turnkey", "facility acquisition"]
+  - id: first_american_vendor
+    recipient: "First American"
+  - id: gsa_real_property_disposal
+    keywords: ["real property", "property acquisition", "site acquisition"]
+    agencies: [General Services Administration]
+
+# Recipients to star in reports / prioritize alerts (title/escrow/appraisal/RE).
+watch_recipients:
+  - First American
+  - Fidelity National
+  - Old Republic
+  - Stewart Title
+  - CBRE
+  - JLL
+  - Cushman
+  - Newmark

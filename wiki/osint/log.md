@@ -18,6 +18,13 @@ updated: 2026-07-06
 - **Recorder lesson applied:** EDGAR = coincident lane that would have caught CXW Jul 6 same-day; recorder stays falsifier. Next build: SAM.gov/USASpending early-diligence lane
 - **Pre-existing unrelated failure:** `test_agent_reach_wrapper.py::test_rejects_duplicate_content_fixture` (untouched module; not a regression; CI runs wiki_lint only)
 
+### build (same day) — federal procurement (USASpending) early-diligence lane
+
+- **New monitor:** `scripts/intel/monitors/procurement.py` + entrypoint `scripts/gov_asset_procurement_monitor.py` + `scripts/run_gov_asset_procurement_monitor.sh` — keyless USASpending award-search; the **earliest** lane (title/escrow/appraisal/environmental spend precedes a sale by weeks–months); config `config/theses/gov-asset-rerate/usaspending.yaml`
+- **Validated live** against `api.usaspending.gov` — first sweep surfaced **First American Title Insurance → U.S. ICE** awards ($60k 2026-06-02, $25k 2025-10-16), the exact pre-diligence signal shape the recorder missed (J&A precedent ice-ja-26-0143). `[NEEDS VERIFICATION 2026-07-07]` mapping specific awards → specific facilities
+- **10 new unit + offline-lifecycle tests** (`scripts/tests/test_procurement_monitor.py`); full monitor suite 36/36 pass
+- **Lane status:** `sam_gov` lane in `watchlist.yaml` → built (USASpending; SAM.gov opportunities API deferred — needs data.gov key). Concept monitor-map + priority order (2/3) updated. Next: DoD/DOE (defense_doe) lane
+
 ## [2026-07-07] correction | CXW use-of-proceeds slide — buyback is "under evaluation," not committed
 
 - **Slide (deck p.4):** proceeds split **3 ways** — debt reduction (revolver $270M + $108M + $100M term loans + $238M 4.75% notes due Oct 2027), growth acquisitions (Clinical Solutions Pharmacy comp), return of capital

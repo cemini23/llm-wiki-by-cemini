@@ -58,16 +58,20 @@ The lesson from the CXW miss (below): **recorder deed monitors are confirmers, n
 
 | Lane | Lead time | Applies to | Wired today? |
 |------|-----------|------------|--------------|
-| **Federal procurement** — SAM.gov / USASpending: appraisal, escrow, survey, environmental, title-services awards tied to named assets; J&A notices | **Earliest** (pre-deal diligence) | All tiers | **No** — next build; highest-value gap. J&A precedent: @sources/ice-ja-26-0143-first-american-escrow-2026.md |
+| **Federal procurement** — USASpending (keyless) / SAM.gov: appraisal, escrow, survey, environmental, title-services awards tied to named assets; J&A notices | **Earliest** (pre-deal diligence) | All tiers | **Yes (2026-07-07)** — `scripts/intel/monitors/procurement.py`. J&A precedent: @sources/ice-ja-26-0143-first-american-escrow-2026.md |
 | **Jobs / hiring anomaly** — operator careers feeds, vendor backfill | Weeks | detention, modular housing | **Yes** (ICE) — `scripts/intel/monitors/jobs.py` |
 | **Utilization stats** — ICE ADP / capacity; DOE reserve draws | Weeks–months | detention, uranium | **Yes** (ICE) — `scripts/intel/monitors/detention_stats.py` |
 | **DoD/DOE announcements** — defense.gov contracts, Federal Register, DPA Title III | Days–weeks | minerals, uranium, defense | **No** |
 | **SEC EDGAR full-text** — "turnkey", "definitive agreement", "sale of facility" 8-K/8-K Item 1.01/2.01 | **Coincident** (day-of) | all public tickers | **Yes (2026-07-07)** — `scripts/intel/monitors/edgar_fulltext.py` |
 | **County recorder deed index** — grantee = United States | **Lagging** (post-close) | real-asset owners | Partial (ICE) — `scripts/intel/monitors/recorder.py` |
 
-**Priority build order:** (1) ~~SEC EDGAR full-text coincident catch~~ **BUILT 2026-07-07** (`edgar_fulltext.py`; validated live against efts.sec.gov — 22 "turnkey" 8-Ks in a June–July window) → (2) SAM.gov/USASpending early diligence lane → (3) extend jobs/utilization to Tier-A names. Recorder stays as falsifier only.
+**Priority build order:** (1) ~~SEC EDGAR full-text coincident catch~~ **BUILT 2026-07-07** (`edgar_fulltext.py`; validated live against efts.sec.gov — 22 "turnkey" 8-Ks in a June–July window) → (2) ~~SAM.gov/USASpending early diligence lane~~ **BUILT 2026-07-07** (`procurement.py`; validated live — surfaced **First American Title → U.S. ICE** awards $60k 2026-06-02 + $25k 2025-10-16, the exact pre-diligence signal the recorder missed) → (3) extend jobs/utilization to Tier-A names. Recorder stays as falsifier only.
 
-**Multi-thesis plumbing (2026-07-07):** `scripts/intel/paths.py` now resolves the active thesis from `CEMINI_THESIS_ID` (default `ice-turnkey`) or a per-call `thesis_id=`, so one monitor codebase serves `gov-asset-rerate` without forking paths. Run the EDGAR lane: `python3 scripts/gov_asset_edgar_monitor.py --thesis gov-asset-rerate --notify` (config `config/theses/gov-asset-rerate/edgar-fulltext.yaml`).
+**Multi-thesis plumbing (2026-07-07):** `scripts/intel/paths.py` now resolves the active thesis from `CEMINI_THESIS_ID` (default `ice-turnkey`) or a per-call `thesis_id=`, so one monitor codebase serves `gov-asset-rerate` without forking paths. Run the lanes:
+- EDGAR: `python3 scripts/gov_asset_edgar_monitor.py --thesis gov-asset-rerate --notify` (config `edgar-fulltext.yaml`)
+- Procurement: `python3 scripts/gov_asset_procurement_monitor.py --thesis gov-asset-rerate --notify` (config `usaspending.yaml`)
+
+**Live procurement finding (2026-07-07):** the first sweep already returned **First American Title Insurance Company** contracts awarded by **U.S. Immigration and Customs Enforcement** — a title/escrow vendor + ICE combination that is a leading (weeks–months) indicator of facility-acquisition diligence, consistent with the J&A precedent. Worth a standing watch; escalate on **new** ICE-side title/escrow/appraisal awards tied to named GEO/CXW/TH sites. `[NEEDS VERIFICATION 2026-07-07]` tie specific awards to specific facilities.
 
 ### Why the CXW recorder monitor didn't fire `[CONFIRMED 2026-07-07]`
 
