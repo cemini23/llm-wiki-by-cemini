@@ -159,6 +159,22 @@ case "$TABLE_FORMAT" in
     echo "==> K146 substrate gate (docs CLI + AST audit)"
     bash scripts/run_substrate_gate.sh "${BUNDLE_DIR}/substrate"
     run_selfplay_bundle "HU-tight" 2 tight "$BUNDLE_DIR"
+    echo "==> HU TEN wide-passive advisory (K150 ladder nemesis)"
+    mkdir -p "${BUNDLE_DIR}/ten-audit"
+    CEMINI_TABLE_FORMAT=hu CEMINI_GIN_STYLE=1 CEMINI_GIN_STYLE_PREFLOP=1 CEMINI_GIN_V008=1 \
+      CEMINI_S1B_EXPLOIT=1 CEMINI_RESEARCHER_MODE=1 \
+      CEMINI_NEMESIS_EXPLOIT=1 CEMINI_NEMESIS_TIGHT=1 CEMINI_NEMESIS_ARCHETYPE=1 \
+      CEMINI_NEMESIS_WIDE_PASSIVE=1 CEMINI_ISO_PASSIVE_LP=1 \
+      CEMINI_SELFPLAY_VILLAIN_HANDLE=TEN \
+      uv run python examples/selfplay.py \
+        --agent examples/harness_sandbox_agent.py \
+        --hands "$HANDS" --players 2 --opponent ten --seed 42 \
+        --trajectory-out "${BUNDLE_DIR}/ten-audit/selfplay_trajectory.jsonl" \
+        | tee "${BUNDLE_DIR}/ten-audit/summary.txt"
+    ten_bb="$(grep -E 'bb/100' "${BUNDLE_DIR}/ten-audit/summary.txt" | tail -1 || true)"
+    if [[ -n "$ten_bb" ]]; then
+      echo "==> Advisory TEN: ${ten_bb#  } (target ≥0 bb/100 vs wide_passive steal)"
+    fi
     echo "==> HU maniac/lag series audit (400h, 80h/match)"
     mkdir -p "${BUNDLE_DIR}/maniac-audit"
     CEMINI_TABLE_FORMAT=hu CEMINI_GIN_STYLE=1 CEMINI_S1B_EXPLOIT=1 CEMINI_RESEARCHER_MODE=1 \

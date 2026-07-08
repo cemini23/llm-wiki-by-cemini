@@ -43,7 +43,7 @@ K150 ladder nemesis update: **TEN** is our primary scheduler pairing (95/100 rec
 ### Next (not this brief)
 
 1. ~~**Regression spot** — HU BB defend vs wide-passive min-steal / limp line (TEN-shaped).~~ **DONE 2026-07-08** — 8 spots in `hu_regression_spots.py` + `test_k150_ten_hu_spots.py`; also closed gin/S1B **72o-call** leak in `cemini_decide.py`.
-2. **Selfplay villain** — `finale` or custom bot from TEN replay export (`ten-archive/replays.jsonl`, 50 hands).
+2. ~~**Selfplay villain** — `finale` or custom bot from TEN replay export (`ten-archive/replays.jsonl`, 50 hands).~~ **DONE 2026-07-08** — `bot_ten_wide_passive` in `selfplay.BOT_POOL` (`ten` / `ten_wide_passive`), `CEMINI_SELFPLAY_VILLAIN_HANDLE=TEN` tags nemesis seat; HU gate advisory +4.3 bb/100 @ 300h.
 3. **Watchlist** (no seed until H2H evidence): `pokaH01`, `reaper`, `quantarmy-7`.
 4. **Deploy gate** — only after HU gate + new spot green; single `--replace` on ladder comp.
 

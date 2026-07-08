@@ -245,6 +245,54 @@ def bot_jungleman_calldown(table: dict, **_: Any) -> dict:
     return {"action": "fold"} if "fold" in avail else {"action": "call"}
 
 
+def bot_ten_wide_passive(table: dict, **_: Any) -> dict:
+    """TEN ladder S1 shape (K150 export): high VPIP, near-zero PFR, call-down WTSD.
+
+    Arena stats: VPIP 51.6%, PFR ~0, WTSD 86%. Live H2H vs us: uncontested steal pots.
+    Local model: limp/complete often first-in; occasional min-steal; call wide; rarely raise.
+    """
+    allowed = table.get("allowedActions") or {}
+    avail = list(allowed.get("availableActions") or [])
+    call_chips = int(allowed.get("callChips") or 0)
+    pot = int(table.get("potChips") or 0)
+    street = str(table.get("street") or "").lower()
+    bb = int(table.get("bigBlindChips") or 2)
+
+    if call_chips == 0:
+        # First-in / free action: limp or min-steal more than check-fold.
+        if street in ("preflop", "") and "call" in avail:
+            # SB complete vs BB — limp path (PFR≈0).
+            if random.random() < 0.62:
+                return {"action": "call"}
+        if street in ("preflop", "") and "raise" in avail and random.random() < 0.18:
+            rr = allowed.get("raiseRange") or {}
+            lo = int(rr.get("min") or max(bb * 2, 1))
+            hi = int(rr.get("max") or lo)
+            return {"action": "raise", "amount": max(lo, min(lo, hi))}
+        if "bet" in avail and random.random() < 0.22:
+            br = allowed.get("betRange") or {}
+            lo, hi = int(br.get("min") or 1), int(br.get("max") or 1)
+            target = max(lo, min(int(max(pot, 1) * 0.40), hi))
+            return {"action": "bet", "amount": target}
+        if "check" in avail:
+            return {"action": "check"}
+        if "call" in avail:
+            return {"action": "call"}
+        return {"action": "fold"} if "fold" in avail else {"action": "check"}
+
+    # Facing a bet: call down (high WTSD); almost never 3-bet.
+    if "call" in avail:
+        if call_chips <= int(max(pot, 1) * 0.90):
+            return {"action": "call"}
+        if random.random() < 0.78:
+            return {"action": "call"}
+    if "raise" in avail and random.random() < 0.04:
+        rr = allowed.get("raiseRange") or {}
+        lo, hi = int(rr.get("min") or 1), int(rr.get("max") or 1)
+        return {"action": "raise", "amount": max(lo, min(lo, hi))}
+    return {"action": "fold"} if "fold" in avail else {"action": "call"}
+
+
 BOT_POOL = {
     "tight": bot_tight_passive,
     "loose": bot_loose_passive,
@@ -255,6 +303,8 @@ BOT_POOL = {
     "lag": bot_balanced_lag,
     "durrrr_bomb": bot_durrrr_bomb,
     "jungleman_calldown": bot_jungleman_calldown,
+    "ten": bot_ten_wide_passive,
+    "ten_wide_passive": bot_ten_wide_passive,
 }
 
 try:
@@ -323,6 +373,12 @@ def _street_label(state: State) -> str:
     return ("Flop", "Turn", "River")[min(max(n - 3, 0), 2)]
 
 
+def _villain_handle_for_selfplay() -> str:
+    """Optional named nemesis handle for local bots (CEMINI_SELFPLAY_VILLAIN_HANDLE)."""
+    raw = (os.environ.get("CEMINI_SELFPLAY_VILLAIN_HANDLE") or "").strip()
+    return raw or ""
+
+
 def _build_table(state: State, hero_idx: int, table_id: str,
                  starting_stacks: list[int], small_blind: int,
                  big_blind: int,
@@ -341,19 +397,25 @@ def _build_table(state: State, hero_idx: int, table_id: str,
 
     seats = []
     train_tags = _training_seat_archetypes(len(starting_stacks)) if competition_id else None
+    villain_handle = _villain_handle_for_selfplay()
     for i in range(len(starting_stacks)):
         hole = list(state.hole_cards[i]) if i < len(state.hole_cards) else []
         hole_strs = [_arena_card_str(c) for c in hole] if (i == hero_idx and hole) else []
         street_bet = int(bets[i]) if i < len(bets) else 0
+        is_hero = i == hero_idx
+        handle = "hero" if is_hero else (villain_handle or f"bot_{i+1}")
         seat: dict = {
             "seatNumber": i + 1,
-            "agentId": f"local_seat_{i+1}",
-            "agentHandle": "hero" if i == hero_idx else f"bot_{i+1}",
+            "agentId": f"local_seat_{i+1}" if is_hero else (villain_handle or f"local_seat_{i+1}"),
+            "agentHandle": handle,
             "holeCards": hole_strs,
             "stackChips": int(state.stacks[i]),
             "currentBetChips": street_bet,
             "status": "Active",
         }
+        if not is_hero and villain_handle:
+            seat["agentName"] = villain_handle
+            seat["agentId"] = villain_handle
         if train_tags and i != hero_idx:
             seat["trainingArchetype"] = train_tags[i]
         seats.append(seat)
