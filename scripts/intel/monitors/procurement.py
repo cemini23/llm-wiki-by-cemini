@@ -124,6 +124,72 @@ def is_watched_recipient(award: dict[str, Any], watch_recipients: list[str]) -> 
     return any(w.upper() in recipient for w in watch_recipients)
 
 
+def _award_text(award: dict[str, Any]) -> str:
+    return " ".join(
+        str(award.get(field) or "")
+        for field in ("description", "award_type", "recipient", "award_id")
+    ).lower()
+
+
+def is_operator_recipient(award: dict[str, Any], operator_recipients: list[str]) -> bool:
+    if not operator_recipients:
+        return False
+    recipient = (award.get("recipient") or "").upper()
+    return any(op.upper() in recipient for op in operator_recipients)
+
+
+def is_detention_ops_noise(award: dict[str, Any], suppress_patterns: list[str]) -> bool:
+    if not suppress_patterns:
+        return False
+    text = _award_text(award)
+    return any(pattern.lower() in text for pattern in suppress_patterns)
+
+
+def has_diligence_terms(award: dict[str, Any], diligence_terms: list[str]) -> bool:
+    if not diligence_terms:
+        return True
+    text = _award_text(award)
+    return any(term.lower() in text for term in diligence_terms)
+
+
+def is_alertable_award(award: dict[str, Any], config: dict[str, Any], queries_by_id: dict[str, dict[str, Any]]) -> bool:
+    """Return True when an award is thesis-relevant enough to alert on."""
+    settings = config.get("settings", {})
+    watch_recipients = [str(r) for r in config.get("watch_recipients", [])]
+    operator_recipients = [str(r) for r in settings.get("operator_recipients", [])]
+    diligence_terms = [str(t) for t in settings.get("diligence_terms", [])]
+    suppress_patterns = [str(p) for p in settings.get("suppress_description_patterns", [])]
+
+    if is_detention_ops_noise(award, suppress_patterns):
+        return False
+
+    query = queries_by_id.get(str(award.get("query", "")))
+    if query and query.get("require_diligence_terms"):
+        return has_diligence_terms(award, diligence_terms)
+
+    if is_watched_recipient(award, watch_recipients):
+        return True
+
+    if is_operator_recipient(award, operator_recipients):
+        return has_diligence_terms(award, diligence_terms)
+
+    return True
+
+
+def partition_alertable(
+    awards: list[dict[str, Any]], config: dict[str, Any], queries: list[dict[str, Any]]
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    queries_by_id = {str(q.get("id", "")): q for q in queries}
+    alertable: list[dict[str, Any]] = []
+    suppressed: list[dict[str, Any]] = []
+    for award in awards:
+        if is_alertable_award(award, config, queries_by_id):
+            alertable.append(award)
+        else:
+            suppressed.append(award)
+    return alertable, suppressed
+
+
 def dedupe_new(awards: list[dict[str, Any]], seen_ids: set[str]) -> list[dict[str, Any]]:
     new: list[dict[str, Any]] = []
     batch_seen: set[str] = set()
@@ -164,6 +230,7 @@ def render_report(
     queries: list[dict[str, Any]],
     all_awards: list[dict[str, Any]],
     new_awards: list[dict[str, Any]],
+    suppressed_awards: list[dict[str, Any]],
     watch_recipients: list[str],
     errors: list[str],
     first_run: bool,
@@ -184,7 +251,7 @@ def render_report(
     if first_run:
         lines.append("First run: baseline stored (new awards suppressed to avoid backfill spam).")
     elif not new_awards:
-        lines.append("No new matching awards since previous run.")
+        lines.append("No new diligence-relevant awards since previous run.")
     else:
         lines.append("| Start | Amount | Recipient | Agency / sub | Query | Award ID |")
         lines.append("|---|---:|---|---|---|---|")
@@ -194,6 +261,16 @@ def render_report(
             lines.append(
                 f"| {a.get('start_date', '')} | {_fmt_amount(a.get('amount'))} | "
                 f"{a.get('recipient', '')}{star} | {agency} | {a.get('query', '')} | `{a.get('award_id', '')}` |"
+            )
+
+    lines.extend(["", "## Suppressed (detention ops noise)", ""])
+    if not suppressed_awards:
+        lines.append("No new operator detention-services task orders filtered this run.")
+    else:
+        for a in sorted(suppressed_awards, key=lambda r: r.get("start_date", ""), reverse=True)[:15]:
+            lines.append(
+                f"- {a.get('start_date', '')} · {_fmt_amount(a.get('amount'))} · "
+                f"{a.get('recipient', '')} · `{a.get('award_id', '')}` · _{a.get('query', '')}_"
             )
 
     watched = [a for a in all_awards if is_watched_recipient(a, watch_recipients)]
@@ -276,6 +353,7 @@ def run(
         all_awards.extend(awards)
 
     new_awards = dedupe_new(all_awards, seen_ids)
+    alertable_new, suppressed_new = partition_alertable(new_awards, config, queries)
 
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(
@@ -285,7 +363,8 @@ def run(
             enddt=enddt,
             queries=queries,
             all_awards=all_awards,
-            new_awards=new_awards,
+            new_awards=alertable_new,
+            suppressed_awards=suppressed_new,
             watch_recipients=watch_recipients,
             errors=errors,
             first_run=first_run,
@@ -294,8 +373,8 @@ def run(
     )
 
     alerts = 0
-    if notify and new_awards and not first_run and settings.get("alert_on_new", True):
-        alerts = send_alert(new_awards, watch_recipients, report_path)
+    if notify and alertable_new and not first_run and settings.get("alert_on_new", True):
+        alerts = send_alert(alertable_new, watch_recipients, report_path)
 
     write_json(
         state_path,
@@ -303,13 +382,15 @@ def run(
             "last_run": today.isoformat(),
             "seen_ids": sorted(seen_ids | {a["id"] for a in all_awards if a.get("id")}),
             "last_report": str(report_path),
-            "last_new_count": len(new_awards),
+            "last_new_count": len(alertable_new),
+            "last_suppressed_count": len(suppressed_new),
         },
     )
     return {
         "report_path": report_path,
         "all_awards": all_awards,
-        "new_awards": new_awards,
+        "new_awards": alertable_new,
+        "suppressed_awards": suppressed_new,
         "errors": errors,
         "alerts": alerts,
         "first_run": first_run,
@@ -330,6 +411,8 @@ def main() -> int:
     print(f"Report: {result['report_path']}")
     print(f"Awards this window: {len(result['all_awards'])}")
     print(f"New awards: {len(result['new_awards'])}")
+    if result.get("suppressed_awards"):
+        print(f"Suppressed (ops noise): {len(result['suppressed_awards'])}")
     if result["first_run"]:
         print("First run: baseline stored.")
     if result["errors"]:

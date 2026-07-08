@@ -17,6 +17,33 @@ settings:
   award_type_codes: [A, B, C, D]
   limit: 100
   alert_on_new: true
+  # Corrections operators: detention-services task orders are ops spend, not purchase
+  # diligence. Alerts for these recipients require diligence/purchase language.
+  operator_recipients:
+    - CoreCivic
+    - GEO Group
+    - The GEO Group
+  diligence_terms:
+    - escrow
+    - title
+    - appraisal
+    - real property
+    - property acquisition
+    - site acquisition
+    - turnkey
+    - purchase
+    - environmental site
+    - due diligence
+    - settlement
+  # Description phrases that indicate IGSA/detention ops (suppress for alerts + report).
+  suppress_description_patterns:
+    - comprehensive detention
+    - detention and transportation
+    - detention services
+    - housing criminal aliens
+    - housing aliens
+    - housekeeping
+    - security guards and patrol
 
 # Each query maps to one USASpending request. keywords are OR'd; recipient uses
 # recipient_search_text; agencies filters to awarding toptier agency.
@@ -30,8 +57,16 @@ queries:
   - id: environmental_site_dhs
     keywords: ["environmental site assessment", "phase i", "phase ii", "due diligence"]
     agencies: [Department of Homeland Security]
+  # Purchase/diligence only — do NOT keyword on bare "detention center" (matches ops IDCs).
   - id: detention_facility_acquisition
-    keywords: ["detention facility", "detention center", "turnkey", "facility acquisition"]
+    keywords:
+      - "facility acquisition"
+      - "property acquisition"
+      - "real property acquisition"
+      - turnkey
+      - "purchase agreement"
+    agencies: [Department of Homeland Security]
+    require_diligence_terms: true
   - id: first_american_vendor
     recipient: "First American"
   - id: gsa_real_property_disposal
