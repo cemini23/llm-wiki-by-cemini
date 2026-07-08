@@ -6,7 +6,7 @@
 
 K150 ladder nemesis update: **TEN** is our primary scheduler pairing (95/100 recent tables) and crushes us H2H (−218 bb/100) despite ranking 135/174 overall. Arena stats → **`wide_passive`** (51.6% VPIP, 86% WTSD), not linear_aggro. Fix is **nemesis handle seed + wide-passive exploit path**, not a new decide() rewrite.
 
-**Shipped (2026-07-08):** `research/opponents/ten-ladder-s1-profile.json`, `scripts/profile_opponent_style.py`, `ten` added to `nemesis_seed._DEFAULT`, **8 TEN HU regression spots** + gin/S1B **72o trash-fold guard** in `cemini_decide.py`. Prod export: `reports/exports/ten-nemesis-20260708/`. **No deploy/resubmit** until clean season check + gate — let `dcad875c` accumulate.
+**Shipped (2026-07-08):** `research/opponents/ten-ladder-s1-profile.json`, `scripts/profile_opponent_style.py`, `ten` added to `nemesis_seed._DEFAULT`, **8 TEN HU regression spots** + gin/S1B **72o trash-fold guard** in `cemini_decide.py`, `bot_ten_wide_passive` selfplay villain + HU gate advisory. **Deployed** ladder S1 replace → `9f0087af` (bench Succeeded). Let season accumulate — no further replaces.
 
 ## Body
 
