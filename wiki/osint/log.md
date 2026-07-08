@@ -25,6 +25,14 @@ updated: 2026-07-06
 - **10 new unit + offline-lifecycle tests** (`scripts/tests/test_procurement_monitor.py`); full monitor suite 36/36 pass
 - **Lane status:** `sam_gov` lane in `watchlist.yaml` → built (USASpending; SAM.gov opportunities API deferred — needs data.gov key). Concept monitor-map + priority order (2/3) updated. Next: DoD/DOE (defense_doe) lane
 
+### build (same day) — DoD/DOE Federal Register lane + 24/7 prod scheduling
+
+- **New monitor (lane 3/3):** `scripts/intel/monitors/fedreg.py` + entrypoint `scripts/gov_asset_fedreg_monitor.py` + run script — keyless Federal Register API; days–weeks lead time on DPA Title III / offtake / price-floor / strategic-reserve / critical-minerals & uranium notices; config `fedreg.yaml`; aimed at Tier-B (MP, USAR, PPTA, LAC, LEU). Live-validated against `federalregister.gov/api/v1`
+- **Combined runner:** `scripts/run_gov_asset_monitors.sh --notify` runs EDGAR → procurement → fedreg in sequence; a lane failing (transient network) does not abort the others
+- **24/7 prod deploy:** `scripts/install_gov_asset_monitors_prod.sh` stages all three lanes to `/opt/cemini/intel/gov-asset-rerate` + installs systemd `cemini-gov-asset-monitors.{service,timer}` (every 4h, `OnBootSec=15min`, Persistent). Mirrors ICE-turnkey deploy; Discord webhook from `/opt/cemini/.env`; log `/opt/cemini/logs/gov-asset-monitors.log`. **Closes the recorder-miss root cause** (no scheduler installed → now structural)
+- **8 new tests** (`test_fedreg_monitor.py`); full monitor suite **44/44 pass**
+- **All 3 lanes built + scheduled:** watchlist `defense_doe` → built; concept monitor-map + priority order (3/3) + 24/7 scheduling section updated
+
 ## [2026-07-07] correction | CXW use-of-proceeds slide — buyback is "under evaluation," not committed
 
 - **Slide (deck p.4):** proceeds split **3 ways** — debt reduction (revolver $270M + $108M + $100M term loans + $238M 4.75% notes due Oct 2027), growth acquisitions (Clinical Solutions Pharmacy comp), return of capital

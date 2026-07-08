@@ -7,7 +7,10 @@
 #     (config: edgar-fulltext.yaml; run: scripts/gov_asset_edgar_monitor.py).
 #   - sam_gov (procurement) lane BUILT via USASpending: procurement.py
 #     (config: usaspending.yaml; run: scripts/gov_asset_procurement_monitor.py).
-#   - defense_doe lane: still a spec (not built) — next build.
+#   - defense_doe lane BUILT via Federal Register: fedreg.py
+#     (config: fedreg.yaml; run: scripts/gov_asset_fedreg_monitor.py).
+#   - ALL THREE LANES scheduled 24/7 on cemini-prod (systemd timer, every 4h):
+#     scripts/install_gov_asset_monitors_prod.sh → cemini-gov-asset-monitors.timer.
 #   This file remains the master candidate/ticker list; the EDGAR runner reads
 #   edgar-fulltext.yaml, not this file.
 
@@ -43,19 +46,21 @@ lanes:
     note: "Pre-close diligence vendors tied to named assets. J&A precedent: ice-ja-26-0143. Live 2026-07-07: surfaced First American Title → U.S. ICE awards."
 
   defense_doe:
-    status: not_built
+    status: built           # 2026-07-07 — scripts/intel/monitors/fedreg.py (Federal Register API, keyless)
     priority: 3
     lead_time: days_weeks
     sources:
-      - https://www.defense.gov/News/Contracts/
-      - https://www.federalregister.gov/
+      - https://www.federalregister.gov/api/v1/documents.json
+      - https://www.defense.gov/News/Contracts/   # HTML scrape — future extension
+    config: config/theses/gov-asset-rerate/fedreg.yaml
+    run: python3 scripts/gov_asset_fedreg_monitor.py --thesis gov-asset-rerate --notify
     signal_terms:
       - "Defense Production Act"
       - "Title III"
       - offtake
       - "price floor"
       - "strategic reserve"
-    note: "Minerals/uranium re-rate catalysts."
+    note: "Minerals/uranium re-rate catalysts (Tier-B: MP, USAR, PPTA, LAC, LEU). Live-validated 2026-07-07."
 
 # Candidate tickers by tier (see concept page table).
 watch:

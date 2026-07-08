@@ -1,0 +1,49 @@
+# Government single-buyer asset re-rating — DoD/DOE Federal Register watcher
+# Package: scripts/intel/monitors/fedreg.py
+# Entrypoint: python3 scripts/gov_asset_fedreg_monitor.py --thesis gov-asset-rerate --notify
+# Reports: .local/reports/gov-asset-fedreg/YYYY-MM-DD-fedreg-sweep.md
+# Concept: wiki/concepts/government-single-buyer-asset-rerating.md
+#
+# Lane 3 (days–weeks): DPA Title III determinations, offtake / price-floor /
+# strategic-reserve rules, critical-minerals & nuclear-fuel procurement notices.
+# Keyless (Federal Register API). Aimed at Tier-B names: MP, USAR, PPTA, LAC, LEU.
+
+settings:
+  lookback_days: 30
+  per_page: 20
+  alert_on_new: true
+  # Applied to every query unless the query overrides `agencies`.
+  default_agencies:
+    - defense-department
+    - energy-department
+
+# Each query maps to one Federal Register request. `term` is full-text;
+# `agencies` (optional) overrides default_agencies; `type` (optional) filters
+# doc type (Rule, Proposed Rule, Notice, Presidential Document).
+queries:
+  - id: dpa_title_iii
+    term: "Defense Production Act Title III"
+  - id: strategic_reserve
+    term: "strategic reserve stockpile critical minerals"
+  - id: price_floor_offtake
+    term: "price floor offtake agreement"
+  - id: uranium_enrichment
+    term: "uranium enrichment domestic supply"
+    agencies: [energy-department]
+  - id: rare_earth_magnet
+    term: "rare earth magnet domestic production"
+  - id: critical_minerals_procurement
+    term: "critical minerals procurement acquisition"
+
+# Terms to star in reports / prioritize alerts (map to Tier-B watch names).
+watch_terms:
+  - Title III
+  - price floor
+  - offtake
+  - strategic reserve
+  - rare earth
+  - uranium
+  - enrichment
+  - lithium
+  - antimony
+  - gallium
