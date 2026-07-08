@@ -38,6 +38,8 @@ _DEFAULT = (
     "arjun_c",
     "rvkkv1",
     "damon",
+    # K150 ladder S1 H2H nemesis — export 2026-07-08 (wide_passive, 95% recent pairing)
+    "ten",
 )
 _DEFAULT_PREFIXES = (
     "v12_",
