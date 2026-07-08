@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-07-08 — K150)
+
+- **K150 ingest (2026-07-08)** — 4 RSS (Pragmatic AMA, SparkToro API, Moontower bullshit-tax, Outlier CXW postmortem). **No eval docx / no Phase-0.** **Briefs:** xsp moontower calibration (**scp prod**); CCC pragmatic AMA; seo-wiki SparkToro API eval (cross-route); CXW postmortem brief synced. **David:** none. **Concept updates:** corrections-reit event study + xsp framework.
+
 ## Current state (2026-07-08 — K149)
 
 - **K149 ingest (2026-07-08)** — `URL Revenue Evaluation Plan.docx` (20 URLs) + Macro Charts chat + Latent Space/PragEng/Capital Flows/Event Horizon/Klement RSS. **Integrate:** Agent-Skills-for-Context-Engineering (MIT) → TipDrop/David + poker + CCC; managed-agents pattern steal (CeminiDFS). **Extract:** congress-legislators + openapi-directory (+ DoorDash hybrid → CCC). **Watch:** api-umbrella (TipDrop), openmct. **Reject/ops:** castle.io evasion. **Briefs:** pm×2 (**scp prod**); TipDrop×2; poker; DFS; CCC×3; cyber/gambling siblings. **Phase-0:** `adopt_k149_phase0.sh`.

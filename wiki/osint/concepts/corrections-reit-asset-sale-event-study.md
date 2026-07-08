@@ -4,6 +4,7 @@ type: concept
 tags: [concept, corecivic, geo-group, ice, event-study, sell-the-news, reit]
 keywords: [sell the news, Lawton, $300k per bed, short interest, Campbell REIT, precedent]
 related:
+  - sources/substack-rss-outlier-weekly-2026-07-08-cxw-geo-th-postmortem.md
   - entities/companies/corecivic.md
   - entities/companies/geo-group.md
   - entities/facilities/otay-mesa-detention-center.md
@@ -19,7 +20,7 @@ related:
   - concepts/government-single-buyer-asset-rerating.md
 maturity: draft
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-08
 ---
 
 ## Relations
@@ -237,6 +238,11 @@ Reframes the trade from **"gap and sustain on print"** (failed Jul 6) to **"does
 | Macro / sector | Neutral-to-risk-on | Risk-off (Jul 7: oil spike, AI wobble, VIX +5.5%) pressures small caps |
 
 **Base rate caution:** post-sale mispricings can persist until a **hard catalyst** forces recognition. For CXW that catalyst is **Q2 earnings (Aug 5/6)** — likely **outside a 10-day window** from Jul 6. A pure 10-day bet therefore leans on **fund repositioning + repurchase flow**, not on the print. "Fundamentally right, path-dependent" is the operative risk.
+
+
+### Outlier postmortem (K150 — Jul 8 publish)
+
+@sources/substack-rss-outlier-weekly-2026-07-08-cxw-geo-th-postmortem.md crystallizes **wrong-object** error: post-Jun-26 PT cluster, trade object shifted from **discovery** to **convergence/absorption**. Adds **TH (Target Hospitality)** sympathy frame: Dilley ownership + CoreCivic operator stack; federal deed purchase of Dilley remains **speculative** — not base case like CXW turnkey 8-K.
 
 ### Working conclusion
 

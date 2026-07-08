@@ -4,6 +4,7 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/substack-rss-moontower-2026-07-08-betting-as-a-tax-on-bullshit.md
   - concepts/xsp-hedge-fund-core-book-thesis.md
   - concepts/xsp-put-credit-spread-small-account-smb.md
   - concepts/wheel-options-strategy-smb.md
@@ -13,7 +14,7 @@ related:
   - sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-06
+updated: 2026-07-08
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-07-06
 - @entities/tools/deepspec.md — K137 inference latency Adopt (speculative decoding)
 - @entities/tools/openclaw-mission-control.md — K137 fleet audit steal patterns
 - @sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md — K147 vol regime steal (inverse VIX spike sizing)
+- @sources/substack-rss-moontower-2026-07-08-betting-as-a-tax-on-bullshit.md — K150 falsifier / calibration steal
 
 ## Raw Concept
 

@@ -4,6 +4,7 @@ type: source
 tags: [source, corecivic, cxw, ice, 8-k, turnkey, sec]
 keywords: [8-K, $1.5B, $1.1B net, DHS, Jul 2 close, Jul 6 announce, management retained]
 related:
+  - sources/substack-rss-outlier-weekly-2026-07-08-cxw-geo-th-postmortem.md
   - entities/companies/corecivic.md
   - entities/facilities/otay-mesa-detention-center.md
   - entities/facilities/california-city-detention-facility.md
@@ -17,7 +18,7 @@ related:
   - sources/noble-cap-cxw-validation-asset-worth-2026-07-07.md
 maturity: validated
 created: 2026-07-06
-updated: 2026-07-07
+updated: 2026-07-08
 ---
 
 ## Relations

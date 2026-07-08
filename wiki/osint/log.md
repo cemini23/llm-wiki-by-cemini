@@ -3,6 +3,16 @@
 updated: 2026-07-08
 ---
 
+## [2026-07-08] ingest | K150 — Pragmatic AMA + SparkToro API + Moontower + Outlier CXW postmortem
+
+- **Inbox (4):** pragmatic-engineer AMA, sparktoro API, moontower bullshit-tax, outlier CXW/GEO/TH postmortem — all archived to egress-fi
+- **Sources (4 new):** `@sources/newsletter-rss-pragmatic-engineer-2026-07-08-the-pragmatic-engineer-ama.md`, `@sources/newsletter-rss-sparktoro-2026-07-08-sparktoro-api-live.md`, `@sources/substack-rss-moontower-2026-07-08-betting-as-a-tax-on-bullshit.md`, `@sources/substack-rss-outlier-weekly-2026-07-08-cxw-geo-th-postmortem.md`
+- **Concept updates:** `@concepts/corrections-reit-asset-sale-event-study.md` (Outlier K150 postmortem + TH sympathy), `@concepts/xsp-lane-trading-framework.md` (moontower calibration backlink)
+- **Backlinks:** corecivic 8-K, pragmatic part 3, moontower VIX cluster
+- **Briefs:** `xsp-2026-07-08_moontower-bullshit-tax-calibration-steal.md` (**scp prod**); `ccc-2026-07-08_k150-pragmatic-engineer-ama-mcp-skill-atrophy.md`; CXW postmortem brief synced with Outlier URL; **seo-wiki** SparkToro API eval brief (cross-route)
+- **David/TipDrop:** none this batch (SparkToro → SEO; Moontower → xsp)
+- **Phase-0:** none (no eval docx)
+
 ## [2026-07-08] amend | XSP regime policy — not universal GREEN-only entry
 
 - **Operator correction:** dip-buying lanes (esp. Lane B LEAPS) must not be blocked solely on non-GREEN Macro Weather

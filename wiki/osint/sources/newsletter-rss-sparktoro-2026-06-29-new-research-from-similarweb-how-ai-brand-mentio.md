@@ -3,10 +3,11 @@ title: SparkToro Blog — New Research from Similarweb: How AI Brand Mentions In
 type: source
 tags: [source, newsletter-rss, inbox-auto, sparktoro]
 keywords: [rss, newsletter, sparktoro]
-related: []
+related:
+  - sources/newsletter-rss-sparktoro-2026-07-08-sparktoro-api-live.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-07-08
 read_status: skimmed
 ---
 

@@ -4,11 +4,12 @@ type: source
 tags: [source, newsletter-rss, moontower, options, vol, k147]
 keywords: [moontower, VIX, buy-the-dip, Sharpe, risk-adjusted, xsp]
 related:
+  - sources/substack-rss-moontower-2026-07-08-betting-as-a-tax-on-bullshit.md
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-moontower-2026-07-05-moontower-319.md
 maturity: draft
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-08
 read_status: read
 ---
 

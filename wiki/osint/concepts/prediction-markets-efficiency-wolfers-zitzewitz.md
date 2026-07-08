@@ -4,6 +4,7 @@ type: concept
 tags: [concept, prediction-markets, market-efficiency, contract-design]
 keywords: [prediction-market-efficiency, winner-takes-all-probability, index-mean-contract, spread-median, conditional-markets, risk-neutral-probability]
 related:
+  - sources/substack-rss-moontower-2026-07-08-betting-as-a-tax-on-bullshit.md
   - sources/nber-w10504-wolfers-zitzewitz-prediction-markets-2004.md
   - entities/platforms/polymarket.md
   - entities/platforms/kalshi.md

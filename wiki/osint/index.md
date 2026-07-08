@@ -12,9 +12,16 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **597 canonical stubs** (K149 ingest — 1 eval + 6 tool entities + 6 RSS/chat sources + concept updates)
+Total: **601 canonical stubs** (K150 ingest — 4 RSS sources + concept updates; no eval docx)
 
 
+
+### k150-ingest (4)
+
+- [Pragmatic Engineer AMA (Jul 8)](sources/newsletter-rss-pragmatic-engineer-2026-07-08-the-pragmatic-engineer-ama.md) — MCP standard + AI skill atrophy → CCC brief. — `rss` [+k150]
+- [SparkToro API live](sources/newsletter-rss-sparktoro-2026-07-08-sparktoro-api-live.md) — credit-metered audience API → seo-wiki cross-route. — `rss` [+k150]
+- [Moontower — betting as tax on bullshit](sources/substack-rss-moontower-2026-07-08-betting-as-a-tax-on-bullshit.md) — falsifier discipline → xsp brief (**scp prod**). — `rss` [+k150]
+- [Outlier — CXW/GEO/TH postmortem](sources/substack-rss-outlier-weekly-2026-07-08-cxw-geo-th-postmortem.md) — sell-the-news event study extension. — `rss` [+k150]
 
 ### k149-ingest (14)
 

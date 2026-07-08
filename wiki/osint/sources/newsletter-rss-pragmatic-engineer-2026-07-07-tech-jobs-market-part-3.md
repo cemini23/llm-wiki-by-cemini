@@ -4,6 +4,7 @@ type: source
 tags: [source, newsletter-rss, labor-market, hiring, k149]
 keywords: [pragmatic-engineer, AI hiring, FDE, referral, ghosting]
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-08-the-pragmatic-engineer-ama.md
   - sources/newsletter-rss-latent-space-2026-07-08-harness-engineering-rsi.md
 maturity: draft
 read_status: skimmed

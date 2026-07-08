@@ -15,6 +15,7 @@ related:
   - entities/companies/geo-group.md
   - meta/ice-facility-jobs-cadence.md
   - sources/ca-doj-immigration-detention-2026-ab103.md
+  - sources/substack-rss-outlier-weekly-2026-07-08-cxw-geo-th-postmortem.md
   - sources/corecivic-ice-facility-sale-8k-2026-07-06.md
   - sources/zacks-scr-cxw-marin-2026-07-06.md
   - sources/sell-side-cxw-geo-turnkey-notes-2026-06-26.md
