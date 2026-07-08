@@ -76,3 +76,9 @@ targets:
     operator: CoreCivic
     ticker: CXW
     thesis_lane: overcrowding
+  - id: stfrc_dilley
+    label: South Texas FRC / Dilley (TH tier-A)
+    match: SOUTH TEXAS FAMILY
+    operator: CoreCivic (TH-provided community)
+    ticker: TH
+    thesis_lane: family-residential reactivation (gov-asset-rerate tier A)

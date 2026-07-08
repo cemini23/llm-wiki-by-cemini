@@ -37,6 +37,10 @@ queries:
   - id: gsa_real_property_disposal
     keywords: ["real property", "property acquisition", "site acquisition"]
     agencies: [General Services Administration]
+  # Tier-A operator awards (family-residential / workforce housing). TH's
+  # operating subsidiary is Target Logistics Management.
+  - id: target_hospitality_vendor
+    recipient: ["Target Hospitality", "Target Logistics"]
 
 # Recipients to star in reports / prioritize alerts (title/escrow/appraisal/RE).
 watch_recipients:

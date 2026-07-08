@@ -2,8 +2,9 @@
 # Stage and schedule gov-asset-rerate intel monitors on cemini-prod (24/7).
 #
 # Lanes: EDGAR full-text (edgar_fulltext.py) + USASpending procurement
-# (procurement.py) + Federal Register DoD/DOE (fedreg.py). Runs every 4h via
-# systemd timer, alerts to Discord (webhook from /opt/cemini/.env).
+# (procurement.py) + Federal Register DoD/DOE (fedreg.py) + Target Hospitality
+# hiring (th_jobs.py). Runs every 4h via systemd timer, alerts to Discord
+# (webhook from /opt/cemini/.env).
 #
 # Usage:
 #   bash scripts/install_gov_asset_monitors_prod.sh
@@ -23,6 +24,7 @@ ssh "$PROD_HOST" "mkdir -p '$REMOTE_ROOT'/scripts '$REMOTE_ROOT'/config/theses \
   '$REMOTE_ROOT'/.local/reports/gov-asset-edgar \
   '$REMOTE_ROOT'/.local/reports/gov-asset-procurement \
   '$REMOTE_ROOT'/.local/reports/gov-asset-fedreg \
+  '$REMOTE_ROOT'/.local/reports/gov-asset-th-jobs \
   /opt/cemini/logs"
 
 scp \
@@ -39,6 +41,7 @@ scp \
   "$ROOT/scripts/run_gov_asset_edgar_monitor.sh" \
   "$ROOT/scripts/run_gov_asset_procurement_monitor.sh" \
   "$ROOT/scripts/run_gov_asset_fedreg_monitor.sh" \
+  "$ROOT/scripts/run_gov_asset_th_jobs_monitor.sh" \
   "$PROD_HOST:$REMOTE_ROOT/scripts/"
 
 scp -r \

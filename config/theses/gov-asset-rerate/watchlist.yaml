@@ -9,7 +9,10 @@
 #     (config: usaspending.yaml; run: scripts/gov_asset_procurement_monitor.py).
 #   - defense_doe lane BUILT via Federal Register: fedreg.py
 #     (config: fedreg.yaml; run: scripts/gov_asset_fedreg_monitor.py).
-#   - ALL THREE LANES scheduled 24/7 on cemini-prod (systemd timer, every 4h):
+#   - Tier-A jobs/utilization BUILT: TH hiring th_jobs.py (config: th-jobs.yaml,
+#     UltiPro) + STFRC/Dilley target in ice-turnkey/detention-stats.yaml + TH
+#     recipient query in usaspending.yaml. GEO already covered by jobs.py clusters.
+#   - ALL FOUR gov-asset lanes scheduled 24/7 on cemini-prod (systemd timer, 4h):
 #     scripts/install_gov_asset_monitors_prod.sh → cemini-gov-asset-monitors.timer.
 #   This file remains the master candidate/ticker list; the EDGAR runner reads
 #   edgar-fulltext.yaml, not this file.

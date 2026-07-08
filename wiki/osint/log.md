@@ -33,6 +33,15 @@ updated: 2026-07-06
 - **8 new tests** (`test_fedreg_monitor.py`); full monitor suite **44/44 pass**
 - **All 3 lanes built + scheduled:** watchlist `defense_doe` → built; concept monitor-map + priority order (3/3) + 24/7 scheduling section updated
 
+### build (same day) — Tier-A jobs/utilization extension (Target Hospitality)
+
+- **New monitor (lane 4):** `scripts/intel/monitors/th_jobs.py` + entrypoint + run script — TH careers ATS is UKG/UltiPro (`TAR1004TARG`); postings carry named sites not lat/lon, so this lane matches by **word-boundary site/term** rather than the CXW/GEO geo-cluster model. Config `th-jobs.yaml` (Dilley/STFRC + Pecos site terms). Live: 69 openings → 2 precise Dilley/South-Texas-IPC hits, 0 oilfield false positives
+- **Matching bug caught + fixed:** bare `ICE`/`government` terms over-matched (29/69) — "ice" ⊂ "services", "government" = TH boilerplate; switched to `\b`-anchored matching and location-specific terms
+- **Utilization:** added `SOUTH TEXAS FAMILY` (STFRC/Dilley, ticker TH) target to `ice-turnkey/detention-stats.yaml`
+- **Procurement:** added `Target Hospitality`/`Target Logistics` recipient query to `usaspending.yaml` (live-surfaced Target Logistics Management LLC federal awards)
+- **GEO:** no jobs extension needed — already a first-class operator source with 6 facility clusters
+- **9 new tests** (`test_th_jobs_monitor.py`); monitor suite green (pre-existing unrelated `test_agent_reach_wrapper` failure untouched). TH lane wired into combined runner + prod install (4h timer). Concept monitor-map (4/4) + watchlist updated
+
 ## [2026-07-07] correction | CXW use-of-proceeds slide — buyback is "under evaluation," not committed
 
 - **Slide (deck p.4):** proceeds split **3 ways** — debt reduction (revolver $270M + $108M + $100M term loans + $238M 4.75% notes due Oct 2027), growth acquisitions (Clinical Solutions Pharmacy comp), return of capital

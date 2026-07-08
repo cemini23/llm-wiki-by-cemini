@@ -1,0 +1,51 @@
+# Government single-buyer asset re-rating — Target Hospitality (TH) hiring watcher
+# Package: scripts/intel/monitors/th_jobs.py
+# Entrypoint: python3 scripts/gov_asset_th_jobs_monitor.py --thesis gov-asset-rerate --notify
+# Reports: .local/reports/gov-asset-th-jobs/YYYY-MM-DD-th-jobs-sweep.md
+# Concept: wiki/concepts/government-single-buyer-asset-rerating.md
+#
+# Tier-A jobs lane. TH careers ATS is UKG/UltiPro (tenant TAR1004TARG). Most
+# postings are Permian-Basin oilfield hospitality (housekeeping/front-desk/food);
+# the thesis-relevant signal is hiring tied to GOVERNMENT / family-residential
+# sites (Dilley/STFRC, Pecos), which precedes occupancy + contract disclosure.
+
+settings:
+  tenant: TAR1004TARG
+  board_id: bae0b5b6-65ef-4503-b57a-b9283744bca8
+  top: 50
+  alert_on_new: true
+
+# Target sites — a posting whose location/title/brief contains any term (matched
+# on WORD BOUNDARIES) is a hit and always alertable-on-new. Terms are
+# location-specific to avoid Permian-Basin oilfield-hospitality false positives.
+# (TH's board is ~85% oilfield lodging; only the gov/family-residential sites
+# carry thesis signal.) Verified 2026-07-07 against the live board — the South
+# Texas / Dilley IPC site is the ICE family-residential lane.
+target_sites:
+  - id: dilley_stfrc
+    label: Dilley / South Texas Family Residential Center (ICE)
+    ticker: TH
+    match_terms:
+      - Dilley
+      - "South Texas"
+      - STFRC
+      - Frio
+      - IPC
+    thesis_read: "Family-residential reactivation — reopened 2025 ICE surge; hiring surge = occupancy ramp."
+  - id: pecos_childrens
+    label: Pecos Children's Center (HHS/ORR)
+    ticker: TH
+    match_terms:
+      - Pecos
+      - Reeves
+      - "Children's Center"
+    thesis_read: "HHS unaccompanied-minors site; workforce ramp = federal utilization signal."
+
+# Fallback relevance: postings without a site match but containing these
+# (unambiguous, word-boundary-matched) phrases still surface (weaker signal).
+# Site matches always win. Deliberately excludes bare "government"/"ICE" —
+# "government" is TH boilerplate and "ice" is a substring of "services".
+watch_terms:
+  - "family residential"
+  - immigration
+  - "detention center"
