@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-08] ingest | arXiv-API fallback mis-route day 2 (5 rejects; look-ahead re-drop)
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-08.md (all reject); archived; inbox cleared
+- Triage: 2607.04958 re-drop (quant); 2607.05632 automotive RE; 2607.05667 2DGS compression (graphics); 2607.06125 Dart neural decomp; 2607.06148 food CV hashing
+- Fallback cause: `game-navmesh-dynamic` cluster used free arXiv API again (Exa 0 hits) — same mis-route class as 07-07
+- Phase-0: none; no new brief (no castle-sim adoption)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 18 files)
+- Sweep: @sweeps/2026-07-08-daily.md
+
+---
+
 ## [2026-07-07] ingest | arXiv-API fallback mis-route (5 rejects); empty 07-06 sweep
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-07.md (all reject); archived; inbox cleared

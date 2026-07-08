@@ -7,6 +7,7 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-07-05.md
   - sources/inbox-arxiv-reject-batch-2026-07-04.md
   - sources/inbox-arxiv-reject-batch-2026-07-03.md
+  - sources/inbox-arxiv-reject-batch-2026-07-08.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
   - concepts/rts-networking-deferred.md
@@ -14,7 +15,7 @@ read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-08
 ---
 
 ## Raw Concept
