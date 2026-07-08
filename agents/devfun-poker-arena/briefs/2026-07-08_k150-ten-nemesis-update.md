@@ -6,7 +6,7 @@
 
 K150 ladder nemesis update: **TEN** is our primary scheduler pairing (95/100 recent tables) and crushes us H2H (−218 bb/100) despite ranking 135/174 overall. Arena stats → **`wide_passive`** (51.6% VPIP, 86% WTSD), not linear_aggro. Fix is **nemesis handle seed + wide-passive exploit path**, not a new decide() rewrite.
 
-**Shipped (2026-07-08):** `research/opponents/ten-ladder-s1-profile.json`, `scripts/profile_opponent_style.py`, `ten` added to `nemesis_seed._DEFAULT`. Prod export: `reports/exports/ten-nemesis-20260708/`. **No deploy/resubmit** — let `dcad875c` accumulate a clean season first.
+**Shipped (2026-07-08):** `research/opponents/ten-ladder-s1-profile.json`, `scripts/profile_opponent_style.py`, `ten` added to `nemesis_seed._DEFAULT`, **8 TEN HU regression spots** + gin/S1B **72o trash-fold guard** in `cemini_decide.py`. Prod export: `reports/exports/ten-nemesis-20260708/`. **No deploy/resubmit** until clean season check + gate — let `dcad875c` accumulate.
 
 ## Body
 
@@ -42,7 +42,7 @@ K150 ladder nemesis update: **TEN** is our primary scheduler pairing (95/100 rec
 
 ### Next (not this brief)
 
-1. **Regression spot** — HU BB defend vs wide-passive min-steal / limp line (TEN-shaped).
+1. ~~**Regression spot** — HU BB defend vs wide-passive min-steal / limp line (TEN-shaped).~~ **DONE 2026-07-08** — 8 spots in `hu_regression_spots.py` + `test_k150_ten_hu_spots.py`; also closed gin/S1B **72o-call** leak in `cemini_decide.py`.
 2. **Selfplay villain** — `finale` or custom bot from TEN replay export (`ten-archive/replays.jsonl`, 50 hands).
 3. **Watchlist** (no seed until H2H evidence): `pokaH01`, `reaper`, `quantarmy-7`.
 4. **Deploy gate** — only after HU gate + new spot green; single `--replace` on ladder comp.

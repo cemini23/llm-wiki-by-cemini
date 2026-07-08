@@ -266,6 +266,56 @@ def hu_bb_vs_minraise(hero_hole: list[str], *, raise_to: int = 6, hero_stack: in
     )
 
 
+def _tag_villain_handle(table: dict, handle: str, *, villain_seat: int = 1) -> dict:
+    """Stamp villain seat with a known Arena handle (nemesis / archetype path)."""
+    for seat in table.get("seats") or []:
+        if seat.get("seatNumber") == villain_seat:
+            seat["agentHandle"] = handle
+            seat["agentName"] = handle
+            seat["agentId"] = handle
+    return table
+
+
+def hu_bb_vs_ten_minraise(
+    hero_hole: list[str],
+    *,
+    raise_to: int = 6,
+    hero_stack: int = 194,
+) -> dict:
+    """HU BB vs TEN (ladder H2H nemesis) min-steal — K150."""
+    return _tag_villain_handle(
+        hu_bb_vs_minraise(hero_hole, raise_to=raise_to, hero_stack=hero_stack),
+        "TEN",
+    )
+
+
+def hu_bb_vs_ten_limp(hero_hole: list[str], *, hero_stack: int = 198) -> dict:
+    """HU BB option facing TEN complete/limp — iso path for wide_passive."""
+    table = hu_table(
+        name="bb_vs_ten_limp",
+        hero_seat=2,
+        street="Preflop",
+        board=[],
+        pot=4,
+        hero_hole=hero_hole,
+        hero_stack=hero_stack,
+        hero_bet=2,
+        villain_bets={1: 2, 2: 2},
+        stacks={1: 198, 2: hero_stack},
+        allowed=_allowed(
+            can_fold=True,
+            can_check=True,
+            can_call=False,
+            can_bet=True,
+            can_raise=False,
+            call_chips=0,
+            call_to=2,
+            bet_range={"min": 4, "max": hero_stack},
+        ),
+    )
+    return _tag_villain_handle(table, "TEN")
+
+
 def mp_unopened(hero_hole: list[str], *, equity_boost: bool = False) -> dict:
     """Hero MP, 6-max, unopened pot — classic 74o leak spot."""
     # seat layout: BTN=1, SB=2, BB=3, UTG=4, MP=5, CO=6

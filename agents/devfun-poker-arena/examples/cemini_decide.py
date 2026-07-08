@@ -2773,6 +2773,13 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and _hu_ladder_bb_defend(hc, call_chips, pot)
             and "call" in available):
         return "call", None
+    # K150: HU BB soft equity floor must NOT rescue true trash (72o/83o) under
+    # gin/S1B — those hands called via call_margin=-0.02 and bled pots vs TEN.
+    if (table and _is_hu_table(table) and position == "BB" and call_chips > 0
+            and not _hu_ladder_bb_defend(hc, call_chips, pot)
+            and (hc in _WEAK_FACING_RAISE or _is_low_trash_offsuit(hc))
+            and "fold" in available):
+        return "fold", None
     if (_is_low_trash_offsuit(hc) and not in_position
             and equity < pot_odds + 0.06 and "fold" in available):
         return "fold", None

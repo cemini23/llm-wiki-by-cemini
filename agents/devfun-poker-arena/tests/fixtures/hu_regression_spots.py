@@ -4,6 +4,8 @@ from __future__ import annotations
 from tests.fixtures.regression_spots import RegressionSpot
 from tests.helpers.cemini_tables import (
     hu_bb_vs_minraise,
+    hu_bb_vs_ten_limp,
+    hu_bb_vs_ten_minraise,
     hu_btn_vs_shove,
     hu_sb_unopened,
 )
@@ -15,6 +17,34 @@ def _gin_v008_ctx() -> dict:
         "CEMINI_GIN_STYLE": "1",
         "CEMINI_GIN_STYLE_PREFLOP": "1",
         "CEMINI_GIN_STYLE_GATE": "1",
+    }
+
+
+def _ten_ladder_ctx() -> dict:
+    """Prod-shaped ladder exploit lane vs TEN (wide_passive H2H nemesis)."""
+    return {
+        **_gin_v008_ctx(),
+        "CEMINI_GIN_V008": "1",
+        "CEMINI_S1B_EXPLOIT": "1",
+        "CEMINI_RESEARCHER_MODE": "1",
+        "CEMINI_NEMESIS_EXPLOIT": "1",
+        "CEMINI_NEMESIS_TIGHT": "1",
+        "CEMINI_NEMESIS_ARCHETYPE": "1",
+        "CEMINI_NEMESIS_WIDE_PASSIVE": "1",
+        "CEMINI_ISO_PASSIVE_LP": "1",
+        "opponent_hud": {
+            "archetype": "wide_passive",
+            "vpip": 0.516,
+            "pfr": 0.0,
+            "raise_gap": 0.516,
+            "stats": {
+                "sample_size": 1849,
+                "vpip": 0.516,
+                "pfr": 0.0,
+                "threeBetPct": 0.0,
+                "wtsd": 0.862,
+            },
+        },
     }
 
 
@@ -326,5 +356,78 @@ def hu_regression_spots() -> list[RegressionSpot]:
             forbidden=frozenset({"fold"}),
             required=frozenset({"call", "all-in"}),
             notes="Premium suited defend vs shove in HU.",
+        ),
+        # ===== K150 TEN ladder H2H (wide_passive) =====
+        RegressionSpot(
+            id="hu_bb_k8o_vs_ten_minraise",
+            source="K150 — HU BB defend K8o vs TEN min-steal",
+            table=hu_bb_vs_ten_minraise(["Kd", "8c"]),
+            context=_ten_ladder_ctx(),
+            forbidden=frozenset({"fold"}),
+            required=frozenset({"call", "raise"}),
+            notes="TEN pairs 95% of ladder tables; K8o is in ladder BB defend set.",
+        ),
+        RegressionSpot(
+            id="hu_bb_kto_vs_ten_minraise",
+            source="K150 — HU BB defend KTo vs TEN min-steal",
+            table=hu_bb_vs_ten_minraise(["Kd", "Th"]),
+            context=_ten_ladder_ctx(),
+            forbidden=frozenset({"fold"}),
+            required=frozenset({"call", "raise"}),
+            notes="Broadway defend vs TEN steal — stop uncontested pot bleed.",
+        ),
+        RegressionSpot(
+            id="hu_bb_qjo_vs_ten_minraise",
+            source="K150 — HU BB defend QJo vs TEN min-steal",
+            table=hu_bb_vs_ten_minraise(["Qh", "Jc"]),
+            context=_ten_ladder_ctx(),
+            forbidden=frozenset({"fold"}),
+            required=frozenset({"call", "raise"}),
+            notes="Offsuit broadway defend vs TEN-shaped open.",
+        ),
+        RegressionSpot(
+            id="hu_bb_76s_vs_ten_minraise",
+            source="K150 — HU BB continue/3-bet 76s vs TEN",
+            table=hu_bb_vs_ten_minraise(["7s", "6s"]),
+            context=_ten_ladder_ctx(),
+            forbidden=frozenset({"fold"}),
+            required=frozenset({"call", "raise"}),
+            notes="Suited connector continue vs TEN minraise.",
+        ),
+        RegressionSpot(
+            id="hu_bb_72o_vs_ten_minraise",
+            source="K150 — HU BB fold 72o vs TEN (gin/S1B trash guard)",
+            table=hu_bb_vs_ten_minraise(["7h", "2c"]),
+            context=_ten_ladder_ctx(),
+            forbidden=frozenset({"call", "raise", "all-in"}),
+            required=frozenset({"fold"}),
+            notes="Soft HU equity floor must not rescue trash under gin — P0 vs TEN.",
+        ),
+        RegressionSpot(
+            id="hu_bb_aks_iso_vs_ten_limp",
+            source="K150 — HU BB iso AKs vs TEN limp",
+            table=hu_bb_vs_ten_limp(["As", "Ks"]),
+            context=_ten_ladder_ctx(),
+            forbidden=frozenset({"fold", "check"}),
+            required=frozenset({"bet", "raise"}),
+            notes="wide_passive iso — AKs punishes TEN limp/complete.",
+        ),
+        RegressionSpot(
+            id="hu_bb_aa_iso_vs_ten_limp",
+            source="K150 — HU BB iso AA vs TEN limp",
+            table=hu_bb_vs_ten_limp(["Ah", "Ad"]),
+            context=_ten_ladder_ctx(),
+            forbidden=frozenset({"fold", "check"}),
+            required=frozenset({"bet", "raise"}),
+            notes="Premium iso vs TEN limped pot.",
+        ),
+        RegressionSpot(
+            id="hu_bb_qjs_iso_vs_ten_limp",
+            source="K150 — HU BB iso QJs vs TEN limp",
+            table=hu_bb_vs_ten_limp(["Qd", "Jd"]),
+            context=_ten_ladder_ctx(),
+            forbidden=frozenset({"fold", "check"}),
+            required=frozenset({"bet", "raise"}),
+            notes="Suited broadway in _ISO_WIDE_PASSIVE vs TEN limp.",
         ),
     ]
