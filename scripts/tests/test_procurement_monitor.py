@@ -7,8 +7,10 @@ from pathlib import Path
 from unittest import mock
 
 from scripts.intel.monitors.procurement import (
+    apply_query_filters,
     build_payload,
     dedupe_new,
+    has_diligence_terms,
     is_alertable_award,
     is_detention_ops_noise,
     is_watched_recipient,
@@ -50,11 +52,13 @@ settings:
     - appraisal
     - real property
     - turnkey
-    - purchase
+    - purchase agreement
   suppress_description_patterns:
     - comprehensive detention
     - detention and transportation
     - housing criminal aliens
+    - blanket purchase agreement
+    - eeo case
 queries:
   - id: title_escrow_dhs
     keywords: [escrow, "title services"]
@@ -62,6 +66,9 @@ queries:
   - id: detention_facility_acquisition
     keywords: ["facility acquisition", turnkey]
     agencies: [Department of Homeland Security]
+    include_sub_agencies:
+      - Immigration and Customs Enforcement
+    min_amount: 10000
     require_diligence_terms: true
   - id: first_american_vendor
     recipient: "First American"
@@ -82,6 +89,23 @@ CAL_CITY_OPS_AWARD = {
         "THE PURPOSE OF THIS TASK ORDER IS FOR COMPREHENSIVE DETENTION AND "
         "TRANSPORTATION SERVICES FOR HOUSING CRIMINAL ALIENS AT CALIFORNIA CITY "
         "DETENTION CENTER IN CALIFORNIA CITY, CA."
+    ),
+    "award_type": "DELIVERY ORDER",
+}
+
+FEMA_EEO_AWARD = {
+    "id": "CONT_AWD_70FA4026F00000097",
+    "query": "detention_facility_acquisition",
+    "award_id": "70FA4026F00000097",
+    "recipient": "HR ANEW, INC.",
+    "agency": "Department of Homeland Security",
+    "sub_agency": "Federal Emergency Management Agency",
+    "amount": 5470.55,
+    "start_date": "2026-05-12",
+    "description": (
+        "THIS ORDER IS IN ACCORDANCE WITH THE TERMS AND CONDITIONS OF FEMA BLANKET "
+        "PURCHASE AGREEMENT (BPA). THE PURPOSE OF THIS CALL ORDER IS TO PROCURE "
+        "EQUAL EMPLOYMENT OPPORTUNITY (EEO) CASE INVESTIGATIVE SERVICES."
     ),
     "award_type": "DELIVERY ORDER",
 }
@@ -165,6 +189,24 @@ class AlertFilterTests(unittest.TestCase):
         self.assertEqual(alertable[0]["award_id"], "HSCEMS26F0001")
         self.assertEqual(len(suppressed), 1)
         self.assertEqual(suppressed[0]["award_id"], "70CDCR25FR0000122")
+
+    def test_suppresses_fema_eeo_false_positive(self):
+        q = self.queries_by_id["detention_facility_acquisition"]
+        self.assertFalse(apply_query_filters(FEMA_EEO_AWARD, q))
+        self.assertTrue(is_detention_ops_noise(FEMA_EEO_AWARD, self.config["settings"]["suppress_description_patterns"]))
+        self.assertFalse(is_alertable_award(FEMA_EEO_AWARD, self.config, self.queries_by_id))
+
+    def test_diligence_terms_word_boundary(self):
+        # Phrase match can hit inside "BLANKET PURCHASE AGREEMENT"; ICE/min/suppress gates block alert.
+        self.assertTrue(has_diligence_terms(FEMA_EEO_AWARD, ["purchase agreement"]))
+        self.assertFalse(has_diligence_terms({"description": "BLANKET PURCHASE ONLY"}, ["purchase agreement"]))
+        self.assertFalse(is_alertable_award(FEMA_EEO_AWARD, self.config, self.queries_by_id))
+        self.assertTrue(
+            has_diligence_terms(
+                {"description": "DEFINITIVE PURCHASE AGREEMENT FOR REAL PROPERTY"},
+                ["purchase agreement"],
+            )
+        )
 
 
 class DedupeTests(unittest.TestCase):

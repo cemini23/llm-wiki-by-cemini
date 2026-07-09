@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import re
 from pathlib import Path
 from typing import Any
 
@@ -149,7 +150,54 @@ def has_diligence_terms(award: dict[str, Any], diligence_terms: list[str]) -> bo
     if not diligence_terms:
         return True
     text = _award_text(award)
-    return any(term.lower() in text for term in diligence_terms)
+    for term in diligence_terms:
+        if " " in term.strip():
+            if term.lower() in text:
+                return True
+        elif re.search(rf"\b{re.escape(term.lower())}\b", text):
+            return True
+    return False
+
+
+def _award_amount(award: dict[str, Any]) -> float | None:
+    try:
+        return float(award.get("amount"))
+    except (TypeError, ValueError):
+        return None
+
+
+def passes_min_amount(award: dict[str, Any], min_amount: float | None) -> bool:
+    if min_amount is None:
+        return True
+    amount = _award_amount(award)
+    if amount is None:
+        return False
+    return amount >= min_amount
+
+
+def matches_sub_agency(
+    award: dict[str, Any],
+    *,
+    include: list[str] | None = None,
+    exclude: list[str] | None = None,
+) -> bool:
+    sub = (award.get("sub_agency") or "").upper()
+    if exclude and any(ex.upper() in sub for ex in exclude):
+        return False
+    if include:
+        return any(inc.upper() in sub for inc in include)
+    return True
+
+
+def apply_query_filters(award: dict[str, Any], query: dict[str, Any]) -> bool:
+    """Post-parse filters from per-query config (sub-agency, min amount)."""
+    if not passes_min_amount(award, query.get("min_amount")):
+        return False
+    return matches_sub_agency(
+        award,
+        include=query.get("include_sub_agencies"),
+        exclude=query.get("exclude_sub_agencies"),
+    )
 
 
 def is_alertable_award(award: dict[str, Any], config: dict[str, Any], queries_by_id: dict[str, dict[str, Any]]) -> bool:
@@ -164,6 +212,9 @@ def is_alertable_award(award: dict[str, Any], config: dict[str, Any], queries_by
         return False
 
     query = queries_by_id.get(str(award.get("query", "")))
+    if query and not apply_query_filters(award, query):
+        return False
+
     if query and query.get("require_diligence_terms"):
         return has_diligence_terms(award, diligence_terms)
 
@@ -212,7 +263,8 @@ def search_query(
     """Live USASpending query for one config entry. Raises on network error."""
     payload = build_payload(query, startdt=startdt, enddt=enddt, settings=settings)
     response = fetch_json(USASPENDING_ENDPOINT, method="POST", payload=payload, timeout=45)
-    return parse_awards(response, query.get("id", "query"))
+    awards = parse_awards(response, query.get("id", "query"))
+    return [a for a in awards if apply_query_filters(a, query)]
 
 
 def _fmt_amount(amount: Any) -> str:
@@ -344,7 +396,11 @@ def run(
         qid = query.get("id", "query")
         try:
             if offline_payloads is not None:
-                awards = parse_awards(offline_payloads.get(qid, {}), qid)
+                awards = [
+                    a
+                    for a in parse_awards(offline_payloads.get(qid, {}), qid)
+                    if apply_query_filters(a, query)
+                ]
             else:
                 awards = search_query(query, startdt=startdt, enddt=enddt, settings=settings)
         except Exception as exc:  # noqa: BLE001

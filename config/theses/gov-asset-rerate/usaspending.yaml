@@ -31,11 +31,12 @@ settings:
     - property acquisition
     - site acquisition
     - turnkey
-    - purchase
+    - purchase agreement
+    - asset purchase
     - environmental site
     - due diligence
     - settlement
-  # Description phrases that indicate IGSA/detention ops (suppress for alerts + report).
+  # Description phrases that indicate IGSA/detention ops or unrelated DHS spend.
   suppress_description_patterns:
     - comprehensive detention
     - detention and transportation
@@ -44,6 +45,9 @@ settings:
     - housing aliens
     - housekeeping
     - security guards and patrol
+    - equal employment opportunity
+    - blanket purchase agreement
+    - eeo case
 
 # Each query maps to one USASpending request. keywords are OR'd; recipient uses
 # recipient_search_text; agencies filters to awarding toptier agency.
@@ -57,7 +61,7 @@ queries:
   - id: environmental_site_dhs
     keywords: ["environmental site assessment", "phase i", "phase ii", "due diligence"]
     agencies: [Department of Homeland Security]
-  # Purchase/diligence only — do NOT keyword on bare "detention center" (matches ops IDCs).
+  # Purchase/diligence only — ICE sub-agency, min $10k, diligence terms in description.
   - id: detention_facility_acquisition
     keywords:
       - "facility acquisition"
@@ -66,6 +70,10 @@ queries:
       - turnkey
       - "purchase agreement"
     agencies: [Department of Homeland Security]
+    include_sub_agencies:
+      - Immigration and Customs Enforcement
+      - U.S. Immigration and Customs Enforcement
+    min_amount: 10000
     require_diligence_terms: true
   - id: first_american_vendor
     recipient: "First American"
