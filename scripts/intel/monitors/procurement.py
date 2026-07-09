@@ -88,13 +88,36 @@ def build_payload(
     }
 
 
+def _normalize_key(value: str) -> str:
+    return value.strip().upper()
+
+
+def migrate_seen_id(uid: str) -> str:
+    """Map legacy USASpending keys (CONT_AWD_* / numeric internal_id) to PIID."""
+    key = _normalize_key(uid)
+    if key.startswith("CONT_AWD_"):
+        piid = key.removeprefix("CONT_AWD_").split("_", 1)[0]
+        if piid:
+            return piid
+    return key
+
+
 def award_uid(raw: dict[str, Any]) -> str:
-    return str(
-        raw.get("generated_internal_id")
-        or raw.get("internal_id")
-        or raw.get("Award ID")
-        or ""
-    )
+    """Stable dedupe key — PIID (Award ID), not generated_internal_id."""
+    award_id = raw.get("Award ID")
+    if award_id:
+        return _normalize_key(str(award_id))
+    legacy = raw.get("generated_internal_id") or raw.get("internal_id")
+    if legacy:
+        return migrate_seen_id(str(legacy))
+    return ""
+
+
+def canonical_award_key(award: dict[str, Any]) -> str:
+    award_id = award.get("award_id")
+    if award_id:
+        return _normalize_key(str(award_id))
+    return migrate_seen_id(str(award.get("id") or ""))
 
 
 def parse_awards(response: dict[str, Any], query_id: str) -> list[dict[str, Any]]:
@@ -242,13 +265,14 @@ def partition_alertable(
 
 
 def dedupe_new(awards: list[dict[str, Any]], seen_ids: set[str]) -> list[dict[str, Any]]:
+    seen = {migrate_seen_id(uid) for uid in seen_ids if uid}
     new: list[dict[str, Any]] = []
     batch_seen: set[str] = set()
     for award in awards:
-        uid = award.get("id", "")
-        if not uid or uid in seen_ids or uid in batch_seen:
+        key = canonical_award_key(award)
+        if not key or key in seen or key in batch_seen:
             continue
-        batch_seen.add(uid)
+        batch_seen.add(key)
         new.append(award)
     return new
 
@@ -387,7 +411,7 @@ def run(
     report_path = report_dir(REPORT_LANE) / f"{today.isoformat()}-procurement-sweep.md"
     state_path = report_dir(REPORT_LANE) / "last_run_state.json"
     state = read_json(state_path, {})
-    seen_ids = set(state.get("seen_ids", []))
+    seen_ids = {migrate_seen_id(uid) for uid in state.get("seen_ids", []) if uid}
     first_run = not state
 
     all_awards: list[dict[str, Any]] = []
@@ -436,7 +460,9 @@ def run(
         state_path,
         {
             "last_run": today.isoformat(),
-            "seen_ids": sorted(seen_ids | {a["id"] for a in all_awards if a.get("id")}),
+            "seen_ids": sorted(
+                seen_ids | {canonical_award_key(a) for a in all_awards if canonical_award_key(a)}
+            ),
             "last_report": str(report_path),
             "last_new_count": len(alertable_new),
             "last_suppressed_count": len(suppressed_new),

@@ -8,12 +8,15 @@ from unittest import mock
 
 from scripts.intel.monitors.procurement import (
     apply_query_filters,
+    award_uid,
     build_payload,
+    canonical_award_key,
     dedupe_new,
     has_diligence_terms,
     is_alertable_award,
     is_detention_ops_noise,
     is_watched_recipient,
+    migrate_seen_id,
     parse_awards,
     partition_alertable,
     run,
@@ -77,7 +80,7 @@ watch_recipients:
 """
 
 CAL_CITY_OPS_AWARD = {
-    "id": "CONT_AWD_70CDCR25FR0000122",
+    "id": "70CDCR25FR0000122",
     "query": "detention_facility_acquisition",
     "award_id": "70CDCR25FR0000122",
     "recipient": "CORECIVIC, INC.",
@@ -94,7 +97,7 @@ CAL_CITY_OPS_AWARD = {
 }
 
 FEMA_EEO_AWARD = {
-    "id": "CONT_AWD_70FA4026F00000097",
+    "id": "70FA4026F00000097",
     "query": "detention_facility_acquisition",
     "award_id": "70FA4026F00000097",
     "recipient": "HR ANEW, INC.",
@@ -135,7 +138,7 @@ class ParseTests(unittest.TestCase):
         awards = parse_awards(SAMPLE_RESPONSE, "title_escrow_dhs")
         self.assertEqual(len(awards), 1)
         a = awards[0]
-        self.assertEqual(a["id"], "CONT_AWD_HSCEMS_1")
+        self.assertEqual(a["id"], "HSCEMS26F0001")
         self.assertEqual(a["award_id"], "HSCEMS26F0001")
         self.assertEqual(a["amount"], 1250000.0)
         self.assertEqual(a["query"], "title_escrow_dhs")
@@ -143,9 +146,29 @@ class ParseTests(unittest.TestCase):
     def test_parse_empty(self):
         self.assertEqual(parse_awards({}, "q"), [])
 
-    def test_uid_fallback_to_award_id(self):
+    def test_uid_prefers_award_id_over_generated_internal_id(self):
+        resp = {
+            "results": [
+                {
+                    "generated_internal_id": "CONT_AWD_HSCEMS_1",
+                    "Award ID": "HSCEMS26F0001",
+                    "Recipient Name": "ACME",
+                }
+            ]
+        }
+        self.assertEqual(award_uid(resp["results"][0]), "HSCEMS26F0001")
+        self.assertEqual(parse_awards(resp, "q")[0]["id"], "HSCEMS26F0001")
+
+    def test_uid_fallback_without_award_id(self):
         resp = {"results": [{"Award ID": "X1", "Recipient Name": "ACME"}]}
         self.assertEqual(parse_awards(resp, "q")[0]["id"], "X1")
+
+    def test_migrate_seen_id_extracts_piid_from_cont_awd(self):
+        self.assertEqual(
+            migrate_seen_id("CONT_AWD_70CDCR25FR0000122_7012_70CDCR25D00000010_7012"),
+            "70CDCR25FR0000122",
+        )
+        self.assertEqual(migrate_seen_id("HSCEMS26F0001"), "HSCEMS26F0001")
 
 
 class WatchTests(unittest.TestCase):
@@ -213,7 +236,35 @@ class DedupeTests(unittest.TestCase):
     def test_dedupe_excludes_seen_and_batch_dupes(self):
         awards = parse_awards(SAMPLE_RESPONSE, "q") * 2
         self.assertEqual(len(dedupe_new(awards, set())), 1)
-        self.assertEqual(dedupe_new(awards, {"CONT_AWD_HSCEMS_1"}), [])
+        self.assertEqual(dedupe_new(awards, {"HSCEMS26F0001"}), [])
+
+    def test_dedupe_ignores_generated_internal_id_churn(self):
+        first = {
+            "results": [
+                {
+                    "generated_internal_id": "CONT_AWD_PIID123_9700_-NONE-_-NONE-",
+                    "Award ID": "PIID123",
+                    "Recipient Name": "ACME",
+                }
+            ]
+        }
+        second = {
+            "results": [
+                {
+                    "generated_internal_id": "CONT_AWD_PIID123_7012_PARENT_7012",
+                    "Award ID": "PIID123",
+                    "Recipient Name": "ACME",
+                }
+            ]
+        }
+        awards = parse_awards(first, "q")
+        seen = {canonical_award_key(a) for a in awards}
+        churned = parse_awards(second, "q")
+        self.assertEqual(dedupe_new(churned, seen), [])
+        self.assertEqual(
+            dedupe_new(churned, {"CONT_AWD_PIID123_9700_-NONE-_-NONE-"}),
+            [],
+        )
 
 
 class RunLifecycleTests(unittest.TestCase):
@@ -255,7 +306,7 @@ class RunLifecycleTests(unittest.TestCase):
                 }
                 r3 = run(cfg, today, offline_payloads=new_payload)
                 self.assertEqual(len(r3["new_awards"]), 1)
-                self.assertEqual(r3["new_awards"][0]["id"], "CONT_AWD_NEW_2")
+                self.assertEqual(r3["new_awards"][0]["id"], "HSCEMS26F0099")
 
     def test_suppressed_ops_award_does_not_alert(self):
         with tempfile.TemporaryDirectory() as tmp:
