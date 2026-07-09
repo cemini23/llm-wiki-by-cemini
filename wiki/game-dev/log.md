@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-09] ingest | MIRA multiplayer world models + 4 rejects; Phaser MCP news
+
+- Inbox: 5 arXiv PDFs → @sources/arxiv-2607.05352-mira-multiplayer-world-models-2026-07-09.md (ingest); @sources/inbox-arxiv-reject-batch-2026-07-09.md (4 reject); archived; inbox cleared
+- Triage: 2511.17384 industrial VLLM nav; 2607.05369 GaP robotics harness; 2607.06500/06521 quantum; MIRA ingest for MP world-model research shelf
+- News: @sources/phaser-game-agent-mcp-update-2026-07-08.md → @sources/phaser-game-agent-shelf-2026-06-30.md
+- Brief: `briefs/research/mira-multiplayer-world-model-shelf.md`; synced → `castle-sim/briefs/research/` (19 files)
+- Phase-0: none (MIRA is research reference, not Godot tool)
+- Sweep: @sweeps/2026-07-09-daily.md
+
+---
+
 ## [2026-07-08] ingest | arXiv-API fallback mis-route day 2 (5 rejects; look-ahead re-drop)
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-08.md (all reject); archived; inbox cleared

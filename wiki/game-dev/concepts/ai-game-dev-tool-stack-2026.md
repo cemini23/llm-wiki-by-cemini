@@ -31,6 +31,7 @@ related:
   - sources/ramen-aura-15-commercial-shelf-2026-06-26.md
   - entities/tools/pcgodot.md
   - sources/phaser-game-agent-shelf-2026-06-30.md
+  - sources/phaser-game-agent-mcp-update-2026-07-08.md
   - sources/ziva-godot-asset-store-listing-2026-06-27.md
 maturity: validated
 created: 2026-06-13
@@ -75,7 +76,7 @@ Catalog of **AI + automation tools** for game development — codegen, editor MC
 | [gamestudio-subagents](https://github.com/pamirtuna/gamestudio-subagents) | 12 terminal agents | WATCH | Python; multi-engine |
 | [game-mcp](https://github.com/xthenyo/game-mcp) | Unity 6 + Claude Code + MCP, "bible-first" | WATCH | `npx game-mcp` bootstrap |
 | Cursor Agent | In-IDE multi-file edits | **GO** | Default for wiki + castle-sim |
-| **Phaser Game Agent** | NL → browser Phaser prototype | WATCH | Web contrast [@sources/phaser-game-agent-shelf-2026-06-30.md] |
+| **Phaser Game Agent** | NL → browser Phaser prototype; **MCP server** (Jul 2026) | WATCH | Web contrast [@sources/phaser-game-agent-shelf-2026-06-30.md]; MCP [@sources/phaser-game-agent-mcp-update-2026-07-08.md] |
 | GitHub Copilot | Inline completion | GO adjunct | +55% task speed [arXiv 2302.06590] — not architecture |
 
 ### Godot MCP / editor bridge

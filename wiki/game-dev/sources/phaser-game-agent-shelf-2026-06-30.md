@@ -8,13 +8,14 @@ related:
   - concepts/agentic-pcg-level-design.md
   - concepts/game-dev-wiki-scope.md
   - sources/inbox-arxiv-reject-batch-2026-07-02.md
+  - sources/phaser-game-agent-mcp-update-2026-07-08.md
   - meta/cross-wiki-routing.md
 read_status: read
 source_type: news-digest
 source_url: https://phaser.io/news/2026/06/phaser-game-agent
 maturity: validated
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-07-09
 ---
 
 ## Raw Concept
@@ -32,6 +33,8 @@ Digest pick (2026-06-30): **Phaser Game Agent** — build browser games from nat
 | Contrast | castle-sim path = Godot + Cursor/Codex + markdown specs |
 
 **Verdict:** **WATCH (industry contrast)** — @concepts/ai-game-dev-tool-stack-2026.md; **no Phase-0** (web SaaS, out of Godot scope).
+
+**Jul 2026 update:** @sources/phaser-game-agent-mcp-update-2026-07-08.md — Phaser Game Agent now ships an **MCP server** for Claude Code, Cursor, Copilot, Codex, Gemini CLI, Windsurf; one-command CLI setup + cloud build workspace. Same WATCH verdict for Godot castle-sim; useful contrast for harness MCP catalog.
 
 Cross-ref: build post @sources/phaser-game-agent-shelf-2026-06-30.md related sweep R11; deeper technical post existed in prior digests (Jun 12).
 

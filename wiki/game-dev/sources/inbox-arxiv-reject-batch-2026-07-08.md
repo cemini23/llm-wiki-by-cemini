@@ -5,6 +5,7 @@ tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, mis-route, requirements-engineering, gaussian-splatting]
 related:
   - sources/inbox-arxiv-reject-batch-2026-07-07.md
+  - sources/inbox-arxiv-reject-batch-2026-07-09.md
   - sources/inbox-arxiv-reject-batch-2026-07-05.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md

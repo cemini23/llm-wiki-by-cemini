@@ -7,10 +7,10 @@ related:
   - concepts/scope-tiers.md
   - sources/arxiv-1705-09704-lockstep-simulation.md
   - concepts/game-dev-wiki-scope.md
-  - sources/inbox-arxiv-reject-batch-2026-07-07.md
+  - sources/inbox-arxiv-reject-batch-2026-07-09.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-07
+updated: 2026-07-09
 ---
 
 ## Relations
@@ -45,6 +45,10 @@ After vertical slice v0 + optional hot-seat pass:
 ### Determinism as a formal property (research aside)
 
 @sources/inbox-arxiv-reject-batch-2026-07-07.md — arXiv 2607.04958 ("Look-Ahead-Freedom as Temporal Non-Interference") frames "no later state influences an earlier decision" as **temporal non-interference over a time-indexed lattice**. Same shape as a **lockstep replay** invariant: a deterministic tick must consume only ≤t state. Primary home is @osint-wiki (quant backtesting); logged here only as a Tier-N replay-verification analogy — **not** a slice adoption.
+
+### Multiplayer world models (research shelf — Tier 3+)
+
+@sources/arxiv-2607.05352-mira-multiplayer-world-models-2026-07-09.md — **MIRA**: first multiplayer interactive world model (Rocket League); conditions on per-agent action streams for coherent MP rollouts. **Not** a lockstep implementation — contrast reference for MP state attribution and replay stress tests. Brief: gitignored `briefs/research/mira-multiplayer-world-model-shelf.md`.
 
 ## Snippets
 
