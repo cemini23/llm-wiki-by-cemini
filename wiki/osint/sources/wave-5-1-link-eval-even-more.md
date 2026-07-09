@@ -5,6 +5,7 @@ tags: [cemini-internal, competitive-intelligence, link-evaluation, wave-5-1, k-s
 keywords: [files-to-prompt, crawl4ai, trafilatura, unstructured, superpowers, cortex, datachain, bentoml, ray, triton, supabase, lorax, vllm, localai, rag-anything, weaviate, haystack, torchtune, mergekit, awesome-mcp-servers]
 clusters: [llm-agents]
 related:
+  - entities/tools/crawl4ai.md
   - sources/wave-5-1-link-eval-stacks.md
   - sources/wave-5-1-link-eval-more.md
   - concepts/wiki-tooling-evaluation.md
@@ -15,7 +16,7 @@ related:
 maturity: draft
 read_status: read
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-07-09
 ---
 
 ## Relations

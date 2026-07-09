@@ -3,6 +3,19 @@
 updated: 2026-07-08
 ---
 
+updated: 2026-07-09
+---
+
+## [2026-07-09] ingest | K151 — GitHub eval + 5 arXiv + 6 RSS
+
+- **Inbox (12):** eval docx + arXiv×5 + RSS×6 — archived egress-fi
+- **Eval:** Integrate crawl4ai + Agent-Skills reaffirm; Extract autoremesher; Watch pocket-tts + waveterm; Pass legacy GitHub extensions
+- **Sources (13 new):** eval docx + 5 arXiv + 6 RSS
+- **Entities (4 new):** crawl4ai, autoremesher, pocket-tts, waveterm
+- **Concept:** `@concepts/proper-betting-clob-prediction-markets.md` (2607.06166)
+- **Briefs:** pm proper-betting (**scp prod**); CCC×2; poker FootsiesGym; castle×3; David waveterm Watch; cybersec Q-Day cross-route
+- **Phase-0:** `scripts/adopt_k151_phase0.sh`
+
 ## [2026-07-08] ingest | K150 — Pragmatic AMA + SparkToro API + Moontower + Outlier CXW postmortem
 
 - **Inbox (4):** pragmatic-engineer AMA, sparktoro API, moontower bullshit-tax, outlier CXW/GEO/TH postmortem — all archived to egress-fi

@@ -30,6 +30,10 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-07-09 — K151)
+
+- **K151 ingest (2026-07-09)** — `Cemini GitHub Repo Evaluation.docx` (20 URLs) + 5 arXiv + 6 RSS. **Integrate:** crawl4ai (reaffirm Wave 5.1), Agent-Skills (reaffirm K149). **Extract:** autoremesher → castle-sim. **Watch:** pocket-tts, waveterm → David. **Papers:** prophets profit (pm **scp prod**), reasoning effort (CCC), FootsiesGym (poker), GameEngineBench/MIRA (castle). **Phase-0:** `adopt_k151_phase0.sh`.
+
 ## Current state (2026-07-08 — K150)
 
 - **K150 ingest (2026-07-08)** — 4 RSS (Pragmatic AMA, SparkToro API, Moontower bullshit-tax, Outlier CXW postmortem). **No eval docx / no Phase-0.** **Briefs:** xsp moontower calibration (**scp prod**); CCC pragmatic AMA; seo-wiki SparkToro API eval (cross-route); CXW postmortem brief synced. **David:** none. **Concept updates:** corrections-reit event study + xsp framework.

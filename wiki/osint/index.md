@@ -12,9 +12,29 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **601 canonical stubs** (K150 ingest — 4 RSS sources + concept updates; no eval docx)
+Total: **614 canonical stubs** (K151 ingest — 1 eval + 4 entities + 1 concept + 5 arXiv + 6 RSS)
 
 
+
+### k151-ingest (17)
+
+- [Cemini GitHub Repo Evaluation.docx](sources/eval-cemini-github-repo-evaluation-2026-07-09.md) — Integrate crawl4ai + Agent-Skills; Extract autoremesher; Watch pocket-tts/waveterm. — `docx` [+k151]
+- [crawl4ai](entities/tools/crawl4ai.md) — K151 Integrate reaffirm (Wave 5.1). — entity [+k151]
+- [autoremesher](entities/tools/autoremesher.md) — K151 Extract → castle-sim. — entity [+k151]
+- [pocket-tts](entities/tools/pocket-tts.md) — K151 Watch → castle audio. — entity [+k151]
+- [waveterm](entities/tools/waveterm.md) — K151 Watch → TipDrop/David. — entity [+k151]
+- [Proper betting on CLOB PMs](concepts/proper-betting-clob-prediction-markets.md) — 2607.06166 Kalshi live ROI. — concept [+k151]
+- [Prophets profit in PMs (2607.06166)](sources/arxiv-prophets-profit-prediction-markets-2607.06166-2026-07-09.md) — proper betting → pm brief (**scp prod**). — `pdf` [+k151]
+- [Reasoning effort vs tools (2607.02436)](sources/arxiv-reasoning-effort-agentic-code-2607.02436-2026-07-09.md) — CCC harness steal. — `pdf` [+k151]
+- [GameEngineBench (2607.03525)](sources/arxiv-gameenginebench-2607.03525-2026-07-09.md) — castle-sim agent eval. — `pdf` [+k151]
+- [Multiplayer world models (2607.05352)](sources/arxiv-multiplayer-world-models-2607.05352-2026-07-09.md) — castle long-horizon. — `pdf` [+k151]
+- [FootsiesGym (2607.06514)](sources/arxiv-footsiesgym-2607.06514-2026-07-09.md) — poker imperfect-info benchmark steal. — `pdf` [+k151]
+- [Lightweight game agent (2607.06854)](sources/arxiv-lightweight-game-agent-2607.06854-2026-07-09.md) — poker/castle ablations. — `pdf` [+k151]
+- [Latent Space — Modal agent infra](sources/newsletter-rss-latent-space-2026-07-08-modal-agent-infrastructure.md) — CCC route. — `rss` [+k151]
+- [Latent Space — Grok 4.5 AINews](sources/newsletter-rss-latent-space-2026-07-09-grok-45-cursor.md) — model routing context. — `rss` [+k151]
+- [Capital Flows — PURR/HYPE](sources/substack-rss-capital-flows-2026-07-09-purr-hyperliquid-update.md) — HL treasury macro. — `rss` [+k151]
+- [Klement — synthetic risk transfers](sources/substack-rss-klement-2026-07-09-synthetic-risk-transfers.md) — ECB SRT risks. — `rss` [+k151]
+- [Wu Blockchain — Q-Day crypto](sources/substack-rss-wublock-2026-07-09-quantum-crypto-q-day.md) — cybersec cross-route. — `rss` [+k151]
 
 ### k150-ingest (4)
 

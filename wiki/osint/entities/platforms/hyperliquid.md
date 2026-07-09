@@ -4,6 +4,7 @@ type: entity
 tags: [platform, crypto, perpetuals, dex, cemini-venue]
 keywords: []
 related:
+  - sources/substack-rss-capital-flows-2026-07-09-purr-hyperliquid-update.md
   - sources/3-18-crypto-integration-technical-audit.md
   - sources/3-19-compliance-research.md
   - sources/3-19-ip-sale-research.md
@@ -22,7 +23,7 @@ related:
   - entities/tools/lighter-xyz.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-06-09
+updated: 2026-07-09
 ---
 
 ## Relations
