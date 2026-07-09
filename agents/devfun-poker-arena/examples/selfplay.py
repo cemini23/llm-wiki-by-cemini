@@ -293,6 +293,49 @@ def bot_ten_wide_passive(table: dict, **_: Any) -> dict:
     return {"action": "fold"} if "fold" in avail else {"action": "call"}
 
 
+def bot_maniac_shark_lag(table: dict, **_: Any) -> dict:
+    """maniac_shark_lite_2 ladder S1 (K151 export): measured LAG, not hyper-maniac.
+
+    Arena stats: VPIP 30.6%, PFR 15.1%, 3-bet 22%, WTSD 22%. Live H2H: min-steal
+    bleed + occasional stack-off; folds most showdowns.
+    """
+    allowed = table.get("allowedActions") or {}
+    avail = list(allowed.get("availableActions") or [])
+    call_chips = int(allowed.get("callChips") or 0)
+    pot = int(table.get("potChips") or 0)
+    street = str(table.get("street") or "").lower()
+    bb = int(table.get("bigBlindChips") or 2)
+
+    if call_chips == 0:
+        if street in ("preflop", "") and "raise" in avail and random.random() < 0.30:
+            rr = allowed.get("raiseRange") or {}
+            lo = int(rr.get("min") or max(bb * 2, 1))
+            hi = int(rr.get("max") or lo)
+            return {"action": "raise", "amount": max(lo, min(lo, hi))}
+        if "bet" in avail and random.random() < 0.28:
+            br = allowed.get("betRange") or {}
+            lo, hi = int(br.get("min") or 1), int(br.get("max") or 1)
+            target = max(lo, min(int(max(pot, 1) * 0.50), hi))
+            return {"action": "bet", "amount": target}
+        if "check" in avail:
+            return {"action": "check"}
+        return {"action": "fold"} if "fold" in avail else {"action": "check"}
+
+    if "raise" in avail and random.random() < 0.22:
+        rr = allowed.get("raiseRange") or {}
+        lo, hi = int(rr.get("min") or 1), int(rr.get("max") or 1)
+        target = max(lo, min(int(pot * 0.65 + call_chips * 2), hi))
+        return {"action": "raise", "amount": target}
+    if "call" in avail:
+        postflop = street not in ("preflop", "")
+        call_freq = 0.35 if postflop else 0.48
+        if call_chips <= int(max(pot, 1) * 0.55) and random.random() < call_freq + 0.12:
+            return {"action": "call"}
+        if random.random() < call_freq:
+            return {"action": "call"}
+    return {"action": "fold"} if "fold" in avail else {"action": "call"}
+
+
 BOT_POOL = {
     "tight": bot_tight_passive,
     "loose": bot_loose_passive,
@@ -305,6 +348,9 @@ BOT_POOL = {
     "jungleman_calldown": bot_jungleman_calldown,
     "ten": bot_ten_wide_passive,
     "ten_wide_passive": bot_ten_wide_passive,
+    "maniac_shark_lag": bot_maniac_shark_lag,
+    "maniac_shark_lite_2": bot_maniac_shark_lag,
+    "maniac_shark": bot_maniac_shark_lag,
 }
 
 try:

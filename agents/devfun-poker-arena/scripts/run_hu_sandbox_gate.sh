@@ -175,6 +175,22 @@ case "$TABLE_FORMAT" in
     if [[ -n "$ten_bb" ]]; then
       echo "==> Advisory TEN: ${ten_bb#  } (target ≥0 bb/100 vs wide_passive steal)"
     fi
+    echo "==> HU maniac_shark_lite_2 LAG advisory (K151 ladder nemesis)"
+    mkdir -p "${BUNDLE_DIR}/maniac-shark-audit"
+    CEMINI_TABLE_FORMAT=hu CEMINI_GIN_STYLE=1 CEMINI_GIN_STYLE_PREFLOP=1 CEMINI_GIN_V008=1 \
+      CEMINI_S1B_EXPLOIT=1 CEMINI_RESEARCHER_MODE=1 \
+      CEMINI_NEMESIS_EXPLOIT=1 CEMINI_NEMESIS_TIGHT=1 CEMINI_NEMESIS_ARCHETYPE=1 \
+      CEMINI_NEMESIS_LINEAR_AGGRO=1 \
+      CEMINI_SELFPLAY_VILLAIN_HANDLE=maniac_shark_lite_2 \
+      uv run python examples/selfplay.py \
+        --agent examples/harness_sandbox_agent.py \
+        --hands "$HANDS" --players 2 --opponent maniac_shark_lag --seed 43 \
+        --trajectory-out "${BUNDLE_DIR}/maniac-shark-audit/selfplay_trajectory.jsonl" \
+        | tee "${BUNDLE_DIR}/maniac-shark-audit/summary.txt"
+    shark_bb="$(grep -E 'bb/100' "${BUNDLE_DIR}/maniac-shark-audit/summary.txt" | tail -1 || true)"
+    if [[ -n "$shark_bb" ]]; then
+      echo "==> Advisory maniac_shark: ${shark_bb#  } (target ≥0 bb/100 vs linear_aggro steal)"
+    fi
     echo "==> HU maniac/lag series audit (400h, 80h/match)"
     mkdir -p "${BUNDLE_DIR}/maniac-audit"
     CEMINI_TABLE_FORMAT=hu CEMINI_GIN_STYLE=1 CEMINI_S1B_EXPLOIT=1 CEMINI_RESEARCHER_MODE=1 \

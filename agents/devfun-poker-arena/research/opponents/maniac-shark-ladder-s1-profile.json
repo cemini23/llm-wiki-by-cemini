@@ -1,0 +1,36 @@
+{
+  "exported_at": "2026-07-09",
+  "competition_id": "cmr3n8tft01nilecm1u5jlny7",
+  "handle": "maniac_shark_lite_2",
+  "agent_id": "cmq3fkx434natqvjn2z9pbbi1",
+  "leaderboard_rank": 111,
+  "leaderboard_score": -53.38,
+  "graduate_hands": 7606,
+  "arena_stats": {
+    "vpip": 0.306,
+    "pfr": 0.151,
+    "three_bet_pct": 0.221,
+    "af": 2.58,
+    "wtsd": 0.222,
+    "wsd": 0.68,
+    "playing_style": "loose-aggressive",
+    "sample_size": 12243
+  },
+  "archetype": "linear_aggro",
+  "h2h_vs_cemini_recent_50_replays": {
+    "hands": 50,
+    "hero_bb_per_100": -890.0,
+    "hero_win_rate": 0.42,
+    "uncontested_villain_wins": 0,
+    "uncontested_hero_wins": 0,
+    "small_steal_losses_le_-20": 27,
+    "stackoff_losses_-1000": 2,
+    "stackoff_wins_1000": 1
+  },
+  "nemesis_actions": {
+    "add_to_default": true,
+    "add_to_linear_aggro": true,
+    "exploit_path": "linear_aggro via CEMINI_NEMESIS_LINEAR_AGGRO + S1B BB defend vs steal"
+  },
+  "notes": "Misleading handle — measured LAG (30/15/22), not hyper-maniac. Crushes via min-steals + occasional stack-off; low WTSD. Pairing locked 100% after ~1k K150 hands."
+}

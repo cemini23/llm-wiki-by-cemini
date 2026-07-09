@@ -40,6 +40,8 @@ _DEFAULT = (
     "damon",
     # K150 ladder S1 H2H nemesis — export 2026-07-08 (wide_passive, 95% recent pairing)
     "ten",
+    # K151 ladder S1 H2H nemesis — export 2026-07-09 (linear_aggro LAG, 100% recent pairing)
+    "maniac_shark_lite_2",
 )
 _DEFAULT_PREFIXES = (
     "v12_",
@@ -61,6 +63,8 @@ _LINEAR_AGGRO_NEMESIS = frozenset({
     "lone_wolff",
     "redline_habit",
     "acp35",
+    # K151 ladder S1 export — min-steal LAG, not wide_passive
+    "maniac_shark_lite_2",
 })
 
 

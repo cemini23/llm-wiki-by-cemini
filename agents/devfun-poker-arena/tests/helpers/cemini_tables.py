@@ -316,6 +316,32 @@ def hu_bb_vs_ten_limp(hero_hole: list[str], *, hero_stack: int = 198) -> dict:
     return _tag_villain_handle(table, "TEN")
 
 
+def hu_bb_vs_maniac_shark_minraise(
+    hero_hole: list[str],
+    *,
+    raise_to: int = 6,
+    hero_stack: int = 194,
+) -> dict:
+    """HU BB vs maniac_shark_lite_2 (K151 ladder nemesis) min-steal."""
+    return _tag_villain_handle(
+        hu_bb_vs_minraise(hero_hole, raise_to=raise_to, hero_stack=hero_stack),
+        "maniac_shark_lite_2",
+    )
+
+
+def hu_bb_vs_maniac_shark_3bet(
+    hero_hole: list[str],
+    *,
+    raise_to: int = 18,
+    hero_stack: int = 182,
+) -> dict:
+    """HU BB facing maniac_shark_lite_2 3-bet / 4-bet line — fold dominated trash."""
+    return _tag_villain_handle(
+        hu_bb_vs_minraise(hero_hole, raise_to=raise_to, hero_stack=hero_stack),
+        "maniac_shark_lite_2",
+    )
+
+
 def mp_unopened(hero_hole: list[str], *, equity_boost: bool = False) -> dict:
     """Hero MP, 6-max, unopened pot — classic 74o leak spot."""
     # seat layout: BTN=1, SB=2, BB=3, UTG=4, MP=5, CO=6
