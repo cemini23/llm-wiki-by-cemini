@@ -4,6 +4,7 @@ type: source
 tags: [source, newsletter-rss, grok, cursor, models, ccc, k151]
 keywords: [Grok 4.5, SpaceXAI, Cursor, Opus-class, coding agents]
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-09-bun-rust-fable-pulse.md
   - sources/newsletter-rss-latent-space-2026-07-08-modal-agent-infrastructure.md
 maturity: draft
 read_status: skimmed

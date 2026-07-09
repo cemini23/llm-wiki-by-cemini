@@ -1,10 +1,15 @@
 # Wiki Log
 
-updated: 2026-07-08
----
-
 updated: 2026-07-09
 ---
+
+## [2026-07-09] ingest | K152 — Addy outer-loop + PE Bun/Fable + tl;dr sec #336
+
+- **Inbox (3):** addy-osmani outer-loop, pragmatic-engineer Bun/Fable pulse, tldrsec #336 — archived egress-fi
+- **Sources (3 new):** `@sources/substack-rss-addy-osmani-2026-07-09-own-the-outer-loop.md`, `@sources/newsletter-rss-pragmatic-engineer-2026-07-09-bun-rust-fable-pulse.md`, `@sources/newsletter-rss-tldrsec-2026-07-09-tldr-sec-336.md`
+- **Briefs:** `ccc-2026-07-09_k152-own-the-outer-loop-harness.md`; CCC PE Bun/Fable cross-route; cybersecurity-wiki tl;dr #336 cross-route
+- **David/TipDrop / prod scp:** none (CCC + cybersec only)
+- **Phase-0:** none (no eval docx)
 
 ## [2026-07-09] ingest | K151 — GitHub eval + 5 arXiv + 6 RSS
 

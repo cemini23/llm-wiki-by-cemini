@@ -4,12 +4,13 @@ type: source
 tags: [source, newsletter-rss, engineering, hiring, ai, ccc, k150]
 keywords: [pragmatic-engineer, MCP, leetcode, skill-atrophy, antithesis]
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-09-bun-rust-fable-pulse.md
   - sources/newsletter-rss-pragmatic-engineer-2026-07-07-tech-jobs-market-part-3.md
   - sources/newsletter-rss-latent-space-2026-07-08-harness-engineering-rsi.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-08
-updated: 2026-07-08
+updated: 2026-07-09
 ---
 
 ## Relations

@@ -12,9 +12,17 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **614 canonical stubs** (K151 ingest — 1 eval + 4 entities + 1 concept + 5 arXiv + 6 RSS)
+Total: **617 canonical stubs** (K152 ingest — 3 RSS: Addy outer-loop, PE Bun/Fable, tl;dr sec #336)
 
 
+
+### k152-ingest (3)
+
+- [Addy Osmani — Own the Outer Loop](sources/substack-rss-addy-osmani-2026-07-09-own-the-outer-loop.md) — Quality/Verdict/Answerability → CCC brief. — `rss` [+k152]
+- [Pragmatic Engineer Pulse — Bun/Fable](sources/newsletter-rss-pragmatic-engineer-2026-07-09-bun-rust-fable-pulse.md) — AI rewrite needs tests → CCC. — `rss` [+k152]
+- [tl;dr sec #336](sources/newsletter-rss-tldrsec-2026-07-09-tldr-sec-336.md) — GuardDog/HITL/bug bounty → cybersec. — `rss` [+k152]
+- [Addy Osmani — agentic autonomy levels (Jul 3)](sources/substack-rss-addy-osmani-2026-07-03-agentic-autonomy-levels.md) — prior Addy stub; K152 backlink fill. — `rss` [+index-fill]
+- [tl;dr sec #335](sources/newsletter-rss-tldrsec-2026-07-02-tldr-sec-335---prompt-injection-as-role-confusio.md) — prior tldrsec stub; K152 backlink fill. — `rss` [+index-fill]
 
 ### k151-ingest (17)
 
