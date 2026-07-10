@@ -43,9 +43,11 @@ related:
   - concepts/irumai-indian-rummy-rl.md
   - concepts/ipo-finance-agent-benchmark.md
   - sources/arxiv-ipo-finance-agent-2606.23032-2026-06-24.md
+  - sources/arxiv-footsiesgym-2607.06514-2026-07-09.md
+  - sources/arxiv-lightweight-game-agent-2607.06854-2026-07-09.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-07-05
+updated: 2026-07-09
 ---
 
 ## Relations
@@ -59,6 +61,8 @@ updated: 2026-07-05
 - @concepts/non-markov-belief-state-benchmarks.md — Memory Gap diagnostic for F6 ablation (K125)
 - @concepts/probabilistic-agent-policy-verification.md — trajectory verifier risk bounds (K125)
 - @concepts/exact-multiplayer-nash-computation.md — K143 small-game exact baselines for M₇ strategic mixing literacy
+- @sources/arxiv-footsiesgym-2607.06514-2026-07-09.md — imperfect-info eval sibling (privileged obs + approx BR)
+- @sources/arxiv-lightweight-game-agent-2607.06854-2026-07-09.md — fixed-yardstick / information-bound ceiling
 
 ## Raw Concept
 
@@ -112,6 +116,7 @@ Same research lineage (Raeth author on paper; dev.fun PR cites multi-axis eval) 
 5. **Memory Gap (K125):** on trajectory export, tag errors where F6 off caused wrong action vs wrong action with memory on — separates forgetting from mis-decide.
 6. **Solver provenance (K143):** when using toy-game baselines for M₇ strategic mixing, record whether the chart came from exact NCP/QP, logit QRE, PED/FP-PED, CFR, or fictitious play; these are not interchangeable.
 7. **Collaboration style (K146, `[TENTATIVE]`):** log Automator / Validator / Cyborg-style LLM use from `@concepts/hybrid-intelligence-human-capital-forecasting.md` when running human-in-loop decide sessions — Validator pattern can underperform model-only.
+8. **FootsiesGym / lightweight (K151):** map privileged-self vs shared-opp obs + approx-BR exploitability to axis literacy (`agents/devfun-poker-arena/references/footsiesgym-raeth-axis-map.md`); surface `exploitability_advisory` when skill proxy looks OK but yardstick bb/100 is deeply negative. Ceiling is information-bound — prefer tougher villains over bigger MC.
 
 ## Snippets
 

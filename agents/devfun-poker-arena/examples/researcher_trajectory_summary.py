@@ -38,6 +38,13 @@ DEFAULT_GATE_THRESHOLDS: dict[str, float] = {
     "hero_submissions_min": 1.0,
 }
 
+# FootsiesGym K151 — skill ≠ exploitability advisory (not a submit gate).
+DEFAULT_EXPLOITABILITY_ADVISORY: dict[str, float] = {
+    "skill_bb100_ok_min": 0.0,
+    "yardstick_bb100_warn_max": -20.0,
+    "skill_hand_wr_ok_min": 0.45,
+}
+
 _PREFLOP_POSITION_ORDER = ("UTG", "MP", "CO", "BTN", "SB", "BB")
 
 
@@ -234,6 +241,73 @@ def compute_selfplay_axes(decisions: list[dict], results: list[dict]) -> dict[st
     }
 
 
+def compute_exploitability_advisory(
+    *,
+    skill_bb100: float | None = None,
+    yardstick_bb100: float | None = None,
+    opponent_bb100: dict[str, float] | None = None,
+    skill_hand_win_rate: float | None = None,
+    thresholds: dict[str, float] | None = None,
+) -> dict[str, Any] | None:
+    """FootsiesGym-style advisory: H2H skill can look fine while a yardstick crushes us.
+
+    Advisory only — never appended to gate_failures. Returns None when no inputs.
+    """
+    thr = dict(DEFAULT_EXPLOITABILITY_ADVISORY)
+    if thresholds:
+        thr.update(thresholds)
+
+    opp = {str(k): float(v) for k, v in (opponent_bb100 or {}).items()}
+    yardstick_handle = None
+    if opp:
+        yardstick_handle, yard_from_opp = min(opp.items(), key=lambda kv: kv[1])
+        if yardstick_bb100 is None:
+            yardstick_bb100 = yard_from_opp
+        if skill_bb100 is None:
+            skill_bb100 = round(mean(opp.values()), 4)
+
+    if skill_bb100 is None and yardstick_bb100 is None and skill_hand_win_rate is None:
+        return None
+
+    skill_ok = False
+    if skill_bb100 is not None and skill_bb100 >= thr["skill_bb100_ok_min"]:
+        skill_ok = True
+    if (
+        skill_hand_win_rate is not None
+        and skill_hand_win_rate >= thr["skill_hand_wr_ok_min"]
+    ):
+        skill_ok = True
+
+    yardstick_bad = (
+        yardstick_bb100 is not None
+        and yardstick_bb100 < thr["yardstick_bb100_warn_max"]
+    )
+    disconnect = bool(skill_ok and yardstick_bad)
+
+    note = (
+        "skill_proxy looks OK but yardstick bb/100 is deeply negative "
+        "(FootsiesGym EMAgnet pattern: H2H ≠ exploitability)"
+        if disconnect
+        else "no skill-vs-yardstick disconnect flagged"
+    )
+    out: dict[str, Any] = {
+        "schema": "devfun.exploitability_advisory.v1",
+        "advisory_only": True,
+        "skill_bb100": skill_bb100,
+        "yardstick_bb100": yardstick_bb100,
+        "yardstick_handle": yardstick_handle,
+        "skill_hand_win_rate": skill_hand_win_rate,
+        "opponent_bb100": opp or None,
+        "skill_ok": skill_ok,
+        "yardstick_bad": yardstick_bad,
+        "disconnect": disconnect,
+        "note": note,
+        "thresholds": thr,
+        "reference": "references/footsiesgym-raeth-axis-map.md",
+    }
+    return out
+
+
 def evaluate_gates(
     manifest: dict[str, Any],
     thresholds: dict[str, float] | None = None,
@@ -391,6 +465,7 @@ def build_manifest(
     selfplay_summary: dict | None,
     arena_summary: dict | None,
     bundle_dir: Path,
+    exploitability_advisory: dict | None = None,
 ) -> dict[str, Any]:
     manifest: dict[str, Any] = {
         "schema": "devfun.researcher_trajectory.v2",
@@ -402,9 +477,33 @@ def build_manifest(
     # Include memory_gap block in axis_summary if available
     if selfplay_summary and "memory_gap" in selfplay_summary:
         manifest["memory_gap"] = selfplay_summary["memory_gap"]
+    if exploitability_advisory:
+        manifest["exploitability_advisory"] = exploitability_advisory
     manifest["gate_failures"] = evaluate_gates(manifest)
     manifest["gate_pass"] = not manifest["gate_failures"]
     return manifest
+
+
+def _parse_opponent_bb100(raw: str | None) -> dict[str, float] | None:
+    """Parse 'ten:-5,maniac_shark_lag:-40' or JSON object string."""
+    if not raw or not str(raw).strip():
+        return None
+    text = str(raw).strip()
+    if text.startswith("{"):
+        data = json.loads(text)
+        if not isinstance(data, dict):
+            raise ValueError("--opponent-bb100 JSON must be an object")
+        return {str(k): float(v) for k, v in data.items()}
+    out: dict[str, float] = {}
+    for part in text.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        if ":" not in part:
+            raise ValueError(f"bad --opponent-bb100 token {part!r}; want handle:bb100")
+        handle, val = part.rsplit(":", 1)
+        out[handle.strip()] = float(val.strip())
+    return out or None
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -423,6 +522,29 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Exit 1 if axis / hero_submission gates fail",
     )
+    p.add_argument(
+        "--skill-bb100",
+        type=float,
+        default=None,
+        help="Skill proxy bb/100 (mean across soft opponents) for exploitability advisory",
+    )
+    p.add_argument(
+        "--yardstick-bb100",
+        type=float,
+        default=None,
+        help="Worst / named nemesis bb/100 for exploitability advisory",
+    )
+    p.add_argument(
+        "--skill-hand-wr",
+        type=float,
+        default=None,
+        help="Optional hand win-rate skill proxy (0-1) for exploitability advisory",
+    )
+    p.add_argument(
+        "--opponent-bb100",
+        default=None,
+        help="Per-opponent bb/100: 'ten:4.3,maniac_shark_lag:-40' or JSON object",
+    )
     args = p.parse_args(argv)
 
     if not args.selfplay and not args.export_dir:
@@ -436,6 +558,19 @@ def main(argv: list[str] | None = None) -> int:
     arena_summary = None
     if args.export_dir:
         arena_summary = summarize_arena_export(args.export_dir, args.hero)
+
+    try:
+        opponent_bb100 = _parse_opponent_bb100(args.opponent_bb100)
+    except (ValueError, json.JSONDecodeError) as exc:
+        print(f"ERROR: --opponent-bb100: {exc}", file=sys.stderr)
+        return 2
+
+    exploitability_advisory = compute_exploitability_advisory(
+        skill_bb100=args.skill_bb100,
+        yardstick_bb100=args.yardstick_bb100,
+        opponent_bb100=opponent_bb100,
+        skill_hand_win_rate=args.skill_hand_wr,
+    )
 
     out_dir = args.out_dir
     if out_dir is None:
@@ -451,6 +586,7 @@ def main(argv: list[str] | None = None) -> int:
         selfplay_summary=selfplay_summary,
         arena_summary=arena_summary,
         bundle_dir=out_dir,
+        exploitability_advisory=exploitability_advisory,
     )
     (out_dir / "axis_summary.json").write_text(
         json.dumps(manifest, indent=2, sort_keys=True) + "\n",
@@ -503,6 +639,16 @@ def main(argv: list[str] | None = None) -> int:
             f"hero_subs={arena_summary.get('hero_submissions')} "
             f"rank={arena_summary.get('hero_rank')} "
             f"bb100={arena_summary.get('hero_adjusted_bb100')}"
+        )
+
+    advisory = manifest.get("exploitability_advisory") or {}
+    if advisory:
+        flag = "DISCONNECT" if advisory.get("disconnect") else "ok"
+        print(
+            f"  exploitability_advisory: {flag} "
+            f"skill_bb100={advisory.get('skill_bb100')} "
+            f"yardstick_bb100={advisory.get('yardstick_bb100')} "
+            f"({advisory.get('yardstick_handle') or 'n/a'})"
         )
 
     failures = manifest.get("gate_failures") or []

@@ -27,13 +27,15 @@ related:
   - concepts/scientific-conclusion-synthesis-eval.md
   - sources/arxiv-2606-11337-sciconbench-scientific-synthesis-agents-2026-06-13.md
   - meta/macro-charts-email-ingest-cadence.md
+  - concepts/computational-genealogy-archival-automation.md
 maturity: core
 created: 2026-05-31
-updated: 2026-07-05
+updated: 2026-07-09
 ---
 
 ## Relations
 
+- @concepts/computational-genealogy-archival-automation.md — parallel “sources before automation / no Tier-3 invention” discipline for archival digs
 - @concepts/federated-daily-research-digest.md — K93 per-wiki digest rollout
 - @concepts/monokern-compounding-research-pipeline.md — weekly NotebookLM overlay
 - @meta/daily-research-digest-cadence.md — Phase 1 schedule + report path

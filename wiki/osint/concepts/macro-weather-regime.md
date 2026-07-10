@@ -4,6 +4,7 @@ type: concept
 tags: [concept, cemini-internal, risk, regime]
 keywords: []
 related:
+  - sources/macro-charts-paid-forward-chat-2026-07-10.md
   - sources/trading-playbook-research.md
   - sources/3-19-kalshi-trading-strategy-research.md
   - sources/3-19-compliance-research.md
@@ -23,11 +24,12 @@ related:
   - concepts/macro-charts-regime-signals.md
   - concepts/macro-charts-gold-reversal-thesis-2026-06.md
   - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
+  - concepts/reviewer-passive-injection-corpus.md
   - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
   - sources/trading-posts-compilation-16-2026-05-31.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-05
+updated: 2026-07-10
 ---
 
 ## Relations
@@ -43,6 +45,7 @@ updated: 2026-07-05
 - @entities/platforms/oanda.md
 - @entities/platforms/kalshi.md
 - @concepts/carry-trade.md — carry trade sizing is gated by Macro Weather regime: disabled in RED, half-sized in YELLOW, full-sized in GREEN.
+- @concepts/reviewer-passive-injection-corpus.md — K37 reviewer bundle cites Macro Weather as **context**, not universal XSP entry gate
 - @concepts/markov-regime-switching-models.md — sibling regime concept: Markov/HMM detects the regime statistically; Macro Weather is the macro-state framing
 - @concepts/gmm-factor-lens-regime-modeling.md — K58 reference taxonomy (Crisis / Steady State / Inflation / WOI); not wired to prod Macro Weather without validation
 - @sources/two-sigma-gmm-regime-modeling-street-view-2021.md — K58 source
@@ -92,6 +95,23 @@ framed in the corpus as the **Game of Attrition doctrine**: survive
 first, compound second. The regime flag is cheap to compute,
 auditable, and caps all downstream risk — which is exactly what an
 IP-sale buyer wants to see at the top of the stack.
+
+### XSP lane exception (K37 reviewer / long-call playbook)
+
+Macro Weather still gates **brain/orchestrator** paths and **Kelly fraction**
+sizing at the portfolio level. **XSP long-call lanes are not universal
+GREEN-only entry:**
+
+| Lane | Regime posture |
+|------|----------------|
+| **Lane B (LEAPS)** | **Accumulate on dips** — entries may fire in **YELLOW/RED** when dip rubric triggers |
+| **Lane A (tactical)** | Regime informs sizing/alerts; not a hard GREEN-only block |
+| **K37 reviewer** | Must **not** refuse `place_order` solely because regime ≠ GREEN |
+
+See @concepts/xsp-lane-trading-framework.md and `conductor/reviewer/policy.yaml`
+`regime_entry_policy` block. Prod `agents/regime_gate.py` BUY blocks on
+YELLOW/RED apply to **orchestrator** paths — XSP EMS manual/dip entries
+use lane-specific YAML, not a blanket portfolio gate.
 
 ## Snippets
 

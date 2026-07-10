@@ -4,6 +4,7 @@ type: concept
 tags: [concept, cemini-prod, ems, security, rbac, k96]
 keywords: [kalshi-bypass, position-gate, rbac-fail-open, gate-bypass, fail-closed]
 related:
+  - sources/arxiv-cage1-enterprise-governance-2607.03510-2026-07-10.md
   - sources/cemini-external-code-audit-errors-2026-06-03.md
   - concepts/production-trading-blind-spots.md
   - concepts/cemini-knowledge-application-architecture.md
@@ -13,10 +14,11 @@ related:
   - concepts/interaction-native-knowledge-harness.md
   - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
   - concepts/context-fractured-decomposition-attacks.md
+  - concepts/reviewer-passive-injection-corpus.md
   - sources/arxiv-context-fractured-decomposition-cfd-2606.09084-2026-06-12.md
 maturity: validated
 created: 2026-06-03
-updated: 2026-06-04
+updated: 2026-07-10
 ---
 
 ## Relations
@@ -25,6 +27,7 @@ updated: 2026-06-04
 - @concepts/production-trading-blind-spots.md — operational failure taxonomy
 - @cybersec-wiki/concepts/agent-runtime-guardrails.md — RBAC / runtime guard patterns
 - @concepts/interaction-native-knowledge-harness.md — maturity × action-risk gates before prod memory writes
+- @concepts/reviewer-passive-injection-corpus.md — K37 reviewer passive-injection corpus hub
 - @sources/arxiv-interaction-native-knowledge-harness-2606.01886.md — InKH governance model (K99)
 
 ## Raw Concept

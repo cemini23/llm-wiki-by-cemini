@@ -12,9 +12,35 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **617 canonical stubs** (K152 ingest — 3 RSS: Addy outer-loop, PE Bun/Fable, tl;dr sec #336)
+Total: **634 canonical stubs** (K155 ingest — 2 arXiv + 1 macro chat + 5 RSS)
 
 
+
+### k155-ingest (7)
+
+- [CAGE-1 enterprise agent governance (2607.03510)](sources/arxiv-cage1-enterprise-governance-2607.03510-2026-07-10.md) — Prebind Assurance → CCC brief. — `pdf` [+k155]
+- [PolyWorkBench multilingual agents (2607.06008)](sources/arxiv-polyworkbench-2607.06008-2026-07-10.md) — harness eval → CCC. — `pdf` [+k155]
+- [Macro Charts chat Jul 10](sources/macro-charts-paid-forward-chat-2026-07-10.md) — USDJPY/GPIF, gold/CPI → xsp brief (**scp prod**). — source [+k155]
+- [Latent Space — GPT 5.6 Sol/Terra/Luna](sources/newsletter-rss-latent-space-2026-07-10-gpt-56-sol-terra-luna.md) — model routing context. — `rss` [+k155]
+- [Capital Flows — trading framework](sources/substack-rss-capital-flows-2026-07-10-trading-investing-framework.md) — SOFR conviction → xsp brief (**scp prod**). — `rss` [+k155]
+- [Klement — Iran news bias](sources/substack-rss-klement-2026-07-10-iran-news-bias.md) — Liu media study. — `rss` [+k155]
+- [Wu Blockchain weekly Jul 10](sources/substack-rss-wublock-2026-07-10-weekly-strategy-btc-swift.md) — Strategy BTC sale, Swift pilot. — `rss` [+k155]
+
+### k154-ingest (5)
+
+- [Italian Ancestry Deep Research (Gemini)](sources/gemini-italian-ancestry-deep-research-2026-07-09.md) — town/archive playbook + tool matrix (no private pedigree). — `docx` [+k154]
+- [Italian regional genealogy archive playbook](concepts/italian-regional-genealogy-archive-playbook.md) — Abruzzo/Calabria/Trentino contacts + red flags. — concept [+k154]
+- [Nati in Trentino](entities/tools/nati-in-trentino.md) — baptism index 1815–1923 (Watch/use). — entity [+k154]
+- [Steve Morse census tools](entities/tools/steve-morse-census-tools.md) — Unified ED Finder (Use). — entity [+k154]
+- [Italian Parish Records](entities/tools/italian-parish-records.md) — parish digitization nonprofit (Watch). — entity [+k154]
+
+### k153-ingest (5)
+
+- [Automated Deep Genealogy Research (Gemini)](sources/gemini-automated-deep-genealogy-research-2026-07-09.md) — civil→parish→notarial + IDE/IIIF/HTR stack. — `docx` [+k153]
+- [Computational genealogy archival automation](concepts/computational-genealogy-archival-automation.md) — Italy era ladder + selective tool stack. — concept [+k153]
+- [gcerretani/antenati](entities/tools/gcerretani-antenati.md) — Portale Antenati IIIF downloader (Watch). — entity [+k153]
+- [Transkribus](entities/tools/transkribus.md) — HTR for parish/notarial (Watch). — entity [+k153]
+- [FamilySearch Platform API](entities/tools/familysearch-platform-api.md) — REST over UI scrape (Watch). — entity [+k153]
 
 ### k152-ingest (3)
 

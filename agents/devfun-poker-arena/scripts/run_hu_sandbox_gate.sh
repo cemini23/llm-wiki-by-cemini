@@ -65,6 +65,15 @@ run_summary() {
   fi
 }
 
+# Parse selfplay summary line "bb/100      : +7.7" → numeric string (or empty).
+_parse_bb100_from_summary() {
+  local summary_file="$1"
+  [[ -f "$summary_file" ]] || { echo ""; return 0; }
+  grep -E 'bb/100' "$summary_file" | tail -1 \
+    | sed -E 's/.*bb\/100[[:space:]]*:[[:space:]]*([+-]?[0-9.]+).*/\1/' \
+    | grep -E '^[+-]?[0-9.]+$' || true
+}
+
 run_selfplay_bundle() {
   local label="$1"
   local players="$2"
@@ -190,6 +199,22 @@ case "$TABLE_FORMAT" in
     shark_bb="$(grep -E 'bb/100' "${BUNDLE_DIR}/maniac-shark-audit/summary.txt" | tail -1 || true)"
     if [[ -n "$shark_bb" ]]; then
       echo "==> Advisory maniac_shark: ${shark_bb#  } (target ≥0 bb/100 vs linear_aggro steal)"
+    fi
+    # K151 FootsiesGym steal — skill ≠ exploitability advisory (not a submit gate).
+    ten_bb_num="$(_parse_bb100_from_summary "${BUNDLE_DIR}/ten-audit/summary.txt")"
+    shark_bb_num="$(_parse_bb100_from_summary "${BUNDLE_DIR}/maniac-shark-audit/summary.txt")"
+    if [[ -n "$ten_bb_num" || -n "$shark_bb_num" ]]; then
+      opp_bb_args=()
+      [[ -n "$ten_bb_num" ]] && opp_bb_args+=("ten:${ten_bb_num}")
+      [[ -n "$shark_bb_num" ]] && opp_bb_args+=("maniac_shark_lag:${shark_bb_num}")
+      opp_bb_csv="$(IFS=,; echo "${opp_bb_args[*]}")"
+      echo "==> FootsiesGym exploitability advisory (skill vs yardstick; advisory only)"
+      uv run python examples/researcher_trajectory_summary.py \
+        --selfplay "${BUNDLE_DIR}/selfplay_trajectory.jsonl" \
+        --out-dir "${BUNDLE_DIR}/exploitability-advisory" \
+        --opponent-bb100 "${opp_bb_csv}" \
+        | tee "${BUNDLE_DIR}/exploitability-advisory/summary.txt" || true
+      echo "    see references/footsiesgym-raeth-axis-map.md — H2H ≠ approx exploitability"
     fi
     echo "==> HU maniac/lag series audit (400h, 80h/match)"
     mkdir -p "${BUNDLE_DIR}/maniac-audit"

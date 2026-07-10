@@ -30,6 +30,18 @@ Research digest + ingest briefs target **co-primary codebases equally** (`script
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-07-10 — K155)
+
+- **K155 ingest (2026-07-10)** — 2 arXiv (CAGE-1, PolyWorkBench) + Macro Charts chat + 5 RSS. **Briefs:** xsp×2 (**scp prod**); CCC×2. **No Phase-0 / no David.**
+
+## Current state (2026-07-09 — K154)
+
+- **K154 ingest (2026-07-09)** — `Italian Ancestry Deep Research.docx` (Gemini family-prompt reply). **Concept:** Italian regional archive playbook (Abruzzo/Calabria/Trentino). **Entities:** Nati in Trentino, Steve Morse ED Finder, Italian Parish Records. **Private sprint** (laptop `Desktop/family/research/` only): Rudolph long-form, NatiTrentino Odorizzi query, PEC *copie integrali*. **No Phase-0 / no prod briefs.** Companion to K153 methodology.
+
+## Current state (2026-07-09 — K153)
+
+- **K153 ingest (2026-07-09)** — `Automated Deep Genealogy Research.docx` (Gemini). **Concept:** computational genealogy era ladder + IDE stack. **Watch entities:** antenati IIIF CLI, Transkribus, FamilySearch API. **No Phase-0 Adopt / no prod briefs** (personal archival methodology; private pedigrees stay off-wiki).
+
 ## Current state (2026-07-09 — K152)
 
 - **K152 ingest (2026-07-09)** — 3 RSS (Addy outer-loop, PE Bun/Fable pulse, tl;dr sec #336). **No eval / no Phase-0.** **Briefs:** CCC outer-loop + PE Fable cross-route; cybersec tl;dr #336. **David/prod:** none.

@@ -1,7 +1,42 @@
 # Wiki Log
 
-updated: 2026-07-09
+updated: 2026-07-10
 ---
+
+## [2026-07-10] ingest | K155 — 2 arXiv + Macro Charts + 5 RSS
+
+- **Inbox (7):** CAGE-1, PolyWorkBench, Macro Charts chat, GPT 5.6 AINews, Capital Flows framework, Klement Iran bias, Wu weekly — archived egress-fi
+- **Sources (7 new):** arxiv×2 + macro chat + 5 RSS
+- **Briefs:** xsp×2 (**scp prod** — macro charts JPY/CPI + Capital Flows SOFR); CCC×2 (CAGE-1 Prebind Assurance, PolyWorkBench)
+- **David/TipDrop / Phase-0:** none
+
+## [2026-07-09] ingest | K154 — Gemini Italian Ancestry Deep Research.docx
+
+- **Inbox (1):** `Italian Ancestry Deep Research.docx` (sha256 `39ec83a231769f13…`) — regional archive playbook; **no private pedigree / DNA / living names on wiki**
+- **Source:** `@sources/gemini-italian-ancestry-deep-research-2026-07-09.md`
+- **Concept:** `@concepts/italian-regional-genealogy-archive-playbook.md` (+ backlinks on K153 computational genealogy)
+- **Entities:** Nati in Trentino, Steve Morse ED Finder, Italian Parish Records; antenati reaffirm
+- **Private (laptop only):** `Desktop/family/research/FROM-GEMINI-FAMILY-DEEP-RESEARCH.md` + extract + dig-queue sprint
+- **Briefs / prod scp / Phase-0:** none
+- **Archive:** egress-fi `osint/Italian Ancestry Deep Research.docx`
+
+## [2026-07-09] ingest | K153 — Gemini Automated Deep Genealogy Research.docx
+
+- **Inbox (1):** `Automated Deep Genealogy Research.docx` (sha256 `a3a656eb70711bca…`) — methodology only; **no private pedigree / DNA**
+- **Source:** `@sources/gemini-automated-deep-genealogy-research-2026-07-09.md`
+- **Concept:** `@concepts/computational-genealogy-archival-automation.md`
+- **Entities (Watch):** gcerretani-antenati, Transkribus, FamilySearch Platform API
+- **Backlink:** `@concepts/cemini-wiki-ingest-workflow.md`
+- **Briefs / prod scp / Phase-0:** none (archival methodology; tools remain Watch)
+- **Archive:** egress-fi `osint/Automated Deep Genealogy Research.docx`
+
+## [2026-07-09] steal | K151 FootsiesGym → Raeth axis map + exploitability advisory
+
+- **Reference:** `agents/devfun-poker-arena/references/footsiesgym-raeth-axis-map.md`
+- **Code:** `exploitability_advisory` in `researcher_trajectory_summary.py` + HU gate yardstick echo (TEN / maniac_shark)
+- **Wiki:** deepened `@sources/arxiv-footsiesgym-2607.06514-2026-07-09.md`, `@sources/arxiv-lightweight-game-agent-2607.06854-2026-07-09.md`; Raeth concept steal #8
+- **Brief closed:** `agents/devfun-poker-arena/briefs/2026-07-09_k151-footsiesgym-benchmark-steal.md`
+- **Out of scope:** FootsiesGym install, pokerkit replace, ladder replace
 
 ## [2026-07-09] ingest | K152 — Addy outer-loop + PE Bun/Fable + tl;dr sec #336
 
