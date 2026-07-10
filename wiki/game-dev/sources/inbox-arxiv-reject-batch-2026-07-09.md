@@ -6,6 +6,7 @@ keywords: [arxiv, triage, reject, digest, robotics, quantum]
 related:
   - sources/inbox-arxiv-reject-batch-2026-07-08.md
   - sources/arxiv-2607.05352-mira-multiplayer-world-models-2026-07-09.md
+  - sources/inbox-arxiv-reject-batch-2026-07-10.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
 read_status: read

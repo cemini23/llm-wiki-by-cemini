@@ -11,13 +11,14 @@ related:
   - sources/godot-47-release-shelf-2026-06-25.md
   - sources/inbox-arxiv-reject-batch-2026-06-30.md
   - sources/inbox-arxiv-reject-batch-2026-07-01.md
+  - sources/inbox-arxiv-reject-batch-2026-07-10.md
   - meta/cross-wiki-routing.md
 read_status: read
 source_type: news-digest
 source_url: https://store.steampowered.com/news/app/2153760/view/696516113724347211
 maturity: validated
 created: 2026-06-24
-updated: 2026-07-01
+updated: 2026-07-10
 ---
 
 ## Raw Concept
@@ -36,6 +37,7 @@ Firefly announced **Stronghold 4 public demo** on Steam (2026-06-23 news cycle).
 | R3 | GamingOnLinux demo note | https://www.gamingonlinux.com/2026/06/firefly-studios-released-a-demo-for-stronghold-4/ |
 | R7 | AZ World News — hands-on demo (wood economy emphasis) | https://www.azworldnews.com/we-played-stronghold-4-and-more-wood-will-be-needed-for-the-full-version/ |
 | R8 | Game World Observer — 250k wishlists | https://gameworldobserver.com/2026/06/24/stronghold-4-has-garnered-over-250000-wishlists |
+| R3 (2026-07-08 digest) | Gameindustry.com — "Looks Ready to Reclaim the Castle" review | https://www.gameindustry.com/reviews/game-review/stronghold-4-looks-ready-to-reclaim-the-castle/ |
 
 ### Hands-on notes [TENTATIVE — press only]
 

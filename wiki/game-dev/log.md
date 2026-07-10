@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-10] ingest | 3 arXiv re-drops/rejects; Godot RC + SH4 review + C&C port news
+
+- Inbox: 3 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-10.md (2 re-drops + PSP HCI reject); archived; inbox cleared
+- News: Godot 4.7.1 RC2 → @sources/godot-47-release-shelf-2026-06-25.md; SH4 review → @sources/stronghold-4-public-demo-2026-06-24.md; C&C Claude Code iOS port → @sources/claude-code-cc-ios-port-2026-07-07.md
+- Phase-0: none; no new brief (no adoption surfaced)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 19 files)
+- Sweep: @sweeps/2026-07-10-daily.md
+
+---
+
 ## [2026-07-09] ingest | MIRA multiplayer world models + 4 rejects; Phaser MCP news
 
 - Inbox: 5 arXiv PDFs → @sources/arxiv-2607.05352-mira-multiplayer-world-models-2026-07-09.md (ingest); @sources/inbox-arxiv-reject-batch-2026-07-09.md (4 reject); archived; inbox cleared

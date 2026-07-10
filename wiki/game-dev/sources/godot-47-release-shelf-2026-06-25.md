@@ -7,13 +7,14 @@ related:
   - entities/engines/godot-4.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
   - sources/inbox-arxiv-reject-batch-2026-06-25.md
+  - sources/inbox-arxiv-reject-batch-2026-07-10.md
   - meta/cross-wiki-routing.md
 read_status: read
 source_type: news-digest
 source_url: https://pantspantsrevolution.com/godot-4-7-release/
 maturity: validated
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-07-10
 ---
 
 ## Raw Concept
@@ -38,6 +39,14 @@ Digest picks for **Godot 4.7** (2026-06-21 news cluster): editor workflow improv
 | Editor workflow QoL | Re-run Phase-0 only if 4.7 fixes NavigationAgent regressions |
 
 **Verdict:** **WATCH** — note in @entities/engines/godot-4.md; no repo pin change until stable 4.7.x + castle-sim regression pass.
+
+### Jul 2026 update [CONFIRMED — godotengine.org]
+
+| Ref | Headline | URL |
+|-----|----------|-----|
+| R15 (2026-07-09 digest) | Godot **4.7.1 RC 2** | https://godotengine.org/article/release-candidate-godot-4-7-1-rc-2/ |
+
+Patch RC — still **WATCH** for hera-agent-godot 4.7+ pin (@sources/hera-agent-godot-phase-0-audit-2026-06-26.md) and castle-sim regression before bump.
 
 ## Dead Ends
 
