@@ -6,6 +6,9 @@ keywords: [USDJPY, GPIF, gold, CPI, SOX, Fundsmith]
 related:
   - concepts/macro-weather-regime.md
   - concepts/xsp-lane-trading-framework.md
+  - concepts/macro-charts-regime-signals.md
+  - concepts/macro-charts-gold-reversal-thesis-2026-06.md
+  - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
 maturity: draft
 read_status: read
 created: 2026-07-10

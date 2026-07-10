@@ -5,13 +5,14 @@ tags: [concept, macro, semiconductors, sox, korea, k144]
 keywords: [macro-charts, sox, smh, kospi, sk-hynix, correction, ai-bottleneck]
 related:
   - sources/macro-charts-paid-forward-chat-2026-07-08.md
+  - sources/macro-charts-paid-forward-chat-2026-07-10.md
   - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
   - concepts/macro-charts-regime-signals.md
   - concepts/macro-rotation-momentum-signals-2026-05.md
   - concepts/macro-weather-regime.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-08
+updated: 2026-07-10
 ---
 
 ## Relations
@@ -27,6 +28,7 @@ Macro Charts Jun 23 **BRACE FOR IMPACT** + Jun 22 semis special — chip/AI bott
 
 **K149 (2026-07-08):** Macro Charts chat cites SMH −15% / KOSPI −23% with narrative that capital exits concentrated chipmakers — extends this correction-watch frame. [TENTATIVE]
 
+**K155 (2026-07-10):** `@sources/macro-charts-paid-forward-chat-2026-07-10.md` — SOX/KOSPI **bounce** then potential **asymmetric short** at MC target band. Operator rule: watch for range hit; **do not front-run** short without MC target confirmation. Sentiment extreme only — no auto-trade on semis sleeve. [TENTATIVE]
 
 **Catalyst (Jun 23):** KOSPI −10% session; SK Hynix / Samsung −12%+; foreign selling >$2.5B; circuit breaker triggered; single-stock leveraged ETF scrutiny in Korea.
 

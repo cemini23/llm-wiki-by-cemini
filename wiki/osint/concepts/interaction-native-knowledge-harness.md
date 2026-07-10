@@ -10,6 +10,7 @@ related:
   - concepts/agent-memory-critique.md
   - concepts/ems-execution-security-gaps.md
   - concepts/conductor-orchestrator.md
+  - concepts/reviewer-passive-injection-corpus.md
   - concepts/polymarket-copy-trading-strategy.md
   - concepts/cemini-knowledge-application-architecture.md
   - sources/agentmemory-rohitg00-cpr-impl.md
@@ -19,7 +20,7 @@ related:
   - sources/arxiv-cross-scenario-agentic-generality-2606.04315-2026-06-05.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-05
+updated: 2026-07-08
 ---
 
 ## Relations
@@ -30,6 +31,7 @@ updated: 2026-06-05
 - `@concepts/agent-memory-critique.md` — lookup vs true memory; InKH claims consolidation + forgetting
 - `@concepts/ems-execution-security-gaps.md` — action-risk gates before prod memory writes
 - `@concepts/conductor-orchestrator.md` — passive injection vs agent tool-orchestrated retrieval
+- `@concepts/reviewer-passive-injection-corpus.md` — K37 compiled reviewer bundle (manifest + build script)
 - `@concepts/polymarket-copy-trading-strategy.md` — paper's primary workflow domain
 - `@entities/tools/claude-mem.md` — laptop session observations vs persistent financial graph
 - `@sources/agentmemory-rohitg00-cpr-impl.md` — RRF graph+vector pipeline contrast

@@ -18,10 +18,11 @@ related:
   - concepts/sports-prediction-consensus-agent.md
   - concepts/polymarket-lp-bot-phase0-spec.md
   - concepts/gambling-wiki-federation.md
+  - concepts/reviewer-passive-injection-corpus.md
 
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-20
+updated: 2026-07-08
 ---
 
 ## Relations
@@ -33,6 +34,7 @@ updated: 2026-05-20
 - @concepts/taleb-fat-tails-barbell-prediction-markets.md — applies quarter-Kelly inside both buckets of the barbell
 - @concepts/polymarket-bot-architecture.md — "capital preservation > perfect entries" explicit principle
 - @concepts/gambling-wiki-federation.md — general Kelly theory in @gambling-wiki/concepts/kelly-criterion-betting.md
+- @concepts/reviewer-passive-injection-corpus.md — K37 reviewer bundle cites sizing caps
 
 ## Raw Concept
 

@@ -24,6 +24,7 @@ related:
   - concepts/macro-charts-regime-signals.md
   - concepts/macro-charts-gold-reversal-thesis-2026-06.md
   - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
+  - concepts/capital-flows-sofr-conviction-framework.md
   - concepts/reviewer-passive-injection-corpus.md
   - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
   - sources/trading-posts-compilation-16-2026-05-31.md
@@ -112,6 +113,19 @@ See @concepts/xsp-lane-trading-framework.md and `conductor/reviewer/policy.yaml`
 `regime_entry_policy` block. Prod `agents/regime_gate.py` BUY blocks on
 YELLOW/RED apply to **orchestrator** paths — XSP EMS manual/dip entries
 use lane-specific YAML, not a blanket portfolio gate.
+
+### External overlay — USDJPY yen-strength zone (K155)
+
+Macro Charts Jul 10 chat (`@sources/macro-charts-paid-forward-chat-2026-07-10.md`) flags **USDJPY 162.25–162.50** as the clearest medium-term FX R/R zone amid Japan GPIF domestic-allocation / yen-strength narrative.
+
+| Field | Posture |
+|-------|---------|
+| **Role** | **Advisory** macro-weather snapshot input — yen-strength / international macro context for **Lane B** dip framing |
+| **Not** | A GREEN/YELLOW/RED gate substitute; does not block or permit XSP entries by itself |
+| **Operator** | Log zone in `playbook_snapshot` comment block or trade journal when GPIF/yen headlines active |
+| **CPI cluster** | Pair with Jul 15 CPI tighten on Lane A overnight size (`@concepts/macro-charts-gold-reversal-thesis-2026-06.md`) |
+
+See also `@concepts/macro-charts-regime-signals.md` § Jul 10 2026.
 
 ## Snippets
 

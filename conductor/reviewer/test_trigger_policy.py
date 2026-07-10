@@ -25,7 +25,7 @@ from conductor.reviewer.trigger_policy import Bucket, Policy, ToolEntry, classif
 
 
 def _make_default_policy() -> Policy:
-    """Reference policy mirroring the default Polymarket tool surfaces.
+    """Reference policy mirroring the default XSP / EMS tool surfaces.
 
     See Task 2.2 in tasks.md for the canonical default bucket assignments.
     """
@@ -38,8 +38,8 @@ def _make_default_policy() -> Policy:
             "cancel_order": ToolEntry(bucket=Bucket.ALWAYS_REVIEW),
             # Read-only -> skip-review
             "get_price": ToolEntry(bucket=Bucket.SKIP_REVIEW),
-            "get_orderbook": ToolEntry(bucket=Bucket.SKIP_REVIEW),
-            "get_news": ToolEntry(bucket=Bucket.SKIP_REVIEW),
+            "get_regime_status": ToolEntry(bucket=Bucket.SKIP_REVIEW),
+            "get_playbook_snapshot": ToolEntry(bucket=Bucket.SKIP_REVIEW),
             # Ambiguous -> review-on-uncertainty with 0.7 threshold
             "submit_research_query": ToolEntry(
                 bucket=Bucket.REVIEW_ON_UNCERTAINTY,
@@ -89,16 +89,16 @@ class TriggerPolicyScenarioTests(unittest.TestCase):
             Bucket.SKIP_REVIEW,
         )
 
-    def test_scenario_2_get_orderbook_skips_even_with_low_confidence(self) -> None:
+    def test_scenario_2_get_playbook_snapshot_skips_even_with_low_confidence(self) -> None:
         # Skip-review tools bypass review regardless of confidence value.
         self.assertIs(
-            classify("get_orderbook", None, self.policy, base_agent_confidence=0.01),
+            classify("get_playbook_snapshot", None, self.policy, base_agent_confidence=0.01),
             Bucket.SKIP_REVIEW,
         )
 
-    def test_scenario_2_get_news_skips_with_missing_confidence(self) -> None:
+    def test_scenario_2_get_regime_status_skips_with_missing_confidence(self) -> None:
         self.assertIs(
-            classify("get_news", None, self.policy, base_agent_confidence=None),
+            classify("get_regime_status", None, self.policy, base_agent_confidence=None),
             Bucket.SKIP_REVIEW,
         )
 

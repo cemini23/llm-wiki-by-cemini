@@ -10,6 +10,7 @@ related:
   - concepts/agent-trajectory-triage-signals.md
   - concepts/deepseek-models.md
   - concepts/verbalized-sampling-llm-diversity.md
+  - concepts/reviewer-passive-injection-corpus.md
   - sources/verbalized-sampling-mode-collapse.md
   - concepts/rlhf-critic-bias.md
   - sources/rlhf-critic-bias-al-zawahreh-2026.md
@@ -19,7 +20,7 @@ related:
   - entities/tools/cua.md
 maturity: validated
 created: 2026-05-11
-updated: 2026-05-13
+updated: 2026-07-10
 ---
 
 ## Relations
@@ -30,6 +31,7 @@ updated: 2026-05-13
 - `@concepts/agent-trajectory-triage-signals.md` — complementary post-hoc layer (this concept is inference-time; signals are post-trajectory)
 - `@concepts/deepseek-models.md` — DeepSeek-R1 is the candidate Cemini reviewer; DeepSeek-V3 is the candidate base agent
 - `@concepts/verbalized-sampling-llm-diversity.md` — third orthogonal Conductor layer (generation-time distribution; reviewer/signals are pre/post-call gates)
+- `@concepts/reviewer-passive-injection-corpus.md` — compiled passive-injection bundle for reviewer prompt (K37 Phase 0)
 - `@sources/verbalized-sampling-mode-collapse.md` — VS paper source
 - `@concepts/rlhf-critic-bias.md` — **structural justification for reviewer-agent investment** (K40): reviewer-agent is a partial **Mitigation 3 + Mitigation 4 implementation in miniature** (evidence-weighted critique + audit-trail disclosure). The asymmetric-penalty framework explains *why* an evaluator-gating-an-actor architecture matters: without it, every evaluative LLM call inherits structural negativity bias.
 - `@sources/rlhf-critic-bias-al-zawahreh-2026.md` — RLHF Critic Bias source (Al-Zawahreh April 2026, draft maturity, Reference/Steal-from)
@@ -96,6 +98,10 @@ Three orthogonal axes, all tunable without retraining the base agent:
 - **Skip review**: read-only queries (`get_price`, `get_orderbook`, `get_news`)
 
 This selective-trigger design recovers most of the single-turn latency floor while preserving the reviewer's gating benefit on the high-stakes minority of calls.
+
+**Lane_id contract (XSP pre-prod)**: side-effecting order tools require `lane_id` on provisional calls so the reviewer applies the correct lane rule set and uses **refuse_only** (no `revise` of order args). Deterministic validation: `conductor.reviewer.lane_contract.validate_provisional_call`. Hub: @concepts/reviewer-passive-injection-corpus.md § Pre-prod gates.
+
+**Prebind Assurance (K155)**: CAGE-1 term for proving control before an action binds — maps directly to `refuse_only` + `validate_provisional_call` before the LLM reviewer. Pair with Addy outer-loop **Verdict** / **Answerability** (`@sources/substack-rss-addy-osmani-2026-07-09-own-the-outer-loop.md`): reviewer is the inner-loop gate; operator owns ship/block and must be able to explain why.
 
 ### Open questions
 

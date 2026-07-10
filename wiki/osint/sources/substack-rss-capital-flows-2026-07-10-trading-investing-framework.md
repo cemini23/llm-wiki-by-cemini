@@ -6,6 +6,7 @@ keywords: [SOFR curve, conviction, cross-asset, CME single-stock futures]
 related:
   - concepts/macro-weather-regime.md
   - concepts/xsp-lane-trading-framework.md
+  - concepts/capital-flows-sofr-conviction-framework.md
   - sources/substack-rss-capital-flows-2026-07-09-purr-hyperliquid-update.md
 maturity: draft
 read_status: read

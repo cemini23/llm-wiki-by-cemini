@@ -7,9 +7,10 @@
 
 ## Why deferred
 
-This OpenSpec change specifies a reviewer-agent that gates the Polymarket
-trading tool surface — `place_order`, `withdraw`, `close_position`,
-`cancel_order`, `submit_research_query`, plus read-only quote tools.
+This OpenSpec change specifies a reviewer-agent that gates the **XSP killer**
+EMS tool surface — Robinhood `place_order` / `close_position` / `cancel_order`
+on XSP long-call lanes A/B, plus `notify_operator` alerts and read-only
+regime/quote tools (`get_regime_status`, `get_playbook_snapshot`, `get_price`).
 
 The current production Conductor at `cemini-librarian:/opt/cemini/conductor/`
 implements a **Q&A routing pipeline** (taxonomy → pool → cascade → tools →
@@ -19,12 +20,12 @@ tools:
 - `kb_search` — knowledge-base lookup (read-only)
 - `stash_recall` — memory retrieval (read-only)
 
-**No Polymarket tool surface exists in production yet.** The bundled
-`conductor/reviewer/policy.yaml` describes a hypothetical tool surface that
-hasn't been built. Deploying Sprint 5 today would land middleware that
+**No XSP EMS order-gating path exists in production reviewer wiring yet.** The bundled
+`conductor/reviewer/policy.yaml` describes the XSP/Robinhood surface the
+co-primary xsp-killer bot targets; Sprint 5 middleware is not live.
 classifies every existing tool as `skip-review` → the reviewer fires zero
 times in production → dead infrastructure plus a confidence trap (devs may
-infer trading is gated when no gate path is active).
+infer XSP orders are gated when no gate path is active).
 
 ## What remains valid
 
@@ -46,19 +47,38 @@ infer trading is gated when no gate path is active).
   production tool surface to gate.
 * **Task 1.3** — Conductor middleware wiring. Same blocker.
 
+## Vocabulary: Prebind Assurance (K155)
+
+**Prebind Assurance** (CAGE-1, arXiv:2607.03510) — prove an agentic action is controlled **before** it becomes binding, effective, or operationally consequential. Actions may be admitted, held, narrowed, refused, escalated, quarantined, or made non-effective pre-consequence.
+
+**Cemini mapping (K37 reviewer, pre-prod):**
+
+| CAGE-1 posture | Reviewer implementation |
+|----------------|-------------------------|
+| Hold/refuse before bind | `refuse_only` on `place_order` / `close_position` / `cancel_order` — no `revise()` of order args |
+| Prove control pre-LLM | `conductor.reviewer.lane_contract.validate_provisional_call()` — deterministic contract violations fail **before** the LLM reviewer runs |
+| Policy gate | `trigger_policy` → `always-review` bucket on side-effecting EMS tools |
+| Outer-loop accountability | Pair with Addy **Verdict** + **Answerability** — operator owns ship/block/redirect and can explain why (`@sources/substack-rss-addy-osmani-2026-07-09-own-the-outer-loop.md`) |
+
+Cross-walk to passive-injection manifest slots: `wiki/concepts/reviewer-passive-injection-corpus.md` § CAGE-1 cross-walk.
+
 ## Re-open trigger
 
-This change re-opens when a Polymarket-integration change lands in
+This change re-opens when an **XSP EMS integration** change lands in
 `openspec/changes/` and a server-Claude install brief stages the
 reviewer-agent into `/opt/cemini/conductor/reviewer/`. At that point:
 
-1. Update `policy.yaml` to enumerate the actual Polymarket tool surface
-   that landed (verify against the actual `ToolOrchestrator._invoke`
-   dispatch table at `/opt/cemini/conductor/tools.py`)
-2. Wire feature flag + middleware hook into `ToolOrchestrator.orchestrate`
+1. Update `policy.yaml` to enumerate the actual Robinhood/EMS tool surface
+   that landed (verify against `ToolOrchestrator._invoke` / EMS router
+   dispatch at `/opt/cemini/conductor/tools.py` or EMS adapter table)
+2. Rebuild passive-injection bundle: `bash scripts/build_reviewer_context.sh`
+3. Enforce **lane_id contract** on all provisional order tools
+   (`conductor.reviewer.lane_contract.validate_provisional_call`; hub:
+   `wiki/concepts/reviewer-passive-injection-corpus.md` § Pre-prod gates)
+4. Wire feature flag + middleware hook into `ToolOrchestrator.orchestrate`
    per Task 1.3
-3. Generate ≥50 held-out correct trajectories from the new tool surface
-4. Run Sprint 5 sequence (staging soak → audit → promote)
+5. Generate ≥50 held-out correct trajectories from the new tool surface
+6. Run Sprint 5 sequence (staging soak → audit → promote)
 
 ## Lessons recorded
 

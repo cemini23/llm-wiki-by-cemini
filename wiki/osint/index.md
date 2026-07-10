@@ -12,14 +12,16 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **634 canonical stubs** (K155 ingest — 2 arXiv + 1 macro chat + 5 RSS)
+Total: **635 canonical stubs** (K155 ingest + K155 XSP concept ship)
 
 
 
 ### k155-ingest (7)
 
+- [PolyWorkBench multilingual harness eval (K155)](concepts/polyworkbench-multilingual-harness-eval.md) — hybrid structural + executable + LLM semantic eval; multilingual compounding errors. — concept [+k155]
 - [CAGE-1 enterprise agent governance (2607.03510)](sources/arxiv-cage1-enterprise-governance-2607.03510-2026-07-10.md) — Prebind Assurance → CCC brief. — `pdf` [+k155]
 - [PolyWorkBench multilingual agents (2607.06008)](sources/arxiv-polyworkbench-2607.06008-2026-07-10.md) — harness eval → CCC. — `pdf` [+k155]
+- [Capital Flows SOFR conviction framework](concepts/capital-flows-sofr-conviction-framework.md) — `[DRAFT 2026-07-10]` K155 SOFR anchor + evidence-weighted conviction for pre-Lane-A. — concept, sofr, k155
 - [Macro Charts chat Jul 10](sources/macro-charts-paid-forward-chat-2026-07-10.md) — USDJPY/GPIF, gold/CPI → xsp brief (**scp prod**). — source [+k155]
 - [Latent Space — GPT 5.6 Sol/Terra/Luna](sources/newsletter-rss-latent-space-2026-07-10-gpt-56-sol-terra-luna.md) — model routing context. — `rss` [+k155]
 - [Capital Flows — trading framework](sources/substack-rss-capital-flows-2026-07-10-trading-investing-framework.md) — SOFR conviction → xsp brief (**scp prod**). — `rss` [+k155]
@@ -1817,7 +1819,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Options capital velocity — early close and roll (SMB)](concepts/options-capital-velocity-credit-spreads-smb.md) — `[DRAFT 2026-05-29]` K79. 76% rule, put spread recycle. — concept, options, k79
 - [SMB breakout checks-in-favor (seven must-haves)](concepts/smb-breakout-checks-in-favor.md) — `[DRAFT 2026-05-29]` K79 batch 5. Pink line, blue sky, clean tape, hidden RS. — concept, breakouts, k79
 - [XSP hedge-fund core book thesis — long-dated index calls](concepts/xsp-hedge-fund-core-book-thesis.md) — `[DRAFT 2026-06-14]` K116. Mentor narrative: 30–50% long SPX/XSP LEAPS, put hedge over time, delta-adjusted scoring, index-flow. — concept, options, xsp, leaps, k116
-- [XSP four-lane trading framework (operator playbook)](concepts/xsp-lane-trading-framework.md) — `[DRAFT 2026-06-14]` Lanes A–D; Lane B = core book; Lane A prod exit brief. — concept, options, xsp, playbook, k116
+- [XSP four-lane trading framework (operator playbook)](concepts/xsp-lane-trading-framework.md) — `[DRAFT 2026-07-10]` Lanes A–D; K155 pre-Lane-A checklist; Lane B = core book. — concept, options, xsp, playbook, k116, k155
 - [XSP put credit spread — sub-$100 small-account options (SMB)](concepts/xsp-put-credit-spread-small-account-smb.md) — `[DRAFT 2026-05-29]` K79. 20MA signal, Seth Freudberg. — concept, options, xsp, k79
 - [A+ trade grading and dynamic risk (SMB prop desk)](concepts/a-plus-trade-grading-smb.md) — `[DRAFT 2026-05-29]` K79. ≤1 A+/mo, 5× B risk, mental capital. — concept, risk-management, k79
 - [Brett Steenbarger — trading psychologist](entities/people/brett-steenbarger.md) — `[DRAFT 2026-05-29]` K79 batch 4. Positive trading psychology. — person, trading-psychology, k79
@@ -1989,9 +1991,9 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Signal-adaptive execution quotes 2605.24242](sources/arxiv-signal-adaptive-execution-2605-24242-2026-06-01.md) — `[DRAFT 2026-06-01]` Explicit LOB quoting theory. — source, arxiv, k92
 - [HarrierOnChain PM toolkits](entities/tools/harrier-pm-toolkits.md) — `[DRAFT 2026-05-31]` K90 Adopt; Phase-0 pending. — tool, polymarket, k90
 - [polymarket-skills (mjunaidca)](entities/tools/polymarket-skills-mjunaidca.md) — `[DRAFT 2026-05-31]` K90 Adopt; null LICENSE on gh api. — tool, polymarket, k90
-- [Macro Charts regime signals](concepts/macro-charts-regime-signals.md) — `[DRAFT 2026-07-05]` K90 opener + K144 Great Reversal arc (Jun–Jul paid forwards). — concept, macro, k90, k144
-- [Macro Charts gold / metals reversal thesis (Jun–Jul 2026)](concepts/macro-charts-gold-reversal-thesis-2026-06.md) — `[DRAFT 2026-07-05]` K144 gold/DXY/rates/yen synthesis [TENTATIVE]. — concept, gold, k144
-- [Macro Charts SOX / tech correction watch (Jun 2026)](concepts/macro-charts-sox-tech-correction-watch-2026-06.md) — `[DRAFT 2026-07-05]` K144 Korea chip shock + SOX top watch [TENTATIVE]. — concept, semiconductors, k144
+- [Macro Charts regime signals](concepts/macro-charts-regime-signals.md) — `[DRAFT 2026-07-10]` K90 opener + K144 Great Reversal + K155 Jul 10 chat. — concept, macro, k90, k144, k155
+- [Macro Charts gold / metals reversal thesis (Jun–Jul 2026)](concepts/macro-charts-gold-reversal-thesis-2026-06.md) — `[DRAFT 2026-07-10]` K144 gold/DXY/rates/yen + K155 CPI catalyst [TENTATIVE]. — concept, gold, k144, k155
+- [Macro Charts SOX / tech correction watch (Jun 2026)](concepts/macro-charts-sox-tech-correction-watch-2026-06.md) — `[DRAFT 2026-07-10]` K144 Korea chip shock + K155 SOX/KOSPI band watch [TENTATIVE]. — concept, semiconductors, k144, k155
 - [Macro Charts paid forwards Vincent Jun 22–Jul 5 2026](sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md) — `[DRAFT 2026-07-05]` 6 paid issues + 2 chat stubs; Gmail auto-drop. — source, macro-charts, k144
 - [Macro Charts email ingest cadence](meta/macro-charts-email-ingest-cadence.md) — `[VALIDATED 2026-07-05]` RSS + Vincent Gmail poller → inbox. — meta, automation
 - [Substack RSS ingest cadence](meta/substack-rss-ingest-cadence.md) — `[VALIDATED 2026-07-05]` curated finance Substack RSS feeds → inbox. — meta, automation

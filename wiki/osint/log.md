@@ -5,6 +5,20 @@ updated: 2026-07-10
 
 ---
 
+## [2026-07-10] ccc-briefs | K155 — CAGE-1 Prebind Assurance + PolyWorkBench harness eval
+
+- **Brief A (CAGE-1):** Prebind Assurance vocabulary in `DEFERRED.md`; CAGE-1 cross-walk on `@concepts/reviewer-passive-injection-corpus.md`; minimal pointer on `@concepts/reviewer-agent-inference-time-feedback.md`; `policy.yaml` prebind comment
+- **Brief B (PolyWorkBench):** `@concepts/polyworkbench-multilingual-harness-eval.md`; `@ccc-wiki/concepts/agent-rubrics-self-correction.md` cross-wiki note
+- **Prod scp / Phase-0:** none (wiki-only)
+
+## [2026-07-10] ship | K155 XSP — Macro Charts + Capital Flows prod briefs
+
+- **Prod briefs (scp):** `briefs/2026-07-10_xsp-macro-weather-usdjpy-cpi-operator.md`, `briefs/2026-07-10_xsp-sofr-conviction-pre-lane-a-checklist.md`
+- **Steal briefs closed:** `xsp-2026-07-10_macro-charts-jpy-gold-cpi-steal.md`, `xsp-2026-07-10_capital-flows-sofr-conviction-framework-steal.md` (## Shipped sections)
+- **Concept (new):** `@concepts/capital-flows-sofr-conviction-framework.md`
+- **Concept updates:** `@concepts/macro-charts-regime-signals.md`, `@concepts/macro-charts-gold-reversal-thesis-2026-06.md`, `@concepts/macro-charts-sox-tech-correction-watch-2026-06.md`, `@concepts/macro-weather-regime.md`, `@concepts/xsp-lane-trading-framework.md` (pre-Lane-A checklist K155)
+- **skill_audit:** PASS (103.0/100) on both prod briefs
+
 ## [2026-07-10] pivot | K156 — family-tree replaces castle-sim in research process
 
 - **Co-primary swap:** castle-sim → **family-tree / computational genealogy** (`~/Desktop/family/research/` private; K153/K154 wiki methodology)

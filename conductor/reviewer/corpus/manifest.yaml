@@ -1,0 +1,130 @@
+# Curated sources for K37 reviewer-agent passive injection (Phase 0 pilot).
+# Rebuild: bash scripts/build_reviewer_context.sh
+# Hub: wiki/concepts/reviewer-passive-injection-corpus.md
+
+version: 1
+bundle_output: context_bundle.md
+
+entries:
+  - id: trigger_policy
+    type: file
+    path: ../policy.yaml
+    mode: verbatim
+    rationale: Ground-truth three-bucket gating; unknown tools default to always-review.
+
+  - id: reviewer_rubric
+    type: wiki
+    path: concepts/reviewer-agent-inference-time-feedback.md
+    sections: [Narrative, Snippets]
+    rationale: Helpfulness/harmfulness framing, trigger policy, reviewer model assignment.
+
+  - id: ems_p0_gaps
+    type: wiki
+    path: concepts/ems-execution-security-gaps.md
+    sections: [Narrative]
+    rationale: P0 execution bypass patterns the reviewer must refuse to endorse.
+
+  - id: sae_contract
+    type: wiki
+    path: concepts/sae-execution-contract.md
+    sections: [Narrative]
+    narrative_headings:
+      - "### What SAE is"
+      - "### The execution contract"
+      - "### Delegation Gap (DG)"
+    rationale: ALLOW/LIMIT/BLOCK semantics at the execution boundary.
+
+  - id: mitre_atlas_surface
+    type: wiki
+    path: concepts/mitre-atlas-taxonomy.md
+    sections: [Narrative]
+    narrative_headings:
+      - "### LLM-relevant techniques (Cemini's primary threat surface)"
+      - "### LLM-relevant mitigations"
+    rationale: Tool-poisoning and agent-invocation threat classes for side-effecting calls.
+
+  - id: rlhf_critic_guardrail
+    type: wiki
+    path: concepts/rlhf-critic-bias.md
+    sections: [Narrative]
+    narrative_headings:
+      - "### Why this matters for Cemini specifically"
+      - "### The 5 output patterns"
+      - "### The 4 proposed mitigations"
+    rationale: Over-cautious refusal is a first-class harmfulness mode for trading.
+
+  - id: inkh_passive_injection
+    type: wiki
+    path: concepts/interaction-native-knowledge-harness.md
+    sections: [Narrative]
+    narrative_headings:
+      - "### Passive vs agent-driven retrieval"
+      - "### Posture"
+    rationale: Why this bundle is pre-injected, not kb_search fan-out.
+
+  - id: prod_blind_spots
+    type: wiki
+    path: concepts/production-trading-blind-spots.md
+    sections: [Narrative]
+    narrative_headings:
+      - "### How to use this page"
+    rationale: Operational failure classes that look like bad strategy but are infra bugs.
+
+  - id: xsp_lane_framework
+    type: wiki
+    path: concepts/xsp-lane-trading-framework.md
+    sections: [Narrative]
+    narrative_headings:
+      - "### Lane map"
+      - "### Shared rules (all lanes)"
+      - "### Lane A — exit rules (v1 defaults)"
+      - "### Lane B — hedge rules (v1 defaults)"
+    rationale: XSP killer lane map, Robinhood instrument rules, Lane A/B exit defaults.
+
+  - id: xsp_regime_gate
+    type: wiki
+    path: concepts/macro-weather-regime.md
+    sections: [Narrative]
+    rationale: Macro Weather context for sizing; XSP dip lanes are NOT universal GREEN-only entry.
+
+  - id: cfd_provenance
+    type: wiki
+    path: concepts/context-fractured-decomposition-attacks.md
+    sections: [Narrative, Snippets]
+    rationale: Cross-session artifact provenance gap; reviewer must not trust stale file reads.
+
+  - id: kelly_sizing_caps
+    type: wiki
+    path: concepts/kelly-sizing-quarter.md
+    sections: [Narrative]
+    narrative_headings:
+      - "### When to override"
+      - "### Cemini relevance"
+    rationale: Fractional-Kelly defaults + hard per-position caps for order-size review.
+
+  - id: igac_intent_scope
+    type: wiki
+    wiki: cybersec
+    path: concepts/intent-governed-tool-authorization.md
+    sections: [Narrative]
+    rationale: place_order must match current user intent, not static OAuth scope alone.
+
+  - id: mcp_execution_invariants
+    type: wiki
+    wiki: cybersec
+    path: concepts/mcp-execution-control-invariants.md
+    sections: [Narrative]
+    narrative_headings:
+      - "### Layer model"
+      - "### Eight invariants → prod-mcp mapping [TENTATIVE]"
+    rationale: Execution-control layer checklist before endorsing EMS/MCP tool calls.
+
+  - id: agent_guardrail_failure_modes
+    type: wiki
+    wiki: cybersec
+    path: concepts/agent-runtime-guardrails.md
+    sections: [Narrative]
+    narrative_headings:
+      - "### Failure modes (offensive / red-team lens)"
+      - "### Defense paradigms (defensive / blue-team lens)"
+    rationale: Authority confusion, permission laundering, composition attacks on tool chains.

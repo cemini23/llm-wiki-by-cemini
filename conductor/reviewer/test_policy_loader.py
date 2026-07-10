@@ -399,11 +399,10 @@ class BundledPolicyIntegrationTests(unittest.TestCase):
         self.assertIs(policy.tools["close_position"].bucket, Bucket.ALWAYS_REVIEW)
         self.assertIs(policy.tools["cancel_order"].bucket, Bucket.ALWAYS_REVIEW)
         self.assertIs(policy.tools["get_price"].bucket, Bucket.SKIP_REVIEW)
-        self.assertIs(policy.tools["get_orderbook"].bucket, Bucket.SKIP_REVIEW)
-        self.assertIs(policy.tools["get_news"].bucket, Bucket.SKIP_REVIEW)
-        rou = policy.tools["submit_research_query"]
-        self.assertIs(rou.bucket, Bucket.REVIEW_ON_UNCERTAINTY)
-        self.assertEqual(rou.threshold, 0.7)
+        self.assertIs(policy.tools["get_regime_status"].bucket, Bucket.SKIP_REVIEW)
+        self.assertIs(policy.tools["get_playbook_snapshot"].bucket, Bucket.SKIP_REVIEW)
+        notify = policy.tools["notify_operator"]
+        self.assertIs(notify.bucket, Bucket.ALWAYS_REVIEW)
 
     def test_bundled_policy_passes_lint(self) -> None:
         policy = load_policy(self.BUNDLED)

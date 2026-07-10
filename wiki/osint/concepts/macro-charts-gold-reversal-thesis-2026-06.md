@@ -5,17 +5,19 @@ tags: [concept, macro, gold, metals, dollar, rates, k144]
 keywords: [macro-charts, gold, silver, dxy, great-reversal, sentiment, bear-trap]
 related:
   - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
+  - sources/macro-charts-paid-forward-chat-2026-07-10.md
   - concepts/macro-charts-regime-signals.md
   - concepts/macro-weather-regime.md
   - concepts/macro-rotation-momentum-signals-2026-05.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-07-10
 ---
 
 ## Relations
 
 - @sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md — K144 paid email bundle (Jun 22–Jul 5)
+- @sources/macro-charts-paid-forward-chat-2026-07-10.md — K155 CPI catalyst note
 
 ## Raw Concept
 
@@ -41,6 +43,10 @@ Synthesized from Macro Charts paid forwards (Vincent, K144). Gold/precious-metal
 ### Cemini use
 
 Pair with `@concepts/macro-weather-regime.md` as **external sentiment overlay** — useful for brain equities metals/miners sleeve and macro gate discussion, not Lane A execution input without validation.
+
+### Jul 10 2026 — CPI catalyst (K155)
+
+`@sources/macro-charts-paid-forward-chat-2026-07-10.md`: gold in **minor pullback** into **CPI Tuesday Jul 15** — near-term catalyst for Great Reversal metals leg. Operator: tighten Lane A overnight size into print; confirm GDX/gold levels from upcoming MC report before adds. `[TENTATIVE]` single-source newsletter timing.
 
 ## Snippets
 

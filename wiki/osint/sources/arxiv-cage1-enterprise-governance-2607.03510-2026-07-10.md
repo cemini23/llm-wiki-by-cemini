@@ -6,6 +6,7 @@ keywords: [CAGE-1, Prebind Assurance, authority, policy, auditability, tool safe
 related:
   - concepts/ems-execution-security-gaps.md
   - concepts/reviewer-agent-inference-time-feedback.md
+  - concepts/reviewer-passive-injection-corpus.md
   - sources/substack-rss-addy-osmani-2026-07-09-own-the-outer-loop.md
 maturity: draft
 read_status: read

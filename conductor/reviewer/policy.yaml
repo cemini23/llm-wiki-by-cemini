@@ -1,53 +1,129 @@
 # Trigger policy for K37 reviewer-agent v2 (selective-trigger gating).
+# Primary consumer: XSP killer bot — Robinhood long-call lanes A/B via EMS.
 #
 # Each tool listed below routes through one of three buckets:
 #
 #   always-review         Invoke reviewer-agent before every call.
-#                         Use for side-effecting / irreversible tools.
 #   skip-review           Dispatch directly without reviewer-agent.
-#                         Use for pure read-only / cheap idempotent queries.
 #   review-on-uncertainty Review iff base-agent confidence < uncertainty_threshold.
-#                         Missing confidence escalates to review (safe-default).
-#                         `uncertainty_threshold` is REQUIRED for this bucket;
-#                         it must lie in [0.0, 1.0].
 #
-# Tools NOT enumerated here default to `always-review` at classification time
-# (safe-default for unknown tools; never silently bypass review for an
-# unclassified surface).
+# Tools NOT enumerated default to always-review (safe-default).
 #
-# Lint rule (policy_loader.lint_policy): tools matching side-effecting naming
-# patterns (place_*, withdraw_*, cancel_*, close_*) classified as `skip-review`
-# will surface a startup warning. Fix the classification or remove the entry.
+# PRE-PROD: side-effecting order tools require lane_id — see lane_id_contract.
 
 tools:
 
-  # --- Side-effecting / irreversible (always-review) ----------------------
   place_order:
     bucket: always-review
-    notes: places a market or limit order on the broker; irreversible state change
+    notes: Robinhood XSP options via EMS; requires lane_id + lane hard limits (regime is context, not universal GREEN gate)
   withdraw:
     bucket: always-review
-    notes: moves funds off the broker; irreversible
+    notes: moves funds off broker; irreversible (rare on XSP path)
   close_position:
     bucket: always-review
-    notes: closes an open position; locks in realized P&L
+    notes: XSP exit; lane_id selects Lane A vs B hard limits
   cancel_order:
     bucket: always-review
-    notes: cancels a pending order; state change (reversible by re-placing)
+    notes: cancels pending Robinhood order
+  notify_operator:
+    bucket: always-review
+    notes: Tier-2 MCP alert (XADD operator_alerts)
 
-  # --- Read-only market data (skip-review) --------------------------------
   get_price:
     bucket: skip-review
-    notes: real-time price quote; idempotent read-only
-  get_orderbook:
+    notes: XSP or underlying quote; lane_id not required
+  get_regime_status:
     bucket: skip-review
-    notes: order-book depth snapshot; idempotent read-only
-  get_news:
+    notes: intel:playbook_snapshot regime — context for sizing/alerts; not a universal entry block for XSP lanes
+  get_playbook_snapshot:
     bucket: skip-review
-    notes: news feed lookup; idempotent read-only
+    notes: full playbook Redis snapshot
 
-  # --- Ambiguous — gate by base-agent confidence --------------------------
-  submit_research_query:
-    bucket: review-on-uncertainty
-    uncertainty_threshold: 0.7
-    notes: external paid research API; cost-bearing but not state-changing
+# ---------------------------------------------------------------------------
+# lane_id contract — PRE-PROD GATE (Sprint 5 / XSP EMS wiring)
+# ---------------------------------------------------------------------------
+# Base agent MUST attach lane_id on place_order / close_position / cancel_order.
+# Reviewer uses lane_id to select rule set; must NOT second-guess strategy.
+# Validator: conductor.reviewer.lane_contract.validate_provisional_call
+# Hub: wiki/concepts/reviewer-passive-injection-corpus.md
+
+lane_id_contract:
+  version: 1
+
+  required_on_tools:
+    - place_order
+    - close_position
+    - cancel_order
+
+  allowed_lane_ids:
+    - id: lane_a
+      label: "Lane A — 14–60 DTE overnight swing; v1 exit monitor only"
+      automation_v1: exit_only
+    - id: lane_b
+      label: "Lane B — LEAPS core book; v1 alerts + manual entry"
+      automation_v1: alerts_only
+    - id: lane_c
+      label: "Lane C — mid-dated ~10:30 ET; not v1 automated"
+      automation_v1: not_automated
+    - id: lane_d
+      label: "Lane D — weeklies; not v1 automated"
+      automation_v1: not_automated
+    - id: manual
+      label: "Operator confirm-card / discretionary"
+      automation_v1: manual_only
+    - id: smb_put_credit
+      label: "SMB short put-credit — orthogonal to long-call lanes"
+      automation_v1: not_automated
+    - id: hl_shadow
+      label: "Hyperliquid SP500 perp timing shadow — no XSP options"
+      automation_v1: not_automated
+
+  reviewer_verdict_mode:
+    place_order: refuse_only
+    close_position: refuse_only
+    cancel_order: refuse_only
+
+  reviewer_mandate:
+    # Prebind Assurance (CAGE-1 / K155): prove control before EMS bind —
+    # validate_provisional_call runs before LLM reviewer; refuse_only holds
+    # action until approved or refused (no silent revise into binding order).
+    - "Do not second-guess strategy, edge, or timing."
+    - "lane_id selects which hard-limit rule set applies; never cross-apply lanes."
+    - "Refuse (do not revise order arguments) on place_order, close_position, cancel_order."
+    - "Do NOT refuse place_order solely because regime is not GREEN — Lane B dip accumulation and related variants are designed for YELLOW/RED drawdown windows."
+    - "Regime informs sizing caps and operator alerts; lane-specific dip rubrics override portfolio GREEN-only framing."
+    - "Refuse automated place_order for lane_c, lane_d, smb_put_credit, hl_shadow until dedicated tracks ship."
+    - "Lane A v1: allow close_position per exit rules; refuse automated place_order (entry is manual)."
+    - "Lane B v1: refuse automated place_order; alerts and manual entry only."
+
+# ---------------------------------------------------------------------------
+# regime_entry_policy — lane-specific (reviewer context; NOT universal GREEN gate)
+# ---------------------------------------------------------------------------
+# Macro Weather GREEN/YELLOW/RED still gates brain/orchestrator and Kelly sizing.
+# XSP long-call lanes may add risk in non-GREEN regimes when dip rubric fires.
+
+regime_entry_policy:
+  default_reviewer_posture: context_only  # never refuse solely on non-GREEN
+
+  by_lane:
+    lane_a:
+      entry_regime: discretionary
+      notes: Tactical overnight swing; regime informs sizing — not GREEN-only
+    lane_b:
+      entry_regime: dip_accumulation
+      notes: LEAPS core book — accumulate on dips; YELLOW/RED entries expected
+    lane_c:
+      entry_regime: lane_specific
+      notes: Mid-dated ~10:30 ET rule; not v1 automated
+    lane_d:
+      entry_regime: lane_specific
+      notes: Weeklies; informed-bet tier; not v1 automated
+    manual:
+      entry_regime: operator_discretion
+      notes: Confirm-card path; regime is advisory context only
+    smb_put_credit:
+      entry_regime: orthogonal
+      notes: Short premium track — separate regime YAML when automated
+    hl_shadow:
+      entry_regime: shadow_only
+      notes: HL perp timing shadow — no XSP options entries

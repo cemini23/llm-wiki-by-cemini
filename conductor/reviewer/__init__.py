@@ -26,6 +26,14 @@ from conductor.reviewer.harmfulness_audit import (
     audit_trajectories,
     passthrough_reviewer,
 )
+from conductor.reviewer.lane_contract import (
+    LaneContract,
+    LaneContractError,
+    LaneDefinition,
+    load_lane_contract_from_policy,
+    reviewer_mandate_text,
+    validate_provisional_call,
+)
 from conductor.reviewer.policy_loader import (
     PolicyParseError,
     lint_policy,
@@ -35,6 +43,12 @@ from conductor.reviewer.policy_loader import (
 from conductor.reviewer.trigger_policy import Bucket, Policy, ToolEntry, classify
 
 __all__ = [
+    "LaneContract",
+    "LaneContractError",
+    "LaneDefinition",
+    "load_lane_contract_from_policy",
+    "reviewer_mandate_text",
+    "validate_provisional_call",
     "Bucket",
     "Outcome",
     "Policy",
