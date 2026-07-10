@@ -1596,7 +1596,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Post-Rejection Follow-up Sampling (PRFS)](concepts/post-rejection-follow-up-sampling.md) — K119: counterfactual rejection audit for filters. — concept, quant-finance, k119
 - [Classifier-assisted RL ensemble trading](concepts/classifier-assisted-rl-ensemble-trading.md) — K120: variance-threshold gating over multi-policy RL. — concept, rl-marl, k120
 - [Heuristic Portfolio Optimization (HPO)](concepts/heuristic-portfolio-optimization-hpo.md) — K120: optimality sets + GRS falsification for EW/HRP/ERC. — concept, portfolio-strategy, k120
-- [Active project research routing](concepts/active-project-research-routing.md) — K121: brief targets castle-sim / poker / XSP / PM-Kalshi. — concept, meta, k121
+- [Active project research routing](concepts/active-project-research-routing.md) — K121/K156: co-primary incl. family-tree; castle-sim legacy. — concept, meta, k121, k156
 - [ScholarQuest agentic academic search (2606.20235)](sources/arxiv-scholarquest-agentic-academic-search-2606.20235-2026-06-19.md) — `[VALIDATED 2026-06-19]` K123 cross-wiki; CONDITIONAL-GO no license. — source, arxiv, k123
 - [MetaResearcher adversarial deep research (2606.19893)](sources/arxiv-metaresearcher-deep-research-2606.19893-2026-06-20.md) — `[VALIDATED 2026-06-20]` K124 SEO cross-wiki; REFERENCE no code. — source, arxiv, k124
 - [ScholarQuest](entities/tools/scholarquest.md) — K123 agentic paper-search benchmark. — entity, tool, k123

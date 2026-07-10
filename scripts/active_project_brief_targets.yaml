@@ -60,19 +60,26 @@ projects:
     skip_brief_if:
       - "SMB short put credit unless contrast-noted"
 
-  castle-sim:
-    label: "castle-sim (Godot RTS vertical slice)"
-    code_root: "../projects/castle-sim"
-    wiki: "@game-dev-wiki"
-    brief_dir: "../projects/castle-sim/briefs"
+  family-tree:
+    label: "Family-tree / computational genealogy (Italian archival deep research)"
+    code_root: null
+    private_research_dir: "~/Desktop/family/research"
+    wiki: "@osint-wiki/concepts/computational-genealogy-archival-automation.md"
+    brief_dir: null
     scp_target: null
     co_primary: true
+    primary_goal: "Archival depth 1500s–present; jure sanguinis document chains; brick-wall breakthroughs (private — no prod scp)"
     steal_from:
-      - "Godot pathfinding, grid building, siege AI, playtest parity"
-      - "Agent harness CI (godot-stagehand, Stagehand smoke)"
-      - "Stronghold-like economy / labour contention patterns"
+      - "Italian stato civile / parish / notarial archive workflows (Antenati, Archivio di Stato, PEC copia integrale)"
+      - "GEDCOM 5.5.1 / Gramps truth layer; FamilySearch Platform API"
+      - "IIIF bulk download (gcerretani/antenati); Transkribus HTR for Latin/cursive parish acts"
+      - "Entity resolution — Double Metaphone; reverse genealogy via godparents/witnesses"
+      - "Regional playbook — Abruzzo/Calabria/Trentino (Catasto Onciario, Liste di Leva, Cassa Sacra, Nati in Trentino)"
+      - "US census staging — Steve Morse ED Finder, Ellis Island manifest nationality traps"
     skip_brief_if:
-      - "Generic quant-finance RL with no game-dev hook"
+      - "Private pedigree names, DNA results, or living-person vitals (never wiki or git)"
+      - "Generic genealogy affiliate content without reproducible archive methodology"
+      - "Godot/RTS/game-dev content unless castle-sim explicitly reopened"
 
   wc-ticket-monitor:
     label: "wc-ticket-monitor — FIFA WC26 knockout ticket price alerts"
@@ -109,4 +116,5 @@ legacy_deprioritized:
     - "Riskfolio / HRP allocation ladder on prod"
     - "Conductor harness attribution / Orch-RM BoN"
     - "Generic portfolio optimization theory without PM/XSP/poker hook"
+    - "castle-sim (Godot RTS vertical slice) — replaced by family-tree focus Jul 2026"
   action: "wiki + concept page only; brief only if user asks or ROADMAP row reopens"

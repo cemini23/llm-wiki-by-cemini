@@ -29,18 +29,18 @@ active_topics:
   - "Poker Arena — Researcher Round HU sandbox (Jun 21 β), MAFP/verifier steals, 6-max EP/PFR, HL loop (→ agents/devfun-poker-arena/briefs/)"
   - "CeminiDFS — NFL projection pipeline, nflverse calibration, ownership sim, pydfs MME (→ @gambling-wiki + ../projects/CeminiDFS/briefs/)"
   - "XSP killer bot — Lane A overnight exits + Lane B LEAPS hedge monitor on Robinhood (→ briefs/xsp-* → cemini-prod)"
-  - "castle-sim — Godot vertical slice, playtest parity, SH2 harness (→ game-dev-wiki + castle-sim/briefs/)"
+  - "Family-tree / genealogy — Italian archival deep research, IIIF/HTR/GEDCOM stack (→ @osint-wiki K153/K154 + ~/Desktop/family/research/ private)"
   - "wc-ticket-monitor — FIFA WC26 knockout resale alerts (secondary — route when source matches)"
   - "PM / Kalshi retail bot — CLOB botting, cross-venue, maker/taker postmortems (exploratory)"
   - "Agent harness for game dev + poker sessions — Cursor/Stagehand, not prod conductor KPIs"
 
 brief_routing_note: |
-  Co-primary ingest targets (equal priority): poker-arena · ceminidfs · xsp-killer · castle-sim.
-  Secondary (route when source matches): wc-ticket-monitor · pm-kalshi-bot.
+  Co-primary ingest targets (equal priority): poker-arena · ceminidfs · xsp-killer · family-tree.
+  Secondary (route when source matches): wc-ticket-monitor · pm-kalshi-bot · castle-sim (legacy).
   Full ingest briefs route per `scripts/active_project_brief_targets.yaml`.
   Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers.
   poker → agents/devfun-poker-arena/briefs/ · ceminidfs → ../projects/CeminiDFS/briefs/
-  xsp-killer → briefs/xsp-* → cemini-prod · castle-sim → ../projects/castle-sim/briefs/
+  xsp-killer → briefs/xsp-* → cemini-prod · family-tree → ~/Desktop/family/research/ (private; wiki methodology only)
   wc-ticket-monitor → ../projects/wc-ticket-monitor/briefs/ (wiki-only unless ticket-resale hook).
 
 # arXiv / research-paper lane — deduped against wiki; PDFs → inbox when NEW
@@ -69,8 +69,8 @@ paper_queries:
     query: "research paper index options LEAPS volatility surface mini-SPX XSP hedging"
     category: research paper
 
-  - cluster: rts-game-ai-paper
-    query: "research paper real-time strategy pathfinding influence map game AI arxiv"
+  - cluster: genealogy-archive-paper
+    query: "research paper genealogy archival handwriting recognition IIIF GEDCOM entity resolution historical records"
     category: research paper
 
   - cluster: agent-harness-paper
@@ -107,8 +107,8 @@ queries:
     query: 'XSP OR "Mini SPX" options LEAPS OR index call hedge Robinhood OR Cboe mini options'
     category: news
 
-  - cluster: castle-sim-godot
-    query: 'Godot RTS OR Stronghold castle builder OR isometric siege game dev GDC indie'
+  - cluster: family-tree-genealogy
+    query: 'Italian genealogy stato civile parish Antenati IIIF GEDCOM FamilySearch HTR transcription archival research'
     category: news
 
   - cluster: agent-game-poker
@@ -143,12 +143,12 @@ monokern_pipeline:
     - yt-dlp
     - inbox_pdf
     - web_url
-  ingest_hook: "After Sunday digest, one NotebookLM pass on co-primary active_topic (poker, CeminiDFS, xsp-killer, castle-sim, or PM)"
+  ingest_hook: "After Sunday digest, one NotebookLM pass on co-primary active_topic (poker, CeminiDFS, xsp-killer, family-tree, or PM)"
 
 social:
   manual_pass:
     - tool: notebooklm-osint-bridge
-      prompt: "Weekly Monokern pass on co-primary project — poker Researcher Round, CeminiDFS, xsp-killer, castle-sim, or PM/Kalshi"
+      prompt: "Weekly Monokern pass on co-primary project — poker Researcher Round, CeminiDFS, xsp-killer, family-tree genealogy, or PM/Kalshi"
     - tool: twitter-reader
       prompt: "dev.fun poker HU sandbox; XSP Mini-SPX LEAPS/options flow; NFL DFS FanDuel; PM/Kalshi bot last 24h"
     - tool: opencli-reader

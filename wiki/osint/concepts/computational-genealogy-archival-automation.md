@@ -12,9 +12,11 @@ related:
   - entities/tools/familysearch-platform-api.md
   - entities/tools/nati-in-trentino.md
   - concepts/cemini-wiki-ingest-workflow.md
+  - concepts/active-project-research-routing.md
+  - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-10
 ---
 
 ## Relations
@@ -27,6 +29,7 @@ updated: 2026-07-09
 - @entities/tools/familysearch-platform-api.md — catalog/tree API alternative to UI scrape
 - @entities/tools/nati-in-trentino.md — Trentino baptism index before parish travel
 - @concepts/cemini-wiki-ingest-workflow.md — parallel “don’t invent Tier-3 autonomy” discipline for personal archives
+- @concepts/active-project-research-routing.md — K156 co-primary family-tree routing
 
 ## Raw Concept
 

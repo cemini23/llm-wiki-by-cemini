@@ -3,6 +3,15 @@
 updated: 2026-07-10
 ---
 
+---
+
+## [2026-07-10] pivot | K156 — family-tree replaces castle-sim in research process
+
+- **Co-primary swap:** castle-sim → **family-tree / computational genealogy** (`~/Desktop/family/research/` private; K153/K154 wiki methodology)
+- **Updated:** `scripts/active_project_brief_targets.yaml`, `daily_research_config.yaml`, `daily_research_digest_run.py`, `ROADMAP.md`, `@concepts/active-project-research-routing.md`
+- **CCC sync:** eval v10.1 (`genealogy overlap`), digest footer, TipDrop batches → v10 runtime
+- **Legacy:** castle-sim in `legacy_deprioritized` + secondary routing only
+
 ## [2026-07-10] ingest | K155 — 2 arXiv + Macro Charts + 5 RSS
 
 - **Inbox (7):** CAGE-1, PolyWorkBench, Macro Charts chat, GPT 5.6 AINews, Capital Flows framework, Klement Iran bias, Wu weekly — archived egress-fi
