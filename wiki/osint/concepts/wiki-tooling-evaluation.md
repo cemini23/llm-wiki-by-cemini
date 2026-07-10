@@ -4,6 +4,7 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
   - sources/eval-url-revenue-plan-20url-2026-07-08.md
   - sources/atomicmemory-llm-wiki-compiler.md
   - sources/willynikes2-knowledge-base-server.md
@@ -629,6 +630,20 @@ Ingest: `GitHub Repo Multi-Wiki Evaluation.docx` (20 URLs, Copilot SDK cluster),
 | **Duplicate** | 1 | Multi-Wiki Link Evaluation Plan.docx — same URL set as last30days skill |
 
 **Brief routing:** TipDrop (repo-bootcamp M4); xsp-killer (moontower VIX regime steal → `briefs/xsp-2026-07-06_moontower-vix-regime-steal.md` scp prod). Gambling-wiki stubs for event-horizon + klement (sibling repo commit).
+
+## Wave K157 — Genealogy + agent orchestration eval (2026-07-10)
+
+Ingest: `Cemini Multi-Wiki Link Evaluation.docx` (20 URLs, v10 runtime — agent orchestration + genealogy stack). Phase-0: `scripts/adopt_k157_phase0.sh`.
+
+| Tier | Count | Headline |
+|------|-------|----------|
+| **Integrate** | 3 | agentic-awesome-skills, autoresearch-genealogy, Muse Spark 1.1 API (xsp spike) |
+| **Extract** | 3 | claude-code-templates → TipDrop; topola-viewer + liberu php-dna → family sprint |
+| **Watch** | 3 | bun (stability), autonomous-computer (GPU capex), webtrees (GPL + incomplete GEDCOM 7) |
+| **Context** | 3 | meshoptimizer, cultural_heritage MNLI, arches (AGPL enterprise) |
+| **Pass** | 7 | abseil, yaml-cpp, Andrew6rant, MGeurts genealogy, gramps-web (redundant), DL false positive, silsilah, rekrei |
+
+**Brief routing:** TipDrop×2 (claude-code-templates steal, agentic-awesome-skills adopt); xsp Muse Spark orchestration eval (**scp prod**); family-tree×2 private (`~/Desktop/family/research/`). No castle-sim / no pm briefs.
 
 ## Wave K148 — Revenue/integration eval + Macro Charts backfill (2026-07-07)
 

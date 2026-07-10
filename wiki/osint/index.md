@@ -12,9 +12,21 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **635 canonical stubs** (K155 ingest + K155 XSP concept ship)
+Total: **644 canonical stubs** (K157 ingest)
 
 
+
+### k157-ingest (9)
+
+- [Multi-Wiki Link Evaluation — genealogy + agent stack (2026-07-10)](sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md) — 20 URLs v10; TipDrop×2 + xsp Muse Spark + family sprint. — `docx` [+k157]
+- [davila7/claude-code-templates](entities/tools/davila7-claude-code-templates.md) — Extract → TipDrop subagent/CI steal. — entity [+k157]
+- [agentic-awesome-skills](entities/tools/agentic-awesome-skills.md) — Integrate → David skill playbooks. — entity [+k157]
+- [autoresearch-genealogy](entities/tools/autoresearch-genealogy.md) — Integrate → family Claude vault prompts. — entity [+k157]
+- [Topola Viewer](entities/tools/topola-viewer.md) — Extract → GEDCOM fan charts. — entity [+k157]
+- [liberu-genealogy-laravel](entities/tools/liberu-genealogy-laravel.md) — Extract php-dna only. — entity [+k157]
+- [Muse Spark 1.1 API](entities/tools/muse-spark-api.md) — Integrate eval → xsp brief (**scp prod**). — entity [+k157]
+- [Autonomous Computer](entities/tools/autonomous-computer.md) — Watch 8×GPU on-prem. — entity [+k157]
+- [Bun runtime](entities/tools/bun-runtime.md) — Watch stability blockers. — entity [+k157]
 
 ### k155-ingest (7)
 

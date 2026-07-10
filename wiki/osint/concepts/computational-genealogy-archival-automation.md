@@ -6,11 +6,15 @@ keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double
 related:
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
+  - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
   - concepts/italian-regional-genealogy-archive-playbook.md
   - entities/tools/gcerretani-antenati.md
   - entities/tools/transkribus.md
   - entities/tools/familysearch-platform-api.md
   - entities/tools/nati-in-trentino.md
+  - entities/tools/autoresearch-genealogy.md
+  - entities/tools/topola-viewer.md
+  - entities/tools/liberu-genealogy-laravel.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/active-project-research-routing.md
   - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
@@ -28,6 +32,10 @@ updated: 2026-07-10
 - @entities/tools/transkribus.md — handwriting recognition for Latin/cursive acts
 - @entities/tools/familysearch-platform-api.md — catalog/tree API alternative to UI scrape
 - @entities/tools/nati-in-trentino.md — Trentino baptism index before parish travel
+- @entities/tools/autoresearch-genealogy.md — K157 Claude Code vault + archival agent prompts (Integrate)
+- @entities/tools/topola-viewer.md — K157 static GEDCOM fan/hourglass charts (Extract)
+- @entities/tools/liberu-genealogy-laravel.md — K157 php-dna triangulation extract (optional)
+- @sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md — K157 eval batch
 - @concepts/cemini-wiki-ingest-workflow.md — parallel “don’t invent Tier-3 autonomy” discipline for personal archives
 - @concepts/active-project-research-routing.md — K156 co-primary family-tree routing
 
@@ -59,6 +67,8 @@ Realistic depth: **civil alone** often reaches early 1800s; **parish** can push 
 6. **HTR** — Transkribus models or multimodal LLM on page images (ceremonial Latin abbreviations).
 7. **Entity resolution** — Double Metaphone (+ edit distance) for Latinization / dialect spelling drift.
 8. **Reverse genealogy** — collateral godparent/witness graphs when the direct line vanishes.
+9. **Agent research loops (K157)** — `mattprusak/autoresearch-genealogy` vault templates for timeline-gap runs; human-verify every imported fact before GEDCOM merge.
+10. **Visualization (K157)** — `PeWu/topola-viewer` on exported GEDCOM for fan/hourglass dead-end discovery (static, no server DB).
 
 ### Cemini operating rules
 

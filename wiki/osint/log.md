@@ -5,6 +5,15 @@ updated: 2026-07-10
 
 ---
 
+## [2026-07-10] ingest | K157 — Multi-Wiki Link Evaluation.docx (20 URLs)
+
+- **Inbox (1):** `Cemini Multi-Wiki Link Evaluation.docx` (sha256 `6fea903c…`) — v10 agent + genealogy batch — archived egress-fi
+- **Source:** `@sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md`
+- **Entities (8):** claude-code-templates, agentic-awesome-skills, autoresearch-genealogy, topola-viewer, liberu-genealogy-laravel, muse-spark-api, autonomous-computer, bun-runtime
+- **Concept updates:** `@concepts/computational-genealogy-archival-automation.md`, `@concepts/wiki-tooling-evaluation.md` (K157 wave)
+- **Phase-0:** `scripts/adopt_k157_phase0.sh`
+- **Briefs:** TipDrop×2 (David adopt — claude-code-templates + agentic-awesome-skills); xsp Muse Spark orchestration eval (**scp prod**); family×2 private (`~/Desktop/family/research/`)
+
 ## [2026-07-10] ccc-briefs | K155 — CAGE-1 Prebind Assurance + PolyWorkBench harness eval
 
 - **Brief A (CAGE-1):** Prebind Assurance vocabulary in `DEFERRED.md`; CAGE-1 cross-walk on `@concepts/reviewer-passive-injection-corpus.md`; minimal pointer on `@concepts/reviewer-agent-inference-time-feedback.md`; `policy.yaml` prebind comment

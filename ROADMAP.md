@@ -38,6 +38,10 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-07-10 — K157)
+
+- **K157 ingest (2026-07-10)** — `Cemini Multi-Wiki Link Evaluation.docx` (20 URLs, v10 — agent orchestration + genealogy). **Integrate:** agentic-awesome-skills, autoresearch-genealogy, Muse Spark API. **Extract:** claude-code-templates → TipDrop; topola + liberu php-dna → family sprint. **Briefs:** TipDrop×2 (David); xsp Muse Spark (**scp prod**); family×2 private. **Phase-0:** `adopt_k157_phase0.sh`.
+
 ## Current state (2026-07-10 — K156 pivot)
 
 - **K156 research-process pivot (2026-07-10)** — **castle-sim demoted**; **family-tree / computational genealogy** promoted to co-primary #4. Updated: `active_project_brief_targets.yaml`, `daily_research_config.yaml`, CCC eval v10.1 (`genealogy overlap`). Private sprint: `~/Desktop/family/research/`; wiki methodology K153/K154 only.

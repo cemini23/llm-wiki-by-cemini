@@ -5,10 +5,12 @@ tags: [tool, skills, context-engineering, k149, integrate]
 keywords: [latent briefing, KV cache, filesystem context, self-improvement-loops, MIT]
 related:
   - sources/eval-cemini-github-repo-evaluation-2026-07-09.md
+  - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
   - sources/newsletter-rss-latent-space-2026-07-08-harness-engineering-rsi.md
   - sources/eval-url-revenue-plan-20url-2026-07-08.md
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/agentskills.md
+  - entities/tools/agentic-awesome-skills.md
 maturity: draft
 created: 2026-07-08
 updated: 2026-07-09
