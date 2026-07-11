@@ -2,8 +2,9 @@
   "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "c67973a2-3bd9-40b0-bc5b-e106d19cd7e7",
+  "activeSubmissionId": "498df8d3-c7fa-4240-8ad9-506aff0ef390",
   "watchSubmissionIds": [
+    "498df8d3-c7fa-4240-8ad9-506aff0ef390",
     "c67973a2-3bd9-40b0-bc5b-e106d19cd7e7",
     "cc20d33e-83dd-4424-b93c-01fa2a99de31",
     "bb2a7e5e-6b5c-43e3-a27e-a496c5c941ef",
@@ -14,9 +15,9 @@
   "legacyActiveSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-ladder-s1.k151.2026-07-11",
+  "agentVersion": "researcher-ladder-s1.k151.2026-07-11-sigalarm",
   "sandboxEngine": "cemini",
-  "gitCommit": "7839a47",
-  "pinnedAt": "2026-07-11T20:55:00Z",
-  "notes": "K151 replace resubmit 2026-07-11 after bb2a7e5e Failed (static timeout @1677h +51.9). Live c67973a2 with wall-clock guard; monitor pvp alert wired."
+  "gitCommit": "dc6ed68",
+  "pinnedAt": "2026-07-11T21:05:00Z",
+  "notes": "Super-audit REWORK: SIGALRM wall-clock guard (ThreadPoolExecutor was ineffective), pvp_progress + monitor dedup by submissionId. Live 498df8d3 after replace."
 }

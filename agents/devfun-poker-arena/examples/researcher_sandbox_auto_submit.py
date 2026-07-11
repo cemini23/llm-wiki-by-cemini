@@ -184,10 +184,14 @@ def fetch_agent_submissions(competition_id: str) -> list[dict[str, Any]]:
 
 
 def pvp_progress(rec: dict[str, Any]) -> tuple[int, int, str]:
-    pvp = rec.get("pvp") or {}
+    pvp = rec.get("pvp") if isinstance(rec.get("pvp"), dict) else {}
     ch = int(pvp.get("completedHands") or rec.get("completedHands") or 0)
     th = int(pvp.get("targetHands") or rec.get("targetHands") or 0)
-    status = str(pvp.get("status") or rec.get("status") or "")
+    # Prefer PvP season status when the pvp block exists (bench may be Succeeded).
+    if pvp and pvp.get("status") is not None:
+        status = str(pvp.get("status") or "")
+    else:
+        status = str(rec.get("status") or "")
     return ch, th, status
 
 

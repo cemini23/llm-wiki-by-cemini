@@ -1,12 +1,12 @@
 """Arena static-agent entrypoint — cemini_decide or gin hu004 (Option A)."""
 from __future__ import annotations
 
-import concurrent.futures
 import os
+import signal
 import sys
 import time
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any, Callable, Optional
 
 _ENGINE = os.environ.get("CEMINI_SANDBOX_ENGINE", "cemini").strip().lower()
 
@@ -40,6 +40,12 @@ if _ENGINE in ("cemini", "cemini_decide", "default"):
     os.environ.setdefault("CEMINI_NEMESIS_EXPLOIT", "1")
     os.environ.setdefault("CEMINI_ISO_PASSIVE_LP", "1")
 
+_USE_SIGALRM = hasattr(signal, "SIGALRM")
+
+
+class _DecideTimeout(Exception):
+    """Wall-clock guard fired before decide() returned."""
+
 
 def _import_decide():
     if _ENGINE in ("gin", "gin_hu004", "hu004"):
@@ -65,8 +71,10 @@ def _deadline_s(table: dict) -> float:
                 text = str(raw).replace("Z", "+00:00")
                 deadline_ts = datetime.fromisoformat(text).timestamp()
             remaining = deadline_ts - time.time()
+            if remaining <= 0.2:
+                return 0.0
             if remaining > 0:
-                return max(2.0, min(10.0, remaining - 0.15))
+                return max(0.5, min(10.0, remaining - 0.15))
         except (TypeError, ValueError, OSError):
             pass
     try:
@@ -76,12 +84,56 @@ def _deadline_s(table: dict) -> float:
     return max(floor, min(10.0, float(os.environ.get("CEMINI_DECIDE_DEADLINE_S", "8.0"))))
 
 
+def _guard_s(deadline_s: float) -> float:
+    if deadline_s <= 0:
+        return 0.0
+    return max(0.5, min(deadline_s - 0.35, 7.5))
+
+
 def _emergency_action(table: dict) -> dict[str, Any]:
     """Fail closed when wall-clock guard fires — avoid Arena 422 static timeout."""
     allowed = table.get("allowedActions") or {}
-    if allowed.get("canCheck"):
+    avail = {str(a).lower() for a in (allowed.get("availableActions") or [])}
+    if "check" in avail or allowed.get("canCheck"):
         return {"action": "check", "message": "wall-clock guard — free check"}
-    return {"action": "fold", "message": "wall-clock guard — fold"}
+    if "fold" in avail or allowed.get("canFold"):
+        return {"action": "fold", "message": "wall-clock guard — fold"}
+    if "call" in avail or allowed.get("canCall"):
+        payload: dict[str, Any] = {"action": "call", "message": "wall-clock guard — call"}
+        if allowed.get("callChips") is not None:
+            payload["amount"] = allowed.get("callChips")
+        return payload
+    return {"action": "fold", "message": "wall-clock guard — fold (fallback)"}
+
+
+def _run_decide_guarded(
+    decide: Callable[..., dict[str, Any]],
+    table: dict,
+    *,
+    deadline_s: float,
+    guard_s: float,
+) -> dict[str, Any]:
+    if guard_s <= 0:
+        return _emergency_action(table)
+    if not _USE_SIGALRM:
+        return decide(table, deadline_s=deadline_s)
+
+    def _on_alarm(_signum: int, _frame: Any) -> None:
+        raise _DecideTimeout()
+
+    previous = signal.signal(signal.SIGALRM, _on_alarm)
+    signal.setitimer(signal.ITIMER_REAL, guard_s)
+    try:
+        return decide(table, deadline_s=deadline_s)
+    except _DecideTimeout:
+        print(
+            f"sandbox wall-clock guard tripped ({guard_s:.1f}s deadline={deadline_s:.1f}s)",
+            file=sys.stderr,
+        )
+        return _emergency_action(table)
+    finally:
+        signal.setitimer(signal.ITIMER_REAL, 0)
+        signal.signal(signal.SIGALRM, previous)
 
 
 def _action_payload(out: dict[str, Any], action: str) -> dict[str, Any]:
@@ -101,18 +153,8 @@ def _action_payload(out: dict[str, Any], action: str) -> dict[str, Any]:
 def choose_action(table: dict) -> Any:
     decide = _import_decide()
     deadline = _deadline_s(table)
-    # Wall-clock guard: Arena 422 if decide() exceeds static submission deadline.
-    guard_s = max(1.0, min(deadline - 0.4, 7.5))
-    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
-        fut = pool.submit(decide, table, deadline_s=deadline)
-        try:
-            out = fut.result(timeout=guard_s)
-        except concurrent.futures.TimeoutError:
-            print(
-                f"sandbox wall-clock guard tripped ({guard_s:.1f}s deadline={deadline:.1f}s)",
-                file=sys.stderr,
-            )
-            out = _emergency_action(table)
+    guard = _guard_s(deadline)
+    out = _run_decide_guarded(decide, table, deadline_s=deadline, guard_s=guard)
     if _ENGINE in ("gin", "gin_hu004", "hu004"):
         return out
     try:

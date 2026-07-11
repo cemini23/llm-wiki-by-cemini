@@ -123,12 +123,13 @@ def poll_pinned_ladder_pvp(*, reports: Path) -> Optional[dict[str, Any]]:
         return None
 
     ch, th, pvp_status = pvp_progress(rec)
-    pvp = rec.get("pvp") or {}
+    pvp = rec.get("pvp") if isinstance(rec.get("pvp"), dict) else {}
     st = str(pvp_status or "").lower()
     record = {
         "ts": _utc_now(),
         "submissionId": sid,
         "competitionId": pin.get("competitionId"),
+        "submissionStatus": rec.get("status"),
         "pvpStatus": pvp_status,
         "completedHands": ch,
         "targetHands": th,
@@ -141,13 +142,7 @@ def poll_pinned_ladder_pvp(*, reports: Path) -> Optional[dict[str, Any]]:
     state = _load_state(state_path)
     prev = state.get("ladder_pvp") or {}
     prev_status = str(prev.get("pvpStatus") or "").lower()
-    state["ladder_pvp"] = {
-        "submissionId": sid,
-        "pvpStatus": pvp_status,
-        "completedHands": ch,
-        "last_poll_ts": _utc_now(),
-    }
-    _save_state(state_path, state)
+    prev_sid = str(prev.get("submissionId") or "")
 
     alert_lines: list[str] = []
     if st in _PVP_ALERT_STATUSES:
@@ -156,22 +151,32 @@ def poll_pinned_ladder_pvp(*, reports: Path) -> Optional[dict[str, Any]]:
             f"[{_utc_now()}] LADDER PVP {pvp_status.upper()}: submission={sid[:8]}… "
             f"hands={ch} bb/100={pvp.get('adjustedBbPer100')} err={err}"
         )
-        if st != prev_status or not prev:
+        if st != prev_status or prev_sid != sid or not prev:
             alert_lines.append(line)
             print(f"[monitor] *** ALERT {line}")
-    elif st in _PVP_ACTIVE_STATUSES:
-        print(
-            f"[monitor] ladder pvp: {pvp_status} hands={ch} "
-            f"bb/100={pvp.get('adjustedBbPer100')}"
-        )
-    else:
-        print(f"[monitor] ladder pvp: {pvp_status or 'unknown'} hands={ch}")
 
     if alert_lines:
         alert_path = reports / "alerts.txt"
         alert_path.parent.mkdir(parents=True, exist_ok=True)
         with alert_path.open("a", encoding="utf-8") as f:
             f.write("\n".join(alert_lines) + "\n")
+
+    state["ladder_pvp"] = {
+        "submissionId": sid,
+        "pvpStatus": pvp_status,
+        "completedHands": ch,
+        "last_poll_ts": _utc_now(),
+        "last_alert_key": f"{sid}:{st}" if alert_lines else prev.get("last_alert_key"),
+    }
+    _save_state(state_path, state)
+
+    if st in _PVP_ACTIVE_STATUSES:
+        print(
+            f"[monitor] ladder pvp: {pvp_status} hands={ch} "
+            f"bb/100={pvp.get('adjustedBbPer100')}"
+        )
+    elif st not in _PVP_ALERT_STATUSES:
+        print(f"[monitor] ladder pvp: {pvp_status or 'unknown'} hands={ch}")
 
     return record
 
