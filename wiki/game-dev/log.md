@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-11] ingest | 3 arXiv rejects (GaP re-drop ×3); Ziva GPT-5.6 benchmark news
+
+- Inbox: 3 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-11.md (all reject); archived; inbox cleared
+- Triage: 2607.04689 AV planning; 2607.05369 GaP re-drop; 2607.06269 LLM meta-architecture theory
+- News: @sources/ziva-gpt-56-godot-benchmark-2026-07-10.md → @entities/tools/ziva-godot-agent.md; Godot 4.8 dev 1 note on @sources/godot-47-release-shelf-2026-06-25.md
+- Phase-0: none; no new brief (Ziva stays CONDITIONAL-GO operator IDE)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 19 files)
+- Sweep: @sweeps/2026-07-11-daily.md
+
+---
+
 ## [2026-07-10] ingest | 3 arXiv re-drops/rejects; Godot RC + SH4 review + C&C port news
 
 - Inbox: 3 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-10.md (2 re-drops + PSP HCI reject); archived; inbox cleared

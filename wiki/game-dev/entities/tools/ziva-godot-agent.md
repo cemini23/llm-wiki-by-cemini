@@ -6,6 +6,7 @@ keywords: [ziva, godot, mcp, playtest, plan-mode]
 related:
   - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
   - sources/ziva-godot-asset-store-listing-2026-06-27.md
+  - sources/ziva-gpt-56-godot-benchmark-2026-07-10.md
   - entities/tools/hi-godot-ai.md
   - entities/tools/godot-mcp-landscape.md
   - entities/tools/godot-stagehand.md
@@ -15,13 +16,14 @@ related:
   - entities/tools/godot-stagehand.md
 maturity: validated
 created: 2026-06-21
-updated: 2026-07-02
+updated: 2026-07-11
 ---
 
 ## Relations
 
 - Ziva 3 release notes: https://ziva.sh/blogs/ziva-3-release
 - Godot Asset Store: @sources/ziva-godot-asset-store-listing-2026-06-27.md
+- GPT-5.6 Godot benchmark (Jul 2026): @sources/ziva-gpt-56-godot-benchmark-2026-07-10.md
 - Open comparison: https://ziva.sh/blogs/ziva-vs-godot-ai
 
 ## Raw Concept

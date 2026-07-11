@@ -8,6 +8,7 @@ related:
   - concepts/godot-castle-sim-tool-gap-shelf.md
   - sources/inbox-arxiv-reject-batch-2026-06-25.md
   - sources/inbox-arxiv-reject-batch-2026-07-10.md
+  - sources/inbox-arxiv-reject-batch-2026-07-11.md
   - meta/cross-wiki-routing.md
 read_status: read
 source_type: news-digest
@@ -47,6 +48,14 @@ Digest picks for **Godot 4.7** (2026-06-21 news cluster): editor workflow improv
 | R15 (2026-07-09 digest) | Godot **4.7.1 RC 2** | https://godotengine.org/article/release-candidate-godot-4-7-1-rc-2/ |
 
 Patch RC — still **WATCH** for hera-agent-godot 4.7+ pin (@sources/hera-agent-godot-phase-0-audit-2026-06-26.md) and castle-sim regression before bump.
+
+### Godot 4.8 dev snapshot [TENTATIVE — forum]
+
+| Ref | Headline | URL |
+|-----|----------|-----|
+| R15 (2026-07-06 digest) | Godot **4.8 dev 1** | https://forum.godotengine.org/t/dev-snapshot-godot-4-8-dev-1/141298 |
+
+Early dev track — **no pin change**; note only on @entities/engines/godot-4.md until 4.7.x stable ships.
 
 ## Dead Ends
 

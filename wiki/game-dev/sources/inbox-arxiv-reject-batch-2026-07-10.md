@@ -6,6 +6,7 @@ keywords: [arxiv, triage, reject, digest, re-drop, hci]
 related:
   - sources/inbox-arxiv-reject-batch-2026-07-09.md
   - sources/inbox-arxiv-reject-batch-2026-07-08.md
+  - sources/inbox-arxiv-reject-batch-2026-07-11.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
 read_status: read
