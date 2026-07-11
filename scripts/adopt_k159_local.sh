@@ -41,7 +41,7 @@ fi
   echo "- **Date:** $(date -u +%Y-%m-%d)"
   echo "- **Plugin:** fable-advisor@fable-advisor (user scope, enabled)"
   echo "- **Claude Code:** $CC_VER"
-  echo "- **Grok lane:** $GROK_STATUS — install from https://x.ai/cli + \`grok login\` for default implementer"
+  echo "- **Grok lane:** $GROK_STATUS — run \`grok login\` if implementer agent reports unavailable"
   echo "- **Codex lane:** $CODEX_STATUS — GPT-5.6 Sol implementer when authenticated"
   echo "- **Session:** \`/model fable\` (or \`/model opus\` if no Fable on plan)"
   echo "- **Wiki:** @entities/tools/fable-advisor.md"
@@ -51,7 +51,7 @@ fi
   echo ""
   echo "1. Open OSINT WORKSPACE in Claude Code; \`/model fable\`"
   echo "2. Delegate one wiki lint fix via orchestration skill; log token delta vs baseline"
-  echo "3. Install Grok CLI before relying on grok-implementer lane"
+  echo "3. Run \`grok login\` once if grok-implementer reports unavailable"
 } >"$REPORT"
 
 echo ""
