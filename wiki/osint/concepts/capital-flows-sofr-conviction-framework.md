@@ -5,6 +5,7 @@ tags: [concept, macro, sofr, conviction, rates, k155]
 keywords: [capital-flows, sofr-curve, conviction, cross-asset, z6, cme-single-stock-futures]
 related:
   - sources/substack-rss-capital-flows-2026-07-10-trading-investing-framework.md
+  - sources/substack-rss-capital-flows-2026-07-11-sofr-interest-rate-volatility-and-macro-endgame.md
   - sources/substack-rss-capital-flows-2026-07-05-start-here-capital-flows-a-daily-macro-map-to-ta.md
   - sources/substack-rss-capital-flows-2026-07-09-purr-hyperliquid-update.md
   - concepts/macro-weather-regime.md
@@ -12,13 +13,14 @@ related:
   - concepts/macro-charts-regime-signals.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-07-11
 ---
 
 ## Relations
 
 - @sources/substack-rss-capital-flows-2026-07-10-trading-investing-framework.md — K155 livestream framework source
-- @concepts/xsp-lane-trading-framework.md — Operator pre-Lane-A checklist (K155)
+- @sources/substack-rss-capital-flows-2026-07-11-sofr-interest-rate-volatility-and-macro-endgame.md — K158 Z6 OI + front-end vol overlay
+- @concepts/xsp-lane-trading-framework.md — Operator pre-Lane-A checklist (K155/K158)
 
 ## Raw Concept
 
@@ -48,7 +50,19 @@ Synthesized from Capital Flows Jul 10 livestream (`@sources/substack-rss-capital
 
 ### CME single-stock futures (Jul 27)
 
-Capital Flows flags **CME single-stock futures launch Jul 27** — potential overnight hedge flow on mega-cap names (e.g. ORCL-type earnings hedges). If XSP book overlaps mega-cap earnings windows, note flow risk in trade journal; no auto-trade from headline alone. `[TENTATIVE]`
+Capital Flows flags **CME single-stock futures launch Jul 27** — potential overnight hedge flow on mega-cap names (e.g. ORCL-type earnings hedges). K158 adds live names (NVDA, MSFT, ORCL, PLTR) and 24/5 expression — note flow risk in trade journal; no auto-trade from headline alone. `[TENTATIVE]`
+
+### K158 front-end overlay (Jul 11 livestream)
+
+| Signal | Read |
+|--------|------|
+| **Jul 29 FOMC** | ~66% hold / 34% hike priced — genuine path uncertainty |
+| **Z6 SOFR OI** | Largest in contract history; +28% OI in ~2 months — front-end is the trade |
+| **Z6/Z7, Z6/Z8 spreads** | Only 6bp / 14bp cuts priced — if Fed overtightens into disinflation, spreads reprice lower |
+| **Rate vol regime** | Vol pools at FOMC/CPI; subdued between catalysts → equities skew drift higher pre-CPI |
+| **Japan 2y real** | ~-38bp real on bills funding deficit — yen weakness mechanical read |
+
+Source: `@sources/substack-rss-capital-flows-2026-07-11-sofr-interest-rate-volatility-and-macro-endgame.md` `[TENTATIVE]`
 
 ### Cemini use
 

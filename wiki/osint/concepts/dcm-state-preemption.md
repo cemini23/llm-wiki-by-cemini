@@ -6,6 +6,7 @@ keywords: [DCM, exclusive jurisdiction, swap, gaming, preemption, CEA Section 5c
 related:
   - entities/tools/congress-legislators.md
   - sources/substack-rss-event-horizon-2026-07-08-kalshi-sdny-pi-denial.md
+  - sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
   - sources/3-19-compliance-research.md
   - sources/cftc-anprm-prediction-markets-2026-03-16.md
   - sources/cftc-selig-house-ag-testimony-2026-04-16.md
@@ -15,7 +16,7 @@ related:
   - concepts/ip-sale-readiness.md
 maturity: validated
 created: 2026-04-25
-updated: 2026-07-08
+updated: 2026-07-10
 ---
 
 ## Relations
@@ -26,6 +27,8 @@ updated: 2026-07-08
 - @sources/cftc-v-arizona-tro-liburdi-2026-04-10.md — first federal-court ruling in this cycle finding CFTC "likely to ultimately win" on preemption; rejected *Younger* abstention because US is a party
 - @entities/platforms/kalshi.md — primary DCM in scope; role 3 (compliance leverage point) thesis depends on preemption holding
 - @entities/platforms/polymarket.md — on-chain platform also subject to the gaming-definition outcome
+- @sources/substack-rss-wublock-2026-07-11-weekly-project-updates-bonkdao-suffers-governanc.md — K158 FCM margin application watch
+- @sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md — K158 NCLGS: states as primary opponent vs CFTC exclusive jurisdiction
 - @concepts/ip-sale-readiness.md — the IP-sale defensibility story for any Kalshi-touching architecture is binary on the preemption outcome
 
 ## Raw Concept
@@ -58,6 +61,10 @@ The structural tension this concedes:
 
 The MindCast AI public comment (2026-04-17) captures the strategic exposure even pro-CFTC commenters acknowledge:
 > "deference vulnerabilities under *Loper Bright* that could undermine the Commission's preemption cases in the Ninth and Fourth Circuits"
+
+### K158 — States as primary opponent (Event Horizon, NCLGS Jul 2026)
+
+Industry coalition frames fight as **casinos vs prediction markets**; Event Horizon argues the durable conflict is **state police power vs CFTC exclusive jurisdiction** — bipartisan AG alignment, state C&D letters, Kalshi suing states, aligned state tax/licensing incentives with casinos without requiring conspiracy. Chairman Selig (Jul 10): CFTC will defend exclusive jurisdiction over commodity derivatives including PMs; challenges preempting states in court. Complements SDNY PI denial (K149): federal preemption is **contested on multiple fronts** simultaneously. Source: `@sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md`.
 
 ### SDNY Kalshi PI denial (2026-07-08 — K149)
 

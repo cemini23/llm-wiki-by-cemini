@@ -111,9 +111,10 @@ related:
   - sources/trading-posts-compilation-6-2026-06-08.md
   - entities/people/whydeso.md
   - entities/platforms/42-space.md
+  - sources/substack-rss-wublock-2026-07-11-weekly-project-updates-bonkdao-suffers-governanc.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-05
+updated: 2026-07-11
 ---
 
 ## Relations
@@ -165,6 +166,8 @@ efficiency-gradient signal. Polymarket is explicitly flagged in the
 compliance research as a venue Cemini can **reference** (via public
 on-chain data) but not **execute on** without restructuring — hence its
 status as a read-only data source in the current stack.
+
+**K158 regulatory watch (Jul 2026):** Affiliate **Coming Home GBA LLC** filed **FCM license** with NFA (Jul 3); seeks CFTC rulebook amendment for **margin (non-full-collateral) trading** on US prediction markets with enhanced KYC (employer info). `[TENTATIVE]` — track rule text before bot architecture changes. Source: `@sources/substack-rss-wublock-2026-07-11-weekly-project-updates-bonkdao-suffers-governanc.md`.
 
 ## K30 transitive dependencies (Reference-only catalog)
 

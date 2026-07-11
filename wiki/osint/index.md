@@ -12,9 +12,17 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **644 canonical stubs** (K157 ingest)
+Total: **649 canonical stubs** (K158 ingest)
 
 
+
+### k158-ingest (5)
+
+- [Latent Space AINews Jul 11 — GPT 5.6 friction + Muse Spark](sources/newsletter-rss-latent-space-2026-07-11-ainews-not-much-happened-today.md) — harness/subagent cost; CCC context. — `rss` [+k158]
+- [Capital Flows SOFR vol + macro endgame Jul 11](sources/substack-rss-capital-flows-2026-07-11-sofr-interest-rate-volatility-and-macro-endgame.md) — Z6 OI, FOMC Jul 29 → **xsp brief scp prod**. — `rss` [+k158]
+- [Event Horizon — states vs PM federalism](sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md) — NCLGS; **pm ops brief**. — `rss` [+k158]
+- [Packt SecPro — governing autonomous enterprises](sources/substack-rss-secpro-2026-07-10-from-defending-systems-to-governing-autonomous-e.md) — cybersec handoff brief. — `rss` [+k158]
+- [Wu Blockchain weekly Jul 11](sources/substack-rss-wublock-2026-07-11-weekly-project-updates-bonkdao-suffers-governanc.md) — Polymarket FCM margin → **pm brief**. — `rss` [+k158]
 
 ### k157-ingest (9)
 

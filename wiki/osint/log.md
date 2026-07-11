@@ -1,9 +1,17 @@
 # Wiki Log
 
-updated: 2026-07-10
+updated: 2026-07-11
 ---
 
 ---
+
+## [2026-07-11] ingest | K158 — 5 RSS (4 new + Latent Space series)
+
+- **Inbox (5):** Latent Space AINews Jul 11, Capital Flows SOFR, Event Horizon federalism, SecPro autonomous enterprises, Wu Blockchain weekly — archived egress-fi
+- **Sources (5):** all new dated pages (Latent Space = distinct URL despite recurring title; preingest DUPLICATE title flagged, ingested as new issue)
+- **Concept updates:** `@concepts/capital-flows-sofr-conviction-framework.md` (K158 Z6 overlay), `@concepts/dcm-state-preemption.md` (NCLGS states framing)
+- **Briefs:** xsp SOFR front-end (**scp prod**); pm×2 Event Horizon federalism + Polymarket FCM margin (**scp prod**); cyber SecPro handoff (local)
+- **David/TipDrop / Phase-0:** none
 
 ## [2026-07-10] ingest | K157 — Multi-Wiki Link Evaluation.docx (20 URLs)
 
