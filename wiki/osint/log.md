@@ -5,6 +5,16 @@ updated: 2026-07-11
 
 ---
 
+## [2026-07-11] ingest | K159 — eval docx + Sellia genealogy docx
+
+- **Inbox (2):** `Multi-Wiki Repo Evaluation Strategy.docx`, `Ricerca Genealogica Famiglie Sellia.docx` — archived egress-fi
+- **Eval source:** `@sources/eval-multi-wiki-repo-evaluation-strategy-2026-07-11.md` — Integrate fable-advisor; Pass 17 SSG; Watch colibri
+- **Genealogy source:** `@sources/gemini-sellia-calabria-archive-routing-2026-07-11.md` — methodology only; private sprint `~/Desktop/family/research/2026-07-11_k159-sellia-costantino-passante-sprint.md`
+- **Entities:** fable-advisor, colibri
+- **Concept updates:** `@concepts/italian-regional-genealogy-archive-playbook.md` (Sellia routing table)
+- **Phase-0:** `scripts/adopt_k159_phase0.sh`
+- **Briefs:** xsp fable-advisor (**scp prod**); CCC + CeminiDFS cost steal; **no David**
+
 ## [2026-07-11] ingest | K158 — 5 RSS (4 new + Latent Space series)
 
 - **Inbox (5):** Latent Space AINews Jul 11, Capital Flows SOFR, Event Horizon federalism, SecPro autonomous enterprises, Wu Blockchain weekly — archived egress-fi

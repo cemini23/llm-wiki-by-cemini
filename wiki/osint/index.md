@@ -12,9 +12,16 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **649 canonical stubs** (K158 ingest)
+Total: **654 canonical stubs** (K159 ingest)
 
 
+
+### k159-ingest (4)
+
+- [Multi-Wiki Repo Evaluation Strategy (2026-07-11)](sources/eval-multi-wiki-repo-evaluation-strategy-2026-07-11.md) — fable-advisor Integrate + 17 SSG Pass. — `docx` [+k159]
+- [fable-advisor](entities/tools/fable-advisor.md) — architect/implementer → **xsp scp prod**. — entity [+k159]
+- [colibri](entities/tools/colibri.md) — offline MoE Watch (SSD wear). — entity [+k159]
+- [Sellia Calabria archive routing](sources/gemini-sellia-calabria-archive-routing-2026-07-11.md) — FS 2043789 + processetti; private sprint. — `docx` [+k159]
 
 ### k158-ingest (5)
 

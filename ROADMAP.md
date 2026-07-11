@@ -38,6 +38,10 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 
 **Poker focus (Jun 8):** **Researcher Round PRIMARY** — optimize for **HU** sandbox LB (trajectory + Raeth nine-axis). Playground S3 = **background intel only** (slow joins, no parallel volume service). See `@concepts/devfun-researcher-track-readiness-2026-06.md`.
 
+## Current state (2026-07-11 — K159)
+
+- **K159 ingest (2026-07-11)** — `Multi-Wiki Repo Evaluation Strategy.docx` (20 URLs, SSG batch) + `Ricerca Genealogica Famiglie Sellia.docx`. **Integrate:** fable-advisor → xsp/CCC/CeminiDFS. **Watch:** colibri. **Genealogy:** Sellia methodology + private sprint. **Briefs:** xsp (**scp prod**); CCC; CeminiDFS. **Phase-0:** `adopt_k159_phase0.sh`. **No David.**
+
 ## Current state (2026-07-11 — K158)
 
 - **K158 ingest (2026-07-11)** — 5 RSS (Capital Flows SOFR, Event Horizon federalism, SecPro, Wu Polymarket FCM, Latent Space AINews). **Briefs:** xsp×1 (**scp prod**); pm×2 (**scp prod**); cyber×1 handoff. **No Phase-0 / no David.**

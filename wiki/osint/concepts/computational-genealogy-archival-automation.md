@@ -6,6 +6,7 @@ keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double
 related:
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
+  - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
   - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
   - concepts/italian-regional-genealogy-archive-playbook.md
   - entities/tools/gcerretani-antenati.md

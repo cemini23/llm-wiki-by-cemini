@@ -4,6 +4,8 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-multi-wiki-repo-evaluation-strategy-2026-07-11.md
+  - sources/eval-multi-wiki-repo-evaluation-strategy-2026-07-11.md
   - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
   - sources/eval-url-revenue-plan-20url-2026-07-08.md
   - sources/atomicmemory-llm-wiki-compiler.md
@@ -630,6 +632,18 @@ Ingest: `GitHub Repo Multi-Wiki Evaluation.docx` (20 URLs, Copilot SDK cluster),
 | **Duplicate** | 1 | Multi-Wiki Link Evaluation Plan.docx — same URL set as last30days skill |
 
 **Brief routing:** TipDrop (repo-bootcamp M4); xsp-killer (moontower VIX regime steal → `briefs/xsp-2026-07-06_moontower-vix-regime-steal.md` scp prod). Gambling-wiki stubs for event-horizon + klement (sibling repo commit).
+
+## Wave K159 — SSG eval + fable-advisor (2026-07-11)
+
+Ingest: `Multi-Wiki Repo Evaluation Strategy.docx` (20 URLs). Phase-0: `scripts/adopt_k159_phase0.sh`.
+
+| Tier | Count | Headline |
+|------|-------|----------|
+| **Integrate** | 1 | fable-advisor → xsp/CCC/CeminiDFS API orchestration |
+| **Watch** | 1 | colibri — offline MoE; SSD/latency blockers |
+| **Pass** | 17 | SSG cluster (Next.js, Pelican AGPL, archived Slate, …) |
+
+**Brief routing:** xsp (**scp prod**); CCC; CeminiDFS. No David/TipDrop.
 
 ## Wave K157 — Genealogy + agent orchestration eval (2026-07-10)
 

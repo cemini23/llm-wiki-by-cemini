@@ -6,6 +6,8 @@ keywords: [copia integrale, PEC, Catasto Onciario, Cassa Sacra, Liste di Leva, N
 related:
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
+  - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
+  - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
   - concepts/computational-genealogy-archival-automation.md
   - entities/tools/nati-in-trentino.md
   - entities/tools/steve-morse-census-tools.md
@@ -13,7 +15,7 @@ related:
   - entities/tools/gcerretani-antenati.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-11
 ---
 
 ## Relations
@@ -24,6 +26,7 @@ updated: 2026-07-09
 - @entities/tools/nati-in-trentino.md — Trentino baptism index
 - @entities/tools/steve-morse-census-tools.md — US census ED targeting
 - @entities/tools/italian-parish-records.md — parish digitization
+- @sources/gemini-sellia-calabria-archive-routing-2026-07-11.md — K159 Sellia deep routing
 - @entities/tools/gcerretani-antenati.md — Antenati IIIF pull
 
 ## Raw Concept
@@ -52,6 +55,18 @@ Example contact patterns (verify live on *comune* sites before send): Colledimac
 2. **Liste di Leva / Ruoli matricolari** — draft lists with parental names; Abruzzo/Calabria at provincial State Archives; Trentino split Italian AS Trento vs Innsbruck for AH service.
 3. **Cassa Sacra** (Calabria post-1783) — secular property surveys when parish books burned.
 4. **Capitoli matrimoniali** — notarial dowry contracts often name multiple generations for consanguinity clearance.
+
+### Sellia (CZ) — K159 deep routing
+
+| Resource | ID / route | Use |
+|----------|------------|-----|
+| Antenati Restoration | Sellia serie ~91 packs; **46 processetti** | Gen6–8 via parish extracts in marriage packets |
+| FS Tribunale | **2043789** (1866–1910) | Unindexed Nati/Matrimoni/Morti browse — Gen4 births ~1895–1915 |
+| FS State Archive | **726599** | Morti ~1867–1890 |
+| Comune PEC | `anagrafe@comune.sellia.cz.it` | Post-1910 *copia integrale* (not on Antenati) |
+| ASC Catanzaro Leva | `as-cz@pec.cultura.gov.it` | Liste di Leva backup if civil nati missing |
+
+**Trap:** Sellia Marina (post-1956) ≠ inland Sellia — homonyms may trace to Simeri Crichi / Magisano. **Passante** surname endemic in modern Sellia; **Costantino** patronymic cluster — prove *comune* anchor before regional dragnet. Detail: `@sources/gemini-sellia-calabria-archive-routing-2026-07-11.md` (private names in `~/Desktop/family/research/`).
 
 ### US staging-ground tactics
 
