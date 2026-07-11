@@ -17,7 +17,7 @@
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
   "agentVersion": "researcher-ladder-s1.k151.2026-07-11-sigalarm",
   "sandboxEngine": "cemini",
-  "gitCommit": "dc6ed68",
+  "gitCommit": "68d80d3",
   "pinnedAt": "2026-07-11T21:05:00Z",
   "notes": "Super-audit REWORK: SIGALRM wall-clock guard (ThreadPoolExecutor was ineffective), pvp_progress + monitor dedup by submissionId. Live 498df8d3 after replace."
 }
