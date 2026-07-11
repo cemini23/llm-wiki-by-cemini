@@ -8451,3 +8451,10 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **David/TipDrop:** context-engineering adopt + api-umbrella watch
 - **Poker / CeminiDFS / CCC / cyber / gambling:** sibling briefs staged
 
+## [2026-07-11] ship | K152 poker yardstick + forgetting regret (devfun-poker-arena)
+
+- **Brief:** `agents/devfun-poker-arena/briefs/2026-07-11_k152-expert-yardstick-forgetting-regret-steal.md`
+- **Steal:** arXiv 2607.06854 expert-yardstick pool grading + 2607.07078 forgetting-factor regret for non-stationary opponent pools
+- **Shipped:** `config/hu_yardstick_pool.json`; `references/expert-yardstick-pool.md`; `compute_yardstick_pool_grade` + `compute_forgetting_factor_regret` in `researcher_trajectory_summary.py`; HU gate advisory in `run_hu_sandbox_gate.sh`; tests
+- **Posture:** advisory only — no hard submit gate on yardstick pool; adversarial-coevolution remains read-only (NO LICENSE)
+

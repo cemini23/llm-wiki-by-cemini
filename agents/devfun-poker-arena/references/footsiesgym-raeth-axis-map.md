@@ -67,4 +67,6 @@ Graded against a **fixed expert outside the train loop** (never train on the yar
 - `@wiki/sources/arxiv-footsiesgym-2607.06514-2026-07-09.md`
 - `@wiki/sources/arxiv-lightweight-game-agent-2607.06854-2026-07-09.md`
 - `briefs/2026-07-09_k151-footsiesgym-benchmark-steal.md`
+- `briefs/2026-07-11_k152-expert-yardstick-forgetting-regret-steal.md`
+- `references/expert-yardstick-pool.md` (K152 frozen pool + forgetting regret)
 - `examples/researcher_trajectory_summary.py`

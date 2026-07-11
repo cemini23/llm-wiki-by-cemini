@@ -1,0 +1,11 @@
+{
+  "schema": "devfun.hu_yardstick_pool.v1",
+  "never_train": true,
+  "opponents": {
+    "ten": {"min_bb100": 0},
+    "maniac_shark_lag": {"min_bb100": 0},
+    "tight": {"min_bb100": -5},
+    "lag": {"min_bb100": -10}
+  },
+  "notes": "Frozen yardstick pool for HU sandbox regression eval. Grade hero vs fixed exploit/expert opponents outside the train loop — never tune decide() against these handles. adversarial-coevolution (Nikelroid) has NO LICENSE — read-only reference until SPDX added; do not vendor code."
+}

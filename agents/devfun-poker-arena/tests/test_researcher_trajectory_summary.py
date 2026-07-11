@@ -10,9 +10,12 @@ sys.path.insert(0, str(ROOT / "examples"))
 from researcher_trajectory_summary import (  # noqa: E402
     build_manifest,
     compute_exploitability_advisory,
+    compute_forgetting_factor_regret,
     compute_memory_gap,
     compute_selfplay_axes,
+    compute_yardstick_pool_grade,
     evaluate_gates,
+    load_yardstick_pool_config,
     summarize_selfplay_trajectory,
 )
 
@@ -206,3 +209,89 @@ def test_exploitability_advisory_in_manifest_not_a_gate():
     assert manifest["gate_pass"] is True
     assert evaluate_gates(manifest) == []
     assert manifest["exploitability_advisory"]["disconnect"] is True
+
+
+def test_yardstick_pool_grade_pct_pass():
+    cfg = load_yardstick_pool_config()
+    grade = compute_yardstick_pool_grade(
+        {"ten": 5.0, "maniac_shark_lag": -2.0, "tight": -3.0},
+        pool_config=cfg,
+    )
+    assert grade["advisory_only"] is True
+    assert grade["n_checked"] == 3
+    assert grade["n_pass"] == 2
+    assert grade["pct_pass"] == round(2 / 3, 4)
+    assert grade["per_handle"]["ten"]["pass"] is True
+    assert grade["per_handle"]["maniac_shark_lag"]["pass"] is False
+    assert grade["per_handle"]["lag"]["missing"] is True
+    assert grade["worst_handle"] == "tight"
+
+
+def test_yardstick_pool_grade_in_manifest_not_a_gate():
+    rows = [
+        {
+            "record_type": "decision",
+            "hand_id": 1,
+            "street": "Preflop",
+            "position": "BTN",
+            "action": "raise",
+            "reasoning": '{vr: "ln:pre@BTN"}',
+            "hole_key": "AsKd",
+        },
+        {"record_type": "hand_result", "hand_id": 1, "chip_delta": 5},
+    ]
+    summary = summarize_selfplay_trajectory(rows)
+    grade = compute_yardstick_pool_grade({"tight": 8.0})
+    manifest = build_manifest(
+        selfplay_summary=summary,
+        arena_summary=None,
+        bundle_dir=Path("/tmp"),
+        yardstick_pool_grade=grade,
+    )
+    assert manifest["gate_pass"] is True
+    assert manifest["yardstick_pool_grade"]["pct_pass"] == 1.0
+
+
+def test_forgetting_factor_regret_stable_session():
+    # Recent hands match lifetime — no drift.
+    chip_deltas = [4.0] * 20
+    out = compute_forgetting_factor_regret(chip_deltas, decay=0.95)
+    assert out["n_hands"] == 20
+    assert out["lifetime_mean_bb"] == 2.0
+    assert out["recency_weighted_mean_bb"] == 2.0
+    assert out["drift_flag"] is False
+    assert out["advisory_only"] is True
+
+
+def test_forgetting_factor_regret_drift_flag():
+    # Strong early wins, recent losses → recency sags vs lifetime.
+    chip_deltas = [10.0] * 15 + [-10.0] * 10
+    out = compute_forgetting_factor_regret(
+        chip_deltas, decay=0.95, drift_bb_threshold=1.0,
+    )
+    assert out["n_hands"] == 25
+    assert out["lifetime_mean_bb"] > out["recency_weighted_mean_bb"]
+    assert out["drift_flag"] is True
+
+
+def test_forgetting_regret_wired_in_selfplay_summary():
+    rows = [
+        {
+            "record_type": "decision",
+            "hand_id": i,
+            "street": "Preflop",
+            "position": "BTN",
+            "action": "raise",
+            "reasoning": '{vr: "ln:pre@BTN"}',
+            "hole_key": "AsKd",
+        }
+        for i in range(1, 6)
+    ] + [
+        {"record_type": "hand_result", "hand_id": i, "chip_delta": 4}
+        for i in range(1, 6)
+    ]
+    summary = summarize_selfplay_trajectory(rows, forgetting_decay=0.9)
+    fr = summary.get("forgetting_regret") or {}
+    assert fr.get("n_hands") == 5
+    assert fr.get("decay") == 0.9
+    assert fr.get("lifetime_mean_bb") == 2.0

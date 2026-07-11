@@ -45,6 +45,13 @@ DEFAULT_EXPLOITABILITY_ADVISORY: dict[str, float] = {
     "skill_hand_wr_ok_min": 0.45,
 }
 
+DEFAULT_FORGETTING_DECAY = 0.95
+DEFAULT_BIG_BLIND = 2
+DEFAULT_DRIFT_BB_THRESHOLD = 3.0
+
+_REPO_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_YARDSTICK_POOL_PATH = _REPO_ROOT / "config" / "hu_yardstick_pool.json"
+
 _PREFLOP_POSITION_ORDER = ("UTG", "MP", "CO", "BTN", "SB", "BB")
 
 
@@ -241,6 +248,122 @@ def compute_selfplay_axes(decisions: list[dict], results: list[dict]) -> dict[st
     }
 
 
+def load_yardstick_pool_config(path: str | Path | None = None) -> dict[str, Any]:
+    """Load frozen HU yardstick pool spec (K152)."""
+    pool_path = Path(path) if path else DEFAULT_YARDSTICK_POOL_PATH
+    if not pool_path.is_file():
+        raise FileNotFoundError(f"yardstick pool config not found: {pool_path}")
+    data = json.loads(pool_path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError("yardstick pool config must be a JSON object")
+    return data
+
+
+def compute_yardstick_pool_grade(
+    opponent_bb100: dict[str, float],
+    pool_config: dict[str, Any] | str | Path | None = None,
+) -> dict[str, Any]:
+    """K152 advisory: % of frozen yardstick handles meeting min_bb100."""
+    if pool_config is None or isinstance(pool_config, (str, Path)):
+        cfg = load_yardstick_pool_config(pool_config)
+    else:
+        cfg = pool_config
+
+    opponents = cfg.get("opponents") or {}
+    per_handle: dict[str, Any] = {}
+    passes = 0
+    checked = 0
+
+    for handle, spec in opponents.items():
+        min_bb = float((spec or {}).get("min_bb100", 0))
+        actual = opponent_bb100.get(handle)
+        if actual is None:
+            per_handle[handle] = {
+                "min_bb100": min_bb,
+                "actual_bb100": None,
+                "pass": None,
+                "missing": True,
+            }
+            continue
+        checked += 1
+        actual_f = float(actual)
+        ok = actual_f >= min_bb
+        if ok:
+            passes += 1
+        per_handle[handle] = {
+            "min_bb100": min_bb,
+            "actual_bb100": round(actual_f, 4),
+            "pass": ok,
+            "missing": False,
+        }
+
+    worst_handle = None
+    worst_bb: float | None = None
+    for handle, val in opponent_bb100.items():
+        val_f = float(val)
+        if worst_bb is None or val_f < worst_bb:
+            worst_bb = val_f
+            worst_handle = handle
+
+    return {
+        "schema": "devfun.yardstick_pool_grade.v1",
+        "advisory_only": True,
+        "pct_pass": round(passes / checked, 4) if checked else None,
+        "n_checked": checked,
+        "n_pass": passes,
+        "per_handle": per_handle,
+        "worst_handle": worst_handle,
+        "worst_bb100": round(worst_bb, 4) if worst_bb is not None else None,
+        "never_train": cfg.get("never_train"),
+        "pool_schema": cfg.get("schema"),
+        "reference": "references/expert-yardstick-pool.md",
+    }
+
+
+def compute_forgetting_factor_regret(
+    chip_deltas: list[float],
+    *,
+    decay: float = DEFAULT_FORGETTING_DECAY,
+    big_blind: int = DEFAULT_BIG_BLIND,
+    drift_bb_threshold: float = DEFAULT_DRIFT_BB_THRESHOLD,
+) -> dict[str, Any]:
+    """K152 advisory: recency-weighted bb/100 vs lifetime mean (2607.07078)."""
+    if not chip_deltas:
+        return {
+            "schema": "devfun.forgetting_factor_regret.v1",
+            "advisory_only": True,
+            "lifetime_mean_bb": None,
+            "recency_weighted_mean_bb": None,
+            "decay": decay,
+            "n_hands": 0,
+            "drift_flag": False,
+            "reference": "references/expert-yardstick-pool.md",
+        }
+
+    bb_vals = [float(d) / big_blind for d in chip_deltas]
+    n = len(bb_vals)
+    lifetime_mean_bb = round(mean(bb_vals), 4)
+    weights = [decay ** (n - 1 - i) for i in range(n)]
+    w_sum = sum(weights)
+    recency_weighted = sum(w * v for w, v in zip(weights, bb_vals)) / w_sum
+    recency_weighted_mean_bb = round(recency_weighted, 4)
+    drift_flag = (
+        n >= 10
+        and (lifetime_mean_bb - recency_weighted_mean_bb) > drift_bb_threshold
+    )
+
+    return {
+        "schema": "devfun.forgetting_factor_regret.v1",
+        "advisory_only": True,
+        "lifetime_mean_bb": lifetime_mean_bb,
+        "recency_weighted_mean_bb": recency_weighted_mean_bb,
+        "decay": decay,
+        "n_hands": n,
+        "drift_flag": drift_flag,
+        "reference": "references/expert-yardstick-pool.md",
+    }
+
+
 def compute_exploitability_advisory(
     *,
     skill_bb100: float | None = None,
@@ -354,7 +477,11 @@ def evaluate_gates(
     return failures
 
 
-def summarize_selfplay_trajectory(rows: list[dict]) -> dict[str, Any]:
+def summarize_selfplay_trajectory(
+    rows: list[dict],
+    *,
+    forgetting_decay: float = DEFAULT_FORGETTING_DECAY,
+) -> dict[str, Any]:
     decisions = [r for r in rows if r.get("record_type") == "decision"]
     results = [r for r in rows if r.get("record_type") == "hand_result"]
     if not decisions:
@@ -391,6 +518,15 @@ def summarize_selfplay_trajectory(rows: list[dict]) -> dict[str, Any]:
     hands = len(results) or len({d.get("hand_id") for d in decisions})
     axes = compute_selfplay_axes(decisions, results)
     memory_gap = compute_memory_gap(decisions)
+    chip_deltas = [
+        float(r.get("chip_delta"))
+        for r in results
+        if r.get("chip_delta") is not None
+    ]
+    forgetting_regret = compute_forgetting_factor_regret(
+        chip_deltas,
+        decay=forgetting_decay,
+    )
 
     return {
         "source": "selfplay",
@@ -409,6 +545,7 @@ def summarize_selfplay_trajectory(rows: list[dict]) -> dict[str, Any]:
         ).most_common(1)[0][0] if decisions else None,
         "axes": axes,
         "memory_gap": memory_gap,
+        "forgetting_regret": forgetting_regret,
     }
 
 
@@ -466,6 +603,7 @@ def build_manifest(
     arena_summary: dict | None,
     bundle_dir: Path,
     exploitability_advisory: dict | None = None,
+    yardstick_pool_grade: dict | None = None,
 ) -> dict[str, Any]:
     manifest: dict[str, Any] = {
         "schema": "devfun.researcher_trajectory.v2",
@@ -477,8 +615,12 @@ def build_manifest(
     # Include memory_gap block in axis_summary if available
     if selfplay_summary and "memory_gap" in selfplay_summary:
         manifest["memory_gap"] = selfplay_summary["memory_gap"]
+    if selfplay_summary and "forgetting_regret" in selfplay_summary:
+        manifest["forgetting_regret"] = selfplay_summary["forgetting_regret"]
     if exploitability_advisory:
         manifest["exploitability_advisory"] = exploitability_advisory
+    if yardstick_pool_grade:
+        manifest["yardstick_pool_grade"] = yardstick_pool_grade
     manifest["gate_failures"] = evaluate_gates(manifest)
     manifest["gate_pass"] = not manifest["gate_failures"]
     return manifest
@@ -545,6 +687,18 @@ def main(argv: list[str] | None = None) -> int:
         default=None,
         help="Per-opponent bb/100: 'ten:4.3,maniac_shark_lag:-40' or JSON object",
     )
+    p.add_argument(
+        "--yardstick-pool",
+        type=Path,
+        default=None,
+        help="Frozen yardstick pool JSON for pool grade (default: config/hu_yardstick_pool.json)",
+    )
+    p.add_argument(
+        "--forgetting-decay",
+        type=float,
+        default=DEFAULT_FORGETTING_DECAY,
+        help="Exponential decay for forgetting-factor regret (default: 0.95)",
+    )
     args = p.parse_args(argv)
 
     if not args.selfplay and not args.export_dir:
@@ -553,7 +707,10 @@ def main(argv: list[str] | None = None) -> int:
 
     selfplay_summary = None
     if args.selfplay:
-        selfplay_summary = summarize_selfplay_trajectory(_load_jsonl(args.selfplay))
+        selfplay_summary = summarize_selfplay_trajectory(
+            _load_jsonl(args.selfplay),
+            forgetting_decay=args.forgetting_decay,
+        )
 
     arena_summary = None
     if args.export_dir:
@@ -572,6 +729,16 @@ def main(argv: list[str] | None = None) -> int:
         skill_hand_win_rate=args.skill_hand_wr,
     )
 
+    yardstick_pool_grade = None
+    if opponent_bb100 and (args.yardstick_pool is not None or args.opponent_bb100):
+        try:
+            yardstick_pool_grade = compute_yardstick_pool_grade(
+                opponent_bb100,
+                pool_config=args.yardstick_pool,
+            )
+        except (FileNotFoundError, ValueError, json.JSONDecodeError) as exc:
+            print(f"WARN: yardstick pool grade skipped: {exc}", file=sys.stderr)
+
     out_dir = args.out_dir
     if out_dir is None:
         if args.selfplay:
@@ -587,6 +754,7 @@ def main(argv: list[str] | None = None) -> int:
         arena_summary=arena_summary,
         bundle_dir=out_dir,
         exploitability_advisory=exploitability_advisory,
+        yardstick_pool_grade=yardstick_pool_grade,
     )
     (out_dir / "axis_summary.json").write_text(
         json.dumps(manifest, indent=2, sort_keys=True) + "\n",
@@ -649,6 +817,25 @@ def main(argv: list[str] | None = None) -> int:
             f"skill_bb100={advisory.get('skill_bb100')} "
             f"yardstick_bb100={advisory.get('yardstick_bb100')} "
             f"({advisory.get('yardstick_handle') or 'n/a'})"
+        )
+
+    pool_grade = manifest.get("yardstick_pool_grade") or {}
+    if pool_grade:
+        print(
+            f"  yardstick_pool_grade: pct_pass={pool_grade.get('pct_pass')} "
+            f"n_pass={pool_grade.get('n_pass')}/{pool_grade.get('n_checked')} "
+            f"worst={pool_grade.get('worst_handle')} "
+            f"({pool_grade.get('worst_bb100')})"
+        )
+
+    forgetting = manifest.get("forgetting_regret") or {}
+    if forgetting.get("n_hands"):
+        drift = "DRIFT" if forgetting.get("drift_flag") else "ok"
+        print(
+            f"  forgetting_regret: {drift} "
+            f"lifetime_bb={forgetting.get('lifetime_mean_bb')} "
+            f"recency_bb={forgetting.get('recency_weighted_mean_bb')} "
+            f"n={forgetting.get('n_hands')}"
         )
 
     failures = manifest.get("gate_failures") or []

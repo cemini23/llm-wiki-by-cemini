@@ -216,6 +216,24 @@ case "$TABLE_FORMAT" in
         | tee "${BUNDLE_DIR}/exploitability-advisory/summary.txt" || true
       echo "    see references/footsiesgym-raeth-axis-map.md — H2H ≠ approx exploitability"
     fi
+    # K152 yardstick pool grade + forgetting regret (advisory only; no hard gate fail).
+    tight_bb_num="$(_parse_bb100_from_summary "${BUNDLE_DIR}/selfplay_summary.txt")"
+    yardstick_bb_args=()
+    [[ -n "$tight_bb_num" ]] && yardstick_bb_args+=("tight:${tight_bb_num}")
+    [[ -n "$ten_bb_num" ]] && yardstick_bb_args+=("ten:${ten_bb_num}")
+    [[ -n "$shark_bb_num" ]] && yardstick_bb_args+=("maniac_shark_lag:${shark_bb_num}")
+    if [[ ${#yardstick_bb_args[@]} -gt 0 ]]; then
+      yardstick_bb_csv="$(IFS=,; echo "${yardstick_bb_args[*]}")"
+      echo "==> K152 yardstick pool grade + forgetting regret (advisory only)"
+      uv run python examples/researcher_trajectory_summary.py \
+        --selfplay "${BUNDLE_DIR}/selfplay_trajectory.jsonl" \
+        --out-dir "${BUNDLE_DIR}/yardstick-pool-grade" \
+        --yardstick-pool config/hu_yardstick_pool.json \
+        --opponent-bb100 "${yardstick_bb_csv}" \
+        --forgetting-decay 0.95 \
+        | tee "${BUNDLE_DIR}/yardstick-pool-grade/summary.txt" || true
+      echo "    see references/expert-yardstick-pool.md — frozen expert outside train loop"
+    fi
     echo "==> HU maniac/lag series audit (400h, 80h/match)"
     mkdir -p "${BUNDLE_DIR}/maniac-audit"
     CEMINI_TABLE_FORMAT=hu CEMINI_GIN_STYLE=1 CEMINI_S1B_EXPLOIT=1 CEMINI_RESEARCHER_MODE=1 \
