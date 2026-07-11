@@ -18,3 +18,4 @@ echo "  briefs/xsp-2026-07-11_k159-fable-advisor-orchestration-steal.md → scp 
 echo "  briefs/ccc-2026-07-11_k159-fable-advisor-orchestration-steal.md"
 echo "  ../projects/CeminiDFS/briefs/2026-07-11_k159-fable-advisor-pipeline-cost-steal.md"
 echo "  ~/Desktop/family/research/2026-07-11_k159-sellia-costantino-passante-sprint.md (private)"
+echo "Local adopt: bash scripts/adopt_k159_local.sh"

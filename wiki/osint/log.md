@@ -15,6 +15,13 @@ updated: 2026-07-11
 - **Phase-0:** `scripts/adopt_k159_phase0.sh`
 - **Briefs:** xsp fable-advisor (**scp prod**); CCC + CeminiDFS cost steal; **no David**
 
+## [2026-07-11] ship | K159 fable-advisor local adopt
+
+- **Plugin:** `fable-advisor@fable-advisor` v3.1.0 enabled (user scope)
+- **Script:** `scripts/adopt_k159_local.sh` · report `.local/reports/k159-fable-advisor-local-adopt.md`
+- **Blockers:** Claude Code 2.1.147 < 2.1.170 floor; Grok CLI missing (codex lane OK)
+- **CLAUDE.md:** § Agent orchestration (K159)
+
 ## [2026-07-11] ingest | K158 — 5 RSS (4 new + Latent Space series)
 
 - **Inbox (5):** Latent Space AINews Jul 11, Capital Flows SOFR, Event Horizon federalism, SecPro autonomous enterprises, Wu Blockchain weekly — archived egress-fi

@@ -29,6 +29,19 @@ updated: 2026-07-11
 
 Requires Claude Code ≥2.1.170. Five-part spec contract + cross-vendor review loop. **Friction:** Grok lane needs xAI CLI headless; subagent routing tied to Anthropic CLI changes. [NEEDS VERIFICATION 2026-07-11] empirical token savings on XSP generation run.
 
+### Local adopt (2026-07-11)
+
+| Check | Status |
+|-------|--------|
+| Plugin `fable-advisor@fable-advisor` v3.1.0 | **enabled** (user scope) |
+| Claude Code | 2.1.147 — **below** plugin floor 2.1.170; upgrade when available |
+| Grok CLI | **missing** — `grok-implementer` lane unavailable until `x.ai/cli` + login |
+| Codex CLI | **installed** — `codex-implementer` lane available if GPT-5.6 auth OK |
+| Install ritual | `bash scripts/adopt_k159_local.sh` |
+| Report | `.local/reports/k159-fable-advisor-local-adopt.md` |
+
+Use `/model fable` in Claude Code sessions on this workspace; architect doctrine in root `CLAUDE.md` § Agent orchestration.
+
 ## Snippets
 
 > "Implementation mechanics constitute approximately 90% of a coding session's token volume" [Source: eval docx URL 1 — paraphrase]

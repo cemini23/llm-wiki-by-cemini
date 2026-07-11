@@ -428,6 +428,17 @@ kb-server and 24/7 conductor→librarian routing are **offline**. To answer ques
 
 Historical sync/rsync instructions are archived in `@meta/librarian-decommission-2026-06-14.md`.
 
+## Agent orchestration (laptop — K159)
+
+Claude Code plugin **fable-advisor** is installed (user scope). In Claude Code sessions on this workspace:
+
+- Start architect sessions with `/model fable` (or `/model opus` if Fable unavailable on plan).
+- Delegate implementation via the orchestration skill — do not type bulk code in the architect session.
+- Verify evidence before accepting implementer output; cross-vendor review when stakes are high.
+- **Grok lane** needs [xAI Grok CLI](https://x.ai/cli); **Codex lane** uses local `codex` CLI.
+
+Canon: `@entities/tools/fable-advisor.md` · install: `bash scripts/adopt_k159_local.sh`
+
 ## Related — read-only from this workspace
 
 - **CeminiSuite dev stack** — Hetzner host, `/opt/cemini` server root. Connection details (SSH target, IP) live in `.local/server.md` (gitignored). Has its own `CLAUDE.md` for dev work. **Never modify the server's `CLAUDE.md` from here.**
