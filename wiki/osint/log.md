@@ -19,7 +19,7 @@ updated: 2026-07-11
 
 - **Plugin:** `fable-advisor@fable-advisor` v3.1.0 enabled (user scope)
 - **Script:** `scripts/adopt_k159_local.sh` · report `.local/reports/k159-fable-advisor-local-adopt.md`
-- **Blockers:** Claude Code 2.1.147 < 2.1.170 floor; Grok CLI missing (codex lane OK)
+- **Blockers:** Claude Code 2.1.147 < 2.1.170 floor; Grok CLI 0.2.93 installed (`grok login` if auth needed)
 - **CLAUDE.md:** § Agent orchestration (K159)
 
 ## [2026-07-11] ingest | K158 — 5 RSS (4 new + Latent Space series)

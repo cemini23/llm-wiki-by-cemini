@@ -35,7 +35,7 @@ Requires Claude Code ≥2.1.170. Five-part spec contract + cross-vendor review l
 |-------|--------|
 | Plugin `fable-advisor@fable-advisor` v3.1.0 | **enabled** (user scope) |
 | Claude Code | 2.1.147 — **below** plugin floor 2.1.170; upgrade when available |
-| Grok CLI | **missing** — `grok-implementer` lane unavailable until `x.ai/cli` + login |
+| Grok CLI | **installed** (`grok` 0.2.93 @ `~/.local/bin/grok`) — confirm `grok login` if implementer lane reports unavailable |
 | Codex CLI | **installed** — `codex-implementer` lane available if GPT-5.6 auth OK |
 | Install ritual | `bash scripts/adopt_k159_local.sh` |
 | Report | `.local/reports/k159-fable-advisor-local-adopt.md` |
