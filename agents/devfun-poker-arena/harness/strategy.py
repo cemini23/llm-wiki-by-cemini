@@ -1,6 +1,7 @@
 """Arena static-agent entrypoint — cemini_decide or gin hu004 (Option A)."""
 from __future__ import annotations
 
+import concurrent.futures
 import os
 import sys
 import time
@@ -75,6 +76,14 @@ def _deadline_s(table: dict) -> float:
     return max(floor, min(10.0, float(os.environ.get("CEMINI_DECIDE_DEADLINE_S", "8.0"))))
 
 
+def _emergency_action(table: dict) -> dict[str, Any]:
+    """Fail closed when wall-clock guard fires — avoid Arena 422 static timeout."""
+    allowed = table.get("allowedActions") or {}
+    if allowed.get("canCheck"):
+        return {"action": "check", "message": "wall-clock guard — free check"}
+    return {"action": "fold", "message": "wall-clock guard — fold"}
+
+
 def _action_payload(out: dict[str, Any], action: str) -> dict[str, Any]:
     payload: dict[str, Any] = {"action": action}
     if out.get("amount") is not None:
@@ -91,7 +100,19 @@ def _action_payload(out: dict[str, Any], action: str) -> dict[str, Any]:
 
 def choose_action(table: dict) -> Any:
     decide = _import_decide()
-    out = decide(table, deadline_s=_deadline_s(table))
+    deadline = _deadline_s(table)
+    # Wall-clock guard: Arena 422 if decide() exceeds static submission deadline.
+    guard_s = max(1.0, min(deadline - 0.4, 7.5))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+        fut = pool.submit(decide, table, deadline_s=deadline)
+        try:
+            out = fut.result(timeout=guard_s)
+        except concurrent.futures.TimeoutError:
+            print(
+                f"sandbox wall-clock guard tripped ({guard_s:.1f}s deadline={deadline:.1f}s)",
+                file=sys.stderr,
+            )
+            out = _emergency_action(table)
     if _ENGINE in ("gin", "gin_hu004", "hu004"):
         return out
     try:

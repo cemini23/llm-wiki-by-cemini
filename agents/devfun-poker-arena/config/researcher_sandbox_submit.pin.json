@@ -2,21 +2,21 @@
   "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "bb2a7e5e-6b5c-43e3-a27e-a496c5c941ef",
+  "activeSubmissionId": "c67973a2-3bd9-40b0-bc5b-e106d19cd7e7",
   "watchSubmissionIds": [
+    "c67973a2-3bd9-40b0-bc5b-e106d19cd7e7",
+    "cc20d33e-83dd-4424-b93c-01fa2a99de31",
     "bb2a7e5e-6b5c-43e3-a27e-a496c5c941ef",
     "9f0087af-79e5-4674-8316-227eca68bc10",
-    "dcad875c-d005-461c-8976-2cb9ea2d8116",
-    "19fdf72b-322c-45f9-bd06-cccb58d85fcd",
-    "b31e5947-8b8b-4efb-99e3-93f97ef20a71"
+    "dcad875c-d005-461c-8976-2cb9ea2d8116"
   ],
   "legacyCompetitionId": "cmr0jmqlt08bi13n8neory9xb",
   "legacyActiveSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-ladder-s1.k151.2026-07-09",
+  "agentVersion": "researcher-ladder-s1.k151.2026-07-11",
   "sandboxEngine": "cemini",
-  "gitCommit": "unknown",
-  "pinnedAt": "2026-07-09T12:18:00Z",
-  "notes": "Live ladder S1 bot bb2a7e5e (K151) — bench Succeeded 5/5, pvp Active continuous fresh season. Shipped: maniac_shark_lite_2 nemesis + linear_aggro path + 8 HU spots + bot_maniac_shark_lag. Timer DISABLED; event-driven deploy only."
+  "gitCommit": "7839a47",
+  "pinnedAt": "2026-07-11T20:55:00Z",
+  "notes": "K151 replace resubmit 2026-07-11 after bb2a7e5e Failed (static timeout @1677h +51.9). Live c67973a2 with wall-clock guard; monitor pvp alert wired."
 }

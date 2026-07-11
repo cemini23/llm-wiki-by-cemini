@@ -50,6 +50,12 @@ _DEFAULT_EVAL_IDS = (
     "cmpkdus9200syw8do5644oymp",
 )
 
+_PIN_PATH = _EXAMPLES.parent / "config" / "researcher_sandbox_submit.pin.json"
+_PVP_ALERT_STATUSES = frozenset(
+    {"failed", "discarded", "error", "cancelled", "canceled"}
+)
+_PVP_ACTIVE_STATUSES = frozenset({"active", "running", "pending", "paused", "queued"})
+
 
 def _utc_now() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -94,6 +100,80 @@ def _resolve_agent_id(client: ArenaClient, agent_id: Optional[str]) -> Optional[
     except ArenaError as e:
         print(f"[monitor] /agent/me failed: {e}", file=sys.stderr)
     return None
+
+
+def poll_pinned_ladder_pvp(*, reports: Path) -> Optional[dict[str, Any]]:
+    """Alert when pinned ladder submission PvP is Failed/Discarded (not lobby analyze)."""
+    if not _PIN_PATH.is_file():
+        return None
+    try:
+        pin = json.loads(_PIN_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+    sid = str(pin.get("activeSubmissionId") or "").strip()
+    if not sid:
+        return None
+    try:
+        from submit_sandbox_pvp import poll_submission  # noqa: WPS433
+        from researcher_sandbox_auto_submit import pvp_progress  # noqa: WPS433
+
+        rec = poll_submission(sid)
+    except Exception as exc:
+        print(f"[monitor] ladder pvp poll failed: {exc}", file=sys.stderr)
+        return None
+
+    ch, th, pvp_status = pvp_progress(rec)
+    pvp = rec.get("pvp") or {}
+    st = str(pvp_status or "").lower()
+    record = {
+        "ts": _utc_now(),
+        "submissionId": sid,
+        "competitionId": pin.get("competitionId"),
+        "pvpStatus": pvp_status,
+        "completedHands": ch,
+        "targetHands": th,
+        "adjustedBbPer100": pvp.get("adjustedBbPer100"),
+        "error": pvp.get("error") or rec.get("error"),
+    }
+    _append_jsonl(reports / "ladder_pvp_poll.jsonl", record)
+
+    state_path = reports / "monitor_state.json"
+    state = _load_state(state_path)
+    prev = state.get("ladder_pvp") or {}
+    prev_status = str(prev.get("pvpStatus") or "").lower()
+    state["ladder_pvp"] = {
+        "submissionId": sid,
+        "pvpStatus": pvp_status,
+        "completedHands": ch,
+        "last_poll_ts": _utc_now(),
+    }
+    _save_state(state_path, state)
+
+    alert_lines: list[str] = []
+    if st in _PVP_ALERT_STATUSES:
+        err = (pvp.get("error") or rec.get("error") or "")[:200]
+        line = (
+            f"[{_utc_now()}] LADDER PVP {pvp_status.upper()}: submission={sid[:8]}… "
+            f"hands={ch} bb/100={pvp.get('adjustedBbPer100')} err={err}"
+        )
+        if st != prev_status or not prev:
+            alert_lines.append(line)
+            print(f"[monitor] *** ALERT {line}")
+    elif st in _PVP_ACTIVE_STATUSES:
+        print(
+            f"[monitor] ladder pvp: {pvp_status} hands={ch} "
+            f"bb/100={pvp.get('adjustedBbPer100')}"
+        )
+    else:
+        print(f"[monitor] ladder pvp: {pvp_status or 'unknown'} hands={ch}")
+
+    if alert_lines:
+        alert_path = reports / "alerts.txt"
+        alert_path.parent.mkdir(parents=True, exist_ok=True)
+        with alert_path.open("a", encoding="utf-8") as f:
+            f.write("\n".join(alert_lines) + "\n")
+
+    return record
 
 
 def run_analyze_pass(
@@ -287,6 +367,9 @@ def run_once(args: argparse.Namespace, client: ArenaClient, agent_id: str) -> in
             auto_benchmark=args.auto_benchmark,
             benchmark_hands=args.benchmark_hands,
         )
+
+    if args.command in ("once", "poll-eval", None):
+        poll_pinned_ladder_pvp(reports=reports)
 
     if args.command in ("once", "analyze", None) and not getattr(args, "skip_auto_analyst", False):
         _maybe_run_hl_auto_analyst(reports)
