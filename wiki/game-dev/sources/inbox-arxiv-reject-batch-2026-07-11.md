@@ -6,6 +6,7 @@ keywords: [arxiv, triage, reject, digest, re-drop, autonomous-driving]
 related:
   - sources/inbox-arxiv-reject-batch-2026-07-10.md
   - sources/inbox-arxiv-reject-batch-2026-07-09.md
+  - sources/inbox-arxiv-reject-batch-2026-07-12.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
 read_status: read

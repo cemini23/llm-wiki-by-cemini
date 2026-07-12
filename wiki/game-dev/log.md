@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-12] ingest | 5 arXiv rejects (re-drop loop); UGenLah Unity PCG news
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-12.md (all reject); archived; inbox cleared
+- Triage: 2606.05050 catalyst CatDT; 4 re-drops (GaP ×4, RCT-AD, Structural Tension); 2607.08547 PL theory (influence-map false positive)
+- News: @sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md → @concepts/agentic-pcg-level-design.md
+- Phase-0: none; no new brief (Unity UGenLah out of Godot scope)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 19 files)
+- Sweep: @sweeps/2026-07-12-daily.md
+
+---
+
 ## [2026-07-11] ingest | 3 arXiv rejects (GaP re-drop ×3); Ziva GPT-5.6 benchmark news
 
 - Inbox: 3 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-11.md (all reject); archived; inbox cleared

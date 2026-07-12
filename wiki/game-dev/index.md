@@ -250,5 +250,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [claude-code-cc-ios-port-2026-07-07](sources/claude-code-cc-ios-port-2026-07-07.md) | read |
 | [inbox-arxiv-reject-batch-2026-07-11](sources/inbox-arxiv-reject-batch-2026-07-11.md) | read |
 | [ziva-gpt-56-godot-benchmark-2026-07-10](sources/ziva-gpt-56-godot-benchmark-2026-07-10.md) | read |
+| [inbox-arxiv-reject-batch-2026-07-12](sources/inbox-arxiv-reject-batch-2026-07-12.md) | read |
+| [ugenlah-unity-agentic-pcg-shelf-2026-07-10](sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md) | read |
 | [36kr-ai-game-story-gameplay-guardrails-2026-06-30](sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md) | read |
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |

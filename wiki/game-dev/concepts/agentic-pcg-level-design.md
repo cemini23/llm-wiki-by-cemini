@@ -11,9 +11,10 @@ related:
   - sources/exa-npc-pcg-ccgs-batch-2026-06-13.md
   - sources/unreal-engine-58-mcp-shelf-2026-06-24.md
   - entities/tools/pcgodot.md
+  - sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-30
+updated: 2026-07-12
 ---
 
 ## Relations
@@ -60,6 +61,7 @@ Same framework accepts **metric targets** ("path length ~256") and **thematic in
 | Repo | Notes |
 |------|-------|
 | [JiangZehua/AgenticPCG](https://github.com/JiangZehua/AgenticPCG) | Reference implementation |
+| UGenLah (Unity) | Editor agent + Actor/Critic PCG loop — WATCH [@sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md] |
 | [TaaroBravo/ai-powered-level-designer](https://github.com/TaaroBravo/ai-powered-level-designer) | — |
 | [Edgar.Godot](https://github.com/RickyYCheng/Edgar.Godot) | Classic PCG library (non-LLM) |
 | [alexishachemi/godot-procgen](https://github.com/alexishachemi/godot-procgen) | Godot procgen |
