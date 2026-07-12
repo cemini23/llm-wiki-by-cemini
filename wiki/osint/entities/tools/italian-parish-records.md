@@ -5,16 +5,18 @@ tags: [tool, genealogy, parish, digitization, nonprofit, draft]
 keywords: [Italian Parish Records, IPR, Abruzzo, Chieti, digitization]
 related:
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
+  - sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md
   - concepts/italian-regional-genealogy-archive-playbook.md
   - entities/tools/transkribus.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-12
 ---
 
 ## Relations
 
 - @sources/gemini-italian-ancestry-deep-research-2026-07-09.md — Priority-3 free parish digitization pointer
+- @sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md — K160 Abruzzo parish survival checks
 - @concepts/italian-regional-genealogy-archive-playbook.md — post-Trent parish layer
 - @entities/tools/transkribus.md — HTR companion for hard scripts
 

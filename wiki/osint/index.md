@@ -12,9 +12,16 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **654 canonical stubs** (K159 ingest)
+Total: **657 canonical stubs** (K160 ingest)
 
 
+
+### k160-ingest (4)
+
+- [Abruzzo diaspora genealogy methodology](sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md) — NAA/diocesan offline pivot; private sprint. — `docx` [+k160]
+- [RCT-AD autonomous driving (2607.04689)](sources/arxiv-context-aware-temporal-planning-2607.04689-2026-07-12.md) — BEV quality-gated memory; wiki REFERENCE. — `pdf` [+k160]
+- [MIRA world model](entities/tools/mira-world-model.md) — MP Rocket League Watch → castle steal. — entity [+k160]
+- [Multiplayer world models (2607.05352)](sources/arxiv-multiplayer-world-models-2607.05352-2026-07-09.md) — K160 deep-read + MIRA entity. — `pdf` [+k160-update]
 
 ### k159-ingest (4)
 

@@ -5,6 +5,16 @@ updated: 2026-07-11
 
 ---
 
+## [2026-07-12] ingest | K160 — Abruzzo diaspora docx + 5 arXiv re-archive
+
+- **Inbox (6):** Abruzzo Diaspora docx + 5 arXiv PDFs (4 prior K151/K155 pages + new RCT-AD 2607.04689) — archived egress-fi; inbox cleared
+- **New sources:** `@sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md`; `@sources/arxiv-context-aware-temporal-planning-2607.04689-2026-07-12.md`
+- **Deep-read updates:** 2607.05352, 2607.06854, 2607.06166; entity `@entities/tools/mira-world-model.md`
+- **Concept updates:** `@concepts/italian-regional-genealogy-archive-playbook.md` (Abruzzo diaspora table); `@concepts/computational-genealogy-archival-automation.md`
+- **Phase-0:** `scripts/adopt_k160_phase0.sh` — Watch mira-wm/mira
+- **Briefs:** pm proper-betting (**scp prod**); poker lightweight yardstick; castle-sim MIRA attribution; family private sprint `~/Desktop/family/research/2026-07-12_k160-abruzzo-barone-diaspora-sprint.md`
+- **David/TipDrop:** none
+
 ## [2026-07-11] ingest | K159 — eval docx + Sellia genealogy docx
 
 - **Inbox (2):** `Multi-Wiki Repo Evaluation Strategy.docx`, `Ricerca Genealogica Famiglie Sellia.docx` — archived egress-fi

@@ -7,9 +7,9 @@ related:
   - sources/arxiv-footsiesgym-2607.06514-2026-07-09.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
 maturity: validated
-read_status: skimmed
+read_status: deep-read
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-12
 ---
 
 ## Relations

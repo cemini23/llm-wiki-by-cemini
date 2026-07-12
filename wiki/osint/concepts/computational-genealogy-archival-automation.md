@@ -7,6 +7,7 @@ related:
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
   - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
+  - sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md
   - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
   - concepts/italian-regional-genealogy-archive-playbook.md
   - entities/tools/gcerretani-antenati.md
@@ -21,13 +22,14 @@ related:
   - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-10
+updated: 2026-07-12
 ---
 
 ## Relations
 
 - @sources/gemini-automated-deep-genealogy-research-2026-07-09.md — primary synthesis source (Gemini roadmap docx)
 - @sources/gemini-italian-ancestry-deep-research-2026-07-09.md — K154 regional archive playbook companion
+- @sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md — K160 Abruzzo diaspora offline pivot
 - @concepts/italian-regional-genealogy-archive-playbook.md — Abruzzo/Calabria/Trentino contacts + red flags
 - @entities/tools/gcerretani-antenati.md — Antenati IIIF downloader
 - @entities/tools/transkribus.md — handwriting recognition for Latin/cursive acts

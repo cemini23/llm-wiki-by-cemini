@@ -6,7 +6,7 @@ keywords: [copia integrale, PEC, Catasto Onciario, Cassa Sacra, Liste di Leva, N
 related:
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
-  - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
+  - sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md
   - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
   - concepts/computational-genealogy-archival-automation.md
   - entities/tools/nati-in-trentino.md
@@ -15,7 +15,7 @@ related:
   - entities/tools/gcerretani-antenati.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-11
+updated: 2026-07-12
 ---
 
 ## Relations
@@ -67,6 +67,21 @@ Example contact patterns (verify live on *comune* sites before send): Colledimac
 | ASC Catanzaro Leva | `as-cz@pec.cultura.gov.it` | Liste di Leva backup if civil nati missing |
 
 **Trap:** Sellia Marina (post-1956) ≠ inland Sellia — homonyms may trace to Simeri Crichi / Magisano. **Passante** surname endemic in modern Sellia; **Costantino** patronymic cluster — prove *comune* anchor before regional dragnet. Detail: `@sources/gemini-sellia-calabria-archive-routing-2026-07-11.md` (private names in `~/Desktop/family/research/`).
+
+### Abruzzo Maiella — K160 diaspora routing (Colledimacine / Montenerodomo)
+
+| Resource | Route | Use |
+|----------|-------|-----|
+| Comune Colledimacine | PEC `comune.colledimacine@pec.it` | Historic *stato di famiglia*; post-1920 *copia integrale* |
+| ASC Chieti | Catasto Onciario (1753) | Pre-1809 hearth bridge |
+| Diocesi Chieti-Vasto | Archivio storico | Secular priest *fascicolo personale* |
+| Ministero della Difesa | Ordine di Vittorio Veneto roll | WWI *mutilato* matriculation + 1968+ honor lock |
+| NAA RecordSearch | Alien + Naturalization | Australian diaspora — arrival year + birth year keys |
+| NSW BDM | Historical death index | Spouse maiden via certificate order |
+| ANMI (Rome) | Membership archives | Diaspora association president dossiers |
+| *L'Araldo Abruzzese* | Bound 1974–1976 volumes | Clergy missionary departure notices |
+
+**Diaspora traps:** obituary informant omissions when sibling count is large; homonym quarantine (guild presidents, other continents); Swiss guest-worker false positives without *comune* anchor; Italian cemetery concession expiry masquerading as negative death proof. Detail: `@sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md` (private sprint in `~/Desktop/family/research/`).
 
 ### US staging-ground tactics
 

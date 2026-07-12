@@ -10,9 +10,9 @@ related:
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
 maturity: validated
-read_status: read
+read_status: deep-read
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-12
 ---
 
 ## Relations

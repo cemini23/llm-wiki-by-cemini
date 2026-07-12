@@ -21,6 +21,10 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / genealogy** — Italian archival deep research (K153/K154) | `~/Desktop/family/research/` (private) | No — wiki methodology only |
 
+## Current state (2026-07-12 — K160)
+
+- **K160 ingest (2026-07-12)** — Full ingest: 1 genealogy docx + 5 arXiv inbox re-archive. **2 new sources + 1 entity + 4 updates.** Abruzzo diaspora methodology (private Barone sprint); RCT-AD 2607.04689 REFERENCE; MIRA 2607.05352 deep-read + entity Watch. Prior pages deep-read: 2607.06854, 2607.06166. **Phase-0:** `adopt_k160_phase0.sh`. **Briefs (3):** pm proper-betting (**scp prod**); poker yardstick; castle-sim MIRA. **Family private:** `~/Desktop/family/research/2026-07-12_k160-abruzzo-barone-diaspora-sprint.md`. Archive → egress-fi; inbox cleared. **No David/TipDrop.**
+
 ### Secondary (route when source matches)
 
 | Project | Brief home | Prod scp |

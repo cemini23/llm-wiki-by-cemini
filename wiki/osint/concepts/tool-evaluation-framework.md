@@ -12,10 +12,11 @@ related:
   - sources/tool-evaluation-multi-wiki-audit-may-2026.md
   - sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md
   - sources/multi-wiki-gemini-eval-prompt-2026-05-12.md
+  - sources/arxiv-context-aware-temporal-planning-2607.04689-2026-07-12.md
 maturity: validated
 hub: true
 created: 2026-05-10
-updated: 2026-06-28
+updated: 2026-07-12
 ---
 
 ## Relations
