@@ -1,9 +1,16 @@
 # Wiki Log
 
-updated: 2026-07-11
+updated: 2026-07-12
 ---
 
 ---
+
+## [2026-07-12] ship | K159 fable-advisor — CC upgrade + grok token spike
+
+- **Claude Code:** `2.1.207` (`claude update`; floor ≥2.1.170 cleared)
+- **Spike:** `scripts/run_k159_fable_token_spike.sh` — grok-implementer **PASS** (17s; `@meta/fable-advisor-prod-touch-gate.md`)
+- **Brief staged (laptop):** `briefs/xsp-2026-07-11_k159-fable-advisor-orchestration-steal.md` (from prod)
+- **Adopt gate:** Fable-only baseline token readout in CC still pending for ≥30% comparison
 
 ## [2026-07-12] ingest | K160 — Abruzzo diaspora docx + 5 arXiv re-archive
 

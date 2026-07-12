@@ -19,10 +19,12 @@ related:
   - concepts/reviewer-passive-injection-corpus.md
   - entities/tools/deepspec.md
   - entities/tools/openclaw-mission-control.md
+  - entities/tools/fable-advisor.md
+  - meta/fable-advisor-prod-touch-gate.md
   - sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-10
+updated: 2026-07-12
 ---
 
 ## Relations
@@ -32,7 +34,7 @@ updated: 2026-07-10
 - @entities/tools/deepspec.md — K137 inference latency Adopt (speculative decoding)
 - @entities/tools/openclaw-mission-control.md — K137 fleet audit steal patterns
 - @sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md — K147 vol regime steal (inverse VIX spike sizing)
-- @concepts/reviewer-passive-injection-corpus.md — K37 reviewer context bundle cites this page
+- @meta/fable-advisor-prod-touch-gate.md — K159 cross-vendor prod-touch checklist
 - @concepts/capital-flows-sofr-conviction-framework.md — K155 SOFR conviction overlay
 - @concepts/macro-charts-regime-signals.md — K155 Macro Charts Jul 10 regime reads
 - @sources/macro-charts-paid-forward-chat-2026-07-10.md — K155 USDJPY / CPI / SOX chat
