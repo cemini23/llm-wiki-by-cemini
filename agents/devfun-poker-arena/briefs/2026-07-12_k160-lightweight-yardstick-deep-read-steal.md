@@ -36,8 +36,12 @@ Expert beats all trained agents 70–99%; self-play champion ~30–36% vs expert
 
 ### Operator checklist
 
-- [ ] Document style-preservation / yardstick gap in league promotion rubric (pair K152 brief)
-- [ ] FootsiesGym exploitability advisory stays separate env — do not conflate with NLHE league metrics
+- [x] Document style-preservation / yardstick gap in league promotion rubric (pair K152 brief)
+- [x] FootsiesGym exploitability advisory stays separate env — do not conflate with NLHE league metrics
+
+## Shipped (2026-07-12)
+
+Paired with K153: `references/league-promotion-rubric.md`, `compute_league_promotion_rubric_advisory()`, gate script advisory echo. See `briefs/2026-07-12_k153-mppo-style-opponent-steal.md`.
 
 ## Sources
 

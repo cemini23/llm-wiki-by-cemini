@@ -55,6 +55,17 @@ Run RLCard tabular optimum sanity check on Leduc before claiming NLHE
 promotion from yardstick passes alone. HU sandbox yardstick grade is
 necessary but not sufficient.
 
+**K153 style preservation:** before NLHE league pool upgrades, run
+`bash scripts/run_rlcard_style_drift_trial.sh` and review D_policy TV vs
+seed archetype (`references/mppo-style-preservation.md`). Pair with
+`references/league-promotion-rubric.md` (K160).
+
+## K160 regime scope
+
+Gin Rummy / Leduc figures from 2607.06854 are **single-regime ablations** —
+not NLHE TrueSkill calibration. FootsiesGym exploitability advisory stays a
+**separate env** (`footsiesgym_separate` in league rubric).
+
 ## Implementation
 
 | Artifact | Purpose |

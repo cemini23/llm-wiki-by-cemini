@@ -14,11 +14,15 @@ def test_rlcard_not_in_pyproject() -> None:
 def test_rlcard_scripts_exist() -> None:
     setup_script = Path("scripts/setup_rlcard_venv.sh")
     run_script = Path("scripts/run_rlcard_baseline_ablation.sh")
+    style_script = Path("scripts/run_rlcard_style_drift_trial.sh")
     ablation_py = Path("examples/rlcard_baseline_ablation.py")
+    style_py = Path("examples/rlcard_style_drift_trial.py")
 
     assert setup_script.exists()
     assert run_script.exists()
+    assert style_script.exists()
     assert ablation_py.exists()
+    assert style_py.exists()
 
 
 def test_rlcard_setup_script_syntax() -> None:

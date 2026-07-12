@@ -51,6 +51,9 @@ DEFAULT_DRIFT_BB_THRESHOLD = 3.0
 
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_YARDSTICK_POOL_PATH = _REPO_ROOT / "config" / "hu_yardstick_pool.json"
+DEFAULT_STYLE_PRESERVATION_PATH = _REPO_ROOT / "config" / "hu_style_preservation.json"
+
+_ACTION_BUCKETS = ("fold", "check", "call", "raise")
 
 _PREFLOP_POSITION_ORDER = ("UTG", "MP", "CO", "BTN", "SB", "BB")
 
@@ -364,6 +367,121 @@ def compute_forgetting_factor_regret(
     }
 
 
+def load_style_preservation_config(path: str | Path | None = None) -> dict[str, Any]:
+    """Load HU style-preservation spec (K153)."""
+    cfg_path = Path(path) if path else DEFAULT_STYLE_PRESERVATION_PATH
+    if not cfg_path.is_file():
+        raise FileNotFoundError(f"style preservation config not found: {cfg_path}")
+    data = json.loads(cfg_path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError("style preservation config must be a JSON object")
+    return data
+
+
+def _normalize_action_dist(dist: dict[str, float]) -> dict[str, float]:
+    buckets = {b: 0.0 for b in _ACTION_BUCKETS}
+    for key, val in dist.items():
+        k = str(key).lower().strip()
+        if k in buckets:
+            buckets[k] += float(val)
+    total = sum(buckets.values())
+    if total <= 0:
+        n = len(_ACTION_BUCKETS)
+        return {b: 1.0 / n for b in _ACTION_BUCKETS}
+    return {b: buckets[b] / total for b in _ACTION_BUCKETS}
+
+
+def compute_d_policy_tv(
+    seed_action_dist: dict[str, float],
+    candidate_action_dist: dict[str, float],
+) -> float:
+    """Total-variation distance between action distributions (MPPO D_policy)."""
+    seed = _normalize_action_dist(seed_action_dist)
+    cand = _normalize_action_dist(candidate_action_dist)
+    return round(0.5 * sum(abs(seed[b] - cand[b]) for b in _ACTION_BUCKETS), 6)
+
+
+def compute_style_drift_d_policy(
+    seed_action_dist: dict[str, float],
+    candidate_action_dist: dict[str, float],
+    *,
+    config: dict[str, Any] | str | Path | None = None,
+) -> dict[str, Any]:
+    """K153 advisory: style drift vs seed demonstrator."""
+    if config is None or isinstance(config, (str, Path)):
+        cfg = load_style_preservation_config(config)
+    else:
+        cfg = config
+
+    tv = compute_d_policy_tv(seed_action_dist, candidate_action_dist)
+    max_tv = float(cfg.get("max_d_policy_tv_advisory", 0.25))
+    style_ok = tv <= max_tv
+
+    return {
+        "schema": "devfun.style_drift_d_policy.v1",
+        "advisory_only": True,
+        "d_policy_tv": tv,
+        "max_d_policy_tv_advisory": max_tv,
+        "style_ok": style_ok,
+        "beta_demo_mix": cfg.get("beta_demo_mix"),
+        "d_policy_metric": cfg.get("d_policy_metric", "total_variation"),
+        "seed_action_dist": _normalize_action_dist(seed_action_dist),
+        "candidate_action_dist": _normalize_action_dist(candidate_action_dist),
+        "reference": "references/mppo-style-preservation.md",
+    }
+
+
+def compute_league_promotion_rubric_advisory(
+    *,
+    yardstick_grade: dict[str, Any] | None = None,
+    style_drift: dict[str, Any] | None = None,
+    forgetting: dict[str, Any] | None = None,
+    exploitability_advisory: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    """K153+K160 advisory: yardstick vs style gaps for league promotion."""
+    gaps: list[str] = []
+    yardstick_gap = False
+    style_gap = False
+    forgetting_drift = False
+
+    if yardstick_grade:
+        pct = yardstick_grade.get("pct_pass")
+        if pct is not None and float(pct) < 1.0:
+            yardstick_gap = True
+            gaps.append("yardstick_pool_incomplete")
+
+    if style_drift:
+        if style_drift.get("style_ok") is False:
+            style_gap = True
+            gaps.append("style_drift_exceeds_tv")
+
+    if forgetting and forgetting.get("drift_flag"):
+        forgetting_drift = True
+        gaps.append("forgetting_regret_drift")
+
+    footsiesgym_note = None
+    if exploitability_advisory and exploitability_advisory.get("disconnect"):
+        footsiesgym_note = (
+            "FootsiesGym exploitability disconnect flagged — separate env; "
+            "not an NLHE league promotion input"
+        )
+
+    return {
+        "schema": "devfun.league_promotion_rubric.v1",
+        "advisory_only": True,
+        "yardstick_gap": yardstick_gap,
+        "style_gap": style_gap,
+        "forgetting_drift": forgetting_drift,
+        "gaps": gaps,
+        "footsiesgym_note": footsiesgym_note,
+        "footsiesgym_env": "footsiesgym_separate",
+        "yardstick_grade": yardstick_grade,
+        "style_drift": style_drift,
+        "forgetting_regret": forgetting,
+        "reference": "references/league-promotion-rubric.md",
+    }
+
+
 def compute_exploitability_advisory(
     *,
     skill_bb100: float | None = None,
@@ -604,6 +722,8 @@ def build_manifest(
     bundle_dir: Path,
     exploitability_advisory: dict | None = None,
     yardstick_pool_grade: dict | None = None,
+    style_drift: dict | None = None,
+    league_promotion_rubric: dict | None = None,
 ) -> dict[str, Any]:
     manifest: dict[str, Any] = {
         "schema": "devfun.researcher_trajectory.v2",
@@ -621,6 +741,10 @@ def build_manifest(
         manifest["exploitability_advisory"] = exploitability_advisory
     if yardstick_pool_grade:
         manifest["yardstick_pool_grade"] = yardstick_pool_grade
+    if style_drift:
+        manifest["style_drift_d_policy"] = style_drift
+    if league_promotion_rubric:
+        manifest["league_promotion_rubric"] = league_promotion_rubric
     manifest["gate_failures"] = evaluate_gates(manifest)
     manifest["gate_pass"] = not manifest["gate_failures"]
     return manifest
@@ -645,6 +769,28 @@ def _parse_opponent_bb100(raw: str | None) -> dict[str, float] | None:
             raise ValueError(f"bad --opponent-bb100 token {part!r}; want handle:bb100")
         handle, val = part.rsplit(":", 1)
         out[handle.strip()] = float(val.strip())
+    return out or None
+
+
+def _parse_action_dist(raw: str | None) -> dict[str, float] | None:
+    """Parse 'fold:0.1,call:0.5,raise:0.4' or JSON object string."""
+    if not raw or not str(raw).strip():
+        return None
+    text = str(raw).strip()
+    if text.startswith("{"):
+        data = json.loads(text)
+        if not isinstance(data, dict):
+            raise ValueError("style dist JSON must be an object")
+        return {str(k): float(v) for k, v in data.items()}
+    out: dict[str, float] = {}
+    for part in text.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        if ":" not in part:
+            raise ValueError(f"bad style dist token {part!r}; want action:freq")
+        action, val = part.rsplit(":", 1)
+        out[action.strip()] = float(val.strip())
     return out or None
 
 
@@ -699,6 +845,22 @@ def main(argv: list[str] | None = None) -> int:
         default=DEFAULT_FORGETTING_DECAY,
         help="Exponential decay for forgetting-factor regret (default: 0.95)",
     )
+    p.add_argument(
+        "--style-seed-dist",
+        default=None,
+        help="Seed demonstrator action dist: 'fold:0.2,call:0.5,raise:0.3' or JSON",
+    )
+    p.add_argument(
+        "--style-candidate-dist",
+        default=None,
+        help="Candidate action dist for D_policy TV vs seed",
+    )
+    p.add_argument(
+        "--style-preservation-config",
+        type=Path,
+        default=None,
+        help="Style preservation JSON (default: config/hu_style_preservation.json)",
+    )
     args = p.parse_args(argv)
 
     if not args.selfplay and not args.export_dir:
@@ -722,6 +884,13 @@ def main(argv: list[str] | None = None) -> int:
         print(f"ERROR: --opponent-bb100: {exc}", file=sys.stderr)
         return 2
 
+    try:
+        style_seed_dist = _parse_action_dist(args.style_seed_dist)
+        style_candidate_dist = _parse_action_dist(args.style_candidate_dist)
+    except (ValueError, json.JSONDecodeError) as exc:
+        print(f"ERROR: style dist: {exc}", file=sys.stderr)
+        return 2
+
     exploitability_advisory = compute_exploitability_advisory(
         skill_bb100=args.skill_bb100,
         yardstick_bb100=args.yardstick_bb100,
@@ -739,6 +908,25 @@ def main(argv: list[str] | None = None) -> int:
         except (FileNotFoundError, ValueError, json.JSONDecodeError) as exc:
             print(f"WARN: yardstick pool grade skipped: {exc}", file=sys.stderr)
 
+    style_drift = None
+    if style_seed_dist and style_candidate_dist:
+        try:
+            style_drift = compute_style_drift_d_policy(
+                style_seed_dist,
+                style_candidate_dist,
+                config=args.style_preservation_config,
+            )
+        except (FileNotFoundError, ValueError, json.JSONDecodeError) as exc:
+            print(f"WARN: style drift skipped: {exc}", file=sys.stderr)
+
+    forgetting_regret = (selfplay_summary or {}).get("forgetting_regret")
+    league_promotion_rubric = compute_league_promotion_rubric_advisory(
+        yardstick_grade=yardstick_pool_grade,
+        style_drift=style_drift,
+        forgetting=forgetting_regret,
+        exploitability_advisory=exploitability_advisory,
+    )
+
     out_dir = args.out_dir
     if out_dir is None:
         if args.selfplay:
@@ -755,6 +943,8 @@ def main(argv: list[str] | None = None) -> int:
         bundle_dir=out_dir,
         exploitability_advisory=exploitability_advisory,
         yardstick_pool_grade=yardstick_pool_grade,
+        style_drift=style_drift,
+        league_promotion_rubric=league_promotion_rubric,
     )
     (out_dir / "axis_summary.json").write_text(
         json.dumps(manifest, indent=2, sort_keys=True) + "\n",
@@ -827,6 +1017,25 @@ def main(argv: list[str] | None = None) -> int:
             f"worst={pool_grade.get('worst_handle')} "
             f"({pool_grade.get('worst_bb100')})"
         )
+
+    style = manifest.get("style_drift_d_policy") or {}
+    if style:
+        flag = "STYLE_GAP" if not style.get("style_ok") else "ok"
+        print(
+            f"  style_drift_d_policy: {flag} "
+            f"tv={style.get('d_policy_tv')} "
+            f"max={style.get('max_d_policy_tv_advisory')}"
+        )
+
+    rubric = manifest.get("league_promotion_rubric") or {}
+    if rubric.get("gaps") or rubric.get("footsiesgym_note"):
+        print(
+            f"  league_promotion_rubric: gaps={rubric.get('gaps')} "
+            f"yardstick_gap={rubric.get('yardstick_gap')} "
+            f"style_gap={rubric.get('style_gap')}"
+        )
+        if rubric.get("footsiesgym_note"):
+            print(f"    footsiesgym: {rubric.get('footsiesgym_note')}")
 
     forgetting = manifest.get("forgetting_regret") or {}
     if forgetting.get("n_hands"):

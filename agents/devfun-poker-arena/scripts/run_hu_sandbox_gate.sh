@@ -234,6 +234,12 @@ case "$TABLE_FORMAT" in
         | tee "${BUNDLE_DIR}/yardstick-pool-grade/summary.txt" || true
       echo "    see references/expert-yardstick-pool.md — frozen expert outside train loop"
     fi
+    # K153 style drift + league promotion rubric (advisory only; Leduc trial is pre-NLHE).
+    if [[ -f config/hu_style_preservation.json ]]; then
+      echo "==> K153 league promotion rubric (advisory only; see references/league-promotion-rubric.md)"
+      echo "    Leduc trial: bash scripts/run_rlcard_style_drift_trial.sh (isolated .venv-rlcard)"
+      echo "    FootsiesGym exploitability advisory remains separate env — not NLHE league score"
+    fi
     echo "==> HU maniac/lag series audit (400h, 80h/match)"
     mkdir -p "${BUNDLE_DIR}/maniac-audit"
     CEMINI_TABLE_FORMAT=hu CEMINI_GIN_STYLE=1 CEMINI_S1B_EXPLOIT=1 CEMINI_RESEARCHER_MODE=1 \

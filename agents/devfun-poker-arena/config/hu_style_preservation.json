@@ -1,0 +1,15 @@
+{
+  "schema": "devfun.hu_style_preservation.v1",
+  "beta_demo_mix": 0.05,
+  "d_policy_metric": "total_variation",
+  "max_d_policy_tv_advisory": 0.25,
+  "archetypes": [
+    "tight_passive",
+    "loose_passive",
+    "tight_aggressive",
+    "loose_aggressive"
+  ],
+  "trial_env": "leduc-holdem",
+  "never_train_yardstick": true,
+  "notes": "MPPO arXiv 2506.16995 read-only reference. AMysteriousBeing/MPPO has NO LICENSE — do not fork or pip-install. Pair with K152 yardstick pool: stronger league bot must not homogenize vs seed demonstrator."
+}
