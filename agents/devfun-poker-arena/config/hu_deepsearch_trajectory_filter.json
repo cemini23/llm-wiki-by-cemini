@@ -1,0 +1,16 @@
+{
+  "schema": "devfun.hu_deepsearch_trajectory_filter.v1",
+  "required_tags": [
+    "progress_verification",
+    "grounded_reflection",
+    "failure_recovery"
+  ],
+  "drop_if": [
+    "teacher_imitation_only",
+    "missing_required_tags",
+    "ungrounded_reflection"
+  ],
+  "mix_eligible_min_pct": 0.0,
+  "advisory_only": true,
+  "notes": "DeepSearch-Evolve arXiv 2607.07820 loop shape only (Watch) — generate→filter→mix; no teacher distillation until env lands."
+}

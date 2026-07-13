@@ -52,6 +52,8 @@ DEFAULT_DRIFT_BB_THRESHOLD = 3.0
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_YARDSTICK_POOL_PATH = _REPO_ROOT / "config" / "hu_yardstick_pool.json"
 DEFAULT_STYLE_PRESERVATION_PATH = _REPO_ROOT / "config" / "hu_style_preservation.json"
+DEFAULT_HIERARCHICAL_MEMORY_PATH = _REPO_ROOT / "config" / "hu_hierarchical_memory.json"
+DEFAULT_DEEPSEARCH_FILTER_PATH = _REPO_ROOT / "config" / "hu_deepsearch_trajectory_filter.json"
 
 _ACTION_BUCKETS = ("fold", "check", "call", "raise")
 
@@ -482,6 +484,232 @@ def compute_league_promotion_rubric_advisory(
     }
 
 
+def load_deepsearch_trajectory_filter_config(
+    path: str | Path | None = None,
+) -> dict[str, Any]:
+    """Load DeepSearch generate→filter→mix advisory config (K161)."""
+    cfg_path = Path(path) if path else DEFAULT_DEEPSEARCH_FILTER_PATH
+    if not cfg_path.is_file():
+        raise FileNotFoundError(f"deepsearch filter config not found: {cfg_path}")
+    data = json.loads(cfg_path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError("deepsearch filter config must be a JSON object")
+    return data
+
+
+def build_failure_mining_units(rows: list[dict]) -> list[dict[str, Any]]:
+    """Group loss hand_result rows into DeepSearch mining units."""
+    units: list[dict[str, Any]] = []
+    for i, row in enumerate(rows):
+        if not isinstance(row, dict):
+            continue
+        kind = str(row.get("type") or row.get("event") or "").lower()
+        chip = row.get("chip_delta")
+        if chip is None:
+            chip = row.get("hero_chip_delta")
+        is_loss = False
+        if chip is not None:
+            try:
+                is_loss = float(chip) < 0
+            except (TypeError, ValueError):
+                is_loss = False
+        if not is_loss and kind not in ("hand_result", "hand", ""):
+            continue
+        if not is_loss and "hand_result" not in kind and row.get("result") != "loss":
+            if chip is None:
+                continue
+            if not is_loss:
+                continue
+        if not is_loss:
+            continue
+
+        next_delta = None
+        for j in range(i + 1, min(i + 6, len(rows))):
+            nxt = rows[j]
+            if not isinstance(nxt, dict):
+                continue
+            nd = nxt.get("chip_delta")
+            if nd is None:
+                nd = nxt.get("hero_chip_delta")
+            if nd is not None:
+                try:
+                    next_delta = float(nd)
+                    break
+                except (TypeError, ValueError):
+                    pass
+
+        prior_veto = None
+        post_veto = row.get("trajectory_bound_veto")
+        prior_action = None
+        post_action = row.get("action")
+        for j in range(i - 1, max(-1, i - 6), -1):
+            prev = rows[j]
+            if not isinstance(prev, dict):
+                continue
+            if prior_veto is None and "trajectory_bound_veto" in prev:
+                prior_veto = prev.get("trajectory_bound_veto")
+            if prior_action is None and prev.get("action"):
+                prior_action = prev.get("action")
+            if prior_veto is not None and prior_action is not None:
+                break
+
+        units.append(
+            {
+                "hand_id": row.get("hand_id") or row.get("tableId") or f"loss-{i}",
+                "chip_delta": float(chip) if chip is not None else None,
+                "hole_key": row.get("hole_key") or row.get("hole"),
+                "board": row.get("board") or [],
+                "reasoning": row.get("reasoning") or row.get("reflection") or "",
+                "verified": row.get("verified"),
+                "teacher_imitation_only": bool(row.get("teacher_imitation_only")),
+                "ungrounded_reflection": bool(row.get("ungrounded_reflection")),
+                "next_hand_chip_delta": next_delta,
+                "tags": row.get("tags") if isinstance(row.get("tags"), dict) else {},
+                "post_loss_action_changed": (
+                    prior_action is not None
+                    and post_action is not None
+                    and str(prior_action).lower() != str(post_action).lower()
+                ),
+                "trajectory_bound_veto_flipped": (
+                    prior_veto is not None
+                    and post_veto is not None
+                    and bool(prior_veto) != bool(post_veto)
+                ),
+            }
+        )
+    return units
+
+
+def infer_mining_tags(unit: dict[str, Any]) -> dict[str, bool]:
+    """Infer DeepSearch filter tags; honor explicit tags when present."""
+    explicit = unit.get("tags") if isinstance(unit.get("tags"), dict) else {}
+    tags: dict[str, bool] = {}
+
+    if "progress_verification" in explicit:
+        tags["progress_verification"] = bool(explicit["progress_verification"])
+    else:
+        tags["progress_verification"] = bool(unit.get("verified")) or (
+            unit.get("next_hand_chip_delta") is not None
+            and float(unit["next_hand_chip_delta"]) > 0
+        )
+
+    if "grounded_reflection" in explicit:
+        tags["grounded_reflection"] = bool(explicit["grounded_reflection"])
+    else:
+        text = str(unit.get("reasoning") or "").lower()
+        hole = str(unit.get("hole_key") or "").replace(" ", "")
+        allowed: set[str] = set()
+        for i in range(0, len(hole), 2):
+            chunk = hole[i : i + 2]
+            if len(chunk) == 2:
+                allowed.add(chunk.lower())
+        for c in unit.get("board") or []:
+            s = str(c).strip()
+            if len(s) >= 2:
+                allowed.add(s[:2].lower())
+        cited = {m.lower() for m in _CARD_TOKEN_RE.findall(text)}
+        # Also accept concatenated hole_key substring in reflection text
+        grounded = bool(allowed) and (
+            bool(cited & allowed) or any(tok in text for tok in allowed)
+        )
+        tags["grounded_reflection"] = grounded and not bool(
+            unit.get("ungrounded_reflection")
+        )
+
+    if "failure_recovery" in explicit:
+        tags["failure_recovery"] = bool(explicit["failure_recovery"])
+    else:
+        tags["failure_recovery"] = bool(unit.get("post_loss_action_changed")) or bool(
+            unit.get("trajectory_bound_veto_flipped")
+        )
+
+    if "teacher_imitation_only" in explicit:
+        tags["teacher_imitation_only"] = bool(explicit["teacher_imitation_only"])
+    else:
+        tags["teacher_imitation_only"] = bool(unit.get("teacher_imitation_only"))
+
+    return tags
+
+
+def filter_deepsearch_units(
+    units: list[dict[str, Any]],
+    *,
+    config: dict[str, Any] | str | Path | None = None,
+) -> dict[str, Any]:
+    cfg = (
+        load_deepsearch_trajectory_filter_config(config)
+        if config is None or isinstance(config, (str, Path))
+        else config
+    )
+    required = list(cfg.get("required_tags") or [])
+    eligible: list[dict[str, Any]] = []
+    rejected: list[dict[str, Any]] = []
+    reasons: dict[str, int] = {}
+
+    for unit in units:
+        tags = infer_mining_tags(unit)
+        reason = None
+        if tags.get("teacher_imitation_only"):
+            reason = "teacher_imitation_only"
+        elif unit.get("ungrounded_reflection") or tags.get("grounded_reflection") is False:
+            if not tags.get("grounded_reflection"):
+                reason = "ungrounded_reflection"
+        if reason is None:
+            missing = [t for t in required if not tags.get(t)]
+            if missing:
+                reason = "missing_required_tags"
+
+        record = {
+            "hand_id": unit.get("hand_id"),
+            "tags": tags,
+            "reason": reason,
+        }
+        if reason:
+            rejected.append(record)
+            reasons[reason] = reasons.get(reason, 0) + 1
+        else:
+            eligible.append(record)
+
+    return {
+        "eligible": eligible,
+        "rejected": rejected,
+        "reasons": reasons,
+        "n_units": len(units),
+        "n_eligible": len(eligible),
+        "n_rejected": len(rejected),
+    }
+
+
+def compute_deepsearch_trajectory_filter_advisory(
+    rows_or_units: list[dict[str, Any]],
+    *,
+    config: dict[str, Any] | str | Path | None = None,
+    units_prebuilt: bool = False,
+) -> dict[str, Any]:
+    """K161 advisory: generate→filter→mix eligibility for failure mining."""
+    cfg = (
+        load_deepsearch_trajectory_filter_config(config)
+        if config is None or isinstance(config, (str, Path))
+        else config
+    )
+    units = rows_or_units if units_prebuilt else build_failure_mining_units(rows_or_units)
+    filtered = filter_deepsearch_units(units, config=cfg)
+    n = filtered["n_units"]
+    eligible_pct = round(filtered["n_eligible"] / n, 4) if n else None
+    return {
+        "schema": "devfun.deepsearch_trajectory_filter.v1",
+        "advisory_only": True,
+        "n_units": n,
+        "n_eligible": filtered["n_eligible"],
+        "n_rejected": filtered["n_rejected"],
+        "eligible_pct": eligible_pct,
+        "rejected_reasons": filtered["reasons"],
+        "eligible_hand_ids": [u.get("hand_id") for u in filtered["eligible"]],
+        "required_tags": list(cfg.get("required_tags") or []),
+        "reference": "references/deepsearch-trajectory-filter.md",
+    }
+
+
 def compute_exploitability_advisory(
     *,
     skill_bb100: float | None = None,
@@ -724,6 +952,8 @@ def build_manifest(
     yardstick_pool_grade: dict | None = None,
     style_drift: dict | None = None,
     league_promotion_rubric: dict | None = None,
+    deepsearch_trajectory_filter: dict | None = None,
+    hierarchical_memory_advisory: dict | None = None,
 ) -> dict[str, Any]:
     manifest: dict[str, Any] = {
         "schema": "devfun.researcher_trajectory.v2",
@@ -745,6 +975,10 @@ def build_manifest(
         manifest["style_drift_d_policy"] = style_drift
     if league_promotion_rubric:
         manifest["league_promotion_rubric"] = league_promotion_rubric
+    if deepsearch_trajectory_filter:
+        manifest["deepsearch_trajectory_filter"] = deepsearch_trajectory_filter
+    if hierarchical_memory_advisory:
+        manifest["hierarchical_memory_advisory"] = hierarchical_memory_advisory
     manifest["gate_failures"] = evaluate_gates(manifest)
     manifest["gate_pass"] = not manifest["gate_failures"]
     return manifest
@@ -861,6 +1095,18 @@ def main(argv: list[str] | None = None) -> int:
         default=None,
         help="Style preservation JSON (default: config/hu_style_preservation.json)",
     )
+    p.add_argument(
+        "--deepsearch-filter-config",
+        type=Path,
+        default=None,
+        help="DeepSearch filter JSON (default: config/hu_deepsearch_trajectory_filter.json)",
+    )
+    p.add_argument(
+        "--hierarchical-memory-config",
+        type=Path,
+        default=None,
+        help="Hierarchical memory JSON (default: config/hu_hierarchical_memory.json)",
+    )
     args = p.parse_args(argv)
 
     if not args.selfplay and not args.export_dir:
@@ -927,6 +1173,35 @@ def main(argv: list[str] | None = None) -> int:
         exploitability_advisory=exploitability_advisory,
     )
 
+    deepsearch_trajectory_filter = None
+    if args.selfplay:
+        try:
+            deepsearch_trajectory_filter = compute_deepsearch_trajectory_filter_advisory(
+                _load_jsonl(args.selfplay),
+                config=args.deepsearch_filter_config,
+            )
+        except (FileNotFoundError, ValueError, json.JSONDecodeError) as exc:
+            print(f"WARN: deepsearch filter skipped: {exc}", file=sys.stderr)
+
+    hierarchical_memory_advisory = None
+    try:
+        from hierarchical_session_state import (  # noqa: WPS433
+            build_memory_slice_for_decide,
+            compute_hierarchical_memory_advisory,
+            empty_state,
+        )
+
+        empty_slice = build_memory_slice_for_decide(
+            empty_state(),
+            config=args.hierarchical_memory_config,
+        )
+        hierarchical_memory_advisory = compute_hierarchical_memory_advisory(
+            empty_slice,
+            config=args.hierarchical_memory_config,
+        )
+    except Exception as exc:  # noqa: BLE001 — advisory only
+        print(f"WARN: hierarchical memory advisory skipped: {exc}", file=sys.stderr)
+
     out_dir = args.out_dir
     if out_dir is None:
         if args.selfplay:
@@ -945,6 +1220,8 @@ def main(argv: list[str] | None = None) -> int:
         yardstick_pool_grade=yardstick_pool_grade,
         style_drift=style_drift,
         league_promotion_rubric=league_promotion_rubric,
+        deepsearch_trajectory_filter=deepsearch_trajectory_filter,
+        hierarchical_memory_advisory=hierarchical_memory_advisory,
     )
     (out_dir / "axis_summary.json").write_text(
         json.dumps(manifest, indent=2, sort_keys=True) + "\n",
@@ -1036,6 +1313,21 @@ def main(argv: list[str] | None = None) -> int:
         )
         if rubric.get("footsiesgym_note"):
             print(f"    footsiesgym: {rubric.get('footsiesgym_note')}")
+
+    ds = manifest.get("deepsearch_trajectory_filter") or {}
+    if ds.get("n_units") is not None:
+        print(
+            f"  deepsearch_filter: eligible={ds.get('n_eligible')}/{ds.get('n_units')} "
+            f"pct={ds.get('eligible_pct')} reasons={ds.get('rejected_reasons')}"
+        )
+
+    hier = manifest.get("hierarchical_memory_advisory") or {}
+    if hier:
+        flag = "ok" if hier.get("within_budget") else "OVER_BUDGET"
+        print(
+            f"  hierarchical_memory: {flag} "
+            f"chars={hier.get('slice_chars')}/{hier.get('slice_max_chars')}"
+        )
 
     forgetting = manifest.get("forgetting_regret") or {}
     if forgetting.get("n_hands"):

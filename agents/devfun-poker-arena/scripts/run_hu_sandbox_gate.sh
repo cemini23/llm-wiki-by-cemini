@@ -240,6 +240,8 @@ case "$TABLE_FORMAT" in
       echo "    Leduc trial: bash scripts/run_rlcard_style_drift_trial.sh (isolated .venv-rlcard)"
       echo "    FootsiesGym exploitability advisory remains separate env — not NLHE league score"
     fi
+    echo "==> K161 hierarchical memory + DeepSearch filter (advisory only)"
+    echo "    see references/hierarchical-session-memory.md + references/deepsearch-trajectory-filter.md"
     echo "==> HU maniac/lag series audit (400h, 80h/match)"
     mkdir -p "${BUNDLE_DIR}/maniac-audit"
     CEMINI_TABLE_FORMAT=hu CEMINI_GIN_STYLE=1 CEMINI_S1B_EXPLOIT=1 CEMINI_RESEARCHER_MODE=1 \

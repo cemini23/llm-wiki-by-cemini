@@ -1,0 +1,21 @@
+{
+  "schema": "devfun.hu_hierarchical_memory.v1",
+  "short_term": {
+    "max_hands": 8,
+    "max_scratchpad_facts": 12
+  },
+  "mid_term": {
+    "max_active_goals": 5,
+    "max_session_summaries": 3,
+    "max_recent_jobs": 6,
+    "evict_completed_drills": true
+  },
+  "long_term_refs": [
+    "references/expert-yardstick-pool.md",
+    "references/league-promotion-rubric.md",
+    "references/mppo-style-preservation.md"
+  ],
+  "slice_max_chars": 1200,
+  "advisory_only": true,
+  "notes": "Ensemble QSP arXiv 2607.07666 read-only — capped mid-term + eviction; never dump full Arena trajectories into decide()/HL prompts."
+}

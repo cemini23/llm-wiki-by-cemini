@@ -28,6 +28,14 @@ from session_memory import (  # noqa: E402
     update_session_memory,
     villain_memory_for_table,
 )
+from hierarchical_session_state import (  # noqa: E402
+    attach_hierarchical_slice,
+    empty_state,
+    evict_completed,
+    reset_mid_term,
+    update_scratchpad_facts,
+    update_short_term,
+)
 from qualification_guard import fetch_qualification_status  # noqa: E402
 from blind_pressure import avg_blind_tax_per_hand, hands_to_erosion  # noqa: E402
 from pace_control import join_retry_seconds  # noqa: E402
@@ -212,6 +220,11 @@ def _sync_competition_scope(state: dict, competition_id: str) -> None:
     state["hands_played"] = 0
     state.pop("session_villain_memory", None)
     state.pop("showdown_tables_seen", None)
+    # K161: reset mid-term hierarchical memory on competition board change
+    if "hierarchical_session" in state:
+        reset_mid_term(state["hierarchical_session"])
+    else:
+        state["hierarchical_session"] = empty_state()
     seed_nemesis_state(state)
 
 
@@ -925,6 +938,25 @@ def run_lobby(args: argparse.Namespace) -> int:
                         hud["margins"] = {**base, **{
                             k: base.get(k, 0.0) + v for k, v in mem_margins.items()
                         }}
+                # K161: bounded hierarchical slice (never full trajectories)
+                state.setdefault("hierarchical_session", empty_state())
+                hero_seat = table.get("selfSeatNumber")
+                stack_bb = None
+                try:
+                    for seat in table.get("seats") or []:
+                        if seat.get("seatNumber") == hero_seat:
+                            chips = seat.get("chips")
+                            bb = table.get("bigBlind") or table.get("bb") or 2
+                            if chips is not None and bb:
+                                stack_bb = round(float(chips) / float(bb), 2)
+                            break
+                except (TypeError, ValueError):
+                    stack_bb = None
+                facts = {"table_id": table.get("tableId")}
+                if stack_bb is not None:
+                    facts["stack_bb"] = stack_bb
+                update_scratchpad_facts(state["hierarchical_session"], facts)
+                attach_hierarchical_slice(ctx, state)
                 try:
                     action = decide_fn(table, deadline_s=deadline_s, research_context=ctx)
                 except TypeError:
@@ -937,6 +969,15 @@ def run_lobby(args: argparse.Namespace) -> int:
                     hands_acted += 1
                     state["hands_played"] = state.get("hands_played", 0) + 1
                     update_session_memory(state, table)
+                    update_short_term(
+                        state.setdefault("hierarchical_session", empty_state()),
+                        {
+                            "hand_id": table.get("tableId"),
+                            "action": action.get("action"),
+                            "position": table.get("selfPosition") or table.get("position"),
+                        },
+                    )
+                    evict_completed(state["hierarchical_session"])
                     hero_aid = str(creds.get("agentId") or "")
                     if hero_aid:
                         poll_showdown_memory(client, state, hero_aid, table_comp)
