@@ -2,8 +2,9 @@
   "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "498df8d3-c7fa-4240-8ad9-506aff0ef390",
+  "activeSubmissionId": "406f9734-bad6-4c47-846f-0f48cd0bc528",
   "watchSubmissionIds": [
+    "406f9734-bad6-4c47-846f-0f48cd0bc528",
     "498df8d3-c7fa-4240-8ad9-506aff0ef390",
     "c67973a2-3bd9-40b0-bc5b-e106d19cd7e7",
     "cc20d33e-83dd-4424-b93c-01fa2a99de31",
@@ -15,9 +16,9 @@
   "legacyActiveSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-ladder-s1.k151.2026-07-11-sigalarm",
+  "agentVersion": "researcher-ladder-s1.k151.2026-07-13-retry",
   "sandboxEngine": "cemini",
-  "gitCommit": "68d80d3",
-  "pinnedAt": "2026-07-11T21:05:00Z",
-  "notes": "Super-audit REWORK: SIGALRM wall-clock guard (ThreadPoolExecutor was ineffective), pvp_progress + monitor dedup by submissionId. Live 498df8d3 after replace."
+  "gitCommit": "495f533",
+  "pinnedAt": "2026-07-13T20:35:00Z",
+  "notes": "Replace resubmit 2026-07-13 after 498df8d3 Failed (static timeout @2770h -39.7). Live 406f9734 with SIGALRM guard + K161 hierarchical memory in tree."
 }
