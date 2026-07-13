@@ -4,6 +4,8 @@ type: source
 tags: [sabr, implied-volatility, options-pricing, machine-learning, hybrid-model, quantitative-finance]
 keywords: [SABR, Hagan formula, implied volatility, residual correction, geometry-aware, neural network, quantitative finance]
 related:
+  - concepts/cev-resistance-support-optimal-prediction.md
+  - sources/arxiv-cev-resistance-support-prediction-2607.08531-2026-07-13.md
   - concepts/market-microstructure.md
   - entities/tools/hftbacktest.md
   - sources/scaling-moe-inference-expert-activation-2026.md

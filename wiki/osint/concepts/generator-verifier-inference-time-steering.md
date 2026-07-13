@@ -4,6 +4,7 @@ type: concept
 tags: [concept, verifier, self-improvement, inference-time, k123]
 keywords: [VERITAS, Best-of-N, generator-verifier, gradient-free verifier, D_auto, policy steering]
 related:
+  - concepts/deepsearch-world-self-evolution.md
   - sources/arxiv-red-queen-godel-machine-2606.26294-2026-06-29.md
   - concepts/red-queen-controlled-utility-evolution.md
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
@@ -22,7 +23,7 @@ related:
   - concepts/kuhn-poker-sft-curriculum-reference.md
 maturity: draft
 created: 2026-06-18
-updated: 2026-07-05
+updated: 2026-07-13
 ---
 
 ## Relations

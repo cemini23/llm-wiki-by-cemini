@@ -12,9 +12,22 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **658 canonical stubs** (K160 + K159 spike)
+Total: **668 canonical stubs** (K161 + K160)
 
 
+
+### k161-ingest (10)
+
+- [Hierarchical memory Ensemble QSP (2607.07666)](sources/arxiv-hierarchical-memory-ensemble-qsp-2607.07666-2026-07-13.md) — bounded mid-term ~301 tok → poker/CCC. — `pdf` [+k161]
+- [DeepSearch-World self-distill (2607.07820)](sources/arxiv-deepsearch-world-2607.07820-2026-07-13.md) — verifiable env Watch → poker/CCC. — `pdf` [+k161]
+- [Psychological competence AI eval (2607.08285)](sources/arxiv-psychological-competence-ai-eval-2607.08285-2026-07-13.md) — human–AI interaction → **David TipDrop**. — `pdf` [+k161]
+- [Quantile distributional RL (2607.08444)](sources/arxiv-quantile-distributional-rl-2607.08444-2026-07-13.md) — theory shelf. — `pdf` [+k161]
+- [CEV resistance/support prediction (2607.08531)](sources/arxiv-cev-resistance-support-prediction-2607.08531-2026-07-13.md) — aspiration bands → **xsp scp prod**. — `pdf` [+k161]
+- [Hierarchical bounded agent memory](concepts/hierarchical-bounded-agent-memory.md) — three-layer caps + eviction. — concept [+k161]
+- [DeepSearch-World self-evolution](concepts/deepsearch-world-self-evolution.md) — generate→filter→mix. — concept [+k161]
+- [Psychological competence evaluation](concepts/psychological-competence-ai-evaluation.md) — persona probe construct. — concept [+k161]
+- [Quantile DRL inference](concepts/quantile-distributional-rl-inference.md) — wiki REFERENCE. — concept [+k161]
+- [CEV R/S optimal prediction](concepts/cev-resistance-support-optimal-prediction.md) — XSP mental model. — concept [+k161]
 
 ### k160-ingest (5)
 

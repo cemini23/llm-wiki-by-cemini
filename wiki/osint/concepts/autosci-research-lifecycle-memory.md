@@ -4,6 +4,7 @@ type: concept
 tags: [concept, research-workflow, agent-memory, steal-from, k94]
 keywords: [autosci, scimem, monokern, librarian, briefs, experiments]
 related:
+  - concepts/hierarchical-bounded-agent-memory.md
   - "@ccc-wiki/concepts/autosci-memory-centric-research-agents.md"
   - "@ccc-wiki/sources/arxiv-autosci-2605.31468.md"
   - concepts/monokern-compounding-research-pipeline.md

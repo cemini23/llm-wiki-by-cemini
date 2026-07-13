@@ -4,6 +4,7 @@ type: source
 tags: [source, arxiv, agent-harness, benchmark, ccc, k155]
 keywords: [PolyWorkBench, multilingual, long-horizon, workplace workflows]
 related:
+  - sources/arxiv-psychological-competence-ai-eval-2607.08285-2026-07-13.md
   - sources/arxiv-reasoning-effort-agentic-code-2607.02436-2026-07-09.md
   - concepts/polyworkbench-multilingual-harness-eval.md
 maturity: draft

@@ -36,8 +36,9 @@ active_topics:
 
 brief_routing_note: |
   Co-primary ingest targets (equal priority): poker-arena · ceminidfs · xsp-killer · family-tree.
-  Secondary (route when source matches): wc-ticket-monitor · pm-kalshi-bot · castle-sim (legacy).
+  Secondary (route when source matches): wc-ticket-monitor · pm-kalshi-bot · david-persona-image-gen · castle-sim (legacy).
   Full ingest briefs route per `scripts/active_project_brief_targets.yaml`.
+  David persona adoption briefs (image-gen): write locally, then `python3 ../projects/Image\ gen/scripts/route_david_adoption_brief.py` → `tipdrop-workspace-kit/briefs/*-david.md`.
   Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers.
   poker → agents/devfun-poker-arena/briefs/ · ceminidfs → ../projects/CeminiDFS/briefs/
   xsp-killer → briefs/xsp-* → cemini-prod · family-tree → ~/Desktop/family/research/ (private; wiki methodology only)

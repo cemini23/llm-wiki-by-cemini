@@ -12,11 +12,13 @@ related:
   - concepts/llm-environment-engineer-rl-curriculum.md
   - concepts/llm-agent-systems.md
   - sources/agentic-harness-engineering.md
+  - concepts/deepsearch-world-self-evolution.md
+  - sources/arxiv-deepsearch-world-2607.07820-2026-07-13.md
 cross-wiki:
   - ccc-wiki/concepts/continual-harness-online-self-improvement.md
 maturity: validated
 created: 2026-05-27
-updated: 2026-06-20
+updated: 2026-07-13
 ---
 
 ## Relations
@@ -58,3 +60,8 @@ Prompt-optimization and many RL harness pipelines assume **reset between episode
 ## Snippets
 
 > "Prompt-optimization methods require episode resets; Continual Harness adapts online within a single run." [Source: 2605.09998v1.pdf p.1]
+
+
+### K161 — DeepSearch-Evolve (2026-07-13)
+
+Adjacent self-evolve path for **tool-use / web agents**: verifiable env + trajectory filter/mix SFT without teacher models (2607.07820). Complements reset-free harness refinement — use when the bottleneck is process-level tool supervision rather than online embodied resets. @concepts/deepsearch-world-self-evolution.md

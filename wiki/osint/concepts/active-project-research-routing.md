@@ -19,10 +19,11 @@ related:
   - "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
   - concepts/xsp-lane-trading-framework.md
   - concepts/polymarket-bot-architecture.md
+  - "@image-gen-wiki/concepts/david-adoption-brief-routing.md"
   - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
 maturity: core
 created: 2026-06-17
-updated: 2026-07-10
+updated: 2026-07-12
 ---
 
 ## Relations
@@ -62,6 +63,7 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 |---------|-------------------|-------------|
 | **wc-ticket-monitor** | `../projects/wc-ticket-monitor/briefs/` | No — Discord alert cron |
 | **PM / Kalshi bot** | `briefs/pm-*` → prod when bot-touching | Yes — exploratory retail bot |
+| **David persona image-gen** | `briefs/` (image-gen) → mirror `../projects/tipdrop-workspace-kit/briefs/*-david.md` | No — shared kit handoff |
 | **castle-sim** (legacy) | `../projects/castle-sim/briefs/` + `@game-dev-wiki` | No — deprioritized Jul 2026 |
 
 ### Default ingest rule

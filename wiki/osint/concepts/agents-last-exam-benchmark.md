@@ -4,6 +4,8 @@ type: concept
 tags: [concept, agent-evaluation, benchmark, reference, k101]
 keywords: [ale, agents-last-exam, 2606.05405, gdp-relevant, verifiable-workflows, quant-finance-slice]
 related:
+  - concepts/psychological-competence-ai-evaluation.md
+  - sources/arxiv-psychological-competence-ai-eval-2607.08285-2026-07-13.md
   - sources/arxiv-agents-last-exam-2606.05405-2026-06-06.md
   - concepts/system-scaling-harness-evaluation.md
   - concepts/agent-memory-pipeline-eval-rubric.md
@@ -12,7 +14,7 @@ related:
   - concepts/cemini-knowledge-application-architecture.md
 maturity: draft
 created: 2026-06-06
-updated: 2026-06-06
+updated: 2026-07-13
 ---
 
 ## Relations

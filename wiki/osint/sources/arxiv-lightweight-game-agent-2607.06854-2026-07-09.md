@@ -4,6 +4,7 @@ type: source
 tags: [source, arxiv, game-ai, poker, castle-sim, k151]
 keywords: [lightweight agent, game-playing, benchmark, ablation, curriculum, information-bound]
 related:
+  - sources/arxiv-quantile-distributional-rl-2607.08444-2026-07-13.md
   - sources/arxiv-footsiesgym-2607.06514-2026-07-09.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
 maturity: validated

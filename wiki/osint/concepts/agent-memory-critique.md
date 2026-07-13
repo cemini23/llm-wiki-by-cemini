@@ -18,10 +18,12 @@ related:
   - concepts/interaction-native-knowledge-harness.md
   - sources/arxiv-interaction-native-knowledge-harness-2606.01886.md
   - concepts/agent-memory-cross-scenario-generality.md
+  - concepts/hierarchical-bounded-agent-memory.md
+  - sources/arxiv-hierarchical-memory-ensemble-qsp-2607.07666-2026-07-13.md
   - sources/arxiv-cross-scenario-agentic-generality-2606.04315-2026-06-05.md
 maturity: draft
 created: 2026-05-02
-updated: 2026-06-05
+updated: 2026-07-13
 ---
 
 ## Relations
@@ -48,6 +50,10 @@ This is not an argument against memo systems. A memo pad is useful. The argument
 For Cemini: kb-server and Stash are legitimate memo infrastructure. They should be used for what they're good at (factual retrieval, calibration data storage for token-prior construction). They should not be expected to provide agent continuity across sessions — that requires capabilities beyond current infrastructure. **Knowledge-application gap:** even when lessons are in the wiki, prod and agents treat retrieval as optional unless a **lesson registry + completion verification** loop exists — see @concepts/cemini-knowledge-application-architecture.md.
 
 **ARA connection**: The @concepts/agent-native-research-artifacts.md Live Research Manager partially addresses the memory gap for the narrow domain of research-process capture. It operates at session boundaries, distilling researcher-agent conversations into typed events (decisions, dead ends, experiments) that accumulate in the artifact's exploration graph. This is selective encoding + consolidation — two of the four missing criteria — but only for research trajectories, not general agent memory. The exploration graph's dead_end nodes with structured failure modes are a concrete implementation of "active forgetting via preservation" (keeping what was tried and abandoned, rather than silently discarding).
+
+### K161 — Ensemble QSP hierarchical memory (2607.07666)
+
+Empirical counterexample to unbounded history: mid-term project-state stays ~301 tokens median across 104 runs when categories are capped and completed work is **evicted**. Maps to criteria (1) selective encoding and (4) active forgetting — still not full consolidation, but stronger than naive memo stuffing. See @concepts/hierarchical-bounded-agent-memory.md.
 
 ## Snippets
 

@@ -1,9 +1,19 @@
 # Wiki Log
 
-updated: 2026-07-12
+updated: 2026-07-13
 ---
 
 ---
+
+## [2026-07-13] ingest | K161 — 5 arXiv (memory / DeepSearch / psych / quantile RL / CEV R/S)
+
+- **Inbox (5):** all NEW arXiv PDFs — archived egress-fi; inbox cleared
+- **Sources (5):** 2607.07666 hierarchical memory; 2607.07820 DeepSearch-World; 2607.08285 psychological competence; 2607.08444 quantile DRL; 2607.08531 CEV R/S
+- **Concepts (5 new + updates):** hierarchical-bounded-agent-memory; deepsearch-world-self-evolution; psychological-competence-ai-evaluation; quantile-distributional-rl-inference; cev-resistance-support-optimal-prediction; plus agent-memory-critique / CPR / continual-harness / xsp-lane
+- **Phase-0:** `scripts/adopt_k161_phase0.sh` — Watch DeepSearch release; all else REFERENCE
+- **Briefs:** xsp CEV aspiration (**scp prod**); poker hierarchical+DeepSearch; CCC harness steal; **David/TipDrop** psych-competence persona eval
+- **Config:** david-persona-image-gen routing already staged in working tree
+
 
 ## [2026-07-12] ship | K159 fable-advisor — CC upgrade + grok token spike
 

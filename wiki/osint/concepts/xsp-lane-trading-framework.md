@@ -4,6 +4,8 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - concepts/cev-resistance-support-optimal-prediction.md
+  - sources/arxiv-cev-resistance-support-prediction-2607.08531-2026-07-13.md
   - sources/substack-rss-moontower-2026-07-08-betting-as-a-tax-on-bullshit.md
   - sources/macro-charts-paid-forward-chat-2026-07-10.md
   - sources/substack-rss-capital-flows-2026-07-10-trading-investing-framework.md
@@ -24,7 +26,7 @@ related:
   - sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-12
+updated: 2026-07-13
 ---
 
 ## Relations
@@ -137,3 +139,8 @@ Prod briefs: `briefs/2026-07-10_xsp-macro-weather-usdjpy-cpi-operator.md`, `brie
 ## Snippets
 
 > "Lane A first for fast exit loop; Lane B is the wealth engine per mentor thesis." [Source: OSINT K116 session synthesis, 2026-06-14]
+
+
+### K161 — CEV aspiration levels (2026-07-13)
+
+Resistance/support as hidden aspiration levels under **CEV** (2607.08531): positive-drift regimes favor a **stopping band** (not one-sided GBM pivots); elasticity shifts band geometry. Operator mental model for Lane A overnight exits / Lane B LEAPS hedges — see brief `briefs/xsp-2026-07-13_k161-cev-resistance-support-aspiration-steal.md`.

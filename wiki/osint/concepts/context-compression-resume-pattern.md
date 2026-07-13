@@ -32,10 +32,12 @@ related:
   - concepts/self-compacting-language-model-agents.md
   - entities/tools/headroom.md
   - entities/tools/obsidian-mind.md
+  - concepts/hierarchical-bounded-agent-memory.md
+  - sources/arxiv-hierarchical-memory-ensemble-qsp-2607.07666-2026-07-13.md
 maturity: draft
 hub: true
 created: 2026-04-28
-updated: 2026-07-04
+updated: 2026-07-13
 ---
 
 ## Relations
@@ -163,3 +165,8 @@ The model also maps naturally onto the existing Redis infrastructure: Layer 0 ru
 > Demonstrating robust, automated state management and algorithmic context compression proves to an acquirer that the trading platform can operate continuously over months or years without degrading due to context window exhaustion or "context death". This highlights the system's stability, maturity, and production-readiness, which are highly valued metrics during technical due diligence.
 
 K8 cross-link: the IP-sale framing here aligns with the K6/K7-trio "headline-claim-verifiability problem" — a continuous-run claim that the audit trail can defend post-hoc. The cpr-pattern wired to LangGraph checkpointer + cryptographic audit trail anchoring would let an acquirer's technical-due-diligence pass replay arbitrary historical debate cycles. Strong IP-sale-prep entry.
+
+
+### K161 addendum (2026-07-13)
+
+Ensemble QSP (2607.07666) is a **structured mid-term state** cousin of CPR: compress into capped project-state JSON + decision-log summary rather than only LLM-summarize-then-serialize. Prefer eviction of completed work over ever-growing compressed blobs. @concepts/hierarchical-bounded-agent-memory.md
