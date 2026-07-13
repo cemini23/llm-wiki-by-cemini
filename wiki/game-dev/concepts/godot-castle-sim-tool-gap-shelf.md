@@ -12,10 +12,11 @@ related:
   - concepts/godot-pathfinding-patterns.md
   - concepts/art-pipeline-v0-requirements.md
   - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
+  - sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md
   - entities/tools/pcgodot.md
 maturity: validated
 created: 2026-06-17
-updated: 2026-06-30
+updated: 2026-07-13
 ---
 
 ## Relations
@@ -54,6 +55,7 @@ Targeted Godot tool/workflow research after castle-sim story-012–029 — close
 | rluders/rts-framework | **STEAL-FROM** | Signal decoupling only |
 | godot-debug-menu | **GO** | Dev perf overlay |
 | Cyclops Level Builder | **CONDITIONAL-GO** | Editor map blockout only |
+| Chris' Tutorials GridPlacement | **EVAL** | Paid itch.io reference if placement refactor stalls — @sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md |
 | hi-godot-ai MCP | **Defer** | After controller split |
 
 ### Priority order

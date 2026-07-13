@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-13] ingest | 5 arXiv rejects (re-drop loop); grid placement + invasion design news
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-13.md (all reject); archived; inbox cleared
+- Triage: 2607.04689 RCT-AD re-drop; 2607.05179 railway MARL; 2607.06269 Structural Tension re-drop; 2607.07281 modular robots; 2607.07820 web agents
+- News: @sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md → @concepts/godot-castle-sim-tool-gap-shelf.md; @sources/stronghold-invasion-vs-freebuild-shelf-2026-07-12.md → @concepts/stronghold-franchise-best-of-shelf.md
+- Phase-0: none; brief update only (GridPlacement EVAL row in `godot-castle-sim-tool-gap-research.md`)
+- Briefs: rsync `briefs/research/` → `castle-sim/briefs/research/` (parity, 19 files)
+- Sweep: @sweeps/2026-07-13-daily.md
+
+---
+
 ## [2026-07-12] ingest | 5 arXiv rejects (re-drop loop); UGenLah Unity PCG news
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-12.md (all reject); archived; inbox cleared
