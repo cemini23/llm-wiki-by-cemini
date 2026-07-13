@@ -4,6 +4,8 @@ type: source
 tags: [source, macro-charts, substack, newsletter, k144, email-forward]
 keywords: [macro-charts, great-reversal, gold, sox, vincent-barone, vinnyb64]
 related:
+  - sources/macro-charts-rss-2026-07-05-big-moves-getting-started.md
+  - sources/macro-charts-paid-forward-2026-07-12-sentiment-capitulation.md
   - concepts/macro-charts-regime-signals.md
   - concepts/macro-charts-gold-reversal-thesis-2026-06.md
   - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
@@ -11,7 +13,7 @@ related:
   - meta/macro-charts-email-ingest-cadence.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-05
+updated: 2026-07-13
 ---
 
 ## Relations

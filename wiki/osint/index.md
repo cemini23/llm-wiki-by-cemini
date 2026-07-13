@@ -12,9 +12,23 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **668 canonical stubs** (K161 + K160)
+Total: **679 canonical stubs** (K162 + K161)
 
 
+
+### k162-ingest (11)
+
+- [Macro Charts paid — Sentiment Capitulation Jul 12](sources/macro-charts-paid-forward-2026-07-12-sentiment-capitulation.md) — SOX/gold/yen → **xsp scp**. — `paid` [+k162]
+- [Macro Charts RSS Jul 1 Big Signal Watch](sources/macro-charts-rss-2026-07-01-market-update-big-signal-watch.md) — teaser. — `rss` [+k162]
+- [Macro Charts RSS Jul 5 Big Moves](sources/macro-charts-rss-2026-07-05-big-moves-getting-started.md) — Great Reversal teaser. — `rss` [+k162]
+- [Event Horizon Kalshi app downloads](sources/substack-rss-event-horizon-2026-07-13-kalshi-app-downloads.md) — WC spike → **pm scp**. — `rss` [+k162]
+- [Klement SFDR regulation](sources/substack-rss-klement-2026-07-13-when-regulation-is-good-for-business.md) — wiki-only. — `rss` [+k162]
+- [Moontower investing orbits](sources/substack-rss-moontower-2026-07-12-investing-orbits.md) — CIO/amateur framing. — `rss` [+k162]
+- [Moontower present tense](sources/substack-rss-moontower-2026-07-12-present-tense.md) — essay archive. — `rss` [+k162]
+- [SecEng agentic AI security](sources/substack-rss-seceng-weekly-2026-07-13-agentic-ai-security-fundamentals.md) — → cybersec brief. — `rss` [+k162]
+- [WuBlock Strategy BTC weekly](sources/substack-rss-wublock-2026-07-10-strategy-btc-swift-weekly.md) — crypto digest. — `rss` [+k162]
+- [WuBlock Asia TOP10](sources/substack-rss-wublock-2026-07-12-asia-top10-crypto-etfs.md) — Japan ETF path. — `rss` [+k162]
+- [WuBlock Jun exchange volume](sources/substack-rss-wublock-2026-07-13-june-exchange-volume.md) — HL ders +24%. — `rss` [+k162]
 
 ### k161-ingest (10)
 

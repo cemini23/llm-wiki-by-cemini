@@ -4,6 +4,8 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/substack-rss-moontower-2026-07-12-investing-orbits.md
+  - sources/macro-charts-paid-forward-2026-07-12-sentiment-capitulation.md
   - concepts/cev-resistance-support-optimal-prediction.md
   - sources/arxiv-cev-resistance-support-prediction-2607.08531-2026-07-13.md
   - sources/substack-rss-moontower-2026-07-08-betting-as-a-tax-on-bullshit.md

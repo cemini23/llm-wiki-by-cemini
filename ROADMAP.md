@@ -21,7 +21,11 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / genealogy** — Italian archival deep research (K153/K154) | `~/Desktop/family/research/` (private) | No — wiki methodology only |
 
-## Current state (2026-07-13 — K161)
+## Current state (2026-07-13 — K162)
+
+- **K162 ingest (2026-07-13)** — RSS backlog: **12 NEW** Macro Charts paid sentiment + Kalshi WC downloads + SecEng agentic AI + WuBlock/Moontower/Klement. **11 sources + concept updates.** Briefs: xsp + pm (**scp prod**); cybersec + gambling handoffs. **No David.** Phase-0: `adopt_k162_phase0.sh`.
+
+## Prior state (2026-07-13 — K161)
 
 - **K161 ingest (2026-07-13)** — Full ingest: 5 NEW arXiv. **5 sources + 5 concepts + updates.** Hierarchical memory (REFERENCE); DeepSearch-World (Watch); psych competence → **David TipDrop**; quantile DRL shelf; CEV R/S → **xsp scp prod**. Phase-0: `adopt_k161_phase0.sh`. Briefs: xsp + poker + CCC + David. No ComfyUI installs.
 

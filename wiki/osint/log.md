@@ -5,6 +5,16 @@ updated: 2026-07-13
 
 ---
 
+## [2026-07-13] ingest | K162 — RSS backlog (12 NEW; fold LIKELY/DUP)
+
+- **Inbox (45):** 12 NEW / 24 LIKELY / 9 DUPLICATE — NEW archived egress-fi; LIKELY+DUP cleared (wiki already had pages)
+- **Prefer:** Macro Charts paid Jul 12 over same-day RSS teaser (folded)
+- **Sources (11):** macro×3, Event Horizon Kalshi downloads, Klement SFDR, Moontower×2, SecEng agentic AI, WuBlock×3
+- **Updates:** macro-charts-regime / SOX / gold / xsp-lane / kalshi / dcm-state-preemption
+- **Phase-0:** `scripts/adopt_k162_phase0.sh` — no Adopt; no David installs
+- **Briefs:** xsp sentiment (**scp prod**); pm Kalshi WC downloads (**scp prod**); cybersec agentic AI handoff; gambling Kalshi retail note
+
+
 ## [2026-07-13] ingest | K161 — 5 arXiv (memory / DeepSearch / psych / quantile RL / CEV R/S)
 
 - **Inbox (5):** all NEW arXiv PDFs — archived egress-fi; inbox cleared

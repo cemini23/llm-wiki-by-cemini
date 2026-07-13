@@ -4,6 +4,7 @@ type: concept
 tags: [concept, legal, regulatory, preemption, prediction-markets, cftc, dcm, cemini-leverage]
 keywords: [DCM, exclusive jurisdiction, swap, gaming, preemption, CEA Section 5c(c)(5)(C), Sixth Circuit split, Younger abstention]
 related:
+  - sources/substack-rss-event-horizon-2026-07-13-kalshi-app-downloads.md
   - entities/tools/congress-legislators.md
   - sources/substack-rss-event-horizon-2026-07-08-kalshi-sdny-pi-denial.md
   - sources/substack-rss-event-horizon-2026-07-10-its-states-vs-prediction-markets-not-casinos-vs.md
@@ -16,7 +17,7 @@ related:
   - concepts/ip-sale-readiness.md
 maturity: validated
 created: 2026-04-25
-updated: 2026-07-10
+updated: 2026-07-13
 ---
 
 ## Relations

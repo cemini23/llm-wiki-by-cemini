@@ -4,6 +4,7 @@ type: entity
 tags: [platform, prediction-markets, exchange, cemini-venue]
 keywords: []
 related:
+  - sources/substack-rss-event-horizon-2026-07-13-kalshi-app-downloads.md
   - sources/arxiv-prophets-profit-prediction-markets-2607.06166-2026-07-09.md
   - concepts/proper-betting-clob-prediction-markets.md
   - sources/substack-rss-event-horizon-2026-07-08-kalshi-sdny-pi-denial.md
@@ -73,7 +74,7 @@ related:
   - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-09
+updated: 2026-07-13
 ---
 
 ## Relations

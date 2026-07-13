@@ -4,6 +4,9 @@ type: concept
 tags: [concept, macro, regime, newsletter, k90, k144]
 keywords: [macro-charts, risk-on, great-reversal, 2026, regime-shift]
 related:
+  - sources/macro-charts-rss-2026-07-05-big-moves-getting-started.md
+  - sources/macro-charts-rss-2026-07-01-market-update-big-signal-watch.md
+  - sources/macro-charts-paid-forward-2026-07-12-sentiment-capitulation.md
   - sources/substack-rss-klement-2026-07-08-eu-p7-trade-blessing.md
   - sources/trading-posts-macro-charts-skills-md-2026-05-28.md
   - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
@@ -22,7 +25,7 @@ related:
   - sources/substack-rss-capital-flows-2026-07-08-liquidity-event-horizon.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-10
+updated: 2026-07-13
 ---
 
 ## Relations
@@ -76,3 +79,8 @@ Subscriber chat (`@sources/macro-charts-paid-forward-chat-2026-07-10.md`):
 > "A DECISIVE turn in markets — the biggest potential shift of 2026." [Source: Posts.docx K90, Macro Charts May 31]
 
 > "The Great Reversal may have begun." [Source: macro-charts-paid-forward-2026-07-05, K144 — [TENTATIVE]]
+
+
+### K162 — Jul 12 Sentiment Capitulation (2026-07-13)
+
+Paid forward: institutional strategy overhauls as capitulation analogs; **SPMO/momentum crowding in semis**; gold sentiment capitulation + models turning up; SOX relative weakness / right-shoulder watch; **long yen** initial; China sleeve adds. Prefer diversified low-corr vs chasing crowded memory/semis. Source: @sources/macro-charts-paid-forward-2026-07-12-sentiment-capitulation.md

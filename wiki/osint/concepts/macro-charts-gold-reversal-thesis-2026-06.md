@@ -4,6 +4,7 @@ type: concept
 tags: [concept, macro, gold, metals, dollar, rates, k144]
 keywords: [macro-charts, gold, silver, dxy, great-reversal, sentiment, bear-trap]
 related:
+  - sources/macro-charts-paid-forward-2026-07-12-sentiment-capitulation.md
   - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
   - sources/macro-charts-paid-forward-chat-2026-07-10.md
   - concepts/macro-charts-regime-signals.md
@@ -11,7 +12,7 @@ related:
   - concepts/macro-rotation-momentum-signals-2026-05.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-10
+updated: 2026-07-13
 ---
 
 ## Relations

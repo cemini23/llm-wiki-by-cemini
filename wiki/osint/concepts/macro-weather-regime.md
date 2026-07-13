@@ -4,6 +4,7 @@ type: concept
 tags: [concept, cemini-internal, risk, regime]
 keywords: []
 related:
+  - sources/substack-rss-klement-2026-07-13-when-regulation-is-good-for-business.md
   - sources/macro-charts-paid-forward-chat-2026-07-10.md
   - sources/trading-playbook-research.md
   - sources/3-19-kalshi-trading-strategy-research.md
@@ -30,7 +31,7 @@ related:
   - sources/trading-posts-compilation-16-2026-05-31.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-10
+updated: 2026-07-13
 ---
 
 ## Relations

@@ -4,13 +4,14 @@ type: source
 tags: [source, newsletter-rss, crypto, polymarket, defi, k158]
 keywords: [FCM license, margin trading, BonkDAO, governance attack, BNB AI chain]
 related:
+  - sources/substack-rss-wublock-2026-07-10-strategy-btc-swift-weekly.md
   - entities/platforms/polymarket.md
   - concepts/polymarket-bot-architecture.md
   - concepts/dcm-state-preemption.md
 maturity: draft
 read_status: read
 created: 2026-07-11
-updated: 2026-07-11
+updated: 2026-07-13
 ---
 
 ## Relations

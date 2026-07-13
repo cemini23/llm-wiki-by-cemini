@@ -4,6 +4,7 @@ type: source
 tags: [source, newsletter-rss, prediction-markets, kalshi, k158]
 keywords: [federalism, NCLGS, CFTC, Selig, state AG, Goldman ban]
 related:
+  - sources/substack-rss-event-horizon-2026-07-13-kalshi-app-downloads.md
   - concepts/dcm-state-preemption.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
@@ -12,7 +13,7 @@ related:
 maturity: draft
 read_status: read
 created: 2026-07-10
-updated: 2026-07-10
+updated: 2026-07-13
 ---
 
 ## Relations
