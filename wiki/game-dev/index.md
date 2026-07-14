@@ -93,6 +93,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [gamedevbench](entities/tools/gamedevbench.md) | validated | Godot agent benchmark — **STEAL-FROM** (Apache-2.0) |
 | [ziva-godot-agent](entities/tools/ziva-godot-agent.md) | validated | In-editor Godot agent — **CONDITIONAL-GO** (proprietary) |
 | [hera-agent-godot](entities/tools/hera-agent-godot.md) | validated | Low-token CLI editor control — **CONDITIONAL-GO** W2 (4.7+) |
+| [vrexplorer](entities/tools/vrexplorer.md) | validated | Unity VR testing — **NO-GO adopt** / STEAL-FROM |
 
 ## Entities — Games (reference)
 
@@ -255,5 +256,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-07-13](sources/inbox-arxiv-reject-batch-2026-07-13.md) | read |
 | [chris-tutorials-grid-placement-godot-shelf-2026-07-11](sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md) | read |
 | [stronghold-invasion-vs-freebuild-shelf-2026-07-12](sources/stronghold-invasion-vs-freebuild-shelf-2026-07-12.md) | read |
+| [inbox-arxiv-reject-batch-2026-07-14](sources/inbox-arxiv-reject-batch-2026-07-14.md) | read |
+| [arxiv-2607.10174-vrexplorer-vr-testing-2026-07-14](sources/arxiv-2607.10174-vrexplorer-vr-testing-2026-07-14.md) | read |
+| [vrexplorer-phase-0-audit-2026-07-14](sources/vrexplorer-phase-0-audit-2026-07-14.md) | read |
 | [36kr-ai-game-story-gameplay-guardrails-2026-06-30](sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md) | read |
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |

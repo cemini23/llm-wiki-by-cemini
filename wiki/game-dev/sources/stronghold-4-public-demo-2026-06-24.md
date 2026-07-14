@@ -18,7 +18,7 @@ source_type: news-digest
 source_url: https://store.steampowered.com/news/app/2153760/view/696516113724347211
 maturity: validated
 created: 2026-06-24
-updated: 2026-07-10
+updated: 2026-07-14
 ---
 
 ## Raw Concept
@@ -38,6 +38,8 @@ Firefly announced **Stronghold 4 public demo** on Steam (2026-06-23 news cycle).
 | R7 | AZ World News — hands-on demo (wood economy emphasis) | https://www.azworldnews.com/we-played-stronghold-4-and-more-wood-will-be-needed-for-the-full-version/ |
 | R8 | Game World Observer — 250k wishlists | https://gameworldobserver.com/2026/06/24/stronghold-4-has-garnered-over-250000-wishlists |
 | R3 (2026-07-08 digest) | Gameindustry.com — "Looks Ready to Reclaim the Castle" review | https://www.gameindustry.com/reviews/game-review/stronghold-4-looks-ready-to-reclaim-the-castle/ |
+| R3 (2026-07-14 digest) | Alpha Beta Gamer — Stronghold 4 beta demo | https://www.alphabetagamer.com/stronghold-4-beta-demo/ |
+| R4 (2026-07-14 digest) | YouTube — Stronghold 4 Demo First Look | https://www.youtube.com/watch?v=nXmtsgBHguE |
 
 ### Hands-on notes [TENTATIVE — press only]
 

@@ -10,6 +10,8 @@ related:
   - entities/tools/hi-godot-ai.md
   - entities/tools/godot-stagehand.md
   - entities/tools/godot-ai-playtest.md
+  - entities/tools/vrexplorer.md
+  - sources/vrexplorer-phase-0-audit-2026-07-14.md
   - entities/tools/gamedevbench.md
   - entities/tools/ziva-godot-agent.md
   - sources/gamedevbench-phase-0-audit-2026-06-21.md
@@ -109,6 +111,7 @@ Catalog of **AI + automation tools** for game development — codegen, editor MC
 | [testplay-runner](https://github.com/Kubonsang/testplay-runner) | Unity | Go CLI, JSON stdout for agents | Unity only |
 | modl.ai | Unity/Unreal | Autonomous playtest bots | Commercial; studio scale |
 | LLM playtest papers | — | arXiv 2509.22170 etc. | Research shelf |
+| [VRExplorer](https://github.com/TsingPig/VRExplorer) | Unity VR | EAT + NavMesh + PFSM scene exploration (ASE 2025) | **NO-GO adopt** / STEAL-FROM patterns (@entities/tools/vrexplorer.md) |
 
 Pair with @ccc-wiki verification gates: automated tests **do not replace** human fun pass.
 

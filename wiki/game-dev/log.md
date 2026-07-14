@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-14] ingest | VRExplorer Phase-0 (NO-GO) + 4 arXiv rejects
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-14.md (1 ingest + 4 reject); archived; inbox cleared
+- Ingest: @sources/arxiv-2607.10174-vrexplorer-vr-testing-2026-07-14.md + Phase-0 @sources/vrexplorer-phase-0-audit-2026-07-14.md → @entities/tools/vrexplorer.md (**NO-GO adopt** / STEAL-FROM)
+- Rejects: DreamerV3 iKCE (AV); social-robotics affordances; Potential Functions as Types re-drop; twelve-tone generate–verify–repair (CCC harness note only)
+- Brief: `briefs/research/vrexplorer-model-based-playtest-shelf.md` → rsync castle-sim; no poker/xsp/pm/David/prod scp from this inbox
+- Local adopt: none (VRExplorer undeclared license + Unity VR)
+- Sweep: @sweeps/2026-07-14-daily.md
+
+---
+
 ## [2026-07-13] ingest | 5 arXiv rejects (re-drop loop); grid placement + invasion design news
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-13.md (all reject); archived; inbox cleared
