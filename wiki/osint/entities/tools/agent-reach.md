@@ -4,13 +4,14 @@ type: entity
 tags: [entity, tool, osint, scraping, adopt-wrapper, k134, k142]
 keywords: [agent-reach, yt-dlp, twitter-cli, reddit, cookie-auth, mit, social-snapshot, prompt-injection]
 related:
+  - entities/tools/grok2api.md
   - sources/eval-github-repos-plan-multi-wiki-2026-06-29.md
   - sources/multi-wiki-url-evaluation-2026-07-03.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/polymarket-bot-architecture.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-07-03
+updated: 2026-07-14
 ---
 
 ## Relations

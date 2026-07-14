@@ -1,9 +1,19 @@
 # Wiki Log
 
-updated: 2026-07-13
+updated: 2026-07-14
 ---
 
 ---
+
+## [2026-07-14] ingest | K163 — tool-eval docx + arXiv DR-AS + RSS/Macro
+
+- **Inbox (9):** GitHub Repo Revenue Evaluation.docx + arXiv 2607.08199 + Macro Charts chat + Latent Space + Capital Flows + Event Horizon + Klement×2 + WuBlock — archived egress-fi; inbox cleared
+- **Sources (9):** eval + arxiv + macro + 6 newsletters/RSS
+- **Concept (1):** prediction-market-structural-volatility-dr-as
+- **Entities (9):** dcg CONDITIONAL; hallmark Adopt; codex-first Integrate; maths Extract; awesome Extract; grok2api/OpenCut/penpot/ATO Watch
+- **Phase-0:** `scripts/adopt_k163_phase0.sh`
+- **Briefs:** pm×2 + xsp (**scp prod**); TipDrop/David×2; poker; CCC; cybersec; gambling; CeminiDFS
+- **Local adopt (<500MB):** hallmark skill; optional dcg + maths-compendium clone; no ComfyUI; no grok2api
 
 ## [2026-07-13] ingest | K162 — RSS backlog (12 NEW; fold LIKELY/DUP)
 

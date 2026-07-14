@@ -23,6 +23,7 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 
 ## Current state (2026-07-13 — K162)
 
+- **K163 ingest (2026-07-14)** — Full ingest: GitHub Repo Revenue Evaluation.docx (20 URLs) + arXiv 2607.08199 DR-AS + Macro Charts SOX/oil chat + Latent Space/Capital Flows/Event Horizon/Klement×2/WuBlock. **9 sources + 1 concept + 9 entities.** CONDITIONAL: dcg (MIT+rider). Adopt: hallmark. Integrate TipDrop: codex-first-customer. Extract: maths-compendium + awesome-llm-apps patterns. Watch: OpenCut/penpot/ATO/grok2api. **Briefs:** pm DR-AS + Kalshi Pro volume (**scp prod**); xsp Macro Charts (**scp prod**); TipDrop/David×2; poker verifiers DAG; CCC; cybersec; gambling; CeminiDFS. **Phase-0:** `adopt_k163_phase0.sh`. Local: hallmark (+ optional dcg/maths <500MB). No ComfyUI.
 - **K162 ingest (2026-07-13)** — RSS backlog: **12 NEW** Macro Charts paid sentiment + Kalshi WC downloads + SecEng agentic AI + WuBlock/Moontower/Klement. **11 sources + concept updates.** Briefs: xsp + pm (**scp prod**); cybersec + gambling handoffs. **No David.** Phase-0: `adopt_k162_phase0.sh`.
 
 ## Prior state (2026-07-13 — K161)

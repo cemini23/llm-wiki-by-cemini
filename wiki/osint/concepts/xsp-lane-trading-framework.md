@@ -4,6 +4,7 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/macro-charts-paid-forward-2026-07-14-sox-oil-yen-bounce.md
   - sources/substack-rss-moontower-2026-07-12-investing-orbits.md
   - sources/macro-charts-paid-forward-2026-07-12-sentiment-capitulation.md
   - concepts/cev-resistance-support-optimal-prediction.md
@@ -28,7 +29,7 @@ related:
   - sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-13
+updated: 2026-07-14
 ---
 
 ## Relations

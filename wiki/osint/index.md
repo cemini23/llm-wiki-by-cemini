@@ -12,9 +12,32 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **679 canonical stubs** (K162 + K161)
+Total: **698 canonical stubs** (K163 + K162 + K161)
 
 
+
+
+### k163-ingest (19)
+
+- [GitHub Repo Revenue Evaluation (2026-07-14)](sources/eval-github-repo-revenue-evaluation-2026-07-14.md) — 20 URLs; dcg CONDITIONAL + hallmark/codex TipDrop. — `docx` [+k163]
+- [PM structural volatility DR-AS (2607.08199)](sources/arxiv-2607.08199-prediction-market-volatility-structural-2026-07-14.md) — Kalshi panel → **pm scp**. — `pdf` [+k163]
+- [Macro Charts SOX/oil/yen chat Jul 14](sources/macro-charts-paid-forward-2026-07-14-sox-oil-yen-bounce.md) — tactical bounce → **xsp scp**. — `paid` [+k163]
+- [Latent Space Codex 7M + verifiers v1](sources/newsletter-rss-latent-space-2026-07-14-ainews-codex-7m-verifiers-v1.md) — message DAG → CCC/poker. — `rss` [+k163]
+- [Capital Flows American exceptionalism](sources/substack-rss-capital-flows-2026-07-14-american-exceptionalism-trade.md) — TSMC tail context. — `rss` [+k163]
+- [Event Horizon Kalshi WC volume + Pro](sources/substack-rss-event-horizon-2026-07-14-kalshi-wc-volume-pro.md) — $2B Sat → **pm scp**. — `rss` [+k163]
+- [Klement EU stock investors](sources/substack-rss-klement-2026-07-14-eu-stock-investors.md) — wiki-only. — `rss` [+k163]
+- [Klement NATO/Ukraine rearm](sources/substack-rss-klement-2026-07-14-nato-ukraine-rearm.md) — low fit stub. — `rss` [+k163]
+- [WuBlock BTC bottom forecasts](sources/substack-rss-wublock-2026-07-14-btc-bottom-forecasts.md) — crypto digest. — `rss` [+k163]
+- [DR-AS structural volatility](concepts/prediction-market-structural-volatility-dr-as.md) — binary PM vol model. — concept [+k163]
+- [destructive_command_guard](entities/tools/destructive-command-guard.md) — CONDITIONAL-GO MIT+rider. — entity [+k163]
+- [Hallmark](entities/tools/hallmark.md) — Adopt TipDrop/David. — entity [+k163]
+- [grok2api](entities/tools/grok2api.md) — Watch cookie bridge. — entity [+k163]
+- [OpenCut](entities/tools/opencut.md) — Watch. — entity [+k163]
+- [Penpot](entities/tools/penpot.md) — Watch. — entity [+k163]
+- [maths-cs-ai-compendium](entities/tools/maths-cs-ai-compendium.md) — Extract CeminiDFS. — entity [+k163]
+- [codex-first-customer-finder](entities/tools/codex-first-customer-finder-skill.md) — TipDrop Integrate. — entity [+k163]
+- [awesome-llm-apps](entities/tools/awesome-llm-apps.md) — Extract patterns. — entity [+k163]
+- [Agentic-Tool-Optimization](entities/tools/agentic-tool-optimization.md) — Watch. — entity [+k163]
 
 ### k162-ingest (11)
 

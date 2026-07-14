@@ -5,11 +5,13 @@ tags: [source, esg, regulation, k162]
 keywords: [SFDR, Art 8, Art 9, fund flows, Belgium NBB]
 clusters: [k162-ingest]
 related:
+  - sources/substack-rss-klement-2026-07-14-nato-ukraine-rearm.md
+  - sources/substack-rss-klement-2026-07-14-eu-stock-investors.md
   - concepts/macro-weather-regime.md
 maturity: draft
 read_status: skim
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-14
 ---
 
 ## Raw Concept

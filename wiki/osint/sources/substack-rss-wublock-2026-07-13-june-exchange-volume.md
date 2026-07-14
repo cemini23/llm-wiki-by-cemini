@@ -5,11 +5,12 @@ tags: [source, crypto, perps, hyperliquid, k162]
 keywords: [spot volume, derivatives, Hyperliquid, Deribit]
 clusters: [k162-ingest]
 related:
+  - sources/substack-rss-wublock-2026-07-14-btc-bottom-forecasts.md
   - sources/substack-rss-wublock-2026-07-10-strategy-btc-swift-weekly.md
 maturity: draft
 read_status: skim
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-14
 ---
 
 ## Raw Concept

@@ -89,10 +89,12 @@ related:
   - sources/arxiv-cl-amm-dynamic-fees-lvr-2606.23070-2026-06-24.md
   - sources/arxiv-square-root-law-aapl-2606.24019-2026-06-24.md
   - sources/tool-eval-metaplan-81url-2026-06-24.md
+  - concepts/prediction-market-structural-volatility-dr-as.md
+  - sources/arxiv-2607.08199-prediction-market-volatility-structural-2026-07-14.md
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-07-01
+updated: 2026-07-14
 ---
 
 ## Relations
@@ -328,6 +330,10 @@ A full production-bot spec the article supplies as a copy-paste Claude prompt. R
 | Election / sports oracle markets | Distinct mechanism — do not generalize K138 model without read |
 
 Brief: `briefs/2026-07-01_k138-pm-settlement-manipulation-guard-prod.md`
+
+## K163 extension — DR-AS structural volatility (2607.08199)
+
+@concepts/prediction-market-structural-volatility-dr-as.md (K163, 2026-07-14) supplies a **risk-scalar upgrade** for the sizing/MM-width layer above: binary-contract conditional variance is better modeled as deadline-resolution (`p(1-p)/τ`, Wright-Fisher) + adverse-selection (spread×volume, Glosten-Milgrom) than plain return-based GARCH. Complements (does not replace) the 6-layer websocket / latency stack — this is a **pricing-the-risk** layer, not an execution-engineering one. REFERENCE only, no library install; steal the mental model into `agents/strategies/` risk gates.
 
 ## Dead Ends
 
