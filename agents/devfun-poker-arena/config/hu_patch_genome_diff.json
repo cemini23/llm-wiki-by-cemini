@@ -1,0 +1,16 @@
+{
+  "schema": "devfun.hu_patch_genome_diff.v1",
+  "advisory_only": true,
+  "delta_values": ["mutate", "novel"],
+  "required_fields": [
+    "parent_mechanism",
+    "delta",
+    "inherited",
+    "mutated",
+    "lost",
+    "novel",
+    "verification"
+  ],
+  "compositional_gate": true,
+  "notes": "IdeaGene-Bench arXiv 2607.08758 — GenomeDiff lineage for HL patches; methodology Adopt; code WATCH until SPDX."
+}

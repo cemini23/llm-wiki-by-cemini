@@ -33,6 +33,10 @@ regression spot list in the brief below.
 4. Prefer tightening EP/MP opens, trash-fold vs raises, and maniac call margins
    over new features.
 5. Show the diff before applying. Explain which analyze row the patch addresses.
+6. **GenomeDiff (K155):** fill Parent / Delta / Inherited / Mutated / Lost /
+   Novel / Verification before ship. Reject steals that only share “poker LLM /
+   imperfect-info” ecology without a named driver mechanism. Spec:
+   `references/patch-genome-diff.md`.
 
 ## Gate metrics (self-play is verification, NOT training)
 
@@ -63,7 +67,8 @@ Add a new spot when analyze shows a leak not yet frozen.
 1. Unified diff for `cemini_decide.py` (minimal)
 2. Optional: new regression spot if analyze hand is reproducible
 3. One-line: which analyze row (#N, hole@pos, delta) this fixes
-4. Run preflight and report PASS/FAIL
+4. GenomeDiff table (Inherited / Mutated / Lost / Novel + verification)
+5. Run preflight and report PASS/FAIL
 
 Do not deploy to prod yourself — operator runs:
   ./examples/cemini_hl_loop.sh --preflight-only

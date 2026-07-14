@@ -13,7 +13,10 @@
   "long_term_refs": [
     "references/expert-yardstick-pool.md",
     "references/league-promotion-rubric.md",
-    "references/mppo-style-preservation.md"
+    "references/mppo-style-preservation.md",
+    "references/patch-genome-diff.md",
+    "references/message-dag-trace.md",
+    "references/capability-tree-routing.md"
   ],
   "slice_max_chars": 1200,
   "advisory_only": true,

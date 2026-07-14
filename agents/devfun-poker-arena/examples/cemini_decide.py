@@ -1146,6 +1146,19 @@ def decide(
                 return _build("call", None, table, allowed, eq=0.99, po=0.0,
                               msg=f"{binding}: river unbeatable — call")
 
+    # Boat/quads on paired/trip boards — never fold (K7s FH on 9995K ladder −96).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and _hero_boat_or_quads_on_paired_board(hole, board)):
+        out = _unbeatable_made_action(table, allowed, available, pot, binding=binding)
+        if out:
+            return _apply_chip_reserve(out, max_playable, table, hc)
+        if "call" in available:
+            return _build("call", None, table, allowed, eq=0.95, po=0.0,
+                          msg=f"{binding}: boat/quads — call")
+        if "check" in available:
+            return _build("check", None, table, allowed, eq=0.95, po=0.0,
+                          msg=f"{binding}: boat/quads — check")
+
     # Staggered bankroll lock — only risk playable chips above top-20 floor + tiers.
     if (max_playable is not None and call_chips > 0 and "fold" in available
             and call_chips > int(max_playable)
@@ -1490,6 +1503,34 @@ def decide(
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: OOP weak on 4-straight river — fold")
 
+    # IP air / no pair on 4-straight river — QTo BTN −50 on 78256 (ladder vs drake).
+    if (street == "River" and call_chips > 0 and "fold" in available
+            and in_position
+            and _board_four_in_straight_window(board)
+            and not _hero_pairs_flop(hole, board)
+            and not _hero_pocket_set(hole, board)
+            and not _hero_made_hand_exempt(hole, board)
+            and call_chips >= max(int(pot * 0.28), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: IP air on 4-straight river — fold")
+
+    # Trip board underpair/air — 88 BTN −40 on 9995K (ladder vs drake).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and _hero_vulnerable_on_trip_board(hole, board, hc)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.12), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: underpair/air on trip board — fold")
+
+    # Ace-high on paired river — AQo BTN −50 on 7T7J9 (ladder vs drake).
+    if (street == "River" and call_chips > 0 and "fold" in available
+            and _hero_ace_high_no_pair(hole, board)
+            and _board_is_paired(board)
+            and not _hero_cannot_lose()
+            and call_chips >= max(int(pot * 0.22), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: ace-high on paired river — fold")
+
     # SB/BB suited broadway on paired board — KQs BB −51 (HL R15 analyze #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and position in ("SB", "BB") and not in_position
@@ -1764,7 +1805,7 @@ def decide(
 
     if (street == "Preflop" and call_chips > 0 and "fold" in available
             and _preflop_stackoff_should_fold(
-                hc, call_chips, hero_stack_early, position=position)
+                hc, call_chips, hero_stack_early, position=position, table=table)
             and not _hero_cannot_lose()
             and not _hu_bb_stackoff_exempt(table, position, hc, suggested or "")):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
@@ -2438,7 +2479,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     # Preflop stack-off discipline — fold dominated trash vs large commits (HL S2 R3 −100 cluster).
     if (
         _preflop_stackoff_should_fold(
-            hc, call_chips, hero_stack_chips, position=position,
+            hc, call_chips, hero_stack_chips, position=position, table=table,
         )
         and "fold" in available
         and not _hu_bb_stackoff_exempt(table or {}, position, hc, suggested)
@@ -2901,8 +2942,13 @@ def _preflop_stackoff_should_fold(
     hero_stack_chips: int,
     *,
     position: str = "",
+    table: Optional[dict] = None,
 ) -> bool:
-    """Fold non-premium vs large preflop commits (empty-board −100 cluster)."""
+    """Fold non-premium vs large preflop commits (empty-board −100 cluster).
+
+    Mid pairs (99/88): tighter bar in 6-max (Playground BB 99 −840 vs AK Chaos);
+    keep HU bar looser so ladder BB defend still stacks off vs steals.
+    """
     if call_chips <= 0 or hero_stack_chips <= 0 or not hc:
         return False
     if hc in _PREFLOP_3BET_OK:
@@ -2913,7 +2959,8 @@ def _preflop_stackoff_should_fold(
     if hc in {"JJ", "TT", "AQs"}:
         return ratio >= 0.40
     if hc in {"99", "88", "AQo", "AJs", "KQs"}:
-        return ratio >= 0.25
+        mid_pair_bar = 0.25 if (table and _is_hu_table(table)) else 0.18
+        return ratio >= mid_pair_bar
     if ratio >= 0.40:
         return True
     if ratio >= 0.18 and hc in _WEAK_FACING_RAISE:
@@ -3690,13 +3737,18 @@ def _hero_pocket_set(hole: list[str], board: list[str]) -> bool:
 
 
 def _hero_boat_or_quads_on_paired_board(hole: list[str], board: list[str]) -> bool:
-    """Trash-class hands that improved to boat+ on a paired board (not bottom pair)."""
+    """Trash-class hands that improved to boat+ on a paired board (not bottom pair).
+
+    Includes board-trips + hole pairs a singleton kicker (K7 on 9995K = kings full) —
+    ladder HU −96 fold of FH vs underpair raise (2026-07-14 vs drake).
+    """
     if len(hole) != 2 or not _board_is_paired(board):
         return False
     hranks = [c[0].upper() for c in hole]
     bc = Counter(c[0].upper() for c in board)
     if hranks[0] == hranks[1]:
         return bc.get(hranks[0], 0) >= 1
+    trip_ranks = {r for r, n in bc.items() if n >= 3}
     for r in hranks:
         if bc.get(r, 0) >= 3:
             return True
@@ -3704,6 +3756,29 @@ def _hero_boat_or_quads_on_paired_board(hole: list[str], board: list[str]) -> bo
             other = hranks[1] if r == hranks[0] else hranks[0]
             if bc.get(other, 0) >= 1:
                 return True
+        # Board trips of another rank + hole pairs a board singleton → full house
+        if trip_ranks and bc.get(r, 0) >= 1 and r not in trip_ranks:
+            return True
+    return False
+
+
+def _board_has_trips(board: list[str]) -> bool:
+    """Three-of-a-kind (or quads) already on board."""
+    if len(board) < 3:
+        return False
+    return max(Counter(c[0].upper() for c in board).values()) >= 3
+
+
+def _hero_vulnerable_on_trip_board(hole: list[str], board: list[str], hc: str) -> bool:
+    """Underpair or air on a trip board — not boat/quads (88 on 999xK)."""
+    if len(board) < 3 or not _board_has_trips(board):
+        return False
+    if _hero_boat_or_quads_on_paired_board(hole, board) or _hero_made_hand_exempt(hole, board):
+        return False
+    if _hero_underpair_on_paired_board(hc, board) or _pocket_under_board_pair(hole, board):
+        return True
+    if not _hero_pairs_board_rank(hole, board):
+        return True
     return False
 
 

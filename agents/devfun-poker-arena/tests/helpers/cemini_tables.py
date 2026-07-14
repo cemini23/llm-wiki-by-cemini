@@ -2423,6 +2423,131 @@ def sb_jj_boat_paired_river(*, river_bet: int = 120, pot: int = 280) -> dict:
     )
 
 
+def hu_btn_k7_boat_on_trip_nines_river(*, villain_bet: int = 100, pot: int = 182) -> dict:
+    """K7s boat on 9995K — must NOT fold (ladder −96 FH fold vs drake 88)."""
+    return hu_table(
+        name="btn_k7_boat_trip_nines",
+        hero_seat=1,
+        street="River",
+        board=["9c", "9s", "9h", "5d", "Kh"],
+        pot=pot,
+        hero_hole=["Kc", "7c"],
+        hero_stack=904,
+        hero_bet=0,
+        villain_bets={2: villain_bet},
+        stacks={1: 904, 2: 1096},
+        button_seat=1,
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_raise=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            raise_range={"min": villain_bet * 2, "max": 904},
+        ),
+    )
+
+
+def hu_btn_88_underpair_trip_nines_river(*, villain_bet: int = 40, pot: int = 80) -> dict:
+    """88 underpair on 9995K — fold (ladder −40 vs drake K7)."""
+    return hu_table(
+        name="btn_88_underpair_trip_nines",
+        hero_seat=1,
+        street="River",
+        board=["9c", "9s", "9h", "5d", "Kh"],
+        pot=pot,
+        hero_hole=["8c", "8s"],
+        hero_stack=960,
+        hero_bet=0,
+        villain_bets={2: villain_bet},
+        stacks={1: 960, 2: 1040},
+        button_seat=1,
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_raise=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            raise_range={"min": villain_bet * 2, "max": 960},
+        ),
+    )
+
+
+def hu_btn_qto_air_four_straight_river(*, villain_bet: int = 50, pot: int = 90) -> dict:
+    """QTo air on 78256 straight board — fold river (ladder −50 vs drake)."""
+    return hu_table(
+        name="btn_qto_air_four_straight",
+        hero_seat=1,
+        street="River",
+        board=["7h", "8d", "2c", "5d", "6c"],
+        pot=pot,
+        hero_hole=["Qd", "Tc"],
+        hero_stack=950,
+        hero_bet=0,
+        villain_bets={2: villain_bet},
+        stacks={1: 950, 2: 1050},
+        button_seat=1,
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_raise=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            raise_range={"min": villain_bet * 2, "max": 950},
+        ),
+    )
+
+
+def hu_btn_aqo_ace_high_paired_river(*, villain_bet: int = 50, pot: int = 90) -> dict:
+    """AQo ace-high on 7T7J9 — fold river (ladder −50 vs drake)."""
+    return hu_table(
+        name="btn_aqo_ace_high_paired",
+        hero_seat=1,
+        street="River",
+        board=["7s", "Th", "7h", "Js", "9d"],
+        pot=pot,
+        hero_hole=["Ah", "Qc"],
+        hero_stack=950,
+        hero_bet=0,
+        villain_bets={2: villain_bet},
+        stacks={1: 950, 2: 1050},
+        button_seat=1,
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_raise=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            raise_range={"min": villain_bet * 2, "max": 950},
+        ),
+    )
+
+
+def bb_99_vs_large_6max_shove(*, call_chips: int = 200, hero_stack: int = 1000) -> dict:
+    """6-max BB 99 facing ~20% stack shove — fold (Playground −840 vs AK Chaos)."""
+    return six_max_table(
+        name="bb_99_vs_large_shove",
+        hero_seat=3,
+        button_seat=1,
+        street="Preflop",
+        board=[],
+        pot=3 + call_chips,
+        hero_hole=["9s", "9h"],
+        hero_stack=hero_stack,
+        hero_bet=2,
+        villain_bets={5: call_chips + 2},
+        stacks={3: hero_stack},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_raise=True,
+            call_chips=call_chips,
+            call_to=call_chips + 2,
+            raise_range={"min": (call_chips + 2) * 2, "max": hero_stack},
+        ),
+    )
+
+
 def co_72o_boat_paired_river(*, villain_bet: int = 50, pot: int = 150) -> dict:
     """72o boat on 772xx — must not fold CO trash-on-paired guard."""
     return six_max_table(

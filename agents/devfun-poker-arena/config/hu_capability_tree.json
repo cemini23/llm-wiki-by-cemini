@@ -1,0 +1,41 @@
+{
+  "schema": "devfun.hu_capability_tree.v1",
+  "advisory_only": true,
+  "top_domains": [
+    {
+      "id": "table",
+      "type": "decision",
+      "children": ["hud", "spot_memory", "action_policy"],
+      "notes": "In-hand table state, HUD, spot memory — never mixes with submit/deploy"
+    },
+    {
+      "id": "policy",
+      "type": "decision",
+      "children": ["preflop_chart", "postflop_heuristic", "skill_binding"],
+      "notes": "decide() policy lanes — exclusive of verifier/submit"
+    },
+    {
+      "id": "memory",
+      "type": "decision",
+      "children": ["hierarchical_session", "genome_diff", "message_dag", "yardstick"],
+      "notes": "Session / lineage / trace memory — read-only into decide prompts via caps"
+    },
+    {
+      "id": "eval",
+      "type": "decision",
+      "children": ["self_play_bb100", "rule_grader", "researcher_round"],
+      "notes": "Graders must be execution or rule-based — not model self-score alone (K162)"
+    },
+    {
+      "id": "submit",
+      "type": "executable",
+      "children": ["sandbox_submit", "prebind_pin"],
+      "notes": "Binding leaves — Prebind / pin required (K151)"
+    }
+  ],
+  "max_visible_children_per_call": 6,
+  "max_frame_depth": 8,
+  "require_mutually_exclusive_roots": true,
+  "nested_work": "push_pop",
+  "notes": "K164 arXiv 2607.11138 — capability tree + lazy child manifests; no flat mega-tool dump into decide()/HL prompts."
+}

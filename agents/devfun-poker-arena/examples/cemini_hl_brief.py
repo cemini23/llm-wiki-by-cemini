@@ -66,6 +66,7 @@ def build_brief(
     round_n: int,
     match_id: str,
     top_leak_hint: str,
+    cap_slice: str = "(capability tree slice unavailable)",
 ) -> str:
     today = date.today().isoformat()
     sha = _git_short_sha()
@@ -122,6 +123,37 @@ Self-play bb/100 is **informational** — do not optimize decide() for self-play
 - Edit `cemini_decide.py` only; smallest diff.
 - If leak repeats after a prior fix, add/update `tests/fixtures/regression_spots.py`.
 - Do not widen EP opens to "fix" maniac tables — tighten trash, fix HUD cold-start.
+
+### GenomeDiff (K155 — required before ship)
+
+Fill before deploy. Task co-location ≠ lineage — name the **driver mechanism**.
+See `references/patch-genome-diff.md`.
+
+| Field | Value |
+|-------|-------|
+| Parent mechanism | (named heuristic/guard being extended) |
+| Delta | `mutate` \\| `novel` |
+| Inherited | … |
+| Mutated | … |
+| Lost | … (and why) |
+| Novel | … |
+| Verification | regression spot id / pytest / gate command |
+
+Compositional gate: parent + delta + verification must agree
+(`examples/patch_genome_diff.py` → `validate_genome_diff`).
+
+### Capability tree (K164 — lazy tools)
+
+Do **not** dump the full tool/schema registry into the analyst prompt. Route through
+one active domain (`table` / `policy` / `memory` / `eval` / `submit`) with LIFO
+push/pop for nested MAFP vs exploit work. Submit requires Prebind.
+See `references/capability-tree-routing.md`.
+
+Active slice (example after nested return):
+
+```
+{cap_slice}
+```
 
 ### Frozen regression spots (must stay green)
 
@@ -180,17 +212,74 @@ def main(argv: list[str] | None = None) -> int:
 
     report_text = report_path.read_text(encoding="utf-8")
     hint = _top_leak_from_report(report_text)
+
+    cap_slice = "(capability tree slice unavailable)"
+    try:
+        from capability_tree import (
+            CapabilityFrameStack,
+            load_capability_tree_config,
+            simulate_hu_researcher_nested_session,
+        )
+        import json as _json
+
+        stack = CapabilityFrameStack(config=load_capability_tree_config())
+        stack.push("eval", focus="researcher_round", label="hl_root")
+        stack.push("policy", focus="postflop_heuristic", label="leak_lane")
+        stack.push("memory", focus="genome_diff", label="lineage_check")
+        stack.pop()  # return to leak_lane
+        cap_slice = _json.dumps(stack.visible_slice(), indent=2)
+        # Persist nested-session smoke beside brief (operator checklist)
+        session = simulate_hu_researcher_nested_session(prebind_ok=True)
+        session_path = Path(args.out).with_suffix(".capability-session.json")
+        session_path.parent.mkdir(parents=True, exist_ok=True)
+        session_path.write_text(
+            _json.dumps(session, indent=2) + "\n", encoding="utf-8"
+        )
+        print(f"wrote capability nested-session → {session_path}")
+    except Exception as exc:  # pragma: no cover
+        print(f"[hl-brief] capability-tree skip: {exc}", file=sys.stderr)
+
     brief = build_brief(
         report_text=report_text,
         round_n=args.round,
         match_id=args.match or "(from env ARENA_LOBBY_COMPETITION_ID)",
         top_leak_hint=hint,
+        cap_slice=cap_slice,
     )
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(brief, encoding="utf-8")
     print(f"wrote → {out}")
+
+    # K163: HL failure trace as message DAG (messages stored once, nodes ref)
+    try:
+        from message_dag_trace import build_hl_failure_dag
+
+        turns = [
+            {
+                "role": "system",
+                "content": "HL analyst brief scaffold",
+                "tag": "harness",
+            },
+            {
+                "role": "user",
+                "content": report_text.strip()[:4000],
+                "tag": "analyze",
+            },
+            {
+                "role": "assistant",
+                "content": f"round={args.round} leak={hint or 'TBD'}",
+                "tag": "hl",
+            },
+        ]
+        dag = build_hl_failure_dag(turns, layer="harness")
+        dag_path = out.with_suffix(".dag.json")
+        dag.save(dag_path)
+        print(f"wrote message-DAG → {dag_path}")
+    except Exception as exc:  # pragma: no cover — optional sibling artifact
+        print(f"[hl-brief] message-DAG skip: {exc}", file=sys.stderr)
+
     return 0
 
 
