@@ -9,7 +9,7 @@ related:
   - concepts/generator-verifier-inference-time-steering.md
 maturity: draft
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-15
 ---
 
 ## Relations
@@ -17,6 +17,9 @@ updated: 2026-07-13
 - @sources/arxiv-deepsearch-world-2607.07820-2026-07-13.md — primary
 - @concepts/continual-harness-online-self-improvement.md — online self-improve family
 - @concepts/generator-verifier-inference-time-steering.md — process verification adjacency
+
+- @seo-wiki/concepts/process-verified-agentic-search-geo.md — SEO GEO entity-hit playbook (K139)
+- @seo-wiki/sources/arxiv-geng-2026-deepsearch-world-self-distillation-2607.07820-2026-07-15.md
 
 ## Raw Concept
 

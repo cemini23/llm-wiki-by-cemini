@@ -4,6 +4,10 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - entities/tools/strawberry-graphql.md
+  - entities/tools/undici.md
+  - entities/tools/bonsai-demo.md
+  - sources/eval-github-repo-revenue-evaluation-2026-07-15.md
   - sources/substack-rss-capital-flows-2026-07-15-winner-take-all-ai-race.md
   - sources/substack-rss-moontower-2026-07-15-iron-butterfly.md
   - sources/macro-charts-paid-forward-2026-07-15-sox-cpi-oil-metals.md

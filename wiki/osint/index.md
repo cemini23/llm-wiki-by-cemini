@@ -12,11 +12,23 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **724 canonical stubs** (K167 + K165 + K163)
+Total: **732 canonical stubs** (K168 + K167 + K165)
 
 
 
 
+
+
+### k168-ingest (8)
+
+- [GitHub Repo Revenue Evaluation (2026-07-15)](sources/eval-github-repo-revenue-evaluation-2026-07-15.md) — 20 URLs local-LLM/serverless/desktop; ≠ K163 batch. — `docx` [+k168]
+- [Bonsai-demo](entities/tools/bonsai-demo.md) — Extract xsp local inference. — entity [+k168]
+- [Middy](entities/tools/middy.md) — Integrate TipDrop Lambda. — entity [+k168]
+- [Undici](entities/tools/undici.md) — Extract xsp HTTP. — entity [+k168]
+- [Stoplight Prism](entities/tools/stoplight-prism.md) — Extract TipDrop OpenAPI mock. — entity [+k168]
+- [Espanso](entities/tools/espanso.md) — Integrate personal genealogy (GPL-3). — entity [+k168]
+- [Fastify](entities/tools/fastify.md) — Watch TipDrop. — entity [+k168]
+- [Strawberry GraphQL](entities/tools/strawberry-graphql.md) — Watch xsp dashboards. — entity [+k168]
 
 ### k167-ingest (13)
 

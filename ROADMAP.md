@@ -21,9 +21,13 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / genealogy** — Italian archival deep research (K153/K154) | `~/Desktop/family/research/` (private) | No — wiki methodology only |
 
-## Current state (2026-07-15 — K167)
+## Current state (2026-07-15 — K168)
 
-- **K167 ingest (2026-07-15)** — Full inbox: arXiv 2607.10814 belief-audit + 2607.09324 keyword + Macro Charts SOX/CPI/oil–2YR + Latent Space×2 + Pragmatic Engineer Dex/12-Factor + Capital Flows AI race + Event Horizon Kalshi flights/compute/CFTC + Klement Jevons + Moontower volga + WuBlock USDC. **11 sources + 1 concept + 1 entity** (+ hubs). **Adopt-patterns:** twelve-factor-agents (Apache-2.0). **Briefs:** pm + xsp (**scp prod**); poker; CCC; TipDrop/David; gambling. **Phase-0:** `adopt_k167_phase0.sh`. Local: optional 12-factor clone <50MB. No ComfyUI.
+- **K168 ingest (2026-07-15)** — Additive: `GitHub Repository Revenue Evaluation.docx` (20 URLs; ≠ K163). **Integrate:** Middy (TipDrop), Espanso (family personal GPL-3). **Extract:** Bonsai, Undici, Prism. **Watch:** Fastify, Strawberry. **Briefs:** xsp (**scp**); TipDrop/David; CCC; cybersec; family private. **Phase-0:** `adopt_k168_phase0.sh`. Local: Bonsai+prism+middy clones. No ComfyUI.
+
+## Prior state (2026-07-15 — K167)
+
+- **K167 ingest (2026-07-15)** — Full inbox: arXiv 2607.10814 belief-audit + 2607.09324 keyword + Macro Charts SOX/CPI/oil–2YR + Latent Space×2 + Pragmatic Engineer Dex/12-Factor + Capital Flows AI race + Event Horizon Kalshi flights/compute/CFTC + Klement Jevons + Moontower volga + WuBlock USDC. **11 sources + 1 concept + 1 entity** (+ hubs). **Adopt-patterns:** twelve-factor-agents (Apache-2.0). **Briefs:** pm + xsp (**scp prod, skill_audit PASS 100/100**); poker; CCC; gambling. No David/TipDrop brief (no image/persona adopt path). **Phase-0:** `adopt_k167_phase0.sh`. Local: optional 12-factor clone <50MB. No ComfyUI. Inbox archived egress-fi + cleared; leftover untriaged `GitHub Repository Revenue Evaluation.docx` (34KB, distinct from K163's 3MB same-titled file) also swept to egress-fi — flagged for operator review, not read/ingested this session.
 
 ## Prior state (2026-07-14 — K165)
 

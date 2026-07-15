@@ -6,6 +6,16 @@ updated: 2026-07-15
 ---
 
 
+
+## [2026-07-15] ingest | K168 — GitHub Revenue Evaluation (local LLM / serverless / desktop)
+
+- **Inbox (1):** `GitHub Repository Revenue Evaluation.docx` (sha256 `ac781556…`) — already on egress-fi (WatchPaths); distinct from K163 batch
+- **Sources (1) + entities (7):** Bonsai Extract; Middy Integrate; Undici Extract; Prism Extract; Espanso Integrate (GPL-3 personal); Fastify/Strawberry Watch
+- **Pass/Context:** YimMenu/Caronte → cybersec brief; covid/hospital ops Pass
+- **Phase-0:** `scripts/adopt_k168_phase0.sh`
+- **Briefs:** xsp Bonsai+Undici (**scp prod**); TipDrop/David Middy+Prism; CCC; cybersec; family Espanso private; poker no-fit
+- **Local adopt (<500MB):** shallow clones Bonsai + prism + middy under `.local/adopts/`; no ComfyUI; no YimMenu
+
 ## [2026-07-15] ingest | K167 — arXiv belief-audit + keyword + Macro/RSS context+harness
 
 - **Inbox (11):** 2607.10814 + 2607.09324 + Macro Charts Jul 15 + Latent Space×2 + Pragmatic Engineer Dex + Capital Flows AI race + Event Horizon Kalshi flights + Klement Jevons + Moontower iron butterfly + WuBlock USDC — **archived egress-fi; inbox cleared**
@@ -13,7 +23,7 @@ updated: 2026-07-15
 - **Concept (1) + entity (1):** belief-conditioned-agent-audit-hidden-info; twelve-factor-agents (Apache-2.0 Adopt-patterns)
 - **Hub updates:** macro-charts-regime; xsp-lane; kalshi; dcm-state-preemption; coding-agent-substrate; computational-genealogy; capital-flows; hierarchical-memory; wiki-tooling-evaluation
 - **Phase-0:** `scripts/adopt_k167_phase0.sh` — Adopt-patterns 12-factor; REFERENCE arXiv×2
-- **Briefs:** pm flights (**scp prod**); xsp macro+volga (**scp prod**); poker belief-audit; CCC 12-factor; TipDrop/David harness; gambling flights retail
+- **Briefs:** pm flights (**scp prod**); xsp macro+volga (**scp prod**); poker belief-audit; CCC 12-factor; gambling flights retail. No David/TipDrop brief — Dex Horthy/12-factor is a harness-eng source with no image/persona adopt path (routing rule skip)
 - **Local adopt (<500MB):** shallow clone `humanlayer/12-factor-agents` → `.local/adopts/` (optional); no ComfyUI
 
 ## [2026-07-14] ingest | K165 — PM LP vs copy Gemini×3 + RSS×3

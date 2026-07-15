@@ -9,4 +9,4 @@ echo "Adopt-patterns: humanlayer/12-factor-agents (Apache-2.0) — optional shal
 echo "REFERENCE: 2607.10814 belief-audit Werewolf — poker steal; no install"
 echo "REFERENCE: 2607.09324 keyword extraction — genealogy stewardship; no install"
 echo "David ComfyUI/Fish-Speech: none"
-echo "Briefs: pm flights (**scp**); xsp macro+volga (**scp**); poker belief-audit; CCC; TipDrop/David; gambling"
+echo "Briefs: pm flights (**scp**); xsp macro+volga (**scp**); poker belief-audit; CCC; gambling (no David/TipDrop — no image/persona path)"

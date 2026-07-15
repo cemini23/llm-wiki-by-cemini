@@ -4,6 +4,7 @@ type: concept
 tags: [genealogy, archival, italy, abruzzo, calabria, trentino, draft]
 keywords: [copia integrale, PEC, Catasto Onciario, Cassa Sacra, Liste di Leva, NatiTrentino, Sellia, Colledimacine, Val di Non]
 related:
+  - entities/tools/espanso.md
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
   - sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md
@@ -15,7 +16,7 @@ related:
   - entities/tools/gcerretani-antenati.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-12
+updated: 2026-07-15
 ---
 
 ## Relations

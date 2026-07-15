@@ -4,6 +4,8 @@ type: concept
 tags: [genealogy, archival, automation, italy, antenati, draft]
 keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double Metaphone, kinship graph]
 related:
+  - sources/eval-github-repo-revenue-evaluation-2026-07-15.md
+  - entities/tools/espanso.md
   - sources/arxiv-2607.09324-letting-data-speak-keyword-extraction-crowdsourced-2026-07-15.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md

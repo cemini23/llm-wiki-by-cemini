@@ -11,7 +11,7 @@ related:
 maturity: validated
 read_status: deep-read
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-15
 ---
 
 ## Raw Concept
@@ -28,6 +28,8 @@ updated: 2026-07-13
 
 - @concepts/deepsearch-world-self-evolution.md — K161 concept
 - @concepts/continual-harness-online-self-improvement.md — self-evolve without teacher distill
+- @seo-wiki/sources/arxiv-geng-2026-deepsearch-world-self-distillation-2607.07820-2026-07-15.md — SEO K139 GEO angle
+- @seo-wiki/concepts/process-verified-agentic-search-geo.md — entity-hit local GEO playbook
 
 ## Narrative
 
