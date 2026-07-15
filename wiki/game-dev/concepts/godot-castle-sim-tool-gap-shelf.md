@@ -13,10 +13,11 @@ related:
   - concepts/art-pipeline-v0-requirements.md
   - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
   - sources/chris-tutorials-grid-placement-godot-shelf-2026-07-11.md
+  - sources/brickworks-godot-lego-framework-shelf-2026-07-15.md
   - entities/tools/pcgodot.md
 maturity: validated
 created: 2026-06-17
-updated: 2026-07-13
+updated: 2026-07-15
 ---
 
 ## Relations

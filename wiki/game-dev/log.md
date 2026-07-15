@@ -4,6 +4,18 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-15] ingest | 5 arXiv rejects (4 re-drops + swarm MARL); Brickworks watch
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-15.md (all reject); archived; inbox cleared
+- Re-drops: 2607.07475 affordances; 2607.07820 DeepSearch-World; 2607.08547 potential-as-types; 2607.11334 twelve-tone harness
+- New reject: 2607.12861 robot-swarm MARL / Agent Response Map (IROS) — influence-map false positive
+- News: @sources/brickworks-godot-lego-framework-shelf-2026-07-15.md (**WATCH**, no public repo — no Phase-0)
+- Phase-0 / local adopt: none; briefs: none from this inbox
+- Federation: sibling morning ingest handled OSINT K167 (pm/xsp → prod), CCC K168/K169 harness (prod + David/poker), Gambling AgentTexasPoker → poker, Image-gen Contravariance reject (no tipdrop)
+- Sweep: @sweeps/2026-07-15-daily.md
+
+---
+
 ## [2026-07-14] ingest | VRExplorer Phase-0 (NO-GO) + 4 arXiv rejects
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-14.md (1 ingest + 4 reject); archived; inbox cleared
