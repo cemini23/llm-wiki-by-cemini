@@ -100,15 +100,60 @@ def all_hand_classes() -> list[str]:
     return out
 
 
+def hand_equity(hand_class: str) -> float:
+    """Preflop equity vs random; chart table + Sklansky-ish fallback for missing cells."""
+    if hand_class in _PREFLOP_EQUITY:
+        return float(_PREFLOP_EQUITY[hand_class])
+    ranks = "23456789TJQKA"
+    if len(hand_class) == 2 and hand_class[0] == hand_class[1]:
+        # Pairs should be in the table; keep a safe mid estimate.
+        return 0.50
+    if len(hand_class) < 3:
+        return 0.45
+    suited = hand_class.endswith("s")
+    r1, r2 = hand_class[0], hand_class[1]
+    if r1 not in ranks or r2 not in ranks:
+        return 0.45
+    i1, i2 = ranks.index(r1), ranks.index(r2)
+    if i1 < i2:
+        i1, i2 = i2, i1
+    gap = i1 - i2
+    # Coarse HU equity prior so 72o ≠ A5s (table only lists ~27 premiums).
+    base = 0.30 + 0.022 * i1 + 0.012 * i2
+    if suited:
+        base += 0.035
+    if gap == 1:
+        base += 0.025  # connector
+    elif gap == 2:
+        base += 0.01
+    elif gap >= 4:
+        base -= 0.015 * min(gap - 3, 4)
+    if i1 >= 8 and i2 >= 8:  # both T+
+        base += 0.02
+    return max(0.28, min(0.62, base))
+
+
 def candidate_hands(chart: dict[str, dict[str, set[str]]], position: str) -> set[str]:
-    """Hands to evaluate: chart members + borderline equity band."""
+    """Hands to evaluate: full 169 + chart members (never thin out best-response).
+
+    Prior versions only scored chart members + a narrow equity band, so cells
+    never left the static open set. Evaluate every class so fold/call/raise
+    best-response can actually flip.
+    """
     rules = chart.get(position) or {}
     candidates = set(rules.get("raise", set())) | set(rules.get("call", set()))
-    for hc in all_hand_classes():
-        eq = _PREFLOP_EQUITY.get(hc, 0.45)
-        if 0.46 <= eq <= 0.62:
-            candidates.add(hc)
+    candidates.update(all_hand_classes())
     return candidates
+
+
+def _normalize_rates(fold: float, call: float, raise_: float) -> tuple[float, float, float]:
+    f = max(0.0, fold)
+    c = max(0.0, call)
+    r = max(0.0, raise_)
+    s = f + c + r
+    if s <= 0:
+        return 0.55, 0.35, 0.10
+    return f / s, c / s, r / s
 
 
 def ev_open_vs_mixture(
@@ -117,16 +162,121 @@ def ev_open_vs_mixture(
     *,
     open_bb: float = 2.5,
     pot_bb: float = 1.5,
+    call_rate: float = 0.0,
+    raise_rate: float = 0.0,
 ) -> tuple[float, float]:
-    """Simplified HU unopened-pot EV (bb): open vs fold (passive default)."""
-    eq = _PREFLOP_EQUITY.get(hand_class, 0.45)
+    """HU unopened-pot EV (bb): open vs fold.
+
+    Backward-compatible wrapper around :func:`ev_actions_unopened`. When only
+    ``fold_rate`` is supplied, residual mass is treated as call (legacy).
+    Prefer passing explicit call/raise rates so 3-bet responses can tank weak opens.
+    """
+    if call_rate == 0.0 and raise_rate == 0.0:
+        call_rate = max(0.0, 1.0 - fold_rate)
+        raise_rate = 0.0
+    evs = ev_actions_unopened(
+        hand_class,
+        {"fold": fold_rate, "call": call_rate, "raise": raise_rate},
+        open_bb=open_bb,
+        pot_bb=pot_bb,
+    )
+    return evs["raise"], evs["fold"]
+
+
+def _ev_vs_threebet(
+    eq: float,
+    *,
+    open_bb: float,
+    pot_bb: float,
+    threebet_to: float = 8.0,
+) -> float:
+    """Best-response EV after villain 3-bets our open (fold or call 3-bet)."""
+    # Accounting matches steal EV: fold branch of open nets +pot_bb (open returns
+    # with pot). Folding to a 3-bet loses the open chips.
+    ev_fold_to = -open_bb
+    call_amt = max(0.0, threebet_to - open_bb)
+    pot_after_call = pot_bb + open_bb + threebet_to + call_amt
+    ev_call = eq * pot_after_call - open_bb - call_amt
+    return max(ev_fold_to, ev_call)
+
+
+def ev_actions_unopened(
+    hand_class: str,
+    rates: dict[str, float],
+    *,
+    open_bb: float = 2.5,
+    pot_bb: float = 1.5,
+    threebet_to: float = 8.0,
+) -> dict[str, float]:
+    """Per-action EV (bb) for BTN/SB unopened pot: fold / call(limp) / raise."""
+    eq = hand_equity(hand_class)
+    f, c, r = _normalize_rates(
+        float(rates.get("fold", 0.55)),
+        float(rates.get("call", 0.35)),
+        float(rates.get("raise", 0.10)),
+    )
+    # Fold: baseline 0 (dead SB not re-priced — consistent with steal model).
     ev_fold = 0.0
-    ev_when_villain_folds = pot_bb
+    # Limp complete to 1bb; BB checks often → realized equity of ~2bb pot;
+    # when BB raises, dump the limp (simple fold-to-iso).
+    limp_invest = 0.5
+    pot_if_checked = pot_bb + limp_invest  # ~2.0
+    bb_iso_rate = min(0.45, 0.15 + r)  # more iso when mixture is aggressive
+    ev_limp_check = eq * pot_if_checked - limp_invest
+    ev_limp_iso = -limp_invest
+    ev_call = (1.0 - bb_iso_rate) * ev_limp_check + bb_iso_rate * ev_limp_iso
+    # Open: villain fold / call / 3-bet (raise) — not "non-fold = call".
     pot_if_called = pot_bb + 2 * open_bb
     ev_when_called = eq * pot_if_called - open_bb
-    fold_rate = max(0.0, min(1.0, fold_rate))
-    ev_open = fold_rate * ev_when_villain_folds + (1.0 - fold_rate) * ev_when_called
-    return ev_open, ev_fold
+    ev_when_3bet = _ev_vs_threebet(
+        eq, open_bb=open_bb, pot_bb=pot_bb, threebet_to=threebet_to
+    )
+    ev_raise = f * pot_bb + c * ev_when_called + r * ev_when_3bet
+    return {"fold": ev_fold, "call": ev_call, "raise": ev_raise}
+
+
+def ev_actions_bb_vs_open(
+    hand_class: str,
+    rates: dict[str, float],
+    *,
+    open_bb: float = 2.5,
+    pot_bb: float = 1.5,
+    threebet_to: float = 9.0,
+) -> dict[str, float]:
+    """Per-action EV (bb) for BB facing a steal: fold / call / raise(3-bet)."""
+    eq = hand_equity(hand_class)
+    # Villain response after our 3-bet (continue / fold).
+    f, c, r = _normalize_rates(
+        float(rates.get("fold", 0.45)),
+        float(rates.get("call", 0.40)),
+        float(rates.get("raise", 0.15)),
+    )
+    # pot after open: blinds + open completion from SB.
+    sb_added = open_bb - 0.5
+    pot_facing = pot_bb + sb_added
+    to_call = open_bb - 1.0
+    ev_fold = 0.0
+    pot_if_call = pot_facing + to_call
+    ev_call = eq * pot_if_call - to_call
+    # 3-bet: invest (threebet_to - bb_already_in); villain folds/calls/4-bets.
+    invest_3b = threebet_to - 1.0
+    pot_after_3b = pot_facing + invest_3b  # villain open already in pot_facing
+    # When villain folds to 3bet we win pot_facing (open already in).
+    # When calls: pot = pot_facing + invest_3b + (threebet_to - open_bb) roughly;
+    # use threebet_to matching open side for simplicity.
+    villain_call_amt = threebet_to - open_bb
+    pot_3b_called = pot_facing + invest_3b + villain_call_amt
+    # 4-bet: dump the 3-bet (fold) for non-nuts; crude max(fold, call-4bet).
+    ev_vs_4bet = -invest_3b
+    pot_odds_4b_call = threebet_to  # rough extra
+    ev_call_4b = eq * (pot_after_3b + pot_odds_4b_call) - invest_3b - pot_odds_4b_call
+    ev_when_4bet = max(ev_vs_4bet, ev_call_4b)
+    ev_raise = (
+        f * pot_facing
+        + c * (eq * pot_3b_called - invest_3b)
+        + r * ev_when_4bet
+    )
+    return {"fold": ev_fold, "call": ev_call, "raise": ev_raise}
 
 
 def aggregate_stance_mixtures(
@@ -162,23 +312,38 @@ def aggregate_stance_mixtures(
     return out
 
 
+def mixture_action_rates(
+    stance_mixes: dict[str, dict[str, dict[str, float]]],
+    stance_weights: dict[str, float],
+    position: str,
+    bucket: str = "mid",
+) -> dict[str, float]:
+    """Weighted {fold, call, raise} response mix across stances."""
+    total_w = 0.0
+    acc = {"fold": 0.0, "call": 0.0, "raise": 0.0}
+    for stance, w in stance_weights.items():
+        mix = stance_mixes.get(stance, {})
+        pos_mix = mix.get(position) or mix.get("BTN") or {}
+        rates = pos_mix.get(bucket) or pos_mix.get("mid") or {
+            "fold": 0.55,
+            "call": 0.35,
+            "raise": 0.10,
+        }
+        for k in acc:
+            acc[k] += w * float(rates.get(k, 0.0))
+        total_w += w
+    if total_w <= 0:
+        return {"fold": 0.55, "call": 0.35, "raise": 0.10}
+    return {k: acc[k] / total_w for k in acc}
+
+
 def mixture_fold_rate(
     stance_mixes: dict[str, dict[str, dict[str, float]]],
     stance_weights: dict[str, float],
     position: str,
     bucket: str = "mid",
 ) -> float:
-    total_w = 0.0
-    fold_acc = 0.0
-    for stance, w in stance_weights.items():
-        mix = stance_mixes.get(stance, {})
-        pos_mix = mix.get(position) or mix.get("BTN") or {}
-        rates = pos_mix.get(bucket) or pos_mix.get("mid") or {"fold": 0.55}
-        fold_acc += w * float(rates.get("fold", 0.55))
-        total_w += w
-    if total_w <= 0:
-        return 0.55
-    return fold_acc / total_w
+    return mixture_action_rates(stance_mixes, stance_weights, position, bucket)["fold"]
 
 
 @dataclass
@@ -232,58 +397,35 @@ def best_response_chart_update(
     ev_threshold: float,
     positions: tuple[str, ...] = ("BTN", "BB"),
 ) -> tuple[list[dict[str, str]], float]:
-    """Best-response on unopened-pot opens (BTN) + BB 3bet raise set tightening."""
+    """Best-response fold/call/raise on BTN opens and BB vs steal."""
     changes: list[dict[str, str]] = []
     delta_ev = 0.0
     for pos in positions:
         chart_pos = "BTN" if pos == "SB" else pos
+        rates = mixture_action_rates(stance_mixes, stance_weights, chart_pos)
         for hand in sorted(candidate_hands(chart, chart_pos)):
             current = _chart_action(chart, chart_pos, hand)
-            fold_rate = mixture_fold_rate(stance_mixes, stance_weights, chart_pos)
-            ev_open, ev_fold = ev_open_vs_mixture(hand, fold_rate)
-
-            if chart_pos == "BB" and current == "call":
-                # Defend calls use a different spot — do not apply steal EV model.
-                continue
-
             if chart_pos == "BB":
-                # BB raise set only: drop marginal 3bets when open EV does not clear.
-                if current == "raise" and ev_open < ev_fold + ev_threshold:
-                    _set_chart_action(chart, chart_pos, hand, "fold")
-                    changes.append({
-                        "position": chart_pos,
-                        "hand": hand,
-                        "from": current,
-                        "to": "fold",
-                        "delta_ev": round(ev_fold - ev_open, 4),
-                    })
-                    delta_ev += ev_fold - ev_open
-                continue
+                evs = ev_actions_bb_vs_open(hand, rates)
+            else:
+                evs = ev_actions_unopened(hand, rates)
 
-            # BTN (and SB mapped to BTN): open vs fold.
-            best = "raise" if ev_open >= ev_fold + ev_threshold else "fold"
-            if best == "raise" and current != "raise":
-                if ev_open - ev_fold >= ev_threshold:
-                    _set_chart_action(chart, chart_pos, hand, "raise")
-                    changes.append({
-                        "position": chart_pos,
-                        "hand": hand,
-                        "from": current,
-                        "to": "raise",
-                        "delta_ev": round(ev_open - ev_fold, 4),
-                    })
-                    delta_ev += ev_open - ev_fold
-            elif best == "fold" and current == "raise":
-                if ev_fold - ev_open >= ev_threshold:
-                    _set_chart_action(chart, chart_pos, hand, "fold")
-                    changes.append({
-                        "position": chart_pos,
-                        "hand": hand,
-                        "from": current,
-                        "to": "fold",
-                        "delta_ev": round(ev_fold - ev_open, 4),
-                    })
-                    delta_ev += ev_fold - ev_open
+            # Argmax among fold / call / raise; require clear EV gain to flip.
+            best = max(evs, key=lambda a: evs[a])
+            if best == current:
+                continue
+            gain = evs[best] - evs.get(current, evs["fold"])
+            if gain < ev_threshold:
+                continue
+            _set_chart_action(chart, chart_pos, hand, best)
+            changes.append({
+                "position": chart_pos,
+                "hand": hand,
+                "from": current,
+                "to": best,
+                "delta_ev": round(gain, 4),
+            })
+            delta_ev += gain
     return changes, delta_ev
 
 
@@ -479,12 +621,19 @@ def run_mafp(
         if len(changes) > 8:
             print(f"  ... +{len(changes) - 8} more")
 
+        total_changes = sum(len(r.changes) for r in results)
         if write_chart and changes:
             write_mafp_chart(
                 chart,
                 MAFP_CHART_PATH,
                 mafp_round=rnd,
-                meta={"changes": len(changes), "delta_ev": delta_ev, "audit_rows": len(audit)},
+                meta={
+                    "changes": len(changes),
+                    "chart_changes": total_changes,
+                    "delta_ev": delta_ev,
+                    "audit_rows": len(audit),
+                    "ev_threshold": ev_threshold,
+                },
             )
             apply_mafp_overlay_to_static_chart()
 
@@ -507,12 +656,28 @@ def run_mafp(
         for s in STANCES:
             stance_weights[s] += 1.0 / len(STANCES)
 
-    if write_chart and not MAFP_CHART_PATH.is_file() and results:
+    total_changes = sum(len(r.changes) for r in results)
+    # Always stamp a final chart when we produced flips (normalize chart_changes).
+    if write_chart and total_changes > 0:
+        write_mafp_chart(
+            chart,
+            MAFP_CHART_PATH,
+            mafp_round=results[-1].round_num if results else 0,
+            meta={
+                "changes": total_changes,
+                "chart_changes": total_changes,
+                "delta_ev": sum(r.delta_ev for r in results),
+                "rounds": len(results),
+                "ev_threshold": ev_threshold,
+            },
+        )
+        apply_mafp_overlay_to_static_chart()
+    elif write_chart and not MAFP_CHART_PATH.is_file() and results:
         write_mafp_chart(
             chart,
             MAFP_CHART_PATH,
             mafp_round=results[-1].round_num,
-            meta={"baseline": True, "chart_changes": 0},
+            meta={"baseline": True, "chart_changes": 0, "changes": 0},
         )
         apply_mafp_overlay_to_static_chart()
 

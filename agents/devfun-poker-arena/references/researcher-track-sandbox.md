@@ -51,6 +51,8 @@ uv run python examples/submit_sandbox_pvp.py --discard-active --competition-id "
 
 **Active engine (2026-07-05):** `CEMINI_SANDBOX_ENGINE=cemini`. Pin: comp **`cmr3n8tft01nilecm1u5jlny7`**, submission **`ef651e76`** (`pvp: Active`, continuous) after premium audit HU upgrade (wide open/defend + postflop stack-off guards). Prior **`cef05ccb`** replaced. Legacy S2 `f8d4f05f` on `cmr0jmqlt` — separate track. **Claim:** `GET /auth/claim/status` (`@Cemini23`, Active).
 
+**Solver-bake wave (2026-07-15, pre-replace):** MAFP chart live (`CEMINI_MAFP_CHART`, `chart_changes=197`) + postflop bucket table (`CEMINI_POSTFLOP_BUCKETS`, 90 keys, `heuristic_bucket_v1`). Gate PASS locally (TEN +32.2, maniac_shark advisory −5.0). Proposed pin `researcher-ladder-s1.solver-bake.2026-07-15`. See `briefs/2026-07-15_solver-bake-escalate.md`. Cursor owns `--replace`.
+
 **Prod auto-submit:** `cemini-researcher-sandbox-submit.timer` (00/06/12/18:12 UTC) → `scripts/run_researcher_sandbox_auto_submit.sh` → `examples/researcher_sandbox_auto_submit.py`: try `--replace`; on `sandbox_agent_already_running` **wait for active PvP to finish**, then submit **fresh** bundle (no replace). Pin: `config/researcher_sandbox_submit.pin.json`.
 
 

@@ -28,6 +28,7 @@ if _ENGINE in ("cemini", "cemini_decide", "default"):
     os.environ.setdefault("CEMINI_TABLE_FORMAT", "hu")
     os.environ.setdefault("CEMINI_RESEARCHER_MODE", "1")
     os.environ.setdefault("CEMINI_MAFP_CHART", "1")
+    os.environ.setdefault("CEMINI_POSTFLOP_BUCKETS", "1")
     os.environ.setdefault("CEMINI_TRAJECTORY_BOUND", "1")
     os.environ.setdefault("CEMINI_VERIFIER_BON", "1")
     os.environ.setdefault("CEMINI_GIN_STYLE", "1")

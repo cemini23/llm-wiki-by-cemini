@@ -110,6 +110,11 @@ except ImportError:
     def _train_threshold(_name: str, default: float) -> float:  # noqa: E402
         return default
 from research_static_chart import research_static_chart  # noqa: E402
+from postflop_buckets import (  # noqa: E402
+    bias_thresholds_from_freqs,
+    build_solver_frequencies_context,
+    resolve_freqs_for_equity,
+)
 from action_mix import resolve_postflop_call_fold  # noqa: E402
 from hand_nuts import river_unbeatable, treys_available  # noqa: E402
 
@@ -842,6 +847,16 @@ def retrieve_solver_context(table: dict) -> dict:
             ctx.pop("eval_panel_mode", None)
     elif table_fmt in ("6max", "6-max", "six"):
         ctx["table_format"] = "6max"
+    # WP2: O(1) postflop bucket slice (strength bin resolved in decide via equity)
+    if street != "preflop":
+        try:
+            sf = build_solver_frequencies_context(
+                table, in_position=hero_is_in_position(table),
+            )
+            if sf:
+                ctx["solver_frequencies"] = sf
+        except Exception:
+            pass
     return ctx
 
 
@@ -2012,12 +2027,19 @@ def decide(
             if gin_free is not None:
                 action_name, amount = gin_free
             else:
+                sf_freqs = resolve_freqs_for_equity(
+                    ctx.get("solver_frequencies"), equity,
+                )
                 action_name, amount = _postflop_free(
                     equity, allowed, available, pot, pot_control=pot_control,
                     ps_bias=ps_bias, ps_library=ps_library,
                     hand_eval=ps_hand_eval,
-                    hand_class=hc, hud_mode=hud_mode, margins=margins)
+                    hand_class=hc, hud_mode=hud_mode, margins=margins,
+                    solver_freqs=sf_freqs)
     else:
+        sf_freqs = resolve_freqs_for_equity(
+            ctx.get("solver_frequencies"), equity,
+        )
         action_name, amount = _postflop_facing_bet(
             equity, pot_odds, allowed, available, call_chips, pot,
             in_position=in_position, pot_control=pot_control,
@@ -2029,6 +2051,7 @@ def decide(
             researcher_mode=bool(ctx.get("researcher_mix")),
             villain_archetype=villain_archetype,
             villain_vpip=villain_vpip,
+            solver_freqs=sf_freqs,
         )
         if action_name == "fold" and street != "Preflop":
             # K131b Track B: vs-LAG postflop defend (before SPR lock)
@@ -4211,7 +4234,8 @@ def _postflop_free(equity: float, allowed: dict, available: list,
                    hand_eval: Optional[str] = None,
                    hand_class: str = "",
                    hud_mode: str = "unknown",
-                   margins: Optional[dict] = None) -> tuple[str, Optional[int]]:
+                   margins: Optional[dict] = None,
+                   solver_freqs: Optional[dict] = None) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     # PokerSkill: nut-high + draw → pot control, don't lead.
     if hand_eval == "nut_high_draw" and "check" in available:
@@ -4220,15 +4244,30 @@ def _postflop_free(equity: float, allowed: dict, available: list,
         return "check", None
     bet_bar = 0.78 if pot_control else 0.72
     bet_bar += float(margins.get("bet_bar_delta", 0))
+    size_frac = 0.66
+    if solver_freqs:
+        bias = bias_thresholds_from_freqs(solver_freqs, facing_bet=False)
+        bet_bar += float(bias.get("bet_bar_delta", 0))
+        size_frac = float(bias.get("size_pot_frac", size_frac))
     if ps_bias == "probe_small" and allowed.get("canBet") and "bet" in available:
         bet_bar = 0.58 + float(margins.get("bet_bar_delta", 0))
+        if solver_freqs:
+            bet_bar += float(
+                bias_thresholds_from_freqs(solver_freqs, facing_bet=False)
+                .get("bet_bar_delta", 0)
+            )
     if ps_library and ps_bias == "raise" and equity > 0.62:
         bet_bar = 0.55 + float(margins.get("bet_bar_delta", 0))
+        if solver_freqs:
+            bet_bar += float(
+                bias_thresholds_from_freqs(solver_freqs, facing_bet=False)
+                .get("bet_bar_delta", 0)
+            )
     if equity > bet_bar and allowed.get("canBet") and "bet" in available:
         br = allowed.get("betRange") or {}
         min_bet = int(br.get("min") or max(int(pot * 0.33), 1))
         max_bet = int(br.get("max") or min_bet)
-        target = max(min_bet, min(int(pot * 0.66), max_bet))
+        target = max(min_bet, min(int(pot * size_frac), max_bet))
         return "bet", target
     if "check" in available:
         return "check", None
@@ -4253,10 +4292,15 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
                          max_playable: int | None = None,
                          researcher_mode: bool = False,
                          villain_archetype: str = "",
-                         villain_vpip: float | None = None) -> tuple[str, Optional[int]]:
+                         villain_vpip: float | None = None,
+                         solver_freqs: Optional[dict] = None) -> tuple[str, Optional[int]]:
     margins = margins or exploit_margins(hud_mode)
     hole = hole or []
     board = board or []
+    _sf_bias = (
+        bias_thresholds_from_freqs(solver_freqs, facing_bet=True)
+        if solver_freqs else {}
+    )
 
     if table and _overcommit_should_fold(
             table, hand_class, equity, call_chips, lead_protect=lead_protect,
@@ -4632,6 +4676,9 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
     call_margin = 0.04 if in_position else 0.07
     fold_slack += float(margins.get("fold_slack_delta", 0))
     call_margin += float(margins.get("call_margin_delta", 0))
+    # WP2: bounded bias from postflop bucket freqs (no new river guards)
+    fold_slack += float(_sf_bias.get("fold_slack_delta", 0))
+    call_margin += float(_sf_bias.get("call_margin_delta", 0))
     if pot_control:
         call_margin += 0.03
         fold_slack -= 0.01
@@ -4640,6 +4687,7 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
     if hud_mode == "rock" and not in_position and equity < rock_oop_eq and "fold" in available:
         fold_slack += 0.02
     raise_bar = 0.82 if in_position else 0.86
+    raise_bar += float(_sf_bias.get("raise_bar_delta", 0))
     arch = (villain_archetype or "").lower()
     hyper_maniac = hud_mode == "maniac" and arch != "linear_aggro" and (
         villain_vpip is None or villain_vpip >= 0.48

@@ -2,8 +2,10 @@
   "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "406f9734-bad6-4c47-846f-0f48cd0bc528",
+  "activeSubmissionId": "daf19c7e-9039-4252-a45d-c00227ae9b97",
   "watchSubmissionIds": [
+    "daf19c7e-9039-4252-a45d-c00227ae9b97",
+    "f4de9f5c-3f86-4ce4-9fbb-bcbda4dce0d3",
     "406f9734-bad6-4c47-846f-0f48cd0bc528",
     "498df8d3-c7fa-4240-8ad9-506aff0ef390",
     "c67973a2-3bd9-40b0-bc5b-e106d19cd7e7",
@@ -16,9 +18,9 @@
   "legacyActiveSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-ladder-s1.k151.2026-07-13-retry",
+  "agentVersion": "researcher-ladder-s1.solver-bake.2026-07-15",
   "sandboxEngine": "cemini",
-  "gitCommit": "495f533",
-  "pinnedAt": "2026-07-13T20:35:00Z",
-  "notes": "Replace resubmit 2026-07-13 after 498df8d3 Failed (static timeout @2770h -39.7). Live 406f9734 with SIGALRM guard + K161 hierarchical memory in tree."
+  "gitCommit": "3ca8efd",
+  "pinnedAt": "2026-07-15T14:21:09Z",
+  "notes": "Solver-bake escalate: MAFP chart_changes=197 wired + postflop buckets v1 (90 keys). Gate PASS; maniac_shark advisory -5 bb/100. Replaces f4de9f5c."
 }

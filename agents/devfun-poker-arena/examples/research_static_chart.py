@@ -16,13 +16,23 @@ the LLM prompt as AUTO-RESEARCH CONTEXT.
 Run standalone for a quick smoke check:
 
     uv run examples/research_static_chart.py
+
+When CEMINI_MAFP_CHART is truthy, a MAFP HU overlay is loaded once (O(1)
+after first call) and applied to a working copy of the HU open chart.
+Loader is replicated here — do NOT import mafp_chart_refinement at runtime.
 """
 from __future__ import annotations
 
+import os
+from pathlib import Path
 from typing import Optional
 
 from position_utils import hero_position_label
 from table_format_utils import resolve_table_format  # noqa: E402
+
+# MAFP overlay cache: (resolved_path_str | None, mtime | None) -> chart copy
+_mafp_overlay_cache: Optional[dict[str, dict[str, set[str]]]] = None
+_mafp_overlay_cache_key: Optional[tuple[Optional[str], Optional[float]]] = None
 
 # HU NLHE — BTN/SB combined seat uses BTN chart; BB defends wider than 6-max BB chart.
 _HU_OPEN_CHART = {
@@ -123,6 +133,128 @@ def _hand_class(hole: list[str]) -> str:
     return f"{r1}{r2}{'s' if s1 == s2 else 'o'}"
 
 
+def _env_truthy(name: str) -> bool:
+    return os.environ.get(name, "").strip().lower() in ("1", "true", "yes", "on")
+
+
+def resolve_mafp_chart_path() -> Optional[Path]:
+    """Bundle-aware MAFP chart path.
+
+    Order: CEMINI_MAFP_CHART_PATH (tests) → assets/research (bundle) →
+    repo research/ next to examples/.
+    """
+    override = os.environ.get("CEMINI_MAFP_CHART_PATH", "").strip()
+    if override:
+        return Path(override)
+
+    module_dir = Path(__file__).resolve().parent  # assets/ in bundle, examples/ in repo
+    candidates = (
+        module_dir / "research" / "mafp_hu_chart.json",  # assets/research (sandbox bundle)
+        module_dir.parent / "assets" / "research" / "mafp_hu_chart.json",
+        module_dir.parent / "research" / "mafp_hu_chart.json",  # repo research/
+    )
+    for p in candidates:
+        if p.is_file():
+            return p
+    return None
+
+
+def load_mafp_chart_ranges(path: Optional[Path] = None) -> Optional[dict[str, dict[str, str]]]:
+    """Load MAFP ranges from JSON. Fail-open: None on missing/unparseable."""
+    p = path if path is not None else resolve_mafp_chart_path()
+    if p is None or not Path(p).is_file():
+        return None
+    try:
+        import json
+
+        data = json.loads(Path(p).read_text(encoding="utf-8"))
+    except Exception:
+        return None
+    ranges = data.get("ranges") if isinstance(data, dict) else None
+    return ranges if isinstance(ranges, dict) else None
+
+
+def _deep_copy_hu_chart() -> dict[str, dict[str, set[str]]]:
+    out: dict[str, dict[str, set[str]]] = {}
+    for pos, rules in _HU_OPEN_CHART.items():
+        out[pos] = {
+            "raise": set(rules.get("raise", set())),
+            "call": set(rules.get("call", set())),
+        }
+    return out
+
+
+def apply_mafp_overlay_to_chart(
+    chart: dict[str, dict[str, set[str]]],
+    ranges: dict[str, dict[str, str]],
+) -> int:
+    """Merge MAFP hand→action ranges into a HU chart copy. Returns cells touched."""
+    n = 0
+    for pos, hands in ranges.items():
+        if pos not in chart:
+            continue
+        if not isinstance(hands, dict):
+            continue
+        rules = chart[pos]
+        raise_set = rules.setdefault("raise", set())
+        call_set = rules.setdefault("call", set())
+        for hand, action in hands.items():
+            if not isinstance(hand, str) or not isinstance(action, str):
+                continue
+            raise_set.discard(hand)
+            call_set.discard(hand)
+            if action == "raise":
+                raise_set.add(hand)
+            elif action == "call":
+                call_set.add(hand)
+            # fold: leave out of both sets
+            n += 1
+    return n
+
+
+def _reset_mafp_overlay_cache() -> None:
+    """Test helper: clear overlay cache so path/flag changes take effect."""
+    global _mafp_overlay_cache, _mafp_overlay_cache_key
+    _mafp_overlay_cache = None
+    _mafp_overlay_cache_key = None
+
+
+def _hu_chart_for_lookup() -> dict[str, dict[str, set[str]]]:
+    """Return HU open chart, with MAFP overlay when CEMINI_MAFP_CHART is on.
+
+    Does not mutate the module-level `_HU_OPEN_CHART` baseline (flag-off
+    parity). Overlay is cached by resolved path + mtime (idempotent).
+    """
+    global _mafp_overlay_cache, _mafp_overlay_cache_key
+
+    if not _env_truthy("CEMINI_MAFP_CHART"):
+        return _HU_OPEN_CHART
+
+    path = resolve_mafp_chart_path()
+    mtime: Optional[float] = None
+    path_str: Optional[str] = None
+    if path is not None:
+        try:
+            path_str = str(path.resolve())
+            if path.is_file():
+                mtime = path.stat().st_mtime
+        except OSError:
+            path_str = str(path)
+            mtime = None
+
+    cache_key = (path_str, mtime)
+    if _mafp_overlay_cache is not None and _mafp_overlay_cache_key == cache_key:
+        return _mafp_overlay_cache
+
+    chart = _deep_copy_hu_chart()
+    ranges = load_mafp_chart_ranges(path)
+    if ranges:
+        apply_mafp_overlay_to_chart(chart, ranges)
+    _mafp_overlay_cache = chart
+    _mafp_overlay_cache_key = cache_key
+    return chart
+
+
 def research_static_chart(table: dict) -> dict:
     """Return a small dict with preflop chart recommendation, hand class,
     and position bucket. Empty on postflop streets — postflop spots need
@@ -150,9 +282,12 @@ def research_static_chart(table: dict) -> dict:
 
     pos = hero_position_label(table)
     fmt = resolve_table_format(table)
-    chart_source = _HU_OPEN_CHART if fmt == "hu" else _OPEN_CHART
-    if fmt == "hu" and pos == "SB":
-        pos = "BTN"
+    if fmt == "hu":
+        chart_source = _hu_chart_for_lookup()
+        if pos == "SB":
+            pos = "BTN"
+    else:
+        chart_source = _OPEN_CHART
     rules = chart_source.get(pos) or {}
     if cls in rules.get("raise", set()):
         action = "raise"
@@ -161,11 +296,17 @@ def research_static_chart(table: dict) -> dict:
     else:
         action = "fold"
 
+    source = f"static-chart-v1-{fmt}"
+    if fmt == "hu" and _env_truthy("CEMINI_MAFP_CHART"):
+        p = resolve_mafp_chart_path()
+        if p is not None and p.is_file():
+            source = f"mafp-overlay-v1-{fmt}"
+
     return {
         "preflop_action": action,
         "hand_class": cls,
         "position": pos,
-        "source": f"static-chart-v1-{fmt}",
+        "source": source,
         "table_format": fmt,
     }
 
