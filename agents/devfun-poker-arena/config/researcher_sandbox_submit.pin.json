@@ -20,7 +20,7 @@
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
   "agentVersion": "researcher-ladder-s1.solver-bake.2026-07-15",
   "sandboxEngine": "cemini",
-  "gitCommit": "3ca8efd",
+  "gitCommit": "22611d5",
   "pinnedAt": "2026-07-15T14:21:09Z",
   "notes": "Solver-bake escalate: MAFP chart_changes=197 wired + postflop buckets v1 (90 keys). Gate PASS; maniac_shark advisory -5 bb/100. Replaces f4de9f5c."
 }
