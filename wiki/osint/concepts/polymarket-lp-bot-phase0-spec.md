@@ -23,13 +23,14 @@ related:
   - meta/pm-lp-backtest-cadence.md
   - concepts/lp-algorithm-live-promotion-gates.md
   - concepts/world-cup-advance-market-bot-v1.md
+  - concepts/cemini-pm-lp-vs-copy-capital-decision.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md
   - concepts/avellaneda-stoikov-market-making-baseline.md
   - sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-05-29
+updated: 2026-07-14
 clusters: [polymarket, market-making, phase-0]
 ---
 
@@ -47,6 +48,7 @@ clusters: [polymarket, market-making, phase-0]
 - @meta/pm-lp-backtest-cadence.md — quarterly re-run ritual
 - @concepts/world-cup-advance-market-bot-v1.md — K82 sports/WC vertical implementing this architecture for FIFA advance markets
 - @concepts/polymarket-sports-lp-operating-rules.md — sports-specific cancel/fill invariants (6–10h pre-kickoff)
+- @concepts/cemini-pm-lp-vs-copy-capital-decision.md — K165: empirical LP kill blocks auto live promotion nostalgia
 
 ## Raw Concept
 

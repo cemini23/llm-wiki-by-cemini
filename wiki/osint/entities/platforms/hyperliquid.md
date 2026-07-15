@@ -21,9 +21,12 @@ related:
   - sources/trading-posts-compilation-8-2026-06-09.md
   - concepts/perp-dex-price-discovery-lead-lag.md
   - entities/tools/lighter-xyz.md
+  - concepts/hyperliquid-hlp-vs-user-vaults.md
+  - sources/gemini-dr-pm-hl-strategies-2026-07-14.md
+  - entities/tools/hyperliquid-python-sdk.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-09
+updated: 2026-07-14
 ---
 
 ## Relations
@@ -41,6 +44,8 @@ updated: 2026-07-09
 - @entities/tools/hl-funding-sniper.md
 - @sources/trading-posts-compilation-8-2026-06-09.md — K108 Arrakis lead-lag study
 - @concepts/perp-dex-price-discovery-lead-lag.md — Binance leads HL ~700 ms on 29/29 assets [TENTATIVE single study]
+- @concepts/hyperliquid-hlp-vs-user-vaults.md — K165: HLP vs User Vaults vs DIY copy (≠ Agent Wallet custody)
+- @sources/gemini-dr-pm-hl-strategies-2026-07-14.md — vault economics + DIY kill detail
 
 ## Raw Concept
 
@@ -84,6 +89,12 @@ Both items map to Phase 1 work in the K4 source — zero-cost foundation work th
 ### Price discovery vs liquidity (K108, 2026-06-09)
 
 Arrakis Finance cross-venue study (Hayashi–Yoshida on trade tapes, 29 major perps, Feb 2026 window) finds **Binance leads Hyperliquid fills by ~600–700 ms on all 29 assets** tested — contradicting CT claims that HL is the primary discovery venue. Hypothesized mechanism: HyperBFT two-block maker-taker round-trip after Binance moves. See `@concepts/perp-dex-price-discovery-lead-lag.md`. HL remains strong on OI/HIP-3 novel markets; latency-sensitive arb should assume **Binance → HL**, not reverse [TENTATIVE until replicated].
+
+### HLP / User Vaults / DIY copy (K165) — do not conflate with Agent Wallet
+
+**Agent Wallet** (above) = signing custody. **HLP / User Vaults** = capital products. **DIY fill-mirror** = bot that chases leader fills.
+
+K165 Gemini DRs: skip live DIY (min notional + funding asymmetry + lead-lag). HLP vs User Vault preference **conflicts across reports** — see `@concepts/hyperliquid-hlp-vs-user-vaults.md` `[NEEDS VERIFICATION 2026-07-14]`. Prefer official SDK vault transfer APIs over unlicensed copy bots.
 
 ### What the previous narrative got wrong (and why)
 The pre-K4 page collapsed prescription into description on four claims:

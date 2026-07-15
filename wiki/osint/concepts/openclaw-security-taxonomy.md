@@ -30,9 +30,12 @@ related:
   - sources/arxiv-aohp-os-agent-harness-2606.23449-2026-06-23.md
   - sources/huggingface-model-evals-74url-2026-06-23.md
   - concepts/aohp-os-level-agent-harness.md
+  - sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md
+  - sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md
+  - entities/tools/openclaw.md
 maturity: validated
 created: 2026-05-01
-updated: 2026-06-30
+updated: 2026-07-14
 ---
 
 ## Relations
@@ -57,6 +60,8 @@ updated: 2026-06-30
 - @entities/tools/openclaw.md — K135 entity; Tier A mobile node CONDITIONAL-GO vs Tier C prod NO-GO
 - @sources/openclaw-ios-node-2026-06-29.md — iOS relay attestation + pairing approval mitigations
 - @entities/tools/hermes-agent.md — K52 Nous Research Hermes Agent, positioned as OpenClaw's successor; this taxonomy is the comparison frame for its security posture
+- @sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md — K165 ClawHub Polymarket skill malware wave
+- @sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md — Unit 42 / npm IoCs
 
 ## Raw Concept
 

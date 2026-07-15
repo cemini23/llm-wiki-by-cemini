@@ -21,8 +21,13 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / genealogy** — Italian archival deep research (K153/K154) | `~/Desktop/family/research/` (private) | No — wiki methodology only |
 
-## Current state (2026-07-13 — K162)
+## Current state (2026-07-15 — K167)
 
+- **K167 ingest (2026-07-15)** — Full inbox: arXiv 2607.10814 belief-audit + 2607.09324 keyword + Macro Charts SOX/CPI/oil–2YR + Latent Space×2 + Pragmatic Engineer Dex/12-Factor + Capital Flows AI race + Event Horizon Kalshi flights/compute/CFTC + Klement Jevons + Moontower volga + WuBlock USDC. **11 sources + 1 concept + 1 entity** (+ hubs). **Adopt-patterns:** twelve-factor-agents (Apache-2.0). **Briefs:** pm + xsp (**scp prod**); poker; CCC; TipDrop/David; gambling. **Phase-0:** `adopt_k167_phase0.sh`. Local: optional 12-factor clone <50MB. No ComfyUI.
+
+## Prior state (2026-07-14 — K165)
+
+- **K165 ingest (2026-07-14)** — Full inbox: 3 Gemini LP-vs-copy/HL DRs + Pragmatic Engineer loop eng + Event Horizon Congress PM hearing + Outlier wiki lint. **6 sources + 2 concepts + 3 entities** (+ hub updates). Filed Cemini `pm_lp_rewards` ~+$0.94 kill into wiki. **Conflicts kept:** $10k LP restart vs skip; HLP vs User Vaults. **Briefs:** `pm-2026-07-14_k165-lp-vs-copy-capital-adr.md` (scp eligible); CCC×2; gambling; cybersec. **No** LP auto-restart; **no** blind copy capital.
 - **K163 ingest (2026-07-14)** — Full ingest: GitHub Repo Revenue Evaluation.docx (20 URLs) + arXiv 2607.08199 DR-AS + Macro Charts SOX/oil chat + Latent Space/Capital Flows/Event Horizon/Klement×2/WuBlock. **9 sources + 1 concept + 9 entities.** CONDITIONAL: dcg (MIT+rider). Adopt: hallmark. Integrate TipDrop: codex-first-customer. Extract: maths-compendium + awesome-llm-apps patterns. Watch: OpenCut/penpot/ATO/grok2api. **Briefs:** pm DR-AS + Kalshi Pro volume (**scp prod**); xsp Macro Charts (**scp prod**); TipDrop/David×2; poker verifiers DAG; CCC; cybersec; gambling; CeminiDFS. **Phase-0:** `adopt_k163_phase0.sh`. Local: hallmark (+ optional dcg/maths <500MB). No ComfyUI.
 - **K162 ingest (2026-07-13)** — RSS backlog: **12 NEW** Macro Charts paid sentiment + Kalshi WC downloads + SecEng agentic AI + WuBlock/Moontower/Klement. **11 sources + concept updates.** Briefs: xsp + pm (**scp prod**); cybersec + gambling handoffs. **No David.** Phase-0: `adopt_k162_phase0.sh`.
 

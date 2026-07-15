@@ -8,15 +8,21 @@ related:
   - entities/platforms/hyperliquid.md
   - entities/frameworks/ccxt.md
   - concepts/xsp-lane-trading-framework.md
+  - concepts/hyperliquid-hlp-vs-user-vaults.md
+  - sources/gemini-dr-pm-hl-strategies-2026-07-14.md
+  - sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md
 maturity: draft
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-14
 ---
 
 ## Relations
 
 - @entities/platforms/hyperliquid.md — prod stack already pins SDK in requirements
 - @concepts/xsp-lane-trading-framework.md — Lane A timing **shadow** only (not Robinhood executor)
+- @concepts/hyperliquid-hlp-vs-user-vaults.md — K165 vault-follow APIs preferred over DIY copy bots
+- @sources/gemini-dr-pm-hl-strategies-2026-07-14.md — official SDK as INTEGRATE path
+- @sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md — K165 capital matrix INTEGRATE list
 
 ## Raw Concept
 

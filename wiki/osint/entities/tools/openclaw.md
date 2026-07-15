@@ -23,9 +23,11 @@ related:
   - concepts/sae-execution-contract.md
   - concepts/reasoning-safety-monitor.md
   - sources/crypto-7-4-11.md
+  - sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md
+  - sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md
 maturity: draft
 created: 2026-06-29
-updated: 2026-06-30
+updated: 2026-07-14
 ---
 
 ## Relations
@@ -39,6 +41,8 @@ updated: 2026-06-30
 - @entities/tools/clawdbot.md — K55 name-collision stub (ColdMath "Clawdbot" may = this project)
 - @sources/3-17-agent-research.md — Tier C prod rejection (K16); K135 Tier A carve-out
 - @sources/ai-2-4-3.md — 190-advisory taxonomy source
+- @sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md — K165: ClawHub Polymarket skill malware — AVOID live trading
+- @sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md — Unit 42 / npm postinstall IoCs
 
 ## Raw Concept
 
@@ -68,6 +72,8 @@ Android + iOS first-party store apps announced **2026-06-29**; iOS docs: App Att
 | **A — Mobile node + personal laptop gateway** | **CONDITIONAL-GO** | Operator-only: approvals on phone, no cemini-prod secrets, gateway on isolated user account; steal pairing/relay patterns |
 | **B — Research reference** | **REFERENCE** | K20 taxonomy + Claw-SWE-Bench harness eval (@entities/tools/claw-swe-bench.md) |
 | **C — Prod trading / IP-sale stack** | **NO-GO** | K17: plugin supply chain + prompt injection + host exec — disqualifier unchanged |
+
+**K165 (2026-07-14):** Gemini DRs cite ClawHub / OpenClaw **Polymarket trading skills** as malware/RCE surface (warmup RCE, npm postinstall key steal). Reinforces Tier C — **never** wire OpenClaw skills to CLOB keys or live LP/copy paths. See `@concepts/openclaw-security-taxonomy.md`.
 
 **CONDITIONAL-GO gates (Tier A):**
 

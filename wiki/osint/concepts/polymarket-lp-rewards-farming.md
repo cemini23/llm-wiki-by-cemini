@@ -35,9 +35,14 @@ related:
   - sources/world-cup-youtube-research-compilation-2026-05-29.md
   - concepts/polymarket-preopen-queue-priority.md
   - sources/trading-posts-compilation-7-2026-06-09.md
+  - sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md
+  - sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md
+  - concepts/cemini-pm-lp-vs-copy-capital-decision.md
+  - entities/tools/oddpool.md
+  - entities/tools/oracle3.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-06-24
+updated: 2026-07-14
 clusters: [polymarket, market-making, yield-farming]
 ---
 
@@ -60,6 +65,10 @@ clusters: [polymarket, market-making, yield-farming]
 - @concepts/world-cup-advance-market-bot-v1.md — K82 FIFA advance-market LP vertical (OSS + Cemini)
 - @concepts/polymarket-sports-lp-operating-rules.md — sports cancel/fill rules (6–10h pre-kickoff)
 - @sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md — WC LP economics deep-read
+- @concepts/cemini-pm-lp-vs-copy-capital-decision.md — K165 capital ADR + empirical sleeve kill
+- @sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md — Jul 2026 incentive / $1-day floor refresh
+- @entities/tools/oddpool.md — low-competition LP filter candidate
+- @entities/tools/oracle3.md — INTEGRATE-CANDIDATE stub (Phase-0 pending)
 
 ## Raw Concept
 
@@ -259,6 +268,17 @@ The structural pitch: hundreds of thousands of dollars on both sides with 1¢ sp
 The K55 capital reference was `$200 → $40 in 10 days at Top 6-7%` ([TENTATIVE], @MatiasScalbi self-reported). K56 adds a smaller-capital data point: **$50 → $18 in 48 hours at Top 15%**.
 
 Rewards-per-capital efficiency is **back-loaded at small sizes** because the leaderboard rewards `time-weighted-open-interest × participation-share`; small LPs farming light markets capture proportionally more of the reward pool than whales (who concentrate in deep markets where their fractional participation share is small). This validates the K55 "$50-$200 sweet-spot for retail entry" framing.
+
+### Cemini empirical sleeve kill (K165, 2026-07-14) — do not conflate with retail anecdotes
+
+| Claim | Status |
+|-------|--------|
+| Retail `$50 → $18 / 48h` (K56) | **Third-party anecdote** — not Cemini PnL |
+| Cemini `pm_lp_rewards` attributed ~**+$0.94** / ~23 events | Operator/prod (~2026-06-11) |
+| Sleeve **KILLED** 2026-06-13; `PM_LP_LIVE_POST=false`; posture “Defer; no capital spend” | Prod `pivot_posture.yaml` |
+| Jul 13 2026 incentive cuts + Jul-19 WC window compression | Gemini DR wave `[TENTATIVE]` until docs re-baselined |
+
+**Do not auto-restart LP** from wiki nostalgia. Capital ADR: `@concepts/cemini-pm-lp-vs-copy-capital-decision.md`.
 
 ### Weather LP retail validation (2026-05-26) `[CONFIRMED — screenshot]`
 

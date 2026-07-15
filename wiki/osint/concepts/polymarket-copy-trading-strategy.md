@@ -41,9 +41,11 @@ related:
   - entities/tools/odds-jam-prediction-insiders.md
   - sources/youtube-kalshi-bots-batch-2026-05-29.md
   - entities/tools/momentum-odds.md
+  - sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md
+  - concepts/cemini-pm-lp-vs-copy-capital-decision.md
 maturity: validated
 created: 2026-05-21
-updated: 2026-06-04
+updated: 2026-07-14
 clusters: [polymarket, copy-trading]
 ---
 
@@ -70,6 +72,8 @@ clusters: [polymarket, copy-trading]
 - @sources/youtube-polymarket-bots-batch-2026-05-29.md — K80 Odds Jam 30d experiment + Bullpen CLI build
 - @entities/tools/bullpen-cli.md — Claude Code copy-bot stack (Sharbel tutorial)
 - @entities/tools/odds-jam-prediction-insiders.md — alert-feed copy product + measured ROI
+- @concepts/cemini-pm-lp-vs-copy-capital-decision.md — K165: blind copy remains NO-GO; Daleep whale-edge inverse
+- @sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md — OpenClaw/Telegram AVOID + capital tiers
 
 ## Raw Concept
 
@@ -213,3 +217,7 @@ Beast Sports Picks (`iF6ZWEbkxzM`) promotes a **closed-source tracker** sorting 
 
 > "Trader A wins 80% of trades but risks $1 to make $0.20. Trader B wins 60% of trades but risks $0.40 to make $0.80. Trader B might be much stronger long term."
 > — @DextersSolab [Source: Posts.docx Post 3]
+
+### K165 refresh (2026-07-14)
+
+Three Gemini DRs + gambling-wiki prior reaffirm: **blind PM/HL DIY copy = structural negative EV**. Daleep/Deleep-class results: large wallets can have **worse** edge than small traders. OpenClaw Polymarket skills + private-key Telegram bots = **hostile**. Wallets remain **adversary / filter signal**, not capital allocation. See `@concepts/cemini-pm-lp-vs-copy-capital-decision.md`.

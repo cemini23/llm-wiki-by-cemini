@@ -8,15 +8,17 @@ related:
   - sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md
   - entities/tools/polymarket-paper-trader.md
   - concepts/tool-evaluation-framework.md
+  - entities/tools/cryptuon-polybot.md
 maturity: draft
 created: 2026-05-10
-updated: 2026-05-31
+updated: 2026-07-14
 ---
 
 ## Relations
 - `@sources/project-link-evaluation-brief-5_10.md` — source evaluation brief (URL 3)
 - `@sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md` — K90 v6 Steal-from reaffirmed (MIT)
 - `@entities/tools/polymarket-paper-trader.md` — companion Polymarket tool (Adopt tier)
+- `@entities/tools/cryptuon-polybot.md` — **different repo** (K165 Gemini INTEGRATE-CANDIDATE); do not merge
 
 ## Raw Concept
 

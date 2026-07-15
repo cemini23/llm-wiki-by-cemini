@@ -4,6 +4,9 @@ type: concept
 tags: [concept, agent-harness, coding-agents, security, verification, k146]
 keywords: [substrate constraints, projection layer, docs CLI, backdoor audit, enforceable guardrails, MCP alternative]
 related:
+  - entities/tools/twelve-factor-agents.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-15-context-engineering-dex-horthy.md
+  - sources/newsletter-rss-latent-space-2026-07-14-5-trends-ai-engineer-worlds-fair.md
   - sources/newsletter-rss-latent-space-2026-07-14-ainews-codex-7m-verifiers-v1.md
   - sources/arxiv-steerability-constraints-2607.02389-2026-07-05.md
   - concepts/generator-verifier-inference-time-steering.md
@@ -13,7 +16,7 @@ related:
   - entities/tools/serena.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-14
+updated: 2026-07-15
 ---
 
 ## Relations

@@ -4,6 +4,7 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - entities/tools/twelve-factor-agents.md
   - sources/newsletter-rss-latent-space-2026-07-14-ainews-codex-7m-verifiers-v1.md
   - entities/tools/codex-first-customer-finder-skill.md
   - entities/tools/hallmark.md
@@ -117,7 +118,7 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-14
+updated: 2026-07-15
 ---
 
 ## Relations

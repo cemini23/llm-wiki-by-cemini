@@ -23,6 +23,7 @@ related:
   - sources/gemini-wc2026-prediction-markets-inventory-2026-06-09.md
   - sources/trading-posts-compilation-8-2026-06-09.md
   - concepts/pnl-attribution-versioning.md
+  - sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md
   - concepts/trading-bot-logging-discipline.md
   - concepts/polymarket-sports-lp-operating-rules.md
   - concepts/world-cup-2026-group-conviction-matrix.md
@@ -65,6 +66,7 @@ updated: 2026-06-09
 
 ## Relations
 
+- @sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md — K165 capital matrix cites world-cup-bot INTEGRATE
 - @projects/world-cup-bot/Architecture/Architecture - Overview.md — `/obsidian-architect` codebase map @ `17a6647`
 - @projects/world-cup-bot/Architecture/Architecture - Pre-live POST checklist.md — mandatory before live POST (CLOB V2 + egress smoke)
 - @projects/world-cup-bot/Architecture/OPEN-GAPS.md — architect gap tracker (shadow soak, router flags, DR cadence)

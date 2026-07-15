@@ -4,6 +4,7 @@ type: concept
 tags: [concept, hyperliquid, perps, microstructure, lead-lag, k108]
 keywords: [arrakis, hayashi-yoshida, hyperbft, lighter-xyz, binance-futures, price-discovery]
 related:
+  - concepts/hyperliquid-hlp-vs-user-vaults.md
   - sources/trading-posts-compilation-8-2026-06-09.md
   - entities/platforms/hyperliquid.md
   - entities/tools/lighter-xyz.md
@@ -13,12 +14,13 @@ related:
   - concepts/hyperliquid-agent-trading.md
 maturity: draft
 created: 2026-06-09
-updated: 2026-06-09
+updated: 2026-07-14
 clusters: [perps, microstructure]
 ---
 
 ## Relations
 
+- @concepts/hyperliquid-hlp-vs-user-vaults.md — K165 DIY copy kill relies on Binance→HL lag
 - @sources/trading-posts-compilation-8-2026-06-09.md — K108 Post 5 (@ArrakisFinance)
 - @entities/platforms/hyperliquid.md — HyperBFT two-block maker-taker round-trip hypothesis
 - @entities/tools/lighter-xyz.md — sequencer/indexer ~100 ms lag vs Binance

@@ -4,6 +4,7 @@ type: entity
 tags: [platform, prediction-markets, on-chain, cemini-venue-adjacent]
 keywords: []
 related:
+  - sources/substack-rss-event-horizon-2026-07-14-congress-pm-hearing.md
   - sources/3-19-kalshi-trading-strategy-research.md
   - sources/3-9-pm-research.md
   - sources/kalshi-3-3-29.md

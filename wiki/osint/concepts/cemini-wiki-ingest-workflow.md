@@ -28,14 +28,18 @@ related:
   - sources/arxiv-2606-11337-sciconbench-scientific-synthesis-agents-2026-06-13.md
   - meta/macro-charts-email-ingest-cadence.md
   - concepts/computational-genealogy-archival-automation.md
+  - sources/substack-rss-outlier-weekly-2026-07-14-llm-wiki-lint.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-14-what-is-loop-engineering.md
 maturity: core
 created: 2026-05-31
-updated: 2026-07-09
+updated: 2026-07-14
 ---
 
 ## Relations
 
 - @concepts/computational-genealogy-archival-automation.md — parallel “sources before automation / no Tier-3 invention” discipline for archival digs
+- @sources/substack-rss-outlier-weekly-2026-07-14-llm-wiki-lint.md — K165: contribution rate + wikilint-on-PR framing
+- @sources/newsletter-rss-pragmatic-engineer-2026-07-14-what-is-loop-engineering.md — K165: loop engineering (CCC primary)
 - @concepts/federated-daily-research-digest.md — K93 per-wiki digest rollout
 - @concepts/monokern-compounding-research-pipeline.md — weekly NotebookLM overlay
 - @meta/daily-research-digest-cadence.md — Phase 1 schedule + report path

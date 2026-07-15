@@ -4,6 +4,7 @@ type: concept
 tags: [genealogy, archival, automation, italy, antenati, draft]
 keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double Metaphone, kinship graph]
 related:
+  - sources/arxiv-2607.09324-letting-data-speak-keyword-extraction-crowdsourced-2026-07-15.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
   - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
@@ -22,7 +23,7 @@ related:
   - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-12
+updated: 2026-07-15
 ---
 
 ## Relations

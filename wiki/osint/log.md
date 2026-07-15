@@ -1,9 +1,30 @@
 # Wiki Log
 
-updated: 2026-07-14
+updated: 2026-07-15
 ---
 
 ---
+
+
+## [2026-07-15] ingest | K167 — arXiv belief-audit + keyword + Macro/RSS context+harness
+
+- **Inbox (11):** 2607.10814 + 2607.09324 + Macro Charts Jul 15 + Latent Space×2 + Pragmatic Engineer Dex + Capital Flows AI race + Event Horizon Kalshi flights + Klement Jevons + Moontower iron butterfly + WuBlock USDC — **archived egress-fi; inbox cleared**
+- **Sources (11):** 2 arXiv + Macro + 8 newsletter/RSS (AINews `-c72` as new dated issue vs K163 `-c70`)
+- **Concept (1) + entity (1):** belief-conditioned-agent-audit-hidden-info; twelve-factor-agents (Apache-2.0 Adopt-patterns)
+- **Hub updates:** macro-charts-regime; xsp-lane; kalshi; dcm-state-preemption; coding-agent-substrate; computational-genealogy; capital-flows; hierarchical-memory; wiki-tooling-evaluation
+- **Phase-0:** `scripts/adopt_k167_phase0.sh` — Adopt-patterns 12-factor; REFERENCE arXiv×2
+- **Briefs:** pm flights (**scp prod**); xsp macro+volga (**scp prod**); poker belief-audit; CCC 12-factor; TipDrop/David harness; gambling flights retail
+- **Local adopt (<500MB):** shallow clone `humanlayer/12-factor-agents` → `.local/adopts/` (optional); no ComfyUI
+
+## [2026-07-14] ingest | K165 — PM LP vs copy Gemini×3 + RSS×3
+
+- **Inbox (6):** Polymarket LP Vs Copy-Trading.docx + Trading Strategies Research.docx + Polymarket and Hyperliquid Strategies.docx + Pragmatic Engineer loop eng + Event Horizon Congress hearing + Outlier wiki lint — **archived egress-fi; inbox cleared**
+- **Sources (6):** 3 Gemini DR + 3 RSS (promoted from inbox stubs)
+- **Concepts (2 new + updates):** cemini-pm-lp-vs-copy-capital-decision; hyperliquid-hlp-vs-user-vaults; updates copy-trading / lp-rewards (Cemini ~$0.94 kill filed) / openclaw-security / wiki-ingest
+- **Entities (3 new + updates):** oracle3; cryptuon-polybot; oddpool; hyperliquid; openclaw; polybot disambig; hyperliquid-python-sdk; polymarket/kalshi hearing backlinks
+- **Conflicts preserved:** $10k PM LP restart vs skip; HLP vs User Vaults — `[NEEDS VERIFICATION 2026-07-14]`
+- **Briefs:** `briefs/pm-2026-07-14_k165-lp-vs-copy-capital-adr.md` (scp eligible); CCC loop eng + wiki lint; gambling hearing/anti-copy; cybersec OpenClaw skills
+- **Posture:** no auto-restart LP; no blind copy capital; prefer prove-edge sleeves
 
 ## [2026-07-14] ingest | K163 — tool-eval docx + arXiv DR-AS + RSS/Macro
 

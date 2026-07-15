@@ -4,6 +4,8 @@ type: entity
 tags: [platform, prediction-markets, exchange, cemini-venue]
 keywords: []
 related:
+  - sources/substack-rss-event-horizon-2026-07-15-kalshi-flights-compute-cftc.md
+  - sources/substack-rss-event-horizon-2026-07-14-congress-pm-hearing.md
   - sources/substack-rss-event-horizon-2026-07-14-kalshi-wc-volume-pro.md
   - sources/arxiv-2607.08199-prediction-market-volatility-structural-2026-07-14.md
   - concepts/prediction-market-structural-volatility-dr-as.md
@@ -77,7 +79,7 @@ related:
   - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-14
+updated: 2026-07-15
 ---
 
 ## Relations

@@ -12,10 +12,42 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **698 canonical stubs** (K163 + K162 + K161)
+Total: **724 canonical stubs** (K167 + K165 + K163)
 
 
 
+
+
+### k167-ingest (13)
+
+- [Belief-conditioned Werewolf audit (2607.10814)](sources/arxiv-2607.10814-belief-conditioned-llm-agents-werewolf-audit-2026-07-15.md) — belief/deviation audit → **poker**. — `pdf` [+k167]
+- [Keyword extraction crowdsourced (2607.09324)](sources/arxiv-2607.09324-letting-data-speak-keyword-extraction-crowdsourced-2026-07-15.md) — GLAM keywords → genealogy stewardship. — `pdf` [+k167]
+- [Macro Charts SOX/CPI/oil–2YR Jul 15](sources/macro-charts-paid-forward-2026-07-15-sox-cpi-oil-metals.md) — bounce + oil/2YR divergence → **xsp scp**. — `paid` [+k167]
+- [Latent Space 5 AIEWF trends](sources/newsletter-rss-latent-space-2026-07-14-5-trends-ai-engineer-worlds-fair.md) — context/harness factories → CCC. — `rss` [+k167]
+- [Latent Space AINews Codex harness](sources/newsletter-rss-latent-space-2026-07-14-ainews-codex-harness-observability.md) — dated issue `-c72` (K163 `-c70` separate). — `rss` [+k167]
+- [Pragmatic Engineer × Dex Horthy](sources/newsletter-rss-pragmatic-engineer-2026-07-15-context-engineering-dex-horthy.md) — 12-Factor Agents → CCC/David. — `rss` [+k167]
+- [Capital Flows winner-take-all AI race](sources/substack-rss-capital-flows-2026-07-15-winner-take-all-ai-race.md) — four sub-trades → xsp context. — `rss` [+k167]
+- [Event Horizon Kalshi flights/compute/CFTC](sources/substack-rss-event-horizon-2026-07-15-kalshi-flights-compute-cftc.md) — flights + Michigan → **pm scp**. — `rss` [+k167]
+- [Klement Jevons paradox AI](sources/substack-rss-klement-2026-07-15-jevons-paradox-ai-employment.md) — wiki-only. — `rss` [+k167]
+- [Moontower iron butterfly / volga](sources/substack-rss-moontower-2026-07-15-iron-butterfly.md) — long volga framing → **xsp**. — `rss` [+k167]
+- [WuBlock USDC Binance MiCA](sources/substack-rss-wublock-2026-07-15-usdc-binance-mica.md) — crypto digest. — `rss` [+k167]
+- [Belief-conditioned agent audit](concepts/belief-conditioned-agent-audit-hidden-info.md) — poker steal pattern. — concept [+k167]
+- [12-Factor Agents](entities/tools/twelve-factor-agents.md) — Apache-2.0 Adopt-patterns. — entity [+k167]
+
+### k165-ingest (14)
+
+- [Gemini DR LP vs copy capital (2026-07-14)](sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md) — A/B/C/D matrix; $10k→A in this report. — `docx` [+k165]
+- [Gemini DR PM strategies capital (2026-07-14)](sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md) — Jul 13 cuts; HLP lean; Oddpool filter. — `docx` [+k165]
+- [Gemini DR PM+HL strategies (2026-07-14)](sources/gemini-dr-pm-hl-strategies-2026-07-14.md) — DIY HL kill; User Vault lean. — `docx` [+k165]
+- [Pragmatic Engineer loop engineering](sources/newsletter-rss-pragmatic-engineer-2026-07-14-what-is-loop-engineering.md) — Ralph/`/goal` → **CCC brief**. — `rss` [+k165]
+- [Event Horizon Congress PM hearing Jul 21](sources/substack-rss-event-horizon-2026-07-14-congress-pm-hearing.md) — House Ag sports integrity → **gambling brief**. — `rss` [+k165]
+- [Outlier Weekly LLM wiki lint](sources/substack-rss-outlier-weekly-2026-07-14-llm-wiki-lint.md) — contribution rate + wikilint → **CCC brief**. — `rss` [+k165]
+- [Cemini PM LP vs copy capital decision](concepts/cemini-pm-lp-vs-copy-capital-decision.md) — empirical kill + DR conflicts. — concept [+k165]
+- [HL HLP vs user vaults](concepts/hyperliquid-hlp-vs-user-vaults.md) — vault economics ≠ Agent Wallet. — concept [+k165]
+- [oracle3](entities/tools/oracle3.md) — INTEGRATE-CANDIDATE stub. — entity [+k165]
+- [cryptuon/polybot](entities/tools/cryptuon-polybot.md) — ≠ ent0n29/polybot. — entity [+k165]
+- [Oddpool](entities/tools/oddpool.md) — low-competition LP filter. — entity [+k165]
+- Updates: copy-trading, lp-rewards (empirical kill), hyperliquid, openclaw×2, polybot disambig, wiki-ingest, polymarket/kalshi hearing
 
 ### k163-ingest (19)
 
