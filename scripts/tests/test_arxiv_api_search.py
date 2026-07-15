@@ -43,6 +43,8 @@ class TestArxivApiSearch(unittest.TestCase):
         self.assertIn("all:poker", q)
         self.assertIn("all:reinforcement", q)
         self.assertNotIn("research", q)
+        # Must not AND every token — that starves short windows.
+        self.assertIn(" OR ", q)
 
     def test_natural_query_or_branches(self):
         q = natural_query_to_arxiv_search(
@@ -50,6 +52,13 @@ class TestArxivApiSearch(unittest.TestCase):
             max_terms=3,
         )
         self.assertIn(" OR ", q)
+
+    def test_passthrough_atom_syntax(self):
+        q = natural_query_to_arxiv_search(
+            'all:poker AND all:reinforcement',
+            max_terms=4,
+        )
+        self.assertEqual(q, "all:poker AND all:reinforcement")
 
     def test_arxiv_id_from_entry_id(self):
         self.assertEqual(

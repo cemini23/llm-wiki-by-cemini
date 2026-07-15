@@ -6,22 +6,34 @@
 # Update `active_topics` when ROADMAP.md workstreams shift.
 # Brief routing: scripts/active_project_brief_targets.yaml
 # Overnight: non-duplicate arXiv PDFs land in `research to be indexed/` for morning "full ingest".
+#
+# Exa cost control (2026-07-15): after free credits, prefer free arXiv for papers.
+# Flip paper_mode to arxiv-first / exa-first only when you want paid enrichment.
 
 loop:
-  recency_window_days: 7
+  # 14d lookback — wiki/inbox dedupe still prevents re-fetch; 3d starved arXiv keyword search.
+  recency_window_days: 14
   max_results_per_query: 3
 
 fetch:
   enabled: true
-  max_downloads: 12
+  max_downloads: 8
   fetch_likely: false
-  max_results_per_paper_query: 5
+  max_results_per_paper_query: 3
 
-# Free fallback when Exa fails (402 quota, outage) — uses export.arxiv.org API
+# Free arXiv Atom API — primary paper discovery under exa.paper_mode=arxiv-only
 arxiv_fallback:
   enabled: true
   request_interval_seconds: 3
-  max_terms_per_query: 6
+  max_terms_per_query: 4
+
+# Pay-per-use Exa (~$7/1k searches). Default: zero Exa on paper+news lanes.
+exa:
+  news_enabled: false
+  paper_mode: arxiv-only  # arxiv-only | arxiv-first | exa-first | exa-only
+  include_domains:
+    - arxiv.org
+  search_type: auto  # never deep / deep-reasoning for digest
 
 # Co-primary (2026-06-20) — equal morning ingest priority for active codebases.
 # Route briefs per scripts/active_project_brief_targets.yaml; wiki always.
@@ -45,48 +57,40 @@ brief_routing_note: |
   wc-ticket-monitor → ../projects/wc-ticket-monitor/briefs/ (wiki-only unless ticket-resale hook).
 
 # arXiv / research-paper lane — deduped against wiki; PDFs → inbox when NEW
+# Use `arxiv_query` (Atom syntax) for reliable free discovery; `query` stays human-readable.
 paper_queries:
   - cluster: poker-agent-paper
     query: "research paper poker reinforcement learning opponent modeling imperfect information game"
-    category: research paper
-
-  - cluster: poker-hu-researcher-paper
-    query: "research paper heads-up poker Texas holdem sandbox benchmark agent evaluation TrueSkill"
+    arxiv_query: '(all:poker OR all:holdem OR all:"texas hold") AND (all:reinforcement OR all:CFR OR all:"opponent modeling" OR all:"imperfect information")'
     category: research paper
 
   - cluster: poker-mafp-fictitious-play-paper
     query: "research paper multi-agent fictitious play poker game theory equilibrium learning"
-    category: research paper
-
-  - cluster: poker-verifier-steering-paper
-    query: "research paper generator verifier LLM inference steering game agent poker holdem"
-    category: research paper
-
-  - cluster: pm-kalshi-paper
-    query: "research paper prediction market microstructure Polymarket Kalshi event contract market making"
+    arxiv_query: '(all:"fictitious play" OR all:MAFP) AND (all:poker OR all:game OR all:equilibrium OR all:"multi-agent")'
     category: research paper
 
   - cluster: options-index-paper
     query: "research paper index options LEAPS volatility surface mini-SPX XSP hedging"
+    arxiv_query: '(all:option OR all:options) AND (all:volatility OR all:hedging OR all:LEAPS OR all:"implied volatility")'
     category: research paper
 
   - cluster: genealogy-archive-paper
     query: "research paper genealogy archival handwriting recognition IIIF GEDCOM entity resolution historical records"
+    arxiv_query: 'all:genealogy OR all:GEDCOM OR all:IIIF OR all:"handwriting recognition" OR all:"historical document" OR all:HTR'
     category: research paper
 
   - cluster: agent-harness-paper
     query: "research paper LLM agent harness playtesting verification game development OR poker"
+    arxiv_query: '(all:agent AND (all:harness OR all:playtest OR all:verification)) OR (all:LLM AND all:agent AND (all:game OR all:poker))'
     category: research paper
 
   - cluster: nfl-dfs-projection-paper
     query: "research paper NFL daily fantasy sports player projection ownership simulation FanDuel DraftKings"
+    # Never bare "DFS" — matches depth-first search on arXiv.
+    arxiv_query: '(all:"daily fantasy" OR all:DraftKings OR all:FanDuel OR all:"fantasy football") AND (all:NFL OR all:projection OR all:ownership OR all:lineup)'
     category: research paper
 
-  - cluster: sports-ticket-resale-paper
-    query: "research paper secondary ticket market resale pricing sports event demand forecasting"
-    category: research paper
-
-# Web/news — listed in digest only (not auto-downloaded)
+# Web/news — digest only; gated by exa.news_enabled (default false = zero Exa news spend)
 queries:
   - cluster: poker-arena
     query: '"dev.fun" OR "arena pokerkit" OR poker agent challenge researcher track heads-up sandbox 2026'

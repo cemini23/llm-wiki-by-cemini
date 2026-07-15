@@ -1,20 +1,30 @@
 # Wiki-local daily digest config — copy to scripts/daily_research_config.yaml and edit topics.
 # Parent reference: OSINT scripts/daily_research_config.yaml
+#
+# Exa cost control (2026-07-15): default to free arXiv for papers; news lane off.
+# Search is billed ~$7/1k requests — prefer fewer queries over lower numResults.
 
 loop:
-  recency_window_days: 7
+  recency_window_days: 3
   max_results_per_query: 3
 
 fetch:
   enabled: true
   max_downloads: 5
   fetch_likely: false
-  max_results_per_paper_query: 5
+  max_results_per_paper_query: 3
 
 arxiv_fallback:
   enabled: true
   request_interval_seconds: 3
   max_terms_per_query: 6
+
+exa:
+  news_enabled: false
+  paper_mode: arxiv-only  # arxiv-only | arxiv-first | exa-first | exa-only
+  include_domains:
+    - arxiv.org
+  search_type: auto  # never deep / deep-reasoning for digest
 
 # EDIT: domain topics for this wiki only
 active_topics:
@@ -26,6 +36,7 @@ paper_queries:
     query: "research paper <your domain keywords>"
     category: research paper
 
+# Retained for re-enable; skipped while exa.news_enabled=false
 queries:
   - cluster: domain-news-1
     query: "<news query for this wiki>"
