@@ -7,6 +7,7 @@
 #   - daily_research_digest @ 08:00 local
 #   - wc_lp_safety weekly reminder
 #   - wiki_gap_detect weekly report
+#   - xsp_ops_loop hourly (Macro Charts → brain → queue → packets)
 #
 # Also runs setup_obsidian_vault.sh (local .obsidian chrome).
 #
@@ -24,7 +25,7 @@ for s in inbox_notify verify_wiki_sync daily_research_digest run_daily_research_
   check_daily_research_digest_due append_inbox_to_daily_sweep license_spot_check \
   post_tool_eval_license run_wc_lp_safety_reminder run_wiki_gap_detect \
   check_wc_lp_safety_due check_wiki_gap_detect_due notebooklm_export_brief \
-  setup_obsidian_vault; do
+  setup_obsidian_vault run_xsp_ops_loop; do
   chmod +x "$ROOT/scripts/${s}.sh" 2>/dev/null || true
 done
 chmod +x "$ROOT/scripts/daily_research_digest_run.py" \
@@ -177,7 +178,12 @@ echo "Installing launchd-safe morning agents (~/bin + ~/.cemini/launchagent payl
 bash "$ROOT/scripts/reinstall_morning_launchagents.sh"
 
 echo ""
+echo "Installing XSP ops loop (hourly Macro Charts → .local/ops/xsp/)..."
+write_agent "com.cemini.xsp-ops-loop" "run_xsp_ops_loop.sh" "3600"
+
+echo ""
 echo "Obsidian vault: wiki/.obsidian/ (run with --open to launch app)"
-echo "Logs: ~/Library/Logs/cemini-{inbox-watch,wiki-sync,daily-digest,federation-summary,workflow}.log"
+echo "Logs: ~/Library/Logs/cemini-{inbox-watch,wiki-sync,daily-digest,federation-summary,workflow,xsp-ops}.log"
 echo "Daily digest (any directory): cemini-daily-research-digest"
+echo "XSP ops loop (manual): bash scripts/run_xsp_ops_loop.sh --dry-run"
 echo "Optional webhook: echo 'https://...' > ~/.cemini/inbox-webhook.url"

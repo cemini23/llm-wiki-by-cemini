@@ -39,10 +39,11 @@ related:
   - sources/arxiv-toolbench-x-tool-unreliability-2606.25819-2026-06-26.md
   - concepts/toolbench-x-tool-reliability-hazards.md
   - entities/tools/toolbench-x.md
+  - concepts/nagus-ops-control-plane.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-06-26
+updated: 2026-07-16
 ---
 
 ## Relations
@@ -57,6 +58,7 @@ updated: 2026-06-26
 - @sources/arxiv-grep-agent-harness-2605-15184.md — retrieval/harness interaction (PwC, May 2026)
 - @concepts/cemini-ai-assistant.md — Cemini user-facing agent should map to harness-interface + verification layers
 - @sources/arxiv-self-healing-llm-agents-2605.06737.md — runtime failure detection + corrective replanning atop harness execution
+- @concepts/nagus-ops-control-plane.md — packetized ops brain/queue as harness write-back
 
 ## Raw Concept
 

@@ -8,10 +8,15 @@ related:
   - sources/newsletter-rss-pragmatic-engineer-2026-07-15-context-engineering-dex-horthy.md
   - concepts/coding-agent-substrate-steerability.md
   - concepts/wiki-tooling-evaluation.md
+  - concepts/nagus-ops-control-plane.md
 maturity: draft
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-16
 ---
+
+## Relations
+
+- @concepts/nagus-ops-control-plane.md — Cemini custom packetized pipeline (not a framework runtime)
 
 ## Narrative
 

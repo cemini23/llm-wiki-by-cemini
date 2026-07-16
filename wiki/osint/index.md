@@ -1719,6 +1719,7 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 - [Partial-observation stochastic control](concepts/partial-observation-stochastic-control.md) — K117: particle + DeepSets for latent-state control; REFERENCE for execution research. — concept, stochastic-control, k117
 - [Time-inconsistent stochastic control](concepts/time-inconsistent-stochastic-control.md) — K118: extended HJB equilibrium + DPG two-stage RL. — concept, stochastic-control, k118
 - [Agents All the Way Down methodology](concepts/agents-all-the-way-down-methodology.md) — K118: custom agent P1–P5; Turtle CLI + agent-tests-agent. — concept, llm-agents, k118
+- [Nagus ops control plane](concepts/nagus-ops-control-plane.md) — Packetized agents + write-back brain/queue; Cemini XSP MVP (`scripts/xsp_ops/`). — concept, llm-agents, xsp, ops
 - [Orchestration reward modeling (Orch-RM)](concepts/orchestration-reward-modeling-orch-rm.md) — K118: plan-level Bradley-Terry RM for MAS orchestrators. — concept, llm-agents, k118
 - [Tokenized fixed income price discovery](concepts/tokenized-fixed-income-price-discovery.md) — K118: admissibility + reconciliation before basis trades. — concept, tokenization, k118
 - [OrchRM](entities/tools/orchrm.md) — K118 stub; Wang-ML-Lab repo pending publish. — entity, tool, k118

@@ -1,11 +1,18 @@
 # Wiki Log
 
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 ---
 
 
+
+## [2026-07-16] query | Nagus ops control plane concept
+
+- **New:** `@concepts/nagus-ops-control-plane.md` — Signal/Nagus “working brain” pattern (Notion/Linear framing) + Cemini native MVP (`scripts/xsp_ops/`, LaunchAgent `com.cemini.xsp-ops-loop`)
+- **Backlinks:** xsp-lane-trading-framework · agents-all-the-way-down · twelve-factor-agents
+- **Index:** concepts row added
+- **Prod:** no brief — laptop scaffolding only; promote packets → `briefs/xsp-*` when content warrants
 
 ## [2026-07-15] ingest | K168 — GitHub Revenue Evaluation (local LLM / serverless / desktop)
 

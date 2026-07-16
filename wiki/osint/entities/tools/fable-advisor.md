@@ -9,9 +9,10 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - entities/tools/muse-spark-api.md
   - meta/fable-advisor-prod-touch-gate.md
+  - concepts/nagus-ops-control-plane.md
 maturity: draft
 created: 2026-07-11
-updated: 2026-07-12
+updated: 2026-07-16
 ---
 
 ## Relations
@@ -19,6 +20,7 @@ updated: 2026-07-12
 - @sources/eval-multi-wiki-repo-evaluation-strategy-2026-07-11.md — K159 Integrate
 - @concepts/xsp-lane-trading-framework.md — prod harness cost discipline
 - @meta/fable-advisor-prod-touch-gate.md — K159 prod-touch checklist
+- @concepts/nagus-ops-control-plane.md — Cursor plan + Grok implementer for XSP ops MVP
 
 ## Narrative
 

@@ -10,9 +10,10 @@ related:
   - concepts/conductor-orchestrator.md
   - concepts/code-as-agent-harness.md
   - sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md
+  - concepts/nagus-ops-control-plane.md
 maturity: draft
 created: 2026-06-16
-updated: 2026-06-16
+updated: 2026-07-16
 cross-wiki-source: "@ccc-wiki/briefs/2026-06-16_agents-all-the-way-down-handoff.md"
 ---
 
@@ -23,6 +24,7 @@ cross-wiki-source: "@ccc-wiki/briefs/2026-06-16_agents-all-the-way-down-handoff.
 - @concepts/mcp-tool-calling-eval-scaffold.md — P5 extends MAVEN smoke matrix
 - @concepts/conductor-orchestrator.md — CLI-composition corollary for multi-agent
 - @concepts/code-as-agent-harness.md — harness discipline cluster
+- @concepts/nagus-ops-control-plane.md — packetized ops loop (Turtle CLI roles)
 
 ## Raw Concept
 

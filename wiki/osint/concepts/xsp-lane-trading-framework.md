@@ -34,9 +34,10 @@ related:
   - entities/tools/fable-advisor.md
   - meta/fable-advisor-prod-touch-gate.md
   - sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md
+  - concepts/nagus-ops-control-plane.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 ## Relations
@@ -51,6 +52,7 @@ updated: 2026-07-15
 - @concepts/macro-charts-regime-signals.md — K155 Macro Charts Jul 10 regime reads
 - @sources/macro-charts-paid-forward-chat-2026-07-10.md — K155 USDJPY / CPI / SOX chat
 - @sources/substack-rss-capital-flows-2026-07-10-trading-investing-framework.md — K155 SOFR framework source
+- @concepts/nagus-ops-control-plane.md — laptop XSP ops loop (Macro Charts → brain/queue → packets)
 
 ## Raw Concept
 
