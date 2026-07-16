@@ -16,15 +16,17 @@ related:
   - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
   - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
   - sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md
+  - sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-30
+updated: 2026-07-16
 ---
 
 ## Relations
 
 - @concepts/rts-pathfinding-approaches.md — decision matrix; v0 stays on `AStarGrid2D`
 - @entities/projects/castle-sim.md — Tier 2 spike candidate when unit count grows
+- @sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md — CoFL-S learned sector fields (robotics VLN contrast; STEAL-FROM framing only)
 
 ## Raw Concept
 

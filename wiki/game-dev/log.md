@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-16] ingest | CoFL-S flow-field shelf + 4 arXiv-API rejects
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-16.md (1 ingest + 4 reject); archived; inbox cleared
+- Ingest: @sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md → @concepts/flow-field-pathfinding.md (**STEAL-FROM**; no Phase-0 — no public package)
+- Rejects: SKA recombination lines (astro); CR-Solver continuum robots; PASS pinching antennas; ocean water-wave drawing
+- Brief: `briefs/research/cofl-s-sector-flow-field-shelf.md` → rsync castle-sim; no poker/David/prod from this inbox
+- Local adopt: none
+- Sweep: @sweeps/2026-07-16-daily.md (arxiv-only paper lane; news disabled)
+
+---
+
 ## [2026-07-15] ingest | 5 arXiv rejects (4 re-drops + swarm MARL); Brickworks watch
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-15.md (all reject); archived; inbox cleared
