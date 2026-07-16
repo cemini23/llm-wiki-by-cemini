@@ -7,6 +7,15 @@ updated: 2026-07-16
 
 
 
+
+## [2026-07-16] ingest | K170 — tool-eval + 8 arXiv + Macro/RSS (Inkling Watch)
+
+- **Inbox (15):** Revenue Opportunity URL Analysis.docx + 8 arXiv + Macro Charts Jul 16 + Latent Space Inkling + Capital Flows re-industrialization + Event Horizon sims + Klement odd-lots + WuBlock HL Pre-IPO CXMT — archived egress-fi
+- **Sources (15) + entities (6):** turbovec Integrate; grok-build(+plugin) Integrate; git-secrets Extract; terrastories Extract; Inkling Watch (no weights)
+- **Phase-0:** `scripts/adopt_k170_phase0.sh`
+- **Briefs:** xsp Macro+reind (**scp**); pm sims+CXMT (**scp**); poker FP FBSDE; TipDrop/David git-secrets; CCC; cybersec; gambling; family Terrastories
+- **Local adopt (<500MB):** git-secrets, turbovec, grok-build(+plugin), terrastories shallow clones — **no Inkling**
+
 ## [2026-07-16] query | Nagus ops control plane concept
 
 - **New:** `@concepts/nagus-ops-control-plane.md` — Signal/Nagus “working brain” pattern (Notion/Linear framing) + Cemini native MVP (`scripts/xsp_ops/`, LaunchAgent `com.cemini.xsp-ops-loop`)

@@ -4,6 +4,7 @@ type: concept
 tags: [concept, macro, regime, newsletter, k90, k144]
 keywords: [macro-charts, risk-on, great-reversal, 2026, regime-shift]
 related:
+  - sources/macro-charts-paid-forward-2026-07-16-korea-sox-dxy-metals.md
   - sources/macro-charts-paid-forward-2026-07-15-sox-cpi-oil-metals.md
   - sources/macro-charts-paid-forward-2026-07-14-sox-oil-yen-bounce.md
   - sources/macro-charts-rss-2026-07-05-big-moves-getting-started.md
@@ -27,7 +28,7 @@ related:
   - sources/substack-rss-capital-flows-2026-07-08-liquidity-event-horizon.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 ## Relations

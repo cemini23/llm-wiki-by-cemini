@@ -4,6 +4,12 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - entities/tools/thinky-inkling.md
+  - entities/tools/terrastories.md
+  - entities/tools/git-secrets.md
+  - entities/tools/grok-build.md
+  - entities/tools/turbovec.md
+  - sources/eval-revenue-opportunity-url-analysis-2026-07-16.md
   - entities/tools/strawberry-graphql.md
   - entities/tools/fastify.md
   - entities/tools/espanso.md
@@ -126,7 +132,7 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 ## Relations

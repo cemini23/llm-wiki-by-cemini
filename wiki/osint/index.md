@@ -12,12 +12,37 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **732 canonical stubs** (K168 + K167 + K165)
+Total: **753 canonical stubs** (K170 + K168 + K167)
 
 
 
 
 
+
+
+### k170-ingest (21)
+
+- [Revenue Opportunity URL Analysis (2026-07-16)](sources/eval-revenue-opportunity-url-analysis-2026-07-16.md) — turbovec/grok-build/git-secrets/terrastories/Inkling. — `docx` [+k170]
+- [Jump-diffusion entropic option (2607.06355)](sources/arxiv-2607.06355-entropic-dynamics-jump-diffusion-option-2026-07-16.md) — xsp theory. — `pdf` [+k170]
+- [SDF from options (2607.08500)](sources/arxiv-2607.08500-sdf-from-options-equity-premium-2026-07-16.md) — xsp REFERENCE. — `pdf` [+k170]
+- [Fictitious play FBSDE (2607.08861)](sources/arxiv-2607.08861-fictitious-play-fbsde-stochastic-games-2026-07-16.md) — poker theory. — `pdf` [+k170]
+- [Tumor branching times (2607.11011)](sources/arxiv-2607.11011-tumor-branching-time-signatures-2026-07-16.md) — Pass thin. — `pdf` [+k170]
+- [Optimization Is Not All You Need (2607.11977)](sources/arxiv-2607.11977-optimization-is-not-all-you-need-2026-07-16.md) — CCC philosophy. — `pdf` [+k170]
+- [Ito-Wentzell Dupire SPDE (2607.12479)](sources/arxiv-2607.12479-ito-wentzell-dupire-spde-2026-07-16.md) — xsp LSV shelf. — `pdf` [+k170]
+- [Handwriting adversarial (2607.12500)](sources/arxiv-2607.12500-adversarial-online-handwriting-salience-2026-07-16.md) — cybersec. — `pdf` [+k170]
+- [Shor in Lean agentic (2607.14082)](sources/arxiv-2607.14082-shor-algorithm-lean-agentic-formalization-2026-07-16.md) — CCC/cyber. — `pdf` [+k170]
+- [Macro Charts Korea/SOX/DXY Jul 16](sources/macro-charts-paid-forward-2026-07-16-korea-sox-dxy-metals.md) — **xsp scp**. — `paid` [+k170]
+- [Latent Space Thinky Inkling](sources/newsletter-rss-latent-space-2026-07-16-thinky-inkling.md) — Watch. — `rss` [+k170]
+- [Capital Flows re-industrialization](sources/substack-rss-capital-flows-2026-07-16-reindustrialization-usa.md) — xsp context. — `rss` [+k170]
+- [Event Horizon sim markets](sources/substack-rss-event-horizon-2026-07-16-trade-on-simulations.md) — **pm scp**. — `rss` [+k170]
+- [Klement odd numbers](sources/substack-rss-klement-2026-07-16-odd-number-signals.md) — wiki-only. — `rss` [+k170]
+- [WuBlock HL Pre-IPO CXMT](sources/substack-rss-wublock-2026-07-16-hl-preipo-cxmt.md) — HL entity. — `rss` [+k170]
+- [Turbovec](entities/tools/turbovec.md) — Integrate xsp. — entity [+k170]
+- [Grok Build](entities/tools/grok-build.md) — Integrate CCC. — entity [+k170]
+- [git-secrets](entities/tools/git-secrets.md) — Extract. — entity [+k170]
+- [Terrastories](entities/tools/terrastories.md) — Extract family. — entity [+k170]
+- [Thinky Inkling](entities/tools/thinky-inkling.md) — Watch (no download). — entity [+k170]
+- [grok-build-plugin-cc](entities/tools/grok-build-plugin-cc.md) — Integrate CCC. — entity [+k170]
 
 ### k168-ingest (8)
 

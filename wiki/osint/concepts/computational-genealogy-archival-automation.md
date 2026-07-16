@@ -4,6 +4,7 @@ type: concept
 tags: [genealogy, archival, automation, italy, antenati, draft]
 keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double Metaphone, kinship graph]
 related:
+  - entities/tools/terrastories.md
   - sources/eval-github-repo-revenue-evaluation-2026-07-15.md
   - entities/tools/espanso.md
   - sources/arxiv-2607.09324-letting-data-speak-keyword-extraction-crowdsourced-2026-07-15.md
@@ -25,7 +26,7 @@ related:
   - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-15
+updated: 2026-07-16
 ---
 
 ## Relations

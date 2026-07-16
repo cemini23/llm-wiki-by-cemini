@@ -21,7 +21,11 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / genealogy** — Italian archival deep research (K153/K154) | `~/Desktop/family/research/` (private) | No — wiki methodology only |
 
-## Current state (2026-07-15 — K168)
+## Current state (2026-07-16 — K170)
+
+- **K170 ingest (2026-07-16)** — Full inbox: Revenue Opportunity URL Analysis.docx + 8 arXiv + Macro/RSS. **Integrate:** turbovec, grok-build(+plugin). **Extract:** git-secrets, terrastories. **Watch:** Thinky Inkling (no model download). **Briefs:** xsp+pm (**scp**); poker; TipDrop/David; CCC; cybersec; gambling; family. **Phase-0:** `adopt_k170_phase0.sh`. Local clones <<500MB excl. Inkling.
+
+## Prior state (2026-07-15 — K168)
 
 - **K168 ingest (2026-07-15)** — Additive: `GitHub Repository Revenue Evaluation.docx` (20 URLs; ≠ K163). **Integrate:** Middy (TipDrop), Espanso (family personal GPL-3). **Extract:** Bonsai, Undici, Prism. **Watch:** Fastify, Strawberry. **Briefs:** xsp (**scp**); TipDrop/David; CCC; cybersec; family private. **Phase-0:** `adopt_k168_phase0.sh`. Local: Bonsai+prism+middy clones. No ComfyUI.
 
