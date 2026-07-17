@@ -9,6 +9,10 @@ updated: 2026-07-17
 
 
 
+## [2026-07-17] ingest | K172b — Macro Charts AI selloff additive
+
+- Added Macro Charts Jul 17 (Taiex/TSM −7%, DeepSeek energy) → xsp brief refresh + scp
+
 ## [2026-07-17] ingest | K172 — Grok upload halt + Kalshi insider + CF view shift
 
 - **Inbox (6):** Latent Space Lila + PE Pulse Grok CLI upload + tl;dr sec #337 + Capital Flows×2 + Event Horizon teleprompter — archived egress-fi

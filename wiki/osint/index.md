@@ -28,7 +28,7 @@ Total: **761 canonical stubs** (K172 + K171 + K170)
 - Updates: pm-lp-backtest-cadence (v1 vs v2); phase0-spec; lp-rewards-farming; capital ADR; report-kit; promotion-gates; oddpool
 
 
-### k172-ingest (8)
+### k172-ingest (9)
 
 - [Latent Space Lila lab-as-data-center](sources/newsletter-rss-latent-space-2026-07-16-lila-lab-data-center.md) — science factory Context. — `rss` [+k172]
 - [PE Pulse Grok CLI upload](sources/newsletter-rss-pragmatic-engineer-2026-07-16-grok-cli-upload-incident.md) — **grok-build CONDITIONAL**. — `rss` [+k172]
@@ -37,6 +37,7 @@ Total: **761 canonical stubs** (K172 + K171 + K170)
 - [Capital Flows view/positions changed](sources/substack-rss-capital-flows-2026-07-16-market-view-positions-changed.md) — **xsp scp**. — `rss` [+k172]
 - [Event Horizon Kalshi teleprompter](sources/substack-rss-event-horizon-2026-07-16-kalshi-teleprompter-insider.md) — **pm scp**. — `rss` [+k172]
 - [Lila Sciences](entities/organizations/lila-sciences.md) — Watch. — entity [+k172]
+- [Macro Charts AI selloff Jul 17](sources/macro-charts-paid-forward-2026-07-17-ai-selloff-taiex-tsm.md) — Taiex/TSM −7% → **xsp**. — `paid` [+k172]
 - Updates: grok-build + plugin → CONDITIONAL privacy halt
 
 ### k170-ingest (21)
