@@ -4,6 +4,10 @@ type: concept
 tags: [concept, agent-harness, coding-agents, security, verification, k146]
 keywords: [substrate constraints, projection layer, docs CLI, backdoor audit, enforceable guardrails, MCP alternative]
 related:
+  - entities/organizations/lila-sciences.md
+  - sources/newsletter-rss-tldrsec-2026-07-16-337-harnessing-harnesses.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-16-grok-cli-upload-incident.md
+  - sources/newsletter-rss-latent-space-2026-07-16-lila-lab-data-center.md
   - sources/newsletter-rss-latent-space-2026-07-16-thinky-inkling.md
   - sources/arxiv-2607.11977-optimization-is-not-all-you-need-2026-07-16.md
   - entities/tools/thinky-inkling.md
@@ -20,7 +24,7 @@ related:
   - entities/tools/serena.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-16
+updated: 2026-07-17
 ---
 
 ## Relations

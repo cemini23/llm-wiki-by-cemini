@@ -10,13 +10,15 @@ related:
   - concepts/polymarket-copy-trading-strategy.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/polymarket-lp-comprehensive-backtest.md
   - concepts/hyperliquid-hlp-vs-user-vaults.md
   - entities/tools/oracle3.md
   - entities/tools/cryptuon-polybot.md
   - entities/tools/oddpool.md
+  - entities/tools/polymarket-quotebot.md
 maturity: draft
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-16
 clusters: [polymarket]
 ---
 
@@ -28,10 +30,12 @@ clusters: [polymarket]
 - @concepts/polymarket-copy-trading-strategy.md
 - @concepts/polymarket-lp-rewards-farming.md
 - @concepts/polymarket-lp-bot-phase0-spec.md
+- @concepts/polymarket-lp-comprehensive-backtest.md — v2 backtest is the restart gate
 - @concepts/hyperliquid-hlp-vs-user-vaults.md
 - @entities/tools/oracle3.md — Phase-0 pending INTEGRATE stub
 - @entities/tools/cryptuon-polybot.md — ≠ ent0n29/polybot
 - @entities/tools/oddpool.md — selective-LP filter candidate
+- @entities/tools/polymarket-quotebot.md — external measurement patterns
 
 ## Raw Concept
 

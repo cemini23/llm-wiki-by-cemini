@@ -20,6 +20,7 @@ related:
   - concepts/polymarket-lp-rewards-farming.md
   - entities/tools/ai-polymarket-agent.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/polymarket-lp-comprehensive-backtest.md
   - entities/tools/polymarket-near-resolution-bot.md
   - concepts/cemini-backtest-report-kit.md
   - concepts/world-cup-advance-market-bot-v1.md
@@ -31,11 +32,12 @@ related:
   - concepts/polymarket-preopen-queue-priority.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-29
+updated: 2026-07-16
 ---
 
 ## Relations
 
+- @concepts/polymarket-lp-comprehensive-backtest.md — v2 LP rewards backtest data plane
 - @entities/tools/polymarket-bridge-api.md — funding layer; its deposit flow ends with a CLOB `/balance-allowance/update` call
 - @entities/platforms/polymarket.md — execution venue
 - @entities/tools/polymarket-gamma-api.md — paired discovery-layer API (Gamma → token_id → CLOB)

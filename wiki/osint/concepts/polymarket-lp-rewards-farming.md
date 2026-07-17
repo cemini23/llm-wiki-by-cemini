@@ -38,11 +38,14 @@ related:
   - sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md
   - sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md
   - concepts/cemini-pm-lp-vs-copy-capital-decision.md
+  - concepts/polymarket-lp-comprehensive-backtest.md
   - entities/tools/oddpool.md
   - entities/tools/oracle3.md
+  - entities/tools/polymarket-quotebot.md
+  - entities/tools/yieldpilot.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-07-14
+updated: 2026-07-16
 clusters: [polymarket, market-making, yield-farming]
 ---
 
@@ -66,9 +69,12 @@ clusters: [polymarket, market-making, yield-farming]
 - @concepts/polymarket-sports-lp-operating-rules.md — sports cancel/fill rules (6–10h pre-kickoff)
 - @sources/gemini-polymarket-lp-rewards-world-cup-2026-05-29.md — WC LP economics deep-read
 - @concepts/cemini-pm-lp-vs-copy-capital-decision.md — K165 capital ADR + empirical sleeve kill
+- @concepts/polymarket-lp-comprehensive-backtest.md — v2 historical sim (Q_min + markout) before any restart
 - @sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md — Jul 2026 incentive / $1-day floor refresh
 - @entities/tools/oddpool.md — low-competition LP filter candidate
 - @entities/tools/oracle3.md — INTEGRATE-CANDIDATE stub (Phase-0 pending)
+- @entities/tools/polymarket-quotebot.md — measurement-rig steal-from
+- @entities/tools/yieldpilot.md — maxSpread-fraction heuristic
 
 ## Raw Concept
 

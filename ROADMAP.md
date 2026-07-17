@@ -21,7 +21,15 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / genealogy** — Italian archival deep research (K153/K154) | `~/Desktop/family/research/` (private) | No — wiki methodology only |
 
-## Current state (2026-07-16 — K170)
+## Current state (2026-07-17 — K172)
+
+- **K172 ingest (2026-07-17)** — RSS batch: Grok Build CLI full-repo upload → **CONDITIONAL halt** (overturns K170 Integrate); Kalshi teleprompter alleged insider → pm; Capital Flows view/positions shift → xsp; Lila Sciences Watch; tl;dr sec harness patterns → CCC/cybersec Context. **No new local clones.** Briefs scp xsp+pm; TipDrop STOP; CCC; cybersec; gambling.
+
+## Prior state (2026-07-16 — K171)
+
+- **K171 research (2026-07-16)** — Polymarket LP **comprehensive backtest v2** inventory: wiki concept + steal-from entities (quotebot, YieldPilot) + cadence/v1-vs-v2 notes. **Brief** `pm-2026-07-16_comprehensive-lp-backtest.md` → cemini-prod. Empirical LP kill stands; Phase B–E engine not yet coded. No LIVE_POST / no pivot flip.
+
+## Prior state (2026-07-16 — K170)
 
 - **K170 ingest (2026-07-16)** — Full inbox: Revenue Opportunity URL Analysis.docx + 8 arXiv + Macro/RSS. **Integrate:** turbovec, grok-build(+plugin). **Extract:** git-secrets, terrastories. **Watch:** Thinky Inkling (no model download). **Briefs:** xsp+pm (**scp**); poker; TipDrop/David; CCC; cybersec; gambling; family. **Phase-0:** `adopt_k170_phase0.sh`. Local clones <<500MB excl. Inkling.
 

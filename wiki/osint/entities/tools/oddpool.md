@@ -7,15 +7,18 @@ related:
   - sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/cemini-pm-lp-vs-copy-capital-decision.md
+  - concepts/polymarket-lp-comprehensive-backtest.md
 maturity: draft
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-16
 ---
 
 ## Relations
 
 - @sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md — selective-A filter candidate
 - @concepts/polymarket-lp-rewards-farming.md — LP market selection
+- @concepts/cemini-pm-lp-vs-copy-capital-decision.md — capital ADR context
+- @concepts/polymarket-lp-comprehensive-backtest.md — competition proxy in v2 sweep
 
 ## Raw Concept
 

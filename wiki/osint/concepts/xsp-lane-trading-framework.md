@@ -4,6 +4,8 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/substack-rss-capital-flows-2026-07-16-market-shift-and-risks.md
+  - sources/substack-rss-capital-flows-2026-07-16-market-view-positions-changed.md
   - entities/tools/turbovec.md
   - sources/arxiv-2607.06355-entropic-dynamics-jump-diffusion-option-2026-07-16.md
   - sources/arxiv-2607.08500-sdf-from-options-equity-premium-2026-07-16.md
@@ -42,7 +44,7 @@ related:
   - concepts/nagus-ops-control-plane.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-16
+updated: 2026-07-17
 ---
 
 ## Relations

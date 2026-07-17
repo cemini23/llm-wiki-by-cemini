@@ -20,6 +20,7 @@ related:
   - concepts/polymarket-lp-weather-market-discovery.md
   - concepts/polymarket-lp-weather-guard.md
   - concepts/cemini-backtest-report-kit.md
+  - concepts/polymarket-lp-comprehensive-backtest.md
   - meta/pm-lp-backtest-cadence.md
   - concepts/lp-algorithm-live-promotion-gates.md
   - concepts/world-cup-advance-market-bot-v1.md
@@ -30,7 +31,7 @@ related:
   - sources/stanford-avellaneda-stoikov-hf-mm-gr5-2018.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-07-14
+updated: 2026-07-16
 clusters: [polymarket, market-making, phase-0]
 ---
 
@@ -45,6 +46,7 @@ clusters: [polymarket, market-making, phase-0]
 - @concepts/polymarket-lp-weather-market-discovery.md — prod weather LP discover pass (orthogonal to this Phase-0 politics/geopolitics spec)
 - @concepts/polymarket-lp-weather-guard.md — pre-resolution exit when weather pass enabled
 - @concepts/cemini-backtest-report-kit.md — laptop LP spread sweep + HTML report before shadow-live
+- @concepts/polymarket-lp-comprehensive-backtest.md — v2 Q-score + tape + markout gate for capital restart
 - @meta/pm-lp-backtest-cadence.md — quarterly re-run ritual
 - @concepts/world-cup-advance-market-bot-v1.md — K82 sports/WC vertical implementing this architecture for FIFA advance markets
 - @concepts/polymarket-sports-lp-operating-rules.md — sports-specific cancel/fill invariants (6–10h pre-kickoff)

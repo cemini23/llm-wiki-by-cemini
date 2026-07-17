@@ -13,11 +13,12 @@ related:
   - concepts/shadow-trading-telemetry-accumulation.md
   - concepts/pnl-attribution-versioning.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/polymarket-lp-comprehensive-backtest.md
   - sources/algorithmic-trading-model-benchmarking-framework-2026-05-28.md
   - sources/shadow-trading-data-accumulation-strategies-2026-05-28.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-29
+updated: 2026-07-16
 ---
 
 ## Relations
@@ -28,6 +29,7 @@ updated: 2026-05-29
 - @concepts/shadow-trading-telemetry-accumulation.md — dual-track shadow data (K77)
 - @concepts/regime-conditioned-evaluation.md — DSR / multiple-testing overlap
 - @concepts/polymarket-lp-rewards-farming.md — Cemini LP workstream
+- @concepts/polymarket-lp-comprehensive-backtest.md — historical Q/markout evidence before promotion
 - @concepts/shadow-to-live-transition-engineering.md — shadow incubation mechanics
 - @concepts/pnl-attribution-versioning.md — `pm_lp_rewards` version bump at promotion
 - @concepts/polymarket-lp-bot-phase0-spec.md — Phase-0 spec alignment

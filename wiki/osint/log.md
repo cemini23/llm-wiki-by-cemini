@@ -1,12 +1,31 @@
 # Wiki Log
 
-updated: 2026-07-16
+updated: 2026-07-17
 ---
 
 ---
 
 
 
+
+
+## [2026-07-17] ingest | K172 — Grok upload halt + Kalshi insider + CF view shift
+
+- **Inbox (6):** Latent Space Lila + PE Pulse Grok CLI upload + tl;dr sec #337 + Capital Flows×2 + Event Horizon teleprompter — archived egress-fi
+- **Sources (6) + entity (1):** lila-sciences Watch; **OVERRIDE** grok-build(+plugin) Integrate→CONDITIONAL (full-repo GCS upload)
+- **Phase-0:** `scripts/adopt_k172_phase0.sh` — no new clones; no Inkling; no WasmForge
+- **Briefs:** xsp CF shift (**scp**); pm Kalshi insider (**scp**); TipDrop/David STOP grok CLI; CCC halt; cybersec; gambling; poker no-fit
+- **Local adopt:** none new (<500MB N/A)
+
+## [2026-07-16] research | K171 — Polymarket LP comprehensive backtest (v2)
+
+- **Federation scan:** OSINT wiki + CeminiSuite + cemini-prod + gambling/CCC + GitHub + Polymarket docs + social (low signal)
+- **Finding:** v1 laptop pilot = reward-proxy only; prod `pm-lp-{7,30}d` empty; sleeve KILLED (~+$0.94); K166 shadow canary active
+- **New:** `@concepts/polymarket-lp-comprehensive-backtest.md`; entities `polymarket-quotebot`, `yieldpilot`
+- **Updates:** pm-lp-backtest-cadence (v1 vs v2); phase0-spec; lp-rewards-farming; capital ADR; report-kit; promotion-gates; oddpool
+- **Brief:** `briefs/pm-2026-07-16_comprehensive-lp-backtest.md` → **scp cemini-prod**
+- **Social (opencli):** X + Reddit LP pass folded into concept — adverse selection / Jul-19 WC window / no public LP Q-backtester; `@polybacktest` ≠ LP
+- **Non-goals:** no LIVE_POST; no pivot un-KILL; engine code deferred to Phase B
 
 ## [2026-07-16] ingest | K170 — tool-eval + 8 arXiv + Macro/RSS (Inkling Watch)
 

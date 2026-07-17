@@ -15,6 +15,7 @@ related:
   - concepts/polymarket-api-reference.md
   - concepts/polymarket-lp-rewards-farming.md
   - concepts/polymarket-lp-bot-phase0-spec.md
+  - concepts/polymarket-lp-comprehensive-backtest.md
   - concepts/cemini-backtest-report-kit.md
   - concepts/world-cup-advance-market-bot-v1.md
   - entities/tools/world-cup-bot.md
@@ -22,11 +23,12 @@ related:
 
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-29
+updated: 2026-07-16
 ---
 
 ## Relations
 
+- @concepts/polymarket-lp-comprehensive-backtest.md — v2 LP rewards backtest data plane
 - @entities/platforms/polymarket.md — the platform Gamma exposes
 - @entities/tools/polymarket-clob-api.md — paired execution-layer API
 - @entities/tools/aulekator-polymarket-btc-bot.md — K44 NautilusTrader-based bot; market-discovery via Gamma is one of the possible adapter paths (Phase-0 G3)

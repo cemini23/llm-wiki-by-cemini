@@ -12,13 +12,32 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **753 canonical stubs** (K170 + K168 + K167)
+Total: **761 canonical stubs** (K172 + K171 + K170)
 
 
 
 
 
 
+
+### k171-research (federation — PM LP comprehensive backtest)
+
+- [Polymarket LP comprehensive backtest (v2)](concepts/polymarket-lp-comprehensive-backtest.md) — Q_min + tape fills + markout; phases B–E; gate for capital restart. — concept [+k171]
+- [polymarket-quotebot](entities/tools/polymarket-quotebot.md) — steal-from measurement rig (paper Q-share + 30m markout). — entity [+k171]
+- [YieldPilot](entities/tools/yieldpilot.md) — ~40% maxSpread farm heuristic. — entity [+k171]
+- Updates: pm-lp-backtest-cadence (v1 vs v2); phase0-spec; lp-rewards-farming; capital ADR; report-kit; promotion-gates; oddpool
+
+
+### k172-ingest (8)
+
+- [Latent Space Lila lab-as-data-center](sources/newsletter-rss-latent-space-2026-07-16-lila-lab-data-center.md) — science factory Context. — `rss` [+k172]
+- [PE Pulse Grok CLI upload](sources/newsletter-rss-pragmatic-engineer-2026-07-16-grok-cli-upload-incident.md) — **grok-build CONDITIONAL**. — `rss` [+k172]
+- [tl;dr sec #337 harnesses](sources/newsletter-rss-tldrsec-2026-07-16-337-harnessing-harnesses.md) — cybersec/CCC patterns. — `rss` [+k172]
+- [Capital Flows market shift teaser](sources/substack-rss-capital-flows-2026-07-16-market-shift-and-risks.md) — xsp. — `rss` [+k172]
+- [Capital Flows view/positions changed](sources/substack-rss-capital-flows-2026-07-16-market-view-positions-changed.md) — **xsp scp**. — `rss` [+k172]
+- [Event Horizon Kalshi teleprompter](sources/substack-rss-event-horizon-2026-07-16-kalshi-teleprompter-insider.md) — **pm scp**. — `rss` [+k172]
+- [Lila Sciences](entities/organizations/lila-sciences.md) — Watch. — entity [+k172]
+- Updates: grok-build + plugin → CONDITIONAL privacy halt
 
 ### k170-ingest (21)
 

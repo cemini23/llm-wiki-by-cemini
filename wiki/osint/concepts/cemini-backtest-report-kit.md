@@ -6,6 +6,7 @@ keywords: [backtest-report, parameter-sweep, plotly-html, pm-lp, hl-funding, kal
 related:
   - concepts/polymarket-lp-bot-phase0-spec.md
   - concepts/polymarket-lp-rewards-farming.md
+  - concepts/polymarket-lp-comprehensive-backtest.md
   - concepts/prediction-market-historical-analysis.md
   - concepts/cross-venue-arbitrage-pattern.md
   - concepts/lo-mackinlay-variance-ratio-test.md
@@ -24,12 +25,13 @@ related:
   - sources/trading-posts-compilation-38-2026-05-28.md
 maturity: core
 created: 2026-05-27
-updated: 2026-05-29
+updated: 2026-07-16
 ---
 
 ## Relations
 
 - @concepts/polymarket-lp-bot-phase0-spec.md — PM pilot
+- @concepts/polymarket-lp-comprehensive-backtest.md — v2 LP scoring/markout (report shell stays shared)
 - @concepts/cross-venue-arbitrage-pattern.md — Phase 3 divergence lab (not atomic arb)
 - @concepts/monte-carlo-permutation-test-mcpt.md — `scripts/backtest_common/mcpt_gate.py`
 - @entities/tools/arcticdb.md — Phase 2 data on librarian
