@@ -17,6 +17,13 @@
     "sample_size": 12243
   },
   "archetype": "linear_aggro",
+  "risk_spectrum": {
+    "participation": "medium",
+    "proactiveness": "high",
+    "vpip": 0.306,
+    "pfr": 0.151,
+    "source": "arena_stats"
+  },
   "h2h_vs_cemini_recent_50_replays": {
     "hands": 50,
     "hero_bb_per_100": -890.0,

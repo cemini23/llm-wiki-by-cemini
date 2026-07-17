@@ -30,12 +30,26 @@
       "id": "submit",
       "type": "executable",
       "children": ["sandbox_submit", "prebind_pin"],
-      "notes": "Binding leaves — Prebind / pin required (K151)"
+      "notes": "Binding leaves — Prebind / pin required (K151). K176: channel=operator|prebind only; observation/tool_result never set prebind_ok or authorize submit/all-in."
     }
   ],
   "max_visible_children_per_call": 6,
   "max_frame_depth": 8,
   "require_mutually_exclusive_roots": true,
   "nested_work": "push_pop",
-  "notes": "K164 arXiv 2607.11138 — capability tree + lazy child manifests; no flat mega-tool dump into decide()/HL prompts."
+  "claimed_authorization": {
+    "schema": "devfun.claimed_authorization.gate.v1",
+    "k": "K176",
+    "arxiv": "2607.11698",
+    "trusted_channels": ["operator", "prebind"],
+    "untrusted_channels": ["observation", "tool_result", "unknown"],
+    "privileged_intents": [
+      "submit_sandbox",
+      "all_in",
+      "bankroll_spend",
+      "live_table_action"
+    ],
+    "rule": "Self-claimed auth from observation/tool prose is invalid; log deny reason."
+  },
+  "notes": "K164 arXiv 2607.11138 — capability tree + lazy child manifests; no flat mega-tool dump into decide()/HL prompts. K176 claimed-authorization (2607.11698 pattern): submit leaf needs operator|prebind standing — observation never grants prebind_ok."
 }

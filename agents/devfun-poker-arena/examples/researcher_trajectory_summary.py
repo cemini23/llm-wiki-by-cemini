@@ -487,7 +487,7 @@ def compute_league_promotion_rubric_advisory(
 def load_deepsearch_trajectory_filter_config(
     path: str | Path | None = None,
 ) -> dict[str, Any]:
-    """Load DeepSearch generate→filter→mix advisory config (K161)."""
+    """Load DeepSearch generate→filter→mix advisory config (K161 + K139)."""
     cfg_path = Path(path) if path else DEFAULT_DEEPSEARCH_FILTER_PATH
     if not cfg_path.is_file():
         raise FileNotFoundError(f"deepsearch filter config not found: {cfg_path}")
@@ -495,6 +495,115 @@ def load_deepsearch_trajectory_filter_config(
     if not isinstance(data, dict):
         raise ValueError("deepsearch filter config must be a JSON object")
     return data
+
+
+def _unit_spot_class(unit: dict[str, Any]) -> str:
+    """Stable spot-class key for repeat-fail counting."""
+    if unit.get("spot_class"):
+        return str(unit["spot_class"])
+    street = str(unit.get("street") or "unknown").lower()
+    hole = str(unit.get("hole_key") or unit.get("hole") or "xx")
+    board = unit.get("board") or []
+    board_n = len(board) if isinstance(board, list) else 0
+    return f"{street}|{hole}|b{board_n}"
+
+
+def _unit_experience(unit: dict[str, Any]) -> str:
+    """Extract experience / lessons scaffold field (rename-tolerant)."""
+    scaffold = unit.get("scaffold") if isinstance(unit.get("scaffold"), dict) else {}
+    for key in ("experience", "lessons"):
+        val = unit.get(key)
+        if val is None and scaffold:
+            val = scaffold.get(key)
+        if val is None and scaffold and key == "experience":
+            val = scaffold.get("lessons")
+        if val is None:
+            continue
+        if isinstance(val, list):
+            text = " ".join(str(x) for x in val).strip()
+        else:
+            text = str(val).strip()
+        if text:
+            return text
+    return ""
+
+
+def staged_reflection_hint(
+    fail_count: int,
+    *,
+    config: dict[str, Any] | str | Path | None = None,
+) -> str:
+    """K139: first fail → soft hint; ≥2 → stronger grounded hint."""
+    cfg = (
+        load_deepsearch_trajectory_filter_config(config)
+        if config is None or isinstance(config, (str, Path))
+        else config
+    )
+    staged = cfg.get("staged_reflection") if isinstance(cfg.get("staged_reflection"), dict) else {}
+    repeat_min = int(staged.get("repeat_fail_min") or 2)
+    soft = str(staged.get("soft_hint") or "recheck sizing vs HUD")
+    strong = str(
+        staged.get("strong_hint")
+        or "cite concrete board/street leak or veto (grounded)"
+    )
+    if int(fail_count) >= repeat_min:
+        return strong
+    return soft
+
+
+def scaffold_block_for_brief(
+    *,
+    report_text: str = "",
+    leak_hint: str = "",
+    fail_count: int = 1,
+    config: dict[str, Any] | str | Path | None = None,
+) -> dict[str, Any]:
+    """Four-field DeepSearch scaffold for HL brief templates."""
+    cfg = (
+        load_deepsearch_trajectory_filter_config(config)
+        if config is None or isinstance(config, (str, Path))
+        else config
+    )
+    fields = cfg.get("scaffold_fields") if isinstance(cfg.get("scaffold_fields"), dict) else {}
+    # Paper names are source of truth; values are arena analogs.
+    completed = [
+        "stack/blind context from analyze",
+        "board class / street from report",
+        "HUD / risk_spectrum tag if present",
+    ]
+    todos = [
+        "patch one leak in cemini_decide.py",
+        "add/update regression spot if repeat",
+        "run pytest + HU sandbox gate",
+    ]
+    info_tokens: list[str] = []
+    for line in (report_text or "").splitlines()[:40]:
+        # Keep short evidence tokens only.
+        if any(k in line.lower() for k in ("street", "board", "hole", "action", "pot")):
+            info_tokens.append(line.strip()[:120])
+        if len(info_tokens) >= 4:
+            break
+    if not info_tokens:
+        info_tokens = ["(cite cards/street/action from analyze)"]
+
+    exp = ""
+    if fail_count >= int(cfg.get("scaffold_require_experience_after_fails") or 2):
+        exp = (
+            leak_hint
+            or "prior same-spot losses — require grounded lesson before mix"
+        )
+    elif leak_hint:
+        exp = f"(optional first-fail note) {leak_hint}"
+
+    return {
+        "completed_list": completed,
+        "todo_list": todos,
+        "experience": exp,
+        "information": info_tokens,
+        "field_map": fields,
+        "fail_count": fail_count,
+        "reflection_hint": staged_reflection_hint(fail_count, config=cfg),
+    }
 
 
 def build_failure_mining_units(rows: list[dict]) -> list[dict[str, Any]]:
@@ -642,12 +751,24 @@ def filter_deepsearch_units(
         else config
     )
     required = list(cfg.get("required_tags") or [])
+    exp_after = int(cfg.get("scaffold_require_experience_after_fails") or 2)
+    # Count failures per spot_class across the batch (order preserved).
+    spot_fail_counts: dict[str, int] = {}
+    for unit in units:
+        sc = _unit_spot_class(unit)
+        spot_fail_counts[sc] = spot_fail_counts.get(sc, 0) + 1
+
+    # Running count as we walk (for per-unit "after ≥2" semantics).
+    seen_spot: dict[str, int] = {}
     eligible: list[dict[str, Any]] = []
     rejected: list[dict[str, Any]] = []
     reasons: dict[str, int] = {}
 
     for unit in units:
         tags = infer_mining_tags(unit)
+        sc = _unit_spot_class(unit)
+        seen_spot[sc] = seen_spot.get(sc, 0) + 1
+        fail_n = seen_spot[sc]
         reason = None
         if tags.get("teacher_imitation_only"):
             reason = "teacher_imitation_only"
@@ -658,11 +779,18 @@ def filter_deepsearch_units(
             missing = [t for t in required if not tags.get(t)]
             if missing:
                 reason = "missing_required_tags"
+        # K139: after ≥2 same-spot fails, require non-empty experience scaffold.
+        if reason is None and fail_n >= exp_after:
+            if not _unit_experience(unit):
+                reason = "missing_experience_after_repeat_fails"
 
         record = {
             "hand_id": unit.get("hand_id"),
             "tags": tags,
             "reason": reason,
+            "spot_class": sc,
+            "spot_fail_index": fail_n,
+            "experience": _unit_experience(unit) or None,
         }
         if reason:
             rejected.append(record)
@@ -677,6 +805,8 @@ def filter_deepsearch_units(
         "n_units": len(units),
         "n_eligible": len(eligible),
         "n_rejected": len(rejected),
+        "spot_fail_counts": spot_fail_counts,
+        "advisory_only": bool(cfg.get("advisory_only", True)),
     }
 
 

@@ -8,9 +8,24 @@
   "drop_if": [
     "teacher_imitation_only",
     "missing_required_tags",
-    "ungrounded_reflection"
+    "ungrounded_reflection",
+    "missing_experience_after_repeat_fails"
   ],
+  "scaffold_fields": {
+    "completed_list": "verified_facts",
+    "todo_list": "next_checks",
+    "experience": "lessons",
+    "information": "evidence_tokens"
+  },
+  "scaffold_require_experience_after_fails": 2,
+  "staged_reflection": {
+    "first_fail": "soft",
+    "repeat_fail_min": 2,
+    "repeat_fail": "strong_grounded",
+    "soft_hint": "recheck sizing vs HUD",
+    "strong_hint": "cite concrete board/street leak or veto (grounded)"
+  },
   "mix_eligible_min_pct": 0.0,
   "advisory_only": true,
-  "notes": "DeepSearch-Evolve arXiv 2607.07820 loop shape only (Watch) — generate→filter→mix; no teacher distillation until env lands."
+  "notes": "DeepSearch-Evolve arXiv 2607.07820 (Watch) generate→filter→mix + K139 scaffold/staged-reflection delta. required_tags remain K161 source of truth. No teacher distillation."
 }

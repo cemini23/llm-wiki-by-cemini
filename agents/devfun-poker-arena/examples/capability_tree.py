@@ -2,6 +2,10 @@
 
 Hierarchical skill stack (2607.11138): top domains must not overlap; per-call
 visible children capped; nested work is push/pop. Advisory by default.
+
+K176: submit leaf also requires claimed-authorization standing from
+``operator`` or ``prebind`` channel — observation/tool prose never sets
+``prebind_ok`` or authorizes submit/bankroll binds.
 """
 from __future__ import annotations
 
@@ -9,6 +13,8 @@ import json
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
+
+from claimed_authorization import authorize, prebind_ok_from_channel
 
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG_PATH = _REPO_ROOT / "config" / "hu_capability_tree.json"
@@ -117,8 +123,10 @@ class CapabilityFrame:
 class CapabilityFrameStack:
     """LIFO nested-work stack (K164). Push for sub-analysis; pop returns parent.
 
-    Binding leaves (`submit`) require ``prebind_ok=True`` — hierarchy does not
-    bypass Prebind / verifier steals.
+    Binding leaves (`submit`) require ``prebind_ok=True`` and a trusted
+    auth channel (``operator`` | ``prebind``) — hierarchy does not bypass
+    Prebind / verifier steals (K164 + K176 claimed-authorization).
+    Observation text never sets ``prebind_ok``.
     """
 
     config: dict[str, Any] = field(default_factory=dict)
@@ -147,14 +155,45 @@ class CapabilityFrameStack:
         label: str = "",
         meta: dict[str, Any] | None = None,
         prebind_ok: bool = False,
+        channel: str | None = None,
     ) -> CapabilityFrame:
         ids = set(domain_ids(self.config))
         if domain_id not in ids:
             raise KeyError(f"unknown domain: {domain_id}")
-        if domain_id in _BINDING_DOMAINS and not prebind_ok:
-            raise PermissionError(
-                "submit domain requires prebind_ok=True (K164 leaf governance)"
+        if domain_id in _BINDING_DOMAINS:
+            # Default channel when prebind_ok already set by operator path.
+            auth_channel = channel if channel is not None else (
+                "prebind" if prebind_ok else "unknown"
             )
+            # Observation/tool/unknown never invent prebind standing.
+            effective_prebind = bool(prebind_ok) and prebind_ok_from_channel(
+                channel=auth_channel,
+                operator_prebind=True,
+            )
+            auth = authorize(
+                "submit_sandbox",
+                channel=auth_channel,
+                evidence={
+                    "prebind_ok": prebind_ok,
+                    "effective_prebind": effective_prebind,
+                    **(meta or {}),
+                },
+            )
+            if not auth["ok"]:
+                raise PermissionError(
+                    f"submit claimed-auth deny: {auth['reason']} "
+                    f"(channel={auth['channel']})"
+                )
+            if not effective_prebind:
+                raise PermissionError(
+                    "submit domain requires prebind_ok=True from "
+                    "operator/prebind channel (K164+K176 leaf governance)"
+                )
+            meta = {
+                **dict(meta or {}),
+                "auth_channel": auth["channel"],
+                "claimed_auth": auth,
+            }
         if focus is not None:
             kids = visible_children(domain_id, config=self.config)
             if focus not in kids:

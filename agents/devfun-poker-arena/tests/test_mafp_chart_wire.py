@@ -156,3 +156,15 @@ def test_resolve_path_prefers_env_override(monkeypatch, tmp_path):
     p.write_text('{"ranges": {}}', encoding="utf-8")
     monkeypatch.setenv("CEMINI_MAFP_CHART_PATH", str(p))
     assert resolve_mafp_chart_path() == p
+
+
+def test_k170_mafp_provenance_cites_fbsde_theory_shelf():
+    """Repo chart loads; notes cite arXiv 2607.08861 (docs only — no FBSDE hot path)."""
+    chart = ROOT / "research" / "mafp_hu_chart.json"
+    data = json.loads(chart.read_text(encoding="utf-8"))
+    prov = data.get("solver_provenance") or {}
+    assert prov.get("solver_family") == "mafp"
+    notes = str(prov.get("notes") or "")
+    assert "2607.08861" in notes
+    shelf = ROOT / "references" / "mafp-fbsde-theory-shelf.md"
+    assert shelf.is_file()

@@ -33,10 +33,15 @@ Smoke: `simulate_hu_researcher_nested_session()` (also written by `cemini_hl_bri
 2. Cap visible children at `max_visible_children_per_call` (default 6).
 3. Eval graders prefer **execution / rule-based** over model self-score (pairs K162).
 4. `submit` never shares a root with `vendors`-style fetch domains — keep exclusive.
+5. **K176 claimed-authorization:** `submit` requires `channel=operator|prebind`
+   **and** `prebind_ok=True`. Observation / tool-result / unknown channels
+   never grant standing — deny with logged reason
+   (`claim came from observation, not operator`). See
+   `references/claimed-authorization-guard.md`.
 
 ## Check
 
 ```bash
-uv run pytest tests/test_k164_capability_tree.py -q
+uv run pytest tests/test_k164_capability_tree.py tests/test_claimed_authorization.py -q --tb=line
 uv run python -c "from capability_tree import simulate_hu_researcher_nested_session; print(simulate_hu_researcher_nested_session()['ok'])"
 ```

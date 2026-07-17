@@ -21,6 +21,8 @@ arXiv 2607.08861: first convergence analysis of fictitious play for fully couple
 1. Cite as theoretical backing that FP iteration can converge even when coupled — supports continuing MAFP chart bake (solver-bake track).
 2. Do **not** add online FBSDE solves to `decide()` hot path.
 
+**Shelf (done):** `references/mafp-fbsde-theory-shelf.md` + `research/mafp_hu_chart.json` `solver_provenance.notes` cite `2607.08861`.
+
 ### Out of scope
 
 - Tumor phylogenetics, Shor/Lean, handwriting attacks
@@ -28,3 +30,4 @@ arXiv 2607.08861: first convergence analysis of fictitious play for fully couple
 ## Sources
 
 - wiki/sources/arxiv-2607.08861-fictitious-play-fbsde-stochastic-games-2026-07-16.md
+- references/mafp-fbsde-theory-shelf.md

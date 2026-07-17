@@ -352,7 +352,7 @@
   "solver_provenance": {
     "equilibrium_selection": "time_average",
     "nash_set_singleton": null,
-    "notes": "K124 MAFP stance fictitious play; not a tabular NE solver",
+    "notes": "K124 MAFP stance fictitious play; not a tabular NE solver. K170 theory shelf arXiv 2607.08861 (FP convergence under FBSDE coupling) — offline bake only; no FBSDE on Arena decide()",
     "schema": "solver-provenance-v1",
     "solver_family": "mafp",
     "solver_version": "1",

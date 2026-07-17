@@ -25,6 +25,15 @@ def test_guard_s_zero_on_expired_deadline():
     assert _guard_s(0.0) == 0.0
 
 
+def test_guard_s_v2_cap_and_scale():
+    # Long deadline: hard-cap 4.5 (was up to 7.5).
+    assert _guard_s(10.0) == pytest.approx(4.5)
+    # Mid deadline: min(d-0.5, 4.5, 0.6*d)
+    assert _guard_s(5.0) == pytest.approx(min(4.5, 0.6 * 5.0, 5.0 - 0.5))
+    # Very short: no positive guard when headroom exhausted.
+    assert _guard_s(0.3) == 0.0
+
+
 def test_emergency_action_prefers_check_then_fold():
     table = {"allowedActions": {"availableActions": ["check", "fold"], "canCheck": True}}
     assert _emergency_action(table)["action"] == "check"

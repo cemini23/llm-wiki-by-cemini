@@ -43,6 +43,31 @@ if _ENGINE in ("cemini", "cemini_decide", "default"):
 
 _USE_SIGALRM = hasattr(signal, "SIGALRM")
 
+_EXAMPLES = Path(__file__).resolve().parent.parent / "examples"
+if _EXAMPLES.is_dir() and str(_EXAMPLES) not in sys.path:
+    sys.path.insert(0, str(_EXAMPLES))
+
+
+def _warm_cemini_caches() -> None:
+    """Preload MAFP overlay + postflop buckets so first Action is not cold I/O."""
+    if _ENGINE not in ("cemini", "cemini_decide", "default"):
+        return
+    try:
+        from research_static_chart import _hu_chart_for_lookup  # noqa: WPS433
+
+        _hu_chart_for_lookup()
+    except Exception:
+        pass
+    try:
+        from postflop_buckets import get_buckets_payload  # noqa: WPS433
+
+        get_buckets_payload()
+    except Exception:
+        pass
+
+
+_warm_cemini_caches()
+
 
 class _DecideTimeout(Exception):
     """Wall-clock guard fired before decide() returned."""
@@ -82,13 +107,22 @@ def _deadline_s(table: dict) -> float:
         floor = float(os.environ.get("CEMINI_DEADLINE_FLOOR_S", "2.0"))
     except ValueError:
         floor = 2.0
-    return max(floor, min(10.0, float(os.environ.get("CEMINI_DECIDE_DEADLINE_S", "8.0"))))
+    # Timeout harden v2: missing Arena deadline → assume 5s, not 8s.
+    return max(floor, min(10.0, float(os.environ.get("CEMINI_DECIDE_DEADLINE_S", "5.0"))))
 
 
 def _guard_s(deadline_s: float) -> float:
+    """Earlier SIGALRM so emergency check/fold trips before Arena 422.
+
+    Leaves 0.5s headroom, hard-caps wall time at 4.5s, and scales with
+    0.6 * deadline so mid budgets still bail early.
+    """
     if deadline_s <= 0:
         return 0.0
-    return max(0.5, min(deadline_s - 0.35, 7.5))
+    raw = min(deadline_s - 0.5, 4.5, 0.6 * deadline_s)
+    if raw <= 0:
+        return 0.0
+    return max(0.35, raw)
 
 
 def _emergency_action(table: dict) -> dict[str, Any]:

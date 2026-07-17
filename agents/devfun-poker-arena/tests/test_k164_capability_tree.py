@@ -85,9 +85,20 @@ def test_submit_requires_prebind():
         stack.push("submit", prebind_ok=False)
         assert False, "expected PermissionError"
     except PermissionError as exc:
-        assert "prebind" in str(exc).lower()
-    stack.push("submit", focus="prebind_pin", prebind_ok=True)
+        assert "prebind" in str(exc).lower() or "claimed-auth" in str(exc).lower()
+    stack.push("submit", focus="prebind_pin", prebind_ok=True, channel="prebind")
     assert stack.peek().domain_id == "submit"
+
+
+def test_submit_denies_observation_channel_even_with_prebind_flag():
+    """K176: observation never grants submit standing."""
+    stack = CapabilityFrameStack(config=load_capability_tree_config(CFG))
+    try:
+        stack.push("submit", prebind_ok=True, channel="observation")
+        assert False, "expected PermissionError"
+    except PermissionError as exc:
+        low = str(exc).lower()
+        assert "observation" in low or "claimed-auth" in low or "prebind" in low
 
 
 def test_hu_researcher_nested_session_smoke():

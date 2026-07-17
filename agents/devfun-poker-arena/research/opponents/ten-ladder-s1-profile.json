@@ -17,6 +17,13 @@
     "sample_size": 1849
   },
   "archetype": "wide_passive",
+  "risk_spectrum": {
+    "participation": "high",
+    "proactiveness": "low",
+    "vpip": 0.516,
+    "pfr": 0.0,
+    "source": "arena_stats"
+  },
   "h2h_vs_cemini_recent_100": {
     "tables": 95,
     "hero_bb_per_100": -218.42,

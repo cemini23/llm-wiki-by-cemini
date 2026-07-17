@@ -60,6 +60,81 @@ def _regression_inventory() -> str:
     return "\n".join(lines) + "\n"
 
 
+def _spot_fail_count_from_report(report: str) -> int:
+    """Heuristic: count loss markers / repeated #delta lines as fail count."""
+    n = 0
+    for line in (report or "").splitlines():
+        s = line.strip().lower()
+        if "delta=" in s or s.startswith("#") and "loss" in s:
+            n += 1
+        elif "chip_delta" in s and "-" in s:
+            n += 1
+    return max(1, n) if report.strip() else 1
+
+
+def _scaffold_and_reflection_sections(
+    *,
+    report_text: str,
+    top_leak_hint: str,
+    fail_count: int,
+) -> str:
+    """K139: four-field scaffold + staged reflection strength."""
+    try:
+        from researcher_trajectory_summary import (
+            load_deepsearch_trajectory_filter_config,
+            staged_reflection_hint,
+            scaffold_block_for_brief,
+        )
+
+        cfg = load_deepsearch_trajectory_filter_config()
+        scaffold = scaffold_block_for_brief(
+            report_text=report_text,
+            leak_hint=top_leak_hint,
+            fail_count=fail_count,
+            config=cfg,
+        )
+        hint = staged_reflection_hint(fail_count, config=cfg)
+    except Exception:
+        scaffold = {
+            "completed_list": ["(fill verified facts: stack, board class, HUD tag)"],
+            "todo_list": ["(next decide() checks / regression spot)"],
+            "experience": "" if fail_count < 2 else "(required: prior same-spot lessons)",
+            "information": ["(evidence tokens: cards/street/action)"],
+        }
+        strength = "soft" if fail_count < 2 else "strong_grounded"
+        hint = (
+            "recheck sizing vs HUD"
+            if strength == "soft"
+            else "cite concrete board/street leak or veto (grounded)"
+        )
+
+    exp = scaffold.get("experience") or ""
+    exp_note = (
+        "REQUIRED after ≥2 same-spot fails"
+        if fail_count >= 2
+        else "optional on first fail"
+    )
+    return f"""### DeepSearch scaffold (K139 / K161 delta)
+
+Four-field memory before mix (advisory). Map: completed_list / todo_list /
+experience / information. Drop units lacking `experience` after ≥2 same-spot fails.
+
+| Field | Content |
+|-------|---------|
+| completed_list | {scaffold.get("completed_list")} |
+| todo_list | {scaffold.get("todo_list")} |
+| experience ({exp_note}) | {exp or "(empty)"} |
+| information | {scaffold.get("information")} |
+
+Staged reflection (fail_count≈{fail_count}): **{hint}**
+
+### Belief audit (K167)
+
+See auto-appended block below when parse succeeds. Tags:
+`harmful_mistake` | `justified_override` | `strategic`. Batch-improve only.
+"""
+
+
 def build_brief(
     *,
     report_text: str,
@@ -67,6 +142,7 @@ def build_brief(
     match_id: str,
     top_leak_hint: str,
     cap_slice: str = "(capability tree slice unavailable)",
+    belief_audit_md: str = "",
 ) -> str:
     today = date.today().isoformat()
     sha = _git_short_sha()
@@ -78,6 +154,16 @@ def build_brief(
 
     reg = _regression_inventory()
     summary_leak = top_leak_hint or "See analyze worst-hands section — pick #1 leak."
+    fail_count = _spot_fail_count_from_report(report_text)
+    scaffold_md = _scaffold_and_reflection_sections(
+        report_text=report_text,
+        top_leak_hint=summary_leak,
+        fail_count=fail_count,
+    )
+    belief_section = belief_audit_md or (
+        "### Belief audit (K167)\n\n"
+        "(no belief/taken pair parsed — fill manually from analyze)\n"
+    )
 
     return f"""---
 title: "Cemini HL analyst round {round_n} — cemini_decide patch"
@@ -123,6 +209,10 @@ Self-play bb/100 is **informational** — do not optimize decide() for self-play
 - Edit `cemini_decide.py` only; smallest diff.
 - If leak repeats after a prior fix, add/update `tests/fixtures/regression_spots.py`.
 - Do not widen EP opens to "fix" maniac tables — tighten trash, fix HUD cold-start.
+
+{scaffold_md}
+
+{belief_section}
 
 ### GenomeDiff (K155 — required before ship)
 
@@ -175,6 +265,8 @@ Active slice (example after nested return):
 - @wiki/entities/bots/cemini-devfun-poker-agent.md
 - `docs/TESTING-CEMINI.md`
 - @osint-wiki/concepts/cemini-knowledge-application-architecture.md — brief→verify→deploy pattern
+- `references/deepsearch-trajectory-filter.md` — K161 + K139 scaffold delta
+- `examples/belief_deviation_audit.py` — K167 belief audit
 
 ## Implementation status
 
@@ -213,6 +305,31 @@ def main(argv: list[str] | None = None) -> int:
     report_text = report_path.read_text(encoding="utf-8")
     hint = _top_leak_from_report(report_text)
 
+    belief_audit_md = ""
+    belief_block: dict | None = None
+    try:
+        from belief_deviation_audit import (
+            append_belief_deviation_jsonl,
+            build_belief_audit,
+            extract_belief_from_report,
+            format_belief_audit_markdown,
+        )
+
+        parsed = extract_belief_from_report(report_text)
+        belief_block = build_belief_audit(
+            belief_action=parsed.get("belief_action") or "unknown",
+            taken_action=parsed.get("taken_action") or "unknown",
+            belief_source="chart_or_hud",
+            outcome="loss",
+            note=hint or "",
+            hand_id=f"hl-round-{args.round}",
+        )
+        belief_audit_md = format_belief_audit_markdown(belief_block)
+        jpath = append_belief_deviation_jsonl(belief_block)
+        print(f"wrote belief_deviation jsonl → {jpath}")
+    except Exception as exc:  # pragma: no cover
+        print(f"[hl-brief] belief-audit skip: {exc}", file=sys.stderr)
+
     cap_slice = "(capability tree slice unavailable)"
     try:
         from capability_tree import (
@@ -245,6 +362,7 @@ def main(argv: list[str] | None = None) -> int:
         match_id=args.match or "(from env ARENA_LOBBY_COMPETITION_ID)",
         top_leak_hint=hint,
         cap_slice=cap_slice,
+        belief_audit_md=belief_audit_md,
     )
 
     out = Path(args.out)
@@ -255,6 +373,7 @@ def main(argv: list[str] | None = None) -> int:
     # K163: HL failure trace as message DAG (messages stored once, nodes ref)
     try:
         from message_dag_trace import build_hl_failure_dag
+        import json as _json
 
         turns = [
             {
@@ -273,6 +392,14 @@ def main(argv: list[str] | None = None) -> int:
                 "tag": "hl",
             },
         ]
+        if belief_block is not None:
+            turns.append(
+                {
+                    "role": "system",
+                    "content": _json.dumps({"belief_audit": belief_block}),
+                    "tag": "belief_audit",
+                }
+            )
         dag = build_hl_failure_dag(turns, layer="harness")
         dag_path = out.with_suffix(".dag.json")
         dag.save(dag_path)

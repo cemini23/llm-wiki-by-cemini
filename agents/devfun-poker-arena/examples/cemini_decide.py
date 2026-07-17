@@ -436,7 +436,7 @@ def _build(
     out = _build_agent(action, amount, table, allowed, eq=eq, po=po, msg=msg)
     hole = _hole_cards_from_table(table)
     board = list(table.get("boardCards") or [])
-    sims = 500 if _CURRENT_DECIDE_DEADLINE_S > 5 else 200
+    sims = 250 if _CURRENT_DECIDE_DEADLINE_S > 5 else 150
     return _apply_trajectory_bound_veto(table, allowed, out, hole, board, eq, po, sims)
 
 # Preflop trash facing a raise — fold unless equity clearly covers price.
@@ -783,10 +783,21 @@ def _log_preflop_decision(
         pass
 
 
-def retrieve_solver_context(table: dict) -> dict:
-    """Preflop chart + PokerSkill hints + skill-binding labels for decide()."""
+def retrieve_solver_context(
+    table: dict,
+    *,
+    tight_deadline: bool = False,
+) -> dict:
+    """Preflop chart + PokerSkill hints + skill-binding labels for decide().
+
+    When ``tight_deadline`` is True (Arena wall-clock <5s), skip optional
+    enrichment that can block (PokerSkill, chat intel, HL style I/O,
+    jackpot-adjacent extras). Chart/MAFP/postflop buckets stay O(1)
+    cached lookups.
+    """
     chart = research_static_chart(table)
-    ps = retrieve_pokerskill_hints(table)
+    # Timeout harden v2: skip PokerSkill under tight clock (deadline <5s).
+    ps = retrieve_pokerskill_hints(table) if not tight_deadline else {}
     self_seat_num = table.get("selfSeatNumber")
     seats = table.get("seats") or []
     self_seat = next((s for s in seats if s.get("seatNumber") == self_seat_num), {})
@@ -794,7 +805,7 @@ def retrieve_solver_context(table: dict) -> dict:
     board = list(table.get("boardCards") or [])
     street = (table.get("street") or "Preflop").lower()
     hc = _hand_class(hole) or chart.get("hand_class") or ""
-    scenario = ps.get("scenario") or _scenario_label(street, board, hc)
+    scenario = (ps.get("scenario") if ps else None) or _scenario_label(street, board, hc)
 
     ctx: dict[str, Any] = {
         "preflop_chart": {
@@ -810,24 +821,27 @@ def retrieve_solver_context(table: dict) -> dict:
             "scenario": scenario,
         },
     }
+    if tight_deadline:
+        ctx["tight_deadline"] = True
     if chart:
         ctx.update(chart)
     oh = build_opponent_hud(table)
     if oh:
         ctx["opponent_hud"] = enrich_hud_from_table(oh, table)
-    try:
-        from hl_runtime_config import load_style_overrides, is_kill_switch_active
-        ctx["hl_style_overrides"] = load_style_overrides()
-        if is_kill_switch_active():
-            ctx["kill_switch"] = True
-    except Exception:
-        pass
-    try:
-        from table_chat_intel import extract_chat_intel
+    if not tight_deadline:
+        try:
+            from hl_runtime_config import load_style_overrides, is_kill_switch_active
+            ctx["hl_style_overrides"] = load_style_overrides()
+            if is_kill_switch_active():
+                ctx["kill_switch"] = True
+        except Exception:
+            pass
+        try:
+            from table_chat_intel import extract_chat_intel
 
-        ctx["chat_intel"] = extract_chat_intel(table)
-    except Exception:
-        pass
+            ctx["chat_intel"] = extract_chat_intel(table)
+        except Exception:
+            pass
     if os.environ.get("CEMINI_RESEARCHER_MODE", "").strip().lower() in (
         "1", "true", "yes", "on",
     ):
@@ -847,7 +861,7 @@ def retrieve_solver_context(table: dict) -> dict:
             ctx.pop("eval_panel_mode", None)
     elif table_fmt in ("6max", "6-max", "six"):
         ctx["table_format"] = "6max"
-    # WP2: O(1) postflop bucket slice (strength bin resolved in decide via equity)
+    # Postflop buckets are O(1) cached — safe under tight deadline after warmup.
     if street != "preflop":
         try:
             sf = build_solver_frequencies_context(
@@ -901,11 +915,31 @@ def decide(
         return _build("fold", None, table, allowed, eq=0.0, po=1.0,
                       msg="clock pressure — fold")
 
+    # Arena static timeout class (v2): tight band widened to <5s so mid
+    # remaining budgets still skip optional enrichment + use lower sims.
+    tight_deadline = deadline_s < 5.0
     if research_context is None:
-        research_context = retrieve_solver_context(table)
+        research_context = retrieve_solver_context(
+            table, tight_deadline=tight_deadline,
+        )
     ctx = research_context
     pot_odds = call_chips / max(pot + call_chips, 1) if call_chips else 0.0
-    sims = 500 if deadline_s > 5 else (350 if deadline_s > 3 else 200)
+    # Sim budget v2: >5s → 250; ≥3s → 150; <3s → CEMINI_TIGHT_DEADLINE_SIMS (40).
+    if deadline_s > 5:
+        try:
+            sims = max(50, int(os.environ.get("CEMINI_LOOSE_DEADLINE_SIMS", "250")))
+        except ValueError:
+            sims = 250
+    elif deadline_s >= 3:
+        try:
+            sims = max(30, int(os.environ.get("CEMINI_MEDIUM_DEADLINE_SIMS", "150")))
+        except ValueError:
+            sims = 150
+    else:
+        try:
+            sims = max(20, int(os.environ.get("CEMINI_TIGHT_DEADLINE_SIMS", "40")))
+        except ValueError:
+            sims = 40
     equity = estimate_equity(hole, board, sims=sims, deadline_s=deadline_s)
 
     chart = ctx.get("preflop_chart") or {}
@@ -923,20 +957,22 @@ def decide(
     if finale_exploit_enabled():
         hud = overlay_finale_hud(hud, ctx, table)
     ctx["opponent_hud"] = hud
-    jp_out = maybe_hunt_action(
-        table,
-        allowed,
-        available,
-        hole,
-        board,
-        street,
-        pot,
-        call_chips,
-        research_context=ctx,
-        deadline_s=deadline_s,
-    )
+    jp_out = None
+    if not tight_deadline:
+        jp_out = maybe_hunt_action(
+            table,
+            allowed,
+            available,
+            hole,
+            board,
+            street,
+            pot,
+            call_chips,
+            research_context=ctx,
+            deadline_s=deadline_s,
+        )
     if jp_out is not None:
-        bound_sims = 500 if deadline_s > 5 else 200
+        bound_sims = 250 if deadline_s > 5 else (150 if deadline_s >= 3 else 40)
         return _apply_trajectory_bound_veto(
             table, allowed, jp_out, hole, board, equity, pot_odds, bound_sims,
         )
@@ -1115,8 +1151,9 @@ def decide(
     amount: Optional[int] = None
 
     river_unbeatable_flag = False
+    # Nuts enum is relatively cheap but still skip under tight (<3s) deadline.
     if (_nuts_detect_enabled() and street == "River" and len(board) == 5
-            and deadline_s >= 2.0 and treys_available()):
+            and deadline_s >= 3.0 and treys_available()):
         from table_chat_intel import nuts_extra_dead_cards
 
         extra_dead = nuts_extra_dead_cards(table, hole, board, ctx.get("chat_intel"))
