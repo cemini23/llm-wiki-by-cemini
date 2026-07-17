@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-17] ingest | 5 arXiv rejects (2 re-drops + flow-matching / robot / evo-game)
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-17.md (all reject); archived; inbox cleared
+- Re-drops: 2607.06315 SKA recombination lines; 2607.11340 CR-Solver continuum robots
+- New rejects: 2607.14424 ConFlow (flow matching ≠ RTS flow fields); 2607.14826 robot causal action testing; 2607.14950 Hawk–Dove polymorphism math
+- Phase-0 / local adopt / briefs: none (no poker/David/prod from this inbox)
+- Sweep: @sweeps/2026-07-17-daily.md (arxiv-only; news disabled)
+
+---
+
 ## [2026-07-16] ingest | CoFL-S flow-field shelf + 4 arXiv-API rejects
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-16.md (1 ingest + 4 reject); archived; inbox cleared

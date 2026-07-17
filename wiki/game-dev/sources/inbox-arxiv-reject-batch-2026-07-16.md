@@ -5,6 +5,7 @@ tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, astronomy, robotics, antenna, ocean]
 related:
   - sources/inbox-arxiv-reject-batch-2026-07-15.md
+  - sources/inbox-arxiv-reject-batch-2026-07-17.md
   - sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md
   - concepts/flow-field-pathfinding.md
   - meta/cross-wiki-routing.md
