@@ -27,3 +27,10 @@ updated: 2026-07-18
 | **Routing** | PM LP canary |
 
 Layer-wise inference to run large models on limited VRAM. Candidate for local PM research hosts.
+
+## Wired (K173 local)
+
+- Venv: `.local/venvs/airllm` + `mlx` on Apple silicon; import smoke OK
+- Smoke: `bash scripts/run_airllm_smoke.sh`
+- **Operator:** approve before any model-weight download (multi-GB)
+

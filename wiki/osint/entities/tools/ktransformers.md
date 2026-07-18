@@ -26,3 +26,9 @@ updated: 2026-07-18
 | **Routing** | PM/local MoE |
 
 Optimized MoE/local serve stack. Extract patterns; shallow clone OK under 500MB.
+
+## Wired (K173 local)
+
+- Clone reference only on Darwin (CUDA-primary upstream)
+- Note: `.local/reports/k173-ktransformers-use.md`
+

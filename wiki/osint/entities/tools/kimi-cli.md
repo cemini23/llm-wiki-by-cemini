@@ -29,3 +29,10 @@ updated: 2026-07-18
 | **Routing** | CCC |
 
 Official Moonshot CLI for Kimi models. Pair with K3 Watch (no weight download).
+
+## Wired (K173 local)
+
+- Binary: `~/.local/bin/kimi` via `uv tool install`
+- Wrapper: `scripts/run_kimi_cli.sh`
+- **Operator:** run `kimi` then `/login` (or Moonshot API key) before agents can use it
+

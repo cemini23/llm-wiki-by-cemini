@@ -27,3 +27,10 @@ updated: 2026-07-18
 | **Routing** | CCC/OSINT agents |
 
 Multi-agent open-domain seeker with explicit search-progress state. From arXiv 2607.15257.
+
+## Wired (K173 local)
+
+- Venv: `.local/venvs/searchos` (`searchos --help` OK)
+- Skill: `.cursor/skills/searchos-progress` (coverage-map steal for agents)
+- Full TUI needs search-backend API keys (operator)
+

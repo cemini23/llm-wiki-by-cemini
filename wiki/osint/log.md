@@ -9,6 +9,14 @@ updated: 2026-07-18
 
 
 
+## [2026-07-18] adopt | K173 local wire (cap 2GB)
+
+- Raised per-clone soft cap **500MB→2GB** (total soft 8GB); still no PostHog monorepo / foundation weights
+- **Wired:** ui-skills (TipDrop+OSINT skills + npm CLI); kimi-cli (`~/.local/bin/kimi`); SearchOS core venv + `searchos-progress` skill; airllm+mlx import smoke; supply-chain Cursor rule alwaysApply
+- **Operator:** kimi `/login`; PostHog SaaS keys for TipDrop; weight downloads gated
+- Scripts: `adopt_k173_local.sh`, `run_kimi_cli.sh`, `run_airllm_smoke.sh`
+- Report: `.local/reports/k173-local-adopt.md`
+
 ## [2026-07-18] ingest | K173 — tool-eval + play-adequacy + setup supply-chain + RSS
 
 - **Inbox (16):** Revenue Opportunity URL Evaluation.docx + 5 arXiv + Macro Charts Tavi + Latent Space×2 + Capital Flows×2 + Event Horizon Ep24 + Klement failure gap + SecPro #243 + WuBlock×2 — archive egress-fi; CF Jul 16 LIKELY folded into existing K172 page

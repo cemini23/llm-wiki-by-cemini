@@ -26,3 +26,9 @@ updated: 2026-07-18
 | **Routing** | TipDrop |
 
 Product analytics. Use cloud/SaaS or docs — **do not clone monorepo** (size >>500MB). ee/ directory has separate license.
+
+## Wired (K173 local)
+
+- SaaS Integrate only — no monorepo clone
+- **Operator:** create TipDrop PostHog project + env keys (see TipDrop David brief)
+

@@ -26,3 +26,10 @@ updated: 2026-07-18
 | **Routing** | TipDrop/David |
 
 Agent-facing UI skill pack for frontend quality. Shallow clone for TipDrop kit.
+
+## Wired (K173 local)
+
+- TipDrop: `.cursor/skills/ui-skills` → adopt skills symlink
+- OSINT: `.cursor/skills/ui-skills/SKILL.md` + `.local/adopts/ui-skills` (npm deps; `npx ui-skills categories` smoke OK)
+- Script: `bash scripts/adopt_k173_local.sh`
+
