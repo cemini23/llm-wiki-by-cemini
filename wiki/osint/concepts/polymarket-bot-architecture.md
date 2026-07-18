@@ -91,10 +91,13 @@ related:
   - sources/tool-eval-metaplan-81url-2026-06-24.md
   - concepts/prediction-market-structural-volatility-dr-as.md
   - sources/arxiv-2607.08199-prediction-market-volatility-structural-2026-07-14.md
+  - sources/substack-rss-event-horizon-2026-07-17-ep24-flight-betting.md
+  - sources/substack-rss-wublock-2026-07-17-plasma-one.md
+  - entities/tools/airllm.md
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-07-14
+updated: 2026-07-18
 ---
 
 ## Relations

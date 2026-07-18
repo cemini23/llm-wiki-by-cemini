@@ -22,9 +22,11 @@ related:
   - concepts/probabilistic-agent-policy-verification.md
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/serena.md
+  - sources/newsletter-rss-latent-space-2026-07-17-kimi-k3.md
+  - entities/tools/kimi-cli.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 ## Relations

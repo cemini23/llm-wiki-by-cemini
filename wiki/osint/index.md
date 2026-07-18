@@ -12,13 +12,42 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **761 canonical stubs** (K172 + K171 + K170)
+Total: **788 canonical stubs** (K173 + K172 + K171 + K170)
 
 
 
 
 
 
+
+### k173-ingest (26)
+
+- [Revenue Opportunity URL Evaluation (2026-07-18)](sources/eval-revenue-opportunity-url-evaluation-2026-07-18.md) — PostHog SaaS / ui-skills / kimi-cli / airllm / SearchOS; wigolo+G0DM0D3 AGPL Pass/Watch. — `docx` [+k173]
+- [Play-adequacy vs prediction-accuracy (2607.14169)](sources/arxiv-2607.14169-play-adequacy-vs-prediction-accuracy.md) — poker ship gates. — `pdf` [+k173]
+- [Setup-instruction weaponization (2607.15143)](sources/arxiv-2607.15143-setup-instruction-weaponization.md) — CCC/cybersec/TipDrop STOP. — `pdf` [+k173]
+- [SearchOS-V1 (2607.15257)](sources/arxiv-2607.15257-searchos-v1.md) — Extract MIT. — `pdf` [+k173]
+- [LQCDMaster (2607.15001)](sources/arxiv-2607.15001-lqcdmaster.md) — Pass thin. — `pdf` [+k173]
+- [Newspaper hierarchy (2607.15082)](sources/arxiv-2607.15082-newspaper-hierarchy.md) — Pass thin. — `pdf` [+k173]
+- [Macro Charts Tavi Costa teaser](sources/macro-charts-rss-2026-07-17-tavi-costa-podcast.md) — xsp Context. — `rss` [+k173]
+- [Latent Space Kimi K3](sources/newsletter-rss-latent-space-2026-07-17-kimi-k3.md) — Watch weights. — `rss` [+k173]
+- [Latent Space AINews Jul 18](sources/newsletter-rss-latent-space-2026-07-18-ainews-not-much-happened.md) — dated issue. — `rss` [+k173]
+- [Capital Flows momentum unwind](sources/substack-rss-capital-flows-2026-07-17-momentum-unwind.md) — **xsp scp**. — `rss` [+k173]
+- [Event Horizon Ep24 flights](sources/substack-rss-event-horizon-2026-07-17-ep24-flight-betting.md) — **pm scp**. — `rss` [+k173]
+- [Klement failure gap](sources/substack-rss-klement-2026-07-17-failure-gap.md) — Context. — `rss` [+k173]
+- [SecPro #243 entrepreneurial adversary](sources/substack-rss-secpro-2026-07-17-243-entrepreneurial-adversary.md) — cybersec. — `rss` [+k173]
+- [WuBlock Plasma One](sources/substack-rss-wublock-2026-07-17-plasma-one.md) — stablecoin neobank. — `rss` [+k173]
+- [WuBlock weekly Iranian wallets](sources/substack-rss-wublock-2026-07-17-weekly-iranian-wallets.md) — OFAC/Tether freeze. — `rss` [+k173]
+- [Play-adequacy vs prediction-accuracy](concepts/play-adequacy-vs-prediction-accuracy.md) — sandbox ship gates. — concept [+k173]
+- [Agent setup-instruction supply chain](concepts/agent-setup-instruction-supply-chain.md) — README→RCE. — concept [+k173]
+- [ui-skills](entities/tools/ui-skills.md) — Extract TipDrop. — entity [+k173]
+- [kimi-cli](entities/tools/kimi-cli.md) — Extract CCC. — entity [+k173]
+- [AirLLM](entities/tools/airllm.md) — Extract PM. — entity [+k173]
+- [KTransformers](entities/tools/ktransformers.md) — Extract PM. — entity [+k173]
+- [SearchOS](entities/tools/searchos.md) — Extract. — entity [+k173]
+- [PostHog](entities/tools/posthog.md) — Integrate SaaS (no clone). — entity [+k173]
+- [OSSIE](entities/tools/ossie.md) — Watch. — entity [+k173]
+- [wigolo](entities/tools/wigolo.md) — Pass AGPL. — entity [+k173]
+- [G0DM0D3](entities/tools/g0dm0d3.md) — Watch AGPL. — entity [+k173]
 
 ### k171-research (federation — PM LP comprehensive backtest)
 

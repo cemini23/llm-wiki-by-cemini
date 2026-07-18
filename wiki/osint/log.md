@@ -1,6 +1,6 @@
 # Wiki Log
 
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 ---
@@ -8,6 +8,14 @@ updated: 2026-07-17
 
 
 
+
+## [2026-07-18] ingest | K173 — tool-eval + play-adequacy + setup supply-chain + RSS
+
+- **Inbox (16):** Revenue Opportunity URL Evaluation.docx + 5 arXiv + Macro Charts Tavi + Latent Space×2 + Capital Flows×2 + Event Horizon Ep24 + Klement failure gap + SecPro #243 + WuBlock×2 — archive egress-fi; CF Jul 16 LIKELY folded into existing K172 page
+- **Sources (15) + concepts (2) + entities (9):** play-adequacy; agent-setup supply-chain; ui-skills/kimi-cli/airllm/ktransformers/SearchOS Extract; PostHog SaaS Integrate (no clone); wigolo Pass AGPL; G0DM0D3 Watch AGPL; ossie Watch
+- **Phase-0:** `scripts/adopt_k173_phase0.sh`
+- **Briefs:** xsp CF unwind (**scp**); pm flights+airllm (**scp**); poker play-adequacy; TipDrop/David ui-skills+PostHog+setup STOP; CCC kimi-cli+SearchOS+setup; cybersec; gambling flights
+- **Local adopt (<500MB):** shallow ui-skills, kimi-cli, airllm, ktransformers, SearchOS, ossie — **no PostHog, no K3 weights, no wigolo/G0DM0D3**
 
 ## [2026-07-17] ingest | K172b — Macro Charts AI selloff additive
 

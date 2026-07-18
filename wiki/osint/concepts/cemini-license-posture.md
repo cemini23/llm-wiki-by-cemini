@@ -40,10 +40,11 @@ related:
   - entities/tools/dataset-viewer.md
   - sources/multi-wiki-tool-eval-25url-2026-05-28.md
   - concepts/cemini-repository-topology.md
+  - sources/eval-revenue-opportunity-url-evaluation-2026-07-18.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-05-28
+updated: 2026-07-18
 ---
 
 ## Relations

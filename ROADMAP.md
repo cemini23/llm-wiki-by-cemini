@@ -21,7 +21,11 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / genealogy** — Italian archival deep research (K153/K154) | `~/Desktop/family/research/` (private) | No — wiki methodology only |
 
-## Current state (2026-07-17 — K172)
+## Current state (2026-07-18 — K173)
+
+- **K173 ingest (2026-07-18)** — Full inbox: Revenue Opportunity URL Evaluation.docx + 5 arXiv + Macro/RSS. **Extract:** ui-skills, kimi-cli, airllm, ktransformers, SearchOS. **Integrate (SaaS only):** PostHog — no monorepo clone. **Watch:** ossie, Kimi K3 weights, paste.trade, G0DM0D3 (AGPL). **Pass:** wigolo (AGPL). **Poker:** play-adequacy (2607.14169). **CCC/cybersec/TipDrop:** setup-instruction weaponization (2607.15143). **Briefs:** xsp+pm (**scp**); poker; TipDrop/David; CCC; cybersec; gambling. **Phase-0:** `adopt_k173_phase0.sh`. Local shallow clones <<500MB; no PostHog; no K3 weights.
+
+## Prior state (2026-07-17 — K172)
 
 - **K172 ingest (2026-07-17)** — RSS batch: Grok Build CLI full-repo upload → **CONDITIONAL halt** (overturns K170 Integrate); Kalshi teleprompter alleged insider → pm; Capital Flows view/positions shift → xsp; Lila Sciences Watch; tl;dr sec harness patterns → CCC/cybersec Context. **No new local clones.** Briefs scp xsp+pm; TipDrop STOP; CCC; cybersec; gambling.
 

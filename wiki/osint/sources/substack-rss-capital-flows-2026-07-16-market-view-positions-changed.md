@@ -7,10 +7,11 @@ related:
   - concepts/capital-flows-sofr-conviction-framework.md
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-capital-flows-2026-07-16-market-shift-and-risks.md
+  - sources/substack-rss-capital-flows-2026-07-17-momentum-unwind.md
 maturity: draft
 read_status: read
 created: 2026-07-17
-updated: 2026-07-17
+updated: 2026-07-18
 clusters: [k172-ingest]
 ---
 
@@ -24,3 +25,5 @@ clusters: [k172-ingest]
 ## Narrative
 
 Paid stream: CF operator changed market view + positions; follow-up stream on momentum unwind + carry-trade risks. **xsp regime flag** — tighten overnight criteria pending paid detail ingest if/when available.
+
+**K173 fold:** inbox `substack-rss-capital-flows-2026-07-16-my-market-view-and-positions-have-changed.md` is LIKELY same URL/hash family — do not duplicate source page; Jul 17 momentum-unwind is the follow-on source.

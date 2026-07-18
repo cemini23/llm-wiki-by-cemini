@@ -43,9 +43,12 @@ related:
   - meta/fable-advisor-prod-touch-gate.md
   - sources/substack-rss-moontower-2026-07-05-vix-and-buy-signals.md
   - concepts/nagus-ops-control-plane.md
+  - sources/substack-rss-capital-flows-2026-07-17-momentum-unwind.md
+  - sources/macro-charts-rss-2026-07-17-tavi-costa-podcast.md
+  - sources/substack-rss-klement-2026-07-17-failure-gap.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 ## Relations

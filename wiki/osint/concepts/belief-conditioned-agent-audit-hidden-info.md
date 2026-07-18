@@ -7,9 +7,10 @@ related:
   - sources/arxiv-2607.10814-belief-conditioned-llm-agents-werewolf-audit-2026-07-15.md
   - concepts/hierarchical-bounded-agent-memory.md
   - concepts/generator-verifier-inference-time-steering.md
+  - concepts/play-adequacy-vs-prediction-accuracy.md
 maturity: draft
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-18
 ---
 
 ## Relations

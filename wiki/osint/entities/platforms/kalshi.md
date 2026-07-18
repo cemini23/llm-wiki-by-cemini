@@ -79,9 +79,10 @@ related:
   - sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md
   - concepts/hybrid-intelligence-human-capital-forecasting.md
   - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md
+  - sources/substack-rss-event-horizon-2026-07-17-ep24-flight-betting.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 ## Relations

@@ -131,10 +131,23 @@ related:
   - entities/tools/firecrawl-mcp-server.md
   - entities/tools/tavily-mcp.md
   - entities/tools/mcp-searxng.md
+  - sources/eval-revenue-opportunity-url-evaluation-2026-07-18.md
+  - entities/tools/ui-skills.md
+  - entities/tools/kimi-cli.md
+  - entities/tools/airllm.md
+  - entities/tools/ktransformers.md
+  - entities/tools/searchos.md
+  - entities/tools/posthog.md
+  - entities/tools/ossie.md
+  - entities/tools/wigolo.md
+  - entities/tools/g0dm0d3.md
+  - sources/arxiv-2607.15001-lqcdmaster.md
+  - sources/arxiv-2607.15082-newspaper-hierarchy.md
+  - sources/arxiv-2607.15257-searchos-v1.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-17
+updated: 2026-07-18
 ---
 
 ## Relations
