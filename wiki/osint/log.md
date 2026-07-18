@@ -9,6 +9,10 @@ updated: 2026-07-18
 
 
 
+## [2026-07-18] adopt | K173 weight host = David PC
+
+- Clarified: airllm / ktransformers / optional K3–Gemma weights route to **David's PC** (TipDrop brief `2026-07-18_k173-david-pc-model-weights.md`); OSINT Mac stays clone+API/smoke only
+
 ## [2026-07-18] adopt | K173 local wire (cap 2GB)
 
 - Raised per-clone soft cap **500MB→2GB** (total soft 8GB); still no PostHog monorepo / foundation weights

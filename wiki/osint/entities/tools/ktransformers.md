@@ -23,12 +23,13 @@ updated: 2026-07-18
 | **Repo / docs** | kvcache-ai/ktransformers |
 | **License** | Apache-2.0 (~64MB) |
 | **Verdict** | **Extract** |
-| **Routing** | PM/local MoE |
+| **Routing** | TipDrop / **David PC** (CUDA); Mac = code reference |
 
-Optimized MoE/local serve stack. Extract patterns; shallow clone OK under 500MB.
+Optimized MoE/local serve stack. **Weights + CUDA serve = David's PC.** Mac clone is pattern reference only.
 
 ## Wired (K173 local)
 
 - Clone reference only on Darwin (CUDA-primary upstream)
 - Note: `.local/reports/k173-ktransformers-use.md`
+- **Weights:** David PC — see TipDrop brief `2026-07-18_k173-david-pc-model-weights.md`
 

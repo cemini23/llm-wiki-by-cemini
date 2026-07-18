@@ -28,11 +28,12 @@ updated: 2026-07-18
 | **Verdict** | **Extract** |
 | **Routing** | CCC |
 
-Official Moonshot CLI for Kimi models. Pair with K3 Watch (no weight download).
+Official Moonshot CLI for Kimi models. Mac = **API CLI** after login. **K3 open weights (when shipped) → David's PC**, not OSINT laptop.
 
 ## Wired (K173 local)
 
 - Binary: `~/.local/bin/kimi` via `uv tool install`
 - Wrapper: `scripts/run_kimi_cli.sh`
-- **Operator:** run `kimi` then `/login` (or Moonshot API key) before agents can use it
+- **Operator (Mac):** `kimi` then `/login` (API only)
+- **Weights:** David PC if/when K3 weights are adopted — TipDrop brief `2026-07-18_k173-david-pc-model-weights.md`
 

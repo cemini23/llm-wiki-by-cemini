@@ -24,13 +24,13 @@ updated: 2026-07-18
 | **Repo / docs** | lyogavin/airllm |
 | **License** | Apache-2.0 (~5MB) |
 | **Verdict** | **Extract** |
-| **Routing** | PM LP canary |
+| **Routing** | TipDrop / **David PC** for weights; Mac = smoke only |
 
-Layer-wise inference to run large models on limited VRAM. Candidate for local PM research hosts.
+Layer-wise inference to run large models on limited VRAM. **Weights host = David's PC** (disk/GPU). OSINT Mac keeps clone + import smoke only.
 
 ## Wired (K173 local)
 
 - Venv: `.local/venvs/airllm` + `mlx` on Apple silicon; import smoke OK
 - Smoke: `bash scripts/run_airllm_smoke.sh`
-- **Operator:** approve before any model-weight download (multi-GB)
+- **Weights:** do **not** download on Mac — TipDrop brief `2026-07-18_k173-david-pc-model-weights.md`
 
