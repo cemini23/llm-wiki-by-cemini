@@ -19,7 +19,7 @@ updated: 2026-07-18
 
 ## Raw Concept
 
-Five PDFs from `2026-07-18-daily.md` (arxiv-only paper lane; news disabled). **All reject (re-drop)** — byte-identical sha256 set as @sources/inbox-arxiv-reject-batch-2026-07-17.md. Digest re-fetch loop continues (reject batches do not register arXiv IDs in `preingest_check` catalog).
+Five PDFs from `2026-07-18-daily.md` (arxiv-only paper lane; news disabled). **All reject (re-drop)** — byte-identical sha256 set as @sources/inbox-arxiv-reject-batch-2026-07-17.md. Re-fetch loop closed 2026-07-18: digest indexer now catalogs arXiv IDs from reject-batch Narrative tables.
 
 ## Narrative
 
@@ -48,5 +48,5 @@ sha: 25563ab9… / 43a48fb4… / 7996be2a… / c5583687… / 25f6496e…
 
 ## Dead Ends
 
-- Re-ingesting the same arXiv-API false-positive set nightly without query tightening
+- Re-ingesting the same arXiv-API false-positive set nightly without query tightening — mitigated by reject-batch Narrative ID indexing (2026-07-18)
 - Treating ConFlow / Hawk–Dove re-drops as new research for castle-sim

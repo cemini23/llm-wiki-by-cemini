@@ -9,8 +9,15 @@ Append-only chronological log.
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-18.md (all reject re-drop); archived; inbox cleared
 - Same sha256 set as 07-17: SKA recombination · CR-Solver · ConFlow · robot causal circuits · Hawk–Dove polymorphism
 - Phase-0 / local adopt / briefs: none (no poker/David/prod from this inbox)
-- Note: arxiv-only digest keeps re-fetching reject-batch papers (preingest does not catalog reject arXiv IDs)
+- Note: arxiv-only digest was re-fetching reject-batch papers (Narrative IDs not indexed) — fixed in `wiki_source_index` / `preingest_check` 2026-07-18
 - Sweep: @sweeps/2026-07-18-daily.md (arxiv-only; news disabled)
+
+---
+
+## [2026-07-18] fix | catalog reject-batch arXiv IDs so digest skips re-fetch
+
+- `scripts/wiki_source_index.py` + `scripts/preingest_check.py`: index arXiv IDs from `inbox-arxiv-reject-batch-*` ## Narrative tables
+- Stops nightly re-download of already-triaged false positives (e.g. 2607.06315 / ConFlow / Hawk–Dove set)
 
 ---
 
