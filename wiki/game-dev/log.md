@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-18] ingest | 5 arXiv re-drops (identical to 07-17 reject set)
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-18.md (all reject re-drop); archived; inbox cleared
+- Same sha256 set as 07-17: SKA recombination · CR-Solver · ConFlow · robot causal circuits · Hawk–Dove polymorphism
+- Phase-0 / local adopt / briefs: none (no poker/David/prod from this inbox)
+- Note: arxiv-only digest keeps re-fetching reject-batch papers (preingest does not catalog reject arXiv IDs)
+- Sweep: @sweeps/2026-07-18-daily.md (arxiv-only; news disabled)
+
+---
+
 ## [2026-07-17] ingest | 5 arXiv rejects (2 re-drops + flow-matching / robot / evo-game)
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-17.md (all reject); archived; inbox cleared
