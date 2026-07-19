@@ -144,10 +144,13 @@ related:
   - sources/arxiv-2607.15001-lqcdmaster.md
   - sources/arxiv-2607.15082-newspaper-hierarchy.md
   - sources/arxiv-2607.15257-searchos-v1.md
+  - sources/eval-repository-revenue-opportunity-analysis-2026-07-19.md
+  - entities/tools/code-review-graph.md
+  - entities/tools/i-have-adhd.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-18
+updated: 2026-07-19
 ---
 
 ## Relations

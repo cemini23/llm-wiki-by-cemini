@@ -21,7 +21,11 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / genealogy** — Italian archival deep research (K153/K154) | `~/Desktop/family/research/` (private) | No — wiki methodology only |
 
-## Current state (2026-07-18 — K173)
+## Current state (2026-07-19 — K174)
+
+- **K174 ingest (2026-07-19)** — Tool-eval docx (20 URLs) + Macro Charts Damaged Goods + Capital Flows weekend depth + WuBlock×2. **Extract:** code-review-graph, i-have-adhd (MIT, <500MB). **Pass:** wigolo AGPL. **Watch:** ktransformers / GLM quant (David PC weights). **Briefs:** xsp+pm (**scp**); TipDrop/David; CCC; gambling. **Phase-0:** `adopt_k174_phase0.sh`.
+
+## Prior state (2026-07-18 — K173)
 
 - **K173 ingest (2026-07-18)** — Full inbox: Revenue Opportunity URL Evaluation.docx + 5 arXiv + Macro/RSS. **Extract:** ui-skills, kimi-cli, airllm, ktransformers, SearchOS. **Integrate (SaaS only):** PostHog — no monorepo clone. **Watch:** ossie, Kimi K3 weights, paste.trade, G0DM0D3 (AGPL). **Pass:** wigolo (AGPL). **Poker:** play-adequacy (2607.14169). **CCC/cybersec/TipDrop:** setup-instruction weaponization (2607.15143). **Briefs:** xsp+pm (**scp**); poker; TipDrop/David; CCC; cybersec; gambling. **Phase-0:** `adopt_k173_phase0.sh`. Local shallow clones <<500MB; no PostHog; no K3 weights.
 

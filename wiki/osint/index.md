@@ -12,13 +12,23 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **788 canonical stubs** (K173 + K172 + K171 + K170)
+Total: **797 canonical stubs** (K174 + K173 + K172 + K171)
 
 
 
 
 
 
+
+### k174-ingest (7)
+
+- [Repository Revenue Opportunity Analysis (2026-07-19)](sources/eval-repository-revenue-opportunity-analysis-2026-07-19.md) — code-review-graph + i-have-adhd Extract; wigolo Pass AGPL. — `docx` [+k174]
+- [Macro Charts Damaged Goods](sources/macro-charts-rss-2026-07-19-damaged-goods.md) — momentum crash teaser → **xsp**. — `rss` [+k174]
+- [Capital Flows weekend depth of field](sources/substack-rss-capital-flows-2026-07-18-weekend-depth-of-field.md) — **xsp scp**. — `rss` [+k174]
+- [WuBlock EthSystems / Robinhood / PM manip](sources/substack-rss-wublock-2026-07-18-weekly-ethereum-privacy-robinhood.md) — **pm scp**. — `rss` [+k174]
+- [WuBlock Asia Top10 Japan FIEA](sources/substack-rss-wublock-2026-07-19-asia-top10-japan-fiea.md) — reg Context. — `rss` [+k174]
+- [code-review-graph](entities/tools/code-review-graph.md) — Extract MIT. — entity [+k174]
+- [i-have-adhd](entities/tools/i-have-adhd.md) — Extract MIT skill. — entity [+k174]
 
 ### k173-ingest (26)
 

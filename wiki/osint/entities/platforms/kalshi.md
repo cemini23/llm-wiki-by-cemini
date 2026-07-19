@@ -80,9 +80,10 @@ related:
   - concepts/hybrid-intelligence-human-capital-forecasting.md
   - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md
   - sources/substack-rss-event-horizon-2026-07-17-ep24-flight-betting.md
+  - sources/substack-rss-wublock-2026-07-18-weekly-ethereum-privacy-robinhood.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-18
+updated: 2026-07-19
 ---
 
 ## Relations

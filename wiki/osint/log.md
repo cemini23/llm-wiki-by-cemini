@@ -1,6 +1,6 @@
 # Wiki Log
 
-updated: 2026-07-18
+updated: 2026-07-19
 ---
 
 ---
@@ -8,6 +8,14 @@ updated: 2026-07-18
 
 
 
+
+## [2026-07-19] ingest | K174 — tool-eval + Macro/CF/WuBlock
+
+- **Inbox (5):** Repository Revenue Opportunity Analysis.docx + Macro Charts Damaged Goods + Capital Flows weekend depth + WuBlock×2 — archive egress-fi
+- **Sources (5) + entities (2):** code-review-graph Extract; i-have-adhd Extract; wigolo Pass AGPL (re-eval); ktransformers Watch (David PC weights)
+- **Phase-0:** `scripts/adopt_k174_phase0.sh` + `adopt_k174_local.sh`
+- **Briefs:** xsp Macro+CF (**scp**); pm PM 5-min manip (**scp**); TipDrop/David skills; CCC; gambling PM manip; poker no-fit
+- **Local adopt (<500MB):** code-review-graph ~16MB + i-have-adhd ~0.3MB; Cursor/TipDrop skill wired; no weights; no wigolo
 
 ## [2026-07-18] adopt | K173 weight host = David PC
 

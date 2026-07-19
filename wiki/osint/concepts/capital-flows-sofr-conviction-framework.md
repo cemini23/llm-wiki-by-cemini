@@ -17,9 +17,10 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - concepts/macro-charts-regime-signals.md
   - sources/substack-rss-capital-flows-2026-07-17-momentum-unwind.md
+  - sources/substack-rss-capital-flows-2026-07-18-weekend-depth-of-field.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-18
+updated: 2026-07-19
 ---
 
 ## Relations

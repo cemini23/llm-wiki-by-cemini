@@ -28,9 +28,10 @@ related:
   - sources/macro-charts-paid-forward-chat-2026-07-10.md
   - sources/substack-rss-capital-flows-2026-07-08-liquidity-event-horizon.md
   - sources/macro-charts-rss-2026-07-17-tavi-costa-podcast.md
+  - sources/macro-charts-rss-2026-07-19-damaged-goods.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-18
+updated: 2026-07-19
 ---
 
 ## Relations
