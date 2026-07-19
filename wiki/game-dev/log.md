@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-19] ingest | 5 arXiv re-drops (preingest DUPLICATE; payload indexer lag)
+
+- Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-19.md (all reject re-drop); archived; inbox cleared
+- Same sha256 set as 07-17/18: SKA recombination · CR-Solver · ConFlow · robot causal circuits · Hawk–Dove polymorphism
+- Preingest: 5× DUPLICATE (game-dev indexer OK); overnight still fetched via stale `~/.cemini/launchagent/osint/` payload
+- Fix: port Narrative reject-batch indexing to OSINT `wiki_source_index.py` + `sync_federation_digest_bundle.sh`
+- Phase-0 / local adopt / briefs: none
+- Sweep: @sweeps/2026-07-19-daily.md (arxiv-only; news disabled)
+
+---
+
 ## [2026-07-18] ingest | 5 arXiv re-drops (identical to 07-17 reject set)
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-18.md (all reject re-drop); archived; inbox cleared

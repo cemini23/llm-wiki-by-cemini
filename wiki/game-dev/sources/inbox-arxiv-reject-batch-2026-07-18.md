@@ -4,6 +4,7 @@ type: source
 tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, re-drop, flow-matching, robotics, evolutionary-games]
 related:
+  - sources/inbox-arxiv-reject-batch-2026-07-19.md
   - sources/inbox-arxiv-reject-batch-2026-07-17.md
   - sources/inbox-arxiv-reject-batch-2026-07-16.md
   - concepts/flow-field-pathfinding.md
@@ -14,7 +15,7 @@ read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-18
-updated: 2026-07-18
+updated: 2026-07-19
 ---
 
 ## Raw Concept
