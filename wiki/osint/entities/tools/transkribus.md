@@ -11,12 +11,14 @@ related:
   - concepts/computational-genealogy-archival-automation.md
   - entities/tools/gcerretani-antenati.md
   - entities/tools/italian-parish-records.md
+  - sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md
 maturity: draft
 created: 2026-07-09
 updated: 2026-07-20
 ---
 
 ## Relations
+- @sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md — K177 LLM-NAS HTR Watch (contrast)
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
 

@@ -4,6 +4,7 @@ type: concept
 tags: [concept, polymarket, trading-bot, prediction-markets, websocket, backtesting, latency, cemini]
 keywords: [polymarket, CLOB, websocket, FAK, GTC, latency, hot path, HMAC, backtesting, 6-layer websocket, market maker, ladder bot, NSF, fishy resolution]
 related:
+  - sources/substack-rss-event-horizon-2026-07-20-underdog-exchange.md
   - sources/x-polymarket-bot-playbook-punisher-2026-05.md
   - entities/platforms/polymarket.md
   - concepts/cemini-license-posture.md
@@ -99,11 +100,12 @@ related:
 
 maturity: draft
 created: 2026-05-12
-updated: 2026-07-19
+updated: 2026-07-20
 ---
 
 ## Relations
 
+- @sources/substack-rss-event-horizon-2026-07-20-underdog-exchange.md — K177 Underdog DCM/DCO own exchange
 - `@sources/x-polymarket-bot-playbook-punisher-2026-05.md` — original X thread + long-form article
 - `@entities/platforms/polymarket.md` — platform entity page (create stub if absent)
 - `@concepts/cemini-license-posture.md` — IP-sale-readiness frame (no license issue here; pattern, not code)

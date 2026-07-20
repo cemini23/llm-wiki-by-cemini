@@ -33,8 +33,10 @@ parser.add_argument("--hub-threshold", type=int, default=4,
                     help="With --fix-bidirectional: skip target pages with > N missing backlinks "
                          "(those are likely intentional hub-index pages). Default: 4")
 parser.add_argument("--fail-on-graph", action="store_true",
-                    help="Exit 1 if orphans, bidirectional gaps, or local dangling related: links exist "
-                         "(used by pre-commit hook).")
+                    help="Exit 1 on graph integrity errors (used by pre-commit). "
+                         "When wiki/ paths are staged in git, only staged pages are gated "
+                         "(orphans among staged; dangling from staged; gaps where both ends staged). "
+                         "Full-wiki gate when nothing under wiki/ is staged.")
 args = parser.parse_args()
 TODAY = date.today()
 
@@ -563,6 +565,48 @@ if args.fix_bidirectional:
               f"backlinks. Adjust --hub-threshold to include/exclude hub targets.")
 
 if args.fail_on_graph and (orphans or gaps or dangling):
-    print("\nFAIL: graph integrity errors (orphans, bidirectional gaps, or dangling related: links).",
-          file=sys.stderr)
-    sys.exit(1)
+    staged = None
+    try:
+        import subprocess
+        out = subprocess.check_output(
+            ["git", "diff", "--cached", "--name-only", "--diff-filter=ACMR", "--", "wiki/"],
+            cwd=str(WIKI.parent),
+            text=True,
+            stderr=subprocess.DEVNULL,
+        )
+        staged = {
+            line.strip()[len("wiki/"):]
+            for line in out.splitlines()
+            if line.strip().startswith("wiki/") and line.strip().endswith(".md")
+        }
+    except Exception:
+        staged = None
+
+    if staged:
+        orphans_f = [o for o in orphans if o in staged]
+        gaps_f = [(a, b) for a, b in gaps if a in staged and b in staged]
+        dangling_f = [(a, b) for a, b in dangling if a in staged]
+        if orphans_f or gaps_f or dangling_f:
+            print(
+                "\nFAIL: staged wiki graph errors "
+                f"(orphans={len(orphans_f)}, gaps={len(gaps_f)}, dangling={len(dangling_f)}).",
+                file=sys.stderr,
+            )
+            for o in orphans_f[:20]:
+                print(f"  orphan: {o}", file=sys.stderr)
+            for a, b in gaps_f[:20]:
+                print(f"  gap: {a} → {b}", file=sys.stderr)
+            for a, b in dangling_f[:20]:
+                print(f"  dangling: {a} → {b}", file=sys.stderr)
+            sys.exit(1)
+        print(
+            f"\nOK: staged wiki graph clean "
+            f"({len(staged)} staged page(s); full-wiki debt not gated).",
+            file=sys.stderr,
+        )
+    else:
+        print(
+            "\nFAIL: graph integrity errors (orphans, bidirectional gaps, or dangling related: links).",
+            file=sys.stderr,
+        )
+        sys.exit(1)

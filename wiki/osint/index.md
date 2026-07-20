@@ -12,7 +12,22 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **807 canonical stubs** (K176 + K175 + K174 + K173 + K172)
+Total: **819 canonical stubs** (K177 + K176 + K175 + K174 + K173 + K172)
+
+### k177-ingest (12)
+
+- [LLM-NAS handwritten OCR (2607.15509)](sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md) — genealogy HTR Watch. — `pdf` [+k177]
+- [Agent-reactive bugs (2607.15684)](sources/arxiv-2607.15684-agent-reactive-bugs-model-harness.md) — model–harness AR taxonomy → CCC/poker. — `pdf` [+k177]
+- [Behavioral controllability IE (2607.15715)](sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md) — process-trace IE eval. — `pdf` [+k177]
+- [Agent Governance Manifest paper (2607.15769)](sources/arxiv-2607.15769-agent-governance-manifest.md) — AGM governability. — `pdf` [+k177]
+- [Macro Charts paid DAMAGED GOODS](sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md) — supersedes K174 RSS teaser → **xsp**. — `paid` [+k177]
+- [Event Horizon Underdog exchange](sources/substack-rss-event-horizon-2026-07-20-underdog-exchange.md) — DCM/DCO → **pm** + gambling. — `rss` [+k177]
+- [Moontower option mixologist](sources/substack-rss-moontower-2026-07-19-become-an-option-mixologist.md) — 3-parameter screens → **xsp**. — `rss` [+k177]
+- [Moontower #321](sources/substack-rss-moontower-2026-07-19-moontower-321.md) — weekly + equal-risk pedagogy. — `rss` [+k177]
+- [Klement Guardian readers](sources/substack-rss-klement-2026-07-20-guardian-readers.md) — thin stub. — `rss` [+k177]
+- [Agent-reactive bugs (concept)](concepts/agent-reactive-bugs.md) — AR taxonomy hub. — concept [+k177]
+- [Agent Governance Manifest (concept)](concepts/agent-governance-manifest.md) — governability layers. — concept [+k177]
+- [AGM GitHub tool](entities/tools/agent-governance-manifest.md) — MIT Extract ~1MB. — entity [+k177]
 
 ### k176-ingest (2)
 

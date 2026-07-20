@@ -29,13 +29,19 @@ related:
   - sources/substack-rss-capital-flows-2026-07-08-liquidity-event-horizon.md
   - sources/macro-charts-rss-2026-07-17-tavi-costa-podcast.md
   - sources/macro-charts-rss-2026-07-19-damaged-goods.md
+  - sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md
+  - sources/substack-rss-klement-2026-07-20-guardian-readers.md
+  - concepts/xsp-lane-trading-framework.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-19
+updated: 2026-07-20
 ---
 
 ## Relations
 
+- @concepts/xsp-lane-trading-framework.md — XSP lanes consume Macro Charts regime reads
+- @sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md — K177 paid DAMAGED GOODS (VIX/SOX coil)
+- @sources/substack-rss-klement-2026-07-20-guardian-readers.md — K177 thin demographic stub
 - @sources/trading-posts-compilation-16-2026-05-31.md — K90 Post 0 (Macro Charts May 31 opener)
 - @sources/trading-posts-macro-charts-skills-md-2026-05-28.md — K76 Post 1 rotation precursor
 - @sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md — K144 paid arc (Jun 22–Jul 5)

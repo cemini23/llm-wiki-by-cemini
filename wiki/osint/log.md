@@ -9,6 +9,16 @@ updated: 2026-07-20
 
 
 
+## [2026-07-20] ingest | K177 — agent harness papers + Macro paid Damaged Goods + Underdog/Moontower
+
+- **Inbox (10):** 4 arXiv PDFs + Macro Charts paid DAMAGED GOODS + Event Horizon Underdog + Klement + Moontower×3 — all NEW (Moontower #321 LIKELY vs #319 = distinct issue)
+- **Phase-0:** `scripts/adopt_k177_phase0.sh` — **Extract** AGM (MIT, ~1MB); OCR NAS / AR / IE = Watch/Context
+- **Local adopt:** `scripts/adopt_k177_local.sh` → `.local/adopts/agent-governance-manifest` (1MB << 500MB)
+- **Wiki:** 9 sources + 2 concepts + 1 entity; hubs updated (genealogy, code-as-harness, macro, xsp, PM bot, Transkribus, ingest workflow); K174 Damaged Goods RSS marked superseded
+- **Briefs:** xsp+pm (**scp**); poker AR/controllability light steal; CCC AGM+AR; family OCR; gambling Underdog; TipDrop no-David-path
+- **Cadence:** wiki-gap-detect + WC LP safety reminder run (reports under `.local/reports/`)
+- **Archive:** egress-fi `osint/` + inbox cleared
+
 ## [2026-07-20] decision | GPUOLOGY UX = intake dump + agent run; PII/SSN security ship gate
 
 - User flow: dump all family info (incl. SSN-class) → program runs archival ladder; human gates only on merges/filings

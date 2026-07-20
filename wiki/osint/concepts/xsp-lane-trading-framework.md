@@ -4,6 +4,9 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md
+  - sources/substack-rss-moontower-2026-07-19-become-an-option-mixologist.md
+  - sources/substack-rss-moontower-2026-07-19-moontower-321.md
   - sources/macro-charts-paid-forward-2026-07-17-ai-selloff-taiex-tsm.md
   - sources/substack-rss-capital-flows-2026-07-16-market-shift-and-risks.md
   - sources/substack-rss-capital-flows-2026-07-16-market-view-positions-changed.md
@@ -50,11 +53,14 @@ related:
   - sources/substack-rss-capital-flows-2026-07-18-weekend-depth-of-field.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-19
+updated: 2026-07-20
 ---
 
 ## Relations
 
+- @sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md — K177 paid DAMAGED GOODS regime
+- @sources/substack-rss-moontower-2026-07-19-become-an-option-mixologist.md — K177 3-parameter structure screen
+- @sources/substack-rss-moontower-2026-07-19-moontower-321.md — K177 weekly pedagogy
 - @concepts/xsp-hedge-fund-core-book-thesis.md — **Lane B** implements the institutional core-book idea on XSP
 - @concepts/xsp-put-credit-spread-small-account-smb.md — orthogonal SMB selling strategy on same instrument
 - @entities/tools/deepspec.md — K137 inference latency Adopt (speculative decoding)

@@ -28,15 +28,18 @@ related:
   - entities/tools/censusreporter.md
   - entities/tools/timemagazine-babynames.md
   - sources/eval-url-revenue-and-project-analysis-2026-07-20.md
+  - sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md
+  - sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/active-project-research-routing.md
-  - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
 maturity: draft
 created: 2026-07-09
 updated: 2026-07-20
 ---
 
 ## Relations
+- @sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md — K177 LLM-NAS HTR Watch (contrast Transkribus)
+- @sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md — K177 process-trace IE eval
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
 

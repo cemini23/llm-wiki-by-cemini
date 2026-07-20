@@ -40,14 +40,24 @@ related:
   - concepts/toolbench-x-tool-reliability-hazards.md
   - entities/tools/toolbench-x.md
   - concepts/nagus-ops-control-plane.md
+  - concepts/agent-reactive-bugs.md
+  - concepts/agent-governance-manifest.md
+  - sources/arxiv-2607.15684-agent-reactive-bugs-model-harness.md
+  - sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md
+  - sources/arxiv-2607.15769-agent-governance-manifest.md
 
 maturity: draft
 created: 2026-05-21
-updated: 2026-07-16
+updated: 2026-07-20
 ---
 
 ## Relations
 
+- @concepts/agent-reactive-bugs.md — K177 AR bugs at model–harness boundary
+- @concepts/agent-governance-manifest.md — K177 project-side governability (AGM)
+- @sources/arxiv-2607.15684-agent-reactive-bugs-model-harness.md
+- @sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md
+- @sources/arxiv-2607.15769-agent-governance-manifest.md
 - @sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md — **physical-domain harness** (K105): skills + subagents + MCP over OpenRocket/build123d; flight-test oracle
 - @entities/tools/rocketsmith.md — MIT plugin; REFERENCE-only for Cemini
 - @sources/arxiv-code-as-agent-harness-survey-2605.18747.md — primary synthesis source (UIUC/Meta/Stanford survey, May 2026)

@@ -30,13 +30,15 @@ related:
   - concepts/computational-genealogy-archival-automation.md
   - sources/substack-rss-outlier-weekly-2026-07-14-llm-wiki-lint.md
   - sources/newsletter-rss-pragmatic-engineer-2026-07-14-what-is-loop-engineering.md
+  - sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md
 maturity: core
 created: 2026-05-31
-updated: 2026-07-14
+updated: 2026-07-20
 ---
 
 ## Relations
 
+- @sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md — K177 process-trace IE eval for ingest agents
 - @concepts/computational-genealogy-archival-automation.md — parallel “sources before automation / no Tier-3 invention” discipline for archival digs
 - @sources/substack-rss-outlier-weekly-2026-07-14-llm-wiki-lint.md — K165: contribution rate + wikilint-on-PR framing
 - @sources/newsletter-rss-pragmatic-engineer-2026-07-14-what-is-loop-engineering.md — K165: loop engineering (CCC primary)

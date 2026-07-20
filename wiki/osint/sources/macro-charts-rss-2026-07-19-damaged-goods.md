@@ -6,10 +6,11 @@ keywords: [k174]
 related:
   - concepts/macro-charts-regime-signals.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md
 maturity: draft
 read_status: read
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-07-20
 clusters: [k174-ingest]
 ---
 
@@ -17,6 +18,7 @@ clusters: [k174-ingest]
 
 - @concepts/macro-charts-regime-signals.md
 - @concepts/xsp-lane-trading-framework.md
+- @sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md — paid forward supersedes for substance (K177)
 
 ## Raw Concept
 
@@ -27,4 +29,4 @@ clusters: [k174-ingest]
 
 ## Narrative
 
-Free teaser: momentum crash, capitulation, flows, sentiment, rates, oil, vol, new sector long / diversification; near-term bounce question. **xsp** — thin free drop; treat as regime watch, no new overnight chase.
+Free teaser: momentum crash, capitulation, flows, sentiment, rates, oil, vol, new sector long / diversification; near-term bounce question. **xsp** — thin free drop; treat as regime watch, no new overnight chase. **Superseded for substance** by `@sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md` (K177).
