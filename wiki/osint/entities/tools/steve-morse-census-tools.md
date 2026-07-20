@@ -6,15 +6,17 @@ keywords: [Steve Morse, Enumeration District, 1940 census, 1950 census, Unified 
 related:
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
   - concepts/italian-regional-genealogy-archive-playbook.md
+  - entities/tools/censusreporter.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-20
 ---
 
 ## Relations
 
 - @sources/gemini-italian-ancestry-deep-research-2026-07-09.md — Priority-1 for Brooklyn/Jersey immigrant staging
 - @concepts/italian-regional-genealogy-archive-playbook.md — US address → ED → image browse
+- @entities/tools/censusreporter.md — K175 schema/API extract complementary to ED Finder
 
 ## Raw Concept
 

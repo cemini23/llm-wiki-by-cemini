@@ -4,6 +4,7 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-url-revenue-and-project-analysis-2026-07-20.md
   - sources/newsletter-rss-tldrsec-2026-07-16-337-harnessing-harnesses.md
   - sources/newsletter-rss-pragmatic-engineer-2026-07-16-grok-cli-upload-incident.md
   - entities/tools/thinky-inkling.md
@@ -150,12 +151,13 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-19
+updated: 2026-07-20
 ---
 
 ## Relations
 
 - @sources/atomicmemory-llm-wiki-compiler.md — Karpathy-pattern compiler; **primary adoption candidate**; covers GitHub + `llmwiki.app` landing page
+- @sources/eval-url-revenue-and-project-analysis-2026-07-20.md — K175 journalism/Italian entity revenue batch
 - @sources/willynikes2-knowledge-base-server.md — SQLite + FTS5 + embeddings memory engine + 16-tool MCP server; sidecar value gated on multi-agent need
 - @sources/wastedcode-memex.md — Filesystem-only (no embeddings) Claude-Code-programmatic-mode wrapper with namespace isolation; adoption-rejected on Linux/CAP_SYS_ADMIN friction
 - @sources/emtwiki-deployed-example.md — deployed example wiki (San Juan College EMT-Basic curriculum, NM EMS Bureau-aligned); reference-only proof the pattern works in high-stakes domains

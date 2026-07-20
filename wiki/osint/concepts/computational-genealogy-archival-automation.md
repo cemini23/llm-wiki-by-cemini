@@ -4,6 +4,8 @@ type: concept
 tags: [genealogy, archival, automation, italy, antenati, draft]
 keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double Metaphone, kinship graph]
 related:
+  - concepts/gpuology-genealogy-agent-kit.md
+  - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - entities/tools/terrastories.md
   - sources/eval-github-repo-revenue-evaluation-2026-07-15.md
   - entities/tools/espanso.md
@@ -21,15 +23,22 @@ related:
   - entities/tools/autoresearch-genealogy.md
   - entities/tools/topola-viewer.md
   - entities/tools/liberu-genealogy-laravel.md
+  - entities/tools/dhfbk-tint.md
+  - entities/tools/codice-fiscale-js.md
+  - entities/tools/censusreporter.md
+  - entities/tools/timemagazine-babynames.md
+  - sources/eval-url-revenue-and-project-analysis-2026-07-20.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/active-project-research-routing.md
   - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-16
+updated: 2026-07-20
 ---
 
 ## Relations
+- @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
+- @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
 
 - @sources/gemini-automated-deep-genealogy-research-2026-07-09.md — primary synthesis source (Gemini roadmap docx)
 - @sources/gemini-italian-ancestry-deep-research-2026-07-09.md — K154 regional archive playbook companion
@@ -42,7 +51,12 @@ updated: 2026-07-16
 - @entities/tools/autoresearch-genealogy.md — K157 Claude Code vault + archival agent prompts (Integrate)
 - @entities/tools/topola-viewer.md — K157 static GEDCOM fan/hourglass charts (Extract)
 - @entities/tools/liberu-genealogy-laravel.md — K157 php-dna triangulation extract (optional)
+- @entities/tools/dhfbk-tint.md — K175 Integrate Italian NLP post-HTR (GPL; Phase-0)
+- @entities/tools/codice-fiscale-js.md — K175 Extract comuni/soppressi matrix
+- @entities/tools/censusreporter.md — K175 Extract US census staging schemas
+- @entities/tools/timemagazine-babynames.md — K175 Extract SSA name-frequency priors
 - @sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md — K157 eval batch
+- @sources/eval-url-revenue-and-project-analysis-2026-07-20.md — K175 journalism + Italian entity batch
 - @concepts/cemini-wiki-ingest-workflow.md — parallel “don’t invent Tier-3 autonomy” discipline for personal archives
 - @concepts/active-project-research-routing.md — K156 co-primary family-tree routing
 
@@ -72,10 +86,13 @@ Realistic depth: **civil alone** often reaches early 1800s; **parish** can push 
 4. **Kinship store** — SQLite + recursive CTEs (lightweight) or Neo4j Person/Union graph (heavier).
 5. **IIIF pull** — download Antenati (and other IIIF) registries for offline review (`gcerretani/antenati`).
 6. **HTR** — Transkribus models or multimodal LLM on page images (ceremonial Latin abbreviations).
-7. **Entity resolution** — Double Metaphone (+ edit distance) for Latinization / dialect spelling drift.
+7. **Entity resolution** — Double Metaphone (+ edit distance) for Latinization / dialect spelling drift; optional SSA name-frequency priors (`TimeMagazineLabs/babynames`, K175) as soft weights only.
 8. **Reverse genealogy** — collateral godparent/witness graphs when the direct line vanishes.
 9. **Agent research loops (K157)** — `mattprusak/autoresearch-genealogy` vault templates for timeline-gap runs; human-verify every imported fact before GEDCOM merge.
 10. **Visualization (K157)** — `PeWu/topola-viewer` on exported GEDCOM for fan/hourglass dead-end discovery (static, no server DB).
+11. **Italian NLP post-HTR (K175)** — `dhfbk/tint` for Italian POS/NER on transcribed acts (Phase-0; GPL; not auto-merge).
+12. **Comune validation (K175)** — `CodiceFiscaleJS` municipality / *comuni soppressi* matrix as lookup (CC-BY-SA; human confirm vs act).
+13. **US census staging schemas (K175)** — Census Reporter PostgreSQL/API patterns beside Steve Morse ED Finder.
 
 ### Cemini operating rules
 

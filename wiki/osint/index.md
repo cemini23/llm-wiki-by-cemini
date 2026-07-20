@@ -12,13 +12,23 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **797 canonical stubs** (K174 + K173 + K172 + K171)
+Total: **807 canonical stubs** (K176 + K175 + K174 + K173 + K172)
 
+### k176-ingest (2)
 
+- [GPUOLOGY Genealogy Business Analysis (2026-07-20)](sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md) — Gemini DR CONDITIONAL-GO hybrid kit+CF+concierge; rename risk. — `docx` [+k176]
+- [GPUOLOGY / genealogy agent kit](concepts/gpuology-genealogy-agent-kit.md) — product strategy concept. — concept [+k176]
 
+### k175-ingest (8)
 
-
-
+- [URL Revenue and Project Analysis (2026-07-20)](sources/eval-url-revenue-and-project-analysis-2026-07-20.md) — Tint Integrate; CodiceFiscaleJS/censusreporter/babynames/538 Extract; bees+aztec Watch. — `docx` [+k175]
+- [Tint (dhfbk)](entities/tools/dhfbk-tint.md) — Italian NLP Integrate GPL Phase-0. — entity [+k175]
+- [CodiceFiscaleJS](entities/tools/codice-fiscale-js.md) — comuni soppressi Extract CC-BY-SA. — entity [+k175]
+- [Census Reporter](entities/tools/censusreporter.md) — US census staging Extract MIT. — entity [+k175]
+- [Time Magazine babynames](entities/tools/timemagazine-babynames.md) — SSA name priors Extract MIT. — entity [+k175]
+- [FiveThirtyEight data](entities/tools/fivethirtyeight-data.md) — CeminiDFS Extract CC-BY-4.0. — entity [+k175]
+- [beeswithmachineguns](entities/tools/beeswithmachineguns.md) — pm-canary load-test Watch. — entity [+k175]
+- [aztec_experiments](entities/tools/aztec-experiments.md) — PM privacy Watch. — entity [+k175]
 
 ### k174-ingest (7)
 

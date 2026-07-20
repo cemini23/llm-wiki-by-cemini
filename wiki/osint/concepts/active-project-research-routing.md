@@ -4,6 +4,8 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy]
 keywords: [brief-routing, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
 related:
+  - concepts/gpuology-genealogy-agent-kit.md
+  - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - meta/daily-research-digest-cadence.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/computational-genealogy-archival-automation.md
@@ -13,6 +15,8 @@ related:
   - concepts/devfun-poker-agent-challenge-2026.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
+  - sources/eval-url-revenue-and-project-analysis-2026-07-20.md
+  - entities/tools/fivethirtyeight-data.md
   - "@gambling-wiki/concepts/diy-nfl-dfs-model-architecture.md"
   - "@gambling-wiki/entities/tools/ceminidfs.md"
   - entities/tools/wc-ticket-monitor.md
@@ -23,10 +27,12 @@ related:
   - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
 maturity: core
 created: 2026-06-17
-updated: 2026-07-12
+updated: 2026-07-20
 ---
 
 ## Relations
+- @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
+- @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
 
 - @meta/daily-research-digest-cadence.md — morning digest config
 - @concepts/cemini-wiki-ingest-workflow.md — four-phase pipeline
@@ -37,6 +43,8 @@ updated: 2026-07-12
 - @concepts/xsp-lane-trading-framework.md — XSP killer lanes A–D
 - @concepts/devfun-poker-agent-challenge-2026.md — researcher track pivot (K122)
 - @ccc-wiki/concepts/deep-research-evaluation-prompt.md — bulk URL eval v10 (revenue-first; `genealogy overlap`)
+- @sources/eval-url-revenue-and-project-analysis-2026-07-20.md — K175 family-tree + CeminiDFS extracts
+- @entities/tools/fivethirtyeight-data.md — K175 CeminiDFS Extract
 
 ## Raw Concept
 

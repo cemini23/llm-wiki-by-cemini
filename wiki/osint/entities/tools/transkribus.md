@@ -4,21 +4,27 @@ type: entity
 tags: [tool, genealogy, htr, paleography, draft]
 keywords: [Transkribus, READ-COOP, handwriting recognition, Latin, PAGE XML]
 related:
+  - concepts/gpuology-genealogy-agent-kit.md
+  - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
+  - entities/tools/dhfbk-tint.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
   - concepts/computational-genealogy-archival-automation.md
   - entities/tools/gcerretani-antenati.md
   - entities/tools/italian-parish-records.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-20
 ---
 
 ## Relations
+- @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
+- @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
 
 - @sources/gemini-automated-deep-genealogy-research-2026-07-09.md — HTR section primary cite
 - @concepts/computational-genealogy-archival-automation.md — parish/notarial transcription layer
 - @entities/tools/gcerretani-antenati.md — typical image source for Italian civil packs
 - @entities/tools/italian-parish-records.md — parish image corpus companion (K154)
+- @entities/tools/dhfbk-tint.md — K175 Italian NLP after HTR/OCR text exists
 
 ## Raw Concept
 

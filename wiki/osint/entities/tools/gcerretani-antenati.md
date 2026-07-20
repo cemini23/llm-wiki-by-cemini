@@ -4,6 +4,8 @@ type: entity
 tags: [tool, genealogy, antenati, iiif, python, draft]
 keywords: [IIIF, Portale Antenati, Italian civil registers, offline archival]
 related:
+  - concepts/gpuology-genealogy-agent-kit.md
+  - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
   - concepts/computational-genealogy-archival-automation.md
@@ -11,10 +13,12 @@ related:
   - entities/tools/transkribus.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-07-20
 ---
 
 ## Relations
+- @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
+- @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
 
 - @sources/gemini-automated-deep-genealogy-research-2026-07-09.md — cited as Antenati automation path
 - @sources/gemini-italian-ancestry-deep-research-2026-07-09.md — reaffirmed Priority-2 in K154 tool matrix
@@ -34,6 +38,7 @@ Open-source Python CLI aimed at Italy’s Portale Antenati IIIF image delivery �
 | **Fit** | Town-locked deep research when name indexes are empty and page browse is required |
 | **Verdict** | **Watch / conditional Phase-0** — useful pointer; confirm license + Antenati usage terms before production scripts |
 | **Not for** | Creating pedigree facts without reading images; FamilySearch Shadow-DOM scraping |
+| **K176 commercial posture** | Download to **user’s local machine** for personal/research use (Italian Ministry decrees cited in DR). Central commercial hosting of Antenati images → concession fees / ToS risk. AWS WAF challenges common. Legal review required before kit ships IIIF agent. [Source: @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md] |
 
 Cited in @sources/gemini-automated-deep-genealogy-research-2026-07-09.md alongside generic IIIF downloaders.
 

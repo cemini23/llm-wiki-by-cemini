@@ -1,6 +1,6 @@
 # Wiki Log
 
-updated: 2026-07-19
+updated: 2026-07-20
 ---
 
 ---
@@ -8,6 +8,30 @@ updated: 2026-07-19
 
 
 
+
+## [2026-07-20] adopt | K175 extracts + Tint RAM smoke
+
+- **Copied** CodiceFiscaleJS + babynames (+ Tint tree) → `~/Desktop/family/research/tools/` (private; not wiki git)
+- **Tint:** `mvn -DskipTests package` SUCCESS (build peak ~410 MB RSS); `TintRunner` infer smoke SUCCESS (peak **~1.2 GB** RSS) — notes `TINT-SMOKE-2026-07-20.md`
+- **Wiki entities** updated with install paths + smoke numbers
+
+## [2026-07-20] ingest | K176 — GPUOLOGY Genealogy Business Analysis (Gemini DR)
+
+- **Inbox (1):** GPUOLOGY Genealogy Business Analysis.docx — sha256 `b2f2ab00…` — archive egress-fi
+- **Verdict:** CONDITIONAL-GO hybrid BYO-auth kit + Cloudflare Access + jure sanguinis concierge; **rename** GPUOLOGY (Civile Sprints / ArchivalAgent / DiasporaDesk)
+- **Wiki:** source + concept `gpuology-genealogy-agent-kit`; FS API / Antenati / Topola / Transkribus / autoresearch / playbook / routing backlinked
+- **Briefs:** product brief rewritten; private `~/Desktop/family/research/2026-07-20_k176-gpuology-market-dr.md`
+- **Hard gates:** Ancestry May 2026 ToS [NEEDS VERIFICATION live]; FS compatibility review; Antenati local-personal-use only
+
+## [2026-07-20] ingest | K175 — URL Revenue / Italian entity + journalism data
+
+- **Inbox (1):** URL Revenue and Project Analysis.docx — sha256 `746c309c…` — archive egress-fi
+- **Tiers:** Integrate tint (GPL Phase-0); Extract CodiceFiscaleJS + censusreporter + babynames + fivethirtyeight/data; Watch beeswithmachineguns + aztec_experiments; Context Italian awesome lists + CCC tokenization brief; Pass 6 newsroom frontends
+- **Wiki:** source + 7 entities; computational-genealogy + Italian playbook + routing updated; GPUOLOGY brief §8b
+- **Briefs:** `~/Desktop/family/research/2026-07-20_k175-…`; CeminiDFS 538 extract; CCC tokenization Context
+- **Phase-0:** `scripts/adopt_k175_phase0.sh` — Integrate + Extract audited (Watch metadata-only)
+- **License:** `.local/reports/license-spot-check-2026-07-20-0802.txt`
+- **Phase-0 complete:** `.local/reports/k175-phase0-2026-07-20.md` — shallow `/tmp/k175-*-audit` clones only; no permanent install. Verdicts: tint **CONDITIONAL-GO** (private family); CodiceFiscaleJS + censusreporter + babynames + fivethirtyeight/data **GO (extract)**; beeswithmachineguns + aztec_experiments **NO-GO install (Watch)**
 
 ## [2026-07-19] ingest | K174 — tool-eval + Macro/CF/WuBlock
 

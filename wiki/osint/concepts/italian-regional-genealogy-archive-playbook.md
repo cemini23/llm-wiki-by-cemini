@@ -4,6 +4,8 @@ type: concept
 tags: [genealogy, archival, italy, abruzzo, calabria, trentino, draft]
 keywords: [copia integrale, PEC, Catasto Onciario, Cassa Sacra, Liste di Leva, NatiTrentino, Sellia, Colledimacine, Val di Non]
 related:
+  - concepts/gpuology-genealogy-agent-kit.md
+  - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - entities/tools/espanso.md
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
@@ -14,12 +16,19 @@ related:
   - entities/tools/steve-morse-census-tools.md
   - entities/tools/italian-parish-records.md
   - entities/tools/gcerretani-antenati.md
+  - entities/tools/codice-fiscale-js.md
+  - entities/tools/dhfbk-tint.md
+  - sources/eval-url-revenue-and-project-analysis-2026-07-20.md
+  - concepts/active-project-research-routing.md
+  - entities/tools/autoresearch-genealogy.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-15
+updated: 2026-07-20
 ---
 
 ## Relations
+- @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
+- @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
 
 - @sources/gemini-italian-ancestry-deep-research-2026-07-09.md — primary synthesis (K154)
 - @sources/gemini-automated-deep-genealogy-research-2026-07-09.md — K153 era ladder companion
@@ -29,6 +38,11 @@ updated: 2026-07-15
 - @entities/tools/italian-parish-records.md — parish digitization
 - @sources/gemini-sellia-calabria-archive-routing-2026-07-11.md — K159 Sellia deep routing
 - @entities/tools/gcerretani-antenati.md — Antenati IIIF pull
+- @entities/tools/codice-fiscale-js.md — K175 comune / soppressi validation extract
+- @entities/tools/dhfbk-tint.md — K175 Italian NLP (Integrate, Phase-0)
+- @sources/eval-url-revenue-and-project-analysis-2026-07-20.md — K175 civic-tech indexes (Context)
+- @concepts/active-project-research-routing.md — co-primary family-tree routing
+- @entities/tools/autoresearch-genealogy.md — vault prompts companion
 
 ## Raw Concept
 
