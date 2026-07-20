@@ -71,9 +71,13 @@ Gemini returns **CONDITIONAL-GO [HIGH]** for a hybrid **BYO-auth agent kit + pri
 
 **“Stato Civile Baseline Protocol”** ~$499–$899: Mac setup + autoresearch prompts for Antenati + Transkribus credits (~50 acts) + private `.gdz` on Cloudflare Access. Upsell: concierge sprint ≥$2,500 for certified *copie* / translation / apostille.
 
-### Kill criteria (6 months)
+### Kill criteria (6 months) — as written in DR
 
 FS API rejection as extract tool · GAIA-class end-to-end foreign doc automation destroys concierge margin · CAC >$300 for kit · Antenati WAF permanently blocks IIIF agent pulls.
+
+### Operator override (2026-07-20)
+
+Operator **rejects** ToS / FS-compatibility / Antenati-WAF items as product kills. Doctrine: people’s own genealogical information should stay reachable; FS + Antenati + Ancestry-class research assist remain **in program**. See `@concepts/gpuology-genealogy-agent-kit.md` § Operator doctrine. Retain DR for pricing/wedge only.
 
 ### Operator caveats
 

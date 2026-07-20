@@ -9,6 +9,18 @@ updated: 2026-07-20
 
 
 
+## [2026-07-20] decision | GPUOLOGY UX = intake dump + agent run; PII/SSN security ship gate
+
+- User flow: dump all family info (incl. SSN-class) → program runs archival ladder; human gates only on merges/filings
+- Security: local-first vault · identity_secret encryption · LLM secret-strip · redacted share · concierge retention/destroy
+- Canon: `@concepts/gpuology-genealogy-agent-kit.md` + product brief
+
+## [2026-07-20] decision | GPUOLOGY open-access doctrine (ToS not a kill)
+
+- Operator: vendor ToS is **not** a product kill criterion; FS + Antenati + Ancestry-class research assist **stay in program** (same class as private family sprint)
+- Updated `@concepts/gpuology-genealogy-agent-kit.md` + private product brief; K176 source annotated (DR ToS kills superseded)
+- Real constraints remain ops (WAF/rate limits/account risk) — engineer, don’t drop
+
 ## [2026-07-20] adopt | K175 extracts + Tint RAM smoke
 
 - **Copied** CodiceFiscaleJS + babynames (+ Tint tree) → `~/Desktop/family/research/tools/` (private; not wiki git)

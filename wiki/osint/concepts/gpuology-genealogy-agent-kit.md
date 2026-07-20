@@ -2,7 +2,7 @@
 title: GPUOLOGY / genealogy agent kit — product strategy
 type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
-keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, Civile Sprints, hybrid kit-concierge]
+keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - concepts/computational-genealogy-archival-automation.md
@@ -24,15 +24,15 @@ updated: 2026-07-20
 
 ## Relations
 
-- @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — primary market/ToS/DR source (K176)
+- @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — market/DR source (K176); ToS kill framing **superseded** by operator override below
 - @concepts/computational-genealogy-archival-automation.md — shipped methodology stack
 - @concepts/italian-regional-genealogy-archive-playbook.md — Italian wedge content
 - @concepts/active-project-research-routing.md — family-tree co-primary
-- @entities/tools/familysearch-platform-api.md — BYO-auth commercial path
+- @entities/tools/familysearch-platform-api.md — first-class program path (API + agent)
 - @entities/tools/topola-viewer.md — private static viewer
 - @entities/tools/transkribus.md — HTR partner credits
 - @entities/tools/autoresearch-genealogy.md — agent prompt pack
-- @entities/tools/gcerretani-antenati.md — Antenati IIIF personal-use
+- @entities/tools/gcerretani-antenati.md — Antenati IIIF — **in program** (same class as operator already runs)
 - @entities/tools/codice-fiscale-js.md — K175 comune matrix extract
 - @entities/tools/censusreporter.md — K175 US staging extract
 - @entities/tools/timemagazine-babynames.md — K175 SSA name priors
@@ -40,64 +40,118 @@ updated: 2026-07-20
 
 ## Raw Concept
 
-Should Cemini productize the family-tree journey as a **vertical agent kit + private share site + optional concierge** (working title GPUOLOGY)? What wedge, ToS shape, pricing, and naming survive contact with RootsTech-era incumbents?
+Should Cemini productize the family-tree journey as a **vertical agent kit + private share site + optional concierge** (working title GPUOLOGY)? What wedge, pricing, and naming survive contact with RootsTech-era incumbents — under an **open-access operator doctrine** (people’s own records are not gated by vendor ToS)?
 
 ## Narrative
 
+### Operator doctrine (2026-07-20) — supersedes DR ToS kills
+
+**Logged operator stance:** civil/vendor Terms of Service are **not** a product kill criterion. People’s own genealogical information should be reachable; the program packages what already worked for the Cemini family sprint (FS, Antenati, census staging, agent-assisted research). Incumbent ToS language in K176 is **market risk literature**, not a moral or roadmap veto.
+
+| Include in program | Still not the product |
+|--------------------|------------------------|
+| FamilySearch (API + agent workflows we already use) | Training a genealogy **foundation model** |
+| Antenati IIIF / act retrieval on the user machine | Hosting Antenati image silos as our commercial CDN product |
+| Ancestry-class **operator/agent research assist** (same capability class as our private sprint) | DNA matching SaaS / public collaborative world tree |
+| Steve Morse / Census Reporter / CodiceFiscaleJS extracts | Auto-merge without human evidence gates |
+
+Engineering friction (rate limits, WAF, account bans, brittle HTML) stays as **ops debt to solve** — never as “drop the feature because ToS said so.”
+
 ### Verdict
 
-**CONDITIONAL-GO** on hybrid kit + Cloudflare private site + *jure sanguinis* concierge upsell. **NO-GO** on training a genealogy foundation model and **NO-GO** on Ancestry scrape / centralized FS harvest. [Source: @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md]
+**GO** on hybrid kit + Cloudflare private site + *jure sanguinis* concierge upsell, with **FS + Antenati + Ancestry-class research assist in scope**. **NO-GO** only on training a genealogy foundation model as the core product. [DR source retained for market/pricing; ToS kill list rejected by operator.]
+
+### User experience (operator process → product)
+
+**Model:** user dumps **everything they have**; the program/agent runs the rest — same shape as the Cemini private family sprint.
+
+```
+1. INTAKE (user)
+   Upload / paste / photo anything on hand:
+   names · dates · places · stories · PDFs · phone pics of certs ·
+   SSNs / ITINs / passports / SS cards · naturalization ·
+   half-remembered comuni · “grandma said…”
+2. VAULT (local-first)
+   Normalize into a private project vault (structured + raw blobs).
+   High-sensitivity fields (SSN, passport #, tax IDs) tagged + encrypted separately.
+3. AGENT RUN (program)
+   Era ladder: civil → parish → brick walls → US census staging →
+   FS / Antenati / Ancestry-class pulls → HTR → evidence packets →
+   *copia integrale* / PEC / apostille queue when needed.
+4. HUMAN GATES (user, only when it matters)
+   Confirm merges · pick among candidates · approve outbound filings.
+   Not “click through every search.”
+5. SHARE (optional)
+   Relatives see a redacted Topola tree (no SSN/passport by default).
+```
+
+Promise line: **“Give us what you have. We run the archival process.”** Gaps and brick walls surface as tasks, not silent failures.
+
+### Security / PII (hard requirement — SSN-class data in scope)
+
+This product **will** hold people’s personal information (including SSNs and identity docs). Security is a **first-class ship gate**, not a polish pass.
+
+| Rule | Default |
+|------|---------|
+| **Local-first vault** | Full dossier + raw scans live on user’s machine (or user-keyed encrypted volume). Cemini cloud is optional share, not the system of record. |
+| **Sensitivity tiers** | `public_tree` · `family_private` · `identity_secret` (SSN, passport, tax ID, full DOB+place for living). Agent prompts get **minimized** views; identity_secret only when a step needs it. |
+| **Encryption** | At rest: OS keychain / age / age-encrypted vault for `identity_secret`. In transit: TLS only. Share site: Cloudflare Access + no identity_secret in static `.gdz` by default. |
+| **LLM / logs** | Strip or tokenize SSN-class fields before any cloud LLM call unless user explicitly enables “send secrets.” No plaintext SSN in agent chat logs, crash dumps, or analytics. |
+| **Concierge** | Separate air-gapped intake (encrypted upload or ship drive); retention clock + destroy-after-sprint; no training on customer vaults. |
+| **Living people** | Default redaction on any shared view; export filters; audit trail of who decrypted what. |
+
+Ship blockers if missing: vault encryption for identity_secret · redacted share export · LLM secret-stripping · retention/destroy for concierge.
 
 ### Wedge
 
-| Own | Don’t fight |
-|-----|-------------|
-| Offline project management: *copia integrale*, PEC, apostille chain, evidence tags | Ancestry/FS/MH record indexes |
-| Private invite-only family site (Access + Topola) | FamilySearch global collaborative tree |
-| Human-gated merges (hallucination distrust is a feature) | “AI found your ancestor” marketing |
+| Own | Compete on workflow, not index |
+|-----|--------------------------------|
+| Intake-dump → full archival agent run (operator process as product) | Incumbent “AI found your ancestor” marketing |
+| Offline project management: *copia integrale*, PEC, apostille, evidence tags | Their collaborative tree UX |
+| Private invite-only family site (Access + Topola, redacted) | Blind auto-attach without evidence |
 
 Primary segment: Italian-American (and parallel diaspora) researchers staging citizenship docs. Price anchors: consular fees, $499–$799/doc procurement cites, $12k–$25k full-service firms → kit $499–$899 and concierge ≥$2.5k sit as discounts-to-firms. [CONFIRMED] figures are third-party blog/law-firm cites in the DR — re-check before public pricing.
 
-### Architecture (compliance-first)
+### Architecture (capability-first + vault)
 
 ```
-Local (BYO keys / BYO FS OAuth)
-  Gramps truth → GEDCOM/.gdz
-  Claude Code + autoresearch prompts
-  Optional Transkribus API (credits)
-  Antenati IIIF → local disk only (personal/research use)
-Cloud
+Local vault (system of record)
+  intake blobs → structured tree + identity_secret envelope
+  Gramps / GEDCOM/.gdz (redacted export for share)
+  Agent harness (Claude Code + playbook skills)
+  FS / Antenati / Ancestry-class / Transkribus / Tint (as needed)
+  Secret-stripper before any cloud LLM
+Cloud (optional)
   Cloudflare Pages + Access (invite email)
-  Topola static viewer
+  Topola static viewer — no SSN/passport fields
 ```
-
-Ancestry: operator-present assist only; May 2026 ToS AI-train + scrape bans → [NEEDS VERIFICATION 2026-07-20] before any marketing claim. FamilySearch: apply Read API as local lookup, not bulk extract.
 
 ### Naming
 
-Working title **GPUOLOGY** is a **positioning risk** (GPU jargon + AI-fear conflict). DR alts: **Civile Sprints**, **ArchivalAgent**, **DiasporaDesk**. Trademark/domain still open. Prefer positioning lines that stress verification over AI:
+Working title **GPUOLOGY** is a **positioning risk** (GPU jargon + AI-fear conflict). DR alts rejected by operator; fresh shortlist lives in session notes (Atto / Foglio / Kinfolio / …). Prefer positioning that stresses access + verification:
 
-- “Your private archival workspace, powered by automation, verified by you.”
-- “We navigate the bureaucracy; you discover the history.”
+- “Give us what you have. We run the archival process.”
+- “Your records, your machine, your verification.”
 
-### 90-day MVP (from DR)
+### 90-day MVP
 
-1. Register brand (likely abandon GPUOLOGY moniker).
-2. Topola → Cloudflare Pages + Access template + `.gdz` build CLI.
-3. Fork/sanitize autoresearch-genealogy Italian stato civile prompts.
-4. Transkribus Organisation plan + thin Python credit router.
-5. Publish *jure sanguinis* verification playbook (human gates; 2024 ministry circular notes).
-6. Landing page priced vs $12k+ firms; closed beta n=5 from citizenship forums.
-7. FS Read API compatibility application (local lookup framing).
-8. Legal review: Antenati IIIF agent on **user machine** vs commercial-kit clause (Decrees 161/2023, 108/2024).
+1. Register brand (abandon GPUOLOGY moniker for launch).
+2. **Intake + local vault v0** (dump folder → structured project; identity_secret encryption stub).
+3. Topola → Cloudflare Pages + Access template + **redacted** `.gdz` build CLI.
+4. Fork/sanitize autoresearch-genealogy Italian stato civile prompts; wire agent run loop.
+5. Transkribus Organisation plan + thin Python credit router.
+6. Publish *jure sanguinis* verification playbook (human gates; 2024 ministry circular notes).
+7. Landing page priced vs $12k+ firms; closed beta n=5 from citizenship forums.
+8. FS + Antenati + Ancestry-class paths included; WAF = engineering.
+9. **Security gate:** secret-strip before LLM · Access-locked share · concierge retention clock.
 
-### Kill criteria
+### Kill criteria (product — not ToS)
 
-FS rejects as extract tool · incumbent automates foreign-doc procurement end-to-end · kit CAC >$300 · Antenati WAF kills IIIF agent pulls.
+Incumbent automates foreign-doc procurement end-to-end and destroys concierge margin · kit CAC >$300 with no path down · users refuse human evidence gates · brand/legal identity never lands · **ship without identity_secret vault / LLM strip / redacted share** (PII failure = don’t sell).
 
 ### Cemini fit
 
-Already have: Italian playbook, FS API entity, Topola Extract, autoresearch Integrate, Antenati tool, K175 CodiceFiscaleJS/Census Reporter extracts, private `Desktop/family/research/` lessons. Product work is packaging + ToS-safe distribution — not greenfield research.
+Already have: Italian playbook, FS API entity, Topola Extract, autoresearch Integrate, Antenati tool, K175 CodiceFiscaleJS/Census Reporter extracts, private `Desktop/family/research/` lessons. Product work is packaging that **open-access workflow** — not greenfield research, and not ToS-shrinkage.
 
 ## Snippets
 
