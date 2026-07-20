@@ -4,6 +4,7 @@ type: source
 tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, re-drop, flow-matching, robotics, evolutionary-games]
 related:
+  - sources/inbox-arxiv-reject-batch-2026-07-20.md
   - sources/inbox-arxiv-reject-batch-2026-07-18.md
   - sources/inbox-arxiv-reject-batch-2026-07-17.md
   - concepts/flow-field-pathfinding.md

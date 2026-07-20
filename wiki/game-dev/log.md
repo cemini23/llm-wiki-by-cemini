@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-20] ingest | 3 arXiv rejects (lockstep-query false positives)
+
+- Inbox: 3 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-20.md (all reject); archived; inbox cleared
+- 2607.15583 UAS swarm LTL surveillance (eess.SY); 2607.15597 atom–ion CZ gate (quant-ph); 2607.15945 spot-covariance rank test (math.ST → @osint note only, no prod brief)
+- Config: tighten `lockstep-deterministic` arxiv_query (drop bare deterministic/simulation)
+- Phase-0 / local adopt / briefs: none
+- Sweep: @sweeps/2026-07-20-daily.md (arxiv-only; news disabled)
+
+---
+
 ## [2026-07-19] ingest | 5 arXiv re-drops (preingest DUPLICATE; payload indexer lag)
 
 - Inbox: 5 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-19.md (all reject re-drop); archived; inbox cleared
