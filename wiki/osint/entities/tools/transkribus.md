@@ -12,15 +12,17 @@ related:
   - entities/tools/gcerretani-antenati.md
   - entities/tools/italian-parish-records.md
   - sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md
+  - sources/gemini-italian-civil-register-extraction-2026-07-21.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 ## Relations
 - @sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md — K177 LLM-NAS HTR Watch (contrast)
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
+- @sources/gemini-italian-civil-register-extraction-2026-07-21.md — K180 Italian Handwriting M1 + layout/marginalia; human-in-loop
 
 - @sources/gemini-automated-deep-genealogy-research-2026-07-09.md — HTR section primary cite
 - @concepts/computational-genealogy-archival-automation.md — parish/notarial transcription layer

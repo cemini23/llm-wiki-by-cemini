@@ -7,15 +7,17 @@ related:
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/eval-url-revenue-and-project-analysis-2026-07-20.md
+  - sources/gemini-italian-place-name-resolution-2026-07-21.md
   - concepts/computational-genealogy-archival-automation.md
   - concepts/italian-regional-genealogy-archive-playbook.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 ## Relations
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy (K176)
+- @sources/gemini-italian-place-name-resolution-2026-07-21.md — K180 Belfiore PK / soppressi temporal model
 
 - @sources/eval-url-revenue-and-project-analysis-2026-07-20.md — K175 Extract
 - @concepts/computational-genealogy-archival-automation.md — geo entity resolution

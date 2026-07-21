@@ -16,6 +16,7 @@ related:
   - entities/tools/censusreporter.md
   - entities/tools/timemagazine-babynames.md
   - entities/tools/dhfbk-tint.md
+  - sources/gemini-italian-genealogy-research-tools-2026-07-21.md
   - concepts/active-project-research-routing.md
 maturity: draft
 read_status: read

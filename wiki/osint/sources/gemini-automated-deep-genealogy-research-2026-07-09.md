@@ -8,6 +8,7 @@ related:
   - concepts/computational-genealogy-archival-automation.md
   - concepts/italian-regional-genealogy-archive-playbook.md
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
+  - sources/gemini-portale-antenati-research-guide-2026-07-21.md
   - entities/tools/gcerretani-antenati.md
   - entities/tools/transkribus.md
   - entities/tools/familysearch-platform-api.md

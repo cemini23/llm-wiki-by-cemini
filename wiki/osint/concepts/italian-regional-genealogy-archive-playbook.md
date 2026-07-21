@@ -11,6 +11,11 @@ related:
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
   - sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md
   - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
+  - sources/gemini-portale-antenati-research-guide-2026-07-21.md
+  - sources/gemini-italian-place-name-resolution-2026-07-21.md
+  - sources/gemini-italian-american-genealogy-sources-2026-07-21.md
+  - concepts/antenati-deep-link-grammar.md
+  - concepts/us-italy-hometown-reveal-ladder.md
   - concepts/computational-genealogy-archival-automation.md
   - entities/tools/nati-in-trentino.md
   - entities/tools/steve-morse-census-tools.md
@@ -23,12 +28,17 @@ related:
   - entities/tools/autoresearch-genealogy.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 ## Relations
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
+- @sources/gemini-portale-antenati-research-guide-2026-07-21.md — K180 search-registry / dual-original
+- @sources/gemini-italian-place-name-resolution-2026-07-21.md — K180 frazione / soppressi / BeWeB·SIUSA exceptions
+- @sources/gemini-italian-american-genealogy-sources-2026-07-21.md — K180 US→comune ladder
+- @concepts/antenati-deep-link-grammar.md — deep-link builders
+- @concepts/us-italy-hometown-reveal-ladder.md — staging before regional dig
 
 - @sources/gemini-italian-ancestry-deep-research-2026-07-09.md — primary synthesis (K154)
 - @sources/gemini-automated-deep-genealogy-research-2026-07-09.md — K153 era ladder companion

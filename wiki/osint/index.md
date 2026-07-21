@@ -12,7 +12,29 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **825 canonical stubs** (K178 + K177 + K176 + K175 + K174 + K173 + K172)
+Total: **835 canonical stubs** (K181 + K180 + K179 + K178 + K177 + K176 + K175 + K174 + K173 + K172)
+
+### k181-ingest (2)
+
+- [VIR-5500 Commercial Strategy Dossier (Gemini DR v2)](sources/gemini-vir-5500-commercial-strategy-dossier-2026-07-21.md) — demand funnel, community/REMS binary, ARX517/JANX014 crowdedness, peak CF bridge. — `docx` [+k181]
+- [Vir Biotechnology (VIR)](entities/tickers/vir.md) — commercial layer updated from v2; REMS/ocular kill added. — ticker [+k181]
+
+### k180-ingest (9)
+
+- [Portale Antenati Research Guide](sources/gemini-portale-antenati-research-guide-2026-07-21.md) — search-registry deep links + ARK + dual-original. — `docx` [+k180]
+- [Italian Civil Register Extraction](sources/gemini-italian-civil-register-extraction-2026-07-21.md) — act layout + HTR (Transkribus M1) + evidence packets. — `docx` [+k180]
+- [Italian-American Genealogy Sources](sources/gemini-italian-american-genealogy-sources-2026-07-21.md) — US hometown reveal ladder. — `docx` [+k180]
+- [Italian Place Name Resolution](sources/gemini-italian-place-name-resolution-2026-07-21.md) — Belfiore PK + soppressi temporal graph. — `docx` [+k180]
+- [Italian Genealogy Research Tools](sources/gemini-italian-genealogy-research-tools-2026-07-21.md) — Processetti gap + cassette/human-gate product wedge. — `docx` [+k180]
+- [Antenati deep-link grammar](concepts/antenati-deep-link-grammar.md) — Atto FIND URL builders. — concept [+k180]
+- [US→Italy hometown reveal ladder](concepts/us-italy-hometown-reveal-ladder.md) — ranked deep-link checklist. — concept [+k180]
+- [Computational genealogy archival automation](concepts/computational-genealogy-archival-automation.md) — hub updated K180. — concept
+- [GPUOLOGY / genealogy agent kit](concepts/gpuology-genealogy-agent-kit.md) — product hub updated K180. — concept
+
+### k179-ingest (2)
+
+- [VIR-5500 Equity Research Dossier (Gemini DR)](sources/gemini-vir-5500-equity-dossier-2026-07-21.md) — prostate TCE thesis; cutoff discipline; Sanofi/N conflicts flagged. — `docx` [+k179]
+- [Vir Biotechnology (VIR)](entities/tickers/vir.md) — VIR-5500-first draft ticker; HDV secondary. — ticker [+k179]
 
 ### k178-ingest (6)
 
@@ -1164,6 +1186,7 @@ Six-section institutional template: Business Overview · Competitive Landscape �
 - [SPDR S&P 500 ETF (SPY)](entities/tickers/spy.md) — indices / S&P 500 (indexed 2026-04-27) — ticker-report, gemini-deep-research
 - [Tesla (TSLA)](entities/tickers/tsla.md) — high beta — ticker-report, gemini-deep-research
 - [Toast (TOST)](entities/tickers/tost.md) — fintech / restaurant SaaS (Donny note 2026-05-09) — market-research
+- [Vir Biotechnology (VIR)](entities/tickers/vir.md) — `[DRAFT 2026-07-21]` biotech; VIR-5500 prostate TCE primary; commercial v2 K181 — ticker-report, gemini-deep-research, k179, k181
 
 #### K43 ticker additions (2026-05-13, WW #178 / Donny)
 

@@ -4,16 +4,20 @@ type: entity
 tags: [tool, genealogy, census, nyc, free, draft]
 keywords: [Steve Morse, Enumeration District, 1940 census, 1950 census, Unified ED Finder]
 related:
+  - sources/gemini-italian-american-genealogy-sources-2026-07-21.md
+  - concepts/us-italy-hometown-reveal-ladder.md
   - sources/gemini-italian-ancestry-deep-research-2026-07-09.md
   - concepts/italian-regional-genealogy-archive-playbook.md
   - entities/tools/censusreporter.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 ## Relations
 
+- @sources/gemini-italian-american-genealogy-sources-2026-07-21.md — K180 Ellis One-Step White/Gold as hometown ladder step 1
+- @concepts/us-italy-hometown-reveal-ladder.md — ranked US→comune checklist
 - @sources/gemini-italian-ancestry-deep-research-2026-07-09.md — Priority-1 for Brooklyn/Jersey immigrant staging
 - @concepts/italian-regional-genealogy-archive-playbook.md — US address → ED → image browse
 - @entities/tools/censusreporter.md — K175 schema/API extract complementary to ED Finder

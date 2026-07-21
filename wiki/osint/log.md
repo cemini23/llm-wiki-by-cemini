@@ -1,13 +1,71 @@
 # Wiki Log
 
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
----
+## [2026-07-21] ingest | K181 — VIR-5500 Commercial Strategy Dossier (Gemini DR v2)
 
+- **Inbox:** `VIR-5500 Commercial Strategy Dossier.docx` — preingest **NEW** (sha256 `24c7ff3b…47335`); Substack RSS leftovers **left in inbox**
+- **Wiki:** source `sources/gemini-vir-5500-commercial-strategy-dossier-2026-07-21.md`; `entities/tickers/vir.md` commercial funnel + REMS/ocular kill + ARX517/JANX014 crowdedness; bidirectional link to v1 equity dossier
+- **Adopt:** community outpatient vs heme-TCE REMS as commercial binary; share-fight not monopoly; commercial kill = inpatient/48h or ophthalmology mandate
+- **Demote / NV:** Pluvicto WAC $42.5k vs prior $51k; “EV prices VIR-5500 at zero”; peak CF ~$357M arithmetic (Speculative); pasritamig 64.7% combo ≠ mono RP2D
+- **Laptop:** briefs deep-research report companion list; extract `.local/reports/2026-07-21_vir-5500-commercial-strategy-dossier-extract.md`
+- **Archive:** egress-fi `osint/` (this session)
 
+## [2026-07-21] ingest | K180 — Atto deep-research pentad (Antenati / US ladder / place / HTR / tools)
 
+- **Inbox (5 NEW docx):** Portale Antenati Research Guide · Italian Civil Register Extraction · Italian-American Genealogy Source Research · Italian Genealogy Software Data · Italian Genealogy Research Tools — Substack RSS LIKELY leftovers **left in inbox**
+- **Wiki:** 5 sources + 2 concepts (`antenati-deep-link-grammar`, `us-italy-hometown-reveal-ladder`); hubs updated (computational-genealogy, italian-regional playbook, gpuology kit, gcerretani-antenati, Transkribus, Steve Morse)
+- **Product deltas for Atto:** `search-registry` deep links (`localita`/`tipologia`/`anno`/`lang=it`); ARK citations; dual-original Comune pivot; Belfiore PK; ranked US hometown ladder; Processetti multi-doc gap; Transkribus Italian M1 human-in-loop (no LLM-NAS)
+- **Brief:** `../atto/briefs/2026-07-21_k180-antenati-find-layer.md` (+ private mirror Desktop/family/research)
+- **Archive:** egress-fi `osint/` for 5 docx; RSS untouched
 
+## [2026-07-21] query | VIR-5500 commercial deep dive (peak sales / prescription breadth)
+
+- Verdict: franchise can be Pluvicto-class specialty blockbuster; not Xtandi-wide; VIR owns shared slice (50/50 US)
+- Brief: `briefs/2026-07-21_vir-5500-commercial-deep-dive.md` · canvas `vir-5500-commercial-deep-dive`
+- Wiki: commercial paragraph on `entities/tickers/vir.md`
+
+## [2026-07-21] query | VIR earnings fundamentals / EBITDA
+
+- Q1’26: rev ~0, op loss $(132)M, net $(126)M / $(0.85), ≈EBITDA ~$(130)M, OCF $(132)M
+- FY’25: rev $68.6M (Norgine), op loss $(479)M, net $(438)M / $(3.16), OCF $(392)M
+- No positive EBITDA; not a screenable multiple name — runway/partners matter
+- Wiki/brief fundamentals tables updated
+
+## [2026-07-21] query | VIR X live search (operator login)
+
+- **Jul $VIR:** HDV-first (@Biotech_Beast); quiet tape; bot noise
+- **VIR-5500/Astellas:** Apr–May IR + MS/HCW/LR paste; then fade; ASCO KOL cited stale 67% ORR
+- **Brief:** updated `briefs/2026-07-21_vir-social-scan-reddit-x.md`
+
+## [2026-07-21] query | VIR capital structure / debt / SPVs
+
+- **Finding:** no funded debt; Feb’26 follow-on ~$162M net; Astellas $75M SPA + $240M cash; ATM $300M unused; leases ~$96M; Humabs contingent ~$33M; Norgine license ≠ loan; no SPV/royalty financing found
+- **Bonus:** Q4’25 IR locks Sanofi **20%** of certain Astellas collab proceeds
+- **Wiki/brief:** capital-structure section on `entities/tickers/vir.md` + primary thesis lock table
+
+## [2026-07-21] query | VIR social scan (Reddit / X / Stocktwits)
+
+- **Finding:** Retail ST still HDV/Brii-heavy; Reddit VIR-5500 = patient/Guardian; X = PR echo; no deep investing-Reddit oncology board
+- **Brief:** `briefs/2026-07-21_vir-social-scan-reddit-x.md` · canvas `vir-social-scan-reddit-x`
+- **Wiki:** social paragraph on `entities/tickers/vir.md`
+
+## [2026-07-21] query | VIR-5500 primary-source lock pack
+
+- **Scope:** Astellas 8-K split · ASCO GU CRS · CT.gov N · Sanofi Amunix redaction · JANX007/pasritamig bar · catalysts · EV vs JANX · Brii arb
+- **Wiki:** refreshed `entities/tickers/vir.md`; source conflict table updated on Gemini dossier page
+- **Brief:** `briefs/2026-07-21_vir-5500-primary-thesis.md` lock table
+- **Canvas:** `vir-5500-research-lock-pack.canvas.tsx`
+- **Still open:** Sanofi Non-Passthrough %; undated expansion cut; combo expansion FPD; CMC skim
+
+## [2026-07-21] ingest | K179 — VIR-5500 Gemini equity dossier
+
+- **Inbox:** `VIR-5500 Equity Research Dossier.docx` (NEW; sha256 `f42a557b…`) — Substack RSS pile left in inbox (LIKELY / not this batch)
+- **Wiki:** 1 source + 1 ticker entity (`vir.md` VIR-5500-first, draft); index k179 cluster
+- **Conflicts flagged:** Sanofi skim 20% vs Gemini 3–8%; trial N 437 vs ~215; Gr≥3 CRS 0% claim; ESMO Q3 “confirmed”
+- **Briefs:** diff notes into `briefs/2026-07-21_vir-5500-primary-thesis.md`
+- **Archive:** egress-fi `osint/` for dossier docx only
 
 ## [2026-07-21] ingest | K178 — Aura generative art + CF cliff + ICE/OKX + Latent Space
 

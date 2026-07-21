@@ -15,6 +15,13 @@ related:
   - sources/gemini-sellia-calabria-archive-routing-2026-07-11.md
   - sources/gemini-abruzzo-diaspora-genealogy-2026-07-12.md
   - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
+  - sources/gemini-portale-antenati-research-guide-2026-07-21.md
+  - sources/gemini-italian-civil-register-extraction-2026-07-21.md
+  - sources/gemini-italian-american-genealogy-sources-2026-07-21.md
+  - sources/gemini-italian-place-name-resolution-2026-07-21.md
+  - sources/gemini-italian-genealogy-research-tools-2026-07-21.md
+  - concepts/antenati-deep-link-grammar.md
+  - concepts/us-italy-hometown-reveal-ladder.md
   - concepts/italian-regional-genealogy-archive-playbook.md
   - entities/tools/gcerretani-antenati.md
   - entities/tools/transkribus.md
@@ -34,7 +41,7 @@ related:
   - concepts/active-project-research-routing.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 ## Relations
@@ -42,6 +49,13 @@ updated: 2026-07-20
 - @sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md — K177 process-trace IE eval
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
+- @sources/gemini-portale-antenati-research-guide-2026-07-21.md — K180 Antenati URL grammar
+- @sources/gemini-italian-civil-register-extraction-2026-07-21.md — K180 act layout + HTR
+- @sources/gemini-italian-american-genealogy-sources-2026-07-21.md — K180 US hometown ladder
+- @sources/gemini-italian-place-name-resolution-2026-07-21.md — K180 Belfiore / soppressi
+- @sources/gemini-italian-genealogy-research-tools-2026-07-21.md — K180 Processetti + product gap
+- @concepts/antenati-deep-link-grammar.md — Atto find deep links
+- @concepts/us-italy-hometown-reveal-ladder.md — US staging checklist
 
 - @sources/gemini-automated-deep-genealogy-research-2026-07-09.md — primary synthesis source (Gemini roadmap docx)
 - @sources/gemini-italian-ancestry-deep-research-2026-07-09.md — K154 regional archive playbook companion

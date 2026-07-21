@@ -6,6 +6,7 @@ keywords: [2607.15509, handwritten-ocr, neural-architecture-search, arabic, pers
 related:
   - concepts/computational-genealogy-archival-automation.md
   - entities/tools/transkribus.md
+  - sources/gemini-italian-civil-register-extraction-2026-07-21.md
 maturity: draft
 read_status: read
 created: 2026-07-20

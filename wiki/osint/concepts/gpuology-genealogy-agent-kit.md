@@ -17,9 +17,16 @@ related:
   - entities/tools/censusreporter.md
   - entities/tools/timemagazine-babynames.md
   - entities/tools/dhfbk-tint.md
+  - sources/gemini-portale-antenati-research-guide-2026-07-21.md
+  - sources/gemini-italian-genealogy-research-tools-2026-07-21.md
+  - sources/gemini-italian-american-genealogy-sources-2026-07-21.md
+  - sources/gemini-italian-place-name-resolution-2026-07-21.md
+  - sources/gemini-italian-civil-register-extraction-2026-07-21.md
+  - concepts/antenati-deep-link-grammar.md
+  - concepts/us-italy-hometown-reveal-ladder.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 ## Relations
@@ -28,6 +35,13 @@ updated: 2026-07-20
 - @concepts/computational-genealogy-archival-automation.md — shipped methodology stack
 - @concepts/italian-regional-genealogy-archive-playbook.md — Italian wedge content
 - @concepts/active-project-research-routing.md — family-tree co-primary
+- @sources/gemini-italian-genealogy-research-tools-2026-07-21.md — K180 validates cassette + human-gate wedge; Processetti gap
+- @sources/gemini-portale-antenati-research-guide-2026-07-21.md — K180 Antenati deep links for Atto FIND
+- @sources/gemini-italian-american-genealogy-sources-2026-07-21.md — K180 US ladder
+- @sources/gemini-italian-place-name-resolution-2026-07-21.md — K180 Belfiore PK
+- @sources/gemini-italian-civil-register-extraction-2026-07-21.md — K180 evidence packet / HTR
+- @concepts/antenati-deep-link-grammar.md — productize search-registry URLs
+- @concepts/us-italy-hometown-reveal-ladder.md — FIND checklist ranking
 - @entities/tools/familysearch-platform-api.md — first-class program path (API + agent)
 - @entities/tools/topola-viewer.md — private static viewer
 - @entities/tools/transkribus.md — HTR partner credits
