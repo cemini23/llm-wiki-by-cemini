@@ -8,22 +8,24 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
-## Active workstreams (2026-07-10 — co-primary portfolio + genealogy pivot)
+## Active workstreams (2026-07-21 — Atto Priority #1 + co-primary portfolio)
 
-Research digest + ingest briefs target **co-primary projects equally** (`scripts/active_project_brief_targets.yaml`). Eval prompt: CCC `prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` (revenue-first; `genealogy overlap` field).
+Research digest + ingest briefs: **Atto** is operator Priority #1 product (`../atto/briefs/`). Other co-primary rows stay active (`scripts/active_project_brief_targets.yaml`). Eval prompt: CCC `prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` v10.3 (`atto overlap` + `genealogy overlap`).
 
-### Co-primary (equal morning ingest priority)
+### Co-primary (morning ingest)
 
 | Project | Brief home | Prod scp |
 |---------|------------|----------|
+| **Atto** — genealogy agent kit (Priority #1) | `../atto/briefs/` | No — never Barone PII |
 | **Poker Arena — dev.fun Researcher Round** | `agents/devfun-poker-arena/briefs/` | sandbox + rsync |
 | **CeminiDFS** — NFL DIY projection pipeline | `../projects/CeminiDFS/briefs/` | No |
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
-| **Family-tree / genealogy** — Italian archival deep research (K153/K154) | `~/Desktop/family/research/` (private) | No — wiki methodology only |
+| **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
 ## Current state (2026-07-21 — K178)
 
 - **K178 ingest (2026-07-21)** — Aura generative-art paper (2607.17940; ≠ family genealogy) + Capital Flows equity cliff + WuBlock ICE×OKX 24/7 clearing + Moontower equal-risk stub + Latent Space Jul 21 (dated NEW). **No local clones.** Briefs: xsp+pm (**scp**); CCC; TipDrop/David + image-gen; poker no-fit. Cleared K177 leftover inbox dups.
+- **Routing pivot (2026-07-21)** — **Atto** added as dedicated brief target (`scripts/active_project_brief_targets.yaml`); family-tree narrowed to private dogfood. Sync: `daily_research_config.yaml`, `@concepts/active-project-research-routing.md`, federation hub `federation_paths.yaml`.
 
 ## Prior state (2026-07-20 — K177)
 

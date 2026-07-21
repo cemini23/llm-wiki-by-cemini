@@ -35,24 +35,27 @@ exa:
     - arxiv.org
   search_type: auto  # never deep / deep-reasoning for digest
 
-# Co-primary (2026-06-20) — equal morning ingest priority for active codebases.
+# Co-primary (2026-06-20) — morning ingest for active codebases.
+# Atto = Priority #1 product (2026-07-21); genealogy productizable → atto briefs.
 # Route briefs per scripts/active_project_brief_targets.yaml; wiki always.
 active_topics:
+  - "Atto — genealogy agent kit Priority #1 (vault/truth/FIND/portals/share/MCP) (→ ../atto/briefs/ + @osint-wiki methodology)"
   - "Poker Arena — Researcher Round HU sandbox (Jun 21 β), MAFP/verifier steals, 6-max EP/PFR, HL loop (→ agents/devfun-poker-arena/briefs/)"
   - "CeminiDFS — NFL projection pipeline, nflverse calibration, ownership sim, pydfs MME (→ @gambling-wiki + ../projects/CeminiDFS/briefs/)"
   - "XSP killer bot — Lane A overnight exits + Lane B LEAPS hedge monitor on Robinhood (→ briefs/xsp-* → cemini-prod)"
-  - "Family-tree / genealogy — Italian archival deep research, IIIF/HTR/GEDCOM stack (→ @osint-wiki K153/K154 + ~/Desktop/family/research/ private)"
+  - "Family-tree / Barone dogfood — private archival digs only (→ ~/Desktop/family/research/; productizable → Atto)"
   - "wc-ticket-monitor — FIFA WC26 knockout resale alerts (secondary — route when source matches)"
   - "PM / Kalshi retail bot — CLOB botting, cross-venue, maker/taker postmortems (exploratory)"
   - "Agent harness for game dev + poker sessions — Cursor/Stagehand, not prod conductor KPIs"
 
 brief_routing_note: |
-  Co-primary ingest targets (equal priority): poker-arena · ceminidfs · xsp-killer · family-tree.
+  Priority #1 product: atto (../atto/briefs/). Co-primary also: poker-arena · ceminidfs · xsp-killer · family-tree (dogfood).
   Secondary (route when source matches): wc-ticket-monitor · pm-kalshi-bot · david-persona-image-gen · castle-sim (legacy).
   Full ingest briefs route per `scripts/active_project_brief_targets.yaml`.
+  Genealogy split: productizable (HTR/GEDCOM/vault/share/MCP/portal) → Atto dedicated brief; private pedigree → Desktop/family only.
   David persona adoption briefs (image-gen): write locally, then `python3 ../projects/Image\ gen/scripts/route_david_adoption_brief.py` → `tipdrop-workspace-kit/briefs/*-david.md`.
   Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers.
-  poker → agents/devfun-poker-arena/briefs/ · ceminidfs → ../projects/CeminiDFS/briefs/
+  atto → ../atto/briefs/ · poker → agents/devfun-poker-arena/briefs/ · ceminidfs → ../projects/CeminiDFS/briefs/
   xsp-killer → briefs/xsp-* → cemini-prod · family-tree → ~/Desktop/family/research/ (private; wiki methodology only)
   wc-ticket-monitor → ../projects/wc-ticket-monitor/briefs/ (wiki-only unless ticket-resale hook).
 
@@ -148,12 +151,12 @@ monokern_pipeline:
     - yt-dlp
     - inbox_pdf
     - web_url
-  ingest_hook: "After Sunday digest, one NotebookLM pass on co-primary active_topic (poker, CeminiDFS, xsp-killer, family-tree, or PM)"
+  ingest_hook: "After Sunday digest, one NotebookLM pass on co-primary active_topic (Atto, poker, CeminiDFS, xsp-killer, family-tree dogfood, or PM)"
 
 social:
   manual_pass:
     - tool: notebooklm-osint-bridge
-      prompt: "Weekly Monokern pass on co-primary project — poker Researcher Round, CeminiDFS, xsp-killer, family-tree genealogy, or PM/Kalshi"
+      prompt: "Weekly Monokern pass on co-primary project — Atto genealogy kit, poker Researcher Round, CeminiDFS, xsp-killer, family-tree dogfood, or PM/Kalshi"
     - tool: twitter-reader
       prompt: "dev.fun poker HU sandbox; XSP Mini-SPX LEAPS/options flow; NFL DFS FanDuel; PM/Kalshi bot last 24h"
     - tool: opencli-reader

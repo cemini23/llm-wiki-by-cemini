@@ -24,7 +24,7 @@ updated: 2026-07-15
 - @meta/federation-operator-hub-stub.md — operator morning summary (`cemini-federation-hub`)
 - @concepts/federated-daily-research-digest.md — per-wiki install kit (K93)
 - @concepts/monokern-compounding-research-pipeline.md — weekly deep-research overlay
-- @concepts/active-project-research-routing.md — brief targets: poker, ceminidfs, xsp-killer, castle-sim co-primary; wc-ticket-monitor secondary (2026-06-20)
+- @concepts/active-project-research-routing.md — brief targets: **Atto** Priority #1 + poker, ceminidfs, xsp-killer, family-tree dogfood; secondary: wc-ticket-monitor (2026-07-21)
 - @entities/tools/wc-ticket-monitor.md — portfolio repo (knockout ticket resale alerts)
 - @meta/wiki-gap-detect-cadence.md — weekly stale-claim / thin-page report; linked from daily digest
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — script-first automation posture
@@ -35,7 +35,7 @@ updated: 2026-07-15
 | Field | Value |
 |-------|-------|
 | **Cadence** | Daily — **free arXiv** paper lane (wiki-deduped) → inbox PDFs; Exa news **off** by default |
-| **Last run** | 2026-07-19 |
+| **Last run** | 2026-07-20 |
 | **Script** | `cemini-daily-research-digest` (or `bash scripts/run_daily_research_digest.sh` from repo) |
 | **Config** | `scripts/daily_research_config.yaml` (`exa.paper_mode`, `exa.news_enabled`) |
 | **Report** | `wiki/sweeps/YYYY-MM-DD-daily.md` |

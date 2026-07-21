@@ -1,8 +1,8 @@
 ---
 title: Active project research routing — brief targets vs legacy CeminiSuite
 type: concept
-tags: [concept, meta, workflow, briefs, k121, k156, genealogy]
-keywords: [brief-routing, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
+tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto]
+keywords: [brief-routing, atto, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
 related:
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
@@ -27,24 +27,30 @@ related:
   - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
 maturity: core
 created: 2026-06-17
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 ## Relations
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
-- @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
+- @concepts/gpuology-genealogy-agent-kit.md — product strategy concept (brand locked **Atto**)
 
 - @meta/daily-research-digest-cadence.md — morning digest config
 - @concepts/cemini-wiki-ingest-workflow.md — four-phase pipeline
 - @concepts/computational-genealogy-archival-automation.md — K153 family-tree methodology
 - @concepts/italian-regional-genealogy-archive-playbook.md — K154 regional archive playbook
 - @concepts/game-dev-wiki-federation.md — castle-sim legacy wiki sibling
+- @concepts/gambling-wiki-federation.md — gambling sibling federation
+- @gambling-wiki/concepts/diy-nfl-dfs-model-architecture.md — CeminiDFS architecture (brief home)
+- @gambling-wiki/entities/tools/ceminidfs.md — CeminiDFS entity
 - @gambling-wiki/concepts/poker-hl-analyst-loop.md — Poker Arena fix loop
+- @image-gen-wiki/concepts/david-adoption-brief-routing.md — David persona brief mirror
 - @concepts/xsp-lane-trading-framework.md — XSP killer lanes A–D
 - @concepts/devfun-poker-agent-challenge-2026.md — researcher track pivot (K122)
-- @ccc-wiki/concepts/deep-research-evaluation-prompt.md — bulk URL eval v10 (revenue-first; `genealogy overlap`)
+- @ccc-wiki/concepts/deep-research-evaluation-prompt.md — bulk URL eval v10.3 (revenue-first; `atto overlap` + `genealogy overlap`)
 - @sources/eval-url-revenue-and-project-analysis-2026-07-20.md — K175 family-tree + CeminiDFS extracts
 - @entities/tools/fivethirtyeight-data.md — K175 CeminiDFS Extract
+- @entities/tools/wc-ticket-monitor.md — knockout ticket resale alerts
+- @concepts/polymarket-bot-architecture.md — PM / Kalshi exploratory bot
 
 ## Raw Concept
 
@@ -54,16 +60,19 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 
 **Genealogy pivot (2026-07-10, K156):** **family-tree / computational genealogy** replaces **castle-sim** as co-primary #4. Private research on `~/Desktop/family/research/`; wiki holds methodology only (K153/K154). **castle-sim** → legacy deprioritized.
 
+**Atto product split (2026-07-21):** **Atto** (`~/Projects/atto`) is operator **Priority #1** public product — dedicated briefs under `../atto/briefs/`. **Family-tree** remains private Barone dogfood only. Eval: CCC v10.3 (`atto overlap` vs `genealogy overlap`).
+
 ## Narrative
 
-### Co-primary projects (equal ingest priority)
+### Co-primary projects (morning ingest)
 
 | Project | Code / brief home | Prod `scp`? |
 |---------|-------------------|-------------|
+| **Atto** (Priority #1 product) | `../atto/briefs/` · GitHub `cemini23/atto` · vault `~/AttoVault/` | No — laptop kit; never Barone PII |
 | **Poker Arena** | `agents/devfun-poker-arena/briefs/` | No — deploy via `cemini_hl_loop.sh` / rsync |
 | **CeminiDFS** | `../projects/CeminiDFS/briefs/` + `@gambling-wiki` | No — laptop pipeline repo |
 | **XSP killer bot** | `briefs/xsp-*` → `cemini-prod:/opt/cemini/briefs/` | Yes — Lane A/B monitors only |
-| **Family-tree / genealogy** | `~/Desktop/family/research/` (private) + `@osint-wiki` K153/K154 | No — never scp; no pedigree names on wiki |
+| **Family-tree / Barone dogfood** | `~/Desktop/family/research/` (private) + `@osint-wiki` K153/K154 | No — never scp; no pedigree names on wiki or Atto fixtures |
 
 ### Secondary (route when source matches)
 
@@ -79,7 +88,7 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 1. **Wiki always** — source + concept updates in `wiki/` (or cross-wiki route).
 2. **Brief only if** steal-from maps to a row above (`scripts/active_project_brief_targets.yaml`).
 3. **Prod scp only if** `scp_target` is set for that project **and** `skill_audit.py` PASS.
-4. **Family-tree privacy** — methodology stubs on wiki; private pedigree/DNA/living names stay in `~/Desktop/family/` only.
+4. **Genealogy split** — productizable capability (HTR/GEDCOM/vault/share/MCP/portal) → **Atto dedicated brief**; private pedigree/DNA/living names → `~/Desktop/family/` only; methodology stubs on OSINT wiki.
 5. **Legacy deprioritized** — generic quant-finance / portfolio RL / conductor eval / castle-sim → **wiki-only** unless ROADMAP reopens.
 
 ### Config files
@@ -89,11 +98,12 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 | `scripts/daily_research_config.yaml` | Exa queries + `active_topics` in daily sweep |
 | `scripts/active_project_brief_targets.yaml` | Brief destination + scp gates per project |
 | `ROADMAP.md` | Human-readable workstream list (sync on pivot) |
-| `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` | Bulk URL eval — revenue-first + `genealogy overlap` |
+| `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` | Bulk URL eval — revenue-first + `atto overlap` + `genealogy overlap` |
 
 ### Cross-wiki
 
-- **Family-tree** deep ingest → OSINT wiki methodology (`computational-genealogy-archival-automation`, regional playbook); private extracts → `Desktop/family/research/`.
+- **Atto** deep ingest → `../atto/briefs/` (synthetic fixtures only); OSINT methodology stubs; CCC for MCP/skill harness pieces.
+- **Family-tree** private digs → `Desktop/family/research/`; never into Atto fixtures/marketing.
 - **CeminiDFS** deep ingest → open Gambling wiki folder; OSINT may stub-route methodology via `cross_wiki_route.py`.
 - **wc-ticket-monitor** stays OSINT entity + code repo; cross-ref `@entities/tools/world-cup-bot.md` for PM bot boundary.
 - **castle-sim** (legacy) → Game Dev wiki when Godot/RTS source explicitly matches; not co-primary default.
@@ -102,6 +112,6 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 
 ## Snippets
 
-> "Co-primary ingest targets (equal priority): poker-arena · ceminidfs · xsp-killer · family-tree." [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-07-10]
+> "Priority #1 product: atto (../atto/briefs/). Co-primary also: poker-arena · ceminidfs · xsp-killer · family-tree (dogfood)." [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-07-21]
 
 > "Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers." [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-06-17]

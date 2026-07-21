@@ -4,11 +4,35 @@
 # maps to an active project below. Default = wiki-only unless a row says scp.
 #
 # Sync with ROADMAP.md "Active workstreams" and scripts/daily_research_config.yaml
+# Eval: CCC prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md (v10.3 Atto)
 
 default_posture: wiki-only
 
-# Co-primary — equal morning ingest priority. Order is documentation only.
+# Co-primary — morning ingest priority. Atto is operator Priority #1 product
+# (2026-07-21); other co_primary rows stay active. Genealogy productizable →
+# atto briefs; private Barone digs → family-tree only.
 projects:
+  atto:
+    label: "Atto — Italian civil-record genealogy agent kit (public product)"
+    code_root: "../atto"
+    wiki: "@osint-wiki/concepts/gpuology-genealogy-agent-kit.md"
+    brief_dir: "../atto/briefs"
+    scp_target: null
+    co_primary: true
+    priority_rank: 1
+    primary_goal: "Ship Atto kit/concierge/Access share/playbook — productize Barone process (M1–M14 + FIND/AI/MCP)"
+    steal_from:
+      - "GEDCOM / Gramps truth layer; human-gated merge; PII vault + secret-strip before LLM"
+      - "Antenati IIIF local-only download; FamilySearch / Ancestry portal cassettes"
+      - "Transkribus HTR (no LLM-NAS); Tint GPL isolate; Italian civil/parish playbook + FIND deep-links"
+      - "Cloudflare Pages + Access redacted share; jure sanguinis concierge pack"
+      - "Genealogy MCP / Cursor skill harness (atto-mcp allowlist pattern)"
+      - "Entity resolution, codice fiscale, regional archive priors (Abruzzo/Calabria/Trentino)"
+    skip_brief_if:
+      - "Private Barone / living-person pedigree or DNA (→ Desktop/family/research only; never Atto fixtures)"
+      - "Generic genealogy affiliate content with no reproducible archive or product module gap"
+      - "Godot/RTS/game-dev content unless castle-sim explicitly reopened"
+
   poker-arena:
     label: "dev.fun Poker Arena (cemini_decide)"
     code_root: "agents/devfun-poker-arena"
@@ -61,23 +85,21 @@ projects:
       - "SMB short put credit unless contrast-noted"
 
   family-tree:
-    label: "Family-tree / computational genealogy (Italian archival deep research)"
+    label: "Family-tree / Barone dogfood (private — feeds Atto methodology)"
     code_root: null
     private_research_dir: "~/Desktop/family/research"
     wiki: "@osint-wiki/concepts/computational-genealogy-archival-automation.md"
     brief_dir: null
     scp_target: null
     co_primary: true
-    primary_goal: "Archival depth 1500s–present; jure sanguinis document chains; brick-wall breakthroughs (private — no prod scp)"
+    primary_goal: "Archival depth 1500s–present; jure sanguinis document chains; brick-wall breakthroughs (private — no prod scp; no Atto fixtures)"
     steal_from:
-      - "Italian stato civile / parish / notarial archive workflows (Antenati, Archivio di Stato, PEC copia integrale)"
-      - "GEDCOM 5.5.1 / Gramps truth layer; FamilySearch Platform API"
-      - "IIIF bulk download (gcerretani/antenati); Transkribus HTR for Latin/cursive parish acts"
-      - "Entity resolution — Double Metaphone; reverse genealogy via godparents/witnesses"
-      - "Regional playbook — Abruzzo/Calabria/Trentino (Catasto Onciario, Liste di Leva, Cassa Sacra, Nati in Trentino)"
-      - "US census staging — Steve Morse ED Finder, Ellis Island manifest nationality traps"
+      - "Private town sprints, pedigree digs, living-person vitals (Desktop/family only)"
+      - "Italian stato civile / parish / notarial archive workflows when not productizable to Atto M#"
+      - "Barone-specific brick walls, DNA, dual-citizenship document chains"
     skip_brief_if:
-      - "Private pedigree names, DNA results, or living-person vitals (never wiki or git)"
+      - "Productizable archive/HTR/GEDCOM/vault/share/MCP tools (→ atto briefs instead)"
+      - "Private pedigree names, DNA results, or living-person vitals (never wiki, git, or Atto fixtures)"
       - "Generic genealogy affiliate content without reproducible archive methodology"
       - "Godot/RTS/game-dev content unless castle-sim explicitly reopened"
 
