@@ -21,7 +21,11 @@ Research digest + ingest briefs target **co-primary projects equally** (`scripts
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / genealogy** — Italian archival deep research (K153/K154) | `~/Desktop/family/research/` (private) | No — wiki methodology only |
 
-## Current state (2026-07-20 — K177)
+## Current state (2026-07-21 — K178)
+
+- **K178 ingest (2026-07-21)** — Aura generative-art paper (2607.17940; ≠ family genealogy) + Capital Flows equity cliff + WuBlock ICE×OKX 24/7 clearing + Moontower equal-risk stub + Latent Space Jul 21 (dated NEW). **No local clones.** Briefs: xsp+pm (**scp**); CCC; TipDrop/David + image-gen; poker no-fit. Cleared K177 leftover inbox dups.
+
+## Prior state (2026-07-20 — K177)
 
 - **K177 ingest (2026-07-20)** — Full inbox: 4 arXiv (OCR NAS / AR bugs / IE controllability / AGM) + Macro paid Damaged Goods + Underdog exchange + Moontower mixologist/#321 + Klement thin. **Extract:** AGM MIT (~1MB local). **Watch:** LLM-NAS HTR. **Briefs:** xsp+pm (**scp**); poker; CCC; family; gambling; TipDrop no-path. **Phase-0:** `adopt_k177_phase0.sh`.
 

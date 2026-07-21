@@ -6,14 +6,17 @@ keywords: [moontower-321, equal-risk-weighting, chunking, dissection, k177]
 related:
   - sources/substack-rss-moontower-2026-07-19-become-an-option-mixologist.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-moontower-2026-07-19-middle-school-portfolios.md
 maturity: draft
 read_status: read
 created: 2026-07-20
-updated: 2026-07-20
+updated: 2026-07-21
 clusters: [k177-ingest]
 ---
 
 ## Relations
+
+- @sources/substack-rss-moontower-2026-07-19-middle-school-portfolios.md — dedicated equal-risk stub (K178)
 
 - @sources/substack-rss-moontower-2026-07-19-become-an-option-mixologist.md — mixologist deep-dive sibling
 - @concepts/xsp-lane-trading-framework.md

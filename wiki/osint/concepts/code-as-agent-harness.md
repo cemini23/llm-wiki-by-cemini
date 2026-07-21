@@ -46,12 +46,15 @@ related:
   - sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md
   - sources/arxiv-2607.15769-agent-governance-manifest.md
 
+  - sources/newsletter-rss-latent-space-2026-07-21-ainews.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-07-21-ainews.md — K178 Cursor multi-agent / cost variance Context
 
 - @concepts/agent-reactive-bugs.md — K177 AR bugs at model–harness boundary
 - @concepts/agent-governance-manifest.md — K177 project-side governability (AGM)

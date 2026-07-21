@@ -12,7 +12,16 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **819 canonical stubs** (K177 + K176 + K175 + K174 + K173 + K172)
+Total: **825 canonical stubs** (K178 + K177 + K176 + K175 + K174 + K173 + K172)
+
+### k178-ingest (6)
+
+- [Aura in the Machine generative art (2607.17940)](sources/arxiv-2607.17940-aura-in-the-machine-generative-art.md) — art genealogy ≠ family-tree → image-gen/David. — `pdf` [+k178]
+- [Generative-art aura + manifestation](concepts/generative-art-aura-manifestation.md) — Benjaminian frame. — concept [+k178]
+- [Capital Flows equity cliff](sources/substack-rss-capital-flows-2026-07-21-equity-cliff.md) — **xsp**. — `rss` [+k178]
+- [Moontower middle-school portfolios](sources/substack-rss-moontower-2026-07-19-middle-school-portfolios.md) — equal-risk pedagogy. — `rss` [+k178]
+- [WuBlock ICE×OKX closing bell](sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md) — **pm** 24/7 clearing. — `rss` [+k178]
+- [Latent Space AINews Jul 21](sources/newsletter-rss-latent-space-2026-07-21-ainews.md) — CCC Context (dated NEW). — `rss` [+k178]
 
 ### k177-ingest (12)
 

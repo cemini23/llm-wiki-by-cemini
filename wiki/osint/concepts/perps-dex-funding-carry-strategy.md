@@ -18,13 +18,16 @@ related:
   - concepts/production-trading-blind-spots.md
   - concepts/hyperliquid-agent-trading.md
   - concepts/perp-dex-price-discovery-lead-lag.md
+  - sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-06-09
+updated: 2026-07-21
 clusters: [quant-finance, crypto, market-neutral]
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md — K178 closing-bell / 24/7 clearing
 
 - @sources/trading-posts-lp-rewards-perps-funding-sports-consensus-2026-05.md — Post 1 (@morpphhhaw) primary source
 - @concepts/carry-trade.md — canonical carry-trade concept; this is the perp-funding instantiation

@@ -9,6 +9,14 @@ updated: 2026-07-20
 
 
 
+## [2026-07-21] ingest | K178 — Aura generative art + CF cliff + ICE/OKX + Latent Space
+
+- **Inbox:** 9 files — ingest 5 NEW (+ Latent Space dated false-DUPLICATE); archive 4 K177 LIKELY leftovers (Underdog/Klement/Moontower mixologist+#321)
+- **Wiki:** 5 sources + 1 concept; hubs CF/xsp/PM/perps/code-as-harness/#321
+- **Phase-0:** none (0 MB adopts) — art paper Context only
+- **Briefs:** xsp+pm (**scp**); CCC; TipDrop/David + image-gen aura; poker no-fit
+- **Archive:** egress-fi osint/ + inbox cleared
+
 ## [2026-07-20] ingest | K177 — agent harness papers + Macro paid Damaged Goods + Underdog/Moontower
 
 - **Inbox (10):** 4 arXiv PDFs + Macro Charts paid DAMAGED GOODS + Event Horizon Underdog + Klement + Moontower×3 — all NEW (Moontower #321 LIKELY vs #319 = distinct issue)
@@ -18,6 +26,12 @@ updated: 2026-07-20
 - **Briefs:** xsp+pm (**scp**); poker AR/controllability light steal; CCC AGM+AR; family OCR; gambling Underdog; TipDrop no-David-path
 - **Cadence:** wiki-gap-detect + WC LP safety reminder run (reports under `.local/reports/`)
 - **Archive:** egress-fi `osint/` + inbox cleared
+
+## [2026-07-20] plan | Genealogy kit Fable master plan (atto)
+
+- Fable planner GO: `~/Desktop/family/research/2026-07-20_genealogy-kit-fable-master-plan.md` (+ briefs mirror)
+- Product root DEFAULT `~/Projects/atto/` · vault `~/AttoVault/` · codename **atto**
+- M0 DeepSeek/shell lane dispatched; doctrine `44c106f` intact
 
 ## [2026-07-20] decision | GPUOLOGY UX = intake dump + agent run; PII/SSN security ship gate
 

@@ -18,12 +18,15 @@ related:
   - concepts/macro-charts-regime-signals.md
   - sources/substack-rss-capital-flows-2026-07-17-momentum-unwind.md
   - sources/substack-rss-capital-flows-2026-07-18-weekend-depth-of-field.md
+  - sources/substack-rss-capital-flows-2026-07-21-equity-cliff.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-19
+updated: 2026-07-21
 ---
 
 ## Relations
+
+- @sources/substack-rss-capital-flows-2026-07-21-equity-cliff.md — K178 equity cliff teaser
 
 - @sources/substack-rss-capital-flows-2026-07-10-trading-investing-framework.md — K155 livestream framework source
 - @sources/substack-rss-capital-flows-2026-07-11-sofr-interest-rate-volatility-and-macro-endgame.md — K158 Z6 OI + front-end vol overlay

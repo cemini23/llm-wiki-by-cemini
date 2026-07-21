@@ -51,12 +51,18 @@ related:
   - sources/substack-rss-klement-2026-07-17-failure-gap.md
   - sources/macro-charts-rss-2026-07-19-damaged-goods.md
   - sources/substack-rss-capital-flows-2026-07-18-weekend-depth-of-field.md
+  - sources/substack-rss-capital-flows-2026-07-21-equity-cliff.md
+  - sources/substack-rss-moontower-2026-07-19-middle-school-portfolios.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 ## Relations
+
+- @sources/substack-rss-moontower-2026-07-19-middle-school-portfolios.md — K178 equal-risk pedagogy
+
+- @sources/substack-rss-capital-flows-2026-07-21-equity-cliff.md — K178 cliff / flows watch
 
 - @sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md — K177 paid DAMAGED GOODS regime
 - @sources/substack-rss-moontower-2026-07-19-become-an-option-mixologist.md — K177 3-parameter structure screen

@@ -98,12 +98,15 @@ related:
   - sources/substack-rss-wublock-2026-07-18-weekly-ethereum-privacy-robinhood.md
   - sources/substack-rss-wublock-2026-07-19-asia-top10-japan-fiea.md
 
+  - sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-07-20
+updated: 2026-07-21
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md — K178 ICE×OKX 24/7 clearing Context
 
 - @sources/substack-rss-event-horizon-2026-07-20-underdog-exchange.md — K177 Underdog DCM/DCO own exchange
 - `@sources/x-polymarket-bot-playbook-punisher-2026-05.md` — original X thread + long-form article
