@@ -3,6 +3,38 @@
 updated: 2026-07-22
 ---
 
+## [2026-07-22] ingest | K190 — 4× genealogy revenue evals + WI election betting
+
+- **Inbox (5):** 4 genealogy/GitHub revenue docx + Event Horizon Wisconsin/Kalshi RSS
+- **License overrides:** Open-Genealogy **CC-BY-NC-SA** Watch; Betty **GPL** Watch; KekuleHtml **AGPL** Watch; topola license Apache (not MIT)
+- **Integrate local:** genea-app, claude-family-history-research-skill, ancestry-tools (+ reinforce autoresearch)
+- **Extract local:** wikitree-dynamic-tree, lineage, yorkeccak-history, pure-genealogy, go-geni (~349MB total adopts <<500)
+- **Briefs:** Atto stack; pm Wisconsin (**scp**); gambling cross; family private note; poker/TipDrop no-fit
+- **Phase-0:** `scripts/adopt_k190_phase0.sh`
+
+## [2026-07-22] ingest | K189 — MAECI consular Prenot@Mi + Law 11/2026 venue
+
+- **Primaries:** Miami/Montreal consular JS pages + GU L. **11/2026** art. 1 (new d.lgs. 71/2011 art. 10)
+- **Holdings:** consular a-bis = Prenot@Mi **or** section email by 27 Mar 2025; “submitted” = counter/mail/Fast-It; €600; from **2029** adult JS = **postal** to central MAECI; through 2028 annual consular **cap** (≥100)
+- **Contrast:** Interno 26185 a-bis = **comune**; consular a-bis = Prenot@Mi (same statute letter, different evidence)
+- **Wiki:** source `maeci-consular-js-law11-2026-07-22`; deepen soft-flags DOC_* · primary-law-lock · pathways · GPUOLOGY
+- **Brief:** `../atto/briefs/2026-07-22_k189-maeci-consular-law11.md`
+
+## [2026-07-22] ingest | K188 — Interno circolari Law 74/2025 operational lock
+
+- **PDFs:** Circ. **26185** (28 May 2025) · DAIT **59/2025** (17 Jun) · Circ. **36356** (24 Jul) · Circ. **19951** (12 Mar 2026 proroga)
+- **Holdings:** art. 3-bis a/a-bis = **comune** domanda / municipal appointment (≠ Prenot@Mi); lett. d + art. 14 residency clocks; beneficio €250; riacquisto 1 Jul 2025–31 Dec 2027; beneficio minor declaration → **31 May 2029**
+- **Wiki:** source `interno-circolari-law74-2026-07-22`; deepen primary-law-lock · soft-flags DOC_* · pathways · GPUOLOGY
+- **Brief:** `../atto/briefs/2026-07-22_k188-interno-circolari.md`
+
+## [2026-07-22] ingest | K187 — Italian citizenship primary-law lock
+
+- **Pass:** primary texts for soft-flags left open after K186 (no inbox docx)
+- **Locked:** L. **74/2025** (GU) · Cost. **63/2026** (Torino — reform stands) · Cass. I civ. **13818/2026** (interesse ad agire when filing blocked) · L. **11/2026** + MAECI pages (**adult JS → central MAECI from 1 Jan 2029**)
+- **Still open:** Mantova/Campobasso Cost. **merits** (udienza 9 Jun; Ord. 102 = interventions only) · Sezioni Unite **written** (udienza 14 Apr) · Interno circolari full PDF
+- **Wiki:** source `italian-citizenship-primary-law-lock-2026-07-22` + concept `italian-citizenship-primary-law-lock`; deepen soft-flags + pathways + GPUOLOGY + YouTube source
+- **Brief:** `../atto/briefs/2026-07-22_k187-primary-law-lock.md`
+
 ## [2026-07-22] ingest | K186 — Italian citizenship YouTube (ICA/IDCA) deep watch
 
 - **Sources:** channel survey + **10 auto-caption transcripts** (ICA 9 · IDCA 1); cache `.local/reports/2026-07-22_italian-citizenship-yt/`

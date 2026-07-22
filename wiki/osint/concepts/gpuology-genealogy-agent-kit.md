@@ -36,12 +36,39 @@ related:
   - sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md
   - sources/youtube-italian-citizenship-channels-2026-07-22.md
   - concepts/italian-citizenship-youtube-soft-flags.md
+  - sources/italian-citizenship-primary-law-lock-2026-07-22.md
+  - sources/interno-circolari-law74-2026-07-22.md
+  - sources/maeci-consular-js-law11-2026-07-22.md
+  - concepts/italian-citizenship-primary-law-lock.md
+  - sources/eval-genealogy-github-revenue-analysis-2026-07-22.md
+  - sources/eval-genealogy-repository-revenue-evaluation-2026-07-22.md
+  - sources/eval-genealogy-tools-revenue-analysis-2026-07-22.md
+  - sources/eval-github-repository-revenue-analysis-history-2026-07-22.md
+  - entities/tools/genea-app.md
+  - entities/tools/claude-family-history-research-skill.md
+  - entities/tools/ancestry-tools.md
+  - entities/tools/betty.md
+  - entities/tools/open-genealogy.md
+  - entities/tools/wikitree-dynamic-tree.md
+  - entities/tools/lineage.md
+  - entities/tools/yorkeccak-history.md
+  - entities/tools/pure-genealogy.md
+  - entities/tools/kekule-html.md
+  - entities/tools/go-geni.md
 maturity: draft
 created: 2026-07-20
 updated: 2026-07-22
 ---
 
 ## Relations
+
+- @entities/tools/open-genealogy.md — K190 NC Watch
+
+- @entities/tools/claude-family-history-research-skill.md — K190 Integrate
+
+- @entities/tools/genea-app.md — K190 Integrate
+
+- @sources/eval-genealogy-repository-revenue-evaluation-2026-07-22.md — K190 eval
 
 - @entities/tools/omlx.md — K182 local LLM candidate
 
@@ -55,6 +82,10 @@ updated: 2026-07-22
 - @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — K183 Tajani / Minor Issue / apostille pipeline
 - @concepts/italian-citizenship-youtube-soft-flags.md — K186 appointment evidence + court soft-flags
 - @sources/youtube-italian-citizenship-channels-2026-07-22.md — K186 ICA/IDCA deep watch
+- @concepts/italian-citizenship-primary-law-lock.md — K187 statute/court ship posture
+- @sources/italian-citizenship-primary-law-lock-2026-07-22.md — K187 primary citations
+- @sources/interno-circolari-law74-2026-07-22.md — K188 Interno circulars
+- @sources/maeci-consular-js-law11-2026-07-22.md — K189 MAECI/consular + L. 11
 - @concepts/atto-macos-gtm-gumroad.md — K185 Gumroad personas / pricing / listing
 - @concepts/atto-local-first-threat-model.md — K185 vault / MCP / Access controls
 - @sources/gemini-atto-macos-gtm-2026-07-22.md — K185 GTM DR

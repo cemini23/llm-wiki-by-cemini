@@ -156,6 +156,21 @@ related:
   - entities/tools/code-review-graph.md
   - entities/tools/i-have-adhd.md
   - sources/eval-url-revenue-opportunity-analysis-2026-07-22.md
+  - sources/eval-genealogy-github-revenue-analysis-2026-07-22.md
+  - sources/eval-genealogy-repository-revenue-evaluation-2026-07-22.md
+  - sources/eval-genealogy-tools-revenue-analysis-2026-07-22.md
+  - sources/eval-github-repository-revenue-analysis-history-2026-07-22.md
+  - entities/tools/genea-app.md
+  - entities/tools/claude-family-history-research-skill.md
+  - entities/tools/ancestry-tools.md
+  - entities/tools/wikitree-dynamic-tree.md
+  - entities/tools/lineage.md
+  - entities/tools/yorkeccak-history.md
+  - entities/tools/pure-genealogy.md
+  - entities/tools/betty.md
+  - entities/tools/open-genealogy.md
+  - entities/tools/kekule-html.md
+  - entities/tools/go-geni.md
 maturity: validated
 hub: true
 created: 2026-04-28
@@ -163,6 +178,14 @@ updated: 2026-07-22
 ---
 
 ## Relations
+
+- @sources/eval-github-repository-revenue-analysis-history-2026-07-22.md — K190
+
+- @sources/eval-genealogy-tools-revenue-analysis-2026-07-22.md — K190
+
+- @sources/eval-genealogy-repository-revenue-evaluation-2026-07-22.md — K190
+
+- @sources/eval-genealogy-github-revenue-analysis-2026-07-22.md — K190
 
 - @sources/eval-url-revenue-opportunity-analysis-2026-07-22.md — K182 URL revenue batch
 

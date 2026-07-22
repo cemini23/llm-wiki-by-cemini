@@ -102,12 +102,15 @@ related:
   - sources/substack-rss-event-horizon-2026-07-21-wildfire-aqi-markets.md
   - sources/substack-rss-wublock-2026-07-21-circle-ousd.md
   - sources/substack-rss-wublock-2026-07-22-fragile-speculative-tokens.md
+  - sources/substack-rss-event-horizon-2026-07-22-wisconsin-election-betting.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-07-22
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-07-22-wisconsin-election-betting.md — K190 WI election betting
 
 - @sources/substack-rss-wublock-2026-07-22-fragile-speculative-tokens.md — K182 thin-token wicks
 

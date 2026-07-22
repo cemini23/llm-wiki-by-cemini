@@ -12,7 +12,39 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **868 canonical stubs** (K186 + K185 + K183 + K182 + K181 + K180 + …)
+Total: **874 canonical stubs** (K190 + K189 + …)
+
+### k190-ingest (16)
+
+- [Genealogy GitHub Revenue Analysis](sources/eval-genealogy-github-revenue-analysis-2026-07-22.md) — Betty GPL Watch; Kekule AGPL Watch. — `docx` [+k190]
+- [Genealogy Repository Revenue Evaluation](sources/eval-genealogy-repository-revenue-evaluation-2026-07-22.md) — genea-app Integrate; Open-Genealogy NC Watch. — `docx` [+k190]
+- [Genealogy Tools Revenue Analysis](sources/eval-genealogy-tools-revenue-analysis-2026-07-22.md) — Claude skill + ancestry-tools Integrate. — `docx` [+k190]
+- [GitHub Repository Revenue Analysis (history)](sources/eval-github-repository-revenue-analysis-history-2026-07-22.md) — yorkeccak/pure-genealogy Extract; autoresearch reinforce. — `docx` [+k190]
+- [EH Wisconsin election betting](sources/substack-rss-event-horizon-2026-07-22-wisconsin-election-betting.md) — **pm** Kalshi/WEC. — `rss` [+k190]
+- [genea-app](entities/tools/genea-app.md) — Integrate MIT. — entity [+k190]
+- [claude-family-history-research-skill](entities/tools/claude-family-history-research-skill.md) — Integrate MIT. — entity [+k190]
+- [ancestry-tools](entities/tools/ancestry-tools.md) — Integrate Apache-2.0. — entity [+k190]
+- [WikiTree dynamic-tree](entities/tools/wikitree-dynamic-tree.md) — Extract MIT. — entity [+k190]
+- [lineage](entities/tools/lineage.md) — Extract MIT. — entity [+k190]
+- [yorkeccak/history](entities/tools/yorkeccak-history.md) — Extract MIT. — entity [+k190]
+- [pure-genealogy](entities/tools/pure-genealogy.md) — Extract MIT. — entity [+k190]
+- [Betty](entities/tools/betty.md) — Watch GPL. — entity [+k190]
+- [Open-Genealogy](entities/tools/open-genealogy.md) — Watch NC. — entity [+k190]
+- [KekuleHtml](entities/tools/kekule-html.md) — Watch AGPL. — entity [+k190]
+- [go-geni](entities/tools/go-geni.md) — Watch Apache. — entity [+k190]
+
+### k189-ingest (1)
+
+- [MAECI consular JS + Law 11/2026](sources/maeci-consular-js-law11-2026-07-22.md) — Prenot@Mi a-bis email · €600 · 2029 postal central · annual caps. — `maeci` [+k189]
+
+### k188-ingest (1)
+
+- [Interno circolari Law 74/2025](sources/interno-circolari-law74-2026-07-22.md) — Circ. 26185 · DAIT 59 · 36356 · 19951 (beneficio → 31 May 2029). — `circolare` [+k188]
+
+### k187-ingest (2)
+
+- [Italian citizenship primary-law lock (source)](sources/italian-citizenship-primary-law-lock-2026-07-22.md) — GU 74/2025 · Cost. 63 · Cass. 13818 · L. 11/2026 (2029 MAECI). — `primary-law` [+k187]
+- [Italian citizenship primary-law lock (concept)](concepts/italian-citizenship-primary-law-lock.md) — soft-flag ship posture vs still-open watch list. — concept [+k187]
 
 ### k186-ingest (2)
 

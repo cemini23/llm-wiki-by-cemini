@@ -26,12 +26,19 @@ related:
   - "@image-gen-wiki/concepts/david-adoption-brief-routing.md"
   - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
   - sources/eval-url-revenue-opportunity-analysis-2026-07-22.md
+  - sources/eval-genealogy-github-revenue-analysis-2026-07-22.md
+  - sources/eval-genealogy-repository-revenue-evaluation-2026-07-22.md
+  - sources/eval-genealogy-tools-revenue-analysis-2026-07-22.md
+  - sources/eval-github-repository-revenue-analysis-history-2026-07-22.md
+  - sources/substack-rss-event-horizon-2026-07-22-wisconsin-election-betting.md
 maturity: core
 created: 2026-06-17
 updated: 2026-07-22
 ---
 
 ## Relations
+
+- @sources/eval-genealogy-tools-revenue-analysis-2026-07-22.md — K190 Atto eval
 
 - @sources/eval-url-revenue-opportunity-analysis-2026-07-22.md — K182 XSP/TipDrop/Atto eval
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR

@@ -22,9 +22,19 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 product (`../a
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
-## Current state (2026-07-22 — K186)
+## Current state (2026-07-22 — K190)
 
-- **K186 ingest (2026-07-22)** — ICA/IDCA YouTube deep watch (10 transcripts). Concept `italian-citizenship-youtube-soft-flags` (appointment evidence ontology + court soft-flags). Brief → `../atto/briefs/`. Primary-law lock still open (Cassazione 13818/2026, Costituzionale post-Jun-9). No prod scp.
+- **K190 ingest (2026-07-22)** — 4 genealogy revenue eval docx + EH Wisconsin election-betting RSS. **Integrate:** genea-app, claude-family-history-research-skill, ancestry-tools. **Extract:** wikitree-dynamic-tree, lineage, yorkeccak/history, pure-genealogy. **Watch:** Betty GPL, Open-Genealogy NC, Kekule AGPL. **Briefs:** Atto; pm Wisconsin scp; gambling. Phase-0 ~349MB.
+
+## Current state (2026-07-22 — K189)
+
+- **K189 MAECI/consular + L. 11 (2026-07-22)** — Prenot@Mi a-bis email definition; €600; GU postal central **2029** + consular annual caps through 2028. Brief → `../atto/briefs/`. No prod scp.
+
+- **K188 Interno circolari (2026-07-22)** — Circ. 26185 / DAIT 59 / 36356 / 19951 locked. Key: comune a-bis ≠ Prenot@Mi; beneficio deadline **31 May 2029**. Brief → `../atto/briefs/`. No prod scp.
+
+- **K187 primary-law lock (2026-07-22)** — Confirmed GU L. 74/2025 + Cost. **63/2026** + Cass. **13818/2026** + L. **11/2026** (MAECI adult JS from **2029**). Soft-flag copy updated. Still open: Mantova/Campobasso Cost. **merits** + Sezioni Unite **written**. Brief → `../atto/briefs/`. No prod scp.
+
+- **K186 ingest (2026-07-22)** — ICA/IDCA YouTube deep watch (10 transcripts). Concept `italian-citizenship-youtube-soft-flags` (appointment evidence ontology + court soft-flags). Brief → `../atto/briefs/`. Primary-law lock → K187. No prod scp.
 
 ## Current state (2026-07-22 — K185)
 

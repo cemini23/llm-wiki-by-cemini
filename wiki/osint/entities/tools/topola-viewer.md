@@ -4,16 +4,19 @@ type: entity
 tags: [tool, genealogy, visualization, k157, extract]
 keywords: [GEDCOM, fan chart, hourglass, D3, Apache-2.0]
 related:
+  - sources/eval-genealogy-repository-revenue-evaluation-2026-07-22.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
   - concepts/computational-genealogy-archival-automation.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-20
+updated: 2026-07-22
 ---
 
 ## Relations
+
+- @sources/eval-genealogy-repository-revenue-evaluation-2026-07-22.md — K190 reinforce
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
 

@@ -42,12 +42,31 @@ related:
   - sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/active-project-research-routing.md
+  - sources/eval-genealogy-github-revenue-analysis-2026-07-22.md
+  - sources/eval-genealogy-repository-revenue-evaluation-2026-07-22.md
+  - sources/eval-genealogy-tools-revenue-analysis-2026-07-22.md
+  - sources/eval-github-repository-revenue-analysis-history-2026-07-22.md
+  - entities/tools/genea-app.md
+  - entities/tools/wikitree-dynamic-tree.md
+  - entities/tools/lineage.md
+  - entities/tools/claude-family-history-research-skill.md
+  - entities/tools/ancestry-tools.md
+  - entities/tools/yorkeccak-history.md
+  - entities/tools/pure-genealogy.md
+  - entities/tools/betty.md
+  - entities/tools/open-genealogy.md
+  - entities/tools/kekule-html.md
+  - entities/tools/go-geni.md
 maturity: draft
 created: 2026-07-09
 updated: 2026-07-22
 ---
 
 ## Relations
+
+- @entities/tools/wikitree-dynamic-tree.md — K190 Extract
+
+- @entities/tools/genea-app.md — K190
 - @sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md — K177 LLM-NAS HTR Watch (contrast Transkribus)
 - @sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md — K177 process-trace IE eval
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
