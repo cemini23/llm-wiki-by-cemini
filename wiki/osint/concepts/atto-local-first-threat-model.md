@@ -8,6 +8,7 @@ related:
   - concepts/atto-macos-gtm-gumroad.md
   - concepts/gpuology-genealogy-agent-kit.md
   - concepts/openclaw-security-taxonomy.md
+  - concepts/italian-citizenship-youtube-soft-flags.md
   - sources/gemini-atto-macos-gtm-2026-07-22.md
 maturity: draft
 created: 2026-07-22
@@ -20,6 +21,7 @@ updated: 2026-07-22
 - @concepts/atto-macos-gtm-gumroad.md — buyer-facing privacy FAQ source
 - @concepts/gpuology-genealogy-agent-kit.md — vault / share / MCP product surfaces
 - @concepts/openclaw-security-taxonomy.md — Context Manipulation / tool-call parallels for MCP
+- @concepts/italian-citizenship-youtube-soft-flags.md — appointment proofs in vault; strip before LLM
 - @sources/gemini-atto-macos-gtm-2026-07-22.md — companion GTM claims
 
 ## Raw Concept

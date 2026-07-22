@@ -10,6 +10,8 @@ related:
   - concepts/atto-local-first-threat-model.md
   - concepts/gpuology-genealogy-agent-kit.md
   - concepts/italian-citizenship-pathways-document-pipelines.md
+  - concepts/italian-citizenship-youtube-soft-flags.md
+  - sources/youtube-italian-citizenship-channels-2026-07-22.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
 maturity: draft
 created: 2026-07-22
@@ -24,6 +26,8 @@ updated: 2026-07-22
 - @concepts/atto-local-first-threat-model.md — privacy claims in listing must match controls
 - @concepts/gpuology-genealogy-agent-kit.md — product wedge this GTM sells
 - @concepts/italian-citizenship-pathways-document-pipelines.md — DIY persona cost/risk driver
+- @concepts/italian-citizenship-youtube-soft-flags.md — anti-position vs YouTube eligibility CTAs
+- @sources/youtube-italian-citizenship-channels-2026-07-22.md — ICA/IDCA competitor voice map
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — earlier market framing (K176)
 
 ## Raw Concept

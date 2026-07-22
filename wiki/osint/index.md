@@ -12,7 +12,12 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **866 canonical stubs** (K185 + K183 + K182 + K181 + K180 + K179 + …)
+Total: **868 canonical stubs** (K186 + K185 + K183 + K182 + K181 + K180 + …)
+
+### k186-ingest (2)
+
+- [Italian citizenship YouTube channels — ICA/IDCA deep watch](sources/youtube-italian-citizenship-channels-2026-07-22.md) — 10 transcripts; appointment evidence; Cassazione 13818; Rome central office. — `youtube` [+k186]
+- [Italian citizenship YouTube soft-flags](concepts/italian-citizenship-youtube-soft-flags.md) — soft-flag IDs + DOC_* evidence ontology for Atto. — concept [+k186]
 
 ### k185-ingest (8)
 

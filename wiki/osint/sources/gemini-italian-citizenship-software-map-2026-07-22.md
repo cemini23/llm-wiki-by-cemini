@@ -11,6 +11,8 @@ related:
   - concepts/atto-macos-gtm-gumroad.md
   - concepts/antenati-deep-link-grammar.md
   - concepts/us-italy-hometown-reveal-ladder.md
+  - sources/youtube-italian-citizenship-channels-2026-07-22.md
+  - concepts/italian-citizenship-youtube-soft-flags.md
 maturity: draft
 read_status: read
 created: 2026-07-22
@@ -21,6 +23,8 @@ updated: 2026-07-22
 
 - @concepts/italian-citizenship-pathways-document-pipelines.md — product taxonomy; this DR proposes ID renames + decision tree
 - @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — K183 companion (document pipelines / stages)
+- @sources/youtube-italian-citizenship-channels-2026-07-22.md — K186 ICA soft-flag / evidence cross-check
+- @concepts/italian-citizenship-youtube-soft-flags.md — K186 soft-flag IDs + DOC_* ontology
 - @concepts/gpuology-genealogy-agent-kit.md — checklist / concierge surface
 - @concepts/atto-macos-gtm-gumroad.md — UPL / “never claim” copy for Gumroad
 - @concepts/antenati-deep-link-grammar.md — research finds ≠ filing copies

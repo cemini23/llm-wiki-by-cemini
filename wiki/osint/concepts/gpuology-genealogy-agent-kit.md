@@ -34,6 +34,8 @@ related:
   - sources/gemini-atto-threat-model-2026-07-22.md
   - sources/gemini-italian-citizenship-software-map-2026-07-22.md
   - sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md
+  - sources/youtube-italian-citizenship-channels-2026-07-22.md
+  - concepts/italian-citizenship-youtube-soft-flags.md
 maturity: draft
 created: 2026-07-20
 updated: 2026-07-22
@@ -51,6 +53,8 @@ updated: 2026-07-22
 - @concepts/active-project-research-routing.md — family-tree co-primary
 - @concepts/italian-citizenship-pathways-document-pipelines.md — K183 citizenship checklist / pathway IDs for concierge
 - @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — K183 Tajani / Minor Issue / apostille pipeline
+- @concepts/italian-citizenship-youtube-soft-flags.md — K186 appointment evidence + court soft-flags
+- @sources/youtube-italian-citizenship-channels-2026-07-22.md — K186 ICA/IDCA deep watch
 - @concepts/atto-macos-gtm-gumroad.md — K185 Gumroad personas / pricing / listing
 - @concepts/atto-local-first-threat-model.md — K185 vault / MCP / Access controls
 - @sources/gemini-atto-macos-gtm-2026-07-22.md — K185 GTM DR

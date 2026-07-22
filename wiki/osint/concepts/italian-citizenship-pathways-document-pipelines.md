@@ -16,6 +16,8 @@ related:
   - sources/gemini-portale-antenati-research-guide-2026-07-21.md
   - sources/gemini-italian-civil-register-extraction-2026-07-21.md
   - sources/gemini-italian-american-genealogy-sources-2026-07-21.md
+  - sources/youtube-italian-citizenship-channels-2026-07-22.md
+  - concepts/italian-citizenship-youtube-soft-flags.md
 maturity: draft
 created: 2026-07-22
 updated: 2026-07-22
@@ -25,6 +27,8 @@ updated: 2026-07-22
 
 - @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — primary DR (K183)
 - @sources/gemini-italian-citizenship-software-map-2026-07-22.md — K185 decision tree + status vocab + proposed ID renames
+- @sources/youtube-italian-citizenship-channels-2026-07-22.md — K186 ICA/IDCA deep watch
+- @concepts/italian-citizenship-youtube-soft-flags.md — appointment evidence + court soft-flags
 - @concepts/gpuology-genealogy-agent-kit.md — product: vault + checklist + optional concierge (not auto-file)
 - @concepts/atto-macos-gtm-gumroad.md — listing must use safe status language
 - @sources/gemini-atto-macos-gtm-2026-07-22.md — DIY persona / fee-risk framing for GTM
@@ -89,6 +93,16 @@ Proposed ID renames from @sources/gemini-italian-citizenship-software-map-2026-0
 
 **Soft-flags only:** post-1992 bipolidi Minor Issue; pre-27 Mar 2025 “clear intent” definition; consulate-variable name OATS.
 
+### K186 YouTube deep-watch deltas
+
+From @concepts/italian-citizenship-youtube-soft-flags.md (ICA/IDCA transcripts):
+
+- **Appointment evidence pack** — Prenot@Mi unavailability series, account emails, consulate correspondence, wait-list proofs (counsel export; never “grandfathered”).
+- **Venue soft-flag** — current = consulate of residence; **coming** centralized Rome mail office for abroad applicants (timeline TBD).
+- **Doc matrix (ICA claim)** — for applicants who meet *new* rules, vital/naturalization docs “have not changed”; eligibility triage changed.
+- **Alt path label** — Italian parent/grandparent + ~2y legal Italy residency → residency-naturalization research track when JS chain broken.
+- **Court glossary** — Costituzionale vs Cassazione; Cassazione **13818/2026** (“impossible to file → interest to sue”) — **[NEEDS VERIFICATION]** primary judgment.
+
 ### Glossary (operator-facing)
 
-*Copia integrale* · *Estratto* · AIRE · Apostille · *Traduzione asseverata* · Prenot@Mi · *Permesso di soggiorno per attesa cittadinanza* · 1948 rule · Minor Issue · Tajani / Law 74/2025 · *beneficio di legge*
+*Copia integrale* · *Estratto* · AIRE · Apostille · *Traduzione asseverata* · Prenot@Mi · *Permesso di soggiorno per attesa cittadinanza* · 1948 rule · Minor Issue · Tajani / Law 74/2025 · *beneficio di legge* · Corte Costituzionale · Corte di Cassazione · *Sezioni Unite*

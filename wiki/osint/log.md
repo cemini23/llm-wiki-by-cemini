@@ -3,6 +3,15 @@
 updated: 2026-07-22
 ---
 
+## [2026-07-22] ingest | K186 — Italian citizenship YouTube (ICA/IDCA) deep watch
+
+- **Sources:** channel survey + **10 auto-caption transcripts** (ICA 9 · IDCA 1); cache `.local/reports/2026-07-22_italian-citizenship-yt/`
+- **Wiki:** source `youtube-italian-citizenship-channels-2026-07-22` + concept `italian-citizenship-youtube-soft-flags`; deepen pathways (appointment evidence · Rome venue soft-flag · Cassazione 13818 cite)
+- **Product deltas:** `DOC_PRENOTAMI_*` evidence pack · soft-flags `SF_TAJANI_COSTITUZIONALE` / `SF_MINOR_SEZIONI_UNITE` / `SF_APPT_IMPOSSIBLE` / `SF_VENUE_ROME_CENTRAL` / `SF_NAT_2YR_PARENT_GP` · GDPR Art.15 counsel-only · never auto Prenot@Mi / never “you qualify”
+- **Caveats:** captions noisy; 13818/2026 + Costituzionale outcomes **[NEEDS VERIFICATION]** vs primary judgments
+- **Brief:** `../atto/briefs/2026-07-22_k186-youtube-citizenship-soft-flags.md`
+- **Canvas:** `italian-citizenship-youtube-research.canvas.tsx`
+
 ## [2026-07-22] ingest | K185 — Atto GTM + threat model + citizenship software + FIND playbook
 
 - **Inbox (4 NEW):** `Atto Mac App GTM Research.docx` · `Genealogy App Threat Model.docx` · `Italian Citizenship Software Research.docx` · `Italian Civil Genealogy Research Plan.docx` (substack Wisconsin RSS left in inbox)

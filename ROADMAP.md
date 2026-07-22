@@ -22,6 +22,10 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 product (`../a
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-22 — K186)
+
+- **K186 ingest (2026-07-22)** — ICA/IDCA YouTube deep watch (10 transcripts). Concept `italian-citizenship-youtube-soft-flags` (appointment evidence ontology + court soft-flags). Brief → `../atto/briefs/`. Primary-law lock still open (Cassazione 13818/2026, Costituzionale post-Jun-9). No prod scp.
+
 ## Current state (2026-07-22 — K185)
 
 - **K185 ingest (2026-07-22)** — 4 Atto Gemini DR docx (GTM Gumroad · threat model · citizenship software map · civil FIND playbook). Concepts: `atto-macos-gtm-gumroad`, `atto-local-first-threat-model`; deepen citizenship pathways + Antenati FIND. Brief → `../atto/briefs/`. Pathway ID renames pending product GO. Substack Wisconsin RSS still in inbox. No prod scp.
