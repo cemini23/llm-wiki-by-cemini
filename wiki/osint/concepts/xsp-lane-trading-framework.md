@@ -53,12 +53,21 @@ related:
   - sources/substack-rss-capital-flows-2026-07-18-weekend-depth-of-field.md
   - sources/substack-rss-capital-flows-2026-07-21-equity-cliff.md
   - sources/substack-rss-moontower-2026-07-19-middle-school-portfolios.md
+  - sources/arxiv-2607.19030-illiquid-options-liquid-benchmarks.md
+  - sources/substack-rss-capital-flows-2026-07-22-hf-positioning-fragile.md
+  - entities/tools/outlines.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
+
+- @entities/tools/outlines.md — K182 structured-output Integrate
+
+- @sources/substack-rss-capital-flows-2026-07-22-hf-positioning-fragile.md — K182 HF positioning
+
+- @sources/arxiv-2607.19030-illiquid-options-liquid-benchmarks.md — K182 liquid→illiquid IV map
 
 - @sources/substack-rss-moontower-2026-07-19-middle-school-portfolios.md — K178 equal-risk pedagogy
 

@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **835 canonical stubs** (K181 + K180 + K179 + K178 + K177 + K176 + K175 + K174 + K173 + K172)
+Total: **858 canonical stubs** (K182 + K181 + K180 + K179 + K178 + K177 + …)
 
 ### k181-ingest (2)
 
@@ -35,6 +35,32 @@ Total: **835 canonical stubs** (K181 + K180 + K179 + K178 + K177 + K176 + K175 +
 
 - [VIR-5500 Equity Research Dossier (Gemini DR)](sources/gemini-vir-5500-equity-dossier-2026-07-21.md) — prostate TCE thesis; cutoff discipline; Sanofi/N conflicts flagged. — `docx` [+k179]
 - [Vir Biotechnology (VIR)](entities/tickers/vir.md) — VIR-5500-first draft ticker; HDV secondary. — ticker [+k179]
+
+### k182-ingest (23)
+
+- [URL Revenue Opportunity Analysis (2026-07-22)](sources/eval-url-revenue-opportunity-analysis-2026-07-22.md) — outlines/omlx/cf-temp Integrate; worldmonitor AGPL Watch. — `docx` [+k182]
+- [Outlines](entities/tools/outlines.md) — Integrate Apache-2.0. — entity [+k182]
+- [cloudflare_temp_email](entities/tools/cloudflare-temp-email.md) — Integrate MIT Atto. — entity [+k182]
+- [omlx](entities/tools/omlx.md) — Integrate Apache-2.0. — entity [+k182]
+- [LikeC4](entities/tools/likec4.md) — Extract MIT. — entity [+k182]
+- [pi-web](entities/tools/pi-web.md) — Extract MIT. — entity [+k182]
+- [gigatoken](entities/tools/gigatoken.md) — Extract MIT. — entity [+k182]
+- [World Monitor](entities/tools/worldmonitor.md) — Watch AGPL. — entity [+k182]
+- [Illiquid options via liquid benchmarks (2607.19030)](sources/arxiv-2607.19030-illiquid-options-liquid-benchmarks.md) — **xsp**. — `pdf` [+k182]
+- [Authority framing laundered code (2607.19267)](sources/arxiv-2607.19267-authority-framing-laundered-code.md) — CCC/cybersec/poker. — `pdf` [+k182]
+- [Agents in the Wild (2607.19336)](sources/arxiv-2607.19336-agents-in-the-wild-deployment.md) — CCC. — `pdf` [+k182]
+- [BioSecBench (2607.19262)](sources/arxiv-2607.19262-biosecbench-surveillance.md) — thin. — `pdf` [+k182]
+- [Particle accelerators (2607.16825)](sources/arxiv-2607.16825-particle-accelerators-collaboration.md) — Pass. — `pdf` [+k182]
+- [CF HF positioning fragile](sources/substack-rss-capital-flows-2026-07-22-hf-positioning-fragile.md) — **xsp**. — `rss` [+k182]
+- [EH wildfire AQI markets](sources/substack-rss-event-horizon-2026-07-21-wildfire-aqi-markets.md) — **pm**. — `rss` [+k182]
+- [WuBlock Circle/OUSD](sources/substack-rss-wublock-2026-07-21-circle-ousd.md) — **pm**. — `rss` [+k182]
+- [WuBlock fragile tokens](sources/substack-rss-wublock-2026-07-22-fragile-speculative-tokens.md) — **pm**. — `rss` [+k182]
+- [Addy software factories](sources/substack-rss-addy-osmani-2026-07-22-software-factories.md) — CCC. — `rss` [+k182]
+- [LS AI cybersecurity](sources/newsletter-rss-latent-space-2026-07-22-ai-cybersecurity.md) — CCC/cyber. — `rss` [+k182]
+- [PE napkin math](sources/newsletter-rss-pragmatic-engineer-2026-07-21-napkin-math.md) — CCC. — `rss` [+k182]
+- [Klement rates/credit](sources/substack-rss-klement-2026-07-21-rates-credit-defaults.md) — thin. — `rss` [+k182]
+- [Klement slow news](sources/substack-rss-klement-2026-07-21-slow-news-incorporation.md) — thin. — `rss` [+k182]
+- [LS Xaira X-Cell](sources/newsletter-rss-latent-space-2026-07-21-xaira-x-cell.md) — thin. — `rss` [+k182]
 
 ### k178-ingest (6)
 

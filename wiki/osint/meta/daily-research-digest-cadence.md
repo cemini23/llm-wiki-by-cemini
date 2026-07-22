@@ -35,7 +35,7 @@ updated: 2026-07-15
 | Field | Value |
 |-------|-------|
 | **Cadence** | Daily — **free arXiv** paper lane (wiki-deduped) → inbox PDFs; Exa news **off** by default |
-| **Last run** | 2026-07-20 |
+| **Last run** | 2026-07-22 |
 | **Script** | `cemini-daily-research-digest` (or `bash scripts/run_daily_research_digest.sh` from repo) |
 | **Config** | `scripts/daily_research_config.yaml` (`exa.paper_mode`, `exa.news_enabled`) |
 | **Report** | `wiki/sweeps/YYYY-MM-DD-daily.md` |

@@ -99,12 +99,21 @@ related:
   - sources/substack-rss-wublock-2026-07-19-asia-top10-japan-fiea.md
 
   - sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md
+  - sources/substack-rss-event-horizon-2026-07-21-wildfire-aqi-markets.md
+  - sources/substack-rss-wublock-2026-07-21-circle-ousd.md
+  - sources/substack-rss-wublock-2026-07-22-fragile-speculative-tokens.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-22-fragile-speculative-tokens.md — K182 thin-token wicks
+
+- @sources/substack-rss-wublock-2026-07-21-circle-ousd.md — K182 OUSD/Circle
+
+- @sources/substack-rss-event-horizon-2026-07-21-wildfire-aqi-markets.md — K182 AQI markets
 
 - @sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md — K178 ICE×OKX 24/7 clearing Context
 

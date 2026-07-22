@@ -4,6 +4,8 @@ type: concept
 tags: [concept, agent-harness, coding-agents, agentic-ai, survey-synthesis]
 keywords: [code-as-agent-harness, harness-interface, harness-mechanisms, multi-agent-coordination, verification, stateful-agents]
 related:
+  - entities/tools/outlines.md
+  - entities/tools/gigatoken.md
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
   - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
   - sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md
@@ -47,12 +49,40 @@ related:
   - sources/arxiv-2607.15769-agent-governance-manifest.md
 
   - sources/newsletter-rss-latent-space-2026-07-21-ainews.md
+  - sources/arxiv-2607.19267-authority-framing-laundered-code.md
+  - sources/arxiv-2607.19336-agents-in-the-wild-deployment.md
+  - sources/substack-rss-addy-osmani-2026-07-22-software-factories.md
+  - sources/newsletter-rss-latent-space-2026-07-22-ai-cybersecurity.md
+  - entities/tools/likec4.md
+  - entities/tools/pi-web.md
+  - sources/arxiv-2607.19262-biosecbench-surveillance.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-21-napkin-math.md
+  - sources/newsletter-rss-latent-space-2026-07-21-xaira-x-cell.md
+  - sources/arxiv-2607.16825-particle-accelerators-collaboration.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.16825-particle-accelerators-collaboration.md — K182 Pass thin
+
+- @sources/newsletter-rss-latent-space-2026-07-21-xaira-x-cell.md — K182 thin Xaira
+
+- @sources/newsletter-rss-pragmatic-engineer-2026-07-21-napkin-math.md — K182 napkin math
+
+- @sources/arxiv-2607.19262-biosecbench-surveillance.md — K182 thin biosec Context
+
+- @entities/tools/pi-web.md — K182 Extract
+
+- @entities/tools/likec4.md — K182 Extract
+
+- @sources/substack-rss-addy-osmani-2026-07-22-software-factories.md — K182 light vs dark factory
+
+- @sources/arxiv-2607.19336-agents-in-the-wild-deployment.md — K182 deployment gap
+
+- @sources/arxiv-2607.19267-authority-framing-laundered-code.md — K182 authority framing CI/CD
 
 - @sources/newsletter-rss-latent-space-2026-07-21-ainews.md — K178 Cursor multi-agent / cost variance Context
 

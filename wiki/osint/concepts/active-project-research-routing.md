@@ -25,12 +25,15 @@ related:
   - concepts/polymarket-bot-architecture.md
   - "@image-gen-wiki/concepts/david-adoption-brief-routing.md"
   - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
+  - sources/eval-url-revenue-opportunity-analysis-2026-07-22.md
 maturity: core
 created: 2026-06-17
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
+
+- @sources/eval-url-revenue-opportunity-analysis-2026-07-22.md — K182 XSP/TipDrop/Atto eval
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy concept (brand locked **Atto**)
 

@@ -22,6 +22,16 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 product (`../a
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-22 — K182)
+
+- **K182 ingest (2026-07-22)** — URL Revenue Opportunity Analysis.docx (20 URLs) + 5 arXiv + CF/EH/WuBlock/Addy/LS/PE/Klement RSS. **Integrate:** outlines, cloudflare_temp_email, omlx. **Extract:** likec4, pi-web, gigatoken. **Watch AGPL:** worldmonitor. **Briefs:** xsp+pm scp; poker authority framing; CCC; TipDrop; cybersec; Atto email/omlx. Phase-0 ~277MB. Cleared leftover LIKELY inbox.
+
+## Current state (2026-07-21 — K180)
+
+- **K180 ingest (2026-07-21)** — 5 Atto Gemini DR docx (Antenati deep links, US hometown ladder, place/Belfiore, civil HTR, research-tools/Processetti). Concepts: `antenati-deep-link-grammar`, `us-italy-hometown-reveal-ladder`. Brief → `../atto/briefs/`. Substack RSS leftovers still in inbox (LIKELY). No prod scp.
+- **K179 ingest (2026-07-21)** — Gemini DR `VIR-5500 Equity Research Dossier.docx` → source + `wiki/entities/tickers/vir.md` (VIR-5500-first, **draft**). Conflicts open: Sanofi skim %, trial N, Gr≥3 CRS, ESMO timing. Substack RSS inbox leftovers untouched. No prod brief.
+- **Equity research lane:** VIR prostate thesis now wiki-backed; next = primary-source lock on Sanofi/Amunix + CT.gov N.
+
 ## Current state (2026-07-21 — K178)
 
 - **K178 ingest (2026-07-21)** — Aura generative-art paper (2607.17940; ≠ family genealogy) + Capital Flows equity cliff + WuBlock ICE×OKX 24/7 clearing + Moontower equal-risk stub + Latent Space Jul 21 (dated NEW). **No local clones.** Briefs: xsp+pm (**scp**); CCC; TipDrop/David + image-gen; poker no-fit. Cleared K177 leftover inbox dups.

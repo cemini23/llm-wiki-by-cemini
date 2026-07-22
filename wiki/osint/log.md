@@ -3,6 +3,15 @@
 updated: 2026-07-21
 ---
 
+## [2026-07-22] ingest | K182 — URL revenue eval + options/security papers + CF/PM/WuBlock
+
+- **Inbox (23):** tool-eval docx (20 URLs) + 5 arXiv + NEW RSS; archive 7 LIKELY leftovers
+- **Eval overrides:** worldmonitor **AGPL** → Watch (not Integrate); no HF weight downloads
+- **Integrate local:** outlines, cloudflare_temp_email, omlx (~279MB total Extract+Integrate <<500MB)
+- **Papers:** illiquid IV map → xsp; authority framing → CCC/cybersec/poker; Agents-in-Wild; BioSec/accelerators thin
+- **Briefs:** xsp+pm (**scp**); poker authority light steal; CCC; TipDrop/David; cybersec; family Atto email/omlx
+- **Phase-0:** `scripts/adopt_k182_phase0.sh` + license report
+
 ## [2026-07-21] ingest | K181 — VIR-5500 Commercial Strategy Dossier (Gemini DR v2)
 
 - **Inbox:** `VIR-5500 Commercial Strategy Dossier.docx` — preingest **NEW** (sha256 `24c7ff3b…47335`); Substack RSS leftovers **left in inbox**

@@ -6,12 +6,15 @@ keywords: [agent-reactive-bugs, AR-bugs, silent-failures, harness-guardrails, re
 related:
   - sources/arxiv-2607.15684-agent-reactive-bugs-model-harness.md
   - concepts/code-as-agent-harness.md
+  - sources/arxiv-2607.19267-authority-framing-laundered-code.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-20
+updated: 2026-07-22
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.19267-authority-framing-laundered-code.md — K182 authority/laundered-PR sibling
 
 - @sources/arxiv-2607.15684-agent-reactive-bugs-model-harness.md — primary empirical study
 - @concepts/code-as-agent-harness.md — parent harness model

@@ -6,14 +6,17 @@ keywords: [equity-cliff, SPX, capital-flows, hedge-fund-positioning, CME-single-
 related:
   - concepts/capital-flows-sofr-conviction-framework.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-capital-flows-2026-07-22-hf-positioning-fragile.md
 maturity: draft
 read_status: read
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-22
 clusters: [k178-ingest]
 ---
 
 ## Relations
+
+- @sources/substack-rss-capital-flows-2026-07-22-hf-positioning-fragile.md — next-day HF positioning
 
 - @concepts/capital-flows-sofr-conviction-framework.md
 - @concepts/xsp-lane-trading-framework.md

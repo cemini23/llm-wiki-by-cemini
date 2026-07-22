@@ -4,6 +4,8 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - entities/tools/omlx.md
+  - entities/tools/cloudflare-temp-email.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - concepts/computational-genealogy-archival-automation.md
   - concepts/italian-regional-genealogy-archive-playbook.md
@@ -30,6 +32,10 @@ updated: 2026-07-21
 ---
 
 ## Relations
+
+- @entities/tools/omlx.md — K182 local LLM candidate
+
+- @entities/tools/cloudflare-temp-email.md — K182 Integrate candidate
 
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — market/DR source (K176); ToS kill framing **superseded** by operator override below
 - @concepts/computational-genealogy-archival-automation.md — shipped methodology stack

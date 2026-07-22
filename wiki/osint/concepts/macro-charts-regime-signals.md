@@ -32,12 +32,18 @@ related:
   - sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md
   - sources/substack-rss-klement-2026-07-20-guardian-readers.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-klement-2026-07-21-rates-credit-defaults.md
+  - sources/substack-rss-klement-2026-07-21-slow-news-incorporation.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-20
+updated: 2026-07-22
 ---
 
 ## Relations
+
+- @sources/substack-rss-klement-2026-07-21-slow-news-incorporation.md — K182 thin
+
+- @sources/substack-rss-klement-2026-07-21-rates-credit-defaults.md — K182 thin
 
 - @concepts/xsp-lane-trading-framework.md — XSP lanes consume Macro Charts regime reads
 - @sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md — K177 paid DAMAGED GOODS (VIX/SOX coil)
