@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-22] ingest | 2 arXiv rejects (flow-field false positives) + empty 07-21
+
+- Inbox: 2 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-22.md (both reject); archived; inbox cleared
+- 2607.19213 drone computing vision; 2607.19274 spinal eversion continuum robot — `continuum`/`navigation` token noise
+- Config: tighten `rts-flow-field-game` arxiv_query (require flow-field + game/RTS/pathfinding/crowd/Emerson)
+- 2026-07-21: empty inbox (3 ConFlow/CR-Solver/SKA skips); sweep committed only
+- Phase-0 / local adopt / briefs: none
+- Sweeps: @sweeps/2026-07-21-daily.md · @sweeps/2026-07-22-daily.md
+
+---
+
 ## [2026-07-20] ingest | 3 arXiv rejects (lockstep-query false positives)
 
 - Inbox: 3 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-20.md (all reject); archived; inbox cleared

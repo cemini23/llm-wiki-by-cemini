@@ -4,6 +4,7 @@ type: source
 tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, lockstep, mis-route, uas, quantum, covariance]
 related:
+  - sources/inbox-arxiv-reject-batch-2026-07-22.md
   - sources/inbox-arxiv-reject-batch-2026-07-19.md
   - concepts/rts-networking-deferred.md
   - meta/cross-wiki-routing.md
