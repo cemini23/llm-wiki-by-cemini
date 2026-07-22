@@ -18,16 +18,20 @@ related:
   - entities/tools/dhfbk-tint.md
   - sources/gemini-italian-genealogy-research-tools-2026-07-21.md
   - concepts/active-project-research-routing.md
+  - concepts/atto-macos-gtm-gumroad.md
+  - sources/gemini-atto-macos-gtm-2026-07-22.md
 maturity: draft
 read_status: read
 created: 2026-07-20
-updated: 2026-07-20
+updated: 2026-07-22
 clusters: [genealogy, k176-ingest]
 ---
 
 ## Relations
 
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy synthesis (this ingest)
+- @concepts/atto-macos-gtm-gumroad.md — K185 Gumroad GTM operationalizes this market wedge
+- @sources/gemini-atto-macos-gtm-2026-07-22.md — K185 GTM DR
 - @concepts/computational-genealogy-archival-automation.md — technical stack overlap
 - @concepts/italian-regional-genealogy-archive-playbook.md — jure sanguinis / stato civile wedge
 - @entities/tools/familysearch-platform-api.md — BYO-auth + compatibility review

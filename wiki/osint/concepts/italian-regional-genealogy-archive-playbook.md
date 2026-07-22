@@ -16,6 +16,9 @@ related:
   - sources/gemini-italian-american-genealogy-sources-2026-07-21.md
   - concepts/antenati-deep-link-grammar.md
   - concepts/us-italy-hometown-reveal-ladder.md
+  - concepts/italian-citizenship-pathways-document-pipelines.md
+  - sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md
+  - sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md
   - concepts/computational-genealogy-archival-automation.md
   - entities/tools/nati-in-trentino.md
   - entities/tools/steve-morse-census-tools.md
@@ -28,12 +31,15 @@ related:
   - entities/tools/autoresearch-genealogy.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
+- @concepts/italian-citizenship-pathways-document-pipelines.md — K183 *copia integrale* / PEC for citizenship packs
+- @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — K183 citizenship pipelines
+- @sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md — K185 military backdoor + 70-year privacy failure-mode copy
 - @sources/gemini-portale-antenati-research-guide-2026-07-21.md — K180 search-registry / dual-original
 - @sources/gemini-italian-place-name-resolution-2026-07-21.md — K180 frazione / soppressi / BeWeB·SIUSA exceptions
 - @sources/gemini-italian-american-genealogy-sources-2026-07-21.md — K180 US→comune ladder

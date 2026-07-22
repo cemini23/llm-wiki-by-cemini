@@ -10,10 +10,14 @@ related:
   - concepts/italian-regional-genealogy-archive-playbook.md
   - concepts/computational-genealogy-archival-automation.md
   - concepts/gpuology-genealogy-agent-kit.md
+  - concepts/italian-citizenship-pathways-document-pipelines.md
+  - sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md
+  - sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md
+  - sources/gemini-italian-citizenship-software-map-2026-07-22.md
   - entities/tools/steve-morse-census-tools.md
 maturity: draft
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
@@ -21,6 +25,10 @@ updated: 2026-07-21
 - @sources/gemini-italian-american-genealogy-sources-2026-07-21.md — primary DR (K180)
 - @sources/gemini-italian-place-name-resolution-2026-07-21.md — phonetic / soppressi after string found
 - @concepts/antenati-deep-link-grammar.md — next hop once comune known
+- @sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md — K185 FIND.md Step 1 consumes this ladder
+- @sources/gemini-italian-citizenship-software-map-2026-07-22.md — K185 Stage 0 before pathway triage
+- @concepts/italian-citizenship-pathways-document-pipelines.md — K183: naturalization proofs become filing-grade docs
+- @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — USCIS/NARA no-record letters for citizenship
 - @entities/tools/steve-morse-census-tools.md — One-Step forms
 - @concepts/italian-regional-genealogy-archive-playbook.md — Italian archive routing
 - @concepts/computational-genealogy-archival-automation.md — US staging step

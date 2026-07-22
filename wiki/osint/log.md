@@ -1,7 +1,25 @@
 # Wiki Log
 
-updated: 2026-07-21
+updated: 2026-07-22
 ---
+
+## [2026-07-22] ingest | K185 — Atto GTM + threat model + citizenship software + FIND playbook
+
+- **Inbox (4 NEW):** `Atto Mac App GTM Research.docx` · `Genealogy App Threat Model.docx` · `Italian Citizenship Software Research.docx` · `Italian Civil Genealogy Research Plan.docx` (substack Wisconsin RSS left in inbox)
+- **Wiki:** 4 sources + 2 concepts (`atto-macos-gtm-gumroad`, `atto-local-first-threat-model`); deepen citizenship pathways (proposed ID renames + status vocab) + Antenati FIND.md pipeline / do-not-automate; hubs GPUOLOGY / regional / computational / US ladder / OpenClaw taxonomy parallel
+- **Product deltas:** Gumroad $49/$89 lifetime · notarize-before-list · vault AES + MCP Approve + Access fail-closed · status vocab safe labels · FIND emit Markdown only · pathway rename pending GO
+- **Caveats:** Law 74 / Circular / fee claims **[NEEDS VERIFICATION]**; CVE/worm/Cloudflare-default claims verify before HARD SECURITY.md
+- **Brief:** `../atto/briefs/2026-07-22_k185-gtm-threat-citizenship-find.md`
+- **Archive:** egress-fi `osint/` (4 docx)
+
+## [2026-07-22] ingest | K183 — Italian Citizenship Document Pipelines (Atto)
+
+- **Inbox (1 NEW):** `Italian Citizenship Document Pipelines.docx` (sha256 `9c14224a…`)
+- **Wiki:** 1 source + 1 concept (`italian-citizenship-pathways-document-pipelines`); hubs GPUOLOGY / computational-genealogy / regional playbook / Antenati deep-link / US ladder / Portale Antenati source
+- **Product:** pathway IDs (`JS_ADMIN_CONSULATE|COMUNE`, `JS_JUDICIAL_1948|MINOR|TAJANI`, `NAT_*`) + Stages 0–6 (triage→copia integrale→US chain→apostille→translate→forms→AIRE); research vs filing-grade split
+- **Caveats:** Law 74/2025 / Minor Issue / Jun-2026 Constitutional Court / Cassazione dates **[NEEDS VERIFICATION]** vs primary statutes before UI copy
+- **Brief:** `../atto/briefs/2026-07-22_k183-citizenship-document-pipelines.md`
+- **Archive:** egress-fi `osint/`
 
 ## [2026-07-22] ingest | K182 — URL revenue eval + options/security papers + CF/PM/WuBlock
 

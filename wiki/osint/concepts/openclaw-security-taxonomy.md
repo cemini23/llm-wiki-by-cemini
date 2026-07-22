@@ -29,6 +29,7 @@ related:
   - sources/arxiv-claw-swe-bench-2606.12344-2026-06-16.md
   - sources/arxiv-aohp-os-agent-harness-2606.23449-2026-06-23.md
   - sources/huggingface-model-evals-74url-2026-06-23.md
+  - concepts/atto-local-first-threat-model.md
   - concepts/aohp-os-level-agent-harness.md
   - sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md
   - sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md
@@ -62,6 +63,7 @@ updated: 2026-07-14
 - @entities/tools/hermes-agent.md — K52 Nous Research Hermes Agent, positioned as OpenClaw's successor; this taxonomy is the comparison frame for its security posture
 - @sources/gemini-dr-pm-lp-vs-copy-trading-2026-07-14.md — K165 ClawHub Polymarket skill malware wave
 - @sources/gemini-dr-pm-trading-strategies-capital-2026-07-14.md — Unit 42 / npm IoCs
+- @concepts/atto-local-first-threat-model.md — K185 Atto MCP / intake prompt-injection surface (local-first parallel)
 
 ## Raw Concept
 

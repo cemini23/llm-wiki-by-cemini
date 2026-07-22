@@ -26,9 +26,17 @@ related:
   - sources/gemini-italian-civil-register-extraction-2026-07-21.md
   - concepts/antenati-deep-link-grammar.md
   - concepts/us-italy-hometown-reveal-ladder.md
+  - concepts/italian-citizenship-pathways-document-pipelines.md
+  - sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md
+  - concepts/atto-macos-gtm-gumroad.md
+  - concepts/atto-local-first-threat-model.md
+  - sources/gemini-atto-macos-gtm-2026-07-22.md
+  - sources/gemini-atto-threat-model-2026-07-22.md
+  - sources/gemini-italian-citizenship-software-map-2026-07-22.md
+  - sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
@@ -41,6 +49,14 @@ updated: 2026-07-21
 - @concepts/computational-genealogy-archival-automation.md — shipped methodology stack
 - @concepts/italian-regional-genealogy-archive-playbook.md — Italian wedge content
 - @concepts/active-project-research-routing.md — family-tree co-primary
+- @concepts/italian-citizenship-pathways-document-pipelines.md — K183 citizenship checklist / pathway IDs for concierge
+- @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — K183 Tajani / Minor Issue / apostille pipeline
+- @concepts/atto-macos-gtm-gumroad.md — K185 Gumroad personas / pricing / listing
+- @concepts/atto-local-first-threat-model.md — K185 vault / MCP / Access controls
+- @sources/gemini-atto-macos-gtm-2026-07-22.md — K185 GTM DR
+- @sources/gemini-atto-threat-model-2026-07-22.md — K185 threat-model DR
+- @sources/gemini-italian-citizenship-software-map-2026-07-22.md — K185 pathway decision tree / UPL copy
+- @sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md — K185 FIND.md pipeline
 - @sources/gemini-italian-genealogy-research-tools-2026-07-21.md — K180 validates cassette + human-gate wedge; Processetti gap
 - @sources/gemini-portale-antenati-research-guide-2026-07-21.md — K180 Antenati deep links for Atto FIND
 - @sources/gemini-italian-american-genealogy-sources-2026-07-21.md — K180 US ladder

@@ -11,10 +11,11 @@ related:
   - entities/tools/codice-fiscale-js.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/gemini-italian-american-genealogy-sources-2026-07-21.md
+  - sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md
 maturity: draft
 read_status: read
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
@@ -25,6 +26,7 @@ updated: 2026-07-21
 - @concepts/computational-genealogy-archival-automation.md — place → archive routing
 - @concepts/gpuology-genealogy-agent-kit.md — Atto extract.comune soft priors
 - @sources/gemini-italian-american-genealogy-sources-2026-07-21.md — US string inputs
+- @sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md — K185 FIND Step 1 Belfiore/ISTAT normalize
 
 ## Raw Concept
 

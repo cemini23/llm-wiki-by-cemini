@@ -10,11 +10,13 @@ related:
   - concepts/computational-genealogy-archival-automation.md
   - entities/tools/steve-morse-census-tools.md
   - concepts/gpuology-genealogy-agent-kit.md
+  - concepts/italian-citizenship-pathways-document-pipelines.md
+  - sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md
   - sources/gemini-italian-place-name-resolution-2026-07-21.md
 maturity: draft
 read_status: read
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
@@ -23,6 +25,8 @@ updated: 2026-07-21
 - @entities/tools/steve-morse-census-tools.md — One-Step Ellis / ED tools
 - @concepts/italian-regional-genealogy-archive-playbook.md — after comune known → Italian archives
 - @sources/gemini-italian-place-name-resolution-2026-07-21.md — resolve phonetic / soppressi once town string exists
+- @concepts/italian-citizenship-pathways-document-pipelines.md — K183: naturalization / no-record letters become filing docs
+- @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — USCIS/NARA proof burden for jure sanguinis
 - @concepts/computational-genealogy-archival-automation.md — US staging before Antenati
 - @concepts/gpuology-genealogy-agent-kit.md — browser pointers only; no PII to AI
 

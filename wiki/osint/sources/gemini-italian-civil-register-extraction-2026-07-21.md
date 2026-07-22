@@ -13,10 +13,12 @@ related:
   - sources/gemini-italian-genealogy-research-tools-2026-07-21.md
   - sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md
   - concepts/gpuology-genealogy-agent-kit.md
+  - concepts/italian-citizenship-pathways-document-pipelines.md
+  - sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md
 maturity: draft
 read_status: read
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
@@ -28,6 +30,8 @@ updated: 2026-07-21
 - @sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md — LLM-NAS HTR Watch (contrast; Atto NO-GO)
 - @entities/tools/gcerretani-antenati.md — local image source for HTR
 - @sources/gemini-italian-genealogy-research-tools-2026-07-21.md — Processetti / product companion
+- @concepts/italian-citizenship-pathways-document-pipelines.md — K183: marginalia → why *copia integrale* for citizenship
+- @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — filing-grade vs research extracts
 - @concepts/gpuology-genealogy-agent-kit.md — Approve gate = human review of candidates
 
 ## Raw Concept

@@ -12,7 +12,23 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **858 canonical stubs** (K182 + K181 + K180 + K179 + K178 + K177 + …)
+Total: **866 canonical stubs** (K185 + K183 + K182 + K181 + K180 + K179 + …)
+
+### k185-ingest (8)
+
+- [Atto Mac App GTM Research](sources/gemini-atto-macos-gtm-2026-07-22.md) — Gumroad personas / $49–$89 / listing + notarization. — `docx` [+k185]
+- [Genealogy App Threat Model](sources/gemini-atto-threat-model-2026-07-22.md) — vault / MCP / Access / supply-chain checklist. — `docx` [+k185]
+- [Italian Citizenship Software Map](sources/gemini-italian-citizenship-software-map-2026-07-22.md) — pathway decision tree + status vocab + UPL never-claims. — `docx` [+k185]
+- [Italian Civil Genealogy FIND Playbook](sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md) — FIND.md pipeline + deep-link templates + do-not-automate. — `docx` [+k185]
+- [Atto macOS GTM — Gumroad](concepts/atto-macos-gtm-gumroad.md) — personas / pricing / listing spine. — concept [+k185]
+- [Atto local-first threat model](concepts/atto-local-first-threat-model.md) — Must-have controls for vault/MCP/share. — concept [+k185]
+- [Italian citizenship pathways](concepts/italian-citizenship-pathways-document-pipelines.md) — deepened: proposed ID renames + status vocab. — concept [+k185]
+- [Antenati deep-link grammar](concepts/antenati-deep-link-grammar.md) — FIND.md emission + do-not-automate. — concept [+k185]
+
+### k183-ingest (2)
+
+- [Italian Citizenship Document Pipelines](sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md) — 2026 jure sanguinis / birth / apostille pipelines + pathway IDs. — `docx` [+k183]
+- [Italian citizenship pathways — document pipelines](concepts/italian-citizenship-pathways-document-pipelines.md) — Atto checklist taxonomy (JS_ADMIN_* / judicial / NAT_*). — concept [+k183]
 
 ### k181-ingest (2)
 

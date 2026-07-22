@@ -22,6 +22,14 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 product (`../a
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-22 — K185)
+
+- **K185 ingest (2026-07-22)** — 4 Atto Gemini DR docx (GTM Gumroad · threat model · citizenship software map · civil FIND playbook). Concepts: `atto-macos-gtm-gumroad`, `atto-local-first-threat-model`; deepen citizenship pathways + Antenati FIND. Brief → `../atto/briefs/`. Pathway ID renames pending product GO. Substack Wisconsin RSS still in inbox. No prod scp.
+
+## Current state (2026-07-22 — K183)
+
+- **K183 ingest (2026-07-22)** — Italian Citizenship Document Pipelines.docx → source + concept `italian-citizenship-pathways-document-pipelines`. Pathway taxonomy + apostille/translation stages for Atto concierge/FIND. Brief → `../atto/briefs/`. Primary-law verification still open (Tajani / Minor Issue / 2026 court calendar). No prod scp.
+
 ## Current state (2026-07-22 — K182)
 
 - **K182 ingest (2026-07-22)** — URL Revenue Opportunity Analysis.docx (20 URLs) + 5 arXiv + CF/EH/WuBlock/Addy/LS/PE/Klement RSS. **Integrate:** outlines, cloudflare_temp_email, omlx. **Extract:** likec4, pi-web, gigatoken. **Watch AGPL:** worldmonitor. **Briefs:** xsp+pm scp; poker authority framing; CCC; TipDrop; cybersec; Atto email/omlx. Phase-0 ~277MB. Cleared leftover LIKELY inbox.

@@ -13,18 +13,24 @@ related:
   - sources/gemini-italian-civil-register-extraction-2026-07-21.md
   - sources/gemini-italian-genealogy-research-tools-2026-07-21.md
   - sources/gemini-automated-deep-genealogy-research-2026-07-09.md
+  - concepts/italian-citizenship-pathways-document-pipelines.md
+  - sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md
+  - sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md
 maturity: draft
 read_status: read
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-22
 ---
 
 ## Relations
 
 - @concepts/antenati-deep-link-grammar.md — synthesized URL + checklist rules for Atto find layer
+- @sources/gemini-italian-civil-genealogy-find-playbook-2026-07-22.md — K185 FIND.md pipeline companion
 - @entities/tools/gcerretani-antenati.md — IIIF downloader; WAF/manifest hybrid workflow
 - @concepts/computational-genealogy-archival-automation.md — era ladder hub
 - @concepts/gpuology-genealogy-agent-kit.md — product = browser browse, local organize
+- @concepts/italian-citizenship-pathways-document-pipelines.md — K183: Antenati research ≠ *copia integrale* for citizenship
+- @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — filing vs research copies
 - @sources/gemini-italian-civil-register-extraction-2026-07-21.md — act layout + ARK/DGS citation companion
 - @sources/gemini-italian-genealogy-research-tools-2026-07-21.md — competitive tooling around Antenati friction
 - @sources/gemini-automated-deep-genealogy-research-2026-07-09.md — prior IIIF/Antenati methodology (K153)
