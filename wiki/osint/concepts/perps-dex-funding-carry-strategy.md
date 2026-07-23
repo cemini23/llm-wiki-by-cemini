@@ -20,13 +20,16 @@ related:
   - concepts/perp-dex-price-discovery-lead-lag.md
   - sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md
   - sources/substack-rss-wublock-2026-07-22-fragile-speculative-tokens.md
+  - sources/substack-rss-wublock-2026-07-23-robinhood-chain.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-07-22
+updated: 2026-07-23
 clusters: [quant-finance, crypto, market-neutral]
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-23-robinhood-chain.md — K191
 
 - @sources/substack-rss-wublock-2026-07-22-fragile-speculative-tokens.md — K182 speculative wick stack
 

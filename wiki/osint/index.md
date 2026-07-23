@@ -12,7 +12,25 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **874 canonical stubs** (K190 + K189 + …)
+Total: **889 canonical stubs** (K191 + K190 + …)
+
+### k191-ingest (15)
+
+- [Atto Commercial Migration Plan](sources/atto-commercial-migration-plan-2026-07-23.md) — Lemon Squeezy MoR + LicenseSeat + macOS-first. — `docx` [+k191]
+- [Software Licensing Architecture](sources/software-licensing-architecture-research-2026-07-23.md) — Ed25519 offline entitlements. — `docx` [+k191]
+- [GitHub Repo Revenue Analysis](sources/eval-github-repo-revenue-analysis-2026-07-23.md) — Stigg Extract; aidlc misfit. — `docx` [+k191]
+- [Correlated agreement blindness (2607.19899)](sources/arxiv-2607.19899-correlated-agreement-blindness.md) — CCC/poker. — `pdf` [+k191]
+- [PRO-LONG (2607.20064)](sources/arxiv-2607.20064-pro-long-programmatic-memory.md) — CCC/poker. — `pdf` [+k191]
+- [PoTRE (2607.20268)](sources/arxiv-2607.20268-potre-cognitive-heterogeneity.md) — CCC skim. — `pdf` [+k191]
+- [CF Treasury compressing](sources/substack-rss-capital-flows-2026-07-23-treasury-compressing.md) — **xsp** teaser. — `rss` [+k191]
+- [WuBlock Robinhood Chain](sources/substack-rss-wublock-2026-07-23-robinhood-chain.md) — **xsp/pm**. — `rss` [+k191]
+- [Klement customer-data flows](sources/substack-rss-klement-2026-07-23-investor-flows-customer-data.md) — thin. — `rss` [+k191]
+- [LS Laguna/Poolside](sources/newsletter-rss-latent-space-2026-07-23-laguna-poolside.md) — CCC Context. — `rss` [+k191]
+- [SparkToro create vs promote](sources/newsletter-rss-sparktoro-2026-07-23-creating-vs-promoting.md) — seo. — `rss` [+k191]
+- [stiggio/skills](entities/tools/stiggio-skills.md) — Extract MIT TipDrop. — entity [+k191]
+- [license-guard-rs](entities/tools/license-guard-rs.md) — Extract Apache Atto. — entity [+k191]
+- [LicenseSeat](entities/tools/licenseseat.md) — Watch commercial. — entity [+k191]
+- [aidlc IT manager](entities/tools/aidlc-it-department-manager.md) — Watch misfit. — entity [+k191]
 
 ### k190-ingest (16)
 

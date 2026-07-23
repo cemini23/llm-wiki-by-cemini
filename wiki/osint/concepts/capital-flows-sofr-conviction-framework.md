@@ -20,12 +20,15 @@ related:
   - sources/substack-rss-capital-flows-2026-07-18-weekend-depth-of-field.md
   - sources/substack-rss-capital-flows-2026-07-21-equity-cliff.md
   - sources/substack-rss-capital-flows-2026-07-22-hf-positioning-fragile.md
+  - sources/substack-rss-capital-flows-2026-07-23-treasury-compressing.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @sources/substack-rss-capital-flows-2026-07-23-treasury-compressing.md — K191
 
 - @sources/substack-rss-capital-flows-2026-07-22-hf-positioning-fragile.md — K182 HF fragile positioning
 

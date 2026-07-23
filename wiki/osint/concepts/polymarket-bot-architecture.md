@@ -103,12 +103,15 @@ related:
   - sources/substack-rss-wublock-2026-07-21-circle-ousd.md
   - sources/substack-rss-wublock-2026-07-22-fragile-speculative-tokens.md
   - sources/substack-rss-event-horizon-2026-07-22-wisconsin-election-betting.md
+  - sources/substack-rss-wublock-2026-07-23-robinhood-chain.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-23-robinhood-chain.md — K191
 
 - @sources/substack-rss-event-horizon-2026-07-22-wisconsin-election-betting.md — K190 WI election betting
 

@@ -171,13 +171,24 @@ related:
   - entities/tools/open-genealogy.md
   - entities/tools/kekule-html.md
   - entities/tools/go-geni.md
+  - sources/eval-github-repo-revenue-analysis-2026-07-23.md
+  - entities/tools/stiggio-skills.md
+  - entities/tools/aidlc-it-department-manager.md
+  - entities/tools/license-guard-rs.md
+  - entities/tools/licenseseat.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @entities/tools/aidlc-it-department-manager.md — K191 misfit
+
+- @entities/tools/stiggio-skills.md — K191 Extract
+
+- @sources/eval-github-repo-revenue-analysis-2026-07-23.md — K191
 
 - @sources/eval-github-repository-revenue-analysis-history-2026-07-22.md — K190
 

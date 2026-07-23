@@ -7,12 +7,15 @@ related:
   - sources/arxiv-2607.15684-agent-reactive-bugs-model-harness.md
   - concepts/code-as-agent-harness.md
   - sources/arxiv-2607.19267-authority-framing-laundered-code.md
+  - sources/arxiv-2607.19899-correlated-agreement-blindness.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.19899-correlated-agreement-blindness.md — K191
 
 - @sources/arxiv-2607.19267-authority-framing-laundered-code.md — K182 authority/laundered-PR sibling
 

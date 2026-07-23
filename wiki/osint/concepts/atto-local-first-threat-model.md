@@ -10,12 +10,19 @@ related:
   - concepts/openclaw-security-taxonomy.md
   - concepts/italian-citizenship-youtube-soft-flags.md
   - sources/gemini-atto-macos-gtm-2026-07-22.md
+  - sources/atto-commercial-migration-plan-2026-07-23.md
+  - sources/software-licensing-architecture-research-2026-07-23.md
+  - entities/tools/license-guard-rs.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @entities/tools/license-guard-rs.md — K191
+
+- @sources/atto-commercial-migration-plan-2026-07-23.md — K191 soft-gate offline
 
 - @sources/gemini-atto-threat-model-2026-07-22.md — primary DR (K185)
 - @concepts/atto-macos-gtm-gumroad.md — buyer-facing privacy FAQ source

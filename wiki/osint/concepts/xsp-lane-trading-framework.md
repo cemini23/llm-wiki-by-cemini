@@ -56,12 +56,18 @@ related:
   - sources/arxiv-2607.19030-illiquid-options-liquid-benchmarks.md
   - sources/substack-rss-capital-flows-2026-07-22-hf-positioning-fragile.md
   - entities/tools/outlines.md
+  - sources/substack-rss-capital-flows-2026-07-23-treasury-compressing.md
+  - sources/substack-rss-wublock-2026-07-23-robinhood-chain.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-23-robinhood-chain.md — K191 RH Chain
+
+- @sources/substack-rss-capital-flows-2026-07-23-treasury-compressing.md — K191
 
 - @entities/tools/outlines.md — K182 structured-output Integrate
 

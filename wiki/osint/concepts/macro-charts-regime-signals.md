@@ -34,12 +34,15 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-klement-2026-07-21-rates-credit-defaults.md
   - sources/substack-rss-klement-2026-07-21-slow-news-incorporation.md
+  - sources/substack-rss-klement-2026-07-23-investor-flows-customer-data.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @sources/substack-rss-klement-2026-07-23-investor-flows-customer-data.md — K191 thin
 
 - @sources/substack-rss-klement-2026-07-21-slow-news-incorporation.md — K182 thin
 

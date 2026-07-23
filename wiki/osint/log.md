@@ -3,6 +3,15 @@
 updated: 2026-07-22
 ---
 
+## [2026-07-23] ingest | K191 — Atto MoR/LicenseSeat + entitlements eval + agent papers
+
+- **Inbox (12):** Atto Commercial Migration + Licensing Architecture + GitHub revenue eval + 3 arXiv + CF/WuBlock/Klement/LS/SparkToro RSS
+- **Atto:** owned site + Lemon Squeezy MoR; LicenseSeat soft-gate; macOS-first / defer Windows
+- **Extract local:** stiggio/skills, license-guard-rs (~352MB total <<500); aidlc = eval misfit Watch; PRO-LONG repo 404
+- **Papers:** agreement blindness + PRO-LONG → CCC/poker; PoTRE skim
+- **Briefs:** Atto; xsp+pm scp; TipDrop Stigg; CCC; poker; seo SparkToro
+- **Phase-0:** `scripts/adopt_k191_phase0.sh`
+
 ## [2026-07-22] ingest | K190 — 4× genealogy revenue evals + WI election betting
 
 - **Inbox (5):** 4 genealogy/GitHub revenue docx + Event Horizon Wisconsin/Kalshi RSS

@@ -59,12 +59,22 @@ related:
   - sources/newsletter-rss-pragmatic-engineer-2026-07-21-napkin-math.md
   - sources/newsletter-rss-latent-space-2026-07-21-xaira-x-cell.md
   - sources/arxiv-2607.16825-particle-accelerators-collaboration.md
+  - sources/arxiv-2607.19899-correlated-agreement-blindness.md
+  - sources/arxiv-2607.20064-pro-long-programmatic-memory.md
+  - sources/arxiv-2607.20268-potre-cognitive-heterogeneity.md
+  - sources/newsletter-rss-latent-space-2026-07-23-laguna-poolside.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.20268-potre-cognitive-heterogeneity.md — K191 skim
+
+- @sources/arxiv-2607.20064-pro-long-programmatic-memory.md — K191 programmatic memory
+
+- @sources/arxiv-2607.19899-correlated-agreement-blindness.md — K191 agreement blindness
 
 - @sources/arxiv-2607.16825-particle-accelerators-collaboration.md — K182 Pass thin
 

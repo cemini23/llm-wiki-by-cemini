@@ -11,14 +11,25 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
   - concepts/italian-citizenship-pathways-document-pipelines.md
   - concepts/italian-citizenship-youtube-soft-flags.md
+  - concepts/italian-citizenship-primary-law-lock.md
   - sources/youtube-italian-citizenship-channels-2026-07-22.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
+  - sources/atto-commercial-migration-plan-2026-07-23.md
+  - sources/software-licensing-architecture-research-2026-07-23.md
+  - entities/tools/licenseseat.md
+  - entities/tools/license-guard-rs.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @entities/tools/license-guard-rs.md — K191 Ed25519 Extract
+
+- @entities/tools/licenseseat.md — K191 soft-gate candidate
+
+- @sources/atto-commercial-migration-plan-2026-07-23.md — K191 MoR/LicenseSeat plan
 
 - @sources/gemini-atto-macos-gtm-2026-07-22.md — primary DR (K185)
 - @sources/gemini-atto-threat-model-2026-07-22.md — privacy claims must survive SECURITY checklist
@@ -27,6 +38,7 @@ updated: 2026-07-22
 - @concepts/gpuology-genealogy-agent-kit.md — product wedge this GTM sells
 - @concepts/italian-citizenship-pathways-document-pipelines.md — DIY persona cost/risk driver
 - @concepts/italian-citizenship-youtube-soft-flags.md — anti-position vs YouTube eligibility CTAs
+- @concepts/italian-citizenship-primary-law-lock.md — K187 court/statute copy boundaries
 - @sources/youtube-italian-citizenship-channels-2026-07-22.md — ICA/IDCA competitor voice map
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — earlier market framing (K176)
 
@@ -68,3 +80,10 @@ Major-version lifetime; no monthly SaaS for core utility. Pack: notarized Univer
 - Privacy FAQ matches @concepts/atto-local-first-threat-model.md
 
 Fee/law citations in the DR remain **[NEEDS VERIFICATION 2026-07-22]** before paid ads or hard fee claims on the listing.
+
+## K191 commercialization deltas (2026-07-23)
+
+- Prefer **owned site + Lemon Squeezy MoR** over long-term Gumroad landing; phased soft-redirect then overlay.
+- Soft-gate offline licensing via **LicenseSeat** (Ed25519 machine files) — not hard DRM; pair with `license-guard-rs` reference.
+- **macOS notarytool first**; defer Windows SmartScreen/Azure Trusted Signing to closed beta.
+- Do not copy fund-industry dark-pattern personalization (Klement RSS contrast).

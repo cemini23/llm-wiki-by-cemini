@@ -31,12 +31,24 @@ related:
   - sources/eval-genealogy-tools-revenue-analysis-2026-07-22.md
   - sources/eval-github-repository-revenue-analysis-history-2026-07-22.md
   - sources/substack-rss-event-horizon-2026-07-22-wisconsin-election-betting.md
+  - sources/eval-github-repo-revenue-analysis-2026-07-23.md
+  - sources/atto-commercial-migration-plan-2026-07-23.md
+  - sources/newsletter-rss-sparktoro-2026-07-23-creating-vs-promoting.md
+  - entities/tools/stiggio-skills.md
 maturity: core
 created: 2026-06-17
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @entities/tools/stiggio-skills.md — K191 TipDrop Extract
+
+- @sources/newsletter-rss-sparktoro-2026-07-23-creating-vs-promoting.md — K191 seo
+
+- @sources/eval-github-repo-revenue-analysis-2026-07-23.md — K191
+
+- @sources/atto-commercial-migration-plan-2026-07-23.md — K191 Atto
 
 - @sources/eval-genealogy-tools-revenue-analysis-2026-07-22.md — K190 Atto eval
 

@@ -55,12 +55,15 @@ related:
   - entities/tools/pure-genealogy.md
   - entities/tools/kekule-html.md
   - entities/tools/go-geni.md
+  - sources/atto-commercial-migration-plan-2026-07-23.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-22
+updated: 2026-07-23
 ---
 
 ## Relations
+
+- @sources/atto-commercial-migration-plan-2026-07-23.md — K191 storefront/MoR
 
 - @entities/tools/open-genealogy.md — K190 NC Watch
 

@@ -22,6 +22,10 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 product (`../a
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-23 — K191)
+
+- **K191 ingest (2026-07-23)** — Atto Commercial Migration (Lemon Squeezy MoR + LicenseSeat + macOS-first) + licensing architecture DR + entitlements eval (Stigg Extract; aidlc misfit) + ARAT/PRO-LONG/PoTRE + CF/WuBlock Robinhood Chain RSS. Briefs: Atto; xsp+pm scp; TipDrop; CCC; poker; seo. Phase-0 ~352MB.
+
 ## Current state (2026-07-22 — K190)
 
 - **K190 ingest (2026-07-22)** — 4 genealogy revenue eval docx + EH Wisconsin election-betting RSS. **Integrate:** genea-app, claude-family-history-research-skill, ancestry-tools. **Extract:** wikitree-dynamic-tree, lineage, yorkeccak/history, pure-genealogy. **Watch:** Betty GPL, Open-Genealogy NC, Kekule AGPL. **Briefs:** Atto; pm Wisconsin scp; gambling. Phase-0 ~349MB.
