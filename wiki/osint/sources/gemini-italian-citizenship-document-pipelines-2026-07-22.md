@@ -16,6 +16,8 @@ related:
   - sources/gemini-italian-american-genealogy-sources-2026-07-21.md
   - sources/gemini-italian-citizenship-software-map-2026-07-22.md
   - sources/youtube-italian-citizenship-channels-2026-07-22.md
+  - sources/italian-citizenship-primary-law-lock-2026-07-22.md
+  - concepts/italian-citizenship-primary-law-lock.md
 maturity: draft
 read_status: read
 created: 2026-07-22
@@ -27,6 +29,8 @@ updated: 2026-07-22
 - @concepts/italian-citizenship-pathways-document-pipelines.md — synthesized Atto checklist / pathway taxonomy
 - @sources/gemini-italian-citizenship-software-map-2026-07-22.md — K185 software decision tree / status vocab companion
 - @sources/youtube-italian-citizenship-channels-2026-07-22.md — K186 ICA/IDCA deep-watch companion
+- @sources/italian-citizenship-primary-law-lock-2026-07-22.md — K187 primary statute/court lock
+- @concepts/italian-citizenship-primary-law-lock.md — K187 soft-flag ship posture
 - @concepts/gpuology-genealogy-agent-kit.md — concierge / citizenship upsell wedge
 - @concepts/antenati-deep-link-grammar.md — research copies ≠ filing-grade *copie integrali*
 - @concepts/us-italy-hometown-reveal-ladder.md — find comune before Stage 1 Italian records

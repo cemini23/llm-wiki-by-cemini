@@ -4,6 +4,7 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - entities/tools/openforgerl.md
   - entities/tools/pi-web.md
   - entities/tools/likec4.md
   - entities/tools/outlines.md
@@ -183,6 +184,8 @@ updated: 2026-07-23
 ---
 
 ## Relations
+
+- @entities/tools/openforgerl.md — K193 Phase-0 WATCH (code not public)
 
 - @entities/tools/aidlc-it-department-manager.md — K191 misfit
 

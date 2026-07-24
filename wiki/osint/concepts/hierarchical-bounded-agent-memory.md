@@ -4,6 +4,8 @@ type: concept
 tags: [concept, agent-memory, multi-agent, harness, k161]
 keywords: [three-layer memory, project-state JSON, eviction, PI oversight, context bound]
 related:
+  - concepts/agentic-context-management.md
+  - sources/arxiv-2607.21503-agentic-context-management.md
   - sources/arxiv-2607.10814-belief-conditioned-llm-agents-werewolf-audit-2026-07-15.md
   - concepts/belief-conditioned-agent-audit-hidden-info.md
   - sources/arxiv-hierarchical-memory-ensemble-qsp-2607.07666-2026-07-13.md
@@ -12,11 +14,13 @@ related:
   - concepts/autosci-research-lifecycle-memory.md
 maturity: draft
 created: 2026-07-13
-updated: 2026-07-15
+updated: 2026-07-24
 ---
 
 ## Relations
 
+- @concepts/agentic-context-management.md — K193 lifecycle framing
+- @sources/arxiv-2607.21503-agentic-context-management.md
 - @sources/arxiv-hierarchical-memory-ensemble-qsp-2607.07666-2026-07-13.md — primary
 - @concepts/agent-memory-critique.md — eviction = active forgetting
 - @concepts/context-compression-resume-pattern.md — mid-term state vs CPR serialize

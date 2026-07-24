@@ -4,6 +4,8 @@ type: concept
 tags: [concept, llm-agents, langgraph, state-management, prescribed-not-built, k8-promotion]
 keywords: [context-compression, context-death, langgraph-checkpointer, state-serialization, preserve-resume, cpr-pattern]
 related:
+  - concepts/agentic-context-management.md
+  - sources/arxiv-2607.21503-agentic-context-management.md
   - sources/4-5-links.md
   - entities/frameworks/langgraph.md
   - entities/infrastructure/deepseek-api.md
@@ -41,6 +43,9 @@ updated: 2026-07-13
 ---
 
 ## Relations
+
+- @concepts/agentic-context-management.md — K193 ACM lifecycle framing
+- @sources/arxiv-2607.21503-agentic-context-management.md
 
 - @sources/4-5-links.md — K8-canonical source. The pattern surfaces in this K8 doc's H2 section `EliaAlberti/cpr-compress-preserve-resume` (paragraph 36–).
 - @sources/4-5-links-2.md — K9-canonical source (deep-read 2026-04-29). The same `EliaAlberti/cpr-compress-preserve-resume` repository is evaluated AGAIN as Document 3 of the sibling docx. **Cross-doc duplicate confirmed** by K9 ingest is the strongest in-corpus signal that the *pattern* (not the specific repo) is the load-bearing concept worth this concept page. K9 didn't add new architectural detail beyond what K8 promoted; the K9 relevance is the cross-doc duplicate confirmation itself.

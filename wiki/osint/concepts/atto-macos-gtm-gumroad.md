@@ -4,6 +4,7 @@ type: concept
 tags: [concept, genealogy, atto, gtm, gumroad, macos, k185, draft]
 keywords: [lifetime license, $49, $89, DIY jure sanguinis, notarization, Cloudflare Access, UPL]
 related:
+  - sources/newsletter-rss-sparktoro-2026-07-24-brand-mentions.md
   - sources/gemini-atto-macos-gtm-2026-07-22.md
   - sources/gemini-atto-threat-model-2026-07-22.md
   - sources/gemini-italian-citizenship-software-map-2026-07-22.md
@@ -16,14 +17,31 @@ related:
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - sources/atto-commercial-migration-plan-2026-07-23.md
   - sources/software-licensing-architecture-research-2026-07-23.md
+  - sources/gemini-atto-landing-conversion-2026-07-23.md
+  - sources/gemini-atto-acquisition-strategy-2026-07-23.md
+  - sources/gemini-atto-marketing-compliance-2026-07-23.md
+  - sources/gemini-atto-pricing-presentation-2026-07-23.md
+  - concepts/youratto-lean-conversion-page.md
   - entities/tools/licenseseat.md
   - entities/tools/license-guard-rs.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-23
+updated: 2026-07-24
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-sparktoro-2026-07-24-brand-mentions.md — K193 brand-mention watch
+
+- @concepts/youratto-lean-conversion-page.md — K192 lean youratto.com spine ($299 kit)
+
+- @sources/gemini-atto-landing-conversion-2026-07-23.md — K192 CRO teardown
+
+- @sources/gemini-atto-acquisition-strategy-2026-07-23.md — K192 organic GTM
+
+- @sources/gemini-atto-marketing-compliance-2026-07-23.md — K192 claim fence
+
+- @sources/gemini-atto-pricing-presentation-2026-07-23.md — K192 $299 kit framing
 
 - @entities/tools/license-guard-rs.md — K191 Ed25519 Extract
 
@@ -83,7 +101,14 @@ Fee/law citations in the DR remain **[NEEDS VERIFICATION 2026-07-22]** before pa
 
 ## K191 commercialization deltas (2026-07-23)
 
-- Prefer **owned site + Lemon Squeezy MoR** over long-term Gumroad landing; phased soft-redirect then overlay.
-- Soft-gate offline licensing via **LicenseSeat** (Ed25519 machine files) — not hard DRM; pair with `license-guard-rs` reference.
+- Prefer **owned site + Stripe Checkout** over long-term Gumroad / MoR for day one (operator: US-heavy buyers, English-only app). Enable **Stripe Tax** when nexus/VAT registration is real. MoR (Lemon/Polar/Paddle) = later adjust if intl share or tax ops dominate.
+- Soft-gate offline licensing via **LicenseSeat** (Ed25519 machine files, Stripe webhooks) — not hard DRM; pair with `license-guard-rs` reference.
 - **macOS notarytool first**; defer Windows SmartScreen/Azure Trusted Signing to closed beta.
 - Do not copy fund-industry dark-pattern personalization (Klement RSS contrast).
+
+## K192 lean site deltas (2026-07-23)
+
+- Live **youratto.com** sells **DIY kit — $299** (supersedes $49/$89 as primary public price for now).
+- Full multi-page marketing site **deferred** — ship lean conversion spine only (@concepts/youratto-lean-conversion-page.md).
+- Gemini DR pentad ingested: landing CRO · demo production · compliance · pricing · acquisition.
+- Resolve before FAQ publish: ship **30-day** refund (Opus fact-check; match T&Cs); never claim Windows until shipped; avoid “automated lineage validation” / eligibility CTAs; drop Screen Studio OTP price anchor.

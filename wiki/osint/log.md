@@ -1,7 +1,15 @@
 # Wiki Log
 
-updated: 2026-07-22
+updated: 2026-07-23
 ---
+
+## [2026-07-23] ingest | K192 — Atto youratto.com Gemini DR pentad + lean conversion brief
+
+- **Inbox (5 Atto docx):** Landing CRO · Demo production · Compliance · Pricing · Acquisition (RSS digests left in inbox)
+- **Concept:** `youratto-lean-conversion-page.md` — lean page spine; full marketing site deferred
+- **Updates:** `atto-macos-gtm-gumroad.md` ($299 live; K192 deltas); soft-flags + primary-law + threat-model backlinks
+- **Brief:** `briefs/2026-07-23_youratto-lean-conversion-one-pager.md` (+ Opus fact-check pass)
+- **Open:** ship **30-day** refund (Opus); no Windows claim; drop Screen Studio OTP anchor
 
 ## [2026-07-23] ingest | K191 — Atto MoR/LicenseSeat + entitlements eval + agent papers
 
@@ -8815,3 +8823,17 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Shipped:** `config/hu_yardstick_pool.json`; `references/expert-yardstick-pool.md`; `compute_yardstick_pool_grade` + `compute_forgetting_factor_regret` in `researcher_trajectory_summary.py`; HU gate advisory in `run_hu_sandbox_gate.sh`; tests
 - **Posture:** advisory only — no hard submit gate on yardstick pool; adversarial-coevolution remains read-only (NO LICENSE)
 
+
+## [2026-07-23] decision | Atto Stripe-first (defer MoR)
+
+- Operator: US-heavy buyers + English-only app → Stripe Checkout + LicenseSeat; MoR later if intl/tax ops bite.
+- Updated `wiki/concepts/atto-macos-gtm-gumroad.md` K191 deltas; Atto brief `2026-07-23_k191-commercial-migration-licenseseat.md`.
+
+## [2026-07-24] ingest | K193 inbox (FFJ / ACM / OpenForgeRL / Clarity-PM / FLUX3)
+
+- Sources: 4 arXiv + 9 RSS; concepts FFJ + ACM; entity openforgerl (WATCH).
+- Briefs: xsp+pm (prod); poker ACM; Atto brand watch; David FLUX3; CCC; cyber; seo.
+- Phase-0: no local adopt (<500MB / OpenForgeRL code not public; Stack v3 too large).
+- Stripe-first Atto decision retained from prior session.
+
+- Also archived 4 empty Macro Charts subscriber-chat email forwards (Jul 21–24) — no wiki pages (zero signal).

@@ -22,6 +22,10 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 product (`../a
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-24 — K193)
+
+- **K193 ingest (2026-07-24)** — Frontier Financial Judgement + Agentic Context Management + OpenForgeRL (WATCH) + Lean quantum (thin) + Clarity/Kalshi Event Horizon + WuBlock + CF SPX selling teaser + FLUX3 Latent Space + SparkToro brand mentions. Briefs: xsp+pm scp; poker; Atto; David; CCC; cyber; seo. No local adopt.
+
 ## Current state (2026-07-23 — K191)
 
 - **K191 ingest (2026-07-23)** — Atto Commercial Migration (Lemon Squeezy MoR + LicenseSeat + macOS-first) + licensing architecture DR + entitlements eval (Stigg Extract; aidlc misfit) + ARAT/PRO-LONG/PoTRE + CF/WuBlock Robinhood Chain RSS. Briefs: Atto; xsp+pm scp; TipDrop; CCC; poker; seo. Phase-0 ~352MB.

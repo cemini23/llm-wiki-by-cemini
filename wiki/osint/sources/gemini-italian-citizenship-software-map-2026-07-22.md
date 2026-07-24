@@ -13,6 +13,7 @@ related:
   - concepts/us-italy-hometown-reveal-ladder.md
   - sources/youtube-italian-citizenship-channels-2026-07-22.md
   - concepts/italian-citizenship-youtube-soft-flags.md
+  - sources/gemini-atto-marketing-compliance-2026-07-23.md
 maturity: draft
 read_status: read
 created: 2026-07-22

@@ -4,6 +4,8 @@ type: concept
 tags: [concept, genealogy, atto, security, threat-model, mcp, k185, draft]
 keywords: [AttoVault, AES-256-GCM, SSN strip, Cloudflare Access, min-release-age, suggest-only, STRIDE]
 related:
+  - concepts/youratto-lean-conversion-page.md
+  - sources/gemini-atto-landing-demo-production-2026-07-23.md
   - sources/gemini-atto-threat-model-2026-07-22.md
   - concepts/atto-macos-gtm-gumroad.md
   - concepts/gpuology-genealogy-agent-kit.md
@@ -19,6 +21,10 @@ updated: 2026-07-23
 ---
 
 ## Relations
+
+- @concepts/youratto-lean-conversion-page.md — K192 lean page trust copy must match controls
+
+- @sources/gemini-atto-landing-demo-production-2026-07-23.md — K192 demo claims vs controls
 
 - @entities/tools/license-guard-rs.md — K191
 

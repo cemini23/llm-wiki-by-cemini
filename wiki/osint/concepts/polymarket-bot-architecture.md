@@ -4,6 +4,9 @@ type: concept
 tags: [concept, polymarket, trading-bot, prediction-markets, websocket, backtesting, latency, cemini]
 keywords: [polymarket, CLOB, websocket, FAK, GTC, latency, hot path, HMAC, backtesting, 6-layer websocket, market maker, ladder bot, NSF, fishy resolution]
 related:
+  - sources/substack-rss-event-horizon-2026-07-23-senate-pm-restrictions.md
+  - sources/substack-rss-event-horizon-2026-07-24-kalshi-college-realignment.md
+  - sources/substack-rss-wublock-2026-07-24-clarity-act.md
   - sources/substack-rss-event-horizon-2026-07-20-underdog-exchange.md
   - sources/x-polymarket-bot-playbook-punisher-2026-05.md
   - entities/platforms/polymarket.md
@@ -110,6 +113,10 @@ updated: 2026-07-23
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-07-23-senate-pm-restrictions.md — K193 Clarity/sports PM letter
+- @sources/substack-rss-event-horizon-2026-07-24-kalshi-college-realignment.md — K193 Kalshi self-cert
+- @sources/substack-rss-wublock-2026-07-24-clarity-act.md — K193 Clarity ethics
 
 - @sources/substack-rss-wublock-2026-07-23-robinhood-chain.md — K191
 

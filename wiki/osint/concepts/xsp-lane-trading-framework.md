@@ -4,6 +4,10 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - concepts/frontier-financial-judgement.md
+  - sources/arxiv-2607.20645-frontier-financial-judgement.md
+  - sources/substack-rss-capital-flows-2026-07-24-sp500-selling.md
+  - sources/substack-rss-wublock-2026-07-24-clarity-act.md
   - sources/macro-charts-paid-forward-2026-07-20-damaged-goods.md
   - sources/substack-rss-moontower-2026-07-19-become-an-option-mixologist.md
   - sources/substack-rss-moontower-2026-07-19-moontower-321.md
@@ -64,6 +68,11 @@ updated: 2026-07-23
 ---
 
 ## Relations
+
+- @concepts/frontier-financial-judgement.md — K193 FFJ news-flow FP gates
+- @sources/arxiv-2607.20645-frontier-financial-judgement.md
+- @sources/substack-rss-capital-flows-2026-07-24-sp500-selling.md — K193 selling-pressure teaser
+- @sources/substack-rss-wublock-2026-07-24-clarity-act.md — Clarity politics (macro)
 
 - @sources/substack-rss-wublock-2026-07-23-robinhood-chain.md — K191 RH Chain
 

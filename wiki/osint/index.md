@@ -12,7 +12,37 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **889 canonical stubs** (K191 + K190 + …)
+Total: **912 canonical stubs** (K193 + K192 + K191 + …)
+
+### k193-ingest (17)
+
+- [K193 thin inbox archive](concepts/k193-thin-inbox-archive.md) — orphan-prevention hub. — concept [+k193]
+
+- [Frontier Financial Judgement (2607.20645)](sources/arxiv-2607.20645-frontier-financial-judgement.md) — news-flow agent FP/accuracy Pareto. — `pdf` [+k193]
+- [Agentic Context Management (2607.21503)](sources/arxiv-2607.21503-agentic-context-management.md) — ACM lifecycle + Maximem Synap. — `pdf` [+k193]
+- [Lean Quantum theorem agents (2607.21533)](sources/arxiv-2607.21533-lean-quantum-theorem-agents.md) — thin Lean 4 quantum benches. — `pdf` [+k193]
+- [OpenForgeRL (2607.21557)](sources/arxiv-2607.21557-openforgerl.md) — harness-native RL; Phase-0 WATCH. — `pdf` [+k193]
+- [Latent Space FLUX 3](sources/newsletter-rss-latent-space-2026-07-24-flux3.md) — BFL multimodal + Stack v3. — `rss` [+k193]
+- [tl;dr sec #338](sources/newsletter-rss-tldrsec-2026-07-23-338.md) — cyber skim. — `rss` [+k193]
+- [Event Horizon Senate PM letter](sources/substack-rss-event-horizon-2026-07-23-senate-pm-restrictions.md) — Clarity/IGRA. — `rss` [+k193]
+- [Event Horizon Kalshi college](sources/substack-rss-event-horizon-2026-07-24-kalshi-college-realignment.md) — self-cert. — `rss` [+k193]
+- [WuBlock Clarity ethics](sources/substack-rss-wublock-2026-07-24-clarity-act.md) — Trump ethics clauses. — `rss` [+k193]
+- [Capital Flows SPX selling](sources/substack-rss-capital-flows-2026-07-24-sp500-selling.md) — **xsp** teaser. — `rss` [+k193]
+- [SparkToro brand mentions](sources/newsletter-rss-sparktoro-2026-07-24-brand-mentions.md) — Atto/seo. — `rss` [+k193]
+- [Pragmatic Engineer Spotify](sources/newsletter-rss-pragmatic-engineer-2026-07-23-spotify.md) — thin. — `rss` [+k193]
+- [Klement pets](sources/substack-rss-klement-2026-07-24-pets.md) — thin. — `rss` [+k193]
+- [Frontier Financial Judgement (concept)](concepts/frontier-financial-judgement.md) — FP gates for news agents. — concept [+k193]
+- [Agentic Context Management (concept)](concepts/agentic-context-management.md) — lifecycle memory. — concept [+k193]
+- [OpenForgeRL (entity)](entities/tools/openforgerl.md) — WATCH. — entity [+k193]
+
+### k192-ingest (6)
+
+- [Atto landing conversion CRO](sources/gemini-atto-landing-conversion-2026-07-23.md) — 16-site OTP teardown; page spine; GIF demos. — `docx` [+k192]
+- [Atto demo production brief](sources/gemini-atto-landing-demo-production-2026-07-23.md) — hero loop; Rossi sample; GIF-first v1. — `docx` [+k192]
+- [Atto marketing compliance](sources/gemini-atto-marketing-compliance-2026-07-23.md) — UPL/FTC claim fence; FAQ; ad checklist. — `docx` [+k192]
+- [Atto pricing presentation](sources/gemini-atto-pricing-presentation-2026-07-23.md) — $299 kit framing; anchors; refund. — `docx` [+k192]
+- [Atto acquisition / social GTM](sources/gemini-atto-acquisition-strategy-2026-07-23.md) — organic-first channels; do-not-post. — `docx` [+k192]
+- [youratto lean conversion page](concepts/youratto-lean-conversion-page.md) — audience · promise · spine · demos · non-goals. — concept [+k192]
 
 ### k191-ingest (15)
 

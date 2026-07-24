@@ -6,12 +6,15 @@ keywords: [ICA, Italian Citizenship Assistance, Prenot@Mi, Tajani, Minor Issue, 
 clusters: [k186-ingest]
 related:
   - concepts/italian-citizenship-youtube-soft-flags.md
+  - concepts/italian-citizenship-primary-law-lock.md
+  - sources/italian-citizenship-primary-law-lock-2026-07-22.md
   - concepts/italian-citizenship-pathways-document-pipelines.md
   - concepts/atto-macos-gtm-gumroad.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md
   - sources/gemini-italian-citizenship-software-map-2026-07-22.md
-maturity: draft
+  - sources/gemini-atto-acquisition-strategy-2026-07-23.md
+maturity: validated
 read_status: deep-read
 created: 2026-07-22
 updated: 2026-07-22
@@ -20,6 +23,8 @@ updated: 2026-07-22
 ## Relations
 
 - @concepts/italian-citizenship-youtube-soft-flags.md — synthesized soft-flags + evidence ontology + watchlist
+- @concepts/italian-citizenship-primary-law-lock.md — K187 ship posture
+- @sources/italian-citizenship-primary-law-lock-2026-07-22.md — primary citations for 13818 / 63 / 74 / 2029
 - @concepts/italian-citizenship-pathways-document-pipelines.md — pathway / status vocab; appointment-evidence docs
 - @concepts/atto-macos-gtm-gumroad.md — anti-position vs full-service YouTube firms
 - @concepts/gpuology-genealogy-agent-kit.md — product hub
