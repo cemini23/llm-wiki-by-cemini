@@ -1,7 +1,30 @@
 # Wiki Log
 
-updated: 2026-07-23
+updated: 2026-07-24
 ---
+
+## [2026-07-24] ship | K195 — brand Variant C to site + Discord + Tauri
+
+- Vector `atto-mark.svg` + 1024/512/favicon/apple-touch/Discord/Gumroad cover
+- youratto.com Pages redeployed; Discord guild icon patched
+- Tauri `src-tauri/icons/*` regenerated from `app-icon.png`
+- Gumroad cover = operator upload remaining
+
+## [2026-07-24] decision | K195 — brand mark lock Variant C (corner tricolor)
+
+- **Locked:** folio stack + thick slate borders + small Italian flag corner stamp
+- **Rejected:** A terracotta · B cypress · full-sheet tricolor fill
+- **Canon:** `concepts/youratto-brand-identity.md` · mock `atto/briefs/assets/atto-folio-variant-c-flag-corner.png`
+- **Next:** freelancer SVG/PNG · lean hero · Discord icon
+
+## [2026-07-24] ingest | K195 — Atto brand identity DR + dual accent A/B
+
+- **Inbox:** `Atto Brand Identity Research.docx` (sha256 `332c1962…`); RSS digests left untouched
+- **Source:** `sources/gemini-atto-brand-identity-2026-07-24.md`
+- **Concept:** `concepts/youratto-brand-identity.md` — folio stack locked; terracotta `#C25946` vs cypress `#4A6B53` open pick
+- **Backlinks:** lean conversion · GTM · marketing compliance · landing CRO
+- **Brief:** `../atto/briefs/2026-07-24_youratto-logo-dual-accent-ab.md` + mock PNGs under `atto/briefs/assets/`
+- **Open:** operator picks accent A or B before final SVG/freelancer
 
 ## [2026-07-23] ingest | K192 — Atto youratto.com Gemini DR pentad + lean conversion brief
 
@@ -8837,3 +8860,10 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - Stripe-first Atto decision retained from prior session.
 
 - Also archived 4 empty Macro Charts subscriber-chat email forwards (Jul 21–24) — no wiki pages (zero signal).
+
+## [2026-07-25] ingest | K195 revenue eval + Opus5 / CF / EH / SecPro
+
+- Eval docx: Integrate ego-lite + ECC; Extract aisuite + omlx refresh + visa (air-gap); Watch Instatic; Pass legacy JS aggregated.
+- Phase-0 clones: `.local/adopts/{ego-lite,aisuite,ecc}` — total adopts ~450MB; script `scripts/adopt_k195_phase0.sh`.
+- Briefs: Atto; David ECC; xsp+pm; poker light; CCC; cyber; seo.
+- RSS: Opus 5; CF crude teaser; LeBron Ep25; SecPro #244 identity.

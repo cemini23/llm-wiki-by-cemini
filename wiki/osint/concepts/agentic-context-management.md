@@ -4,6 +4,8 @@ type: concept
 tags: [concept, agent-memory, harness, k193]
 keywords: [context lifecycle, compaction, Maximem Synap, scoping]
 related:
+  - sources/newsletter-rss-latent-space-2026-07-25-opus5.md
+  - entities/tools/ecc.md
   - sources/arxiv-2607.21503-agentic-context-management.md
   - concepts/hierarchical-bounded-agent-memory.md
   - concepts/context-compression-resume-pattern.md
@@ -11,10 +13,14 @@ related:
   - sources/arxiv-2607.21557-openforgerl.md
 maturity: draft
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-25
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-07-25-opus5.md — Opus 5
+
+- @entities/tools/ecc.md — K195 harness
 
 - @sources/arxiv-2607.21503-agentic-context-management.md
 - @concepts/hierarchical-bounded-agent-memory.md

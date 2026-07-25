@@ -4,6 +4,12 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-revenue-opportunity-analysis-2026-07-25.md
+  - entities/tools/visa-vulnerability-agentic-harness.md
+  - entities/tools/instatic.md
+  - entities/tools/aisuite.md
+  - entities/tools/ecc.md
+  - entities/tools/ego-lite.md
   - entities/tools/openforgerl.md
   - entities/tools/pi-web.md
   - entities/tools/likec4.md
@@ -180,10 +186,22 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-23
+updated: 2026-07-25
 ---
 
 ## Relations
+
+- @sources/eval-revenue-opportunity-analysis-2026-07-25.md — K195 eval
+
+- @entities/tools/visa-vulnerability-agentic-harness.md — K195 Extract air-gap
+
+- @entities/tools/instatic.md — K195 Watch
+
+- @entities/tools/aisuite.md — K195 Extract XSP
+
+- @entities/tools/ecc.md — K195 Integrate TipDrop
+
+- @entities/tools/ego-lite.md — K195 Integrate
 
 - @entities/tools/openforgerl.md — K193 Phase-0 WATCH (code not public)
 

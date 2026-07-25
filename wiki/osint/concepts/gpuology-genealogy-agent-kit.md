@@ -4,6 +4,8 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - sources/eval-revenue-opportunity-analysis-2026-07-25.md
+  - entities/tools/ego-lite.md
   - entities/tools/omlx.md
   - entities/tools/cloudflare-temp-email.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
@@ -58,10 +60,14 @@ related:
   - sources/atto-commercial-migration-plan-2026-07-23.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-23
+updated: 2026-07-25
 ---
 
 ## Relations
+
+- @sources/eval-revenue-opportunity-analysis-2026-07-25.md
+
+- @entities/tools/ego-lite.md — K195 authenticated portal browse
 
 - @sources/atto-commercial-migration-plan-2026-07-23.md — K191 storefront/MoR
 

@@ -5,20 +5,24 @@ tags: [source, atto, landing, cro, gemini-dr, k192]
 keywords: [youratto, OTP, CleanShot, Obsidian, Screen Studio, bento, this-is-isnt]
 related:
   - concepts/youratto-lean-conversion-page.md
+  - concepts/youratto-brand-identity.md
   - concepts/atto-macos-gtm-gumroad.md
   - sources/gemini-atto-landing-demo-production-2026-07-23.md
   - sources/gemini-atto-marketing-compliance-2026-07-23.md
   - sources/gemini-atto-pricing-presentation-2026-07-23.md
   - sources/gemini-atto-acquisition-strategy-2026-07-23.md
+  - sources/gemini-atto-brand-identity-2026-07-24.md
 maturity: draft
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-07-24
 ---
 
 ## Relations
 
 - @concepts/youratto-lean-conversion-page.md — lean page spine distilled from this DR
+- @concepts/youratto-brand-identity.md — folio lockup for lean hero
 - @concepts/atto-macos-gtm-gumroad.md — prior Gumroad/$49–$89 thesis; superseded price on live site
+- @sources/gemini-atto-brand-identity-2026-07-24.md — brand / icon direction
 - @sources/gemini-atto-landing-demo-production-2026-07-23.md — demo assets
 - @sources/gemini-atto-marketing-compliance-2026-07-23.md — claim fence
 - @sources/gemini-atto-pricing-presentation-2026-07-23.md — $299 framing

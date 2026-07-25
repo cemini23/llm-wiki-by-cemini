@@ -4,22 +4,27 @@ type: concept
 tags: [concept, atto, youratto, landing, k192, draft]
 keywords: [299 DIY kit, lean page, this-is-isnt, GIF tiles, deferred marketing site]
 related:
+  - entities/tools/instatic.md
   - sources/gemini-atto-landing-conversion-2026-07-23.md
   - sources/gemini-atto-landing-demo-production-2026-07-23.md
   - sources/gemini-atto-marketing-compliance-2026-07-23.md
   - sources/gemini-atto-pricing-presentation-2026-07-23.md
   - sources/gemini-atto-acquisition-strategy-2026-07-23.md
   - concepts/atto-macos-gtm-gumroad.md
+  - concepts/youratto-brand-identity.md
   - concepts/atto-local-first-threat-model.md
   - concepts/italian-citizenship-youtube-soft-flags.md
   - concepts/italian-citizenship-primary-law-lock.md
   - sources/newsletter-rss-sparktoro-2026-07-24-brand-mentions.md
+  - sources/gemini-atto-brand-identity-2026-07-24.md
 maturity: draft
 created: 2026-07-23
-updated: 2026-07-24
+updated: 2026-07-25
 ---
 
 ## Relations
+
+- @entities/tools/instatic.md — K195 Watch CMS
 
 - @sources/newsletter-rss-sparktoro-2026-07-24-brand-mentions.md — post-launch mention watch
 - @sources/gemini-atto-landing-conversion-2026-07-23.md — CRO teardown
@@ -27,7 +32,9 @@ updated: 2026-07-24
 - @sources/gemini-atto-marketing-compliance-2026-07-23.md — claim fence
 - @sources/gemini-atto-pricing-presentation-2026-07-23.md — $299 kit framing
 - @sources/gemini-atto-acquisition-strategy-2026-07-23.md — organic GTM (out of lean page scope)
+- @sources/gemini-atto-brand-identity-2026-07-24.md — folio stack + accent A/B
 - @concepts/atto-macos-gtm-gumroad.md — prior listing thesis
+- @concepts/youratto-brand-identity.md — mark lock; terracotta vs cypress pick
 - @concepts/atto-local-first-threat-model.md — trust copy must match controls
 - @concepts/italian-citizenship-youtube-soft-flags.md — soft-flag only
 - @concepts/italian-citizenship-primary-law-lock.md — statute copy boundaries

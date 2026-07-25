@@ -5,6 +5,7 @@ tags: [source, atto, compliance, upl, ftc, ads, gemini-dr, k192]
 keywords: [UPL, FTC, Meta personal attributes, government documents ads, this-is-isnt, FAQ]
 related:
   - concepts/youratto-lean-conversion-page.md
+  - concepts/youratto-brand-identity.md
   - concepts/atto-macos-gtm-gumroad.md
   - concepts/italian-citizenship-primary-law-lock.md
   - sources/gemini-italian-citizenship-software-map-2026-07-22.md
@@ -12,16 +13,19 @@ related:
   - sources/gemini-atto-landing-demo-production-2026-07-23.md
   - sources/gemini-atto-pricing-presentation-2026-07-23.md
   - sources/gemini-atto-acquisition-strategy-2026-07-23.md
+  - sources/gemini-atto-brand-identity-2026-07-24.md
 maturity: draft
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-07-24
 ---
 
 ## Relations
 
 - @concepts/youratto-lean-conversion-page.md — FAQ / this-is-isn’t for lean page
+- @concepts/youratto-brand-identity.md — visual must-nots reinforce UPL
 - @concepts/italian-citizenship-primary-law-lock.md — statute/court copy boundaries
 - @concepts/atto-macos-gtm-gumroad.md — listing claim fence
+- @sources/gemini-atto-brand-identity-2026-07-24.md — brand DR must-not list
 - @sources/gemini-atto-landing-conversion-2026-07-23.md — CRO spine
 - @sources/gemini-italian-citizenship-software-map-2026-07-22.md — earlier UPL never-claims
 

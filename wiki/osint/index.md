@@ -12,9 +12,23 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **912 canonical stubs** (K193 + K192 + K191 + …)
+Total: **925 canonical stubs** (K193 + K192 + K191 + …)
+
+### k195-ingest (13)
+
+- [Revenue Opportunity Analysis Plan](sources/eval-revenue-opportunity-analysis-2026-07-25.md) — ego-lite/ECC/aisuite/omlx/Instatic/visa. — `docx` [+k195]
+- [ego-lite](entities/tools/ego-lite.md) — Integrate MIT Atto. — entity [+k195]
+- [ECC](entities/tools/ecc.md) — Integrate MIT TipDrop. — entity [+k195]
+- [aisuite](entities/tools/aisuite.md) — Extract MIT XSP. — entity [+k195]
+- [Instatic](entities/tools/instatic.md) — Watch MIT. — entity [+k195]
+- [Visa Vulnerability Agentic Harness](entities/tools/visa-vulnerability-agentic-harness.md) — Extract Apache air-gap. — entity [+k195]
+- [Latent Space Opus 5](sources/newsletter-rss-latent-space-2026-07-25-opus5.md) — CCC. — `rss` [+k195]
+- [Capital Flows crude risk](sources/substack-rss-capital-flows-2026-07-24-crude-risk.md) — **xsp** teaser. — `rss` [+k195]
+- [EH LeBron Ep 25](sources/substack-rss-event-horizon-2026-07-24-lebron-episode-25.md) — **pm**. — `rss` [+k195]
+- [SecPro #244 UK cyber](sources/substack-rss-secpro-2026-07-24-244-uk-cyber.md) — identity. — `rss` [+k195]
 
 ### k193-ingest (17)
+
 
 - [K193 thin inbox archive](concepts/k193-thin-inbox-archive.md) — orphan-prevention hub. — concept [+k193]
 
@@ -43,6 +57,8 @@ Total: **912 canonical stubs** (K193 + K192 + K191 + …)
 - [Atto pricing presentation](sources/gemini-atto-pricing-presentation-2026-07-23.md) — $299 kit framing; anchors; refund. — `docx` [+k192]
 - [Atto acquisition / social GTM](sources/gemini-atto-acquisition-strategy-2026-07-23.md) — organic-first channels; do-not-post. — `docx` [+k192]
 - [youratto lean conversion page](concepts/youratto-lean-conversion-page.md) — audience · promise · spine · demos · non-goals. — concept [+k192]
+- [Atto brand / visual identity DR](sources/gemini-atto-brand-identity-2026-07-24.md) — folio stack primary; terracotta vs cypress accents. — `docx` [+k195]
+- [youratto brand identity](concepts/youratto-brand-identity.md) — folio + corner Italian flag LOCKED (C). — concept [+k195]
 
 ### k191-ingest (15)
 

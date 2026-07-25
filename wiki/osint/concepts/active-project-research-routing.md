@@ -4,6 +4,7 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto]
 keywords: [brief-routing, atto, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
 related:
+  - sources/eval-revenue-opportunity-analysis-2026-07-25.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - meta/daily-research-digest-cadence.md
@@ -37,10 +38,12 @@ related:
   - entities/tools/stiggio-skills.md
 maturity: core
 created: 2026-06-17
-updated: 2026-07-23
+updated: 2026-07-25
 ---
 
 ## Relations
+
+- @sources/eval-revenue-opportunity-analysis-2026-07-25.md — K195
 
 - @entities/tools/stiggio-skills.md — K191 TipDrop Extract
 

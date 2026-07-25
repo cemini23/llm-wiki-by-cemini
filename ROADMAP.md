@@ -22,8 +22,13 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 product (`../a
 | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-25 — K195)
+
+- **K195 ingest (2026-07-25)** — Revenue Opportunity eval (ego-lite+ECC Integrate; aisuite+omlx+visa Extract; Instatic Watch) + Opus 5 LS + CF crude teaser + EH LeBron + SecPro #244. Phase-0 ~450MB adopts. Briefs: Atto; TipDrop David; xsp+pm scp; poker; CCC; cyber; seo.
+
 ## Current state (2026-07-24 — K193)
 
+- **K194 ingest (2026-07-24)** — Atto Brand Identity DR. **LOCKED Variant C:** folio + thick slate borders + corner Italian flag. Rejected A terracotta / B cypress / full-sheet tricolor. Concept `youratto-brand-identity`; brief + mock `../atto/briefs/`. Next: freelancer SVG. No prod scp.
 - **K193 ingest (2026-07-24)** — Frontier Financial Judgement + Agentic Context Management + OpenForgeRL (WATCH) + Lean quantum (thin) + Clarity/Kalshi Event Horizon + WuBlock + CF SPX selling teaser + FLUX3 Latent Space + SparkToro brand mentions. Briefs: xsp+pm scp; poker; Atto; David; CCC; cyber; seo. No local adopt.
 
 ## Current state (2026-07-23 — K191)

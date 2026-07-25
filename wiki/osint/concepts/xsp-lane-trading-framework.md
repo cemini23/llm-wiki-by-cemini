@@ -4,6 +4,9 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/eval-revenue-opportunity-analysis-2026-07-25.md
+  - sources/substack-rss-capital-flows-2026-07-24-crude-risk.md
+  - entities/tools/aisuite.md
   - concepts/frontier-financial-judgement.md
   - sources/arxiv-2607.20645-frontier-financial-judgement.md
   - sources/substack-rss-capital-flows-2026-07-24-sp500-selling.md
@@ -64,10 +67,14 @@ related:
   - sources/substack-rss-wublock-2026-07-23-robinhood-chain.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-23
+updated: 2026-07-25
 ---
 
 ## Relations
+
+- @sources/substack-rss-capital-flows-2026-07-24-crude-risk.md — K195 crude teaser
+
+- @entities/tools/aisuite.md — K195 multi-provider Extract
 
 - @concepts/frontier-financial-judgement.md — K193 FFJ news-flow FP gates
 - @sources/arxiv-2607.20645-frontier-financial-judgement.md

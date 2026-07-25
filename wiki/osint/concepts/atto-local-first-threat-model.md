@@ -4,7 +4,11 @@ type: concept
 tags: [concept, genealogy, atto, security, threat-model, mcp, k185, draft]
 keywords: [AttoVault, AES-256-GCM, SSN strip, Cloudflare Access, min-release-age, suggest-only, STRIDE]
 related:
+  - sources/substack-rss-secpro-2026-07-24-244-uk-cyber.md
+  - entities/tools/visa-vulnerability-agentic-harness.md
+  - entities/tools/ego-lite.md
   - concepts/youratto-lean-conversion-page.md
+  - concepts/youratto-brand-identity.md
   - sources/gemini-atto-landing-demo-production-2026-07-23.md
   - sources/gemini-atto-threat-model-2026-07-22.md
   - concepts/atto-macos-gtm-gumroad.md
@@ -17,11 +21,18 @@ related:
   - entities/tools/license-guard-rs.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-23
+updated: 2026-07-25
 ---
 
 ## Relations
 
+- @sources/substack-rss-secpro-2026-07-24-244-uk-cyber.md — identity lesson
+
+- @entities/tools/visa-vulnerability-agentic-harness.md — K195 Extract
+
+- @entities/tools/ego-lite.md — K195 session isolation required
+
+- @concepts/youratto-brand-identity.md — folio / AttoVault metaphor; no vault-lock overclaim in mark
 - @concepts/youratto-lean-conversion-page.md — K192 lean page trust copy must match controls
 
 - @sources/gemini-atto-landing-demo-production-2026-07-23.md — K192 demo claims vs controls

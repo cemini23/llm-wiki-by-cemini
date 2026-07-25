@@ -4,6 +4,7 @@ type: concept
 tags: [concept, genealogy, atto, gtm, gumroad, macos, k185, draft]
 keywords: [lifetime license, $49, $89, DIY jure sanguinis, notarization, Cloudflare Access, UPL]
 related:
+  - entities/tools/instatic.md
   - sources/newsletter-rss-sparktoro-2026-07-24-brand-mentions.md
   - sources/gemini-atto-macos-gtm-2026-07-22.md
   - sources/gemini-atto-threat-model-2026-07-22.md
@@ -22,16 +23,24 @@ related:
   - sources/gemini-atto-marketing-compliance-2026-07-23.md
   - sources/gemini-atto-pricing-presentation-2026-07-23.md
   - concepts/youratto-lean-conversion-page.md
+  - concepts/youratto-brand-identity.md
+  - sources/gemini-atto-brand-identity-2026-07-24.md
   - entities/tools/licenseseat.md
   - entities/tools/license-guard-rs.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-24
+updated: 2026-07-25
 ---
 
 ## Relations
 
+- @entities/tools/instatic.md — K195 Watch
+
 - @sources/newsletter-rss-sparktoro-2026-07-24-brand-mentions.md — K193 brand-mention watch
+
+- @concepts/youratto-brand-identity.md — K194 folio stack; Gumroad cover uses winning accent
+
+- @sources/gemini-atto-brand-identity-2026-07-24.md — brand DR
 
 - @concepts/youratto-lean-conversion-page.md — K192 lean youratto.com spine ($299 kit)
 
