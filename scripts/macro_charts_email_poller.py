@@ -364,6 +364,15 @@ def poll_gmail(cfg: dict[str, Any], *, dry_run: bool, backfill_days: int | None 
         write_gmail_ids(gmail_state_path, processed_ids)
         write_post_state(posts_state_path, posts_state)
         trigger_inbox_notify()
+        # Rolling Macro Charts params → GuruWatcher (best-effort)
+        try:
+            import subprocess
+
+            hook = REPO_ROOT / "scripts" / "guru_watcher_inbox_hook.sh"
+            if hook.is_file():
+                subprocess.run(["bash", str(hook)], check=False, timeout=600)
+        except Exception as exc:  # noqa: BLE001
+            print(f"WARN: GuruWatcher hook skipped: {exc}")
 
     print(f"Done: exported={exported} skipped={skipped}")
     return 0
