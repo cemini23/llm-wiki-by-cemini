@@ -8952,3 +8952,11 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Source:** `substack-rss-seceng-weekly-2026-07-28-aws-keys-public-repo.md` (sha256 `a496948f…`)
 - **Concept:** `credential-leak-revoke-first-response.md`
 - **Cross-wiki:** cybersecurity-wiki brief (primary); TipDrop/CCC light hygiene notes
+
+## [2026-07-28] query | Italian citizenship courts → Atto K200 lock
+
+- Cass. SS.UU. **24045/2026** (Minor Issue / Art. 7 bipolidi) + Cost. Ord. **147/2026** (Tajani → CJEU)
+- Updated `@concepts/italian-citizenship-primary-law-lock.md` (K200 posture)
+- Atto branch `k200-citizenship-ssuu-24045-lock` soft-flag bump; OpenCLI Reddit/YouTube secondary scan
+- Local pack: `.local/research/italian-cassazione-24045-2026/`
+
