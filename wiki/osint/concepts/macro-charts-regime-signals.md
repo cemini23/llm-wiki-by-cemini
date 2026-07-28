@@ -35,12 +35,38 @@ related:
   - sources/substack-rss-klement-2026-07-21-rates-credit-defaults.md
   - sources/substack-rss-klement-2026-07-21-slow-news-incorporation.md
   - sources/substack-rss-klement-2026-07-23-investor-flows-customer-data.md
+  - sources/macro-charts-paid-forward-2026-07-26-something-doesnt-feel-right.md
+  - sources/macro-charts-rss-2026-07-26-something-doesnt-feel-right.md
+  - sources/substack-rss-capital-flows-2026-07-25-system-running-out-of-slack.md
+  - sources/substack-rss-klement-2026-07-27-fast-money-warping-market-logic.md
+  - sources/arxiv-2607.22254-sentiment-driven-stochastic-volatility.md
+  - sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md
+  - sources/substack-rss-klement-2026-07-28-politics-investments.md
+  - sources/substack-rss-capital-flows-2026-07-27-fomc-ai-flows.md
+  - sources/substack-rss-wublock-2026-07-28-mm-token-loans.md
+  - concepts/option-iv-concavity-parameterization.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-23
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @concepts/option-iv-concavity-parameterization.md — K198 IV concavity
+
+- @sources/substack-rss-wublock-2026-07-28-mm-token-loans.md — K198 MM loans context
+
+- @sources/substack-rss-capital-flows-2026-07-27-fomc-ai-flows.md — K198 CF teaser
+
+- @sources/substack-rss-klement-2026-07-28-politics-investments.md — K198 politics/alpha
+
+- @sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md — K198 Korea/WTI/FOMC paid chat
+
+- @sources/macro-charts-paid-forward-2026-07-26-something-doesnt-feel-right.md — K196 EXIT TO THE LEFT / positioning-vol confluence
+- @sources/macro-charts-rss-2026-07-26-something-doesnt-feel-right.md — K196 teaser fold
+- @sources/substack-rss-capital-flows-2026-07-25-system-running-out-of-slack.md — K196 CF weekly teaser
+- @sources/substack-rss-klement-2026-07-27-fast-money-warping-market-logic.md — K196 Reuters fast-money pointer
+- @sources/arxiv-2607.22254-sentiment-driven-stochastic-volatility.md — K196 attention→vol Watch
 
 - @sources/substack-rss-klement-2026-07-23-investor-flows-customer-data.md — K191 thin
 

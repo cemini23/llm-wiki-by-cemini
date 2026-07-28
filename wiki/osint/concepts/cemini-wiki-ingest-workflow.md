@@ -31,13 +31,31 @@ related:
   - sources/substack-rss-outlier-weekly-2026-07-14-llm-wiki-lint.md
   - sources/newsletter-rss-pragmatic-engineer-2026-07-14-what-is-loop-engineering.md
   - sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md
+  - concepts/skill-regression-tax.md
+  - sources/arxiv-2607.22520-regression-tax-llm-skills.md
+  - sources/substack-rss-moontower-2026-07-26-slopcounterslop.md
+  - entities/tools/langchain-openwiki.md
+  - sources/arxiv-2607.23791-brw-cover-times.md
+  - sources/newsletter-rss-sparktoro-2026-07-28-brand-affinity.md
+  - sources/arxiv-2607.24663-aps-rag.md
 maturity: core
 created: 2026-05-31
-updated: 2026-07-20
+updated: 2026-07-28
 ---
 
 ## Relations
 
+- @sources/arxiv-2607.24663-aps-rag.md — K198 backlink
+
+- @sources/newsletter-rss-sparktoro-2026-07-28-brand-affinity.md — K198 → seo brief
+
+- @sources/arxiv-2607.23791-brw-cover-times.md — K198 digest false-positive
+
+- @entities/tools/langchain-openwiki.md — K197
+
+- @concepts/skill-regression-tax.md — K196 evaluate Cursor/MCP skill adds with before/after matrices
+- @sources/arxiv-2607.22520-regression-tax-llm-skills.md — K196
+- @sources/substack-rss-moontower-2026-07-26-slopcounterslop.md — K196 Pangram / counterslop publishing hygiene
 - @sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md — K177 process-trace IE eval for ingest agents
 - @concepts/computational-genealogy-archival-automation.md — parallel “sources before automation / no Tier-3 invention” discipline for archival digs
 - @sources/substack-rss-outlier-weekly-2026-07-14-llm-wiki-lint.md — K165: contribution rate + wikilint-on-PR framing

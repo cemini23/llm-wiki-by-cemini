@@ -10,12 +10,15 @@ related:
   - concepts/macro-charts-regime-signals.md
   - concepts/macro-weather-regime.md
   - concepts/macro-rotation-momentum-signals-2026-05.md
+  - concepts/xsp-lane-trading-framework.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-13
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @concepts/xsp-lane-trading-framework.md — K198 backlink
 
 - @sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md — K144 paid email bundle (Jun 22–Jul 5)
 - @sources/macro-charts-paid-forward-chat-2026-07-10.md — K155 CPI catalyst note

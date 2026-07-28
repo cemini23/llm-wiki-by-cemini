@@ -18,12 +18,15 @@ related:
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
   - concepts/ip-sale-readiness.md
+  - sources/substack-rss-event-horizon-2026-07-28-dodd-frank-pm.md
 maturity: validated
 created: 2026-04-25
-updated: 2026-07-17
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-07-28-dodd-frank-pm.md — K198 Dodd/CFTC
 
 - @sources/3-19-compliance-research.md — establishes the DCM Core Principles 3 & 4 baseline this concept extends; S7 anchors the March 2026 ANPRM as the regulatory shift
 - @sources/cftc-anprm-prediction-markets-2026-03-16.md — Question 19 (defining "gaming" under CEA §5c(c)(5)(C)) is the statutory hinge of the preemption fight

@@ -16,12 +16,15 @@ related:
   - entities/tools/clawdbot.md
   - sources/alterego-eth-xgboost-nwp-polymarket-models-2026-05-25.md
   - sources/arxiv-resa-convlstm-nwp-bias-2504.15322-2026-06-11.md
+  - sources/arxiv-2607.24588-siren-weather-agents.md
 maturity: validated
 created: 2026-05-27
-updated: 2026-05-29
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.24588-siren-weather-agents.md — K198 thin
 
 - @sources/alterego-eth-five-weather-methodologies-2026-05-27.md — K70 primary source
 - @entities/people/alteregoeth.md — taxonomy author

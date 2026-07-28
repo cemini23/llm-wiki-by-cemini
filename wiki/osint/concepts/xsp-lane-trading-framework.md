@@ -65,12 +65,45 @@ related:
   - entities/tools/outlines.md
   - sources/substack-rss-capital-flows-2026-07-23-treasury-compressing.md
   - sources/substack-rss-wublock-2026-07-23-robinhood-chain.md
+  - sources/macro-charts-paid-forward-2026-07-26-something-doesnt-feel-right.md
+  - sources/substack-rss-moontower-2026-07-26-hedging-is-for-gardeners.md
+  - sources/substack-rss-moontower-2026-07-26-moontower-322.md
+  - sources/arxiv-2607.22254-sentiment-driven-stochastic-volatility.md
+  - entities/tools/netdata.md
+  - entities/tools/redis.md
+  - concepts/option-iv-concavity-parameterization.md
+  - sources/arxiv-2607.24680-option-pricing-scheme.md
+  - sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md
+  - sources/eval-revenue-opportunity-url-analysis-2026-07-27.md
+  - sources/substack-rss-capital-flows-2026-07-25-system-running-out-of-slack.md
+  - sources/substack-rss-klement-2026-07-27-fast-money-warping-market-logic.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-25
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/substack-rss-klement-2026-07-27-fast-money-warping-market-logic.md — K198 graph fix
+
+- @sources/substack-rss-capital-flows-2026-07-25-system-running-out-of-slack.md — K198 graph fix
+
+- @sources/eval-revenue-opportunity-url-analysis-2026-07-27.md — K198 graph fix
+
+- @sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md — K198 regime
+
+- @sources/arxiv-2607.24680-option-pricing-scheme.md — K198
+
+- @concepts/option-iv-concavity-parameterization.md — K198 event-day concave IV
+
+- @entities/tools/redis.md — K197
+
+- @entities/tools/netdata.md — K197
+
+- @sources/macro-charts-paid-forward-2026-07-26-something-doesnt-feel-right.md — K196 regime watch (EXIT TO THE LEFT)
+- @sources/substack-rss-moontower-2026-07-26-hedging-is-for-gardeners.md — K196 hedge cost / smart-flow overhedge lore
+- @sources/substack-rss-moontower-2026-07-26-moontower-322.md — K196 weekly hub
+- @sources/arxiv-2607.22254-sentiment-driven-stochastic-volatility.md — K196 attention→vol Watch
 
 - @sources/substack-rss-capital-flows-2026-07-24-crude-risk.md — K195 crude teaser
 

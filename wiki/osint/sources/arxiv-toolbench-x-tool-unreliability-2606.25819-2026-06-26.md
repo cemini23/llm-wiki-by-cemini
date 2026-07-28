@@ -8,14 +8,17 @@ related:
   - concepts/code-as-agent-harness.md
   - concepts/claw-swe-bench-harness-evaluation.md
   - entities/tools/toolbench-x.md
+  - concepts/wiki-tooling-evaluation.md
 maturity: draft
 read_status: read
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-28
 clusters: [llm-agents, agent-harness]
 ---
 
 ## Relations
+
+- @concepts/wiki-tooling-evaluation.md — K198 backlink
 
 - @concepts/toolbench-x-tool-reliability-hazards.md — five hazard taxonomy
 - @entities/tools/toolbench-x.md — Phase-0 REFERENCE (NO LICENSE on GitHub)

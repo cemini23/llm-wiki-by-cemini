@@ -6,10 +6,15 @@ keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, int
 related:
   - sources/eval-revenue-opportunity-analysis-2026-07-25.md
   - entities/tools/ego-lite.md
+  - entities/tools/opencli.md
+  - entities/tools/meilisearch.md
   - entities/tools/omlx.md
   - entities/tools/cloudflare-temp-email.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - concepts/computational-genealogy-archival-automation.md
+  - concepts/skill-regression-tax.md
+  - sources/arxiv-2607.21936-historical-doc-rag-restoration.md
+  - sources/eval-revenue-opportunity-url-analysis-plan-2026-07-27.md
   - concepts/italian-regional-genealogy-archive-playbook.md
   - concepts/active-project-research-routing.md
   - entities/tools/familysearch-platform-api.md
@@ -58,12 +63,44 @@ related:
   - entities/tools/kekule-html.md
   - entities/tools/go-geni.md
   - sources/atto-commercial-migration-plan-2026-07-23.md
+  - entities/tools/t3code.md
+  - sources/eval-revenue-opportunity-url-analysis-2026-07-27.md
+  - concepts/historical-document-kg-query-inference.md
+  - entities/tools/book-to-skill.md
+  - entities/tools/geolibre.md
+  - sources/eval-revenue-stack-url-evaluation-2026-07-28.md
+  - sources/arxiv-2607.24542-ancient-sentence-embeddings.md
+  - sources/arxiv-2607.24475-historical-doc-kg-query.md
+  - entities/tools/aisuite.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-25
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @entities/tools/aisuite.md — K198 backlink
+
+- @sources/arxiv-2607.24475-historical-doc-kg-query.md — K198 backlink
+
+- @sources/arxiv-2607.24542-ancient-sentence-embeddings.md — K198 backlink
+
+- @sources/eval-revenue-stack-url-evaluation-2026-07-28.md — K198
+
+- @entities/tools/geolibre.md — K198 place maps
+
+- @entities/tools/book-to-skill.md — K198 Integrate
+
+- @concepts/historical-document-kg-query-inference.md — K198 HTR→KG/embeddings
+
+- @sources/eval-revenue-opportunity-url-analysis-2026-07-27.md — K197
+
+- @entities/tools/t3code.md — K197
+
+- @concepts/skill-regression-tax.md — K196 Atto MCP/skills before/after matrices
+- @sources/arxiv-2607.21936-historical-doc-rag-restoration.md — K196 ARI/RAG entity restore after HTR
+- @entities/tools/opencli.md — K197 Integrate logged-in portal CLI (pair ego-lite isolation)
+- @entities/tools/meilisearch.md — K197 Watch BUSL vault search
 
 - @sources/eval-revenue-opportunity-analysis-2026-07-25.md
 

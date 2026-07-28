@@ -13,14 +13,17 @@ related:
   - entities/tools/strawberry-graphql.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/xsp-lane-trading-framework.md
+  - concepts/computational-genealogy-archival-automation.md
 maturity: draft
 read_status: read
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-28
 clusters: [wiki-tooling, k168-ingest]
 ---
 
 ## Relations
+
+- @concepts/computational-genealogy-archival-automation.md — K198 backlink
 
 - @entities/tools/bonsai-demo.md — Extract (xsp local inference patterns)
 - @entities/tools/middy.md — Integrate (TipDrop Lambda)

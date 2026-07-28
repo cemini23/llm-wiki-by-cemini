@@ -5,9 +5,10 @@ tags: [tool, tipdrop, david, outreach, k163, integrate]
 keywords: [Codex skill, lead gen, GDPR, prospecting]
 related:
   - sources/eval-github-repo-revenue-evaluation-2026-07-14.md
+  - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-07-28
 ---
 
 ## Narrative

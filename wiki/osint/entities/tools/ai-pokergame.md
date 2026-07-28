@@ -9,12 +9,15 @@ related:
   - concepts/takeover-auction-diligence-solvers.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
   - entities/tools/pokerkit.md
+  - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @concepts/wiki-tooling-evaluation.md — K198 backlink
 
 - @sources/eval-github-repo-plan-dfs-marl-poker-osint-2026-07-01.md — K138 Steal-from row
 - @entities/tools/pokerkit.md — canonical Arena poker engine (Adopt K130)

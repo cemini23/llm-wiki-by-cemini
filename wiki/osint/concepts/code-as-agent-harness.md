@@ -47,6 +47,12 @@ related:
   - sources/arxiv-2607.15684-agent-reactive-bugs-model-harness.md
   - sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md
   - sources/arxiv-2607.15769-agent-governance-manifest.md
+  - concepts/verifier-deployment-gap.md
+  - concepts/swap-regret-attention-fictitious-play.md
+  - sources/arxiv-2607.24663-aps-rag.md
+  - sources/newsletter-rss-latent-space-2026-07-28-kimi-k3.md
+  - sources/arxiv-2607.24300-self-authored-verification.md
+  - sources/arxiv-2607.23333-swap-regret-attention.md
 
   - sources/newsletter-rss-latent-space-2026-07-21-ainews.md
   - sources/arxiv-2607.19267-authority-framing-laundered-code.md
@@ -63,12 +69,33 @@ related:
   - sources/arxiv-2607.20064-pro-long-programmatic-memory.md
   - sources/arxiv-2607.20268-potre-cognitive-heterogeneity.md
   - sources/newsletter-rss-latent-space-2026-07-23-laguna-poolside.md
+  - sources/arxiv-2607.22520-regression-tax-llm-skills.md
+  - sources/arxiv-2607.22529-skill-self-play.md
+  - sources/arxiv-2607.22511-causalforge-lean-causal-research.md
+  - concepts/skill-regression-tax.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-07-23
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.23333-swap-regret-attention.md — K198 backlink
+
+- @sources/arxiv-2607.24300-self-authored-verification.md — K198 backlink
+
+- @sources/newsletter-rss-latent-space-2026-07-28-kimi-k3.md — K198 Kimi K3
+
+- @sources/arxiv-2607.24663-aps-rag.md — K198 MCP RAG eval
+
+- @concepts/swap-regret-attention-fictitious-play.md — K198
+
+- @concepts/verifier-deployment-gap.md — K198
+
+- @concepts/skill-regression-tax.md — K196 skills help/hurt; before/after matrices
+- @sources/arxiv-2607.22520-regression-tax-llm-skills.md — K196
+- @sources/arxiv-2607.22529-skill-self-play.md — K196 co-evolve behind regression gates
+- @sources/arxiv-2607.22511-causalforge-lean-causal-research.md — K196 Lean acceptor > LLM-as-judge
 
 - @sources/arxiv-2607.20268-potre-cognitive-heterogeneity.md — K191 skim
 
@@ -130,8 +157,12 @@ Prompted by Tier-2 sweep ingest of arXiv:2605.18747 — a 102-page survey codify
 ### Design imperatives for Cemini
 
 - **Executable** — proposed actions must compile to verifiable tool calls (Cemini AI confirm gate).
-- **Verifiable** — harness changes need regression checks (skill_audit, MCPT for strategies).
+- **Verifiable** — harness changes need regression checks (skill_audit, MCPT for strategies); K196 **regression tax**: measure tasks that *worsen* after skills, not only average uplift.
 - **Stateful** — shared state across turns (stash, wiki log, hot.md) without silent drift.
+
+### K196 — skill self-play + Lean research gates
+
+@concepts/skill-regression-tax.md — co-evolving skills (2607.22529) only behind before/after matrices; CausalForge (2607.22511) reinforces machine-checkable acceptors over LLM reviewers for research loops.
 
 ### Physical-domain instance (K105)
 

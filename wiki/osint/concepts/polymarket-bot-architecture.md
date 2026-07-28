@@ -5,6 +5,8 @@ tags: [concept, polymarket, trading-bot, prediction-markets, websocket, backtest
 keywords: [polymarket, CLOB, websocket, FAK, GTC, latency, hot path, HMAC, backtesting, 6-layer websocket, market maker, ladder bot, NSF, fishy resolution]
 related:
   - entities/tools/omlx.md
+  - sources/substack-rss-event-horizon-2026-07-27-netflix-nevada-pm.md
+  - sources/substack-rss-wublock-2026-07-27-htx-uk-sanctions.md
   - sources/substack-rss-event-horizon-2026-07-24-lebron-episode-25.md
   - sources/substack-rss-event-horizon-2026-07-23-senate-pm-restrictions.md
   - sources/substack-rss-event-horizon-2026-07-24-kalshi-college-realignment.md
@@ -102,6 +104,8 @@ related:
   - entities/tools/airllm.md
   - sources/substack-rss-wublock-2026-07-18-weekly-ethereum-privacy-robinhood.md
   - sources/substack-rss-wublock-2026-07-19-asia-top10-japan-fiea.md
+  - sources/substack-rss-event-horizon-2026-07-28-dodd-frank-pm.md
+  - entities/tools/sportsbook-api-evangelist.md
 
   - sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md
   - sources/substack-rss-event-horizon-2026-07-21-wildfire-aqi-markets.md
@@ -109,12 +113,22 @@ related:
   - sources/substack-rss-wublock-2026-07-22-fragile-speculative-tokens.md
   - sources/substack-rss-event-horizon-2026-07-22-wisconsin-election-betting.md
   - sources/substack-rss-wublock-2026-07-23-robinhood-chain.md
+  - entities/tools/amnezia-client.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-07-25
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @entities/tools/sportsbook-api-evangelist.md — K198 graph fix
+
+- @sources/substack-rss-event-horizon-2026-07-28-dodd-frank-pm.md — K198 Dodd letter
+
+- @entities/tools/amnezia-client.md — K197 transport-only VPN
+
+- @sources/substack-rss-event-horizon-2026-07-27-netflix-nevada-pm.md — K196 Kalshi NV geofence + $120k/day; Netflix C&D
+- @sources/substack-rss-wublock-2026-07-27-htx-uk-sanctions.md — K196 OFSI HTX listing (sanctions context)
 
 - @entities/tools/omlx.md — K194 Extract refresh local shadow
 
@@ -199,6 +213,10 @@ X-thread + long-form article by @0x_Punisher (handle: punisher) detailing how a 
 7. **Dry run + deploy + monitor** — real wallet with zero balance until backtest and live match perfectly. Deploy small first. Monitor for **fishy resolutions** (1¢ discrepancies vs Binance/Coinbase charts) → pause + cross-verify. Log everything, review daily.
 
 8. **Common-issue catalog** — fishy final prices, stale/jittery data, over-optimistic AI backtests, adverse selection, magic 0¢-100% wallets (Polymarket's NegRisk infrastructure, PnL = 0, ignore them).
+
+### K196 — Kalshi Nevada geofence enforcement
+
+@sources/substack-rss-event-horizon-2026-07-27-netflix-nevada-pm.md — NV Gaming Control Board agreement forces Kalshi multi-source geofence by **2026-08-12** or **$120k/day**; admits post-injunction trading by investigators. Retail PM bots: treat state deny-lists as hard constraints, not soft compliance theater. Netflix C&D is narrative noise relative to the geofence deadline.
 
 ### The 6-layer websocket system (load-bearing)
 

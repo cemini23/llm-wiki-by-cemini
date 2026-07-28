@@ -1,8 +1,8 @@
 ---
 title: Active project research routing — brief targets vs legacy CeminiSuite
 type: concept
-tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto]
-keywords: [brief-routing, atto, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
+tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher]
+keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
 related:
   - sources/eval-revenue-opportunity-analysis-2026-07-25.md
   - concepts/gpuology-genealogy-agent-kit.md
@@ -36,12 +36,21 @@ related:
   - sources/atto-commercial-migration-plan-2026-07-23.md
   - sources/newsletter-rss-sparktoro-2026-07-23-creating-vs-promoting.md
   - entities/tools/stiggio-skills.md
+  - sources/eval-revenue-stack-url-evaluation-2026-07-28.md
+  - entities/tools/clickhouse.md
+  - sources/eval-revenue-opportunity-url-analysis-2026-07-27.md
 maturity: core
 created: 2026-06-17
-updated: 2026-07-25
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/eval-revenue-opportunity-url-analysis-2026-07-27.md — K198 graph fix
+
+- @entities/tools/clickhouse.md — K198 graph fix
+
+- @sources/eval-revenue-stack-url-evaluation-2026-07-28.md — K198 backlink
 
 - @sources/eval-revenue-opportunity-analysis-2026-07-25.md — K195
 
@@ -87,13 +96,21 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 
 **Atto product split (2026-07-21):** **Atto** (`~/Projects/atto`) is operator **Priority #1** public product — dedicated briefs under `../atto/briefs/`. **Family-tree** remains private Barone dogfood only. Eval: CCC v10.3 (`atto overlap` vs `genealogy overlap`).
 
+**GuruWatcher Priority #2 (2026-07-27):** **GuruWatcher** (`~/Projects/GuruWatcher`) is operator **Priority #2** — alert-only newsletter parameter watches → Discord. Everything else (poker, CeminiDFS, XSP, family-tree, TipDrop, PM canary, …) sits **behind** Atto and GuruWatcher. Eval: CCC v10.4 (`guruwatcher overlap`).
+
 ## Narrative
 
-### Co-primary projects (morning ingest)
+### Priority stack (morning ingest)
+
+| Rank | Project | Code / brief home | Prod `scp`? |
+|------|---------|-------------------|-------------|
+| **#1** | **Atto** (genealogy product) | `../atto/briefs/` · GitHub `cemini23/atto` · vault `~/AttoVault/` | No — laptop kit; never Barone PII |
+| **#2** | **GuruWatcher** (newsletter watches → Discord) | `../GuruWatcher/briefs/` · GitHub `cemini23/GuruWatcher` · prod `/opt/guru-watcher/` | No — deploy via `GuruWatcher/scripts/deploy_prod.sh` |
+
+### Active behind #1 / #2 (route when source matches)
 
 | Project | Code / brief home | Prod `scp`? |
 |---------|-------------------|-------------|
-| **Atto** (Priority #1 product) | `../atto/briefs/` · GitHub `cemini23/atto` · vault `~/AttoVault/` | No — laptop kit; never Barone PII |
 | **Poker Arena** | `agents/devfun-poker-arena/briefs/` | No — deploy via `cemini_hl_loop.sh` / rsync |
 | **CeminiDFS** | `../projects/CeminiDFS/briefs/` + `@gambling-wiki` | No — laptop pipeline repo |
 | **XSP killer bot** | `briefs/xsp-*` → `cemini-prod:/opt/cemini/briefs/` | Yes — Lane A/B monitors only |
@@ -111,10 +128,11 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 ### Default ingest rule
 
 1. **Wiki always** — source + concept updates in `wiki/` (or cross-wiki route).
-2. **Brief only if** steal-from maps to a row above (`scripts/active_project_brief_targets.yaml`).
+2. **Brief only if** steal-from maps to a row above (`scripts/active_project_brief_targets.yaml`). Prefer **Atto (#1)** then **GuruWatcher (#2)** on ties.
 3. **Prod scp only if** `scp_target` is set for that project **and** `skill_audit.py` PASS.
 4. **Genealogy split** — productizable capability (HTR/GEDCOM/vault/share/MCP/portal) → **Atto dedicated brief**; private pedigree/DNA/living names → `~/Desktop/family/` only; methodology stubs on OSINT wiki.
-5. **Legacy deprioritized** — generic quant-finance / portfolio RL / conductor eval / castle-sim → **wiki-only** unless ROADMAP reopens.
+5. **Newsletter / Macro Charts price watches** → **GuruWatcher** briefs (alert-only; never order routing). Inbox hook: `scripts/guru_watcher_inbox_hook.sh`.
+6. **Legacy deprioritized** — generic quant-finance / portfolio RL / conductor eval / castle-sim → **wiki-only** unless ROADMAP reopens.
 
 ### Config files
 
@@ -123,20 +141,21 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 | `scripts/daily_research_config.yaml` | Exa queries + `active_topics` in daily sweep |
 | `scripts/active_project_brief_targets.yaml` | Brief destination + scp gates per project |
 | `ROADMAP.md` | Human-readable workstream list (sync on pivot) |
-| `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` | Bulk URL eval — revenue-first + `atto overlap` + `genealogy overlap` |
+| `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` | Bulk URL eval — revenue-first + `atto` / `guruwatcher` / `genealogy` overlaps |
 
 ### Cross-wiki
 
 - **Atto** deep ingest → `../atto/briefs/` (synthetic fixtures only); OSINT methodology stubs; CCC for MCP/skill harness pieces.
+- **GuruWatcher** deep ingest → `../GuruWatcher/briefs/`; Macro Charts inbox → `scripts/guru_watcher_inbox_hook.sh` → prod claim reconcile.
 - **Family-tree** private digs → `Desktop/family/research/`; never into Atto fixtures/marketing.
 - **CeminiDFS** deep ingest → open Gambling wiki folder; OSINT may stub-route methodology via `cross_wiki_route.py`.
 - **wc-ticket-monitor** stays OSINT entity + code repo; cross-ref `@entities/tools/world-cup-bot.md` for PM bot boundary.
-- **castle-sim** (legacy) → Game Dev wiki when Godot/RTS source explicitly matches; not co-primary default.
+- **castle-sim** (legacy) → Game Dev wiki when Godot/RTS source explicitly matches; not priority default.
 - **Poker** session intel stays in `agents/devfun-poker-arena/`; wiki holds methodology (`poker-hl-analyst-loop`).
 - **PM/Kalshi** OSINT wiki owns architecture; prod execution still server-Claude boundary.
 
 ## Snippets
 
-> "Priority #1 product: atto (../atto/briefs/). Co-primary also: poker-arena · ceminidfs · xsp-killer · family-tree (dogfood)." [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-07-21]
+> "Priority #1: atto (../atto/briefs/). Priority #2: guruwatcher (../GuruWatcher/briefs/). Behind both: poker-arena · ceminidfs · xsp-killer · family-tree (dogfood) · …" [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-07-27]
 
 > "Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers." [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-06-17]

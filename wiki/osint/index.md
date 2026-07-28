@@ -12,7 +12,75 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **925 canonical stubs** (K193 + K192 + K191 + …)
+Total: **980 canonical stubs** (K198 + K197 + …) (K197 + K196 + K195 + …)
+
+### k198-ingest (24)
+
+- [Revenue Stack URL Evaluation](sources/eval-revenue-stack-url-evaluation-2026-07-28.md) — book-to-skill Integrate + AGT/GeoLibre Extract. — `docx` [+k198]
+- [book-to-skill](entities/tools/book-to-skill.md) — Integrate MIT Atto. — entity [+k198]
+- [Agent Governance Toolkit](entities/tools/agent-governance-toolkit.md) — Extract MIT Microsoft. — entity [+k198]
+- [GeoLibre](entities/tools/geolibre.md) — Extract MIT Atto maps. — entity [+k198]
+- [aisuite](entities/tools/aisuite.md) — Extract refresh Atto/GuruWatcher. — entity [+k198]
+- [Swap-regret attention (2607.23333)](sources/arxiv-2607.23333-swap-regret-attention.md) — FP/CE theory → poker. — `pdf` [+k198]
+- [Self-authored verification (2607.24300)](sources/arxiv-2607.24300-self-authored-verification.md) — verifier–deployment gap. — `pdf` [+k198]
+- [Historical doc KG (2607.24475)](sources/arxiv-2607.24475-historical-doc-kg-query.md) — Atto KG queries. — `pdf` [+k198]
+- [Ancient sentence embeddings (2607.24542)](sources/arxiv-2607.24542-ancient-sentence-embeddings.md) — TSDAE/CSE HTR. — `pdf` [+k198]
+- [APS-RAG (2607.24663)](sources/arxiv-2607.24663-aps-rag.md) — corrective MCP RAG. — `pdf` [+k198]
+- [Option pricing scheme (2607.24680)](sources/arxiv-2607.24680-option-pricing-scheme.md) — IV concavity → xsp. — `pdf` [+k198]
+- [SIREN weather (2607.24588)](sources/arxiv-2607.24588-siren-weather-agents.md) — thin weather agents. — `pdf` [+k198]
+- [BRW cover times (2607.23791)](sources/arxiv-2607.23791-brw-cover-times.md) — math false-positive. — `pdf` [+k198]
+- [Swap-regret FP (concept)](concepts/swap-regret-attention-fictitious-play.md) — poker theory steal. — concept [+k198]
+- [Verifier–deployment gap](concepts/verifier-deployment-gap.md) — external gates only. — concept [+k198]
+- [Historical-doc KG inference](concepts/historical-document-kg-query-inference.md) — Atto HTR stack. — concept [+k198]
+- [IV concavity parameterization](concepts/option-iv-concavity-parameterization.md) — XSP event smiles. — concept [+k198]
+- [Macro Charts Korea/WTI/FOMC](sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md) — GuruWatcher watches. — `paid` [+k198]
+- [EH Dodd-Frank PM](sources/substack-rss-event-horizon-2026-07-28-dodd-frank-pm.md) — CFTC/Dodd letter. — `rss` [+k198]
+- [Latent Space Kimi K3](sources/newsletter-rss-latent-space-2026-07-28-kimi-k3.md) — open weights carve-outs. — `rss` [+k198]
+- [WuBlock MM loans](sources/substack-rss-wublock-2026-07-28-mm-token-loans.md) — loan+call structure. — `rss` [+k198]
+- [SparkToro brand affinity](sources/newsletter-rss-sparktoro-2026-07-28-brand-affinity.md) — → seo brief. — `rss` [+k198]
+- [Klement politics](sources/substack-rss-klement-2026-07-28-politics-investments.md) — HF political alpha. — `rss` [+k198]
+- [Capital Flows FOMC teaser](sources/substack-rss-capital-flows-2026-07-27-fomc-ai-flows.md) — paywalled teaser. — `rss` [+k198]
+
+### k197-ingest (17)
+
+- [Revenue URL Analysis infra](sources/eval-revenue-opportunity-url-analysis-2026-07-27.md) — Redis/Meili Watch overrides + netdata/t3code/OpenCLI cluster. — `docx` [+k197]
+- [Revenue URL Analysis Plan](sources/eval-revenue-opportunity-url-analysis-plan-2026-07-27.md) — OpenCLI Integrate + video/YouTube Extract. — `docx` [+k197]
+- [OpenCLI](entities/tools/opencli.md) — Integrate Apache Atto. — entity [+k197]
+- [t3code](entities/tools/t3code.md) — Integrate MIT TipDrop/Atto. — entity [+k197]
+- [DBeaver](entities/tools/dbeaver.md) — Integrate Apache ops. — entity [+k197]
+- [Netdata](entities/tools/netdata.md) — Integrate GPL daemon-only. — entity [+k197]
+- [Amnezia client](entities/tools/amnezia-client.md) — Integrate GPL transport-only. — entity [+k197]
+- [ClickHouse](entities/tools/clickhouse.md) — Extract CeminiDFS. — entity [+k197]
+- [block/buzz](entities/tools/block-buzz.md) — Extract TipDrop. — entity [+k197]
+- [impeccable](entities/tools/impeccable.md) — Extract Atto design. — entity [+k197]
+- [openwiki](entities/tools/langchain-openwiki.md) — Extract CCC. — entity [+k197]
+- [Redis](entities/tools/redis.md) — Watch RSALv2/SSPL. — entity [+k197]
+- [Meilisearch](entities/tools/meilisearch.md) — Watch BUSL. — entity [+k197]
+- [openclicky](entities/tools/openclicky.md) — Extract Atto UI. — entity [+k197]
+- [qiaomu-opencli-skills](entities/tools/qiaomu-opencli-skills.md) — Extract TipDrop. — entity [+k197]
+- [youtube-mcp-cli](entities/tools/youtube-mcp-cli.md) — Extract TipDrop. — entity [+k197]
+- [claude-video](entities/tools/claude-video.md) — Integrate refresh TipDrop. — entity [+k197]
+
+### k196-ingest (18)
+
+- [Historical doc RAG / ARI (2607.21936)](sources/arxiv-2607.21936-historical-doc-rag-restoration.md) — RAG named-entity restore for damaged docs → **Atto**. — `pdf` [+k196]
+- [Sentiment-driven SV (2607.22254)](sources/arxiv-2607.22254-sentiment-driven-stochastic-volatility.md) — attention→CIR vol Watch → **xsp**. — `pdf` [+k196]
+- [CausalForge Lean (2607.22511)](sources/arxiv-2607.22511-causalforge-lean-causal-research.md) — Lean acceptor > LLM-as-judge → **CCC**. — `pdf` [+k196]
+- [Regression Tax skills (2607.22520)](sources/arxiv-2607.22520-regression-tax-llm-skills.md) — skills help/hurt; regress less. — `pdf` [+k196]
+- [Skill Self-Play (2607.22529)](sources/arxiv-2607.22529-skill-self-play.md) — co-evolve skills behind gates. — `pdf` [+k196]
+- [Skill regression tax (concept)](concepts/skill-regression-tax.md) — before/after matrices for skill PRs. — concept [+k196]
+- [Macro Charts paid Something Doesn't Feel Right](sources/macro-charts-paid-forward-2026-07-26-something-doesnt-feel-right.md) — EXIT TO THE LEFT → **xsp**. — `paid` [+k196]
+- [Macro Charts RSS teaser](sources/macro-charts-rss-2026-07-26-something-doesnt-feel-right.md) — fold under paid. — `rss` [+k196]
+- [Capital Flows slack brief](sources/substack-rss-capital-flows-2026-07-25-system-running-out-of-slack.md) — weekly teaser. — `rss` [+k196]
+- [EH Netflix/Nevada PM](sources/substack-rss-event-horizon-2026-07-27-netflix-nevada-pm.md) — Kalshi NV geofence $120k/day → **pm**. — `rss` [+k196]
+- [Klement AI grads](sources/substack-rss-klement-2026-07-27-graduating-in-the-age-of-ai.md) — Census youth AI-exposure employment. — `rss` [+k196]
+- [Klement fast money](sources/substack-rss-klement-2026-07-27-fast-money-warping-market-logic.md) — Reuters ROI pointer. — `rss` [+k196]
+- [Moontower hedging](sources/substack-rss-moontower-2026-07-26-hedging-is-for-gardeners.md) — hedge cost / SIG lore → **xsp**. — `rss` [+k196]
+- [Moontower Slop/Counterslop](sources/substack-rss-moontower-2026-07-26-slopcounterslop.md) — Pangram AI scan. — `rss` [+k196]
+- [Moontower #322](sources/substack-rss-moontower-2026-07-26-moontower-322.md) — weekly hub. — `rss` [+k196]
+- [WuBlock weekly projects](sources/substack-rss-wublock-2026-07-25-weekly-project-updates.md) — WLD/Movement/OpenRouter. — `rss` [+k196]
+- [WuBlock Asia TOP10](sources/substack-rss-wublock-2026-07-26-asia-top10-japan-onchain.md) — Japan onchain policy. — `rss` [+k196]
+- [WuBlock HTX sanctions](sources/substack-rss-wublock-2026-07-27-htx-uk-sanctions.md) — OFSI RUS3619 narrative. — `rss` [+k196]
 
 ### k195-ingest (13)
 

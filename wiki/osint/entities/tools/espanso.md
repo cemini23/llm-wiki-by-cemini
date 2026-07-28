@@ -7,9 +7,10 @@ related:
   - sources/eval-github-repo-revenue-evaluation-2026-07-15.md
   - concepts/computational-genealogy-archival-automation.md
   - concepts/italian-regional-genealogy-archive-playbook.md
+  - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-07-15
-updated: 2026-07-15
+updated: 2026-07-28
 ---
 
 ## Narrative

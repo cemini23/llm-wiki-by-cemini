@@ -6,12 +6,15 @@ keywords: [AGM, agent-governance-manifest, MIT, .agm]
 related:
   - concepts/agent-governance-manifest.md
   - sources/arxiv-2607.15769-agent-governance-manifest.md
+  - entities/tools/agent-governance-toolkit.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-20
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @entities/tools/agent-governance-toolkit.md — K198 Microsoft toolkit (distinct)
 
 - @concepts/agent-governance-manifest.md
 - @sources/arxiv-2607.15769-agent-governance-manifest.md

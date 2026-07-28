@@ -4,12 +4,18 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-revenue-opportunity-url-analysis-2026-07-27.md
+  - sources/eval-revenue-opportunity-url-analysis-plan-2026-07-27.md
   - sources/eval-revenue-opportunity-analysis-2026-07-25.md
   - entities/tools/visa-vulnerability-agentic-harness.md
   - entities/tools/instatic.md
   - entities/tools/aisuite.md
   - entities/tools/ecc.md
   - entities/tools/ego-lite.md
+  - entities/tools/opencli.md
+  - entities/tools/t3code.md
+  - entities/tools/redis.md
+  - entities/tools/meilisearch.md
   - entities/tools/openforgerl.md
   - entities/tools/pi-web.md
   - entities/tools/likec4.md
@@ -183,13 +189,68 @@ related:
   - entities/tools/aidlc-it-department-manager.md
   - entities/tools/license-guard-rs.md
   - entities/tools/licenseseat.md
+  - entities/tools/dbeaver.md
+  - entities/tools/netdata.md
+  - entities/tools/amnezia-client.md
+  - entities/tools/clickhouse.md
+  - entities/tools/block-buzz.md
+  - entities/tools/impeccable.md
+  - entities/tools/langchain-openwiki.md
+  - entities/tools/openclicky.md
+  - entities/tools/qiaomu-opencli-skills.md
+  - entities/tools/youtube-mcp-cli.md
+  - entities/tools/claude-video.md
+  - sources/eval-revenue-stack-url-evaluation-2026-07-28.md
+  - entities/tools/book-to-skill.md
+  - entities/tools/agent-governance-toolkit.md
+  - entities/tools/geolibre.md
+  - sources/newsletter-rss-latent-space-2026-07-28-kimi-k3.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-25
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-07-28-kimi-k3.md — K198 backlink
+
+- @entities/tools/geolibre.md — K198 Extract
+
+- @entities/tools/agent-governance-toolkit.md — K198 Extract
+
+- @entities/tools/book-to-skill.md — K198 Integrate
+
+- @sources/eval-revenue-stack-url-evaluation-2026-07-28.md — K198 book-to-skill/AGT/GeoLibre
+
+- @entities/tools/claude-video.md — K197
+
+- @entities/tools/youtube-mcp-cli.md — K197
+
+- @entities/tools/qiaomu-opencli-skills.md — K197
+
+- @entities/tools/openclicky.md — K197
+
+- @entities/tools/langchain-openwiki.md — K197
+
+- @entities/tools/impeccable.md — K197
+
+- @entities/tools/block-buzz.md — K197
+
+- @entities/tools/clickhouse.md — K197
+
+- @entities/tools/amnezia-client.md — K197
+
+- @entities/tools/netdata.md — K197
+
+- @entities/tools/dbeaver.md — K197
+
+- @sources/eval-revenue-opportunity-url-analysis-2026-07-27.md — K197 infra/agent eval (Redis/Meili Integrate overturned)
+- @sources/eval-revenue-opportunity-url-analysis-plan-2026-07-27.md — K197 OpenCLI / local-infer plan
+- @entities/tools/opencli.md — K197 Integrate Atto
+- @entities/tools/t3code.md — K197 Integrate TipDrop/Atto
+- @entities/tools/redis.md — K197 Watch (RSALv2/SSPL/AGPL)
+- @entities/tools/meilisearch.md — K197 Watch (BUSL)
 
 - @sources/eval-revenue-opportunity-analysis-2026-07-25.md — K195 eval
 

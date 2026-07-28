@@ -1,7 +1,36 @@
 # Wiki Log
 
-updated: 2026-07-24
+updated: 2026-07-27
 ---
+
+## [2026-07-27] routing | Atto #1 · GuruWatcher #2 (everything else behind)
+
+- **Priority stack:** Atto Priority #1 · GuruWatcher Priority #2 · poker/CeminiDFS/XSP/family-tree/TipDrop/PM behind both
+- **Updated:** `scripts/active_project_brief_targets.yaml` · `scripts/daily_research_config.yaml` · `@concepts/active-project-research-routing.md` · `ROADMAP.md` · today's sweep
+- **Eval:** CCC links prompt v10.4 (`guruwatcher overlap`) · federation hub `federation_paths.yaml` + operator hub
+
+## [2026-07-27] ingest | K197 — dual Revenue Opportunity evals (infra + OpenCLI)
+
+- **Inbox (2):** `Revenue Opportunity URL Analysis.docx` + `… Plan.docx` (sha `0240f93b…` / `6a73998b…`)
+- **License overrides:** redis RSALv2/SSPL/AGPL → **Watch**; meilisearch MIT+BUSL → **Watch**; MiaAI NVFP4 null SPDX → Watch; unsloth GGUF 404 → UNAVAILABLE
+- **Integrate:** OpenCLI (Apache), t3code (MIT), dbeaver (Apache), netdata/amnezia (GPL isolated), claude-video refresh
+- **Extract:** ClickHouse, buzz, impeccable, openwiki, openclicky, qiaomu-opencli-skills, youtube-mcp-cli
+- **Pass aggregated** — no stub farm
+- **Briefs:** Atto OpenCLI; TipDrop t3code/video; CCC openwiki; CeminiDFS ClickHouse (wiki-only)
+
+## [2026-07-27] ship | K196 prod briefs scp
+
+- `briefs/xsp-2026-07-27_k196-macro-hedging-attention-vol.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS 100)
+- `briefs/pm-2026-07-27_k196-kalshi-nevada-geofence.md` → `cemini-prod:/opt/cemini/briefs/` (skill_audit PASS 100)
+
+## [2026-07-27] ingest | K196 — skills regression tax + ARI HTR + Nevada PM + Macro/Moontower/WuBlock
+
+- **Inbox (17):** 5 arXiv + Macro paid/RSS + CF teaser + EH Nevada + Klement×2 + Moontower×3 + WuBlock×3
+- **Concept:** `concepts/skill-regression-tax.md` — before/after matrices; pair with Skill Self-Play
+- **Papers:** ARI historical-doc RAG → Atto/HTR; Regression Tax + Skill Self-Play + CausalForge → CCC/harness; sentiment SV → xsp Watch
+- **Updates:** computational-genealogy · code-as-agent-harness · polymarket-bot (NV geofence) · macro-charts-regime · xsp-lane · harness-updating · wiki-ingest
+- **Briefs:** Atto; CCC; xsp+pm; gambling EH; cyber HTX (optional)
+- **Ops note (same morning):** federation summary race fixed (siblings stagger +3min; federation @08:31); wiki-sync-verify disabled
 
 ## [2026-07-24] ship | K195 — brand Variant C to site + Discord + Tauri
 
@@ -8867,3 +8896,39 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - Phase-0 clones: `.local/adopts/{ego-lite,aisuite,ecc}` — total adopts ~450MB; script `scripts/adopt_k195_phase0.sh`.
 - Briefs: Atto; David ECC; xsp+pm; poker light; CCC; cyber; seo.
 - RSS: Opus 5; CF crude teaser; LeBron Ep25; SecPro #244 identity.
+
+## [2026-07-28] ingest | K198 — Revenue Stack eval + Atto HTR papers + Macro/PM RSS
+
+### Inbox (16 → egress)
+
+1. `Revenue Stack URL Evaluation.docx` (20 URLs; sha256 `738bb865…`)
+2–9. arXiv 2607.23333 / 23791 / 24300 / 24475 / 24542 / 24588 / 24663 / 24680
+10. Macro Charts paid Korea/WTI/FOMC chat
+11–16. Latent Space Kimi K3 · SparkToro · Capital Flows teaser · EH Dodd · Klement · WuBlock MM loans
+
+### Eval rollup (Phase-0 `scripts/adopt_k198_phase0.sh` ≈122MB)
+
+| Tier | Action |
+|------|--------|
+| **Integrate** | book-to-skill (**MIT**) → Atto SKILL.md from playbooks |
+| **Extract** | aisuite (already K195); agent-governance-toolkit (**MIT** ~85MB); GeoLibre (**MIT** ~36MB) |
+| **Watch** | Fermion models (site); Mapbox Places (proprietary) |
+| **Context** | airi WebGPU; awesome-systematic-trading; img2threejs |
+| **Pass** | 11 aggregated — no stub farm |
+| **License fixes** | artillery MPL-2.0 (not BSL); jenkins MIT |
+
+### Wiki pages
+
+- Sources: eval + 8 arXiv + 6 RSS/chat
+- Concepts: swap-regret FP · verifier–deployment gap · historical-doc KG · IV concavity
+- Entities: book-to-skill Integrate; AGT + GeoLibre new; aisuite refresh
+
+### Briefs + delivery
+
+- **Atto:** book-to-skill + HTR/KG/embeddings
+- **GuruWatcher:** Macro Charts Korea/WTI/VIX/FOMC watches
+- **Poker:** swap-regret + verifier gap
+- **Prod scp:** xsp IV/regime + pm Dodd/Fanatics
+- **TipDrop:** WuBlock MM loans OSINT
+- **CCC:** Kimi K3 + APS-RAG / governance toolkit
+- **SEO:** SparkToro brand affinity (cross-wiki brief)

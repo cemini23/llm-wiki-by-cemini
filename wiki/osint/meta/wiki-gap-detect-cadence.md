@@ -25,8 +25,8 @@ updated: 2026-07-20
 | Field | Value |
 |-------|-------|
 | **Cadence** | Weekly (descriptive only — no auto Exa) |
-| **Last run** | 2026-07-20 |
-| **Next due** | 2026-07-27 |
+| **Last run** | 2026-07-28 |
+| **Next due** | 2026-08-04 |
 | **Script** | `python3 scripts/wiki_gap_detect.py` |
 | **Report** | `.local/reports/wiki-gap-detect-YYYY-MM-DD.txt` |
 

@@ -9,12 +9,15 @@ related:
   - concepts/polymarket-bot-architecture.md
   - entities/platforms/kalshi.md
   - entities/platforms/polymarket.md
+  - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @concepts/wiki-tooling-evaluation.md — K198 backlink
 
 - @sources/eval-github-repo-plan-dfs-marl-poker-osint-2026-07-01.md — K138 Steal-from row
 - @sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md — arb infra landscape

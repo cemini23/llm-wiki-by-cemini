@@ -8,19 +8,32 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
-## Active workstreams (2026-07-21 — Atto Priority #1 + co-primary portfolio)
+## Active workstreams (2026-07-27 — Atto Priority #1 · GuruWatcher Priority #2)
 
-Research digest + ingest briefs: **Atto** is operator Priority #1 product (`../atto/briefs/`). Other co-primary rows stay active (`scripts/active_project_brief_targets.yaml`). Eval prompt: CCC `prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` v10.3 (`atto overlap` + `genealogy overlap`).
+Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/briefs/`). **GuruWatcher** is Priority #2 (`../GuruWatcher/briefs/`). Everything else is behind both (`scripts/active_project_brief_targets.yaml`). Eval prompt: CCC `prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` v10.4 (`atto overlap` + `guruwatcher overlap` + `genealogy overlap`).
 
-### Co-primary (morning ingest)
+### Priority stack (morning ingest)
 
-| Project | Brief home | Prod scp |
-|---------|------------|----------|
-| **Atto** — genealogy agent kit (Priority #1) | `../atto/briefs/` | No — never Barone PII |
-| **Poker Arena — dev.fun Researcher Round** | `agents/devfun-poker-arena/briefs/` | sandbox + rsync |
-| **CeminiDFS** — NFL DIY projection pipeline | `../projects/CeminiDFS/briefs/` | No |
-| **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
-| **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
+| Rank | Project | Brief home | Prod scp |
+|------|---------|------------|----------|
+| **#1** | **Atto** — genealogy agent kit | `../atto/briefs/` | No — never Barone PII |
+| **#2** | **GuruWatcher** — newsletter watches → Discord (alert-only) | `../GuruWatcher/briefs/` | No — deploy via GuruWatcher `deploy_prod.sh` |
+| behind | **Poker Arena — dev.fun Researcher Round** | `agents/devfun-poker-arena/briefs/` | sandbox + rsync |
+| behind | **CeminiDFS** — NFL DIY projection pipeline | `../projects/CeminiDFS/briefs/` | No |
+| behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
+| behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
+
+## Current state (2026-07-28 — K198)
+
+- **K198 ingest (2026-07-28)** — Revenue Stack eval (book-to-skill Integrate; AGT+GeoLibre+aisuite Extract; Mapbox/Fermion Watch) + swap-regret/self-verify/HTR-KG/option-IV papers + Macro Korea/WTI/FOMC + EH Dodd + Kimi K3. Phase-0 ~122MB. Briefs: Atto; GuruWatcher; poker; xsp+pm scp; TipDrop; CCC; seo.
+
+## Current state (2026-07-27 — K197)
+
+- **K197 ingest (2026-07-27)** — Dual Revenue Opportunity evals. **Overrides:** Redis + Meilisearch Integrate→Watch (RSALv2/BUSL). **Integrate:** OpenCLI, t3code, dbeaver, netdata/amnezia (GPL isolate), claude-video refresh. **Extract:** ClickHouse, buzz, impeccable, openwiki, openclicky, opencli-skills, youtube-mcp. Briefs: Atto; TipDrop; CCC. Phase-0 OpenCLI+t3code only.
+
+## Current state (2026-07-27 — K196)
+
+- **K196 ingest (2026-07-27)** — Regression Tax + Skill Self-Play + CausalForge (CCC/harness) + ARI historical-doc RAG (Atto) + sentiment SV Watch + Macro EXIT TO THE LEFT + Moontower hedging/slop + EH Kalshi Nevada geofence + Klement/WuBlock context. Briefs: Atto; CCC; xsp+pm; gambling. No local adopt. LaunchAgent stagger + librarian sync disabled.
 
 ## Current state (2026-07-25 — K195)
 

@@ -40,6 +40,7 @@ related:
   - sources/eval-url-revenue-and-project-analysis-2026-07-20.md
   - sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md
   - sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md
+  - sources/arxiv-2607.21936-historical-doc-rag-restoration.md
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/active-project-research-routing.md
   - sources/eval-genealogy-github-revenue-analysis-2026-07-22.md
@@ -57,18 +58,33 @@ related:
   - entities/tools/open-genealogy.md
   - entities/tools/kekule-html.md
   - entities/tools/go-geni.md
+  - concepts/skill-regression-tax.md
+  - concepts/historical-document-kg-query-inference.md
+  - sources/arxiv-2607.24542-ancient-sentence-embeddings.md
+  - sources/arxiv-2607.24475-historical-doc-kg-query.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-22
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.24475-historical-doc-kg-query.md — K198 backlink
+
+- @sources/arxiv-2607.24542-ancient-sentence-embeddings.md — K198 backlink
+
+- @concepts/historical-document-kg-query-inference.md — K198
+
+- @concepts/skill-regression-tax.md — K196 backlink
+
+- @sources/arxiv-2607.21936-historical-doc-rag-restoration.md — K196 ARI/RAG named-entity restore (pair with Transkribus; no pedigree invention)
 
 - @entities/tools/wikitree-dynamic-tree.md — K190 Extract
 
 - @entities/tools/genea-app.md — K190
 - @sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md — K177 LLM-NAS HTR Watch (contrast Transkribus)
 - @sources/arxiv-2607.15715-behavioral-controllability-agentic-ie.md — K177 process-trace IE eval
+- @sources/arxiv-2607.21936-historical-doc-rag-restoration.md — K196 ARI/RAG named-entity restore (pair with Transkribus; no pedigree invention)
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy concept
 - @concepts/italian-citizenship-pathways-document-pipelines.md — K183 citizenship doc stages after lineage proven

@@ -42,13 +42,16 @@ related:
   - concepts/cemini-repository-topology.md
   - sources/eval-revenue-opportunity-url-evaluation-2026-07-18.md
   - sources/eval-repository-revenue-opportunity-analysis-2026-07-19.md
+  - concepts/polymarket-bot-architecture.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-07-19
+updated: 2026-07-28
 ---
 
 ## Relations
+
+- @concepts/polymarket-bot-architecture.md — K198 backlink
 
 - @concepts/ip-sale-readiness.md — license posture is a prerequisite for any IP-sale or partial-license transaction
 - @sources/more-links-5-2-arch-eval.md — K27 surfaced AGPL-3.0 Docker-defeat pattern + GPL-3.0 LLM-agent derivative-work risk + missing-license default-copyright pattern (three license-compliance failure modes)
