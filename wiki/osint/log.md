@@ -8939,3 +8939,10 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Source:** `x-lamgary-harvey-scaling-document-processing-2026-07-27.md` (sha256 `eb5d0205…`)
 - **Concept:** `document-processing-pipeline-scale-patterns.md` — Atto/CCC steals (Job Framework, UDF, Arrow IPC, OCR fallbacks)
 - **Brief:** Atto + CCC; no prod scp
+
+## [2026-07-28] ingest | K200 — Outlier Weekly GuruWatcher methodology
+
+- **Source:** `substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md` (sha256 `44b566fa…`)
+- **Concept + entity:** claim ledger / most-recent-wins / sustain / verbatim guards
+- **Brief:** `../GuruWatcher/briefs/2026-07-28_k200-outlier-weekly-methodology-canon.md`
+- **Note:** RSS `cross_wiki: gambling` overridden — GuruWatcher #2, not PM wagering

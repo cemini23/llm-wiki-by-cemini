@@ -12,7 +12,13 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **982 canonical stubs** (K199 + K198 + …)
+Total: **985 canonical stubs** (K200 + K199 + …)
+
+### k200-ingest (3)
+
+- [Outlier Weekly GuruWatcher Discord](sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md) — claim ledger methodology. — `rss` [+k200]
+- [GuruWatcher claim ledger (concept)](concepts/guruwatcher-newsletter-claim-ledger.md) — most-recent-wins + verbatim guards. — concept [+k200]
+- [GuruWatcher (tool)](entities/tools/guruwatcher.md) — private alert-only Discord bot. — entity [+k200]
 
 ### k199-ingest (2)
 

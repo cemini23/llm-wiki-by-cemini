@@ -7,6 +7,8 @@ related:
   - concepts/macro-charts-regime-signals.md
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-capital-flows-2026-07-27-fomc-ai-flows.md
+  - sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md
+  - concepts/guruwatcher-newsletter-claim-ledger.md
 maturity: draft
 read_status: read
 created: 2026-07-28
@@ -15,6 +17,10 @@ clusters: [k198-ingest]
 ---
 
 ## Relations
+
+- @concepts/guruwatcher-newsletter-claim-ledger.md — K200
+
+- @sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md — K200 how levels arm
 
 - @sources/substack-rss-capital-flows-2026-07-27-fomc-ai-flows.md — K198 backlink
 

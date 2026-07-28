@@ -45,12 +45,21 @@ related:
   - sources/substack-rss-capital-flows-2026-07-27-fomc-ai-flows.md
   - sources/substack-rss-wublock-2026-07-28-mm-token-loans.md
   - concepts/option-iv-concavity-parameterization.md
+  - sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md
+  - concepts/guruwatcher-newsletter-claim-ledger.md
+  - entities/tools/guruwatcher.md
 maturity: draft
 created: 2026-05-31
 updated: 2026-07-28
 ---
 
 ## Relations
+
+- @entities/tools/guruwatcher.md — K200
+
+- @concepts/guruwatcher-newsletter-claim-ledger.md — K200
+
+- @sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md — K200 GuruWatcher methodology
 
 - @concepts/option-iv-concavity-parameterization.md — K198 IV concavity
 

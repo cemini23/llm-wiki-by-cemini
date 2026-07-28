@@ -39,12 +39,21 @@ related:
   - sources/eval-revenue-stack-url-evaluation-2026-07-28.md
   - entities/tools/clickhouse.md
   - sources/eval-revenue-opportunity-url-analysis-2026-07-27.md
+  - sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md
+  - concepts/guruwatcher-newsletter-claim-ledger.md
+  - entities/tools/guruwatcher.md
 maturity: core
 created: 2026-06-17
 updated: 2026-07-28
 ---
 
 ## Relations
+
+- @entities/tools/guruwatcher.md — K200
+
+- @concepts/guruwatcher-newsletter-claim-ledger.md — K200
+
+- @sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md — K200 public GuruWatcher post
 
 - @sources/eval-revenue-opportunity-url-analysis-2026-07-27.md — K198 graph fix
 
