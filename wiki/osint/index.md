@@ -12,7 +12,12 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **985 canonical stubs** (K200 + K199 + …)
+Total: **987 canonical stubs** (K201 + K200 + …)
+
+### k201-ingest (2)
+
+- [SecEng Weekly AWS keys public repo](sources/substack-rss-seceng-weekly-2026-07-28-aws-keys-public-repo.md) — revoke-first IR → cyber brief. — `rss` [+k201]
+- [Credential leak revoke-first](concepts/credential-leak-revoke-first-response.md) — REVOKE→ASSESS→… sequence. — concept [+k201]
 
 ### k200-ingest (3)
 

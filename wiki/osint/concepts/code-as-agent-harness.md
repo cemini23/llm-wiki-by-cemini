@@ -55,6 +55,8 @@ related:
   - sources/arxiv-2607.23333-swap-regret-attention.md
   - concepts/document-processing-pipeline-scale-patterns.md
   - sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md
+  - concepts/credential-leak-revoke-first-response.md
+  - sources/substack-rss-seceng-weekly-2026-07-28-aws-keys-public-repo.md
 
   - sources/newsletter-rss-latent-space-2026-07-21-ainews.md
   - sources/arxiv-2607.19267-authority-framing-laundered-code.md
@@ -81,6 +83,10 @@ updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/substack-rss-seceng-weekly-2026-07-28-aws-keys-public-repo.md — K201
+
+- @concepts/credential-leak-revoke-first-response.md — K201
 
 - @sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md — K199
 

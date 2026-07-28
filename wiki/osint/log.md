@@ -8946,3 +8946,9 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Concept + entity:** claim ledger / most-recent-wins / sustain / verbatim guards
 - **Brief:** `../GuruWatcher/briefs/2026-07-28_k200-outlier-weekly-methodology-canon.md`
 - **Note:** RSS `cross_wiki: gambling` overridden — GuruWatcher #2, not PM wagering
+
+## [2026-07-28] ingest | K201 — SecEng Weekly AWS keys public-repo IR
+
+- **Source:** `substack-rss-seceng-weekly-2026-07-28-aws-keys-public-repo.md` (sha256 `a496948f…`)
+- **Concept:** `credential-leak-revoke-first-response.md`
+- **Cross-wiki:** cybersecurity-wiki brief (primary); TipDrop/CCC light hygiene notes

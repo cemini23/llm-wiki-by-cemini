@@ -6,10 +6,12 @@ keywords: [prompt injection, instructions vs data, Schneier, agent security]
 clusters: [k162-ingest, cybersec]
 related:
   - concepts/generator-verifier-inference-time-steering.md
+  - sources/substack-rss-seceng-weekly-2026-07-28-aws-keys-public-repo.md
+  - concepts/credential-leak-revoke-first-response.md
 maturity: validated
 read_status: deep-read
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-07-28
 ---
 
 ## Raw Concept
@@ -27,5 +29,9 @@ Core claim: LLMs cannot separate instructions from data — web pages, issues, e
 **Not a David ComfyUI adoption** — security process brief for cybersec + CCC.
 
 ## Relations
+
+- @concepts/credential-leak-revoke-first-response.md — K201
+
+- @sources/substack-rss-seceng-weekly-2026-07-28-aws-keys-public-repo.md — K201 sibling SecEng
 
 - @concepts/generator-verifier-inference-time-steering.md — process verification adjacency
