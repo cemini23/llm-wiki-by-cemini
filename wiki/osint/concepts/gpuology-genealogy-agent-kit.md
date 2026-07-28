@@ -72,12 +72,18 @@ related:
   - sources/arxiv-2607.24542-ancient-sentence-embeddings.md
   - sources/arxiv-2607.24475-historical-doc-kg-query.md
   - entities/tools/aisuite.md
+  - sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md
+  - concepts/document-processing-pipeline-scale-patterns.md
 maturity: draft
 created: 2026-07-20
 updated: 2026-07-28
 ---
 
 ## Relations
+
+- @concepts/document-processing-pipeline-scale-patterns.md — K199
+
+- @sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md — K199
 
 - @entities/tools/aisuite.md — K198 backlink
 

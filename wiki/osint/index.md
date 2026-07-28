@@ -12,7 +12,12 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **980 canonical stubs** (K198 + K197 + …) (K197 + K196 + K195 + …)
+Total: **982 canonical stubs** (K199 + K198 + …)
+
+### k199-ingest (2)
+
+- [Harvey scaling document processing (X)](sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md) — Job Framework / UDF / Arrow IPC → **Atto**. — `x-article` [+k199]
+- [Doc-processing scale patterns](concepts/document-processing-pipeline-scale-patterns.md) — stage split + durable jobs for vault dumps. — concept [+k199]
 
 ### k198-ingest (24)
 

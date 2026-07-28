@@ -53,6 +53,8 @@ related:
   - sources/newsletter-rss-latent-space-2026-07-28-kimi-k3.md
   - sources/arxiv-2607.24300-self-authored-verification.md
   - sources/arxiv-2607.23333-swap-regret-attention.md
+  - concepts/document-processing-pipeline-scale-patterns.md
+  - sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md
 
   - sources/newsletter-rss-latent-space-2026-07-21-ainews.md
   - sources/arxiv-2607.19267-authority-framing-laundered-code.md
@@ -79,6 +81,10 @@ updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md — K199
+
+- @concepts/document-processing-pipeline-scale-patterns.md — K199 Job Framework/backpressure
 
 - @sources/arxiv-2607.23333-swap-regret-attention.md — K198 backlink
 

@@ -11,12 +11,18 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
   - entities/tools/book-to-skill.md
   - entities/tools/geolibre.md
+  - sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md
+  - concepts/document-processing-pipeline-scale-patterns.md
 maturity: draft
 created: 2026-07-28
 updated: 2026-07-28
 ---
 
 ## Relations
+
+- @concepts/document-processing-pipeline-scale-patterns.md — K199
+
+- @sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md — K199 Harvey scale
 
 - @sources/arxiv-2607.24475-historical-doc-kg-query.md
 - @sources/arxiv-2607.24542-ancient-sentence-embeddings.md

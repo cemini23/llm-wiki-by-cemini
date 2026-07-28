@@ -62,12 +62,18 @@ related:
   - concepts/historical-document-kg-query-inference.md
   - sources/arxiv-2607.24542-ancient-sentence-embeddings.md
   - sources/arxiv-2607.24475-historical-doc-kg-query.md
+  - concepts/document-processing-pipeline-scale-patterns.md
+  - sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md
 maturity: draft
 created: 2026-07-09
 updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md — K199
+
+- @concepts/document-processing-pipeline-scale-patterns.md — K199
 
 - @sources/arxiv-2607.24475-historical-doc-kg-query.md — K198 backlink
 

@@ -8932,3 +8932,10 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **TipDrop:** WuBlock MM loans OSINT
 - **CCC:** Kimi K3 + APS-RAG / governance toolkit
 - **SEO:** SparkToro brand affinity (cross-wiki brief)
+
+## [2026-07-28] ingest | K199 — Harvey scaling document processing (@lamgary X Article)
+
+- **Fetch:** opencli `twitter thread` + `twitter article` on https://x.com/lamgary/status/2081787028891394186
+- **Source:** `x-lamgary-harvey-scaling-document-processing-2026-07-27.md` (sha256 `eb5d0205…`)
+- **Concept:** `document-processing-pipeline-scale-patterns.md` — Atto/CCC steals (Job Framework, UDF, Arrow IPC, OCR fallbacks)
+- **Brief:** Atto + CCC; no prod scp

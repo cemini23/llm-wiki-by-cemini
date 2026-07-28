@@ -23,6 +23,10 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-28 — K199)
+
+- **K199 ingest (2026-07-28)** — @lamgary Harvey X Article on scaling document processing (26× docs). Steals: durable Job Framework, extract/embed/index split, UDF typed intermediates, Arrow IPC, OCR fallbacks. Brief → Atto (+ CCC). No Phase-0 adopt / no prod scp.
+
 ## Current state (2026-07-28 — K198)
 
 - **K198 ingest (2026-07-28)** — Revenue Stack eval (book-to-skill Integrate; AGT+GeoLibre+aisuite Extract; Mapbox/Fermion Watch) + swap-regret/self-verify/HTR-KG/option-IV papers + Macro Korea/WTI/FOMC + EH Dodd + Kimi K3. Phase-0 ~122MB. Briefs: Atto; GuruWatcher; poker; xsp+pm scp; TipDrop; CCC; seo.
