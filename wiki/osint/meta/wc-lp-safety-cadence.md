@@ -27,8 +27,8 @@ updated: 2026-05-31
 | Field | Value |
 |-------|-------|
 | **Cadence** | Weekly through 2026 FIFA World Cup window |
-| **Last run** | 2026-07-20 |
-| **Next due** | 2026-07-27 |
+| **Last run** | 2026-07-28 |
+| **Next due** | 2026-08-04 |
 | **Owner** | world-cup-bot operator |
 | **Prompt** | `world-cup-bot` repo `prompts/gemini-deep-research/03-team-lp-risk.md` |
 | **Hard checkpoint** | 2026-06-06 pre-friendlies — update `conviction.yaml` if verdicts change |

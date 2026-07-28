@@ -7,17 +7,19 @@ related:
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/eval-url-revenue-and-project-analysis-2026-07-20.md
+  - sources/eval-github-revenue-journalism-geo-2026-07-28.md
   - concepts/computational-genealogy-archival-automation.md
   - entities/tools/steve-morse-census-tools.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-20
+updated: 2026-07-28
 ---
 
 ## Relations
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy (K176)
 
 - @sources/eval-url-revenue-and-project-analysis-2026-07-20.md — K175 Extract
+- @sources/eval-github-revenue-journalism-geo-2026-07-28.md — K202 Extract reaffirm (FIND geo xref)
 - @concepts/computational-genealogy-archival-automation.md — US census staging module
 - @entities/tools/steve-morse-census-tools.md — address → ED browse; Census Reporter = schema/API patterns
 

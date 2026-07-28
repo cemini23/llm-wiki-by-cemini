@@ -4,6 +4,7 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher]
 keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
 related:
+  - sources/eval-github-revenue-browser-automation-2026-07-28.md
   - sources/eval-revenue-opportunity-analysis-2026-07-25.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
@@ -48,6 +49,8 @@ updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/eval-github-revenue-browser-automation-2026-07-28.md — K202 backlink
 
 - @entities/tools/guruwatcher.md — K200
 

@@ -4,6 +4,8 @@ type: concept
 tags: [concept, agent-harness, coding-agents, agentic-ai, survey-synthesis]
 keywords: [code-as-agent-harness, harness-interface, harness-mechanisms, multi-agent-coordination, verification, stateful-agents]
 related:
+  - sources/newsletter-rss-latent-space-2026-07-28-codex-chatgpt-work.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-28-inside-anthropic.md
   - entities/tools/outlines.md
   - entities/tools/gigatoken.md
   - sources/arxiv-code-as-agent-harness-survey-2605.18747.md
@@ -83,6 +85,9 @@ updated: 2026-07-28
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-07-28-codex-chatgpt-work.md — ChatGPT Work shared harness
+- @sources/newsletter-rss-pragmatic-engineer-2026-07-28-inside-anthropic.md — Managed Agents / verify-heavy
 
 - @sources/substack-rss-seceng-weekly-2026-07-28-aws-keys-public-repo.md — K201
 

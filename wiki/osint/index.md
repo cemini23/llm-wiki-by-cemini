@@ -32,6 +32,11 @@ Total: **987 canonical stubs** (K201 + K200 + …)
 
 ### k198-ingest (24)
 
+- [GitHub Revenue — Browser / Anti-Bot](sources/eval-github-revenue-browser-automation-2026-07-28.md) — puppeteer/FlareSolverr/SingleFile/undetected Integrate. — `docx` [+k202]
+- [GitHub Revenue — Journalism / Geo](sources/eval-github-revenue-journalism-geo-2026-07-28.md) — censusreporter + cardkit Extract. — `docx` [+k202]
+- [UI Repositories Revenue Plan](sources/eval-ui-repositories-revenue-plan-2026-07-28.md) — daisyui + heroicons Integrate. — `docx` [+k202]
+- [Latent Space Codex/ChatGPT Work](sources/newsletter-rss-latent-space-2026-07-28-codex-chatgpt-work.md) — shared harness · 10M users. — `rss` [+k202]
+- [Pragmatic Engineer Inside Anthropic](sources/newsletter-rss-pragmatic-engineer-2026-07-28-inside-anthropic.md) — Managed Agents · Bun Rust 11d. — `rss` [+k202]
 - [Revenue Stack URL Evaluation](sources/eval-revenue-stack-url-evaluation-2026-07-28.md) — book-to-skill Integrate + AGT/GeoLibre Extract. — `docx` [+k198]
 - [book-to-skill](entities/tools/book-to-skill.md) — Integrate MIT Atto. — entity [+k198]
 - [Agent Governance Toolkit](entities/tools/agent-governance-toolkit.md) — Extract MIT Microsoft. — entity [+k198]
@@ -639,6 +644,16 @@ Total: **987 canonical stubs** (K201 + K200 + …)
 - [serena](entities/tools/serena.md) — K146 Steal-from LSP retrieval. — entity [+k146]
 - [snyk studio-mcp](entities/tools/snyk-studio-mcp.md) — K146 Adopt CVE gate. — entity [+k146]
 - [hf-mcp-server](entities/tools/hf-mcp-server.md) — K146 Adopt HF hub MCP. — entity [+k146]
+- [puppeteer](entities/tools/puppeteer.md) — K202 Integrate (npm only). — entity [+k202]
+- [FlareSolverr](entities/tools/flaresolverr.md) — K202 Integrate MIT. — entity [+k202]
+- [SingleFile](entities/tools/singlefile.md) — K202 AGPL isolate CLI. — entity [+k202]
+- [undetected-chromedriver](entities/tools/undetected-chromedriver.md) — K202 GPL isolate. — entity [+k202]
+- [mkcert](entities/tools/mkcert.md) — K202 Extract local TLS. — entity [+k202]
+- [browserless](entities/tools/browserless.md) — K202 Extract SSPL risk. — entity [+k202]
+- [daisyUI](entities/tools/daisyui.md) — K202 Integrate npm-pack. — entity [+k202]
+- [heroicons](entities/tools/heroicons.md) — K202 Integrate. — entity [+k202]
+- [twbs/icons](entities/tools/twbs-icons.md) — K202 Extract SVG. — entity [+k202]
+- [CardKit](entities/tools/cardkit.md) — K202 Extract Discord cards. — entity [+k202]
 - [chrome-devtools-mcp](entities/tools/chrome-devtools-mcp.md) — K146 reaffirm Adopt. — entity update [+k146]
 - [marketingskills](entities/tools/marketingskills.md) — K146 marketing-loops steal refresh. — entity update [+k146]
 

@@ -4,6 +4,14 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - sources/eval-github-revenue-journalism-geo-2026-07-28.md
+  - sources/eval-ui-repositories-revenue-plan-2026-07-28.md
+  - sources/eval-github-revenue-browser-automation-2026-07-28.md
+  - entities/tools/singlefile.md
+  - entities/tools/puppeteer.md
+  - entities/tools/mkcert.md
+  - entities/tools/daisyui.md
+  - entities/tools/chrome-devtools-mcp.md
   - sources/eval-revenue-opportunity-analysis-2026-07-25.md
   - entities/tools/ego-lite.md
   - entities/tools/opencli.md
@@ -80,6 +88,15 @@ updated: 2026-07-28
 ---
 
 ## Relations
+
+- @entities/tools/chrome-devtools-mcp.md — K202 backlink
+- @entities/tools/daisyui.md — K202 backlink
+- @entities/tools/mkcert.md — K202 backlink
+- @entities/tools/puppeteer.md — K202 backlink
+- @entities/tools/singlefile.md — K202 backlink
+- @sources/eval-github-revenue-browser-automation-2026-07-28.md — K202 backlink
+- @sources/eval-ui-repositories-revenue-plan-2026-07-28.md — K202 backlink
+- @sources/eval-github-revenue-journalism-geo-2026-07-28.md — K202 backlink
 
 - @concepts/document-processing-pipeline-scale-patterns.md — K199
 

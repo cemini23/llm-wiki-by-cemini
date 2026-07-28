@@ -4,6 +4,20 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - entities/tools/cardkit.md
+  - entities/tools/twbs-icons.md
+  - entities/tools/browserless.md
+  - entities/tools/mkcert.md
+  - entities/tools/undetected-chromedriver.md
+  - entities/tools/singlefile.md
+  - sources/eval-github-revenue-browser-automation-2026-07-28.md
+  - sources/eval-github-revenue-journalism-geo-2026-07-28.md
+  - sources/eval-ui-repositories-revenue-plan-2026-07-28.md
+  - entities/tools/puppeteer.md
+  - entities/tools/flaresolverr.md
+  - entities/tools/daisyui.md
+  - entities/tools/heroicons.md
+  - entities/tools/chrome-devtools-mcp.md
   - sources/eval-revenue-opportunity-url-analysis-2026-07-27.md
   - sources/eval-revenue-opportunity-url-analysis-plan-2026-07-27.md
   - sources/eval-revenue-opportunity-analysis-2026-07-25.md
@@ -212,6 +226,22 @@ updated: 2026-07-28
 ---
 
 ## Relations
+
+- @entities/tools/singlefile.md — K202 backlink
+- @entities/tools/undetected-chromedriver.md — K202 backlink
+- @entities/tools/mkcert.md — K202 backlink
+- @entities/tools/browserless.md — K202 backlink
+- @entities/tools/twbs-icons.md — K202 backlink
+- @entities/tools/cardkit.md — K202 backlink
+
+- @sources/eval-github-revenue-browser-automation-2026-07-28.md — K202 browser/anti-bot
+- @sources/eval-github-revenue-journalism-geo-2026-07-28.md — K202 journalism/geo
+- @sources/eval-ui-repositories-revenue-plan-2026-07-28.md — K202 UI kits
+- @entities/tools/puppeteer.md — K202
+- @entities/tools/flaresolverr.md — K202
+- @entities/tools/daisyui.md — K202
+- @entities/tools/heroicons.md — K202
+- @entities/tools/chrome-devtools-mcp.md — K202 refresh
 
 - @sources/newsletter-rss-latent-space-2026-07-28-kimi-k3.md — K198 backlink
 

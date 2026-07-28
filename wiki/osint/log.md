@@ -3,6 +3,18 @@
 updated: 2026-07-27
 ---
 
+## [2026-07-28] ingest | K202 — browser anti-bot + UI kits + Anthropic/OpenAI harness RSS
+
+- **Inbox (5):** GitHub Revenue Opportunity Analysis.docx (browser) · Analysis (1).docx (journalism/geo) · UI Repositories Revenue Evaluation Plan.docx · Latent Space Codex/ChatGPT Work · PE Inside Anthropic
+- **License spot-check:** `.local/reports/license-spot-check-2026-07-28-k202.txt` — SingleFile AGPL; undetected GPL; browserless NOASSERTION/SSPL; daisyui npm-only (git ~12GB)
+- **Integrate:** puppeteer · chrome-devtools-mcp · SingleFile (CLI isolate) · FlareSolverr · undetected (server isolate) · daisyui · heroicons
+- **Extract:** mkcert · browserless patterns · censusreporter · cardkit · twbs/icons
+- **Pass aggregated** — no stub farm; beeswithmachineguns stays NO-GO Context
+- **Phase-0:** `scripts/adopt_k202_phase0.sh` ~39MB → `.local/adopts/{flaresolverr,heroicons,undetected-chromedriver,cardkit,chrome-devtools-mcp,daisyui-npm}`
+- **Briefs:** Atto; GuruWatcher; TipDrop kit; CCC; poker no-path; cybersecurity-wiki
+- **Cross-wiki:** CCC source stubs for both newsletters
+- **Prod scp:** none (no xsp-/pm- briefs)
+
 ## [2026-07-27] routing | Atto #1 · GuruWatcher #2 (everything else behind)
 
 - **Priority stack:** Atto Priority #1 · GuruWatcher Priority #2 · poker/CeminiDFS/XSP/family-tree/TipDrop/PM behind both
