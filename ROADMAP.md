@@ -23,6 +23,10 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-28 — WC LP retired)
+
+- **WC LP safety cadence RETIRED** — World Cup over; world-cup-bot dropped. LaunchAgent unloaded; session ritual no longer prompts.
+
 ## Current state (2026-07-28 — K202)
 
 - **K202 ingest (2026-07-28)** — 3 revenue evals (browser/anti-bot · journalism/geo · UI kits) + Latent Space ChatGPT Work + PE Inside Anthropic. **Integrate:** puppeteer (npm), chrome-devtools-mcp refresh, SingleFile AGPL isolate, FlareSolverr, undetected GPL isolate, daisyui npm-pack, heroicons. **Extract:** mkcert, browserless patterns, censusreporter reaffirm, cardkit, twbs/icons. Phase-0 ~39MB. Briefs: Atto; GuruWatcher; TipDrop; CCC; poker no-path; cyber. **No prod scp** (no xsp/pm).

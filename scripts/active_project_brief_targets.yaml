@@ -4,13 +4,16 @@
 # maps to an active project below. Default = wiki-only unless a row says scp.
 #
 # Sync with ROADMAP.md "Active workstreams" and scripts/daily_research_config.yaml
-# Eval: CCC prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md (v10.3 Atto)
+# Eval: CCC prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md (v10.4)
+#
+# Operator priority (2026-07-27): Atto = #1 · GuruWatcher = #2 · everything else behind.
 
 default_posture: wiki-only
 
-# Co-primary — morning ingest priority. Atto is operator Priority #1 product
-# (2026-07-21); other co_primary rows stay active. Genealogy productizable →
-# atto briefs; private Barone digs → family-tree only.
+# Priority #1 / #2 — morning ingest first. Genealogy productizable → atto briefs
+# (`../atto/briefs`). TipDrop / David briefs → tipdrop-workspace-kit
+# (`~/Desktop/projects/tipdrop-workspace-kit/briefs`; Projects/projects symlink).
+# Private Barone digs → family-tree only. Newsletter/price-watch Discord → guruwatcher.
 projects:
   atto:
     label: "Atto — Italian civil-record genealogy agent kit (public product)"
@@ -33,13 +36,34 @@ projects:
       - "Generic genealogy affiliate content with no reproducible archive or product module gap"
       - "Godot/RTS/game-dev content unless castle-sim explicitly reopened"
 
+  guruwatcher:
+    label: "GuruWatcher — alert-only newsletter parameter watches → Discord"
+    code_root: "../GuruWatcher"
+    wiki: null
+    brief_dir: "../GuruWatcher/briefs"
+    scp_target: null
+    co_primary: true
+    priority_rank: 2
+    primary_goal: "Arm Macro Charts (etc.) price/level watches, reconcile most-recent-wins claims, Discord alert-only on cemini-prod (no orders)"
+    steal_from:
+      - "Newsletter / Macro Charts claim extract → armed watches (fluid mind, most-recent-wins)"
+      - "Discord alert-only price/level bots (no order placement)"
+      - "Unusual Whales OHLC + yfinance fallback polling; VIX/DXY/WTI/index levels"
+      - "Claim ledger reconcile vs prod watches.json; inbox → ingest-issue hooks"
+      - "systemd timer / prod deploy packs for alert monitors"
+    skip_brief_if:
+      - "Order-routing / live execution bots (GuruWatcher is alert-only)"
+      - "Generic Discord SaaS onboarding without price-watch or newsletter-claim hook (→ TipDrop)"
+      - "Genealogy / Atto product content"
+
   poker-arena:
     label: "dev.fun Poker Arena (cemini_decide)"
     code_root: "agents/devfun-poker-arena"
     wiki: "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
     brief_dir: "agents/devfun-poker-arena/briefs"
     scp_target: null
-    co_primary: true
+    co_primary: false
+    priority_rank: 10
     primary_goal: "dev.fun Poker Agent Challenge — researcher track sandbox LB (HU), Jun 21 beta"
     steal_from:
       - "Researcher Round HU sandbox — trajectory, TrueSkill, nine-axis eval (2606.13815)"
@@ -58,7 +82,8 @@ projects:
     wiki: "@gambling-wiki/concepts/diy-nfl-dfs-model-architecture.md"
     brief_dir: "../projects/CeminiDFS/briefs"
     scp_target: null
-    co_primary: true
+    co_primary: false
+    priority_rank: 11
     steal_from:
       - "nflverse PBP → volume/usage/stat projection layers"
       - "Vegas implied team totals, weather adjustments, injury workflow"
@@ -76,7 +101,8 @@ projects:
     brief_dir: "briefs"
     scp_target: "cemini-prod:/opt/cemini/briefs/"
     brief_name_prefix: "xsp-"
-    co_primary: true
+    co_primary: false
+    priority_rank: 12
     steal_from:
       - "XSP / Mini-SPX options flow, LEAPS inventory, put-hedge rolls"
       - "Index vol regime gates (GREEN playbook_snapshot)"
@@ -91,7 +117,8 @@ projects:
     wiki: "@osint-wiki/concepts/computational-genealogy-archival-automation.md"
     brief_dir: null
     scp_target: null
-    co_primary: true
+    co_primary: false
+    priority_rank: 13
     primary_goal: "Archival depth 1500s–present; jure sanguinis document chains; brick-wall breakthroughs (private — no prod scp; no Atto fixtures)"
     steal_from:
       - "Private town sprints, pedigree digs, living-person vitals (Desktop/family only)"
@@ -132,10 +159,28 @@ projects:
     skip_brief_if:
       - "Institutional CeminiSuite Lane A executor unless WC/PM module explicit"
 
+  tipdrop:
+    label: "TipDrop workspace kit — Discord/scanner operator briefs"
+    code_root: "~/Desktop/projects/tipdrop-workspace-kit"
+    wiki: null
+    # Canon kit = Desktop (git). `../projects/tipdrop-workspace-kit` is a symlink → Desktop.
+    brief_dir: "../projects/tipdrop-workspace-kit/briefs"
+    scp_target: null
+    co_primary: false
+    primary_goal: "Operator-actionable TipDrop / David / Discord briefs citing @osint-wiki — never leave TipDrop briefs in OSINT briefs/"
+    steal_from:
+      - "Discord ingest, scanner ops, Unusual Whales, Form4, alert hygiene"
+      - "OpenCLI / t3code / video OSINT tooling for TipDrop signal chase"
+      - "David persona adoption briefs (also via david-persona-image-gen mirror)"
+    skip_brief_if:
+      - "Atto genealogy product (→ atto briefs)"
+      - "XSP/PM prod monitors (→ briefs/xsp-* or pm-* then cemini-prod)"
+
   david-persona-image-gen:
     label: "David persona pipeline — image/video/audio gen (TipDrop shared kit)"
     code_root: "../projects/Image gen"
     wiki: "@image-gen-wiki/concepts/david-adoption-brief-routing.md"
+    # Same brief_dir as tipdrop — Desktop kit via Projects/projects symlink
     brief_dir: "../projects/tipdrop-workspace-kit/briefs"
     brief_name_suffix: "-david"
     scp_target: null
@@ -157,4 +202,5 @@ legacy_deprioritized:
     - "Conductor harness attribution / Orch-RM BoN"
     - "Generic portfolio optimization theory without PM/XSP/poker hook"
     - "castle-sim (Godot RTS vertical slice) — replaced by family-tree focus Jul 2026"
+    - "world-cup-bot / WC LP safety cadence — tournament over; dropped 2026-07-28"
   action: "wiki + concept page only; brief only if user asks or ROADMAP row reopens"

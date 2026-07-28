@@ -57,6 +57,6 @@ Mechanical check: `python3 scripts/ingest_session_gate.py` (add `--strict` to bl
 |-------|--------|
 | Daily digest | `check_daily_research_digest_due.sh` → `run_daily_research_digest.sh` |
 | Wiki gap Tier 1 | `check_wiki_gap_detect_due.sh` → `run_wiki_gap_detect.sh` |
-| WC LP safety DR | `check_wc_lp_safety_due.sh` → `run_wc_lp_safety_reminder.sh` |
+| WC LP safety DR | **RETIRED 2026-07-28** — do not prompt (`check_wc_lp_safety_due.sh` always exit 1) |
 
 LaunchAgents: `bash scripts/install_workflow_launchagents.sh`

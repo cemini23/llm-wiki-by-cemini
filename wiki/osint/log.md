@@ -3,6 +3,12 @@
 updated: 2026-07-27
 ---
 
+## [2026-07-28] ops | retire WC LP safety cadence (world-cup-bot dropped)
+
+- `wiki/meta/wc-lp-safety-cadence.md` → **RETIRED**; check script always not-due; reminder no-op
+- Unloaded `com.cemini.wc-lp-safety-reminder`; reinstall scripts skip it
+- `legacy_deprioritized` += world-cup-bot / WC LP
+
 ## [2026-07-28] ingest | K202 — browser anti-bot + UI kits + Anthropic/OpenAI harness RSS
 
 - **Inbox (5):** GitHub Revenue Opportunity Analysis.docx (browser) · Analysis (1).docx (journalism/geo) · UI Repositories Revenue Evaluation Plan.docx · Latent Space Codex/ChatGPT Work · PE Inside Anthropic

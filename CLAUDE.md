@@ -353,13 +353,9 @@ If due: prompt to run `bash scripts/run_equity_signal_backtest.sh` (needs `ssh c
 
 If due: prompt to run `bash scripts/run_cross_venue_backtest.sh`. See `wiki/meta/cross-venue-backtest-cadence.md`.
 
-### 8. WC LP safety DR cadence (weekly, Cup window)
+### 8. WC LP safety DR cadence — **RETIRED 2026-07-28**
 
-```bash
-./scripts/check_wc_lp_safety_due.sh
-```
-
-If exit code **0** (due): prompt to run `bash scripts/run_wc_lp_safety_reminder.sh` and re-run Gemini `03-team-lp-risk.md` before changing `conviction.yaml`. See `wiki/meta/wc-lp-safety-cadence.md`.
+World Cup window over; world-cup-bot dropped. `check_wc_lp_safety_due.sh` always exits 1. Do **not** prompt. See `wiki/meta/wc-lp-safety-cadence.md`.
 
 ### 9. Wiki gap detect Tier 1 cadence (weekly)
 

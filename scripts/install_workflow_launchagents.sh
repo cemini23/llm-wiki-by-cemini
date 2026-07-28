@@ -5,9 +5,9 @@
 #   - inbox_notify (WatchPaths on research to be indexed/)
 #   - verify_wiki_sync hourly backstop
 #   - daily_research_digest @ 08:00 local
-#   - wc_lp_safety weekly reminder
 #   - wiki_gap_detect weekly report
 #   - xsp_ops_loop hourly (Macro Charts → brain → queue → packets)
+#   (wc_lp_safety weekly — RETIRED 2026-07-28; do not reinstall)
 #
 # Also runs setup_obsidian_vault.sh (local .obsidian chrome).
 #

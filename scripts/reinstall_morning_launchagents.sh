@@ -243,15 +243,23 @@ for entry in "${WIKI_REPOS[@]}"; do
 done
 
 echo "=== LaunchAgents (reload) ==="
+# OSINT first @ 08:00. Sibling digests stagger +3min each (avoid arXiv 429 herd).
+# Federation summary after last sibling (~08:28) so hub table sees today's sweeps.
 write_calendar_plist com.cemini.daily-research-digest "$BIN_DIR/cemini-daily-research-digest" 8 0 cemini-daily-digest
-write_calendar_plist com.cemini.federation-morning-summary "$BIN_DIR/cemini-federation-morning-summary" 8 5 cemini-federation-summary
 
+fed_minute=10
 for entry in "${WIKI_REPOS[@]}"; do
   id="${entry%%|*}"
   [[ -f "$PATHS_DIR/${id}.path" ]] || continue
   write_calendar_plist "com.cemini.daily-research-digest.${id}" \
-    "$BIN_DIR/cemini-daily-research-digest-${id}" 8 15 cemini-daily-digest
+    "$BIN_DIR/cemini-daily-research-digest-${id}" 8 "$fed_minute" cemini-daily-digest
+  echo "  schedule ${id} → 08:$(printf '%02d' "$fed_minute")"
+  fed_minute=$((fed_minute + 3))
 done
+
+write_calendar_plist com.cemini.federation-morning-summary \
+  "$BIN_DIR/cemini-federation-morning-summary" 8 "$fed_minute" cemini-federation-summary
+echo "  schedule federation-morning-summary → 08:$(printf '%02d' "$fed_minute")"
 
 # Inbox watch (unchanged pattern — script on Desktop is OK for WatchPaths trigger? use wrapper)
 INBOX="$ROOT/research to be indexed"
@@ -299,11 +307,28 @@ chmod 755 "$BIN_DIR/cemini-inbox-notify"
 bootstrap_agent com.cemini.inbox-notify
 echo "  com.cemini.inbox-notify.plist"
 
-write_interval_plist com.cemini.wiki-sync-verify "$BIN_DIR/cemini-wiki-sync-verify" 3600 cemini-wiki-sync
+# wiki-sync-verify targeted cemini-librarian (decommissioned 2026-06-14) — keep unloaded.
+if launchctl print "gui/$(id -u)/com.cemini.wiki-sync-verify" &>/dev/null; then
+  launchctl bootout "gui/$(id -u)/com.cemini.wiki-sync-verify" 2>/dev/null || true
+fi
+if [[ -f "$AGENT_DIR/com.cemini.wiki-sync-verify.plist" ]]; then
+  mv -f "$AGENT_DIR/com.cemini.wiki-sync-verify.plist" \
+    "$AGENT_DIR/com.cemini.wiki-sync-verify.plist.disabled"
+  echo "  disabled com.cemini.wiki-sync-verify (librarian offline)"
+fi
+
+# WC LP safety — RETIRED 2026-07-28 (World Cup over / world-cup-bot dropped)
+if launchctl print "gui/$(id -u)/com.cemini.wc-lp-safety-reminder" &>/dev/null; then
+  launchctl bootout "gui/$(id -u)/com.cemini.wc-lp-safety-reminder" 2>/dev/null || true
+fi
+if [[ -f "$AGENT_DIR/com.cemini.wc-lp-safety-reminder.plist" ]]; then
+  mv -f "$AGENT_DIR/com.cemini.wc-lp-safety-reminder.plist" \
+    "$AGENT_DIR/com.cemini.wc-lp-safety-reminder.plist.disabled"
+  echo "  disabled com.cemini.wc-lp-safety-reminder (WC LP cadence retired)"
+fi
 
 # Weekly agents still call scripts via stdin wrappers
-for pair in "com.cemini.wc-lp-safety-reminder:run_wc_lp_safety_reminder.sh" \
-            "com.cemini.wiki-gap-detect:run_wiki_gap_detect.sh"; do
+for pair in "com.cemini.wiki-gap-detect:run_wiki_gap_detect.sh"; do
   label="${pair%%:*}"
   script="${pair##*:}"
   bin="$BIN_DIR/${label##com.cemini.}"
