@@ -5,6 +5,7 @@ tags: [source, triage, reject, arxiv]
 keywords: [arxiv, triage, reject, digest, flow-field, mis-route, drone, continuum-robot, medical]
 related:
   - sources/inbox-arxiv-reject-batch-2026-07-20.md
+  - sources/inbox-arxiv-reject-batch-2026-07-28.md
   - concepts/flow-field-pathfinding.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
@@ -12,7 +13,7 @@ read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-28
 ---
 
 ## Raw Concept

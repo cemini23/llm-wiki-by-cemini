@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-07-28] ingest | 1 arXiv reject (lockstep → neuromorphic SIMD) + empty 07-23…27
+
+- Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-07-28.md (reject); archived; inbox cleared
+- 2607.22790 sparsity tax / event-driven SIMD–SIMT neuromorphic cores — hardware “lockstep SIMD” ≠ RTS lockstep
+- Config: tighten `lockstep-deterministic` arxiv_query (drop bare game/networking; require multiplayer/RTS/netcode; ANDNOT SIMD/neuromorphic/GPU)
+- Phase-0 / local adopt / briefs: none (no poker/David/prod/atto/castle-sim)
+- Sweeps: @sweeps/2026-07-23-daily.md … @sweeps/2026-07-28-daily.md (23–27 empty inbox)
+
+---
+
 ## [2026-07-22] ingest | 2 arXiv rejects (flow-field false positives) + empty 07-21
 
 - Inbox: 2 arXiv PDFs → @sources/inbox-arxiv-reject-batch-2026-07-22.md (both reject); archived; inbox cleared
