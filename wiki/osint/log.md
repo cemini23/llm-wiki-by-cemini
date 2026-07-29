@@ -3,6 +3,14 @@
 updated: 2026-07-27
 ---
 
+## [2026-07-28] research | K201 Atto — Circ. 43347 official + Ord. 147 quesito + foreign-title packs
+
+- Deepened SS.UU. 24045 / Ord. 147 operational layer for Atto (no code; K200 branch untouched)
+- Archived official Circ. **43347** PDF (Wayback); **no superseding circular** post-24045 → keep `admin_halt`
+- Exact Ord. **147** Art. 267 quesito (9 TEU / 20 TFEU vs 3-bis *preclusione originaria*); CJEU docket # pending
+- Country checklists US/BR/AR/VE/CA/AU for `DOC_FOREIGN_IUS_SOLI_TITLE`
+- Pack: `.local/research/italian-cassazione-24045-2026/` · wiki lock bump · Atto brief `2026-07-28_k201-post-24045-research-pack.md`
+
 ## [2026-07-28] ops | retire WC LP safety cadence (world-cup-bot dropped)
 
 - `wiki/meta/wc-lp-safety-cadence.md` → **RETIRED**; check script always not-due; reminder no-op

@@ -1,8 +1,8 @@
 ---
 title: Italian citizenship primary-law lock — Atto soft-flag posture
 type: concept
-tags: [concept, genealogy, citizenship, atto, k187, k200, validated]
-keywords: [primary law, soft-flag, 13818, 63/2026, 147/2026, 24045/2026, Law 74, MAECI 2029, Minor Issue, Sezioni Unite]
+tags: [concept, genealogy, citizenship, atto, k187, k200, k201, validated]
+keywords: [primary law, soft-flag, 13818, 63/2026, 147/2026, 24045/2026, Law 74, MAECI 2029, Minor Issue, Sezioni Unite, Circ 43347, CJEU]
 related:
   - sources/italian-citizenship-primary-law-lock-2026-07-22.md
   - sources/interno-circolari-law74-2026-07-22.md
@@ -72,12 +72,17 @@ r/juresanguinis megathread (26–27 Jul 2026) + ICA / ItalyGet / IDCA / Bersani 
 
 1. ~~Mantova/Campobasso Cost. deposit~~ → **Ord. 147/2026** (CJEU track).
 2. ~~Sezioni Unite written decision~~ → **24045/2026**.
-3. Interior/MAE circular superseding **43347**.
-4. CJEU judgment on Ord. 147.
+3. Interior/MAE circular superseding **43347** — official §1 still live as of 2026-07-28 (Wayback PDF archived; no rewrite found).
+4. CJEU case number + judgment on Ord. 147 (exact quesito: Arts. 9 TEU / 20 TFEU vs Art. 3-bis *preclusione originaria*).
 5. MAECI postal address for central adult JS (post-2028).
 6. Per-consulate annual cap figures 2026–2028.
+
+### K201 research deepen (2026-07-28 evening)
+
+Operational pack (not a doctrine re-open): official Circ. 43347 text; Ord. 147 exact Art. 267 quesito; US/BR/AR/VE/CA/AU foreign-*ius-soli* title checklists for Atto `DOC_FOREIGN_IUS_SOLI_TITLE`. Paths under `.local/research/italian-cassazione-24045-2026/` (`README.md`, `CIRCOLARE-43347-OFFICIAL-NOTES.md`, `ORD-147-CJEU-QUESITO.md`, `FOREIGN-IUS-SOLI-TITLE-CHECKLISTS.md`). Atto brief: `atto/briefs/2026-07-28_k201-post-24045-research-pack.md`.
 
 ## Snippets
 
 - Atto K200 brief: `atto/briefs/2026-07-28_k200-ssuu-24045-ord147-lock.md`
+- Atto K201 research brief: `atto/briefs/2026-07-28_k201-post-24045-research-pack.md`
 - Local PDF pack: OSINT `.local/research/italian-cassazione-24045-2026/`
