@@ -79,7 +79,8 @@ r/juresanguinis megathread (26–27 Jul 2026) + ICA / ItalyGet / IDCA / Bersani 
 
 ### K201 research deepen (2026-07-28 evening)
 
-Operational pack (not a doctrine re-open): official Circ. 43347 text; Ord. 147 exact Art. 267 quesito; US/BR/AR/VE/CA/AU foreign-*ius-soli* title checklists for Atto `DOC_FOREIGN_IUS_SOLI_TITLE`. Paths under `.local/research/italian-cassazione-24045-2026/` (`README.md`, `CIRCOLARE-43347-OFFICIAL-NOTES.md`, `ORD-147-CJEU-QUESITO.md`, `FOREIGN-IUS-SOLI-TITLE-CHECKLISTS.md`). Atto brief: `atto/briefs/2026-07-28_k201-post-24045-research-pack.md`.
+Operational pack (not a doctrine re-open): official Circ. 43347 text; Ord. 147 exact Art. 267 quesito; US/BR/AR/VE/CA/AU/FR foreign-*ius-soli* title checklists; overruled Sez. I chain (**20122/20129** interlocutory PDFs) + MAE Circ. 9/2001; edge-case triage. Paths under `.local/research/italian-cassazione-24045-2026/` (`README.md`, `CIRCOLARE-43347-OFFICIAL-NOTES.md`, `ORD-147-CJEU-QUESITO.md`, `FOREIGN-IUS-SOLI-TITLE-CHECKLISTS.md`, `OVERRULED-CHAIN.md`, `EDGE-CASES.md`). Atto brief: `atto/briefs/2026-07-28_k201-post-24045-research-pack.md`.
+
 
 ## Snippets
 
