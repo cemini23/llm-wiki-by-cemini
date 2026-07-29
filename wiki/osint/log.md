@@ -3,6 +3,12 @@
 updated: 2026-07-29
 ---
 
+## [2026-07-29] ops | K209 — full-ingest triage (inbox empty)
+
+- Only inbox item: Moontower Christian pagan — **LIKELY** exact sha `fd8c0ee8…` = K206 source already on egress
+- Removed local re-drop; no new pages / no Phase-0 / no briefs
+- Prior waves complete: K206 (wave2) · K207 (Glitch) · K208 (BR/VE/DO)
+
 ## [2026-07-29] ingest | K208 — Gemini DR wave3 (BR / VE / DO deepening)
 
 - Sources: `brazil-jure-sanguinis-deepening-2026-07-29` · `venezuela-italian-citizenship-deepening-2026-07-29` · `dominican-nationality-document-deepening-2026-07-29`

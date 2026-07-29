@@ -23,6 +23,10 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-29 — K209)
+
+- **K209 full-ingest triage** — inbox empty after dropping Moontower re-copy (exact K206 sha). No NEW sources. K206–K208 already complete.
+
 ## Current state (2026-07-29 — K207)
 
 - **K207 ingest** — Glitch @glitchspx Substack Notes (Falcon agentic discipline) → wiki + `briefs/xsp-glitch-falcon-agentic-discipline-2026-07-29.md` scp'd. Falcon WR/PF unverified.
