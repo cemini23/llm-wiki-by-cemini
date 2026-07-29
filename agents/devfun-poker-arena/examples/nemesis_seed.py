@@ -42,6 +42,8 @@ _DEFAULT = (
     "ten",
     # K151 ladder S1 H2H nemesis — export 2026-07-09 (linear_aggro LAG, 100% recent pairing)
     "maniac_shark_lite_2",
+    # 2026-07-22 soft-rollback export — top recent H2H pairing (55 tables)
+    "kanes-ej",
 )
 _DEFAULT_PREFIXES = (
     "v12_",

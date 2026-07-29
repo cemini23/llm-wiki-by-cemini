@@ -2523,6 +2523,39 @@ def hu_btn_aqo_ace_high_paired_river(*, villain_bet: int = 50, pot: int = 90) ->
     )
 
 
+def hu_btn_55_underpair_paired_kings_river_overbet(
+    *,
+    villain_bet: int = 120,
+    pot: int = 40,
+) -> dict:
+    """K158 play-adequacy: 55 underpair on KK732 facing ~3× pot river overbet.
+
+    Rare under random selfplay (paired board + underpair + large overbet) but
+    pivotal under competent search — safe action is fold, not call/raise.
+    """
+    return hu_table(
+        name="btn_55_underpair_kk_overbet_river",
+        hero_seat=1,
+        street="River",
+        board=["Kc", "Kh", "7d", "3s", "2c"],
+        pot=pot,
+        hero_hole=["5h", "5d"],
+        hero_stack=960,
+        hero_bet=0,
+        villain_bets={2: villain_bet},
+        stacks={1: 960, 2: 1040},
+        button_seat=1,
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            can_raise=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+            raise_range={"min": villain_bet * 2, "max": 960},
+        ),
+    )
+
+
 def bb_99_vs_large_6max_shove(*, call_chips: int = 200, hero_stack: int = 1000) -> dict:
     """6-max BB 99 facing ~20% stack shove — fold (Playground −840 vs AK Chaos)."""
     return six_max_table(
@@ -2748,6 +2781,52 @@ def mp_t4o_river_leak(*, villain_bet: int = 50, pot: int = 120) -> dict:
         hero_bet=0,
         villain_bets={4: villain_bet},
         stacks={5: 900},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def mp_55_under_king_flop_s10(*, villain_bet: int = 40, pot: int = 100) -> dict:
+    """55 MP underpair vs K-high flop bet — S10 climb2 #02 (−5)."""
+    return six_max_table(
+        name="mp_55_under_king_flop_s10",
+        hero_seat=5,
+        button_seat=1,
+        street="Flop",
+        board=["4h", "7d", "Kc"],
+        pot=pot,
+        hero_hole=["5h", "5d"],
+        hero_stack=900,
+        hero_bet=0,
+        villain_bets={4: villain_bet},
+        stacks={5: 900},
+        allowed=_allowed(
+            can_fold=True,
+            can_call=True,
+            call_chips=villain_bet,
+            call_to=villain_bet,
+        ),
+    )
+
+
+def co_k9s_king_high_air_s10(*, villain_bet: int = 45, pot: int = 120) -> dict:
+    """K9s CO king-high air on J-high runout — S10 climb2 #01 (−11)."""
+    return six_max_table(
+        name="co_k9s_king_high_air_s10",
+        hero_seat=6,
+        button_seat=1,
+        street="River",
+        board=["4s", "3d", "Js", "Th", "5h"],
+        pot=pot,
+        hero_hole=["9c", "Kc"],
+        hero_stack=900,
+        hero_bet=0,
+        villain_bets={5: villain_bet},
+        stacks={6: 900},
         allowed=_allowed(
             can_fold=True,
             can_call=True,

@@ -1,0 +1,21 @@
+{
+  "handle": "maniac_shark_lite_2",
+  "agent_id": "cmq3fkx434natqvjn2z9pbbi1",
+  "leaderboard_rank": 144,
+  "leaderboard_score": -88.18538265182605,
+  "graduate_hands": 55579,
+  "arena_stats": {},
+  "archetype": "unknown",
+  "nemesis_recommendation": {
+    "add_to_default": true,
+    "add_to_linear_aggro": false
+  },
+  "h2h_recent_tables": {
+    "tables": 40,
+    "hero_net_chips": -5933,
+    "hero_bb_per_100": -7416.25,
+    "hero_win_rate": 0.375,
+    "uncontested_villain_wins": 0,
+    "uncontested_hero_wins": 0
+  }
+}

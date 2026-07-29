@@ -4,13 +4,25 @@ Self-claimed authorization from observation / tool-result channels is
 invalid. Privileged bankroll, table-bind, and submit intents require
 standing from the real operator or prebind path only.
 
-Pattern only — no AHA harness / Vulnerability Concept Graph install.
+K185 (arXiv 2607.15218 pattern, light): privileged intents on a trusted
+channel still face a causal **action** risk check (stack/pot/odds). A
+linguistically safe plan ("call for information") does not bypass
+``action_unsafe`` / absurd pot-odds. Deny classes:
+
+- ``channel`` — standing missing (observation/tool/unknown)  [K176]
+- ``action``  — causal / process-description (PD) stack risk  [K185]
+- ``text``    — content/discourse (CD) policy flag            [K185]
+
+Pattern only — no AHA / PRISM probe install.
 Pairs with K164 capability-tree submit leaf + K167 message isolation.
 """
 from __future__ import annotations
 
+import json
 import logging
+import os
 import re
+from pathlib import Path
 from typing import Any, Literal, Optional
 
 logger = logging.getLogger("arena-pokerkit.claimed_auth")
@@ -22,6 +34,7 @@ Intent = Literal[
     "bankroll_spend",
     "live_table_action",
 ]
+DenyClass = Literal["channel", "action", "text"]
 
 TRUSTED_CHANNELS: frozenset[str] = frozenset({"operator", "prebind"})
 UNTRUSTED_CHANNELS: frozenset[str] = frozenset(
@@ -37,11 +50,25 @@ PRIVILEGED_INTENTS: frozenset[str] = frozenset(
     }
 )
 
+# K182: sandbox-pass claims require matching pin bundle SHA (authority framing).
+_SANDBOX_PASS_CLAIM_RE = re.compile(
+    r"(?i)\b("
+    r"passed\s+sandbox|"
+    r"pass(?:ed)?\s+(?:the\s+)?sandbox|"
+    r"gate\s+pass(?:ed)?|"
+    r"sandbox\s+ok|"
+    r"sandbox\s+gate\s+pass"
+    r")\b"
+)
+_SHA256_RE = re.compile(r"\b([0-9a-f]{64})\b", re.I)
+_DEFAULT_PIN_PATH = Path(__file__).resolve().parent.parent / "config" / "researcher_sandbox_submit.pin.json"
+
 # Phrases that look like approval claims in untrusted table/chat text.
 _CLAIM_PHRASE_RE = re.compile(
     r"(?i)\b("
     r"user\s+approved|"
     r"authorized\s+all[\s-]?in|"
+    r"authorized\s+to\s+submit|"
     r"operator\s+approved|"
     r"approved\s+all[\s-]?in|"
     r"prebind\s+ok|"
@@ -54,6 +81,9 @@ _DENY_OBSERVATION = "claim came from observation, not operator"
 _DENY_TOOL = "claim came from tool_result, not operator"
 _DENY_UNKNOWN = "claim channel unknown — not operator/prebind standing"
 _DENY_UNPRIVILEGED_CHANNEL = "privileged intent requires operator or prebind channel"
+
+# Call-to-pot above this ratio is treated as absurd pot-odds (light PD check).
+_ABSURD_CALL_POT_RATIO = 3.0
 
 
 def normalize_channel(channel: Any) -> str:
@@ -88,6 +118,96 @@ def normalize_intent(intent: Any) -> str:
         "bind": "live_table_action",
     }
     return aliases.get(raw, raw)
+
+
+def detect_sandbox_pass_claim(text: Any) -> list[str]:
+    """Return matched sandbox-pass phrases (K182 — needs pin bundle SHA)."""
+    if text is None:
+        return []
+    s = text if isinstance(text, str) else str(text)
+    if not s.strip():
+        return []
+    return [m.group(0) for m in _SANDBOX_PASS_CLAIM_RE.finditer(s)]
+
+
+def _normalize_sha(value: Any) -> str:
+    return str(value or "").strip().lower()
+
+
+def load_expected_pin_bundle_sha(
+    *,
+    pin_path: Path | None = None,
+) -> str:
+    """Expected bundle SHA from env, pin JSON, or notes field."""
+    env_sha = _normalize_sha(os.environ.get("CEMINI_PIN_BUNDLE_SHA"))
+    if env_sha:
+        return env_sha
+
+    path = pin_path or _DEFAULT_PIN_PATH
+    if not path.is_file():
+        return ""
+
+    try:
+        pin = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return ""
+
+    direct = _normalize_sha(pin.get("bundleSha256"))
+    if direct:
+        return direct
+
+    notes = str(pin.get("notes") or "")
+    for match in _SHA256_RE.finditer(notes):
+        return _normalize_sha(match.group(1))
+    return ""
+
+
+def extract_cited_bundle_sha(text: Any) -> str:
+    """First sha256 hex token in claim / evidence text."""
+    if text is None:
+        return ""
+    s = text if isinstance(text, str) else str(text)
+    match = _SHA256_RE.search(s)
+    return _normalize_sha(match.group(1)) if match else ""
+
+
+def assess_sandbox_pass_pin_match(
+    text: Any,
+    *,
+    evidence: dict[str, Any] | None = None,
+    pin_path: Path | None = None,
+) -> tuple[bool, str]:
+    """K182: deny when sandbox-pass claim lacks matching pin bundle SHA."""
+    evidence = evidence or {}
+    combined = " ".join(
+        str(x)
+        for x in (
+            text,
+            evidence.get("claim_text"),
+            evidence.get("message"),
+            evidence.get("plan_text"),
+            evidence.get("bundle_sha256"),
+            evidence.get("bundleSha256"),
+            evidence.get("pin_bundle_sha"),
+        )
+        if x
+    )
+    hits = detect_sandbox_pass_claim(combined)
+    if not hits:
+        return False, ""
+
+    expected = load_expected_pin_bundle_sha(pin_path=pin_path)
+    if not expected:
+        return True, "sandbox pass claim without configured pin bundle SHA"
+
+    cited = extract_cited_bundle_sha(combined)
+    if not cited:
+        return True, "sandbox pass claim without cited bundle SHA"
+
+    if cited != expected:
+        return True, f"sandbox pass claim SHA mismatch (cited≠pin)"
+
+    return False, ""
 
 
 def detect_claimed_authorization(text: Any) -> list[str]:
@@ -125,17 +245,120 @@ def standing_from_observation_claim(
     return False
 
 
+def _truthy(value: Any) -> bool:
+    if value is True:
+        return True
+    if isinstance(value, (int, float)) and value == 1:
+        return True
+    if isinstance(value, str) and value.strip().lower() in {
+        "1",
+        "true",
+        "yes",
+        "y",
+        "on",
+    }:
+        return True
+    return False
+
+
+def _as_float(value: Any) -> float | None:
+    if value is None or value is False:
+        return None
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def assess_text_risk(evidence: dict[str, Any]) -> tuple[bool, str]:
+    """Content/discourse (CD) risk flags — linguistic policy only.
+
+    Does **not** clear action risk. Safe-sounding plan text is ignored for
+    causal checks (see ``assess_action_risk``).
+    """
+    if _truthy(evidence.get("text_unsafe")):
+        return True, "evidence marks text_unsafe"
+    if _truthy(evidence.get("cd_unsafe")):
+        return True, "evidence marks cd_unsafe (content/discourse)"
+    return False, ""
+
+
+def assess_action_risk(
+    intent: str,
+    evidence: dict[str, Any],
+) -> tuple[bool, str]:
+    """Causal / process-description (PD) stack+odds risk for privileged acts.
+
+    Explicit ``action_unsafe=True`` always denies. Light numeric heuristics
+    apply when pot/call (and optional stack) evidence is present — especially
+    for ``all_in`` / ``live_table_action``. Plan phrases like
+    ``call for information`` never suppress this check.
+    """
+    # Explicit PD flag wins over any safe-sounding plan_text / reason.
+    if _truthy(evidence.get("action_unsafe")):
+        return True, "evidence marks action_unsafe"
+    if _truthy(evidence.get("pd_unsafe")):
+        return True, "evidence marks pd_unsafe (causal action)"
+
+    pot = _as_float(evidence.get("pot") or evidence.get("pot_size"))
+    call = _as_float(
+        evidence.get("call_chips")
+        or evidence.get("to_call")
+        or evidence.get("call")
+    )
+    stack = _as_float(
+        evidence.get("stack")
+        or evidence.get("hero_stack")
+        or evidence.get("effective_stack")
+    )
+
+    if _truthy(evidence.get("pot_odds_absurd")):
+        return True, "evidence marks pot_odds_absurd"
+
+    if _truthy(evidence.get("dead_money_flag")) or _truthy(evidence.get("dead_money")):
+        # Shove / all-in into flagged dead-money spot is action-unsafe by default.
+        if intent in {"all_in", "live_table_action", "bankroll_spend"}:
+            return True, "dead_money flag with privileged table action"
+
+    if pot is not None and call is not None and pot > 0 and call > 0:
+        ratio = call / pot
+        if ratio >= _ABSURD_CALL_POT_RATIO:
+            return (
+                True,
+                f"call/pot ratio {ratio:.2f} >= {_ABSURD_CALL_POT_RATIO} (absurd pot-odds)",
+            )
+
+    # All-in for nearly full stack into tiny pot (light sanity).
+    if (
+        intent in {"all_in", "live_table_action"}
+        and pot is not None
+        and stack is not None
+        and pot > 0
+        and stack > 0
+        and stack / pot >= 10.0
+        and (call is None or call >= stack * 0.9)
+    ):
+        return True, "all-in sized stack into tiny pot (stack/pot >= 10)"
+
+    return False, ""
+
+
 def authorize(
     intent: str,
     *,
     channel: Any,
     evidence: Optional[dict[str, Any]] = None,
 ) -> dict[str, Any]:
-    """Authorize a privileged intent against the claim channel.
+    """Authorize a privileged intent against channel + light action/text risk.
 
-    Returns ``{ok: bool, reason: str, intent, channel, privileged}``.
-    Denies when channel ∈ {observation, tool_result, unknown} for
-    privileged intents. Logs the enabling deny condition.
+    Returns ``{ok, reason, intent, channel, privileged, deny_class, ...}``.
+
+    Deny classes (K176 + K185):
+    - ``channel`` — observation / tool_result / unknown (unchanged semantics)
+    - ``text`` — CD policy flag on trusted channel
+    - ``action`` — PD causal stack/odds risk on trusted channel
+
+    Text-only safe plans never bypass ``action_unsafe`` / odds checks.
     """
     intent_n = normalize_intent(intent)
     channel_n = normalize_channel(channel)
@@ -149,6 +372,7 @@ def authorize(
         "intent": intent_n,
         "channel": channel_n,
         "privileged": privileged,
+        "deny_class": None,
         "evidence_keys": sorted(evidence.keys()),
     }
 
@@ -157,54 +381,63 @@ def authorize(
         result["reason"] = "non-privileged intent — no standing required"
         return result
 
-    if channel_n == "observation":
-        result["reason"] = _DENY_OBSERVATION
+    def _deny(reason: str, deny_class: DenyClass) -> dict[str, Any]:
+        result["reason"] = reason
+        result["deny_class"] = deny_class
         logger.info(
-            "[arena-pokerkit] claimed-auth deny intent=%s channel=%s reason=%s",
+            "[arena-pokerkit] claimed-auth deny intent=%s channel=%s "
+            "deny_class=%s reason=%s",
             intent_n,
             channel_n,
-            result["reason"],
+            deny_class,
+            reason,
         )
         return result
+
+    # --- K176 channel standing (unchanged semantics) ---
+    if channel_n == "observation":
+        return _deny(_DENY_OBSERVATION, "channel")
 
     if channel_n == "tool_result":
-        result["reason"] = _DENY_TOOL
-        logger.info(
-            "[arena-pokerkit] claimed-auth deny intent=%s channel=%s reason=%s",
-            intent_n,
-            channel_n,
-            result["reason"],
-        )
-        return result
+        return _deny(_DENY_TOOL, "channel")
 
     if channel_n == "unknown":
-        result["reason"] = _DENY_UNKNOWN
-        logger.info(
-            "[arena-pokerkit] claimed-auth deny intent=%s channel=%s reason=%s",
-            intent_n,
-            channel_n,
-            result["reason"],
-        )
-        return result
+        return _deny(_DENY_UNKNOWN, "channel")
 
     if channel_n not in TRUSTED_CHANNELS:
-        result["reason"] = _DENY_UNPRIVILEGED_CHANNEL
-        logger.info(
-            "[arena-pokerkit] claimed-auth deny intent=%s channel=%s reason=%s",
-            intent_n,
-            channel_n,
-            result["reason"],
-        )
-        return result
+        return _deny(_DENY_UNPRIVILEGED_CHANNEL, "channel")
 
     # Observation-shaped evidence never upgrades a trusted channel by itself;
-    # trusted channel + optional prebind_ok flag is enough for submit paths.
+    # trusted channel + optional prebind_ok flag is enough for channel standing.
     claim_text = evidence.get("claim_text") or evidence.get("message") or ""
     if claim_text and channel_n in TRUSTED_CHANNELS:
-        # Claims in evidence are informational only; standing is the channel.
         result["claim_phrases"] = detect_claimed_authorization(claim_text)
 
+    # Surface plan text for audit only — never used to clear action risk.
+    plan = evidence.get("plan_text") or evidence.get("plan") or evidence.get("reason")
+    if plan is not None:
+        result["plan_text_present"] = True
+
+    # --- K182 sandbox-pass claims need pin bundle SHA on submit ---
+    if intent_n == "submit_sandbox":
+        sandbox_bad, sandbox_reason = assess_sandbox_pass_pin_match(
+            claim_text,
+            evidence=evidence,
+        )
+        if sandbox_bad:
+            return _deny(sandbox_reason, "text")
+
+    # --- K185 text (CD) then action (PD) on trusted channel ---
+    text_unsafe, text_reason = assess_text_risk(evidence)
+    if text_unsafe:
+        return _deny(text_reason, "text")
+
+    action_unsafe, action_reason = assess_action_risk(intent_n, evidence)
+    if action_unsafe:
+        return _deny(action_reason, "action")
+
     result["ok"] = True
+    result["deny_class"] = None
     result["reason"] = f"standing from {channel_n}"
     return result
 

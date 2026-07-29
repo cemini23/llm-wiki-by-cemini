@@ -1,0 +1,20 @@
+{
+  "competitionId": "seed_poker_eval_s1",
+  "template": "static-agent",
+  "replace": true,
+  "activeSubmissionId": "a6d6c8b5-8515-4ecb-a8ea-47d1a9eb0247",
+  "build": true,
+  "bundlePath": "dist/sandbox-eval-s1-bundle.zip",
+  "agentVersion": "eval-s1.panel-crush-v3.2026-07-23",
+  "sandboxEngine": "cemini",
+  "arenaProfile": "eval_s1",
+  "gitCommit": "eval-s1-pivot",
+  "pinnedAt": "2026-07-23T13:18:00Z",
+  "notes": "Crush v2 after +39/#1331. Maniac/station short-circuit. Target top-5 \u2265650. Prior ab0c4607=+39.4.",
+  "priorSubmissionId": "ab0c4607-27a2-4471-96bc-0629f403637a",
+  "priorAdjustedBbPer100": 39.37,
+  "priorRank": 1331,
+  "priorCrushId": "c1117800-df0c-4721-88c2-6b78220db2f9",
+  "priorCrushBb": 281.83,
+  "priorCrushRank": 126
+}

@@ -107,7 +107,27 @@ def _sandbox_engine() -> str:
     return "cemini"
 
 
-def build_bundle(out_zip: Path) -> Path:
+def _arena_profile_for_competition(competition_id: str) -> str:
+    """Return profile token to bake into the zip (empty = HU researcher default)."""
+    env = os.environ.get("CEMINI_ARENA_PROFILE", "").strip().lower()
+    if env:
+        return env
+    try:
+        from eval_s1_profile import competition_is_eval  # noqa: WPS433
+
+        if competition_is_eval(competition_id):
+            return "eval_s1"
+    except Exception:
+        if competition_id in (
+            "seed_poker_eval_s1",
+            "cmpdk0pt00eawvcaf1es8plw2",
+            "cmpkdus9200syw8do5644oymp",
+        ):
+            return "eval_s1"
+    return ""
+
+
+def build_bundle(out_zip: Path, *, competition_id: str = "") -> Path:
     """Zip harness/, assets/, skills/ per docs.dev.fun researcher guide."""
     harness = _AGENT_ROOT / "harness" / "strategy.py"
     if not harness.is_file():
@@ -121,10 +141,14 @@ def build_bundle(out_zip: Path) -> Path:
             break
 
     research = _AGENT_ROOT / "research"
+    profile = _arena_profile_for_competition(competition_id or os.environ.get("ARENA_RESEARCHER_COMP_ID", ""))
     with tempfile.TemporaryDirectory(prefix="sandbox-bundle-") as tmp:
         root = Path(tmp)
         (root / "harness").mkdir()
         shutil.copy2(harness, root / "harness" / "strategy.py")
+        if profile:
+            (root / "harness" / "arena_profile").write_text(profile + "\n", encoding="utf-8")
+            print(f"==> Baked CEMINI_ARENA_PROFILE={profile} into bundle")
         assets = root / "assets"
         assets.mkdir()
         engine = _sandbox_engine()
@@ -139,6 +163,7 @@ def build_bundle(out_zip: Path) -> Path:
             "agentVersion": pin_fields.get("agentVersion", ""),
             "gitCommit": pin_fields.get("gitCommit", ""),
             "sandboxEngine": engine,
+            "arenaProfile": profile or "researcher_hu",
             "builtAt": datetime.now(timezone.utc)
             .replace(microsecond=0)
             .isoformat()
@@ -350,7 +375,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     bundle = args.bundle
     if args.build or args.build_only or not bundle.is_file():
         print(f"==> Building {bundle}")
-        build_bundle(bundle)
+        build_bundle(bundle, competition_id=args.competition_id)
     if args.build_only:
         return 0
 

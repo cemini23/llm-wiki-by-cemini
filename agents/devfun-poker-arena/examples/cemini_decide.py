@@ -13,6 +13,7 @@ Run:
 from __future__ import annotations
 
 import json
+import secrets
 import os
 import sys
 from collections import Counter
@@ -62,6 +63,12 @@ from qualification_guard import max_playable_chips  # noqa: E402
 from opponent_hud import build_opponent_hud, enrich_hud_from_table, exploit_margins  # noqa: E402
 from pokerskill_adapter import retrieve_pokerskill_hints  # noqa: E402
 from session_memory import exploit_from_memory  # noqa: E402
+from eval_s1_profile import (  # noqa: E402
+    eval_exploit_margins,
+    eval_s1_profile_active,
+    table_has_eval_panel,
+    try_eval_panel_crush,
+)
 from nemesis_seed import (  # noqa: E402
     linear_aggro_nemesis_handles,
     nemesis_handles,
@@ -114,6 +121,13 @@ from postflop_buckets import (  # noqa: E402
     bias_thresholds_from_freqs,
     build_solver_frequencies_context,
     resolve_freqs_for_equity,
+    sample_action_from_freqs,
+    solver_hard_enabled,
+)
+from solver_policy_v3 import (  # noqa: E402
+    blueprint_v3_enabled,
+    lookup_policy_for_table,
+    sample_action_v3,
 )
 from action_mix import resolve_postflop_call_fold  # noqa: E402
 from hand_nuts import river_unbeatable, treys_available  # noqa: E402
@@ -447,6 +461,8 @@ _WEAK_FACING_RAISE = frozenset({
     "J9o", "J8o", "J7o", "J6o", "J5o", "J4o", "J3o", "J2o",
     "T9o", "T8o", "T7o", "T6o", "T5o", "T4o", "T3o", "T2o",
     "98o", "97o", "96o", "95o", "94o", "93o", "92o", "87o",
+    # S9 Playground: BB floated 75o/76o (gap vs 74o-only set) → chip bleed.
+    "86o", "85o", "76o", "75o", "65o",
     "KJo", "QJo", "JTo", "KTo", "QTo",
     "84o", "83o", "82o", "74o", "73o", "72o", "64o", "63o", "62o",
     "54o", "53o", "52o", "43o", "42o", "32o", "96o", "79o",
@@ -461,9 +477,18 @@ _BTN_CO_MARGINAL_ACE_OFFSUIT = frozenset({
 # K118 F4: default rock-steal bar when margins omit open_steal_equity (was 0.99 → never steal).
 _DEFAULT_OPEN_STEAL_EQUITY = 0.55
 _BB_BROADWAY_FOLD = frozenset({"KQo", "QJo", "KJo", "KTo", "QTo", "JTo", "AJo", "ATo"})
+# SB OOP weak suited vs open — S9: Q6s/Q5s/KTs called and bled postflop.
 _SB_WEAK_SUITED_VS_OPEN = frozenset({
-    "K9s", "K8s", "Q9s", "Q8s", "J9s", "J8s", "T9s", "T8s", "T7s", "97s", "86s",
-    "98s", "87s", "76s", "65s",
+    "KTs", "K9s", "K8s", "K7s", "K6s",
+    "Q9s", "Q8s", "Q7s", "Q6s", "Q5s", "Q4s", "Q3s", "Q2s",
+    "J9s", "J8s", "J7s", "J6s", "T9s", "T8s", "T7s", "T6s",
+    "97s", "96s", "86s", "85s", "98s", "87s", "76s", "65s",
+})
+# CO/BTN cold-call trash vs raise — S9: Q5s BTN, J8s CO, A6s CO flats.
+_CO_BTN_WEAK_SUITED_VS_OPEN = frozenset({
+    "Q7s", "Q6s", "Q5s", "Q4s", "Q3s", "Q2s",
+    "J8s", "J7s", "J6s", "T7s", "T6s", "97s", "96s", "86s", "85s",
+    "A6s", "A5s", "A4s", "A3s", "A2s",
 })
 _PREFLOP_3BET_OK = frozenset({"AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQs", "AQo"})
 # HL R25: EP suited broadway opens/calls bleed vs LAG shoves (QJs UTG −100 #01, KQs UTG #12).
@@ -491,6 +516,80 @@ _NEMESIS_SB_DEFEND_CHASE = _NEMESIS_SB_DEFEND_OK | frozenset({
 def _cold_start_no_steal_enabled() -> bool:
     raw = os.environ.get("CEMINI_COLD_START_NO_STEAL", "1")
     return raw.strip().lower() not in ("0", "false", "no", "off")
+
+
+def _allows_selective_btn_co_steal(hud_mode: str, margins: dict | None) -> bool:
+    """BTN/CO steal only vs rock or confirmed loose-passive HUD (S1b / S10 climb).
+
+    wide_passive maps to legacy mode ``tight`` with open_steal_equity ~0.34–0.38
+    (rock_steal_eq path). Do not global-widen: maniac/unknown keep high steal bar.
+    """
+    mode = (hud_mode or "unknown").lower()
+    if mode == "rock":
+        return True
+    m = margins or {}
+    try:
+        steal_eq = float(m.get("open_steal_equity", 0.99))
+    except (TypeError, ValueError):
+        steal_eq = 0.99
+    # Loose-passive / wide_passive: legacy tight + rock-style steal bar (<0.50).
+    if mode in ("tight", "passive", "loose-passive", "wide_passive") and steal_eq < 0.50:
+        return True
+    return False
+
+
+def _maniac_value_call_margin_boost(
+    *,
+    hud_mode_raw: str,
+    villain_archetype: str = "",
+    villain_vpip: float | None = None,
+    is_hu: bool = False,
+) -> dict[str, float] | None:
+    """Slightly wider call-downs vs maniac / VPIP>>45% (grok* cluster). 6-max + HU.
+
+    Still fold preflop trash elsewhere. Hyper-maniac (high VPIP, not linear_aggro)
+    gets a bit more call-down; LAG/linear gets moderate value pressure.
+    """
+    mode = (hud_mode_raw or "").lower()
+    arch = (villain_archetype or "").lower()
+    maniac_like = mode in ("maniac", "lag") or (
+        villain_vpip is not None and villain_vpip >= 0.45
+    )
+    if not maniac_like:
+        return None
+    hyper = arch != "linear_aggro" and (
+        villain_vpip is None or villain_vpip >= 0.48
+    )
+    if hyper:
+        # HU keeps prior boost; 6-max slightly milder (multiway / playground chip-qual).
+        if is_hu:
+            return {
+                "bet_bar_delta": -0.08,
+                "call_margin_delta": -0.05,
+                "fold_slack_delta": -0.04,
+                "preflop_fold_margin_delta": -0.03,
+            }
+        return {
+            "bet_bar_delta": -0.05,
+            "call_margin_delta": -0.04,
+            "fold_slack_delta": -0.03,
+            "preflop_fold_margin_delta": -0.02,
+        }
+    # LAG / linear_aggro — value call moderate
+    if is_hu:
+        return {
+            "bet_bar_delta": -0.05,
+            "call_margin_delta": -0.03,
+            "fold_slack_delta": -0.04,
+            "preflop_fold_margin_delta": -0.02,
+        }
+    return {
+        "bet_bar_delta": -0.03,
+        "call_margin_delta": -0.03,
+        "fold_slack_delta": -0.02,
+        "preflop_fold_margin_delta": -0.01,
+    }
+
 
 
 _COLD_START_MARGINAL_STEAL = frozenset({
@@ -842,7 +941,17 @@ def retrieve_solver_context(
             ctx["chat_intel"] = extract_chat_intel(table)
         except Exception:
             pass
-    if os.environ.get("CEMINI_RESEARCHER_MODE", "").strip().lower() in (
+    if eval_s1_profile_active():
+        # Panel-exploit profile — never inherit HU researcher / lane_tight eval_panel.
+        ctx["eval_s1_exploit"] = True
+        ctx["table_format"] = "6max"
+        ctx["researcher_mode"] = False
+        ctx.pop("eval_panel_mode", None)
+        ctx["placement_chase"] = False
+        ctx["placement_protect"] = False
+        if table_has_eval_panel(table):
+            ctx["eval_panel_seated"] = True
+    elif os.environ.get("CEMINI_RESEARCHER_MODE", "").strip().lower() in (
         "1", "true", "yes", "on",
     ):
         ctx["researcher_mode"] = True
@@ -850,17 +959,18 @@ def retrieve_solver_context(
         ctx["placement_chase"] = False
         ctx["placement_protect"] = False
     table_fmt = os.environ.get("CEMINI_TABLE_FORMAT", "").strip().lower()
-    if table_fmt in ("hu", "heads-up", "headsup", "2max"):
-        ctx["table_format"] = "hu"
-        if os.environ.get("CEMINI_RESEARCHER_MODE", "").strip().lower() in (
-            "1", "true", "yes", "on",
-        ):
-            ctx["researcher_mode"] = True
-            ctx["placement_chase"] = False
-            ctx["placement_protect"] = False
-            ctx.pop("eval_panel_mode", None)
-    elif table_fmt in ("6max", "6-max", "six"):
-        ctx["table_format"] = "6max"
+    if not eval_s1_profile_active():
+        if table_fmt in ("hu", "heads-up", "headsup", "2max"):
+            ctx["table_format"] = "hu"
+            if os.environ.get("CEMINI_RESEARCHER_MODE", "").strip().lower() in (
+                "1", "true", "yes", "on",
+            ):
+                ctx["researcher_mode"] = True
+                ctx["placement_chase"] = False
+                ctx["placement_protect"] = False
+                ctx.pop("eval_panel_mode", None)
+        elif table_fmt in ("6max", "6-max", "six"):
+            ctx["table_format"] = "6max"
     # Postflop buckets are O(1) cached — safe under tight deadline after warmup.
     if street != "preflop":
         try:
@@ -914,6 +1024,20 @@ def decide(
                           msg="clock pressure — free check")
         return _build("fold", None, table, allowed, eq=0.0, po=1.0,
                       msg="clock pressure — fold")
+
+    # Eval S1 panel crush — short-circuit before HU/nit lanes (top LB is VPIP 80%+).
+    if eval_s1_profile_active():
+        crush = try_eval_panel_crush(
+            table, allowed, available, hole, board, street, pot, call_chips,
+        )
+        if crush is not None:
+            c_act, c_amt = crush
+            if c_act in ("fold", "check", "call"):
+                c_amt = None
+            return _build(
+                c_act, c_amt, table, allowed, eq=0.55, po=0.0,
+                msg=f"eval_crush — {c_act}",
+            )
 
     # Arena static timeout class (v2): tight band widened to <5s so mid
     # remaining budgets still skip optional enrichment + use lower sims.
@@ -984,6 +1108,12 @@ def decide(
     placement_protect = bool(ctx.get("placement_protect"))
     placement_chase = bool(ctx.get("placement_chase"))
     eval_panel = bool(ctx.get("eval_panel_mode"))
+    eval_s1 = bool(ctx.get("eval_s1_exploit")) or eval_s1_profile_active()
+    if eval_s1:
+        # Explicit: do not use lane_tight eval_panel_mode (anti-exploit for this panel).
+        eval_panel = False
+        placement_chase = False
+        placement_protect = False
     if ctx.get("researcher_mode"):
         placement_chase = False
         placement_protect = False
@@ -999,6 +1129,8 @@ def decide(
     if exploit_gate and hud_mode == "maniac":
         hud_mode = "unknown"
     margins = hud.get("margins") or exploit_margins(hud_mode)
+    if eval_s1:
+        margins = _merge_margins(margins, eval_exploit_margins())
     villain_archetype = (hud.get("archetype") or "").lower()
     villain_vpip: float | None = None
     for _vk in ("vpip", "VPIP"):
@@ -1009,32 +1141,15 @@ def decide(
         _vstats = hud.get("stats") or {}
         if isinstance(_vstats, dict) and _vstats.get("vpip") is not None:
             villain_vpip = float(_vstats["vpip"])
-    if _is_hu_table(table) and hud_mode_raw == "maniac":
-        hyper_maniac = villain_archetype != "linear_aggro" and (
-            villain_vpip is None or villain_vpip >= 0.48
-        )
-        if hyper_maniac:
-            # Call down vs hyper-maniac — prior +call/+fold margins crushed series win rate.
-            margins = _merge_margins(
-                margins,
-                {
-                    "bet_bar_delta": -0.08,
-                    "call_margin_delta": -0.05,
-                    "fold_slack_delta": -0.04,
-                    "preflop_fold_margin_delta": -0.03,
-                },
-            )
-        else:
-            # LAG / linear_aggro — call down for value; moderate pressure
-            margins = _merge_margins(
-                margins,
-                {
-                    "bet_bar_delta": -0.05,
-                    "call_margin_delta": -0.03,
-                    "fold_slack_delta": -0.04,
-                    "preflop_fold_margin_delta": -0.02,
-                },
-            )
+    # S10 climb: maniac / VPIP>>45% value call-downs on 6-max + HU (fold trash preflop still).
+    _mvc = _maniac_value_call_margin_boost(
+        hud_mode_raw=hud_mode_raw,
+        villain_archetype=villain_archetype,
+        villain_vpip=villain_vpip,
+        is_hu=_is_hu_table(table),
+    )
+    if _mvc:
+        margins = _merge_margins(margins, _mvc)
     villain_mem = ctx.get("session_villain_memory") or {}
     if exploit_gate:
         mem_margins: dict[str, float] = {}
@@ -1413,14 +1528,41 @@ def decide(
                       msg=f"{binding}: IP underpair on paired board — fold")
 
     # CO/BTN IP pocket under board overcards — 77 CO −50 (HL R31 #04).
+    # S10 climb2: small pairs fold from flop (was turn-only @ 0.22).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
             and position in ("CO", "BTN") and in_position
             and _hero_pocket_under_board_overcards(hole, board, hc)
             and not _hero_cannot_lose()
-            and len(board) >= 4
-            and call_chips >= max(int(pot * 0.22), 1)):
+            and len(board) >= (3 if _small_pocket_pair(hc) else 4)
+            and call_chips >= max(
+                int(pot * (0.15 if _small_pocket_pair(hc) else 0.22)), 1
+            )):
         return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
                       msg=f"{binding}: IP pocket under overcards — fold")
+
+    # EP/MP pocket under board overcards — 22 MP −9 (S9); 55 MP −5 on K72 (S10 #02).
+    # Climb2: apply IP+OOP; lower small-pair bar so flop peels don't tax the stack.
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("UTG", "MP")
+            and _hero_pocket_under_board_overcards(hole, board, hc)
+            and not _hero_cannot_lose()
+            and len(board) >= 3
+            and call_chips >= max(
+                int(pot * (0.12 if _small_pocket_pair(hc) else 0.15)), 1
+            )):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: EP pocket under overcards — fold")
+
+    # CO/BTN weak king-high air — K9s CO −11 on 43Jxx (S10 climb2 #01).
+    if (street != "Preflop" and call_chips > 0 and "fold" in available
+            and position in ("CO", "BTN")
+            and _hero_weak_king_high_air(hole, board, hc)
+            and not _hero_made_hand_exempt(hole, board)
+            and not _hero_cannot_lose()
+            and len(board) >= 3
+            and call_chips >= max(int(pot * 0.15), 1)):
+        return _build("fold", None, table, allowed, eq=equity, po=pot_odds,
+                      msg=f"{binding}: CO/BTN weak king-high air — fold")
 
     # CO/BTN IP weak top on K+Q runout — T9d CO −118 (HL R31 #01).
     if (street != "Preflop" and call_chips > 0 and "fold" in available
@@ -2056,23 +2198,55 @@ def decide(
         if v2_bet is not None:
             action_name, amount = v2_bet
         else:
-            gin_free = (
-                try_postflop_free(table, allowed, available, hole, board)
-                if gin_style_postflop_enabled()
-                else None
-            )
-            if gin_free is not None:
-                action_name, amount = gin_free
+            v3_free = None
+            if blueprint_v3_enabled():
+                v3_entry = lookup_policy_for_table(
+                    table,
+                    hole,
+                    board,
+                    in_position=in_position,
+                    facing=False,
+                    call_chips=0,
+                    pot=pot,
+                )
+                if v3_entry:
+                    v3_free = sample_action_v3(
+                        v3_entry,
+                        available,
+                        facing=False,
+                        pot=pot,
+                        call_chips=0,
+                        rng=secrets.SystemRandom(),
+                        allowed=allowed,
+                    )
+            if v3_free is not None:
+                action_name, amount = v3_free
             else:
+                gin_free = (
+                    try_postflop_free(table, allowed, available, hole, board)
+                    if gin_style_postflop_enabled()
+                    else None
+                )
                 sf_freqs = resolve_freqs_for_equity(
                     ctx.get("solver_frequencies"), equity,
                 )
-                action_name, amount = _postflop_free(
-                    equity, allowed, available, pot, pot_control=pot_control,
-                    ps_bias=ps_bias, ps_library=ps_library,
-                    hand_eval=ps_hand_eval,
-                    hand_class=hc, hud_mode=hud_mode, margins=margins,
-                    solver_freqs=sf_freqs)
+                # Hard σ owns free spots when covered — before Gin free heuristic.
+                if solver_hard_enabled() and sf_freqs:
+                    action_name, amount = _postflop_free(
+                        equity, allowed, available, pot, pot_control=pot_control,
+                        ps_bias=ps_bias, ps_library=ps_library,
+                        hand_eval=ps_hand_eval,
+                        hand_class=hc, hud_mode=hud_mode, margins=margins,
+                        solver_freqs=sf_freqs)
+                elif gin_free is not None:
+                    action_name, amount = gin_free
+                else:
+                    action_name, amount = _postflop_free(
+                        equity, allowed, available, pot, pot_control=pot_control,
+                        ps_bias=ps_bias, ps_library=ps_library,
+                        hand_eval=ps_hand_eval,
+                        hand_class=hc, hud_mode=hud_mode, margins=margins,
+                        solver_freqs=sf_freqs)
     else:
         sf_freqs = resolve_freqs_for_equity(
             ctx.get("solver_frequencies"), equity,
@@ -2353,8 +2527,9 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             return "check", None
         if "fold" in available:
             return "fold", None
-    # K118 F4: chart steal hands vs rock — open without MC equity bar (chart said check/fold).
-    if (not lead_protect and not qual_protect and not cold_start and hud_mode == "rock"
+    # K118 F4 / S10 climb: chart steal hands vs rock or loose-passive HUD only.
+    if (not lead_protect and not qual_protect and not cold_start
+            and _allows_selective_btn_co_steal(hud_mode, margins)
             and position in ("CO", "BTN")
             and placement_chase_steal(hand_class, position)
             and not _blocks_open_steal(hand_class, position)
@@ -2403,9 +2578,10 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             return "check", None
         if "fold" in available:
             return "fold", None
-    # vs rock: steal when chart is passive but equity supports an open (CO/BTN only).
+    # vs rock / loose-passive: steal when chart is passive but equity supports open (CO/BTN).
     steal_eq = float(margins.get("open_steal_equity", _DEFAULT_OPEN_STEAL_EQUITY))
-    if (not lead_protect and not qual_protect and not cold_start and hud_mode == "rock"
+    if (not lead_protect and not qual_protect and not cold_start
+            and _allows_selective_btn_co_steal(hud_mode, margins)
             and suggested in ("check", "fold")
             and position in ("CO", "BTN")
             and equity >= steal_eq
@@ -2748,8 +2924,8 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and hc in _WEAK_FACING_RAISE and "fold" in available):
         return "fold", None
 
-    # CO broadway trash vs raise — QTo CO −100 (HL R5 #09).
-    if (position == "CO" and call_chips > 0 and hc in _BB_BROADWAY_FOLD
+    # CO/BTN broadway trash vs raise — QTo CO −100 (HL R5 #09); KQo BTN S9 cold-call.
+    if (position in ("CO", "BTN") and call_chips > 0 and hc in _BB_BROADWAY_FOLD
             and "fold" in available):
         return "fold", None
 
@@ -2775,9 +2951,20 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and equity >= pot_odds + 0.02 and "call" in available):
         return "call", None
 
-    # SB: fold weak suited trash vs opens (K9s SB −100 HL R14 #06).
+    # SB: fold weak suited trash vs opens (K9s SB −100 HL R14 #06; Q5s/Q6s/KTs S9).
     if (position == "SB" and call_chips > 0 and hc in _SB_WEAK_SUITED_VS_OPEN
             and "fold" in available):
+        return "fold", None
+
+    # SB 6-max: no set-mine flats with 22–77 OOP (S9: 22/44/77 SB call → postflop bleed).
+    if (position == "SB" and call_chips > 0
+            and not _is_hu_table(table or {})
+            and hc in _LOW_PAIRS_PROTECT and "fold" in available):
+        return "fold", None
+
+    # CO/BTN: fold weak suited cold-call trash vs raise (Q5s BTN / J8s CO / A6s CO S9).
+    if (position in ("CO", "BTN") and call_chips > 0
+            and hc in _CO_BTN_WEAK_SUITED_VS_OPEN and "fold" in available):
         return "fold", None
 
     # Nemesis tight: SB vs known hunters — premiums only (HL R21 S1a export).
@@ -3360,7 +3547,7 @@ def _is_bb_float_trash(hc: str) -> bool:
 
 
 def _is_bb_suited_trash(hc: str) -> bool:
-    """Low suited junk BB floats (T2s, 98s — HL R6 #04/#05)."""
+    """Low suited junk BB floats (T2s, 98s — HL R6 #04/#05; J7s/K9s S9)."""
     if len(hc) != 3 or hc[2] != "s" or hc[0] == hc[1]:
         return False
     if _is_sb_suited_trash(hc):
@@ -3368,7 +3555,11 @@ def _is_bb_suited_trash(hc: str) -> bool:
     hi, lo = _RANKS.index(hc[0]), _RANKS.index(hc[1])
     if hi <= 6 and lo <= 4:
         return True
-    return hc in {"J8s", "T8s", "K8s"}
+    # Dominated broadway/mid suited — BB float leaks on S9 chip-qual runway.
+    return hc in {
+        "J8s", "J7s", "J6s", "T8s", "T7s", "K9s", "K8s",
+        "Q7s", "Q6s", "Q5s", "Q4s",
+    }
 
 
 def _is_sb_complete_trash(hc: str) -> bool:
@@ -3683,6 +3874,22 @@ def _hero_pocket_under_board_overcards(
         return False
     top = max(branks, key=lambda r: _RANKS.index(r))
     return _RANKS.index(top) > _RANKS.index(pr)
+
+
+def _hero_weak_king_high_air(hole: list[str], board: list[str], hc: str) -> bool:
+    """K9–K2 (suited/offsuit) with no pair — K9s CO −11 on 43Jxx (S10 climb2)."""
+    if len(board) < 3 or len(hole) != 2:
+        return False
+    if hc not in {
+        "K9s", "K8s", "K7s", "K6s", "K5s", "K4s", "K3s", "K2s",
+        "K9o", "K8o", "K7o", "K6o", "K5o", "K4o", "K3o", "K2o",
+    }:
+        return False
+    hranks = [c[0].upper() for c in hole]
+    branks = [c[0].upper() for c in board]
+    if any(r in branks for r in hranks):
+        return False
+    return True
 
 
 def _hero_ip_weak_top_on_kq_runout(hole: list[str], board: list[str]) -> bool:
@@ -4279,6 +4486,26 @@ def _postflop_free(equity: float, allowed: dict, available: list,
         return "check", None
     if ps_library and ps_bias == "check" and "check" in available:
         return "check", None
+    # Hard mixed-strategy from bake (texas_solver_v*): sample σ, fail-open soft.
+    if solver_hard_enabled() and solver_freqs:
+        sampled = sample_action_from_freqs(
+            solver_freqs,
+            facing_bet=False,
+            available=list(available),
+            rng=secrets.SystemRandom(),
+        )
+        if sampled is not None:
+            action_name, size_frac = sampled
+            if action_name in ("check", "fold", "call"):
+                if action_name in available:
+                    return action_name, None
+            elif action_name in ("bet", "raise") and action_name in available:
+                frac = float(size_frac if size_frac is not None else 0.66)
+                br = allowed.get("betRange") or allowed.get("raiseRange") or {}
+                min_bet = int(br.get("min") or max(int(pot * 0.33), 1))
+                max_bet = int(br.get("max") or min_bet)
+                target = max(min_bet, min(int(pot * frac), max_bet))
+                return action_name, target
     bet_bar = 0.78 if pot_control else 0.72
     bet_bar += float(margins.get("bet_bar_delta", 0))
     size_frac = 0.66
@@ -4444,6 +4671,14 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
             and _hero_pocket_under_board_overcards(hole, board, hand_class)
             and len(board) >= 4
             and call_chips >= max(int(pot * 0.22), 1)
+            and "fold" in available):
+        return "fold", None
+
+    # EP/MP OOP pocket under overcards (S9 22 MP on 65TQ6).
+    if (position in ("UTG", "MP") and not in_position
+            and _hero_pocket_under_board_overcards(hole, board, hand_class)
+            and len(board) >= 3
+            and call_chips >= max(int(pot * 0.18), 1)
             and "fold" in available):
         return "fold", None
 
@@ -4684,6 +4919,52 @@ def _postflop_facing_bet(equity: float, pot_odds: float, allowed: dict,
     if (_board_paired_hero_missed(hole, board) and pot_control
             and equity < 0.50 and "fold" in available):
         return "fold", None
+
+    # Blueprint v3 AFTER leak-fold library — fail-open to soft bias below.
+    if blueprint_v3_enabled() and table is not None:
+        v3_entry = lookup_policy_for_table(
+            table,
+            hole,
+            board,
+            in_position=in_position,
+            facing=True,
+            call_chips=call_chips,
+            pot=pot,
+        )
+        if v3_entry:
+            v3_sample = sample_action_v3(
+                v3_entry,
+                available,
+                facing=True,
+                pot=pot,
+                call_chips=call_chips,
+                rng=secrets.SystemRandom(),
+                allowed=allowed,
+            )
+            if v3_sample is not None:
+                return v3_sample
+
+    # Hard σ AFTER leak-fold library — fail-open to soft bias below.
+    if solver_hard_enabled() and solver_freqs:
+        sampled = sample_action_from_freqs(
+            solver_freqs,
+            facing_bet=True,
+            available=list(available),
+            rng=secrets.SystemRandom(),
+        )
+        if sampled is not None:
+            action_name, size_frac = sampled
+            if action_name == "fold" and "fold" in available:
+                return "fold", None
+            if action_name == "call" and "call" in available:
+                return "call", None
+            if action_name in ("raise", "bet", "all-in", "allin") and action_name in available:
+                frac = float(size_frac if size_frac is not None else 0.66)
+                rr = allowed.get("raiseRange") or allowed.get("betRange") or {}
+                min_r = int(rr.get("min") or max(call_chips * 2, int(pot * 0.5), 1))
+                max_r = int(rr.get("max") or min_r)
+                target = max(min_r, min(int(pot * frac) + call_chips, max_r))
+                return action_name, target
 
     # S28 leak: AJo IP on paired boards — don't pay large bets with ace-high / weak pair.
     big_bet = call_chips >= max(int(pot * 0.42), 1)

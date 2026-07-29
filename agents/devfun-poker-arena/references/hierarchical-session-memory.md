@@ -37,8 +37,18 @@ slice sits **alongside** `session_villain_memory` — do not replace exploit_fro
 
 `compute_hierarchical_memory_advisory()` echoes char budget — **not** a submit gate.
 
+## Sequential vs episodic (K146 delta)
+
+When HL drills the **same table/session** across multiple related decide() /
+brief queries, tag the session `sequential_memory` and carry **structured**
+spot-class evidence (street, action line, failure-unit IDs) across queries —
+not occupancy-only maps and not raw episode transcripts. Wipe between unrelated
+briefs (episodic). Complements stigmergy scores; **advisory only** — no submit
+gate. Brief: `briefs/2026-07-26_k146-structured-persistent-memory-delta.md`.
+
 ## Related
 
 - `references/deepsearch-trajectory-filter.md` (K161 P1)
 - `references/expert-yardstick-pool.md` (long-term)
 - `briefs/2026-07-13_k161-hierarchical-memory-deepsearch-steal.md`
+- `briefs/2026-07-26_k146-structured-persistent-memory-delta.md`

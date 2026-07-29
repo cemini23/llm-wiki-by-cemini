@@ -36,6 +36,14 @@ promotion score.
 Stronger self-play or soft-field crush does **not** override style or yardstick
 gaps.
 
+## Verifier–deployment gap (K198)
+
+Self-authored pytest / regret-loss improvement is **not** a promotion signal.
+Require external yardsticks + play-adequacy fixtures. See
+`references/verifier-deployment-gap.md` and
+`references/swap-regret-training-notes.md`.
+Evidential ceiling on modest clean boards: `references/eval-claim-ceiling.md` (K220).
+
 ## Confirmed helps / fails (K160)
 
 | Helps | Fails |

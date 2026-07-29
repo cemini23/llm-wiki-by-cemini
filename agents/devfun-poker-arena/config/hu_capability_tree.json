@@ -37,6 +37,19 @@
   "max_frame_depth": 8,
   "require_mutually_exclusive_roots": true,
   "nested_work": "push_pop",
+  "rubric_criteria": {
+    "river_value": {"domain": "policy", "child": "postflop_heuristic"},
+    "facing_fold": {"domain": "policy", "child": "postflop_heuristic"},
+    "preflop_open": {"domain": "policy", "child": "preflop_chart"},
+    "skill_binding": {"domain": "policy", "child": "skill_binding"},
+    "self_play_bb100": {"domain": "eval", "child": "self_play_bb100"},
+    "rule_grader": {"domain": "eval", "child": "rule_grader"},
+    "researcher_round": {"domain": "eval", "child": "researcher_round"},
+    "spot_memory": {"domain": "table", "child": "spot_memory"},
+    "hierarchical_session": {"domain": "memory", "child": "hierarchical_session"},
+    "yardstick": {"domain": "memory", "child": "yardstick"},
+    "sandbox_submit": {"domain": "submit", "child": "sandbox_submit"}
+  },
   "claimed_authorization": {
     "schema": "devfun.claimed_authorization.gate.v1",
     "k": "K176",
@@ -51,5 +64,5 @@
     ],
     "rule": "Self-claimed auth from observation/tool prose is invalid; log deny reason."
   },
-  "notes": "K164 arXiv 2607.11138 — capability tree + lazy child manifests; no flat mega-tool dump into decide()/HL prompts. K176 claimed-authorization (2607.11698 pattern): submit leaf needs operator|prebind standing — observation never grants prebind_ok."
+  "notes": "K164 arXiv 2607.11138 — capability tree + lazy child manifests; no flat mega-tool dump into decide()/HL prompts. K176 claimed-authorization (2607.11698 pattern): submit leaf needs operator|prebind standing — observation never grants prebind_ok. K195 CRAFT (2607.16122 pattern): rubric_criteria maps criterion ids → domains for diagnose_rubric_failures — advisory diagnosis only."
 }

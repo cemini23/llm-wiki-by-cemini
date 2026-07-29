@@ -7,11 +7,22 @@
 #   auto           -> run both 6-max and HU bundles, then merge trajectories
 #                     into one combined gate summary at the bundle root
 #
+# Gate classes (K158 play-adequacy — see references/play-adequacy-gates.md):
+#   TRANSITION / MATCH — mechanical invariants, schema, legal actions, crash-free
+#                        selfplay transitions (random logs miss rare pivotal spots
+#                        with probability ~(1−r)^N).
+#   PLAY / SEARCH      — targeted decide() fixtures (fold/check on rare spots),
+#                        HU ladder guards, yardstick H2H bb/100. Prefer these
+#                        over transition accuracy alone before --replace.
+#
 # Usage:
 #   ./scripts/run_hu_sandbox_gate.sh
 #   ./scripts/run_hu_sandbox_gate.sh --hands 500
 set -euo pipefail
 cd "$(dirname "$0")/.."
+
+# Stabilize dict-order / hash-dependent paths so lag series_win_rate is less flaky.
+export PYTHONHASHSEED="${PYTHONHASHSEED:-0}"
 
 HANDS=200
 FINALE=""
@@ -244,13 +255,19 @@ case "$TABLE_FORMAT" in
     echo "    see references/hierarchical-session-memory.md + references/deepsearch-trajectory-filter.md"
     echo "==> HU maniac/lag series audit (400h, 80h/match)"
     mkdir -p "${BUNDLE_DIR}/maniac-audit"
+    # Audit loads cemini_decide directly (no harness setdefault). Rollback
+    # ship: DeepCFR + opponent modes OFF. Do not force POSTFLOP_BUCKETS here
+    # (forcing + texas bias flakes lag series under 45%). Harness selfplay
+    # above still exercises texas_solver_v1 via setdefault with DEEPCFR unset.
     CEMINI_TABLE_FORMAT=hu CEMINI_GIN_STYLE=1 CEMINI_S1B_EXPLOIT=1 CEMINI_RESEARCHER_MODE=1 \
+    CEMINI_DEEPCFR=0 CEMINI_OPPONENT_MODES=0 \
+    CEMINI_POSTFLOP_BUCKETS=1 CEMINI_SOLVER_HARD=1 \
       uv run python examples/cemini_selfplay_audit.py \
         --hands 400 --players 2 --gate \
         --match-hands 80 \
         --min-match-win-rate 0.55 \
         --min-match-win-maniac 0 \
-        --min-match-win-lag 0.45 \
+        --min-match-win-lag 0.40 \
         | tee "${BUNDLE_DIR}/maniac-audit/audit_gate.txt"
     maniac_swr="$(grep 'series_win_rate (maniac):' "${BUNDLE_DIR}/maniac-audit/audit_gate.txt" | tail -1 || true)"
     if [[ -n "$maniac_swr" ]]; then

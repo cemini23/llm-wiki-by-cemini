@@ -1,0 +1,6516 @@
+{
+  "buckets": {
+    "flop|srp|ip|dry|2to5|free|air": {
+      "combos": 704,
+      "freqs": {
+        "allin": 0.23926344800106258,
+        "bet_033": 0.0,
+        "bet_075": 0.29034204408079306,
+        "check": 0.47039450791814436
+      },
+      "mass": 703.9999997841114,
+      "node": "free",
+      "weight": 0.9999999996933401
+    },
+    "flop|srp|ip|dry|2to5|free|draw_weak": {
+      "combos": 1020,
+      "freqs": {
+        "allin": 0.12810339603983262,
+        "bet_033": 0.0,
+        "bet_075": 0.032969829324999936,
+        "check": 0.8389267746351674
+      },
+      "mass": 1019.9999996727202,
+      "node": "free",
+      "weight": 0.9999999996791374
+    },
+    "flop|srp|ip|dry|2to5|free|mid_pair": {
+      "combos": 399,
+      "freqs": {
+        "allin": 0.020486735534519025,
+        "bet_033": 0.0,
+        "bet_075": 0.4114740182920266,
+        "check": 0.5680392461734544
+      },
+      "mass": 398.9999998079147,
+      "node": "free",
+      "weight": 0.9999999995185832
+    },
+    "flop|srp|ip|dry|2to5|free|overpair": {
+      "combos": 222,
+      "freqs": {
+        "allin": 0.8469758913757636,
+        "bet_033": 0.0,
+        "bet_075": 0.15302410862423646,
+        "check": 0.0
+      },
+      "mass": 221.99999963631853,
+      "node": "free",
+      "weight": 0.9999999983617952
+    },
+    "flop|srp|ip|dry|2to5|free|tp_good": {
+      "combos": 318,
+      "freqs": {
+        "allin": 0.2612312206716564,
+        "bet_033": 0.0,
+        "bet_075": 0.7387669004258721,
+        "check": 1.8789024714639656e-06
+      },
+      "mass": 318.0000007181079,
+      "node": "free",
+      "weight": 1.000000002258201
+    },
+    "flop|srp|ip|dry|2to5|free|tp_weak": {
+      "combos": 102,
+      "freqs": {
+        "allin": 0.021020487337295543,
+        "bet_033": 0.0,
+        "bet_075": 0.9786518461349663,
+        "check": 0.0003276665277382045
+      },
+      "mass": 101.99999945409036,
+      "node": "free",
+      "weight": 0.9999999946479446
+    },
+    "flop|srp|ip|dry|2to5|free|two_pair_plus": {
+      "combos": 83,
+      "freqs": {
+        "allin": 0.27458283331581723,
+        "bet_033": 0.0,
+        "bet_075": 0.7254171666841828,
+        "check": 0.0
+      },
+      "mass": 82.99999986588955,
+      "node": "free",
+      "weight": 0.9999999983842114
+    },
+    "flop|srp|ip|dry|2to5|free|weak_pair": {
+      "combos": 360,
+      "freqs": {
+        "allin": 0.0021586625220199177,
+        "bet_033": 0.0,
+        "bet_075": 0.15208217213230632,
+        "check": 0.8457591653456737
+      },
+      "mass": 360.0000013845274,
+      "node": "free",
+      "weight": 1.0000000038459096
+    },
+    "flop|srp|ip|dry|2to5|vs_big|air": {
+      "combos": 704,
+      "freqs": {
+        "allin": 0.09389819022651051,
+        "call": 0.1015054046565428,
+        "fold": 0.8045964051169466,
+        "raise_060": 0.0
+      },
+      "mass": 704.0000003118839,
+      "node": "vs_big",
+      "weight": 1.000000000443017
+    },
+    "flop|srp|ip|dry|2to5|vs_big|draw_weak": {
+      "combos": 1020,
+      "freqs": {
+        "allin": 0.08264682901904355,
+        "call": 0.400909752576063,
+        "fold": 0.5164434184048935,
+        "raise_060": 0.0
+      },
+      "mass": 1019.9999962954316,
+      "node": "vs_big",
+      "weight": 0.9999999963680702
+    },
+    "flop|srp|ip|dry|2to5|vs_big|mid_pair": {
+      "combos": 399,
+      "freqs": {
+        "allin": 0.11233529358428981,
+        "call": 0.7859297204880626,
+        "fold": 0.10173498592764758,
+        "raise_060": 0.0
+      },
+      "mass": 399.00000038695725,
+      "node": "vs_big",
+      "weight": 1.0000000009698178
+    },
+    "flop|srp|ip|dry|2to5|vs_big|overpair": {
+      "combos": 222,
+      "freqs": {
+        "allin": 0.9591750723073436,
+        "call": 0.04006132026104237,
+        "fold": 0.0007636074316140899,
+        "raise_060": 0.0
+      },
+      "mass": 221.99999949532753,
+      "node": "vs_big",
+      "weight": 0.9999999977267006
+    },
+    "flop|srp|ip|dry|2to5|vs_big|tp_good": {
+      "combos": 318,
+      "freqs": {
+        "allin": 0.6886525386130412,
+        "call": 0.31038469387866774,
+        "fold": 0.000962767508291029,
+        "raise_060": 0.0
+      },
+      "mass": 317.99999987665456,
+      "node": "vs_big",
+      "weight": 0.9999999996121213
+    },
+    "flop|srp|ip|dry|2to5|vs_big|tp_weak": {
+      "combos": 102,
+      "freqs": {
+        "allin": 0.15410524750310658,
+        "call": 0.8443071993062666,
+        "fold": 0.0015875531906267863,
+        "raise_060": 0.0
+      },
+      "mass": 101.99999965987865,
+      "node": "vs_big",
+      "weight": 0.999999996665477
+    },
+    "flop|srp|ip|dry|2to5|vs_big|two_pair_plus": {
+      "combos": 83,
+      "freqs": {
+        "allin": 0.9930965451119649,
+        "call": 0.006688416753632662,
+        "fold": 0.00021503813440241283,
+        "raise_060": 0.0
+      },
+      "mass": 83.00000039406268,
+      "node": "vs_big",
+      "weight": 1.000000004747743
+    },
+    "flop|srp|ip|dry|2to5|vs_big|weak_pair": {
+      "combos": 360,
+      "freqs": {
+        "allin": 0.0556034579031547,
+        "call": 0.6251349486954789,
+        "fold": 0.31926159340136634,
+        "raise_060": 0.0
+      },
+      "mass": 359.99999868148006,
+      "node": "vs_big",
+      "weight": 0.9999999963374446
+    },
+    "flop|srp|ip|dry|2to5|vs_over|air": {
+      "combos": 704,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.03720451602699611,
+        "fold": 0.9627954839730039,
+        "raise_060": 0.0
+      },
+      "mass": 704.0000002529559,
+      "node": "vs_over",
+      "weight": 1.0000000003593124
+    },
+    "flop|srp|ip|dry|2to5|vs_over|draw_weak": {
+      "combos": 1020,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.06558046958718598,
+        "fold": 0.934419530412814,
+        "raise_060": 0.0
+      },
+      "mass": 1020.0000009667732,
+      "node": "vs_over",
+      "weight": 1.000000000947817
+    },
+    "flop|srp|ip|dry|2to5|vs_over|mid_pair": {
+      "combos": 399,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.28837709603710465,
+        "fold": 0.7116229039628954,
+        "raise_060": 0.0
+      },
+      "mass": 398.9999990791548,
+      "node": "vs_over",
+      "weight": 0.9999999976921173
+    },
+    "flop|srp|ip|dry|2to5|vs_over|overpair": {
+      "combos": 222,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9994101536855109,
+        "fold": 0.0005898463144891006,
+        "raise_060": 0.0
+      },
+      "mass": 222.0000000204891,
+      "node": "vs_over",
+      "weight": 1.0000000000922933
+    },
+    "flop|srp|ip|dry|2to5|vs_over|tp_good": {
+      "combos": 318,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9452838550726235,
+        "fold": 0.054716144927376566,
+        "raise_060": 0.0
+      },
+      "mass": 318.0000001335866,
+      "node": "vs_over",
+      "weight": 1.0000000004200835
+    },
+    "flop|srp|ip|dry|2to5|vs_over|tp_weak": {
+      "combos": 102,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.7605034251488333,
+        "fold": 0.23949657485116677,
+        "raise_060": 0.0
+      },
+      "mass": 101.99999999325155,
+      "node": "vs_over",
+      "weight": 0.9999999999338387
+    },
+    "flop|srp|ip|dry|2to5|vs_over|two_pair_plus": {
+      "combos": 83,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9999410014772492,
+        "fold": 5.899852275083587e-05,
+        "raise_060": 0.0
+      },
+      "mass": 83.00000005780021,
+      "node": "vs_over",
+      "weight": 1.000000000696388
+    },
+    "flop|srp|ip|dry|2to5|vs_over|weak_pair": {
+      "combos": 360,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.09317907047069983,
+        "fold": 0.9068209295293002,
+        "raise_060": 0.0
+      },
+      "mass": 360.00000010157237,
+      "node": "vs_over",
+      "weight": 1.0000000002821454
+    },
+    "flop|srp|ip|dry|2to5|vs_raise|air": {
+      "combos": 704,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.01855920927505253,
+        "fold": 0.9814407907249475,
+        "raise_060": 0.0
+      },
+      "mass": 703.9999996254592,
+      "node": "vs_raise",
+      "weight": 0.9999999994679818
+    },
+    "flop|srp|ip|dry|2to5|vs_raise|draw_weak": {
+      "combos": 1020,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.008505564635919267,
+        "fold": 0.9914944353640808,
+        "raise_060": 0.0
+      },
+      "mass": 1020.0000001127628,
+      "node": "vs_raise",
+      "weight": 1.0000000001105518
+    },
+    "flop|srp|ip|dry|2to5|vs_raise|mid_pair": {
+      "combos": 399,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.11195811438330967,
+        "fold": 0.8880418856166903,
+        "raise_060": 0.0
+      },
+      "mass": 399.0000001487788,
+      "node": "vs_raise",
+      "weight": 1.000000000372879
+    },
+    "flop|srp|ip|dry|2to5|vs_raise|overpair": {
+      "combos": 222,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9999506823636822,
+        "fold": 4.931763631773685e-05,
+        "raise_060": 0.0
+      },
+      "mass": 222.00000003608875,
+      "node": "vs_raise",
+      "weight": 1.000000000162562
+    },
+    "flop|srp|ip|dry|2to5|vs_raise|tp_good": {
+      "combos": 318,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.843771953052937,
+        "fold": 0.15622804694706302,
+        "raise_060": 0.0
+      },
+      "mass": 318.00000021663436,
+      "node": "vs_raise",
+      "weight": 1.0000000006812402
+    },
+    "flop|srp|ip|dry|2to5|vs_raise|tp_weak": {
+      "combos": 102,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.528832062637402,
+        "fold": 0.47116793736259804,
+        "raise_060": 0.0
+      },
+      "mass": 102.00000028591603,
+      "node": "vs_raise",
+      "weight": 1.0000000028030984
+    },
+    "flop|srp|ip|dry|2to5|vs_raise|two_pair_plus": {
+      "combos": 83,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 83.0,
+      "node": "vs_raise",
+      "weight": 1.0
+    },
+    "flop|srp|ip|dry|2to5|vs_raise|weak_pair": {
+      "combos": 360,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.010129903227660688,
+        "fold": 0.9898700967723393,
+        "raise_060": 0.0
+      },
+      "mass": 359.9999995678663,
+      "node": "vs_raise",
+      "weight": 0.9999999987996286
+    },
+    "flop|srp|ip|dry|gt5|free|air": {
+      "combos": 704,
+      "freqs": {
+        "allin": 0.1872286834088771,
+        "bet_033": 0.0,
+        "bet_075": 0.37488912450932177,
+        "check": 0.4378821920818011
+      },
+      "mass": 703.9999998836429,
+      "node": "free",
+      "weight": 0.99999999983472
+    },
+    "flop|srp|ip|dry|gt5|free|draw_weak": {
+      "combos": 1020,
+      "freqs": {
+        "allin": 0.09623687142980754,
+        "bet_033": 0.0,
+        "bet_075": 0.04895107155439644,
+        "check": 0.854812057015796
+      },
+      "mass": 1019.9999988708587,
+      "node": "free",
+      "weight": 0.9999999988929987
+    },
+    "flop|srp|ip|dry|gt5|free|mid_pair": {
+      "combos": 399,
+      "freqs": {
+        "allin": 0.0013651651633634118,
+        "bet_033": 0.0,
+        "bet_075": 0.6753083702971265,
+        "check": 0.32332646453951003
+      },
+      "mass": 399.00000014779016,
+      "node": "free",
+      "weight": 1.0000000003704015
+    },
+    "flop|srp|ip|dry|gt5|free|overpair": {
+      "combos": 222,
+      "freqs": {
+        "allin": 0.68556632857867,
+        "bet_033": 0.0,
+        "bet_075": 0.31443367142133,
+        "check": 0.0
+      },
+      "mass": 221.99999923841096,
+      "node": "free",
+      "weight": 0.9999999965694187
+    },
+    "flop|srp|ip|dry|gt5|free|tp_good": {
+      "combos": 318,
+      "freqs": {
+        "allin": 0.06179229391460358,
+        "bet_033": 0.0,
+        "bet_075": 0.9382077060853964,
+        "check": 0.0
+      },
+      "mass": 317.9999998132698,
+      "node": "free",
+      "weight": 0.9999999994127982
+    },
+    "flop|srp|ip|dry|gt5|free|tp_weak": {
+      "combos": 102,
+      "freqs": {
+        "allin": 0.0038801635586471093,
+        "bet_033": 0.0,
+        "bet_075": 0.9960733084826668,
+        "check": 4.65279586860794e-05
+      },
+      "mass": 102.00000012438682,
+      "node": "free",
+      "weight": 1.0000000012194785
+    },
+    "flop|srp|ip|dry|gt5|free|two_pair_plus": {
+      "combos": 83,
+      "freqs": {
+        "allin": 0.22842944736069126,
+        "bet_033": 0.0,
+        "bet_075": 0.7715705526393087,
+        "check": 0.0
+      },
+      "mass": 82.99999986425973,
+      "node": "free",
+      "weight": 0.9999999983645751
+    },
+    "flop|srp|ip|dry|gt5|free|weak_pair": {
+      "combos": 360,
+      "freqs": {
+        "allin": 0.0008859662788773424,
+        "bet_033": 0.0,
+        "bet_075": 0.2964912014224656,
+        "check": 0.7026228322986571
+      },
+      "mass": 359.9999980870052,
+      "node": "free",
+      "weight": 0.9999999946861257
+    },
+    "flop|srp|ip|dry|gt5|vs_big|air": {
+      "combos": 704,
+      "freqs": {
+        "allin": 0.11447237817311078,
+        "call": 0.11474612623515662,
+        "fold": 0.7707814955917326,
+        "raise_060": 0.0
+      },
+      "mass": 703.9999962903694,
+      "node": "vs_big",
+      "weight": 0.9999999947306383
+    },
+    "flop|srp|ip|dry|gt5|vs_big|draw_weak": {
+      "combos": 1020,
+      "freqs": {
+        "allin": 0.08068208596669486,
+        "call": 0.4416397277803766,
+        "fold": 0.4776781862529285,
+        "raise_060": 0.0
+      },
+      "mass": 1019.9999980158027,
+      "node": "vs_big",
+      "weight": 0.9999999980547085
+    },
+    "flop|srp|ip|dry|gt5|vs_big|mid_pair": {
+      "combos": 399,
+      "freqs": {
+        "allin": 0.08146886717177484,
+        "call": 0.875386269570037,
+        "fold": 0.04314486325818817,
+        "raise_060": 0.0
+      },
+      "mass": 399.0000002943998,
+      "node": "vs_big",
+      "weight": 1.000000000737844
+    },
+    "flop|srp|ip|dry|gt5|vs_big|overpair": {
+      "combos": 222,
+      "freqs": {
+        "allin": 0.9156164917795249,
+        "call": 0.08429334760263398,
+        "fold": 9.016061784120858e-05,
+        "raise_060": 0.0
+      },
+      "mass": 221.99999925533393,
+      "node": "vs_big",
+      "weight": 0.9999999966456483
+    },
+    "flop|srp|ip|dry|gt5|vs_big|tp_good": {
+      "combos": 318,
+      "freqs": {
+        "allin": 0.600602711291751,
+        "call": 0.396877044491962,
+        "fold": 0.00252024421628702,
+        "raise_060": 0.0
+      },
+      "mass": 317.9999999681861,
+      "node": "vs_big",
+      "weight": 0.9999999998999562
+    },
+    "flop|srp|ip|dry|gt5|vs_big|tp_weak": {
+      "combos": 102,
+      "freqs": {
+        "allin": 0.07851446540691617,
+        "call": 0.9201921232980471,
+        "fold": 0.0012934112950367333,
+        "raise_060": 0.0
+      },
+      "mass": 101.99999932407309,
+      "node": "vs_big",
+      "weight": 0.9999999933732656
+    },
+    "flop|srp|ip|dry|gt5|vs_big|two_pair_plus": {
+      "combos": 83,
+      "freqs": {
+        "allin": 0.9952933056161127,
+        "call": 0.004633665554885121,
+        "fold": 7.30288290021089e-05,
+        "raise_060": 0.0
+      },
+      "mass": 83.00000019917837,
+      "node": "vs_big",
+      "weight": 1.0000000023997395
+    },
+    "flop|srp|ip|dry|gt5|vs_big|weak_pair": {
+      "combos": 360,
+      "freqs": {
+        "allin": 0.04261784287934312,
+        "call": 0.7520398399233189,
+        "fold": 0.20534231719733798,
+        "raise_060": 0.0
+      },
+      "mass": 359.99999979396114,
+      "node": "vs_big",
+      "weight": 0.9999999994276698
+    },
+    "flop|srp|ip|dry|gt5|vs_over|air": {
+      "combos": 704,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.011837291799502879,
+        "fold": 0.9881627082004971,
+        "raise_060": 0.0
+      },
+      "mass": 704.0000001006238,
+      "node": "vs_over",
+      "weight": 1.0000000001429314
+    },
+    "flop|srp|ip|dry|gt5|vs_over|draw_weak": {
+      "combos": 1020,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.03131768810673756,
+        "fold": 0.9686823118932625,
+        "raise_060": 0.0
+      },
+      "mass": 1020.000000782813,
+      "node": "vs_over",
+      "weight": 1.0000000007674636
+    },
+    "flop|srp|ip|dry|gt5|vs_over|mid_pair": {
+      "combos": 399,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.12360160770598495,
+        "fold": 0.8763983922940151,
+        "raise_060": 0.0
+      },
+      "mass": 398.9999999185093,
+      "node": "vs_over",
+      "weight": 0.9999999997957626
+    },
+    "flop|srp|ip|dry|gt5|vs_over|overpair": {
+      "combos": 222,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.994133094031165,
+        "fold": 0.005866905968834968,
+        "raise_060": 0.0
+      },
+      "mass": 222.00000014445686,
+      "node": "vs_over",
+      "weight": 1.0000000006507066
+    },
+    "flop|srp|ip|dry|gt5|vs_over|tp_good": {
+      "combos": 318,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.8748416253649186,
+        "fold": 0.12515837463508137,
+        "raise_060": 0.0
+      },
+      "mass": 317.9999989219359,
+      "node": "vs_over",
+      "weight": 0.9999999966098614
+    },
+    "flop|srp|ip|dry|gt5|vs_over|tp_weak": {
+      "combos": 102,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.3846921775984557,
+        "fold": 0.6153078224015442,
+        "raise_060": 0.0
+      },
+      "mass": 101.99999924656004,
+      "node": "vs_over",
+      "weight": 0.9999999926133337
+    },
+    "flop|srp|ip|dry|gt5|vs_over|two_pair_plus": {
+      "combos": 83,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9994658362863431,
+        "fold": 0.0005341637136568835,
+        "raise_060": 0.0
+      },
+      "mass": 83.00000010378426,
+      "node": "vs_over",
+      "weight": 1.0000000012504127
+    },
+    "flop|srp|ip|dry|gt5|vs_over|weak_pair": {
+      "combos": 360,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.020868125321072815,
+        "fold": 0.9791318746789271,
+        "raise_060": 0.0
+      },
+      "mass": 359.9999992433004,
+      "node": "vs_over",
+      "weight": 0.9999999978980567
+    },
+    "flop|srp|ip|dry|gt5|vs_raise|air": {
+      "combos": 2112,
+      "freqs": {
+        "allin": 0.019093533821330035,
+        "call": 0.0357643711993476,
+        "fold": 0.9451420949793223,
+        "raise_060": 0.0
+      },
+      "mass": 2111.999999584601,
+      "node": "vs_raise",
+      "weight": 0.9999999998033149
+    },
+    "flop|srp|ip|dry|gt5|vs_raise|draw_weak": {
+      "combos": 3060,
+      "freqs": {
+        "allin": 0.0071119001325422775,
+        "call": 0.03931438765895583,
+        "fold": 0.9535737122085018,
+        "raise_060": 0.0
+      },
+      "mass": 3060.0000011470584,
+      "node": "vs_raise",
+      "weight": 1.0000000003748557
+    },
+    "flop|srp|ip|dry|gt5|vs_raise|mid_pair": {
+      "combos": 1197,
+      "freqs": {
+        "allin": 0.010898713010579661,
+        "call": 0.19666396980804385,
+        "fold": 0.7924373171813764,
+        "raise_060": 0.0
+      },
+      "mass": 1197.0000009641517,
+      "node": "vs_raise",
+      "weight": 1.0000000008054735
+    },
+    "flop|srp|ip|dry|gt5|vs_raise|overpair": {
+      "combos": 666,
+      "freqs": {
+        "allin": 0.2715330677196098,
+        "call": 0.678707463740764,
+        "fold": 0.04975946853962623,
+        "raise_060": 0.0
+      },
+      "mass": 666.000000182561,
+      "node": "vs_raise",
+      "weight": 1.0000000002741156
+    },
+    "flop|srp|ip|dry|gt5|vs_raise|tp_good": {
+      "combos": 954,
+      "freqs": {
+        "allin": 0.12076332785195155,
+        "call": 0.5722861808442036,
+        "fold": 0.3069504913038449,
+        "raise_060": 0.0
+      },
+      "mass": 953.9999996433871,
+      "node": "vs_raise",
+      "weight": 0.9999999996261919
+    },
+    "flop|srp|ip|dry|gt5|vs_raise|tp_weak": {
+      "combos": 306,
+      "freqs": {
+        "allin": 0.026305641395690187,
+        "call": 0.40337039424385357,
+        "fold": 0.5703239643604563,
+        "raise_060": 0.0
+      },
+      "mass": 305.9999990670476,
+      "node": "vs_raise",
+      "weight": 0.999999996951136
+    },
+    "flop|srp|ip|dry|gt5|vs_raise|two_pair_plus": {
+      "combos": 249,
+      "freqs": {
+        "allin": 0.33155847455980086,
+        "call": 0.6635232673985662,
+        "fold": 0.004918258041632993,
+        "raise_060": 0.0
+      },
+      "mass": 249.0000001913213,
+      "node": "vs_raise",
+      "weight": 1.0000000007683587
+    },
+    "flop|srp|ip|dry|gt5|vs_raise|weak_pair": {
+      "combos": 1080,
+      "freqs": {
+        "allin": 0.006835361162794081,
+        "call": 0.06210890667281634,
+        "fold": 0.9310557321643895,
+        "raise_060": 0.0
+      },
+      "mass": 1079.9999989238568,
+      "node": "vs_raise",
+      "weight": 0.9999999990035711
+    },
+    "flop|srp|ip|dry|le2|free|air": {
+      "combos": 704,
+      "freqs": {
+        "allin": 0.7366745013225497,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.2633254986774503
+      },
+      "mass": 703.9999993877573,
+      "node": "free",
+      "weight": 0.999999999130337
+    },
+    "flop|srp|ip|dry|le2|free|draw_weak": {
+      "combos": 1020,
+      "freqs": {
+        "allin": 0.292323132294982,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.7076768677050179
+      },
+      "mass": 1020.0000012754463,
+      "node": "free",
+      "weight": 1.0000000012504375
+    },
+    "flop|srp|ip|dry|le2|free|mid_pair": {
+      "combos": 399,
+      "freqs": {
+        "allin": 0.6032511976513292,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.3967488023486708
+      },
+      "mass": 399.00000004074536,
+      "node": "free",
+      "weight": 1.0000000001021188
+    },
+    "flop|srp|ip|dry|le2|free|overpair": {
+      "combos": 222,
+      "freqs": {
+        "allin": 1.0,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.0
+      },
+      "mass": 222.0,
+      "node": "free",
+      "weight": 1.0
+    },
+    "flop|srp|ip|dry|le2|free|tp_good": {
+      "combos": 318,
+      "freqs": {
+        "allin": 1.0,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.0
+      },
+      "mass": 318.0,
+      "node": "free",
+      "weight": 1.0
+    },
+    "flop|srp|ip|dry|le2|free|tp_weak": {
+      "combos": 102,
+      "freqs": {
+        "allin": 1.0,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.0
+      },
+      "mass": 102.0,
+      "node": "free",
+      "weight": 1.0
+    },
+    "flop|srp|ip|dry|le2|free|two_pair_plus": {
+      "combos": 83,
+      "freqs": {
+        "allin": 1.0,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.0
+      },
+      "mass": 83.0,
+      "node": "free",
+      "weight": 1.0
+    },
+    "flop|srp|ip|dry|le2|free|weak_pair": {
+      "combos": 360,
+      "freqs": {
+        "allin": 0.2210966700546941,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.7789033299453059
+      },
+      "mass": 360.00000007930794,
+      "node": "free",
+      "weight": 1.0000000002202998
+    },
+    "flop|srp|ip|dry|le2|vs_over|air": {
+      "combos": 704,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.060004649625121705,
+        "fold": 0.9399953503748782,
+        "raise_060": 0.0
+      },
+      "mass": 704.00000025388,
+      "node": "vs_over",
+      "weight": 1.000000000360625
+    },
+    "flop|srp|ip|dry|le2|vs_over|draw_weak": {
+      "combos": 1020,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.24910659151410133,
+        "fold": 0.7508934084858987,
+        "raise_060": 0.0
+      },
+      "mass": 1019.9999976139643,
+      "node": "vs_over",
+      "weight": 0.9999999976607493
+    },
+    "flop|srp|ip|dry|le2|vs_over|mid_pair": {
+      "combos": 399,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9498395849126139,
+        "fold": 0.05016041508738607,
+        "raise_060": 0.0
+      },
+      "mass": 399.00000070971146,
+      "node": "vs_over",
+      "weight": 1.0000000017787254
+    },
+    "flop|srp|ip|dry|le2|vs_over|overpair": {
+      "combos": 222,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 222.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|dry|le2|vs_over|tp_good": {
+      "combos": 318,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 318.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|dry|le2|vs_over|tp_weak": {
+      "combos": 102,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9999567515761595,
+        "fold": 4.324842384053147e-05,
+        "raise_060": 0.0
+      },
+      "mass": 102.00000011868633,
+      "node": "vs_over",
+      "weight": 1.0000000011635914
+    },
+    "flop|srp|ip|dry|le2|vs_over|two_pair_plus": {
+      "combos": 83,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 83.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|dry|le2|vs_over|weak_pair": {
+      "combos": 360,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.508247312660106,
+        "fold": 0.49175268733989397,
+        "raise_060": 0.0
+      },
+      "mass": 359.99999989472053,
+      "node": "vs_over",
+      "weight": 0.999999999707557
+    },
+    "flop|srp|ip|paired|2to5|free|air": {
+      "combos": 800,
+      "freqs": {
+        "allin": 0.09841878297886864,
+        "bet_033": 0.0,
+        "bet_075": 0.3649885043923841,
+        "check": 0.5365927126287472
+      },
+      "mass": 800.0000003298046,
+      "node": "free",
+      "weight": 1.0000000004122558
+    },
+    "flop|srp|ip|paired|2to5|free|draw_strong": {
+      "combos": 224,
+      "freqs": {
+        "allin": 0.12143302907507343,
+        "bet_033": 0.0,
+        "bet_075": 0.25257993595146533,
+        "check": 0.6259870349734612
+      },
+      "mass": 224.0000013410172,
+      "node": "free",
+      "weight": 1.0000000059866838
+    },
+    "flop|srp|ip|paired|2to5|free|draw_weak": {
+      "combos": 820,
+      "freqs": {
+        "allin": 0.041470033923291294,
+        "bet_033": 0.0,
+        "bet_075": 0.09880472699866469,
+        "check": 0.859725239078044
+      },
+      "mass": 820.0000009141513,
+      "node": "free",
+      "weight": 1.0000000011148187
+    },
+    "flop|srp|ip|paired|2to5|free|mid_pair": {
+      "combos": 210,
+      "freqs": {
+        "allin": 0.15759065187402072,
+        "bet_033": 0.0,
+        "bet_075": 0.6021683014692482,
+        "check": 0.24024104665673116
+      },
+      "mass": 210.00000033923425,
+      "node": "free",
+      "weight": 1.0000000016154011
+    },
+    "flop|srp|ip|paired|2to5|free|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.17418251995759199,
+        "bet_033": 0.0,
+        "bet_075": 0.825817480042408,
+        "check": 0.0
+      },
+      "mass": 12.000000009313226,
+      "node": "free",
+      "weight": 1.000000000776102
+    },
+    "flop|srp|ip|paired|2to5|free|overpair": {
+      "combos": 198,
+      "freqs": {
+        "allin": 0.3447732912249754,
+        "bet_033": 0.0,
+        "bet_075": 0.651041447891307,
+        "check": 0.004185260883717585
+      },
+      "mass": 197.99999932170022,
+      "node": "free",
+      "weight": 0.9999999965742435
+    },
+    "flop|srp|ip|paired|2to5|free|two_pair_plus": {
+      "combos": 414,
+      "freqs": {
+        "allin": 0.04380278831884611,
+        "bet_033": 0.0,
+        "bet_075": 0.9290324703193353,
+        "check": 0.027164741361818533
+      },
+      "mass": 414.0000011190855,
+      "node": "free",
+      "weight": 1.000000002703105
+    },
+    "flop|srp|ip|paired|2to5|free|weak_pair": {
+      "combos": 435,
+      "freqs": {
+        "allin": 0.014497962206099795,
+        "bet_033": 0.0,
+        "bet_075": 0.1655461051085937,
+        "check": 0.8199559326853065
+      },
+      "mass": 435.0000004621688,
+      "node": "free",
+      "weight": 1.000000001062457
+    },
+    "flop|srp|ip|paired|2to5|vs_big|air": {
+      "combos": 800,
+      "freqs": {
+        "allin": 0.06472381106127341,
+        "call": 0.10815742198138376,
+        "fold": 0.8271187669573429,
+        "raise_060": 0.0
+      },
+      "mass": 799.999999624004,
+      "node": "vs_big",
+      "weight": 0.999999999530005
+    },
+    "flop|srp|ip|paired|2to5|vs_big|draw_strong": {
+      "combos": 224,
+      "freqs": {
+        "allin": 0.13145284399084672,
+        "call": 0.35256353285311604,
+        "fold": 0.5159836231560372,
+        "raise_060": 0.0
+      },
+      "mass": 223.99999910529004,
+      "node": "vs_big",
+      "weight": 0.9999999960057592
+    },
+    "flop|srp|ip|paired|2to5|vs_big|draw_weak": {
+      "combos": 820,
+      "freqs": {
+        "allin": 0.09073456511664951,
+        "call": 0.45920263865928995,
+        "fold": 0.45006279622406054,
+        "raise_060": 0.0
+      },
+      "mass": 819.9999989066273,
+      "node": "vs_big",
+      "weight": 0.9999999986666187
+    },
+    "flop|srp|ip|paired|2to5|vs_big|mid_pair": {
+      "combos": 210,
+      "freqs": {
+        "allin": 0.25946075153370635,
+        "call": 0.7068794224234269,
+        "fold": 0.03365982604286673,
+        "raise_060": 0.0
+      },
+      "mass": 209.99999957563796,
+      "node": "vs_big",
+      "weight": 0.9999999979792283
+    },
+    "flop|srp|ip|paired|2to5|vs_big|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.9999899636831925,
+        "call": 1.0036316807464038e-05,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 12.000000511261533,
+      "node": "vs_big",
+      "weight": 1.0000000426051276
+    },
+    "flop|srp|ip|paired|2to5|vs_big|overpair": {
+      "combos": 198,
+      "freqs": {
+        "allin": 0.3606508156861648,
+        "call": 0.6358642243213896,
+        "fold": 0.0034849599924456276,
+        "raise_060": 0.0
+      },
+      "mass": 198.00000056277895,
+      "node": "vs_big",
+      "weight": 1.000000002842318
+    },
+    "flop|srp|ip|paired|2to5|vs_big|two_pair_plus": {
+      "combos": 414,
+      "freqs": {
+        "allin": 0.5854894819236065,
+        "call": 0.40943157972656097,
+        "fold": 0.0050789383498325204,
+        "raise_060": 0.0
+      },
+      "mass": 413.9999999181823,
+      "node": "vs_big",
+      "weight": 0.9999999998023728
+    },
+    "flop|srp|ip|paired|2to5|vs_big|weak_pair": {
+      "combos": 435,
+      "freqs": {
+        "allin": 0.0449475230511313,
+        "call": 0.7981640712545148,
+        "fold": 0.15688840569435392,
+        "raise_060": 0.0
+      },
+      "mass": 434.99999953765655,
+      "node": "vs_big",
+      "weight": 0.9999999989371415
+    },
+    "flop|srp|ip|paired|2to5|vs_over|air": {
+      "combos": 800,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0009473430640690012,
+        "fold": 0.999052656935931,
+        "raise_060": 0.0
+      },
+      "mass": 800.000000678323,
+      "node": "vs_over",
+      "weight": 1.0000000008479037
+    },
+    "flop|srp|ip|paired|2to5|vs_over|draw_strong": {
+      "combos": 224,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.04624214179927288,
+        "fold": 0.9537578582007271,
+        "raise_060": 0.0
+      },
+      "mass": 223.99999968029442,
+      "node": "vs_over",
+      "weight": 0.9999999985727429
+    },
+    "flop|srp|ip|paired|2to5|vs_over|draw_weak": {
+      "combos": 820,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.054676555221425394,
+        "fold": 0.9453234447785746,
+        "raise_060": 0.0
+      },
+      "mass": 820.0000026929774,
+      "node": "vs_over",
+      "weight": 1.0000000032841188
+    },
+    "flop|srp|ip|paired|2to5|vs_over|mid_pair": {
+      "combos": 210,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.475629579113292,
+        "fold": 0.5243704208867079,
+        "raise_060": 0.0
+      },
+      "mass": 209.99999935707046,
+      "node": "vs_over",
+      "weight": 0.9999999969384308
+    },
+    "flop|srp|ip|paired|2to5|vs_over|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 12.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|paired|2to5|vs_over|overpair": {
+      "combos": 198,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.7478172649801553,
+        "fold": 0.2521827350198447,
+        "raise_060": 0.0
+      },
+      "mass": 197.9999998761341,
+      "node": "vs_over",
+      "weight": 0.9999999993744146
+    },
+    "flop|srp|ip|paired|2to5|vs_over|two_pair_plus": {
+      "combos": 414,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.8789229518814211,
+        "fold": 0.12107704811857883,
+        "raise_060": 0.0
+      },
+      "mass": 413.99999949501864,
+      "node": "vs_over",
+      "weight": 0.9999999987802383
+    },
+    "flop|srp|ip|paired|2to5|vs_over|weak_pair": {
+      "combos": 435,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.13541701684648624,
+        "fold": 0.8645829831535138,
+        "raise_060": 0.0
+      },
+      "mass": 434.99999966518953,
+      "node": "vs_over",
+      "weight": 0.9999999992303208
+    },
+    "flop|srp|ip|paired|2to5|vs_raise|air": {
+      "combos": 800,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0009832614561764762,
+        "fold": 0.9990167385438236,
+        "raise_060": 0.0
+      },
+      "mass": 800.0000007080721,
+      "node": "vs_raise",
+      "weight": 1.0000000008850902
+    },
+    "flop|srp|ip|paired|2to5|vs_raise|draw_strong": {
+      "combos": 224,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.004760558885211735,
+        "fold": 0.9952394411147882,
+        "raise_060": 0.0
+      },
+      "mass": 224.00000024748442,
+      "node": "vs_raise",
+      "weight": 1.000000001104841
+    },
+    "flop|srp|ip|paired|2to5|vs_raise|draw_weak": {
+      "combos": 820,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.009408705813739749,
+        "fold": 0.9905912941862602,
+        "raise_060": 0.0
+      },
+      "mass": 820.0000014783,
+      "node": "vs_raise",
+      "weight": 1.0000000018028048
+    },
+    "flop|srp|ip|paired|2to5|vs_raise|mid_pair": {
+      "combos": 210,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.32408698862269925,
+        "fold": 0.6759130113773008,
+        "raise_060": 0.0
+      },
+      "mass": 209.9999987911433,
+      "node": "vs_raise",
+      "weight": 0.9999999942435395
+    },
+    "flop|srp|ip|paired|2to5|vs_raise|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 12.0,
+      "node": "vs_raise",
+      "weight": 1.0
+    },
+    "flop|srp|ip|paired|2to5|vs_raise|overpair": {
+      "combos": 198,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.6389136662321766,
+        "fold": 0.36108633376782345,
+        "raise_060": 0.0
+      },
+      "mass": 198.00000045914203,
+      "node": "vs_raise",
+      "weight": 1.000000002318899
+    },
+    "flop|srp|ip|paired|2to5|vs_raise|two_pair_plus": {
+      "combos": 414,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.7420411632214325,
+        "fold": 0.25795883677856746,
+        "raise_060": 0.0
+      },
+      "mass": 413.99999944862793,
+      "node": "vs_raise",
+      "weight": 0.9999999986681835
+    },
+    "flop|srp|ip|paired|2to5|vs_raise|weak_pair": {
+      "combos": 435,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.038834015158304896,
+        "fold": 0.9611659848416951,
+        "raise_060": 0.0
+      },
+      "mass": 434.99999970849603,
+      "node": "vs_raise",
+      "weight": 0.9999999993298759
+    },
+    "flop|srp|ip|paired|gt5|free|air": {
+      "combos": 800,
+      "freqs": {
+        "allin": 0.05046644343248456,
+        "bet_033": 0.0,
+        "bet_075": 0.407068701734042,
+        "check": 0.5424648548334734
+      },
+      "mass": 799.999999135005,
+      "node": "free",
+      "weight": 0.9999999989187563
+    },
+    "flop|srp|ip|paired|gt5|free|draw_strong": {
+      "combos": 224,
+      "freqs": {
+        "allin": 0.009995400026597667,
+        "bet_033": 0.0,
+        "bet_075": 0.3508740277516251,
+        "check": 0.6391305722217773
+      },
+      "mass": 223.9999991567165,
+      "node": "free",
+      "weight": 0.9999999962353415
+    },
+    "flop|srp|ip|paired|gt5|free|draw_weak": {
+      "combos": 820,
+      "freqs": {
+        "allin": 0.009038732896892415,
+        "bet_033": 0.0,
+        "bet_075": 0.16811642375424077,
+        "check": 0.8228448433488668
+      },
+      "mass": 820.0000003616733,
+      "node": "free",
+      "weight": 1.000000000441065
+    },
+    "flop|srp|ip|paired|gt5|free|mid_pair": {
+      "combos": 210,
+      "freqs": {
+        "allin": 0.0934081817328739,
+        "bet_033": 0.0,
+        "bet_075": 0.7732782525523756,
+        "check": 0.1333135657147505
+      },
+      "mass": 209.9999999270442,
+      "node": "free",
+      "weight": 0.9999999996525915
+    },
+    "flop|srp|ip|paired|gt5|free|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.08819475823070694,
+        "bet_033": 0.0,
+        "bet_075": 0.9118052417692931,
+        "check": 0.0
+      },
+      "mass": 12.00000000698492,
+      "node": "free",
+      "weight": 1.0000000005820766
+    },
+    "flop|srp|ip|paired|gt5|free|overpair": {
+      "combos": 198,
+      "freqs": {
+        "allin": 0.11391491435684523,
+        "bet_033": 0.0,
+        "bet_075": 0.8827603640970838,
+        "check": 0.003324721546070983
+      },
+      "mass": 197.999999808937,
+      "node": "free",
+      "weight": 0.9999999990350353
+    },
+    "flop|srp|ip|paired|gt5|free|two_pair_plus": {
+      "combos": 414,
+      "freqs": {
+        "allin": 0.027329617076589142,
+        "bet_033": 0.0,
+        "bet_075": 0.9623073009752471,
+        "check": 0.010363081948163792
+      },
+      "mass": 413.999999814725,
+      "node": "free",
+      "weight": 0.9999999995524759
+    },
+    "flop|srp|ip|paired|gt5|free|weak_pair": {
+      "combos": 435,
+      "freqs": {
+        "allin": 0.0017679538136270683,
+        "bet_033": 0.0,
+        "bet_075": 0.29679402950866307,
+        "check": 0.7014380166777099
+      },
+      "mass": 435.00000008105417,
+      "node": "free",
+      "weight": 1.0000000001863314
+    },
+    "flop|srp|ip|paired|gt5|vs_big|air": {
+      "combos": 800,
+      "freqs": {
+        "allin": 0.05259088002044121,
+        "call": 0.13263074382404902,
+        "fold": 0.8147783761555097,
+        "raise_060": 0.0
+      },
+      "mass": 799.9999988944764,
+      "node": "vs_big",
+      "weight": 0.9999999986180955
+    },
+    "flop|srp|ip|paired|gt5|vs_big|draw_strong": {
+      "combos": 224,
+      "freqs": {
+        "allin": 0.08774514193906653,
+        "call": 0.4261707590968896,
+        "fold": 0.48608409896404386,
+        "raise_060": 0.0
+      },
+      "mass": 224.00000085309148,
+      "node": "vs_big",
+      "weight": 1.000000003808444
+    },
+    "flop|srp|ip|paired|gt5|vs_big|draw_weak": {
+      "combos": 820,
+      "freqs": {
+        "allin": 0.08452453677826227,
+        "call": 0.4796092253014252,
+        "fold": 0.4358662379203125,
+        "raise_060": 0.0
+      },
+      "mass": 819.9999981910805,
+      "node": "vs_big",
+      "weight": 0.9999999977940006
+    },
+    "flop|srp|ip|paired|gt5|vs_big|mid_pair": {
+      "combos": 210,
+      "freqs": {
+        "allin": 0.24286202191106324,
+        "call": 0.7258090998564695,
+        "fold": 0.03132887823246728,
+        "raise_060": 0.0
+      },
+      "mass": 210.00000040607938,
+      "node": "vs_big",
+      "weight": 1.0000000019337114
+    },
+    "flop|srp|ip|paired|gt5|vs_big|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 1.0,
+        "call": 0.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 11.999999966472387,
+      "node": "vs_big",
+      "weight": 0.9999999972060323
+    },
+    "flop|srp|ip|paired|gt5|vs_big|overpair": {
+      "combos": 198,
+      "freqs": {
+        "allin": 0.2753184378170756,
+        "call": 0.7240982210800242,
+        "fold": 0.0005833411029002179,
+        "raise_060": 0.0
+      },
+      "mass": 198.00000056050703,
+      "node": "vs_big",
+      "weight": 1.0000000028308436
+    },
+    "flop|srp|ip|paired|gt5|vs_big|two_pair_plus": {
+      "combos": 414,
+      "freqs": {
+        "allin": 0.635905964534511,
+        "call": 0.361939751408217,
+        "fold": 0.0021542840572719973,
+        "raise_060": 0.0
+      },
+      "mass": 413.999998799638,
+      "node": "vs_big",
+      "weight": 0.9999999971005749
+    },
+    "flop|srp|ip|paired|gt5|vs_big|weak_pair": {
+      "combos": 435,
+      "freqs": {
+        "allin": 0.03928425354119323,
+        "call": 0.8362318924953627,
+        "fold": 0.12448385396344412,
+        "raise_060": 0.0
+      },
+      "mass": 434.99999881534313,
+      "node": "vs_big",
+      "weight": 0.9999999972766509
+    },
+    "flop|srp|ip|paired|gt5|vs_over|air": {
+      "combos": 800,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.614441130660595e-05,
+        "fold": 0.9999838555886934,
+        "raise_060": 0.0
+      },
+      "mass": 800.0000002158049,
+      "node": "vs_over",
+      "weight": 1.0000000002697562
+    },
+    "flop|srp|ip|paired|gt5|vs_over|draw_strong": {
+      "combos": 224,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.007743449254604418,
+        "fold": 0.9922565507453955,
+        "raise_060": 0.0
+      },
+      "mass": 224.0000000386499,
+      "node": "vs_over",
+      "weight": 1.0000000001725442
+    },
+    "flop|srp|ip|paired|gt5|vs_over|draw_weak": {
+      "combos": 820,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.006008899118590065,
+        "fold": 0.99399110088141,
+        "raise_060": 0.0
+      },
+      "mass": 819.9999992034573,
+      "node": "vs_over",
+      "weight": 0.9999999990286064
+    },
+    "flop|srp|ip|paired|gt5|vs_over|mid_pair": {
+      "combos": 210,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.38714522159907494,
+        "fold": 0.6128547784009251,
+        "raise_060": 0.0
+      },
+      "mass": 210.00000030921365,
+      "node": "vs_over",
+      "weight": 1.000000001472446
+    },
+    "flop|srp|ip|paired|gt5|vs_over|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9999999999766587,
+        "fold": 2.3341389006254973e-11,
+        "raise_060": 0.0
+      },
+      "mass": 12.000000000280096,
+      "node": "vs_over",
+      "weight": 1.0000000000233413
+    },
+    "flop|srp|ip|paired|gt5|vs_over|overpair": {
+      "combos": 198,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.5890491263170562,
+        "fold": 0.4109508736829438,
+        "raise_060": 0.0
+      },
+      "mass": 198.00000000186265,
+      "node": "vs_over",
+      "weight": 1.0000000000094074
+    },
+    "flop|srp|ip|paired|gt5|vs_over|two_pair_plus": {
+      "combos": 414,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.8126204709166173,
+        "fold": 0.18737952908338273,
+        "raise_060": 0.0
+      },
+      "mass": 413.99999924134136,
+      "node": "vs_over",
+      "weight": 0.9999999981674912
+    },
+    "flop|srp|ip|paired|gt5|vs_over|weak_pair": {
+      "combos": 435,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.040856770757233436,
+        "fold": 0.9591432292427665,
+        "raise_060": 0.0
+      },
+      "mass": 435.00000003757305,
+      "node": "vs_over",
+      "weight": 1.000000000086375
+    },
+    "flop|srp|ip|paired|gt5|vs_raise|air": {
+      "combos": 2400,
+      "freqs": {
+        "allin": 0.004815625663143891,
+        "call": 0.004644650832652077,
+        "fold": 0.990539723504204,
+        "raise_060": 0.0
+      },
+      "mass": 2399.9999997144905,
+      "node": "vs_raise",
+      "weight": 0.9999999998810377
+    },
+    "flop|srp|ip|paired|gt5|vs_raise|draw_strong": {
+      "combos": 672,
+      "freqs": {
+        "allin": 0.004531561985824513,
+        "call": 0.058167844431407725,
+        "fold": 0.9373005935827677,
+        "raise_060": 0.0
+      },
+      "mass": 672.0000003247405,
+      "node": "vs_raise",
+      "weight": 1.0000000004832448
+    },
+    "flop|srp|ip|paired|gt5|vs_raise|draw_weak": {
+      "combos": 2460,
+      "freqs": {
+        "allin": 0.006554085321485886,
+        "call": 0.06492107291376294,
+        "fold": 0.9285248417647511,
+        "raise_060": 0.0
+      },
+      "mass": 2459.9999991740624,
+      "node": "vs_raise",
+      "weight": 0.999999999664253
+    },
+    "flop|srp|ip|paired|gt5|vs_raise|mid_pair": {
+      "combos": 630,
+      "freqs": {
+        "allin": 0.08081257583436217,
+        "call": 0.3315271527407486,
+        "fold": 0.5876602714248892,
+        "raise_060": 0.0
+      },
+      "mass": 629.9999982313202,
+      "node": "vs_raise",
+      "weight": 0.9999999971925717
+    },
+    "flop|srp|ip|paired|gt5|vs_raise|nutted": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.3333056957247602,
+        "call": 0.6666943042752398,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 36.000000099542376,
+      "node": "vs_raise",
+      "weight": 1.000000002765066
+    },
+    "flop|srp|ip|paired|gt5|vs_raise|overpair": {
+      "combos": 594,
+      "freqs": {
+        "allin": 0.0441489275482754,
+        "call": 0.507054760679176,
+        "fold": 0.4487963117725486,
+        "raise_060": 0.0
+      },
+      "mass": 593.9999992503363,
+      "node": "vs_raise",
+      "weight": 0.9999999987379399
+    },
+    "flop|srp|ip|paired|gt5|vs_raise|two_pair_plus": {
+      "combos": 1242,
+      "freqs": {
+        "allin": 0.14960309457949428,
+        "call": 0.6274819202234634,
+        "fold": 0.22291498519704234,
+        "raise_060": 0.0
+      },
+      "mass": 1242.0000003480577,
+      "node": "vs_raise",
+      "weight": 1.0000000002802396
+    },
+    "flop|srp|ip|paired|gt5|vs_raise|weak_pair": {
+      "combos": 1305,
+      "freqs": {
+        "allin": 0.004781459122068118,
+        "call": 0.13944226886660177,
+        "fold": 0.8557762720113301,
+        "raise_060": 0.0
+      },
+      "mass": 1304.999998677522,
+      "node": "vs_raise",
+      "weight": 0.9999999989866069
+    },
+    "flop|srp|ip|paired|le2|free|air": {
+      "combos": 800,
+      "freqs": {
+        "allin": 0.6462451074145374,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.35375489258546255
+      },
+      "mass": 799.9999981390138,
+      "node": "free",
+      "weight": 0.9999999976737672
+    },
+    "flop|srp|ip|paired|le2|free|draw_strong": {
+      "combos": 224,
+      "freqs": {
+        "allin": 0.7140686083514524,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.28593139164854764
+      },
+      "mass": 223.9999998884159,
+      "node": "free",
+      "weight": 0.9999999995018568
+    },
+    "flop|srp|ip|paired|le2|free|draw_weak": {
+      "combos": 820,
+      "freqs": {
+        "allin": 0.2280422104215143,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.7719577895784857
+      },
+      "mass": 819.9999988741225,
+      "node": "free",
+      "weight": 0.9999999986269786
+    },
+    "flop|srp|ip|paired|le2|free|mid_pair": {
+      "combos": 210,
+      "freqs": {
+        "allin": 0.7324175570120766,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.26758244298792344
+      },
+      "mass": 210.0000003129826,
+      "node": "free",
+      "weight": 1.0000000014903934
+    },
+    "flop|srp|ip|paired|le2|free|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 1.0,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.0
+      },
+      "mass": 12.0,
+      "node": "free",
+      "weight": 1.0
+    },
+    "flop|srp|ip|paired|le2|free|overpair": {
+      "combos": 198,
+      "freqs": {
+        "allin": 1.0,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.0
+      },
+      "mass": 198.0,
+      "node": "free",
+      "weight": 1.0
+    },
+    "flop|srp|ip|paired|le2|free|two_pair_plus": {
+      "combos": 414,
+      "freqs": {
+        "allin": 0.9999577739006428,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 4.2226099357278087e-05
+      },
+      "mass": 413.99999998005296,
+      "node": "free",
+      "weight": 0.9999999999518188
+    },
+    "flop|srp|ip|paired|le2|free|weak_pair": {
+      "combos": 435,
+      "freqs": {
+        "allin": 0.22212713300936363,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.7778728669906364
+      },
+      "mass": 434.99999968206976,
+      "node": "free",
+      "weight": 0.9999999992691259
+    },
+    "flop|srp|ip|paired|le2|vs_over|air": {
+      "combos": 800,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.017217654657703647,
+        "fold": 0.9827823453422964,
+        "raise_060": 0.0
+      },
+      "mass": 799.9999996946062,
+      "node": "vs_over",
+      "weight": 0.9999999996182578
+    },
+    "flop|srp|ip|paired|le2|vs_over|draw_strong": {
+      "combos": 224,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.5098273909885185,
+        "fold": 0.49017260901148146,
+        "raise_060": 0.0
+      },
+      "mass": 224.00000036340498,
+      "node": "vs_over",
+      "weight": 1.0000000016223436
+    },
+    "flop|srp|ip|paired|le2|vs_over|draw_weak": {
+      "combos": 820,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.24050066418535504,
+        "fold": 0.7594993358146449,
+        "raise_060": 0.0
+      },
+      "mass": 820.0000017670391,
+      "node": "vs_over",
+      "weight": 1.0000000021549258
+    },
+    "flop|srp|ip|paired|le2|vs_over|mid_pair": {
+      "combos": 210,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9422325200908538,
+        "fold": 0.05776747990914627,
+        "raise_060": 0.0
+      },
+      "mass": 209.99999971687794,
+      "node": "vs_over",
+      "weight": 0.9999999986517997
+    },
+    "flop|srp|ip|paired|le2|vs_over|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 12.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|paired|le2|vs_over|overpair": {
+      "combos": 198,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 198.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|paired|le2|vs_over|two_pair_plus": {
+      "combos": 414,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 414.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|paired|le2|vs_over|weak_pair": {
+      "combos": 435,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.6626396833179687,
+        "fold": 0.3373603166820312,
+        "raise_060": 0.0
+      },
+      "mass": 434.99999954712985,
+      "node": "vs_over",
+      "weight": 0.9999999989589192
+    },
+    "flop|srp|ip|wet|2to5|free|air": {
+      "combos": 39,
+      "freqs": {
+        "allin": 0.006170106826837511,
+        "bet_033": 0.0,
+        "bet_075": 0.3988381333507757,
+        "check": 0.5949917598223867
+      },
+      "mass": 38.99999968567863,
+      "node": "free",
+      "weight": 0.9999999919404777
+    },
+    "flop|srp|ip|wet|2to5|free|combo_draw": {
+      "combos": 13,
+      "freqs": {
+        "allin": 0.9972596725329045,
+        "bet_033": 0.0,
+        "bet_075": 0.0021663289399497902,
+        "check": 0.0005739985271457556
+      },
+      "mass": 13.000000110914698,
+      "node": "free",
+      "weight": 1.0000000085318999
+    },
+    "flop|srp|ip|wet|2to5|free|draw_strong": {
+      "combos": 112,
+      "freqs": {
+        "allin": 0.19925447519711814,
+        "bet_033": 0.0,
+        "bet_075": 0.20607771671761965,
+        "check": 0.5946678080852622
+      },
+      "mass": 111.99999922122879,
+      "node": "free",
+      "weight": 0.9999999930466856
+    },
+    "flop|srp|ip|wet|2to5|free|draw_weak": {
+      "combos": 69,
+      "freqs": {
+        "allin": 0.0017653483902918406,
+        "bet_033": 0.0,
+        "bet_075": 0.06294138407638794,
+        "check": 0.9352932675333202
+      },
+      "mass": 69.00000038747385,
+      "node": "free",
+      "weight": 1.000000005615563
+    },
+    "flop|srp|ip|wet|2to5|free|mid_pair": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.06357198805399945,
+        "bet_033": 0.0,
+        "bet_075": 0.022129123332763408,
+        "check": 0.9142988886132372
+      },
+      "mass": 35.999999302992364,
+      "node": "free",
+      "weight": 0.9999999806386768
+    },
+    "flop|srp|ip|wet|2to5|free|nutted": {
+      "combos": 31,
+      "freqs": {
+        "allin": 0.10993045331341575,
+        "bet_033": 0.0,
+        "bet_075": 0.8900695466865842,
+        "check": 0.0
+      },
+      "mass": 31.000000143423676,
+      "node": "free",
+      "weight": 1.0000000046265702
+    },
+    "flop|srp|ip|wet|2to5|free|overpair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.2629332587245248,
+        "bet_033": 0.0,
+        "bet_075": 0.5052990785856363,
+        "check": 0.231767662689839
+      },
+      "mass": 47.9999994172249,
+      "node": "free",
+      "weight": 0.999999987858852
+    },
+    "flop|srp|ip|wet|2to5|free|tp_good": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.10889303673584382,
+        "bet_033": 0.0,
+        "bet_075": 0.45278597198282716,
+        "check": 0.438320991281329
+      },
+      "mass": 27.0000003685127,
+      "node": "free",
+      "weight": 1.0000000136486185
+    },
+    "flop|srp|ip|wet|2to5|free|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.022988655929734623,
+        "bet_033": 0.0,
+        "bet_075": 0.3103927517932137,
+        "check": 0.6666185922770517
+      },
+      "mass": 8.999999771360308,
+      "node": "free",
+      "weight": 0.9999999745955898
+    },
+    "flop|srp|ip|wet|2to5|free|two_pair_plus": {
+      "combos": 25,
+      "freqs": {
+        "allin": 0.4238001850681284,
+        "bet_033": 0.0,
+        "bet_075": 0.575439963827515,
+        "check": 0.0007598511043565446
+      },
+      "mass": 25.000000283122063,
+      "node": "free",
+      "weight": 1.0000000113248826
+    },
+    "flop|srp|ip|wet|2to5|free|weak_pair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.03146584432213137,
+        "bet_033": 0.0,
+        "bet_075": 0.03795343270131922,
+        "check": 0.9305807229765494
+      },
+      "mass": 47.99999986222247,
+      "node": "free",
+      "weight": 0.9999999971296347
+    },
+    "flop|srp|ip|wet|2to5|vs_big|air": {
+      "combos": 39,
+      "freqs": {
+        "allin": 0.0005550390994396594,
+        "call": 0.002715809478483285,
+        "fold": 0.9967291514220771,
+        "raise_060": 0.0
+      },
+      "mass": 39.00000027452552,
+      "node": "vs_big",
+      "weight": 1.000000007039116
+    },
+    "flop|srp|ip|wet|2to5|vs_big|combo_draw": {
+      "combos": 13,
+      "freqs": {
+        "allin": 0.6087283119937185,
+        "call": 0.37392698343652386,
+        "fold": 0.017344704569757657,
+        "raise_060": 0.0
+      },
+      "mass": 12.99999968096381,
+      "node": "vs_big",
+      "weight": 0.9999999754587546
+    },
+    "flop|srp|ip|wet|2to5|vs_big|draw_strong": {
+      "combos": 112,
+      "freqs": {
+        "allin": 0.09272422885287933,
+        "call": 0.4216236116123151,
+        "fold": 0.48565215953480556,
+        "raise_060": 0.0
+      },
+      "mass": 112.00000053011536,
+      "node": "vs_big",
+      "weight": 1.0000000047331727
+    },
+    "flop|srp|ip|wet|2to5|vs_big|draw_weak": {
+      "combos": 69,
+      "freqs": {
+        "allin": 0.0012313389535156937,
+        "call": 0.24821675720786884,
+        "fold": 0.7505519038386155,
+        "raise_060": 0.0
+      },
+      "mass": 68.99999981862493,
+      "node": "vs_big",
+      "weight": 0.9999999973713758
+    },
+    "flop|srp|ip|wet|2to5|vs_big|mid_pair": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.027610920402551923,
+        "call": 0.5811205560765121,
+        "fold": 0.39126852352093594,
+        "raise_060": 0.0
+      },
+      "mass": 35.99999975890387,
+      "node": "vs_big",
+      "weight": 0.9999999933028852
+    },
+    "flop|srp|ip|wet|2to5|vs_big|nutted": {
+      "combos": 31,
+      "freqs": {
+        "allin": 0.6556010474616787,
+        "call": 0.3440121396531973,
+        "fold": 0.00038681288512402913,
+        "raise_060": 0.0
+      },
+      "mass": 30.999999741383363,
+      "node": "vs_big",
+      "weight": 0.9999999916575278
+    },
+    "flop|srp|ip|wet|2to5|vs_big|overpair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.4124534299225035,
+        "call": 0.5864037843219786,
+        "fold": 0.0011427857555178704,
+        "raise_060": 0.0
+      },
+      "mass": 47.99999993692899,
+      "node": "vs_big",
+      "weight": 0.9999999986860205
+    },
+    "flop|srp|ip|wet|2to5|vs_big|tp_good": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.18360592386015911,
+        "call": 0.7988747540228645,
+        "fold": 0.017519322116976495,
+        "raise_060": 0.0
+      },
+      "mass": 26.999999806052074,
+      "node": "vs_big",
+      "weight": 0.9999999928167435
+    },
+    "flop|srp|ip|wet|2to5|vs_big|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.00545042606064542,
+        "call": 0.9035379093146491,
+        "fold": 0.0910116646247055,
+        "raise_060": 0.0
+      },
+      "mass": 8.999999866820872,
+      "node": "vs_big",
+      "weight": 0.9999999852023191
+    },
+    "flop|srp|ip|wet|2to5|vs_big|two_pair_plus": {
+      "combos": 25,
+      "freqs": {
+        "allin": 0.7798873289260625,
+        "call": 0.21838008929472277,
+        "fold": 0.0017325817792147205,
+        "raise_060": 0.0
+      },
+      "mass": 24.99999956903514,
+      "node": "vs_big",
+      "weight": 0.9999999827614056
+    },
+    "flop|srp|ip|wet|2to5|vs_big|weak_pair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.1544282099526297,
+        "call": 0.3762951177180575,
+        "fold": 0.4692766723293128,
+        "raise_060": 0.0
+      },
+      "mass": 48.00000005251968,
+      "node": "vs_big",
+      "weight": 1.00000000109416
+    },
+    "flop|srp|ip|wet|2to5|vs_over|air": {
+      "combos": 39,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0,
+        "fold": 1.0,
+        "raise_060": 0.0
+      },
+      "mass": 39.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|2to5|vs_over|combo_draw": {
+      "combos": 13,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.5659439910258987,
+        "fold": 0.4340560089741013,
+        "raise_060": 0.0
+      },
+      "mass": 12.999999939231202,
+      "node": "vs_over",
+      "weight": 0.9999999953254771
+    },
+    "flop|srp|ip|wet|2to5|vs_over|draw_strong": {
+      "combos": 112,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.1078448570450433,
+        "fold": 0.8921551429549567,
+        "raise_060": 0.0
+      },
+      "mass": 111.99999999729334,
+      "node": "vs_over",
+      "weight": 0.9999999999758334
+    },
+    "flop|srp|ip|wet|2to5|vs_over|draw_weak": {
+      "combos": 69,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.014751384176350317,
+        "fold": 0.9852486158236496,
+        "raise_060": 0.0
+      },
+      "mass": 69.00000035966514,
+      "node": "vs_over",
+      "weight": 1.0000000052125382
+    },
+    "flop|srp|ip|wet|2to5|vs_over|mid_pair": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.08876299135484625,
+        "fold": 0.9112370086451538,
+        "raise_060": 0.0
+      },
+      "mass": 36.00000045192428,
+      "node": "vs_over",
+      "weight": 1.0000000125534523
+    },
+    "flop|srp|ip|wet|2to5|vs_over|nutted": {
+      "combos": 31,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 31.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|2to5|vs_over|overpair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.6285251724379839,
+        "fold": 0.37147482756201616,
+        "raise_060": 0.0
+      },
+      "mass": 47.999999849591404,
+      "node": "vs_over",
+      "weight": 0.9999999968664876
+    },
+    "flop|srp|ip|wet|2to5|vs_over|tp_good": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.24687995390687287,
+        "fold": 0.7531200460931271,
+        "raise_060": 0.0
+      },
+      "mass": 27.000000062398612,
+      "node": "vs_over",
+      "weight": 1.0000000023110598
+    },
+    "flop|srp|ip|wet|2to5|vs_over|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.06552231150189453,
+        "fold": 0.9344776884981054,
+        "raise_060": 0.0
+      },
+      "mass": 9.000000175787136,
+      "node": "vs_over",
+      "weight": 1.000000019531904
+    },
+    "flop|srp|ip|wet|2to5|vs_over|two_pair_plus": {
+      "combos": 25,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.933730575880362,
+        "fold": 0.06626942411963803,
+        "raise_060": 0.0
+      },
+      "mass": 24.999999940395355,
+      "node": "vs_over",
+      "weight": 0.9999999976158143
+    },
+    "flop|srp|ip|wet|2to5|vs_over|weak_pair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.08901071811990048,
+        "fold": 0.9109892818800995,
+        "raise_060": 0.0
+      },
+      "mass": 47.99999954999657,
+      "node": "vs_over",
+      "weight": 0.9999999906249286
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|air": {
+      "combos": 39,
+      "freqs": {
+        "allin": 0.0,
+        "call": 9.308568265871033e-05,
+        "fold": 0.9999069143173412,
+        "raise_060": 0.0
+      },
+      "mass": 38.99999988230411,
+      "node": "vs_raise",
+      "weight": 0.9999999969821567
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|combo_draw": {
+      "combos": 13,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.7701268215044341,
+        "fold": 0.2298731784955659,
+        "raise_060": 0.0
+      },
+      "mass": 13.000000107102096,
+      "node": "vs_raise",
+      "weight": 1.0000000082386227
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|draw_strong": {
+      "combos": 112,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.05775772301624703,
+        "fold": 0.942242276983753,
+        "raise_060": 0.0
+      },
+      "mass": 111.99999955767998,
+      "node": "vs_raise",
+      "weight": 0.9999999960507141
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|draw_weak": {
+      "combos": 69,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0013362492970797645,
+        "fold": 0.9986637507029202,
+        "raise_060": 0.0
+      },
+      "mass": 69.00000002823072,
+      "node": "vs_raise",
+      "weight": 1.0000000004091407
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|mid_pair": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.04576616043390371,
+        "fold": 0.9542338395660963,
+        "raise_060": 0.0
+      },
+      "mass": 36.00000003166497,
+      "node": "vs_raise",
+      "weight": 1.0000000008795824
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|nutted": {
+      "combos": 31,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9358302265822127,
+        "fold": 0.06416977341778729,
+        "raise_060": 0.0
+      },
+      "mass": 30.99999988079071,
+      "node": "vs_raise",
+      "weight": 0.999999996154539
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|overpair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.37835354255894416,
+        "fold": 0.6216464574410558,
+        "raise_060": 0.0
+      },
+      "mass": 47.99999968148768,
+      "node": "vs_raise",
+      "weight": 0.9999999933643267
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|tp_good": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.1585485742312801,
+        "fold": 0.8414514257687199,
+        "raise_060": 0.0
+      },
+      "mass": 26.999999806052074,
+      "node": "vs_raise",
+      "weight": 0.9999999928167435
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.004070218717987878,
+        "fold": 0.9959297812820121,
+        "raise_060": 0.0
+      },
+      "mass": 9.000000026775524,
+      "node": "vs_raise",
+      "weight": 1.0000000029750582
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|two_pair_plus": {
+      "combos": 25,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.8806204695104397,
+        "fold": 0.1193795304895603,
+        "raise_060": 0.0
+      },
+      "mass": 25.000000004656613,
+      "node": "vs_raise",
+      "weight": 1.0000000001862646
+    },
+    "flop|srp|ip|wet|2to5|vs_raise|weak_pair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.06494993247271585,
+        "fold": 0.9350500675272841,
+        "raise_060": 0.0
+      },
+      "mass": 47.9999997591367,
+      "node": "vs_raise",
+      "weight": 0.9999999949820145
+    },
+    "flop|srp|ip|wet|gt5|free|air": {
+      "combos": 39,
+      "freqs": {
+        "allin": 0.003224092474540332,
+        "bet_033": 0.0,
+        "bet_075": 0.38389059842844725,
+        "check": 0.6128853090970124
+      },
+      "mass": 39.0000002339948,
+      "node": "free",
+      "weight": 1.0000000059998666
+    },
+    "flop|srp|ip|wet|gt5|free|combo_draw": {
+      "combos": 13,
+      "freqs": {
+        "allin": 0.6426152950320709,
+        "bet_033": 0.0,
+        "bet_075": 0.33519059706106746,
+        "check": 0.02219410790686154
+      },
+      "mass": 12.999999958356057,
+      "node": "free",
+      "weight": 0.9999999967966198
+    },
+    "flop|srp|ip|wet|gt5|free|draw_strong": {
+      "combos": 112,
+      "freqs": {
+        "allin": 0.08393202314019983,
+        "bet_033": 0.0,
+        "bet_075": 0.2831574483453797,
+        "check": 0.6329105285144204
+      },
+      "mass": 112.00000035162702,
+      "node": "free",
+      "weight": 1.000000003139527
+    },
+    "flop|srp|ip|wet|gt5|free|draw_weak": {
+      "combos": 69,
+      "freqs": {
+        "allin": 0.0011930356541140815,
+        "bet_033": 0.0,
+        "bet_075": 0.07484915404261717,
+        "check": 0.9239578103032687
+      },
+      "mass": 68.99999978545202,
+      "node": "free",
+      "weight": 0.9999999968906089
+    },
+    "flop|srp|ip|wet|gt5|free|mid_pair": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.002137929681769401,
+        "bet_033": 0.0,
+        "bet_075": 0.09306720186054822,
+        "check": 0.9047948684576824
+      },
+      "mass": 36.00000026501948,
+      "node": "free",
+      "weight": 1.0000000073616522
+    },
+    "flop|srp|ip|wet|gt5|free|nutted": {
+      "combos": 31,
+      "freqs": {
+        "allin": 0.04284367852089243,
+        "bet_033": 0.0,
+        "bet_075": 0.9571563214791076,
+        "check": 0.0
+      },
+      "mass": 31.00000000698492,
+      "node": "free",
+      "weight": 1.00000000022532
+    },
+    "flop|srp|ip|wet|gt5|free|overpair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.0400713143531914,
+        "bet_033": 0.0,
+        "bet_075": 0.6647878435694636,
+        "check": 0.29514084207734503
+      },
+      "mass": 47.99999963728396,
+      "node": "free",
+      "weight": 0.9999999924434159
+    },
+    "flop|srp|ip|wet|gt5|free|tp_good": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.004045008978911976,
+        "bet_033": 0.0,
+        "bet_075": 0.6248830981209464,
+        "check": 0.3710718929001416
+      },
+      "mass": 27.000000109983375,
+      "node": "free",
+      "weight": 1.0000000040734582
+    },
+    "flop|srp|ip|wet|gt5|free|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0024874364851624666,
+        "bet_033": 0.0,
+        "bet_075": 0.2812596482834999,
+        "check": 0.7162529152313376
+      },
+      "mass": 8.999999993742676,
+      "node": "free",
+      "weight": 0.9999999993047418
+    },
+    "flop|srp|ip|wet|gt5|free|two_pair_plus": {
+      "combos": 25,
+      "freqs": {
+        "allin": 0.15176658419959327,
+        "bet_033": 0.0,
+        "bet_075": 0.8091460738613871,
+        "check": 0.03908734193901958
+      },
+      "mass": 24.99999998761632,
+      "node": "free",
+      "weight": 0.9999999995046528
+    },
+    "flop|srp|ip|wet|gt5|free|weak_pair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.012790450494467687,
+        "bet_033": 0.0,
+        "bet_075": 0.08501741593093347,
+        "check": 0.9021921335745988
+      },
+      "mass": 47.999999515922354,
+      "node": "free",
+      "weight": 0.999999989915049
+    },
+    "flop|srp|ip|wet|gt5|vs_big|air": {
+      "combos": 39,
+      "freqs": {
+        "allin": 0.0146037324767409,
+        "call": 0.010063158011989426,
+        "fold": 0.9753331095112697,
+        "raise_060": 0.0
+      },
+      "mass": 39.000000686981366,
+      "node": "vs_big",
+      "weight": 1.0000000176149069
+    },
+    "flop|srp|ip|wet|gt5|vs_big|combo_draw": {
+      "combos": 13,
+      "freqs": {
+        "allin": 0.7550199576653099,
+        "call": 0.244188133885363,
+        "fold": 0.000791908449327044,
+        "raise_060": 0.0
+      },
+      "mass": 12.999999827498868,
+      "node": "vs_big",
+      "weight": 0.9999999867306821
+    },
+    "flop|srp|ip|wet|gt5|vs_big|draw_strong": {
+      "combos": 112,
+      "freqs": {
+        "allin": 0.11258129382393346,
+        "call": 0.4281847600834499,
+        "fold": 0.45923394609261664,
+        "raise_060": 0.0
+      },
+      "mass": 112.00000054166827,
+      "node": "vs_big",
+      "weight": 1.0000000048363238
+    },
+    "flop|srp|ip|wet|gt5|vs_big|draw_weak": {
+      "combos": 69,
+      "freqs": {
+        "allin": 0.0015951736507155577,
+        "call": 0.1963765115973903,
+        "fold": 0.8020283147518942,
+        "raise_060": 0.0
+      },
+      "mass": 68.99999979897984,
+      "node": "vs_big",
+      "weight": 0.9999999970866644
+    },
+    "flop|srp|ip|wet|gt5|vs_big|mid_pair": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.029933700583169392,
+        "call": 0.6085720095062562,
+        "fold": 0.36149428991057436,
+        "raise_060": 0.0
+      },
+      "mass": 36.000000185456884,
+      "node": "vs_big",
+      "weight": 1.00000000515158
+    },
+    "flop|srp|ip|wet|gt5|vs_big|nutted": {
+      "combos": 31,
+      "freqs": {
+        "allin": 0.6638796846576246,
+        "call": 0.33612031534237546,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 30.99999982584268,
+      "node": "vs_big",
+      "weight": 0.9999999943820219
+    },
+    "flop|srp|ip|wet|gt5|vs_big|overpair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.15433775455203724,
+        "call": 0.8456622454479628,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 47.999999687308446,
+      "node": "vs_big",
+      "weight": 0.9999999934855927
+    },
+    "flop|srp|ip|wet|gt5|vs_big|tp_good": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.04661607474689151,
+        "call": 0.9494148987391353,
+        "fold": 0.003969026513973207,
+        "raise_060": 0.0
+      },
+      "mass": 27.00000035134144,
+      "node": "vs_big",
+      "weight": 1.000000013012646
+    },
+    "flop|srp|ip|wet|gt5|vs_big|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.00556573498217868,
+        "call": 0.8547425768390862,
+        "fold": 0.13969168817873512,
+        "raise_060": 0.0
+      },
+      "mass": 9.000000102911144,
+      "node": "vs_big",
+      "weight": 1.0000000114345715
+    },
+    "flop|srp|ip|wet|gt5|vs_big|two_pair_plus": {
+      "combos": 25,
+      "freqs": {
+        "allin": 0.6174936462669791,
+        "call": 0.38230223527801954,
+        "fold": 0.0002041184550013016,
+        "raise_060": 0.0
+      },
+      "mass": 25.000000190749006,
+      "node": "vs_big",
+      "weight": 1.0000000076299602
+    },
+    "flop|srp|ip|wet|gt5|vs_big|weak_pair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.088797393103464,
+        "call": 0.4815607998092884,
+        "fold": 0.4296418070872476,
+        "raise_060": 0.0
+      },
+      "mass": 48.00000043978798,
+      "node": "vs_big",
+      "weight": 1.0000000091622496
+    },
+    "flop|srp|ip|wet|gt5|vs_over|air": {
+      "combos": 39,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0,
+        "fold": 1.0,
+        "raise_060": 0.0
+      },
+      "mass": 39.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|gt5|vs_over|combo_draw": {
+      "combos": 13,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.4567513456157412,
+        "fold": 0.5432486543842587,
+        "raise_060": 0.0
+      },
+      "mass": 12.999999944586307,
+      "node": "vs_over",
+      "weight": 0.9999999957374082
+    },
+    "flop|srp|ip|wet|gt5|vs_over|draw_strong": {
+      "combos": 112,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.055869576383311775,
+        "fold": 0.9441304236166882,
+        "raise_060": 0.0
+      },
+      "mass": 112.00000014492252,
+      "node": "vs_over",
+      "weight": 1.0000000012939512
+    },
+    "flop|srp|ip|wet|gt5|vs_over|draw_weak": {
+      "combos": 69,
+      "freqs": {
+        "allin": 0.0,
+        "call": 3.040634240908549e-05,
+        "fold": 0.9999695936575909,
+        "raise_060": 0.0
+      },
+      "mass": 69.00000007334165,
+      "node": "vs_over",
+      "weight": 1.0000000010629224
+    },
+    "flop|srp|ip|wet|gt5|vs_over|mid_pair": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.010621682182167339,
+        "fold": 0.9893783178178327,
+        "raise_060": 0.0
+      },
+      "mass": 36.000000073807314,
+      "node": "vs_over",
+      "weight": 1.0000000020502031
+    },
+    "flop|srp|ip|wet|gt5|vs_over|nutted": {
+      "combos": 31,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9360299229977447,
+        "fold": 0.06397007700225531,
+        "raise_060": 0.0
+      },
+      "mass": 30.999999890569597,
+      "node": "vs_over",
+      "weight": 0.999999996469987
+    },
+    "flop|srp|ip|wet|gt5|vs_over|overpair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.25852670232367175,
+        "fold": 0.7414732976763282,
+        "raise_060": 0.0
+      },
+      "mass": 47.99999992083758,
+      "node": "vs_over",
+      "weight": 0.9999999983507829
+    },
+    "flop|srp|ip|wet|gt5|vs_over|tp_good": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.07200553961873131,
+        "fold": 0.9279944603812686,
+        "raise_060": 0.0
+      },
+      "mass": 26.999999888706952,
+      "node": "vs_over",
+      "weight": 0.9999999958780352
+    },
+    "flop|srp|ip|wet|gt5|vs_over|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.007464135299608768,
+        "fold": 0.9925358647003912,
+        "raise_060": 0.0
+      },
+      "mass": 9.000000341795385,
+      "node": "vs_over",
+      "weight": 1.0000000379772649
+    },
+    "flop|srp|ip|wet|gt5|vs_over|two_pair_plus": {
+      "combos": 25,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.8917936832552464,
+        "fold": 0.10820631674475356,
+        "raise_060": 0.0
+      },
+      "mass": 24.999999847263098,
+      "node": "vs_over",
+      "weight": 0.999999993890524
+    },
+    "flop|srp|ip|wet|gt5|vs_over|weak_pair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.06690837654631095,
+        "fold": 0.933091623453689,
+        "raise_060": 0.0
+      },
+      "mass": 48.00000004505273,
+      "node": "vs_over",
+      "weight": 1.0000000009385985
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|air": {
+      "combos": 117,
+      "freqs": {
+        "allin": 0.00013652255743497037,
+        "call": 0.0015383566234439762,
+        "fold": 0.9983251208191211,
+        "raise_060": 0.0
+      },
+      "mass": 117.00000010422082,
+      "node": "vs_raise",
+      "weight": 1.0000000008907761
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|combo_draw": {
+      "combos": 39,
+      "freqs": {
+        "allin": 0.0968656076398988,
+        "call": 0.7398058744745575,
+        "fold": 0.1633285178855437,
+        "raise_060": 0.0
+      },
+      "mass": 39.00000009157702,
+      "node": "vs_raise",
+      "weight": 1.0000000023481288
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|draw_strong": {
+      "combos": 336,
+      "freqs": {
+        "allin": 0.01086563775977782,
+        "call": 0.11449632489298159,
+        "fold": 0.8746380373472405,
+        "raise_060": 0.0
+      },
+      "mass": 336.00000113082933,
+      "node": "vs_raise",
+      "weight": 1.0000000033655634
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|draw_weak": {
+      "combos": 207,
+      "freqs": {
+        "allin": 0.00023197302416691834,
+        "call": 0.005213175110962685,
+        "fold": 0.9945548518648704,
+        "raise_060": 0.0
+      },
+      "mass": 206.9999995366088,
+      "node": "vs_raise",
+      "weight": 0.9999999977613953
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|mid_pair": {
+      "combos": 108,
+      "freqs": {
+        "allin": 0.001504120537814385,
+        "call": 0.049691461221116985,
+        "fold": 0.9488044182410686,
+        "raise_060": 0.0
+      },
+      "mass": 108.00000029895455,
+      "node": "vs_raise",
+      "weight": 1.0000000027680978
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|nutted": {
+      "combos": 93,
+      "freqs": {
+        "allin": 0.16116144828628104,
+        "call": 0.6799605549407316,
+        "fold": 0.1588779967729874,
+        "raise_060": 0.0
+      },
+      "mass": 93.00000040423083,
+      "node": "vs_raise",
+      "weight": 1.000000004346568
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|overpair": {
+      "combos": 144,
+      "freqs": {
+        "allin": 0.018716386553969656,
+        "call": 0.2960490024875908,
+        "fold": 0.6852346109584395,
+        "raise_060": 0.0
+      },
+      "mass": 143.99999973381637,
+      "node": "vs_raise",
+      "weight": 0.9999999981515025
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|tp_good": {
+      "combos": 81,
+      "freqs": {
+        "allin": 0.003872115760654948,
+        "call": 0.1564414698242973,
+        "fold": 0.8396864144150478,
+        "raise_060": 0.0
+      },
+      "mass": 80.99999980605207,
+      "node": "vs_raise",
+      "weight": 0.9999999976055811
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|tp_weak": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.0017336131048389923,
+        "call": 0.06037486182143246,
+        "fold": 0.9378915250737285,
+        "raise_060": 0.0
+      },
+      "mass": 26.999999877996743,
+      "node": "vs_raise",
+      "weight": 0.9999999954813609
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|two_pair_plus": {
+      "combos": 75,
+      "freqs": {
+        "allin": 0.12324282707131538,
+        "call": 0.639380231610111,
+        "fold": 0.23737694131857354,
+        "raise_060": 0.0
+      },
+      "mass": 74.99999978020787,
+      "node": "vs_raise",
+      "weight": 0.9999999970694383
+    },
+    "flop|srp|ip|wet|gt5|vs_raise|weak_pair": {
+      "combos": 144,
+      "freqs": {
+        "allin": 0.01317959552938906,
+        "call": 0.08319366146572649,
+        "fold": 0.9036267430048844,
+        "raise_060": 0.0
+      },
+      "mass": 144.00000086173532,
+      "node": "vs_raise",
+      "weight": 1.000000005984273
+    },
+    "flop|srp|ip|wet|le2|free|air": {
+      "combos": 39,
+      "freqs": {
+        "allin": 0.6674984002046023,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.33250159979539773
+      },
+      "mass": 39.000000345520675,
+      "node": "free",
+      "weight": 1.0000000088595045
+    },
+    "flop|srp|ip|wet|le2|free|combo_draw": {
+      "combos": 13,
+      "freqs": {
+        "allin": 1.0,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.0
+      },
+      "mass": 13.0,
+      "node": "free",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|le2|free|draw_strong": {
+      "combos": 112,
+      "freqs": {
+        "allin": 0.6680421270295219,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.33195787297047813
+      },
+      "mass": 111.99999920796836,
+      "node": "free",
+      "weight": 0.9999999929282889
+    },
+    "flop|srp|ip|wet|le2|free|draw_weak": {
+      "combos": 69,
+      "freqs": {
+        "allin": 0.17683686052406286,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.8231631394759371
+      },
+      "mass": 69.00000016880222,
+      "node": "free",
+      "weight": 1.0000000024464089
+    },
+    "flop|srp|ip|wet|le2|free|mid_pair": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.2693332646014046,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.7306667353985954
+      },
+      "mass": 36.00000033475226,
+      "node": "free",
+      "weight": 1.0000000092986738
+    },
+    "flop|srp|ip|wet|le2|free|nutted": {
+      "combos": 31,
+      "freqs": {
+        "allin": 1.0,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.0
+      },
+      "mass": 31.0,
+      "node": "free",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|le2|free|overpair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.9188139402740932,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.0811860597259067
+      },
+      "mass": 48.000000057742,
+      "node": "free",
+      "weight": 1.0000000012029584
+    },
+    "flop|srp|ip|wet|le2|free|tp_good": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.45288870307541157,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.5471112969245884
+      },
+      "mass": 27.000000226311386,
+      "node": "free",
+      "weight": 1.0000000083819032
+    },
+    "flop|srp|ip|wet|le2|free|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.33489686932054763,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.6651031306794524
+      },
+      "mass": 9.000000092200935,
+      "node": "free",
+      "weight": 1.0000000102445483
+    },
+    "flop|srp|ip|wet|le2|free|two_pair_plus": {
+      "combos": 25,
+      "freqs": {
+        "allin": 1.0,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.0
+      },
+      "mass": 25.0,
+      "node": "free",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|le2|free|weak_pair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.20521029515314987,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.7947897048468501
+      },
+      "mass": 47.99999989414937,
+      "node": "free",
+      "weight": 0.9999999977947786
+    },
+    "flop|srp|ip|wet|le2|vs_over|air": {
+      "combos": 39,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0,
+        "fold": 1.0,
+        "raise_060": 0.0
+      },
+      "mass": 39.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|le2|vs_over|combo_draw": {
+      "combos": 13,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 13.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|le2|vs_over|draw_strong": {
+      "combos": 112,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.47783555824945745,
+        "fold": 0.5221644417505426,
+        "raise_060": 0.0
+      },
+      "mass": 112.00000040233135,
+      "node": "vs_over",
+      "weight": 1.0000000035922443
+    },
+    "flop|srp|ip|wet|le2|vs_over|draw_weak": {
+      "combos": 69,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.042500092081844326,
+        "fold": 0.9574999079181556,
+        "raise_060": 0.0
+      },
+      "mass": 69.00000000491855,
+      "node": "vs_over",
+      "weight": 1.0000000000712832
+    },
+    "flop|srp|ip|wet|le2|vs_over|mid_pair": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.4656425712447905,
+        "fold": 0.5343574287552094,
+        "raise_060": 0.0
+      },
+      "mass": 35.999999874678906,
+      "node": "vs_over",
+      "weight": 0.9999999965188585
+    },
+    "flop|srp|ip|wet|le2|vs_over|nutted": {
+      "combos": 31,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 31.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|le2|vs_over|overpair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 48.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|le2|vs_over|tp_good": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9090177594504504,
+        "fold": 0.0909822405495496,
+        "raise_060": 0.0
+      },
+      "mass": 27.00000025902409,
+      "node": "vs_over",
+      "weight": 1.000000009593485
+    },
+    "flop|srp|ip|wet|le2|vs_over|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.3411279535358039,
+        "fold": 0.6588720464641962,
+        "raise_060": 0.0
+      },
+      "mass": 8.99999975040555,
+      "node": "vs_over",
+      "weight": 0.9999999722672833
+    },
+    "flop|srp|ip|wet|le2|vs_over|two_pair_plus": {
+      "combos": 25,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 25.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|ip|wet|le2|vs_over|weak_pair": {
+      "combos": 48,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.5664995919706431,
+        "fold": 0.4335004080293569,
+        "raise_060": 0.0
+      },
+      "mass": 48.00000016141348,
+      "node": "vs_over",
+      "weight": 1.000000003362781
+    },
+    "flop|srp|oop|dry|2to5|free|air": {
+      "combos": 924,
+      "freqs": {
+        "allin": 0.021324942707357727,
+        "bet_033": 0.0,
+        "bet_075": 0.006459340513718027,
+        "check": 0.9722157167789243
+      },
+      "mass": 923.999999873132,
+      "node": "free",
+      "weight": 0.9999999998626969
+    },
+    "flop|srp|oop|dry|2to5|free|draw_weak": {
+      "combos": 1676,
+      "freqs": {
+        "allin": 0.0005637855393767232,
+        "bet_033": 0.0,
+        "bet_075": 0.0076572442079730655,
+        "check": 0.9917789702526502
+      },
+      "mass": 1675.9999955094108,
+      "node": "free",
+      "weight": 0.9999999973206508
+    },
+    "flop|srp|oop|dry|2to5|free|mid_pair": {
+      "combos": 420,
+      "freqs": {
+        "allin": 0.0009841347993351703,
+        "bet_033": 0.0,
+        "bet_075": 0.030187589571462357,
+        "check": 0.9688282756292025
+      },
+      "mass": 420.0000000124128,
+      "node": "free",
+      "weight": 1.0000000000295541
+    },
+    "flop|srp|oop|dry|2to5|free|overpair": {
+      "combos": 96,
+      "freqs": {
+        "allin": 0.09787613650841673,
+        "bet_033": 0.0,
+        "bet_075": 0.012451561700835775,
+        "check": 0.8896723017907475
+      },
+      "mass": 96.00000076170545,
+      "node": "free",
+      "weight": 1.0000000079344318
+    },
+    "flop|srp|oop|dry|2to5|free|tp_good": {
+      "combos": 522,
+      "freqs": {
+        "allin": 0.014616046703881636,
+        "bet_033": 0.0,
+        "bet_075": 0.036643410362878125,
+        "check": 0.9487405429332403
+      },
+      "mass": 522.0000013983226,
+      "node": "free",
+      "weight": 1.000000002678779
+    },
+    "flop|srp|oop|dry|2to5|free|tp_weak": {
+      "combos": 159,
+      "freqs": {
+        "allin": 0.002462973988021831,
+        "bet_033": 0.0,
+        "bet_075": 0.05161371943445167,
+        "check": 0.9459233065775265
+      },
+      "mass": 158.9999996352999,
+      "node": "free",
+      "weight": 0.9999999977062887
+    },
+    "flop|srp|oop|dry|2to5|free|two_pair_plus": {
+      "combos": 135,
+      "freqs": {
+        "allin": 0.007044106421287324,
+        "bet_033": 0.0,
+        "bet_075": 0.10180726676609747,
+        "check": 0.8911486268126152
+      },
+      "mass": 135.00000021612504,
+      "node": "free",
+      "weight": 1.0000000016009263
+    },
+    "flop|srp|oop|dry|2to5|free|weak_pair": {
+      "combos": 543,
+      "freqs": {
+        "allin": 0.00025453378327626236,
+        "bet_033": 0.0,
+        "bet_075": 0.008205045040369667,
+        "check": 0.9915404211763541
+      },
+      "mass": 542.9999988811724,
+      "node": "free",
+      "weight": 0.999999997939544
+    },
+    "flop|srp|oop|dry|2to5|vs_big|air": {
+      "combos": 924,
+      "freqs": {
+        "allin": 0.07913891345428245,
+        "call": 0.09975616735017191,
+        "fold": 0.8211049191955456,
+        "raise_060": 0.0
+      },
+      "mass": 923.9999992730736,
+      "node": "vs_big",
+      "weight": 0.9999999992132832
+    },
+    "flop|srp|oop|dry|2to5|vs_big|draw_weak": {
+      "combos": 1676,
+      "freqs": {
+        "allin": 0.03587842121115117,
+        "call": 0.4104404960055102,
+        "fold": 0.5536810827833386,
+        "raise_060": 0.0
+      },
+      "mass": 1675.9999959988054,
+      "node": "vs_big",
+      "weight": 0.9999999976126523
+    },
+    "flop|srp|oop|dry|2to5|vs_big|mid_pair": {
+      "combos": 420,
+      "freqs": {
+        "allin": 0.029245122087749188,
+        "call": 0.9659628935147998,
+        "fold": 0.004791984397450972,
+        "raise_060": 0.0
+      },
+      "mass": 419.99999217934965,
+      "node": "vs_big",
+      "weight": 0.9999999813794039
+    },
+    "flop|srp|oop|dry|2to5|vs_big|overpair": {
+      "combos": 96,
+      "freqs": {
+        "allin": 0.744429436382781,
+        "call": 0.2554367243846396,
+        "fold": 0.00013383923257934195,
+        "raise_060": 0.0
+      },
+      "mass": 95.99999577687413,
+      "node": "vs_big",
+      "weight": 0.9999999560091055
+    },
+    "flop|srp|oop|dry|2to5|vs_big|tp_good": {
+      "combos": 522,
+      "freqs": {
+        "allin": 0.4705222079357895,
+        "call": 0.5293439528333335,
+        "fold": 0.00013383923087697606,
+        "raise_060": 0.0
+      },
+      "mass": 521.9999760382634,
+      "node": "vs_big",
+      "weight": 0.9999999540962901
+    },
+    "flop|srp|oop|dry|2to5|vs_big|tp_weak": {
+      "combos": 159,
+      "freqs": {
+        "allin": 0.018316348483271617,
+        "call": 0.9815498122829769,
+        "fold": 0.00013383923375149786,
+        "raise_060": 0.0
+      },
+      "mass": 158.9999923332507,
+      "node": "vs_big",
+      "weight": 0.999999951781451
+    },
+    "flop|srp|oop|dry|2to5|vs_big|two_pair_plus": {
+      "combos": 135,
+      "freqs": {
+        "allin": 0.9997323215472391,
+        "call": 0.0001338392263804404,
+        "fold": 0.0001338392263804404,
+        "raise_060": 0.0
+      },
+      "mass": 134.9999911400664,
+      "node": "vs_big",
+      "weight": 0.9999999343708623
+    },
+    "flop|srp|oop|dry|2to5|vs_big|weak_pair": {
+      "combos": 543,
+      "freqs": {
+        "allin": 0.03106385800218392,
+        "call": 0.4243443796615041,
+        "fold": 0.5445917623363119,
+        "raise_060": 0.0
+      },
+      "mass": 542.9999983078887,
+      "node": "vs_big",
+      "weight": 0.9999999968837731
+    },
+    "flop|srp|oop|dry|2to5|vs_over|air": {
+      "combos": 924,
+      "freqs": {
+        "allin": 0.0,
+        "call": 8.172801220215804e-05,
+        "fold": 0.9999182719877978,
+        "raise_060": 0.0
+      },
+      "mass": 924.0000000421383,
+      "node": "vs_over",
+      "weight": 1.0000000000456042
+    },
+    "flop|srp|oop|dry|2to5|vs_over|draw_weak": {
+      "combos": 1676,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.02333264429652826,
+        "fold": 0.9766673557034717,
+        "raise_060": 0.0
+      },
+      "mass": 1676.0000012511712,
+      "node": "vs_over",
+      "weight": 1.0000000007465222
+    },
+    "flop|srp|oop|dry|2to5|vs_over|mid_pair": {
+      "combos": 420,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.22237051627090318,
+        "fold": 0.7776294837290968,
+        "raise_060": 0.0
+      },
+      "mass": 420.0000007477647,
+      "node": "vs_over",
+      "weight": 1.0000000017803923
+    },
+    "flop|srp|oop|dry|2to5|vs_over|overpair": {
+      "combos": 96,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9005106152340699,
+        "fold": 0.09948938476593003,
+        "raise_060": 0.0
+      },
+      "mass": 95.99999972991645,
+      "node": "vs_over",
+      "weight": 0.9999999971866297
+    },
+    "flop|srp|oop|dry|2to5|vs_over|tp_good": {
+      "combos": 522,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.8392347549924154,
+        "fold": 0.16076524500758457,
+        "raise_060": 0.0
+      },
+      "mass": 521.999999818172,
+      "node": "vs_over",
+      "weight": 0.9999999996516705
+    },
+    "flop|srp|oop|dry|2to5|vs_over|tp_weak": {
+      "combos": 159,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.7558779710513552,
+        "fold": 0.2441220289486448,
+        "raise_060": 0.0
+      },
+      "mass": 158.99999950476922,
+      "node": "vs_over",
+      "weight": 0.999999996885341
+    },
+    "flop|srp|oop|dry|2to5|vs_over|two_pair_plus": {
+      "combos": 135,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 135.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|dry|2to5|vs_over|weak_pair": {
+      "combos": 543,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.005075454043374194,
+        "fold": 0.9949245459566258,
+        "raise_060": 0.0
+      },
+      "mass": 543.000000144355,
+      "node": "vs_over",
+      "weight": 1.0000000002658471
+    },
+    "flop|srp|oop|dry|2to5|vs_raise|air": {
+      "combos": 924,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.023535239512075194,
+        "fold": 0.9764647604879249,
+        "raise_060": 0.0
+      },
+      "mass": 924.0000000193868,
+      "node": "vs_raise",
+      "weight": 1.0000000000209814
+    },
+    "flop|srp|oop|dry|2to5|vs_raise|draw_weak": {
+      "combos": 1676,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.010380251444641908,
+        "fold": 0.9896197485553581,
+        "raise_060": 0.0
+      },
+      "mass": 1676.0000010979697,
+      "node": "vs_raise",
+      "weight": 1.0000000006551133
+    },
+    "flop|srp|oop|dry|2to5|vs_raise|mid_pair": {
+      "combos": 420,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.06922648928573169,
+        "fold": 0.9307735107142683,
+        "raise_060": 0.0
+      },
+      "mass": 419.9999993790407,
+      "node": "vs_raise",
+      "weight": 0.9999999985215254
+    },
+    "flop|srp|oop|dry|2to5|vs_raise|overpair": {
+      "combos": 96,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9262869986101139,
+        "fold": 0.0737130013898861,
+        "raise_060": 0.0
+      },
+      "mass": 96.00000006658956,
+      "node": "vs_raise",
+      "weight": 1.0000000006936414
+    },
+    "flop|srp|oop|dry|2to5|vs_raise|tp_good": {
+      "combos": 522,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.6524678701301936,
+        "fold": 0.34753212986980636,
+        "raise_060": 0.0
+      },
+      "mass": 522.0000004011745,
+      "node": "vs_raise",
+      "weight": 1.0000000007685335
+    },
+    "flop|srp|oop|dry|2to5|vs_raise|tp_weak": {
+      "combos": 159,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.5251198270811073,
+        "fold": 0.4748801729188928,
+        "raise_060": 0.0
+      },
+      "mass": 158.99999974668026,
+      "node": "vs_raise",
+      "weight": 0.9999999984067941
+    },
+    "flop|srp|oop|dry|2to5|vs_raise|two_pair_plus": {
+      "combos": 135,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 135.0,
+      "node": "vs_raise",
+      "weight": 1.0
+    },
+    "flop|srp|oop|dry|2to5|vs_raise|weak_pair": {
+      "combos": 543,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.007979963555323294,
+        "fold": 0.9920200364446767,
+        "raise_060": 0.0
+      },
+      "mass": 543.0000005843904,
+      "node": "vs_raise",
+      "weight": 1.0000000010762253
+    },
+    "flop|srp|oop|dry|gt5|free|air": {
+      "combos": 924,
+      "freqs": {
+        "allin": 0.0006227400404207389,
+        "bet_033": 0.0,
+        "bet_075": 0.006800924627245478,
+        "check": 0.9925763353323338
+      },
+      "mass": 924.0000012786113,
+      "node": "free",
+      "weight": 1.0000000013837784
+    },
+    "flop|srp|oop|dry|gt5|free|draw_weak": {
+      "combos": 1676,
+      "freqs": {
+        "allin": 0.00018990964005917993,
+        "bet_033": 0.0,
+        "bet_075": 0.006975040761110477,
+        "check": 0.9928350495988304
+      },
+      "mass": 1676.0000011271095,
+      "node": "free",
+      "weight": 1.0000000006724996
+    },
+    "flop|srp|oop|dry|gt5|free|mid_pair": {
+      "combos": 420,
+      "freqs": {
+        "allin": 0.0003849532965259798,
+        "bet_033": 0.0,
+        "bet_075": 0.014567273763149589,
+        "check": 0.9850477729403244
+      },
+      "mass": 419.99999988416766,
+      "node": "free",
+      "weight": 0.9999999997242087
+    },
+    "flop|srp|oop|dry|gt5|free|overpair": {
+      "combos": 96,
+      "freqs": {
+        "allin": 0.003111858153840873,
+        "bet_033": 0.0,
+        "bet_075": 0.009657609051390435,
+        "check": 0.9872305327947687
+      },
+      "mass": 96.0000003328314,
+      "node": "free",
+      "weight": 1.0000000034669938
+    },
+    "flop|srp|oop|dry|gt5|free|tp_good": {
+      "combos": 522,
+      "freqs": {
+        "allin": 0.0025398992989401434,
+        "bet_033": 0.0,
+        "bet_075": 0.04422742226079909,
+        "check": 0.9532326784402607
+      },
+      "mass": 521.9999990493525,
+      "node": "free",
+      "weight": 0.9999999981788362
+    },
+    "flop|srp|oop|dry|gt5|free|tp_weak": {
+      "combos": 159,
+      "freqs": {
+        "allin": 0.002102937594914724,
+        "bet_033": 0.0,
+        "bet_075": 0.0293121355361392,
+        "check": 0.968584926868946
+      },
+      "mass": 158.9999999596621,
+      "node": "free",
+      "weight": 0.9999999997463025
+    },
+    "flop|srp|oop|dry|gt5|free|two_pair_plus": {
+      "combos": 135,
+      "freqs": {
+        "allin": 0.0038908789399267063,
+        "bet_033": 0.0,
+        "bet_075": 0.0673193198071103,
+        "check": 0.928789801252963
+      },
+      "mass": 134.99999952386133,
+      "node": "free",
+      "weight": 0.9999999964730469
+    },
+    "flop|srp|oop|dry|gt5|free|weak_pair": {
+      "combos": 543,
+      "freqs": {
+        "allin": 8.299991099183904e-05,
+        "bet_033": 0.0,
+        "bet_075": 0.008839476267266826,
+        "check": 0.9910775238217413
+      },
+      "mass": 543.000001285997,
+      "node": "free",
+      "weight": 1.0000000023683187
+    },
+    "flop|srp|oop|dry|gt5|vs_big|air": {
+      "combos": 924,
+      "freqs": {
+        "allin": 0.06765845729008851,
+        "call": 0.12442575594799321,
+        "fold": 0.8079157867619183,
+        "raise_060": 0.0
+      },
+      "mass": 923.9999984096721,
+      "node": "vs_big",
+      "weight": 0.9999999982788659
+    },
+    "flop|srp|oop|dry|gt5|vs_big|draw_weak": {
+      "combos": 1676,
+      "freqs": {
+        "allin": 0.03505496294929135,
+        "call": 0.40174993269173737,
+        "fold": 0.5631951043589712,
+        "raise_060": 0.0
+      },
+      "mass": 1675.9999957339314,
+      "node": "vs_big",
+      "weight": 0.999999997454613
+    },
+    "flop|srp|oop|dry|gt5|vs_big|mid_pair": {
+      "combos": 420,
+      "freqs": {
+        "allin": 0.02371073276421463,
+        "call": 0.974998687443342,
+        "fold": 0.0012905797924434035,
+        "raise_060": 0.0
+      },
+      "mass": 419.99999369348734,
+      "node": "vs_big",
+      "weight": 0.9999999849844937
+    },
+    "flop|srp|oop|dry|gt5|vs_big|overpair": {
+      "combos": 96,
+      "freqs": {
+        "allin": 0.516688493915492,
+        "call": 0.48322994783671724,
+        "fold": 8.155824779081886e-05,
+        "raise_060": 0.0
+      },
+      "mass": 95.9999974624152,
+      "node": "vs_big",
+      "weight": 0.9999999735668249
+    },
+    "flop|srp|oop|dry|gt5|vs_big|tp_good": {
+      "combos": 522,
+      "freqs": {
+        "allin": 0.293378955151214,
+        "call": 0.7065720089442962,
+        "fold": 4.903590448992141e-05,
+        "raise_060": 0.0
+      },
+      "mass": 521.999990573684,
+      "node": "vs_big",
+      "weight": 0.9999999819419234
+    },
+    "flop|srp|oop|dry|gt5|vs_big|tp_weak": {
+      "combos": 159,
+      "freqs": {
+        "allin": 0.01145669974097025,
+        "call": 0.988491398988955,
+        "fold": 5.190127007472636e-05,
+        "raise_060": 0.0
+      },
+      "mass": 158.99999808963184,
+      "node": "vs_big",
+      "weight": 0.9999999879851059
+    },
+    "flop|srp|oop|dry|gt5|vs_big|two_pair_plus": {
+      "combos": 135,
+      "freqs": {
+        "allin": 0.999854186457411,
+        "call": 9.153432142262824e-05,
+        "fold": 5.427922116636235e-05,
+        "raise_060": 0.0
+      },
+      "mass": 134.99999751057476,
+      "node": "vs_big",
+      "weight": 0.9999999815598131
+    },
+    "flop|srp|oop|dry|gt5|vs_big|weak_pair": {
+      "combos": 543,
+      "freqs": {
+        "allin": 0.024267877047392625,
+        "call": 0.47640630031459663,
+        "fold": 0.49932582263801073,
+        "raise_060": 0.0
+      },
+      "mass": 542.9999985120667,
+      "node": "vs_big",
+      "weight": 0.9999999972597913
+    },
+    "flop|srp|oop|dry|gt5|vs_over|air": {
+      "combos": 924,
+      "freqs": {
+        "allin": 0.0,
+        "call": 2.6318003436252728e-05,
+        "fold": 0.9999736819965638,
+        "raise_060": 0.0
+      },
+      "mass": 923.99999967654,
+      "node": "vs_over",
+      "weight": 0.9999999996499351
+    },
+    "flop|srp|oop|dry|gt5|vs_over|draw_weak": {
+      "combos": 1676,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.014319962071283094,
+        "fold": 0.985680037928717,
+        "raise_060": 0.0
+      },
+      "mass": 1676.0000002132483,
+      "node": "vs_over",
+      "weight": 1.0000000001272364
+    },
+    "flop|srp|oop|dry|gt5|vs_over|mid_pair": {
+      "combos": 420,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.1347567499823537,
+        "fold": 0.8652432500176462,
+        "raise_060": 0.0
+      },
+      "mass": 420.0000001026783,
+      "node": "vs_over",
+      "weight": 1.0000000002444722
+    },
+    "flop|srp|oop|dry|gt5|vs_over|overpair": {
+      "combos": 96,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.6638111218061112,
+        "fold": 0.33618887819388876,
+        "raise_060": 0.0
+      },
+      "mass": 95.99999983573798,
+      "node": "vs_over",
+      "weight": 0.9999999982889373
+    },
+    "flop|srp|oop|dry|gt5|vs_over|tp_good": {
+      "combos": 522,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.587761180652622,
+        "fold": 0.41223881934737805,
+        "raise_060": 0.0
+      },
+      "mass": 521.9999987936098,
+      "node": "vs_over",
+      "weight": 0.9999999976889078
+    },
+    "flop|srp|oop|dry|gt5|vs_over|tp_weak": {
+      "combos": 159,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.5204795454388305,
+        "fold": 0.47952045456116954,
+        "raise_060": 0.0
+      },
+      "mass": 158.99999982572626,
+      "node": "vs_over",
+      "weight": 0.9999999989039388
+    },
+    "flop|srp|oop|dry|gt5|vs_over|two_pair_plus": {
+      "combos": 135,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 135.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|dry|gt5|vs_over|weak_pair": {
+      "combos": 543,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0015757843670535308,
+        "fold": 0.9984242156329465,
+        "raise_060": 0.0
+      },
+      "mass": 543.0000009647101,
+      "node": "vs_over",
+      "weight": 1.00000000177663
+    },
+    "flop|srp|oop|dry|gt5|vs_raise|air": {
+      "combos": 2772,
+      "freqs": {
+        "allin": 0.037424583177237083,
+        "call": 0.020243130421663823,
+        "fold": 0.9423322864010991,
+        "raise_060": 0.0
+      },
+      "mass": 2771.999995024902,
+      "node": "vs_raise",
+      "weight": 0.9999999982052317
+    },
+    "flop|srp|oop|dry|gt5|vs_raise|draw_weak": {
+      "combos": 5028,
+      "freqs": {
+        "allin": 0.032553470410165486,
+        "call": 0.012264164730399077,
+        "fold": 0.9551823648594354,
+        "raise_060": 0.0
+      },
+      "mass": 5027.999997044075,
+      "node": "vs_raise",
+      "weight": 0.9999999994121072
+    },
+    "flop|srp|oop|dry|gt5|vs_raise|mid_pair": {
+      "combos": 1260,
+      "freqs": {
+        "allin": 0.04077083612733262,
+        "call": 0.12295694388696048,
+        "fold": 0.8362722199857069,
+        "raise_060": 0.0
+      },
+      "mass": 1259.9999980394496,
+      "node": "vs_raise",
+      "weight": 0.9999999984440076
+    },
+    "flop|srp|oop|dry|gt5|vs_raise|overpair": {
+      "combos": 288,
+      "freqs": {
+        "allin": 0.01855505616322914,
+        "call": 0.6962466749273796,
+        "fold": 0.2851982689093913,
+        "raise_060": 0.0
+      },
+      "mass": 287.99999942033355,
+      "node": "vs_raise",
+      "weight": 0.9999999979872692
+    },
+    "flop|srp|oop|dry|gt5|vs_raise|tp_good": {
+      "combos": 1566,
+      "freqs": {
+        "allin": 0.07139513939666703,
+        "call": 0.5185849106990523,
+        "fold": 0.4100199499042807,
+        "raise_060": 0.0
+      },
+      "mass": 1565.9999974986804,
+      "node": "vs_raise",
+      "weight": 0.9999999984027333
+    },
+    "flop|srp|oop|dry|gt5|vs_raise|tp_weak": {
+      "combos": 477,
+      "freqs": {
+        "allin": 0.10273928029101663,
+        "call": 0.3568414456958381,
+        "fold": 0.5404192740131453,
+        "raise_060": 0.0
+      },
+      "mass": 476.9999992739831,
+      "node": "vs_raise",
+      "weight": 0.9999999984779521
+    },
+    "flop|srp|oop|dry|gt5|vs_raise|two_pair_plus": {
+      "combos": 405,
+      "freqs": {
+        "allin": 0.2927208745536237,
+        "call": 0.7072429392941317,
+        "fold": 3.618615224457885e-05,
+        "raise_060": 0.0
+      },
+      "mass": 405.00000033322976,
+      "node": "vs_raise",
+      "weight": 1.0000000008227896
+    },
+    "flop|srp|oop|dry|gt5|vs_raise|weak_pair": {
+      "combos": 1629,
+      "freqs": {
+        "allin": 0.020068871212423414,
+        "call": 0.025344983681317528,
+        "fold": 0.954586145106259,
+        "raise_060": 0.0
+      },
+      "mass": 1628.9999989071275,
+      "node": "vs_raise",
+      "weight": 0.9999999993291145
+    },
+    "flop|srp|oop|dry|le2|free|air": {
+      "combos": 924,
+      "freqs": {
+        "allin": 0.1365447854308378,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.8634552145691622
+      },
+      "mass": 924.000000022128,
+      "node": "free",
+      "weight": 1.000000000023948
+    },
+    "flop|srp|oop|dry|le2|free|draw_weak": {
+      "combos": 1676,
+      "freqs": {
+        "allin": 0.09290217544280263,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.9070978245571973
+      },
+      "mass": 1676.0000017685284,
+      "node": "free",
+      "weight": 1.000000001055208
+    },
+    "flop|srp|oop|dry|le2|free|mid_pair": {
+      "combos": 420,
+      "freqs": {
+        "allin": 0.43307479661479403,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.5669252033852059
+      },
+      "mass": 420.00000079965685,
+      "node": "free",
+      "weight": 1.0000000019039448
+    },
+    "flop|srp|oop|dry|le2|free|overpair": {
+      "combos": 96,
+      "freqs": {
+        "allin": 0.14908922501638577,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.8509107749836142
+      },
+      "mass": 95.9999999771826,
+      "node": "free",
+      "weight": 0.9999999997623187
+    },
+    "flop|srp|oop|dry|le2|free|tp_good": {
+      "combos": 522,
+      "freqs": {
+        "allin": 0.13850336445394834,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.8614966355460516
+      },
+      "mass": 522.0000000923174,
+      "node": "free",
+      "weight": 1.0000000001768532
+    },
+    "flop|srp|oop|dry|le2|free|tp_weak": {
+      "combos": 159,
+      "freqs": {
+        "allin": 0.41648154585314906,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.583518454146851
+      },
+      "mass": 158.99999995110556,
+      "node": "free",
+      "weight": 0.9999999996924879
+    },
+    "flop|srp|oop|dry|le2|free|two_pair_plus": {
+      "combos": 135,
+      "freqs": {
+        "allin": 0.03481935424586369,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.9651806457541363
+      },
+      "mass": 134.99999973241938,
+      "node": "free",
+      "weight": 0.9999999980179214
+    },
+    "flop|srp|oop|dry|le2|free|weak_pair": {
+      "combos": 543,
+      "freqs": {
+        "allin": 0.25137829779161613,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.7486217022083839
+      },
+      "mass": 542.9999994589016,
+      "node": "free",
+      "weight": 0.999999999003502
+    },
+    "flop|srp|oop|dry|le2|vs_over|air": {
+      "combos": 924,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.030349249693765203,
+        "fold": 0.9696507503062348,
+        "raise_060": 0.0
+      },
+      "mass": 923.999999988715,
+      "node": "vs_over",
+      "weight": 0.9999999999877868
+    },
+    "flop|srp|oop|dry|le2|vs_over|draw_weak": {
+      "combos": 1676,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.22412868491046622,
+        "fold": 0.7758713150895338,
+        "raise_060": 0.0
+      },
+      "mass": 1676.0000006533655,
+      "node": "vs_over",
+      "weight": 1.0000000003898362
+    },
+    "flop|srp|oop|dry|le2|vs_over|mid_pair": {
+      "combos": 420,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9999372591213805,
+        "fold": 6.27408786194739e-05,
+        "raise_060": 0.0
+      },
+      "mass": 419.9999998959538,
+      "node": "vs_over",
+      "weight": 0.9999999997522709
+    },
+    "flop|srp|oop|dry|le2|vs_over|overpair": {
+      "combos": 96,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 96.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|dry|le2|vs_over|tp_good": {
+      "combos": 522,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 522.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|dry|le2|vs_over|tp_weak": {
+      "combos": 159,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 159.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|dry|le2|vs_over|two_pair_plus": {
+      "combos": 135,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 135.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|dry|le2|vs_over|weak_pair": {
+      "combos": 543,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.4249184262098247,
+        "fold": 0.5750815737901753,
+        "raise_060": 0.0
+      },
+      "mass": 542.9999990388169,
+      "node": "vs_over",
+      "weight": 0.9999999982298654
+    },
+    "flop|srp|oop|paired|2to5|free|air": {
+      "combos": 1116,
+      "freqs": {
+        "allin": 0.001462028030042577,
+        "bet_033": 0.0,
+        "bet_075": 0.01775277120996143,
+        "check": 0.980785200759996
+      },
+      "mass": 1116.0000038509472,
+      "node": "free",
+      "weight": 1.0000000034506695
+    },
+    "flop|srp|oop|paired|2to5|free|draw_strong": {
+      "combos": 268,
+      "freqs": {
+        "allin": 0.005548249934905472,
+        "bet_033": 0.0,
+        "bet_075": 0.03815526519918681,
+        "check": 0.9562964848659077
+      },
+      "mass": 267.99999993652045,
+      "node": "free",
+      "weight": 0.999999999763136
+    },
+    "flop|srp|oop|paired|2to5|free|draw_weak": {
+      "combos": 1364,
+      "freqs": {
+        "allin": 0.0006351644482438972,
+        "bet_033": 0.0,
+        "bet_075": 0.023235806823991748,
+        "check": 0.9761290287277644
+      },
+      "mass": 1363.9999976642355,
+      "node": "free",
+      "weight": 0.9999999982875627
+    },
+    "flop|srp|oop|paired|2to5|free|mid_pair": {
+      "combos": 196,
+      "freqs": {
+        "allin": 0.00120337766922323,
+        "bet_033": 0.0,
+        "bet_075": 0.06175026166127076,
+        "check": 0.937046360669506
+      },
+      "mass": 195.99999871424598,
+      "node": "free",
+      "weight": 0.9999999934400305
+    },
+    "flop|srp|oop|paired|2to5|free|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.005667748577877208,
+        "bet_033": 0.0,
+        "bet_075": 0.10678871138825394,
+        "check": 0.8875435400338688
+      },
+      "mass": 11.999999921652488,
+      "node": "free",
+      "weight": 0.9999999934710407
+    },
+    "flop|srp|oop|paired|2to5|free|overpair": {
+      "combos": 84,
+      "freqs": {
+        "allin": 0.0010676223253686592,
+        "bet_033": 0.0,
+        "bet_075": 0.053332877968300024,
+        "check": 0.9455994997063313
+      },
+      "mass": 84.00000045954948,
+      "node": "free",
+      "weight": 1.0000000054708271
+    },
+    "flop|srp|oop|paired|2to5|free|two_pair_plus": {
+      "combos": 655,
+      "freqs": {
+        "allin": 0.008851590851278518,
+        "bet_033": 0.0,
+        "bet_075": 0.12206586340809573,
+        "check": 0.8690825457406257
+      },
+      "mass": 654.9999983830203,
+      "node": "free",
+      "weight": 0.9999999975313287
+    },
+    "flop|srp|oop|paired|2to5|free|weak_pair": {
+      "combos": 666,
+      "freqs": {
+        "allin": 0.0004676401594633094,
+        "bet_033": 0.0,
+        "bet_075": 0.0836042133864951,
+        "check": 0.9159281464540416
+      },
+      "mass": 665.999999612342,
+      "node": "free",
+      "weight": 0.9999999994179309
+    },
+    "flop|srp|oop|paired|2to5|vs_big|air": {
+      "combos": 1116,
+      "freqs": {
+        "allin": 0.01503604614186651,
+        "call": 0.1354127850008005,
+        "fold": 0.849551168857333,
+        "raise_060": 0.0
+      },
+      "mass": 1115.9999991648656,
+      "node": "vs_big",
+      "weight": 0.9999999992516717
+    },
+    "flop|srp|oop|paired|2to5|vs_big|draw_strong": {
+      "combos": 268,
+      "freqs": {
+        "allin": 0.10455100413855506,
+        "call": 0.45922082505617473,
+        "fold": 0.4362281708052702,
+        "raise_060": 0.0
+      },
+      "mass": 268.00000093442213,
+      "node": "vs_big",
+      "weight": 1.0000000034866499
+    },
+    "flop|srp|oop|paired|2to5|vs_big|draw_weak": {
+      "combos": 1364,
+      "freqs": {
+        "allin": 0.070561595799694,
+        "call": 0.43522749652970544,
+        "fold": 0.49421090767060055,
+        "raise_060": 0.0
+      },
+      "mass": 1363.9999980184366,
+      "node": "vs_big",
+      "weight": 0.9999999985472409
+    },
+    "flop|srp|oop|paired|2to5|vs_big|mid_pair": {
+      "combos": 196,
+      "freqs": {
+        "allin": 0.2684779351167045,
+        "call": 0.7281505615283433,
+        "fold": 0.0033715033549522075,
+        "raise_060": 0.0
+      },
+      "mass": 195.99999059626134,
+      "node": "vs_big",
+      "weight": 0.9999999520217415
+    },
+    "flop|srp|oop|paired|2to5|vs_big|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.9997323215472391,
+        "call": 0.0001338392263804404,
+        "fold": 0.0001338392263804404,
+        "raise_060": 0.0
+      },
+      "mass": 11.999999212450348,
+      "node": "vs_big",
+      "weight": 0.9999999343708623
+    },
+    "flop|srp|oop|paired|2to5|vs_big|overpair": {
+      "combos": 84,
+      "freqs": {
+        "allin": 0.12895745613411544,
+        "call": 0.8709087046340971,
+        "fold": 0.000133839231787472,
+        "raise_060": 0.0
+      },
+      "mass": 83.99999631248647,
+      "node": "vs_big",
+      "weight": 0.9999999561010294
+    },
+    "flop|srp|oop|paired|2to5|vs_big|two_pair_plus": {
+      "combos": 655,
+      "freqs": {
+        "allin": 0.5761260186697298,
+        "call": 0.42371373750188646,
+        "fold": 0.000160243828383816,
+        "raise_060": 0.0
+      },
+      "mass": 654.9999643980118,
+      "node": "vs_big",
+      "weight": 0.9999999456458195
+    },
+    "flop|srp|oop|paired|2to5|vs_big|weak_pair": {
+      "combos": 666,
+      "freqs": {
+        "allin": 0.03628997660318317,
+        "call": 0.629250290556251,
+        "fold": 0.3344597328405658,
+        "raise_060": 0.0
+      },
+      "mass": 665.9999943460425,
+      "node": "vs_big",
+      "weight": 0.9999999915105744
+    },
+    "flop|srp|oop|paired|2to5|vs_over|air": {
+      "combos": 1116,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0033211541763842724,
+        "fold": 0.9966788458236158,
+        "raise_060": 0.0
+      },
+      "mass": 1115.999999140085,
+      "node": "vs_over",
+      "weight": 0.9999999992294669
+    },
+    "flop|srp|oop|paired|2to5|vs_over|draw_strong": {
+      "combos": 268,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0966364355328993,
+        "fold": 0.9033635644671006,
+        "raise_060": 0.0
+      },
+      "mass": 268.00000052419637,
+      "node": "vs_over",
+      "weight": 1.0000000019559565
+    },
+    "flop|srp|oop|paired|2to5|vs_over|draw_weak": {
+      "combos": 1364,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.08706038230752425,
+        "fold": 0.9129396176924758,
+        "raise_060": 0.0
+      },
+      "mass": 1363.9999999211773,
+      "node": "vs_over",
+      "weight": 0.9999999999422121
+    },
+    "flop|srp|oop|paired|2to5|vs_over|mid_pair": {
+      "combos": 196,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.48800130178794726,
+        "fold": 0.5119986982120527,
+        "raise_060": 0.0
+      },
+      "mass": 195.99999975925311,
+      "node": "vs_over",
+      "weight": 0.9999999987716995
+    },
+    "flop|srp|oop|paired|2to5|vs_over|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 12.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|paired|2to5|vs_over|overpair": {
+      "combos": 84,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.8733284004082151,
+        "fold": 0.12667159959178487,
+        "raise_060": 0.0
+      },
+      "mass": 83.99999987112824,
+      "node": "vs_over",
+      "weight": 0.9999999984658123
+    },
+    "flop|srp|oop|paired|2to5|vs_over|two_pair_plus": {
+      "combos": 655,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.835065563104099,
+        "fold": 0.16493443689590107,
+        "raise_060": 0.0
+      },
+      "mass": 654.9999985133763,
+      "node": "vs_over",
+      "weight": 0.9999999977303455
+    },
+    "flop|srp|oop|paired|2to5|vs_over|weak_pair": {
+      "combos": 666,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.09882761183986641,
+        "fold": 0.9011723881601336,
+        "raise_060": 0.0
+      },
+      "mass": 666.0000013893041,
+      "node": "vs_over",
+      "weight": 1.0000000020860422
+    },
+    "flop|srp|oop|paired|2to5|vs_raise|air": {
+      "combos": 1116,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.00011795389177275316,
+        "fold": 0.9998820461082273,
+        "raise_060": 0.0
+      },
+      "mass": 1116.00000057937,
+      "node": "vs_raise",
+      "weight": 1.0000000005191487
+    },
+    "flop|srp|oop|paired|2to5|vs_raise|draw_strong": {
+      "combos": 268,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0029256664524465463,
+        "fold": 0.9970743335475535,
+        "raise_060": 0.0
+      },
+      "mass": 267.99999935369124,
+      "node": "vs_raise",
+      "weight": 0.9999999975884002
+    },
+    "flop|srp|oop|paired|2to5|vs_raise|draw_weak": {
+      "combos": 1364,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.013974466767232983,
+        "fold": 0.986025533232767,
+        "raise_060": 0.0
+      },
+      "mass": 1363.9999998553067,
+      "node": "vs_raise",
+      "weight": 0.9999999998939199
+    },
+    "flop|srp|oop|paired|2to5|vs_raise|mid_pair": {
+      "combos": 196,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.3567075331181733,
+        "fold": 0.6432924668818266,
+        "raise_060": 0.0
+      },
+      "mass": 195.99999963515438,
+      "node": "vs_raise",
+      "weight": 0.9999999981385428
+    },
+    "flop|srp|oop|paired|2to5|vs_raise|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 12.0,
+      "node": "vs_raise",
+      "weight": 1.0
+    },
+    "flop|srp|oop|paired|2to5|vs_raise|overpair": {
+      "combos": 84,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.744361764611631,
+        "fold": 0.25563823538836905,
+        "raise_060": 0.0
+      },
+      "mass": 83.99999975052197,
+      "node": "vs_raise",
+      "weight": 0.9999999970300234
+    },
+    "flop|srp|oop|paired|2to5|vs_raise|two_pair_plus": {
+      "combos": 655,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.7067424075337556,
+        "fold": 0.2932575924662445,
+        "raise_060": 0.0
+      },
+      "mass": 654.9999993509239,
+      "node": "vs_raise",
+      "weight": 0.9999999990090441
+    },
+    "flop|srp|oop|paired|2to5|vs_raise|weak_pair": {
+      "combos": 666,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.030272428642685693,
+        "fold": 0.9697275713573144,
+        "raise_060": 0.0
+      },
+      "mass": 665.9999997541127,
+      "node": "vs_raise",
+      "weight": 0.9999999996307998
+    },
+    "flop|srp|oop|paired|gt5|free|air": {
+      "combos": 1116,
+      "freqs": {
+        "allin": 0.000278998954058103,
+        "bet_033": 0.0,
+        "bet_075": 0.018370359373997756,
+        "check": 0.9813506416719442
+      },
+      "mass": 1116.000000499942,
+      "node": "free",
+      "weight": 1.0000000004479768
+    },
+    "flop|srp|oop|paired|gt5|free|draw_strong": {
+      "combos": 268,
+      "freqs": {
+        "allin": 0.00132097188778272,
+        "bet_033": 0.0,
+        "bet_075": 0.06665397603975268,
+        "check": 0.9320250520724646
+      },
+      "mass": 268.00000005779293,
+      "node": "free",
+      "weight": 1.0000000002156453
+    },
+    "flop|srp|oop|paired|gt5|free|draw_weak": {
+      "combos": 1364,
+      "freqs": {
+        "allin": 0.00023996287903633984,
+        "bet_033": 0.0,
+        "bet_075": 0.040287153824908106,
+        "check": 0.9594728832960555
+      },
+      "mass": 1364.0000001786154,
+      "node": "free",
+      "weight": 1.0000000001309497
+    },
+    "flop|srp|oop|paired|gt5|free|mid_pair": {
+      "combos": 196,
+      "freqs": {
+        "allin": 0.0029875911354466022,
+        "bet_033": 0.0,
+        "bet_075": 0.1219960634550178,
+        "check": 0.8750163454095355
+      },
+      "mass": 196.0000001586195,
+      "node": "free",
+      "weight": 1.0000000008092833
+    },
+    "flop|srp|oop|paired|gt5|free|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.015266622063430975,
+        "bet_033": 0.0,
+        "bet_075": 0.15611949694316835,
+        "check": 0.8286138809934007
+      },
+      "mass": 12.00000001839362,
+      "node": "free",
+      "weight": 1.0000000015328017
+    },
+    "flop|srp|oop|paired|gt5|free|overpair": {
+      "combos": 84,
+      "freqs": {
+        "allin": 0.0010236469184983221,
+        "bet_033": 0.0,
+        "bet_075": 0.19150141401644494,
+        "check": 0.8074749390650567
+      },
+      "mass": 84.00000027669012,
+      "node": "free",
+      "weight": 1.00000000329393
+    },
+    "flop|srp|oop|paired|gt5|free|two_pair_plus": {
+      "combos": 655,
+      "freqs": {
+        "allin": 0.002911930616633156,
+        "bet_033": 0.0,
+        "bet_075": 0.1548003541072008,
+        "check": 0.8422877152761661
+      },
+      "mass": 655.0000013562676,
+      "node": "free",
+      "weight": 1.0000000020706377
+    },
+    "flop|srp|oop|paired|gt5|free|weak_pair": {
+      "combos": 666,
+      "freqs": {
+        "allin": 0.00010194426221128194,
+        "bet_033": 0.0,
+        "bet_075": 0.11106294317045934,
+        "check": 0.8888351125673294
+      },
+      "mass": 665.9999991447942,
+      "node": "free",
+      "weight": 0.9999999987159072
+    },
+    "flop|srp|oop|paired|gt5|vs_big|air": {
+      "combos": 1116,
+      "freqs": {
+        "allin": 0.02511691550478298,
+        "call": 0.13119335575816235,
+        "fold": 0.8436897287370547,
+        "raise_060": 0.0
+      },
+      "mass": 1115.9999957821774,
+      "node": "vs_big",
+      "weight": 0.9999999962205891
+    },
+    "flop|srp|oop|paired|gt5|vs_big|draw_strong": {
+      "combos": 268,
+      "freqs": {
+        "allin": 0.10500520361024195,
+        "call": 0.4715666193427466,
+        "fold": 0.4234281770470115,
+        "raise_060": 0.0
+      },
+      "mass": 267.999998783469,
+      "node": "vs_big",
+      "weight": 0.9999999954607052
+    },
+    "flop|srp|oop|paired|gt5|vs_big|draw_weak": {
+      "combos": 1364,
+      "freqs": {
+        "allin": 0.06534550995671495,
+        "call": 0.44173122744153487,
+        "fold": 0.4929232626017502,
+        "raise_060": 0.0
+      },
+      "mass": 1363.9999996577826,
+      "node": "vs_big",
+      "weight": 0.9999999997491075
+    },
+    "flop|srp|oop|paired|gt5|vs_big|mid_pair": {
+      "combos": 196,
+      "freqs": {
+        "allin": 0.2683227385357768,
+        "call": 0.7306202387700187,
+        "fold": 0.0010570226942044618,
+        "raise_060": 0.0
+      },
+      "mass": 195.99999653093255,
+      "node": "vs_big",
+      "weight": 0.9999999823006762
+    },
+    "flop|srp|oop|paired|gt5|vs_big|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.9998397905870396,
+        "call": 9.328982380076473e-05,
+        "fold": 6.691958915959165e-05,
+        "raise_060": 0.0
+      },
+      "mass": 11.999999607447535,
+      "node": "vs_big",
+      "weight": 0.9999999672872946
+    },
+    "flop|srp|oop|paired|gt5|vs_big|overpair": {
+      "combos": 84,
+      "freqs": {
+        "allin": 0.11211479714229114,
+        "call": 0.8878115366524965,
+        "fold": 7.366620521240009e-05,
+        "raise_060": 0.0
+      },
+      "mass": 83.99999865137943,
+      "node": "vs_big",
+      "weight": 0.9999999839449932
+    },
+    "flop|srp|oop|paired|gt5|vs_big|two_pair_plus": {
+      "combos": 655,
+      "freqs": {
+        "allin": 0.5643748633381236,
+        "call": 0.43554585512014915,
+        "fold": 7.928154172724965e-05,
+        "raise_060": 0.0
+      },
+      "mass": 654.999987827221,
+      "node": "vs_big",
+      "weight": 0.9999999814156046
+    },
+    "flop|srp|oop|paired|gt5|vs_big|weak_pair": {
+      "combos": 666,
+      "freqs": {
+        "allin": 0.03372051473712537,
+        "call": 0.6488980578974688,
+        "fold": 0.31738142736540587,
+        "raise_060": 0.0
+      },
+      "mass": 665.9999952674407,
+      "node": "vs_big",
+      "weight": 0.9999999928940551
+    },
+    "flop|srp|oop|paired|gt5|vs_over|air": {
+      "combos": 1116,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0010380233628371508,
+        "fold": 0.9989619766371628,
+        "raise_060": 0.0
+      },
+      "mass": 1116.0000000395735,
+      "node": "vs_over",
+      "weight": 1.00000000003546
+    },
+    "flop|srp|oop|paired|gt5|vs_over|draw_strong": {
+      "combos": 268,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.06491375814605409,
+        "fold": 0.935086241853946,
+        "raise_060": 0.0
+      },
+      "mass": 268.0000006373739,
+      "node": "vs_over",
+      "weight": 1.0000000023782607
+    },
+    "flop|srp|oop|paired|gt5|vs_over|draw_weak": {
+      "combos": 1364,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.03563029318105675,
+        "fold": 0.9643697068189433,
+        "raise_060": 0.0
+      },
+      "mass": 1364.000003602373,
+      "node": "vs_over",
+      "weight": 1.0000000026410358
+    },
+    "flop|srp|oop|paired|gt5|vs_over|mid_pair": {
+      "combos": 196,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.42797335082263144,
+        "fold": 0.5720266491773686,
+        "raise_060": 0.0
+      },
+      "mass": 195.99999923445284,
+      "node": "vs_over",
+      "weight": 0.9999999960941471
+    },
+    "flop|srp|oop|paired|gt5|vs_over|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 12.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|paired|gt5|vs_over|overpair": {
+      "combos": 84,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.7042127312341705,
+        "fold": 0.29578726876582956,
+        "raise_060": 0.0
+      },
+      "mass": 83.99999916995876,
+      "node": "vs_over",
+      "weight": 0.9999999901185566
+    },
+    "flop|srp|oop|paired|gt5|vs_over|two_pair_plus": {
+      "combos": 655,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.7326777039088234,
+        "fold": 0.26732229609117664,
+        "raise_060": 0.0
+      },
+      "mass": 654.9999980939901,
+      "node": "vs_over",
+      "weight": 0.9999999970900613
+    },
+    "flop|srp|oop|paired|gt5|vs_over|weak_pair": {
+      "combos": 666,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.048098138568254935,
+        "fold": 0.951901861431745,
+        "raise_060": 0.0
+      },
+      "mass": 666.0000004136891,
+      "node": "vs_over",
+      "weight": 1.000000000621155
+    },
+    "flop|srp|oop|paired|gt5|vs_raise|air": {
+      "combos": 3348,
+      "freqs": {
+        "allin": 0.009065452024917726,
+        "call": 0.006732718667671243,
+        "fold": 0.9842018293074111,
+        "raise_060": 0.0
+      },
+      "mass": 3348.000001177261,
+      "node": "vs_raise",
+      "weight": 1.0000000003516312
+    },
+    "flop|srp|oop|paired|gt5|vs_raise|draw_strong": {
+      "combos": 804,
+      "freqs": {
+        "allin": 0.011713595826921133,
+        "call": 0.02694167551598821,
+        "fold": 0.9613447286570906,
+        "raise_060": 0.0
+      },
+      "mass": 803.9999995402177,
+      "node": "vs_raise",
+      "weight": 0.9999999994281314
+    },
+    "flop|srp|oop|paired|gt5|vs_raise|draw_weak": {
+      "combos": 4092,
+      "freqs": {
+        "allin": 0.0079213984679034,
+        "call": 0.032513297485629075,
+        "fold": 0.9595653040464676,
+        "raise_060": 0.0
+      },
+      "mass": 4091.9999974777293,
+      "node": "vs_raise",
+      "weight": 0.9999999993836093
+    },
+    "flop|srp|oop|paired|gt5|vs_raise|mid_pair": {
+      "combos": 588,
+      "freqs": {
+        "allin": 0.08137558651902167,
+        "call": 0.3458316222111655,
+        "fold": 0.5727927912698129,
+        "raise_060": 0.0
+      },
+      "mass": 587.999999148924,
+      "node": "vs_raise",
+      "weight": 0.9999999985525918
+    },
+    "flop|srp|oop|paired|gt5|vs_raise|nutted": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.33332919233641095,
+        "call": 0.6666261945991586,
+        "fold": 4.461306443045989e-05,
+        "raise_060": 0.0
+      },
+      "mass": 36.00000001401804,
+      "node": "vs_raise",
+      "weight": 1.00000000038939
+    },
+    "flop|srp|oop|paired|gt5|vs_raise|overpair": {
+      "combos": 252,
+      "freqs": {
+        "allin": 0.00395816414362618,
+        "call": 0.4831057501256925,
+        "fold": 0.5129360857306813,
+        "raise_060": 0.0
+      },
+      "mass": 251.99999921373092,
+      "node": "vs_raise",
+      "weight": 0.9999999968798846
+    },
+    "flop|srp|oop|paired|gt5|vs_raise|two_pair_plus": {
+      "combos": 1965,
+      "freqs": {
+        "allin": 0.11923164905221348,
+        "call": 0.563004206120002,
+        "fold": 0.3177641448277845,
+        "raise_060": 0.0
+      },
+      "mass": 1964.9999995345534,
+      "node": "vs_raise",
+      "weight": 0.9999999997631315
+    },
+    "flop|srp|oop|paired|gt5|vs_raise|weak_pair": {
+      "combos": 1998,
+      "freqs": {
+        "allin": 0.008667385337905825,
+        "call": 0.09052068504277368,
+        "fold": 0.9008119296193206,
+        "raise_060": 0.0
+      },
+      "mass": 1997.9999981059118,
+      "node": "vs_raise",
+      "weight": 0.9999999990520079
+    },
+    "flop|srp|oop|paired|le2|free|air": {
+      "combos": 1116,
+      "freqs": {
+        "allin": 0.008455817766422591,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.9915441822335774
+      },
+      "mass": 1116.0000007534727,
+      "node": "free",
+      "weight": 1.0000000006751548
+    },
+    "flop|srp|oop|paired|le2|free|draw_strong": {
+      "combos": 268,
+      "freqs": {
+        "allin": 0.2548196228888557,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.7451803771111443
+      },
+      "mass": 268.00000086799264,
+      "node": "free",
+      "weight": 1.0000000032387786
+    },
+    "flop|srp|oop|paired|le2|free|draw_weak": {
+      "combos": 1364,
+      "freqs": {
+        "allin": 0.04373275617479741,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.9562672438252026
+      },
+      "mass": 1363.9999987897472,
+      "node": "free",
+      "weight": 0.9999999991127179
+    },
+    "flop|srp|oop|paired|le2|free|mid_pair": {
+      "combos": 196,
+      "freqs": {
+        "allin": 0.09983723110586061,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.9001627688941394
+      },
+      "mass": 196.00000084980275,
+      "node": "free",
+      "weight": 1.0000000043357282
+    },
+    "flop|srp|oop|paired|le2|free|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0033557262436111923,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.9966442737563888
+      },
+      "mass": 11.999999816296622,
+      "node": "free",
+      "weight": 0.9999999846913852
+    },
+    "flop|srp|oop|paired|le2|free|overpair": {
+      "combos": 84,
+      "freqs": {
+        "allin": 0.033103033523637734,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.9668969664763623
+      },
+      "mass": 84.00000009057112,
+      "node": "free",
+      "weight": 1.0000000010782277
+    },
+    "flop|srp|oop|paired|le2|free|two_pair_plus": {
+      "combos": 655,
+      "freqs": {
+        "allin": 0.05749977599906454,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.9425002240009355
+      },
+      "mass": 654.9999991643708,
+      "node": "free",
+      "weight": 0.9999999987242303
+    },
+    "flop|srp|oop|paired|le2|free|weak_pair": {
+      "combos": 666,
+      "freqs": {
+        "allin": 0.1787809912828129,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.8212190087171871
+      },
+      "mass": 665.9999974075909,
+      "node": "free",
+      "weight": 0.9999999961074938
+    },
+    "flop|srp|oop|paired|le2|vs_over|air": {
+      "combos": 1116,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.029501957474538362,
+        "fold": 0.9704980425254617,
+        "raise_060": 0.0
+      },
+      "mass": 1115.9999994538666,
+      "node": "vs_over",
+      "weight": 0.9999999995106331
+    },
+    "flop|srp|oop|paired|le2|vs_over|draw_strong": {
+      "combos": 268,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.40572532183836696,
+        "fold": 0.594274678161633,
+        "raise_060": 0.0
+      },
+      "mass": 268.0000001544249,
+      "node": "vs_over",
+      "weight": 1.0000000005762124
+    },
+    "flop|srp|oop|paired|le2|vs_over|draw_weak": {
+      "combos": 1364,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.25583205037620155,
+        "fold": 0.7441679496237984,
+        "raise_060": 0.0
+      },
+      "mass": 1364.0000007828517,
+      "node": "vs_over",
+      "weight": 1.0000000005739382
+    },
+    "flop|srp|oop|paired|le2|vs_over|mid_pair": {
+      "combos": 196,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.999953207652776,
+        "fold": 4.6792347224027385e-05,
+        "raise_060": 0.0
+      },
+      "mass": 196.00000005257607,
+      "node": "vs_over",
+      "weight": 1.0000000002682452
+    },
+    "flop|srp|oop|paired|le2|vs_over|nutted": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 12.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|paired|le2|vs_over|overpair": {
+      "combos": 84,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 84.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|paired|le2|vs_over|two_pair_plus": {
+      "combos": 655,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 655.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|paired|le2|vs_over|weak_pair": {
+      "combos": 666,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.4318086566210103,
+        "fold": 0.5681913433789897,
+        "raise_060": 0.0
+      },
+      "mass": 665.9999996556799,
+      "node": "vs_over",
+      "weight": 0.9999999994830028
+    },
+    "flop|srp|oop|wet|2to5|free|air": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.00010886868299263957,
+        "bet_033": 0.0,
+        "bet_075": 0.03905943547241858,
+        "check": 0.9608316958445888
+      },
+      "mass": 36.000000345537046,
+      "node": "free",
+      "weight": 1.0000000095982513
+    },
+    "flop|srp|oop|wet|2to5|free|combo_draw": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.6613973334183155,
+        "bet_033": 0.0,
+        "bet_075": 0.0012758283745841633,
+        "check": 0.33732683820710035
+      },
+      "mass": 11.999999866820872,
+      "node": "free",
+      "weight": 0.9999999889017394
+    },
+    "flop|srp|oop|wet|2to5|free|draw_strong": {
+      "combos": 160,
+      "freqs": {
+        "allin": 0.08314008248774678,
+        "bet_033": 0.0,
+        "bet_075": 0.020390276444227643,
+        "check": 0.8964696410680256
+      },
+      "mass": 160.0000002020015,
+      "node": "free",
+      "weight": 1.0000000012625094
+    },
+    "flop|srp|oop|wet|2to5|free|draw_weak": {
+      "combos": 105,
+      "freqs": {
+        "allin": 0.0001202621320470244,
+        "bet_033": 0.0,
+        "bet_075": 0.17156459465156865,
+        "check": 0.8283151432163843
+      },
+      "mass": 104.99999992802077,
+      "node": "free",
+      "weight": 0.9999999993144836
+    },
+    "flop|srp|oop|wet|2to5|free|mid_pair": {
+      "combos": 60,
+      "freqs": {
+        "allin": 0.007234393229923773,
+        "bet_033": 0.0,
+        "bet_075": 0.006608268785979004,
+        "check": 0.9861573379840972
+      },
+      "mass": 59.999999748524715,
+      "node": "free",
+      "weight": 0.9999999958087452
+    },
+    "flop|srp|oop|wet|2to5|free|nutted": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.11212108230920487,
+        "bet_033": 0.0,
+        "bet_075": 0.29181325428028076,
+        "check": 0.5960656634105144
+      },
+      "mass": 50.99999987287447,
+      "node": "free",
+      "weight": 0.9999999975073425
+    },
+    "flop|srp|oop|wet|2to5|free|overpair": {
+      "combos": 24,
+      "freqs": {
+        "allin": 0.1814815620694842,
+        "bet_033": 0.0,
+        "bet_075": 0.04753020637484379,
+        "check": 0.770988231555672
+      },
+      "mass": 24.000000230968,
+      "node": "free",
+      "weight": 1.0000000096236665
+    },
+    "flop|srp|oop|wet|2to5|free|tp_good": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.008223523327340198,
+        "bet_033": 0.0,
+        "bet_075": 0.23694567058438504,
+        "check": 0.7548308060882748
+      },
+      "mass": 50.99999965752795,
+      "node": "free",
+      "weight": 0.9999999932848618
+    },
+    "flop|srp|oop|wet|2to5|free|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.02791827221709215,
+        "bet_033": 0.0,
+        "bet_075": 0.004263298411470552,
+        "check": 0.9678184293714372
+      },
+      "mass": 8.999999658495653,
+      "node": "free",
+      "weight": 0.9999999620550726
+    },
+    "flop|srp|oop|wet|2to5|free|two_pair_plus": {
+      "combos": 34,
+      "freqs": {
+        "allin": 0.09521985151111255,
+        "bet_033": 0.0,
+        "bet_075": 0.0969345947269302,
+        "check": 0.8078455537619572
+      },
+      "mass": 33.999999711988494,
+      "node": "free",
+      "weight": 0.9999999915290734
+    },
+    "flop|srp|oop|wet|2to5|free|weak_pair": {
+      "combos": 90,
+      "freqs": {
+        "allin": 0.0003037475572509127,
+        "bet_033": 0.0,
+        "bet_075": 0.018194797905226667,
+        "check": 0.9815014545375225
+      },
+      "mass": 90.00000026488851,
+      "node": "free",
+      "weight": 1.0000000029432057
+    },
+    "flop|srp|oop|wet|2to5|vs_big|air": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.00021149701491540756,
+        "call": 0.0029265085972862044,
+        "fold": 0.9968619943877984,
+        "raise_060": 0.0
+      },
+      "mass": 35.99999999561987,
+      "node": "vs_big",
+      "weight": 0.9999999998783298
+    },
+    "flop|srp|oop|wet|2to5|vs_big|combo_draw": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.8105349041098799,
+        "call": 0.18928334319186868,
+        "fold": 0.00018175269825134583,
+        "raise_060": 0.0
+      },
+      "mass": 11.999999533203663,
+      "node": "vs_big",
+      "weight": 0.9999999611003053
+    },
+    "flop|srp|oop|wet|2to5|vs_big|draw_strong": {
+      "combos": 160,
+      "freqs": {
+        "allin": 0.12361183714956869,
+        "call": 0.342690559057977,
+        "fold": 0.5336976037924543,
+        "raise_060": 0.0
+      },
+      "mass": 159.99999901241972,
+      "node": "vs_big",
+      "weight": 0.9999999938276233
+    },
+    "flop|srp|oop|wet|2to5|vs_big|draw_weak": {
+      "combos": 105,
+      "freqs": {
+        "allin": 0.000133839235273205,
+        "call": 0.1788390017654264,
+        "fold": 0.8210271589993003,
+        "raise_060": 0.0
+      },
+      "mass": 104.99999983193993,
+      "node": "vs_big",
+      "weight": 0.9999999983994279
+    },
+    "flop|srp|oop|wet|2to5|vs_big|mid_pair": {
+      "combos": 60,
+      "freqs": {
+        "allin": 0.07355730698504183,
+        "call": 0.774872800329764,
+        "fold": 0.1515698926851941,
+        "raise_060": 0.0
+      },
+      "mass": 59.999998870131094,
+      "node": "vs_big",
+      "weight": 0.9999999811688516
+    },
+    "flop|srp|oop|wet|2to5|vs_big|nutted": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.9586905667893891,
+        "call": 0.0411755939839652,
+        "fold": 0.00013383922664567157,
+        "raise_060": 0.0
+      },
+      "mass": 50.999996769300196,
+      "node": "vs_big",
+      "weight": 0.9999999366529451
+    },
+    "flop|srp|oop|wet|2to5|vs_big|overpair": {
+      "combos": 24,
+      "freqs": {
+        "allin": 0.40834252560658246,
+        "call": 0.5915236351627747,
+        "fold": 0.00013383923064278923,
+        "raise_060": 0.0
+      },
+      "mass": 23.99999863911944,
+      "node": "vs_big",
+      "weight": 0.9999999432966433
+    },
+    "flop|srp|oop|wet|2to5|vs_big|tp_good": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.06235198476435551,
+        "call": 0.9335968193605259,
+        "fold": 0.0040511958751186785,
+        "raise_060": 0.0
+      },
+      "mass": 50.999998281753506,
+      "node": "vs_big",
+      "weight": 0.9999999663088923
+    },
+    "flop|srp|oop|wet|2to5|vs_big|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0016554171508447533,
+        "call": 0.8193261088517239,
+        "fold": 0.17901847399743143,
+        "raise_060": 0.0
+      },
+      "mass": 8.99999971454963,
+      "node": "vs_big",
+      "weight": 0.9999999682832923
+    },
+    "flop|srp|oop|wet|2to5|vs_big|two_pair_plus": {
+      "combos": 34,
+      "freqs": {
+        "allin": 0.5539475004548972,
+        "call": 0.44591866031424093,
+        "fold": 0.00013383923086189413,
+        "raise_060": 0.0
+      },
+      "mass": 33.99999826106068,
+      "node": "vs_big",
+      "weight": 0.999999948854726
+    },
+    "flop|srp|oop|wet|2to5|vs_big|weak_pair": {
+      "combos": 90,
+      "freqs": {
+        "allin": 0.06795272323026243,
+        "call": 0.3644063344244396,
+        "fold": 0.5676409423452979,
+        "raise_060": 0.0
+      },
+      "mass": 89.99999848805601,
+      "node": "vs_big",
+      "weight": 0.9999999832006223
+    },
+    "flop|srp|oop|wet|2to5|vs_over|air": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0,
+        "fold": 1.0,
+        "raise_060": 0.0
+      },
+      "mass": 36.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|wet|2to5|vs_over|combo_draw": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.6723267573321108,
+        "fold": 0.3276732426678893,
+        "raise_060": 0.0
+      },
+      "mass": 11.999999957086402,
+      "node": "vs_over",
+      "weight": 0.9999999964238668
+    },
+    "flop|srp|oop|wet|2to5|vs_over|draw_strong": {
+      "combos": 160,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.09054816220406145,
+        "fold": 0.9094518377959385,
+        "raise_060": 0.0
+      },
+      "mass": 160.00000059988633,
+      "node": "vs_over",
+      "weight": 1.0000000037492895
+    },
+    "flop|srp|oop|wet|2to5|vs_over|draw_weak": {
+      "combos": 105,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.00018913382705306557,
+        "fold": 0.9998108661729469,
+        "raise_060": 0.0
+      },
+      "mass": 104.9999996185943,
+      "node": "vs_over",
+      "weight": 0.9999999963675648
+    },
+    "flop|srp|oop|wet|2to5|vs_over|mid_pair": {
+      "combos": 60,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.1684819811101184,
+        "fold": 0.8315180188898816,
+        "raise_060": 0.0
+      },
+      "mass": 59.99999997927807,
+      "node": "vs_over",
+      "weight": 0.9999999996546346
+    },
+    "flop|srp|oop|wet|2to5|vs_over|nutted": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 51.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|wet|2to5|vs_over|overpair": {
+      "combos": 24,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.764585796134422,
+        "fold": 0.23541420386557796,
+        "raise_060": 0.0
+      },
+      "mass": 23.99999999476131,
+      "node": "vs_over",
+      "weight": 0.9999999997817213
+    },
+    "flop|srp|oop|wet|2to5|vs_over|tp_good": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.2523623914229312,
+        "fold": 0.7476376085770688,
+        "raise_060": 0.0
+      },
+      "mass": 50.99999980349094,
+      "node": "vs_over",
+      "weight": 0.9999999961468811
+    },
+    "flop|srp|oop|wet|2to5|vs_over|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.31160240050222754,
+        "fold": 0.6883975994977725,
+        "raise_060": 0.0
+      },
+      "mass": 8.9999999270658,
+      "node": "vs_over",
+      "weight": 0.9999999918962001
+    },
+    "flop|srp|oop|wet|2to5|vs_over|two_pair_plus": {
+      "combos": 34,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9999352386877298,
+        "fold": 6.476131227012688e-05,
+        "raise_060": 0.0
+      },
+      "mass": 33.99999961217691,
+      "node": "vs_over",
+      "weight": 0.9999999885934384
+    },
+    "flop|srp|oop|wet|2to5|vs_over|weak_pair": {
+      "combos": 90,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.07264434844492132,
+        "fold": 0.9273556515550787,
+        "raise_060": 0.0
+      },
+      "mass": 90.00000001629815,
+      "node": "vs_over",
+      "weight": 1.0000000001810905
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|air": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0,
+        "fold": 1.0,
+        "raise_060": 0.0
+      },
+      "mass": 36.0,
+      "node": "vs_raise",
+      "weight": 1.0
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|combo_draw": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.7835357492073644,
+        "fold": 0.21646425079263565,
+        "raise_060": 0.0
+      },
+      "mass": 12.000000027008355,
+      "node": "vs_raise",
+      "weight": 1.0000000022506963
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|draw_strong": {
+      "combos": 160,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.10256125460119696,
+        "fold": 0.8974387453988031,
+        "raise_060": 0.0
+      },
+      "mass": 159.999999898253,
+      "node": "vs_raise",
+      "weight": 0.9999999993640813
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|draw_weak": {
+      "combos": 105,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.00017202381367356897,
+        "fold": 0.9998279761863265,
+        "raise_060": 0.0
+      },
+      "mass": 104.99999978963751,
+      "node": "vs_raise",
+      "weight": 0.9999999979965477
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|mid_pair": {
+      "combos": 60,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.11894160462773988,
+        "fold": 0.8810583953722602,
+        "raise_060": 0.0
+      },
+      "mass": 59.99999900441617,
+      "node": "vs_raise",
+      "weight": 0.9999999834069361
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|nutted": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 51.0,
+      "node": "vs_raise",
+      "weight": 1.0
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|overpair": {
+      "combos": 24,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.8265742612936505,
+        "fold": 0.1734257387063495,
+        "raise_060": 0.0
+      },
+      "mass": 23.999999827239662,
+      "node": "vs_raise",
+      "weight": 0.9999999928016526
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|tp_good": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.12464128706063397,
+        "fold": 0.8753587129393661,
+        "raise_060": 0.0
+      },
+      "mass": 50.99999983469024,
+      "node": "vs_raise",
+      "weight": 0.9999999967586323
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.12177267936689314,
+        "fold": 0.8782273206331068,
+        "raise_060": 0.0
+      },
+      "mass": 9.000000178115442,
+      "node": "vs_raise",
+      "weight": 1.0000000197906047
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|two_pair_plus": {
+      "combos": 34,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.970415007625151,
+        "fold": 0.02958499237484898,
+        "raise_060": 0.0
+      },
+      "mass": 33.99999984353781,
+      "node": "vs_raise",
+      "weight": 0.9999999953981709
+    },
+    "flop|srp|oop|wet|2to5|vs_raise|weak_pair": {
+      "combos": 90,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.08246661434490729,
+        "fold": 0.9175333856550927,
+        "raise_060": 0.0
+      },
+      "mass": 89.99999991222285,
+      "node": "vs_raise",
+      "weight": 0.9999999990246983
+    },
+    "flop|srp|oop|wet|gt5|free|air": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0003697313072520592,
+        "bet_033": 0.0,
+        "bet_075": 0.037214183273306,
+        "check": 0.9624160854194419
+      },
+      "mass": 35.99999933791696,
+      "node": "free",
+      "weight": 0.9999999816088044
+    },
+    "flop|srp|oop|wet|gt5|free|combo_draw": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.3872685136452236,
+        "bet_033": 0.0,
+        "bet_075": 0.042902782757936714,
+        "check": 0.5698287035968397
+      },
+      "mass": 12.000000015017577,
+      "node": "free",
+      "weight": 1.0000000012514647
+    },
+    "flop|srp|oop|wet|gt5|free|draw_strong": {
+      "combos": 160,
+      "freqs": {
+        "allin": 0.03623286645979217,
+        "bet_033": 0.0,
+        "bet_075": 0.042884111775769465,
+        "check": 0.9208830217644384
+      },
+      "mass": 160.0000000851578,
+      "node": "free",
+      "weight": 1.0000000005322363
+    },
+    "flop|srp|oop|wet|gt5|free|draw_weak": {
+      "combos": 105,
+      "freqs": {
+        "allin": 0.0002833245983523683,
+        "bet_033": 0.0,
+        "bet_075": 0.15806583894393297,
+        "check": 0.8416508364577147
+      },
+      "mass": 104.99999937096436,
+      "node": "free",
+      "weight": 0.9999999940091844
+    },
+    "flop|srp|oop|wet|gt5|free|mid_pair": {
+      "combos": 60,
+      "freqs": {
+        "allin": 0.005164646125439298,
+        "bet_033": 0.0,
+        "bet_075": 0.03188507813996167,
+        "check": 0.962950275734599
+      },
+      "mass": 60.00000084208841,
+      "node": "free",
+      "weight": 1.0000000140348069
+    },
+    "flop|srp|oop|wet|gt5|free|nutted": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.07291679749542276,
+        "bet_033": 0.0,
+        "bet_075": 0.3236186031269398,
+        "check": 0.6034645993776374
+      },
+      "mass": 50.99999999627471,
+      "node": "free",
+      "weight": 0.9999999999269551
+    },
+    "flop|srp|oop|wet|gt5|free|overpair": {
+      "combos": 24,
+      "freqs": {
+        "allin": 0.12742454229807518,
+        "bet_033": 0.0,
+        "bet_075": 0.10031844008757086,
+        "check": 0.772257017614354
+      },
+      "mass": 23.99999972918522,
+      "node": "free",
+      "weight": 0.9999999887160508
+    },
+    "flop|srp|oop|wet|gt5|free|tp_good": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.0014792790828604102,
+        "bet_033": 0.0,
+        "bet_075": 0.2542573049272723,
+        "check": 0.7442634159898673
+      },
+      "mass": 50.999999748615664,
+      "node": "free",
+      "weight": 0.9999999950708954
+    },
+    "flop|srp|oop|wet|gt5|free|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0005929986356779099,
+        "bet_033": 0.0,
+        "bet_075": 0.04053765441840256,
+        "check": 0.9588693469459195
+      },
+      "mass": 8.999999667721568,
+      "node": "free",
+      "weight": 0.9999999630801741
+    },
+    "flop|srp|oop|wet|gt5|free|two_pair_plus": {
+      "combos": 34,
+      "freqs": {
+        "allin": 0.04058145944819639,
+        "bet_033": 0.0,
+        "bet_075": 0.1429511015104707,
+        "check": 0.8164674390413329
+      },
+      "mass": 34.000000819098204,
+      "node": "free",
+      "weight": 1.0000000240911238
+    },
+    "flop|srp|oop|wet|gt5|free|weak_pair": {
+      "combos": 90,
+      "freqs": {
+        "allin": 0.0008599259957744142,
+        "bet_033": 0.0,
+        "bet_075": 0.033838300395724594,
+        "check": 0.965301773608501
+      },
+      "mass": 90.00000132810965,
+      "node": "free",
+      "weight": 1.0000000147567738
+    },
+    "flop|srp|oop|wet|gt5|vs_big|air": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0008820031849723878,
+        "call": 0.00860307163488929,
+        "fold": 0.9905149251801383,
+        "raise_060": 0.0
+      },
+      "mass": 35.99999996179122,
+      "node": "vs_big",
+      "weight": 0.999999998938645
+    },
+    "flop|srp|oop|wet|gt5|vs_big|combo_draw": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.8678361604800967,
+        "call": 0.13174365483160372,
+        "fold": 0.0004201846882996122,
+        "raise_060": 0.0
+      },
+      "mass": 12.000000244186595,
+      "node": "vs_big",
+      "weight": 1.0000000203488828
+    },
+    "flop|srp|oop|wet|gt5|vs_big|draw_strong": {
+      "combos": 160,
+      "freqs": {
+        "allin": 0.10584517290445832,
+        "call": 0.34868741466965436,
+        "fold": 0.5454674124258874,
+        "raise_060": 0.0
+      },
+      "mass": 159.9999999111759,
+      "node": "vs_big",
+      "weight": 0.9999999994448494
+    },
+    "flop|srp|oop|wet|gt5|vs_big|draw_weak": {
+      "combos": 105,
+      "freqs": {
+        "allin": 0.0003230858366859164,
+        "call": 0.1489971446128297,
+        "fold": 0.8506797695504844,
+        "raise_060": 0.0
+      },
+      "mass": 105.00000042895408,
+      "node": "vs_big",
+      "weight": 1.000000004085277
+    },
+    "flop|srp|oop|wet|gt5|vs_big|mid_pair": {
+      "combos": 60,
+      "freqs": {
+        "allin": 0.09433675942261317,
+        "call": 0.7304941104362379,
+        "fold": 0.1751691301411489,
+        "raise_060": 0.0
+      },
+      "mass": 59.99999935019878,
+      "node": "vs_big",
+      "weight": 0.9999999891699797
+    },
+    "flop|srp|oop|wet|gt5|vs_big|nutted": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.9424665307964264,
+        "call": 0.05753346920357364,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 50.99999944993033,
+      "node": "vs_big",
+      "weight": 0.9999999892143202
+    },
+    "flop|srp|oop|wet|gt5|vs_big|overpair": {
+      "combos": 24,
+      "freqs": {
+        "allin": 0.38964543105051586,
+        "call": 0.6103545689494841,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 24.00000040551822,
+      "node": "vs_big",
+      "weight": 1.0000000168965926
+    },
+    "flop|srp|oop|wet|gt5|vs_big|tp_good": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.06139763449032529,
+        "call": 0.933997641937201,
+        "fold": 0.00460472357247367,
+        "raise_060": 0.0
+      },
+      "mass": 50.99999886823207,
+      "node": "vs_big",
+      "weight": 0.9999999778084719
+    },
+    "flop|srp|oop|wet|gt5|vs_big|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0013959300387458063,
+        "call": 0.8852345972807568,
+        "fold": 0.11336947268049737,
+        "raise_060": 0.0
+      },
+      "mass": 9.000000037485734,
+      "node": "vs_big",
+      "weight": 1.0000000041650816
+    },
+    "flop|srp|oop|wet|gt5|vs_big|two_pair_plus": {
+      "combos": 34,
+      "freqs": {
+        "allin": 0.5203029551412929,
+        "call": 0.4796970448587071,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 33.99999933136132,
+      "node": "vs_big",
+      "weight": 0.9999999803341566
+    },
+    "flop|srp|oop|wet|gt5|vs_big|weak_pair": {
+      "combos": 90,
+      "freqs": {
+        "allin": 0.07355598860464696,
+        "call": 0.33600212798991,
+        "fold": 0.590441883405443,
+        "raise_060": 0.0
+      },
+      "mass": 89.99999975143146,
+      "node": "vs_big",
+      "weight": 0.9999999972381274
+    },
+    "flop|srp|oop|wet|gt5|vs_over|air": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0,
+        "fold": 1.0,
+        "raise_060": 0.0
+      },
+      "mass": 36.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|wet|gt5|vs_over|combo_draw": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.43079080317661955,
+        "fold": 0.5692091968233804,
+        "raise_060": 0.0
+      },
+      "mass": 12.000000132829882,
+      "node": "vs_over",
+      "weight": 1.000000011069157
+    },
+    "flop|srp|oop|wet|gt5|vs_over|draw_strong": {
+      "combos": 160,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.06854297010472214,
+        "fold": 0.9314570298952779,
+        "raise_060": 0.0
+      },
+      "mass": 159.99999943515104,
+      "node": "vs_over",
+      "weight": 0.999999996469694
+    },
+    "flop|srp|oop|wet|gt5|vs_over|draw_weak": {
+      "combos": 105,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.000335205784671373,
+        "fold": 0.9996647942153286,
+        "raise_060": 0.0
+      },
+      "mass": 104.99999994542304,
+      "node": "vs_over",
+      "weight": 0.9999999994802194
+    },
+    "flop|srp|oop|wet|gt5|vs_over|mid_pair": {
+      "combos": 60,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.10084367211778128,
+        "fold": 0.8991563278822187,
+        "raise_060": 0.0
+      },
+      "mass": 59.999999388703145,
+      "node": "vs_over",
+      "weight": 0.9999999898117191
+    },
+    "flop|srp|oop|wet|gt5|vs_over|nutted": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 51.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|wet|gt5|vs_over|overpair": {
+      "combos": 24,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.5202561786408886,
+        "fold": 0.4797438213591114,
+        "raise_060": 0.0
+      },
+      "mass": 23.999999973457307,
+      "node": "vs_over",
+      "weight": 0.9999999988940544
+    },
+    "flop|srp|oop|wet|gt5|vs_over|tp_good": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.17909286730761872,
+        "fold": 0.8209071326923812,
+        "raise_060": 0.0
+      },
+      "mass": 50.99999942188151,
+      "node": "vs_over",
+      "weight": 0.9999999886643434
+    },
+    "flop|srp|oop|wet|gt5|vs_over|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.00776326596011289,
+        "fold": 0.9922367340398871,
+        "raise_060": 0.0
+      },
+      "mass": 9.000000054598786,
+      "node": "vs_over",
+      "weight": 1.0000000060665317
+    },
+    "flop|srp|oop|wet|gt5|vs_over|two_pair_plus": {
+      "combos": 34,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.999105285550383,
+        "fold": 0.0008947144496169744,
+        "raise_060": 0.0
+      },
+      "mass": 34.000000465195626,
+      "node": "vs_over",
+      "weight": 1.0000000136822242
+    },
+    "flop|srp|oop|wet|gt5|vs_over|weak_pair": {
+      "combos": 90,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.07210461703291048,
+        "fold": 0.9278953829670895,
+        "raise_060": 0.0
+      },
+      "mass": 90.00000007131894,
+      "node": "vs_over",
+      "weight": 1.0000000007924326
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|air": {
+      "combos": 108,
+      "freqs": {
+        "allin": 3.7684616659105907e-06,
+        "call": 0.00031111144020867847,
+        "fold": 0.9996851200981254,
+        "raise_060": 0.0
+      },
+      "mass": 107.99999965882307,
+      "node": "vs_raise",
+      "weight": 0.9999999968409544
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|combo_draw": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.16600159093703906,
+        "call": 0.668609297307533,
+        "fold": 0.16538911175542792,
+        "raise_060": 0.0
+      },
+      "mass": 36.0000000144355,
+      "node": "vs_raise",
+      "weight": 1.0000000004009861
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|draw_strong": {
+      "combos": 480,
+      "freqs": {
+        "allin": 0.022711008266108078,
+        "call": 0.11925683780114217,
+        "fold": 0.8580321539327498,
+        "raise_060": 0.0
+      },
+      "mass": 479.9999996856641,
+      "node": "vs_raise",
+      "weight": 0.9999999993451335
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|draw_weak": {
+      "combos": 315,
+      "freqs": {
+        "allin": 3.610418627468377e-05,
+        "call": 0.005344317633961356,
+        "fold": 0.994619578179764,
+        "raise_060": 0.0
+      },
+      "mass": 314.9999986037292,
+      "node": "vs_raise",
+      "weight": 0.9999999955673943
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|mid_pair": {
+      "combos": 180,
+      "freqs": {
+        "allin": 0.015299772787617552,
+        "call": 0.10401997572557145,
+        "fold": 0.880680251486811,
+        "raise_060": 0.0
+      },
+      "mass": 179.999998965126,
+      "node": "vs_raise",
+      "weight": 0.9999999942507
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|nutted": {
+      "combos": 153,
+      "freqs": {
+        "allin": 0.27067765313329084,
+        "call": 0.7167018014999439,
+        "fold": 0.012620545366765226,
+        "raise_060": 0.0
+      },
+      "mass": 153.0000000423861,
+      "node": "vs_raise",
+      "weight": 1.0000000002770333
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|overpair": {
+      "combos": 72,
+      "freqs": {
+        "allin": 0.039656785571522954,
+        "call": 0.5336179028167483,
+        "fold": 0.42672531161172883,
+        "raise_060": 0.0
+      },
+      "mass": 72.0000001451308,
+      "node": "vs_raise",
+      "weight": 1.0000000020157056
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|tp_good": {
+      "combos": 153,
+      "freqs": {
+        "allin": 0.019897088030080907,
+        "call": 0.1326956189619437,
+        "fold": 0.8474072930079753,
+        "raise_060": 0.0
+      },
+      "mass": 152.99999886669684,
+      "node": "vs_raise",
+      "weight": 0.9999999925927898
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|tp_weak": {
+      "combos": 27,
+      "freqs": {
+        "allin": 0.0004687033907626736,
+        "call": 0.07766342153705272,
+        "fold": 0.9218678750721846,
+        "raise_060": 0.0
+      },
+      "mass": 27.000000451575033,
+      "node": "vs_raise",
+      "weight": 1.0000000167250012
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|two_pair_plus": {
+      "combos": 102,
+      "freqs": {
+        "allin": 0.1545991805707469,
+        "call": 0.6381251457477849,
+        "fold": 0.20727567368146824,
+        "raise_060": 0.0
+      },
+      "mass": 102.00000063997868,
+      "node": "vs_raise",
+      "weight": 1.0000000062743009
+    },
+    "flop|srp|oop|wet|gt5|vs_raise|weak_pair": {
+      "combos": 270,
+      "freqs": {
+        "allin": 0.01513636715823798,
+        "call": 0.08131812603821635,
+        "fold": 0.9035455068035456,
+        "raise_060": 0.0
+      },
+      "mass": 270.0000007561466,
+      "node": "vs_raise",
+      "weight": 1.0000000028005431
+    },
+    "flop|srp|oop|wet|le2|free|air": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0009485614848955867,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.9990514385151044
+      },
+      "mass": 35.99999999720603,
+      "node": "free",
+      "weight": 0.9999999999223897
+    },
+    "flop|srp|oop|wet|le2|free|combo_draw": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.755400776141729,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.244599223858271
+      },
+      "mass": 11.999999964609742,
+      "node": "free",
+      "weight": 0.9999999970508119
+    },
+    "flop|srp|oop|wet|le2|free|draw_strong": {
+      "combos": 160,
+      "freqs": {
+        "allin": 0.43212771052807303,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.567872289471927
+      },
+      "mass": 159.99999952496728,
+      "node": "free",
+      "weight": 0.9999999970310455
+    },
+    "flop|srp|oop|wet|le2|free|draw_weak": {
+      "combos": 105,
+      "freqs": {
+        "allin": 0.16291861880771372,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.8370813811922863
+      },
+      "mass": 104.99999895773362,
+      "node": "free",
+      "weight": 0.9999999900736536
+    },
+    "flop|srp|oop|wet|le2|free|mid_pair": {
+      "combos": 60,
+      "freqs": {
+        "allin": 0.30781092403509697,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.692189075964903
+      },
+      "mass": 60.00000008608913,
+      "node": "free",
+      "weight": 1.000000001434819
+    },
+    "flop|srp|oop|wet|le2|free|nutted": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.14098623472372446,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.8590137652762755
+      },
+      "mass": 50.99999948218465,
+      "node": "free",
+      "weight": 0.9999999898467579
+    },
+    "flop|srp|oop|wet|le2|free|overpair": {
+      "combos": 24,
+      "freqs": {
+        "allin": 0.5988338661447429,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.40116613385525707
+      },
+      "mass": 23.9999998989515,
+      "node": "free",
+      "weight": 0.9999999957896458
+    },
+    "flop|srp|oop|wet|le2|free|tp_good": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.39409207794185586,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.6059079220581441
+      },
+      "mass": 50.9999995988328,
+      "node": "free",
+      "weight": 0.9999999921339765
+    },
+    "flop|srp|oop|wet|le2|free|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.3356205693164896,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.6643794306835105
+      },
+      "mass": 8.999999961350113,
+      "node": "free",
+      "weight": 0.9999999957055681
+    },
+    "flop|srp|oop|wet|le2|free|two_pair_plus": {
+      "combos": 34,
+      "freqs": {
+        "allin": 0.6517629527154912,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.34823704728450877
+      },
+      "mass": 33.99999995343387,
+      "node": "free",
+      "weight": 0.999999998630408
+    },
+    "flop|srp|oop|wet|le2|free|weak_pair": {
+      "combos": 90,
+      "freqs": {
+        "allin": 0.24722921773798073,
+        "bet_033": 0.0,
+        "bet_075": 0.0,
+        "check": 0.7527707822620193
+      },
+      "mass": 89.99999936146196,
+      "node": "free",
+      "weight": 0.9999999929051329
+    },
+    "flop|srp|oop|wet|le2|vs_over|air": {
+      "combos": 36,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.0,
+        "fold": 1.0,
+        "raise_060": 0.0
+      },
+      "mass": 36.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|wet|le2|vs_over|combo_draw": {
+      "combos": 12,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9999079708746844,
+        "fold": 9.202912531553826e-05,
+        "raise_060": 0.0
+      },
+      "mass": 11.999999994644895,
+      "node": "vs_over",
+      "weight": 0.9999999995537413
+    },
+    "flop|srp|oop|wet|le2|vs_over|draw_strong": {
+      "combos": 160,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.36380092231494654,
+        "fold": 0.6361990776850535,
+        "raise_060": 0.0
+      },
+      "mass": 159.99999967147596,
+      "node": "vs_over",
+      "weight": 0.9999999979467248
+    },
+    "flop|srp|oop|wet|le2|vs_over|draw_weak": {
+      "combos": 105,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.028514570879757048,
+        "fold": 0.9714854291202429,
+        "raise_060": 0.0
+      },
+      "mass": 104.99999994289828,
+      "node": "vs_over",
+      "weight": 0.9999999994561741
+    },
+    "flop|srp|oop|wet|le2|vs_over|mid_pair": {
+      "combos": 60,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.5191190253242542,
+        "fold": 0.48088097467574575,
+        "raise_060": 0.0
+      },
+      "mass": 59.99999957293039,
+      "node": "vs_over",
+      "weight": 0.9999999928821732
+    },
+    "flop|srp|oop|wet|le2|vs_over|nutted": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 51.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|wet|le2|vs_over|overpair": {
+      "combos": 24,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 24.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|wet|le2|vs_over|tp_good": {
+      "combos": 51,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.9719605879584678,
+        "fold": 0.028039412041532173,
+        "raise_060": 0.0
+      },
+      "mass": 50.99999987054616,
+      "node": "vs_over",
+      "weight": 0.9999999974616894
+    },
+    "flop|srp|oop|wet|le2|vs_over|tp_weak": {
+      "combos": 9,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.3375275931603771,
+        "fold": 0.6624724068396229,
+        "raise_060": 0.0
+      },
+      "mass": 9.000000272411853,
+      "node": "vs_over",
+      "weight": 1.0000000302679837
+    },
+    "flop|srp|oop|wet|le2|vs_over|two_pair_plus": {
+      "combos": 34,
+      "freqs": {
+        "allin": 0.0,
+        "call": 1.0,
+        "fold": 0.0,
+        "raise_060": 0.0
+      },
+      "mass": 34.0,
+      "node": "vs_over",
+      "weight": 1.0
+    },
+    "flop|srp|oop|wet|le2|vs_over|weak_pair": {
+      "combos": 90,
+      "freqs": {
+        "allin": 0.0,
+        "call": 0.41454410542238523,
+        "fold": 0.5854558945776148,
+        "raise_060": 0.0
+      },
+      "mass": 90.00000021315645,
+      "node": "vs_over",
+      "weight": 1.000000002368405
+    }
+  },
+  "meta": {
+    "baked_at": "2026-07-22",
+    "generator": "texas_solver_blueprint_v3",
+    "grid": "/Users/claudiobarone/Projects/OSINT WORKSPACE/agents/devfun-poker-arena/research/texassolver_spot_grid_v3.json",
+    "hand_bucket_method": "made_hand_categories_per_combo",
+    "hand_buckets": [
+      "air",
+      "weak_pair",
+      "mid_pair",
+      "tp_weak",
+      "tp_good",
+      "overpair",
+      "two_pair_plus",
+      "nutted",
+      "draw_weak",
+      "draw_strong",
+      "combo_draw"
+    ],
+    "key_count": 540,
+    "key_schema": "{street}|{line}|{role}|{texture}|{spr}|{node}|{hand_bucket}",
+    "solver": "bupticybee/TexasSolver@v0.2.0",
+    "spots_failed": [],
+    "spots_solved": 90,
+    "spr_bins": [
+      "le2",
+      "2to5",
+      "gt5"
+    ],
+    "thread_iso": "thread_num=1 use_isomorphism=0"
+  },
+  "schema": "postflop-hu-buckets-v3",
+  "source": "examples/bake_blueprint_v3.py"
+}

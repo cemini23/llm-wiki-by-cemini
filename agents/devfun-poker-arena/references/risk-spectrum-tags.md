@@ -38,6 +38,16 @@ Implemented in `examples/risk_spectrum.py` (`VPIP_HIGH`, `VPIP_MEDIUM`,
 - Optional HUD enrich via `attach_risk_spectrum_to_hud` (exploit selection /
   HL notes — not forced into every decide)
 
+## Best-response modes (allowed)
+
+Risk-spectrum tags may drive **bounded best-response overlays**
+(`nit` / `lag` / `wide_passive` / `balanced`) via `examples/opponent_modes.py`
+when `CEMINI_OPPONENT_MODES=1`. That is still **not** “copy GPT VPIP into
+aggression” — modes only stack small margin deltas (±0.06) against tagged
+foes. See `references/opponent-modes.md`.
+
 ## Related
 
 - `briefs/2026-07-15_k156-agenttexaspoker-risk-spectrum-steal.md`
+- `references/opponent-modes.md`
+

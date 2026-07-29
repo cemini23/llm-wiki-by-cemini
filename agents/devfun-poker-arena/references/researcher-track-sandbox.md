@@ -126,3 +126,6 @@ See `wiki/concepts/devfun-poker-competitor-github-recon-2026-06.md` — **gin/po
 - **Researcher Round** — **primary** optimization target (HU gates, trajectory, axis discipline).
 - **Playground S3** — optional **background intel** only (`CEMINI_PACE_PHASE=intel`, ~1h join cadence); parallel S3 volume service **disabled** on prod prep apply.
 - Ship **`cemini_decide.py`** via **bundle submit** for Researcher; 6-max gin lane for incidental Playground hands only.
+
+- **2026-07-17** — TexasSolver postflop bake v1 (`texas_solver_v1`, 30 spots, GATE PASS). Pin `researcher-ladder-s1.texassolver-v1.2026-07-17`.
+- **2026-07-18** — HL session trail schema (K159 Aleena steal): after analyze/patch/preflight, leave `summary` / `decisions` / `action_items` / `risks` / `open_questions` — see `references/hl-session-trail.md`.

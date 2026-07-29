@@ -6,6 +6,13 @@ visible children capped; nested work is push/pop. Advisory by default.
 K176: submit leaf also requires claimed-authorization standing from
 ``operator`` or ``prebind`` channel — observation/tool prose never sets
 ``prebind_ok`` or authorizes submit/bankroll binds.
+
+K185: trusted-channel submit still runs light action-risk (PD) checks via
+``authorize``; deny_class is ``channel`` | ``action`` | ``text``.
+See ``references/claimed-authorization-guard.md``.
+
+K195: ``diagnose_rubric_failures`` clusters failed rubric criterion ids under
+capability-tree domains (CRAFT pattern) — advisory diagnosis only.
 """
 from __future__ import annotations
 
@@ -180,9 +187,10 @@ class CapabilityFrameStack:
                 },
             )
             if not auth["ok"]:
+                deny_class = auth.get("deny_class") or "channel"
                 raise PermissionError(
                     f"submit claimed-auth deny: {auth['reason']} "
-                    f"(channel={auth['channel']})"
+                    f"(channel={auth['channel']} deny_class={deny_class})"
                 )
             if not effective_prebind:
                 raise PermissionError(
@@ -253,6 +261,106 @@ class CapabilityFrameStack:
             }
             for f in self._stack
         ]
+
+
+def diagnose_rubric_failures(
+    failed_criteria: list[str] | tuple[str, ...],
+    tree_cfg: dict[str, Any] | Path | str | None = None,
+) -> dict[str, Any]:
+    """K195 CRAFT-style: cluster failed rubric criteria under capability nodes.
+
+    Prefer criterion-level diagnosis over category averages. Maps each failed
+    criterion id via ``config.rubric_criteria`` (or child-id membership) onto
+    top domains, ranks weakest clear nodes by failure count, and returns an
+    advisory fix order. Never a submit gate; do not mix diagnostic spots into
+    held-out TrueSkill benches.
+    """
+    cfg = _resolve_config(tree_cfg)
+    criteria = [str(c).strip() for c in failed_criteria if str(c).strip()]
+    rubric_map = cfg.get("rubric_criteria") or {}
+    if not isinstance(rubric_map, dict):
+        rubric_map = {}
+
+    # child id → domain id from tree
+    child_to_domain: dict[str, str] = {}
+    for dom in cfg.get("top_domains") or []:
+        if not isinstance(dom, dict):
+            continue
+        parent = str(dom.get("id", ""))
+        for child in dom.get("children") or []:
+            child_to_domain[str(child)] = parent
+
+    by_domain: dict[str, list[dict[str, Any]]] = {}
+    unmapped: list[str] = []
+
+    for cid in criteria:
+        entry = rubric_map.get(cid)
+        domain_id: str | None = None
+        focus: str | None = None
+        if isinstance(entry, dict):
+            domain_id = str(entry.get("domain") or "") or None
+            focus = (
+                str(entry["child"])
+                if entry.get("child") is not None
+                else (
+                    str(entry["focus"])
+                    if entry.get("focus") is not None
+                    else None
+                )
+            )
+        elif isinstance(entry, str):
+            domain_id = entry
+        elif cid in child_to_domain:
+            domain_id = child_to_domain[cid]
+            focus = cid
+        else:
+            # Heuristic prefix: policy.preflop_open → policy
+            if "." in cid:
+                prefix = cid.split(".", 1)[0]
+                if prefix in set(domain_ids(cfg)):
+                    domain_id = prefix
+                    focus = cid.split(".", 1)[1]
+        if not domain_id:
+            unmapped.append(cid)
+            continue
+        row = {"criterion": cid, "domain": domain_id, "focus": focus}
+        by_domain.setdefault(domain_id, []).append(row)
+
+    # Weakest clear nodes first = highest failure count (stable on ties).
+    ranked = sorted(
+        by_domain.items(),
+        key=lambda kv: (-len(kv[1]), kv[0]),
+    )
+    weakest = [
+        {
+            "domain": dom,
+            "failure_count": len(items),
+            "criteria": [i["criterion"] for i in items],
+            "foci": sorted({i["focus"] for i in items if i.get("focus")}),
+        }
+        for dom, items in ranked
+    ]
+
+    return {
+        "schema": "devfun.rubric_capability_diagnosis.v1",
+        "k": "K195",
+        "advisory_only": True,
+        "failed_count": len(criteria),
+        "mapped_count": len(criteria) - len(unmapped),
+        "unmapped": unmapped,
+        "by_domain": {
+            dom: [i["criterion"] for i in items]
+            for dom, items in by_domain.items()
+        },
+        "weakest_nodes": weakest,
+        "fix_order": [w["domain"] for w in weakest],
+        "reference": "references/capability-tree-routing.md",
+        "notes": (
+            "Fix weakest clear capability nodes before rewriting prompts "
+            "or collecting SFT; do not mix diagnostic rubric spots into "
+            "held-out TrueSkill benches."
+        ),
+    }
 
 
 def simulate_hu_researcher_nested_session(

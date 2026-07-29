@@ -815,8 +815,13 @@ def compute_deepsearch_trajectory_filter_advisory(
     *,
     config: dict[str, Any] | str | Path | None = None,
     units_prebuilt: bool = False,
+    apply_stigmergy: bool = True,
 ) -> dict[str, Any]:
-    """K161 advisory: generate→filter→mix eligibility for failure mining."""
+    """K161 advisory: generate→filter→mix eligibility for failure mining.
+
+    K141: when ``apply_stigmergy`` is True, re-rank eligible units by
+    stigmergic spot-class scores (advisory order only — eligibility unchanged).
+    """
     cfg = (
         load_deepsearch_trajectory_filter_config(config)
         if config is None or isinstance(config, (str, Path))
@@ -824,6 +829,14 @@ def compute_deepsearch_trajectory_filter_advisory(
     )
     units = rows_or_units if units_prebuilt else build_failure_mining_units(rows_or_units)
     filtered = filter_deepsearch_units(units, config=cfg)
+    if apply_stigmergy:
+        try:
+            from stigmergy_spot_scores import apply_stigmergy_to_deepsearch_filter
+
+            filtered = apply_stigmergy_to_deepsearch_filter(filtered)
+        except Exception:
+            # Stigmergy is advisory; never fail the K161 filter path.
+            pass
     n = filtered["n_units"]
     eligible_pct = round(filtered["n_eligible"] / n, 4) if n else None
     return {
@@ -836,6 +849,12 @@ def compute_deepsearch_trajectory_filter_advisory(
         "rejected_reasons": filtered["reasons"],
         "eligible_hand_ids": [u.get("hand_id") for u in filtered["eligible"]],
         "required_tags": list(cfg.get("required_tags") or []),
+        "eligible_ranked_by_stigmergy": bool(
+            filtered.get("eligible_ranked_by_stigmergy")
+        ),
+        "stigmergy_ranked_classes": list(
+            filtered.get("stigmergy_ranked_classes") or []
+        ),
         "reference": "references/deepsearch-trajectory-filter.md",
     }
 
@@ -1004,7 +1023,16 @@ def summarize_selfplay_trajectory(
         decay=forgetting_decay,
     )
 
-    return {
+    # K191 advisory: per-street credit-assignment tallies (not only session PnL).
+    turn_street_scores: dict[str, Any] | None = None
+    try:
+        from turn_street_scores import aggregate_turn_scores
+
+        turn_street_scores = aggregate_turn_scores(rows)
+    except Exception:
+        turn_street_scores = None
+
+    out: dict[str, Any] = {
         "source": "selfplay",
         "decision_count": len(decisions),
         "hands": hands,
@@ -1023,6 +1051,9 @@ def summarize_selfplay_trajectory(
         "memory_gap": memory_gap,
         "forgetting_regret": forgetting_regret,
     }
+    if turn_street_scores is not None:
+        out["turn_street_scores"] = turn_street_scores
+    return out
 
 
 def summarize_arena_export(export_dir: Path, hero: str) -> dict[str, Any]:

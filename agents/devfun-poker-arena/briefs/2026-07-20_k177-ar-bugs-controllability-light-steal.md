@@ -10,6 +10,12 @@ updated: 2026-07-20
 
 `agents/devfun-poker-arena/`
 
+## Status
+
+**SHIPPED advisory (2026-07-20)** — AR-class fixture + process oracles in
+`tests/test_claimed_authorization.py` (`test_ar_class_claimed_auth_tool_result_submit`);
+docs `references/ar-bugs-controllability.md`. **No pin / no decide swap.**
+
 ## Summary
 
 arXiv 2607.15684 (agent-reactive bugs) + 2607.15715 (behavioral controllability IE): silent model–harness failures and process-trace eval. Light steal for decide()/capability-tree regressions — not a pin change.

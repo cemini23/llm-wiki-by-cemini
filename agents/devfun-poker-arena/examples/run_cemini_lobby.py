@@ -103,6 +103,9 @@ def _lobby_role_label(competition_id: str) -> tuple[str, str]:
     s2t = os.environ.get("S2_TOURNAMENT_COMP", "").strip()
     s2 = os.environ.get("S2_PLAYGROUND_COMP", "").strip()
     s3 = os.environ.get("S3_PLAYGROUND_COMP", "").strip()
+    s9 = os.environ.get("S9_PLAYGROUND_COMP", "cmrt1wzu40jm911suskj9qebe").strip()
+    s10 = os.environ.get("S10_PLAYGROUND_COMP", "cms0bwufmf3n8kyykdpxi6d2i").strip()
+    s10t = os.environ.get("S10_TOURNAMENT_COMP", "").strip()
     rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
     if competition_id and competition_id == rcomp:
         return "Researcher Round", "researcher_round"
@@ -114,10 +117,16 @@ def _lobby_role_label(competition_id: str) -> tuple[str, str]:
         return "Tournament S1", "s1_tournament"
     if competition_id and competition_id == s2t:
         return "Tournament S2", "s2_tournament"
+    if competition_id and s10t and competition_id == s10t:
+        return "Tournament S10", "s10_tournament"
     if competition_id and competition_id == s2:
         return "Playground S2", "s2_playground"
     if competition_id and competition_id == s3:
         return "Playground S3", "s3_playground"
+    if competition_id and competition_id == s9:
+        return "Playground S9", "s9_playground"
+    if competition_id and competition_id == s10:
+        return "Playground S10", "s10_playground"
     label = os.environ.get("CEMINI_LOBBY_LABEL", "").strip().replace("_", " ")
     role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip()
     return label or competition_id, role or "lobby"
@@ -134,7 +143,19 @@ def _apply_competition_posture(competition_id: str) -> None:
     s2t = os.environ.get("S2_TOURNAMENT_COMP", "").strip()
     s2 = os.environ.get("S2_PLAYGROUND_COMP", "cmq57o53r0bhw18g23qkydb08").strip()
     s3 = os.environ.get("S3_PLAYGROUND_COMP", "").strip()
+    s9 = os.environ.get("S9_PLAYGROUND_COMP", "cmrt1wzu40jm911suskj9qebe").strip()
+    s10 = os.environ.get("S10_PLAYGROUND_COMP", "cms0bwufmf3n8kyykdpxi6d2i").strip()
+    s10t = os.environ.get("S10_TOURNAMENT_COMP", "").strip()
     rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
+    _pg_role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip().lower()
+    _chip_qual_playground = competition_id in (s9, s10) or _pg_role in (
+        "s9_playground",
+        "s10_playground",
+    )
+    _s10_tournament = (
+        (s10t and competition_id == s10t)
+        or _pg_role == "s10_tournament"
+    )
     if rcomp and competition_id == rcomp:
         os.environ.update({
             "CEMINI_RESEARCHER_MODE": "1",
@@ -196,6 +217,76 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_S1B_MIN_STACK_BB": "60",
             "CEMINI_QUAL_CUTOFF_RANK": "20",
             "CEMINI_EVAL_PANEL_GATE": "0",
+        })
+    elif _chip_qual_playground:
+        # Playground S9/S10 chip qual — 6-max grind (top 20 → paired Tournament).
+        # Briefs: S1a nit ~10–16% VPIP; gin/HU ladder/eval crush OFF.
+        os.environ.update({
+            "CEMINI_TOURNAMENT_MODE": "0",
+            "CEMINI_TABLE_FORMAT": "6max",
+            "CEMINI_RESEARCHER_MODE": "0",
+            "CEMINI_SANDBOX_PVP_SUBMIT_ONLY": "0",
+            "CEMINI_EVAL_PANEL_GATE": "0",
+            "CEMINI_EVAL_PANEL_MODE": "0",
+            "CEMINI_PLACEMENT_CHASE": "0",
+            "CEMINI_PACE_PHASE": "volume",
+            "CEMINI_JOIN_RETRY_S": "12",
+            "CEMINI_IN_QUEUE_RETRY_S": "25",
+            "CEMINI_LOW_STACK_JOIN_RETRY_S": "15",
+            "CEMINI_S1B_MIN_STACK_BB": "60",
+            "CEMINI_QUAL_CUTOFF_RANK": "20",
+            "CEMINI_PRIZE_CUTOFF_RANK": "20",
+            "CEMINI_COLD_START_NO_STEAL": "1",
+            "CEMINI_KO_SURVIVAL": "1",
+            "CEMINI_STAGGER_LOCKS": "1",
+            "CEMINI_NUTS_DETECT": "1",
+            "CEMINI_SANITIZE_OUTPUT": "1",
+            "CEMINI_PLAYGROUND_TIMESERIES": "1",
+            "CEMINI_GIN_STYLE": "0",
+            "CEMINI_GIN_STYLE_PREFLOP": "0",
+            "CEMINI_GIN_STYLE_POSTFLOP": "0",
+            "CEMINI_GIN_STYLE_GATE": "0",
+            "CEMINI_GIN_V008": "0",
+            "CEMINI_MAFP_CHART": "0",
+            "CEMINI_SOLVER_V3": "0",
+            "CEMINI_SOLVER_HARD": "0",
+            "CEMINI_TRAJECTORY_BOUND": "0",
+            "CEMINI_VERIFIER_BON": "0",
+            "CEMINI_EVAL_CRUSH": "0",
+            "JACKPOT_ROYAL_ENABLED": "0",
+            "JACKPOT_ROYAL_SHOWDOWN": "0",
+            "JACKPOT_27_HUNT_ENABLED": "0",
+        })
+    elif _s10_tournament:
+        # Tournament S10 KO — placement EV (top ~25 bracket / money zone ~10).
+        # Gin OFF: keep the Playground S10 qual style; widen only after KO analyze.
+        os.environ.update({
+            "CEMINI_TOURNAMENT_MODE": "1",
+            "CEMINI_TABLE_FORMAT": "auto",
+            "CEMINI_RESEARCHER_MODE": "0",
+            "CEMINI_SANDBOX_PVP_SUBMIT_ONLY": "0",
+            "CEMINI_PLACEMENT_CHASE": "1",
+            "CEMINI_EVAL_PANEL_GATE": "0",
+            "CEMINI_EVAL_PANEL_MODE": "0",
+            "CEMINI_PRIZE_CUTOFF_RANK": "10",
+            "CEMINI_QUAL_CUTOFF_RANK": "25",
+            "CEMINI_KO_SURVIVAL": "1",
+            "CEMINI_STAGGER_LOCKS": "0",
+            "CEMINI_COLD_START_NO_STEAL": "1",
+            "CEMINI_GIN_STYLE": "0",
+            "CEMINI_GIN_STYLE_PREFLOP": "0",
+            "CEMINI_GIN_STYLE_POSTFLOP": "0",
+            "CEMINI_GIN_STYLE_GATE": "0",
+            "CEMINI_GIN_V008": "0",
+            "CEMINI_MAFP_CHART": "0",
+            "CEMINI_SOLVER_V3": "0",
+            "CEMINI_EVAL_CRUSH": "0",
+            "CEMINI_JOIN_RETRY_S": "25",
+            "CEMINI_IN_QUEUE_RETRY_S": "60",
+            "CEMINI_LOW_STACK_JOIN_RETRY_S": "30",
+            "JACKPOT_ROYAL_ENABLED": "0",
+            "JACKPOT_ROYAL_SHOWDOWN": "0",
+            "JACKPOT_27_HUNT_ENABLED": "0",
         })
     elif competition_id in (s1, s2t):
         os.environ.update({

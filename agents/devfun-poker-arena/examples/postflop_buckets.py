@@ -48,6 +48,110 @@ def postflop_buckets_enabled() -> bool:
     return _env_truthy("CEMINI_POSTFLOP_BUCKETS")
 
 
+def deepcfr_enabled() -> bool:
+    """Prefer DeepCFR-lite bake when flag on (still requires POSTFLOP_BUCKETS)."""
+    return _env_truthy("CEMINI_DEEPCFR")
+
+
+def solver_hard_enabled() -> bool:
+    """When on, sample actions from bake freqs instead of soft equity-bar bias."""
+    return _env_truthy("CEMINI_SOLVER_HARD")
+
+
+def spr_bin(effective_stack: float, pot: float) -> str:
+    """Coarse SPR bucket for denser v2 keys (backward-compatible helper)."""
+    pot_f = max(float(pot), 1e-9)
+    spr = max(0.0, float(effective_stack) / pot_f)
+    if spr < 3.5:
+        return "spr2"
+    if spr < 7.5:
+        return "spr5"
+    if spr < 15.0:
+        return "spr10"
+    return "spr20"
+
+
+def sample_action_from_freqs(
+    freqs: dict[str, float],
+    *,
+    facing_bet: bool,
+    available: list[str],
+    rng: Any,
+) -> Optional[tuple[str, Optional[float]]]:
+    """Sample a legal action from bake freqs. Returns (action, size_pot_frac) or None.
+
+    Free spot uses bet/check mass; facing uses fold/call/raise. Illegal actions
+    are dropped and the remainder re-normalized. Empty support → None (fail-open).
+    """
+    if not freqs or not available:
+        return None
+    avail = {str(a).lower() for a in available}
+    size = float(freqs.get("size_pot_frac", 0.5) or 0.5)
+    size = max(0.25, min(1.0, size))
+
+    if facing_bet:
+        # Map raise→raise/bet/all-in preference
+        cand = {
+            "fold": float(freqs.get("fold", 0.0) or 0.0),
+            "call": float(freqs.get("call", 0.0) or 0.0),
+            "raise": float(freqs.get("raise", 0.0) or 0.0),
+        }
+        weights: list[tuple[str, float]] = []
+        for action, w in cand.items():
+            if w <= 0:
+                continue
+            if action == "fold" and "fold" in avail:
+                weights.append(("fold", w))
+            elif action == "call" and "call" in avail:
+                weights.append(("call", w))
+            elif action == "raise":
+                if "raise" in avail:
+                    weights.append(("raise", w))
+                elif "bet" in avail:
+                    weights.append(("bet", w))
+                elif "all-in" in avail:
+                    weights.append(("all-in", w))
+                elif "allin" in avail:
+                    weights.append(("allin", w))
+    else:
+        cand = {
+            "bet": float(freqs.get("bet", 0.0) or 0.0),
+            "check": float(freqs.get("check", 0.0) or 0.0),
+        }
+        weights = []
+        for action, w in cand.items():
+            if w <= 0:
+                continue
+            if action == "check" and "check" in avail:
+                weights.append(("check", w))
+            elif action == "bet":
+                if "bet" in avail:
+                    weights.append(("bet", w))
+                elif "raise" in avail:
+                    weights.append(("raise", w))
+                elif "all-in" in avail:
+                    weights.append(("all-in", w))
+                elif "allin" in avail:
+                    weights.append(("allin", w))
+
+    if not weights:
+        return None
+    total = sum(w for _, w in weights)
+    if total <= 1e-12:
+        return None
+    pick = float(rng.random()) * total
+    acc = 0.0
+    chosen = weights[-1][0]
+    for action, w in weights:
+        acc += w
+        if pick <= acc:
+            chosen = action
+            break
+    if chosen in ("check", "fold", "call"):
+        return chosen, None
+    return chosen, size
+
+
 def strength_bin(equity: float) -> str:
     """Map equity in [0,1] to strength_bin label."""
     eq = max(0.0, min(1.0, float(equity)))
@@ -83,8 +187,31 @@ def bucket_key(street: str, role: str, texture: str, strength: str) -> str:
     return f"{street}|{role}|{texture}|{strength}"
 
 
+def resolve_deepcfr_buckets_path() -> Optional[Path]:
+    """Bundle-aware DeepCFR-lite path: env → assets/research → repo research."""
+    override = os.environ.get("CEMINI_DEEPCFR_PATH", "").strip()
+    if override:
+        return Path(override)
+
+    module_dir = Path(__file__).resolve().parent
+    candidates = (
+        module_dir / "research" / "deepcfr_hu_buckets.json",
+        module_dir.parent / "assets" / "research" / "deepcfr_hu_buckets.json",
+        module_dir.parent / "research" / "deepcfr_hu_buckets.json",
+    )
+    for p in candidates:
+        if p.is_file():
+            return p
+    return None
+
+
 def resolve_postflop_buckets_path() -> Optional[Path]:
-    """Bundle-aware path: env → assets/research → repo research."""
+    """Bundle-aware path: DeepCFR (if flagged) → env → assets/research → repo."""
+    if deepcfr_enabled():
+        deep = resolve_deepcfr_buckets_path()
+        if deep is not None:
+            return deep
+
     override = os.environ.get("CEMINI_POSTFLOP_BUCKETS_PATH", "").strip()
     if override:
         return Path(override)
@@ -218,19 +345,80 @@ def lookup_slice(
     return out or None
 
 
+def resolve_bias_generator(generator: Optional[str] = None) -> str:
+    """Resolve bias provenance: explicit arg → env → loaded bucket meta.
+
+    Returns ``texas_solver_v1`` when solver-strength scale should apply,
+    otherwise a non-solver token (heuristic path / unchanged clamps).
+    """
+    if generator:
+        return str(generator).strip()
+    env = os.environ.get("CEMINI_POSTFLOP_BIAS_SCALE", "").strip().lower()
+    if env in ("deepcfr", "deepcfr_lite_v1"):
+        return "deepcfr_lite_v1"
+    if env in ("texas_solver_v2",):
+        return "texas_solver_v2"
+    if env in ("solver", "texas_solver_v1", "strong", "1", "true", "yes", "on"):
+        return "texas_solver_v1"
+    if env in ("0", "off", "heuristic", "heuristic_bucket_v1", "false", "no"):
+        return "heuristic_bucket_v1"
+    # Inspect loaded table when buckets are enabled (hot path).
+    if postflop_buckets_enabled():
+        data = get_buckets_payload()
+        if data:
+            gen = (data.get("meta") or {}).get("generator")
+            if gen:
+                return str(gen)
+    return "heuristic_bucket_v1"
+
+
+def bias_scale_params(generator: Optional[str] = None) -> dict[str, float]:
+    """Clamp + multipliers for bias_thresholds_from_freqs.
+
+    Heuristic bake: clamp ±0.08, free mult 0.10, facing 0.12/0.10/0.15.
+    texas_solver_v1 / v2 / deepcfr_lite_v1: Phase-1 solver scale — clamp ±0.14,
+    free 0.15, facing 0.18/0.15/0.225 (Phase-2 ±0.16 stack rolled back).
+    """
+    gen = resolve_bias_generator(generator)
+    if gen in ("texas_solver_v1", "texas_solver_v2", "deepcfr_lite_v1"):
+        return {
+            "clamp": 0.14,
+            "free_mult": 0.15,
+            "fold_mult": 0.18,
+            "call_mult": 0.15,
+            "raise_mult": 0.225,
+        }
+    return {
+        "clamp": 0.08,
+        "free_mult": 0.10,
+        "fold_mult": 0.12,
+        "call_mult": 0.10,
+        "raise_mult": 0.15,
+    }
+
+
 def bias_thresholds_from_freqs(
     freqs: dict[str, float],
     *,
     facing_bet: bool = False,
+    generator: Optional[str] = None,
 ) -> dict[str, float]:
     """Bounded threshold deltas from bucket frequencies.
 
     Free spot: higher bet freq → lower bet_bar; higher check → higher bet_bar.
     Facing: higher fold → more fold_slack; higher call → lower call_margin;
     higher raise → lower raise_bar.
-    All deltas clamped to ±0.08.
+
+    Clamp defaults ±0.08 (heuristic). When loaded meta generator is
+    ``texas_solver_v1`` / ``deepcfr_lite_v1`` (or env solver scale), clamp
+    ±0.14 and free_mult 0.15 / facing 0.18·0.15·0.225. Flag-off path
+    never calls this with live freqs.
     """
-    def clamp(x: float, lo: float = -0.08, hi: float = 0.08) -> float:
+    params = bias_scale_params(generator)
+    lo = -float(params["clamp"])
+    hi = float(params["clamp"])
+
+    def clamp(x: float) -> float:
         return max(lo, min(hi, x))
 
     if facing_bet:
@@ -238,9 +426,9 @@ def bias_thresholds_from_freqs(
         call_f = float(freqs.get("call", 0.0))
         raise_f = float(freqs.get("raise", 0.0))
         # More fold weight → fold easier (increase fold_slack)
-        fold_slack_delta = clamp((fold_f - 0.35) * 0.12)
-        call_margin_delta = clamp((0.40 - call_f) * 0.10)
-        raise_bar_delta = clamp((0.15 - raise_f) * 0.15)
+        fold_slack_delta = clamp((fold_f - 0.35) * float(params["fold_mult"]))
+        call_margin_delta = clamp((0.40 - call_f) * float(params["call_mult"]))
+        raise_bar_delta = clamp((0.15 - raise_f) * float(params["raise_mult"]))
         return {
             "fold_slack_delta": fold_slack_delta,
             "call_margin_delta": call_margin_delta,
@@ -251,7 +439,7 @@ def bias_thresholds_from_freqs(
     bet_f = float(freqs.get("bet", 0.0))
     check_f = float(freqs.get("check", 0.0))
     # More bet → lower bar (easier bet); more check → higher bar
-    bet_bar_delta = clamp((check_f - bet_f) * 0.10)
+    bet_bar_delta = clamp((check_f - bet_f) * float(params["free_mult"]))
     return {
         "bet_bar_delta": bet_bar_delta,
         "size_pot_frac": float(freqs.get("size_pot_frac", 0.5)),
@@ -307,7 +495,11 @@ def build_solver_frequencies_context(
         "role": role,
         "texture": texture,
         "by_strength": by_strength,
-        "source": "postflop_hu_buckets_v1",
+        "source": (
+            "deepcfr_hu_buckets_v1"
+            if deepcfr_enabled() and resolve_deepcfr_buckets_path() is not None
+            else "postflop_hu_buckets_v1"
+        ),
     }
 
 
@@ -460,11 +652,32 @@ def generate_bucket_table() -> dict[str, Any]:
     return payload
 
 
-def write_postflop_buckets(path: Optional[Path] = None) -> Path:
-    """Atomic write of generated bucket JSON."""
+def write_postflop_buckets(
+    path: Optional[Path] = None,
+    *,
+    force_heuristic: bool = False,
+) -> Path:
+    """Atomic write of **heuristic** bucket JSON.
+
+    Refuses to overwrite an existing ``texas_solver_v1`` / ``v2`` file unless
+    ``force_heuristic=True`` (CLI: ``--force-heuristic``).
+    """
     root = Path(__file__).resolve().parent.parent
     out = Path(path) if path is not None else root / "research" / "postflop_hu_buckets.json"
     out.parent.mkdir(parents=True, exist_ok=True)
+    if out.is_file() and not force_heuristic:
+        try:
+            existing = json.loads(out.read_text(encoding="utf-8"))
+            gen = (existing.get("meta") or {}).get("generator")
+            if gen in ("texas_solver_v1", "texas_solver_v2"):
+                raise SystemExit(
+                    f"refusing to overwrite {gen} at {out}; "
+                    "pass --force-heuristic to regenerate heuristic_bucket_v1"
+                )
+        except SystemExit:
+            raise
+        except Exception:
+            pass
     payload = generate_bucket_table()
     tmp = out.with_suffix(out.suffix + f".tmp.{secrets.token_hex(4)}")
     try:
@@ -485,12 +698,13 @@ def _self_check(path: Path) -> int:
     buckets = data["buckets"]
     n = len(buckets)
     assert 50 <= n <= 100, f"key count {n} not in 50–100"
-    notes = ""
-    prov = data.get("solver_provenance") or {}
-    notes = str(prov.get("notes", "")) + str(data.get("meta", {}))
-    assert "heuristic_bucket_v1" in notes or (
-        data.get("meta", {}).get("generator") == "heuristic_bucket_v1"
-    ), "missing heuristic_bucket_v1 provenance"
+    gen = (data.get("meta") or {}).get("generator")
+    # Accept either heuristic self-check or solver bake
+    assert gen in (
+        "heuristic_bucket_v1",
+        "texas_solver_v1",
+        "texas_solver_v2",
+    ), f"bad generator {gen}"
     # Classifier smoke
     assert classify_board_texture(["Ah", "7d", "2c"]) == "dry"
     assert classify_board_texture(["Ah", "Kh", "Qh"]) == "wet"
@@ -500,10 +714,25 @@ def _self_check(path: Path) -> int:
     assert strength_bin(0.55) == "medium"
     assert strength_bin(0.70) == "strong"
     assert strength_bin(0.90) == "nuts"
-    print(f"postflop_hu_buckets OK: {n} keys @ {path}")
+    print(f"postflop_hu_buckets OK: {n} keys generator={gen} @ {path}")
     return 0
 
 
 if __name__ == "__main__":
-    out = write_postflop_buckets()
+    import argparse
+
+    ap = argparse.ArgumentParser(description="Generate heuristic postflop HU buckets")
+    ap.add_argument(
+        "--force-heuristic",
+        action="store_true",
+        help="Overwrite existing texas_solver_v1 bake with heuristic_bucket_v1",
+    )
+    ap.add_argument(
+        "--out",
+        type=Path,
+        default=None,
+        help="Output path (default research/postflop_hu_buckets.json)",
+    )
+    ns = ap.parse_args()
+    out = write_postflop_buckets(ns.out, force_heuristic=ns.force_heuristic)
     raise SystemExit(_self_check(out))

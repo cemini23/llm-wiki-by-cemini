@@ -24,7 +24,30 @@ os.environ.setdefault("CEMINI_SANITIZE_OUTPUT", "0")
 _DEFAULT_STRATEGY = "hu004" if _ENGINE in ("gin", "gin_hu004", "hu004") else "cemini_k131b"
 os.environ.setdefault("POKER_BOT_STRATEGY", _DEFAULT_STRATEGY)
 
-if _ENGINE in ("cemini", "cemini_decide", "default"):
+# Eval S1 profile: baked via harness/arena_profile or CEMINI_ARENA_PROFILE.
+# Must run before HU researcher setdefaults or we recreate the VPIP~9% nit.
+_ROOT = Path(__file__).resolve().parent.parent
+_ASSETS_FOR_PROFILE = _ROOT / "assets"
+_EXAMPLES_FOR_PROFILE = _ROOT / "examples"
+for _p in (_ASSETS_FOR_PROFILE, _EXAMPLES_FOR_PROFILE):
+    if _p.is_dir() and str(_p) not in sys.path:
+        sys.path.insert(0, str(_p))
+_EVAL_PROFILE = False
+try:
+    from eval_s1_profile import (  # noqa: WPS433
+        apply_eval_s1_env_defaults,
+        eval_s1_profile_active,
+        resolve_arena_profile,
+    )
+
+    _prof = resolve_arena_profile()
+    if _prof and eval_s1_profile_active():
+        apply_eval_s1_env_defaults()
+        _EVAL_PROFILE = True
+except Exception:
+    _EVAL_PROFILE = False
+
+if _ENGINE in ("cemini", "cemini_decide", "default") and not _EVAL_PROFILE:
     os.environ.setdefault("CEMINI_TABLE_FORMAT", "hu")
     os.environ.setdefault("CEMINI_RESEARCHER_MODE", "1")
     os.environ.setdefault("CEMINI_MAFP_CHART", "1")
@@ -40,6 +63,11 @@ if _ENGINE in ("cemini", "cemini_decide", "default"):
     os.environ.setdefault("CEMINI_S1B_EXPLOIT", "1")
     os.environ.setdefault("CEMINI_NEMESIS_EXPLOIT", "1")
     os.environ.setdefault("CEMINI_ISO_PASSIVE_LP", "1")
+    # 2026-07-22: hard-σ sampling failed μ≈−69 @10k — soft bias fail-open only.
+    os.environ.setdefault("CEMINI_SOLVER_HARD", "0")
+    # Blueprint v3: per-hand-bucket free/facing σ (90 spots / 540 keys baked).
+    os.environ.setdefault("CEMINI_SOLVER_V3", "1")
+    # DeepCFR / opponent modes stay flag-off (no setdefault).
 
 _USE_SIGALRM = hasattr(signal, "SIGALRM")
 

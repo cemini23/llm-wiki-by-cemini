@@ -10,6 +10,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 from datetime import date
@@ -20,6 +21,76 @@ _AGENT_DIR = _EXAMPLES.parent
 _PROMPT = _AGENT_DIR / "prompts" / "cemini_hl_analyst_prompt.md"
 _FIXTURES = _AGENT_DIR / "tests" / "fixtures" / "regression_spots.py"
 _DEFAULT_OUT = _AGENT_DIR / "reports" / "hl-loop" / "latest_brief.md"
+
+
+def segment_select_cap(
+    segments: list[dict],
+    query_tags: list[str],
+    cap: int | None = None,
+) -> tuple[list[dict], list[dict]]:
+    """K144 MaRA-style rank + cap before HL brief expansion (advisory only).
+
+    Each segment: ``{"id": str, "tags": [...], "text": str}``.
+    Returns ``(kept, dropped)`` sorted by tag/keyword overlap score.
+    """
+    if cap is None:
+        cap = int(os.environ.get("CEMINI_HL_SEGMENT_CAP", "8"))
+    cap = max(1, cap)
+
+    norm_tags = [t.strip().lower() for t in query_tags if str(t).strip()]
+    tag_set = set(norm_tags)
+
+    def _score(seg: dict) -> float:
+        seg_tags = {str(t).strip().lower() for t in (seg.get("tags") or [])}
+        overlap = len(tag_set & seg_tags)
+        text = str(seg.get("text") or "").lower()
+        keyword_hits = sum(1 for t in norm_tags if t and t in text)
+        return float(overlap * 2 + keyword_hits)
+
+    ranked = sorted(segments, key=_score, reverse=True)
+    kept = ranked[:cap]
+    dropped = ranked[cap:]
+
+    if os.environ.get("CEMINI_HL_SEGMENT_AUDIT") == "1" and dropped:
+        dropped_ids = [str(s.get("id") or "?") for s in dropped]
+        print(
+            f"[hl-brief] segment_select_cap dropped {len(dropped)} "
+            f"(cap={cap}): {', '.join(dropped_ids)}",
+            file=sys.stderr,
+        )
+    return kept, dropped
+
+
+def _report_segments(report_text: str) -> list[dict]:
+    """Split analyze report into candidate segments (delta / loss lines)."""
+    segments: list[dict] = []
+    for i, line in enumerate((report_text or "").splitlines()):
+        s = line.strip()
+        if not s:
+            continue
+        tags: list[str] = []
+        if "delta=" in s.lower():
+            tags.append("delta")
+        if "loss" in s.lower():
+            tags.append("loss")
+        if s.startswith("#"):
+            tags.append("headline")
+        segments.append({"id": f"report_line_{i}", "tags": tags, "text": s})
+    return segments
+
+
+def _segments_from_report(report_text: str, query_tags: list[str]) -> tuple[str, list[dict], list[dict]]:
+    """Apply segment_select_cap to report lines; return joined kept text."""
+    segs = _report_segments(report_text)
+    if not segs:
+        return report_text, [], []
+    kept, dropped = segment_select_cap(segs, query_tags)
+    kept_text = "\n".join(str(s.get("text") or "") for s in kept)
+    if len(kept) < len(segs):
+        kept_text += (
+            f"\n\n(segment_select_cap: kept {len(kept)}/{len(segs)} lines — advisory K144)"
+        )
+    return kept_text, kept, dropped
 
 
 def _git_short_sha() -> str:
@@ -72,13 +143,35 @@ def _spot_fail_count_from_report(report: str) -> int:
     return max(1, n) if report.strip() else 1
 
 
+def _stigmergy_section(*, top_leak_hint: str, fail_count: int) -> str:
+    """K141: advisory spot-class shortlist after K161 eligibility."""
+    try:
+        from stigmergy_spot_scores import StigmergySpotScores, stigmergy_brief_section
+
+        store = StigmergySpotScores()
+        # Seed pressure from this round's leak so the brief shows ranking intent.
+        leak_key = (top_leak_hint or "unknown_leak").strip()[:80] or "unknown_leak"
+        if fail_count >= 2:
+            store.update_score(leak_key, "pressure", float(min(fail_count, 5)))
+            store.update_score(leak_key, "block", 1.0)
+        elif top_leak_hint:
+            store.update_score(leak_key, "pressure", 1.0)
+        classes = [leak_key, "default_regression_mix"]
+        return stigmergy_brief_section(classes, scores=store)
+    except Exception:
+        return (
+            "### Stigmergic spot shortlist (K141 — advisory)\n\n"
+            "(stigmergy helper unavailable — use K161 filter order)\n"
+        )
+
+
 def _scaffold_and_reflection_sections(
     *,
     report_text: str,
     top_leak_hint: str,
     fail_count: int,
 ) -> str:
-    """K139: four-field scaffold + staged reflection strength."""
+    """K139: four-field scaffold + staged reflection strength + K141 stigmergy."""
     try:
         from researcher_trajectory_summary import (
             load_deepsearch_trajectory_filter_config,
@@ -114,6 +207,7 @@ def _scaffold_and_reflection_sections(
         if fail_count >= 2
         else "optional on first fail"
     )
+    stig_md = _stigmergy_section(top_leak_hint=top_leak_hint, fail_count=fail_count)
     return f"""### DeepSearch scaffold (K139 / K161 delta)
 
 Four-field memory before mix (advisory). Map: completed_list / todo_list /
@@ -128,12 +222,12 @@ experience / information. Drop units lacking `experience` after ≥2 same-spot f
 
 Staged reflection (fail_count≈{fail_count}): **{hint}**
 
+{stig_md}
 ### Belief audit (K167)
 
 See auto-appended block below when parse succeeds. Tags:
 `harmful_mistake` | `justified_override` | `strategic`. Batch-improve only.
 """
-
 
 def build_brief(
     *,
@@ -266,6 +360,8 @@ Active slice (example after nested return):
 - `docs/TESTING-CEMINI.md`
 - @osint-wiki/concepts/cemini-knowledge-application-architecture.md — brief→verify→deploy pattern
 - `references/deepsearch-trajectory-filter.md` — K161 + K139 scaffold delta
+- `references/stigmergy-spot-scores.md` — K141 advisory shortlist after K161
+- `references/play-adequacy-gates.md` — K158 play vs transition ship gates
 - `examples/belief_deviation_audit.py` — K167 belief audit
 
 ## Implementation status
@@ -304,6 +400,17 @@ def main(argv: list[str] | None = None) -> int:
 
     report_text = report_path.read_text(encoding="utf-8")
     hint = _top_leak_from_report(report_text)
+
+    query_tags = [t for t in (hint or "").replace("#", " ").split() if t.strip()]
+    if hint:
+        query_tags.extend(["delta", "loss", "leak"])
+    report_text, kept_segs, dropped_segs = _segments_from_report(report_text, query_tags)
+    if kept_segs or dropped_segs:
+        print(
+            f"[hl-brief] segment_select_cap kept={len(kept_segs)} "
+            f"dropped={len(dropped_segs)} cap={os.environ.get('CEMINI_HL_SEGMENT_CAP', '8')}",
+            file=sys.stderr,
+        )
 
     belief_audit_md = ""
     belief_block: dict | None = None

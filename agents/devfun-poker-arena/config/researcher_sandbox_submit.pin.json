@@ -2,8 +2,14 @@
   "competitionId": "cmr3n8tft01nilecm1u5jlny7",
   "template": "static-agent",
   "replace": false,
-  "activeSubmissionId": "56ef6556-4036-4a08-a5a6-749b9b8624c2",
+  "activeSubmissionId": "bf18eac0-8bda-40c1-b000-cf247f4accf6",
   "watchSubmissionIds": [
+    "bf18eac0-8bda-40c1-b000-cf247f4accf6",
+    "e3574bb4-614f-4fdb-b926-b5b05cfb149c",
+    "760c44ad-a656-4934-b018-6a764d8b796d",
+    "8d66b6e0-3183-45fb-a988-dc6f8aefa302",
+    "a7a677b7-a70e-432e-9cfe-b296bd7fae03",
+    "bf7679bd-bc40-4817-ac61-5a93b3475d1a",
     "56ef6556-4036-4a08-a5a6-749b9b8624c2",
     "c0fd25e7-e2f1-439e-a957-9779f18f796f",
     "18b2ee80-508f-43c9-93cb-a0771b9dbbde",
@@ -14,16 +20,16 @@
     "c67973a2-3bd9-40b0-bc5b-e106d19cd7e7",
     "cc20d33e-83dd-4424-b93c-01fa2a99de31",
     "bb2a7e5e-6b5c-43e3-a27e-a496c5c941ef",
-    "9f0087af-79e5-4674-8316-227eca68bc10",
-    "dcad875c-d005-461c-8976-2cb9ea2d8116"
+    "9f0087af-79e5-4674-8316-227eca68bc10"
   ],
   "legacyCompetitionId": "cmr0jmqlt08bi13n8neory9xb",
   "legacyActiveSubmissionId": "f8d4f05f-fa0b-4931-bac7-9385f8ab61ff",
   "build": true,
   "bundlePath": "dist/sandbox-pvp-bundle.zip",
-  "agentVersion": "researcher-ladder-s1.k176-claimed-auth.2026-07-16",
+  "agentVersion": "researcher-ladder-s1.blueprint-v3.2026-07-22",
   "sandboxEngine": "cemini",
-  "gitCommit": "22611d5",
-  "pinnedAt": "2026-07-16T12:42:08Z",
-  "notes": "K176 claimed-auth guard in capability/submit path + K157 shelf merge. Replaces c0fd25e7 (timeout-v2) so auth boundary is in Active zip."
+  "gitCommit": "blueprint-v3",
+  "pinnedAt": "2026-07-21T13:35:00Z",
+  "notes": "Blueprint v3 ON (90/540). Agreement gate PASS mean_tv=0.09 free_argmax=96%. Jul22: K182 pin-hash sandbox claims; K144 HL segment_select_cap. Target \u03bc\u22650 @\u22653k; rollback \u2264\u221250.",
+  "pin_label": "researcher-ladder-s1.blueprint-v3.2026-07-22"
 }

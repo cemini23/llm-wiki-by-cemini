@@ -16,9 +16,19 @@
     "references/mppo-style-preservation.md",
     "references/patch-genome-diff.md",
     "references/message-dag-trace.md",
-    "references/capability-tree-routing.md"
+    "references/capability-tree-routing.md",
+    "references/stigmergy-spot-scores.md",
+    "references/play-adequacy-gates.md"
   ],
   "slice_max_chars": 1200,
   "advisory_only": true,
-  "notes": "Ensemble QSP arXiv 2607.07666 read-only — capped mid-term + eviction; never dump full Arena trajectories into decide()/HL prompts."
+  "memoryless_threshold_tag": "memoryless_threshold",
+  "memoryless_threshold": {
+    "schema": "devfun.memoryless_threshold.tag.v1",
+    "k": "K143",
+    "arxiv": "2607.16145",
+    "advisory_only": true,
+    "rule": "When spot history / relative ranks are wiped, use absolute thresholds only — no relative-rank sizing. Docs: references/memoryless-threshold.md. No decide() ship from this tag alone."
+  },
+  "notes": "Ensemble QSP arXiv 2607.07666 read-only — capped mid-term + eviction; never dump full Arena trajectories into decide()/HL prompts. K143 memoryless_threshold tag: advisory drill flag when relative-rank history intentionally wiped."
 }

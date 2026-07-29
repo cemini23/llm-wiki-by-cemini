@@ -26,3 +26,13 @@ arXiv 2607.23333: single-layer attention + (swap) regret loss realizes smoothed 
 - arXiv 2607.24300 (self-authored verification unreliable)
 - OSINT wiki concepts/swap-regret-attention-fictitious-play.md
 - OSINT wiki concepts/verifier-deployment-gap.md
+
+## Implementation status
+
+| Field | Value |
+|-------|-------|
+| Status | **SHIPPED (docs)** 2026-07-28 — Cursor |
+| Artifacts | `references/swap-regret-training-notes.md`, `references/verifier-deployment-gap.md`; links in league-promotion + play-adequacy |
+| Gate | `uv run pytest tests/test_k198_verifier_gap_docs.py -q` |
+| Live decide / Playground S10 | **untouched** (chip-qual #14 — no MAFP/regret runtime) |
+| Submit gate | **none** this cycle (advisory only) |

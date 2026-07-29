@@ -1,0 +1,588 @@
+{
+  "version": 2,
+  "defaults": {
+    "pot": 20,
+    "effective_stack": 100,
+    "accuracy": 1.5,
+    "max_iteration": 80,
+    "dump_rounds": 1,
+    "thread_num": 1,
+    "allin_threshold": 0.67,
+    "use_isomorphism": 0,
+    "bet_sizes": [
+      "oop,flop,bet,50",
+      "oop,flop,raise,60",
+      "oop,flop,allin",
+      "ip,flop,bet,50",
+      "ip,flop,raise,60",
+      "ip,flop,allin",
+      "oop,turn,bet,50",
+      "oop,turn,raise,60",
+      "oop,turn,allin",
+      "ip,turn,bet,50",
+      "ip,turn,raise,60",
+      "ip,turn,allin",
+      "oop,river,bet,50",
+      "oop,river,donk,50",
+      "oop,river,raise,60",
+      "oop,river,allin",
+      "ip,river,bet,50",
+      "ip,river,raise,60",
+      "ip,river,allin"
+    ],
+    "range_ip": "AA,KK,QQ,JJ,TT,99:0.75,88:0.75,77:0.5,66:0.25,55:0.25,AK,AQs,AQo:0.75,AJs,AJo:0.5,ATs:0.75,A6s:0.25,A5s:0.75,A4s:0.75,A3s:0.5,A2s:0.5,KQs,KQo:0.5,KJs,KTs:0.75,K5s:0.25,K4s:0.25,QJs:0.75,QTs:0.75,Q9s:0.5,JTs:0.75,J9s:0.75,J8s:0.75,T9s:0.75,T8s:0.75,T7s:0.75,98s:0.75,97s:0.75,96s:0.5,87s:0.75,86s:0.5,85s:0.5,76s:0.75,75s:0.5,65s:0.75,64s:0.5,54s:0.75,53s:0.5,43s:0.5",
+    "range_oop": "QQ:0.5,JJ:0.75,TT,99,88,77,66,55,44,33,22,AKo:0.25,AQs,AQo:0.75,AJs,AJo:0.75,ATs,ATo:0.75,A9s,A8s,A7s,A6s,A5s,A4s,A3s,A2s,KQ,KJ,KTs,KTo:0.5,K9s,K8s,K7s,K6s,K5s,K4s:0.5,K3s:0.5,K2s:0.5,QJ,QTs,Q9s,Q8s,Q7s,JTs,JTo:0.5,J9s,J8s,T9s,T8s,T7s,98s,97s,96s,87s,86s,76s,75s,65s,64s,54s,53s,43s"
+  },
+  "spots": [
+    {
+      "id": "flop_dry_01",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Kd,7c,2s"
+    },
+    {
+      "id": "flop_dry_02",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Ah,9d,3c"
+    },
+    {
+      "id": "flop_dry_03",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Qs,5h,2d"
+    },
+    {
+      "id": "flop_dry_04",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Jc,8d,3s"
+    },
+    {
+      "id": "flop_dry_05",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Td,6c,2h"
+    },
+    {
+      "id": "flop_dry_06",
+      "street": "flop",
+      "texture": "dry",
+      "board": "9h,4d,2c"
+    },
+    {
+      "id": "flop_wet_01",
+      "street": "flop",
+      "texture": "wet",
+      "board": "Jh,Th,2h"
+    },
+    {
+      "id": "flop_wet_02",
+      "street": "flop",
+      "texture": "wet",
+      "board": "9s,8s,7c"
+    },
+    {
+      "id": "flop_wet_03",
+      "street": "flop",
+      "texture": "wet",
+      "board": "Qd,Jd,3d"
+    },
+    {
+      "id": "flop_wet_04",
+      "street": "flop",
+      "texture": "wet",
+      "board": "Ts,9h,8d"
+    },
+    {
+      "id": "flop_wet_05",
+      "street": "flop",
+      "texture": "wet",
+      "board": "Ah,Kh,5h"
+    },
+    {
+      "id": "flop_wet_06",
+      "street": "flop",
+      "texture": "wet",
+      "board": "7h,6h,2c"
+    },
+    {
+      "id": "flop_paired_01",
+      "street": "flop",
+      "texture": "paired",
+      "board": "Ks,Kd,7c"
+    },
+    {
+      "id": "flop_paired_02",
+      "street": "flop",
+      "texture": "paired",
+      "board": "Ah,Ad,5s"
+    },
+    {
+      "id": "flop_paired_03",
+      "street": "flop",
+      "texture": "paired",
+      "board": "Qc,Qd,2h"
+    },
+    {
+      "id": "flop_paired_04",
+      "street": "flop",
+      "texture": "paired",
+      "board": "Jh,Jd,8c"
+    },
+    {
+      "id": "flop_paired_05",
+      "street": "flop",
+      "texture": "paired",
+      "board": "Ts,Td,4h"
+    },
+    {
+      "id": "flop_paired_06",
+      "street": "flop",
+      "texture": "paired",
+      "board": "9c,9d,3s"
+    },
+    {
+      "id": "turn_dry_01",
+      "street": "turn",
+      "texture": "dry",
+      "board": "Kd,7c,2s,9h"
+    },
+    {
+      "id": "turn_wet_01",
+      "street": "turn",
+      "texture": "wet",
+      "board": "Jh,Th,2h,9h"
+    },
+    {
+      "id": "turn_paired_01",
+      "street": "turn",
+      "texture": "paired",
+      "board": "Ks,Kd,7c,2h"
+    },
+    {
+      "id": "turn_dry_02",
+      "street": "turn",
+      "texture": "dry",
+      "board": "Ah,9d,3c,5s"
+    },
+    {
+      "id": "turn_wet_02",
+      "street": "turn",
+      "texture": "wet",
+      "board": "9s,8s,7c,6d"
+    },
+    {
+      "id": "turn_paired_02",
+      "street": "turn",
+      "texture": "paired",
+      "board": "Ah,Ad,5s,Tc"
+    },
+    {
+      "id": "river_dry_01",
+      "street": "river",
+      "texture": "dry",
+      "board": "Kd,7c,2s,9h,4c"
+    },
+    {
+      "id": "river_wet_01",
+      "street": "river",
+      "texture": "wet",
+      "board": "Jh,Th,2h,9h,8c"
+    },
+    {
+      "id": "river_paired_01",
+      "street": "river",
+      "texture": "paired",
+      "board": "Ks,Kd,7c,2h,9s"
+    },
+    {
+      "id": "river_dry_02",
+      "street": "river",
+      "texture": "dry",
+      "board": "Ah,9d,3c,5s,2d"
+    },
+    {
+      "id": "river_wet_02",
+      "street": "river",
+      "texture": "wet",
+      "board": "9s,8s,7c,6d,2h"
+    },
+    {
+      "id": "river_paired_02",
+      "street": "river",
+      "texture": "paired",
+      "board": "Ah,Ad,5s,Tc,3c"
+    },
+    {
+      "id": "flop_dry_07",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Ac,8d,3h"
+    },
+    {
+      "id": "flop_dry_08",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Kh,6c,2d"
+    },
+    {
+      "id": "flop_wet_07",
+      "street": "flop",
+      "texture": "wet",
+      "board": "8h,7h,3c"
+    },
+    {
+      "id": "flop_wet_08",
+      "street": "flop",
+      "texture": "wet",
+      "board": "Qc,Jc,4d"
+    },
+    {
+      "id": "flop_paired_07",
+      "street": "flop",
+      "texture": "paired",
+      "board": "8s,8d,Kh"
+    },
+    {
+      "id": "flop_paired_08",
+      "street": "flop",
+      "texture": "paired",
+      "board": "5c,5d,As"
+    },
+    {
+      "id": "turn_dry_03",
+      "street": "turn",
+      "texture": "dry",
+      "board": "Qs,5h,2d,Tc"
+    },
+    {
+      "id": "turn_wet_03",
+      "street": "turn",
+      "texture": "wet",
+      "board": "Qd,Jd,3d,9h"
+    },
+    {
+      "id": "turn_paired_03",
+      "street": "turn",
+      "texture": "paired",
+      "board": "Qc,Qd,2h,7s"
+    },
+    {
+      "id": "turn_dry_04",
+      "street": "turn",
+      "texture": "dry",
+      "board": "Jc,8d,3s,4h"
+    },
+    {
+      "id": "river_dry_03",
+      "street": "river",
+      "texture": "dry",
+      "board": "Qs,5h,2d,Tc,9c"
+    },
+    {
+      "id": "river_wet_03",
+      "street": "river",
+      "texture": "wet",
+      "board": "Qd,Jd,3d,9h,8s"
+    },
+    {
+      "id": "river_paired_03",
+      "street": "river",
+      "texture": "paired",
+      "board": "Qc,Qd,2h,7s,Kd"
+    },
+    {
+      "id": "river_dry_04",
+      "street": "river",
+      "texture": "dry",
+      "board": "Jc,8d,3s,4h,Ah"
+    },
+    {
+      "id": "flop_dry_09",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Kd,8c,2h"
+    },
+    {
+      "id": "flop_dry_10",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Qh,6d,3c"
+    },
+    {
+      "id": "flop_dry_11",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Js,4h,2d"
+    },
+    {
+      "id": "flop_dry_12",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Tc,7d,2s"
+    },
+    {
+      "id": "flop_dry_13",
+      "street": "flop",
+      "texture": "dry",
+      "board": "9d,5c,2h"
+    },
+    {
+      "id": "flop_dry_14",
+      "street": "flop",
+      "texture": "dry",
+      "board": "8h,3d,2c"
+    },
+    {
+      "id": "flop_wet_09",
+      "street": "flop",
+      "texture": "wet",
+      "board": "Kh,Qh,4c"
+    },
+    {
+      "id": "flop_wet_10",
+      "street": "flop",
+      "texture": "wet",
+      "board": "Jd,Td,5c"
+    },
+    {
+      "id": "flop_wet_11",
+      "street": "flop",
+      "texture": "wet",
+      "board": "9h,8h,2d"
+    },
+    {
+      "id": "flop_wet_12",
+      "street": "flop",
+      "texture": "wet",
+      "board": "7s,6s,5c"
+    },
+    {
+      "id": "flop_wet_13",
+      "street": "flop",
+      "texture": "wet",
+      "board": "As,Ks,2d"
+    },
+    {
+      "id": "flop_wet_14",
+      "street": "flop",
+      "texture": "wet",
+      "board": "Qh,Jh,8c"
+    },
+    {
+      "id": "flop_paired_09",
+      "street": "flop",
+      "texture": "paired",
+      "board": "7h,7d,2c"
+    },
+    {
+      "id": "flop_paired_10",
+      "street": "flop",
+      "texture": "paired",
+      "board": "6s,6d,Ac"
+    },
+    {
+      "id": "flop_paired_11",
+      "street": "flop",
+      "texture": "paired",
+      "board": "4c,4d,Kh"
+    },
+    {
+      "id": "flop_paired_12",
+      "street": "flop",
+      "texture": "paired",
+      "board": "3h,3d,Qs"
+    },
+    {
+      "id": "flop_paired_13",
+      "street": "flop",
+      "texture": "paired",
+      "board": "Ts,Td,9c"
+    },
+    {
+      "id": "flop_paired_14",
+      "street": "flop",
+      "texture": "paired",
+      "board": "Jh,Jd,2s"
+    },
+    {
+      "id": "turn_dry_05",
+      "street": "turn",
+      "texture": "dry",
+      "board": "Kd,8c,2h,5s"
+    },
+    {
+      "id": "turn_dry_06",
+      "street": "turn",
+      "texture": "dry",
+      "board": "Qh,6d,3c,9s"
+    },
+    {
+      "id": "turn_wet_04",
+      "street": "turn",
+      "texture": "wet",
+      "board": "Kh,Qh,4c,Jh"
+    },
+    {
+      "id": "turn_wet_05",
+      "street": "turn",
+      "texture": "wet",
+      "board": "Jd,Td,5c,9h"
+    },
+    {
+      "id": "turn_paired_04",
+      "street": "turn",
+      "texture": "paired",
+      "board": "7h,7d,2c,As"
+    },
+    {
+      "id": "turn_paired_05",
+      "street": "turn",
+      "texture": "paired",
+      "board": "6s,6d,Ac,2h"
+    },
+    {
+      "id": "turn_dry_07",
+      "street": "turn",
+      "texture": "dry",
+      "board": "Js,4h,2d,Tc"
+    },
+    {
+      "id": "turn_wet_06",
+      "street": "turn",
+      "texture": "wet",
+      "board": "9h,8h,2d,7c"
+    },
+    {
+      "id": "turn_paired_06",
+      "street": "turn",
+      "texture": "paired",
+      "board": "4c,4d,Kh,9s"
+    },
+    {
+      "id": "river_dry_05",
+      "street": "river",
+      "texture": "dry",
+      "board": "Kd,8c,2h,5s,3d"
+    },
+    {
+      "id": "river_dry_06",
+      "street": "river",
+      "texture": "dry",
+      "board": "Qh,6d,3c,9s,2c"
+    },
+    {
+      "id": "river_wet_04",
+      "street": "river",
+      "texture": "wet",
+      "board": "Kh,Qh,4c,Jh,9h"
+    },
+    {
+      "id": "river_wet_05",
+      "street": "river",
+      "texture": "wet",
+      "board": "Jd,Td,5c,9h,8s"
+    },
+    {
+      "id": "river_paired_04",
+      "street": "river",
+      "texture": "paired",
+      "board": "7h,7d,2c,As,Kd"
+    },
+    {
+      "id": "river_paired_05",
+      "street": "river",
+      "texture": "paired",
+      "board": "6s,6d,Ac,2h,9c"
+    },
+    {
+      "id": "river_dry_07",
+      "street": "river",
+      "texture": "dry",
+      "board": "Js,4h,2d,Tc,8c"
+    },
+    {
+      "id": "river_wet_06",
+      "street": "river",
+      "texture": "wet",
+      "board": "9h,8h,2d,7c,6s"
+    },
+    {
+      "id": "river_paired_06",
+      "street": "river",
+      "texture": "paired",
+      "board": "4c,4d,Kh,9s,2d"
+    },
+    {
+      "id": "flop_dry_01_spr2",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Kd,7c,2s",
+      "effective_stack": 40
+    },
+    {
+      "id": "flop_dry_01_spr10",
+      "street": "flop",
+      "texture": "dry",
+      "board": "Kd,7c,2s",
+      "effective_stack": 200
+    },
+    {
+      "id": "flop_wet_01_spr2",
+      "street": "flop",
+      "texture": "wet",
+      "board": "Jh,Th,2h",
+      "effective_stack": 40
+    },
+    {
+      "id": "flop_wet_01_spr10",
+      "street": "flop",
+      "texture": "wet",
+      "board": "Jh,Th,2h",
+      "effective_stack": 200
+    },
+    {
+      "id": "flop_paired_01_spr2",
+      "street": "flop",
+      "texture": "paired",
+      "board": "Ks,Kd,7c",
+      "effective_stack": 40
+    },
+    {
+      "id": "flop_paired_01_spr10",
+      "street": "flop",
+      "texture": "paired",
+      "board": "Ks,Kd,7c",
+      "effective_stack": 200
+    },
+    {
+      "id": "turn_dry_01_spr2",
+      "street": "turn",
+      "texture": "dry",
+      "board": "Kd,7c,2s,9h",
+      "effective_stack": 40
+    },
+    {
+      "id": "turn_dry_01_spr10",
+      "street": "turn",
+      "texture": "dry",
+      "board": "Kd,7c,2s,9h",
+      "effective_stack": 200
+    },
+    {
+      "id": "river_dry_01_spr2",
+      "street": "river",
+      "texture": "dry",
+      "board": "Kd,7c,2s,9h,4c",
+      "effective_stack": 40
+    },
+    {
+      "id": "river_dry_01_spr10",
+      "street": "river",
+      "texture": "dry",
+      "board": "Kd,7c,2s,9h,4c",
+      "effective_stack": 200
+    }
+  ]
+}

@@ -1,5 +1,11 @@
+# Local TexasSolver binary + dump cache (AGPL; never commit)
+.local/texassolver/
+
 # Secrets
 .env
+.env.bak
+.env.*
+!.env.example
 .arena-credentials
 .arena-credentials.*
 .arena-poker-state

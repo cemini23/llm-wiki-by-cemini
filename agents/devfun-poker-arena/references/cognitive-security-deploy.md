@@ -17,3 +17,6 @@ From arXiv:2606.30587 — LLM vulnerability triage can flip on **comment framing
 2. Run `./scripts/cemini_preflight.sh` (or `--full` before ladder replace).
 3. For Researcher submit: `./scripts/run_hu_sandbox_gate.sh`.
 4. Treat any LLM "looks good" without green preflight as **non-binding**.
+5. Eval claim ceiling (K220) — modest clean boards do not license rare-leak
+   absence: `references/eval-claim-ceiling.md`.
+6. LIVE vs sandbox containment (K222): `references/sandbox-live-containment.md`.

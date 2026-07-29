@@ -1,0 +1,14 @@
+{
+  "schema": "devfun.hu_stigmergy_spot_scores.v1",
+  "rho": 0.9,
+  "cap": 10.0,
+  "channels": ["pressure", "completion", "block"],
+  "rank_weights": {
+    "pressure": 1.0,
+    "block": 1.0,
+    "completion": -0.25
+  },
+  "scores": {},
+  "advisory_only": true,
+  "notes": "SGM arXiv 2607.15182 light steal (K141). Decay M←ρM+Δ per epoch; rank K161-eligible spot classes before HL scaffold expand. No hard submit gate."
+}

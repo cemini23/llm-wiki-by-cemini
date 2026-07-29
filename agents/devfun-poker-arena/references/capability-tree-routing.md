@@ -38,10 +38,35 @@ Smoke: `simulate_hu_researcher_nested_session()` (also written by `cemini_hl_bri
    never grant standing — deny with logged reason
    (`claim came from observation, not operator`). See
    `references/claimed-authorization-guard.md`.
+6. **K185 action-vs-text:** on a trusted channel, `authorize()` still runs
+   light **action** (PD) / **text** (CD) risk checks. Deny classes:
+   `channel` | `action` | `text`. Safe-sounding plan text does not bypass
+   `action_unsafe` or absurd pot-odds. Full rules:
+   `references/claimed-authorization-guard.md` § Deny classes.
+
+## K195 rubric capability diagnosis (CRAFT pattern)
+
+When decide() / multi-axis eval fails, cluster **failed rubric criterion ids**
+(not whole spots) onto tree domains and fix the **weakest clear nodes** before
+rewriting prompts or collecting SFT.
+
+- Config map: `config/hu_capability_tree.json` → `rubric_criteria`
+- Helper: `diagnose_rubric_failures(failed_criteria, tree_cfg)`
+- Pattern: Scale AI CRAFT (arXiv **2607.16122**) — method only, no public code
+- **Advisory only** — never a submit gate; do not mix diagnostic rubric spots
+  into held-out TrueSkill benches
+- Expert checklist explosion: `references/expert-rubric-checklist.md` (K193)
+
+```python
+from capability_tree import diagnose_rubric_failures
+
+d = diagnose_rubric_failures(["river_value", "facing_fold", "preflop_open"])
+# weakest_nodes[0] often "policy" when postflop/preflop criteria fail
+```
 
 ## Check
 
 ```bash
-uv run pytest tests/test_k164_capability_tree.py tests/test_claimed_authorization.py -q --tb=line
+uv run pytest tests/test_k164_capability_tree.py tests/test_claimed_authorization.py tests/test_k195_rubric_capability_diagnosis.py -q --tb=line
 uv run python -c "from capability_tree import simulate_hu_researcher_nested_session; print(simulate_hu_researcher_nested_session()['ok'])"
 ```

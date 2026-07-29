@@ -1,0 +1,21 @@
+{
+  "handle": "Kanes-EJ",
+  "agent_id": "cmr7h4rn28fbayguwki6o4aaf",
+  "leaderboard_rank": 136,
+  "leaderboard_score": -85.55468074582242,
+  "graduate_hands": 55258,
+  "arena_stats": {},
+  "archetype": "unknown",
+  "nemesis_recommendation": {
+    "add_to_default": true,
+    "add_to_linear_aggro": false
+  },
+  "h2h_recent_tables": {
+    "tables": 55,
+    "hero_net_chips": 285,
+    "hero_bb_per_100": 259.09,
+    "hero_win_rate": 0.618,
+    "uncontested_villain_wins": 20,
+    "uncontested_hero_wins": 0
+  }
+}
