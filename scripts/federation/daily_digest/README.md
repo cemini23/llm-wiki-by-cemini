@@ -19,7 +19,7 @@ Creates:
 
 - `scripts/daily_research_config.yaml` from template (if missing)
 - `wiki/meta/daily-research-digest-cadence.md` stub (if missing)
-- LaunchAgent `com.cemini.daily-research-digest.<wiki-id>` @ 08:15 (staggered)
+- LaunchAgent `com.cemini.daily-research-digest.<wiki-id>` @ 08:10+ (staggered +3min via `reinstall_morning_launchagents.sh`; federation summary after last sibling)
 
 ## Operator loop
 

@@ -52,6 +52,13 @@
       "command": "/Users/claudiobarone/.local/bin/codebase-memory-mcp",
       "args": [],
       "env": {}
+    },
+    "discord-ops": {
+      "command": "/Users/claudiobarone/Projects/OSINT WORKSPACE/scripts/discord_ops_mcp.sh",
+      "args": [],
+      "env": {
+        "DISCORD_OPS_DRY_RUN": "true"
+      }
     }
   }
 }

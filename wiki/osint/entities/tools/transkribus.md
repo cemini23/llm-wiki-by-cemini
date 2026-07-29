@@ -13,12 +13,15 @@ related:
   - entities/tools/italian-parish-records.md
   - sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md
   - sources/gemini-italian-civil-register-extraction-2026-07-21.md
+  - sources/arxiv-2607.21936-historical-doc-rag-restoration.md
 maturity: draft
 created: 2026-07-09
 updated: 2026-07-21
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.21936-historical-doc-rag-restoration.md — K196 backlink
 - @sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md — K177 LLM-NAS HTR Watch (contrast)
 - @sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md — K176 GPUOLOGY business DR
 - @concepts/gpuology-genealogy-agent-kit.md — product strategy concept

@@ -5,6 +5,7 @@ tags: [source, rss, prediction-markets, sports, k195, pm]
 keywords: [LeBron, Kalshi, Polymarket, celebrity contracts]
 related:
   - concepts/polymarket-bot-architecture.md
+  - sources/substack-rss-event-horizon-2026-07-27-netflix-nevada-pm.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-25
@@ -13,6 +14,8 @@ clusters: [k195-ingest]
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-07-27-netflix-nevada-pm.md — K196 backlink
 
 - @concepts/polymarket-bot-architecture.md
 

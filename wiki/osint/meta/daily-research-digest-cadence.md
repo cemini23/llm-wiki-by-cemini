@@ -35,9 +35,11 @@ updated: 2026-07-15
 | Field | Value |
 |-------|-------|
 | **Cadence** | Daily — **free arXiv** paper lane (wiki-deduped) → inbox PDFs; Exa news **off** by default |
-| **Last run** | 2026-07-25 |
+| **Last run** | 2026-07-29 |
 | **Script** | `cemini-daily-research-digest` (or `bash scripts/run_daily_research_digest.sh` from repo) |
 | **Config** | `scripts/daily_research_config.yaml` (`exa.paper_mode`, `exa.news_enabled`) |
+| **LaunchAgents** | OSINT `@08:00`; sibling wikis `@08:10+` (+3min stagger); federation summary after last sibling (`reinstall_morning_launchagents.sh`) |
+| **wiki-sync-verify** | **Disabled** (cemini-librarian decommissioned 2026-06-14) |
 | **Report** | `wiki/sweeps/YYYY-MM-DD-daily.md` |
 | **Template** | `wiki/sweeps/_daily-template.md` |
 

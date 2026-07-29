@@ -8,12 +8,15 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
   - concepts/atto-local-first-threat-model.md
   - concepts/wiki-tooling-evaluation.md
+  - entities/tools/opencli.md
 maturity: draft
 created: 2026-07-25
 updated: 2026-07-25
 ---
 
 ## Relations
+
+- @entities/tools/opencli.md — K197 backlink
 
 - @sources/eval-revenue-opportunity-analysis-2026-07-25.md
 - @concepts/gpuology-genealogy-agent-kit.md

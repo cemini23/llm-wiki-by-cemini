@@ -5,6 +5,7 @@ tags: [source, arxiv, lean, quantum, agents, k193, thin]
 keywords: [Lean-QuantumAlg-Bench, Lean-QIT-Bench, formal verification]
 related:
   - concepts/k193-thin-inbox-archive.md
+  - sources/arxiv-2607.22511-causalforge-lean-causal-research.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-24
@@ -13,6 +14,8 @@ clusters: [k193-ingest]
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.22511-causalforge-lean-causal-research.md — K196 backlink
 
 - @concepts/k193-thin-inbox-archive.md
 

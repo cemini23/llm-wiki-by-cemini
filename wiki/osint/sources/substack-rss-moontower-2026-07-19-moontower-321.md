@@ -7,6 +7,7 @@ related:
   - sources/substack-rss-moontower-2026-07-19-become-an-option-mixologist.md
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-moontower-2026-07-19-middle-school-portfolios.md
+  - sources/substack-rss-moontower-2026-07-26-moontower-322.md
 maturity: draft
 read_status: read
 created: 2026-07-20
@@ -15,6 +16,8 @@ clusters: [k177-ingest]
 ---
 
 ## Relations
+
+- @sources/substack-rss-moontower-2026-07-26-moontower-322.md — K196 backlink
 
 - @sources/substack-rss-moontower-2026-07-19-middle-school-portfolios.md — dedicated equal-risk stub (K178)
 

@@ -7,6 +7,7 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/xsp-lane-trading-framework.md
   - concepts/perps-dex-funding-carry-strategy.md
+  - sources/substack-rss-wublock-2026-07-25-weekly-project-updates.md
 maturity: draft
 read_status: read
 created: 2026-07-23
@@ -15,6 +16,8 @@ clusters: [k191-ingest]
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-25-weekly-project-updates.md — K196 backlink
 
 - @concepts/polymarket-bot-architecture.md
 - @concepts/xsp-lane-trading-framework.md

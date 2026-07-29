@@ -6,6 +6,7 @@ keywords: [moontower, risk-reversal, delta-hedge, attribution, USO, skew]
 related:
   - sources/substack-rss-moontower-2026-07-05-moontower-319.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-moontower-2026-07-26-hedging-is-for-gardeners.md
 maturity: draft
 created: 2026-07-06
 updated: 2026-07-06
@@ -13,6 +14,8 @@ read_status: skimmed
 ---
 
 ## Relations
+
+- @sources/substack-rss-moontower-2026-07-26-hedging-is-for-gardeners.md — K196 backlink
 
 - @sources/substack-rss-moontower-2026-07-05-moontower-319.md — issue #319 bundle
 - @concepts/xsp-lane-trading-framework.md — multi-leg attribution discipline (wiki literacy)

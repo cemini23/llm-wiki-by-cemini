@@ -7,6 +7,7 @@ related:
   - concepts/polymarket-bot-architecture.md
   - sources/substack-rss-event-horizon-2026-07-24-kalshi-college-realignment.md
   - sources/substack-rss-wublock-2026-07-24-clarity-act.md
+  - sources/substack-rss-event-horizon-2026-07-27-netflix-nevada-pm.md
 maturity: draft
 read_status: read
 created: 2026-07-24
@@ -15,6 +16,8 @@ clusters: [k193-ingest]
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-07-27-netflix-nevada-pm.md — K196 backlink
 
 - @concepts/polymarket-bot-architecture.md
 - @sources/substack-rss-event-horizon-2026-07-24-kalshi-college-realignment.md

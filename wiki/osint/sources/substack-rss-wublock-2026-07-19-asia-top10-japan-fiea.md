@@ -5,6 +5,7 @@ tags: [source, rss, k174]
 keywords: [k174]
 related:
   - concepts/polymarket-bot-architecture.md
+  - sources/substack-rss-wublock-2026-07-26-asia-top10-japan-onchain.md
 maturity: draft
 read_status: read
 created: 2026-07-19
@@ -13,6 +14,8 @@ clusters: [k174-ingest]
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-26-asia-top10-japan-onchain.md — K196 backlink
 
 - @concepts/polymarket-bot-architecture.md
 

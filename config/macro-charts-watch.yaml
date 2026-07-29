@@ -1,0 +1,75 @@
+# Macro Charts parameter watches → Discord webhook (alert-only, no orders)
+#
+# Laptop:
+#   bash scripts/setup_macro_charts_discord_webhook.sh 'https://discord.com/api/webhooks/...'
+#   python3 scripts/macro_charts_watch.py check
+#
+# Prod 24/7 (cemini-prod):
+#   bash scripts/install_macro_charts_watch_prod.sh   # after scp pack
+#   Uses UNUSUAL_WHALES_API_KEY from /opt/tipdrop-scanner/.env when possible;
+#   falls back to yfinance for indices/futures (VIX, DXY, WTI, …).
+
+poll_interval_seconds: 900  # 15 min
+
+# auto = UW OHLC for mapped equities/ETFs, else yfinance
+price_provider: auto
+
+# yfinance symbols for common Macro Charts names
+symbol_aliases:
+  SPX: "^GSPC"
+  SPY: "SPY"
+  VIX: "^VIX"
+  SOX: "^SOX"
+  SMH: "SMH"
+  DXY: "DX-Y.NYB"
+  WTI: "CL=F"
+  OIL: "CL=F"
+  GOLD: "GC=F"
+  SILVER: "SI=F"
+  GDX: "GDX"
+  COPPER: "HG=F"
+  TY: "ZN=F"
+  USDJPY: "JPY=X"
+  YEN: "JPY=X"
+  KOSPI: "^KS11"
+  QQQ: "QQQ"
+  EWZ: "EWZ"
+  BIDU: "BIDU"
+  BABA: "BABA"
+  MU: "MU"
+  TSM: "TSM"
+
+# Map yfinance symbols → Unusual Whales equity tickers (blank = skip UW)
+uw_symbol_map:
+  "^GSPC": "SPY"
+  "SPY": "SPY"
+  "QQQ": "QQQ"
+  "SMH": "SMH"
+  "GDX": "GDX"
+  "EWZ": "EWZ"
+  "BIDU": "BIDU"
+  "BABA": "BABA"
+  "MU": "MU"
+  "TSM": "TSM"
+  "^VIX": ""
+  "DX-Y.NYB": ""
+  "CL=F": ""
+  "GC=F": ""
+  "SI=F": ""
+  "HG=F": ""
+  "ZN=F": ""
+  "JPY=X": ""
+  "^SOX": "SOXX"
+  "^KS11": ""
+
+webhook:
+  file: ~/.cemini/macro-charts-discord-webhook.url
+  env_var: MACRO_CHARTS_DISCORD_WEBHOOK_URL
+  fallback_file: ~/.cemini/inbox-webhook.url
+  username: Macro Charts Watch
+
+state:
+  watches: ".local/state/macro-charts-watches.json"
+
+default_sustain_checks: 1
+default_ttl_days: 21

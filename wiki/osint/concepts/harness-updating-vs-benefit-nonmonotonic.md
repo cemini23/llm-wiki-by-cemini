@@ -11,9 +11,11 @@ related:
   - entities/tools/revfactory-harness.md
   - sources/trading-posts-compilation-31-2026-06-01.md
   - entities/tools/world-cup-bot.md
+  - concepts/skill-regression-tax.md
+  - sources/arxiv-2607.22520-regression-tax-llm-skills.md
 maturity: validated
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-07-27
 ---
 
 ## Relations
@@ -22,6 +24,8 @@ updated: 2026-06-01
 - @sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
 - @entities/tools/anthropic-harness-design.md
 - @concepts/cemini-wiki-ingest-workflow.md
+- @concepts/skill-regression-tax.md — K196 empirical skill help/hurt (sibling non-monotonicity)
+- @sources/arxiv-2607.22520-regression-tax-llm-skills.md — K196
 
 ## Raw Concept
 
@@ -41,6 +45,8 @@ When agents evolve **prompts/skills/tools/memories** from traces, two skills mus
 1. Do not assume a frontier model is required for overnight harness mutation (evolver can be smaller).
 2. Do assume the **executor** must reliably **activate** and **follow** harness artifacts — weak-tier failure is usage, not edit quality.
 3. Prefer mid-tier executors + strong harness discipline over pairing strong evolver + strong executor by default.
+
+**K196 addendum:** @concepts/skill-regression-tax.md — adding procedural skills can *reduce* solves on previously-working tasks; measure regressions separately from residual failures (arXiv 2607.22520).
 
 Relates to @entities/tools/anthropic-harness-design.md Planner/Generator/Evaluator split — evaluation should score **benefit** on live tasks, not edit eloquence alone.
 

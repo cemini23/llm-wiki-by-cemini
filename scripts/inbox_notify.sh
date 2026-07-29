@@ -71,6 +71,12 @@ done < <(find "$INBOX" -maxdepth 1 -type f ! -name '.*')
 
 notify_macos "Cemini inbox" "${count} file(s) in research to be indexed — see ${SWEEP##*/}"
 
+# GuruWatcher: refresh Macro Charts parameter watches → Discord / prod
+if find "$INBOX" -maxdepth 1 -type f \( -name 'macro-charts-paid-forward-*' -o -name 'macro-charts-rss-*' \) 2>/dev/null | grep -q .; then
+  log "Macro Charts drop detected — running guru_watcher_inbox_hook.sh"
+  bash "$ROOT/scripts/guru_watcher_inbox_hook.sh" >> "$LOGFILE" 2>&1 || log "WARN: guru_watcher hook failed"
+fi
+
 # Optional webhook (set in env or ~/.cemini/inbox-webhook.url)
 WEBHOOK_FILE="$HOME/.cemini/inbox-webhook.url"
 if [[ -f "$WEBHOOK_FILE" ]]; then

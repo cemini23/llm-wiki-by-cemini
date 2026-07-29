@@ -7,6 +7,8 @@ related:
   - sources/arxiv-continual-harness-self-improving-agents-2605.09998.md
   - sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md
   - concepts/code-as-agent-harness.md
+  - concepts/skill-regression-tax.md
+  - sources/arxiv-2607.22529-skill-self-play.md
   - concepts/generator-verifier-inference-time-steering.md
   - concepts/red-queen-controlled-utility-evolution.md
   - concepts/llm-environment-engineer-rl-curriculum.md
@@ -18,13 +20,15 @@ cross-wiki:
   - ccc-wiki/concepts/continual-harness-online-self-improvement.md
 maturity: validated
 created: 2026-05-27
-updated: 2026-07-13
+updated: 2026-07-27
 ---
 
 ## Relations
 
 - @sources/arxiv-continual-harness-self-improving-agents-2605.09998.md — primary source
 - @sources/arxiv-veritas-visual-verification-2606.18247-2026-06-18.md — external verifier vs harness-edit (K123)
+- @concepts/skill-regression-tax.md — K196 measure skill regressions during harness self-improve
+- @sources/arxiv-2607.22529-skill-self-play.md — K196 co-evolve skills behind gates
 - @concepts/generator-verifier-inference-time-steering.md
 - @concepts/code-as-agent-harness.md — static / human-curated harness design space
 - @concepts/llm-agent-systems.md — parent

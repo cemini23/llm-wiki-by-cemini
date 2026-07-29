@@ -81,3 +81,6 @@ agents/**/private/
 .rewind-brief.md
 .agents/
 skills-lock.json
+
+# discord-ops local project pointer (guild routing; no tokens)
+.discord-ops.json

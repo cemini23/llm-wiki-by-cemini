@@ -5,6 +5,9 @@ description: >-
   intent into context, success criteria, operating rules, and completion proof.
   Use when the user invokes /goal or asks for a full-prompt goal session.
 disable-model-invocation: true
+license: MIT
+metadata.author: cemini23
+metadata.version: "1.1.0"
 ---
 # /goal — full-prompt single-shot meta-template
 
@@ -49,7 +52,7 @@ N. Runs without errors; agent can show proof.
 3. SELF-VERIFY — after each step: tests, lint, inspect output.
 4. DEBUG YOURSELF — diagnose and fix; do not hand back broken state.
 5. USE EVERY TOOL — MCP, terminal, web — within project allowlists.
-6. NO PLACEHOLDERS — real implementations, not TODO stubs.
+6. NO PLACEHOLDERS — real implementations, not unfinished stubs.
 7. PROGRESS LOG — completed / in-flight / decisions / blockers.
 8. STAY ON GOAL — off-spec discoveries noted, then back to SC.
 9. IF BLOCKED — log wall; parallelize everything else.
@@ -70,6 +73,9 @@ Per-SC confirmation · files touched · run/test steps · proof · decisions · 
 | **HARNESS TAG (K124)** | Hooks, skills, MCP, rules edits | Six-responsibility + ETCLOVG layer recorded |
 | **COMPACT RUBRIC (K124)** | Expected >50 turns | `hot.md` Checkpoint + Compact OK before `/compact` |
 | **SKILL PROMOTION (K124)** | New skill pages | ≥2 independent reuses logged or wiki-only |
+| **VERIFY HIERARCHY (K162)** | Self-improving agents / harness evolution | Name stop signal; prefer formal/execution over judge/intrinsic; evaluator cannot rewrite pass criteria; document loop-closure (in/on/closed) |
+| **CAPABILITY TREE (K164)** | Multi-tool / multi-MCP agents | Mutually exclusive top domains; lazy child manifests only; nested push/pop; Prebind at binding leaves |
+| **LINEAGE (K155)** | Research briefs / proposal or patch eval | Score mechanism inheritance (GenomeDiff), not citation proximity; joint parent+driver+fate consistency |
 | **CROSS-WIKI** | Federation ingest | Bidirectional `@wiki-alias/` backlinks |
 | **LOCAL-ONLY** | Laptop wikis | Explicit NO REMOTE / commit only when asked |
 

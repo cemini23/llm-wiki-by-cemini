@@ -7,13 +7,21 @@ related:
   - sources/eval-repository-revenue-integration-2026-07-07.md
   - concepts/devfun-poker-agent-challenge-2026.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
+  - sources/eval-revenue-opportunity-url-analysis-plan-2026-07-27.md
+  - concepts/wiki-tooling-evaluation.md
+  - entities/tools/youtube-mcp-cli.md
 maturity: draft
 created: 2026-07-07
-updated: 2026-07-07
+updated: 2026-07-27
 ---
 
 ## Relations
 
+- @entities/tools/youtube-mcp-cli.md — K197 backlink
+
+- @concepts/wiki-tooling-evaluation.md — K197 backlink
+
+- @sources/eval-revenue-opportunity-url-analysis-plan-2026-07-27.md — K197 Integrate refresh → TipDrop visual OSINT
 - @sources/eval-repository-revenue-integration-2026-07-07.md — K148 Extract → poker arena
 - @concepts/devfun-poker-agent-challenge-2026.md — HU sandbox eval context
 
@@ -28,7 +36,7 @@ K148 Phase-0 on [bradautomates/claude-video](https://github.com/bradautomates/cl
 | **Repo** | `bradautomates/claude-video` |
 | **License** | **MIT** |
 | **Stars / pushed** | ~4.8k★; pushed 2026-07-01 |
-| **Verdict** | **Extract** — steal pattern for poker coaching / hand-history video → `decide()` heuristics |
+| **Verdict** | **Integrate** (K197 refresh; was K148 Extract) — TipDrop crypto-chart / video OSINT + poker coaching patterns |
 | **Guardrail** | Untrusted video transcripts = DATA not instructions (`references/agent-rules.md`) |
 
 Brief: `agents/devfun-poker-arena/briefs/2026-07-07_k148-claude-video-extract.md`

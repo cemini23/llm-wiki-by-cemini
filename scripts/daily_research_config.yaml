@@ -35,11 +35,12 @@ exa:
     - arxiv.org
   search_type: auto  # never deep / deep-reasoning for digest
 
-# Co-primary (2026-06-20) — morning ingest for active codebases.
-# Atto = Priority #1 product (2026-07-21); genealogy productizable → atto briefs.
+# Priority stack (2026-07-27) — morning ingest for active codebases.
+# Atto = Priority #1 · GuruWatcher = Priority #2 · everything else behind.
 # Route briefs per scripts/active_project_brief_targets.yaml; wiki always.
 active_topics:
   - "Atto — genealogy agent kit Priority #1 (vault/truth/FIND/portals/share/MCP) (→ ../atto/briefs/ + @osint-wiki methodology)"
+  - "GuruWatcher — Priority #2 alert-only newsletter parameter watches → Discord (→ ../GuruWatcher/briefs/ + Macro Charts inbox hook)"
   - "Poker Arena — Researcher Round HU sandbox (Jun 21 β), MAFP/verifier steals, 6-max EP/PFR, HL loop (→ agents/devfun-poker-arena/briefs/)"
   - "CeminiDFS — NFL projection pipeline, nflverse calibration, ownership sim, pydfs MME (→ @gambling-wiki + ../projects/CeminiDFS/briefs/)"
   - "XSP killer bot — Lane A overnight exits + Lane B LEAPS hedge monitor on Robinhood (→ briefs/xsp-* → cemini-prod)"
@@ -49,13 +50,14 @@ active_topics:
   - "Agent harness for game dev + poker sessions — Cursor/Stagehand, not prod conductor KPIs"
 
 brief_routing_note: |
-  Priority #1 product: atto (../atto/briefs/). Co-primary also: poker-arena · ceminidfs · xsp-killer · family-tree (dogfood).
-  Secondary (route when source matches): wc-ticket-monitor · pm-kalshi-bot · david-persona-image-gen · castle-sim (legacy).
+  Priority #1: atto (../atto/briefs/). Priority #2: guruwatcher (../GuruWatcher/briefs/).
+  Behind both (route when source matches): poker-arena · ceminidfs · xsp-killer · family-tree (dogfood) · tipdrop/david · pm-kalshi-bot · wc-ticket-monitor · castle-sim (legacy).
   Full ingest briefs route per `scripts/active_project_brief_targets.yaml`.
   Genealogy split: productizable (HTR/GEDCOM/vault/share/MCP/portal) → Atto dedicated brief; private pedigree → Desktop/family only.
+  Newsletter / Macro Charts price-level watches → GuruWatcher (alert-only; never order routing).
   David persona adoption briefs (image-gen): write locally, then `python3 ../projects/Image\ gen/scripts/route_david_adoption_brief.py` → `tipdrop-workspace-kit/briefs/*-david.md`.
   Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers.
-  atto → ../atto/briefs/ · poker → agents/devfun-poker-arena/briefs/ · ceminidfs → ../projects/CeminiDFS/briefs/
+  atto → ../atto/briefs/ · guruwatcher → ../GuruWatcher/briefs/ · poker → agents/devfun-poker-arena/briefs/ · ceminidfs → ../projects/CeminiDFS/briefs/
   xsp-killer → briefs/xsp-* → cemini-prod · family-tree → ~/Desktop/family/research/ (private; wiki methodology only)
   wc-ticket-monitor → ../projects/wc-ticket-monitor/briefs/ (wiki-only unless ticket-resale hook).
 
@@ -95,6 +97,10 @@ paper_queries:
 
 # Web/news — digest only; gated by exa.news_enabled (default false = zero Exa news spend)
 queries:
+  - cluster: guruwatcher-newsletter-alerts
+    query: 'newsletter price level watch Discord alert Macro Charts VIX DXY Unusual Whales parameter watch 2026'
+    category: news
+
   - cluster: poker-arena
     query: '"dev.fun" OR "arena pokerkit" OR poker agent challenge researcher track heads-up sandbox 2026'
     category: news
@@ -151,12 +157,12 @@ monokern_pipeline:
     - yt-dlp
     - inbox_pdf
     - web_url
-  ingest_hook: "After Sunday digest, one NotebookLM pass on co-primary active_topic (Atto, poker, CeminiDFS, xsp-killer, family-tree dogfood, or PM)"
+  ingest_hook: "After Sunday digest, one NotebookLM pass on Priority #1/#2 or active topic (Atto, GuruWatcher, poker, ceminiDFS, xsp-killer, family-tree dogfood, or PM)"
 
 social:
   manual_pass:
     - tool: notebooklm-osint-bridge
-      prompt: "Weekly Monokern pass on co-primary project — Atto genealogy kit, poker Researcher Round, CeminiDFS, xsp-killer, family-tree dogfood, or PM/Kalshi"
+      prompt: "Weekly Monokern pass — prefer Atto (#1) or GuruWatcher (#2); else poker Researcher Round, CeminiDFS, xsp-killer, family-tree dogfood, or PM/Kalshi"
     - tool: twitter-reader
       prompt: "dev.fun poker HU sandbox; XSP Mini-SPX LEAPS/options flow; NFL DFS FanDuel; PM/Kalshi bot last 24h"
     - tool: opencli-reader

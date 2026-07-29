@@ -1,0 +1,19 @@
+[Unit]
+Description=Macro Charts parameter watches → Discord (alert-only, no orders)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/cemini/macro-charts-watch
+Environment=PYTHONUNBUFFERED=1
+Environment=MC_WATCH_STATE=/opt/cemini/state/macro-charts-watches.json
+Environment=MC_WATCH_UW_ENV_FILE=/opt/tipdrop-scanner/.env
+Environment=MC_WATCH_PRICE_PROVIDER=auto
+EnvironmentFile=-/opt/cemini/.env
+ExecStart=/bin/bash /opt/cemini/macro-charts-watch/run_macro_charts_watch_check.sh
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

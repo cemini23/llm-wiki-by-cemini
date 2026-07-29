@@ -19,12 +19,15 @@ related:
   - sources/atto-commercial-migration-plan-2026-07-23.md
   - sources/software-licensing-architecture-research-2026-07-23.md
   - entities/tools/license-guard-rs.md
+  - entities/tools/opencli.md
 maturity: draft
 created: 2026-07-22
 updated: 2026-07-25
 ---
 
 ## Relations
+
+- @entities/tools/opencli.md — K197 backlink
 
 - @sources/substack-rss-secpro-2026-07-24-244-uk-cyber.md — identity lesson
 

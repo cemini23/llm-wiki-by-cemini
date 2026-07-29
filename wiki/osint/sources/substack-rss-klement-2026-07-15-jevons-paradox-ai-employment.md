@@ -8,6 +8,8 @@ read_status: skim
 created: 2026-07-15
 updated: 2026-07-15
 clusters: [k167-ingest]
+related:
+  - sources/substack-rss-klement-2026-07-27-graduating-in-the-age-of-ai.md
 ---
 
 ## Raw Concept

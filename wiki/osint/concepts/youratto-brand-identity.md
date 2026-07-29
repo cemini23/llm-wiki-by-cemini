@@ -10,12 +10,15 @@ related:
   - concepts/atto-macos-gtm-gumroad.md
   - sources/gemini-atto-marketing-compliance-2026-07-23.md
   - concepts/atto-local-first-threat-model.md
+  - entities/tools/impeccable.md
 maturity: draft
 created: 2026-07-24
 updated: 2026-07-24
 ---
 
 ## Relations
+
+- @entities/tools/impeccable.md — K197 design vocabulary Extract
 
 - @sources/gemini-atto-brand-identity-2026-07-24.md — Gemini DR SoT
 - @sources/gemini-atto-landing-conversion-2026-07-23.md — lean hero uses this lockup
