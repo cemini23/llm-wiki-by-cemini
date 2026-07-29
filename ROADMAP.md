@@ -23,6 +23,11 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-29 — K206)
+
+- **K206 ingest (2026-07-29)** — Gemini DR wave2 (CH · FR · PE · BE · MX · AR deepening) + 5 arXiv (RIDGE/SHarD/IRA/DDB/epistemia) + Macro Charts Jul-28/29 + Latent Space/PE/EH/Klement/Moontower/Wu RSS. Concept `foreign-civil-doc-authentication-regimes`; AR **DNU 366 Migraciones RETRACTED**. Phase-0: `agent-security-lab` MIT Extract (~944KB). Briefs → Atto; GuruWatcher; CCC; cybersec; poker no-path; **pm-kalshi → cemini-prod**. Auth enum still parked for product code.
+- **K205 wave2 packs** were local-only until K206 GO; BR/VE/DO Gemini last wave still operator-queued (~14:40 ET refill).
+
 ## Current state (2026-07-29 — K204)
 
 - **K204 ingest (2026-07-29)** — 5 Atto country packs (US · CA · AU · CL · UY) + GitHub revenue eval (OpenWork Extract; BR civic APIs no-fit). Concept `italian-citizenship-anglosphere-and-cone-systems`. Briefs → Atto ×2; CCC OpenWork; Cyber Context. Cass PDF inbox dupes cleaned (already egress). **No prod scp.**

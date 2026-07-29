@@ -48,9 +48,11 @@ related:
   - sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md
   - concepts/guruwatcher-newsletter-claim-ledger.md
   - entities/tools/guruwatcher.md
+  - sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md
+  - sources/substack-rss-klement-2026-07-29-2-percent-inflation-target.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-28
+updated: 2026-07-29
 ---
 
 ## Relations
@@ -90,6 +92,10 @@ updated: 2026-07-28
 - @sources/trading-posts-macro-charts-skills-md-2026-05-28.md — K76 Post 1 rotation precursor
 - @sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md — K144 paid arc (Jun 22–Jul 5)
 - @sources/substack-rss-capital-flows-2026-07-05-start-here-capital-flows-a-daily-macro-map-to-ta.md — K147 parallel macro livestream (reference only)
+- @sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md — Korea/WTI/FOMC
+- @sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md — KOSPI day-2 / SOX
+- @sources/substack-rss-klement-2026-07-29-2-percent-inflation-target.md — inflation-target theory
+
 
 ## Raw Concept
 

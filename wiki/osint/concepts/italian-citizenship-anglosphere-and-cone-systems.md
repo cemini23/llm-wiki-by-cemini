@@ -1,15 +1,19 @@
 ---
-title: Italian citizenship — US · CA · AU · CL · UY admin matrices for Atto
+title: Italian citizenship — US · CA · AU · CL · UY · CH · FR · BE admin matrices for Atto
 type: concept
-tags: [concept, genealogy, citizenship, atto, k204, usa, canada, australia, chile, uruguay]
-keywords: [jus soli cutoff, DFAT, GAC, SRCeI, DGREC, e-Apostille, DOC_FOREIGN_IUS_SOLI_TITLE, auth regime]
+tags: [concept, genealogy, citizenship, atto, k204, k206, usa, canada, australia, chile, uruguay, switzerland, france, belgium]
+keywords: [jus soli cutoff, DFAT, GAC, SRCeI, DGREC, e-Apostille, CIEC 16, EU 2016/1191, DOC_FOREIGN_IUS_SOLI_TITLE, auth regime]
 related:
   - sources/us-records-italian-citizenship-2026-07-29.md
   - sources/canada-apostille-citizenship-research-2026-07-29.md
   - sources/australia-nationality-law-research-2026-07-29.md
   - sources/chile-civil-records-reference-pack-2026-07-29.md
   - sources/uruguay-italian-emigrant-reference-pack-2026-07-29.md
+  - sources/switzerland-nationality-civil-registry-2026-07-29.md
+  - sources/france-nationality-registry-2026-07-29.md
+  - sources/belgium-civil-registry-2026-07-29.md
   - concepts/italian-citizenship-latam-audience-systems.md
+  - concepts/foreign-civil-doc-authentication-regimes.md
   - concepts/italian-citizenship-pathways-document-pipelines.md
   - concepts/italian-citizenship-primary-law-lock.md
   - concepts/italian-citizenship-youtube-soft-flags.md
@@ -27,7 +31,11 @@ updated: 2026-07-29
 - @sources/australia-nationality-law-research-2026-07-29.md — 1986 *jus soli* cutoff + DFAT
 - @sources/chile-civil-records-reference-pack-2026-07-29.md — SRCeI / RUN / e-Apostille
 - @sources/uruguay-italian-emigrant-reference-pack-2026-07-29.md — ciudadanía vs nacionalidad
-- @concepts/italian-citizenship-latam-audience-systems.md — BR/AR/VE/DO GTM + CL/UY sequencing
+- @sources/switzerland-nationality-civil-registry-2026-07-29.md — CH CIEC 16 vs 34 (K206)
+- @sources/france-nationality-registry-2026-07-29.md — FR CNF / EU form (K206)
+- @sources/belgium-civil-registry-2026-07-29.md — BE copie / Art.11 (K206)
+- @concepts/italian-citizenship-latam-audience-systems.md — BR/AR/VE/DO/PE/MX GTM
+- @concepts/foreign-civil-doc-authentication-regimes.md — Hague / EU / CIEC enum
 - @concepts/italian-citizenship-pathways-document-pipelines.md — DOC_* / pathway IDs
 - @concepts/italian-citizenship-primary-law-lock.md — Clock A/B
 - @concepts/italian-citizenship-youtube-soft-flags.md — soft-flags
@@ -38,7 +46,7 @@ updated: 2026-07-29
 
 Inbox country packs (2026-07-29) for five high-signal jurisdictions beyond the K203 LatAm core four. Goal: encode **foreign-title** + **authentication** + **consular** traps into Atto Research checklists — never auto-eligibility.
 
-**Not legal advice.** Full matrices live in `.local/research/atto-latam-audience-systems/{USA,CANADA,AUSTRALIA,CHILE,URUGUAY}.md`.
+**Not legal advice.** Full matrices live in `.local/research/atto-latam-audience-systems/{USA,CANADA,AUSTRALIA,CHILE,URUGUAY,SWITZERLAND,FRANCE,BELGIUM}.md`. Auth enum: `@concepts/foreign-civil-doc-authentication-regimes.md`.
 
 ## Narrative
 
@@ -51,8 +59,15 @@ Inbox country packs (2026-07-29) for five high-signal jurisdictions beyond the K
 | AU | `hague_apostille` | **DFAT only**; paper seal; no e-apostille |
 | CL | `hague_apostille` | Native **e-Apostille** PDFs; seat “original” rule unverified |
 | UY | `hague_apostille` | Manuscript → in-person MRREE; gestor/Carta Poder for diaspora |
+| CH | `ciec_16_34` + Hague for nat | **Force Conv. 16** (IT not party to 34); EU 2016/1191 **N/A** (EFTA) |
+| FR | `eu_2016_1191` | copie intégrale; Hague if IT filing outside EU; CNF ≠ birth |
+| BE | `eu_2016_1191` / CIEC | copie not extrait; Art.11 third-gen; dual from **28 Apr 2008** |
 
-EU 2016/1191 / CIEC 16/34 do **not** apply to these five as issuance countries for Italy-bound packs (CH/FR/BE stay on separate EU/CIEC tracks).
+### EU / EFTA track (K206)
+
+- **Switzerland:** Clock A cut = Einbürgerungsbeschluss / SEM Negativ — not birthplace. Familienschein ≠ consular pack.
+- **France:** CNF for nationality title; never COMEDEC as citizen portal; Algeria 1962/63 minefield.
+- **Belgium:** Just-on-web eID wall → commune/proxy for diaspora; silent Art.11 BE attribution risk.
 
 ### Soil-title false-positive leaders
 

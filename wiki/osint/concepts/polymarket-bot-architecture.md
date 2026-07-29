@@ -106,6 +106,7 @@ related:
   - sources/substack-rss-wublock-2026-07-19-asia-top10-japan-fiea.md
   - sources/substack-rss-event-horizon-2026-07-28-dodd-frank-pm.md
   - entities/tools/sportsbook-api-evangelist.md
+  - sources/substack-rss-event-horizon-2026-07-29-kalshi-bonus-odds.md
 
   - sources/substack-rss-wublock-2026-07-20-ice-okx-closing-bell.md
   - sources/substack-rss-event-horizon-2026-07-21-wildfire-aqi-markets.md
@@ -116,7 +117,7 @@ related:
   - entities/tools/amnezia-client.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-07-28
+updated: 2026-07-29
 ---
 
 ## Relations
@@ -183,6 +184,8 @@ updated: 2026-07-28
 - `@concepts/polymarket-weather-bot-methodology-taxonomy.md` — K70 five-type framework
 - `@concepts/cl-amm-dynamic-fees-lvr.md` — K128 LVR + dynamic fee compensation framing for LP modules
 - `@concepts/square-root-law-market-impact.md` — K128 √Q/V clip sizing for thin CLOB books
+- @sources/substack-rss-event-horizon-2026-07-29-kalshi-bonus-odds.md — Kalshi promo odds / parlays / reg
+
 
 ## Raw Concept
 

@@ -21,6 +21,13 @@ related:
   - sources/youtube-italian-citizenship-channels-2026-07-22.md
   - sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md
   - sources/gemini-atto-marketing-compliance-2026-07-23.md
+  - sources/switzerland-nationality-civil-registry-2026-07-29.md
+  - sources/france-nationality-registry-2026-07-29.md
+  - sources/belgium-civil-registry-2026-07-29.md
+  - sources/peru-civil-record-retrieval-2026-07-29.md
+  - sources/mexico-civil-records-2026-07-29.md
+  - sources/argentina-consular-rules-deepening-2026-07-29.md
+  - concepts/foreign-civil-doc-authentication-regimes.md
 maturity: validated
 created: 2026-07-22
 updated: 2026-07-29
@@ -46,6 +53,9 @@ updated: 2026-07-29
 - @concepts/atto-macos-gtm-gumroad.md — listing never claims court outcomes
 - @sources/youtube-italian-citizenship-channels-2026-07-22.md — secondary narrative that needed lock
 - @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — K183 DR superseded-in-part by this lock
+- @concepts/foreign-civil-doc-authentication-regimes.md — auth enum
+- @sources/argentina-consular-rules-deepening-2026-07-29.md — DNU 366 retract
+
 
 ## Raw Concept
 

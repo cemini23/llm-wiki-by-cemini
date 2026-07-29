@@ -3,6 +3,16 @@
 updated: 2026-07-29
 ---
 
+## [2026-07-29] ingest | K206 — Gemini DR wave2 + arXiv SHarD/IRA/DDB/RIDGE + Macro/PM RSS
+
+- **Atto (6 docx):** CH · FR · PE · BE · MX · AR deepening → sources + auth-regime concept; AR **DNU 366 Migraciones path RETRACTED**
+- Concept hubs: `@concepts/foreign-civil-doc-authentication-regimes.md`; latam + anglosphere/EU-EFTA updates
+- **arXiv (5):** RIDGE (xsp culture); epistemic schizologia (wiki); SHarD (CCC/cyber); IRA + DDB (GUI eval)
+- **Phase-0:** `wrgore/agent-security-lab` MIT → `.local/adopts/agent-security-lab` (~944KB) CONDITIONAL-GO Extract; `shard`/`ridge`/`DDB` deferred
+- **Macro/RSS:** MC Jul-28/29 → GuruWatcher; Event Horizon Kalshi → pm-*; Latent Space/PE → CCC/cyber; Klement/Moontower/Wu wiki-only
+- Briefs: Atto k206; GuruWatcher k206; pm-kalshi; CCC + cybersec SHarD; poker no-path
+- Prod scp: `pm-kalshi` only when skill_audit PASS
+
 ## [2026-07-29] ops | K204 Phase-0 OpenWork — CONDITIONAL-GO Extract
 
 - Shallow clone `different-ai/openwork` (`dev`) → `.local/adopts/openwork` (~148M); script `scripts/adopt_k204_phase0.sh`

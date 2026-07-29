@@ -77,9 +77,11 @@ related:
   - sources/eval-revenue-opportunity-url-analysis-2026-07-27.md
   - sources/substack-rss-capital-flows-2026-07-25-system-running-out-of-slack.md
   - sources/substack-rss-klement-2026-07-27-fast-money-warping-market-logic.md
+  - sources/arxiv-2607.25199-ridge-option-pricing-validation.md
+  - sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-28
+updated: 2026-07-29
 ---
 
 ## Relations
@@ -142,6 +144,10 @@ updated: 2026-07-28
 - @sources/macro-charts-paid-forward-chat-2026-07-10.md — K155 USDJPY / CPI / SOX chat
 - @sources/substack-rss-capital-flows-2026-07-10-trading-investing-framework.md — K155 SOFR framework source
 - @concepts/nagus-ops-control-plane.md — laptop XSP ops loop (Macro Charts → brain/queue → packets)
+- @sources/arxiv-2607.25199-ridge-option-pricing-validation.md — LLM option-pricing validation culture
+- @sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md — VIX/Korea secondary
+- @sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md — SOX/EWY secondary
+
 
 ## Raw Concept
 

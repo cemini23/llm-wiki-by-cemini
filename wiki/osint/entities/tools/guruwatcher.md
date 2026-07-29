@@ -8,9 +8,11 @@ related:
   - sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md
   - concepts/active-project-research-routing.md
   - concepts/macro-charts-regime-signals.md
+  - sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md
+  - sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-29
 ---
 
 ## Relations
@@ -19,6 +21,9 @@ updated: 2026-07-28
 - @sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md
 - @concepts/active-project-research-routing.md
 - @concepts/macro-charts-regime-signals.md
+- @sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md — watch candidates
+- @sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md — day-2 reconcile
+
 
 ## Raw Concept
 

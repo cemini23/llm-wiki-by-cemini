@@ -4,6 +4,7 @@ type: source
 tags: [source, crypto, market-makers, k198, tipdrop]
 keywords: [MM loan, call option, MOVE, circulating supply]
 related:
+  - sources/substack-rss-wublock-2026-07-29-bitmex-memories-bybit.md
   - concepts/macro-charts-regime-signals.md
 maturity: draft
 read_status: skimmed
@@ -13,6 +14,8 @@ clusters: [k198-ingest]
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-29-bitmex-memories-bybit.md — K206 continuity
 
 - @concepts/macro-charts-regime-signals.md
 

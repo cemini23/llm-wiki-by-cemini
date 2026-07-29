@@ -221,6 +221,7 @@ related:
   - entities/tools/agent-governance-toolkit.md
   - entities/tools/geolibre.md
   - sources/newsletter-rss-latent-space-2026-07-28-kimi-k3.md
+  - sources/arxiv-2607.25199-ridge-option-pricing-validation.md
 maturity: validated
 hub: true
 created: 2026-04-28
@@ -333,6 +334,8 @@ updated: 2026-07-29
 - @entities/frameworks/fastmcp.md — deployed Cemini MCP layer; any adopted tool's MCP server must coexist (separate transport / separate URL) with the existing 130-tool `cemini_mcp` container
 - @concepts/librarian-server-architecture.md — child decision document expanding the "Hosting topology" sub-decision (Option C — dedicated Hetzner CPX21 librarian server) into a full architectural plan with migration phases, sizing math, and 24/7 operational SLA targets. **Where this WTE page resolved "which tool"; that page resolves "where it runs."**
 - @sources/bytemover-agent-native-memory.md — K13 Promotion #3; ByteRover is the canonical "filesystem-first" architecture in WTE's filesystem-vs-database taxonomy; validates the filesystem-first approach for qualitative knowledge management against the DB-heavy alternatives evaluated here
+- @sources/arxiv-2607.25199-ridge-option-pricing-validation.md — validation-as-method parallel
+
 
 ## Raw Concept
 

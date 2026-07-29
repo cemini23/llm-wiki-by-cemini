@@ -92,6 +92,13 @@ related:
   - entities/tools/aisuite.md
   - sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md
   - concepts/document-processing-pipeline-scale-patterns.md
+  - concepts/foreign-civil-doc-authentication-regimes.md
+  - sources/switzerland-nationality-civil-registry-2026-07-29.md
+  - sources/france-nationality-registry-2026-07-29.md
+  - sources/belgium-civil-registry-2026-07-29.md
+  - sources/peru-civil-record-retrieval-2026-07-29.md
+  - sources/mexico-civil-records-2026-07-29.md
+  - sources/argentina-consular-rules-deepening-2026-07-29.md
 maturity: draft
 created: 2026-07-20
 updated: 2026-07-29
@@ -198,6 +205,14 @@ updated: 2026-07-29
 - @entities/tools/censusreporter.md — K175 US staging extract
 - @entities/tools/timemagazine-babynames.md — K175 SSA name priors
 - @entities/tools/dhfbk-tint.md — K175 Italian NLP (private; ~1.2 GB RSS)
+- @concepts/foreign-civil-doc-authentication-regimes.md — replace apostille:bool
+- @sources/switzerland-nationality-civil-registry-2026-07-29.md — CH pack
+- @sources/france-nationality-registry-2026-07-29.md — FR pack
+- @sources/belgium-civil-registry-2026-07-29.md — BE pack
+- @sources/peru-civil-record-retrieval-2026-07-29.md — PE pack
+- @sources/mexico-civil-records-2026-07-29.md — MX pack
+- @sources/argentina-consular-rules-deepening-2026-07-29.md — AR deepening
+
 
 ## Raw Concept
 

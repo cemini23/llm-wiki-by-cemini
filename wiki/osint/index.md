@@ -12,7 +12,31 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **989 canonical stubs** (K203 LatAm + K201 PDF pack + …)
+Total: **1010 canonical stubs** (K206 wave2 + arXiv/RSS + …)
+
+### k206-ingest (21)
+
+- [Switzerland nationality + civil registry](sources/switzerland-nationality-civil-registry-2026-07-29.md) — CIEC 16 force; Clock A = nat decree. — `docx` [+k206]
+- [France nationality + état civil](sources/france-nationality-registry-2026-07-29.md) — CNF / copie intégrale / EU form. — `docx` [+k206]
+- [Peru civil-record retrieval](sources/peru-civil-record-retrieval-2026-07-29.md) — RENIEC proxy-first. — `docx` [+k206]
+- [Belgium civil registry](sources/belgium-civil-registry-2026-07-29.md) — copie / Art.11 / dual-2008. — `docx` [+k206]
+- [Mexico civil records](sources/mexico-civil-records-2026-07-29.md) — SIDEA reject + state apostille. — `docx` [+k206]
+- [Argentina consular deepening](sources/argentina-consular-rules-deepening-2026-07-29.md) — DNU 366 retract + seat×province. — `docx` [+k206]
+- [Foreign civil-doc auth regimes](concepts/foreign-civil-doc-authentication-regimes.md) — Hague / EU / CIEC enum. — concept [+k206]
+- [agent-security-lab (SHarD)](entities/tools/agent-security-lab.md) — Phase-0 Extract MIT. — entity [+k206]
+- [RIDGE option pricing (2607.25199)](sources/arxiv-2607.25199-ridge-option-pricing-validation.md) — LLM pricer validation → xsp. — `pdf` [+k206]
+- [Epistemic schizologia (2607.25620)](sources/arxiv-2607.25620-epistemic-schizologia-llms.md) — wiki-only epistemology. — `pdf` [+k206]
+- [SHarD harness security (2607.25890)](sources/arxiv-2607.25890-shard-secure-harness-distribution.md) — CCC/cybersec. — `pdf` [+k206]
+- [IRA GUI reward (2607.25904)](sources/arxiv-2607.25904-interactive-reward-agent-gui.md) — env-state eval. — `pdf` [+k206]
+- [Desktop-Delta Bench (2607.26041)](sources/arxiv-2607.26041-desktop-delta-bench.md) — GUI transition bench. — `pdf` [+k206]
+- [Macro Charts Korea/WTI/FOMC Jul 28](sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md) — GuruWatcher watches. — `paid` [+k206]
+- [Macro Charts KOSPI/SOX/FOMC Jul 29](sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md) — day-2 reconcile. — `paid` [+k206]
+- [Latent Space RSI + HF agent attack](sources/newsletter-rss-latent-space-2026-07-29-rsi-hf-agent-attack.md) — CCC/cyber. — `rss` [+k206]
+- [Pragmatic Engineer formal methods](sources/newsletter-rss-pragmatic-engineer-2026-07-29-formal-methods-hillel-wayne.md) — CCC wiki-only. — `rss` [+k206]
+- [Event Horizon Kalshi bonus odds](sources/substack-rss-event-horizon-2026-07-29-kalshi-bonus-odds.md) — pm-kalshi. — `rss` [+k206]
+- [Klement 2% inflation](sources/substack-rss-klement-2026-07-29-2-percent-inflation-target.md) — wiki-only. — `rss` [+k206]
+- [Moontower Christian pagan](sources/substack-rss-moontower-2026-07-29-a-christian-pagan.md) — thin non-trading. — `rss` [+k206]
+- [WuBlock BitMEX memories](sources/substack-rss-wublock-2026-07-29-bitmex-memories-bybit.md) — perps history. — `rss` [+k206]
 
 ### k201-ingest (2)
 

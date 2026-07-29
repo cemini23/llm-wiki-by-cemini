@@ -8,6 +8,7 @@ related:
   - concepts/italian-citizenship-primary-law-lock.md
   - concepts/italian-citizenship-youtube-soft-flags.md
   - concepts/italian-citizenship-anglosphere-and-cone-systems.md
+  - concepts/foreign-civil-doc-authentication-regimes.md
   - concepts/gpuology-genealogy-agent-kit.md
   - concepts/atto-macos-gtm-gumroad.md
   - concepts/youratto-lean-conversion-page.md
@@ -17,6 +18,9 @@ related:
   - sources/chile-civil-records-reference-pack-2026-07-29.md
   - sources/uruguay-italian-emigrant-reference-pack-2026-07-29.md
   - sources/eval-github-repo-revenue-evaluation-2026-07-29.md
+  - sources/peru-civil-record-retrieval-2026-07-29.md
+  - sources/mexico-civil-records-2026-07-29.md
+  - sources/argentina-consular-rules-deepening-2026-07-29.md
 maturity: draft
 created: 2026-07-29
 updated: 2026-07-29
@@ -27,7 +31,8 @@ updated: 2026-07-29
 - @concepts/italian-citizenship-pathways-document-pipelines.md — US-centric stage machine to generalize
 - @concepts/italian-citizenship-primary-law-lock.md — Clock A/B + Circ. 43347 / 24045
 - @concepts/italian-citizenship-youtube-soft-flags.md — soft-flag catalog (locale-agnostic law)
-- @concepts/italian-citizenship-anglosphere-and-cone-systems.md — US/CA/AU/CL/UY admin matrices (K204)
+- @concepts/italian-citizenship-anglosphere-and-cone-systems.md — US/CA/AU/CL/UY + CH/FR/BE admin matrices
+- @concepts/foreign-civil-doc-authentication-regimes.md — Hague / EU / CIEC enum
 - @concepts/gpuology-genealogy-agent-kit.md — product hub
 - @concepts/atto-macos-gtm-gumroad.md — listing never-claims
 - @concepts/youratto-lean-conversion-page.md — conversion fence
@@ -37,6 +42,9 @@ updated: 2026-07-29
 - @sources/chile-civil-records-reference-pack-2026-07-29.md — CL SRCeI / e-Apostille
 - @sources/uruguay-italian-emigrant-reference-pack-2026-07-29.md — UY ciudadanía trap
 - @sources/eval-github-repo-revenue-evaluation-2026-07-29.md — BR civic GitHub APIs ≠ cartório path
+- @sources/peru-civil-record-retrieval-2026-07-29.md — RENIEC proxy-first (K206)
+- @sources/mexico-civil-records-2026-07-29.md — SIDEA reject / state apostille (K206)
+- @sources/argentina-consular-rules-deepening-2026-07-29.md — DNU 366 retract + seat×province (K206)
 
 ## Raw Concept
 
@@ -83,9 +91,10 @@ US remains a strong GTM beachhead (English, Gumroad, payment rails). **Volume tr
 
 - **Nationality:** Strong *ius soli* — *argentinos nativos* by birth in territory. Distinguish *nativo* vs *carta de ciudadanía* / naturalización / *opción*.
 - **Civil registry:** Provincial **Registro Civil** + **RENAPER** ecosystem for DNI. **Partida de nacimiento** (and marriage/death) requested from the province of event (not via Argentine consulates abroad as primary channel).
-- **Apostille:** Cancillería **TAD** (Trámites a Distancia) digital apostille for public docs including partidas; CABA partidas often two PDFs (acta scan + “certificado de partida entregada”).
-- **Italian channel:** Buenos Aires + other Argentine seats; same Prenot@Mi / L74 constraints.
-- **Atto hooks:** ES-AR copy; partida + TAD apostille checklist; DNI language check (*nativo* vs naturalized).
+- **Apostille:** Cancillería **TAD** (Trámites a Distancia) digital apostille for public docs including partidas; CABA partidas often two PDFs (acta scan + “certificado de partida entregada”). **Seat×province overlay** (7 IT seats) — Rosario/La Plata/BA acceptance rules differ [Source: argentina-consular-rules-deepening-2026-07-29].
+- **Naturalization path:** **[RETRACTED]** DNU 366/2025 Migraciones *carta* live UX — courts nullified; competence remains **Juzgados Federales**.
+- **Italian channel:** Buenos Aires + other Argentine seats; BA Prenot@Mi new JS suspended post **28 Mar 2025**; same L74 constraints.
+- **Atto hooks:** ES-AR copy; partida + seat-aware apostille checklist; CNE F003/F052 fee **5,000 ARS**; DNI language check (*nativo* vs naturalized).
 
 #### Venezuela
 
@@ -127,9 +136,21 @@ Full briefs in `.local/research/atto-latam-audience-systems/` (`BRAZIL.md`, `ARG
 | **Venezuela** | Since **11 Jun 2026** SAREN issues certified actas + e-apostille online (153 types); pre-1960 books + Gaceta naturalization still offline; VE consulates in US still non-operational — venue = residence country |
 | **Dominican Republic** | **Libro de Extranjería** confers no nationality; JCE unified QR acta since Jul 2025; Italy–DR Hague chain clean; real GTM is **US/DR dual households**, not island AIRE (~10k) |
 
-**Next research countries (Gemini DR order):** Uruguay → Chile → Canada → Australia → US state-matrix → Switzerland → France → Peru → Belgium → Mexico.
+#### Peru (K206 wave2)
 
-**Structural product note:** authentication is not boolean apostille — Hague vs EU 2016/1191 vs CIEC 16/34 must become a `DOC_*` enum.
+- **Retrieval:** RENIEC digitization ≠ diaspora self-serve — **DNI firewall** → **proxy-first**. Issue **Copia Certificada**.
+- **Apostille:** Hague e-apostille after e-signed PDF; Págalo.pe OK; **Yape** PE-only trap.
+- **Atto hooks:** Block “fully online” UX copy; coverage probe vs OREC.
+
+#### Mexico (K206 wave2)
+
+- **Civil:** Amb CDMX **rejects SIDEA** → **copia fiel del libro** + **state** apostille. e-Apostille (Oct 2025) = federal criminal only.
+- **Nationality:** Strict *ius soli*; dual *por nacimiento* from **20 Mar 1998** (not retroactive). CURP ≠ nationality.
+- **Atto hooks:** SIDEA-reject soft-flag; Prenot@Mi CDMX contention windows.
+
+**Gemini DR wave2 landed (2026-07-29):** CH · FR · PE · BE · MX · AR deepening. **Last wave queued:** BR · VE · DO refill prompts (~14:40 ET operator).
+
+**Structural product note:** authentication is not boolean apostille — see `@concepts/foreign-civil-doc-authentication-regimes.md`.
 
 ## Snippets
 

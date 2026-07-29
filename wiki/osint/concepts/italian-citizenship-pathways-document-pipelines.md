@@ -30,6 +30,13 @@ related:
   - sources/gemini-italian-american-genealogy-sources-2026-07-21.md
   - sources/youtube-italian-citizenship-channels-2026-07-22.md
   - concepts/italian-citizenship-youtube-soft-flags.md
+  - concepts/foreign-civil-doc-authentication-regimes.md
+  - sources/switzerland-nationality-civil-registry-2026-07-29.md
+  - sources/france-nationality-registry-2026-07-29.md
+  - sources/belgium-civil-registry-2026-07-29.md
+  - sources/peru-civil-record-retrieval-2026-07-29.md
+  - sources/mexico-civil-records-2026-07-29.md
+  - sources/argentina-consular-rules-deepening-2026-07-29.md
 maturity: validated
 created: 2026-07-22
 updated: 2026-07-29
@@ -63,6 +70,14 @@ updated: 2026-07-29
 - @sources/gemini-italian-civil-register-extraction-2026-07-21.md — why marginalia matter
 - @sources/gemini-portale-antenati-research-guide-2026-07-21.md — dual-original; portal ≠ certificate
 - @sources/gemini-italian-american-genealogy-sources-2026-07-21.md — US long-form / naturalization proofs
+- @concepts/foreign-civil-doc-authentication-regimes.md — auth-regime enum
+- @sources/switzerland-nationality-civil-registry-2026-07-29.md — CH CIEC 16
+- @sources/france-nationality-registry-2026-07-29.md — FR CNF / EU form
+- @sources/belgium-civil-registry-2026-07-29.md — BE copie / Art.11
+- @sources/peru-civil-record-retrieval-2026-07-29.md — PE RENIEC proxy
+- @sources/mexico-civil-records-2026-07-29.md — MX SIDEA reject
+- @sources/argentina-consular-rules-deepening-2026-07-29.md — AR DNU retract
+
 
 ## Raw Concept
 

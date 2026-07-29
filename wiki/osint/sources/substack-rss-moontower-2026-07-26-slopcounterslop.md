@@ -4,6 +4,7 @@ type: source
 tags: [source, rss, moontower, ai-slop, k196, seo]
 keywords: [Pangram, Substack, AI detection, no-ai-slop]
 related:
+  - sources/substack-rss-moontower-2026-07-29-a-christian-pagan.md
   - sources/substack-rss-moontower-2026-07-26-moontower-322.md
   - concepts/cemini-wiki-ingest-workflow.md
 maturity: draft
@@ -14,6 +15,8 @@ clusters: [k196-ingest]
 ---
 
 ## Relations
+
+- @sources/substack-rss-moontower-2026-07-29-a-christian-pagan.md — K206 continuity
 
 - @sources/substack-rss-moontower-2026-07-26-moontower-322.md
 - @concepts/cemini-wiki-ingest-workflow.md

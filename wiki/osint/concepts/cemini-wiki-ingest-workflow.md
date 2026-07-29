@@ -4,6 +4,7 @@ type: concept
 tags: [concept, workflow, automation, ingest, wiki, k90]
 keywords: [wiki-ingest, daily-digest, inbox-watcher, ingest-gates, tier-2, autoresearch]
 related:
+  - sources/newsletter-rss-pragmatic-engineer-2026-07-29-formal-methods-hillel-wayne.md
   - concepts/federated-daily-research-digest.md
   - concepts/monokern-compounding-research-pipeline.md
   - concepts/active-project-research-routing.md
@@ -38,13 +39,15 @@ related:
   - sources/arxiv-2607.23791-brw-cover-times.md
   - sources/newsletter-rss-sparktoro-2026-07-28-brand-affinity.md
   - sources/arxiv-2607.24663-aps-rag.md
+  - sources/arxiv-2607.25620-epistemic-schizologia-llms.md
 maturity: core
 created: 2026-05-31
-updated: 2026-07-28
+updated: 2026-07-29
 ---
 
 ## Relations
 
+- @sources/newsletter-rss-pragmatic-engineer-2026-07-29-formal-methods-hillel-wayne.md — formal methods / property-based testing note
 - @sources/arxiv-2607.24663-aps-rag.md — K198 backlink
 
 - @sources/newsletter-rss-sparktoro-2026-07-28-brand-affinity.md — K198 → seo brief
@@ -72,6 +75,8 @@ updated: 2026-07-28
 - @entities/tools/metaresearcher.md — K124 adversarial deep-research eval steal
 - @sources/arxiv-metaresearcher-deep-research-2606.19893-2026-06-20.md — K124 SEO cross-wiki source
 - @projects/osint-workspace/Architecture/Architecture - wiki.md — `wiki/` module map (catalog, lint, librarian sync)
+- @sources/arxiv-2607.25620-epistemic-schizologia-llms.md — epistemic practice / human gates
+
 
 ## Raw Concept
 

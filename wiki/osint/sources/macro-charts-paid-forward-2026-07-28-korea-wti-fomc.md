@@ -4,6 +4,8 @@ type: source
 tags: [source, macro-charts, paid, guruwatcher, xsp, k198]
 keywords: [KOSPI, WTI, VIX, FOMC, AI flows, CXMT]
 related:
+  - entities/tools/guruwatcher.md
+  - sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md
   - concepts/macro-charts-regime-signals.md
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-capital-flows-2026-07-27-fomc-ai-flows.md
@@ -12,12 +14,14 @@ related:
 maturity: draft
 read_status: read
 created: 2026-07-28
-updated: 2026-07-28
-clusters: [k198-ingest]
+updated: 2026-07-29
+clusters: [k198-ingest, k206-ingest]
 ---
 
 ## Relations
 
+- @entities/tools/guruwatcher.md — K206
+- @sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md — K206
 - @concepts/guruwatcher-newsletter-claim-ledger.md — K200
 
 - @sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md — K200 how levels arm
