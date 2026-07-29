@@ -4,6 +4,9 @@ type: source
 tags: [source, genealogy, citizenship, atto, k201, cassazione, primary-law]
 keywords: [24045/2026, 454/2024, 17161/2023, 3564/2024, 20122/2025, 20129/2025, Circ 43347, Ord 147, Sent 63, Art 7, Art 12, bipolidia]
 related:
+  - concepts/italian-citizenship-latam-audience-systems.md
+  - sources/us-records-italian-citizenship-2026-07-29.md
+  - concepts/italian-citizenship-anglosphere-and-cone-systems.md
   - concepts/italian-citizenship-primary-law-lock.md
   - sources/italian-citizenship-primary-law-lock-2026-07-22.md
   - concepts/italian-citizenship-youtube-soft-flags.md
@@ -11,11 +14,16 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
 maturity: validated
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-29
 read_status: deep-read
 ---
 
 ## Relations
+
+- @concepts/italian-citizenship-latam-audience-systems.md — K203 LatAm audience (VE Monasterios pattern)
+
+- @concepts/italian-citizenship-anglosphere-and-cone-systems.md — K204 foreign-title matrices
+- @sources/us-records-italian-citizenship-2026-07-29.md — K204 US Circ.43347 operational traps
 
 - @concepts/italian-citizenship-primary-law-lock.md — soft-flag / two-clock posture
 - @sources/italian-citizenship-primary-law-lock-2026-07-22.md — earlier L74 / 63 / 13818 / L.11 lock

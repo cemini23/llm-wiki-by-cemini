@@ -4,6 +4,7 @@ type: source
 tags: [source, genealogy, citizenship, primary-law, atto, k187]
 keywords: [Legge 74/2025, art 3-bis, Sentenza 63/2026, Ordinanza 13818/2026, Sezioni Unite, Legge 11/2026, MAECI 2029]
 related:
+  - concepts/italian-citizenship-latam-audience-systems.md
   - concepts/italian-citizenship-primary-law-lock.md
   - sources/cassazione-minor-issue-pdf-pack-2026-07-28.md
   - concepts/italian-citizenship-youtube-soft-flags.md
@@ -20,6 +21,8 @@ read_status: deep-read
 ---
 
 ## Relations
+
+- @concepts/italian-citizenship-latam-audience-systems.md — K203 LatAm Clock A foreign titles
 
 - @concepts/italian-citizenship-primary-law-lock.md — operator lock table for Atto soft-flags
 - @sources/cassazione-minor-issue-pdf-pack-2026-07-28.md — full 24045 / overruled-chain PDFs on egress

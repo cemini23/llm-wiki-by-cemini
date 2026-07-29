@@ -4,6 +4,12 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - sources/us-records-italian-citizenship-2026-07-29.md
+  - sources/canada-apostille-citizenship-research-2026-07-29.md
+  - sources/australia-nationality-law-research-2026-07-29.md
+  - sources/chile-civil-records-reference-pack-2026-07-29.md
+  - sources/uruguay-italian-emigrant-reference-pack-2026-07-29.md
+  - sources/eval-github-repo-revenue-evaluation-2026-07-29.md
   - sources/eval-github-revenue-journalism-geo-2026-07-28.md
   - sources/eval-ui-repositories-revenue-plan-2026-07-28.md
   - sources/eval-github-revenue-browser-automation-2026-07-28.md
@@ -56,6 +62,9 @@ related:
   - sources/interno-circolari-law74-2026-07-22.md
   - sources/maeci-consular-js-law11-2026-07-22.md
   - concepts/italian-citizenship-primary-law-lock.md
+  - concepts/italian-citizenship-latam-audience-systems.md
+  - concepts/italian-citizenship-anglosphere-and-cone-systems.md
+  - entities/tools/different-ai-openwork.md
   - sources/eval-genealogy-github-revenue-analysis-2026-07-22.md
   - sources/eval-genealogy-repository-revenue-evaluation-2026-07-22.md
   - sources/eval-genealogy-tools-revenue-analysis-2026-07-22.md
@@ -85,10 +94,17 @@ related:
   - concepts/document-processing-pipeline-scale-patterns.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-28
+updated: 2026-07-29
 ---
 
 ## Relations
+
+- @sources/us-records-italian-citizenship-2026-07-29.md — K204 US admin matrix
+- @sources/canada-apostille-citizenship-research-2026-07-29.md — K204 CA
+- @sources/australia-nationality-law-research-2026-07-29.md — K204 AU
+- @sources/chile-civil-records-reference-pack-2026-07-29.md — K204 CL
+- @sources/uruguay-italian-emigrant-reference-pack-2026-07-29.md — K204 UY
+- @sources/eval-github-repo-revenue-evaluation-2026-07-29.md — K204 OpenWork Extract
 
 - @entities/tools/chrome-devtools-mcp.md — K202 backlink
 - @entities/tools/daisyui.md — K202 backlink
@@ -153,6 +169,9 @@ updated: 2026-07-28
 - @concepts/italian-citizenship-youtube-soft-flags.md — K186 appointment evidence + court soft-flags
 - @sources/youtube-italian-citizenship-channels-2026-07-22.md — K186 ICA/IDCA deep watch
 - @concepts/italian-citizenship-primary-law-lock.md — K187 statute/court ship posture
+- @concepts/italian-citizenship-latam-audience-systems.md — AR/BR/VE/DO GTM + registry systems
+- @concepts/italian-citizenship-anglosphere-and-cone-systems.md — US/CA/AU/CL/UY admin matrices
+- @entities/tools/different-ai-openwork.md — K204 Extract MCP desktop UI shell
 - @sources/italian-citizenship-primary-law-lock-2026-07-22.md — K187 primary citations
 - @sources/cassazione-minor-issue-pdf-pack-2026-07-28.md — 24045 / overruled-chain PDFs on egress
 - @sources/interno-circolari-law74-2026-07-22.md — K188 Interno circulars

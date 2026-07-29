@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **988 canonical stubs** (K201 PDF pack + K201 + K200 + …)
+Total: **989 canonical stubs** (K203 LatAm + K201 PDF pack + …)
 
 ### k201-ingest (2)
 
@@ -199,6 +199,18 @@ Total: **988 canonical stubs** (K201 PDF pack + K201 + K200 + …)
 - [Italian citizenship primary-law lock (source)](sources/italian-citizenship-primary-law-lock-2026-07-22.md) — GU 74/2025 · Cost. 63 · Cass. 13818 · L. 11/2026 (2029 MAECI). — `primary-law` [+k187]
 - [Italian citizenship primary-law lock (concept)](concepts/italian-citizenship-primary-law-lock.md) — soft-flag ship posture vs still-open watch list. — concept [+k187]
 - [Cassazione Minor Issue PDF pack](sources/cassazione-minor-issue-pdf-pack-2026-07-28.md) — egress PDFs: 24045 · 454 IT+EN · 3564 · 17161 · 20122/20129 · 43347 · Cost. 63/147 · MAE 9/2001. — `primary-law` [+k201]
+- [Italian citizenship LatAm audience systems](concepts/italian-citizenship-latam-audience-systems.md) — AR/BR/VE/DO registry + GTM sequencing for Atto locale packs. — concept [+k203]
+
+### k204-ingest (8)
+
+- [US Records for Italian Citizenship](sources/us-records-italian-citizenship-2026-07-29.md) — 50-state vital + apostille + USCIS matrices. — `docx` [+k204]
+- [Canada Apostille and Citizenship Research](sources/canada-apostille-citizenship-research-2026-07-29.md) — GAC vs provincial Hague split (2024-01-11). — `docx` [+k204]
+- [Australia Nationality Law Research](sources/australia-nationality-law-research-2026-07-29.md) — 1986 *jus soli* cutoff + DFAT-only apostille. — `docx` [+k204]
+- [Chile Civil Records Reference Pack](sources/chile-civil-records-reference-pack-2026-07-29.md) — SRCeI copia íntegra · RUN gate · e-Apostille. — `docx` [+k204]
+- [Uruguay Italian Emigrant Reference Pack](sources/uruguay-italian-emigrant-reference-pack-2026-07-29.md) — ciudadanía vs nacionalidad · Corte Electoral. — `docx` [+k204]
+- [GitHub Repo Revenue Evaluation (OpenWork + BR APIs)](sources/eval-github-repo-revenue-evaluation-2026-07-29.md) — OpenWork Extract; BR civic APIs Pass/Context. — `docx` [+k204]
+- [Italian citizenship anglosphere + cone systems](concepts/italian-citizenship-anglosphere-and-cone-systems.md) — US/CA/AU/CL/UY DOC_* hub. — concept [+k204]
+- [different-ai/OpenWork](entities/tools/different-ai-openwork.md) — MCP desktop UI Extract for Atto. — tool [+k204]
 
 ### k186-ingest (2)
 

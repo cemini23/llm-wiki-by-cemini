@@ -1,7 +1,37 @@
 # Wiki Log
 
-updated: 2026-07-28
+updated: 2026-07-29
 ---
+
+## [2026-07-29] ops | K204 Phase-0 OpenWork — CONDITIONAL-GO Extract
+
+- Shallow clone `different-ai/openwork` (`dev`) → `.local/adopts/openwork` (~148M); script `scripts/adopt_k204_phase0.sh`
+- License: MIT outside `/ee`; **FSL-1.1-MIT** under `ee/` (Competing Use) — patterns only, no product wire
+- `packages/openwork-ui-mcp` MIT + `node --check` OK; BR civic APIs from eval **not** cloned
+- Atto visa `docs/k204-openwork-visa.md` + brief `2026-07-29_k204-openwork-phase0.md`; entity maturity → validated
+
+## [2026-07-29] ingest | K204 — US/CA/AU/CL/UY country packs + GitHub eval (OpenWork)
+
+- 5 citizenship admin matrices → sources + concept `@concepts/italian-citizenship-anglosphere-and-cone-systems.md`
+- Full extracts under `.local/research/atto-latam-audience-systems/{USA,CANADA,AUSTRALIA,CHILE,URUGUAY}.md`
+- GitHub eval (sha256 `3b855bc1…`): **Extract** OpenWork only; BR civic APIs (quorum / querido-diario / brasil.io / pix / open-erp) **do not** help cartório/JS — Context/Pass/UNAVAILABLE
+- Entity `@entities/tools/different-ai-openwork.md`; briefs → Atto ×2, CCC OpenWork, Cyber Context-only
+- Cass PDF inbox leftovers already on egress (K201 pack) — cleaned after confirm
+- Auth-regime enum note still in `AUTH-REGIMES.md` (Hague/EU/CIEC)
+
+## [2026-07-29] research | K203b — premium LatAm deep passes + Gemini DR prompt pack
+
+- Fable agents: BR / AR / VE / DO operator briefs under `.local/research/atto-latam-audience-systems/`
+- Opus scan: 10-country priority matrix + **14** Gemini Deep Research prompts (`GEMINI-DEEP-RESEARCH-PROMPTS.md`)
+- Headlines: SP e-Apostille reject; IT–AR 1974 Accord; SAREN Jun-2026 e-apostille; DO Libro de Extranjería; auth-regime enum (Hague/EU/CIEC)
+- Wiki concept bump `@concepts/italian-citizenship-latam-audience-systems.md`; Atto brief `k203b-latam-deep-pass-gemini-prompts.md`
+
+## [2026-07-29] research | K203 Atto — LatAm audience systems (AR · BR · VE · DO)
+
+- Concept `@concepts/italian-citizenship-latam-audience-systems.md`: diaspora/demand (ISTAT BR+AR >80% abroad JS), civil-registry + apostille cards, DO conditional *ius soli* trap
+- Extended Clock A foreign-title checklist with Dominican Republic; local pack `.local/research/atto-latam-audience-systems/`
+- Atto brief `2026-07-29_k203-latam-audience-systems.md` — research only; locale/code parked
+- Sequencing: BR → AR → VE → DO after US beachhead; law soft-flags reused
 
 ## [2026-07-28] ingest | Minor Issue PDF pack → egress (454 IT + 3564 filled)
 

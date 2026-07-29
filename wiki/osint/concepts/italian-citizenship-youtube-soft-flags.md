@@ -4,6 +4,8 @@ type: concept
 tags: [concept, genealogy, citizenship, youtube, atto, k186, draft]
 keywords: [Prenot@Mi evidence, GDPR Art 15, Cassazione 13818, Sezioni Unite, centralized Rome, soft-flag]
 related:
+  - sources/us-records-italian-citizenship-2026-07-29.md
+  - concepts/italian-citizenship-anglosphere-and-cone-systems.md
   - sources/youtube-italian-citizenship-channels-2026-07-22.md
   - sources/italian-citizenship-primary-law-lock-2026-07-22.md
   - sources/cassazione-minor-issue-pdf-pack-2026-07-28.md
@@ -11,6 +13,7 @@ related:
   - sources/maeci-consular-js-law11-2026-07-22.md
   - concepts/italian-citizenship-primary-law-lock.md
   - concepts/italian-citizenship-pathways-document-pipelines.md
+  - concepts/italian-citizenship-latam-audience-systems.md
   - concepts/atto-macos-gtm-gumroad.md
   - concepts/youratto-lean-conversion-page.md
   - concepts/atto-local-first-threat-model.md
@@ -24,6 +27,9 @@ updated: 2026-07-23
 ---
 
 ## Relations
+
+- @concepts/italian-citizenship-anglosphere-and-cone-systems.md — K204 DOC_* country packs
+- @sources/us-records-italian-citizenship-2026-07-29.md — K204 US soft-flag traps
 
 - @concepts/youratto-lean-conversion-page.md — K192 lean page soft-flag posture
 

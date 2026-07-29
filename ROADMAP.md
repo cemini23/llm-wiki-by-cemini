@@ -23,6 +23,11 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-29 — K204)
+
+- **K204 ingest (2026-07-29)** — 5 Atto country packs (US · CA · AU · CL · UY) + GitHub revenue eval (OpenWork Extract; BR civic APIs no-fit). Concept `italian-citizenship-anglosphere-and-cone-systems`. Briefs → Atto ×2; CCC OpenWork; Cyber Context. Cass PDF inbox dupes cleaned (already egress). **No prod scp.**
+- **K204 Phase-0 (2026-07-29)** — OpenWork **CONDITIONAL-GO Extract** (MIT outside `ee/`; FSL Competing Use under `ee/`). Clone `.local/adopts/openwork`. **No** Atto dependency pin / no Electron vendor. Auth enum + `apostille: bool` replace still parked.
+
 ## Current state (2026-07-28 — WC LP retired)
 
 - **WC LP safety cadence RETIRED** — World Cup over; world-cup-bot dropped. LaunchAgent unloaded; session ritual no longer prompts.

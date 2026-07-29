@@ -5,6 +5,7 @@ tags: [source, docx, genealogy, atto, gtm, gumroad, macos, k185]
 keywords: [Gumroad, lifetime license, MacFamilyTree, MacWhisper, notarization, Cloudflare Access, UPL, jure sanguinis DIY]
 clusters: [k185-ingest]
 related:
+  - concepts/italian-citizenship-latam-audience-systems.md
   - concepts/atto-macos-gtm-gumroad.md
   - concepts/atto-local-first-threat-model.md
   - concepts/gpuology-genealogy-agent-kit.md
@@ -14,10 +15,12 @@ related:
 maturity: draft
 read_status: read
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-29
 ---
 
 ## Relations
+
+- @concepts/italian-citizenship-latam-audience-systems.md — K203 LatAm beyond US DIY persona
 
 - @concepts/atto-macos-gtm-gumroad.md — synthesized Gumroad listing / pricing / FAQ
 - @concepts/atto-local-first-threat-model.md — local-first claims must match SECURITY controls

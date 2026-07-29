@@ -4,6 +4,11 @@ type: concept
 tags: [concept, genealogy, citizenship, jure-sanguinis, k183, atto, draft]
 keywords: [JS_ADMIN_CONSULATE, copia integrale, apostille, Tajani, Minor Issue, 1948, Prenot@Mi, concierge]
 related:
+  - sources/us-records-italian-citizenship-2026-07-29.md
+  - sources/canada-apostille-citizenship-research-2026-07-29.md
+  - sources/australia-nationality-law-research-2026-07-29.md
+  - sources/chile-civil-records-reference-pack-2026-07-29.md
+  - sources/uruguay-italian-emigrant-reference-pack-2026-07-29.md
   - sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md
   - sources/gemini-italian-citizenship-software-map-2026-07-22.md
   - sources/gemini-atto-macos-gtm-2026-07-22.md
@@ -12,6 +17,8 @@ related:
   - sources/interno-circolari-law74-2026-07-22.md
   - sources/maeci-consular-js-law11-2026-07-22.md
   - concepts/italian-citizenship-primary-law-lock.md
+  - concepts/italian-citizenship-latam-audience-systems.md
+  - concepts/italian-citizenship-anglosphere-and-cone-systems.md
   - concepts/gpuology-genealogy-agent-kit.md
   - concepts/atto-macos-gtm-gumroad.md
   - concepts/antenati-deep-link-grammar.md
@@ -25,10 +32,16 @@ related:
   - concepts/italian-citizenship-youtube-soft-flags.md
 maturity: validated
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-29
 ---
 
 ## Relations
+
+- @sources/us-records-italian-citizenship-2026-07-29.md — K204 US matrix
+- @sources/canada-apostille-citizenship-research-2026-07-29.md — K204 CA matrix
+- @sources/australia-nationality-law-research-2026-07-29.md — K204 AU matrix
+- @sources/chile-civil-records-reference-pack-2026-07-29.md — K204 CL matrix
+- @sources/uruguay-italian-emigrant-reference-pack-2026-07-29.md — K204 UY matrix
 
 - @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — primary DR (K183)
 - @sources/gemini-italian-citizenship-software-map-2026-07-22.md — K185 decision tree + status vocab + proposed ID renames
@@ -36,6 +49,8 @@ updated: 2026-07-22
 - @sources/interno-circolari-law74-2026-07-22.md — K188 Interno operational circulars
 - @sources/maeci-consular-js-law11-2026-07-22.md — K189 Prenot@Mi a-bis + L. 11 central venue
 - @concepts/italian-citizenship-primary-law-lock.md — soft-flag ship posture
+- @concepts/italian-citizenship-latam-audience-systems.md — AR/BR/VE/DO audience + registry systems (future locale)
+- @concepts/italian-citizenship-anglosphere-and-cone-systems.md — US/CA/AU/CL/UY DOC_* issuer matrices (K204)
 - @sources/youtube-italian-citizenship-channels-2026-07-22.md — K186 ICA/IDCA deep watch
 - @concepts/italian-citizenship-youtube-soft-flags.md — appointment evidence + court soft-flags
 - @concepts/gpuology-genealogy-agent-kit.md — product: vault + checklist + optional concierge (not auto-file)

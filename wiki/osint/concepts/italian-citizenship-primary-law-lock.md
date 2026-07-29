@@ -4,12 +4,17 @@ type: concept
 tags: [concept, genealogy, citizenship, atto, k187, k200, k201, validated]
 keywords: [primary law, soft-flag, 13818, 63/2026, 147/2026, 24045/2026, Law 74, MAECI 2029, Minor Issue, Sezioni Unite, Circ 43347, CJEU]
 related:
+  - sources/us-records-italian-citizenship-2026-07-29.md
+  - sources/canada-apostille-citizenship-research-2026-07-29.md
+  - sources/australia-nationality-law-research-2026-07-29.md
+  - concepts/italian-citizenship-anglosphere-and-cone-systems.md
   - sources/italian-citizenship-primary-law-lock-2026-07-22.md
   - sources/cassazione-minor-issue-pdf-pack-2026-07-28.md
   - sources/interno-circolari-law74-2026-07-22.md
   - sources/maeci-consular-js-law11-2026-07-22.md
   - concepts/italian-citizenship-youtube-soft-flags.md
   - concepts/italian-citizenship-pathways-document-pipelines.md
+  - concepts/italian-citizenship-latam-audience-systems.md
   - concepts/gpuology-genealogy-agent-kit.md
   - concepts/atto-macos-gtm-gumroad.md
   - concepts/youratto-lean-conversion-page.md
@@ -18,10 +23,15 @@ related:
   - sources/gemini-atto-marketing-compliance-2026-07-23.md
 maturity: validated
 created: 2026-07-22
-updated: 2026-07-28
+updated: 2026-07-29
 ---
 
 ## Relations
+
+- @concepts/italian-citizenship-anglosphere-and-cone-systems.md — K204 country admin matrices
+- @sources/us-records-italian-citizenship-2026-07-29.md — K204 US Circ.43347 / N-560 traps
+- @sources/canada-apostille-citizenship-research-2026-07-29.md — K204 CA pack
+- @sources/australia-nationality-law-research-2026-07-29.md — K204 AU 1986 cutoff
 
 - @concepts/youratto-lean-conversion-page.md — K192 lean page never-claims
 - @sources/gemini-atto-marketing-compliance-2026-07-23.md — K192 UPL/FTC claim fence
@@ -31,6 +41,7 @@ updated: 2026-07-28
 - @sources/maeci-consular-js-law11-2026-07-22.md — K189 Prenot@Mi a-bis + L. 11/2026 GU venue
 - @concepts/italian-citizenship-youtube-soft-flags.md — SF_* / DOC_* catalog (updated by this lock)
 - @concepts/italian-citizenship-pathways-document-pipelines.md — pathway + venue copy
+- @concepts/italian-citizenship-latam-audience-systems.md — BR/AR volume + VE/DO systems for future locale packs
 - @concepts/gpuology-genealogy-agent-kit.md — product hub
 - @concepts/atto-macos-gtm-gumroad.md — listing never claims court outcomes
 - @sources/youtube-italian-citizenship-channels-2026-07-22.md — secondary narrative that needed lock

@@ -4,6 +4,8 @@ type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
 keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
+  - entities/tools/different-ai-openwork.md
+  - sources/eval-github-repo-revenue-evaluation-2026-07-29.md
   - concepts/ip-sale-readiness.md
   - sources/more-links-5-2-arch-eval.md
   - sources/4-3-link-re-2.md
@@ -46,12 +48,14 @@ related:
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-07-28
+updated: 2026-07-29
 ---
 
 ## Relations
 
 - @concepts/polymarket-bot-architecture.md — K198 backlink
+- @entities/tools/different-ai-openwork.md — K204 Extract; MIT core vs FSL-1.1-MIT enterprise boundary
+- @sources/eval-github-repo-revenue-evaluation-2026-07-29.md — K204 AGPL/GPL isolate + OpenWork FSL friction
 
 - @concepts/ip-sale-readiness.md — license posture is a prerequisite for any IP-sale or partial-license transaction
 - @sources/more-links-5-2-arch-eval.md — K27 surfaced AGPL-3.0 Docker-defeat pattern + GPL-3.0 LLM-agent derivative-work risk + missing-license default-copyright pattern (three license-compliance failure modes)

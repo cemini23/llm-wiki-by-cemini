@@ -4,6 +4,7 @@ type: concept
 tags: [concept, atto, youratto, landing, k192, draft]
 keywords: [299 DIY kit, lean page, this-is-isnt, GIF tiles, deferred marketing site]
 related:
+  - concepts/italian-citizenship-latam-audience-systems.md
   - entities/tools/instatic.md
   - sources/gemini-atto-landing-conversion-2026-07-23.md
   - sources/gemini-atto-landing-demo-production-2026-07-23.md
@@ -23,6 +24,8 @@ updated: 2026-07-25
 ---
 
 ## Relations
+
+- @concepts/italian-citizenship-latam-audience-systems.md — K203 LatAm locale sequencing
 
 - @entities/tools/instatic.md — K195 Watch CMS
 

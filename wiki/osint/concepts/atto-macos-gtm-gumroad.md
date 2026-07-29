@@ -4,6 +4,7 @@ type: concept
 tags: [concept, genealogy, atto, gtm, gumroad, macos, k185, draft]
 keywords: [lifetime license, $49, $89, DIY jure sanguinis, notarization, Cloudflare Access, UPL]
 related:
+  - concepts/italian-citizenship-latam-audience-systems.md
   - entities/tools/instatic.md
   - sources/newsletter-rss-sparktoro-2026-07-24-brand-mentions.md
   - sources/gemini-atto-macos-gtm-2026-07-22.md
@@ -33,6 +34,8 @@ updated: 2026-07-25
 ---
 
 ## Relations
+
+- @concepts/italian-citizenship-latam-audience-systems.md — K203 LatAm GTM audiences
 
 - @entities/tools/instatic.md — K195 Watch
 
