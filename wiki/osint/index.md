@@ -12,7 +12,11 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **1014 canonical stubs** (K208 Gemini DR wave3 + …)
+Total: **1015 canonical stubs** (LNG desk + K208 Gemini DR wave3 + …)
+
+### lng-desk-research (2026-07-29)
+
+- [LNG / Cheniere UW earnings preview desk pull](sources/lng-cheniere-uw-earnings-preview-2026-07-29.md) — UW flow/dark pool + IR into Aug 6 Q2. — `desk` [+lng]
 
 ### k208-ingest (3)
 
