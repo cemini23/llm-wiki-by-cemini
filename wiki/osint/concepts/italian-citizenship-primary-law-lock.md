@@ -5,6 +5,7 @@ tags: [concept, genealogy, citizenship, atto, k187, k200, k201, validated]
 keywords: [primary law, soft-flag, 13818, 63/2026, 147/2026, 24045/2026, Law 74, MAECI 2029, Minor Issue, Sezioni Unite, Circ 43347, CJEU]
 related:
   - sources/italian-citizenship-primary-law-lock-2026-07-22.md
+  - sources/cassazione-minor-issue-pdf-pack-2026-07-28.md
   - sources/interno-circolari-law74-2026-07-22.md
   - sources/maeci-consular-js-law11-2026-07-22.md
   - concepts/italian-citizenship-youtube-soft-flags.md
@@ -25,6 +26,7 @@ updated: 2026-07-28
 - @concepts/youratto-lean-conversion-page.md — K192 lean page never-claims
 - @sources/gemini-atto-marketing-compliance-2026-07-23.md — K192 UPL/FTC claim fence
 - @sources/italian-citizenship-primary-law-lock-2026-07-22.md — primary citations
+- @sources/cassazione-minor-issue-pdf-pack-2026-07-28.md — full PDFs on egress (24045 · 454 · 3564 · 17161 · 43347 · 63 · 147 · interlocutory)
 - @sources/interno-circolari-law74-2026-07-22.md — K188 Interno/DAIT operational circulars
 - @sources/maeci-consular-js-law11-2026-07-22.md — K189 Prenot@Mi a-bis + L. 11/2026 GU venue
 - @concepts/italian-citizenship-youtube-soft-flags.md — SF_* / DOC_* catalog (updated by this lock)
@@ -80,6 +82,8 @@ r/juresanguinis megathread (26–27 Jul 2026) + ICA / ItalyGet / IDCA / Bersani 
 ### K201 research deepen (2026-07-28 evening)
 
 Operational pack (not a doctrine re-open): official Circ. 43347 text; Ord. 147 exact Art. 267 quesito; US/BR/AR/VE/CA/AU/FR foreign-*ius-soli* title checklists; overruled Sez. I chain (**20122/20129** interlocutory PDFs) + MAE Circ. 9/2001; edge-case triage. Paths under `.local/research/italian-cassazione-24045-2026/` (`README.md`, `CIRCOLARE-43347-OFFICIAL-NOTES.md`, `ORD-147-CJEU-QUESITO.md`, `FOREIGN-IUS-SOLI-TITLE-CHECKLISTS.md`, `OVERRULED-CHAIN.md`, `EDGE-CASES.md`). Atto brief: `atto/briefs/2026-07-28_k201-post-24045-research-pack.md`.
+
+**PDF cold store (2026-07-28 night):** full PDFs for **24045**, **43347**, **63**, **147**, **17161**, Italian **454** (scan) + EN translation, **3564**, **20122/20129**, MAE **9/2001** archived to `cemini-egress-fi:/opt/cemini-bulk/research/osint/` — catalog `@sources/cassazione-minor-issue-pdf-pack-2026-07-28.md`.
 
 
 ## Snippets

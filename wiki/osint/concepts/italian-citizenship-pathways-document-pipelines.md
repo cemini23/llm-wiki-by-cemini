@@ -8,6 +8,7 @@ related:
   - sources/gemini-italian-citizenship-software-map-2026-07-22.md
   - sources/gemini-atto-macos-gtm-2026-07-22.md
   - sources/italian-citizenship-primary-law-lock-2026-07-22.md
+  - sources/cassazione-minor-issue-pdf-pack-2026-07-28.md
   - sources/interno-circolari-law74-2026-07-22.md
   - sources/maeci-consular-js-law11-2026-07-22.md
   - concepts/italian-citizenship-primary-law-lock.md

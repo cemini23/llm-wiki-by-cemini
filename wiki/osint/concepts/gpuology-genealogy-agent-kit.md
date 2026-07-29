@@ -52,6 +52,7 @@ related:
   - sources/youtube-italian-citizenship-channels-2026-07-22.md
   - concepts/italian-citizenship-youtube-soft-flags.md
   - sources/italian-citizenship-primary-law-lock-2026-07-22.md
+  - sources/cassazione-minor-issue-pdf-pack-2026-07-28.md
   - sources/interno-circolari-law74-2026-07-22.md
   - sources/maeci-consular-js-law11-2026-07-22.md
   - concepts/italian-citizenship-primary-law-lock.md
@@ -153,6 +154,7 @@ updated: 2026-07-28
 - @sources/youtube-italian-citizenship-channels-2026-07-22.md — K186 ICA/IDCA deep watch
 - @concepts/italian-citizenship-primary-law-lock.md — K187 statute/court ship posture
 - @sources/italian-citizenship-primary-law-lock-2026-07-22.md — K187 primary citations
+- @sources/cassazione-minor-issue-pdf-pack-2026-07-28.md — 24045 / overruled-chain PDFs on egress
 - @sources/interno-circolari-law74-2026-07-22.md — K188 Interno circulars
 - @sources/maeci-consular-js-law11-2026-07-22.md — K189 MAECI/consular + L. 11
 - @concepts/atto-macos-gtm-gumroad.md — K185 Gumroad personas / pricing / listing

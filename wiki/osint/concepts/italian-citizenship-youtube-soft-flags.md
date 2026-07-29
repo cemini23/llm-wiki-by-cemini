@@ -6,6 +6,7 @@ keywords: [Prenot@Mi evidence, GDPR Art 15, Cassazione 13818, Sezioni Unite, cen
 related:
   - sources/youtube-italian-citizenship-channels-2026-07-22.md
   - sources/italian-citizenship-primary-law-lock-2026-07-22.md
+  - sources/cassazione-minor-issue-pdf-pack-2026-07-28.md
   - sources/interno-circolari-law74-2026-07-22.md
   - sources/maeci-consular-js-law11-2026-07-22.md
   - concepts/italian-citizenship-primary-law-lock.md

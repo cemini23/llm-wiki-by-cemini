@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **987 canonical stubs** (K201 + K200 + …)
+Total: **988 canonical stubs** (K201 PDF pack + K201 + K200 + …)
 
 ### k201-ingest (2)
 
@@ -198,6 +198,7 @@ Total: **987 canonical stubs** (K201 + K200 + …)
 
 - [Italian citizenship primary-law lock (source)](sources/italian-citizenship-primary-law-lock-2026-07-22.md) — GU 74/2025 · Cost. 63 · Cass. 13818 · L. 11/2026 (2029 MAECI). — `primary-law` [+k187]
 - [Italian citizenship primary-law lock (concept)](concepts/italian-citizenship-primary-law-lock.md) — soft-flag ship posture vs still-open watch list. — concept [+k187]
+- [Cassazione Minor Issue PDF pack](sources/cassazione-minor-issue-pdf-pack-2026-07-28.md) — egress PDFs: 24045 · 454 IT+EN · 3564 · 17161 · 20122/20129 · 43347 · Cost. 63/147 · MAE 9/2001. — `primary-law` [+k201]
 
 ### k186-ingest (2)
 

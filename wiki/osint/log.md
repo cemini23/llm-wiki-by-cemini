@@ -1,7 +1,14 @@
 # Wiki Log
 
-updated: 2026-07-27
+updated: 2026-07-28
 ---
+
+## [2026-07-28] ingest | Minor Issue PDF pack → egress (454 IT + 3564 filled)
+
+- Acquired Italian full PDFs: Cass. **454/2024** (official scan, DIC) + **3564/2024** (DIC text PDF); already had 17161 + EN 454
+- Archived **11** PDFs to `cemini-egress-fi:/opt/cemini-bulk/research/osint/` (24045 · 43347 · Cost. 63 · Ord. 147 · 17161 · 454 IT+EN · 3564 · 20122 · 20129 · MAE 9/2001)
+- Wiki source: `@sources/cassazione-minor-issue-pdf-pack-2026-07-28.md`; lock concept + index bump
+- Note: IT 454 is image-scan (Vision OCR in laptop pack); use EN PDF for searchable text
 
 ## [2026-07-28] research | K201 Atto — Circ. 43347 official + Ord. 147 quesito + foreign-title packs
 
