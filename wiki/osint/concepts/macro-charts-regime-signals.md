@@ -4,6 +4,7 @@ type: concept
 tags: [concept, macro, regime, newsletter, k90, k144]
 keywords: [macro-charts, risk-on, great-reversal, 2026, regime-shift]
 related:
+  - sources/substack-glitchspx-2026-07-29-handed-wheel-to-falcon.md
   - sources/macro-charts-paid-forward-2026-07-17-ai-selloff-taiex-tsm.md
   - sources/macro-charts-paid-forward-2026-07-16-korea-sox-dxy-metals.md
   - sources/macro-charts-paid-forward-2026-07-15-sox-cpi-oil-metals.md
@@ -56,6 +57,8 @@ updated: 2026-07-29
 ---
 
 ## Relations
+
+- @sources/substack-glitchspx-2026-07-29-handed-wheel-to-falcon.md — contrast: process essay ≠ price watch
 
 - @entities/tools/guruwatcher.md — K200
 

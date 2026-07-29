@@ -3,6 +3,12 @@
 updated: 2026-07-29
 ---
 
+## [2026-07-29] ingest | K207 — Glitch Falcon note + Codex CLI adopt
+
+- Source `@sources/substack-glitchspx-2026-07-29-handed-wheel-to-falcon.md` (Substack Notes) → xsp brief scp
+- Falcon win-rate/PF left **unverified**; steal discipline framing only
+- Codex CLI reinstall `@openai/codex@0.145.0`; ChatGPT auth OK; smoke PASS; `scripts/adopt_codex_cli.sh` synced to CCC
+
 ## [2026-07-29] ingest | K206 — Gemini DR wave2 + arXiv SHarD/IRA/DDB/RIDGE + Macro/PM RSS
 
 - **Atto (6 docx):** CH · FR · PE · BE · MX · AR deepening → sources + auth-regime concept; AR **DNU 366 Migraciones path RETRACTED**

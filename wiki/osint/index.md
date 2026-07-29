@@ -12,7 +12,11 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **1010 canonical stubs** (K206 wave2 + arXiv/RSS + …)
+Total: **1011 canonical stubs** (K206 wave2 + arXiv/RSS + …)
+
+### k207-ingest (1)
+
+- [Glitch SPX Falcon handoff](sources/substack-glitchspx-2026-07-29-handed-wheel-to-falcon.md) — agentic discipline / xsp culture. — `substack` [+k207]
 
 ### k206-ingest (21)
 

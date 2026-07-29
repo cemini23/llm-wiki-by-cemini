@@ -4,6 +4,7 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/substack-glitchspx-2026-07-29-handed-wheel-to-falcon.md
   - sources/eval-revenue-opportunity-analysis-2026-07-25.md
   - sources/substack-rss-capital-flows-2026-07-24-crude-risk.md
   - entities/tools/aisuite.md
@@ -85,6 +86,8 @@ updated: 2026-07-29
 ---
 
 ## Relations
+
+- @sources/substack-glitchspx-2026-07-29-handed-wheel-to-falcon.md — Glitch Falcon agentic discipline (K207)
 
 - @sources/substack-rss-klement-2026-07-27-fast-money-warping-market-logic.md — K198 graph fix
 

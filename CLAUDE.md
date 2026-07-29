@@ -431,9 +431,9 @@ Claude Code plugin **fable-advisor** is installed (user scope). In Claude Code s
 - Start architect sessions with `/model fable` (or `/model opus` if Fable unavailable on plan).
 - Delegate implementation via the orchestration skill — do not type bulk code in the architect session.
 - Verify evidence before accepting implementer output; cross-vendor review when stakes are high.
-- **Grok lane** needs [xAI Grok CLI](https://x.ai/cli) (`grok` 0.2.93 on PATH); **Codex lane** uses local `codex` CLI.
+- **Grok lane** needs [xAI Grok CLI](https://x.ai/cli) (`grok` on PATH); **Codex lane** uses local `codex` CLI (`@openai/codex` ≥0.145; ChatGPT login).
 
-Canon: `@entities/tools/fable-advisor.md` · install: `bash scripts/adopt_k159_local.sh`
+Canon: `@entities/tools/fable-advisor.md` · install: `bash scripts/adopt_k159_local.sh` · Codex repair/sync: `bash scripts/adopt_codex_cli.sh --smoke`
 
 ## Related — read-only from this workspace
 
