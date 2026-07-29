@@ -5,6 +5,7 @@ tags: [source, genealogy, citizenship, atto, k201, cassazione, primary-law]
 keywords: [24045/2026, 454/2024, 17161/2023, 3564/2024, 20122/2025, 20129/2025, Circ 43347, Ord 147, Sent 63, Art 7, Art 12, bipolidia]
 related:
   - concepts/italian-citizenship-latam-audience-systems.md
+  - sources/venezuela-italian-citizenship-deepening-2026-07-29.md
   - sources/us-records-italian-citizenship-2026-07-29.md
   - concepts/italian-citizenship-anglosphere-and-cone-systems.md
   - concepts/italian-citizenship-primary-law-lock.md
@@ -21,6 +22,7 @@ read_status: deep-read
 ## Relations
 
 - @concepts/italian-citizenship-latam-audience-systems.md — K203 LatAm audience (VE Monasterios pattern)
+- @sources/venezuela-italian-citizenship-deepening-2026-07-29.md — DR-13 SAIME / SAREN deepening
 
 - @concepts/italian-citizenship-anglosphere-and-cone-systems.md — K204 foreign-title matrices
 - @sources/us-records-italian-citizenship-2026-07-29.md — K204 US Circ.43347 operational traps

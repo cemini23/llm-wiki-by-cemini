@@ -8,6 +8,7 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/gpuology-genealogy-agent-kit.md
   - concepts/italian-citizenship-latam-audience-systems.md
+  - sources/brazil-jure-sanguinis-deepening-2026-07-29.md
   - concepts/cemini-license-posture.md
 maturity: draft
 created: 2026-07-29
@@ -21,6 +22,7 @@ read_status: deep-read
 - @concepts/wiki-tooling-evaluation.md — eval ritual
 - @concepts/gpuology-genealogy-agent-kit.md — Priority #1 product
 - @concepts/italian-citizenship-latam-audience-systems.md — BR audience ≠ BR civic APIs
+- @sources/brazil-jure-sanguinis-deepening-2026-07-29.md — DR-12 cartório path (not civic APIs)
 - @concepts/cemini-license-posture.md — MIT vs FSL / AGPL isolation
 
 ## Raw Concept

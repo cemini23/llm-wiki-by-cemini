@@ -99,6 +99,9 @@ related:
   - sources/peru-civil-record-retrieval-2026-07-29.md
   - sources/mexico-civil-records-2026-07-29.md
   - sources/argentina-consular-rules-deepening-2026-07-29.md
+  - sources/brazil-jure-sanguinis-deepening-2026-07-29.md
+  - sources/venezuela-italian-citizenship-deepening-2026-07-29.md
+  - sources/dominican-nationality-document-deepening-2026-07-29.md
 maturity: draft
 created: 2026-07-20
 updated: 2026-07-29
@@ -212,6 +215,9 @@ updated: 2026-07-29
 - @sources/peru-civil-record-retrieval-2026-07-29.md — PE pack
 - @sources/mexico-civil-records-2026-07-29.md — MX pack
 - @sources/argentina-consular-rules-deepening-2026-07-29.md — AR deepening
+- @sources/brazil-jure-sanguinis-deepening-2026-07-29.md — BR CRC ≠ inteiro teor
+- @sources/venezuela-italian-citizenship-deepening-2026-07-29.md — VE SAIME + payment firewall
+- @sources/dominican-nationality-document-deepening-2026-07-29.md — DO Group B Transcripción
 
 
 ## Raw Concept

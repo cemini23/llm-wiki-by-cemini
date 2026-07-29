@@ -27,6 +27,9 @@ related:
   - sources/peru-civil-record-retrieval-2026-07-29.md
   - sources/mexico-civil-records-2026-07-29.md
   - sources/argentina-consular-rules-deepening-2026-07-29.md
+  - sources/brazil-jure-sanguinis-deepening-2026-07-29.md
+  - sources/venezuela-italian-citizenship-deepening-2026-07-29.md
+  - sources/dominican-nationality-document-deepening-2026-07-29.md
   - concepts/foreign-civil-doc-authentication-regimes.md
 maturity: validated
 created: 2026-07-22
@@ -55,6 +58,9 @@ updated: 2026-07-29
 - @sources/gemini-italian-citizenship-document-pipelines-2026-07-22.md — K183 DR superseded-in-part by this lock
 - @concepts/foreign-civil-doc-authentication-regimes.md — auth enum
 - @sources/argentina-consular-rules-deepening-2026-07-29.md — DNU 366 retract
+- @sources/brazil-jure-sanguinis-deepening-2026-07-29.md — Ord.147 / L.11 seat uptake
+- @sources/venezuela-italian-citizenship-deepening-2026-07-29.md — L.74 beneficio calendar VE
+- @sources/dominican-nationality-document-deepening-2026-07-29.md — L.74 cutoff DO
 
 
 ## Raw Concept

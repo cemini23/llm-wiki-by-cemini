@@ -37,6 +37,9 @@ related:
   - sources/peru-civil-record-retrieval-2026-07-29.md
   - sources/mexico-civil-records-2026-07-29.md
   - sources/argentina-consular-rules-deepening-2026-07-29.md
+  - sources/brazil-jure-sanguinis-deepening-2026-07-29.md
+  - sources/venezuela-italian-citizenship-deepening-2026-07-29.md
+  - sources/dominican-nationality-document-deepening-2026-07-29.md
 maturity: validated
 created: 2026-07-22
 updated: 2026-07-29
@@ -77,6 +80,9 @@ updated: 2026-07-29
 - @sources/peru-civil-record-retrieval-2026-07-29.md — PE RENIEC proxy
 - @sources/mexico-civil-records-2026-07-29.md — MX SIDEA reject
 - @sources/argentina-consular-rules-deepening-2026-07-29.md — AR DNU retract
+- @sources/brazil-jure-sanguinis-deepening-2026-07-29.md — BR inteiro teor / Ord.147
+- @sources/venezuela-italian-citizenship-deepening-2026-07-29.md — VE SAIME datos
+- @sources/dominican-nationality-document-deepening-2026-07-29.md — DO 169-14 Group B
 
 
 ## Raw Concept

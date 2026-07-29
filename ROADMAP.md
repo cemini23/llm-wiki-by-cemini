@@ -30,8 +30,9 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 
 ## Current state (2026-07-29 — K206)
 
+- **K208 ingest (2026-07-29)** — Gemini DR wave3 deepening: BR · VE · DO. Sources + latam hub update. **Corrections:** CRC ≠ inteiro teor; SAIME datos issuer; **169-14 Group B = Libro de Transcripción**. Gemini DR-01…14 complete. Brief → Atto. **No prod scp.** Auth enum still parked.
 - **K206 ingest (2026-07-29)** — Gemini DR wave2 (CH · FR · PE · BE · MX · AR deepening) + 5 arXiv (RIDGE/SHarD/IRA/DDB/epistemia) + Macro Charts Jul-28/29 + Latent Space/PE/EH/Klement/Moontower/Wu RSS. Concept `foreign-civil-doc-authentication-regimes`; AR **DNU 366 Migraciones RETRACTED**. Phase-0: `agent-security-lab` MIT Extract (~944KB). Briefs → Atto; GuruWatcher; CCC; cybersec; poker no-path; **pm-kalshi → cemini-prod**. Auth enum still parked for product code.
-- **K205 wave2 packs** were local-only until K206 GO; BR/VE/DO Gemini last wave still operator-queued (~14:40 ET refill).
+- **K205 local packs** — wave2+3 country extracts under `.local/research/atto-latam-audience-systems/`; i18n EN/ES/pt-BR research brief separate.
 
 ## Current state (2026-07-29 — K204)
 

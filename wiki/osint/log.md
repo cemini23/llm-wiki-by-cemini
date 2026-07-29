@@ -3,6 +3,16 @@
 updated: 2026-07-29
 ---
 
+## [2026-07-29] ingest | K208 — Gemini DR wave3 (BR / VE / DO deepening)
+
+- Sources: `brazil-jure-sanguinis-deepening-2026-07-29` · `venezuela-italian-citizenship-deepening-2026-07-29` · `dominican-nationality-document-deepening-2026-07-29`
+- Hub: `@concepts/italian-citizenship-latam-audience-systems.md` (CRC ≠ inteiro teor; SAIME datos; **169-14 Group B = Transcripción** retract)
+- Backlinks: auth-regime · pathways · primary-law-lock · gpuology
+- Local packs: `.local/research/atto-latam-audience-systems/{BRAZIL,VENEZUELA,DOMINICAN-REPUBLIC}.md` DR-12…14
+- **Gemini DR-01…14 complete** at local+wiki source level
+- Brief: `Atto/briefs/2026-07-29_k205-gemini-dr-wave3.md` (refresh K208)
+- Egress: 3 docx → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`
+
 ## [2026-07-29] ingest | K207 — Glitch Falcon note + Codex CLI adopt
 
 - Source `@sources/substack-glitchspx-2026-07-29-handed-wheel-to-falcon.md` (Substack Notes) → xsp brief scp

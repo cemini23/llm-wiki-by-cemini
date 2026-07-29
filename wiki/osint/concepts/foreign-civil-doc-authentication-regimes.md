@@ -10,6 +10,9 @@ related:
   - sources/peru-civil-record-retrieval-2026-07-29.md
   - sources/mexico-civil-records-2026-07-29.md
   - sources/argentina-consular-rules-deepening-2026-07-29.md
+  - sources/brazil-jure-sanguinis-deepening-2026-07-29.md
+  - sources/venezuela-italian-citizenship-deepening-2026-07-29.md
+  - sources/dominican-nationality-document-deepening-2026-07-29.md
   - concepts/italian-citizenship-anglosphere-and-cone-systems.md
   - concepts/italian-citizenship-latam-audience-systems.md
   - concepts/italian-citizenship-pathways-document-pipelines.md
@@ -28,6 +31,9 @@ updated: 2026-07-29
 - @sources/peru-civil-record-retrieval-2026-07-29.md — Hague after RENIEC PDF
 - @sources/mexico-civil-records-2026-07-29.md — state Hague; e-Apostille ≠ civil
 - @sources/argentina-consular-rules-deepening-2026-07-29.md — seat×province Hague overlays
+- @sources/brazil-jure-sanguinis-deepening-2026-07-29.md — Hague + SP/BH digital-reject overlay
+- @sources/venezuela-italian-citizenship-deepening-2026-07-29.md — SAREN e-apostille + comuni friction
+- @sources/dominican-nationality-document-deepening-2026-07-29.md — MIREX + PGR-before-translation
 - @concepts/italian-citizenship-anglosphere-and-cone-systems.md — US/CA/AU/CL/UY + CH/FR/BE
 - @concepts/italian-citizenship-latam-audience-systems.md — BR/AR/VE/DO/PE/MX
 - @concepts/italian-citizenship-pathways-document-pipelines.md — DOC_* consumers

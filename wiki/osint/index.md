@@ -12,7 +12,13 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **1011 canonical stubs** (K206 wave2 + arXiv/RSS + …)
+Total: **1014 canonical stubs** (K208 Gemini DR wave3 + …)
+
+### k208-ingest (3)
+
+- [Brazil jure sanguinis deepening](sources/brazil-jure-sanguinis-deepening-2026-07-29.md) — CRC ≠ inteiro teor; Ord. 147/2026. — `docx` [+k208]
+- [Venezuela Italian citizenship deepening](sources/venezuela-italian-citizenship-deepening-2026-07-29.md) — SAIME datos + PUB firewall. — `docx` [+k208]
+- [Dominican nationality document deepening](sources/dominican-nationality-document-deepening-2026-07-29.md) — 169-14 Group B = Transcripción. — `docx` [+k208]
 
 ### k207-ingest (1)
 
