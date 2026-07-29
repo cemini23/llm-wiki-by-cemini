@@ -1452,6 +1452,7 @@ Six-section institutional template: Business Overview · Competitive Landscape �
 - [Dogecoin (DOGE)](entities/tickers/doge.md) — crypto native — ticker-report, gemini-deep-research
 - [Ethereum (ETH)](entities/tickers/eth.md) — crypto native — ticker-report, gemini-deep-research
 - [Diamondback Energy (FANG)](entities/tickers/fang.md) — energy / E&P (Donny note 2026-05-09) — market-research
+- [Cheniere Energy (LNG)](entities/tickers/lng.md) — `[DRAFT 2026-07-29]` U.S. LNG exporter; UW flow + Aug 6 Q2 preview — energy, options-flow, earnings
 - [Corning (GLW)](entities/tickers/glw.md) — industrials (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
 - [The GEO Group (GEO)](entities/tickers/geo.md) — `[DRAFT 2026-06-13]` K114 corrections REIT; ICE turnkey investigative briefs — osint, geo-group
 - [Alphabet (GOOGL)](entities/tickers/googl.md) — mega cap — ticker-report, gemini-deep-research

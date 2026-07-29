@@ -99,12 +99,12 @@ r/juresanguinis megathread (26–27 Jul 2026) + ICA / ItalyGet / IDCA / Bersani 
 
 ### Watch list (re-run when deposited)
 
-1. ~~Mantova/Campobasso Cost. deposit~~ → **Ord. 147/2026** (CJEU track).
+1. ~~Mantova/Campobasso Cost. deposit~~ → **Ord. 147/2026** (CJEU track). **Curia C-number still unpublished** as of 2026-07-29 verification pass.
 2. ~~Sezioni Unite written decision~~ → **24045/2026**.
-3. Interior/MAE circular superseding **43347** — official §1 still live as of 2026-07-28 (Wayback PDF archived; no rewrite found).
+3. Interior/MAE circular superseding **43347** — official DLCI listing still live (last mod **25 Oct 2024**); **no post-24045 rewrite found** 2026-07-29. Circ. **19951** (Mar 2026) is beneficio deadline only.
 4. CJEU case number + judgment on Ord. 147 (exact quesito: Arts. 9 TEU / 20 TFEU vs Art. 3-bis *preclusione originaria*).
 5. MAECI postal address for central adult JS (post-2028).
-6. Per-consulate annual cap figures 2026–2028.
+6. Per-consulate annual cap figures 2026–2028 — Sydney has adult Prenot@Mi freeze citing L.11; BR/AR seat notices still thin.
 
 ### K201 research deepen (2026-07-28 evening)
 

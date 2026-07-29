@@ -3,6 +3,15 @@
 updated: 2026-07-29
 ---
 
+## [2026-07-29] query | LNG Cheniere — UW flow + Q2 earnings preview
+
+- Source: `@sources/lng-cheniere-uw-earnings-preview-2026-07-29.md`
+- Entity: `@entities/tickers/lng.md` (draft) — Aug 6 BMO setup, CCL Stage 3 Train 7 FERC, UW flow/dark pool
+- Laptop brief (gitignored): `briefs/2026-07-29_lng-cheniere-uw-earnings-preview.md` — skill_audit PASS 100
+- Canvas: `lng-cheniere-uw-earnings-research`
+- Data: UW REST via tipdrop key on cemini-prod; opencli twitter/reddit/google/barchart; Cheniere IR
+- Also: primary-law-lock watch-list verification pass (Curia C-number still unpublished; circ. 43347 still live)
+
 ## [2026-07-29] ops | K209 — full-ingest triage (inbox empty)
 
 - Only inbox item: Moontower Christian pagan — **LIKELY** exact sha `fd8c0ee8…` = K206 source already on egress
