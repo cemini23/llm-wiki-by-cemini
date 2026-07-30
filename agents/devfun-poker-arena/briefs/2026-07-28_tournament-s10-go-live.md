@@ -26,12 +26,13 @@ Readiness pack is staged: apply script (CONFIRM-gated), wait-and-apply poller, l
 
 | Track | Snapshot |
 |-------|----------|
-| Tournament S10 | **ENTERED** `cms7hr1il20ya13wjj29s1o8h` — role `s10_tournament`, gin OFF, KO 60h/600, prize cutoff 10 |
+| Tournament S10 | **ENTERED + PLAYING** `cms7hr1il20ya13wjj29s1o8h` — role `s10_tournament`, gin OFF |
+| Posture (super-audit 2026-07-30) | prize cutoff **3**, KO hands **20**, survival stack **350**, chase > mild KO, nemesis + halloran |
 | Entry | Sponsored admin admission **0.01 MON** paid; bankroll 1000 → playing |
-| Playground S11 | Live `cms7hrnjg20czv7oi85cho570` — **do not** steal lobby from T10; chip-qual later via `playground_chip_qual_enter.sh 11` |
+| Playground S11 | Live `cms7hrnjg20czv7oi85cho570` — staged only; do not swap lobby off T10 while still alive |
 | Playground S10 | Closed for lobby; was #6 @ ~18743 at switch |
 
-Hour-one: survival folds expected — do not widen gin until KO analyze shows too-nitty for placement.
+T10 is the active money table. “Don’t enter S11” means don’t move the lobby off T10 — not that we lack a tournament seat.
 
 ## Go-live checklist
 
