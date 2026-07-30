@@ -4,6 +4,8 @@ type: source
 tags: [source, arxiv, harness, security, ccc, cybersec, k206]
 keywords: [SHarD, OWASP agentic, OS sandbox, skill scanning, tool restriction, Pi harness]
 related:
+  - sources/newsletter-rss-latent-space-2026-07-29-ai-eating-finance.md
+  - entities/tools/openai-codex-security.md
   - entities/tools/agent-security-lab.md
   - sources/newsletter-rss-latent-space-2026-07-29-rsi-hf-agent-attack.md
 maturity: draft
@@ -13,6 +15,10 @@ read_status: deep-read
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-07-29-ai-eating-finance.md — same-day LS
+
+- @entities/tools/openai-codex-security.md — Codex Security CLI
 
 - @entities/tools/agent-security-lab.md — Phase-0 Extract (MIT lab artifacts)
 - @sources/newsletter-rss-latent-space-2026-07-29-rsi-hf-agent-attack.md — HF agent-attack IR parallel

@@ -4,6 +4,10 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - entities/tools/claude-immigration-attorney.md
+  - entities/tools/genealogy-ai.md
+  - sources/eval-github-revenue-opportunity-analysis-2026-07-29-civil-legal.md
+  - sources/eval-github-repo-revenue-evaluation-2026-07-29-genealogy-legal.md
   - sources/us-records-italian-citizenship-2026-07-29.md
   - sources/canada-apostille-citizenship-research-2026-07-29.md
   - sources/australia-nationality-law-research-2026-07-29.md
@@ -108,6 +112,14 @@ updated: 2026-07-29
 ---
 
 ## Relations
+
+- @entities/tools/claude-immigration-attorney.md — evidence-audit skills Extract
+
+- @entities/tools/genealogy-ai.md — French HTR Extract
+
+- @sources/eval-github-revenue-opportunity-analysis-2026-07-29-civil-legal.md — K211 civil/legal opp
+
+- @sources/eval-github-repo-revenue-evaluation-2026-07-29-genealogy-legal.md — K211 genealogy/legal eval
 
 - @sources/us-records-italian-citizenship-2026-07-29.md — K204 US admin matrix
 - @sources/canada-apostille-citizenship-research-2026-07-29.md — K204 CA

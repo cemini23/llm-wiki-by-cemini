@@ -4,6 +4,7 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/newsletter-rss-latent-space-2026-07-29-ai-eating-finance.md
   - sources/substack-glitchspx-2026-07-29-handed-wheel-to-falcon.md
   - sources/eval-revenue-opportunity-analysis-2026-07-25.md
   - sources/substack-rss-capital-flows-2026-07-24-crude-risk.md
@@ -86,6 +87,8 @@ updated: 2026-07-29
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-07-29-ai-eating-finance.md — AI-in-finance culture only
 
 - @sources/substack-glitchspx-2026-07-29-handed-wheel-to-falcon.md — Glitch Falcon agentic discipline (K207)
 

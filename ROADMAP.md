@@ -23,6 +23,10 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-07-29 — K211)
+
+- **K211 ingest** — 2 genealogy/legal GitHub revenue evals + Latent Space AI-in-Finance. Extract: `genealogy_ai` + `claude_immigration_attorney` (MIT) + `openai/codex-security` (Apache). Watch: AgentENV. AncestorTree Integrate NO-GO (no license). Briefs → Atto/CCC/cyber/TipDrop/poker. **No prod scp.**
+
 ## Current state (2026-07-29 — K209)
 
 - **K209 full-ingest triage** — inbox empty after dropping Moontower re-copy (exact K206 sha). No NEW sources. K206–K208 already complete.

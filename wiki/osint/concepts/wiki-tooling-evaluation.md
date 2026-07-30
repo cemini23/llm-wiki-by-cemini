@@ -4,6 +4,8 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-github-revenue-opportunity-analysis-2026-07-29-civil-legal.md
+  - sources/eval-github-repo-revenue-evaluation-2026-07-29-genealogy-legal.md
   - entities/tools/different-ai-openwork.md
   - sources/eval-github-repo-revenue-evaluation-2026-07-29.md
   - entities/tools/cardkit.md
@@ -229,6 +231,10 @@ updated: 2026-07-29
 ---
 
 ## Relations
+
+- @sources/eval-github-revenue-opportunity-analysis-2026-07-29-civil-legal.md — K211
+
+- @sources/eval-github-repo-revenue-evaluation-2026-07-29-genealogy-legal.md — K211
 
 - @entities/tools/different-ai-openwork.md — K204 Extract (Atto MCP desktop)
 - @sources/eval-github-repo-revenue-evaluation-2026-07-29.md — K204 OpenWork + BR APIs Pass

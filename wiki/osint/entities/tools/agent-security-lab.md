@@ -4,6 +4,7 @@ type: entity
 tags: [entity, tool, harness, security, ccc, cybersec, phase-0, k206]
 keywords: [wrgore/agent-security-lab, SHarD, Pi harness, OWASP agentic, MIT]
 related:
+  - entities/tools/openai-codex-security.md
   - sources/arxiv-2607.25890-shard-secure-harness-distribution.md
   - sources/newsletter-rss-latent-space-2026-07-29-rsi-hf-agent-attack.md
 maturity: draft
@@ -12,6 +13,8 @@ updated: 2026-07-29
 ---
 
 ## Relations
+
+- @entities/tools/openai-codex-security.md — Codex Security parallel
 
 - @sources/arxiv-2607.25890-shard-secure-harness-distribution.md — paper + lab
 - @sources/newsletter-rss-latent-space-2026-07-29-rsi-hf-agent-attack.md — HF agent-attack parallel

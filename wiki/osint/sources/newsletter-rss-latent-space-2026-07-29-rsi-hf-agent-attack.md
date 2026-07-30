@@ -4,6 +4,7 @@ type: source
 tags: [source, newsletter, latent-space, rsi, huggingface, agent-security, k206]
 keywords: [RSI letter, GLM 5.2, Open Secure AI Alliance, Kimi K3, MCP, Fish Audio]
 related:
+  - sources/newsletter-rss-latent-space-2026-07-29-ai-eating-finance.md
   - sources/arxiv-2607.25890-shard-secure-harness-distribution.md
   - entities/tools/agent-security-lab.md
 maturity: draft
@@ -13,6 +14,8 @@ read_status: skimmed
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-07-29-ai-eating-finance.md — follow-on AINews
 
 - @sources/arxiv-2607.25890-shard-secure-harness-distribution.md — harness security controls parallel
 - @entities/tools/agent-security-lab.md — Phase-0 Extract lab

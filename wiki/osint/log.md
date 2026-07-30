@@ -3,6 +3,14 @@
 updated: 2026-07-29
 ---
 
+## [2026-07-29] ingest | K211 — genealogy/legal GitHub evals + Latent Space finance/Codex Security
+
+- **Inbox (3):** Repository Revenue Evaluation · Revenue Opportunity Analysis · Latent Space AI-eating-Finance
+- **License overrides:** AncestorTree MIT→null NO-GO; immigration_attorney NOT FOUND→MIT; genealogy_ai NOT FOUND→MIT; vera/webtrees GPL isolate; aiworkdeck AGPL isolate
+- **Phase-0 Extract (~17MB):** genealogy_ai · claude_immigration_attorney · openai/codex-security · AgentENV (Watch)
+- **Briefs:** Atto; CCC; cybersec; TipDrop (CC0 consulting docs Watch); poker AgentENV watch; **no xsp/pm prod scp**
+- Script: `scripts/adopt_k211_phase0.sh`
+
 ## [2026-07-29] query | LNG Cheniere — UW flow + Q2 earnings preview
 
 - Source: `@sources/lng-cheniere-uw-earnings-preview-2026-07-29.md`

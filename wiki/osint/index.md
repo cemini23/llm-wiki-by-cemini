@@ -12,7 +12,7 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **1015 canonical stubs** (LNG desk + K208 Gemini DR wave3 + …)
+Total: **1022 canonical stubs** (LNG desk + K208 Gemini DR wave3 + …)
 
 ### lng-desk-research (2026-07-29)
 
@@ -23,6 +23,16 @@ Total: **1015 canonical stubs** (LNG desk + K208 Gemini DR wave3 + …)
 - [Brazil jure sanguinis deepening](sources/brazil-jure-sanguinis-deepening-2026-07-29.md) — CRC ≠ inteiro teor; Ord. 147/2026. — `docx` [+k208]
 - [Venezuela Italian citizenship deepening](sources/venezuela-italian-citizenship-deepening-2026-07-29.md) — SAIME datos + PUB firewall. — `docx` [+k208]
 - [Dominican nationality document deepening](sources/dominican-nationality-document-deepening-2026-07-29.md) — 169-14 Group B = Transcripción. — `docx` [+k208]
+
+### k211-ingest (7)
+
+- [GitHub Revenue Eval — genealogy/legal](sources/eval-github-repo-revenue-evaluation-2026-07-29-genealogy-legal.md) — genealogy_ai + immigration skills Extract. — `docx` [+k211]
+- [GitHub Opp Analysis — civil/legal](sources/eval-github-revenue-opportunity-analysis-2026-07-29-civil-legal.md) — AgentENV Watch. — `docx` [+k211]
+- [Latent Space AI eating Finance](sources/newsletter-rss-latent-space-2026-07-29-ai-eating-finance.md) — Codex Security CLI. — `rss` [+k211]
+- [genealogy_ai](entities/tools/genealogy-ai.md) — MIT Extract Phase-0. — entity [+k211]
+- [claude-immigration-attorney](entities/tools/claude-immigration-attorney.md) — MIT Extract Phase-0. — entity [+k211]
+- [AgentENV](entities/tools/agentenv.md) — MIT Watch microVM. — entity [+k211]
+- [OpenAI Codex Security](entities/tools/openai-codex-security.md) — Apache Extract Phase-0. — entity [+k211]
 
 ### k207-ingest (1)
 
