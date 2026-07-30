@@ -32,5 +32,6 @@ See `references/verifier-deployment-gap.md` (K198) +
 ## Related
 
 - `references/deepcfr-lite.md` — offline bake path (separate)
+- `references/ccs-mccfr-chance-sampling.md` (K164) — chance-sampler shelf
 - `config/hu_yardstick_pool.json` — external grade surface
 - `@gambling-wiki/sources/arxiv-2607.23333-swap-regret-attention-2026-07-29.md`

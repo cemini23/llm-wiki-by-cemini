@@ -20,3 +20,6 @@ From arXiv:2606.30587 — LLM vulnerability triage can flip on **comment framing
 5. Eval claim ceiling (K220) — modest clean boards do not license rare-leak
    absence: `references/eval-claim-ceiling.md`.
 6. LIVE vs sandbox containment (K222): `references/sandbox-live-containment.md`.
+7. Tool depth / standing policy (K221/K229): do not flip harness modes without
+   expected advantage — `references/tool-depth-standing-policy.md`.
+8. Session KV isolation (K227): `references/session-kv-isolation.md`.

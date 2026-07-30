@@ -29,3 +29,8 @@ clamp ±0.14, free 0.15, facing 0.18/0.15/0.225.
 ```bash
 uv run python examples/deepcfr_lite_train.py --iters 50000 --seed 7 --force
 ```
+
+## Related
+
+- `references/ccs-mccfr-chance-sampling.md` (K164) — offline CCS-MCCFR sampler shelf
+- `references/swap-regret-training-notes.md` (K198)

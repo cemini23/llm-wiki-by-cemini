@@ -42,4 +42,5 @@ uv run pytest tests/test_claimed_authorization.py -q --tb=line
 
 - `references/claimed-authorization-guard.md`
 - `references/sandbox-live-containment.md` (K222)
+- `references/tool-depth-standing-policy.md` (K221 / K229)
 - `references/ar-bugs-controllability.md`

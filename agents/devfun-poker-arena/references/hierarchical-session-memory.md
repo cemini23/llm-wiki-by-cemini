@@ -50,5 +50,6 @@ gate. Brief: `briefs/2026-07-26_k146-structured-persistent-memory-delta.md`.
 
 - `references/deepsearch-trajectory-filter.md` (K161 P1)
 - `references/expert-yardstick-pool.md` (long-term)
+- `references/session-kv-isolation.md` (K227) — no cross-table / cross-comp KV bleed
 - `briefs/2026-07-13_k161-hierarchical-memory-deepsearch-steal.md`
 - `briefs/2026-07-26_k146-structured-persistent-memory-delta.md`

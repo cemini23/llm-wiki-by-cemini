@@ -19,6 +19,9 @@ arXiv 2607.27035 introduces Correlated Chance Sampling MCCFR (CCS-MCCFR) — per
 1. Shelf next to swap-regret / DeepCFR notes.
 2. Optional later: toy Kuhn/Leduc bake comparing independent vs correlated chance draws.
 
+**Status (2026-07-30):** shelf confirmed — research note at
+`references/ccs-mccfr-chance-sampling.md` (K164). No decide wire.
+
 ## Sources
 
 - @sources/arxiv-2607.27035-correlated-chance-sampling-mccfr-2026-07-30.md
