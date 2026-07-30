@@ -1,4 +1,5 @@
 ---
+
 title: XSP four-lane trading framework (operator playbook)
 type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
@@ -81,12 +82,18 @@ related:
   - sources/substack-rss-klement-2026-07-27-fast-money-warping-market-logic.md
   - sources/arxiv-2607.25199-ridge-option-pricing-validation.md
   - sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md
+  - sources/substack-rss-capital-flows-2026-07-30-will-warsh-crash-the-stock-market.md
+  - sources/substack-rss-event-horizon-2026-07-30-robinhood-prediction-markets-q2.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-07-30-robinhood-prediction-markets-q2.md
+
+- @sources/substack-rss-capital-flows-2026-07-30-will-warsh-crash-the-stock-market.md — Warsh note
 
 - @sources/newsletter-rss-latent-space-2026-07-29-ai-eating-finance.md — AI-in-finance culture only
 

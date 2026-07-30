@@ -1,4 +1,5 @@
 ---
+
 title: Swap-regret attention ≈ fictitious play (poker steal)
 type: concept
 tags: [concept, poker, game-theory, regret, k198]
@@ -7,12 +8,15 @@ related:
   - sources/arxiv-2607.23333-swap-regret-attention.md
   - concepts/code-as-agent-harness.md
   - concepts/verifier-deployment-gap.md
+  - sources/arxiv-2607.27035-correlated-chance-sampling-mccfr-2026-07-30.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.27035-correlated-chance-sampling-mccfr-2026-07-30.md — CCS-MCCFR
 
 - @sources/arxiv-2607.23333-swap-regret-attention.md
 - @concepts/code-as-agent-harness.md

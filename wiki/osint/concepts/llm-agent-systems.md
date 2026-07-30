@@ -1,4 +1,5 @@
 ---
+
 title: LLM Agent Systems — Corpus Index
 type: concept
 tags: [concept, llm-agents, agent-orchestration, research-index]
@@ -132,7 +133,6 @@ related:
   - entities/tools/openclaw.md
   - sources/openclaw-ios-node-2026-06-29.md
   - concepts/stockbench.md
-  - sources/3-29-15.md
   - concepts/reasoning-safety-monitor.md
   - concepts/agent-authorization-stack.md
   - concepts/conductor-orchestrator.md
@@ -177,13 +177,16 @@ related:
   - concepts/relaxed-nfl-auto-formalization.md
   - concepts/toolbench-x-tool-reliability-hazards.md
   - entities/tools/toolbench-x.md
+  - sources/newsletter-rss-latent-space-2026-07-30-ontologies-are-so-back.md
 maturity: validated
 hub: true
 created: 2026-04-26
-updated: 2026-06-29
+updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-07-30-ontologies-are-so-back.md — ontologies guardrails
 
 - @concepts/ai-ethics-and-governance.md — sister hub: agent-architecture sources sit here, governance-of-those-agents (EU-AI-Act, harm typology, behavioral framing) sits in the ethics hub
 - @entities/frameworks/langgraph.md — the operative LLM orchestration framework in the Cemini stack; this hub indexes the broader agent-systems research that informed the LangGraph architecture choice

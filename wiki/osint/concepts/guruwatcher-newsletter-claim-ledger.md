@@ -1,4 +1,5 @@
 ---
+
 title: GuruWatcher — newsletter claim ledger → Discord (alert-only)
 type: concept
 tags: [concept, guruwatcher, discord, macro, k200, core-candidate]
@@ -9,12 +10,15 @@ related:
   - concepts/macro-charts-regime-signals.md
   - concepts/active-project-research-routing.md
   - sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md
+  - sources/macro-charts-paid-forward-2026-07-30-korea-semis.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/macro-charts-paid-forward-2026-07-30-korea-semis.md — Jul 30 Korea/Semis chat
 
 - @sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md — public methodology post
 - @entities/tools/guruwatcher.md

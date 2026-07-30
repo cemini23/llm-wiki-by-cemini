@@ -23,7 +23,11 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
-## Current state (2026-07-29 — K211)
+## Current state (2026-07-30 — K213)
+
+- **K213 ingest** — 4 Italian GitHub revenue evals + 4 arXiv + Macro/LS/EH/CF/Klement. Extracts: rstructor, cod_fiscale, mcp-legal-it (CONDITIONAL), DPC/deal-finder/ANSA, Quill. Prenotami Watch-only. Prod scp: xsp Warsh + pm Rothera. Phase-0 ~46MB.
+
+## Prior state (2026-07-29 — K211)
 
 - **K211 ingest** — 2 genealogy/legal GitHub revenue evals + Latent Space AI-in-Finance. Extract: `genealogy_ai` + `claude_immigration_attorney` (MIT) + `openai/codex-security` (Apache). Watch: AgentENV. AncestorTree Integrate NO-GO (no license). Briefs → Atto/CCC/cyber/TipDrop/poker. **No prod scp.**
 

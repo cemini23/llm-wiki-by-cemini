@@ -1,4 +1,5 @@
 ---
+
 title: GPUOLOGY / genealogy agent kit — product strategy
 type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
@@ -106,12 +107,39 @@ related:
   - sources/brazil-jure-sanguinis-deepening-2026-07-29.md
   - sources/venezuela-italian-citizenship-deepening-2026-07-29.md
   - sources/dominican-nationality-document-deepening-2026-07-29.md
+  - sources/eval-github-repository-revenue-analysis-2026-07-30-italian-ecosystems.md
+  - entities/tools/rstructor.md
+  - entities/tools/mcp-legal-it.md
+  - entities/tools/cod-fiscale.md
+  - entities/tools/prenotami-bot.md
+  - sources/eval-github-revenue-opportunity-analysis-2026-07-30-italian-mcp.md
+  - sources/eval-repository-revenue-opportunity-analysis-2026-07-30-prenotami.md
+  - sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md
+  - entities/tools/prenotami-booker.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 ## Relations
+
+- @entities/tools/prenotami-booker.md
+
+- @sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md — K213
+
+- @sources/eval-repository-revenue-opportunity-analysis-2026-07-30-prenotami.md — K213
+
+- @sources/eval-github-revenue-opportunity-analysis-2026-07-30-italian-mcp.md — K213
+
+- @entities/tools/prenotami-bot.md — Watch Extract
+
+- @entities/tools/cod-fiscale.md — K213 Extract
+
+- @entities/tools/mcp-legal-it.md — K213 CONDITIONAL
+
+- @entities/tools/rstructor.md — K213 Extract
+
+- @sources/eval-github-repository-revenue-analysis-2026-07-30-italian-ecosystems.md — K213 Italian evals
 
 - @entities/tools/claude-immigration-attorney.md — evidence-audit skills Extract
 

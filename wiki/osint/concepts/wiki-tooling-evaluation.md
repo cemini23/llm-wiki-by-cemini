@@ -1,4 +1,5 @@
 ---
+
 title: Wiki & Memory Tooling — Evaluation of Adoption Candidates
 type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
@@ -65,7 +66,6 @@ related:
   - entities/tools/hallmark.md
   - entities/tools/destructive-command-guard.md
   - sources/eval-github-repo-revenue-evaluation-2026-07-14.md
-  - sources/eval-multi-wiki-repo-evaluation-strategy-2026-07-11.md
   - sources/eval-multi-wiki-repo-evaluation-strategy-2026-07-11.md
   - sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md
   - sources/eval-url-revenue-plan-20url-2026-07-08.md
@@ -156,7 +156,6 @@ related:
   - sources/eval-multi-wiki-agent-harness-v2-2026-07-03.md
   - entities/tools/page-agent.md
   - entities/tools/strix.md
-  - entities/tools/chrome-devtools-mcp.md
   - entities/tools/agentskills.md
   - sources/cemini-repository-evaluation-plan-runtime-2026-07-04.md
   - entities/tools/obsidian-mind.md
@@ -224,13 +223,34 @@ related:
   - entities/tools/geolibre.md
   - sources/newsletter-rss-latent-space-2026-07-28-kimi-k3.md
   - sources/arxiv-2607.25199-ridge-option-pricing-validation.md
+  - sources/eval-github-repository-revenue-analysis-2026-07-30-italian-ecosystems.md
+  - sources/eval-github-revenue-opportunity-analysis-2026-07-30-italian-mcp.md
+  - sources/eval-repository-revenue-opportunity-analysis-2026-07-30-prenotami.md
+  - sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md
+  - sources/substack-rss-klement-2026-07-30-life-in-europe-is-just-better.md
+  - sources/arxiv-2607.27083-cost-aware-stopping-tool-acquisition-2026-07-30.md
+  - sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md
+
+- @sources/arxiv-2607.27083-cost-aware-stopping-tool-acquisition-2026-07-30.md
+
+- @sources/substack-rss-klement-2026-07-30-life-in-europe-is-just-better.md
+
+- @sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md — K213
+
+- @sources/eval-repository-revenue-opportunity-analysis-2026-07-30-prenotami.md — K213
+
+- @sources/eval-github-revenue-opportunity-analysis-2026-07-30-italian-mcp.md — K213
+
+- @sources/eval-github-repository-revenue-analysis-2026-07-30-italian-ecosystems.md — K213
 
 - @sources/eval-github-revenue-opportunity-analysis-2026-07-29-civil-legal.md — K211
 

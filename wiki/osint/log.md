@@ -1,5 +1,14 @@
 # Wiki Log
 
+
+## [2026-07-30] ingest | K213 — Italian GitHub evals + arXiv + Macro/LS/EH/CF
+
+- **Inbox:** 4 tool-eval docx + 4 arXiv PDF + Macro Charts chat + Latent Space ontologies + Capital Flows Warsh + Event Horizon RH PM + Klement
+- **Phase-0 (~46MB):** rstructor, mcp-legal-it, digimata-quill, cod_fiscale, dpc-alert, deal-finder, fatturapa-validator, ansa-overview, aioduct, prenotami-bot/booker, giustizia-scrap (`scripts/adopt_k213_phase0.sh`)
+- **Overrides:** prenotami Integrate→Watch Extract (no auto-book); Italian_Cities Integrate→Watch (dataset license); missing SPDX / GPL / commercial → NO-GO or patterns-only
+- **Briefs:** Atto · GuruWatcher · poker CCS-MCCFR · TipDrop Quill · CCC ontologies/tools · cyber MemSecBench · **prod** xsp Warsh + pm Rothera
+- **Archive:** egress-fi osint bulk
+
 updated: 2026-07-29
 ---
 

@@ -1,4 +1,5 @@
 ---
+
 title: Macro Charts regime signals (newsletter excerpts)
 type: concept
 tags: [concept, macro, regime, newsletter, k90, k144]
@@ -51,12 +52,15 @@ related:
   - entities/tools/guruwatcher.md
   - sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md
   - sources/substack-rss-klement-2026-07-29-2-percent-inflation-target.md
+  - sources/macro-charts-paid-forward-2026-07-30-korea-semis.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/macro-charts-paid-forward-2026-07-30-korea-semis.md — Jul 30 chat
 
 - @sources/substack-glitchspx-2026-07-29-handed-wheel-to-falcon.md — contrast: process essay ≠ price watch
 

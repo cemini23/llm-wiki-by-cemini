@@ -1,4 +1,5 @@
 ---
+
 title: agent-security-lab (SHarD / Gore) — harness security artifacts
 type: entity
 tags: [entity, tool, harness, security, ccc, cybersec, phase-0, k206]
@@ -7,12 +8,15 @@ related:
   - entities/tools/openai-codex-security.md
   - sources/arxiv-2607.25890-shard-secure-harness-distribution.md
   - sources/newsletter-rss-latent-space-2026-07-29-rsi-hf-agent-attack.md
+  - sources/arxiv-2607.27080-memsecbench-agent-memory-poisoning-2026-07-30.md
 maturity: draft
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.27080-memsecbench-agent-memory-poisoning-2026-07-30.md — MemSecBench
 
 - @entities/tools/openai-codex-security.md — Codex Security parallel
 

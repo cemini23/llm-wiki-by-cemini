@@ -1,4 +1,5 @@
 ---
+
 title: OpenAI Codex Security CLI
 type: entity
 tags: [entity, tool, security, codex, ccc, cybersec, phase-0, k211]
@@ -8,12 +9,15 @@ related:
   - sources/newsletter-rss-latent-space-2026-07-29-ai-eating-finance.md
   - sources/arxiv-2607.25890-shard-secure-harness-distribution.md
   - entities/tools/agent-security-lab.md
+  - sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md
 maturity: draft
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md — OSS AI contribution rules
 
 - @entities/tools/agentenv.md — Watch microVM isolation
 

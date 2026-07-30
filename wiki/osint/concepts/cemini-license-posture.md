@@ -1,4 +1,5 @@
 ---
+
 title: Cemini License Posture — Dependency Obligations & IP Status
 type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
@@ -46,13 +47,25 @@ related:
   - sources/eval-revenue-opportunity-url-evaluation-2026-07-18.md
   - sources/eval-repository-revenue-opportunity-analysis-2026-07-19.md
   - concepts/polymarket-bot-architecture.md
+  - sources/eval-github-repository-revenue-analysis-2026-07-30-italian-ecosystems.md
+  - sources/eval-github-revenue-opportunity-analysis-2026-07-30-italian-mcp.md
+  - sources/eval-repository-revenue-opportunity-analysis-2026-07-30-prenotami.md
+  - sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-07-29
+updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md — K213
+
+- @sources/eval-repository-revenue-opportunity-analysis-2026-07-30-prenotami.md — K213
+
+- @sources/eval-github-revenue-opportunity-analysis-2026-07-30-italian-mcp.md — K213
+
+- @sources/eval-github-repository-revenue-analysis-2026-07-30-italian-ecosystems.md — K213
 
 - @sources/eval-github-repo-revenue-evaluation-2026-07-29-genealogy-legal.md — AncestorTree MIT false claim
 

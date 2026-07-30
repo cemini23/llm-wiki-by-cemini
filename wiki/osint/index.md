@@ -8,6 +8,24 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K213 — 2026-07-30 Italian evals + papers + newsletters
+
+- [GitHub Repository Revenue Analysis — Italian ecosystems](sources/eval-github-repository-revenue-analysis-2026-07-30-italian-ecosystems.md)
+- [GitHub Revenue Opportunity Analysis — Italian MCP](sources/eval-github-revenue-opportunity-analysis-2026-07-30-italian-mcp.md)
+- [Repository Revenue Opportunity Analysis — prenotami](sources/eval-repository-revenue-opportunity-analysis-2026-07-30-prenotami.md)
+- [Revenue Analyst URL Evaluation — Quill/Hono/rstructor](sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md)
+- [Macro Charts Jul-30 Korea/Semis](sources/macro-charts-paid-forward-2026-07-30-korea-semis.md)
+- [Latent Space ontologies](sources/newsletter-rss-latent-space-2026-07-30-ontologies-are-so-back.md)
+- [Capital Flows Warsh](sources/substack-rss-capital-flows-2026-07-30-will-warsh-crash-the-stock-market.md)
+- [Event Horizon Robinhood PM Q2](sources/substack-rss-event-horizon-2026-07-30-robinhood-prediction-markets-q2.md)
+- [Klement Europe wellbeing](sources/substack-rss-klement-2026-07-30-life-in-europe-is-just-better.md)
+- [arXiv 2607.26819 coding-agent OSS rules](sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md)
+- [arXiv 2607.27035 CCS-MCCFR](sources/arxiv-2607.27035-correlated-chance-sampling-mccfr-2026-07-30.md)
+- [arXiv 2607.27080 MemSecBench](sources/arxiv-2607.27080-memsecbench-agent-memory-poisoning-2026-07-30.md)
+- [arXiv 2607.27083 cost-aware tool stopping](sources/arxiv-2607.27083-cost-aware-stopping-tool-acquisition-2026-07-30.md)
+- Entities: rstructor · mcp-legal-it · cod-fiscale · dpc-alert · deal-finder · ansa-overview · fatturapa-validator · prenotami-bot · prenotami-booker · digimata-quill · aioduct · giustizia-scrap
+
+
 Sources are ingested research material (PDFs, articles, notes). One page per canonical source — near-duplicate files are folded in via the `Duplicates folded` list on the canonical page.
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
