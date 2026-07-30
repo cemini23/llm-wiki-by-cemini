@@ -1179,11 +1179,8 @@ def decide(
     survival = survival_tight or ko_survival
     if survival_tight:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.04, "call_margin_delta": 0.05})
-    elif ko_survival:
-        margins = _merge_margins(margins, {"fold_slack_delta": 0.02, "call_margin_delta": 0.02})
-    elif placement_protect:
-        margins = _merge_margins(margins, {"fold_slack_delta": 0.03, "call_margin_delta": 0.03})
     elif placement_chase:
+        # Chase must win over mild KO hour-one (super-audit T10 2026-07-30).
         margins = _merge_margins(
             margins,
             {
@@ -1192,6 +1189,10 @@ def decide(
                 "chase_open_equity": 0.30,
             },
         )
+    elif ko_survival:
+        margins = _merge_margins(margins, {"fold_slack_delta": 0.02, "call_margin_delta": 0.02})
+    elif placement_protect:
+        margins = _merge_margins(margins, {"fold_slack_delta": 0.03, "call_margin_delta": 0.03})
     style_ov = ctx.get("hl_style_overrides") or {}
     if style_ov:
         tweak: dict[str, float] = {}

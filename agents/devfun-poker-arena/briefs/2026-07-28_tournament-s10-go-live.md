@@ -22,6 +22,17 @@ Readiness pack is staged: apply script (CONFIRM-gated), wait-and-apply poller, l
 | Tournament S10 | **not listed** yet |
 | Tournament S9 | Live (we are **not** entered — no free seat) |
 
+## Status at go-live (2026-07-30)
+
+| Track | Snapshot |
+|-------|----------|
+| Tournament S10 | **ENTERED** `cms7hr1il20ya13wjj29s1o8h` — role `s10_tournament`, gin OFF, KO 60h/600, prize cutoff 10 |
+| Entry | Sponsored admin admission **0.01 MON** paid; bankroll 1000 → playing |
+| Playground S11 | Live `cms7hrnjg20czv7oi85cho570` — **do not** steal lobby from T10; chip-qual later via `playground_chip_qual_enter.sh 11` |
+| Playground S10 | Closed for lobby; was #6 @ ~18743 at switch |
+
+Hour-one: survival folds expected — do not widen gin until KO analyze shows too-nitty for placement.
+
 ## Go-live checklist
 
 ### Now (done / keep)

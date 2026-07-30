@@ -16,6 +16,7 @@ from pathlib import Path
 DEFAULT_COMPS = {
     9: "cmrt1wzu40jm911suskj9qebe",
     10: "cms0bwufmf3n8kyykdpxi6d2i",
+    11: "cms7hrnjg20czv7oi85cho570",
 }
 
 

@@ -105,6 +105,7 @@ def _lobby_role_label(competition_id: str) -> tuple[str, str]:
     s3 = os.environ.get("S3_PLAYGROUND_COMP", "").strip()
     s9 = os.environ.get("S9_PLAYGROUND_COMP", "cmrt1wzu40jm911suskj9qebe").strip()
     s10 = os.environ.get("S10_PLAYGROUND_COMP", "cms0bwufmf3n8kyykdpxi6d2i").strip()
+    s11 = os.environ.get("S11_PLAYGROUND_COMP", "cms7hrnjg20czv7oi85cho570").strip()
     s10t = os.environ.get("S10_TOURNAMENT_COMP", "").strip()
     rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
     if competition_id and competition_id == rcomp:
@@ -127,6 +128,8 @@ def _lobby_role_label(competition_id: str) -> tuple[str, str]:
         return "Playground S9", "s9_playground"
     if competition_id and competition_id == s10:
         return "Playground S10", "s10_playground"
+    if competition_id and competition_id == s11:
+        return "Playground S11", "s11_playground"
     label = os.environ.get("CEMINI_LOBBY_LABEL", "").strip().replace("_", " ")
     role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip()
     return label or competition_id, role or "lobby"
@@ -145,12 +148,14 @@ def _apply_competition_posture(competition_id: str) -> None:
     s3 = os.environ.get("S3_PLAYGROUND_COMP", "").strip()
     s9 = os.environ.get("S9_PLAYGROUND_COMP", "cmrt1wzu40jm911suskj9qebe").strip()
     s10 = os.environ.get("S10_PLAYGROUND_COMP", "cms0bwufmf3n8kyykdpxi6d2i").strip()
+    s11 = os.environ.get("S11_PLAYGROUND_COMP", "cms7hrnjg20czv7oi85cho570").strip()
     s10t = os.environ.get("S10_TOURNAMENT_COMP", "").strip()
     rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
     _pg_role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip().lower()
-    _chip_qual_playground = competition_id in (s9, s10) or _pg_role in (
+    _chip_qual_playground = competition_id in (s9, s10, s11) or _pg_role in (
         "s9_playground",
         "s10_playground",
+        "s11_playground",
     )
     _s10_tournament = (
         (s10t and competition_id == s10t)
@@ -258,8 +263,10 @@ def _apply_competition_posture(competition_id: str) -> None:
             "JACKPOT_27_HUNT_ENABLED": "0",
         })
     elif _s10_tournament:
-        # Tournament S10 KO — placement EV (top ~25 bracket / money zone ~10).
+        # Tournament S10 KO — placement EV (bracket ~25 / money-zone protect top-3 for win chase).
         # Gin OFF: keep the Playground S10 qual style; widen only after KO analyze.
+        # Super-audit 2026-07-30: do not force prize=10 (stalls chase); do not set
+        # survival_mode via KO lane (fixed in decide path below).
         os.environ.update({
             "CEMINI_TOURNAMENT_MODE": "1",
             "CEMINI_TABLE_FORMAT": "auto",
@@ -268,11 +275,15 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_PLACEMENT_CHASE": "1",
             "CEMINI_EVAL_PANEL_GATE": "0",
             "CEMINI_EVAL_PANEL_MODE": "0",
-            "CEMINI_PRIZE_CUTOFF_RANK": "10",
+            "CEMINI_PRIZE_CUTOFF_RANK": "3",
             "CEMINI_QUAL_CUTOFF_RANK": "25",
             "CEMINI_KO_SURVIVAL": "1",
+            "CEMINI_KO_SURVIVAL_HANDS": "20",
+            "CEMINI_SURVIVAL_STACK_CHIPS": "350",
+            "CEMINI_S1B_MIN_STACK_BB": "35",
             "CEMINI_STAGGER_LOCKS": "0",
             "CEMINI_COLD_START_NO_STEAL": "1",
+            "CEMINI_NEMESIS_TIGHT": "1",
             "CEMINI_GIN_STYLE": "0",
             "CEMINI_GIN_STYLE_PREFLOP": "0",
             "CEMINI_GIN_STYLE_POSTFLOP": "0",
@@ -1007,7 +1018,9 @@ def run_lobby(args: argparse.Namespace) -> int:
                     ctx["kill_switch"] = True
                 if table_comp == competition_id and _ko_survival_lane(state, qual_status):
                     ctx["ko_survival_lane"] = True
-                    ctx["survival_mode"] = True
+                    # Do NOT set survival_mode here. That flips survival_tight and
+                    # permanently overrides placement_chase margins (mild KO branch
+                    # becomes dead code). Super-audit T10 2026-07-30 consensus.
                 nemesis = state.get("nemesis_handles")
                 if nemesis:
                     ctx["nemesis_handles"] = nemesis
@@ -1018,8 +1031,11 @@ def run_lobby(args: argparse.Namespace) -> int:
                     ctx["max_playable_chips"] = st.get("max_playable_chips")
                     ctx["lock_tier"] = st.get("lock_tier")
                 villain_mem = villain_memory_for_table(state, table)
+                # Keep villain memory during KO hour-one when chasing (need reads).
                 if villain_mem and not (
-                    qual_protect or first_protect or ctx.get("ko_survival_lane")
+                    qual_protect
+                    or first_protect
+                    or (ctx.get("ko_survival_lane") and not placement_chase)
                 ):
                     ctx["session_villain_memory"] = villain_mem
                     mem_margins = exploit_from_memory(villain_mem)

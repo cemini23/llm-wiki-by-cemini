@@ -91,8 +91,8 @@ set_kv CEMINI_TOURNAMENT_MODE 1
 set_kv CEMINI_EVAL_PANEL_GATE 0
 set_kv CEMINI_EVAL_PANEL_MODE 0
 set_kv CEMINI_EVAL_PANEL_BB100_FLOOR -25
-# KO: top ~25 advance within bracket (canon); money-zone protect uses 10
-set_kv CEMINI_PRIZE_CUTOFF_RANK 10
+# Money-zone protect at top-3 (super-audit: prize=10 stalled chase too early)
+set_kv CEMINI_PRIZE_CUTOFF_RANK 3
 set_kv CEMINI_QUAL_CUTOFF_RANK 25
 set_kv CEMINI_STAGGER_LOCKS 0
 # 999999 disables chip-qual protect (wrong metric in KO)
@@ -100,17 +100,17 @@ set_kv CEMINI_QUAL_BUFFER_CHIPS 999999
 set_kv CEMINI_LEAD_BUFFER_CHIPS 999999
 set_kv CEMINI_PACE_PHASE ""
 set_kv CEMINI_KO_SURVIVAL 1
-set_kv CEMINI_KO_SURVIVAL_HANDS 60
+set_kv CEMINI_KO_SURVIVAL_HANDS 20
 set_kv CEMINI_KO_SURVIVAL_MIN_STACK 600
-set_kv CEMINI_SURVIVAL_STACK_CHIPS 800
-set_kv CEMINI_S1B_MIN_STACK_BB 80
+# 350 ≈ 17.5bb on 20bb start — not 800 (40bb after one pot)
+set_kv CEMINI_SURVIVAL_STACK_CHIPS 350
+set_kv CEMINI_S1B_MIN_STACK_BB 35
 set_kv JACKPOT_27_HUNT_ENABLED 0
 set_kv JACKPOT_27_AGGRESSIVE 0
 set_kv JACKPOT_ROYAL_ENABLED 0
 set_kv JACKPOT_ROYAL_SHOWDOWN 0
 
 # Keep gin OFF — S10 qualified on chip-qual nit; do not undo at KO open.
-# Revisit only if post-enter KO analyze shows too-nitty for placement.
 set_kv CEMINI_GIN_STYLE 0
 set_kv CEMINI_GIN_STYLE_PREFLOP 0
 set_kv CEMINI_GIN_STYLE_POSTFLOP 0
@@ -123,7 +123,7 @@ set_kv CEMINI_SANITIZE_OUTPUT 1
 
 set_kv CEMINI_S1B_EXPLOIT 1
 set_kv CEMINI_NEMESIS_EXPLOIT 1
-set_kv CEMINI_NEMESIS_TIGHT 0
+set_kv CEMINI_NEMESIS_TIGHT 1
 set_kv CEMINI_NEMESIS_ARCHETYPE 1
 set_kv CEMINI_NEMESIS_PREMIUM_NIT 1
 set_kv CEMINI_NEMESIS_WIDE_PASSIVE 1
@@ -131,9 +131,9 @@ set_kv CEMINI_NEMESIS_LINEAR_AGGRO 1
 set_kv CEMINI_NEMESIS_PHOENIX_CLUSTER 1
 set_kv CEMINI_ISO_PASSIVE_LP 1
 set_kv CEMINI_SEAT_MATRIX_V2 1
-# Intel 2026-07-28: T9 + S10 overlap leaders (see briefs/2026-07-28_tournament-s10-go-live.md)
-set_kv CEMINI_NEMESIS_HANDLES "batu_karang,StartupBros,blacksite,kuma_zero,page,okonkwo,halloran,reichelligahh,sky_top,flintlock,ronin,clurit"
-set_kv CEMINI_NEMESIS_PREFIXES "batu_,kuma_,royal_,phoenix-,holonomic-,v12_,grok,si_,mako_"
+# Intel 2026-07-30: T9/T8 winners + S10 leaders + early T10
+set_kv CEMINI_NEMESIS_HANDLES "halloran,royal_79f44c,reaper,vigilate,okonkwo,whalealert,nineteenshot,sam_whale,lodestar,joseph,cosmometrics,batu_sabar,StartupBros,page,kav_grind,alex_nft,reichelligahh,flattened_v2,si_nekat,mako_shark,sky_top,stu_ungar,crimson_range,blacksite,kuma_zero,ronin,clurit,highroller,onyxfang"
+set_kv CEMINI_NEMESIS_PREFIXES "batu_,flattened_,kuma_,royal_,phoenix-,holonomic-,v12_,grok,si_,mako_,xiishii_"
 
 set_kv CEMINI_JOIN_RETRY_S 25
 set_kv CEMINI_CHASE_JOIN_RETRY_S 10
@@ -193,7 +193,8 @@ systemctl enable cemini-devfun-poker-export-crawl.timer 2>/dev/null || true
 systemctl start cemini-devfun-poker-export-crawl.service 2>/dev/null || true
 sleep 2
 systemctl is-active cemini-devfun-poker-lobby.service
-journalctl -u cemini-devfun-poker-lobby.service -n 20 --no-pager
+# Cap journal dump so SSH remote does not hang waiting on pager/pipe
+timeout 15 journalctl -u cemini-devfun-poker-lobby.service -n 20 --no-pager || true
 REMOTE
 
 # Mirror multi_comp on laptop
