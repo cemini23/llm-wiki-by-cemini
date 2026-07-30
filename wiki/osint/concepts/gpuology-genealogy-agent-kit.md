@@ -116,12 +116,21 @@ related:
   - sources/eval-repository-revenue-opportunity-analysis-2026-07-30-prenotami.md
   - sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md
   - entities/tools/prenotami-booker.md
+  - sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md
+  - entities/tools/uscis-api-evangelist.md
+  - entities/tools/austrian-58c-citizenship-kit.md
 maturity: draft
 created: 2026-07-20
 updated: 2026-07-30
 ---
 
 ## Relations
+
+- @entities/tools/austrian-58c-citizenship-kit.md — K214
+
+- @entities/tools/uscis-api-evangelist.md — K214
+
+- @sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md — K214
 
 - @entities/tools/prenotami-booker.md
 

@@ -84,12 +84,15 @@ related:
   - sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md
   - sources/substack-rss-capital-flows-2026-07-30-will-warsh-crash-the-stock-market.md
   - sources/substack-rss-event-horizon-2026-07-30-robinhood-prediction-markets-q2.md
+  - sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md
 maturity: draft
 created: 2026-06-14
 updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md — K214
 
 - @sources/substack-rss-event-horizon-2026-07-30-robinhood-prediction-markets-q2.md
 

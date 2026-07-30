@@ -11,12 +11,15 @@ related:
   - concepts/active-project-research-routing.md
   - sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md
   - sources/macro-charts-paid-forward-2026-07-30-korea-semis.md
+  - sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md
 maturity: draft
 created: 2026-07-28
 updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md — K214
 
 - @sources/macro-charts-paid-forward-2026-07-30-korea-semis.md — Jul 30 Korea/Semis chat
 

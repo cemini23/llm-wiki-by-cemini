@@ -1,6 +1,14 @@
 # Wiki Log
 
 
+
+## [2026-07-30] ingest | K214 — citizenship eval (sparse) + WuBlock Treasuries
+
+- **Inbox:** GitHub Project Revenue Evaluation.docx (NEW) + WuBlock Treasuries (NEW); exact sha re-drops of K213 CF/EH/Klement removed
+- **Eval:** 1 Extract USCIS → **NO-GO** (no SPDX); Austrian §58c kit live Watch; no Phase-0
+- **WuBlock:** term-premium / fiscal-dominance + KOSPI leverage unwind — TipDrop + GuruWatcher + **prod xsp**
+- **Archive:** egress-fi
+
 ## [2026-07-30] ingest | K213 — Italian GitHub evals + arXiv + Macro/LS/EH/CF
 
 - **Inbox:** 4 tool-eval docx + 4 arXiv PDF + Macro Charts chat + Latent Space ontologies + Capital Flows Warsh + Event Horizon RH PM + Klement

@@ -230,6 +230,7 @@ related:
   - sources/substack-rss-klement-2026-07-30-life-in-europe-is-just-better.md
   - sources/arxiv-2607.27083-cost-aware-stopping-tool-acquisition-2026-07-30.md
   - sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md
+  - sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md
 maturity: validated
 hub: true
 created: 2026-04-28
@@ -237,6 +238,8 @@ updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md — K214
 
 - @sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md
 

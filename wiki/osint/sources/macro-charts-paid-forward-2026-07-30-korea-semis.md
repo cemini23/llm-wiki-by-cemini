@@ -6,6 +6,7 @@ keywords: [KOSPI, SMH, Samsung, SK Hynix, NDX]
 related:
   - concepts/guruwatcher-newsletter-claim-ledger.md
   - concepts/macro-charts-regime-signals.md
+  - sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md
 maturity: draft
 created: 2026-07-30
 updated: 2026-07-30
@@ -13,6 +14,8 @@ read_status: deep-read
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md — K214
 
 - @concepts/macro-charts-regime-signals.md
 

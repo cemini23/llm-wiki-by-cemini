@@ -8,6 +8,13 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K214 — 2026-07-30 citizenship eval + WuBlock Treasuries
+
+- [GitHub Project Revenue Evaluation — citizenship](sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md)
+- [Wu Blockchain — Hidden Price of Treasuries](sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md)
+- Entities: uscis-api-evangelist (NO-GO) · austrian-58c-citizenship-kit (Watch)
+
+
 ### K213 — 2026-07-30 Italian evals + papers + newsletters
 
 - [GitHub Repository Revenue Analysis — Italian ecosystems](sources/eval-github-repository-revenue-analysis-2026-07-30-italian-ecosystems.md)

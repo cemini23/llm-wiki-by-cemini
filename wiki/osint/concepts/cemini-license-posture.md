@@ -51,6 +51,7 @@ related:
   - sources/eval-github-revenue-opportunity-analysis-2026-07-30-italian-mcp.md
   - sources/eval-repository-revenue-opportunity-analysis-2026-07-30-prenotami.md
   - sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md
+  - sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md
 maturity: draft
 hub: true
 created: 2026-05-03
@@ -58,6 +59,8 @@ updated: 2026-07-30
 ---
 
 ## Relations
+
+- @sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md — K214
 
 - @sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md — K213
 
