@@ -29,9 +29,10 @@ related:
   - sources/godot-engine-ai-contribution-policy-2026-07-01.md
   - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
   - entities/engines/godot-4.md
+  - concepts/tycho-arc-agi-active-abstraction-stub.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-03
+updated: 2026-07-31
 ---
 
 ## Relations

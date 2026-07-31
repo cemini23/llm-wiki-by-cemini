@@ -18,9 +18,10 @@ related:
   - entities/tools/godot-ai-playtest.md
   - entities/engines/godot-4.md
   - entities/projects/castle-sim.md
+  - concepts/tycho-arc-agi-active-abstraction-stub.md
 maturity: validated
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-07-31
 ---
 
 ## Relations
