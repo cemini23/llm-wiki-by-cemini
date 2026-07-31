@@ -1,5 +1,4 @@
 ---
-
 title: vibe-upgrader (Zeno-wistom)
 type: entity
 tags: [entity, tool, atto, phase-0, k215]
@@ -10,8 +9,8 @@ related:
 maturity: draft
 created: 2026-07-31
 updated: 2026-07-31
-wire_status: deferred
-wire_note: next: 0★ CONDITIONAL review before Extract wire
+wire_status: wont_wire
+wire_note: 0★ CONDITIONAL — patterns only; no Extract/MCP wire
 ---
 
 ## Relations

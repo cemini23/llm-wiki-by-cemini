@@ -59,6 +59,26 @@
       "env": {
         "DISCORD_OPS_DRY_RUN": "true"
       }
+    },
+    "chrome-devtools": {
+      "type": "stdio",
+      "disabled": false,
+      "command": "/Users/claudiobarone/Projects/OSINT WORKSPACE/.local/mcp-bins/node_modules/.bin/chrome-devtools-mcp",
+      "args": [
+        "--no-usage-statistics"
+      ],
+      "env": {}
+    },
+    "mcp-legal-it": {
+      "type": "stdio",
+      "disabled": false,
+      "command": "/Users/claudiobarone/Projects/OSINT WORKSPACE/.local/adopts/mcp-legal-it/.venv/bin/python",
+      "args": [
+        "/Users/claudiobarone/Projects/OSINT WORKSPACE/.local/adopts/mcp-legal-it/run_server.py"
+      ],
+      "env": {
+        "MCP_TRANSPORT": "stdio"
+      }
     }
   }
 }

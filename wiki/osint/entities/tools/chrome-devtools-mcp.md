@@ -1,5 +1,4 @@
 ---
-
 title: chrome-devtools-mcp — Chrome DevTools Protocol MCP server
 type: entity
 tags: [entity, tool, mcp, browser, k141, k202]
@@ -15,8 +14,8 @@ related:
 maturity: draft
 created: 2026-07-03
 updated: 2026-07-31
-wire_status: deferred
-wire_note: next: ask operator before project MCP install
+wire_status: runtime_wired
+wire_target: .cursor/mcp.json#chrome-devtools + osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

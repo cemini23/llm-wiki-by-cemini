@@ -38,8 +38,14 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - UI kits (`daisyui`, `heroicons`, `quill`, `cardkit`, `t3code`, `openwork`) → TipDrop/Atto product surfaces — **not** OSINT runtime installs.
 - `aisuite` / `outlines` / `omlx` = multi-provider / structured-output REFERENCE for xsp — no new MCP without operator OK.
 
+## Runtime MCP (project `.cursor/mcp.json`)
+
+- **chrome-devtools** — pinned local bin `.local/mcp-bins` (`chrome-devtools-mcp@1.6.0`) with `--no-usage-statistics` + scrubbed `env`. Prefer for portal/CDP debugging alongside built-in browser; no GuruWatcher order placement via browser. Reinstall: `cd .local/mcp-bins && npm i chrome-devtools-mcp@1.6.0`.
+- **mcp-legal-it** — local Phase-0 venv under `.local/adopts/mcp-legal-it`. **Human-gated** statute/citation lookup only — never unsupervised legal advice; strip PII before tools; do not treat outputs as filed pleadings. Reinstall: `cd .local/adopts/mcp-legal-it && python3 -m venv .venv && .venv/bin/pip install -e .`.
+
 ## Explicit non-wires (this surface)
 
 - No Image-gen / 3D local wire backlog.
 - No GRPO trainers, Harbor/Modal fleets, or `curl|sh`.
 - Large REFERENCE trees (`GeoLibre`, `likec4`, `t3code`, `openwork`, `omlx`, `ecc`) stay clones-only until a product brief demands Extract.
+- `vibe-upgrader` stays `wont_wire` (0★ CONDITIONAL — patterns only).
