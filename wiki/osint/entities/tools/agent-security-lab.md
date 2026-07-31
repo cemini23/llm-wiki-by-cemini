@@ -9,12 +9,15 @@ related:
   - sources/arxiv-2607.25890-shard-secure-harness-distribution.md
   - sources/newsletter-rss-latent-space-2026-07-29-rsi-hf-agent-attack.md
   - sources/arxiv-2607.27080-memsecbench-agent-memory-poisoning-2026-07-30.md
+  - sources/newsletter-rss-tldrsec-2026-07-30-339-hf-agentbaiting.md
 maturity: draft
 created: 2026-07-29
-updated: 2026-07-30
+updated: 2026-07-31
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-tldrsec-2026-07-30-339-hf-agentbaiting.md — K215
 
 - @sources/arxiv-2607.27080-memsecbench-agent-memory-poisoning-2026-07-30.md — MemSecBench
 

@@ -8,6 +8,18 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K215 — 2026-07-31 PII evals + AgentRadio + Macro/EH/Wu/tl;dr
+
+- [Repo Revenue Analysis — Remnawave/vibe](sources/eval-github-repo-revenue-analysis-2026-07-31-panel-vibe.md)
+- [Repo Opportunity — PII privacy](sources/eval-github-repo-revenue-opportunity-analysis-2026-07-31-pii-privacy.md)
+- [Revenue Analyst — MinerU](sources/eval-revenue-analyst-url-evaluation-2026-07-31-mineru.md)
+- [Macro Jul-31 SA wipeout / KOSPI](sources/macro-charts-paid-forward-2026-07-31-situational-awareness-kospi.md)
+- [EH NY AG Kalshi](sources/substack-rss-event-horizon-2026-07-31-ny-ag-sues-kalshi.md)
+- [WuBlock weekly](sources/substack-rss-wublock-2026-07-31-weekly-sec-clarity-etp.md)
+- [tl;dr sec #339 AgentBaiting](sources/newsletter-rss-tldrsec-2026-07-30-339-hf-agentbaiting.md)
+- Entities: pii-redaction · privacy-filter · openredaction · vibe-upgrader · mineru · agentradio
+
+
 ### K214 — 2026-07-30 citizenship eval + WuBlock Treasuries
 
 - [GitHub Project Revenue Evaluation — citizenship](sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md)

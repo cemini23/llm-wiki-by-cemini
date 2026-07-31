@@ -178,13 +178,31 @@ related:
   - concepts/toolbench-x-tool-reliability-hazards.md
   - entities/tools/toolbench-x.md
   - sources/newsletter-rss-latent-space-2026-07-30-ontologies-are-so-back.md
+  - sources/arxiv-2607.27578-prompt-graph-engineering-2026-07-31.md
+  - sources/arxiv-2607.28430-agentradio-passive-awareness-2026-07-31.md
+  - sources/arxiv-2607.28591-change2task-repo-changes-to-agent-tasks-2026-07-31.md
+  - sources/arxiv-2607.28609-osreward-computer-use-reward-models-2026-07-31.md
+  - sources/newsletter-rss-latent-space-2026-07-31-ainews-gpt56-price-cut.md
+  - entities/tools/agentradio.md
 maturity: validated
 hub: true
 created: 2026-04-26
-updated: 2026-07-30
+updated: 2026-07-31
 ---
 
 ## Relations
+
+- @entities/tools/agentradio.md — K215
+
+- @sources/newsletter-rss-latent-space-2026-07-31-ainews-gpt56-price-cut.md — K215
+
+- @sources/arxiv-2607.28609-osreward-computer-use-reward-models-2026-07-31.md — K215
+
+- @sources/arxiv-2607.28591-change2task-repo-changes-to-agent-tasks-2026-07-31.md — K215
+
+- @sources/arxiv-2607.28430-agentradio-passive-awareness-2026-07-31.md — K215
+
+- @sources/arxiv-2607.27578-prompt-graph-engineering-2026-07-31.md — K215
 
 - @sources/newsletter-rss-latent-space-2026-07-30-ontologies-are-so-back.md — ontologies guardrails
 

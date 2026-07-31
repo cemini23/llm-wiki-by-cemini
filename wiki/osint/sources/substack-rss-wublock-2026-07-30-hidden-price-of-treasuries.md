@@ -8,13 +8,19 @@ related:
   - concepts/guruwatcher-newsletter-claim-ledger.md
   - concepts/macro-charts-regime-signals.md
   - sources/macro-charts-paid-forward-2026-07-30-korea-semis.md
+  - sources/macro-charts-paid-forward-2026-07-31-situational-awareness-kospi.md
+  - sources/substack-rss-wublock-2026-07-31-weekly-sec-clarity-etp.md
 maturity: draft
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 read_status: deep-read
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-07-31-weekly-sec-clarity-etp.md — K215
+
+- @sources/macro-charts-paid-forward-2026-07-31-situational-awareness-kospi.md — K215
 
 - @concepts/xsp-lane-trading-framework.md — term-premium / vol regime
 - @concepts/guruwatcher-newsletter-claim-ledger.md — Korea crash claims

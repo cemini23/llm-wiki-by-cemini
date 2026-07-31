@@ -5,13 +5,16 @@ tags: [source, newsletter, capital-flows, xsp, k213]
 keywords: [Warsh, Fed, rates, equity]
 related:
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-capital-flows-2026-07-30-video-breakdown-warsh.md
 maturity: draft
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
 read_status: skimmed
 ---
 
 ## Relations
+
+- @sources/substack-rss-capital-flows-2026-07-30-video-breakdown-warsh.md — K215
 
 - @concepts/xsp-lane-trading-framework.md — macro regime notes
 

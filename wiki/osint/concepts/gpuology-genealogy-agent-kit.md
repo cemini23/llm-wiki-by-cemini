@@ -119,12 +119,36 @@ related:
   - sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md
   - entities/tools/uscis-api-evangelist.md
   - entities/tools/austrian-58c-citizenship-kit.md
+  - sources/eval-github-repo-revenue-opportunity-analysis-2026-07-31-pii-privacy.md
+  - sources/eval-github-repo-revenue-analysis-2026-07-31-panel-vibe.md
+  - sources/eval-revenue-analyst-url-evaluation-2026-07-31-mineru.md
+  - entities/tools/pii-redaction.md
+  - entities/tools/privacy-filter.md
+  - entities/tools/openredaction.md
+  - entities/tools/vibe-upgrader.md
+  - entities/tools/mineru.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-30
+updated: 2026-07-31
 ---
 
 ## Relations
+
+- @entities/tools/mineru.md — K215
+
+- @entities/tools/vibe-upgrader.md — K215
+
+- @entities/tools/openredaction.md — K215
+
+- @entities/tools/privacy-filter.md — K215
+
+- @entities/tools/pii-redaction.md — K215
+
+- @sources/eval-revenue-analyst-url-evaluation-2026-07-31-mineru.md — K215
+
+- @sources/eval-github-repo-revenue-analysis-2026-07-31-panel-vibe.md — K215
+
+- @sources/eval-github-repo-revenue-opportunity-analysis-2026-07-31-pii-privacy.md — K215
 
 - @entities/tools/austrian-58c-citizenship-kit.md — K214
 

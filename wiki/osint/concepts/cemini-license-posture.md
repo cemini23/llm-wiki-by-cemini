@@ -52,13 +52,22 @@ related:
   - sources/eval-repository-revenue-opportunity-analysis-2026-07-30-prenotami.md
   - sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md
   - sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md
+  - sources/eval-github-repo-revenue-analysis-2026-07-31-panel-vibe.md
+  - sources/eval-github-repo-revenue-opportunity-analysis-2026-07-31-pii-privacy.md
+  - sources/newsletter-rss-tldrsec-2026-07-30-339-hf-agentbaiting.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-07-30
+updated: 2026-07-31
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-tldrsec-2026-07-30-339-hf-agentbaiting.md — K215
+
+- @sources/eval-github-repo-revenue-opportunity-analysis-2026-07-31-pii-privacy.md — K215
+
+- @sources/eval-github-repo-revenue-analysis-2026-07-31-panel-vibe.md — K215
 
 - @sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md — K214
 

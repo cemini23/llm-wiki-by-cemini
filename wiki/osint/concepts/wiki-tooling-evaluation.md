@@ -231,13 +231,28 @@ related:
   - sources/arxiv-2607.27083-cost-aware-stopping-tool-acquisition-2026-07-30.md
   - sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md
   - sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md
+  - sources/eval-github-repo-revenue-analysis-2026-07-31-panel-vibe.md
+  - sources/eval-github-repo-revenue-opportunity-analysis-2026-07-31-pii-privacy.md
+  - sources/eval-revenue-analyst-url-evaluation-2026-07-31-mineru.md
+  - sources/arxiv-2607.27578-prompt-graph-engineering-2026-07-31.md
+  - sources/arxiv-2607.28513-creative-transformation-literary-texts-2026-07-31.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-30
+updated: 2026-07-31
 ---
 
 ## Relations
+
+- @sources/arxiv-2607.28513-creative-transformation-literary-texts-2026-07-31.md — K215
+
+- @sources/arxiv-2607.27578-prompt-graph-engineering-2026-07-31.md — K215
+
+- @sources/eval-revenue-analyst-url-evaluation-2026-07-31-mineru.md — K215
+
+- @sources/eval-github-repo-revenue-opportunity-analysis-2026-07-31-pii-privacy.md — K215
+
+- @sources/eval-github-repo-revenue-analysis-2026-07-31-panel-vibe.md — K215
 
 - @sources/eval-github-project-revenue-evaluation-2026-07-30-citizenship.md — K214
 

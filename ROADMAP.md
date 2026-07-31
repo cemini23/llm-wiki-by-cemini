@@ -23,7 +23,11 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
-## Current state (2026-07-30 — K214)
+## Current state (2026-07-31 — K215)
+
+- **K215 ingest** — PII redaction MIT Extracts + AgentRadio; Macro SA/KOSPI; NY AG Kalshi suit; Wu weekly; AgentBaiting. Prod scp pm+xsp. Phase-0 ~24MB.
+
+## Prior state (2026-07-30 — K214)
 
 - **K214 ingest** — citizenship GitHub eval (USCIS Extract NO-GO; Austrian §58c Watch) + WuBlock Treasuries term-premium. No Phase-0. Briefs → Atto/GuruWatcher/TipDrop; **prod xsp** scp.
 

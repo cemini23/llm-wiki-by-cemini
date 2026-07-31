@@ -2,6 +2,14 @@
 
 
 
+
+## [2026-07-31] ingest | K215 — PII redaction evals + AgentRadio + Macro/EH/Wu/tl;dr
+
+- **Inbox:** 3 tool-eval docx (text-dup Revenue Analyst `(1)` removed) + 5 arXiv + Macro + LS + tl;dr sec + EH Kalshi + Wu weekly + CF Warsh video
+- **Phase-0 (~24MB):** pii-redaction, privacy-filter, openredaction, vibe-upgrader, agentradio
+- **NO-GO/Watch:** Remnawave AGPL; MinerU NOASSERTION; DataFog/phileas size Watch; Sublist3r GPL patterns
+- **Briefs:** Atto PII · GuruWatcher Macro · TipDrop Wu · CCC harness · cyber AgentBaiting · **prod** pm Kalshi + xsp
+
 ## [2026-07-30] ingest | K214 — citizenship eval (sparse) + WuBlock Treasuries
 
 - **Inbox:** GitHub Project Revenue Evaluation.docx (NEW) + WuBlock Treasuries (NEW); exact sha re-drops of K213 CF/EH/Klement removed

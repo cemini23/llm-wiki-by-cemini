@@ -54,12 +54,15 @@ related:
   - sources/substack-rss-klement-2026-07-29-2-percent-inflation-target.md
   - sources/macro-charts-paid-forward-2026-07-30-korea-semis.md
   - sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md
+  - sources/macro-charts-paid-forward-2026-07-31-situational-awareness-kospi.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-30
+updated: 2026-07-31
 ---
 
 ## Relations
+
+- @sources/macro-charts-paid-forward-2026-07-31-situational-awareness-kospi.md — K215
 
 - @sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md — K214
 
