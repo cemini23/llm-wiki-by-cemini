@@ -4,9 +4,11 @@
 
 ## [2026-07-31] phase1 | runtime MCP chrome-devtools + mcp-legal-it
 
-- Operator OK for recommended MCP: project `.cursor/mcp.json` — `chrome-devtools` (pinned 1.6.0, `--no-usage-statistics`) + `mcp-legal-it` (local Phase-0 venv, human-gated)
+- Operator OK for recommended MCP: project `.cursor/mcp.json` — `chrome-devtools` (pinned local `.local/mcp-bins` @1.6.0, `--no-usage-statistics`, scrubbed env) + `mcp-legal-it` (local Phase-0 venv, human-gated, `MCP_TRANSPORT=stdio`)
+- Install helper: `scripts/mcp_chrome_devtools_install.sh`
 - Policy: `.cursor/rules/osint-phase1-adopt-wires.mdc` Runtime MCP section
 - `vibe-upgrader` → `wont_wire` (0★ shelf)
+- Preflight: new MCP medium findings only (env inheritance / prior npx); CRITICAL hits are pre-existing route always-approve wording — left as-is
 - Deferred backlog for OSINT clones: **empty**
 
 ## [2026-07-31] phase1 | OSINT backlog clear
