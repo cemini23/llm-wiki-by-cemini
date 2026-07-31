@@ -1171,8 +1171,10 @@ def decide(
             first_protect=first_protect,
         )
     survival_tight = (
-        _survival_mode(self_seat)
-        or bool(ctx.get("survival_mode"))
+        (
+            (_survival_mode(self_seat) or bool(ctx.get("survival_mode")))
+            and not placement_chase
+        )
         or qual_protect
         or lead_protect
     )
@@ -1180,13 +1182,13 @@ def decide(
     if survival_tight:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.04, "call_margin_delta": 0.05})
     elif placement_chase:
-        # Chase must win over mild KO hour-one (super-audit T10 2026-07-30).
+        # Chase must win over mild KO / stack ratchet when behind the bubble.
         margins = _merge_margins(
             margins,
             {
-                "fold_slack_delta": -0.02,
-                "call_margin_delta": -0.02,
-                "chase_open_equity": 0.30,
+                "fold_slack_delta": -0.04,
+                "call_margin_delta": -0.04,
+                "chase_open_equity": 0.38,
             },
         )
     elif ko_survival:

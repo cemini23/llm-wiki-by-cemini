@@ -69,16 +69,18 @@ _CHASE_CO_STEAL = _CO_LEAD_STEAL | frozenset({
 })
 
 _CHASE_MP_STEAL = frozenset({
-    "66", "77", "88", "99", "TT", "JJ", "QQ", "KK", "AA",
-    "ATs", "AJs", "AQs", "AKs", "AQo", "AKo", "AJo",
-    "KQs", "KJs", "QJs", "JTs", "T9s", "98s", "87s",
+    "55", "66", "77", "88", "99", "TT", "JJ", "QQ", "KK", "AA",
+    "A9s", "ATs", "AJs", "AQs", "AKs", "AQo", "AKo", "AJo", "ATo",
+    "KQs", "KJs", "KTs", "QJs", "QTs", "JTs", "T9s", "98s", "87s", "76s",
 })
 
 _CHASE_SB_STEAL = frozenset({
     "22", "33", "44", "55", "66", "77", "88", "99", "TT",
     "A2s", "A3s", "A4s", "A5s", "A6s", "A7s", "A8s", "A9s",
-    "ATs", "AJs", "AQs", "AKs", "A9o", "ATo", "AJo", "AQo", "AKo",
-    "K9s", "KTs", "KJs", "KQs", "QJs", "QTs", "JTs", "T9s", "98s", "87s",
+    "ATs", "AJs", "AQs", "AKs", "A2o", "A3o", "A4o", "A5o",
+    "A9o", "ATo", "AJo", "AQo", "AKo",
+    "K9s", "KTs", "KJs", "KQs", "K9o", "KTo", "QJs", "QTs", "QJo",
+    "JTs", "J9s", "T9s", "T8s", "98s", "87s", "76s", "65s",
 })
 
 

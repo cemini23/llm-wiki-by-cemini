@@ -263,10 +263,9 @@ def _apply_competition_posture(competition_id: str) -> None:
             "JACKPOT_27_HUNT_ENABLED": "0",
         })
     elif _s10_tournament:
-        # Tournament S10 KO — placement EV (bracket ~25 / money-zone protect top-3 for win chase).
-        # Gin OFF: keep the Playground S10 qual style; widen only after KO analyze.
-        # Super-audit 2026-07-30: do not force prize=10 (stalls chase); do not set
-        # survival_mode via KO lane (fixed in decide path below).
+        # Tournament S10 KO — behind-the-bubble CLIMB (2026-07-31).
+        # Evidence: ~79% fold / 12h, #2 → #46 @ ~740 chips. Gin OFF + nemesis_tight
+        # + KO ratchet were too nitty vs halloran-class VPIP~0.26 field.
         os.environ.update({
             "CEMINI_TOURNAMENT_MODE": "1",
             "CEMINI_TABLE_FORMAT": "auto",
@@ -277,24 +276,26 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_EVAL_PANEL_MODE": "0",
             "CEMINI_PRIZE_CUTOFF_RANK": "3",
             "CEMINI_QUAL_CUTOFF_RANK": "25",
-            "CEMINI_KO_SURVIVAL": "1",
-            "CEMINI_KO_SURVIVAL_HANDS": "20",
-            "CEMINI_SURVIVAL_STACK_CHIPS": "350",
-            "CEMINI_S1B_MIN_STACK_BB": "35",
+            "CEMINI_KO_SURVIVAL": "0",
+            "CEMINI_KO_SURVIVAL_HANDS": "0",
+            "CEMINI_SURVIVAL_STACK_CHIPS": "200",
+            "CEMINI_S1B_MIN_STACK_BB": "25",
             "CEMINI_STAGGER_LOCKS": "0",
-            "CEMINI_COLD_START_NO_STEAL": "1",
-            "CEMINI_NEMESIS_TIGHT": "1",
-            "CEMINI_GIN_STYLE": "0",
-            "CEMINI_GIN_STYLE_PREFLOP": "0",
-            "CEMINI_GIN_STYLE_POSTFLOP": "0",
-            "CEMINI_GIN_STYLE_GATE": "0",
-            "CEMINI_GIN_V008": "0",
+            "CEMINI_COLD_START_NO_STEAL": "0",
+            "CEMINI_NEMESIS_TIGHT": "0",
+            "CEMINI_GIN_STYLE": "1",
+            "CEMINI_GIN_STYLE_PREFLOP": "1",
+            "CEMINI_GIN_STYLE_POSTFLOP": "1",
+            "CEMINI_GIN_STYLE_GATE": "1",
+            "CEMINI_GIN_V008": "1",
+            "CEMINI_GIN_V2_EXPLOITS": "1",
             "CEMINI_MAFP_CHART": "0",
             "CEMINI_SOLVER_V3": "0",
             "CEMINI_EVAL_CRUSH": "0",
-            "CEMINI_JOIN_RETRY_S": "25",
-            "CEMINI_IN_QUEUE_RETRY_S": "60",
-            "CEMINI_LOW_STACK_JOIN_RETRY_S": "30",
+            "CEMINI_JOIN_RETRY_S": "12",
+            "CEMINI_CHASE_JOIN_RETRY_S": "8",
+            "CEMINI_IN_QUEUE_RETRY_S": "25",
+            "CEMINI_LOW_STACK_JOIN_RETRY_S": "15",
             "JACKPOT_ROYAL_ENABLED": "0",
             "JACKPOT_ROYAL_SHOWDOWN": "0",
             "JACKPOT_27_HUNT_ENABLED": "0",

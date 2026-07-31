@@ -91,7 +91,7 @@ set_kv CEMINI_TOURNAMENT_MODE 1
 set_kv CEMINI_EVAL_PANEL_GATE 0
 set_kv CEMINI_EVAL_PANEL_MODE 0
 set_kv CEMINI_EVAL_PANEL_BB100_FLOOR -25
-# Money-zone protect at top-3 (super-audit: prize=10 stalled chase too early)
+# Money-zone protect at top-3; climb widen when behind (2026-07-31)
 set_kv CEMINI_PRIZE_CUTOFF_RANK 3
 set_kv CEMINI_QUAL_CUTOFF_RANK 25
 set_kv CEMINI_STAGGER_LOCKS 0
@@ -99,31 +99,30 @@ set_kv CEMINI_STAGGER_LOCKS 0
 set_kv CEMINI_QUAL_BUFFER_CHIPS 999999
 set_kv CEMINI_LEAD_BUFFER_CHIPS 999999
 set_kv CEMINI_PACE_PHASE ""
-set_kv CEMINI_KO_SURVIVAL 1
-set_kv CEMINI_KO_SURVIVAL_HANDS 20
+set_kv CEMINI_KO_SURVIVAL 0
+set_kv CEMINI_KO_SURVIVAL_HANDS 0
 set_kv CEMINI_KO_SURVIVAL_MIN_STACK 600
-# 350 ≈ 17.5bb on 20bb start — not 800 (40bb after one pot)
-set_kv CEMINI_SURVIVAL_STACK_CHIPS 350
-set_kv CEMINI_S1B_MIN_STACK_BB 35
+set_kv CEMINI_SURVIVAL_STACK_CHIPS 200
+set_kv CEMINI_S1B_MIN_STACK_BB 25
 set_kv JACKPOT_27_HUNT_ENABLED 0
 set_kv JACKPOT_27_AGGRESSIVE 0
 set_kv JACKPOT_ROYAL_ENABLED 0
 set_kv JACKPOT_ROYAL_SHOWDOWN 0
 
-# Keep gin OFF — S10 qualified on chip-qual nit; do not undo at KO open.
-set_kv CEMINI_GIN_STYLE 0
-set_kv CEMINI_GIN_STYLE_PREFLOP 0
-set_kv CEMINI_GIN_STYLE_POSTFLOP 0
-set_kv CEMINI_GIN_STYLE_GATE 0
-set_kv CEMINI_GIN_V008 0
-set_kv CEMINI_GIN_V2_EXPLOITS 0
-set_kv CEMINI_COLD_START_NO_STEAL 1
+# Climb: gin ON — field VPIP~0.26 winners; 79% fold was bleeding blinds
+set_kv CEMINI_GIN_STYLE 1
+set_kv CEMINI_GIN_STYLE_PREFLOP 1
+set_kv CEMINI_GIN_STYLE_POSTFLOP 1
+set_kv CEMINI_GIN_STYLE_GATE 1
+set_kv CEMINI_GIN_V008 1
+set_kv CEMINI_GIN_V2_EXPLOITS 1
+set_kv CEMINI_COLD_START_NO_STEAL 0
 set_kv CEMINI_NUTS_DETECT 1
 set_kv CEMINI_SANITIZE_OUTPUT 1
 
 set_kv CEMINI_S1B_EXPLOIT 1
 set_kv CEMINI_NEMESIS_EXPLOIT 1
-set_kv CEMINI_NEMESIS_TIGHT 1
+set_kv CEMINI_NEMESIS_TIGHT 0
 set_kv CEMINI_NEMESIS_ARCHETYPE 1
 set_kv CEMINI_NEMESIS_PREMIUM_NIT 1
 set_kv CEMINI_NEMESIS_WIDE_PASSIVE 1
@@ -135,10 +134,10 @@ set_kv CEMINI_SEAT_MATRIX_V2 1
 set_kv CEMINI_NEMESIS_HANDLES "halloran,royal_79f44c,reaper,vigilate,okonkwo,whalealert,nineteenshot,sam_whale,lodestar,joseph,cosmometrics,batu_sabar,StartupBros,page,kav_grind,alex_nft,reichelligahh,flattened_v2,si_nekat,mako_shark,sky_top,stu_ungar,crimson_range,blacksite,kuma_zero,ronin,clurit,highroller,onyxfang"
 set_kv CEMINI_NEMESIS_PREFIXES "batu_,flattened_,kuma_,royal_,phoenix-,holonomic-,v12_,grok,si_,mako_,xiishii_"
 
-set_kv CEMINI_JOIN_RETRY_S 25
-set_kv CEMINI_CHASE_JOIN_RETRY_S 10
-set_kv CEMINI_IN_QUEUE_RETRY_S 60
-set_kv CEMINI_LOW_STACK_JOIN_RETRY_S 30
+set_kv CEMINI_JOIN_RETRY_S 12
+set_kv CEMINI_CHASE_JOIN_RETRY_S 8
+set_kv CEMINI_IN_QUEUE_RETRY_S 25
+set_kv CEMINI_LOW_STACK_JOIN_RETRY_S 15
 set_kv CEMINI_EXPORT_DIR "reports/exports/${EXPORT_SLUG}"
 set_kv CEMINI_FIELD_EXPORT_HUD 1
 set_kv CEMINI_FIELD_EXPORT_DIR "reports/exports/${EXPORT_SLUG}"
