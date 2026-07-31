@@ -1,4 +1,5 @@
 ---
+
 title: "book-to-skill — book corpus → Claude skill pipeline"
 type: entity
 tags: [tool, integrate, mit, k198, atto, ccc]
@@ -13,8 +14,10 @@ related:
   - entities/tools/aisuite.md
 maturity: draft
 created: 2026-05-31
-updated: 2026-07-28
+updated: 2026-07-31
 phase_0_verdict: INTEGRATE — K198 MIT shallow adopt (~1MB)
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

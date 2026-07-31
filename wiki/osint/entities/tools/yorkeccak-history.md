@@ -10,7 +10,9 @@ related:
   - concepts/computational-genealogy-archival-automation.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-31
+wire_status: wont_wire
+wire_note: genealogy REFERENCE shelf; Extract workflow only via Atto
 ---
 
 ## Relations

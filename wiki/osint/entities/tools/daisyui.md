@@ -1,4 +1,5 @@
 ---
+
 title: daisyUI — Tailwind component library
 type: entity
 tags: [entity, tool, ui, k202, integrate, atto]
@@ -10,7 +11,9 @@ related:
   - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-31
+wire_status: wont_wire
+wire_note: UI TipDrop/Atto; not OSINT runtime
 ---
 
 ## Relations

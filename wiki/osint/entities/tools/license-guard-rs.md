@@ -1,4 +1,5 @@
 ---
+
 title: "license-guard-rs"
 type: entity
 tags: [tool, atto, licensing, k191, extract]
@@ -12,7 +13,9 @@ related:
   - entities/tools/licenseseat.md
 maturity: draft
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

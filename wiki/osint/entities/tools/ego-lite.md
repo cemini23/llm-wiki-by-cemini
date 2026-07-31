@@ -1,4 +1,5 @@
 ---
+
 title: "ego-lite"
 type: entity
 tags: [tool, atto, browser-agent, k195, integrate]
@@ -11,7 +12,9 @@ related:
   - entities/tools/opencli.md
 maturity: draft
 created: 2026-07-25
-updated: 2026-07-25
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

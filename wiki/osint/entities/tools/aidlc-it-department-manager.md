@@ -1,4 +1,5 @@
 ---
+
 title: "ph4n70mr1ddl3r/aidlc (IT Department Manager — eval misfit)"
 type: entity
 tags: [tool, watch, k191]
@@ -8,7 +9,9 @@ related:
   - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-07-31
+wire_status: wont_wire
+wire_note: no SPDX / OOD IT manager kit
 ---
 
 ## Relations

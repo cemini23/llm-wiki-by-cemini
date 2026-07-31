@@ -1,4 +1,5 @@
 ---
+
 title: autoresearch-genealogy (mattprusak)
 type: entity
 tags: [tool, genealogy, claude-code, k157, integrate]
@@ -13,7 +14,9 @@ related:
   - entities/tools/davila7-claude-code-templates.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-22
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

@@ -1,4 +1,5 @@
 ---
+
 title: claude-immigration-attorney — evidence-backed petition skills
 type: entity
 tags: [entity, tool, atto, claude-code, skills, phase-0, k211]
@@ -9,7 +10,9 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
 maturity: draft
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

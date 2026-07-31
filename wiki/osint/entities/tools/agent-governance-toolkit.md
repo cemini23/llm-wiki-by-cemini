@@ -1,4 +1,5 @@
 ---
+
 title: "Microsoft Agent Governance Toolkit"
 type: entity
 tags: [tool, extract, mit, k198, atto, ccc]
@@ -11,8 +12,10 @@ related:
   - entities/tools/aisuite.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-07-31
 phase_0_verdict: EXTRACT — K198 MIT shallow adopt
+wire_status: wont_wire
+wire_note: large REFERENCE; use manifest patterns only
 ---
 
 ## Relations

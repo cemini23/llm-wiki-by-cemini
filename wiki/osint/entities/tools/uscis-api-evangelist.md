@@ -1,4 +1,5 @@
 ---
+
 title: us-citizenship-and-immigration-services (api-evangelist)
 type: entity
 tags: [entity, tool, atto, uscis, k214, no-go]
@@ -9,7 +10,9 @@ related:
   - concepts/cemini-license-posture.md
 maturity: draft
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
+wire_status: wont_wire
+wire_note: no SPDX; NO-GO Phase-0
 ---
 
 ## Relations

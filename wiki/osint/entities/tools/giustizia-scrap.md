@@ -1,4 +1,5 @@
 ---
+
 title: giustizia-scrap — Italian justice scrape (2019)
 type: entity
 tags: [entity, tool, atto, phase-0, k213]
@@ -7,7 +8,9 @@ related:
   - sources/eval-revenue-analyst-url-evaluation-2026-07-30-quill-hono.md
 maturity: draft
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

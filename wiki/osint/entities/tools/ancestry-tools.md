@@ -1,4 +1,5 @@
 ---
+
 title: "ancestry-tools (cdhorn)"
 type: entity
 tags: [tool, genealogy, atto, k190]
@@ -10,7 +11,9 @@ related:
   - concepts/computational-genealogy-archival-automation.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

@@ -1,4 +1,5 @@
 ---
+
 title: "qiaomu-opencli-skills — social scrape skills"
 type: entity
 tags: [tool, tipdrop, k197, extract]
@@ -9,7 +10,9 @@ related:
   - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

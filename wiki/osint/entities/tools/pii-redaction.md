@@ -1,4 +1,5 @@
 ---
+
 title: pii-redaction
 type: entity
 tags: [entity, tool, atto, phase-0, k215, pii]
@@ -9,6 +10,8 @@ related:
 maturity: draft
 created: 2026-07-31
 updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

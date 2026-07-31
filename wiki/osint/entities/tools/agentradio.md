@@ -1,4 +1,5 @@
 ---
+
 title: AgentRadio — passive multi-agent awareness
 type: entity
 tags: [entity, tool, ccc, phase-0, k215]
@@ -9,6 +10,8 @@ related:
 maturity: draft
 created: 2026-07-31
 updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/cemini-phase1-policy-wires.mdc
 ---
 
 ## Relations

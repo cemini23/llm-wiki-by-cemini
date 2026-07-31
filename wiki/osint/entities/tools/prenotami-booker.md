@@ -1,4 +1,5 @@
 ---
+
 title: prenotami-booker (saml7n)
 type: entity
 tags: [entity, tool, atto, prenotami, watch, phase-0, k213]
@@ -9,7 +10,9 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
 maturity: draft
 created: 2026-07-30
-updated: 2026-07-30
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

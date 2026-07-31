@@ -1,4 +1,5 @@
 ---
+
 title: "stiggio/skills (Stigg agent skills)"
 type: entity
 tags: [tool, tipdrop, entitlements, k191, extract]
@@ -9,7 +10,9 @@ related:
   - concepts/active-project-research-routing.md
 maturity: draft
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-07-31
+wire_status: wont_wire
+wire_note: TipDrop licensing skills; route TipDrop
 ---
 
 ## Relations

@@ -1,5 +1,6 @@
 ---
 
+
 title: OpenAI Codex Security CLI
 type: entity
 tags: [entity, tool, security, codex, ccc, cybersec, phase-0, k211]
@@ -12,7 +13,9 @@ related:
   - sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md
 maturity: draft
 created: 2026-07-29
-updated: 2026-07-30
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

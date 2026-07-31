@@ -1,4 +1,5 @@
 ---
+
 title: chrome-devtools-mcp — Chrome DevTools Protocol MCP server
 type: entity
 tags: [entity, tool, mcp, browser, k141, k202]
@@ -13,7 +14,9 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
 maturity: draft
 created: 2026-07-03
-updated: 2026-07-28
+updated: 2026-07-31
+wire_status: deferred
+wire_note: next: ask operator before project MCP install
 ---
 
 ## Relations

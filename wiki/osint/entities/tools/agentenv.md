@@ -1,4 +1,5 @@
 ---
+
 title: AgentENV — Firecracker microVM agent isolation
 type: entity
 tags: [entity, tool, sandbox, firecracker, watch, k211]
@@ -10,7 +11,9 @@ related:
   - entities/tools/openai-codex-security.md
 maturity: draft
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

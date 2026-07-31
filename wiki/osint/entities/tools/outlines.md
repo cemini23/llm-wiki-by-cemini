@@ -1,4 +1,5 @@
 ---
+
 title: "Outlines (structured generation)"
 type: entity
 tags: [entity, tool, k182, integrate]
@@ -10,7 +11,9 @@ related:
   - sources/eval-url-revenue-opportunity-analysis-2026-07-22.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations

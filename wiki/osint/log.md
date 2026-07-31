@@ -2,6 +2,14 @@
 
 
 
+## [2026-07-31] phase1 | OSINT backlog clear
+
+- Inventory: CCC `phase1_adopt_inventory.py` — OSINT clones **Unwired → 0**
+- Policy rule: `.cursor/rules/osint-phase1-adopt-wires.mdc` (alwaysApply) — Atto PII/evidence, GuruWatcher alerts, scraper isolation, license/AgentBaiting, finance routing
+- Meta pointer: `.cursor/rules/cemini-phase1-policy-wires.mdc` → OSINT rule + AgentRadio
+- Entity frontmatter: ~58 tools set `policy_wired` | `wont_wire` | `deferred`
+- Deferred (no MCP install): chrome-devtools-mcp · mcp-legal-it · vibe-upgrader
+- Zero Image-gen/3D wires; no trainers/Harbor/curl|sh
 
 ## [2026-07-31] ingest | K215 — PII redaction evals + AgentRadio + Macro/EH/Wu/tl;dr
 

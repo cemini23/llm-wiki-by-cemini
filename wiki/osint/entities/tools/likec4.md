@@ -1,4 +1,5 @@
 ---
+
 title: "LikeC4 architecture-as-code"
 type: entity
 tags: [entity, tool, k182, extract]
@@ -9,7 +10,9 @@ related:
   - sources/eval-url-revenue-opportunity-analysis-2026-07-22.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-07-31
+wire_status: wont_wire
+wire_note: diagramming REFERENCE; not OSINT daily
 ---
 
 ## Relations

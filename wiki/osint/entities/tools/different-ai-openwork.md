@@ -1,4 +1,5 @@
 ---
+
 title: different-ai/OpenWork — MCP desktop UI Extract for Atto
 type: entity
 tags: [entity, tool, mcp, atto, k204, extract, phase0]
@@ -10,7 +11,9 @@ related:
   - concepts/cemini-license-posture.md
 maturity: validated
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-07-31
+wire_status: wont_wire
+wire_note: desktop REFERENCE; Atto Extract brief only
 ---
 
 ## Relations

@@ -1,4 +1,5 @@
 ---
+
 title: "aisuite"
 type: entity
 tags: [tool, xsp, llm-routing, k195, k198, extract, atto]
@@ -13,7 +14,9 @@ related:
   - entities/tools/agent-governance-toolkit.md
 maturity: draft
 created: 2026-07-25
-updated: 2026-07-28
+updated: 2026-07-31
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations
