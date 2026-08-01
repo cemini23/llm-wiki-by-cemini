@@ -7,6 +7,23 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K217 ingest (2026-08-01)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-github-ocr-repositories-2026-08-01](sources/eval-github-ocr-repositories-2026-08-01.md) | Tool eval — OCR / VLM repos (K217) | draft |
+| [eval-github-repo-revenue-analysis-htr-2026-08-01](sources/eval-github-repo-revenue-analysis-htr-2026-08-01.md) | Tool eval — HTR / HTTP (K217) | draft |
+| [substack-rss-wublock-2026-08-01-weekly-project-updates-pumpfun-cuts](sources/substack-rss-wublock-2026-08-01-weekly-project-updates-pumpfun-cuts.md) | WuBlock weekly — PumpFun / HL revenue concentration | draft |
+| [curiosity-localocr](entities/tools/curiosity-localocr.md) | localOCR UI Extract | draft |
+| [unlimited-ocr](entities/tools/unlimited-ocr.md) | Unlimited-OCR Phase-0 refresh | draft |
+| [simplehtr](entities/tools/simplehtr.md) | SimpleHTR CTC Extract | draft |
+| [ocrmypdf](entities/tools/ocrmypdf.md) | OCRmyPDF Watch MPL | draft |
+| [deepseek-ocr](entities/tools/deepseek-ocr.md) | DeepSeek-OCR Watch | draft |
+| [htrflow](entities/tools/htrflow.md) | htrflow EUPL Reference-only | draft |
+| [kurrentschrift](entities/tools/kurrentschrift.md) | Kurrent ductus Extract | draft |
+| [htrace-sh](entities/tools/htrace-sh.md) | htrace.sh GPL isolate | draft |
+| [franken-ocr](entities/tools/franken-ocr.md) | franken_ocr Watch (no clone) | draft |
+
 ### K216 ingest (2026-08-01)
 
 | Page | Summary | Maturity |

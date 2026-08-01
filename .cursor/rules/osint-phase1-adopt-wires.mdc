@@ -1,6 +1,6 @@
 ---
 description: Phase-1 OSINT adopt wires — Atto PII/genealogy, GuruWatcher alerts, scraper isolation, license/AgentBaiting, finance routing
-alwaysApply: true
+alwaysApply: false
 ---
 
 # Phase-1 OSINT adopt wires
@@ -66,3 +66,20 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - No GRPO trainers, Harbor/Modal fleets, or `curl|sh`.
 - Large REFERENCE trees (`GeoLibre`, `likec4`, `t3code`, `openwork`, `omlx`, `ecc`) stay clones-only until a product brief demands Extract.
 - `vibe-upgrader` stays `wont_wire` (0★ CONDITIONAL — patterns only).
+
+## K217 — OCR / HTR REFERENCE (Transkribus sole product HTR)
+
+- Clones under `.local/adopts/`: `localOCR`, `Unlimited-OCR`, `DeepSeek-OCR`, `SimpleHTR`, `OCRmyPDF`, `kurrentschrift`, `htrflow`, `htrace.sh`.
+- **Never** replace Transkribus as product HTR with PaddleOCR / Unlimited-OCR / DeepSeek-OCR / GOT / EasyOCR.
+- Prefer `localOCR` UI/JSON human-gate patterns + `SimpleHTR` CTC/lexicon decode ideas for correction UX only.
+- `Unlimited-OCR` = multi-page PDF REFERENCE (TipDrop M4 / Atto vault) — Magika still sniffs before LLM.
+- `htrflow` = **EUPL Reference-only** — read patterns; do not link into Atto product.
+- `OCRmyPDF` = MPL Watch for searchable PDF layers — not genealogy HTR.
+- `kurrentschrift` = paleography ductus playbook Extract (0★ CONDITIONAL).
+- `franken_ocr` = Watch only (no local clone this batch).
+- Skip clones: PaddleOCR size, GOT null SPDX, Nexdata null SPDX.
+
+## K217 — GuruWatcher ops
+
+- `htrace.sh` = **GPL isolate** HTTP latency debug REFERENCE for alert watches — never link into proprietary GuruWatcher binaries; subprocess/sidecar only if ever used.
+

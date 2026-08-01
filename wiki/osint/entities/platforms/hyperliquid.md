@@ -4,6 +4,7 @@ type: entity
 tags: [platform, crypto, perpetuals, dex, cemini-venue]
 keywords: []
 related:
+  - sources/substack-rss-wublock-2026-08-01-weekly-project-updates-pumpfun-cuts.md
   - sources/substack-rss-wublock-2026-07-16-hl-preipo-cxmt.md
   - sources/substack-rss-capital-flows-2026-07-09-purr-hyperliquid-update.md
   - sources/3-18-crypto-integration-technical-audit.md
@@ -27,10 +28,12 @@ related:
   - entities/tools/hyperliquid-python-sdk.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-16
+updated: 2026-08-01
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-08-01-weekly-project-updates-pumpfun-cuts.md — K217 revenue concentration note
 
 - @sources/3-18-crypto-integration-technical-audit.md — primary; deep-read 2026-04-26 (K4)
 - @sources/3-19-compliance-research.md

@@ -23,9 +23,10 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
-## Current state (2026-08-01 — K216)
+## Current state (2026-08-01 — K217)
 
-- **K216 ingest** — 4 GitHub revenue evals (genealogy/GEDCOM + skills/Magika + infra/CLI) + Latent Space Flash-0731 + Sterling Sky GBP + SecPro ZT. Phase-0 ~268MB. Briefs → Atto/TipDrop/GuruWatcher/CCC/cyber/SEO/poker. **No prod xsp/pm scp.**
+- **K217 ingest** — OCR eval + HTR/HTTP revenue eval + WuBlock weekly. Phase-0 ~355MB (localOCR, Unlimited-OCR, DeepSeek-OCR, SimpleHTR, OCRmyPDF, kurrentschrift, htrflow EUPL-ref, htrace GPL-isolate). Transkribus remains sole product HTR. Briefs → Atto + GuruWatcher. **No TipDrop/poker/prod xsp/pm scp.**
+- Prior same-day: **K216** genealogy/GEDCOM + Magika/skills + infra/CLI + newsletters (Phase-0 + Phase-1 wired).
 
 ## Prior state (2026-07-31 — K215)
 

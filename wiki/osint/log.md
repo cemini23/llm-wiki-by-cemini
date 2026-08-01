@@ -2,6 +2,21 @@
 
 
 
+## [2026-08-01] ingest | K217 — OCR/HTR evals + WuBlock weekly
+
+- **Inbox:** Evaluate OCR GitHub Repositories.docx · GitHub Repo Revenue Analysis.docx · WuBlock weekly PumpFun/HL
+- **Phase-0 (~355MB new):** localOCR, Unlimited-OCR, DeepSeek-OCR, SimpleHTR, OCRmyPDF, kurrentschrift, htrflow (EUPL ref), htrace.sh (GPL isolate)
+- **Skip:** PaddleOCR (~1.9GB), Umi/EasyOCR budget, GOT-OCR2.0 null SPDX, HTRPipeline/Nexdata null SPDX, franken_ocr (~219MB)
+- **Policy:** Transkribus remains sole product HTR; clones = REFERENCE / pre-process / UI
+- **Briefs:** Atto OCR REFERENCE · GuruWatcher htrace · WuBlock → GuruWatcher awareness · **no xsp/pm prod**
+- **Phase-1:** osint-phase1-adopt-wires + Atto/GuruWatcher surface rules
+
+## [2026-08-01] phase1 | K217 OCR/HTR wire
+
+- Expanded `.cursor/rules/osint-phase1-adopt-wires.mdc` — OCR/HTR REFERENCE + htrace GPL isolate
+- Entities `policy_wired` (franken deferred size)
+- Surface: `atto-k217-phase1-wires.mdc`, `guruwatcher-k217-phase1-wires.mdc`
+
 ## [2026-08-01] phase1 | K216 batch wire
 
 - Policy: expanded `.cursor/rules/osint-phase1-adopt-wires.mdc` — Atto GEDCOM/Magika/openaddresses/rclone/openapi-directory; TipDrop skills; CCC gh-stack; GuruWatcher dust/tailspin/waveterm
@@ -9131,3 +9146,8 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - Atto branch `k200-citizenship-ssuu-24045-lock` soft-flag bump; OpenCLI Reddit/YouTube secondary scan
 - Local pack: `.local/research/italian-cassazione-24045-2026/`
 
+## [2026-08-01] ops | Cursor config P0/P1 cleanup (no secrets)
+
+- Project: deleted tipdrop + route dups; demoted AA on phase1/visual; lazy-tool Desktop→Projects + drop kb-server; cold MCP disabled; setup_cursor_github_mcp env-ref only
+- Global `~/.cursor` TCC-locked from agent — operator runs `bash scripts/apply_cursor_global_p0_cleanup.sh` + `OPERATOR_ENV_ROTATE.md`
+- Artifacts: `reports/audit/cursor-config-2026-08-01/`

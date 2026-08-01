@@ -14,9 +14,17 @@ related:
   - sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md
   - sources/gemini-italian-civil-register-extraction-2026-07-21.md
   - sources/arxiv-2607.21936-historical-doc-rag-restoration.md
+  - sources/eval-github-ocr-repositories-2026-08-01.md
+  - sources/eval-github-repo-revenue-analysis-htr-2026-08-01.md
+  - entities/tools/curiosity-localocr.md
+  - entities/tools/simplehtr.md
+  - entities/tools/unlimited-ocr.md
+  - entities/tools/deepseek-ocr.md
+  - entities/tools/htrflow.md
+  - entities/tools/kurrentschrift.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-21
+updated: 2026-08-01
 ---
 
 ## Relations
@@ -32,6 +40,14 @@ updated: 2026-07-21
 - @entities/tools/gcerretani-antenati.md — typical image source for Italian civil packs
 - @entities/tools/italian-parish-records.md — parish image corpus companion (K154)
 - @entities/tools/dhfbk-tint.md — K175 Italian NLP after HTR/OCR text exists
+- @sources/eval-github-ocr-repositories-2026-08-01.md — K217 OCR eval (Transkribus remains sole product HTR)
+- @sources/eval-github-repo-revenue-analysis-htr-2026-08-01.md — K217 HTR eval
+- @entities/tools/curiosity-localocr.md — UI gate Extract
+- @entities/tools/simplehtr.md — CTC lexicon REFERENCE
+- @entities/tools/unlimited-ocr.md — multi-page PDF REFERENCE
+- @entities/tools/deepseek-ocr.md — VLM OCR Watch
+- @entities/tools/htrflow.md — EUPL Reference-only
+- @entities/tools/kurrentschrift.md — ductus Extract
 
 ## Raw Concept
 
