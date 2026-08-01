@@ -21,3 +21,8 @@ clone bensadeh/tailspin tailspin
 clone wavetermdev/waveterm waveterm
 clone openaddresses/openaddresses openaddresses
 du -sh "$ADOPT"/*
+
+clone rclone/rclone rclone
+clone APIs-guru/openapi-directory openapi-directory
+# PastPaths skipped: null SPDX + ~869MB
+du -sh "$ADOPT"/*

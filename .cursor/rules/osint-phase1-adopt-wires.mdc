@@ -39,11 +39,21 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - `aisuite` / `outlines` / `omlx` = multi-provider / structured-output REFERENCE for xsp — no new MCP without operator OK.
 
 
-## K216 GEDCOM / Magika (Atto)
+## K216 — Atto GEDCOM / Magika / place / sync
 
-- Prefer ISC `tmcw/gedcom` + Apache FamilySearch GEDCOM X / GEDCOM 7 clones for parse/dialect work — human-gated truth.ged merge unchanged.
-- `google/magika` = local MIME sniff before LLM; Transkribus remains sole HTR.
+- Prefer ISC `tmcw/gedcom` (`.local/adopts/gedcom`) over GPL GEDCOM parsers for Python parse paths.
+- Apache **FamilySearch/gedcomx** + **FamilySearch/GEDCOM** (7.0) = dialect/spec REFERENCE — human-gated `truth.ged` merge unchanged.
+- `google/magika` = local MIME sniff **before** any LLM sees vault blobs; Transkribus remains sole HTR.
+- `openaddresses` = place/address prior patterns for Italian locality checks — not a full OA dump into the vault.
+- `rclone` = offline vault **mirror/backup** patterns only — never unattended cloud sync of PII without human gate.
+- `openapi-directory` (~776MB) = OpenAPI **REFERENCE catalog** for MCP/tool ideation — do **not** vendor the tree into Atto product.
 - AncestryLLM / Antenati clones = cassette/ToS-aware patterns only — never unattended portal book.
+
+## K216 — TipDrop / CCC / GuruWatcher ops
+
+- `davidondrej-skills` (MIT) → TipDrop/Atto skill packing; do **not** clone null-SPDX Karpathy forks.
+- `github/gh-stack` (MIT) → CCC stacked-PR hygiene Extract — optional, not required for OSINT daily.
+- `dust` / `tailspin` / `waveterm` → laptop/prod **ops UX** (disk/log/SSH) for GuruWatcher babysitting — **alert-only**, no order placement.
 
 ## Runtime MCP (project `.cursor/mcp.json`)
 

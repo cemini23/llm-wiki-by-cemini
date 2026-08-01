@@ -1,36 +1,33 @@
 ---
-title: openapi-directory (APIs-guru)
+
+title: "APIs-guru/openapi-directory"
 type: entity
-tags: [tool, openapi, mcp, catalog, k149]
-keywords: [OpenAPI, API definitions, MCP generation, CC0]
+tags: [tool, phase-0, k216, atto]
+keywords: [openapi-directory]
 related:
-  - sources/eval-url-revenue-plan-20url-2026-07-08.md
+  - sources/eval-github-url-revenue-infra-cli-2026-08-01.md
   - concepts/wiki-tooling-evaluation.md
+  - concepts/gpuology-genealogy-agent-kit.md
 maturity: draft
-created: 2026-07-08
-updated: 2026-07-08
+created: 2026-08-01
+updated: 2026-08-01
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations
 
-- @sources/eval-url-revenue-plan-20url-2026-07-08.md — K149 Extract
-
-## Raw Concept
-
-Largest curated catalog of machine-readable OpenAPI definitions.
+- @sources/eval-github-url-revenue-infra-cli-2026-08-01.md
+- @concepts/wiki-tooling-evaluation.md
+- @concepts/gpuology-genealogy-agent-kit.md
 
 ## Narrative
 
 | Field | Value |
-|-------|-------|
-| **Repo** | `APIs-guru/openapi-directory` |
-| **License** | **CC0-1.0** (`gh api` 2026-07-08) |
-| **Stars / pushed** | ~4.5k★; pushed 2026-04-20 |
-| **Verdict** | **Extract** — feed for automated MCP wrapper generation (CCC spike) |
-| **Risk** | Autogenerating live tools without ToS / billing review |
+|-------|--------|
+| **Repo** | https://github.com/APIs-guru/openapi-directory |
+| **License** | **CC0-1.0** [CONFIRMED gh 2026-08-01] |
+| **Verdict** | **Extract GO — OpenAPI catalog for MCP/tool generation** |
+| **Local** | `.local/adopts/openapi-directory (~776MB shallow)` |
 
-Not a default TipDrop David adopt — CCC/OSINT MCP harvest only.
-
-## Snippets
-
-> "programmatically extracting these OpenAPI specifications and converting them into automated Model Context Protocol (MCP) tools" [Source: eval docx URL 19]
+Large but Atto/GuruWatcher-useful for machine-readable API defs. Keep as REFERENCE catalog — do not vendor whole tree into product.

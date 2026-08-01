@@ -11,6 +11,8 @@ related:
   - entities/tools/waveterm.md
   - entities/tools/dust-du.md
   - entities/tools/tailspin.md
+  - entities/tools/openapi-directory.md
+  - entities/tools/rclone.md
 maturity: draft
 created: 2026-08-01
 updated: 2026-08-01
@@ -24,6 +26,8 @@ updated: 2026-08-01
 - @entities/tools/waveterm.md
 - @entities/tools/dust-du.md
 - @entities/tools/tailspin.md
+- @entities/tools/openapi-directory.md
+- @entities/tools/rclone.md
 
 ## Raw Concept
 
@@ -42,8 +46,8 @@ updated: 2026-08-01
 | wavetermdev/waveterm | Integrate | **Apache-2.0** | **GO Watch/Extract** SSH ops — Phase-0 (~46MB); not prod order path |
 | bootandy/dust | Extract | **Apache-2.0** | **GO Extract** disk UX — Phase-0 |
 | bensadeh/tailspin | Integrate | **MIT** | **GO Extract** log UX GuruWatcher — Phase-0 |
-| APIs-guru/openapi-directory | Extract | CC0 / **~784MB** | **NO-GO** size; patterns only |
-| rclone/rclone | Integrate | MIT / **~252MB** | **Watch** — skip clone this batch (budget) |
+| APIs-guru/openapi-directory | Extract | **CC0-1.0** | **GO Extract** — Phase-0 shallow (~776MB); REFERENCE catalog |
+| rclone/rclone | Integrate | **MIT** | **GO Extract** — Phase-0 shallow (~62MB); cloned post-budget |
 | aria2/aria2 | Integrate | GPL-2.0 | **NO-GO** GPL |
 | hashicorp/consul | Watch | BUSL-1.1 | **NO-GO** competitive-use BUSL |
 

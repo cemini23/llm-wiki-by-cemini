@@ -2,6 +2,15 @@
 
 
 
+## [2026-08-01] phase1 | K216 batch wire
+
+- Policy: expanded `.cursor/rules/osint-phase1-adopt-wires.mdc` — Atto GEDCOM/Magika/openaddresses/rclone/openapi-directory; TipDrop skills; CCC gh-stack; GuruWatcher dust/tailspin/waveterm
+- Re-cloned missing `tmcw/gedcom` → `.local/adopts/gedcom`
+- Entities: all K216 Phase-0 clones `policy_wired` → osint-phase1-adopt-wires.mdc
+- Inventory aliases (CCC script): K216 clone dirs → entity paths
+- No new MCP/runtime; openapi-directory stays REFERENCE catalog (no vendor)
+- Unwired OSINT clones: **0**
+
 ## [2026-08-01] ingest | K216 — genealogy/GEDCOM evals + skills/Magika + Flash-0731 + GBP/ZT
 
 - **Inbox:** 4 tool-eval docx + Latent Space (title-dup overridden) + Sterling Sky + SecPro #245
