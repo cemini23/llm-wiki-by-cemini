@@ -53,12 +53,35 @@ cd "${REMOTE_DIR}"
   --env-path .env
 
 mkdir -p "reports/exports/${EXPORT_SLUG}"
+if [[ ! -f "reports/exports/${EXPORT_SLUG}/crawl_state.json" ]]; then
+  printf '%s\n' '{"completed_agent_ids":[],"cycles":0,"leaderboard_total":0}' \
+    > "reports/exports/${EXPORT_SLUG}/crawl_state.json"
+fi
+
+# Retarget export units to .env MATCH/DIR (do not leave S1_TOURNAMENT_COMP winning).
+if [[ -d deploy ]]; then
+  cp -f deploy/cemini-devfun-poker-export-crawl.service /etc/systemd/system/ 2>/dev/null || true
+  cp -f deploy/cemini-devfun-poker-export.service /etc/systemd/system/ 2>/dev/null || true
+  cp -f deploy/cemini-devfun-poker-export-crawl.timer /etc/systemd/system/ 2>/dev/null || true
+  cp -f deploy/cemini-devfun-poker-export.timer /etc/systemd/system/ 2>/dev/null || true
+fi
+systemctl daemon-reload
+systemctl enable cemini-devfun-poker-export-crawl.timer 2>/dev/null || true
+systemctl enable cemini-devfun-poker-export.timer 2>/dev/null || true
+# Do not block enter on long oneshot export/crawl — timers own the schedule.
+systemctl start --no-block cemini-devfun-poker-export.service 2>/dev/null || true
+
 systemctl restart cemini-devfun-poker-lobby.service
 sleep 3
 systemctl is-active cemini-devfun-poker-lobby.service
 # Cap journal so SSH does not hang on pager
 timeout 15 journalctl -u cemini-devfun-poker-lobby.service -n 30 --no-pager || true
+echo "==> export match/dir:"
+grep -E '^(CEMINI_EXPORT_MATCH|CEMINI_EXPORT_DIR|ARENA_LOBBY_COMPETITION_ID)=' .env || true
+systemctl is-enabled cemini-devfun-poker-export-crawl.timer 2>/dev/null || true
+systemctl is-enabled cemini-devfun-poker-export.timer 2>/dev/null || true
 REMOTE
 
 echo "Done. Status: ./scripts/cemini_playground_status.sh --competition ${COMP}"
 echo "Tail: ssh ${HOST} journalctl -u cemini-devfun-poker-lobby.service -f"
+echo "Export: ssh ${HOST} journalctl -u cemini-devfun-poker-export.service -n 40 --no-pager"

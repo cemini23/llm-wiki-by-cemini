@@ -23,6 +23,9 @@ Gin is hard-killed (`CEMINI_GIN_KILL=1`). Short-stack push/fold (<20bb) override
 | Rebuy | `CEMINI_MAX_REBUYS=2`, `CEMINI_REBUY_MAX_MON=5` |
 | Chase margins | Mild only; off when short |
 | S11 enter | `playground_chip_qual_enter.sh 11` |
+| Export match | `CEMINI_EXPORT_MATCH` + lobby-first resolve (stale `S1_TOURNAMENT_COMP` no longer wins) |
+| Telemetry | `CEMINI_PREFLOP_LOG=1` → `reports/exports/playground-s11-live/preflop_decisions.jsonl` |
+| Phase-1 docs | K231/K232 refs: `cogate-advisor-confidence-gate.md`, `aispa-decide-prompt-audit.md` |
 
 ## Do not
 

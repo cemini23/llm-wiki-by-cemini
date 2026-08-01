@@ -9,12 +9,12 @@ User=root
 Group=root
 WorkingDirectory=/opt/devfun-poker-arena
 Environment=PYTHONUNBUFFERED=1
-Environment=CEMINI_EXPORT_DIR=/opt/devfun-poker-arena/reports/exports/s1-tournament-live
 Environment=CEMINI_EXPORT_SHARD_INDEX=0
 Environment=CEMINI_EXPORT_SHARD_COUNT=3
+# CEMINI_EXPORT_DIR / CEMINI_EXPORT_MATCH come from .env (playground enter retargets them).
 EnvironmentFile=-/opt/devfun-poker-arena/.env
 # Checkpoint by stable agent_id set (not rank offset). Skip tables — hourly job owns those.
-ExecStart=/bin/bash -c '/opt/devfun-poker-arena/venv/bin/python examples/export_field_crawl.py --out-dir ${CEMINI_EXPORT_DIR:-/opt/devfun-poker-arena/reports/exports/s1-tournament-live} --match ${S1_TOURNAMENT_COMP:-${ARENA_LOBBY_COMPETITION_ID}} --batch-size 120 --sleep 0.04 --no-tables --shard-index ${CEMINI_EXPORT_SHARD_INDEX:-0} --shard-count ${CEMINI_EXPORT_SHARD_COUNT:-3}'
+ExecStart=/bin/bash -c 'OUT="${CEMINI_EXPORT_DIR:-reports/exports/playground-s11-live}"; case "$OUT" in /*) ;; *) OUT="/opt/devfun-poker-arena/$OUT" ;; esac; MATCH="${CEMINI_EXPORT_MATCH:-${ARENA_LOBBY_COMPETITION_ID}}"; /opt/devfun-poker-arena/venv/bin/python examples/export_field_crawl.py --out-dir "$OUT" --match "$MATCH" --batch-size 120 --sleep 0.04 --no-tables --shard-index ${CEMINI_EXPORT_SHARD_INDEX:-0} --shard-count ${CEMINI_EXPORT_SHARD_COUNT:-3}'
 UMask=0077
 
 [Install]

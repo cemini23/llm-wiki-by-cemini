@@ -224,12 +224,9 @@ def main(argv: Optional[list[str]] = None) -> int:
         print("ERROR: set ARENA_API_KEY or .arena-credentials", file=sys.stderr)
         return 2
 
-    competition_id = (
-        args.match
-        or os.environ.get("S1_TOURNAMENT_COMP", "").strip()
-        or os.environ.get("ARENA_LOBBY_COMPETITION_ID")
-        or "cmpy2qy65002ud9ej6b7jjq0l"
-    )
+    from export_match import resolve_export_competition_id
+
+    competition_id = resolve_export_competition_id(args.match)
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 

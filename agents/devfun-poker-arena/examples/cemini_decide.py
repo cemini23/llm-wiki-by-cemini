@@ -855,6 +855,7 @@ def _log_preflop_decision(
     hand_class: str,
     action: str,
     amount: Optional[int],
+    reason: str = "",
 ) -> None:
     """F8 — append spot_kind + hand_class for analyze tuning (CEMINI_PREFLOP_LOG=1)."""
     if not _preflop_log_enabled():
@@ -867,14 +868,35 @@ def _log_preflop_decision(
             )
         )
         log_path.parent.mkdir(parents=True, exist_ok=True)
+        hero_seat = table.get("selfSeatNumber")
+        stack_chips = None
+        hole = None
+        bb = table.get("bigBlind") or table.get("bb") or 2
+        for seat in table.get("seats") or []:
+            if seat.get("seatNumber") == hero_seat:
+                stack_chips = seat.get("chips")
+                hole = seat.get("holeCards") or seat.get("cards")
+                break
+        stack_bb = None
+        try:
+            if stack_chips is not None and bb:
+                stack_bb = round(float(stack_chips) / float(bb), 2)
+        except (TypeError, ValueError):
+            stack_bb = None
         row = {
             "tableId": table.get("tableId"),
             "competitionId": table.get("competitionId"),
             "hand_class": hand_class,
             "position": hero_position_label(table),
             "spot_kind": spot_kind(table),
+            "street": table.get("street") or table.get("round") or "preflop",
+            "stack_chips": stack_chips,
+            "stack_bb": stack_bb,
+            "hole": hole,
             "action": action,
             "amount": amount,
+            "reason": reason or None,
+            "agent_version": os.environ.get("AGENT_VERSION", ""),
         }
         with log_path.open("a", encoding="utf-8") as fh:
             fh.write(json.dumps(row, separators=(",", ":")) + "\n")

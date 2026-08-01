@@ -9,14 +9,14 @@ User=root
 Group=root
 WorkingDirectory=/opt/devfun-poker-arena
 Environment=PYTHONUNBUFFERED=1
-Environment=CEMINI_EXPORT_DIR=/opt/devfun-poker-arena/reports/exports/s1-tournament-live
 Environment=CEMINI_EXPORT_TOP_AGENTS=200
 Environment=CEMINI_EXPORT_STATS_TOP=200
 Environment=CEMINI_EXPORT_REPLAYS_TOP=50
 Environment=CEMINI_EXPORT_SHARD_INDEX=0
 Environment=CEMINI_EXPORT_SHARD_COUNT=3
+# CEMINI_EXPORT_DIR / CEMINI_EXPORT_MATCH come from .env (playground enter retargets them).
 EnvironmentFile=-/opt/devfun-poker-arena/.env
-ExecStart=/bin/bash -c '/opt/devfun-poker-arena/venv/bin/python examples/export_competition_hands.py --append --top-agents ${CEMINI_EXPORT_TOP_AGENTS:-200} --stats-top ${CEMINI_EXPORT_STATS_TOP:-200} --replays-top-agents ${CEMINI_EXPORT_REPLAYS_TOP:-50} --shard-index ${CEMINI_EXPORT_SHARD_INDEX:-0} --shard-count ${CEMINI_EXPORT_SHARD_COUNT:-3} --out-dir ${CEMINI_EXPORT_DIR:-/opt/devfun-poker-arena/reports/exports/s1-tournament-live} --match ${S1_TOURNAMENT_COMP:-${ARENA_LOBBY_COMPETITION_ID}}'
+ExecStart=/bin/bash -c 'OUT="${CEMINI_EXPORT_DIR:-reports/exports/playground-s11-live}"; case "$OUT" in /*) ;; *) OUT="/opt/devfun-poker-arena/$OUT" ;; esac; MATCH="${CEMINI_EXPORT_MATCH:-${ARENA_LOBBY_COMPETITION_ID}}"; /opt/devfun-poker-arena/venv/bin/python examples/export_competition_hands.py --append --top-agents ${CEMINI_EXPORT_TOP_AGENTS:-200} --stats-top ${CEMINI_EXPORT_STATS_TOP:-200} --replays-top-agents ${CEMINI_EXPORT_REPLAYS_TOP:-50} --shard-index ${CEMINI_EXPORT_SHARD_INDEX:-0} --shard-count ${CEMINI_EXPORT_SHARD_COUNT:-3} --out-dir "$OUT" --match "$MATCH"'
 UMask=0077
 
 [Install]

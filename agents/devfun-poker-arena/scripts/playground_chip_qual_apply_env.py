@@ -102,8 +102,14 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         "JACKPOT_ROYAL_SHOWDOWN": "0",
         "JACKPOT_27_HUNT_ENABLED": "0",
         "CEMINI_HL_PRIMARY_COMP": comp,
+        # Export must follow live lobby — never stale S1_TOURNAMENT_COMP
+        "CEMINI_EXPORT_MATCH": comp,
         "CEMINI_EXPORT_DIR": f"reports/exports/{export_slug}",
         "CEMINI_FIELD_EXPORT_DIR": f"reports/exports/{export_slug}",
+        "CEMINI_FIELD_EXPORT_HUD": "1",
+        # Per-decide telemetry (T10 post-mortem gap)
+        "CEMINI_PREFLOP_LOG": "1",
+        "CEMINI_PREFLOP_LOG_PATH": f"reports/exports/{export_slug}/preflop_decisions.jsonl",
         "AGENT_VERSION": f"playground-s{season}.qual.2026-08-01.postmortem",
         "ARENA_NO_AUTO_REGISTER": "1",
     }

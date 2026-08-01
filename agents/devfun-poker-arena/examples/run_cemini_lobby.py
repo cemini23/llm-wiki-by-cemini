@@ -1152,9 +1152,17 @@ def run_lobby(args: argparse.Namespace) -> int:
                     if hero_aid:
                         poll_showdown_memory(client, state, hero_aid, table_comp)
                     save_state(state)
+                    stack_note = ""
+                    if stack_bb is not None:
+                        stack_note = f" stack_bb={stack_bb}"
+                    reason = action.get("message") or action.get("reasoning") or ""
+                    if isinstance(reason, str) and len(reason) > 80:
+                        reason = reason[:77] + "..."
+                    reason_note = f" reason={reason!r}" if reason else ""
                     print(
                         f"[cemini-lobby] {_lobby_log_scope(table_comp)} "
                         f"action={action.get('action')} hands_acted={hands_acted}"
+                        f"{stack_note}{reason_note}"
                     )
                 except ArenaError as e:
                     if e.status == 409:
