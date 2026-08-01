@@ -11,10 +11,11 @@ related:
   - entities/tools/claude-code-router.md
   - "@ccc-wiki/concepts/llm-routing-deepseek-openrouter-failover.md"
   - "@ccc-wiki/entities/skills/super-audit.md"
+  - "@ccc-wiki/entities/skills/free-audit.md"
   - "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
 maturity: draft
 created: 2026-06-04
-updated: 2026-06-09
+updated: 2026-08-01
 ---
 
 ## Relations
@@ -25,6 +26,7 @@ updated: 2026-06-09
 - @entities/infrastructure/deepseek-api.md — prod brain
 - @ccc-wiki/concepts/llm-routing-deepseek-openrouter-failover.md — operator-facing CCC copy (same contract)
 - @ccc-wiki/entities/skills/super-audit.md — API leg discovers `OPENROUTER_*` / `DEEPSEEK_*` / `ADVISOR_*` via `discover_api_keys.py`
+- @ccc-wiki/entities/skills/free-audit.md — Grok-orchestrated free council uses same `OPENROUTER_*` / `DEEPSEEK_*` routing env
 - @gambling-wiki/concepts/poker-hl-analyst-loop.md — HL loop sources env at start
 
 ## Raw Concept
