@@ -247,11 +247,17 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_NUTS_DETECT": "1",
             "CEMINI_SANITIZE_OUTPUT": "1",
             "CEMINI_PLAYGROUND_TIMESERIES": "1",
+            "CEMINI_GIN_KILL": "1",
             "CEMINI_GIN_STYLE": "0",
             "CEMINI_GIN_STYLE_PREFLOP": "0",
             "CEMINI_GIN_STYLE_POSTFLOP": "0",
             "CEMINI_GIN_STYLE_GATE": "0",
             "CEMINI_GIN_V008": "0",
+            "CEMINI_GIN_V2_EXPLOITS": "0",
+            "CEMINI_SHORT_STACK_BB": "20",
+            "CEMINI_MAX_REBUYS": "2",
+            "CEMINI_REBUY_MAX_MON": "5",
+            "CEMINI_SURVIVAL_STACK_CHIPS": "500",
             "CEMINI_MAFP_CHART": "0",
             "CEMINI_SOLVER_V3": "0",
             "CEMINI_SOLVER_HARD": "0",
@@ -263,39 +269,41 @@ def _apply_competition_posture(competition_id: str) -> None:
             "JACKPOT_27_HUNT_ENABLED": "0",
         })
     elif _s10_tournament:
-        # Tournament S10 KO — behind-the-bubble CLIMB (2026-07-31).
-        # Evidence: ~79% fold / 12h, #2 → #46 @ ~740 chips. Gin OFF + nemesis_tight
-        # + KO ratchet were too nitty vs halloran-class VPIP~0.26 field.
+        # Tournament S10 — abandoned after bust (2026-08-01). If lobby lands here,
+        # stay gin-killed + short-stack safe; do not re-enable climb widen.
         os.environ.update({
             "CEMINI_TOURNAMENT_MODE": "1",
             "CEMINI_TABLE_FORMAT": "auto",
             "CEMINI_RESEARCHER_MODE": "0",
             "CEMINI_SANDBOX_PVP_SUBMIT_ONLY": "0",
-            "CEMINI_PLACEMENT_CHASE": "1",
+            "CEMINI_PLACEMENT_CHASE": "0",
             "CEMINI_EVAL_PANEL_GATE": "0",
             "CEMINI_EVAL_PANEL_MODE": "0",
             "CEMINI_PRIZE_CUTOFF_RANK": "3",
             "CEMINI_QUAL_CUTOFF_RANK": "25",
-            "CEMINI_KO_SURVIVAL": "0",
-            "CEMINI_KO_SURVIVAL_HANDS": "0",
-            "CEMINI_SURVIVAL_STACK_CHIPS": "200",
-            "CEMINI_S1B_MIN_STACK_BB": "25",
+            "CEMINI_KO_SURVIVAL": "1",
+            "CEMINI_KO_SURVIVAL_HANDS": "60",
+            "CEMINI_SURVIVAL_STACK_CHIPS": "400",
+            "CEMINI_S1B_MIN_STACK_BB": "60",
             "CEMINI_STAGGER_LOCKS": "0",
-            "CEMINI_COLD_START_NO_STEAL": "0",
-            "CEMINI_NEMESIS_TIGHT": "0",
-            "CEMINI_GIN_STYLE": "1",
-            "CEMINI_GIN_STYLE_PREFLOP": "1",
-            "CEMINI_GIN_STYLE_POSTFLOP": "1",
-            "CEMINI_GIN_STYLE_GATE": "1",
-            "CEMINI_GIN_V008": "1",
-            "CEMINI_GIN_V2_EXPLOITS": "1",
+            "CEMINI_COLD_START_NO_STEAL": "1",
+            "CEMINI_NEMESIS_TIGHT": "1",
+            "CEMINI_GIN_KILL": "1",
+            "CEMINI_GIN_STYLE": "0",
+            "CEMINI_GIN_STYLE_PREFLOP": "0",
+            "CEMINI_GIN_STYLE_POSTFLOP": "0",
+            "CEMINI_GIN_STYLE_GATE": "0",
+            "CEMINI_GIN_V008": "0",
+            "CEMINI_GIN_V2_EXPLOITS": "0",
+            "CEMINI_SHORT_STACK_BB": "20",
+            "CEMINI_MAX_REBUYS": "2",
+            "CEMINI_REBUY_MAX_MON": "5",
             "CEMINI_MAFP_CHART": "0",
             "CEMINI_SOLVER_V3": "0",
             "CEMINI_EVAL_CRUSH": "0",
-            "CEMINI_JOIN_RETRY_S": "12",
-            "CEMINI_CHASE_JOIN_RETRY_S": "8",
-            "CEMINI_IN_QUEUE_RETRY_S": "25",
-            "CEMINI_LOW_STACK_JOIN_RETRY_S": "15",
+            "CEMINI_JOIN_RETRY_S": "25",
+            "CEMINI_IN_QUEUE_RETRY_S": "60",
+            "CEMINI_LOW_STACK_JOIN_RETRY_S": "30",
             "JACKPOT_ROYAL_ENABLED": "0",
             "JACKPOT_ROYAL_SHOWDOWN": "0",
             "JACKPOT_27_HUNT_ENABLED": "0",
@@ -321,6 +329,10 @@ def _sync_competition_scope(state: dict, competition_id: str) -> None:
         return
     state["lobby_competition_id"] = competition_id
     state["hands_played"] = 0
+    state["rebuy_count"] = 0
+    state.pop("rebuy_fund_blocked_until", None)
+    state.pop("rebuy_fund_block_reason", None)
+    state.pop("rebuy_fund_block_logged", None)
     state.pop("session_villain_memory", None)
     state.pop("showdown_tables_seen", None)
     # K161: reset mid-term hierarchical memory on competition board change
@@ -513,6 +525,23 @@ def _rebuy_with_payment(
     raise RuntimeError("rebuy with payment failed")
 
 
+def _max_rebuys() -> int:
+    raw = os.environ.get("CEMINI_MAX_REBUYS", "2")
+    try:
+        return max(0, int(raw))
+    except ValueError:
+        return 2
+
+
+def _rebuy_max_mon() -> float:
+    """Refuse paid rebuy if Arena fee (MON) exceeds this. 0 = unlimited."""
+    raw = os.environ.get("CEMINI_REBUY_MAX_MON", "5")
+    try:
+        return max(0.0, float(raw))
+    except ValueError:
+        return 5.0
+
+
 def _try_rebuy(
     client: ArenaClient,
     competition_id: str,
@@ -522,10 +551,25 @@ def _try_rebuy(
     """Rebuy chips when table buy-in exceeds stack. Returns True if rebuy attempted."""
     if state is not None and _rebuy_fund_blocked(state):
         return False
+    if state is not None:
+        used = int(state.get("rebuy_count") or 0)
+        cap = _max_rebuys()
+        if used >= cap:
+            print(
+                f"[cemini-lobby] rebuy blocked: count {used} >= CEMINI_MAX_REBUYS={cap}",
+                file=sys.stderr,
+            )
+            _mark_rebuy_fund_block(
+                state, f"max rebuys {cap} reached (post-mortem T10)", hours=72.0,
+            )
+            if save_state_fn:
+                save_state_fn(state)
+            return False
     try:
         resp = client.post("/texas/rebuy", {"competitionId": competition_id})
         print(f"[cemini-lobby] rebuy: {json.dumps(resp, sort_keys=True)[:300]}")
         if state is not None:
+            state["rebuy_count"] = int(state.get("rebuy_count") or 0) + 1
             state.pop("rebuy_fund_blocked_until", None)
             state.pop("rebuy_fund_block_reason", None)
             if save_state_fn:
@@ -537,9 +581,27 @@ def _try_rebuy(
             return False
         pay = e.body.get("paymentRequirements") or {} if isinstance(e.body, dict) else {}
         try:
+            fee_cap = _rebuy_max_mon()
+            if fee_cap > 0 and pay:
+                try:
+                    fee = float(pay.get("amount") or 0)
+                except (TypeError, ValueError):
+                    fee = 0.0
+                if fee > fee_cap:
+                    msg = (
+                        f"rebuy fee {fee} MON > CEMINI_REBUY_MAX_MON={fee_cap} "
+                        "(T10 post-mortem: refuse 250 MON yolo)"
+                    )
+                    print(f"[cemini-lobby] {msg}", file=sys.stderr)
+                    if state is not None:
+                        _mark_rebuy_fund_block(state, msg, hours=72.0)
+                        if save_state_fn:
+                            save_state_fn(state)
+                    return False
             resp = _rebuy_with_payment(client, competition_id, pay)
             print(f"[cemini-lobby] rebuy after pay: {json.dumps(resp, sort_keys=True)[:300]}")
             if state is not None:
+                state["rebuy_count"] = int(state.get("rebuy_count") or 0) + 1
                 state.pop("rebuy_fund_blocked_until", None)
                 state.pop("rebuy_fund_block_reason", None)
                 if save_state_fn:

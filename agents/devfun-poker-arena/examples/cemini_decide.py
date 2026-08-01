@@ -1120,9 +1120,19 @@ def decide(
         eval_panel = False
     if ctx.get("researcher_mix"):
         os.environ.setdefault("CEMINI_MIX_POSTFLOP", "1")
+    from short_stack import (  # noqa: WPS433
+        hero_stack_bb as _hero_stack_bb,
+        is_short_stack,
+        short_stack_preflop_action,
+    )
+    short_stack = is_short_stack(table, self_seat)
+    if short_stack:
+        # Never widen when shallow — chase/gin spew killed T10.
+        placement_chase = False
     ko_survival = bool(ctx.get("ko_survival_lane"))
     lane_tight = (
         first_protect or qual_protect or lead_protect or eval_panel or placement_protect
+        or short_stack
     )
     # Tournament hour-one: keep HUD exploit; do not treat ko_survival as exploit_gate.
     exploit_gate = qual_protect or first_protect or eval_panel
@@ -1171,30 +1181,29 @@ def decide(
             first_protect=first_protect,
         )
     survival_tight = (
-        (
-            (_survival_mode(self_seat) or bool(ctx.get("survival_mode")))
-            and not placement_chase
-        )
+        _survival_mode(self_seat)
+        or bool(ctx.get("survival_mode"))
         or qual_protect
         or lead_protect
+        or short_stack
     )
     survival = survival_tight or ko_survival
-    if survival_tight:
+    if short_stack or survival_tight:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.04, "call_margin_delta": 0.05})
-    elif placement_chase:
-        # Chase must win over mild KO / stack ratchet when behind the bubble.
-        margins = _merge_margins(
-            margins,
-            {
-                "fold_slack_delta": -0.04,
-                "call_margin_delta": -0.04,
-                "chase_open_equity": 0.38,
-            },
-        )
     elif ko_survival:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.02, "call_margin_delta": 0.02})
     elif placement_protect:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.03, "call_margin_delta": 0.03})
+    elif placement_chase:
+        # Mild chase only — never the gin-era −0.04 spew margins.
+        margins = _merge_margins(
+            margins,
+            {
+                "fold_slack_delta": -0.01,
+                "call_margin_delta": -0.01,
+                "chase_open_equity": 0.28,
+            },
+        )
     style_ov = ctx.get("hl_style_overrides") or {}
     if style_ov:
         tweak: dict[str, float] = {}
@@ -1264,6 +1273,27 @@ def decide(
     cold_start = bool(hud.get("coldStart"))
     hc = chart.get("hand_class") or _hand_class(hole) or ""
     limped_pot = preflop_limped_pot(table, allowed, call_chips)
+
+    if short_stack and street == "Preflop":
+        ss = short_stack_preflop_action(
+            hand_class=hc,
+            position=position or "",
+            available=available,
+            allowed=allowed,
+            call_chips=int(call_chips or 0),
+            stack_chips=int(self_seat.get("stackChips") or self_seat.get("chips") or 0),
+        )
+        if ss is not None:
+            s_act, s_amt = ss
+            out = _build(
+                s_act, s_amt, table, allowed, eq=equity, po=pot_odds,
+                msg=(
+                    f"{binding}: short-stack {_hero_stack_bb(table, self_seat):.1f}bb "
+                    f"push/fold — {s_act}"
+                ),
+            )
+            _log_preflop_decision(table, hand_class=hc, action=s_act, amount=s_amt)
+            return _apply_chip_reserve(out, max_playable, table, hc)
 
     action_name: str
     amount: Optional[int] = None

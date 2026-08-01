@@ -51,7 +51,20 @@ def _hand_class(hole_cards: list[str]) -> str:
 ActionPair = tuple[str, Optional[int]]
 
 
+def gin_killed() -> bool:
+    """Master kill — T10 post-mortem 2026-08-01: gin ON zeroed the stack.
+
+    Prod / playground always set CEMINI_GIN_KILL=1. Unit tests leave it unset
+    so CEMINI_GIN_STYLE=* still exercises the ported lanes.
+    """
+    return os.environ.get("CEMINI_GIN_KILL", "0").strip().lower() in (
+        "1", "true", "yes", "on",
+    )
+
+
 def gin_style_preflop_enabled() -> bool:
+    if gin_killed():
+        return False
     raw = os.environ.get(
         "CEMINI_GIN_STYLE_PREFLOP",
         os.environ.get("CEMINI_GIN_STYLE", "0"),
@@ -60,6 +73,8 @@ def gin_style_preflop_enabled() -> bool:
 
 
 def gin_style_postflop_enabled() -> bool:
+    if gin_killed():
+        return False
     raw = os.environ.get(
         "CEMINI_GIN_STYLE_POSTFLOP",
         os.environ.get("CEMINI_GIN_STYLE", "0"),
@@ -69,6 +84,8 @@ def gin_style_postflop_enabled() -> bool:
 
 def gin_v008_preflop_enabled() -> bool:
     """gin/poker-bot auto_research_v008 marginal defend + blind widen."""
+    if gin_killed():
+        return False
     explicit = os.environ.get("CEMINI_GIN_V008", "").strip().lower()
     if explicit in ("0", "false", "no", "off"):
         return False

@@ -52,11 +52,15 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         "CEMINI_LEAD_RANK": "5",
         "CEMINI_FIRST_RANK": "1",
         "CEMINI_FIRST_JOIN_RETRY_S": "1800",
-        # Fresh-board survival (S1a premium synthesis)
+        # Fresh-board survival (S1a premium synthesis) — not gin widen
         "CEMINI_COLD_START_NO_STEAL": "1",
         "CEMINI_KO_SURVIVAL": "1",
-        "CEMINI_KO_SURVIVAL_HANDS": "200",
-        "CEMINI_KO_SURVIVAL_MIN_STACK": "2000",
+        "CEMINI_KO_SURVIVAL_HANDS": "120",
+        "CEMINI_KO_SURVIVAL_MIN_STACK": "1500",
+        "CEMINI_SURVIVAL_STACK_CHIPS": "500",
+        "CEMINI_SHORT_STACK_BB": "20",
+        "CEMINI_MAX_REBUYS": "2",
+        "CEMINI_REBUY_MAX_MON": "5",
         "CEMINI_STAGGER_LOCKS": "1",
         "CEMINI_NUTS_DETECT": "1",
         "CEMINI_SANITIZE_OUTPUT": "1",
@@ -67,11 +71,19 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         "CEMINI_S1B_MIN_STACK_BB": "60",
         "CEMINI_NEMESIS_EXPLOIT": "1",
         "CEMINI_NEMESIS_TIGHT": "1",
-        "CEMINI_NEMESIS_HANDLES": "hunterguy102,thaddius,v_16,0xjeff_ai,jagoan_neon",
+        # P11 / P10 leaders + repeat KO names (2026-08-01)
+        "CEMINI_NEMESIS_HANDLES": (
+            "flattened_v2,flattened_v2_guard_04,lodestar,godam,pot_sheriff,"
+            "lone_wolff,flintlock,si_nekat,sam_whale,chad_bets,StartupBros,"
+            "whalealert,page,dre4mboat_ai,solid_nash,kav_grind,alex_nft,"
+            "reichelligahh,halloran,blacksite"
+        ),
+        "CEMINI_NEMESIS_PREFIXES": "flattened_,batu_,kuma_,royal_,phoenix-,si_,mako_",
         "CEMINI_ISO_PASSIVE_LP": "1",
         "CEMINI_NEMESIS_WIDE_PASSIVE": "1",
         "CEMINI_NEMESIS_LINEAR_AGGRO": "1",
-        # Ladder / gin / solver OFF for Playground chip qual
+        # Gin HARD-KILLED — T10 post-mortem: enabling gin zeroed the stack
+        "CEMINI_GIN_KILL": "1",
         "CEMINI_GIN_STYLE": "0",
         "CEMINI_GIN_STYLE_PREFLOP": "0",
         "CEMINI_GIN_STYLE_POSTFLOP": "0",
@@ -84,6 +96,7 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         "CEMINI_TRAJECTORY_BOUND": "0",
         "CEMINI_VERIFIER_BON": "0",
         "CEMINI_POSTFLOP_BUCKETS": "0",
+        "CEMINI_PLACEMENT_CHASE": "0",
         # Jackpots — leave off until API shows slots for this season
         "JACKPOT_ROYAL_ENABLED": "0",
         "JACKPOT_ROYAL_SHOWDOWN": "0",
@@ -91,7 +104,7 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         "CEMINI_HL_PRIMARY_COMP": comp,
         "CEMINI_EXPORT_DIR": f"reports/exports/{export_slug}",
         "CEMINI_FIELD_EXPORT_DIR": f"reports/exports/{export_slug}",
-        "AGENT_VERSION": f"playground-s{season}.qual.2026-07-25",
+        "AGENT_VERSION": f"playground-s{season}.qual.2026-08-01.postmortem",
         "ARENA_NO_AUTO_REGISTER": "1",
     }
 

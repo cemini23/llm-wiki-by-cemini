@@ -56,7 +56,8 @@ mkdir -p "reports/exports/${EXPORT_SLUG}"
 systemctl restart cemini-devfun-poker-lobby.service
 sleep 3
 systemctl is-active cemini-devfun-poker-lobby.service
-journalctl -u cemini-devfun-poker-lobby.service -n 30 --no-pager
+# Cap journal so SSH does not hang on pager
+timeout 15 journalctl -u cemini-devfun-poker-lobby.service -n 30 --no-pager || true
 REMOTE
 
 echo "Done. Status: ./scripts/cemini_playground_status.sh --competition ${COMP}"
