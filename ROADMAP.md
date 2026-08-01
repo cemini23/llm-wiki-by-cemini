@@ -25,7 +25,7 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 
 ## Current state (2026-08-01 — K217)
 
-- **K217 ingest** — OCR eval + HTR/HTTP revenue eval + WuBlock weekly. Phase-0 ~355MB (localOCR, Unlimited-OCR, DeepSeek-OCR, SimpleHTR, OCRmyPDF, kurrentschrift, htrflow EUPL-ref, htrace GPL-isolate). Transkribus remains sole product HTR. Briefs → Atto + GuruWatcher. **No TipDrop/poker/prod xsp/pm scp.**
+- **K217 ingest** — OCR eval + HTR/HTTP revenue eval + WuBlock weekly. Phase-0 ~575MB incl. franken_ocr (localOCR, Unlimited-OCR, DeepSeek-OCR, SimpleHTR, OCRmyPDF, kurrentschrift, htrflow EUPL-ref, htrace GPL-isolate, franken_ocr). Transkribus remains sole product HTR. Briefs → Atto + GuruWatcher. **No TipDrop/poker/prod xsp/pm scp.**
 - Prior same-day: **K216** genealogy/GEDCOM + Magika/skills + infra/CLI + newsletters (Phase-0 + Phase-1 wired).
 
 ## Prior state (2026-07-31 — K215)

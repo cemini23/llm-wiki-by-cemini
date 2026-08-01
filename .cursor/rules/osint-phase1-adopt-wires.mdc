@@ -76,7 +76,7 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - `htrflow` = **EUPL Reference-only** — read patterns; do not link into Atto product.
 - `OCRmyPDF` = MPL Watch for searchable PDF layers — not genealogy HTR.
 - `kurrentschrift` = paleography ductus playbook Extract (0★ CONDITIONAL).
-- `franken_ocr` = Watch only (no local clone this batch).
+- `franken_ocr` (~219MB) = Pure-Rust CPU Unlimited-OCR path REFERENCE — Magika still sniffs first; not Transkribus HTR replace.
 - Skip clones: PaddleOCR size, GOT null SPDX, Nexdata null SPDX.
 
 ## K217 — GuruWatcher ops

@@ -51,7 +51,7 @@ read_status: deep-read
 | trimstray/htrace.sh | Integrate | **GPL-3.0** | **GPL isolate REFERENCE** GuruWatcher HTTP debug — Phase-0 (~1.4MB); never link proprietary |
 | githubharald/HTRPipeline | Extract | **NULL** | **NO-GO** no LICENSE |
 | Nexdata-AI/1000-People-Italian-Handwriting-OCR-Data | Extract | **NULL** | **NO-GO** null SPDX / commercial dataset risk |
-| Dicklesworthstone/franken_ocr | — | **MIT + OpenAI/Anthropic rider** | **Watch** CPU Unlimited-OCR path; skip clone (~219MB) |
+| Dicklesworthstone/franken_ocr | — | **MIT + OpenAI/Anthropic rider** | **GO Extract** CPU Unlimited-OCR path — Phase-0 (~219MB; operator OK over prior 500MB cap) |
 | HiwinCN/HTran | Watch | NOT FOUND | **NO-GO** APT-adjacent risk |
 | Remaining stub HTR demos | Reject | UNAVAILABLE / NOT FOUND | Aggregate on this page |
 

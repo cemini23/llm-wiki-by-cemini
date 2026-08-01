@@ -5,16 +5,21 @@
 ## [2026-08-01] ingest | K217 — OCR/HTR evals + WuBlock weekly
 
 - **Inbox:** Evaluate OCR GitHub Repositories.docx · GitHub Repo Revenue Analysis.docx · WuBlock weekly PumpFun/HL
-- **Phase-0 (~355MB new):** localOCR, Unlimited-OCR, DeepSeek-OCR, SimpleHTR, OCRmyPDF, kurrentschrift, htrflow (EUPL ref), htrace.sh (GPL isolate)
-- **Skip:** PaddleOCR (~1.9GB), Umi/EasyOCR budget, GOT-OCR2.0 null SPDX, HTRPipeline/Nexdata null SPDX, franken_ocr (~219MB)
+- **Phase-0 (~355MB + franken_ocr ~219MB):** localOCR, Unlimited-OCR, DeepSeek-OCR, SimpleHTR, OCRmyPDF, kurrentschrift, htrflow (EUPL ref), htrace.sh (GPL isolate), franken_ocr (operator OK slightly over prior 500MB cap)
+- **Skip:** PaddleOCR (~1.9GB), Umi/EasyOCR budget, GOT-OCR2.0 null SPDX, HTRPipeline/Nexdata null SPDX
 - **Policy:** Transkribus remains sole product HTR; clones = REFERENCE / pre-process / UI
 - **Briefs:** Atto OCR REFERENCE · GuruWatcher htrace · WuBlock → GuruWatcher awareness · **no xsp/pm prod**
 - **Phase-1:** osint-phase1-adopt-wires + Atto/GuruWatcher surface rules
 
+## [2026-08-01] phase0 | K217 franken_ocr (operator OK over size cap)
+
+- Cloned `Dicklesworthstone/franken_ocr` → `.local/adopts/franken_ocr` (~219MB); batch ~575MB total new
+- Entity + phase1 policy + Atto brief updated to GO Extract CPU Unlimited-OCR path
+
 ## [2026-08-01] phase1 | K217 OCR/HTR wire
 
 - Expanded `.cursor/rules/osint-phase1-adopt-wires.mdc` — OCR/HTR REFERENCE + htrace GPL isolate
-- Entities `policy_wired` (franken deferred size)
+- Entities `policy_wired` incl. franken_ocr after operator OK clone
 - Surface: `atto-k217-phase1-wires.mdc`, `guruwatcher-k217-phase1-wires.mdc`
 
 ## [2026-08-01] phase1 | K216 batch wire

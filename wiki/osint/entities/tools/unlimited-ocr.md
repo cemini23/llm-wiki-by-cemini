@@ -23,7 +23,7 @@ wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 - @sources/eval-huggingface-models-v2-2026-07-03.md — K141 Adopt row
 - @sources/eval-github-ocr-repositories-2026-08-01.md — K217 Phase-0 clone
 - @concepts/cemini-wiki-ingest-workflow.md — OSINT M4 ingest analog
-- @entities/tools/franken-ocr.md — CPU path Watch
+- @entities/tools/franken-ocr.md — CPU path Phase-0 Extract
 - @entities/tools/curiosity-localocr.md — UI gate Extract
 - @entities/tools/transkribus.md — sole product HTR (Unlimited-OCR is PDF REFERENCE only)
 

@@ -22,7 +22,7 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 | [htrflow](entities/tools/htrflow.md) | htrflow EUPL Reference-only | draft |
 | [kurrentschrift](entities/tools/kurrentschrift.md) | Kurrent ductus Extract | draft |
 | [htrace-sh](entities/tools/htrace-sh.md) | htrace.sh GPL isolate | draft |
-| [franken-ocr](entities/tools/franken-ocr.md) | franken_ocr Watch (no clone) | draft |
+| [franken-ocr](entities/tools/franken-ocr.md) | franken_ocr CPU Unlimited-OCR Extract (~219MB) | draft |
 
 ### K216 ingest (2026-08-01)
 
