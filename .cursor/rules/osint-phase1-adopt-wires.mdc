@@ -38,6 +38,13 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - UI kits (`daisyui`, `heroicons`, `quill`, `cardkit`, `t3code`, `openwork`) → TipDrop/Atto product surfaces — **not** OSINT runtime installs.
 - `aisuite` / `outlines` / `omlx` = multi-provider / structured-output REFERENCE for xsp — no new MCP without operator OK.
 
+
+## K216 GEDCOM / Magika (Atto)
+
+- Prefer ISC `tmcw/gedcom` + Apache FamilySearch GEDCOM X / GEDCOM 7 clones for parse/dialect work — human-gated truth.ged merge unchanged.
+- `google/magika` = local MIME sniff before LLM; Transkribus remains sole HTR.
+- AncestryLLM / Antenati clones = cassette/ToS-aware patterns only — never unattended portal book.
+
 ## Runtime MCP (project `.cursor/mcp.json`)
 
 - **chrome-devtools** — pinned local bin `.local/mcp-bins` (`chrome-devtools-mcp@1.6.0`) with `--no-usage-statistics` + scrubbed `env`. Prefer for portal/CDP debugging alongside built-in browser; no GuruWatcher order placement via browser. Reinstall: `cd .local/mcp-bins && npm i chrome-devtools-mcp@1.6.0`.

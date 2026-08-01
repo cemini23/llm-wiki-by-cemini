@@ -4,6 +4,7 @@ type: concept
 tags: [concept, llm, deepseek, openrouter, routing, failover, infrastructure]
 keywords: [llm-routing, openrouter, deepseek, failover, llm_analyst, brain, skill_audit]
 related:
+  - sources/newsletter-rss-latent-space-2026-08-01-ainews-deepseek-v4-flash-0731.md
   - concepts/api-credential-registry.md
   - concepts/mcp-context-optimization.md
   - entities/infrastructure/deepseek-api.md
@@ -18,6 +19,7 @@ updated: 2026-06-09
 
 ## Relations
 
+- @sources/newsletter-rss-latent-space-2026-08-01-ainews-deepseek-v4-flash-0731.md
 - @concepts/api-credential-registry.md — `DEEPSEEK_*`, `OPENROUTER_*` variable names
 - @concepts/mcp-context-optimization.md — Layer 2 claude-code-router (complementary)
 - @entities/infrastructure/deepseek-api.md — prod brain

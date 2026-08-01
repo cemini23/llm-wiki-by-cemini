@@ -5,6 +5,9 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - entities/tools/davidondrej-skills.md
+  - entities/tools/google-magika.md
+  - entities/tools/tmcw-gedcom.md
   - sources/eval-github-revenue-opportunity-analysis-2026-07-29-civil-legal.md
   - sources/eval-github-repo-revenue-evaluation-2026-07-29-genealogy-legal.md
   - entities/tools/different-ai-openwork.md
@@ -244,6 +247,9 @@ updated: 2026-07-31
 
 ## Relations
 
+- @entities/tools/davidondrej-skills.md
+- @entities/tools/google-magika.md
+- @entities/tools/tmcw-gedcom.md
 - @sources/arxiv-2607.28513-creative-transformation-literary-texts-2026-07-31.md — K215
 
 - @sources/arxiv-2607.27578-prompt-graph-engineering-2026-07-31.md — K215

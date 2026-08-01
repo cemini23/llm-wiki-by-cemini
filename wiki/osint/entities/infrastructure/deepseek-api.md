@@ -1,9 +1,11 @@
 ---
+
 title: DeepSeek Cloud API
 type: entity
 tags: [infrastructure, llm, cloud-api, cemini-brain, intended-architecture]
 keywords: [deepseek, api, cloud-inference, openai-compatible, chat-completions]
 related:
+  - sources/newsletter-rss-latent-space-2026-08-01-ainews-deepseek-v4-flash-0731.md
   - entities/infrastructure/hetzner.md
   - entities/infrastructure/deepseek-r1-14b.md
   - entities/infrastructure/ollama.md
@@ -56,11 +58,12 @@ related:
   - concepts/llm-routing-deepseek-openrouter-failover.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-06-05
+updated: 2026-08-01
 ---
 
 ## Relations
 
+- @sources/newsletter-rss-latent-space-2026-08-01-ainews-deepseek-v4-flash-0731.md — V4-Flash-0731 post-train (API id unchanged)
 - @entities/infrastructure/hetzner.md — host that will hold the API client + key
 - @entities/infrastructure/deepseek-r1-14b.md — the local-weights alternative; retracted because the hardware isn't available (see @that-page)
 - @entities/infrastructure/ollama.md — the local-runtime alternative; retracted for the same reason

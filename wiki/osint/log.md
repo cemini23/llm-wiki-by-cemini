@@ -2,6 +2,14 @@
 
 
 
+## [2026-08-01] ingest | K216 — genealogy/GEDCOM evals + skills/Magika + Flash-0731 + GBP/ZT
+
+- **Inbox:** 4 tool-eval docx + Latent Space (title-dup overridden) + Sterling Sky + SecPro #245
+- **Phase-0 (~268MB):** gedcom, AncestryLLM, davidondrej-skills, magika, gedcomx, FamilySearch-GEDCOM, gh-stack, dust, tailspin, waveterm, openaddresses (`scripts/adopt_k216_phase0.sh`)
+- **NO-GO:** null SPDX / huge (PastPaths, openapi-directory, karpathy-skills no LICENSE); GPL isolate FamilyGem/antenati/python-gedcom/aria2; BUSL Consul; skip rclone this batch
+- **Briefs:** Atto GEDCOM/Magika · TipDrop skills · GuruWatcher WaveTerm/tailspin · CCC gh-stack/DeepSeek · SEO Sterling · cyber Zero Trust · **no xsp/pm prod**
+- **Archive:** egress-fi
+
 ## [2026-07-31] phase1 | runtime MCP chrome-devtools + mcp-legal-it
 
 - Operator OK for recommended MCP: project `.cursor/mcp.json` — `chrome-devtools` (pinned local `.local/mcp-bins` @1.6.0, `--no-usage-statistics`, scrubbed env) + `mcp-legal-it` (local Phase-0 venv, human-gated, `MCP_TRANSPORT=stdio`)

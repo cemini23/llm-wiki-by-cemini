@@ -1,20 +1,30 @@
 ---
-title: Wave Terminal (waveterm)
+
+title: "wavetermdev/waveterm"
 type: entity
-tags: [tool, terminal, ai, tipdrop, k151, watch]
-keywords: [SSH, inline LLM, Apache-2.0, durable sessions]
+tags: [tool, phase-0, k216, guruwatcher]
+keywords: [waveterm, waveterm]
 related:
-  - sources/eval-cemini-github-repo-evaluation-2026-07-09.md
+  - sources/eval-github-url-revenue-infra-cli-2026-08-01.md
+  - concepts/wiki-tooling-evaluation.md
 maturity: draft
-created: 2026-07-09
-updated: 2026-07-09
+created: 2026-08-01
+updated: 2026-08-01
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
+
+## Relations
+
+- @sources/eval-github-url-revenue-infra-cli-2026-08-01.md
+- @concepts/wiki-tooling-evaluation.md
 
 ## Narrative
 
 | Field | Value |
-|-------|-------|
-| **Repo** | [wavetermdev/waveterm](https://github.com/wavetermdev/waveterm) |
-| **License** | Apache-2.0 (~21.6k★) |
-| **Verdict** | **Watch** — AI-native terminal, durable SSH, inline LLM; TipDrop/David ops candidate |
-| **Friction** | High workflow migration vs Cursor + SSH habits |
+|-------|--------|
+| **Repo** | https://github.com/wavetermdev/waveterm |
+| **License** | **Apache-2.0** [CONFIRMED gh 2026-08-01] |
+| **Verdict** | **Watch/Extract SSH ops** |
+| **Local** | `.local/adopts/waveterm` |
+| **Route** | guruwatcher |

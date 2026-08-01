@@ -7,6 +7,18 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K216 ingest (2026-08-01)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-github-revenue-analyst-url-genealogy-2026-08-01](sources/eval-github-revenue-analyst-url-genealogy-2026-08-01.md) | Tool eval — genealogy OS / GEDCOM / Antenati (K216) | draft |
+| [eval-github-revenue-opportunity-project-2026-08-01](sources/eval-github-revenue-opportunity-project-2026-08-01.md) | Tool eval — skills / Magika / ECC (K216) | draft |
+| [eval-github-revenue-opportunity-repository-gedcom-2026-08-01](sources/eval-github-revenue-opportunity-repository-gedcom-2026-08-01.md) | Tool eval — GEDCOM X / parsers (K216) | draft |
+| [eval-github-url-revenue-infra-cli-2026-08-01](sources/eval-github-url-revenue-infra-cli-2026-08-01.md) | Tool eval — infra/CLI/geospatial (K216) | draft |
+| [newsletter-rss-latent-space-2026-08-01-ainews-deepseek-v4-flash-0731](sources/newsletter-rss-latent-space-2026-08-01-ainews-deepseek-v4-flash-0731.md) | Latent Space — DeepSeek V4-Flash 0731 | draft |
+| [newsletter-rss-sterling-sky-2026-07-30-temporarily-closed-gbp](sources/newsletter-rss-sterling-sky-2026-07-30-temporarily-closed-gbp.md) | Sterling Sky — GBP Temporarily Closed | draft |
+| [substack-rss-secpro-2026-07-31-245-zero-trust-identity](sources/substack-rss-secpro-2026-07-31-245-zero-trust-identity.md) | SecPro #245 Zero Trust identity | draft |
+
 
 ### K215 — 2026-07-31 PII evals + AgentRadio + Macro/EH/Wu/tl;dr
 
@@ -1470,6 +1482,22 @@ Total: **1022 canonical stubs** (LNG desk + K208 Gemini DR wave3 + …)
 ---
 
 ## Entities
+### K216 tools
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [tmcw-gedcom](entities/tools/tmcw-gedcom.md) | tmcw/gedcom ISC GEDCOM parser | draft |
+| [ancestryllm](entities/tools/ancestryllm.md) | AncestryLLM MIT (ToS-gated) | draft |
+| [davidondrej-skills](entities/tools/davidondrej-skills.md) | davidondrej/skills MIT | draft |
+| [google-magika](entities/tools/google-magika.md) | google/magika Apache-2.0 MIME | draft |
+| [gedcomx](entities/tools/gedcomx.md) | FamilySearch gedcomx Apache-2.0 | draft |
+| [familysearch-gedcom](entities/tools/familysearch-gedcom.md) | FamilySearch GEDCOM 7 Apache-2.0 | draft |
+| [gh-stack](entities/tools/gh-stack.md) | github/gh-stack MIT | draft |
+| [dust-du](entities/tools/dust-du.md) | bootandy/dust Apache-2.0 | draft |
+| [tailspin](entities/tools/tailspin.md) | bensadeh/tailspin MIT | draft |
+| [waveterm](entities/tools/waveterm.md) | waveterm Apache-2.0 | draft |
+| [openaddresses](entities/tools/openaddresses.md) | openaddresses BSD-3-Clause | draft |
+
 
 Tickers, companies, people, facilities, organizations — concrete things the research is about.
 

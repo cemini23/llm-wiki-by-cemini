@@ -4,6 +4,7 @@ type: concept
 tags: [concept, llm-models, deepseek, model-selection, cemini-brain]
 keywords: [deepseek, v3, v3.1, v4, r1, model-versions, performance-benchmarks, tool-use, financial-qa, cemini-brain]
 related:
+  - sources/newsletter-rss-latent-space-2026-08-01-ainews-deepseek-v4-flash-0731.md
   - entities/infrastructure/deepseek-api.md
   - sources/tsag-2604.19633.md
   - concepts/llm-agent-systems.md
@@ -22,6 +23,7 @@ updated: 2026-05-11
 
 ## Relations
 
+- @sources/newsletter-rss-latent-space-2026-08-01-ainews-deepseek-v4-flash-0731.md
 - @entities/infrastructure/deepseek-api.md — API infrastructure page; this page covers model capabilities and version lineage.
 - @sources/tsag-2604.19633.md — TSAG evaluated DeepSeek-V3 alongside GPT-4o, Qwen2, Llama 3 on financial tool-use benchmarks.
 - @concepts/llm-agent-systems.md — cluster hub; DeepSeek is Cemini's intended brain for agent orchestration.

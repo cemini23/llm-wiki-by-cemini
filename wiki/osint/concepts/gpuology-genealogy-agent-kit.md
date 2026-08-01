@@ -5,6 +5,12 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - entities/tools/familysearch-gedcom.md
+  - entities/tools/gedcomx.md
+  - entities/tools/ancestryllm.md
+  - entities/tools/tmcw-gedcom.md
+  - sources/eval-github-revenue-opportunity-repository-gedcom-2026-08-01.md
+  - sources/eval-github-revenue-analyst-url-genealogy-2026-08-01.md
   - entities/tools/claude-immigration-attorney.md
   - entities/tools/genealogy-ai.md
   - sources/eval-github-revenue-opportunity-analysis-2026-07-29-civil-legal.md
@@ -129,11 +135,17 @@ related:
   - entities/tools/mineru.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-07-31
+updated: 2026-08-01
 ---
 
 ## Relations
 
+- @entities/tools/familysearch-gedcom.md
+- @entities/tools/gedcomx.md
+- @entities/tools/ancestryllm.md
+- @entities/tools/tmcw-gedcom.md
+- @sources/eval-github-revenue-opportunity-repository-gedcom-2026-08-01.md
+- @sources/eval-github-revenue-analyst-url-genealogy-2026-08-01.md
 - @entities/tools/mineru.md — K215
 
 - @entities/tools/vibe-upgrader.md — K215
