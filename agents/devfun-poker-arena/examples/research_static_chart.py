@@ -295,14 +295,25 @@ def research_static_chart(table: dict) -> dict:
     tag_on = _env_truthy("CEMINI_TAG_WIDEN")
     if tag_on and fmt != "hu":
         try:
-            from tag_widen import TAG_BB_3BET, TAG_BB_CALL, TAG_SB_OPEN_EXTRA
+            from tag_widen import (
+                TAG_BB_3BET,
+                TAG_BB_CALL,
+                TAG_CO_OPEN_EXTRA,
+                TAG_MP_OPEN_EXTRA,
+                TAG_SB_OPEN_EXTRA,
+            )
         except Exception:
             TAG_BB_3BET = TAG_BB_CALL = TAG_SB_OPEN_EXTRA = frozenset()
+            TAG_MP_OPEN_EXTRA = TAG_CO_OPEN_EXTRA = frozenset()
         if pos == "BB":
             raise_set |= set(TAG_BB_3BET)
             call_set |= set(TAG_BB_CALL) - raise_set
         elif pos == "SB":
             raise_set |= set(TAG_SB_OPEN_EXTRA)
+        elif pos == "MP":
+            raise_set |= set(TAG_MP_OPEN_EXTRA)
+        elif pos == "CO":
+            raise_set |= set(TAG_CO_OPEN_EXTRA)
     if cls in raise_set:
         action = "raise"
     elif cls in call_set:

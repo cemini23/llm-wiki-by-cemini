@@ -2,6 +2,7 @@
 title: Playground S11 TAG widen (no gin)
 type: brief
 created: 2026-08-02
+updated: 2026-08-02
 target: agents/devfun-poker-arena
 ---
 
@@ -11,7 +12,7 @@ Raise VPIP/PFR toward halloran-class TAG (~20–26% / ~10–12%) on Playground S
 
 ## Summary
 
-Nit trap was structural: `KO_SURVIVAL_MIN_STACK=1500` stayed on forever for 1000-chip buy-ins. Fixed floor to 700, early hands to 40, enabled `CEMINI_TAG_WIDEN=1` (mild margins + BB defend chart). Gin remains hard-killed; short-stack / protect still skip widen.
+v1 fixed permanent KO survival (min stack 1500) but VPIP stayed ~8% — BB/SB broadway auto-folds and chart raise→fold killed defends (KQo/AJo folded). v2: steal-sized TAG BB/SB defend before those guards; stronger margins; MP/CO open extras. Gin still hard-killed.
 
 ## Regime disclosure
 

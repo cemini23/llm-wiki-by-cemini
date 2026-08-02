@@ -2878,29 +2878,67 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             return defend
 
     # Static chart is open-range only — facing a raise, downgrade spurious "raise" (77 MP −100).
+    # TAG: BB/SB defend hands become call (not fold) so broadway/pair floats survive.
     if (call_chips > 0 and suggested == "raise" and hc not in _PREFLOP_3BET_OK
             and not (_is_hu_table(table or {}) and position == "BB")):
-        suggested = "fold"
+        try:
+            from tag_widen import tag_facing_raise_to_call as _tag_to_call
+            suggested = "call" if _tag_to_call(hc, position) else "fold"
+        except Exception:
+            suggested = "fold"
+
+    # TAG v2: steal-sized BB/SB defend before hard-coded broadway/trash folds.
+    if not lead_protect and not qual_protect and not first_protect:
+        try:
+            from tag_widen import try_tag_bb_sb_defend as _tag_defend
+
+            _td = _tag_defend(
+                hand_class=hc,
+                position=position,
+                call_chips=call_chips,
+                big_blind=big_blind,
+                available=available,
+                hero_stack_chips=hero_stack_chips,
+            )
+            if _td is not None:
+                return _td
+        except Exception:
+            pass
 
     # BB: never defend chart-trash vs raises (Q6o BB −100 — IP preflop pricing leak).
     # HU: S1B defend lane handles BB vs steal — do not auto-fold weak facing-raise set.
+    # TAG: skip when hand is in TAG BB defend set.
+    _tag_bb_ok = False
+    try:
+        from tag_widen import tag_bb_defend_hand as _tag_bb_hand
+        _tag_bb_ok = _tag_bb_hand(hc)
+    except Exception:
+        _tag_bb_ok = False
     if (position == "BB" and call_chips > 0 and hc in _WEAK_FACING_RAISE
             and hc not in {"AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQs", "AQo"}
+            and not _tag_bb_ok
             and not (_is_hu_table(table or {}) and s1b_exploit_enabled())
             and "fold" in available):
         return "fold", None
 
     # BB: fold dominated broadway vs opens (KQo BB −100 analyze #10).
     # HU: skip when S1B / chart defend applies (AJo/ATo are HU defend hands).
+    # TAG: skip for TAG_BB_CALL (halloran-class VPIP needs these floats).
     hu_bb_exploit = (
         _is_hu_table(table or {})
         and s1b_exploit_enabled()
         and position == "BB"
         and call_chips > 0
     )
+    _tag_skip_broadway = False
+    try:
+        from tag_widen import tag_skip_broadway_auto_fold as _tag_skip_bw
+        _tag_skip_broadway = _tag_skip_bw(hc, position)
+    except Exception:
+        _tag_skip_broadway = False
     if (not bb_chase_steal and position == "BB" and call_chips > 0
             and hc in _BB_BROADWAY_FOLD and "fold" in available
-            and not hu_bb_exploit):
+            and not hu_bb_exploit and not _tag_skip_broadway):
         return "fold", None
 
     # HU: 3-bet / BB defend before broadway guards (S1B lane + polar 3-bet).
@@ -2959,12 +2997,13 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
 
     # BB: fold dominated broadway vs opens — 6-max path only (HU handled above).
     if (not bb_chase_steal and position == "BB" and call_chips > 0
-            and hc in _BB_BROADWAY_FOLD and "fold" in available):
+            and hc in _BB_BROADWAY_FOLD and "fold" in available
+            and not _tag_skip_broadway):
         return "fold", None
 
     # SB: fold dominated broadway vs opens (QJo SB −100 HL R22 #01).
     if (position == "SB" and call_chips > 0 and hc in _BB_BROADWAY_FOLD
-            and "fold" in available):
+            and "fold" in available and not _tag_skip_broadway):
         return "fold", None
 
     # SB: fold marginal ace vs any open (A6o SB −100 HL R4 #02).
@@ -2973,8 +3012,9 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         return "fold", None
 
     # BB: fold low suited trash vs opens (T2s, 98s — HL R6 #04/#05).
+    # TAG: keep suited connectors / K9s that are in TAG_BB_CALL.
     if (position == "BB" and call_chips > 0 and _is_bb_suited_trash(hc)
-            and "fold" in available):
+            and not _tag_bb_ok and "fold" in available):
         return "fold", None
 
     # CO: fold weak connector trash vs any raise (98o CO −100 HL R11 #01).
