@@ -5,6 +5,9 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - entities/tools/decimen-optical-transfer.md
+  - entities/tools/pdf-inspector.md
+  - sources/eval-github-revenue-opportunity-repository-2026-08-02.md
   - entities/tools/familysearch-gedcom.md
   - entities/tools/gedcomx.md
   - entities/tools/ancestryllm.md
@@ -135,10 +138,14 @@ related:
   - entities/tools/mineru.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-08-01
+updated: 2026-08-02
 ---
 
 ## Relations
+
+- @entities/tools/decimen-optical-transfer.md — K218 air-gapped PII transfer Extract
+- @entities/tools/pdf-inspector.md — K218 PDF routing Extract
+- @sources/eval-github-revenue-opportunity-repository-2026-08-02.md — K218 eval
 
 - @entities/tools/familysearch-gedcom.md
 - @entities/tools/gedcomx.md

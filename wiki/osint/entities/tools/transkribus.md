@@ -4,6 +4,7 @@ type: entity
 tags: [tool, genealogy, htr, paleography, draft]
 keywords: [Transkribus, READ-COOP, handwriting recognition, Latin, PAGE XML]
 related:
+  - entities/tools/pdf-inspector.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
   - entities/tools/dhfbk-tint.md
@@ -24,10 +25,12 @@ related:
   - entities/tools/kurrentschrift.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-08-01
+updated: 2026-08-02
 ---
 
 ## Relations
+
+- @entities/tools/pdf-inspector.md — K218 scanned-vs-text PDF routing
 
 - @sources/arxiv-2607.21936-historical-doc-rag-restoration.md — K196 backlink
 - @sources/arxiv-2607.15509-llm-automl-handwritten-ocr.md — K177 LLM-NAS HTR Watch (contrast)

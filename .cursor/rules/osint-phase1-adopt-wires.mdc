@@ -83,3 +83,10 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 
 - `htrace.sh` = **GPL isolate** HTTP latency debug REFERENCE for alert watches — never link into proprietary GuruWatcher binaries; subprocess/sidecar only if ever used.
 
+## K218 — Atto optical/PDF + GuruWatcher last30days + xsp memory
+
+- `decimen-optical-transfer` = air-gapped QR/fountain PII share patterns for Atto — physical proximity framing; never unattended cloud exfil.
+- `pdf-inspector` = scanned-vs-text PDF routing before OCR/HTR; Magika still sniffs; Transkribus remains sole product HTR.
+- `last30days-skill` = GuruWatcher / TipDrop research-synthesis REFERENCE — **alert-only**, never orders; do not clobber prod `watches.json` autonomously.
+- `TencentDB-Agent-Memory` = agent memory / skill / wiki-graph patterns for xsp — Extract patterns only; do not vendor Tencent deploy stack into `/opt/cemini`.
+

@@ -7,6 +7,17 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K218 ingest (2026-08-02)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-github-revenue-opportunity-repository-2026-08-02](sources/eval-github-revenue-opportunity-repository-2026-08-02.md) | Tool eval — optical/PDF/memory/last30days (K218) | draft |
+| [macro-charts-paid-forward-2026-08-02-everything-is-about-to-change](sources/macro-charts-paid-forward-2026-08-02-everything-is-about-to-change.md) | Macro Charts teaser — quality vs momentum | draft |
+| [decimen-optical-transfer](entities/tools/decimen-optical-transfer.md) | Air-gapped QR transfer Extract | draft |
+| [pdf-inspector](entities/tools/pdf-inspector.md) | Scanned-vs-text PDF routing | draft |
+| [tencentdb-agent-memory](entities/tools/tencentdb-agent-memory.md) | Agent memory hub Extract → xsp | draft |
+| [last30days-skill](entities/tools/last30days-skill.md) | last30days GuruWatcher Extract | draft |
+
 ### K217 ingest (2026-08-01)
 
 | Page | Summary | Maturity |

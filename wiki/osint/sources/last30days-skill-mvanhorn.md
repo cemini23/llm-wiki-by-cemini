@@ -5,6 +5,8 @@ tags: [github, claude-code-skill, multi-source-research, recency-analysis, socia
 keywords: [last30days-skill, mvanhorn, recency-research, reddit-scraping, x-twitter-scraping, youtube-transcripts, hackernews, polymarket-odds-aggregation, tiktok-instagram-bluesky-truthsocial, claude-code-skill, openclaw-claud-installation, scrapecreators-api, yt-dlp, bird-twitter-client, alternative-sentiment-alpha]
 clusters: [llm-agents, dev-tooling, alt-data]
 related:
+  - entities/tools/last30days-skill.md
+  - sources/eval-github-revenue-opportunity-repository-2026-08-02.md
   - sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md
   - sources/polymarket-informed-minority-gomezcram-2026.md
   - sources/polymarket-predictions-mcp.md
@@ -16,11 +18,13 @@ related:
 maturity: validated
 read_status: read-skim
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-08-02
 ---
 
 ## Relations
 
+- @entities/tools/last30days-skill.md — K218 Phase-0 entity + clone
+- @sources/eval-github-revenue-opportunity-repository-2026-08-02.md — K218 refresh
 - @sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md — Wave 4A URL 16 Adopt; promoted to dedicated source 2026-04-30
 - @sources/polymarket-informed-minority-gomezcram-2026.md — last30days-skill **already extracts Polymarket odds** as one of its data sources; provides a third-Cemini-touchpoint for Polymarket data alongside `@sources/polymarket-predictions-mcp.md` (live odds via MCP) and the LBS/Yale paper's informed-flow analyst proposal
 - @sources/polymarket-predictions-mcp.md — sibling Polymarket data layer; this skill is broader (multi-source incl. Polymarket) while polymarket-mcp is narrower (Polymarket-only). For Cemini, polymarket-mcp is preferred for production Polymarket access; last30days is a Workflow tool for ad-hoc research synthesis across many sources.

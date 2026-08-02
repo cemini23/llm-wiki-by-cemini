@@ -4,6 +4,7 @@ type: entity
 tags: [platform, prediction-markets, on-chain, cemini-venue-adjacent]
 keywords: []
 related:
+  - entities/tools/last30days-skill.md
   - sources/substack-rss-event-horizon-2026-07-14-congress-pm-hearing.md
   - sources/3-19-kalshi-trading-strategy-research.md
   - sources/3-9-pm-research.md
@@ -115,10 +116,12 @@ related:
   - sources/substack-rss-wublock-2026-07-11-weekly-project-updates-bonkdao-suffers-governanc.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-11
+updated: 2026-08-02
 ---
 
 ## Relations
+
+- @entities/tools/last30days-skill.md — K218 alert-research skill (Polymarket source)
 
 - @sources/3-19-kalshi-trading-strategy-research.md
 - @sources/3-9-pm-research.md

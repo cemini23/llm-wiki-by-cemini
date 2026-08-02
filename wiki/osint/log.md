@@ -2,6 +2,14 @@
 
 
 
+## [2026-08-02] ingest | K218 — optical/PDF/memory + Macro Charts
+
+- **Inbox:** Revenue Opportunity Repository Analysis.docx · Macro Charts RSS teaser
+- **Phase-0 (~161MB):** decimen-optical-transfer, pdf-inspector, TencentDB-Agent-Memory, last30days-skill
+- **Skip Watch clones:** ds4, semantica; **NO-GO:** AGPL invidious, HF abliterated forks
+- **Briefs:** Atto (decimen/pdf-inspector) · GuruWatcher (last30days + Macro) · TipDrop (last30days David) · xsp Agent-Memory → prod scp
+- **Phase-1:** osint-phase1-adopt-wires + surface rules
+
 ## [2026-08-01] ingest | K217 — OCR/HTR evals + WuBlock weekly
 
 - **Inbox:** Evaluate OCR GitHub Repositories.docx · GitHub Repo Revenue Analysis.docx · WuBlock weekly PumpFun/HL
