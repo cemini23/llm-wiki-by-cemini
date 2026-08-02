@@ -1213,7 +1213,17 @@ def decide(
     if short_stack or survival_tight:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.04, "call_margin_delta": 0.05})
     elif ko_survival:
-        margins = _merge_margins(margins, {"fold_slack_delta": 0.02, "call_margin_delta": 0.02})
+        # TAG widen: keep a light survival pad, not permanent nit margins.
+        try:
+            from tag_widen import tag_widen_enabled as _tag_on
+            _ko_pad = (
+                {"fold_slack_delta": 0.01, "call_margin_delta": 0.01}
+                if _tag_on()
+                else {"fold_slack_delta": 0.02, "call_margin_delta": 0.02}
+            )
+        except Exception:
+            _ko_pad = {"fold_slack_delta": 0.02, "call_margin_delta": 0.02}
+        margins = _merge_margins(margins, _ko_pad)
     elif placement_protect:
         margins = _merge_margins(margins, {"fold_slack_delta": 0.03, "call_margin_delta": 0.03})
     elif placement_chase:
@@ -1226,6 +1236,19 @@ def decide(
                 "chase_open_equity": 0.28,
             },
         )
+    # Halloran-class TAG — after survival pads; skipped under protect/short.
+    try:
+        from tag_widen import apply_tag_widen_margins
+
+        margins = apply_tag_widen_margins(
+            margins,
+            short_stack=short_stack,
+            qual_protect=qual_protect,
+            lead_protect=lead_protect,
+            first_protect=first_protect,
+        )
+    except Exception:
+        pass
     style_ov = ctx.get("hl_style_overrides") or {}
     if style_ov:
         tweak: dict[str, float] = {}

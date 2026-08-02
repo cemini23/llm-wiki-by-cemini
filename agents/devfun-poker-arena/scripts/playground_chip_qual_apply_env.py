@@ -53,10 +53,13 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         "CEMINI_FIRST_RANK": "1",
         "CEMINI_FIRST_JOIN_RETRY_S": "1800",
         # Fresh-board survival (S1a premium synthesis) — not gin widen
-        "CEMINI_COLD_START_NO_STEAL": "1",
+        # TAG climb: allow chart opens during cold HUD; keep gin killed.
+        "CEMINI_COLD_START_NO_STEAL": "0",
+        "CEMINI_TAG_WIDEN": "1",
         "CEMINI_KO_SURVIVAL": "1",
-        "CEMINI_KO_SURVIVAL_HANDS": "120",
-        "CEMINI_KO_SURVIVAL_MIN_STACK": "1500",
+        # Was 1500 — permanently on for 1000-chip playground buy-ins (nit trap).
+        "CEMINI_KO_SURVIVAL_HANDS": "40",
+        "CEMINI_KO_SURVIVAL_MIN_STACK": "700",
         "CEMINI_SURVIVAL_STACK_CHIPS": "500",
         "CEMINI_SHORT_STACK_BB": "20",
         "CEMINI_MAX_REBUYS": "2",
@@ -110,7 +113,7 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         # Per-decide telemetry (T10 post-mortem gap)
         "CEMINI_PREFLOP_LOG": "1",
         "CEMINI_PREFLOP_LOG_PATH": f"reports/exports/{export_slug}/preflop_decisions.jsonl",
-        "AGENT_VERSION": f"playground-s{season}.qual.2026-08-01.postmortem",
+        "AGENT_VERSION": f"playground-s{season}.qual.2026-08-02.tag-widen",
         "ARENA_NO_AUTO_REGISTER": "1",
     }
 

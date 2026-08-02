@@ -289,14 +289,30 @@ def research_static_chart(table: dict) -> dict:
     else:
         chart_source = _OPEN_CHART
     rules = chart_source.get(pos) or {}
-    if cls in rules.get("raise", set()):
+    raise_set = set(rules.get("raise") or set())
+    call_set = set(rules.get("call") or set())
+    # Halloran-class TAG: fill empty 6-max BB defend + mild SB open widen (no gin).
+    tag_on = _env_truthy("CEMINI_TAG_WIDEN")
+    if tag_on and fmt != "hu":
+        try:
+            from tag_widen import TAG_BB_3BET, TAG_BB_CALL, TAG_SB_OPEN_EXTRA
+        except Exception:
+            TAG_BB_3BET = TAG_BB_CALL = TAG_SB_OPEN_EXTRA = frozenset()
+        if pos == "BB":
+            raise_set |= set(TAG_BB_3BET)
+            call_set |= set(TAG_BB_CALL) - raise_set
+        elif pos == "SB":
+            raise_set |= set(TAG_SB_OPEN_EXTRA)
+    if cls in raise_set:
         action = "raise"
-    elif cls in rules.get("call", set()):
+    elif cls in call_set:
         action = "call"
     else:
         action = "fold"
 
     source = f"static-chart-v1-{fmt}"
+    if tag_on and fmt != "hu":
+        source = f"static-chart-v1-tag-{fmt}"
     if fmt == "hu" and _env_truthy("CEMINI_MAFP_CHART"):
         p = resolve_mafp_chart_path()
         if p is not None and p.is_file():
