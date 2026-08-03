@@ -871,10 +871,17 @@ def _log_preflop_decision(
         hero_seat = table.get("selfSeatNumber")
         stack_chips = None
         hole = None
-        bb = table.get("bigBlind") or table.get("bb") or 2
+        bb = (
+            table.get("bigBlindChips")
+            or table.get("bigBlind")
+            or table.get("bb")
+            or 2
+        )
         for seat in table.get("seats") or []:
             if seat.get("seatNumber") == hero_seat:
-                stack_chips = seat.get("chips")
+                stack_chips = seat.get("stackChips")
+                if stack_chips is None:
+                    stack_chips = seat.get("chips")
                 hole = seat.get("holeCards") or seat.get("cards")
                 break
         stack_bb = None
@@ -883,6 +890,11 @@ def _log_preflop_decision(
                 stack_bb = round(float(stack_chips) / float(bb), 2)
         except (TypeError, ValueError):
             stack_bb = None
+        allowed = table.get("allowedActions") or {}
+        try:
+            call_chips = int(allowed.get("callChips") or 0)
+        except (TypeError, ValueError):
+            call_chips = 0
         row = {
             "tableId": table.get("tableId"),
             "competitionId": table.get("competitionId"),
@@ -892,6 +904,8 @@ def _log_preflop_decision(
             "street": table.get("street") or table.get("round") or "preflop",
             "stack_chips": stack_chips,
             "stack_bb": stack_bb,
+            "big_blind": bb,
+            "call_chips": call_chips,
             "hole": hole,
             "action": action,
             "amount": amount,

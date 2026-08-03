@@ -113,7 +113,7 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         # Per-decide telemetry (T10 post-mortem gap)
         "CEMINI_PREFLOP_LOG": "1",
         "CEMINI_PREFLOP_LOG_PATH": f"reports/exports/{export_slug}/preflop_decisions.jsonl",
-        "AGENT_VERSION": f"playground-s{season}.qual.2026-08-03.tag-sb-v3",
+        "AGENT_VERSION": f"playground-s{season}.qual.2026-08-03.tag-sb-v3.posfix",
         "ARENA_NO_AUTO_REGISTER": "1",
     }
 

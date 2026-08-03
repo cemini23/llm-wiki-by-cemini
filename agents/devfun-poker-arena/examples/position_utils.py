@@ -23,14 +23,38 @@ _POS_BY_PLAYER_COUNT: dict[int, list[str]] = {
 _SEAT_TO_POS_6MAX = {1: "BTN", 2: "SB", 3: "BB", 4: "UTG", 5: "MP", 6: "CO"}
 
 
-def _active_seat_numbers(table: dict) -> list[int]:
+def _seat_status(seat: dict) -> str:
+    return str(seat.get("status") or "Active").lower()
+
+
+def _dealt_seat_numbers(table: dict) -> list[int]:
+    """Seats dealt into the hand — includes folded.
+
+    Position labels must stay fixed for the hand. Excluding folded seats
+    (old `_active_seat_numbers` behavior) rewires UTG/MP/CO/SB mid-hand and
+    poisons TAG SB telemetry + strategy branches on re-action.
+    """
     seats = table.get("seats") or []
     nums: list[int] = []
     for s in seats:
         if not isinstance(s, dict):
             continue
-        status = (s.get("status") or "Active").lower()
-        if status in ("folded", "out", "empty"):
+        if _seat_status(s) in ("out", "empty"):
+            continue
+        num = s.get("seatNumber")
+        if num is not None:
+            nums.append(int(num))
+    return sorted(set(nums))
+
+
+def _active_seat_numbers(table: dict) -> list[int]:
+    """Seats still in the hand (not folded/out/empty)."""
+    seats = table.get("seats") or []
+    nums: list[int] = []
+    for s in seats:
+        if not isinstance(s, dict):
+            continue
+        if _seat_status(s) in ("folded", "out", "empty"):
             continue
         num = s.get("seatNumber")
         if num is not None:
@@ -53,7 +77,8 @@ def infer_button_seat(table: dict) -> Optional[int]:
     if sb <= 0 or bb <= 0:
         return None
 
-    seat_nums = _active_seat_numbers(table)
+    # Blind geometry uses dealt-in seats so folds do not rotate the button.
+    seat_nums = _dealt_seat_numbers(table)
     if len(seat_nums) < 2:
         return None
 
@@ -63,10 +88,24 @@ def infer_button_seat(table: dict) -> Optional[int]:
     sb_seat: Optional[int] = None
     bb_seat: Optional[int] = None
     for num in seat_nums:
-        bet = int(seats.get(num, {}).get("currentBetChips") or 0)
-        if bet == sb:
+        seat = seats.get(num) or {}
+        # Prefer explicit blind posts when present (stable after raises).
+        posted = seat.get("postedBlindChips")
+        if posted is not None:
+            try:
+                posted_i = int(posted)
+            except (TypeError, ValueError):
+                posted_i = 0
+            if posted_i == sb and sb_seat is None:
+                sb_seat = num
+            elif posted_i == bb and bb_seat is None:
+                bb_seat = num
+            continue
+        bet = int(seat.get("currentBetChips") or 0)
+        # Exact blind match only — skip once action has raised past blinds.
+        if bet == sb and sb_seat is None:
             sb_seat = num
-        elif bet == bb:
+        elif bet == bb and bb_seat is None:
             bb_seat = num
 
     anchor = sb_seat
@@ -81,7 +120,7 @@ def infer_button_seat(table: dict) -> Optional[int]:
 
 
 def hero_position_label(table: dict) -> str:
-    """Map hero seat to UTG/MP/CO/BTN/SB/BB."""
+    """Map hero seat to UTG/MP/CO/BTN/SB/BB (stable for the hand)."""
     self_num = table.get("selfSeatNumber")
     if self_num is None:
         return "MP"
@@ -94,7 +133,7 @@ def hero_position_label(table: dict) -> str:
                 return pos.upper()
             break
 
-    seat_nums = _active_seat_numbers(table)
+    seat_nums = _dealt_seat_numbers(table)
     if not seat_nums or int(self_num) not in seat_nums:
         return _SEAT_TO_POS_6MAX.get(int(self_num), "MP")
 
