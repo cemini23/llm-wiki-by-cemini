@@ -23,6 +23,10 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-08-03 — K219)
+
+- **K219 ingest** — memvid Integrate + jobseek Extract + AppSec LLM protocol + 5 arXiv (LTTR / IVS-SAAM / HAM-VLN / agentic-engineer / ExtractBench) + CF/EH/Moontower/Wu RSS. Phase-0 ~77MB. Briefs → Atto / GuruWatcher / TipDrop / poker no-path / xsp+pm prod / CCC / cybersec.
+
 ## Current state (2026-08-02 — K218)
 
 - **K218 ingest** — optical transfer + pdf-inspector + TencentDB Agent Memory + last30days refresh + Macro Charts teaser. Phase-0 ~161MB. Briefs → Atto / GuruWatcher / TipDrop / xsp-prod. **No poker.**

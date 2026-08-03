@@ -4,6 +4,7 @@ type: concept
 tags: [concept, macro, sofr, conviction, rates, k155]
 keywords: [capital-flows, sofr-curve, conviction, cross-asset, z6, cme-single-stock-futures]
 related:
+  - sources/substack-rss-capital-flows-2026-08-03-misdirection-play.md
   - sources/substack-rss-capital-flows-2026-07-16-market-shift-and-risks.md
   - sources/substack-rss-capital-flows-2026-07-16-market-view-positions-changed.md
   - sources/substack-rss-capital-flows-2026-07-16-reindustrialization-usa.md

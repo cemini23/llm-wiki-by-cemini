@@ -4,6 +4,9 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher]
 keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
 related:
+  - sources/arxiv-2607.28790-lttr-arbitrage-rents-2026-08-03.md
+  - sources/substack-rss-wublock-2026-08-02-asia-top10.md
+  - sources/substack-rss-wublock-2026-08-03-mining-july.md
   - sources/substack-rss-secpro-2026-07-31-245-zero-trust-identity.md
   - sources/newsletter-rss-sterling-sky-2026-07-30-temporarily-closed-gbp.md
   - sources/eval-github-revenue-browser-automation-2026-07-28.md
@@ -52,6 +55,9 @@ updated: 2026-07-28
 
 ## Relations
 
+- @sources/arxiv-2607.28790-lttr-arbitrage-rents-2026-08-03.md — K219 wiki-only energy LTTR (not active project)
+- @sources/substack-rss-wublock-2026-08-02-asia-top10.md — K219 GuruWatcher awareness
+- @sources/substack-rss-wublock-2026-08-03-mining-july.md — K219 GuruWatcher awareness
 - @sources/substack-rss-secpro-2026-07-31-245-zero-trust-identity.md
 - @sources/newsletter-rss-sterling-sky-2026-07-30-temporarily-closed-gbp.md
 - @sources/eval-github-revenue-browser-automation-2026-07-28.md — K202 backlink

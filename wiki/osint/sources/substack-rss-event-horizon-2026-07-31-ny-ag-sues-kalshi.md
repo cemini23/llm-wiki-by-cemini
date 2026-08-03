@@ -6,9 +6,10 @@ keywords: [Kalshi, Letitia James, Hochul, CFTC, TRO]
 related:
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-event-horizon-2026-07-30-robinhood-prediction-markets-q2.md
+  - sources/substack-rss-event-horizon-2026-08-03-episode-26.md
 maturity: draft
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-03
 read_status: deep-read
 ---
 
@@ -16,6 +17,7 @@ read_status: deep-read
 
 - @concepts/xsp-lane-trading-framework.md
 - @sources/substack-rss-event-horizon-2026-07-30-robinhood-prediction-markets-q2.md — prior RH/Rothera
+- @sources/substack-rss-event-horizon-2026-08-03-episode-26.md
 
 ## Raw Concept
 

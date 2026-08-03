@@ -7,6 +7,25 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K219 ingest (2026-08-03)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-github-revenue-opportunity-url-2026-08-03](sources/eval-github-revenue-opportunity-url-2026-08-03.md) | Tool eval — memvid Integrate + jobseek Extract + a11y Pass (K219) | draft |
+| [appsec-llm-evaluation-protocol-2026-08-03](sources/appsec-llm-evaluation-protocol-2026-08-03.md) | Local AppSec LLM eval protocol → cybersec | draft |
+| [arxiv-2607.28790-lttr-arbitrage-rents](sources/arxiv-2607.28790-lttr-arbitrage-rents-2026-08-03.md) | European LTTR rents vs forwards | draft |
+| [arxiv-2607.29220-ivs-diffusion-saam](sources/arxiv-2607.29220-ivs-diffusion-saam-2026-08-03.md) | IVS diffusion + SAAM no-arb → xsp | draft |
+| [arxiv-2607.29600-ham-vln](sources/arxiv-2607.29600-ham-vln-2026-08-03.md) | HAM-VLN hierarchical agentic memory | draft |
+| [arxiv-2607.29610-educating-agentic-engineer](sources/arxiv-2607.29610-educating-agentic-engineer-2026-08-03.md) | Agentic engineer curricula → CCC | draft |
+| [arxiv-2607.29677-extractbench](sources/arxiv-2607.29677-extractbench-2026-08-03.md) | ExtractBench schema-guided extraction → Atto | draft |
+| [capital-flows-misdirection-play](sources/substack-rss-capital-flows-2026-08-03-misdirection-play.md) | Warsh/Bessent AI capital-flows thesis | draft |
+| [event-horizon-ep26](sources/substack-rss-event-horizon-2026-08-03-episode-26.md) | PM court battles NY AG + Kalshi MN | draft |
+| [moontower-sound-of-inevitability](sources/substack-rss-moontower-2026-08-02-sound-of-inevitability.md) | Moontower MM essay (#323 folded) | draft |
+| [wublock-asia-top10-2026-08-02](sources/substack-rss-wublock-2026-08-02-asia-top10.md) | SK crypto tax 2027 / mining bans | draft |
+| [wublock-mining-july-2026-08-03](sources/substack-rss-wublock-2026-08-03-mining-july.md) | Poolin Ch.11 + hashprice lows | draft |
+| [memvid](entities/tools/memvid.md) | Single-file agent memory Integrate → Atto | draft |
+| [jobseek](entities/tools/jobseek.md) | Career-page poll Extract → GuruWatcher | draft |
+
 ### K218 ingest (2026-08-02)
 
 | Page | Summary | Maturity |

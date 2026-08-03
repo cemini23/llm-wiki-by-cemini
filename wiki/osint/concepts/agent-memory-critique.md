@@ -4,6 +4,7 @@ type: concept
 tags: [llm-agents, agent-memory, rag, vector-stores, infrastructure]
 keywords: [agent-memory, RAG, vector-stores, lookup, episodic-memory, consolidation, forgetting, Stash, kb-server]
 related:
+  - sources/arxiv-2607.29600-ham-vln-2026-08-03.md
   - sources/contextual-agentic-memory-critique-2604.27707.md
   - sources/agent-native-research-artifacts-2604.24658.md
   - concepts/agent-native-research-artifacts.md

@@ -2,6 +2,15 @@
 
 
 
+## [2026-08-03] ingest | K219 — memvid/jobseek + AppSec protocol + 5 arXiv + RSS
+
+- **Inbox:** Revenue Opportunity URL Analysis.docx · AppSec LLM Evaluation Protocol.docx · 5 arXiv PDFs · Capital Flows / Event Horizon / Moontower×2 / WuBlock×2
+- **Phase-0 (~77MB):** memvid (Apache-2.0 Integrate REFERENCE ~13MB), jobseek (MIT Extract ~64MB)
+- **Skip Watch clones:** whatsapp-mcp, future-agi; **NO-GO adopt:** agentic-soc null SPDX; bettercap NOASSERTION Context; a11y Pass→SEO wiki-only
+- **Briefs:** Atto (memvid+ExtractBench) · GuruWatcher (jobseek+WuBlock) · TipDrop (whatsapp-mcp Watch) · poker no-path · xsp IVS/Moontower/CF → prod · pm Event Horizon courts → prod · CCC agentic-engineer · cybersec AppSec protocol
+- **Phase-1:** osint-phase1-adopt-wires K219 memvid + jobseek
+- **Fold:** Moontower #323 newsletter into sound-of-inevitability (LIKELY vs #319 — different issue; ~92% body overlap with essay)
+
 ## [2026-08-02] ingest | K218 — optical/PDF/memory + Macro Charts
 
 - **Inbox:** Revenue Opportunity Repository Analysis.docx · Macro Charts RSS teaser

@@ -4,6 +4,7 @@ type: concept
 tags: [concept, agent-memory, multi-agent, harness, k161]
 keywords: [three-layer memory, project-state JSON, eviction, PI oversight, context bound]
 related:
+  - sources/arxiv-2607.29600-ham-vln-2026-08-03.md
   - concepts/agentic-context-management.md
   - sources/arxiv-2607.21503-agentic-context-management.md
   - sources/arxiv-2607.10814-belief-conditioned-llm-agents-werewolf-audit-2026-07-15.md
@@ -14,11 +15,12 @@ related:
   - concepts/autosci-research-lifecycle-memory.md
 maturity: draft
 created: 2026-07-13
-updated: 2026-07-24
+updated: 2026-08-03
 ---
 
 ## Relations
 
+- @sources/arxiv-2607.29600-ham-vln-2026-08-03.md — K219 HAM-VLN decision-coupled world graph
 - @concepts/agentic-context-management.md — K193 lifecycle framing
 - @sources/arxiv-2607.21503-agentic-context-management.md
 - @sources/arxiv-hierarchical-memory-ensemble-qsp-2607.07666-2026-07-13.md — primary
@@ -39,9 +41,12 @@ Steal from Ensemble QSP (2607.07666):
 
 Empirical claim: mid-term inject stays ~**300 tokens median** across 100+ runs when caps + eviction hold.
 
+**K219 HAM-VLN (2607.29600):** decision-coupled agent-authored memory — recent waypoints verbatim in a bounded window; older history re-enters via relevance/recency/salience retrieval + one-hop topology; **>65% context cut** with SR gains on VLN-CE / ObjectNav. Steal for poker/CCC: same call writes action + reflective failure notes; no extra LLM round-trip for memory authoring.
+
 **Poker Arena:** session summaries + last-N hands + decision log — not full trajectory dump into `decide()` context.
 **CCC:** PI-style oversight agent + specialist workers with bounded mid-term state.
 
 ## Snippets
 
 - Mid-term median 301 tokens / max 4,050 across 104 runs [Source: 2607.07666]
+- HAM-VLN: >65% context reduction; 61.0% SR VLN-CER2R (training-free) [Source: 2607.29600]

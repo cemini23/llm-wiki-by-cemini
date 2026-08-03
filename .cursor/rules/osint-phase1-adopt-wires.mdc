@@ -90,3 +90,10 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - `last30days-skill` = GuruWatcher / TipDrop research-synthesis REFERENCE — **alert-only**, never orders; do not clobber prod `watches.json` autonomously.
 - `TencentDB-Agent-Memory` = agent memory / skill / wiki-graph patterns for xsp — Extract patterns only; do not vendor Tencent deploy stack into `/opt/cemini`.
 
+## K219 — memvid (Atto) + jobseek (GuruWatcher)
+
+- `memvid` (Apache-2.0, `.local/adopts/memvid` ~13MB) = single-file / portable agent-memory capsule REFERENCE for Atto offline vault tiers — do not replace `truth.ged` / Transkribus; no Barone PII in memvid fixtures.
+- `jobseek` (MIT code + CC BY-NC data, `.local/adopts/jobseek` ~64MB) = career-page poll / Playwright fallback patterns for GuruWatcher Discord **alert-only** monitors — never republish job corpus commercially; never place orders.
+- Watch only (no clone this batch): `whatsapp-mcp`, `future-agi`.
+- Context / NO-GO adopt: a11y Pass→SEO wiki-only; `agentic-soc-platform` null SPDX; `bettercap` NOASSERTION Context.
+

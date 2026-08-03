@@ -5,6 +5,9 @@ type: concept
 tags: [concept, guruwatcher, discord, macro, k200, core-candidate]
 keywords: [claim ledger, most-recent-wins, sustain, verbatim guards, Macro Charts]
 related:
+  - sources/substack-rss-wublock-2026-08-02-asia-top10.md
+  - sources/substack-rss-wublock-2026-08-03-mining-july.md
+  - entities/tools/jobseek.md
   - sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md
   - entities/tools/guruwatcher.md
   - concepts/macro-charts-regime-signals.md

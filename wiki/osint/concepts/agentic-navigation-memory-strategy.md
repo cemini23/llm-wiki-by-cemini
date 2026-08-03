@@ -4,6 +4,7 @@ type: concept
 tags: [concept, navigation, llm-agents, game-dev, k124]
 keywords: [RobotNav, observation budget, memory strategy, agentic planner, pathfinding]
 related:
+  - sources/arxiv-2607.29600-ham-vln-2026-08-03.md
   - sources/arxiv-qwen-robotnav-2606.18112-2026-06-20.md
   - sources/arxiv-rng-bench-non-markov-mllm-2606.19338-2026-06-21.md
   - concepts/non-markov-belief-state-benchmarks.md
