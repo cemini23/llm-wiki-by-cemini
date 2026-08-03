@@ -1,7 +1,8 @@
 """Halloran-class TAG widen — VPIP/PFR lift without gin.
 
-v2: BB/SB defend must beat hard-coded broadway auto-folds and the
-facing-raise chart raise→fold downgrade (those kept VPIP ~8% after v1).
+v2: BB/SB defend before broadway auto-folds / raise→fold downgrade.
+v3: SB-facing-raise is the VPIP bottleneck (nearly all SB spots) — widen
+steal-sized SB defend set and raise size cap; keep trash folds.
 """
 from __future__ import annotations
 
@@ -84,17 +85,20 @@ TAG_BB_3BET = frozenset({
     "AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQs", "AQo", "AJs", "KQs",
 })
 
-# SB vs open — tighter than BB (OOP); still wider than nemesis-premium-only.
+# SB vs open (v3) — still tighter than BB; covers halloran-class blind defense.
+# Excludes pure trash (72o/T5o) that correctly fold in live logs.
 TAG_SB_DEFEND = frozenset({
-    "AA", "KK", "QQ", "JJ", "TT", "99", "88", "77",
-    "AKs", "AKo", "AQs", "AQo", "AJs", "AJo", "ATs",
-    "KQs", "KQo", "KJs", "QJs",
+    "AA", "KK", "QQ", "JJ", "TT", "99", "88", "77", "66", "55", "44", "33", "22",
+    "AKs", "AKo", "AQs", "AQo", "AJs", "AJo", "ATs", "ATo", "A9s", "A8s", "A5s", "A4s",
+    "KQs", "KQo", "KJs", "KJo", "KTs", "K9s",
+    "QJs", "QJo", "QTs", "Q9s", "JTs", "JTo", "J9s", "T9s", "T8s",
+    "98s", "97s", "87s", "86s", "76s", "65s", "54s",
 })
 
 TAG_SB_OPEN_EXTRA = frozenset({
-    "77", "66", "55", "44",
+    "77", "66", "55", "44", "33",
     "AJo", "ATs", "A9s", "A5s", "A4s",
-    "KQo", "KJs", "KTs", "QTs", "QJs", "JTs", "T9s", "98s", "87s",
+    "KQo", "KJs", "KTs", "QTs", "QJs", "JTs", "T9s", "98s", "87s", "76s",
 })
 
 TAG_MP_OPEN_EXTRA = frozenset({
@@ -104,6 +108,10 @@ TAG_MP_OPEN_EXTRA = frozenset({
 TAG_CO_OPEN_EXTRA = frozenset({
     "44", "33", "22", "A4s", "A3s", "A2s", "K9s", "Q9s", "J9s", "T8s", "87s", "76s",
 })
+
+# Steal-size cap in BBs (v2 was 3.5 — missed many 3–4x opens).
+_TAG_DEFEND_MAX_BB = 4.5
+_TAG_DEFEND_MAX_STACK_FRAC = 0.32
 
 
 def tag_bb_defend_hand(hand_class: str) -> bool:
@@ -151,10 +159,9 @@ def try_tag_bb_sb_defend(
     if call_chips <= 0 or "call" not in available:
         return None
     bb = max(int(big_blind or 2), 1)
-    # Steal / small open only — not facing 5x+ bombs
-    if call_chips > bb * 3.5:
+    if call_chips > bb * _TAG_DEFEND_MAX_BB:
         return None
-    if call_chips > hero_stack_chips * 0.28:
+    if call_chips > hero_stack_chips * _TAG_DEFEND_MAX_STACK_FRAC:
         return None
     if position == "BB" and hand_class in TAG_BB_CALL:
         return "call", None

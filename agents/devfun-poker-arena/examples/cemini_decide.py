@@ -3070,14 +3070,23 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         return "call", None
 
     # SB: fold weak suited trash vs opens (K9s SB −100 HL R14 #06; Q5s/Q6s/KTs S9).
+    # TAG v3: skip when hand is in TAG_SB_DEFEND (steal-sized already returned above).
+    _tag_sb_ok = False
+    try:
+        from tag_widen import tag_sb_defend_hand as _tag_sb_hand
+        _tag_sb_ok = _tag_sb_hand(hc)
+    except Exception:
+        _tag_sb_ok = False
     if (position == "SB" and call_chips > 0 and hc in _SB_WEAK_SUITED_VS_OPEN
-            and "fold" in available):
+            and not _tag_sb_ok and "fold" in available):
         return "fold", None
 
     # SB 6-max: no set-mine flats with 22–77 OOP (S9: 22/44/77 SB call → postflop bleed).
+    # TAG v3: allow steal-sized pair defends in TAG_SB_DEFEND.
     if (position == "SB" and call_chips > 0
             and not _is_hu_table(table or {})
-            and hc in _LOW_PAIRS_PROTECT and "fold" in available):
+            and hc in _LOW_PAIRS_PROTECT and not _tag_sb_ok
+            and "fold" in available):
         return "fold", None
 
     # CO/BTN: fold weak suited cold-call trash vs raise (Q5s BTN / J8s CO / A6s CO S9).
@@ -3086,9 +3095,12 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         return "fold", None
 
     # Nemesis tight: SB vs known hunters — premiums only (HL R21 S1a export).
+    # TAG v3: allow TAG_SB_DEFEND through (otherwise nemesis list zeros SB VPIP).
     nemesis_sb_ok = _NEMESIS_SB_DEFEND_OK
     if placement_chase or nemesis_opener_linear:
         nemesis_sb_ok = _NEMESIS_SB_DEFEND_CHASE
+    if _tag_sb_ok:
+        nemesis_sb_ok = nemesis_sb_ok | frozenset({hc})
     if (nemesis_opener and position == "SB" and call_chips > 0
             and hc not in nemesis_sb_ok and "fold" in available):
         return "fold", None
@@ -3171,8 +3183,10 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and equity < pot_odds + 0.10 and "fold" in available):
         return "fold", None
     # SB OOP: don't defend chart-fold trash without a clear price edge.
+    # TAG v3: skip for TAG_SB_DEFEND hands (already filtered).
     if (position == "SB" and suggested == "fold"
             and not _is_hu_table(table or {})
+            and not _tag_sb_ok
             and equity < pot_odds + 0.08 and "fold" in available):
         return "fold", None
     if (table and _is_hu_table(table) and position == "BB" and call_chips > 0

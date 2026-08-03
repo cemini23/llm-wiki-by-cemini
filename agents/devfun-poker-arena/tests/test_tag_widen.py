@@ -66,6 +66,47 @@ def test_tag_skips_broadway_auto_fold(monkeypatch):
     assert tag_facing_raise_to_call("72o", "BB") is False
 
 
+def test_tag_sb_defend_wider_v3(monkeypatch):
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    # v3 set includes suited connectors / mid pairs OOP
+    for hc in ("87s", "76s", "66", "QJo", "JTo", "KTs"):
+        out = try_tag_bb_sb_defend(
+            hand_class=hc,
+            position="SB",
+            call_chips=60,
+            big_blind=20,
+            available=["fold", "call", "raise"],
+            hero_stack_chips=1500,
+        )
+        assert out == ("call", None), hc
+    # Still fold true trash
+    assert try_tag_bb_sb_defend(
+        hand_class="72o",
+        position="SB",
+        call_chips=40,
+        big_blind=20,
+        available=["fold", "call"],
+        hero_stack_chips=1500,
+    ) is None
+    # 4.5bb cap allows 4x opens; 5x still blocked
+    assert try_tag_bb_sb_defend(
+        hand_class="87s",
+        position="SB",
+        call_chips=80,
+        big_blind=20,
+        available=["fold", "call"],
+        hero_stack_chips=1500,
+    ) == ("call", None)
+    assert try_tag_bb_sb_defend(
+        hand_class="87s",
+        position="SB",
+        call_chips=120,
+        big_blind=20,
+        available=["fold", "call"],
+        hero_stack_chips=1500,
+    ) is None
+
+
 def test_tag_bb_defend_steal_sized(monkeypatch):
     monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
     out = try_tag_bb_sb_defend(

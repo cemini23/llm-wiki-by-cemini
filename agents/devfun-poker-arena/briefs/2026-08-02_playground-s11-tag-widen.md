@@ -12,7 +12,7 @@ Raise VPIP/PFR toward halloran-class TAG (~20–26% / ~10–12%) on Playground S
 
 ## Summary
 
-v1 fixed permanent KO survival (min stack 1500) but VPIP stayed ~8% — BB/SB broadway auto-folds and chart raise→fold killed defends (KQo/AJo folded). v2: steal-sized TAG BB/SB defend before those guards; stronger margins; MP/CO open extras. Gin still hard-killed.
+v1 fixed permanent KO survival (min stack 1500) but VPIP stayed ~8%. v2 fixed BB broadway folds. Live log: SB is almost only facing raises; trash folds were correct but defend set too tight and 3.5bb-capped. v3 widens steal-sized SB defend (pairs/connectors/broadways), 4.5bb cap, skips weak-suited / nemesis premium-only for TAG_SB hands. Gin still hard-killed.
 
 ## Regime disclosure
 
