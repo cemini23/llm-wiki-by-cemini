@@ -26,6 +26,7 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 ## Current state (2026-08-03 — K219)
 
 - **K219 ingest** — memvid Integrate + jobseek Extract + AppSec LLM protocol + 5 arXiv (LTTR / IVS-SAAM / HAM-VLN / agentic-engineer / ExtractBench) + CF/EH/Moontower/Wu RSS. Phase-0 ~77MB. Briefs → Atto / GuruWatcher / TipDrop / poker no-path / xsp+pm prod / CCC / cybersec.
+- **K219 Phase-1** — OSINT policy + Atto/GuruWatcher/TipDrop surface alwaysApply rules; inventory Unwired=0.
 
 ## Current state (2026-08-02 — K218)
 

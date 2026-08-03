@@ -2,13 +2,20 @@
 
 
 
+## [2026-08-03] phase1 | K219 surface wires (Atto / GuruWatcher / TipDrop)
+
+- OSINT policy already had K219 memvid + jobseek in `osint-phase1-adopt-wires.mdc`; inventory **Unwired → 0**
+- Surface alwaysApply: `atto-k219-phase1-wires.mdc` (memvid + ExtractBench) · `guruwatcher-k219-phase1-wires.mdc` (jobseek alert-only) · TipDrop `tipdrop-k219-phase1-wires.mdc` (whatsapp-mcp Watch — no install)
+- No new MCP/runtime; HAM-VLN / ACCEL already on federation `cemini-phase1-policy-wires.mdc` (K236–K237)
+- Entities `wire_target` updated to surface rules
+
 ## [2026-08-03] ingest | K219 — memvid/jobseek + AppSec protocol + 5 arXiv + RSS
 
 - **Inbox:** Revenue Opportunity URL Analysis.docx · AppSec LLM Evaluation Protocol.docx · 5 arXiv PDFs · Capital Flows / Event Horizon / Moontower×2 / WuBlock×2
 - **Phase-0 (~77MB):** memvid (Apache-2.0 Integrate REFERENCE ~13MB), jobseek (MIT Extract ~64MB)
 - **Skip Watch clones:** whatsapp-mcp, future-agi; **NO-GO adopt:** agentic-soc null SPDX; bettercap NOASSERTION Context; a11y Pass→SEO wiki-only
 - **Briefs:** Atto (memvid+ExtractBench) · GuruWatcher (jobseek+WuBlock) · TipDrop (whatsapp-mcp Watch) · poker no-path · xsp IVS/Moontower/CF → prod · pm Event Horizon courts → prod · CCC agentic-engineer · cybersec AppSec protocol
-- **Phase-1:** osint-phase1-adopt-wires K219 memvid + jobseek
+- **Phase-1:** osint-phase1-adopt-wires K219 + surface rules (see phase1 entry above)
 - **Fold:** Moontower #323 newsletter into sound-of-inevitability (LIKELY vs #319 — different issue; ~92% body overlap with essay)
 
 ## [2026-08-02] ingest | K218 — optical/PDF/memory + Macro Charts

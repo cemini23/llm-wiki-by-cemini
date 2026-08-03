@@ -12,7 +12,7 @@ maturity: draft
 created: 2026-08-03
 updated: 2026-08-03
 wire_status: policy_wired
-wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc; ../atto/.cursor/rules/atto-k219-phase1-wires.mdc
 ---
 
 ## Relations
@@ -31,6 +31,6 @@ wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 | **Verdict** | **GO Integrate REFERENCE** |
 | **Local** | `.local/adopts/memvid` (~13MB) |
 | **Route** | Atto |
-| **wire_status** | `policy_wired` → `.cursor/rules/osint-phase1-adopt-wires.mdc` (K219) |
+| **wire_status** | `policy_wired` → OSINT `osint-phase1-adopt-wires.mdc` + Atto `atto-k219-phase1-wires.mdc` |
 
 Single-file agent memory layer (Rust): offline `.mv2` / encrypted `.mv2e` capsules — local-first vault pattern for Atto genealogy share tiers. Steal architecture; do not over-claim LoCoMo score without re-verify. **REFERENCE clone** — do not replace `truth.ged` / Transkribus.
