@@ -2,6 +2,35 @@
 
 
 
+## [2026-08-03] cross-wiki | K220 cyber register promoted to cybersecurity-wiki
+
+- Thin Context brief was insufficient — cyber wiki now has source + 7 entities + concept backlinks
+- `@cybersecurity-wiki/sources/osint-k220-cyber-agent-harness-eval-2026-08-03.md`
+- Entities: cloakquest3r · damn-vulnerable-drone · hacktools · raccoon · black-cat · bypassav · torbot
+- OSINT source + black-cat entity bidir backlinks added
+
+## [2026-08-03] route | K220 Atto mid + CCC note
+
+- **Atto mid** (Grok plan → claude-ds): `docs/k220-pullmd-eve-gtm-visa.md` shipped; rule untouched; no AGPL vendor
+- **CCC easy** OpenRouter stalled → parent wrote `docs/k220-meat-black-cat.md` from brief
+- No GuruWatcher route (no Extract). No prod scp.
+
+## [2026-08-03] phase1 | K220 surface wires (Atto + OSINT policy)
+
+- OSINT `osint-phase1-adopt-wires.mdc` K220 section (pullmd AGPL isolate · eve GTM · meat · Black-cat no-clone · worldmonitor reaffirm)
+- Atto alwaysApply: `atto-k220-phase1-wires.mdc`
+- Entities `wire_status: policy_wired` for pullmd / meat / black-cat / marketing-team-eve-template
+- No new MCP/runtime; no GuruWatcher Extract this batch
+
+## [2026-08-03] ingest | K220 — cyber/agent-harness revenue eval (Cursor stand-in for Gemini DR)
+
+- **Raw:** `Revenue Opportunity URL Analysis Cyber Agent Harness 2026-08-03.md` (Gemini UI blanked; Cursor ran v10.4 prompt)
+- **Phase-0 (~6–8MB):** meat (Apache-2.0), marketing-team-eve-template (MIT), pullmd (AGPL isolate); **no** Black-cat (null SPDX); **no** worldmonitor re-clone
+- **Extract:** pullmd → Atto vault staging · eve → Atto GTM + SEO · meat → CCC · Black-cat patterns → CCC
+- **Watch:** ds4 · cloudflare/computer · Flue 2.0
+- **Briefs:** Atto `2026-08-03_k220-pullmd-eve-gtm.md` · CCC meat/black-cat · SEO eve · cybersec Context catalog
+- **No prod scp** (no xsp/pm); GuruWatcher no strong Extract
+
 ## [2026-08-03] phase1 | K219 surface wires (Atto / GuruWatcher / TipDrop)
 
 - OSINT policy already had K219 memvid + jobseek in `osint-phase1-adopt-wires.mdc`; inventory **Unwired → 0**

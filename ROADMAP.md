@@ -23,7 +23,12 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
-## Current state (2026-08-03 — K219)
+## Current state (2026-08-03 — K220)
+
+- **K220 ingest** — cyber/agent-harness revenue eval (Cursor stand-in; Gemini blanked). Extract: pullmd (AGPL isolate→Atto), marketing-team-eve (MIT→SEO/Atto GTM), meat (Apache→CCC), Black-cat pattern-only (null SPDX). Watch: ds4 / cloudflare/computer / Flue. worldmonitor AGPL reaffirm. Phase-0 ~6–8MB. Briefs → Atto / CCC / SEO / cybersec. **No GuruWatcher Extract; no prod scp.**
+- **K220 Phase-1** — OSINT policy K220 + Atto `atto-k220-phase1-wires.mdc`.
+
+## Prior state (2026-08-03 — K219)
 
 - **K219 ingest** — memvid Integrate + jobseek Extract + AppSec LLM protocol + 5 arXiv (LTTR / IVS-SAAM / HAM-VLN / agentic-engineer / ExtractBench) + CF/EH/Moontower/Wu RSS. Phase-0 ~77MB. Briefs → Atto / GuruWatcher / TipDrop / poker no-path / xsp+pm prod / CCC / cybersec.
 - **K219 Phase-1** — OSINT policy + Atto/GuruWatcher/TipDrop surface alwaysApply rules; inventory Unwired=0.

@@ -13,14 +13,17 @@ related:
   - entities/tools/worldmonitor.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/active-project-research-routing.md
+  - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
 maturity: draft
 read_status: read
 created: 2026-07-22
-updated: 2026-07-22
+updated: 2026-08-03
 clusters: [k182-ingest, wiki-tooling]
 ---
 
 ## Relations
+
+- @sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md — K220 cyber/agent-harness revenue eval
 
 - @entities/tools/outlines.md — **Integrate** Apache-2.0 (XSP/TipDrop structured output)
 - @entities/tools/cloudflare-temp-email.md — **Integrate** MIT (Atto portal verify)

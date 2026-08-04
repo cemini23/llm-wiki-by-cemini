@@ -7,6 +7,16 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K220 ingest (2026-08-03)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-url-revenue-cyber-agent-harness-2026-08-03](sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md) | Tool eval — pullmd/meat/eve Extract; Black-cat pattern; worldmonitor AGPL reaffirm (K220) | draft |
+| [pullmd](entities/tools/pullmd.md) | AGPL isolate URL/file→md MCP Extract → Atto | draft |
+| [meat](entities/tools/meat.md) | Apache-2.0 reading-diffs Extract → CCC | draft |
+| [black-cat](entities/tools/black-cat.md) | Null-SPDX hypothesis-ledger pattern → CCC (no clone) | draft |
+| [marketing-team-eve-template](entities/tools/marketing-team-eve-template.md) | MIT eve marketing Extract → SEO + Atto GTM | draft |
+
 ### K219 ingest (2026-08-03)
 
 | Page | Summary | Maturity |

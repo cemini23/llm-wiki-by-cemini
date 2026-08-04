@@ -97,3 +97,12 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - Watch only (no clone this batch): `whatsapp-mcp`, `future-agi`.
 - Context / NO-GO adopt: a11y Pass→SEO wiki-only; `agentic-soc-platform` null SPDX; `bettercap` NOASSERTION Context.
 
+## K220 — pullmd / meat / eve GTM / Black-cat patterns
+
+- `pullmd` (AGPL-3.0, `.local/adopts/pullmd` ~3.5MB) = local URL/file→Markdown + MCP **REFERENCE** for Atto vault staging — **AGPL isolate**; do not vendor into proprietary Atto SaaS or host as a network service that copyleft-taints the kit; Magika sniff + PII strip before LLM.
+- `marketing-team-eve-template` (MIT, `.local/adopts/marketing-team-eve-template` ~1.4MB) = Atto GTM + SEO Extract — specialist routing + brand-context + **human approve** on publish; keep vault PII out of marketing agents.
+- `meat` (Apache-2.0 LICENSE / API NOASSERTION, `.local/adopts/meat` ~1.2MB) = CCC reading-diff Extract for agent PR review — scrub secrets before model backend.
+- `Black-cat` = **null SPDX — no clone**; steal hypothesis→evidence→verdict ledger + verify-before-report into CCC skills only; keep HITL for high-blast actions.
+- Watch only (no clone): `antirez/ds4`, `cloudflare/computer`, Flue 2.0.
+- Reaffirm: `worldmonitor` AGPL Watch (K182) — do not re-clone under `.local/adopts/`.
+

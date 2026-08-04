@@ -9,6 +9,7 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
   - entities/tools/memvid.md
   - entities/tools/jobseek.md
+  - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
 maturity: draft
 created: 2026-08-03
 updated: 2026-08-03
@@ -16,6 +17,8 @@ read_status: deep-read
 ---
 
 ## Relations
+
+- @sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md — K220 cyber/agent-harness revenue eval
 - @seo-wiki/briefs/2026-08-03_k219-a11y-pass-legacy-tooling.md  (cross-wiki brief)
 
 - @concepts/wiki-tooling-evaluation.md

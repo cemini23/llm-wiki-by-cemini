@@ -244,13 +244,16 @@ related:
   - sources/eval-revenue-analyst-url-evaluation-2026-07-31-mineru.md
   - sources/arxiv-2607.27578-prompt-graph-engineering-2026-07-31.md
   - sources/arxiv-2607.28513-creative-transformation-literary-texts-2026-07-31.md
+  - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-07-31
+updated: 2026-08-03
 ---
 
 ## Relations
+
+- @sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md — K220 cyber/agent-harness revenue eval
 
 - @entities/tools/davidondrej-skills.md
 - @entities/tools/google-magika.md

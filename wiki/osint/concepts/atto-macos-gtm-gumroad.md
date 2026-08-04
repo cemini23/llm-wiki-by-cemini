@@ -28,12 +28,16 @@ related:
   - sources/gemini-atto-brand-identity-2026-07-24.md
   - entities/tools/licenseseat.md
   - entities/tools/license-guard-rs.md
+  - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
+  - entities/tools/marketing-team-eve-template.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-25
+updated: 2026-08-03
 ---
 
 ## Relations
+
+- @sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md — K220 cyber/agent-harness revenue eval
 
 - @concepts/italian-citizenship-latam-audience-systems.md — K203 LatAm GTM audiences
 

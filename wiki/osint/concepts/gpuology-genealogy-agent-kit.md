@@ -139,12 +139,16 @@ related:
   - entities/tools/openredaction.md
   - entities/tools/vibe-upgrader.md
   - entities/tools/mineru.md
+  - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
+  - entities/tools/pullmd.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-08-02
+updated: 2026-08-03
 ---
 
 ## Relations
+
+- @sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md — K220 cyber/agent-harness revenue eval
 
 - @entities/tools/decimen-optical-transfer.md — K218 air-gapped PII transfer Extract
 - @entities/tools/pdf-inspector.md — K218 PDF routing Extract

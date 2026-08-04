@@ -48,12 +48,15 @@ related:
   - sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md
   - concepts/guruwatcher-newsletter-claim-ledger.md
   - entities/tools/guruwatcher.md
+  - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
 maturity: core
 created: 2026-06-17
-updated: 2026-07-28
+updated: 2026-08-03
 ---
 
 ## Relations
+
+- @sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md — K220 cyber/agent-harness revenue eval
 
 - @sources/arxiv-2607.28790-lttr-arbitrage-rents-2026-08-03.md — K219 wiki-only energy LTTR (not active project)
 - @sources/substack-rss-wublock-2026-08-02-asia-top10.md — K219 GuruWatcher awareness
