@@ -5,6 +5,7 @@ type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
 keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
+  - entities/tools/spike-htr.md
   - sources/eval-github-revenue-analysis-plan-cloudflare-2026-08-03.md
   - sources/eval-github-revenue-evaluation-docuscan-reader-2026-08-03.md
   - entities/tools/svelte-demo-d1.md
@@ -69,10 +70,12 @@ related:
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-07-31
+updated: 2026-08-04
 ---
 
 ## Relations
+
+- @entities/tools/spike-htr.md
 
 - @sources/newsletter-rss-tldrsec-2026-07-30-339-hf-agentbaiting.md — K215
 

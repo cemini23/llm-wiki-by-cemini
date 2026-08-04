@@ -115,12 +115,11 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - Watch only (no clone): `antirez/ds4`, `cloudflare/computer`, Flue 2.0.
 - Reaffirm: `worldmonitor` AGPL Watch (K182) — do not re-clone under `.local/adopts/`.
 
-## K221 — Cloudflare Workers/D1 (Atto) + llm-reader (GuruWatcher) + instant-site (TipDrop)
+## K222 — Spike-HTR (Atto) + Macro SMH (GuruWatcher) + VIX/agent papers
 
-- `svelte-demo-d1` (Apache-2.0, `.local/adopts/svelte-demo-d1` ~260KB) + `dropbox-index-workers` (Apache-2.0, ~164KB) = Cloudflare Pages/Workers / D1 / static-index **Extract** patterns for Atto share/staging — no product pin without dedicated GO.
-- `MyTube` (MIT, `.local/adopts/MyTube` ~16MB) = local media/player **REFERENCE** only — not genealogy product; do not vendor into Atto deps.
-- `instant-site` (MIT, `.local/adopts/instant-site` ~524KB) = TipDrop static-site / CF Pages skill packing REFERENCE.
-- `llm-reader` (MIT, `.local/adopts/llm-reader` ~192KB) = URL→markdown research for GuruWatcher Discord **alert-only** — never orders; never auto-rewrite `watches.json`.
-- **NO-GO clone:** `designly1/cloudflare-nextjs` (null SPDX); `agyorev/DocuScan` (GPL-2.0 + 2015 stale).
-- Watch only: `pik4li/ReDeploy` (MIT) — no clone this batch.
+- `SpikeHTR` (Apache-2.0, `.local/adopts/SpikeHTR` ~8.3MB) = spiking HTR **REFERENCE** for Atto — InkCoder / CTC length-reducer / blank-compression ideas only. **Transkribus remains sole product HTR.** No Barone PII in SpikeHTR fixtures; Magika still sniffs first.
+- GuruWatcher: Macro Charts Aug 4 chat has concrete **SMH $525–530 / stop ~$500** (+ NOW/TEAM/ZS narrative) — operator-gate before arming; alert-only; never auto-rewrite `watches.json`; closing-basis caveat unchanged.
+- VDV / LSV neural-operator papers → **xsp** brief awareness only (no live auto-calibrator).
+- SKT / agent-failure telemetry / Abduction Loop → CCC (+ Atto harness patterns); **no** SkillEval HF blob download; no agent-failure code clone this batch.
+- WuBlock July protocol tech → wiki-only; Event Horizon NY PM tax → gambling/pm awareness (no prod scp).
 

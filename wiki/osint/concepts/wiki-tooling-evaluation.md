@@ -5,6 +5,7 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - entities/tools/spike-htr.md
   - sources/eval-github-revenue-analysis-plan-cloudflare-2026-08-03.md
   - sources/eval-github-revenue-evaluation-docuscan-reader-2026-08-03.md
   - sources/newsletter-rss-latent-space-2026-08-03-inference-engineering-masterclass.md
@@ -256,10 +257,12 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-08-03
+updated: 2026-08-04
 ---
 
 ## Relations
+
+- @entities/tools/spike-htr.md
 
 - @sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md — K220 cyber/agent-harness revenue eval
 

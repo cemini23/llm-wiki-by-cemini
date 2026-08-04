@@ -4,6 +4,8 @@ type: entity
 tags: [tool, genealogy, htr, paleography, draft]
 keywords: [Transkribus, READ-COOP, handwriting recognition, Latin, PAGE XML]
 related:
+  - sources/arxiv-2608.01646-spike-htr.md
+  - entities/tools/spike-htr.md
   - entities/tools/pdf-inspector.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
@@ -25,10 +27,14 @@ related:
   - entities/tools/kurrentschrift.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-08-02
+updated: 2026-08-04
 ---
 
 ## Relations
+
+- @sources/arxiv-2608.01646-spike-htr.md
+
+- @entities/tools/spike-htr.md
 
 - @entities/tools/pdf-inspector.md — K218 scanned-vs-text PDF routing
 

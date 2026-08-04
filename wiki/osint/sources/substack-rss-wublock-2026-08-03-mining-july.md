@@ -4,15 +4,18 @@ type: source
 tags: [crypto, mining, guruwatcher, k219]
 keywords: [Poolin, Chapter-11, hashprice, miner-AI-HPC, WuBlock]
 related:
+  - sources/substack-rss-wublock-2026-08-04-july-blockchain-tech.md
   - concepts/active-project-research-routing.md
   - concepts/guruwatcher-newsletter-claim-ledger.md
 maturity: draft
 created: 2026-08-03
-updated: 2026-08-03
+updated: 2026-08-04
 read_status: read
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-08-04-july-blockchain-tech.md
 
 - @concepts/active-project-research-routing.md
 - @concepts/guruwatcher-newsletter-claim-ledger.md

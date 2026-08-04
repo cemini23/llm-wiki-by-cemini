@@ -4,17 +4,23 @@ type: entity
 tags: [tool, phase-0, k217, atto]
 keywords: [simplehtr]
 related:
+  - sources/arxiv-2608.01646-spike-htr.md
+  - entities/tools/spike-htr.md
   - sources/eval-github-repo-revenue-analysis-htr-2026-08-01.md
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/transkribus.md
 maturity: draft
 created: 2026-08-01
-updated: 2026-08-01
+updated: 2026-08-04
 wire_status: policy_wired
 wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations
+
+- @sources/arxiv-2608.01646-spike-htr.md
+
+- @entities/tools/spike-htr.md
 
 - @sources/eval-github-repo-revenue-analysis-htr-2026-08-01.md
 - @concepts/wiki-tooling-evaluation.md

@@ -4,6 +4,8 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher]
 keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
 related:
+  - sources/substack-rss-event-horizon-2026-08-04-ny-pm-tax-10b.md
+  - sources/macro-charts-paid-forward-2026-08-04-smh-tech-chat.md
   - sources/macro-charts-paid-forward-2026-08-02-everything-is-about-to-change.md
   - sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md
   - sources/macro-charts-chat-forwards-empty-2026-07-28-to-31.md
@@ -56,10 +58,14 @@ related:
   - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
 maturity: core
 created: 2026-06-17
-updated: 2026-08-03
+updated: 2026-08-04
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-08-04-ny-pm-tax-10b.md
+
+- @sources/macro-charts-paid-forward-2026-08-04-smh-tech-chat.md
 
 - @sources/macro-charts-paid-forward-2026-08-02-everything-is-about-to-change.md — K218 Macro teaser (superseded by Aug 3 paid)
 - @sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md — K221 Macro paid forward

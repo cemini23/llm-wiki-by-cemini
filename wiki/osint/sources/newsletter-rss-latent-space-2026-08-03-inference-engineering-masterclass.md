@@ -4,16 +4,19 @@ type: source
 tags: [source, newsletter-rss, latent-space, inference, k221]
 keywords: [Baseten, KV-cache, prefill, decode, quantization, speculative-decoding, inference-engineering]
 related:
+  - sources/newsletter-rss-latent-space-2026-08-04-qwen-38.md
   - concepts/llm-agent-systems.md
   - concepts/coding-agent-substrate-steerability.md
   - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-08-03
-updated: 2026-08-03
+updated: 2026-08-04
 read_status: skimmed
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-08-04-qwen-38.md
 
 - @concepts/llm-agent-systems.md
 - @concepts/coding-agent-substrate-steerability.md

@@ -7,6 +7,24 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K222 ingest (2026-08-04)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-2608.01217-lsv-calibration-neural-operator](sources/arxiv-2608.01217-lsv-calibration-neural-operator.md) | LSV amortizing DeepONet/FNO calibration → xsp awareness (K222) | draft |
+| [arxiv-2608.01479-vix-derived-volatility-model](sources/arxiv-2608.01479-vix-derived-volatility-model.md) | VIX-first joint SPX–VIX (VDV) → xsp (K222) | draft |
+| [arxiv-2608.01646-spike-htr](sources/arxiv-2608.01646-spike-htr.md) | Spike-HTR SNN recognizer → Atto REFERENCE (K222) | draft |
+| [arxiv-2608.02287-skt-skill-use-training](sources/arxiv-2608.02287-skt-skill-use-training.md) | SKT verified skill trajectories / SkillEval → CCC/Atto (K222) | draft |
+| [arxiv-2608.02464-llm-agent-failure-detection-repair](sources/arxiv-2608.02464-llm-agent-failure-detection-repair.md) | Cheap agent failure telemetry monitors → CCC/Atto (K222) | draft |
+| [arxiv-2608.02505-abduction-loop-representational-grounding](sources/arxiv-2608.02505-abduction-loop-representational-grounding.md) | Abduction Loop / convention space → CCC (K222) | draft |
+| [macro-charts-paid-forward-2026-08-04-smh-tech-chat](sources/macro-charts-paid-forward-2026-08-04-smh-tech-chat.md) | Macro chat — SMH $525–530 / stop ~$500 + NOW/TEAM/ZS → GuruWatcher (K222) | draft |
+| [newsletter-rss-latent-space-2026-08-04-qwen-38](sources/newsletter-rss-latent-space-2026-08-04-qwen-38.md) | Qwen 3.8 Max/27B open-weights AINews → CCC (K222) | draft |
+| [substack-rss-event-horizon-2026-08-04-ny-pm-tax-10b](sources/substack-rss-event-horizon-2026-08-04-ny-pm-tax-10b.md) | NY $10B Kalshi tax sanity-check + Polymarket ATP → gambling/pm (K222) | draft |
+| [substack-rss-wublock-2026-08-04-july-blockchain-tech](sources/substack-rss-wublock-2026-08-04-july-blockchain-tech.md) | July chain tech BIP-110/Solana/ETH — wiki-only (K222) | draft |
+| [spike-htr](entities/tools/spike-htr.md) | Apache SpikeHTR REFERENCE → Atto (K222) | draft |
+| [vix-first-joint-spx-vix-calibration](concepts/vix-first-joint-spx-vix-calibration.md) | VDV calibration pattern concept (K222) | draft |
+| [llm-agent-failure-telemetry-monitors](concepts/llm-agent-failure-telemetry-monitors.md) | ESN/CUSUM agent failure monitors (K222) | draft |
+
 ### K221 ingest (2026-08-03 evening)
 
 | Page | Summary | Maturity |

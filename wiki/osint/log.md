@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-08-04] phase1 | K222 surface wires (Atto / GuruWatcher)
+
+- OSINT `osint-phase1-adopt-wires.mdc` K222 — SpikeHTR REFERENCE; Macro SMH operator-gate; VIX/SKT/agent patterns
+- Surface alwaysApply: `atto-k222-phase1-wires.mdc` · `guruwatcher-k222-phase1-wires.mdc`
+- xsp brief `briefs/xsp-k222-vix-lsv-calibration.md` skill_audit PASS → scp cemini-prod
+- Poker no-path; TipDrop skip; gambling EH brief local
+
+
+## [2026-08-04] ingest | K222 — Spike-HTR + VIX/LSV + agent telemetry/SKT + Macro SMH chat + EH/Wu/LS
+
+- **Papers:** 2608.01646 Spike-HTR (Apache clone `.local/adopts/SpikeHTR` ~8.3MB) · 2608.01479 VDV · 2608.01217 LSV neural op · 2608.02287 SKT · 2608.02464 agent failure monitors · 2608.02505 Abduction Loop
+- **Macro:** Aug 4 Vincent chat — SMH $525–530 / stop ~$500; NOW/TEAM/ZS; GOOGL pullback watch → GuruWatcher operator-gate
+- **RSS:** Latent Space Qwen 3.8 → CCC · Event Horizon NY PM tax → gambling/pm · WuBlock July tech → wiki-only
+- **Phase-0:** SpikeHTR only (<500MB). No SkillEval HF download. No agent-failure code.
+- **Concepts:** `vix-first-joint-spx-vix-calibration` · `llm-agent-failure-telemetry-monitors`
+- Locations set to egress path; archive in same session
 
 ## [2026-08-03] phase1 | K221 surface wires (Atto / GuruWatcher / TipDrop)
 

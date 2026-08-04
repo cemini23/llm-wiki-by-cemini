@@ -4,6 +4,7 @@ type: source
 tags: [macro, guruwatcher, newsletter, paid-forward, k221]
 keywords: [Macro Charts, MSFT, AMZN, momentum, quality, August, COT, VIX]
 related:
+  - sources/macro-charts-paid-forward-2026-08-04-smh-tech-chat.md
   - sources/macro-charts-paid-forward-2026-08-02-everything-is-about-to-change.md
   - concepts/guruwatcher-newsletter-claim-ledger.md
   - concepts/xsp-lane-trading-framework.md
@@ -11,11 +12,13 @@ related:
   - concepts/macro-weather-regime.md
 maturity: draft
 created: 2026-08-03
-updated: 2026-08-03
+updated: 2026-08-04
 read_status: read
 ---
 
 ## Relations
+
+- @sources/macro-charts-paid-forward-2026-08-04-smh-tech-chat.md
 
 - @sources/macro-charts-paid-forward-2026-08-02-everything-is-about-to-change.md — Aug 2 RSS teaser (superseded by this paid forward)
 - @concepts/guruwatcher-newsletter-claim-ledger.md

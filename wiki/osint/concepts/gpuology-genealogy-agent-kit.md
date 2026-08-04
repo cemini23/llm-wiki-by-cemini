@@ -5,6 +5,11 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - sources/arxiv-2608.02464-llm-agent-failure-detection-repair.md
+  - sources/arxiv-2608.02287-skt-skill-use-training.md
+  - concepts/llm-agent-failure-telemetry-monitors.md
+  - sources/arxiv-2608.01646-spike-htr.md
+  - entities/tools/spike-htr.md
   - sources/eval-github-revenue-analysis-plan-cloudflare-2026-08-03.md
   - entities/tools/svelte-demo-d1.md
   - entities/tools/dropbox-index-workers.md
@@ -147,10 +152,20 @@ related:
   - entities/tools/pullmd.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-08-03
+updated: 2026-08-04
 ---
 
 ## Relations
+
+- @sources/arxiv-2608.02464-llm-agent-failure-detection-repair.md
+
+- @sources/arxiv-2608.02287-skt-skill-use-training.md
+
+- @concepts/llm-agent-failure-telemetry-monitors.md
+
+- @sources/arxiv-2608.01646-spike-htr.md
+
+- @entities/tools/spike-htr.md
 
 - @sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md — K220 cyber/agent-harness revenue eval
 
