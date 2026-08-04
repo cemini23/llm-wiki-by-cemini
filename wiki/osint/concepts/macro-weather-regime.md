@@ -4,6 +4,9 @@ type: concept
 tags: [concept, cemini-internal, risk, regime]
 keywords: []
 related:
+  - concepts/xsp-lane-trading-framework.md
+  - sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md
+  - sources/macro-charts-paid-forward-2026-08-02-everything-is-about-to-change.md
   - sources/substack-rss-klement-2026-07-13-when-regulation-is-good-for-business.md
   - sources/macro-charts-paid-forward-chat-2026-07-10.md
   - sources/trading-playbook-research.md
@@ -36,6 +39,9 @@ updated: 2026-07-13
 
 ## Relations
 
+- @concepts/xsp-lane-trading-framework.md — XSP dip lanes exception to portfolio Macro Weather Kelly gate
+- @sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md — K221 paid forward
+- @sources/macro-charts-paid-forward-2026-08-02-everything-is-about-to-change.md — K218 RSS teaser (superseded)
 - @sources/trading-playbook-research.md
 - @sources/3-19-kalshi-trading-strategy-research.md
 - @sources/3-19-compliance-research.md

@@ -4,17 +4,19 @@ type: source
 tags: [macro, guruwatcher, newsletter, k218]
 keywords: [Macro Charts, MSFT, AMZN, momentum, quality, August]
 related:
+  - sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md
   - concepts/active-project-research-routing.md
   - concepts/macro-weather-regime.md
   - entities/tools/last30days-skill.md
 maturity: draft
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-08-03
 read_status: skimmed
 ---
 
 ## Relations
 
+- @sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md — **superseded by Aug 3 paid forward** (fuller Vincent body)
 - @concepts/active-project-research-routing.md
 - @concepts/macro-weather-regime.md
 - @entities/tools/last30days-skill.md
@@ -32,7 +34,7 @@ read_status: skimmed
 
 ## Narrative
 
-RSS teaser only. Public claims for GuruWatcher claim-ledger / awareness:
+RSS teaser only — **superseded by** @sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md (Vincent paid forward, fuller body). Public claims for GuruWatcher claim-ledger / awareness:
 
 1. July momentum crash closed; quality/low-vol framed as winners vs momentum chasers (−50–70% vs quality +5–25% in July — **author claim**).
 2. MSFT best day/week in years (+25% July); AMZN best day/week (+14% July) — portfolio anecdotes.

@@ -7,6 +7,23 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K221 ingest (2026-08-03 evening)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-github-revenue-analysis-plan-cloudflare-2026-08-03](sources/eval-github-revenue-analysis-plan-cloudflare-2026-08-03.md) | Tool eval — CF Workers/D1; svelte-demo-d1 + dropbox-index Extract; MyTube + instant-site Integrate (K221) | draft |
+| [eval-github-revenue-evaluation-docuscan-reader-2026-08-03](sources/eval-github-revenue-evaluation-docuscan-reader-2026-08-03.md) | Tool eval — DocuScan GPL NO-GO; llm-reader MIT Integrate GuruWatcher (K221) | draft |
+| [macro-charts-paid-forward-2026-08-03-everything-is-about-to-change](sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md) | Macro Charts paid forward — MSFT/AMZN/momentum/quality/August (supersedes Aug 2 teaser) | draft |
+| [macro-charts-chat-forwards-empty-2026-07-28-to-31](sources/macro-charts-chat-forwards-empty-2026-07-28-to-31.md) | Aggregate empty subscriber-chat forwards — no levels | draft |
+| [newsletter-rss-latent-space-2026-08-03-inference-engineering-masterclass](sources/newsletter-rss-latent-space-2026-08-03-inference-engineering-masterclass.md) | Latent Space Baseten inference eng → CCC | draft |
+| [newsletter-rss-sterling-sky-2026-07-31-local-seo-audit-checklist](sources/newsletter-rss-sterling-sky-2026-07-31-local-seo-audit-checklist.md) | Sterling Sky local SEO audit → SEO | draft |
+| [substack-rss-capital-flows-2026-08-03-misdirection-livestream](sources/substack-rss-capital-flows-2026-08-03-misdirection-livestream.md) | Misdirection livestream teaser (K219 companion) | draft |
+| [svelte-demo-d1](entities/tools/svelte-demo-d1.md) | Apache D1 Extract → Atto | draft |
+| [dropbox-index-workers](entities/tools/dropbox-index-workers.md) | Apache Dropbox index Extract → Atto | draft |
+| [mytube](entities/tools/mytube.md) | MIT MyTube REFERENCE → Atto media patterns | draft |
+| [instant-site](entities/tools/instant-site.md) | MIT instant-site Integrate → TipDrop | draft |
+| [llm-reader](entities/tools/llm-reader.md) | MIT URL→md Integrate → GuruWatcher | draft |
+
 ### K220 ingest (2026-08-03)
 
 | Page | Summary | Maturity |

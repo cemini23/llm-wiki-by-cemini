@@ -5,6 +5,7 @@ type: concept
 tags: [concept, llm-agents, agent-orchestration, research-index]
 keywords: [llm, agents, orchestration, tool-use, scaffolding, agentic, cemini-corpus]
 related:
+  - sources/newsletter-rss-latent-space-2026-08-03-inference-engineering-masterclass.md
   - sources/arxiv-2607.29610-educating-agentic-engineer-2026-08-03.md
   - concepts/ai-ethics-and-governance.md
   - concepts/nomotic-ai.md

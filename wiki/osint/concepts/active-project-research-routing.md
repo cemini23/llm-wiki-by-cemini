@@ -4,6 +4,11 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher]
 keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
 related:
+  - sources/macro-charts-paid-forward-2026-08-02-everything-is-about-to-change.md
+  - sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md
+  - sources/macro-charts-chat-forwards-empty-2026-07-28-to-31.md
+  - sources/newsletter-rss-sterling-sky-2026-07-31-local-seo-audit-checklist.md
+  - entities/tools/instant-site.md
   - sources/arxiv-2607.28790-lttr-arbitrage-rents-2026-08-03.md
   - sources/substack-rss-wublock-2026-08-02-asia-top10.md
   - sources/substack-rss-wublock-2026-08-03-mining-july.md
@@ -56,6 +61,11 @@ updated: 2026-08-03
 
 ## Relations
 
+- @sources/macro-charts-paid-forward-2026-08-02-everything-is-about-to-change.md — K218 Macro teaser (superseded by Aug 3 paid)
+- @sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md — K221 Macro paid forward
+- @sources/macro-charts-chat-forwards-empty-2026-07-28-to-31.md — K221 empty chat forwards
+- @sources/newsletter-rss-sterling-sky-2026-07-31-local-seo-audit-checklist.md — K221 SEO
+- @entities/tools/instant-site.md — K221 TipDrop
 - @sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md — K220 cyber/agent-harness revenue eval
 
 - @sources/arxiv-2607.28790-lttr-arbitrage-rents-2026-08-03.md — K219 wiki-only energy LTTR (not active project)

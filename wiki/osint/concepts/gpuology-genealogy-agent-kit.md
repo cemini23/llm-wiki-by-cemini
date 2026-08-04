@@ -5,6 +5,10 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - sources/eval-github-revenue-analysis-plan-cloudflare-2026-08-03.md
+  - entities/tools/svelte-demo-d1.md
+  - entities/tools/dropbox-index-workers.md
+  - entities/tools/mytube.md
   - sources/eval-github-revenue-opportunity-url-2026-08-03.md
   - sources/arxiv-2607.29677-extractbench-2026-08-03.md
   - entities/tools/memvid.md

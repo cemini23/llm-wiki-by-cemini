@@ -5,6 +5,13 @@ type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
 keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
+  - sources/eval-github-revenue-analysis-plan-cloudflare-2026-08-03.md
+  - sources/eval-github-revenue-evaluation-docuscan-reader-2026-08-03.md
+  - entities/tools/svelte-demo-d1.md
+  - entities/tools/dropbox-index-workers.md
+  - entities/tools/mytube.md
+  - entities/tools/instant-site.md
+  - entities/tools/llm-reader.md
   - sources/eval-github-revenue-opportunity-url-2026-08-03.md
   - sources/appsec-llm-evaluation-protocol-2026-08-03.md
   - entities/tools/memvid.md

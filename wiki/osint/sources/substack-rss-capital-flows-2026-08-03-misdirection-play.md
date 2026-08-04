@@ -4,6 +4,7 @@ type: source
 tags: [source, rss, macro, capital-flows, xsp, k219]
 keywords: [Warsh, Bessent, Druckenmiller, AI-capital-flows, misdirection]
 related:
+  - sources/substack-rss-capital-flows-2026-08-03-misdirection-livestream.md
   - concepts/capital-flows-sofr-conviction-framework.md
   - concepts/xsp-lane-trading-framework.md
 maturity: draft
@@ -14,6 +15,7 @@ read_status: read
 
 ## Relations
 
+- @sources/substack-rss-capital-flows-2026-08-03-misdirection-livestream.md — companion livestream teaser (K221)
 - @concepts/capital-flows-sofr-conviction-framework.md
 - @concepts/xsp-lane-trading-framework.md
 

@@ -1,6 +1,24 @@
 # Wiki Log
 
 
+## [2026-08-03] phase1 | K221 surface wires (Atto / GuruWatcher / TipDrop)
+
+- OSINT `osint-phase1-adopt-wires.mdc` K221 — svelte-demo-d1 / dropbox-index-workers / MyTube / instant-site / llm-reader
+- Surface alwaysApply: `atto-k221-phase1-wires.mdc` · `guruwatcher-k221-phase1-wires.mdc` · `tipdrop-k221-phase1-wires.mdc`
+- Phase-0 ~17MB; DocuScan GPL + cloudflare-nextjs null SPDX NO-GO; ReDeploy Watch
+- Inventory clones wired; xsp brief scp'd to cemini-prod
+
+
+## [2026-08-03] ingest | K221 — Cloudflare Workers / DocuScan-reader evals + Macro/Latent Space/Sterling/CF RSS
+
+- **Evals:** Analysis Plan (Cloudflare Pages/Workers/D1; Plan (1).docx folded) · Evaluation (DocuScan/reader/RSS)
+- **GO Extract Atto:** svelte-demo-d1 · dropbox-index-workers (Apache-2.0)
+- **GO Integrate:** MyTube REFERENCE Atto (MIT) · instant-site TipDrop (MIT) · llm-reader GuruWatcher (MIT)
+- **NO-GO:** designly1/cloudflare-nextjs (null SPDX) · agyorev/DocuScan (GPL-2.0 + stale)
+- **Watch:** pik4li/ReDeploy (MIT, no clone)
+- **Macro:** Aug 3 Vincent paid forward supersedes Aug 2 teaser; empty Jul 28–31 chat forwards aggregated
+- **RSS:** Latent Space inference eng → CCC · Sterling Sky local SEO → SEO · Capital Flows misdirection livestream companion
+- Locations still `research to be indexed/` pending egress archive
 
 ## [2026-08-03] cross-wiki | K220 cyber register promoted to cybersecurity-wiki
 
