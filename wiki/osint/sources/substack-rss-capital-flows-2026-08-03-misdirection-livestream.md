@@ -4,15 +4,18 @@ type: source
 tags: [source, rss, macro, capital-flows, xsp, k221]
 keywords: [Warsh, Bessent, misdirection, livestream, FX-positioning]
 related:
+  - sources/substack-rss-capital-flows-2026-08-05-fx-positioning.md
   - sources/substack-rss-capital-flows-2026-08-03-misdirection-play.md
   - concepts/xsp-lane-trading-framework.md
 maturity: draft
 created: 2026-08-03
-updated: 2026-08-03
+updated: 2026-08-05
 read_status: skimmed
 ---
 
 ## Relations
+
+- @sources/substack-rss-capital-flows-2026-08-05-fx-positioning.md
 
 - @sources/substack-rss-capital-flows-2026-08-03-misdirection-play.md — K219 article companion
 - @concepts/xsp-lane-trading-framework.md

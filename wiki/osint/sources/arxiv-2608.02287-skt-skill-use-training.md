@@ -4,17 +4,20 @@ type: source
 tags: [arxiv, agents, skills, ccc, atto, k222]
 keywords: [SKT, SkillEval, Agent Skills, Shanghai AI Lab, verified trajectories]
 related:
+  - sources/arxiv-2608.03764-gdpevo.md
   - sources/newsletter-rss-latent-space-2026-08-04-qwen-38.md
   - sources/arxiv-2608.02464-llm-agent-failure-detection-repair.md
   - concepts/llm-agent-failure-telemetry-monitors.md
   - concepts/gpuology-genealogy-agent-kit.md
 maturity: draft
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 read_status: deep-read
 ---
 
 ## Relations
+
+- @sources/arxiv-2608.03764-gdpevo.md
 
 - @sources/newsletter-rss-latent-space-2026-08-04-qwen-38.md
 

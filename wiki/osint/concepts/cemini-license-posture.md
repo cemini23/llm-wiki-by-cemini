@@ -5,6 +5,11 @@ type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
 keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
+  - entities/tools/jumpcutter.md
+  - entities/tools/gdpevo.md
+  - entities/tools/addyosmani-agent-skills.md
+  - entities/tools/cloudflare-computer.md
+  - sources/eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05.md
   - entities/tools/spike-htr.md
   - sources/eval-github-revenue-analysis-plan-cloudflare-2026-08-03.md
   - sources/eval-github-revenue-evaluation-docuscan-reader-2026-08-03.md
@@ -70,10 +75,20 @@ related:
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 ## Relations
+
+- @entities/tools/jumpcutter.md
+
+- @entities/tools/gdpevo.md
+
+- @entities/tools/addyosmani-agent-skills.md
+
+- @entities/tools/cloudflare-computer.md
+
+- @sources/eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05.md
 
 - @entities/tools/spike-htr.md
 

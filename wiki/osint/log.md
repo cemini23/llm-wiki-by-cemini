@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-08-05] phase1 | K223 surface wires (Atto / GuruWatcher)
+
+- OSINT `osint-phase1-adopt-wires.mdc` K223 — computer Extract · agent-skills Integrate · GDPevo REFERENCE · jumpcutter AGPL isolate · UnTouchID cyber-only
+- Surface: `atto-k223-phase1-wires.mdc` · `guruwatcher-k223-phase1-wires.mdc`
+- xsp `briefs/xsp-k223-nnlci-fx-macro.md` skill_audit PASS → scp cemini-prod
+
+## [2026-08-05] ingest | K223 — agent-runtime eval + GW pricing + GDPevo/RESUME + Macro SOX/GDX + LS/EH/Wu/SEO
+
+- **Eval:** computer MIT Extract · agent-skills MIT Integrate · jumpcutter AGPL isolate · UnTouchID MIT → cyber Extract (no vault hosts) · astro NOASSERTION Watch no-clone · manifest CVE Watch
+- **GW pricing docx:** $79 floor / $149 ladder; anti-comp execution bots; SaaS-replacement frame
+- **Papers:** NNLCI options → xsp · GDPevo Apache clone ~76MB · AgenticVAU · RESUMECONTRACT
+- **Macro Aug 5 chat:** SPX ATH / SOX-IGV resistance / GDX breakout / 30YR fail — no new SMH numerics (Aug 4 plan stands)
+- **RSS:** ChatGPT Work + megakernels → CCC · SparkToro V3 → SEO · CF FX teaser → xsp · EH MI/Utah → gambling · Coldcard → cyber
+- **Phase-0 ~92MB** under 500MB cap
+- Locations set to egress; archive same session
+
 ## [2026-08-04] phase1 | K222 surface wires (Atto / GuruWatcher)
 
 - OSINT `osint-phase1-adopt-wires.mdc` K222 — SpikeHTR REFERENCE; Macro SMH operator-gate; VIX/SKT/agent patterns

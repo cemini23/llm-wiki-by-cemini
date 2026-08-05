@@ -4,16 +4,28 @@ type: concept
 tags: [concept, agents, harness, ccc, atto, k222]
 keywords: [ESN, CUSUM, Mahalanobis, content-grounding, fabrication, SkillEval]
 related:
+  - entities/tools/gdpevo.md
+  - sources/arxiv-2608.03836-resume-contract.md
+  - sources/arxiv-2608.03779-agenticvau.md
+  - sources/arxiv-2608.03764-gdpevo.md
   - sources/arxiv-2608.02464-llm-agent-failure-detection-repair.md
   - sources/arxiv-2608.02287-skt-skill-use-training.md
   - sources/arxiv-2608.02505-abduction-loop-representational-grounding.md
   - concepts/gpuology-genealogy-agent-kit.md
 maturity: draft
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 ## Relations
+
+- @entities/tools/gdpevo.md
+
+- @sources/arxiv-2608.03836-resume-contract.md
+
+- @sources/arxiv-2608.03779-agenticvau.md
+
+- @sources/arxiv-2608.03764-gdpevo.md
 
 - @sources/arxiv-2608.02464-llm-agent-failure-detection-repair.md — primary
 - @sources/arxiv-2608.02287-skt-skill-use-training.md — verified skill trajectories (upstream quality)

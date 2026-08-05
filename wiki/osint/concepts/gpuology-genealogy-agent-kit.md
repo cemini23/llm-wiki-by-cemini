@@ -5,6 +5,11 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - entities/tools/gdpevo.md
+  - sources/eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05.md
+  - sources/arxiv-2608.03836-resume-contract.md
+  - sources/arxiv-2608.03764-gdpevo.md
+  - entities/tools/cloudflare-computer.md
   - sources/arxiv-2608.02464-llm-agent-failure-detection-repair.md
   - sources/arxiv-2608.02287-skt-skill-use-training.md
   - concepts/llm-agent-failure-telemetry-monitors.md
@@ -152,10 +157,20 @@ related:
   - entities/tools/pullmd.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 ## Relations
+
+- @entities/tools/gdpevo.md
+
+- @sources/eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05.md
+
+- @sources/arxiv-2608.03836-resume-contract.md
+
+- @sources/arxiv-2608.03764-gdpevo.md
+
+- @entities/tools/cloudflare-computer.md
 
 - @sources/arxiv-2608.02464-llm-agent-failure-detection-repair.md
 

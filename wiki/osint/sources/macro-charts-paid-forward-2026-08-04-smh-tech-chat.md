@@ -4,6 +4,7 @@ type: source
 tags: [macro, guruwatcher, newsletter, paid-forward, k222]
 keywords: [SMH, NOW, TEAM, ZS, GOOGL, MAGS, BABA, yields, Macro Charts]
 related:
+  - sources/macro-charts-paid-forward-2026-08-05-spx-sox-gdx-yields.md
   - sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md
   - concepts/guruwatcher-newsletter-claim-ledger.md
   - concepts/macro-charts-sox-tech-correction-watch-2026-06.md
@@ -11,11 +12,13 @@ related:
   - concepts/active-project-research-routing.md
 maturity: draft
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 read_status: read
 ---
 
 ## Relations
+
+- @sources/macro-charts-paid-forward-2026-08-05-spx-sox-gdx-yields.md
 
 - @sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md — prior paid letter (Aug 3)
 - @concepts/guruwatcher-newsletter-claim-ledger.md

@@ -4,15 +4,18 @@ type: source
 tags: [prediction-markets, kalshi, polymarket, gambling, k222]
 keywords: [New York, Hochul, Kalshi tax, ATP, Event Horizon]
 related:
+  - sources/substack-rss-event-horizon-2026-08-05-michigan-senate-pm-calls.md
   - concepts/active-project-research-routing.md
   - concepts/xsp-lane-trading-framework.md
 maturity: draft
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 read_status: read
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-08-05-michigan-senate-pm-calls.md
 
 - @concepts/active-project-research-routing.md — pm/kalshi secondary routing
 - @concepts/xsp-lane-trading-framework.md — weak; PM regime awareness only

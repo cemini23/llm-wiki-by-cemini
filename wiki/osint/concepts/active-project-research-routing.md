@@ -4,6 +4,9 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher]
 keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, ingest, daily-digest]
 related:
+  - sources/newsletter-rss-sparktoro-2026-08-05-v3.md
+  - sources/substack-rss-event-horizon-2026-08-05-michigan-senate-pm-calls.md
+  - sources/guruwatcher-pricing-strategy-research-2026-08-04.md
   - sources/substack-rss-event-horizon-2026-08-04-ny-pm-tax-10b.md
   - sources/macro-charts-paid-forward-2026-08-04-smh-tech-chat.md
   - sources/macro-charts-paid-forward-2026-08-02-everything-is-about-to-change.md
@@ -58,10 +61,16 @@ related:
   - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
 maturity: core
 created: 2026-06-17
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-sparktoro-2026-08-05-v3.md
+
+- @sources/substack-rss-event-horizon-2026-08-05-michigan-senate-pm-calls.md
+
+- @sources/guruwatcher-pricing-strategy-research-2026-08-04.md
 
 - @sources/substack-rss-event-horizon-2026-08-04-ny-pm-tax-10b.md
 

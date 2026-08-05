@@ -23,6 +23,11 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 
+## Current state (2026-08-05 — K223)
+
+- **K223 ingest** — agent-runtime/SSG eval + GuruWatcher pricing research + NNLCI/GDPevo/AgenticVAU/RESUME papers + Macro Aug 5 chat + LS Work/megakernels + SparkToro + CF FX + EH MI/Utah + Coldcard. Phase-0 ~92MB (computer, agent-skills, GDPevo, UnTouchID, jumpcutter). Briefs → Atto / GuruWatcher / CCC / xsp-prod / SEO / gambling / cyber; poker no-path.
+- **K223 Phase-1** — OSINT policy + Atto/GuruWatcher/CCC surface wires.
+
 ## Current state (2026-08-04 — K222)
 
 - **K222 ingest** — Spike-HTR + VIX/LSV papers + SKT/agent-failure/Abduction Loop + Macro Aug 4 SMH chat + Latent Space Qwen + Event Horizon NY PM tax + WuBlock July tech. Phase-0: SpikeHTR Apache ~8.3MB only. Briefs → Atto / GuruWatcher / CCC / xsp-prod / gambling; poker no-path; TipDrop skip (no Discord hook).

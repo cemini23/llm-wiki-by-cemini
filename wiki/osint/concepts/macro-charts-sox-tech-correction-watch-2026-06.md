@@ -4,6 +4,7 @@ type: concept
 tags: [concept, macro, semiconductors, sox, korea, k144]
 keywords: [macro-charts, sox, smh, kospi, sk-hynix, correction, ai-bottleneck]
 related:
+  - sources/macro-charts-paid-forward-2026-08-05-spx-sox-gdx-yields.md
   - sources/macro-charts-paid-forward-2026-08-04-smh-tech-chat.md
   - sources/macro-charts-paid-forward-2026-07-12-sentiment-capitulation.md
   - sources/macro-charts-paid-forward-chat-2026-07-08.md
@@ -15,10 +16,12 @@ related:
   - concepts/xsp-lane-trading-framework.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 ## Relations
+
+- @sources/macro-charts-paid-forward-2026-08-05-spx-sox-gdx-yields.md
 
 - @sources/macro-charts-paid-forward-2026-08-04-smh-tech-chat.md
 

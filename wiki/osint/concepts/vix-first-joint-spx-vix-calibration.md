@@ -4,15 +4,18 @@ type: concept
 tags: [concept, volatility, vix, xsp, k222]
 keywords: [VDV, joint calibration, VIX futures, SPX options]
 related:
+  - sources/arxiv-2608.02778-nnlci-options-pricing.md
   - sources/arxiv-2608.01479-vix-derived-volatility-model.md
   - sources/arxiv-2608.01217-lsv-calibration-neural-operator.md
   - concepts/xsp-lane-trading-framework.md
 maturity: draft
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 ## Relations
+
+- @sources/arxiv-2608.02778-nnlci-options-pricing.md
 
 - @sources/arxiv-2608.01479-vix-derived-volatility-model.md — primary VDV paper
 - @sources/arxiv-2608.01217-lsv-calibration-neural-operator.md — amortizing LSV operator (complementary vol stack)

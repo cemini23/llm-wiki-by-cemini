@@ -4,14 +4,17 @@ type: source
 tags: [crypto, wublock, protocol, k222]
 keywords: [BIP-110, Agave, Glamsterdam, Ironwood, SIMD-0286]
 related:
+  - sources/substack-rss-wublock-2026-08-05-coldcard-rng.md
   - sources/substack-rss-wublock-2026-08-03-mining-july.md
 maturity: draft
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 read_status: read
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-08-05-coldcard-rng.md
 
 - @sources/substack-rss-wublock-2026-08-03-mining-july.md — prior WuBlock mining note
 

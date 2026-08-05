@@ -5,6 +5,9 @@ type: concept
 tags: [concept, guruwatcher, discord, macro, k200, core-candidate]
 keywords: [claim ledger, most-recent-wins, sustain, verbatim guards, Macro Charts]
 related:
+  - entities/tools/jumpcutter.md
+  - sources/guruwatcher-pricing-strategy-research-2026-08-04.md
+  - sources/macro-charts-paid-forward-2026-08-05-spx-sox-gdx-yields.md
   - sources/macro-charts-paid-forward-2026-08-04-smh-tech-chat.md
   - sources/macro-charts-paid-forward-2026-08-03-everything-is-about-to-change.md
   - sources/eval-github-revenue-evaluation-docuscan-reader-2026-08-03.md
@@ -22,10 +25,16 @@ related:
   - sources/macro-charts-paid-forward-2026-07-31-situational-awareness-kospi.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 ## Relations
+
+- @entities/tools/jumpcutter.md
+
+- @sources/guruwatcher-pricing-strategy-research-2026-08-04.md
+
+- @sources/macro-charts-paid-forward-2026-08-05-spx-sox-gdx-yields.md
 
 - @sources/macro-charts-paid-forward-2026-08-04-smh-tech-chat.md
 

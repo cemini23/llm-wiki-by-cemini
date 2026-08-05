@@ -7,6 +7,28 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K223 ingest (2026-08-05)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05](sources/eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05.md) | Tool eval — computer Extract; agent-skills Integrate; jumpcutter AGPL isolate (K223) | draft |
+| [guruwatcher-pricing-strategy-research-2026-08-04](sources/guruwatcher-pricing-strategy-research-2026-08-04.md) | GW pricing research $79/$149 ladder + anti-comps (K223) | draft |
+| [arxiv-2608.02778-nnlci-options-pricing](sources/arxiv-2608.02778-nnlci-options-pricing.md) | NNLCI options PDE corrector → xsp (K223) | draft |
+| [arxiv-2608.03764-gdpevo](sources/arxiv-2608.03764-gdpevo.md) | GDPevo self-evolution benchmark → CCC (K223) | draft |
+| [arxiv-2608.03779-agenticvau](sources/arxiv-2608.03779-agenticvau.md) | AgenticVAU explore–verify VAU → CCC (K223) | draft |
+| [arxiv-2608.03836-resume-contract](sources/arxiv-2608.03836-resume-contract.md) | RESUMECONTRACT persistence semantics → CCC/Atto (K223) | draft |
+| [macro-charts-paid-forward-2026-08-05-spx-sox-gdx-yields](sources/macro-charts-paid-forward-2026-08-05-spx-sox-gdx-yields.md) | Macro chat — SPX ATH / SOX-IGV / GDX / 30YR fail (K223) | draft |
+| [newsletter-rss-latent-space-2026-08-04-chatgpt-work](sources/newsletter-rss-latent-space-2026-08-04-chatgpt-work.md) | ChatGPT Work unpack → CCC (K223) | draft |
+| [newsletter-rss-latent-space-2026-08-05-megakernels](sources/newsletter-rss-latent-space-2026-08-05-megakernels.md) | Megakernels AINews → CCC (K223) | draft |
+| [newsletter-rss-sparktoro-2026-08-05-v3](sources/newsletter-rss-sparktoro-2026-08-05-v3.md) | SparkToro V3 → SEO (K223) | draft |
+| [substack-rss-capital-flows-2026-08-05-fx-positioning](sources/substack-rss-capital-flows-2026-08-05-fx-positioning.md) | CF FX/yen/VIX teaser → xsp (K223) | draft |
+| [substack-rss-event-horizon-2026-08-05-michigan-senate-pm-calls](sources/substack-rss-event-horizon-2026-08-05-michigan-senate-pm-calls.md) | PM race-calls + Utah Kalshi SJ → gambling (K223) | draft |
+| [substack-rss-wublock-2026-08-05-coldcard-rng](sources/substack-rss-wublock-2026-08-05-coldcard-rng.md) | Coldcard RNG vuln → cybersec (K223) | draft |
+| [cloudflare-computer](entities/tools/cloudflare-computer.md) | MIT isolate-first agent runtime Extract → Atto (K223) | draft |
+| [addyosmani-agent-skills](entities/tools/addyosmani-agent-skills.md) | MIT agent-skills Integrate → CCC (K223) | draft |
+| [gdpevo](entities/tools/gdpevo.md) | Apache GDPevo REFERENCE → CCC (K223) | draft |
+| [jumpcutter](entities/tools/jumpcutter.md) | AGPL jumpcutter isolate → GW ops (K223) | draft |
+
 ### K222 ingest (2026-08-04)
 
 | Page | Summary | Maturity |

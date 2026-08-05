@@ -4,15 +4,18 @@ type: source
 tags: [latent-space, llm, ccc, k222]
 keywords: [Qwen 3.8 Max, 2.4T, open weights, coding agents, Alibaba]
 related:
+  - sources/newsletter-rss-latent-space-2026-08-04-chatgpt-work.md
   - sources/newsletter-rss-latent-space-2026-08-03-inference-engineering-masterclass.md
   - sources/arxiv-2608.02287-skt-skill-use-training.md
 maturity: draft
 created: 2026-08-04
-updated: 2026-08-04
+updated: 2026-08-05
 read_status: read
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-08-04-chatgpt-work.md
 
 - @sources/newsletter-rss-latent-space-2026-08-03-inference-engineering-masterclass.md — prior Latent Space
 - @sources/arxiv-2608.02287-skt-skill-use-training.md — skill-use training adjacent

@@ -5,6 +5,9 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - entities/tools/addyosmani-agent-skills.md
+  - entities/tools/cloudflare-computer.md
+  - sources/eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05.md
   - entities/tools/spike-htr.md
   - sources/eval-github-revenue-analysis-plan-cloudflare-2026-08-03.md
   - sources/eval-github-revenue-evaluation-docuscan-reader-2026-08-03.md
@@ -257,10 +260,16 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-08-04
+updated: 2026-08-05
 ---
 
 ## Relations
+
+- @entities/tools/addyosmani-agent-skills.md
+
+- @entities/tools/cloudflare-computer.md
+
+- @sources/eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05.md
 
 - @entities/tools/spike-htr.md
 

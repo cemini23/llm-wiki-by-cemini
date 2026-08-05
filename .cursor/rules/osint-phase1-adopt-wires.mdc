@@ -115,6 +115,16 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - Watch only (no clone): `antirez/ds4`, `cloudflare/computer`, Flue 2.0.
 - Reaffirm: `worldmonitor` AGPL Watch (K182) — do not re-clone under `.local/adopts/`.
 
+## K223 — cloudflare/computer + agent-skills + GDPevo + jumpcutter AGPL + Macro Aug 5
+
+- `cloudflare-computer` (MIT, `.local/adopts/cloudflare-computer` ~8.5MB) = isolate-first agent workspace **Extract** for Atto — preview only, not a prod pin; tenant/PII isolation mandatory; Magika + PII strip unchanged. Upgrades K220 Watch.
+- `addyosmani-agent-skills` (MIT, `.local/adopts/addyosmani-agent-skills` ~1.6MB) = CCC **Integrate** /spec/plan/test/review + anti-rationalization — do not auto-write `truth.ged` or prod `watches.json`.
+- `GDPevo` (Apache-2.0, `.local/adopts/GDPevo` ~76MB) = self-evolution benchmark **REFERENCE** — no Barone PII in eval tasks.
+- `jumpcutter` (AGPL-3.0, `.local/adopts/jumpcutter` ~3.4MB) = **AGPL isolate** browser silence-skip for analyst media — never vendor into proprietary GW/Atto.
+- `UnTouchID` clone = cybersec Extract only — **do not** enable PAM/sudo proxy on vault or prod-credential hosts until socket audit.
+- GuruWatcher: Aug 5 Macro chat is narrative (SPX ATH / SOX-IGV / GDX / 30YR fail) — **Aug 4 SMH $525–530 / stop ~$500** remains most-recent numeric plan unless operator extracts new levels. Pricing research ($79/$149) is product brief only.
+- NNLCI + Capital Flows FX teaser → **xsp** awareness. astro NOASSERTION / manifest CVE / Lore = Watch no-clone this batch.
+
 ## K222 — Spike-HTR (Atto) + Macro SMH (GuruWatcher) + VIX/agent papers
 
 - `SpikeHTR` (Apache-2.0, `.local/adopts/SpikeHTR` ~8.3MB) = spiking HTR **REFERENCE** for Atto — InkCoder / CTC length-reducer / blank-compression ideas only. **Transkribus remains sole product HTR.** No Barone PII in SpikeHTR fixtures; Magika still sniffs first.
