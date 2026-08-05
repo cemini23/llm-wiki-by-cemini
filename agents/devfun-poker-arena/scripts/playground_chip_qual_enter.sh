@@ -18,6 +18,7 @@ case "${SEASON}" in
   9) DEFAULT_COMP="cmrt1wzu40jm911suskj9qebe" ;;
   10) DEFAULT_COMP="cms0bwufmf3n8kyykdpxi6d2i" ;;
   11) DEFAULT_COMP="cms7hrnjg20czv7oi85cho570" ;;
+  12) DEFAULT_COMP="cmseo8d3e4fmh12qragnvqct6" ;;
   *) DEFAULT_COMP="" ;;
 esac
 COMP="${2:-${DEFAULT_COMP}}"

@@ -1,0 +1,19 @@
+{
+  "built": "2026-07-30T13:16:54Z",
+  "out": "/Users/claudiobarone/Projects/OSINT WORKSPACE/reports/audit/pack-t10-prodship",
+  "prompt_source": "/Users/claudiobarone/Projects/OSINT WORKSPACE/reports/audit/t10-prodship-prompt.md",
+  "prompt_chars": 2505,
+  "artifacts": [
+    "t10_env_ko.txt",
+    "t9_winner.txt",
+    "t10_status.txt",
+    "FACTS.md"
+  ],
+  "read_order": [
+    "PROMPT.md",
+    "FACTS.md",
+    "t10_env_ko.txt",
+    "t9_winner.txt",
+    "t10_status.txt"
+  ]
+}

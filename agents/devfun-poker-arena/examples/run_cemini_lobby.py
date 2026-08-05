@@ -9,6 +9,7 @@ import argparse
 import json
 import os
 import random
+import re
 import sys
 import time
 from pathlib import Path
@@ -51,6 +52,7 @@ from arena_client import (  # noqa: E402
 )
 from output_sanitize import maybe_sanitize_action  # noqa: E402
 from playground_timeseries import append_playground_snapshot  # noqa: E402
+from playground_comp_watch import PlaygroundWatcher, apply_live_playground_env  # noqa: E402
 
 POLL_INTERVAL = 2.0
 POLL_JITTER = 0.5
@@ -106,6 +108,7 @@ def _lobby_role_label(competition_id: str) -> tuple[str, str]:
     s9 = os.environ.get("S9_PLAYGROUND_COMP", "cmrt1wzu40jm911suskj9qebe").strip()
     s10 = os.environ.get("S10_PLAYGROUND_COMP", "cms0bwufmf3n8kyykdpxi6d2i").strip()
     s11 = os.environ.get("S11_PLAYGROUND_COMP", "cms7hrnjg20czv7oi85cho570").strip()
+    s12 = os.environ.get("S12_PLAYGROUND_COMP", "cmseo8d3e4fmh12qragnvqct6").strip()
     s10t = os.environ.get("S10_TOURNAMENT_COMP", "").strip()
     rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
     if competition_id and competition_id == rcomp:
@@ -130,6 +133,8 @@ def _lobby_role_label(competition_id: str) -> tuple[str, str]:
         return "Playground S10", "s10_playground"
     if competition_id and competition_id == s11:
         return "Playground S11", "s11_playground"
+    if competition_id and competition_id == s12:
+        return "Playground S12", "s12_playground"
     label = os.environ.get("CEMINI_LOBBY_LABEL", "").strip().replace("_", " ")
     role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip()
     return label or competition_id, role or "lobby"
@@ -149,13 +154,20 @@ def _apply_competition_posture(competition_id: str) -> None:
     s9 = os.environ.get("S9_PLAYGROUND_COMP", "cmrt1wzu40jm911suskj9qebe").strip()
     s10 = os.environ.get("S10_PLAYGROUND_COMP", "cms0bwufmf3n8kyykdpxi6d2i").strip()
     s11 = os.environ.get("S11_PLAYGROUND_COMP", "cms7hrnjg20czv7oi85cho570").strip()
+    s12 = os.environ.get("S12_PLAYGROUND_COMP", "cmseo8d3e4fmh12qragnvqct6").strip()
     s10t = os.environ.get("S10_TOURNAMENT_COMP", "").strip()
     rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
     _pg_role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip().lower()
-    _chip_qual_playground = competition_id in (s9, s10, s11) or _pg_role in (
-        "s9_playground",
-        "s10_playground",
-        "s11_playground",
+    _pg_track = os.environ.get("CEMINI_PRIMARY_TRACK", "").strip().lower()
+    _env_pg_ids = {
+        (os.environ.get(k) or "").strip()
+        for k in os.environ
+        if k.endswith("_PLAYGROUND_COMP")
+    } | {s9, s10, s11, s12}
+    _chip_qual_playground = (
+        competition_id in _env_pg_ids
+        or _pg_track == "playground"
+        or bool(re.fullmatch(r"s\d+_playground", _pg_role))
     )
     _s10_tournament = (
         (s10t and competition_id == s10t)
@@ -245,7 +257,10 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_TAG_WIDEN": "1",
             "CEMINI_KO_SURVIVAL": "1",
             "CEMINI_KO_SURVIVAL_HANDS": "40",
-            "CEMINI_KO_SURVIVAL_MIN_STACK": "700",
+            "CEMINI_KO_SURVIVAL_MIN_STACK": os.environ.get(
+                "CEMINI_KO_SURVIVAL_MIN_STACK", "400"
+            ) or "400",
+            "CEMINI_NEMESIS_TIGHT": os.environ.get("CEMINI_NEMESIS_TIGHT", "0") or "0",
             "CEMINI_STAGGER_LOCKS": "1",
             "CEMINI_NUTS_DETECT": "1",
             "CEMINI_SANITIZE_OUTPUT": "1",
@@ -693,6 +708,9 @@ def run_lobby(args: argparse.Namespace) -> int:
     last_join_at = 0.0
     last_lobby_log_at = 0.0
     last_qual_check_at = 0.0
+    playground_watch = PlaygroundWatcher(interval_s=float(
+        os.environ.get("CEMINI_PLAYGROUND_WATCH_S", "45") or 45
+    ))
     qual_protect = False
     placement_protect = False
     placement_chase = False
@@ -713,6 +731,7 @@ def run_lobby(args: argparse.Namespace) -> int:
 
         def ensure_joined(force: bool = False) -> None:
             nonlocal last_join_at, last_lobby_log_at, in_queue_only, last_pace_log_at
+            nonlocal competition_id
             now = time.time()
             if _sandbox_pvp_submit_only():
                 if force or (now - last_lobby_log_at) >= LOBBY_LOG_INTERVAL_S:
@@ -889,6 +908,28 @@ def run_lobby(args: argparse.Namespace) -> int:
                     return
                 in_queue_only = False
                 print(f"[cemini-lobby] join note: {e.status} {e.body}", file=sys.stderr)
+                if "competition_not_active" in err_text:
+                    try:
+                        hit = playground_watch.poll(client, competition_id, force=True)
+                        if hit:
+                            old = competition_id
+                            apply_live_playground_env(hit)
+                            competition_id = hit["id"]
+                            _apply_competition_posture(competition_id)
+                            _sync_competition_scope(state, competition_id)
+                            save_state(state)
+                            print(
+                                f"[cemini-lobby] PLAYGROUND ROLLOVER {old} -> "
+                                f"{competition_id} season={hit.get('seasonNumber')} "
+                                f"{hit.get('name')}",
+                                flush=True,
+                            )
+                            last_join_at = 0.0
+                    except Exception as watch_exc:
+                        print(
+                            f"[cemini-lobby] playground watch skip: {watch_exc}",
+                            file=sys.stderr,
+                        )
                 last_join_at = now
 
         if not args.skip_join:
@@ -1012,7 +1053,30 @@ def run_lobby(args: argparse.Namespace) -> int:
                     file=sys.stderr,
                 )
 
+        def maybe_retarget_playground(*, force: bool = False) -> None:
+            nonlocal competition_id
+            try:
+                hit = playground_watch.poll(client, competition_id, force=force)
+            except Exception as exc:
+                print(f"[cemini-lobby] playground watch skip: {exc}", file=sys.stderr)
+                return
+            if not hit:
+                return
+            old = competition_id
+            apply_live_playground_env(hit)
+            competition_id = hit["id"]
+            _apply_competition_posture(competition_id)
+            _sync_competition_scope(state, competition_id)
+            save_state(state)
+            print(
+                f"[cemini-lobby] PLAYGROUND ROLLOVER {old} -> {competition_id} "
+                f"season={hit.get('seasonNumber')} {hit.get('name')}",
+                flush=True,
+            )
+            ensure_joined(force=True)
+
         while True:
+            maybe_retarget_playground()
             try:
                 pending = _pending(client, competition_id)
             except ArenaError as e:

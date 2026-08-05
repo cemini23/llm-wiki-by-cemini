@@ -15,7 +15,7 @@
     },
     "prod-mcp": {
       "type": "sse",
-      "disabled": false,
+      "disabled": true,
       "url": "http://localhost:18002/mcp"
     },
     "exa": {
@@ -27,7 +27,7 @@
     },
     "fetch": {
       "type": "stdio",
-      "disabled": false,
+      "disabled": true,
       "command": "npx",
       "args": [
         "-y",
@@ -37,20 +37,13 @@
     },
     "obsidian-vault": {
       "type": "stdio",
-      "disabled": false,
+      "disabled": true,
       "command": "npx",
       "args": [
         "-y",
         "mcp-obsidian",
-        "/Users/claudiobarone/Desktop/OSINT WORKSPACE/wiki"
+        "/Users/claudiobarone/Projects/OSINT WORKSPACE/wiki"
       ],
-      "env": {}
-    },
-    "codebase-memory-mcp": {
-      "type": "stdio",
-      "disabled": false,
-      "command": "/Users/claudiobarone/.local/bin/codebase-memory-mcp",
-      "args": [],
       "env": {}
     },
     "discord-ops": {
@@ -58,7 +51,8 @@
       "args": [],
       "env": {
         "DISCORD_OPS_DRY_RUN": "true"
-      }
+      },
+      "disabled": false
     },
     "chrome-devtools": {
       "type": "stdio",
@@ -71,7 +65,7 @@
     },
     "mcp-legal-it": {
       "type": "stdio",
-      "disabled": false,
+      "disabled": true,
       "command": "/Users/claudiobarone/Projects/OSINT WORKSPACE/.local/adopts/mcp-legal-it/.venv/bin/python",
       "args": [
         "/Users/claudiobarone/Projects/OSINT WORKSPACE/.local/adopts/mcp-legal-it/run_server.py"

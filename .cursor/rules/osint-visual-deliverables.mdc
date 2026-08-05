@@ -1,6 +1,6 @@
 ---
 description: Prefer Cursor built-in browser + Canvas for visual deliverables in OSINT workspace
-alwaysApply: true
+alwaysApply: false
 ---
 
 # Visual deliverables — browser + canvas (OSINT)

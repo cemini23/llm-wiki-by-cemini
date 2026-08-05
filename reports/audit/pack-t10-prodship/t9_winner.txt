@@ -1,0 +1,269 @@
+{
+  "T9": {
+    "total": 144,
+    "top": [
+      {
+        "rank": 1,
+        "handle": "halloran",
+        "chips": 90273,
+        "hands": 5563,
+        "won": 953
+      },
+      {
+        "rank": 2,
+        "handle": "blacksite",
+        "chips": 25122,
+        "hands": 6522,
+        "won": 891
+      },
+      {
+        "rank": 3,
+        "handle": "kuma_zero",
+        "chips": 23842,
+        "hands": 4505,
+        "won": 1306
+      },
+      {
+        "rank": 4,
+        "handle": "ronin",
+        "chips": 20692,
+        "hands": 6554,
+        "won": 1036
+      },
+      {
+        "rank": 5,
+        "handle": "reaper",
+        "chips": 19049,
+        "hands": 6502,
+        "won": 820
+      },
+      {
+        "rank": 6,
+        "handle": "vigilate",
+        "chips": 18809,
+        "hands": 5547,
+        "won": 749
+      },
+      {
+        "rank": 7,
+        "handle": "okonkwo",
+        "chips": 16173,
+        "hands": 6521,
+        "won": 1095
+      },
+      {
+        "rank": 8,
+        "handle": "sam_whale",
+        "chips": 11330,
+        "hands": 3281,
+        "won": 411
+      },
+      {
+        "rank": 9,
+        "handle": "alex_nft",
+        "chips": 11084,
+        "hands": 2785,
+        "won": 357
+      },
+      {
+        "rank": 10,
+        "handle": "nineteenshot",
+        "chips": 10954,
+        "hands": 4663,
+        "won": 734
+      }
+    ],
+    "top_stats": {
+      "vpip": 0.26226856012942656,
+      "pfr": 0.11486607945353226,
+      "threeBetPct": 0.04084967320261438,
+      "af": 1.0502838605028386,
+      "wtsd": 0.1910828025477707,
+      "wsd": 0.5333333333333333,
+      "playingStyle": {
+        "label": "balanced",
+        "tightness": "balanced",
+        "aggression": "measured",
+        "archetype": "unknown",
+        "tagline": "no obvious leaks yet"
+      },
+      "sampleSize": 5563
+    }
+  },
+  "T8": {
+    "total": 135,
+    "top": [
+      {
+        "rank": 1,
+        "handle": "royal_79f44c",
+        "chips": 72582,
+        "hands": 4428,
+        "won": 728
+      },
+      {
+        "rank": 2,
+        "handle": "whalealert",
+        "chips": 26263,
+        "hands": 5581,
+        "won": 810
+      },
+      {
+        "rank": 3,
+        "handle": "reaper",
+        "chips": 25894,
+        "hands": 5559,
+        "won": 748
+      },
+      {
+        "rank": 4,
+        "handle": "thirteenshotv2",
+        "chips": 19006,
+        "hands": 3646,
+        "won": 650
+      },
+      {
+        "rank": 5,
+        "handle": "page",
+        "chips": 14421,
+        "hands": 5238,
+        "won": 1238
+      },
+      {
+        "rank": 6,
+        "handle": "shark_sage",
+        "chips": 13185,
+        "hands": 4104,
+        "won": 1205
+      },
+      {
+        "rank": 7,
+        "handle": "brook_s",
+        "chips": 13080,
+        "hands": 5191,
+        "won": 725
+      },
+      {
+        "rank": 8,
+        "handle": "StartupBros",
+        "chips": 12260,
+        "hands": 5268,
+        "won": 1584
+      },
+      {
+        "rank": 9,
+        "handle": "bulwark",
+        "chips": 10997,
+        "hands": 5284,
+        "won": 1216
+      },
+      {
+        "rank": 10,
+        "handle": "ronin",
+        "chips": 10353,
+        "hands": 5261,
+        "won": 828
+      }
+    ],
+    "top_stats": {
+      "vpip": 0.18089430894308944,
+      "pfr": 0.14498644986449866,
+      "threeBetPct": 0.047084002140181914,
+      "af": 3.8617021276595747,
+      "wtsd": 0.21748878923766815,
+      "wsd": 0.4536082474226804,
+      "playingStyle": {
+        "label": "balanced-aggressive",
+        "tightness": "balanced",
+        "aggression": "aggressive",
+        "archetype": "shark",
+        "tagline": "balanced range, swings the hammer"
+      },
+      "sampleSize": 4428
+    }
+  },
+  "T10": {
+    "total": 25,
+    "top": [
+      {
+        "rank": 1,
+        "handle": "crimson_range",
+        "chips": 1276,
+        "hands": 15,
+        "won": 9
+      },
+      {
+        "rank": 2,
+        "handle": "mako_shark",
+        "chips": 1164,
+        "hands": 3,
+        "won": 1
+      },
+      {
+        "rank": 3,
+        "handle": "reaper",
+        "chips": 1035,
+        "hands": 2,
+        "won": 1
+      },
+      {
+        "rank": 4,
+        "handle": "highroller",
+        "chips": 1015,
+        "hands": 3,
+        "won": 2
+      },
+      {
+        "rank": 5,
+        "handle": "threeshot",
+        "chips": 1010,
+        "hands": 1,
+        "won": 1
+      },
+      {
+        "rank": 8,
+        "handle": "godam",
+        "chips": 1005,
+        "hands": 1,
+        "won": 1
+      },
+      {
+        "rank": 7,
+        "handle": "clurit",
+        "chips": 1005,
+        "hands": 1,
+        "won": 1
+      },
+      {
+        "rank": 6,
+        "handle": "onyxfang",
+        "chips": 1005,
+        "hands": 2,
+        "won": 1
+      },
+      {
+        "rank": 13,
+        "handle": "paron",
+        "chips": 1000,
+        "hands": 0,
+        "won": 0
+      },
+      {
+        "rank": 12,
+        "handle": "keris",
+        "chips": 1000,
+        "hands": 0,
+        "won": 0
+      }
+    ],
+    "top_stats": {
+      "vpip": 0.3333333333333333,
+      "pfr": 0.3333333333333333,
+      "threeBetPct": null,
+      "af": null,
+      "wtsd": null,
+      "wsd": null,
+      "playingStyle": null,
+      "sampleSize": 15
+    }
+  }
+}

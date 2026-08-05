@@ -230,9 +230,22 @@ def gmail_service():
     if token_path.is_file():
         creds = Credentials.from_authorized_user_file(str(token_path), GMAIL_SCOPES)
     if not creds or not creds.valid:
+        refreshed = False
         if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
+            try:
+                creds.refresh(Request())
+                refreshed = True
+            except Exception as exc:  # noqa: BLE001 — revoked refresh → browser re-auth
+                print(f"WARN: Gmail token refresh failed ({exc}); opening browser re-auth")
+                stamp = datetime.now(timezone.utc).strftime("%Y%m%d")
+                bak = token_path.with_suffix(f".json.revoked-{stamp}")
+                try:
+                    token_path.rename(bak)
+                    print(f"Moved dead token → {bak}")
+                except OSError:
+                    pass
+                creds = None
+        if not refreshed:
             flow = InstalledAppFlow.from_client_secrets_file(str(client_path), GMAIL_SCOPES)
             creds = flow.run_local_server(port=0)
         token_path.parent.mkdir(parents=True, exist_ok=True)
@@ -261,7 +274,13 @@ def ensure_label(service, name: str) -> str:
     return created["id"]
 
 
-def poll_gmail(cfg: dict[str, Any], *, dry_run: bool, backfill_days: int | None = None) -> int:
+def poll_gmail(
+    cfg: dict[str, Any],
+    *,
+    dry_run: bool,
+    backfill_days: int | None = None,
+    recover_processed: bool = False,
+) -> int:
     service = gmail_service()
     label_name = cfg["gmail"]["label"]
     processed_label_name = cfg["gmail"]["processed_label"]
@@ -290,9 +309,13 @@ def poll_gmail(cfg: dict[str, Any], *, dry_run: bool, backfill_days: int | None 
         f'"{sig}"' if " " in sig else sig
         for sig in ("macrocharts", "Macro Charts", "macrocharts.com")
     )
-    query = f"-label:{processed_label_name} ({from_clause}) ({signal_query})"
+    if recover_processed:
+        query = f"({from_clause}) ({signal_query})"
+    else:
+        query = f"-label:{processed_label_name} ({from_clause}) ({signal_query})"
     if backfill_days:
         query += f" newer_than:{backfill_days}d"
+    print(f"Gmail query: {query}")
     resp = service.users().messages().list(userId="me", q=query, maxResults=50).execute()
     messages = resp.get("messages") or []
 
@@ -302,7 +325,7 @@ def poll_gmail(cfg: dict[str, Any], *, dry_run: bool, backfill_days: int | None 
 
     for item in messages:
         mid = item["id"]
-        if mid in processed_ids:
+        if mid in processed_ids and not recover_processed:
             continue
 
         full = service.users().messages().get(userId="me", id=mid, format="raw").execute()
@@ -333,9 +356,25 @@ def poll_gmail(cfg: dict[str, Any], *, dry_run: bool, backfill_days: int | None 
         url_slug = post_slug_from_url(parsed.substack_url) if parsed.substack_url else slug
         out_name = f"{prefix}-{date_part}-{url_slug or slug}.md"
         out_path = INBOX / out_name
-        if out_path.exists():
+        # Already on disk (and maybe archived) — skip re-write unless forced recover of missing mid
+        if out_path.exists() and recover_processed and mid in processed_ids:
+            print(f"SKIP {mid}: already exported {out_name}")
+            skipped += 1
+            continue
+        if out_path.exists() and not recover_processed:
             out_name = f"{prefix}-{date_part}-{slug}-{mid[:8]}.md"
             out_path = INBOX / out_name
+
+        # Recover path: if primary name exists from RSS teaser, use mid-suffixed paid name
+        if recover_processed and out_path.exists():
+            out_name = f"{prefix}-{date_part}-{slug}-{mid[:8]}.md"
+            out_path = INBOX / out_name
+            if out_path.exists():
+                print(f"SKIP {mid}: already exported {out_name}")
+                skipped += 1
+                if mid not in processed_ids:
+                    processed_ids.add(mid)
+                continue
 
         md = build_markdown(parsed, mid, normalize_email(from_header))
         print(f"{'DRY-RUN' if dry_run else 'EXPORT'} {out_name} ({', '.join(matched)})")
@@ -388,9 +427,19 @@ def main() -> int:
         metavar="N",
         help="Limit search to mail newer than N days (default: no limit)",
     )
+    parser.add_argument(
+        "--recover-processed",
+        action="store_true",
+        help="Re-scan mail including Cemini/Macro-Charts/processed (fix label-without-file)",
+    )
     args = parser.parse_args()
     cfg = load_config()
-    return poll_gmail(cfg, dry_run=args.dry_run, backfill_days=args.backfill_days)
+    return poll_gmail(
+        cfg,
+        dry_run=args.dry_run,
+        backfill_days=args.backfill_days,
+        recover_processed=args.recover_processed,
+    )
 
 
 if __name__ == "__main__":

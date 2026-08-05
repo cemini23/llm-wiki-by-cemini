@@ -14,14 +14,8 @@ sources:
     transport: stdio
     command: "python3"
     args:
-      - "/Users/claudiobarone/Desktop/OSINT WORKSPACE/conductor/mcp_server.py"
-  - id: "kb-server"
-    type: server
-    transport: stdio
-    command: "ssh"
-    args:
-      - "cemini-librarian"
-      - "cd /opt/cemini-wiki && KB_TOOL_ALLOWLIST=kb_search,kb_search_smart,kb_context,kb_read,kb_list,kb_vault_status,kb_safety_check node /opt/kb-server/src/mcp.js"
+      - "/Users/claudiobarone/Projects/OSINT WORKSPACE/conductor/mcp_server.py"
+  # remote wiki MCP source removed 2026-08-01 (decommissioned 2026-06-14)
   - id: "prod-mcp"
     type: server
     transport: http
@@ -37,5 +31,5 @@ sources:
   - id: "exa"
     type: server
     transport: stdio
-    command: "/Users/claudiobarone/Desktop/OSINT WORKSPACE/scripts/mcp_exa.sh"
+    command: "/Users/claudiobarone/Projects/OSINT WORKSPACE/scripts/mcp_exa.sh"
     args: []

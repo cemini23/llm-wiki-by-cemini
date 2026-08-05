@@ -2,6 +2,12 @@
 name: grill-with-docs
 description: A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.
 disable-model-invocation: true
+license: MIT
+metadata.author: cemini23
+metadata.version: "1.0.0"
+federation: true
 ---
+
+# Grill with docs
 
 Run a `/grilling` session, using the `/domain-modeling` skill.

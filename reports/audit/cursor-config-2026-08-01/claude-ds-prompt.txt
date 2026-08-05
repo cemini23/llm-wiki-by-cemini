@@ -1,0 +1,36 @@
+You are auditor 4/4 (claude-ds / DeepSeek) in a READONLY Cursor configuration audit.
+DO NOT edit, write, delete, or run destructive commands. You may only read files and reason.
+
+Read the audit pack fully:
+/Users/claudiobarone/Projects/OSINT WORKSPACE/reports/audit/cursor-config-2026-08-01/PROMPT.md
+
+Also read if needed:
+- /Users/claudiobarone/.cursor/mcp.json
+- /Users/claudiobarone/Projects/OSINT WORKSPACE/.cursor/mcp.json
+- /Users/claudiobarone/Projects/OSINT WORKSPACE/.cursor/lazy-tool.yaml
+
+Question: day-to-day keep vs token waste vs DeepSeek automation vs MCP/rules cleanup.
+
+Return ONLY this structure:
+
+### Verdict
+PASS | WARN | FAIL — one line why
+
+### Day-to-day keep list
+Bullets
+
+### Findings
+| Severity | Finding | Evidence | Fix |
+|----------|---------|----------|-----|
+
+### Token waste map
+Ranked
+
+### DeepSeek / claude-ds automation candidates
+Table: task → why DeepSeek → when keep Cursor premium
+
+### Confidence
+high | medium | low
+
+### Unique angle
+Focus especially on what YOU (DeepSeek/claude-ds via /route) should own vs Cursor premium — be concrete about route lanes (easy/mid/hard).

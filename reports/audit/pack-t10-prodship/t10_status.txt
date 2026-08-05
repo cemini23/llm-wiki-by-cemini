@@ -1,0 +1,16 @@
+============================================================
+  Playground qualification — cms7hr1il20ya13wjj29s1o8h
+  Field size (reported): 25
+  Cutoff: top 20 → free entry to paired Tournament season
+============================================================
+  Rank #19 floor: 990 chips  (3 hands, 0 won)  — warden
+  OUR AGENT (cemini_wiki_poker):
+    rank=23  chips=965  hands=7  won=0
+    GAP to top-20: +25 chips needed
+    BLIND DECAY: ~5.0 chips/hand if passive; ~-5 hands folds to erase +-25 buffer @ 10/20
+  AUTH AGENT: cemini_wiki_poker id=cmpy4lcyi001y11vnekn1zlo3 rank=23 score=965
+============================================================
+  Season pairing (Discord 2026-06-08): Playground SN top 20 → Tournament SN
+  S1 playground qual ≠ S2 tournament — re-qualify each playground season
+  KO bracket: top 25 advance within that tournament season
+============================================================

@@ -8,6 +8,7 @@ disable-model-invocation: true
 license: MIT
 metadata.author: cemini23
 metadata.version: "1.1.0"
+federation: true
 ---
 # /goal — full-prompt single-shot meta-template
 

@@ -60,9 +60,19 @@ def gmail_service_with_settings():
     if token_path.is_file():
         creds = Credentials.from_authorized_user_file(str(token_path), GMAIL_SCOPES)
     if not creds or not creds.valid:
+        refreshed = False
         if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
+            try:
+                creds.refresh(Request())
+                refreshed = True
+            except Exception as exc:  # noqa: BLE001
+                print(f"WARN: token refresh failed ({exc}); browser re-auth")
+                try:
+                    token_path.rename(token_path.with_suffix(".json.revoked-bootstrap"))
+                except OSError:
+                    pass
+                creds = None
+        if not refreshed:
             flow = InstalledAppFlow.from_client_secrets_file(str(client_path), GMAIL_SCOPES)
             creds = flow.run_local_server(port=0)
         token_path.parent.mkdir(parents=True, exist_ok=True)

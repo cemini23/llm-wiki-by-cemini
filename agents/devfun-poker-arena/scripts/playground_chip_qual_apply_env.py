@@ -17,6 +17,7 @@ DEFAULT_COMPS = {
     9: "cmrt1wzu40jm911suskj9qebe",
     10: "cms0bwufmf3n8kyykdpxi6d2i",
     11: "cms7hrnjg20czv7oi85cho570",
+    12: "cmseo8d3e4fmh12qragnvqct6",
 }
 
 
@@ -59,7 +60,7 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         "CEMINI_KO_SURVIVAL": "1",
         # Was 1500 — permanently on for 1000-chip playground buy-ins (nit trap).
         "CEMINI_KO_SURVIVAL_HANDS": "40",
-        "CEMINI_KO_SURVIVAL_MIN_STACK": "700",
+        "CEMINI_KO_SURVIVAL_MIN_STACK": "400",
         "CEMINI_SURVIVAL_STACK_CHIPS": "500",
         "CEMINI_SHORT_STACK_BB": "20",
         "CEMINI_MAX_REBUYS": "2",
@@ -73,7 +74,7 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         "CEMINI_S1B_EXPLOIT": "1",
         "CEMINI_S1B_MIN_STACK_BB": "60",
         "CEMINI_NEMESIS_EXPLOIT": "1",
-        "CEMINI_NEMESIS_TIGHT": "1",
+        "CEMINI_NEMESIS_TIGHT": "0",
         # P11 / P10 leaders + repeat KO names (2026-08-01)
         "CEMINI_NEMESIS_HANDLES": (
             "flattened_v2,flattened_v2_guard_04,lodestar,godam,pot_sheriff,"
@@ -113,7 +114,7 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         # Per-decide telemetry (T10 post-mortem gap)
         "CEMINI_PREFLOP_LOG": "1",
         "CEMINI_PREFLOP_LOG_PATH": f"reports/exports/{export_slug}/preflop_decisions.jsonl",
-        "AGENT_VERSION": f"playground-s{season}.qual.2026-08-03.tag-sb-v3.posfix",
+        "AGENT_VERSION": f"playground-s{season}.qual.2026-08-05.watch-v1",
         "ARENA_NO_AUTO_REGISTER": "1",
     }
 
