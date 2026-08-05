@@ -641,7 +641,7 @@ def main() -> int:
             "```",
             "Full ingest — process everything in research to be indexed/ and any checked rows above.",
             "- preingest_check → discuss takeaways → 3–15 wiki pages → lint → ingest_session_gate → commit",
-            "- Briefs: Priority #1 atto (../atto/briefs/) · Priority #2 guruwatcher (../GuruWatcher/briefs/); behind both: poker · ceminidfs · xsp-killer · family-tree dogfood · tipdrop/david · pm-kalshi · wc-ticket-monitor · castle-sim (legacy)",
+            "- Briefs: Priority #1 atto (../atto/briefs/) · Priority #2 guruwatcher (../GuruWatcher/briefs/); behind both: poker · ceminidfs · xsp-killer · family-tree dogfood · local-abliterated-lab · pm-kalshi · wc-ticket-monitor · castle-sim (legacy)",
             "- Do NOT auto-scp generic quant-finance / MAPPO / Riskfolio briefs to cemini-prod",
             "```",
             "",

@@ -4,17 +4,23 @@ type: entity
 tags: [entity, tool, cybersecurity, pentest, skills, k129]
 keywords: [reverse-skill, zhaoxuya520, MIT, penetration testing, skill router, Cursor, Claude Code]
 related:
+  - sources/eval-url-batch-agentic-edge-security-2026-08-05.md
+  - entities/tools/ai-surface.md
   - sources/eval-url-cemini-research-2026-06-25.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/mcp-tool-calling-eval-scaffold.md
   - @cybersecurity-wiki/entities/tools/reverse-skill.md
 maturity: draft
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-08-05
+wire_status: policy_wired
+wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations
 
+- @sources/eval-url-batch-agentic-edge-security-2026-08-05.md — K224 Integrate refresh + local clone
+- @entities/tools/ai-surface.md
 - @sources/eval-url-cemini-research-2026-06-25.md — K129 Adopt row (URL 5)
 - @concepts/wiki-tooling-evaluation.md — Phase-0 registry; prior K93 **Defer** row superseded after license verify
 - @cybersecurity-wiki/entities/tools/reverse-skill.md — primary wiki home (cross-route stub)
@@ -39,6 +45,8 @@ Phase-0 prompted by K129 **Cemini URL Evaluation Research.docx** URL 5 — `zhao
 | OSINT fit | Secondary — tradecraft overlap only |
 
 **Posture:** **Adopt** for @cybersecurity-wiki (primary) + @ccc-wiki (harness pattern). Cross-route stub on OSINT entity page; detailed ops live in cybersec wiki. **Authorized use only** — no prod trading integration.
+
+**K224:** eval Integrate → local-abliterated-lab. Clone `.local/adopts/reverse-skill` (~12MB). Scope-lock to owned lab; no crimeware.
 
 ## Snippets
 

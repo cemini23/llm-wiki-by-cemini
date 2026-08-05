@@ -115,6 +115,18 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - Watch only (no clone): `antirez/ds4`, `cloudflare/computer`, Flue 2.0.
 - Reaffirm: `worldmonitor` AGPL Watch (K182) — do not re-clone under `.local/adopts/`.
 
+## K224 — deepagents / HermesOffice / AI-Surface / reverse-skill / CF temp-email / CF-OS
+
+- `deepagents` (MIT, `.local/adopts/deepagents` ~79MB) = planning-first LangGraph **Extract** for Atto — preview patterns only, not a prod pin; vault PII isolation + Magika + PII strip unchanged; Transkribus sole HTR; never auto-write `truth.ged`.
+- `HermesOffice` (Apache-2.0, `.local/adopts/HermesOffice` ~44MB) = A2A / SkillForge signed-skill **Extract** — no unattended public skill marketplace against the vault.
+- `AI-Surface` (MIT, `.local/adopts/AI-Surface` ~5MB) = PR-time AI attack-surface **Integrate** for cyber lab + Atto/GW scan hints — HITL, not silent auto-rewrite.
+- `reverse-skill` (MIT, `.local/adopts/reverse-skill` ~12MB) = authorized pentest skill-router **Integrate** — local-abliterated-lab only; no crimeware; no prod trading hosts.
+- `cloudflare-temp-email` (MIT, `.local/adopts/cloudflare-temp-email` ~7.5MB) = GuruWatcher / pm-canary **Extract** for newsletter/canary inbox tests — alert-only; never orders; never auto-rewrite `watches.json`.
+- `cloudflare-os` (Apache-2.0, `.local/adopts/cloudflare-os` ~22MB) = **Watch REFERENCE** — do not migrate GW pollers onto Workers this batch.
+- **No clone:** khoj AGPL Watch; onyx NOASSERTION; autonomous-computer Context (size); awesome-cloudflare null SPDX.
+- Klement 2026-08-05 AI data-centre capex piece → **xsp** regime awareness; GuruWatcher narrative only (Aug 4 SMH $525–530 / stop ~$500 remains most-recent numeric plan).
+- osintrack.com / getprism.su = directory/website patterns — family-tree / cyber Watch; never unsanitized third-party queries with Barone identifiers.
+
 ## K223 — cloudflare/computer + agent-skills + GDPevo + jumpcutter AGPL + Macro Aug 5
 
 - `cloudflare-computer` (MIT, `.local/adopts/cloudflare-computer` ~8.5MB) = isolate-first agent workspace **Extract** for Atto — preview only, not a prod pin; tenant/PII isolation mandatory; Magika + PII strip unchanged. Upgrades K220 Watch.

@@ -7,6 +7,17 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K224 ingest (2026-08-05 evening)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-url-batch-agentic-edge-security-2026-08-05](sources/eval-url-batch-agentic-edge-security-2026-08-05.md) | Tool eval — deepagents/HermesOffice Extract; AI-Surface + reverse-skill Integrate; CF-OS Watch (K224) | draft |
+| [substack-rss-klement-2026-08-05-data-centre-reality-check](sources/substack-rss-klement-2026-08-05-data-centre-reality-check.md) | Klement AI data-centre capex vs earnings → xsp (K224) | draft |
+| [deepagents](entities/tools/deepagents.md) | MIT LangGraph planning harness Extract → Atto (K224) | draft |
+| [hermes-office](entities/tools/hermes-office.md) | Apache A2A/SkillForge Extract → Atto (K224) | draft |
+| [ai-surface](entities/tools/ai-surface.md) | MIT AI attack-surface scanner Integrate → cyber/Atto/GW (K224) | draft |
+| [cloudflare-os](entities/tools/cloudflare-os.md) | Apache edge OS Watch → GuruWatcher (K224) | draft |
+
 ### K223 ingest (2026-08-05)
 
 | Page | Summary | Maturity |

@@ -5,6 +5,11 @@ type: concept
 tags: [concept, guruwatcher, discord, macro, k200, core-candidate]
 keywords: [claim ledger, most-recent-wins, sustain, verbatim guards, Macro Charts]
 related:
+  - sources/eval-url-batch-agentic-edge-security-2026-08-05.md
+  - sources/substack-rss-klement-2026-08-05-data-centre-reality-check.md
+  - entities/tools/cloudflare-os.md
+  - entities/tools/cloudflare-temp-email.md
+  - entities/tools/ai-surface.md
   - entities/tools/jumpcutter.md
   - sources/guruwatcher-pricing-strategy-research-2026-08-04.md
   - sources/macro-charts-paid-forward-2026-08-05-spx-sox-gdx-yields.md

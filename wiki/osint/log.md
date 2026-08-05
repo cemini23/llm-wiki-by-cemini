@@ -1,5 +1,27 @@
 # Wiki Log
 
+## [2026-08-05] phase1 | K224 surface wires (Atto / GuruWatcher / cyber)
+
+- OSINT `osint-phase1-adopt-wires.mdc` K224 — deepagents + HermesOffice Extract; AI-Surface Integrate; reverse-skill clone; CF temp-email Extract; CF-OS Watch
+- Surface: `atto-k252-phase1-wires.mdc` (Atto product **K224** = auth-regime enum — do not clobber) · `guruwatcher-k224-phase1-wires.mdc`
+- xsp `briefs/xsp-k224-klement-ai-datacentre.md` skill_audit → scp cemini-prod
+- Poker no-path; CCC / cyber / image-gen local briefs
+
+## [2026-08-05] ingest | K224 — agentic/edge/security eval + Klement AI capex
+
+- **Eval:** deepagents MIT Extract · HermesOffice Apache Extract · AI-Surface MIT Integrate · reverse-skill MIT Integrate · cloudflare_temp_email MIT Extract · cloudflare-os Apache Watch clone · khoj AGPL Watch no-clone · onyx NOASSERTION NO-GO · autonomous-computer Context skip size
+- **Klement:** AI data-centre capex vs 1GW revenue — xsp regime; GW narrative only (no new SMH numbers)
+- **Phase-0 ~170MB** under 500MB cap
+- Locations set to egress; archive same session
+
+## [2026-08-05] routing | TipDrop/David retired → local abliterated AI lab
+
+- David off TipDrop: remove `tipdrop` + `david-persona-image-gen` from `scripts/active_project_brief_targets.yaml`
+- Add `local-abliterated-lab` → `../Cybersecurity wiki/briefs/` (`@cybersec-wiki/concepts/local-abliterated-llm-pentest-stack.md`)
+- `daily_research_config.yaml` active_topics + brief_routing_note; drop Instagram TipDrop competitor scan
+- ROADMAP + `@concepts/active-project-research-routing.md` updated
+- Links eval: CCC prompts → **v10.5** (no TipDrop scoring / no kit pushes)
+
 ## [2026-08-05] phase1 | K223 surface wires (Atto / GuruWatcher)
 
 - OSINT `osint-phase1-adopt-wires.mdc` K223 — computer Extract · agent-skills Integrate · GDPevo REFERENCE · jumpcutter AGPL isolate · UnTouchID cyber-only

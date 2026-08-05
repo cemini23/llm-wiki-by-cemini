@@ -88,22 +88,27 @@ Ingest selected rows from wiki/sweeps/YYYY-MM-DD-daily.md:
 - [ ] ROADMAP + briefs staged (route per `scripts/active_project_brief_targets.yaml`)
 - [ ] skill_audit on prod briefs (only xsp-killer + pm-kalshi-bot → cemini-prod by default)
 
-## E — Active-project brief routing (2026-06-20)
+## E — Active-project brief routing (2026-08-05)
 
 Read `scripts/active_project_brief_targets.yaml` + `@concepts/active-project-research-routing.md` **before** staging briefs.
 
-**Co-primary (equal priority):** poker · ceminidfs · xsp-killer · castle-sim — ingest research specific to these active codebases first.
+**Priority:** **#1 Atto** · **#2 GuruWatcher** · everything else behind (route when source matches).
 
 | Project | Brief home | Prod `scp`? |
 |---------|------------|-------------|
+| **Atto (#1)** | `../atto/briefs/` | No — never Barone PII |
+| **GuruWatcher (#2)** | `../GuruWatcher/briefs/` | No |
 | Poker Arena | `agents/devfun-poker-arena/briefs/` | No (`cemini_hl_loop.sh`) |
 | CeminiDFS | `../projects/CeminiDFS/briefs/` + `@gambling-wiki` | No |
 | XSP killer | `briefs/xsp-*` | Yes → cemini-prod |
-| castle-sim | `../projects/castle-sim/briefs/` | No |
+| Family-tree dogfood | `~/Desktop/family/research/` | No — private |
+| Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No — authorized assist only |
 | wc-ticket-monitor | `../projects/wc-ticket-monitor/briefs/` | No (secondary) |
 | PM / Kalshi | `briefs/pm-*` | Yes when bot-touching (secondary) |
 
-**Legacy deprioritized** (wiki-only unless user/ROADMAP reopens): MAPPO equity, Riskfolio/HPO ladder, conductor harness KPIs.
+**Do not** push briefs to `tipdrop-workspace-kit` (TipDrop/David retired 2026-08-05).
+
+**Legacy deprioritized** (wiki-only unless user/ROADMAP reopens): TipDrop/David kit · MAPPO equity · Riskfolio/HPO ladder · conductor harness KPIs · castle-sim.
 
 ## F — Monokern weekly pipeline (optional)
 

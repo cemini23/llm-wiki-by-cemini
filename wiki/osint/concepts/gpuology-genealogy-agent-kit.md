@@ -5,6 +5,10 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - sources/eval-url-batch-agentic-edge-security-2026-08-05.md
+  - entities/tools/deepagents.md
+  - entities/tools/hermes-office.md
+  - entities/tools/ai-surface.md
   - entities/tools/gdpevo.md
   - sources/eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05.md
   - sources/arxiv-2608.03836-resume-contract.md

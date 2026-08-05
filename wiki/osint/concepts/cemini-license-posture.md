@@ -5,6 +5,11 @@ type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
 keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
+  - sources/eval-url-batch-agentic-edge-security-2026-08-05.md
+  - entities/tools/deepagents.md
+  - entities/tools/hermes-office.md
+  - entities/tools/ai-surface.md
+  - entities/tools/cloudflare-os.md
   - entities/tools/jumpcutter.md
   - entities/tools/gdpevo.md
   - entities/tools/addyosmani-agent-skills.md

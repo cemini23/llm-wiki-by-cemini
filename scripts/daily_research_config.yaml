@@ -47,18 +47,20 @@ active_topics:
   - "Family-tree / Barone dogfood — private archival digs only (→ ~/Desktop/family/research/; productizable → Atto)"
   - "wc-ticket-monitor — FIFA WC26 knockout resale alerts (secondary — route when source matches)"
   - "PM / Kalshi retail bot — CLOB botting, cross-venue, maker/taker postmortems (exploratory)"
+  - "Local abliterated AI lab — low-refusal local LLM + owned whitehat lab / pentest harness (→ @cybersec-wiki briefs)"
   - "Agent harness for game dev + poker sessions — Cursor/Stagehand, not prod conductor KPIs"
 
 brief_routing_note: |
   Priority #1: atto (../atto/briefs/). Priority #2: guruwatcher (../GuruWatcher/briefs/).
-  Behind both (route when source matches): poker-arena · ceminidfs · xsp-killer · family-tree (dogfood) · tipdrop/david · pm-kalshi-bot · wc-ticket-monitor · castle-sim (legacy).
+  Behind both (route when source matches): poker-arena · ceminidfs · xsp-killer · family-tree (dogfood) · local-abliterated-lab · pm-kalshi-bot · wc-ticket-monitor · castle-sim (legacy).
   Full ingest briefs route per `scripts/active_project_brief_targets.yaml`.
   Genealogy split: productizable (HTR/GEDCOM/vault/share/MCP/portal) → Atto dedicated brief; private pedigree → Desktop/family only.
   Newsletter / Macro Charts price-level watches → GuruWatcher (alert-only; never order routing).
-  David persona adoption briefs (image-gen): write locally, then `python3 ../projects/Image\ gen/scripts/route_david_adoption_brief.py` → `tipdrop-workspace-kit/briefs/*-david.md`.
+  Local abliterated / operator-lab: ../Cybersecurity wiki/briefs/ (never tipdrop-workspace-kit — TipDrop/David retired 2026-08-05).
   Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers.
   atto → ../atto/briefs/ · guruwatcher → ../GuruWatcher/briefs/ · poker → agents/devfun-poker-arena/briefs/ · ceminidfs → ../projects/CeminiDFS/briefs/
   xsp-killer → briefs/xsp-* → cemini-prod · family-tree → ~/Desktop/family/research/ (private; wiki methodology only)
+  local-abliterated-lab → ../Cybersecurity wiki/briefs/
   wc-ticket-monitor → ../projects/wc-ticket-monitor/briefs/ (wiki-only unless ticket-resale hook).
 
 # arXiv / research-paper lane — deduped against wiki; PDFs → inbox when NEW
@@ -87,6 +89,11 @@ paper_queries:
   - cluster: agent-harness-paper
     query: "research paper LLM agent harness playtesting verification game development OR poker"
     arxiv_query: '(all:agent AND (all:harness OR all:playtest OR all:verification)) OR (all:LLM AND all:agent AND (all:game OR all:poker))'
+    category: research paper
+
+  - cluster: local-abliterated-llm-paper
+    query: "research paper local LLM inference abliteration refusal reduction pentest assist open-weight agent"
+    arxiv_query: '(all:abliteration OR all:"refusal" OR all:"uncensored") AND (all:LLM OR all:"language model") OR (all:local AND all:LLM AND (all:pentest OR all:vLLM OR all:Ollama))'
     category: research paper
 
   - cluster: nfl-dfs-projection-paper
@@ -157,16 +164,16 @@ monokern_pipeline:
     - yt-dlp
     - inbox_pdf
     - web_url
-  ingest_hook: "After Sunday digest, one NotebookLM pass on Priority #1/#2 or active topic (Atto, GuruWatcher, poker, ceminiDFS, xsp-killer, family-tree dogfood, or PM)"
+  ingest_hook: "After Sunday digest, one NotebookLM pass on Priority #1/#2 or active topic (Atto, GuruWatcher, poker, ceminiDFS, xsp-killer, family-tree dogfood, local abliterated lab, or PM)"
 
 social:
   manual_pass:
     - tool: notebooklm-osint-bridge
-      prompt: "Weekly Monokern pass — prefer Atto (#1) or GuruWatcher (#2); else poker Researcher Round, CeminiDFS, xsp-killer, family-tree dogfood, or PM/Kalshi"
+      prompt: "Weekly Monokern pass — prefer Atto (#1) or GuruWatcher (#2); else poker Researcher Round, ceminiDFS, xsp-killer, local abliterated lab, family-tree dogfood, or PM/Kalshi"
     - tool: twitter-reader
-      prompt: "dev.fun poker HU sandbox; XSP Mini-SPX LEAPS/options flow; NFL DFS FanDuel; PM/Kalshi bot last 24h"
+      prompt: "dev.fun poker HU sandbox; XSP Mini-SPX LEAPS/options flow; NFL DFS FanDuel; local abliterated LLM / pentest harness; PM/Kalshi bot last 24h"
     - tool: opencli-reader
-      prompt: "HN poker AI dev.fun arena OR r/poker heads-up; gamedev Godot RTS; WC tickets; prediction market bot"
+      prompt: "HN poker AI dev.fun arena OR r/poker heads-up; local LLM Ollama vLLM abliterated; WC tickets; prediction market bot"
     - tool: telegram-reader
       prompt: "PM/crypto macro + options vol + WC ticket/resale headlines"
 
@@ -189,9 +196,5 @@ agent_reach_social:
     - cluster: reddit-prediction-markets
       platform: reddit
       command: ["opencli", "reddit", "search", "Polymarket Kalshi prediction markets", "-f", "yaml"]
-    - cluster: instagram-tipdrop-competitor-scan
-      platform: instagram
-      command: ["opencli", "instagram", "profile", "unusualwhales", "-f", "yaml"]
-
 output:
   path_template: "wiki/sweeps/{date}-daily.md"

@@ -7,12 +7,12 @@
 # Eval: CCC prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md (v10.4)
 #
 # Operator priority (2026-07-27): Atto = #1 · GuruWatcher = #2 · everything else behind.
+# TipDrop / David kit briefs retired 2026-08-05 — replaced by local abliterated AI lab (cybersec).
 
 default_posture: wiki-only
 
 # Priority #1 / #2 — morning ingest first. Genealogy productizable → atto briefs
-# (`../atto/briefs`). TipDrop / David briefs → tipdrop-workspace-kit
-# (`~/Desktop/projects/tipdrop-workspace-kit/briefs`; Projects/projects symlink).
+# (`../atto/briefs`). Local abliterated / operator-lab → Cybersecurity wiki briefs.
 # Private Barone digs → family-tree only. Newsletter/price-watch Discord → guruwatcher.
 projects:
   atto:
@@ -53,7 +53,7 @@ projects:
       - "systemd timer / prod deploy packs for alert monitors"
     skip_brief_if:
       - "Order-routing / live execution bots (GuruWatcher is alert-only)"
-      - "Generic Discord SaaS onboarding without price-watch or newsletter-claim hook (→ TipDrop)"
+      - "Generic Discord SaaS onboarding without price-watch or newsletter-claim hook"
       - "Genealogy / Atto product content"
 
   poker-arena:
@@ -159,41 +159,25 @@ projects:
     skip_brief_if:
       - "Institutional CeminiSuite Lane A executor unless WC/PM module explicit"
 
-  tipdrop:
-    label: "TipDrop workspace kit — Discord/scanner operator briefs"
-    code_root: "~/Desktop/projects/tipdrop-workspace-kit"
-    wiki: null
-    # Canon kit = Desktop (git). `../projects/tipdrop-workspace-kit` is a symlink → Desktop.
-    brief_dir: "../projects/tipdrop-workspace-kit/briefs"
+  local-abliterated-lab:
+    label: "Local abliterated AI lab — authorized pentest assist / operator lab"
+    code_root: "../Cybersecurity wiki"
+    wiki: "@cybersec-wiki/concepts/local-abliterated-llm-pentest-stack.md"
+    brief_dir: "../Cybersecurity wiki/briefs"
     scp_target: null
     co_primary: false
-    primary_goal: "Operator-actionable TipDrop / David / Discord briefs citing @osint-wiki — never leave TipDrop briefs in OSINT briefs/"
+    priority_rank: 14
+    primary_goal: "Local low-refusal / abliterated LLM stack + owned whitehat lab + harness wiring — friend/operator lab playbook; never TipDrop kit"
     steal_from:
-      - "Discord ingest, scanner ops, Unusual Whales, Form4, alert hygiene"
-      - "OpenCLI / t3code / video OSINT tooling for TipDrop signal chase"
-      - "David persona adoption briefs (also via david-persona-image-gen mirror)"
+      - "Abliterated / low-refusal open-weight LLMs for authorized pentest assist (Ollama/vLLM/llama.cpp/MLX)"
+      - "Planner+executor local inference (Flash-class abliterated + coder-abliterated)"
+      - "Owned-target whitehat lab / pre-release product pentest / AI pentest harness re-point at local OpenAI-compatible endpoint"
+      - "Strix/OMLX/SGLang local wiring; observation-only sandbox patterns"
     skip_brief_if:
+      - "Crimeware / out-of-scope offensive content (ethics floor unchanged)"
+      - "Generic Discord SaaS / TipDrop onboarding (retired 2026-08-05)"
       - "Atto genealogy product (→ atto briefs)"
       - "XSP/PM prod monitors (→ briefs/xsp-* or pm-* then cemini-prod)"
-
-  david-persona-image-gen:
-    label: "David persona pipeline — image/video/audio gen (TipDrop shared kit)"
-    code_root: "../projects/Image gen"
-    wiki: "@image-gen-wiki/concepts/david-adoption-brief-routing.md"
-    # Same brief_dir as tipdrop — Desktop kit via Projects/projects symlink
-    brief_dir: "../projects/tipdrop-workspace-kit/briefs"
-    brief_name_suffix: "-david"
-    scp_target: null
-    co_primary: false
-    primary_goal: "Mirror Phase-0 adoption briefs for David's ComfyUI / Fish-Speech persona stack"
-    steal_from:
-      - "ComfyUI custom nodes, FLUX/Wan LoRA adoption, pose transfer, interactive refine"
-      - "Fish-Speech + LatentSync production stack decisions"
-      - "Persona video energy / DCAL LoRA methodology"
-    skip_brief_if:
-      - "Generic research with no David install path"
-      - "Operator-only phase-0 with no adoption verdict"
-    mirror_script: "../projects/Image gen/scripts/route_david_adoption_brief.py"
 
 legacy_deprioritized:
   stacks:
@@ -203,4 +187,5 @@ legacy_deprioritized:
     - "Generic portfolio optimization theory without PM/XSP/poker hook"
     - "castle-sim (Godot RTS vertical slice) — replaced by family-tree focus Jul 2026"
     - "world-cup-bot / WC LP safety cadence — tournament over; dropped 2026-07-28"
+    - "TipDrop.io / tipdrop-workspace-kit / David persona kit mirror — retired 2026-08-05 (David off TipDrop)"
   action: "wiki + concept page only; brief only if user asks or ROADMAP row reopens"

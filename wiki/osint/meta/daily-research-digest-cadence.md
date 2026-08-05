@@ -16,7 +16,7 @@ related:
   - meta/federation-operator-hub-stub.md
 maturity: core
 created: 2026-05-31
-updated: 2026-07-15
+updated: 2026-08-05
 ---
 
 ## Relations
@@ -24,7 +24,7 @@ updated: 2026-07-15
 - @meta/federation-operator-hub-stub.md — operator morning summary (`cemini-federation-hub`)
 - @concepts/federated-daily-research-digest.md — per-wiki install kit (K93)
 - @concepts/monokern-compounding-research-pipeline.md — weekly deep-research overlay
-- @concepts/active-project-research-routing.md — brief targets: **Atto** Priority #1 + poker, ceminidfs, xsp-killer, family-tree dogfood; secondary: wc-ticket-monitor (2026-07-21)
+  - @concepts/active-project-research-routing.md — brief targets: **Atto** #1 · **GuruWatcher** #2 · behind: poker, ceminidfs, xsp-killer, family-tree dogfood, **local-abliterated-lab**; TipDrop retired 2026-08-05
 - @entities/tools/wc-ticket-monitor.md — portfolio repo (knockout ticket resale alerts)
 - @meta/wiki-gap-detect-cadence.md — weekly stale-claim / thin-page report; linked from daily digest
 - @concepts/cemini-workflow-tooling-audit-2026-05-30.md — script-first automation posture

@@ -8,9 +8,9 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
-## Active workstreams (2026-07-27 — Atto Priority #1 · GuruWatcher Priority #2)
+## Active workstreams (2026-08-05 — Atto #1 · GuruWatcher #2 · TipDrop retired)
 
-Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/briefs/`). **GuruWatcher** is Priority #2 (`../GuruWatcher/briefs/`). Everything else is behind both (`scripts/active_project_brief_targets.yaml`). Eval prompt: CCC `prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` v10.4 (`atto overlap` + `guruwatcher overlap` + `genealogy overlap`).
+Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/briefs/`). **GuruWatcher** is Priority #2 (`../GuruWatcher/briefs/`). Everything else is behind both (`scripts/active_project_brief_targets.yaml`). **TipDrop / David kit briefs retired** — do not push to `tipdrop-workspace-kit`. **Local abliterated AI lab** takes that research-queue slot (`../Cybersecurity wiki/briefs/`). Eval prompt: CCC `prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` **v10.5** (`atto` + `guruwatcher` + `genealogy` + `local-abliterated-lab` overlaps).
 
 ### Priority stack (morning ingest)
 
@@ -22,6 +22,17 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **CeminiDFS** — NFL DIY projection pipeline | `../projects/CeminiDFS/briefs/` | No |
 | behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
+| behind | **Local abliterated AI lab** — pentest assist / operator lab | `../Cybersecurity wiki/briefs/` | No — authorized assist only |
+| retired | ~~TipDrop / David kit~~ | — | Do not route (2026-08-05) |
+
+## Current state (2026-08-05 — K224)
+
+- **K224 ingest** — URL batch (agentic/edge/local-security) + Klement AI data-centre capex teaser. Phase-0 ~170MB (deepagents, HermesOffice, AI-Surface, reverse-skill, cloudflare-temp-email, cloudflare-os). Briefs → Atto K252 / GuruWatcher / CCC / cyber / xsp-prod / image-gen; poker no-path.
+- **K224 Phase-1** — OSINT policy + Atto `atto-k252-phase1-wires.mdc` + GuruWatcher `guruwatcher-k224-phase1-wires.mdc`.
+
+## Current state (2026-08-05 — TipDrop retired)
+
+- **Routing pivot** — David off TipDrop: remove tipdrop + david-persona brief targets; stop kit mirror pushes. Local abliterated AI lab (`@cybersec-wiki/concepts/local-abliterated-llm-pentest-stack.md`) joins active research queue. Links eval → CCC v10.5.
 
 ## Current state (2026-08-05 — K223)
 
