@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # OSINT hook: Macro Charts inbox drop → GuruWatcher ingest + prod reconcile.
+# Trusted: no wiki human-approve gate. Sync archives MC files out of triage.
 set -euo pipefail
 
 OSINT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
