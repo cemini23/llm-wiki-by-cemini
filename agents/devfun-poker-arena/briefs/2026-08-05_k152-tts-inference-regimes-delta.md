@@ -30,6 +30,13 @@ For HU sandbox: when comparing decide() variants, tag the inference regime and r
 - Pull Scorio HF traces onto laptop or prod
 - Auto-scp to cemini-prod
 
+## Filed (2026-08-05)
+
+- `references/tts-inference-regimes.md` (K152)
+- `examples/inference_regime.py`
+- `tests/test_inference_regime.py`
+- Regime tag wired into `cemini_decide.retrieve_solver_context` return (fail-open)
+
 ## Sources
 
 - https://arxiv.org/abs/2608.04001

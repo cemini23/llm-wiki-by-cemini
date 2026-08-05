@@ -929,7 +929,26 @@ def retrieve_solver_context(
     enrichment that can block (PokerSkill, chat intel, HL style I/O,
     jackpot-adjacent extras). Chart/MAFP/postflop buckets stay O(1)
     cached lookups.
+
+    K244/K245 — clarify-before-solver: when street/stack/regime inputs are
+    missing, return a small skip dict instead of launching heavy solver
+    helpers. Fail-open: any preflight weirdness keeps the normal path.
     """
+    try:
+        from solver_preflight import solver_inputs_ready
+
+        missing = solver_inputs_ready(table)
+    except Exception:
+        missing = []
+    if missing:
+        skip = {"solver_preflight": "skip", "missing": missing}
+        try:
+            from inference_regime import tag_inference_regime
+
+            skip = tag_inference_regime(skip)
+        except Exception:
+            pass
+        return skip
     chart = research_static_chart(table)
     # Timeout harden v2: skip PokerSkill under tight clock (deadline <5s).
     ps = retrieve_pokerskill_hints(table) if not tight_deadline else {}
@@ -1017,6 +1036,12 @@ def retrieve_solver_context(
                 ctx["solver_frequencies"] = sf
         except Exception:
             pass
+    try:
+        from inference_regime import tag_inference_regime
+
+        ctx = tag_inference_regime(ctx)
+    except Exception:
+        pass
     return ctx
 
 
