@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-08-05] cadence | wiki gap detect Tier 1
+
+- Ran `bash scripts/run_wiki_gap_detect.sh` — report `.local/reports/wiki-gap-detect-2026-08-05.txt`
+- 2433 pages: **46 type-A** cited-unread · **138 type-D** stale NV · **79 type-E** thin concepts
+- Next due 2026-08-12. Tier 2 Exa still user-gated.
+
 ## [2026-08-05] phase1 | K224 surface wires (Atto / GuruWatcher / cyber)
 
 - OSINT `osint-phase1-adopt-wires.mdc` K224 — deepagents + HermesOffice Extract; AI-Surface Integrate; reverse-skill clone; CF temp-email Extract; CF-OS Watch
