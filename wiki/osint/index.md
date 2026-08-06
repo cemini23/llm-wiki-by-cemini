@@ -7,6 +7,35 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K225 ingest (2026-08-06)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-url-batch-agentic-osint-integrations-2026-08-06](sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md) | URL eval — sie/book-to-skill Integrate; loopx/shepherd Extract; ScienceClaw NO-GO (K225) | draft |
+| [eval-tech-stack-opportunity-2026-08-06](sources/eval-tech-stack-opportunity-2026-08-06.md) | Tech-stack eval — DeepCode Extract; bountyforge/Argus NO-GO; KiroCrew size-skip (K225) | draft |
+| [arxiv-2608.04698-mllm-refusal-calibrated-grpo-2026-08-06](sources/arxiv-2608.04698-mllm-refusal-calibrated-grpo-2026-08-06.md) | RC-GRPO MLLM refusal calibration → image-gen/CCC (K225) | draft |
+| [arxiv-2608.05026-artanno-bihaa-2026-08-06](sources/arxiv-2608.05026-artanno-bihaa-2026-08-06.md) | ArtAnno BiHAA → Atto skill distillation (K252/K225) | draft |
+| [arxiv-2608.05033-sparseditto-gpu-kernels-2026-08-06](sources/arxiv-2608.05033-sparseditto-gpu-kernels-2026-08-06.md) | SparseDitto LLM GPU sparse kernels → CCC/image-gen (K225) | draft |
+| [arxiv-2608.05086-irt-ai-safety-2026-08-06](sources/arxiv-2608.05086-irt-ai-safety-2026-08-06.md) | IRT for AI safety benches → CCC (K225) | draft |
+| [arxiv-2608.05144-argus-agentic-runtime-2026-08-06](sources/arxiv-2608.05144-argus-agentic-runtime-2026-08-06.md) | Argus persist/pivot runtime — NO-GO clone (K253/K225) | draft |
+| [macro-charts-paid-forward-2026-08-06](sources/macro-charts-paid-forward-2026-08-06.md) | Macro chat — GDX $87–90 / Gold ~$4500 / GOOGL $348 / chem weeds (K225) | draft |
+| [substack-rss-event-horizon-2026-08-06-15min-prediction-markets](sources/substack-rss-event-horizon-2026-08-06-15min-prediction-markets.md) | Kalshi 15-min crypto/PM + FanDuel $50m MM (K225) | draft |
+| [substack-rss-wublock-2026-08-06-july-vc-citadel-crypto](sources/substack-rss-wublock-2026-08-06-july-vc-citadel-crypto.md) | July crypto VC — Citadel→Crypto.com $400m / Alpaca / Prime Intellect (K225) | draft |
+| [newsletter-rss-latent-space-2026-08-06-deepmind-discovery-loop](sources/newsletter-rss-latent-space-2026-08-06-deepmind-discovery-loop.md) | GDM exodus → Discovery Loop; Muse/Prime Agent (K225) | draft |
+| [substack-rss-capital-flows-2026-08-06-global-economy-teaser](sources/substack-rss-capital-flows-2026-08-06-global-economy-teaser.md) | Capital Flows global-economy teaser stub (K225) | draft |
+| [sie-superlinked](entities/tools/sie-superlinked.md) | Apache sie semantic index Integrate → Atto (K225) | draft |
+| [pi-llm-wiki](entities/tools/pi-llm-wiki.md) | MIT pi-llm-wiki Extract → Atto (K225) | draft |
+| [ai-sales-team-claude](entities/tools/ai-sales-team-claude.md) | MIT sales-team Extract → Atto GTM (K225) | draft |
+| [kirocrew](entities/tools/kirocrew.md) | Apache KiroCrew Extract patterns — size-skip clone (K225) | draft |
+| [shepherd-agents](entities/tools/shepherd-agents.md) | MIT shepherd Extract → cyber lab (K225) | draft |
+| [loopx](entities/tools/loopx.md) | MIT loopx Extract → cyber lab (K225) | draft |
+| [mubeng](entities/tools/mubeng.md) | Apache mubeng Watch → GuruWatcher (K225) | draft |
+| [deepcode-hku](entities/tools/deepcode-hku.md) | MIT DeepCode Extract → CCC/xsp (K225) | draft |
+| [bidirectional-hai-skill-evolution](concepts/bidirectional-hai-skill-evolution.md) | BiHAA skill distillation (K252/K225) | draft |
+| [verification-gated-persist-pivot-runtime](concepts/verification-gated-persist-pivot-runtime.md) | Argus persist/pivot pattern (K253/K225) | draft |
+| [irt-ai-safety-benchmark-compression](concepts/irt-ai-safety-benchmark-compression.md) | IRT safety-bench compression (K225) | draft |
+| [prediction-market-short-horizon-velocity](concepts/prediction-market-short-horizon-velocity.md) | 15-min PM velocity (K225) | draft |
+
 ### K224 ingest (2026-08-05 evening)
 
 | Page | Summary | Maturity |

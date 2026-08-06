@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-08-06] ingest | K225 — URL+tech-stack evals, arXiv BiHAA/Argus/IRT, Macro/EH/Wu/LS
+
+- **Evals:** sie + book-to-skill Integrate; loopx/shepherd/DeepCode/pi-llm-wiki/ai-sales Extract; mubeng Watch; ScienceClaw/bountyforge/Argus NULL NO-GO; KiroCrew Apache size-skip (~395MB); L0p4Map GPL patterns-only; claude-red MIT extract-only; Wan2GP NOASSERTION image-gen brief
+- **Papers:** RC-GRPO refusal; ArtAnno BiHAA (K252); SparseDitto; IRT AI safety; Argus persist/pivot (K253, no clone)
+- **Macro Aug 6:** GDX room $87–90 / Gold ~$4500 / GOOGL dip $348 / chem weeds (ASIX sell; CF/DOW/IPI/LYB/NTR pending) → GuruWatcher
+- **EH:** Kalshi 15-min crypto/gold/silver + FanDuel Predicts → Crypto.com + $50m MM ambition → pm + gambling
+- **Wu:** Citadel $400m Crypto.com; Alpaca $135m; Prime Intellect $130m → xsp awareness
+- **LS:** Discovery Loop (Dean/Ghemawat/Vinyals/Quoc) → CCC
+- **Phase-0 ~308MB** (book-to-skill, sie, ai-sales, pi-llm-wiki, shepherd, loopx, mubeng, DeepCode, obsidian-skills)
+- Briefs → Atto / GuruWatcher / cyber lab / CCC / poker / xsp+pm prod / gambling / image-gen
+
 ## [2026-08-05] cadence | wiki gap detect Tier 1
 
 - Ran `bash scripts/run_wiki_gap_detect.sh` — report `.local/reports/wiki-gap-detect-2026-08-05.txt`

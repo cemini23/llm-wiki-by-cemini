@@ -62,12 +62,15 @@ related:
   - concepts/guruwatcher-newsletter-claim-ledger.md
   - entities/tools/guruwatcher.md
   - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
+  - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
 maturity: core
 created: 2026-06-17
-updated: 2026-08-05
+updated: 2026-08-06
 ---
 
 ## Relations
+
+- @sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
 
 - @sources/newsletter-rss-sparktoro-2026-08-05-v3.md
 

@@ -264,13 +264,19 @@ related:
   - sources/arxiv-2607.27578-prompt-graph-engineering-2026-07-31.md
   - sources/arxiv-2607.28513-creative-transformation-literary-texts-2026-07-31.md
   - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
+  - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
+  - sources/eval-tech-stack-opportunity-2026-08-06.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-08-05
+updated: 2026-08-06
 ---
 
 ## Relations
+
+- @sources/eval-tech-stack-opportunity-2026-08-06.md
+
+- @sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
 
 - @entities/tools/addyosmani-agent-skills.md
 

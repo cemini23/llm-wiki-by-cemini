@@ -28,12 +28,16 @@ related:
   - sources/macro-charts-paid-forward-2026-07-30-korea-semis.md
   - sources/substack-rss-wublock-2026-07-30-hidden-price-of-treasuries.md
   - sources/macro-charts-paid-forward-2026-07-31-situational-awareness-kospi.md
+  - sources/macro-charts-paid-forward-2026-08-06.md
+  - entities/tools/mubeng.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-08-05
+updated: 2026-08-06
 ---
 
 ## Relations
+
+- @sources/macro-charts-paid-forward-2026-08-06.md
 
 - @entities/tools/jumpcutter.md
 

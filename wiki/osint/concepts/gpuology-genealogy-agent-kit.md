@@ -159,12 +159,21 @@ related:
   - entities/tools/mineru.md
   - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
   - entities/tools/pullmd.md
+  - entities/tools/sie-superlinked.md
+  - entities/tools/kurrentschrift.md
+  - entities/tools/openapi-directory.md
+  - entities/tools/pi-llm-wiki.md
+  - entities/tools/rclone.md
+  - sources/eval-github-ocr-repositories-2026-08-01.md
+  - sources/eval-github-repo-revenue-analysis-htr-2026-08-01.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-08-05
+updated: 2026-08-06
 ---
 
 ## Relations
+
+- @entities/tools/sie-superlinked.md
 
 - @entities/tools/gdpevo.md
 

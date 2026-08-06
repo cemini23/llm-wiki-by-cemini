@@ -77,13 +77,19 @@ related:
   - sources/eval-github-repo-revenue-analysis-2026-07-31-panel-vibe.md
   - sources/eval-github-repo-revenue-opportunity-analysis-2026-07-31-pii-privacy.md
   - sources/newsletter-rss-tldrsec-2026-07-30-339-hf-agentbaiting.md
+  - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
+  - sources/eval-tech-stack-opportunity-2026-08-06.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-08-05
+updated: 2026-08-06
 ---
 
 ## Relations
+
+- @sources/eval-tech-stack-opportunity-2026-08-06.md
+
+- @sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
 
 - @entities/tools/jumpcutter.md
 
