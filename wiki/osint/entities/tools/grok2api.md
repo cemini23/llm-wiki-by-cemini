@@ -1,23 +1,37 @@
 ---
-title: grok2api — Grok web → OpenAI-compatible bridge
+title: grok2api — Multi-account Grok API gateway (Extract → cyber lab; prior Watch)
 type: entity
-tags: [tool, api-bridge, osint, k163, watch]
-keywords: [grok, cookie, Cloudflare Workers, ToS]
+tags: [tool, cyber, grok, k226, k163, mit]
+keywords: [grok2api, xAI gateway, multi-account, cookie bridge]
 related:
+  - sources/eval-url-batch-project-fit-2026-08-07.md
+  - sources/newsletter-rss-tldrsec-340-2026-08-07.md
   - sources/eval-github-repo-revenue-evaluation-2026-07-14.md
   - entities/tools/agent-reach.md
+  - concepts/cemini-license-posture.md
 maturity: draft
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-08-07
 ---
+
+## Relations
+
+- @sources/eval-url-batch-project-fit-2026-08-07.md — K226 Extract → cyber lab
+- @sources/newsletter-rss-tldrsec-340-2026-08-07.md
+- @sources/eval-github-repo-revenue-evaluation-2026-07-14.md — K163 Watch (cookie/ToS)
+- @entities/tools/agent-reach.md — cookie-auth hazard class
+- @concepts/cemini-license-posture.md
+
+## Raw Concept
+
+K163 Watch (cookie bridge / ToS). K226 re-eval → **GO Extract** for local-abliterated-lab gateway patterns. Clone `.local/adopts/grok2api` (~12MB).
 
 ## Narrative
 
-| Field | Value |
-|-------|-------|
-| **Repo** | [chenyme/grok2api](https://github.com/chenyme/grok2api) |
-| **License** | MIT (~5.7k★) |
-| **Verdict** | **Watch / no install** — session-cookie bridge; ToS + ban risk (Agent-Reach class) |
-| **Docx** | Integrate → **downgraded** on ingest |
+- **URL:** https://github.com/chenyme/grok2api
+- **License:** MIT (`gh api`)
+- **K163:** Downgraded Integrate→**Watch** as session-cookie bridge / ToS risk (Agent-Reach class).
+- **K226:** Multi-account Grok Build/Web/Console API gateway — lab model-routing Extract. Respect xAI ToS; secrets never in handoffs; not a TipDrop Discord bot; do not wire cookie exfil to prod.
+- **Verdict:** **GO Extract** (lab) with **Watch** posture on cookie/auth paths.
 
-Do not wire into xsp-killer or prod briefs pipeline until official API path exists.
+[Sources: eval-github-repo-revenue-evaluation-2026-07-14; Project URL Revenue Fit Analysis.docx URL 5]

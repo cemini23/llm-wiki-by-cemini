@@ -16,6 +16,8 @@ updated: 2026-07-14
 
 ## Relations
 
+- @entities/tools/grok2api.md — cookie-auth hazard class (K163/K226)
+
 - @sources/eval-github-repos-plan-multi-wiki-2026-06-29.md — K134 URL 7
 - @sources/multi-wiki-url-evaluation-2026-07-03.md — K142 re-audit; direct integration Defer, wrapper-only Adopt
 - @concepts/polymarket-bot-architecture.md — PM/Kalshi sentiment ingest steal

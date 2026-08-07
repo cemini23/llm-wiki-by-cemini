@@ -5,6 +5,10 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/substack-rss-capital-flows-2026-08-06-golden-era-teaser.md
+  - sources/substack-rss-wublock-2026-08-07-clarity-act.md
+  - sources/arxiv-2608.05373-options-manipulation-velocity-2026-08-07.md
+  - sources/arxiv-2608.05009-heston-weak-form-2026-08-07.md
   - sources/substack-rss-klement-2026-08-05-data-centre-reality-check.md
   - sources/substack-rss-capital-flows-2026-08-05-fx-positioning.md
   - sources/macro-charts-paid-forward-2026-08-05-spx-sox-gdx-yields.md
@@ -105,10 +109,18 @@ related:
   - sources/substack-rss-capital-flows-2026-07-30-video-breakdown-warsh.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-08-05
+updated: 2026-08-07
 ---
 
 ## Relations
+
+- @sources/substack-rss-capital-flows-2026-08-06-golden-era-teaser.md — Capital Flows teaser (K226)
+
+- @sources/substack-rss-wublock-2026-08-07-clarity-act.md — CLARITY delay (K226)
+
+- @sources/arxiv-2608.05373-options-manipulation-velocity-2026-08-07.md — options manip velocity (K226)
+
+- @sources/arxiv-2608.05009-heston-weak-form-2026-08-07.md — Heston weak-form (K226)
 
 - @sources/substack-rss-capital-flows-2026-08-05-fx-positioning.md
 

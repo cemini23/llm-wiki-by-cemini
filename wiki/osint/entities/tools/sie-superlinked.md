@@ -4,6 +4,7 @@ type: entity
 tags: [tool, integrate, apache-2, k225, atto]
 keywords: [superlinked, sie, semantic index, genealogy, KG]
 related:
+  - sources/eval-url-batch-project-fit-2026-08-07.md
   - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
   - entities/tools/book-to-skill.md
   - concepts/gpuology-genealogy-agent-kit.md
@@ -11,12 +12,14 @@ related:
   - entities/tools/pi-llm-wiki.md
 maturity: draft
 created: 2026-08-06
-updated: 2026-08-06
+updated: 2026-08-07
 phase_0_verdict: INTEGRATE — Apache-2.0 K225 (~158MB)
 wire_status: pending
 ---
 
 ## Relations
+
+- @sources/eval-url-batch-project-fit-2026-08-07.md — K226 Watch reaffirm (already Integrate K225)
 
 - @entities/tools/pi-llm-wiki.md
 

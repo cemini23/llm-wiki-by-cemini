@@ -115,6 +115,17 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - Watch only (no clone): `antirez/ds4`, `cloudflare/computer`, Flue 2.0.
 - Reaffirm: `worldmonitor` AGPL Watch (K182) — do not re-clone under `.local/adopts/`.
 
+## K226 — semantica (Atto) + MiroFish AGPL (GW) + lab agents + papers
+
+- `semantica` (MIT, `.local/adopts/semantica` ~39MB) = graph-native KG / context **Integrate** for Atto FIND — never cloud-index Barone PII; Magika + PII strip; human-gated `truth.ged`; Transkribus sole HTR.
+- Armenian Paris IIIF geocode (2608.05911) + rule-intensive standards review (2608.06312) = Atto **steal patterns** for press/ad maps + citizenship pack checklists — HITL; no unsupervised legal advice.
+- `MiroFish` (AGPL-3.0, `.local/adopts/MiroFish` ~16MB) = GuruWatcher swarm/predict **AGPL isolate** — patterns only; never vendor into proprietary GW; alert-only; never orders; never auto-rewrite `watches.json`.
+- `prime-agent` (MIT ~29MB) + `grok2api` (MIT ~12MB) + `celld` (Apache ~3.8MB) = local-abliterated-lab **Integrate/Extract/Watch** — authorized assist only; celld behind WireGuard/Tailscale; no TipDrop; no prod trading hosts.
+- `anton` (MIT ~7.6MB) + `google-skills` (Apache ~6.2MB) = CCC **Watch/Context**; `Legendary_OSINT` (CC0) = OSINT catalog Context.
+- **NO-GO clone:** `nduckmink/arkon` NOASSERTION; `unclebob/swarm-forge` NULL; `mehrshad-sdtn/CircuitSteer` NULL; AutoGPT NOASSERTION+size; `jdx/mise` size-skip Context.
+- HarnessOpt-Bench + Latent Space Muse/Agent Plugins → CCC harness-first framing; AV-AIVAT → Poker Arena eval-cost steal; Heston/options-manip + Wu CLARITY → **xsp** awareness; ForecastEx volume contract → **pm**; tldr #340 Figma/S3 Vectors → cyber lab.
+- Reaffirm: sie / pi-llm-wiki / marketingskills / witr already filed — no mandatory re-clone.
+
 ## K225 — sie / book-to-skill / pi-llm-wiki / shepherd / loopx / DeepCode / Macro Aug 6
 
 - `sie` (Apache-2.0, `.local/adopts/sie` ~158MB) = Superlinked semantic entity index **Integrate** for Atto KG / FIND — never index Barone PII into third-party clouds; Magika + PII strip first; human-gated `truth.ged` merge unchanged.

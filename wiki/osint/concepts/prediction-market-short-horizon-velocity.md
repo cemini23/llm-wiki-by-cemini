@@ -4,14 +4,17 @@ type: concept
 tags: [prediction-markets, kalshi, polymarket, k225, gambling-cross]
 keywords: [15-minute markets, velocity, crypto, gold, market-making]
 related:
+  - sources/substack-rss-event-horizon-2026-08-07-forecastEx-volume.md
   - sources/substack-rss-event-horizon-2026-08-06-15min-prediction-markets.md
   - sources/substack-rss-wublock-2026-08-06-july-vc-citadel-crypto.md
 maturity: draft
 created: 2026-08-06
-updated: 2026-08-06
+updated: 2026-08-07
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-08-07-forecastEx-volume.md — ForecastEx volume contract (K226)
 
 - @sources/substack-rss-event-horizon-2026-08-06-15min-prediction-markets.md
 - @sources/substack-rss-wublock-2026-08-06-july-vc-citadel-crypto.md

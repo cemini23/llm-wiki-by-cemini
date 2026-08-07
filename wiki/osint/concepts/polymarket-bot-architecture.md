@@ -4,6 +4,7 @@ type: concept
 tags: [concept, polymarket, trading-bot, prediction-markets, websocket, backtesting, latency, cemini]
 keywords: [polymarket, CLOB, websocket, FAK, GTC, latency, hot path, HMAC, backtesting, 6-layer websocket, market maker, ladder bot, NSF, fishy resolution]
 related:
+  - sources/substack-rss-event-horizon-2026-08-07-forecastEx-volume.md
   - entities/tools/omlx.md
   - sources/substack-rss-event-horizon-2026-07-27-netflix-nevada-pm.md
   - sources/substack-rss-wublock-2026-07-27-htx-uk-sanctions.md
@@ -117,10 +118,12 @@ related:
   - entities/tools/amnezia-client.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-07-29
+updated: 2026-08-07
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-08-07-forecastEx-volume.md — ForecastEx volume (K226)
 
 - @entities/tools/sportsbook-api-evangelist.md — K198 graph fix
 

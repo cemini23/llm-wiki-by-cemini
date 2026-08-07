@@ -4,6 +4,7 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher, local-abliterated-lab]
 keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
 related:
+  - sources/eval-url-batch-project-fit-2026-08-07.md
   - sources/eval-url-batch-agentic-edge-security-2026-08-05.md
   - sources/substack-rss-klement-2026-08-05-data-centre-reality-check.md
   - sources/newsletter-rss-sparktoro-2026-08-05-v3.md
@@ -65,10 +66,12 @@ related:
   - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
 maturity: core
 created: 2026-06-17
-updated: 2026-08-06
+updated: 2026-08-07
 ---
 
 ## Relations
+
+- @sources/eval-url-batch-project-fit-2026-08-07.md — K226 routing cohort
 
 - @sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
 

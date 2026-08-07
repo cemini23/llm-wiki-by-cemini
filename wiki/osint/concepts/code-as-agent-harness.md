@@ -4,6 +4,16 @@ type: concept
 tags: [concept, agent-harness, coding-agents, agentic-ai, survey-synthesis]
 keywords: [code-as-agent-harness, harness-interface, harness-mechanisms, multi-agent-coordination, verification, stateful-agents]
 related:
+  - sources/newsletter-rss-tldrsec-340-2026-08-07.md
+  - sources/arxiv-2608.06362-av-aivat-2026-08-07.md
+  - sources/arxiv-2608.06301-harnessopt-bench-2026-08-07.md
+  - sources/newsletter-rss-latent-space-2026-08-07-amd-taalas-muse.md
+  - sources/arxiv-2608.05909-mmaligner-2026-08-07.md
+  - entities/tools/google-skills.md
+  - entities/tools/anton-mindsdb.md
+  - sources/arxiv-2608.05732-circuitsteer-2026-08-07.md
+  - concepts/anytime-valid-agent-eval-iigames.md
+  - concepts/harness-optimization-bench.md
   - sources/newsletter-rss-latent-space-2026-07-28-codex-chatgpt-work.md
   - sources/newsletter-rss-pragmatic-engineer-2026-07-28-inside-anthropic.md
   - entities/tools/outlines.md
@@ -81,10 +91,30 @@ related:
   - concepts/skill-regression-tax.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-07-28
+updated: 2026-08-07
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-tldrsec-340-2026-08-07.md — tldr #340 agents (K226)
+
+- @sources/arxiv-2608.06362-av-aivat-2026-08-07.md — AV-AIVAT (K226)
+
+- @sources/arxiv-2608.06301-harnessopt-bench-2026-08-07.md — HarnessOpt-Bench (K226)
+
+- @sources/newsletter-rss-latent-space-2026-08-07-amd-taalas-muse.md — Muse/Agent Plugins (K226)
+
+- @sources/arxiv-2608.05909-mmaligner-2026-08-07.md — MMAligner (K226)
+
+- @entities/tools/google-skills.md — google/skills Context (K226)
+
+- @entities/tools/anton-mindsdb.md — anton Watch (K226)
+
+- @sources/arxiv-2608.05732-circuitsteer-2026-08-07.md — CircuitSteer (NO-GO clone)
+
+- @concepts/anytime-valid-agent-eval-iigames.md — AV-AIVAT cheap II-game eval (K226)
+
+- @concepts/harness-optimization-bench.md — HarnessOpt-Bench (K226)
 
 - @sources/newsletter-rss-latent-space-2026-07-28-codex-chatgpt-work.md — ChatGPT Work shared harness
 - @sources/newsletter-rss-pragmatic-engineer-2026-07-28-inside-anthropic.md — Managed Agents / verify-heavy

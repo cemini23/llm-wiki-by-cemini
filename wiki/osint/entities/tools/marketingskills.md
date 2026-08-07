@@ -4,16 +4,18 @@ type: entity
 tags: [tool, claude-code, skills, marketing, adopt-tier, seo-wiki, workflow, cross-wiki-route]
 keywords: [marketingskills, marketing skills, claude code plugin, .agents/skills/, content automation, image generation skill]
 related:
+  - sources/eval-url-batch-project-fit-2026-08-07.md
   - sources/multi-wiki-link-eval-prompt-2026-05-13.md
   - sources/eval-multi-wiki-github-mcp-2026-07-05.md
   - concepts/tool-evaluation-framework.md
 maturity: draft
 created: 2026-05-13
-updated: 2026-07-05
+updated: 2026-08-07
 ---
 
 ## Relations
 
+- `@sources/eval-url-batch-project-fit-2026-08-07.md` — K226 Extract refresh → Atto GTM
 - `@sources/multi-wiki-link-eval-prompt-2026-05-13.md` — origin source (Doc 2, K42), Adopt-tier
 - `@sources/eval-multi-wiki-github-mcp-2026-07-05.md` — K146 marketing-loops steal refresh for TipDrop M6
 - `@concepts/tool-evaluation-framework.md` — methodology
@@ -43,3 +45,7 @@ Repo: `coreyhaines31/marketingskills` — **MIT**, ~36k stars (K146 docx), activ
 **Verdict: CONDITIONAL-GO (SEO/workflow steal-from)** — cherry-pick skill structures; keep SEO-specific implementation in `@seo-wiki`.
 
 [Source: Multi-Wiki Link Evaluation Prompt.docx URL 2 (retrieved 2026-05-13)]
+
+### K226 refresh
+
+Eval reaffirms **Extract → Atto** (MIT). TipDrop retired — route GTM steals to Atto outreach only; human approve publish.

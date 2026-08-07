@@ -7,6 +7,38 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K226 ingest (2026-08-07)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-url-batch-project-fit-2026-08-07](sources/eval-url-batch-project-fit-2026-08-07.md) | URL eval — semantica/prime-agent Integrate; MiroFish AGPL; arkon NO-GO (K226) | draft |
+| [arxiv-2608.05009-heston-weak-form-2026-08-07](sources/arxiv-2608.05009-heston-weak-form-2026-08-07.md) | Heston weak-form recovery → xsp (K226) | draft |
+| [arxiv-2608.05373-options-manipulation-velocity-2026-08-07](sources/arxiv-2608.05373-options-manipulation-velocity-2026-08-07.md) | Options manip velocity detector → xsp (K226) | draft |
+| [arxiv-2608.05732-circuitsteer-2026-08-07](sources/arxiv-2608.05732-circuitsteer-2026-08-07.md) | CircuitSteer SAE — NO-GO clone (K226) | draft |
+| [arxiv-2608.05909-mmaligner-2026-08-07](sources/arxiv-2608.05909-mmaligner-2026-08-07.md) | MMAligner MLLM safety → image/CCC (K226) | draft |
+| [arxiv-2608.05911-armenian-paris-geocoding-2026-08-07](sources/arxiv-2608.05911-armenian-paris-geocoding-2026-08-07.md) | Armenian Paris IIIF geocode → Atto (K226) | draft |
+| [arxiv-2608.06301-harnessopt-bench-2026-08-07](sources/arxiv-2608.06301-harnessopt-bench-2026-08-07.md) | HarnessOpt-Bench → CCC (K226) | draft |
+| [arxiv-2608.06312-rule-intensive-standards-2026-08-07](sources/arxiv-2608.06312-rule-intensive-standards-2026-08-07.md) | Rule-intensive standards review → Atto (K226) | draft |
+| [arxiv-2608.06362-av-aivat-2026-08-07](sources/arxiv-2608.06362-av-aivat-2026-08-07.md) | AV-AIVAT cheap II-game eval → poker (K226) | draft |
+| [newsletter-rss-latent-space-2026-08-07-amd-taalas-muse](sources/newsletter-rss-latent-space-2026-08-07-amd-taalas-muse.md) | AMD/Taalas + Muse + Agent Plugins → CCC (K226) | draft |
+| [newsletter-rss-tldrsec-340-2026-08-07](sources/newsletter-rss-tldrsec-340-2026-08-07.md) | tl;dr #340 agent IR/Figma → cyber (K226) | draft |
+| [substack-rss-event-horizon-2026-08-07-forecastEx-volume](sources/substack-rss-event-horizon-2026-08-07-forecastEx-volume.md) | ForecastEx PM volume contract → pm (K226) | draft |
+| [substack-rss-wublock-2026-08-07-clarity-act](sources/substack-rss-wublock-2026-08-07-clarity-act.md) | CLARITY delay + Strategy BTC → xsp (K226) | draft |
+| [substack-rss-capital-flows-2026-08-06-golden-era-teaser](sources/substack-rss-capital-flows-2026-08-06-golden-era-teaser.md) | Capital Flows golden-era teaser stub (K226) | draft |
+| [semantica](entities/tools/semantica.md) | MIT graph KG Integrate → Atto (K226) | draft |
+| [prime-agent](entities/tools/prime-agent.md) | MIT RLM Integrate → cyber lab (K226) | draft |
+| [mirofish](entities/tools/mirofish.md) | AGPL MiroFish Extract patterns → GW (K226) | draft |
+| [grok2api](entities/tools/grok2api.md) | MIT Grok gateway Extract → lab (K226) | draft |
+| [celld](entities/tools/celld.md) | Apache Durable Objects Watch → lab (K226) | draft |
+| [anton-mindsdb](entities/tools/anton-mindsdb.md) | MIT anton Watch → CCC (K226) | draft |
+| [legendary-osint](entities/tools/legendary-osint.md) | CC0 OSINT catalog Context (K226) | draft |
+| [google-skills](entities/tools/google-skills.md) | Apache google/skills Context → CCC (K226) | draft |
+| [circuitsteer](entities/tools/circuitsteer.md) | CircuitSteer NO-GO null SPDX (K226) | draft |
+| [diaspora-press-iiif-geocoding](concepts/diaspora-press-iiif-geocoding.md) | IIIF diaspora press → map (K226) | draft |
+| [harness-optimization-bench](concepts/harness-optimization-bench.md) | HarnessOpt-Bench pattern (K226) | draft |
+| [rule-intensive-document-review](concepts/rule-intensive-document-review.md) | Standards/citizenship review (K226) | draft |
+| [anytime-valid-agent-eval-iigames](concepts/anytime-valid-agent-eval-iigames.md) | AV-AIVAT poker eval cost (K226) | draft |
+
 ### K225 ingest (2026-08-06)
 
 | Page | Summary | Maturity |

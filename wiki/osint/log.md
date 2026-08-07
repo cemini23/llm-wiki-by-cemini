@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-08-07] ingest | K226 — URL fit eval, arXiv Heston/manip/CircuitSteer/MMAligner/Armenian/HarnessOpt/standards/AV-AIVAT, LS/tldr/EH/Wu/CF
+
+- **Eval:** semantica + prime-agent Integrate; MiroFish AGPL Extract; grok2api Extract; celld/anton Watch; Legendary_OSINT + google-skills Context; arkon/swarm-forge/AutoGPT/CircuitSteer NO-GO; sie/pi-llm-wiki/marketingskills/witr refresh
+- **Papers:** Heston weak-form + options manip velocity → xsp; CircuitSteer NO-GO; MMAligner → image/CCC; Armenian Paris IIIF → Atto; HarnessOpt-Bench → CCC; rule-intensive standards → Atto; AV-AIVAT → poker
+- **RSS:** LS AMD/Taalas + Muse/Agent Plugins → CCC; tldr #340 Figma agents/S3 Vectors → cyber; EH ForecastEx volume → pm; Wu CLARITY delay → xsp; Capital Flows teaser stub
+- **Phase-0 ~114MB** (semantica, prime-agent, grok2api, celld, MiroFish, anton, google-skills, Legendary_OSINT)
+- Briefs → Atto / GuruWatcher / cyber lab / CCC / poker / xsp+pm prod / gambling; SEO Context note
+- **GHA Actions budget empty** — local lint/pre-commit is the gate (do not expect Wiki Lint CI green)
+
+## [2026-08-07] phase1 | K226 surface wires (Atto / GuruWatcher / cyber)
+
+- OSINT `osint-phase1-adopt-wires.mdc` K226 — semantica Integrate; MiroFish AGPL isolate; prime-agent/grok2api/celld lab; Armenian IIIF + standards review Atto; AV-AIVAT poker; ForecastEx pm; CLARITY xsp
+- Surface: `atto-k226-phase1-wires.mdc` · `guruwatcher-k226-phase1-wires.mdc`
+
 ## [2026-08-06] ingest | K225 — URL+tech-stack evals, arXiv BiHAA/Argus/IRT, Macro/EH/Wu/LS
 
 - **Evals:** sie + book-to-skill Integrate; loopx/shepherd/DeepCode/pi-llm-wiki/ai-sales Extract; mubeng Watch; ScienceClaw/bountyforge/Argus NULL NO-GO; KiroCrew Apache size-skip (~395MB); L0p4Map GPL patterns-only; claude-red MIT extract-only; Wan2GP NOASSERTION image-gen brief

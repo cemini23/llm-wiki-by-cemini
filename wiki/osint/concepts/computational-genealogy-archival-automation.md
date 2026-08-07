@@ -4,6 +4,9 @@ type: concept
 tags: [genealogy, archival, automation, italy, antenati, draft]
 keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double Metaphone, kinship graph]
 related:
+  - sources/arxiv-2608.05911-armenian-paris-geocoding-2026-08-07.md
+  - concepts/rule-intensive-document-review.md
+  - concepts/diaspora-press-iiif-geocoding.md
   - sources/arxiv-2607.29677-extractbench-2026-08-03.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/gemini-gpuology-genealogy-business-analysis-2026-07-20.md
@@ -67,10 +70,16 @@ related:
   - sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-07-28
+updated: 2026-08-07
 ---
 
 ## Relations
+
+- @sources/arxiv-2608.05911-armenian-paris-geocoding-2026-08-07.md — Armenian Paris IIIF (K226)
+
+- @concepts/rule-intensive-document-review.md — K226 standards/citizenship review patterns
+
+- @concepts/diaspora-press-iiif-geocoding.md — K226 IIIF diaspora-press geocode steal
 
 - @sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md — K199
 

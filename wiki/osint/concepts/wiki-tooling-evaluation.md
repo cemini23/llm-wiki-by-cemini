@@ -5,6 +5,7 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-url-batch-project-fit-2026-08-07.md
   - sources/eval-url-batch-agentic-edge-security-2026-08-05.md
   - entities/tools/deepagents.md
   - entities/tools/hermes-office.md
@@ -269,10 +270,12 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-08-06
+updated: 2026-08-07
 ---
 
 ## Relations
+
+- @sources/eval-url-batch-project-fit-2026-08-07.md — K226 URL fit batch
 
 - @sources/eval-tech-stack-opportunity-2026-08-06.md
 

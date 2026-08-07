@@ -8,7 +8,8 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
-## Active workstreams (2026-08-06 — Atto #1 · GuruWatcher #2 · TipDrop retired)
+<!-- superseded 2026-08-07 — see Current state K226 -->
+## Active workstreams (2026-08-07 — Atto #1 · GuruWatcher #2 · TipDrop retired)
 
 Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/briefs/`). **GuruWatcher** is Priority #2 (`../GuruWatcher/briefs/`). Everything else is behind both (`scripts/active_project_brief_targets.yaml`). **TipDrop / David kit briefs retired** — do not push to `tipdrop-workspace-kit`. **Local abliterated AI lab** takes that research-queue slot (`../Cybersecurity wiki/briefs/`). Eval prompt: CCC `prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` **v10.5** (`atto` + `guruwatcher` + `genealogy` + `local-abliterated-lab` overlaps).
 
@@ -24,6 +25,14 @@ Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/brie
 | behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
 | behind | **Local abliterated AI lab** — pentest assist / operator lab | `../Cybersecurity wiki/briefs/` | No — authorized assist only |
 | retired | ~~TipDrop / David kit~~ | — | Do not route (2026-08-05) |
+
+## Current state (2026-08-07 — K226)
+
+- **K226 ingest** — Project URL Revenue Fit eval + 8 arXiv + LS/tldr/EH/Wu/Capital Flows. Phase-0 ~114MB (semantica, prime-agent, grok2api, celld, MiroFish AGPL, anton, google-skills, Legendary_OSINT). arkon/swarm-forge/AutoGPT/CircuitSteer NO-GO; mise size-skip.
+- **K226 Phase-1** — OSINT policy + Atto/GuruWatcher surface wires; briefs routed Atto/GW/cyber/CCC/poker/xsp+pm.
+- **GHA:** Actions budget empty — rely on local `wiki_lint` / pre-commit; do not expect remote Wiki Lint green.
+
+## Current state (2026-08-06 — K225)
 
 ## Current state (2026-08-06 — K225)
 
