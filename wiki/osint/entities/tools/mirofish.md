@@ -9,6 +9,9 @@ related:
 maturity: draft
 created: 2026-08-07
 updated: 2026-08-07
+wire_status: policy_wired
+wire_target: GuruWatcher .cursor/rules/guruwatcher-k226-phase1-wires.mdc
+wire_note: AGPL isolate / patterns only; never vendor into proprietary GW
 ---
 
 ## Relations

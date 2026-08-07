@@ -9,6 +9,8 @@ related:
 maturity: draft
 created: 2026-08-07
 updated: 2026-08-07
+wire_status: wont_wire
+wire_note: Deno Durable-Objects Watch REFERENCE; lab perimeter only; OOD OSINT stack
 ---
 
 ## Relations

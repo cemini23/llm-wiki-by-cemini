@@ -12,6 +12,8 @@ related:
 maturity: draft
 created: 2026-07-14
 updated: 2026-08-07
+wire_status: wont_wire
+wire_note: Lab Extract only; cookie/ToS hazard class; no prod / TipDrop wire
 ---
 
 ## Relations

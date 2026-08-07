@@ -9,10 +9,11 @@
 - Briefs → Atto / GuruWatcher / cyber lab / CCC / poker / xsp+pm prod / gambling; SEO Context note
 - **GHA Actions budget empty** — local lint/pre-commit is the gate (do not expect Wiki Lint CI green)
 
-## [2026-08-07] phase1 | K226 surface wires (Atto / GuruWatcher / cyber)
+## [2026-08-07] phase1 | K226 surface wires (Atto / GuruWatcher / cyber / CCC)
 
 - OSINT `osint-phase1-adopt-wires.mdc` K226 — semantica Integrate; MiroFish AGPL isolate; prime-agent/grok2api/celld lab; Armenian IIIF + standards review Atto; AV-AIVAT poker; ForecastEx pm; CLARITY xsp
-- Surface: `atto-k226-phase1-wires.mdc` · `guruwatcher-k226-phase1-wires.mdc`
+- Surface alwaysApply: `atto-k226-phase1-wires.mdc` · `guruwatcher-k226-phase1-wires.mdc` · `@cybersecurity-wiki/.cursor/rules/cyber-k226-phase1-wires.mdc` · `@ccc-wiki/.cursor/rules/ccc-k226-phase1-wires.mdc`
+- Inventory close: MiroFish `policy_wired` (GW AGPL isolate); semantica `policy_wired` (Atto FIND/KG); prime-agent / grok2api / celld / anton / google-skills / Legendary_OSINT `wont_wire`
 
 ## [2026-08-06] ingest | K225 — URL+tech-stack evals, arXiv BiHAA/Argus/IRT, Macro/EH/Wu/LS
 
