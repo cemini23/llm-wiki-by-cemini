@@ -17,6 +17,7 @@ import base64
 import email
 import json
 import re
+import socket
 import sys
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -25,6 +26,30 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+
+
+def _prefer_ipv4_dns() -> None:
+    """httplib2 on some macOS networks fails IPv6 to gmail.googleapis.com intermittently.
+
+    Prefer AF_INET so the LaunchAgent poller does not hang on broken v6 routes.
+    """
+    if getattr(socket, "_cemini_ipv4_first", False):
+        return
+    _orig = socket.getaddrinfo
+
+    def _getaddrinfo(host, port, family=0, type=0, proto=0, flags=0):  # noqa: A002
+        if family == 0:
+            try:
+                return _orig(host, port, socket.AF_INET, type, proto, flags)
+            except socket.gaierror:
+                pass
+        return _orig(host, port, family, type, proto, flags)
+
+    socket.getaddrinfo = _getaddrinfo  # type: ignore[assignment]
+    socket._cemini_ipv4_first = True  # type: ignore[attr-defined]
+
+
+_prefer_ipv4_dns()
 
 SCRIPTS = Path(__file__).resolve().parent
 if str(SCRIPTS) not in sys.path:
@@ -434,12 +459,18 @@ def main() -> int:
     )
     args = parser.parse_args()
     cfg = load_config()
-    return poll_gmail(
-        cfg,
-        dry_run=args.dry_run,
-        backfill_days=args.backfill_days,
-        recover_processed=args.recover_processed,
-    )
+    try:
+        return poll_gmail(
+            cfg,
+            dry_run=args.dry_run,
+            backfill_days=args.backfill_days,
+            recover_processed=args.recover_processed,
+        )
+    except SystemExit:
+        raise
+    except Exception as exc:  # noqa: BLE001 — LaunchAgent must exit cleanly
+        print(f"ERROR: Macro Charts Gmail poll failed: {type(exc).__name__}: {exc}", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":
