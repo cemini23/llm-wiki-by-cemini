@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-08-08] ops | /route host → private agent-toolkit
+
+- Canon scripts: `~/Projects/agent-toolkit` (`ROUTE_KIT`); tipdrop kit redirect-only
+- Prod + egress: `/opt/cemini/agent-toolkit`; SIP/verify/escalate wired
+- Updated `@concepts/llm-routing-deepseek-openrouter-failover.md`
+
 ## [2026-08-08] ingest | K228 — portfolio+revenue-stack evals, KV cache paper, Osmani quality, Wu/CF
 
 - **Evals:** pdf-inspector Integrate reaffirm; opennews-mcp → GW; pi + Codex-Orchestration + bugbounty-lab101 GO; godoxy NOASSERTION NO-GO; FUXA/OctoBot/buzz/RustPython size-skip
