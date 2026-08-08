@@ -48,7 +48,9 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         "CEMINI_QUAL_CUTOFF_RANK": "20",
         "CEMINI_PRIZE_CUTOFF_RANK": "20",
         # Dynamic protect — real buffers (999999 disables protect)
-        "CEMINI_QUAL_BUFFER_CHIPS": "1000",
+        # 0 = protect whenever rank<=20 and chips>=#20 (bubble-safe; was 1000 and
+        # left us unlocked at +57 over cutoff on S13). Raise to 500–1000 once fat again.
+        "CEMINI_QUAL_BUFFER_CHIPS": "0",
         "CEMINI_LEAD_BUFFER_CHIPS": "3000",
         "CEMINI_LEAD_RANK": "5",
         "CEMINI_FIRST_RANK": "1",
