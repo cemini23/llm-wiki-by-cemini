@@ -933,6 +933,10 @@ def retrieve_solver_context(
     K244/K245 — clarify-before-solver: when street/stack/regime inputs are
     missing, return a small skip dict instead of launching heavy solver
     helpers. Fail-open: any preflight weirdness keeps the normal path.
+
+    K259 — claim validation + arg-grounding advisory tag (fail-open):
+    membership in a known report shape never authorizes repeating a
+    directional claim without independent evidence.
     """
     try:
         from solver_preflight import solver_inputs_ready
@@ -1040,6 +1044,13 @@ def retrieve_solver_context(
         from inference_regime import tag_inference_regime
 
         ctx = tag_inference_regime(ctx)
+    except Exception:
+        pass
+    try:
+        # K259 — claim validation + arg-grounding advisory (fail-open).
+        from claim_validation import tag_solver_context_claims
+
+        ctx = tag_solver_context_claims(ctx)
     except Exception:
         pass
     return ctx

@@ -27,6 +27,13 @@ Paper metrics are not poker EV.
 
 CASCADE install / cancer genomics runtime.
 
+## Filed (2026-08-08)
+
+- `references/mcp-claim-validation.md`
+- `examples/claim_validation.py`
+- `tests/test_claim_validation.py`
+- Light wire in `cemini_decide.retrieve_solver_context` (fail-open advisory tag)
+
 ## Sources
 
 - CCC wiki `concepts/mcp-claim-validation-and-parameter-grounding.md` (federation K259 policy wire)
