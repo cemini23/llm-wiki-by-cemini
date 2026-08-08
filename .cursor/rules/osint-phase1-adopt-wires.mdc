@@ -115,6 +115,16 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - Watch only (no clone): `antirez/ds4`, `cloudflare/computer`, Flue 2.0.
 - Reaffirm: `worldmonitor` AGPL Watch (K182) — do not re-clone under `.local/adopts/`.
 
+## K228 — opennews-mcp (GW) + pi (CCC) + lab Extracts + pdf-inspector reaffirm
+
+- `opennews-mcp` (MIT, `.local/adopts/opennews-mcp` ~660KB) = crypto/macro news MCP **Integrate** for GuruWatcher — **alert-only**; token hygiene; never orders; never auto-rewrite `watches.json`.
+- `pdf-inspector` (MIT, already adopted) = Atto Integrate **reaffirm** — scanned-vs-text before OCR; Magika; Transkribus sole HTR.
+- `pi-earendil` (MIT ~27MB) + `pi-peer` (Watch) = CCC harness Integrate + multiagent messaging Watch (Zawinski).
+- `Codex-Orchestration` + `bugbounty-lab101` (MIT) = cyber lab **Extract** — authorized assist only.
+- `ai-website-cloner-template` (MIT) = CCC Watch.
+- **NO-GO / size-skip:** `godoxy` NOASSERTION; FUXA / OctoBot / buzz / RustPython size; OctoBot also GPL — no pm wire.
+- Osmani quality gates + KV-cache paper → CCC; Wu HL/Uniswap/ether.fi → **xsp** awareness only.
+
 ## K227 — the-startup (CCC) + sherlock/gosearch (Atto FIND) + omniparse Watch
 
 - `the-startup` (MIT, `.local/adopts/the-startup` ~2.6MB) = Claude Code SDD skills **Integrate** → CCC — supply-chain review + `cursor-security-preflight` before enable; do not auto-write `truth.ged` / `watches.json`.

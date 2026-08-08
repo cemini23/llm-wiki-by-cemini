@@ -4,6 +4,11 @@ type: concept
 tags: [concept, agent-harness, coding-agents, agentic-ai, survey-synthesis]
 keywords: [code-as-agent-harness, harness-interface, harness-mechanisms, multi-agent-coordination, verification, stateful-agents]
 related:
+  - entities/tools/pi-earendil.md
+  - sources/substack-rss-addy-osmani-2026-08-08-agentic-code-quality.md
+  - sources/arxiv-2608.03893-cross-model-kv-cache-2026-08-08.md
+  - concepts/agentic-code-quality-gates.md
+  - concepts/cross-model-kv-cache-transfer.md
   - sources/substack-rss-secpro-2026-08-07-beyond-threat-hunting.md
   - entities/tools/the-startup.md
   - sources/arxiv-2608.05583-judgment-consequence-gap-2026-08-08.md
@@ -101,6 +106,12 @@ updated: 2026-08-08
 ---
 
 ## Relations
+
+- @entities/tools/pi-earendil.md — K228
+
+- @concepts/agentic-code-quality-gates.md — K228
+
+- @concepts/cross-model-kv-cache-transfer.md — K228
 
 - @sources/substack-rss-secpro-2026-08-07-beyond-threat-hunting.md — SecPro #246 (K227)
 

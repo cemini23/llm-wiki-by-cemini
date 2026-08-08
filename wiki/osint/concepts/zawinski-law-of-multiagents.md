@@ -4,6 +4,8 @@ type: concept
 tags: [agents, multiagent, ccc, k227]
 keywords: [Zawinski, agent messaging, coordination channels]
 related:
+  - entities/tools/pi-earendil.md
+  - entities/tools/pi-peer.md
   - sources/newsletter-rss-latent-space-2026-08-08-zawinski-multiagents.md
   - concepts/code-as-agent-harness.md
   - concepts/harness-optimization-bench.md
@@ -14,6 +16,10 @@ updated: 2026-08-08
 ---
 
 ## Relations
+
+- @entities/tools/pi-earendil.md — K228 Integrate
+
+- @entities/tools/pi-peer.md — K228 Watch
 
 - @sources/newsletter-rss-latent-space-2026-08-08-zawinski-multiagents.md
 - @concepts/code-as-agent-harness.md

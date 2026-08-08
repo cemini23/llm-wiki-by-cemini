@@ -5,6 +5,8 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-url-revenue-stack-2026-08-08.md
+  - sources/eval-project-portfolio-url-2026-08-08.md
   - sources/eval-url-revenue-opportunity-2026-08-08.md
   - sources/eval-url-batch-project-fit-2026-08-07.md
   - sources/eval-url-batch-agentic-edge-security-2026-08-05.md
@@ -275,6 +277,10 @@ updated: 2026-08-08
 ---
 
 ## Relations
+
+- @sources/eval-url-revenue-stack-2026-08-08.md — K228
+
+- @sources/eval-project-portfolio-url-2026-08-08.md — K228
 
 - @sources/eval-url-revenue-opportunity-2026-08-08.md — K227
 

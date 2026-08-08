@@ -5,6 +5,8 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/substack-rss-capital-flows-2026-08-08-eow-teaser.md
+  - sources/substack-rss-wublock-2026-08-08-etherfi-uniswap-hl.md
   - sources/substack-rss-capital-flows-2026-08-06-golden-era-teaser.md
   - sources/substack-rss-wublock-2026-08-07-clarity-act.md
   - sources/arxiv-2608.05373-options-manipulation-velocity-2026-08-07.md
@@ -109,10 +111,14 @@ related:
   - sources/substack-rss-capital-flows-2026-07-30-video-breakdown-warsh.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-08-07
+updated: 2026-08-08
 ---
 
 ## Relations
+
+- @sources/substack-rss-capital-flows-2026-08-08-eow-teaser.md — K228 teaser
+
+- @sources/substack-rss-wublock-2026-08-08-etherfi-uniswap-hl.md — K228
 
 - @sources/substack-rss-capital-flows-2026-08-06-golden-era-teaser.md — Capital Flows teaser (K226)
 

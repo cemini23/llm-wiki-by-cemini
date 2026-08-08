@@ -7,6 +7,25 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K228 ingest (2026-08-08 evening)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-project-portfolio-url-2026-08-08](sources/eval-project-portfolio-url-2026-08-08.md) | Portfolio eval — pdf-inspector Integrate; Codex-Orchestration Extract; godoxy NO-GO (K228) | draft |
+| [eval-url-revenue-stack-2026-08-08](sources/eval-url-revenue-stack-2026-08-08.md) | Revenue-stack — opennews-mcp+pi Integrate; bugbounty Extract; OctoBot size-skip (K228) | draft |
+| [arxiv-2608.03893-cross-model-kv-cache-2026-08-08](sources/arxiv-2608.03893-cross-model-kv-cache-2026-08-08.md) | Cross-model KV prefill reuse → CCC (K228) | draft |
+| [substack-rss-addy-osmani-2026-08-08-agentic-code-quality](sources/substack-rss-addy-osmani-2026-08-08-agentic-code-quality.md) | Agentic quality gates → CCC (K228) | draft |
+| [substack-rss-wublock-2026-08-08-etherfi-uniswap-hl](sources/substack-rss-wublock-2026-08-08-etherfi-uniswap-hl.md) | ether.fi/Uniswap/HL July → xsp (K228) | draft |
+| [substack-rss-capital-flows-2026-08-08-eow-teaser](sources/substack-rss-capital-flows-2026-08-08-eow-teaser.md) | Capital Flows EOW teaser stub (K228) | draft |
+| [opennews-mcp](entities/tools/opennews-mcp.md) | MIT news MCP Integrate → GW (K228) | draft |
+| [pi-earendil](entities/tools/pi-earendil.md) | MIT pi harness Integrate → CCC (K228) | draft |
+| [pi-peer](entities/tools/pi-peer.md) | pi-peer Watch multiagent (K228) | draft |
+| [codex-orchestration](entities/tools/codex-orchestration.md) | MIT Codex multi-role Extract → lab (K228) | draft |
+| [bugbounty-lab101](entities/tools/bugbounty-lab101.md) | MIT lab kit Extract → cyber (K228) | draft |
+| [ai-website-cloner-template](entities/tools/ai-website-cloner-template.md) | MIT site-clone Watch → CCC (K228) | draft |
+| [cross-model-kv-cache-transfer](concepts/cross-model-kv-cache-transfer.md) | KV transfer prefill reuse (K228) | draft |
+| [agentic-code-quality-gates](concepts/agentic-code-quality-gates.md) | Harness quality gates (K228) | draft |
+
 ### K227 ingest (2026-08-08)
 
 | Page | Summary | Maturity |

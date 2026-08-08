@@ -24,6 +24,11 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 | behind | Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No |
 | retired | TipDrop / David kit | — | Do not route |
 
+## Current state (2026-08-08 — K228)
+
+- **K228 ingest** — Project Portfolio + URL Revenue Stack evals + KV-cache paper + Osmani quality + Wu/CF. Phase-0 ~33MB. godoxy NO-GO; FUXA/OctoBot/buzz size-skip.
+- **K228 Phase-1** — Atto pdf-inspector reaffirm; GW opennews-mcp alert-only; CCC pi + quality gates; cyber Codex/bugbounty; xsp Wu HL/Uniswap awareness.
+
 ## Current state (2026-08-08 — K227)
 
 - **K227 ingest** — URL Revenue Opportunity eval + judgment-gap paper + LS Zawinski + Sterling GBP + SecPro #246. Phase-0 ~7MB (the-startup, sherlock, gosearch, omniparse). CyberStrike HF no-download.

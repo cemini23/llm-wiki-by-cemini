@@ -4,6 +4,8 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher, local-abliterated-lab]
 keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
 related:
+  - sources/eval-url-revenue-stack-2026-08-08.md
+  - sources/eval-project-portfolio-url-2026-08-08.md
   - sources/newsletter-rss-sterling-sky-2026-08-07-gbp-state-move.md
   - sources/eval-url-revenue-opportunity-2026-08-08.md
   - sources/eval-url-batch-project-fit-2026-08-07.md
@@ -72,6 +74,10 @@ updated: 2026-08-08
 ---
 
 ## Relations
+
+- @sources/eval-url-revenue-stack-2026-08-08.md — K228
+
+- @sources/eval-project-portfolio-url-2026-08-08.md — K228
 
 - @sources/newsletter-rss-sterling-sky-2026-08-07-gbp-state-move.md — SEO route (K227)
 

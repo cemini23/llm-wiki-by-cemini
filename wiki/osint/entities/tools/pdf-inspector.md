@@ -4,6 +4,7 @@ type: entity
 tags: [tool, phase-0, k218, atto]
 keywords: [pdf-inspector, firecrawl, scanned-pdf]
 related:
+  - sources/eval-project-portfolio-url-2026-08-08.md
   - sources/eval-github-revenue-opportunity-repository-2026-08-02.md
   - entities/tools/transkribus.md
   - entities/tools/google-magika.md
@@ -11,12 +12,14 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
 maturity: draft
 created: 2026-08-02
-updated: 2026-08-02
+updated: 2026-08-08
 wire_status: policy_wired
 wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations
+
+- @sources/eval-project-portfolio-url-2026-08-08.md — K228 Integrate reaffirm
 
 - @sources/eval-github-revenue-opportunity-repository-2026-08-02.md
 - @entities/tools/transkribus.md

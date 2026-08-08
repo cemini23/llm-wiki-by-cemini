@@ -1,5 +1,20 @@
 # Wiki Log
 
+## [2026-08-08] ingest | K228 — portfolio+revenue-stack evals, KV cache paper, Osmani quality, Wu/CF
+
+- **Evals:** pdf-inspector Integrate reaffirm; opennews-mcp → GW; pi + Codex-Orchestration + bugbounty-lab101 GO; godoxy NOASSERTION NO-GO; FUXA/OctoBot/buzz/RustPython size-skip
+- **Paper:** 2608.03893 cross-model KV → CCC
+- **RSS:** Osmani agentic quality gates → CCC; Wu ether.fi/Uniswap/HL → xsp; Capital Flows EOW teaser
+- **Phase-0 ~33MB** (opennews-mcp, Codex-Orchestration, bugbounty-lab101, pi-earendil, ai-website-cloner-template, pi-peer)
+- Briefs → Atto / GuruWatcher / CCC / cyber / xsp-prod; poker no-path
+
+## [2026-08-08] phase1 | K228 surface wires (Atto / GuruWatcher / CCC / cyber)
+
+- Briefs: Atto pdf-inspector reaffirm; GW opennews-mcp; CCC pi+quality+KV; cyber Codex/bugbounty; poker no-path; xsp Wu → `cemini-prod:/opt/cemini/briefs/xsp-k228-wublock-hl-uniswap.md` (skill_audit PASS)
+- Inbox archived to egress-fi (6 files)
+- OSINT `osint-phase1-adopt-wires.mdc` K228
+- Surface: `atto-k228` · `guruwatcher-k228` · `ccc-k228` · `cyber-k228`
+
 ## [2026-08-08] ingest | K227 — URL revenue eval, judgment-gap paper, LS Zawinski, Sterling GBP, SecPro #246
 
 - **Eval:** the-startup MIT Integrate → CCC; sherlock MIT + gosearch GPL Extract → Atto FIND; omniparse GPL Watch; CyberStrike HF **no download**; Pass/UNAVAILABLE skipped
