@@ -115,6 +115,15 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - Watch only (no clone): `antirez/ds4`, `cloudflare/computer`, Flue 2.0.
 - Reaffirm: `worldmonitor` AGPL Watch (K182) — do not re-clone under `.local/adopts/`.
 
+## K227 — the-startup (CCC) + sherlock/gosearch (Atto FIND) + omniparse Watch
+
+- `the-startup` (MIT, `.local/adopts/the-startup` ~2.6MB) = Claude Code SDD skills **Integrate** → CCC — supply-chain review + `cursor-security-preflight` before enable; do not auto-write `truth.ged` / `watches.json`.
+- `sherlock` (MIT, `.local/adopts/sherlock` ~2.5MB) = username footprint **Extract** for Atto FIND deep-links — human-gated; platform ToS + rate limits; no Barone PII fixtures.
+- `gosearch` (GPL-3.0, `.local/adopts/gosearch` ~1.0MB) = FIND combo **GPL isolate** — patterns/local tool only; do not vendor into proprietary Atto SaaS.
+- `omniparse` (GPL-3.0, `.local/adopts/omniparse` ~1.0MB) = **Watch REFERENCE** — Magika still sniffs; Transkribus sole product HTR.
+- **No download:** HuggingFace `CyberStrike-OffSec-35B` / GGUF — VRAM + ethics; cyber lab Watch card only.
+- Zawinski multiagents + judgment–consequence gap → CCC/HITL; Sterling GBP → SEO brief; SecPro #246 Zero Trust/SAIF → cyber. No Macro/xsp/pm this batch.
+
 ## K226 — semantica (Atto) + MiroFish AGPL (GW) + lab agents + papers
 
 - `semantica` (MIT, `.local/adopts/semantica` ~39MB) = graph-native KG / context **Integrate** for Atto FIND — never cloud-index Barone PII; Magika + PII strip; human-gated `truth.ged`; Transkribus sole HTR.

@@ -9,22 +9,28 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
 
 <!-- superseded 2026-08-07 — see Current state K226 -->
-## Active workstreams (2026-08-07 — Atto #1 · GuruWatcher #2 · TipDrop retired)
+## Active workstreams (2026-08-08 — Atto #1 · GuruWatcher #2 · TipDrop retired)
 
-Research digest + ingest briefs: **Atto** is operator Priority #1 (`../atto/briefs/`). **GuruWatcher** is Priority #2 (`../GuruWatcher/briefs/`). Everything else is behind both (`scripts/active_project_brief_targets.yaml`). **TipDrop / David kit briefs retired** — do not push to `tipdrop-workspace-kit`. **Local abliterated AI lab** takes that research-queue slot (`../Cybersecurity wiki/briefs/`). Eval prompt: CCC `prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` **v10.5** (`atto` + `guruwatcher` + `genealogy` + `local-abliterated-lab` overlaps).
+Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priority #2 · everything else behind (`scripts/active_project_brief_targets.yaml`). TipDrop retired. Local abliterated lab → Cybersecurity wiki briefs. Eval: CCC v10.5.
 
 ### Priority stack (morning ingest)
 
 | Rank | Project | Brief home | Prod scp |
 |------|---------|------------|----------|
-| **#1** | **Atto** — genealogy agent kit | `../atto/briefs/` | No — never Barone PII |
-| **#2** | **GuruWatcher** — newsletter watches → Discord (alert-only) | `../GuruWatcher/briefs/` | No — deploy via GuruWatcher `deploy_prod.sh` |
-| behind | **Poker Arena — dev.fun Researcher Round** | `agents/devfun-poker-arena/briefs/` | sandbox + rsync |
-| behind | **CeminiDFS** — NFL DIY projection pipeline | `../projects/CeminiDFS/briefs/` | No |
-| behind | **XSP killer bot** — Lane A/B Robinhood monitors | `briefs/xsp-*` | cemini-prod |
-| behind | **Family-tree / Barone dogfood** — private digs only | `~/Desktop/family/research/` | No — wiki methodology only; productizable → Atto |
-| behind | **Local abliterated AI lab** — pentest assist / operator lab | `../Cybersecurity wiki/briefs/` | No — authorized assist only |
-| retired | ~~TipDrop / David kit~~ | — | Do not route (2026-08-05) |
+| **#1** | **Atto** | `../atto/briefs/` | No |
+| **#2** | **GuruWatcher** | `../GuruWatcher/briefs/` | No |
+| behind | Poker Arena | `agents/devfun-poker-arena/briefs/` | sandbox |
+| behind | XSP / PM | `briefs/xsp-*` / `briefs/pm-*` | cemini-prod |
+| behind | Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No |
+| retired | TipDrop / David kit | — | Do not route |
+
+## Current state (2026-08-08 — K227)
+
+- **K227 ingest** — URL Revenue Opportunity eval + judgment-gap paper + LS Zawinski + Sterling GBP + SecPro #246. Phase-0 ~7MB (the-startup, sherlock, gosearch, omniparse). CyberStrike HF no-download.
+- **K227 Phase-1** — Atto FIND (sherlock/gosearch) · CCC the-startup/Zawinski · cyber SecPro/SAIF. No GW/prod scp this batch.
+- Poker: K259 CASCADE claim-validation steal filed; no new Arena path from K227 inbox.
+
+## Current state (2026-08-07 — K226)
 
 ## Current state (2026-08-07 — K226)
 

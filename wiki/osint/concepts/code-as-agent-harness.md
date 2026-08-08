@@ -4,6 +4,12 @@ type: concept
 tags: [concept, agent-harness, coding-agents, agentic-ai, survey-synthesis]
 keywords: [code-as-agent-harness, harness-interface, harness-mechanisms, multi-agent-coordination, verification, stateful-agents]
 related:
+  - sources/substack-rss-secpro-2026-08-07-beyond-threat-hunting.md
+  - entities/tools/the-startup.md
+  - sources/arxiv-2608.05583-judgment-consequence-gap-2026-08-08.md
+  - sources/newsletter-rss-latent-space-2026-08-08-zawinski-multiagents.md
+  - concepts/judgment-consequence-gap-agent-ethics.md
+  - concepts/zawinski-law-of-multiagents.md
   - sources/newsletter-rss-tldrsec-340-2026-08-07.md
   - sources/arxiv-2608.06362-av-aivat-2026-08-07.md
   - sources/arxiv-2608.06301-harnessopt-bench-2026-08-07.md
@@ -91,10 +97,18 @@ related:
   - concepts/skill-regression-tax.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-08-07
+updated: 2026-08-08
 ---
 
 ## Relations
+
+- @sources/substack-rss-secpro-2026-08-07-beyond-threat-hunting.md — SecPro #246 (K227)
+
+- @entities/tools/the-startup.md — K227 Integrate
+
+- @concepts/judgment-consequence-gap-agent-ethics.md — K227
+
+- @concepts/zawinski-law-of-multiagents.md — K227
 
 - @sources/newsletter-rss-tldrsec-340-2026-08-07.md — tldr #340 agents (K226)
 

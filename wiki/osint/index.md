@@ -7,6 +7,22 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K227 ingest (2026-08-08)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-url-revenue-opportunity-2026-08-08](sources/eval-url-revenue-opportunity-2026-08-08.md) | URL eval — the-startup Integrate; sherlock/gosearch Extract; CyberStrike no-download (K227) | draft |
+| [arxiv-2608.05583-judgment-consequence-gap-2026-08-08](sources/arxiv-2608.05583-judgment-consequence-gap-2026-08-08.md) | Judgment–consequence gap moral reasoning → HITL (K227) | draft |
+| [newsletter-rss-latent-space-2026-08-08-zawinski-multiagents](sources/newsletter-rss-latent-space-2026-08-08-zawinski-multiagents.md) | Zawinski multiagents + harness > model → CCC (K227) | draft |
+| [newsletter-rss-sterling-sky-2026-08-07-gbp-state-move](sources/newsletter-rss-sterling-sky-2026-08-07-gbp-state-move.md) | GBP interstate move → SEO (K227) | draft |
+| [substack-rss-secpro-2026-08-07-beyond-threat-hunting](sources/substack-rss-secpro-2026-08-07-beyond-threat-hunting.md) | SecPro #246 Zero Trust/SAIF → cyber (K227) | draft |
+| [the-startup](entities/tools/the-startup.md) | MIT SDD skills Integrate → CCC (K227) | draft |
+| [sherlock](entities/tools/sherlock.md) | MIT username footprint Extract → Atto FIND (K227) | draft |
+| [gosearch](entities/tools/gosearch.md) | GPL gosearch Extract isolate → Atto FIND (K227) | draft |
+| [omniparse](entities/tools/omniparse.md) | GPL omniparse Watch (K227) | draft |
+| [zawinski-law-of-multiagents](concepts/zawinski-law-of-multiagents.md) | Agents expand until they can message peers (K227) | draft |
+| [judgment-consequence-gap-agent-ethics](concepts/judgment-consequence-gap-agent-ethics.md) | Judgment≠action HITL pattern (K227) | draft |
+
 ### K226 ingest (2026-08-07)
 
 | Page | Summary | Maturity |

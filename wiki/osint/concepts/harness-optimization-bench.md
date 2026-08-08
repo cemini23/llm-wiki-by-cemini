@@ -4,16 +4,20 @@ type: concept
 tags: [agents, harness, eval, ccc, k226]
 keywords: [HarnessOpt-Bench, harness optimization, Scale AI]
 related:
+  - sources/newsletter-rss-latent-space-2026-08-08-zawinski-multiagents.md
+  - concepts/zawinski-law-of-multiagents.md
   - sources/arxiv-2608.06301-harnessopt-bench-2026-08-07.md
   - sources/newsletter-rss-latent-space-2026-08-07-amd-taalas-muse.md
   - entities/tools/anton-mindsdb.md
   - concepts/code-as-agent-harness.md
 maturity: draft
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-08-08
 ---
 
 ## Relations
+
+- @concepts/zawinski-law-of-multiagents.md — harness > model (K227)
 
 - @sources/arxiv-2608.06301-harnessopt-bench-2026-08-07.md
 - @sources/newsletter-rss-latent-space-2026-08-07-amd-taalas-muse.md

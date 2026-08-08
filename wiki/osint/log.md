@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-08-08] ingest | K227 — URL revenue eval, judgment-gap paper, LS Zawinski, Sterling GBP, SecPro #246
+
+- **Eval:** the-startup MIT Integrate → CCC; sherlock MIT + gosearch GPL Extract → Atto FIND; omniparse GPL Watch; CyberStrike HF **no download**; Pass/UNAVAILABLE skipped
+- **Paper:** 2608.05583 judgment–consequence gap → HITL ethics pattern
+- **RSS:** Latent Space Zawinski multiagents + harness>model → CCC; Sterling Sky GBP state move → SEO; SecPro #246 Zero Trust/SAIF → cyber
+- **Phase-0 ~7MB** (the-startup, sherlock, gosearch, omniparse)
+- Briefs → Atto / CCC / cyber / SEO; poker K259 CASCADE steal + K227 no-path; **no GuruWatcher / no prod xsp-pm** this batch
+
+## [2026-08-08] phase1 | K227 surface wires (Atto / CCC / cyber)
+
+- OSINT `osint-phase1-adopt-wires.mdc` K227
+- Surface: `atto-k227-phase1-wires.mdc` · `ccc-k227-phase1-wires.mdc` · `cyber-k227-phase1-wires.mdc`
+
 ## [2026-08-07] ingest | K226 — URL fit eval, arXiv Heston/manip/CircuitSteer/MMAligner/Armenian/HarnessOpt/standards/AV-AIVAT, LS/tldr/EH/Wu/CF
 
 - **Eval:** semantica + prime-agent Integrate; MiroFish AGPL Extract; grok2api Extract; celld/anton Watch; Legendary_OSINT + google-skills Context; arkon/swarm-forge/AutoGPT/CircuitSteer NO-GO; sie/pi-llm-wiki/marketingskills/witr refresh

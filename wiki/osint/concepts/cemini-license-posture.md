@@ -5,6 +5,7 @@ type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
 keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
+  - sources/eval-url-revenue-opportunity-2026-08-08.md
   - sources/eval-url-batch-project-fit-2026-08-07.md
   - sources/eval-url-batch-agentic-edge-security-2026-08-05.md
   - entities/tools/deepagents.md
@@ -83,10 +84,12 @@ related:
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-08-07
+updated: 2026-08-08
 ---
 
 ## Relations
+
+- @sources/eval-url-revenue-opportunity-2026-08-08.md — K227 SPDX overrides
 
 - @sources/eval-url-batch-project-fit-2026-08-07.md — K226 SPDX overrides
 
