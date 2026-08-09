@@ -13,18 +13,21 @@ if str(_EXAMPLES) not in sys.path:
 from research_static_chart import research_static_chart  # noqa: E402
 from tag_widen import (  # noqa: E402
     apply_tag_widen_margins,
+    tag_blind_defend_enabled,
     tag_facing_raise_to_call,
     tag_skip_broadway_auto_fold,
     tag_widen_allowed,
     tag_widen_enabled,
     tag_widen_margins,
     try_tag_bb_sb_defend,
+    try_tag_blind_defend,
 )
 
 
 @pytest.fixture(autouse=True)
 def _clear_tag_env(monkeypatch):
     monkeypatch.delenv("CEMINI_TAG_WIDEN", raising=False)
+    monkeypatch.delenv("CEMINI_TAG_BLIND_DEFEND", raising=False)
 
 
 def test_tag_widen_off_by_default():
@@ -155,3 +158,78 @@ def test_tag_off_bb_still_folds_pairs(monkeypatch):
     chart = research_static_chart(_six_max_bb_table(["8h", "8d"]))
     assert chart.get("table_format") == "6max"
     assert chart.get("preflop_action") == "fold"
+
+
+def test_blind_defend_off_by_default():
+    assert tag_blind_defend_enabled() is False
+    assert try_tag_blind_defend(
+        hand_class="KQo",
+        position="BB",
+        call_chips=40,
+        big_blind=20,
+        available=["fold", "call", "raise"],
+        hero_stack_chips=1000,
+    ) is None
+
+
+def test_blind_defend_bb_steal_sized(monkeypatch):
+    """CEMINI_TAG_BLIND_DEFEND alone (no TAG_WIDEN) defends BB vs ≤3bb / ≤10% stack."""
+    monkeypatch.setenv("CEMINI_TAG_BLIND_DEFEND", "1")
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "0")
+    out = try_tag_blind_defend(
+        hand_class="KQo",
+        position="BB",
+        call_chips=40,
+        big_blind=20,
+        available=["fold", "call", "raise"],
+        hero_stack_chips=1000,
+    )
+    assert out == ("call", None)
+    # 4bb open — over 3bb cap
+    assert try_tag_blind_defend(
+        hand_class="KQo",
+        position="BB",
+        call_chips=80,
+        big_blind=20,
+        available=["fold", "call"],
+        hero_stack_chips=1000,
+    ) is None
+    # call > 10% stack blocked
+    assert try_tag_blind_defend(
+        hand_class="KQo",
+        position="BB",
+        call_chips=40,
+        big_blind=20,
+        available=["fold", "call"],
+        hero_stack_chips=300,
+    ) is None
+
+
+def test_blind_defend_sb_no_qjo_cold_call(monkeypatch):
+    """QJo is open-only under chase; blind defend must not cold-call QJo from SB."""
+    monkeypatch.setenv("CEMINI_TAG_BLIND_DEFEND", "1")
+    assert try_tag_blind_defend(
+        hand_class="QJo",
+        position="SB",
+        call_chips=40,
+        big_blind=20,
+        available=["fold", "call"],
+        hero_stack_chips=1000,
+    ) is None
+    # Suited broadway still defends
+    assert try_tag_blind_defend(
+        hand_class="QJs",
+        position="SB",
+        call_chips=40,
+        big_blind=20,
+        available=["fold", "call"],
+        hero_stack_chips=1000,
+    ) == ("call", None)
+
+
+def test_blind_defend_skips_broadway_auto_fold(monkeypatch):
+    monkeypatch.setenv("CEMINI_TAG_BLIND_DEFEND", "1")
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "0")
+    assert tag_skip_broadway_auto_fold("KQo", "BB") is True
+    assert tag_facing_raise_to_call("88", "BB") is True
+    assert tag_skip_broadway_auto_fold("QJo", "SB") is False  # not in SB defend set

@@ -110,6 +110,7 @@ def _lobby_role_label(competition_id: str) -> tuple[str, str]:
     s11 = os.environ.get("S11_PLAYGROUND_COMP", "cms7hrnjg20czv7oi85cho570").strip()
     s12 = os.environ.get("S12_PLAYGROUND_COMP", "cmseo8d3e4fmh12qragnvqct6").strip()
     s10t = os.environ.get("S10_TOURNAMENT_COMP", "").strip()
+    s12t = os.environ.get("S12_TOURNAMENT_COMP", "").strip()
     rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
     if competition_id and competition_id == rcomp:
         return "Researcher Round", "researcher_round"
@@ -121,6 +122,8 @@ def _lobby_role_label(competition_id: str) -> tuple[str, str]:
         return "Tournament S1", "s1_tournament"
     if competition_id and competition_id == s2t:
         return "Tournament S2", "s2_tournament"
+    if competition_id and s12t and competition_id == s12t:
+        return "Tournament S12", "s12_tournament"
     if competition_id and s10t and competition_id == s10t:
         return "Tournament S10", "s10_tournament"
     if competition_id and competition_id == s2:
@@ -156,6 +159,7 @@ def _apply_competition_posture(competition_id: str) -> None:
     s11 = os.environ.get("S11_PLAYGROUND_COMP", "cms7hrnjg20czv7oi85cho570").strip()
     s12 = os.environ.get("S12_PLAYGROUND_COMP", "cmseo8d3e4fmh12qragnvqct6").strip()
     s10t = os.environ.get("S10_TOURNAMENT_COMP", "").strip()
+    s12t = os.environ.get("S12_TOURNAMENT_COMP", "").strip()
     rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
     _pg_role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip().lower()
     _pg_track = os.environ.get("CEMINI_PRIMARY_TRACK", "").strip().lower()
@@ -172,6 +176,11 @@ def _apply_competition_posture(competition_id: str) -> None:
     _s10_tournament = (
         (s10t and competition_id == s10t)
         or _pg_role == "s10_tournament"
+    )
+    _s12_tournament = (
+        (s12t and competition_id == s12t)
+        or _pg_role == "s12_tournament"
+        or (_pg_track == "tournament" and bool(re.fullmatch(r"s12_tournament", _pg_role)))
     )
     if rcomp and competition_id == rcomp:
         os.environ.update({
@@ -286,15 +295,15 @@ def _apply_competition_posture(competition_id: str) -> None:
             "JACKPOT_ROYAL_SHOWDOWN": "0",
             "JACKPOT_27_HUNT_ENABLED": "0",
         })
-    elif _s10_tournament:
-        # Tournament S10 — abandoned after bust (2026-08-01). If lobby lands here,
-        # stay gin-killed + short-stack safe; do not re-enable climb widen.
-        os.environ.update({
+    elif _s10_tournament or _s12_tournament:
+        # Tournament KO — gin-killed + short-stack safe (T10 climb gin abandoned).
+        # S12 T12 #1 pack: blind defend + thin-cushion chase + short-stack 12bb.
+        _t12 = {
             "CEMINI_TOURNAMENT_MODE": "1",
             "CEMINI_TABLE_FORMAT": "auto",
             "CEMINI_RESEARCHER_MODE": "0",
             "CEMINI_SANDBOX_PVP_SUBMIT_ONLY": "0",
-            "CEMINI_PLACEMENT_CHASE": "0",
+            "CEMINI_PLACEMENT_CHASE": "1" if _s12_tournament else "0",
             "CEMINI_EVAL_PANEL_GATE": "0",
             "CEMINI_EVAL_PANEL_MODE": "0",
             "CEMINI_PRIZE_CUTOFF_RANK": "3",
@@ -305,7 +314,7 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_S1B_MIN_STACK_BB": "60",
             "CEMINI_STAGGER_LOCKS": "0",
             "CEMINI_COLD_START_NO_STEAL": "1",
-            "CEMINI_NEMESIS_TIGHT": "1",
+            "CEMINI_NEMESIS_TIGHT": "0" if _s12_tournament else "1",
             "CEMINI_GIN_KILL": "1",
             "CEMINI_GIN_STYLE": "0",
             "CEMINI_GIN_STYLE_PREFLOP": "0",
@@ -313,9 +322,9 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_GIN_STYLE_GATE": "0",
             "CEMINI_GIN_V008": "0",
             "CEMINI_GIN_V2_EXPLOITS": "0",
-            "CEMINI_SHORT_STACK_BB": "20",
-            "CEMINI_MAX_REBUYS": "2",
-            "CEMINI_REBUY_MAX_MON": "5",
+            "CEMINI_SHORT_STACK_BB": "12" if _s12_tournament else "20",
+            "CEMINI_MAX_REBUYS": "0" if _s12_tournament else "2",
+            "CEMINI_REBUY_MAX_MON": "0" if _s12_tournament else "5",
             "CEMINI_MAFP_CHART": "0",
             "CEMINI_SOLVER_V3": "0",
             "CEMINI_EVAL_CRUSH": "0",
@@ -325,7 +334,14 @@ def _apply_competition_posture(competition_id: str) -> None:
             "JACKPOT_ROYAL_ENABLED": "0",
             "JACKPOT_ROYAL_SHOWDOWN": "0",
             "JACKPOT_27_HUNT_ENABLED": "0",
-        })
+        }
+        if _s12_tournament:
+            _t12.update({
+                "CEMINI_TAG_BLIND_DEFEND": "1",
+                "CEMINI_PLACEMENT_PROTECT_BUFFER_PCT": "0.35",
+                "CEMINI_KO_SURVIVAL_MIN_STACK": "250",
+            })
+        os.environ.update(_t12)
     elif competition_id in (s1, s2t):
         os.environ.update({
             "CEMINI_TOURNAMENT_MODE": "1",

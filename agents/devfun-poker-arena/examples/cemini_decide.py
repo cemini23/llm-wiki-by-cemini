@@ -20,7 +20,11 @@ from collections import Counter
 from pathlib import Path
 from typing import Any, Optional
 
-from blind_pressure import lead_blind_steal, placement_chase_steal
+from blind_pressure import (
+    lead_blind_steal,
+    placement_chase_sb_force_open,
+    placement_chase_steal,
+)
 from table_format_utils import resolve_table_format
 from gin_style import (
     gin_style_postflop_enabled,
@@ -448,6 +452,11 @@ def _build(
     msg: str,
 ) -> dict:
     out = _build_agent(action, amount, table, allowed, eq=eq, po=po, msg=msg)
+    # Fail-open postflop jsonl (never crashes decide).
+    try:
+        _log_postflop_decision(table, action=action, amount=amount)
+    except Exception:
+        pass
     hole = _hole_cards_from_table(table)
     board = list(table.get("boardCards") or [])
     sims = 250 if _CURRENT_DECIDE_DEADLINE_S > 5 else 150
@@ -910,6 +919,71 @@ def _log_preflop_decision(
             "action": action,
             "amount": amount,
             "reason": reason or None,
+            "agent_version": os.environ.get("AGENT_VERSION", ""),
+        }
+        with log_path.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps(row, separators=(",", ":")) + "\n")
+    except Exception:
+        pass
+
+
+def _postflop_log_path() -> Path | None:
+    """Resolve postflop jsonl path — CEMINI_POSTFLOP_LOG_PATH or CEMINI_EXPORT_DIR."""
+    raw = os.environ.get("CEMINI_POSTFLOP_LOG_PATH", "").strip()
+    if raw:
+        return Path(raw)
+    export = os.environ.get("CEMINI_EXPORT_DIR", "").strip()
+    if export:
+        return Path(export) / "postflop_decisions.jsonl"
+    return None
+
+
+def _log_postflop_decision(
+    table: dict,
+    *,
+    action: str,
+    amount: Optional[int] = None,
+) -> None:
+    """Fail-open postflop telemetry under CEMINI_EXPORT_DIR/postflop_decisions.jsonl."""
+    try:
+        log_path = _postflop_log_path()
+        if log_path is None:
+            return
+        street = str(table.get("street") or table.get("round") or "").strip()
+        if street.lower() in ("", "preflop", "pre-flop"):
+            return
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        hero_seat = table.get("selfSeatNumber")
+        stack_chips = None
+        for seat in table.get("seats") or []:
+            if seat.get("seatNumber") == hero_seat:
+                stack_chips = seat.get("stackChips")
+                if stack_chips is None:
+                    stack_chips = seat.get("chips")
+                break
+        allowed = table.get("allowedActions") or {}
+        try:
+            call_chips = int(allowed.get("callChips") or 0)
+        except (TypeError, ValueError):
+            call_chips = 0
+        try:
+            pot = int(table.get("potChips") or table.get("pot") or 0)
+        except (TypeError, ValueError):
+            pot = 0
+        try:
+            position = hero_position_label(table)
+        except Exception:
+            position = None
+        row = {
+            "tableId": table.get("tableId"),
+            "competitionId": table.get("competitionId"),
+            "street": street,
+            "position": position,
+            "action": action,
+            "amount": amount,
+            "pot": pot,
+            "call_chips": call_chips,
+            "stack_chips": stack_chips,
             "agent_version": os.environ.get("AGENT_VERSION", ""),
         }
         with log_path.open("a", encoding="utf-8") as fh:
@@ -2584,6 +2658,13 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
     if (position == "SB" and _weak_ace_offsuit(hand_class)
             and suggested == "raise" and "check" in available):
         return "check", None
+    # T12: unopened SB force-open under placement_chase BEFORE trash/seat-matrix / equity.
+    # Facing raise uses _preflop_vs_bet (QJo still folds — no cold-call spew).
+    if (placement_chase and not lane_tight
+            and placement_chase_sb_force_open(hand_class, position)):
+        act, target = _preflop_first_in_wager(allowed, available, pot, size_frac=0.5)
+        if act:
+            return act, target
     if (position == "SB" and _is_sb_complete_trash(hand_class)):
         if "fold" in available:
             return "fold", None
@@ -2938,7 +3019,23 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             suggested = "fold"
 
     # TAG v2: steal-sized BB/SB defend before hard-coded broadway/trash folds.
+    # Tournament blind-defend lane (CEMINI_TAG_BLIND_DEFEND) is independent of TAG_WIDEN.
     if not lead_protect and not qual_protect and not first_protect:
+        try:
+            from tag_widen import try_tag_blind_defend as _tag_blind
+
+            _tbd = _tag_blind(
+                hand_class=hc,
+                position=position,
+                call_chips=call_chips,
+                big_blind=big_blind,
+                available=available,
+                hero_stack_chips=hero_stack_chips,
+            )
+            if _tbd is not None:
+                return _tbd
+        except Exception:
+            pass
         try:
             from tag_widen import try_tag_bb_sb_defend as _tag_defend
 

@@ -183,6 +183,15 @@ class PlaygroundWatcher:
         self._last_poll = 0.0
 
     def poll(self, client: Any, current_id: str, *, force: bool = False) -> Optional[dict]:
+        # Tournament primary — do not steal lobby back to a live Playground.
+        track = os.environ.get("CEMINI_PRIMARY_TRACK", "").strip().lower()
+        role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip().lower()
+        if track == "tournament" or role.endswith("_tournament"):
+            return None
+        if os.environ.get("CEMINI_TOURNAMENT_MODE", "").strip().lower() in (
+            "1", "true", "yes", "on",
+        ):
+            return None
         now = time.time()
         if not force and (now - self._last_poll) < self.interval_s:
             return None

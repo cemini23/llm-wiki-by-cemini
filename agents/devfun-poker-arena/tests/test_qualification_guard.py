@@ -179,7 +179,9 @@ def test_tournament_mode_disables_all_protect_lanes(monkeypatch):
     assert st["qualification_protect"] is False
     assert st["lead_protect"] is False
     assert st["first_protect"] is False
+    # buffer/cutoff = 49.0 >= 0.35 default cushion → protect
     assert st["placement_protect"] is True
+    assert st["placement_chase"] is False
     assert st["lock_tier"] == "tournament"
     assert st["max_playable_chips"] is None
 
@@ -204,5 +206,51 @@ def test_tournament_rank_19_chase_not_money_protect(monkeypatch):
     )
     st = fetch_qualification_status(client, "comp1")
     assert st["prize_cutoff_rank"] == 10
+    assert st["placement_protect"] is False
+    assert st["placement_chase"] is True
+
+
+def test_tournament_thin_cushion_chase_not_protect(monkeypatch):
+    """T12 #2@1000 — rank in money but buffer/cutoff < 35% → chase, not nit protect."""
+    monkeypatch.setenv("CEMINI_TOURNAMENT_MODE", "1")
+    monkeypatch.setenv("CEMINI_PRIZE_CUTOFF_RANK", "3")
+    monkeypatch.delenv("CEMINI_PLACEMENT_PROTECT_BUFFER_PCT", raising=False)
+    # rank 2, chips 1000, cutoff 900 → buffer 100 / 900 ≈ 0.11 < 0.35
+    client = _FakeClient(
+        {"leaderboard": [{"arenaId": "comp1", "rank": 2, "totalScore": 1000}]},
+        cutoff_score=900,
+    )
+    st = fetch_qualification_status(client, "comp1")
+    assert st["placement_protect"] is False
+    assert st["placement_chase"] is True
+    assert st["buffer_chips"] == 100
+
+
+def test_tournament_thick_cushion_placement_protect(monkeypatch):
+    """Inside prize cut with ≥35% cushion → placement_protect."""
+    monkeypatch.setenv("CEMINI_TOURNAMENT_MODE", "1")
+    monkeypatch.setenv("CEMINI_PRIZE_CUTOFF_RANK", "3")
+    monkeypatch.setenv("CEMINI_PLACEMENT_PROTECT_BUFFER_PCT", "0.35")
+    # rank 2, chips 2000, cutoff 1000 → buffer 1000 / 1000 = 1.0 >= 0.35
+    client = _FakeClient(
+        {"leaderboard": [{"arenaId": "comp1", "rank": 2, "totalScore": 2000}]},
+        cutoff_score=1000,
+    )
+    st = fetch_qualification_status(client, "comp1")
+    assert st["placement_protect"] is True
+    assert st["placement_chase"] is False
+
+
+def test_tournament_buffer_positive_but_below_pct_still_chase(monkeypatch):
+    """buffer>0 alone must not arm protect (legacy false lock)."""
+    monkeypatch.setenv("CEMINI_TOURNAMENT_MODE", "1")
+    monkeypatch.setenv("CEMINI_PRIZE_CUTOFF_RANK", "10")
+    monkeypatch.setenv("CEMINI_PLACEMENT_PROTECT_BUFFER_PCT", "0.35")
+    # rank 1, chips 1100, cutoff 1000 → buffer 100 / 1000 = 0.10 < 0.35
+    client = _FakeClient(
+        {"leaderboard": [{"arenaId": "comp1", "rank": 1, "totalScore": 1100}]},
+        cutoff_score=1000,
+    )
+    st = fetch_qualification_status(client, "comp1")
     assert st["placement_protect"] is False
     assert st["placement_chase"] is True

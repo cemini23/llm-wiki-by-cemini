@@ -62,6 +62,24 @@ def _buffer_threshold() -> int:
     return _safe_int(os.environ.get("CEMINI_QUAL_BUFFER_CHIPS"), DEFAULT_BUFFER_CHIPS)
 
 
+DEFAULT_PLACEMENT_PROTECT_BUFFER_PCT = 0.35
+
+
+def placement_protect_buffer_pct() -> float:
+    """Min buffer/cutoff_chips cushion before tournament placement_protect arms.
+
+    Thin cushion (default <35%) stays in placement_chase so #2@small stack
+    does not nit-lock inside the money zone.
+    """
+    return max(
+        0.0,
+        _safe_float(
+            os.environ.get("CEMINI_PLACEMENT_PROTECT_BUFFER_PCT"),
+            DEFAULT_PLACEMENT_PROTECT_BUFFER_PCT,
+        ),
+    )
+
+
 def _lead_buffer_threshold() -> int:
     return _safe_int(os.environ.get("CEMINI_LEAD_BUFFER_CHIPS"), DEFAULT_LEAD_BUFFER_CHIPS)
 
@@ -295,9 +313,17 @@ def fetch_qualification_status(
 
     if tournament_mode_enabled():
         out["lock_tier"] = "tournament"
-        # Money zone: rank inside top-N prize bubble AND chips above Nth-place score.
-        if int(rank) <= prize_cut and buffer > 0:
+        # Money zone protect only with real cushion vs prize-cutoff chips.
+        # buffer>0 alone is a false lock (T12 #2@~1000 / thin field).
+        cushion_ok = (
+            buffer > 0
+            and (buffer / max(int(cutoff_chips), 1)) >= placement_protect_buffer_pct()
+        )
+        if int(rank) <= prize_cut and cushion_ok:
             out["placement_protect"] = True
+        elif int(rank) <= prize_cut:
+            # Inside money but thin cushion — keep chasing, do not nit.
+            out["placement_chase"] = True
         elif int(rank) > prize_cut:
             out["placement_chase"] = True
         return out

@@ -15,6 +15,12 @@ def tag_widen_enabled() -> bool:
     return raw.strip().lower() in ("1", "true", "yes", "on")
 
 
+def tag_blind_defend_enabled() -> bool:
+    """Tournament-only BB/SB defend lane — independent of full CEMINI_TAG_WIDEN."""
+    raw = os.environ.get("CEMINI_TAG_BLIND_DEFEND", "0")
+    return raw.strip().lower() in ("1", "true", "yes", "on")
+
+
 def tag_widen_margins() -> dict[str, float]:
     """Stronger than v1, still below gin-era −0.04 spew."""
     return {
@@ -113,34 +119,88 @@ TAG_CO_OPEN_EXTRA = frozenset({
 _TAG_DEFEND_MAX_BB = 4.5
 _TAG_DEFEND_MAX_STACK_FRAC = 0.32
 
+# Tournament blind-defend lane: tighter than playground TAG widen.
+_BLIND_DEFEND_MAX_BB = 3.0
+_BLIND_DEFEND_MAX_STACK_FRAC = 0.10
+
+# Sensible BB/SB defend vs ≤3bb open — broadway, pairs, suited connectors.
+# SB excludes QJo (open-only under placement_chase; no cold-call spew).
+TAG_BLIND_DEFEND_BB = frozenset({
+    "AA", "KK", "QQ", "JJ", "TT", "99", "88", "77", "66", "55", "44", "33", "22",
+    "AKs", "AKo", "AQs", "AQo", "AJs", "AJo", "ATs", "ATo", "A9s", "A8s", "A5s", "A4s",
+    "KQs", "KQo", "KJs", "KJo", "KTs", "KTo", "K9s",
+    "QJs", "QJo", "QTs", "QTo", "Q9s", "JTs", "JTo", "J9s", "T9s", "T8s",
+    "98s", "97s", "87s", "76s", "65s", "54s",
+})
+
+TAG_BLIND_DEFEND_SB = frozenset({
+    "AA", "KK", "QQ", "JJ", "TT", "99", "88", "77", "66", "55", "44", "33", "22",
+    "AKs", "AKo", "AQs", "AQo", "AJs", "AJo", "ATs", "ATo", "A9s", "A8s", "A5s", "A4s",
+    "KQs", "KQo", "KJs", "KJo", "KTs", "K9s",
+    "QJs", "QTs", "Q9s", "JTs", "J9s", "T9s", "T8s",
+    "98s", "97s", "87s", "76s", "65s", "54s",
+})
+
 
 def tag_bb_defend_hand(hand_class: str) -> bool:
-    return bool(hand_class) and hand_class in TAG_BB_CALL
+    if not hand_class:
+        return False
+    if hand_class in TAG_BB_CALL:
+        return True
+    if tag_blind_defend_enabled() and hand_class in TAG_BLIND_DEFEND_BB:
+        return True
+    return False
 
 
 def tag_sb_defend_hand(hand_class: str) -> bool:
-    return bool(hand_class) and hand_class in TAG_SB_DEFEND
+    if not hand_class:
+        return False
+    if hand_class in TAG_SB_DEFEND:
+        return True
+    if tag_blind_defend_enabled() and hand_class in TAG_BLIND_DEFEND_SB:
+        return True
+    return False
 
 
 def tag_skip_broadway_auto_fold(hand_class: str, position: str) -> bool:
-    """Bypass _BB_BROADWAY_FOLD auto-folds for TAG defend hands."""
-    if not tag_widen_enabled() or not hand_class:
+    """Bypass _BB_BROADWAY_FOLD auto-folds for TAG / blind-defend hands."""
+    if not hand_class:
+        return False
+    if not (tag_widen_enabled() or tag_blind_defend_enabled()):
         return False
     if position == "BB":
-        return hand_class in TAG_BB_CALL
+        if tag_widen_enabled() and hand_class in TAG_BB_CALL:
+            return True
+        if tag_blind_defend_enabled() and hand_class in TAG_BLIND_DEFEND_BB:
+            return True
+        return False
     if position == "SB":
-        return hand_class in TAG_SB_DEFEND
+        if tag_widen_enabled() and hand_class in TAG_SB_DEFEND:
+            return True
+        if tag_blind_defend_enabled() and hand_class in TAG_BLIND_DEFEND_SB:
+            return True
+        return False
     return False
 
 
 def tag_facing_raise_to_call(hand_class: str, position: str) -> bool:
     """Chart said raise but not 3bet-ok — defend as call instead of fold."""
-    if not tag_widen_enabled() or not hand_class:
+    if not hand_class:
+        return False
+    if not (tag_widen_enabled() or tag_blind_defend_enabled()):
         return False
     if position == "BB":
-        return hand_class in TAG_BB_CALL
+        if tag_widen_enabled() and hand_class in TAG_BB_CALL:
+            return True
+        if tag_blind_defend_enabled() and hand_class in TAG_BLIND_DEFEND_BB:
+            return True
+        return False
     if position == "SB":
-        return hand_class in TAG_SB_DEFEND
+        if tag_widen_enabled() and hand_class in TAG_SB_DEFEND:
+            return True
+        if tag_blind_defend_enabled() and hand_class in TAG_BLIND_DEFEND_SB:
+            return True
+        return False
     return False
 
 
@@ -166,5 +226,33 @@ def try_tag_bb_sb_defend(
     if position == "BB" and hand_class in TAG_BB_CALL:
         return "call", None
     if position == "SB" and hand_class in TAG_SB_DEFEND:
+        return "call", None
+    return None
+
+
+def try_tag_blind_defend(
+    *,
+    hand_class: str,
+    position: str,
+    call_chips: int,
+    big_blind: int,
+    available: list,
+    hero_stack_chips: int,
+) -> tuple[str, None] | None:
+    """Tournament BB/SB defend vs ≤3bb open / ≤10% stack — no full TAG_WIDEN needed."""
+    if not tag_blind_defend_enabled():
+        return None
+    if call_chips <= 0 or "call" not in available:
+        return None
+    if position not in ("BB", "SB"):
+        return None
+    bb = max(int(big_blind or 2), 1)
+    if call_chips > bb * _BLIND_DEFEND_MAX_BB:
+        return None
+    if hero_stack_chips > 0 and call_chips > hero_stack_chips * _BLIND_DEFEND_MAX_STACK_FRAC:
+        return None
+    if position == "BB" and hand_class in TAG_BLIND_DEFEND_BB:
+        return "call", None
+    if position == "SB" and hand_class in TAG_BLIND_DEFEND_SB:
         return "call", None
     return None

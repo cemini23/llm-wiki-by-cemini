@@ -95,3 +95,23 @@ def placement_chase_steal(hand_class: str, position: str) -> bool:
     if position == "MP":
         return hand_class in _CHASE_MP_STEAL
     return False
+
+
+# Unopened SB force-open under placement_chase — before equity gate (T12 #1 pack).
+# Facing raise: QJo still folds (not in defend force path; cold-call spew ban).
+_SB_CHASE_FORCE_OPEN = frozenset({
+    "22", "33", "44", "55", "66", "77", "88", "99", "TT", "JJ", "QQ", "KK", "AA",
+    "A9o", "ATo", "AJo", "AQo", "AKo",
+    "A9s", "ATs", "AJs", "AQs", "AKs",
+    "KTo", "KJo", "KQo",
+    "KTs", "KJs", "KQs",
+    "QJo",
+    "QJs", "QTs", "JTs",
+})
+
+
+def placement_chase_sb_force_open(hand_class: str, position: str = "SB") -> bool:
+    """Force-open unopened SB hands under placement_chase (bypass equity gate)."""
+    if position != "SB" or not hand_class:
+        return False
+    return hand_class in _SB_CHASE_FORCE_OPEN
