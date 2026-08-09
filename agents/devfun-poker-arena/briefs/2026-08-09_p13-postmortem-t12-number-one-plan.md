@@ -88,6 +88,10 @@ Also ensure `CEMINI_EXPORT_DIR` points at the live export folder so `postflop_de
 - cps trending up vs first 50 hands baseline.
 - Gin remains killed.
 
+## Filed follow-on
+
+P1/P2 full climb implemented 2026-08-09 — see `briefs/2026-08-09_t12-p1-p2-full-climb-plan.md` `## Filed`.
+
 ## Sources
 
 - Prod leaderboards P13/T12 2026-08-09

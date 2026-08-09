@@ -123,6 +123,11 @@ _TAG_DEFEND_MAX_STACK_FRAC = 0.32
 _BLIND_DEFEND_MAX_BB = 3.0
 _BLIND_DEFEND_MAX_STACK_FRAC = 0.10
 
+# P1-5: blind-defend initiative — 3bet (not flat) with these vs ≤3bb opens.
+_BLIND_DEFEND_3BET = frozenset({
+    "JJ", "QQ", "KK", "AA", "AKs", "AKo", "AQs",
+})
+
 # Sensible BB/SB defend vs ≤3bb open — broadway, pairs, suited connectors.
 # SB excludes QJo (open-only under placement_chase; no cold-call spew).
 TAG_BLIND_DEFEND_BB = frozenset({
@@ -238,8 +243,13 @@ def try_tag_blind_defend(
     big_blind: int,
     available: list,
     hero_stack_chips: int,
-) -> tuple[str, None] | None:
-    """Tournament BB/SB defend vs ≤3bb open / ≤10% stack — no full TAG_WIDEN needed."""
+    allowed: dict | None = None,
+) -> tuple[str, int | None] | None:
+    """Tournament BB/SB defend vs ≤3bb open / ≤10% stack — no full TAG_WIDEN needed.
+
+    P1-5: with JJ+/AK/AQs and ≥15bb stack, 3bet (raise) instead of flat-call
+    when a raise is available and the sizing stays ≤35% of stack.
+    """
     if not tag_blind_defend_enabled():
         return None
     if call_chips <= 0 or "call" not in available:
@@ -251,6 +261,14 @@ def try_tag_blind_defend(
         return None
     if hero_stack_chips > 0 and call_chips > hero_stack_chips * _BLIND_DEFEND_MAX_STACK_FRAC:
         return None
+    if hand_class in _BLIND_DEFEND_3BET and hero_stack_chips >= bb * 15:
+        if "raise" in available:
+            rr = (allowed or {}).get("raiseRange") or {}
+            min_r = int(rr.get("min") or call_chips * 2)
+            max_r = int(rr.get("max") or min_r)
+            target = max(min_r, min(int(call_chips * 2 + bb), max_r))
+            if target <= int(hero_stack_chips * 0.35):
+                return "raise", target
     if position == "BB" and hand_class in TAG_BLIND_DEFEND_BB:
         return "call", None
     if position == "SB" and hand_class in TAG_BLIND_DEFEND_SB:

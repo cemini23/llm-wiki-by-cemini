@@ -1,7 +1,12 @@
 """Short-stack push/fold — overrides chase/gin widen when shallow.
 
 Post-mortem T10 2026-08-01: gin+chase at ~154 chips spewed the stack.
-When hero stack < CEMINI_SHORT_STACK_BB (default 20), play push/fold only.
+When hero stack < CEMINI_SHORT_STACK_BB (default 12), play push/fold only.
+
+P1-3: two bands under the short-stack threshold —
+  ≤ CEMINI_SHORT_STACK_JAM_BB (default 8):  jam-or-fold only (push chart)
+  8–12bb: selective raise/jam — premiums + suited broadway; fold trash opens
+  ≥ CEMINI_SHORT_STACK_BB: not the short-stack path
 """
 from __future__ import annotations
 
@@ -15,6 +20,15 @@ def short_stack_bb_threshold() -> float:
         return max(0.0, float(raw))
     except ValueError:
         return 20.0
+
+
+def short_stack_jam_bb_threshold() -> float:
+    """Boundary for the ≤8bb jam-or-fold band (default 8)."""
+    raw = os.environ.get("CEMINI_SHORT_STACK_JAM_BB", "8")
+    try:
+        return max(0.0, float(raw))
+    except ValueError:
+        return 8.0
 
 
 def hero_stack_bb(table: dict, self_seat: dict | None = None) -> float:
@@ -84,6 +98,18 @@ _PUSH_BB_CALL = frozenset({
 })
 
 
+# P1-3 8–12bb selective band — premiums + suited broadway only (fold trash opens).
+_SELECTIVE_JAM = frozenset({
+    "AA", "KK", "QQ", "JJ", "TT", "99", "88", "77",
+    "AKs", "AKo", "AQs", "AQo", "AJs", "ATs", "A9s", "A5s", "A4s",
+    "KQs", "KJs", "KTs", "QJs", "QTs", "JTs", "T9s",
+})
+
+
+def _selective_band_hand(hand_class: str) -> bool:
+    return (hand_class or "").strip() in _SELECTIVE_JAM
+
+
 def push_hand_ok(hand_class: str, position: str) -> bool:
     hc = (hand_class or "").strip()
     pos = (position or "").upper()
@@ -110,9 +136,21 @@ def short_stack_preflop_action(
     allowed: dict,
     call_chips: int,
     stack_chips: int,
+    stack_bb: Optional[float] = None,
 ) -> Optional[tuple[str, Optional[int]]]:
-    """Return (action, amount) for short-stack preflop, or None to defer."""
+    """Return (action, amount) for short-stack preflop, or None to defer.
+
+    ``stack_bb`` selects the band: ≤8bb (or None) uses the push chart;
+    8–12bb uses the tighter selective jam set.
+    """
     jam_ok = push_hand_ok(hand_class, position)
+    if stack_bb is not None:
+        try:
+            stack_bb_f = float(stack_bb)
+        except (TypeError, ValueError):
+            stack_bb_f = 0.0
+        if stack_bb_f > short_stack_jam_bb_threshold():
+            jam_ok = _selective_band_hand(hand_class)
     can_raise = bool(allowed.get("canRaise")) and "raise" in available
     can_allin = "all-in" in available or bool(allowed.get("canAllIn"))
     can_call = bool(allowed.get("canCall")) and "call" in available

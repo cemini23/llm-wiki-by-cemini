@@ -76,9 +76,9 @@ from eval_s1_profile import (  # noqa: E402
 from nemesis_seed import (  # noqa: E402
     linear_aggro_nemesis_handles,
     nemesis_handles,
+    table_archetype_nemesis,
     table_nemesis_opener,
     table_nemesis_opener_handle,
-    table_nemesis_pressure,
 )
 from opponent_target import (  # noqa: E402
     _count_preflop_limps,
@@ -99,6 +99,11 @@ from s1b_exploit import (  # noqa: E402
     try_hu_bb_value_3bet_vs_steal,
     try_hu_three_bet_vs_aggro,
 )
+from tournament_3bet import (  # noqa: E402
+    preflop_opener_position,
+    try_tournament_polar_3bet,
+    try_tournament_value_3bet,
+)
 try:
     from finale_exploit import apply_finale_action_overlay  # noqa: E402
     from finale_villain import finale_exploit_enabled, overlay_finale_hud  # noqa: E402
@@ -111,7 +116,11 @@ except ImportError:
 
     def apply_finale_action_overlay(**_kwargs: Any) -> None:  # noqa: E402
         return None
-from villain_archetype import premium_concentration_index, seat_matrix_v2_enabled  # noqa: E402
+from villain_archetype import (  # noqa: E402
+    archetype_toggles_enabled,
+    premium_concentration_index,
+    seat_matrix_v2_enabled,
+)
 from jackpot_27_decide import maybe_hunt_action  # noqa: E402
 from jackpot_rules import royal_showdown_action, royal_showdown_mode  # noqa: E402
 
@@ -454,7 +463,9 @@ def _build(
     out = _build_agent(action, amount, table, allowed, eq=eq, po=po, msg=msg)
     # Fail-open postflop jsonl (never crashes decide).
     try:
-        _log_postflop_decision(table, action=action, amount=amount)
+        _log_postflop_decision(
+            table, action=action, amount=amount, equity=eq, pot_odds=po,
+        )
     except Exception:
         pass
     hole = _hole_cards_from_table(table)
@@ -641,6 +652,26 @@ def _raise_only_first_in_open(
 def _nemesis_tight_enabled() -> bool:
     raw = os.environ.get("CEMINI_NEMESIS_TIGHT", "1")
     return raw.strip().lower() not in ("0", "false", "no", "off")
+
+
+def _named_nemesis_tight_enabled() -> bool:
+    """P1-1: named handles alone force tight only when this is explicitly on.
+
+    Default 0 — listed nemesis handles must not over-fold without archetype
+    evidence (premium_nit / linear_aggro / …). Set CEMINI_NAMED_NEMESIS_TIGHT=1
+    to restore legacy named-handle tightness.
+    """
+    raw = os.environ.get("CEMINI_NAMED_NEMESIS_TIGHT", "0")
+    return raw.strip().lower() not in ("0", "false", "no", "off")
+
+
+def _fold_guard(guard_id: str, hc: str, position: str, spot: str) -> None:
+    """Audit hook — log a named fold-guard fire (P2-3, fail-open)."""
+    try:
+        from fold_guard_ledger import record_fold_guard
+        record_fold_guard(guard_id, hand_class=hc, position=position, spot=spot)
+    except Exception:
+        pass
 
 
 def _survival_mode(self_seat: dict) -> bool:
@@ -943,6 +974,8 @@ def _log_postflop_decision(
     *,
     action: str,
     amount: Optional[int] = None,
+    equity: Optional[float] = None,
+    pot_odds: Optional[float] = None,
 ) -> None:
     """Fail-open postflop telemetry under CEMINI_EXPORT_DIR/postflop_decisions.jsonl."""
     try:
@@ -955,11 +988,13 @@ def _log_postflop_decision(
         log_path.parent.mkdir(parents=True, exist_ok=True)
         hero_seat = table.get("selfSeatNumber")
         stack_chips = None
+        hole = []
         for seat in table.get("seats") or []:
             if seat.get("seatNumber") == hero_seat:
                 stack_chips = seat.get("stackChips")
                 if stack_chips is None:
                     stack_chips = seat.get("chips")
+                hole = list(seat.get("holeCards") or [])
                 break
         allowed = table.get("allowedActions") or {}
         try:
@@ -974,6 +1009,15 @@ def _log_postflop_decision(
             position = hero_position_label(table)
         except Exception:
             position = None
+        board = list(table.get("boardCards") or [])
+        hand_class = None
+        try:
+            if hole:
+                hand_class = _hand_class(hole)
+        except Exception:
+            hand_class = None
+        if pot_odds is None and call_chips > 0 and pot + call_chips > 0:
+            pot_odds = call_chips / (pot + call_chips)
         row = {
             "tableId": table.get("tableId"),
             "competitionId": table.get("competitionId"),
@@ -983,9 +1027,22 @@ def _log_postflop_decision(
             "amount": amount,
             "pot": pot,
             "call_chips": call_chips,
+            "facing_bet": call_chips > 0,
+            "board_len": len(board),
+            "hand_class": hand_class,
             "stack_chips": stack_chips,
             "agent_version": os.environ.get("AGENT_VERSION", ""),
         }
+        if equity is not None:
+            try:
+                row["equity"] = round(float(equity), 4)
+            except (TypeError, ValueError):
+                pass
+        if pot_odds is not None:
+            try:
+                row["pot_odds"] = round(float(pot_odds), 4)
+            except (TypeError, ValueError):
+                pass
         with log_path.open("a", encoding="utf-8") as fh:
             fh.write(json.dumps(row, separators=(",", ":")) + "\n")
     except Exception:
@@ -1451,6 +1508,7 @@ def decide(
             allowed=allowed,
             call_chips=int(call_chips or 0),
             stack_chips=int(self_seat.get("stackChips") or self_seat.get("chips") or 0),
+            stack_bb=_hero_stack_bb(table, self_seat),
         )
         if ss is not None:
             s_act, s_amt = ss
@@ -2364,10 +2422,14 @@ def decide(
         )
         nemesis_opener = False
         nemesis_opener_linear = False
-        if _nemesis_tight_enabled():
-            nemesis_opener = table_nemesis_pressure(table, handles)
+        # P1-1: archetype evidence (premium_nit/linear_aggro/…) stays tight on its
+        # own; named handles alone only force tight when CEMINI_NAMED_NEMESIS_TIGHT=1.
+        if _nemesis_tight_enabled() or _named_nemesis_tight_enabled() or archetype_toggles_enabled():
             opener_h = table_nemesis_opener_handle(table, handles)
             nemesis_opener_linear = opener_h in linear_aggro_nemesis_handles()
+            nemesis_opener = table_archetype_nemesis(table)
+            if _named_nemesis_tight_enabled() and not nemesis_opener:
+                nemesis_opener = table_nemesis_opener(table, handles)
         bb = int(table.get("bigBlindChips") or 20)
         hero_stack = _hero_stack_chips(table)
         action_name, amount = _preflop_vs_bet(
@@ -2844,6 +2906,19 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     )
     hud = hud or {}
 
+    # P2-5: villain action sketch — fail-open when we know the acting handle.
+    if call_chips > 0:
+        try:
+            from villain_action_log import log_villain_action as _log_va
+            _log_va(
+                str(hud.get("villain_handle") or ""),
+                street="preflop",
+                action="raise",
+                spot="open",
+            )
+        except Exception:
+            pass
+
     hu_bb_raise = _hu_bb_chart_raise_vs_open(
         table, allowed, available, pot, call_chips,
         suggested=suggested, position=position,
@@ -2886,6 +2961,57 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         )
         if hu_aggro_3b:
             return hu_aggro_3b
+
+    # P1-2: tournament value 3bet tier — prefer 3bet over call vs ≤3.5bb opens
+    # IP/BB with >12bb stack (CEMINI_TOURNAMENT_3BET=1 in s12 posture).
+    t3b = try_tournament_value_3bet(
+        hand_class=hc,
+        position=position,
+        in_position=in_position,
+        call_chips=call_chips,
+        pot=pot,
+        allowed=allowed,
+        available=available,
+        hero_stack_chips=hero_stack_chips,
+        big_blind=big_blind,
+    )
+    if t3b is not None:
+        return t3b
+
+    # P2-1: thin IP polar 3bet bluff slice vs CO/BTN opens (gated, default off).
+    tpolar = try_tournament_polar_3bet(
+        hand_class=hc,
+        position=position,
+        in_position=in_position,
+        call_chips=call_chips,
+        pot=pot,
+        allowed=allowed,
+        available=available,
+        hero_stack_chips=hero_stack_chips,
+        big_blind=big_blind,
+        opener_position=preflop_opener_position(table or {}),
+    )
+    if tpolar is not None:
+        return tpolar
+
+    # P2-2: flat-dominate — call medium strength vs leader/nemesis opens IP/BB
+    # (value 3bet above already had priority; this rescues over-folds).
+    try:
+        from flat_dominate import try_flat_dominate_call as _flat_call
+        _fd = _flat_call(
+            hand_class=hc,
+            position=position,
+            in_position=in_position,
+            call_chips=call_chips,
+            big_blind=big_blind,
+            hero_stack_chips=hero_stack_chips,
+            available=available,
+            villain_handle=str(hud.get("villain_handle") or ""),
+        )
+        if _fd is not None:
+            return _fd
+    except Exception:
+        pass
 
     # K118 F2: chart raise vs limp / SB complete (not an open-spot but still PFR).
     if (suggested == "raise" and 0 < call_chips <= big_blind
@@ -3031,6 +3157,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                 big_blind=big_blind,
                 available=available,
                 hero_stack_chips=hero_stack_chips,
+                allowed=allowed,
             )
             if _tbd is not None:
                 return _tbd
@@ -3086,6 +3213,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     if (not bb_chase_steal and position == "BB" and call_chips > 0
             and hc in _BB_BROADWAY_FOLD and "fold" in available
             and not hu_bb_exploit and not _tag_skip_broadway):
+        _fold_guard("bb_broadway_fold", hc, position, "vs_open")
         return "fold", None
 
     # HU: 3-bet / BB defend before broadway guards (S1B lane + polar 3-bet).
@@ -3151,6 +3279,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     # SB: fold dominated broadway vs opens (QJo SB −100 HL R22 #01).
     if (position == "SB" and call_chips > 0 and hc in _BB_BROADWAY_FOLD
             and "fold" in available and not _tag_skip_broadway):
+        _fold_guard("sb_dominated_broadway", hc, position, "vs_open")
         return "fold", None
 
     # SB: fold marginal ace vs any open (A6o SB −100 HL R4 #02).
@@ -3167,16 +3296,19 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     # CO: fold weak connector trash vs any raise (98o CO −100 HL R11 #01).
     if (position == "CO" and call_chips > 0 and hc in _CO_WEAK_CONNECTOR
             and "fold" in available):
+        _fold_guard("co_weak_connector", hc, position, "vs_open")
         return "fold", None
 
     # HL R27 / S2 R3: CO/SB/BTN chart-trash vs raise — protect/eval lanes only.
     if (lane_tight and position in ("CO", "SB", "BTN") and call_chips > 0
             and hc in _WEAK_FACING_RAISE and "fold" in available):
+        _fold_guard("lane_tight_chart_trash", hc, position, "vs_open")
         return "fold", None
 
     # HL R26 #01: CO chart-trash vs raise under first_protect (62o shove traps).
     if (first_protect and position == "CO" and call_chips > 0
             and hc in _WEAK_FACING_RAISE and "fold" in available):
+        _fold_guard("first_protect_co_trash", hc, position, "vs_open")
         return "fold", None
 
     # EP/MP: no medium-pair calls vs raises (77 MP −100 analyze #02).
@@ -3192,6 +3324,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     # CO/BTN broadway trash vs raise — QTo CO −100 (HL R5 #09); KQo BTN S9 cold-call.
     if (position in ("CO", "BTN") and call_chips > 0 and hc in _BB_BROADWAY_FOLD
             and "fold" in available):
+        _fold_guard("co_btn_broadway_trash", hc, position, "vs_open")
         return "fold", None
 
     # HL R8: EP suited broadway vs raise — protect/eval lanes (eval shove traps).
@@ -3226,6 +3359,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         _tag_sb_ok = False
     if (position == "SB" and call_chips > 0 and hc in _SB_WEAK_SUITED_VS_OPEN
             and not _tag_sb_ok and "fold" in available):
+        _fold_guard("sb_weak_suited_vs_open", hc, position, "vs_open")
         return "fold", None
 
     # SB 6-max: no set-mine flats with 22–77 OOP (S9: 22/44/77 SB call → postflop bleed).
@@ -3239,6 +3373,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     # CO/BTN: fold weak suited cold-call trash vs raise (Q5s BTN / J8s CO / A6s CO S9).
     if (position in ("CO", "BTN") and call_chips > 0
             and hc in _CO_BTN_WEAK_SUITED_VS_OPEN and "fold" in available):
+        _fold_guard("co_btn_weak_suited", hc, position, "vs_open")
         return "fold", None
 
     # Nemesis tight: SB vs known hunters — premiums only (HL R21 S1a export).
@@ -3250,6 +3385,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
         nemesis_sb_ok = nemesis_sb_ok | frozenset({hc})
     if (nemesis_opener and position == "SB" and call_chips > 0
             and hc not in nemesis_sb_ok and "fold" in available):
+        _fold_guard("nemesis_sb_tight", hc, position, "vs_open")
         return "fold", None
 
     if exploit_lane_active(
@@ -3305,6 +3441,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     _sb_defend_premium = frozenset({"AA", "KK", "QQ", "JJ", "TT", "AKs", "AKo", "AQs"})
     if (position == "SB" and _is_sb_complete_trash(hc) and hc not in _sb_defend_premium
             and "fold" in available):
+        _fold_guard("sb_chart_trash", hc, position, "vs_open")
         return "fold", None
 
     if ps_library and ps_bias == "fold" and "fold" in available:
@@ -3325,9 +3462,11 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
     if (position in ("UTG", "MP") and suggested == "fold"
             and hc not in {"AA", "KK", "QQ", "JJ", "AKs", "AKo"}
             and "fold" in available):
+        _fold_guard("ep_strict_chart", hc, position, "vs_open")
         return "fold", None
     if (position in ("UTG", "MP") and suggested == "fold"
             and equity < pot_odds + 0.10 and "fold" in available):
+        _fold_guard("ep_weak_equity", hc, position, "vs_open")
         return "fold", None
     # SB OOP: don't defend chart-fold trash without a clear price edge.
     # TAG v3: skip for TAG_SB_DEFEND hands (already filtered).
@@ -3335,6 +3474,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
             and not _is_hu_table(table or {})
             and not _tag_sb_ok
             and equity < pot_odds + 0.08 and "fold" in available):
+        _fold_guard("sb_oop_chart_trash", hc, position, "vs_open")
         return "fold", None
     if (table and _is_hu_table(table) and position == "BB" and call_chips > 0
             and _hu_ladder_bb_defend(hc, call_chips, pot)

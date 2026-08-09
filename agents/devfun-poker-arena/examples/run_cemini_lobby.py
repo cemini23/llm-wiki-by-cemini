@@ -340,6 +340,15 @@ def _apply_competition_posture(competition_id: str) -> None:
                 "CEMINI_TAG_BLIND_DEFEND": "1",
                 "CEMINI_PLACEMENT_PROTECT_BUFFER_PCT": "0.35",
                 "CEMINI_KO_SURVIVAL_MIN_STACK": "250",
+                # P1-6: survival is early-hand cold-start only — soften 60 → 30.
+                "CEMINI_KO_SURVIVAL_HANDS": "30",
+                # T12 climb knobs (P1/P2). Gin stays killed, rebuys 0.
+                "CEMINI_NAMED_NEMESIS_TIGHT": "0",
+                "CEMINI_TOURNAMENT_3BET": "1",
+                "CEMINI_SHORT_STACK_JAM_BB": "8",
+                "CEMINI_FLAT_DOMINATE": "1",
+                "CEMINI_TOURNAMENT_3BET_POLAR": "1",
+                "CEMINI_STOP_WIN_MULT": "0",
             })
         os.environ.update(_t12)
     elif competition_id in (s1, s2t):

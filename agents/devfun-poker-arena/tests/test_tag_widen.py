@@ -233,3 +233,65 @@ def test_blind_defend_skips_broadway_auto_fold(monkeypatch):
     assert tag_skip_broadway_auto_fold("KQo", "BB") is True
     assert tag_facing_raise_to_call("88", "BB") is True
     assert tag_skip_broadway_auto_fold("QJo", "SB") is False  # not in SB defend set
+
+
+def _raise_allowed() -> dict:
+    return {"raiseRange": {"min": 120, "max": 400}}
+
+
+def test_blind_defend_initiative_ak_raises(monkeypatch):
+    """P1-5: AKs BB vs ≤3bb open with ≥15bb stack → 3bet not flat."""
+    monkeypatch.setenv("CEMINI_TAG_BLIND_DEFEND", "1")
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "0")
+    out = try_tag_blind_defend(
+        hand_class="AKs", position="BB", call_chips=40, big_blind=20,
+        available=["fold", "call", "raise"], hero_stack_chips=400,
+        allowed=_raise_allowed(),
+    )
+    assert out is not None and out[0] == "raise"
+    assert out[1] is not None and out[1] <= 400 * 0.35
+
+
+def test_blind_defend_initiative_jj_raises(monkeypatch):
+    monkeypatch.setenv("CEMINI_TAG_BLIND_DEFEND", "1")
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "0")
+    out = try_tag_blind_defend(
+        hand_class="JJ", position="BB", call_chips=40, big_blind=20,
+        available=["fold", "call", "raise"], hero_stack_chips=400,
+        allowed=_raise_allowed(),
+    )
+    assert out is not None and out[0] == "raise"
+
+
+def test_blind_defend_initiative_87s_calls(monkeypatch):
+    """Medium defend hand still flat-calls (no 3bet initiative)."""
+    monkeypatch.setenv("CEMINI_TAG_BLIND_DEFEND", "1")
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "0")
+    out = try_tag_blind_defend(
+        hand_class="87s", position="BB", call_chips=40, big_blind=20,
+        available=["fold", "call", "raise"], hero_stack_chips=400,
+        allowed=_raise_allowed(),
+    )
+    assert out == ("call", None)
+
+
+def test_blind_defend_initiative_72o_none(monkeypatch):
+    monkeypatch.setenv("CEMINI_TAG_BLIND_DEFEND", "1")
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "0")
+    assert try_tag_blind_defend(
+        hand_class="72o", position="BB", call_chips=40, big_blind=20,
+        available=["fold", "call", "raise"], hero_stack_chips=400,
+        allowed=_raise_allowed(),
+    ) is None
+
+
+def test_blind_defend_initiative_short_stack_no_raise(monkeypatch):
+    """AKs with 12bb stack (<15bb) → flat call, no 3bet initiative."""
+    monkeypatch.setenv("CEMINI_TAG_BLIND_DEFEND", "1")
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "0")
+    out = try_tag_blind_defend(
+        hand_class="AKs", position="BB", call_chips=20, big_blind=20,
+        available=["fold", "call", "raise"], hero_stack_chips=240,
+        allowed=_raise_allowed(),
+    )
+    assert out == ("call", None)
