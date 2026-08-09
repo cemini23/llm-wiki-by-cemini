@@ -54,7 +54,7 @@ Cursor remembers this per machine. If it says **Off**, agents cannot reach kb-se
 Install / refresh **github**:
 
 ```bash
-cd "/Users/claudiobarone/Desktop/OSINT WORKSPACE"
+cd "/Users/claudiobarone/Projects/OSINT WORKSPACE"
 ./scripts/setup_cursor_github_mcp.sh   # token → ~/.cemini/github-pat + ~/.cursor/mcp.json
 ```
 
@@ -78,14 +78,14 @@ Reload Cursor after first-time github MCP setup.
 ## Maintenance
 
 ```bash
-curl -s -o /dev/null -w 'stash:%{http_code}\n' http://127.0.0.1:8088/sse
-curl -s -o /dev/null -w 'prod:%{http_code}\n' http://127.0.0.1:18002/mcp
+curl -s -o /dev/null -w 'stash:%{http_code}\n' http://127.0.0.1:8088/sse   # often red after librarian decommission
+curl -s -o /dev/null -w 'prod:%{http_code}\n' http://127.0.0.1:18002/mcp   # 406 = tunnel up
 
-cd "/Users/claudiobarone/Desktop/OSINT WORKSPACE"
+cd "/Users/claudiobarone/Projects/OSINT WORKSPACE"
 lazy-tool reindex --config ".cursor/lazy-tool.yaml"
 ```
 
-LaunchAgents: `com.cemini.stash-tunnel`, `com.cemini.prod-mcp-tunnel` in `~/Library/LaunchAgents/`.
+LaunchAgents: `com.cemini.prod-mcp-tunnel` (and optional `com.cemini.stash-tunnel` — stash may stay red; that is expected after librarian decommission 2026-06-14).
 
 ## Agent rules
 
@@ -103,7 +103,7 @@ You do **not** need custom subagents per wiki. Use:
 - Cursor **Task** / explore subagent only for large codebase audits (optional)
 - **Separate Open Folder** per repo (CeminiSuite vs OSINT vs sibling wikis) for the right `.cursor/mcp.json`
 
-Sibling wikis (image-gen, seo, cybersec, ccc) live under `Desktop/projects/…` — open that wiki’s parent project if you need project-specific MCP there.
+Sibling wikis (image-gen, seo, cybersec, ccc) live under `~/Projects/…` — open that wiki’s parent folder if you need project-specific MCP there.
 
 ## Secrets
 

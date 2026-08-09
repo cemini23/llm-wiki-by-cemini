@@ -1,65 +1,43 @@
 # Cemini OSINT Research Workspace
 
-A local knowledge hub for OSINT and financial research, organized as an
-LLM-curated, human-read wiki. This repo holds the **schema, the wiki, and
-the helper scripts**. Raw sources archive on the laptop; **no 24/7 librarian
-server** (decommissioned 2026-06-14).
+A local knowledge hub for OSINT and financial research — an LLM-curated, human-read wiki with helper scripts. This repo holds the **schema, the wiki, and the tooling**. Raw sources live in cold storage after ingest; there is **no 24/7 librarian server** (decommissioned 2026-06-14).
+
+Welcome. If you are opening this tree for the first time, start with `CLAUDE.md`, then skim `wiki/index.md` and `ROADMAP.md`.
 
 ## What's tracked
 
-| Path           | Role                                                              |
-| -------------- | ----------------------------------------------------------------- |
-| `CLAUDE.md`    | The schema — tells the LLM how to operate this workspace.         |
-| `ROADMAP.md`   | Active workstream, decisions, and open questions.                 |
-| `LESSONS.md`   | Meta-lessons about *how we work* (distinct from `wiki/log.md`).   |
-| `wiki/`        | The library: `index.md`, `log.md`, `sources/`, `entities/`, `concepts/`. |
-| `scripts/`     | Python helpers — docx extraction, stub generation, lint, gap detection. |
-| `agents/`      | Agent harnesses (e.g. `devfun-poker-arena/` — tracked briefs + examples). |
-| `.cursor/`     | Cursor rules + federation skills (`/goal`, `to-issues`, `grill-with-docs`). |
-| `.gitignore`   | This file's enforcement layer.                                    |
+| Path | Role |
+|------|------|
+| `CLAUDE.md` | Schema — how agents and humans operate this workspace |
+| `ROADMAP.md` | Active workstreams, decisions, and open questions |
+| `LESSONS.md` | Meta-lessons about *how we work* (distinct from `wiki/log.md`) |
+| `wiki/` | The library: `index.md`, `log.md`, `sources/`, `entities/`, `concepts/`, `meta/`, `sweeps/` |
+| `scripts/` | Lint, ingest gates, digests, Phase-0 adopts, archive-to-egress helpers |
+| `agents/` | Agent harnesses (e.g. `devfun-poker-arena/` — tracked briefs + examples) |
+| `.cursor/` | Cursor rules + federation skills (`/goal`, `/route`, `to-issues`, `grill-with-docs`, …) |
 
 ## What's not tracked (and why)
 
-- **`research to be indexed/`** — transient drop-zone for new sources awaiting
-  ingest. Gitignored.
-- **`briefs/`** — operational deliverables staged for distribution to
-  claude.ai or the CeminiSuite dev stack. Gitignored.
-- **`.local/archives/research/`** — post-ingest raw PDFs/docx. Gitignored.
-- **`hot.md`** — session-state cache (curator working memory across
-  compaction boundaries). Gitignored (changes every session).
-- **`.local/`** — server connection details (SSH targets, IPs). Gitignored.
-- **`.claude/settings.local.json`** — Claude Code per-project allowlist.
-  Gitignored.
-- **`.DS_Store`, `__pycache__/`, etc.** — OS and tooling cruft.
+- **`research to be indexed/`** — transient drop zone for new sources (gitignored)
+- **`briefs/`** — deliverables staged for claude.ai or CeminiSuite (gitignored)
+- **`hot.md`** — session-state cache across compaction (gitignored)
+- **`.local/`** — SSH targets, local reports, optional datasets (gitignored)
+- **`.claude/settings.local.json`**, **`.DS_Store`**, **`__pycache__/`** — local tooling cruft
 
-## Architecture — laptop wiki + prod trading fleet
+## Architecture
 
-1. **Raw sources** — immutable. **Laptop archive:** `.local/archives/research/`
-   after ingest. Transient drop: `research to be indexed/`.
-   - Older source pages may cite `cemini-librarian:/opt/cemini-bulk/...` as
-     historical provenance only (host deleted 2026-06-14).
+1. **Raw sources** — immutable. Drop into `research to be indexed/` → ingest → archive with `scripts/archive_raw_to_egress.sh` to **`cemini-egress-fi:/opt/cemini-bulk/research/osint/`**. Older pages may still cite deleted `cemini-librarian:` paths as historical provenance only.
 
-2. **The wiki** (`wiki/`, tracked) — LLM-written, human-read, cross-linked
-   markdown. **Canonical on laptop git** (~536 pages). Federation wikis in
-   sibling repos under `~/Desktop/projects/`.
+2. **The wiki** (`wiki/`, tracked) — LLM-written, human-read, cross-linked markdown. **Canonical on laptop git.** Sibling federation wikis live under `~/Projects/`.
 
-3. **The schema** (`CLAUDE.md`, tracked) — how the LLM runs the wiki.
+3. **The schema** (`CLAUDE.md`) — how the LLM runs the wiki.
 
-4. **Hetzner fleet (trading only)**
-   - **`cemini-prod`** — CeminiSuite trading stack (`/opt/cemini`)
-   - **`cemini-egress-fi`** — Helsinki order egress (HL + PM)
+4. **Trading fleet (not this repo's write surface)**
+   - **`cemini-prod`** — CeminiSuite (`/opt/cemini`)
+   - **`cemini-egress-fi`** — Helsinki order egress (HL + PM) + federation raw-source cold store
    - **`cemini-librarian`** — **deleted** — see `wiki/meta/librarian-decommission-2026-06-14.md`
 
-## Fleet posture (2026-06-14)
-
-| Host | Purpose |
-|------|---------|
-| prod | Live trading, Lane A, streams |
-| egress-fi | HL / PM order routing |
-| laptop | Wiki, ingest, briefs, research |
-
-kb-server / stash / lazy-tool `kb_search` are **not** available until librarian is
-restored from snapshot.
+kb-server / stash / lazy-tool `kb_search` stay offline until librarian is restored. Query the wiki with Read/grep locally; use Exa for external gaps.
 
 ## Quick start
 
@@ -72,35 +50,63 @@ python3 scripts/wiki_gap_detect.py
 
 # Pre-distribution brief check
 python3 scripts/skill_audit.py briefs/<file>.md
+
+# Ingest session gate (before commit)
+python3 scripts/ingest_session_gate.py
 ```
+
+**Task routing (`/route`):** scripts live in private [`agent-toolkit`](https://github.com/cemini23/agent-toolkit) (`~/Projects/agent-toolkit`, `ROUTE_KIT`). TipDrop workspace-kit is redirect-only for route.
 
 ## Related repos
 
-- **CeminiSuite** — `~/Desktop/projects/CeminiSuite` (prod deploy monorepo)
-- **Federation hub** — `~/Desktop/projects/cemini-federation-hub`
-- **CCC wiki** and six public domain wikis — see `CLAUDE.md` Related Wikis table
+| Project | Path (laptop) |
+|---------|----------------|
+| **CeminiSuite** | `~/Projects/CeminiSuite` |
+| **CCC (Cursor / Claude Code meta-wiki)** | `~/Projects/Cemini claude code CCC` |
+| **Federation hub** | `~/Projects/cemini-federation-hub` |
+| **agent-toolkit** (`/route` host) | `~/Projects/agent-toolkit` |
+| **Atto** | `~/Projects/atto` · [youratto.com](https://youratto.com) |
+| **GuruWatcher** | `~/Projects/GuruWatcher` · [guruwatcher.com](https://guruwatcher.com) |
 
-See `CLAUDE.md` for full operating schema and `ROADMAP.md` for active workstreams.
+Public domain wikis and the full alias table live in `CLAUDE.md` → Related Wikis.
 
 ## Collaborators
 
-**New to this repo?** Read in order:
+**New here?** Read in order:
 
-1. **`CLAUDE.md`** — how agents and humans operate the wiki (ingest, query, lint, distribution).
-2. **`wiki/index.md`** — page catalog; **`wiki/log.md`** — recent operations.
-3. **`.cursor/README.md`** — MCP setup (lazy-tool must be **On** when this folder is open).
+1. **`CLAUDE.md`** — ingest, query, lint, distribution
+2. **`wiki/index.md`** + **`wiki/log.md`** — catalog and recent ops
+3. **`.cursor/README.md`** — MCP setup (turn **lazy-tool On** when this folder is open)
 
-**What stays private (gitignored):**
+**Keep private (gitignored):** `briefs/`, `.local/`, `research to be indexed/`. Never commit secrets or SSH targets.
 
-- **`briefs/`** — prod / CCC staging briefs (server IPs, deploy steps). Not in git by design.
-- **`.local/`** — SSH targets, API keys, reports. Never commit.
-- **`research to be indexed/`** — transient inbox before ingest.
+**Lab / cyber briefs:** stage under `Cybersecurity wiki/briefs/` (local abliterated lab). TipDrop/David kit is retired as a brief destination (2026-08-05).
 
-**TipDrop (David):** product wiki + handoff briefs live in **`tipdrop-workspace-kit`** (`~/Desktop/projects/tipdrop-workspace-kit`). This repo holds research canon; TipDrop kit gets operator-actionable briefs that cite `@osint-wiki/...` pages. Ritual: `tipdrop-workspace-kit/briefs/OSINT-HANDOFF-INGEST-RITUAL.md`.
-
-**Health checks before pushing:**
+**Before pushing:**
 
 ```bash
 python3 scripts/wiki_lint.py
 python3 scripts/ingest_session_gate.py
 ```
+
+## Support
+
+Thank you for your interest — and for any support, large or small. Tips and kind words both help keep Cemini research and tooling moving.
+
+Voluntary tips fund open research and public tooling. **Donation-only addresses** — not trading or production wallets. Canonical copy: [CCC SUPPORT.md](https://github.com/cemini23/cemini-claude-code-CCC/blob/main/SUPPORT.md).
+
+| Chain family | Address |
+|--------------|---------|
+| **EVM** (Ethereum, Polygon, Base, Arbitrum, …) | `0x444C5C2eC439E0382aa5a17F70313c536BcC5D58` |
+| **Solana / SVM** | `J4zNn4hK9jTrKBFY8sbAGJHLoZvXvQf4B9pQSbSrocZE` |
+| **Polymarket** (referral) | [polymarket.com/?r=Cemini23](https://polymarket.com/?r=Cemini23) |
+
+If you’d rather follow along or try something we ship:
+
+- Newsletter — [Outlier Weekly](https://outlierweekly.substack.com) (Substack)
+- Genealogy kit — [youratto.com](https://youratto.com)
+- Newsletter parameter alerts — [guruwatcher.com](https://guruwatcher.com)
+- YouTube — [@Cemini23](https://www.youtube.com/@Cemini23)
+- Public agent meta-wiki — [cemini-claude-code-CCC](https://github.com/cemini23/cemini-claude-code-CCC)
+
+We’re grateful you’re here. Thank you for your support.
