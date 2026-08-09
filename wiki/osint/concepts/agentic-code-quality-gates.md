@@ -4,15 +4,19 @@ type: concept
 tags: [ccc, quality, agents, k228]
 keywords: [quality gates, back-pressure, agent constraints]
 related:
+  - entities/tools/lifeos.md
+  - concepts/ideal-state-artifact-verification.md
   - sources/substack-rss-addy-osmani-2026-08-08-agentic-code-quality.md
   - concepts/code-as-agent-harness.md
   - entities/tools/pi-earendil.md
 maturity: draft
 created: 2026-08-08
-updated: 2026-08-08
+updated: 2026-08-09
 ---
 
 ## Relations
+- @entities/tools/lifeos.md
+- @concepts/ideal-state-artifact-verification.md — K229 ISA
 
 - @sources/substack-rss-addy-osmani-2026-08-08-agentic-code-quality.md
 - @concepts/code-as-agent-harness.md

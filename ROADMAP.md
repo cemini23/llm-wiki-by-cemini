@@ -24,6 +24,11 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 | behind | Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No |
 | retired | TipDrop / David kit | — | Do not route |
 
+## Current state (2026-08-09 — K229)
+
+- **K229 ingest** — GitHub Revenue Opportunity eval + Wu Asia TOP10. Phase-0 ~113MB. EpicStaff NO-GO; servo SIZE-SKIP.
+- **K229 Phase-1** — Atto pi-rlm+LifeOS+deepface Watch (board **K264** remap); GW flights Extract; CCC pi-rlm/ISA; cyber airecon; pm toolkits REFERENCE + xsp Wu → prod.
+
 ## Current state (2026-08-08 — K228)
 
 - **K228 ingest** — Project Portfolio + URL Revenue Stack evals + KV-cache paper + Osmani quality + Wu/CF. Phase-0 ~33MB. godoxy NO-GO; FUXA/OctoBot/buzz size-skip.

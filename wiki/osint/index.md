@@ -7,6 +7,22 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K229 ingest (2026-08-09)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-github-revenue-opportunity-2026-08-09](sources/eval-github-revenue-opportunity-2026-08-09.md) | Revenue eval — pi-rlm Integrate; LifeOS/airecon/flights Extract; deepface Watch; EpicStaff NO-GO (K229) | draft |
+| [substack-rss-wublock-2026-08-09-asia-top10-russia-japan](sources/substack-rss-wublock-2026-08-09-asia-top10-russia-japan.md) | Wu Asia TOP10 Russia/Japan crypto law → xsp (K229) | draft |
+| [pi-rlm](entities/tools/pi-rlm.md) | MIT persistent Bun execute Integrate → Atto+CCC (K229) | draft |
+| [lifeos](entities/tools/lifeos.md) | MIT LifeOS ISA Extract → CCC/Atto (K229) | draft |
+| [deepface](entities/tools/deepface.md) | MIT face recog Watch → Atto (K229) | draft |
+| [airecon-hf-sqlite](entities/tools/airecon-hf-sqlite.md) | MIT HF→SQLite Extract → cyber lab (K229) | draft |
+| [flights-rpc](entities/tools/flights-rpc.md) | MIT Google Flights RPC Extract → GW (K229) | draft |
+| [pm-trading-bot-toolkits](entities/tools/pm-trading-bot-toolkits.md) | MIT Rust PM engine Integrate REFERENCE → pm (K229) | draft |
+| [servo](entities/tools/servo.md) | MPL servo Watch SIZE-SKIP (K229) | draft |
+| [epicstaff](entities/tools/epicstaff.md) | EpicStaff NOASSERTION NO-GO (K229) | draft |
+| [ideal-state-artifact-verification](concepts/ideal-state-artifact-verification.md) | ISA/CloseGate harness pattern (K229) | draft |
+
 ### K228 ingest (2026-08-08 evening)
 
 | Page | Summary | Maturity |

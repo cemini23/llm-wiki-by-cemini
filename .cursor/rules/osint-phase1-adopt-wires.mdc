@@ -189,3 +189,14 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - SKT / agent-failure telemetry / Abduction Loop → CCC (+ Atto harness patterns); **no** SkillEval HF blob download; no agent-failure code clone this batch.
 - WuBlock July protocol tech → wiki-only; Event Horizon NY PM tax → gambling/pm awareness (no prod scp).
 
+
+## K229 — pi-rlm (Atto+CCC) + flights (GW) + airecon (cyber) + LifeOS ISA + PM toolkits REFERENCE
+
+- `pi-rlm` (MIT, `.local/adopts/pi-rlm` ~676KB) = persistent Bun `execute` namespace **Integrate** for Atto MCP + CCC — allowlist + supply-chain before enable; Magika + PII strip unchanged; never auto-write `truth.ged`.
+- `LifeOS` (MIT, `.local/adopts/LifeOS` ~40MB shallow) = **Extract ISA/CloseGate** patterns only — do not vendor full product; pairs Osmani quality gates.
+- `deepface` (MIT, `.local/adopts/deepface` ~59MB) = Atto **Watch** for archival photo clustering — GPU cost gate; not Transkribus HTR.
+- `flights` (MIT, `.local/adopts/flights` ~2.1MB) = GuruWatcher travel-inflation RPC **Extract** — alert-only; ToS/rate limits; never orders; never auto-rewrite `watches.json`.
+- `airecon` (MIT, `.local/adopts/airecon` ~11MB) = cyber lab HF→SQLite FTS **Extract** — authorized assist only; no TipDrop.
+- `pm-trading-bot-toolkits` (MIT, `.local/adopts/pm-trading-bot-toolkits` ~524KB) = pm-canary **Integrate REFERENCE** — not LIVE deploy; GW alert-only forever.
+- **SIZE-SKIP / NO-GO:** `servo/servo` ~1.9GB; `EpicStaff/EpicStaff` NOASSERTION.
+- Wu Asia TOP10 (Russia 282-FZ + Japan FSA) → **xsp** awareness only.

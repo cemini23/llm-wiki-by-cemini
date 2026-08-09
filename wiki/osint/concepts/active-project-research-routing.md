@@ -4,6 +4,16 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher, local-abliterated-lab]
 keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
 related:
+  - entities/tools/airecon-hf-sqlite.md
+  - entities/tools/deepface.md
+  - entities/tools/servo.md
+  - entities/tools/epicstaff.md
+  - entities/tools/pm-trading-bot-toolkits.md
+  - entities/tools/flights-rpc.md
+  - entities/tools/lifeos.md
+  - entities/tools/pi-rlm.md
+  - sources/substack-rss-wublock-2026-08-09-asia-top10-russia-japan.md
+  - sources/eval-github-revenue-opportunity-2026-08-09.md
   - sources/eval-url-revenue-stack-2026-08-08.md
   - sources/eval-project-portfolio-url-2026-08-08.md
   - sources/newsletter-rss-sterling-sky-2026-08-07-gbp-state-move.md
@@ -70,10 +80,20 @@ related:
   - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
 maturity: core
 created: 2026-06-17
-updated: 2026-08-08
+updated: 2026-08-09
 ---
 
 ## Relations
+- @entities/tools/epicstaff.md
+- @entities/tools/servo.md
+- @entities/tools/deepface.md
+- @entities/tools/airecon-hf-sqlite.md
+- @entities/tools/pm-trading-bot-toolkits.md
+- @entities/tools/flights-rpc.md
+- @entities/tools/lifeos.md
+- @entities/tools/pi-rlm.md
+- @sources/substack-rss-wublock-2026-08-09-asia-top10-russia-japan.md
+- @sources/eval-github-revenue-opportunity-2026-08-09.md — K229
 
 - @sources/eval-url-revenue-stack-2026-08-08.md — K228
 

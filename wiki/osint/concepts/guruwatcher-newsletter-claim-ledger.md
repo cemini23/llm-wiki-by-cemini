@@ -5,6 +5,7 @@ type: concept
 tags: [concept, guruwatcher, discord, macro, k200, core-candidate]
 keywords: [claim ledger, most-recent-wins, sustain, verbatim guards, Macro Charts]
 related:
+  - entities/tools/flights-rpc.md
   - sources/eval-url-batch-agentic-edge-security-2026-08-05.md
   - sources/substack-rss-klement-2026-08-05-data-centre-reality-check.md
   - entities/tools/cloudflare-os.md
@@ -32,10 +33,11 @@ related:
   - entities/tools/mubeng.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-08-06
+updated: 2026-08-09
 ---
 
 ## Relations
+- @entities/tools/flights-rpc.md — K229 flights Extract
 
 - @sources/macro-charts-paid-forward-2026-08-06.md
 

@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-08-09] ingest | K229 — GitHub Revenue Opportunity eval + Wu Asia TOP10
+
+- **Eval:** pi-rlm MIT Integrate → Atto+CCC; PM toolkits MIT Integrate REFERENCE → pm; airecon/flights/LifeOS Extract; deepface Watch; servo SIZE-SKIP; EpicStaff NOASSERTION NO-GO
+- **RSS:** Wu Asia TOP10 (Russia 282-FZ + Japan FSA crypto/stablecoin) → xsp awareness
+- **Phase-0 ~113MB** (pi-rlm, pm-trading-bot-toolkits, airecon, flights, deepface, LifeOS)
+- Briefs → Atto (remap K264) / GuruWatcher / CCC / cyber / pm+xsp prod; poker no-path
+
+## [2026-08-09] phase1 | K229 surface wires (Atto / GuruWatcher / CCC / cyber)
+
+- OSINT `osint-phase1-adopt-wires.mdc` K229
+- Surface: `atto-k264` · `guruwatcher-k229` · `ccc-k229` · `cyber-k229`
+- Prod: `xsp-k229-wublock-asia-top10.md` + `pm-k229-trading-bot-toolkits.md`
+
+
 ## [2026-08-08] ops | /route host → private agent-toolkit
 
 - Canon scripts: `~/Projects/agent-toolkit` (`ROUTE_KIT`); tipdrop kit redirect-only

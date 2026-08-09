@@ -4,6 +4,8 @@ type: concept
 tags: [genealogy, archival, automation, italy, antenati, draft]
 keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double Metaphone, kinship graph]
 related:
+  - entities/tools/pi-rlm.md
+  - entities/tools/deepface.md
   - entities/tools/gosearch.md
   - entities/tools/sherlock.md
   - sources/arxiv-2608.05911-armenian-paris-geocoding-2026-08-07.md
@@ -72,10 +74,12 @@ related:
   - sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-08-08
+updated: 2026-08-09
 ---
 
 ## Relations
+- @entities/tools/pi-rlm.md
+- @entities/tools/deepface.md — K229
 
 - @entities/tools/gosearch.md — FIND combo GPL isolate (K227)
 

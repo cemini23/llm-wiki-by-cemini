@@ -4,6 +4,7 @@ type: entity
 tags: [tool, ccc, k228, mit]
 keywords: [pi-earendil]
 related:
+  - entities/tools/pi-rlm.md
   - concepts/zawinski-law-of-multiagents.md
   - concepts/code-as-agent-harness.md
   - concepts/agentic-code-quality-gates.md
@@ -13,10 +14,11 @@ related:
   - concepts/cemini-license-posture.md
 maturity: draft
 created: 2026-08-08
-updated: 2026-08-08
+updated: 2026-08-09
 ---
 
 ## Relations
+- @entities/tools/pi-rlm.md — K229 sibling pi
 
 - @concepts/zawinski-law-of-multiagents.md
 - @concepts/code-as-agent-harness.md

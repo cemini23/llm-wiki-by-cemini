@@ -4,6 +4,10 @@ type: concept
 tags: [concept, agent-harness, coding-agents, agentic-ai, survey-synthesis]
 keywords: [code-as-agent-harness, harness-interface, harness-mechanisms, multi-agent-coordination, verification, stateful-agents]
 related:
+  - sources/eval-github-revenue-opportunity-2026-08-09.md
+  - concepts/ideal-state-artifact-verification.md
+  - entities/tools/lifeos.md
+  - entities/tools/pi-rlm.md
   - entities/tools/pi-earendil.md
   - sources/substack-rss-addy-osmani-2026-08-08-agentic-code-quality.md
   - sources/arxiv-2608.03893-cross-model-kv-cache-2026-08-08.md
@@ -102,10 +106,14 @@ related:
   - concepts/skill-regression-tax.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-08-08
+updated: 2026-08-09
 ---
 
 ## Relations
+- @sources/eval-github-revenue-opportunity-2026-08-09.md
+- @concepts/ideal-state-artifact-verification.md
+- @entities/tools/lifeos.md
+- @entities/tools/pi-rlm.md — K229
 
 - @entities/tools/pi-earendil.md — K228
 

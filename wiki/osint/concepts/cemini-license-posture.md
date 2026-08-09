@@ -5,6 +5,15 @@ type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
 keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
+  - entities/tools/lifeos.md
+  - entities/tools/deepface.md
+  - entities/tools/airecon-hf-sqlite.md
+  - entities/tools/flights-rpc.md
+  - entities/tools/pm-trading-bot-toolkits.md
+  - entities/tools/servo.md
+  - entities/tools/pi-rlm.md
+  - entities/tools/epicstaff.md
+  - sources/eval-github-revenue-opportunity-2026-08-09.md
   - sources/eval-url-revenue-stack-2026-08-08.md
   - sources/eval-project-portfolio-url-2026-08-08.md
   - sources/eval-url-revenue-opportunity-2026-08-08.md
@@ -86,10 +95,19 @@ related:
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-08-08
+updated: 2026-08-09
 ---
 
 ## Relations
+- @entities/tools/servo.md
+- @entities/tools/pm-trading-bot-toolkits.md
+- @entities/tools/flights-rpc.md
+- @entities/tools/airecon-hf-sqlite.md
+- @entities/tools/deepface.md
+- @entities/tools/lifeos.md
+- @entities/tools/pi-rlm.md
+- @entities/tools/epicstaff.md
+- @sources/eval-github-revenue-opportunity-2026-08-09.md — K229 SPDX verify
 
 - @sources/eval-url-revenue-stack-2026-08-08.md — K228
 
