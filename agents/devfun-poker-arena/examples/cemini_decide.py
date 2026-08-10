@@ -748,10 +748,22 @@ def _hu_bb_chart_raise_vs_open(
     suggested: str,
     position: str,
 ) -> tuple[str, Optional[int]] | None:
-    """HU BB: 3-bet when static chart says raise vs open/complete."""
+    """HU BB: 3-bet when static chart says raise vs open/complete.
+
+    Tournament freeze (2026-08-10): refuse chart 3bet/4bet — 86s/87s ladders
+    were a primary T12 bust path under TABLE_FORMAT=auto mid-hand HU flips.
+    Also refuse when already facing a re-raise (>3bb to call).
+    """
     if not _is_hu_table(table) or position != "BB":
         return None
     if call_chips <= 0 or suggested != "raise":
+        return None
+    if os.environ.get("CEMINI_TOURNAMENT_MODE", "").strip().lower() in (
+        "1", "true", "yes", "on",
+    ):
+        return None
+    bb = int(table.get("bigBlind") or table.get("bb") or 0) or 0
+    if bb > 0 and call_chips > 3 * bb:
         return None
     if not allowed.get("canRaise") or "raise" not in available:
         return None

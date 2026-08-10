@@ -200,3 +200,13 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - `pm-trading-bot-toolkits` (MIT, `.local/adopts/pm-trading-bot-toolkits` ~524KB) = pm-canary **Integrate REFERENCE** — not LIVE deploy; GW alert-only forever.
 - **SIZE-SKIP / NO-GO:** `servo/servo` ~1.9GB; `EpicStaff/EpicStaff` NOASSERTION.
 - Wu Asia TOP10 (Russia 282-FZ + Japan FSA) → **xsp** awareness only.
+
+## K230 — diagram-design + tookie (Atto) · weathernext (GW) · t3code/code-graph-rag/CLIProxy (CCC) · papers
+
+- `diagram-design` (MIT, `.local/adopts/diagram-design` ~10MB) = Atto vault/share **Integrate** for HTML/SVG lineage diagrams — brand/WCAG; no Mermaid bloat; Magika + PII strip unchanged.
+- `tookie-osint` (MIT, `.local/adopts/tookie-osint` ~1.7MB) = Atto FIND **Extract** — human-gated; ToS/rate limits; no Barone PII fixtures; pairs sherlock/gosearch.
+- `weathernext` (Apache-2.0, `.local/adopts/weathernext` ~11MB) = GuruWatcher weather/macro **Extract** — alert-only; never orders; never auto-rewrite `watches.json`.
+- `t3code` (MIT ~316MB) + `code-graph-rag` (MIT ~41MB) + `CLIProxyAPI` (MIT ~23MB) = CCC **Integrate** ideation — preflight/supply-chain before enable; do not vendor into Atto SaaS without GO.
+- `LifeOS` = Extract **reaffirm** (K229). `EpicStaff` = **NO-GO** NOASSERTION reaffirm.
+- **Size-hold / no-clone:** RuView, iLEAPP; Dopamine jailbreak ethics no-clone.
+- Papers: A2E + Niyam + DiDPO + trajectory attribution → CCC; CyberLLM → cyber lab (HITL); YOLO-PEFT → image/Atto Watch (not Transkribus HTR).

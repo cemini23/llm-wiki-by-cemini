@@ -24,6 +24,11 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 | behind | Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No |
 | retired | TipDrop / David kit | — | Do not route |
 
+## Current state (2026-08-10 — K230)
+
+- **K230 ingest** — GitHub Repository Evaluation Plan + 6 arXiv. Phase-0 ~402MB. EpicStaff NO-GO; Dopamine no-clone; RuView/iLEAPP size-hold.
+- **K230 Phase-1** — Atto diagram-design + tookie FIND (board **K267** remap); GW weathernext; CCC t3code/code-graph-rag/CLIProxy/A2E/Niyam; cyber CyberLLM.
+
 ## Current state (2026-08-09 — K229)
 
 - **K229 ingest** — GitHub Revenue Opportunity eval + Wu Asia TOP10. Phase-0 ~113MB. EpicStaff NO-GO; servo SIZE-SKIP.

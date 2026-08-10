@@ -5,6 +5,15 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - entities/tools/ruview.md
+  - entities/tools/ileapp.md
+  - entities/tools/dopamine-jailbreak.md
+  - sources/eval-github-repository-evaluation-plan-2026-08-10.md
+  - entities/tools/diagram-design.md
+  - entities/tools/weathernext.md
+  - entities/tools/code-graph-rag.md
+  - entities/tools/cliproxyapi.md
+  - entities/tools/tookie-osint.md
   - entities/tools/servo.md
   - entities/tools/epicstaff.md
   - entities/tools/pm-trading-bot-toolkits.md
@@ -282,10 +291,19 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-08-09
+updated: 2026-08-10
 ---
 
 ## Relations
+- @entities/tools/dopamine-jailbreak.md
+- @entities/tools/ileapp.md
+- @entities/tools/ruview.md
+- @entities/tools/tookie-osint.md
+- @entities/tools/cliproxyapi.md
+- @entities/tools/code-graph-rag.md
+- @entities/tools/weathernext.md
+- @entities/tools/diagram-design.md
+- @sources/eval-github-repository-evaluation-plan-2026-08-10.md — K230
 - @entities/tools/epicstaff.md
 - @entities/tools/servo.md
 - @entities/tools/pm-trading-bot-toolkits.md

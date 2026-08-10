@@ -4,6 +4,7 @@ type: entity
 tags: [tool, guruwatcher, discord, alert-only, k200]
 keywords: [GuruWatcher, claim ledger, Discord, Macro Charts]
 related:
+  - entities/tools/weathernext.md
   - entities/tools/flights-rpc.md
   - concepts/guruwatcher-newsletter-claim-ledger.md
   - sources/substack-rss-outlier-weekly-2026-07-28-guruwatcher-discord.md
@@ -13,10 +14,11 @@ related:
   - sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-08-09
+updated: 2026-08-10
 ---
 
 ## Relations
+- @entities/tools/weathernext.md — K230
 - @entities/tools/flights-rpc.md — K229
 
 - @concepts/guruwatcher-newsletter-claim-ledger.md

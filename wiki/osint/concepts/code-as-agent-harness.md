@@ -4,6 +4,15 @@ type: concept
 tags: [concept, agent-harness, coding-agents, agentic-ai, survey-synthesis]
 keywords: [code-as-agent-harness, harness-interface, harness-mechanisms, multi-agent-coordination, verification, stateful-agents]
 related:
+  - entities/tools/t3code.md
+  - entities/tools/code-graph-rag.md
+  - entities/tools/cliproxyapi.md
+  - concepts/agent-harness-auditing-a2e.md
+  - concepts/intent-bound-tool-gates.md
+  - sources/arxiv-2608.07346-a2e-agent-auditing-2026-08-10.md
+  - sources/arxiv-2608.07167-niyamai-intent-bound-2026-08-10.md
+  - sources/arxiv-2608.07147-didpo-coding-agent-2026-08-10.md
+  - sources/arxiv-2608.06909-trajectory-attribution-2026-08-10.md
   - sources/eval-github-revenue-opportunity-2026-08-09.md
   - concepts/ideal-state-artifact-verification.md
   - entities/tools/lifeos.md
@@ -106,10 +115,19 @@ related:
   - concepts/skill-regression-tax.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-08-09
+updated: 2026-08-10
 ---
 
 ## Relations
+- @sources/arxiv-2608.06909-trajectory-attribution-2026-08-10.md
+- @sources/arxiv-2608.07147-didpo-coding-agent-2026-08-10.md
+- @sources/arxiv-2608.07167-niyamai-intent-bound-2026-08-10.md
+- @sources/arxiv-2608.07346-a2e-agent-auditing-2026-08-10.md
+- @concepts/intent-bound-tool-gates.md
+- @concepts/agent-harness-auditing-a2e.md
+- @entities/tools/cliproxyapi.md
+- @entities/tools/code-graph-rag.md
+- @entities/tools/t3code.md — K230
 - @sources/eval-github-revenue-opportunity-2026-08-09.md
 - @concepts/ideal-state-artifact-verification.md
 - @entities/tools/lifeos.md

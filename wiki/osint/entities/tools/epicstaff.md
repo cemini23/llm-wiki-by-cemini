@@ -4,16 +4,18 @@ type: entity
 tags: [tool, k229, phase-0]
 keywords: [epicstaff]
 related:
+  - sources/eval-github-repository-evaluation-plan-2026-08-10.md
   - sources/eval-github-revenue-opportunity-2026-08-09.md
   - concepts/cemini-license-posture.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/active-project-research-routing.md
 maturity: draft
 created: 2026-08-09
-updated: 2026-08-09
+updated: 2026-08-10
 ---
 
 ## Relations
+- @sources/eval-github-repository-evaluation-plan-2026-08-10.md — K230 reaffirm
 
 - @sources/eval-github-revenue-opportunity-2026-08-09.md
 - @concepts/cemini-license-posture.md

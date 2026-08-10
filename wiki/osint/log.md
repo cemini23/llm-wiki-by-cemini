@@ -1,5 +1,18 @@
 # Wiki Log
 
+## [2026-08-10] ingest | K230 — repo eval plan + 6 arXiv (CyberLLM/TrajAttr/YOLO-PEFT/DiDPO/Niyam/A2E)
+
+- **Eval:** diagram-design + code-graph-rag + t3code + CLIProxyAPI Integrate; weathernext + tookie-osint Extract; LifeOS reaffirm; EpicStaff NO-GO; RuView/iLEAPP size-hold; Dopamine no-clone
+- **Papers:** CyberLLM → cyber; trajectory attribution + DiDPO + Niyam + A2E → CCC; YOLO-PEFT → image/Atto Watch
+- **Phase-0 ~402MB** (diagram-design, weathernext, code-graph-rag, t3code, CLIProxyAPI, tookie-osint)
+- Briefs → Atto K267 remap / GW / CCC / cyber / poker no-path; no prod xsp this batch
+
+## [2026-08-10] phase1 | K230 surface wires (Atto / GuruWatcher / CCC / cyber)
+
+- OSINT `osint-phase1-adopt-wires.mdc` K230
+- Surface: `atto-k267` · `guruwatcher-k230` · `ccc-k230` · `cyber-k230`
+
+
 ## [2026-08-09] ingest | K229 — GitHub Revenue Opportunity eval + Wu Asia TOP10
 
 - **Eval:** pi-rlm MIT Integrate → Atto+CCC; PM toolkits MIT Integrate REFERENCE → pm; airecon/flights/LifeOS Extract; deepface Watch; servo SIZE-SKIP; EpicStaff NOASSERTION NO-GO

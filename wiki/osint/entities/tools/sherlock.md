@@ -4,6 +4,7 @@ type: entity
 tags: [tool, atto, osint, k227, mit]
 keywords: [sherlock, username enumeration, FIND]
 related:
+  - entities/tools/tookie-osint.md
   - sources/eval-url-revenue-opportunity-2026-08-08.md
   - sources/substack-rss-secpro-2026-08-07-beyond-threat-hunting.md
   - entities/tools/gosearch.md
@@ -11,13 +12,14 @@ related:
   - concepts/computational-genealogy-archival-automation.md
 maturity: draft
 created: 2026-08-08
-updated: 2026-08-08
+updated: 2026-08-10
 wire_status: policy_wired
 wire_target: Atto .cursor/rules/atto-k227-phase1-wires.mdc
 wire_note: FIND deep-links Extract; human-gated; ToS/rate limits
 ---
 
 ## Relations
+- @entities/tools/tookie-osint.md — K230 FIND sibling
 
 - @sources/eval-url-revenue-opportunity-2026-08-08.md
 - @sources/substack-rss-secpro-2026-08-07-beyond-threat-hunting.md

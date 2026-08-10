@@ -4,6 +4,18 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher, local-abliterated-lab]
 keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
 related:
+  - entities/tools/ruview.md
+  - entities/tools/ileapp.md
+  - entities/tools/dopamine-jailbreak.md
+  - sources/arxiv-2608.06651-cyberllm-automotive-2026-08-10.md
+  - sources/arxiv-2608.07051-yolo-peft-2026-08-10.md
+  - sources/eval-github-repository-evaluation-plan-2026-08-10.md
+  - entities/tools/diagram-design.md
+  - entities/tools/weathernext.md
+  - entities/tools/tookie-osint.md
+  - entities/tools/t3code.md
+  - entities/tools/code-graph-rag.md
+  - entities/tools/cliproxyapi.md
   - entities/tools/airecon-hf-sqlite.md
   - entities/tools/deepface.md
   - entities/tools/servo.md
@@ -80,10 +92,22 @@ related:
   - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
 maturity: core
 created: 2026-06-17
-updated: 2026-08-09
+updated: 2026-08-10
 ---
 
 ## Relations
+- @sources/arxiv-2608.07051-yolo-peft-2026-08-10.md
+- @sources/arxiv-2608.06651-cyberllm-automotive-2026-08-10.md
+- @entities/tools/dopamine-jailbreak.md
+- @entities/tools/ileapp.md
+- @entities/tools/ruview.md — K230
+- @entities/tools/cliproxyapi.md
+- @entities/tools/code-graph-rag.md
+- @entities/tools/t3code.md
+- @entities/tools/tookie-osint.md
+- @entities/tools/weathernext.md
+- @entities/tools/diagram-design.md
+- @sources/eval-github-repository-evaluation-plan-2026-08-10.md — K230
 - @entities/tools/epicstaff.md
 - @entities/tools/servo.md
 - @entities/tools/deepface.md

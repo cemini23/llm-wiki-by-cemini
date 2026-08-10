@@ -296,14 +296,16 @@ def _apply_competition_posture(competition_id: str) -> None:
             "JACKPOT_27_HUNT_ENABLED": "0",
         })
     elif _s10_tournament or _s12_tournament:
-        # Tournament KO — gin-killed + short-stack safe (T10 climb gin abandoned).
-        # S12 T12 #1 pack: blind defend + thin-cushion chase + short-stack 12bb.
+        # Tournament KO — gin-killed + stack-repair freeze (2026-08-10).
+        # Dual audit: climb pack + TAG_WIDEN leftover + TABLE_FORMAT=auto → bust.
+        # Force 6max + clear widen/polar/flat/chase until next GO.
         _t12 = {
             "CEMINI_TOURNAMENT_MODE": "1",
-            "CEMINI_TABLE_FORMAT": "auto",
+            "CEMINI_TABLE_FORMAT": "6max",
+            "CEMINI_TAG_WIDEN": "0",
             "CEMINI_RESEARCHER_MODE": "0",
             "CEMINI_SANDBOX_PVP_SUBMIT_ONLY": "0",
-            "CEMINI_PLACEMENT_CHASE": "1" if _s12_tournament else "0",
+            "CEMINI_PLACEMENT_CHASE": "0",
             "CEMINI_EVAL_PANEL_GATE": "0",
             "CEMINI_EVAL_PANEL_MODE": "0",
             "CEMINI_PRIZE_CUTOFF_RANK": "3",
@@ -314,7 +316,7 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_S1B_MIN_STACK_BB": "60",
             "CEMINI_STAGGER_LOCKS": "0",
             "CEMINI_COLD_START_NO_STEAL": "1",
-            "CEMINI_NEMESIS_TIGHT": "0" if _s12_tournament else "1",
+            "CEMINI_NEMESIS_TIGHT": "1",
             "CEMINI_GIN_KILL": "1",
             "CEMINI_GIN_STYLE": "0",
             "CEMINI_GIN_STYLE_PREFLOP": "0",
@@ -322,7 +324,7 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_GIN_STYLE_GATE": "0",
             "CEMINI_GIN_V008": "0",
             "CEMINI_GIN_V2_EXPLOITS": "0",
-            "CEMINI_SHORT_STACK_BB": "12" if _s12_tournament else "20",
+            "CEMINI_SHORT_STACK_BB": "20",
             "CEMINI_MAX_REBUYS": "0" if _s12_tournament else "2",
             "CEMINI_REBUY_MAX_MON": "0" if _s12_tournament else "5",
             "CEMINI_MAFP_CHART": "0",
@@ -337,17 +339,16 @@ def _apply_competition_posture(competition_id: str) -> None:
         }
         if _s12_tournament:
             _t12.update({
-                "CEMINI_TAG_BLIND_DEFEND": "1",
+                # Freeze climb aggression (briefs/2026-08-10_tournament-stack-repair.md).
+                "CEMINI_TAG_BLIND_DEFEND": "0",
                 "CEMINI_PLACEMENT_PROTECT_BUFFER_PCT": "0.35",
                 "CEMINI_KO_SURVIVAL_MIN_STACK": "250",
-                # P1-6: survival is early-hand cold-start only — soften 60 → 30.
-                "CEMINI_KO_SURVIVAL_HANDS": "30",
-                # T12 climb knobs (P1/P2). Gin stays killed, rebuys 0.
-                "CEMINI_NAMED_NEMESIS_TIGHT": "0",
-                "CEMINI_TOURNAMENT_3BET": "1",
+                "CEMINI_KO_SURVIVAL_HANDS": "60",
+                "CEMINI_NAMED_NEMESIS_TIGHT": "1",
+                "CEMINI_TOURNAMENT_3BET": "0",
                 "CEMINI_SHORT_STACK_JAM_BB": "8",
-                "CEMINI_FLAT_DOMINATE": "1",
-                "CEMINI_TOURNAMENT_3BET_POLAR": "1",
+                "CEMINI_FLAT_DOMINATE": "0",
+                "CEMINI_TOURNAMENT_3BET_POLAR": "0",
                 "CEMINI_STOP_WIN_MULT": "0",
             })
         os.environ.update(_t12)

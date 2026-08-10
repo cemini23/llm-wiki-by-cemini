@@ -7,6 +7,26 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K230 ingest (2026-08-10)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-github-repository-evaluation-plan-2026-08-10](sources/eval-github-repository-evaluation-plan-2026-08-10.md) | Repo eval — diagram-design/t3code/code-graph-rag/CLIProxy Integrate; weathernext/tookie Extract; EpicStaff NO-GO (K230) | draft |
+| [arxiv-2608.06651-cyberllm-automotive](sources/arxiv-2608.06651-cyberllm-automotive-2026-08-10.md) | CyberLLM automotive multi-agent → cyber (K230) | draft |
+| [arxiv-2608.06909-trajectory-attribution](sources/arxiv-2608.06909-trajectory-attribution-2026-08-10.md) | Trajectory attribution bench → CCC (K230) | draft |
+| [arxiv-2608.07051-yolo-peft](sources/arxiv-2608.07051-yolo-peft-2026-08-10.md) | YOLO-PEFT detector adapters → image/Atto Watch (K230) | draft |
+| [arxiv-2608.07147-didpo-coding-agent](sources/arxiv-2608.07147-didpo-coding-agent-2026-08-10.md) | DiDPO code-diff RL → CCC (K230) | draft |
+| [arxiv-2608.07167-niyamai-intent-bound](sources/arxiv-2608.07167-niyamai-intent-bound-2026-08-10.md) | Niyam-AI intent+zk tool gates → CCC (K230) | draft |
+| [arxiv-2608.07346-a2e-agent-auditing](sources/arxiv-2608.07346-a2e-agent-auditing-2026-08-10.md) | A2E harness auditing engine → CCC (K230) | draft |
+| [diagram-design](entities/tools/diagram-design.md) | MIT SVG lineage diagrams Integrate → Atto (K230) | draft |
+| [weathernext](entities/tools/weathernext.md) | Apache WeatherNext Extract → GW (K230) | draft |
+| [code-graph-rag](entities/tools/code-graph-rag.md) | MIT code graph RAG Integrate → CCC (K230) | draft |
+| [t3code](entities/tools/t3code.md) | MIT t3code harness Integrate → CCC (K230) | draft |
+| [cliproxyapi](entities/tools/cliproxyapi.md) | MIT CLIProxyAPI Integrate → CCC (K230) | draft |
+| [tookie-osint](entities/tools/tookie-osint.md) | MIT tookie-osint Extract → Atto FIND (K230) | draft |
+| [agent-harness-auditing-a2e](concepts/agent-harness-auditing-a2e.md) | A2E/ATP harness audit pattern (K230) | draft |
+| [intent-bound-tool-gates](concepts/intent-bound-tool-gates.md) | Intent Contract + zk tool gates (K230) | draft |
+
 ### K229 ingest (2026-08-09)
 
 | Page | Summary | Maturity |

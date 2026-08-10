@@ -4,6 +4,7 @@ type: entity
 tags: [tool, k229, phase-0]
 keywords: [LifeOS]
 related:
+  - sources/eval-github-repository-evaluation-plan-2026-08-10.md
   - concepts/gpuology-genealogy-agent-kit.md
   - sources/eval-github-revenue-opportunity-2026-08-09.md
   - concepts/cemini-license-posture.md
@@ -15,10 +16,11 @@ related:
   - entities/tools/pi-rlm.md
 maturity: draft
 created: 2026-08-09
-updated: 2026-08-09
+updated: 2026-08-10
 ---
 
 ## Relations
+- @sources/eval-github-repository-evaluation-plan-2026-08-10.md — K230 reaffirm
 - @concepts/gpuology-genealogy-agent-kit.md
 
 - @sources/eval-github-revenue-opportunity-2026-08-09.md

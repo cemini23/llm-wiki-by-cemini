@@ -5,6 +5,16 @@ type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
 keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
+  - entities/tools/diagram-design.md
+  - entities/tools/weathernext.md
+  - entities/tools/t3code.md
+  - entities/tools/code-graph-rag.md
+  - entities/tools/cliproxyapi.md
+  - entities/tools/tookie-osint.md
+  - entities/tools/ruview.md
+  - entities/tools/ileapp.md
+  - entities/tools/dopamine-jailbreak.md
+  - sources/eval-github-repository-evaluation-plan-2026-08-10.md
   - entities/tools/lifeos.md
   - entities/tools/deepface.md
   - entities/tools/airecon-hf-sqlite.md
@@ -95,10 +105,20 @@ related:
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-08-09
+updated: 2026-08-10
 ---
 
 ## Relations
+- @entities/tools/dopamine-jailbreak.md
+- @entities/tools/ileapp.md
+- @entities/tools/ruview.md
+- @entities/tools/tookie-osint.md
+- @entities/tools/cliproxyapi.md
+- @entities/tools/code-graph-rag.md
+- @entities/tools/t3code.md
+- @entities/tools/weathernext.md
+- @entities/tools/diagram-design.md
+- @sources/eval-github-repository-evaluation-plan-2026-08-10.md — K230
 - @entities/tools/servo.md
 - @entities/tools/pm-trading-bot-toolkits.md
 - @entities/tools/flights-rpc.md

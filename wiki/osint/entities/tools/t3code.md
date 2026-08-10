@@ -1,34 +1,43 @@
 ---
-
-title: "t3code — agent execution GUI"
+title: "t3code — T3 coding agent harness (Integrate → CCC)"
 type: entity
-tags: [tool, tipdrop, atto, k197, integrate]
-keywords: [t3code, pingdotgg, agent GUI]
+tags: [tool, k230, phase-0]
+keywords: [t3code]
 related:
-  - sources/eval-revenue-opportunity-url-analysis-2026-07-27.md
-  - concepts/wiki-tooling-evaluation.md
   - concepts/gpuology-genealogy-agent-kit.md
+  - sources/eval-revenue-opportunity-url-analysis-2026-07-27.md
+  - sources/eval-github-repository-evaluation-plan-2026-08-10.md
+  - concepts/cemini-license-posture.md
+  - concepts/wiki-tooling-evaluation.md
+  - concepts/active-project-research-routing.md
+  - concepts/code-as-agent-harness.md
 maturity: draft
-created: 2026-07-27
-updated: 2026-07-31
-wire_status: wont_wire
-wire_note: editor REFERENCE; TipDrop/Atto if needed
+created: 2026-08-10
+updated: 2026-08-10
 ---
 
 ## Relations
-
 - @sources/eval-revenue-opportunity-url-analysis-2026-07-27.md
-- @concepts/wiki-tooling-evaluation.md
 - @concepts/gpuology-genealogy-agent-kit.md
+
+- @sources/eval-github-repository-evaluation-plan-2026-08-10.md
+- @concepts/cemini-license-posture.md
+- @concepts/wiki-tooling-evaluation.md
+- @concepts/active-project-research-routing.md
+- @concepts/code-as-agent-harness.md
 
 ## Raw Concept
 
-Phase-0 K197 Integrate. https://github.com/pingdotgg/t3code
+K230 Phase-0.
 
 ## Narrative
 
-| Field | Value |
-|-------|-------|
-| **License** | MIT `[CONFIRMED]` |
-| **Tier** | Integrate |
-| **Fit** | Agent execution GUI to speed Atto/TipDrop feature loops |
+- **URL:** https://github.com/pingdotgg/t3code
+- **License:** MIT
+- **Size / clone:** ~316MB
+- **Fit:** CCC
+- **Verdict:** **GO Integrate**
+
+pingdotgg t3code agent harness. Large REFERENCE/Integrate for CCC — do not vendor into Atto SaaS without GO.
+
+[Source: sources/eval-github-repository-evaluation-plan-2026-08-10.md]

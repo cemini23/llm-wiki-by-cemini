@@ -5,6 +5,8 @@ type: concept
 tags: [concept, genealogy, product, gpuology, revenue, k176, draft]
 keywords: [jure sanguinis, BYO-auth, Cloudflare Access, Topola, Transkribus, intake dump, PII vault, SSN, hybrid kit-concierge]
 related:
+  - entities/tools/diagram-design.md
+  - entities/tools/tookie-osint.md
   - entities/tools/lifeos.md
   - entities/tools/pi-rlm.md
   - entities/tools/deepface.md
@@ -171,10 +173,12 @@ related:
   - sources/eval-github-repo-revenue-analysis-htr-2026-08-01.md
 maturity: draft
 created: 2026-07-20
-updated: 2026-08-09
+updated: 2026-08-10
 ---
 
 ## Relations
+- @entities/tools/tookie-osint.md
+- @entities/tools/diagram-design.md — K230
 - @entities/tools/lifeos.md
 - @entities/tools/pi-rlm.md
 - @entities/tools/deepface.md — K229

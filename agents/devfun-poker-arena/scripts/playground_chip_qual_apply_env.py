@@ -18,6 +18,7 @@ DEFAULT_COMPS = {
     10: "cms0bwufmf3n8kyykdpxi6d2i",
     11: "cms7hrnjg20czv7oi85cho570",
     12: "cmseo8d3e4fmh12qragnvqct6",
+    13: "cmsg35zvs001hbagh1wdjc1me",
 }
 
 
