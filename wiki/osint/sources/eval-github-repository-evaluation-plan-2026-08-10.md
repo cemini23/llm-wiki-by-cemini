@@ -7,6 +7,7 @@ related:
   - entities/tools/ruview.md
   - entities/tools/ileapp.md
   - entities/tools/dopamine-jailbreak.md
+  - entities/tools/qwen-mm-plugins.md
   - concepts/agent-harness-auditing-a2e.md
   - concepts/intent-bound-tool-gates.md
   - entities/tools/diagram-design.md
@@ -36,6 +37,7 @@ read_status: read
 - @concepts/intent-bound-tool-gates.md
 - @concepts/agent-harness-auditing-a2e.md
 - @entities/tools/dopamine-jailbreak.md
+- @entities/tools/qwen-mm-plugins.md — URL 20 UNAVAILABLE→GO core Integrate (post-eval live check)
 - @entities/tools/ileapp.md
 - @entities/tools/ruview.md
 
@@ -86,7 +88,8 @@ read_status: read
 | 16 | Alfredredbird/tookie-osint | **MIT** | Extract | **GO Extract** ~1.7MB → Atto FIND |
 | 7,9 | Pass | — | Skip |
 | 12,17 | Context | — | image-gen / cyber briefs |
-| 14–15,18–20 | UNAVAILABLE | — | Skip |
+| 20 | QwenLM/Qwen-MM-Plugins | **Apache-2.0** | UNAVAILABLE→GO | **GO Integrate `core`** ~74MB → Atto (post-eval live check; not `/route`) |
+| 14–15,18–19 | UNAVAILABLE | — | Skip |
 
 Phase-0: `scripts/adopt_k230_phase0.sh` → `.local/adopts/` (~402MB).
 

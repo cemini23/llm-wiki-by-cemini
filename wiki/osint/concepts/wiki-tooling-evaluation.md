@@ -5,6 +5,7 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - entities/tools/qwen-mm-plugins.md
   - entities/tools/ruview.md
   - entities/tools/ileapp.md
   - entities/tools/dopamine-jailbreak.md
@@ -295,6 +296,7 @@ updated: 2026-08-10
 ---
 
 ## Relations
+- @entities/tools/qwen-mm-plugins.md
 - @entities/tools/dopamine-jailbreak.md
 - @entities/tools/ileapp.md
 - @entities/tools/ruview.md

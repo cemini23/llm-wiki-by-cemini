@@ -7,6 +7,12 @@
 - **Phase-0 ~402MB** (diagram-design, weathernext, code-graph-rag, t3code, CLIProxyAPI, tookie-osint)
 - Briefs → Atto K267 remap / GW / CCC / cyber / poker no-path; no prod xsp this batch
 
+## [2026-08-10] phase0 | Qwen-MM-Plugins core → Atto (K230 follow-up)
+
+- Live gh check overturned URL 20 UNAVAILABLE → **Apache-2.0 GO Integrate `core` only** (~74MB `.local/adopts/Qwen-MM-Plugins`)
+- **Not** wired into `/route` — optional vision/OCR executor capability
+- Atto brief **K268** + Phase-1 surface; no curl|bash; DashScope human-gated; Transkribus sole HTR
+
 ## [2026-08-10] phase1 | K230 surface wires (Atto / GuruWatcher / CCC / cyber)
 
 - OSINT `osint-phase1-adopt-wires.mdc` K230

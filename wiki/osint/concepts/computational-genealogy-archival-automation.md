@@ -4,6 +4,7 @@ type: concept
 tags: [genealogy, archival, automation, italy, antenati, draft]
 keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double Metaphone, kinship graph]
 related:
+  - entities/tools/qwen-mm-plugins.md
   - entities/tools/diagram-design.md
   - entities/tools/pi-rlm.md
   - entities/tools/deepface.md
@@ -79,6 +80,7 @@ updated: 2026-08-10
 ---
 
 ## Relations
+- @entities/tools/qwen-mm-plugins.md
 - @entities/tools/diagram-design.md — K230
 - @entities/tools/pi-rlm.md
 - @entities/tools/deepface.md — K229

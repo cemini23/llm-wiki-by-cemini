@@ -4,6 +4,7 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher, local-abliterated-lab]
 keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
 related:
+  - entities/tools/qwen-mm-plugins.md
   - entities/tools/ruview.md
   - entities/tools/ileapp.md
   - entities/tools/dopamine-jailbreak.md
@@ -96,6 +97,7 @@ updated: 2026-08-10
 ---
 
 ## Relations
+- @entities/tools/qwen-mm-plugins.md
 - @sources/arxiv-2608.07051-yolo-peft-2026-08-10.md
 - @sources/arxiv-2608.06651-cyberllm-automotive-2026-08-10.md
 - @entities/tools/dopamine-jailbreak.md

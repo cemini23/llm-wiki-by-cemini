@@ -210,3 +210,10 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - `LifeOS` = Extract **reaffirm** (K229). `EpicStaff` = **NO-GO** NOASSERTION reaffirm.
 - **Size-hold / no-clone:** RuView, iLEAPP; Dopamine jailbreak ethics no-clone.
 - Papers: A2E + Niyam + DiDPO + trajectory attribution → CCC; CyberLLM → cyber lab (HITL); YOLO-PEFT → image/Atto Watch (not Transkribus HTR).
+
+## K230 follow-up — Qwen-MM-Plugins core (Atto)
+
+- `Qwen-MM-Plugins` (Apache-2.0, `.local/adopts/Qwen-MM-Plugins` ~74MB) = **Integrate `core` only** for Atto vault screenshot/PDF assistive read.
+- **Not** a `/route` skill change — optional multimodal executor capability.
+- No `curl|bash install.sh`; supply-chain review before enable; DashScope OCR = human-gated + PII strip; Magika first; **Transkribus sole product HTR**.
+- Skip blender / freecad / video-edit / edu-agent unless a dedicated brief.

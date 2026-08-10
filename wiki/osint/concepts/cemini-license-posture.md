@@ -5,6 +5,7 @@ type: concept
 tags: [license-compliance, audit-security, cemini-internal, ip-sale-readiness]
 keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-SA, derivative-work, network-copyleft, default-copyright, dual-license-ambiguity, namespace-confusion]
 related:
+  - entities/tools/qwen-mm-plugins.md
   - entities/tools/diagram-design.md
   - entities/tools/weathernext.md
   - entities/tools/t3code.md
@@ -109,6 +110,7 @@ updated: 2026-08-10
 ---
 
 ## Relations
+- @entities/tools/qwen-mm-plugins.md
 - @entities/tools/dopamine-jailbreak.md
 - @entities/tools/ileapp.md
 - @entities/tools/ruview.md

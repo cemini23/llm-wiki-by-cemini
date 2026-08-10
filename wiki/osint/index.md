@@ -26,6 +26,7 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 | [tookie-osint](entities/tools/tookie-osint.md) | MIT tookie-osint Extract → Atto FIND (K230) | draft |
 | [agent-harness-auditing-a2e](concepts/agent-harness-auditing-a2e.md) | A2E/ATP harness audit pattern (K230) | draft |
 | [intent-bound-tool-gates](concepts/intent-bound-tool-gates.md) | Intent Contract + zk tool gates (K230) | draft |
+| [qwen-mm-plugins](entities/tools/qwen-mm-plugins.md) | Apache Qwen-MM core Integrate → Atto (K230 follow-up) | draft |
 
 ### K229 ingest (2026-08-09)
 
