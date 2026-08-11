@@ -6,13 +6,16 @@ keywords: [ForecastEx, prediction market volume, Yankees Polymarket]
 related:
   - concepts/prediction-market-short-horizon-velocity.md
   - concepts/polymarket-bot-architecture.md
+  - sources/substack-rss-event-horizon-2026-08-10-prophetx.md
 maturity: draft
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-08-11
 read_status: read
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-08-10-prophetx.md
 
 - @concepts/prediction-market-short-horizon-velocity.md
 - @concepts/polymarket-bot-architecture.md

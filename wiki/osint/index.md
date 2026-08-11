@@ -7,6 +7,29 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K231 ingest (2026-08-11)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-project-evaluation-revenue-2026-08-11](sources/eval-project-evaluation-revenue-2026-08-11.md) | Repo eval — Infographic/smart-ralph Integrate; oil-motion/quickemu/LLMVault Extract; KED/OptMem NO-GO (K231) | draft |
+| [eval-url-revenue-opportunity-2026-08-11](sources/eval-url-revenue-opportunity-2026-08-11.md) | URL eval — stagehand Integrate; flint-chart/haloy/codex-router Extract; holaOS conditional (K231) | draft |
+| [donny-nl-meta-rea-2026-08-11](sources/donny-nl-meta-rea-2026-08-11.md) | Donny NL — META earnings, REA rare-earth thesis, Fed/Warsh week (K231) | draft |
+| [newsletter-rss-latent-space-2026-08-11-muse-glimmer](sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md) | Muse Glimmer open weights, GPT-5.6-Cyber, harness/tool-calling → CCC+cyber (K231) | draft |
+| [substack-rss-event-horizon-2026-08-11-flightaware-kalshi](sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md) | FlightAware sues Kalshi; CT ruling; CFTC IAC (K231) | draft |
+| [substack-rss-event-horizon-2026-08-10-prophetx](sources/substack-rss-event-horizon-2026-08-10-prophetx.md) | ProphetX ep 27; CFTC American-odds letter (K231) | draft |
+| [substack-rss-capital-flows-2026-08-10-fx-volatility](sources/substack-rss-capital-flows-2026-08-10-fx-volatility.md) | Capital Flows FX-vol repricing + livestream (K231) | draft |
+| [substack-rss-wublock-2026-08-10-bip-110](sources/substack-rss-wublock-2026-08-10-bip-110.md) | BIP-110 UASF stall; Bitcoin junk-data debate (K231) | draft |
+| [stagehand](entities/tools/stagehand.md) | MIT browser-agent SDK v4 Integrate → Atto (K231) | draft |
+| [infographic](entities/tools/infographic.md) | MIT SVG lineage Integrate → Atto/image (K231) | draft |
+| [smart-ralph](entities/tools/smart-ralph.md) | MIT SDD loop Integrate → CCC (K231) | draft |
+| [holaos](entities/tools/holaos.md) | NOASSERTION MCP+SQLite memory Extract → Atto (K231) | draft |
+| [flint-chart](entities/tools/flint-chart.md) | MIT Discord chart MCP Extract → GW (K231) | draft |
+| [haloy](entities/tools/haloy.md) | MIT zero-downtime deploys Extract → GW/xsp/pm (K231) | draft |
+| [codex-router](entities/tools/codex-router.md) | MIT credential router Extract → cyber lab (K231) | draft |
+| [llmvault](entities/tools/llmvault.md) | MIT OWASP LLM range Extract → cyber lab (K231) | draft |
+| [quickemu](entities/tools/quickemu.md) | MIT VM provisioning Extract → cyber lab (K231) | draft |
+| [oil-motion](entities/tools/oil-motion.md) | MIT web animation Extract → Atto vault UI (K231) | draft |
+
 ### K230 ingest (2026-08-10)
 
 | Page | Summary | Maturity |

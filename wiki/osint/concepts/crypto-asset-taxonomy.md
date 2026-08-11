@@ -19,12 +19,15 @@ related:
   - sources/agent-5-4-4.md
   - sources/stocks-1-4-5.md
   - sources/dune-analytics-mcp.md
+  - sources/substack-rss-wublock-2026-08-10-bip-110.md
 maturity: validated
 created: 2026-04-25
-updated: 2026-05-02
+updated: 2026-08-11
 ---
 
 ## Relations
+
+- @sources/substack-rss-wublock-2026-08-10-bip-110.md
 
 - @entities/ticker-watchlist.md — parent watchlist this taxonomy organizes
 - @entities/tickers/btc.md, @entities/tickers/eth.md, @entities/tickers/sol.md, @entities/tickers/doge.md, @entities/tickers/ada.md, @entities/tickers/avax.md, @entities/tickers/link.md — the 7 crypto-native tickers being categorized

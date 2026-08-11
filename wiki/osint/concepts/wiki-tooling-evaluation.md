@@ -5,6 +5,18 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-project-evaluation-revenue-2026-08-11.md
+  - sources/eval-url-revenue-opportunity-2026-08-11.md
+  - entities/tools/stagehand.md
+  - entities/tools/infographic.md
+  - entities/tools/smart-ralph.md
+  - entities/tools/holaos.md
+  - entities/tools/flint-chart.md
+  - entities/tools/haloy.md
+  - entities/tools/codex-router.md
+  - entities/tools/llmvault.md
+  - entities/tools/quickemu.md
+  - entities/tools/oil-motion.md
   - entities/tools/qwen-mm-plugins.md
   - entities/tools/ruview.md
   - entities/tools/ileapp.md
@@ -292,10 +304,22 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-08-10
+updated: 2026-08-11
 ---
 
 ## Relations
+- @entities/tools/stagehand.md
+- @entities/tools/infographic.md
+- @entities/tools/smart-ralph.md
+- @entities/tools/holaos.md
+- @entities/tools/flint-chart.md
+- @entities/tools/haloy.md
+- @entities/tools/codex-router.md
+- @entities/tools/llmvault.md
+- @entities/tools/quickemu.md
+- @entities/tools/oil-motion.md
+- @sources/eval-project-evaluation-revenue-2026-08-11.md — K231
+- @sources/eval-url-revenue-opportunity-2026-08-11.md — K231
 - @entities/tools/qwen-mm-plugins.md
 - @entities/tools/dopamine-jailbreak.md
 - @entities/tools/ileapp.md
@@ -1015,6 +1039,17 @@ Ingest: `Repository Revenue and Integration Evaluation.docx` (47 URLs), arXiv 26
 | **Macro** | 11 files | K148 backfill bundle predating K144 automation window |
 
 **Brief routing:** TipDrop lightweight-charts; xsp ccxt+HL SDK (`briefs/xsp-2026-07-07_ccxt-hl-sdk-integrate.md` scp prod); poker claude-video + substrate steal.
+
+## Wave K231 — Stagehand / Infographic / smart-ralph + lab extracts (2026-08-11)
+
+Two 20-URL eval batches (`eval-project-evaluation-revenue-2026-08-11`, `eval-url-revenue-opportunity-2026-08-11`). License overrides in `.local/reports/license-k231-2026-08-11.md` — never trust eval SPDX.
+
+- **Integrate GO:** `stagehand` (Atto portal self-heal, MIT ~157MB), `Infographic` (Atto SVG lineage, MIT ~3MB), `smart-ralph` (CCC SDD loop, MIT ~3.2MB).
+- **Extract GO:** `flint-chart` (GW Discord charts, MIT ~26MB), `haloy` (zero-downtime deploys, MIT ~8.6MB), `codex-router` (cyber lab routing, MIT ~2.4MB), `LLMVault` (cyber lab OWASP range, MIT ~29MB), `quickemu` (cyber lab VMs, MIT ~1MB), `oil-motion` (Atto vault UI, MIT ~3MB).
+- **CONDITIONAL Extract:** `holaOS` (**NOASSERTION** Modified Apache ~53MB) — MCP+SQLite memory patterns only; do not vendor tree.
+- **NO-GO:** Kernel-Exploit-Dojo (NO_LICENSE + ~1.8GB), OptMem (NO_LICENSE). **SIZE-SKIP:** harvey-labs (~2.1GB), manim/daily_stock_analysis.
+- Phase-0 `scripts/adopt_k231_phase0.sh` → `.local/adopts/` total **467MB < 500MB**.
+- Cross-wiki: CCC (smart-ralph, Muse Glimmer, PTC), cyber (LLMVault, quickemu, codex-router, GPT-5.6-Cyber), gambling (FlightAware/Kalshi), image-gen (Infographic SVG).
 
 ## Snippets
 

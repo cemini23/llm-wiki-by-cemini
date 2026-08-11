@@ -4,21 +4,24 @@
 title: OpenAI Codex Security CLI
 type: entity
 tags: [entity, tool, security, codex, ccc, cybersec, phase-0, k211]
-keywords: [openai/codex-security, @openai/codex-security, CI scanner, Apache-2.0]
+keywords: [openai/codex-security, CI scanner, Apache-2.0]
 related:
   - entities/tools/agentenv.md
   - sources/newsletter-rss-latent-space-2026-07-29-ai-eating-finance.md
   - sources/arxiv-2607.25890-shard-secure-harness-distribution.md
   - entities/tools/agent-security-lab.md
   - sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md
+  - sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
 maturity: draft
 created: 2026-07-29
-updated: 2026-07-31
+updated: 2026-08-11
 wire_status: policy_wired
 wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
 
 - @sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md — OSS AI contribution rules
 

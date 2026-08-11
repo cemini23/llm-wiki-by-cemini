@@ -7,12 +7,15 @@ related:
   - sources/donny-market-thoughts-2026-05-09.md
   - sources/ww-issue-178-2026-05-13.md
   - concepts/rare-earth-supply-deficit-thesis.md
+  - sources/donny-nl-meta-rea-2026-08-11.md
 maturity: draft
 created: 2026-05-09
-updated: 2026-05-13
+updated: 2026-08-11
 ---
 
 ## Relations
+
+- @sources/donny-nl-meta-rea-2026-08-11.md
 
 - Source: @sources/donny-market-thoughts-2026-05-09.md
 - @sources/ww-issue-178-2026-05-13.md — WW #178 (May 13): printed +38% IPO-day move ($19 → $27.60); WW TP $35 confirms Donny's TP

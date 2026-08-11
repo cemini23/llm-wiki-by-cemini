@@ -91,12 +91,16 @@ related:
   - entities/tools/guruwatcher.md
   - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
   - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
+  - sources/eval-project-evaluation-revenue-2026-08-11.md
+  - sources/eval-url-revenue-opportunity-2026-08-11.md
 maturity: core
 created: 2026-06-17
-updated: 2026-08-10
+updated: 2026-08-11
 ---
 
 ## Relations
+- @sources/eval-url-revenue-opportunity-2026-08-11.md
+- @sources/eval-project-evaluation-revenue-2026-08-11.md
 - @entities/tools/qwen-mm-plugins.md
 - @sources/arxiv-2608.07051-yolo-peft-2026-08-10.md
 - @sources/arxiv-2608.06651-cyberllm-automotive-2026-08-10.md

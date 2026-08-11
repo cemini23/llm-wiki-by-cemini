@@ -9,13 +9,16 @@ related:
   - sources/arxiv-2608.05909-mmaligner-2026-08-07.md
   - concepts/code-as-agent-harness.md
   - concepts/harness-optimization-bench.md
+  - sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
 maturity: draft
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-08-11
 read_status: read
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
 
 - @entities/tools/google-skills.md
 

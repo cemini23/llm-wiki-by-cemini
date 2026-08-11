@@ -6,13 +6,16 @@ keywords: [yen, Bessent, VIX, carry, livestream]
 related:
   - sources/substack-rss-capital-flows-2026-08-03-misdirection-livestream.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-capital-flows-2026-08-10-fx-volatility.md
 maturity: draft
 created: 2026-08-05
-updated: 2026-08-05
+updated: 2026-08-11
 read_status: read
 ---
 
 ## Relations
+
+- @sources/substack-rss-capital-flows-2026-08-10-fx-volatility.md
 
 - @sources/substack-rss-capital-flows-2026-08-03-misdirection-livestream.md
 - @concepts/xsp-lane-trading-framework.md

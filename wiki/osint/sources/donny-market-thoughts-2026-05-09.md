@@ -10,11 +10,16 @@ related:
   - entities/tickers/tost.md
   - entities/tickers/rea.md
   - concepts/rare-earth-supply-deficit-thesis.md
+  - sources/donny-nl-meta-rea-2026-08-11.md
 maturity: draft
 read_status: read
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-08-11
 ---
+
+## Relations
+
+- @sources/donny-nl-meta-rea-2026-08-11.md
 
 ## Raw Concept
 

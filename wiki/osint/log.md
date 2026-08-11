@@ -9380,3 +9380,15 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - Project: deleted tipdrop + route dups; demoted AA on phase1/visual; lazy-tool Desktop→Projects + drop kb-server; cold MCP disabled; setup_cursor_github_mcp env-ref only
 - Global `~/.cursor` TCC-locked from agent — operator runs `bash scripts/apply_cursor_global_p0_cleanup.sh` + `OPERATOR_ENV_ROTATE.md`
 - Artifacts: `reports/audit/cursor-config-2026-08-01/`
+
+## [2026-08-11] ingest | K231 — Stagehand/Infographic/smart-ralph + lab extracts + newsletter batch
+
+- **Eval 1:** `sources/eval-project-evaluation-revenue-2026-08-11.md` (sha256 `298d6283…`) — 20 URLs. Integrate: Infographic (Atto SVG), smart-ralph (CCC SDD). Extract: oil-motion (Atto UI), quickemu + LLMVault (cyber lab). NO-GO: Kernel-Exploit-Dojo (NO_LICENSE ~1.8GB), OptMem (NO_LICENSE). Watch: realtime-phone-agents.
+- **Eval 2:** `sources/eval-url-revenue-opportunity-2026-08-11.md` (sha256 `98b2fa8c…`) — 20 URLs. Integrate: stagehand v4 (Atto portal self-heal). Extract: flint-chart (GW Discord charts), haloy (zero-downtime deploys), codex-router (cyber lab). CONDITIONAL: holaOS (NOASSERTION — patterns only).
+- **License overrides:** `.local/reports/license-k231-2026-08-11.md` (gh api) — never trust eval SPDX.
+- **Phase-0:** `scripts/adopt_k231_phase0.sh` → `.local/adopts/` **467MB total < 500MB budget**. Size-skips: harvey-labs, manim, daily_stock_analysis, Kernel-Exploit-Dojo, OptMem.
+- **Newsletters:** donny NL (META/REA/Fed-Warsh); Latent Space Muse Glimmer + GPT-5.6-Cyber + PTC/harness → CCC+cyber; Event Horizon FlightAware×Kalshi + ProphetX/CFTC odds → pm/gambling; Capital Flows FX-vol + livestream → GW/xsp awareness; WuBlock BIP-110 → wiki crypto context.
+- **Entities (10 stubs):** infographic, smart-ralph, stagehand, oil-motion, quickemu, llmvault, flint-chart, haloy, codex-router, holaos.
+- **Concept:** `wiki-tooling-evaluation.md` K231 wave + related.
+- **Briefs:** `briefs/pm-k231-flightaware-kalshi.md` + `briefs/xsp-k231-donny-meta-rea.md` (skill_audit → scp cemini-prod); Atto K269, GW K231, cyber K231, CCC cross_wiki_route briefs, poker no-path.
+- **Cross-wiki:** image-gen (Infographic SVG), cyber (LLMVault/quickemu/codex-router/GPT-5.6-Cyber), gambling (FlightAware/Kalshi), CCC (smart-ralph/Muse Glimmer).

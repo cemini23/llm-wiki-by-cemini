@@ -10,13 +10,15 @@ related:
   - concepts/active-project-research-routing.md
   - concepts/computational-genealogy-archival-automation.md
   - concepts/gpuology-genealogy-agent-kit.md
+  - entities/tools/infographic.md
 maturity: draft
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-08-11
 ---
 
 ## Relations
 
+- @entities/tools/infographic.md
 - @sources/eval-github-repository-evaluation-plan-2026-08-10.md
 - @concepts/cemini-license-posture.md
 - @concepts/wiki-tooling-evaluation.md

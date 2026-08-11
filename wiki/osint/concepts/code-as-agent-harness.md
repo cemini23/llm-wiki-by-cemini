@@ -113,12 +113,15 @@ related:
   - sources/arxiv-2607.22529-skill-self-play.md
   - sources/arxiv-2607.22511-causalforge-lean-causal-research.md
   - concepts/skill-regression-tax.md
+  - sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-08-10
+updated: 2026-08-11
 ---
 
 ## Relations
+- @sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
+
 - @sources/arxiv-2608.06909-trajectory-attribution-2026-08-10.md
 - @sources/arxiv-2608.07147-didpo-coding-agent-2026-08-10.md
 - @sources/arxiv-2608.07167-niyamai-intent-bound-2026-08-10.md

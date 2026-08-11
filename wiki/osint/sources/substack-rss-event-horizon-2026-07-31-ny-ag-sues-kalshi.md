@@ -7,13 +7,16 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-event-horizon-2026-07-30-robinhood-prediction-markets-q2.md
   - sources/substack-rss-event-horizon-2026-08-03-episode-26.md
+  - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
 maturity: draft
 created: 2026-07-31
-updated: 2026-08-03
+updated: 2026-08-11
 read_status: deep-read
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
 
 - @concepts/xsp-lane-trading-framework.md
 - @sources/substack-rss-event-horizon-2026-07-30-robinhood-prediction-markets-q2.md — prior RH/Rothera

@@ -22,12 +22,15 @@ related:
   - sources/substack-rss-capital-flows-2026-07-21-equity-cliff.md
   - sources/substack-rss-capital-flows-2026-07-22-hf-positioning-fragile.md
   - sources/substack-rss-capital-flows-2026-07-23-treasury-compressing.md
+  - sources/substack-rss-capital-flows-2026-08-10-fx-volatility.md
 maturity: draft
 created: 2026-07-10
-updated: 2026-07-23
+updated: 2026-08-11
 ---
 
 ## Relations
+
+- @sources/substack-rss-capital-flows-2026-08-10-fx-volatility.md
 
 - @sources/substack-rss-capital-flows-2026-07-23-treasury-compressing.md — K191
 

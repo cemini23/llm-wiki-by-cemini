@@ -8,13 +8,15 @@ related:
   - sources/autonomous-agent-meta-prompt-2026-05.md
   - entities/tools/awesome-ralph.md
   - concepts/tool-evaluation-framework.md
+  - entities/tools/smart-ralph.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-08-11
 ---
 
 ## Relations
 
+- @entities/tools/smart-ralph.md
 - `@sources/evaluating-github-repos-trading-stack-2026-05-12.md` — Doc1 URL 1 (`awesome-ralph` evaluation)
 - `@sources/autonomous-agent-meta-prompt-2026-05.md` — sibling "THE FULL PROMPT" meta-template
 - `@entities/tools/awesome-ralph.md` — repo entity

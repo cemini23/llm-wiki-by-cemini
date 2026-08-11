@@ -75,19 +75,23 @@ related:
   - concepts/gambling-wiki-federation.md
   - sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md
   - concepts/kalshi-implied-macro-belief-distributions.md
-  - gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md
+  - @gambling-wiki/concepts/kalshi-spotify-oracle-manipulation-2026-07.md
   - sources/substack-rss-event-horizon-2026-07-07-north-carolinas-prediction-market-budget-process.md
   - concepts/hybrid-intelligence-human-capital-forecasting.md
   - sources/arxiv-human-capital-hybrid-intelligence-2607.02467-2026-07-05.md
   - sources/substack-rss-event-horizon-2026-07-17-ep24-flight-betting.md
   - sources/substack-rss-wublock-2026-07-18-weekly-ethereum-privacy-robinhood.md
+  - sources/substack-rss-event-horizon-2026-08-10-prophetx.md
+  - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-07-19
+updated: 2026-08-11
 ---
 
 ## Relations
 
+- @sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
+- @sources/substack-rss-event-horizon-2026-08-10-prophetx.md
 - @concepts/prediction-markets-efficiency-wolfers-zitzewitz.md — classic PM efficiency survey (NBER w10504; applies to regulated PM venues)
 - @sources/3-10-algorithmic-trading-ip-sale-audit.md — K6 2026-04-27 — Kalshi DCM status named in the audit's compliance-leverage discussion as a structural cleanliness factor for the IP-sale narrative (CFTC-jurisdiction venue is cleaner due-diligence story than offshore-unregistered alternatives); SEC Rule 3a5-4 sub-$50M dealer-registration carve-out works for the OpCo at Kalshi-volume scale
 - @sources/3-10-cryptographic-research.md

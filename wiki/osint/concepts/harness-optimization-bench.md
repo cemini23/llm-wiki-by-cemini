@@ -10,12 +10,15 @@ related:
   - sources/newsletter-rss-latent-space-2026-08-07-amd-taalas-muse.md
   - entities/tools/anton-mindsdb.md
   - concepts/code-as-agent-harness.md
+  - sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
 maturity: draft
 created: 2026-08-07
-updated: 2026-08-08
+updated: 2026-08-11
 ---
 
 ## Relations
+
+- @sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
 
 - @concepts/zawinski-law-of-multiagents.md — harness > model (K227)
 

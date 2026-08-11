@@ -6,14 +6,17 @@ category: mega_cap
 ticker: META
 related:
   - entities/ticker-watchlist.md
+  - sources/donny-nl-meta-rea-2026-08-11.md
 maturity: validated
 report_source: gemini-deep-research
 report_date: 2026-04-23
 created: 2026-04-23
-updated: 2026-04-23
+updated: 2026-08-11
 ---
 
 ## Relations
+
+- @sources/donny-nl-meta-rea-2026-08-11.md
 
 - @entities/ticker-watchlist.md — parent watchlist page
 

@@ -16,12 +16,15 @@ related:
   - meta/kalshi-lp-backtest-cadence.md
   - sources/youtube-kalshi-bots-batch-2026-05-29.md
   - concepts/kalshi-ui-automation-bot-pattern.md
+  - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
 maturity: validated
 created: 2026-05-05
-updated: 2026-05-29
+updated: 2026-08-11
 ---
 
 ## Relations
+
+- @sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
 
 - @entities/platforms/kalshi.md — primary venue entity; this page is its canonical Cemini-side API reference
 - @entities/tools/kalshi-llms-txt.md — entity page describing the upstream llms.txt artifact + our adoption of it; this concept page IS the deployed ingestion

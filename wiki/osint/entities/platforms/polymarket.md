@@ -114,13 +114,17 @@ related:
   - entities/people/whydeso.md
   - entities/platforms/42-space.md
   - sources/substack-rss-wublock-2026-07-11-weekly-project-updates-bonkdao-suffers-governanc.md
+  - sources/substack-rss-event-horizon-2026-08-10-prophetx.md
+  - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-08-02
+updated: 2026-08-11
 ---
 
 ## Relations
 
+- @sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
+- @sources/substack-rss-event-horizon-2026-08-10-prophetx.md
 - @entities/tools/last30days-skill.md — K218 alert-research skill (Polymarket source)
 
 - @sources/3-19-kalshi-trading-strategy-research.md

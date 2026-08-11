@@ -217,3 +217,25 @@ Harness behavior from OSINT Phase-0 Extracts. Clones live under `.local/adopts/`
 - **Not** a `/route` skill change — optional multimodal executor capability.
 - No `curl|bash install.sh`; supply-chain review before enable; DashScope OCR = human-gated + PII strip; Magika first; **Transkribus sole product HTR**.
 - Skip blender / freecad / video-edit / edu-agent unless a dedicated brief.
+
+## K231 — Infographic + smart-ralph (Atto/CCC Integrate) · oil-motion/quickemu/LLMVault (Extract) · flint-chart/haloy/codex-router/holaOS · cyber lab · Muse Glimmer
+
+Phase-0 budget: **467MB < 500MB** (12 clones into `.local/adopts/`). License overrides via `.local/reports/license-k231-2026-08-11.md` (gh api) — **never trust eval SPDX**. TipDrop retired — no TipDrop kit briefs.
+
+- `Infographic` (MIT, `.local/adopts/Infographic` ~7.3MB) = **Integrate** for Atto SVG lineage family-tree SKU + image-gen reference (SVG streaming pipeline). Brand/WCAG; no Barone family tree in Atto fixtures.
+- `smart-ralph` (MIT, `.local/adopts/smart-ralph` ~8.6MB) = **Integrate** for CCC spec-driven SDD loop (spec/plan/test/review + anti-rationalization). Pairs addyosmani-agent-skills (K223).
+- `stagehand` (MIT, `.local/adopts/stagehand` ~83MB) = **Integrate** for Atto self-heal portal — resilient retrieval; human-gated; Magika + PII strip unchanged.
+- `oil-motion` (MIT, `.local/adopts/oil-motion` ~6.3MB) = **Extract** for Atto vault UI motion patterns — preview only; not a prod pin.
+- `quickemu` (MIT, `.local/adopts/quickemu` ~1.0MB) = **Extract** for cyber lab VM provisioning — authorized targets only; never prod trading hosts.
+- `LLMVault` (MIT, `.local/adopts/LLMVault` ~25MB) = **Extract** for cyber lab OWASP LLM range — authorized assist only.
+- `flint-chart` (MIT, `.local/adopts/flint-chart` ~80MB) = **Extract** for GuruWatcher charts — alert-only; never orders; never auto-rewrite `watches.json`.
+- `haloy` (MIT, `.local/adopts/haloy` ~2.2MB) = **Extract** zero-downtime deploy patterns — reference only; no auto-deploy wiring this batch.
+- `codex-router` (MIT, `.local/adopts/codex-router` ~6.4MB) = **Extract** for cyber lab credential-isolating model routing — authorized scope only; no crimeware; never bypass internal governance.
+- `holaOS` (NOASSERTION Modified Apache, `.local/adopts/holaOS` ~53MB) = **CONDITIONAL Extract** MCP+SQLite memory patterns only — legal review before distribution; do not vendor full tree into atto-mcp; Electron overhead.
+- `realtime-phone-agents-course` (MIT, `.local/adopts/realtime-phone-agents-course` ~27MB) = **Watch only** — voice hallucination risk on civil inquiries.
+- `AiSOC` (MIT, `.local/adopts/AiSOC` ~167MB) = **Context / optional REFERENCE** for cyber lab.
+- **NO-GO:** `Kernel-Exploit-Dojo` (null SPDX ~1.8GB), `OptMem` (null SPDX). **SIZE-SKIP:** `harvey-labs` ~2.1GB, `manim` ~75MB no fit, `daily_stock_analysis` ~100MB size-hold. **Pass:** `shelf.nu` AGPL, `OpenMontage` AGPL, `awesome-mac` CC0, `nvm` MIT context, `neuroarxiv` MIT context, `smythos-studio` MIT size-hold.
+- Muse Glimmer 30B (Apache 2.0) → **CCC** harness (pairs smart-ralph SDD). GPT-5.6-Cyber → **cyber** awareness. Claude RH bound 41.6%→67.2% + programmatic tool-calling → **xsp** awareness.
+- FlightAware v Kalshi SDNY suit + CFTC American-odds letter → **pm/gambling** awareness (CFTC IAC Aug 20; no live action).
+- Donny META LONG avg $640 / TP $760–800; REA second-largest position (humanoid DyTb thesis, Homer/Shiloh drilling); Fed/Warsh week → **xsp** (brief `xsp-k231-donny-meta-rea`).
+- Event Horizon 08-10 ProphetX+Pikkit, drug-trial betting → **pm** awareness. BIP-110 UASF stall (2 blocks) → **wiki-only**. Capital Flows FX (MOVE at lows, bear steepening) → **xsp** awareness.

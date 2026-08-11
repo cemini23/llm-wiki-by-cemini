@@ -10,12 +10,15 @@ related:
   - concepts/real-assets-investing-framework.md
   - concepts/critical-minerals-thesis.md
   - sources/critical-minerals-pentagon-plan-2026-05.md
+  - sources/donny-nl-meta-rea-2026-08-11.md
 maturity: draft
 created: 2026-05-09
-updated: 2026-05-13
+updated: 2026-08-11
 ---
 
 ## Relations
+
+- @sources/donny-nl-meta-rea-2026-08-11.md
 
 - Source: @sources/donny-market-thoughts-2026-05-09.md
 - Entity: @entities/tickers/rea.md

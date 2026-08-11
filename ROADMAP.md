@@ -24,6 +24,11 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 | behind | Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No |
 | retired | TipDrop / David kit | — | Do not route |
 
+## Current state (2026-08-11 — K231)
+
+- **K231 ingest** — Project Evaluation + URL Revenue docx (40-URL batch) + donny NL + 6 RSS (Muse Glimmer / Event Horizon ×2 / Capital Flows / WuBlock). Phase-0 **467MB < 500MB** (12 clones). License overrides via `.local/reports/license-k231-2026-08-11.md` (gh api — never trust eval SPDX). KED/OptMem NO-GO (null SPDX); harvey-labs SIZE-SKIP ~2.1GB; manim/daily_stock size-hold; shelf.nu/OpenMontage AGPL pass.
+- **K231 Phase-1** — Atto stagehand+Infographic (board **K269**); CCC smart-ralph+Muse Glimmer; GW flint-chart+haloy+donny META/REA levels; cyber quickemu/LLMVault/codex-router + GPT-5.6-Cyber awareness; pm `pm-k231-flightaware-kalshi` + xsp `xsp-k231-donny-meta-rea` → cemini-prod; poker no-path.
+
 ## Current state (2026-08-10 — K230)
 
 - **K230 ingest** — GitHub Repository Evaluation Plan + 6 arXiv. Phase-0 ~402MB. EpicStaff NO-GO; Dopamine no-clone; RuView/iLEAPP size-hold.

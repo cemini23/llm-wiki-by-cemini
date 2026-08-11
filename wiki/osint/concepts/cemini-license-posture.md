@@ -103,13 +103,17 @@ related:
   - sources/newsletter-rss-tldrsec-2026-07-30-339-hf-agentbaiting.md
   - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
   - sources/eval-tech-stack-opportunity-2026-08-06.md
+  - sources/eval-project-evaluation-revenue-2026-08-11.md
+  - sources/eval-url-revenue-opportunity-2026-08-11.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-08-10
+updated: 2026-08-11
 ---
 
 ## Relations
+- @sources/eval-url-revenue-opportunity-2026-08-11.md
+- @sources/eval-project-evaluation-revenue-2026-08-11.md
 - @entities/tools/qwen-mm-plugins.md
 - @entities/tools/dopamine-jailbreak.md
 - @entities/tools/ileapp.md

@@ -118,12 +118,18 @@ related:
   - sources/substack-rss-event-horizon-2026-07-22-wisconsin-election-betting.md
   - sources/substack-rss-wublock-2026-07-23-robinhood-chain.md
   - entities/tools/amnezia-client.md
+  - sources/substack-rss-event-horizon-2026-08-10-prophetx.md
+  - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-08-09
+updated: 2026-08-11
 ---
 
 ## Relations
+- @sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
+
+- @sources/substack-rss-event-horizon-2026-08-10-prophetx.md
+
 - @sources/eval-github-revenue-opportunity-2026-08-09.md
 - @entities/tools/pm-trading-bot-toolkits.md — K229
 

@@ -8,15 +8,17 @@ related:
   - sources/multi-wiki-gemini-eval-prompt-2026-05-12.md
   - concepts/ralph-autonomous-agent-pattern.md
   - concepts/tool-evaluation-framework.md
+  - entities/tools/smart-ralph.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-05-12
+updated: 2026-08-11
 gemini_eval_doc1_url: 1
 phase_0_verdict: STEAL-FROM 2026-05-12 (extract Ralph methodology, no wholesale fork)
 ---
 
 ## Relations
 
+- @entities/tools/smart-ralph.md
 - `@sources/evaluating-github-repos-trading-stack-2026-05-12.md` — source eval (URL 1)
 - `@concepts/ralph-autonomous-agent-pattern.md` — distilled Ralph methodology written from this entry
 
