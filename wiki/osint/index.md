@@ -7,6 +7,21 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K232 ingest (2026-08-11)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-2608.09885-she-safety-harness](sources/arxiv-2608.09885-she-safety-harness-2026-08-11.md) | SHE trajectory-driven safety-harness evolution → CCC/cyber GO Extract (K232) | draft |
+| [arxiv-2608.07917-tongguocr](sources/arxiv-2608.07917-tongguocr-2026-08-11.md) | TongGuOCR layout/token-aug OCR → Atto Watch; Transkribus sole HTR (K232) | draft |
+| [arxiv-2608.09256-dtoa-supervisor-networks](sources/arxiv-2608.09256-dtoa-supervisor-networks-2026-08-11.md) | DTOA supervisor-network team games → CCC orchestration patterns (K232) | draft |
+| [arxiv-2608.09389-regret-equilibrium-games](sources/arxiv-2608.09389-regret-equilibrium-games-2026-08-11.md) | Regret/equilibrium learning-in-games guided tour → poker (K232) | draft |
+| [arxiv-2608.09485-diffcoop-civic](sources/arxiv-2608.09485-diffcoop-civic-2026-08-11.md) | DiffCoop-Civic pressure-robust cooperative eval → CCC+cyber (K232) | draft |
+| [arxiv-2608.09574-hierarchical-game-llm](sources/arxiv-2608.09574-hierarchical-game-llm-2026-08-11.md) | Hierarchical Game governance failures → CCC+poker (K232) | draft |
+| [arxiv-2608.09819-macaron-v1](sources/arxiv-2608.09819-macaron-v1-2026-08-11.md) | Macaron-V1 MoL continual learning → CCC Watch (K232) | draft |
+| [arxiv-2608.09857-agentic-harnesses-robot](sources/arxiv-2608.09857-agentic-harnesses-robot-2026-08-11.md) | Agentic Harnesses LLM verification layer → CCC/cyber pattern; robot wont_wire (K232) | draft |
+| [substack-rss-wublock-2026-08-11-july-spot-volume](sources/substack-rss-wublock-2026-08-11-july-spot-volume.md) | WuBlock July 2026 spot vol $429B −21.7% MoM → xsp awareness (K232) | draft |
+| [she-safety-harness](entities/tools/she-safety-harness.md) | Apache SHE harness-evolution framework GO Extract → CCC/cyber (K232) | draft |
+
 ### K231 ingest (2026-08-11)
 
 | Page | Summary | Maturity |

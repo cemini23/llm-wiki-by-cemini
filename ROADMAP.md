@@ -24,6 +24,11 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 | behind | Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No |
 | retired | TipDrop / David kit | — | Do not route |
 
+## Current state (2026-08-11 — K232)
+
+- **K232 ingest** — 8 arXiv (SHE / TongGuOCR / DTOA / regret-games / DiffCoop / Hierarchical Game / Macaron-V1 / robot harness) + WuBlock July spot volume. Phase-0 **~5.1MB** (`SHE` Apache-2.0). TongGuOCR `jzzh2004/TongGuOCR` **NO-GO** (null SPDX); Macaron/DiffCoop no public clone; robot harness **wont_wire**.
+- **K232 Phase-1** — Atto TongGuOCR Watch (**K270**, Transkribus sole HTR); CCC SHE+Macaron+DiffCoop+HG+DTOA; cyber SHE+DiffCoop; poker regret+HG path; xsp `xsp-k232-wublock-july-spot-volume` → cemini-prod.
+
 ## Current state (2026-08-11 — K231)
 
 - **K231 ingest** — Project Evaluation + URL Revenue docx (40-URL batch) + donny NL + 6 RSS (Muse Glimmer / Event Horizon ×2 / Capital Flows / WuBlock). Phase-0 **467MB < 500MB** (12 clones). License overrides via `.local/reports/license-k231-2026-08-11.md` (gh api — never trust eval SPDX). KED/OptMem NO-GO (null SPDX); harvey-labs SIZE-SKIP ~2.1GB; manim/daily_stock size-hold; shelf.nu/OpenMontage AGPL pass.

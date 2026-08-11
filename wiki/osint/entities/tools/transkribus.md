@@ -25,9 +25,10 @@ related:
   - entities/tools/deepseek-ocr.md
   - entities/tools/htrflow.md
   - entities/tools/kurrentschrift.md
+  - sources/arxiv-2608.07917-tongguocr-2026-08-11.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-08-04
+updated: 2026-08-11
 ---
 
 ## Relations

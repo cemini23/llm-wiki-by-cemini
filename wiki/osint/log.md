@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-08-11] ingest | K232 — SHE + 7 arXiv paper wave + WuBlock July spot volume
+
+- **Phase-0 ~5.1MB:** `SHE` (github.com/RainbowQTT/SHE, **Apache-2.0** verified) GO Extract REFERENCE → CCC + local-abliterated-lab; no other clones (TongGuOCR/Macaron/DiffCoop/HG no public runnable repo; robot harness OOD)
+- **Papers:** SHE → CCC+cyber Extract; TongGuOCR → Atto **Watch** (Transkribus sole HTR); DTOA + DiffCoop + Hierarchical Game + Agentic Harnesses → CCC (patterns); Macaron-V1 MoL → CCC Watch (no 744B weights); regret/equilibrium guided tour + HG → poker Arena researcher track
+- **RSS:** WuBlock July 2026 spot vol $429B (−21.7% MoM, 14/14 exchanges down, Binance 45.8%) → xsp awareness
+- New pages: 9 sources + `entities/tools/she-safety-harness.md`; updated wiki-tooling-evaluation K232 row + 8 concept backlinks
+- Briefs → Atto K270 (TongGuOCR Watch) / CCC (SHE+Macaron+DiffCoop+HG+DTOA) / cyber (SHE+DiffCoop+verification layer) / poker (`k232-regret-hierarchical-games`) / xsp (`xsp-k232-wublock-july-spot-volume` scp prod)
+
 ## [2026-08-10] ingest | K230 — repo eval plan + 6 arXiv (CyberLLM/TrajAttr/YOLO-PEFT/DiDPO/Niyam/A2E)
 
 - **Eval:** diagram-design + code-graph-rag + t3code + CLIProxyAPI Integrate; weathernext + tookie-osint Extract; LifeOS reaffirm; EpicStaff NO-GO; RuView/iLEAPP size-hold; Dopamine no-clone

@@ -301,6 +301,7 @@ related:
   - sources/eval-url-revenue-cyber-agent-harness-2026-08-03.md
   - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
   - sources/eval-tech-stack-opportunity-2026-08-06.md
+  - entities/tools/she-safety-harness.md
 maturity: validated
 hub: true
 created: 2026-04-28
@@ -1050,6 +1051,20 @@ Two 20-URL eval batches (`eval-project-evaluation-revenue-2026-08-11`, `eval-url
 - **NO-GO:** Kernel-Exploit-Dojo (NO_LICENSE + ~1.8GB), OptMem (NO_LICENSE). **SIZE-SKIP:** harvey-labs (~2.1GB), manim/daily_stock_analysis.
 - Phase-0 `scripts/adopt_k231_phase0.sh` → `.local/adopts/` total **467MB < 500MB**.
 - Cross-wiki: CCC (smart-ralph, Muse Glimmer, PTC), cyber (LLMVault, quickemu, codex-router, GPT-5.6-Cyber), gambling (FlightAware/Kalshi), image-gen (Infographic SVG).
+
+## Wave K232 — SHE harness evolution + arXiv paper wave (2026-08-11)
+
+Single clone batch: **SHE** (`github.com/RainbowQTT/SHE`, **Apache-2.0** verified, `.local/adopts/SHE` ~5.1MB) — **Extract / REFERENCE** for CCC + local-abliterated-lab harness work. Trajectory-driven safety-harness evolution over four editable artifacts (System Prompt / Rule Bank / Safety Memory / Tool Policy) with an attribution-guided evolution loop. **Do not auto-mutate prod harness without HITL.**
+
+| Tier | Adoptable | Watch / no-wire |
+|------|-----------|-----------------|
+| **Extract** | SHE (Apache-2.0, GO Extract REFERENCE) | — |
+| **Watch** | TongGuOCR (layout/token-aug OCR patterns; Chinese-historical OOD for Atto) | Macaron-V1 MoL / MindForge (no 744B weights); Agentic Harnesses (robot verification layer — wont_wire) |
+| **Pattern-only** | DiffCoop-Civic (pressure-robust eval), Hierarchical Game (governance failure), DTOA (supervisor-network team games) | robot stacks (09857 OOD) |
+
+- **Transkribus remains sole product HTR** — TongGuOCR is Atto Watch for layout/token-augmentation steal, not a replacement.
+- Cross-wiki: CCC (SHE + Macaron + DiffCoop + Hierarchical Game + DTOA), cyber (SHE + DiffCoop + Agentic Harnesses verification layer), poker (regret guided tour + Hierarchical Game → Arena researcher track), Atto (TongGuOCR Watch), xsp (WuBlock July spot volume awareness).
+- Phase-0 total for K232: **~5.1MB** (SHE only; no other clones this batch).
 
 ## Snippets
 

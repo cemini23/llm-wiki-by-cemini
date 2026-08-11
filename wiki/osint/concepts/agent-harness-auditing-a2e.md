@@ -8,9 +8,11 @@ related:
   - concepts/code-as-agent-harness.md
   - concepts/agentic-code-quality-gates.md
   - sources/eval-github-repository-evaluation-plan-2026-08-10.md
+  - sources/arxiv-2608.09485-diffcoop-civic-2026-08-11.md
+  - sources/arxiv-2608.09857-agentic-harnesses-robot-2026-08-11.md
 maturity: draft
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-08-11
 ---
 
 ## Relations

@@ -32,9 +32,11 @@ related:
   - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
   - meta/sandbox-season-harvest-cadence.md
+  - sources/arxiv-2608.09389-regret-equilibrium-games-2026-08-11.md
+  - sources/arxiv-2608.09574-hierarchical-game-llm-2026-08-11.md
 maturity: validated
 created: 2026-06-18
-updated: 2026-06-26
+updated: 2026-08-11
 ---
 
 ## Relations

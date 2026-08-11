@@ -16,11 +16,12 @@ related:
   - sources/agentic-harness-engineering.md
   - concepts/deepsearch-world-self-evolution.md
   - sources/arxiv-deepsearch-world-2607.07820-2026-07-13.md
+  - sources/arxiv-2608.09819-macaron-v1-2026-08-11.md
 cross-wiki:
   - ccc-wiki/concepts/continual-harness-online-self-improvement.md
 maturity: validated
 created: 2026-05-27
-updated: 2026-07-27
+updated: 2026-08-11
 ---
 
 ## Relations

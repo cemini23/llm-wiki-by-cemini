@@ -8,9 +8,10 @@ related:
   - concepts/castle-sim-rts-micromanagement-steals.md
   - concepts/devfun-researcher-track-readiness-2026-06.md
   - concepts/poker-arena-multi-axis-cognitive-profile.md
+  - sources/arxiv-2608.09574-hierarchical-game-llm-2026-08-11.md
 maturity: draft
 created: 2026-07-02
-updated: 2026-07-02
+updated: 2026-08-11
 ---
 
 ## Relations

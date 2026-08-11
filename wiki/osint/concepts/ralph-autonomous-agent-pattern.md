@@ -9,6 +9,8 @@ related:
   - entities/tools/awesome-ralph.md
   - concepts/tool-evaluation-framework.md
   - entities/tools/smart-ralph.md
+  - entities/tools/she-safety-harness.md
+  - sources/arxiv-2608.09885-she-safety-harness-2026-08-11.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-08-11
