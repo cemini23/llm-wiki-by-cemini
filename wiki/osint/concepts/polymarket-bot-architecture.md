@@ -120,9 +120,12 @@ related:
   - entities/tools/amnezia-client.md
   - sources/substack-rss-event-horizon-2026-08-10-prophetx.md
   - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
+  - concepts/kalshi-retail-lp.md
+  - concepts/prediction-market-regulation-2026.md
+  - sources/newsletter-event-horizon-wildfires-2026-08-12.md
 maturity: draft
 created: 2026-05-12
-updated: 2026-08-11
+updated: 2026-08-12
 ---
 
 ## Relations

@@ -74,9 +74,12 @@ related:
   - sources/arxiv-2607.24475-historical-doc-kg-query.md
   - concepts/document-processing-pipeline-scale-patterns.md
   - sources/x-lamgary-harvey-scaling-document-processing-2026-07-27.md
+  - concepts/atto-genealogy-agent-kit.md
+  - entities/tools/colibri.md
+  - sources/newsletter-outlier-weekly-italy-2026-08-11.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-08-10
+updated: 2026-08-12
 ---
 
 ## Relations

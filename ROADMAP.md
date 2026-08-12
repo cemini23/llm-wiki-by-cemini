@@ -24,6 +24,15 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 | behind | Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No |
 | retired | TipDrop / David kit | — | Do not route |
 
+### Poker — before next free tournament entry (2026-08-12)
+
+P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
+
+## Current state (2026-08-12 — K233)
+
+- **K233 ingest** — 8 arXiv (SKILLER / REDAgentBench / Fed-Speaks / SkillLens / MIRA / FormaTheoria / cross-lingual safety / mixed-RL rollouts) + 20-URL tool eval + 7 newsletters. Phase-0 **3 Integrate clones** (anydoc MIT, iron-proxy Apache-2.0 paradigmxyz fork, opencodex MIT). SKILLER **NO-GO** clone (NOASSERTION); agents-from-scratch **NO-GO** (null SPDX). 16 raws archived to egress-fi; inbox empty.
+- **K233 Phase-1** — Atto anydoc+clapgrep+tunnelto+sentrux (board **K274** remap), outlier-weekly positioning brief; CCC opencodex+quotio, SKILLER/MISA-T /route backlog; cyber iron-proxy egress gate + REDAgentBench/cross-lingual + reasoning-trace ops rule; GW sentrux + inflation watches; xsp `xsp-k233-fed-speaks-vol-surface` + `xsp-k233-wublock-derivatives-volume` → cemini-prod (skill_audit 100/100).
+
 ## Current state (2026-08-11 — K232)
 
 - **K232 ingest** — 8 arXiv (SHE / TongGuOCR / DTOA / regret-games / DiffCoop / Hierarchical Game / Macaron-V1 / robot harness) + WuBlock July spot volume. Phase-0 **~5.1MB** (`SHE` Apache-2.0). TongGuOCR `jzzh2004/TongGuOCR` **NO-GO** (null SPDX); Macaron/DiffCoop no public clone; robot harness **wont_wire**.

@@ -1,9 +1,9 @@
 ---
-description: Phase-1 policy wires — memory/HITL/codegen/tokenization/fidelity/sentinel/cost/GUI-MCP/input/canary/Argus (K230–K253)
+description: Phase-1 policy wires — memory/HITL/codegen/tokenization/fidelity/sentinel/cost/GUI-MCP/input/canary/Argus/keystore/READ/PTC/CASCADE/ResidencyRL/BlastRadius/SHE (K230–K268)
 alwaysApply: true
 ---
 
-# Phase-1 policy wires (K230–K253)
+# Phase-1 policy wires (K230–K273)
 
 Concrete harness behavior from Phase-0 ADOPT patterns. Clones under `.local/adopts/` are REFERENCE unless noted.
 
@@ -144,6 +144,134 @@ Concrete harness behavior from Phase-0 ADOPT patterns. Clones under `.local/adop
 - Separate Manager/Planner/Engineer from independent Reviewer; admit memories/skills only after review (+ task-native verify when available).
 - Persist while evidence supports; pivot on measured failure. Durable project state across sessions.
 - `lbx154/Argus` **NO-GO** clone until LICENSE/SPDX present (pyproject MIT claim insufficient). **wont_wire**.
+
+## Hardware-confined agent signing (K254)
+
+- Do not put production signing/SSH/API private keys in agent-readable env, workspace files, or container memory for LIVE/high-blast agents.
+- Prefer PKCS#11 / hardware (or OS-isolated) keystores so the host only sees opaque handles + signatures (pairs K239).
+- SoftHSM = reproducibility proxy only — not tamper resistance. Anonymous paper artifact **NO-GO** clone until public SPDX.
+- Entity `hardware-keystore-mcp-signing` = `policy_wired`.
+
+## Interpretable agentic document ops (READ / K255)
+
+- For long table-heavy / financial-style docs: prefer grep · outline · bounded span reads (or BM25) before dense top-k RAG.
+- Require citable line/locator ranges in answers (pairs claim-centered / Traceable Scholarship).
+- BM25 can match agentic READ — do not overclaim “agent beats lexical.”
+- `.local/adopts/READ` = MIT REFERENCE; **wont_wire** as default CCC MCP.
+
+## Trajectory error-lifecycle attribution (TrajDebug / K256)
+
+- On failed long-horizon sessions: locate earliest wrong commitment with verbatim evidence, not only the terminal symptom.
+- Prefer evidence-grounded attribution before LLM-as-judge for “what went wrong” (pairs K242).
+- `.local/adopts/TrajDebug` = MIT skeleton (0 `.py` at Phase-0) — **wont_wire** until detector code ships.
+
+## Anytime-valid agent eval stopping (AV-AIVAT / K257)
+
+- Costly agent-vs-agent evals (esp. poker/IIG): prefer variance-reduced + anytime-valid confidence sequences over fixed budgets or naive CI peeking.
+- Online value corrections must not use the current game. Release stop metadata for third-party recheck.
+- No public AV-AIVAT artifact — pattern only; poker Arena brief. **wont_wire**.
+
+## Programmatic vs JSON tool calling (PTC / K258)
+
+- For code-capable lanes with a sandboxed executor: prefer typed stubs + script composition for multi-tool chains and fan-out (pairs code-as-agent-harness / Code Mode).
+- Keep JSON schemas for weak models or when code exec is banned; stubs remain schema-bound / Prebind-gated.
+- No public PTC eval harness — **policy_wired** only. Entity `programmatic-tool-calling-ptc`.
+
+## MCP claim validation + NL→tool parameter grounding (CASCADE / K259)
+
+- Before LIVE/high-blast MCP exposure: validate the **claim class** the tool report repeats against ground truth or a stated proxy — membership checks are not enough (pairs K172 / Traceable Scholarship).
+- Prefer **server-side** alias/enum normalization over trusting model-filled strings.
+- Ambiguous required fields: clarify or refuse — do not silent-default; “if unset” guards miss confident wrong fills (pairs K244).
+- Small local models need stricter schema enforcement; larger models reduce schema fails but not confident-wrong defaults.
+- `.local/adopts/CASCADE` = MIT REFERENCE (cancer genomics OOD) — **wont_wire** runtime; do not download DepMap/model into the adopt shelf.
+- Entity `cascade-mcp` = `wont_wire`; concept `mcp-claim-validation-and-parameter-grounding` = `policy_wired`.
+
+## Adversarial curriculum + doc fidelity (ResidencyRL / K260)
+
+- Long-horizon / multi-turn evals and red-team packs: include **adversarial** and **information-asymmetric** cases, not only cooperative happy-path.
+- Score with rubrics **plus** hard fidelity/safety penalties (fabricated durable facts, missed required checks, unsafe shortcuts).
+- Gate `done`/terminate on **required-check coverage** — resist premature closure.
+- Durable artifacts (notes, Discord, wiki claims, tool reports): **elicited/observed facts only** — never invent fields to fill a schema (pairs Traceable Scholarship / K259).
+- Required clarifications under deflection: re-ask once with rationale, then refuse/escalate — do not invent answers (pairs K244).
+- Soft autoraters OK as advisory signal; prefer execution verify when available (pairs K162). ResidencyRL code **NO-GO** (Google closed; clinical OOD) — no `.local/adopts/` shelf.
+- Entity `residencyrl` = `wont_wire`; concept `adversarial-curriculum-structured-reward-doc-fidelity` = `policy_wired`.
+
+
+## Reversible context eviction (Blast Radius / K265)
+
+- Prefer **reversible, verification-licensed** eviction over lossy truncation/summarization in long agentic coding loops.
+- Estimate prompt reach (context retention + churn-weighted code surface) before sweeping dead mass.
+- Archive buried bodies byte-exact (midden) with secret redaction; leave scent skeletons; bound exhumation cost.
+- Treat recurring build/test/VCS transcripts as **recurring dead matter** — bury recurrence classes, do not re-pay carry cost every turn.
+- Layering: gate/verification decides *whether* a record may replace context; blast-radius scoping decides *which* bodies and *how much* headroom.
+- No public Chalk/Blast Radius SPDX clone at Phase-0 — **policy_wired** pattern only; entity `blast-radius-necrophoresis` = `wont_wire`.
+
+
+## Scaffold over tool interface (K262)
+
+- When measuring MCP vs CLI (or any transport): treat **agent scaffolding** as the primary axis — prompts, control flow, memory, verification — not the interface brand.
+- Prefer completion checks via **external state** (repo/tests/prod observe), not agent self-report.
+- MCP is not required for every task class; CLI-only scaffolds can be complete (paper 2608.08654).
+
+## Versioned model–harness continual adaptation (Macaron / K263)
+
+- Prefer **versioned model+harness pairs** with parent/data/eval provenance when iterating agent stacks.
+- Successor construction under an **external** eval contract — no closed loop that rewrites its own pass criteria (pairs K162).
+- Mixture-of-LoRA / specialist adapters = vocabulary only — **no** Macaron/Venti weight downloads; `hcp-sdk` null SPDX **NO-GO** clone.
+
+## LLM verification layer accept/reject/escalate (K264)
+
+- High-blast plans: gate with ternary **accept / reject / escalate** before irreversible MCP/tool effects (pairs K239/K244).
+- Prefer independent review of judge **reasoning quality** under disagreement — do not silent-accept.
+- Robot `verification_layers` repo **404** — pattern only; entity `wont_wire`.
+
+## Trajectory-driven safety harness evolution (SHE / K268)
+
+- Name the owning harness artifact before edits: **System Prompt / Rule Bank / Safety Memory / Tool Policy**.
+- Attribution-guided, artifact-local edits + safety–utility validation; **HITL** before mutating prod Cursor/Claude harnesses.
+- `.local/adopts/SHE` Apache-2.0 REFERENCE (~5MB) — **do not** unattended auto-evolve prod. Entity `she-safety-harness` = `wont_wire` runtime; concept `policy_wired`.
+
+## VectraYX cyber VLM (K261)
+
+- Spanish/LATAM cyber imagery VLM with MCP tool tokens — **cybersec-primary**; CCC awareness only. **NO-GO** weights/runtime.
+
+
+## CCC wave K270–K273 (shared policy file — dual-ID note)
+
+Same-day Cybersec batch used **K270–K272** for GFlowNet / REDAgentBench / Cross-lingual safety in `cemini-cybersec-lab-redteam.mdc` + `cemini-cybersec-agent-audit.mdc`. Numbers below are **CCC** MCP/ACM-wave meanings in this shared federation file (also `ccc-k270-k273-phase1-wires.mdc`). Resolve by file+wiki, not bare K# alone.
+
+## LLM-assisted writing hygiene (CCC K270)
+
+- Treat LLM-writing detection as advisory for wiki/brief hygiene — prefer claim+locator (Traceable Scholarship).
+- Do not overclaim human-only authorship. `kobaklab/llm-usage-in-pmc` null SPDX **NO-GO** clone.
+
+## Enterprise MCP auth gateway (CCC K271)
+
+- Prefer a **central auth aggregation layer** when many MCP servers proliferate (prod/enterprise).
+- Classify callers on **persona** (user vs non-user/service) × **credential** path before exposure.
+- Plan fleet offboarding / token revocation across servers — not per-server snowflakes.
+- Industry paper only — no mandatory gateway product install from this source.
+
+## Domain solvers as MCP + Skills (CCC K272)
+
+- Prefer wrapping verified domain solvers as **MCP tools + SKILL.md** rather than asking the LLM to recompute science.
+- Pass skill-vetting / preflight before enable. `.local/adopts/agent4binary` MIT REFERENCE (~185MB) — astronomy runtime **wont_wire**.
+
+## Agentic Configuration Management / ACM (CCC K273)
+
+- Treat harness configs (rules, skills, MCP allowlists, settings) as **configuration items** with baselines + provenance.
+- Prefer deterministic validation and dependency-aware impact before blast-radius harness edits.
+- No ACM product install until a clear SPDX'd artifact exists.
+
+## K233 GO adoptions (2026-08-12 ingest)
+
+- **anydoc (GO Integrate → Atto)**: MIT text-layer document parser. Reads the **text layer only** — rasterized scans (Atto's Italian civil records) still require the HTR/Transkribus path. Do not present anydoc as scan/OCR capability. Phase-0 clone `.local/adopts/anydoc` REFERENCE.
+- **iron-proxy (GO Integrate → cyber local-abliterated-lab)**: paradigmxyz/iron-proxy Apache-2.0 egress gate. Enforce agent policy at the **tool-call/egress boundary**, not just system-prompt load (Recognition–Execution Gap, REDAgentBench K233: ~1 in 5 violations occur after the agent states the constraint). Policy reminder (training-free re-anchored) cut confirmed violations >70pp in matched replay — cheap mitigation before any egress-gate wiring.
+- **opencodex (GO Integrate → CCC routing)**: universal provider proxy consolidating Codex/Claude Code/Grok lanes + the DeepSeek/OpenRouter failover surface. **Do not route secrets/PII through it.** Wire only via `/phase1` proposal.
+- **Reasoning-trace exfiltration (OPS rule, cyber)**: never share Claude Code/Codex/agent session transcripts containing encrypted reasoning blobs — decode + secret-leak risk (62 keys/33 emails/33 passwords in a ~7k-trace public scan). Scrub/redact before any sharing.
+- **FOMC pre-announcement IV (xsp)**: pre-FOMC short-dated OTM IV bid-up is a Lane A long-call timing edge, regime-strengthened in high vol. Requires a `/phase1` proposal before any Lane A timing-input wiring — informational brief already shipped to prod.
+- **SKILLER/SkillLens (CCC /route backlog)**: use a strong model to author route-style skills for small local executors; SkillsBench-style single-skill tasks are a cheap eval. SKILLER repo NOASSERTION → **NO-GO clone**, pattern-only.
+- **MISA-T / mixed-RL rollouts (routing research backlog only)**: workload-aware KV admission informs heterogeneous agentic-session routing; no prod wiring.
 
 ## Phase-1 meta
 

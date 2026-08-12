@@ -14,9 +14,10 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/active-project-research-routing.md
   - sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
+  - sources/eval-url-revenue-opportunity-2026-08-12.md
 maturity: draft
 created: 2026-08-11
-updated: 2026-08-11
+updated: 2026-08-12
 read_status: read
 ---
 

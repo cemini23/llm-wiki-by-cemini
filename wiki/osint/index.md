@@ -7,6 +7,38 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K233 ingest (2026-08-12)
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-2608.10538-skiller](sources/arxiv-2608.10538-skiller-2026-08-12.md) | SKILLER NL-driven RL skill authoring → CCC /route backlog; NO-GO clone (NOASSERTION) (K233) | draft |
+| [arxiv-2608.10669-redagentbench](sources/arxiv-2608.10669-redagentbench-2026-08-12.md) | Executable agent red-teaming + Recognition–Execution Gap → cyber (K233) | draft |
+| [arxiv-2608.10693-fed-speaks-vol-surface](sources/arxiv-2608.10693-fed-speaks-vol-surface-2026-08-12.md) | FOMC pre-announcement short-dated OTM IV elevation → Lane A timing (K233) | draft |
+| [arxiv-2608.10775-skilllens](sources/arxiv-2608.10775-skilllens-2026-08-12.md) | Visual skill cards for GUI agents → CCC/Atto watch (K233) | draft |
+| [arxiv-2608.10827-mira](sources/arxiv-2608.10827-mira-2026-08-12.md) | Medical image reflection for agentic diagnosis → wiki-only WATCH (K233) | draft |
+| [arxiv-2608.10894-formatheoria](sources/arxiv-2608.10894-formatheoria-2026-08-12.md) | Large-scale Lean theorem corpora → ai-formal-verification WATCH (K233) | draft |
+| [arxiv-2608.11146-cross-lingual-safety](sources/arxiv-2608.11146-cross-lingual-safety-2026-08-12.md) | Cross-lingual refusal gap (Twi/Hausa/Amharic/Swahili <10%) → cyber (K233) | draft |
+| [arxiv-2608.11152-mixed-rl-rollouts](sources/arxiv-2608.11152-mixed-rl-rollouts-2026-08-12.md) | MISA-T workload-aware KV admission → CCC routing backlog (K233) | draft |
+| [eval-url-revenue-opportunity-2026-08-12](sources/eval-url-revenue-opportunity-2026-08-12.md) | 20-URL tool eval — anydoc/iron-proxy/opencodex Integrate; 8 Extract; 6 NO-GO (K233) | draft |
+| [newsletter-latent-space-bioai-phase-shift](sources/newsletter-latent-space-bioai-phase-shift-2026-08-11.md) | Chai Discovery domain-shift RL for bio → Atto watch (K233) | draft |
+| [newsletter-latent-space-ainews-reasoning-trace](sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md) | Reasoning-trace exfiltration: CoT decode + public-trace leak → cyber ops rule (K233) | draft |
+| [newsletter-pragmatic-engineer-optiver](sources/newsletter-pragmatic-engineer-optiver-2026-08-11.md) | Optiver software engineering → prop-trading-engineering concept (K233) | draft |
+| [newsletter-capital-flows-inflation-risk](sources/newsletter-capital-flows-inflation-risk-2026-08-12.md) | Global inflation risk playbook → GuruWatcher macro watches (K233) | draft |
+| [newsletter-event-horizon-wildfires](sources/newsletter-event-horizon-wildfires-2026-08-12.md) | Wildfire under-betting; NY AG/CFTC letters; Kalshi retail LP (K233) | draft |
+| [newsletter-outlier-weekly-italy](sources/newsletter-outlier-weekly-italy-2026-08-11.md) | Outlier founder's Italy origin story → Atto genealogy-agent kit (K233) | draft |
+| [newsletter-wublock-derivatives-volume-july-2026](sources/newsletter-wublock-derivatives-volume-july-2026-2026-08-12.md) | Derivatives vol $3.03T −11.1% MoM; HL −18.5% → xsp venue context (K233) | draft |
+| [anydoc](entities/tools/anydoc.md) | MIT text-layer document parser GO Integrate → Atto (K233) | draft |
+| [opencodex](entities/tools/opencodex.md) | MIT universal provider proxy GO Integrate → CCC routing (K233) | draft |
+| [clapgrep](entities/tools/clapgrep.md) | GPL-3.0 LLM-assisted code search GO Extract → Atto (K233) | draft |
+| [tunnelto](entities/tools/tunnelto.md) | MIT localhost-exposure tunnel GO Extract → Atto (K233) | draft |
+| [cariddi](entities/tools/cariddi.md) | GPL-3.0 crawling/endpoint scanner Extract → cyber regex surface (K233) | draft |
+| [quotio](entities/tools/quotio.md) | MIT self-improving codebase agent Extract → CCC (K233) | draft |
+| [sentrux](entities/tools/sentrux.md) | MIT AI-response scanner Extract → Atto/GW (K233) | draft |
+| [skiller](entities/tools/skiller.md) | SKILLER repo NO-GO clone — NOASSERTION; pattern-only (K233) | draft |
+| [skilllens](entities/tools/skilllens.md) | Visual skill cards WATCH — no public repo (K233) | draft |
+| [reasoning-bank](entities/tools/reasoning-bank.md) | Apache-2.0 thinking-dataset repo WATCH (K233) | draft |
+| [codex-self-improving-loop](entities/tools/codex-self-improving-loop.md) | Self-improving code loop Extract — NOASSERTION schema only (K233) | draft |
+
 ### K232 ingest (2026-08-11)
 
 | Page | Summary | Maturity |

@@ -15,9 +15,14 @@ related:
   - "@ccc-wiki/entities/skills/super-audit.md"
   - "@ccc-wiki/entities/skills/free-audit.md"
   - "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
+  - concepts/agent-toolkit-routing-research-backlog.md
+  - entities/tools/opencodex.md
+  - entities/tools/quotio.md
+  - sources/arxiv-2608.11152-mixed-rl-rollouts-2026-08-12.md
+  - sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-08-08
+updated: 2026-08-12
 ---
 
 ## Relations
@@ -32,6 +37,11 @@ updated: 2026-08-08
 - @ccc-wiki/entities/skills/super-audit.md — API leg discovers `OPENROUTER_*` / `DEEPSEEK_*` / `ADVISOR_*` via `discover_api_keys.py`
 - @ccc-wiki/entities/skills/free-audit.md — Grok-orchestrated free council uses same `OPENROUTER_*` / `DEEPSEEK_*` routing env
 - @gambling-wiki/concepts/poker-hl-analyst-loop.md — HL loop sources env at start
+- @concepts/agent-toolkit-routing-research-backlog.md — K233 routing backlog (MISA-T/opencodex/Quotio)
+- @entities/tools/opencodex.md — K233 GO Integrate provider proxy (consolidates this failover surface)
+- @entities/tools/quotio.md — K233 quota-aware failover pattern
+- @sources/arxiv-2608.11152-mixed-rl-rollouts-2026-08-12.md — MISA-T workload-aware admission
+- @sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md — provider-proxy security surface
 
 ## Raw Concept
 
@@ -48,3 +58,5 @@ Canonical files: `config/llm-routing.env.example`, `scripts/llm_routing.py`, `sc
 Failover on HTTP 402/429 and quota/balance error strings. Disable with `LLM_FALLBACK_ENABLED=false`.
 
 **`/route` script host (2026-08-08):** private `cemini23/agent-toolkit` (`ROUTE_KIT=~/Projects/agent-toolkit` laptop; `/opt/cemini/agent-toolkit` on prod/egress). TipDrop workspace-kit is redirect-only for route scripts. SIP + verify gates live in agent-toolkit `scripts/lib/`.
+
+**Research improvement loop (2026-08-11):** OSINT digest cluster `cursor-route-harness` + active_topic `/route + agent-toolkit` steals failover / harness-evolution papers into CCC briefs. Standing backlog on `@ccc-wiki/entities/skills/route.md`. K231/K232 brief: CCC `briefs/2026-08-11_route-skill-k231-k232-steals.md`.
