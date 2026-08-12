@@ -17,6 +17,8 @@ related:
   - sources/american-call-options-pricing-with-modular-neural-networks.md
   - sources/cost-effective-algorithmic-trading-api-stack.md
   - sources/loosening-your-collar-alternative-implementations-of-qqq-collars.md
+  - concepts/high-iv-collar-shopping.md
+  - sources/newsletter-moontower-collar-shopping-2026-08-12.md
   - sources/mixed-fractional-models.md
   - sources/qqq-trust-s-american-options-using-data-from-november-21-2024.md
   - sources/crypto-13-4-11.md
@@ -39,11 +41,13 @@ related:
   - sources/arxiv-deep-hedging-delta-corrections-2605.21696.md
 maturity: draft
 created: 2026-04-27
-updated: 2026-05-30
+updated: 2026-08-12
 ---
 
 ## Relations
 
+- @concepts/high-iv-collar-shopping.md — K234 Moontower high-IV collar / risk-reversal shopping
+- @sources/newsletter-moontower-collar-shopping-2026-08-12.md — K234 source
 - @sources/3-19-on-chain-alpha-research.md — Options & Derivatives source in the Cemini research corpus
 - @sources/3-19-rl-research.md — Options & Derivatives source in the Cemini research corpus
 - @sources/3-19-trading-options-data-research.md — Options & Derivatives source in the Cemini research corpus

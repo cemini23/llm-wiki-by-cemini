@@ -7,6 +7,7 @@ related:
   - sources/arxiv-2608.10693-fed-speaks-vol-surface-2026-08-12.md
   - concepts/xsp-lane-trading-framework.md
   - concepts/fomc-iv-surface-dynamics.md
+  - concepts/high-iv-collar-shopping.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-12
@@ -17,6 +18,7 @@ updated: 2026-08-12
 - @concepts/xsp-lane-trading-framework.md
 - @concepts/fomc-iv-surface-dynamics.md
 - @sources/arxiv-2608.10693-fed-speaks-vol-surface-2026-08-12.md
+- @concepts/high-iv-collar-shopping.md — high-IV financed hedges (K234)
 
 ## Raw Concept
 

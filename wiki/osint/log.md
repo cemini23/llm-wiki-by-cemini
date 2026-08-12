@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-08-12] ingest | K234 — Charity Majors harness/verify + Moontower collar shopping
+
+- **Inbox (2 NEW):** Pragmatic Engineer Charity Majors episode takeaways; Moontower Meta collar shopping. Archived to egress-fi; inbox empty.
+- **Sources + concepts:** harness-verification-bottleneck; high-iv-collar-shopping.
+- **Briefs:** CCC `2026-08-12_k234-charity-majors-harness-verify.md`; `briefs/xsp-k234-moontower-collar-shopping.md` → cemini-prod. No Atto/GW.
+- **Note:** claude-ds mid route hung (watchdog); completed via Cursor parent takeover from SIP handoff.
+
+## [2026-08-12] cross-wiki | Cyber hardware-ID OPSEC backlink on fingerprint-suite
+
+Cyber ingest of host HWID / MAC-randomization OPSEC (`@cybersecurity-wiki/concepts/hardware-id-masking-opsec.md`). Updated `@entities/tools/fingerprint-suite.md` related + Relations: browser fingerprint lane ≠ host SMBIOS/TPM/MAC. No OSINT clone.
+
 ## [2026-08-11] ingest | K232 — SHE + 7 arXiv paper wave + WuBlock July spot volume
 
 - **Phase-0 ~5.1MB:** `SHE` (github.com/RainbowQTT/SHE, **Apache-2.0** verified) GO Extract REFERENCE → CCC + local-abliterated-lab; no other clones (TongGuOCR/Macaron/DiffCoop/HG no public runnable repo; robot harness OOD)

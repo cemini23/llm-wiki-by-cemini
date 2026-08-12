@@ -7,6 +7,14 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K234 ingest (2026-08-12)
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [newsletter-pragmatic-engineer-charity-majors-ai](sources/newsletter-pragmatic-engineer-charity-majors-ai-2026-08-12.md) | Charity Majors: harness > model; verification bottleneck → CCC /route (K234) | draft |
+| [newsletter-moontower-collar-shopping](sources/newsletter-moontower-collar-shopping-2026-08-12.md) | High-IV collar / risk-reversal shopping → xsp hedge vocab (K234) | draft |
+| [agent-harness-verification-bottleneck](concepts/agent-harness-verification-bottleneck.md) | Harness + Verify gate mapping from Charity Majors (K234) | draft |
+| [high-iv-collar-shopping](concepts/high-iv-collar-shopping.md) | Financed puts via rich call overwrites in high IV (K234) | draft |
+
 ### K233 ingest (2026-08-12)
 
 | Page | Summary | Maturity |

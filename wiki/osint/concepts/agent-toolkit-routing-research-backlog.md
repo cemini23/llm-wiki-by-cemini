@@ -6,6 +6,8 @@ keywords: [routing, failover, kv-capacity, workload-aware, provider-proxy, backl
 related:
   - sources/arxiv-2608.11152-mixed-rl-rollouts-2026-08-12.md
   - sources/newsletter-pragmatic-engineer-optiver-2026-08-11.md
+  - sources/newsletter-pragmatic-engineer-charity-majors-ai-2026-08-12.md
+  - concepts/agent-harness-verification-bottleneck.md
   - entities/tools/opencodex.md
   - entities/tools/quotio.md
   - entities/tools/reasoning-bank.md
@@ -13,8 +15,7 @@ related:
   - concepts/prop-trading-engineering-2026.md
   - entities/tools/codex-self-improving-loop.md
   - entities/tools/sentrux.md
-maturity: draft
-created: 2026-08-12
+tags: [concept, routing, llm, infra, backlog, k233, k234]
 updated: 2026-08-12
 ---
 
@@ -22,6 +23,8 @@ updated: 2026-08-12
 
 - @sources/arxiv-2608.11152-mixed-rl-rollouts-2026-08-12.md — MISA-T
 - @sources/newsletter-pragmatic-engineer-optiver-2026-08-11.md — AI gateway + MCP hosting platform
+- @sources/newsletter-pragmatic-engineer-charity-majors-ai-2026-08-12.md — harness > model; verification bottleneck (K234)
+- @concepts/agent-harness-verification-bottleneck.md
 - @entities/tools/opencodex.md — GO Integrate provider proxy
 - @entities/tools/quotio.md — quota-aware failover
 - @entities/tools/reasoning-bank.md — WATCH
@@ -32,7 +35,7 @@ updated: 2026-08-12
 
 ## Raw Concept
 
-What this page answers: what routing-related research/patterns the agent-toolkit lane (llm-routing-deepseek-openrouter-failover) should track next. Accumulated from K233 sources.
+What this page answers: what routing-related research/patterns the agent-toolkit lane (llm-routing-deepseek-openrouter-failover) should track next. Accumulated from K233–K234 sources.
 
 ## Narrative
 
@@ -43,6 +46,10 @@ What this page answers: what routing-related research/patterns the agent-toolkit
 3. **Quotio (K233 Extract)** — quota-aware round-robin/fill-first failover pattern for stall-proof token-heavy sessions.
 4. **Optiver AI gateway + MCP hosting platform** — industry blueprint of the "models-as-a-service + agent tool layer" pattern this workspace approximates with conductor + MCP tools; validates the direction.
 
+**Backlog bump (K234):**
+
+5. **Charity Majors / harness verification** — harness infrastructure and post-generate verification beat model-chasing; maps to `/route` SIP Verify gate. See `@concepts/agent-harness-verification-bottleneck.md`.
+
 Any of these being wired to prod requires a separate `/phase1` proposal — this page is the tracking surface, not a wire.
 
-[Source: arXiv 2608.11152; Pragmatic Engineer 2026-08-11; K233 eval]
+[Source: arXiv 2608.11152; Pragmatic Engineer 2026-08-11 + 2026-08-12; K233 eval]

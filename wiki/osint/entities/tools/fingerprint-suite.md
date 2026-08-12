@@ -7,9 +7,12 @@ related:
   - sources/tool-evaluation-wiki-fit-2026-05-15.md
   - entities/tools/obscura-headless-browser.md
   - entities/tools/socid-extractor.md
+  - "@cybersecurity-wiki/concepts/hardware-id-masking-opsec.md"
+  - "@cybersecurity-wiki/sources/arxiv-1905-01051-browser-fingerprinting-survey.md"
+  - "@cybersecurity-wiki/sources/arxiv-2201-09956-drawn-apart-gpu-fingerprinting.md"
 maturity: draft
 created: 2026-05-15
-updated: 2026-05-16
+updated: 2026-08-12
 phase_0_verdict: ADOPT 2026-05-15 (Apache-2.0 verified, locally installed)
 ---
 
@@ -18,6 +21,9 @@ phase_0_verdict: ADOPT 2026-05-15 (Apache-2.0 verified, locally installed)
 - @sources/tool-evaluation-wiki-fit-2026-05-15.md — evaluated in the 52-URL eval (Adopt tier, OSINT primary fit)
 - @entities/tools/obscura-headless-browser.md — sibling OSINT-collection tooling (headless browsing); fingerprint-suite supplies the stealth layer
 - @entities/tools/socid-extractor.md — sibling OSINT-collection tooling; fingerprint-suite supplies stealth, socid-extractor supplies entity extraction
+- @cybersecurity-wiki/concepts/hardware-id-masking-opsec.md — host HWID / MAC / TPM layers (different plane from browser fingerprints)
+- @cybersecurity-wiki/sources/arxiv-1905-01051-browser-fingerprinting-survey.md — Laperdrix TWEB survey
+- @cybersecurity-wiki/sources/arxiv-2201-09956-drawn-apart-gpu-fingerprinting.md — GPU EU timing can tell identical configs apart
 
 ## Raw Concept
 
