@@ -28,6 +28,12 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-13 — K235)
+
+- **K235 ingest** — 20-URL eval (ppt-master/benchflow/GHunt/valuecell/fastdup/etc.) + 8 arXiv (CosMAP / FrontierFinance / content-moderation / China-VLM / HPC-modernization / VAKRA / tutor-withhold / RSM) + Latent Space Grok 4.6 + Capital Flows rates. 11 raws archived to egress-fi; inbox empty at commit.
+- **K235 Phase-0** — ppt-master **MIT verified** (CONDITIONAL-GO Atto; sparse-adopt, 1.3GB); claude-task-viewer MIT + quotio MIT + CosMAP-dr BSD-2 cloned (~277MB total); benchflow **AGPL isolate**; **fastdup CC BY-NC-ND → REJECT for Atto**; VAKRA CC BY-NC-SA reference; GHunt no-LICENSE.
+- **K235 Phase-1 + briefs** — wires appended (Atto deck/license disposition + tool-policy/oracle/RSM/tutor). Briefs: Atto ppt-master / GW rates-FX watches / Cyber benchflow-VAKRA-ChinaVLM / CCC VAKRA-RSM-tutor-Grok46-HPC. Poker skip (no IIG hook); xsp/pm none (FrontierFinance wiki/eval). Grok CLI out.
+
 ## Current state (2026-08-12 — K233)
 
 - **K233 ingest** — 8 arXiv (SKILLER / REDAgentBench / Fed-Speaks / SkillLens / MIRA / FormaTheoria / cross-lingual safety / mixed-RL rollouts) + 20-URL tool eval + 7 newsletters. Phase-0 **3 Integrate clones** (anydoc MIT, iron-proxy Apache-2.0 paradigmxyz fork, opencodex MIT). SKILLER **NO-GO** clone (NOASSERTION); agents-from-scratch **NO-GO** (null SPDX). 16 raws archived to egress-fi; inbox empty.
