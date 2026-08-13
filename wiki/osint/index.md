@@ -7,6 +7,14 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### 2026-08-12 claude-ds harness refresh
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [opencode](entities/tools/opencode.md) | sst/OpenCode coding agent Phase-0 — not opencodex; NO-GO `/route` swap | draft |
+| [reasonix](entities/tools/reasonix.md) | DeepSeek-native CLI Phase-0 — NO-GO `/route` swap | draft |
+
+`/route` v2.3 (same day): Flash = easy/mid execute; Pro = Grok CLI usage-out stand-in. Canon: `@ccc-wiki/entities/skills/route.md`.
+
 ### K234 ingest (2026-08-12)
 | Page | Summary | Maturity |
 |------|---------|----------|

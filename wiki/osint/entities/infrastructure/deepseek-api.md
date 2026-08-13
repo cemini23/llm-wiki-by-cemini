@@ -56,9 +56,11 @@ related:
   - concepts/cemini-ai-assistant.md
   - concepts/api-credential-registry.md
   - concepts/llm-routing-deepseek-openrouter-failover.md
+  - entities/tools/opencode.md
+  - entities/tools/reasonix.md
 maturity: validated
 created: 2026-04-24
-updated: 2026-08-01
+updated: 2026-08-12
 ---
 
 ## Relations
@@ -87,6 +89,8 @@ updated: 2026-08-01
 - @sources/wave-5-1-link-eval-more.md — Wave 5.1 agent-framework evaluation; DSPy + Instructor Adopt decisions; both target DeepSeek API as the LLM brain for prompt optimization and structured-output extraction
 - @sources/wave-5-1-link-eval-stacks.md — Wave 5.1 systems-architecture evaluation; DeepSeek-V4-Pro Fireworks endpoint as primary Adopt candidate; confirms DeepSeek model family as the Cemini-standard LLM brain across all three evaluation surfaces
 - @concepts/cemini-ai-assistant.md — 2026-05-19 — proposed user-facing assistant; DeepSeek is its LLM brain, kept provider-agnostic via the same OpenAI-compatible swap this page documents
+- @entities/tools/opencode.md — 2026-08-12 Phase-0 coding-agent alternative; NO-GO `/route` swap
+- @entities/tools/reasonix.md — 2026-08-12 Phase-0 DeepSeek-native CLI; NO-GO `/route` swap
 
 ## Raw Concept
 
@@ -104,7 +108,7 @@ This page documents the **intended + partially verified deployed state** on cemi
 ### Expected integration
 
 1. **Auth `[CONFIRMED 2026-05-29]`** — `DEEPSEEK_API_KEY` present in `/opt/cemini/.env` (value redacted; verified key name exists via prod SSH).
-2. **Client**: `openai.OpenAI(base_url="https://api.deepseek.com", api_key=os.environ["DEEPSEEK_API_KEY"])` — DeepSeek's API is OpenAI-compatible, so the existing OpenAI-SDK idiom works with one base-URL override. Model names per `api-docs.deepseek.com/quick_start/pricing` [VERIFIED 2026-05-04]: `deepseek-v4-flash` (general-purpose; thinking-mode toggle via parameters, not model-ID swap) and `deepseek-v4-pro` (highest capability). Legacy aliases `deepseek-chat` and `deepseek-reasoner` remain functional but are documented as deprecated; future API versions will remove them. Default Cemini production should pin to `deepseek-v4-flash` for analyst-node calls and `deepseek-v4-pro` for the final-decision synthesizer.
+2. **Client**: `openai.OpenAI(base_url="https://api.deepseek.com", api_key=os.environ["DEEPSEEK_API_KEY"])` — DeepSeek's API is OpenAI-compatible, so the existing OpenAI-SDK idiom works with one base-URL override. Model names per `api-docs.deepseek.com/quick_start/pricing` [VERIFIED 2026-05-04]: `deepseek-v4-flash` (general-purpose; thinking-mode toggle via parameters, not model-ID swap) and `deepseek-v4-pro` (highest capability). Legacy aliases `deepseek-chat` and `deepseek-reasoner` remain functional but are documented as deprecated; future API versions will remove them. Default Cemini production should pin to `deepseek-v4-flash` for analyst-node calls and `deepseek-v4-pro` for the final-decision synthesizer. **`/route` (2026-08-12 v2.3):** same ids — Flash = easy/mid execute; Pro = Grok CLI usage-out stand-in (mid plan / hard implement).
 3. **Orchestration**: LangGraph supervisors invoke the client at each scatter-gather node; the Send-API fan-out remains unchanged from @concepts/scatter-gather-topology.md. The key difference vs the retracted local-runtime design: API calls have external latency + rate-limit exposure, so the scatter-gather budget should account for that (batch size, concurrent-call ceiling).
 4. **RAG integration**: the model queries the **local pgvector wiki-search** (Track B of the 2026-04-23 wire-in brief, currently in re-deploy investigation per the 2026-04-24 post-capacity-alarm follow-up). The model stays in the cloud; the knowledge base stays local. This is the core architectural decoupling — no proprietary research leaves the workspace except as the model's own response completions.
 5. **Cost + rate-limit envelope `[CONFIRMED 2026-05-29]`** — official pricing [Source: https://api-docs.deepseek.com/quick_start/pricing (retrieved 2026-05-29)]: `deepseek-v4-flash` **$0.14 / $0.28** per 1M input/output tokens (cache miss), concurrency **2500**; `deepseek-v4-pro` **$0.435 / $0.87** (75% promo through 2026-05-31 UTC), concurrency **500**. Cache-hit input at 1/10 of miss rate.

@@ -7,6 +7,7 @@ related:
   - sources/eval-url-revenue-opportunity-2026-08-12.md
   - concepts/agent-toolkit-routing-research-backlog.md
   - concepts/llm-routing-deepseek-openrouter-failover.md
+  - entities/tools/opencode.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-12
@@ -17,6 +18,7 @@ updated: 2026-08-12
 - @sources/eval-url-revenue-opportunity-2026-08-12.md — K233 20-URL eval, Integrate tier
 - @concepts/agent-toolkit-routing-research-backlog.md
 - @concepts/llm-routing-deepseek-openrouter-failover.md
+- @entities/tools/opencode.md — **different product** (sst/OpenCode coding agent). This page is the provider proxy.
 
 ## Raw Concept
 

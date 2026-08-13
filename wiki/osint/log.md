@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-08-12] ops | /route v2.3 Flash vs Pro
+
+- `/route`: claude-ds **Flash** = easy/mid execute; **Pro** = Grok CLI usage-out stand-in (mid plan / hard implement). One harness. Auth ≠ usage-out.
+- Pages: `@concepts/llm-routing-deepseek-openrouter-failover.md`, `@concepts/agent-toolkit-routing-research-backlog.md`. Canon skill/docs on CCC.
+
+## [2026-08-12] ops | claude-ds 2.1.222 + OpenCode/Reasonix Phase-0
+
+- Isolated Claude Code **2.1.123 → 2.1.222**; retired model IDs fixed; LSP + code-review plugins; `CLAUDE_CONFIG_DIR` isolation.
+- Phase-0: `@entities/tools/opencode.md`, `@entities/tools/reasonix.md` — keep `claude-ds` as `/route` mid. Canon audits on CCC wiki.
+- Name collision: OpenCode ≠ `@entities/tools/opencodex.md` (K233 proxy).
+
 ## [2026-08-12] ingest | K234 — Charity Majors harness/verify + Moontower collar shopping
 
 - **Inbox (2 NEW):** Pragmatic Engineer Charity Majors episode takeaways; Moontower Meta collar shopping. Archived to egress-fi; inbox empty.

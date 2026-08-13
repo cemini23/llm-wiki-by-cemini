@@ -17,6 +17,8 @@ related:
   - "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
   - concepts/agent-toolkit-routing-research-backlog.md
   - entities/tools/opencodex.md
+  - entities/tools/opencode.md
+  - entities/tools/reasonix.md
   - entities/tools/quotio.md
   - sources/arxiv-2608.11152-mixed-rl-rollouts-2026-08-12.md
   - sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md
@@ -31,7 +33,7 @@ updated: 2026-08-12
 - @concepts/api-credential-registry.md — `DEEPSEEK_*`, `OPENROUTER_*` variable names
 - @concepts/mcp-context-optimization.md — Layer 2 claude-code-router (complementary)
 - @ccc-wiki/entities/tools/agent-toolkit.md — private `/route` host (`ROUTE_KIT`)
-- @ccc-wiki/entities/skills/route.md — federation `/route` skill v2.1
+- @ccc-wiki/entities/skills/route.md — federation `/route` skill v2.3
 - @entities/infrastructure/deepseek-api.md — prod brain
 - @ccc-wiki/concepts/llm-routing-deepseek-openrouter-failover.md — operator-facing CCC copy (same contract)
 - @ccc-wiki/entities/skills/super-audit.md — API leg discovers `OPENROUTER_*` / `DEEPSEEK_*` / `ADVISOR_*` via `discover_api_keys.py`
@@ -39,6 +41,8 @@ updated: 2026-08-12
 - @gambling-wiki/concepts/poker-hl-analyst-loop.md — HL loop sources env at start
 - @concepts/agent-toolkit-routing-research-backlog.md — K233 routing backlog (MISA-T/opencodex/Quotio)
 - @entities/tools/opencodex.md — K233 GO Integrate provider proxy (consolidates this failover surface)
+- @entities/tools/opencode.md — sst/OpenCode coding agent Phase-0; **not** opencodex; NO-GO `/route` swap
+- @entities/tools/reasonix.md — DeepSeek-native CLI Phase-0; NO-GO `/route` swap
 - @entities/tools/quotio.md — K233 quota-aware failover pattern
 - @sources/arxiv-2608.11152-mixed-rl-rollouts-2026-08-12.md — MISA-T workload-aware admission
 - @sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md — provider-proxy security surface
@@ -60,3 +64,5 @@ Failover on HTTP 402/429 and quota/balance error strings. Disable with `LLM_FALL
 **`/route` script host (2026-08-08):** private `cemini23/agent-toolkit` (`ROUTE_KIT=~/Projects/agent-toolkit` laptop; `/opt/cemini/agent-toolkit` on prod/egress). TipDrop workspace-kit is redirect-only for route scripts. SIP + verify gates live in agent-toolkit `scripts/lib/`.
 
 **Research improvement loop (2026-08-11):** OSINT digest cluster `cursor-route-harness` + active_topic `/route + agent-toolkit` steals failover / harness-evolution papers into CCC briefs. Standing backlog on `@ccc-wiki/entities/skills/route.md`. K231/K232 brief: CCC `briefs/2026-08-11_route-skill-k231-k232-steals.md`.
+
+**claude-ds worker (2026-08-12):** isolated Claude Code **2.1.222**; default `deepseek-v4-flash`; `-Model deepseek-v4-pro` is the **Grok CLI usage-out stand-in** (mid plan / hard implement). One harness. OpenCode/Reasonix Phase-0 **NO-GO** as mid-lane replacements. Official DeepSeek Harness still unreleased.

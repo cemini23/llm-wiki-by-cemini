@@ -9,6 +9,8 @@ related:
   - sources/newsletter-pragmatic-engineer-charity-majors-ai-2026-08-12.md
   - concepts/agent-harness-verification-bottleneck.md
   - entities/tools/opencodex.md
+  - entities/tools/opencode.md
+  - entities/tools/reasonix.md
   - entities/tools/quotio.md
   - entities/tools/reasoning-bank.md
   - concepts/llm-routing-deepseek-openrouter-failover.md
@@ -26,6 +28,8 @@ updated: 2026-08-12
 - @sources/newsletter-pragmatic-engineer-charity-majors-ai-2026-08-12.md — harness > model; verification bottleneck (K234)
 - @concepts/agent-harness-verification-bottleneck.md
 - @entities/tools/opencodex.md — GO Integrate provider proxy
+- @entities/tools/opencode.md — coding agent Phase-0 (name collision with opencodex); NO-GO mid swap
+- @entities/tools/reasonix.md — DeepSeek-native CLI Phase-0; NO-GO mid swap
 - @entities/tools/quotio.md — quota-aware failover
 - @entities/tools/reasoning-bank.md — WATCH
 - @concepts/llm-routing-deepseek-openrouter-failover.md
@@ -49,6 +53,11 @@ What this page answers: what routing-related research/patterns the agent-toolkit
 **Backlog bump (K234):**
 
 5. **Charity Majors / harness verification** — harness infrastructure and post-generate verification beat model-chasing; maps to `/route` SIP Verify gate. See `@concepts/agent-harness-verification-bottleneck.md`.
+
+**Backlog bump (2026-08-12 claude-ds refresh):**
+
+6. **OpenCode / Reasonix** — Phase-0 complete. Keep isolated `claude-ds` (Claude Code 2.1.222). Neither is a `/route` mid drop-in. See `@entities/tools/opencode.md`, `@entities/tools/reasonix.md`. `opencodex` (K233) remains the provider-**proxy** candidate, not a coding loop.
+7. **Flash vs Pro (wired 2026-08-12)** — V4 Pro GA is the Grok CLI usage-out stand-in inside the same `claude-ds` process. Do not add a second harness. Watch for official DeepSeek Harness; keep adapter slot.
 
 Any of these being wired to prod requires a separate `/phase1` proposal — this page is the tracking surface, not a wire.
 
