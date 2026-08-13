@@ -5,6 +5,8 @@ tags: [source, substack, rss, macro, guruwatcher, k235]
 keywords: [capital-flows, interest-rates, FX, impossible-trinity, yen, AI-CapEx, bond-vigilantes]
 related:
   - sources/newsletter-capital-flows-inflation-risk-2026-08-12.md
+  - concepts/valuation-hypersensitivity-macro-liquidity.md
+  - sources/substack-rss-capital-flows-2026-08-13-the-dangerous-risk-building-in-stocks.md
 maturity: draft
 created: 2026-08-13
 updated: 2026-08-13
@@ -14,6 +16,8 @@ read_status: skimmed
 ## Relations
 
 - @sources/newsletter-capital-flows-inflation-risk-2026-08-12.md — prior Capital Flows issue (K233)
+- @concepts/valuation-hypersensitivity-macro-liquidity.md — K236 synthesis of this + dangerous-risk issue
+- @sources/substack-rss-capital-flows-2026-08-13-the-dangerous-risk-building-in-stocks.md — next issue (K236): valuations hypersensitive to macro liquidity
 - (GuruWatcher brief `2026-08-13_k235-capital-flows-rates-fx-watches.md` — cross-project, not a wiki page)
 
 ## Raw Concept

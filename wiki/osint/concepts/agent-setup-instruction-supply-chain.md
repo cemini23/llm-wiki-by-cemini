@@ -8,15 +8,17 @@ related:
   - sources/substack-rss-secpro-2026-07-17-243-entrepreneurial-adversary.md
   - entities/tools/kimi-cli.md
   - sources/newsletter-rss-latent-space-2026-07-18-ainews-not-much-happened.md
+  - sources/newsletter-rss-tldrsec-2026-08-13-tldr-sec-341---hugging-face-incident-black-hat-t.md
 maturity: draft
 created: 2026-07-18
-updated: 2026-07-18
+updated: 2026-08-13
 ---
 
 ## Relations
 
 - @sources/arxiv-2607.15143-setup-instruction-weaponization.md
 - @sources/substack-rss-secpro-2026-07-17-243-entrepreneurial-adversary.md
+- @sources/newsletter-rss-tldrsec-2026-08-13-tldr-sec-341---hugging-face-incident-black-hat-t.md — promptware: memory-file poisoning of coding assistants extends the install-gap model
 
 ## Raw Concept
 

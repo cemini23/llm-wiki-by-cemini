@@ -5,6 +5,8 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md
+  - concepts/crypto-venue-website-traffic.md
   - sources/substack-rss-wublock-2026-08-09-asia-top10-russia-japan.md
   - sources/substack-rss-capital-flows-2026-08-08-eow-teaser.md
   - sources/substack-rss-wublock-2026-08-08-etherfi-uniswap-hl.md
@@ -125,6 +127,8 @@ updated: 2026-08-11
 ---
 
 ## Relations
+- @sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md — K236 website traffic (Deribit −44.7% confirms −44.4% volume)
+- @concepts/crypto-venue-website-traffic.md — K236 venue retail-traffic series
 - @sources/substack-rss-wublock-2026-08-10-bip-110.md
 - @sources/substack-rss-event-horizon-2026-08-10-prophetx.md
 - @sources/substack-rss-capital-flows-2026-08-10-fx-volatility.md

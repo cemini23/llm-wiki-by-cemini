@@ -7,6 +7,15 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K236 ingest (2026-08-13)
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [newsletter-tldrsec-341](sources/newsletter-rss-tldrsec-2026-08-13-tldr-sec-341---hugging-face-incident-black-hat-t.md) | HF incident talk + CSS webmail bomb + GitHub supply chain → cyber brief (K236) | draft |
+| [newsletter-capital-flows-dangerous-risk](sources/substack-rss-capital-flows-2026-08-13-the-dangerous-risk-building-in-stocks.md) | Valuation hypersensitivity, yen carry, tech concentration → GuruWatcher watches (K236) | draft |
+| [newsletter-event-horizon-novig](sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md) | Novig responsible trading + CFTC incentive advisory + NYC/Baltimore → wiki + pm-k236 (K236) | draft |
+| [newsletter-wublock-traffic](sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md) | July website traffic 134.31M −2.35% MoM → xsp-k236 venue context (K236) | draft |
+| [newsletter-kyla-get-rich](sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md) | Labor vs capital / AI wealth effect / asset-holder economy → wiki-only concept (K236) | draft |
+
 ### K235 ingest (2026-08-13)
 | Page | Summary | Maturity |
 |------|---------|----------|
@@ -2729,6 +2738,14 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 Topics, theses, methodologies, strategies — ideas the research examines.
 
 **Track C audit status markers** (applied 2026-04-24 per `briefs/track-c-walk-results.md`): `[C]` = `[CONFIRMED]`, `[T]` = `[TENTATIVE]`, `[R]` = `[RETRACTED]`, `[Cd]` = `[CONFIRMED] doc-only`, `[Cr]` = `[CONFIRMED] research-only`.
+
+### K236 ingest (2026-08-13)
+
+- [Valuation hypersensitivity & macro liquidity](concepts/valuation-hypersensitivity-macro-liquidity.md) — record valuations turn small liquidity shifts into ±10% moves; yen-carry unwind channel (K236) — concept, macro, liquidity, equity-valuation, k236
+- [Crypto venue website traffic 2026](concepts/crypto-venue-website-traffic.md) — monthly exchange web-visit trends; Deribit −44.7% confirms −44.4% derivatives volume (K236) — concept, crypto, venue-traffic, retail, k236
+- [Labor vs capital & asset-holder economy](concepts/labor-vs-capital-wealth-culture.md) — ownership-over-effort economy; passive income; AI wealth effect; prospect-theory speculation (K236) — concept, macro, culture, retail, k236
+- [Prediction-Market Regulation 2026](concepts/prediction-market-regulation-2026.md) — CFTC emergency authority, Kalshi×NY, Novig responsible trading + incentive-program scrutiny (K233/K236) — concept, prediction-markets, regulation, k233, k236
+- [Crypto Derivatives Volume 2026](concepts/crypto-derivatives-volume-2026.md) — perp/options venue volume trends; website-traffic companion series (K233/K236) — concept, crypto, perps, volume, k233, k236
 
 ### Cemini strategy doctrine
 

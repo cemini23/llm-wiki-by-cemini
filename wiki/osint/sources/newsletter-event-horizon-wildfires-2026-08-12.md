@@ -7,9 +7,10 @@ related:
   - concepts/prediction-market-regulation-2026.md
   - concepts/polymarket-bot-architecture.md
   - concepts/kalshi-retail-lp.md
+  - sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-13
 read_status: read
 ---
 
@@ -18,6 +19,7 @@ read_status: read
 - @concepts/prediction-market-regulation-2026.md
 - @concepts/polymarket-bot-architecture.md
 - @concepts/kalshi-retail-lp.md
+- @sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md — K236 next issue: Novig framework + CFTC incentive advisory
 
 ## Raw Concept
 

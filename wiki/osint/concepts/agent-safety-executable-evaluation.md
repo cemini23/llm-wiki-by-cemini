@@ -6,15 +6,17 @@ keywords: [asr, executable-evaluation, service-sandbox, final-state, adjudicatio
 related:
   - sources/arxiv-2608.10669-redagentbench-2026-08-12.md
   - concepts/recognition-execution-gap.md
+  - sources/newsletter-rss-tldrsec-2026-08-13-tldr-sec-341---hugging-face-incident-black-hat-t.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-13
 ---
 
 ## Relations
 
 - @sources/arxiv-2608.10669-redagentbench-2026-08-12.md
 - @concepts/recognition-execution-gap.md
+- @sources/newsletter-rss-tldrsec-2026-08-13-tldr-sec-341---hugging-face-incident-black-hat-t.md — agent-identity/least-privilege + Beyond Zero = executable-safety evaluation surface
 
 ## Raw Concept
 

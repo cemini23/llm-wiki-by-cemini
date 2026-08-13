@@ -5,16 +5,18 @@ tags: [concept, kalshi, prediction-markets, lp, k233]
 keywords: [kalshi, lp, event-contracts, volume, regulation]
 related:
   - sources/newsletter-event-horizon-wildfires-2026-08-12.md
+  - sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md
   - concepts/prediction-market-regulation-2026.md
   - concepts/polymarket-bot-architecture.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-13
 ---
 
 ## Relations
 
 - @sources/newsletter-event-horizon-wildfires-2026-08-12.md
+- @sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md — CFTC incentive-program advisory targets retail LP/bonus programs (K236)
 - @concepts/prediction-market-regulation-2026.md
 - @concepts/polymarket-bot-architecture.md
 

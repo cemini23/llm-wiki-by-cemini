@@ -1,22 +1,28 @@
 ---
-title: Prediction-Market Regulation 2026 — CFTC emergency authority, Kalshi×NY, wildfire narrative
+title: Prediction-Market Regulation 2026 — CFTC emergency authority, Kalshi×NY, responsible-trading & incentive scrutiny
 type: concept
-tags: [concept, prediction-markets, regulation, kalshi, cftc, k233]
-keywords: [cftc, kalshi, new-york-ag, event-contracts, state-gaming-laws, wildfire-betting, emergency-authority]
+tags: [concept, prediction-markets, regulation, kalshi, cftc, k233, k236]
+keywords: [cftc, kalshi, new-york-ag, event-contracts, state-gaming-laws, wildfire-betting, emergency-authority, novig, responsible-trading, incentive-programs, nyc-council, baltimore]
 related:
   - sources/newsletter-event-horizon-wildfires-2026-08-12.md
+  - sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md
   - concepts/polymarket-bot-architecture.md
   - concepts/kalshi-retail-lp.md
+  - concepts/labor-vs-capital-wealth-culture.md
+  - sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-13
 ---
 
 ## Relations
 
 - @sources/newsletter-event-horizon-wildfires-2026-08-12.md
+- @sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md
 - @concepts/polymarket-bot-architecture.md
 - @concepts/kalshi-retail-lp.md
+- @concepts/labor-vs-capital-wealth-culture.md — gambling/investing blur backdrop to retail-participation scrutiny
+- @sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md — K236 retail gambling/investing-blur macro backdrop
 
 ## Raw Concept
 
@@ -32,4 +38,12 @@ What this page answers: the regulatory state of US event-contract markets in Aug
 
 **For pm-bot ops:** NY-state exposure is a legal tail risk on the Kalshi lane; monitor the CFTC emergency-authority litigation. Seasonal demand lull (post-World Cup) lowers venue liquidity into the fall.
 
-[Source: Event Horizon 2026-08-12 (retrieved 2026-08-12)]
+**K236 — responsible trading + incentive scrutiny (2026-08-13).** Three regulatory threads converged:
+
+1. **Novig's responsible-trading framework** (Chapter 14 of the Ludlow Exchange rulebook) — a 21+ nationwide age standard (vs the 18+ industry norm at Polymarket/Kalshi), member deposit/loss/exposure limits, cooling-off + self-exclusion, responsible-marketing bans, trading-incentive restrictions, and risk-based monitoring, all codified as exchange-side obligations rather than optional customer tools. A benchmark for what responsible-participation rules look like when embedded in rulebooks.
+2. **CFTC DMO advisory on incentive programs** (Reg 40.5/40.6 self-certifications) — explicitly flags payments exceeding what's reasonably necessary, unlimited rebates / "risk-free" trades / market-maker stipends (Rule 1.56 guarantee prohibition), hidden one-off/preferential arrangements, secret discount codes, non-cash prizes, VIP/early access without disclosure, and chance-based sweepstakes rewards (Core Principle 2). Directly relevant to Kalshi's chance-based bonus offers and to any market-maker/LP incentive program on the retail lane.
+3. **NYC Council investigation** (Speaker Julie Menin) into deceptive/predatory marketing — letters to Kalshi, Polymarket, Coinbase, Gemini Titan; influencer-marketing and fabricated-wager concerns; subpoena power. **Baltimore** separately sued Kalshi + Polymarket for unlicensed sports betting + consumer-protection violations. Kalshi volume Aug 11: $1.27B (sports+parlays 78.6%, crypto 18%); raise talk at a $40B valuation (Sequoia/Wellington); Kalshi referred 32 insider-trading cases to the CFTC.
+
+Net for pm-bot ops: retail-facing incentive/marketing programs are now a regulatory target — an awareness item for the Kalshi lane, not a code change. The responsible-trading framing (21+, loss-chasing detection) is also the plausible direction future federal oversight takes.
+
+[Sources: Event Horizon 2026-08-12 + Event Horizon 2026-08-13 (retrieved 2026-08-13)]

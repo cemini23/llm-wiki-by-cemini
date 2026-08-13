@@ -20,6 +20,7 @@ related:
   - entities/platforms/oanda.md
   - entities/platforms/kalshi.md
   - concepts/carry-trade.md
+  - concepts/valuation-hypersensitivity-macro-liquidity.md
   - concepts/polymarket-weather-trading-strategy.md
   - concepts/markov-regime-switching-models.md
   - concepts/gmm-factor-lens-regime-modeling.md
@@ -53,6 +54,7 @@ updated: 2026-07-13
 - @entities/platforms/oanda.md
 - @entities/platforms/kalshi.md
 - @concepts/carry-trade.md — carry trade sizing is gated by Macro Weather regime: disabled in RED, half-sized in YELLOW, full-sized in GREEN.
+- @concepts/valuation-hypersensitivity-macro-liquidity.md — record-valuation sensitivity framing for regime transitions (K236)
 - @concepts/reviewer-passive-injection-corpus.md — K37 reviewer bundle cites Macro Weather as **context**, not universal XSP entry gate
 - @concepts/markov-regime-switching-models.md — sibling regime concept: Markov/HMM detects the regime statistically; Macro Weather is the macro-state framing
 - @concepts/gmm-factor-lens-regime-modeling.md — K58 reference taxonomy (Crisis / Steady State / Inflation / WOI); not wired to prod Macro Weather without validation

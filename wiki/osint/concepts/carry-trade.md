@@ -7,9 +7,11 @@ related:
   - entities/platforms/oanda.md
   - concepts/macro-weather-regime.md
   - concepts/perps-dex-funding-carry-strategy.md
+  - sources/substack-rss-capital-flows-2026-08-13-the-dangerous-risk-building-in-stocks.md
+  - concepts/valuation-hypersensitivity-macro-liquidity.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-05-20
+updated: 2026-08-13
 ---
 
 ## Relations
@@ -17,6 +19,8 @@ updated: 2026-05-20
 - @entities/platforms/oanda.md — OANDA is the primary FX execution venue for Cemini's carry-trade variants.
 - @concepts/macro-weather-regime.md — Macro Weather regime gates carry-trade sizing: disabled in RED, half-sized in YELLOW, full-sized in GREEN.
 - @concepts/perps-dex-funding-carry-strategy.md — K55 instantiation in crypto perpetual-futures: same edge (interest-rate-differential capture) on a different asset class
+- @sources/substack-rss-capital-flows-2026-08-13-the-dangerous-risk-building-in-stocks.md — K236 macro-liquidity framing: yen carry as the quantity-of-money channel feeding US equities
+- @concepts/valuation-hypersensitivity-macro-liquidity.md — record-valuation hypersensitivity amplifies carry-unwind drawdown risk
 
 ## Raw Concept
 
@@ -71,7 +75,12 @@ https://fxempire.com/education/article/fx-carry-trades-explained-strategies-blow
 - **2024 Yen carry trade unwind**: Bank of Japan raised rates while
   the Fed held steady, narrowing the rate differential and triggering
   a sharp yen appreciation that cascaded through global equity and FX
-  markets. [Source: Investopedia (retrieved 2026-05-02)]
+  markets. [Source: Investopedia (retrieved 2026-05-02)] The 2024
+  unwind took the Nikkei down ~27% peak-to-trough; Capital Flows (K236)
+  reads the yen carry as the quantity-of-money channel feeding US
+  equities — a falling yen funds yen-denominated leverage into US
+  stocks, so an unwind can drive a ~10% equity drawdown regardless of
+  earnings. [Source: Capital Flows RSS 2026-08-13]
 
 ### Risk management
 
