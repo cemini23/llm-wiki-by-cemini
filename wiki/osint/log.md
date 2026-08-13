@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-08-13] ingest | K235 — 20-URL eval + 8 arXiv + Latent Space Grok 4.6 + Capital Flows
+
+- **Inbox (10 NEW + 1 LIKELY→proceed):** Deep Research URL Evaluation.docx (20 URLs); CosMAP/FrontierFinance/content-moderation/China-VLM/HPC-modernization/VAKRA/tutor-withhold/RSM arXiv; Latent Space Grok 4.6 AINews (new dated issue, not Grok 4.5 dup); Capital Flows interest-rates. All archived to egress-fi; inbox empty.
+- **Phase-0 (~277MB clones):** ppt-master **MIT verified** but 1.3GB shallow → sparse-adopt CONDITIONAL-GO (Atto); claude-task-viewer MIT → cloned 3.2M; quotio MIT → cloned 165M (Integrate upgrade); CosMAP-dr **BSD-2-Clause** → cloned 109M WATCH; benchflow **AGPL-3.0** confirmed → Extract isolate; **fastdup CC BY-NC-ND 4.0 → REJECT for Atto** (docx tiered it Integrate — license overrides); VAKRA CC BY-NC-SA → reference only; GHunt no LICENSE file → docx AGPL unverifiable.
+- **Sources + concepts:** 11 sources; entities ppt-master/claude-task-viewer/benchflow/cosmap-dr/valuecell/apkleaks/smolvm/ghunt/vakra; concepts agentic-legacy-code-modernization / llm-content-moderation-refusal-to-warning / socratic-answer-withholding-contract / role-specialization-model-rsm. Updated: quotio, sentrux (K235 docx "NOT FOUND" = false negative, MIT re-verified), license-posture (NC-family catches), routing backlog (items 8–14).
+- **Briefs:** Atto `2026-08-13_k235-ppt-master-integrate.md`; GuruWatcher `2026-08-13_k235-capital-flows-rates-fx-watches.md`; Cyber `2026-08-13_k235-benchflow-vakra-china-vlm.md`; CCC `2026-08-13_k235-vakra-rsm-tutor-grok46-hpc.md`. Poker: skip (no IIG hook). xsp/pm: none (FrontierFinance wiki/eval only, no LEAPS hook — no prod scp).
+- **Phase-1 wires:** K235 sections appended (Atto deck generation + license disposition; tool-policy/oracle/RSM/tutor).
+- **Grok out:** no Grok CLI used (ROUTE_GROK_OUT honored).
+
 ## [2026-08-12] ops | /route v2.3 Flash vs Pro
 
 - `/route`: claude-ds **Flash** = easy/mid execute; **Pro** = Grok CLI usage-out stand-in (mid plan / hard implement). One harness. Auth ≠ usage-out.

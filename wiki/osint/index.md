@@ -7,6 +7,34 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K235 ingest (2026-08-13)
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [deep-research-url-evaluation-2026-08-13](sources/deep-research-url-evaluation-2026-08-13.md) | 20-URL batch — ppt-master/task-viewer/quotio Integrate; fastdup CC-BY-NC-ND reject; benchflow AGPL isolate (K235) | draft |
+| [arxiv-2608.11269-cosmap](sources/arxiv-2608.11269-cosmap-dr-2026-08-13.md) | CosMAP contrastive DR (omics + kinship) → WATCH, BSD-2 repo (K235) | draft |
+| [arxiv-2608.11683-frontierfinance](sources/arxiv-2608.11683-frontierfinance-2026-08-13.md) | 220-query finance-agent benchmark; harness > model → wiki/eval only (K235) | draft |
+| [arxiv-2608.11806-content-moderation](sources/arxiv-2608.11806-content-moderation-restricted-books-2026-08-13.md) | Zero-refusal (0.07%); warning/hesitation signals → cyber/CCC (K235) | draft |
+| [arxiv-2608.11816-china-vlm](sources/arxiv-2608.11816-china-vlm-state-alignment-2026-08-13.md) | China VLMs: refusal → fluent reframing → cyber brief (K235) | draft |
+| [arxiv-2608.12249-hpc-modernization](sources/arxiv-2608.12249-hpc-modernization-agentic-2026-08-13.md) | GAMESS F77→F2008 agentic conversion; verification-oracle boundary → CCC (K235) | draft |
+| [arxiv-2608.12282-vakra](sources/arxiv-2608.12282-vakra-tool-policies-2026-08-13.md) | Multi-hop tool-policy benchmark; CC BY-NC-SA reference → CCC/cyber (K235) | draft |
+| [arxiv-2608.12292-tutor-withhold](sources/arxiv-2608.12292-tutor-withhold-answer-2026-08-13.md) | Tutor answer-withholding contract + measure–diagnose–fix loop → CCC (K235) | draft |
+| [arxiv-2608.12311-rsm](sources/arxiv-2608.12311-rsm-role-specialization-2026-08-13.md) | RSM role specialization + negative-constraint hardening → CCC backlog (K235) | draft |
+| [newsletter-latent-space-grok-46](sources/newsletter-rss-latent-space-2026-08-13-grok-46.md) | Grok 4.6 (SFT-from-harness-trajectories) + Claude watermark rollout → CCC /route (K235) | draft |
+| [newsletter-capital-flows-interest-rates](sources/substack-rss-capital-flows-2026-08-12-interest-rates.md) | Rates/FX same-trade mechanics; AI CapEx credit → GuruWatcher watches (K235) | draft |
+| [ppt-master](entities/tools/ppt-master.md) | MIT verified; CONDITIONAL-GO Atto concierge decks; sparse-adopt (>500MB) | draft |
+| [claude-task-viewer](entities/tools/claude-task-viewer.md) | MIT verified; GO CCC harness observability (cloned 3.2M) | draft |
+| [benchflow-artifacts](entities/tools/benchflow-artifacts.md) | AGPL-3.0 verified → Extract isolate/microVM (cyber) | draft |
+| [cosmap-dr](entities/tools/cosmap-dr.md) | BSD-2-Clause verified; WATCH reference clone (109M) | draft |
+| [valuecell](entities/tools/valuecell.md) | Extract news/SEC agents for GuruWatcher; never execution modules | draft |
+| [apkleaks](entities/tools/apkleaks.md) | Extract APK secret scan (cyber); isolate decompilation | draft |
+| [smolvm](entities/tools/smolvm.md) | Integrate-conditional cyber microVM; license unverified — no clone | draft |
+| [ghunt](entities/tools/ghunt.md) | Context: Google-accounts OSINT methodology; no LICENSE file | draft |
+| [vakra](entities/tools/vakra.md) | CC BY-NC-SA 4.0 — reference only, no clone | draft |
+| [agentic-legacy-code-modernization](concepts/agentic-legacy-code-modernization.md) | Oracle-bound delegation; escaped-defect lesson (K235) | draft |
+| [llm-content-moderation-refusal-to-warning](concepts/llm-content-moderation-refusal-to-warning.md) | Refusal-rate is a broken safety metric (2 papers converge) | draft |
+| [socratic-answer-withholding-contract](concepts/socratic-answer-withholding-contract.md) | Deterministic policy core + judge + persona evals | draft |
+| [role-specialization-model-rsm](concepts/role-specialization-model-rsm.md) | Role scope boundaries + negative constraints | draft |
+
 ### 2026-08-12 claude-ds harness refresh
 | Page | Summary | Maturity |
 |------|---------|----------|

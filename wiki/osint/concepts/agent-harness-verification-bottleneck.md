@@ -6,6 +6,10 @@ keywords: [harness, verification, evals, code-review, cattle, charity-majors, ro
 related:
   - sources/newsletter-pragmatic-engineer-charity-majors-ai-2026-08-12.md
   - concepts/agent-toolkit-routing-research-backlog.md
+  - concepts/agentic-legacy-code-modernization.md
+  - concepts/socratic-answer-withholding-contract.md
+  - sources/arxiv-2608.12249-hpc-modernization-agentic-2026-08-13.md
+  - sources/arxiv-2608.12292-tutor-withhold-answer-2026-08-13.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-12
@@ -14,6 +18,10 @@ updated: 2026-08-12
 ## Relations
 
 - @sources/newsletter-pragmatic-engineer-charity-majors-ai-2026-08-12.md
+- @concepts/agentic-legacy-code-modernization.md — oracle-bound delegation (K235)
+- @concepts/socratic-answer-withholding-contract.md — enforced contract recipe (K235)
+- @sources/arxiv-2608.12249-hpc-modernization-agentic-2026-08-13.md
+- @sources/arxiv-2608.12292-tutor-withhold-answer-2026-08-13.md
 - @concepts/agent-toolkit-routing-research-backlog.md
 
 ## Raw Concept

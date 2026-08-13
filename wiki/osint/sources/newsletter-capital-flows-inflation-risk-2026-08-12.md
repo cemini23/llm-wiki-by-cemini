@@ -6,6 +6,7 @@ keywords: [capital-flows, inflation-risk, core-cpi, m2-velocity, ai-capex, real-
 related:
   - concepts/inflation-risk-regime-2026.md
   - concepts/guruwatcher-macro-watches.md
+  - sources/substack-rss-capital-flows-2026-08-12-interest-rates.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-12
@@ -16,6 +17,7 @@ read_status: read
 
 - @concepts/inflation-risk-regime-2026.md
 - @concepts/guruwatcher-macro-watches.md — watchable inflation factor levels
+- @sources/substack-rss-capital-flows-2026-08-12-interest-rates.md — follow-on: rates/FX same-trade mechanics
 
 ## Raw Concept
 

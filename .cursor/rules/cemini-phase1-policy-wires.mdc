@@ -1,5 +1,5 @@
 ---
-description: Phase-1 policy wires — memory/HITL/codegen/tokenization/fidelity/sentinel/cost/GUI-MCP/input/canary/Argus/keystore/READ/PTC/CASCADE/ResidencyRL/BlastRadius/SHE (K230–K268)
+description: Phase-1 policy wires — memory/HITL/codegen/tokenization/fidelity/sentinel/cost/GUI-MCP/input/canary/Argus/keystore/READ/PTC/CASCADE/ResidencyRL/BlastRadius/SHE/K235-ppt-master-fastdup-benchflow-license (K230–K273)
 alwaysApply: true
 ---
 
@@ -272,6 +272,22 @@ Same-day Cybersec batch used **K270–K272** for GFlowNet / REDAgentBench / Cros
 - **FOMC pre-announcement IV (xsp)**: pre-FOMC short-dated OTM IV bid-up is a Lane A long-call timing edge, regime-strengthened in high vol. Requires a `/phase1` proposal before any Lane A timing-input wiring — informational brief already shipped to prod.
 - **SKILLER/SkillLens (CCC /route backlog)**: use a strong model to author route-style skills for small local executors; SkillsBench-style single-skill tasks are a cheap eval. SKILLER repo NOASSERTION → **NO-GO clone**, pattern-only.
 - **MISA-T / mixed-RL rollouts (routing research backlog only)**: workload-aware KV admission informs heterogeneous agentic-session routing; no prod wiring.
+
+## Atto deck generation + license disposition (K235 URL batch)
+
+- **ppt-master (Atto Integrate)**: MIT verified — adopt via **sparse checkout** of `skills/ppt-master/` only (repo ~1.3 GB); never full-clone. No client PII to external TTS/AI APIs without masking. HITL before any Atto pipeline wiring.
+- **fastdup**: **CC BY-NC-ND 4.0 → NO commercial use** in the Atto pipeline (docx tiered it Integrate; license overrides). Non-commercial personal use only.
+- **benchflow-ai/artifacts**: **AGPL-3.0 → isolate**: run as external binary / inside microVM only; never merge into proprietary orchestration code.
+- **watermarks-remover**: restrict to Atto document formatting; never strip provenance/C2PA to deceive; keep transparency posture.
+- **IBM/VAKRA (CC BY-NC-SA) + GHunt (no LICENSE file)**: reference/methodology only — no clone, no vendored use.
+
+## Tool-policy reasoning + verification oracles (K235 papers)
+
+- VAKRA: failures concentrate at **language-mediated reasoning** (entity disambiguation, cross-source grounding), not tool mechanics — when auditing agent tool use, test multi-hop + policy-constrained tasks explicitly.
+- HPC/GAMESS: delegate only where a **domain verification oracle sees** (bit-for-bit goldens); compiler + style checks catch different defect classes, never the semantic-alias class.
+- RSM: role specialization needs **explicit scope boundaries**; prefer **negative constraints** in prompts; rule-file bloat reduces task success — keep `.cursor/rules` lean.
+- Tutor-withhold: for any agent that must refuse a capability it has, layer **deterministic policy core + detector + LLM judge**; tune via persona-driven measure–diagnose–fix.
+- claude-task-viewer: **read-only** over `~/.claude/tasks/` — never let observability mutate task state.
 
 ## Phase-1 meta
 

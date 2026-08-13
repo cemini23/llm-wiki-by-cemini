@@ -322,6 +322,14 @@ When the IP is eventually transferred or licensed (see @concepts/ip-sale-readine
 
 > K60 20-URL batch (@sources/github-repo-evaluation-cemini-v4-20url-2026-05-23.md): **KaliGPT** eval claimed MIT Adopt; LICENSE file is **SudoHopeX Non-Commercial Software License (2025)** — commercial/IP-sale **NO-GO**. **Windows-MCP, pentest-ai, grace-marketplace, COG-second-brain** eval claimed NO LICENSE; GitHub API returned **MIT** for all four (2026-05-23). Same dual failure mode as K54: false negatives *and* wrong positive license family on KaliGPT. Rule unchanged: **`gh api` + read LICENSE file** before any Adopt/Reject.
 
+### K235 eval addendum (2026-08-13) — CC-BY-NC-ND masked as NOASSERTION, AGPL claim with no LICENSE file
+
+> K235 20-URL batch (@sources/deep-research-url-evaluation-2026-08-13.md) verified all Integrate/Extract rows independently. Three new failure modes:
+> - **`visual-layer/fastdup`** — docx claimed "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0" in the license field but still tiered it **Integrate for Atto** (a commercial product). gh api returns NOASSERTION; LICENSE file confirms **CC BY-NC-ND 4.0** — non-commercial + no-derivatives makes the Atto Integrate call invalid. Rejected for commercial use. Lesson: an eval can name the right license and still mis-tier it; NC/ND clauses are dispositional, not advisory.
+> - **`mxrch/GHunt`** — docx claimed AGPL-3.0; repo has **no LICENSE file** (main + master both 404) and gh api NOASSERTION. Claim unverifiable → treated as no-derivative-rights until proven otherwise (Context tier, no clone, consistent with the virattt precedent).
+> - **`IBM/VAKRA`** — gh api NOASSERTION; LICENSE file = **CC BY-NC-SA 4.0**. Non-commercial share-alike → reference-only (no clone, no vendored eval use in commercial stack). Third NC-family catch in a single batch.
+> Clean verifications this batch: ppt-master MIT (gh api + LICENSE, ~750 MB repo → sparse-adopt), claude-task-viewer MIT (cloned 3.2M), quotio MIT (cloned 165M), benchflow-ai/artifacts AGPL-3.0 (isolate), CosMAP-dr BSD-2-Clause (cloned 109M), sentrux MIT (K235 docx "NOT FOUND" was a false negative — 2nd re-flag). Tally confirms the standing rule: `gh api` **plus** LICENSE-file read, every row, before acting.
+
 ## Dead Ends
 
 *(none yet — license posture is newly tracked as of 2026-05-03.)*

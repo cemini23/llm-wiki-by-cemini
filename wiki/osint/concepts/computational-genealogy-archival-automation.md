@@ -7,6 +7,7 @@ related:
   - entities/tools/qwen-mm-plugins.md
   - entities/tools/diagram-design.md
   - entities/tools/pi-rlm.md
+  - sources/arxiv-2608.11269-cosmap-dr-2026-08-13.md
   - entities/tools/deepface.md
   - entities/tools/gosearch.md
   - entities/tools/sherlock.md
@@ -86,6 +87,7 @@ updated: 2026-08-12
 - @entities/tools/qwen-mm-plugins.md
 - @entities/tools/diagram-design.md — K230
 - @entities/tools/pi-rlm.md
+- @sources/arxiv-2608.11269-cosmap-dr-2026-08-13.md — kinship-dataset DR (BALSAC) WATCH
 - @entities/tools/deepface.md — K229
 
 - @entities/tools/gosearch.md — FIND combo GPL isolate (K227)

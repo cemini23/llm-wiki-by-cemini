@@ -17,6 +17,7 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/active-project-research-routing.md
   - sources/eval-url-revenue-opportunity-2026-08-11.md
+  - sources/deep-research-url-evaluation-2026-08-13.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-12
@@ -38,6 +39,7 @@ read_status: read
 - @concepts/cemini-license-posture.md
 - @concepts/active-project-research-routing.md
 - @sources/eval-url-revenue-opportunity-2026-08-11.md
+- @sources/deep-research-url-evaluation-2026-08-13.md — K235 next 20-URL batch (different URL set)
 
 ## Raw Concept
 

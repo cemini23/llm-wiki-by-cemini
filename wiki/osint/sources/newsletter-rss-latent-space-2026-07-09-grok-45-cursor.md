@@ -7,11 +7,16 @@ related:
   - sources/newsletter-rss-latent-space-2026-07-10-gpt-56-sol-terra-luna.md
   - sources/newsletter-rss-pragmatic-engineer-2026-07-09-bun-rust-fable-pulse.md
   - sources/newsletter-rss-latent-space-2026-07-08-modal-agent-infrastructure.md
+  - sources/newsletter-rss-latent-space-2026-08-13-grok-46.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-09
 updated: 2026-07-10
 ---
+
+## Relations
+
+- @sources/newsletter-rss-latent-space-2026-08-13-grok-46.md — follow-on issue: Grok 4.6 + harness-trajectory SFT
 
 ## Raw Concept
 
