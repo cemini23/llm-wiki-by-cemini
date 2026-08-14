@@ -4,8 +4,10 @@ Dual-ID:
 - CCC K275 = VAKRA (2608.12282)                        <- this module
 - CCC K274 = CDH (2608.12273)                          -> examples/skill_invocation_budget.py
 - CCC K276 = RSM (2608.12311)                          -> examples/helper_roles.py
+- CCC K277 = Labels ≠ endpoints (2608.12880)           -> examples/eval_integrity.py
 - Cybersec K276 = withhold contract (2608.12292)       -> examples/withhold_contract.py
 - Cybersec K277 = RSM (same 2608.12311)                -> examples/helper_roles.py
+- Cybersec K278 = ATOBench (2608.12996)                -> examples/verification_chain.py
 
 Do **NOT** clone IBM/vakra — the repo/dataset is CC-BY-NC-SA 4.0; HF dataset
 is WATCH-only, never downloaded. This module is a local, offline checklist

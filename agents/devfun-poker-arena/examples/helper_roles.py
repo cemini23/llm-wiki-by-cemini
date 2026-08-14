@@ -5,7 +5,9 @@ Dual-ID:
 - Cybersec K277 = RSM (same 2608.12311)                <- this module
 - CCC K274 = CDH (2608.12273)                          -> examples/skill_invocation_budget.py
 - CCC K275 = VAKRA (2608.12282)                        -> examples/vakra_eval_axes.py
+- CCC K277 = Labels ≠ endpoints (2608.12880)           -> examples/eval_integrity.py
 - Cybersec K276 = withhold contract (2608.12292)       -> examples/withhold_contract.py
+- Cybersec K278 = ATOBench (2608.12996)                -> examples/verification_chain.py
 
 Explicit capability-matched roles for helper agents — role drift (one helper
 silently absorbing another's job) is driven by absent boundaries + functional

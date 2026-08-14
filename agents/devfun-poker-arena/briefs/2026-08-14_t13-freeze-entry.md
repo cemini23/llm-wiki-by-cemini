@@ -46,6 +46,8 @@ Devfun 6-max recap (2026-08-14): AlphaHorizon won with 0 rebuys, 14% 3bet, 2:1 f
 
 ## Apply
 
+Tried 2026-08-14 13:17 UTC. **Parked:** 250 MON entry, `CEMINI_REFUSE_ENTRY_FEE=1`. Restored Playground S14.
+
 ```
 CONFIRM=1 SEASON=13 OLD_PLAYGROUND_COMP=cmsrglcro33ttvijti3slinjh \
   ./scripts/tournament_freeze_prod_apply.sh cmsrgknhz32e1117r3l2h3q7b
