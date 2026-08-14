@@ -24,6 +24,8 @@ DEFAULT_BUFFER_CHIPS = 1000  # chips above rank-20 floor before protect mode
 DEFAULT_LEAD_RANK = 5
 DEFAULT_LEAD_BUFFER_CHIPS = 3000  # extra cushion before lead-protect tier
 DEFAULT_FIRST_RANK = 1  # rank #1 with lead buffer → slowest join pace
+DEFAULT_STICKY_UNDER_CHIPS = 250  # stay protect this far under cutoff once in
+DEFAULT_STICKY_RANK_SLACK = 1  # stay protect at cutoff+1 (e.g. #21) once in
 
 # Lock/playable math uses ratios vs qual_floor and total — no absolute chip ladders.
 _DEFAULT_FIRST_LOCK_SURPLUS_PCT = 0.80
@@ -60,6 +62,14 @@ _PLAYABLE_FRAC_BY_TIER: dict[str, float] = {
 
 def _buffer_threshold() -> int:
     return _safe_int(os.environ.get("CEMINI_QUAL_BUFFER_CHIPS"), DEFAULT_BUFFER_CHIPS)
+
+
+def _sticky_under_chips() -> int:
+    return max(0, _safe_int(os.environ.get("CEMINI_QUAL_STICKY_UNDER_CHIPS"), DEFAULT_STICKY_UNDER_CHIPS))
+
+
+def _sticky_rank_slack() -> int:
+    return max(0, _safe_int(os.environ.get("CEMINI_QUAL_STICKY_RANK_SLACK"), DEFAULT_STICKY_RANK_SLACK))
 
 
 DEFAULT_PLACEMENT_PROTECT_BUFFER_PCT = 0.35
@@ -242,10 +252,13 @@ def fetch_qualification_status(
     buffer_chips: int | None = None,
     lead_rank: int | None = None,
     lead_buffer_chips: int | None = None,
+    previously_protect: bool = False,
 ) -> dict[str, Any]:
     """Return rank/chips and protection flags for decide().
 
     qualification_protect: rank <= cutoff_rank AND chips >= floor + buffer_chips
+    Sticky hold (P13 P1): once armed, stay on until rank > cutoff+slack or
+    chips drop more than sticky_under below cutoff.
     lead_protect: rank <= lead_rank AND chips >= floor + lead_buffer_chips
     """
     if cutoff_rank is None:
@@ -328,7 +341,13 @@ def fetch_qualification_status(
             out["placement_chase"] = True
         return out
 
-    if buffer >= buffer_chips and int(rank) <= cutoff_rank:
+    armed = buffer >= buffer_chips and int(rank) <= cutoff_rank
+    held = (
+        bool(previously_protect)
+        and int(rank) <= cutoff_rank + _sticky_rank_slack()
+        and buffer >= -_sticky_under_chips()
+    )
+    if armed or held:
         out["qualification_protect"] = True
     if buffer >= lead_buffer_chips and int(rank) <= lead_rank:
         out["lead_protect"] = True
@@ -345,5 +364,7 @@ def fetch_qualification_status(
             first_protect=bool(out["first_protect"]),
         )
         out.update(lock)
+        if held and not armed:
+            out["lock_tier"] = "sticky_top20"
 
     return out

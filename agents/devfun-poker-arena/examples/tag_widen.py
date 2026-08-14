@@ -15,6 +15,15 @@ def tag_widen_enabled() -> bool:
     return raw.strip().lower() in ("1", "true", "yes", "on")
 
 
+def tag_sb_unopened_steal(hand_class: str, position: str = "SB") -> bool:
+    """Playground unopened SB steal band — skipped under tournament freeze."""
+    if position != "SB" or not hand_class:
+        return False
+    if not tag_widen_enabled():
+        return False
+    return hand_class in TAG_SB_STEAL_OPEN
+
+
 def tag_blind_defend_enabled() -> bool:
     """Tournament-only BB/SB defend lane — independent of full CEMINI_TAG_WIDEN."""
     raw = os.environ.get("CEMINI_TAG_BLIND_DEFEND", "0")
@@ -105,6 +114,11 @@ TAG_SB_OPEN_EXTRA = frozenset({
     "77", "66", "55", "44", "33",
     "AJo", "ATs", "A9s", "A5s", "A4s",
     "KQo", "KJs", "KTs", "QTs", "QJs", "JTs", "T9s", "98s", "87s", "76s",
+})
+
+# Mild unopened SB steal (P13 P1) — QJo-class only. Not gin. Off when TAG_WIDEN=0.
+TAG_SB_STEAL_OPEN = frozenset({
+    "QJo", "KJo", "ATo", "KTo",
 })
 
 TAG_MP_OPEN_EXTRA = frozenset({

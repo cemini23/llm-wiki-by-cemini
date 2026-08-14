@@ -2739,6 +2739,18 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
         act, target = _preflop_first_in_wager(allowed, available, pot, size_frac=0.5)
         if act:
             return act, target
+    # Playground mild unopened SB steal (P13 P1) — QJo/KJo/ATo/KTo only.
+    # TAG_WIDEN required; skipped under protect and tournament freeze.
+    if (position == "SB" and not lane_tight
+            and not qual_protect and not lead_protect and not first_protect):
+        try:
+            from tag_widen import tag_sb_unopened_steal as _tag_sb_steal
+        except Exception:
+            _tag_sb_steal = lambda *_a, **_k: False  # noqa: E731
+        if _tag_sb_steal(hand_class, position) and allowed.get("canBet"):
+            act, target = _preflop_first_in_wager(allowed, available, pot, size_frac=0.5)
+            if act:
+                return act, target
     if (position == "SB" and _is_sb_complete_trash(hand_class)):
         if "fold" in available:
             return "fold", None

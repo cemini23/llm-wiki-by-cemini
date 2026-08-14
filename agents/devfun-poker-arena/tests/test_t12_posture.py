@@ -61,3 +61,21 @@ def test_s12_posture_does_not_hit_playground(_isolate_env):
     # that imply tournament mode.
     assert os.environ.get("CEMINI_TOURNAMENT_MODE") != "1"
     assert os.environ.get("CEMINI_TOURNAMENT_3BET") != "1"
+
+
+def test_s13_tournament_gets_freeze(_isolate_env):
+    for k in list(os.environ):
+        if k.startswith("CEMINI_"):
+            del os.environ[k]
+    os.environ["CEMINI_LOBBY_ROLE"] = "s13_tournament"
+    os.environ["CEMINI_PRIMARY_TRACK"] = "playground"  # leftover track must not win
+    os.environ["S13_TOURNAMENT_COMP"] = "comp_s13"
+    _apply_competition_posture("comp_s13")
+    assert os.environ["CEMINI_TOURNAMENT_MODE"] == "1"
+    assert os.environ["CEMINI_TABLE_FORMAT"] == "6max"
+    assert os.environ["CEMINI_TAG_WIDEN"] == "0"
+    assert os.environ["CEMINI_GIN_KILL"] == "1"
+    assert os.environ["CEMINI_MAX_REBUYS"] == "0"
+    assert os.environ["CEMINI_REFUSE_ENTRY_FEE"] == "1"
+    assert os.environ["CEMINI_PLACEMENT_CHASE"] == "0"
+    assert os.environ["CEMINI_TOURNAMENT_3BET"] == "0"

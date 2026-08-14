@@ -162,6 +162,44 @@ def test_no_protect_when_rank_outside_top_20():
     assert st["lead_protect"] is False
 
 
+def test_sticky_hold_rank_21_small_under():
+    """Once in top-20, stay protect at #21 with a small chip dip (P13 overnight dropouts)."""
+    client = _FakeClient(
+        {"leaderboard": [{"arenaId": "comp1", "rank": 21, "totalScore": 11080}]},
+        cutoff_score=11176,
+    )
+    st = fetch_qualification_status(
+        client, "comp1", buffer_chips=0, previously_protect=True,
+    )
+    assert st["qualification_protect"] is True
+    assert st["lock_tier"] == "sticky_top20"
+    assert st["buffer_chips"] == -96
+
+
+def test_sticky_does_not_arm_from_outside():
+    """Never arm protect at #21 if we were not already in."""
+    client = _FakeClient(
+        {"leaderboard": [{"arenaId": "comp1", "rank": 21, "totalScore": 11080}]},
+        cutoff_score=11176,
+    )
+    st = fetch_qualification_status(
+        client, "comp1", buffer_chips=0, previously_protect=False,
+    )
+    assert st["qualification_protect"] is False
+
+
+def test_sticky_releases_when_too_far_under():
+    client = _FakeClient(
+        {"leaderboard": [{"arenaId": "comp1", "rank": 21, "totalScore": 10800}]},
+        cutoff_score=11176,
+    )
+    st = fetch_qualification_status(
+        client, "comp1", buffer_chips=0, previously_protect=True,
+    )
+    assert st["buffer_chips"] == -376
+    assert st["qualification_protect"] is False
+
+
 def test_default_thresholds():
     assert DEFAULT_BUFFER_CHIPS == 1000
     assert DEFAULT_LEAD_BUFFER_CHIPS == 3000

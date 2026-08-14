@@ -52,6 +52,8 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         # 0 = protect whenever rank<=20 and chips>=#20 (bubble-safe; was 1000 and
         # left us unlocked at +57 over cutoff on S13). Raise to 500–1000 once fat again.
         "CEMINI_QUAL_BUFFER_CHIPS": "0",
+        "CEMINI_QUAL_STICKY_UNDER_CHIPS": "250",
+        "CEMINI_QUAL_STICKY_RANK_SLACK": "1",
         "CEMINI_LEAD_BUFFER_CHIPS": "3000",
         "CEMINI_LEAD_RANK": "5",
         "CEMINI_FIRST_RANK": "1",

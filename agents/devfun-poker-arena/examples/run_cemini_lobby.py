@@ -148,6 +148,25 @@ def _lobby_log_scope(competition_id: str) -> str:
     return f"comp={competition_id} role={role} label={label}"
 
 
+def _is_ko_tournament(competition_id: str) -> bool:
+    """True for live KO tournament seats (S10+), not playground chip-qual."""
+    role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip().lower()
+    if re.fullmatch(r"s\d+_tournament", role):
+        return True
+    cid = (competition_id or "").strip()
+    if not cid:
+        return False
+    for key, raw in os.environ.items():
+        if key.endswith("_TOURNAMENT_COMP") and (raw or "").strip() == cid:
+            return True
+    return False
+
+
+def _refuse_entry_fee() -> bool:
+    raw = os.environ.get("CEMINI_REFUSE_ENTRY_FEE", "0").strip().lower()
+    return raw in ("1", "true", "yes", "on")
+
+
 def _apply_competition_posture(competition_id: str) -> None:
     """Per-comp env — comp id is source of truth (not global CEMINI_TOURNAMENT_MODE)."""
     s1 = os.environ.get("S1_TOURNAMENT_COMP", "").strip()
@@ -158,8 +177,6 @@ def _apply_competition_posture(competition_id: str) -> None:
     s10 = os.environ.get("S10_PLAYGROUND_COMP", "cms0bwufmf3n8kyykdpxi6d2i").strip()
     s11 = os.environ.get("S11_PLAYGROUND_COMP", "cms7hrnjg20czv7oi85cho570").strip()
     s12 = os.environ.get("S12_PLAYGROUND_COMP", "cmseo8d3e4fmh12qragnvqct6").strip()
-    s10t = os.environ.get("S10_TOURNAMENT_COMP", "").strip()
-    s12t = os.environ.get("S12_TOURNAMENT_COMP", "").strip()
     rcomp = os.environ.get("ARENA_RESEARCHER_COMP_ID", "").strip()
     _pg_role = os.environ.get("CEMINI_LOBBY_ROLE", "").strip().lower()
     _pg_track = os.environ.get("CEMINI_PRIMARY_TRACK", "").strip().lower()
@@ -173,15 +190,10 @@ def _apply_competition_posture(competition_id: str) -> None:
         or _pg_track == "playground"
         or bool(re.fullmatch(r"s\d+_playground", _pg_role))
     )
-    _s10_tournament = (
-        (s10t and competition_id == s10t)
-        or _pg_role == "s10_tournament"
-    )
-    _s12_tournament = (
-        (s12t and competition_id == s12t)
-        or _pg_role == "s12_tournament"
-        or (_pg_track == "tournament" and bool(re.fullmatch(r"s12_tournament", _pg_role)))
-    )
+    _ko_tournament = _is_ko_tournament(competition_id)
+    if _ko_tournament:
+        # Tournament id/role wins over leftover playground track (T12 TAG_WIDEN leak).
+        _chip_qual_playground = False
     if rcomp and competition_id == rcomp:
         os.environ.update({
             "CEMINI_RESEARCHER_MODE": "1",
@@ -295,11 +307,11 @@ def _apply_competition_posture(competition_id: str) -> None:
             "JACKPOT_ROYAL_SHOWDOWN": "0",
             "JACKPOT_27_HUNT_ENABLED": "0",
         })
-    elif _s10_tournament or _s12_tournament:
-        # Tournament KO — gin-killed + stack-repair freeze (2026-08-10).
+    elif _ko_tournament:
+        # Tournament KO — gin-killed + stack-repair freeze (2026-08-10 / T13).
         # Dual audit: climb pack + TAG_WIDEN leftover + TABLE_FORMAT=auto → bust.
-        # Force 6max + clear widen/polar/flat/chase until next GO.
-        _t12 = {
+        # Force 6max + clear widen/polar/flat/chase. Do not pay MON entry/rebuy.
+        os.environ.update({
             "CEMINI_TOURNAMENT_MODE": "1",
             "CEMINI_TABLE_FORMAT": "6max",
             "CEMINI_TAG_WIDEN": "0",
@@ -325,8 +337,9 @@ def _apply_competition_posture(competition_id: str) -> None:
             "CEMINI_GIN_V008": "0",
             "CEMINI_GIN_V2_EXPLOITS": "0",
             "CEMINI_SHORT_STACK_BB": "20",
-            "CEMINI_MAX_REBUYS": "0" if _s12_tournament else "2",
-            "CEMINI_REBUY_MAX_MON": "0" if _s12_tournament else "5",
+            "CEMINI_MAX_REBUYS": "0",
+            "CEMINI_REBUY_MAX_MON": "0",
+            "CEMINI_REFUSE_ENTRY_FEE": "1",
             "CEMINI_MAFP_CHART": "0",
             "CEMINI_SOLVER_V3": "0",
             "CEMINI_EVAL_CRUSH": "0",
@@ -336,22 +349,16 @@ def _apply_competition_posture(competition_id: str) -> None:
             "JACKPOT_ROYAL_ENABLED": "0",
             "JACKPOT_ROYAL_SHOWDOWN": "0",
             "JACKPOT_27_HUNT_ENABLED": "0",
-        }
-        if _s12_tournament:
-            _t12.update({
-                # Freeze climb aggression (briefs/2026-08-10_tournament-stack-repair.md).
-                "CEMINI_TAG_BLIND_DEFEND": "0",
-                "CEMINI_PLACEMENT_PROTECT_BUFFER_PCT": "0.35",
-                "CEMINI_KO_SURVIVAL_MIN_STACK": "250",
-                "CEMINI_KO_SURVIVAL_HANDS": "60",
-                "CEMINI_NAMED_NEMESIS_TIGHT": "1",
-                "CEMINI_TOURNAMENT_3BET": "0",
-                "CEMINI_SHORT_STACK_JAM_BB": "8",
-                "CEMINI_FLAT_DOMINATE": "0",
-                "CEMINI_TOURNAMENT_3BET_POLAR": "0",
-                "CEMINI_STOP_WIN_MULT": "0",
-            })
-        os.environ.update(_t12)
+            "CEMINI_TAG_BLIND_DEFEND": "0",
+            "CEMINI_PLACEMENT_PROTECT_BUFFER_PCT": "0.35",
+            "CEMINI_KO_SURVIVAL_MIN_STACK": "250",
+            "CEMINI_NAMED_NEMESIS_TIGHT": "1",
+            "CEMINI_TOURNAMENT_3BET": "0",
+            "CEMINI_SHORT_STACK_JAM_BB": "8",
+            "CEMINI_FLAT_DOMINATE": "0",
+            "CEMINI_TOURNAMENT_3BET_POLAR": "0",
+            "CEMINI_STOP_WIN_MULT": "0",
+        })
     elif competition_id in (s1, s2t):
         os.environ.update({
             "CEMINI_TOURNAMENT_MODE": "1",
@@ -859,6 +866,17 @@ def run_lobby(args: argparse.Namespace) -> int:
                     return
                 if e.status == 402:
                     pay = e.body.get("paymentRequirements") or {} if isinstance(e.body, dict) else {}
+                    if _refuse_entry_fee() and not state.get("entry_fee_tx_hash"):
+                        amt = pay.get("amount", "?")
+                        cur = pay.get("currency", "MON")
+                        print(
+                            f"[cemini-lobby] entry fee refused "
+                            f"({amt} {cur}) CEMINI_REFUSE_ENTRY_FEE=1 — "
+                            "waiting for free/sponsored ticket",
+                            file=sys.stderr,
+                        )
+                        last_join_at = now
+                        return
                     pending_tx = state.get("entry_fee_tx_hash")
                     if pending_tx:
                         print(f"[cemini-lobby] retrying join with pending tx {pending_tx}",
@@ -969,7 +987,9 @@ def run_lobby(args: argparse.Namespace) -> int:
                 return
             last_qual_check_at = now
             try:
-                st = fetch_qualification_status(client, competition_id)
+                st = fetch_qualification_status(
+                    client, competition_id, previously_protect=qual_protect,
+                )
                 qual_status = st
                 qual_protect = bool(st.get("qualification_protect"))
                 lead_protect = bool(st.get("lead_protect"))
@@ -1145,7 +1165,9 @@ def run_lobby(args: argparse.Namespace) -> int:
                     table = {**table, "competitionId": table_comp}
                 _apply_competition_posture(table_comp)
                 if table_comp != competition_id:
-                    st = fetch_qualification_status(client, table_comp)
+                    st = fetch_qualification_status(
+                        client, table_comp, previously_protect=qual_protect,
+                    )
                     qual_protect = bool(st.get("qualification_protect"))
                     lead_protect = bool(st.get("lead_protect"))
                     first_protect = bool(st.get("first_protect"))

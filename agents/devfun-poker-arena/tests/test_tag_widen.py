@@ -160,6 +160,77 @@ def test_tag_off_bb_still_folds_pairs(monkeypatch):
     assert chart.get("preflop_action") == "fold"
 
 
+def test_tag_sb_unopened_steal_qjo(monkeypatch):
+    from cemini_decide import _preflop_open
+    from tag_widen import tag_sb_unopened_steal
+
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    assert tag_sb_unopened_steal("QJo", "SB") is True
+    assert tag_sb_unopened_steal("72o", "SB") is False
+    allowed = {
+        "canBet": True,
+        "canRaise": False,
+        "betRange": {"min": 30, "max": 800},
+        "availableActions": ["fold", "check", "bet"],
+        "callChips": 0,
+    }
+    available = ["fold", "check", "bet"]
+    act, _amt = _preflop_open(
+        "fold",
+        allowed,
+        available,
+        pot=30,
+        equity=0.15,
+        hand_class="QJo",
+        position="SB",
+    )
+    assert act == "bet"
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "0")
+    assert tag_sb_unopened_steal("QJo", "SB") is False
+    act2, _ = _preflop_open(
+        "fold", allowed, available, pot=30, equity=0.15,
+        hand_class="QJo", position="SB",
+    )
+    assert act2 == "fold"
+
+
+def test_tag_sb_steal_skipped_under_protect(monkeypatch):
+    from cemini_decide import _preflop_open
+
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    allowed = {
+        "canBet": True,
+        "canRaise": False,
+        "betRange": {"min": 30, "max": 800},
+        "availableActions": ["fold", "check", "bet"],
+        "callChips": 0,
+    }
+    act, _ = _preflop_open(
+        "fold", allowed, ["fold", "check", "bet"], pot=30, equity=0.15,
+        hand_class="QJo", position="SB", qual_protect=True,
+    )
+    assert act == "fold"
+
+
+def test_tag_sb_steal_requires_unopened_bet(monkeypatch):
+    """Facing a raise must not 3bet QJo via the steal helper."""
+    from cemini_decide import _preflop_open
+
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    allowed = {
+        "canBet": False,
+        "canRaise": True,
+        "raiseRange": {"min": 80, "max": 800},
+        "availableActions": ["fold", "call", "raise"],
+        "callChips": 40,
+    }
+    act, _ = _preflop_open(
+        "fold", allowed, ["fold", "call", "raise"], pot=60, equity=0.15,
+        hand_class="QJo", position="SB",
+    )
+    assert act == "fold"
+
+
 def test_blind_defend_off_by_default():
     assert tag_blind_defend_enabled() is False
     assert try_tag_blind_defend(

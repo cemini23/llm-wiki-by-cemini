@@ -301,15 +301,16 @@ def research_static_chart(table: dict) -> dict:
                 TAG_CO_OPEN_EXTRA,
                 TAG_MP_OPEN_EXTRA,
                 TAG_SB_OPEN_EXTRA,
+                TAG_SB_STEAL_OPEN,
             )
         except Exception:
             TAG_BB_3BET = TAG_BB_CALL = TAG_SB_OPEN_EXTRA = frozenset()
-            TAG_MP_OPEN_EXTRA = TAG_CO_OPEN_EXTRA = frozenset()
+            TAG_MP_OPEN_EXTRA = TAG_CO_OPEN_EXTRA = TAG_SB_STEAL_OPEN = frozenset()
         if pos == "BB":
             raise_set |= set(TAG_BB_3BET)
             call_set |= set(TAG_BB_CALL) - raise_set
         elif pos == "SB":
-            raise_set |= set(TAG_SB_OPEN_EXTRA)
+            raise_set |= set(TAG_SB_OPEN_EXTRA) | set(TAG_SB_STEAL_OPEN)
         elif pos == "MP":
             raise_set |= set(TAG_MP_OPEN_EXTRA)
         elif pos == "CO":
