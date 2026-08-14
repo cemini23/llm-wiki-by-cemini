@@ -28,6 +28,14 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-14 — K237)
+
+- **K237 ingest** — 20-URL tool eval (2 near-dup docx folded) + 8 arXiv + 3 newsletters. 13 raws archived to egress-fi; inbox empty.
+- **K237 Phase-0** — CyberScraper-2077 **MIT verified** (GO Integrate → cyber lab, 0.4MB clone); ente + rachoon **AGPL Extract** (Atto, pattern-only — 721MB/3.9MB, no proprietary link); RustScan **GPL-3.0 (docx claimed MIT — wrong)**; Vero Apache-2.0 (CCC); deepseek-harness **do-not-replace**. Docx license claims wrong on 7/20.
+- **K237 arXiv** — Domus house-history (Atto), skill misevolution (CCC/SHE), HARD self-evolving defense (cyber), Uniswap fee-IV (**pm-k237 scp prod**), MLLM ensembles (Atto watch), CPS runtime monitoring (WATCH), Vero (CCC), AutoDesign (CCC /route).
+- **K237 Phase-1 + briefs** — wires appended (E2EE AGPL isolate, CyberScraper GO, skill misevolution SHE gate, self-evolving defense). Briefs: Atto `k237-ente-e2ee-vault` (required, +Domus/rachoon/VoxCPM), CCC meta-harness-vero-misevolution, cyber self-evolving-defense + cyberscraper-rustscan, SEO SparkToro zero-click, `pm-k237-uniswap-fee-iv` (skill_audit 100/100 → scp cemini-prod). GW + poker skip (no watch source / no IIG hook).
+- **Committed** in `f27a8206` (swept into concurrent /route 2.3.2 sync commit); CI green.
+
 ## Current state (2026-08-13 — WNBA Kalshi cross-wiki)
 
 - **WNBA live-under research** — strategy on `@gambling-wiki/entities/sports/wnba-betting.md` (189-game ESPN PBP: no 5-miss edge; last-2:00 fair odds by margin). OSINT stub `@sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md`: Kalshi public API lists 88 WNBA series, **0** last-2:00 contracts; alert-only posture; no prod orders.
