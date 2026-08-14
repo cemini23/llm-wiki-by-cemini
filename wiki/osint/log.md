@@ -1,5 +1,9 @@
 # Wiki Log
 
+## [2026-08-14] ops | /route worker = official dsh (v2.3.2)
+
+- Operator GO: official DeepSeek Harness behind PATH `claude-ds`. Concept `@concepts/llm-routing-deepseek-openrouter-failover.md` wording flipped from keep-wrapper. Canon: CCC `entities/tools/deepseek-harness.md` `runtime_wired`. Claude Code fallback remains.
+
 ## [2026-08-13] cross-wiki | WNBA cold-streak / last-2:00 Kalshi research
 
 - **Created** — `sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md` (OSINT routing stub)
@@ -9459,3 +9463,13 @@ Per K53/K54 verified failure mode, six K55 NO-LICENSE-FOUND items need GitHub-AP
 - **Concepts (3 new):** valuation-hypersensitivity-macro-liquidity, crypto-venue-website-traffic, labor-vs-capital-wealth-culture. **Updated:** prediction-market-regulation-2026, carry-trade, macro-weather-regime, kalshi-retail-lp, polymarket-bot-architecture, agent-setup-instruction-supply-chain, agent-safety-executable-evaluation, crypto-derivatives-volume-2026, xsp-lane-trading-framework.
 - **Briefs:** cyber `../Cybersecurity wiki/briefs/2026-08-13_k236-tldrsec-341-hf-css-supply-chain.md`; GW `../GuruWatcher/briefs/2026-08-13_k236-capital-flows-equity-risk-watches.md`; `briefs/pm-k236-novig-responsible-trading.md` (no scp); `briefs/xsp-k236-wublock-traffic.md` (scp cemini-prod).
 - **Archive:** 5 raws → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Inbox empty.
+## [2026-08-14] ingest | K237 — 20-URL tool eval + 8 arXiv + Gemini 3.7 Flash + SparkToro + WuBlock weekly
+
+- **Tool eval (2 near-dup docx folded):** `sources/eval-url-revenue-opportunity-2026-08-14.md` (sha256 `07bf0537…` + `2ef3cacb…` — full recursive unzip diff empty; **folded into one source page**, both archived). 20 URLs. **Integrate:** CyberScraper-2077 (MIT ✓, 0.4MB clone → **cyber lab**, not GuruWatcher). **Extract:** ente (AGPL-3.0 ✓, 721MB size-skip → **Atto required brief**), rachoon (AGPL-3.0 ✓, billing PDF), RustScan (**GPL-3.0 — docx claimed MIT, wrong**), VoxCPM (Apache-2.0 ✓), Hermes-Bot-Mode (MIT), Siftly (MIT — docx said NOT FOUND). **Extract-hold:** deepseek-harness (MIT, **do-not-replace**), whapa (license **null**). **Pass/Context** aggregated on eval source page (log-viewer, comet, best-windows-apps, withoneai/cli, macro 1.69GB AGPL, WebChat, jumpserver, waku, spacesuit, edgevpn).
+- **arXiv (8):** Domus 2608.12566 (house-history Wikidata/OHM temporal model → **Atto**); skill misevolution 2608.12851 (**CCC/SHE** — skills get worse, three lifecycle gates); HARD self-evolving defense 2608.12977 (**cyber**); Uniswap fee-IV 2608.13340 (**pm-k237 scp** — σ_fee=2·feeRate·√(V/L), corr 0.87); MLLM ensembles 2608.13463 (ARMDIL → Atto OCR watch); CPS runtime monitoring 2608.13486 (2ε concut → WATCH); Vero 2608.13522 (repo-scale Lean 4 verified-code → **CCC**, Apache-2.0 clone); AutoDesign 2608.13560 (meta-harness → **CCC /route**).
+- **Newsletters (3):** Latent Space Gemini 3.7 Flash (→ CCC /route awareness); SparkToro zero-click (→ **SEO brief**, not stub); WuBlock weekly (Li Lin UMX unified-account, Wintermute $1B HFT/AI/PM expansion, Strategy BTC floor $16,184 → **wiki-only**, no xsp scp — venue/market context, no implementable flow signal this week).
+- **Phase-0:** 4 clones (30MB) — CyberScraper-2077 MIT, vero Apache-2.0, rachoon AGPL reference, RustScan GPL reference. Size-skips: ente (721MB), macro (1.69GB). **Docx license claims wrong on 7/20** (RustScan MIT→GPL; Siftly/comet/edgevpn/ai-marketing-skills/log-viewer "NOT FOUND"→MIT/Apache).
+- **Entities (6):** ente, cyberscraper-2077, rachoon, rustscan, voxcpm, vero. **Concepts (5 new):** e2ee-vault-share, skill-misevolution, dex-fee-implied-volatility, self-evolving-runtime-defense, distributed-clock-drift-monitoring-pattern. Updated: 21 existing pages (bidirectional backlinks).
+- **Briefs:** Atto `../atto/briefs/2026-08-14_k237-ente-e2ee-vault.md` (ente required + Domus + rachoon + VoxCPM); CCC `../Cemini claude code CCC/briefs/2026-08-14_k237-meta-harness-vero-misevolution.md`; cyber `../Cybersecurity wiki/briefs/2026-08-14_k237-self-evolving-defense-misevolution.md` + `2026-08-14_k237-cyberscraper-rustscan.md`; SEO `../SEO:GEO B&M Business/briefs/2026-08-14_k237-sparktoro-zero-click.md`; `briefs/pm-k237-uniswap-fee-iv.md` (**scp cemini-prod**, skill_audit 100/100). GW skip (no price/level watch source); poker skip (no IIG hook).
+- **Phase-1 wires:** `.cursor/rules/cemini-phase1-policy-wires.mdc` — E2EE vault/AGPL isolate (K237), CyberScraper GO cyber-lab (K237), skill misevolution SHE gate (K237), self-evolving defense guardrails (K237). (Vero/AutoDesign wires already present from CCC K280/K281 batch.)
+- **Archive:** 13 raws → `cemini-egress-fi:/opt/cemini-bulk/research/osint/` (8 arXiv + 3 newsletters + 2 eval docx). Inbox empty.

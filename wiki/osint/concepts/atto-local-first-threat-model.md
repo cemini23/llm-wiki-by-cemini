@@ -20,9 +20,11 @@ related:
   - sources/software-licensing-architecture-research-2026-07-23.md
   - entities/tools/license-guard-rs.md
   - entities/tools/opencli.md
+  - entities/tools/ente.md
+  - concepts/e2ee-vault-share.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-25
+updated: 2026-08-14
 ---
 
 ## Relations

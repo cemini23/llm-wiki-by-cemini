@@ -7,9 +7,10 @@ related:
   - sources/newsletter-wublock-derivatives-volume-july-2026-2026-08-12.md
   - sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md
   - concepts/crypto-venue-website-traffic.md
+  - sources/substack-rss-wublock-2026-08-14-weekly.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-13
+updated: 2026-08-14
 ---
 
 ## Relations

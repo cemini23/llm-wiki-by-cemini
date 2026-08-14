@@ -10,9 +10,11 @@ related:
   - concepts/active-project-research-routing.md
   - concepts/cl-amm-dynamic-fees-lvr.md
   - sources/arxiv-prfs-counterfactual-dex-2606.08228-2026-06-16.md
+  - sources/arxiv-2608.13340-uniswap-fee-iv-2026-08-14.md
+  - concepts/dex-fee-implied-volatility.md
 maturity: draft
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-08-14
 ---
 
 ## Relations

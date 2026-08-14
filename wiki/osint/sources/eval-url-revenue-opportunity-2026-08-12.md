@@ -18,9 +18,10 @@ related:
   - concepts/active-project-research-routing.md
   - sources/eval-url-revenue-opportunity-2026-08-11.md
   - sources/deep-research-url-evaluation-2026-08-13.md
+  - sources/eval-url-revenue-opportunity-2026-08-14.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-14
 read_status: read
 ---
 

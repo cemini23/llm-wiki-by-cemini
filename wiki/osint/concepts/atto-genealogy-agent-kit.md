@@ -1,4 +1,5 @@
 ---
+
 title: Atto — Italian civil-record genealogy agent kit
 type: concept
 tags: [concept, atto, genealogy, product, k233]
@@ -9,9 +10,14 @@ related:
   - entities/tools/anydoc.md
   - entities/tools/clapgrep.md
   - entities/tools/tunnelto.md
+  - sources/arxiv-2608.12566-domus-2026-08-14.md
+  - concepts/e2ee-vault-share.md
+  - entities/tools/ente.md
+  - sources/arxiv-2608.13463-mllm-ensembles-2026-08-14.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-14
+
 ---
 
 ## Relations

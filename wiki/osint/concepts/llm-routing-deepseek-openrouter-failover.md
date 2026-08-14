@@ -34,8 +34,8 @@ updated: 2026-08-14
 - @concepts/api-credential-registry.md — `DEEPSEEK_*`, `OPENROUTER_*` variable names
 - @concepts/mcp-context-optimization.md — Layer 2 claude-code-router (complementary)
 - @ccc-wiki/entities/tools/agent-toolkit.md — private `/route` host (`ROUTE_KIT`)
-- @ccc-wiki/entities/skills/route.md — federation `/route` skill v2.3.1
-- @ccc-wiki/entities/tools/deepseek-harness.md — official `dsh` Phase-0; NO-GO `/route` swap
+- @ccc-wiki/entities/skills/route.md — federation `/route` skill v2.3.2
+- @ccc-wiki/entities/tools/deepseek-harness.md — official `dsh` `/route` worker behind `claude-ds`
 - @entities/infrastructure/deepseek-api.md — prod brain
 - @ccc-wiki/concepts/llm-routing-deepseek-openrouter-failover.md — operator-facing CCC copy (same contract)
 - @ccc-wiki/entities/skills/super-audit.md — API leg discovers `OPENROUTER_*` / `DEEPSEEK_*` / `ADVISOR_*` via `discover_api_keys.py`
@@ -67,4 +67,4 @@ Failover on HTTP 402/429 and quota/balance error strings. Disable with `LLM_FALL
 
 **Research improvement loop (2026-08-11):** OSINT digest cluster `cursor-route-harness` + active_topic `/route + agent-toolkit` steals failover / harness-evolution papers into CCC briefs. Standing backlog on `@ccc-wiki/entities/skills/route.md`. K231/K232 brief: CCC `briefs/2026-08-11_route-skill-k231-k232-steals.md`.
 
-**claude-ds worker (2026-08-12, wording 2026-08-14):** isolated Claude Code **2.1.222**; default `deepseek-v4-flash`; `-Model deepseek-v4-pro` is the **Grok CLI usage-out stand-in** (mid plan / hard implement). One harness. OpenCode/Reasonix Phase-0 **NO-GO** as mid-lane replacements. Official DeepSeek Harness `dsh` is a **developer-preview RC** (2026-08-13) — still **NO-GO** as the `/route` worker (`@ccc-wiki/entities/tools/deepseek-harness.md`).
+**claude-ds worker (2026-08-14 v2.3.2):** official DeepSeek Harness `dsh` (pin `install-dsh.ps1` → `~/.dsh-cemini`) behind PATH name `claude-ds`. Default `deepseek-v4-flash`; `-Model deepseek-v4-pro` is the **Grok CLI usage-out stand-in**. Always-approve = `DSH_PERMISSION_MODE=danger-full-access`. Isolated Claude Code **2.1.222** at `~/.deepseek-claude` is **fallback** (`CLAUDE_DS_FORCE_LEGACY=1`). OpenCode/Reasonix remain **NO-GO** as extra coding loops (`@ccc-wiki/entities/tools/deepseek-harness.md`).

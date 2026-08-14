@@ -1,9 +1,9 @@
 ---
-description: Phase-1 policy wires — memory/HITL/codegen/…/SHE/K233–K235 GO + CCC K274–K276 CDH/VAKRA/RSM (K230–K276)
+description: Phase-1 policy wires — memory/HITL/codegen/tokenization/fidelity/sentinel/cost/GUI-MCP/input/canary/Argus/keystore/READ/PTC/CASCADE/ResidencyRL/BlastRadius/SHE/measurement/InterSAGE/MARC/Vero/AutoDesign (K230–K281)
 alwaysApply: true
 ---
 
-# Phase-1 policy wires (K230–K273)
+# Phase-1 policy wires (K230–K281)
 
 Concrete harness behavior from Phase-0 ADOPT patterns. Clones under `.local/adopts/` are REFERENCE unless noted.
 
@@ -263,31 +263,9 @@ Same-day Cybersec batch used **K270–K272** for GFlowNet / REDAgentBench / Cros
 - Prefer deterministic validation and dependency-aware impact before blast-radius harness edits.
 - No ACM product install until a clear SPDX'd artifact exists.
 
-## K233 GO adoptions (2026-08-12 ingest)
+## CCC wave K274–K276 (shared policy file — dual-ID note)
 
-- **anydoc (GO Integrate → Atto)**: MIT text-layer document parser. Reads the **text layer only** — rasterized scans (Atto's Italian civil records) still require the HTR/Transkribus path. Do not present anydoc as scan/OCR capability. Phase-0 clone `.local/adopts/anydoc` REFERENCE.
-- **iron-proxy (GO Integrate → cyber local-abliterated-lab)**: paradigmxyz/iron-proxy Apache-2.0 egress gate. Enforce agent policy at the **tool-call/egress boundary**, not just system-prompt load (Recognition–Execution Gap, REDAgentBench K233: ~1 in 5 violations occur after the agent states the constraint). Policy reminder (training-free re-anchored) cut confirmed violations >70pp in matched replay — cheap mitigation before any egress-gate wiring.
-- **opencodex (GO Integrate → CCC routing)**: universal provider proxy consolidating Codex/Claude Code/Grok lanes + the DeepSeek/OpenRouter failover surface. **Do not route secrets/PII through it.** Wire only via `/phase1` proposal.
-- **Reasoning-trace exfiltration (OPS rule, cyber)**: never share Claude Code/Codex/agent session transcripts containing encrypted reasoning blobs — decode + secret-leak risk (62 keys/33 emails/33 passwords in a ~7k-trace public scan). Scrub/redact before any sharing.
-- **FOMC pre-announcement IV (xsp)**: pre-FOMC short-dated OTM IV bid-up is a Lane A long-call timing edge, regime-strengthened in high vol. Requires a `/phase1` proposal before any Lane A timing-input wiring — informational brief already shipped to prod.
-- **SKILLER/SkillLens (CCC /route backlog)**: use a strong model to author route-style skills for small local executors; SkillsBench-style single-skill tasks are a cheap eval. SKILLER repo NOASSERTION → **NO-GO clone**, pattern-only.
-- **MISA-T / mixed-RL rollouts (routing research backlog only)**: workload-aware KV admission informs heterogeneous agentic-session routing; no prod wiring.
-
-## Atto deck generation + license disposition (K235 URL batch)
-
-- **ppt-master (Atto Integrate)**: MIT verified — adopt via **sparse checkout** of `skills/ppt-master/` only (repo ~1.3 GB); never full-clone. No client PII to external TTS/AI APIs without masking. HITL before any Atto pipeline wiring.
-- **fastdup**: **CC BY-NC-ND 4.0 → NO commercial use** in the Atto pipeline (docx tiered it Integrate; license overrides). Non-commercial personal use only.
-- **benchflow-ai/artifacts**: **AGPL-3.0 → isolate**: run as external binary / inside microVM only; never merge into proprietary orchestration code.
-- **watermarks-remover**: restrict to Atto document formatting; never strip provenance/C2PA to deceive; keep transparency posture.
-- **IBM/VAKRA (CC BY-NC-SA) + GHunt (no LICENSE file)**: reference/methodology only — no clone, no vendored use.
-
-## Tool-policy reasoning + verification oracles (K235 papers)
-
-- VAKRA: failures concentrate at **language-mediated reasoning** (entity disambiguation, cross-source grounding), not tool mechanics — when auditing agent tool use, test multi-hop + policy-constrained tasks explicitly.
-- HPC/GAMESS: delegate only where a **domain verification oracle sees** (bit-for-bit goldens); compiler + style checks catch different defect classes, never the semantic-alias class.
-- RSM: role specialization needs **explicit scope boundaries**; prefer **negative constraints** in prompts; rule-file bloat reduces task success — keep `.cursor/rules` lean.
-- Tutor-withhold: for any agent that must refuse a capability it has, layer **deterministic policy core + detector + LLM judge**; tune via persona-driven measure–diagnose–fix.
-- claude-task-viewer: **read-only** over `~/.claude/tasks/` — never let observability mutate task state.
+Same-day Cybersec batch used **K274–K277** for WhiteNet / wireless AInf / tutor-withhold / RSM in `cemini-cybersec-lab-redteam.mdc`, `cemini-cybersec-agent-audit.mdc`, and `cemini-cybersec-mcp-tool-control.mdc`. Numbers below are **CCC** harness-wave meanings (CDH / VAKRA / RSM). **RSM paper 2608.12311 = CCC K276 AND Cybersec K277** — resolve by file+wiki, not bare K#.
 
 ## Convergent Detour Hijacking / CDH (CCC K274)
 
@@ -305,13 +283,80 @@ Same-day Cybersec batch used **K270–K272** for GFlowNet / REDAgentBench / Cros
 - Prefer **re-exec verification** against live APIs over self-report.
 - `IBM/vakra` **NO-GO clone** (CC-BY-NC-SA 4.0, verified LICENSE file) — eval axes ADOPT, HF dataset WATCH only.
 
-## Role Specialization Model / RSM (CCC K276)
+## Role Specialization Model / RSM (CCC K276 · Cybersec K277)
 
 - **Explicit role distribution per tool** with stated responsibility domains; expect drift from absent scope boundaries, capability overlap, context-switching cost — orchestrator manages it.
 - **HITL verification of agent-generated outputs** before durable-artifact integration (no pure vibe coding).
 - **Prompt-hardening via explicit negative constraints** when agents with tool access attempt unavailable internal tools.
 - **Failure-backed instructions only** — over-detailed rule files reduce success + raise cost (pairs K273 ACM baseline discipline).
-- RSM is a case-study framework — no product install; policy pattern only.
+- RSM is a case-study framework — no product install; policy pattern only. Cybersec domain wire: `cemini-cybersec-mcp-tool-control.mdc` §K277.
+
+## CCC wave K277–K281 (shared policy file — dual-ID note)
+
+Same-day Cybersec batch used **K278–K281** for ATOBench / MARC / YAVIN / ente in `cemini-cybersec-lab-redteam.mdc`, `cemini-cybersec-agent-audit.mdc`, `cemini-cybersec-mcp-tool-control.mdc`, and `cemini-cybersec-agent-containment.mdc`. Numbers below are **CCC** meanings. **CCC K278 = InterSAGE**, **Cybersec K278 = ATOBench**. **MARC-v1 2608.13476 = CCC K279 AND Cybersec K279** (clinical `wont_wire`, orchestration REFERENCE). Resolve by file+wiki, not bare K#.
+
+## Measurement integrity in MCP security eval — labels ≠ endpoints (CCC K277)
+
+- **Labels are not behavioral endpoints.** A security-eval label ("attack") is a claim over treatment bytes, executed behavior, authorization, outcome rule, and analysis unit — bind all five before interpreting it.
+- **Treatment-blind grading**: graders must not see treatment metadata when assigning outcome classes. Treatment invariance is necessary, not sufficient — codebook ambiguity survives it (4 construct-boundary cases in K277).
+- **Seven-link Integrity Chain**: each link has a verification question, minimum evidence, and a fail-closed condition; a failed link halts the stated inference. Use the scope-bounded endpoint-integrity linter for mechanically testable measurement defects.
+- **Scope honesty**: a campaign measurement audit is not a population attack-rate, model-ranking, defense-efficacy, or causal estimate. Don't convert campaign counts into security claims they can't support.
+
+## InterSAGE trust-native IoA protocol (CCC K278 · Atto-priority)
+
+- **Agent Identity Card (AIC)** — four-dimensional identity binding (developer × code package × operator × deployment context), each dimension independently signed; one compromised dimension can't impersonate the rest.
+- **Capability-aware discovery**: skill/tool advertisements are DID-bound Verifiable Credential manifests, verified for issuer provenance, subject binding, permission alignment, freshness before interaction.
+- **Monotonic capability attenuation** + two-tier access control — least privilege is a signed structural invariant; application-level policy stays independent.
+- **Kernel-mediated cryptographic audit trails** bound usage/delegation/execution to identity without a consensus ledger.
+- No public SPDX clone (positioning paper) — **policy only**. Atto: apply AIC-style identity + capability-bound discovery + per-extract audit trails to solver callers.
+
+## MARC-v1 clinical multi-agent (CCC K279 · GO REFERENCE)
+
+- **Decomposer-from-NL** — generate the agent pipeline (roles, prompts, RAG config) from a plain-language task description; eliminate manual prompt engineering.
+- **Stage-wise failure attribution** — traceable intermediate outputs per role-specialized agent; attribute failures to the specific stage, not the pipeline.
+- **Declarative YAML agent config** — swap model/prompt/knowledge per agent with no code change.
+- `.local/adopts/MARC-v1` (MIT) = structural REFERENCE for harness pipelines. **Clinical `wont_wire`** — no clinical runtime wiring.
+
+## Repository-level verified code+proof eval (Vero / CCC K280)
+
+- **Joint impl+proof eval** — grade implementation+spec-proof together; unit tests + human review cannot rule out the bug classes formal verification captures.
+- **Unsat / incorrectness audit** — agents may prove the provided spec unsatisfiable or reference code incorrect; an eval must survive being told it's wrong.
+- **Repository scale is the unit** — multi-module coherence, not single-function; frontiers solve 27/43 and close nothing on the hardest repos.
+- `.local/adopts/vero` (Apache-2.0) = GO REFERENCE. Runtime **`wont_wire`** (Lean toolchain bench).
+
+## Meta-harness optimization with HITL / external eval contract (AutoDesign / CCC K281)
+
+- **Meta-harness loop over the harness, not the model** — improve the harness from rollout feedback; harness gains transfer across model configs (+12.4% avg in K281).
+- **External eval contract / HITL is the guardrail (pairs K162)** — pass criteria must NOT be closed self-rewritten by the optimizer; keep human design priors and external scoring authoritative.
+- `[NEEDS VERIFICATION 2026-08-14]` — paper reports the external contract; whether the shipped harness enforces it at runtime is not audited in the paper.
+- `.local/adopts/AutoDesign` (MIT on disk; gh API NOASSERTION but LICENSE file is MIT) = GO REFERENCE. Poster/Image-gen runtime **`wont_wire`**.
+
+## E2EE vault + zero-knowledge share (ente / K237)
+
+- **Client-side encryption before upload; server stores ciphertext only.** Zero-knowledge share links (recipient URL + out-of-band key) + Shamir emergency recovery for client dossiers.
+- **AGPL isolate (hard rule):** ente is AGPL-3.0 (721MB > clone cap — README/docs only). **No AGPL library links into proprietary Atto distribution kits**; clean-room pattern extraction only. Same for rachoon (AGPL Gotenberg billing).
+- **Never put private Barone pedigree / living-person vitals in Atto fixtures or git** — Desktop/family only.
+- `.local/adopts/` has **no ente clone** (size-skip); CyberScraper-2077 / rachoon / RustScan / vero reference clones only.
+
+## CyberScraper GO cyber-lab (CyberScraper-2077 / K237)
+
+- **Authorized-target-only scraping** — local-lab eval, whitehat perimeter audits, newsletter/substack polling the operator has rights to. No mass scraping.
+- **Headless fallback required** for unattended cron runs (stealth mode attaches to a live Chrome via CDP/Patchright on localhost:9222).
+- Playwright memory-leak watch during multi-hour polling loops.
+
+## Skill misevolution SHE gate (2608.12851 / K237)
+
+- **Skills can get worse with practice** — promote/refine skills under an eval-gate with decoupled benign-utility + harm judges, clean-session reload, No-Evolution baseline.
+- **Govern at three lifecycle gates** (authoring / retrieval / execution) — a terminal success rate cannot distinguish a clean library from an unsafe skill never retrieved.
+- **HITL on a skill's write does not cover retrieval-time harm** — need retrieval lineage + retirement on evidenced harm (2 harmful reuses), delete-only repair critic, library cap.
+- Applies to `.cursor/skills/*` and CCC `/route` skill library.
+
+## Self-evolving defense guardrails (HARD / K237)
+
+- Defense evolution loop (attack → judge → route to policy/gate evolver → redeploy → held-out retest) is a **pattern for the cyber lab**, not a wired product.
+- **Literal gate rules rot** (memorize attacks, generalize poorly) — prefer anti-obfuscation/cumulative-intent abstractions; scope invariants to preserve benign utility (never blanket-refuse a capability).
+- **Over-restriction is a failure mode** — optimize ASR *and* UA jointly.
+- RustScan is **GPL-3.0 (docx claimed MIT — wrong)**; Extract pattern only, batch-size discipline `-b 10 -T 5000` on sensitive targets.
 
 ## Phase-1 meta
 

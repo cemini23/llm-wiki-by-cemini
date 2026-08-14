@@ -1,4 +1,5 @@
 ---
+
 title: Strategy half-life — live decay monitoring for quant desks
 type: concept
 tags: [concept, quant-finance, strategy-ops, decay, backtest, k112]
@@ -8,9 +9,12 @@ related:
   - concepts/regime-conditioned-evaluation.md
   - concepts/monte-carlo-permutation-test-mcpt.md
   - concepts/instrumental-probability-learnable-alpha.md
+  - concepts/distributed-clock-drift-monitoring-pattern.md
+  - sources/arxiv-2608.13486-cps-runtime-monitoring-2026-08-14.md
 maturity: draft
 created: 2026-06-12
-updated: 2026-06-12
+updated: 2026-08-14
+
 ---
 
 ## Relations

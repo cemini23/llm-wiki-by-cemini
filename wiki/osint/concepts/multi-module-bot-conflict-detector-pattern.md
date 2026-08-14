@@ -1,4 +1,5 @@
 ---
+
 title: "Multi-module bot conflict-detector pattern — skip on internal disagreement"
 type: concept
 tags: [concept, trading-bot, polymarket, multi-signal-synthesis, conflict-detection, risk-management, broken-data, k55]
@@ -19,10 +20,13 @@ related:
   - entities/tools/claude-code-game-studios.md
   - concepts/production-trading-blind-spots.md
   - entities/tools/mrfadi-polymarket-bot.md
+  - concepts/distributed-clock-drift-monitoring-pattern.md
+  - sources/arxiv-2608.13486-cps-runtime-monitoring-2026-08-14.md
 maturity: validated
 created: 2026-05-20
-updated: 2026-06-06
+updated: 2026-08-14
 clusters: [polymarket, bot-architecture, risk-management]
+
 ---
 
 ## Relations

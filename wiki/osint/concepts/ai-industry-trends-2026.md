@@ -6,9 +6,10 @@ keywords: [binding-models, bioai, local-agent-workforce, nemotron-lightning, mus
 related:
   - sources/newsletter-latent-space-bioai-phase-shift-2026-08-11.md
   - sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md
+  - sources/newsletter-rss-latent-space-2026-08-14-gemini-37-flash.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-14
 ---
 
 ## Relations

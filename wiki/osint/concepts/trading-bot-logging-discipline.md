@@ -1,4 +1,5 @@
 ---
+
 title: Trading bot logging discipline — structured events without drowning signal
 type: concept
 tags: [concept, observability, logging, operations, trading-bot, cemini-prod, k75]
@@ -15,9 +16,12 @@ related:
   - concepts/shadow-to-live-transition-engineering.md
   - sources/algorithmic-trading-live-transition-strategies-2026-05-28.md
   - entities/tools/world-cup-bot.md
+  - concepts/distributed-clock-drift-monitoring-pattern.md
+  - sources/arxiv-2608.13486-cps-runtime-monitoring-2026-08-14.md
 maturity: validated
 created: 2026-05-28
-updated: 2026-05-29
+updated: 2026-08-14
+
 ---
 
 ## Relations

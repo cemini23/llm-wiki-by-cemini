@@ -5,9 +5,11 @@ tags: [concept, formal-verification, lean, agents, k233]
 keywords: [lean, formalization, review-gated, dependency-aware, context-compaction]
 related:
   - sources/arxiv-2608.10894-formatheoria-2026-08-12.md
+  - sources/arxiv-2608.13522-vero-2026-08-14.md
+  - entities/tools/vero.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-14
 ---
 
 ## Relations

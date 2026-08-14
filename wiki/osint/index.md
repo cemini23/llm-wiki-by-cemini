@@ -7,6 +7,22 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K237 ingest (2026-08-14)
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-url-revenue-opportunity-2026-08-14](sources/eval-url-revenue-opportunity-2026-08-14.md) | 20-URL tool eval (2 near-dup docx folded) — CyberScraper Integrate; ente/rachoon/RustScan/VoxCPM Extract; whapa license-null (K237) | draft |
+| [arxiv-2608.12566-domus](sources/arxiv-2608.12566-domus-2026-08-14.md) | Domus house-history platform — Wikidata/OHM temporal property model → Atto (K237) | draft |
+| [arxiv-2608.12851-skill-misevolution](sources/arxiv-2608.12851-skill-misevolution-2026-08-14.md) | Skill misevolution — skills get worse with practice; three lifecycle gates → CCC/SHE (K237) | draft |
+| [arxiv-2608.12977-self-evolving-security](sources/arxiv-2608.12977-self-evolving-security-2026-08-14.md) | HARD self-evolving defense loop → cyber lab (K237) | draft |
+| [arxiv-2608.13340-uniswap-fee-iv](sources/arxiv-2608.13340-uniswap-fee-iv-2026-08-14.md) | DEX fee-IV proxy σ_fee=2·feeRate·√(V/L) → pm-k237 scp (K237) | draft |
+| [arxiv-2608.13463-mllm-ensembles](sources/arxiv-2608.13463-mllm-ensembles-2026-08-14.md) | MLLM-routed ensembles (ARMDIL) — OCR routing → Atto watch (K237) | draft |
+| [arxiv-2608.13486-cps-runtime-monitoring](sources/arxiv-2608.13486-cps-runtime-monitoring-2026-08-14.md) | Distributed CPS monitoring w/o global clock — 2ε concut → WATCH (K237) | draft |
+| [arxiv-2608.13522-vero](sources/arxiv-2608.13522-vero-2026-08-14.md) | Vero repo-scale Lean 4 verified-code benchmark → CCC (K237) | draft |
+| [arxiv-2608.13560-autodesign](sources/arxiv-2608.13560-autodesign-2026-08-14.md) | AutoDesign meta-harness optimization → CCC /route backlog (K237) | draft |
+| [newsletter-gemini-37-flash](sources/newsletter-rss-latent-space-2026-08-14-gemini-37-flash.md) | Gemini 3.7 Flash closes gap vs Claude 4.8+/GPT 5.5+ → CCC /route (K237) | draft |
+| [newsletter-sparktoro-zero-click](sources/newsletter-rss-sparktoro-2026-08-14-zero-click.md) | Website still the permanent home in zero-click era → SEO brief (K237) | draft |
+| [newsletter-wublock-weekly](sources/substack-rss-wublock-2026-08-14-weekly.md) | Li Lin UMX unified-account + Wintermute $1B HFT/PM + Strategy BTC floor → wiki-only (K237) | draft |
+
 ### Cross-wiki research (2026-08-13)
 | Page | Summary | Maturity |
 |------|---------|----------|
@@ -2033,6 +2049,12 @@ Pretrained and from-scratch ML models evaluated for Cemini integration.
 
 Dev-workflow tooling evaluated for Cemini integration.
 
+- [ente](entities/tools/ente.md) — K237 Extract (Atto Access Share E2EE). AGPL-3.0 verified; 721MB size-skip; Shamir recovery + zero-knowledge share pattern. — tool, e2ee, vault, atto, k237
+- [cyberscraper-2077](entities/tools/cyberscraper-2077.md) — K237 Integrate (cyber lab, MIT, 0.4MB clone). Local-browser CDP attach (Patchright) + Tor + LLM extraction; authorized-target-only. — tool, scraper, osint, cyber, k237
+- [rachoon](entities/tools/rachoon.md) — K237 Extract (Atto billing, AGPL-3.0). Gotenberg PDF engine + Nunjucks templates; pattern-only. — tool, invoicing, atto, agpl, k237
+- [rustscan](entities/tools/rustscan.md) — K237 Extract (cyber recon, **GPL-3.0** — docx claimed MIT). 65k ports in 3s + Nmap piping; batch-size discipline. — tool, port-scan, cyber, k237
+- [voxcpm](entities/tools/voxcpm.md) — K237 Extract (Atto narrated histories, Apache-2.0). Tokenizer-free multilingual TTS + zero-shot voice cloning. — tool, tts, voice, atto, k237
+- [vero](entities/tools/vero.md) — K237 (CCC verified-code, Apache-2.0, 1.9MB clone). Repo-scale Lean 4 benchmark; anti-cheat + audit mechanism. — tool, formal-verification, lean4, ccc, k237
 - [Promptfoo](entities/tools/promptfoo.md) — K12 adoption: LLM prompt testing framework (MIT). Deterministic assertions, red-team testing, CI-gated prompt changes. 3-document convergence across K12 → [CONFIRMED]. — tool, prompt-testing, ci, red-team, cemini-adopt
 - [hermes-lcm](entities/tools/hermes-lcm.md) — Wave 5.1 Steal-from: Lossless Context Management engine (MIT). Hierarchical DAG + immutable SQLite store → "bounded context, unbounded memory." 3-Level Escalation (L1 detailed / L2 bullets / L3 truncate) with lossless pointers + lcm_grep/lcm_expand retrieval tools. Extract DAG model + tool schemas → reimplement in LangGraph/PostgreSQL. — tool, context-management, memory-engine, dag-summarization, cemini-steal-from
 - [SwarmVault](entities/tools/swarmvault.md) — `[DRAFT 2026-05-04]` 5_4-links Adopt: Karpathy LLM Wiki impl (MIT, Node + SQLite + tree-sitter + Ollama + MCP server). **Candidate replacement for llm-wiki-compiler v0.4.0** which is deployment-blocked by hardcoded `CONCEPTS_DIR` flat-layout. Phase 0 source audit pending: confirm path-resolution accepts nested wiki layout + frontmatter compatibility + bidir-link semantics. — tool, wiki-tooling, karpathy-pattern, mcp-server, librarian-candidate
@@ -2743,6 +2765,14 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 Topics, theses, methodologies, strategies — ideas the research examines.
 
 **Track C audit status markers** (applied 2026-04-24 per `briefs/track-c-walk-results.md`): `[C]` = `[CONFIRMED]`, `[T]` = `[TENTATIVE]`, `[R]` = `[RETRACTED]`, `[Cd]` = `[CONFIRMED] doc-only`, `[Cr]` = `[CONFIRMED] research-only`.
+
+### K237 ingest (2026-08-14)
+
+- [E2EE vault + zero-knowledge share](concepts/e2ee-vault-share.md) — ente pattern → Atto Access Share; client-side crypto + Shamir recovery; AGPL isolate (K237) — concept, e2ee, vault, atto, k237
+- [Skill misevolution](concepts/skill-misevolution.md) — self-improving agents make skills unsafe with practice; three lifecycle gates; SHE HITL (K237) — concept, agent-safety, skill-evolution, ccc, k237
+- [DEX fee-implied volatility](concepts/dex-fee-implied-volatility.md) — σ_fee = 2·feeRate·√(V/L); oracle-free activity/flow index; LVR non-identification (K237) — concept, defi, volatility, amm, k237
+- [Self-evolving runtime defense (HARD)](concepts/self-evolving-runtime-defense.md) — harness-based autonomous defense evolution; policy/gate evolvers (K237) — concept, agent-safety, defense-evolution, cyber, k237
+- [Distributed clock-drift monitoring](concepts/distributed-clock-drift-monitoring-pattern.md) — 2ε concurrency window; conservative verdicts under clock skew; WATCH (K237) — concept, runtime-monitoring, watch, k237
 
 ### K236 ingest (2026-08-13)
 

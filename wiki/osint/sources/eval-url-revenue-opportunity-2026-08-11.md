@@ -15,9 +15,10 @@ related:
   - concepts/active-project-research-routing.md
   - sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
   - sources/eval-url-revenue-opportunity-2026-08-12.md
+  - sources/eval-url-revenue-opportunity-2026-08-14.md
 maturity: draft
 created: 2026-08-11
-updated: 2026-08-12
+updated: 2026-08-14
 read_status: read
 ---
 

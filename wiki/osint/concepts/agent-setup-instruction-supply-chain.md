@@ -1,4 +1,5 @@
 ---
+
 title: Agent Setup-Instruction Supply Chain
 type: concept
 tags: [concept, security, agents, k173]
@@ -9,9 +10,12 @@ related:
   - entities/tools/kimi-cli.md
   - sources/newsletter-rss-latent-space-2026-07-18-ainews-not-much-happened.md
   - sources/newsletter-rss-tldrsec-2026-08-13-tldr-sec-341---hugging-face-incident-black-hat-t.md
+  - sources/arxiv-2608.12851-skill-misevolution-2026-08-14.md
+  - concepts/skill-misevolution.md
+  - concepts/self-evolving-runtime-defense.md
 maturity: draft
 created: 2026-07-18
-updated: 2026-08-13
+updated: 2026-08-14
 ---
 
 ## Relations

@@ -7,9 +7,10 @@ related:
   - sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md
   - concepts/crypto-derivatives-volume-2026.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-wublock-2026-08-14-weekly.md
 maturity: draft
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-14
 ---
 
 ## Relations

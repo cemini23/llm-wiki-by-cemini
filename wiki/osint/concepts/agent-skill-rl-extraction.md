@@ -8,9 +8,11 @@ related:
   - sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md
   - entities/tools/skiller.md
   - entities/tools/skilllens.md
+  - sources/arxiv-2608.12851-skill-misevolution-2026-08-14.md
+  - concepts/skill-misevolution.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-14
 ---
 
 ## Relations

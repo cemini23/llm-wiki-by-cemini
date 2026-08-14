@@ -10,9 +10,10 @@ related:
   - concepts/socratic-answer-withholding-contract.md
   - sources/arxiv-2608.12249-hpc-modernization-agentic-2026-08-13.md
   - sources/arxiv-2608.12292-tutor-withhold-answer-2026-08-13.md
+  - sources/arxiv-2608.13560-autodesign-2026-08-14.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-14
 ---
 
 ## Relations

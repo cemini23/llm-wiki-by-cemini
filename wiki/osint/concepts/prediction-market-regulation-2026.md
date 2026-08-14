@@ -10,9 +10,10 @@ related:
   - concepts/kalshi-retail-lp.md
   - concepts/labor-vs-capital-wealth-culture.md
   - sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md
+  - sources/substack-rss-wublock-2026-08-14-weekly.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-13
+updated: 2026-08-14
 ---
 
 ## Relations

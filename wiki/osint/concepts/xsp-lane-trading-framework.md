@@ -1,5 +1,4 @@
 ---
-
 title: XSP four-lane trading framework (operator playbook)
 type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
@@ -121,9 +120,12 @@ related:
   - concepts/xsp-vol-regime-gates.md
   - sources/arxiv-2608.10693-fed-speaks-vol-surface-2026-08-12.md
   - sources/newsletter-wublock-derivatives-volume-july-2026-2026-08-12.md
+  - sources/arxiv-2608.13340-uniswap-fee-iv-2026-08-14.md
+  - concepts/dex-fee-implied-volatility.md
+  - sources/substack-rss-wublock-2026-08-14-weekly.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-08-11
+updated: 2026-08-14
 ---
 
 ## Relations
