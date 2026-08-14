@@ -83,13 +83,17 @@ related:
   - sources/substack-rss-wublock-2026-07-18-weekly-ethereum-privacy-robinhood.md
   - sources/substack-rss-event-horizon-2026-08-10-prophetx.md
   - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
+  - sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md
+  - "@gambling-wiki/entities/sports/wnba-betting.md"
 maturity: validated
 created: 2026-04-23
-updated: 2026-08-11
+updated: 2026-08-13
 ---
 
 ## Relations
 
+- @sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md — WNBA series inventory; no last-2:00 contract
+- @gambling-wiki/entities/sports/wnba-betting.md — retail strategy hub (PBP + live-under research)
 - @sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
 - @sources/substack-rss-event-horizon-2026-08-10-prophetx.md
 - @concepts/prediction-markets-efficiency-wolfers-zitzewitz.md — classic PM efficiency survey (NBER w10504; applies to regulated PM venues)
@@ -181,6 +185,10 @@ The ParlayMarket design (Ising-model AMM with shadow trades + composite-likeliho
 ### CPI threshold ladders — distributional beliefs (K140)
 
 @sources/arxiv-kalshi-macroeconomic-beliefs-2606.30040-2026-07-02.md — adjacent CPI/core CPI threshold contracts recover **release-level distributions** (tail mass, uncertainty) beyond Reuters point consensus. See @concepts/kalshi-implied-macro-belief-distributions.md. Bot hook: ingest threshold ladder prices pre-release as tail-risk overlay.
+
+### WNBA sports series inventory (2026-08-13) [CONFIRMED]
+
+Public catalog (no auth): **88** WNBA / Women’s Pro Basketball series. Game/total/spread + half/quarter/team totals exist; **no** last-2-minute time-window contract. Live 4Q books can be too wide to fill. Strategy empirics + alert-only posture: `@gambling-wiki/entities/sports/wnba-betting.md`. OSINT stub: `@sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md`. Do **not** place prod orders from research sessions without LIVE OK.
 
 ## Snippets
 

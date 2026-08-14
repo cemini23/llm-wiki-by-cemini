@@ -17,14 +17,18 @@ related:
   - sources/gemini-github-sports-betting-repos-landscape-2026-05-30.md
   - sources/multi-wiki-tool-eval-v6-k90-2026-05-31.md
   - sources/multi-wiki-tool-eval-v7-k92-2026-06-01.md
+  - sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md
+  - "@gambling-wiki/entities/sports/wnba-betting.md"
 maturity: validated
 created: 2026-05-31
-updated: 2026-06-20
+updated: 2026-08-13
 ---
 
 ## Relations
 
 - @gambling-wiki/concepts/gambling-wiki-scope.md — scope boundary (primary)
+- @gambling-wiki/entities/sports/wnba-betting.md — WNBA live-under / cold-streak research (2026-08-13)
+- @sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md — OSINT Kalshi routing stub
 - @game-dev-wiki/concepts/game-dev-wiki-scope.md — sibling federation wiki (K115)
 - @gambling-wiki/concepts/prediction-markets-crossover.md — Kalshi/Polymarket retail lens
 - @gambling-wiki/concepts/kelly-criterion-betting.md — general Kelly

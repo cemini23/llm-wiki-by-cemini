@@ -28,6 +28,10 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-13 — WNBA Kalshi cross-wiki)
+
+- **WNBA live-under research** — strategy on `@gambling-wiki/entities/sports/wnba-betting.md` (189-game ESPN PBP: no 5-miss edge; last-2:00 fair odds by margin). OSINT stub `@sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md`: Kalshi public API lists 88 WNBA series, **0** last-2:00 contracts; alert-only posture; no prod orders.
+
 ## Current state (2026-08-13 — K235)
 
 - **K235 ingest** — 20-URL eval (ppt-master/benchflow/GHunt/valuecell/fastdup/etc.) + 8 arXiv (CosMAP / FrontierFinance / content-moderation / China-VLM / HPC-modernization / VAKRA / tutor-withhold / RSM) + Latent Space Grok 4.6 + Capital Flows rates. 11 raws archived to egress-fi; inbox empty at commit.

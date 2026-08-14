@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-08-13] cross-wiki | WNBA cold-streak / last-2:00 Kalshi research
+
+- **Created** — `sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md` (OSINT routing stub)
+- **Updated** — `entities/platforms/kalshi.md` (WNBA series inventory), `concepts/kalshi-api-reference.md`, `concepts/gambling-wiki-federation.md`, `index.md`
+- **Canonical strategy** — `@gambling-wiki/entities/sports/wnba-betting.md` + research source (already pushed)
+- Verdict: no 5-miss edge; Kalshi has no last-2:00 contract; alert-only if sportsbook lists prop; no prod Kalshi orders this session
+
 ## [2026-08-13] ingest | K235 — 20-URL eval + 8 arXiv + Latent Space Grok 4.6 + Capital Flows
 
 - **Inbox (10 NEW + 1 LIKELY→proceed):** Deep Research URL Evaluation.docx (20 URLs); CosMAP/FrontierFinance/content-moderation/China-VLM/HPC-modernization/VAKRA/tutor-withhold/RSM arXiv; Latent Space Grok 4.6 AINews (new dated issue, not Grok 4.5 dup); Capital Flows interest-rates. All archived to egress-fi; inbox empty.

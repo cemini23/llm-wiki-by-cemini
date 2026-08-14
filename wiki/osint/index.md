@@ -7,6 +7,11 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### Cross-wiki research (2026-08-13)
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [research-wnba-cold-streak-kalshi-crosswiki-2026-08-13](sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md) | WNBA 5-miss / last-2:00 research — Kalshi 88 series, 0 last-2:00 contracts; strategy on gambling-wiki | draft |
+
 ### K236 ingest (2026-08-13)
 | Page | Summary | Maturity |
 |------|---------|----------|
@@ -2996,7 +3001,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [SIA unified harness/weight loop](concepts/sia-unified-harness-weight-self-improvement.md) — `[DRAFT 2026-05-30]` — concept, self-improving-agents, k84
 - [Cemini workflow tooling audit](concepts/cemini-workflow-tooling-audit-2026-05-30.md) — `[DRAFT 2026-05-30]` Obsidian/n8n/MCP gap map + v5 prompt need. — concept, workflow, audit, k84
 - [Cemini wiki ingest workflow](concepts/cemini-wiki-ingest-workflow.md) — `[CORE 2026-05-31]` Four-phase discovery→ingest pipeline (daily digest, inbox watch, ingest skill, human gates). — concept, workflow, automation, k90
-- [Gambling wiki federation](concepts/gambling-wiki-federation.md) — `[VALIDATED 2026-05-31]` Cross-wiki hub for public `@gambling-wiki` (sports betting, casino, DFS); osint-wiki keeps PM bots/CeminiSuite. — concept, federation, gambling-wiki
+- [Gambling wiki federation](concepts/gambling-wiki-federation.md) — `[VALIDATED 2026-08-13]` Cross-wiki hub for public `@gambling-wiki` (sports betting, casino, DFS, WNBA live-under research); osint-wiki keeps PM bots/CeminiSuite. — concept, federation, gambling-wiki
 - [Game dev wiki federation](concepts/game-dev-wiki-federation.md) — `[VALIDATED 2026-06-13]` Cross-wiki hub for public `@game-dev-wiki` (hobby castle/RTS, Godot evals, agent harness); ccc-wiki keeps generic orchestration. — concept, federation, game-dev-wiki
 
 #### K90 ingest (2026-05-31 — v6 tool eval + Posts.docx 16)

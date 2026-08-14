@@ -17,14 +17,18 @@ related:
   - sources/youtube-kalshi-bots-batch-2026-05-29.md
   - concepts/kalshi-ui-automation-bot-pattern.md
   - sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
+  - sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md
+  - "@gambling-wiki/entities/sports/wnba-betting.md"
 maturity: validated
 created: 2026-05-05
-updated: 2026-08-11
+updated: 2026-08-13
 ---
 
 ## Relations
 
 - @sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
+- @sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md — WNBA public series inventory (no last-2:00 contract)
+- @gambling-wiki/entities/sports/wnba-betting.md — retail strategy; alert-only bot posture
 
 - @entities/platforms/kalshi.md — primary venue entity; this page is its canonical Cemini-side API reference
 - @entities/tools/kalshi-llms-txt.md — entity page describing the upstream llms.txt artifact + our adoption of it; this concept page IS the deployed ingestion
@@ -145,6 +149,11 @@ The content below is reproduced from Kalshi's published `llms.txt` for internal 
 - [Get Historical Trades](https://docs.kalshi.com/api-reference/historical/get-historical-trades.md): Endpoint for getting all historical trades for all markets. Trades that were filled before the historical cutoff are available via this endpoint. See [Historical Data](https://docs.kalshi.com/getting_started/historical_data) for details.
 - [Get Incentives](https://docs.kalshi.com/api-reference/incentive-programs/get-incentives.md): List incentives with optional filters. Incentives are rewards programs for trading activity on specific markets.
 - [Get Game Stats](https://docs.kalshi.com/api-reference/live-data/get-game-stats.md): Get play-by-play game statistics for a specific milestone. Supported sports: Pro Football, College Football, Pro Basketball, College Men's Basketball, College Women's Basketball, WNBA, Soccer, Pro Hockey, and Pro Baseball. Returns null for unsupported milestone types or milestones without a Sportrad…
+
+### WNBA series catalog note (operator check, 2026-08-13) [CONFIRMED]
+
+`GET /series` + `GET /events` + `GET /markets` on public base `https://api.elections.kalshi.com/trade-api/v2` (no auth for listing): **88** WNBA-tagged series including `KXWNBAGAME`, `KXWNBATOTAL`, `KXWNBASPREAD`, `KXWNBA1–4QTOTAL`, half totals, `KXWNBATEAMTOTAL`. Sports-wide search for last-2 / final-2 / 2-minute series: **0**. Game-stats PBP supports WNBA once a milestone_id is known; that does **not** create a last-2:00 under-5 contract. Hub: `@sources/research-wnba-cold-streak-kalshi-crosswiki-2026-08-13.md`, `@gambling-wiki/entities/sports/wnba-betting.md`.
+
 - [Get Live Data](https://docs.kalshi.com/api-reference/live-data/get-live-data.md): Get live data for a specific milestone.
 - [Get Live Data (with type)](https://docs.kalshi.com/api-reference/live-data/get-live-data-with-type.md): Get live data for a specific milestone. This is the legacy endpoint that requires a type path parameter. Prefer using `/live_data/milestone/{milestone_id}` instead.
 - [Get Multiple Live Data](https://docs.kalshi.com/api-reference/live-data/get-multiple-live-data.md): Get live data for multiple milestones
