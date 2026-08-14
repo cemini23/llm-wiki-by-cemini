@@ -331,6 +331,10 @@ Same-day Cybersec batch used **K278–K281** for ATOBench / MARC / YAVIN / ente 
 - `[NEEDS VERIFICATION 2026-08-14]` — paper reports the external contract; whether the shipped harness enforces it at runtime is not audited in the paper.
 - `.local/adopts/AutoDesign` (MIT on disk; gh API NOASSERTION but LICENSE file is MIT) = GO REFERENCE. Poster/Image-gen runtime **`wont_wire`**.
 
+## OSINT wave K237 (shared policy file — dual-ID note)
+
+CCC **ACCEL** is also labeled K237 (agentic-engineer competencies, above). Numbers below are the **OSINT 2026-08-14 ingest** (ente E2EE vault, CyberScraper, skill misevolution, HARD defense). Same-day Cybersec used ente as **K281**. Resolve by file+wiki, not bare K#.
+
 ## E2EE vault + zero-knowledge share (ente / K237)
 
 - **Client-side encryption before upload; server stores ciphertext only.** Zero-knowledge share links (recipient URL + out-of-band key) + Shamir emergency recovery for client dossiers.
