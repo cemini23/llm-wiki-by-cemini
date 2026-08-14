@@ -12,7 +12,7 @@ updated: 2026-08-14
 
 ## Summary
 
-Tournament S13 is **Active** (opened with Playground S14 at ~13:01 UTC). Last KO **T12 ended 0 chips** (94 hands, best rank 2, then bust). Dual audit + 6-max recap agree on one ship: **never go broke**, force 6max, no TAG_WIDEN leftover, no gin, no climb pack. P1 sticky protect + mild SB steal ship for playground; tournament posture is freeze.
+Tournament S13 is **Active**. Join was **402 / 250 MON** — freeze refused pay. P13 #13 did **not** auto-apply a sponsored ticket. Lobby restored to Playground S14. Re-enter T13 only with operator GO on 250 MON or a working ticket claim.
 
 ## T12 autopsy (last tournament)
 

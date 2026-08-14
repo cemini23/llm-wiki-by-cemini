@@ -19,6 +19,7 @@ DEFAULT_COMPS = {
     11: "cms7hrnjg20czv7oi85cho570",
     12: "cmseo8d3e4fmh12qragnvqct6",
     13: "cmsg35zvs001hbagh1wdjc1me",
+    14: "cmsrglcro33ttvijti3slinjh",
 }
 
 
@@ -37,6 +38,7 @@ def build_kv(season: int, comp: str, export_slug: str) -> dict[str, str]:
         "CEMINI_TABLE_FORMAT": "6max",
         "CEMINI_RESEARCHER_MODE": "0",
         "CEMINI_TOURNAMENT_MODE": "0",
+        "CEMINI_REFUSE_ENTRY_FEE": "0",
         "CEMINI_EVAL_PANEL_GATE": "0",
         "CEMINI_EVAL_PANEL_MODE": "0",
         "CEMINI_EVAL_CRUSH": "0",
