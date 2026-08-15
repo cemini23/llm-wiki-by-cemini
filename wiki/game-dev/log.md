@@ -4,6 +4,16 @@ Append-only chronological log.
 
 ---
 
+## [2026-08-15] ingest | 1 arXiv reject (UAV wind flow-field false positive) + empty 07-29…08-11
+
+- Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-08-15.md (reject); archived; inbox cleared
+- 2608.10309 wind-informed rapid flight-planning / urban wind CFD (Caltech) — UAV “flow fields” ≠ RTS integration-field pathfinding
+- Config: tighten `rts-flow-field-game` arxiv_query (ANDNOT UAV/drone/aerial/air-mobility/flight-planning)
+- Phase-0 / local adopt / briefs: none (no atto/poker/prod/castle-sim)
+- Sweeps: @sweeps/2026-07-29-daily.md … @sweeps/2026-08-15-daily.md (07-29…08-11 empty; 08-12…15 same PDF)
+
+---
+
 ## [2026-07-28] ingest | 1 arXiv reject (lockstep → neuromorphic SIMD) + empty 07-23…27
 
 - Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-07-28.md (reject); archived; inbox cleared

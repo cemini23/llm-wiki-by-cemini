@@ -269,5 +269,6 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-07-20](sources/inbox-arxiv-reject-batch-2026-07-20.md) | read |
 | [inbox-arxiv-reject-batch-2026-07-22](sources/inbox-arxiv-reject-batch-2026-07-22.md) | read |
 | [inbox-arxiv-reject-batch-2026-07-28](sources/inbox-arxiv-reject-batch-2026-07-28.md) | read |
+| [inbox-arxiv-reject-batch-2026-08-15](sources/inbox-arxiv-reject-batch-2026-08-15.md) | read |
 | [36kr-ai-game-story-gameplay-guardrails-2026-06-30](sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md) | read |
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |

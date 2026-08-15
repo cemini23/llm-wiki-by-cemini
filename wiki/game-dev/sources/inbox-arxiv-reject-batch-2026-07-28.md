@@ -6,6 +6,7 @@ keywords: [arxiv, triage, reject, digest, lockstep, mis-route, neuromorphic, SIM
 related:
   - sources/inbox-arxiv-reject-batch-2026-07-22.md
   - sources/inbox-arxiv-reject-batch-2026-07-20.md
+  - sources/inbox-arxiv-reject-batch-2026-08-15.md
   - concepts/rts-networking-deferred.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
@@ -13,7 +14,7 @@ read_status: read
 source_type: operator-triage
 maturity: validated
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-08-15
 ---
 
 ## Raw Concept
