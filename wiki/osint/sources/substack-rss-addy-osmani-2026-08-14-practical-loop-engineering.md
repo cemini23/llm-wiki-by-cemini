@@ -60,7 +60,7 @@ Hard rules:
 - `/loop` for inbox/PR triage — not for skill auto-evolution.
 - Pair with SteerBench: the loop may *propose* a state-changing action; HITL still **holds** merge/deploy/scp.
 
-**Brief:** `../Cemini claude code CCC/briefs/2026-08-15_k239-steerbench-flue-loop.md`.
+**Brief:** `../Cemini claude code CCC/briefs/2026-08-15_k239-ccc-steerbench-flue-loop.md`.
 
 ## Snippets
 

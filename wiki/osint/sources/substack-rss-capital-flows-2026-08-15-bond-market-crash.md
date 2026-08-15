@@ -48,4 +48,4 @@ K236 already flagged tomorrow's stream at 30y 5.21% (highest in a quarter centur
 
 **Routing:** GuruWatcher #2 brief. No xsp/pm scp (levels, not an implementable options/CLOB flow).
 
-**Brief:** `../GuruWatcher/briefs/2026-08-15_k239-capital-flows-bond-crash-watches.md`.
+**Brief:** `../GuruWatcher/briefs/2026-08-15_k239-guruwatcher-capital-flows-bond-crash-watches.md`.

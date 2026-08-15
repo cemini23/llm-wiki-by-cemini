@@ -53,4 +53,4 @@ Practical checklist (vendor-neutral):
 - Pair with HiRoute/WIFA: don't train a new refusal model; apply least-privilege + intent-not-form at the wrapper/policy layer.
 - **No jailbreak PoC** in the wiki.
 
-**Brief:** `../Cybersecurity wiki/briefs/2026-08-15_k239-hiroute-wifa-saif.md`.
+**Brief:** `../Cybersecurity wiki/briefs/2026-08-15_k239-cyber-hiroute-wifa-saif.md`.

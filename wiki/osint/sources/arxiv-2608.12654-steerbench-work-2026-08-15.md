@@ -32,7 +32,7 @@ read_status: read
 | Retrieved | 2026-08-15 |
 | File | `arxiv-2608.12654-steerbench-work-a-benchmark-for-agent-steering-a.pdf` |
 | sha256 | `071af41df7e2f06cb0c5cff9d4e37b3ae1261d81e5155b95c35c3e01b4f5fd50` |
-| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2608.12654-steerbench-work-a-benchmark-for-agent-steering-a.pdf` |
 | Type | cs.AI preprint, 18pp, Aug 2026 |
 | Leaderboard | https://steerbench.com |
 
@@ -55,7 +55,7 @@ Capability ≠ calibration: stronger models over-refuse at the commit boundary. 
 - Dual-ID: **OSINT K239** = this SteerBench ingest. **CCC K239** = Datumpont / execution-fidelity. Resolve by file+wiki, not bare K#.
 - **No unattended auto-evolve** of `.cursor/skills/*` (pairs skill-misevolution K237).
 
-**Brief:** `../Cemini claude code CCC/briefs/2026-08-15_k239-steerbench-flue-loop.md`.
+**Brief:** `../Cemini claude code CCC/briefs/2026-08-15_k239-ccc-steerbench-flue-loop.md`.
 
 ## Snippets
 

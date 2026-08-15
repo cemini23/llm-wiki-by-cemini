@@ -42,4 +42,6 @@ What this page answers: what Atto is, its product boundaries, and which K233 too
 
 Atto is a **local-first desktop kit for organizing Italian civil records and citizenship paperwork** — private, approve-only document organization; it does *not* decide eligibility. Product rule: "A fluent sentence is not a civil record" — judgment stays with the user or retained counsel. K233 feeds: anydoc (doc→Markdown), clapgrep (deep PDF search), tunnelto (ephemeral client vault previews). Never: private Barone/living-person vitals into Atto fixtures or git.
 
-[Source: Outlier Weekly 2026-08-11; workspace Atto context]
+**K239 vault hygiene (Extract, not Integrate):** `fclones` (MIT) for APFS/CoW dedupe of IIIF/PDF trees — `fclones group` then reflink (`cp -c`); never unsupervised `--delete`. `openai/privacy-filter` (Apache-2.0) for fail-closed PII strip before MCP/LLM; **not** packyme/privacy-filter (K215). LFM encoder weights skipped (`license=other`). rachoon stays **AGPL isolate**. Brief: `../atto/briefs/2026-08-15_k239-atto-fclones-privacy-filter-cpu-pii.md`.
+
+[Source: Outlier Weekly 2026-08-11; K239 eval; workspace Atto context]

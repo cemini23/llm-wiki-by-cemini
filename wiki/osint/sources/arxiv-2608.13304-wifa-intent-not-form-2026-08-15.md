@@ -32,7 +32,7 @@ read_status: read
 | Retrieved | 2026-08-15 |
 | File | `arxiv-2608.13304-refusing-intent-not-form-wrapper-based-intent-gr.pdf` |
 | sha256 | `946a4d85295a7a4fc35e35191548d3df57d503b6cbbbff7ab8fdbf7a52b19b7c` |
-| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2608.13304-refusing-intent-not-form-wrapper-based-intent-gr.pdf` |
 | Type | cs.CL preprint, 23pp, Aug 2026 |
 
 ## Narrative
@@ -53,7 +53,7 @@ Desired behavior: refuse harmful **intent** under wrapper variation; comply with
 - Over-refusal on wrapped benign work is the same class as SteerBench holding cleared actions — HITL should be able to **proceed** when evidence is signed.
 - **No auto-evolve** of skills: misevolution + wrapper-as-label is how refusals rot.
 
-**Brief:** folded into `../Cybersecurity wiki/briefs/2026-08-15_k239-hiroute-wifa-saif.md`.
+**Brief:** folded into `../Cybersecurity wiki/briefs/2026-08-15_k239-cyber-hiroute-wifa-saif.md`.
 
 ## Snippets
 

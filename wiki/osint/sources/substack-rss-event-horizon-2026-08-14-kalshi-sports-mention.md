@@ -18,6 +18,7 @@ read_status: read
 - @concepts/kalshi-retail-lp.md — mention-category volume + WA shutdown
 - @concepts/prediction-market-regulation-2026.md — CFTC mention-market review + state injunctions
 - @concepts/polymarket-bot-architecture.md — intl site still lists some sports mentions
+- @gambling-wiki/entities/platforms/kalshi.md — retail/strategy entity; mentions gone + WA geofence
 
 ## Raw Concept
 
@@ -52,4 +53,4 @@ King County Superior Court **final order**: KalshiEX must cease many WA operatio
 
 **Wiki + gambling brief.** No `briefs/pm-*` scp — no concrete retail-bot steal (category removed; geofence is venue-legal, not a CLOB pattern). Alert-only if a mention series reappears.
 
-**Brief:** `../Gambling wiki/briefs/2026-08-15_k239-kalshi-sports-mention-gone.md`.
+**Brief:** `../Gambling wiki/briefs/2026-08-15_k239-gambling-kalshi-sports-mention-gone.md`.

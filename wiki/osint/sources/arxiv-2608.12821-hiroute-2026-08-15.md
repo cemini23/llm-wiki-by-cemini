@@ -32,7 +32,7 @@ read_status: read
 | Retrieved | 2026-08-15 |
 | File | `arxiv-2608.12821-hiroute-hierarchical-routed-prompt-tuning-for-sa.pdf` |
 | sha256 | `3eb3fc36a01ee1bb7cb524af4214583db2338d5d92ef11e769c51efabe94304e` |
-| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2608.12821-hiroute-hierarchical-routed-prompt-tuning-for-sa.pdf` |
 | Type | cs.LG preprint, 17pp, Aug 2026 |
 
 ## Narrative
@@ -47,7 +47,7 @@ Claimed win vs a single global safety prompt: fewer generic unconstructive refus
 - Routing idea is portable to `/route` and lab assist: coarse "is this a state-changing / out-of-scope request" plus a small set of domain experts (Atto PII, prod orders, cyber authorized-scope).
 - Pairs WIFA (intent groups, not wrapper form) and SAIF (inventory, least privilege, HITL on high-impact tool calls).
 
-**Brief:** `../Cybersecurity wiki/briefs/2026-08-15_k239-hiroute-wifa-saif.md`.
+**Brief:** `../Cybersecurity wiki/briefs/2026-08-15_k239-cyber-hiroute-wifa-saif.md`.
 
 ## Snippets
 

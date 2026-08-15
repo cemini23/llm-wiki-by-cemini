@@ -28,4 +28,4 @@ K233 candidates from Capital Flows (2026-08-12): steels/metals factor (+43% YTD)
 
 [Source: Capital Flows 2026-08-12]
 
-**K239 (2026-08-15 teaser):** 30y toward ATH; 10s30s bear steepener; ~42 bp terminal hikes through 2027; commodities bid; financials rallying with rates; SPX+30y+DXY lockstep; MMFs at 3% not a safe harbor. Alert-only — see GuruWatcher brief `2026-08-15_k239-capital-flows-bond-crash-watches.md`.
+**K239 (2026-08-15 teaser):** 30y toward ATH; 10s30s bear steepener; ~42 bp terminal hikes through 2027; commodities bid; financials rallying with rates; SPX+30y+DXY lockstep; MMFs at 3% not a safe harbor. **Research-note candidates only** — no `watches.json` arm without operator-supplied symbol + op + level. Brief: `../GuruWatcher/briefs/2026-08-15_k239-guruwatcher-capital-flows-bond-crash-watches.md`.

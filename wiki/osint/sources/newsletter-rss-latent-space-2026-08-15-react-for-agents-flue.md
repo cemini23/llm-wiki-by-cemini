@@ -45,4 +45,4 @@ Host-portable (open source, not Cloudflare-only); a Flue agent has been deployed
 - Do **not** install Flue this batch (no Phase-0 SPDX/size audit of the Flue repo). Awareness only.
 - Dynamic `useTool()` still needs SteerBench **HITL at the action boundary**.
 
-**Brief:** `../Cemini claude code CCC/briefs/2026-08-15_k239-steerbench-flue-loop.md`.
+**Brief:** `../Cemini claude code CCC/briefs/2026-08-15_k239-ccc-steerbench-flue-loop.md`.
