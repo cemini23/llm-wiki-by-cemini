@@ -2657,6 +2657,12 @@ def _should_block_chart_open(
     if position == "SB" and (
         hand_class in _WEAK_FACING_RAISE or _is_sb_complete_trash(hand_class)
     ):
+        try:
+            from tag_widen import tag_sb_unopened_steal as _tag_sb_open
+            if _tag_sb_open(hand_class, "SB"):
+                return False
+        except Exception:
+            pass
         return True
     return _blocks_open_steal(hand_class, position) and position in ("CO", "BTN")
 
@@ -2669,6 +2675,19 @@ def _blocks_open_steal(hand_class: str, position: str) -> bool:
         return True
     if hand_class in _WEAK_FACING_RAISE or _is_low_trash_offsuit(hand_class):
         return True
+    try:
+        from tag_widen import (
+            TAG_CO_OPEN_EXTRA as _tag_co_x,
+            TAG_MP_OPEN_EXTRA as _tag_mp_x,
+            tag_widen_enabled as _tag_on,
+        )
+        if _tag_on():
+            if position == "CO" and hand_class in _tag_co_x:
+                return False
+            if position == "MP" and hand_class in _tag_mp_x:
+                return False
+    except Exception:
+        pass
     if _is_sb_complete_trash(hand_class):
         return True
     # CO/BTN: block wheel + low broadway offsuit steals (J4o, T3o, …).
@@ -2731,7 +2750,14 @@ def _preflop_open(suggested: str, allowed: dict, available: list,
             return "check", None
     if (position == "SB" and _weak_ace_offsuit(hand_class)
             and suggested == "raise" and "check" in available):
-        return "check", None
+        _tag_open = False
+        try:
+            from tag_widen import tag_sb_unopened_steal as _tag_sb_limp
+            _tag_open = bool(_tag_sb_limp(hand_class, "SB"))
+        except Exception:
+            _tag_open = False
+        if not _tag_open:
+            return "check", None
     # T12: unopened SB force-open under placement_chase BEFORE trash/seat-matrix / equity.
     # Facing raise uses _preflop_vs_bet (QJo still folds — no cold-call spew).
     if (placement_chase and not lane_tight
@@ -3197,6 +3223,7 @@ def _preflop_vs_bet(chart: dict, allowed: dict, available: list,
                 big_blind=big_blind,
                 available=available,
                 hero_stack_chips=hero_stack_chips,
+                allowed=allowed,
             )
             if _td is not None:
                 return _td

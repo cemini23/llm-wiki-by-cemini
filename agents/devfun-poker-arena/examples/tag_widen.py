@@ -16,12 +16,17 @@ def tag_widen_enabled() -> bool:
 
 
 def tag_sb_unopened_steal(hand_class: str, position: str = "SB") -> bool:
-    """Playground unopened SB steal band — skipped under tournament freeze."""
+    """Playground unopened SB steal — chart extras + QJo-class.
+
+    Chart already marks TAG_SB_OPEN_EXTRA as raise; decide used to fold them
+    as SB trash before the open landed (P13 SB raise 15.6%). Include extras
+    here so the first-in path fires. Off when TAG_WIDEN=0 (tournament freeze).
+    """
     if position != "SB" or not hand_class:
         return False
     if not tag_widen_enabled():
         return False
-    return hand_class in TAG_SB_STEAL_OPEN
+    return hand_class in TAG_SB_STEAL_OPEN or hand_class in TAG_SB_OPEN_EXTRA
 
 
 def tag_blind_defend_enabled() -> bool:
@@ -117,8 +122,14 @@ TAG_SB_OPEN_EXTRA = frozenset({
 })
 
 # Mild unopened SB steal (P13 P1) — QJo-class only. Not gin. Off when TAG_WIDEN=0.
+# Combined with TAG_SB_OPEN_EXTRA in tag_sb_unopened_steal (S14 climb).
 TAG_SB_STEAL_OPEN = frozenset({
     "QJo", "KJo", "ATo", "KTo",
+})
+
+# P13 P2 stalled-climb: value 3bet from blinds vs steal-sized opens. Not polar.
+TAG_VALUE_3BET = frozenset({
+    "AA", "KK", "QQ", "AKs", "AKo",
 })
 
 TAG_MP_OPEN_EXTRA = frozenset({
@@ -231,8 +242,13 @@ def try_tag_bb_sb_defend(
     big_blind: int,
     available: list,
     hero_stack_chips: int,
-) -> tuple[str, None] | None:
-    """Steal-sized BB/SB defend — no equity gate (chart set already filtered)."""
+    allowed: dict | None = None,
+) -> tuple[str, int | None] | None:
+    """Steal-sized BB/SB defend — no equity gate (chart set already filtered).
+
+    P13 P2: QQ+/AK 3bet vs steal-sized opens when a raise is legal (playground
+    TAG only). Still flats the rest of TAG_BB_CALL / TAG_SB_DEFEND.
+    """
     if not tag_widen_enabled():
         return None
     if call_chips <= 0 or "call" not in available:
@@ -242,6 +258,18 @@ def try_tag_bb_sb_defend(
         return None
     if call_chips > hero_stack_chips * _TAG_DEFEND_MAX_STACK_FRAC:
         return None
+    if (
+        hand_class in TAG_VALUE_3BET
+        and position in ("BB", "SB")
+        and "raise" in available
+        and hero_stack_chips >= bb * 15
+    ):
+        rr = (allowed or {}).get("raiseRange") or {}
+        min_r = int(rr.get("min") or call_chips * 2)
+        max_r = int(rr.get("max") or min_r)
+        target = max(min_r, min(int(call_chips * 2 + bb), max_r))
+        if target <= int(hero_stack_chips * 0.35):
+            return "raise", target
     if position == "BB" and hand_class in TAG_BB_CALL:
         return "call", None
     if position == "SB" and hand_class in TAG_SB_DEFEND:

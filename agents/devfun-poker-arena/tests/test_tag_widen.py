@@ -12,9 +12,11 @@ if str(_EXAMPLES) not in sys.path:
 
 from research_static_chart import research_static_chart  # noqa: E402
 from tag_widen import (  # noqa: E402
+    TAG_SB_OPEN_EXTRA,
     apply_tag_widen_margins,
     tag_blind_defend_enabled,
     tag_facing_raise_to_call,
+    tag_sb_unopened_steal,
     tag_skip_broadway_auto_fold,
     tag_widen_allowed,
     tag_widen_enabled,
@@ -192,6 +194,67 @@ def test_tag_sb_unopened_steal_qjo(monkeypatch):
         hand_class="QJo", position="SB",
     )
     assert act2 == "fold"
+
+
+def test_tag_sb_unopened_steal_includes_chart_extras(monkeypatch):
+    """S14 climb: TAG_SB_OPEN_EXTRA must open, not die as SB trash."""
+    from cemini_decide import _preflop_open
+
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    allowed = {
+        "canBet": True,
+        "canRaise": False,
+        "betRange": {"min": 30, "max": 800},
+        "availableActions": ["fold", "check", "bet"],
+        "callChips": 0,
+    }
+    available = ["fold", "check", "bet"]
+    for hc in ("A9s", "76s", "AJo", "KTs"):
+        assert hc in TAG_SB_OPEN_EXTRA or tag_sb_unopened_steal(hc, "SB")
+        act, _ = _preflop_open(
+            "raise", allowed, available, pot=30, equity=0.20,
+            hand_class=hc, position="SB",
+        )
+        assert act == "bet", hc
+    act_trash, _ = _preflop_open(
+        "fold", allowed, available, pot=30, equity=0.10,
+        hand_class="72o", position="SB",
+    )
+    assert act_trash == "fold"
+
+
+def test_tag_co_extra_76s_not_blocked(monkeypatch):
+    from cemini_decide import _blocks_open_steal, _preflop_open
+
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    assert _blocks_open_steal("76s", "CO") is False
+    allowed = {
+        "canBet": True,
+        "canRaise": False,
+        "betRange": {"min": 30, "max": 800},
+        "availableActions": ["fold", "check", "bet"],
+        "callChips": 0,
+    }
+    act, _ = _preflop_open(
+        "raise", allowed, ["fold", "check", "bet"], pot=30, equity=0.22,
+        hand_class="76s", position="CO",
+    )
+    assert act == "bet"
+
+
+def test_tag_value_3bet_qq_vs_steal(monkeypatch):
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    out = try_tag_bb_sb_defend(
+        hand_class="QQ",
+        position="BB",
+        call_chips=30,
+        big_blind=10,
+        available=["fold", "call", "raise"],
+        hero_stack_chips=1000,
+        allowed={"raiseRange": {"min": 70, "max": 400}},
+    )
+    assert out is not None
+    assert out[0] == "raise"
 
 
 def test_tag_sb_steal_skipped_under_protect(monkeypatch):
