@@ -362,6 +362,16 @@ CCC **ACCEL** is also labeled K237 (agentic-engineer competencies, above). Numbe
 - **Over-restriction is a failure mode** — optimize ASR *and* UA jointly.
 - RustScan is **GPL-3.0 (docx claimed MIT — wrong)**; Extract pattern only, batch-size discipline `-b 10 -T 5000` on sensitive targets.
 
+## OSINT K239 — SteerBench action-boundary HITL · intent-not-form / HiRoute (2026-08-15)
+
+**Dual-ID:** this section is **OSINT K239** (SteerBench-Work 2608.12654 + WIFA/HiRoute + eval). **CCC K239** is Datumpont / execution-fidelity. Resolve by file+wiki, not bare K#.
+
+- **Proceed vs hold at the action boundary** — state-changing tool calls (`scp` to prod, Discord LIVE, `watches.json` writes, skill mutation, AGPL/GPL vendor into Atto) default **HOLD for HITL**. Read-only wiki/query may proceed. Capability of the model is **not** a reason to drop the gate (SteerBench: over-refusal ≫ under-refusal; evidence-reversed mirrors fail).
+- **Intent, not form** — refuse/allow on intent + tool effect + authorization, not wrapper phrasing. Do not train WIFA/HiRoute; **no jailbreak PoC** in wiki. Authorized owned-lab recon ≠ public exploit writeup.
+- **No unattended auto-evolve** of `.cursor/skills/*`. Worker ≠ verifier (Osmani). `/goal` evaluator checks named metrics only — it is not taste.
+- **GO Integrate this batch: none.** fclones MIT = Extract (Atto vault CoW; no unsupervised `--delete`). openai/privacy-filter Apache-2.0 = Extract (PII strip; ≠ packyme). rachoon stays **AGPL Extract-only**; RustScan stays **GPL-3.0 Extract-only** (docx Integrate + MIT were wrong). LFM encoders = license `other` + weight skip. timesfm code cloned; **no HF checkpoints**; GuruWatcher remains alert-only.
+- **0day-Rubbish / LEAKSFORUMS** = Context only. No exploit payloads, no criminal-forum interaction.
+
 ## Phase-1 meta
 
 - After ingest ADOPT/GO: propose `/phase1` wire before claiming done.

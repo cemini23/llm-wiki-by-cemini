@@ -5,17 +5,21 @@ tags: [entity, ml-model, time-series, forecasting, cpu-inference, foundation-mod
 keywords: [timesfm, google-research, time-series, foundation model, zero-shot, forecasting, decoder-only, patch-tokenization, cpu-inference, Apache-2.0]
 related:
   - sources/wave-5-1-link-eval-stacks.md
+  - sources/eval-url-revenue-opportunity-2026-08-15.md
+  - sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md
   - entities/models/chronos-bolt.md
   - concepts/dlinear.md
   - concepts/quant-finance.md
 maturity: draft
 created: 2026-05-01
-updated: 2026-05-01
+updated: 2026-08-15
 ---
 
 ## Relations
 
 - @sources/wave-5-1-link-eval-stacks.md — Wave 5.1 Adopt-tier recommendation; primary evaluation source
+- @sources/eval-url-revenue-opportunity-2026-08-15.md — K239 re-eval; Apache-2.0 code cloned 7MB; **HF checkpoints skipped**
+- @sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md — GuruWatcher bond watches are alert-only; do not auto-wire TimesFM to orders
 - @entities/models/chronos-bolt.md — sibling CPU-viable time-series foundation model (Amazon, T5-small ~8M params, Apache-2.0); TimesFM is larger (200M) but also CPU-viable
 - @concepts/dlinear.md — lightweight trend-seasonal alternative (~1K params); TimesFM occupies the foundation-model tier above DLinear and below commercial APIs
 - @concepts/quant-finance.md — Quantitative Finance corpus-index hub
@@ -51,6 +55,8 @@ The two models are complementary rather than competing: Chronos-Bolt as the fast
 ### License
 
 Apache-2.0 — fully clean for IP-sale readiness. No copyleft, no commercial-use restrictions, no attribution requirements beyond the standard NOTICE file.
+
+**K239 Phase-0:** `.local/adopts/timesfm` (7MB, `GIT_LFS_SKIP_SMUDGE=1`). Docx Integrate for GuruWatcher forecasting — **do not pull HF checkpoints** (size-gate). GuruWatcher remains **alert-only**; no order placement from a forecast head.
 
 ## Snippets
 

@@ -11,9 +11,10 @@ related:
   - concepts/labor-vs-capital-wealth-culture.md
   - sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md
   - sources/substack-rss-wublock-2026-08-14-weekly.md
+  - sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-14
+updated: 2026-08-15
 ---
 
 ## Relations
@@ -24,6 +25,7 @@ updated: 2026-08-14
 - @concepts/kalshi-retail-lp.md
 - @concepts/labor-vs-capital-wealth-culture.md — gambling/investing blur backdrop to retail-participation scrutiny
 - @sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md — K236 retail gambling/investing-blur macro backdrop
+- @sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md — K239 CFTC mention-market review + WA injunction
 
 ## Raw Concept
 
@@ -38,6 +40,8 @@ What this page answers: the regulatory state of US event-contract markets in Aug
 **Venue data.** Kalshi volume Aug 10: $956M (sports+parlays 70%, crypto 27%); Kalshi tops $4B annualized revenue seeking $40B valuation; Polymarket's World Cup comedown −56% weekly volume from June high, Kalshi −25%. FlightAware v Kalshi voluntarily dismissed after Kalshi changed flight-market data usage.
 
 **For pm-bot ops:** NY-state exposure is a legal tail risk on the Kalshi lane; monitor the CFTC emergency-authority litigation. Seasonal demand lull (post-World Cup) lowers venue liquidity into the fall.
+
+**K239 mention markets + WA.** Federal review of mention markets (NPR unnamed sources); Kalshi delisted sports mentions ahead of NFL. King County final order forces a WA geofence (Aug 19 IP+residency / Sep 2 multi-source) covering sports, elections, politics, entertainment, culture, tech/science, and mentions. Advertising those products in WA banned. Do not treat mention markets as a live Kalshi bot surface. [Source: Event Horizon 2026-08-14]
 
 **K236 — responsible trading + incentive scrutiny (2026-08-13).** Three regulatory threads converged:
 

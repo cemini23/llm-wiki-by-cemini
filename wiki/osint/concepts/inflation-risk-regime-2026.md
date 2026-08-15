@@ -5,15 +5,17 @@ tags: [concept, macro, inflation, k233]
 keywords: [inflation-risk, core-cpi, ai-capex, m2-velocity, factor-rotation]
 related:
   - sources/newsletter-capital-flows-inflation-risk-2026-08-12.md
+  - sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md
   - concepts/guruwatcher-macro-watches.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-15
 ---
 
 ## Relations
 
 - @sources/newsletter-capital-flows-inflation-risk-2026-08-12.md
+- @sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md — K239 structural bond bear / bear steepener
 - @concepts/guruwatcher-macro-watches.md
 
 ## Raw Concept

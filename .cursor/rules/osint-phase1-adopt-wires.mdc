@@ -240,6 +240,16 @@ Phase-0 budget: **467MB < 500MB** (12 clones into `.local/adopts/`). License ove
 - Donny META LONG avg $640 / TP $760–800; REA second-largest position (humanoid DyTb thesis, Homer/Shiloh drilling); Fed/Warsh week → **xsp** (brief `xsp-k231-donny-meta-rea`).
 - Event Horizon 08-10 ProphetX+Pikkit, drug-trial betting → **pm** awareness. BIP-110 UASF stall (2 blocks) → **wiki-only**. Capital Flows FX (MOVE at lows, bear steepening) → **xsp** awareness.
 
+## K239 — fclones + openai/privacy-filter Extract · SteerBench HITL · no new Integrate (2026-08-15)
+
+- `fclones` (MIT, `.local/adopts/fclones` 1MB) = **Extract** for Atto vault APFS/CoW dedupe. Guard `--delete`. No Barone paths in git examples.
+- `openai/privacy-filter` (Apache-2.0, `.local/adopts/openai-privacy-filter` 1MB) = **Extract** for Atto PII strip. **≠** `packyme/privacy-filter` (K215). Synthetic fixtures only; no living-person vitals.
+- `timesfm` (Apache-2.0, `.local/adopts/timesfm` 7MB code) = **Extract / already Wave 5.1 Adopt**. **No HF checkpoints**. GuruWatcher alert-only — do not auto-order from a forecast head.
+- `rachoon` AGPL + `RustScan` GPL-3.0 = **Extract-only** (K237 truth). K239 docx Integrate/MIT claims **wrong**. Do not vendor into proprietary Atto.
+- LFM2.5-Encoder 350M/230M = **Extract-hold** (`license=other`). No weight dump.
+- 0xSero/ai-data-extraction + cordiverse/paper = **null SPDX** — no clone.
+- **HITL:** state-changing tools hold. **Do not auto-evolve** `.cursor/skills/*`. Dual-ID: OSINT K239 ≠ CCC K239 Datumpont.
+
 ## K232 — SHE harness evolution + paper wave (2026-08-11)
 
 - `SHE` (`.local/adopts/SHE`, Apache-2.0, ~5.1MB) = trajectory→System Prompt/Rule Bank/Safety Memory/Tool Policy evolution **REFERENCE** for CCC + local-abliterated lab — do not auto-mutate prod harness without HITL.

@@ -8,9 +8,10 @@ related:
   - concepts/crypto-derivatives-volume-2026.md
   - concepts/xsp-lane-trading-framework.md
   - sources/substack-rss-wublock-2026-08-14-weekly.md
+  - sources/substack-rss-wublock-2026-08-15-weekly-robinhood-ens.md
 maturity: draft
 created: 2026-08-13
-updated: 2026-08-14
+updated: 2026-08-15
 ---
 
 ## Relations
@@ -18,6 +19,7 @@ updated: 2026-08-14
 - @sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md — K236 origin
 - @concepts/crypto-derivatives-volume-2026.md — derivatives-volume companion series (WuBlockchain)
 - @concepts/xsp-lane-trading-framework.md — venue-rotation context for crypto-vol XSP readouts
+- @sources/substack-rss-wublock-2026-08-15-weekly-robinhood-ens.md — K239 Robinhood Chain volume/TVL vs DAA gap
 
 ## Raw Concept
 

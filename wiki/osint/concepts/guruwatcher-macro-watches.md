@@ -5,15 +5,17 @@ tags: [concept, guruwatcher, macro, watches, k233]
 keywords: [guruwatcher, price-watches, inflation-swaps, factor-rotation, alert-only]
 related:
   - sources/newsletter-capital-flows-inflation-risk-2026-08-12.md
+  - sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md
   - concepts/inflation-risk-regime-2026.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-15
 ---
 
 ## Relations
 
 - @sources/newsletter-capital-flows-inflation-risk-2026-08-12.md
+- @sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md — K239 30y / 10s30s / SPX-DXY covariance
 - @concepts/inflation-risk-regime-2026.md
 
 ## Raw Concept
@@ -25,3 +27,5 @@ What this page answers: which macro claims from newsletters are watchable as ale
 K233 candidates from Capital Flows (2026-08-12): steels/metals factor (+43% YTD), ags (+16% YTD), and short-end inflation swaps (Japan→UK). Alert-only, no order routing. Watch reconciles most-recent-wins claims vs the armed watches ledger on cemini-prod.
 
 [Source: Capital Flows 2026-08-12]
+
+**K239 (2026-08-15 teaser):** 30y toward ATH; 10s30s bear steepener; ~42 bp terminal hikes through 2027; commodities bid; financials rallying with rates; SPX+30y+DXY lockstep; MMFs at 3% not a safe harbor. Alert-only — see GuruWatcher brief `2026-08-15_k239-capital-flows-bond-crash-watches.md`.

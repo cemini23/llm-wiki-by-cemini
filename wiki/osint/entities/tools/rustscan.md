@@ -5,15 +5,18 @@ tags: [tool, port-scan, recon, cyber, rust, k237]
 keywords: [RustScan, port scanning, Nmap, scripting engine, GPL-3.0, recon]
 related:
   - sources/eval-url-revenue-opportunity-2026-08-14.md
+  - sources/eval-url-revenue-opportunity-2026-08-15.md
   - entities/tools/cyberscraper-2077.md
+  - "@cybersecurity-wiki/entities/tools/rustscan.md"
 maturity: draft
 created: 2026-08-14
-updated: 2026-08-14
+updated: 2026-08-15
 ---
 
 ## Relations
 
 - @sources/eval-url-revenue-opportunity-2026-08-14.md — K237 eval batch (Extract, cyber lab)
+- @sources/eval-url-revenue-opportunity-2026-08-15.md — K239 docx re-claimed MIT + Integrate; **stay GPL-3.0 Extract-only**
 - @entities/tools/cyberscraper-2077.md — cyber-lab toolbelt sibling
 
 ## Raw Concept
@@ -30,5 +33,7 @@ The Modern Port Scanner: **all 65k ports in ~3 seconds** (async Rust), scripting
 - **Scripting engine** for post-scan automation.
 - **Batch-size discipline required**: aggressive 3,000 ports/sec default can trigger firewall rate-limiting / service degradation on sensitive lab targets — enforce `-b 10 -T 5000` on sensitive hosts.
 - **GPL-3.0** (not MIT as docx claimed): pattern extraction only; no linking into proprietary code. Install as standalone binary (`brew install rustscan` / `cargo install rustscan`).
+
+**K239:** eval docx again claimed **MIT + Integrate**. gh api still **GPL-3.0**. Do not re-tier. Already cloned REFERENCE (7MB).
 
 Tier: `[TENTATIVE]`.

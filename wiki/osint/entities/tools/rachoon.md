@@ -5,15 +5,17 @@ tags: [tool, invoicing, billing, atto, pdf, agpl, k237]
 keywords: [Rachoon, Gotenberg, Nunjucks, AdonisJS, Nuxt, invoices, PDF generation, self-hosted billing]
 related:
   - sources/eval-url-revenue-opportunity-2026-08-14.md
+  - sources/eval-url-revenue-opportunity-2026-08-15.md
   - concepts/e2ee-vault-share.md
 maturity: draft
 created: 2026-08-14
-updated: 2026-08-14
+updated: 2026-08-15
 ---
 
 ## Relations
 
 - @sources/eval-url-revenue-opportunity-2026-08-14.md — K237 eval batch (Extract, Atto billing)
+- @sources/eval-url-revenue-opportunity-2026-08-15.md — K239 docx re-tiered Integrate; **stay AGPL Extract-only**
 - @concepts/e2ee-vault-share.md — vault + automated branded-agreement combo
 
 ## Raw Concept
@@ -31,5 +33,7 @@ Self-hosted invoicing platform (Nuxt.js frontend, AdonisJS backend, PostgreSQL, 
 - **Multi-currency + tax support** — international clients seeking Italian citizenship records.
 - **AGPL isolate**: pattern + Docker orchestration extraction only; **no upstream code embedding in proprietary Atto deliverables** (same discipline as ente).
 - Business risk: client billing records need isolated DB backups to prevent invoice-data corruption.
+
+**K239:** same-docx wave re-labeled rachoon **Integrate** and license NOT FOUND. gh api still **AGPL-3.0**. Do not re-tier. Already cloned REFERENCE (8MB).
 
 **Brief:** folded into Atto `2026-08-14_k237-ente-e2ee-vault.md` (E2EE vault + branded billing combo). Tier: `[TENTATIVE]`.

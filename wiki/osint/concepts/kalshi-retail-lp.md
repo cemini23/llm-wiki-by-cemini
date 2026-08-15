@@ -6,17 +6,19 @@ keywords: [kalshi, lp, event-contracts, volume, regulation]
 related:
   - sources/newsletter-event-horizon-wildfires-2026-08-12.md
   - sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md
+  - sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md
   - concepts/prediction-market-regulation-2026.md
   - concepts/polymarket-bot-architecture.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-13
+updated: 2026-08-15
 ---
 
 ## Relations
 
 - @sources/newsletter-event-horizon-wildfires-2026-08-12.md
 - @sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md — CFTC incentive-program advisory targets retail LP/bonus programs (K236)
+- @sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md — K239 sports mentions sidelined; WA geofence
 - @concepts/prediction-market-regulation-2026.md
 - @concepts/polymarket-bot-architecture.md
 
@@ -29,3 +31,5 @@ What this page answers: operating context for Kalshi retail LP/directional strat
 Kalshi volume Aug 10: $956M (sports+parlays 70%, crypto 27%); $4B annualized revenue, seeking $40B valuation. **Regulatory tail risk**: NY AG seeks a nationwide TRO on all Kalshi event contracts + >$36B damages; CFTC emergency-authority response orders KalshiEX to keep operating. Any Kalshi LP/directional bot (pm-kalshi lane) carries NY-state-gaming-law legal exposure — monitor the litigation before expanding the lane.
 
 [Source: Event Horizon 2026-08-12]
+
+**K239:** Kalshi pulled **sports mention markets** (CFTC review per NPR). Mention category had done $1.2B since sports launch. King County order: geofence WA by Aug 19 / Sep 2 and drop mentions among other categories. **No new retail-bot steal** — category is gone. [Source: Event Horizon 2026-08-14]

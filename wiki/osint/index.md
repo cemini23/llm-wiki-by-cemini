@@ -7,6 +7,26 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K239 ingest (2026-08-15)
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-url-revenue-opportunity-2026-08-15](sources/eval-url-revenue-opportunity-2026-08-15.md) | 18-URL eval — fclones + openai/privacy-filter Extract; rachoon/RustScan stay AGPL/GPL Extract; LFM weights skipped (K239) | draft |
+| [arxiv-2608.12654-steerbench-work](sources/arxiv-2608.12654-steerbench-work-2026-08-15.md) | SteerBench-Work proceed/hold at tool-action boundaries (106 scenarios) → CCC HITL (K239) | draft |
+| [arxiv-2608.12821-hiroute](sources/arxiv-2608.12821-hiroute-2026-08-15.md) | HiRoute hierarchical routed prompt-tuning for safety → cyber/CCC policy (K239) | draft |
+| [arxiv-2608.13304-wifa-intent-not-form](sources/arxiv-2608.13304-wifa-intent-not-form-2026-08-15.md) | WIFA refuse intent not wrapper form → cyber/CCC (K239) | draft |
+| [newsletter-latent-space-flue](sources/newsletter-rss-latent-space-2026-08-15-react-for-agents-flue.md) | Flue 2 React-style Agent Hooks on Pi → CCC awareness (K239) | draft |
+| [newsletter-pe-meta-resignation](sources/newsletter-rss-pragmatic-engineer-2026-08-14-meta-resignation-wave.md) | Meta resignation-wave + Grok Bot teaser → wiki-only (K239) | draft |
+| [newsletter-osmani-loop](sources/substack-rss-addy-osmani-2026-08-14-practical-loop-engineering.md) | Practical loop engineering `/goal` `/loop` → CCC (K239) | draft |
+| [newsletter-capital-flows-bonds](sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md) | Bond-crash playbook (30y / 10s30s / covariance) → GuruWatcher watches (K239) | draft |
+| [newsletter-eh-kalshi-mentions](sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md) | Kalshi sports mentions gone + WA geofence → gambling wiki (K239) | draft |
+| [newsletter-secpro-247-saif](sources/substack-rss-secpro-2026-08-14-247-google-saif.md) | Google SAIF → cyber ops (K239) | draft |
+| [newsletter-wublock-rh-ens](sources/substack-rss-wublock-2026-08-15-weekly-robinhood-ens.md) | Robinhood Chain / ENS / HLP auto-earn → wiki-only (K239) | draft |
+| [fclones](entities/tools/fclones.md) | MIT APFS CoW dedupe — Atto vault Extract (K239) | draft |
+| [openai-privacy-filter](entities/tools/openai-privacy-filter.md) | Apache-2.0 PII filter — ≠ packyme (K239) | draft |
+| [agent-steering-action-boundary](concepts/agent-steering-action-boundary.md) | Proceed vs hold at state-changing tool calls; dual-ID vs CCC K239 (K239) | draft |
+| [intent-not-form-refusal](concepts/intent-not-form-refusal.md) | Wrapper-invariant refusal; no jailbreak PoC (K239) | draft |
+| [practical-loop-engineering](concepts/practical-loop-engineering.md) | `/goal` `/loop` HITL; worker ≠ verifier (K239) | draft |
+
 ### K238 ingest (2026-08-15)
 | Page | Summary | Maturity |
 |------|---------|----------|
@@ -2049,7 +2069,7 @@ Orchestration, web, validation, trading, RL.
 Pretrained and from-scratch ML models evaluated for Cemini integration.
 
 - [Chronos-Bolt](entities/models/chronos-bolt.md) — K12 adoption: Amazon CPU-optimized time-series foundation model (Apache-2.0, T5-small ~8M params, ~80M series pretraining). Probabilistic quantile outputs. Fits Hetzner 7 GB CPU-only constraint. — model, time-series, foundation-model, cpu-inference, cemini-adopt
-- [TimesFM](entities/models/timesfm.md) — Wave 5.1 Adopt: Google Research time-series foundation model (Apache-2.0, 200M params, 100B time-point pretraining, 16K context). Decoder-only with patch-tokenization; zero-shot outperforms ARIMA/ETS. ~400-800 MB RAM CPU-viable. Complementary to Chronos-Bolt (8M fast-path vs 200M deep-forecast). — model, time-series, foundation-model, cpu-inference, cemini-adopt
+- [TimesFM](entities/models/timesfm.md) — Wave 5.1 Adopt + K239 code clone (7MB, checkpoints skipped). Google Research time-series foundation model (Apache-2.0, 200M params, 100B time-point pretraining, 16K context). Decoder-only with patch-tokenization; zero-shot outperforms ARIMA/ETS. ~400-800 MB RAM CPU-viable. Complementary to Chronos-Bolt (8M fast-path vs 200M deep-forecast). — model, time-series, foundation-model, cpu-inference, cemini-adopt, k239
 - [DeepSeek model family](concepts/deepseek-models.md) — `[draft]` Catalog of DeepSeek model versions (V3, V3.1, V4-Pro, V4-flash, R1-14B, R1-671B) referenced across the wiki. Performance signals from TSAG tool-use benchmarks, training-free GRPO papers, MoE efficiency validations. Cemini's intended brain lineage. — concept, llm-models, deepseek, model-selection, cemini-brain
 
 ### Tools
@@ -2058,8 +2078,10 @@ Dev-workflow tooling evaluated for Cemini integration.
 
 - [ente](entities/tools/ente.md) — K237 Extract (Atto Access Share E2EE). AGPL-3.0 verified; 721MB size-skip; Shamir recovery + zero-knowledge share pattern. — tool, e2ee, vault, atto, k237
 - [cyberscraper-2077](entities/tools/cyberscraper-2077.md) — K237 Integrate (cyber lab, MIT, 0.4MB clone). Local-browser CDP attach (Patchright) + Tor + LLM extraction; authorized-target-only. — tool, scraper, osint, cyber, k237
-- [rachoon](entities/tools/rachoon.md) — K237 Extract (Atto billing, AGPL-3.0). Gotenberg PDF engine + Nunjucks templates; pattern-only. — tool, invoicing, atto, agpl, k237
-- [rustscan](entities/tools/rustscan.md) — K237 Extract (cyber recon, **GPL-3.0** — docx claimed MIT). 65k ports in 3s + Nmap piping; batch-size discipline. — tool, port-scan, cyber, k237
+- [rachoon](entities/tools/rachoon.md) — K237 Extract (Atto billing, AGPL-3.0). K239 docx Integrate **overridden**. Gotenberg PDF engine + Nunjucks templates; pattern-only. — tool, invoicing, atto, agpl, k237, k239
+- [rustscan](entities/tools/rustscan.md) — K237 Extract (cyber recon, **GPL-3.0** — docx claimed MIT). K239 re-claimed MIT+Integrate — still Extract-only. 65k ports in 3s + Nmap piping; batch-size discipline. — tool, port-scan, cyber, k237, k239
+- [fclones](entities/tools/fclones.md) — K239 Extract (Atto vault, MIT, 1MB). APFS/Linux reflink CoW duplicate finder. — tool, dedupe, atto, k239
+- [openai-privacy-filter](entities/tools/openai-privacy-filter.md) — K239 Extract (Atto PII, Apache-2.0). Distinct from packyme/privacy-filter (K215). — tool, pii, atto, k239
 - [voxcpm](entities/tools/voxcpm.md) — K237 Extract (Atto narrated histories, Apache-2.0). Tokenizer-free multilingual TTS + zero-shot voice cloning. — tool, tts, voice, atto, k237
 - [vero](entities/tools/vero.md) — K237 (CCC verified-code, Apache-2.0, 1.9MB clone). Repo-scale Lean 4 benchmark; anti-cheat + audit mechanism. — tool, formal-verification, lean4, ccc, k237
 - [Promptfoo](entities/tools/promptfoo.md) — K12 adoption: LLM prompt testing framework (MIT). Deterministic assertions, red-team testing, CI-gated prompt changes. 3-document convergence across K12 → [CONFIRMED]. — tool, prompt-testing, ci, red-team, cemini-adopt
@@ -2873,6 +2895,9 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Macro rotation momentum signals (May 2026)](concepts/macro-rotation-momentum-signals-2026-05.md) — `[DRAFT 2026-05-28]` K76 Post 1 Macro Charts discretionary rotation watchlist [TENTATIVE]. — concept, equities, momentum, k76
 - [Claude Code Skills.md workflow](concepts/claude-code-skills-md-workflow.md) — `[DRAFT 2026-05-28]` K76 Post 2 Skills.md + CLAUDE.md hierarchy stub; expand in ccc-wiki. — concept, claude-code, skills, k76
 - [Persona-hat Claude Code SDLC](concepts/persona-hat-claude-code-sdlc.md) — `[DRAFT 2026-08-15]` K238 five-hat live build; MCP vs skills; reviewer ≠ deployer. — concept, claude-code, k238
+- [Agent steering at the action boundary](concepts/agent-steering-action-boundary.md) — `[DRAFT 2026-08-15]` K239 SteerBench proceed/hold; dual-ID vs CCC K239 Datumpont. — concept, hitl, k239
+- [Refuse intent, not form](concepts/intent-not-form-refusal.md) — `[DRAFT 2026-08-15]` K239 WIFA/HiRoute/SAIF wrapper-invariant refusal. — concept, llm-safety, k239
+- [Practical loop engineering](concepts/practical-loop-engineering.md) — `[DRAFT 2026-08-15]` K239 Osmani `/goal` `/loop`; worker ≠ verifier. — concept, loop-engineering, k239
 
 #### K78 ingest (2026-05-29 — Posts.docx, 6 posts)
 

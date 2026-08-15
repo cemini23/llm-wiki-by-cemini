@@ -28,6 +28,14 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-15 — K239)
+
+- **K239 ingest** — 18-URL eval + 3 arXiv (SteerBench / HiRoute / WIFA) + 7 newsletters. 11 raws archived to egress-fi; inbox empty of this batch.
+- **K239 Phase-0** — 9MB new clones: fclones MIT, openai/privacy-filter Apache-2.0, timesfm Apache-2.0 code (no checkpoints). rachoon **AGPL Extract-only** + RustScan **GPL-3.0 Extract-only** (docx Integrate/MIT wrong — K237 truth stands). LFM encoders `license=other` weight-skip. Null SPDX skip: ai-data-extraction, cordiverse/paper. **No new Integrate GO.**
+- **K239 papers** — SteerBench-Work proceed/hold HITL → CCC (dual-ID: OSINT K239 ≠ CCC K239 Datumpont). HiRoute + WIFA intent-not-form → cyber/CCC policy; no jailbreak PoC.
+- **K239 briefs** — Atto fclones+PII; GuruWatcher bond watches; cyber HiRoute/WIFA/SAIF; CCC SteerBench/Flue/Osmani; gambling Kalshi mentions. **No xsp/pm scp** (WuBlock not implementable; mentions gone).
+- **Phase-1** — HITL action-boundary + intent-not-form wires. No skill auto-evolve.
+
 ## Current state (2026-08-15 — K238)
 
 - **K238 ingest** — @clayul X video of Ivan Nardini Code w/ Claude 2026 GCP live build (26 min; official YT + 564MB X mp4 archived). Steal: MCP vs skills split, plan mode, 3 component subagents, security-review gate (reviewer ≠ deployer). CCC brief staged. Dual-ID vs older CCC K238 filenames.

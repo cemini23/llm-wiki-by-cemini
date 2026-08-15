@@ -11,9 +11,12 @@ related:
   - concepts/agent-setup-instruction-supply-chain.md
   - sources/arxiv-2608.13560-autodesign-2026-08-14.md
   - concepts/self-evolving-runtime-defense.md
+  - sources/arxiv-2608.13304-wifa-intent-not-form-2026-08-15.md
+  - concepts/intent-not-form-refusal.md
+  - "@cybersecurity-wiki/concepts/skill-misevolution.md"
 maturity: draft
 created: 2026-08-14
-updated: 2026-08-14
+updated: 2026-08-15
 
 ---
 
@@ -24,6 +27,8 @@ updated: 2026-08-14
 - @concepts/agent-skill-rl-extraction.md — K233 SKILLER generation sibling
 - @concepts/agent-setup-instruction-supply-chain.md — K236 promptware/setup-instruction risk
 - @sources/arxiv-2608.13560-autodesign-2026-08-14.md — self-improving harness family
+- @sources/arxiv-2608.13304-wifa-intent-not-form-2026-08-15.md — K239: wrappers must not become the refusal label
+- @concepts/intent-not-form-refusal.md — do not auto-evolve skills to "fix" refusals
 
 ## Raw Concept
 

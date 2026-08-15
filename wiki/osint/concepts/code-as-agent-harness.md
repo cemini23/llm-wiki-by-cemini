@@ -23,6 +23,9 @@ related:
   - concepts/agentic-code-quality-gates.md
   - concepts/cross-model-kv-cache-transfer.md
   - sources/substack-rss-secpro-2026-08-07-beyond-threat-hunting.md
+  - sources/newsletter-rss-latent-space-2026-08-15-react-for-agents-flue.md
+  - sources/substack-rss-addy-osmani-2026-08-14-practical-loop-engineering.md
+  - concepts/practical-loop-engineering.md
   - entities/tools/the-startup.md
   - sources/arxiv-2608.05583-judgment-consequence-gap-2026-08-08.md
   - sources/newsletter-rss-latent-space-2026-08-08-zawinski-multiagents.md
@@ -123,6 +126,9 @@ updated: 2026-08-15
 
 ## Relations
 - @sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
+- @sources/newsletter-rss-latent-space-2026-08-15-react-for-agents-flue.md — K239 Flue 2 / "no agent without a harness"
+- @sources/substack-rss-addy-osmani-2026-08-14-practical-loop-engineering.md — K239 /goal /loop
+- @concepts/practical-loop-engineering.md
 
 - @sources/arxiv-2608.06909-trajectory-attribution-2026-08-10.md
 - @sources/arxiv-2608.07147-didpo-coding-agent-2026-08-10.md

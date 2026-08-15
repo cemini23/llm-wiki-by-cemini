@@ -6,6 +6,7 @@ keywords: [polymarket, CLOB, websocket, FAK, GTC, latency, hot path, HMAC, backt
 related:
   - sources/eval-github-revenue-opportunity-2026-08-09.md
   - sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md
+  - sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md
   - entities/tools/pm-trading-bot-toolkits.md
   - sources/substack-rss-event-horizon-2026-08-07-forecastEx-volume.md
   - entities/tools/omlx.md
@@ -131,6 +132,7 @@ updated: 2026-08-12
 
 ## Relations
 - @sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md — NYC/Baltimore/CFTC incentive scrutiny (K236)
+- @sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md — K239: Kalshi sports mentions gone; Polymarket intl still lists some
 
 - @sources/substack-rss-event-horizon-2026-08-11-flightaware-kalshi.md
 

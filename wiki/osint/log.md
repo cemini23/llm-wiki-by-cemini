@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-08-15] ingest | K239 — 18-URL eval + SteerBench/HiRoute/WIFA + 7 newsletters
+
+- **Inbox (11 NEW):** Multi-Wiki URL Revenue Evaluation.docx (18 URLs) + SteerBench 2608.12654 + HiRoute 2608.12821 + WIFA 2608.13304 + Latent Space Flue 2 + PE Meta resignation teaser + Osmani loop engineering + Capital Flows bond crash + Event Horizon Kalshi mentions + SecPro #247 SAIF + WuBlock weekly. All archived to egress-fi; inbox empty of these 11.
+- **Tool eval:** `sources/eval-url-revenue-opportunity-2026-08-15.md` (sha256 `081aafed…`). **No new Integrate GO.** Docx Integrate rachoon/RustScan **overridden** (K237 AGPL/GPL Extract-only — do not re-tier). **Extract:** fclones MIT 1MB, openai/privacy-filter Apache-2.0 1MB. **Extract-hold:** LFM 350M/230M (`license=other`, no HF weights); timesfm Apache-2.0 **code** 7MB, checkpoints skipped. **Null SPDX no-clone:** ai-data-extraction, cordiverse/paper. **Context fold (no reject-stub farm):** 0day-Rubbish, LEAKSFORUMS, electerm, aiwg, WebChat (keep K237 Context). **Pass:** MagicMirror, luna, log-viewer, usefastlane.ai.
+- **Phase-0:** 9MB new clones (`fclones`, `openai-privacy-filter`, `timesfm`). rachoon+RustScan already present. License report `.local/reports/license-k239-2026-08-15.md`.
+- **arXiv:** SteerBench-Work (proceed/hold, 106 scenarios, over-refusal 28.1% vs under-refusal 1.0%) → CCC HITL. HiRoute + WIFA → cyber/CCC policy; **no jailbreak PoC**.
+- **Newsletters:** Flue 2 + Osmani `/goal`/`/loop` → CCC; Capital Flows bonds → GuruWatcher; EH mentions + WA geofence → gambling (no pm scp); SecPro SAIF → cyber; WuBlock + PE Meta → wiki-only.
+- **Entities (2 new):** fclones, openai-privacy-filter. **Concepts (3 new):** agent-steering-action-boundary, intent-not-form-refusal, practical-loop-engineering. Updated: rachoon, rustscan, timesfm, packyme privacy-filter (name collision), loop-engineering, atto kit, kalshi-retail-lp, prediction-market-regulation, guruwatcher-macro-watches, skill-misevolution, code-as-agent-harness.
+- **Briefs:** staged in gitignored `briefs/*k239*` (Atto/GW/cyber/CCC/gambling). Sibling-repo copy blocked by workspace sandbox — operator copy if desired. **No xsp/pm scp** (WuBlock not implementable; mentions gone = no bot steal).
+- **Phase-1:** HITL action-boundary + intent-not-form / HiRoute policy wires. **Dual-ID:** OSINT K239 SteerBench ≠ CCC K239 Datumpont/execution-fidelity. No skill auto-evolve.
+- **Archive:** 11 raws → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
 ## [2026-08-15] ingest | K238 — @clayul X video: Nardini Code w/ Claude 2026 GCP live build
 
 - **Source:** https://x.com/clayul/status/2087915800933933510 (clip posted 2026-08-13). Canonical: Code w/ Claude 2026 SF *Building with Claude on Google Cloud* (Ivan Nardini; 2026-05-06). YouTube `SqHsS737CeA`.

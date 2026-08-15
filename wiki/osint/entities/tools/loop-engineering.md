@@ -5,17 +5,21 @@ tags: [entity, tool, agent-harness, ccc, k129]
 keywords: [loop-engineering, cobusgreyling, MIT, loop-audit, loop-init, autonomous loops]
 related:
   - sources/eval-url-cemini-research-2026-06-25.md
+  - sources/substack-rss-addy-osmani-2026-08-14-practical-loop-engineering.md
+  - concepts/practical-loop-engineering.md
   - concepts/code-as-agent-harness.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/active-project-research-routing.md
 maturity: draft
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-08-15
 ---
 
 ## Relations
 
 - @sources/eval-url-cemini-research-2026-06-25.md — K129 Adopt row (URL 1)
+- @sources/substack-rss-addy-osmani-2026-08-14-practical-loop-engineering.md — K239 methodology (Claude `/goal` `/loop`)
+- @concepts/practical-loop-engineering.md — K239 concept; this page stays the cobusgreyling *repo*
 - @concepts/wiki-tooling-evaluation.md — Phase-0 registry
 - @concepts/code-as-agent-harness.md — loop taxonomy vs turn-by-turn prompting
 

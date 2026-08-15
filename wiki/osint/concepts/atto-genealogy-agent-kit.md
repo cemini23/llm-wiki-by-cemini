@@ -14,9 +14,12 @@ related:
   - concepts/e2ee-vault-share.md
   - entities/tools/ente.md
   - sources/arxiv-2608.13463-mllm-ensembles-2026-08-14.md
+  - sources/eval-url-revenue-opportunity-2026-08-15.md
+  - entities/tools/fclones.md
+  - entities/tools/openai-privacy-filter.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-14
+updated: 2026-08-15
 
 ---
 
@@ -27,6 +30,9 @@ updated: 2026-08-14
 - @entities/tools/anydoc.md — GO Integrate
 - @entities/tools/clapgrep.md — GO Extract
 - @entities/tools/tunnelto.md — GO Extract
+- @sources/eval-url-revenue-opportunity-2026-08-15.md — K239 fclones + openai/privacy-filter
+- @entities/tools/fclones.md — APFS CoW vault dedupe (MIT)
+- @entities/tools/openai-privacy-filter.md — Apache-2.0 PII strip (≠ packyme)
 
 ## Raw Concept
 

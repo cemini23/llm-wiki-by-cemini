@@ -5,17 +5,19 @@ tags: [source, substack, rss, macro, guruwatcher, k236]
 keywords: [capital-flows, valuation-hypersensitivity, macro-liquidity, yen-carry, tech-concentration, compute-financialization]
 related:
   - sources/substack-rss-capital-flows-2026-08-12-interest-rates.md
+  - sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md
   - concepts/valuation-hypersensitivity-macro-liquidity.md
   - concepts/carry-trade.md
 maturity: draft
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-15
 read_status: skimmed
 ---
 
 ## Relations
 
 - @sources/substack-rss-capital-flows-2026-08-12-interest-rates.md — prior issue (K235): rates/FX same trade, yen via money quantity, AI-CapEx credit
+- @sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md — K239 promised bond-crash follow-up
 - @concepts/valuation-hypersensitivity-macro-liquidity.md — synthesizes this issue's core thesis
 - @concepts/carry-trade.md — yen carry unwind mechanics + 2024 Nikkei −27% reference
 
