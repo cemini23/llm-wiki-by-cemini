@@ -30,9 +30,10 @@ related:
   - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
   - entities/engines/godot-4.md
   - concepts/tycho-arc-agi-active-abstraction-stub.md
+  - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-31
+updated: 2026-08-15
 ---
 
 ## Relations
@@ -81,6 +82,8 @@ Fable withdrawn from Cursor subagents 2026-06-13 — Opus is default planner. [C
 ### Steal-from
 
 `Donchitos/Claude-Code-Game-Studios` — planner / implementer / reviewer edges only (`@entities/tools/claude-code-game-studios.md`).
+
+GameDevBench (Godot task zips) vs GameEngineBench (UE5 paper rubric, no pin): @entities/tools/gamedevbench.md · @sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md. Tycho world-model eval stays CCC-primary (@concepts/tycho-arc-agi-active-abstraction-stub.md).
 
 ## Snippets
 

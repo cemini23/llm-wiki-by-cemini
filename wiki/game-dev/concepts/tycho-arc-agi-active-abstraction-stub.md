@@ -6,9 +6,10 @@ keywords: [Tycho, RHAE, programmatic world model]
 related:
   - concepts/agent-harness-castle-project.md
   - entities/tools/gamedevbench.md
+  - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
 maturity: draft
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-08-15
 ---
 
 ## Relations

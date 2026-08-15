@@ -39,7 +39,7 @@ Phase-0 from K125 SEO digest cross-route — arXiv 2606.16902 + GitHub `ndb796/B
 
 **Steal-from:** binary search on ordered trajectory between anchor landmarks; open-VLM onboard inference discipline; multi-trip benchmark design (GangnamLoop).
 
-**Do not adopt** runtime until license verified — use paper + repo README for pattern extraction only.
+**Do not adopt** runtime until license verified — use paper + repo README for pattern extraction only. Brief: gitignored `briefs/research/bintrack-spatial-qa-steal-2026-06-21.md`.
 
 ## Snippets
 

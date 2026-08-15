@@ -19,11 +19,12 @@ related:
   - sources/gdquest-pathfinding-glossary-2026-06-23.md
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
   - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
+  - sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md
   - entities/tools/binarytracking.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-23
+updated: 2026-08-15
 ---
 
 ## Relations
@@ -62,7 +63,7 @@ Exa hit: [Kobold Tactics TileMap pathfinding](https://koboldtactics.com/tilemap-
 
 ### Pattern 5 — NavigationAgent avoidance + ORCA shelf (defer)
 
-Enable avoidance only when units crowd; pathfind on grid, optionally nudge with RVO for collision resolution. If gate deadlocks persist at Tier 2, read MAPF/ORCA proactive-deadlock literature — @sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md (global planner + local steer split).
+Enable avoidance only when units crowd; pathfind on grid, optionally nudge with RVO for collision resolution. If gate deadlocks persist at Tier 2, read MAPF/ORCA proactive-deadlock literature — @sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md (global planner + local steer split). If **carts keep choosing the same slammed granary**, that is dispatcher memory (SGM), not avoidance — @sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md.
 
 ### Pattern 6 — Flow field (Tier 2)
 

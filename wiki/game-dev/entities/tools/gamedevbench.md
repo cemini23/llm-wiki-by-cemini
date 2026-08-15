@@ -19,15 +19,17 @@ related:
   - entities/engines/godot-4.md
   - entities/projects/castle-sim.md
   - concepts/tycho-arc-agi-active-abstraction-stub.md
+  - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
 maturity: validated
 created: 2026-06-21
-updated: 2026-07-31
+updated: 2026-08-15
 ---
 
 ## Relations
 
 - Paper: [arXiv:2602.11103](https://arxiv.org/abs/2602.11103)
 - Gitignored brief: `briefs/research/gamedevbench-harness-eval.md`
+- Name collision: **GameEngineBench** (UE5 paper 2607.03525) is a different bench — @sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
 
 ## Raw Concept
 
@@ -64,3 +66,4 @@ Requires Godot 4.x on PATH (`GODOT_EXEC_PATH`).
 ## Dead Ends
 
 - Shipping GameDevBench tasks inside castle-sim repo — keep eval fork separate
+- Conflating GameDevBench (this entity) with GameEngineBench UE5 paper tasks

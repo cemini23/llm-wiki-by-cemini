@@ -11,12 +11,13 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-06-24.md
   - sources/vav-labs-godot-flow-fields-2026.md
   - sources/vav-labs-astargrid2d-gotchas-2026-06-22.md
+  - sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2606.22757
 maturity: validated
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-08-15
 ---
 
 ## Raw Concept
@@ -47,7 +48,7 @@ Paper domain: robotics teams (cs.RO). Digest surfaced under RTS flow-field query
 | Local crowding | Pattern 7 service + optional `NavigationAgent2D` nudge | ORCA-class velocity steering when 30+ units share choke |
 | Deadlock symptom | Units stack at gate / stockpile | Proactive trajectory deps vs reactive unstuck scripts |
 
-**Verdict:** **STEAL-FROM (architecture reference)** — do not port C-ORCA* to GDScript in vertical slice. Evaluate simplified ORCA/RVO nudge (Godot `NavigationAgent2D.avoidance_enabled`) before custom continuous MAPF.
+**Verdict:** **STEAL-FROM (architecture reference)** — do not port C-ORCA* to GDScript in vertical slice. Evaluate simplified ORCA/RVO nudge (Godot `NavigationAgent2D.avoidance_enabled`) before custom continuous MAPF. Brief: gitignored `briefs/research/cooperative-orca-local-avoidance-shelf.md`. Goal *selection* (which endpoint) is a different layer — @sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md.
 
 ### Relationship to flow fields [CONFIRMED]
 

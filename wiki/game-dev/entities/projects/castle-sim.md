@@ -28,6 +28,8 @@ related:
   - sources/gdquest-pathfinding-glossary-2026-06-23.md
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
   - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
+  - sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md
+  - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - concepts/stronghold-2-kingmaker-strategy.md
   - concepts/stronghold-2-siege-warfare.md
@@ -65,7 +67,7 @@ related:
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-20
+updated: 2026-08-15
 ---
 
 ## Relations

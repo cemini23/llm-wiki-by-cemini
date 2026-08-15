@@ -17,7 +17,7 @@ related:
   - entities/tools/pcgodot.md
 maturity: validated
 created: 2026-06-17
-updated: 2026-07-15
+updated: 2026-08-15
 ---
 
 ## Relations
@@ -61,7 +61,7 @@ Targeted Godot tool/workflow research after castle-sim story-012–029 — close
 
 ### Priority order
 
-1. `briefs/architecture.md` + controller split stories  
+1. `castle-sim/briefs/architecture.md` (implementation repo; not in this wiki tree) + controller split stories  
 2. Stagehand L1 on primary 3D scene  
 3. GdUnit4 on `PopularityService` / rank gates  
 4. Kenney mesh pass (one building at a time)  

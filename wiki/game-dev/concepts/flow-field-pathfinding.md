@@ -17,9 +17,11 @@ related:
   - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
   - sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md
   - sources/arxiv-2607.02222-cofl-s-sector-flow-fields-2026-07-16.md
+  - sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md
+  - sources/inbox-arxiv-reject-batch-2026-08-15.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-07-16
+updated: 2026-08-15
 ---
 
 ## Relations
@@ -101,3 +103,4 @@ func pick_pathfinder(agents: int, shared_goals: int) -> String:
 ## Dead Ends
 
 - Exa cluster `gdc-stronghold-firefly` — no Firefly GDC postmortem exists; use Bradbury interviews instead (@sources/exa-flowfields-firefly-batch-2026-06-13.md).
+- arXiv 2608.10309 urban-wind CFD “flow fields” — UAV flight planning, not Emerson tiles (@sources/inbox-arxiv-reject-batch-2026-08-15.md).

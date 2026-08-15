@@ -4,6 +4,17 @@ Append-only chronological log.
 
 ---
 
+## [2026-08-15] briefs | SGM MAPD + GameEngineBench backfill + index gaps
+
+- Routed brief `briefs/2026-07-17_k141-stigmergic-graph-memory-mapd-from-seo.md` was never wiki-ingested → @sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md + `briefs/research/stigmergic-graph-memory-mapd-shelf.md` (synced → castle-sim)
+- castle-sim-only `gameenginebench-harness-taxonomy-2026-07-19.md` copied into wiki `briefs/research/` + @sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md (name collision vs GameDevBench)
+- Index: Tycho stub row; lockstep source href fixed (`arxiv-1705-09704-…`)
+- Concepts: pathfinding matrix + Pattern 5 SGM note; flow-field dead-end for 2608.10309; harness steal-from contrast
+- Brief cites: ORCA + BinTrack research shelves; architecture pointer → `castle-sim/briefs/architecture.md`
+- Phase-0 / scp / prod: none
+
+---
+
 ## [2026-08-15] ingest | 1 arXiv reject (UAV wind flow-field false positive) + empty 07-29…08-11
 
 - Inbox: 1 arXiv PDF → @sources/inbox-arxiv-reject-batch-2026-08-15.md (reject); archived; inbox cleared

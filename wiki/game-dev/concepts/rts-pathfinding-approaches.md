@@ -17,13 +17,14 @@ related:
   - sources/gdquest-pathfinding-glossary-2026-06-23.md
   - sources/godot-rts-rpg-youtube-watchlist-2026-06-23.md
   - sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
+  - sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md
   - concepts/agentic-pcg-level-design.md
   - concepts/scope-tiers.md
   - sources/shaggydev-tactics-engine-devlog-2023.md
   - sources/shaggydev-udd-navigation-2025.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-24
+updated: 2026-08-15
 ---
 
 ## Relations
@@ -53,6 +54,7 @@ Decision guide for castle-sim unit movement around **dynamic walls** — synthes
 | **Potential fields (RTS AI papers)** | Soft steering; complements grid | AI micro, not peasants | Custom | Tier 2 combat |
 | **RVO / NavigationAgent avoidance** | Does not replace pathfind | Small groups | `NavigationAgent2D` / `NavigationAgent3D` | Optional polish |
 | **MAPF / ORCA-class local steer** | Complements global planner | Crowds in chokes | Custom or ORCA libs | **Tier 2+** — @sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md |
+| **SGM / endpoint memory** | Does not pathfind — ranks which jobs enter the planner | Multi-granary / estate carts | Custom dispatcher | **Phase E+** — @sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md |
 
 ### Exa paper cluster (filtered for games)
 
@@ -62,6 +64,7 @@ Decision guide for castle-sim unit movement around **dynamic walls** — synthes
 | "An Improved Pathfinding Algorithm in RTS Games" | General RTS grid — reference only |
 | Nature 2025 flow-field BFS integration | Academic; validate before adopt |
 | arXiv 2606.22757 Cooperative-ORCA* MAPF | **STEAL-FROM** local avoidance shelf — proactive deadlock vs reactive fallback |
+| arXiv 2607.15182 Stigmergic Graph Memory MAPD | **STEAL-FROM** dispatcher — decaying endpoint traces before A*/flow (SEO K141 route) |
 | arXiv UAV/robotics papers in default digest | **Noise** — tighten paper queries |
 
 ### Recommended evolution
@@ -71,6 +74,7 @@ v0:  AStarGrid2D synced to wall TileMapLayer
 v1:  Flood-fill for "reachable job sites" preview (see @concepts/godot-pathfinding-patterns.md)
 v2:  Flow field for shared goals (stockpile, rally) if unit count > ~30 — @concepts/flow-field-pathfinding.md
 v2b: ORCA/RVO nudge if gate deadlocks persist — @sources/arxiv-2606.22757-cooperative-orca-mapf-2026-06-24.md
+E+:  SGM-style decaying endpoint memory when carts pick among granaries — @sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md
 MP:  Deterministic sim + lockstep if ever needed (@concepts/rts-networking-deferred.md)
 ```
 

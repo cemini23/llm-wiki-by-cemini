@@ -53,6 +53,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [godot-3d-sh2-architect-spike-plan](concepts/godot-3d-sh2-architect-spike-plan.md) | draft | M0.3D architect camera + wall spike |
 | [godot-castle-sim-tool-gap-shelf](concepts/godot-castle-sim-tool-gap-shelf.md) | validated | Post–Phase 7 Godot tools + workflow gaps |
 | [deferred-engine-candidates](concepts/deferred-engine-candidates.md) | draft | libGDX + Duality defer shelf |
+| [tycho-arc-agi-active-abstraction-stub](concepts/tycho-arc-agi-active-abstraction-stub.md) | draft | Tycho / ARC-AGI-3 world-models — CCC-primary stub |
 
 ## Entities — Engines
 
@@ -158,7 +159,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [shaggydev-udd-navigation-2025](sources/shaggydev-udd-navigation-2025.md) | read |
 | [papierkorp-godot-4-tactical-movement-2023](sources/papierkorp-godot-4-tactical-movement-2023.md) | read |
 | [godot-stagehand-castle-sim-ci-eval-2026-06-13](sources/godot-stagehand-castle-sim-ci-eval-2026-06-13.md) | read |
-| [arxiv-1705.09704-lockstep-simulation](sources/arxiv-1705.09704-lockstep-simulation.md) | read |
+| [arxiv-1705-09704-lockstep-simulation](sources/arxiv-1705-09704-lockstep-simulation.md) | read |
 | [tool-evaluation-cross-wiki-routing-2026-06-13](sources/tool-evaluation-cross-wiki-routing-2026-06-13.md) | read |
 | [serpent-ai-phase-0-audit-2026-06-13](sources/serpent-ai-phase-0-audit-2026-06-13.md) | read |
 | [airtest-phase-0-audit-2026-06-13](sources/airtest-phase-0-audit-2026-06-13.md) | read |
@@ -270,5 +271,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-07-22](sources/inbox-arxiv-reject-batch-2026-07-22.md) | read |
 | [inbox-arxiv-reject-batch-2026-07-28](sources/inbox-arxiv-reject-batch-2026-07-28.md) | read |
 | [inbox-arxiv-reject-batch-2026-08-15](sources/inbox-arxiv-reject-batch-2026-08-15.md) | read |
+| [arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15](sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md) | read |
+| [arxiv-2607.03525-gameenginebench-harness-2026-08-15](sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md) | read |
 | [36kr-ai-game-story-gameplay-guardrails-2026-06-30](sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md) | read |
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |

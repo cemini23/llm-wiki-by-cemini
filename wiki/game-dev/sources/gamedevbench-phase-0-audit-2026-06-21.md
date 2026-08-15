@@ -16,13 +16,14 @@ related:
   - entities/engines/godot-4.md
   - entities/tools/godot-mcp-landscape.md
   - sources/inbox-arxiv-reject-batch-2026-06-21.md
+  - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
   - meta/cross-wiki-routing.md
 read_status: read
 source_type: operator-audit
 source_url: https://github.com/waynchi/gamedevbench
 maturity: validated
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-08-15
 ---
 
 ## Raw Concept
