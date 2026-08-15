@@ -34,6 +34,8 @@ related:
   - sources/newsletter-rss-latent-space-2026-08-07-amd-taalas-muse.md
   - sources/arxiv-2608.05909-mmaligner-2026-08-07.md
   - entities/tools/google-skills.md
+  - sources/x-clayul-ivan-nardini-claude-gcp-2026-08-13.md
+  - concepts/persona-hat-claude-code-sdlc.md
   - entities/tools/anton-mindsdb.md
   - sources/arxiv-2608.05732-circuitsteer-2026-08-07.md
   - concepts/anytime-valid-agent-eval-iigames.md
@@ -116,7 +118,7 @@ related:
   - sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
 maturity: draft
 created: 2026-05-21
-updated: 2026-08-11
+updated: 2026-08-15
 ---
 
 ## Relations
@@ -161,6 +163,8 @@ updated: 2026-08-11
 - @sources/arxiv-2608.05909-mmaligner-2026-08-07.md — MMAligner (K226)
 
 - @entities/tools/google-skills.md — google/skills Context (K226)
+- @sources/x-clayul-ivan-nardini-claude-gcp-2026-08-13.md — K238 live skills+MCP+subagents on Vertex
+- @concepts/persona-hat-claude-code-sdlc.md
 
 - @entities/tools/anton-mindsdb.md — anton Watch (K226)
 
@@ -268,6 +272,10 @@ Prompted by Tier-2 sweep ingest of arXiv:2605.18747 — a 102-page survey codify
 ### Physical-domain instance (K105)
 
 @sources/arxiv-rocketsmith-agentic-rocketry-2606.00097-2026-06-08.md — RocketSmith wraps OpenRocket (sim source of truth) → build123d (parametric STEP) → PrusaSlicer (weight oracle). Same three-layer model: harness interface = MCP tools; mechanisms = 6 subagents + 7 skills; scaling = GUI read mirror + human-in-the-loop for slicing/recovery timing. **Steal:** deterministic codegen + programmatic mass check ≈ backtest/replay gates before prod.
+
+### Live SDLC instance (K238)
+
+@concepts/persona-hat-claude-code-sdlc.md — Nardini Code w/ Claude 2026: Knowledge-API MCP (architecture) + Cloud Run/Firestore skills (blocks) + 3 component subagents + plan mode + security-review skill. Demo merges reviewer/deployer — keep that split in Cemini.
 
 ### Open problems called out in source (actionable)
 

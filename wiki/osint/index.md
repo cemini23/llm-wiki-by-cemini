@@ -7,6 +7,13 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K238 ingest (2026-08-15)
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [x-clayul-ivan-nardini-claude-gcp](sources/x-clayul-ivan-nardini-claude-gcp-2026-08-13.md) | Code w/ Claude 2026 GCP live build (X clip + official YT) — five hats, MCP vs skills, 3 subagents (K238) | draft |
+| [persona-hat-claude-code-sdlc](concepts/persona-hat-claude-code-sdlc.md) | Persona-hat SDLC steal; reviewer ≠ deployer (K238) | draft |
+| [ivan-nardini](entities/people/ivan-nardini.md) | Google Cloud DevRel; Code w/ Claude 2026 speaker stub (K238) | draft |
+
 ### K237 ingest (2026-08-14)
 | Page | Summary | Maturity |
 |------|---------|----------|
@@ -2510,6 +2517,7 @@ Newsletters, news outlets, research institutions referenced by the wiki.
 
 Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 
+- [Ivan Nardini](entities/people/ivan-nardini.md) — `[DRAFT 2026-08-15]` Google Cloud DevRel (AI/ML); Code w/ Claude 2026 GCP live-build speaker (K238). — person, google-cloud, claude-code, k238
 - [@AlterEgo_eth (X handle)](entities/people/alteregoeth.md) — `[DRAFT 2026-05-13]` K41 ingest. Pseudonymous technical writer; Polymarket Gamma API breakdown for weather markets. — person, x-handle, polymarket, k41
 - [@theparuchh / Paruchh (X handle)](entities/people/theparuchh.md) — `[DRAFT 2026-05-13]` K41 ingest. Pseudonymous retail trader; Mac Mini Polymarket weather-bot deployment; 5 discoveries (station coords, bias_correction, entry window, ensemble, 3-bin). — person, x-handle, polymarket, weather-bot, k41
 - [@Mnilax (X handle)](entities/people/mnilax.md) — `[DRAFT 2026-05-13]` K41 ingest. Technical writer extending Forrest Chang's 4-rule CLAUDE.md template to 12 rules for May 2026 agent orchestration. Author-asserted 41% → 3% mistake rate over 50 tasks/30 codebases/6 weeks. — person, x-handle, claude-code-prompting, k41
@@ -2864,6 +2872,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [LP algorithm live promotion gates](concepts/lp-algorithm-live-promotion-gates.md) — `[VALIDATED 2026-05-28]` K76. DSR, MCPT, markout, shadow incubation, kill switch before `pm_lp_rewards` live. — concept, liquidity-provision, validation, k76
 - [Macro rotation momentum signals (May 2026)](concepts/macro-rotation-momentum-signals-2026-05.md) — `[DRAFT 2026-05-28]` K76 Post 1 Macro Charts discretionary rotation watchlist [TENTATIVE]. — concept, equities, momentum, k76
 - [Claude Code Skills.md workflow](concepts/claude-code-skills-md-workflow.md) — `[DRAFT 2026-05-28]` K76 Post 2 Skills.md + CLAUDE.md hierarchy stub; expand in ccc-wiki. — concept, claude-code, skills, k76
+- [Persona-hat Claude Code SDLC](concepts/persona-hat-claude-code-sdlc.md) — `[DRAFT 2026-08-15]` K238 five-hat live build; MCP vs skills; reviewer ≠ deployer. — concept, claude-code, k238
 
 #### K78 ingest (2026-05-29 — Posts.docx, 6 posts)
 

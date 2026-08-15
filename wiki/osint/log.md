@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-08-15] ingest | K238 — @clayul X video: Nardini Code w/ Claude 2026 GCP live build
+
+- **Source:** https://x.com/clayul/status/2087915800933933510 (clip posted 2026-08-13). Canonical: Code w/ Claude 2026 SF *Building with Claude on Google Cloud* (Ivan Nardini; 2026-05-06). YouTube `SqHsS737CeA`.
+- **Raws:** mp4 sha256 `b6b07aca…` (564MB) + en.txt `8dc51b3a…` (YT auto-captions; no local ffmpeg/Whisper) + en.vtt. Archived to egress-fi.
+- **Pages:** source + `persona-hat-claude-code-sdlc` + `ivan-nardini` stub. Updated RSM (hats without scope lock), google-skills (name collision), claude-code-skills-md-workflow, code-as-agent-harness.
+- **Brief:** CCC `../Cemini claude code CCC/briefs/2026-08-15_k238-persona-hat-claude-gcp.md`. Atto/GW/poker/prod skip.
+- **Dual-ID:** OSINT K238 ≠ CCC paper-wave filenames that already used K238.
+
 ## [2026-08-14] ops | /route worker = official dsh (v2.3.2)
 
 - Operator GO: official DeepSeek Harness behind PATH `claude-ds`. Concept `@concepts/llm-routing-deepseek-openrouter-failover.md` wording flipped from keep-wrapper. Canon: CCC `entities/tools/deepseek-harness.md` `runtime_wired`. Claude Code fallback remains.

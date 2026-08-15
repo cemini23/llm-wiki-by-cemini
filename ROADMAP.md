@@ -28,6 +28,10 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-15 — K238)
+
+- **K238 ingest** — @clayul X video of Ivan Nardini Code w/ Claude 2026 GCP live build (26 min; official YT + 564MB X mp4 archived). Steal: MCP vs skills split, plan mode, 3 component subagents, security-review gate (reviewer ≠ deployer). CCC brief staged. Dual-ID vs older CCC K238 filenames.
+
 ## Current state (2026-08-14 — K237)
 
 - **K237 ingest** — 20-URL tool eval (2 near-dup docx folded) + 8 arXiv + 3 newsletters. 13 raws archived to egress-fi; inbox empty.

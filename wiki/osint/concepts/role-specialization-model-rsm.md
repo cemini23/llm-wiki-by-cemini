@@ -6,15 +6,19 @@ keywords: [RSM, roles, scope-boundaries, negative-constraints, prompt-hardening]
 related:
   - sources/arxiv-2608.12311-rsm-role-specialization-2026-08-13.md
   - concepts/agent-toolkit-routing-research-backlog.md
+  - sources/x-clayul-ivan-nardini-claude-gcp-2026-08-13.md
+  - concepts/persona-hat-claude-code-sdlc.md
 maturity: draft
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-15
 ---
 
 ## Relations
 
 - @sources/arxiv-2608.12311-rsm-role-specialization-2026-08-13.md
 - @concepts/agent-toolkit-routing-research-backlog.md — K235 backlog bump
+- @sources/x-clayul-ivan-nardini-claude-gcp-2026-08-13.md — K238 live five-hat Claude Code demo
+- @concepts/persona-hat-claude-code-sdlc.md — demo hats without RSM scope lock (security also deploys)
 
 ## Raw Concept
 
@@ -30,6 +34,8 @@ RSM is an exploratory case study in SE 3.0: role-specialized LLM instances coord
 4. **Rule-file bloat is counterproductive** (cited prior work): overly detailed project-rule files *reduce* task success rates and *increase* inference costs — a caution for this workspace's growing `.cursor/rules` surface.
 
 Maps directly onto the CCC /route multi-agent backlog: role-scope boundaries + negative-constraint hardening as prompt-level counterparts to the policy-wire pattern this workspace already uses at the harness level.
+
+**K238 live check:** Nardini's five-hat Claude Code demo (@concepts/persona-hat-claude-code-sdlc.md) is RSM-shaped (PM / UX / SWE / security / data) but **fails the scope-boundary test** — the security hat both reviews and deploys. Treat as a positive example of role *labels* and a negative example of role *locks*.
 
 ## Snippets
 

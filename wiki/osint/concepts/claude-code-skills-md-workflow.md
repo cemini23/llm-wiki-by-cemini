@@ -19,9 +19,11 @@ related:
   - entities/tools/omnifs.md
   - entities/tools/nvidia-skills.md
   - entities/tools/mattpocock-skills.md
+  - sources/x-clayul-ivan-nardini-claude-gcp-2026-08-13.md
+  - concepts/persona-hat-claude-code-sdlc.md
 maturity: draft
 created: 2026-05-28
-updated: 2026-06-22
+updated: 2026-08-15
 ---
 
 ## Relations
@@ -37,6 +39,8 @@ updated: 2026-06-22
 - @concepts/cemini-repository-topology.md — subsystem CLAUDE.md recommendation
 - @ccc-wiki/concepts/claude-code-skills-md-institutional-memory.md — expanded ccc concept (K76 fill-out)
 - @ccc-wiki/concepts/claude-md-five-section-template.md — five-section CLAUDE.md template (K76 fill-out)
+- @sources/x-clayul-ivan-nardini-claude-gcp-2026-08-13.md — K238: skills = implementation blocks; MCP = architecture
+- @concepts/persona-hat-claude-code-sdlc.md
 
 ## Raw Concept
 
@@ -59,6 +63,8 @@ K76 synthesis of Skills.md + CLAUDE.md hierarchy essay. Primary home for deep ex
 5. **Quality** — pre-delivery checklist.
 
 Hierarchy: **system setup (CLAUDE.md / Skills.md) → prompts → output**. Matches Cemini OSINT `CLAUDE.md` schema and prod subsystem CLAUDE.md recommendation (@concepts/cemini-repository-topology.md).
+
+**K238:** Nardini splits **MCP = architecture picture** vs **skills = one deploy block** (Cloud Run, Firestore). Same hierarchy: don't put "how GCP works" inside a Cloud Run skill.
 
 ### vs Hermes
 
