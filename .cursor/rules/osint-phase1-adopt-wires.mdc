@@ -250,6 +250,19 @@ Phase-0 budget: **467MB < 500MB** (12 clones into `.local/adopts/`). License ove
 - 0xSero/ai-data-extraction + cordiverse/paper = **null SPDX** — no clone.
 - **HITL:** state-changing tools hold. **Do not auto-evolve** `.cursor/skills/*`. Dual-ID: OSINT K239 ≠ CCC K239 Datumpont.
 
+## K240 — structural abstention · skill procedural anchors · dshackle REFERENCE · Tripwire HITL (2026-08-17)
+
+- **Structural abstention:** dashboards / GuruWatcher / tool-using agents that return numbers consumed as fact must not let a generative shell pick the value. Decline unrepresentable questions; confirm the question shape before compute. Pairs K259.
+- **Skills:** treat SKILL.md as procedural anchors. Retrieval precision drops as the library grows — keep library cap + retirement (misevolution). **No unattended auto-evolve** of `.cursor/skills/*`.
+- `dshackle` (Apache-2.0, `.local/adopts/dshackle`) = PM/RPC **Extract REFERENCE** only — HITL before any cemini-prod proxy. Not a default deploy.
+- `dsh-vision-toolkit` + `dsh-agent-teams` = CCC dsh ecosystem **Extract**. Do **not** replace PATH `claude-ds`.
+- `filekey` = **GPL-3.0 Extract-only** — pattern for credential isolation; do not vendor into Atto kits.
+- **Tripwire** (2608.14392) = cyber lab awareness. Do not neuron-clamp abliterated lab models without HITL. No jailbreak PoC.
+- AgentRewind / Twin / fault-injection = **CCC K282–K284 already wired** in federation `cemini-phase1-policy-wires.mdc`. OSINT clones are REFERENCE shelf copies. Dual-ID: OSINT K240 ≠ CCC K240 robotics.
+- Qwen 27B abliterated GGUF / Uncensored FP8 = **Watch, no weight download**.
+- usertour / corsair = **NOASSERTION — no clone**. aiwg stays K239 Context. daily_stock stays K231 size-hold. unsloth skip (Transkribus sole HTR).
+- Glitch SPX Talon + Moontower RSSB → HITL watches only; never auto-rewrite `watches.json`.
+
 ## K232 — SHE harness evolution + paper wave (2026-08-11)
 
 - `SHE` (`.local/adopts/SHE`, Apache-2.0, ~5.1MB) = trajectory→System Prompt/Rule Bank/Safety Memory/Tool Policy evolution **REFERENCE** for CCC + local-abliterated lab — do not auto-mutate prod harness without HITL.

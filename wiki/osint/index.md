@@ -7,6 +7,33 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K240 ingest (2026-08-17)
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-github-repository-stack-2026-08-16](sources/eval-github-repository-stack-2026-08-16.md) | 20-URL dsh/RPC eval — dshackle Extract REFERENCE; 0 new Integrate GO (K240) | draft |
+| [eval-url-revenue-opportunity-2026-08-17](sources/eval-url-revenue-opportunity-2026-08-17.md) | 20-URL eval — filekey GPL Extract-only; Qwen GGUF skip; 0 new Integrate GO (K240) | draft |
+| [arxiv-2608.13926-never-the-number](sources/arxiv-2608.13926-never-the-number-2026-08-17.md) | Structural abstention: trusted kernel + generative shell; never invent the number (K240) | draft |
+| [arxiv-2608.14036-demystifying-agent-skills](sources/arxiv-2608.14036-demystifying-agent-skills-2026-08-17.md) | Skills stabilize procedure (65.7% vs 4.5% knowledge); retrieval collapses 5→100 (K240) | draft |
+| [arxiv-2608.14380-agentrewind](sources/arxiv-2608.14380-agentrewind-2026-08-17.md) | OSINT stub → CCC K282 AgentRewind; aligned (context, environment) checkpoints (K240) | draft |
+| [arxiv-2608.14392-tripwire](sources/arxiv-2608.14392-tripwire-2026-08-17.md) | Training-free certified safety neurons; ASR ≤2% / utility −0.5%; no PoC (K240) | draft |
+| [arxiv-2608.14490-twin](sources/arxiv-2608.14490-twin-2026-08-17.md) | OSINT stub → CCC K283 Twin; harness validate-before-act (K240) | draft |
+| [arxiv-2608.14527-fault-injection](sources/arxiv-2608.14527-fault-injection-llm-modernization-2026-08-17.md) | OSINT stub → CCC K284; policy only, no ftinj clone (K240) | draft |
+| [spcx-anthropic-sotp-thesis](sources/spcx-anthropic-sotp-thesis-2026-08-17.md) | Relative-value note; observational; email held (K240) | draft |
+| [vivo-vivopower-briefing](sources/vivo-vivopower-briefing-2026-08-14.md) | $4.80 / $147M; FY2025 rev $61k vs Norway AI-landlord story; wiki-only (K240) | draft |
+| [newsletter-latent-space-cursor-60b](sources/newsletter-rss-latent-space-2026-08-14-ainews-cursors-60b.md) | Cursor $60B SpaceXAI close + GLM-5.3 / Qwen3.8-27B (K240) | draft |
+| [newsletter-eh-pm-policy-klein](sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md) | NV vs Kalshi $120k/day + optional-update geofence; no pm scp (K240) | draft |
+| [newsletter-glitchspx-talon](sources/substack-rss-glitchspx-2026-08-16-talon-weekly.md) | Folded Talon weeks (Aug 10–14 + 17–21); HITL sector map (K240) | draft |
+| [newsletter-klement-nlw](sources/substack-rss-klement-2026-08-17-national-living-wage.md) | UK NLW 10y; employment not destroyed; wiki-only (K240) | draft |
+| [newsletter-moontower-324-rssb](sources/substack-rss-moontower-2026-08-16-324-rssb.md) | Folded #324 + RSSB implied stock-bond corr; Fisher z CI (K240) | draft |
+| [newsletter-wublock-asia-top10](sources/substack-rss-wublock-2026-08-16-asia-top10.md) | Asia TOP10 (HKDAP / Korea outbound / Deribit VARA); wiki-only (K240) | draft |
+| [newsletter-wublock-funding-winter](sources/substack-rss-wublock-2026-08-17-funding-winter.md) | Crypto VC −50% QoQ; stablecoin-payments exception; wiki-only (K240) | draft |
+| [dshackle](entities/tools/dshackle.md) | Apache-2.0 Extract REFERENCE — not prod RPC (K240) | draft |
+| [dsh-vision-toolkit](entities/tools/dsh-vision-toolkit.md) | MIT Extract; do not replace claude-ds (K240) | draft |
+| [filekey](entities/tools/filekey.md) | GPL-3.0 Extract-only credential-isolation pattern (K240) | draft |
+| [vivo](entities/tickers/vivo.md) | VivoPower stub from 14 Aug briefing (K240) | draft |
+| [structural-abstention-trusted-kernel](concepts/structural-abstention-trusted-kernel.md) | Generative shell may choose the question, never the value (K240) | draft |
+| [agent-skills-procedural-anchoring](concepts/agent-skills-procedural-anchoring.md) | Skills as procedural anchors; library cap; no auto-evolve (K240) | draft |
+
 ### K239 ingest (2026-08-15)
 | Page | Summary | Maturity |
 |------|---------|----------|
@@ -3094,7 +3121,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Macro Charts SOX / tech correction watch (Jun 2026)](concepts/macro-charts-sox-tech-correction-watch-2026-06.md) — `[DRAFT 2026-07-10]` K144 Korea chip shock + K155 SOX/KOSPI band watch [TENTATIVE]. — concept, semiconductors, k144, k155
 - [Macro Charts paid forwards Vincent Jun 22–Jul 5 2026](sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md) — `[DRAFT 2026-07-05]` 6 paid issues + 2 chat stubs; Gmail auto-drop. — source, macro-charts, k144
 - [Macro Charts email ingest cadence](meta/macro-charts-email-ingest-cadence.md) — `[VALIDATED 2026-07-05]` RSS + Vincent Gmail poller → inbox. — meta, automation
-- [Substack RSS ingest cadence](meta/substack-rss-ingest-cadence.md) — `[VALIDATED 2026-07-05]` curated finance Substack RSS feeds → inbox. — meta, automation
+- [Substack RSS ingest cadence](meta/substack-rss-ingest-cadence.md) — `[VALIDATED 2026-08-17]` curated finance Substack RSS feeds → inbox (incl. Glitch SPX Talon Weekly). — meta, automation
 
 #### K89 knowledge-application audit (2026-05-31)
 

@@ -12,9 +12,10 @@ related:
   - sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md
   - sources/substack-rss-wublock-2026-08-14-weekly.md
   - sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md
+  - sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-15
+updated: 2026-08-17
 ---
 
 ## Relations
@@ -26,6 +27,7 @@ updated: 2026-08-15
 - @concepts/labor-vs-capital-wealth-culture.md — gambling/investing blur backdrop to retail-participation scrutiny
 - @sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md — K236 retail gambling/investing-blur macro backdrop
 - @sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md — K239 CFTC mention-market review + WA injunction
+- @sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md — K240 NV $120k/day + optional-update geofence
 
 ## Raw Concept
 

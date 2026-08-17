@@ -12,9 +12,11 @@ related:
   - sources/substack-rss-secpro-2026-08-14-247-google-saif.md
   - concepts/practical-loop-engineering.md
   - concepts/intent-not-form-refusal.md
+  - sources/arxiv-2608.14380-agentrewind-2026-08-17.md
+  - sources/arxiv-2608.14490-twin-2026-08-17.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-17
 ---
 
 ## Relations
@@ -27,6 +29,8 @@ updated: 2026-08-15
 - @sources/substack-rss-secpro-2026-08-14-247-google-saif.md — HITL on high-impact agent tools
 - @concepts/practical-loop-engineering.md
 - @concepts/intent-not-form-refusal.md
+- @sources/arxiv-2608.14380-agentrewind-2026-08-17.md — K240/CCC K282 stub: resume-from-checkpoint
+- @sources/arxiv-2608.14490-twin-2026-08-17.md — K240/CCC K283 stub: validate-before-act
 
 ## Raw Concept
 

@@ -9,9 +9,12 @@ related:
   - concepts/agent-setup-instruction-supply-chain.md
   - sources/arxiv-2608.12977-self-evolving-security-2026-08-14.md
   - sources/arxiv-2608.13560-autodesign-2026-08-14.md
+  - sources/arxiv-2608.14036-demystifying-agent-skills-2026-08-17.md
+  - concepts/agent-skills-procedural-anchoring.md
+  - "@cybersecurity-wiki/sources/arxiv-2608-12851-skill-misevolution.md"
 maturity: draft
 created: 2026-08-14
-updated: 2026-08-14
+updated: 2026-08-17
 read_status: read
 ---
 
@@ -22,6 +25,8 @@ read_status: read
 - @concepts/agent-setup-instruction-supply-chain.md — K236 promptware/setup-instruction risk
 - @sources/arxiv-2608.12977-self-evolving-security-2026-08-14.md — defensive mirror (HARD)
 - @sources/arxiv-2608.13560-autodesign-2026-08-14.md — self-improving harness context
+- @sources/arxiv-2608.14036-demystifying-agent-skills-2026-08-17.md — K240 pair: why skills work until retrieval collapses
+- @concepts/agent-skills-procedural-anchoring.md
 
 ## Raw Concept
 

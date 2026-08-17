@@ -5,12 +5,13 @@ tags: [tool, phase-0, k219, atto]
 keywords: [memvid, agent-memory, mv2, rust, apache-2.0]
 related:
   - sources/eval-github-revenue-opportunity-url-2026-08-03.md
+  - sources/eval-url-revenue-opportunity-2026-08-17.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/cemini-license-posture.md
   - concepts/gpuology-genealogy-agent-kit.md
 maturity: draft
 created: 2026-08-03
-updated: 2026-08-03
+updated: 2026-08-17
 wire_status: policy_wired
 wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc; ../atto/.cursor/rules/atto-k219-phase1-wires.mdc
 ---
@@ -18,6 +19,7 @@ wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc; ../atto/.cursor/rules/a
 ## Relations
 
 - @sources/eval-github-revenue-opportunity-url-2026-08-03.md
+- @sources/eval-url-revenue-opportunity-2026-08-17.md — K240 re-list; **do not re-tier**
 - @concepts/wiki-tooling-evaluation.md
 - @concepts/cemini-license-posture.md
 - @concepts/gpuology-genealogy-agent-kit.md

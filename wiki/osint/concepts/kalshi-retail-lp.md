@@ -7,11 +7,14 @@ related:
   - sources/newsletter-event-horizon-wildfires-2026-08-12.md
   - sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md
   - sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md
+  - sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md
   - concepts/prediction-market-regulation-2026.md
   - concepts/polymarket-bot-architecture.md
+  - concepts/dex-fee-implied-volatility.md
+  - sources/arxiv-2608.13340-uniswap-fee-iv-2026-08-14.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-15
+updated: 2026-08-17
 ---
 
 ## Relations
@@ -19,6 +22,7 @@ updated: 2026-08-15
 - @sources/newsletter-event-horizon-wildfires-2026-08-12.md
 - @sources/substack-rss-event-horizon-2026-08-13-novig-announces-responsible-trading-framework-fo.md — CFTC incentive-program advisory targets retail LP/bonus programs (K236)
 - @sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md — K239 sports mentions sidelined; WA geofence
+- @sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md — K240 NV $120k/day + optional-update geofence; **no pm scp**
 - @concepts/prediction-market-regulation-2026.md
 - @concepts/polymarket-bot-architecture.md
 

@@ -5,17 +5,19 @@ tags: [concept, options, collar, hedge, xsp, k234]
 keywords: [collar, risk-reversal, implied-vol, zero-cost-collar, hedge, moontower]
 related:
   - sources/newsletter-moontower-collar-shopping-2026-08-12.md
+  - sources/substack-rss-moontower-2026-08-16-324-rssb.md
   - concepts/options-derivatives.md
   - concepts/xsp-lane-trading-framework.md
   - concepts/xsp-vol-regime-gates.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-17
 ---
 
 ## Relations
 
 - @sources/newsletter-moontower-collar-shopping-2026-08-12.md
+- @sources/substack-rss-moontower-2026-08-16-324-rssb.md — K240 RSSB implied stock-bond corr
 - @concepts/options-derivatives.md
 - @concepts/xsp-lane-trading-framework.md
 - @concepts/xsp-vol-regime-gates.md

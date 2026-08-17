@@ -6,12 +6,15 @@ keywords: [SKILL.md, anti-rationalization, spec, plan, test, review]
 related:
   - sources/guruwatcher-pricing-strategy-research-2026-08-04.md
   - sources/eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05.md
+  - sources/eval-url-revenue-opportunity-2026-08-17.md
+  - sources/arxiv-2608.14036-demystifying-agent-skills-2026-08-17.md
+  - concepts/agent-skills-procedural-anchoring.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/cemini-license-posture.md
   - sources/arxiv-2608.03836-resume-contract.md
 maturity: draft
 created: 2026-08-05
-updated: 2026-08-05
+updated: 2026-08-17
 wire_status: policy_wired
 wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ---
@@ -19,7 +22,9 @@ wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 ## Relations
 
 - @sources/guruwatcher-pricing-strategy-research-2026-08-04.md
-
+- @sources/eval-url-revenue-opportunity-2026-08-17.md — K240 re-list; **do not re-tier**
+- @sources/arxiv-2608.14036-demystifying-agent-skills-2026-08-17.md — procedural anchoring
+- @concepts/agent-skills-procedural-anchoring.md
 - @sources/eval-github-revenue-analysis-agent-runtimes-ssg-2026-08-05.md
 - @concepts/wiki-tooling-evaluation.md
 - @concepts/cemini-license-posture.md

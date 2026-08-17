@@ -5,15 +5,17 @@ tags: [concept, macro, culture, retail, inequality, k236]
 keywords: [labor-share, capital-gains, passive-income, ai-wealth-effect, boomer-wealth, prospect-theory, kludgeocracy]
 related:
   - sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md
+  - sources/substack-rss-klement-2026-08-17-national-living-wage.md
   - concepts/prediction-market-regulation-2026.md
 maturity: draft
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-17
 ---
 
 ## Relations
 
 - @sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md — K236 origin
+- @sources/substack-rss-klement-2026-08-17-national-living-wage.md — K240 UK NLW 10y; employment not destroyed
 - @concepts/prediction-market-regulation-2026.md — gambling/investing blur + regulatory-response backdrop
 
 ## Raw Concept

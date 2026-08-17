@@ -5,16 +5,18 @@ tags: [concept, agentic-workflow, legacy-code, verification, ccc, k235]
 keywords: [modernization, Fortran, oracle, bit-for-bit, human-gates, escaped-defect]
 related:
   - sources/arxiv-2608.12249-hpc-modernization-agentic-2026-08-13.md
+  - sources/arxiv-2608.14527-fault-injection-llm-modernization-2026-08-17.md
   - concepts/agent-harness-verification-bottleneck.md
   - concepts/agent-toolkit-routing-research-backlog.md
 maturity: draft
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-17
 ---
 
 ## Relations
 
 - @sources/arxiv-2608.12249-hpc-modernization-agentic-2026-08-13.md
+- @sources/arxiv-2608.14527-fault-injection-llm-modernization-2026-08-17.md — K240 / CCC K284 stub; off-nominal paired FI; no ftinj clone
 - @concepts/agent-harness-verification-bottleneck.md — same thesis from the K234 Charity Majors lane
 - @concepts/agent-toolkit-routing-research-backlog.md — K235 backlog bump
 

@@ -9,9 +9,10 @@ related:
   - sources/substack-rss-secpro-2026-08-14-247-google-saif.md
   - concepts/agent-steering-action-boundary.md
   - concepts/skill-misevolution.md
+  - sources/arxiv-2608.14392-tripwire-2026-08-17.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-17
 ---
 
 ## Relations
@@ -20,7 +21,8 @@ updated: 2026-08-15
 - @sources/arxiv-2608.12821-hiroute-2026-08-15.md — hierarchical routed prompts
 - @sources/substack-rss-secpro-2026-08-14-247-google-saif.md — ops translation
 - @concepts/agent-steering-action-boundary.md — proceed/hold is the tool-side twin
-- @concepts/skill-misevolution.md — don't let skills learn wrapper shortcuts
+- @concepts/skill-misevolution.md
+- @sources/arxiv-2608.14392-tripwire-2026-08-17.md — K240 certified safety neurons; HITL before clamp; no PoC — don't let skills learn wrapper shortcuts
 
 ## Raw Concept
 

@@ -23,9 +23,13 @@ related:
   - entities/tools/quotio.md
   - sources/arxiv-2608.11152-mixed-rl-rollouts-2026-08-12.md
   - sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md
+  - sources/eval-github-repository-stack-2026-08-16.md
+  - entities/tools/dshackle.md
+  - entities/tools/dsh-vision-toolkit.md
+  - sources/newsletter-rss-latent-space-2026-08-14-ainews-cursors-60b.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-08-14
+updated: 2026-08-17
 ---
 
 ## Relations
@@ -36,6 +40,10 @@ updated: 2026-08-14
 - @ccc-wiki/entities/tools/agent-toolkit.md — private `/route` host (`ROUTE_KIT`)
 - @ccc-wiki/entities/skills/route.md — federation `/route` skill v2.3.2
 - @ccc-wiki/entities/tools/deepseek-harness.md — official `dsh` `/route` worker behind `claude-ds`
+- @sources/eval-github-repository-stack-2026-08-16.md — K240 dsh ecosystem; do not replace `claude-ds`
+- @entities/tools/dshackle.md — RPC proxy (name collision, not DSH)
+- @entities/tools/dsh-vision-toolkit.md — Extract; do not replace PATH `claude-ds`
+- @sources/newsletter-rss-latent-space-2026-08-14-ainews-cursors-60b.md — DSH-as-infrastructure talk
 - @entities/infrastructure/deepseek-api.md — prod brain
 - @ccc-wiki/concepts/llm-routing-deepseek-openrouter-failover.md — operator-facing CCC copy (same contract)
 - @ccc-wiki/entities/skills/super-audit.md — API leg discovers `OPENROUTER_*` / `DEEPSEEK_*` / `ADVISOR_*` via `discover_api_keys.py`

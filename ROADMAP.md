@@ -28,6 +28,14 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-17 — K240)
+
+- **K240 ingest** — 19-inbox: 2 evals + 6 arXiv + SPCX thesis + VIVO + 8 newsletters (Talon ×2 and Moontower #324+RSSB folded). Raws archived to egress-fi; inbox empty of this batch.
+- **K240 Phase-0** — 69MB new clones (`scripts/adopt_k240_phase0.sh`): dshackle Apache-2.0 Extract REFERENCE (not prod RPC); dsh-vision-toolkit + dsh-agent-teams MIT Extract (do not replace `claude-ds`); filekey GPL-3.0 Extract-only; replay-agent-recorder / MettleBench / TWIN-ARC-AGI-3 REFERENCE shelf (CCC K282–K284 already ingested). **No new Integrate GO.**
+- **K240 papers** — Structural abstention (never invent the number) → dashboards / GuruWatcher. Skills as procedural anchors (65.7% vs 4.5% knowledge; retrieval collapses 5→100) → CCC; no unattended skill evolve. Tripwire cyber HITL, no PoC. AgentRewind / Twin / fault-injection = OSINT stubs → CCC K282–K284. Dual-ID: OSINT K240 ≠ CCC K240 robotics.
+- **K240 briefs** — Atto filekey+abstention; GW Talon+RSSB HITL; CCC skills+dsh; cyber Tripwire+Qwen Watch; gambling NV geofence (**no pm scp**). `xsp-k240-glitchspx-talon-rssb` skill_audit 100 → scp cemini-prod. WuBlock funding winter wiki-only. SPCX email still held (Leon address missing).
+- **Phase-1** — wires appended. `wire_status: policy_wired` on dshackle / dsh-vision-toolkit / filekey.
+
 ## Current state (2026-08-15 — K239)
 
 - **K239 ingest** — 18-URL eval + 3 arXiv (SteerBench / HiRoute / WIFA) + 7 newsletters. 11 raws archived to egress-fi; inbox empty of this batch.

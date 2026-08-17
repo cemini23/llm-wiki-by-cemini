@@ -13,10 +13,12 @@ related:
   - concepts/self-evolving-runtime-defense.md
   - sources/arxiv-2608.13304-wifa-intent-not-form-2026-08-15.md
   - concepts/intent-not-form-refusal.md
+  - sources/arxiv-2608.14036-demystifying-agent-skills-2026-08-17.md
+  - concepts/agent-skills-procedural-anchoring.md
   - "@cybersecurity-wiki/concepts/skill-misevolution.md"
 maturity: draft
 created: 2026-08-14
-updated: 2026-08-15
+updated: 2026-08-17
 
 ---
 
@@ -29,6 +31,8 @@ updated: 2026-08-15
 - @sources/arxiv-2608.13560-autodesign-2026-08-14.md — self-improving harness family
 - @sources/arxiv-2608.13304-wifa-intent-not-form-2026-08-15.md — K239: wrappers must not become the refusal label
 - @concepts/intent-not-form-refusal.md — do not auto-evolve skills to "fix" refusals
+- @sources/arxiv-2608.14036-demystifying-agent-skills-2026-08-17.md — K240: skills stabilize procedure (65.7%) not facts
+- @concepts/agent-skills-procedural-anchoring.md — library cap + no unattended evolve
 
 ## Raw Concept
 

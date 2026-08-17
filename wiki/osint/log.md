@@ -1,5 +1,36 @@
 # Wiki Log
 
+## [2026-08-17] query | SPCX vs Anthropic friend thesis → SEO X Article handoff
+
+- Friend PDF (2 pages, Grok Bot in stack) emailed to Leon/Vincent; Desktop copy for Discord.
+- Cross-wiki: SEO:GEO packet at `briefs/2026-08-17_spcx-anthropic-x-article.md` + PDF + `@seo-wiki/concepts/x-article-spcx-anthropic-notes.md`. Operator drafts Article there.
+- Observational. CFTC 4.41. Not a rec.
+
+## [2026-08-17] ingest | K240 — 19-inbox evals + 6 arXiv + newsletters
+
+- **Dual-ID:** OSINT K240 = this inbox. CCC K240 = MixedComplementarityProblems.jl robotics (old). CCC K282–K284 = AgentRewind / Twin / fault-injection (already ingested today). Resolve by file+wiki.
+- **Inbox (19 NEW):** GitHub stack eval + URL revenue eval + SPCX thesis PDF + VIVO.pdf + 6 arXiv (13926, 14036, 14380, 14392, 14490, 14527) + Latent Space Cursor $60B + EH Klein + Glitch SPX Talon ×2 (folded) + Klement NLW + Moontower #324 + RSSB (folded) + WuBlock Asia TOP10 + funding winter. Archived to egress-fi; inbox empty of this batch.
+- **Tool evals:** `sources/eval-github-repository-stack-2026-08-16.md` (sha256 `19c68331…`) + `sources/eval-url-revenue-opportunity-2026-08-17.md` (sha256 `8b718b3f…`). **0 new Integrate GO.** License report `.local/reports/license-k240-2026-08-17.md` (gh api — never trust eval docx).
+- **Phase-0:** `scripts/adopt_k240_phase0.sh` — **69MB** new clones: dshackle 5.6MB, dsh-vision-toolkit 17MB, dsh-agent-teams 3.5MB, filekey 1.2MB (GPL-3.0 Extract-only), replay-agent-recorder 3.7MB, MettleBench 31MB, TWIN-ARC-AGI-3 6.7MB. Skip: usertour/corsair NOASSERTION; Qwen GGUF/FP8 weights; claude-cookbooks 210MB pattern-only; unsloth HTR skip; aiwg keep K239 Context; daily_stock K231 size-hold; traceway >500MB; HTB null SPDX; no `claude-ds` replace.
+- **arXiv:** Never-the-Number structural abstention → GuruWatcher/dashboards. Demystifying Agent Skills (65.7% procedural vs 4.5% knowledge; retrieval 29.6%→3.3% as pool 5→100) → CCC `/route`. Tripwire HITL, no PoC. AgentRewind / Twin / fault-injection = **OSINT stubs** pointing at CCC K282–K284.
+- **Newsletters:** Cursor $60B + GLM-5.3 / Qwen3.8-27B → CCC + SPCX thesis. EH NV $120k/day + optional-update geofence → gambling (**no pm scp**). Talon ×2 folded → xsp + GW HITL. Moontower RSSB implied stock-bond corr → xsp awareness. Klement NLW + WuBlock Asia/funding-winter → wiki-only.
+- **Entities (4 new):** dshackle, dsh-vision-toolkit, filekey, tickers/vivo. **Concepts (2 new):** structural-abstention-trusted-kernel, agent-skills-procedural-anchoring. Updated: memvid, addyosmani-agent-skills, pi-earendil, cemini-license-posture, skill-misevolution, 12851, atto kit, guruwatcher-macro-watches, xsp-lane, kalshi-retail-lp, prediction-market-regulation, labor-vs-capital, high-iv-collar, intent-not-form, agentic-legacy, agent-steering, llm-routing, counterfactual-prompting, EH 08-14.
+- **Briefs:** Atto / GW / CCC / cyber / gambling staged in OSINT `briefs/2026-08-17_k240-*` (sibling-repo write blocked by session sandbox — parent copy). `briefs/xsp-k240-glitchspx-talon-rssb.md` skill_audit **100/100 → scp cemini-prod**. **No pm scp.** Existing SPCX thesis brief not re-scp'd.
+- **Phase-1:** OSINT K240 section in `osint-phase1-adopt-wires.mdc`. Dual-ID paragraph on CCC K282–K284 block in `cemini-phase1-policy-wires.mdc`. New GO/Extract tools `wire_status: policy_wired`.
+- **Archive:** 19 raws → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
+## [2026-08-17] ops | Substack RSS — Glitch SPX Talon Weekly (`glitchspx`)
+
+- Added enabled feed `glitchspx` (`https://glitchspx.substack.com/feed`) to `config/substack-rss-ingest.yaml`. Inbox prefix `substack-rss-glitchspx-*`; `max_age_days: 14`.
+- Cadence: `@meta/substack-rss-ingest-cadence.md`. Route: xsp + GuruWatcher HITL; no auto-arm watches.
+- Standing: LaunchAgent `com.cemini.substack-rss-poller` (30 min) now includes this feed.
+
+## [2026-08-15] ops | The Odds API key location (gambling-wiki)
+
+- Confirmed `THE_ODDS_API_KEY` already on laptop OSINT `.env` (`~/Projects/OSINT WORKSPACE/.env`, gitignored). Value not copied into gambling-wiki.
+- Registry row added under Market data. Gambling scripts fall back to this file (`scripts/env_load.py`).
+- Entity: `@gambling-wiki/entities/tools/the-odds-api.md`
+
 ## [2026-08-15] ingest | K239 — 18-URL eval + SteerBench/HiRoute/WIFA + 7 newsletters
 
 - **Inbox (11 NEW):** Multi-Wiki URL Revenue Evaluation.docx (18 URLs) + SteerBench 2608.12654 + HiRoute 2608.12821 + WIFA 2608.13304 + Latent Space Flue 2 + PE Meta resignation teaser + Osmani loop engineering + Capital Flows bond crash + Event Horizon Kalshi mentions + SecPro #247 SAIF + WuBlock weekly. All archived to egress-fi; inbox empty of these 11.

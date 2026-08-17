@@ -11,10 +11,11 @@ related:
   - sources/substack-rss-addy-osmani-2026-08-08-agentic-code-quality.md
   - sources/eval-url-revenue-stack-2026-08-08.md
   - sources/eval-project-portfolio-url-2026-08-08.md
+  - sources/eval-url-revenue-opportunity-2026-08-17.md
   - concepts/cemini-license-posture.md
 maturity: draft
 created: 2026-08-08
-updated: 2026-08-09
+updated: 2026-08-17
 ---
 
 ## Relations
@@ -26,6 +27,7 @@ updated: 2026-08-09
 - @sources/substack-rss-addy-osmani-2026-08-08-agentic-code-quality.md
 - @sources/eval-url-revenue-stack-2026-08-08.md
 - @sources/eval-project-portfolio-url-2026-08-08.md
+- @sources/eval-url-revenue-opportunity-2026-08-17.md — K240 re-list; **do not re-tier**
 - @concepts/cemini-license-posture.md
 
 ## Raw Concept

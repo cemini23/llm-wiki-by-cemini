@@ -17,9 +17,11 @@ related:
   - sources/eval-url-revenue-opportunity-2026-08-15.md
   - entities/tools/fclones.md
   - entities/tools/openai-privacy-filter.md
+  - sources/eval-url-revenue-opportunity-2026-08-17.md
+  - entities/tools/filekey.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-15
+updated: 2026-08-17
 
 ---
 
@@ -33,6 +35,8 @@ updated: 2026-08-15
 - @sources/eval-url-revenue-opportunity-2026-08-15.md — K239 fclones + openai/privacy-filter
 - @entities/tools/fclones.md — APFS CoW vault dedupe (MIT)
 - @entities/tools/openai-privacy-filter.md — Apache-2.0 PII strip (≠ packyme)
+- @sources/eval-url-revenue-opportunity-2026-08-17.md — K240 filekey GPL Extract-only
+- @entities/tools/filekey.md — passkey isolate **pattern**; do not vendor GPL
 
 ## Raw Concept
 

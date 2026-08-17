@@ -7,9 +7,10 @@ related:
   - concepts/kalshi-retail-lp.md
   - concepts/prediction-market-regulation-2026.md
   - concepts/polymarket-bot-architecture.md
+  - sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-17
 read_status: read
 ---
 
@@ -19,6 +20,7 @@ read_status: read
 - @concepts/prediction-market-regulation-2026.md — CFTC mention-market review + state injunctions
 - @concepts/polymarket-bot-architecture.md — intl site still lists some sports mentions
 - @gambling-wiki/entities/platforms/kalshi.md — retail/strategy entity; mentions gone + WA geofence
+- @sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md — K240 NV $120k/day + optional-update geofence
 
 ## Raw Concept
 

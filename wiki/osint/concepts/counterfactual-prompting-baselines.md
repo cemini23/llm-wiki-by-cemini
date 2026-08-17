@@ -7,15 +7,19 @@ related:
   - sources/counterfactual-prompting-2605.01048.md
   - entities/tools/deepeval.md
   - concepts/monte-carlo-permutation-test-mcpt.md
+  - sources/arxiv-2608.13926-never-the-number-2026-08-17.md
+  - concepts/structural-abstention-trusted-kernel.md
 maturity: draft
 created: 2026-05-14
-updated: 2026-05-14
+updated: 2026-08-17
 ---
 
 ## Relations
 
 - @sources/counterfactual-prompting-2605.01048.md — source paper (Northeastern / Bar-Ilan / Allen AI, 2026)
 - @entities/tools/deepeval.md — complementary: deepeval provides the metrics infrastructure; this page provides the null-distribution framework
+- @sources/arxiv-2608.13926-never-the-number-2026-08-17.md — K240 structural abstention (K259 pair)
+- @concepts/structural-abstention-trusted-kernel.md
 
 ## Raw Concept
 
