@@ -14,6 +14,7 @@ from research_static_chart import research_static_chart  # noqa: E402
 from tag_widen import (  # noqa: E402
     TAG_SB_OPEN_EXTRA,
     apply_tag_widen_margins,
+    cheap_priced_continue,
     tag_blind_defend_enabled,
     tag_facing_raise_to_call,
     tag_sb_unopened_steal,
@@ -429,3 +430,89 @@ def test_blind_defend_initiative_short_stack_no_raise(monkeypatch):
         allowed=_raise_allowed(),
     )
     assert out == ("call", None)
+
+
+def test_cheap_priced_continue_off_without_tag_widen():
+    assert cheap_priced_continue(
+        equity=0.70, pot_odds=0.21, call_chips=4, pot=15, stack_chips=1000,
+    ) is False
+
+
+def test_cheap_priced_continue_micro_peel(monkeypatch):
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    # Live S14: 88 flop eq 0.606 vs pot_odds 0.21, call 4 / pot 15
+    assert cheap_priced_continue(
+        equity=0.606, pot_odds=0.2105, call_chips=4, pot=15, stack_chips=1000,
+    ) is True
+    # Live S14: TT turn 0.712 vs 0.209, call 9 / pot 34
+    assert cheap_priced_continue(
+        equity=0.712, pot_odds=0.2093, call_chips=9, pot=34, stack_chips=2000,
+    ) is True
+
+
+def test_cheap_priced_continue_skips_committed_pot(monkeypatch):
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    # Live S14: QQ turn 1089 into 2660 — do not override
+    assert cheap_priced_continue(
+        equity=0.582, pot_odds=0.2905, call_chips=1089, pot=2660,
+        stack_chips=3000,
+    ) is False
+
+
+def test_cheap_priced_continue_low_equity_stays_fold(monkeypatch):
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    assert cheap_priced_continue(
+        equity=0.32, pot_odds=0.20, call_chips=4, pot=16, stack_chips=1000,
+    ) is False
+
+
+def test_decide_peels_underpair_when_priced(monkeypatch):
+    """Texture fold of 88 under K-high flop must call when equity covers."""
+    from cemini_decide import decide
+    from tests.helpers.cemini_tables import _allowed, six_max_table
+
+    monkeypatch.setenv("CEMINI_TAG_WIDEN", "1")
+    monkeypatch.setattr(
+        "cemini_decide.estimate_equity",
+        lambda *a, **k: 0.70,
+    )
+    table = six_max_table(
+        name="s14-priced-88",
+        hero_seat=3,
+        button_seat=6,
+        street="Flop",
+        board=["Kd", "7h", "2c"],
+        pot=15,
+        hero_hole=["8h", "8d"],
+        hero_stack=1000,
+        allowed=_allowed(can_call=True, can_fold=True, call_chips=4, call_to=4),
+    )
+    out = decide(table, deadline_s=10.0)
+    assert out.get("action") == "call", (
+        f"expected priced call, got {out.get('action')!r} "
+        f"reasoning={out.get('reasoning')!r}"
+    )
+
+
+def test_decide_still_folds_underpair_when_tag_off(monkeypatch):
+    from cemini_decide import decide
+    from tests.helpers.cemini_tables import _allowed, six_max_table
+
+    monkeypatch.delenv("CEMINI_TAG_WIDEN", raising=False)
+    monkeypatch.setattr(
+        "cemini_decide.estimate_equity",
+        lambda *a, **k: 0.70,
+    )
+    table = six_max_table(
+        name="s14-priced-88-off",
+        hero_seat=3,
+        button_seat=6,
+        street="Flop",
+        board=["Kd", "7h", "2c"],
+        pot=15,
+        hero_hole=["8h", "8d"],
+        hero_stack=1000,
+        allowed=_allowed(can_call=True, can_fold=True, call_chips=4, call_to=4),
+    )
+    out = decide(table, deadline_s=10.0)
+    assert out.get("action") == "fold"

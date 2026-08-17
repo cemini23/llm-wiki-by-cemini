@@ -29,6 +29,39 @@ def tag_sb_unopened_steal(hand_class: str, position: str = "SB") -> bool:
     return hand_class in TAG_SB_STEAL_OPEN or hand_class in TAG_SB_OPEN_EXTRA
 
 
+def cheap_priced_continue(
+    *,
+    equity: float,
+    pot_odds: float,
+    call_chips: int,
+    pot: int,
+    stack_chips: int = 0,
+) -> bool:
+    """Playground-only: skip texture folds when vs-random equity still covers.
+
+    `estimate_equity` is MC vs 1 random opponent (overstates vs a betting
+    range). Require high vs-random equity + a cheap price so a ~15pp haircut
+    still calls. Off when TAG_WIDEN=0 (tournament freeze). Does not cover
+    committed pots (stack-off / overbet).
+    """
+    if not tag_widen_enabled():
+        return False
+    if call_chips <= 0 or pot < 0:
+        return False
+    try:
+        eq = float(equity)
+        po = float(pot_odds)
+    except (TypeError, ValueError):
+        return False
+    if eq < 0.55 or eq < po + 0.12:
+        return False
+    if call_chips > max(int(pot * 0.45), 1):
+        return False
+    if stack_chips > 0 and call_chips > max(int(stack_chips * 0.08), 1):
+        return False
+    return True
+
+
 def tag_blind_defend_enabled() -> bool:
     """Tournament-only BB/SB defend lane — independent of full CEMINI_TAG_WIDEN."""
     raw = os.environ.get("CEMINI_TAG_BLIND_DEFEND", "0")

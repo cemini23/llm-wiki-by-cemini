@@ -451,6 +451,56 @@ def _apply_trajectory_bound_veto(
     return safe_out
 
 
+_LOCK_FOLD_MARKERS = (
+    "stagger lock",
+    "stack cap",
+    "stack-off",
+    "overcommit",
+    "bankroll",
+)
+
+
+def _maybe_priced_call_instead_of_texture_fold(
+    action: str,
+    table: dict,
+    allowed: dict,
+    eq: float,
+    po: float,
+    msg: str,
+) -> tuple[str, Optional[int], str] | None:
+    """S14 P2: texture heuristics were folding 88/JJ/TT at 4–13 chips."""
+    if action != "fold":
+        return None
+    street = str(table.get("street") or table.get("round") or "").strip().lower()
+    if street in ("", "preflop", "pre-flop"):
+        return None
+    low = (msg or "").lower()
+    if any(m in low for m in _LOCK_FOLD_MARKERS):
+        return None
+    available = list(allowed.get("availableActions") or [])
+    if "call" not in available and not allowed.get("canCall"):
+        return None
+    try:
+        call_chips = int(allowed.get("callChips") or 0)
+    except (TypeError, ValueError):
+        call_chips = 0
+    try:
+        pot = int(table.get("potChips") or table.get("pot") or 0)
+    except (TypeError, ValueError):
+        pot = 0
+    from tag_widen import cheap_priced_continue as _priced
+
+    if not _priced(
+        equity=eq,
+        pot_odds=po,
+        call_chips=call_chips,
+        pot=pot,
+        stack_chips=_hero_stack_chips(table),
+    ):
+        return None
+    return "call", None, f"{msg} [priced continue]"
+
+
 def _build(
     action: str,
     amount: Optional[int],
@@ -460,6 +510,11 @@ def _build(
     po: float,
     msg: str,
 ) -> dict:
+    rewritten = _maybe_priced_call_instead_of_texture_fold(
+        action, table, allowed, eq, po, msg,
+    )
+    if rewritten is not None:
+        action, amount, msg = rewritten
     out = _build_agent(action, amount, table, allowed, eq=eq, po=po, msg=msg)
     # Fail-open postflop jsonl (never crashes decide).
     try:
