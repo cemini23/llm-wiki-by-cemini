@@ -32,9 +32,9 @@ OSINT4ALL group **06-records-gov** — public-records, government, Canadian gov/
 
 ## Narrative
 
-Freedom-of-information and public-registry locators (courts, corporations, FOIA desks, genealogy indexes, Canadian ATI/open data) are **KEEP** for authorized OSINT / Atto methodology. Voter custom-search engines and state voter-lookup sites are **KEEP as public-record locators with a hard caveat** — they are not a voter-harassment playbook. Police-misconduct databases and transparency projects are **CONTEXT** (journalistic public records); leak dumps (**BlueLeaks**, WikiLeaks email/ICE mirrors, Keybase ACAB dump mirrors) are **CONTEXT** — listed so the operator can see what the board contained; agents do not open dumps and do not write targeting or dump-search how-to. No Italian archive URLs appear in this group; Canadian corporate + LAC/BAnQ stay **KEEP (atto+osint)**.
+Freedom-of-information and public-registry locators (courts, corporations, FOIA desks, genealogy indexes, Canadian ATI/open data) are **KEEP** for authorized OSINT / Atto methodology. Voter custom-search engines and state voter-lookup sites are **KEEP as public-record locators with a hard caveat** — they are not a voter-harassment playbook. Official and journalistic police-transparency locators (OpenOversight, EFF Atlas of Surveillance, Oregon DPSST) are **KEEP**; leak dumps (**BlueLeaks**, WikiLeaks email/ICE mirrors, Keybase ACAB dump mirrors) stay **CONTEXT** — listed so the operator can see what the board contained; agents do not open dumps and do not write targeting or dump-search how-to. No Italian archive URLs appear in this group; Canadian corporate + LAC/BAnQ stay **KEEP (atto+osint)**.
 
-**Disposition totals:** KEEP 186 · CONTEXT 55 · board rows 241 · unique hrefs 239.
+**Disposition totals:** KEEP 189 · CONTEXT 52 · board rows 241 · unique hrefs 239.
 
 ## Catalog
 
@@ -268,7 +268,7 @@ Freedom-of-information and public-registry locators (courts, corporations, FOIA 
 
 | Tool | URL | Disposition | Note |
 |------|-----|-------------|------|
-| Openoversight | https://openoversight.com/ | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |
+| Openoversight | https://openoversight.com/ | KEEP | public LE-transparency locator (not a targeting how-to) |
 | Criminal Cop Database Lookup | https://extras.mercurynews.com/criminalcops/database/ | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |
 | Police1 | https://bloopbase.keybase.pub/ACAB/POLICEONE/index.html | CONTEXT | third-party LE dump mirror — CONTEXT; not an authorized FOIA portal |
 | The Philadelphia Police Misconduct Database | https://datawrapper.dwcdn.net/3GbVI/1/ | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |
@@ -281,9 +281,9 @@ Freedom-of-information and public-registry locators (courts, corporations, FOIA 
 | Police Decertifcations Search and Report | https://c0acu882.caspio.com/dp/07da6000e467ebc2a444430c9c1d | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |
 | San Francisco CopWatch Database | https://airtable.com/embed/shreS9yA6eWiJAmHZ/tbl0A1AfPBOaPNBhH?backgroundColor=blue | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |
 | NJ Police and Fire FY 2011 Pension contribution | https://b2.caspio.com/dp.asp?AppKey=c43d100007eedbb0f0e740188660 | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |
-| EFF Atlas of Surveillance | https://atlasofsurveillance.org/ | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |
+| EFF Atlas of Surveillance | https://atlasofsurveillance.org/ | KEEP | public LE-surveillance map locator (not a targeting how-to) |
 | Clearview AI US taxpayer-funded entities | https://datawrapper.dwcdn.net/VOOIE/16/ | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |
-| Oregon DPSST Professional Standards Cases Database | https://www.oregon.gov/dpsst/CJ/Pages/Cases.aspx | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |
+| Oregon DPSST Professional Standards Cases Database | https://www.oregon.gov/dpsst/CJ/Pages/Cases.aspx | KEEP | official Oregon DPSST public-records locator |
 | PA Forfeiture 2010-2016 Search | https://b2.caspio.com/dp/0a921000328dc970793c4364bb2a | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |
 | BlueLeaks | https://blueleaks.io/index.html | CONTEXT | leak dump (BlueLeaks) — know it exists; do not operationalize / no dump playbook |
 | Plain View Project | https://www.plainviewproject.org/data | CONTEXT | LE misconduct / transparency locator (journalistic public records) — CONTEXT, not targeting how-to |

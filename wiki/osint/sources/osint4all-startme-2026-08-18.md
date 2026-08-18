@@ -14,9 +14,9 @@ related:
   - entities/catalogs/osint4all-cyber-caution.md
   - entities/catalogs/osint4all-search-domain.md
   - entities/catalogs/osint4all-socmint.md
+  - entities/catalogs/osint4all-media.md
   - sources/eval-multi-wiki-revenue-plan-2026-08-18.md
   - sources/eval-multi-wiki-url-revenue-2026-08-18.md
-  - entities/catalogs/osint4all-socmint.md
 maturity: draft
 created: 2026-08-18
 updated: 2026-08-18
@@ -35,9 +35,9 @@ read_status: read
 - @entities/catalogs/osint4all-cyber-caution.md — cyber / high-caution section table
 - @entities/catalogs/osint4all-search-domain.md — search / dorking / domain section table
 - @entities/catalogs/osint4all-socmint.md — SOCMINT section table
+- @entities/catalogs/osint4all-media.md — reverse-image / EXIF / podcast section table
 - @sources/eval-multi-wiki-revenue-plan-2026-08-18.md — K241 GitHub eval
 - @sources/eval-multi-wiki-url-revenue-2026-08-18.md — K241 URL eval (nested SOCMINT/GEOINT)
-- @entities/catalogs/osint4all-socmint.md — SOCMINT section table
 
 ## Raw Concept
 

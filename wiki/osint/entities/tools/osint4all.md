@@ -14,12 +14,12 @@ related:
   - entities/catalogs/osint4all-cyber-caution.md
   - entities/catalogs/osint4all-search-domain.md
   - entities/catalogs/osint4all-socmint.md
+  - entities/catalogs/osint4all-media.md
   - sources/eval-multi-wiki-revenue-plan-2026-08-18.md
   - sources/eval-multi-wiki-url-revenue-2026-08-18.md
   - entities/tools/sherlock.md
   - entities/tools/mitaka.md
   - entities/tools/cyberchef.md
-  - entities/catalogs/osint4all-socmint.md
 maturity: draft
 created: 2026-08-18
 updated: 2026-08-18
@@ -39,12 +39,12 @@ wire_target: concepts/osint4all-catalog.md
 - @entities/catalogs/osint4all-cyber-caution.md — malware locators / dump shops listed-only
 - @entities/catalogs/osint4all-search-domain.md — search engines / dorking / domain locators
 - @entities/catalogs/osint4all-socmint.md — social / username locators
+- @entities/catalogs/osint4all-media.md — reverse-image / EXIF / podcast locators
 - @sources/eval-multi-wiki-revenue-plan-2026-08-18.md — K241 GitHub eval Context→hub
 - @sources/eval-multi-wiki-url-revenue-2026-08-18.md — K241 URL eval nested hubs
 - @entities/tools/sherlock.md — username KEEP
 - @entities/tools/mitaka.md — browser OSINT Extract
 - @entities/tools/cyberchef.md — K149 Context bookmark
-- @entities/catalogs/osint4all-socmint.md — SOCMINT section table
 
 ## Raw Concept
 

@@ -34,7 +34,7 @@ OSINT4ALL group **03-search-domain** — unified search, search engines, Google 
 
 ## Narrative
 
-Search engines, Google CSEs, Shodan / Censys / FOFA / ZoomEye asset locators, crt.sh, SecurityTrails, dorking locators (GHDB + tooling), public datasets, grep.app and source-code search are **KEEP** — the working core of this catalog. **CONTEXT:** sploitus / vulmon / Rapid7 DB are vuln **locators**, never exploit how-to; the `recon…onion.pet` mirror is listed so the board contents are visible — **agents do not visit it**; libgen / megazsearch / btdig are shadow-library / piracy-adjacent (no copyrighted-corpus ingest); Internet Census 2012 has unauthorized-scan (Carna botnet) provenance — reference only. **DEAD-OUTDATED:** MIT PGP keyserver (post-2019 compromise), Alexa (retired 2022), PunkSPIDER (defunct). **NESTED-HUB:** 8 third-party start.me boards under RESOURCES — follow-on hubs, not mass-scrapes. GrayHatWarfare bucket + URL-shortener searches and all scanning / Nmap / secret-scraper rows are KEEP **with an authorized-target-only caveat**; no dump-search or exploit playbooks are written from this page.
+Search engines, Google CSEs, Shodan / Censys / FOFA / ZoomEye asset locators, crt.sh, SecurityTrails, dorking **tooling**, public datasets, grep.app and source-code search are **KEEP** — the working core of this catalog. **CONTEXT:** Google Hacking Database is an exploit-locator index (URL listed, not operational KEEP); sploitus / vulmon / Rapid7 DB are vuln **locators**, never exploit how-to; the `recon…onion.pet` mirror is listed so the board contents are visible — **agents do not visit it**; libgen / megazsearch / btdig are shadow-library / piracy-adjacent (no copyrighted-corpus ingest); Internet Census 2012 has unauthorized-scan (Carna botnet) provenance — reference only. **CAUTION:** FilePhish (phishing-site builder) and Paste Search (`psbdmp.ws`) — listed, not used as dump/phish playbooks. **DEAD-OUTDATED:** MIT PGP keyserver (post-2019 compromise), Alexa (retired 2022), PunkSPIDER (defunct). **NESTED-HUB:** 8 third-party start.me boards under RESOURCES — follow-on hubs, not mass-scrapes. GrayHatWarfare bucket + URL-shortener searches and all scanning / Nmap / secret-scraper rows are KEEP **with an authorized-target-only caveat**; no dump-search or exploit playbooks are written from this page.
 
 ## Unified Search
 
@@ -216,7 +216,7 @@ Search engines, Google CSEs, Shodan / Censys / FOFA / ZoomEye asset locators, cr
 | Name | URL | Wiki | Disposition | Why |
 |------|-----|------|-------------|-----|
 | Google Dork Cheatsheet | https://github.com/robyfirnandoyusuf/Google-Dork-Cheatsheet | — | KEEP | Google dork cheat sheet |
-| Google Hacking Database | https://www.exploit-db.com/google-hacking-database | cybersecurity-wiki | KEEP | GHDB dork-query locator — dork locator, not payload |
+| Google Hacking Database | https://www.exploit-db.com/google-hacking-database | cybersecurity-wiki | CONTEXT | GHDB exploit-locator index — URL listed, not operational KEEP; no payloads |
 | theHarvester | https://pypi.org/project/theHarvester/ | cybersecurity-wiki | KEEP | Email/subdomain gatherer — authorized-target only |
 | metagoofil | https://github.com/opsdisk/metagoofil | cybersecurity-wiki | KEEP | Metadata extraction from public docs — authorized-target only |
 | webdork | https://github.com/HACKE-RC/webdork | cybersecurity-wiki | KEEP | Dork automation — authorized-target only |
@@ -227,7 +227,7 @@ Search engines, Google CSEs, Shodan / Censys / FOFA / ZoomEye asset locators, cr
 
 | Name | URL | Wiki | Disposition | Why |
 |------|-----|------|-------------|-----|
-| FilePhish | https://cartographia.github.io/FilePhish/ | — | KEEP | File-extension phishing-site builder (defensive / auth testing) |
+| FilePhish | https://cartographia.github.io/FilePhish/ | — | CAUTION | Phishing-site builder — listed-only; not a phish playbook |
 | Open Directory Finder | https://odfinder.github.io/ | — | KEEP | Open-directory finder |
 | Filetype search tool | https://www.aware-online.com/en/osint-tools/filetype-search-tool/ | — | KEEP | Filetype search tool |
 | Opendirsearch.abifog.com | https://opendirsearch.abifog.com/ | — | KEEP | Open-directory search |
@@ -262,7 +262,7 @@ Search engines, Google CSEs, Shodan / Censys / FOFA / ZoomEye asset locators, cr
 | Google to search profiles on GitHub | https://recruitin.net/github.php | — | KEEP | Google → GitHub profile search |
 | Grep.app | https://grep.app/ | — | KEEP | Code search — handoff-confirmed KEEP |
 | NerdyData | https://www.nerdydata.com/ | — | KEEP | HTML-source search |
-| Paste Search | https://psbdmp.ws/ | — | KEEP | Pastebin dump locator — may surface accidental leaks; authorized-target only |
+| Paste Search | https://psbdmp.ws/ | — | CAUTION | Paste-dump locator — listed-only; do not operationalize as dump search |
 | GitHub Code Search | https://github.com/search | — | KEEP | GitHub code search |
 | Bitbucket Repo Search | https://bitbucket.org/repo/all/ | — | KEEP | Bitbucket repo search |
 | Shhgit | https://github.com/eth0izzle/shhgit | cybersecurity-wiki | KEEP | GitHub secret scanner — authorized-target only |

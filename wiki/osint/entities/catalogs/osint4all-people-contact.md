@@ -35,9 +35,9 @@ OSINT4ALL group **02-people-contact** — people search, username, email, phone,
 
 ## Narrative
 
-Public people locators, username checkers (WhatsMyName, sherlock, maigret), email enrichment (Epieos, holehe, Hunter), and phone/cell-tower tools (PhoneInfoga, OpenCelliD) are **KEEP** for authorized OSINT. FamilyTreeNow is **KEEP (atto/osint)** — public US relatives/records locator, never private vitals. State “resident database” clones are KEEP as people-search locators, not a scrape playbook. Keybase.pub-hosted Pipl/CANRES mirrors are **DEAD-OUTDATED** (keybase.pub hosting ended 2023). Classic dead people-search clones (iTools meta-search, Yasni) are **DEAD-OUTDATED**. Discord/Skype IP resolvers on leaked.site and credential-style PSN/Xbox resolvers are **CAUTION** rows — listed so the board contents are visible; **do not visit leaked.site**; no IP-dox or dump-search playbook. Shadowcrypt Cloudflare origin lookup is **CONTEXT** (technique locator, not a leak forum).
+Public people locators, username checkers (WhatsMyName, sherlock, maigret), email enrichment (Epieos, holehe, Hunter), and phone/cell-tower tools (PhoneInfoga, OpenCelliD) are **KEEP** for authorized OSINT. FamilyTreeNow is **KEEP (atto/osint)** — public US relatives/records locator, never private vitals. State “resident database” clones are KEEP as people-search locators, not a scrape playbook. Keybase.pub-hosted Pipl/CANRES mirrors are **DEAD-OUTDATED** (keybase.pub hosting ended 2023). Classic dead people-search clones (iTools meta-search, Yasni) are **DEAD-OUTDATED**. Discord/Skype IP resolvers on leaked.site and credential-style PSN/Xbox resolvers are **CAUTION** rows — listed so the board contents are visible; **do not visit leaked.site**; no IP-dox or dump-search playbook. Shadowcrypt Cloudflare origin lookup is **CONTEXT** (technique locator, not a leak forum). `h8mail` and WhatBreach are **CONTEXT** breach-correlation locators — listed-only; not a dump playbook (Sol audit 2026-08-18).
 
-**Disposition totals:** KEEP 100 · DEAD-OUTDATED 4 · CONTEXT 1 · CAUTION 5 · NESTED-HUB 0 · board rows 110.
+**Disposition totals:** KEEP 98 · DEAD-OUTDATED 4 · CONTEXT 3 · CAUTION 5 · NESTED-HUB 0 · board rows 110.
 
 ## PEOPLE
 
@@ -118,8 +118,8 @@ Public people locators, username checkers (WhatsMyName, sherlock, maigret), emai
 | Emailrep.io | https://emailrep.io/ | — | KEEP | Email reputation API locator |
 | Email Finder | https://osint.sh/email/ | — | KEEP | osint.sh email finder |
 | EmailHarvester | https://pypi.org/project/EmailHarvester/ | — | KEEP | Public-page email harvest CLI; authorized-target only |
-| h8mail | https://pypi.org/project/h8mail/ | — | KEEP | Email/breach correlation CLI; authorized-target only — not a dump playbook |
-| WhatBreach | https://github.com/Ekultek/WhatBreach | — | KEEP | Breach-correlation CLI; authorized-target only — not a dump playbook |
+| h8mail | https://pypi.org/project/h8mail/ | — | CONTEXT | Breach-correlation CLI — listed-only; not a dump playbook |
+| WhatBreach | https://github.com/Ekultek/WhatBreach | — | CONTEXT | Breach-search CLI — listed-only; not a dump playbook |
 | buster | https://github.com/sham00n/buster | — | KEEP | Email OSINT / account-recovery locator |
 | Anymailfinder.com | https://anymailfinder.com/ | — | KEEP | Email finder locator |
 | ProtOSINT | https://github.com/pixelbubble/ProtOSINT | — | KEEP | ProtonMail OSINT CLI |

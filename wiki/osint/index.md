@@ -39,6 +39,7 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 | [sovereign-agent-mesh-biscuit](concepts/sovereign-agent-mesh-biscuit.md) | Least-privilege Biscuit dispatch (K241) | draft |
 | [osint4all-catalog](concepts/osint4all-catalog.md) | KEEP/DEAD/CONTEXT filing; no stub farm (K241) | draft |
 | [chatgpt-fan-out-site-operator](concepts/chatgpt-fan-out-site-operator.md) | retrieved vs cited; site: as quality prior (K241) | draft |
+| [osint4all-media](entities/catalogs/osint4all-media.md) | IMAGE/VIDEO/AUDIO/MEDIA 40 locators (K241 Sol audit) | draft |
 
 ### K240 ingest (2026-08-17)
 | Page | Summary | Maturity |

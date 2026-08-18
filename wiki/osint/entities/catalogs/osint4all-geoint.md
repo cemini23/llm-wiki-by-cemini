@@ -24,7 +24,7 @@ OSINT4ALL **MAPS / GEO / FLIGHT / MARITIME / VIN / IoT / RADIO / WEATHER / REAL 
 
 ## Narrative
 
-Keep public maps, ADS-B, AIS (MarineTraffic et al.), OSM/Mapillary, FlightAware, VIN/plate lookups, weather, and real-estate **locators**. Mark COVID map relics and dead IoT directories **DEAD-OUTDATED**. Unauthorized webcam directories (Insecam, Opentopia, Camhacker, Nest Cam Directory, …) and default-router-login pages stay **CONTEXT/CAUTION** or **CAUTION** — rows exist so the board contents are visible; agents do not open those URLs. Official traffic/gov cams and licensed tourist networks stay KEEP.
+Keep public maps, ADS-B, AIS (MarineTraffic et al.), OSM/Mapillary, FlightAware, VIN/plate lookups, weather, and real-estate **locators**. Mark COVID map relics, dead IoT directories, **EMPORIS** (shut 2023), and **Mozilla Location Service** (retired 2024) **DEAD-OUTDATED**. DigitalGlobe Discover stays KEEP as a Maxar-legacy satellite locator (re-probe if the URL 404s). Unauthorized webcam directories (Insecam, Opentopia, Camhacker, Nest Cam Directory, …) and default-router-login pages stay **CONTEXT/CAUTION** or **CAUTION** — rows exist so the board contents are visible; agents do not open those URLs. Official traffic/gov cams and licensed tourist networks stay KEEP.
 
 **NESTED-HUB:** [GEOINT start.me](https://start.me/p/W1kDAj/geoint) (`W1kDAj`) — follow-on board; do not treat this page as a complete scrape of that hub.
 
@@ -40,7 +40,7 @@ Keep public maps, ADS-B, AIS (MarineTraffic et al.), OSM/Mapillary, FlightAware,
 | Geonarra.com | https://www.geonarra.com/ | — | KEEP | Geo-narration / place storytelling maps |
 | Waze | https://www.waze.com/live-map | — | KEEP | Live traffic / incident overlay |
 | 百度地图 | https://map.baidu.com/ | — | KEEP | China basemap (Baidu) |
-| DigitalGlobe | https://discover.digitalglobe.com/ | — | KEEP | Commercial satellite imagery discovery |
+| DigitalGlobe | https://discover.digitalglobe.com/ | — | KEEP | Maxar-legacy satellite discovery locator — re-probe if URL 404s |
 | MapQuest | https://www.mapquest.com/ | — | KEEP | Basemap / directions locator |
 | OpenStreetMap | https://www.openstreetmap.org/ | — | KEEP | Open basemap + editable POI layer |
 | Maps.descarteslabs.com | https://maps.descarteslabs.com/ | — | KEEP | Satellite analytics map viewer |
@@ -235,7 +235,7 @@ Keep public maps, ADS-B, AIS (MarineTraffic et al.), OSM/Mapillary, FlightAware,
 | WiGLE: Wireless Network Mapping | https://wigle.net/ | — | KEEP | Wireless network geolocation DB |
 | Ham Radio QRZ Callsign Database Search | https://www.qrz.com/lookup | — | KEEP | Ham callsign database |
 | Radio-Locator | https://radio-locator.com/ | — | KEEP | AM/FM station locator |
-| Mozilla Location Service | https://location.services.mozilla.com/map#0.7/0/0 | — | KEEP | Mozilla Location Service map |
+| Mozilla Location Service | https://location.services.mozilla.com/map#0.7/0/0 | — | DEAD-OUTDATED | MLS retired 2024 — ignore |
 | RadioID Database | https://database.radioid.net/database/search#! | — | KEEP | DMR RadioID database |
 | Radio-Sherlock | http://dxmaps.com/search.html | — | KEEP | HF/DX radio map search |
 | Rfsearch.com | http://rfsearch.com/ | — | KEEP | RF search / spectrum helper |
@@ -259,7 +259,7 @@ Keep public maps, ADS-B, AIS (MarineTraffic et al.), OSM/Mapillary, FlightAware,
 |------|-----|------|-------------|-----|
 | PrimeLocation | https://www.primelocation.com/ | — | KEEP | UK property listing locator |
 | Realtor | https://www.realtor.com/ | — | KEEP | US property listing locator |
-| EMPORIS | https://www.emporis.com/ | — | KEEP | Building / skyscraper database (legacy) |
+| EMPORIS | https://www.emporis.com/ | — | DEAD-OUTDATED | Building database shut 2023 — ignore |
 | rehold | https://rehold.com/ | — | KEEP | Property / parcel locator |
 | Zillow | https://www.zillow.com/ | — | KEEP | US real-estate locator (Zestimate) |
 | Zillow Canada | https://www.zillow.com/z/canada/canada-homes/ | — | KEEP | Canada Zillow homes locator |

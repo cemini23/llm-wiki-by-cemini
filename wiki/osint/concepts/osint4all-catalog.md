@@ -15,6 +15,7 @@ related:
   - entities/catalogs/osint4all-cyber-caution.md
   - entities/catalogs/osint4all-search-domain.md
   - entities/catalogs/osint4all-socmint.md
+  - entities/catalogs/osint4all-media.md
   - sources/eval-multi-wiki-url-revenue-2026-08-18.md
   - sources/arxiv-2608.15987-threshold-cascades-2026-08-18.md
   - sources/arxiv-2608.16171-rare-event-sampling-2026-08-18.md
@@ -37,6 +38,7 @@ updated: 2026-08-18
 - @entities/catalogs/osint4all-cyber-caution.md
 - @entities/catalogs/osint4all-search-domain.md
 - @entities/catalogs/osint4all-socmint.md
+- @entities/catalogs/osint4all-media.md
 - @sources/eval-multi-wiki-url-revenue-2026-08-18.md — URL eval locators folded here
 - @sources/arxiv-2608.15987-threshold-cascades-2026-08-18.md
 - @sources/arxiv-2608.16171-rare-event-sampling-2026-08-18.md
@@ -56,4 +58,4 @@ Shadow libraries (Sci-Hub, Libgen, Z-Library) stay CONTEXT: do not ingest copyri
 
 ## Snippets
 
-Section catalogs: `wiki/entities/catalogs/osint4all-*.md` (K241).
+Section catalogs: `wiki/entities/catalogs/osint4all-*.md` (K241; nine pages including media).

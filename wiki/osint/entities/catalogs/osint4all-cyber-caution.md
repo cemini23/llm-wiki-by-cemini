@@ -32,7 +32,7 @@ OSINT4ALL group **07-cyber-caution** — threat-intel maps, malware sandboxes, h
 
 ## Narrative
 
-Public malware sandboxes and IOC corpora (VirusTotal, Hybrid-Analysis, ANY.RUN, Malpedia, AlienVault OTX) are **KEEP** with `wiki=cyber` — Cybersec wiki owns analysis runtime; this page is a locator only. Kaspersky and FireEye/Trellix threat maps, Have I Been Pwned, Intelligence X (public), OFAC sanctions search, START GTD, SPLC extremist-file profiles, and official sex-offender **registry locators** (NSOPW and peer government registers) are **KEEP** as public-record / public-intel locators. Registry KEEP is locator-only: no targeting guidance.
+Public malware sandboxes and IOC corpora (VirusTotal, Hybrid-Analysis, ANY.RUN, Malpedia, AlienVault OTX) are **KEEP** with `wiki=cyber` — Cybersec wiki owns analysis runtime; this page is a locator only. Kaspersky and FireEye/Trellix threat maps, Have I Been Pwned, Intelligence X (public), OFAC sanctions search, START GTD, SPLC extremist-file profiles, and official sex-offender **registry locators** (NSOPW and peer government registers) are **KEEP** as public-record / public-intel locators. Public TI search portals (Pulsedive, Cisco Talos, ThreatMiner) are **KEEP** locators — “not in a named KEEP set” is not a filing criterion. Registry KEEP is locator-only: no targeting guidance.
 
 Vendor threat-map copies, hash-recovery sites, Tor search locators, informant/snitch lists, chan/Parler research archives, and unofficial no-fly or “suspected terrorist” databases stay **CONTEXT** — know the board listed them; do not operationalize. Leak-dump shops (Scylla, Snusbase, leaked.site, DeHashed), DDoSecrets/Bloopbase dump indexes used as crimeware, ransomware onion.pet mirrors, darknet market/forum lists, theZoo / vx-underground sample repos, and exploitdb-bin-sploits are **CAUTION**: URL listed, **do not visit**, no payloads. Cymon and retired threat-map URLs are **DEAD-OUTDATED**.
 
@@ -46,11 +46,11 @@ Vendor threat-map copies, hash-recovery sites, Tor search locators, informant/sn
 | Digital Attack Map | https://www.digitalattackmap.com/ | — | CONTEXT | Arbor/Google DDoS map; not in named KEEP set |
 | Cyber Threat Map | https://www.fireeye.com/cyber-map/threat-map.html | cyber | KEEP | FireEye/Trellix public threat map (named KEEP class) |
 | Bitdefender Threat Map | https://threatmap.bitdefender.com/ | — | CONTEXT | Vendor threat map; not in named KEEP set |
-| Cyber Threat Intelligence | https://pulsedive.com/ | — | CONTEXT | Public TI search; do not treat as dump access |
-| Cisco Talos Intelligence Group | https://talosintelligence.com/ | — | CONTEXT | Vendor intel portal; not in named KEEP set |
-| Fortinet Threat Map | https://threatmap.fortiguard.com/ | — | CONTEXT | Vendor threat map; not in named KEEP set |
+| Cyber Threat Intelligence | https://pulsedive.com/ | — | KEEP | Public TI search locator — not dump access |
+| Cisco Talos Intelligence Group | https://talosintelligence.com/ | — | KEEP | Public vendor intel portal locator |
+| Fortinet Threat Map | https://threatmap.fortiguard.com/ | — | CONTEXT | Vendor threat map; not a public IOC search |
 | FortiGuard | http://www.fortiguard.com/ | — | CONTEXT | Vendor advisory portal |
-| ThreatMiner | https://www.threatminer.org/ | — | CONTEXT | OSINT TI aggregator |
+| ThreatMiner | https://www.threatminer.org/ | — | KEEP | Public OSINT TI aggregator locator |
 | cymon | https://cymon.io/ | — | DEAD-OUTDATED | Cymon discontinued (eSentire era); ignore |
 | intelowlproject/IntelOwl | https://github.com/intelowlproject/IntelOwl | — | CONTEXT | Self-host TI aggregator (GitHub); not a public lookup |
 | Visualizing Global Internet Performance | https://www.akamai.com/us/en/solutions/intelligent-platform/visualizing-akamai/real-time-web-monitor.jsp | — | DEAD-OUTDATED | Legacy Akamai Real-Time Web Monitor path; retired |
