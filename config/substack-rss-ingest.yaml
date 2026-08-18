@@ -80,6 +80,16 @@ feeds:
     tags: [crypto, perps, quant]
     enabled: true
 
+  # Glitch (@glitchspx) — Talon weekly sector watchlist. OSINT-primary (xsp / options).
+  # Weekly drops; 14d window so a missed poll still catches the issue.
+  - id: glitchspx
+    name: Glitch SPX — Talon Weekly
+    feed_url: https://glitchspx.substack.com/feed
+    filename_prefix: substack-rss-glitchspx
+    max_age_days: 14
+    tags: [options, xsp, trading, substack]
+    enabled: true
+
   # --- gambling-wiki (prediction markets + sports betting retail) ---
   - id: event-horizon
     name: Event Horizon

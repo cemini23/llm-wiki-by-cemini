@@ -49,6 +49,7 @@ active_topics:
   - "PM / Kalshi retail bot — CLOB botting, cross-venue, maker/taker postmortems (exploratory)"
   - "Local abliterated AI lab — low-refusal local LLM + owned whitehat lab / pentest harness (→ @cybersec-wiki briefs)"
   - "Agent harness for game dev + poker sessions — Cursor/Stagehand, not prod conductor KPIs"
+  - "/route + agent-toolkit — lane failover, SIP/verify, Grok/claude-ds hang recovery, harness evolution from _route_runs (→ CCC briefs + @ccc-wiki/entities/skills/route.md backlog)"
 
 brief_routing_note: |
   Priority #1: atto (../atto/briefs/). Priority #2: guruwatcher (../GuruWatcher/briefs/).
@@ -62,6 +63,7 @@ brief_routing_note: |
   xsp-killer → briefs/xsp-* → cemini-prod · family-tree → ~/Desktop/family/research/ (private; wiki methodology only)
   local-abliterated-lab → ../Cybersecurity wiki/briefs/
   wc-ticket-monitor → ../projects/wc-ticket-monitor/briefs/ (wiki-only unless ticket-resale hook).
+  /route · agent-toolkit · SIP/verify · executor failover / hang recovery · harness-evolution-from-trajectories → CCC briefs (`../Cemini claude code CCC/briefs/`) + bump route skill backlog; never TipDrop kit.
 
 # arXiv / research-paper lane — deduped against wiki; PDFs → inbox when NEW
 # Use `arxiv_query` (Atom syntax) for reliable free discovery; `query` stays human-readable.
@@ -89,6 +91,12 @@ paper_queries:
   - cluster: agent-harness-paper
     query: "research paper LLM agent harness playtesting verification game development OR poker"
     arxiv_query: '(all:agent AND (all:harness OR all:playtest OR all:verification)) OR (all:LLM AND all:agent AND (all:game OR all:poker))'
+    category: research paper
+
+  # Standing steal for federation /route + agent-toolkit (K232 SHE / failover ops)
+  - cluster: cursor-route-harness
+    query: "research paper LLM agent task router harness failover SIP verification trajectory safety tool policy"
+    arxiv_query: '(all:agent AND (all:harness OR all:router OR all:failover OR all:"tool policy" OR all:"safety memory")) AND (all:LLM OR all:"language model" OR all:trajectory)'
     category: research paper
 
   - cluster: local-abliterated-llm-paper

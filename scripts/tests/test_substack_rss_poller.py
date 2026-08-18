@@ -55,7 +55,8 @@ def test_parse_feed_configs_count():
     assert "macrocharts" in ids
     assert "klement" in ids
     assert "moontower" in ids
-    assert len(feeds) >= 18
+    assert "glitchspx" in ids
+    assert len(feeds) >= 19
 
 
 def test_parse_feed_sample():
