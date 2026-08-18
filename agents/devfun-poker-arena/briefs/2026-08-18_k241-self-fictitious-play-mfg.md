@@ -33,6 +33,10 @@ Verdict: **real MAFP-family steal.** Self-fictitious-play updates the belief fro
 - **Phase 1:** note in Arena researcher brief. No code required this batch.
 - Success: SFP cited next to MAFP; no live wire.
 
+## Shelved
+
+Folded into `references/mafp-fbsde-theory-shelf.md` (K170 + K157 + K167/K241 SFP). Dual-ID note: this is **Poker K241** (SFP / 2608.15258) — **not** CCC K241 (no raw LLM tabular prediction). Researcher-track literacy only; no live wire.
+
 ## Sources
 
 - @sources/arxiv-2608.15258-self-fictitious-play-2026-08-18.md

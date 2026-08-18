@@ -65,6 +65,8 @@ uv run python examples/submit_sandbox_pvp.py --discard-active --competition-id "
 | **Submit cadence** | Bundle submit + poll; daily limit via `/submissions/settings` |
 | **Engine + LLM** | **Fixed** per PR [CONFIRMED per PR] — policy `decide()` layer only |
 
+**SFP literacy (K167/K241, 2026-08-18):** self-fictitious-play MFG (arXiv 2608.15258) is researcher-track literacy for black-box HU — when you cannot observe the population, treat your **own occupation measure** as the belief (`d m_t = λ(δ_{X_t} − m_t) dt`), keeping the belief-update rate ε small (error scales like **√ε**). Not a live tournament wire; do not import `O(√λ)` / `√ε` into discrete MAFP budgets. Shelf: `references/mafp-fbsde-theory-shelf.md`.
+
 Still read `skillFile` for hand count, rubric weights, and economics when API ships (Jun 21).
 
 ## Challenge funnel (one-pager)
