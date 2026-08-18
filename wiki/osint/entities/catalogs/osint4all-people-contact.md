@@ -35,9 +35,9 @@ OSINT4ALL group **02-people-contact** — people search, username, email, phone,
 
 ## Narrative
 
-Public people locators, username checkers (WhatsMyName, sherlock, maigret), email enrichment (Epieos, holehe, Hunter), and phone/cell-tower tools (PhoneInfoga, OpenCelliD) are **KEEP** for authorized OSINT. FamilyTreeNow is **KEEP (atto/osint)** — public US relatives/records locator, never private vitals. State “resident database” clones are KEEP as people-search locators, not a scrape playbook. Keybase.pub-hosted Pipl/CANRES mirrors are **DEAD-OUTDATED** (keybase.pub hosting ended 2023). Classic dead people-search clones (iTools meta-search, Yasni) are **DEAD-OUTDATED**. Discord/Skype IP resolvers on leaked.site and credential-style PSN/Xbox resolvers are **CAUTION** rows — listed so the board contents are visible; **do not visit leaked.site**; no IP-dox or dump-search playbook. Shadowcrypt Cloudflare origin lookup is **CONTEXT** (technique locator, not a leak forum). `h8mail` and WhatBreach are **CONTEXT** breach-correlation locators — listed-only; not a dump playbook (Sol audit 2026-08-18).
+Public people locators, username checkers (WhatsMyName, sherlock, maigret), email enrichment (Epieos, holehe, Hunter), and phone/cell-tower tools (PhoneInfoga, OpenCelliD) are **KEEP** for authorized OSINT. FamilyTreeNow is **KEEP (atto/osint)** — public US relatives/records locator, never private vitals. State “resident database” clones are KEEP as people-search locators, not a scrape playbook. Keybase.pub-hosted Pipl/CANRES mirrors are **DEAD-OUTDATED** (keybase.pub hosting ended 2023). Classic dead people-search clones (iTools meta-search, Yasni) are **DEAD-OUTDATED**. Discord/Skype IP resolvers on leaked.site and credential-style PSN/Xbox resolvers are **CAUTION** rows — listed so the board contents are visible; **do not visit leaked.site**; no IP-dox or dump-search playbook. Shadowcrypt Cloudflare origin lookup is **CONTEXT** (technique locator, not a leak forum). `h8mail`, WhatBreach, and Hotsheet Email Breach Analysis are **CONTEXT** breach-correlation locators — listed-only; not a dump playbook (Sol + Kimi audit 2026-08-18).
 
-**Disposition totals:** KEEP 98 · DEAD-OUTDATED 4 · CONTEXT 3 · CAUTION 5 · NESTED-HUB 0 · board rows 110.
+**Disposition totals:** KEEP 97 · DEAD-OUTDATED 4 · CONTEXT 4 · CAUTION 5 · NESTED-HUB 0 · board rows 110.
 
 ## PEOPLE
 
@@ -114,7 +114,7 @@ Public people locators, username checkers (WhatsMyName, sherlock, maigret), emai
 | Proofy | https://proofy.io/ | — | KEEP | Email verification locator |
 | Email Permutator | http://metricsparrow.com/toolkit/email-permutator/ | — | KEEP | Name+domain permutation generator |
 | Phonebook.cz | https://phonebook.cz/ | — | KEEP | Intelligence X phonebook (email/domain) |
-| Email Breach Analysis | https://www.hotsheet.com/inoitsu/ | — | KEEP | HIBP-style checker; authorized-target only — not a dump playbook |
+| Email Breach Analysis | https://www.hotsheet.com/inoitsu/ | — | CONTEXT | Breach-checker locator — listed-only; not a dump playbook |
 | Emailrep.io | https://emailrep.io/ | — | KEEP | Email reputation API locator |
 | Email Finder | https://osint.sh/email/ | — | KEEP | osint.sh email finder |
 | EmailHarvester | https://pypi.org/project/EmailHarvester/ | — | KEEP | Public-page email harvest CLI; authorized-target only |

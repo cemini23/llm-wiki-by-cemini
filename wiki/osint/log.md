@@ -14,6 +14,7 @@
 - **Phase-1:** OSINT K241 section in `osint-phase1-adopt-wires.mdc`. Dual-ID note in `cemini-phase1-policy-wires.mdc`. New Extract `wire_status: policy_wired`; diagram-design `deferred`.
 - **Archive:** 19 raws → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
 - **Sol audit merge (same day):** FilePhish + `psbdmp.ws` → CAUTION; GHDB + h8mail + WhatBreach → CONTEXT; EMPORIS + Mozilla Location Service → DEAD-OUTDATED; OpenOversight / EFF Atlas / Oregon DPSST + Pulsedive / Talos / ThreatMiner → KEEP. Added missing 40-row `@entities/catalogs/osint4all-media.md`. Deduped hub SOCMINT related.
+- **Kimi audit merge (same day):** Ontario GiveSendGo donor My Map KEEP → CONTEXT (leak-derived PII). Hotsheet Email Breach Analysis → CONTEXT. Hub counts now 78/1454 with media. Compile `.local/reports/osint4all-audit-compile-2026-08-18.md`.
 
 ## [2026-08-17] query | SPCX vs Anthropic friend thesis → SEO X Article handoff
 

@@ -24,7 +24,7 @@ OSINT4ALL **MAPS / GEO / FLIGHT / MARITIME / VIN / IoT / RADIO / WEATHER / REAL 
 
 ## Narrative
 
-Keep public maps, ADS-B, AIS (MarineTraffic et al.), OSM/Mapillary, FlightAware, VIN/plate lookups, weather, and real-estate **locators**. Mark COVID map relics, dead IoT directories, **EMPORIS** (shut 2023), and **Mozilla Location Service** (retired 2024) **DEAD-OUTDATED**. DigitalGlobe Discover stays KEEP as a Maxar-legacy satellite locator (re-probe if the URL 404s). Unauthorized webcam directories (Insecam, Opentopia, Camhacker, Nest Cam Directory, …) and default-router-login pages stay **CONTEXT/CAUTION** or **CAUTION** — rows exist so the board contents are visible; agents do not open those URLs. Official traffic/gov cams and licensed tourist networks stay KEEP.
+Keep public maps, ADS-B, AIS (MarineTraffic et al.), OSM/Mapillary, FlightAware, VIN/plate lookups, weather, and real-estate **locators**. Mark COVID map relics, dead IoT directories, **EMPORIS** (shut 2023), and **Mozilla Location Service** (retired 2024) **DEAD-OUTDATED**. DigitalGlobe Discover stays KEEP as a Maxar-legacy satellite locator (re-probe if the URL 404s). The Ontario GiveSendGo donor My Map is **CONTEXT** (leak-derived PII; sibling Bloopbase slice is CAUTION on cyber-caution). Unauthorized webcam directories (Insecam, Opentopia, Camhacker, Nest Cam Directory, …) and default-router-login pages stay **CONTEXT/CAUTION** or **CAUTION** — rows exist so the board contents are visible; agents do not open those URLs. Official traffic/gov cams and licensed tourist networks stay KEEP.
 
 **NESTED-HUB:** [GEOINT start.me](https://start.me/p/W1kDAj/geoint) (`W1kDAj`) — follow-on board; do not treat this page as a complete scrape of that hub.
 
@@ -69,7 +69,7 @@ Keep public maps, ADS-B, AIS (MarineTraffic et al.), OSM/Mapillary, FlightAware,
 | Earth | https://earth.nullschool.net/#current | — | KEEP | Global wind/ocean/particle viz |
 | US Labor Strike Map | https://www.google.com/maps/d/viewer?mid=1hE1nDR-Ff_sVgOS67IteJSxGZlvqIP3k | — | KEEP | US labor-strike My Map |
 | Active Agency Map | https://www.google.com/maps/d/viewer?mid=1eYVDPh5itXq5acDT9b0BVeQwmESBa4cB | — | KEEP | Active-agency My Map |
-| Ontario GiveSendGo Donors | https://www.google.com/maps/d/viewer?mid=1heAgrb9bDuk287yqseyvhZ7-U_kz64hM | — | KEEP | Ontario GiveSendGo donor map (public) |
+| Ontario GiveSendGo Donors | https://www.google.com/maps/d/viewer?mid=1heAgrb9bDuk287yqseyvhZ7-U_kz64hM | — | CONTEXT | Leak-derived 2022 convoy donor map (DDoSecrets/GiveSendGo) — listed-only; do not operationalize |
 | Live-action-map.com | https://www.live-action-map.com/ | — | KEEP | Live-action / event map aggregator |
 | awesome-maps-ukraine | https://github.com/Symbian9/awesome-maps-ukraine | — | KEEP | Curated Ukraine maps list |
 | Допомога | https://dopomoha.pl | — | KEEP | UA refugee aid map (Poland) |

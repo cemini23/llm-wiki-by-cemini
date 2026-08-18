@@ -49,7 +49,7 @@ read_status: read
 | URL | https://start.me/p/L1rEYQ/osint4all |
 | Mirror | https://github.com/osint4all/osint4all.github.io (README sha `02877d90`) |
 | retrieved | 2026-08-18 |
-| Counts | 78 sections, 1454 mirrored links; live first page ≈245 bookmarks |
+| Counts | 78 sections, 1454 mirrored links; nine catalogs now cover all 1454 (media heading was the missing 40) |
 | Nested hubs | SOCMINT `https://start.me/p/Wp1kpe/socmint`; GEOINT `https://start.me/p/W1kDAj/geoint` |
 
 ## Narrative
