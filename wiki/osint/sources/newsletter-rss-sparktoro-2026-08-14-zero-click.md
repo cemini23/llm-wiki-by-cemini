@@ -8,11 +8,13 @@ related:
   - "@seo-wiki/concepts/agent-ready-website-local-bm.md"
   - "@seo-wiki/concepts/citation-verification-aeo.md"
   - sources/eval-url-revenue-opportunity-2026-08-14.md
+  - sources/newsletter-rss-sparktoro-2026-08-18-persona-tool.md
+  - sources/substack-rss-lily-ray-2026-08-17-chatgpt-fan-out.md
+  - concepts/chatgpt-fan-out-site-operator.md
 maturity: draft
 created: 2026-08-14
 updated: 2026-08-14
 read_status: read
-
 ---
 
 ## Relations

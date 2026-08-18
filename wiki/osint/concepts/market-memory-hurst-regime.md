@@ -9,6 +9,7 @@ related:
   - concepts/monte-carlo-permutation-test-mcpt.md
   - concepts/koroushak-discretionary-trading-curriculum.md
   - entities/people/phosphenq.md
+  - sources/arxiv-2608.16749-rough-volatility-across-assets-2026-08-18.md
 maturity: draft
 created: 2026-05-26
 updated: 2026-05-26

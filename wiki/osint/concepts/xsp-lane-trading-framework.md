@@ -127,6 +127,7 @@ related:
   - sources/arxiv-2608.13340-uniswap-fee-iv-2026-08-14.md
   - concepts/dex-fee-implied-volatility.md
   - sources/substack-rss-wublock-2026-08-14-weekly.md
+  - sources/arxiv-2608.16749-rough-volatility-across-assets-2026-08-18.md
 maturity: draft
 created: 2026-06-14
 updated: 2026-08-17

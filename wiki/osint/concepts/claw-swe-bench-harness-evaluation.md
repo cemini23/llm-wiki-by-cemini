@@ -11,6 +11,7 @@ related:
   - concepts/conductor-orchestrator.md
   - concepts/openclaw-security-taxonomy.md
   - concepts/llm-agent-systems.md
+  - sources/arxiv-2608.16798-clawgym-ii-2026-08-18.md
 maturity: draft
 created: 2026-06-16
 updated: 2026-06-16

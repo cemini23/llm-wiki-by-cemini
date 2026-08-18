@@ -28,6 +28,15 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-18 — K241)
+
+- **K241 ingest** — 18 unique inbox + thesis fold (same sha256 as K240 SPCX note). 2 evals + 8 arXiv + 8 newsletters + OSINT4ALL hub. Raws archived to egress-fi; inbox empty of this batch.
+- **K241 Phase-0** — `scripts/adopt_k241_phase0.sh`: sam Apache-2.0 Extract; llm-as-a-verifier MIT Extract (411MB); diagram-design MIT Extract + HITL (`wire_status: deferred`); bbot **AGPL-3.0** Extract-only; sherlock re-clone; mitaka MIT. **486MB total** (<500). **0 new Integrate GO.** CyberChef stays K149 Context.
+- **K241 papers / newsletters** — SFP MFG → poker Arena. ClawGym II + HarnessEval-W + strategic debt + cursor-route → CCC (`route.md` backlog; do not swap `/route`). Capital Flows 30y + three equity risks → GW HITL no auto-arm. EH cartel PM + Kalshi WA geofence 2026-08-19 → gambling **no pm scp**. Lily Ray fan-out + SparkToro persona → SEO. Rough vol + WuBlock miner-MW wiki-only (**no xsp scp**).
+- **K241 briefs** — OSINT `briefs/2026-08-18_k241-*` (Atto / GW / CCC / cyber / gambling / SEO). Poker SFP brief. Sibling copy may need parent. Dual-ID: OSINT K241 ≠ CCC K241.
+- **Phase-1** — wires appended. Extract tools `policy_wired`; diagram-design `deferred` (no silent `~/.cursor/skills`).
+- **Open:** Leon email still held (SPCX thesis). Wiki gap detect due (13d since 2026-08-05) — user-gated. CCC `entities/skills/route.md` backlog bump is in the CCC brief for parent apply.
+
 ## Current state (2026-08-17 — K240)
 
 - **K240 ingest** — 19-inbox: 2 evals + 6 arXiv + SPCX thesis + VIVO + 8 newsletters (Talon ×2 and Moontower #324+RSSB folded). Raws archived to egress-fi; inbox empty of this batch.

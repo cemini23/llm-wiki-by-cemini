@@ -8,6 +8,7 @@ related:
   - entities/tools/discountifu-polymarket-trading-bot.md
   - concepts/polymarket-bot-architecture.md
   - concepts/clob-rate-limit-mitigation-strategies.md
+  - sources/arxiv-2608.16112-strategic-technical-debt-2026-08-18.md
 maturity: draft
 created: 2026-05-28
 updated: 2026-05-28

@@ -7,6 +7,7 @@ related:
   - sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md
   - sources/substack-rss-klement-2026-08-17-national-living-wage.md
   - concepts/prediction-market-regulation-2026.md
+  - sources/substack-rss-wublock-2026-08-18-miners-power.md
 maturity: draft
 created: 2026-08-13
 updated: 2026-08-17

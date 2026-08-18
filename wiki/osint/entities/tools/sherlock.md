@@ -10,9 +10,14 @@ related:
   - entities/tools/gosearch.md
   - concepts/cemini-license-posture.md
   - concepts/computational-genealogy-archival-automation.md
+  - entities/catalogs/osint4all-people-contact.md
+  - sources/eval-multi-wiki-url-revenue-2026-08-18.md
+  - entities/tools/mitaka.md
+  - entities/tools/bbot.md
+  - entities/tools/osint4all.md
 maturity: draft
 created: 2026-08-08
-updated: 2026-08-10
+updated: 2026-08-18
 wire_status: policy_wired
 wire_target: Atto .cursor/rules/atto-k227-phase1-wires.mdc
 wire_note: FIND deep-links Extract; human-gated; ToS/rate limits
@@ -26,6 +31,11 @@ wire_note: FIND deep-links Extract; human-gated; ToS/rate limits
 - @entities/tools/gosearch.md
 - @concepts/cemini-license-posture.md
 - @concepts/computational-genealogy-archival-automation.md
+- @entities/catalogs/osint4all-people-contact.md — OSINT4ALL username row (K241)
+- @sources/eval-multi-wiki-url-revenue-2026-08-18.md — K241 re-clone
+- @entities/tools/mitaka.md — K241 browser OSINT sibling
+- @entities/tools/bbot.md — AGPL Extract-only recon sibling
+- @entities/tools/osint4all.md — catalog hub
 
 ## Raw Concept
 

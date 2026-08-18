@@ -7,6 +7,7 @@ related:
   - sources/arxiv-2608.10894-formatheoria-2026-08-12.md
   - sources/arxiv-2608.13522-vero-2026-08-14.md
   - entities/tools/vero.md
+  - sources/arxiv-2608.16378-mathematics-reproduction-intelligence-2026-08-18.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-14

@@ -8,6 +8,7 @@ related:
   - sources/substack-rss-capital-flows-2026-08-13-the-dangerous-risk-building-in-stocks.md
   - entities/models/timesfm.md
   - concepts/inflation-risk-regime-2026.md
+  - sources/substack-rss-capital-flows-2026-08-18-next-stage-macro.md
 maturity: draft
 created: 2026-08-15
 updated: 2026-08-15

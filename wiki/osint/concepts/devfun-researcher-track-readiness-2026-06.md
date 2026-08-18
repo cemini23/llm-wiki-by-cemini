@@ -19,6 +19,7 @@ related:
   - sources/brief-k118-poker-agent-research-gaps-2026-06-17.md
   - entities/platforms/devfun-arena.md
   - entities/platforms/devfun-heads-up-pvp-s3.md
+  - sources/arxiv-2608.15258-self-fictitious-play-2026-08-18.md
 maturity: validated
 created: 2026-06-19
 updated: 2026-06-22

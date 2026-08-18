@@ -16,6 +16,8 @@ related:
   - entities/tools/kimi-agent-swarm.md
   - entities/models/opus-4-7.md
   - entities/tools/awesome-ai-agents-2026-zijian.md
+  - sources/substack-rss-outlier-weekly-2026-08-18-cursor-route.md
+  - entities/tools/cursor-route.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-05-29

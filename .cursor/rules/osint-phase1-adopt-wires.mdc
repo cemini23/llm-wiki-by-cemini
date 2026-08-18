@@ -263,6 +263,22 @@ Phase-0 budget: **467MB < 500MB** (12 clones into `.local/adopts/`). License ove
 - usertour / corsair = **NOASSERTION — no clone**. aiwg stays K239 Context. daily_stock stays K231 size-hold. unsloth skip (Transkribus sole HTR).
 - Glitch SPX Talon + Moontower RSSB → HITL watches only; never auto-rewrite `watches.json`.
 
+## OSINT K241 — SAM biscuit · verifier · diagram HITL · bbot AGPL · OSINT4ALL hub (2026-08-18)
+
+Dual-ID: **OSINT K241** = this inbox (evals + 8 arXiv + newsletters + OSINT4ALL). Do not collapse onto CCC K241 if that number is used elsewhere — resolve by file+wiki / arXiv id.
+
+- `google/sam` (Apache-2.0, `.local/adopts/sam` ~44MB) = Sovereign Agent Mesh **Extract** — Biscuit-scoped MCP sidecar for Atto allowlists. HITL before any mesh deploy. No Barone PII in biscuits.
+- `llm-as-a-verifier` (MIT, `.local/adopts/llm-as-a-verifier` ~411MB) = self-verification **Extract** for GW claim ledger + Atto exhibit-vs-claim. Alert-only on GW; never orders; never auto-rewrite `watches.json`.
+- `diagram-design` (MIT, `.local/adopts/diagram-design` ~11MB) = editorial SVG **Extract + HITL skill-vetting**. `wire_status: deferred`. **Do not** copy into `~/.cursor/skills` or user-global skills (misevolution).
+- `bbot` (AGPL-3.0, `.local/adopts/bbot` ~16MB) = **Extract-only**. Authorized-target recon. Do **not** vendor into Atto / proprietary kits. Docx GPL was wrong.
+- `sherlock` (MIT, re-clone) + `mitaka` (MIT, `.local/adopts/mitaka` ~2.1MB) = username / browser OSINT Extract. Human-gated; ToS; no Barone PII fixtures.
+- **CyberChef** stays K149 **Context**. URL eval Integrate ignored — do not re-tier.
+- OSINT4ALL = catalog hub + section tables (`entities/catalogs/osint4all-*.md`). **No stub farm** (no page per URL). Leak/darknet/insecam/malware corpora = CONTEXT/CAUTION listed-only.
+- `cemini23/cursor-route` MIT = CCC `/route` **backlog** only. Do **not** swap the `/route` worker. Do **not** replace PATH `claude-ds`. Always-approve is coding-worktree only — not Discord / trading.
+- Capital Flows 30y high + three equity risks → GW HITL watches. Event Horizon cartel-leader PM + Kalshi WA geofence 2026-08-19 = gambling awareness. **No pm scp. No xsp scp** (rough-vol + WuBlock miners have no named implementable rule).
+- Skip clones: PageLM / multica / usertour NOASSERTION; ssh-ai-chat AGPL Watch; PrivFu/HTB/C2 Context-no-PoC; traceway SIZE-SKIP; redditsfinder stale pattern-only.
+- **0 new runtime Integrate GO.** **Do not auto-evolve** `.cursor/skills/*`.
+
 ## K232 — SHE harness evolution + paper wave (2026-08-11)
 
 - `SHE` (`.local/adopts/SHE`, Apache-2.0, ~5.1MB) = trajectory→System Prompt/Rule Bank/Safety Memory/Tool Policy evolution **REFERENCE** for CCC + local-abliterated lab — do not auto-mutate prod harness without HITL.

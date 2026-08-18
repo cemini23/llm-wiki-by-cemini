@@ -16,10 +16,12 @@ related:
   - sources/arxiv-2608.14036-demystifying-agent-skills-2026-08-17.md
   - concepts/agent-skills-procedural-anchoring.md
   - "@cybersecurity-wiki/concepts/skill-misevolution.md"
+  - sources/eval-multi-wiki-revenue-plan-2026-08-18.md
+  - sources/arxiv-2608.16112-strategic-technical-debt-2026-08-18.md
+  - entities/tools/diagram-design.md
 maturity: draft
 created: 2026-08-14
 updated: 2026-08-17
-
 ---
 
 ## Relations

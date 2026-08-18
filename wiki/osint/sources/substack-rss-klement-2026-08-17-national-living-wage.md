@@ -5,6 +5,7 @@ tags: [source, substack, rss, macro, k240]
 keywords: [NLW, minimum-wage, UK, Albagli, employment]
 related:
   - concepts/labor-vs-capital-wealth-culture.md
+  - sources/substack-rss-klement-2026-08-18-inflation-in-better.md
 maturity: draft
 created: 2026-08-17
 updated: 2026-08-17

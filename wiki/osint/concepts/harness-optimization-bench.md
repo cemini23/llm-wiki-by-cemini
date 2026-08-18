@@ -11,6 +11,8 @@ related:
   - entities/tools/anton-mindsdb.md
   - concepts/code-as-agent-harness.md
   - sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
+  - sources/arxiv-2608.16798-clawgym-ii-2026-08-18.md
+  - sources/arxiv-2608.16859-harnesseval-w-2026-08-18.md
 maturity: draft
 created: 2026-08-07
 updated: 2026-08-11

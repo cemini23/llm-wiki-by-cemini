@@ -10,6 +10,7 @@ related:
   - concepts/verifier-deployment-gap.md
   - sources/arxiv-2607.27035-correlated-chance-sampling-mccfr-2026-07-30.md
   - sources/arxiv-2608.09389-regret-equilibrium-games-2026-08-11.md
+  - sources/arxiv-2608.15258-self-fictitious-play-2026-08-18.md
 maturity: draft
 created: 2026-07-28
 updated: 2026-08-11

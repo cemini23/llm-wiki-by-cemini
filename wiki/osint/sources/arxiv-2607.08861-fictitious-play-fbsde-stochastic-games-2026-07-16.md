@@ -5,6 +5,7 @@ tags: [source, arxiv, k170]
 keywords: [2607.08861, fictitious, play, fbsde, stochastic, games]
 related:
   - concepts/belief-conditioned-agent-audit-hidden-info.md
+  - sources/arxiv-2608.15258-self-fictitious-play-2026-08-18.md
 maturity: draft
 read_status: skimmed
 created: 2026-07-16

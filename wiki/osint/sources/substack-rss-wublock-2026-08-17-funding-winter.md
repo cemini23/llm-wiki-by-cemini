@@ -6,6 +6,7 @@ keywords: [funding-winter, stablecoin-payments, Galaxy, $4B, Rain, OpenFX]
 related:
   - sources/substack-rss-wublock-2026-08-16-asia-top10.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-wublock-2026-08-18-miners-power.md
 maturity: draft
 created: 2026-08-17
 updated: 2026-08-17

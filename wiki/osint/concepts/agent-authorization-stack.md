@@ -23,6 +23,7 @@ related:
   - sources/4-11-crypto-re.md
   - concepts/mitre-atlas-taxonomy.md
   - sources/xskill-2603-12056.md
+  - concepts/sovereign-agent-mesh-biscuit.md
 maturity: validated
 created: 2026-05-01
 updated: 2026-05-11

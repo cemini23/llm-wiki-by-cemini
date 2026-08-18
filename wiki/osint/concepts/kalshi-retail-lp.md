@@ -12,6 +12,7 @@ related:
   - concepts/polymarket-bot-architecture.md
   - concepts/dex-fee-implied-volatility.md
   - sources/arxiv-2608.13340-uniswap-fee-iv-2026-08-14.md
+  - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-17

@@ -11,6 +11,7 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/cemini-license-posture.md
   - concepts/active-project-research-routing.md
+  - sources/eval-multi-wiki-url-revenue-2026-08-18.md
 maturity: draft
 created: 2026-08-08
 updated: 2026-08-08

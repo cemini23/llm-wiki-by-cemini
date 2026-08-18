@@ -8,6 +8,7 @@ related:
   - concepts/prediction-market-regulation-2026.md
   - concepts/polymarket-bot-architecture.md
   - sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md
+  - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
 maturity: draft
 created: 2026-08-15
 updated: 2026-08-17

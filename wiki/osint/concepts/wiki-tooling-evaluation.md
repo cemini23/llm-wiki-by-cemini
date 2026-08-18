@@ -302,6 +302,7 @@ related:
   - sources/eval-url-batch-agentic-osint-integrations-2026-08-06.md
   - sources/eval-tech-stack-opportunity-2026-08-06.md
   - entities/tools/she-safety-harness.md
+  - sources/eval-multi-wiki-revenue-plan-2026-08-18.md
 maturity: validated
 hub: true
 created: 2026-04-28

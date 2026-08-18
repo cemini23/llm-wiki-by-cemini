@@ -7,6 +7,7 @@ related:
   - sources/spcx-anthropic-sotp-thesis-2026-08-17.md
   - sources/eval-url-revenue-opportunity-2026-08-17.md
   - concepts/llm-routing-deepseek-openrouter-failover.md
+  - sources/newsletter-rss-latent-space-2026-08-17-stripe-openrouter.md
 maturity: draft
 created: 2026-08-17
 updated: 2026-08-17

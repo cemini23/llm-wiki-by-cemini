@@ -27,6 +27,9 @@ related:
   - entities/tools/dshackle.md
   - entities/tools/dsh-vision-toolkit.md
   - sources/newsletter-rss-latent-space-2026-08-14-ainews-cursors-60b.md
+  - sources/newsletter-rss-latent-space-2026-08-17-stripe-openrouter.md
+  - sources/substack-rss-outlier-weekly-2026-08-18-cursor-route.md
+  - entities/tools/cursor-route.md
 maturity: draft
 created: 2026-06-04
 updated: 2026-08-17

@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-08-18] ingest | K241 — 19-inbox evals + 8 arXiv + newsletters + OSINT4ALL hub
+
+- **Dual-ID:** OSINT K241 = this inbox (18 Aug 2026). Do not collapse onto CCC K241. Resolve by file+wiki / arXiv id.
+- **Inbox (18 unique + 1 fold):** 2 evals + 8 arXiv + 8 newsletters + `Updated_Thesis_SPCX_vs_Anthropic.pdf` folded into `@sources/spcx-anthropic-sotp-thesis-2026-08-17.md` (same sha256 `570fbf1c…`). OSINT4ALL hub already started this day. Archived to egress-fi; inbox empty of this batch.
+- **Tool evals:** `sources/eval-multi-wiki-revenue-plan-2026-08-18.md` + `sources/eval-multi-wiki-url-revenue-2026-08-18.md`. **0 new runtime Integrate GO.** License `.local/reports/license-k241-2026-08-18.md` (gh api — never trust eval docx). bbot docx GPL → **AGPL-3.0**. diagram-design Integrate → Extract + HITL. CyberChef Integrate ignored (K149 Context).
+- **Phase-0:** `scripts/adopt_k241_phase0.sh` — new clones llm-as-a-verifier 411MB + mitaka 2.1MB; HAVE sam 44MB, diagram-design 11MB, bbot 16MB, sherlock 2.5MB. **486MB total** (<500). Skip NOASSERTION / AGPL Watch / PrivFu / HTB / SIZE-SKIP traceway.
+- **arXiv:** SFP MFG → poker Arena brief. Cascades + CPMC wiki. Strategic tech debt + ClawGym II + HarnessEval-W → CCC. Math-aura awareness. Rough vol + WuBlock miners wiki-only (**no xsp scp**).
+- **Newsletters:** Stripe/OpenRouter $7B → CCC. SparkToro persona + Lily Ray fan-out → SEO brief. Capital Flows 30y + three risks → GW HITL (**no auto-arm**). EH cartel PM + Kalshi WA geofence 2026-08-19 → gambling (**no pm scp**). Klement Visegrad wiki-only. Outlier cursor-route → CCC **must** bump `entities/skills/route.md` (K240 missed).
+- **Entities (new):** google-sam, llm-as-a-verifier, bbot, mitaka, cursor-route. **Updated:** diagram-design (`wire_status: deferred`), sherlock, cyberchef, osint4all. Catalog section tables already exist under `entities/catalogs/osint4all-*.md` (sibling catalog job).
+- **Concepts (new):** sovereign-agent-mesh-biscuit, chatgpt-fan-out-site-operator. osint4all-catalog already started.
+- **Briefs:** OSINT copies `briefs/2026-08-18_k241-*` (Atto / GW / CCC / cyber / gambling / SEO). Poker `agents/devfun-poker-arena/briefs/2026-08-18_k241-self-fictitious-play-mfg.md`. **No xsp/pm scp.** Sibling-repo write blocked by session sandbox — parent copy.
+- **Phase-1:** OSINT K241 section in `osint-phase1-adopt-wires.mdc`. Dual-ID note in `cemini-phase1-policy-wires.mdc`. New Extract `wire_status: policy_wired`; diagram-design `deferred`.
+- **Archive:** 19 raws → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
 ## [2026-08-17] query | SPCX vs Anthropic friend thesis → SEO X Article handoff
 
 - Friend PDF (2 pages, Grok Bot in stack) emailed to Leon/Vincent; Desktop copy for Discord.

@@ -19,10 +19,14 @@ related:
   - entities/tools/openai-privacy-filter.md
   - sources/eval-url-revenue-opportunity-2026-08-17.md
   - entities/tools/filekey.md
+  - sources/eval-multi-wiki-revenue-plan-2026-08-18.md
+  - entities/tools/google-sam.md
+  - entities/tools/llm-as-a-verifier.md
+  - entities/tools/diagram-design.md
+  - concepts/sovereign-agent-mesh-biscuit.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-17
-
 ---
 
 ## Relations

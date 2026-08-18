@@ -7,6 +7,7 @@ related:
   - concepts/kalshi-retail-lp.md
   - concepts/prediction-market-regulation-2026.md
   - sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md
+  - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
 maturity: draft
 created: 2026-08-17
 updated: 2026-08-17

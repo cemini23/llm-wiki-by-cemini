@@ -17,6 +17,7 @@ related:
   - concepts/devfun-researcher-track-readiness-2026-06.md
   - concepts/projected-exploitability-descent.md
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
+  - sources/arxiv-2608.15258-self-fictitious-play-2026-08-18.md
 maturity: draft
 created: 2026-06-20
 updated: 2026-07-04

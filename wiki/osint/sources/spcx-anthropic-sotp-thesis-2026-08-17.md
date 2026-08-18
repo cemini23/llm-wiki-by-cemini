@@ -5,15 +5,19 @@ tags: [source, equity, spacex, anthropic, k240]
 keywords: [SPCX, Anthropic, SOTP, Cursor, relative-value]
 related:
   - sources/newsletter-rss-latent-space-2026-08-14-ainews-cursors-60b.md
+  - sources/newsletter-rss-latent-space-2026-08-17-stripe-openrouter.md
+  - sources/substack-rss-wublock-2026-08-18-miners-power.md
 maturity: draft
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-08-18
 read_status: read
 ---
 
 ## Relations
 
 - @sources/newsletter-rss-latent-space-2026-08-14-ainews-cursors-60b.md — Cursor $60B / SpaceXAI close
+- @sources/newsletter-rss-latent-space-2026-08-17-stripe-openrouter.md — K241 Stripe/OpenRouter + Origin
+- @sources/substack-rss-wublock-2026-08-18-miners-power.md — Anthropic as power tenant (TeraWulf)
 - Brief (already written, do not re-scp): `briefs/2026-08-17_spcx-anthropic-sotp-thesis.md`
 
 ## Raw Concept
@@ -21,12 +25,16 @@ read_status: read
 | Field | Value |
 |-------|--------|
 | File | `SPCX_vs_Anthropic_Thesis_2026-08-17.pdf` |
+| Alias (K241 fold) | `Updated_Thesis_SPCX_vs_Anthropic.pdf` — **same sha256**; do not create a second thesis source |
 | sha256 | `570fbf1c76d8430238b341adf491b1a11d196b3695448fc2e8d34404efdd5bbe` |
 | Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/SPCX_vs_Anthropic_Thesis_2026-08-17.pdf` |
-| retrieved | 2026-08-17 |
-| Dual-ID | **OSINT K240**. Observational; not a trade. Email **held** (Leon address missing). |
+| Location (alias) | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Updated_Thesis_SPCX_vs_Anthropic.pdf` (K241 archive of duplicate filename) |
+| retrieved | 2026-08-17; alias folded 2026-08-18 |
+| Dual-ID | **OSINT K240** original ingest. **OSINT K241** folded the updated filename (identical bytes). Observational; not a trade. Email **held** (Leon address missing). |
 
 ## Narrative
+
+**K241 fold:** inbox file `Updated_Thesis_SPCX_vs_Anthropic.pdf` is the same bytes (sha256 `570fbf1c…`). No second thesis source. Alias archived under the updated filename.
 
 Relative-value note already staged as `briefs/2026-08-17_spcx-anthropic-sotp-thesis.md`. Lead is the live Anthropic crypto perp (~$1.77–1.79T on a 1B-share convention) next to NASDAQ:SPCX tape ~$1.85T / Cursor pro-forma ~$1.90T. Observational. Not investment advice. Not a GuruWatcher watch. Do not re-scp.
 

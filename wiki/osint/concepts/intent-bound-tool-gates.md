@@ -7,6 +7,7 @@ related:
   - sources/arxiv-2608.07167-niyamai-intent-bound-2026-08-10.md
   - concepts/code-as-agent-harness.md
   - sources/eval-github-repository-evaluation-plan-2026-08-10.md
+  - concepts/sovereign-agent-mesh-biscuit.md
 maturity: draft
 created: 2026-08-10
 updated: 2026-08-10

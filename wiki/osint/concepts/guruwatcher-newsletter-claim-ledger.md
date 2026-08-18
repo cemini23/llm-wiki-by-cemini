@@ -32,6 +32,8 @@ related:
   - sources/macro-charts-paid-forward-2026-07-31-situational-awareness-kospi.md
   - sources/macro-charts-paid-forward-2026-08-06.md
   - entities/tools/mubeng.md
+  - sources/substack-rss-capital-flows-2026-08-18-next-stage-macro.md
+  - entities/tools/llm-as-a-verifier.md
 maturity: draft
 created: 2026-07-28
 updated: 2026-08-10

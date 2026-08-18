@@ -10,6 +10,7 @@ related:
   - concepts/extensive-form-games-stochastic-action-sets.md
   - concepts/garip-running-average-self-play.md
   - sources/arxiv-garip-self-play-2606.22688-2026-06-23.md
+  - sources/arxiv-2608.15258-self-fictitious-play-2026-08-18.md
 maturity: draft
 read_status: read
 created: 2026-06-20

@@ -7,6 +7,39 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K241 ingest (2026-08-18)
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-wiki-revenue-plan](sources/eval-multi-wiki-revenue-plan-2026-08-18.md) | 20-URL GitHub/C2 eval — SAM/verifier/diagram Extract; bbot AGPL; 0 Integrate GO (K241) | draft |
+| [eval-multi-wiki-url-revenue](sources/eval-multi-wiki-url-revenue-2026-08-18.md) | 20-URL OSINT/ALPR — sherlock/mitaka Extract; CyberChef stays Context (K241) | draft |
+| [arxiv-2608.15258-self-fictitious-play](sources/arxiv-2608.15258-self-fictitious-play-2026-08-18.md) | SFP MFG — belief from own occupation; error √ε (K241) | draft |
+| [arxiv-2608.15987-threshold-cascades](sources/arxiv-2608.15987-threshold-cascades-2026-08-18.md) | Threshold cascades on unimodular trees; ρ(M)=1 critical (K241) | draft |
+| [arxiv-2608.16112-strategic-tech-debt](sources/arxiv-2608.16112-strategic-technical-debt-2026-08-18.md) | Strategic vs toxic debt; refactor at commitment boundary (K241) | draft |
+| [arxiv-2608.16171-rare-event-sampling](sources/arxiv-2608.16171-rare-event-sampling-2026-08-18.md) | CPMC cluster-update rare-event sampling (K241) | draft |
+| [arxiv-2608.16378-math-reproduction](sources/arxiv-2608.16378-mathematics-reproduction-intelligence-2026-08-18.md) | Proof abundance vs surveyability (K241) | draft |
+| [arxiv-2608.16749-rough-vol](sources/arxiv-2608.16749-rough-volatility-across-assets-2026-08-18.md) | Rough vol every asset class; no xsp scp (K241) | draft |
+| [arxiv-2608.16798-clawgym-ii](sources/arxiv-2608.16798-clawgym-ii-2026-08-18.md) | Black-box RL through harnesses +9.98/+14.81 (K241) | draft |
+| [arxiv-2608.16859-harnesseval-w](sources/arxiv-2608.16859-harnesseval-w-2026-08-18.md) | Evidence-tree visual-world eval (K241) | draft |
+| [newsletter-latent-space-openrouter](sources/newsletter-rss-latent-space-2026-08-17-stripe-openrouter.md) | Stripe OpenRouter $7B / 70% GP / 250T tok/mo (K241) | draft |
+| [newsletter-sparktoro-persona](sources/newsletter-rss-sparktoro-2026-08-18-persona-tool.md) | SparkToro persona tool live → SEO (K241) | draft |
+| [newsletter-capital-flows-next](sources/substack-rss-capital-flows-2026-08-18-next-stage-macro.md) | 30y high + three equity risks; GW HITL (K241) | draft |
+| [newsletter-eh-cartel-wa](sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md) | Cartel PM awareness + Kalshi WA geofence Aug 19; no pm scp (K241) | draft |
+| [newsletter-klement-inflation](sources/substack-rss-klement-2026-08-18-inflation-in-better.md) | Visegrad 4; euro inflation-anchor gravity; wiki-only (K241) | draft |
+| [newsletter-lily-ray-fan-out](sources/substack-rss-lily-ray-2026-08-17-chatgpt-fan-out.md) | ChatGPT 5.6 retrieved↑ cited↓; site: prior (K241) | draft |
+| [newsletter-outlier-cursor-route](sources/substack-rss-outlier-weekly-2026-08-18-cursor-route.md) | Public MIT cursor-route; CCC /route backlog (K241) | draft |
+| [newsletter-wublock-miners](sources/substack-rss-wublock-2026-08-18-miners-power.md) | Miners valued on MW/GW + AI leases; wiki-only (K241) | draft |
+| [osint4all-startme](sources/osint4all-startme-2026-08-18.md) | OSINT4ALL hub 78 sections / 1454 links; no stub farm (K241) | draft |
+| [google-sam](entities/tools/google-sam.md) | Apache-2.0 Extract — Biscuit MCP sidecar (K241) | draft |
+| [llm-as-a-verifier](entities/tools/llm-as-a-verifier.md) | MIT Extract — claim ledger (K241) | draft |
+| [diagram-design](entities/tools/diagram-design.md) | MIT Extract + HITL; wire_status deferred (K241) | draft |
+| [bbot](entities/tools/bbot.md) | AGPL-3.0 Extract-only authorized recon (K241) | draft |
+| [mitaka](entities/tools/mitaka.md) | MIT browser OSINT Extract (K241) | draft |
+| [cursor-route](entities/tools/cursor-route.md) | Public MIT CLI; do not swap /route (K241) | draft |
+| [osint4all](entities/tools/osint4all.md) | Catalog hub entity (K241) | draft |
+| [sovereign-agent-mesh-biscuit](concepts/sovereign-agent-mesh-biscuit.md) | Least-privilege Biscuit dispatch (K241) | draft |
+| [osint4all-catalog](concepts/osint4all-catalog.md) | KEEP/DEAD/CONTEXT filing; no stub farm (K241) | draft |
+| [chatgpt-fan-out-site-operator](concepts/chatgpt-fan-out-site-operator.md) | retrieved vs cited; site: as quality prior (K241) | draft |
+
 ### K240 ingest (2026-08-17)
 | Page | Summary | Maturity |
 |------|---------|----------|

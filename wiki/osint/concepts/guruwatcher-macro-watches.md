@@ -11,6 +11,7 @@ related:
   - sources/substack-rss-moontower-2026-08-16-324-rssb.md
   - concepts/structural-abstention-trusted-kernel.md
   - sources/arxiv-2608.13926-never-the-number-2026-08-17.md
+  - sources/substack-rss-capital-flows-2026-08-18-next-stage-macro.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-17

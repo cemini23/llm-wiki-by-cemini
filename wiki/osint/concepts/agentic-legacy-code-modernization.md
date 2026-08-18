@@ -8,6 +8,7 @@ related:
   - sources/arxiv-2608.14527-fault-injection-llm-modernization-2026-08-17.md
   - concepts/agent-harness-verification-bottleneck.md
   - concepts/agent-toolkit-routing-research-backlog.md
+  - sources/arxiv-2608.16112-strategic-technical-debt-2026-08-18.md
 maturity: draft
 created: 2026-08-13
 updated: 2026-08-17

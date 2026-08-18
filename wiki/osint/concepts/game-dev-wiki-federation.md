@@ -7,8 +7,9 @@ related:
   - concepts/gambling-wiki-federation.md
   - concepts/federated-daily-research-digest.md
   - entities/tools/claude-code-game-studios.md
-  - @ccc-wiki/concepts/deep-research-evaluation-prompt.md
+  - "@ccc-wiki/concepts/deep-research-evaluation-prompt.md"
   - concepts/active-project-research-routing.md
+  - sources/arxiv-2608.16859-harnesseval-w-2026-08-18.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-17
