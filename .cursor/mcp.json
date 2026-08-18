@@ -14,7 +14,7 @@
       }
     },
     "prod-mcp": {
-      "type": "sse",
+      "type": "http",
       "disabled": true,
       "url": "http://localhost:18002/mcp"
     },

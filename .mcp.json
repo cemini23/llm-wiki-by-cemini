@@ -13,7 +13,7 @@
       "env": {}
     },
     "prod-mcp": {
-      "type": "sse",
+      "type": "http",
       "url": "http://localhost:18002/mcp"
     },
     "lazy-tool": {
