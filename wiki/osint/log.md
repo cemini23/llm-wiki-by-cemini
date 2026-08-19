@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-08-19] ingest | K242 — 9-inbox evals + newsletters (mdflux / BloodBash Extract-only / PM ban onshore)
+
+- **Dual-ID:** OSINT K242 = this inbox (19 Aug 2026). Do not collapse onto Trajectory Sentinel / CCC K242 (`concepts/agent-harness-verification-bottleneck.md`). Resolve by file+wiki / brief path.
+- **Inbox (9 NEW):** 2 evals + 7 newsletters. Archived to egress-fi; inbox empty of this batch.
+- **Tool evals:** `sources/eval-project-revenue-url-2026-08-19.md` + `sources/eval-local-agent-infra-2026-08-19.md`. **0 new runtime Integrate GO.** License `.local/reports/license-k242-2026-08-19.md` (gh api — never trust eval docx). Overrides: Qwen uncensored Watch no weights; rybbit AGPL Watch no clone; aceternity Context; BloodBash Extract-only; cua SIZE-SKIP.
+- **Phase-0:** `scripts/adopt_k242_phase0.sh` — mdflux 38MB, Aliens_eye 1.3MB, betterwright 17MB, easy-agent 4.7MB, vphone-cli 5.9MB, ai-memory 18MB, watermarks-remover 1.8MB, BloodBash 104MB. **~192MB** (<500). Skip NOASSERTION / AGPL Watch / HF weights / elasticsearch.
+- **Newsletters:** Glean routing → CCC (do not swap `/route`). DRAM +500% awareness. PE leader exits CCC. Capital Flows inflation>recession + SMH → GW HITL one watch. EH PM-ban onshore + Kalshi WA geofence **2026-08-19** → gambling **no pm scp**. Klement SLM + WuBlock CORZ wiki-only **no xsp scp**.
+- **Entities (new):** mdflux, aliens-eye, betterwright, easy-agent, bloodbash, vphone-cli, ai-memory, watermarks-remover. **Updated:** omlx (`wont_wire`), deepteam Extract REFERENCE, sherlock, cursor-route.
+- **Concepts (bump):** prediction-market-regulation-2026 (onshore/geofence ≥100w), llm-routing (Glean), atto kit, local-abliterated, guruwatcher-macro-watches, kalshi-retail-lp, cemini-license-posture, wiki-tooling-evaluation, agent-harness dual-id.
+- **Briefs:** OSINT `briefs/2026-08-19_k242-*` (Atto / GW / CCC / cyber / gambling). SEO / Image-gen / 3D via `cross_wiki_route.py --type brief`. **No xsp/pm scp.**
+- **Phase-1:** OSINT K242 section in `osint-phase1-adopt-wires.mdc`. Dual-ID K241+K242 in `cemini-phase1-policy-wires.mdc`. Extract tools `wire_status: policy_wired`.
+- **Route:** HARD Grok CLI hung on clone stall (watchdog 600s); claude-ds Pro hung; Cursor parent takeover from SIP.
+- **Gate:** `ingest_session_gate.py` WARN acknowledged — stale `[NEEDS VERIFICATION]` on `cemini-license-posture.md` (108d) and older `wiki/log.md` entries (36d/43d) are pre-existing, not this batch.
+
 ## [2026-08-18] ingest | K241 — 19-inbox evals + 8 arXiv + newsletters + OSINT4ALL hub
 
 - **Dual-ID:** OSINT K241 = this inbox (18 Aug 2026). Do not collapse onto CCC K241. Resolve by file+wiki / arXiv id.

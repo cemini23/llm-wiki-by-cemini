@@ -72,6 +72,7 @@ Concrete harness behavior from Phase-0 ADOPT patterns. Clones under `.local/adop
 
 - Do not use a single-pass LLM over pasted CSV/feature tables as primary predictive analytics — accuracy collapses with dimensionality.
 - Prefer classical / tabular-foundation / solver tools; LLMs for narrative around tool outputs.
+- **OSINT/GW K241** (Capital Flows 30y + three equity risks, alert-only) = `guruwatcher-k241-capital-flows-macro-phase1-wires.mdc` — do not collapse with this tabular K241.
 
 ## Telemetry + deterministic failure repair (Trajectory Sentinel / K242)
 
@@ -88,15 +89,6 @@ Concrete harness behavior from Phase-0 ADOPT patterns. Clones under `.local/adop
 
 - `.local/adopts/MixedComplementarityProblems.jl` = BSD-3 REFERENCE for robotics/game-dev — **wont_wire** on CCC/TipDrop/prod harness.
 - **OSINT/GW K240** (Talon HITL + RSSB + VIVO, alert-only) = `guruwatcher-k240-talon-rssb-phase1-wires.mdc` — do not collapse with this robotics K240.
-
-## Dual-ID — OSINT K241 (2026-08-18 inbox)
-
-- **OSINT K241** = 18 Aug 2026 inbox (2 evals + 8 arXiv + newsletters + OSINT4ALL hub). Surface: `osint-phase1-adopt-wires.mdc` § OSINT K241.
-- Do **not** collapse onto CCC K241 if that number is used elsewhere. Resolve by arXiv id / brief path / wiki file, not bare K#.
-- `cemini23/cursor-route` MIT = CCC `entities/skills/route.md` **backlog** (K240 missed this). Do not swap `/route` worker. Do not replace PATH `claude-ds`.
-- diagram-design = Extract + HITL skill-vetting — **not** silent `~/.cursor/skills`.
-- bbot = **AGPL-3.0** Extract-only (docx said GPL — wrong). No proprietary vendor.
-- CyberChef remains K149 Context. 0 new runtime Integrate GO.
 
 ## Clarify-before-act + evidence-aligned close (UrbanAgent / K244)
 
@@ -422,6 +414,25 @@ CCC **ACCEL** is also labeled K237 (agentic-engineer competencies, above). Numbe
 - **No unattended auto-evolve** of `.cursor/skills/*`. Worker ≠ verifier (Osmani). `/goal` evaluator checks named metrics only — it is not taste.
 - **GO Integrate this batch: none.** fclones MIT = Extract (Atto vault CoW; no unsupervised `--delete`). openai/privacy-filter Apache-2.0 = Extract (PII strip; ≠ packyme). rachoon stays **AGPL Extract-only**; RustScan stays **GPL-3.0 Extract-only** (docx Integrate + MIT were wrong). LFM encoders = license `other` + weight skip. timesfm code cloned; **no HF checkpoints**; GuruWatcher remains alert-only.
 - **0day-Rubbish / LEAKSFORUMS** = Context only. No exploit payloads, no criminal-forum interaction.
+
+## Dual-ID — OSINT K241 (2026-08-18 inbox)
+
+**OSINT K241** = 18 Aug 2026 inbox (evals + 8 arXiv + newsletters + OSINT4ALL). Do **not** collapse onto CCC K241 if that number is used elsewhere — resolve by file+wiki / arXiv id. `cemini23/cursor-route` MIT = CCC `entities/skills/route.md` **backlog**. Do not swap `/route` worker. Do not replace PATH `claude-ds`. diagram-design = Extract + HITL skill-vetting. bbot = **AGPL-3.0** Extract-only. **0 new runtime Integrate GO.**
+
+## Dual-ID — OSINT K242 (2026-08-19 inbox)
+
+**OSINT K242** = 19 Aug 2026 inbox (2 evals + 7 newsletters). Do **not** collapse onto Trajectory Sentinel / CCC **K242** (`wiki/concepts/agent-harness-verification-bottleneck.md`). Resolve by file+wiki / brief path, not bare K#.
+
+- `mdflux` MIT Extract — Atto local RapidOCR wrapper. **Transkribus remains sole product HTR.**
+- `Aliens_eye` / `betterwright` / `easy-agent` / `ai-memory` MIT Extract. Human-gate writes. Do not swap `/route`.
+- `BloodBash` MIT **Extract-only** (docx Integrate overridden). Authorized SharpHound JSON already collected. No PoC.
+- `vphone-cli` MIT Extract REFERENCE. Authorized lab. **No AMFI/jailbreak writeup.**
+- `watermarks-remover` MIT Extract. Image-gen skip local wire.
+- `omlx` already K182 `wont_wire` — bump only. `deepteam` Extract REFERENCE skip clone (vendor-pull / RAM).
+- Docx Integrate overridden: Qwen uncensored MLX (**Watch, no weights**), rybbit **AGPL Watch no clone**, aceternity commercial Context, cua SIZE-SKIP + AGPL omni isolate.
+- Context-no-clone / no PoC: PrivFu, QUIC C2, pwneye, H.I.V.E, WireTapper, herdrm.
+- Capital Flows inflation>recession + SMH → GW HITL **one watch max**. EH PM-ban onshore + Kalshi WA geofence **2026-08-19**. **No pm scp. No xsp scp.**
+- **0 new runtime Integrate GO.** New clones ~192MB (`scripts/adopt_k242_phase0.sh`). **Do not auto-evolve** `.cursor/skills/*`.
 
 ## CCC wave K285–K289 (shared policy file)
 

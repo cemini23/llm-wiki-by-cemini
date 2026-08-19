@@ -8,9 +8,10 @@ related:
   - concepts/kalshi-retail-lp.md
   - sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md
   - sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md
+  - sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md
 maturity: draft
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-19
 read_status: read
 ---
 
@@ -20,6 +21,7 @@ read_status: read
 - @concepts/kalshi-retail-lp.md — **no pm scp** (awareness, not a CLOB steal)
 - @sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md — prior EH geofence / NV
 - @sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md — prior WA geofence note
+- @sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md — K242 ban≠offshore; geofence day
 
 ## Raw Concept
 

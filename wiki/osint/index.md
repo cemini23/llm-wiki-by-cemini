@@ -7,6 +7,27 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K242 ingest (2026-08-19)
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-project-revenue-url](sources/eval-project-revenue-url-2026-08-19.md) | 20-URL eval — Aliens_eye/betterwright Extract; 0 Integrate GO (K242) | draft |
+| [eval-local-agent-infra](sources/eval-local-agent-infra-2026-08-19.md) | 20-URL eval — mdflux/easy-agent/BloodBash Extract-only; 0 Integrate GO (K242) | draft |
+| [newsletter-glean-routing](sources/newsletter-rss-latent-space-2026-08-18-glean-model-routing.md) | Glean task→model routing; do not swap /route (K242) | draft |
+| [newsletter-dram-500](sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md) | DRAM +500%/12mo; GW/CCC awareness (K242) | draft |
+| [newsletter-pe-leader-exit](sources/newsletter-rss-pragmatic-engineer-2026-08-18-eng-leader-exit.md) | Eng-leader career breaks; wiki/CCC (K242) | draft |
+| [newsletter-cf-equity-pos](sources/substack-rss-capital-flows-2026-08-19-equity-positioning.md) | Inflation>recession + SMH; GW HITL one watch (K242) | draft |
+| [newsletter-eh-pm-ban](sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md) | Ban≠offshore; Kalshi WA geofence today; no pm scp (K242) | draft |
+| [newsletter-klement-slm](sources/substack-rss-klement-2026-08-19-hyperscalers-slm.md) | SLM vs hyperscaler capex; wiki-only (K242) | draft |
+| [newsletter-wublock-corz](sources/substack-rss-wublock-2026-08-19-core-scientific.md) | CORZ miner→AI DC; wiki-only no xsp (K242) | draft |
+| [mdflux](entities/tools/mdflux.md) | MIT Extract local OCR; Transkribus sole HTR (K242) | draft |
+| [aliens-eye](entities/tools/aliens-eye.md) | MIT username OSINT Extract (K242) | draft |
+| [betterwright](entities/tools/betterwright.md) | MIT Playwright wrappers Extract (K242) | draft |
+| [easy-agent](entities/tools/easy-agent.md) | MIT 5-layer harness Extract; no /route swap (K242) | draft |
+| [bloodbash](entities/tools/bloodbash.md) | MIT Extract-only authorized AD JSON (K242) | draft |
+| [vphone-cli](entities/tools/vphone-cli.md) | MIT iOS virt REFERENCE; no bypass writeup (K242) | draft |
+| [ai-memory](entities/tools/ai-memory.md) | MIT reconstruct-before-inject (K242) | draft |
+| [watermarks-remover](entities/tools/watermarks-remover.md) | MIT Extract; Image-gen skip local wire (K242) | draft |
+
 ### K241 ingest (2026-08-18)
 | Page | Summary | Maturity |
 |------|---------|----------|

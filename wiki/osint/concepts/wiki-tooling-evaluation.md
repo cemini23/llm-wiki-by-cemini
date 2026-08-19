@@ -7,6 +7,9 @@ keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemor
 related:
   - sources/eval-project-evaluation-revenue-2026-08-11.md
   - sources/eval-url-revenue-opportunity-2026-08-11.md
+  - sources/eval-project-revenue-url-2026-08-19.md
+  - sources/eval-local-agent-infra-2026-08-19.md
+  - entities/tools/watermarks-remover.md
   - entities/tools/stagehand.md
   - entities/tools/infographic.md
   - entities/tools/smart-ralph.md

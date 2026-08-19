@@ -13,9 +13,10 @@ related:
   - concepts/dex-fee-implied-volatility.md
   - sources/arxiv-2608.13340-uniswap-fee-iv-2026-08-14.md
   - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
+  - sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-17
+updated: 2026-08-19
 ---
 
 ## Relations
@@ -26,6 +27,8 @@ updated: 2026-08-17
 - @sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md — K240 NV $120k/day + optional-update geofence; **no pm scp**
 - @concepts/prediction-market-regulation-2026.md
 - @concepts/polymarket-bot-architecture.md
+- @sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md — K241 cartel + WA geofence; **no pm scp**
+- @sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md — K242 onshore thesis; **no pm scp**
 
 ## Raw Concept
 

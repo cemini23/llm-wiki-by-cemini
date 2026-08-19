@@ -11,9 +11,11 @@ related:
   - sources/arxiv-2608.12249-hpc-modernization-agentic-2026-08-13.md
   - sources/arxiv-2608.12292-tutor-withhold-answer-2026-08-13.md
   - sources/arxiv-2608.13560-autodesign-2026-08-14.md
+  - sources/eval-project-revenue-url-2026-08-19.md
+  - sources/eval-local-agent-infra-2026-08-19.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-14
+updated: 2026-08-19
 ---
 
 ## Relations
@@ -24,6 +26,8 @@ updated: 2026-08-14
 - @sources/arxiv-2608.12249-hpc-modernization-agentic-2026-08-13.md
 - @sources/arxiv-2608.12292-tutor-withhold-answer-2026-08-13.md
 - @concepts/agent-toolkit-routing-research-backlog.md
+- @sources/eval-project-revenue-url-2026-08-19.md — Dual-ID: **OSINT K242** inbox evals are not this page
+- @sources/eval-local-agent-infra-2026-08-19.md — Dual-ID: **OSINT K242** ≠ Trajectory Sentinel K242
 
 ## Raw Concept
 

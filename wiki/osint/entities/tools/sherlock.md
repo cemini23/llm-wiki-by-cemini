@@ -15,9 +15,10 @@ related:
   - entities/tools/mitaka.md
   - entities/tools/bbot.md
   - entities/tools/osint4all.md
+  - entities/tools/aliens-eye.md
 maturity: draft
 created: 2026-08-08
-updated: 2026-08-18
+updated: 2026-08-19
 wire_status: policy_wired
 wire_target: Atto .cursor/rules/atto-k227-phase1-wires.mdc
 wire_note: FIND deep-links Extract; human-gated; ToS/rate limits
@@ -36,6 +37,7 @@ wire_note: FIND deep-links Extract; human-gated; ToS/rate limits
 - @entities/tools/mitaka.md — K241 browser OSINT sibling
 - @entities/tools/bbot.md — AGPL Extract-only recon sibling
 - @entities/tools/osint4all.md — catalog hub
+- @entities/tools/aliens-eye.md — K242 MIT username classifier sibling
 
 ## Raw Concept
 

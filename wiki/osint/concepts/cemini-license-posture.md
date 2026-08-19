@@ -7,6 +7,16 @@ keywords: [AGPL-3.0, GPL-3.0, EUPL-1.2, MIT, Apache-2.0, BSD-3-Clause, CC-BY-NC-
 related:
   - sources/eval-github-repository-stack-2026-08-16.md
   - sources/eval-url-revenue-opportunity-2026-08-17.md
+  - sources/eval-project-revenue-url-2026-08-19.md
+  - sources/eval-local-agent-infra-2026-08-19.md
+  - entities/tools/mdflux.md
+  - entities/tools/aliens-eye.md
+  - entities/tools/betterwright.md
+  - entities/tools/easy-agent.md
+  - entities/tools/bloodbash.md
+  - entities/tools/vphone-cli.md
+  - entities/tools/ai-memory.md
+  - entities/tools/watermarks-remover.md
   - entities/tools/dshackle.md
   - entities/tools/dsh-vision-toolkit.md
   - entities/tools/filekey.md

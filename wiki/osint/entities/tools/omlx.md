@@ -10,9 +10,10 @@ related:
   - concepts/gpuology-genealogy-agent-kit.md
   - concepts/wiki-tooling-evaluation.md
   - sources/eval-url-revenue-opportunity-analysis-2026-07-22.md
+  - sources/eval-local-agent-infra-2026-08-19.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-07-31
+updated: 2026-08-19
 wire_status: wont_wire
 wire_note: local LLM stack REFERENCE; no runtime wire
 ---
@@ -28,6 +29,7 @@ wire_note: local LLM stack REFERENCE; no runtime wire
 - @concepts/wiki-tooling-evaluation.md
 
 - @sources/eval-url-revenue-opportunity-analysis-2026-07-22.md — K182 eval
+- @sources/eval-local-agent-infra-2026-08-19.md — K242 Extract refresh; skip clone; keep `wont_wire`
 
 ## Raw Concept
 

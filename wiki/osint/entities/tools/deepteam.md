@@ -10,9 +10,10 @@ related:
   - concepts/mitre-atlas-taxonomy.md
   - concepts/tool-evaluation-framework.md
   - entities/infrastructure/deepseek-api.md
+  - sources/eval-project-revenue-url-2026-08-19.md
 maturity: draft
 created: 2026-05-06
-updated: 2026-05-10
+updated: 2026-08-19
 ---
 
 ## Relations
@@ -21,6 +22,7 @@ updated: 2026-05-10
 - @concepts/cemini-license-posture.md — Apache-2.0 (clean); axis is operational (RAM) + commercial pull-up (Confident AI SaaS), not license
 - @concepts/mitre-atlas-taxonomy.md — deepteam directly references MITRE ATLAS as one of its compliance frameworks
 - @entities/infrastructure/deepseek-api.md — primary candidate target for red-team scans (Cemini's LLM brain endpoint)
+- @sources/eval-project-revenue-url-2026-08-19.md — K242 Extract REFERENCE (skip clone; still no prod RAM; vendor-pull Watch)
 
 ## Raw Concept
 

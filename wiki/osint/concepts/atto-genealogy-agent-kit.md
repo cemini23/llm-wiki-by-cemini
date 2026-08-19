@@ -24,6 +24,12 @@ related:
   - entities/tools/llm-as-a-verifier.md
   - entities/tools/diagram-design.md
   - concepts/sovereign-agent-mesh-biscuit.md
+  - sources/eval-project-revenue-url-2026-08-19.md
+  - sources/eval-local-agent-infra-2026-08-19.md
+  - entities/tools/mdflux.md
+  - entities/tools/easy-agent.md
+  - entities/tools/betterwright.md
+  - entities/tools/ai-memory.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-17
@@ -41,6 +47,12 @@ updated: 2026-08-17
 - @entities/tools/openai-privacy-filter.md — Apache-2.0 PII strip (≠ packyme)
 - @sources/eval-url-revenue-opportunity-2026-08-17.md — K240 filekey GPL Extract-only
 - @entities/tools/filekey.md — passkey isolate **pattern**; do not vendor GPL
+- @sources/eval-project-revenue-url-2026-08-19.md — K242 eval
+- @sources/eval-local-agent-infra-2026-08-19.md — K242 eval
+- @entities/tools/mdflux.md — MIT local OCR wrapper; Transkribus sole HTR
+- @entities/tools/easy-agent.md — MIT harness; human-gate `truth.ged`
+- @entities/tools/betterwright.md — Playwright; Antenati IIIF local-only
+- @entities/tools/ai-memory.md — reconstruct-before-inject; no Barone PII
 
 ## Raw Concept
 

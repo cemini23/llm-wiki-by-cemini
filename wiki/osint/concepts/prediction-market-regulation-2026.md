@@ -14,9 +14,10 @@ related:
   - sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md
   - sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md
   - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
+  - sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-17
+updated: 2026-08-19
 ---
 
 ## Relations
@@ -29,6 +30,7 @@ updated: 2026-08-17
 - @sources/substack-rss-kyla-2026-08-13-how-to-get-rich-in-america.md — K236 retail gambling/investing-blur macro backdrop
 - @sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md — K239 CFTC mention-market review + WA injunction
 - @sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md — K240 NV $120k/day + optional-update geofence
+- @sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md — K242: ban/limit ≠ full offshore migration; WA geofence day
 
 ## Raw Concept
 
@@ -55,3 +57,5 @@ What this page answers: the regulatory state of US event-contract markets in Aug
 Net for pm-bot ops: retail-facing incentive/marketing programs are now a regulatory target — an awareness item for the Kalshi lane, not a code change. The responsible-trading framing (21+, loss-chasing detection) is also the plausible direction future federal oversight takes.
 
 [Sources: Event Horizon 2026-08-12 + Event Horizon 2026-08-13 (retrieved 2026-08-13)]
+
+**K242 — onshore/geofence, not offshore (2026-08-19).** Event Horizon argues the refrain “if you ban prediction markets the action goes offshore” overstates elasticity. Sports-betting legalization created **new** activity rather than only moving existing offshore books onshore. If US event contracts vanished, payments friction, app-store absence, ad bans, crypto-only UX, and **CFTC tools against US-serving offshore venues** (Polymarket 2022) would leave a large share of volume **extinct, not relocated**. Kalshi’s legal product scaled even though Polymarket international already existed. Comp: post-UIGEA poker players often stopped instead of going offshore. Ops: **Kalshi WA geofence is 2026-08-19**. Mentions markets remain a tiny volume share under CFTC review. No pm-bot scp from this steal — awareness only. [TENTATIVE] single-author argument, not a measured demand elasticity. [Source: Event Horizon 2026-08-19]

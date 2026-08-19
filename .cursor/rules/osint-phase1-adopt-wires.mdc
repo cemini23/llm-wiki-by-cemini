@@ -279,6 +279,21 @@ Dual-ID: **OSINT K241** = this inbox (evals + 8 arXiv + newsletters + OSINT4ALL)
 - Skip clones: PageLM / multica / usertour NOASSERTION; ssh-ai-chat AGPL Watch; PrivFu/HTB/C2 Context-no-PoC; traceway SIZE-SKIP; redditsfinder stale pattern-only.
 - **0 new runtime Integrate GO.** **Do not auto-evolve** `.cursor/skills/*`.
 
+## OSINT K242 — mdflux OCR · easy-agent · BloodBash Extract-only · PM ban onshore (2026-08-19)
+
+Dual-ID: **OSINT K242** = this inbox (2 evals + 7 newsletters). Do **not** collapse onto Trajectory Sentinel / CCC K242 (`wiki/concepts/agent-harness-verification-bottleneck.md`). Resolve by file+wiki / brief path.
+
+- `mdflux` (MIT, `.local/adopts/mdflux` ~38MB) = Atto local MarkItDown/RapidOCR **Extract**. **Transkribus remains sole product HTR.** No Barone PII.
+- `Aliens_eye` MIT + `betterwright` MIT + `easy-agent` MIT + `ai-memory` MIT = Extract. Human-gated username OSINT / Playwright / harness permission / reconstruct-before-inject. **Do not swap `/route` or PATH `claude-ds`.**
+- `BloodBash` MIT **Extract-only** (docx Integrate overridden). `.local/adopts/BloodBash` ~104MB. Authorized SharpHound JSON already collected. No PoC. No third-party scopes.
+- `vphone-cli` MIT Extract REFERENCE (~5.9MB). Authorized iOS virt lab. **No AMFI/jailbreak writeup.**
+- `watermarks-remover` MIT Extract. Image-gen skip local wire.
+- `omlx` stays K182 `wont_wire` (skip clone). `deepteam` Extract REFERENCE skip clone (vendor-pull / prod RAM).
+- Qwen uncensored MLX = **Watch, no HF weights**. rybbit **AGPL Watch no clone**. cua SIZE-SKIP (~313MB) + optional AGPL omni isolate. treg NOASSERTION no clone.
+- Context-no-clone: PrivFu, QUIC C2, pwneye, H.I.V.E, WireTapper, herdrm. elasticsearch SIZE-SKIP.
+- Capital Flows inflation>recession + SMH decision → GW HITL **one watch max**; never auto-rewrite `watches.json`. EH PM-ban onshore + Kalshi WA geofence **today 2026-08-19** → gambling awareness. **No pm scp. No xsp scp** (Klement SLM / WuBlock CORZ).
+- Glean enterprise routing = CCC backlog. **0 new runtime Integrate GO.** New clones ~192MB. **Do not auto-evolve** `.cursor/skills/*`.
+
 ## K232 — SHE harness evolution + paper wave (2026-08-11)
 
 - `SHE` (`.local/adopts/SHE`, Apache-2.0, ~5.1MB) = trajectory→System Prompt/Rule Bank/Safety Memory/Tool Policy evolution **REFERENCE** for CCC + local-abliterated lab — do not auto-mutate prod harness without HITL.

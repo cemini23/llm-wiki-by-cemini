@@ -30,9 +30,13 @@ related:
   - sources/newsletter-rss-latent-space-2026-08-17-stripe-openrouter.md
   - sources/substack-rss-outlier-weekly-2026-08-18-cursor-route.md
   - entities/tools/cursor-route.md
+  - sources/newsletter-rss-latent-space-2026-08-18-glean-model-routing.md
+  - sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-08-18-eng-leader-exit.md
+  - entities/tools/easy-agent.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-08-17
+updated: 2026-08-19
 ---
 
 ## Relations
@@ -59,6 +63,10 @@ updated: 2026-08-17
 - @entities/tools/quotio.md — K233 quota-aware failover pattern
 - @sources/arxiv-2608.11152-mixed-rl-rollouts-2026-08-12.md — MISA-T workload-aware admission
 - @sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md — provider-proxy security surface
+- @sources/newsletter-rss-latent-space-2026-08-18-glean-model-routing.md — K242 Glean task routing; do not swap `/route`
+- @sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md — DRAM cost pressure
+- @sources/newsletter-rss-pragmatic-engineer-2026-08-18-eng-leader-exit.md — operator attention scarce
+- @entities/tools/easy-agent.md — MIT harness Extract; not a worker swap
 
 ## Raw Concept
 
@@ -79,3 +87,5 @@ Failover on HTTP 402/429 and quota/balance error strings. Disable with `LLM_FALL
 **Research improvement loop (2026-08-11):** OSINT digest cluster `cursor-route-harness` + active_topic `/route + agent-toolkit` steals failover / harness-evolution papers into CCC briefs. Standing backlog on `@ccc-wiki/entities/skills/route.md`. K231/K232 brief: CCC `briefs/2026-08-11_route-skill-k231-k232-steals.md`.
 
 **claude-ds worker (2026-08-14 v2.3.2):** official DeepSeek Harness `dsh` (pin `install-dsh.ps1` → `~/.dsh-cemini`) behind PATH name `claude-ds`. Default `deepseek-v4-flash`; `-Model deepseek-v4-pro` is the **Grok CLI usage-out stand-in**. Always-approve = `DSH_PERMISSION_MODE=danger-full-access`. Isolated Claude Code **2.1.222** at `~/.deepseek-claude` is **fallback** (`CLAUDE_DS_FORCE_LEGACY=1`). OpenCode/Reasonix remain **NO-GO** as extra coding loops (`@ccc-wiki/entities/tools/deepseek-harness.md`).
+
+**K242 Glean / DRAM (2026-08-19):** Enterprise model routing is now a product (Glean automatic mode chosen mainly for cost; claimed ~$0.45/task vs Claude Cowork). That is **CCC backlog**, not a reason to swap `/route` or PATH `claude-ds`. DRAM +500%/12mo [TENTATIVE] raises local-lab capex; still skip uncensored HF weights.

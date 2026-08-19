@@ -28,6 +28,15 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-19 — K242)
+
+- **K242 ingest** — 9 NEW inbox (2 evals + 7 newsletters). Dual-ID: OSINT K242 ≠ Trajectory Sentinel K242. Raws archived to egress-fi.
+- **K242 Phase-0** — `scripts/adopt_k242_phase0.sh`: ~192MB (mdflux, Aliens_eye, betterwright, easy-agent, vphone-cli, ai-memory, watermarks-remover, BloodBash Extract-only). **0 new Integrate GO.** Transkribus sole HTR. Qwen uncensored Watch no weights. rybbit AGPL no clone.
+- **K242 newsletters** — Glean routing → CCC (do not swap `/route`). Capital Flows inflation>recession + SMH → GW HITL one watch. EH PM-ban onshore + Kalshi WA geofence **2026-08-19** → gambling **no pm scp**. Klement SLM + WuBlock CORZ wiki-only (**no xsp scp**).
+- **K242 briefs** — OSINT `briefs/2026-08-19_k242-*`. Sibling copy. Dual-ID: OSINT K242 ≠ CCC/Sentinel K242.
+- **Phase-1** — wires appended. Extract tools `policy_wired`.
+- **Open:** Leon email still held (SPCX thesis). Wiki gap detect due (14d since 2026-08-05) — user-gated. No LIVE Discord.
+
 ## Current state (2026-08-18 — K241)
 
 - **K241 ingest** — 18 unique inbox + thesis fold (same sha256 as K240 SPCX note). 2 evals + 8 arXiv + 8 newsletters + OSINT4ALL hub. Raws archived to egress-fi; inbox empty of this batch.

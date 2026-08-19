@@ -9,9 +9,10 @@ related:
   - concepts/llm-routing-deepseek-openrouter-failover.md
   - entities/tools/cursor-route.md
   - sources/substack-rss-outlier-weekly-2026-08-18-cursor-route.md
+  - sources/newsletter-rss-latent-space-2026-08-18-glean-model-routing.md
 maturity: draft
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-19
 read_status: read
 ---
 
@@ -22,6 +23,7 @@ read_status: read
 - @concepts/llm-routing-deepseek-openrouter-failover.md — routing layer repriced
 - @entities/tools/cursor-route.md — do not swap worker because Stripe bought a router
 - @sources/substack-rss-outlier-weekly-2026-08-18-cursor-route.md — public MIT CLI same day
+- @sources/newsletter-rss-latent-space-2026-08-18-glean-model-routing.md — Glean enterprise routing (K242)
 
 ## Raw Concept
 

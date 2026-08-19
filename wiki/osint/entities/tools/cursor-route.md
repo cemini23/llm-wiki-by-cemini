@@ -10,9 +10,10 @@ related:
   - concepts/llm-routing-deepseek-openrouter-failover.md
   - concepts/agent-cost-routing-model-orchestra.md
   - sources/arxiv-2608.16859-harnesseval-w-2026-08-18.md
+  - sources/newsletter-rss-latent-space-2026-08-18-glean-model-routing.md
 maturity: draft
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-19
 wire_status: policy_wired
 wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 wire_note: CCC backlog on entities/skills/route.md — do not swap /route worker
@@ -20,6 +21,7 @@ wire_note: CCC backlog on entities/skills/route.md — do not swap /route worker
 
 ## Relations
 
+- @sources/newsletter-rss-latent-space-2026-08-18-glean-model-routing.md — enterprise routing demand; still do not swap `/route`
 - @sources/substack-rss-outlier-weekly-2026-08-18-cursor-route.md — primary
 - @sources/newsletter-rss-latent-space-2026-08-17-stripe-openrouter.md — routing economics
 - @sources/arxiv-2608.16798-clawgym-ii-2026-08-18.md — harness RL; do not swap worker

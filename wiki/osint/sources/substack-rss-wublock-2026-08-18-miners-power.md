@@ -8,9 +8,10 @@ related:
   - sources/spcx-anthropic-sotp-thesis-2026-08-17.md
   - concepts/labor-vs-capital-wealth-culture.md
   - sources/arxiv-2608.16749-rough-volatility-across-assets-2026-08-18.md
+  - sources/substack-rss-wublock-2026-08-19-core-scientific.md
 maturity: draft
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-19
 read_status: read
 ---
 
@@ -20,6 +21,8 @@ read_status: read
 - @sources/spcx-anthropic-sotp-thesis-2026-08-17.md — Anthropic as power tenant
 - @concepts/labor-vs-capital-wealth-culture.md — power as scarce capital
 - @sources/arxiv-2608.16749-rough-volatility-across-assets-2026-08-18.md — wiki-only finance cluster
+- @sources/substack-rss-wublock-2026-08-19-core-scientific.md — K242 CORZ miner→AI DC
+- @sources/substack-rss-wublock-2026-08-19-core-scientific.md — K242 CORZ miner→AI DC
 
 ## Raw Concept
 

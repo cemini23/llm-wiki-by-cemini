@@ -8,9 +8,10 @@ related:
   - concepts/guruwatcher-newsletter-claim-ledger.md
   - sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md
   - entities/tools/llm-as-a-verifier.md
+  - sources/substack-rss-capital-flows-2026-08-19-equity-positioning.md
 maturity: draft
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-19
 read_status: read
 ---
 
@@ -20,6 +21,8 @@ read_status: read
 - @concepts/guruwatcher-newsletter-claim-ledger.md — most-recent-wins claim ledger
 - @sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md — prior 30y / bonds
 - @entities/tools/llm-as-a-verifier.md — verifier-loop steal for claim ledger
+- @sources/substack-rss-capital-flows-2026-08-19-equity-positioning.md — K242 inflation>recession + SMH decision
+- @sources/substack-rss-capital-flows-2026-08-19-equity-positioning.md — K242 inflation>recession + SMH decision
 
 ## Raw Concept
 
