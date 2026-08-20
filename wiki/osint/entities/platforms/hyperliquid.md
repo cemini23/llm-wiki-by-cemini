@@ -4,6 +4,7 @@ type: entity
 tags: [platform, crypto, perpetuals, dex, cemini-venue]
 keywords: []
 related:
+  - sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md
   - sources/substack-rss-wublock-2026-08-01-weekly-project-updates-pumpfun-cuts.md
   - sources/substack-rss-wublock-2026-07-16-hl-preipo-cxmt.md
   - sources/substack-rss-capital-flows-2026-07-09-purr-hyperliquid-update.md
@@ -28,11 +29,12 @@ related:
   - entities/tools/hyperliquid-python-sdk.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-08-01
+updated: 2026-08-20
 ---
 
 ## Relations
 
+- @sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md — Q2 Vol/PoR + OI/PoR on-chain benchmark (wiki-only leftover)
 - @sources/substack-rss-wublock-2026-08-01-weekly-project-updates-pumpfun-cuts.md — K217 revenue concentration note
 
 - @sources/3-18-crypto-integration-technical-audit.md — primary; deep-read 2026-04-26 (K4)
@@ -61,6 +63,9 @@ updated: 2026-08-01
 The page is reframed as the **venue reference + Cemini-prescribed integration spec**, not as documentation of a deployed pipeline. See @sources/3-18-crypto-integration-technical-audit.md "Prescribed-vs-deployed gap (2026-04-26 K4 deep-read)" for the full evidence trail.
 
 ## Narrative
+
+### WuBlock Q2 Vol/PoR benchmark (2026-08-20 leftover)
+WuBlockchain uses Hyperliquid as the on-chain **Vol/PoR and OI/PoR benchmark** because fabricating the tape is costly. HL TVL $4.88B → $6.11B (+25%) with 30-day derivs $206.8B → $237.7B (+15%); Vol/Reserve **1.44x → 1.30x** (Q2 threshold 1.49x after a 15% band). Wiki-only. [TENTATIVE] single-author construct. See @sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md.
 
 ### What Hyperliquid actually is
 Hyperliquid is a high-performance on-chain perpetuals DEX with sub-second block times and a fully on-chain orderbook. Two execution interfaces matter for a programmatic strategy:

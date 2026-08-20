@@ -28,14 +28,16 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
-## Current state (2026-08-20 — K243)
+## Current state (2026-08-20 — K243 + leftover)
 
+- **Ops leftover** — WuBlock Q2 CEX Vol/OI ingested (`sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md`). Wiki-only. **No xsp/pm scp.** Inbox empty of this file.
+- **Wiki gap detect** — Tier 1 ran 2026-08-20 (47 A / 138 D / 99 E). Next due **2026-08-27**. Descriptive only — no auto Exa.
 - **K243 ingest** — 16 NEW inbox (2 evals + 8 arXiv + 6 newsletters). Dual-ID: OSINT K243 ≠ ACEM/CCC K243. Fold `2608.17511` → `arxiv-2608.16171`. Raws archived to egress-fi; inbox empty of this batch.
 - **K243 Phase-0** — `scripts/adopt_k243_phase0.sh`: ~464MB (WhisperLiveKit, legal-templates, openbot, dnsglobe, nullframe, Lore, google-timeline-visualizer, career-ops, AI-Infra-Guard, spade). **0 new Integrate GO.** purple → Extract/Watch HITL; cursor/plugins → no `~/.cursor/skills` copy. Transkribus sole HTR; WhisperLiveKit is STT only.
 - **K243 papers/newsletters** — Prosopography → Atto (no Barone names). SemaPLC/Eureka/Harness-CL → CCC OOD. CTIFoundry → cyber. SPADE → poker REFERENCE. GLM-5.3/TrueForge/DSH → CCC (do not swap `/route`). Osmani → practical-loop-engineering. EH GOP comms → gambling **no pm scp**. Klement + Moontower wiki-only (**no GW auto-arm / no xsp scp**).
 - **K243 briefs** — OSINT `briefs/2026-08-20_k243-*` (Atto/GW/CCC/cyber/gambling/poker) skill_audit 100/100 + sibling copies. Image-gen MoneyPrinterTurbo via `cross_wiki_route.py`. **No xsp/pm scp.**
 - **Phase-1** — wires appended (OSINT K243 + dual-ID in cemin policy). New Extract `wire_status: policy_wired`. CCC `route.md` backlog row + gambling crossover K243 stub.
-- **Open:** Leon email still held (SPCX thesis). Wiki gap detect due (15d since 2026-08-05) — user-gated (prompt only, do not auto-run). No LIVE Discord.
+- **Open:** Leon email still held (SPCX thesis). Quarterly HL funding backtest due **2026-08-27**. No LIVE Discord.
 
 ## Current state (2026-08-19 — K242)
 

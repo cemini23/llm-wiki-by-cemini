@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-08-20] ops | WuBlock Q2 CEX Vol/OI leftover + wiki gap detect Tier 1
+
+- **WuBlock leftover** (same-day after K243; no new K#): `sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md`. HL is Vol/PoR + OI/PoR benchmark (1.44x → 1.30x; Q2 threshold 1.49x). Clean-ish Binance/OKX; Watch Bybit; Worse Gate 3.25x / MEXC derivs 3.73x OI/PoR 3.06x. Suspicious volume $295B → $519B. RWA perps ~$22.3B/day (SanDisk + SK hynix) → DRAM overlay on `@sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md`. Wiki-only. **No xsp/pm scp.**
+- **Related bumps:** `@entities/platforms/hyperliquid.md`, `@concepts/crypto-derivatives-volume-2026.md`, July spot + July derivs WuBlock sources.
+- **Gap detect Tier 1:** 2795 pages. Type A 47 cited-unread · Type D 138 stale `[NEEDS VERIFICATION]` ≥7d · Type E 99 thin concepts. Report `.local/reports/wiki-gap-detect-2026-08-20.txt`. Cadence last run 2026-08-20 / next due 2026-08-27. **No auto Exa.**
+- Archived leftover RSS to egress-fi.
+
 ## [2026-08-20] ingest | K243 — 16-inbox evals + 8 arXiv + 6 newsletters (WhisperLiveKit STT / SPADE REFERENCE)
 
 - **Dual-ID:** OSINT K243 = this inbox (20 Aug 2026). Do not collapse onto ACEM / CCC K243 (`cemini-phase1-policy-wires.mdc`). Resolve by file+wiki / arXiv / brief path.

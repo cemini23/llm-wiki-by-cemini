@@ -7,6 +7,13 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### Ops leftover (2026-08-20)
+Same-day leftover after K243 (no new K#). Wiki-only. **No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [wublock-q2-cex-vol-oi](sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md) | Q2 CEX Vol/PoR + OI/PoR vs HL benchmark; Gate/MEXC inflated; RWA DRAM perps | draft |
+
 ### K243 ingest (2026-08-20)
 Dual-ID: **OSINT K243** = this inbox (2 evals + 8 arXiv + 6 newsletters). Do not collapse onto ACEM / CCC K243. Fold: `2608.17511` → `arxiv-2608.16171-rare-event-sampling-2026-08-18.md`.
 

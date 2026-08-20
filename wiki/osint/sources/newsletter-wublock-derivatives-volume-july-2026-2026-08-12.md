@@ -6,9 +6,10 @@ keywords: [wublock, derivatives-volume, perps, binance, okx, bybit, hyperliquid,
 related:
   - concepts/crypto-derivatives-volume-2026.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-20
 read_status: read
 ---
 
@@ -16,6 +17,7 @@ read_status: read
 
 - @concepts/crypto-derivatives-volume-2026.md
 - @briefs/xsp-k233-wublock-derivatives-volume.md
+- @sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md — Q2 Vol/PoR + OI/PoR quality overlay (wiki-only leftover)
 
 ## Raw Concept
 

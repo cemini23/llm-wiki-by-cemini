@@ -6,9 +6,10 @@ keywords: [wublock, spot-volume, binance, july-2026, moM, exchange-concentration
 related:
   - concepts/crypto-asset-taxonomy.md
   - concepts/xsp-lane-trading-framework.md
+  - sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md
 maturity: draft
 created: 2026-08-11
-updated: 2026-08-11
+updated: 2026-08-20
 read_status: read
 ---
 
@@ -16,6 +17,7 @@ read_status: read
 
 - @concepts/crypto-asset-taxonomy.md
 - @concepts/xsp-lane-trading-framework.md
+- @sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md — Q2 Vol/PoR quality overlay (wiki-only leftover)
 
 ## Raw Concept
 
