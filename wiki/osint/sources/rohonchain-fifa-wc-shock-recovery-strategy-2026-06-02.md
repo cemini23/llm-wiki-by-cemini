@@ -1,6 +1,7 @@
 ---
 title: "@RohOnChain — Trade FIFA World Cup like a quant (shock-recovery strategy)"
 type: source
+read_status: read
 tags: [source, trading-posts, polymarket, world-cup-2026, shock-trading, in-play, microstructure, k94]
 keywords: [rohonchain, shock-detection, five-dimension-classifier, laddered-limits, dome-api, percentile-depth, football-lp]
 related:

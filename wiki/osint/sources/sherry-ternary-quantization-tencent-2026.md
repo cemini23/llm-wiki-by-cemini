@@ -16,7 +16,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -42,7 +42,7 @@ updated: 2026-04-30
 - **Read status**: read (full deep-read 2026-04-30)
 - **arXiv**: `2601.07892`
 - **Code/repo**: `github.com/Tencent/AngelSlim` (Tencent's open-source LLM compression toolkit)
-- **License**: not enumerated in extracted text — to verify on Tencent/AngelSlim repo
+- **License**: Apache-2.0 for AngelSlim toolkit, except third-party components listed in `LICENSE` (`gh api` 2026-08-20; GitHub SPDX field is `NOASSERTION`)
 - **Test hardware**: Intel i7-14700HX CPU (commodity desktop)
 
 ## Narrative
@@ -132,7 +132,7 @@ Per-group quantization (group=128) is the recommended default but the per-tensor
 
 1. **First local-inference path actually feasible on the deployed Hetzner CPX21.** Sherry-quantized LLaMA-3.2-1B at 1.25 bits weighs **~0.16 GB** (1B params × 1.25 bits / 8 bits/byte ≈ 156 MB) plus per-group scaling factors — well under the CPX21's 4 GB RAM ceiling. Even the 3B variant (~470MB weights) fits comfortably alongside the existing services. **Activates** the previously-retracted local-weights path of `@entities/infrastructure/deepseek-r1-14b.md`, but with a **smaller** model.
 2. **Hardware match**. Sherry's benchmarks are on **Intel i7-14700HX** (commodity desktop CPU). Hetzner's CPX21 is AMD x86_64 — not identical, but the SIMD-friendliness logic (power-of-two AVX2/AVX-512 lanes) carries across vendors; performance should generalize.
-3. **AngelSlim is Tencent open-source.** `github.com/Tencent/AngelSlim` is the LLM-compression toolkit; license to verify but Tencent's typical pattern is Apache-2.0 (non-poison-pill family per `@concepts/ip-sale-readiness.md`).
+3. **AngelSlim is Tencent open-source.** `github.com/Tencent/AngelSlim` is the LLM-compression toolkit. **License `[CONFIRMED 2026-08-20]`:** Apache-2.0 except third-party components named in `LICENSE` (GitHub API SPDX `NOASSERTION` — read the file, do not trust the badge).
 
 ### Reservations / what it does NOT enable
 
@@ -178,8 +178,8 @@ Per-group quantization (group=128) is the recommended default but the per-tensor
 
 ## Open questions / NEEDS VERIFICATION
 
-- `[NEEDS VERIFICATION 2026-04-30]` — Tencent/AngelSlim repo license. Likely Apache-2.0 but should confirm before any adoption discussion.
-- `[NEEDS VERIFICATION 2026-04-30]` — does the AngelSlim repo include pre-quantized SherryLLM weights for LLaMA-3.2 1B / 3B, or only training code? Direct-deployment vs build-from-scratch makes a 100× difference in adoption cost.
+- `[CONFIRMED 2026-08-20]` — Tencent/AngelSlim `LICENSE` is Apache-2.0 except listed third-party components. GitHub SPDX metadata is `NOASSERTION`; file text is authoritative.
+- `[CONFIRMED 2026-08-20]` — repo is a compression **toolkit** (code + QAD configs, e.g. Qwen3 Sherry QAD yaml). No drop-in pre-quantized SherryLLM weights for LLaMA-3.2 1B / 3B found; LLaMA-3.2 paths appear as vLLM-patch comments. Adoption cost is train/QAT, not download-and-serve.
 - `[NEEDS VERIFICATION 2026-04-30]` — does BitNet.cpp run on the AMD x86_64 (CPX21) target? Benchmarks are on Intel i7; AMD compatibility likely but not verified.
 - `[NEEDS VERIFICATION 2026-04-30]` — does any DeepSeek-distilled small model (e.g. `deepseek-r1-distill-qwen-1.5b`) come with a working Sherry-style training recipe, or would Cemini need a custom QAT pipeline?
 - Open extension: is there an MoE-friendly variant of Sherry? Cemini's brain is MoE (`deepseek-v4-flash`); ternary quantization on MoE-experts vs shared-router has open empirical questions.

@@ -42,7 +42,7 @@ related:
 maturity: retracted
 hub: true
 created: 2026-04-28
-updated: 2026-06-14
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -192,7 +192,7 @@ Hetzner Cloud CPX-tier (AMD EPYC) Ashburn region pricing as quoted 2026-04-28:
 
 Vendor selection rationale: Hetzner-same-vendor-as-production wins on (a) intra-DC / intra-region latency for the production-brain → librarian-MCP query path, (b) unified ops surface (same Hetzner Cloud control panel, same SSH workflow, same monitoring scrape pattern), (c) competitive pricing — surveyed alternatives 2026-04-28: OVHcloud VPS Comfort ~$11/mo (savings $3/mo, vendor-diversification cost), Vultr/Linode/DigitalOcean $24/mo at this tier (more expensive), Contabo VPS M $9.50/mo with 16 GB RAM (genuinely cheaper but lower-tier SLA — inappropriate for the 24/7 critical reliability target), Oracle Cloud Free Tier $0 with 24 GB RAM ARM (genuinely free but account-reclamation horror stories + ARM-only friction make it operationally risky for "the brain depends on this").
 
-`[NEEDS VERIFICATION 2026-04-28]` Hetzner Cloud Ashburn pricing should be re-checked at provisioning time; tier specs and pricing change.
+`[RETRACTED 2026-08-20]` Hetzner Cloud Ashburn pricing re-check at provisioning time is **moot**. `cemini-librarian` was **deleted 2026-06-14** (`@meta/librarian-decommission-2026-06-14.md`); the CPX21 Ashburn host was never provisioned. Do not treat this page as a live sizing brief. Historical 2026-04-28 survey numbers above are frozen.
 
 ### Migration plan (phased)
 

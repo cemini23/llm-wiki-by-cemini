@@ -1,6 +1,7 @@
 ---
 title: "Gemini DR — World Cup 2026 cross-venue arbitrage dynamics"
 type: source
+read_status: read
 tags: [source, gemini-deep-research, world-cup-2026, polymarket, kalshi, cross-venue, module-6, k83]
 keywords: [contract-mapping, kalshi-ticker, conditional-token-framework, fee-model, semantic-equivalence]
 related:

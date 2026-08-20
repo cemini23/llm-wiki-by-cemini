@@ -8,7 +8,7 @@ related:
   - concepts/code-as-agent-harness.md
 maturity: draft
 created: 2026-08-07
-updated: 2026-08-07
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -22,6 +22,10 @@ updated: 2026-08-07
 
 ## Narrative
 
-**Poker Arena:** candidate for sandbox LB / decide() A-B without fixed-budget waste. Steal method into eval harness notes — no mandatory code clone. CCC: eval-budget discipline.
+Fixed-budget agent-vs-agent matches either keep paying after the result is settled or stop too early; peeking an ordinary CI invalidates coverage. AV-AIVAT pairs **AIVAT** (action-informed, conditionally mean-zero corrections) with **confidence sequences** so an evaluation can stop when evidence suffices and still hand a third party a recheckable claim.
 
-[Source: arXiv:2608.06362]
+Paper numbers (HUNL, 15 LLM-agent configs, 71,439 paired hands): AIVAT cuts variance by a **median 54×**. At 95% / ±1 BB, raw outcomes need a **median 74×** as many hands as AIVAT-corrected outcomes to stop under the asymptotic CS. The exact Empirical-Bernstein CS is much less generous (**~1.37×**) because a declared payoff bound imposes a width floor — variance reduction does not automatically become earlier stopping. The online value model may use games `1:t−1` only; **game t must not score its own correction**. Naive peeking of a fixed-sample interval produced **61% false positives** under the null in their rolling-leaderboard sim; recomputing the CS at the reported stop overturned those claims.
+
+**Poker Arena:** steal the *stopping + release protocol* (corrected prefix, rule, bound, CS settings) for sandbox LB / `decide()` A-B — not a mandatory clone. Do not use the current hand’s outcome to fit the correction. CCC: eval-budget discipline; anytime-valid > naive CI peeking.
+
+[Source: arXiv:2608.06362 (abstract + §1, retrieved 2026-08-20)]

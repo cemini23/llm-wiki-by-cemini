@@ -1,6 +1,7 @@
 ---
 title: "Gemini DR — GitHub sports betting & PM bot landscape (targeted links)"
 type: source
+read_status: read
 tags: [source, gemini-deep-research, github, sports-betting, polymarket, phase-0, k86]
 keywords: [open-source, copy-trading, cross-venue, agents, skillnet, ops-hygiene, steal-from]
 related:

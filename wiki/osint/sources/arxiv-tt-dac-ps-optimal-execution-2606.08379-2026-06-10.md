@@ -1,6 +1,7 @@
 ---
 title: TT-DAC-PS optimal trade execution (arXiv 2606.08379)
 type: source
+read_status: read
 tags: [source, arxiv, quant-finance, reinforcement-learning, optimal-execution, market-microstructure]
 keywords: [2606.08379, TT-DAC-PS, implementation-shortfall, actor-critic, TD3, Almgren-Chriss, LOB]
 related:

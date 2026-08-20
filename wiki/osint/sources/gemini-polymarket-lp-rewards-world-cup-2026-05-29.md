@@ -1,6 +1,7 @@
 ---
 title: "Gemini DR — Polymarket LP rewards analysis (FIFA World Cup advance markets)"
 type: source
+read_status: read
 tags: [source, gemini-deep-research, polymarket, lp-rewards, world-cup-2026, market-making, k82]
 keywords: [liquidity-rewards, quadratic-spread, adjusted-midpoint, capital-tiers, adverse-selection, pre-match-cancel]
 related:

@@ -1,6 +1,7 @@
 ---
 title: "Gemini DR — Sports prediction bot pitfalls & deployment checklist"
 type: source
+read_status: read
 tags: [source, gemini-deep-research, prediction-markets, bot-architecture, sports, world-cup-2026, k82]
 keywords: [adverse-selection, oracle-risk, partial-fill, cross-venue, regulatory, microstructure, retrovalix]
 related:

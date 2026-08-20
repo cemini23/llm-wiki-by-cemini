@@ -1,6 +1,7 @@
 ---
 title: "Gemini DR — World Cup 2026 market gap live verification (May 29)"
 type: source
+read_status: read
 tags: [source, gemini-deep-research, world-cup-2026, cross-venue, fade-watch, live-verification, k83]
 keywords: [group-winner, advance-tbd, alert-threshold, kxwcgroupwin, semantic-blocker]
 related:

@@ -16,7 +16,7 @@ related:
   - meta/federation-operator-hub-stub.md
 maturity: core
 created: 2026-05-31
-updated: 2026-08-05
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -35,7 +35,7 @@ updated: 2026-08-05
 | Field | Value |
 |-------|-------|
 | **Cadence** | Daily — **free arXiv** paper lane (wiki-deduped) → inbox PDFs; Exa news **off** by default |
-| **Last run** | 2026-08-19 |
+| **Last run** | 2026-08-20 |
 | **Script** | `cemini-daily-research-digest` (or `bash scripts/run_daily_research_digest.sh` from repo) |
 | **Config** | `scripts/daily_research_config.yaml` (`exa.paper_mode`, `exa.news_enabled`) |
 | **LaunchAgents** | OSINT `@08:00`; sibling wikis `@08:10+` (+3min stagger); federation summary after last sibling (`reinstall_morning_launchagents.sh`) |

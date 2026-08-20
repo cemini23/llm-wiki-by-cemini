@@ -1,6 +1,7 @@
 ---
 title: "World Cup 2026 bot research — YouTube compilation (35 videos, 4 batches)"
 type: source
+read_status: read
 tags: [source, youtube, world-cup-2026, polymarket, kalshi, lp-rewards, research-compilation, k82]
 keywords: [deadball-tv, crypto-gorilla, seb-montgomery, dunehammer, cross-venue-arb, group-previews, conviction-matrix]
 related:

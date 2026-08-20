@@ -15,7 +15,7 @@ related:
   - concepts/high-signal-paper-patterns.md
 maturity: validated
 created: 2026-04-30
-updated: 2026-04-30
+updated: 2026-08-20
 read_status: read
 ---
 
@@ -169,7 +169,7 @@ The 90-entry KV cache is **~12× smaller** than Gemini-3-Flash's at frontier-com
 
 ## Open questions / NEEDS VERIFICATION
 
-- `[NEEDS VERIFICATION 2026-04-30]` — does the DeepSeek hosted API currently expose this paper's vision capability? Model name? Pricing tier? `deepseek-vit` weights public?
-- `[NEEDS VERIFICATION 2026-04-30]` — code/weights release: does `github.com/deepseek-ai/...` host an open release of this model, or is it research-only at time of paper publication?
-- `[NEEDS VERIFICATION 2026-04-30]` — citation in DeepSeek-V4 base paper (ref [3]) — confirm `DeepSeek-V4` is the actual base, not just architectural lineage. The paper cites `DeepSeek-V4-Flash` consistently but the V4 reference [3] is internal.
+- `[CONFIRMED 2026-08-20]` — public DeepSeek API docs list **deepseek-v4-flash** and **deepseek-v4-pro** with text features (JSON, tools, FIM, thinking). No image/vision modality on https://api-docs.deepseek.com/quick_start/pricing. TwVP weights are not a hosted endpoint.
+- `[CONFIRMED 2026-08-20]` — `github.com/deepseek-ai/Thinking-with-Visual-Primitives` returns **404**. Third-party mirrors exist; they are not an official weights drop. Paper/report only.
+- `[NEEDS VERIFICATION 2026-04-30]` — citation in DeepSeek-V4 base paper (ref [3]) — confirm `DeepSeek-V4` is the actual base, not just architectural lineage. The paper cites `DeepSeek-V4-Flash` consistently but the V4 reference [3] is internal. Public API model versions (as of this check): DeepSeek-V4-Flash-0731 / DeepSeek-V4-Pro-0813.
 - Reproducibility: HAI-LLM is High-flyer's tool — public release status uncertain.

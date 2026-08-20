@@ -1,6 +1,7 @@
 ---
 title: CoreCivic 8-K — California City + Otay Mesa ICE facility sales (Jul 2 2026)
 type: source
+read_status: deep-read
 tags: [source, corecivic, cxw, ice, 8-k, turnkey, sec]
 keywords: [8-K, $1.5B, $1.1B net, DHS, Jul 2 close, Jul 6 announce, management retained]
 related:

@@ -22,7 +22,7 @@ related:
 maturity: validated
 read_status: read
 created: 2026-04-30
-updated: 2026-05-23
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -115,7 +115,7 @@ This is a textbook **status-upgrade-on-deeper-evaluation pattern**, mirroring (i
 
 1. **Kronos-small CPU inference latency** [NEEDS VERIFICATION 2026-04-30] — measure P99 inference latency of 24.7M-param model on standard AMD EPYC vCPU with PyTorch CPU optimizations. Determines if the model can meet trading execution speed limits if used as auxiliary signal source.
 
-2. **pyqlib transitive license audit** [NEEDS VERIFICATION 2026-04-30] — Kronos finetune pipeline depends on pyqlib. Audit transitive deps to ensure no copyleft contaminates the IP-sale readiness profile. Use `pip-licenses` or equivalent.
+2. **pyqlib license** `[CONFIRMED 2026-08-20]` — `microsoft/qlib` SPDX **MIT** via GitHub API (same as `@sources/microsoft-qlib.md`, LICENSE file check 2026-04-29). A full `pip-licenses` freeze of a Kronos install was **not** run this session; root is clean, do not assume every transitive is MIT.
 
 3. **Binary Spherical Quantization claim** [CONFIRMED 2026-05-17] — the docx evaluation cites BSQ specifically. Verified against arXiv:2508.02739 §3.1 + Figure 3: the K-line Tokenizer is a Transformer-based autoencoder using a Binary Spherical Quantization (BSQ) layer — a variant of Look-up Free Quantization — projecting continuous OHLCVA latents onto learnable hyperplanes into a k-bit binary code, factorized into n=2 coarse/fine subtokens. The docx claim is accurate.
 

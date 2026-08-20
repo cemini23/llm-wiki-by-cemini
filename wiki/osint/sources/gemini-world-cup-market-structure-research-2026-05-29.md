@@ -1,6 +1,7 @@
 ---
 title: "Gemini DR — 2026 World Cup prediction market structure & contract inventory"
 type: source
+read_status: read
 tags: [source, gemini-deep-research, world-cup-2026, polymarket, kalshi, prediction-markets, k82]
 keywords: [world-cup, advance-to-knockout, group-qualifiers, contract-mapping, gamma, kalshi-qualifiers, maker-rebates, liquidity-rewards]
 related:

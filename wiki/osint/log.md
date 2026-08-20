@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-08-20] ops | gap-detect follow-up (Type A hygiene + Type D handful + Type E thicken + daily digest)
+
+- **Type A:** top-15 cited-unread hits were already narrated (120–573 words) but missing YAML `read_status`. Set `deep-read` / `read` on CoreCivic 8-K + WC Gemini/RohOnChain/CA DOJ/TT-DAC-PS/etc. No new deep-read of unread stubs — this was a detector false-positive from omitted frontmatter.
+- **Type D (handful, live lookup):** AngelSlim `LICENSE` Apache-2.0 except third_party (`NOASSERTION` badge). No Sherry LLaMA-3.2 drop-in weights. DeepSeek public API still text-only (v4-flash/pro docs). `deepseek-ai/Thinking-with-Visual-Primitives` **404**. `microsoft/qlib` MIT reconfirmed. Librarian Ashburn NV **retracted** (host deleted). Left BitNet.cpp AMD soak + TwVP internal ref [3] as open.
+- **Type E:** thickened `@concepts/tokenized-us-equities-onchain-basis-trade.md`, `@concepts/anytime-valid-agent-eval-iigames.md`, `@concepts/agent-harness-auditing-a2e.md` (A2E repo MIT).
+- **Daily digest:** commit `wiki/sweeps/2026-08-20-daily.md`; cadence last run 2026-08-20.
+
 ## [2026-08-20] ops | WuBlock Q2 CEX Vol/OI leftover + wiki gap detect Tier 1
 
 - **WuBlock leftover** (same-day after K243; no new K#): `sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md`. HL is Vol/PoR + OI/PoR benchmark (1.44x → 1.30x; Q2 threshold 1.49x). Clean-ish Binance/OKX; Watch Bybit; Worse Gate 3.25x / MEXC derivs 3.73x OI/PoR 3.06x. Suspicious volume $295B → $519B. RWA perps ~$22.3B/day (SanDisk + SK hynix) → DRAM overlay on `@sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md`. Wiki-only. **No xsp/pm scp.**

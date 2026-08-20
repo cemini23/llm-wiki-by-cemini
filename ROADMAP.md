@@ -31,7 +31,8 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 ## Current state (2026-08-20 — K243 + leftover)
 
 - **Ops leftover** — WuBlock Q2 CEX Vol/OI ingested (`sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md`). Wiki-only. **No xsp/pm scp.** Inbox empty of this file.
-- **Wiki gap detect** — Tier 1 ran 2026-08-20 (47 A / 138 D / 99 E). Next due **2026-08-27**. Descriptive only — no auto Exa.
+- **Wiki gap detect** — Tier 1 ran 2026-08-20 (47 A / 138 D / 99 E). Follow-up: Type A top-15 `read_status` hygiene; handful Type D live lookups; Type E thicken (tokenized equities / AV-AIVAT / A2E). Next due **2026-08-27**. No auto Exa.
+- **Daily digest** — `wiki/sweeps/2026-08-20-daily.md` filed (arxiv-only; news off).
 - **K243 ingest** — 16 NEW inbox (2 evals + 8 arXiv + 6 newsletters). Dual-ID: OSINT K243 ≠ ACEM/CCC K243. Fold `2608.17511` → `arxiv-2608.16171`. Raws archived to egress-fi; inbox empty of this batch.
 - **K243 Phase-0** — `scripts/adopt_k243_phase0.sh`: ~464MB (WhisperLiveKit, legal-templates, openbot, dnsglobe, nullframe, Lore, google-timeline-visualizer, career-ops, AI-Infra-Guard, spade). **0 new Integrate GO.** purple → Extract/Watch HITL; cursor/plugins → no `~/.cursor/skills` copy. Transkribus sole HTR; WhisperLiveKit is STT only.
 - **K243 papers/newsletters** — Prosopography → Atto (no Barone names). SemaPLC/Eureka/Harness-CL → CCC OOD. CTIFoundry → cyber. SPADE → poker REFERENCE. GLM-5.3/TrueForge/DSH → CCC (do not swap `/route`). Osmani → practical-loop-engineering. EH GOP comms → gambling **no pm scp**. Klement + Moontower wiki-only (**no GW auto-arm / no xsp scp**).

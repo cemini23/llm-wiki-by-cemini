@@ -1,6 +1,7 @@
 ---
 title: "Gemini DR — WC 2026 in-play, pregame, and injury-driven LP risks"
 type: source
+read_status: read
 tags: [source, gemini-deep-research, world-cup-2026, polymarket, lp, in-play, pregame, lineup, k85]
 keywords: [courtsiding, lineup-leak, cancel-window, ghost-quote, queue-depletion, hard-halt, cross-market-contagion]
 related:

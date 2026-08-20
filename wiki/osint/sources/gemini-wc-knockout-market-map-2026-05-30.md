@@ -1,6 +1,7 @@
 ---
 title: "Gemini DR — WC 2026 knockout-round market map (Polymarket + Kalshi)"
 type: source
+read_status: read
 tags: [source, gemini-deep-research, world-cup-2026, polymarket, kalshi, knockout, market-phases, k85]
 keywords: [round-of-32, reach-final, stage-of-elimination, match-moneyline, to-advance, resolution-class, market-phases]
 related:

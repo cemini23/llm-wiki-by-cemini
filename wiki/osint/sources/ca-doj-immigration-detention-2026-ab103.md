@@ -1,6 +1,7 @@
 ---
 title: CA DOJ — Immigration Detention in California (5th AB 103 report, May 2026)
 type: source
+read_status: read
 tags: [source, ice, california, ab103, detention, overcrowding, geo-group, corecivic]
 keywords: [AB 103, Bonta, Otay Mesa, Adelanto, Mesa Verde, Golden State Annex, California City, overcrowding, 1433, 1142]
 related:

@@ -1,6 +1,7 @@
 ---
 title: Gemini DR — Atto marketing compliance & claim fence (2026-07-23)
 type: source
+read_status: read
 tags: [source, atto, compliance, upl, ftc, ads, gemini-dr, k192]
 keywords: [UPL, FTC, Meta personal attributes, government documents ads, this-is-isnt, FAQ]
 related:

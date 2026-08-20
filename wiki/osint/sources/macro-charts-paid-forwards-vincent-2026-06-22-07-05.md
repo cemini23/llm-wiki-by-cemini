@@ -1,6 +1,7 @@
 ---
 title: Macro Charts paid forwards (Vincent) — Jun 22–Jul 5 2026
 type: source
+read_status: read
 tags: [source, macro-charts, substack, newsletter, k144, email-forward]
 keywords: [macro-charts, great-reversal, gold, sox, vincent-barone, vinnyb64]
 related:
