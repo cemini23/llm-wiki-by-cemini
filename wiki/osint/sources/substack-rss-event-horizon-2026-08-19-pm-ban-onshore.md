@@ -7,9 +7,10 @@ related:
   - concepts/prediction-market-regulation-2026.md
   - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
   - concepts/kalshi-retail-lp.md
+  - sources/substack-rss-event-horizon-2026-08-20-pm-republican-comms.md
 maturity: draft
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-08-20
 read_status: read
 ---
 

@@ -14,9 +14,10 @@ related:
   - sources/arxiv-2608.13340-uniswap-fee-iv-2026-08-14.md
   - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
   - sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md
+  - sources/substack-rss-event-horizon-2026-08-20-pm-republican-comms.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-19
+updated: 2026-08-20
 ---
 
 ## Relations

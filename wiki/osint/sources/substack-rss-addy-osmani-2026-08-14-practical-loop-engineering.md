@@ -9,9 +9,10 @@ related:
   - concepts/agent-steering-action-boundary.md
   - concepts/code-as-agent-harness.md
   - sources/arxiv-2608.12654-steerbench-work-2026-08-15.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-20
 read_status: read
 ---
 

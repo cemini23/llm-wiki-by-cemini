@@ -15,9 +15,12 @@ related:
   - sources/substack-rss-capital-flows-2026-08-19-equity-positioning.md
   - sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md
   - entities/tools/betterwright.md
+  - entities/tools/career-ops.md
+  - sources/substack-rss-klement-2026-08-20-management-forecast-quality.md
+  - sources/eval-repository-revenue-2026-08-20.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-19
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -33,6 +36,9 @@ updated: 2026-08-19
 - @sources/substack-rss-capital-flows-2026-08-19-equity-positioning.md — K242 inflation>recession; SMH; HITL one watch
 - @sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md — DRAM overlay; no auto-arm
 - @entities/tools/betterwright.md — poller wrappers; no auto-arm
+- @entities/tools/career-ops.md — K243 Playwright/claim ingest pattern; alert-only
+- @sources/substack-rss-klement-2026-08-20-management-forecast-quality.md — K243 mgmt-quality ↔ forecast error; no ticker/level
+- @sources/eval-repository-revenue-2026-08-20.md — K243 career-ops Extract
 
 ## Raw Concept
 
@@ -47,3 +53,5 @@ K233 candidates from Capital Flows (2026-08-12): steels/metals factor (+43% YTD)
 **K239 (2026-08-15 teaser):** 30y toward ATH; 10s30s bear steepener; ~42 bp terminal hikes through 2027; commodities bid; financials rallying with rates; SPX+30y+DXY lockstep; MMFs at 3% not a safe harbor. **Research-note candidates only** — no `watches.json` arm without operator-supplied symbol + op + level. Brief: `../GuruWatcher/briefs/2026-08-15_k239-guruwatcher-capital-flows-bond-crash-watches.md`.
 
 **K240 (2026-08-17):** Glitch SPX Talon weeklies = HITL sector map (not a directive). Moontower RSSB = implied stock-bond corr awareness. VIVO is **not** a watch unless the operator names a level. Dashboards that print a number consumed as fact must structurally abstain (@concepts/structural-abstention-trusted-kernel.md). Never auto-rewrite `watches.json`.
+
+**K243 (2026-08-20):** `career-ops` (MIT) contributes a Playwright/claim-ingest pattern — still alert-only, no order placement. Klement "management quality ↔ forecast error" (Bloom et al.) is **wiki-only**: a firm-characteristic correlation with no ticker or price level → **no GW auto-arm** (no `watches.json` write).

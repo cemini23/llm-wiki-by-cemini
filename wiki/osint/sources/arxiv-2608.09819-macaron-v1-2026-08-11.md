@@ -5,9 +5,10 @@ tags: [arxiv, k232, ccc]
 keywords: [2608.09819, macaron, mixture-of-lora, continual-learning, self-improvement, mindforge]
 related:
   - concepts/continual-harness-online-self-improvement.md
+  - sources/arxiv-2608.19013-harness-continual-learning-2026-08-20.md
 maturity: draft
 created: 2026-08-11
-updated: 2026-08-11
+updated: 2026-08-20
 read_status: skimmed
 ---
 

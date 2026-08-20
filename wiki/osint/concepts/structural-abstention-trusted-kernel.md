@@ -7,9 +7,10 @@ related:
   - sources/arxiv-2608.13926-never-the-number-2026-08-17.md
   - concepts/guruwatcher-macro-watches.md
   - concepts/counterfactual-prompting-baselines.md
+  - sources/substack-rss-klement-2026-08-20-management-forecast-quality.md
 maturity: draft
 created: 2026-08-17
-updated: 2026-08-17
+updated: 2026-08-20
 ---
 
 ## Relations

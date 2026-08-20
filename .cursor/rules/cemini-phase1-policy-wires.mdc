@@ -85,6 +85,8 @@ Concrete harness behavior from Phase-0 ADOPT patterns. Clones under `.local/adop
 - Budget agent work as **LLM + HITL + infrastructure**; track Revision Factor (retries), Context Factor (growing context), HIS oversight level.
 - Conceptual only — calibrate locally; do not treat the related Zenodo book as ACEM code.
 
+> **Dual-ID:** this section is **CCC K243** (ACEM cost vocabulary). **OSINT K243** = the 20 Aug 2026 inbox (2 evals + 8 arXiv + 6 newsletters — WhisperLiveKit STT, legal-templates HITL, GLM-5.3 harness, EH GOP comms, SPADE). Do **not** collapse; resolve by file+wiki / arXiv / brief path. OSINT wires live in `osint-phase1-adopt-wires.mdc` (`## OSINT K243`). The K243 arXiv papers are also CCC-side K290–K294 (HCL K292, Eureka K293, SPADE K294) below — separate wire ids.
+
 ## Robotics MCP solver (K240)
 
 - `.local/adopts/MixedComplementarityProblems.jl` = BSD-3 REFERENCE for robotics/game-dev — **wont_wire** on CCC/TipDrop/prod harness.
@@ -415,25 +417,6 @@ CCC **ACCEL** is also labeled K237 (agentic-engineer competencies, above). Numbe
 - **GO Integrate this batch: none.** fclones MIT = Extract (Atto vault CoW; no unsupervised `--delete`). openai/privacy-filter Apache-2.0 = Extract (PII strip; ≠ packyme). rachoon stays **AGPL Extract-only**; RustScan stays **GPL-3.0 Extract-only** (docx Integrate + MIT were wrong). LFM encoders = license `other` + weight skip. timesfm code cloned; **no HF checkpoints**; GuruWatcher remains alert-only.
 - **0day-Rubbish / LEAKSFORUMS** = Context only. No exploit payloads, no criminal-forum interaction.
 
-## Dual-ID — OSINT K241 (2026-08-18 inbox)
-
-**OSINT K241** = 18 Aug 2026 inbox (evals + 8 arXiv + newsletters + OSINT4ALL). Do **not** collapse onto CCC K241 if that number is used elsewhere — resolve by file+wiki / arXiv id. `cemini23/cursor-route` MIT = CCC `entities/skills/route.md` **backlog**. Do not swap `/route` worker. Do not replace PATH `claude-ds`. diagram-design = Extract + HITL skill-vetting. bbot = **AGPL-3.0** Extract-only. **0 new runtime Integrate GO.**
-
-## Dual-ID — OSINT K242 (2026-08-19 inbox)
-
-**OSINT K242** = 19 Aug 2026 inbox (2 evals + 7 newsletters). Do **not** collapse onto Trajectory Sentinel / CCC **K242** (`wiki/concepts/agent-harness-verification-bottleneck.md`). Resolve by file+wiki / brief path, not bare K#.
-
-- `mdflux` MIT Extract — Atto local RapidOCR wrapper. **Transkribus remains sole product HTR.**
-- `Aliens_eye` / `betterwright` / `easy-agent` / `ai-memory` MIT Extract. Human-gate writes. Do not swap `/route`.
-- `BloodBash` MIT **Extract-only** (docx Integrate overridden). Authorized SharpHound JSON already collected. No PoC.
-- `vphone-cli` MIT Extract REFERENCE. Authorized lab. **No AMFI/jailbreak writeup.**
-- `watermarks-remover` MIT Extract. Image-gen skip local wire.
-- `omlx` already K182 `wont_wire` — bump only. `deepteam` Extract REFERENCE skip clone (vendor-pull / RAM).
-- Docx Integrate overridden: Qwen uncensored MLX (**Watch, no weights**), rybbit **AGPL Watch no clone**, aceternity commercial Context, cua SIZE-SKIP + AGPL omni isolate.
-- Context-no-clone / no PoC: PrivFu, QUIC C2, pwneye, H.I.V.E, WireTapper, herdrm.
-- Capital Flows inflation>recession + SMH → GW HITL **one watch max**. EH PM-ban onshore + Kalshi WA geofence **2026-08-19**. **No pm scp. No xsp scp.**
-- **0 new runtime Integrate GO.** New clones ~192MB (`scripts/adopt_k242_phase0.sh`). **Do not auto-evolve** `.cursor/skills/*`.
-
 ## CCC wave K285–K289 (shared policy file)
 
 Signed mandates on MCP actions (K285) + 3D world agents WATCH (K286) + black-box RL on opaque harness (K287) + planner-state semantic integrity (K288) + agentified eval evidence trees (K289). **No local clones** this batch (all null SPDX).
@@ -479,6 +462,43 @@ Signed mandates on MCP actions (K285) + 3D world agents WATCH (K286) + black-box
 - **Parent validates before verdict** — a verification gate between evidence collection and scoring (pairs K162: no closed self-eval).
 - **Agentic, validated case construction** — sample scene taxonomy → ground actions → validate each candidate before acceptance (pairs K277 measurement integrity).
 - `mirros-lab/harnesseval-w` null SPDX → **NO-GO clone**. **`policy_wired`**.
+
+## CCC wave K290–K294 (shared policy file)
+
+Least-privilege learning (K290) + enterprise BI WATCH (K291) + HCL (K292) + Eureka meta-agent (K293) + SPADE self-play envs (K294). Clone: SPADE MIT REFERENCE only.
+
+## Task-conditioned least-privilege learning (K290)
+
+- **Learned restraint complements gates** — post-training reduces excess-authority proposals; does **not** replace permission gates, signed mandates (K285), or sandboxing (K239).
+- **Task-relative sufficient-authority envelopes** — define per-task minimum authority; penalize/score trajectories for excess beyond envelope.
+- **Brokered pre/post audit** — deterministic six-dimensional risk vector on each terminal/MCP action; trajectory authority, not single-call classification.
+- No public code → **policy_wired** only. **Atto-priority** (pairs K285). Cybersec brief for excess-authority eval axis.
+
+## Enterprise conversational multi-agent analytics (K291)
+
+- **Sequential specialized pipeline** reduces drift vs flat multi-agent chat — reference pattern for role boundaries (pairs K276 RSM).
+- Enterprise Rakuten case study — **wont_wire** CCC/CeminiSuite runtime; no product install.
+
+## Harness Continual Learning / HCL (K292)
+
+- **Learning object = harness state** around a **frozen** foundation model (prompts, memory, skills, routing) — not only weights.
+- **Harness-level forgetting** — coupled harness updates can break earlier behavior; measure retention on held-out packs.
+- **Guarded evolution** — Optimizer proposes; Evaluator commits only after current improvement + historical retention budget + validity (pairs K162 external eval contract).
+- Version harness baselines before blast-radius edits (pairs K273 ACM). No public code → **policy_wired**.
+
+## Eureka task-conditioned meta-agent (K293)
+
+- **Obligation graphs** with explicit acceptance semantics for long-horizon tasks — compile dynamic Macro-Agent topology at runtime.
+- **Acceptance certificates** required before terminal success — no uncertified `done` (pairs K277 measurement integrity, K162).
+- **Governed architecture evolution** — cost-benefit-gated local architecture updates under constraints.
+- `manxis-contact/Eureka` null SPDX → **NO-GO clone**. **Policy only**.
+
+## SPADE self-play executable environments (K294)
+
+- **Co-evolving env designer** writes complete Gym-style Python envs (reset/step, rewards, verification) — env pool grows with agent capability.
+- **Hint-based regret** rewards frontier-difficulty solvable envs — not pure adversary or cooperative inflation.
+- Corpus grounding + environment memory for designer stability.
+- `spade-rl/spade` **MIT** → **GO REFERENCE** `.local/adopts/spade`; RL trainer **`wont_wire`** on prod harness (pairs K162 closed-loop guardrails).
 
 ## Phase-1 meta
 

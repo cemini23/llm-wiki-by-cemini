@@ -8,9 +8,11 @@ related:
   - entities/tools/trainee-to-trainer.md
   - concepts/llm-agent-systems.md
   - concepts/continual-harness-online-self-improvement.md
+  - entities/tools/spade.md
+  - sources/arxiv-2608.19197-spade-2026-08-20.md
 maturity: draft
 created: 2026-06-20
-updated: 2026-06-20
+updated: 2026-08-20
 ---
 
 ## Relations

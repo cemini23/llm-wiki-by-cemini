@@ -5,10 +5,11 @@ tags: [source, newsletter, loop-engineering, ralph, goal, agents, k165]
 keywords: [loop-engineering, ralph-wiggum, cherney, steinberger, addy-osmani, tokenmaxxing]
 related:
   - concepts/cemini-wiki-ingest-workflow.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md
 maturity: validated
 read_status: deep-read
 created: 2026-07-14
-updated: 2026-07-14
+updated: 2026-08-20
 clusters: [agent-orchestration]
 ---
 

@@ -11,9 +11,10 @@ related:
   - concepts/agent-cost-routing-model-orchestra.md
   - sources/arxiv-2608.16859-harnesseval-w-2026-08-18.md
   - sources/newsletter-rss-latent-space-2026-08-18-glean-model-routing.md
+  - sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md
 maturity: draft
 created: 2026-08-18
-updated: 2026-08-19
+updated: 2026-08-20
 wire_status: policy_wired
 wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 wire_note: CCC backlog on entities/skills/route.md — do not swap /route worker

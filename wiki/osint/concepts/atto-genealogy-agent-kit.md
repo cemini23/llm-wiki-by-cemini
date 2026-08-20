@@ -30,9 +30,16 @@ related:
   - entities/tools/easy-agent.md
   - entities/tools/betterwright.md
   - entities/tools/ai-memory.md
+  - sources/eval-multi-repo-revenue-2026-08-20.md
+  - sources/eval-repository-revenue-2026-08-20.md
+  - entities/tools/whisperlivekit.md
+  - entities/tools/legal-templates.md
+  - entities/tools/lore.md
+  - entities/tools/google-timeline-visualizer.md
+  - sources/arxiv-2608.17915-computational-prosopography-2026-08-20.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-17
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -53,6 +60,13 @@ updated: 2026-08-17
 - @entities/tools/easy-agent.md — MIT harness; human-gate `truth.ged`
 - @entities/tools/betterwright.md — Playwright; Antenati IIIF local-only
 - @entities/tools/ai-memory.md — reconstruct-before-inject; no Barone PII
+- @sources/eval-multi-repo-revenue-2026-08-20.md — K243 WhisperLiveKit / legal-templates Extract
+- @sources/eval-repository-revenue-2026-08-20.md — K243 Lore / timeline-visualizer Extract
+- @entities/tools/whisperlivekit.md — Apache-2.0 streaming STT; not HTR; no Barone audio
+- @entities/tools/legal-templates.md — CC0-1.0 ToS templates; HITL lawyer review
+- @entities/tools/lore.md — MIT narrative/entity schemas; no living-person vitals
+- @entities/tools/google-timeline-visualizer.md — MIT timeline maps; no Barone coordinates
+- @sources/arxiv-2608.17915-computational-prosopography-2026-08-20.md — lineage/entity-resolution methodology; no Barone names
 
 ## Raw Concept
 
@@ -64,4 +78,6 @@ Atto is a **local-first desktop kit for organizing Italian civil records and cit
 
 **K239 vault hygiene (Extract, not Integrate):** `fclones` (MIT) for APFS/CoW dedupe of IIIF/PDF trees — `fclones group` then reflink (`cp -c`); never unsupervised `--delete`. `openai/privacy-filter` (Apache-2.0) for fail-closed PII strip before MCP/LLM; **not** packyme/privacy-filter (K215). LFM encoder weights skipped (`license=other`). rachoon stays **AGPL isolate**. Brief: `../atto/briefs/2026-08-15_k239-atto-fclones-privacy-filter-cpu-pii.md`.
 
-[Source: Outlier Weekly 2026-08-11; K239 eval; workspace Atto context]
+**K243 STT + legal + entity-resolution (2026-08-20):** `WhisperLiveKit` (Apache-2.0, ~43MB) is streaming **speech-to-text** for oral-history capture — **not handwriting**; Transkribus stays sole product HTR and any STT path stays local. `legal-templates` (CC0-1.0) feeds ToS drafting under **HITL lawyer review** before ship. `Lore` (MIT) contributes narrative/entity schemas and `google-timeline-visualizer` (MIT) timeline maps — both with **no living-person vitals / no Barone coordinates in git**. Prosopography (arXiv 2608.17915) is a lineage/entity-resolution methodology reference — **no Barone names**. Brief: `briefs/2026-08-20_k243-atto.md`.
+
+[Source: Outlier Weekly 2026-08-11; K239/K243 evals; workspace Atto context]

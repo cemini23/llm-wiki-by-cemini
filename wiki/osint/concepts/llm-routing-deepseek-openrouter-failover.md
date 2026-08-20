@@ -34,9 +34,10 @@ related:
   - sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md
   - sources/newsletter-rss-pragmatic-engineer-2026-08-18-eng-leader-exit.md
   - entities/tools/easy-agent.md
+  - sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-08-19
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -67,6 +68,7 @@ updated: 2026-08-19
 - @sources/newsletter-rss-latent-space-2026-08-19-memory-prices.md — DRAM cost pressure
 - @sources/newsletter-rss-pragmatic-engineer-2026-08-18-eng-leader-exit.md — operator attention scarce
 - @entities/tools/easy-agent.md — MIT harness Extract; not a worker swap
+- @sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md — K243 GLM-5.3 / TrueForge / DSH; do not swap /route
 
 ## Raw Concept
 
@@ -89,3 +91,5 @@ Failover on HTTP 402/429 and quota/balance error strings. Disable with `LLM_FALL
 **claude-ds worker (2026-08-14 v2.3.2):** official DeepSeek Harness `dsh` (pin `install-dsh.ps1` → `~/.dsh-cemini`) behind PATH name `claude-ds`. Default `deepseek-v4-flash`; `-Model deepseek-v4-pro` is the **Grok CLI usage-out stand-in**. Always-approve = `DSH_PERMISSION_MODE=danger-full-access`. Isolated Claude Code **2.1.222** at `~/.deepseek-claude` is **fallback** (`CLAUDE_DS_FORCE_LEGACY=1`). OpenCode/Reasonix remain **NO-GO** as extra coding loops (`@ccc-wiki/entities/tools/deepseek-harness.md`).
 
 **K242 Glean / DRAM (2026-08-19):** Enterprise model routing is now a product (Glean automatic mode chosen mainly for cost; claimed ~$0.45/task vs Claude Cowork). That is **CCC backlog**, not a reason to swap `/route` or PATH `claude-ds`. DRAM +500%/12mo [TENTATIVE] raises local-lab capex; still skip uncensored HF weights.
+
+**K243 GLM-5.3 / TrueForge / DSH (2026-08-20):** Z.ai's GLM-5.3 post-training leans on RL-on-environments + a DSH harness plugin (Cordis). The durable steal is **the harness layer is the cost/diff surface** — TrueForge (MIT) quantifies harness cost; routing must price the harness, not just the token. This is **CCC backlog** on `@ccc-wiki/entities/skills/route.md`; **do not swap `/route` or PATH `claude-ds`**.

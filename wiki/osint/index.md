@@ -7,6 +7,37 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K243 ingest (2026-08-20)
+Dual-ID: **OSINT K243** = this inbox (2 evals + 8 arXiv + 6 newsletters). Do not collapse onto ACEM / CCC K243. Fold: `2608.17511` → `arxiv-2608.16171-rare-event-sampling-2026-08-18.md`.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-repo-revenue](sources/eval-multi-repo-revenue-2026-08-20.md) | 20-URL eval — WhisperLiveKit/legal-templates/openbot Extract; purple override; 0 Integrate GO (K243) | draft |
+| [eval-repository-revenue](sources/eval-repository-revenue-2026-08-20.md) | 20-URL eval — Lore/timeline/career-ops/AI-Infra-Guard Extract; cursor/plugins override; 0 Integrate GO (K243) | draft |
+| [arxiv-2608.17915-prosopography](sources/arxiv-2608.17915-computational-prosopography-2026-08-20.md) | Computational prosopography; lineage/entity-resolution steal → Atto (K243) | draft |
+| [arxiv-2608.18276-branching-rw-magnetic](sources/arxiv-2608.18276-branching-random-walk-magnetic-2026-08-20.md) | Branching RW in magnetic field; wiki-only physics OOD (K243) | draft |
+| [arxiv-2608.18565-semaplc](sources/arxiv-2608.18565-semaplc-2026-08-20.md) | Verification-gated PLC harness; CCC OOD wont_wire; no clone (K243) | draft |
+| [arxiv-2608.18613-ctifoundry](sources/arxiv-2608.18613-ctifoundry-2026-08-20.md) | Agent-native CTI corpus scaffold → cyber brief (K243) | draft |
+| [arxiv-2608.19013-harness-cl](sources/arxiv-2608.19013-harness-continual-learning-2026-08-20.md) | Harness continual learning; pairs Macaron; CCC (K243) | draft |
+| [arxiv-2608.19047-eureka](sources/arxiv-2608.19047-eureka-2026-08-20.md) | Task-conditioned meta-agent orchestration; CCC (K243) | draft |
+| [arxiv-2608.19197-spade](sources/arxiv-2608.19197-spade-2026-08-20.md) | SPADE self-play envs → poker Arena; MIT clone (K243) | draft |
+| [newsletter-glm53-harness](sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md) | GLM-5.3/TrueForge/DSH; harness layer is cost surface (K243) | draft |
+| [newsletter-pe-osmani](sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md) | Cognitive surrender + mutual amplification (K243) | draft |
+| [newsletter-eh-gop-comms](sources/substack-rss-event-horizon-2026-08-20-pm-republican-comms.md) | GOP-underdog comms tail risk; gambling no pm scp (K243) | draft |
+| [newsletter-klement-mgmt](sources/substack-rss-klement-2026-08-20-management-forecast-quality.md) | Management quality ↔ forecast error; wiki-only (K243) | draft |
+| [newsletter-moontower-socrates](sources/substack-rss-moontower-2026-08-19-socrates-highlights.md) | Learning methods; wiki-only no xsp (K243) | draft |
+| [newsletter-moontower-why-learn](sources/substack-rss-moontower-2026-08-19-why-should-i-learn-this.md) | Learning methods; wiki-only no xsp (K243) | draft |
+| [whisperlivekit](entities/tools/whisperlivekit.md) | Apache-2.0 streaming STT; not HTR (K243) | draft |
+| [legal-templates](entities/tools/legal-templates.md) | CC0-1.0 ToS templates; HITL review (K243) | draft |
+| [openbot](entities/tools/openbot.md) | MIT CEL pre-action (K243) | draft |
+| [dnsglobe](entities/tools/dnsglobe.md) | MIT Extract (K243) | draft |
+| [nullframe](entities/tools/nullframe.md) | MIT Extract (K243) | draft |
+| [lore](entities/tools/lore.md) | MIT narrative/entity schemas (K243) | draft |
+| [google-timeline-visualizer](entities/tools/google-timeline-visualizer.md) | MIT timeline maps; no Barone coords (K243) | draft |
+| [career-ops](entities/tools/career-ops.md) | MIT Playwright/claim ingest (K243) | draft |
+| [ai-infra-guard](entities/tools/ai-infra-guard.md) | Apache-2.0 cyber REFERENCE (K243) | draft |
+| [spade](entities/tools/spade.md) | MIT self-play envs REFERENCE (K243) | draft |
+
 ### K242 ingest (2026-08-19)
 | Page | Summary | Maturity |
 |------|---------|----------|

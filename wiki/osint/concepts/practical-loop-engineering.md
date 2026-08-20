@@ -11,9 +11,12 @@ related:
   - entities/tools/loop-engineering.md
   - concepts/agent-steering-action-boundary.md
   - concepts/code-as-agent-harness.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md
+  - sources/substack-rss-moontower-2026-08-19-socrates-highlights.md
+  - sources/substack-rss-moontower-2026-08-19-why-should-i-learn-this.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-08-15
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -25,6 +28,7 @@ updated: 2026-08-15
 - @entities/tools/loop-engineering.md — cobusgreyling MIT *repo* (K129); this page is the 2026 primitive methodology
 - @concepts/agent-steering-action-boundary.md
 - @concepts/code-as-agent-harness.md
+- @sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md — K243 cognitive surrender + mutual amplification
 
 ## Raw Concept
 
@@ -52,3 +56,5 @@ Hard constraints for Cemini:
 6. PE "Grok Bot" is a paywalled teaser — wiki-only.
 
 Do **not** unattended auto-evolve `.cursor/skills/*` as a loop target.
+
+**K243 Osmani (2026-08-19) — cognitive surrender + mutual amplification.** Two failure-mode steals: (1) **cognitive surrender** — delegate tasks you no longer verify to the point you can't judge correctness (junior-dev-from-ChatGPT syndrome); the `/goal`/`/loop` fix is to keep a verifiable artifact, not more tooling. (2) **mutual amplification** — agent + human must each raise the other's capability, not just offload; a loop that runs without a human-checked output is delegation, not engineering. Reinforces: worker ≠ verifier; loops propose, HITL holds. [Source: Pragmatic Engineer 2026-08-19]

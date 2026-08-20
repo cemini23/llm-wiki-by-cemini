@@ -20,9 +20,10 @@ related:
   - sources/arxiv-2608.15987-threshold-cascades-2026-08-18.md
   - sources/arxiv-2608.16171-rare-event-sampling-2026-08-18.md
   - entities/tools/mitaka.md
+  - sources/arxiv-2608.18276-branching-random-walk-magnetic-2026-08-20.md
 maturity: draft
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-08-20
 ---
 
 ## Relations

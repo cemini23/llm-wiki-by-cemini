@@ -7,9 +7,10 @@ related:
   - sources/eval-local-agent-infra-2026-08-19.md
   - concepts/cemini-license-posture.md
   - concepts/atto-genealogy-agent-kit.md
+  - sources/eval-repository-revenue-2026-08-20.md
 maturity: draft
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-08-20
 wire_status: policy_wired
 wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
 wire_note: Reconstruct before inject (pairs MemHarness / K230)

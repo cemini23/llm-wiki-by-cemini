@@ -15,9 +15,10 @@ related:
   - sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md
   - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
   - sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md
+  - sources/substack-rss-event-horizon-2026-08-20-pm-republican-comms.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-19
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -31,6 +32,7 @@ updated: 2026-08-19
 - @sources/substack-rss-event-horizon-2026-08-14-kalshi-sports-mention.md — K239 CFTC mention-market review + WA injunction
 - @sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md — K240 NV $120k/day + optional-update geofence
 - @sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md — K242: ban/limit ≠ full offshore migration; WA geofence day
+- @sources/substack-rss-event-horizon-2026-08-20-pm-republican-comms.md — K243: midterm-commss risk if GOP underdogs; gambling awareness
 
 ## Raw Concept
 
@@ -59,3 +61,5 @@ Net for pm-bot ops: retail-facing incentive/marketing programs are now a regulat
 [Sources: Event Horizon 2026-08-12 + Event Horizon 2026-08-13 (retrieved 2026-08-13)]
 
 **K242 — onshore/geofence, not offshore (2026-08-19).** Event Horizon argues the refrain “if you ban prediction markets the action goes offshore” overstates elasticity. Sports-betting legalization created **new** activity rather than only moving existing offshore books onshore. If US event contracts vanished, payments friction, app-store absence, ad bans, crypto-only UX, and **CFTC tools against US-serving offshore venues** (Polymarket 2022) would leave a large share of volume **extinct, not relocated**. Kalshi’s legal product scaled even though Polymarket international already existed. Comp: post-UIGEA poker players often stopped instead of going offshore. Ops: **Kalshi WA geofence is 2026-08-19**. Mentions markets remain a tiny volume share under CFTC review. No pm-bot scp from this steal — awareness only. [TENTATIVE] single-author argument, not a measured demand elasticity. [Source: Event Horizon 2026-08-19]
+
+**K243 — midterm-commss risk if GOP underdogs (2026-08-20).** Event Horizon frames a commss tail risk: if Republicans go into the midterms as underdogs, party-aligned commss could turn on prediction markets (and Polymarket's GOP skew) as an attack surface — analogous to how the wildfire/cartel narratives gave lawmakers a cudgel. Ops: monitor for GOP-underdog commss as a demand/regulatory risk; **awareness only, no pm scp**. [TENTATIVE] single-author scenario. [Source: Event Horizon 2026-08-20]

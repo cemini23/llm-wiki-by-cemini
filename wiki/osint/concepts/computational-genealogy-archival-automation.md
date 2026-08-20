@@ -79,9 +79,11 @@ related:
   - entities/tools/colibri.md
   - sources/newsletter-outlier-weekly-italy-2026-08-11.md
   - sources/arxiv-2608.12566-domus-2026-08-14.md
+  - entities/tools/lore.md
+  - sources/arxiv-2608.17915-computational-prosopography-2026-08-20.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-08-14
+updated: 2026-08-20
 ---
 
 ## Relations

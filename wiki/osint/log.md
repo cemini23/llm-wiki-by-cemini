@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-08-20] ingest | K243 — 16-inbox evals + 8 arXiv + 6 newsletters (WhisperLiveKit STT / SPADE REFERENCE)
+
+- **Dual-ID:** OSINT K243 = this inbox (20 Aug 2026). Do not collapse onto ACEM / CCC K243 (`cemini-phase1-policy-wires.mdc`). Resolve by file+wiki / arXiv / brief path.
+- **Inbox (16):** 2 evals + 8 arXiv + 6 newsletters. Preingest: **14 NEW, 1 LIKELY (PE Osmani — URL cite is not a dupe of the episode), 1 DUPLICATE** (`arxiv-2608.17511` folds into `@sources/arxiv-2608.16171-rare-event-sampling-2026-08-18.md`). Archived to egress-fi; inbox empty of this batch.
+- **Tool evals:** `sources/eval-multi-repo-revenue-2026-08-20.md` + `sources/eval-repository-revenue-2026-08-20.md`. **0 new runtime Integrate GO.** License `.local/reports/license-k243-2026-08-20.md` (gh api — never trust eval docx). Overrides: `erickochen/purple` docx Integrate → Extract/Watch HITL; `cursor/plugins` docx Integrate → **no** copy into `~/.cursor/skills`.
+- **Phase-0:** `scripts/adopt_k243_phase0.sh` — WhisperLiveKit 40MB, legal-templates 1.8MB, openbot 4.2MB, dnsglobe 5.4MB, nullframe 0.34MB, Lore 45MB, google-timeline-visualizer 38MB, career-ops 74MB, AI-Infra-Guard 243MB, spade 12MB. **~464MB** (<500). Skip NOASSERTION / AGPL / GPL / SIZE-SKIP (MoneyPrinterTurbo ~536MB, full-stack template ~255MB).
+- **arXiv:** prosopography → Atto (no Barone names). SemaPLC + Eureka + Harness-CL → CCC OOD (`wont_wire` / policy). CTIFoundry → cyber. SPADE → poker REFERENCE (MIT clone). Branching-RW magnetic = wiki-only physics OOD.
+- **Newsletters:** GLM-5.3 / TrueForge / DSH → CCC (**do not swap `/route`**). Osmani cognitive surrender → `practical-loop-engineering`. EH GOP-underdog comms → gambling (**no pm scp**). Klement mgmt-quality ↔ forecast error = wiki-only (**no GW auto-arm**). Moontower learning = wiki-only (**no xsp scp**).
+- **Entities (new, `wire_status: policy_wired`):** whisperlivekit, legal-templates, openbot, dnsglobe, nullframe, lore, google-timeline-visualizer, career-ops, ai-infra-guard, spade. **Updated:** ai-memory (HAVE, K243 backlink), cursor-route (K243 backlink).
+- **Concepts (bump):** atto kit (Whisper STT + legal-templates HITL + Lore/timeline + prosopography), local-abliterated (openbot CEL + AI-Infra-Guard), llm-routing (TrueForge/DSH), practical-loop-engineering (Osmani), prediction-market-regulation-2026 (EH GOP comms), cemini-license-posture (K243 overrides), guruwatcher-macro-watches (Klement non-arm).
+- **Briefs:** OSINT `briefs/2026-08-20_k243-*` (Atto / GW / CCC / cyber / gambling / poker) — skill_audit 100/100. Sibling copies in `../atto`, `../GuruWatcher`, CCC, Cyber, Gambling, poker-arena. Image-gen via `cross_wiki_route.py --type brief` (MoneyPrinterTurbo). **No xsp/pm scp.**
+- **Phase-1:** OSINT K243 section in `osint-phase1-adopt-wires.mdc`. Dual-ID note in `cemini-phase1-policy-wires.mdc` (after ACEM K243). CCC `route.md` backlog row + gambling `prediction-markets-crossover` K243 stub.
+- **Gate:** `ingest_session_gate.py` WARN acknowledged — stale `[NEEDS VERIFICATION]` are pre-existing, not this batch.
+
 ## [2026-08-19] ingest | K242 — 9-inbox evals + newsletters (mdflux / BloodBash Extract-only / PM ban onshore)
 
 - **Dual-ID:** OSINT K242 = this inbox (19 Aug 2026). Do not collapse onto Trajectory Sentinel / CCC K242 (`concepts/agent-harness-verification-bottleneck.md`). Resolve by file+wiki / brief path.

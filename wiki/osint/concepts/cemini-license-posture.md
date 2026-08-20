@@ -127,10 +127,22 @@ related:
   - entities/tools/bbot.md
   - entities/tools/mitaka.md
   - concepts/osint4all-catalog.md
+  - sources/eval-multi-repo-revenue-2026-08-20.md
+  - sources/eval-repository-revenue-2026-08-20.md
+  - entities/tools/whisperlivekit.md
+  - entities/tools/legal-templates.md
+  - entities/tools/openbot.md
+  - entities/tools/dnsglobe.md
+  - entities/tools/nullframe.md
+  - entities/tools/lore.md
+  - entities/tools/google-timeline-visualizer.md
+  - entities/tools/career-ops.md
+  - entities/tools/ai-infra-guard.md
+  - entities/tools/spade.md
 maturity: draft
 hub: true
 created: 2026-05-03
-updated: 2026-08-17
+updated: 2026-08-20
 ---
 
 ## Relations
@@ -233,6 +245,18 @@ updated: 2026-08-17
 - @entities/tools/scalar-field.md — K55 Reject; **YC Spring 2025 closed-source SaaS** (competitive-intel marker).
 - @entities/tools/arcticdb.md — **BSL "read the Additional Use Grant" exemplar.** ArcticDB is BSL 1.1 (GitHub shows it as `NOASSERTION`), and the K52 source post framed BSL as "commercial = paid license." Verification (2026-05-18, read the actual `LICENSE.txt`) showed the opposite: the BSL is only as restrictive as its **Additional Use Grant**, and ArcticDB's forbids *only* re-offering it as a multi-tenant hosted Database Service — every other use, incl. commercial internal use, is free, with a 2-year per-version conversion to Apache-2.0. Lesson: a BSL/NOASSERTION label is **not** an automatic reject — read the Additional Use Grant before recording a verdict. Contrast with the genuine poison pills (AGPL-3.0, EUPL-1.2 #11, License-Drift-to-BUSL #10)
 - @concepts/cemini-repository-topology.md — federated repo map (deploy monorepo vs wiki repos); license boundaries when splitting or importing across repos
+- @sources/eval-multi-repo-revenue-2026-08-20.md — K243 20-URL eval; purple Integrate overridden
+- @sources/eval-repository-revenue-2026-08-20.md — K243 20-URL eval; cursor/plugins Integrate overridden
+- @entities/tools/whisperlivekit.md — Apache-2.0 Extract; STT not HTR
+- @entities/tools/legal-templates.md — CC0-1.0 Extract; HITL lawyer review
+- @entities/tools/openbot.md — MIT Extract; CEL pre-action
+- @entities/tools/dnsglobe.md — MIT Extract
+- @entities/tools/nullframe.md — MIT Extract
+- @entities/tools/lore.md — MIT Extract; no living-person vitals
+- @entities/tools/google-timeline-visualizer.md — MIT Extract; no Barone coords
+- @entities/tools/career-ops.md — MIT Extract; GW alert-only
+- @entities/tools/ai-infra-guard.md — Apache-2.0 cyber REFERENCE
+- @entities/tools/spade.md — MIT poker Arena REFERENCE
 
 ## Raw Concept
 
@@ -351,6 +375,10 @@ When the IP is eventually transferred or licensed (see @concepts/ip-sale-readine
 > - **`mxrch/GHunt`** — docx claimed AGPL-3.0; repo has **no LICENSE file** (main + master both 404) and gh api NOASSERTION. Claim unverifiable → treated as no-derivative-rights until proven otherwise (Context tier, no clone, consistent with the virattt precedent).
 > - **`IBM/VAKRA`** — gh api NOASSERTION; LICENSE file = **CC BY-NC-SA 4.0**. Non-commercial share-alike → reference-only (no clone, no vendored eval use in commercial stack). Third NC-family catch in a single batch.
 > Clean verifications this batch: ppt-master MIT (gh api + LICENSE, ~750 MB repo → sparse-adopt), claude-task-viewer MIT (cloned 3.2M), quotio MIT (cloned 165M), benchflow-ai/artifacts AGPL-3.0 (isolate), CosMAP-dr BSD-2-Clause (cloned 109M), sentrux MIT (K235 docx "NOT FOUND" was a false negative — 2nd re-flag). Tally confirms the standing rule: `gh api` **plus** LICENSE-file read, every row, before acting.
+
+### K243 eval addendum (2026-08-20) — two Integrate overrides, 0 new runtime GO
+
+> K243 40-URL pair (@sources/eval-multi-repo-revenue-2026-08-20.md + @sources/eval-repository-revenue-2026-08-20.md) verified via `gh api`. **0 new runtime Integrate GO.** Two docx Integrate rows overridden: `erickochen/purple` (docx Integrate; MIT) → **Extract/Watch HITL** (MCP-to-prod-SSH stays HOLD, no runtime GO); `cursor/plugins` (docx Integrate; **null** SPDX) → **no** copy into `~/.cursor/skills` (misevolution + federation preflight). Copyleft traps confirmed: `dory`/`picosnitch` GPL-3.0 Extract-only; `openwolf`/`Clone-Wars`/`OpenViking`/`plane` AGPL-3.0 no clone; `OpenOutreach`/`modular`/`braindump-butler`/`copilot-discord-bot` NOASSERTION/null no clone; `SemaPLC` NOASSERTION + `Eureka` null no clone. SIZE-SKIP: `MoneyPrinterTurbo` ~536MB, `full-stack-ai-agent-template` ~255MB. Clean Extract clones: WhisperLiveKit Apache-2.0, legal-templates CC0-1.0, openbot/dnsglobe/nullframe/Lore/google-timeline-visualizer/career-ops MIT, AI-Infra-Guard Apache-2.0, spade MIT. Net clone ~464MB (<500). [Source: `.local/reports/license-k243-2026-08-20.md`]
 
 ## Dead Ends
 

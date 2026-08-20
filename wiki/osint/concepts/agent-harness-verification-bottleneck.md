@@ -13,9 +13,14 @@ related:
   - sources/arxiv-2608.13560-autodesign-2026-08-14.md
   - sources/eval-project-revenue-url-2026-08-19.md
   - sources/eval-local-agent-infra-2026-08-19.md
+  - sources/arxiv-2608.18565-semaplc-2026-08-20.md
+  - sources/arxiv-2608.19013-harness-continual-learning-2026-08-20.md
+  - sources/arxiv-2608.19047-eureka-2026-08-20.md
+  - sources/eval-multi-repo-revenue-2026-08-20.md
+  - sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-19
+updated: 2026-08-20
 ---
 
 ## Relations

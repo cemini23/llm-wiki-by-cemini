@@ -19,9 +19,12 @@ related:
   - sources/eval-multi-wiki-revenue-plan-2026-08-18.md
   - sources/arxiv-2608.16112-strategic-technical-debt-2026-08-18.md
   - entities/tools/diagram-design.md
+  - sources/arxiv-2608.19013-harness-continual-learning-2026-08-20.md
+  - sources/eval-repository-revenue-2026-08-20.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md
 maturity: draft
 created: 2026-08-14
-updated: 2026-08-17
+updated: 2026-08-20
 ---
 
 ## Relations
