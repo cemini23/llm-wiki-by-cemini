@@ -7,6 +7,20 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K245 ingest (2026-08-22)
+OSINT K245: 2 arXiv + 3 Latent Space (Simile+AINews folded) + Glitch Talon leftover + Klement + Wu weeklies folded. EH Johnson inbox **folded** into K244 source (same URL). Phase-0: grpo-llm-unlearning Apache-2.0 Extract, **0 Integrate GO**. **xsp scp yes** / **pm scp no**.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-2608.17804-grpo-unlearning](sources/arxiv-2608.17804-grpo-unlearning.md) | GRPO unlearning: reward spec ≠ RWKU endpoint; R2-Rubric broad-answer (K245) | draft |
+| [arxiv-2608.19902-brain-researcher](sources/arxiv-2608.19902-brain-researcher.md) | Neuroimaging agent harness; +70.2 pp tool-select; wiki-only OOD (K245) | draft |
+| [newsletter-simile-simulation](sources/newsletter-rss-latent-space-2026-08-21-simile-simulation.md) | Simile $2B / 85% twins + AINews synthetic-pipeline grid (K245) | draft |
+| [newsletter-agent-harness](sources/newsletter-rss-latent-space-2026-08-22-agent-harness.md) | Harness-Bench 52.4–76.2; attention-interface leftover (K245) | draft |
+| [glitchspx-talon-aug24](sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md) | Talon 24–28 Aug HITL; SPXW vs VXX/IWM (K245) | draft |
+| [klement-polarisation](sources/substack-rss-klement-2026-08-21-polarisation.md) | Tinbergen: social circle > news diet; no GW arm (K245) | draft |
+| [wublock-weekly-hl-us](sources/substack-rss-wublock-2026-08-21-weekly-hl-us.md) | BTC squeeze + Trump/CFTC HL US-entry claim (K245) | draft |
+| [grpo-llm-unlearning](entities/tools/grpo-llm-unlearning.md) | Apache-2.0 Extract/REFERENCE; wont_wire (K245) | draft |
+
 ### K244 ingest (2026-08-21)
 OSINT K244: 8 arXiv (1 cluster of 3) + 5 newsletters → 10 sources + 5 concepts. Skips: Klement, Capital Flows, Wu weekly, Poolside gossip, Pragmatic Engineer teaser, Brain Researcher 2608.19902. **No xsp/pm scp.** Phase-0 none.
 

@@ -4,6 +4,7 @@ type: entity
 tags: [platform, crypto, perpetuals, dex, cemini-venue]
 keywords: []
 related:
+  - sources/substack-rss-wublock-2026-08-21-weekly-hl-us.md
   - sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md
   - sources/substack-rss-wublock-2026-08-01-weekly-project-updates-pumpfun-cuts.md
   - sources/substack-rss-wublock-2026-07-16-hl-preipo-cxmt.md
@@ -29,11 +30,12 @@ related:
   - entities/tools/hyperliquid-python-sdk.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-08-20
+updated: 2026-08-22
 ---
 
 ## Relations
 
+- @sources/substack-rss-wublock-2026-08-21-weekly-hl-us.md — K245 Trump/CFTC US-entry claim + HL hosted largest BTC-USD liquidations in the squeeze
 - @sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md — Q2 Vol/PoR + OI/PoR on-chain benchmark (wiki-only leftover)
 - @sources/substack-rss-wublock-2026-08-01-weekly-project-updates-pumpfun-cuts.md — K217 revenue concentration note
 
@@ -66,6 +68,9 @@ The page is reframed as the **venue reference + Cemini-prescribed integration sp
 
 ### WuBlock Q2 Vol/PoR benchmark (2026-08-20 leftover)
 WuBlockchain uses Hyperliquid as the on-chain **Vol/PoR and OI/PoR benchmark** because fabricating the tape is costly. HL TVL $4.88B → $6.11B (+25%) with 30-day derivs $206.8B → $237.7B (+15%); Vol/Reserve **1.44x → 1.30x** (Q2 threshold 1.49x after a 15% band). Wiki-only. [TENTATIVE] single-author construct. See @sources/substack-rss-wublock-2026-08-20-q2-cex-vol-oi.md.
+
+### K245 — US-entry claim + squeeze tape (2026-08-22)
+Wu 21 Aug: Trump said CFTC Chair Selig is pushing Hyperliquid into the US market “compliantly”; cites a first “genuine” BTC perp on a CFTC-registered exchange in May. Same week HL hosted the largest single BTC-USD liquidations in the squeeze ($23.6M then $48.8M). [TENTATIVE] single-author + political speech — not a listing, not a Cemini venue change. Wiki-only. See @sources/substack-rss-wublock-2026-08-21-weekly-hl-us.md.
 
 ### What Hyperliquid actually is
 Hyperliquid is a high-performance on-chain perpetuals DEX with sub-second block times and a fully on-chain orderbook. Two execution interfaces matter for a programmatic strategy:

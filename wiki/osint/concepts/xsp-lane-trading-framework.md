@@ -4,6 +4,7 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md
   - sources/substack-rss-glitchspx-2026-08-16-talon-weekly.md
   - sources/substack-rss-moontower-2026-08-16-324-rssb.md
   - sources/substack-rss-wublock-2026-08-16-asia-top10.md
@@ -130,10 +131,11 @@ related:
   - sources/arxiv-2608.16749-rough-volatility-across-assets-2026-08-18.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-08-17
+updated: 2026-08-22
 ---
 
 ## Relations
+- @sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md — K245 Talon HITL map (SPXW vs VXX/IWM)
 - @sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md — K236 website traffic (Deribit −44.7% confirms −44.4% volume)
 - @concepts/crypto-venue-website-traffic.md — K236 venue retail-traffic series
 - @sources/substack-rss-wublock-2026-08-10-bip-110.md
@@ -254,6 +256,8 @@ updated: 2026-08-17
 Operator discretionary **long-call-only** XSP playbook split into four lanes by tenor and hold style. **Lane B** carries the hedge-fund core-book thesis; **Lane A** is a tactical overnight swing sleeve. Prod automation v1 targets **Lane A exits only** (Robinhood); Hyperliquid SP500 perp is timing shadow only.
 
 ## Narrative
+
+**K245 (2026-08-22).** Glitch SPX Talon week of 24–28 Aug is a HITL map, not a Lane rewrite. SPXW constructive while $7,573.50 holds (swing ladder 8,030–8,070). Crosscurrent: VXX/VIX still have bullish vol structure; SMH is an OTE watch at $555–550; IWM is a bearish rally-fail near $300. Use OTE / break-hold-retest. Do not chase the 137-bullish-setup breadth. Brief: `briefs/xsp-k245-glitchspx-talon-aug24.md`. Never auto-arm.
 
 ### Lane map
 

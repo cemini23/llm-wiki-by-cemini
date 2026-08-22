@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-08-22] ingest | K245 — leftover Talon/Simile + GRPO unlearning + harness attention-interface
+
+- **wave:** K245 · 7 source pages + 1 entity + 4 concept/entity bumps. Inbox 10 files (2 arXiv + 8 newsletters). Dual-ID: **OSINT K245** = this inbox. Resolve by file+wiki.
+- **routing:** GRPO 2608.17804 + LS harness + Simile/AINews → CCC (do not swap `/route`). Glitch Talon → XSP + GuruWatcher HITL. Wu HL-US → hyperliquid wiki-only. Klement polarisation wiki-only. Brain Researcher 2608.19902 thin OOD (K244 skip re-filed so watcher stops looping). EH Johnson inbox **folded** into `@sources/substack-rss-event-horizon-2026-08-21-johnson-prediction-markets.md` (same URL as K244).
+- **phase-0:** `rubenbalbastre/grpo-llm-unlearning` **Apache-2.0** via `gh api` 2026-08-22. 0 stars. Extract/REFERENCE. **0 Integrate GO.** No clone this wave.
+- **briefs:** `briefs/xsp-k245-glitchspx-talon-aug24.md` (scp cemini-prod after skill_audit); `briefs/2026-08-22_k245-guruwatcher-talon-levels.md` + sibling `../GuruWatcher/briefs/`; `briefs/2026-08-22_k245-ccc-harness-simulation.md` + sibling CCC. **Atto skip** (no genealogy steal). **pm scp no.**
+- **phase-1 leftover (Cursor `/phase1`, do not edit `.cursor/skills` here):** attention-interface / interrupt policy; GRPO stays `wont_wire`.
+- **archive:** inbox files on `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
 ## [2026-08-21] ingest | K244 — harness/HTR/leakage + newsletter wave
 
 - **wave:** K244 · 10 source pages + 5 concepts. Inbox 18 files (8 arXiv PDF + 10 newsletters). **No xsp/pm scp.** Phase-0 none.
