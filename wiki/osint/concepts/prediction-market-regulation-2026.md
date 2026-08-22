@@ -16,9 +16,13 @@ related:
   - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
   - sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md
   - sources/substack-rss-event-horizon-2026-08-20-pm-republican-comms.md
+  - concepts/gta6-convertible-currency-thesis.md
+  - sources/ttwo-gta6-cashout-desk-2026-08-20.md
+  - sources/gemini-dr-ttwo-gta6-cashout-2026-08-20.md
+  - sources/substack-rss-event-horizon-2026-08-21-johnson-prediction-markets.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-20
+updated: 2026-08-21
 ---
 
 ## Relations
@@ -33,6 +37,9 @@ updated: 2026-08-20
 - @sources/substack-rss-event-horizon-2026-08-17-pm-policy-klein.md — K240 NV $120k/day + optional-update geofence
 - @sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md — K242: ban/limit ≠ full offshore migration; WA geofence day
 - @sources/substack-rss-event-horizon-2026-08-20-pm-republican-comms.md — K243: midterm-commss risk if GOP underdogs; gambling awareness
+- @concepts/gta6-convertible-currency-thesis.md — GTA$ cashout is FinCEN CVC/MSB, not a CFTC event-contract product; Kalshi/PM licenses do not repeal money-transmitter rules
+- @sources/ttwo-gta6-cashout-desk-2026-08-20.md — TTWO desk pull that keeps event contracts in the wrong bucket
+- @sources/gemini-dr-ttwo-gta6-cashout-2026-08-20.md — Gemini FinCEN section; same wrong-bucket call
 
 ## Raw Concept
 
@@ -63,3 +70,5 @@ Net for pm-bot ops: retail-facing incentive/marketing programs are now a regulat
 **K242 — onshore/geofence, not offshore (2026-08-19).** Event Horizon argues the refrain “if you ban prediction markets the action goes offshore” overstates elasticity. Sports-betting legalization created **new** activity rather than only moving existing offshore books onshore. If US event contracts vanished, payments friction, app-store absence, ad bans, crypto-only UX, and **CFTC tools against US-serving offshore venues** (Polymarket 2022) would leave a large share of volume **extinct, not relocated**. Kalshi’s legal product scaled even though Polymarket international already existed. Comp: post-UIGEA poker players often stopped instead of going offshore. Ops: **Kalshi WA geofence is 2026-08-19**. Mentions markets remain a tiny volume share under CFTC review. No pm-bot scp from this steal — awareness only. [TENTATIVE] single-author argument, not a measured demand elasticity. [Source: Event Horizon 2026-08-19]
 
 **K243 — midterm-commss risk if GOP underdogs (2026-08-20).** Event Horizon frames a commss tail risk: if Republicans go into the midterms as underdogs, party-aligned commss could turn on prediction markets (and Polymarket's GOP skew) as an attack surface — analogous to how the wildfire/cartel narratives gave lawmakers a cudgel. Ops: monitor for GOP-underdog commss as a demand/regulatory risk; **awareness only, no pm scp**. [TENTATIVE] single-author scenario. [Source: Event Horizon 2026-08-20]
+
+**Adjacent (not event contracts):** GTA 6 cashout rumors are a FinCEN CVC / money-transmitter question, not a Kalshi/Polymarket DCM product. Licensed event contracts do not repeal FIN-2013-G001. See `@concepts/gta6-convertible-currency-thesis.md`.

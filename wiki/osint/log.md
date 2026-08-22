@@ -1,5 +1,44 @@
 # Wiki Log
 
+## [2026-08-21] ingest | K244 — harness/HTR/leakage + newsletter wave
+
+- **wave:** K244 · 10 source pages + 5 concepts. Inbox 18 files (8 arXiv PDF + 10 newsletters). **No xsp/pm scp.** Phase-0 none.
+- **routing:** Phoenix/Athar 2608.19385 → Atto brief; Fairoze leakage 2608.19857 + tldrsec #342 + SecPro #248 → cyber; EnvHarness/BPS/Task-CoEvolve cluster + wayfinder + Osmani → CCC; BrowseComp-Plus_CM 2608.20317 wiki-only retrieval; VLM safety-overrides-vision 2608.18628 → image-gen pointer; Event Horizon Johnson/CFTC → pm-kalshi awareness (scp overridden: no retail-bot steal).
+- **skips (archived, no page):** Klement polarisation; Capital Flows Bessent teaser; Wu Blockchain weekly; Latent Space Poolside reverse-execuhire gossip; Pragmatic Engineer Pulse teaser; Brain Researcher arXiv 2608.19902.
+- **briefs:** `../atto/briefs/2026-08-21_k244-phoenix-athar-htr.md`; `../Cybersecurity wiki/briefs/2026-08-21_k244-context-leakage-adr.md`; `../Cemini claude code CCC/briefs/2026-08-21_k244-harness-skill-wayfinder.md`; `../Gambling wiki/briefs/pm-k244-johnson-cftc-integrity.md`; `../Image gen/briefs/2026-08-21_k244-vlm-safety-override-pointer.md`.
+- **phase-1 leftover (Cursor /phase1, do not edit .cursor/skills here):** BPS skill router; EnvHarness wrap; wayfinder skill; SPIFFE agent identity.
+- **archive:** pending egress after lint.
+
+
+## [2026-08-20] audit | ALM tungsten thesis super-audit revision
+
+- **Council:** brief-plan. Cursor GPT-5.6 Sol **FAIL** (mcap pair, convert, APT-vs-all-tungsten, DP intent). API Gemini empty; API GLM stub; API Sol-pro could not read pack (discount). Cursor Fable / Kimi had not returned at patch time.
+- **P0 applied to Desktop:** $17 / ~$4.47B (UW $4.25B = $16.18 prior); convert **US$800M closed 9 Jun** (6-K); China **0.0 kg** kept as tweet wording + APT qualifier; dropped "distribution fingerprint."
+- **Kept:** CFTC 4.41 (house style vs Sol P1). No commit. **No xsp/pm scp.**
+
+## [2026-08-20] query | ALM / Almonty tungsten thesis (operator position)
+
+- **Position:** Western tungsten bottleneck still live; NASDAQ:ALM is the liquid US ticker; stock at **$17 / ~$4.47B** (UW $4.25B is prior close) is not a blind chase. Grants are sector-real, **NO_EVIDENCE** of an ALM-named award.
+- **Tweet:** EhrmantrautCap_ `2090353584676237771` is **EQR.AX** + China→Japan **0.0 kg** tungsten, not an ALM leak. Cousin tape; Aug 17 ALM dark pool **$80.5M** SELL-lean (possible duplicate $31M AH block).
+- **Filed:** `@entities/tickers/alm.md`, `@concepts/western-tungsten-supply-thesis.md`, `@sources/alm-desk-2026-08-20.md`. Desktop: `ALM_Almonty_Tungsten_Thesis_2026-08-20.md`. Pack `reports/audit/pack-alm-tungsten-20260820/`.
+- **UW (cemini-prod, 20 Aug ~17:29Z):** mcap $4.252B, 262.8M sh, earnings 2 Nov. Options thin (Sep $15P multileg $159k). Q2 recap C$43M / Adj EBITDA C$17.6M / NI mostly C$173.1M non-cash; Panasqueira still the revenue. Buyback auth $300M / 14.4M sh starts 24 Aug.
+- Wiki-only. **No xsp/pm scp. No commit unless asked.** Observational. CFTC 4.41.
+
+## [2026-08-20] ingest | Gemini DR GTA 6 cashout (operator keeps unofficial analog)
+
+- Inbox: `GTA 6 Cashout Thesis Research.docx` sha256 `82dd6c6c…` **NEW**. Source `@sources/gemini-dr-ttwo-gta6-cashout-2026-08-20.md`. Archived `cemini-egress-fi:/opt/cemini-bulk/research/osint/GTA 6 Cashout Thesis Research.docx` (local inbox copy removed).
+- Gemini: official player FX **<1%**; creator DevEx 15–20% launch / 65–75% later; Shark Cards core. Useful: ToS, PlayerAuctions `2:25-cv-01880-AJR`, Cfx/Tebex, FinCEN. **Reject FY26 $5.33B bookings** (IR $6.72B). **Reject Miran “no filings”** (UW sell 2025-06-09).
+- Operator still: some in-game↔IRL money thing. New `@concepts/grey-market-game-economies.md` — CS2 Machine B (Steam Wallet closed; Skinport/CSFloat fiat), Roblox Machine A (DevEx $0.0038 / US18+ $0.0054), GTAO Machine C (sued). Thesis falsifier narrowed: no official PayPal ≠ no rail.
+- Gambling brief: `../Gambling wiki/briefs/2026-08-20_cs2-roblox-grey-cashout.md`. Wiki-only. **No xsp/pm scp. No commit unless asked.**
+
+## [2026-08-20] query | TTWO / GTA 6 cashout thesis (operator position)
+
+- **Position:** cashout is coming (Roblox-shaped). Leak bytes stay `[TENTATIVE]`. 2021 Henderson bitcoin/broker tweet is the start of the rumor spine, not CyberLeek Discord (2026-08-19).
+- **Filed:** `@entities/tickers/ttwo.md`, `@concepts/gta6-convertible-currency-thesis.md`, `@sources/ttwo-gta6-cashout-desk-2026-08-20.md`. Backlinks: Tiger Global 13F, prediction-market-regulation-2026. Not added to CeminiSuite 30-name watchlist.
+- **UW (cemini-prod):** 90d opt P/C 0.53 call-heavy (Jun peak 249k calls). Nov 20 $290/$300C = launch lottery. Darkpool leak-day $55.9M < FY26 print $104.4M and preorder $83.4M. Miran exec PTR **sold** $15–50k Jun 2025. **NO_EVIDENCE** of this-admin nepotism inside Take-Two leadership. OpenSecrets lobbying $0 snippet (Cloudflare blocked re-fetch).
+- **IR:** FY26 bookings $6.72B, GAAP EBITDA $760.6M, FY27 guide $8.0–8.2B / EBITDA $1.01–1.07B. yfinance cash ~$1.83B vs debt ~$2.94B.
+- **Gemini DR:** paste-ready dual prompt in source Snippets + gitignored `briefs/2026-08-20_ttwo-gemini-deep-research.md`. Canvas `ttwo-gta6-cashout-thesis`. Wiki-only. **No xsp/pm scp. No commit unless asked.**
+
 ## [2026-08-20] ops | gap-detect follow-up (Type A hygiene + Type D handful + Type E thicken + daily digest)
 
 - **Type A:** top-15 cited-unread hits were already narrated (120–573 words) but missing YAML `read_status`. Set `deep-read` / `read` on CoreCivic 8-K + WC Gemini/RohOnChain/CA DOJ/TT-DAC-PS/etc. No new deep-read of unread stubs — this was a detector false-positive from omitted frontmatter.

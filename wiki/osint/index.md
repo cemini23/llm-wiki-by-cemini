@@ -7,6 +7,22 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K244 ingest (2026-08-21)
+OSINT K244: 8 arXiv (1 cluster of 3) + 5 newsletters → 10 sources + 5 concepts. Skips: Klement, Capital Flows, Wu weekly, Poolside gossip, Pragmatic Engineer teaser, Brain Researcher 2608.19902. **No xsp/pm scp.** Phase-0 none.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-2608.19385-phoenix-athar](sources/arxiv-2608.19385-phoenix-athar-arabic-htr.md) | Phoenix 4.99M HTR + Athar evidence review; CER 19.98%→14.93%; oracle gap 2.15 → Atto (K244) | draft |
+| [arxiv-2608.19857-context-leakage](sources/arxiv-2608.19857-inadvertent-context-leakage.md) | In-context secrets leak via benign outputs; 4-digit 82% Opus; suppression ρ=0.95 (K244) | draft |
+| [arxiv-k244-harness-cluster](sources/arxiv-k244-harness-skill-selection-cluster.md) | EnvHarness + BPS skill-set select + Task-CoEvolve val-task co-evolve → CCC (K244) | draft |
+| [arxiv-2608.20317-browsecomp-cm](sources/arxiv-2608.20317-browsecomp-plus-climbmix.md) | BrowseComp-Plus → ClimbMix 57/830; recall 84%→21%; retrieval not reasoning (K244) | draft |
+| [arxiv-2608.18628-safety-vision](sources/arxiv-2608.18628-safety-overrides-vision.md) | VLM safety abstains while vision is preserved; image-gen pointer (K244) | draft |
+| [newsletter-tldrsec-342](sources/newsletter-rss-tldrsec-2026-08-20-tldr-sec-342.md) | Figma agentic detection / Uber ADR / 1Password SPIFFE (K244) | draft |
+| [newsletter-wayfinder](sources/newsletter-rss-latent-space-2026-08-20-wayfinder.md) | Pocock /wayfinder map-ticket-session fog of war (K244) | draft |
+| [newsletter-osmani-factory](sources/substack-rss-addy-osmani-2026-08-21-software-factory.md) | Human judgment relocates; Warp labels as queue+lock (K244) | draft |
+| [newsletter-eh-johnson-pm](sources/substack-rss-event-horizon-2026-08-21-johnson-prediction-markets.md) | Johnson foreigners claim vs liquid Kalshi House; CFTC IAC; WA geofence (K244) | draft |
+| [newsletter-secpro-248](sources/substack-rss-secpro-2026-08-21-ai-ready-soc.md) | AI-ready SOC: telemetry, agent-as-identity, gather≠decide (K244) | draft |
+
 ### Ops leftover (2026-08-20)
 Same-day leftover after K243 (no new K#). Wiki-only. **No xsp/pm scp.**
 
@@ -610,7 +626,16 @@ Sources are ingested research material (PDFs, articles, notes). One page per can
 
 **Clusters are multi-label.** Each paper carries every matching cluster tag in its frontmatter `clusters:` list. The index below groups by the first matching cluster (for browsing); use Grep over `wiki/sources/` for precise multi-label queries.
 
-Total: **1022 canonical stubs** (LNG desk + K208 Gemini DR wave3 + …)
+Total: **1023 canonical stubs** (TTWO cashout desk + LNG desk + K208 Gemini DR wave3 + …)
+
+### alm-desk-research (2026-08-20)
+
+- [ALM / Almonty desk pull](sources/alm-desk-2026-08-20.md) — UW DP/options since Jul 22 + Q2 PR + convert 6-K (US$800M closed) + OpenCLI; operator tungsten thesis. — `desk` [+alm]
+
+### ttwo-desk-research (2026-08-20)
+
+- [TTWO / GTA 6 cashout thesis desk pull](sources/ttwo-gta6-cashout-desk-2026-08-20.md) — UW weeks/months + FY26/FY27 IR + 2021–2026 leak spine; operator cashout thesis. — `desk` [+ttwo]
+- [Gemini DR — GTA 6 virtual currency & cashout](sources/gemini-dr-ttwo-gta6-cashout-2026-08-20.md) — official player FX <1%; DevEx later; FY26 table conflicts IR. — `docx` [+ttwo]
 
 ### lng-desk-research (2026-07-29)
 
@@ -2066,6 +2091,7 @@ Tickers, companies, people, facilities, organizations — concrete things the re
 
 Six-section institutional template: Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context.
 
+- [Almonty Industries (ALM)](entities/tickers/alm.md) — `[DRAFT 2026-08-20]` Western tungsten; Sangdong/GTP; $17/~$4.47B; convert $800M closed; grant unproven — ticker, tungsten, critical-minerals
 - [Apple Inc. (AAPL)](entities/tickers/aapl.md) — mega cap — ticker-report, gemini-deep-research
 - [Cardano (ADA)](entities/tickers/ada.md) — crypto native (indexed 2026-04-25) — ticker-report, gemini-deep-research
 - [Advanced Micro Devices (AMD)](entities/tickers/amd.md) — high beta — ticker-report, gemini-deep-research
@@ -2103,6 +2129,7 @@ Six-section institutional template: Business Overview · Competitive Landscape �
 - [Solana (SOL)](entities/tickers/sol.md) — crypto native — ticker-report, gemini-deep-research
 - [SPDR S&P 500 ETF (SPY)](entities/tickers/spy.md) — indices / S&P 500 (indexed 2026-04-27) — ticker-report, gemini-deep-research
 - [Tesla (TSLA)](entities/tickers/tsla.md) — high beta — ticker-report, gemini-deep-research
+- [Take-Two Interactive (TTWO)](entities/tickers/ttwo.md) — `[DRAFT 2026-08-20]` Rockstar/GTA 6; operator cashout thesis; UW flow + FY26 IR — gaming, options-flow, gta6
 - [Toast (TOST)](entities/tickers/tost.md) — fintech / restaurant SaaS (Donny note 2026-05-09) — market-research
 - [Vir Biotechnology (VIR)](entities/tickers/vir.md) — `[DRAFT 2026-07-21]` biotech; VIR-5500 prostate TCE primary; commercial v2 K181 — ticker-report, gemini-deep-research, k179, k181
 
@@ -2915,6 +2942,23 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 Topics, theses, methodologies, strategies — ideas the research examines.
 
 **Track C audit status markers** (applied 2026-04-24 per `briefs/track-c-walk-results.md`): `[C]` = `[CONFIRMED]`, `[T]` = `[TENTATIVE]`, `[R]` = `[RETRACTED]`, `[Cd]` = `[CONFIRMED] doc-only`, `[Cr]` = `[CONFIRMED] research-only`.
+
+### K244 ingest (2026-08-21)
+
+- [Arabic HTR evidence review](concepts/arabic-htr-evidence-review.md) — greedy_text + unique/ambiguous/abstain; don't silent-LM-correct Atto lines (K244) — concept, htr, atto, k244
+- [Inadvertent context leakage](concepts/inadvertent-context-leakage.md) — secrets leak through benign outputs; suppression tracks leakage (K244) — concept, privacy, covert-channel, k244
+- [Skill-set selection under budget](concepts/skill-set-selection-under-budget.md) — BPS set-level select, not top-k; EnvHarness wrap; Task-CoEvolve (K244) — concept, skills, harness, ccc, k244
+- [Wayfinder fog-of-war planning](concepts/wayfinder-fog-of-war-planning.md) — map/ticket/session; grill-me vs wayfinder; Osmani factory labels (K244) — concept, planning, ccc, k244
+- [Agent runtime identity + ADR](concepts/agent-runtime-identity-adr.md) — SPIFFE act=agent; Uber ADR; tool-layer safety; agent-as-identity (K244) — concept, identity, detection, cyber, k244
+
+### ALM desk (2026-08-20)
+
+- [Western tungsten supply thesis](concepts/western-tungsten-supply-thesis.md) — operator: bottleneck live, ALM ~$4.47B not cheap, DOE $162M not tungsten — concept, tungsten, almonty
+
+### TTWO desk (2026-08-20)
+
+- [GTA 6 convertible-currency thesis](concepts/gta6-convertible-currency-thesis.md) — operator: official DevEx and/or unofficial CS2-style rail; Gemini official player FX <1% — concept, take-two, gta6, fincen
+- [Grey-market game economies](concepts/grey-market-game-economies.md) — CS2 skins / Roblox DevEx / FIFA coins / GTAO PlayerAuctions; Steam Wallet cannot cash out — concept, virtual-currency, grey-market
 
 ### K237 ingest (2026-08-14)
 
