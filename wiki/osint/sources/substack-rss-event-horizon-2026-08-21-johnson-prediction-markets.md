@@ -24,7 +24,7 @@ read_status: skimmed
 - **title:** House Speaker Says Prediction Markets Swayed By Foreigners Betting On US Elections
 - **author:** Event Horizon (Next Event Horizon)
 - **type:** Substack briefing
-- **location:** research to be indexed/substack-rss-event-horizon-2026-08-21-house-speaker-says-prediction-markets-swayed-by.md
+- **location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-08-21-house-speaker-says-prediction-markets-swayed-by.md`
 - **retrieved:** 2026-08-21
 - **pages:** full briefing
 - **read-status:** skimmed

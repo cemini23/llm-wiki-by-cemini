@@ -30,11 +30,11 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ## Current state (2026-08-21 — K244)
 
-- **K244 ingest** — 10 source pages + 5 concepts (8 arXiv as 5 pages + 5 newsletters). Skips archived-pending: Klement, Capital Flows Bessent, Wu weekly, Poolside gossip, PE Pulse, Brain Researcher 2608.19902. **No xsp/pm scp.** Phase-0 none.
+- **K244 ingest** — 10 source pages + 5 concepts (8 arXiv as 5 pages + 5 newsletters). Skips archived: Klement, Capital Flows Bessent, Wu weekly, Poolside gossip, PE Pulse, Brain Researcher 2608.19902. Raws on egress-fi. **No xsp/pm scp.** Phase-0 none.
 - **Routing** — Phoenix/Athar → Atto; Fairoze leakage + tldrsec #342 + SecPro #248 → cyber; EnvHarness/BPS/Task-CoEvolve + wayfinder + Osmani → CCC; BrowseComp-Plus wiki-only; VLM safety-overrides-vision → image-gen pointer; EH Johnson/CFTC → gambling awareness (no retail-bot steal).
 - **Briefs** — sibling copies (Atto / CCC / cyber / gambling / image-gen). CCC/cyber/gambling/image-gen `briefs/` are gitignored there; Atto brief is tracked.
 - **Phase-1 leftover** — BPS skill router; EnvHarness wrap; wayfinder skill; SPIFFE agent identity. Cursor `/phase1` — do not edit `.cursor/skills` here.
-- **Open:** inbox still holds this batch (egress archive pending). Leon email still held. HL funding backtest due **2026-08-27**. No LIVE Discord.
+- **Open:** inbox leftover for tomorrow 09:00: Latent Space simulation (missed this wave) + Glitch SPX Aug 24–28. Leon email still held. HL funding backtest due **2026-08-27**. No LIVE Discord.
 
 ## Current state (2026-08-20 — K243 + leftover)
 

@@ -22,7 +22,7 @@ read_status: skimmed
 - **title:** Phoenix and Athar: Compact Multi-Domain HTR with Evidence-Aware Review for Arabic Manuscripts
 - **author:** Abdullah Ahmed Ali Mohammed, Thamer Abdulhadi, Ali Haider, Safaa Dhulfiqar Mahdi Wadi (University of Technology, Baghdad; Hugging Face factlogic)
 - **type:** arXiv paper + Hugging Face model card
-- **location:** research to be indexed/arxiv-2608.19385-phoenix-athar-arabic-htr.pdf
+- **location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2608.19385-beyond-recognition-compact-multi-domain-arabic-m.pdf`
 - **retrieved:** 2026-08-21
 - **pages:** arXiv HTML (full skim of abstract, system, sealed eval, oracle gap, Athar workflow, licence)
 - **read-status:** skimmed

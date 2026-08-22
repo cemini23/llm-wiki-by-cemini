@@ -20,7 +20,7 @@ read_status: skimmed
 - **title:** #248: Building an AI-Ready SOC, part 1
 - **author:** Packt SecPro
 - **type:** Substack essay
-- **location:** research to be indexed/substack-rss-secpro-2026-08-21-248-building-an-ai-ready-soc-part-1.md
+- **location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-secpro-2026-08-21-248-building-an-ai-ready-soc-part-1.md`
 - **retrieved:** 2026-08-21
 - **pages:** full part-1 (ignore MCP-summit / finance-cert ads)
 - **read-status:** skimmed

@@ -22,7 +22,7 @@ read_status: skimmed
 - **title:** Projecting BrowseComp-Plus onto ClimbMix: Toward More Realistic Corpora for Agentic Search
 - **author:** Sahel Sharifymoghaddam, Lingwei Gu, Yijun Ge, Jimmy Lin (University of Waterloo / Castorini)
 - **type:** arXiv paper + GitHub/HF release
-- **location:** research to be indexed/arxiv-2608.20317-browsecomp-plus-climbmix.pdf
+- **location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2608.20317-projecting-browsecomp-plus-onto-climbmix-toward.pdf`
 - **retrieved:** 2026-08-21
 - **pages:** arXiv HTML (pipeline, 57/830 yield, Table 1 eval, design rationale)
 - **read-status:** skimmed

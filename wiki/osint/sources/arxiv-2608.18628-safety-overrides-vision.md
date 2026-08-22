@@ -20,7 +20,7 @@ read_status: skimmed
 - **title:** When Safety Overrides Vision: Exploring Dynamics between Vision Influence and Safety Alignment in Vision-Language Models
 - **author:** Mehak Gupta, Tanmoy Chakraborty (Yardi School of AI, IIT Delhi)
 - **type:** arXiv paper
-- **location:** research to be indexed/arxiv-2608.18628-safety-overrides-vision.pdf
+- **location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2608.18628-when-safety-overrides-vision-exploring-dynamics.pdf`
 - **retrieved:** 2026-08-21
 - **pages:** arXiv HTML (RQ framing, vision-influence, refusal dir, late-layer interventions)
 - **read-status:** skimmed

@@ -22,7 +22,7 @@ read_status: skimmed
 - **title:** Human judgment doesn't leave the software factory. It relocates.
 - **author:** Addy Osmani
 - **type:** Substack essay
-- **location:** research to be indexed/substack-rss-addy-osmani-2026-08-21-human-judgment-doesnt-leave-the-software-factory.md
+- **location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-addy-osmani-2026-08-21-human-judgment-doesnt-leave-the-software-factory.md`
 - **retrieved:** 2026-08-21
 - **pages:** full essay
 - **read-status:** skimmed

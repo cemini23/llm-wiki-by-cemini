@@ -22,7 +22,7 @@ read_status: skimmed
 - **title:** The /wayfinder Skill: Navigating the “Fog of War” of Planning
 - **author:** Latent Space interview with Matt Pocock (AI Skills for Real Engineers)
 - **type:** newsletter / interview
-- **location:** research to be indexed/newsletter-rss-latent-space-2026-08-20-the-wayfinder-skill-navigating-the-fog-of-war-of.md
+- **location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-latent-space-2026-08-20-the-wayfinder-skill-navigating-the-fog-of-war-of.md`
 - **retrieved:** 2026-08-20
 - **pages:** full interview
 - **read-status:** skimmed

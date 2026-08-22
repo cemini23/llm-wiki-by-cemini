@@ -7,7 +7,7 @@
 - **skips (archived, no page):** Klement polarisation; Capital Flows Bessent teaser; Wu Blockchain weekly; Latent Space Poolside reverse-execuhire gossip; Pragmatic Engineer Pulse teaser; Brain Researcher arXiv 2608.19902.
 - **briefs:** `../atto/briefs/2026-08-21_k244-phoenix-athar-htr.md`; `../Cybersecurity wiki/briefs/2026-08-21_k244-context-leakage-adr.md`; `../Cemini claude code CCC/briefs/2026-08-21_k244-harness-skill-wayfinder.md`; `../Gambling wiki/briefs/pm-k244-johnson-cftc-integrity.md`; `../Image gen/briefs/2026-08-21_k244-vlm-safety-override-pointer.md`.
 - **phase-1 leftover (Cursor /phase1, do not edit .cursor/skills here):** BPS skill router; EnvHarness wrap; wayfinder skill; SPIFFE agent identity.
-- **archive:** pending egress after lint.
+- **archive:** 18 files on `cemini-egress-fi:/opt/cemini-bulk/research/osint/` (sizes verified). Local copies removed. Left in inbox (not this wave): Latent Space simulation/Joon Sung Park; Glitch SPX 2026-08-22 Talon weekly.
 
 
 ## [2026-08-20] audit | ALM tungsten thesis super-audit revision

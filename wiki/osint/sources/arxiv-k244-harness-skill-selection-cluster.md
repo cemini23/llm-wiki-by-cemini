@@ -26,7 +26,7 @@ read_status: skimmed
 - **title:** Harness / skill-selection cluster (three papers, one ingest)
 - **author:** (1) Chengsong Huang et al. — EnvHarness; (2) Yu Chen, Ruishuo Chen, Xun Wang, Zhuoran Li, Longbo Huang (IIIS, Tsinghua) — BPS; (3) Atsuyuki Miyai, Kiyoharu Aizawa, Toshihiko Yamasaki (UTokyo) — Task-CoEvolve
 - **type:** arXiv cluster (3 papers)
-- **location:** research to be indexed/arxiv-2608.19880-envharness.pdf; research to be indexed/arxiv-2608.19993-optimal-skill-selection.pdf; research to be indexed/arxiv-2608.20169-task-coevolve.pdf
+- **location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2608.19880-envharness-awakening-static-worlds-for-agent-lea.pdf`; `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2608.19993-optimal-skill-selection-for-llm-agents-with-prov.pdf`; `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2608.20169-task-coevolve-efficient-harness-optimization-via.pdf`
 - **retrieved:** 2026-08-21
 - **pages:** three arXiv HTML abstracts + method/result sections
 - **read-status:** skimmed

@@ -22,7 +22,7 @@ read_status: skimmed
 - **title:** Inadvertent Context Leakage in Language Models
 - **author:** Jaiden Fairoze, Neal Mangaokar, Kamalika Chaudhuri, Sanjam Garg, Saeed Mahloujifar (FAIR / Meta Superintelligence Labs; UC Berkeley; Google DeepMind)
 - **type:** arXiv paper
-- **location:** research to be indexed/arxiv-2608.19857-inadvertent-context-leakage.pdf
+- **location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2608.19857-inadvertent-context-leakage-in-language-models.pdf`
 - **retrieved:** 2026-08-21
 - **pages:** arXiv HTML (abstract, threat model, digit recon, suppression, SSN agent attack, discussion)
 - **read-status:** skimmed

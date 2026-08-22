@@ -22,7 +22,7 @@ read_status: skimmed
 - **title:** [tl;dr sec] #342 - Figma's Agentic Detection, Agent Identity, Uber's Agent-(E)DR
 - **author:** tl;dr sec (issue roundup; primary writeups Figma / Uber / 1Password / Cloudflare / Wiz / Brockman)
 - **type:** newsletter
-- **location:** research to be indexed/newsletter-rss-tldrsec-2026-08-20-tldr-sec-342---figmas-agentic-detection-agent-id.md
+- **location:** `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-tldrsec-2026-08-20-tldr-sec-342---figmas-agentic-detection-agent-id.md`
 - **retrieved:** 2026-08-20
 - **pages:** full issue (AppSec, Cloud, Blue Team, AI+Security)
 - **read-status:** skimmed
