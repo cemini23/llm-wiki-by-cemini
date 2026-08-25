@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-08-25] ingest | antpalkin X Article + ASD-STE100 CLAUDE.md rollout
+
+- **source:** X Article tweet 2085431604906766385 → article 2085385583174590464 ("The self-improving AI trading machine…"). Full body login-walled; preview + related author posts only.
+- **pages:** `sources/x-article-antpalkin-self-improving-ai-trading-machine-2026-08-06.md`, `concepts/trading-strategy-autopsy-loop.md`, `entities/people/antpalkin-cvxv666.md`, `concepts/asd-ste100-writing-style.md`; bump `concepts/practical-loop-engineering.md`.
+- **briefs:** `briefs/2026-08-25_antpalkin-self-improving-trading-loop.md` (gambling PM awareness, **no scp**); `briefs/2026-08-25_ste100-claude-md-federation-rollout.md` (CeminiSuite submodule follow-up list).
+- **harness:** ASD-STE100 block added to 11 federation root `CLAUDE.md` files (OSINT, CCC, CeminiSuite root, hub, 6 domain wikis, agent-toolkit).
+- **archive:** stub → `cemini-egress-fi:/opt/cemini-bulk/research/osint/x-article-antpalkin-self-improving-ai-trading-machine-2026-08-06.md`.
+
 ## [2026-08-23] query | SPCX–Anthropic pair follow-up (SEO Outlier letter)
 
 - SEO Outlier letter (not a second X Article) after 17 Aug same-print X piece. Paste `../SEO:GEO B&M Business/briefs/2026-08-23_spcx-anthropic-pair-outlier.md`. Listing **NOT CONFIRMED**; public S-1 end-of-August is sources-say. Prod UW API 401. Gamma Tesla–SpaceX YE26 18.5%. No scp. No GW watch. No second thesis PDF.

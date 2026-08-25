@@ -203,6 +203,10 @@ Dual-ID: **OSINT K243** = this inbox (2 evals + 8 arXiv + 6 newsletters). Do not
 | [agent-steering-action-boundary](concepts/agent-steering-action-boundary.md) | Proceed vs hold at state-changing tool calls; dual-ID vs CCC K239 (K239) | draft |
 | [intent-not-form-refusal](concepts/intent-not-form-refusal.md) | Wrapper-invariant refusal; no jailbreak PoC (K239) | draft |
 | [practical-loop-engineering](concepts/practical-loop-engineering.md) | `/goal` `/loop` HITL; worker ≠ verifier (K239) | draft |
+| [x-antpalkin-self-improving-trading](sources/x-article-antpalkin-self-improving-ai-trading-machine-2026-08-06.md) | Self-improving trading machine X Article; autopsy → rewrite loop (2026-08-06) | draft |
+| [trading-strategy-autopsy-loop](concepts/trading-strategy-autopsy-loop.md) | Loss → autopsy → rewrite → re-test; eval-honesty caveats | draft |
+| [asd-ste100-writing-style](concepts/asd-ste100-writing-style.md) | ASD-STE100 harness writing rules for federation CLAUDE.md | draft |
+| [antpalkin-cvxv666](entities/people/antpalkin-cvxv666.md) | @antpalkin — loop-engineered trading X creator stub | draft |
 
 ### K238 ingest (2026-08-15)
 | Page | Summary | Maturity |

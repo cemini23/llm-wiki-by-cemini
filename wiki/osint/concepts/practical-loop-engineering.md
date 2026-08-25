@@ -4,6 +4,9 @@ type: concept
 tags: [concept, loop-engineering, ccc, k239]
 keywords: [Addy Osmani, /goal, /loop, /schedule, Ralph, Flue, verifier]
 related:
+  - sources/x-article-antpalkin-self-improving-ai-trading-machine-2026-08-06.md
+  - concepts/trading-strategy-autopsy-loop.md
+  - concepts/asd-ste100-writing-style.md
   - sources/substack-rss-addy-osmani-2026-08-14-practical-loop-engineering.md
   - sources/newsletter-rss-latent-space-2026-08-15-react-for-agents-flue.md
   - sources/newsletter-rss-pragmatic-engineer-2026-08-14-meta-resignation-wave.md
@@ -16,7 +19,7 @@ related:
   - sources/substack-rss-moontower-2026-08-19-why-should-i-learn-this.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-08-20
+updated: 2026-08-25
 ---
 
 ## Relations
@@ -29,6 +32,9 @@ updated: 2026-08-20
 - @concepts/agent-steering-action-boundary.md
 - @concepts/code-as-agent-harness.md
 - @sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md — K243 cognitive surrender + mutual amplification
+- @sources/x-article-antpalkin-self-improving-ai-trading-machine-2026-08-06.md — trading autopsy → rewrite loop (2026-08-06)
+- @concepts/trading-strategy-autopsy-loop.md — autopsy pattern + eval-honesty caveats
+- @concepts/asd-ste100-writing-style.md — federation CLAUDE.md writing rules
 
 ## Raw Concept
 
