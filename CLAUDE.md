@@ -450,6 +450,8 @@ Write chat replies, explanations, summaries, commit messages, and PR description
 
 Wiki canon: `@concepts/asd-ste100-writing-style.md`. Optional global copy: `~/.claude/CLAUDE.md`.
 
+**Setup default:** When scaffolding a new workspace or helping someone fork `wiki-template`, ensure root `CLAUDE.md` includes this section. Paste block: `scripts/snippets/claude-md-ste100-section.md`.
+
 ## Related — read-only from this workspace
 
 - **CeminiSuite dev stack** — Hetzner host, `/opt/cemini` server root. Connection details (SSH target, IP) live in `.local/server.md` (gitignored). Has its own `CLAUDE.md` for dev work. **Never modify the server's `CLAUDE.md` from here.**

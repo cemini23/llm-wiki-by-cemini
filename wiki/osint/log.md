@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-08-25] harness | ASD-STE100 setup memory — onboarding defaults
+
+- **goal:** Remember STE100 when helping people set up new workspaces.
+- **wired:** `scripts/snippets/claude-md-ste100-section.md` (paste block); `LESSONS.md` entry; `concepts/asd-ste100-writing-style.md` setup checklist; `CLAUDE.md` setup default line.
+- **siblings:** wiki-template SETUP+CLAUDE (SEO repo); CCC `claude-md-five-section-template` + LESSONS; federation-hub operator hub; `~/.claude/CLAUDE.md` global; `~/.cursor/rules/cemini-projects.mdc`; `new-repo` skill step 4.
+
 ## [2026-08-25] ingest | antpalkin X Article + ASD-STE100 CLAUDE.md rollout
 
 - **source:** X Article tweet 2085431604906766385 → article 2085385583174590464 ("The self-improving AI trading machine…"). Full body login-walled; preview + related author posts only.

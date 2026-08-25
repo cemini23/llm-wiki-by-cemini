@@ -6,6 +6,29 @@ Newest entries on top.
 
 ---
 
+## 2026-08-25 — New workspace setup: always add ASD-STE100 to CLAUDE.md
+
+When scaffolding a new wiki, repo, or helping someone fork `wiki-template`, add **`## Writing style (ASD-STE100)`** to the root `CLAUDE.md` before first commit. Federation roots already have it (2026-08-25 pass); **new** repos and CeminiSuite submodules still need manual paste.
+
+**Paste block:** `scripts/snippets/claude-md-ste100-section.md` (this repo) or copy from any federation root `CLAUDE.md`.
+
+**Also wire for Claude Code Home sessions:** `~/.claude/CLAUDE.md` with the same block.
+
+**Checklist when helping someone set up:**
+1. Root `CLAUDE.md` gets STE100 section (near end, before secrets/env).
+2. Wiki fork: `wiki-template/SETUP.md` step 4 includes STE100 (template ships it).
+3. Optional: submodule `CLAUDE.md` files in CeminiSuite — see `briefs/2026-08-25_ste100-claude-md-federation-rollout.md`.
+
+Canon: `@concepts/asd-ste100-writing-style.md` · CCC bootstrap: `@ccc-wiki/concepts/claude-md-five-section-template.md` (Style section).
+
+---
+
+## 2026-08-20 — Friend-share emails: match the last pack’s length internally; do not mention the last pack
+
+When shipping a thesis to Leon/Vincent, use the prior pack (SPCX, etc.) as a silent length/shape template. Do **not** write “same as the SpaceX note,” “same ritual as SPCX,” model-council residue, or other workshop thoughts into the covering email or the PDF. Recipients get the thesis. Process stays in chat / LESSONS.
+
+---
+
 ## 2026-07-07 — Continuous Arena bots: deploy once, never on a timer (`--replace` wipes the season)
 
 The Poker Arena Researcher bot is **continuous / unlimited** (`pvp.continuous=true`, `handLimit="unlimited"`, never self-finishes). The dev.fun guide states plainly: *"one active bot per competition; `--replace` discards unfinished PvP work; leaderboard ranks the **best finalized season**."* We had a `systemd` timer (`cemini-researcher-sandbox-submit.timer`) firing **4×/day** with pin `replace:true`, so it ran `--replace` **3×/day until it hit `sandbox_daily_limit`** — **discarding the in-flight season every 6 hours.** The bot never accumulated a real sample; live TrueSkill sat at `mu=-50` (losing). We initially misread repeated `sandbox_internal_error` on manual re-submits as an Arena outage — the real problem was our own resubmit-thrash pattern plus a genuinely underwater strategy.
