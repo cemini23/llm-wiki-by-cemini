@@ -4,6 +4,7 @@ type: concept
 tags: [genealogy, archival, automation, italy, antenati, draft]
 keywords: [stato civile, parish, Trent 1563, notarial, IIIF, HTR, GEDCOM, Double Metaphone, kinship graph]
 related:
+  - sources/arxiv-2608.22316-arabic-handwriting-warmup-ocr.md
   - entities/tools/qwen-mm-plugins.md
   - entities/tools/diagram-design.md
   - entities/tools/pi-rlm.md
@@ -87,6 +88,7 @@ updated: 2026-08-20
 ---
 
 ## Relations
+- @sources/arxiv-2608.22316-arabic-handwriting-warmup-ocr.md
 - @entities/tools/qwen-mm-plugins.md
 - @entities/tools/diagram-design.md — K230
 - @entities/tools/pi-rlm.md

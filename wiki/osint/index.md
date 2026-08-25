@@ -7,6 +7,33 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K246 ingest (2026-08-25)
+OSINT K246: 15 arXiv + 11 newsletters + 2 tool evals. Phase-0: unlazy, MemMachine, garak, devops-security-agent-skills, book-to-skill, awesome-osint-arsenal, METATRON. **0 Integrate GO.** **No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-2608.20554-aixamine](sources/arxiv-2608.20554-aixamine-unified-eval.md) | Unified black-box safety/security/privacy eval; 46 tests → cyber | draft |
+| [arxiv-2608.21100-reframe](sources/arxiv-2608.21100-reframe-vlm-safety.md) | Test-time MLLM safety via input reframing → image-gen pointer | draft |
+| [arxiv-2608.21101-clawsentry](sources/arxiv-2608.21101-clawsentry-agent-security.md) | Progressive multi-tier agent security gateway → cyber | draft |
+| [arxiv-2608.21107-se-security](sources/arxiv-2608.21107-llm-se-security-evidence-map.md) | SE+security evidence survey → CCC | draft |
+| [arxiv-2608.21156-graph-engineering](sources/arxiv-2608.21156-graph-engineering-llm-agents.md) | Graph Engineering for multi-agent intelligence (K301 wired) | draft |
+| [arxiv-2608.21230-memory-poisoning](sources/arxiv-2608.21230-agent-memory-poisoning.md) | Memory poisoning limits; 1.2% poison collapse (K304 wired) | draft |
+| [arxiv-2608.21310-trajectory-rca](sources/arxiv-2608.21310-trajectory-rca-microservices.md) | Trajectory-level RCA; endpoint correctness insufficient (K306) | draft |
+| [arxiv-2608.21356-ai-authority](sources/arxiv-2608.21356-ai-with-authority-silicon.md) | Salt method: verified compiler to RISC-V tapeout | draft |
+| [arxiv-2608.22316-arabic-warmup](sources/arxiv-2608.22316-arabic-handwriting-warmup-ocr.md) | Modern-handwriting warm-up unstable for Arabic HTR → Atto | draft |
+| [arxiv-2608.22478-iv-surfaces](sources/arxiv-2608.22478-arbitrage-aware-iv-surfaces.md) | Arbitrage-aware IV surface latent diffusion; wiki-only vol | draft |
+| [arxiv-2608.22620-wsvi](sources/arxiv-2608.22620-wsvi-implied-vol-shape.md) | WSVI W-shaped implied vol family; wiki-only options | draft |
+| [arxiv-2608.23283-apodex](sources/arxiv-2608.23283-apodex-agentic-intelligence.md) | Apodex 1.1 environment + coordination scaling → CCC | draft |
+| [arxiv-2608.23395-vat-decomposition](sources/arxiv-2608.23395-vat-agent-decomposition.md) | Right-sizing agent decomposition pilot → CCC RSM | draft |
+| [arxiv-2608.23501-candidate-sourcing](sources/arxiv-2608.23501-requirement-driven-candidate-sourcing.md) | Requirement-driven people-search agent; wiki-only | draft |
+| [arxiv-2608.23552-prime-agent](sources/arxiv-2608.23552-prime-agent-rlm-harness.md) | Prime Agent RLM harness paper (K309 wired) | draft |
+| [arxiv-2608.23564-swe-refactor](sources/arxiv-2608.23564-swe-refactor-bench.md) | SWE Refactor Bench migration audit → CCC | draft |
+| [latent-space-andrew-ng](sources/newsletter-rss-latent-space-2026-08-25-andrew-ng-ai-engineering.md) | Andrew Ng AI Engineering relaunch; 4 skill pillars → CCC | draft |
+| [capital-flows-melt](sources/substack-rss-capital-flows-2026-08-24-melt-up-melt-down-2026.md) | Credit cycle melt-up/down; nominal GDP 6.5% → GW HITL | draft |
+| [event-horizon-cftc](sources/substack-rss-event-horizon-2026-08-24-cftc-innovation-maxxing.md) | CFTC innovation committee; Johnson PM foreign-trader → gambling | draft |
+| [eval-multi-wiki](sources/eval-multi-wiki-repository-2026-08-25.md) | Multi-wiki repo eval batch; Phase-0 adopt_k246 | draft |
+| [eval-revenue-url](sources/eval-revenue-opportunity-url-2026-08-25.md) | Revenue URL eval batch | draft |
+
 ### K245 ingest (2026-08-22)
 OSINT K245: 2 arXiv + 3 Latent Space (Simile+AINews folded) + Glitch Talon leftover + Klement + Wu weeklies folded. EH Johnson inbox **folded** into K244 source (same URL). Phase-0: grpo-llm-unlearning Apache-2.0 Extract, **0 Integrate GO**. **xsp scp yes** / **pm scp no**.
 

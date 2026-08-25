@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-08-23] query | SPCX–Anthropic pair follow-up (SEO Outlier letter)
+
+- SEO Outlier letter (not a second X Article) after 17 Aug same-print X piece. Paste `../SEO:GEO B&M Business/briefs/2026-08-23_spcx-anthropic-pair-outlier.md`. Listing **NOT CONFIRMED**; public S-1 end-of-August is sources-say. Prod UW API 401. Gamma Tesla–SpaceX YE26 18.5%. No scp. No GW watch. No second thesis PDF.
+
+
+## [2026-08-25] ingest | K246 — 15 arXiv + 11 newsletters + 2 evals
+
+- **wave:** K246 · 30 source pages + 1 concept + prime-agent entity bump. Inbox 30 files (15 arXiv + 11 newsletters + 2 eval docx). Dual-ID: **OSINT K246** = this inbox.
+- **routing:** Arabic HTR warm-up → Atto. Capital Flows melt → GW HITL no auto-arm. Latent Space Andrew Ng + harness papers (Prime Agent, Apodex, SWE Refactor, Graph Eng, VAT decomp) → CCC (do not swap `/route`). ClawSentry + aiXamine → cyber. Event Horizon CFTC → gambling awareness **no pm scp**. IV/WSVI vol papers wiki-only. Klement/Moontower/Wu/Outlier wiki-only skips.
+- **phase-0:** `scripts/adopt_k246_phase0.sh`: unlazy MIT, MemMachine Apache-2.0, garak Apache-2.0, devops-security-agent-skills MIT, book-to-skill MIT, awesome-osint-arsenal MIT, METATRON MIT WATCH. **0 Integrate GO.**
+- **briefs:** OSINT `briefs/2026-08-25_k246-*` (Atto/GW/CCC/cyber/gambling). Sibling copies pending operator. **No xsp/pm scp.**
+- **phase-1:** K301/K304/K309 already policy_wired (CCC federation batch); new concept `agent-memory-poisoning-bounded-occupancy.md`; prime-agent entity `wire_status: policy_wired`.
+- **archive:** inbox files → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
 ## [2026-08-22] ingest | K245 — leftover Talon/Simile + GRPO unlearning + harness attention-interface
 
 - **wave:** K245 · 7 source pages + 1 entity + 4 concept/entity bumps. Inbox 10 files (2 arXiv + 8 newsletters). Dual-ID: **OSINT K245** = this inbox. Resolve by file+wiki.

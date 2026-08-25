@@ -6,18 +6,23 @@ keywords: [prime-agent, Prime Intellect, RLM, self-improving]
 related:
   - sources/eval-url-batch-project-fit-2026-08-07.md
   - sources/newsletter-rss-tldrsec-340-2026-08-07.md
+  - sources/arxiv-2608.23552-prime-agent-rlm-harness.md
+  - concepts/k246-agent-harness-wave.md
   - concepts/cemini-license-posture.md
 maturity: draft
 created: 2026-08-07
-updated: 2026-08-07
-wire_status: wont_wire
-wire_note: Cyber-lab RLM trainer; OOD OSINT runtime; authorized-lab only
+updated: 2026-08-25
+wire_status: policy_wired
+wire_target: .cursor/rules/cemini-phase1-policy-wires.mdc
+wire_note: CCC K309 REFERENCE clone; runtime wont_wire on prod harness
 ---
 
 ## Relations
 
 - @sources/eval-url-batch-project-fit-2026-08-07.md
 - @sources/newsletter-rss-tldrsec-340-2026-08-07.md
+- @sources/arxiv-2608.23552-prime-agent-rlm-harness.md
+- @concepts/k246-agent-harness-wave.md
 - @concepts/cemini-license-posture.md
 
 ## Raw Concept

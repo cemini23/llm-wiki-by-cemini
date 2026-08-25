@@ -28,6 +28,15 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-25 — K246)
+
+- **K246 ingest** — 30 inbox (15 arXiv + 11 newsletters + 2 evals). 30 source pages + concept memory-poisoning + prime-agent bump. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k246_phase0.sh`: unlazy, MemMachine, garak, devops-security-agent-skills, book-to-skill, awesome-osint-arsenal, METATRON. **0 Integrate GO.**
+- **Routing** — Atto Arabic warm-up; GW Capital Flows HITL; CCC harness cluster; cyber ClawSentry/aiXamine; gambling CFTC awareness; vol papers wiki-only.
+- **Briefs** — OSINT `briefs/2026-08-25_k246-*`. Sibling copies to atto/GuruWatcher/CCC/cyber/gambling brief dirs.
+- **Phase-1** — K301/K304/K309 federation wires already present; new memory-poisoning concept `policy_wired`.
+- **Open:** Leon email still held. HL funding backtest due **2026-08-27**. No LIVE Discord.
+
 ## Current state (2026-08-22 — K245)
 
 - **K245 ingest** — leftover Talon/Simile from K244 + GRPO unlearning 2608.17804 + LS harness attention-interface + Wu HL-US + Klement polarisation. Brain Researcher 2608.19902 thin OOD page (was K244 skip). EH Johnson inbox folded into K244 source. Raws to egress-fi. **xsp scp yes** (`xsp-k245-glitchspx-talon-aug24`). **pm scp no.**
