@@ -28,6 +28,15 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-26 — K247)
+
+- **K247 ingest** — 15 inbox (8 arXiv + 6 newsletters + 1 eval). 15 source pages + 4 concept hubs + 4 entity tools. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k247_phase0.sh`: 144MB REFERENCE (StarHarness, Recuris, walgit, archify, ponytail, garden-skills, headlong, world-intel-mcp, browser-use). **0 Integrate GO.**
+- **Routing** — CCC StarHarness/Recuris K313/K314; Atto walgit/archify/garden-skills; GW world-intel-mcp + headlong alert-only; cyber TrustDABench + prompt-structure; gambling EH athlete-play + Kalshi football; SEO SparkToro pointer; vol VRP paper wiki-only.
+- **Briefs** — OSINT `briefs/2026-08-26_k247-*`. Sibling copies to atto/GuruWatcher/CCC/cyber/gambling/SEO brief dirs. skill_audit PASS.
+- **Phase-1** — K313/K314 already `policy_wired` in federation rules; no new runtime wires.
+- **Open:** HL funding backtest due **2026-08-27**. STE100 CeminiSuite submodule rollout brief still open. No LIVE Discord.
+
 ## Current state (2026-08-25 — K246)
 
 - **K246 ingest** — 30 inbox (15 arXiv + 11 newsletters + 2 evals). 30 source pages + concept memory-poisoning + prime-agent bump. Raws to egress-fi. **No xsp/pm scp.**
