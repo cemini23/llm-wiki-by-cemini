@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-08-26] ingest | K247 — eval + 8 arXiv + 6 newsletters
+
+- **wave:** K247 · 15 source pages + 4 concepts + 4 entities. Inbox: 1 docx eval + 8 arXiv PDF + 6 newsletter md. Dual-ID: **OSINT K247** = this inbox (CCC K247 = HIVE voice input — resolve by file+wiki).
+- **eval:** Multi-Wiki Resource Plan — Integrate 5 / Extract 4 / Watch 3 / Context 6 / Pass 2. claude-obsidian URL duplicates `@sources/agriciDaniel-claude-obsidian.md`. Entity stubs: walgit (Extract), world-intel-mcp (Integrate REFERENCE alert-only).
+- **routing:** StarHarness K313 + Recuris K314 policy_wired (CCC federation already wired). Simthesizer + Ramp Inspect → harness concept. VRP 24786 wiki-only vol. EH athlete play + Kalshi football → gambling awareness **no pm scp**. Klement deficits → GW HITL. Wu exchange implosions wiki-only. SparkToro → seo-wiki route. 24857 cyber pointer. EviDx/clinical + GUI dissertation thin OOD stubs.
+- **phase-0:** `scripts/adopt_k247_phase0.sh` — 144MB REFERENCE (StarHarness, Recuris, walgit, archify, ponytail, garden-skills, headlong, world-intel-mcp, browser-use). **0 Integrate GO runtime.**
+- **briefs:** `briefs/2026-08-26_k247-*` (Atto/GW/CCC/cyber/gambling/SEO). Sibling copies done. **No xsp/pm scp.**
+- **archive:** inbox → `cemini-egress-fi:/opt/cemini-bulk/research/osint/` (inbox empty).
+
 ## [2026-08-25] harness | ASD-STE100 setup memory — onboarding defaults
 
 - **goal:** Remember STE100 when helping people set up new workspaces.

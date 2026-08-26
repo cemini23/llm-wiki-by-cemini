@@ -26,6 +26,7 @@ related:
   - concepts/cemini-workflow-tooling-audit-2026-05-30.md
   - entities/tools/claude-osint.md
   - entities/tools/atlas-gic-autoresearch.md
+  - sources/eval-multi-wiki-resource-plan-k247-2026-08-26.md
 maturity: validated
 read_status: deep-read
 created: 2026-04-30

@@ -7,6 +7,35 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K247 ingest (2026-08-26)
+OSINT K247: 1 eval + 8 arXiv + 6 newsletters → 4 concepts + 4 entities. Eval: Integrate 5 / Extract 4 / Watch 3 / Context 6 / Pass 2. claude-obsidian URL dupes existing page. StarHarness K313 + Recuris K314 policy_wired. **No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-wiki-resource-plan-k247](sources/eval-multi-wiki-resource-plan-k247-2026-08-26.md) | 20-URL eval — walgit Extract, world-intel-mcp Integrate REFERENCE; claude-obsidian dup (K247) | draft |
+| [arxiv-2608.24145-trustdabench](sources/arxiv-2608.24145-trustdabench-2026-08-26.md) | Structured data analysis reliability/robustness benchmark (K247) | draft |
+| [arxiv-2608.24570-evidx](sources/arxiv-2608.24570-evidx-2026-08-26.md) | Clinical active diagnosis scaffold — wiki-only OOD stub (K247) | draft |
+| [arxiv-2608.24650-simthesizer](sources/arxiv-2608.24650-simthesizer-2026-08-26.md) | Agent-driven LLM serving simulation — CCC awareness (K247) | draft |
+| [arxiv-2608.24749-nl-requirements-gui](sources/arxiv-2608.24749-nl-requirements-gui-dissertation-2026-08-26.md) | GUI-from-NL dissertation thin OOD stub (K247) | draft |
+| [arxiv-2608.24786-vrp-learning-to-rank](sources/arxiv-2608.24786-vrp-learning-to-rank-spxw-2026-08-26.md) | SPXW VRP LightGBM LambdaRank — wiki-only vol (K247) | draft |
+| [arxiv-2608.24804-starharness](sources/arxiv-2608.24804-starharness-2026-08-26.md) | Stratified harness evolution — CCC K313 wired (K247) | draft |
+| [arxiv-2608.24857-prompt-structure-security](sources/arxiv-2608.24857-prompt-structure-security-redistribution-2026-08-26.md) | LLM codegen security redistribution — cyber pointer (K247) | draft |
+| [arxiv-2608.24876-recuris](sources/arxiv-2608.24876-recuris-em-wm-memory-2026-08-26.md) | Recuris EM/WM memory — CCC K314 wired (K247) | draft |
+| [newsletter-ramp-inspect](sources/newsletter-rss-pragmatic-engineer-2026-08-25-ramp-inspect-agent.md) | Ramp Inspect remote-sandbox harness — 75% merged PRs (K247) | draft |
+| [newsletter-sparktoro-skincare](sources/newsletter-rss-sparktoro-2026-08-26-skincare-marketing-teaser.md) | SparkToro skincare teaser → seo-wiki route (K247) | draft |
+| [newsletter-eh-athlete-play](sources/substack-rss-event-horizon-2026-08-25-athlete-play-markets.md) | Kalshi player availability + CFTC injury-contract gray zone (K247) | draft |
+| [newsletter-eh-kalshi-football](sources/substack-rss-event-horizon-2026-08-26-kalshi-football-season-data.md) | TickerTracker football 30× vol; parlays dominate growth (K247) | draft |
+| [newsletter-klement-deficits](sources/substack-rss-klement-2026-08-26-higher-deficits-inflation.md) | Deficits→inflation real-time pricing — GW alert-only (K247) | draft |
+| [newsletter-wublock-exchanges](sources/substack-rss-wublock-2026-08-26-three-exchanges-imploded.md) | WebSea/JuCoin/CoinUP insider collapse pattern (K247) | draft |
+| [k247-agent-harness-wave](concepts/k247-agent-harness-wave.md) | StarHarness, Recuris, Simthesizer, Ramp Inspect cluster (K247) | draft |
+| [k247-vol-options-wave](concepts/k247-vol-options-wave.md) | SPXW VRP learning-to-rank vol cluster (K247) | draft |
+| [k247-gambling-pm-wave](concepts/k247-gambling-pm-wave.md) | EH athlete play + Kalshi football data (K247) | draft |
+| [k247-newsletter-macro-wave](concepts/k247-newsletter-macro-wave.md) | Klement deficits + Wu exchange risk (K247) | draft |
+| [starharness](entities/tools/starharness.md) | MIT REFERENCE; policy_wired K313 (K247) | draft |
+| [recuris](entities/tools/recuris.md) | Apache-2.0 REFERENCE; policy_wired K314 (K247) | draft |
+| [walgit](entities/tools/walgit.md) | MIT Extract REFERENCE AttoVault WAL git (K247) | draft |
+| [world-intel-mcp](entities/tools/world-intel-mcp.md) | Integrate REFERENCE GuruWatcher alert-only (K247) | draft |
+
 ### K246 ingest (2026-08-25)
 OSINT K246: 15 arXiv + 11 newsletters + 2 tool evals. Phase-0: unlazy, MemMachine, garak, devops-security-agent-skills, book-to-skill, awesome-osint-arsenal, METATRON. **0 Integrate GO.** **No xsp/pm scp.**
 
