@@ -5,6 +5,7 @@ tags: [tool, harness, ccc, k313, k247]
 keywords: [StarHarness, ServiceNow, stratified-search, harness-evolution]
 related:
   - sources/arxiv-2608.24804-starharness-2026-08-26.md
+  - sources/arxiv-2608.27311-verify-smarter-harness-evolution-2026-08-28.md
   - concepts/k247-agent-harness-wave.md
   - concepts/skill-misevolution.md
   - concepts/cemini-license-posture.md
@@ -19,6 +20,7 @@ wire_note: CCC K313 REFERENCE clone; trainer wont_wire
 ## Relations
 
 - @sources/arxiv-2608.24804-starharness-2026-08-26.md
+- @sources/arxiv-2608.27311-verify-smarter-harness-evolution-2026-08-28.md — K248 HarnessLens sibling
 - @concepts/k247-agent-harness-wave.md
 - @concepts/skill-misevolution.md
 - @concepts/cemini-license-posture.md

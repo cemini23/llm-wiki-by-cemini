@@ -8,6 +8,7 @@ related:
   - entities/tools/starharness.md
   - concepts/skill-misevolution.md
   - sources/arxiv-2608.19013-harness-continual-learning-2026-08-20.md
+  - sources/arxiv-2608.27311-verify-smarter-harness-evolution-2026-08-28.md
 maturity: draft
 created: 2026-08-26
 updated: 2026-08-26
@@ -20,6 +21,7 @@ read_status: read
 - @entities/tools/starharness.md — MIT REFERENCE clone; policy_wired K313
 - @concepts/skill-misevolution.md — do not auto-evolve `.cursor/skills`
 - @sources/arxiv-2608.19013-harness-continual-learning-2026-08-20.md — HCL sibling pattern
+- @sources/arxiv-2608.27311-verify-smarter-harness-evolution-2026-08-28.md — K248 HarnessLens / Verify Smarter sibling
 
 ## Raw Concept
 

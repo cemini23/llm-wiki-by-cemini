@@ -7,6 +7,48 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K248 ingest (2026-08-28)
+OSINT K248: 1 eval + 8 arXiv + 17 newsletters → 5 concepts + 5 entities. Eval: gods-eye-view Extract; freellmapi/screenshot-to-code Integrate extract; OpenMontage AGPL skip; K247 skips ponytail/headlong/world-intel-mcp. HarnessLens K313 sibling + MoRe K322 WATCH. Atto RefLAM/AraMS + FIND 3D. Cyber Framing Gap / Context Root / RedEvo. GW JH+LLM decay alert-only. Gambling Kalshi regulatory awareness. **No xsp/pm scp. Do not archive yet. No commit.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-wiki-resource-plan-k248](sources/eval-multi-wiki-resource-plan-k248-2026-08-28.md) | 20-URL eval — gods-eye Extract; freellmapi/screenshot-to-code Integrate extract; OpenMontage AGPL skip; K247 skips (K248) | draft |
+| [arxiv-2608.25140-reflam](sources/arxiv-2608.25140-reflam-2026-08-28.md) | RefLAM Arabic manuscript line annotation; Confidence-100; AraMS builder (K248) | draft |
+| [arxiv-2608.25995-sympatric-ood](sources/arxiv-2608.25995-sympatric-speciation-ood-2026-08-28.md) | Sympatric speciation genome-length — thin OOD biology stub (K248) | draft |
+| [arxiv-2608.26921-arams-28k](sources/arxiv-2608.26921-arams-28k-2026-08-28.md) | AraMS-28k largest Arabic manuscript line dataset; CC BY-NC-SA 4.0 (K248) | draft |
+| [arxiv-2608.27092-framing-gap](sources/arxiv-2608.27092-framing-gap-ipi-exfiltration-2026-08-28.md) | Framing Gap IPI exfiltration; gpt-4o 0%→100%; allow-list (K248) | draft |
+| [arxiv-2608.27299-context-root](sources/arxiv-2608.27299-context-root-privilege-escalation-2026-08-28.md) | When Context Gets Root — instruction privilege escalation (K248) | draft |
+| [arxiv-2608.27311-verify-smarter](sources/arxiv-2608.27311-verify-smarter-harness-evolution-2026-08-28.md) | HarnessLens Verify Smarter — CCC K313 sibling to StarHarness (K248) | draft |
+| [arxiv-2608.27338-mixture-of-roles](sources/arxiv-2608.27338-mixture-of-roles-single-agent-2026-08-28.md) | MoRe One Model Many Minds — CCC K322 WATCH (K248) | draft |
+| [arxiv-2608.27439-redevoagent](sources/arxiv-2608.27439-redevoagent-red-teaming-2026-08-28.md) | RedEvoAgent validation ratchet — Cybersec K324; no public repo (K248) | draft |
+| [newsletter-lovable-saas-agents](sources/newsletter-rss-latent-space-2026-08-26-lovable-cto-the-future-of-saas-is-apps-that-agen.md) | Lovable CTO — SaaS as MCP agent capabilities (K248) | draft |
+| [newsletter-anima-physics-fm](sources/newsletter-rss-latent-space-2026-08-26-we-have-foundation-models-for-language-not-for-p.md) | Anima Anandkumar — FMs for language not physics (K248) | draft |
+| [newsletter-ainews-hot-chips](sources/newsletter-rss-latent-space-2026-08-27-ainews-hot-chips-openais-jalapeño-cerebras-cs-5.md) | AINews Hot Chips Jalapeño / Cerebras / Groq (K248) | draft |
+| [newsletter-ainews-nvidia-hf](sources/newsletter-rss-latent-space-2026-08-27-ainews-nvidia-buys-huggingface-for-13b-as-openai.md) | AINews NVIDIA buys HuggingFace $13B + incident retro (K248) | draft |
+| [newsletter-ainews-agi-bar](sources/newsletter-rss-latent-space-2026-08-28-ainews-openai-to-reach-agi-bar-by-end-2026.md) | AINews OpenAI AGI bar end-2026 chatter (K248) | draft |
+| [newsletter-pe-performant-code](sources/newsletter-rss-pragmatic-engineer-2026-08-26-why-performant-code-matters-but-gets-widely-igno.md) | PE Casey Muratori — performant code ignored (K248) | draft |
+| [newsletter-pe-meta-pulse](sources/newsletter-rss-pragmatic-engineer-2026-08-27-the-pulse-meta-wanted-to-reduce-teams-by-60-beca.md) | PE Pulse — Meta 60% team cut AI narrative (K248) | draft |
+| [newsletter-tldrsec-343](sources/newsletter-rss-tldrsec-2026-08-27-tldr-sec-343---hugging-face-technical-report-aws.md) | tl;dr sec #343 HF report + OWASP agentic skills (K248) | draft |
+| [newsletter-osmani-agent-files](sources/substack-rss-addy-osmani-2026-08-27-audit-your-agent-files.md) | Osmani — audit agent files half-life (K248) | draft |
+| [newsletter-capital-flows-jh](sources/substack-rss-capital-flows-2026-08-28-positioning-into-jackson-hole.md) | Capital Flows Jackson Hole positioning — GW alert (K248) | draft |
+| [newsletter-eh-ct-kalshi](sources/substack-rss-event-horizon-2026-08-27-connecticut-sues-kalshi-for-offering-illegal-unl.md) | EH Connecticut sues Kalshi sports betting (K248) | draft |
+| [newsletter-eh-pm-21](sources/substack-rss-event-horizon-2026-08-28-it-would-be-neat-if-prediction-markets-were-21.md) | EH prediction markets 21+ advocacy (K248) | draft |
+| [newsletter-klement-llm-decay](sources/substack-rss-klement-2026-08-27-the-performance-decay-of-llm-trading-strategies.md) | Klement LLM trading strategy performance decay (K248) | draft |
+| [newsletter-klement-storytelling](sources/substack-rss-klement-2026-08-28-story-telling-animals.md) | Klement story-telling animals narrative bias (K248) | draft |
+| [newsletter-moontower-marginal](sources/substack-rss-moontower-2026-08-26-a-common-marginal-thinking-blindspot.md) | Moontower marginal thinking blindspot (K248) | draft |
+| [newsletter-wublock-ndv](sources/substack-rss-wublock-2026-08-27-a-conversation-with-ndv-founder-jason-strategy-m.md) | Wu NDV Jason on Strategy leverage (K248) | draft |
+| [newsletter-wublock-weekly-debt](sources/substack-rss-wublock-2026-08-28-wublockchain-weekly-us-debt-and-deficit-tailwind.md) | Wu weekly US debt/deficit BTC/gold tailwind (K248) | draft |
+| [k248-agent-harness-wave](concepts/k248-agent-harness-wave.md) | HarnessLens, MoRe, Osmani, LS/PE agent cluster (K248) | draft |
+| [k248-cyber-agent-security-wave](concepts/k248-cyber-agent-security-wave.md) | Framing Gap, Context Root, RedEvo, tldrsec 343 (K248) | draft |
+| [k248-atto-manuscript-wave](concepts/k248-atto-manuscript-wave.md) | RefLAM, AraMS-28k, gods-eye-view FIND (K248) | draft |
+| [k248-newsletter-macro-wave](concepts/k248-newsletter-macro-wave.md) | JH + LLM decay + Moontower + Wu (K248) | draft |
+| [k248-gambling-pm-wave](concepts/k248-gambling-pm-wave.md) | EH CT Kalshi suit + PM 21+ (K248) | draft |
+| [gods-eye-view](entities/tools/gods-eye-view.md) | MIT Extract Atto FIND 3D Cesium (K248) | draft |
+| [screenshot-to-code](entities/tools/screenshot-to-code.md) | MIT Integrate extract; no GO runtime (K248) | draft |
+| [openinstinct](entities/tools/openinstinct.md) | MIT Watch optional Atto (K248) | draft |
+| [heliosgen](entities/tools/heliosgen.md) | Watch; license NEEDS VERIFICATION (K248) | draft |
+| [freellmapi](entities/tools/freellmapi.md) | MIT Integrate extract; no GO runtime (K248) | draft |
+
 ### K247 ingest (2026-08-26)
 OSINT K247: 1 eval + 8 arXiv + 6 newsletters → 4 concepts + 4 entities. Eval: Integrate 5 / Extract 4 / Watch 3 / Context 6 / Pass 2. claude-obsidian URL dupes existing page. StarHarness K313 + Recuris K314 policy_wired. **No xsp/pm scp.**
 

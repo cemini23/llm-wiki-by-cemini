@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-08-28] ingest | K248 wave
+
+- **wave:** K248 · 1 eval + 8 arXiv + 17 newsletters → 5 concepts + 5 entities. Dual-ID: **OSINT K248** = this inbox (CCC K313 HarnessLens sibling / K322 MoRe WATCH; Cybersec K324 RedEvo — resolve by file+wiki).
+- **eval:** Deep Research URL Evaluation Plan — gods-eye-view Extract; freellmapi + screenshot-to-code Integrate extract; heliosgen/OpenInstinct Watch; OpenMontage **AGPL skip** (no clone, no entity); **K247 skips** ponytail / headlong / world-intel-mcp (cite existing). ghidra/malicious-pdf/Atlas/NIST cyber lab Context/Extract only.
+- **routing:** Atto HTR RefLAM + AraMS-28k + FIND 3D gods-eye → atto brief. GW Jackson Hole + Klement LLM decay alert-only → GuruWatcher. CCC HarnessLens/MoRe + LS/PE/Osmani → CCC brief (do not swap `/route`). Cyber Framing Gap IPI / Context Root / RedEvo / tldrsec 343 → cybersec brief (no PoC). Gambling EH CT Kalshi + PM 21+ awareness **no pm scp**. Sympatric speciation thin OOD stub (no hub).
+- **briefs:** `briefs/2026-08-28_k248-*` (Atto/GW/CCC/cyber/gambling) + sibling copies. **No xsp/pm scp. No LIVE Discord.**
+- **archive:** **do not archive yet** — inbox retained. **No commit** this pass.
+
 ## [2026-08-26] ingest | K247 — eval + 8 arXiv + 6 newsletters
 
 - **wave:** K247 · 15 source pages + 4 concepts + 4 entities. Inbox: 1 docx eval + 8 arXiv PDF + 6 newsletter md. Dual-ID: **OSINT K247** = this inbox (CCC K247 = HIVE voice input — resolve by file+wiki).
