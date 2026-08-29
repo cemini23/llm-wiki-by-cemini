@@ -1,3 +1,12 @@
+## [2026-08-29] ingest | K250 wave
+
+- **Inbox:** 7 NEW (3 arXiv + 2 eval docx + 2 PDF notes). Preingest: 7 NEW, 0 DUPLICATE.
+- **Sources:** ReasoningBank 2509.25140, JIT-Agent 2608.25593, WikiSkill 2608.27454, GitHub revenue eval (20 URLs), empty eval-links stub, Grok loop PDF, harness_final anonymous PDF.
+- **Concepts:** k250-harness-intelligence-wave, k250-skill-evolution-wave.
+- **Entities:** jit-agent (new), reasoning-bank (bump to GO REFERENCE).
+- **Phase-0:** adopt_k250_phase0.sh — 128MB (reasoning-bank, JIT). **0 Integrate GO.**
+- **Briefs:** CCC JIT/ReasoningBank/WikiSkill; Atto screenshot-to-code; cyber user-scanner/mkcert. **No xsp/pm scp.**
+
 # Wiki Log
 
 ## [2026-08-29] ingest | K249 wave

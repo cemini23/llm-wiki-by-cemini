@@ -3541,3 +3541,18 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 - **Concepts** are grouped by theme (ML/RL methodology, portfolio strategy, etc.) as enough accumulate.
 - Scan headings → scan one-liners → open the 1–3 pages that look most relevant.
 - When promoting a stub past `draft`: clean title + summary, add real cross-references, move the index row if the primary cluster changes.
+
+### K250 wave (2026-08-29)
+
+| Page | Type |
+|------|------|
+| sources/arxiv-2509.25140-reasoning-bank-2026-08-29.md | source |
+| sources/arxiv-2608.25593-jit-agent-2026-08-29.md | source |
+| sources/arxiv-2608.27454-wikiskill-2026-08-29.md | source |
+| sources/eval-github-revenue-evaluation-k250-2026-08-29.md | source |
+| sources/eval-links-empty-stub-k250-2026-08-29.md | source |
+| sources/source-grok-loop-engineering-note-2026-08-29.md | source |
+| sources/source-harness-final-anonymous-2026-08-29.md | source |
+| concepts/k250-harness-intelligence-wave.md | concept |
+| concepts/k250-skill-evolution-wave.md | concept |
+| entities/tools/jit-agent.md | entity |

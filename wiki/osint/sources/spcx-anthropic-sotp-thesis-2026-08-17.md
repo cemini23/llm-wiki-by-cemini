@@ -9,7 +9,7 @@ related:
   - sources/substack-rss-wublock-2026-08-18-miners-power.md
 maturity: draft
 created: 2026-08-17
-updated: 2026-08-18
+updated: 2026-08-23
 read_status: read
 ---
 
@@ -39,6 +39,8 @@ read_status: read
 Relative-value note already staged as `briefs/2026-08-17_spcx-anthropic-sotp-thesis.md`. Lead is the live Anthropic crypto perp (~$1.77–1.79T on a 1B-share convention) next to NASDAQ:SPCX tape ~$1.85T / Cursor pro-forma ~$1.90T. Observational. Not investment advice. Not a GuruWatcher watch. Do not re-scp.
 
 **Steal:** keep both SPCX marks (tape vs Cursor pro-forma) and the Anthropic mark hierarchy (Series H / thin secondaries / perps / FT $2T talk) on the same page so a friend-share cannot silently drop Cursor dilution.
+
+**2026-08-23 follow-up (SEO wiki, do not re-scp):** Outlier letter at `../SEO:GEO B&M Business/briefs/2026-08-23_spcx-anthropic-pair-outlier.md` (not a second X Article). Tape Fri 21 Aug SPCX $136.97. Anthropic perp ~$1.89T. Public S-1 window sources-say; listing **NOT CONFIRMED**. Tesla/SpaceX YE26 announcement 18.5% (Gamma). Not a GuruWatcher watch.
 
 ## Snippets
 

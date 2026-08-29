@@ -17,12 +17,15 @@ related:
   - sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md
   - sources/substack-rss-moontower-2026-08-19-socrates-highlights.md
   - sources/substack-rss-moontower-2026-08-19-why-should-i-learn-this.md
+  - sources/source-grok-loop-engineering-note-2026-08-29.md
 maturity: draft
 created: 2026-08-15
 updated: 2026-08-25
 ---
 
 ## Relations
+
+- @sources/source-grok-loop-engineering-note-2026-08-29.md — Grok loop engineering operator PDF (K250)
 
 - @sources/substack-rss-addy-osmani-2026-08-14-practical-loop-engineering.md — primary
 - @sources/newsletter-rss-latent-space-2026-08-15-react-for-agents-flue.md — React-style hooks / Pi
