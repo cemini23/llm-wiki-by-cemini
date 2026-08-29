@@ -37,6 +37,15 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Phase-1 leftover** — authorization-not-name guardrail; wrapper-level memory vs literal gates; SOC model-routing. Cursor `/phase1` — do not edit `.cursor/skills` here.
 - **Open:** HL funding backtest overdue (2026-08-27). Kalshi/equity/cross-venue LP backtests due. Wiki gap detect stale. STE100 CeminiSuite rollout brief open. No LIVE Discord.
 
+## Current state (2026-08-29 — K250)
+
+- **K250 ingest** — 7 inbox (3 arXiv + 2 eval + 2 PDF notes). 7 source pages + 2 concept hubs + jit-agent entity + reasoning-bank bump. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k250_phase0.sh`: 128MB REFERENCE (reasoning-bank, JIT). **0 Integrate GO.**
+- **Routing** — CCC JIT/ReasoningBank/WikiSkill harness+skill intelligence; Atto screenshot-to-code eval; cyber user-scanner/mkcert; Grok/harness PDF stubs REFERENCE only.
+- **Briefs** — OSINT `briefs/2026-08-29_k250-*`. Sibling copies to CCC/Atto/cyber.
+- **Phase-1** — K313/K281/K292/K324/K237 already policy_wired; no new runtime wires.
+- **Open:** HL funding backtest overdue. Grok CLI auth needed for `/route` Grok lane. No LIVE Discord.
+
 ## Current state (2026-08-28 — K248)
 
 - **K248 ingest** — 26 inbox (8 arXiv + 17 newsletters + 1 eval). 26 source pages + 5 concept hubs + 5 entity tools. Raws to egress-fi. **No xsp/pm scp.**
