@@ -7,6 +7,20 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K249 ingest (2026-08-29)
+OSINT K249: 2 arXiv + 4 newsletters → 2 concept hubs. No eval. Phase-0 **0 Integrate GO** (CautiousBench CC BY-NC-SA, no GitHub). Atto name-superstition. CCC Cursor/OpenAI vendor-risk (do not swap `/route`). Cyber rule-memory + over-safety + SOC #249. Gambling Ninth Circuit Kalshi **no pm scp**. Wu weekly wiki-only **no xsp scp**. GW skip.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-2608.26008-jailbreak-defense](sources/arxiv-2608.26008-self-evolving-jailbreak-defense-2026-08-29.md) | Black-box method-level rule memory vs jailbreaks (K249) | draft |
+| [arxiv-2608.27009-cried-wolf](sources/arxiv-2608.27009-guard-that-cried-wolf-2026-08-29.md) | CautiousBench name-superstition; NC-SA no clone (K249) | draft |
+| [newsletter-ainews-openai-cursor](sources/newsletter-rss-latent-space-2026-08-29-openai-shuts-off-cursor.md) | OpenAI cuts Cursor; GLM-5.3 / wiki-skill-evolution (K249) | draft |
+| [newsletter-eh-ninth-circuit](sources/substack-rss-event-horizon-2026-08-28-ninth-circuit-kalshi-sports.md) | Ninth Circuit: Kalshi sports likely not CEA swaps (K249) | draft |
+| [newsletter-secpro-249](sources/substack-rss-secpro-2026-08-28-249-ai-ready-soc.md) | AI-ready SOC part 2 — six-layer architecture (K249) | draft |
+| [newsletter-wublock-layerzero](sources/substack-rss-wublock-2026-08-29-weekly-layerzero-exchange.md) | LayerZero exchange + Base tokenized stocks — wiki-only (K249) | draft |
+| [k249-cyber-agent-safety-wave](concepts/k249-cyber-agent-safety-wave.md) | Rule memory, name-superstition, SOC #249 (K249) | draft |
+| [k249-newsletter-wave](concepts/k249-newsletter-wave.md) | Cursor cutoff + Ninth Circuit Kalshi + Wu weekly (K249) | draft |
+
 ### K248 ingest (2026-08-28)
 OSINT K248: 1 eval + 8 arXiv + 17 newsletters → 5 concepts + 5 entities. Eval: gods-eye-view Extract; freellmapi/screenshot-to-code Integrate extract; OpenMontage AGPL skip; K247 skips ponytail/headlong/world-intel-mcp. HarnessLens K313 sibling + MoRe K322 WATCH. Atto RefLAM/AraMS + FIND 3D. Cyber Framing Gap / Context Root / RedEvo. GW JH+LLM decay alert-only. Gambling Kalshi regulatory awareness. **No xsp/pm scp. Do not archive yet. No commit.**
 

@@ -10,9 +10,11 @@ related:
   - concepts/agent-steering-action-boundary.md
   - concepts/skill-misevolution.md
   - sources/arxiv-2608.14392-tripwire-2026-08-17.md
+  - sources/arxiv-2608.27009-guard-that-cried-wolf-2026-08-29.md
+  - concepts/k249-cyber-agent-safety-wave.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-08-17
+updated: 2026-08-29
 ---
 
 ## Relations
@@ -23,6 +25,8 @@ updated: 2026-08-17
 - @concepts/agent-steering-action-boundary.md — proceed/hold is the tool-side twin
 - @concepts/skill-misevolution.md
 - @sources/arxiv-2608.14392-tripwire-2026-08-17.md — K240 certified safety neurons; HITL before clamp; no PoC — don't let skills learn wrapper shortcuts
+- @sources/arxiv-2608.27009-guard-that-cried-wolf-2026-08-29.md — K249 name-superstition: refuse authorization miss, not a scary object name
+- @concepts/k249-cyber-agent-safety-wave.md — K249 cluster
 
 ## Raw Concept
 
@@ -45,3 +49,5 @@ Two 2026 papers + SAIF converge:
 - Pairs K259/K274: traceable scholarship + trajectory necessity.
 
 Do not unattended-evolve skills to "fix" refusals (misevolution).
+
+K249 **Cautious Bench** (2608.27009) is the execution-safety twin: the same authorized action is refused more when the resource name looks scary. Keep the operating rule — key off intent + tool effect + authorization. Do not clone the NC-SA benchmark.

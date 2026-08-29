@@ -6,15 +6,17 @@ keywords: [AI-ready-SOC, asset-ID-map, agent-as-identity, RAG-runbooks, gather-n
 related:
   - concepts/agent-runtime-identity-adr.md
   - concepts/agent-safety-executable-evaluation.md
+  - sources/substack-rss-secpro-2026-08-28-249-ai-ready-soc.md
 maturity: draft
 created: 2026-08-21
-updated: 2026-08-21
+updated: 2026-08-29
 read_status: skimmed
 ---
 
 ## Relations
 - @concepts/agent-runtime-identity-adr.md
 - @concepts/agent-safety-executable-evaluation.md
+- @sources/substack-rss-secpro-2026-08-28-249-ai-ready-soc.md — part 2 architecture (K249 sequel)
 
 ## Raw Concept
 - **title:** #248: Building an AI-Ready SOC, part 1

@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-08-29] ingest | K249 wave
+
+- **wave:** K249 · 2 arXiv + 4 newsletters → 2 concept hubs + 4 existing bumps. Dual-ID: **OSINT K249** = this inbox. No eval docx.
+- **preingest:** 5 NEW, 1 LIKELY (SecPro #249 vs #248 sequel — ingested as new page).
+- **routing:** Atto name-superstition (scary civil-record names must not auto-refuse) → atto brief. CCC OpenAI/Cursor cutoff + GLM-5.3 + wiki-skill-evolution → CCC brief (do not swap `/route`). Cyber 2608.26008 rule memory + 2608.27009 CautiousBench + SecPro #249 → cyber brief (no PoC, no NC-SA clone). Gambling Ninth Circuit Kalshi sports-not-swaps **no pm scp**. Wu weekly wiki-only **no xsp scp**. **GW skip** (no price/level). Poker / DFS / family skip.
+- **phase-0:** no Adopt/GO repos. CautiousBench `gh search` 2026-08-29 = no public repo; arXiv license **CC BY-NC-SA 4.0** → **NO-GO clone**. 2608.26008 CC BY 4.0, no GitHub in PDF → no clone. **0 Integrate GO.**
+- **phase-1 leftover (propose only, do not edit `.cursor/skills`):** guardrails key on authorization not resource name; wrapper-level rule memory (not literal gate growth); SecPro model-routing + controlled action interface. Cursor `/phase1`.
+- **briefs:** `briefs/2026-08-29_k249-*` (Atto/CCC/cyber/gambling) + sibling copies. **No xsp/pm scp. No LIVE Discord. No Barone PII.**
+- **gate:** `ingest_session_gate.py` WARN acknowledged — stale `[NEEDS VERIFICATION]` on historical `wiki/log.md` entries (46d/53d) are pre-existing, not this batch. HARD table/text discrepancy re-tagged 2026-08-29 (still unverified).
+- **archive:** inbox → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
 ## [2026-08-28] ingest | K248 wave
 
 - **wave:** K248 · 1 eval + 8 arXiv + 17 newsletters → 5 concepts + 5 entities. Dual-ID: **OSINT K248** = this inbox (CCC K313 HarnessLens sibling / K322 MoRe WATCH; Cybersec K324 RedEvo — resolve by file+wiki).

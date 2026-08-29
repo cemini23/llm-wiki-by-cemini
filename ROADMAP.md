@@ -28,6 +28,15 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-29 — K249)
+
+- **K249 ingest** — 6 inbox (2 arXiv + 4 newsletters). 6 source pages + 2 concept hubs + 4 existing bumps. No eval. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — no Adopt/GO repos. CautiousBench CC BY-NC-SA + no GitHub (`gh search` 2026-08-29) → **NO-GO clone**. 2608.26008 CC BY 4.0, no repo. **0 Integrate GO.**
+- **Routing** — Atto name-superstition over-refusal. CCC Cursor/OpenAI vendor-risk (do not swap `/route`). Cyber rule-memory + CautiousBench method + SecPro #249. Gambling Ninth Circuit Kalshi awareness **no pm scp**. Wu weekly wiki-only. GW skip.
+- **Briefs** — OSINT `briefs/2026-08-29_k249-*`. Sibling copies to atto/CCC/cyber/gambling.
+- **Phase-1 leftover** — authorization-not-name guardrail; wrapper-level memory vs literal gates; SOC model-routing. Cursor `/phase1` — do not edit `.cursor/skills` here.
+- **Open:** HL funding backtest overdue (2026-08-27). Kalshi/equity/cross-venue LP backtests due. Wiki gap detect stale. STE100 CeminiSuite rollout brief open. No LIVE Discord.
+
 ## Current state (2026-08-28 — K248)
 
 - **K248 ingest** — 26 inbox (8 arXiv + 17 newsletters + 1 eval). 26 source pages + 5 concept hubs + 5 entity tools. Raws to egress-fi. **No xsp/pm scp.**
