@@ -5,15 +5,17 @@ tags: [source, newsletter, wublock, crypto, k249]
 keywords: [LayerZero, ZCSH, Ethena, Base-tokenized-stocks, USD1, Sandbox-bridge]
 related:
   - concepts/k249-newsletter-wave.md
+  - sources/substack-rss-wublock-2026-08-30-asia-top10.md
 maturity: draft
 created: 2026-08-29
-updated: 2026-08-29
+updated: 2026-08-30
 read_status: skimmed
 ---
 
 ## Relations
 
 - @concepts/k249-newsletter-wave.md — K249 newsletter cluster
+- @sources/substack-rss-wublock-2026-08-30-asia-top10.md — next Wu weekly (K251 Asia TOP10)
 
 ## Raw Concept
 

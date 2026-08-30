@@ -4,6 +4,7 @@ type: concept
 tags: [concept, options, xsp, playbook, lanes, robinhood, k116]
 keywords: [xsp, lane-a, lane-b, leaps, overnight-swing, weeklies, robinhood, hyperliquid-shadow]
 related:
+  - sources/substack-rss-glitchspx-2026-08-30-talon-weekly.md
   - sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md
   - sources/substack-rss-glitchspx-2026-08-16-talon-weekly.md
   - sources/substack-rss-moontower-2026-08-16-324-rssb.md
@@ -131,10 +132,11 @@ related:
   - sources/arxiv-2608.16749-rough-volatility-across-assets-2026-08-18.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-08-22
+updated: 2026-08-30
 ---
 
 ## Relations
+- @sources/substack-rss-glitchspx-2026-08-30-talon-weekly.md — K251 Talon HITL map (SPXW OTE vs SPY/QQQ/IWM)
 - @sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md — K245 Talon HITL map (SPXW vs VXX/IWM)
 - @sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md — K236 website traffic (Deribit −44.7% confirms −44.4% volume)
 - @concepts/crypto-venue-website-traffic.md — K236 venue retail-traffic series
@@ -256,6 +258,8 @@ updated: 2026-08-22
 Operator discretionary **long-call-only** XSP playbook split into four lanes by tenor and hold style. **Lane B** carries the hedge-fund core-book thesis; **Lane A** is a tactical overnight swing sleeve. Prod automation v1 targets **Lane A exits only** (Robinhood); Hyperliquid SP500 perp is timing shadow only.
 
 ## Narrative
+
+**K251 (2026-08-30).** Glitch SPX Talon week of 31 Aug–4 Sep is a HITL map, not a Lane rewrite. Breadth is still bullish (66/2, 97% score-weight) but the average snapshot move is −0.92% and SPY/QQQ/IWM are rally-fail. SPXW is an OTE watch at $7,650 (inv $7,623); first-target R:R 0.1:1 — do not chase. VXX warn $19.50. SMH floor $545–$535. Brief: `briefs/xsp-k251-glitchspx-talon-aug31.md`. Never auto-arm.
 
 **K245 (2026-08-22).** Glitch SPX Talon week of 24–28 Aug is a HITL map, not a Lane rewrite. SPXW constructive while $7,573.50 holds (swing ladder 8,030–8,070). Crosscurrent: VXX/VIX still have bullish vol structure; SMH is an OTE watch at $555–550; IWM is a bearish rally-fail near $300. Use OTE / break-hold-retest. Do not chase the 137-bullish-setup breadth. Brief: `briefs/xsp-k245-glitchspx-talon-aug24.md`. Never auto-arm.
 

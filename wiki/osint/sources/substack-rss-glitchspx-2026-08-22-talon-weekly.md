@@ -6,9 +6,10 @@ keywords: [Talon, GlitchSPX, SPXW, VXX, VIX, SMH, IWM]
 related:
   - concepts/xsp-lane-trading-framework.md
   - concepts/guruwatcher-macro-watches.md
+  - sources/substack-rss-glitchspx-2026-08-30-talon-weekly.md
 maturity: draft
 created: 2026-08-22
-updated: 2026-08-22
+updated: 2026-08-30
 read_status: read
 ---
 
@@ -16,6 +17,7 @@ read_status: read
 
 - @concepts/xsp-lane-trading-framework.md — HITL map; SPXW structure vs VXX/IWM crosscurrent
 - @concepts/guruwatcher-macro-watches.md — named levels are HITL candidates; no auto-arm
+- @sources/substack-rss-glitchspx-2026-08-30-talon-weekly.md — next Talon weekly (K251)
 
 ## Raw Concept
 

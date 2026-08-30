@@ -4,6 +4,7 @@ type: concept
 tags: [concept, guruwatcher, macro, watches, k233]
 keywords: [guruwatcher, price-watches, inflation-swaps, factor-rotation, alert-only]
 related:
+  - sources/substack-rss-glitchspx-2026-08-30-talon-weekly.md
   - sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md
   - sources/substack-rss-klement-2026-08-21-polarisation.md
   - sources/newsletter-capital-flows-inflation-risk-2026-08-12.md
@@ -22,7 +23,7 @@ related:
   - sources/eval-repository-revenue-2026-08-20.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-22
+updated: 2026-08-30
 ---
 
 ## Relations
@@ -40,6 +41,7 @@ updated: 2026-08-22
 - @entities/tools/betterwright.md — poller wrappers; no auto-arm
 - @entities/tools/career-ops.md — K243 Playwright/claim ingest pattern; alert-only
 - @sources/substack-rss-klement-2026-08-20-management-forecast-quality.md — K243 mgmt-quality ↔ forecast error; no ticker/level
+- @sources/substack-rss-glitchspx-2026-08-30-talon-weekly.md — K251 Talon HITL levels (SPXW/SPY/QQQ/IWM/VXX/SMH)
 - @sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md — K245 Talon HITL levels (SPXW/VXX/VIX/SMH/IWM)
 - @sources/substack-rss-klement-2026-08-21-polarisation.md — K245 Tinbergen polarisation; no ticker/level
 - @sources/eval-repository-revenue-2026-08-20.md — K243 career-ops Extract
@@ -61,3 +63,5 @@ K233 candidates from Capital Flows (2026-08-12): steels/metals factor (+43% YTD)
 **K243 (2026-08-20):** `career-ops` (MIT) contributes a Playwright/claim-ingest pattern — still alert-only, no order placement. Klement "management quality ↔ forecast error" (Bloom et al.) is **wiki-only**: a firm-characteristic correlation with no ticker or price level → **no GW auto-arm** (no `watches.json` write).
 
 **K245 (2026-08-22):** Glitch SPX Talon 24–28 Aug named levels are **HITL candidates only** — SPXW inv $7,573.50; VXX OTE $18.50 / warn $19.50; VIX accept $15.50; SMH $555–550; IWM fail $299. Operator must supply symbol + op + level before any `watches.json` write. Klement Tinbergen polarisation note has **no ticker/level → no auto-arm**. Brief: `../GuruWatcher/briefs/2026-08-22_k245-glitchspx-talon-levels.md`.
+
+**K251 (2026-08-30):** Glitch SPX Talon 31 Aug–4 Sep named levels are **HITL candidates only** — SPXW OTE $7,650 / inv $7,623; SPY fail $770 then accept below $769; QQQ fail $718 then accept below $715; IWM fail $297 then accept below $294; VXX warn $19.50; SMH $545–$535. Operator must supply symbol + op + level before any `watches.json` write. WuBlock Asia TOP10 has **no ticker/level → no auto-arm**. Brief: `../GuruWatcher/briefs/2026-08-30_k251-guruwatcher-talon-levels.md`.

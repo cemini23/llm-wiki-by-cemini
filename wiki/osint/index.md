@@ -7,6 +7,14 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K251 ingest (2026-08-30)
+OSINT K251: 2 NEW newsletters (Glitch SPX Talon 31 Aug–4 Sep + WuBlock Asia TOP10). Fold 7 leftover K250 files (3 arXiv DUPLICATE + GitHub eval + empty eval-links + 2 PDF notes). Phase-0 **0 Integrate GO** (no new Adopt/GO). Talon → XSP + GW HITL. Wu wiki-only; ComeCome → cyber brief. **xsp scp yes. pm scp no.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [newsletter-glitchspx-talon](sources/substack-rss-glitchspx-2026-08-30-talon-weekly.md) | Talon 31 Aug–4 Sep: 97% bullish count vs defensive SPY/QQQ/IWM (K251) | draft |
+| [newsletter-wublock-asia-top10](sources/substack-rss-wublock-2026-08-30-asia-top10.md) | ComeCome wallet-steal + Asia crypto rules — wiki-only (K251) | draft |
+
 ### K249 ingest (2026-08-29)
 OSINT K249: 2 arXiv + 4 newsletters → 2 concept hubs. No eval. Phase-0 **0 Integrate GO** (CautiousBench CC BY-NC-SA, no GitHub). Atto name-superstition. CCC Cursor/OpenAI vendor-risk (do not swap `/route`). Cyber rule-memory + over-safety + SOC #249. Gambling Ninth Circuit Kalshi **no pm scp**. Wu weekly wiki-only **no xsp scp**. GW skip.
 
@@ -3087,7 +3095,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 
 ### TTWO desk (2026-08-20)
 
-- [GTA 6 convertible-currency thesis](concepts/gta6-convertible-currency-thesis.md) — operator: official DevEx and/or unofficial CS2-style rail; Gemini official player FX <1% — concept, take-two, gta6, fincen
+- [GTA 6 convertible-currency thesis](concepts/gta6-convertible-currency-thesis.md) — operator: official DevEx and/or unofficial CS2-style rail; Gemini official player FX <1%; Netflix look 2026-08-27 mixed (social HIT / cashout MISS); SEO Outlier spine @seo-wiki/concepts/ttwo-gta6-outlier-notes.md — concept, take-two, gta6, fincen
 - [Grey-market game economies](concepts/grey-market-game-economies.md) — CS2 skins / Roblox DevEx / FIFA coins / GTAO PlayerAuctions; Steam Wallet cannot cash out — concept, virtual-currency, grey-market
 
 ### K237 ingest (2026-08-14)
@@ -3541,6 +3549,13 @@ Codebase hubs maintained for agent navigation (`/obsidian-architect`).
 - **Concepts** are grouped by theme (ML/RL methodology, portfolio strategy, etc.) as enough accumulate.
 - Scan headings → scan one-liners → open the 1–3 pages that look most relevant.
 - When promoting a stub past `draft`: clean title + summary, add real cross-references, move the index row if the primary cluster changes.
+
+### K251 wave (2026-08-30)
+
+| Page | Type |
+|------|------|
+| sources/substack-rss-glitchspx-2026-08-30-talon-weekly.md | source |
+| sources/substack-rss-wublock-2026-08-30-asia-top10.md | source |
 
 ### K250 wave (2026-08-29)
 

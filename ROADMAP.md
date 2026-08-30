@@ -28,6 +28,15 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-08-30 — K251)
+
+- **K251 ingest** — 2 NEW newsletters (Talon 31 Aug–4 Sep + Wu Asia TOP10). Fold 7 leftover K250 files (3 arXiv DUPLICATE + eval + empty eval-links + 2 PDF notes). 2 source pages + 4 existing bumps. Raws to egress-fi. **xsp scp yes. pm scp no.**
+- **Phase-0** — no new Adopt/GO. Leftover K250 eval already filed. **0 Integrate GO.**
+- **Routing** — Talon → XSP + GW HITL (no auto-arm). Wu wiki-only. ComeCome → cyber brief (no PoC). Atto / poker / DFS / family skip. No Barone PII.
+- **Briefs** — OSINT `briefs/xsp-k251-*` + GW sibling. Cyber ComeCome copy. **No pm scp. No LIVE Discord.**
+- **Phase-1 leftover** — HITL watches only if operator names symbol+op+level. Cursor `/phase1` — do not edit `.cursor/skills` here.
+- **Open:** HL funding backtest overdue (2026-08-27). Kalshi/equity/cross-venue LP backtests due. Wiki gap detect stale. STE100 CeminiSuite rollout brief open. No LIVE Discord.
+
 ## Current state (2026-08-29 — K249)
 
 - **K249 ingest** — 6 inbox (2 arXiv + 4 newsletters). 6 source pages + 2 concept hubs + 4 existing bumps. No eval. Raws to egress-fi. **No xsp/pm scp.**

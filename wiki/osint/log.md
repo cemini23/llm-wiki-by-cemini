@@ -1,3 +1,22 @@
+## [2026-08-30] ingest | K251 wave
+
+- **Inbox:** 9 files. Preingest: 5 NEW, 1 LIKELY, 3 DUPLICATE. Skip grok-bot-inbox-test / skip-ingest: none.
+- **Fold (do not re-ingest):** `2509.25140v2.pdf`, `2608.25593v1.pdf`, `2608.27454v1.pdf` = K250 arXiv. GitHub eval sha256 `fd08e516…` = `@sources/eval-github-revenue-evaluation-k250-2026-08-29.md`. `eval links.docx` still empty (0 paras). `grok_loop_engineering_note_HQ.pdf` + `harness_final.pdf` = K250 unread stubs.
+- **Sources:** Glitch SPX Talon 31 Aug–4 Sep; WuBlock Asia TOP10 30 Aug. Dual-ID: **OSINT K251** = this inbox.
+- **Routing:** Talon → XSP HITL + GuruWatcher HITL (no auto-arm). Wu wiki-only **no xsp/pm scp**. ComeCome DKStatistics sandbox-escape → cybersec brief (no PoC). **Atto skip. Poker/DFS/family skip. No Barone PII.**
+- **Phase-0:** no new Adopt/GO repos. Leftover K250 eval already licensed. **0 Integrate GO.**
+- **Phase-1 leftover (propose only, do not edit `.cursor/skills`):** HITL watches for named SPXW/SPY/QQQ/IWM/VXX/SMH levels if operator supplies symbol+op+level. Cursor `/phase1`.
+- **Briefs:** `briefs/xsp-k251-glitchspx-talon-aug31.md` (scp cemini-prod after skill_audit); `briefs/2026-08-30_k251-guruwatcher-talon-levels.md` + sibling `../GuruWatcher/briefs/`. Cyber ComeCome brief via `cross_wiki_route.py`. **pm scp no. No LIVE Discord.**
+- **gate:** `ingest_session_gate.py` WARN acknowledged — stale `[NEEDS VERIFICATION]` on historical `wiki/log.md` entries are pre-existing, not this batch. gta6 thesis 10d tag is from the morning TTWO route (not this commit).
+- **Archive:** inbox → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
+## [2026-08-30] route | TTWO / GTA 6 thesis → SEO Outlier spine
+
+- **To** — @seo-wiki/concepts/ttwo-gta6-outlier-notes.md · SEO `briefs/2026-08-30_ttwo-gta6-cashout-outlier.md`
+- **Why** — Outlier Weekly letter aimed at Google `GTA 6 cashout` / Roblox / UGC (not IGN head-term)
+- **Thesis bump** — Netflix 2026-08-27 row: social satire HIT; UGC/item/DevEx MISS; falsifier 1 mixed
+- **No** Substack LIVE this pass. HITL before publish.
+
 ## [2026-08-29] ingest | K250 wave
 
 - **Inbox:** 7 NEW (3 arXiv + 2 eval docx + 2 PDF notes). Preingest: 7 NEW, 0 DUPLICATE.
