@@ -13,9 +13,10 @@ related:
   - concepts/k250-skill-evolution-wave.md
   - sources/eval-github-revenue-evaluation-k250-2026-08-29.md
   - sources/eval-links-empty-stub-k250-2026-08-29.md
+  - concepts/k252-harness-evolution-wave.md
 maturity: draft
 created: 2026-08-29
-updated: 2026-08-29
+updated: 2026-08-31
 ---
 
 ## Relations

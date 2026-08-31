@@ -7,6 +7,31 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K252 ingest (2026-08-31)
+OSINT K252: 8 arXiv + 6 newsletters → 5 concept hubs. Phase-0 **0 Integrate GO** (no verified SPDX repos). CCC harness (EvoUndo, Logos, skill routing, Prove2Me). Cyber layered defenses + accountability. Gambling EH injury markets **no pm scp**. Wu Strategy + jobs outlook → GW alert-only. Vol papers wiki-only. **No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-btc-inverse-rough-bergomi](sources/arxiv-2608.27575-bitcoin-inverse-options-rough-bergomi-2026-08-31.md) | BTC inverse options rough Bergomi calibration (K252) | draft |
+| [arxiv-personalized-skill-routing](sources/arxiv-2608.28241-personalized-skill-routing-2026-08-31.md) | Per-user skill routing + counterfactual eval (K252) | draft |
+| [arxiv-layered-llm-defenses](sources/arxiv-2608.28327-layered-llm-defenses-ensemble-2026-08-31.md) | Layered defense ensemble + access tiers (K252) | draft |
+| [arxiv-evoundo](sources/arxiv-2608.28363-evoundo-recoverability-2026-08-31.md) | Recoverability-constrained harness self-evolution (K252) | draft |
+| [arxiv-gmmb-heston](sources/arxiv-2608.28397-gmmb-riders-heston-2026-08-31.md) | GMMB riders actuarial OOD stub (K252) | draft |
+| [arxiv-prove2me](sources/arxiv-2608.28433-prove2me-formalization-2026-08-31.md) | Collaborative Lean formalization platform (K252) | draft |
+| [arxiv-offline-accountability](sources/arxiv-2608.28542-offline-verifiable-accountability-2026-08-31.md) | Cross-org agent messaging evidence bundles (K252) | draft |
+| [arxiv-logos-bus](sources/arxiv-2608.28553-logos-cross-process-bus-2026-08-31.md) | Cross-process plugin harness Logos (K252) | draft |
+| [newsletter-eh-injury-markets](sources/substack-rss-event-horizon-2026-08-31-are-will-players-compete-or-injury-markets-in-tr.md) | CFTC vs Polymarket Mahomes; Kalshi still live (K252) | draft |
+| [newsletter-moontower-energy](sources/substack-rss-moontower-2026-08-30-energy-is-the-ultimate-currency.md) | Energy as ultimate currency essay (K252) | draft |
+| [newsletter-moontower-326](sources/substack-rss-moontower-2026-08-30-moontower-326.md) | Moontower #326 weekly (K252) | draft |
+| [newsletter-moontower-middle-manager](sources/substack-rss-moontower-2026-08-30-the-middle-manager.md) | Middle-manager marginal thinking (K252) | draft |
+| [newsletter-wu-strategy-spiral](sources/substack-rss-wublock-2026-08-31-didier-zheng-explains-could-strategy-enter-a-dea.md) | MSTR death-spiral discourse — GW alert-only (K252) | draft |
+| [newsletter-wu-weekly-outlook](sources/substack-rss-wublock-2026-08-31-wu-blockchain-weekly-outlook-us-jobs-ai-earnings.md) | US jobs + AI earnings outlook (K252) | draft |
+| [k252-harness-evolution-wave](concepts/k252-harness-evolution-wave.md) | EvoUndo + Logos + skill routing + Prove2Me (K252) | draft |
+| [k252-cyber-defense-wave](concepts/k252-cyber-defense-wave.md) | Layered defenses + accountability (K252) | draft |
+| [k252-gambling-pm-wave](concepts/k252-gambling-pm-wave.md) | EH injury/participation markets (K252) | draft |
+| [k252-newsletter-macro-wave](concepts/k252-newsletter-macro-wave.md) | Wu + Moontower macro cluster (K252) | draft |
+| [k252-vol-quant-wave](concepts/k252-vol-quant-wave.md) | BTC options + GMMB vol stub (K252) | draft |
+
 ### K251 ingest (2026-08-30)
 OSINT K251: 2 NEW newsletters (Glitch SPX Talon 31 Aug–4 Sep + WuBlock Asia TOP10). Fold 7 leftover K250 files (3 arXiv DUPLICATE + GitHub eval + empty eval-links + 2 PDF notes). Phase-0 **0 Integrate GO** (no new Adopt/GO). Talon → XSP + GW HITL. Wu wiki-only; ComeCome → cyber brief. **xsp scp yes. pm scp no.**
 

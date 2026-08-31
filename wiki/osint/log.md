@@ -1,9 +1,28 @@
+## [2026-08-31] ingest | K252 wave
+
+- **Inbox:** 14 files (8 arXiv + 6 newsletters). Preingest: 13 NEW, 1 LIKELY (Moontower #326 vs #325 pattern), 0 DUPLICATE.
+- **Sources:** rough Bergomi BTC options; personalized skill routing; layered LLM defenses; EvoUndo recoverability; GMMB Heston stub; Prove2Me; offline accountability; Logos cross-process bus; EH injury markets; 3 Moontower + 2 Wu newsletters.
+- **Concepts:** k252-harness-evolution-wave, k252-cyber-defense-wave, k252-gambling-pm-wave, k252-newsletter-macro-wave, k252-vol-quant-wave. Bump k248-gambling-pm-wave.
+- **Phase-0:** `adopt_k252_phase0.sh` — **0 Integrate GO** (no verified public SPDX repos; do not conflate Logos paper with maior/logosai-framework).
+- **Routing:** CCC harness brief (EvoUndo/Logos/skill routing/Prove2Me). Cyber layered defenses + accountability. Gambling EH injury markets awareness **no pm scp**. GW Wu Strategy + jobs outlook alert-only **no xsp/pm scp**. Vol wiki-only. **Atto/poker skip. No Barone PII.**
+- **Phase-1 leftover:** K282 recoverability + K237 misevolution + K285 Mandato + K280 Vero already policy_wired — propose `/phase1` only; do not edit `.cursor/skills` here.
+- **Briefs:** `briefs/2026-08-31_k252-*` + sibling copies. **No xsp/pm scp. No LIVE Discord.**
+- **Archive:** inbox → `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
 ## [2026-08-31] ops | Federated digest wrappers prefer repo runner
 
 - Wrappers `cemini-daily-research-digest` + `cemini-daily-research-digest-wiki` run `${WIKI_ROOT}/scripts/daily_research_digest_run.py` when present. Frozen `~/.cemini/launchagent/osint/` is fallback.
 - `sync_federation_digest_bundle.sh` skips `daily_research_digest_run.py` on wikis that already have `scripts/rss_digest.py` (gambling RSS fork). Run this sync from OSINT only.
 - Installed to `~/bin/cemini-daily-research-digest-*`. Gambling morning job (`com.cemini.daily-research-digest.gambling` @ 08:19) now hits RSS without a manual local run.
 - Canon: `@concepts/federated-daily-research-digest.md`. **No pm scp. No LIVE Discord.**
+
+## [2026-08-30] query | metals tungsten + Pt/Pd Outlier thesis
+
+- **From** — ALM desk `@concepts/western-tungsten-supply-thesis.md` (mention only)
+- **Spine** — `briefs/2026-08-30_metals-tungsten-ptpd-outlier.md` + pack `reports/research/pack-metals-tungsten-ptpd-20260830/`
+- **Swarm** — OR free + OC (Zen server error → Flash) + claude-ds Flash. Exa MCP not in session; Brave/WebFetch/USGS/WGC/NHK/AP. OpenCLI socials read-only.
+- **Fable** — WARN. P1s patched (AP/CSIS locators, tungsten-rail honesty).
+- **To SEO** — @seo-wiki/concepts/metals-tungsten-ptpd-outlier-notes.md. Voice/SEO paste still queued. No live prices. No commit this pass.
 
 ## [2026-08-30] ingest | K251 wave
 

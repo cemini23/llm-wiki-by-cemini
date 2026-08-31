@@ -10,9 +10,10 @@ related:
   - sources/newsletter-rss-tldrsec-2026-08-27-tldr-sec-343---hugging-face-technical-report-aws.md
   - sources/newsletter-rss-latent-space-2026-08-27-ainews-nvidia-buys-huggingface-for-13b-as-openai.md
   - sources/eval-multi-wiki-resource-plan-k248-2026-08-28.md
+  - concepts/k252-cyber-defense-wave.md
 maturity: draft
 created: 2026-08-28
-updated: 2026-08-28
+updated: 2026-08-31
 ---
 
 ## Relations
