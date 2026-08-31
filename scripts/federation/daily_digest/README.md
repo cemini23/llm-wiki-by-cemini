@@ -2,7 +2,9 @@
 
 Copy this directory's Python modules into a sibling wiki repo's `scripts/` folder, then run `install_federated_daily_digest.sh` from that repo root.
 
-**Keep in sync:** `bash scripts/federation/daily_digest/sync_federation_digest_bundle.sh` (OSINT canonical → all federation wikis + `~/.cemini/launchagent/osint/`).
+**Keep in sync:** `bash scripts/federation/daily_digest/sync_federation_digest_bundle.sh` (OSINT canonical → all federation wikis + `~/.cemini/launchagent/osint/`). Run that script from **OSINT**, not from a sibling wiki.
+
+Morning LaunchAgents run **`${WIKI_ROOT}/scripts/daily_research_digest_run.py`** when that file exists (gambling RSS lives there). The frozen `~/.cemini/launchagent/osint/` copy is fallback only. Sync skips `daily_research_digest_run.py` on any wiki that already has `scripts/rss_digest.py`.
 
 **Canonical reference:** OSINT `scripts/daily_research_digest_run.py` + `daily_research_fetch.py` (keep in sync manually until shared package exists).
 

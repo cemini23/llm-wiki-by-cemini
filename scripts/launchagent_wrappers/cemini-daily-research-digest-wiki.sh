@@ -9,7 +9,6 @@ set -uo pipefail
 source "${HOME}/.cemini/launchagent/_python3.sh"
 
 WIKI_ID="${CEMINI_WIKI_ID:-}"
-PAYLOAD="${HOME}/.cemini/launchagent/osint/daily_research_digest_run.py"
 if [[ -z "$WIKI_ID" ]]; then
   base=$(basename "$0")
   WIKI_ID="${base#cemini-daily-research-digest-}"
@@ -44,6 +43,15 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:${PATH:-/usr/bin:/bin:/usr/sbin:/s
 export CEMINI_WIKI_ROOT="${ROOT}"
 export WIKI_ROOT="${ROOT}"
 PY="$(cemini_launchagent_python3)"
+
+REPO_RUNNER="${ROOT}/scripts/daily_research_digest_run.py"
+BUNDLE_RUNNER="${HOME}/.cemini/launchagent/osint/daily_research_digest_run.py"
+if [[ -f "$REPO_RUNNER" ]]; then
+  PAYLOAD="$REPO_RUNNER"
+else
+  PAYLOAD="$BUNDLE_RUNNER"
+fi
+log "Digest runner: ${PAYLOAD}"
 
 if [[ ! -f "$PAYLOAD" ]]; then
   log "ERROR: missing ${PAYLOAD} — run: bash scripts/reinstall_morning_launchagents.sh"

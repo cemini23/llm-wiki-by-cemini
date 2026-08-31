@@ -20,7 +20,7 @@ related:
   - entities/tools/metaresearcher.md
 maturity: core
 created: 2026-06-01
-updated: 2026-07-03
+updated: 2026-08-31
 ---
 
 ## Relations
@@ -72,6 +72,8 @@ Each sibling wiki gets a **copy of the script bundle** under its repo `scripts/`
 | 3d-printing-wiki | `projects/3d printing` | `research to be indexed/` | `wiki/sweeps/` | Brief on disk — operator install pending |
 
 **LaunchAgent labels** must be unique per wiki (e.g. `com.cemini.daily-research-digest.seo`) — see federation `install_federated_daily_digest.sh`.
+
+**Runner path (2026-08-31):** federated wrappers prefer `${WIKI_ROOT}/scripts/daily_research_digest_run.py` so gambling RSS stays live. Frozen `~/.cemini/launchagent/osint/` is fallback. `sync_federation_digest_bundle.sh` skips that runner on any wiki that already has `scripts/rss_digest.py`. Run the sync from OSINT only.
 
 ### Monokern overlay (weekly)
 

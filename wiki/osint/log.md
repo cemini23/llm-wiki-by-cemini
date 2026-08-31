@@ -1,3 +1,10 @@
+## [2026-08-31] ops | Federated digest wrappers prefer repo runner
+
+- Wrappers `cemini-daily-research-digest` + `cemini-daily-research-digest-wiki` run `${WIKI_ROOT}/scripts/daily_research_digest_run.py` when present. Frozen `~/.cemini/launchagent/osint/` is fallback.
+- `sync_federation_digest_bundle.sh` skips `daily_research_digest_run.py` on wikis that already have `scripts/rss_digest.py` (gambling RSS fork). Run this sync from OSINT only.
+- Installed to `~/bin/cemini-daily-research-digest-*`. Gambling morning job (`com.cemini.daily-research-digest.gambling` @ 08:19) now hits RSS without a manual local run.
+- Canon: `@concepts/federated-daily-research-digest.md`. **No pm scp. No LIVE Discord.**
+
 ## [2026-08-30] ingest | K251 wave
 
 - **Inbox:** 9 files. Preingest: 5 NEW, 1 LIKELY, 3 DUPLICATE. Skip grok-bot-inbox-test / skip-ingest: none.

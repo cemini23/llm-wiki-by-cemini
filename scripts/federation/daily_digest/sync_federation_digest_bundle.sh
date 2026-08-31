@@ -59,6 +59,12 @@ sync_scripts_to_repo() {
     local src="${OSINT_ROOT}/scripts/${f}"
     local dst="${scripts_dir}/${f}"
     [[ "$src" -ef "$dst" ]] && continue
+    # Gambling (and any wiki with rss_digest.py) keeps its RSS-capable runner.
+    # Do not clobber it with the OSINT paper-only copy.
+    if [[ "$f" == "daily_research_digest_run.py" && -f "${scripts_dir}/rss_digest.py" ]]; then
+      echo "  skip $f — local RSS runner (rss_digest.py present)"
+      continue
+    fi
     cp -f "$src" "$dst"
   done
   rm -rf "${scripts_dir}/agent_reach_wrapper"
