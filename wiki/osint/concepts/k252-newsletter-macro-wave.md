@@ -10,9 +10,10 @@ related:
   - sources/substack-rss-moontower-2026-08-30-the-middle-manager.md
   - sources/substack-rss-moontower-2026-08-30-moontower-326.md
   - concepts/k248-newsletter-macro-wave.md
+  - concepts/k253-newsletter-macro-wave.md
 maturity: draft
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-09-01
 ---
 
 ## Relations

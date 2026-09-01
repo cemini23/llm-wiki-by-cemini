@@ -7,13 +7,14 @@ related:
   - entities/tickers/ttwo.md
   - sources/ttwo-gta6-cashout-desk-2026-08-20.md
   - sources/gemini-dr-ttwo-gta6-cashout-2026-08-20.md
+  - sources/substack-rss-outlier-weekly-2026-08-31-the-netflix-look-gave-gta-6-a-phone-it-did-not-g.md
   - concepts/grey-market-game-economies.md
   - concepts/prediction-market-regulation-2026.md
   - entities/companies/tiger-global-management.md
   - "@seo-wiki/concepts/ttwo-gta6-outlier-notes.md"
 maturity: draft
 created: 2026-08-20
-updated: 2026-08-31
+updated: 2026-09-01
 ---
 
 ## Relations

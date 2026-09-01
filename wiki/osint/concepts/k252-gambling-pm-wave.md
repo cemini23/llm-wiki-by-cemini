@@ -5,10 +5,12 @@ tags: [prediction-markets, gambling, k252]
 keywords: [injury-markets, player-participation, CFTC, Kalshi]
 related:
   - sources/substack-rss-event-horizon-2026-08-31-are-will-players-compete-or-injury-markets-in-tr.md
+  - sources/substack-rss-event-horizon-2026-09-01-episode-30-is-prediction-markets-vs-states-comin.md
   - concepts/k248-gambling-pm-wave.md
+  - concepts/k253-gambling-pm-wave.md
 maturity: draft
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-09-01
 ---
 
 ## Relations

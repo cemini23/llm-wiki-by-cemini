@@ -1,8 +1,20 @@
+## [2026-09-01] ingest | K253 wave
+
+- **Inbox:** 16 files (8 arXiv + 8 newsletters). Preingest: 16 NEW, 1 LIKELY (Addy skill decay vs July autonomy levels — distinct issue), 0 DUPLICATE.
+- **Sources:** deep hedging; physics OOD×2; neural calibration; AutoSciRub; S3Gym; Aspire; DIASENTINEL; Addy skill decay; Capital Flows ES7670; EH SCOTUS PM; Klement defence; Outlier GTA6 Netflix; Wu SEC crypto; Latent PRs + Fal H3; Pragmatic Engineer 5yr.
+- **Concepts:** k253-harness-self-improvement-wave, k253-auditable-mas-clinical-stub, k253-vol-quant-wave, k253-physics-ood-wave, k253-newsletter-macro-wave, k253-gambling-pm-wave, k253-ccc-oss-wave. Entity autoscirub. Bumps k252/k248/gta6 thesis.
+- **Phase-0:** `adopt_k253_phase0.sh` — **AutoSciRub MIT REFERENCE** clone (~2.5MB). S3Gym/Aspire/DIASENTINEL/vol/physics: no Integrate GO.
+- **Routing:** CCC harness + OSS briefs. Cyber auditable MAS pattern. GW CF ES7670 alert-only. Gambling EH SCOTUS awareness. Outlier → SEO `ttwo-gta6-outlier-notes` append. Fal H3 → image-gen pointer. **No xsp/pm scp.**
+- **Phase-1 leftover:** K162/K237/K324 eval-before-improve + validation ratchet already policy_wired; HITL on skill/harness mutation. Cursor `/phase1` — do not edit `.cursor/skills` here.
+- **Briefs:** `briefs/2026-09-01_k253-*` + sibling copies. **No LIVE Discord.**
+- **Archive:** inbox → egress-fi.
+
 ## [2026-09-01] query | CRML short thesis (Tanbreez / EUR scheme)
 
 - **Ticker** NASDAQ:CRML. Greenland MIN 2020-54 is a real 30-year licence. Equity is a promotional pre-revenue tape (~$1.06bn at $7.21 vs 44.87 Mt @ 0.38% TREO). EUR all-stock scheme issues more shares; it is not a reverse split. Ratio indicated at 0.045 max.
 - **Desk** gitignored `briefs/2026-09-01_crml-short-thesis.md`. Tracked copy: `reports/research/pack-crml-short-thesis-20260901/`.
 - **Sleeve** listed 2 Oct 2026 $7 puts (observational). Friend email 1 Sep. No entity page this pass. No xsp/pm scp. No LIVE Discord.
+- **SEO / Outlier** — @seo-wiki/concepts/crml-tanbreez-outlier-notes.md · paste `SEO:GEO B&M Business/briefs/2026-09-01_crml-tanbreez-outlier.md`. Public letter strips last print and the $7 put. $6 strikes if the name keeps falling. HITL. Not LIVE.
 
 ## [2026-08-31] query | Outlier Weekly LIVE — GTA 6 cashout letter
 

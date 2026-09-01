@@ -8,10 +8,11 @@ related:
   - sources/arxiv-2608.28553-logos-cross-process-bus-2026-08-31.md
   - sources/arxiv-2608.28241-personalized-skill-routing-2026-08-31.md
   - sources/arxiv-2608.28433-prove2me-formalization-2026-08-31.md
-  - concepts/k250-harness-intelligence-wave.md
+  - concepts/k252-harness-evolution-wave.md
+  - concepts/k253-harness-self-improvement-wave.md
 maturity: draft
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-09-01
 ---
 
 ## Relations

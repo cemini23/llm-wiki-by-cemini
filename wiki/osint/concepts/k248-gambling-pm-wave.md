@@ -7,10 +7,12 @@ related:
   - sources/substack-rss-event-horizon-2026-08-27-connecticut-sues-kalshi-for-offering-illegal-unl.md
   - sources/substack-rss-event-horizon-2026-08-28-it-would-be-neat-if-prediction-markets-were-21.md
   - sources/substack-rss-event-horizon-2026-08-31-are-will-players-compete-or-injury-markets-in-tr.md
+  - sources/substack-rss-event-horizon-2026-09-01-episode-30-is-prediction-markets-vs-states-comin.md
   - concepts/k252-gambling-pm-wave.md
+  - concepts/k253-gambling-pm-wave.md
 maturity: draft
 created: 2026-08-28
-updated: 2026-08-31
+updated: 2026-09-01
 ---
 
 ## Relations
@@ -18,7 +20,8 @@ updated: 2026-08-31
 - @sources/substack-rss-event-horizon-2026-08-27-connecticut-sues-kalshi-for-offering-illegal-unl.md — CT AG suit vs Kalshi sports contracts
 - @sources/substack-rss-event-horizon-2026-08-28-it-would-be-neat-if-prediction-markets-were-21.md — 21+ age floor advocacy
 - @sources/substack-rss-event-horizon-2026-08-31-are-will-players-compete-or-injury-markets-in-tr.md — injury/participation markets (K252)
-- @concepts/k252-gambling-pm-wave.md — K252 EH cluster
+- @sources/substack-rss-event-horizon-2026-09-01-episode-30-is-prediction-markets-vs-states-comin.md — SCOTUS PM vs states (K253)
+- @concepts/k253-gambling-pm-wave.md — K253 EH cluster
 
 ## Raw Concept
 

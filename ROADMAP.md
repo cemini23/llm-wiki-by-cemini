@@ -28,6 +28,15 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-09-01 — K253)
+
+- **K253 ingest** — 16 inbox (8 arXiv + 8 newsletters). 16 source pages + 7 concept hubs + autoscirub entity + prior bumps. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k253_phase0.sh`: **AutoSciRub MIT REFERENCE** (~2.5MB). **0 Integrate GO** for S3Gym/Aspire/DIASENTINEL runtime.
+- **Routing** — CCC harness self-improvement + OSS factory. Cyber auditable MAS extract. GW Capital Flows ES7670 alert-only. Gambling EH SCOTUS. Outlier GTA6 SEO append. Vol/physics wiki-only.
+- **Briefs** — OSINT `briefs/2026-09-01_k253-*`. Sibling copies to CCC/cyber/gambling/GuruWatcher.
+- **Phase-1 leftover** — evaluate-before-improve + skill misevolution gates; HITL before harness/skill writes. No `.cursor/skills` edits here.
+- **Open:** HL funding backtest overdue. Kalshi/equity/cross-venue LP due. Wiki gap detect stale (12d). Grok CLI auth for `/route`. No LIVE Discord.
+
 ## Current state (2026-08-31 — K252)
 
 - **K252 ingest** — 14 inbox (8 arXiv + 6 newsletters). 14 source pages + 5 concept hubs + k248 gambling bump. Raws to egress-fi. **No xsp/pm scp.**

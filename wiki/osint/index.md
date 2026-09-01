@@ -7,6 +7,37 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K253 ingest (2026-09-01)
+OSINT K253: 8 arXiv + 8 newsletters → 7 concept hubs + AutoSciRub entity. Phase-0 **1 REFERENCE clone** (AutoSciRub MIT). Harness self-improvement (S3Gym, Aspire, AutoSciRub, Addy skill decay). Vol quant wiki-only. Physics OOD stub. DIASENTINEL clinical extract. CF ES7670 + Klement + Wu → GW alert-only. EH SCOTUS PM episode. OSS factory + Fal H3 pointer. Outlier GTA6 → SEO notes bump. **No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [arxiv-deep-hedging-frictions](sources/arxiv-2608.29025-deep-hedging-market-frictions-2026-09-01.md) | Deep hedging under market frictions (K253) | draft |
+| [arxiv-ringdown-resonance](sources/arxiv-2608.29806-nuclear-decay-black-hole-ringdown-2026-09-01.md) | Nuclear decay ↔ ringdown physics OOD (K253) | draft |
+| [arxiv-branching-stochastic](sources/arxiv-2608.29807-branching-stochastic-mechanics-2026-09-01.md) | Branching stochastic mechanics OOD (K253) | draft |
+| [arxiv-neural-calibration](sources/arxiv-2608.30867-neural-calibration-complete-market-2026-09-01.md) | Neural calibration complete market model (K253) | draft |
+| [arxiv-autoscirub](sources/arxiv-2608.31076-autoscirub-rubric-induction-2026-09-01.md) | AutoSciRub rubric induction MIT REFERENCE (K253) | draft |
+| [arxiv-s3gym](sources/arxiv-2608.31100-s3gym-self-testing-self-judging-2026-09-01.md) | S3Gym self-test/judge/improve (K253) | draft |
+| [arxiv-aspire](sources/arxiv-2608.31111-aspire-vague-goals-self-evolve-2026-09-01.md) | Aspire vague-goal self-evolution (K253) | draft |
+| [arxiv-diasentinel](sources/arxiv-2608.31128-diasentinel-diabetes-auditable-mas-2026-09-01.md) | DIASENTINEL auditable MAS clinical stub (K253) | draft |
+| [newsletter-addy-skill-decay](sources/substack-rss-addy-osmani-2026-08-31-agentic-skill-decay.md) | Addy agentic skill decay (K253) | draft |
+| [newsletter-capital-flows-es7670](sources/substack-rss-capital-flows-2026-09-01-dollar-devaluation-is-bearish-equities.md) | CF dollar deval bearish equities / ES7670 (K253) | draft |
+| [newsletter-eh-scotus-pm](sources/substack-rss-event-horizon-2026-09-01-episode-30-is-prediction-markets-vs-states-comin.md) | EH Ep30 PM vs states SCOTUS (K253) | draft |
+| [newsletter-klement-defence](sources/substack-rss-klement-2026-09-01-defence-spending-and-the-stability-of-a-country.md) | Klement defence spending (K253) | draft |
+| [newsletter-outlier-gta6-netflix](sources/substack-rss-outlier-weekly-2026-08-31-the-netflix-look-gave-gta-6-a-phone-it-did-not-g.md) | Outlier GTA6 Netflix look / cashout rail (K253) | draft |
+| [newsletter-wu-sec-crypto](sources/substack-rss-wublock-2026-09-01-under-the-secs-new-rules-can-the-crypto-industry.md) | Wu SEC crypto rules (K253) | draft |
+| [newsletter-latent-prs](sources/newsletter-rss-latent-space-2026-09-01-prs-not-welcome-how-top-ai-open-source-projects.md) | Latent Space PRs not welcome (K253) | draft |
+| [newsletter-pragmatic-five-years](sources/newsletter-rss-pragmatic-engineer-2026-09-01-the-pragmatic-engineer-five-years.md) | Pragmatic Engineer five years (K253) | draft |
+| [newsletter-fal-h3](sources/newsletter-rss-latent-space-2026-09-01-ainews-fals-h3-max-live-breaks-the-infinite-vide.md) | Fal H3 Max live videogen pointer (K253) | draft |
+| [k253-harness-self-improvement](concepts/k253-harness-self-improvement-wave.md) | S3Gym + Aspire + AutoSciRub + skill decay (K253) | draft |
+| [k253-auditable-clinical-stub](concepts/k253-auditable-mas-clinical-stub.md) | DIASENTINEL auditable MAS stub (K253) | draft |
+| [k253-vol-quant](concepts/k253-vol-quant-wave.md) | Deep hedging + neural calibration (K253) | draft |
+| [k253-physics-ood](concepts/k253-physics-ood-wave.md) | Physics OOD stub (K253) | draft |
+| [k253-newsletter-macro](concepts/k253-newsletter-macro-wave.md) | CF + Klement + Wu macro (K253) | draft |
+| [k253-gambling-pm](concepts/k253-gambling-pm-wave.md) | EH SCOTUS PM episode (K253) | draft |
+| [k253-ccc-oss](concepts/k253-ccc-oss-wave.md) | OSS software factories + Fal H3 (K253) | draft |
+| [autoscirub-entity](entities/tools/autoscirub.md) | AutoSciRub MIT REFERENCE tool (K253) | draft |
+
 ### K252 ingest (2026-08-31)
 OSINT K252: 8 arXiv + 6 newsletters → 5 concept hubs. Phase-0 **0 Integrate GO** (no verified SPDX repos). CCC harness (EvoUndo, Logos, skill routing, Prove2Me). Cyber layered defenses + accountability. Gambling EH injury markets **no pm scp**. Wu Strategy + jobs outlook → GW alert-only. Vol papers wiki-only. **No xsp/pm scp.**
 

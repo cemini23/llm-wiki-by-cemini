@@ -6,9 +6,10 @@ keywords: [rough-bergomi, bitcoin-options, GMMB, actuarial]
 related:
   - sources/arxiv-2608.27575-bitcoin-inverse-options-rough-bergomi-2026-08-31.md
   - sources/arxiv-2608.28397-gmmb-riders-heston-2026-08-31.md
+  - concepts/k253-vol-quant-wave.md
 maturity: draft
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-09-01
 ---
 
 ## Relations

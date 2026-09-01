@@ -3,10 +3,12 @@ title: Addy Osmani's Blog — Agentic Autonomy Levels
 type: source
 tags: [source, newsletter-rss, inbox-auto, addy-osmani]
 keywords: [rss, newsletter, addy-osmani]
-related: []
+related:
+  - sources/substack-rss-addy-osmani-2026-08-31-agentic-skill-decay.md
+  - concepts/k253-harness-self-improvement-wave.md
 maturity: draft
 created: 2026-07-05
-updated: 2026-07-09
+updated: 2026-09-01
 read_status: skimmed
 ---
 
