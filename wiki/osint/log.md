@@ -1,3 +1,15 @@
+## [2026-09-01] query | CRML short thesis (Tanbreez / EUR scheme)
+
+- **Ticker** NASDAQ:CRML. Greenland MIN 2020-54 is a real 30-year licence. Equity is a promotional pre-revenue tape (~$1.06bn at $7.21 vs 44.87 Mt @ 0.38% TREO). EUR all-stock scheme issues more shares; it is not a reverse split. Ratio indicated at 0.045 max.
+- **Desk** gitignored `briefs/2026-09-01_crml-short-thesis.md`. Tracked copy: `reports/research/pack-crml-short-thesis-20260901/`.
+- **Sleeve** listed 2 Oct 2026 $7 puts (observational). Friend email 1 Sep. No entity page this pass. No xsp/pm scp. No LIVE Discord.
+
+## [2026-08-31] query | Outlier Weekly LIVE — GTA 6 cashout letter
+
+- **LIVE** — https://outlierweekly.substack.com/p/the-netflix-look-gave-gta-6-a-phone
+- **SEO wiki** — @seo-wiki/concepts/ttwo-gta6-outlier-notes.md flipped from scheduled → LIVE
+- **This wiki** — URL recorded on @concepts/gta6-convertible-currency-thesis.md and @entities/tickers/ttwo.md. No new research pass. No xsp/pm scp.
+
 ## [2026-08-31] ingest | K252 wave
 
 - **Inbox:** 14 files (8 arXiv + 6 newsletters). Preingest: 13 NEW, 1 LIKELY (Moontower #326 vs #325 pattern), 0 DUPLICATE.

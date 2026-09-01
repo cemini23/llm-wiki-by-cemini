@@ -8,15 +8,17 @@ related:
   - sources/gemini-dr-ttwo-gta6-cashout-2026-08-20.md
   - sources/ttwo-gta6-cashout-desk-2026-08-20.md
   - entities/tickers/ttwo.md
+  - "@seo-wiki/concepts/ttwo-gta6-outlier-notes.md"
 maturity: draft
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-08-31
 ---
 
 ## Relations
 
 - @gambling-wiki/briefs/2026-08-20_cs2-roblox-grey-cashout.md — CS2/Roblox grey cashout analog (OSINT keeps TTWO thesis)
 - @concepts/gta6-convertible-currency-thesis.md — Model 4 (unofficial CS-style rail) on the GTA 6 thesis
+- @seo-wiki/concepts/ttwo-gta6-outlier-notes.md — Outlier Weekly **LIVE** 2026-08-31: https://outlierweekly.substack.com/p/the-netflix-look-gave-gta-6-a-phone
 - @sources/gemini-dr-ttwo-gta6-cashout-2026-08-20.md — Gemini omitted this analog
 - @sources/ttwo-gta6-cashout-desk-2026-08-20.md — desk pull that named PlayerAuctions + Roblox DevEx
 - @entities/tickers/ttwo.md — Take-Two sues the GTAO version of this rail

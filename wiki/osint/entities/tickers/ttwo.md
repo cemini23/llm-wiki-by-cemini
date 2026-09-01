@@ -9,9 +9,10 @@ related:
   - concepts/gta6-convertible-currency-thesis.md
   - concepts/grey-market-game-economies.md
   - entities/companies/tiger-global-management.md
+  - "@seo-wiki/concepts/ttwo-gta6-outlier-notes.md"
 maturity: draft
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-08-31
 ---
 
 ## Relations
@@ -21,6 +22,7 @@ updated: 2026-08-20
 - @concepts/gta6-convertible-currency-thesis.md — operator thesis: official DevEx and/or unofficial CS-style rail
 - @concepts/grey-market-game-economies.md — CS2/Roblox/FIFA/GTAO grey vs official
 - @entities/companies/tiger-global-management.md — Q1 2026 13F: TTWO 1.73% of book, **−65.75%**
+- @seo-wiki/concepts/ttwo-gta6-outlier-notes.md — Outlier Weekly **LIVE** 2026-08-31: https://outlierweekly.substack.com/p/the-netflix-look-gave-gta-6-a-phone
 - Laptop brief (gitignored): `briefs/2026-08-20_ttwo-gemini-deep-research.md`
 - Canvas: `ttwo-gta6-cashout-thesis`
 

@@ -3120,7 +3120,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 
 ### TTWO desk (2026-08-20)
 
-- [GTA 6 convertible-currency thesis](concepts/gta6-convertible-currency-thesis.md) — operator: official DevEx and/or unofficial CS2-style rail; Gemini official player FX <1%; Netflix look 2026-08-27 mixed (social HIT / cashout MISS); SEO Outlier spine @seo-wiki/concepts/ttwo-gta6-outlier-notes.md — concept, take-two, gta6, fincen
+- [GTA 6 convertible-currency thesis](concepts/gta6-convertible-currency-thesis.md) — operator: official DevEx and/or unofficial CS2-style rail; Gemini official player FX <1%; Netflix look 2026-08-27 mixed (social HIT / cashout MISS); Outlier **LIVE** 2026-08-31 https://outlierweekly.substack.com/p/the-netflix-look-gave-gta-6-a-phone — concept, take-two, gta6, fincen
 - [Grey-market game economies](concepts/grey-market-game-economies.md) — CS2 skins / Roblox DevEx / FIFA coins / GTAO PlayerAuctions; Steam Wallet cannot cash out — concept, virtual-currency, grey-market
 
 ### K237 ingest (2026-08-14)

@@ -10,9 +10,10 @@ related:
   - concepts/grey-market-game-economies.md
   - concepts/prediction-market-regulation-2026.md
   - entities/companies/tiger-global-management.md
+  - "@seo-wiki/concepts/ttwo-gta6-outlier-notes.md"
 maturity: draft
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-08-31
 ---
 
 ## Relations
@@ -23,6 +24,7 @@ updated: 2026-08-20
 - @concepts/grey-market-game-economies.md — CS2/Roblox/FIFA analog: unofficial fiat rails exist even when ToS bans them
 - @concepts/prediction-market-regulation-2026.md — Kalshi/PM are CFTC event contracts; they do not repeal FinCEN CVC/MSB
 - @entities/companies/tiger-global-management.md — Q1 2026 13F cut is positioning, not a product leak
+- @seo-wiki/concepts/ttwo-gta6-outlier-notes.md — Outlier Weekly **LIVE** 2026-08-31: https://outlierweekly.substack.com/p/the-netflix-look-gave-gta-6-a-phone
 
 ## Raw Concept
 
@@ -79,7 +81,7 @@ Skinport sellers do not get PayPal. They cash out via bank transfer through Adye
 | 2026-06-25 | SKUs $79.99 / $99.99; Rockstar: single-player experience, no online successor announced | `[CONFIRMED]` IR / storefront |
 | 2026-08-19 | CyberLeek: currency "traded to real life money (like Robux)"; same actor runs a Solana memecoin | `[TENTATIVE]` — discount the messenger |
 | 2026-08-19 | GamingCulture: cashout for creators on in-game social | `[TENTATIVE]` |
-| 2026-08-27 | Netflix Extended Look, 3 p.m. ET | Scheduled |
+| 2026-08-27 | Netflix Extended Look, 3 p.m. ET. Diegetic phones + social feeds + influencer livestream satire **HIT**. UGC / creator store / tradable uniques / Robux cashout **MISS**. Rob Nelson (Rockstar North): no real-money purchases in the Nov 19 single-player game. Online successor still unannounced. | `[CONFIRMED]` social satire on tape; H1/H2 still later-Online. Falsifier 1 = mixed, not a kill |
 
 Henderson's 2021 tweet is still live (`1400498601353220097`), and Dexerto and Inverse quoted it contemporaneously. Gemini cited a Wayback snapshot at `20210603140049`; that timestamp predates the tweet's snowflake (~17:04Z), so the archive is unusable rather than a working source. The live tweet and the contemporaneous coverage carry the claim.
 
@@ -104,7 +106,7 @@ The official player-wide PayPal button can fail and both H1 and H2 still live. T
 
 **What would prove it wrong.**
 
-1. The Aug 27 Netflix look and launch marketing show no UGC, no social, no marketplace, and no tradable scarce items — only GTA$.
+1. The Aug 27 Netflix look and launch marketing show no UGC, no social, no marketplace, and no tradable scarce items — only GTA$. **(2026-08-28 scan: social satire appeared; creator rail and item rail did not. Mixed, not a kill.)**
 2. Launch ToS and the FY27 10-K keep "no cash value," add no DevEx/Tebex line, and add no item trade.
 3. CyberLeek never produces a redemption screen; the memecoin stays the business model.
 4. Rockstar repeats the Henderson walk-back on record.
@@ -121,6 +123,8 @@ The official player-wide PayPal button can fail and both H1 and H2 still live. T
 Two delay announcements, two single-session gap-downs, both recovered. That is the observed tape. It supports "the market re-rates a delay, then moves on." It is not an instruction to size a position.
 
 **Compliance.** Observational. Not advice.
+
+**Public letter.** Outlier Weekly shipped this thesis 2026-08-31: [The Netflix look gave GTA 6 a phone. It did not give it a cashout.](https://outlierweekly.substack.com/p/the-netflix-look-gave-gta-6-a-phone). Queue and GEO notes live on `@seo-wiki/concepts/ttwo-gta6-outlier-notes.md`. Not a second research pass.
 
 ## Snippets
 
