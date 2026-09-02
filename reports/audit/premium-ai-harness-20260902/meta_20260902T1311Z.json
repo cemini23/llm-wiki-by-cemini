@@ -1,0 +1,11 @@
+{
+  "timestamp": "20260902T1311Z",
+  "pack": "/Users/claudiobarone/Projects/OSINT WORKSPACE/reports/audit/pack-ai-harness-20260902",
+  "auditors_file": "/Users/claudiobarone/Projects/OSINT WORKSPACE/reports/audit/premium-ai-harness-20260902/auditors_20260902T1311Z.json",
+  "tier": "default-5-model",
+  "models": [
+    "api-adversarial",
+    "api-deep-reasoning"
+  ],
+  "errors": []
+}
