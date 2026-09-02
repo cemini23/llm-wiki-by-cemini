@@ -1,6 +1,6 @@
 ---
-description: OSINT Phase-1 wires K246-K253 ingest backlog (harness, cyber, PM, GW macro)
-alwaysApply: true
+description: OSINT K246–K253 wire index (2026-08-25 → 09-01) — wave → surface → sibling rule-file lookup table. Read when resolving a K246–K253 dual-ID or finding which repo rule wires a batch. Not policy; invariants live in cemini-invariants.mdc.
+alwaysApply: false
 ---
 
 # OSINT K246–K253 Phase-1 wires (2026-08-25 → 2026-09-01)

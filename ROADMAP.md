@@ -28,6 +28,17 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+---
+
+## Current state (2026-09-02 — super-audit AI harness · REWORK)
+
+- **Audit** — `reports/audit/premium-ai-harness-20260902/SYNTHESIS.md` (5 auditors, REWORK). Plan: `IMPLEMENTATION_PLAN.md` same folder.
+- **Rules** — `cemini-invariants.mdc` (CCC, alwaysApply) replaces the 770-line catalog in every turn; catalog demoted to on-demand. Federation `cemini-*.mdc` rules now sync to `~/.cursor/rules/` only; project copies pruned (Cybersec overlay copy kept).
+- **OSINT** — `osint-phase1-adopt-wires.mdc` alwaysApply **true** (hard gates); `osint-k246-k253-phase1-wires.mdc` on-demand index.
+- **Vocabulary** — FILE · KEEP · WIRE (`wiki/concepts/file-keep-wire-harness.md`). `wiki/meta/wire-ledger.yaml` + `scripts/wire_ledger_check.py` PASS.
+- **Grok** — failure is **HTTP 402 "Grok Build usage balance exhausted"** (balance), **not** login. `/route` mid lane falls back to Flash per rule. Consider unloading `com.cemini.wiki-ingester` until balance restored + HITL.
+- **Open:** Ollama not installed (free 6th audit slot). GuruWatcher 53-rule collapse. OSINT hard-gate split (≤40 lines). HL funding backtest overdue.
+
 ## Current state (2026-09-02 — K254)
 
 - **K254 ingest** — 17 inbox (16 NEW + 1 DUPLICATE fold). 15 source pages + 8 concept hubs + prior bumps. **No xsp/pm scp.**
@@ -35,7 +46,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Phase-1 wired** — `adopt_k246_k253_phase1.sh` + `adopt_k254_phase1.sh` PASS. Rules on all surfaces. **29 concept hubs** `wire_status` set.
 - **Routing** — CCC harness cluster + Fable 5.1 awareness. GW Klement bond + Wu BTC alert-only. Gambling Robinhood/Kalshi. SEO GBP edited-review.
 - **Briefs** — `briefs/2026-09-02_k254-*` → CCC/cyber/gambling/GuruWatcher/SEO siblings.
-- **Open:** HL funding backtest overdue. Wiki gap detect stale. Grok login for `/route`.
+- **Open:** HL funding backtest overdue. Wiki gap detect stale. Grok Build balance (402) for `/route` — not a login fix.
 
 ## Current state (2026-09-01 — K253)
 

@@ -23,7 +23,7 @@ python3 scripts/spdx_watch_k254_eval.py selftest
 
 echo ""
 echo "=== Wired surfaces ==="
-echo "OSINT:     .cursor/rules/osint-k246-k253-phase1-wires.mdc (alwaysApply)"
+echo "OSINT:     .cursor/rules/osint-k246-k253-phase1-wires.mdc (on-demand index)"
 echo "CCC:       .cursor/rules/ccc-k246-k253-phase1-wires.mdc"
 echo "Cyber:     .cursor/rules/cyber-k246-k253-phase1-wires.mdc"
 echo "Gambling:  .cursor/rules/gambling-k246-k253-phase1-wires.mdc"

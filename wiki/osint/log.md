@@ -1,3 +1,11 @@
+## [2026-09-02] audit | super-audit AI harness → REWORK → Phase A shipped
+
+- **Synthesis:** `reports/audit/premium-ai-harness-20260902/SYNTHESIS.md`. ~47% rule tokens duplicate; 770-line alwaysApply catalog demoted; 27 duplicate K# ids.
+- **CCC:** `cemini-invariants.mdc` (alwaysApply, ≤45 lines); `cemini-phase1-policy-wires.mdc` → `alwaysApply: false`; sync script rules → `~/.cursor/rules/` only + `--prune-project-rules`; `tipdrop-route-outsource.mdc` alias removed.
+- **OSINT:** adopt-wires alwaysApply true; k246-k253 index on-demand; concept `file-keep-wire-harness`; `wiki/meta/wire-ledger.yaml` + `wire_ledger_check.py`; `cemini-wiki-ingest` + `notebooklm-osint-bridge` domain-synced.
+- **Grok:** 402 = Grok Build balance exhausted (not auth). Operator checklist `briefs/2026-09-02_harness-operator-checklist.md`.
+- **Verify:** `wire_ledger_check.py` PASS · sync exit 0 · preflight no CRITICAL.
+
 ## [2026-09-02] phase1 | K246-K253 backlog wired
 
 - **Surfaces:** OSINT `osint-k246-k253-phase1-wires.mdc` (alwaysApply); CCC/Cyber/Gambling batch `.mdc`; GW k249/k251/k252/k253 + k250 canary fix; 29 concept hubs `wire_status`.

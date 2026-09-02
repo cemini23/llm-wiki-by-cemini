@@ -12,6 +12,7 @@ related:
   - sources/trading-posts-compilation-31-2026-06-01.md
   - entities/tools/world-cup-bot.md
   - concepts/skill-regression-tax.md
+  - concepts/file-keep-wire-harness.md
   - sources/arxiv-2607.22520-regression-tax-llm-skills.md
 maturity: validated
 created: 2026-06-01

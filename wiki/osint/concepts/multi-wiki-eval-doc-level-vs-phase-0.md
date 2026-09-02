@@ -12,6 +12,7 @@ related:
   - entities/tools/aulekator-polymarket-btc-bot.md
   - concepts/cemini-license-posture.md
   - sources/multi-wiki-link-eval-v4-2026-05-15.md
+  - concepts/file-keep-wire-harness.md
   - sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md
   - sources/tool-evaluation-wiki-fit-2026-05-15.md
   - sources/multi-wiki-tool-eval-25url-2026-05-28.md

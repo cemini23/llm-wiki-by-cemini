@@ -1,0 +1,49 @@
+# WIRE ledger — every executable harness change. Key by slug; arXiv id optional.
+# Check: python3 scripts/wire_ledger_check.py
+version: 1
+updated: 2026-09-02
+repos:
+  osint: /Users/claudiobarone/Projects/OSINT WORKSPACE
+  ccc: /Users/claudiobarone/Projects/Cemini claude code CCC
+  home: /Users/claudiobarone
+wires:
+  - id: cemini-invariants-rule
+    verb: WIRE
+    kind: rule
+    repo: ccc
+    path: .cursor/rules/cemini-invariants.mdc
+    wiki_page: "@ccc-wiki/concepts/phase1-adopt-wire.md"
+    since: 2026-09-02
+    verify: "test -f .cursor/rules/cemini-invariants.mdc"
+  - id: federation-rules-global-only
+    verb: WIRE
+    kind: script
+    repo: ccc
+    path: scripts/sync_federation_cursor_skills.sh
+    wiki_page: "@osint-wiki/concepts/file-keep-wire-harness.md"
+    since: 2026-09-02
+    verify: "bash scripts/sync_federation_cursor_skills.sh"
+  - id: chrome-devtools-mcp
+    verb: WIRE
+    kind: mcp
+    repo: osint
+    path: .cursor/mcp.json
+    wiki_page: entities/tools/chrome-devtools-mcp.md
+    since: 2026-09-02
+    verify: "rg -c chrome-devtools .cursor/mcp.json"
+  - id: mcp-legal-it
+    verb: WIRE
+    kind: mcp
+    repo: osint
+    path: .cursor/mcp.json
+    wiki_page: entities/tools/mcp-legal-it.md
+    since: 2026-09-02
+    verify: "rg -c mcp-legal-it .cursor/mcp.json"
+  - id: world-intel-mcp
+    verb: WIRE
+    kind: mcp
+    repo: osint
+    path: wiki-only
+    wiki_page: entities/tools/world-intel-mcp.md
+    since: 2026-09-02
+    verify: "wiki-only pending prod-mcp enable"

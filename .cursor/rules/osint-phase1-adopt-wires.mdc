@@ -1,6 +1,6 @@
 ---
 description: Phase-1 OSINT adopt wires — Atto PII/genealogy, GuruWatcher alerts, scraper isolation, license/AgentBaiting, finance routing
-alwaysApply: false
+alwaysApply: true
 ---
 
 # Phase-1 OSINT adopt wires

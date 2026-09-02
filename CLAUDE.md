@@ -180,6 +180,7 @@ Run on request. The mechanical checks are automated by `scripts/wiki_lint.py`:
 - **Cited-unread stubs** — source pages with `read_status=unread-stub` and ≥1 inbound edge
 - **Frontmatter quality** — missing `type`/`maturity`/mismatched `updated`
 - **Stale `[NEEDS VERIFICATION YYYY-MM-DD]` tags** (≥7 days old by default)
+- **`python3 scripts/wire_ledger_check.py`** — every `runtime_wired` / `integrate` page has a WIRE ledger row
 
 These still need human/LLM judgment:
 - **Contradictions** — two pages making incompatible claims. Flag with `[NEEDS VERIFICATION YYYY-MM-DD]` and note on both pages

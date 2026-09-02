@@ -8,6 +8,7 @@ description: >-
 license: MIT
 metadata.author: cemini23
 metadata.version: "1.0.0"
+federation: true
 ---
 
 # Cemini wiki ingest (Phase 3)

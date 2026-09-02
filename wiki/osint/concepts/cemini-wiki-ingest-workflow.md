@@ -19,6 +19,7 @@ related:
   - entities/tools/metaresearcher.md
   - projects/osint-workspace/Architecture/Architecture - wiki.md
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
+  - concepts/file-keep-wire-harness.md
   - entities/tools/deptry.md
   - entities/tools/typst.md
   - sources/arxiv-harness-updating-not-benefit-2605.30621.md

@@ -3436,6 +3436,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [SIA unified harness/weight loop](concepts/sia-unified-harness-weight-self-improvement.md) — `[DRAFT 2026-05-30]` — concept, self-improving-agents, k84
 - [Cemini workflow tooling audit](concepts/cemini-workflow-tooling-audit-2026-05-30.md) — `[DRAFT 2026-05-30]` Obsidian/n8n/MCP gap map + v5 prompt need. — concept, workflow, audit, k84
 - [Cemini wiki ingest workflow](concepts/cemini-wiki-ingest-workflow.md) — `[CORE 2026-05-31]` Four-phase discovery→ingest pipeline (daily digest, inbox watch, ingest skill, human gates). — concept, workflow, automation, k90
+- [FILE · KEEP · WIRE — three-verb harness ingest vocabulary](concepts/file-keep-wire-harness.md) — `[DRAFT 2026-09-02]` Replaces Phase-0/Phase-1/policy_wired vocabulary; ledger contract. — concept, workflow, harness, federation
 - [Gambling wiki federation](concepts/gambling-wiki-federation.md) — `[VALIDATED 2026-08-13]` Cross-wiki hub for public `@gambling-wiki` (sports betting, casino, DFS, WNBA live-under research); osint-wiki keeps PM bots/CeminiSuite. — concept, federation, gambling-wiki
 - [Game dev wiki federation](concepts/game-dev-wiki-federation.md) — `[VALIDATED 2026-06-13]` Cross-wiki hub for public `@game-dev-wiki` (hobby castle/RTS, Godot evals, agent harness); ccc-wiki keeps generic orchestration. — concept, federation, game-dev-wiki
 
