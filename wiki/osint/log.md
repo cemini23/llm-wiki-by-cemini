@@ -1,3 +1,9 @@
+## [2026-09-02] phase1 | K254 wires shipped
+
+- **Surfaces:** OSINT `osint-phase1-adopt-wires.mdc` §K254; GW `guruwatcher-k254-phase1-wires.mdc`; CCC `ccc-k254-phase1-wires.mdc` + briefs copied; Cyber `cyber-k254-phase1-wires.mdc`; Gambling `gambling-k254-phase1-wires.mdc`; SEO `cemini-phase1-seo-geo-wires.mdc` §K254 + concept `wire_status`.
+- **Helpers:** `harness_eval_checklist.py`, `spdx_watch_k254_eval.py`, `adopt_k254_phase1.sh` (selftest PASS).
+- **Concept hubs:** `wire_status` set on all k254-* hubs (policy_wired / wont_wire).
+
 ## [2026-09-02] ingest | K254 wave
 
 - **Inbox:** 17 files. Preingest: 16 NEW, 0 LIKELY, 1 DUPLICATE (`Multi-Project URL Revenue Evaluation.docx` → last30days-skill; archive only).

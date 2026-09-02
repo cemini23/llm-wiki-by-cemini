@@ -32,6 +32,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 - **K254 ingest** — 17 inbox (16 NEW + 1 DUPLICATE fold). 15 source pages + 8 concept hubs + prior bumps. **No xsp/pm scp.**
 - **Phase-0** — **0 Integrate GO**; eval docx need per-URL SPDX before Integrate.
+- **Phase-1 wired** — `adopt_k254_phase1.sh` PASS; rules on OSINT/GW/CCC/Cyber/Gambling/SEO; `harness_eval_checklist.py` + `spdx_watch_k254_eval.py`.
 - **Routing** — CCC harness cluster + Fable 5.1 awareness. GW Klement bond + Wu BTC alert-only. Gambling Robinhood/Kalshi. SEO GBP edited-review.
 - **Briefs** — `briefs/2026-09-02_k254-*` → CCC/cyber/gambling/GuruWatcher/SEO siblings.
 - **Open:** HL funding backtest overdue. Wiki gap detect stale. Grok login for `/route`.

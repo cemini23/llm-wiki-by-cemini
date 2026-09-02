@@ -9,6 +9,8 @@ related:
 maturity: draft
 created: 2026-09-02
 updated: 2026-09-02
+wire_status: wont_wire
+wire_target: wiki-only
 ---
 
 ## Relations
