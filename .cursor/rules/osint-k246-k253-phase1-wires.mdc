@@ -1,0 +1,44 @@
+---
+description: OSINT Phase-1 wires K246-K253 ingest backlog (harness, cyber, PM, GW macro)
+alwaysApply: true
+---
+
+# OSINT K246–K253 Phase-1 wires (2026-08-25 → 2026-09-01)
+
+Dual-ID: **OSINT K246–K253** ≠ federation `cemini-phase1-policy-wires.mdc` K246–K253 (MultiGlobeQA/HIVE/TurnSight/Scale-CDA/etc.). Resolve by file+wiki / arXiv id.
+
+| Wave | Surface | wire_target |
+|------|---------|-------------|
+| K246 | CCC harness cluster | `ccc-k246-k253-phase1-wires.mdc` |
+| K246 | Cyber aiXamine/ClawSentry | `cyber-k246-k253-phase1-wires.mdc` |
+| K246 | Gambling CFTC | `gambling-k246-k253-phase1-wires.mdc` |
+| K246 | GW melt | `guruwatcher-k246-capital-flows-melt-phase1-wires.mdc` |
+| K247 | CCC StarHarness/Recuris | `ccc-k246-k253-phase1-wires.mdc` |
+| K247 | Cyber TrustDABench | `cyber-k246-k253-phase1-wires.mdc` |
+| K247 | Gambling football/athlete-play | `gambling-k246-k253-phase1-wires.mdc` |
+| K247 | GW world-intel | `guruwatcher-k247-world-intel-klement-phase1-wires.mdc` |
+| K248 | CCC HarnessLens/MoRe | `ccc-k246-k253-phase1-wires.mdc` |
+| K248 | Cyber IPI/context root | `cyber-k246-k253-phase1-wires.mdc` |
+| K248 | Gambling CT suit | `gambling-k246-k253-phase1-wires.mdc` |
+| K248 | GW Jackson Hole | `guruwatcher-k248-jackson-hole-llm-decay-phase1-wires.mdc` |
+| K249 | CCC vendor risk | `ccc-k246-k253-phase1-wires.mdc` |
+| K249 | Cyber jailbreak memory | `cyber-k246-k253-phase1-wires.mdc` |
+| K249 | Gambling Ninth Circuit | `gambling-k246-k253-phase1-wires.mdc` |
+| K249 | GW skip | `guruwatcher-k249-phase1-wires.mdc` |
+| K250 | CCC JIT/ReasoningBank | `ccc-k246-k253-phase1-wires.mdc` |
+| K250 | Cyber user-scanner/mkcert | `cyber-k246-k253-phase1-wires.mdc` |
+| K250 | GW canary tool-pick | `guruwatcher-k250-k253-phase1-wires.mdc` |
+| K251 | GW Talon levels | `guruwatcher-k251-phase1-wires.mdc` |
+| K252 | CCC EvoUndo/Logos | `ccc-k246-k253-phase1-wires.mdc` |
+| K252 | Cyber layered defenses | `cyber-k246-k253-phase1-wires.mdc` |
+| K252 | Gambling injury markets | `gambling-k246-k253-phase1-wires.mdc` |
+| K252 | GW Strategy/jobs | `guruwatcher-k252-phase1-wires.mdc` |
+| K253 | CCC AutoSciRub/OSS | `ccc-k246-k253-phase1-wires.mdc` |
+| K253 | Cyber auditable MAS | `cyber-k246-k253-phase1-wires.mdc` |
+| K253 | Gambling SCOTUS thread | `gambling-k246-k253-phase1-wires.mdc` |
+| K253 | GW ES7670 + persist/pivot | `guruwatcher-k253-phase1-wires.mdc` |
+| K254+ | (see `osint-k254` + `osint-phase1-adopt-wires` §K254) | `adopt_k254_phase1.sh` |
+
+**Global invariants:** 0 new runtime Integrate GO. **Never auto-evolve `.cursor/skills`.** Do **not** swap `/route` without HITL. GW alert-only; never auto-rewrite `watches.json`. **No pm/xsp scp** unless a separate brief explicitly scp'd (K251 xsp only). Vol/physics OOD hubs = `wont_wire`.
+
+**Verify:** `bash scripts/adopt_k246_k253_phase1.sh`

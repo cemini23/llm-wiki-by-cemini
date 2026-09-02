@@ -12,6 +12,8 @@ related:
 maturity: draft
 created: 2026-08-26
 updated: 2026-08-26
+wire_status: policy_wired
+wire_target: guruwatcher-k247-world-intel-klement-phase1-wires.mdc
 ---
 
 ## Relations

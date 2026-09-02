@@ -329,4 +329,8 @@ Dual-ID: **OSINT K254** = this inbox (7 arXiv + 3 eval docx + 6 newsletters + 1 
 - **Gambling** — EH Robinhood vs Kalshi awareness **only**; **no pm scp**. Surface: `gambling-k254-phase1-wires.mdc`.
 - **SEO** — Sterling Sky GBP **Edited** review indicator → `@seo-wiki/concepts/google-review-edited-indicator.md`; operator posts replies. Surface: `cemini-phase1-seo-geo-wires.mdc` §K254.
 - **Fable/Mythos 5.1** — cache price cut vs output-token cost tradeoff; **routing awareness only** — do not swap `/route` or default model without HITL eval contract (pairs K281/K162).
-- **Phase-1 verify:** `bash scripts/adopt_k254_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
+- **Phase-1 verify:** `bash scripts/adopt_k254_phase1.sh` + `bash scripts/adopt_k246_k253_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
+
+## OSINT K246–K253 routing index
+
+See `.cursor/rules/osint-k246-k253-phase1-wires.mdc` (alwaysApply) for per-wave wire_targets. Legacy detail remains in sections K241–K243 below.

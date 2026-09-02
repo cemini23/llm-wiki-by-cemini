@@ -32,7 +32,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 - **K254 ingest** — 17 inbox (16 NEW + 1 DUPLICATE fold). 15 source pages + 8 concept hubs + prior bumps. **No xsp/pm scp.**
 - **Phase-0** — **0 Integrate GO**; eval docx need per-URL SPDX before Integrate.
-- **Phase-1 wired** — `adopt_k254_phase1.sh` PASS; rules on OSINT/GW/CCC/Cyber/Gambling/SEO; `harness_eval_checklist.py` + `spdx_watch_k254_eval.py`.
+- **Phase-1 wired** — `adopt_k246_k253_phase1.sh` + `adopt_k254_phase1.sh` PASS. Rules on all surfaces. **29 concept hubs** `wire_status` set.
 - **Routing** — CCC harness cluster + Fable 5.1 awareness. GW Klement bond + Wu BTC alert-only. Gambling Robinhood/Kalshi. SEO GBP edited-review.
 - **Briefs** — `briefs/2026-09-02_k254-*` → CCC/cyber/gambling/GuruWatcher/SEO siblings.
 - **Open:** HL funding backtest overdue. Wiki gap detect stale. Grok login for `/route`.
@@ -43,7 +43,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Phase-0** — `adopt_k253_phase0.sh`: **AutoSciRub MIT REFERENCE** (~2.5MB). **0 Integrate GO** for S3Gym/Aspire/DIASENTINEL runtime.
 - **Routing** — CCC harness self-improvement + OSS factory. Cyber auditable MAS extract. GW Capital Flows ES7670 alert-only. Gambling EH SCOTUS. Outlier GTA6 SEO append. Vol/physics wiki-only.
 - **Briefs** — OSINT `briefs/2026-09-01_k253-*`. Sibling copies to CCC/cyber/gambling/GuruWatcher.
-- **Phase-1 leftover** — evaluate-before-improve + skill misevolution gates; HITL before harness/skill writes. No `.cursor/skills` edits here.
+- **Phase-1 wired** — `osint-k246-k253-phase1-wires.mdc` + sibling surface rules. No `.cursor/skills` auto-evolve.
 - **Open:** HL funding backtest overdue. Kalshi/equity/cross-venue LP due. Wiki gap detect stale (12d). Grok CLI auth for `/route`. No LIVE Discord.
 
 ## Current state (2026-08-31 — K252)
@@ -52,7 +52,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Phase-0** — `adopt_k252_phase0.sh`: **0 Integrate GO** (no verified SPDX clones).
 - **Routing** — CCC harness (EvoUndo, Logos, skill routing, Prove2Me). Cyber layered defenses + accountability. Gambling EH injury markets awareness. GW Wu Strategy + jobs outlook alert-only. Vol wiki-only.
 - **Briefs** — OSINT `briefs/2026-08-31_k252-*`. Sibling copies to CCC/cyber/gambling/GuruWatcher.
-- **Phase-1 leftover** — K282/K237/K285/K280 patterns already policy_wired; HITL for any Integrate. Cursor `/phase1` — do not edit `.cursor/skills` here.
+- **Phase-1 wired** — K282/K237/K285/K280 federation + `ccc-k246-k253` / GW k252.
 - **Open:** HL funding backtest overdue. Kalshi/equity/cross-venue LP backtests due. Wiki gap detect stale. Grok CLI auth for `/route` Grok lane. No LIVE Discord.
 
 ## Current state (2026-08-30 — K251)
@@ -61,7 +61,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Phase-0** — no new Adopt/GO. Leftover K250 eval already filed. **0 Integrate GO.**
 - **Routing** — Talon → XSP + GW HITL (no auto-arm). Wu wiki-only. ComeCome → cyber brief (no PoC). Atto / poker / DFS / family skip. No Barone PII.
 - **Briefs** — OSINT `briefs/xsp-k251-*` + GW sibling. Cyber ComeCome copy. **No pm scp. No LIVE Discord.**
-- **Phase-1 leftover** — HITL watches only if operator names symbol+op+level. Cursor `/phase1` — do not edit `.cursor/skills` here.
+- **Phase-1 wired** — `guruwatcher-k251-phase1-wires.mdc` (Talon HITL levels).
 - **Open:** HL funding backtest overdue (2026-08-27). Kalshi/equity/cross-venue LP backtests due. Wiki gap detect stale. STE100 CeminiSuite rollout brief open. No LIVE Discord.
 
 ## Current state (2026-08-29 — K249)
@@ -70,7 +70,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Phase-0** — no Adopt/GO repos. CautiousBench CC BY-NC-SA + no GitHub (`gh search` 2026-08-29) → **NO-GO clone**. 2608.26008 CC BY 4.0, no repo. **0 Integrate GO.**
 - **Routing** — Atto name-superstition over-refusal. CCC Cursor/OpenAI vendor-risk (do not swap `/route`). Cyber rule-memory + CautiousBench method + SecPro #249. Gambling Ninth Circuit Kalshi awareness **no pm scp**. Wu weekly wiki-only. GW skip.
 - **Briefs** — OSINT `briefs/2026-08-29_k249-*`. Sibling copies to atto/CCC/cyber/gambling.
-- **Phase-1 leftover** — authorization-not-name guardrail; wrapper-level memory vs literal gates; SOC model-routing. Cursor `/phase1` — do not edit `.cursor/skills` here.
+- **Phase-1 wired** — `ccc-k246-k253` + `cyber-k246-k253` + authorization-not-name (K249).
 - **Open:** HL funding backtest overdue (2026-08-27). Kalshi/equity/cross-venue LP backtests due. Wiki gap detect stale. STE100 CeminiSuite rollout brief open. No LIVE Discord.
 
 ## Current state (2026-08-29 — K250)

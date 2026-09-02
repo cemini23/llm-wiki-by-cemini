@@ -1,3 +1,9 @@
+## [2026-09-02] phase1 | K246-K253 backlog wired
+
+- **Surfaces:** OSINT `osint-k246-k253-phase1-wires.mdc` (alwaysApply); CCC/Cyber/Gambling batch `.mdc`; GW k249/k251/k252/k253 + k250 canary fix; 29 concept hubs `wire_status`.
+- **Verify:** `bash scripts/adopt_k246_k253_phase1.sh` PASS.
+- **K254** wired same session (prior log entry).
+
 ## [2026-09-02] phase1 | K254 wires shipped
 
 - **Surfaces:** OSINT `osint-phase1-adopt-wires.mdc` §K254; GW `guruwatcher-k254-phase1-wires.mdc`; CCC `ccc-k254-phase1-wires.mdc` + briefs copied; Cyber `cyber-k254-phase1-wires.mdc`; Gambling `gambling-k254-phase1-wires.mdc`; SEO `cemini-phase1-seo-geo-wires.mdc` §K254 + concept `wire_status`.
