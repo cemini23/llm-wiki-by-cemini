@@ -10,8 +10,7 @@ related:
 maturity: draft
 created: 2026-08-29
 updated: 2026-08-29
-wire_status: reference
-wire_target: CCC
+harness_verb: KEEP
 wire_note: REFERENCE clone only; trainer wont_wire; do not replace /route or Cursor harness
 ---
 

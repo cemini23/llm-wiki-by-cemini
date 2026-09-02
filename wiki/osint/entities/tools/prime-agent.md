@@ -12,8 +12,7 @@ related:
 maturity: draft
 created: 2026-08-07
 updated: 2026-08-25
-wire_status: policy_wired
-wire_target: .cursor/rules/cemini-phase1-policy-wires.mdc
+harness_verb: FILE
 wire_note: CCC K309 REFERENCE clone; runtime wont_wire on prod harness
 ---
 

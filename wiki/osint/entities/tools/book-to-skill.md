@@ -23,8 +23,7 @@ maturity: draft
 created: 2026-05-31
 updated: 2026-08-06
 phase_0_verdict: INTEGRATE — K198/K225 MIT shallow adopt (~2.5MB)
-wire_status: policy_wired
-wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
+harness_verb: FILE
 ---
 
 ## Relations

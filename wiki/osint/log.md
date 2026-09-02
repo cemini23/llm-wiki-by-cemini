@@ -1,3 +1,10 @@
+## [2026-09-02] harness | super-audit Phase B backlog
+
+- **Migration:** `scripts/migrate_wire_status.py` — 204 wiki pages `wire_status` → `harness_verb` (FILE/KEEP/WIRE).
+- **Adopt:** `scripts/adopt.sh` + `wiki/meta/adopt-manifest.yaml` (unified wave runner).
+- **Skills:** six daily-use skills (`eval-first-rubric`, `last30days`, `pii-redact`, `claim-ledger`, `vault-dedupe`, `osint-catalog`) federation domain-synced from OSINT.
+- **CCC:** `scripts/purge_dual_id_footnotes.py` — Dual-ID blocks → one-line ID policy in k* rules + phase1 catalog.
+
 ## [2026-09-02] harness | super-audit Phase B
 
 - **OSINT:** `osint-invariants.mdc` (alwaysApply, hard gates); `osint-phase1-adopt-wires.mdc` demoted to on-demand catalog; `wiki/meta/launchagent-health.md`; source `wiki/sources/super-audit-ai-harness-2026-09-02.md`.

@@ -14,7 +14,7 @@ related:
 maturity: draft
 created: 2026-07-22
 updated: 2026-08-19
-wire_status: wont_wire
+harness_verb: FILE
 wire_note: local LLM stack REFERENCE; no runtime wire
 ---
 

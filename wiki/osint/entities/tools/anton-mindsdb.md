@@ -11,7 +11,7 @@ related:
 maturity: draft
 created: 2026-08-07
 updated: 2026-08-07
-wire_status: wont_wire
+harness_verb: FILE
 wire_note: CCC harness Watch / self-improve trainer patterns; OOD OSINT
 ---
 

@@ -9,8 +9,7 @@ related:
 maturity: draft
 created: 2026-09-02
 updated: 2026-09-02
-wire_status: policy_wired
-wire_target: ../SEO:GEO B&M Business/.cursor/rules/cemini-phase1-seo-geo-wires.mdc
+harness_verb: FILE
 ---
 
 ## Relations

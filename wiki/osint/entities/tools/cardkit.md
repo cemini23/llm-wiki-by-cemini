@@ -10,7 +10,7 @@ related:
 maturity: draft
 created: 2026-07-28
 updated: 2026-07-31
-wire_status: wont_wire
+harness_verb: FILE
 wire_note: UI TipDrop; not OSINT runtime
 ---
 

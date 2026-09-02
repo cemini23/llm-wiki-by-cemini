@@ -13,7 +13,7 @@ maturity: draft
 created: 2026-07-28
 updated: 2026-07-31
 phase_0_verdict: EXTRACT — K198 MIT shallow adopt
-wire_status: wont_wire
+harness_verb: FILE
 wire_note: REFERENCE GIS stack; no OSINT daily harness
 ---
 

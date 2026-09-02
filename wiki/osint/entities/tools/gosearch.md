@@ -11,7 +11,7 @@ related:
 maturity: draft
 created: 2026-08-08
 updated: 2026-08-08
-wire_status: policy_wired
+harness_verb: FILE
 wire_note: GPL isolate — patterns only; combo with sherlock; no proprietary vendor
 ---
 

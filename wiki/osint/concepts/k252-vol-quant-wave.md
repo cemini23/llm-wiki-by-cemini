@@ -10,8 +10,7 @@ related:
 maturity: draft
 created: 2026-08-31
 updated: 2026-09-01
-wire_status: wont_wire
-wire_target: wiki-only
+harness_verb: FILE
 ---
 
 ## Relations

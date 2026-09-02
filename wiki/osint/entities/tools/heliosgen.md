@@ -9,7 +9,7 @@ related:
 maturity: draft
 created: 2026-08-28
 updated: 2026-08-28
-wire_status: watch
+harness_verb: FILE
 wire_note: license unknown in docx — [NEEDS VERIFICATION 2026-08-28]
 ---
 

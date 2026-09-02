@@ -12,8 +12,7 @@ related:
 maturity: draft
 created: 2026-08-19
 updated: 2026-08-19
-wire_status: policy_wired
-wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
+harness_verb: FILE
 wire_note: Harness pattern Extract; do not swap /route worker
 ---
 

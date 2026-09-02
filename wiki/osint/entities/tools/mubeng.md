@@ -10,7 +10,7 @@ maturity: draft
 created: 2026-08-06
 updated: 2026-08-06
 phase_0_verdict: WATCH — Apache-2.0 K225 (~1.8MB)
-wire_status: pending
+harness_verb: KEEP
 ---
 
 ## Relations

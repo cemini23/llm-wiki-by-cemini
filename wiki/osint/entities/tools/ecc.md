@@ -11,7 +11,7 @@ related:
 maturity: draft
 created: 2026-07-25
 updated: 2026-07-31
-wire_status: wont_wire
+harness_verb: FILE
 wire_note: ECC/everything-claude-code REFERENCE; TipDrop/CCC harness surface
 ---
 

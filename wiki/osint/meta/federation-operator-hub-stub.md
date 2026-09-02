@@ -6,15 +6,17 @@ keywords: [federation-hub, master-wiki-ui, morning-summary, triage]
 related:
   - concepts/federated-daily-research-digest.md
   - meta/daily-research-digest-cadence.md
+  - meta/launchagent-health.md
 maturity: core
 created: 2026-06-01
-updated: 2026-06-01
+updated: 2026-09-02
 ---
 
 ## Relations
 
 - @concepts/federated-daily-research-digest.md — per-wiki digest pattern
 - @meta/daily-research-digest-cadence.md — OSINT digest cadence
+- @meta/launchagent-health.md — LaunchAgent status table
 
 ## Narrative
 

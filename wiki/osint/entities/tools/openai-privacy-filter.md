@@ -11,8 +11,7 @@ related:
 maturity: draft
 created: 2026-08-15
 updated: 2026-08-15
-wire_status: policy_wired
-wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
+harness_verb: FILE
 ---
 
 ## Relations

@@ -10,8 +10,7 @@ related:
 maturity: draft
 created: 2026-08-26
 updated: 2026-08-26
-wire_status: policy_wired
-wire_target: gambling-k246-k253-phase1-wires.mdc
+harness_verb: FILE
 ---
 
 ## Relations

@@ -12,7 +12,7 @@ related:
 maturity: validated
 created: 2026-07-29
 updated: 2026-07-31
-wire_status: wont_wire
+harness_verb: FILE
 wire_note: desktop REFERENCE; Atto Extract brief only
 ---
 

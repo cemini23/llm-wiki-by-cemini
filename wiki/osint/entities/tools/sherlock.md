@@ -19,8 +19,7 @@ related:
 maturity: draft
 created: 2026-08-08
 updated: 2026-08-19
-wire_status: policy_wired
-wire_target: Atto .cursor/rules/atto-k227-phase1-wires.mdc
+harness_verb: FILE
 wire_note: FIND deep-links Extract; human-gated; ToS/rate limits
 ---
 

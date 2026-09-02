@@ -12,8 +12,7 @@ related:
 maturity: draft
 created: 2026-08-05
 updated: 2026-08-05
-wire_status: policy_wired
-wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc; ../atto/.cursor/rules/atto-k223-phase1-wires.mdc
+harness_verb: FILE
 ---
 
 ## Relations

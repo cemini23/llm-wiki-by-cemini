@@ -17,8 +17,7 @@ related:
 maturity: draft
 created: 2026-08-10
 updated: 2026-08-18
-wire_status: deferred
-wire_target: .cursor/rules/osint-phase1-adopt-wires.mdc
+harness_verb: FILE
 wire_note: HITL skill-vetting — do not auto-install to ~/.cursor/skills
 ---
 

@@ -9,7 +9,7 @@ related:
 maturity: draft
 created: 2026-08-22
 updated: 2026-08-22
-wire_status: wont_wire
+harness_verb: FILE
 wire_note: "Phase-0 Extract/REFERENCE. 0 stars. Do not train unlearning in prod. Do not swap /route."
 ---
 

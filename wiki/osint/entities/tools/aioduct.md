@@ -9,7 +9,7 @@ related:
 maturity: draft
 created: 2026-07-30
 updated: 2026-07-31
-wire_status: wont_wire
+harness_verb: FILE
 wire_note: async duct Watch; no harness install
 ---
 

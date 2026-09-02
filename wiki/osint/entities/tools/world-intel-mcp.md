@@ -10,8 +10,7 @@ related:
 maturity: draft
 created: 2026-08-26
 updated: 2026-08-26
-wire_status: integrate
-wire_target: GuruWatcher
+harness_verb: WIRE
 wire_note: Integrate REFERENCE alert-only; no LIVE Discord without HITL
 ---
 

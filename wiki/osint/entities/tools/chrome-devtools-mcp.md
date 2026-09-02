@@ -14,8 +14,7 @@ related:
 maturity: draft
 created: 2026-07-03
 updated: 2026-07-31
-wire_status: runtime_wired
-wire_target: .cursor/mcp.json#chrome-devtools + osint-phase1-adopt-wires.mdc
+harness_verb: WIRE
 ---
 
 ## Relations

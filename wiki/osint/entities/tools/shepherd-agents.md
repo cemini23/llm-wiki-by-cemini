@@ -11,8 +11,7 @@ maturity: draft
 created: 2026-08-06
 updated: 2026-08-06
 phase_0_verdict: EXTRACT — MIT K225 (~44MB)
-wire_target: "@cybersecurity-wiki/"
-wire_status: pending
+harness_verb: KEEP
 ---
 
 ## Relations

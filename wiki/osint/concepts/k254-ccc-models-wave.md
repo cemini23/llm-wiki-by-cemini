@@ -9,8 +9,7 @@ related:
 maturity: draft
 created: 2026-09-02
 updated: 2026-09-02
-wire_status: policy_wired
-wire_target: ../Cemini claude code CCC/.cursor/rules/ccc-k254-phase1-wires.mdc
+harness_verb: FILE
 ---
 
 ## Relations

@@ -12,8 +12,7 @@ related:
 maturity: draft
 created: 2026-08-08
 updated: 2026-08-08
-wire_status: policy_wired
-wire_target: CCC .cursor/rules/ccc-k227-phase1-wires.mdc
+harness_verb: FILE
 wire_note: SDD skills Integrate; supply-chain review before enable
 ---
 

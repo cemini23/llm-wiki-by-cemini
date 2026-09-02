@@ -23,8 +23,7 @@ related:
 maturity: draft
 created: 2026-08-18
 updated: 2026-08-18
-wire_status: policy_wired
-wire_target: concepts/osint4all-catalog.md
+harness_verb: FILE
 ---
 
 ## Relations

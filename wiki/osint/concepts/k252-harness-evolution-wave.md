@@ -10,11 +10,11 @@ related:
   - sources/arxiv-2608.28433-prove2me-formalization-2026-08-31.md
   - concepts/k250-harness-intelligence-wave.md
   - concepts/k253-harness-self-improvement-wave.md
+  - concepts/k254-harness-evolution-wave.md
 maturity: draft
 created: 2026-08-31
 updated: 2026-09-01
-wire_status: policy_wired
-wire_target: ccc-k246-k253-phase1-wires.mdc
+harness_verb: FILE
 ---
 
 ## Relations

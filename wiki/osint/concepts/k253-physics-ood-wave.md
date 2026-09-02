@@ -9,8 +9,7 @@ related:
 maturity: draft
 created: 2026-09-01
 updated: 2026-09-01
-wire_status: wont_wire
-wire_target: ood-stub
+harness_verb: FILE
 ---
 
 ## Relations

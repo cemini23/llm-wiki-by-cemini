@@ -10,7 +10,7 @@ related:
 maturity: draft
 created: 2026-08-28
 updated: 2026-08-28
-wire_status: watch
+harness_verb: FILE
 wire_note: MIT operator claim — Watch only; verify SPDX via gh api before clone
 ---
 

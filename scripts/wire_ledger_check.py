@@ -79,7 +79,7 @@ def check_ledger(data: dict, root: Path, *, check_coverage: bool = True) -> list
     if check_coverage:
         for md in root.glob("wiki/**/*.md"):
             text = md.read_text(encoding="utf-8", errors="replace")
-            if "wire_status: runtime_wired" not in text and "wire_status: integrate" not in text:
+            if "harness_verb: WIRE" not in text and "wire_status: runtime_wired" not in text and "wire_status: integrate" not in text:
                 continue
             rel = str(md.relative_to(root / "wiki"))
             rel_at = f"@osint-wiki/{rel}"

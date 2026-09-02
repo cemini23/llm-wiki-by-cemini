@@ -10,7 +10,7 @@ maturity: draft
 created: 2026-08-06
 updated: 2026-08-06
 phase_0_verdict: EXTRACT — MIT K225 (~0.2MB)
-wire_status: pending
+harness_verb: KEEP
 ---
 
 ## Relations

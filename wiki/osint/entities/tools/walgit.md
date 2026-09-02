@@ -10,8 +10,7 @@ related:
 maturity: draft
 created: 2026-08-26
 updated: 2026-08-26
-wire_status: extract
-wire_target: AttoVault
+harness_verb: KEEP
 wire_note: MIT Extract REFERENCE; CAS manifest patterns only
 ---
 

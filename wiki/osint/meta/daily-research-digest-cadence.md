@@ -14,9 +14,10 @@ related:
   - entities/tools/wc-ticket-monitor.md
   - sources/monokern-research-pipeline-claude-notebooklm-obsidian-2026-06-01.md
   - meta/federation-operator-hub-stub.md
+  - meta/launchagent-health.md
 maturity: core
 created: 2026-05-31
-updated: 2026-08-20
+updated: 2026-09-02
 ---
 
 ## Relations
@@ -35,7 +36,7 @@ updated: 2026-08-20
 | Field | Value |
 |-------|-------|
 | **Cadence** | Daily — **free arXiv** paper lane (wiki-deduped) → inbox PDFs; Exa news **off** by default |
-| **Last run** | 2026-09-01 |
+| **Last run** | 2026-09-02 |
 | **Script** | `cemini-daily-research-digest` (or `bash scripts/run_daily_research_digest.sh` from repo) |
 | **Config** | `scripts/daily_research_config.yaml` (`exa.paper_mode`, `exa.news_enabled`) |
 | **LaunchAgents** | OSINT `@08:00`; sibling wikis `@08:10+` (+3min stagger); federation summary after last sibling (`reinstall_morning_launchagents.sh`). Wrappers prefer `${WIKI_ROOT}/scripts/daily_research_digest_run.py`; frozen `~/.cemini/launchagent/osint/` is fallback. |

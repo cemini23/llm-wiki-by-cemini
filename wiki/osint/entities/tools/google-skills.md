@@ -12,7 +12,7 @@ related:
 maturity: draft
 created: 2026-08-07
 updated: 2026-08-15
-wire_status: wont_wire
+harness_verb: FILE
 wire_note: CCC Context skill-schema REFERENCE; no runtime install
 ---
 

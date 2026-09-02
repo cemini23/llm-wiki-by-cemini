@@ -11,7 +11,7 @@ maturity: draft
 created: 2026-08-06
 updated: 2026-08-06
 phase_0_verdict: EXTRACT patterns — Apache-2.0 K225; NO local clone (size gate)
-wire_status: pending
+harness_verb: KEEP
 ---
 
 ## Relations

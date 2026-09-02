@@ -9,8 +9,7 @@ related:
 maturity: draft
 created: 2026-07-30
 updated: 2026-07-31
-wire_status: runtime_wired
-wire_target: .cursor/mcp.json#mcp-legal-it + osint-phase1-adopt-wires.mdc
+harness_verb: WIRE
 ---
 
 ## Relations

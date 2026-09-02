@@ -14,8 +14,7 @@ related:
 maturity: draft
 created: 2026-08-28
 updated: 2026-08-31
-wire_status: policy_wired
-wire_target: cyber-k246-k253-phase1-wires.mdc
+harness_verb: FILE
 ---
 
 ## Relations

@@ -47,6 +47,14 @@ wires:
     wiki_page: "@osint-wiki/concepts/file-keep-wire-harness.md"
     since: 2026-09-02
     verify: "rg -c '^alwaysApply: true' .cursor/rules/osint-invariants.mdc"
+  - id: daily-use-skills-pack
+    verb: WIRE
+    kind: skill
+    repo: osint
+    path: .cursor/skills/eval-first-rubric/SKILL.md
+    wiki_page: "@osint-wiki/sources/super-audit-ai-harness-2026-09-02.md"
+    since: 2026-09-02
+    verify: "test -f .cursor/skills/eval-first-rubric/SKILL.md"
   - id: openrouter-free-ranker
     verb: WIRE
     kind: script

@@ -16,8 +16,7 @@ related:
 maturity: draft
 created: 2026-08-28
 updated: 2026-09-02
-wire_status: policy_wired
-wire_target: guruwatcher-k248-jackson-hole-llm-decay-phase1-wires.mdc
+harness_verb: FILE
 ---
 
 ## Relations

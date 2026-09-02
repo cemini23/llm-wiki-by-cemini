@@ -10,7 +10,7 @@ related:
 maturity: draft
 created: 2026-08-28
 updated: 2026-08-28
-wire_status: extract_only
+harness_verb: KEEP
 wire_note: MIT Integrate claim in eval — extract only; no Integrate GO runtime
 ---
 

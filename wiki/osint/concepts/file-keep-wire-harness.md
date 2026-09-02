@@ -41,7 +41,7 @@ Three verbs replace the old harness vocabulary:
 
 **Rule budget:** `alwaysApply` = invariants only (`cemini-invariants.mdc` ≤45 lines + per-wiki hard gates). Catalogs are on-demand (`alwaysApply: false` + good description). Canon is the wiki page.
 
-**Migration:** `wire_status: policy_wired` → FILE (no ledger row). `runtime_wired` → WIRE (ledger row required). See `python3 scripts/wire_ledger_check.py`.
+**Migration (2026-09-02):** `wire_status` retired → `harness_verb: FILE|KEEP|WIRE`. Run `python3 scripts/migrate_wire_status.py --dry-run` to audit stragglers. `runtime_wired` / `integrate` → WIRE (ledger row required). See `python3 scripts/wire_ledger_check.py`.
 
 ## Snippets
 

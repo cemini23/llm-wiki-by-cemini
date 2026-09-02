@@ -10,7 +10,7 @@ related:
 maturity: draft
 created: 2026-08-28
 updated: 2026-08-28
-wire_status: extract_only
+harness_verb: KEEP
 wire_note: MIT Extract REFERENCE for Atto FIND 3D; no Integrate GO runtime
 ---
 
