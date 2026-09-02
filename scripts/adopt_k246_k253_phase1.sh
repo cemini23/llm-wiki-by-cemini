@@ -6,6 +6,18 @@ cd "$ROOT"
 
 echo "=== K246-K253 Phase-1 verify ==="
 test -f .cursor/rules/osint-k246-k253-phase1-wires.mdc
+CCC="../Cemini claude code CCC"
+CYBER="../Cybersecurity wiki"
+GAMBLE="../Gambling wiki"
+GW="../GuruWatcher"
+test -f "$CCC/.cursor/rules/ccc-k246-k253-phase1-wires.mdc"
+test -f "$CYBER/.cursor/rules/cyber-k246-k253-phase1-wires.mdc"
+test -f "$GAMBLE/.cursor/rules/gambling-k246-k253-phase1-wires.mdc"
+test -f "$GW/.cursor/rules/guruwatcher-k249-phase1-wires.mdc"
+test -f "$GW/.cursor/rules/guruwatcher-k251-phase1-wires.mdc"
+test -f "$GW/.cursor/rules/guruwatcher-k252-phase1-wires.mdc"
+test -f "$GW/.cursor/rules/guruwatcher-k253-phase1-wires.mdc"
+test -f "$GW/.cursor/rules/guruwatcher-k250-k253-phase1-wires.mdc"
 python3 scripts/harness_eval_checklist.py selftest
 python3 scripts/spdx_watch_k254_eval.py selftest
 
