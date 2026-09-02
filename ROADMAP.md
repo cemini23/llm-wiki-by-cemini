@@ -37,7 +37,8 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Vocabulary** — FILE · KEEP · WIRE (`wiki/concepts/file-keep-wire-harness.md`). `wiki/meta/wire-ledger.yaml` + `scripts/wire_ledger_check.py` PASS.
 - **Grok** — **402** = weekly Grok Build quota (resets weekly). `com.cemini.wiki-ingester` **unloaded**; reinstall script skips unless `CEMINI_ENABLE_WIKI_INGESTER=1`.
 - **Route** — OpenRouter easy ranker prefers Qwen/GLM/Kimi over Nemotron 550B (`agent-toolkit/scripts/select-openrouter-free-model.ps1`).
-- **Open:** GuruWatcher 53→2 rules (operator). HL funding backtest overdue. claude-mem worker — `bun install` in plugin cache if zod errors persist.
+- **Open:** GuruWatcher 53→2 rules (operator). HL funding backtest overdue.
+- **Phase B backlog (2026-09-02):** harness_verb migration (204 pages); `adopt.sh` + manifest; six daily-use skills; CCC Dual-ID purge; wire_ledger PASS (8 rows).
 
 ## Current state (2026-09-02 — K254)
 
