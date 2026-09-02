@@ -8,9 +8,11 @@ related:
   - sources/substack-rss-event-horizon-2026-09-01-episode-30-is-prediction-markets-vs-states-comin.md
   - concepts/k248-gambling-pm-wave.md
   - concepts/k253-gambling-pm-wave.md
+  - concepts/k254-gambling-pm-wave.md
+  - sources/substack-rss-event-horizon-2026-09-02-robinhood-cometh.md
 maturity: draft
 created: 2026-08-31
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 ## Relations

@@ -12,9 +12,10 @@ related:
   - sources/substack-rss-wublock-2026-08-28-wublockchain-weekly-us-debt-and-deficit-tailwind.md
   - concepts/k252-newsletter-macro-wave.md
   - concepts/k253-newsletter-macro-wave.md
+  - concepts/k254-newsletter-macro-wave.md
 maturity: draft
 created: 2026-08-28
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 ## Relations

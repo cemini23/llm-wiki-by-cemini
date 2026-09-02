@@ -28,6 +28,14 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
+## Current state (2026-09-02 — K254)
+
+- **K254 ingest** — 17 inbox (16 NEW + 1 DUPLICATE fold). 15 source pages + 8 concept hubs + prior bumps. **No xsp/pm scp.**
+- **Phase-0** — **0 Integrate GO**; eval docx need per-URL SPDX before Integrate.
+- **Routing** — CCC harness cluster + Fable 5.1 awareness. GW Klement bond + Wu BTC alert-only. Gambling Robinhood/Kalshi. SEO GBP edited-review.
+- **Briefs** — `briefs/2026-09-02_k254-*` → CCC/cyber/gambling/GuruWatcher/SEO siblings.
+- **Open:** HL funding backtest overdue. Wiki gap detect stale. Grok login for `/route`.
+
 ## Current state (2026-09-01 — K253)
 
 - **K253 ingest** — 16 inbox (8 arXiv + 8 newsletters). 16 source pages + 7 concept hubs + autoscirub entity + prior bumps. Raws to egress-fi. **No xsp/pm scp.**

@@ -7,9 +7,10 @@ related:
   - sources/arxiv-2608.29025-deep-hedging-market-frictions-2026-09-01.md
   - sources/arxiv-2608.30867-neural-calibration-complete-market-2026-09-01.md
   - concepts/k252-vol-quant-wave.md
+  - concepts/k254-vol-quant-wave.md
 maturity: draft
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 ## Relations

@@ -7,6 +7,19 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K254 ingest (2026-09-02)
+OSINT K254: 7 arXiv + 3 eval docx + 6 newsletters (1 DUPLICATE fold → last30days). Phase-0 **0 Integrate GO**. HarnessDev/HoH/CordisBench/SKILL.state/Agent Seer. VRP nuclear vol wiki-only. 3 URL-revenue eval batches. EH Robinhood vs Kalshi. Klement + Wu macro GW alert-only. Fable 5.1 routing awareness. Sterling Sky → SEO GBP. **No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k254-harness-evolution](concepts/k254-harness-evolution-wave.md) | HarnessDev + HoH + CordisBench + SKILL.state + Agent Seer (K254) | draft |
+| [k254-vol-quant](concepts/k254-vol-quant-wave.md) | VRP nuclear/energy equities (K254) | draft |
+| [k254-eval-github](concepts/k254-eval-github-wave.md) | 3 URL-revenue eval docx batches (K254) | draft |
+| [k254-gambling-pm](concepts/k254-gambling-pm-wave.md) | EH Robinhood vs Kalshi (K254) | draft |
+| [k254-newsletter-macro](concepts/k254-newsletter-macro-wave.md) | Klement + Wu macro (K254) | draft |
+| [k254-ccc-models](concepts/k254-ccc-models-wave.md) | Claude Fable 5.1 AINews (K254) | draft |
+| [k254-seo-gbp](concepts/k254-seo-gbp-wave.md) | Sterling Sky edited-review pointer (K254) | draft |
+
 ### K253 ingest (2026-09-01)
 OSINT K253: 8 arXiv + 8 newsletters → 7 concept hubs + AutoSciRub entity. Phase-0 **1 REFERENCE clone** (AutoSciRub MIT). Harness self-improvement (S3Gym, Aspire, AutoSciRub, Addy skill decay). Vol quant wiki-only. Physics OOD stub. DIASENTINEL clinical extract. CF ES7670 + Klement + Wu → GW alert-only. EH SCOTUS PM episode. OSS factory + Fal H3 pointer. Outlier GTA6 → SEO notes bump. **No xsp/pm scp.**
 

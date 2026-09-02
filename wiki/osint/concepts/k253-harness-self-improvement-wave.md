@@ -12,9 +12,10 @@ related:
   - concepts/k252-harness-evolution-wave.md
   - concepts/k253-auditable-mas-clinical-stub.md
   - entities/tools/autoscirub.md
+  - concepts/k254-harness-evolution-wave.md
 maturity: draft
 created: 2026-09-01
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 ## Relations

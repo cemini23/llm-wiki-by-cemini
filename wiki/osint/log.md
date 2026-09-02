@@ -1,3 +1,13 @@
+## [2026-09-02] ingest | K254 wave
+
+- **Inbox:** 17 files. Preingest: 16 NEW, 0 LIKELY, 1 DUPLICATE (`Multi-Project URL Revenue Evaluation.docx` → last30days-skill; archive only).
+- **Sources:** Agent Seer; SKILL.state; HarnessDev; Harness-of-Harness; CordisBench; fading event OOD; VRP nuclear; 3 eval docx; Latent Fable 5.1; Sterling Sky GBP; EH Robinhood; Klement×2; Wu BTC.
+- **Concepts:** k254-harness-evolution, k254-vol-quant, k254-astronomy-ood-stub, k254-eval-github, k254-newsletter-macro, k254-gambling-pm, k254-ccc-models, k254-seo-gbp. Bumps k248/k252/k253.
+- **Phase-0:** `adopt_k254_phase0.sh` — **0 Integrate GO** (no paper-matched SPDX clones).
+- **Routing:** CCC harness + Fable 5.1 + OSS eval awareness. Cyber eval threat-intel URLs. GW Klement/Wu alert-only. Gambling EH Robinhood. SEO `google-review-edited-indicator` stub. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-02_k254-*` + siblings. **No LIVE Discord.**
+- **Archive:** inbox → egress-fi (incl. DUPLICATE docx).
+
 ## [2026-09-01] ingest | K253 wave
 
 - **Inbox:** 16 files (8 arXiv + 8 newsletters). Preingest: 16 NEW, 1 LIKELY (Addy skill decay vs July autonomy levels — distinct issue), 0 DUPLICATE.

@@ -15,6 +15,10 @@ related:
   - sources/eval-url-revenue-opportunity-2026-08-08.md
   - entities/catalogs/osint4all-search-domain.md
   - entities/catalogs/osint4all-productivity.md
+  - sources/eval-multi-wiki-url-revenue-2026-09-02.md
+  - sources/eval-multi-wiki-url-revenue-copy-2026-09-02.md
+  - sources/eval-repository-revenue-analysis-2026-09-02.md
+  - concepts/k254-eval-github-wave.md
 maturity: draft
 created: 2026-08-18
 updated: 2026-08-18
