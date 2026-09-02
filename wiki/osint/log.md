@@ -1,3 +1,11 @@
+## [2026-09-02] harness | super-audit Phase B
+
+- **OSINT:** `osint-invariants.mdc` (alwaysApply, hard gates); `osint-phase1-adopt-wires.mdc` demoted to on-demand catalog; `wiki/meta/launchagent-health.md`; source `wiki/sources/super-audit-ai-harness-2026-09-02.md`.
+- **LaunchAgents:** `com.cemini.wiki-ingester` bootout + plist disabled; `reinstall_morning_launchagents.sh` skips ingester unless `CEMINI_ENABLE_WIKI_INGESTER=1`.
+- **Route:** OpenRouter free ranker prefers Qwen/GLM/Kimi (`agent-toolkit/select-openrouter-free-model.ps1`).
+- **Cybersec:** deleted project `cemini-phase1-policy-wires.mdc`; `restore_cybersec_dual_id.py` → owned-rule `--check` only.
+- **Ollama:** skipped (storage). Super-audit stays 5-model.
+
 ## [2026-09-02] audit | super-audit AI harness → REWORK → Phase A shipped
 
 - **Synthesis:** `reports/audit/premium-ai-harness-20260902/SYNTHESIS.md`. ~47% rule tokens duplicate; 770-line alwaysApply catalog demoted; 27 duplicate K# ids.

@@ -7,6 +7,8 @@ related:
   - concepts/cemini-wiki-ingest-workflow.md
   - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
   - concepts/harness-updating-vs-benefit-nonmonotonic.md
+  - meta/launchagent-health.md
+  - sources/super-audit-ai-harness-2026-09-02.md
 maturity: draft
 created: 2026-09-02
 updated: 2026-09-02

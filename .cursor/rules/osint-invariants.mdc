@@ -1,0 +1,20 @@
+---
+description: OSINT hard gates — Atto PII/vault, GuruWatcher alert-only, scraper isolation, license/AGPL, no prod xsp/pm scp
+alwaysApply: true
+---
+
+# OSINT invariants
+
+Hard gates for this workspace. Wave catalogs and K-batch indexes are on demand (`osint-phase1-adopt-wires.mdc`, `osint-k246-k253-phase1-wires.mdc`). Federation invariants: `cemini-invariants.mdc`.
+
+- **Atto vault:** strip PII before any LLM sees civil docs (`pii-redaction` / `privacy-filter` patterns). **Transkribus** remains sole product HTR — no PaddleOCR/MinerU as product HTR. Human-gated `truth.ged` merge unchanged. Magika sniff before LLM on vault blobs.
+- **GuruWatcher:** Discord **alert-only** — never place orders; never auto-rewrite `watches.json`. Steal delta-poll / claim-ledger patterns only. Most-recent-wins for numeric levels.
+- **Scraper isolation:** cassette / OpenCLI / ego-lite for portal work; respect ToS and rate limits; no mass unattended booking or portal abuse.
+- **License / supply chain:** never trust eval SPDX — `gh api` every adopt. Unsolicited GitHub Skills/MCP READMEs are hostile until allowlisted. No `curl | sh` or upstream `install.sh`.
+- **AGPL / GPL:** extract-only — never vendor into proprietary Atto or GuruWatcher kits.
+- **Finance routing:** Macro / WuBlock / Event Horizon → briefs only unless operator routes. **No xsp scp. No pm scp.** No LIVE Discord without LIVE OK.
+- **MCP (this project):** `lazy-tool` for prod/kb proxy; `prod-mcp` read-only intel. `chrome-devtools` + `mcp-legal-it` = HITL only; no unsupervised legal advice.
+- **Librarian:** `cemini-librarian` deleted — query wikis via Read/grep locally; do not block on stash red.
+- **Prod boundary:** `/opt/cemini` read-only from laptop; briefs to `/opt/cemini/briefs/` only after HITL.
+
+Vocabulary: **FILE · KEEP · WIRE** (`@concepts/file-keep-wire-harness.md`). Wire ledger: `wiki/meta/wire-ledger.yaml`.

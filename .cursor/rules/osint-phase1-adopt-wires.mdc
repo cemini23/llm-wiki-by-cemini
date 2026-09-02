@@ -1,6 +1,6 @@
 ---
-description: Phase-1 OSINT adopt wires — Atto PII/genealogy, GuruWatcher alerts, scraper isolation, license/AgentBaiting, finance routing
-alwaysApply: true
+description: OSINT adopt wire catalog — Atto/GuruWatcher/CC/cyber wave extracts, clone inventory, K-batch routing. Read when wiring or triaging ingests; hard gates live in osint-invariants.mdc.
+alwaysApply: false
 ---
 
 # Phase-1 OSINT adopt wires

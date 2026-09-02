@@ -224,6 +224,13 @@ echo "  $BIN_DIR/cemini-daily-research-digest"
 install_wrapper cemini-wiki-sync-verify
 install_wrapper cemini-federation-morning-summary
 install_wrapper cemini-daily-research-digest-wiki
+# wiki-ingester disabled by default (Grok Build weekly quota / HITL). Re-enable:
+#   mv ~/Library/LaunchAgents/com.cemini.wiki-ingester.plist.disabled-* ~/Library/LaunchAgents/com.cemini.wiki-ingester.plist
+#   launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.cemini.wiki-ingester.plist
+# Or: CEMINI_ENABLE_WIKI_INGESTER=1 bash scripts/reinstall_morning_launchagents.sh
+if [[ "${CEMINI_ENABLE_WIKI_INGESTER:-0}" == "1" ]]; then
+  install_wrapper cemini-wiki-ingester
+fi
 
 echo "=== Federated wiki paths + digest bins ==="
 FED_TEMPLATE="$BIN_DIR/cemini-daily-research-digest-wiki"
@@ -260,6 +267,22 @@ done
 write_calendar_plist com.cemini.federation-morning-summary \
   "$BIN_DIR/cemini-federation-morning-summary" 8 "$fed_minute" cemini-federation-summary
 echo "  schedule federation-morning-summary → 08:$(printf '%02d' "$fed_minute")"
+
+# Headless Grok CLI ingest (not Grok Bot GUI). Disabled by default — Grok Build quota + HITL.
+if [[ "${CEMINI_ENABLE_WIKI_INGESTER:-0}" == "1" ]]; then
+  write_calendar_plist com.cemini.wiki-ingester \
+    "$BIN_DIR/cemini-wiki-ingester" 9 0 cemini-wiki-ingester
+  echo "  schedule wiki-ingester (Grok CLI) → 09:00"
+else
+  launchctl bootout "gui/$(id -u)/com.cemini.wiki-ingester" 2>/dev/null || true
+  if [[ -f "$AGENT_DIR/com.cemini.wiki-ingester.plist" ]]; then
+    disabled="$AGENT_DIR/com.cemini.wiki-ingester.plist.disabled-$(date +%Y%m%d)"
+    if [[ ! -f "$disabled" ]]; then
+      mv "$AGENT_DIR/com.cemini.wiki-ingester.plist" "$disabled" 2>/dev/null || true
+    fi
+  fi
+  echo "  skip wiki-ingester (set CEMINI_ENABLE_WIKI_INGESTER=1 to install)"
+fi
 
 # Inbox watch (unchanged pattern — script on Desktop is OK for WatchPaths trigger? use wrapper)
 INBOX="$ROOT/research to be indexed"
@@ -346,7 +369,7 @@ WRAP
 done
 
 echo ""
-echo "Done. Logs: ~/Library/Logs/cemini-{daily-digest,federation-summary,wiki-sync,inbox-watch,workflow}.log"
+echo "Done. Logs: ~/Library/Logs/cemini-{daily-digest,federation-summary,wiki-sync,inbox-watch,workflow,wiki-ingester}.log"
 echo ""
 echo "macOS TCC: Full Disk Access on Cursor or /bin/bash does NOT cover launchd jobs."
 echo "  Wrappers run from ~/bin; scripts/python from ~/.cemini/launchagent/."

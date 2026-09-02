@@ -20,6 +20,9 @@ OSINT K254: 7 arXiv + 3 eval docx + 6 newsletters (1 DUPLICATE fold → last30da
 | [k254-ccc-models](concepts/k254-ccc-models-wave.md) | Claude Fable 5.1 AINews (K254) | draft |
 | [k254-seo-gbp](concepts/k254-seo-gbp-wave.md) | Sterling Sky edited-review pointer (K254) | draft |
 
+### Super-audit harness (2026-09-02)
+| [super-audit-ai-harness-2026-09-02](sources/super-audit-ai-harness-2026-09-02.md) | 5-auditor federation AI harness audit → REWORK; Phase A/B shipped | validated |
+
 ### K253 ingest (2026-09-01)
 OSINT K253: 8 arXiv + 8 newsletters → 7 concept hubs + AutoSciRub entity. Phase-0 **1 REFERENCE clone** (AutoSciRub MIT). Harness self-improvement (S3Gym, Aspire, AutoSciRub, Addy skill decay). Vol quant wiki-only. Physics OOD stub. DIASENTINEL clinical extract. CF ES7670 + Klement + Wu → GW alert-only. EH SCOTUS PM episode. OSS factory + Fal H3 pointer. Outlier GTA6 → SEO notes bump. **No xsp/pm scp.**
 
@@ -3437,6 +3440,7 @@ Topics, theses, methodologies, strategies — ideas the research examines.
 - [Cemini workflow tooling audit](concepts/cemini-workflow-tooling-audit-2026-05-30.md) — `[DRAFT 2026-05-30]` Obsidian/n8n/MCP gap map + v5 prompt need. — concept, workflow, audit, k84
 - [Cemini wiki ingest workflow](concepts/cemini-wiki-ingest-workflow.md) — `[CORE 2026-05-31]` Four-phase discovery→ingest pipeline (daily digest, inbox watch, ingest skill, human gates). — concept, workflow, automation, k90
 - [FILE · KEEP · WIRE — three-verb harness ingest vocabulary](concepts/file-keep-wire-harness.md) — `[DRAFT 2026-09-02]` Replaces Phase-0/Phase-1/policy_wired vocabulary; ledger contract. — concept, workflow, harness, federation
+- [LaunchAgent health — Cemini laptop automation](meta/launchagent-health.md) — `[DRAFT 2026-09-02]` Active/disabled/broken LaunchAgents; wiki-ingester off; claude-mem notes. — meta, ops, launchagent
 - [Gambling wiki federation](concepts/gambling-wiki-federation.md) — `[VALIDATED 2026-08-13]` Cross-wiki hub for public `@gambling-wiki` (sports betting, casino, DFS, WNBA live-under research); osint-wiki keeps PM bots/CeminiSuite. — concept, federation, gambling-wiki
 - [Game dev wiki federation](concepts/game-dev-wiki-federation.md) — `[VALIDATED 2026-06-13]` Cross-wiki hub for public `@game-dev-wiki` (hobby castle/RTS, Godot evals, agent harness); ccc-wiki keeps generic orchestration. — concept, federation, game-dev-wiki
 

@@ -33,11 +33,11 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 ## Current state (2026-09-02 — super-audit AI harness · REWORK)
 
 - **Audit** — `reports/audit/premium-ai-harness-20260902/SYNTHESIS.md` (5 auditors, REWORK). Plan: `IMPLEMENTATION_PLAN.md` same folder.
-- **Rules** — `cemini-invariants.mdc` (CCC, alwaysApply) replaces the 770-line catalog in every turn; catalog demoted to on-demand. Federation `cemini-*.mdc` rules now sync to `~/.cursor/rules/` only; project copies pruned (Cybersec overlay copy kept).
-- **OSINT** — `osint-phase1-adopt-wires.mdc` alwaysApply **true** (hard gates); `osint-k246-k253-phase1-wires.mdc` on-demand index.
+- **Rules** — `cemini-invariants.mdc` (global alwaysApply) + `osint-invariants.mdc` (≤25 lines, alwaysApply). Wave catalog `osint-phase1-adopt-wires.mdc` on-demand. Federation rules global-only; Cybersec phase1 project copy **retired**.
 - **Vocabulary** — FILE · KEEP · WIRE (`wiki/concepts/file-keep-wire-harness.md`). `wiki/meta/wire-ledger.yaml` + `scripts/wire_ledger_check.py` PASS.
-- **Grok** — failure is **HTTP 402 "Grok Build usage balance exhausted"** (balance), **not** login. `/route` mid lane falls back to Flash per rule. Consider unloading `com.cemini.wiki-ingester` until balance restored + HITL.
-- **Open:** Ollama not installed (free 6th audit slot). GuruWatcher 53-rule collapse. OSINT hard-gate split (≤40 lines). HL funding backtest overdue.
+- **Grok** — **402** = weekly Grok Build quota (resets weekly). `com.cemini.wiki-ingester` **unloaded**; reinstall script skips unless `CEMINI_ENABLE_WIKI_INGESTER=1`.
+- **Route** — OpenRouter easy ranker prefers Qwen/GLM/Kimi over Nemotron 550B (`agent-toolkit/scripts/select-openrouter-free-model.ps1`).
+- **Open:** GuruWatcher 53→2 rules (operator). HL funding backtest overdue. claude-mem worker — `bun install` in plugin cache if zod errors persist.
 
 ## Current state (2026-09-02 — K254)
 

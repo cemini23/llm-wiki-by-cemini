@@ -39,6 +39,22 @@ wires:
     wiki_page: entities/tools/mcp-legal-it.md
     since: 2026-09-02
     verify: "rg -c mcp-legal-it .cursor/mcp.json"
+  - id: osint-invariants-rule
+    verb: WIRE
+    kind: rule
+    repo: osint
+    path: .cursor/rules/osint-invariants.mdc
+    wiki_page: "@osint-wiki/concepts/file-keep-wire-harness.md"
+    since: 2026-09-02
+    verify: "rg -c '^alwaysApply: true' .cursor/rules/osint-invariants.mdc"
+  - id: openrouter-free-ranker
+    verb: WIRE
+    kind: script
+    repo: home
+    path: Projects/agent-toolkit/scripts/select-openrouter-free-model.ps1
+    wiki_page: "@osint-wiki/sources/super-audit-ai-harness-2026-09-02.md"
+    since: 2026-09-02
+    verify: "test -f Projects/agent-toolkit/scripts/select-openrouter-free-model.ps1"
   - id: world-intel-mcp
     verb: WIRE
     kind: mcp

@@ -11,8 +11,8 @@
 | 1 | Cursor | config-semantics | Fable 5.1 | REWORK |
 | 2 | Cursor | workflow/subscriptions | Grok 4.6 | REWORK |
 | 3 | Cursor | adversarial | Grok 4.5 | REWORK |
-| 4 | API | api-adversarial | openrouter/fusion | *(pending / slow)* |
-| 5 | API | api-deep-reasoning | moonshotai/kimi-k2.5 | *(pending / slow)* |
+| 4 | API | api-adversarial | openrouter/fusion | REWORK |
+| 5 | API | api-deep-reasoning | moonshotai/kimi-k2.5 | REWORK |
 
 ## Overall: **REWORK** (not REJECT)
 
