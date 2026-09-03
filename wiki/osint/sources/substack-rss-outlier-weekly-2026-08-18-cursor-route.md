@@ -9,9 +9,10 @@ related:
   - concepts/agent-cost-routing-model-orchestra.md
   - sources/newsletter-rss-latent-space-2026-08-17-stripe-openrouter.md
   - sources/arxiv-2608.16798-clawgym-ii-2026-08-18.md
+  - entities/tools/grok-bot.md
 maturity: draft
 created: 2026-08-18
-updated: 2026-08-18
+updated: 2026-09-03
 read_status: read
 ---
 
@@ -22,6 +23,7 @@ read_status: read
 - @concepts/agent-cost-routing-model-orchestra.md — planner vs worker price tiers
 - @sources/newsletter-rss-latent-space-2026-08-17-stripe-openrouter.md — routing layer same week
 - @sources/arxiv-2608.16798-clawgym-ii-2026-08-18.md — do not swap `/route` worker
+- @entities/tools/grok-bot.md — federation `/route` stays separate from Grok Bot cloud VM
 
 ## Raw Concept
 

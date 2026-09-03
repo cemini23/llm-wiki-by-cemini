@@ -4,6 +4,7 @@ type: source
 tags: [source, newsletter, rss, big-tech, k239]
 keywords: [Meta, resignation-wave, retainers, Grok Bot, OpenClaw, Cursor]
 related:
+  - entities/tools/grok-bot.md
   - concepts/practical-loop-engineering.md
 maturity: draft
 created: 2026-08-15

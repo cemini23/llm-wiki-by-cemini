@@ -20,6 +20,13 @@ OSINT K254: 7 arXiv + 3 eval docx + 6 newsletters (1 DUPLICATE fold → last30da
 | [k254-ccc-models](concepts/k254-ccc-models-wave.md) | Claude Fable 5.1 AINews (K254) | draft |
 | [k254-seo-gbp](concepts/k254-seo-gbp-wave.md) | Sterling Sky edited-review pointer (K254) | draft |
 
+### Grok Bot operator ingest (2026-09-02)
+| [xai-grok-bot-guides](sources/xai-grok-bot-guides-index-2026-09-02.md) | Official guides hub + multi-team/GTM/design summaries | validated |
+| [x-mattyp-grok-templates](sources/x-post-mattyp-grok-bot-templates-2026-09-02.md) | Templates launch — skills/memories/plugins copy | draft |
+| [x-irabukht-grok-marketing](sources/x-post-irabukht-grok-bot-marketing-2026-09-02.md) | Marketing/GEO community article (preview only) | draft |
+| [grok-bot](entities/tools/grok-bot.md) | SpaceXAI cloud teammate product entity | validated |
+| [grok-bot-operator-patterns](concepts/grok-bot-operator-patterns.md) | Templates, shared VM, coordination vs Cemini charters | draft |
+
 ### Super-audit harness (2026-09-02)
 | [super-audit-ai-harness-2026-09-02](sources/super-audit-ai-harness-2026-09-02.md) | 5-auditor federation AI harness audit → REWORK; Phase A/B shipped | validated |
 

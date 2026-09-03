@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import subprocess
 import sys
 import tempfile
 from pathlib import Path
@@ -92,6 +93,39 @@ def check_ledger(data: dict, root: Path, *, check_coverage: bool = True) -> list
     return errs
 
 
+def run_verify(data: dict, *, quiet: bool) -> list[str]:
+    errs: list[str] = []
+    repos = data.get("repos") or {}
+    wires = data.get("wires") or []
+    for row in wires:
+        if not isinstance(row, dict):
+            continue
+        wid = row.get("id", "?")
+        verify = (row.get("verify") or "").strip()
+        if not verify or verify.startswith("wiki-only"):
+            if not quiet:
+                print(f"  SKIP {wid} (wiki-only or empty)")
+            continue
+        repo_key = row.get("repo")
+        repo_root = Path(repos.get(repo_key, ROOT))
+        if not quiet:
+            print(f"  RUN {wid}: {verify}")
+        try:
+            subprocess.run(
+                verify,
+                shell=True,
+                cwd=repo_root,
+                check=True,
+                capture_output=True,
+                text=True,
+            )
+        except subprocess.CalledProcessError as exc:
+            err = (exc.stderr or exc.stdout or str(exc)).strip().splitlines()
+            tail = err[-3:] if err else [str(exc)]
+            errs.append(f"verify {wid} failed in {repo_root}: {' | '.join(tail)}")
+    return errs
+
+
 def selftest() -> int:
     good = {
         "version": 1,
@@ -130,6 +164,7 @@ def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--ledger", type=Path, default=ROOT / "wiki/meta/wire-ledger.yaml")
     p.add_argument("--selftest", action="store_true")
+    p.add_argument("--run-verify", action="store_true")
     p.add_argument("--quiet", action="store_true")
     args = p.parse_args()
     if args.selftest:
@@ -145,6 +180,18 @@ def main() -> int:
     n = len(data.get("wires") or [])
     if not args.quiet:
         print(f"PASS wires={n}")
+    if args.run_verify:
+        if not args.quiet:
+            print("verify:")
+        verr = run_verify(data, quiet=args.quiet)
+        if verr:
+            if not args.quiet:
+                print("VERIFY FAIL")
+                for e in verr:
+                    print(f"  - {e}")
+            return 1
+        if not args.quiet:
+            print("VERIFY PASS")
     return 0
 
 

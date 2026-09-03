@@ -30,6 +30,12 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-03 — Grok Bot FILE ingest)
+
+- **Grok Bot wiki** — `entities/tools/grok-bot.md` + 3 sources + `concepts/grok-bot-operator-patterns.md` (FILE; no Phase-1 wire). Charters in `briefs/2026-09-01_grok-bot-charters.md` (§1–16).
+- **Harness optional-next** — `wire_ledger_check.py --run-verify` PASS; 97 adopt bodies → `scripts/adopt-waves/`; CCC Dual-ID inline purge.
+- **Open:** operator paste §9–§16 into Grok Bot.app; irabukht article name verify; cursor-route **0.1.14** OR ranker parity publish.
+
 ## Current state (2026-09-02 — super-audit AI harness · REWORK)
 
 - **Audit** — `reports/audit/premium-ai-harness-20260902/SYNTHESIS.md` (5 auditors, REWORK). Plan: `IMPLEMENTATION_PLAN.md` same folder.
@@ -39,6 +45,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Route** — OpenRouter easy ranker prefers Qwen/GLM/Kimi over Nemotron 550B (`agent-toolkit/scripts/select-openrouter-free-model.ps1`).
 - **Open:** GuruWatcher 53→2 rules (operator). HL funding backtest overdue.
 - **Phase B backlog (2026-09-02):** harness_verb migration (204 pages); `adopt.sh` + manifest; six daily-use skills; CCC Dual-ID purge; wire_ledger PASS (8 rows).
+- **Optional-next (2026-09-02):** `wire_ledger_check.py --run-verify`; adopt wrappers retired → `adopt-waves/`; CCC inline Dual-ID purge complete.
 
 ## Current state (2026-09-02 — K254)
 

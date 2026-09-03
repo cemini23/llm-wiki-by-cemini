@@ -6,6 +6,7 @@ keywords: [Grok 4.6, Grok Bot, SpaceXAI, SFT-trajectories, agentic-RL, Claude-wa
 related:
   - sources/newsletter-rss-latent-space-2026-07-09-grok-45-cursor.md
   - concepts/agent-toolkit-routing-research-backlog.md
+  - entities/tools/grok-bot.md
 maturity: draft
 created: 2026-08-13
 updated: 2026-08-13

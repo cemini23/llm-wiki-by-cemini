@@ -35,6 +35,7 @@ run_wave() {
   local wave="$1"
   local phase="${2:-all}"
   local ran=0
+  local waves_dir="$ROOT/scripts/adopt-waves"
   run_script() {
     local script="$1"
     [[ -f "$script" ]] || return 0
@@ -43,10 +44,10 @@ run_wave() {
     ran=1
   }
   if [[ "$phase" == "all" || "$phase" == "phase0" ]]; then
-    run_script "$ROOT/scripts/adopt_${wave}_phase0.sh"
+    run_script "$waves_dir/adopt_${wave}_phase0.sh"
   fi
   if [[ "$phase" == "all" || "$phase" == "phase1" ]]; then
-    run_script "$ROOT/scripts/adopt_${wave}_phase1.sh"
+    run_script "$waves_dir/adopt_${wave}_phase1.sh"
   fi
   if [[ "$ran" -eq 0 ]]; then
     echo "No adopt script found for wave=$wave phase=$phase" >&2

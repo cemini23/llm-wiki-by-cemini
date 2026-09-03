@@ -12,6 +12,8 @@ related:
   - sources/newsletter-rss-pragmatic-engineer-2026-08-14-meta-resignation-wave.md
   - sources/arxiv-2608.12654-steerbench-work-2026-08-15.md
   - entities/tools/loop-engineering.md
+  - entities/tools/grok-bot.md
+  - concepts/grok-bot-operator-patterns.md
   - concepts/agent-steering-action-boundary.md
   - concepts/code-as-agent-harness.md
   - sources/newsletter-rss-pragmatic-engineer-2026-08-19-osmani-ai-engineering.md
@@ -20,7 +22,7 @@ related:
   - sources/source-grok-loop-engineering-note-2026-08-29.md
 maturity: draft
 created: 2026-08-15
-updated: 2026-08-25
+updated: 2026-09-03
 ---
 
 ## Relations
@@ -38,6 +40,8 @@ updated: 2026-08-25
 - @sources/x-article-antpalkin-self-improving-ai-trading-machine-2026-08-06.md — trading autopsy → rewrite loop (2026-08-06)
 - @concepts/trading-strategy-autopsy-loop.md — autopsy pattern + eval-honesty caveats
 - @concepts/asd-ste100-writing-style.md — federation CLAUDE.md writing rules
+- @entities/tools/grok-bot.md — execution lane; not wiki author
+- @concepts/grok-bot-operator-patterns.md — Grok Bot HITL + template hygiene vs loop discipline
 
 ## Raw Concept
 

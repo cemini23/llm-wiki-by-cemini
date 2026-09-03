@@ -8,6 +8,7 @@ related:
   - concepts/trading-strategy-autopsy-loop.md
   - entities/people/antpalkin-cvxv666.md
   - entities/tools/loop-engineering.md
+  - entities/tools/grok-bot.md
 maturity: draft
 created: 2026-08-25
 updated: 2026-08-25

@@ -1,4 +1,22 @@
-## [2026-09-02] harness | super-audit Phase B backlog
+## [2026-09-03] ingest | Grok Bot brief expansion (§9–§16)
+
+- **Brief:** `briefs/2026-09-01_grok-bot-charters.md` — §9 Project Ops (Notion PM); §10–16 marketing suite (irabukht); §7 X Desk merge; §0 templates workflow; shared-VM warning.
+- **Wiki:** bidirectional lint fixes on `grok-bot`, `grok-bot-operator-patterns`, `practical-loop-engineering`, `substack-rss-outlier-weekly-cursor-route`.
+- **Phase-0/1:** N/A — `grok-bot` is **FILE** only (`harness_verb`); no wire-ledger row; operator paste into Grok Bot.app.
+- **Open:** diff irabukht article bot names (X 403); cursor-route 0.1.14 OR ranker parity.
+
+## [2026-09-02] ingest | Grok Bot guides + template launch (X)
+
+- **Sources:** `xai-grok-bot-guides-index-2026-09-02.md` (hub + multi-team/GTM/design deep-read); `x-post-mattyp-grok-bot-templates-2026-09-02.md`; `x-post-irabukht-grok-bot-marketing-2026-09-02.md` (article bodies skim-only — X 403).
+- **Entity:** `entities/tools/grok-bot.md` — shared VM, templates, Cemini FILE posture.
+- **Concept:** `concepts/grok-bot-operator-patterns.md` — template hygiene, coordination vs `briefs/2026-09-01_grok-bot-charters.md`.
+- **Brief:** recommendations appended to grok-bot-charters (templates path, shared-computer warning, optional group channel).
+
+## [2026-09-02] harness | optional-next backlog (wire verify + adopt retire + Dual-ID)
+
+- **Wire ledger:** `wire_ledger_check.py --run-verify` — PASS wires=8, VERIFY PASS (7 run, 1 wiki-only skip).
+- **Adopt:** 97 wave bodies → `scripts/adopt-waves/`; top-level `adopt_k*_phase*.sh` → thin `adopt.sh` wrappers; `retire_adopt_wrappers.py` idempotent.
+- **CCC:** extended `purge_dual_id_footnotes.py` — inline Dual-ID bullets/headings purged in phase1 + k300-k309 rules.
 
 - **Migration:** `scripts/migrate_wire_status.py` — 204 wiki pages `wire_status` → `harness_verb` (FILE/KEEP/WIRE).
 - **Adopt:** `scripts/adopt.sh` + `wiki/meta/adopt-manifest.yaml` (unified wave runner).

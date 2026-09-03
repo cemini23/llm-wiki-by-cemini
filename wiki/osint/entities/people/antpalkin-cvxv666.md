@@ -6,6 +6,7 @@ keywords: [antpalkin, cvxv666, Grok Bot, loop engineering, Polymarket]
 related:
   - sources/x-article-antpalkin-self-improving-ai-trading-machine-2026-08-06.md
   - concepts/trading-strategy-autopsy-loop.md
+  - entities/tools/grok-bot.md
 maturity: draft
 created: 2026-08-25
 updated: 2026-08-25
