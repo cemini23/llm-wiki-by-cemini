@@ -6,15 +6,17 @@ keywords: [tungsten, APT, Sangdong, China export, Gentung, DPA, ALM]
 related:
   - entities/tickers/alm.md
   - sources/alm-desk-2026-08-20.md
+  - sources/defense-tungsten-supply-chain-audit-2026-09.md
 maturity: draft
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-09-04
 ---
 
 ## Relations
 
 - @entities/tickers/alm.md — NASDAQ:ALM
 - @sources/alm-desk-2026-08-20.md — 20 Aug desk pull
+- @sources/defense-tungsten-supply-chain-audit-2026-09.md — Sep forensic: APT plant is the SPOF; no Gentung DPA
 - Desktop memo: `/Users/claudiobarone/Desktop/ALM_Almonty_Tungsten_Thesis_2026-08-20.md`
 
 ## Raw Concept
@@ -38,6 +40,8 @@ Q2 NI is mostly **C$173.1M** non-cash. Ops improved (Adj. EBITDA C$17.6M) on **U
 5. Convert distribution repeats Jun/Jul
 
 Official DOE/DPA to ALM can fail and the bottleneck thesis still holds.
+
+Sep 2026 forensic adds the conversion-circuit frame: allied **concentrate** is not the same as allied **APT**. USGS MCS 2026 (CY2025): world mine ~85 kt contained W, China ~67 kt (~79%). US mine extraction zero since late 2015. Non-China APT names in that file: Masan (Vietnam), Wolfram Bergbau (Austria), GTP Towanda (scrap/chemical more than virgin leach). Do not treat Sangdong tonnes as finished US powder.
 
 ## Snippets
 

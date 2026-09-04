@@ -1,3 +1,21 @@
+## [2026-09-04] ingest | desk pack (BNTX / CRML / tungsten / Atto / GW / Tether)
+
+- **Inbox:** 14 files. Preingest: 13 NEW, 1 SKIP (FanDuel NFL CSV → CeminiDFS brief only).
+- **Sources:** BNTX thesis pack (md+pdf+tldr+Gemini fact-check+fix pack+docx); CRML short thesis + forensic; tungsten defense audit; Atto prod audit; GuruWatcher 0.1.7 audit; Tether gold forensic.
+- **Entities / concepts:** `bntx`, `crml`; `bntx-oncology-not-moderna`, `crml-tanbreez-promotional-tape`, `tether-gold-reserve-tiers`. Bumps: ALM, western-tungsten, atto-local-first, GW claim-ledger.
+- **Takeaways:** WCLC is not Moderna. CRML is a Greenland option. APT plant is the tungsten SPOF; no Gentung DPA. Atto NOT READY. GW 0.1.7 NO-GO (invite replay + newest-wins). Tether gold is three legal tiers `[TENTATIVE]`.
+- **Routing:** Atto brief → `../atto/briefs/`. GW brief → `../GuruWatcher/briefs/`. FanDuel slate → `../CeminiDFS/briefs/`. BNTX/CRML/tungsten/tether wiki-only. SEO CRML/tungsten notes already exist — no new stubs. **No xsp/pm scp. No LIVE Discord.**
+- **Archive:** inbox → egress-fi.
+
+## [2026-09-04] phase-0 | K255 Grok audits
+
+- **AREX-Skill** (`VectorSpaceLab/AREX-Skill`) — Apache-2.0 `[CONFIRMED]` gh api; 168★; last push 2026-09-03; ~442MB. **GO REFERENCE** FILE. Nested `skills/repositories/` plus DisCo export into Claude/Codex skill dirs — do not federation-sync. Entity: `entities/tools/arex-skill.md`.
+- **Deep-CFR-2025** (`milecdav/Deep-CFR-2025`) — MIT `[CONFIRMED]`; 0★; last push 2026-06-25; ~159MB. **CONDITIONAL-GO REFERENCE** FILE. LightGBM-vs-NN SD-CFR on PokerRL-2025; LUGL paper runtime still unverified. Entity: `entities/tools/deep-cfr-2025.md`.
+- **FalconFlank** (`MSNightmare/FalconFlank`) — MIT `[CONFIRMED]`; 488★; last push 2026-09-03; ~7.3MB. **EXTRACT-ONLY** (NO-GO Integrate) FILE. CrowdStrike Falcon priv-esc research; no PoC; cybersec-wiki awareness only. Entity: `entities/tools/falconflank.md`.
+- **Paper-only FILE:** SafeEvolve 2609.02786 (no runtime repo); LUGL 2609.03660 (Deep-CFR covers CFR lane); hook-update 2609.03884 (no attack templates); CAPTCHA 2609.02393 (no product wire).
+- **Backlinks:** Repo-To-Skill source + k255-harness-evolution ↔ arex-skill; LUGL source + k255-poker-game-theory ↔ deep-cfr-2025; k255-eval-github + k255-cybersec ↔ falconflank.
+- **No commit** from this Grok lane — parent reviews.
+
 ## [2026-09-04] ingest | K255 wave
 
 - **Inbox:** 30 files. Preingest: 29 NEW, 1 LIKELY (SecPro #250 part III → fold with #248–#249).

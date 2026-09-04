@@ -7,6 +7,23 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### Desk pack ingest (2026-09-04)
+Operator theses + production audits. 13 NEW inbox files (FanDuel CSV skipped as unsupported). **No xsp/pm scp.** Atto / GuruWatcher briefs only. WCLC week is not a BioNTech vaccine print. CRML is a Greenland option, not a built mine. Tungsten forensic reconfirms no Gentung DPA. Tether gold is three legal tiers.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [bntx-cancer-thesis](sources/bntx-cancer-thesis-2026-09-03.md) | BNTX pack: three-object split; Gemini tape rejected; Fable PASS-WITH-FIXES | draft |
+| [bntx](entities/tickers/bntx.md) | BioNTech SE; ~$103 / ~$25.6B; WCLC 12–15 Sep | draft |
+| [bntx-oncology-not-moderna](concepts/bntx-oncology-not-moderna.md) | Moderna melanoma ≠ CRC halt ≠ WCLC lung slots | draft |
+| [crml-short-thesis](sources/crml-short-thesis-2026-09-01.md) | CRML $1.06B Greenland option; 44.87 Mt @ 0.38% TREO | draft |
+| [crml](entities/tickers/crml.md) | Critical Metals / Tanbreez / EUR scheme | draft |
+| [crml-tanbreez-promotional-tape](concepts/crml-tanbreez-promotional-tape.md) | 4.7B t is host rock; offtakes are not cash | draft |
+| [defense-tungsten-audit](sources/defense-tungsten-supply-chain-audit-2026-09.md) | APT plant is the SPOF; no Gentung DPA; reject US1.2B convert | draft |
+| [atto-prod-audit](sources/atto-production-readiness-audit-2026-09-02.md) | Atto NOT READY; sidecar / Puppeteer / W14 / sdist | draft |
+| [gw-prod-audit](sources/guruwatcher-production-readiness-audit-2026-09-03.md) | GuruWatcher 0.1.7 NO-GO; Stripe invite replay; newest-wins broken | draft |
+| [tether-gold-forensic](sources/tether-gold-reserves-forensic-2026-09.md) | XAU₮ vs USDT gold vs surplus; `[TENTATIVE]` tonnage | draft |
+| [tether-gold-reserve-tiers](concepts/tether-gold-reserve-tiers.md) | Three legal gold objects; do not add them | draft |
+
 ### K255 ingest (2026-09-04)
 OSINT K255: 16 arXiv + 1 eval docx + 13 newsletters (SecPro part III LIKELY fold). Phase-0 **REFERENCE** clones: AREX-Skill (Apache-2.0), Deep-CFR-2025 (MIT), FalconFlank (MIT eval spot). SafeEvolve/hook-attack harness awareness. LUGL poker → Poker Arena. EH NJ/SCOTUS/NFL objectionable bets. Klement + Wu → GW alert-only. GPT-6 Astra + Muse Spark. Sterling dynamic SERP → SEO. **No xsp/pm scp.**
 
@@ -21,6 +38,9 @@ OSINT K255: 16 arXiv + 1 eval docx + 13 newsletters (SecPro part III LIKELY fold
 | [k255-cybersec](concepts/k255-cybersec-wave.md) | AI-SOC III + CAPTCHA + xv6 (K255) | draft |
 | [k255-eval-github](concepts/k255-eval-github-wave.md) | Multi-Wiki Revenue Batch eval (K255) | draft |
 | [k255-seo-gbp](concepts/k255-seo-gbp-wave.md) | Sterling Sky dynamic SERP (K255) | draft |
+| [arex-skill](entities/tools/arex-skill.md) | AREX-Skill Apache-2.0 GO REFERENCE (K255) | draft |
+| [deep-cfr-2025](entities/tools/deep-cfr-2025.md) | Deep-CFR-2025 MIT CONDITIONAL-GO REFERENCE (K255) | draft |
+| [falconflank](entities/tools/falconflank.md) | FalconFlank MIT EXTRACT-ONLY; no PoC (K255) | draft |
 
 ### K254 ingest (2026-09-02)
 OSINT K254: 7 arXiv + 3 eval docx + 6 newsletters (1 DUPLICATE fold → last30days). Phase-0 **0 Integrate GO**. HarnessDev/HoH/CordisBench/SKILL.state/Agent Seer. VRP nuclear vol wiki-only. 3 URL-revenue eval batches. EH Robinhood vs Kalshi. Klement + Wu macro GW alert-only. Fable 5.1 routing awareness. Sterling Sky → SEO GBP. **No xsp/pm scp.**
@@ -2323,7 +2343,7 @@ Tickers, companies, people, facilities, organizations — concrete things the re
 
 Six-section institutional template: Business Overview · Competitive Landscape · Financial Profile · Recent Events · Forward Catalysts · Analyst & Sell-Side Context.
 
-- [Almonty Industries (ALM)](entities/tickers/alm.md) — `[DRAFT 2026-08-20]` Western tungsten; Sangdong/GTP; $17/~$4.47B; convert $800M closed; grant unproven — ticker, tungsten, critical-minerals
+- [Almonty Industries (ALM)](entities/tickers/alm.md) — `[DRAFT 2026-09-04]` Western tungsten; Sangdong/GTP; $17/~$4.47B; convert $800M closed; grant unproven; Sep forensic no Gentung DPA — ticker, tungsten, critical-minerals
 - [Apple Inc. (AAPL)](entities/tickers/aapl.md) — mega cap — ticker-report, gemini-deep-research
 - [Cardano (ADA)](entities/tickers/ada.md) — crypto native (indexed 2026-04-25) — ticker-report, gemini-deep-research
 - [Advanced Micro Devices (AMD)](entities/tickers/amd.md) — high beta — ticker-report, gemini-deep-research
@@ -2331,9 +2351,11 @@ Six-section institutional template: Business Overview · Competitive Landscape �
 - [AST SpaceMobile (ASTS)](entities/tickers/asts.md) — space tech (watchlist extension 2026-04-24) — ticker-report, gemini-deep-research
 - [Avalanche (AVAX)](entities/tickers/avax.md) — crypto native (indexed 2026-04-25) — ticker-report, gemini-deep-research
 - [Broadcom (AVGO)](entities/tickers/avgo.md) — high beta — ticker-report, gemini-deep-research
+- [BioNTech SE (BNTX)](entities/tickers/bntx.md) — `[DRAFT 2026-09-04]` mRNA/oncology; WCLC 12–15 Sep is not Moderna melanoma — ticker, biotech, wclc
 - [Bitcoin (BTC)](entities/tickers/btc.md) — crypto native — ticker-report, gemini-deep-research
 - [Coinbase Global (COIN)](entities/tickers/coin.md) — crypto proxy — ticker-report, gemini-deep-research
 - [CoreCivic (CXW)](entities/tickers/cxw.md) — `[DRAFT 2026-06-29]` ICE detention operator; California City turnkey OSINT — osint, corecivic, ice
+- [Critical Metals (CRML)](entities/tickers/crml.md) — `[DRAFT 2026-09-04]` Tanbreez Greenland option; 44.87 Mt classified; EUR all-stock scheme — ticker, rare-earths, greenland
 - [The Walt Disney Company (DIS)](entities/tickers/dis.md) — consumer tech — ticker-report, gemini-deep-research
 - [Dogecoin (DOGE)](entities/tickers/doge.md) — crypto native — ticker-report, gemini-deep-research
 - [Ethereum (ETH)](entities/tickers/eth.md) — crypto native — ticker-report, gemini-deep-research
@@ -3172,6 +3194,14 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 ## Concepts
 
 Topics, theses, methodologies, strategies — ideas the research examines.
+
+### Desk pack ingest (2026-09-04)
+
+- [BioNTech is not Moderna's melanoma print](concepts/bntx-oncology-not-moderna.md) — three objects; WCLC is lung data not a vaccine approval — concept, bntx, wclc
+- [CRML Tanbreez promotional tape](concepts/crml-tanbreez-promotional-tape.md) — 4.7B t host rock; offtakes not cash; crowded short — concept, crml, tanbreez
+- [Tether gold reserve tiers](concepts/tether-gold-reserve-tiers.md) — XAU₮ allocated vs USDT collateral vs surplus — concept, tether, gold
+- [Western tungsten supply thesis](concepts/western-tungsten-supply-thesis.md) — bump: APT plant SPOF; no Gentung DPA (Sep forensic) — concept, tungsten, almonty
+
 
 **Track C audit status markers** (applied 2026-04-24 per `briefs/track-c-walk-results.md`): `[C]` = `[CONFIRMED]`, `[T]` = `[TENTATIVE]`, `[R]` = `[RETRACTED]`, `[Cd]` = `[CONFIRMED] doc-only`, `[Cr]` = `[CONFIRMED] research-only`.
 

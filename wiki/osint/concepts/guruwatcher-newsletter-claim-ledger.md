@@ -34,12 +34,14 @@ related:
   - entities/tools/mubeng.md
   - sources/substack-rss-capital-flows-2026-08-18-next-stage-macro.md
   - entities/tools/llm-as-a-verifier.md
+  - sources/guruwatcher-production-readiness-audit-2026-09-03.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-08-10
+updated: 2026-09-04
 ---
 
 ## Relations
+- @sources/guruwatcher-production-readiness-audit-2026-09-03.md — 3 Sep NO-GO; GW-05 discards published_at; GW-06 strips `<`; GW-07 binds the wrong symbol
 - @entities/tools/weathernext.md — K230
 - @entities/tools/flights-rpc.md — K229 flights Extract
 
@@ -74,7 +76,8 @@ How do paid regime newsletters become reliable Discord level alerts without beco
 
 ## Narrative
 
-**GuruWatcher** (Priority #2) turns newsletter **stated numbers** into armed watches:
+**GuruWatcher** (Priority #2) turns newsletter **stated numbers** into armed watches. 3 Sep production audit is **NO-GO**: `published_at` is discarded (GW-05), HTML cleanup deletes `<`/`>` (GW-06), and DOTALL extract can bind a level to the wrong symbol (GW-07). Do not promote 0.1.7 until those High findings have tests.
+
 
 | Rule | Meaning |
 |------|---------|

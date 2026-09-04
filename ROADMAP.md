@@ -30,6 +30,13 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-04 — desk pack ingest)
+
+- **Desk pack** — BNTX cancer thesis (Gemini tape rejected; Fable PASS-WITH-FIXES). CRML Tanbreez promotional tape. Tungsten forensic reconfirms no Gentung DPA; APT plant is the SPOF. Tether gold three-tier `[TENTATIVE]`.
+- **Product audits** — Atto snapshot `c8a9ac2c6a56` **NOT READY** (sidecar, Puppeteer, W14, sdist). GuruWatcher 0.1.7 **NO-GO** (Stripe invite replay, IMAP default, newest-wins). Briefs in sibling repos. **No xsp/pm scp.**
+- **FanDuel CSV** — skipped as wiki source; staged to CeminiDFS.
+- **Open:** Atto P0 kit fixes; GW High-finding regressions; parent commit of K255 Phase-0 entity pages; cursor-route 0.1.14 OR ranker; Grok Bot §9–§16 paste; HL funding backtest overdue.
+
 ## Current state (2026-09-04 — K255 ingest)
 
 - **K255 ingest** — 30 inbox (29 NEW + 1 LIKELY SecPro fold). 30 source pages + 9 concept hubs. Raws to egress-fi. **No xsp/pm scp.**

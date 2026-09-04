@@ -22,13 +22,15 @@ related:
   - entities/tools/opencli.md
   - entities/tools/ente.md
   - concepts/e2ee-vault-share.md
+  - sources/atto-production-readiness-audit-2026-09-02.md
 maturity: draft
 created: 2026-07-22
-updated: 2026-08-14
+updated: 2026-09-04
 ---
 
 ## Relations
 
+- @sources/atto-production-readiness-audit-2026-09-02.md — 2 Sep Windows audit; ATTO-007 raw `--file` can leave loopback
 - @entities/tools/opencli.md — K197 backlink
 
 - @sources/substack-rss-secpro-2026-07-24-244-uk-cyber.md — identity lesson
@@ -58,6 +60,8 @@ updated: 2026-08-14
 Defensive checklist for Atto as a **local-first genealogy app**: what breaks when the threat is the endpoint, the supply chain, or a poisoned intake document — not a multi-tenant SaaS breach.
 
 ## Narrative
+
+3 Sep Windows production audit (`c8a9ac2c6a56`) is **NOT READY**. ATTO-007: assist `--base` / `ATTO_OMLX_BASE` can send a raw `--file` off loopback without the strip-safe pack. Treat that as a local-first miss, not a feature.
 
 ### Actors (local-first set)
 

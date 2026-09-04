@@ -6,15 +6,17 @@ keywords: [ALM, Almonty, Sangdong, Gentung, Panasqueira, GTP, APT, tungsten]
 related:
   - sources/alm-desk-2026-08-20.md
   - concepts/western-tungsten-supply-thesis.md
+  - sources/defense-tungsten-supply-chain-audit-2026-09.md
 maturity: draft
 created: 2026-08-20
-updated: 2026-08-20
+updated: 2026-09-04
 ---
 
 ## Relations
 
 - @sources/alm-desk-2026-08-20.md — UW tape + OpenCLI + Q2 PR / convert 6-K (2026-08-20, audit-revised)
 - @concepts/western-tungsten-supply-thesis.md — operator position: bottleneck live, stock not cheap, grant unproven
+- @sources/defense-tungsten-supply-chain-audit-2026-09.md — Sep forensic; reconfirms no Gentung DPA; do not import US1.2B convert sentence
 - Desktop (not wiki): `/Users/claudiobarone/Desktop/ALM_Almonty_Tungsten_Thesis_2026-08-20.md`
 - Jul 22 canvases: `alm-full-deep-dive`, `alm-deeper-dive`, `alm-pass-144-offtake-si`
 
@@ -30,7 +32,7 @@ UW 20 Aug ~17:29Z: **262,776,228** shares, avg30 **~7.0M**, beta **2.87**, next 
 
 Q2 (CAD, ended 30 Jun, PR 11 Aug / BusinessWire 20260811112579): rev **C$43.0M** (+498%); Adj. EBITDA **C$17.6M**; NI **C$181.8M** of which **C$173.1M** non-cash MTM; H1 operating cash flow **C$31.6M**; cash **C$1.23B**. Convert: priced **US$700M** 4 Jun + **US$100M** option; **US$800M closed 9 Jun** (6-K `000149315226028532`). GTP offtake amended 14 Jul (21yr, 4.41M MTU, min 210k, APT-beta). Buyback authorized 17 Aug: up to **14.4M sh / US$300M**, starts 24 Aug, not an obligation.
 
-Dark pool largest day since last desk: **17 Aug $80.5M**, UW SELL-lean, possible duplicate 2.06M @ $15.09 block. Options thin; 19 Aug Sep $15P $159k **multileg**. **NO_EVIDENCE** of an ALM-named DOE/DPA award; DOE $162M (18 Aug) is Sc/Cu/Sb/REE (selection, not a funded award).
+Dark pool largest day since last desk: **17 Aug $80.5M**, UW SELL-lean, possible duplicate 2.06M @ $15.09 block. Options thin; 19 Aug Sep $15P $159k **multileg**. **NO_EVIDENCE** of an ALM-named DOE/DPA award; DOE $162M (18 Aug) is Sc/Cu/Sb/REE (selection, not a funded award). Sep tungsten forensic repeats **no Gentung DPA Title III**. Keep convert at **US$800M closed 9 Jun**; the forensic's "US1.2 billion" line is garbled. `[NEEDS VERIFICATION 2026-09-04]` if a later 6-K shows a different closed size.
 
 ## Snippets
 
