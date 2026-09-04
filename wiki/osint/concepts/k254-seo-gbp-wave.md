@@ -6,9 +6,8 @@ keywords: [google-reviews, edited-indicator, Sterling-Sky]
 related:
   - sources/newsletter-rss-sterling-sky-2026-08-30-what-does-it-mean-when-a-google-review-shows-edi.md
   - "@seo-wiki/concepts/google-review-edited-indicator.md"
-maturity: draft
-created: 2026-09-02
-updated: 2026-09-02
+  - concepts/k255-seo-gbp-wave.md
+updated: 2026-09-04
 harness_verb: FILE
 ---
 

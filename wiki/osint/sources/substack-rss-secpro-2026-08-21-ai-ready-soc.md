@@ -7,9 +7,9 @@ related:
   - concepts/agent-runtime-identity-adr.md
   - concepts/agent-safety-executable-evaluation.md
   - sources/substack-rss-secpro-2026-08-28-249-ai-ready-soc.md
-maturity: draft
-created: 2026-08-21
-updated: 2026-08-29
+  - sources/substack-rss-secpro-2026-09-04-ai-ready-soc-part-iii-2026-09-04.md
+  - concepts/k255-cybersec-wave.md
+updated: 2026-09-04
 read_status: skimmed
 ---
 

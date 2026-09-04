@@ -9,9 +9,8 @@ related:
   - sources/substack-rss-wublock-2026-09-02-bitcoin-rebounds-sharply---is-the-bear-market-ov.md
   - concepts/k253-newsletter-macro-wave.md
   - concepts/k248-newsletter-macro-wave.md
-maturity: draft
-created: 2026-09-02
-updated: 2026-09-02
+  - concepts/k255-newsletter-macro-wave.md
+updated: 2026-09-04
 harness_verb: FILE
 ---
 

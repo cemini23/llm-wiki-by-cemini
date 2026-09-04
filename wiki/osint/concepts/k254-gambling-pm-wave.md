@@ -8,9 +8,8 @@ related:
   - concepts/k248-gambling-pm-wave.md
   - concepts/k252-gambling-pm-wave.md
   - sources/substack-rss-event-horizon-2026-09-02-robinhood-cometh.md
-maturity: draft
-created: 2026-09-02
-updated: 2026-09-02
+  - concepts/k255-gambling-pm-wave.md
+updated: 2026-09-04
 harness_verb: FILE
 ---
 

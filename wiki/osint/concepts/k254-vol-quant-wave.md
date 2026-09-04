@@ -6,9 +6,8 @@ keywords: [variance-risk-premium, nuclear, energy-equities]
 related:
   - sources/arxiv-2609.01183-vrp-nuclear-energy-equities-2026-09-02.md
   - concepts/k253-vol-quant-wave.md
-maturity: draft
-created: 2026-09-02
-updated: 2026-09-02
+  - concepts/k255-vol-quant-wave.md
+updated: 2026-09-04
 harness_verb: FILE
 ---
 

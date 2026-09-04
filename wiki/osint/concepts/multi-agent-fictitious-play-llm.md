@@ -13,6 +13,8 @@ related:
   - concepts/projected-exploitability-descent.md
   - sources/arxiv-projected-exploitability-descent-2606.29169-2026-06-30.md
   - concepts/exact-multiplayer-nash-computation.md
+  - concepts/k255-poker-game-theory-wave.md
+updated: 2026-09-04
   - sources/arxiv-quadratic-programming-nash-2509.25618-2026-07-04.md
   - concepts/devfun-researcher-track-readiness-2026-06.md
   - concepts/projected-exploitability-descent.md

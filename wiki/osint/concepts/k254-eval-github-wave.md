@@ -9,9 +9,8 @@ related:
   - sources/eval-repository-revenue-analysis-2026-09-02.md
   - sources/eval-multi-wiki-url-revenue-2026-08-18.md
   - sources/last30days-skill-mvanhorn.md
-maturity: draft
-created: 2026-09-02
-updated: 2026-09-02
+  - concepts/k255-eval-github-wave.md
+updated: 2026-09-04
 harness_verb: FILE
 ---
 

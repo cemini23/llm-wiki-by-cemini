@@ -7,9 +7,9 @@ related:
   - concepts/k249-cyber-agent-safety-wave.md
   - concepts/agent-runtime-identity-adr.md
   - sources/substack-rss-secpro-2026-08-21-ai-ready-soc.md
-maturity: draft
-created: 2026-08-29
-updated: 2026-08-29
+  - sources/substack-rss-secpro-2026-09-04-ai-ready-soc-part-iii-2026-09-04.md
+  - concepts/k255-cybersec-wave.md
+updated: 2026-09-04
 read_status: read
 ---
 

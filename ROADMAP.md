@@ -30,6 +30,14 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-04 — K255 ingest)
+
+- **K255 ingest** — 30 inbox (29 NEW + 1 LIKELY SecPro fold). 30 source pages + 9 concept hubs. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k255_phase0.sh`: AREX-Skill + Deep-CFR-2025 + FalconFlank REFERENCE clones. **0 Integrate GO** for SafeEvolve runtime.
+- **Routing** — CCC harness (SafeEvolve, hook attack, Repo-To-Skill). Cyber AI-SOC III. Poker LUGL. GW Klement/Wu. Gambling EH NFL/SCOTUS. SEO dynamic SERP.
+- **Briefs** — `briefs/2026-09-04_k255-*` → CCC/cyber/gambling/GuruWatcher/SEO/poker siblings.
+- **Open:** cursor-route 0.1.14 OR ranker; Grok Bot §9–§16 paste; HL funding backtest overdue.
+
 ## Current state (2026-09-03 — Grok Bot FILE ingest)
 
 - **Grok Bot wiki** — `entities/tools/grok-bot.md` + 3 sources + `concepts/grok-bot-operator-patterns.md` (FILE; no Phase-1 wire). Charters in `briefs/2026-09-01_grok-bot-charters.md` (§1–16).

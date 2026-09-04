@@ -6,9 +6,8 @@ keywords: [Claude-Fable, cache-pricing, Latent-Space]
 related:
   - sources/newsletter-rss-latent-space-2026-09-02-ainews-claude-fablemythos-51-new-sota-model-75-c.md
   - concepts/k254-harness-evolution-wave.md
-maturity: draft
-created: 2026-09-02
-updated: 2026-09-02
+  - concepts/k255-ccc-models-wave.md
+updated: 2026-09-04
 harness_verb: FILE
 ---
 

@@ -6,9 +6,8 @@ keywords: [DIASENTINEL, auditable, guideline-grounded]
 related:
   - sources/arxiv-2608.31128-diasentinel-diabetes-auditable-mas-2026-09-01.md
   - concepts/k253-harness-self-improvement-wave.md
-maturity: draft
-created: 2026-09-01
-updated: 2026-09-01
+  - concepts/k255-cybersec-wave.md
+updated: 2026-09-04
 harness_verb: FILE
 ---
 

@@ -12,9 +12,10 @@ related:
   - concepts/k253-harness-self-improvement-wave.md
   - concepts/k252-harness-evolution-wave.md
   - concepts/k254-ccc-models-wave.md
+  - concepts/k255-harness-evolution-wave.md
 maturity: draft
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-04
 harness_verb: FILE
 ---
 

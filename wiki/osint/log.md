@@ -1,3 +1,13 @@
+## [2026-09-04] ingest | K255 wave
+
+- **Inbox:** 30 files. Preingest: 29 NEW, 1 LIKELY (SecPro #250 part III → fold with #248–#249).
+- **Sources:** 16 arXiv + 1 eval docx + 13 newsletters/substack.
+- **Concepts:** k255-harness-evolution, k255-poker-game-theory, k255-vol-quant, k255-gambling-pm, k255-newsletter-macro, k255-ccc-models, k255-cybersec, k255-eval-github, k255-seo-gbp. Bumps k254/k253 SecPro series.
+- **Phase-0:** `adopt_k255_phase0.sh` — **AREX-Skill** (Apache-2.0 REFERENCE), **Deep-CFR-2025** (MIT REFERENCE), **FalconFlank** (MIT eval spot). SafeEvolve/LUGL paper repos: no Integrate GO without operator review.
+- **Routing:** CCC harness (SafeEvolve, hook attack, Repo-To-Skill). Cyber AI-SOC III + CAPTCHA. Poker LUGL → devfun-poker-arena. GW Klement/Wu alert-only. Gambling EH SCOTUS/NFL. SEO dynamic SERP stub. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-04_k255-*` + sibling copies. **No LIVE Discord.**
+- **Archive:** inbox → egress-fi.
+
 ## [2026-09-03] ingest | Grok Bot brief expansion (§9–§16)
 
 - **Brief:** `briefs/2026-09-01_grok-bot-charters.md` — §9 Project Ops (Notion PM); §10–16 marketing suite (irabukht); §7 X Desk merge; §0 templates workflow; shared-VM warning.

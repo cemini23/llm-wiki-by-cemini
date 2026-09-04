@@ -7,6 +7,21 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K255 ingest (2026-09-04)
+OSINT K255: 16 arXiv + 1 eval docx + 13 newsletters (SecPro part III LIKELY fold). Phase-0 **REFERENCE** clones: AREX-Skill (Apache-2.0), Deep-CFR-2025 (MIT), FalconFlank (MIT eval spot). SafeEvolve/hook-attack harness awareness. LUGL poker → Poker Arena. EH NJ/SCOTUS/NFL objectionable bets. Klement + Wu → GW alert-only. GPT-6 Astra + Muse Spark. Sterling dynamic SERP → SEO. **No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k255-harness-evolution](concepts/k255-harness-evolution-wave.md) | SafeEvolve, Repo-To-Skill, Env Evolution, hook attack (K255) | draft |
+| [k255-poker-game-theory](concepts/k255-poker-game-theory-wave.md) | LUGL imperfect-info games (K255) | draft |
+| [k255-vol-quant](concepts/k255-vol-quant-wave.md) | Radon–Nikodym + deep hedging (K255) | draft |
+| [k255-gambling-pm](concepts/k255-gambling-pm-wave.md) | EH SCOTUS + NFL objectionable bets (K255) | draft |
+| [k255-newsletter-macro](concepts/k255-newsletter-macro-wave.md) | Klement + Wu macro (K255) | draft |
+| [k255-ccc-models](concepts/k255-ccc-models-wave.md) | GPT-6 Astra + Muse Spark + open models (K255) | draft |
+| [k255-cybersec](concepts/k255-cybersec-wave.md) | AI-SOC III + CAPTCHA + xv6 (K255) | draft |
+| [k255-eval-github](concepts/k255-eval-github-wave.md) | Multi-Wiki Revenue Batch eval (K255) | draft |
+| [k255-seo-gbp](concepts/k255-seo-gbp-wave.md) | Sterling Sky dynamic SERP (K255) | draft |
+
 ### K254 ingest (2026-09-02)
 OSINT K254: 7 arXiv + 3 eval docx + 6 newsletters (1 DUPLICATE fold → last30days). Phase-0 **0 Integrate GO**. HarnessDev/HoH/CordisBench/SKILL.state/Agent Seer. VRP nuclear vol wiki-only. 3 URL-revenue eval batches. EH Robinhood vs Kalshi. Klement + Wu macro GW alert-only. Fable 5.1 routing awareness. Sterling Sky → SEO GBP. **No xsp/pm scp.**
 
