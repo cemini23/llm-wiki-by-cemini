@@ -5,6 +5,7 @@ tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-harness-evolution-wave.md
+  - entities/tools/arex-skill.md
 maturity: draft
 created: 2026-09-04
 updated: 2026-09-04
@@ -14,6 +15,7 @@ read_status: skimmed
 ## Relations
 
 - @concepts/k255-harness-evolution-wave.md
+- @entities/tools/arex-skill.md — K255 Phase-0 GO REFERENCE clone
 
 ## Raw Concept
 
@@ -25,7 +27,7 @@ read_status: skimmed
 
 ## Narrative
 
-K255 wiki ingest. No public SPDX clone at Phase-0.
+K255 wiki ingest. Phase-0 clone: @entities/tools/arex-skill.md (`VectorSpaceLab/AREX-Skill`, Apache-2.0 `[CONFIRMED]`, **GO REFERENCE**, `harness_verb: FILE`).
 
 ArXiv PDF — abstract skim at ingest; deep-read optional.
 

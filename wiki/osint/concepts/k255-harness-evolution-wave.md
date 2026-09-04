@@ -15,6 +15,7 @@ related:
   - sources/arxiv-2609.03871-bioinfoysis-2026-09-04.md
   - sources/arxiv-2609.03884-hook-updates-steer-harness-2026-09-04.md
   - sources/arxiv-2609.04128-environment-evolution-terminal-agents-2026-09-04.md
+  - entities/tools/arex-skill.md
 maturity: draft
 created: 2026-09-04
 updated: 2026-09-04
@@ -34,6 +35,7 @@ harness_verb: FILE
 - @sources/arxiv-2609.03871-bioinfoysis-2026-09-04.md
 - @sources/arxiv-2609.03884-hook-updates-steer-harness-2026-09-04.md
 - @sources/arxiv-2609.04128-environment-evolution-terminal-agents-2026-09-04.md
+- @entities/tools/arex-skill.md — Repo-To-Skill official clone; GO REFERENCE FILE
 
 ## Raw Concept
 
@@ -41,4 +43,4 @@ K255 cluster hub.
 
 ## Narrative
 
-K255 harness cluster — **SafeEvolve** (harness-policy co-evolution), **Repo-To-Skill** (GitHub→AI4AI skills), **Environment Evolution** (terminal agents), **Bilevel Coordinated Reflection**, **hook-update attack on harnesses** (2609.03884), **CAE simulation agent harness needs**, **CORAL** recommender harness. Pairs K281 AutoDesign / K313 StarHarness — **HITL** before harness self-write; **0 Integrate GO** until SPDX verified.
+K255 harness cluster — **SafeEvolve** (harness-policy co-evolution; paper-only, no verified public runtime — **FILE / EXTRACT-ONLY**), **Repo-To-Skill** (GitHub→AI4AI skills; Phase-0 @entities/tools/arex-skill.md **GO REFERENCE** FILE), **Environment Evolution** (terminal agents), **Bilevel Coordinated Reflection**, **hook-update attack on harnesses** (2609.03884; extract-only policy pattern, no attack templates), **CAE simulation agent harness needs**, **CORAL** recommender harness. Pairs K281 AutoDesign / K313 StarHarness — **HITL** before harness self-write; **0 Integrate GO**.

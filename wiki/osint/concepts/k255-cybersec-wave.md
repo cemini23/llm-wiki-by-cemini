@@ -12,6 +12,7 @@ related:
   - sources/arxiv-2609.03884-hook-updates-steer-harness-2026-09-04.md
   - sources/substack-rss-secpro-2026-08-21-ai-ready-soc.md
   - sources/substack-rss-secpro-2026-08-28-249-ai-ready-soc.md
+  - entities/tools/falconflank.md
 maturity: draft
 created: 2026-09-04
 updated: 2026-09-04
@@ -28,6 +29,7 @@ harness_verb: FILE
 - @sources/arxiv-2609.03884-hook-updates-steer-harness-2026-09-04.md
 - @sources/substack-rss-secpro-2026-08-21-ai-ready-soc.md
 - @sources/substack-rss-secpro-2026-08-28-249-ai-ready-soc.md
+- @entities/tools/falconflank.md — EXTRACT-ONLY Falcon priv-esc research; no PoC
 
 ## Raw Concept
 
@@ -35,4 +37,4 @@ K255 cluster hub.
 
 ## Narrative
 
-SecPro AI-ready SOC part III (fold with parts I–II); agentic CAPTCHA solvers; xv6 RISC-V separation logic; blockchain-anchored agent process evidence. Route cyber briefs; no PoC templates.
+SecPro AI-ready SOC part III (fold with parts I–II); agentic CAPTCHA solvers (arXiv:2609.02393 — paper-only, no product wire); xv6 RISC-V separation logic; blockchain-anchored agent process evidence; FalconFlank EXTRACT-ONLY (@entities/tools/falconflank.md). Route cyber briefs; no PoC templates.

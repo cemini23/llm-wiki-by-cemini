@@ -41,6 +41,8 @@ OSINT K255: 16 arXiv + 1 eval docx + 13 newsletters (SecPro part III LIKELY fold
 | [arex-skill](entities/tools/arex-skill.md) | AREX-Skill Apache-2.0 GO REFERENCE (K255) | draft |
 | [deep-cfr-2025](entities/tools/deep-cfr-2025.md) | Deep-CFR-2025 MIT CONDITIONAL-GO REFERENCE (K255) | draft |
 | [falconflank](entities/tools/falconflank.md) | FalconFlank MIT EXTRACT-ONLY; no PoC (K255) | draft |
+| [arxiv-2609.02749-repo-to-skill-2026-09-04](sources/arxiv-2609.02749-repo-to-skill-2026-09-04.md) | Repo-To-Skill; AREX-Skill GO REFERENCE | draft |
+| [arxiv-2609.03660-lugl-poker-games-2026-09-04](sources/arxiv-2609.03660-lugl-poker-games-2026-09-04.md) | LUGL poker; Deep-CFR-2025 CONDITIONAL-GO REFERENCE | draft |
 
 ### K254 ingest (2026-09-02)
 OSINT K254: 7 arXiv + 3 eval docx + 6 newsletters (1 DUPLICATE fold → last30days). Phase-0 **0 Integrate GO**. HarnessDev/HoH/CordisBench/SKILL.state/Agent Seer. VRP nuclear vol wiki-only. 3 URL-revenue eval batches. EH Robinhood vs Kalshi. Klement + Wu macro GW alert-only. Fable 5.1 routing awareness. Sterling Sky → SEO GBP. **No xsp/pm scp.**

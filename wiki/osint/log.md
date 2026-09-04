@@ -14,7 +14,7 @@
 - **FalconFlank** (`MSNightmare/FalconFlank`) — MIT `[CONFIRMED]`; 488★; last push 2026-09-03; ~7.3MB. **EXTRACT-ONLY** (NO-GO Integrate) FILE. CrowdStrike Falcon priv-esc research; no PoC; cybersec-wiki awareness only. Entity: `entities/tools/falconflank.md`.
 - **Paper-only FILE:** SafeEvolve 2609.02786 (no runtime repo); LUGL 2609.03660 (Deep-CFR covers CFR lane); hook-update 2609.03884 (no attack templates); CAPTCHA 2609.02393 (no product wire).
 - **Backlinks:** Repo-To-Skill source + k255-harness-evolution ↔ arex-skill; LUGL source + k255-poker-game-theory ↔ deep-cfr-2025; k255-eval-github + k255-cybersec ↔ falconflank.
-- **No commit** from this Grok lane — parent reviews.
+- **Committed** with parent lint-commit-push (entity pages + hub backlinks). **0 Integrate GO.**
 
 ## [2026-09-04] ingest | K255 wave
 
