@@ -1,7 +1,7 @@
 ---
-title: "Arxiv 2609.02393 Captchas In The Agentic Era Solvers That Learn F"
+title: "CAPTCHAs in the Agentic Era: Solvers That Learn from Every Encounter"
 type: source
-tags: [source, k255]
+tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-cybersec-wave.md
@@ -19,6 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.02393 |
 | File | `arxiv-2609.02393-captchas-in-the-agentic-era-solvers-that-learn-f.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.02393-captchas-in-the-agentic-era-solvers-that-learn-f.pdf` |
 | Retrieved | 2026-09-04 |
 | Dual-ID | **OSINT K255** |
 
@@ -30,4 +31,4 @@ ArXiv PDF — abstract skim at ingest; deep-read optional.
 
 ## Snippets
 
-> "Arxiv 2609.02393 Captchas In The Agentic Era Solvers That Learn F…" [Source: arxiv-2609.02393-captchas-in-the-agentic-era-solvers-that-learn-f.pdf]
+> "Vision-language models (VLMs) can solve visual CAPTCHAs without task-specific training, but the agents built on them approach every challenge from scratch. For such an agent, the hundredth instance of a familiar puzzle costs as much time and compute as the first. Specialized…" [Source: arxiv-2609.02393-captchas-in-the-agentic-era-solvers-that-learn-f.pdf]

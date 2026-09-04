@@ -1,7 +1,7 @@
 ---
-title: "Arxiv 2609.03871 Bioinfoysis Technical Report"
+title: "Bioinfoysis Technical Report"
 type: source
-tags: [source, k255]
+tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-harness-evolution-wave.md
@@ -19,6 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.03871 |
 | File | `arxiv-2609.03871-bioinfoysis-technical-report.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.03871-bioinfoysis-technical-report.pdf` |
 | Retrieved | 2026-09-04 |
 | Dual-ID | **OSINT K255** |
 
@@ -30,4 +31,4 @@ ArXiv PDF — abstract skim at ingest; deep-read optional.
 
 ## Snippets
 
-> "Arxiv 2609.03871 Bioinfoysis Technical Report…" [Source: arxiv-2609.03871-bioinfoysis-technical-report.pdf]
+> "Large language model agents have shown promise in bioinformatics, but most existing systems focus primarily on producing final answers, treating planning, tool use, and code execution as transient interactions. This design is poorly suited to long-horizon bioinformatics tasks,…" [Source: arxiv-2609.03871-bioinfoysis-technical-report.pdf]

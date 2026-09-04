@@ -1,7 +1,7 @@
 ---
-title: "Arxiv 2609.04017 A Black Box For Agentic Processes Blockchain Anc"
+title: "A Black Box for Agentic Processes: Blockchain-Anchored Evidence for AI Agent Communication, Human Oversight, and GRC Audits"
 type: source
-tags: [source, k255]
+tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-cybersec-wave.md
@@ -19,6 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.04017 |
 | File | `arxiv-2609.04017-a-black-box-for-agentic-processes-blockchain-anc.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.04017-a-black-box-for-agentic-processes-blockchain-anc.pdf` |
 | Retrieved | 2026-09-04 |
 | Dual-ID | **OSINT K255** |
 
@@ -30,4 +31,4 @@ ArXiv PDF — abstract skim at ingest; deep-read optional.
 
 ## Snippets
 
-> "Arxiv 2609.04017 A Black Box For Agentic Processes Blockchain Anc…" [Source: arxiv-2609.04017-a-black-box-for-agentic-processes-blockchain-anc.pdf]
+> "Autonomous AI agents increasingly communicate with other agents, invoke tools, exchange intermediate results, and request human approvals. These workflows create a new auditability problem: organizations must reconstruct what happened, when it happened, which agent or human was…" [Source: arxiv-2609.04017-a-black-box-for-agentic-processes-blockchain-anc.pdf]

@@ -1,7 +1,7 @@
 ---
-title: "Arxiv 2609.03884 A Blind Trust The Bloody Thrust When Attacker Co"
+title: "A Blind Trust, the Bloody Thrust: When Attacker-Controlled Hook Updates Steer AI Agent Harnesses towards Malicious Behaviors"
 type: source
-tags: [source, k255]
+tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-harness-evolution-wave.md
@@ -21,6 +21,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.03884 |
 | File | `arxiv-2609.03884-a-blind-trust-the-bloody-thrust-when-attacker-co.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.03884-a-blind-trust-the-bloody-thrust-when-attacker-co.pdf` |
 | Retrieved | 2026-09-04 |
 | Dual-ID | **OSINT K255** |
 
@@ -32,4 +33,4 @@ ArXiv PDF — abstract skim at ingest; deep-read optional.
 
 ## Snippets
 
-> "Arxiv 2609.03884 A Blind Trust The Bloody Thrust When Attacker Co…" [Source: arxiv-2609.03884-a-blind-trust-the-bloody-thrust-when-attacker-co.pdf]
+> "Modern AI agent harnesses expose lifecycle hooks that bind shell commands to runtime events such as session start, tool calls, and file edits. These commands run with host privileges yet ship as lifecycle-hook configuration and may fire at times the LLM never observes. We…" [Source: arxiv-2609.03884-a-blind-trust-the-bloody-thrust-when-attacker-co.pdf]

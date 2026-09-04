@@ -1,7 +1,7 @@
 ---
-title: "Arxiv 2609.04043 Extending Concurrent Separation Logic To The Har"
+title: "Extending concurrent separation logic to the hardware level to verify the xv6 OS kernel on RISC-V with AI agents"
 type: source
-tags: [source, k255]
+tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-cybersec-wave.md
@@ -19,6 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.04043 |
 | File | `arxiv-2609.04043-extending-concurrent-separation-logic-to-the-har.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.04043-extending-concurrent-separation-logic-to-the-har.pdf` |
 | Retrieved | 2026-09-04 |
 | Dual-ID | **OSINT K255** |
 
@@ -30,4 +31,4 @@ ArXiv PDF — abstract skim at ingest; deep-read optional.
 
 ## Snippets
 
-> "Arxiv 2609.04043 Extending Concurrent Separation Logic To The Har…" [Source: arxiv-2609.04043-extending-concurrent-separation-logic-to-the-har.pdf]
+> "MachCSL is a framework for verifying systems software, such as an OS kernel, on top of low-level semantics of a RISC-V computer, based on the Sail RISC-V semantics. The key idea behind MachCSL is to adapt concurrent separation logic, based on Iris, to reasoning about low-level…" [Source: arxiv-2609.04043-extending-concurrent-separation-logic-to-the-har.pdf]

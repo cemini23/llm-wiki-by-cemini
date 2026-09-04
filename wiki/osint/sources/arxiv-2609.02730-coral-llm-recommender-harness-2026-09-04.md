@@ -1,7 +1,7 @@
 ---
-title: "Arxiv 2609.02730 Coral An Llm Native Harness For Production Recom"
+title: "CORAL: An LLM-Native Harness for Production Recommender Systems"
 type: source
-tags: [source, k255]
+tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-harness-evolution-wave.md
@@ -19,6 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.02730 |
 | File | `arxiv-2609.02730-coral-an-llm-native-harness-for-production-recom.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.02730-coral-an-llm-native-harness-for-production-recom.pdf` |
 | Retrieved | 2026-09-04 |
 | Dual-ID | **OSINT K255** |
 
@@ -30,4 +31,4 @@ ArXiv PDF — abstract skim at ingest; deep-read optional.
 
 ## Snippets
 
-> "Arxiv 2609.02730 Coral An Llm Native Harness For Production Recom…" [Source: arxiv-2609.02730-coral-an-llm-native-harness-for-production-recom.pdf]
+> "Production recommender systems shape what billions of people see, and sustaining their performance requires continual optimization: as content, user behavior, and upstream models shift, the choices governing retrieval, ranking, and serving must be revisited. Traditionally, human…" [Source: arxiv-2609.02730-coral-an-llm-native-harness-for-production-recom.pdf]

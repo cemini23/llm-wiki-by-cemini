@@ -1,7 +1,7 @@
 ---
-title: "Arxiv 2609.02014 Insights On Time Consistent Deep Hedging Under E"
+title: "Insights on Time-consistent Deep Hedging under Elicitable Dynamic Risk Measures"
 type: source
-tags: [source, k255]
+tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-vol-quant-wave.md
@@ -19,6 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.02014 |
 | File | `arxiv-2609.02014-insights-on-time-consistent-deep-hedging-under-e.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.02014-insights-on-time-consistent-deep-hedging-under-e.pdf` |
 | Retrieved | 2026-09-04 |
 | Dual-ID | **OSINT K255** |
 
@@ -30,4 +31,4 @@ ArXiv PDF — abstract skim at ingest; deep-read optional.
 
 ## Snippets
 
-> "Arxiv 2609.02014 Insights On Time Consistent Deep Hedging Under E…" [Source: arxiv-2609.02014-insights-on-time-consistent-deep-hedging-under-e.pdf]
+> "We study deep hedging in the context of dynamics risk measures, where sequential decisions are time-consistent. Whereas the literature in such context mainly considers low-dimensional problems with simple environment dynamics, we tackle the high-dimensional problem of basket…" [Source: arxiv-2609.02014-insights-on-time-consistent-deep-hedging-under-e.pdf]

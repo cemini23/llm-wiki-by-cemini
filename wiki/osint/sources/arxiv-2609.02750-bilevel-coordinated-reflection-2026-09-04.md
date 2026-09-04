@@ -1,7 +1,7 @@
 ---
-title: "Arxiv 2609.02750 Bilevel Coordinated Reflection A Game Theoretic"
+title: "Bilevel Coordinated Reflection: A Game-Theoretic Approach to Multi-Agent LLM Systems"
 type: source
-tags: [source, k255]
+tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-harness-evolution-wave.md
@@ -19,6 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.02750 |
 | File | `arxiv-2609.02750-bilevel-coordinated-reflection-a-game-theoretic.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.02750-bilevel-coordinated-reflection-a-game-theoretic.pdf` |
 | Retrieved | 2026-09-04 |
 | Dual-ID | **OSINT K255** |
 
@@ -30,4 +31,4 @@ ArXiv PDF — abstract skim at ingest; deep-read optional.
 
 ## Snippets
 
-> "Arxiv 2609.02750 Bilevel Coordinated Reflection A Game Theoretic…" [Source: arxiv-2609.02750-bilevel-coordinated-reflection-a-game-theoretic.pdf]
+> "Multi-agent LLM systems commonly use an orchestrator to decompose a task for a team of workers and then improve through textual reflection. Despite strong empirical results, these systems lack a unified account of coordination, memory improvement, and the role of external…" [Source: arxiv-2609.02750-bilevel-coordinated-reflection-a-game-theoretic.pdf]

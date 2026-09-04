@@ -1,7 +1,7 @@
 ---
-title: "Arxiv 2609.01941 Neural Networks Learning The Radon Nikodym Deriv"
+title: "Neural Networks Learning the Radon--Nikodym Derivative: Empirical Option Pricing in Incomplete Markets"
 type: source
-tags: [source, k255]
+tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-vol-quant-wave.md
@@ -19,6 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.01941 |
 | File | `arxiv-2609.01941-neural-networks-learning-the-radon-nikodym-deriv.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.01941-neural-networks-learning-the-radon-nikodym-deriv.pdf` |
 | Retrieved | 2026-09-04 |
 | Dual-ID | **OSINT K255** |
 
@@ -30,4 +31,4 @@ ArXiv PDF — abstract skim at ingest; deep-read optional.
 
 ## Snippets
 
-> "Arxiv 2609.01941 Neural Networks Learning The Radon Nikodym Deriv…" [Source: arxiv-2609.01941-neural-networks-learning-the-radon-nikodym-deriv.pdf]
+> "In incomplete markets, no-arbitrage (NFLVR) guarantees the existence, not the uniqueness, of an equivalent local martingale measure (ELMM): unhedgeable risks (jumps, stochastic volatility) admit a whole family of equivalent measures, and asset dynamics alone cannot pin down the…" [Source: arxiv-2609.01941-neural-networks-learning-the-radon-nikodym-deriv.pdf]

@@ -1,7 +1,7 @@
 ---
-title: "Arxiv 2609.04128 Environment Evolution For Terminal Agents"
+title: "Environment Evolution for Terminal Agents"
 type: source
-tags: [source, k255]
+tags: [arxiv, source, k255]
 keywords: [k255]
 related:
   - concepts/k255-harness-evolution-wave.md
@@ -19,6 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.04128 |
 | File | `arxiv-2609.04128-environment-evolution-for-terminal-agents.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.04128-environment-evolution-for-terminal-agents.pdf` |
 | Retrieved | 2026-09-04 |
 | Dual-ID | **OSINT K255** |
 
@@ -30,4 +31,4 @@ ArXiv PDF — abstract skim at ingest; deep-read optional.
 
 ## Snippets
 
-> "Arxiv 2609.04128 Environment Evolution For Terminal Agents…" [Source: arxiv-2609.04128-environment-evolution-for-terminal-agents.pdf]
+> "Scaling interactive and verifiable environments is critical for training terminal agents. As frontier models become more capable, environments synthesized from scratch become less challenging and thus provide limited learning signals. Recent co-evolution methods iteratively…" [Source: arxiv-2609.04128-environment-evolution-for-terminal-agents.pdf]
