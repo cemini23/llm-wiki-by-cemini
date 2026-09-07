@@ -7,6 +7,50 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K256 ingest (2026-09-07)
+OSINT K256: 13 arXiv (11 inbox + 2 skipped-cap fetched) + 2 eval docx + 8 newsletters. Phase-0 REFERENCE: magnitude (Apache-2.0), RefactorPlatform (MIT), cve-mcp-server (Apache-2.0). trailofbits/skills CC-BY-SA-4.0 EXTRACT-ONLY. Grok Bot FILE bump. Kalshi lifetime ban awareness. No xsp/pm scp. 0 Integrate GO.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [magnitude](entities/tools/magnitude.md) | Magnitude Apache-2.0 GO REFERENCE (K256) | draft |
+| [refactor-platform](entities/tools/refactor-platform.md) | RefactorPlatform MIT GO REFERENCE (K256) | draft |
+| [trailofbits-skills](entities/tools/trailofbits-skills.md) | trailofbits/skills CC-BY-SA-4.0 EXTRACT-ONLY (K256) | draft |
+| [cve-mcp-server](entities/tools/cve-mcp-server.md) | cve-mcp-server Apache-2.0 GO REFERENCE (K256) | draft |
+| [outlier-tungsten-furnace](sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md) | Outlier Weekly tungsten APT choke LIVE | draft |
+| [k256-harness-evolution-wave](concepts/k256-harness-evolution-wave.md) | K256 Harness Evolution Wave (Sep 2026) | draft |
+| [k256-abliterated-lab-wave](concepts/k256-abliterated-lab-wave.md) | K256 Abliterated Lab Wave (Sep 2026) | draft |
+| [k256-cybersec-wave](concepts/k256-cybersec-wave.md) | K256 Cybersec Wave (Sep 2026) | draft |
+| [k256-vol-quant-wave](concepts/k256-vol-quant-wave.md) | K256 Vol Quant Wave (Sep 2026) | draft |
+| [k256-atto-collab-wave](concepts/k256-atto-collab-wave.md) | K256 Atto Collab Wave (Sep 2026) | draft |
+| [k256-ood-stub-wave](concepts/k256-ood-stub-wave.md) | K256 OOD Stub Wave (Sep 2026) | draft |
+| [k256-ccc-models-wave](concepts/k256-ccc-models-wave.md) | K256 CCC Models Wave (Sep 2026) | draft |
+| [k256-newsletter-macro-wave](concepts/k256-newsletter-macro-wave.md) | K256 Newsletter Macro Wave (Sep 2026) | draft |
+| [k256-gambling-pm-wave](concepts/k256-gambling-pm-wave.md) | K256 Gambling PM Wave (Sep 2026) | draft |
+| [k256-eval-github-wave](concepts/k256-eval-github-wave.md) | K256 Eval GitHub Wave (Sep 2026) | draft |
+| [eval-multi-wiki-revenue](sources/eval-multi-wiki-revenue-2026-09-07.md) | Multi Wiki Revenue Opportunity Evaluation | draft |
+| [eval-url-revenue-analysis](sources/eval-url-revenue-analysis-2026-09-07.md) | URL Revenue Opportunity Analysis | draft |
+| [arxiv-2609.03693-alcatraz-jailbreak-defense](sources/arxiv-2609.03693-alcatraz-jailbreak-defense-2026-09-07.md) | AlcaTRAz - Anchored Tree-Rule Defense Against Jailbreaks | draft |
+| [arxiv-2609.03887-beyond-shallow-alignment](sources/arxiv-2609.03887-beyond-shallow-alignment-2026-09-07.md) | Beyond Shallow Alignment: How Post-Training Methods Determine Refusal  | draft |
+| [arxiv-2609.03960-fimi-banking](sources/arxiv-2609.03960-fimi-banking-2026-09-07.md) | FiMI Banking: A Sovereign Model for Indian Retail Banking | draft |
+| [arxiv-2609.04542-matched-starts-divergent-objects](sources/arxiv-2609.04542-matched-starts-divergent-objects-2026-09-07.md) | Matched Starts, Divergent Objects: How Human-AI Collaboration Forms Wh | draft |
+| [arxiv-2609.04721-locating-steering-refusal](sources/arxiv-2609.04721-locating-steering-refusal-2026-09-07.md) | Locating and Steering Refusal Beyond Attention | draft |
+| [arxiv-2609.04871-autolr-launch-review](sources/arxiv-2609.04871-autolr-launch-review-2026-09-07.md) | AutoLR: Automating the Path from Research to Launch Review in Industri | draft |
+| [arxiv-2609.04894-world-acting-systems](sources/arxiv-2609.04894-world-acting-systems-2026-09-07.md) | From Language Models to World-Acting Systems: Progress and Limits of A | draft |
+| [arxiv-2609.04898-refactorplatform](sources/arxiv-2609.04898-refactorplatform-2026-09-07.md) | RefactorPlatform: An Open-Source Harness for Controlled Evaluation of  | draft |
+| [arxiv-2609.05047-gatheral-conjecture](sources/arxiv-2609.05047-gatheral-conjecture-2026-09-07.md) | Gatheral's Conjecture Revisited | draft |
+| [arxiv-2609.05117-tier-threat-implicitness](sources/arxiv-2609.05117-tier-threat-implicitness-2026-09-07.md) | TIER: Threat Implicitness Benchmark for Evaluating LLM Safety Behavior | draft |
+| [arxiv-2609.05171-weagent-mmgenedit](sources/arxiv-2609.05171-weagent-mmgenedit-2026-09-07.md) | WeAgent-MMGenEdit: A Full-Stack Recipe for Multimodal Agentic Image Ge | draft |
+| [arxiv-2609.05241-uncensored-open-weight](sources/arxiv-2609.05241-uncensored-open-weight-2026-09-07.md) | Uncensored Open-weight Models: Redistribution as the Persistence Layer | draft |
+| [arxiv-2609.05335-cve-patch-history-detector](sources/arxiv-2609.05335-cve-patch-history-detector-2026-09-07.md) | The History Is the Detector: Executing CVE Patch History, End-to-End | draft |
+| [newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw](sources/newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw-2026-09-07.md) | Latent Space — OpenClaw Power, MacBook Simplicity: Five Days With Grok | draft |
+| [substack-rss-capital-flows-2026-09-04-complacency-bonds](sources/substack-rss-capital-flows-2026-09-04-complacency-bonds-2026-09-07.md) | Capital Flows — Complacency Before The Cliff (Bonds) | draft |
+| [substack-rss-capital-flows-2026-09-07-monetary-escalation](sources/substack-rss-capital-flows-2026-09-07-monetary-escalation-2026-09-07.md) | Capital Flows — The Great Monetary Escalation | draft |
+| [substack-rss-klement-2026-09-07-organic-farming](sources/substack-rss-klement-2026-09-07-organic-farming-2026-09-07.md) | Klement on Investing — Organic farming isn’t that much of a boon | draft |
+| [substack-rss-wublock-2026-09-05-kalshi-lifetime-ban](sources/substack-rss-wublock-2026-09-05-kalshi-lifetime-ban-2026-09-07.md) | Wu Blockchain — Weekly Project Updates: Kalshi Issues Lifetime Trading | draft |
+| [substack-rss-wublock-2026-09-06-asia-top10](sources/substack-rss-wublock-2026-09-06-asia-top10-2026-09-07.md) | Wu Blockchain — Asia's weekly TOP10 crypto news: South Korea Advances  | draft |
+| [substack-rss-wublock-2026-09-07-august-vc](sources/substack-rss-wublock-2026-09-07-august-vc-2026-09-07.md) | Wu Blockchain — August VC Monthly Report, Funding Down Nearly 70% MoM; | draft |
+| [substack-rss-wublock-2026-09-07-weekly-outlook](sources/substack-rss-wublock-2026-09-07-weekly-outlook-2026-09-07.md) | Wu Blockchain — WuBlockchain Weekly Outlook | U.S. Inflation and Centr | draft |
+
 ### Desk pack ingest (2026-09-04)
 Operator theses + production audits. 13 NEW inbox files (FanDuel CSV skipped as unsupported). **No xsp/pm scp.** Atto / GuruWatcher briefs only. WCLC week is not a BioNTech vaccine print. CRML is a Greenland option, not a built mine. Tungsten forensic reconfirms no Gentung DPA. Tether gold is three legal tiers.
 

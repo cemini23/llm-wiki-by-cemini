@@ -6,9 +6,10 @@ keywords: [tungsten, APT, Sangdong, Gentung, GTP, MOFCOM, Elmet]
 related:
   - concepts/western-tungsten-supply-thesis.md
   - entities/tickers/alm.md
+  - sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md
 maturity: draft
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-07
 read_status: read
 ---
 
@@ -16,6 +17,7 @@ read_status: read
 
 - @concepts/western-tungsten-supply-thesis.md — operator ALM frame
 - @entities/tickers/alm.md — NASDAQ:ALM
+- @sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md
 
 ## Raw Concept
 

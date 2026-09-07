@@ -9,9 +9,10 @@ related:
   - sources/x-post-mattyp-grok-bot-templates-2026-09-02.md
   - sources/x-post-irabukht-grok-bot-marketing-2026-09-02.md
   - concepts/practical-loop-engineering.md
+  - sources/newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw-2026-09-07.md
 maturity: draft
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-07
 ---
 
 ## Relations
@@ -21,6 +22,7 @@ updated: 2026-09-02
 - @concepts/practical-loop-engineering.md — loop/harness discipline; Grok Bot is execution lane not wiki author
 - @seo-wiki/concepts/generative-engine-optimization.md — GEO Audit Collector bot aligns here
 - @seo-wiki/concepts/x-account-voice-and-format.md — X Account Eval / X Desk scoring contract
+- @sources/newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw-2026-09-07.md
 
 ## Raw Concept
 

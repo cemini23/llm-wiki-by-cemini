@@ -12,15 +12,21 @@ related:
   - entities/tools/agent-security-lab.md
   - sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md
   - sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
+  - sources/eval-url-revenue-analysis-2026-09-07.md
+  - concepts/k256-eval-github-wave.md
+  - concepts/k256-cybersec-wave.md
 maturity: draft
 created: 2026-07-29
-updated: 2026-08-11
+updated: 2026-09-07
 harness_verb: FILE
 ---
 
 ## Relations
 
 - @sources/newsletter-rss-latent-space-2026-08-11-muse-glimmer.md
+- @sources/eval-url-revenue-analysis-2026-09-07.md
+- @concepts/k256-eval-github-wave.md
+- @concepts/k256-cybersec-wave.md
 
 - @sources/arxiv-2607.26819-coding-agents-ai-contribution-rules-2026-07-30.md — OSS AI contribution rules
 

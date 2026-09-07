@@ -30,6 +30,14 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-07 — K256 ingest)
+
+- **K256 ingest** — 24 inbox (13 arXiv incl. 2 skipped-cap fetched + 2 eval + 9 newsletters). 24 source pages + 10 concept hubs + 4 new entities. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k256_phase0.sh`: magnitude + RefactorPlatform + cve-mcp-server REFERENCE. trailofbits/skills EXTRACT-ONLY. **0 Integrate GO.**
+- **Routing** — CCC AutoLR/RefactorPlatform/world-acting + Grok Bot FILE. Cyber AlcaTRAz/TIER/uncensored/CVE. GW CF + Wu outlook alert-only. Gambling Kalshi lifetime ban. Atto matched-starts. Outlier tungsten LIVE bump. **No LIVE Discord.**
+- **Briefs** — `briefs/2026-09-07_k256-*` → CCC/cyber/GW/gambling/atto/SEO/image-gen siblings.
+- **Open:** Atto P0 kit fixes; GW High-finding regressions; cursor-route 0.1.14 OR ranker; Grok Bot §9–§16 paste; HL funding / Kalshi LP / equity-signal / cross-venue backtests overdue.
+
 ## Current state (2026-09-04 — desk pack ingest)
 
 - **Desk pack** — BNTX cancer thesis (Gemini tape rejected; Fable PASS-WITH-FIXES). CRML Tanbreez promotional tape. Tungsten forensic reconfirms no Gentung DPA; APT plant is the SPOF. Tether gold three-tier `[TENTATIVE]`.

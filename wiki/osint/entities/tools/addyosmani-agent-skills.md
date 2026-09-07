@@ -12,9 +12,11 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - concepts/cemini-license-posture.md
   - sources/arxiv-2608.03836-resume-contract.md
+  - sources/eval-url-revenue-analysis-2026-09-07.md
+  - concepts/k256-eval-github-wave.md
 maturity: draft
 created: 2026-08-05
-updated: 2026-08-17
+updated: 2026-09-07
 harness_verb: FILE
 ---
 
@@ -28,6 +30,8 @@ harness_verb: FILE
 - @concepts/wiki-tooling-evaluation.md
 - @concepts/cemini-license-posture.md
 - @sources/arxiv-2608.03836-resume-contract.md
+- @sources/eval-url-revenue-analysis-2026-09-07.md
+- @concepts/k256-eval-github-wave.md
 
 ## Narrative
 

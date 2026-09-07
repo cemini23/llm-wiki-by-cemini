@@ -9,9 +9,10 @@ related:
   - sources/newsletter-rss-latent-space-2026-09-03-gpt6-astra-2026-09-04.md
   - sources/newsletter-rss-latent-space-2026-09-04-gpt6-astra-launch-2026-09-04.md
   - sources/newsletter-rss-pragmatic-engineer-2026-09-03-pulse-open-ai-models-2026-09-04.md
+  - concepts/k256-ccc-models-wave.md
 maturity: draft
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-07
 harness_verb: FILE
 ---
 
@@ -22,6 +23,7 @@ harness_verb: FILE
 - @sources/newsletter-rss-latent-space-2026-09-03-gpt6-astra-2026-09-04.md
 - @sources/newsletter-rss-latent-space-2026-09-04-gpt6-astra-launch-2026-09-04.md
 - @sources/newsletter-rss-pragmatic-engineer-2026-09-03-pulse-open-ai-models-2026-09-04.md
+- @concepts/k256-ccc-models-wave.md
 
 ## Raw Concept
 

@@ -7,9 +7,10 @@ related:
   - entities/tickers/alm.md
   - sources/alm-desk-2026-08-20.md
   - sources/defense-tungsten-supply-chain-audit-2026-09.md
+  - sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md
 maturity: draft
 created: 2026-08-20
-updated: 2026-09-04
+updated: 2026-09-07
 ---
 
 ## Relations
@@ -18,6 +19,7 @@ updated: 2026-09-04
 - @sources/alm-desk-2026-08-20.md — 20 Aug desk pull
 - @sources/defense-tungsten-supply-chain-audit-2026-09.md — Sep forensic: APT plant is the SPOF; no Gentung DPA
 - Desktop memo: `/Users/claudiobarone/Desktop/ALM_Almonty_Tungsten_Thesis_2026-08-20.md`
+- @sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md
 
 ## Raw Concept
 

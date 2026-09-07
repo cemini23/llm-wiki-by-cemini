@@ -16,9 +16,12 @@ related:
   - sources/arxiv-2609.03884-hook-updates-steer-harness-2026-09-04.md
   - sources/arxiv-2609.04128-environment-evolution-terminal-agents-2026-09-04.md
   - entities/tools/arex-skill.md
+  - concepts/k256-harness-evolution-wave.md
+  - concepts/k256-atto-collab-wave.md
+  - concepts/k256-ood-stub-wave.md
 maturity: draft
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-07
 harness_verb: FILE
 ---
 
@@ -36,6 +39,9 @@ harness_verb: FILE
 - @sources/arxiv-2609.03884-hook-updates-steer-harness-2026-09-04.md
 - @sources/arxiv-2609.04128-environment-evolution-terminal-agents-2026-09-04.md
 - @entities/tools/arex-skill.md — Repo-To-Skill official clone; GO REFERENCE FILE
+- @concepts/k256-harness-evolution-wave.md
+- @concepts/k256-atto-collab-wave.md
+- @concepts/k256-ood-stub-wave.md
 
 ## Raw Concept
 

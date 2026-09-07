@@ -7,9 +7,10 @@ related:
   - concepts/k254-vol-quant-wave.md
   - sources/arxiv-2609.01941-radon-nikodym-option-pricing-2026-09-04.md
   - sources/arxiv-2609.02014-time-consistent-deep-hedging-2026-09-04.md
+  - concepts/k256-vol-quant-wave.md
 maturity: draft
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-07
 harness_verb: FILE
 ---
 
@@ -18,6 +19,7 @@ harness_verb: FILE
 - @concepts/k254-vol-quant-wave.md
 - @sources/arxiv-2609.01941-radon-nikodym-option-pricing-2026-09-04.md
 - @sources/arxiv-2609.02014-time-consistent-deep-hedging-2026-09-04.md
+- @concepts/k256-vol-quant-wave.md
 
 ## Raw Concept
 

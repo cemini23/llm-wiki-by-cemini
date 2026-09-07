@@ -13,9 +13,11 @@ related:
   - sources/substack-rss-secpro-2026-08-21-ai-ready-soc.md
   - sources/substack-rss-secpro-2026-08-28-249-ai-ready-soc.md
   - entities/tools/falconflank.md
+  - concepts/k256-cybersec-wave.md
+  - concepts/k256-abliterated-lab-wave.md
 maturity: draft
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-07
 harness_verb: FILE
 ---
 
@@ -30,6 +32,8 @@ harness_verb: FILE
 - @sources/substack-rss-secpro-2026-08-21-ai-ready-soc.md
 - @sources/substack-rss-secpro-2026-08-28-249-ai-ready-soc.md
 - @entities/tools/falconflank.md — EXTRACT-ONLY Falcon priv-esc research; no PoC
+- @concepts/k256-cybersec-wave.md
+- @concepts/k256-abliterated-lab-wave.md
 
 ## Raw Concept
 

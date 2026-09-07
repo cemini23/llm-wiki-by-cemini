@@ -1,3 +1,26 @@
+## [2026-09-07] lint | wiki gap detect Tier 1
+
+- Ran `bash scripts/run_wiki_gap_detect.sh`. Report `.local/reports/wiki-gap-detect-2026-09-07.txt`. Cadence last_run 2026-09-07 / next_due 2026-09-14. Type A cited-unread stubs remain (WC Gemini DRs, CXW/Otay, eval plans) — no auto Exa.
+
+## [2026-09-07] ingest | K256 wave
+
+- **Inbox:** 24 files (13 arXiv incl. 2 skipped-cap fetched + 2 eval docx + 9 newsletters). Preingest: all NEW.
+- **Sources:** AlcaTRAz; Beyond Shallow Alignment; FiMI OOD; Matched Starts; AutoLR; world-acting systems; RefactorPlatform; Gatheral; TIER; WeAgent-MMGenEdit; uncensored redistribution; BUGSTONE-E2E CVE history; Latent Space Grok Bot vs OpenClaw; Capital Flows x2; Klement organic; Wu Kalshi ban / Asia TOP10 / VC / outlook; Outlier tungsten LIVE; 2 eval docx.
+- **Concepts:** 10 k256-* hubs. Bumps: k255 priors, grok-bot, grok-bot-operator-patterns, openai-codex-security, addyosmani-agent-skills, western-tungsten, ALM.
+- **Phase-0:** `adopt_k256_phase0.sh` — magnitude Apache-2.0 (~55MB), refactor-platform MIT (~18MB), cve-mcp-server Apache-2.0 (~12MB), trailofbits-skills CC-BY-SA-4.0 EXTRACT-ONLY (~14MB). **0 Integrate GO.**
+- **Routing:** CCC harness + Grok Bot FILE. Cyber jailbreak/refusal/uncensored/CVE. GW Capital Flows + Wu outlook alert-only. Gambling Kalshi lifetime ban **no pm scp**. Atto matched-starts method, no Barone PII. Image-gen WeAgent brief. SEO open-seo + tungsten notes. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-07_k256-*` + sibling copies. **No LIVE Discord.**
+- **Archive:** inbox → egress-fi.
+
+## [2026-09-07] phase-0 | K256 Grok audits
+
+- **magnitude** (`magnitudedev/magnitude`) — Apache-2.0 `[CONFIRMED]` gh api; 3934★; push 2026-09-07; ~55MB. **GO REFERENCE** FILE. Entity: `entities/tools/magnitude.md`.
+- **RefactorPlatform** (`PiSchool/refactor-platform`) — MIT `[CONFIRMED]`; 2★; push 2026-09-07; ~18MB. **GO REFERENCE** FILE. Entity: `entities/tools/refactor-platform.md`.
+- **cve-mcp-server** (`mukul975/cve-mcp-server`) — Apache-2.0 `[CONFIRMED]`; 1459★; ~12MB. **GO REFERENCE** FILE. Ask before MCP install. Entity: `entities/tools/cve-mcp-server.md`.
+- **trailofbits/skills** — CC-BY-SA-4.0 `[CONFIRMED]`; 6998★; ~14MB. **EXTRACT-ONLY** (NO-GO Integrate). Entity: `entities/tools/trailofbits-skills.md`.
+- **Skip:** Beyond-Shallow-Alignment null SPDX; awesome-mcp-servers ~215MB catalog; miles GRPO; virtual.attack no PoC; ponytail/addyosmani/codex-security already FILE.
+- **Committed** with parent lint-commit-push. **0 Integrate GO.**
+
 ## [2026-09-04] ingest | desk pack (BNTX / CRML / tungsten / Atto / GW / Tether)
 
 - **Inbox:** 14 files. Preingest: 13 NEW, 1 SKIP (FanDuel NFL CSV → CeminiDFS brief only).

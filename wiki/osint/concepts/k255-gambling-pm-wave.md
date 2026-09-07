@@ -8,9 +8,10 @@ related:
   - sources/substack-rss-event-horizon-2026-09-03-nj-kalshi-scotus-2026-09-04.md
   - sources/substack-rss-event-horizon-2026-09-04-pm-scotus-dont-bet-2026-09-04.md
   - sources/substack-rss-event-horizon-2026-09-04-nfl-objectionable-bets-2026-09-04.md
+  - concepts/k256-gambling-pm-wave.md
 maturity: draft
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-07
 harness_verb: FILE
 ---
 
@@ -20,6 +21,7 @@ harness_verb: FILE
 - @sources/substack-rss-event-horizon-2026-09-03-nj-kalshi-scotus-2026-09-04.md
 - @sources/substack-rss-event-horizon-2026-09-04-pm-scotus-dont-bet-2026-09-04.md
 - @sources/substack-rss-event-horizon-2026-09-04-nfl-objectionable-bets-2026-09-04.md
+- @concepts/k256-gambling-pm-wave.md
 
 ## Raw Concept
 

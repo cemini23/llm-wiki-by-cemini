@@ -1,0 +1,104 @@
+{
+  "today": "2026-09-07",
+  "extra_related": {
+    "arxiv-2609.03887-beyond-shallow-alignment": [],
+    "arxiv-2609.04898-refactorplatform": ["entities/tools/refactor-platform.md"],
+    "arxiv-2609.05335-cve-patch-history-detector": ["entities/tools/cve-mcp-server.md"],
+    "newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw": [
+      "entities/tools/grok-bot.md",
+      "concepts/grok-bot-operator-patterns.md"
+    ],
+    "eval-multi-wiki-revenue": ["entities/tools/magnitude.md"],
+    "eval-url-revenue-analysis": [
+      "entities/tools/trailofbits-skills.md",
+      "entities/tools/cve-mcp-server.md",
+      "entities/tools/openai-codex-security.md",
+      "entities/tools/addyosmani-agent-skills.md"
+    ]
+  },
+  "hub_entities": {
+    "k256-harness-evolution-wave": ["entities/tools/refactor-platform.md"],
+    "k256-abliterated-lab-wave": ["entities/tools/magnitude.md"],
+    "k256-cybersec-wave": ["entities/tools/cve-mcp-server.md", "entities/tools/openai-codex-security.md"],
+    "k256-ccc-models-wave": ["entities/tools/grok-bot.md"],
+    "k256-eval-github-wave": [
+      "entities/tools/magnitude.md",
+      "entities/tools/trailofbits-skills.md",
+      "entities/tools/refactor-platform.md",
+      "entities/tools/cve-mcp-server.md",
+      "entities/tools/openai-codex-security.md"
+    ]
+  },
+  "hubs": {
+    "k256-harness-evolution-wave": {
+      "title": "K256 Harness Evolution Wave (Sep 2026)",
+      "tags": "agents, harness, k256, ccc",
+      "keywords": "AutoLR, RefactorPlatform, world-acting-systems, justified-delegation",
+      "prior": "k255-harness-evolution-wave",
+      "narrative": "K256 harness cluster: AutoLR (2609.04871) industrial research-to-launch review with multi-expert council and deterministic trial selector (HITL; do not swap /route). RefactorPlatform (2609.04898) MIT [CONFIRMED] PiSchool/refactor-platform GO REFERENCE FILE. World-Acting Systems (2609.04894) review: MCP/A2A improve interoperability but not trustworthy delegation. Pairs K255 SafeEvolve / K254 HarnessDev. 0 Integrate GO."
+    },
+    "k256-abliterated-lab-wave": {
+      "title": "K256 Abliterated Lab Wave (Sep 2026)",
+      "tags": "abliteration, refusal, k256, cybersec",
+      "keywords": "refusal-circuits, TIER, uncensored-redistribution, SSM-steering",
+      "prior": "k255-cybersec-wave",
+      "narrative": "Beyond Shallow Alignment (2609.03887): post-training method reshapes refusal circuits; no method hits robustness + capability + editable safety at once. Repo hoangcuongnguyen2001/Beyond-Shallow-Alignment has null SPDX so no clone. TIER (2609.05117) and Locating/Steering Refusal (2609.04721) fetched after overnight cap. Uncensored open-weight redistribution (2609.05241): 3471 originals; 25 percent of 1643 GitHub apps classified malicious. Cybersec lab awareness; authorized targets only; no uncensored-model install."
+    },
+    "k256-cybersec-wave": {
+      "title": "K256 Cybersec Wave (Sep 2026)",
+      "tags": "cybersec, jailbreak, cve, k256",
+      "keywords": "AlcaTRAz, BUGSTONE-E2E, CVE-history, prompt-defense",
+      "prior": "k255-cybersec-wave",
+      "narrative": "AlcaTRAz (2609.03693) prompt-level jailbreak defense (tree-rule perturbations; black-box; defense-in-depth). BUGSTONE-E2E (2609.05335) turns CVE patch history into executable detectors; paper-only this session. Companion eval: mukul975/cve-mcp-server Apache-2.0 GO REFERENCE FILE. openai/codex-security already FILE (bump). No PoC templates."
+    },
+    "k256-vol-quant-wave": {
+      "title": "K256 Vol Quant Wave (Sep 2026)",
+      "tags": "vol, quant, k256, options",
+      "keywords": "Gatheral, Heston, local-volatility, convex-order",
+      "prior": "k255-vol-quant-wave",
+      "narrative": "Gatheral's Conjecture Revisited (2609.05047): Heston rho=-1 vs local-vol integrated-variance convex-order counterexample. Wiki-only; no xsp scp."
+    },
+    "k256-atto-collab-wave": {
+      "title": "K256 Atto Collab Wave (Sep 2026)",
+      "tags": "atto, human-ai, k256, genealogy",
+      "keywords": "matched-starts, research-objects, continuity-labour",
+      "prior": "k255-harness-evolution-wave",
+      "narrative": "Matched Starts, Divergent Objects (2609.04542): same frozen problem plus prompt yields different research objects (continuity labour vs project-state). Steal: branch-isolated trajectories and HITL object-stabilization for Atto FIND. No Barone PII."
+    },
+    "k256-ood-stub-wave": {
+      "title": "K256 OOD Stub Wave (Sep 2026)",
+      "tags": "ood, k256, image-gen, banking",
+      "keywords": "FiMI-banking, WeAgent-MMGenEdit",
+      "prior": "k255-harness-evolution-wave",
+      "narrative": "FiMI Banking (2609.03960) NPCI Indian retail-banking agents: OOD wiki stub. WeAgent-MMGenEdit (2609.05171) multimodal agentic image gen/edit: route image-gen-wiki brief; no local image-gen wire."
+    },
+    "k256-ccc-models-wave": {
+      "title": "K256 CCC Models Wave (Sep 2026)",
+      "tags": "ccc, grok-bot, k256, routing",
+      "keywords": "Grok-Bot, OpenClaw, managed-agent-computer",
+      "prior": "k255-ccc-models-wave",
+      "narrative": "Latent Space: Grok Bot as managed agent computer vs OpenClaw user-owned gateway. Bots share one computer (not a security boundary). FILE only; bump grok-bot. Do not swap /route."
+    },
+    "k256-newsletter-macro-wave": {
+      "title": "K256 Newsletter Macro Wave (Sep 2026)",
+      "tags": "macro, newsletter, k256, guruwatcher",
+      "keywords": "Capital-Flows, Klement, Wu-Blockchain, MOVE, CPI",
+      "prior": "k255-newsletter-macro-wave",
+      "narrative": "Capital Flows: low-vol bond complacency plus sovereign-risk great monetary escalation. Wu weekly outlook: ECB plus PPI plus CPI plus ORCL/ADBE. Asia TOP10 plus August VC (-70 percent MoM). Klement organic farming is wiki-only. CF plus Wu outlook to GuruWatcher alert-only; no named levels so no auto-arm."
+    },
+    "k256-gambling-pm-wave": {
+      "title": "K256 Gambling PM Wave (Sep 2026)",
+      "tags": "gambling, prediction-markets, k256",
+      "keywords": "Kalshi, lifetime-ban, Polymarket-perps, Santos",
+      "prior": "k255-gambling-pm-wave",
+      "narrative": "Wu 5 Sep: Kalshi first lifetime trading ban (George Santos, SOTU-attendance manipulation). Polymarket launches perps up to 20x plus 1789 Capital add-on toward about 21B. Hyperliquid xStocks RFQ. Awareness only; no pm scp. No LIVE Discord."
+    },
+    "k256-eval-github-wave": {
+      "title": "K256 Eval GitHub Wave (Sep 2026)",
+      "tags": "eval, github, k256, revenue",
+      "keywords": "magnitude, trailofbits-skills, refactor-platform, SPDX",
+      "prior": "k255-eval-github-wave",
+      "narrative": "Two eval docx. Never trust docx SPDX. gh api 2026-09-07 GO REFERENCE: magnitudedev/magnitude Apache-2.0; PiSchool/refactor-platform MIT; mukul975/cve-mcp-server Apache-2.0. EXTRACT-ONLY: trailofbits/skills CC-BY-SA-4.0 (no federation import). Already FILE: addyosmani/agent-skills, openai/codex-security, ponytail (K247). No clone: awesome-mcp-servers (~215MB), miles (GRPO), Beyond-Shallow-Alignment (null SPDX), virtual.attack (no PoC). 0 Integrate GO."
+    }
+  }
+}

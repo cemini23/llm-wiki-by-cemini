@@ -7,9 +7,10 @@ related:
   - concepts/k254-eval-github-wave.md
   - sources/eval-multi-wiki-revenue-batch-plan-2026-09-04-2026-09-04.md
   - entities/tools/falconflank.md
+  - concepts/k256-eval-github-wave.md
 maturity: draft
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-07
 harness_verb: FILE
 ---
 
@@ -18,6 +19,7 @@ harness_verb: FILE
 - @concepts/k254-eval-github-wave.md
 - @sources/eval-multi-wiki-revenue-batch-plan-2026-09-04-2026-09-04.md
 - @entities/tools/falconflank.md — FalconFlank EXTRACT-ONLY (NO-GO Integrate)
+- @concepts/k256-eval-github-wave.md
 
 ## Raw Concept
 

@@ -14,9 +14,11 @@ related:
   - concepts/grok-bot-operator-patterns.md
   - concepts/practical-loop-engineering.md
   - entities/people/antpalkin-cvxv666.md
+  - sources/newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw-2026-09-07.md
+  - concepts/k256-ccc-models-wave.md
 maturity: validated
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-07
 harness_verb: FILE
 wire_note: Operator charters in briefs/2026-09-01_grok-bot-charters.md — not prod wire
 ---
@@ -30,6 +32,8 @@ wire_note: Operator charters in briefs/2026-09-01_grok-bot-charters.md — not p
 - @concepts/grok-bot-operator-patterns.md — Cemini operator synthesis
 - @concepts/practical-loop-engineering.md — execution lane; not wiki author
 - @entities/tools/cursor-route.md — public CLI; federation `/route` stays separate
+- @sources/newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw-2026-09-07.md
+- @concepts/k256-ccc-models-wave.md
 
 ## Raw Concept
 

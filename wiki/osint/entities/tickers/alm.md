@@ -7,9 +7,10 @@ related:
   - sources/alm-desk-2026-08-20.md
   - concepts/western-tungsten-supply-thesis.md
   - sources/defense-tungsten-supply-chain-audit-2026-09.md
+  - sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md
 maturity: draft
 created: 2026-08-20
-updated: 2026-09-04
+updated: 2026-09-07
 ---
 
 ## Relations
@@ -19,6 +20,7 @@ updated: 2026-09-04
 - @sources/defense-tungsten-supply-chain-audit-2026-09.md — Sep forensic; reconfirms no Gentung DPA; do not import US1.2B convert sentence
 - Desktop (not wiki): `/Users/claudiobarone/Desktop/ALM_Almonty_Tungsten_Thesis_2026-08-20.md`
 - Jul 22 canvases: `alm-full-deep-dive`, `alm-deeper-dive`, `alm-pass-144-offtake-si`
+- @sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md
 
 ## Raw Concept
 

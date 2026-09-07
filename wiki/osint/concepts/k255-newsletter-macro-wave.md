@@ -9,9 +9,10 @@ related:
   - sources/substack-rss-klement-2026-09-04-its-not-me-its-you-2026-09-04.md
   - sources/substack-rss-wublock-2026-09-03-crypto-mining-august-2026-09-04.md
   - sources/substack-rss-wublock-2026-09-04-strategy-bitcoin-buys-2026-09-04.md
+  - concepts/k256-newsletter-macro-wave.md
 maturity: draft
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-07
 harness_verb: FILE
 ---
 
@@ -22,6 +23,7 @@ harness_verb: FILE
 - @sources/substack-rss-klement-2026-09-04-its-not-me-its-you-2026-09-04.md
 - @sources/substack-rss-wublock-2026-09-03-crypto-mining-august-2026-09-04.md
 - @sources/substack-rss-wublock-2026-09-04-strategy-bitcoin-buys-2026-09-04.md
+- @concepts/k256-newsletter-macro-wave.md
 
 ## Raw Concept
 
