@@ -8,15 +8,21 @@ related:
   - sources/tool-eval-metaplan-81url-2026-06-24.md
   - concepts/wiki-tooling-evaluation.md
   - entities/tools/espn-api.md
+  - sources/eval-github-dfs-betting-2026-09-08.md
+  - concepts/k257-eval-github-wave.md
+  - concepts/k257-gambling-pm-wave.md
 maturity: draft
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-09-08
 ---
 
 ## Relations
 
 - @sources/eval-github-repo-plan-dfs-marl-poker-osint-2026-07-01.md — K138 row (docx Adopt → downgraded)
 - @sources/tool-eval-metaplan-81url-2026-06-24.md — prior Reference-only (CeminiDFS duplicate note)
+- @sources/eval-github-dfs-betting-2026-09-08.md
+- @concepts/k257-eval-github-wave.md
+- @concepts/k257-gambling-pm-wave.md
 
 ## Raw Concept
 

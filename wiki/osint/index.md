@@ -7,6 +7,26 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K257 ingest (2026-09-08)
+OSINT K257: 3 eval docx + 1 NFL slate dossier + 4 newsletters (Talon LIKELY = new week; stack-revenue FOLD fplcache URL). Phase-0 REFERENCE: microsoft/markitdown MIT. diagram-design stays Extract+HITL. karpathy-skills SPDX null NO-GO clone. Talon HITL; EH awareness **no pm scp**. xsp brief staged. **0 Integrate GO.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [markitdown](entities/tools/markitdown.md) | MarkItDown MIT GO REFERENCE (K257) | draft |
+| [k257-eval-github-wave](concepts/k257-eval-github-wave.md) | K257 Eval GitHub Wave (Sep 2026) | draft |
+| [k257-gambling-pm-wave](concepts/k257-gambling-pm-wave.md) | K257 Gambling PM + DFS Wave (Sep 2026) | draft |
+| [k257-ccc-aeo-wave](concepts/k257-ccc-aeo-wave.md) | K257 CCC AEO Wave (Sep 2026) | draft |
+| [k257-newsletter-macro-wave](concepts/k257-newsletter-macro-wave.md) | K257 Newsletter Macro Wave (Sep 2026) | draft |
+| [eval-github-dfs-betting](sources/eval-github-dfs-betting-2026-09-08.md) | Eval — GitHub DFS Betting Evaluation (K257) | draft |
+| [nfl-betting-dfs-intelligence](sources/nfl-betting-dfs-intelligence-2026-09-08.md) | NFL Sunday slate betting and DFS intelligence | draft |
+| [eval-repo-revenue-opportunity](sources/eval-repo-revenue-opportunity-2026-09-08.md) | Eval — Repository Revenue Opportunity Analysis | draft |
+| [eval-repo-stack-revenue](sources/eval-repo-stack-revenue-2026-09-08.md) | Eval — Repository Stack Revenue Evaluation (fold) | draft |
+| [eval-multi-wiki-url-revenue-copy](sources/eval-multi-wiki-url-revenue-copy-2026-09-02.md) | K254 copy eval; K257 fplcache URL fold | draft |
+| [newsletter-rss-latent-space-aeo](sources/newsletter-rss-latent-space-2026-09-07-aeo-tracker-2026-09-08.md) | Latent Space Frontier AEO Tracker | draft |
+| [substack-rss-event-horizon-ep31](sources/substack-rss-event-horizon-2026-09-08-episode-31-2026-09-08.md) | Event Horizon Episode 31 | draft |
+| [substack-rss-glitchspx-talon](sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md) | Glitch SPX Talon Weekly Sep 8–11 | draft |
+| [substack-rss-klement-sea](sources/substack-rss-klement-2026-09-08-southeast-asia-2026-09-08.md) | Klement — Southeast Asia investment hub | draft |
+
 ### K256 ingest (2026-09-07)
 OSINT K256: 13 arXiv (11 inbox + 2 skipped-cap fetched) + 2 eval docx + 8 newsletters. Phase-0 REFERENCE: magnitude (Apache-2.0), RefactorPlatform (MIT), cve-mcp-server (Apache-2.0). trailofbits/skills CC-BY-SA-4.0 EXTRACT-ONLY. Grok Bot FILE bump. Kalshi lifetime ban awareness. No xsp/pm scp. 0 Integrate GO.
 

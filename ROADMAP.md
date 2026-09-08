@@ -30,6 +30,14 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-08 — K257 ingest)
+
+- **K257 ingest** — 8 inbox (3 eval + 1 NFL slate + 4 newsletters). 8 source pages + 4 hubs + markitdown entity. Raws to egress-fi. **xsp brief staged. No pm scp.**
+- **Phase-0** — `adopt_k257_phase0.sh`: markitdown MIT REFERENCE. diagram-design stays Extract+HITL. karpathy-skills SPDX null. **0 Integrate GO.**
+- **Routing** — Atto markitdown FILE. CCC/SEO AEO tracker (do not swap /route). GW Klement wiki-only + Talon HITL. Gambling EH Ep 31. CeminiDFS Week 1. Image-gen hyperframes SIZE-SKIP.
+- **Briefs** — `briefs/2026-09-08_k257-*` + `xsp-k257-glitchspx-talon-sep8.md` → sibling copies.
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot §9–§16 paste; HL/Kalshi/equity/cross-venue backtests overdue.
+
 ## Current state (2026-09-07 — K256 ingest)
 
 - **K256 ingest** — 24 inbox (13 arXiv incl. 2 skipped-cap fetched + 2 eval + 9 newsletters). 24 source pages + 10 concept hubs + 4 new entities. Raws to egress-fi. **No xsp/pm scp.**

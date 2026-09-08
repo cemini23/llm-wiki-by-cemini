@@ -7,9 +7,10 @@ related:
   - concepts/xsp-lane-trading-framework.md
   - concepts/guruwatcher-macro-watches.md
   - sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md
+  - sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
 maturity: draft
 created: 2026-08-30
-updated: 2026-08-30
+updated: 2026-09-08
 read_status: read
 ---
 
@@ -18,6 +19,7 @@ read_status: read
 - @concepts/xsp-lane-trading-framework.md — HITL map; SPXW OTE vs SPY/QQQ/IWM rally-fail
 - @concepts/guruwatcher-macro-watches.md — named levels are HITL candidates; no auto-arm
 - @sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md — prior Talon weekly (K245)
+- @sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
 
 ## Raw Concept
 

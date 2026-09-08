@@ -7,9 +7,10 @@ related:
   - concepts/k255-ccc-models-wave.md
   - sources/newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw-2026-09-07.md
   - entities/tools/grok-bot.md
+  - concepts/k257-ccc-aeo-wave.md
 maturity: draft
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-08
 harness_verb: FILE
 ---
 
@@ -18,6 +19,7 @@ harness_verb: FILE
 - @concepts/k255-ccc-models-wave.md
 - @sources/newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw-2026-09-07.md
 - @entities/tools/grok-bot.md
+- @concepts/k257-ccc-aeo-wave.md
 
 ## Raw Concept
 

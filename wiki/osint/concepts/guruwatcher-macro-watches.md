@@ -21,9 +21,12 @@ related:
   - entities/tools/career-ops.md
   - sources/substack-rss-klement-2026-08-20-management-forecast-quality.md
   - sources/eval-repository-revenue-2026-08-20.md
+  - sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
+  - sources/substack-rss-klement-2026-09-08-southeast-asia-2026-09-08.md
+  - concepts/k257-newsletter-macro-wave.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-30
+updated: 2026-09-08
 ---
 
 ## Relations
@@ -45,6 +48,9 @@ updated: 2026-08-30
 - @sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md — K245 Talon HITL levels (SPXW/VXX/VIX/SMH/IWM)
 - @sources/substack-rss-klement-2026-08-21-polarisation.md — K245 Tinbergen polarisation; no ticker/level
 - @sources/eval-repository-revenue-2026-08-20.md — K243 career-ops Extract
+- @sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
+- @sources/substack-rss-klement-2026-09-08-southeast-asia-2026-09-08.md
+- @concepts/k257-newsletter-macro-wave.md
 
 ## Raw Concept
 

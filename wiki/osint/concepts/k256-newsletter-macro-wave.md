@@ -12,9 +12,10 @@ related:
   - sources/substack-rss-wublock-2026-09-07-august-vc-2026-09-07.md
   - sources/substack-rss-wublock-2026-09-07-weekly-outlook-2026-09-07.md
   - sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md
+  - concepts/k257-newsletter-macro-wave.md
 maturity: draft
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-08
 harness_verb: FILE
 ---
 
@@ -28,6 +29,7 @@ harness_verb: FILE
 - @sources/substack-rss-wublock-2026-09-07-august-vc-2026-09-07.md
 - @sources/substack-rss-wublock-2026-09-07-weekly-outlook-2026-09-07.md
 - @sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md
+- @concepts/k257-newsletter-macro-wave.md
 
 ## Raw Concept
 

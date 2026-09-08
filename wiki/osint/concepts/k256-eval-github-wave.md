@@ -13,9 +13,10 @@ related:
   - entities/tools/cve-mcp-server.md
   - entities/tools/openai-codex-security.md
   - entities/tools/addyosmani-agent-skills.md
+  - concepts/k257-eval-github-wave.md
 maturity: draft
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-08
 harness_verb: FILE
 ---
 
@@ -30,6 +31,7 @@ harness_verb: FILE
 - @entities/tools/cve-mcp-server.md
 - @entities/tools/openai-codex-security.md
 - @entities/tools/addyosmani-agent-skills.md
+- @concepts/k257-eval-github-wave.md
 
 ## Raw Concept
 

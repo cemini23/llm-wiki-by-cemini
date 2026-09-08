@@ -6,15 +6,19 @@ keywords: [url-revenue, github-eval]
 related:
   - concepts/k254-eval-github-wave.md
   - sources/eval-multi-wiki-url-revenue-2026-08-18.md
+  - sources/eval-repo-stack-revenue-2026-09-08.md
+  - concepts/k257-eval-github-wave.md
 maturity: draft
 created: 2026-09-02
-updated: 2026-09-02
+updated: 2026-09-08
 read_status: read
 ---
 
 ## Relations
 
 - @concepts/k254-eval-github-wave.md
+- @sources/eval-repo-stack-revenue-2026-09-08.md
+- @concepts/k257-eval-github-wave.md
 
 ## Raw Concept
 

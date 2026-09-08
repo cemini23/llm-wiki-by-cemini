@@ -7,9 +7,12 @@ related:
   - sources/eval-local-agent-infra-2026-08-19.md
   - concepts/cemini-license-posture.md
   - concepts/atto-genealogy-agent-kit.md
+  - entities/tools/markitdown.md
+  - concepts/k257-eval-github-wave.md
+  - sources/eval-repo-revenue-opportunity-2026-09-08.md
 maturity: draft
 created: 2026-08-19
-updated: 2026-08-19
+updated: 2026-09-08
 harness_verb: FILE
 wire_note: Local OCR wrapper Extract; Transkribus remains sole product HTR
 ---
@@ -19,6 +22,9 @@ wire_note: Local OCR wrapper Extract; Transkribus remains sole product HTR
 - @sources/eval-local-agent-infra-2026-08-19.md — K242 eval
 - @concepts/cemini-license-posture.md
 - @concepts/atto-genealogy-agent-kit.md — air-gapped ingest; no cloud HTR
+- @entities/tools/markitdown.md
+- @concepts/k257-eval-github-wave.md
+- @sources/eval-repo-revenue-opportunity-2026-09-08.md
 
 ## Raw Concept
 

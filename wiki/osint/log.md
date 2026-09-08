@@ -1,3 +1,19 @@
+## [2026-09-08] ingest | K257 wave
+
+- **Inbox:** 8 files (3 eval docx + 1 NFL slate dossier + 4 newsletters). Preingest: 6 NEW, 1 LIKELY (Talon new week), 1 DUPLICATE (fplcache URL fold).
+- **Sources:** DFS betting eval; NFL Week 1 slate; revenue-opportunity eval; stack-revenue fold; Latent Space AEO tracker; Event Horizon Ep 31; Talon 8–11 Sep; Klement ASEAN.
+- **Concepts:** 4 k257-* hubs. Entity: markitdown. Bumps: diagram-design, draftfast, mdflux, forrest-chang, xsp-lane, GW watches, K256 hubs.
+- **Phase-0:** `adopt_k257_phase0.sh` — markitdown MIT REFERENCE (~4.6MB). **0 Integrate GO.**
+- **Routing:** Atto markitdown FILE. GW Klement wiki-only + Talon HITL. CCC/SEO AEO tracker (do not swap /route). Gambling EH **no pm scp**. CeminiDFS Week 1 brief. Image-gen hyperframes SIZE-SKIP. xsp brief staged.
+- **Briefs:** `briefs/2026-09-08_k257-*` + `briefs/xsp-k257-glitchspx-talon-sep8.md` + sibling copies.
+- **Archive:** inbox → egress-fi.
+
+## [2026-09-08] phase-0 | K257 Grok audits
+
+- **markitdown** (`microsoft/markitdown`) — MIT `[CONFIRMED]` gh api; 181273★; push 2026-09-07; ~4.6MB. **GO REFERENCE** FILE. Entity: `entities/tools/markitdown.md`. Transkribus sole HTR.
+- **Skip:** diagram-design already FILE Extract+HITL; karpathy-skills SPDX null; draftfast SPDX null; fplcache ~715MB; hyperframes ~402MB; nfl-data ~172MB.
+- **Committed** with parent lint-commit-push. **0 Integrate GO.**
+
 ## [2026-09-07] lint | wiki gap detect Tier 1
 
 - Ran `bash scripts/run_wiki_gap_detect.sh`. Report `.local/reports/wiki-gap-detect-2026-09-07.txt`. Cadence last_run 2026-09-07 / next_due 2026-09-14. Type A cited-unread stubs remain (WC Gemini DRs, CXW/Otay, eval plans) — no auto Exa.

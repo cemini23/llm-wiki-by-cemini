@@ -6,9 +6,10 @@ keywords: [Kalshi, lifetime-ban, Polymarket-perps, Santos]
 related:
   - concepts/k255-gambling-pm-wave.md
   - sources/substack-rss-wublock-2026-09-05-kalshi-lifetime-ban-2026-09-07.md
+  - concepts/k257-gambling-pm-wave.md
 maturity: draft
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-08
 harness_verb: FILE
 ---
 
@@ -16,6 +17,7 @@ harness_verb: FILE
 
 - @concepts/k255-gambling-pm-wave.md
 - @sources/substack-rss-wublock-2026-09-05-kalshi-lifetime-ban-2026-09-07.md
+- @concepts/k257-gambling-pm-wave.md
 
 ## Raw Concept
 

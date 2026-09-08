@@ -14,9 +14,12 @@ related:
   - concepts/skill-misevolution.md
   - concepts/atto-genealogy-agent-kit.md
   - entities/tools/infographic.md
+  - sources/eval-repo-revenue-opportunity-2026-09-08.md
+  - concepts/k257-eval-github-wave.md
+  - entities/tools/markitdown.md
 maturity: draft
 created: 2026-08-10
-updated: 2026-08-18
+updated: 2026-09-08
 harness_verb: FILE
 wire_note: HITL skill-vetting — do not auto-install to ~/.cursor/skills
 ---
@@ -33,6 +36,9 @@ wire_note: HITL skill-vetting — do not auto-install to ~/.cursor/skills
 - @concepts/gpuology-genealogy-agent-kit.md
 - @concepts/skill-misevolution.md — skills get worse with unattended practice
 - @concepts/atto-genealogy-agent-kit.md — Atto deliverable visuals
+- @sources/eval-repo-revenue-opportunity-2026-09-08.md
+- @concepts/k257-eval-github-wave.md
+- @entities/tools/markitdown.md
 
 ## Raw Concept
 

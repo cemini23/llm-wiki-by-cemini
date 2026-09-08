@@ -342,6 +342,19 @@ Dual-ID: OSINT K256 = 7 Sep 2026 inbox. FILE only. 0 Integrate GO.
 - GW alert-only no auto-arm. Gambling Kalshi ban no pm scp. Atto matched-starts no Barone PII.
 - Verify: bash scripts/adopt_k256_phase1.sh. No skill auto-evolve. No LIVE Discord.
 
+
+## OSINT K257 — 2026-09-08
+
+Dual-ID: OSINT K257 = 8 Sep 2026 inbox. FILE only. 0 Integrate GO.
+
+- Eval SPDX via gh api: microsoft/markitdown MIT GO REFERENCE FILE. Transkribus remains sole product HTR. mdflux already wraps MarkItDown.
+- diagram-design MIT stays Extract+HITL deferred (docx Integrate is a false upgrade).
+- andrej-karpathy-skills SPDX null — NO-GO clone. draftfast still null SPDX CONDITIONAL-GO.
+- SIZE-SKIP: fplcache ~715MB, hyperframes ~402MB, nfl-data ~172MB.
+- GW alert-only no auto-arm (Klement no levels; Talon HITL only). Gambling EH Ep 31 **no pm scp**.
+- AEO tracker: do not swap `/route`. No skill auto-evolve.
+- Verify: bash scripts/adopt_k257_phase1.sh. xsp brief staged. No LIVE Discord.
+
 ## OSINT K246–K253 routing index
 
 See `.cursor/rules/osint-k246-k253-phase1-wires.mdc` (alwaysApply) for per-wave wire_targets. Legacy detail remains in sections K241–K243 below.

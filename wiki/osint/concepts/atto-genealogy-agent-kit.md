@@ -37,9 +37,11 @@ related:
   - entities/tools/lore.md
   - entities/tools/google-timeline-visualizer.md
   - sources/arxiv-2608.17915-computational-prosopography-2026-08-20.md
+  - entities/tools/markitdown.md
+  - concepts/k257-eval-github-wave.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-20
+updated: 2026-09-08
 ---
 
 ## Relations
@@ -67,6 +69,8 @@ updated: 2026-08-20
 - @entities/tools/lore.md — MIT narrative/entity schemas; no living-person vitals
 - @entities/tools/google-timeline-visualizer.md — MIT timeline maps; no Barone coordinates
 - @sources/arxiv-2608.17915-computational-prosopography-2026-08-20.md — lineage/entity-resolution methodology; no Barone names
+- @entities/tools/markitdown.md
+- @concepts/k257-eval-github-wave.md
 
 ## Raw Concept
 

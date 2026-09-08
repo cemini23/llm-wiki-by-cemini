@@ -130,9 +130,11 @@ related:
   - concepts/dex-fee-implied-volatility.md
   - sources/substack-rss-wublock-2026-08-14-weekly.md
   - sources/arxiv-2608.16749-rough-volatility-across-assets-2026-08-18.md
+  - sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
+  - concepts/k257-newsletter-macro-wave.md
 maturity: draft
 created: 2026-06-14
-updated: 2026-08-30
+updated: 2026-09-08
 ---
 
 ## Relations

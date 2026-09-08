@@ -7,9 +7,11 @@ related:
   - sources/x-docx-polymarket-claude-md-2026-04-23.md
   - concepts/claude-md-12-rule-template.md
   - entities/people/mnilax.md
+  - sources/eval-repo-revenue-opportunity-2026-09-08.md
+  - concepts/k257-eval-github-wave.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-15
+updated: 2026-09-08
 ---
 
 ## Relations
@@ -17,6 +19,8 @@ updated: 2026-05-15
 - @sources/x-docx-polymarket-claude-md-2026-04-23.md — second-hand description in Mnilax's article
 - @concepts/claude-md-12-rule-template.md — concept (Forrest Chang's original 4 rules are the foundation Mnilax extends to 12)
 - @entities/people/mnilax.md — author of the 12-rule extension
+- @sources/eval-repo-revenue-opportunity-2026-09-08.md
+- @concepts/k257-eval-github-wave.md
 
 ## Raw Concept
 
