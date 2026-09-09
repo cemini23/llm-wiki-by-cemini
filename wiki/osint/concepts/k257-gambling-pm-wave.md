@@ -4,6 +4,7 @@ type: concept
 tags: [gambling, prediction-markets, dfs, k257]
 keywords: [Event-Horizon, Polymarket, Kalshi, NFL-DFS, SCOTUS]
 related:
+  - concepts/k258-gambling-pm-wave.md
   - concepts/k256-gambling-pm-wave.md
   - sources/substack-rss-event-horizon-2026-09-08-episode-31-2026-09-08.md
   - sources/nfl-betting-dfs-intelligence-2026-09-08.md
@@ -11,12 +12,13 @@ related:
   - entities/tools/draftfast.md
 maturity: draft
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k258-gambling-pm-wave.md
 - @concepts/k256-gambling-pm-wave.md
 - @sources/substack-rss-event-horizon-2026-09-08-episode-31-2026-09-08.md
 - @sources/nfl-betting-dfs-intelligence-2026-09-08.md

@@ -4,16 +4,18 @@ type: concept
 tags: [vol, quant, k256, options]
 keywords: [Gatheral, Heston, local-volatility, convex-order]
 related:
+  - concepts/k258-vol-quant-wave.md
   - concepts/k255-vol-quant-wave.md
   - sources/arxiv-2609.05047-gatheral-conjecture-2026-09-07.md
 maturity: draft
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-09
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k258-vol-quant-wave.md
 - @concepts/k255-vol-quant-wave.md
 - @sources/arxiv-2609.05047-gatheral-conjecture-2026-09-07.md
 

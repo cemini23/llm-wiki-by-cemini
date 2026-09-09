@@ -7,6 +7,41 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K258 ingest (2026-09-09)
+OSINT K258: 1 eval docx + 8 arXiv + 9 newsletters. Phase-0 REFERENCE: MSR-Orchard/execcritic Apache-2.0; e2b-dev/E2B Apache-2.0 (docx Integrate overridden). **0 Integrate GO.** EH Kalshi court losses **no pm scp**. No xsp scp. Dual-ID: OSINT K258 ≠ poker K258 PTC.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [execcritic](entities/tools/execcritic.md) | ExecCritic Apache-2.0 GO REFERENCE (K258) | draft |
+| [e2b](entities/tools/e2b.md) | E2B Apache-2.0 GO REFERENCE; 0 Integrate (K258) | draft |
+| [k258-harness-evolution-wave](concepts/k258-harness-evolution-wave.md) | K258 Harness Evolution Wave (Sep 2026) | draft |
+| [k258-abliterated-lab-wave](concepts/k258-abliterated-lab-wave.md) | K258 Abliterated Lab Wave (Sep 2026) | draft |
+| [k258-cybersec-wave](concepts/k258-cybersec-wave.md) | K258 Cybersec Wave (Sep 2026) | draft |
+| [k258-vol-quant-wave](concepts/k258-vol-quant-wave.md) | K258 Vol Quant Wave (Sep 2026) | draft |
+| [k258-ood-stub-wave](concepts/k258-ood-stub-wave.md) | K258 OOD Stub Wave (Sep 2026) | draft |
+| [k258-ccc-models-wave](concepts/k258-ccc-models-wave.md) | K258 CCC Models Wave (Sep 2026) | draft |
+| [k258-newsletter-macro-wave](concepts/k258-newsletter-macro-wave.md) | K258 Newsletter Macro Wave (Sep 2026) | draft |
+| [k258-gambling-pm-wave](concepts/k258-gambling-pm-wave.md) | K258 Gambling PM Wave (Sep 2026) | draft |
+| [k258-eval-github-wave](concepts/k258-eval-github-wave.md) | K258 Eval GitHub Wave (Sep 2026) | draft |
+| [eval-technical-stack-revenue](sources/eval-technical-stack-revenue-2026-09-09.md) | Eval — Technical Stack Revenue Evaluation | draft |
+| [arxiv-2609.06291](sources/arxiv-2609.06291-sample-genealogies-brownian-excursion-2026-09-09.md) | Sample genealogies within a Brownian excursion | draft |
+| [arxiv-2609.07169](sources/arxiv-2609.07169-asian-options-volterra-heston-2026-09-09.md) | Asian options in Volterra-Heston | draft |
+| [arxiv-2609.07984](sources/arxiv-2609.07984-event-logs-governed-action-2026-09-09.md) | Event logs to governed action | draft |
+| [arxiv-2609.08236](sources/arxiv-2609.08236-style-over-substance-wrappers-2026-09-09.md) | Style-over-substance safety-judge wrappers | draft |
+| [arxiv-2609.08634](sources/arxiv-2609.08634-suan-preference-safety-2026-09-09.md) | Suan preference safety alignment | draft |
+| [arxiv-2609.08919](sources/arxiv-2609.08919-experience-funnel-2026-09-09.md) | Experience Funnel self-evolving agents | draft |
+| [arxiv-2609.09133](sources/arxiv-2609.09133-execcritic-2026-09-09.md) | ExecCritic learn-to-test | draft |
+| [arxiv-2609.09134](sources/arxiv-2609.09134-co-evolving-harnesses-2026-09-09.md) | Co-evolving harnesses vs imitation | draft |
+| [latent-space-collusionwiki](sources/newsletter-rss-latent-space-2026-09-05-collusionwiki-2026-09-09.md) | Latent Space Collusion.wiki swarm | draft |
+| [latent-space-navier-stokes](sources/newsletter-rss-latent-space-2026-09-09-navier-stokes-2026-09-09.md) | Latent Space Navier-Stokes claim | draft |
+| [pe-code-reviews](sources/newsletter-rss-pragmatic-engineer-2026-09-08-code-reviews-2026-09-09.md) | PE — What is happening with code reviews | draft |
+| [pe-building-codex](sources/newsletter-rss-pragmatic-engineer-2026-09-09-building-codex-2026-09-09.md) | PE — Building Codex with Tibo Sottiaux | draft |
+| [tldrsec-344](sources/newsletter-rss-tldrsec-2026-09-08-tldr-sec-344-2026-09-09.md) | tl;dr sec 344 VM containment | draft |
+| [eh-kalshi-courts](sources/substack-rss-event-horizon-2026-09-09-kalshi-federal-court-2026-09-09.md) | EH — Kalshi federal court losses | draft |
+| [klement-lottery](sources/substack-rss-klement-2026-09-09-lottery-momentum-2026-09-09.md) | Klement — lottery-ticket momentum | draft |
+| [wublock-bip110](sources/substack-rss-wublock-2026-09-08-bip-110-tech-update-2026-09-09.md) | Wu — BIP-110 fails | draft |
+| [wublock-spot-vol](sources/substack-rss-wublock-2026-09-09-august-spot-volume-2026-09-09.md) | Wu — August spot volume $510.4B | draft |
+
 ### K257 ingest (2026-09-08)
 OSINT K257: 3 eval docx + 1 NFL slate dossier + 4 newsletters (Talon LIKELY = new week; stack-revenue FOLD fplcache URL). Phase-0 REFERENCE: microsoft/markitdown MIT. diagram-design stays Extract+HITL. karpathy-skills SPDX null NO-GO clone. Talon HITL; EH awareness **no pm scp**. xsp brief staged. **0 Integrate GO.**
 

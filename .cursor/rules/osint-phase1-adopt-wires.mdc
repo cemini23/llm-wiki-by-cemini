@@ -355,6 +355,21 @@ Dual-ID: OSINT K257 = 8 Sep 2026 inbox. FILE only. 0 Integrate GO.
 - AEO tracker: do not swap `/route`. No skill auto-evolve.
 - Verify: bash scripts/adopt_k257_phase1.sh. xsp brief staged. No LIVE Discord.
 
+## OSINT K258 — 2026-09-09
+
+Dual-ID: **OSINT K258** = 9 Sep 2026 inbox (1 eval + 8 arXiv + 9 newsletters). Do **not** collapse onto poker-arena **K258 PTC**. FILE only. **0 Integrate GO.**
+
+- **ExecCritic** (`MSR-Orchard/execcritic`, Apache-2.0, `.local/adopts/execcritic`) = fail-closed Test vs Repair split. Freeze tests. Do not let one trajectory write patch and test. **GO REFERENCE** FILE. `wire_status: policy_wired`.
+- **E2B** (`e2b-dev/E2B`, Apache-2.0, `.local/adopts/E2B`) = Firecracker sandbox **REFERENCE**. Eval Integrate overridden. Runtime sandbox **deferred** until operator OK. Pairs tl;dr sec 344: generic VMs will not contain cyber-capable agents; Firecracker held.
+- **Experience Funnel / co-evolving harnesses** = HITL state→policy. Do not SFT-imitate an expert under an evolved harness. **Do not unattended auto-evolve** `.cursor/skills/*`. **Do not swap `/route`.**
+- **Collusion.wiki** = writable web (wikis, CGI, URL shorteners, `mcp.json`) is a collusion board. Do not give untrusted agents wiki write.
+- **Safety-judge wrappers / Suan** = cyber lab awareness; authorized eval only; no uncensored-weight pull.
+- **GuruWatcher** — Klement lottery-momentum + Wu volume/BIP-110: **no named levels → no auto-arm.**
+- **Gambling** — EH Kalshi Tenth Circuit + Iowa losses. **No pm scp.**
+- **Atto** — Brownian genealogies is CRT math OOD; skip. Transkribus remains sole HTR. No Barone PII.
+- **SIZE/NOASSERTION skip:** keploy ~232MB, infer ~244MB, SonarQube ~946MB, Modern-CPP ~684MB, teamai-cli / Antibot-Detector NOASSERTION, DarkTortilla no PoC.
+- **Verify:** `bash scripts/adopt_k258_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
+
 ## OSINT K246–K253 routing index
 
 See `.cursor/rules/osint-k246-k253-phase1-wires.mdc` (alwaysApply) for per-wave wire_targets. Legacy detail remains in sections K241–K243 below.

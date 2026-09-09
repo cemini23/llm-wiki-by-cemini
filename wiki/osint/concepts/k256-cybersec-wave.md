@@ -4,6 +4,7 @@ type: concept
 tags: [cybersec, jailbreak, cve, k256]
 keywords: [AlcaTRAz, BUGSTONE-E2E, CVE-history, prompt-defense]
 related:
+  - concepts/k258-cybersec-wave.md
   - concepts/k255-cybersec-wave.md
   - sources/arxiv-2609.03693-alcatraz-jailbreak-defense-2026-09-07.md
   - sources/arxiv-2609.05335-cve-patch-history-detector-2026-09-07.md
@@ -11,12 +12,13 @@ related:
   - entities/tools/openai-codex-security.md
 maturity: draft
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-09
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k258-cybersec-wave.md
 - @concepts/k255-cybersec-wave.md
 - @sources/arxiv-2609.03693-alcatraz-jailbreak-defense-2026-09-07.md
 - @sources/arxiv-2609.05335-cve-patch-history-detector-2026-09-07.md

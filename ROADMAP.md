@@ -30,6 +30,14 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-09 — K258 ingest)
+
+- **K258 ingest** — 18 inbox (1 eval + 8 arXiv + 9 newsletters). 18 source pages + 9 hubs + execcritic/e2b entities. Raws to egress-fi. **No xsp/pm scp.**
+- **Phase-0** — `adopt_k258_phase0.sh`: execcritic Apache-2.0 REFERENCE (~1.1MB); E2B Apache-2.0 REFERENCE (~126MB; eval Integrate overridden). **0 Integrate GO.**
+- **Routing** — CCC harness + Codex FILE (do not swap /route). Cyber VM-escape / wrappers / collusion.wiki. GW Klement wiki-only no auto-arm. Gambling EH Kalshi courts **no pm scp**. Atto Brownian skip; E2B FILE. Vol wiki-only.
+- **Briefs** — `briefs/2026-09-09_k258-*` → sibling copies. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot §9–§16 paste; HL/Kalshi/equity/cross-venue backtests overdue. Type A wiki-gap stubs remain — no auto Exa.
+
 ## Current state (2026-09-08 — K257 ingest)
 
 - **K257 ingest** — 8 inbox (3 eval + 1 NFL slate + 4 newsletters). 8 source pages + 4 hubs + markitdown entity. Raws to egress-fi. **xsp brief staged. No pm scp.**

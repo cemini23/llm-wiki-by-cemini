@@ -4,6 +4,7 @@ type: concept
 tags: [eval, github, k257, revenue]
 keywords: [markitdown, draftfast, diagram-design, karpathy-skills, SPDX]
 related:
+  - concepts/k258-eval-github-wave.md
   - concepts/k256-eval-github-wave.md
   - sources/eval-github-dfs-betting-2026-09-08.md
   - sources/eval-repo-revenue-opportunity-2026-09-08.md
@@ -17,12 +18,13 @@ related:
   - sources/eval-multi-wiki-url-revenue-copy-2026-09-02.md
 maturity: draft
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k258-eval-github-wave.md
 - @concepts/k256-eval-github-wave.md
 - @sources/eval-github-dfs-betting-2026-09-08.md
 - @sources/eval-repo-revenue-opportunity-2026-09-08.md

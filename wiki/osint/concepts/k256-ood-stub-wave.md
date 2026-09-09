@@ -4,17 +4,19 @@ type: concept
 tags: [ood, k256, image-gen, banking]
 keywords: [FiMI-banking, WeAgent-MMGenEdit]
 related:
+  - concepts/k258-ood-stub-wave.md
   - concepts/k255-harness-evolution-wave.md
   - sources/arxiv-2609.03960-fimi-banking-2026-09-07.md
   - sources/arxiv-2609.05171-weagent-mmgenedit-2026-09-07.md
 maturity: draft
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-09
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k258-ood-stub-wave.md
 - @concepts/k255-harness-evolution-wave.md
 - @sources/arxiv-2609.03960-fimi-banking-2026-09-07.md
 - @sources/arxiv-2609.05171-weagent-mmgenedit-2026-09-07.md

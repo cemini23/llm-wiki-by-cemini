@@ -1,3 +1,20 @@
+## [2026-09-09] ingest | K258 wave
+
+- **Inbox:** 18 files (1 eval + 8 arXiv + 9 newsletters). Preingest: 18 NEW.
+- **Sources:** stack-revenue eval; Brownian genealogies OOD; Volterra-Heston Asians; governed-action BlueSky; style wrappers; Suan; Experience Funnel; ExecCritic; co-evolving harnesses; LS collusion.wiki + Navier-Stokes; PE code reviews + Codex; tldrsec 344; EH Kalshi courts; Klement lottery; Wu BIP-110 + spot volume.
+- **Concepts:** 9 k258-* hubs. Entities: execcritic, e2b. Bumps: k256/k257 hubs + GuruWatcher watches.
+- **Phase-0:** `adopt_k258_phase0.sh` — execcritic Apache-2.0 (~1.1MB), E2B Apache-2.0 (~126MB). **0 Integrate GO.**
+- **Routing:** CCC harness + Codex FILE (do not swap /route). Cyber VM-escape / wrappers / collusion.wiki. GW Klement wiki-only no auto-arm. Gambling EH **no pm scp**. Atto Brownian skip; E2B FILE. Vol wiki-only. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-09_k258-*` + sibling copies.
+- **Archive:** inbox → egress-fi.
+
+## [2026-09-09] phase-0 | K258 Grok audits
+
+- **execcritic** (`MSR-Orchard/execcritic`) — Apache-2.0 `[CONFIRMED]` gh api; 2★; push 2026-09-08; ~1.1MB. **GO REFERENCE** FILE. Entity: `entities/tools/execcritic.md`.
+- **E2B** (`e2b-dev/E2B`) — Apache-2.0 `[CONFIRMED]`; 13720★; push 2026-09-09; ~126MB. **GO REFERENCE** FILE. Eval Integrate overridden. Entity: `entities/tools/e2b.md`.
+- **Skip:** keploy ~232MB Extract; infer ~244MB Context; SonarQube LGPL ~946MB; Modern-CPP CC-BY-SA ~684MB; teamai-cli / Antibot-Detector NOASSERTION; DarkTortilla no PoC.
+- **Committed** with parent lint-commit-push. **0 Integrate GO.**
+
 ## [2026-09-08] ingest | K257 wave
 
 - **Inbox:** 8 files (3 eval docx + 1 NFL slate dossier + 4 newsletters). Preingest: 6 NEW, 1 LIKELY (Talon new week), 1 DUPLICATE (fplcache URL fold).

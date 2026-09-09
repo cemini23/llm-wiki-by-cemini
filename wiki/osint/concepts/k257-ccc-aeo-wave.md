@@ -4,16 +4,18 @@ type: concept
 tags: [ccc, aeo, k257, routing]
 keywords: [AEO, Astra, Fable, Latent-Space, content-negotiation]
 related:
+  - concepts/k258-ccc-models-wave.md
   - concepts/k256-ccc-models-wave.md
   - sources/newsletter-rss-latent-space-2026-09-07-aeo-tracker-2026-09-08.md
 maturity: draft
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k258-ccc-models-wave.md
 - @concepts/k256-ccc-models-wave.md
 - @sources/newsletter-rss-latent-space-2026-09-07-aeo-tracker-2026-09-08.md
 

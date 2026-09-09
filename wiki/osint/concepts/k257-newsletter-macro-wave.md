@@ -4,6 +4,7 @@ type: concept
 tags: [macro, newsletter, k257, guruwatcher, xsp]
 keywords: [Klement, ASEAN, Talon, GlitchSPX, HITL]
 related:
+  - concepts/k258-newsletter-macro-wave.md
   - concepts/k256-newsletter-macro-wave.md
   - sources/substack-rss-klement-2026-09-08-southeast-asia-2026-09-08.md
   - sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
@@ -11,12 +12,13 @@ related:
   - concepts/guruwatcher-macro-watches.md
 maturity: draft
 created: 2026-09-08
-updated: 2026-09-08
+updated: 2026-09-09
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k258-newsletter-macro-wave.md
 - @concepts/k256-newsletter-macro-wave.md
 - @sources/substack-rss-klement-2026-09-08-southeast-asia-2026-09-08.md
 - @sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md

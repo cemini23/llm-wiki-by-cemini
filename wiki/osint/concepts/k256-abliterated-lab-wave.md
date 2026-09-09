@@ -4,6 +4,7 @@ type: concept
 tags: [abliteration, refusal, k256, cybersec]
 keywords: [refusal-circuits, TIER, uncensored-redistribution, SSM-steering]
 related:
+  - concepts/k258-abliterated-lab-wave.md
   - concepts/k255-cybersec-wave.md
   - sources/arxiv-2609.03887-beyond-shallow-alignment-2026-09-07.md
   - sources/arxiv-2609.04721-locating-steering-refusal-2026-09-07.md
@@ -12,12 +13,13 @@ related:
   - entities/tools/magnitude.md
 maturity: draft
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-09
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k258-abliterated-lab-wave.md
 - @concepts/k255-cybersec-wave.md
 - @sources/arxiv-2609.03887-beyond-shallow-alignment-2026-09-07.md
 - @sources/arxiv-2609.04721-locating-steering-refusal-2026-09-07.md

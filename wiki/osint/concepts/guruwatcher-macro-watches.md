@@ -24,9 +24,11 @@ related:
   - sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
   - sources/substack-rss-klement-2026-09-08-southeast-asia-2026-09-08.md
   - concepts/k257-newsletter-macro-wave.md
+  - concepts/k258-newsletter-macro-wave.md
+  - sources/substack-rss-klement-2026-09-09-lottery-momentum-2026-09-09.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-08
+updated: 2026-09-09
 ---
 
 ## Relations
@@ -51,6 +53,8 @@ updated: 2026-09-08
 - @sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
 - @sources/substack-rss-klement-2026-09-08-southeast-asia-2026-09-08.md
 - @concepts/k257-newsletter-macro-wave.md
+- @concepts/k258-newsletter-macro-wave.md
+- @sources/substack-rss-klement-2026-09-09-lottery-momentum-2026-09-09.md — K258 lottery-momentum; no ticker/level; no auto-arm
 
 ## Raw Concept
 
