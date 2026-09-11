@@ -4,16 +4,18 @@ type: concept
 tags: [gambling, prediction-markets, k258]
 keywords: [Kalshi, Tenth-Circuit, Iowa, Robinhood, OG.com]
 related:
+  - concepts/k259-gambling-pm-wave.md
   - concepts/k257-gambling-pm-wave.md
   - sources/substack-rss-event-horizon-2026-09-09-kalshi-federal-court-2026-09-09.md
 maturity: draft
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-11
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k259-gambling-pm-wave.md
 - @concepts/k257-gambling-pm-wave.md
 - @sources/substack-rss-event-horizon-2026-09-09-kalshi-federal-court-2026-09-09.md
 

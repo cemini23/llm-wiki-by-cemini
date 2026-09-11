@@ -4,6 +4,7 @@ type: concept
 tags: [ccc, k258, routing, codex]
 keywords: [Codex, code-review, collusion-wiki, Navier-Stokes]
 related:
+  - concepts/k259-ccc-models-wave.md
   - concepts/k257-ccc-aeo-wave.md
   - sources/newsletter-rss-latent-space-2026-09-05-collusionwiki-2026-09-09.md
   - sources/newsletter-rss-latent-space-2026-09-09-navier-stokes-2026-09-09.md
@@ -11,12 +12,13 @@ related:
   - sources/newsletter-rss-pragmatic-engineer-2026-09-09-building-codex-2026-09-09.md
 maturity: draft
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-11
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k259-ccc-models-wave.md
 - @concepts/k257-ccc-aeo-wave.md
 - @sources/newsletter-rss-latent-space-2026-09-05-collusionwiki-2026-09-09.md
 - @sources/newsletter-rss-latent-space-2026-09-09-navier-stokes-2026-09-09.md

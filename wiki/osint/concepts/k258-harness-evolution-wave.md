@@ -4,6 +4,7 @@ type: concept
 tags: [agents, harness, k258, ccc]
 keywords: [ExecCritic, Experience-Funnel, co-evolve, governed-action]
 related:
+  - concepts/k259-harness-evolution-wave.md
   - concepts/k256-harness-evolution-wave.md
   - sources/arxiv-2609.07984-event-logs-governed-action-2026-09-09.md
   - sources/arxiv-2609.08919-experience-funnel-2026-09-09.md
@@ -12,12 +13,13 @@ related:
   - entities/tools/execcritic.md
 maturity: draft
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-11
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k259-harness-evolution-wave.md
 - @concepts/k256-harness-evolution-wave.md
 - @sources/arxiv-2609.07984-event-logs-governed-action-2026-09-09.md
 - @sources/arxiv-2609.08919-experience-funnel-2026-09-09.md

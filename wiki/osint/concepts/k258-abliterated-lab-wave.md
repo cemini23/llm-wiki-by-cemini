@@ -4,17 +4,19 @@ type: concept
 tags: [abliteration, refusal, k258, cybersec]
 keywords: [Suan, safety-judge, wrappers, over-refusal]
 related:
+  - concepts/k259-abliterated-lab-wave.md
   - concepts/k256-abliterated-lab-wave.md
   - sources/arxiv-2609.08236-style-over-substance-wrappers-2026-09-09.md
   - sources/arxiv-2609.08634-suan-preference-safety-2026-09-09.md
 maturity: draft
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-11
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k259-abliterated-lab-wave.md
 - @concepts/k256-abliterated-lab-wave.md
 - @sources/arxiv-2609.08236-style-over-substance-wrappers-2026-09-09.md
 - @sources/arxiv-2609.08634-suan-preference-safety-2026-09-09.md

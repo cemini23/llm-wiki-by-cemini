@@ -1,3 +1,19 @@
+## [2026-09-11] ingest | K259 wave
+
+- **Inbox:** 19 files. Preingest: 15 NEW, 2 LIKELY fold (EH 9 Sep courts re-drop; Wu spot same sha as K258), 2 DUPLICATE (Klement lottery same sha; LS joke title is a dated NEW issue).
+- **Needed paper:** GZSL handwriting bias 2609.10084 → Atto HTR FILE. Transkribus remains sole HTR.
+- **Sources:** 8 arXiv + 8 newsletters. Folds archived without new pages.
+- **Concepts:** 8 k259-* hubs. Bumps k258 hubs + k256-atto-collab + GuruWatcher.
+- **Phase-0:** `adopt_k259_phase0.sh` — Show-Harness Apache-2.0 SIZE-SKIP ~492MB. **0 Integrate GO.**
+- **Routing:** CCC TRACE/TrajMark/KVShare FILE. Cyber directional-ablation + tldrsec 345. Atto HTR bias. Gambling EH **no pm scp**. GW wiki-only no auto-arm. Image-gen VidHalLoc brief. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-11_k259-*` + sibling copies.
+- **Archive:** inbox → egress-fi.
+
+## [2026-09-11] phase-0 | K259
+
+- **showlab/Show-Harness** — Apache-2.0 `[CONFIRMED]` gh api; 246★; ~492MB **SIZE-SKIP**. Robotics runtime **wont_wire**.
+- **No clones.** Paper-only FILE. **0 Integrate GO.**
+
 ## [2026-09-09] ingest | K258 wave
 
 - **Inbox:** 18 files (1 eval + 8 arXiv + 9 newsletters). Preingest: 18 NEW.

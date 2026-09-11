@@ -4,16 +4,18 @@ type: concept
 tags: [ood, k258, genealogy, math]
 keywords: [Brownian-excursion, CRT, coalescent]
 related:
+  - concepts/k259-ood-stub-wave.md
   - concepts/k256-ood-stub-wave.md
   - sources/arxiv-2609.06291-sample-genealogies-brownian-excursion-2026-09-09.md
 maturity: draft
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-11
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k259-ood-stub-wave.md
 - @concepts/k256-ood-stub-wave.md
 - @sources/arxiv-2609.06291-sample-genealogies-brownian-excursion-2026-09-09.md
 

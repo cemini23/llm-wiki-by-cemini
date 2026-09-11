@@ -24,11 +24,14 @@ related:
   - sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
   - sources/substack-rss-klement-2026-09-08-southeast-asia-2026-09-08.md
   - concepts/k257-newsletter-macro-wave.md
+  - concepts/k259-newsletter-macro-wave.md
+  - sources/substack-rss-klement-2026-09-11-ai-slop-2026-09-11.md
+  - sources/substack-rss-klement-2026-09-10-build-more-houses-2026-09-11.md
   - concepts/k258-newsletter-macro-wave.md
   - sources/substack-rss-klement-2026-09-09-lottery-momentum-2026-09-09.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-09
+updated: 2026-09-11
 ---
 
 ## Relations
@@ -53,6 +56,9 @@ updated: 2026-09-09
 - @sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
 - @sources/substack-rss-klement-2026-09-08-southeast-asia-2026-09-08.md
 - @concepts/k257-newsletter-macro-wave.md
+- @concepts/k259-newsletter-macro-wave.md
+- @sources/substack-rss-klement-2026-09-11-ai-slop-2026-09-11.md — K259 wiki-only; no auto-arm
+- @sources/substack-rss-klement-2026-09-10-build-more-houses-2026-09-11.md — K259 wiki-only; no auto-arm
 - @concepts/k258-newsletter-macro-wave.md
 - @sources/substack-rss-klement-2026-09-09-lottery-momentum-2026-09-09.md — K258 lottery-momentum; no ticker/level; no auto-arm
 

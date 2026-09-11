@@ -7,6 +7,36 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K259 ingest (2026-09-11)
+OSINT K259: 8 arXiv + 8 newsletters NEW; 2 DUPLICATE folds (Klement lottery, Wu spot); 1 LIKELY fold (EH 9 Sep courts re-drop); LS joke-title collision ingested as dated issue. Needed paper: GZSL handwriting bias for Atto HTR. Show-Harness Apache-2.0 SIZE-SKIP ~492MB. **0 Integrate GO. No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k259-harness-evolution-wave](concepts/k259-harness-evolution-wave.md) | K259 Harness Evolution Wave | draft |
+| [k259-abliterated-lab-wave](concepts/k259-abliterated-lab-wave.md) | K259 Abliterated Lab Wave | draft |
+| [k259-atto-htr-wave](concepts/k259-atto-htr-wave.md) | K259 Atto HTR Wave | draft |
+| [k259-ood-stub-wave](concepts/k259-ood-stub-wave.md) | K259 OOD Stub Wave | draft |
+| [k259-ccc-models-wave](concepts/k259-ccc-models-wave.md) | K259 CCC Models Wave | draft |
+| [k259-cybersec-wave](concepts/k259-cybersec-wave.md) | K259 Cybersec Wave | draft |
+| [k259-newsletter-macro-wave](concepts/k259-newsletter-macro-wave.md) | K259 Newsletter Macro Wave | draft |
+| [k259-gambling-pm-wave](concepts/k259-gambling-pm-wave.md) | K259 Gambling PM Wave | draft |
+| [arxiv-2609.09476](sources/arxiv-2609.09476-vehicle-slm-function-calls-2026-09-11.md) | Vehicle SLM Schema-in-Prompt vs Functional Tokens | draft |
+| [arxiv-2609.09793](sources/arxiv-2609.09793-fragile-safety-alignment-moe-2026-09-11.md) | Directional ablation on 320B MoE | draft |
+| [arxiv-2609.09895](sources/arxiv-2609.09895-vidhalloc-video-hallucination-2026-09-11.md) | VidHalLoc video hallucination detectors | draft |
+| [arxiv-2609.10084](sources/arxiv-2609.10084-gzsl-handwriting-bias-2026-09-11.md) | GZSL handwriting bias (Atto HTR) | draft |
+| [arxiv-2609.10266](sources/arxiv-2609.10266-kvsharearena-2026-09-11.md) | KVShareArena KV-cache reuse | draft |
+| [arxiv-2609.10315](sources/arxiv-2609.10315-trace-causal-exploration-2026-09-11.md) | TRACE synthesized-reward diagnostics | draft |
+| [arxiv-2609.10416](sources/arxiv-2609.10416-trajmark-trajectory-watermark-2026-09-11.md) | TrajMark trajectory watermark | draft |
+| [arxiv-2609.10522](sources/arxiv-2609.10522-show-harness-vlm-robots-2026-09-11.md) | Show-Harness VLM robots SIZE-SKIP | draft |
+| [ls-2026-09-10](sources/newsletter-rss-latent-space-2026-09-10-ainews-2026-09-11.md) | Latent Space 10 Sep (dated joke title) | draft |
+| [pe-pulse-191](sources/newsletter-rss-pragmatic-engineer-2026-09-10-pulse-191-2026-09-11.md) | PE Pulse 191 CPU shortages | draft |
+| [tldrsec-345](sources/newsletter-rss-tldrsec-2026-09-10-tldr-sec-345-2026-09-11.md) | tl;dr sec 345 rumor-to-exploit | draft |
+| [eh-sports-pie](sources/substack-rss-event-horizon-2026-09-10-kalshi-sports-pie-2026-09-11.md) | EH Kalshi sports volume | draft |
+| [eh-dga](sources/substack-rss-event-horizon-2026-09-11-dga-pm-agenda-2026-09-11.md) | EH DGA prediction-markets session | draft |
+| [klement-houses](sources/substack-rss-klement-2026-09-10-build-more-houses-2026-09-11.md) | Klement housing | draft |
+| [klement-slop](sources/substack-rss-klement-2026-09-11-ai-slop-2026-09-11.md) | Klement AI slop | draft |
+| [wublock-deriv](sources/substack-rss-wublock-2026-09-10-august-derivatives-volume-2026-09-11.md) | Wu August derivatives $3.51T | draft |
+
 ### K258 ingest (2026-09-09)
 OSINT K258: 1 eval docx + 8 arXiv + 9 newsletters. Phase-0 REFERENCE: MSR-Orchard/execcritic Apache-2.0; e2b-dev/E2B Apache-2.0 (docx Integrate overridden). **0 Integrate GO.** EH Kalshi court losses **no pm scp**. No xsp scp. Dual-ID: OSINT K258 ≠ poker K258 PTC.
 

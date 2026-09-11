@@ -4,6 +4,7 @@ type: concept
 tags: [macro, newsletter, k258, guruwatcher]
 keywords: [Klement, lottery-momentum, Wu-Blockchain, BIP-110]
 related:
+  - concepts/k259-newsletter-macro-wave.md
   - concepts/k257-newsletter-macro-wave.md
   - concepts/guruwatcher-macro-watches.md
   - sources/substack-rss-klement-2026-09-09-lottery-momentum-2026-09-09.md
@@ -11,12 +12,13 @@ related:
   - sources/substack-rss-wublock-2026-09-09-august-spot-volume-2026-09-09.md
 maturity: draft
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-11
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k259-newsletter-macro-wave.md
 - @concepts/k257-newsletter-macro-wave.md
 - @concepts/guruwatcher-macro-watches.md
 - @sources/substack-rss-klement-2026-09-09-lottery-momentum-2026-09-09.md

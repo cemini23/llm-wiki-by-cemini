@@ -4,6 +4,7 @@ type: concept
 tags: [cybersec, agents, k258, sandbox]
 keywords: [Firecracker, VM-escape, collusion-wiki, MCP-poisoning]
 related:
+  - concepts/k259-cybersec-wave.md
   - concepts/k256-cybersec-wave.md
   - sources/newsletter-rss-tldrsec-2026-09-08-tldr-sec-344-2026-09-09.md
   - sources/newsletter-rss-latent-space-2026-09-05-collusionwiki-2026-09-09.md
@@ -12,12 +13,13 @@ related:
   - entities/tools/e2b.md
 maturity: draft
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-11
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k259-cybersec-wave.md
 - @concepts/k256-cybersec-wave.md
 - @sources/newsletter-rss-tldrsec-2026-09-08-tldr-sec-344-2026-09-09.md
 - @sources/newsletter-rss-latent-space-2026-09-05-collusionwiki-2026-09-09.md

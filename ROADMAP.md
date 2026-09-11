@@ -30,6 +30,14 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-11 — K259 ingest)
+
+- **K259 ingest** — 15 NEW (8 arXiv + 8 newsletters minus folds). Needed paper: GZSL HTR bias for Atto. Show-Harness SIZE-SKIP. **0 Integrate GO. No xsp/pm scp.**
+- **Phase-0** — no clones. Robotics Show-Harness Apache-2.0 ~492MB SIZE-SKIP.
+- **Routing** — CCC TRACE/TrajMark/KVShare FILE (do not swap /route). Cyber MoE ablation + rumor-to-exploit. Atto HTR FILE. GW wiki-only. Gambling EH **no pm scp**.
+- **Briefs** — `briefs/2026-09-11_k259-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot §9–§16 paste; HL/Kalshi/equity/cross-venue backtests overdue.
+
 ## Current state (2026-09-09 — K258 ingest)
 
 - **K258 ingest** — 18 inbox (1 eval + 8 arXiv + 9 newsletters). 18 source pages + 9 hubs + execcritic/e2b entities. Raws to egress-fi. **No xsp/pm scp.**

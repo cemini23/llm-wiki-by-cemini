@@ -370,6 +370,19 @@ Dual-ID: **OSINT K258** = 9 Sep 2026 inbox (1 eval + 8 arXiv + 9 newsletters). D
 - **SIZE/NOASSERTION skip:** keploy ~232MB, infer ~244MB, SonarQube ~946MB, Modern-CPP ~684MB, teamai-cli / Antibot-Detector NOASSERTION, DarkTortilla no PoC.
 - **Verify:** `bash scripts/adopt_k258_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K259 — 2026-09-11
+
+Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
+
+- **Atto HTR** (2609.10084) = GZSL bias-correction FILE. **Transkribus remains sole product HTR.** No Barone PII.
+- **TRACE / TrajMark / KVShareArena** = CCC harness FILE. Do not swap `/route`. TrajMark is provenance for `_route_runs`, not a runtime watermarker.
+- **Directional ablation on 320B MoE** = cyber lab awareness. No weight pull. Conventional dense recipe fails silently on MoE.
+- **Show-Harness** Apache-2.0 ~492MB **SIZE-SKIP**. Robotics **wont_wire**.
+- **tl;dr sec 345** = rumor-to-exploit can precede the patch. No PoC. Treat untrusted `mcp.json` as hostile (already AgentBaiting).
+- **GuruWatcher** — Klement housing / AI-slop: **no named levels → no auto-arm.**
+- **Gambling** — EH sports-volume + DGA. **No pm scp.**
+- **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
+
 ## OSINT K246–K253 routing index
 
 See `.cursor/rules/osint-k246-k253-phase1-wires.mdc` (alwaysApply) for per-wave wire_targets. Legacy detail remains in sections K241–K243 below.
