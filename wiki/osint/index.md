@@ -619,6 +619,9 @@ Dual-ID: **OSINT K243** = this inbox (2 evals + 8 arXiv + 6 newsletters). Do not
 
 `/route` v2.3 (same day): Flash = easy/mid execute; Pro = Grok CLI usage-out stand-in. Canon: `@ccc-wiki/entities/skills/route.md`.
 
+### 2026-09-11 /route v2.4.3
+`/route` v2.4.3: wire id `deepseek-flash` (V4.1 Flash, native vision). V4 Pro off rotation. Hard Grok-out = Flash then OpenCode. Always-apply rule `~/.cursor/rules/cemini-route-outsource.mdc`. Trigger: **route as recommended** / `/route` / `route this` in any Cursor workspace. Canon: `@ccc-wiki/entities/skills/route.md`. Brief: `../Cemini claude code CCC/docs/briefs/2026-09-11_route-v243-flash-not-pro.md`.
+
 ### K234 ingest (2026-08-12)
 | Page | Summary | Maturity |
 |------|---------|----------|

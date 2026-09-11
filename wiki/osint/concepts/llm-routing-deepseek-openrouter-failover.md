@@ -37,7 +37,7 @@ related:
   - sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-08-20
+updated: 2026-09-11
 ---
 
 ## Relations
@@ -46,7 +46,7 @@ updated: 2026-08-20
 - @concepts/api-credential-registry.md — `DEEPSEEK_*`, `OPENROUTER_*` variable names
 - @concepts/mcp-context-optimization.md — Layer 2 claude-code-router (complementary)
 - @ccc-wiki/entities/tools/agent-toolkit.md — private `/route` host (`ROUTE_KIT`)
-- @ccc-wiki/entities/skills/route.md — federation `/route` skill v2.3.2
+- @ccc-wiki/entities/skills/route.md — federation `/route` skill v2.4.3
 - @ccc-wiki/entities/tools/deepseek-harness.md — official `dsh` `/route` worker behind `claude-ds`
 - @sources/eval-github-repository-stack-2026-08-16.md — K240 dsh ecosystem; do not replace `claude-ds`
 - @entities/tools/dshackle.md — RPC proxy (name collision, not DSH)
@@ -88,7 +88,7 @@ Failover on HTTP 402/429 and quota/balance error strings. Disable with `LLM_FALL
 
 **Research improvement loop (2026-08-11):** OSINT digest cluster `cursor-route-harness` + active_topic `/route + agent-toolkit` steals failover / harness-evolution papers into CCC briefs. Standing backlog on `@ccc-wiki/entities/skills/route.md`. K231/K232 brief: CCC `briefs/2026-08-11_route-skill-k231-k232-steals.md`.
 
-**claude-ds worker (2026-08-14 v2.3.2):** official DeepSeek Harness `dsh` (pin `install-dsh.ps1` → `~/.dsh-cemini`) behind PATH name `claude-ds`. Default `deepseek-v4-flash`; `-Model deepseek-v4-pro` is the **Grok CLI usage-out stand-in**. Always-approve = `DSH_PERMISSION_MODE=danger-full-access`. Isolated Claude Code **2.1.222** at `~/.deepseek-claude` is **fallback** (`CLAUDE_DS_FORCE_LEGACY=1`). OpenCode/Reasonix remain **NO-GO** as extra coding loops (`@ccc-wiki/entities/tools/deepseek-harness.md`).
+**claude-ds worker (2026-09-11 v2.4.3):** official DeepSeek Harness `dsh` (pin `install-dsh.ps1` → `~/.dsh-cemini`) behind PATH name `claude-ds`. Wire id **`deepseek-flash`** (DeepSeek V4.1 Flash, native vision). Legacy `deepseek-v4-flash` / `deepseek-v4-pro` aliases map here. V4 Pro is **off rotation**. Grok-out mid plan = Flash (never Pro); Grok-out hard + Plan = Flash then OpenCode. Always-approve = `DSH_PERMISSION_MODE=danger-full-access`. Isolated Claude Code at `~/.deepseek-claude` is **fallback** (`CLAUDE_DS_FORCE_LEGACY=1`). OpenCode is a Zen-free **sidecar**, not a PATH swap. Reasonix remains **NO-GO**. Cursor always-apply rule: `~/.cursor/rules/cemini-route-outsource.mdc`. Say **route as recommended** in any federation workspace (`@ccc-wiki/entities/tools/deepseek-harness.md`).
 
 **K242 Glean / DRAM (2026-08-19):** Enterprise model routing is now a product (Glean automatic mode chosen mainly for cost; claimed ~$0.45/task vs Claude Cowork). That is **CCC backlog**, not a reason to swap `/route` or PATH `claude-ds`. DRAM +500%/12mo [TENTATIVE] raises local-lab capex; still skip uncensored HF weights.
 

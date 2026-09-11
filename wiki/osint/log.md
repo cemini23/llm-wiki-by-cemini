@@ -1,3 +1,10 @@
+## [2026-09-11] ops | /route v2.4.3 federation check (Flash not Pro)
+
+- Cursor always-apply rule was stale (Flash then Pro). CCC canon patched; synced to `~/.cursor/rules/cemini-route-outsource.mdc`.
+- Skill copies already v2.4.3 (`federation: true`). Trigger: **route as recommended** / `/route` / `route this` in any workspace.
+- Bump: `@concepts/llm-routing-deepseek-openrouter-failover.md`. Canon: `@ccc-wiki/entities/skills/route.md`.
+- Brief: `../Cemini claude code CCC/docs/briefs/2026-09-11_route-v243-flash-not-pro.md` (OSINT copy `briefs/2026-09-11_route-v243-flash-not-pro.md`).
+
 ## [2026-09-11] ingest | K259 wave
 
 - **Inbox:** 19 files. Preingest: 15 NEW, 2 LIKELY fold (EH 9 Sep courts re-drop; Wu spot same sha as K258), 2 DUPLICATE (Klement lottery same sha; LS joke title is a dated NEW issue).
