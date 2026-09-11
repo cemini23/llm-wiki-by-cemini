@@ -14,7 +14,7 @@ related:
   - sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md
 maturity: draft
 created: 2026-08-18
-updated: 2026-08-20
+updated: 2026-09-11
 harness_verb: FILE
 wire_note: CCC backlog on entities/skills/route.md — do not swap /route worker
 ---
@@ -31,7 +31,7 @@ wire_note: CCC backlog on entities/skills/route.md — do not swap /route worker
 
 ## Raw Concept
 
-K241 public MIT CLI `cemini23/cursor-route` (npm 0.1.1). Related CCC `/route` skill — **do not replace**.
+K241 public MIT CLI `cemini23/cursor-route` (npm **0.1.15**). Mid launch id is `deepseek-flash` (V4.1 Flash). Related CCC `/route` skill — **do not replace**.
 
 ## Narrative
 
