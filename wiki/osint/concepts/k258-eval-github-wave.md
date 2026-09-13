@@ -4,18 +4,20 @@ type: concept
 tags: [eval, github, k258, revenue]
 keywords: [E2B, keploy, execcritic, SPDX]
 related:
+  - concepts/k260-eval-github-wave.md
   - concepts/k257-eval-github-wave.md
   - sources/eval-technical-stack-revenue-2026-09-09.md
   - entities/tools/e2b.md
   - entities/tools/execcritic.md
 maturity: draft
 created: 2026-09-09
-updated: 2026-09-09
+updated: 2026-09-13
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k260-eval-github-wave.md
 - @concepts/k257-eval-github-wave.md
 - @sources/eval-technical-stack-revenue-2026-09-09.md
 - @entities/tools/e2b.md

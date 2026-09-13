@@ -383,6 +383,22 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K260 — 2026-09-13
+Dual-ID: **OSINT K260**. FILE only. **0 Integrate GO.**
+- Ecdysis SPDX null — no clone. Harness-vs-model failure split. Do not swap `/route`.
+- COBRA-Skills Apache-2.0 REFERENCE. **No unattended `.cursor/skills` evolve.**
+- Artificial Id — persistent alignment boundary; no harness self-write.
+- DeskcommCRM MIT REFERENCE — Atto WhatsApp/MCP extract. **PII vault. No Barone PII.**
+- pentagi + aimap MIT REFERENCE — cyber lab EXTRACT. Ask before MCP.
+- colibri Watch / wont_wire (throughput).
+- Claude-Red FILE — no PoC in wiki.
+- DeepSeek v4.1 Flash — `/route` Flash family already. Do not swap `/route`.
+- GuruWatcher — Capital Flows: no named levels → no auto-arm.
+- CeminiDFS — eval 0 Integrate (18/20 UNAVAILABLE).
+- CeminiParlays — pick'em FILE. No scrape / no auto-submit.
+- Gambling / WuBlock / Jane Street / quantum — wiki-only. **No xsp/pm scp.**
+- Verify: `bash scripts/adopt_k260_phase1.sh`. **No LIVE Discord.**
+
 ## OSINT K246–K253 routing index
 
 See `.cursor/rules/osint-k246-k253-phase1-wires.mdc` (alwaysApply) for per-wave wire_targets. Legacy detail remains in sections K241–K243 below.

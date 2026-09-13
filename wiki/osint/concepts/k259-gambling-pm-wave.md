@@ -4,17 +4,19 @@ type: concept
 tags: [gambling, prediction-markets, k259]
 keywords: [Kalshi, sports-volume, DGA, SCOTUS]
 related:
+  - concepts/k260-gambling-dfs-parlays-wave.md
   - concepts/k258-gambling-pm-wave.md
   - sources/substack-rss-event-horizon-2026-09-10-kalshi-sports-pie-2026-09-11.md
   - sources/substack-rss-event-horizon-2026-09-11-dga-pm-agenda-2026-09-11.md
 maturity: draft
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-13
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k260-gambling-dfs-parlays-wave.md
 - @concepts/k258-gambling-pm-wave.md
 - @sources/substack-rss-event-horizon-2026-09-10-kalshi-sports-pie-2026-09-11.md
 - @sources/substack-rss-event-horizon-2026-09-11-dga-pm-agenda-2026-09-11.md

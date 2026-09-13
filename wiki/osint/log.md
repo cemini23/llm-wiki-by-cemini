@@ -1,3 +1,29 @@
+## [2026-09-13] ingest | K260 wave
+
+- **Inbox:** 16 NEW (2 eval + 4 arXiv + Jane Street + 9 newsletters). Preingest: 16 NEW.
+- **Sources:** DFS eval 0 Integrate; multi-wiki SPDX overrides; pick'em Power/Flex; Ecdysis; COBRA-Skills; Artificial Id; quantum OOD; Jane Street zero-mean; LS V4.1 Flash + FDE; Capital Flows; SecPro #251; 4 WuBlock.
+- **Concepts:** 8 k260-* hubs. Entities: ecdysis, cobra-skills, pentagi, deskcommcrm, aimap, openresearch. Bumps: colibri Watch, Claude-Red FILE, k259 hubs, llm-routing, GuruWatcher.
+- **Phase-0:** `adopt_k260_phase0.sh` — COBRA-Skills Apache-2.0; pentagi / DeskcommCRM / aimap / OpenResearch MIT. Ecdysis + Netryx SPDX null NO-GO. **0 Integrate GO.**
+- **Routing:** Atto DeskcommCRM EXTRACT + PII vault. CCC Ecdysis/COBRA/Artificial Id/V4.1 Flash/FDE FILE (do not swap /route). Cyber SecPro + pentagi/aimap EXTRACT. GW no auto-arm. CeminiDFS 0 Integrate. CeminiParlays pick'em FILE. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-13_k260-*` written (gitignored). Sibling copies blocked by workspace sandbox — operator `cp` leftover.
+- **Archive:** 16/16 inbox → egress-fi. Local copies removed.
+- **gate:** `ingest_session_gate.py` WARN acknowledged — stale `[NEEDS VERIFICATION]` on historical `wiki/log.md` entries are pre-existing, not this batch.
+
+## [2026-09-13] phase-0 | K260
+
+- **Jerry-LuP/COBRA-Skills** — Apache-2.0 `[CONFIRMED]` gh api; ~25MB GO REFERENCE. FILE. No unattended skill evolve.
+- **vxcontrol/pentagi** — MIT `[CONFIRMED]`; ~58MB GO REFERENCE EXTRACT. Ask before MCP.
+- **melgarafael/DeskcommCRM** — MIT `[CONFIRMED]` (docx NOT FOUND); ~126MB GO REFERENCE. Atto EXTRACT. PII vault. No Barone PII.
+- **BishopFox/aimap** — MIT `[CONFIRMED]`; ~1.4MB GO REFERENCE EXTRACT.
+- **alphaXiv/OpenResearch** — MIT `[CONFIRMED]`; ~73MB GO REFERENCE. CeminiDFS FILE.
+- **SKIP:** Ecdysis SPDX null; Netryx SPDX null; colibri already Watch; Claude-Red already present; ever-gauzy AGPL SIZE-SKIP; omniget GPL extract-only; DFS 404/null.
+- **0 Integrate GO.**
+
+## [2026-09-13] routing | v10.6 stack — poker retired; DFS #3 · Parlays #4
+
+- CCC Gemini eval prompt **v10.6**: #1 Atto · #2 GuruWatcher · #3 CeminiDFS · #4 CeminiParlays · then wikis. Poker arena retired.
+- Updated: `@concepts/active-project-research-routing.md` · `scripts/active_project_brief_targets.yaml` · `scripts/daily_research_config.yaml`.
+
 ## [2026-09-11] ops | /route v2.4.3 federation check (Flash not Pro)
 
 - Cursor always-apply rule was stale (Flash then Pro). CCC canon patched; synced to `~/.cursor/rules/cemini-route-outsource.mdc`.

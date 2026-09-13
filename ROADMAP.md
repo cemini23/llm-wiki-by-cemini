@@ -30,6 +30,14 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-13 — K260 ingest)
+
+- **K260 ingest** — 16 NEW (2 eval + 4 arXiv + Jane Street + 9 newsletters). 16 source pages + 8 hubs + 6 new entities. Raws to egress-fi. **0 Integrate GO. No xsp/pm scp.**
+- **Phase-0** — `adopt_k260_phase0.sh`: COBRA-Skills Apache-2.0; pentagi / DeskcommCRM / aimap / OpenResearch MIT. Ecdysis + Netryx SPDX null NO-GO clone.
+- **Routing** — Atto #1 DeskcommCRM EXTRACT (PII vault; Transkribus sole HTR). GW #2 Capital Flows no auto-arm. CeminiDFS #3 eval 0 Integrate. CeminiParlays #4 pick'em FILE. CCC harness FILE (do not swap /route). Cyber EXTRACT. Poker retired.
+- **Briefs** — `briefs/2026-09-13_k260-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot §9–§16 paste; HL/Kalshi/equity/cross-venue backtests overdue.
+
 ## Current state (2026-09-11 — K259 ingest)
 
 - **K259 ingest** — 15 NEW (8 arXiv + 8 newsletters minus folds). Needed paper: GZSL HTR bias for Atto. Show-Harness SIZE-SKIP. **0 Integrate GO. No xsp/pm scp.**

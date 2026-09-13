@@ -35,9 +35,11 @@ related:
   - sources/newsletter-rss-pragmatic-engineer-2026-08-18-eng-leader-exit.md
   - entities/tools/easy-agent.md
   - sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md
+  - concepts/k260-ccc-models-wave.md
+  - sources/newsletter-rss-latent-space-2026-09-12-ainews-v41-flash-2026-09-13.md
 maturity: draft
 created: 2026-06-04
-updated: 2026-09-11
+updated: 2026-09-13
 ---
 
 ## Relations
@@ -69,6 +71,8 @@ updated: 2026-09-11
 - @sources/newsletter-rss-pragmatic-engineer-2026-08-18-eng-leader-exit.md — operator attention scarce
 - @entities/tools/easy-agent.md — MIT harness Extract; not a worker swap
 - @sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md — K243 GLM-5.3 / TrueForge / DSH; do not swap /route
+- @concepts/k260-ccc-models-wave.md — K260 V4.1 Flash / FDE FILE
+- @sources/newsletter-rss-latent-space-2026-09-12-ainews-v41-flash-2026-09-13.md — V4.1 Flash is current Flash family; do not swap `/route`
 
 ## Raw Concept
 
@@ -89,6 +93,8 @@ Failover on HTTP 402/429 and quota/balance error strings. Disable with `LLM_FALL
 **Research improvement loop (2026-08-11):** OSINT digest cluster `cursor-route-harness` + active_topic `/route + agent-toolkit` steals failover / harness-evolution papers into CCC briefs. Standing backlog on `@ccc-wiki/entities/skills/route.md`. K231/K232 brief: CCC `briefs/2026-08-11_route-skill-k231-k232-steals.md`.
 
 **claude-ds worker (2026-09-11 v2.4.3):** official DeepSeek Harness `dsh` (pin `install-dsh.ps1` → `~/.dsh-cemini`) behind PATH name `claude-ds`. Wire id **`deepseek-flash`** (DeepSeek V4.1 Flash, native vision). Legacy `deepseek-v4-flash` / `deepseek-v4-pro` aliases map here. V4 Pro is **off rotation**. Grok-out mid plan = Flash (never Pro); Grok-out hard + Plan = Flash then OpenCode. Always-approve = `DSH_PERMISSION_MODE=danger-full-access`. Isolated Claude Code at `~/.deepseek-claude` is **fallback** (`CLAUDE_DS_FORCE_LEGACY=1`). OpenCode is a Zen-free **sidecar**, not a PATH swap. Reasonix remains **NO-GO**. Cursor always-apply rule: `~/.cursor/rules/cemini-route-outsource.mdc`. Say **route as recommended** in any federation workspace (`@ccc-wiki/entities/tools/deepseek-harness.md`).
+
+**K260 V4.1 Flash (2026-09-13):** Latent Space confirms the current Flash family is the causal encoder–decoder 763B-P8B-D16B with vision, MIT license, 1M context, ~1/8 KV vs V4 Flash, AA Index 40. Verbosity is high (~89k tok/task) but cost is low. `/route` already uses `deepseek-flash`. **Do not swap `/route`.** V4 Pro stays off rotation.
 
 **K242 Glean / DRAM (2026-08-19):** Enterprise model routing is now a product (Glean automatic mode chosen mainly for cost; claimed ~$0.45/task vs Claude Cowork). That is **CCC backlog**, not a reason to swap `/route` or PATH `claude-ds`. DRAM +500%/12mo [TENTATIVE] raises local-lab capex; still skip uncensored HF weights.
 

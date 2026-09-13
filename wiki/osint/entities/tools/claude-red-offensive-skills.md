@@ -6,9 +6,15 @@ keywords: [claude-red, snailsploit, offensive-security, skill-md, claude-code, p
 related:
   - sources/multi-wiki-link-eval-v4-2026-05-15.md
   - concepts/ip-sale-readiness.md
+  - concepts/k260-cybersec-wave.md
+  - concepts/k260-eval-github-wave.md
+  - sources/eval-multi-wiki-revenue-2026-09-13.md
 maturity: draft
 created: 2026-05-15
-updated: 2026-05-15
+updated: 2026-09-13
+harness_verb: FILE
+wire_status: policy_wired
+wire_note: Already operator skills. K260 FILE. No new clone. No PoC in wiki.
 ---
 
 ## Relations
@@ -16,15 +22,19 @@ updated: 2026-05-15
 
 - @sources/multi-wiki-link-eval-v4-2026-05-15.md — evaluated in v4 link-eval (Adopt tier)
 - @concepts/ip-sale-readiness.md — MIT license clean for IP-sale portfolio
+- @concepts/k260-cybersec-wave.md
+- @concepts/k260-eval-github-wave.md
+- @sources/eval-multi-wiki-revenue-2026-09-13.md
 
 ## Raw Concept
 
 Promoted from the v4 multi-wiki link evaluation (2026-05-15). Tier: **Adopt**. Primary fit: Cybersec-wiki.
 
 URL: https://github.com/SnailSploit/Claude-Red
-License: MIT
-Stars: 1.3k | Last commit: 2026-03-08 | Open issues: 0
+License: MIT `[CONFIRMED]` gh api 2026-09-13
+Stars: 3865 (2026-09-13) | Last commit: 2026-03-08 | Open issues: 0
 Stack: Python / Shell / Markdown
+K260 FILE. No new clone. **No PoC in wiki.** `wire_status: policy_wired` (already operator skills).
 
 ## Narrative
 

@@ -7,6 +7,42 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K260 ingest (2026-09-13)
+OSINT K260: 16 NEW (2 eval + 4 arXiv + Jane Street + 9 newsletters). Phase-0 REFERENCE: COBRA-Skills Apache-2.0; pentagi / DeskcommCRM / aimap / OpenResearch MIT. Ecdysis + Netryx SPDX null NO-GO clone. DFS 18/20 UNAVAILABLE. **0 Integrate GO. No xsp/pm scp. No skill auto-evolve.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k260-harness-evolution-wave](concepts/k260-harness-evolution-wave.md) | K260 Harness Evolution Wave | draft |
+| [k260-ccc-models-wave](concepts/k260-ccc-models-wave.md) | K260 CCC Models Wave | draft |
+| [k260-atto-wave](concepts/k260-atto-wave.md) | K260 Atto Wave | draft |
+| [k260-cybersec-wave](concepts/k260-cybersec-wave.md) | K260 Cybersec Wave | draft |
+| [k260-eval-github-wave](concepts/k260-eval-github-wave.md) | K260 Eval GitHub Wave | draft |
+| [k260-gambling-dfs-parlays-wave](concepts/k260-gambling-dfs-parlays-wave.md) | K260 Gambling DFS Parlays Wave | draft |
+| [k260-newsletter-macro-wave](concepts/k260-newsletter-macro-wave.md) | K260 Newsletter Macro Wave | draft |
+| [k260-ood-stub-wave](concepts/k260-ood-stub-wave.md) | K260 OOD Stub Wave | draft |
+| [ecdysis](entities/tools/ecdysis.md) | Ecdysis SPDX null NO-GO clone | draft |
+| [cobra-skills](entities/tools/cobra-skills.md) | COBRA-Skills Apache-2.0 GO REFERENCE | draft |
+| [pentagi](entities/tools/pentagi.md) | pentagi MIT GO REFERENCE EXTRACT | draft |
+| [deskcommcrm](entities/tools/deskcommcrm.md) | DeskcommCRM MIT GO REFERENCE Atto EXTRACT | draft |
+| [aimap](entities/tools/aimap.md) | aimap MIT GO REFERENCE EXTRACT | draft |
+| [openresearch](entities/tools/openresearch.md) | OpenResearch MIT GO REFERENCE CeminiDFS FILE | draft |
+| [eval-dfs-repository-revenue-2026-09-13](sources/eval-dfs-repository-revenue-2026-09-13.md) | DFS eval 18/20 UNAVAILABLE | draft |
+| [eval-multi-wiki-revenue-2026-09-13](sources/eval-multi-wiki-revenue-2026-09-13.md) | Multi-wiki eval SPDX overrides | draft |
+| [pickem-gemini-nfl-parlays-2026-09-13](sources/pickem-gemini-nfl-parlays-2026-09-13.md) | NFL pick'em Power/Flex hurdles | draft |
+| [arxiv-2609.11402-quantum-composition-paradox-2026-09-13](sources/arxiv-2609.11402-quantum-composition-paradox-2026-09-13.md) | Quantum composition paradox OOD | draft |
+| [arxiv-2609.11677-ecdysis-runtime-harness-2026-09-13](sources/arxiv-2609.11677-ecdysis-runtime-harness-2026-09-13.md) | Ecdysis runtime harness | draft |
+| [arxiv-2609.11682-cobra-skills-2026-09-13](sources/arxiv-2609.11682-cobra-skills-2026-09-13.md) | COBRA-Skills bandit skill opt | draft |
+| [arxiv-2609.11911-artificial-id-2026-09-13](sources/arxiv-2609.11911-artificial-id-2026-09-13.md) | Artificial Id persistent alignment | draft |
+| [janestreet-zero-mean-test-2026-09-13](sources/janestreet-zero-mean-test-2026-09-13.md) | Jane Street zero-mean R² | draft |
+| [newsletter-rss-latent-space-2026-09-12-ainews-v41-flash-2026-09-13](sources/newsletter-rss-latent-space-2026-09-12-ainews-v41-flash-2026-09-13.md) | DeepSeek v4.1 Flash | draft |
+| [newsletter-rss-latent-space-2026-09-12-fde-2026-09-13](sources/newsletter-rss-latent-space-2026-09-12-fde-2026-09-13.md) | Forward deployed engineer | draft |
+| [substack-rss-capital-flows-2026-09-11-monetary-regime-2026-09-13](sources/substack-rss-capital-flows-2026-09-11-monetary-regime-2026-09-13.md) | Capital Flows monetary regime | draft |
+| [substack-rss-secpro-2026-09-11-251-2026-09-13](sources/substack-rss-secpro-2026-09-11-251-2026-09-13.md) | SecPro #251 analyst up the stack | draft |
+| [substack-rss-wublock-2026-09-11-wealthx-xstocks-2026-09-13](sources/substack-rss-wublock-2026-09-11-wealthx-xstocks-2026-09-13.md) | WealthX xStocks | draft |
+| [substack-rss-wublock-2026-09-11-clarity-act-weekly-2026-09-13](sources/substack-rss-wublock-2026-09-11-clarity-act-weekly-2026-09-13.md) | CLARITY Act weekly | draft |
+| [substack-rss-wublock-2026-09-12-project-updates-2026-09-13](sources/substack-rss-wublock-2026-09-12-project-updates-2026-09-13.md) | Base App → Coinbase Wallet | draft |
+| [substack-rss-wublock-2026-09-13-asia-top10-2026-09-13](sources/substack-rss-wublock-2026-09-13-asia-top10-2026-09-13.md) | Asia TOP10 crypto news | draft |
+
 ### K259 ingest (2026-09-11)
 OSINT K259: 8 arXiv + 8 newsletters NEW; 2 DUPLICATE folds (Klement lottery, Wu spot); 1 LIKELY fold (EH 9 Sep courts re-drop); LS joke-title collision ingested as dated issue. Needed paper: GZSL handwriting bias for Atto HTR. Show-Harness Apache-2.0 SIZE-SKIP ~492MB. **0 Integrate GO. No xsp/pm scp.**
 

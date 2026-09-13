@@ -4,16 +4,18 @@ type: concept
 tags: [atto, htr, k259, genealogy]
 keywords: [GZSL, handwriting, bias-correction, Transkribus]
 related:
+  - concepts/k260-atto-wave.md
   - concepts/k256-atto-collab-wave.md
   - sources/arxiv-2609.10084-gzsl-handwriting-bias-2026-09-11.md
 maturity: draft
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-13
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k260-atto-wave.md
 - @concepts/k256-atto-collab-wave.md
 - @sources/arxiv-2609.10084-gzsl-handwriting-bias-2026-09-11.md
 

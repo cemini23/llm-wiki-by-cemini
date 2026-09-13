@@ -29,13 +29,17 @@ related:
   - sources/substack-rss-klement-2026-09-10-build-more-houses-2026-09-11.md
   - concepts/k258-newsletter-macro-wave.md
   - sources/substack-rss-klement-2026-09-09-lottery-momentum-2026-09-09.md
+  - concepts/k260-newsletter-macro-wave.md
+  - sources/substack-rss-capital-flows-2026-09-11-monetary-regime-2026-09-13.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-11
+updated: 2026-09-13
 ---
 
 ## Relations
 
+- @concepts/k260-newsletter-macro-wave.md
+- @sources/substack-rss-capital-flows-2026-09-11-monetary-regime-2026-09-13.md — K260 no named levels → no auto-arm
 - @sources/newsletter-capital-flows-inflation-risk-2026-08-12.md
 - @sources/substack-rss-capital-flows-2026-08-15-bond-market-crash.md — K239 30y / 10s30s / SPX-DXY covariance
 - @concepts/inflation-risk-regime-2026.md

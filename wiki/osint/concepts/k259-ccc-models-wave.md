@@ -4,17 +4,19 @@ type: concept
 tags: [ccc, k259, routing]
 keywords: [CPU-shortage, AutoResearchExam, Anthropic-incidents]
 related:
+  - concepts/k260-ccc-models-wave.md
   - concepts/k258-ccc-models-wave.md
   - sources/newsletter-rss-latent-space-2026-09-10-ainews-2026-09-11.md
   - sources/newsletter-rss-pragmatic-engineer-2026-09-10-pulse-191-2026-09-11.md
 maturity: draft
 created: 2026-09-11
-updated: 2026-09-11
+updated: 2026-09-13
 harness_verb: FILE
 ---
 
 ## Relations
 
+- @concepts/k260-ccc-models-wave.md
 - @concepts/k258-ccc-models-wave.md
 - @sources/newsletter-rss-latent-space-2026-09-10-ainews-2026-09-11.md
 - @sources/newsletter-rss-pragmatic-engineer-2026-09-10-pulse-191-2026-09-11.md
