@@ -1,3 +1,9 @@
+## [2026-09-13] briefs | K260 DeskcommCRM fold + MCP/skill hold
+
+- Atto brief `2026-09-13_k260-atto.md` now has the DeskcommCRM EXTRACT (MCP catalog/refuse/audit, four OR handoff, opt-out, event_log). Operator takes the Atto board.
+- GW brief ready: no auto-arm, no `watches.json` rewrite.
+- pentagi/aimap: **no MCP install** (not wired). COBRA-Skills: **no skill evolve** (not in `.cursor/skills`).
+
 ## [2026-09-13] ingest | K260 wave
 
 - **Inbox:** 16 NEW (2 eval + 4 arXiv + Jane Street + 9 newsletters). Preingest: 16 NEW.

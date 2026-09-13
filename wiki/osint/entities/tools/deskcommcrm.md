@@ -38,3 +38,5 @@ K260 Phase-0 on [melgarafael/DeskcommCRM](https://github.com/melgarafael/Deskcom
 | **Verdict** | **GO REFERENCE** Atto EXTRACT. **0 Integrate GO.** |
 
 PII vault. No Barone PII. **wont_wire** until operator OK. Transkribus remains sole product HTR.
+
+Steal (FILE / EXTRACT — see Atto brief `2026-09-13_k260-atto.md`): MCP catalog as a wire contract + dual audience copy; non-LLM refuse then model-safe refuse text; MCP audit with CPF/token redact; four OR human-handoff triggers then bot does not resume; opt-out is not a loose substring; inbound HMAC + `event_log` workers (no HTTP from Postgres triggers). Do not vendor the CRM. No `curl | sh` installer. No WhatsApp runtime this wave.

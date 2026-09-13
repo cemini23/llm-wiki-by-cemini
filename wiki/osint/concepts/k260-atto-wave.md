@@ -25,4 +25,4 @@ K260 cluster hub.
 
 ## Narrative
 
-DeskcommCRM MIT GO REFERENCE — Atto WhatsApp/MCP EXTRACT. PII vault. No Barone PII. openlibrary = EXTRACT mention only. Netryx SPDX null **NO-GO clone**. **Transkribus remains sole product HTR.** K259 GZSL 2609.10084 already ingested — no further HTR paper this wave. **0 Integrate GO.**
+DeskcommCRM MIT GO REFERENCE — Atto WhatsApp/MCP EXTRACT folded into `../atto/briefs/2026-09-13_k260-atto.md` (operator takes the Atto board). Steal: MCP catalog/refuse/audit, four OR handoff + no-resume, opt-out rule, `event_log` workers. PII vault. No Barone PII. Do not vendor the CRM. openlibrary = EXTRACT mention only. Netryx SPDX null **NO-GO clone**. **Transkribus remains sole product HTR.** K259 GZSL 2609.10084 already ingested — no further HTR paper this wave. **0 Integrate GO.**
