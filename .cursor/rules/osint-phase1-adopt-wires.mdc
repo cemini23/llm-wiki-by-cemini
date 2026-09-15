@@ -383,6 +383,20 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K261 — 2026-09-15
+Dual-ID: **OSINT K261**. FILE only. **0 Integrate GO.**
+- worldmonitor AGPL Watch reaffirm — no re-clone.
+- power-pwn MIT REFERENCE — cyber EXTRACT; authorized lab; no PoC.
+- agentic-inbox Apache-2.0 REFERENCE — Atto/CCC FILE; Cloudflare lock-in; not product Integrate.
+- mcp-sports-hub MIT REFERENCE — DFS/Parlays FILE; ask before MCP; no scrape.
+- arsenal-ng MIT REFERENCE — cyber EXTRACT; no PoC.
+- ligolo-ng GPL-3.0 EXTRACT-ONLY — no vendor.
+- hypit NOASSERTION — no clone.
+- GuruWatcher — Talon named levels = claim-ledger HITL; never auto-arm; never watches.json.
+- Event Horizon — **no pm scp.**
+- Talon / Kelly / WuBlock — **no xsp scp.**
+- Verify: `bash scripts/adopt_k261_phase1.sh`. **No LIVE Discord.**
+
 ## OSINT K260 — 2026-09-13
 Dual-ID: **OSINT K260**. FILE only. **0 Integrate GO.**
 - Ecdysis SPDX null — no clone. Harness-vs-model failure split. Do not swap `/route`.

@@ -12,9 +12,10 @@ related:
   - entities/tools/claude-red-offensive-skills.md
   - entities/tools/pentagi.md
   - entities/tools/aimap.md
+  - concepts/k261-cybersec-wave.md
 maturity: draft
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-15
 harness_verb: FILE
 ---
 
@@ -28,6 +29,7 @@ harness_verb: FILE
 - @entities/tools/claude-red-offensive-skills.md
 - @entities/tools/pentagi.md
 - @entities/tools/aimap.md
+- @concepts/k261-cybersec-wave.md
 
 ## Raw Concept
 
@@ -35,4 +37,4 @@ K260 cluster hub.
 
 ## Narrative
 
-SecPro #251: analyst judges AI summaries; Verizon 2026 DBIR vuln exploit 31%; gen-AI in 15% attack techniques; Google agent IAM. pentagi + aimap MIT GO REFERENCE EXTRACT. colibri Watch / wont_wire (throughput). Claude-Red FILE; **no PoC in wiki**. telegram-bot-dumper MIT EXTRACT awareness — do not dump Telegram. **No PoC.**
+SecPro #251: analyst judges AI summaries; Verizon 2026 DBIR vuln exploit 31%; gen-AI in 15% attack techniques; Google agent IAM. pentagi + aimap MIT GO REFERENCE EXTRACT. colibri Watch / wont_wire (throughput). Claude-Red FILE; **no PoC in wiki**. telegram-bot-dumper MIT EXTRACT awareness — do not dump Telegram. **No PoC.** Successor: @concepts/k261-cybersec-wave.md.

@@ -1,4 +1,33 @@
+## [2026-09-15] ingest | K261 wave
+
+- **Inbox:** 10 files (7 NEW + 3 LIKELY treated as NEW: Osmani different title, Talon new week, Moontower #327 next issue). Preingest: parent ran; do not re-litigate licenses.
+- **Sources:** stack eval SPDX overrides; Osmani brownfield; EH Ep 32 enforcement; Talon 14–18 Sep; Klement debt + disasters; Moontower Kelly + #327; Outlier Tanbreez; WuBlock Fed/BOJ.
+- **Concepts:** 7 k261-* hubs. Entities: power-pwn, agentic-inbox, mcp-sports-hub, arsenal-ng, m3e-canvas. Bumps: worldmonitor AGPL Watch reaffirm, vphone-cli no new clone, wiki-tooling-evaluation FILE-not-Integrate, GuruWatcher Talon HITL, k260 hubs.
+- **Phase-0:** `adopt_k261_phase0.sh` — power-pwn / mcp-sports-hub / arsenal-ng / m3e-canvas MIT; agentic-inbox Apache-2.0. **0 Integrate GO.**
+- **Routing:** Atto #1 FILE (CF email + agentic-inbox; hypit NO-GO). GW #2 Talon HITL no auto-arm. CeminiDFS #3 mcp-sports-hub FILE no MCP. CeminiParlays #4 EH + Kelly FILE. CCC Osmani/m3e FILE (do not swap /route). Cyber EXTRACT. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-15_k261-*` written (gitignored). Sibling copies blocked by workspace sandbox — operator `cp` leftover.
+- **Archive:** 10/10 inbox → egress-fi. Local copies removed.
+- **gate:** `ingest_session_gate.py` WARN acknowledged — stale `[NEEDS VERIFICATION]` on historical `wiki/log.md` entries are pre-existing, not this batch. IMF Nguyen et al (2026) is URL-only `[NEEDS VERIFICATION 2026-09-15]`. Daily digest paper lane = 0 hits — no arXiv fetch.
+
+## [2026-09-15] phase-0 | K261
+
+- **mbrg/power-pwn** — MIT `[CONFIRMED]` gh api 2026-09-15; ~3.5MB GO REFERENCE EXTRACT. Authorized lab. No PoC.
+- **cloudflare/agentic-inbox** — Apache-2.0 `[CONFIRMED]`; ~3.5MB GO REFERENCE FILE. Cloudflare lock-in; not product Integrate.
+- **lacausecrypto/mcp-sports-hub** — MIT `[CONFIRMED]`; ~3MB GO REFERENCE FILE. Ask before MCP.
+- **halilkirazkaya/arsenal-ng** — MIT `[CONFIRMED]`; ~18MB GO REFERENCE EXTRACT. No PoC.
+- **lnkiai/m3e-canvas** — MIT `[CONFIRMED]`; ~9MB GO REFERENCE FILE CCC.
+- **SKIP:** worldmonitor AGPL Watch reaffirm no re-clone; hypit NOASSERTION NO-GO; vphone-cli exists; ligolo GPL extract-only no clone; VoiceStudio AGPL; auto-gpu-kernel Watch; YOINK no pm scp; awesome-trading-agents list no clone.
+- **0 Integrate GO.**
+
+## [2026-09-14] operator | Grok Bot DFS/Parlays desks (§17–19)
+
+- **Brief:** `briefs/2026-09-01_grok-bot-charters.md` — §17 Parlays Slate Desk (weather / roster / scheme → `environment.csv`); §18 DFS Recap Desk; §19 Parlays Recap Desk. DFS Slate Desk remains §8.
+- **Product copies:** `CeminiParlays/docs/GROK-BOTS.md`, `CeminiDFS/docs/GROK-BOTS.md`; sibling briefs `2026-09-14_grok-bots.md`.
+- **Wiki:** bump `grok-bot`, `grok-bot-operator-patterns`. FILE only; operator paste into Grok Bot.app. No Odds API key on the Bot VM. No sportsbook submit. No FanDuel Enter.
+- **Example:** `CeminiParlays/examples/recap_sportsbook_ledger.csv` for `ceminiparlays grade`.
+
 ## [2026-09-13] briefs | K260 DeskcommCRM fold + MCP/skill hold
+
 
 - Atto brief `2026-09-13_k260-atto.md` now has the DeskcommCRM EXTRACT (MCP catalog/refuse/audit, four OR handoff, opt-out, event_log). Operator takes the Atto board.
 - GW brief ready: no auto-arm, no `watches.json` rewrite.

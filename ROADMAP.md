@@ -30,6 +30,19 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-15 — K261 ingest)
+
+- **K261 ingest** — 10 inbox (7 NEW + 3 LIKELY as NEW). 10 source pages + 7 hubs + 5 new entities. Raws to egress-fi. **0 Integrate GO. No xsp/pm scp. No MCP. No skill evolve. No LIVE Discord.**
+- **Phase-0** — `adopt_k261_phase0.sh`: power-pwn / mcp-sports-hub / arsenal-ng / m3e-canvas MIT; agentic-inbox Apache-2.0. AGPL/GPL/NOASSERTION no clone.
+- **Routing** — Atto #1 CF email + agentic-inbox FILE (DeskcommCRM EXTRACT still open). GW #2 Talon HITL never auto-arm. CeminiDFS #3 mcp-sports-hub FILE. CeminiParlays #4 EH + Kelly FILE. CCC Osmani/m3e FILE (do not swap /route). Cyber EXTRACT authorized lab. Poker retired.
+- **Briefs** — `briefs/2026-09-15_k261-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run).
+
+## Current state (2026-09-14 — DFS/Parlays Grok desks)
+
+- **Grok Bot** — paste §17 Parlays Slate Desk, §18 DFS Recap, §19 Parlays Recap (`briefs/2026-09-01_grok-bot-charters.md`). Product copies in CeminiDFS + CeminiParlays `docs/GROK-BOTS.md`. FILE only. No book submit. No Odds API on the Bot VM.
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot §9–§16 paste still leftover if not applied; HL/Kalshi/equity/cross-venue backtests overdue.
+
 ## Current state (2026-09-13 — K260 ingest)
 
 - **K260 ingest** — 16 NEW (2 eval + 4 arXiv + Jane Street + 9 newsletters). 16 source pages + 8 hubs + 6 new entities. Raws to egress-fi. **0 Integrate GO. No xsp/pm scp.**

@@ -306,13 +306,19 @@ related:
   - sources/eval-tech-stack-opportunity-2026-08-06.md
   - entities/tools/she-safety-harness.md
   - sources/eval-multi-wiki-revenue-plan-2026-08-18.md
+  - sources/eval-multi-wiki-stack-revenue-2026-09-15.md
+  - concepts/k261-eval-github-wave.md
+  - entities/tools/agentic-inbox.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-08-11
+updated: 2026-09-15
 ---
 
 ## Relations
+- @sources/eval-multi-wiki-stack-revenue-2026-09-15.md — K261 eval
+- @concepts/k261-eval-github-wave.md
+- @entities/tools/agentic-inbox.md — K261 FILE REFERENCE, not Integrate
 - @entities/tools/stagehand.md
 - @entities/tools/infographic.md
 - @entities/tools/smart-ralph.md
@@ -821,7 +827,7 @@ After Wave 1 (this page above) decided **adopt llm-wiki-compiler**, the user aut
 - `Fincept-Corporation/FinceptTerminal` (AGPL-3.0 + Commercial dual) — confirms AGPL-3.0 transitive-taint reject
 - `mksglu/context-mode` (ELv2) — adds Elastic License 2.0 to the source-available-not-OSI reject family alongside SSPL/PolyForm-Noncommercial
 
-**Reject — domain mismatch / closed-source (5):** `hyperframes` (video rendering), `agentic-inbox` (Cloudflare lock-in), `toprank` (SEO/Ads), `claude-ads` (PPC audit), `sci-bot.ru` (proprietary closed-source, no API, Sci-Hub-affiliated)
+**Reject — domain mismatch / closed-source (5):** `hyperframes` (video rendering), `agentic-inbox` (Cloudflare lock-in), `toprank` (SEO/Ads), `claude-ads` (PPC audit), `sci-bot.ru` (proprietary closed-source, no API, Sci-Hub-affiliated). **K261 (2026-09-15):** `agentic-inbox` stays not-Integrate; Apache-2.0 **FILE REFERENCE** clone only (`entities/tools/agentic-inbox.md`) — do not fight the old reject.
 
 **Defer — pending verification (1):** `camofox-browser` (MIT) — RAM profiling required for the C++-patched Firefox fork before deploying to Hetzner
 

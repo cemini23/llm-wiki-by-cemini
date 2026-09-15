@@ -7,6 +7,34 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K261 ingest (2026-09-15)
+OSINT K261: 10 inbox (7 NEW + 3 LIKELY treated as NEW: Osmani different title, Talon new week, Moontower #327 next issue). Phase-0 REFERENCE: power-pwn / mcp-sports-hub / arsenal-ng / m3e-canvas MIT; agentic-inbox Apache-2.0. worldmonitor AGPL Watch reaffirm; hypit NOASSERTION NO-GO; ligolo GPL EXTRACT-ONLY no clone. **0 Integrate GO. No xsp/pm scp. No MCP. No skill auto-evolve. No LIVE Discord.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k261-eval-github-wave](concepts/k261-eval-github-wave.md) | K261 Eval GitHub Wave | draft |
+| [k261-ccc-harness-wave](concepts/k261-ccc-harness-wave.md) | K261 CCC Harness Wave | draft |
+| [k261-atto-wave](concepts/k261-atto-wave.md) | K261 Atto Wave | draft |
+| [k261-cybersec-wave](concepts/k261-cybersec-wave.md) | K261 Cybersec Wave | draft |
+| [k261-newsletter-macro-wave](concepts/k261-newsletter-macro-wave.md) | K261 Newsletter Macro Wave | draft |
+| [k261-gambling-pm-wave](concepts/k261-gambling-pm-wave.md) | K261 Gambling PM Wave | draft |
+| [k261-xsp-talon-kelly-wave](concepts/k261-xsp-talon-kelly-wave.md) | K261 XSP Talon Kelly Wave | draft |
+| [power-pwn](entities/tools/power-pwn.md) | power-pwn MIT GO REFERENCE EXTRACT | draft |
+| [agentic-inbox](entities/tools/agentic-inbox.md) | agentic-inbox Apache-2.0 GO REFERENCE FILE | draft |
+| [mcp-sports-hub](entities/tools/mcp-sports-hub.md) | mcp-sports-hub MIT GO REFERENCE FILE | draft |
+| [arsenal-ng](entities/tools/arsenal-ng.md) | arsenal-ng MIT GO REFERENCE EXTRACT | draft |
+| [m3e-canvas](entities/tools/m3e-canvas.md) | m3e-canvas MIT GO REFERENCE FILE | draft |
+| [eval-multi-wiki-stack-revenue-2026-09-15](sources/eval-multi-wiki-stack-revenue-2026-09-15.md) | Multi-wiki stack eval SPDX overrides | draft |
+| [osmani-brownfield](sources/substack-rss-addy-osmani-2026-09-14-brownfield-2026-09-15.md) | Osmani brownfield zones | draft |
+| [eh-ep32](sources/substack-rss-event-horizon-2026-09-14-ep32-enforcement-2026-09-15.md) | EH Ep 32 Kalshi enforcement | draft |
+| [talon-sep14](sources/substack-rss-glitchspx-2026-09-13-talon-weekly-2026-09-15.md) | Talon 14–18 Sep HITL map | draft |
+| [klement-debt](sources/substack-rss-klement-2026-09-14-debt-tipping-2026-09-15.md) | Klement US debt tipping | draft |
+| [klement-disasters](sources/substack-rss-klement-2026-09-14-disasters-gdp-2026-09-15.md) | Klement disasters GDP | draft |
+| [moontower-kelly](sources/substack-rss-moontower-2026-09-13-kelly-head-2026-09-15.md) | Moontower Kelly f* | draft |
+| [moontower-327](sources/substack-rss-moontower-2026-09-13-327-2026-09-15.md) | Moontower #327 Kelly wrap | draft |
+| [outlier-tanbreez](sources/substack-rss-outlier-weekly-2026-09-14-tanbreez-2026-09-15.md) | Outlier CRML/Tanbreez | draft |
+| [wublock-fed-boj](sources/substack-rss-wublock-2026-09-14-fed-boj-2026-09-15.md) | WuBlock Fed/BOJ week | draft |
+
 ### K260 ingest (2026-09-13)
 OSINT K260: 16 NEW (2 eval + 4 arXiv + Jane Street + 9 newsletters). Phase-0 REFERENCE: COBRA-Skills Apache-2.0; pentagi / DeskcommCRM / aimap / OpenResearch MIT. Ecdysis + Netryx SPDX null NO-GO clone. DFS 18/20 UNAVAILABLE. **0 Integrate GO. No xsp/pm scp. No skill auto-evolve.**
 
@@ -226,8 +254,8 @@ OSINT K254: 7 arXiv + 3 eval docx + 6 newsletters (1 DUPLICATE fold → last30da
 | [xai-grok-bot-guides](sources/xai-grok-bot-guides-index-2026-09-02.md) | Official guides hub + multi-team/GTM/design summaries | validated |
 | [x-mattyp-grok-templates](sources/x-post-mattyp-grok-bot-templates-2026-09-02.md) | Templates launch — skills/memories/plugins copy | draft |
 | [x-irabukht-grok-marketing](sources/x-post-irabukht-grok-bot-marketing-2026-09-02.md) | Marketing/GEO community article (preview only) | draft |
-| [grok-bot](entities/tools/grok-bot.md) | SpaceXAI cloud teammate product entity | validated |
-| [grok-bot-operator-patterns](concepts/grok-bot-operator-patterns.md) | Templates, shared VM, coordination vs Cemini charters | draft |
+| [grok-bot](entities/tools/grok-bot.md) | SpaceXAI cloud teammate; FILE charters include DFS/Parlays desks | validated |
+| [grok-bot-operator-patterns](concepts/grok-bot-operator-patterns.md) | Templates, shared VM, coordination vs Cemini charters (§17–19 desks) | draft |
 
 ### Super-audit harness (2026-09-02)
 | [super-audit-ai-harness-2026-09-02](sources/super-audit-ai-harness-2026-09-02.md) | 5-auditor federation AI harness audit → REWORK; Phase A/B shipped | validated |

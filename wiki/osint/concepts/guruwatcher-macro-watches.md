@@ -31,13 +31,23 @@ related:
   - sources/substack-rss-klement-2026-09-09-lottery-momentum-2026-09-09.md
   - concepts/k260-newsletter-macro-wave.md
   - sources/substack-rss-capital-flows-2026-09-11-monetary-regime-2026-09-13.md
+  - concepts/k261-newsletter-macro-wave.md
+  - concepts/k261-xsp-talon-kelly-wave.md
+  - sources/substack-rss-glitchspx-2026-09-13-talon-weekly-2026-09-15.md
+  - sources/substack-rss-klement-2026-09-14-debt-tipping-2026-09-15.md
+  - sources/substack-rss-wublock-2026-09-14-fed-boj-2026-09-15.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-13
+updated: 2026-09-15
 ---
 
 ## Relations
 
+- @concepts/k261-newsletter-macro-wave.md
+- @concepts/k261-xsp-talon-kelly-wave.md — K261 Talon HITL; never auto-arm
+- @sources/substack-rss-glitchspx-2026-09-13-talon-weekly-2026-09-15.md — K261 Talon 14–18 Sep named levels
+- @sources/substack-rss-klement-2026-09-14-debt-tipping-2026-09-15.md — K261 no named levels → no auto-arm
+- @sources/substack-rss-wublock-2026-09-14-fed-boj-2026-09-15.md — K261 no named levels → no auto-arm
 - @concepts/k260-newsletter-macro-wave.md
 - @sources/substack-rss-capital-flows-2026-09-11-monetary-regime-2026-09-13.md — K260 no named levels → no auto-arm
 - @sources/newsletter-capital-flows-inflation-risk-2026-08-12.md
@@ -71,6 +81,8 @@ updated: 2026-09-13
 What this page answers: which macro claims from newsletters are watchable as alert-only price/level watches in GuruWatcher.
 
 ## Narrative
+
+**K261 (2026-09-15):** Talon 14–18 Sep named levels are **HITL claim-ledger candidates**. Most-recent-wins. Never auto-arm. Never rewrite the GW watch ledger. No LIVE Discord. Klement debt + WuBlock Fed/BOJ: **no named tradable levels → no auto-arm.** Brief: `briefs/2026-09-15_k261-guruwatcher.md`. **No xsp scp.**
 
 K233 candidates from Capital Flows (2026-08-12): steels/metals factor (+43% YTD), ags (+16% YTD), and short-end inflation swaps (Japan→UK). Alert-only, no order routing. Watch reconciles most-recent-wins claims vs the armed watches ledger on cemini-prod.
 
