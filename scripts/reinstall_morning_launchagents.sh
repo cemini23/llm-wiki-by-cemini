@@ -250,8 +250,9 @@ for entry in "${WIKI_REPOS[@]}"; do
 done
 
 echo "=== LaunchAgents (reload) ==="
-# OSINT first @ 08:00. Sibling digests stagger +3min each (avoid arXiv 429 herd).
-# Federation summary after last sibling (~08:28) so hub table sees today's sweeps.
+# OSINT first @ 08:00. Sibling digests stagger +7min each (avoid arXiv 429 herd).
+# Sleep-coalesce still needs flock; +7 reduces overlap when the Mac is awake at 08:00.
+# Federation summary after last sibling (~08:59) so hub table sees today's sweeps.
 write_calendar_plist com.cemini.daily-research-digest "$BIN_DIR/cemini-daily-research-digest" 8 0 cemini-daily-digest
 
 fed_minute=10
@@ -261,7 +262,7 @@ for entry in "${WIKI_REPOS[@]}"; do
   write_calendar_plist "com.cemini.daily-research-digest.${id}" \
     "$BIN_DIR/cemini-daily-research-digest-${id}" 8 "$fed_minute" cemini-daily-digest
   echo "  schedule ${id} → 08:$(printf '%02d' "$fed_minute")"
-  fed_minute=$((fed_minute + 3))
+  fed_minute=$((fed_minute + 7))
 done
 
 write_calendar_plist com.cemini.federation-morning-summary \
