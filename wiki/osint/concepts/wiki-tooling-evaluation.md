@@ -309,16 +309,20 @@ related:
   - sources/eval-multi-wiki-stack-revenue-2026-09-15.md
   - concepts/k261-eval-github-wave.md
   - entities/tools/agentic-inbox.md
+  - sources/eval-repository-revenue-2026-09-16.md
+  - concepts/k262-eval-github-wave.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-09-15
+updated: 2026-09-16
 ---
 
 ## Relations
 - @sources/eval-multi-wiki-stack-revenue-2026-09-15.md — K261 eval
 - @concepts/k261-eval-github-wave.md
 - @entities/tools/agentic-inbox.md — K261 FILE REFERENCE, not Integrate
+- @sources/eval-repository-revenue-2026-09-16.md — K262 eval
+- @concepts/k262-eval-github-wave.md
 - @entities/tools/stagehand.md
 - @entities/tools/infographic.md
 - @entities/tools/smart-ralph.md

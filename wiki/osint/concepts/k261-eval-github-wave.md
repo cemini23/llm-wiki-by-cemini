@@ -17,9 +17,10 @@ related:
   - entities/tools/worldmonitor.md
   - entities/tools/vphone-cli.md
   - concepts/wiki-tooling-evaluation.md
+  - concepts/k262-eval-github-wave.md
 maturity: draft
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-16
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -39,6 +40,7 @@ wire_status: policy_wired
 - @entities/tools/worldmonitor.md
 - @entities/tools/vphone-cli.md
 - @concepts/wiki-tooling-evaluation.md
+- @concepts/k262-eval-github-wave.md
 
 ## Raw Concept
 

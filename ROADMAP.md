@@ -30,6 +30,14 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-16 — K262 ingest)
+
+- **K262 ingest** — 23 NEW (1 eval + 10 arXiv/PDF + 12 newsletters). 23 source pages + 8 hubs + 6 new entities. Raws to egress-fi. **0 Integrate GO. Transkribus sole HTR. No xsp/pm scp. No MCP. No skill evolve. No LIVE Discord.**
+- **Phase-0** — `adopt_k262_phase0.sh`: security-audit-skill / ScienceBuddy / oh-my-hermes MIT; open-code-review Apache-2.0. NOASSERTION / AGPL / SPDX-null / SIZE-SKIP no clone.
+- **Routing** — Atto #1 ExpertHTR FILE (Transkribus sole HTR; google-maps FIND human-verify). GW #2 Moontower/Klement no auto-arm. CeminiDFS #3 Kalshi football awareness only. CeminiParlays #4 EH combos + Kalshi hedge FILE. CCC ScienceBuddy/social/factory FILE (do not swap `/route`). Cyber EXTRACT authorized lab. Poker retired.
+- **Briefs** — `briefs/2026-09-16_k262-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run). Federation 429-hygiene apply leftover (sandbox).
+
 ## Current state (2026-09-15 — K261 ingest)
 
 - **K261 ingest** — 10 inbox (7 NEW + 3 LIKELY as NEW). 10 source pages + 7 hubs + 5 new entities. Raws to egress-fi. **0 Integrate GO. No xsp/pm scp. No MCP. No skill evolve. No LIVE Discord.**

@@ -11,9 +11,10 @@ related:
   - sources/substack-rss-addy-osmani-2026-09-14-brownfield-2026-09-15.md
   - entities/tools/m3e-canvas.md
   - entities/tools/agentic-inbox.md
+  - concepts/k262-ccc-harness-wave.md
 maturity: draft
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-16
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -27,6 +28,7 @@ wire_status: policy_wired
 - @sources/substack-rss-addy-osmani-2026-09-14-brownfield-2026-09-15.md
 - @entities/tools/m3e-canvas.md
 - @entities/tools/agentic-inbox.md
+- @concepts/k262-ccc-harness-wave.md
 
 ## Raw Concept
 

@@ -8,9 +8,10 @@ related:
   - sources/substack-rss-event-horizon-2026-09-14-ep32-enforcement-2026-09-15.md
   - sources/substack-rss-moontower-2026-09-13-kelly-head-2026-09-15.md
   - entities/tools/mcp-sports-hub.md
+  - concepts/k262-gambling-pm-wave.md
 maturity: draft
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-16
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -21,6 +22,7 @@ wire_status: policy_wired
 - @sources/substack-rss-event-horizon-2026-09-14-ep32-enforcement-2026-09-15.md
 - @sources/substack-rss-moontower-2026-09-13-kelly-head-2026-09-15.md
 - @entities/tools/mcp-sports-hub.md
+- @concepts/k262-gambling-pm-wave.md
 
 ## Raw Concept
 

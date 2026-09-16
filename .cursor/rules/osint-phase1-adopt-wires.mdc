@@ -383,6 +383,20 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K262 — 2026-09-16
+Dual-ID: **OSINT K262**. FILE only. **0 Integrate GO.**
+- ExpertHTR FILE — Transkribus remains sole product HTR.
+- ScienceBuddy MIT REFERENCE — recursive harness+model; HITL; no skill/harness auto-evolve.
+- social harness FILE — personal vs social; do not swap `/route`.
+- security-audit-skill MIT REFERENCE — FILE; do not copy into ~/.cursor/skills.
+- OpenHunterAI NOASSERTION — no clone. No PoC.
+- supervision MIT SIZE-SKIP ~4.3GB.
+- GANADI EXTRACT — no PoC.
+- Kalshi hedge / EH parlays / Clarity — **no pm scp.**
+- Diffusion vol / SBM / Moontower — **no xsp scp.** GW: no auto-arm.
+- Jev proprietary Watch — do not swap `/route`.
+- Verify: `bash scripts/adopt_k262_phase1.sh`. **No LIVE Discord.**
+
 ## OSINT K261 — 2026-09-15
 Dual-ID: **OSINT K261**. FILE only. **0 Integrate GO.**
 - worldmonitor AGPL Watch reaffirm — no re-clone.

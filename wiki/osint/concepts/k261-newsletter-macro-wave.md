@@ -10,9 +10,10 @@ related:
   - sources/substack-rss-klement-2026-09-14-disasters-gdp-2026-09-15.md
   - sources/substack-rss-wublock-2026-09-14-fed-boj-2026-09-15.md
   - sources/substack-rss-outlier-weekly-2026-09-14-tanbreez-2026-09-15.md
+  - concepts/k262-newsletter-macro-wave.md
 maturity: draft
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-16
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -25,6 +26,7 @@ wire_status: policy_wired
 - @sources/substack-rss-klement-2026-09-14-disasters-gdp-2026-09-15.md
 - @sources/substack-rss-wublock-2026-09-14-fed-boj-2026-09-15.md
 - @sources/substack-rss-outlier-weekly-2026-09-14-tanbreez-2026-09-15.md
+- @concepts/k262-newsletter-macro-wave.md
 
 ## Raw Concept
 

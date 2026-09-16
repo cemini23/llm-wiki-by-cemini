@@ -1,3 +1,29 @@
+## [2026-09-16] ingest | K262 wave
+
+- **Inbox:** 23 NEW (1 eval + 10 arXiv/PDF + 12 newsletters). Preingest: parent ran; do not re-litigate licenses.
+- **Sources:** repo eval SPDX overrides; ExpertHTR; ScienceBuddy; social harness; byte distill; GANADI; Kalshi hedge; diffusion vol; SBM; clinical OOD; insect OOD; LS Socher/AEF-1/games/Jev; PE factory; EH Kalshi records + CLARITY; Klement NATO + CB; Moontower Fed/10y; WuBlock traffic + cloture.
+- **Concepts:** 8 k262-* hubs. Entities: security-audit-skill, sciencebuddy, open-code-review, oh-my-hermes, experthtr, openhunterai. Bumps: m3e-canvas no new clone, k261-atto ExpertHTR pointer, GuruWatcher no auto-arm, wiki-tooling-evaluation FILE-not-Integrate.
+- **Phase-0:** `adopt_k262_phase0.sh` — security-audit-skill / ScienceBuddy / oh-my-hermes MIT; open-code-review Apache-2.0. **0 Integrate GO.**
+- **Routing:** Atto #1 ExpertHTR FILE (Transkribus sole HTR). GW #2 Moontower/Klement no auto-arm. CeminiDFS #3 Kalshi football awareness only. CeminiParlays #4 EH combos + Kalshi hedge FILE. CCC ScienceBuddy/social/factory FILE (do not swap `/route`). Cyber EXTRACT. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-16_k262-*` written (gitignored). Sibling copies blocked by workspace sandbox — operator `cp` leftover.
+- **Archive:** 23/23 inbox → egress-fi. Local copies removed.
+- **gate:** `ingest_session_gate.py` WARN acknowledged — stale `[NEEDS VERIFICATION]` on historical `wiki/log.md` entries are pre-existing, not this batch.
+
+## [2026-09-16] phase-0 | K262
+
+- **cloudflare/security-audit-skill** — MIT `[CONFIRMED]` gh api 2026-09-16; ~0.14MB GO REFERENCE FILE. Do not copy into Cursor skills.
+- **Gen-Verse/ScienceBuddy** — MIT `[CONFIRMED]`; ~12MB GO REFERENCE FILE. HITL. No skill/harness auto-evolve.
+- **alibaba/open-code-review** — Apache-2.0 `[CONFIRMED]`; ~52MB GO REFERENCE FILE.
+- **rlaope/oh-my-hermes** — MIT `[CONFIRMED]`; ~100MB GO REFERENCE FILE.
+- **SKIP:** OpenHunterAI NOASSERTION NO-GO; supervision SIZE-SKIP ~4.3GB; google-maps-scraper no clone (ToS); fmzquant SPDX null; tinycast/WeKnora NOASSERTION; YuE OOD; VoiceStudio/ever-gauzy AGPL; m3e-canvas exists; YOINK no pm scp.
+- **0 Integrate GO.** Transkribus sole HTR. No MCP. No LIVE Discord. No xsp/pm scp.
+
+## [2026-09-16] query | Outlier Weekly LIVE — CRML / Tanbreez
+
+- **LIVE** — https://outlierweekly.substack.com/p/the-greenland-license-is-real-the (operator-confirmed 2026-09-16; scheduled 2026-09-14)
+- **SEO wiki** — @seo-wiki/concepts/crml-tanbreez-outlier-notes.md flipped scheduled → LIVE; voice table + index updated
+- **This wiki** — permalink recorded on 2026-09-01 CRML query handoff. Desk pack: `reports/research/pack-crml-short-thesis-20260901/`. No new research pass. No xsp/pm scp.
+
 ## [2026-09-15] ingest | K261 wave
 
 - **Inbox:** 10 files (7 NEW + 3 LIKELY treated as NEW: Osmani different title, Talon new week, Moontower #327 next issue). Preingest: parent ran; do not re-litigate licenses.
@@ -245,7 +271,7 @@
 - **Ticker** NASDAQ:CRML. Greenland MIN 2020-54 is a real 30-year licence. Equity is a promotional pre-revenue tape (~$1.06bn at $7.21 vs 44.87 Mt @ 0.38% TREO). EUR all-stock scheme issues more shares; it is not a reverse split. Ratio indicated at 0.045 max.
 - **Desk** gitignored `briefs/2026-09-01_crml-short-thesis.md`. Tracked copy: `reports/research/pack-crml-short-thesis-20260901/`.
 - **Sleeve** listed 2 Oct 2026 $7 puts (observational). Friend email 1 Sep. No entity page this pass. No xsp/pm scp. No LIVE Discord.
-- **SEO / Outlier** — @seo-wiki/concepts/crml-tanbreez-outlier-notes.md · paste `SEO:GEO B&M Business/briefs/2026-09-01_crml-tanbreez-outlier.md`. Public letter strips last print and the $7 put. $6 strikes if the name keeps falling. HITL. Not LIVE.
+- **SEO / Outlier** — @seo-wiki/concepts/crml-tanbreez-outlier-notes.md · paste `SEO:GEO B&M Business/briefs/2026-09-01_crml-tanbreez-outlier.md`. Public letter strips last print and the $7 put. $6 strikes if the name keeps falling. **LIVE** 2026-09-14 — https://outlierweekly.substack.com/p/the-greenland-license-is-real-the
 
 ## [2026-08-31] query | Outlier Weekly LIVE — GTA 6 cashout letter
 

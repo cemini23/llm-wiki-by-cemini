@@ -7,6 +7,49 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K262 ingest (2026-09-16)
+OSINT K262: 23 NEW (1 eval + 10 arXiv/PDF + 12 newsletters). Phase-0 REFERENCE: security-audit-skill / ScienceBuddy / oh-my-hermes MIT; open-code-review Apache-2.0. OpenHunterAI NOASSERTION NO-GO; supervision SIZE-SKIP ~4.3GB; google-maps-scraper no clone (ToS). **0 Integrate GO. Transkribus sole HTR. No xsp/pm scp. No MCP. No skill auto-evolve. No LIVE Discord.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k262-eval-github-wave](concepts/k262-eval-github-wave.md) | K262 Eval GitHub Wave | draft |
+| [k262-atto-htr-wave](concepts/k262-atto-htr-wave.md) | K262 Atto HTR Wave | draft |
+| [k262-ccc-harness-wave](concepts/k262-ccc-harness-wave.md) | K262 CCC Harness Wave | draft |
+| [k262-cybersec-wave](concepts/k262-cybersec-wave.md) | K262 Cybersec Wave | draft |
+| [k262-gambling-pm-wave](concepts/k262-gambling-pm-wave.md) | K262 Gambling PM Wave | draft |
+| [k262-newsletter-macro-wave](concepts/k262-newsletter-macro-wave.md) | K262 Newsletter Macro Wave | draft |
+| [k262-xsp-vol-wave](concepts/k262-xsp-vol-wave.md) | K262 XSP Vol Wave | draft |
+| [k262-ood-stub-wave](concepts/k262-ood-stub-wave.md) | K262 OOD Stub Wave | draft |
+| [security-audit-skill](entities/tools/security-audit-skill.md) | security-audit-skill MIT GO REFERENCE FILE | draft |
+| [sciencebuddy](entities/tools/sciencebuddy.md) | ScienceBuddy MIT GO REFERENCE FILE | draft |
+| [open-code-review](entities/tools/open-code-review.md) | open-code-review Apache-2.0 GO REFERENCE FILE | draft |
+| [oh-my-hermes](entities/tools/oh-my-hermes.md) | oh-my-hermes MIT GO REFERENCE FILE | draft |
+| [experthtr](entities/tools/experthtr.md) | ExpertHTR method FILE; Transkribus sole HTR | draft |
+| [openhunterai](entities/tools/openhunterai.md) | OpenHunterAI NOASSERTION NO-GO clone | draft |
+| [eval-repository-revenue-2026-09-16](sources/eval-repository-revenue-2026-09-16.md) | Repo eval SPDX overrides | draft |
+| [byte-token-distill](sources/arxiv-2609.12303-byte-token-distill-2026-09-16.md) | Byte vs token distill | draft |
+| [experthtr-arxiv](sources/arxiv-2609.12705-experthtr-2026-09-16.md) | ExpertHTR unified HTR | draft |
+| [diffusion-vol](sources/arxiv-2609.13402-diffusion-vol-surface-2026-09-16.md) | Diffusion vol surfaces | draft |
+| [clinical-hindsight](sources/arxiv-2609.13454-clinical-hindsight-2026-09-16.md) | Clinical hindsight OOD | draft |
+| [kalshi-spot-hedge](sources/arxiv-2609.14267-kalshi-spot-hedge-2026-09-16.md) | Kalshi BTC-spot hedge | draft |
+| [skew-brownian](sources/arxiv-2609.15306-skew-brownian-2026-09-16.md) | Skew Brownian arb | draft |
+| [ganadi](sources/arxiv-2609.17018-ganadi-oss-reuse-2026-09-16.md) | GANADI OSS reuse | draft |
+| [sciencebuddy-arxiv](sources/arxiv-2609.17523-sciencebuddy-2026-09-16.md) | ScienceBuddy recursive | draft |
+| [social-harness](sources/arxiv-2609.17527-social-harness-2026-09-16.md) | Social harness | draft |
+| [insect-machine](sources/ieee-2009-insect-machine-interface-2026-09-16.md) | Insect-machine OOD | draft |
+| [socher-recursive](sources/newsletter-rss-latent-space-2026-09-14-socher-recursive-2026-09-16.md) | Socher Recursive | draft |
+| [aef-1](sources/newsletter-rss-latent-space-2026-09-15-aef-1-2026-09-16.md) | AEF-1 evaluators | draft |
+| [games-transfer](sources/newsletter-rss-latent-space-2026-09-15-games-transfer-2026-09-16.md) | Games transfer | draft |
+| [jev](sources/newsletter-rss-latent-space-2026-09-16-jev-2026-09-16.md) | Jev System One Watch | draft |
+| [openai-factory](sources/newsletter-rss-pragmatic-engineer-2026-09-15-openai-factory-2026-09-16.md) | OpenAI software factory | draft |
+| [eh-kalshi-records](sources/substack-rss-event-horizon-2026-09-15-kalshi-parlay-records-2026-09-16.md) | EH Kalshi parlay records | draft |
+| [eh-clarity](sources/substack-rss-event-horizon-2026-09-16-clarity-pm-value-2026-09-16.md) | EH CLARITY PM value | draft |
+| [klement-nato](sources/substack-rss-klement-2026-09-15-nato-trade-2026-09-16.md) | Klement NATO trade | draft |
+| [klement-cb](sources/substack-rss-klement-2026-09-16-cb-experience-2026-09-16.md) | Klement CB experience | draft |
+| [moontower-bearish](sources/substack-rss-moontower-2026-09-15-not-more-bearish-2026-09-16.md) | Moontower not more bearish | draft |
+| [wublock-traffic](sources/substack-rss-wublock-2026-09-15-exchange-traffic-2026-09-16.md) | WuBlock Aug traffic | draft |
+| [wublock-cloture](sources/substack-rss-wublock-2026-09-16-clarity-cloture-fail-2026-09-16.md) | WuBlock CLARITY cloture | draft |
+
 ### K261 ingest (2026-09-15)
 OSINT K261: 10 inbox (7 NEW + 3 LIKELY treated as NEW: Osmani different title, Talon new week, Moontower #327 next issue). Phase-0 REFERENCE: power-pwn / mcp-sports-hub / arsenal-ng / m3e-canvas MIT; agentic-inbox Apache-2.0. worldmonitor AGPL Watch reaffirm; hypit NOASSERTION NO-GO; ligolo GPL EXTRACT-ONLY no clone. **0 Integrate GO. No xsp/pm scp. No MCP. No skill auto-evolve. No LIVE Discord.**
 

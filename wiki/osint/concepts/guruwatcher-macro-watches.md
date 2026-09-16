@@ -36,13 +36,19 @@ related:
   - sources/substack-rss-glitchspx-2026-09-13-talon-weekly-2026-09-15.md
   - sources/substack-rss-klement-2026-09-14-debt-tipping-2026-09-15.md
   - sources/substack-rss-wublock-2026-09-14-fed-boj-2026-09-15.md
+  - concepts/k262-newsletter-macro-wave.md
+  - sources/substack-rss-moontower-2026-09-15-not-more-bearish-2026-09-16.md
+  - sources/substack-rss-klement-2026-09-16-cb-experience-2026-09-16.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-15
+updated: 2026-09-16
 ---
 
 ## Relations
 
+- @concepts/k262-newsletter-macro-wave.md
+- @sources/substack-rss-moontower-2026-09-15-not-more-bearish-2026-09-16.md — K262 Fed/10y observations; never auto-arm
+- @sources/substack-rss-klement-2026-09-16-cb-experience-2026-09-16.md — K262 no named levels → no auto-arm
 - @concepts/k261-newsletter-macro-wave.md
 - @concepts/k261-xsp-talon-kelly-wave.md — K261 Talon HITL; never auto-arm
 - @sources/substack-rss-glitchspx-2026-09-13-talon-weekly-2026-09-15.md — K261 Talon 14–18 Sep named levels

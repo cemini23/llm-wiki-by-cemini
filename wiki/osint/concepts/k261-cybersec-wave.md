@@ -9,9 +9,10 @@ related:
   - sources/eval-multi-wiki-stack-revenue-2026-09-15.md
   - entities/tools/power-pwn.md
   - entities/tools/arsenal-ng.md
+  - concepts/k262-cybersec-wave.md
 maturity: draft
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-16
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -23,6 +24,7 @@ wire_status: policy_wired
 - @sources/eval-multi-wiki-stack-revenue-2026-09-15.md
 - @entities/tools/power-pwn.md
 - @entities/tools/arsenal-ng.md
+- @concepts/k262-cybersec-wave.md
 
 ## Raw Concept
 
