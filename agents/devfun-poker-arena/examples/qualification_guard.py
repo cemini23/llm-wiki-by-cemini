@@ -59,6 +59,10 @@ _PLAYABLE_FRAC_BY_TIER: dict[str, float] = {
     "dominant": 0.32,
 }
 
+# Never lock the whole stack. P15 2026-08-19: at cutoff 964==964 the floor lock
+# set playable=0 → fold-to-blinds, then a desperate 77 UTG shove.
+_MIN_PLAYABLE_FRAC = 0.12
+
 
 def _buffer_threshold() -> int:
     return _safe_int(os.environ.get("CEMINI_QUAL_BUFFER_CHIPS"), DEFAULT_BUFFER_CHIPS)
@@ -149,6 +153,12 @@ def _playable_frac(tier: str, *, first_protect: bool) -> float:
     return frac
 
 
+def qual_survival_mode(*, lead_protect: bool, buffer_chips: int) -> bool:
+    """Nit pads only with a real cushion (or lead). At-cutoff P15 armed
+    qual_protect with buffer=0 and folded every street."""
+    return bool(lead_protect) or int(buffer_chips or 0) > 0
+
+
 def staggered_chip_lock(
     total_chips: int,
     cutoff_chips: int,
@@ -160,18 +170,19 @@ def staggered_chip_lock(
 ) -> dict[str, Any]:
     """Compute locked vs playable bankroll to preserve top-20 qualification.
 
-    Always locks at least ``cutoff + qual_buffer`` (top-20 floor + safety margin).
-    Above that, locks a fraction of surplus chips and caps playable as a fraction of
-    total stack — all ratios, no hard-coded chip milestones.
+    Locks surplus above the qualification floor. Never locks the whole stack —
+    at or below cutoff there is no surplus to protect (P15 playable=0 death).
     """
     if qual_buffer is None:
         qual_buffer = _buffer_threshold()
 
-    qual_floor = int(cutoff_chips) + int(qual_buffer)
+    total = int(total_chips)
+    cut = int(cutoff_chips)
+    qual_floor = cut + int(qual_buffer)
     out: dict[str, Any] = {
         "qual_floor_chips": qual_floor,
         "locked_chips": 0,
-        "playable_chips": max(0, int(total_chips)),
+        "playable_chips": max(0, total),
         "lock_tier": "off",
         "chip_reserve": 0,
         "max_playable_chips": None,
@@ -180,21 +191,25 @@ def staggered_chip_lock(
     if not _stagger_locks_enabled():
         flat = _legacy_flat_reserve()
         if flat > 0 and first_protect:
-            locked = min(flat, int(total_chips))
+            locked = min(flat, total)
+            playable = max(0, total - locked)
             out.update(
                 locked_chips=locked,
-                playable_chips=max(0, int(total_chips) - locked),
+                playable_chips=playable,
                 lock_tier="flat_reserve",
                 chip_reserve=locked,
-                max_playable_chips=max(0, int(total_chips) - locked),
+                max_playable_chips=playable,
             )
         return out
 
     if not qualification_protect and not lead_protect:
         return out
 
-    total = int(total_chips)
-    buffer = total - int(cutoff_chips)
+    # At/under the published cutoff: locking floor>=stack zeros playable.
+    if total <= cut:
+        return out
+
+    buffer = total - cut
     tier, surplus_pct = _tier_from_buffer_ratio(buffer, qual_floor)
     if first_protect:
         surplus_pct = max(surplus_pct, _first_lock_surplus_pct())
@@ -203,13 +218,16 @@ def staggered_chip_lock(
     locked_from_pct = qual_floor + int(surplus * surplus_pct)
     playable_frac = _playable_frac(tier, first_protect=first_protect)
     locked_from_cap = total - int(total * playable_frac)
-    locked = max(locked_from_pct, locked_from_cap, qual_floor)
+    locked = max(locked_from_pct, locked_from_cap, min(qual_floor, total))
 
     flat_min = _legacy_flat_reserve()
     if first_protect and flat_min > 0:
         locked = max(locked, min(flat_min, total))
 
-    playable = max(0, total - locked)
+    min_playable = max(1, int(total * _MIN_PLAYABLE_FRAC))
+    locked = min(locked, total - min_playable)
+    locked = max(0, locked)
+    playable = max(min_playable, total - locked)
 
     out.update(
         locked_chips=locked,

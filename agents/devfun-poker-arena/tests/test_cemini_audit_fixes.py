@@ -95,6 +95,37 @@ def test_chip_reserve_degrades_illegal_bet():
     assert out.get("amount") is None or out["amount"] >= 100
 
 
+def test_chip_reserve_zero_playable_folds_allin():
+    table = six_max_table(
+        name="empty_reserve_jam",
+        hero_seat=4,
+        button_seat=1,
+        street="Preflop",
+        board=[],
+        pot=30,
+        hero_hole=["7h", "7s"],
+        hero_stack=80,
+        allowed=_allowed(
+            can_fold=True,
+            can_raise=True,
+            raise_range={"min": 40, "max": 80},
+        ),
+    )
+    raw = {"action": "all-in", "amount": 80, "message": "jam"}
+    out = _apply_chip_reserve(raw, max_playable=0, table=table, hand_class="77")
+    assert out["action"] in {"fold", "check"}
+    none_amt = {"action": "all-in", "message": "short-stack jam"}
+    out_none = _apply_chip_reserve(none_amt, max_playable=0, table=table, hand_class="77")
+    assert out_none["action"] in {"fold", "check"}
+    aa = _apply_chip_reserve(
+        {"action": "all-in", "amount": 80, "message": "aa"},
+        max_playable=0,
+        table=table,
+        hand_class="AA",
+    )
+    assert aa["action"] == "all-in"
+
+
 def test_qualification_guard_malformed_env(monkeypatch: pytest.MonkeyPatch):
     from qualification_guard import _buffer_threshold, _first_max_playable_frac
 

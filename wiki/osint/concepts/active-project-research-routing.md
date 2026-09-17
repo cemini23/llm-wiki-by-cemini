@@ -2,7 +2,7 @@
 title: Active project research routing — brief targets vs legacy CeminiSuite
 type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher, local-abliterated-lab]
-keywords: [brief-routing, atto, guruwatcher, ceminidfs, wc-ticket-monitor, family-tree, genealogy, poker-arena, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
+keywords: [brief-routing, atto, guruwatcher, ceminidfs, ceminiparlays, wc-ticket-monitor, family-tree, genealogy, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
 related:
   - entities/tools/qwen-mm-plugins.md
   - entities/tools/ruview.md
@@ -96,7 +96,7 @@ related:
   - sources/eval-url-revenue-opportunity-2026-08-15.md
 maturity: core
 created: 2026-06-17
-updated: 2026-08-15
+updated: 2026-09-13
 ---
 
 ## Relations
@@ -202,7 +202,7 @@ updated: 2026-08-15
 - @gambling-wiki/concepts/poker-hl-analyst-loop.md — Poker Arena fix loop
 - @concepts/xsp-lane-trading-framework.md — XSP killer lanes A–D
 - @concepts/devfun-poker-agent-challenge-2026.md — researcher track pivot (K122)
-- @ccc-wiki/concepts/deep-research-evaluation-prompt.md — bulk URL eval v10.5 (revenue-first; TipDrop retired)
+- @ccc-wiki/concepts/deep-research-evaluation-prompt.md — bulk URL eval v10.6 (revenue-first; poker + TipDrop retired)
 - @sources/eval-url-revenue-and-project-analysis-2026-07-20.md — K175 family-tree + CeminiDFS extracts
 - @entities/tools/fivethirtyeight-data.md — K175 CeminiDFS Extract
 - @entities/tools/wc-ticket-monitor.md — knockout ticket resale alerts
@@ -222,6 +222,8 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 
 **TipDrop retired (2026-08-05):** David no longer on TipDrop — drop tipdrop-workspace-kit / David persona brief pushes. **Local abliterated AI lab** (`@cybersec-wiki`) takes that research-queue slot. Eval: CCC v10.5 (`local-abliterated-lab overlap`).
 
+**v10.6 stack (2026-09-13):** **#3 CeminiDFS** + **#4 CeminiParlays** sit after Atto and GuruWatcher. **Poker arena retired** — do not route to `devfun-poker-arena`. Eval: CCC v10.6 (`CeminiDFS overlap` · `ceminiparlays overlap`).
+
 ## Narrative
 
 ### Priority stack (morning ingest)
@@ -230,13 +232,13 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 |------|---------|-------------------|-------------|
 | **#1** | **Atto** (genealogy product) | `../atto/briefs/` · GitHub `cemini23/atto` · vault `~/AttoVault/` | No — laptop kit; never Barone PII |
 | **#2** | **GuruWatcher** (newsletter watches → Discord) | `../GuruWatcher/briefs/` · GitHub `cemini23/GuruWatcher` · prod `/opt/guru-watcher/` | No — deploy via `GuruWatcher/scripts/deploy_prod.sh` |
+| **#3** | **CeminiDFS** (NFL DIY + BBM) | `../CeminiDFS/briefs/` + `@gambling-wiki` | No — laptop pipeline repo |
+| **#4** | **CeminiParlays** (sportsbook parlay / SGP + pick'em) | `../CeminiParlays/briefs/` + `@gambling-wiki` | No — laptop CLI; operator types ticket |
 
-### Active behind #1 / #2 (route when source matches)
+### Active behind #1–#4 (route when source matches)
 
 | Project | Code / brief home | Prod `scp`? |
 |---------|-------------------|-------------|
-| **Poker Arena** | `agents/devfun-poker-arena/briefs/` | No — deploy via `cemini_hl_loop.sh` / rsync |
-| **CeminiDFS** | `../projects/CeminiDFS/briefs/` + `@gambling-wiki` | No — laptop pipeline repo |
 | **XSP killer bot** | `briefs/xsp-*` → `cemini-prod:/opt/cemini/briefs/` | Yes — Lane A/B monitors only |
 | **Family-tree / Barone dogfood** | `~/Desktop/family/research/` (private) + `@osint-wiki` K153/K154 | No — never scp; no pedigree names on wiki or Atto fixtures |
 | **Local abliterated AI lab** | `../Cybersecurity wiki/briefs/` + `@cybersec-wiki` | No — operator/friend lab; authorized assist only |
@@ -252,12 +254,12 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 ### Default ingest rule
 
 1. **Wiki always** — source + concept updates in `wiki/` (or cross-wiki route).
-2. **Brief only if** steal-from maps to a row above (`scripts/active_project_brief_targets.yaml`). Prefer **Atto (#1)** then **GuruWatcher (#2)** on ties.
+2. **Brief only if** steal-from maps to a row above (`scripts/active_project_brief_targets.yaml`). Prefer **Atto (#1)** then **GuruWatcher (#2)** then **CeminiDFS (#3)** / **CeminiParlays (#4)** on ties.
 3. **Prod scp only if** `scp_target` is set for that project **and** `skill_audit.py` PASS.
 4. **Genealogy split** — productizable capability (HTR/GEDCOM/vault/share/MCP/portal) → **Atto dedicated brief**; private pedigree/DNA/living names → `~/Desktop/family/` only; methodology stubs on OSINT wiki.
 5. **Newsletter / Macro Charts price watches** → **GuruWatcher** briefs (alert-only; never order routing). Inbox hook: `scripts/guru_watcher_inbox_hook.sh`.
 6. **Local abliterated / operator-lab** → Cybersecurity wiki briefs (never `tipdrop-workspace-kit`).
-7. **Legacy deprioritized** — TipDrop/David kit · generic quant-finance / portfolio RL / conductor eval / castle-sim → **wiki-only** unless ROADMAP reopens.
+7. **Legacy deprioritized** — TipDrop/David kit · poker arena · generic quant-finance / portfolio RL / conductor eval / castle-sim → **wiki-only** unless ROADMAP reopens.
 
 ### Config files
 
@@ -266,7 +268,7 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 | `scripts/daily_research_config.yaml` | Exa queries + `active_topics` in daily sweep |
 | `scripts/active_project_brief_targets.yaml` | Brief destination + scp gates per project |
 | `ROADMAP.md` | Human-readable workstream list (sync on pivot) |
-| `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` | Bulk URL eval — revenue-first + `atto` / `guruwatcher` / `genealogy` / `local-abliterated-lab` overlaps (v10.5) |
+| `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` | Bulk URL eval — revenue-first + `atto` / `guruwatcher` / `CeminiDFS` / `ceminiparlays` / `genealogy` / `local-abliterated-lab` overlaps (v10.6) |
 
 ### Cross-wiki
 
@@ -274,14 +276,15 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 - **GuruWatcher** deep ingest → `../GuruWatcher/briefs/`; Macro Charts inbox → `scripts/guru_watcher_inbox_hook.sh` → prod claim reconcile.
 - **Family-tree** private digs → `Desktop/family/research/`; never into Atto fixtures/marketing.
 - **Local abliterated AI lab** → Cybersecurity wiki briefs + `@concepts/local-abliterated-llm-pentest-stack.md` / `@concepts/operator-lab-playbook.md`.
-- **CeminiDFS** deep ingest → open Gambling wiki folder; OSINT may stub-route methodology via `cross_wiki_route.py`.
+- **CeminiDFS** deep ingest → `../CeminiDFS/briefs/` + Gambling wiki; OSINT may stub-route methodology via `cross_wiki_route.py`.
+- **CeminiParlays** deep ingest → `../CeminiParlays/briefs/` + Gambling wiki (parlay / SGP / pick'em). Do not dump into CeminiDFS.
 - **wc-ticket-monitor** stays OSINT entity + code repo; cross-ref `@entities/tools/world-cup-bot.md` for PM bot boundary.
 - **castle-sim** (legacy) → Game Dev wiki when Godot/RTS source explicitly matches; not priority default.
-- **Poker** session intel stays in `agents/devfun-poker-arena/`; wiki holds methodology (`poker-hl-analyst-loop`).
+- **Poker** (retired 2026-09-13) — wiki methodology only (`poker-hl-analyst-loop`); do not route new briefs to `devfun-poker-arena`.
 - **PM/Kalshi** OSINT wiki owns architecture; prod execution still server-Claude boundary.
 
 ## Snippets
 
-> "Priority #1: atto (../atto/briefs/). Priority #2: guruwatcher (../GuruWatcher/briefs/). Behind both: poker-arena · ceminidfs · xsp-killer · family-tree (dogfood) · local-abliterated-lab · …" [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-08-05]
+> "Priority #1: atto. #2: guruwatcher. #3: ceminidfs. #4: ceminiparlays. Then wikis. Poker + TipDrop retired." [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-09-13]
 
 > "Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers." [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-06-17]

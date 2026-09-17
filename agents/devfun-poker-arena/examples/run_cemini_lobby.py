@@ -37,7 +37,7 @@ from hierarchical_session_state import (  # noqa: E402
     update_scratchpad_facts,
     update_short_term,
 )
-from qualification_guard import fetch_qualification_status  # noqa: E402
+from qualification_guard import fetch_qualification_status, qual_survival_mode  # noqa: E402
 from blind_pressure import avg_blind_tax_per_hand, hands_to_erosion  # noqa: E402
 from pace_control import join_retry_seconds  # noqa: E402
 from hl_runtime_config import is_kill_switch_active, kill_switch_status, load_style_overrides  # noqa: E402
@@ -165,6 +165,100 @@ def _is_ko_tournament(competition_id: str) -> bool:
 def _refuse_entry_fee() -> bool:
     raw = os.environ.get("CEMINI_REFUSE_ENTRY_FEE", "0").strip().lower()
     return raw in ("1", "true", "yes", "on")
+
+
+def _sponsored_ticket_funded(payment: dict) -> bool:
+    """True when a 402 is a funded admin/sponsored ticket, not an unpaid buy."""
+    if not isinstance(payment, dict) or not payment.get("sponsored"):
+        return False
+    sponsor = payment.get("sponsor")
+    if not isinstance(sponsor, dict):
+        return False
+    return str(sponsor.get("status") or "").strip().lower() == "funded"
+
+
+def _payment_mon_amount(payment: dict) -> float:
+    if not isinstance(payment, dict):
+        return 0.0
+    try:
+        return float(payment.get("amount") or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def _sponsored_ticket_dust(payment: dict) -> bool:
+    """Sponsored admin-admission class (0.01 MON), not a 250 MON cash buy-in."""
+    if not isinstance(payment, dict) or not payment.get("sponsored"):
+        return False
+    amt = _payment_mon_amount(payment)
+    return 0.0 < amt <= 0.05
+
+
+def _cash_rebuy_forbidden(payment: dict) -> bool:
+    """Hard stop on 250-class cash rebuy. CEMINI_REBUY_MAX_MON=0 means unlimited
+    in the legacy helper — that must not pay 250 MON (T10). Opt-in cash:
+    CEMINI_ALLOW_CASH_REBUY=1 (never set on freeze)."""
+    raw = os.environ.get("CEMINI_ALLOW_CASH_REBUY", "0").strip().lower()
+    if raw in ("1", "true", "yes", "on"):
+        return False
+    return _payment_mon_amount(payment) >= 1.0
+
+
+def _sponsored_ticket_rebuy_enabled() -> bool:
+    raw = os.environ.get("CEMINI_SPONSORED_TICKET_REBUY", "0").strip().lower()
+    return raw in ("1", "true", "yes", "on")
+
+
+def _max_sponsored_rebuys() -> int:
+    raw = os.environ.get("CEMINI_MAX_SPONSORED_REBUYS", "1")
+    try:
+        return max(0, int(raw))
+    except ValueError:
+        return 1
+
+
+def _sponsored_rebuy_used(state: Optional[dict]) -> int:
+    if not state:
+        return 0
+    try:
+        return max(0, int(state.get("sponsored_ticket_rebuy_used") or 0))
+    except (TypeError, ValueError):
+        return 0
+
+
+def _sponsored_rebuy_quota_open(state: Optional[dict]) -> bool:
+    return (
+        _sponsored_ticket_rebuy_enabled()
+        and _sponsored_rebuy_used(state) < _max_sponsored_rebuys()
+    )
+
+
+def _should_refuse_entry_fee(payment: dict) -> bool:
+    """Refuse unpaid MON entry; let funded sponsored tickets complete (T14)."""
+    if not _refuse_entry_fee():
+        return False
+    return not _sponsored_ticket_funded(payment)
+
+
+def _payment_amount_too_low(err_body: Any) -> bool:
+    """Arena rejected a 0.01 ticket transfer because the real buy-in is 250 MON."""
+    if not isinstance(err_body, dict):
+        return False
+    code = str(err_body.get("error") or "")
+    msg = str(err_body.get("message") or "")
+    blob = f"{code} {msg}".upper()
+    return "PAYMENT_AMOUNT_TOO_LOW" in blob or (
+        "EXPECTED AT LEAST 250" in blob and "MON" in blob
+    )
+
+
+def _park_entry_fee_mismatch(state: dict, save_state_fn, reason: str) -> None:
+    state.pop("entry_fee_tx_hash", None)
+    state.pop("entry_fee_payment_reference", None)
+    state["entry_fee_amount_mismatch"] = True
+    state["entry_fee_amount_mismatch_reason"] = reason[:500]
+    if save_state_fn:
+        save_state_fn(state)
 
 
 def _apply_competition_posture(competition_id: str) -> None:
@@ -384,6 +478,9 @@ def _sync_competition_scope(state: dict, competition_id: str) -> None:
     state.pop("rebuy_fund_blocked_until", None)
     state.pop("rebuy_fund_block_reason", None)
     state.pop("rebuy_fund_block_logged", None)
+    state.pop("entry_fee_amount_mismatch", None)
+    state.pop("entry_fee_amount_mismatch_reason", None)
+    state.pop("entry_fee_tx_hash", None)
     state.pop("session_villain_memory", None)
     state.pop("showdown_tables_seen", None)
     # K161: reset mid-term hierarchical memory on competition board change
@@ -418,11 +515,33 @@ def _arena_error_text(body: Any) -> str:
     return str(body or "")
 
 
-def _join(client: ArenaClient, competition_id: str, tx_hash: Optional[str] = None) -> dict:
+def _join_payload(
+    competition_id: str,
+    *,
+    tx_hash: Optional[str] = None,
+    payment_reference: Optional[str] = None,
+) -> dict:
+    """Join body. Prefer paymentReference (T14 0.01 ticket); txHash is legacy."""
     body: dict = {"competitionId": competition_id}
-    if tx_hash:
-        body["txHash"] = tx_hash
-    return client.post("/texas/join", body)
+    if payment_reference:
+        body["paymentReference"] = str(payment_reference)
+    elif tx_hash:
+        body["txHash"] = str(tx_hash)
+    return body
+
+
+def _join(
+    client: ArenaClient,
+    competition_id: str,
+    tx_hash: Optional[str] = None,
+    payment_reference: Optional[str] = None,
+) -> dict:
+    return client.post(
+        "/texas/join",
+        _join_payload(
+            competition_id, tx_hash=tx_hash, payment_reference=payment_reference,
+        ),
+    )
 
 
 def _wallet_native_balance(client: ArenaClient, chain: str = "monad") -> Optional[dict]:
@@ -455,6 +574,19 @@ def _mark_rebuy_fund_block(state: dict, reason: str, hours: float = 6.0) -> None
     state["rebuy_fund_block_reason"] = reason[:500]
 
 
+def _clear_rebuy_fund_block(state: dict) -> None:
+    state.pop("rebuy_fund_blocked_until", None)
+    state.pop("rebuy_fund_block_reason", None)
+    state.pop("rebuy_fund_block_logged", None)
+
+
+def _clear_entry_fee_park(state: dict) -> None:
+    state.pop("entry_fee_amount_mismatch", None)
+    state.pop("entry_fee_amount_mismatch_reason", None)
+    state.pop("entry_fee_tx_hash", None)
+    state.pop("entry_fee_payment_reference", None)
+
+
 def _rebuy_fund_blocked(state: dict) -> bool:
     until = state.get("rebuy_fund_blocked_until")
     if until is None:
@@ -485,11 +617,15 @@ def _pay_entry_fee(client: ArenaClient, payment: dict) -> str:
                 ),
             },
         )
-    resp = client.post("/agent/wallet/transfer/native", {
+    payload: dict[str, str] = {
         "chain": payment.get("chain") or "monad",
         "to": dest,
         "amount": str(amt),
-    })
+    }
+    pref = payment.get("paymentReference")
+    if pref:
+        payload["paymentReference"] = str(pref)
+    resp = client.post("/agent/wallet/transfer/native", payload)
     tx_hash = resp.get("txHash")
     if not tx_hash:
         raise ValueError(f"transfer returned no txHash: {resp}")
@@ -503,18 +639,24 @@ def _join_with_entry_fee(
     state: Optional[dict] = None,
     save_state_fn=None,
 ) -> dict:
-    """Transfer entry fee, then join with txHash (poll until mined)."""
+    """Transfer entry fee, then join with paymentReference (txHash is legacy)."""
+    pref = str(payment.get("paymentReference") or "").strip() or None
     tx_hash = _pay_entry_fee(client, payment)
-    print(f"[cemini-lobby] entry fee tx={tx_hash}")
+    print(f"[cemini-lobby] entry fee tx={tx_hash} pref={pref or '-'}")
     if state is not None:
         state["entry_fee_tx_hash"] = tx_hash
+        if pref:
+            state["entry_fee_payment_reference"] = pref
         if save_state_fn:
             save_state_fn(state)
     last_err: Optional[ArenaError] = None
     for attempt in range(1, PAYMENT_CONFIRM_ATTEMPTS + 1):
         time.sleep(PAYMENT_CONFIRM_WAIT_S)
         try:
-            return _join(client, competition_id, tx_hash=tx_hash)
+            return _join(
+                client, competition_id, tx_hash=None if pref else tx_hash,
+                payment_reference=pref,
+            )
         except ArenaError as e:
             last_err = e
             msg = _arena_error_text(e.body)
@@ -560,10 +702,13 @@ def _rebuy_with_payment(
     for attempt in range(1, PAYMENT_CONFIRM_ATTEMPTS + 1):
         time.sleep(PAYMENT_CONFIRM_WAIT_S)
         try:
-            return client.post("/texas/rebuy", {
-                "competitionId": competition_id,
-                "txHash": tx_hash,
-            })
+            body: dict = {"competitionId": competition_id}
+            pref = str(payment.get("paymentReference") or "").strip()
+            if pref:
+                body["paymentReference"] = pref
+            else:
+                body["txHash"] = tx_hash
+            return client.post("/texas/rebuy", body)
         except ArenaError as e:
             last_err = e
             msg = _arena_error_text(e.body)
@@ -600,12 +745,30 @@ def _try_rebuy(
     save_state_fn=None,
 ) -> bool:
     """Rebuy chips when table buy-in exceeds stack. Returns True if rebuy attempted."""
-    if state is not None and _rebuy_fund_blocked(state):
+    sponsored_quota = _sponsored_rebuy_quota_open(state)
+
+    def _persist() -> None:
+        if state is not None and save_state_fn:
+            save_state_fn(state)
+
+    def _success(*, sponsored: bool) -> None:
+        if state is None:
+            return
+        if sponsored:
+            state["sponsored_ticket_rebuy_used"] = _sponsored_rebuy_used(state) + 1
+            state["hands_played"] = 0
+        else:
+            state["rebuy_count"] = int(state.get("rebuy_count") or 0) + 1
+        _clear_rebuy_fund_block(state)
+        _clear_entry_fee_park(state)
+        _persist()
+
+    if state is not None and _rebuy_fund_blocked(state) and not sponsored_quota:
         return False
     if state is not None:
         used = int(state.get("rebuy_count") or 0)
         cap = _max_rebuys()
-        if used >= cap:
+        if used >= cap and not sponsored_quota:
             print(
                 f"[cemini-lobby] rebuy blocked: count {used} >= CEMINI_MAX_REBUYS={cap}",
                 file=sys.stderr,
@@ -613,31 +776,78 @@ def _try_rebuy(
             _mark_rebuy_fund_block(
                 state, f"max rebuys {cap} reached (post-mortem T10)", hours=72.0,
             )
-            if save_state_fn:
-                save_state_fn(state)
+            _persist()
             return False
     try:
         resp = client.post("/texas/rebuy", {"competitionId": competition_id})
         print(f"[cemini-lobby] rebuy: {json.dumps(resp, sort_keys=True)[:300]}")
-        if state is not None:
-            state["rebuy_count"] = int(state.get("rebuy_count") or 0) + 1
-            state.pop("rebuy_fund_blocked_until", None)
-            state.pop("rebuy_fund_block_reason", None)
-            if save_state_fn:
-                save_state_fn(state)
+        _success(sponsored=False)
         return True
     except ArenaError as e:
         if e.status != 402:
             print(f"[cemini-lobby] rebuy failed: {e.status} {e.body}", file=sys.stderr)
             return False
         pay = e.body.get("paymentRequirements") or {} if isinstance(e.body, dict) else {}
+        if _cash_rebuy_forbidden(pay):
+            msg = (
+                f"rebuy fee {_payment_mon_amount(pay)} MON is cash buy-in "
+                "(refuse ≥1 MON; T10 post-mortem). Not paying."
+            )
+            print(f"[cemini-lobby] {msg}", file=sys.stderr)
+            if state is not None:
+                _mark_rebuy_fund_block(state, msg, hours=72.0)
+                _persist()
+            return False
+        if _sponsored_ticket_dust(pay):
+            if not sponsored_quota:
+                print(
+                    "[cemini-lobby] sponsored 0.01 MON rebuy available — "
+                    "set CEMINI_SPONSORED_TICKET_REBUY=1 to consume one ticket "
+                    f"(used={_sponsored_rebuy_used(state)}/"
+                    f"{_max_sponsored_rebuys()})",
+                    file=sys.stderr,
+                )
+                return False
+            try:
+                resp = _rebuy_with_payment(client, competition_id, pay)
+                print(
+                    f"[cemini-lobby] sponsored ticket rebuy after pay: "
+                    f"{json.dumps(resp, sort_keys=True)[:300]}"
+                )
+                _success(sponsored=True)
+                return True
+            except ArenaError as pay_err:
+                print(
+                    f"[cemini-lobby] sponsored rebuy pay failed: "
+                    f"{pay_err.status} {pay_err.body}",
+                    file=sys.stderr,
+                )
+                if _payment_amount_too_low(pay_err.body):
+                    print(
+                        "[cemini-lobby] sponsored 0.01 MON rebuy rejected "
+                        "(Arena wants 250 MON). Parking. Not paying 250.",
+                        file=sys.stderr,
+                    )
+                    if state is not None:
+                        _park_entry_fee_mismatch(
+                            state, save_state_fn, str(pay_err.body)[:500],
+                        )
+                    return False
+                if state is not None and pay_err.status in (402, 503):
+                    err_body = pay_err.body if isinstance(pay_err.body, dict) else {}
+                    _mark_rebuy_fund_block(
+                        state,
+                        str(err_body.get("message") or err_body.get("error") or pay_err.body),
+                    )
+                    _persist()
+                return False
+            except Exception as exc:
+                print(f"[cemini-lobby] sponsored rebuy pay error: {exc}", file=sys.stderr)
+                return False
         try:
             fee_cap = _rebuy_max_mon()
             if fee_cap > 0 and pay:
-                try:
-                    fee = float(pay.get("amount") or 0)
-                except (TypeError, ValueError):
-                    fee = 0.0
+                fee = _payment_mon_amount(pay)
                 if fee > fee_cap:
                     msg = (
                         f"rebuy fee {fee} MON > CEMINI_REBUY_MAX_MON={fee_cap} "
@@ -646,22 +856,27 @@ def _try_rebuy(
                     print(f"[cemini-lobby] {msg}", file=sys.stderr)
                     if state is not None:
                         _mark_rebuy_fund_block(state, msg, hours=72.0)
-                        if save_state_fn:
-                            save_state_fn(state)
+                        _persist()
                     return False
             resp = _rebuy_with_payment(client, competition_id, pay)
             print(f"[cemini-lobby] rebuy after pay: {json.dumps(resp, sort_keys=True)[:300]}")
-            if state is not None:
-                state["rebuy_count"] = int(state.get("rebuy_count") or 0) + 1
-                state.pop("rebuy_fund_blocked_until", None)
-                state.pop("rebuy_fund_block_reason", None)
-                if save_state_fn:
-                    save_state_fn(state)
+            _success(sponsored=False)
             return True
         except ArenaError as pay_err:
             print(f"[cemini-lobby] rebuy pay failed: {pay_err.status} {pay_err.body}",
                   file=sys.stderr)
             err_body = pay_err.body if isinstance(pay_err.body, dict) else {}
+            if _payment_amount_too_low(pay_err.body):
+                print(
+                    "[cemini-lobby] rebuy tx rejected as 250 MON floor — "
+                    "parking, not paying 250 MON",
+                    file=sys.stderr,
+                )
+                if state is not None:
+                    _park_entry_fee_mismatch(
+                        state, save_state_fn, str(pay_err.body)[:500],
+                    )
+                return False
             if pay_err.status in (402, 503):
                 bal = _wallet_native_balance(client, pay.get("chain") or "monad")
                 if bal:
@@ -681,8 +896,7 @@ def _try_rebuy(
                         state,
                         str(err_body.get("message") or err_body.get("error") or pay_err.body),
                     )
-                    if save_state_fn:
-                        save_state_fn(state)
+                    _persist()
                     print(
                         "[cemini-lobby] rebuy fund block — pausing rebuy attempts for 6h "
                         "(fund wallet or manual Arena rebuy)",
@@ -866,7 +1080,21 @@ def run_lobby(args: argparse.Namespace) -> int:
                     return
                 if e.status == 402:
                     pay = e.body.get("paymentRequirements") or {} if isinstance(e.body, dict) else {}
-                    if _refuse_entry_fee() and not state.get("entry_fee_tx_hash"):
+                    if state.get("entry_fee_amount_mismatch"):
+                        print(
+                            "[cemini-lobby] entry parked — sponsored 0.01 MON "
+                            "rejected as join buy-in (Arena 250 MON floor). "
+                            "Trying ticket rebuy instead. "
+                            f"{state.get('entry_fee_amount_mismatch_reason') or ''}",
+                            file=sys.stderr,
+                        )
+                        if _try_rebuy(client, competition_id, state, save_state):
+                            last_join_at = 0.0
+                            in_queue_only = False
+                        else:
+                            last_join_at = now
+                        return
+                    if _should_refuse_entry_fee(pay) and not state.get("entry_fee_tx_hash"):
                         amt = pay.get("amount", "?")
                         cur = pay.get("currency", "MON")
                         print(
@@ -877,14 +1105,30 @@ def run_lobby(args: argparse.Namespace) -> int:
                         )
                         last_join_at = now
                         return
+                    if _sponsored_ticket_funded(pay) and not state.get("entry_fee_tx_hash"):
+                        amt = pay.get("amount", "?")
+                        cur = pay.get("currency", "MON")
+                        print(
+                            f"[cemini-lobby] sponsored ticket funded "
+                            f"({amt} {cur}) — completing protocol join"
+                        )
+                    pending_ref = state.get("entry_fee_payment_reference")
                     pending_tx = state.get("entry_fee_tx_hash")
-                    if pending_tx:
-                        print(f"[cemini-lobby] retrying join with pending tx {pending_tx}",
-                              file=sys.stderr)
+                    if pending_ref or pending_tx:
+                        print(
+                            f"[cemini-lobby] retrying join with pending "
+                            f"pref={pending_ref or '-'} tx={pending_tx or '-'}",
+                            file=sys.stderr,
+                        )
                         try:
-                            join_resp = _join(client, competition_id, tx_hash=pending_tx)
+                            join_resp = _join(
+                                client, competition_id,
+                                tx_hash=None if pending_ref else pending_tx,
+                                payment_reference=pending_ref,
+                            )
                             last_join_at = now
                             state.pop("entry_fee_tx_hash", None)
+                            state.pop("entry_fee_payment_reference", None)
                             save_state(state)
                             print(f"[cemini-lobby] join after pending tx: "
                                   f"{json.dumps(join_resp, sort_keys=True)[:500]}")
@@ -894,6 +1138,21 @@ def run_lobby(args: argparse.Namespace) -> int:
                             if pend_err.status == 400 and "not yet mined" in msg.lower():
                                 print("[cemini-lobby] tx still indexing on Arena…", file=sys.stderr)
                                 last_join_at = now
+                                return
+                            if _payment_amount_too_low(pend_err.body):
+                                print(
+                                    "[cemini-lobby] sponsored 0.01 MON tx rejected "
+                                    f"({pend_err.body}) — parking, not paying 250 MON",
+                                    file=sys.stderr,
+                                )
+                                _park_entry_fee_mismatch(
+                                    state, save_state, str(pend_err.body)[:500],
+                                )
+                                if _try_rebuy(client, competition_id, state, save_state):
+                                    last_join_at = 0.0
+                                    in_queue_only = False
+                                else:
+                                    last_join_at = now
                                 return
                             if pend_err.status != 402:
                                 print(f"[cemini-lobby] pending tx join failed: "
@@ -913,6 +1172,7 @@ def run_lobby(args: argparse.Namespace) -> int:
                             client, competition_id, pay, state=state, save_state_fn=save_state)
                         last_join_at = now
                         state.pop("entry_fee_tx_hash", None)
+                        state.pop("entry_fee_payment_reference", None)
                         save_state(state)
                         print(f"[cemini-lobby] join after pay: "
                               f"{json.dumps(join_resp, sort_keys=True)[:500]}")
@@ -921,6 +1181,21 @@ def run_lobby(args: argparse.Namespace) -> int:
                         if pay_err.status == 400 and "not yet mined" in msg.lower():
                             # _join_with_entry_fee raises before storing — handled below
                             pass
+                        if _payment_amount_too_low(pay_err.body):
+                            print(
+                                "[cemini-lobby] sponsored 0.01 MON tx rejected "
+                                f"({pay_err.body}) — parking, not paying 250 MON",
+                                file=sys.stderr,
+                            )
+                            _park_entry_fee_mismatch(
+                                state, save_state, str(pay_err.body)[:500],
+                            )
+                            if _try_rebuy(client, competition_id, state, save_state):
+                                last_join_at = 0.0
+                                in_queue_only = False
+                            else:
+                                last_join_at = now
+                            return
                         print(f"[cemini-lobby] entry pay/join failed: {pay_err.status} "
                               f"{pay_err.body}", file=sys.stderr)
                         last_join_at = now
@@ -1183,7 +1458,11 @@ def run_lobby(args: argparse.Namespace) -> int:
                 ctx = _safe_research_context(table, retrieve_fn)
                 if qual_protect or lead_protect:
                     ctx["qualification_protect"] = qual_protect
-                    ctx["survival_mode"] = True
+                    # At/under cutoff, qual_protect + survival_mode is the P15
+                    # nit spiral (fold pads with nothing to lock). Lead still nits.
+                    buf = int((qual_status or {}).get("buffer_chips") or 0)
+                    if qual_survival_mode(lead_protect=lead_protect, buffer_chips=buf):
+                        ctx["survival_mode"] = True
                 if lead_protect:
                     ctx["lead_protect"] = True
                 if first_protect:

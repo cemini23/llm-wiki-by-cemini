@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+from pathlib import Path
+p = Path(__file__).resolve().parent.parent / "wiki/entities/tools/cve-mcp-server.md"
+p.write_text(
+    "---\n"
+    "title: cve-mcp-server — CVE lookup MCP\n"
+    "type: entity\n"
+    "tags: [tool, k256, cve, apache-2.0, mcp]\n"
+    "keywords: [mukul975, cve-mcp-server, BUGSTONE]\n"
+    "related:\n"
+    "  - concepts/k256-cybersec-wave.md\n"
+    "  - concepts/k256-eval-github-wave.md\n"
+    "  - sources/arxiv-2609.05335-cve-patch-history-detector-2026-09-07.md\n"
+    "  - sources/eval-url-revenue-analysis-2026-09-07.md\n"
+    "maturity: draft\n"
+    "created: 2026-09-07\n"
+    "updated: 2026-09-07\n"
+    "phase_0_verdict: GO REFERENCE\n"
+    "harness_verb: FILE\n"
+    "wire_note: REFERENCE clone; ask before adding to project MCP.\n"
+    "---\n\n"
+    "## Relations\n\n"
+    "- @concepts/k256-cybersec-wave.md\n"
+    "- @concepts/k256-eval-github-wave.md\n"
+    "- @sources/arxiv-2609.05335-cve-patch-history-detector-2026-09-07.md\n"
+    "- @sources/eval-url-revenue-analysis-2026-09-07.md\n\n"
+    "## Raw Concept\n\n"
+    "| Field | Value |\n|-------|-------|\n"
+    "| **Repo** | https://github.com/mukul975/cve-mcp-server |\n"
+    "| **License** | Apache-2.0 `[CONFIRMED]` gh api SPDX 2026-09-07 |\n"
+    "| **Local** | `.local/adopts/cve-mcp-server` |\n"
+    "| **Stars** | 1459 (2026-09-07) |\n\n"
+    "## Narrative\n\n"
+    "CVE lookup MCP. Pairs 2609.05335 as a query surface, not an exploit generator. No PoC payloads. Eval claimed Integrate — overridden to REFERENCE.\n\n"
+    "**Verdict.** **GO REFERENCE** FILE. **0 Integrate GO** for MCP install this session.\n\n"
+    "## Snippets\n\n"
+    '> "Apache-2.0 `[CONFIRMED]` gh api 2026-09-07; 1459 stars." [Source: gh api repos/mukul975/cve-mcp-server]\n',
+    encoding="utf-8",
+)
+print("wrote", p)

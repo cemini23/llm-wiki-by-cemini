@@ -8,9 +8,10 @@ related:
   - sources/alm-desk-2026-08-20.md
   - sources/defense-tungsten-supply-chain-audit-2026-09.md
   - sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md
+  - "@seo-wiki/concepts/metals-tungsten-ptpd-outlier-notes.md"
 maturity: draft
 created: 2026-08-20
-updated: 2026-09-07
+updated: 2026-09-11
 ---
 
 ## Relations
@@ -20,6 +21,7 @@ updated: 2026-09-07
 - @sources/defense-tungsten-supply-chain-audit-2026-09.md — Sep forensic: APT plant is the SPOF; no Gentung DPA
 - Desktop memo: `/Users/claudiobarone/Desktop/ALM_Almonty_Tungsten_Thesis_2026-08-20.md`
 - @sources/substack-rss-outlier-weekly-2026-09-07-tungsten-furnace-2026-09-07.md
+- @seo-wiki/concepts/metals-tungsten-ptpd-outlier-notes.md — Outlier **LIVE** 2026-09-07 https://outlierweekly.substack.com/p/the-war-is-a-metals-furnace-tungsten
 
 ## Raw Concept
 

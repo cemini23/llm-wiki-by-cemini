@@ -1,0 +1,89 @@
+loop:
+  recency_window_days: 14
+  max_results_per_query: 3
+fetch:
+  enabled: true
+  max_downloads: 5
+  fetch_likely: false
+  max_results_per_paper_query: 3
+arxiv_fallback:
+  enabled: true
+  request_interval_seconds: 3
+  max_terms_per_query: 4
+exa:
+  news_enabled: false
+  paper_mode: arxiv-only
+  include_domains:
+  - arxiv.org
+  search_type: auto
+active_topics:
+- Godot 4 — RTS, grid building, isometric 2D, pathfinding tutorials
+- Castle sim / Stronghold-like design — economy, siege, wall building postmortems
+- Indie RTS scope — vertical slice discipline, solo dev timelines
+- Agent-assisted game dev — Claude Code, Cursor, multi-agent harness, Godot MCP
+- AI game dev automation — playtesting, CI, Stagehand, verification gates
+- RTS networking — lockstep, deterministic simulation (research only until slice ships)
+- Game art pipeline — isometric tiles, sprite sheets (@image-gen-wiki cross-ref)
+paper_queries:
+- cluster: rts-flow-field-game
+  query: flow field pathfinding real-time strategy game crowd Emerson Game AI Pro
+  category: research paper
+  # Bare "continuum"/"navigation" pulled medical robots + drone vision (2026-07-22).
+  # UAV/urban CFD "flow fields" pulled air-mobility flight planning (2026-08-15).
+  arxiv_query: (all:"flow field" OR all:flowfield OR all:"flow fields" OR all:"integration field") AND
+    (all:pathfinding OR all:RTS OR all:game OR all:crowd OR all:Emerson) ANDNOT
+    (all:UAV OR all:drone OR all:aerial OR all:"air mobility" OR all:"flight planning" OR all:flight-planning)
+- cluster: rts-influence-maps
+  query: influence maps potential fields real-time strategy game micro arxiv
+  category: research paper
+  arxiv_query: (all:"influence map" OR all:"influence maps") AND (all:RTS OR all:game OR all:AI)
+- cluster: game-navmesh-dynamic
+  query: navigation mesh dynamic obstacles video game pathfinding arxiv OR acm
+  category: research paper
+  arxiv_query: (all:navmesh OR all:"navigation mesh") AND (all:dynamic OR all:game OR all:pathfinding)
+- cluster: lockstep-deterministic
+  query: deterministic lockstep networked game simulation arxiv
+  category: research paper
+  # Bare "deterministic"/"simulation" pulled quantum, UAS, HF-stats (2026-07-20).
+  # "lockstep" + loose game/networking still matched neuromorphic lockstep-SIMD (2026-07-28).
+  arxiv_query: (all:lockstep OR all:"rollback netcode" OR all:"deterministic lockstep") AND
+    (all:multiplayer OR all:RTS OR all:netcode OR all:"video game" OR all:"game networking") ANDNOT
+    (all:SIMD OR all:neuromorphic OR all:GPU)
+- cluster: llm-agent-game-paper
+  query: research paper LLM agent game development playtesting NPC
+  category: research paper
+  arxiv_query: '(all:LLM OR all:"language model") AND (all:game OR all:playtest OR all:NPC) AND (all:agent OR all:NPC OR all:procedural)'
+queries:
+- cluster: godot-rts
+  query: '"Godot 4" RTS OR "real-time strategy" OR grid building OR isometric tutorial'
+  category: news
+- cluster: stronghold-castle-sim
+  query: Stronghold castle simulation OR medieval city builder OR siege game design GDC
+  category: news
+- cluster: agent-game-dev
+  query: LLM agent game development Claude Code Cursor Godot MCP multi-agent shipped indie
+  category: news
+- cluster: llm-npc-game
+  query: LLM NPC dialogue game design guardrails on-device SLM GDC 2025
+  category: news
+- cluster: agentic-pcg
+  query: agentic procedural content generation tool-using LLM level design game
+  category: news
+- cluster: godot-building-kit
+  query: Godot building system grid placement open source github
+  category: news
+monokern_pipeline:
+  enabled: true
+  cadence: weekly
+  default_deliverable: none
+  source_modules:
+  - yt-dlp
+  - inbox_pdf
+  - web_url
+  ingest_hook: After weekly digest, one NotebookLM pass on top ROADMAP topic (engine eval or slice spec)
+social:
+  manual_pass:
+  - tool: opencli-reader
+    prompt: HN + Reddit gamedev for Godot RTS or castle builder headlines last 7d
+output:
+  path_template: wiki/sweeps/{date}-daily.md

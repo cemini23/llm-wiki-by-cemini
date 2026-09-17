@@ -4,10 +4,10 @@
 # maps to an active project below. Default = wiki-only unless a row says scp.
 #
 # Sync with ROADMAP.md "Active workstreams" and scripts/daily_research_config.yaml
-# Eval: CCC prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md (v10.4)
+# Eval: CCC prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md (v10.6)
 #
-# Operator priority (2026-07-27): Atto = #1 · GuruWatcher = #2 · everything else behind.
-# TipDrop / David kit briefs retired 2026-08-05 — replaced by local abliterated AI lab (cybersec).
+# Operator priority (2026-09-13): Atto = #1 · GuruWatcher = #2 · CeminiDFS = #3 · CeminiParlays = #4 · then wikis.
+# Poker arena retired 2026-09-13. TipDrop / David kit briefs retired 2026-08-05.
 
 default_posture: wiki-only
 
@@ -56,43 +56,45 @@ projects:
       - "Generic Discord SaaS onboarding without price-watch or newsletter-claim hook"
       - "Genealogy / Atto product content"
 
-  poker-arena:
-    label: "dev.fun Poker Arena (cemini_decide)"
-    code_root: "agents/devfun-poker-arena"
-    wiki: "@gambling-wiki/concepts/poker-hl-analyst-loop.md"
-    brief_dir: "agents/devfun-poker-arena/briefs"
-    scp_target: null
-    co_primary: false
-    priority_rank: 10
-    primary_goal: "dev.fun Poker Agent Challenge — researcher track sandbox LB (HU), Jun 21 beta"
-    steal_from:
-      - "Researcher Round HU sandbox — trajectory, TrueSkill, nine-axis eval (2606.13815)"
-      - "MAFP fictitious play, multi-agent equilibrium learning (2606.19308)"
-      - "Generator-verifier inference steering for decide() (VERITAS / K123–K124 cluster)"
-      - "6-max preflop discipline, HUD exploit, blind pressure, tournament ICM"
-      - "Heads-up gin lanes, BenchFlow sandbox submit, opponent modeling, F6+ memory"
-      - "Regression spots + HL analyst loop leaks"
-    skip_brief_if:
-      - "Casino slots / sportsbook unrelated to arena-pokerkit"
-      - "Legacy CeminiSuite conductor eval unless poker-session tooling"
-
   ceminidfs:
     label: "CeminiDFS — DIY NFL projection pipeline (FanDuel-primary)"
-    code_root: "../projects/CeminiDFS"
+    code_root: "../CeminiDFS"
     wiki: "@gambling-wiki/concepts/diy-nfl-dfs-model-architecture.md"
-    brief_dir: "../projects/CeminiDFS/briefs"
+    brief_dir: "../CeminiDFS/briefs"
     scp_target: null
-    co_primary: false
-    priority_rank: 11
+    co_primary: true
+    priority_rank: 3
+    primary_goal: "NFL DFS contest ROI + BBM draft copilot — projection/lineup/sim only"
     steal_from:
       - "nflverse PBP → volume/usage/stat projection layers"
       - "Vegas implied team totals, weather adjustments, injury workflow"
       - "Ownership projection, copula/sim rerank, late-swap pydfs integration"
       - "Backtest/calibration vs Stokastic/FantasyLabs paid benchmarks"
       - "FanDuel slate strategy, stacking/correlation, MME pool generation"
+      - "Underdog Best Ball Mania exposure ledger / draft recommender"
     skip_brief_if:
       - "NBA/other-sport DFS unless NFL methodology transfer explicit"
+      - "Sportsbook parlay / SGP / pick'em ranking (→ ceminiparlays)"
       - "Paid-tool affiliate content without reproducible methodology"
+
+  ceminiparlays:
+    label: "CeminiParlays — NFL sportsbook parlay / SGP EV CLI + pick'em profile"
+    code_root: "../CeminiParlays"
+    wiki: "@gambling-wiki/concepts/parlay-and-correlated-bets.md"
+    brief_dir: "../CeminiParlays/briefs"
+    scp_target: null
+    co_primary: true
+    priority_rank: 4
+    primary_goal: "Rank operator-typed Hard Rock (etc.) parlay / SGP tickets vs displayed American; pick'em second profile; no scrape / no auto-submit"
+    steal_from:
+      - "Same-game parlay / SGP EV vs displayed American"
+      - "De-vig two-way book markets; Gaussian copula joint hit rate"
+      - "Underdog / PrizePicks pick'em slip ranking (second profile)"
+      - "Injury scratch tokens; fail-closed line validation"
+    skip_brief_if:
+      - "NFL DFS projection / lineup optimizer / BBM (→ ceminidfs)"
+      - "Scrape / auto-bet / auto-submit sportsbook tooling"
+      - "Poker arena / GTO solver (product retired 2026-09-13)"
 
   xsp-killer:
     label: "XSP killer bot — Robinhood long-call lanes A/B"
@@ -184,8 +186,9 @@ legacy_deprioritized:
     - "MAPPO equity sleeve / STOCKBENCH promotion"
     - "Riskfolio / HRP allocation ladder on prod"
     - "Conductor harness attribution / Orch-RM BoN"
-    - "Generic portfolio optimization theory without PM/XSP/poker hook"
+    - "Generic portfolio optimization theory without PM/XSP hook"
     - "castle-sim (Godot RTS vertical slice) — replaced by family-tree focus Jul 2026"
     - "world-cup-bot / WC LP safety cadence — tournament over; dropped 2026-07-28"
     - "TipDrop.io / tipdrop-workspace-kit / David persona kit mirror — retired 2026-08-05 (David off TipDrop)"
+    - "dev.fun Poker Arena / agents/devfun-poker-arena — retired 2026-09-13 (no poker product)"
   action: "wiki + concept page only; brief only if user asks or ROADMAP row reopens"

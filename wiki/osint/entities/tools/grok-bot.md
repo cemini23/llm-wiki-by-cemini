@@ -18,9 +18,9 @@ related:
   - concepts/k256-ccc-models-wave.md
 maturity: validated
 created: 2026-09-02
-updated: 2026-09-07
+updated: 2026-09-14
 harness_verb: FILE
-wire_note: Operator charters in briefs/2026-09-01_grok-bot-charters.md — not prod wire
+wire_note: Operator charters in briefs/2026-09-01_grok-bot-charters.md (§1–16 plus §17–19 DFS/Parlays desks) — not prod wire
 ---
 
 ## Relations
@@ -46,14 +46,14 @@ SpaceXAI beta product: named persistent agents on a **user-scoped cloud VM** (br
 | Product | https://x.ai/bot |
 | Docs | https://docs.x.ai/grok-bot/overview |
 | Guides | https://x.ai/bot/guides |
-| Verdict | **Operator tool (FILE)** — Cemini charters in `briefs/2026-09-01_grok-bot-charters.md`; not a CeminiSuite wire |
+| Verdict | **Operator tool (FILE)** — Cemini charters in `briefs/2026-09-01_grok-bot-charters.md` (core + marketing + §17–19 slate/recap desks); not a CeminiSuite wire |
 | Distinct from | Grok chat @ grok.com; federation `/route` + `cursor-route` CLI; `@bot` announcement account |
 
 **Architecture (docs, retrieved 2026-09-02):** All Bots on one account share **one computer** — browser sessions, files, and CLI credentials are **not** isolated per Bot. Each Bot gets its own screen; parallel browser work is possible; security boundary is the **account**, not the Bot. Local Mac/Windows is separate unless local-computer policy is enabled.
 
 **Primitives:** Description (profile) · **Skills** (saved task workflows) · **Routines** (scheduled or event-triggered re-runs) · **Plugins** (connectors/MCP; `@` in chat) · **Templates** (Aug 2026: share identity/skills/routines/plugins via `x.ai/bot/<id>` — recipient gets a **copy**, not creator logins or history).
 
-**Cemini posture:** HITL on send/publish/delete/purchase; no Equifax/banks/1Password/Stripe/Discord/Atto on shared Bot VM; wiki ingest stays on laptop Cursor; Bot = discovery desk only for Drive Wiki Scout.
+**Cemini posture:** HITL on send/publish/delete/purchase; no Equifax/banks/1Password/Stripe/Discord/Atto on shared Bot VM; wiki ingest stays on laptop Cursor; Bot = discovery desk only for Drive Wiki Scout. DFS/Parlays desks (§8, §17–19) are research and recap only — no sportsbook submit, no Odds API key on the VM, no FanDuel Enter.
 
 ## Snippets
 

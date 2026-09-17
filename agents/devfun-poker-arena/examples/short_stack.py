@@ -144,6 +144,14 @@ def short_stack_preflop_action(
     8–12bb uses the tighter selective jam set.
     """
     jam_ok = push_hand_ok(hand_class, position)
+    # P15: 77 UTG open-jam after the lock blinded us down. EP 77 is a fold
+    # unopened; still jam/call if already facing a raise in the ≤8bb band.
+    if (
+        (position or "").upper() == "UTG"
+        and (hand_class or "").strip() == "77"
+        and int(call_chips or 0) <= 0
+    ):
+        jam_ok = False
     if stack_bb is not None:
         try:
             stack_bb_f = float(stack_bb)

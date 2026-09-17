@@ -8,9 +8,10 @@ related:
   - concepts/western-tungsten-supply-thesis.md
   - entities/tickers/alm.md
   - sources/defense-tungsten-supply-chain-audit-2026-09.md
+  - "@seo-wiki/concepts/metals-tungsten-ptpd-outlier-notes.md"
 maturity: draft
 created: 2026-09-07
-updated: 2026-09-07
+updated: 2026-09-11
 read_status: read
 ---
 
@@ -20,6 +21,7 @@ read_status: read
 - @concepts/western-tungsten-supply-thesis.md
 - @entities/tickers/alm.md
 - @sources/defense-tungsten-supply-chain-audit-2026-09.md
+- @seo-wiki/concepts/metals-tungsten-ptpd-outlier-notes.md — SEO queue notes + LIVE flip 2026-09-11
 
 ## Raw Concept
 

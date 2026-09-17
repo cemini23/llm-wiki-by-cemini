@@ -36,7 +36,7 @@ updated: 2026-09-16
 | Field | Value |
 |-------|-------|
 | **Cadence** | Daily — **free arXiv** paper lane (wiki-deduped) → inbox PDFs; Exa news **off** by default |
-| **Last run** | 2026-09-16 |
+| **Last run** | 2026-09-17 |
 | **Script** | `cemini-daily-research-digest` (or `bash scripts/run_daily_research_digest.sh` from repo) |
 | **Config** | `scripts/daily_research_config.yaml` (`exa.paper_mode`, `exa.news_enabled`) |
 | **LaunchAgents** | OSINT `@08:00`; sibling wikis `@08:10+` (+7min stagger); federation summary after last sibling (`reinstall_morning_launchagents.sh`). Wrappers prefer `${WIKI_ROOT}/scripts/daily_research_digest_run.py`; frozen `~/.cemini/launchagent/osint/` is fallback. Jobs also share `~/.cemini/arxiv-api.lock` so sleep-coalesce does not herd `export.arxiv.org`. |

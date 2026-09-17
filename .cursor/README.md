@@ -47,18 +47,18 @@ Cursor remembers this per machine. If it says **Off**, agents cannot reach kb-se
 | Server | Role |
 |--------|------|
 | **stash** | Episodic memory `localhost:8088` |
-| **brave-search** | Web search (API key in that file only) |
+| **brave-search** | Web search — `~/.local/bin/mcp-brave` + `~/.cemini/brave-api-key` |
 | **playwright** | Browser automation (fallback; prefer built-in browser in chat) |
-| **github** | PRs, issues, repos — remote `api.githubcopilot.com/mcp/` |
+| **github** | PRs, issues, repos — `~/.local/bin/mcp-github` (official `github-mcp-server` stdio) |
 
 Install / refresh **github**:
 
 ```bash
 cd "/Users/claudiobarone/Projects/OSINT WORKSPACE"
-./scripts/setup_cursor_github_mcp.sh   # token → ~/.cemini/github-pat + ~/.cursor/mcp.json
+./scripts/setup_cursor_github_mcp.sh
 ```
 
-Token order: `GITHUB_PERSONAL_ACCESS_TOKEN` env → `~/.cemini/github-pat` → `gh auth token`. Never commit the PAT.
+Token order: `GITHUB_PERSONAL_ACCESS_TOKEN` / `GITHUB_TOKEN` env → `~/.cemini/github-pat` → `gh auth token`. Never commit the PAT or put it in `mcp.json`. GUI Cursor does not inherit `~/.zshrc`.
 
 No `librarian-stash` in this project (duplicate removed).
 

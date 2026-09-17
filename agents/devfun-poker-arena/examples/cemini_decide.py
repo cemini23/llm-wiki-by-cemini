@@ -4231,12 +4231,28 @@ def _apply_chip_reserve(
         return out
     action = out.get("action")
     amount = out.get("amount")
-    if action not in ("bet", "raise", "all-in") or amount is None:
+    if action not in ("bet", "raise", "all-in"):
         return out
     allowed = table.get("allowedActions") or {}
     available = allowed.get("availableActions") or []
     cap = min(_hero_stack_chips(table), int(max_playable))
     if cap <= 0:
+        # P15: playable=0 used to pass all-in through (incl. amount=None jams).
+        # Check/fold instead unless we have AA/KK/QQ (still ship those).
+        if hand_class in {"AA", "KK", "QQ"}:
+            return out
+        if "check" in available:
+            return _build(
+                "check", None, table, allowed, eq=0.5, po=0.0,
+                msg="[reserve cap empty — check]",
+            )
+        if "fold" in available:
+            return _build(
+                "fold", None, table, allowed, eq=0.5, po=0.0,
+                msg="[reserve cap empty — fold]",
+            )
+        return out
+    if amount is None:
         return out
     if int(amount) <= cap:
         return out

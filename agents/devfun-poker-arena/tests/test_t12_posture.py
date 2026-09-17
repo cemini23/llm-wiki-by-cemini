@@ -11,7 +11,13 @@ _EXAMPLES = Path(__file__).resolve().parent.parent / "examples"
 if str(_EXAMPLES) not in sys.path:
     sys.path.insert(0, str(_EXAMPLES))
 
-from run_cemini_lobby import _apply_competition_posture  # noqa: E402
+from run_cemini_lobby import (  # noqa: E402
+    _apply_competition_posture,
+    _join_payload,
+    _payment_amount_too_low,
+    _should_refuse_entry_fee,
+    _sponsored_ticket_funded,
+)
 
 
 @pytest.fixture
@@ -79,3 +85,48 @@ def test_s13_tournament_gets_freeze(_isolate_env):
     assert os.environ["CEMINI_REFUSE_ENTRY_FEE"] == "1"
     assert os.environ["CEMINI_PLACEMENT_CHASE"] == "0"
     assert os.environ["CEMINI_TOURNAMENT_3BET"] == "0"
+
+
+def test_s14_tournament_gets_freeze(_isolate_env):
+    for k in list(os.environ):
+        if k.startswith("CEMINI_"):
+            del os.environ[k]
+    os.environ["CEMINI_LOBBY_ROLE"] = "s14_tournament"
+    os.environ["CEMINI_PRIMARY_TRACK"] = "playground"
+    os.environ["S14_TOURNAMENT_COMP"] = "cmt03vxf03y76xjshadwhbcpi"
+    _apply_competition_posture("cmt03vxf03y76xjshadwhbcpi")
+    assert os.environ["CEMINI_TOURNAMENT_MODE"] == "1"
+    assert os.environ["CEMINI_TABLE_FORMAT"] == "6max"
+    assert os.environ["CEMINI_TAG_WIDEN"] == "0"
+    assert os.environ["CEMINI_MAX_REBUYS"] == "0"
+    assert os.environ["CEMINI_REFUSE_ENTRY_FEE"] == "1"
+
+
+def test_sponsored_ticket_funded_allows_join_under_refuse(_isolate_env):
+    os.environ["CEMINI_REFUSE_ENTRY_FEE"] = "1"
+    t14 = {
+        "amount": "0.01",
+        "currency": "MON",
+        "sponsored": True,
+        "sponsor": {"type": "admin_admission", "status": "funded"},
+    }
+    unpaid = {"amount": "250", "currency": "MON"}
+    assert _sponsored_ticket_funded(t14) is True
+    assert _should_refuse_entry_fee(t14) is False
+    assert _sponsored_ticket_funded(unpaid) is False
+    assert _should_refuse_entry_fee(unpaid) is True
+
+
+def test_payment_amount_too_low_detects_250_floor():
+    assert _payment_amount_too_low({
+        "error": "PAYMENT_AMOUNT_TOO_LOW",
+        "message": "Payment amount too low: expected at least 250 MON with 5% tolerance",
+    }) is True
+    assert _payment_amount_too_low({"error": "not yet mined"}) is False
+
+
+def test_join_payload_prefers_payment_reference():
+    body = _join_payload("comp1", tx_hash="0xabc", payment_reference="pref1")
+    assert body == {"competitionId": "comp1", "paymentReference": "pref1"}
+    legacy = _join_payload("comp1", tx_hash="0xabc")
+    assert legacy == {"competitionId": "comp1", "txHash": "0xabc"}

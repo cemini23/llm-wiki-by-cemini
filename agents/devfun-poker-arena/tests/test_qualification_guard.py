@@ -5,6 +5,7 @@ from qualification_guard import (
     DEFAULT_BUFFER_CHIPS,
     DEFAULT_LEAD_BUFFER_CHIPS,
     fetch_qualification_status,
+    qual_survival_mode,
     staggered_chip_lock,
     tournament_mode_enabled,
 )
@@ -112,6 +113,45 @@ def test_stagger_lock_marginal_top20(monkeypatch):
     assert lock["lock_tier"] == "comfort_top20"
     assert lock["locked_chips"] >= 16000
     assert lock["playable_chips"] <= 3000
+
+
+def test_p15_at_cutoff_does_not_zero_playable(monkeypatch):
+    """P15 2026-08-19: rank 20 @ 964 vs cutoff 964 locked playable=0."""
+    monkeypatch.setenv("CEMINI_STAGGER_LOCKS", "1")
+    monkeypatch.setenv("CEMINI_QUAL_BUFFER_CHIPS", "0")
+    lock = staggered_chip_lock(
+        964,
+        964,
+        qual_buffer=0,
+        qualification_protect=True,
+        lead_protect=False,
+        first_protect=False,
+    )
+    assert lock["lock_tier"] == "off"
+    assert lock["playable_chips"] == 964
+    assert lock["max_playable_chips"] is None
+    lock_buf = staggered_chip_lock(
+        964,
+        964,
+        qual_buffer=1000,
+        qualification_protect=True,
+    )
+    assert lock_buf["playable_chips"] == 964
+    fat = staggered_chip_lock(
+        2000,
+        964,
+        qual_buffer=0,
+        qualification_protect=True,
+    )
+    assert fat["playable_chips"] >= int(2000 * 0.12)
+    assert fat["playable_chips"] < 2000
+
+
+def test_qual_survival_mode_off_at_cutoff():
+    assert qual_survival_mode(lead_protect=False, buffer_chips=0) is False
+    assert qual_survival_mode(lead_protect=False, buffer_chips=-10) is False
+    assert qual_survival_mode(lead_protect=False, buffer_chips=36) is True
+    assert qual_survival_mode(lead_protect=True, buffer_chips=0) is True
 
 
 def test_stagger_lock_scales_with_smaller_tournament(monkeypatch):

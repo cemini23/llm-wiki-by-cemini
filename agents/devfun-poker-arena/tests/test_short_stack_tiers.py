@@ -101,3 +101,23 @@ def test_band_19bb_at_selective_jam():
         stack_bb=19.0,
     )
     assert out is not None and out[0] in _JAM
+
+
+def test_utg_77_unopened_folds_not_jam():
+    """P15 bust: 77 UTG open-all-in. Fold unopened; still jam vs a raise ≤8bb."""
+    open_fold = short_stack_preflop_action(
+        hand_class="77", position="UTG",
+        available=["fold", "raise", "all-in"],
+        allowed=_allowed(), call_chips=0, stack_chips=80,
+        stack_bb=4.0,
+    )
+    assert open_fold == ("fold", None) or (
+        open_fold is not None and open_fold[0] == "fold"
+    )
+    vs_raise = short_stack_preflop_action(
+        hand_class="77", position="UTG",
+        available=["fold", "call", "raise", "all-in"],
+        allowed=_allowed(), call_chips=40, stack_chips=80,
+        stack_bb=4.0,
+    )
+    assert vs_raise is not None and vs_raise[0] in _JAM
