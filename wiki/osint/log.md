@@ -1,3 +1,27 @@
+## [2026-09-17] ingest | K263 wave
+
+- **Inbox:** 16 files (15 NEW + 1 LIKELY treated as NEW: PE Matt Pocock ≠ Dex Horthy). Preingest: parent ran; do not re-litigate licenses.
+- **Sources:** stack eval SPDX overrides; Donny 16 Sep macro; pruning smart-home; cost-efficient LLM; AeroWeaver OOD; CERA-MoA; fictitious play; social laws; ScienceIDE; AgentLSD; LS AIUC + Gas Town; PE Pocock; EH sports hedge; Klement Malacca; Moontower var/cov.
+- **Concepts:** 8 k263-* hubs. Entities: openjev, jev-ultrafast, browserskill, jev-mcp, knowledge-work-plugins, ecc-harness, agent-lsd. Bumps: nvidia-skillspector no new clone, colibri Watch no new clone, data-formulator FILE, k262 hubs, GuruWatcher no auto-arm, wiki-tooling-evaluation FILE-not-Integrate.
+- **Phase-0:** `adopt_k263_phase0.sh` — openjev / jev-ultrafast / BrowserSkill / data-formulator / jev-mcp / ECC / agent-lsd MIT; knowledge-work-plugins Apache-2.0. **0 Integrate GO.**
+- **Routing:** Atto #1 openjev FILE (PII on-device; Transkribus sole HTR; HITL chrome cassette). GW #2 Donny MSTR 120 / UEC 9-9.50 claim-ledger HITL; Klement Malacca no named levels. CeminiDFS #3 data-formulator FILE. CeminiParlays #4 EH real-vs-promo hedge FILE. CCC CERA-MoA/ScienceIDE/ECC/Pocock/Gas Town/AIUC FILE (do not swap `/route`). Cyber AgentLSD EXTRACT. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-17_k263-*` written (gitignored). Sibling copies attempted — sandbox may block `../`.
+- **Archive:** 16/16 inbox → egress-fi. Local copies removed.
+- **gate:** `ingest_session_gate.py` WARN acknowledged — stale `[NEEDS VERIFICATION]` on historical `wiki/log.md` entries are pre-existing, not this batch. Maurer et al (2026) is URL-only `[NEEDS VERIFICATION 2026-09-17]`.
+
+## [2026-09-17] phase-0 | K263
+
+- **TheoLeeCJ/openjev** — MIT `[CONFIRMED]` gh api 2026-09-17; ~5MB GO REFERENCE FILE. Local System-One logit readout. Do not swap `/route`.
+- **browser-use/jev-ultrafast** — MIT `[CONFIRMED]`; ~4MB GO REFERENCE FILE. Chrome HITL. No unattended portal scrape.
+- **Tencent/BrowserSkill** — MIT `[CONFIRMED]`; ~5MB GO REFERENCE FILE. Eval Integrate OVERRIDE. HITL chrome.
+- **microsoft/data-formulator** — MIT `[CONFIRMED]`; ~36MB GO REFERENCE FILE. DFS FILE.
+- **jkudish/jev-mcp** — MIT `[CONFIRMED]`; tiny GO REFERENCE FILE. Ask before MCP.
+- **anthropics/knowledge-work-plugins** — Apache-2.0 `[CONFIRMED]`; ~6.5MB GO REFERENCE FILE. No skill auto-evolve.
+- **affaan-m/ECC** — MIT `[CONFIRMED]`; ~52MB GO REFERENCE FILE. Eval Integrate OVERRIDE. HITL. No skill auto-evolve.
+- **Golim/agent-lsd** — MIT `[CONFIRMED]`; ~8MB GO REFERENCE EXTRACT. No PoC. No CTF writeups.
+- **SKIP:** skillspector exists; colibri Watch exists; WeKnora NOASSERTION; cilium SIZE-SKIP; supervision SIZE-SKIP; coder AGPL; n8n NOASSERTION; Octop Pass; claude-code proprietary; ScienceIDE no SPDX URL.
+- **0 Integrate GO.** Transkribus sole HTR. No MCP. No LIVE Discord. No xsp/pm scp.
+
 ## [2026-09-16] ingest | K262 wave
 
 - **Inbox:** 23 NEW (1 eval + 10 arXiv/PDF + 12 newsletters). Preingest: parent ran; do not re-litigate licenses.

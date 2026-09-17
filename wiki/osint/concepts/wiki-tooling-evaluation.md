@@ -311,10 +311,12 @@ related:
   - entities/tools/agentic-inbox.md
   - sources/eval-repository-revenue-2026-09-16.md
   - concepts/k262-eval-github-wave.md
+  - sources/eval-multi-wiki-stack-2026-09-17.md
+  - concepts/k263-eval-github-wave.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-09-16
+updated: 2026-09-17
 ---
 
 ## Relations
@@ -323,6 +325,8 @@ updated: 2026-09-16
 - @entities/tools/agentic-inbox.md — K261 FILE REFERENCE, not Integrate
 - @sources/eval-repository-revenue-2026-09-16.md — K262 eval
 - @concepts/k262-eval-github-wave.md
+- @sources/eval-multi-wiki-stack-2026-09-17.md — K263 eval; 0 Integrate GO
+- @concepts/k263-eval-github-wave.md
 - @entities/tools/stagehand.md
 - @entities/tools/infographic.md
 - @entities/tools/smart-ralph.md

@@ -4,6 +4,10 @@ type: concept
 tags: [concept, guruwatcher, macro, watches, k233]
 keywords: [guruwatcher, price-watches, inflation-swaps, factor-rotation, alert-only]
 related:
+  - concepts/k263-newsletter-macro-wave.md
+  - concepts/k263-xsp-donny-wave.md
+  - sources/donny-2026-09-16-macro-2026-09-17.md
+  - sources/substack-rss-klement-2026-09-17-malacca-2026-09-17.md
   - sources/substack-rss-glitchspx-2026-08-30-talon-weekly.md
   - sources/substack-rss-glitchspx-2026-08-22-talon-weekly.md
   - sources/substack-rss-klement-2026-08-21-polarisation.md
@@ -41,11 +45,15 @@ related:
   - sources/substack-rss-klement-2026-09-16-cb-experience-2026-09-16.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-16
+updated: 2026-09-17
 ---
 
 ## Relations
 
+- @concepts/k263-newsletter-macro-wave.md
+- @concepts/k263-xsp-donny-wave.md — Donny MSTR 120 / UEC 9-9.50 claim-ledger HITL; never auto-arm
+- @sources/donny-2026-09-16-macro-2026-09-17.md — K263 named levels; never auto-arm; never watches.json
+- @sources/substack-rss-klement-2026-09-17-malacca-2026-09-17.md — K263 no named levels; Maurer URL-only
 - @concepts/k262-newsletter-macro-wave.md
 - @sources/substack-rss-moontower-2026-09-15-not-more-bearish-2026-09-16.md — K262 Fed/10y observations; never auto-arm
 - @sources/substack-rss-klement-2026-09-16-cb-experience-2026-09-16.md — K262 no named levels → no auto-arm

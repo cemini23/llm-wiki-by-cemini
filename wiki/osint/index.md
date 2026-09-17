@@ -7,6 +7,44 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K263 ingest (2026-09-17)
+OSINT K263: 16 inbox (15 NEW + 1 LIKELY treated as NEW: PE Matt Pocock ≠ Dex Horthy). Phase-0 REFERENCE: openjev / jev-ultrafast / BrowserSkill / data-formulator / jev-mcp / ECC / agent-lsd MIT; knowledge-work-plugins Apache-2.0. skillspector already entity no new clone; colibri Watch no new clone; WeKnora NOASSERTION; cilium SIZE-SKIP; supervision SIZE-SKIP; coder AGPL; n8n NOASSERTION. **0 Integrate GO. Transkribus sole HTR. No xsp/pm scp. No MCP. No skill auto-evolve. No LIVE Discord.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k263-eval-github-wave](concepts/k263-eval-github-wave.md) | K263 Eval GitHub Wave | draft |
+| [k263-ccc-harness-wave](concepts/k263-ccc-harness-wave.md) | K263 CCC Harness Wave | draft |
+| [k263-atto-wave](concepts/k263-atto-wave.md) | K263 Atto Wave | draft |
+| [k263-cybersec-wave](concepts/k263-cybersec-wave.md) | K263 Cybersec Wave | draft |
+| [k263-gambling-pm-wave](concepts/k263-gambling-pm-wave.md) | K263 Gambling PM Wave | draft |
+| [k263-newsletter-macro-wave](concepts/k263-newsletter-macro-wave.md) | K263 Newsletter Macro Wave | draft |
+| [k263-xsp-donny-wave](concepts/k263-xsp-donny-wave.md) | K263 XSP Donny Wave | draft |
+| [k263-ood-stub-wave](concepts/k263-ood-stub-wave.md) | K263 OOD Stub Wave | draft |
+| [openjev](entities/tools/openjev.md) | openjev MIT GO REFERENCE FILE | draft |
+| [jev-ultrafast](entities/tools/jev-ultrafast.md) | jev-ultrafast MIT GO REFERENCE FILE | draft |
+| [browserskill](entities/tools/browserskill.md) | BrowserSkill MIT GO REFERENCE FILE | draft |
+| [data-formulator](entities/tools/data-formulator.md) | data-formulator MIT GO REFERENCE DFS FILE | draft |
+| [jev-mcp](entities/tools/jev-mcp.md) | jev-mcp MIT GO REFERENCE FILE; ask before MCP | draft |
+| [knowledge-work-plugins](entities/tools/knowledge-work-plugins.md) | knowledge-work-plugins Apache-2.0 GO REFERENCE FILE | draft |
+| [ecc-harness](entities/tools/ecc-harness.md) | ECC MIT GO REFERENCE FILE HITL | draft |
+| [agent-lsd](entities/tools/agent-lsd.md) | AgentLSD MIT GO REFERENCE EXTRACT; no PoC | draft |
+| [eval-multi-wiki-stack-2026-09-17](sources/eval-multi-wiki-stack-2026-09-17.md) | Multi-wiki stack eval SPDX overrides | draft |
+| [donny-16sep](sources/donny-2026-09-16-macro-2026-09-17.md) | Donny CPI/PPI MSTR 120 UEC 9-9.50 HITL | draft |
+| [pruning-smarthome](sources/arxiv-2609.17515-pruning-smarthome-2026-09-17.md) | Pruning smart-home tool-calling | draft |
+| [cost-efficient-llm](sources/arxiv-2609.18052-cost-efficient-llm-2026-09-17.md) | Cost-efficient LLM Java tasks | draft |
+| [aeroweaver](sources/arxiv-2609.18520-aeroweaver-2026-09-17.md) | AeroWeaver UAV OOD stub | draft |
+| [cera-moa](sources/arxiv-2609.18779-cera-moa-2026-09-17.md) | CERA-MoA co-evolving router | draft |
+| [fictitious-play](sources/arxiv-2609.18848-fictitious-play-auctions-2026-09-17.md) | Fictitious play tie-break | draft |
+| [social-laws](sources/arxiv-2609.18929-social-laws-mas-2026-09-17.md) | Social laws alpha-robustness | draft |
+| [scienceide](sources/arxiv-2609.19134-scienceide-2026-09-17.md) | ScienceIDE HITL no clone | draft |
+| [agentlsd](sources/arxiv-2609.19140-agentlsd-2026-09-17.md) | AgentLSD task contamination | draft |
+| [aiuc](sources/newsletter-rss-latent-space-2026-09-16-aiuc-2026-09-17.md) | AIUC Series A insurance | draft |
+| [gastown](sources/newsletter-rss-latent-space-2026-09-17-gastown-2026-09-17.md) | Yegge Gas Town shutdown | draft |
+| [pocock-skills](sources/newsletter-rss-pragmatic-engineer-2026-09-17-pocock-skills-2026-09-17.md) | Pocock grill-me / wayfinder | draft |
+| [eh-sports-hedge](sources/substack-rss-event-horizon-2026-09-17-sports-hedge-2026-09-17.md) | EH real-vs-promo hedge | draft |
+| [klement-malacca](sources/substack-rss-klement-2026-09-17-malacca-2026-09-17.md) | Klement Malacca Maurer cite | draft |
+| [moontower-varcov](sources/substack-rss-moontower-2026-09-17-var-cov-2026-09-17.md) | Moontower var/cov cheat sheet | draft |
+
 ### K262 ingest (2026-09-16)
 OSINT K262: 23 NEW (1 eval + 10 arXiv/PDF + 12 newsletters). Phase-0 REFERENCE: security-audit-skill / ScienceBuddy / oh-my-hermes MIT; open-code-review Apache-2.0. OpenHunterAI NOASSERTION NO-GO; supervision SIZE-SKIP ~4.3GB; google-maps-scraper no clone (ToS). **0 Integrate GO. Transkribus sole HTR. No xsp/pm scp. No MCP. No skill auto-evolve. No LIVE Discord.**
 

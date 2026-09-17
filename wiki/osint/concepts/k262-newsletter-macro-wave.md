@@ -4,6 +4,7 @@ type: concept
 tags: [macro, newsletter, k262, guruwatcher]
 keywords: [Klement, Moontower, WuBlock, Event-Horizon, Socher]
 related:
+  - concepts/k263-newsletter-macro-wave.md
   - concepts/k261-newsletter-macro-wave.md
   - concepts/guruwatcher-macro-watches.md
   - sources/newsletter-rss-latent-space-2026-09-14-socher-recursive-2026-09-16.md
@@ -20,13 +21,14 @@ related:
   - sources/substack-rss-wublock-2026-09-16-clarity-cloture-fail-2026-09-16.md
 maturity: draft
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k263-newsletter-macro-wave.md
 - @concepts/k261-newsletter-macro-wave.md
 - @concepts/guruwatcher-macro-watches.md
 - @sources/newsletter-rss-latent-space-2026-09-14-socher-recursive-2026-09-16.md

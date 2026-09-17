@@ -30,6 +30,14 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-17 — K263 ingest)
+
+- **K263 ingest** — 16 inbox (15 NEW + 1 LIKELY as NEW). 16 source pages + 8 hubs + 7 new entities (data-formulator bump). Raws to egress-fi. **0 Integrate GO. Transkribus sole HTR. No xsp/pm scp. No MCP. No skill evolve. No LIVE Discord.**
+- **Phase-0** — `adopt_k263_phase0.sh`: openjev / jev-ultrafast / BrowserSkill / data-formulator / jev-mcp / ECC / agent-lsd MIT; knowledge-work-plugins Apache-2.0. NOASSERTION / AGPL / SIZE-SKIP / proprietary no clone.
+- **Routing** — Atto #1 openjev FILE (PII on-device; Transkribus sole HTR). GW #2 Donny MSTR 120 / UEC 9-9.50 HITL no auto-arm. CeminiDFS #3 data-formulator FILE. CeminiParlays #4 EH hedge FILE. CCC CERA-MoA/ScienceIDE/ECC FILE (do not swap `/route`). Cyber EXTRACT. Poker retired.
+- **Briefs** — `briefs/2026-09-17_k263-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run). Federation 429-hygiene apply leftover (sandbox).
+
 ## Current state (2026-09-16 — K262 ingest)
 
 - **K262 ingest** — 23 NEW (1 eval + 10 arXiv/PDF + 12 newsletters). 23 source pages + 8 hubs + 6 new entities. Raws to egress-fi. **0 Integrate GO. Transkribus sole HTR. No xsp/pm scp. No MCP. No skill evolve. No LIVE Discord.**

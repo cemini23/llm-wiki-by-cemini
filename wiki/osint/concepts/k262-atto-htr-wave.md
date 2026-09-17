@@ -4,6 +4,7 @@ type: concept
 tags: [atto, k262, htr, genealogy]
 keywords: [ExpertHTR, Transkribus, google-maps-scraper, supervision]
 related:
+  - concepts/k263-atto-wave.md
   - concepts/k261-atto-wave.md
   - concepts/k262-eval-github-wave.md
   - sources/eval-repository-revenue-2026-09-16.md
@@ -11,13 +12,14 @@ related:
   - entities/tools/experthtr.md
 maturity: draft
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k263-atto-wave.md
 - @concepts/k261-atto-wave.md
 - @concepts/k262-eval-github-wave.md
 - @sources/eval-repository-revenue-2026-09-16.md

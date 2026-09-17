@@ -4,17 +4,19 @@ type: concept
 tags: [ood, k262]
 keywords: [clinical-hindsight, insect-machine, YuE]
 related:
+  - concepts/k263-ood-stub-wave.md
   - sources/arxiv-2609.13454-clinical-hindsight-2026-09-16.md
   - sources/ieee-2009-insect-machine-interface-2026-09-16.md
 maturity: draft
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 harness_verb: FILE
 wire_status: wont_wire
 ---
 
 ## Relations
 
+- @concepts/k263-ood-stub-wave.md
 - @sources/arxiv-2609.13454-clinical-hindsight-2026-09-16.md
 - @sources/ieee-2009-insect-machine-interface-2026-09-16.md
 

@@ -4,6 +4,7 @@ type: concept
 tags: [eval, github, k262, revenue]
 keywords: [SPDX, security-audit-skill, ScienceBuddy, open-code-review, oh-my-hermes]
 related:
+  - concepts/k263-eval-github-wave.md
   - concepts/k261-eval-github-wave.md
   - sources/eval-repository-revenue-2026-09-16.md
   - concepts/k262-atto-htr-wave.md
@@ -18,13 +19,14 @@ related:
   - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k263-eval-github-wave.md
 - @concepts/k261-eval-github-wave.md
 - @sources/eval-repository-revenue-2026-09-16.md
 - @concepts/k262-atto-htr-wave.md

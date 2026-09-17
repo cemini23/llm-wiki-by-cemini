@@ -4,13 +4,15 @@ type: entity
 tags: [tool, k262, ccc, harness, mit]
 keywords: [ScienceBuddy, recursive, HITL]
 related:
+  - concepts/k263-ccc-harness-wave.md
+  - sources/arxiv-2609.19134-scienceide-2026-09-17.md
   - concepts/k262-ccc-harness-wave.md
   - concepts/k262-eval-github-wave.md
   - sources/arxiv-2609.17523-sciencebuddy-2026-09-16.md
   - sources/eval-repository-revenue-2026-09-16.md
 maturity: draft
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 phase_0_verdict: GO REFERENCE
 harness_verb: FILE
 wire_status: wont_wire
@@ -19,6 +21,8 @@ wire_note: REFERENCE clone. HITL before any harness rewrite. Do not auto-evolve 
 
 ## Relations
 
+- @concepts/k263-ccc-harness-wave.md
+- @sources/arxiv-2609.19134-scienceide-2026-09-17.md
 - @concepts/k262-ccc-harness-wave.md
 - @concepts/k262-eval-github-wave.md
 - @sources/arxiv-2609.17523-sciencebuddy-2026-09-16.md

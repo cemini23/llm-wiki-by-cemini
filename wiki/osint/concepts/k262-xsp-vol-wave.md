@@ -4,18 +4,20 @@ type: concept
 tags: [xsp, vol, k262, quant]
 keywords: [AD-Seq-Vol, SBM, Moontower, SPX]
 related:
+  - concepts/k263-xsp-donny-wave.md
   - sources/arxiv-2609.13402-diffusion-vol-surface-2026-09-16.md
   - sources/arxiv-2609.15306-skew-brownian-2026-09-16.md
   - sources/substack-rss-moontower-2026-09-15-not-more-bearish-2026-09-16.md
 maturity: draft
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 harness_verb: FILE
 wire_status: wont_wire
 ---
 
 ## Relations
 
+- @concepts/k263-xsp-donny-wave.md
 - @sources/arxiv-2609.13402-diffusion-vol-surface-2026-09-16.md
 - @sources/arxiv-2609.15306-skew-brownian-2026-09-16.md
 - @sources/substack-rss-moontower-2026-09-15-not-more-bearish-2026-09-16.md

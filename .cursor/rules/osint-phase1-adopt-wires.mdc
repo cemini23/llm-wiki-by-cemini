@@ -383,6 +383,18 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K263 — 2026-09-17
+Dual-ID: **OSINT K263**. FILE only. **0 Integrate GO.**
+- CERA-MoA / ScienceIDE / ECC — HITL; no skill/harness auto-evolve; do not swap `/route`.
+- openjev / jev-ultrafast / jev-mcp FILE — Jev Watch; ask before MCP.
+- BrowserSkill FILE — HITL chrome; no unattended scrape.
+- skillspector already entity; no new clone.
+- AgentLSD MIT REFERENCE — cyber EXTRACT; no PoC / no CTF writeups.
+- Donny — MSTR 120 / UEC 9-9.50 claim-ledger HITL; never auto-arm; never watches.json.
+- EH sports hedge — **no pm scp.**
+- Cost-efficient LLM / Gas Town — do not swap `/route`.
+- Verify: `bash scripts/adopt_k263_phase1.sh`. **No LIVE Discord.**
+
 ## OSINT K262 — 2026-09-16
 Dual-ID: **OSINT K262**. FILE only. **0 Integrate GO.**
 - ExpertHTR FILE — Transkribus remains sole product HTR.

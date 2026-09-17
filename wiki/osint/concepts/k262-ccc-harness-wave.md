@@ -4,6 +4,8 @@ type: concept
 tags: [ccc, k262, harness]
 keywords: [ScienceBuddy, social-harness, AEF-1, Jev, OpenAI-factory]
 related:
+  - concepts/k263-ccc-harness-wave.md
+  - sources/arxiv-2609.18929-social-laws-mas-2026-09-17.md
   - concepts/k261-ccc-harness-wave.md
   - concepts/k262-eval-github-wave.md
   - sources/eval-repository-revenue-2026-09-16.md
@@ -21,13 +23,15 @@ related:
   - entities/tools/oh-my-hermes.md
 maturity: draft
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k263-ccc-harness-wave.md
+- @sources/arxiv-2609.18929-social-laws-mas-2026-09-17.md
 - @concepts/k261-ccc-harness-wave.md
 - @concepts/k262-eval-github-wave.md
 - @sources/eval-repository-revenue-2026-09-16.md

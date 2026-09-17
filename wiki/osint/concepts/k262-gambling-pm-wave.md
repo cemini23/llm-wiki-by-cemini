@@ -4,6 +4,7 @@ type: concept
 tags: [gambling, parlays, k262, kalshi]
 keywords: [Kalshi, parlays, CLARITY, hedge, Event-Horizon]
 related:
+  - concepts/k263-gambling-pm-wave.md
   - concepts/k261-gambling-pm-wave.md
   - sources/arxiv-2609.14267-kalshi-spot-hedge-2026-09-16.md
   - sources/substack-rss-event-horizon-2026-09-15-kalshi-parlay-records-2026-09-16.md
@@ -11,13 +12,14 @@ related:
   - sources/substack-rss-wublock-2026-09-16-clarity-cloture-fail-2026-09-16.md
 maturity: draft
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-17
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k263-gambling-pm-wave.md
 - @concepts/k261-gambling-pm-wave.md
 - @sources/arxiv-2609.14267-kalshi-spot-hedge-2026-09-16.md
 - @sources/substack-rss-event-horizon-2026-09-15-kalshi-parlay-records-2026-09-16.md

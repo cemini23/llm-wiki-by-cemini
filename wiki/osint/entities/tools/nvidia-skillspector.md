@@ -4,6 +4,9 @@ type: entity
 tags: [tool, adopt-candidate, cybersec, mcp, skill-audit, k88, phase-0-complete]
 keywords: [skillspector, nvidia, langgraph, supply-chain, prompt-injection, skill-audit, osv]
 related:
+  - concepts/k263-eval-github-wave.md
+  - concepts/k263-cybersec-wave.md
+  - sources/eval-multi-wiki-stack-2026-09-17.md
   - sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md
   - concepts/tool-evaluation-framework.md
   - concepts/cemini-license-posture.md
@@ -11,13 +14,18 @@ related:
   - "@cybersecurity-wiki/entities/tools/nvidia-skillspector.md"
 maturity: validated
 created: 2026-05-31
-updated: 2026-06-22
+updated: 2026-09-17
+harness_verb: FILE
+wire_status: policy_wired
 phase_0_verdict: CONDITIONAL-GO 2026-05-31 — Apache-2.0 verified; static scan PASS; wire `--no-llm` into laptop preingest only; not on PyPI; Python 3.12+; do not deploy on librarian until air-gap OSV probe
 adoption_status: PHASE-0-COMPLETE 2026-05-31; skill_supply_scan.py wired
 ---
 
 ## Relations
 
+- @concepts/k263-eval-github-wave.md
+- @concepts/k263-cybersec-wave.md
+- @sources/eval-multi-wiki-stack-2026-09-17.md — K263 FILE bump; no new clone; eval Integrate OVERRIDE
 - @sources/multi-wiki-tool-eval-v5-k88-2026-05-31.md — K88 v5 Adopt (primary fit cybersec-wiki)
 - @concepts/tool-evaluation-framework.md — Phase-0 complete
 - @concepts/cemini-license-posture.md — Apache-2.0 IP-sale-safe
@@ -31,6 +39,8 @@ adoption_status: PHASE-0-COMPLETE 2026-05-31; skill_supply_scan.py wired
 - **PyPI**: **not published** (2026-05-31) — install from Git source only
 
 ## Narrative
+
+K263: already cloned. Eval Integrate OVERRIDE to FILE. No new clone. No skill auto-evolve. **0 Integrate GO.**
 
 LangGraph-based scanner for MCP/agent skill directories — 64 static patterns (prompt injection, exfiltration, supply chain, MCP tool poisoning, YARA, AST taint) plus optional LLM semantic pass. **Fills a real gap:** OSINT `scripts/skill_audit.py` is prose/checklist-only today; SkillSpector adds executable static analysis before skill install or wiki routing.
 
