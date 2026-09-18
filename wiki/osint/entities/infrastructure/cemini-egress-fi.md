@@ -17,9 +17,10 @@ related:
   - concepts/world-cup-advance-market-bot-v1.md
   - projects/world-cup-bot/CLOB-V2-live/World Cup Bot - egress live layout.md
   - entities/tools/camofox-browser.md
+  - entities/tools/guruwatcher.md
 maturity: draft
 created: 2026-05-19
-updated: 2026-06-15
+updated: 2026-09-18
 # Live-probed 2026-05-20 (read-only SSH via cemini-prod jump host). Refresh on spec/role change.
 ---
 
@@ -32,6 +33,7 @@ updated: 2026-06-15
 - @concepts/polymarket-copy-trading-strategy.md — K57: hybrid Polymarket CLOB copy latency; gateway must not promise sub-block parity
 - @sources/trading-posts-llm-gustafsson-retail-weather-copy-2026-05-22.md — @spottr_trade Post 7 (0-block vs detection)
 - @entities/tools/camofox-browser.md — K71: camofox is laptop-only; not deployed on egress-fi
+- @entities/tools/guruwatcher.md — 2026-09-18: 15-min alert-only timer at `/opt/guru-watcher`
 - @entities/tools/hl-funding-sniper.md — K72: **no** funding bot on egress; HL orders stay prod EMS + `HYPERLIQUID_PROXY`
 - @concepts/world-cup-advance-market-bot-v1.md — K82 World Cup Bot PM order POST routes through this relay
 
@@ -39,7 +41,9 @@ updated: 2026-06-15
 
 The third Hetzner server in the Cemini fleet — the egress relay through which Polymarket and Hyperliquid orders route. Originally provisioned at Hetzner Falkenstein (Germany, hostname `cemini-poly-proxy`) and surfaced 2026-05-19; **rebuilt at Hetzner Helsinki (Finland, hostname `cemini-egress-fi`) on 2026-05-20** after the user verified both venues accept egress from Finland. The role and operational pattern carry over unchanged; only the datacentre and hostname differ.
 
-Probed read-only 2026-05-20 — SSH via `cemini-prod` as jump host (the box's port 22 is firewalled to the Hetzner fleet, not the open internet).
+`[SUPERSEDED 2026-09-18]` Jump-host probe is historical. Laptop SSH is **direct** (`Host cemini-egress-fi`, no ProxyJump). UFW allows the operator laptop. Ashburn prod is deleted.
+
+Probed read-only 2026-05-20 — SSH via `cemini-prod` as jump host (then firewalled to the Hetzner fleet).
 
 ## Narrative
 
@@ -49,7 +53,7 @@ Probed read-only 2026-05-20 — SSH via `cemini-prod` as jump host (the box's po
 |---|---|
 | Hostname | `cemini-egress-fi` |
 | Provider / location | Hetzner Cloud, **Helsinki (HEL1), Finland** |
-| Public IP / SSH access | see `.local/server.md` (jump host required; `cemini-egress-fi` SSH alias) |
+| Public IP / SSH access | see `.local/server.md` — **direct** `ssh cemini-egress-fi` (jump host retired 2026-09-18) |
 | Spec | 2 vCPU · 4 GB RAM (3.7 GiB measured) · 75 GB disk · Ubuntu (kernel 6.8.0-117) |
 | Utilisation (2026-05-20) | 428 MB RAM used · 1.5 GB disk used · load average 0.00 |
 | Headroom | ~3.3 GB RAM free · ~71 GB disk free |
@@ -64,9 +68,11 @@ The routing mechanism is lightweight: there is **no WireGuard and no proxy proce
 
 This supersedes (a) the abandoned server-side WireGuard on `cemini-prod` (dropped as fragile, see `hot.md`), (b) the laptop-side `polymarket_proxy.py` forward-tunnel (a validation harness that violated the deployment boundary), and (c) the now-decommissioned Falkenstein predecessor (`cemini-poly-proxy`; see Dead Ends).
 
-### Relationship to the rest of the fleet (2026-06-14)
+### Relationship to the rest of the fleet (2026-09-18)
 
-Live Hetzner fleet: **`cemini-prod`** (Ashburn trading) + **`cemini-egress-fi`** (this box, Helsinki egress). **`cemini-librarian` deleted 2026-06-14** — see @meta/librarian-decommission-2026-06-14.md.
+Live Hetzner fleet: **`cemini-egress-fi` only** (this box). **`cemini-prod` deleted 2026-09-18**. **`cemini-librarian` deleted 2026-06-14** — see @meta/librarian-decommission-2026-06-14.md.
+
+Role now: federation raw cold store + GuruWatcher alert-only timer. Historical order-egress tunnels from Ashburn ended with that VM.
 
 Historical: this was the **third** server alongside prod and librarian (Ashburn). Helsinki-to-Ashburn RTT ~118–120 ms to former librarian IP `[CONFIRMED 2026-05-22]`.
 
@@ -118,6 +124,8 @@ ipinfo.io on the public IP → `city: Helsinki · region: Uusimaa · country: FI
 
 ## Dead Ends
 
-- **Direct SSH from the laptop** — `cemini-egress-fi:22` is firewalled at the Hetzner edge; the connection times out from the laptop's residential IP. Reachable only via `ssh -J cemini-prod` (jump host). The SSH alias `cemini-egress-fi` in `~/.ssh/config` bakes in `ProxyJump cemini-prod` so the indirection is transparent.
+- **Direct SSH from the laptop `[RETRACTED 2026-09-18]`** — UFW now allows the operator laptop. Alias `cemini-egress-fi` is direct (no ProxyJump). Jump alias `cemini-egress-fi-jump` is retired.
+
+- **Ashburn jump host `[CONFIRMED 2026-09-18]`** — `ubuntu-8gb-ash-2` / `cemini-prod` deleted. Do not point SSH at `5.161.53.103` (IP may recycle).
 
 - **Predecessor — `cemini-poly-proxy` (Falkenstein, Germany)** — retired 2026-05-20. The Falkenstein box played the same role (egress relay) with the same spec class (2 vCPU / 4 GB / 75 GB, sshd-only) at IP `178.105.151.69`. It was swapped out for the Helsinki box because Polymarket *and* Hyperliquid both accept Finnish egress, whereas Falkenstein had been provisioned with only Polymarket in mind. The architecture is unchanged; only the country and hostname are.

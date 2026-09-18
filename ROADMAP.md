@@ -6,7 +6,7 @@ Companion to: `CLAUDE.md` (schema), `wiki/log.md` (backward-looking log), `LESSO
 
 ## Vision
 
-CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **prod + egress-fi only** (librarian deleted 2026-06-14).
+CeminiSuite ships to an institutional buyer with a **verifiable execution-security architecture** (K19+K20+K22+K23), a **research-grounded market-making edge** (K24 ParlayMarket + Kalshi + K28 sports/healthcare prediction-market plumbing), and a **laptop-curated wiki IP catalog**. Each K-series deep-read adds one reusable architectural primitive. Live fleet: **egress-fi only** (librarian deleted 2026-06-14; Ashburn `cemini-prod` deleted 2026-09-18).
 
 <!-- superseded 2026-08-07 — see Current state K226 -->
 ## Active workstreams (2026-08-08 — Atto #1 · GuruWatcher #2 · TipDrop retired)
@@ -20,7 +20,7 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 | **#1** | **Atto** | `../atto/briefs/` | No |
 | **#2** | **GuruWatcher** | `../GuruWatcher/briefs/` | No |
 | behind | Poker Arena | `agents/devfun-poker-arena/briefs/` | sandbox |
-| behind | XSP / PM | `briefs/xsp-*` / `briefs/pm-*` | cemini-prod |
+| behind | XSP / PM | `briefs/xsp-*` / `briefs/pm-*` | no host (Ashburn deleted) |
 | behind | Local abliterated AI lab | `../Cybersecurity wiki/briefs/` | No |
 | retired | TipDrop / David kit | — | Do not route |
 
@@ -29,6 +29,13 @@ Research digest + ingest briefs: **Atto** Priority #1 · **GuruWatcher** Priorit
 P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents/devfun-poker-arena/briefs/2026-08-12_p13-chip-qual-deep-dive-pre-tournament.md` before joining free T13 (or next free KO): sticky bubble protect · mild SB steal · confirm tournament freeze (`2026-08-10_tournament-stack-repair.md`). Do not re-arm climb pack. Canvas: `p13-chip-qual-deep-dive`.
 
 ---
+
+## Current state (2026-09-18 — Ashburn cemini-prod deleted)
+
+- **Deleted** — Hetzner `ubuntu-8gb-ash-2` (`cemini-prod`, Ashburn). Operator confirmed in Console. SSH banner to old IP times out; do not reconnect (`Host cemini-prod` tombstoned to `192.0.2.1`).
+- **Still live** — `cemini-egress-fi` (Helsinki) direct SSH. Raw bulk + postgres/redis dumps + GuruWatcher 15-min timer (`OnCalendar=*:0/15`, oneshot, alert-only Discord). `files.youratto.com` Worker 301 → `youratto.com/kit` R2. Laptop prod-mcp tunnel unloaded.
+- **No** Lane A / XSP / PM-LP / `scp` to `/opt/cemini`. Secrets stay in `~/.cemini/prod-env-backup-2026-09-18/` (mode 700). **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions (never auto-arm); cursor-route 0.1.14; cadences user-gated.
 
 ## Current state (2026-09-18 — K264 ingest)
 

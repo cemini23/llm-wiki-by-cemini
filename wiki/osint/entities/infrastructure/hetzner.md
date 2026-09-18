@@ -25,7 +25,7 @@ related:
   - concepts/cemini-deployment.md
 maturity: validated
 created: 2026-04-23
-updated: 2026-04-30
+updated: 2026-09-18
 
 # K5 update (2026-04-26): container count corrected 18-26 → 40 per server probe; Swarm-inactive call-out added; full container manifest enumerated.
 # K6 update (2026-04-27): bidir backlink added for sources/3-10-algorithmic-trading-ip-sale-audit.md (audit's deployed-state inventory referenced "18 Docker containers" — reconciled with K5 40-container probe in K6 prescribed-vs-deployed gap table).
@@ -51,8 +51,9 @@ Synthesized from 4 source(s) referencing this entity across the Cemini research 
 
 ## Narrative
 
-Hetzner is a German VPS provider hosting the Cemini production stack.
-The current deployment is a single CPU-only VPS: **AMD EPYC-Milan**,
+Hetzner is a German VPS provider. **Live host 2026-09-18:** Helsinki `cemini-egress-fi` only. Ashburn `cemini-prod` (`ubuntu-8gb-ash-2`) **deleted**. See @entities/infrastructure/cemini-stack.md.
+
+`[HISTORICAL — Ashburn prod, last probed 2026-04-30]` The former production deployment was a single CPU-only VPS: **AMD EPYC-Milan**,
 **2 vCPUs** (1 core × 2 threads), **7 GB RAM** (7,743 MB total, ~1.5 GB
 available — [RESOLVED 2026-04-30 K11] corrected from the "128 GB" figure
 that propagated through early wiki pages via inheritance from the

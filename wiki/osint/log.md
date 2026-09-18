@@ -1,3 +1,11 @@
+## [2026-09-18] ops | Ashburn cemini-prod deleted
+
+- **Deleted:** Hetzner `ubuntu-8gb-ash-2` (`cemini-prod`). Operator confirmed. SSH to former IP has no banner; `Host cemini-prod` tombstoned to `192.0.2.1` so a recycled IP cannot steal `accept-new`.
+- **Live:** `cemini-egress-fi` direct SSH. Raw bulk + pg/redis dumps. GuruWatcher timer `OnCalendar=*:0/15` (oneshot; `OnUnitActiveSec` did not re-arm). `files.youratto.com` Worker 301 → R2 kits.
+- **Laptop:** unloaded `com.cemini.prod-mcp-tunnel` (KeepAlive was retrying the dead host). Env backup stays in `~/.cemini/prod-env-backup-2026-09-18/`.
+- **Pages:** `cemini-stack`, `cemini-egress-fi`, `hetzner`, `laptop-prod-research-split`, `guruwatcher`, index, ROADMAP, CLAUDE.md schema.
+- **Gates:** no xsp/pm scp; no LIVE Discord; no auto-arm watches; no `/opt/cemini` host.
+
 ## [2026-09-18] ingest | K264 wave
 
 - **Inbox:** 17 files (14 NEW + 3 false DUPLICATE treated as NEW: two eval copies + LS weekly title). Fold eval `(1)` into one source; archive both. Preingest: parent ran; do not re-litigate licenses.

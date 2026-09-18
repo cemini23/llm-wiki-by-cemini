@@ -12,9 +12,10 @@ related:
   - concepts/macro-charts-regime-signals.md
   - sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md
   - sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md
+  - entities/infrastructure/cemini-egress-fi.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-08-10
+updated: 2026-09-18
 ---
 
 ## Relations
@@ -27,6 +28,7 @@ updated: 2026-08-10
 - @concepts/macro-charts-regime-signals.md
 - @sources/macro-charts-paid-forward-2026-07-28-korea-wti-fomc.md — watch candidates
 - @sources/macro-charts-paid-forward-2026-07-29-kospi-sox-fomc.md — day-2 reconcile
+- @entities/infrastructure/cemini-egress-fi.md — runtime 2026-09-18 (`/opt/guru-watcher`, 15-min timer)
 
 
 ## Raw Concept
@@ -35,7 +37,7 @@ updated: 2026-08-10
 |-------|-------|
 | **Repo** | https://github.com/cemini23/GuruWatcher (private) |
 | **Local** | `~/Projects/GuruWatcher` |
-| **Prod** | `/opt/guru-watcher/` via `deploy_prod.sh` |
+| **Runtime** | `cemini-egress-fi:/opt/guru-watcher/` — systemd timer every 15 min (2026-09-18). Former Ashburn `/opt/guru-watcher` deleted with prod. |
 | **Briefs** | `../GuruWatcher/briefs/` |
 | **Boundary** | Alert-only — not CeminiSuite order path |
 

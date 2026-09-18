@@ -10,7 +10,7 @@ Local knowledge hub for OSINT and financial research — a librarian that **mana
 - **Curate** — pull relevant fragments out of raw sources; structure them as interlinked wiki pages
 - **Distribute** — route findings to the right consumer:
   - **claude.ai** — context for a conversation, writing task, or general research
-  - **CeminiSuite** (dev stack on Hetzner, `/opt/cemini`) — ticker research, strategy input, anything for the dev stack's knowledge base
+  - **CeminiSuite** (laptop git; former Hetzner `/opt/cemini` **deleted 2026-09-18**) — ticker research and strategy notes stay in wiki/briefs unless the operator names a new host
 
 Distribution is a deliberate step, not a default. Stage candidates in `briefs/` first; never push directly to the server.
 
@@ -33,11 +33,11 @@ Staging/output lives outside the wiki:
 
 ## Deployment boundary — what runs where
 
-Two Hetzner servers for **trading**; laptop for **research authoring**. See `@meta/librarian-decommission-2026-06-14.md`.
+One Hetzner server remains (Helsinki cold store + GuruWatcher). Laptop does **research authoring**. Ashburn `cemini-prod` **deleted 2026-09-18**. See `@meta/librarian-decommission-2026-06-14.md` and `@entities/infrastructure/cemini-stack.md`.
 
 - **Laptop** (this workspace) — canonical git wiki, briefs, local backtests. Powered off = curation pauses only; **no** remote wiki serving dependency.
-- **cemini-prod** (`/opt/cemini`) — 24/7 CeminiSuite trading stack (Lane A, PM, Kalshi, HL adapters, Redis `intel:*`).
-- **cemini-egress-fi** (Helsinki) — order egress relay for Hyperliquid + Polymarket `POST /order` (SSH tunnel from prod); **federation raw-source cold store** at `/opt/cemini-bulk/research/<wiki-id>/` (read-only bulk, separate from order path).
+- **cemini-prod** (`/opt/cemini`) — **DELETED 2026-09-18** (`ubuntu-8gb-ash-2`, Ashburn). Do not SSH that alias (tombstoned to `192.0.2.1`). Env dumps: `~/.cemini/prod-env-backup-2026-09-18/`. Postgres/Redis dumps on egress.
+- **cemini-egress-fi** (Helsinki) — **federation raw-source cold store** at `/opt/cemini-bulk/research/<wiki-id>/`; GuruWatcher 15-min timer (`/opt/guru-watcher`, alert-only Discord). Direct SSH from the laptop. Historical order-egress role (HL/PM `POST /order` via jump from prod) ended with Ashburn.
 - **`cemini-librarian`** — **DELETED 2026-06-14.** Historical design: `@concepts/librarian-server-architecture.md`.
 
 Rule: do not assume kb-server, stash, or librarian SSH paths exist. Query wikis via Read/grep locally; use Exa for external gaps.
@@ -239,7 +239,7 @@ The `exa:search` skill (from `exa@claude-plugins-official`) fans out across para
 Material ready to leave the wiki goes through `briefs/` first:
 
 - **→ claude.ai** — copy the relevant brief body
-- **→ CeminiSuite** — stage in `briefs/`, confirm content with user, then Claude Code handles `scp` to `/opt/cemini/briefs/`. **Code and config modifications on the server remain out-of-scope from this workspace** — those flow through a separate server-Claude session that reads the brief and executes with its own review loop. This workspace can place staging material on the server (brief transfers into `/opt/cemini/briefs/` only) but does not modify any other path under `/opt/cemini/`. Read-only operations on the server (ssh ls, grep, cat for verification) are fine.
+- **→ CeminiSuite** — stage in `briefs/` and keep on the laptop. **`cemini-prod` is gone (2026-09-18)** — do not `scp` to `/opt/cemini/briefs/`. No xsp scp. No pm scp. Egress is read-mostly (raw archive + GuruWatcher). Do not treat Helsinki as a new trading host.
 
 ## Working method
 
@@ -455,4 +455,4 @@ Wiki canon: `@concepts/asd-ste100-writing-style.md`. Optional global copy: `~/.c
 
 ## Related — read-only from this workspace
 
-- **CeminiSuite dev stack** — Hetzner host, `/opt/cemini` server root. Connection details (SSH target, IP) live in `.local/server.md` (gitignored). Has its own `CLAUDE.md` for dev work. **Never modify the server's `CLAUDE.md` from here.**
+- **CeminiSuite** — laptop git (`~/Projects/CeminiSuite`). Former Hetzner `/opt/cemini` on Ashburn **deleted 2026-09-18**. Connection notes in `.local/server.md` (gitignored) are historical.

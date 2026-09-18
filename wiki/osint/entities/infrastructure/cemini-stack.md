@@ -29,7 +29,7 @@ related:
   - projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md
 maturity: core
 created: 2026-05-03
-updated: 2026-06-14
+updated: 2026-09-18
 # Server-state probe baseline (2026-05-03): both hosts probed live; specs recorded match `free -h` / `df -h` / `nproc` output. Refresh on every spec change. K89 probe 2026-05-31: 44 containers, disk ~40%, swap ~78%.
 ---
 
@@ -66,14 +66,24 @@ Created 2026-05-03 in response to the user's request for a setup-and-recommendat
 
 ## Narrative
 
-### Fleet topology — prod + egress (2026-06-14)
+### Fleet topology — egress only (2026-09-18)
 
-`[DECOMMISSIONED 2026-06-14]` The librarian host (`cemini-librarian`) was **deleted**. Live Hetzner fleet:
+`[DECOMMISSIONED 2026-09-18]` Ashburn `cemini-prod` (`ubuntu-8gb-ash-2`) was **deleted** by the operator after dumps, GuruWatcher move, and `files.youratto.com` Worker 301. `[DECOMMISSIONED 2026-06-14]` librarian already gone.
 
 | Role | Host alias | Status | Notes |
 | --- | --- | --- | --- |
-| Production (trading) | `cemini-prod` | **ON** | CPX31, Ashburn; ~44 containers (K89 baseline) |
-| Order egress (HL + PM) | `cemini-egress-fi` | **ON** | Helsinki; SSH tunnel from prod |
+| Production (trading) | `cemini-prod` | **DELETED** | Ashburn 8 GB; `/opt/cemini` gone. Env backup on laptop. Do not SSH. |
+| Cold store + GuruWatcher | `cemini-egress-fi` | **ON** | Helsinki; direct SSH from laptop; raw bulk; GW 15-min timer |
+| Knowledge / RAG | `cemini-librarian` | **DELETED** | Was CPX21 kb-server + stash + Arctic |
+
+### Historical — fleet topology after librarian delete (2026-06-14)
+
+Live Hetzner fleet **until 2026-09-18**:
+
+| Role | Host alias | Status | Notes |
+| --- | --- | --- | --- |
+| Production (trading) | `cemini-prod` | ON (then deleted) | CPX31, Ashburn; ~44 containers (K89 baseline) |
+| Order egress (HL + PM) | `cemini-egress-fi` | ON | Helsinki; SSH tunnel from prod |
 | Knowledge / RAG | `cemini-librarian` | **DELETED** | Was CPX21 kb-server + stash + Arctic |
 
 Wiki and raw-source canon: **laptop git** only. See @meta/librarian-decommission-2026-06-14.md.

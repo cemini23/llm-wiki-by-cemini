@@ -17,7 +17,7 @@ related:
   - projects/cemini-financial-suite/Cemini Financial Suite.md
 maturity: validated
 created: 2026-05-23
-updated: 2026-06-15
+updated: 2026-09-18
 ---
 
 ## Relations
@@ -43,7 +43,18 @@ updated: 2026-06-15
 
 ## Narrative
 
-### Where to work (2026-06-14)
+### Where to work (2026-09-18)
+
+| Step | Task | Run on |
+|------|------|--------|
+| **OSINT wiki / ingest** | Pages, briefs, lint; raw archive → egress-fi | **Laptop** (+ **egress-fi** bulk) |
+| **Lane A / live trading** | XSP, PM, HL, Kalshi | **No host** — Ashburn `cemini-prod` deleted. Wiki/briefs only. No xsp/pm scp. |
+| **GuruWatcher** | 15-min alert-only Discord | **egress-fi** (`/opt/guru-watcher`). Never auto-arm watches. Never place orders. |
+| **189 ArcticDB / equity backtest** | `refresh_arctic_equity_bars.py`, `.local/arctic-market-dataset/` | **Laptop** |
+| **109 Kronos** | (rejected) prompt A/B | **Do not re-run on a deleted prod** |
+| **197 FLOX** | C++ benchmark | **Laptop / dev** |
+
+### Historical — where to work (2026-06-14, prod still live)
 
 | Step | Task | Run on |
 |------|------|--------|
