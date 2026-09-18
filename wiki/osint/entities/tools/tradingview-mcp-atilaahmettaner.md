@@ -1,16 +1,20 @@
 ---
 title: "atilaahmettaner/tradingview-mcp — TradingView MCP Server"
 type: entity
-tags: [tool, mcp-server, tradingview, mit, no-go-phase-0-2026-05-13, screener, indicators, github-eval-2026-05-13, tos-blocked]
-keywords: [tradingview-mcp, atilaahmettaner, mcp-server, 30-tools, tradingview-screener, technical-analysis-mcp, mit-license, tos-redistribution-blocker, no-go-pending-legal]
+tags: [tool, mcp-server, tradingview, mit, laptop-personal-go-2026-09-18, prod-no-go, screener, indicators, github-eval-2026-05-13]
+keywords: [tradingview-mcp, atilaahmettaner, mcp-server, 30-tools, tradingview-screener, technical-analysis-mcp, mit-license, finance-skills-cursor-plugin]
 related:
   - sources/eval-github-repos-2026-05-13.md
   - entities/tools/bukosabino-ta.md
   - entities/platforms/polymarket.md
   - concepts/multi-wiki-eval-doc-level-vs-phase-0.md
+  - entities/tools/finance-skills.md
+  - entities/tools/opencli.md
+  - sources/tradesdontlie-tradingview-mcp.md
 maturity: validated
 created: 2026-05-13
-updated: 2026-05-14
+updated: 2026-09-18
+laptop_install: VERIFIED 2026-09-18 — Cursor plugin finance-data-providers / tradingview (37 tools). Smoke: SPY quote + BTC pulse. Not wired to Grok /route.
 ---
 
 ## Relations
@@ -18,6 +22,9 @@ updated: 2026-05-14
 - @sources/eval-github-repos-2026-05-13.md — K43 source-doc Phase-0 eval (ADOPT verdict at doc-level; superseded by 2026-05-13 source audit below)
 - @entities/tools/bukosabino-ta.md — adjacent TA tooling (also NO-GO 2026-05-13 Phase-0); both invalidated by Phase-0 audits
 - @entities/platforms/polymarket.md — would-be consumer venue if/when TOS clears
+- @entities/tools/finance-skills.md — Cursor marketplace wrapper; this MCP is the plugin's `tradingview` server
+- @entities/tools/opencli.md — sibling desktop reader skipped 2026-09-18 (needs TradingView.app + login)
+- @sources/tradesdontlie-tradingview-mcp.md — different stack (CDP to Desktop); also not on this laptop
 - @concepts/multi-wiki-eval-doc-level-vs-phase-0.md — canonical K43-failure example (TOS gate) powering the two-gate pattern formalization
 
 **Brief references (informational; not `related:` per wiki schema)**:
@@ -39,7 +46,7 @@ What prompted this page: Phase-0 eval verdict (May 13 2026) flagged atilaahmetta
 
 ### Adoption posture
 
-**NO-GO 2026-05-13** pending TradingView TOS legal review. See `## Phase-0 audit verdict` below. Source-doc-level K43 ADOPT verdict was license + tool-count filter only; the Phase-0 source audit caught the TOS redistribution gate.
+**Split 2026-09-18.** Laptop Cursor plugin **GO** for personal research. **Prod / sold kits / `/route` remain NO-GO.** The 2026-05-13 Phase-0 TOS gate still blocks commercial redistribution and LIVE wiring. See split table below.
 
 ### Phase-0 audit verdict (2026-05-13)
 
@@ -67,9 +74,18 @@ This audit supersedes the doc-level ADOPT verdict in the K43 source page (`@sour
 5. **Rate-limit + IP-ban tolerance budget** documented before any production wiring
 6. **Intraday auth-cookie handling** documented if Cemini will consume 1m/5m timeframes
 
+### Split 2026-09-18 (operator: personal P&L vs sold product)
+
+| Surface | Verdict | Why |
+|---|---|---|
+| **Laptop Cursor** | **GO** | Plugin `finance-data-providers` already serves this MCP (37 tools: quotes, scans, futures, options unusual activity, Yahoo). Smoke 2026-09-18: SPY 762.60; BTC pulse via CoinGecko. Personal research / trading only. |
+| **OpenCLI `tradingview` plugin** | **SKIP** | Needs `TradingView.app` + logged-in session. Not installed. Options greeks often need a paid TV tier. Operator gate: no paid TV account. |
+| **Grok `/route` / cursor-route** | **NO** | Do not inherit this MCP into headless workers (stdio hang + 37-schema tax). |
+| **cemini-prod / sold kits** | **NO-GO** | Unchanged. Do not bind TV-derived data into LIVE order paths or products. |
+
 ### Cemini integration target
 
-**None pending TOS clearance.** If §1-§6 clear, the previously planned wiring at `/opt/cemini/conductor/tools.py` would consume the 30 MCP tools for screener / TA / backtesting flows.
+**Prod: none.** Laptop HITL in Cursor is the live path. Do not wire `/opt/cemini/conductor/tools.py`.
 
 ### Why MIT matters here
 
@@ -83,7 +99,7 @@ The MCP tool wraps TradingView's API surface, which is subject to TradingView's 
 - Does the wrapping change the classification?
 - Is commercial use by a private quant stack (non-open-source) allowed under standard TradingView ToU?
 
-Until these are answered in writing, the entity is parked at NO-GO.
+Until these are answered in writing, **prod stays NO-GO**. Laptop HITL in Cursor is allowed for personal P&L only.
 
 ## Snippets
 

@@ -10,10 +10,13 @@ related:
   - concepts/high-signal-paper-patterns.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/mcp-tool-marketplace.md
+  - entities/tools/finance-skills.md
+  - entities/tools/tradingview-mcp-atilaahmettaner.md
+  - entities/tools/opencli.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-30
-updated: 2026-05-17
+updated: 2026-09-18
 ---
 
 ## Relations
@@ -21,6 +24,11 @@ updated: 2026-05-17
 - @sources/gemini-dr-wave4a-cemini-stack-2026-04-29.md — Wave 4A URL 20 — **Gemini DR brief recommended Adopt; anti-hallucination spot-check 2026-04-29 reclassified to Defer (TOS legal review) or Steal-from (CDP pattern only)**. This dedicated source page formalizes the reclassification.
 - @concepts/ip-sale-readiness.md — **Worked example of Family C TOS-conflict-via-clean-license-code pattern** (added to ip-sale-readiness 2026-04-29 as a direct response to this finding). The LICENSE file is MIT, the GitHub aggregator shows NOASSERTION because of the trademark disclaimers, AND the README explicitly warns about TradingView TOS conflicts for automated-trading use.
 - @concepts/high-signal-paper-patterns.md — rubric: license-dispute (file MIT vs aggregator NOASSERTION) + TOS-conflict warnings = automatic Family-C flag per the rubric's negative-signals section
+- @concepts/wiki-tooling-evaluation.md
+- @concepts/mcp-tool-marketplace.md
+- @entities/tools/finance-skills.md — laptop market-data path is Cursor atila MCP + OpenCLI HL, not this CDP bridge
+- @entities/tools/tradingview-mcp-atilaahmettaner.md — Yahoo/screener MCP; no TradingView Desktop
+- @entities/tools/opencli.md — OpenCLI TV plugin also needs Desktop; skipped 2026-09-18
 
 ## Raw Concept
 
@@ -79,6 +87,8 @@ The do-not-deploy parts:
 ### Cemini-side adoption assessment
 
 **Decision: Steal-from + Defer**. Do not deploy this project. Extract the CDP-against-Electron-apps pattern to a Cemini-internal note for future reference.
+
+**Laptop 2026-09-18:** `TradingView.app` is not installed. Do not enable this MCP (78–84 CDP tools). Operator personal-use TOS waiver does not remove the Desktop dependency. Use Cursor atila/Yahoo MCP for quotes. Use OpenCLI Hyperliquid for HL marks. Revisit only if Desktop is installed and a throwaway TV login exists.
 
 Concrete next-steps:
 1. **Skip direct adoption**. Flag in `concepts/ip-sale-readiness.md` Family C as the worked example (already done 2026-04-29).

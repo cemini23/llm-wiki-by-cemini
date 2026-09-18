@@ -13,10 +13,11 @@ related:
   - sources/multi-wiki-tool-eval-v5-k113-2026-06-12.md
   - sources/multi-wiki-gemini-eval-prompt-2026-05-12.md
   - sources/arxiv-context-aware-temporal-planning-2607.04689-2026-07-12.md
+  - entities/tools/finance-skills.md
 maturity: validated
 hub: true
 created: 2026-05-10
-updated: 2026-07-12
+updated: 2026-09-18
 ---
 
 ## Relations
@@ -27,6 +28,7 @@ updated: 2026-07-12
 - `@sources/rlhf-critic-bias-al-zawahreh-2026.md` — RLHF Critic Bias source (Al-Zawahreh April 2026, draft maturity, Reference/Steal-from). Follow-up brief candidate: port 5-tell scorecard into `scripts/skill_audit.py` as opt-in `--rlhf-tell-mode` flag (deferred until user-gated).
 - `@sources/multi-wiki-gemini-eval-prompt-2026-05-12.md` — v2 prompt archive (7 surfaces, pre-gambling-wiki)
 - `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` — v1→v9 lineage; canonical copy-paste at `prompts/deep-research-multi-wiki-eval-v9-2026-06-28.md`
+- `@entities/tools/finance-skills.md` — K36 steal+adopt instance; Cursor TV MCP live 2026-09-18
 
 ## Raw Concept
 

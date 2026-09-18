@@ -1,3 +1,12 @@
+## [2026-09-18] ops | laptop TV MCP + OpenCLI Hyperliquid
+
+- **Cursor MCP:** `plugin-finance-data-providers-tradingview` already live (37 tools). Smoke: SPY quote + BTC pulse. Personal research only. Not inherited by Grok `/route`.
+- **OpenCLI tradingview:** SKIP — no `TradingView.app`; plugin needs logged-in Desktop; options often paid. Operator: no paid TV account.
+- **OpenCLI Hyperliquid:** `opencli plugin install github:himself65/finance-skills/hyperliquid` → `@0.1.0`. Smoke: `markets --limit 3` (BTC 78028 / ETH 2507.5 / ZEC 1458.9); `funding-compare --coin BTC` (HL APR 10.95 vs Binance 4.52). Public `/info`, no key.
+- **tradesdontlie CDP MCP:** still off (no Desktop). Family C + steal-from unchanged.
+- **Pages:** `entities/tools/finance-skills.md`, `entities/tools/opencli.md`, `entities/tools/tradingview-mcp-atilaahmettaner.md`, `sources/tradesdontlie-tradingview-mcp.md`, index, ROADMAP.
+- **Prod:** no TV in `/opt/cemini`. No LIVE Discord. No xsp/pm scp.
+
 ## [2026-09-17] ingest | K263 wave
 
 - **Inbox:** 16 files (15 NEW + 1 LIKELY treated as NEW: PE Matt Pocock ≠ Dex Horthy). Preingest: parent ran; do not re-litigate licenses.
