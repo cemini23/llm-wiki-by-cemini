@@ -13,6 +13,8 @@ related:
   - entities/tools/finance-skills.md
   - entities/tools/tradingview-mcp-atilaahmettaner.md
   - entities/tools/opencli.md
+  - concepts/k264-eval-github-wave.md
+  - sources/eval-deep-research-url-stack-2026-09-18.md
 maturity: validated
 read_status: read-skim
 created: 2026-04-30
@@ -29,6 +31,8 @@ updated: 2026-09-18
 - @entities/tools/finance-skills.md — laptop market-data path is Cursor atila MCP + OpenCLI HL, not this CDP bridge
 - @entities/tools/tradingview-mcp-atilaahmettaner.md — Yahoo/screener MCP; no TradingView Desktop
 - @entities/tools/opencli.md — OpenCLI TV plugin also needs Desktop; skipped 2026-09-18
+- @concepts/k264-eval-github-wave.md — K264 eval Integrate OVERRIDE FILE (TOS display-only)
+- @sources/eval-deep-research-url-stack-2026-09-18.md
 
 ## Raw Concept
 

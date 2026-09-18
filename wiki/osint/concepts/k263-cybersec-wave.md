@@ -4,6 +4,7 @@ type: concept
 tags: [cybersec, k263]
 keywords: [AgentLSD, skillspector, ECC]
 related:
+  - concepts/k264-cybersec-wave.md
   - concepts/k262-cybersec-wave.md
   - concepts/k263-eval-github-wave.md
   - sources/eval-multi-wiki-stack-2026-09-17.md
@@ -19,6 +20,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/k264-cybersec-wave.md
 - @concepts/k262-cybersec-wave.md
 - @concepts/k263-eval-github-wave.md
 - @sources/eval-multi-wiki-stack-2026-09-17.md

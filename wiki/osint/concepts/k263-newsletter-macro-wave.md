@@ -4,6 +4,7 @@ type: concept
 tags: [macro, newsletter, k263, guruwatcher]
 keywords: [Donny, Klement, Moontower, Event-Horizon, AIUC, Gas-Town, Pocock]
 related:
+  - concepts/k264-newsletter-macro-wave.md
   - concepts/k262-newsletter-macro-wave.md
   - concepts/guruwatcher-macro-watches.md
   - sources/donny-2026-09-16-macro-2026-09-17.md
@@ -22,6 +23,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/k264-newsletter-macro-wave.md
 - @concepts/k262-newsletter-macro-wave.md
 - @concepts/guruwatcher-macro-watches.md
 - @sources/donny-2026-09-16-macro-2026-09-17.md

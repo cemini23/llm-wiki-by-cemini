@@ -4,6 +4,12 @@ type: concept
 tags: [concept, guruwatcher, macro, watches, k233]
 keywords: [guruwatcher, price-watches, inflation-swaps, factor-rotation, alert-only]
 related:
+  - concepts/k264-newsletter-macro-wave.md
+  - concepts/k264-xsp-atm-wave.md
+  - sources/atm-file-day-drops-1b-2026-09-18.md
+  - sources/substack-rss-capital-flows-2026-09-17-policy-error-2026-09-18.md
+  - sources/substack-rss-klement-2026-09-18-homework-2026-09-18.md
+  - sources/substack-rss-wublock-2026-09-18-fed-hike-2026-09-18.md
   - concepts/k263-newsletter-macro-wave.md
   - concepts/k263-xsp-donny-wave.md
   - sources/donny-2026-09-16-macro-2026-09-17.md
@@ -45,11 +51,17 @@ related:
   - sources/substack-rss-klement-2026-09-16-cb-experience-2026-09-16.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 
 ## Relations
 
+- @concepts/k264-newsletter-macro-wave.md
+- @concepts/k264-xsp-atm-wave.md — ATM tape historical FILE; never auto-arm; no xsp scp
+- @sources/atm-file-day-drops-1b-2026-09-18.md — 178 $1B+ ATM names; no named live levels
+- @sources/substack-rss-capital-flows-2026-09-17-policy-error-2026-09-18.md — K264 no named levels
+- @sources/substack-rss-klement-2026-09-18-homework-2026-09-18.md — K264 no named levels
+- @sources/substack-rss-wublock-2026-09-18-fed-hike-2026-09-18.md — K264 Fed +25bp; briefs only; no xsp scp
 - @concepts/k263-newsletter-macro-wave.md
 - @concepts/k263-xsp-donny-wave.md — Donny MSTR 120 / UEC 9-9.50 claim-ledger HITL; never auto-arm
 - @sources/donny-2026-09-16-macro-2026-09-17.md — K263 named levels; never auto-arm; never watches.json

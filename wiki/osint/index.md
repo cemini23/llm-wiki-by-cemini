@@ -7,6 +7,42 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K264 ingest (2026-09-18)
+OSINT K264: 17 inbox (fold eval `(1)` into one source). Phase-0 REFERENCE: pi-subagents MIT; tradingview-optimizer MIT; fast-jev-compaction MIT; C2C Apache-2.0; jev-browser MIT (live gh api retry). jev-mcp **laptop MCP WIRE** (operator OK). HTF GPL extract-only. handbook NOASSERTION no clone. **0 product Integrate GO. Transkribus sole HTR. No xsp/pm scp. No skill auto-evolve. No LIVE Discord.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k264-eval-github-wave](concepts/k264-eval-github-wave.md) | K264 Eval GitHub Wave | draft |
+| [k264-ccc-harness-wave](concepts/k264-ccc-harness-wave.md) | K264 CCC Harness Wave | draft |
+| [k264-atto-wave](concepts/k264-atto-wave.md) | K264 Atto Wave | draft |
+| [k264-cybersec-wave](concepts/k264-cybersec-wave.md) | K264 Cybersec Wave | draft |
+| [k264-gambling-pm-wave](concepts/k264-gambling-pm-wave.md) | K264 Gambling PM Wave | draft |
+| [k264-newsletter-macro-wave](concepts/k264-newsletter-macro-wave.md) | K264 Newsletter Macro Wave | draft |
+| [k264-xsp-atm-wave](concepts/k264-xsp-atm-wave.md) | K264 XSP ATM Wave | draft |
+| [k264-ood-stub-wave](concepts/k264-ood-stub-wave.md) | K264 OOD Stub Wave | draft |
+| [jev-mcp](entities/tools/jev-mcp.md) | jev-mcp MIT laptop MCP WIRE | draft |
+| [pi-subagents](entities/tools/pi-subagents.md) | pi-subagents MIT GO REFERENCE FILE | draft |
+| [tradingview-optimizer](entities/tools/tradingview-optimizer.md) | tradingview-optimizer MIT GO REFERENCE HITL | draft |
+| [fast-jev-compaction](entities/tools/fast-jev-compaction.md) | fast-jev-compaction MIT GO REFERENCE FILE | draft |
+| [c2c](entities/tools/c2c.md) | C2C Apache-2.0 GO REFERENCE FILE | draft |
+| [jev-browser](entities/tools/jev-browser.md) | jev-browser MIT GO REFERENCE HITL | draft |
+| [eval-deep-research-url-stack-2026-09-18](sources/eval-deep-research-url-stack-2026-09-18.md) | Deep research URL eval SPDX overrides | draft |
+| [c2c-arxiv](sources/arxiv-2510.03215-c2c-2026-09-18.md) | C2C KV-cache projection | draft |
+| [atm-1b](sources/atm-file-day-drops-1b-2026-09-18.md) | ATM $1B+ historical tape | draft |
+| [vehicle-voice](sources/arxiv-2609.19630-vehicle-voice-safety-2026-09-18.md) | Vehicle voice authorization | draft |
+| [china-aigc](sources/arxiv-2609.19989-china-aigc-compliance-2026-09-18.md) | China AIGC compliance | draft |
+| [ppocrv6](sources/arxiv-2609.20064-ppocrv6-historical-2026-09-18.md) | PP-OCRv6 historical FILE not product HTR | draft |
+| [xeno](sources/arxiv-2609.20408-xeno-interpretability-2026-09-18.md) | Xeno-interpretability | draft |
+| [harness-design](sources/arxiv-2609.20804-harness-design-coding-2026-09-18.md) | Harness design 176 settings | draft |
+| [overclaim](sources/arxiv-2609.20812-overclaiming-agents-2026-09-18.md) | OverclaimBench | draft |
+| [safeharness](sources/arxiv-2609.20822-obstacle-aware-harness-2026-09-18.md) | SAFEHARNESS OOD stub | draft |
+| [ls-projects](sources/newsletter-rss-latent-space-2026-09-18-ainews-2026-09-18.md) | LS Claude Code Projects | draft |
+| [tldrsec-346](sources/newsletter-rss-tldrsec-2026-09-17-346-2026-09-18.md) | tldrsec 346 | draft |
+| [cf-policy-error](sources/substack-rss-capital-flows-2026-09-17-policy-error-2026-09-18.md) | Capital Flows policy error | draft |
+| [eh-eagles](sources/substack-rss-event-horizon-2026-09-18-eagles-2026-09-18.md) | EH Eagles Kalshi promo | draft |
+| [klement-homework](sources/substack-rss-klement-2026-09-18-homework-2026-09-18.md) | Klement Stromberg cite | draft |
+| [wublock-fed](sources/substack-rss-wublock-2026-09-18-fed-hike-2026-09-18.md) | WuBlock Fed +25bp | draft |
+
 ### K263 ingest (2026-09-17)
 OSINT K263: 16 inbox (15 NEW + 1 LIKELY treated as NEW: PE Matt Pocock ≠ Dex Horthy). Phase-0 REFERENCE: openjev / jev-ultrafast / BrowserSkill / data-formulator / jev-mcp / ECC / agent-lsd MIT; knowledge-work-plugins Apache-2.0. skillspector already entity no new clone; colibri Watch no new clone; WeKnora NOASSERTION; cilium SIZE-SKIP; supervision SIZE-SKIP; coder AGPL; n8n NOASSERTION. **0 Integrate GO. Transkribus sole HTR. No xsp/pm scp. No MCP. No skill auto-evolve. No LIVE Discord.**
 

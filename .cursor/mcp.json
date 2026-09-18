@@ -63,6 +63,13 @@
       ],
       "env": {}
     },
+    "jev": {
+      "type": "stdio",
+      "disabled": false,
+      "command": "${workspaceFolder}/scripts/mcp_jev.sh",
+      "args": [],
+      "env": {}
+    },
     "mcp-legal-it": {
       "type": "stdio",
       "disabled": true,

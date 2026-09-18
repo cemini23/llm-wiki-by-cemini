@@ -4,6 +4,7 @@ type: concept
 tags: [xsp, k263, quant, guruwatcher]
 keywords: [Donny, MSTR, UEC, Moontower, Malacca]
 related:
+  - concepts/k264-xsp-atm-wave.md
   - concepts/k262-xsp-vol-wave.md
   - concepts/guruwatcher-macro-watches.md
   - sources/donny-2026-09-16-macro-2026-09-17.md
@@ -18,6 +19,7 @@ wire_status: wont_wire
 
 ## Relations
 
+- @concepts/k264-xsp-atm-wave.md
 - @concepts/k262-xsp-vol-wave.md
 - @concepts/guruwatcher-macro-watches.md
 - @sources/donny-2026-09-16-macro-2026-09-17.md

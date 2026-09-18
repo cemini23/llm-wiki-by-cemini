@@ -30,6 +30,15 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-18 — K264 ingest)
+
+- **K264 ingest** — 17 inbox (fold eval `(1)` into one source). 16 source pages + 8 hubs + 5 new entities (jev-mcp WIRE bump). Raws to egress-fi (17/17). **0 product Integrate GO. Transkribus sole HTR. No xsp/pm scp. No skill evolve. No LIVE Discord.**
+- **Phase-0** — `adopt_k264_phase0.sh`: pi-subagents / tradingview-optimizer / fast-jev-compaction / jev-browser MIT; C2C Apache-2.0. Live `gh api` retry confirmed jev-browser MIT, so the clone proceeded. NOASSERTION / AGPL / GPL / SPDX-null no clone.
+- **jev-mcp** — operator OK laptop Cursor MCP WIRE via `scripts/mcp_jev.sh` + local dist. Key `~/.cemini/typesafe-api-key`. Never `npx github:`. Not Atto product.
+- **Routing** — Atto #1 jev-mcp laptop WIRE (PII-safe; Transkribus sole HTR). GW #2 ATM historical FILE; tradingview-optimizer HITL never auto-arm. CeminiDFS #3 thin FILE. CeminiParlays #4 EH Eagles FILE. CCC harness/C2C/LS/pi-subagents FILE (do not swap `/route`). Cyber EXTRACT. Poker retired.
+- **Briefs** — `briefs/2026-09-18_k264-*`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run).
+
 ## Current state (2026-09-18 — laptop TV / OpenCLI / claude-mem)
 
 - **Cursor TradingView MCP** — atila plugin already on (37 tools). Personal research GO. Smoke SPY + BTC. **Not** in Grok `/route`. **Not** in prod.

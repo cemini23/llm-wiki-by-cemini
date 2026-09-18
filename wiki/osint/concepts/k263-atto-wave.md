@@ -4,6 +4,7 @@ type: concept
 tags: [atto, k263, genealogy]
 keywords: [openjev, jev-ultrafast, BrowserSkill, Transkribus, HITL]
 related:
+  - concepts/k264-atto-wave.md
   - concepts/k262-atto-htr-wave.md
   - concepts/k263-eval-github-wave.md
   - sources/eval-multi-wiki-stack-2026-09-17.md
@@ -20,6 +21,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/k264-atto-wave.md
 - @concepts/k262-atto-htr-wave.md
 - @concepts/k263-eval-github-wave.md
 - @sources/eval-multi-wiki-stack-2026-09-17.md

@@ -1,42 +1,52 @@
 ---
 title: jev-mcp — Jev MCP wrapper (MIT)
 type: entity
-tags: [tool, k263, mcp, mit]
-keywords: [jev-mcp, MCP, Jev]
+tags: [tool, k264, k263, mcp, mit]
+keywords: [jev-mcp, MCP, Jev, jev_verify, jev_screen, jev_find]
 related:
+  - concepts/k264-atto-wave.md
+  - concepts/k264-ccc-harness-wave.md
+  - concepts/k264-eval-github-wave.md
   - concepts/k263-atto-wave.md
   - concepts/k263-eval-github-wave.md
+  - sources/eval-deep-research-url-stack-2026-09-18.md
   - sources/eval-multi-wiki-stack-2026-09-17.md
   - entities/tools/openjev.md
 maturity: draft
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-18
 phase_0_verdict: GO REFERENCE
-harness_verb: FILE
-wire_status: wont_wire
-wire_note: REFERENCE clone tiny. Ask before MCP. No MCP install this wave.
+harness_verb: WIRE
+wire_status: runtime_wired
+wire_note: Laptop Cursor MCP via scripts/mcp_jev.sh + local dist/index.js. Key ~/.cemini/typesafe-api-key. Fail-closed. Never npx github. Not Atto product. 0 product Integrate.
 ---
 
 ## Relations
 
+- @concepts/k264-atto-wave.md
+- @concepts/k264-ccc-harness-wave.md
+- @concepts/k264-eval-github-wave.md
 - @concepts/k263-atto-wave.md
 - @concepts/k263-eval-github-wave.md
+- @sources/eval-deep-research-url-stack-2026-09-18.md
 - @sources/eval-multi-wiki-stack-2026-09-17.md
 - @entities/tools/openjev.md
 
 ## Raw Concept
 
-K263 Phase-0 on [jkudish/jev-mcp](https://github.com/jkudish/jev-mcp).
+K263 Phase-0 + K264 operator-OK laptop MCP WIRE on [jkudish/jev-mcp](https://github.com/jkudish/jev-mcp).
 
 ## Narrative
 
 | Field | Value |
 |-------|-------|
 | **Repo** | https://github.com/jkudish/jev-mcp |
-| **License** | MIT `[CONFIRMED]` gh api 2026-09-17 |
-| **Local** | `.local/adopts/jev-mcp` |
-| **Stars** | 20 (2026-09-17) |
-| **Size** | ~30KB git |
-| **Verdict** | **GO REFERENCE** FILE. **Ask before MCP.** **0 Integrate GO.** |
+| **License** | MIT `[CONFIRMED]` gh api 2026-09-17 and 2026-09-18 |
+| **Local** | `.local/adopts/jev-mcp` (`dist/index.js`) |
+| **Launcher** | `scripts/mcp_jev.sh` |
+| **Cursor** | `.cursor/mcp.json` server `jev` |
+| **Stars** | 63 (2026-09-18) |
+| **Size** | ~128KB git |
+| **Verdict** | **WIRE laptop Cursor MCP.** Tools `jev_verify`, `jev_screen`, `jev_find`. Key `~/.cemini/typesafe-api-key` (operator drop; fail-closed if missing). **Never `npx github:`.** Not Atto product. Not GW auto-arm. **0 product Integrate.** |
 
-Tiny wrapper. Do not install MCP this wave.
+Laptop Cursor only. Do not swap `/route`. Do not put `TYPESAFE_API_KEY` in git.

@@ -26,9 +26,11 @@ related:
   - entities/tools/htrflow.md
   - entities/tools/kurrentschrift.md
   - sources/arxiv-2608.07917-tongguocr-2026-08-11.md
+  - concepts/k264-atto-wave.md
+  - sources/arxiv-2609.20064-ppocrv6-historical-2026-09-18.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-08-11
+updated: 2026-09-18
 ---
 
 ## Relations
@@ -58,6 +60,8 @@ updated: 2026-08-11
 - @entities/tools/deepseek-ocr.md — VLM OCR Watch
 - @entities/tools/htrflow.md — EUPL Reference-only
 - @entities/tools/kurrentschrift.md — ductus Extract
+- @concepts/k264-atto-wave.md — PP-OCRv6 FILE; Transkribus remains sole product HTR
+- @sources/arxiv-2609.20064-ppocrv6-historical-2026-09-18.md
 
 ## Raw Concept
 

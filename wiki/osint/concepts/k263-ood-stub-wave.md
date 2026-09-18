@@ -4,6 +4,7 @@ type: concept
 tags: [ood, k263]
 keywords: [AeroWeaver, UAV]
 related:
+  - concepts/k264-ood-stub-wave.md
   - concepts/k262-ood-stub-wave.md
   - sources/arxiv-2609.18520-aeroweaver-2026-09-17.md
 maturity: draft
@@ -15,6 +16,7 @@ wire_status: wont_wire
 
 ## Relations
 
+- @concepts/k264-ood-stub-wave.md
 - @concepts/k262-ood-stub-wave.md
 - @sources/arxiv-2609.18520-aeroweaver-2026-09-17.md
 

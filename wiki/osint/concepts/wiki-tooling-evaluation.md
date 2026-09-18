@@ -313,10 +313,12 @@ related:
   - concepts/k262-eval-github-wave.md
   - sources/eval-multi-wiki-stack-2026-09-17.md
   - concepts/k263-eval-github-wave.md
+  - sources/eval-deep-research-url-stack-2026-09-18.md
+  - concepts/k264-eval-github-wave.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 
 ## Relations
@@ -327,6 +329,8 @@ updated: 2026-09-17
 - @concepts/k262-eval-github-wave.md
 - @sources/eval-multi-wiki-stack-2026-09-17.md — K263 eval; 0 Integrate GO
 - @concepts/k263-eval-github-wave.md
+- @sources/eval-deep-research-url-stack-2026-09-18.md — K264 eval; 0 product Integrate; jev-mcp laptop WIRE
+- @concepts/k264-eval-github-wave.md
 - @entities/tools/stagehand.md
 - @entities/tools/infographic.md
 - @entities/tools/smart-ralph.md

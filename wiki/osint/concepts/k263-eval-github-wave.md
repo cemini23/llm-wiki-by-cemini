@@ -4,6 +4,7 @@ type: concept
 tags: [eval, github, k263, revenue]
 keywords: [SPDX, openjev, BrowserSkill, ECC, skillspector]
 related:
+  - concepts/k264-eval-github-wave.md
   - concepts/k262-eval-github-wave.md
   - sources/eval-multi-wiki-stack-2026-09-17.md
   - concepts/k263-atto-wave.md
@@ -30,6 +31,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/k264-eval-github-wave.md
 - @concepts/k262-eval-github-wave.md
 - @sources/eval-multi-wiki-stack-2026-09-17.md
 - @concepts/k263-atto-wave.md

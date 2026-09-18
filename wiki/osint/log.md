@@ -1,3 +1,27 @@
+## [2026-09-18] ingest | K264 wave
+
+- **Inbox:** 17 files (14 NEW + 3 false DUPLICATE treated as NEW: two eval copies + LS weekly title). Fold eval `(1)` into one source; archive both. Preingest: parent ran; do not re-litigate licenses.
+- **Sources:** URL-stack eval SPDX overrides; C2C; ATM $1B+ tape; vehicle voice; China AIGC; PP-OCRv6 historical; xeno-interpretability; harness-design; OverclaimBench; SAFEHARNESS OOD; LS Projects; tldrsec 346; Capital Flows; EH Eagles; Klement homework; WuBlock Fed hike.
+- **Concepts:** 8 k264-* hubs. Entities: pi-subagents, tradingview-optimizer, fast-jev-compaction, c2c. Bumps: jev-mcp **WIRE/runtime_wired**, jev-ultrafast FILE, transkribus sole HTR, tradesdontlie FILE-not-Integrate, wiki-tooling-evaluation, GuruWatcher no auto-arm, k263 hubs.
+- **Phase-0:** `adopt_k264_phase0.sh` — pi-subagents / tradingview-optimizer / fast-jev-compaction MIT; C2C Apache-2.0. SKIP: handbook NOASSERTION; hardenerAi/typesafe-mario/building-with-jev-skill SPDX-null; HTF GPL extract-only; worldmonitor AGPL; jev-browser TLS timeout; jev-mcp/jev-ultrafast exist. **0 product Integrate GO.**
+- **Routing:** Atto #1 jev-mcp laptop WIRE (not vault product; Transkribus sole HTR). GW #2 ATM historical FILE; tradingview-optimizer HITL; never auto-arm. CeminiDFS #3 thin FILE. CeminiParlays #4 EH Eagles FILE. CCC harness-design/overclaiming/C2C/LS/pi-subagents FILE (do not swap `/route`). Cyber EXTRACT. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-18_k264-*` written (gitignored). Sibling copies attempted — sandbox may block `../`.
+- **Archive:** 17/17 inbox → egress-fi. Local copies removed.
+- **gate:** `ingest_session_gate.py` WARN acknowledged — stale `[NEEDS VERIFICATION]` on historical `wiki/log.md` entries are pre-existing, not this batch. Stromberg et al (2026) is cite-only `[NEEDS VERIFICATION 2026-09-18]`.
+
+## [2026-09-18] phase-0 | K264
+
+- **nicobailon/pi-subagents** — MIT `[CONFIRMED]` parent gh api 2026-09-18; ~19MB GO REFERENCE FILE. Do not swap `/route`.
+- **Roboquant-AI/tradingview-optimizer** — MIT `[CONFIRMED]` gh api 2026-09-18; tiny GO REFERENCE FILE. Chrome HITL. No auto-arm.
+- **tamaratran/fast-jev-compaction** — MIT `[CONFIRMED]` gh api 2026-09-18; tiny GO REFERENCE FILE. No skill auto-evolve.
+- **thu-nics/C2C** — Apache-2.0 `[CONFIRMED]` gh api 2026-09-18; ~5MB GO REFERENCE FILE.
+- **jkudish/jev-mcp** — MIT `[CONFIRMED]`; already cloned. **WIRE laptop Cursor MCP** (operator OK). Local dist. Never `npx github:`. **0 product Integrate.**
+- **jkudish/jev-browser** — MIT `[CONFIRMED]` by live `gh api` retry 2026-09-18 (57 ★ / ~10MB); REFERENCE clone made. HITL cassette only. No unattended Antenati scrape.
+- **browser-use/jev-ultrafast** — already cloned. FILE bump HITL.
+- **SKIP:** handbook NOASSERTION; hardenerAi/typesafe-mario/building-with-jev-skill SPDX-null (do not copy skills); HTF GPL extract-only; worldmonitor AGPL and SPDX still unconfirmed; tradingview-mcp exists FILE-not-Integrate.
+- **Archive:** 17/17 inbox files on `cemini-egress-fi:/opt/cemini-bulk/research/osint/`; local inbox empty.
+- **0 product Integrate GO.** Transkribus sole HTR. No skill evolve. No LIVE Discord. No xsp/pm scp.
+
 ## [2026-09-18] ops | claude-mem observer Nemo
 
 - **Switch:** OpenRouter primary `mistralai/mistral-nemo`, fallback `inclusionai/ling-3.0-flash`. Worker 13.24.20 loaded live. No `:free`. No paid GLM 5.2.

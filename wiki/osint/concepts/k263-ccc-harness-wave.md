@@ -4,6 +4,7 @@ type: concept
 tags: [ccc, k263, harness]
 keywords: [CERA-MoA, ScienceIDE, ECC, Pocock, Gas-Town, AIUC, openjev]
 related:
+  - concepts/k264-ccc-harness-wave.md
   - concepts/k262-ccc-harness-wave.md
   - concepts/k263-eval-github-wave.md
   - sources/eval-multi-wiki-stack-2026-09-17.md
@@ -28,6 +29,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/k264-ccc-harness-wave.md
 - @concepts/k262-ccc-harness-wave.md
 - @concepts/k263-eval-github-wave.md
 - @sources/eval-multi-wiki-stack-2026-09-17.md
