@@ -30,10 +30,11 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
-## Current state (2026-09-18 — laptop TV / OpenCLI)
+## Current state (2026-09-18 — laptop TV / OpenCLI / claude-mem)
 
 - **Cursor TradingView MCP** — atila plugin already on (37 tools). Personal research GO. Smoke SPY + BTC. **Not** in Grok `/route`. **Not** in prod.
 - **OpenCLI tradingview** — SKIP (no Desktop; login / often paid). **OpenCLI Hyperliquid** installed and smoked (public `/info`).
+- **claude-mem observer** — OpenRouter `mistralai/mistral-nemo` + fallback `inclusionai/ling-3.0-flash`. No `:free`. No paid GLM 5.2.
 - **tradesdontlie CDP** — still no `TradingView.app`. Steal-from only.
 - **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run).
 

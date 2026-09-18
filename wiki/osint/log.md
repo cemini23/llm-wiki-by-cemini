@@ -1,3 +1,9 @@
+## [2026-09-18] ops | claude-mem observer Nemo
+
+- **Switch:** OpenRouter primary `mistralai/mistral-nemo`, fallback `inclusionai/ling-3.0-flash`. Worker 13.24.20 loaded live. No `:free`. No paid GLM 5.2.
+- **Cost proxy:** 17 Sep 264 calls → ~$0.40/mo Nemo vs $15–45 paid GLM 5.2 (thinking tax).
+- **Pages:** `entities/tools/claude-mem.md`, index, ROADMAP. Settings live in `~/.claude-mem/` (not git).
+
 ## [2026-09-18] ops | laptop TV MCP + OpenCLI Hyperliquid
 
 - **Cursor MCP:** `plugin-finance-data-providers-tradingview` already live (37 tools). Smoke: SPY quote + BTC pulse. Personal research only. Not inherited by Grok `/route`.

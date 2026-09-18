@@ -16,9 +16,8 @@ related:
   - concepts/agent-memory-cross-scenario-generality.md
 maturity: validated
 created: 2026-05-10
-updated: 2026-06-05
-laptop_install: VERIFIED 2026-05-10 (v13.0.1)
-phase_2_smoke: PASS 2026-05-12 (12 sessions / 148 obs / 50-obs SessionStart injection cross-session verified)
+updated: 2026-09-18
+laptop_install: VERIFIED 2026-09-18 — worker 13.24.20. OpenRouter observer: `mistralai/mistral-nemo` primary, `inclusionai/ling-3.0-flash` fallback. Do not use `:free` slugs (429).
 ---
 
 ## Relations
@@ -65,7 +64,7 @@ Verified defaults (from production bundle `dist/npx-cli/index.js` `Z.DEFAULTS`):
 - `CLAUDE_MEM_CONTEXT_OBSERVATIONS: "50"` (worker observation buffer)
 - `CLAUDE_MEM_CONTEXT_SESSION_COUNT: "10"` (rolling session memory)
 - `CLAUDE_MEM_SKIP_TOOLS: "ListMcpResourcesTool,SlashCommand,Skill,TodoWrite,AskUserQuestion"` (no noise)
-- Provider: `claude` via subscription auth
+- Provider: OpenRouter (2026-09-18). Primary `mistralai/mistral-nemo`, fallback `inclusionai/ling-3.0-flash`. Paid GLM 5.2 was too expensive for summarization (~$15–45/mo vs ~$0.40 for Nemo). `:free` slugs 429.
 - Data dir: `~/.claude-mem` (default homedir; configurable via `CLAUDE_MEM_DATA_DIR`)
 
 Known issue at install: Claude Desktop OAuth token stale (flagged in `~/.claude-mem/oauth-stale.marker`). Worker still runs; observation pipeline functional. Re-login via Claude Desktop will refresh.
@@ -94,3 +93,14 @@ State at verification:
 ### K42 cross-reference (Doc 1, 2026-05-13)
 
 `@sources/evaluating-urls-cemini-project-2026-05-13.md` (Doc 1 K42) surfaced `@entities/tools/claude-obsidian.md` as a parallel-implementation Adopt candidate. Scope distinction confirmed: claude-mem operates at the *session-memory* layer (Bun worker observes Claude Code activity → ChromaDB), while claude-obsidian operates at the *vault-side reasoning* layer (LLM agent reasons over user's markdown notes). Different use cases — parallel adoption is acceptable. Phase-0 audit of claude-obsidian still gates Adopt.
+
+### Observer model (2026-09-18)
+
+| Setting | Value |
+|---|---|
+| Provider | OpenRouter (`CLAUDE_MEM_PROVIDER=openrouter`) |
+| Primary | `mistralai/mistral-nemo` |
+| Fallback | `inclusionai/ling-3.0-flash` |
+| Rejected | `z-ai/glm-5.2:free` (13h 429), paid `z-ai/glm-5.2` (thinking tax; ~$0.0085/call logged) |
+
+Worker 13.24.20 at `http://127.0.0.1:37702` loaded the list live (no restart). Settings: `~/.claude-mem/settings.json`. Job is XML memory extraction, not coding. Nemo is on claude-mem’s own OpenRouter endorse list. Volume proxy 17 Sep: 264 calls → ~$0.40/mo on Nemo vs $15–45 on paid GLM 5.2.
