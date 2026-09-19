@@ -43,8 +43,8 @@ read_status: read
 
 | File | `Revenue Opportunity URL Evaluation.docx` |
 | Near-copy | `Revenue Opportunity URL Evaluation copy.docx` (different sha256; extra rows; folded; both archived) |
-| Location | `research to be indexed/Revenue Opportunity URL Evaluation.docx` |
-| Location (copy) | `research to be indexed/Revenue Opportunity URL Evaluation copy.docx` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Revenue Opportunity URL Evaluation.docx` |
+| Location (copy) | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Revenue Opportunity URL Evaluation copy.docx` |
 | Retrieved | 2026-09-19 |
 | Dual-ID | **OSINT K265** |
 | sha256 | `54826de1081ae1c8e81da2da1888400f8326a505be943111ffe6662fac9977ed` |

@@ -20,7 +20,7 @@ read_status: read
 ## Raw Concept
 
 | File | `substack-rss-wublock-2026-09-19-weekly-project-updates-hyperliquid-launches-lend.md` |
-| Location | `research to be indexed/substack-rss-wublock-2026-09-19-weekly-project-updates-hyperliquid-launches-lend.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-09-19-weekly-project-updates-hyperliquid-launches-lend.md` |
 | Retrieved | 2026-09-19 |
 | Dual-ID | **OSINT K265** |
 | sha256 | `21508a6d2953ec56390504c48f5a0d9db24207751f3c13b250a47995ff6a0f75` |

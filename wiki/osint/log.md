@@ -6,7 +6,7 @@
 - **Phase-0:** `adopt_k265_phase0.sh` — jev-rules / jev-codex-router / SkillOpt / classifier-dev / claude-reflect MIT; tax-doc-classifier Apache-2.0. SKIP: cua SIZE-SKIP; Orca AGPL; OpenCreator/Dream-RSI/yibie null; hermes NOASSERTION; laya 404; typesafe proprietary; awesome-jev list skip; jev-mcp exists. **0 product Integrate GO.**
 - **Routing:** Atto #1 tax-doc-classifier / classifier-dev FILE redacted type (Transkribus sole HTR). GW #2 LS citation-selection/escalation = claim-ledger gate; never auto-arm. CeminiDFS #3 thin FILE + Jev brief. CeminiParlays #4 escalation FILE + Jev brief. CCC Jev clones / AGENTS.md / SkillOpt FILE (do not swap `/route`). Cyber SecPro FILE. **No xsp/pm scp.**
 - **Briefs:** `briefs/2026-09-19_k265-*` + Jev briefs `### K265 add`. Sibling copies attempted.
-- **Archive:** leftover — egress SSH blocked this session. Inbox still local. Parent finishes incremental archive.
+- **Archive:** 5/5 inbox → egress-fi. Local copies removed. Parent finished after Grok sandbox SSH block.
 - **gate:** `ingest_session_gate.py` WARN acknowledged if stale `[NEEDS VERIFICATION]` on historical `wiki/log.md`.
 
 ## [2026-09-19] phase-0 | K265
