@@ -66,7 +66,7 @@
     "jev": {
       "type": "stdio",
       "disabled": false,
-      "command": "${workspaceFolder}/scripts/mcp_jev.sh",
+      "command": "/Users/claudiobarone/.local/bin/mcp-jev",
       "args": [],
       "env": {}
     },

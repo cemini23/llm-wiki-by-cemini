@@ -14,7 +14,7 @@ related:
   - entities/tools/openjev.md
 maturity: draft
 created: 2026-09-17
-updated: 2026-09-18
+updated: 2026-09-19
 phase_0_verdict: GO REFERENCE
 harness_verb: WIRE
 wire_status: runtime_wired
@@ -43,8 +43,8 @@ K263 Phase-0 + K264 operator-OK laptop MCP WIRE on [jkudish/jev-mcp](https://git
 | **Repo** | https://github.com/jkudish/jev-mcp |
 | **License** | MIT `[CONFIRMED]` gh api 2026-09-17 and 2026-09-18 |
 | **Local** | `.local/adopts/jev-mcp` (`dist/index.js`) |
-| **Launcher** | `scripts/mcp_jev.sh` |
-| **Cursor** | `.cursor/mcp.json` server `jev` |
+| **Launcher** | `~/.local/bin/mcp-jev` (`scripts/mcp_jev.sh` wraps it) |
+| **Cursor** | Global + project `.cursor/mcp.json` server `jev` (`disabled: false`) |
 | **Stars** | 63 (2026-09-18) |
 | **Size** | ~128KB git |
 | **Verdict** | **WIRE laptop Cursor MCP.** Tools `jev_verify`, `jev_screen`, `jev_find`. Key `~/.cemini/typesafe-api-key` (operator drop; fail-closed if missing). **Never `npx github:`.** Not Atto product. Not GW auto-arm. **0 product Integrate.** |
