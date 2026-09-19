@@ -13,9 +13,10 @@ related:
   - sources/substack-rss-event-horizon-2026-09-18-eagles-2026-09-18.md
   - sources/substack-rss-klement-2026-09-18-homework-2026-09-18.md
   - sources/substack-rss-wublock-2026-09-18-fed-hike-2026-09-18.md
+  - concepts/k265-newsletter-macro-wave.md
 maturity: draft
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -31,6 +32,7 @@ wire_status: policy_wired
 - @sources/substack-rss-event-horizon-2026-09-18-eagles-2026-09-18.md
 - @sources/substack-rss-klement-2026-09-18-homework-2026-09-18.md
 - @sources/substack-rss-wublock-2026-09-18-fed-hike-2026-09-18.md
+- @concepts/k265-newsletter-macro-wave.md
 
 ## Raw Concept
 

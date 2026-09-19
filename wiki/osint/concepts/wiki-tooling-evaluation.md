@@ -315,10 +315,12 @@ related:
   - concepts/k263-eval-github-wave.md
   - sources/eval-deep-research-url-stack-2026-09-18.md
   - concepts/k264-eval-github-wave.md
+  - sources/eval-revenue-opportunity-url-2026-09-19.md
+  - concepts/k265-eval-github-wave.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-09-18
+updated: 2026-09-19
 ---
 
 ## Relations
@@ -362,6 +364,8 @@ updated: 2026-09-18
 - @entities/tools/lifeos.md
 - @entities/tools/pi-rlm.md
 - @sources/eval-github-revenue-opportunity-2026-08-09.md — K229
+- @sources/eval-revenue-opportunity-url-2026-09-19.md
+- @concepts/k265-eval-github-wave.md
 
 - @sources/eval-url-revenue-stack-2026-08-08.md — K228
 

@@ -30,6 +30,15 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-19 — K265 ingest)
+
+- **K265 ingest** — 5 inbox (fold two evals into one source; not a byte-copy). 4 source pages + 6 hubs + 6 new entities (jev-mcp WIRE unchanged). Archive leftover this session. **0 product Integrate GO. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord.**
+- **Phase-0** — `adopt_k265_phase0.sh`: jev-rules / jev-codex-router / SkillOpt / classifier-dev / claude-reflect MIT; tax-doc-classifier Apache-2.0. SIZE-SKIP / AGPL / SPDX-null / 404 / NOASSERTION / proprietary no clone.
+- **jev-mcp** — live laptop path unchanged (`~/.local/bin/mcp-jev`). Never `npx github:`. Not Atto product.
+- **Routing** — Atto #1 redacted type FILE (Transkribus sole HTR). GW #2 citation-selection/escalation = claim-ledger HITL; never auto-arm. CeminiDFS #3 thin FILE. CeminiParlays #4 escalation FILE. CCC Jev clones/AGENTS.md FILE (do not swap `/route`). Cyber SecPro FILE. Poker retired.
+- **Briefs** — `briefs/2026-09-19_k265-*` + Jev `### K265 add`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run).
+
 ## Current state (2026-09-18 — Ashburn cemini-prod deleted)
 
 - **Deleted** — Hetzner `ubuntu-8gb-ash-2` (`cemini-prod`, Ashburn). Operator confirmed in Console. SSH banner to old IP times out; do not reconnect (`Host cemini-prod` tombstoned to `192.0.2.1`).

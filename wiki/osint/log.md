@@ -1,3 +1,25 @@
+## [2026-09-19] ingest | K265 wave
+
+- **Inbox:** 5 files (parent preingest 5 NEW). Two evals are different hashes — fold both on one source page. Extra copy rows: SkillOpt, tax-doc-classifier, claude-reflect, classifier-dev. Never trust docx SPDX.
+- **Sources:** URL eval SPDX overrides; LS Jev clones; SecPro 252; WuBlock HL lend.
+- **Concepts:** 6 k265-* hubs. Entities: jev-rules, jev-codex-router, skillopt, tax-doc-classifier, classifier-dev, claude-reflect. Bumps: jev-mcp **WIRE unchanged**, openjev FILE Watch, transkribus sole HTR, wiki-tooling-evaluation, GuruWatcher no auto-arm, k264 hubs.
+- **Phase-0:** `adopt_k265_phase0.sh` — jev-rules / jev-codex-router / SkillOpt / classifier-dev / claude-reflect MIT; tax-doc-classifier Apache-2.0. SKIP: cua SIZE-SKIP; Orca AGPL; OpenCreator/Dream-RSI/yibie null; hermes NOASSERTION; laya 404; typesafe proprietary; awesome-jev list skip; jev-mcp exists. **0 product Integrate GO.**
+- **Routing:** Atto #1 tax-doc-classifier / classifier-dev FILE redacted type (Transkribus sole HTR). GW #2 LS citation-selection/escalation = claim-ledger gate; never auto-arm. CeminiDFS #3 thin FILE + Jev brief. CeminiParlays #4 escalation FILE + Jev brief. CCC Jev clones / AGENTS.md / SkillOpt FILE (do not swap `/route`). Cyber SecPro FILE. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-19_k265-*` + Jev briefs `### K265 add`. Sibling copies attempted.
+- **Archive:** leftover — egress SSH blocked this session. Inbox still local. Parent finishes incremental archive.
+- **gate:** `ingest_session_gate.py` WARN acknowledged if stale `[NEEDS VERIFICATION]` on historical `wiki/log.md`.
+
+## [2026-09-19] phase-0 | K265
+
+- **EliaAlberti/jev-rules** — MIT `[CONFIRMED]` gh api 2026-09-19; ~16MB GO REFERENCE FILE. No skill auto-evolve.
+- **0xNatoshi/jev-codex-router** — MIT `[CONFIRMED]`; tiny GO REFERENCE FILE. **Do not swap `/route`.** Eval Integrate OVERRIDE.
+- **microsoft/SkillOpt** — MIT `[CONFIRMED]`; ~24MB GO REFERENCE FILE. **No skill auto-evolve.** Eval Integrate OVERRIDE.
+- **kyotofin/tax-doc-classifier** — Apache-2.0 `[CONFIRMED]`; tiny GO REFERENCE FILE. Atto redacted type only. Not product HTR.
+- **mrmps/classifier-dev** — MIT `[CONFIRMED]`; ~3MB GO REFERENCE FILE. Atto/GW FILE.
+- **BayramAnnakov/claude-reflect** — MIT `[CONFIRMED]`; tiny GO REFERENCE FILE. **No skill auto-evolve.** Eval Integrate OVERRIDE.
+- **SKIP:** cua SIZE-SKIP ~483MB; Orca AGPL; OpenCreator/Dream-RSI/yibie SPDX-null; hermes NOASSERTION; laya 404; typesafe proprietary; fatwang2/awesome-jev list skip; jev-mcp already WIRE.
+- **0 product Integrate GO.** Transkribus sole HTR. Do not swap `/route`. No LIVE Discord. No xsp/pm scp.
+
 ## [2026-09-18] ops | Ashburn cemini-prod deleted
 
 - **Deleted:** Hetzner `ubuntu-8gb-ash-2` (`cemini-prod`). Operator confirmed. SSH to former IP has no banner; `Host cemini-prod` tombstoned to `192.0.2.1` so a recycled IP cannot steal `accept-new`.

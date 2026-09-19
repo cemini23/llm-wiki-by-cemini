@@ -28,14 +28,18 @@ related:
   - sources/arxiv-2608.07917-tongguocr-2026-08-11.md
   - concepts/k264-atto-wave.md
   - sources/arxiv-2609.20064-ppocrv6-historical-2026-09-18.md
+  - concepts/k265-atto-wave.md
+  - entities/tools/tax-doc-classifier.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-09-18
+updated: 2026-09-19
 ---
 
 ## Relations
 
 - @sources/arxiv-2608.01646-spike-htr.md
+- @concepts/k265-atto-wave.md
+- @entities/tools/tax-doc-classifier.md
 
 - @entities/tools/spike-htr.md
 

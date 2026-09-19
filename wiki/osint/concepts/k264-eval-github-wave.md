@@ -20,9 +20,10 @@ related:
   - entities/tools/jev-browser.md
   - sources/tradesdontlie-tradingview-mcp.md
   - concepts/wiki-tooling-evaluation.md
+  - concepts/k265-eval-github-wave.md
 maturity: draft
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -45,6 +46,7 @@ wire_status: policy_wired
 - @entities/tools/jev-browser.md
 - @sources/tradesdontlie-tradingview-mcp.md
 - @concepts/wiki-tooling-evaluation.md
+- @concepts/k265-eval-github-wave.md
 
 ## Raw Concept
 

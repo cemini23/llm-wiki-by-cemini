@@ -9,9 +9,10 @@ related:
   - sources/eval-deep-research-url-stack-2026-09-18.md
   - sources/arxiv-2609.19630-vehicle-voice-safety-2026-09-18.md
   - sources/newsletter-rss-tldrsec-2026-09-17-346-2026-09-18.md
+  - concepts/k265-cybersec-wave.md
 maturity: draft
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -23,6 +24,7 @@ wire_status: policy_wired
 - @sources/eval-deep-research-url-stack-2026-09-18.md
 - @sources/arxiv-2609.19630-vehicle-voice-safety-2026-09-18.md
 - @sources/newsletter-rss-tldrsec-2026-09-17-346-2026-09-18.md
+- @concepts/k265-cybersec-wave.md
 
 ## Raw Concept
 

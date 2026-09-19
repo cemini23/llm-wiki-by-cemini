@@ -1,7 +1,7 @@
 ---
 title: openjev — local System-One logit readout (MIT)
 type: entity
-tags: [tool, k263, ccc, atto, mit]
+tags: [tool, k265, k263, ccc, atto, mit]
 keywords: [openjev, Jev, System-One, logit]
 related:
   - concepts/k263-ccc-harness-wave.md
@@ -9,9 +9,14 @@ related:
   - concepts/k263-atto-wave.md
   - sources/eval-multi-wiki-stack-2026-09-17.md
   - entities/tools/jev-mcp.md
+  - concepts/k265-atto-wave.md
+  - concepts/k265-ccc-jev-wave.md
+  - concepts/k265-eval-github-wave.md
+  - sources/eval-revenue-opportunity-url-2026-09-19.md
+  - sources/newsletter-rss-latent-space-2026-09-19-jev-clones-2026-09-19.md
 maturity: draft
 created: 2026-09-17
-updated: 2026-09-17
+updated: 2026-09-19
 phase_0_verdict: GO REFERENCE
 harness_verb: FILE
 wire_status: wont_wire
@@ -25,6 +30,11 @@ wire_note: REFERENCE clone. Local classifier. Do not swap /route. PII on-device.
 - @concepts/k263-atto-wave.md
 - @sources/eval-multi-wiki-stack-2026-09-17.md
 - @entities/tools/jev-mcp.md
+- @concepts/k265-atto-wave.md
+- @concepts/k265-ccc-jev-wave.md
+- @concepts/k265-eval-github-wave.md
+- @sources/eval-revenue-opportunity-url-2026-09-19.md
+- @sources/newsletter-rss-latent-space-2026-09-19-jev-clones-2026-09-19.md
 
 ## Raw Concept
 
@@ -42,3 +52,5 @@ K263 Phase-0 on [TheoLeeCJ/openjev](https://github.com/TheoLeeCJ/openjev).
 | **Verdict** | **GO REFERENCE** FILE. **0 Integrate GO.** |
 
 Local System-One logit readout. Atto: PII on-device. Do not swap `/route`.
+
+K265: local clones FILE Watch. Vault PII stays on-device. Live path remains jev-mcp TypeSafe.

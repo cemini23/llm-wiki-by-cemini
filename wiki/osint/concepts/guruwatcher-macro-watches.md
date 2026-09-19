@@ -49,9 +49,11 @@ related:
   - concepts/k262-newsletter-macro-wave.md
   - sources/substack-rss-moontower-2026-09-15-not-more-bearish-2026-09-16.md
   - sources/substack-rss-klement-2026-09-16-cb-experience-2026-09-16.md
+  - concepts/k265-newsletter-macro-wave.md
+  - sources/substack-rss-wublock-2026-09-19-hl-lend-2026-09-19.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-18
+updated: 2026-09-19
 ---
 
 ## Relations
@@ -101,6 +103,8 @@ updated: 2026-09-18
 - @sources/substack-rss-klement-2026-09-10-build-more-houses-2026-09-11.md — K259 wiki-only; no auto-arm
 - @concepts/k258-newsletter-macro-wave.md
 - @sources/substack-rss-klement-2026-09-09-lottery-momentum-2026-09-09.md — K258 lottery-momentum; no ticker/level; no auto-arm
+- @concepts/k265-newsletter-macro-wave.md
+- @sources/substack-rss-wublock-2026-09-19-hl-lend-2026-09-19.md
 
 ## Raw Concept
 

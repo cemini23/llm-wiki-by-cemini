@@ -17,9 +17,10 @@ related:
   - entities/tools/jev-mcp.md
   - entities/tools/fast-jev-compaction.md
   - entities/tools/c2c.md
+  - concepts/k265-ccc-jev-wave.md
 maturity: draft
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -39,6 +40,7 @@ wire_status: policy_wired
 - @entities/tools/jev-mcp.md
 - @entities/tools/fast-jev-compaction.md
 - @entities/tools/c2c.md
+- @concepts/k265-ccc-jev-wave.md
 
 ## Raw Concept
 

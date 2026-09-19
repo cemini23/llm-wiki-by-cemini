@@ -6,9 +6,10 @@ keywords: [SAFEHARNESS, robotics]
 related:
   - concepts/k263-ood-stub-wave.md
   - sources/arxiv-2609.20822-obstacle-aware-harness-2026-09-18.md
+  - concepts/k265-ood-stub-wave.md
 maturity: draft
 created: 2026-09-18
-updated: 2026-09-18
+updated: 2026-09-19
 harness_verb: FILE
 wire_status: wont_wire
 ---
@@ -17,6 +18,7 @@ wire_status: wont_wire
 
 - @concepts/k263-ood-stub-wave.md
 - @sources/arxiv-2609.20822-obstacle-aware-harness-2026-09-18.md
+- @concepts/k265-ood-stub-wave.md
 
 ## Raw Concept
 

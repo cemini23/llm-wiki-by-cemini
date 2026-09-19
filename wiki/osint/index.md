@@ -7,6 +7,28 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K265 ingest (2026-09-19)
+OSINT K265: 5 inbox (fold two evals into one source; not a byte-copy). Phase-0 REFERENCE: jev-rules MIT; jev-codex-router MIT; SkillOpt MIT; tax-doc-classifier Apache-2.0; classifier-dev MIT; claude-reflect MIT. cua SIZE-SKIP. Orca AGPL skip. laya 404 / yibie SPDX-null / OpenCreator SPDX-null / Dream-RSI SPDX-null / hermes NOASSERTION no clone. jev-mcp **laptop MCP WIRE unchanged**. Eval Integrate OVERRIDE FILE. **0 product Integrate GO. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill auto-evolve. No LIVE Discord.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k265-eval-github-wave](concepts/k265-eval-github-wave.md) | K265 Eval GitHub Wave | draft |
+| [k265-ccc-jev-wave](concepts/k265-ccc-jev-wave.md) | K265 CCC Jev Wave | draft |
+| [k265-atto-wave](concepts/k265-atto-wave.md) | K265 Atto Wave | draft |
+| [k265-cybersec-wave](concepts/k265-cybersec-wave.md) | K265 Cybersec Wave | draft |
+| [k265-newsletter-macro-wave](concepts/k265-newsletter-macro-wave.md) | K265 Newsletter Macro Wave | draft |
+| [k265-ood-stub-wave](concepts/k265-ood-stub-wave.md) | K265 OOD Stub Wave | draft |
+| [jev-rules](entities/tools/jev-rules.md) | jev-rules MIT GO REFERENCE FILE | draft |
+| [jev-codex-router](entities/tools/jev-codex-router.md) | jev-codex-router MIT GO REFERENCE FILE; do not swap /route | draft |
+| [skillopt](entities/tools/skillopt.md) | SkillOpt MIT GO REFERENCE FILE; no skill auto-evolve | draft |
+| [tax-doc-classifier](entities/tools/tax-doc-classifier.md) | tax-doc-classifier Apache-2.0 GO REFERENCE FILE type only | draft |
+| [classifier-dev](entities/tools/classifier-dev.md) | classifier-dev MIT GO REFERENCE FILE | draft |
+| [claude-reflect](entities/tools/claude-reflect.md) | claude-reflect MIT GO REFERENCE FILE; no skill auto-evolve | draft |
+| [eval-revenue-url](sources/eval-revenue-opportunity-url-2026-09-19.md) | Revenue URL eval SPDX overrides; two hashes folded | draft |
+| [ls-jev-clones](sources/newsletter-rss-latent-space-2026-09-19-jev-clones-2026-09-19.md) | LS 6 Jev clones in 2 days | draft |
+| [secpro-252](sources/substack-rss-secpro-2026-09-18-252-2026-09-19.md) | SecPro 252 decide-not-collect | draft |
+| [wublock-hl-lend](sources/substack-rss-wublock-2026-09-19-hl-lend-2026-09-19.md) | WuBlock HL lend wiki-only | draft |
+
 ### K264 ingest (2026-09-18)
 OSINT K264: 17 inbox (fold eval `(1)` into one source). Phase-0 REFERENCE: pi-subagents MIT; tradingview-optimizer MIT; fast-jev-compaction MIT; C2C Apache-2.0; jev-browser MIT (live gh api retry). jev-mcp **laptop MCP WIRE** (operator OK). HTF GPL extract-only. handbook NOASSERTION no clone. **0 product Integrate GO. Transkribus sole HTR. No xsp/pm scp. No skill auto-evolve. No LIVE Discord.**
 

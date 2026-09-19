@@ -383,6 +383,15 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K265 — 2026-09-19
+Dual-ID: **OSINT K265**. FILE wiki. **0 product Integrate GO.**
+- Jev clones (Laya/Nimble/SemIf/Kev) FILE Watch. Live path remains **jev-mcp** TypeSafe. Do not swap `/route`.
+- jev-codex-router / SkillOpt / claude-reflect — eval Integrate OVERRIDE FILE. No skill auto-evolve.
+- tax-doc-classifier / classifier-dev FILE Atto redacted type only. Transkribus sole HTR.
+- cua SIZE-SKIP. Orca AGPL skip. No uncensored weights.
+- WuBlock HL lend — **no xsp/pm scp.** SecPro decide-not-collect FILE. No PoC.
+- Verify: `bash scripts/adopt_k265_phase1.sh`. **No LIVE Discord.**
+
 ## OSINT K264 — 2026-09-18
 Dual-ID: **OSINT K264**. FILE wiki. **0 product Integrate GO.**
 - **jev-mcp** operator OK — laptop Cursor MCP WIRE via `scripts/mcp_jev.sh` + local dist. Key `~/.cemini/typesafe-api-key`. Never `npx github:`. Not Atto product. Do not swap `/route`.
