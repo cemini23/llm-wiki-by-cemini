@@ -7,6 +7,23 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K266 ingest (2026-09-19)
+OSINT K266: 6 X inbox (5 Jev/harness/SEO long-forms + 1 SEO article + 1 short tip; @BuildwithPublic is a broker advertorial). Reddit + X search hits are Watch stubs only, no source pages. **0 product Integrate GO. FILE only. Do not swap `/route`. No live desk. No xsp/pm scp. No LIVE Discord. Never `npx github:jkudish/jev-mcp`. Transkribus sole HTR.** No Phase-0 clones this wave.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k266-ccc-jev-x-wave](concepts/k266-ccc-jev-x-wave.md) | K266 CCC Jev X Wave | draft |
+| [k266-seo-x-voice-wave](concepts/k266-seo-x-voice-wave.md) | K266 SEO X Voice Wave | draft |
+| [k266-finance-0dte-wave](concepts/k266-finance-0dte-wave.md) | K266 Finance 0DTE Wave — wiki FILE, no live desk | draft |
+| [k266-ood-stub-wave](concepts/k266-ood-stub-wave.md) | K266 OOD Stub Wave | draft |
+| [sydneyrunkle-harness-jev](sources/x-article-sydneyrunkle-harness-jev-2026-09-19.md) | LangChain — Building a Harness with Jev; best Jev long-form 1.22M impr | draft |
+| [0xmovez-jev-engineering](sources/x-article-0xmovez-jev-engineering-2026-09-19.md) | Jev Engineering 10 steps; Jevons hook; $0.042/MTok | draft |
+| [parcadei-jev-skill-classify](sources/x-post-parcadei-jev-skill-classify-2026-09-19.md) | JEV TIP 001 skill classify; FILE CCC, HITL experiment only | draft |
+| [shreyanshpatni-agent-harness](sources/x-article-shreyanshpatni-agent-harness-2026-09-19.md) | Custom Agent Harness; generic, little Jev | draft |
+| [borjafat-internal-linking](sources/x-article-borjafat-internal-linking-2026-09-19.md) | 8 internal linking hacks; SEO wiki topic, not Jev | draft |
+| [buildwithpublic-0dte](sources/x-article-buildwithpublic-0dte-2026-09-19.md) | 0DTE SPY desk; backtest-defect catalogue; wiki FILE only | draft |
+| [langchain-typesafe](entities/tools/langchain-typesafe.md) | langchain-typesafe TypeSafeClassifier FILE stub; no clone | draft |
+
 ### K265 ingest (2026-09-19)
 OSINT K265: 5 inbox (fold two evals into one source; not a byte-copy). Phase-0 REFERENCE: jev-rules MIT; jev-codex-router MIT; SkillOpt MIT; tax-doc-classifier Apache-2.0; classifier-dev MIT; claude-reflect MIT. cua SIZE-SKIP. Orca AGPL skip. laya 404 / yibie SPDX-null / OpenCreator SPDX-null / Dream-RSI SPDX-null / hermes NOASSERTION no clone. jev-mcp **laptop MCP WIRE unchanged**. Eval Integrate OVERRIDE FILE. **0 product Integrate GO. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill auto-evolve. No LIVE Discord.**
 

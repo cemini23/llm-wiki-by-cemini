@@ -6,6 +6,8 @@ keywords: [CUA-Bench, cua, computer-use]
 related:
   - concepts/k264-ood-stub-wave.md
   - sources/newsletter-rss-latent-space-2026-09-19-jev-clones-2026-09-19.md
+  - concepts/k266-ood-stub-wave.md
+  - entities/tools/openjev.md
 maturity: draft
 created: 2026-09-19
 updated: 2026-09-19
@@ -15,6 +17,8 @@ wire_status: wont_wire
 
 ## Relations
 
+- @entities/tools/openjev.md
+- @concepts/k266-ood-stub-wave.md
 - @concepts/k264-ood-stub-wave.md
 - @sources/newsletter-rss-latent-space-2026-09-19-jev-clones-2026-09-19.md
 

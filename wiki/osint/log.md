@@ -1,3 +1,17 @@
+## [2026-09-19] ingest | K266 wave
+
+- **Inbox:** 6 files, all sha256-verified against the handoff table. Parent pre-pulled 6 X extracts via X MCP (`plain_text`) plus Reddit via Brave. Leftover `substack-rss-secpro-2026-09-18-252-…` skipped — already K265.
+- **Sources:** LangChain *Building a Harness with Jev* (@sydneyrunkle, 4,141 likes / 9,390 bm / 1,221,679 impr — **best Jev long-form**); @0xMovez *Jev Engineering 10 steps*; @parcadei JEV TIP 001 skill-classify; @shreyanshpatni_ *Custom Agent Harness*; @borjafat *8 internal linking hacks* (**SEO, not Jev**); @BuildwithPublic *0DTE Public API desk* (**not Jev, not a live desk**).
+- **Concepts:** 4 hubs — `k266-ccc-jev-x-wave`, `k266-seo-x-voice-wave`, `k266-finance-0dte-wave`, `k266-ood-stub-wave`. Entities: new `langchain-typesafe` FILE stub (**no clone**); bumps `jev-mcp` (**WIRE unchanged**), `openjev` FILE.
+- **Phase-0:** `adopt_k266_phase0.sh` — **no clones**. Runtime gate needs no new repo. Live path remains laptop `mcp-jev`. **Never `npx github:jkudish/jev-mcp`.**
+- **Routing:** Atto #1 email-triage analog FILE, redacted type only, not vault mail. GW #2 `AutoModeMiddleware` = claim-ledger analog, never auto-arm. CeminiDFS #3 paper-classify analog = review-CSV citation, no solver swap. CeminiParlays #4 dynamic menu = promo vs real-hedge labels, no pm scp. CCC harness brief. SEO voice only. Gambling brief = no route. **No xsp/pm scp. No LIVE Discord.**
+- **Briefs:** `briefs/2026-09-19_k266-*` + `### K266 add` on the four Jev briefs.
+- **SEO voice:** style pass drafted in `briefs/2026-09-19_k266-seo-voice.md` (exemplar rows, snippets, Article queue, log line). Sibling `../SEO:GEO B&M Business` write attempted.
+- **Claim hygiene:** 200x/400x = TypeSafe vendor claim; "78% vs 42%" = author claim, unsourced; Vercel fx 5–18x compares the classifier only. **Cite as claims, never as Cemini measurements.**
+- **Archive:** 6/6 `x-article-*` / `x-post-*` inbox files → egress-fi.
+- **Revenue verdict:** **no new Cemini product this wave.** Paid analogs already exist (email triage, Browserbase, LangChain). Our money path is **gates inside Atto / GW / DFS / Parlays / CCC**, not a Jev SaaS. OpenJev/clones stay FILE Watch.
+- **gate:** `ingest_session_gate.py` + `wiki_lint.py`.
+
 ## [2026-09-19] ingest | K265 wave
 
 - **Inbox:** 5 files (parent preingest 5 NEW). Two evals are different hashes — fold both on one source page. Extra copy rows: SkillOpt, tax-doc-classifier, claude-reflect, classifier-dev. Never trust docx SPDX.

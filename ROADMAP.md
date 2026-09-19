@@ -30,6 +30,17 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-19 — K266 ingest)
+
+- **K266 ingest** — 6 X inbox (sha256-verified): 5 Jev/harness/SEO long-forms + 1 short tip. 6 source pages + 4 hubs + 1 new entity (`langchain-typesafe` FILE, no clone). Bumps `jev-mcp` **WIRE unchanged**, `openjev` FILE. Archive 6/6 → egress-fi. **0 product Integrate GO. FILE only. Do not swap `/route`. No live desk. No xsp/pm scp. No LIVE Discord. Never `npx github:jkudish/jev-mcp`. Transkribus sole HTR.**
+- **Phase-0** — `adopt_k266_phase0.sh` **no clones**. No new repo needed for a runtime gate.
+- **Routing** — Atto #1 email-triage analog FILE, redacted type only, **not vault mail**. GW #2 `AutoModeMiddleware` = claim-ledger analog, **never auto-arm**. CeminiDFS #3 paper-classify analog = review-CSV citation, no solver swap. CeminiParlays #4 dynamic menu = promo vs real-hedge labels, no pm scp. CCC harness brief. SEO voice only. Gambling brief = no route. **Poker retired.**
+- **Claim hygiene** — 200x/400x = TypeSafe vendor claim; "78% vs 42%" = author claim, unsourced; Vercel fx 5–18x compares the classifier only.
+- **Revenue verdict** — **no new Cemini product this wave.** Paid analogs already exist (email triage, Browserbase, LangChain). Money path is **gates inside Atto / GW / DFS / Parlays / CCC**, not a Jev SaaS. OpenJev/clones stay FILE Watch.
+- **Briefs** — `briefs/2026-09-19_k266-*` + `### K266 add` on the four Jev briefs.
+- **SEO voice** — `briefs/2026-09-19_k266-seo-voice.md`; sibling `../SEO:GEO B&M Business` write attempted (parent copies if blocked).
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; Grok Bot paste leftover; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run). Optional later HITL: skill-name classify before prompt inject (not approved to build).
+
 ## Current state (2026-09-19 — K265 ingest)
 
 - **K265 ingest** — 5 inbox (fold two evals into one source; not a byte-copy). 4 source pages + 6 hubs + 6 new entities (jev-mcp WIRE unchanged). Archive 5/5 egress-fi. **0 product Integrate GO. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord.**

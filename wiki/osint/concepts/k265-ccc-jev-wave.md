@@ -14,6 +14,7 @@ related:
   - entities/tools/jev-codex-router.md
   - entities/tools/skillopt.md
   - entities/tools/claude-reflect.md
+  - concepts/k266-ccc-jev-x-wave.md
 maturity: draft
 created: 2026-09-19
 updated: 2026-09-19
@@ -23,6 +24,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/k266-ccc-jev-x-wave.md
 - @concepts/k264-ccc-harness-wave.md
 - @concepts/k265-eval-github-wave.md
 - @sources/eval-revenue-opportunity-url-2026-09-19.md

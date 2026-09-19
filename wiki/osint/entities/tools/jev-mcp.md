@@ -18,6 +18,11 @@ related:
   - sources/eval-revenue-opportunity-url-2026-09-19.md
   - sources/newsletter-rss-latent-space-2026-09-19-jev-clones-2026-09-19.md
   - entities/tools/jev-codex-router.md
+  - concepts/k266-ccc-jev-x-wave.md
+  - sources/x-article-sydneyrunkle-harness-jev-2026-09-19.md
+  - sources/x-article-0xmovez-jev-engineering-2026-09-19.md
+  - sources/x-post-parcadei-jev-skill-classify-2026-09-19.md
+  - entities/tools/langchain-typesafe.md
 maturity: draft
 created: 2026-09-17
 updated: 2026-09-19
@@ -43,6 +48,11 @@ wire_note: Laptop Cursor MCP via scripts/mcp_jev.sh + local dist/index.js. Key ~
 - @sources/eval-revenue-opportunity-url-2026-09-19.md
 - @sources/newsletter-rss-latent-space-2026-09-19-jev-clones-2026-09-19.md
 - @entities/tools/jev-codex-router.md
+- @concepts/k266-ccc-jev-x-wave.md
+- @sources/x-article-sydneyrunkle-harness-jev-2026-09-19.md
+- @sources/x-article-0xmovez-jev-engineering-2026-09-19.md
+- @sources/x-post-parcadei-jev-skill-classify-2026-09-19.md
+- @entities/tools/langchain-typesafe.md
 
 ## Raw Concept
 
@@ -64,3 +74,5 @@ K263 Phase-0 + K264 operator-OK laptop MCP WIRE on [jkudish/jev-mcp](https://git
 Laptop Cursor only. Do not swap `/route`. Do not put `TYPESAFE_API_KEY` in git.
 
 K265: live path unchanged. Jev clones FILE Watch. Do not swap `/route`.
+
+K266: live path unchanged — this is still the only Jev entry point on the laptop. The K266 X wave (LangChain `TypeSafeClassifier` / AutoMode, @0xMovez 10-step, @parcadei skill classify) is **FILE parent-material**, not a second path. Tools stay `jev_verify`, `jev_screen`, `jev_find`. **Never `npx github:jkudish/jev-mcp`.** Do not copy LangChain or Jev skills into `~/.cursor/skills`. **0 product Integrate GO.**
