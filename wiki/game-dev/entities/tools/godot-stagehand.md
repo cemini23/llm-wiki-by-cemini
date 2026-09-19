@@ -21,6 +21,8 @@ related:
   - sources/godot-ai-playtest-phase-0-audit-2026-06-13.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
   - sources/godot-castle-sim-tool-gap-research-2026-06-17.md
+wire_status: policy_wired
+wire_target: concepts/agent-harness-castle-project.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-17

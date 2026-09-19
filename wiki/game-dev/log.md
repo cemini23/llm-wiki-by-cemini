@@ -4,6 +4,19 @@ Append-only chronological log.
 
 ---
 
+## [2026-09-19] ingest | 4 arXiv inbox (1 NPC memory ingest + 3 rejects) + sweep backlog + Phase-1 W2 MCP
+
+- Inbox: 4 PDFs → @sources/inbox-arxiv-reject-batch-2026-09-19.md + @sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md; archived; inbox cleared
+- **Ingest:** 2609.18935 local LLM NPC incremental KV memory — shelf Tier 3+; updated guardrails + llm-npc-runtime-ai-shelf
+- **Reject:** 2609.18736 Clue deductive reasoning → CCC; 2609.19113 log(N)-Questions comms benchmark → CCC; 2609.19538 UAV LAWN networking (llm-agent false positive)
+- Config: tighten `llm-agent-game-paper` arxiv_query (ANDNOT UAV/UAS/drone/aerial/LAWN/unmanned)
+- Index: Twin + VibeWorlding CCC stubs (2026-08-17/18 cross-wiki)
+- Phase-1: W2 MCP policy table in @concepts/agent-harness-castle-project.md; hi-godot-ai `wire_status: policy_wired`
+- Brief: `briefs/research/local-llm-npc-incremental-memory-shelf.md` (Tier 3+ defer)
+- Sweeps: @sweeps/2026-08-16-daily.md … @sweeps/2026-09-18-daily.md committed (08-16…09-16 mostly empty; 09-17…18 inbox batch)
+
+---
+
 ## [2026-08-15] briefs | SGM MAPD + GameEngineBench backfill + index gaps
 
 - Routed brief `briefs/2026-07-17_k141-stigmergic-graph-memory-mapd-from-seo.md` was never wiki-ingested → @sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md + `briefs/research/stigmergic-graph-memory-mapd-shelf.md` (synced → castle-sim)

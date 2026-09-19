@@ -31,9 +31,14 @@ related:
   - entities/engines/godot-4.md
   - concepts/tycho-arc-agi-active-abstraction-stub.md
   - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
+  - sources/inbox-arxiv-reject-batch-2026-09-19.md
+  - concepts/twin-test-time-world-model-stub.md
+  - concepts/vibeworlding-3d-agent-stub.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-08-15
+updated: 2026-09-19
+wire_status: policy_wired
+wire_target: briefs/W2-harness-kickoff.md
 ---
 
 ## Relations
@@ -83,7 +88,20 @@ Fable withdrawn from Cursor subagents 2026-06-13 — Opus is default planner. [C
 
 `Donchitos/Claude-Code-Game-Studios` — planner / implementer / reviewer edges only (`@entities/tools/claude-code-game-studios.md`).
 
-GameDevBench (Godot task zips) vs GameEngineBench (UE5 paper rubric, no pin): @entities/tools/gamedevbench.md · @sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md. Tycho world-model eval stays CCC-primary (@concepts/tycho-arc-agi-active-abstraction-stub.md).
+GameDevBench (Godot task zips) vs GameEngineBench (UE5 paper rubric, no pin): @entities/tools/gamedevbench.md · @sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md. Tycho / Twin / VibeWorlding harness depth stays CCC-primary (@concepts/tycho-arc-agi-active-abstraction-stub.md · @concepts/twin-test-time-world-model-stub.md · @concepts/vibeworlding-3d-agent-stub.md).
+
+### W2 MCP policy (Phase-1 wired)
+
+| Tool | wire_status | Rule |
+|------|-------------|------|
+| godot-stagehand | policy_wired | L0 smoke only — story-004 pattern |
+| hi-godot-ai | policy_wired | Sandbox clone; read-only MCP first; no writes until operator OK |
+| sods2-godot-mcp | policy_wired | Alt if Node/debugger needed — pick one MCP stack |
+| hera-agent-godot | policy_wired | Godot 4.7+ pin gate; low-token CLI adjunct — not default executor |
+| ziva-godot-agent | deferred | Proprietary Asset Store — eval only |
+| SerpentAI / CCGS full | wont_wire | STEAL-FROM patterns in WORKFLOW.md — no install |
+
+Canon table: `briefs/W2-harness-kickoff.md` § MCP admission.
 
 ## Snippets
 

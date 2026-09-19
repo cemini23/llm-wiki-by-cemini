@@ -16,7 +16,9 @@ related:
   - sources/ziva-godot-agent-phase-0-audit-2026-06-21.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-06-21
+updated: 2026-09-19
+wire_status: policy_wired
+wire_target: concepts/agent-harness-castle-project.md
 ---
 
 ## Relations

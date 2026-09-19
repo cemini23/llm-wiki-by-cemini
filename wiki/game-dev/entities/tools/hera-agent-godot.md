@@ -15,6 +15,8 @@ related:
   - sources/hera-agent-godot-phase-0-audit-2026-06-26.md
   - sources/notnull92-hera-agent-godot-devto-2026-06-25.md
   - sources/godot-47-release-shelf-2026-06-25.md
+wire_status: policy_wired
+wire_target: concepts/agent-harness-castle-project.md
 maturity: validated
 created: 2026-06-26
 updated: 2026-06-26

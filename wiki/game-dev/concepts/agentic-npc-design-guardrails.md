@@ -10,9 +10,10 @@ related:
   - sources/exa-npc-pcg-ccgs-batch-2026-06-13.md
   - sources/morganpage-local-npc-dialogue-2026.md
   - sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md
+  - sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-07-04
+updated: 2026-09-19
 ---
 
 ## Relations
@@ -57,6 +58,10 @@ Writers set personality + lore boundaries; NPCs **improvise inside fences**, not
 
 **4. Curated memory** — remember:
 - Quest flags, reputation **tiers**, short-term context
+
+**4b. Incremental inference state** [CONFIRMED — arXiv 2609.18935]
+
+For **local** LLM NPCs, memory is not only text — KV prefix + recurrent state are maintained resources. Patch at **true sequence tail** when facts change; do not replay the character's full life before every line. Dialogue that contradicts authoritative game state (ownership, transfers, stockpile) must be blocked **before** it reaches deterministic rules (@sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md).
 
 Do **not** remember:
 - Exact phrasing, petty crimes, misclick experiments

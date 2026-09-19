@@ -54,6 +54,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [godot-castle-sim-tool-gap-shelf](concepts/godot-castle-sim-tool-gap-shelf.md) | validated | Post–Phase 7 Godot tools + workflow gaps |
 | [deferred-engine-candidates](concepts/deferred-engine-candidates.md) | draft | libGDX + Duality defer shelf |
 | [tycho-arc-agi-active-abstraction-stub](concepts/tycho-arc-agi-active-abstraction-stub.md) | draft | Tycho / ARC-AGI-3 world-models — CCC-primary stub |
+| [twin-test-time-world-model-stub](concepts/twin-test-time-world-model-stub.md) | draft | Twin validate-before-act — CCC-primary stub (K283) |
+| [vibeworlding-3d-agent-stub](concepts/vibeworlding-3d-agent-stub.md) | draft | VibeWorlding 3D agents — CCC-primary stub (K286) |
 
 ## Entities — Engines
 
@@ -275,3 +277,5 @@ Catalog of all wiki pages. Updated on each ingest.
 | [arxiv-2607.03525-gameenginebench-harness-2026-08-15](sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md) | read |
 | [36kr-ai-game-story-gameplay-guardrails-2026-06-30](sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md) | read |
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |
+| [inbox-arxiv-reject-batch-2026-09-19](sources/inbox-arxiv-reject-batch-2026-09-19.md) | read |
+| [arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19](sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md) | read |

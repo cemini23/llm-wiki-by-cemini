@@ -18,9 +18,10 @@ related:
   - sources/hero-rl-llm-npc-springer-2026-06-26.md
   - sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md
   - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
+  - sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-07-04
+updated: 2026-09-19
 ---
 
 ## Relations
@@ -54,6 +55,7 @@ updated: 2026-07-04
 | Krafton PUBG Ally | Co-playable squad teammate (gameplay agency, not chat-only) | UE + NVIDIA ACE | Industry ref [@sources/krafton-pubg-ally-nvidia-ace-2026-06-25.md] |
 | HeRoN (Springer 2026) | Mediated RL + LLM adaptive NPC | Research framework | Academic WATCH [@sources/hero-rl-llm-npc-springer-2026-06-26.md] |
 | 36Kr expert roundtable | Chatbot NPC caution; AI-native loops over bolt-on dialogue | Industry commentary | Guardrail shelf [@sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md] |
+| Long-Lived Characters (2026) | Incremental KV / true-tail memory for local Qwen hybrid NPCs | Research (no Godot port) | **STEAL-FROM** Tier 3+ [@sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md] |
 
 ### Indie / open-source implementations
 
