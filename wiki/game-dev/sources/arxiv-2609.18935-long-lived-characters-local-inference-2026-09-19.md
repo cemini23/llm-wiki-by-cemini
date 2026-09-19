@@ -64,6 +64,8 @@ Aligns with @concepts/agentic-npc-design-guardrails.md **curated memory** + **ha
 - Dev-time harness patterns → @ccc-wiki (validate-before-act, replay gates)
 - On-device SLM stack contrast → @sources/nvidia-ace-qwen3-on-device-npc-2025.md (AAA middleware vs hobby local Qwen)
 
+**Location:** `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2609.18935-long-lived-characters-local-inference-incrementa.pdf`
+
 ## Snippets
 
 ```

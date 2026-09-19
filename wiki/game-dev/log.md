@@ -14,6 +14,7 @@ Append-only chronological log.
 - Phase-1: W2 MCP policy table in @concepts/agent-harness-castle-project.md; hi-godot-ai `wire_status: policy_wired`
 - Brief: `briefs/research/local-llm-npc-incremental-memory-shelf.md` (Tier 3+ defer)
 - Sweeps: @sweeps/2026-08-16-daily.md … @sweeps/2026-09-18-daily.md committed (08-16…09-16 mostly empty; 09-17…18 inbox batch)
+- Egress: 4 inbox PDFs archived 2026-09-19 (retry after SSH reset); inbox cleared
 
 ---
 

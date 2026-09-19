@@ -35,7 +35,13 @@ Four PDFs from `2026-09-17-daily.md` … `2026-09-18-daily.md` (`llm-agent-game-
 
 **Action:** Archive 4 PDFs to egress; clear inbox. Tighten `llm-agent-game-paper` `arxiv_query`: add `ANDNOT` UAV / UAS / drone / aerial / LAWN / unmanned.
 
-**Location:** [NEEDS VERIFICATION 2026-09-26] egress archive failed 2026-09-19 (SSH reset to cemini-egress-fi) — PDFs remain in `research to be indexed/` until tunnel retry succeeds
+**Location:**
+
+- `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2609.18736-clueing-up-llms-with-tool-augmented-deductive-re.pdf`
+- `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2609.19113-playing-log-n-questions-over-wikipedia-abstracts.pdf`
+- `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/arxiv-2609.19538-agentic-ai-networking-for-heterogeneous-unmanned.pdf`
+
+(Ingest PDF 2609.18935 archived separately — @sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md)
 
 ## Snippets
 
