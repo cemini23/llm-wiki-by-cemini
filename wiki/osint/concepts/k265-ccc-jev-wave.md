@@ -15,14 +15,17 @@ related:
   - entities/tools/skillopt.md
   - entities/tools/claude-reflect.md
   - concepts/k266-ccc-jev-x-wave.md
+  - concepts/k267-ccc-jev-wave.md
 maturity: draft
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
+
+- @concepts/k267-ccc-jev-wave.md
 
 - @concepts/k266-ccc-jev-x-wave.md
 - @concepts/k264-ccc-harness-wave.md

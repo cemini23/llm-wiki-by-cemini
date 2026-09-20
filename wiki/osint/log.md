@@ -1,3 +1,25 @@
+## [2026-09-20] ingest | K267 wave
+
+- **Inbox:** 3 NEW files (parent preingest). Leftover SecPro skipped — already K265. Extra inbox `Jev Trading Research Paper.pdf` not this wave. Never trust docx SPDX. Two evals are different hashes — do not fold.
+- **Sources:** Multi-wiki eval SPDX overrides; repository eval SPDX overrides; WuBlock Asia TOP10 (BoJ +25 bp to 1.25%; HK tokenised bills; Jiangsu RWA illegal; MOEX BTC/ETH perps). NK device-theft row wiki FILE, no PoC.
+- **Concepts:** 6 k267-* hubs. Entities: openjev-razorback, winnow, foreman, typesafe-mcp, pi-jev, jev-desktop. Bumps: jev-mcp **WIRE unchanged**, openjev FILE sibling note, jev-browser Liao FILE, tax-doc-classifier FILE, transkribus sole HTR.
+- **Phase-0:** `adopt_k267_phase0.sh` — openjev-razorback Apache-2.0; winnow / foreman / typesafe-mcp / pi-jev / jev-desktop MIT. SKIP: SPDX-null / NOASSERTION / AGPL / GPL / SIZE-SKIP. Eval Integrate OVERRIDE FILE. **0 product Integrate GO.**
+- **Routing:** Atto #1 organizer; do-the-work lures FILE/HITL (matrix on atto hub). Transkribus sole HTR. No unattended Antenati. No auto-merge truth.ged. GW #2 openjev-razorback + winnow FILE; never auto-arm; jev-trader out. CeminiDFS #3 thin FILE. CeminiParlays #4 thin FILE; no pm scp. CCC typesafe-mcp / pi-jev FILE (do not swap `/route`). Cyber FILE no PoC. **No xsp/pm scp.**
+- **Briefs:** `briefs/2026-09-20_k267-*` + Jev briefs `### K267 add`. Sibling copies attempted.
+- **Archive:** 3/3 NEW inbox → egress-fi.
+- **gate:** `ingest_session_gate.py` + `wiki_lint.py`.
+
+## [2026-09-20] phase-0 | K267
+
+- **razorback16/openjev** — Apache-2.0 `[CONFIRMED]` gh api 2026-09-20; tiny GO REFERENCE FILE as `openjev-razorback`. Distinct from TheoLeeCJ MIT. FILE GW local extract. Never auto-arm.
+- **GhalebDweikat/winnow** — MIT `[CONFIRMED]`; tiny GO REFERENCE FILE. GW newsletter prefilter. Never auto-arm.
+- **thruwire/foreman** — MIT `[CONFIRMED]`; tiny GO REFERENCE FILE. Atto HITL FIND checklist. No auto-merge truth.ged.
+- **itsmostafa/typesafe-mcp** — MIT `[CONFIRMED]`; tiny GO REFERENCE FILE. Eval Integrate OVERRIDE. **Never replace live mcp-jev. Never `npx github:`.**
+- **y0usaf/pi-jev** — MIT `[CONFIRMED]`; tiny GO REFERENCE FILE CCC batched eval. Do not swap `/route`.
+- **yikangy873-gif/jev-desktop** — MIT `[CONFIRMED]`; tiny GO REFERENCE FILE HITL only. No unattended parish DBs.
+- **SKIP:** nimble SPDX-null; Heman10x NOASSERTION; laya-mlx FILE mention; Jev-cu SPDX-null; awesome lists; hermes-jev-skills; burnigtm fork; SemIf exists; BuilderIO SIZE+null; OpenStock AGPL; neo4jev size; blink null; Liao jev-browser (jkudish exists); reticle SIZE+NOASSERTION; NanoJev SIZE; skill-suggester / typesafe-ai/skills (no auto-evolve); jev-trader; prism; paperless GPL SIZE; ikermoel skip; jev-mcp exists.
+- **0 product Integrate GO.** Transkribus sole HTR. Do not swap `/route`. No LIVE Discord. No xsp/pm scp.
+
 ## [2026-09-19] ingest | K266 wave
 
 - **Inbox:** 6 files, all sha256-verified against the handoff table. Parent pre-pulled 6 X extracts via X MCP (`plain_text`) plus Reddit via Brave. Leftover `substack-rss-secpro-2026-09-18-252-…` skipped — already K265.

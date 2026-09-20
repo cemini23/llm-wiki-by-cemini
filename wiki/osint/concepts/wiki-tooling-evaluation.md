@@ -317,13 +317,20 @@ related:
   - concepts/k264-eval-github-wave.md
   - sources/eval-revenue-opportunity-url-2026-09-19.md
   - concepts/k265-eval-github-wave.md
+  - sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md
+  - sources/eval-repository-revenue-opportunity-2026-09-20.md
+  - concepts/k267-eval-github-wave.md
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-09-19
+updated: 2026-09-20
 ---
 
 ## Relations
+
+- @sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md
+- @sources/eval-repository-revenue-opportunity-2026-09-20.md
+- @concepts/k267-eval-github-wave.md
 - @sources/eval-multi-wiki-stack-revenue-2026-09-15.md — K261 eval
 - @concepts/k261-eval-github-wave.md
 - @entities/tools/agentic-inbox.md — K261 FILE REFERENCE, not Integrate

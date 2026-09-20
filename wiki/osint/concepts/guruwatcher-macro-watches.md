@@ -51,12 +51,17 @@ related:
   - sources/substack-rss-klement-2026-09-16-cb-experience-2026-09-16.md
   - concepts/k265-newsletter-macro-wave.md
   - sources/substack-rss-wublock-2026-09-19-hl-lend-2026-09-19.md
+  - concepts/k267-newsletter-macro-wave.md
+  - sources/substack-rss-wublock-2026-09-20-asia-top10-2026-09-20.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-09-19
+updated: 2026-09-20
 ---
 
 ## Relations
+
+- @concepts/k267-newsletter-macro-wave.md
+- @sources/substack-rss-wublock-2026-09-20-asia-top10-2026-09-20.md
 
 - @concepts/k264-newsletter-macro-wave.md
 - @concepts/k264-xsp-atm-wave.md — ATM tape historical FILE; never auto-arm; no xsp scp

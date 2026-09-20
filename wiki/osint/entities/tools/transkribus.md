@@ -30,12 +30,15 @@ related:
   - sources/arxiv-2609.20064-ppocrv6-historical-2026-09-18.md
   - concepts/k265-atto-wave.md
   - entities/tools/tax-doc-classifier.md
+  - concepts/k267-atto-wave.md
 maturity: draft
 created: 2026-07-09
-updated: 2026-09-19
+updated: 2026-09-20
 ---
 
 ## Relations
+
+- @concepts/k267-atto-wave.md
 
 - @sources/arxiv-2608.01646-spike-htr.md
 - @concepts/k265-atto-wave.md

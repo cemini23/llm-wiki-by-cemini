@@ -18,14 +18,17 @@ related:
   - entities/tools/classifier-dev.md
   - entities/tools/claude-reflect.md
   - concepts/wiki-tooling-evaluation.md
+  - concepts/k267-eval-github-wave.md
 maturity: draft
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
+
+- @concepts/k267-eval-github-wave.md
 
 - @concepts/k264-eval-github-wave.md
 - @sources/eval-revenue-opportunity-url-2026-09-19.md

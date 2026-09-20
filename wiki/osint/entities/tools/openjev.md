@@ -1,7 +1,7 @@
 ---
 title: openjev — local System-One logit readout (MIT)
 type: entity
-tags: [tool, k265, k263, ccc, atto, mit]
+tags: [tool, k267, k265, k263, ccc, atto, mit]
 keywords: [openjev, Jev, System-One, logit]
 related:
   - concepts/k263-ccc-harness-wave.md
@@ -20,9 +20,14 @@ related:
   - concepts/k266-finance-0dte-wave.md
   - concepts/k266-seo-x-voice-wave.md
   - sources/x-article-0xmovez-jev-engineering-2026-09-19.md
+  - concepts/k267-eval-github-wave.md
+  - concepts/k267-atto-wave.md
+  - concepts/k267-ccc-jev-wave.md
+  - sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md
+  - entities/tools/openjev-razorback.md
 maturity: draft
 created: 2026-09-17
-updated: 2026-09-19
+updated: 2026-09-20
 phase_0_verdict: GO REFERENCE
 harness_verb: FILE
 wire_status: wont_wire
@@ -30,6 +35,12 @@ wire_note: REFERENCE clone. Local classifier. Do not swap /route. PII on-device.
 ---
 
 ## Relations
+
+- @concepts/k267-eval-github-wave.md
+- @concepts/k267-atto-wave.md
+- @concepts/k267-ccc-jev-wave.md
+- @sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md
+- @entities/tools/openjev-razorback.md
 
 - @sources/x-article-0xmovez-jev-engineering-2026-09-19.md
 - @concepts/k266-seo-x-voice-wave.md
@@ -68,3 +79,5 @@ Local System-One logit readout. Atto: PII on-device. Do not swap `/route`.
 K265: local clones FILE Watch. Vault PII stays on-device. Live path remains jev-mcp TypeSafe.
 
 K266: unchanged. The r/LocalLLaMA OpenJev / LocalJev thread found in the K266 search surface is already covered here — no new clone, no new wire. Atto PII stays on-device or offline. Do not swap `/route`.
+
+K267: TheoLeeCJ/openjev remains canonical. razorback16/openjev is a sibling clone at `.local/adopts/openjev-razorback` (Apache-2.0). See @entities/tools/openjev-razorback.md. Vault PII stays on-device. Do not swap `/route`.

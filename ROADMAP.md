@@ -30,6 +30,16 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-20 — K267 ingest)
+
+- **K267 ingest** — 3 inbox (2 evals + WuBlock Asia TOP10; leftover SecPro skipped). 3 source pages + 6 hubs + 6 new entities (jev-mcp WIRE unchanged). Archive 3/3 egress-fi. **0 product Integrate GO. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. Never auto-merge truth.ged.**
+- **Phase-0** — `adopt_k267_phase0.sh`: openjev-razorback Apache-2.0; winnow / foreman / typesafe-mcp / pi-jev / jev-desktop MIT. SIZE-SKIP / AGPL / GPL / SPDX-null / NOASSERTION no clone. Eval Integrate OVERRIDE FILE.
+- **Atto #1** — organizer stays organizer. Do-the-work lures (Jev-cu / jev-desktop / laya-mlx / neo4jev / portal fetch) FILE/HITL only. Matrix on `k267-atto-wave` + Atto brief. Further-impl reported, not built.
+- **GW #2** — openjev-razorback + winnow FILE local classify / prefilter. Never auto-arm. Never watches.json. jev-trader out of scope. Further-impl reported, not built.
+- **DFS #3 / Parlays #4** — thin FILE. No solver swap. No pm scp. CCC typesafe-mcp / pi-jev FILE. Cyber FILE no PoC. **Poker retired.**
+- **Briefs** — `briefs/2026-09-20_k267-*` + Jev `### K267 add`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; leftover inbox `Jev Trading Research Paper.pdf`; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run); wiki-gap-detect due (user-gated, not run). Optional later HITL: Foreman FIND checklist / winnow prefilter trial (not approved to build).
+
 ## Current state (2026-09-19 — K266 ingest)
 
 - **K266 ingest** — 6 X inbox (sha256-verified): 5 Jev/harness/SEO long-forms + 1 short tip. 6 source pages + 4 hubs + 1 new entity (`langchain-typesafe` FILE, no clone). Bumps `jev-mcp` **WIRE unchanged**, `openjev` FILE. Archive 6/6 → egress-fi. **0 product Integrate GO. FILE only. Do not swap `/route`. No live desk. No xsp/pm scp. No LIVE Discord. Never `npx github:jkudish/jev-mcp`. Transkribus sole HTR.**

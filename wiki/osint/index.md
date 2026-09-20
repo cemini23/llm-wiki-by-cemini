@@ -7,6 +7,27 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K267 ingest (2026-09-20)
+OSINT K267: 3 inbox (2 evals + WuBlock Asia TOP10; leftover SecPro skipped = K265). Phase-0 REFERENCE: openjev-razorback Apache-2.0; winnow / foreman / typesafe-mcp / pi-jev / jev-desktop MIT. **0 product Integrate GO. FILE / HITL only. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill auto-evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. Never auto-merge truth.ged.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k267-eval-github-wave](concepts/k267-eval-github-wave.md) | K267 Eval GitHub Wave | draft |
+| [k267-atto-wave](concepts/k267-atto-wave.md) | K267 Atto Wave — organizer, do-the-work FILE/HITL | draft |
+| [k267-ccc-jev-wave](concepts/k267-ccc-jev-wave.md) | K267 CCC Jev Wave | draft |
+| [k267-cybersec-wave](concepts/k267-cybersec-wave.md) | K267 Cybersec Wave — FILE, no PoC | draft |
+| [k267-newsletter-macro-wave](concepts/k267-newsletter-macro-wave.md) | K267 Newsletter Macro Wave + GW FILE never auto-arm | draft |
+| [k267-ood-stub-wave](concepts/k267-ood-stub-wave.md) | K267 OOD Stub Wave | draft |
+| [openjev-razorback](entities/tools/openjev-razorback.md) | razorback16/openjev Apache-2.0 GO REFERENCE FILE | draft |
+| [winnow](entities/tools/winnow.md) | winnow MIT GO REFERENCE FILE GW prefilter | draft |
+| [foreman](entities/tools/foreman.md) | foreman MIT GO REFERENCE FILE Atto HITL FIND | draft |
+| [typesafe-mcp](entities/tools/typesafe-mcp.md) | typesafe-mcp MIT GO REFERENCE FILE; never replace jev-mcp | draft |
+| [pi-jev](entities/tools/pi-jev.md) | pi-jev MIT GO REFERENCE FILE CCC | draft |
+| [jev-desktop](entities/tools/jev-desktop.md) | jev-desktop MIT GO REFERENCE HITL only | draft |
+| [eval-multi-wiki-k267](sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md) | Multi-wiki eval SPDX overrides | draft |
+| [eval-repository-k267](sources/eval-repository-revenue-opportunity-2026-09-20.md) | Repository eval SPDX overrides | draft |
+| [wublock-asia-top10](sources/substack-rss-wublock-2026-09-20-asia-top10-2026-09-20.md) | WuBlock Asia TOP10 wiki-only | draft |
+
 ### K266 ingest (2026-09-19)
 OSINT K266: 6 X inbox (5 Jev/harness/SEO long-forms + 1 SEO article + 1 short tip; @BuildwithPublic is a broker advertorial). Reddit + X search hits are Watch stubs only, no source pages. **0 product Integrate GO. FILE only. Do not swap `/route`. No live desk. No xsp/pm scp. No LIVE Discord. Never `npx github:jkudish/jev-mcp`. Transkribus sole HTR.** No Phase-0 clones this wave.
 

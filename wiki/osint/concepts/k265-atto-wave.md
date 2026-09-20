@@ -12,14 +12,17 @@ related:
   - entities/tools/tax-doc-classifier.md
   - entities/tools/classifier-dev.md
   - entities/tools/transkribus.md
+  - concepts/k267-atto-wave.md
 maturity: draft
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
+
+- @concepts/k267-atto-wave.md
 
 - @concepts/k264-atto-wave.md
 - @concepts/k265-eval-github-wave.md

@@ -10,14 +10,17 @@ related:
   - sources/x-article-buildwithpublic-0dte-2026-09-19.md
   - concepts/k266-finance-0dte-wave.md
   - entities/tools/openjev.md
+  - concepts/k267-ood-stub-wave.md
 maturity: draft
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 harness_verb: FILE
 wire_status: wont_wire
 ---
 
 ## Relations
+
+- @concepts/k267-ood-stub-wave.md
 
 - @entities/tools/openjev.md
 - @concepts/k266-finance-0dte-wave.md

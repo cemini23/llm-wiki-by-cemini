@@ -35,12 +35,19 @@ related:
   - sources/substack-rss-capital-flows-2026-08-18-next-stage-macro.md
   - entities/tools/llm-as-a-verifier.md
   - sources/guruwatcher-production-readiness-audit-2026-09-03.md
+  - concepts/k267-newsletter-macro-wave.md
+  - entities/tools/winnow.md
+  - entities/tools/openjev-razorback.md
 maturity: draft
 created: 2026-07-28
-updated: 2026-09-04
+updated: 2026-09-20
 ---
 
 ## Relations
+
+- @concepts/k267-newsletter-macro-wave.md
+- @entities/tools/winnow.md
+- @entities/tools/openjev-razorback.md
 - @sources/guruwatcher-production-readiness-audit-2026-09-03.md — 3 Sep NO-GO; GW-05 discards published_at; GW-06 strips `<`; GW-07 binds the wrong symbol
 - @entities/tools/weathernext.md — K230
 - @entities/tools/flights-rpc.md — K229 flights Extract

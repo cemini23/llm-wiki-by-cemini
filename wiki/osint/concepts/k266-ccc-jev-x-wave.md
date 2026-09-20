@@ -14,14 +14,17 @@ related:
   - entities/tools/openjev.md
   - entities/tools/langchain-typesafe.md
   - concepts/k266-seo-x-voice-wave.md
+  - concepts/k267-ccc-jev-wave.md
 maturity: draft
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-20
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
+
+- @concepts/k267-ccc-jev-wave.md
 
 - @concepts/k266-seo-x-voice-wave.md
 - @concepts/k265-ccc-jev-wave.md
