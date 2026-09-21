@@ -13,9 +13,10 @@ related:
   - concepts/k267-eval-github-wave.md
   - entities/tools/openjev-razorback.md
   - entities/tools/winnow.md
+  - concepts/k268-newsletter-macro-wave.md
 maturity: draft
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-21
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -31,6 +32,7 @@ wire_status: policy_wired
 - @concepts/k267-eval-github-wave.md
 - @entities/tools/openjev-razorback.md
 - @entities/tools/winnow.md
+- @concepts/k268-newsletter-macro-wave.md
 
 ## Raw Concept
 

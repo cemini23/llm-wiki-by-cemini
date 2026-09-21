@@ -30,6 +30,18 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-21 — K268 ingest)
+
+- **K268 ingest** — 18 inbox (9 PDF + 9 newsletters; leftover SecPro skipped). 18 source pages + 8 hubs + 2 entities (`codemidas`, `recreationworld` FILE NO-CLONE). Archive 18/18 → egress-fi. **0 product Integrate GO. FILE only. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. 21177 = FRB astronomy NOT Atto HTR.**
+- **Phase-0** — `adopt_k268_phase0.sh` **no clones**. Paper repos unverified.
+- **Atto #1** — FRB trap noted; Jev Trading Paper image unread-stub FILE; organizer stays organizer.
+- **GW #2** — Capital Flows / WuBlock / Klement FILE; never auto-arm; never watches.json.
+- **DFS #3 / Parlays #4** — thin FILE; Outlier submit-screen + EH ep33 awareness; no pm scp; no solver swap.
+- **CCC** — CodeMidas / MIRAGE / failing-robot-ask FILE. jev-mcp WIRE unchanged.
+- **XSP** — GlitchSPX Talon Sep21 FILE; no xsp scp.
+- **Briefs** — `briefs/2026-09-21_k268-*` + `xsp-k268-glitchspx-talon-sep21.md` + Jev `### K268 add`. **No LIVE Discord.**
+- **Open:** Atto P0 kit; GW High regressions; cursor-route 0.1.14; leftover SecPro still skip; HL/Kalshi/equity/cross-venue backtests overdue (user-gated, not run); wiki-gap-detect due (user-gated, not run).
+
 ## Current state (2026-09-20 — K267 ingest)
 
 - **K267 ingest** — 3 inbox (2 evals + WuBlock Asia TOP10; leftover SecPro skipped). 3 source pages + 6 hubs + 6 new entities (jev-mcp WIRE unchanged). Archive 3/3 egress-fi. **0 product Integrate GO. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. Never auto-merge truth.ged.**

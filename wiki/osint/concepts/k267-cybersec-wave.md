@@ -8,9 +8,10 @@ related:
   - concepts/k267-eval-github-wave.md
   - sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md
   - sources/eval-repository-revenue-opportunity-2026-09-20.md
+  - concepts/k268-cybersec-wave.md
 maturity: draft
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-21
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -21,6 +22,7 @@ wire_status: policy_wired
 - @concepts/k267-eval-github-wave.md
 - @sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md
 - @sources/eval-repository-revenue-opportunity-2026-09-20.md
+- @concepts/k268-cybersec-wave.md
 
 ## Raw Concept
 

@@ -1,3 +1,14 @@
+## [2026-09-21] ingest | K268 wave
+
+- **Inbox:** 18 files (9 PDF + 9 newsletters). Leftover SecPro skipped — already K265. Never trust filename `htr` without reading the abstract.
+- **Sources:** Jev Trading Research Paper (image-only unread-stub); CRAFT FRB polarimetry 21177 (**NOT Atto HTR**); OU SV 21291; operator-splitting SV 21301; MIRAGE 21554; HMM equilibrium 21684; failing-robot-ask 21942; RecreationWorld 22000; CodeMidas 22068; Capital Flows; Event Horizon ep33; GlitchSPX Talon Sep21; Klement heating hammer; Moontower blindsided/end-behavior/328; Outlier parlay submit-screen; WuBlock weekly outlook.
+- **Concepts:** 8 k268-* hubs (vol-quant, harness-evolution, ood-stub, game-dev, newsletter-macro, gambling-pm, xsp-signal, cybersec thin). Entities: `codemidas` + `recreationworld` FILE NO-CLONE.
+- **Phase-0:** `adopt_k268_phase0.sh` — **no clones** (paper repos unverified). **0 product Integrate GO.**
+- **Routing:** Atto #1 FRB trap + Transkribus sole HTR; organizer stays organizer. GW #2 macro FILE never auto-arm. CeminiDFS #3 thin FILE. CeminiParlays #4 Outlier/EH FILE no pm scp. CCC CodeMidas/MIRAGE/robot-ask FILE (do not swap `/route`). Cyber thin FILE no PoC. XSP GlitchSPX Talon FILE no xsp scp. Game-dev RecreationWorld FILE.
+- **Briefs:** `briefs/2026-09-21_k268-*` + `briefs/xsp-k268-glitchspx-talon-sep21.md` + Jev briefs `### K268 add`.
+- **Archive:** 18/18 mapped inbox → egress-fi (SecPro retained in inbox).
+- **gate:** `ingest_session_gate.py` + `wiki_lint.py`.
+
 ## [2026-09-20] ingest | K267 wave
 
 - **Inbox:** 3 NEW files (parent preingest). Leftover SecPro skipped — already K265. Extra inbox `Jev Trading Research Paper.pdf` not this wave. Never trust docx SPDX. Two evals are different hashes — do not fold.

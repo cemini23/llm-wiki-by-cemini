@@ -13,9 +13,10 @@ related:
   - entities/tools/openjev.md
   - entities/tools/typesafe-mcp.md
   - entities/tools/pi-jev.md
+  - concepts/k268-harness-evolution-wave.md
 maturity: draft
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-21
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -31,6 +32,7 @@ wire_status: policy_wired
 - @entities/tools/openjev.md
 - @entities/tools/typesafe-mcp.md
 - @entities/tools/pi-jev.md
+- @concepts/k268-harness-evolution-wave.md
 
 ## Raw Concept
 

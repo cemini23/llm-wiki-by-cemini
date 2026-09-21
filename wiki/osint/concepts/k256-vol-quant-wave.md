@@ -7,9 +7,11 @@ related:
   - concepts/k258-vol-quant-wave.md
   - concepts/k255-vol-quant-wave.md
   - sources/arxiv-2609.05047-gatheral-conjecture-2026-09-07.md
+  - concepts/k268-vol-quant-wave.md
+  - concepts/k268-xsp-signal-wave.md
 maturity: draft
 created: 2026-09-07
-updated: 2026-09-09
+updated: 2026-09-21
 harness_verb: FILE
 ---
 
@@ -18,6 +20,8 @@ harness_verb: FILE
 - @concepts/k258-vol-quant-wave.md
 - @concepts/k255-vol-quant-wave.md
 - @sources/arxiv-2609.05047-gatheral-conjecture-2026-09-07.md
+- @concepts/k268-vol-quant-wave.md
+- @concepts/k268-xsp-signal-wave.md
 
 ## Raw Concept
 

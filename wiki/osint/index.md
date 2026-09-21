@@ -7,6 +7,40 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K268 ingest (2026-09-21)
+OSINT K268: 18 inbox (9 PDF + 9 newsletters; leftover SecPro skipped = K265). Phase-0 **no clones** (paper repos unverified). Entities: codemidas + recreationworld FILE. **0 product Integrate GO. FILE only. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill auto-evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. 21177 = FRB astronomy NOT Atto HTR.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k268-vol-quant-wave](concepts/k268-vol-quant-wave.md) | K268 Vol Quant Wave (Sep 2026) | draft |
+| [k268-harness-evolution-wave](concepts/k268-harness-evolution-wave.md) | K268 Harness Evolution Wave (Sep 2026) | draft |
+| [k268-ood-stub-wave](concepts/k268-ood-stub-wave.md) | K268 OOD Stub Wave (Sep 2026) | draft |
+| [k268-game-dev-wave](concepts/k268-game-dev-wave.md) | K268 Game Dev Wave (Sep 2026) | draft |
+| [k268-newsletter-macro-wave](concepts/k268-newsletter-macro-wave.md) | K268 Newsletter Macro Wave (Sep 2026) | draft |
+| [k268-gambling-pm-wave](concepts/k268-gambling-pm-wave.md) | K268 Gambling / PM Wave (Sep 2026) | draft |
+| [k268-xsp-signal-wave](concepts/k268-xsp-signal-wave.md) | K268 XSP Signal Wave (Sep 2026) | draft |
+| [k268-cybersec-wave](concepts/k268-cybersec-wave.md) | K268 Cybersec Wave (Sep 2026) | draft |
+| [codemidas](entities/tools/codemidas.md) | CodeMidas FILE NO-CLONE | draft |
+| [recreationworld](entities/tools/recreationworld.md) | RecreationWorld FILE NO-CLONE | draft |
+| [jev-trading-research-paper](sources/jev-trading-research-paper-2026-09-21.md) | Jev Trading Research Paper (image-only unread-stub) | draft |
+| [arxiv-2609.21177-craft-frb-polarimetry](sources/arxiv-2609.21177-craft-frb-polarimetry-2026-09-21.md) | CRAFT HTR2: Polarimetry of 64 non-repeating fast radio bursts from the | draft |
+| [arxiv-2609.21291-ou-stoch-vol-options](sources/arxiv-2609.21291-ou-stoch-vol-options-2026-09-21.md) | Efficient simulation schemes for pricing options under the Ornstein--U | draft |
+| [arxiv-2609.21301-operator-splitting-sv](sources/arxiv-2609.21301-operator-splitting-sv-2026-09-21.md) | Simulation of stochastic volatility models via operator splitting sche | draft |
+| [arxiv-2609.21554-mirage-creative-reasoning](sources/arxiv-2609.21554-mirage-creative-reasoning-2026-09-21.md) | MIRAGE: Multi-Perspective Creative Language Model Reasoning with Reinf | draft |
+| [arxiv-2609.21684-hmm-equilibrium-prices](sources/arxiv-2609.21684-hmm-equilibrium-prices-2026-09-21.md) | Equilibrium prices under hidden Markov fundamentals | draft |
+| [arxiv-2609.21942-failing-robot-ask](sources/arxiv-2609.21942-failing-robot-ask-2026-09-21.md) | When Should a Failing Robot Ask? Initiating Corrective Human-Robot Dia | draft |
+| [arxiv-2609.22000-recreationworld](sources/arxiv-2609.22000-recreationworld-2026-09-21.md) | RecreationWorld: Scalable and Verifiable Environments for Hybrid Compu | draft |
+| [arxiv-2609.22068-codemidas](sources/arxiv-2609.22068-codemidas-2026-09-21.md) | CodeMidas: Scaling Agentic Coding RL Environments from Code Itself | draft |
+| [substack-rss-capital-flows-2026-09-20-credit-fueled-growth](sources/substack-rss-capital-flows-2026-09-20-credit-fueled-growth-2026-09-21.md) | Capital Flows — Credit-Fueled Growth Is Moving the Cycle Forward | draft |
+| [substack-rss-event-horizon-2026-09-21-ep33-prediction-markets](sources/substack-rss-event-horizon-2026-09-21-ep33-prediction-markets-2026-09-21.md) | Event Horizon — Episode 33: Prediction Markets And Hedging With Herris | draft |
+| [substack-rss-glitchspx-2026-09-20-talon-weekly-sep21](sources/substack-rss-glitchspx-2026-09-20-talon-weekly-sep21-2026-09-21.md) | Glitch SPX — Talon Weekly — September 21 - September 25: Talon Weekly  | draft |
+| [substack-rss-klement-2026-09-21-heating-hammer](sources/substack-rss-klement-2026-09-21-heating-hammer-2026-09-21.md) | Klement on Investing — The heating hammer that killed Germany’s heatin | draft |
+| [substack-rss-moontower-2026-09-20-blindsided](sources/substack-rss-moontower-2026-09-20-blindsided-2026-09-21.md) | Moontower Meta — blindsided | draft |
+| [substack-rss-moontower-2026-09-20-end-behavior](sources/substack-rss-moontower-2026-09-20-end-behavior-2026-09-21.md) | Moontower Meta — “end behavior” | draft |
+| [substack-rss-moontower-2026-09-20-moontower-328](sources/substack-rss-moontower-2026-09-20-moontower-328-2026-09-21.md) | Moontower Meta — Moontower #328 | draft |
+| [substack-rss-outlier-weekly-2026-09-21-parlay-submit-screen](sources/substack-rss-outlier-weekly-2026-09-21-parlay-submit-screen-2026-09-21.md) | Outlier Weekly — The Parlay Is the Price on the Submit Screen. | draft |
+| [substack-rss-wublock-2026-09-21-weekly-outlook](sources/substack-rss-wublock-2026-09-21-weekly-outlook-2026-09-21.md) | Wu Blockchain — WuBlockchain Weekly Outlook | U.S.–China Meeting Puts  | draft |
+
 ### K267 ingest (2026-09-20)
 OSINT K267: 3 inbox (2 evals + WuBlock Asia TOP10; leftover SecPro skipped = K265). Phase-0 REFERENCE: openjev-razorback Apache-2.0; winnow / foreman / typesafe-mcp / pi-jev / jev-desktop MIT. **0 product Integrate GO. FILE / HITL only. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill auto-evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. Never auto-merge truth.ged.**
 

@@ -15,9 +15,10 @@ related:
   - entities/tools/langchain-typesafe.md
   - concepts/k266-seo-x-voice-wave.md
   - concepts/k267-ccc-jev-wave.md
+  - concepts/k268-game-dev-wave.md
 maturity: draft
 created: 2026-09-19
-updated: 2026-09-20
+updated: 2026-09-21
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -25,6 +26,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k267-ccc-jev-wave.md
+- @concepts/k268-game-dev-wave.md
 
 - @concepts/k266-seo-x-voice-wave.md
 - @concepts/k265-ccc-jev-wave.md
