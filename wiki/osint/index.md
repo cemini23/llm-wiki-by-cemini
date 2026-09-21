@@ -22,7 +22,9 @@ OSINT K268: 18 inbox (9 PDF + 9 newsletters; leftover SecPro skipped = K265). Ph
 | [k268-cybersec-wave](concepts/k268-cybersec-wave.md) | K268 Cybersec Wave (Sep 2026) | draft |
 | [codemidas](entities/tools/codemidas.md) | CodeMidas FILE NO-CLONE | draft |
 | [recreationworld](entities/tools/recreationworld.md) | RecreationWorld FILE NO-CLONE | draft |
-| [jev-trading-research-paper](sources/jev-trading-research-paper-2026-09-21.md) | Jev Trading Research Paper (image-only unread-stub) | draft |
+| [jev-trading-research-paper](sources/jev-trading-research-paper-2026-09-21.md) | Jev Trading Paper — System One HFT field report (OCR read) | draft |
+| [k268-jev-trading-wave](concepts/k268-jev-trading-wave.md) | K268 Jev Trading Wave | draft |
+| [jev-trader](entities/tools/jev-trader.md) | jev-trader FILE demo (no clone) | draft |
 | [arxiv-2609.21177-craft-frb-polarimetry](sources/arxiv-2609.21177-craft-frb-polarimetry-2026-09-21.md) | CRAFT HTR2: Polarimetry of 64 non-repeating fast radio bursts from the | draft |
 | [arxiv-2609.21291-ou-stoch-vol-options](sources/arxiv-2609.21291-ou-stoch-vol-options-2026-09-21.md) | Efficient simulation schemes for pricing options under the Ornstein--U | draft |
 | [arxiv-2609.21301-operator-splitting-sv](sources/arxiv-2609.21301-operator-splitting-sv-2026-09-21.md) | Simulation of stochastic volatility models via operator splitting sche | draft |

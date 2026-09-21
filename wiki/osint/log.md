@@ -1,3 +1,9 @@
+## [2026-09-21] ocr | Jev Trading Research Paper
+
+- **Route:** mid-lane `route-task` (Grok plan → OpenCode stalled → vision OCR completed in parent). PDF fetched from egress-fi; 8 pages rendered `.local/ocr/jev-pages/`.
+- **Output:** `.local/ocr/jev-trading-research-paper.txt`; source page `read_status: read`; new hub `k268-jev-trading-wave` + entity `jev-trader` FILE (jarrodwatts/jev-trader MIT, no clone).
+- **Posture:** TypeSafe System One HFT field report — FILE only. **0 Integrate GO. Never auto-arm. jev-mcp WIRE unchanged.**
+
 ## [2026-09-21] ingest | K268 wave
 
 - **Inbox:** 18 files (9 PDF + 9 newsletters). Leftover SecPro skipped — already K265. Never trust filename `htr` without reading the abstract.

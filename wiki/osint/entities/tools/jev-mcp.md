@@ -4,6 +4,9 @@ type: entity
 tags: [tool, k267, k265, k264, k263, mcp, mit]
 keywords: [jev-mcp, MCP, Jev, jev_verify, jev_screen, jev_find]
 related:
+  - entities/tools/jev-trader.md
+  - sources/jev-trading-research-paper-2026-09-21.md
+  - concepts/k268-jev-trading-wave.md
   - concepts/k264-atto-wave.md
   - concepts/k264-ccc-harness-wave.md
   - concepts/k264-eval-github-wave.md
@@ -41,6 +44,9 @@ wire_note: Laptop Cursor MCP via scripts/mcp_jev.sh + local dist/index.js. Key ~
 
 ## Relations
 
+- @entities/tools/jev-trader.md
+- @sources/jev-trading-research-paper-2026-09-21.md
+- @concepts/k268-jev-trading-wave.md
 - @concepts/k267-eval-github-wave.md
 - @concepts/k267-atto-wave.md
 - @concepts/k267-ccc-jev-wave.md
