@@ -1,3 +1,15 @@
+## [2026-09-22] ingest | K269 wave
+
+- **Inbox:** 18 sources written (2 evals + 8 arXiv + NGI PDF + 7 newsletters). **Skipped source pages:** Jev Trading Research Paper.pdf (K268); capital-flows; glitchspx; secpro. **Do not re-clone** REFERENCE adopts.
+- **Sources:** Multi-wiki URL eval + Repository eval (different hashes — do not fold); IV diffusion 22893; PROSE 23845; residualization 24194; InvestorNerd 24658; RRSI 24972; Harness-Zero 24974; onPanda 24983; VideoGen 24997; NGI Orbuch; LS Diogo System One; LS MiMo-V2.6; Sterling Sky GBP (empty RSS); EH free-bets; Klement chip ban; Moontower Kelly; WuBlock BTC historical.
+- **Concepts:** 7 k269-* hubs (eval-github, harness-evolution, jev-system-one, vol-quant, newsletter-macro, gambling-pm, ood-stub). Prior hubs backlinked.
+- **Entities:** jev-lexer, jev-test-filter, jev-search (MIT REFERENCE); open-jev-typed-decision-engine (Apache-2.0 REFERENCE); harness-zero (SIZE-SKIP NO-CLONE). **jev-mcp WIRE unchanged.**
+- **Phase-0:** REFERENCE only — no re-clone. SIZE-SKIP harness-zero ~21MB. SKIP null licenses (jevify / djev-spark / Nemotron_Jev). **0 product Integrate GO.**
+- **Routing:** Atto #1 organizer; open-jev-typed-decision-engine = redacted type only; Transkribus sole HTR; never auto-merge truth.ged. GW #2 macro FILE never auto-arm. CeminiDFS/Parlays FILE; no pm scp; Kelly education no sizing change. CCC RRSI/Harness-Zero/residualization FILE (do not swap `/route`; never auto-evolve skills). Cyber ai-ctf FILE no PoC. SEO Sterling brief only. **No xsp/pm scp. No LIVE Discord.**
+- **Briefs:** `briefs/2026-09-22_k269-*` (8) + Jev briefs `### K269 add`.
+- **Archive:** operator-deferred this session (do not run archive_raw_to_egress). Locations already point at egress-fi paths.
+- **gate:** `wiki_lint.py` (no commit).
+
 ## [2026-09-21] ocr | Jev Trading Research Paper
 
 - **Route:** mid-lane `route-task` (Grok plan → OpenCode stalled → vision OCR completed in parent). PDF fetched from egress-fi; 8 pages rendered `.local/ocr/jev-pages/`.

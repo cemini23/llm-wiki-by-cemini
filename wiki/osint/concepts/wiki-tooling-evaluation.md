@@ -5,6 +5,9 @@ type: concept
 tags: [wiki-tooling, memory, knowledge-base, librarian-layer, ip-sale-readiness, evaluation, decision-pending, karpathy-pattern]
 keywords: [llm-wiki-compiler, memex, knowledge-base-server, falkordb, agentmemory, emtwiki, karpathy-pattern, mcp-server, graphrag, three-layer-architecture]
 related:
+  - sources/eval-repository-revenue-2026-09-22.md
+  - sources/eval-multi-wiki-url-revenue-2026-09-22.md
+  - concepts/k269-eval-github-wave.md
   - sources/eval-project-evaluation-revenue-2026-08-11.md
   - sources/eval-url-revenue-opportunity-2026-08-11.md
   - sources/eval-project-revenue-url-2026-08-19.md
@@ -323,11 +326,14 @@ related:
 maturity: validated
 hub: true
 created: 2026-04-28
-updated: 2026-09-20
+updated: 2026-09-22
 ---
 
 ## Relations
 
+- @sources/eval-repository-revenue-2026-09-22.md
+- @sources/eval-multi-wiki-url-revenue-2026-09-22.md
+- @concepts/k269-eval-github-wave.md
 - @sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md
 - @sources/eval-repository-revenue-opportunity-2026-09-20.md
 - @concepts/k267-eval-github-wave.md

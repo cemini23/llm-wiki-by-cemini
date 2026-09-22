@@ -30,6 +30,15 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-22 — K269 ingest)
+
+- **K269 ingest** — 18 source pages + 7 hubs + 5 entities (REFERENCE jev-lexer/test-filter/search + open-jev-typed-decision-engine; harness-zero SIZE-SKIP). Skips: Jev paper / capital-flows / glitchspx / secpro source pages. **0 product Integrate GO. FILE/HITL only. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. jev-mcp WIRE unchanged.**
+- **Atto** — organizer stays organizer; open-jev-typed-decision-engine = **redacted type only**; not product HTR; not vault PII; never auto-merge truth.ged.
+- **GuruWatcher** — Klement chip ban + WuBlock BTC historical FILE; **never auto-arm**; never watches.json.
+- **CeminiDFS / CeminiParlays** — FILE; EH promo + Kelly education; **no pm scp**; no book submit; no sizing change.
+- **CCC** — RRSI / Harness-Zero / residualization / onPanda / System One FILE; **do not swap `/route`**; never auto-evolve `.cursor/skills`.
+- **Briefs** — `briefs/2026-09-22_k269-*` + Jev `### K269 add`.
+
 ## Current state (2026-09-21 — K268 ingest)
 
 - **K268 ingest** — 18 inbox (9 PDF + 9 newsletters; leftover SecPro skipped). 18 source pages + 8 hubs + 2 entities (`codemidas`, `recreationworld` FILE NO-CLONE). Archive 18/18 → egress-fi. **0 product Integrate GO. FILE only. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. 21177 = FRB astronomy NOT Atto HTR.**

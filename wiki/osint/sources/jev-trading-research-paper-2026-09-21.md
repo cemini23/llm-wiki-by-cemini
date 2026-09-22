@@ -4,18 +4,22 @@ type: source
 tags: [source, k268, jev, typesafe, hft, image-ocr]
 keywords: [k268, Jev, System One, RLCD, AgenKit, market making]
 related:
+  - sources/newsletter-rss-latent-space-2026-09-21-jev-diogo-2026-09-22.md
+  - concepts/k269-jev-system-one-wave.md
   - concepts/k268-harness-evolution-wave.md
   - concepts/k268-jev-trading-wave.md
   - entities/tools/jev-mcp.md
   - entities/tools/jev-trader.md
 maturity: draft
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-22
 read_status: read
 ---
 
 ## Relations
 
+- @sources/newsletter-rss-latent-space-2026-09-21-jev-diogo-2026-09-22.md
+- @concepts/k269-jev-system-one-wave.md
 - @concepts/k268-harness-evolution-wave.md
 - @concepts/k268-jev-trading-wave.md
 - @entities/tools/jev-mcp.md

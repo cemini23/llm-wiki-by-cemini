@@ -4,6 +4,7 @@ type: concept
 tags: [eval, github, k267]
 keywords: [SPDX, openjev-razorback, winnow, typesafe-mcp, foreman]
 related:
+  - concepts/k269-eval-github-wave.md
   - concepts/k265-eval-github-wave.md
   - sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md
   - sources/eval-repository-revenue-opportunity-2026-09-20.md
@@ -25,13 +26,14 @@ related:
   - concepts/wiki-tooling-evaluation.md
 maturity: draft
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-22
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k269-eval-github-wave.md
 - @concepts/k265-eval-github-wave.md
 - @sources/eval-multi-wiki-revenue-opportunity-2026-09-20.md
 - @sources/eval-repository-revenue-opportunity-2026-09-20.md
@@ -59,3 +61,5 @@ K267 cluster hub. Dual-ID **OSINT K267**.
 ## Narrative
 
 Two evals, two hashes — do not fold. Never trust docx SPDX. gh api 2026-09-20: openjev-razorback Apache-2.0 GO REFERENCE. winnow MIT GO REFERENCE FILE GW prefilter — never auto-arm. typesafe-mcp MIT GO REFERENCE FILE — **never replace live mcp-jev.** pi-jev MIT GO REFERENCE FILE CCC. foreman MIT GO REFERENCE FILE Atto HITL FIND checklist. jev-desktop MIT GO REFERENCE HITL only. SPDX-null / NOASSERTION no clone. SIZE-SKIP: agent-native, NanoJev, reticle, paperless-ngx. AGPL OpenStock extract-only. Eval Integrate OVERRIDE FILE (laya-mlx, burnigtm/jev-mcp, typesafe-mcp, reticle, NanoJev, typesafe-ai/skills). **0 product Integrate GO.**
+
+Successor: @concepts/k269-eval-github-wave.md (K269 two-eval wave; REFERENCE jev-lexer/test-filter/search + open-jev-typed-decision-engine; 0 Integrate GO).

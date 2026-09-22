@@ -4,23 +4,27 @@ type: concept
 tags: [jev, trading, k268, typesafe, harness]
 keywords: [System One, RLCD, AgenKit, HFT, market making]
 related:
+  - concepts/k269-jev-system-one-wave.md
   - concepts/k268-harness-evolution-wave.md
   - concepts/k267-ccc-jev-wave.md
   - sources/jev-trading-research-paper-2026-09-21.md
+  - sources/newsletter-rss-latent-space-2026-09-21-jev-diogo-2026-09-22.md
   - entities/tools/jev-mcp.md
   - entities/tools/jev-trader.md
 maturity: draft
 created: 2026-09-21
-updated: 2026-09-21
+updated: 2026-09-22
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k269-jev-system-one-wave.md
 - @concepts/k268-harness-evolution-wave.md
 - @concepts/k267-ccc-jev-wave.md
 - @sources/jev-trading-research-paper-2026-09-21.md
+- @sources/newsletter-rss-latent-space-2026-09-21-jev-diogo-2026-09-22.md
 - @entities/tools/jev-mcp.md
 - @entities/tools/jev-trader.md
 
@@ -39,3 +43,5 @@ Vendor field report on **deterministic-probabilistic split** for block-cadence m
 - **Atto:** unrelated; Transkribus sole HTR.
 
 **0 product Integrate GO.** Live laptop path remains **jev-mcp**. Never `npx github:`.
+
+Successor: @concepts/k269-jev-system-one-wave.md (Latent Space Diogo System One for prod; FILE; jev-mcp WIRE unchanged).

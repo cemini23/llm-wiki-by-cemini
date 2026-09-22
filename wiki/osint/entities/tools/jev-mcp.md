@@ -1,9 +1,18 @@
 ---
 title: jev-mcp — Jev MCP wrapper (MIT)
 type: entity
-tags: [tool, k267, k265, k264, k263, mcp, mit]
+tags: [tool, k269, k267, k265, k264, k263, mcp, mit]
 keywords: [jev-mcp, MCP, Jev, jev_verify, jev_screen, jev_find]
 related:
+  - entities/tools/open-jev-typed-decision-engine.md
+  - entities/tools/jev-search.md
+  - entities/tools/jev-test-filter.md
+  - entities/tools/jev-lexer.md
+  - sources/newsletter-rss-latent-space-2026-09-21-jev-diogo-2026-09-22.md
+  - sources/eval-repository-revenue-2026-09-22.md
+  - sources/eval-multi-wiki-url-revenue-2026-09-22.md
+  - concepts/k269-jev-system-one-wave.md
+  - concepts/k269-eval-github-wave.md
   - entities/tools/jev-trader.md
   - sources/jev-trading-research-paper-2026-09-21.md
   - concepts/k268-jev-trading-wave.md
@@ -35,7 +44,7 @@ related:
   - entities/tools/pi-jev.md
 maturity: draft
 created: 2026-09-17
-updated: 2026-09-20
+updated: 2026-09-22
 phase_0_verdict: GO REFERENCE
 harness_verb: WIRE
 wire_status: runtime_wired
@@ -44,6 +53,15 @@ wire_note: Laptop Cursor MCP via scripts/mcp_jev.sh + local dist/index.js. Key ~
 
 ## Relations
 
+- @entities/tools/open-jev-typed-decision-engine.md
+- @entities/tools/jev-search.md
+- @entities/tools/jev-test-filter.md
+- @entities/tools/jev-lexer.md
+- @sources/newsletter-rss-latent-space-2026-09-21-jev-diogo-2026-09-22.md
+- @sources/eval-repository-revenue-2026-09-22.md
+- @sources/eval-multi-wiki-url-revenue-2026-09-22.md
+- @concepts/k269-jev-system-one-wave.md
+- @concepts/k269-eval-github-wave.md
 - @entities/tools/jev-trader.md
 - @sources/jev-trading-research-paper-2026-09-21.md
 - @concepts/k268-jev-trading-wave.md

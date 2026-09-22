@@ -7,6 +7,42 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K269 ingest (2026-09-22)
+OSINT K269: 18 new source pages (2 evals + 8 arXiv/PDF + 1 NGI essay + 7 newsletters). Skips (no source pages): Jev Trading Research Paper.pdf (already K268); capital-flows; glitchspx; secpro. Phase-0 **REFERENCE** (no re-clone): jev-lexer, jev-test-filter, jev-search MIT; open-jev-typed-decision-engine Apache-2.0. **SIZE-SKIP** harness-zero ~21MB (+ FluidUse/nanocodex mentioned). **0 product Integrate GO. FILE/HITL only. Transkribus sole HTR. Do not swap `/route`. No skill auto-evolve. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. jev-mcp WIRE unchanged.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k269-eval-github-wave](concepts/k269-eval-github-wave.md) | K269 Eval GitHub Wave | draft |
+| [k269-harness-evolution-wave](concepts/k269-harness-evolution-wave.md) | K269 Harness Evolution Wave | draft |
+| [k269-jev-system-one-wave](concepts/k269-jev-system-one-wave.md) | K269 Jev System One Wave | draft |
+| [k269-vol-quant-wave](concepts/k269-vol-quant-wave.md) | K269 Vol Quant Wave | draft |
+| [k269-newsletter-macro-wave](concepts/k269-newsletter-macro-wave.md) | K269 Newsletter Macro Wave | draft |
+| [k269-gambling-pm-wave](concepts/k269-gambling-pm-wave.md) | K269 Gambling / PM Wave | draft |
+| [k269-ood-stub-wave](concepts/k269-ood-stub-wave.md) | K269 OOD Stub Wave | draft |
+| [jev-lexer](entities/tools/jev-lexer.md) | jev-lexer MIT REFERENCE FILE | draft |
+| [jev-test-filter](entities/tools/jev-test-filter.md) | jev-test-filter MIT REFERENCE FILE | draft |
+| [jev-search](entities/tools/jev-search.md) | jev-search MIT REFERENCE FILE | draft |
+| [open-jev-typed-decision-engine](entities/tools/open-jev-typed-decision-engine.md) | open-jev-typed-decision-engine Apache-2.0 REFERENCE FILE | draft |
+| [harness-zero](entities/tools/harness-zero.md) | harness-zero Apache-2.0 SIZE-SKIP NO-CLONE | draft |
+| [eval-multi-wiki-url-revenue-k269](sources/eval-multi-wiki-url-revenue-2026-09-22.md) | Multi-Wiki URL Revenue Evaluation | draft |
+| [eval-repository-revenue-k269](sources/eval-repository-revenue-2026-09-22.md) | Repository Revenue Opportunity Analysis | draft |
+| [arxiv-2609.22893-universal-iv-diffusion](sources/arxiv-2609.22893-universal-iv-diffusion-2026-09-22.md) | Universal IV diffusion next-day IVS+returns | draft |
+| [arxiv-2609.23845-prose-optimal-stopping](sources/arxiv-2609.23845-prose-optimal-stopping-2026-09-22.md) | PROSE perishable evidence peer selection | draft |
+| [arxiv-2609.24194-residualization-audit](sources/arxiv-2609.24194-residualization-audit-2026-09-22.md) | Residualization audit format effects | draft |
+| [arxiv-2609.24658-investornerd](sources/arxiv-2609.24658-investornerd-2026-09-22.md) | InvestorNerd education platform | draft |
+| [arxiv-2609.24972-rrsi-harness](sources/arxiv-2609.24972-rrsi-harness-2026-09-22.md) | RRSI harness self-improvement | draft |
+| [arxiv-2609.24974-harness-zero](sources/arxiv-2609.24974-harness-zero-2026-09-22.md) | Harness-Zero distillation | draft |
+| [arxiv-2609.24983-onpanda](sources/arxiv-2609.24983-onpanda-2026-09-22.md) | onPanda token annotation | draft |
+| [arxiv-2609.24997-videogen-agent](sources/arxiv-2609.24997-videogen-agent-2026-09-22.md) | VideoGen-Agent (OOD image-gen) | draft |
+| [natural-general-intelligence](sources/natural-general-intelligence-2026-09-22.md) | NGI nature-model essay (not Atto) | draft |
+| [ls-jev-diogo-system-one](sources/newsletter-rss-latent-space-2026-09-21-jev-diogo-2026-09-22.md) | LS Jev System One for prod (Diogo) | draft |
+| [ls-mimo-v26](sources/newsletter-rss-latent-space-2026-09-22-mimo-v26-2026-09-22.md) | Xiaomi MiMo-V2.6-Pro teaser | draft |
+| [sterling-sky-gbp-services](sources/newsletter-rss-sterling-sky-2026-09-20-gbp-services-2026-09-22.md) | Sterling Sky GBP Services (RSS empty) | draft |
+| [eh-free-bets](sources/substack-rss-event-horizon-2026-09-22-free-bets-2026-09-22.md) | EH free-bets promo hygiene | draft |
+| [klement-chip-ban](sources/substack-rss-klement-2026-09-22-chip-ban-2026-09-22.md) | Klement US–China chip ban third parties | draft |
+| [moontower-kelly-cheatsheet](sources/substack-rss-moontower-2026-09-22-kelly-cheatsheet-2026-09-22.md) | Moontower Kelly cheatsheet | draft |
+| [wublock-btc-bottomed](sources/substack-rss-wublock-2026-09-22-btc-bottomed-2026-09-22.md) | WuBlock NDV BTC ~69700 historical | draft |
+
 ### K268 ingest (2026-09-21)
 OSINT K268: 18 inbox (9 PDF + 9 newsletters; leftover SecPro skipped = K265). Phase-0 **no clones** (paper repos unverified). Entities: codemidas + recreationworld FILE. **0 product Integrate GO. FILE only. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill auto-evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. 21177 = FRB astronomy NOT Atto HTR.**
 
