@@ -9,6 +9,7 @@ related:
   - sources/jev-trading-research-paper-2026-09-21.md
   - entities/tools/jev-mcp.md
   - concepts/k269-eval-github-wave.md
+  - concepts/jev-workflow-gates.md
 maturity: draft
 created: 2026-09-22
 updated: 2026-09-22
@@ -23,6 +24,7 @@ wire_status: policy_wired
 - @sources/jev-trading-research-paper-2026-09-21.md
 - @entities/tools/jev-mcp.md
 - @concepts/k269-eval-github-wave.md
+- @concepts/jev-workflow-gates.md
 
 ## Raw Concept
 

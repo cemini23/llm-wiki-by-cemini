@@ -23,6 +23,7 @@ OSINT K269: 18 new source pages (2 evals + 8 arXiv/PDF + 1 NGI essay + 7 newslet
 | [jev-test-filter](entities/tools/jev-test-filter.md) | jev-test-filter MIT REFERENCE FILE | draft |
 | [jev-search](entities/tools/jev-search.md) | jev-search MIT REFERENCE FILE | draft |
 | [open-jev-typed-decision-engine](entities/tools/open-jev-typed-decision-engine.md) | open-jev-typed-decision-engine Apache-2.0 REFERENCE FILE | draft |
+| [jev-workflow-gates](concepts/jev-workflow-gates.md) | Jev workflow gates (live mcp-jev) | draft |
 | [harness-zero](entities/tools/harness-zero.md) | harness-zero Apache-2.0 SIZE-SKIP NO-CLONE | draft |
 | [eval-multi-wiki-url-revenue-k269](sources/eval-multi-wiki-url-revenue-2026-09-22.md) | Multi-Wiki URL Revenue Evaluation | draft |
 | [eval-repository-revenue-k269](sources/eval-repository-revenue-2026-09-22.md) | Repository Revenue Opportunity Analysis | draft |

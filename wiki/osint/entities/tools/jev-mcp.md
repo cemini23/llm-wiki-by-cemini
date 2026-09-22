@@ -42,6 +42,7 @@ related:
   - sources/eval-repository-revenue-opportunity-2026-09-20.md
   - entities/tools/typesafe-mcp.md
   - entities/tools/pi-jev.md
+  - concepts/jev-workflow-gates.md
 maturity: draft
 created: 2026-09-17
 updated: 2026-09-22
@@ -61,6 +62,7 @@ wire_note: Laptop Cursor MCP via scripts/mcp_jev.sh + local dist/index.js. Key ~
 - @sources/eval-repository-revenue-2026-09-22.md
 - @sources/eval-multi-wiki-url-revenue-2026-09-22.md
 - @concepts/k269-jev-system-one-wave.md
+- @concepts/jev-workflow-gates.md
 - @concepts/k269-eval-github-wave.md
 - @entities/tools/jev-trader.md
 - @sources/jev-trading-research-paper-2026-09-21.md

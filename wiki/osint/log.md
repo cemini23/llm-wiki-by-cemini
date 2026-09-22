@@ -1,3 +1,10 @@
+## [2026-09-22] wire | Jev workflow gates
+
+- **Trial:** Redacted classify on live mcp-jev (jev-latest) — `jev_find` / `jev_verify` / `jev_screen`; catalog verify 0.53 stays HITL; screen blocked synthetic override targeting `watches.json`.
+- **Rule:** `~/.cursor/rules/jev-workflow.mdc` (federation user-global; canon CCC). Confidence under 0.8 means a human decides. Never arm. Never vault PII. OSINT project copy removed so the rule does not load twice.
+- **No harness-zero clone** (SIZE-SKIP unchanged).
+- **No weight download** for open-jev-typed-decision-engine (`wont_wire` stays).
+
 ## [2026-09-22] ingest | K269 wave
 
 - **Inbox:** 18 sources written (2 evals + 8 arXiv + NGI PDF + 7 newsletters). **Skipped source pages:** Jev Trading Research Paper.pdf (K268); capital-flows; glitchspx; secpro. **Do not re-clone** REFERENCE adopts.
@@ -7,7 +14,7 @@
 - **Phase-0:** REFERENCE only — no re-clone. SIZE-SKIP harness-zero ~21MB. SKIP null licenses (jevify / djev-spark / Nemotron_Jev). **0 product Integrate GO.**
 - **Routing:** Atto #1 organizer; open-jev-typed-decision-engine = redacted type only; Transkribus sole HTR; never auto-merge truth.ged. GW #2 macro FILE never auto-arm. CeminiDFS/Parlays FILE; no pm scp; Kelly education no sizing change. CCC RRSI/Harness-Zero/residualization FILE (do not swap `/route`; never auto-evolve skills). Cyber ai-ctf FILE no PoC. SEO Sterling brief only. **No xsp/pm scp. No LIVE Discord.**
 - **Briefs:** `briefs/2026-09-22_k269-*` (8) + Jev briefs `### K269 add`.
-- **Archive:** operator-deferred this session (do not run archive_raw_to_egress). Locations already point at egress-fi paths.
+- **Archive:** 18/18 new inbox files → egress-fi. Duplicates and the K268 Jev PDF stayed local.
 - **gate:** `wiki_lint.py` (no commit).
 
 ## [2026-09-21] ocr | Jev Trading Research Paper

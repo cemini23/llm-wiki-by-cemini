@@ -8,6 +8,7 @@ related:
   - concepts/k269-eval-github-wave.md
   - sources/eval-multi-wiki-url-revenue-2026-09-22.md
   - sources/eval-repository-revenue-2026-09-22.md
+  - concepts/jev-workflow-gates.md
 maturity: draft
 created: 2026-09-22
 updated: 2026-09-22
@@ -23,6 +24,7 @@ wire_note: Apache-2.0 REFERENCE at .local/adopts/open-jev-typed-decision-engine.
 - @concepts/k269-eval-github-wave.md
 - @sources/eval-multi-wiki-url-revenue-2026-09-22.md
 - @sources/eval-repository-revenue-2026-09-22.md
+- @concepts/jev-workflow-gates.md
 
 ## Raw Concept
 
@@ -36,3 +38,5 @@ K269 Phase-0 — **Do not re-clone.** REFERENCE `.local/adopts/open-jev-typed-de
 | **License** | Apache-2.0 `[CONFIRMED]` |
 | **Local** | `.local/adopts/open-jev-typed-decision-engine` |
 | **Verdict** | **FILE**. Atto **redacted type only**. **Not product HTR** (Transkribus sole). **Not vault PII** to cloud. Never auto-merge truth.ged. **0 Integrate GO.** |
+
+2026-09-22 trial used live **jev-mcp** (`jev_find` / `jev_verify` / `jev_screen`), not this local engine. Weights were **not** downloaded. `wire_status` stays **wont_wire**. See @concepts/jev-workflow-gates.md.
