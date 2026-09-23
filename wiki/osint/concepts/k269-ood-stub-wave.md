@@ -10,9 +10,10 @@ related:
   - sources/natural-general-intelligence-2026-09-22.md
   - sources/newsletter-rss-latent-space-2026-09-22-mimo-v26-2026-09-22.md
   - sources/newsletter-rss-sterling-sky-2026-09-20-gbp-services-2026-09-22.md
+  - concepts/k270-ood-stub-wave.md
 maturity: draft
 created: 2026-09-22
-updated: 2026-09-22
+updated: 2026-09-23
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -25,6 +26,7 @@ wire_status: policy_wired
 - @sources/natural-general-intelligence-2026-09-22.md
 - @sources/newsletter-rss-latent-space-2026-09-22-mimo-v26-2026-09-22.md
 - @sources/newsletter-rss-sterling-sky-2026-09-20-gbp-services-2026-09-22.md
+- @concepts/k270-ood-stub-wave.md
 
 ## Raw Concept
 

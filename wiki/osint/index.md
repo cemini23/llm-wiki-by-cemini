@@ -7,6 +7,39 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K270 ingest (2026-09-23)
+OSINT K270: 19 new source pages (8 arXiv/PDF + 10 newsletter/substack + 1 Sterling Sky GBP batch page covering 14 posts). Skips (no source pages): Jev Trading Research Paper.pdf (already K268); capital-flows 2026-09-20 credit-fueled; glitchspx talon; secpro 252. Phase-0 **REFERENCE clone**: cliffcompaction MIT 1005 KB. **NO-CLONE**: modelun SPDX null ~21MB; agensh GitHub 404. **0 product Integrate GO. FILE only. Do not swap `/route`. No skill auto-evolve. No weight download. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. jev-mcp WIRE unchanged. Matryoshka = attribution method only.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k270-harness-evolution-wave](concepts/k270-harness-evolution-wave.md) | K270 Harness Evolution Wave | draft |
+| [k270-vol-quant-wave](concepts/k270-vol-quant-wave.md) | K270 Vol Quant Wave | draft |
+| [k270-newsletter-macro-wave](concepts/k270-newsletter-macro-wave.md) | K270 Newsletter Macro Wave | draft |
+| [k270-gambling-pm-wave](concepts/k270-gambling-pm-wave.md) | K270 Gambling / PM Wave | draft |
+| [k270-ood-stub-wave](concepts/k270-ood-stub-wave.md) | K270 OOD Stub Wave | draft |
+| [cliffcompaction](entities/tools/cliffcompaction.md) | cliffcompaction MIT REFERENCE FILE | draft |
+| [modelun](entities/tools/modelun.md) | modelun SPDX null NO-CLONE | draft |
+| [agensh](entities/tools/agensh.md) | agensh GitHub 404 NO-CLONE | draft |
+| [arxiv-2609.25447-conduct-under-pressure](sources/arxiv-2609.25447-conduct-under-pressure-2026-09-23.md) | 60 models under user pressure | draft |
+| [arxiv-2609.25518-matryoshka-attribution](sources/arxiv-2609.25518-matryoshka-attribution-2026-09-23.md) | Matryoshka Attribution (method only) | draft |
+| [arxiv-2609.25686-task-state-influence](sources/arxiv-2609.25686-task-state-influence-2026-09-23.md) | Shown vs told vs enforced task state | draft |
+| [arxiv-2609.26499-local-coding-agent-manipulation](sources/arxiv-2609.26499-local-coding-agent-manipulation-2026-09-23.md) | Local coding agent drives UR3e | draft |
+| [arxiv-2609.26606-option-rebate-design](sources/arxiv-2609.26606-option-rebate-design-2026-09-23.md) | Option market making + rebate design | draft |
+| [arxiv-2609.26760-grow-the-harness](sources/arxiv-2609.26760-grow-the-harness-2026-09-23.md) | Grow the harness, not the context | draft |
+| [arxiv-2609.26779-cliffcompaction](sources/arxiv-2609.26779-cliffcompaction-2026-09-23.md) | CliffCompaction cost-efficient compaction | draft |
+| [arxiv-2609.26781-agensh](sources/arxiv-2609.26781-agensh-2026-09-23.md) | Agensh self-organized 1,024 agents | draft |
+| [ls-john-platt](sources/newsletter-rss-latent-space-2026-09-22-john-platt.md) | LS John Platt on AI for Science (Google ERA) | draft |
+| [ls-opus-55](sources/newsletter-rss-latent-space-2026-09-23-opus-55.md) | LS AINews Claude Opus 5.5 teaser (TENTATIVE) | draft |
+| [ls-bio-security](sources/newsletter-rss-latent-space-2026-09-23-bio-security.md) | LS biosecurity interview (Eric Nguyen) | draft |
+| [pe-windows-ai](sources/newsletter-rss-pragmatic-engineer-2026-09-22-windows-ai.md) | Pragmatic Engineer Windows + AI | draft |
+| [pe-appleton](sources/newsletter-rss-pragmatic-engineer-2026-09-23-appleton.md) | Design engineering with Maggie Appleton | draft |
+| [sparktoro-algorithms](sources/newsletter-rss-sparktoro-2026-09-23-algorithms.md) | Algorithms are trained by users | draft |
+| [cf-kospi](sources/substack-rss-capital-flows-2026-09-22-kospi.md) | Capital Flows KOSPI policy + AI trade | draft |
+| [eh-cftc-mention-markets](sources/substack-rss-event-horizon-2026-09-23-cftc-mention-markets.md) | EH CFTC mention markets advisory | draft |
+| [klement-who-forecasts](sources/substack-rss-klement-2026-09-23-who-forecasts.md) | Klement who forecasts how (Thesmar/Verner) | draft |
+| [wublock-bstocks](sources/substack-rss-wublock-2026-09-23-bstocks.md) | WuBlock bStocks perps pricing power | draft |
+| [sterling-sky-gbp-batch](sources/newsletter-rss-sterling-sky-2026-09-22-gbp-batch.md) | Sterling Sky GBP batch (14 posts) | draft |
+
 ### K269 ingest (2026-09-22)
 OSINT K269: 18 new source pages (2 evals + 8 arXiv/PDF + 1 NGI essay + 7 newsletters). Skips (no source pages): Jev Trading Research Paper.pdf (already K268); capital-flows; glitchspx; secpro. Phase-0 **REFERENCE** (no re-clone): jev-lexer, jev-test-filter, jev-search MIT; open-jev-typed-decision-engine Apache-2.0. **SIZE-SKIP** harness-zero ~21MB (+ FluidUse/nanocodex mentioned). **0 product Integrate GO. FILE/HITL only. Transkribus sole HTR. Do not swap `/route`. No skill auto-evolve. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. jev-mcp WIRE unchanged.**
 

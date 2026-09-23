@@ -1,3 +1,17 @@
+## [2026-09-23] ingest | K270 wave
+
+- **Inbox:** 19 sources written (8 arXiv PDF + 10 newsletter/substack + 1 Sterling Sky GBP batch page covering 14 posts). **Skipped source pages:** Jev Trading Research Paper.pdf (K268); capital-flows 2026-09-20 credit-fueled; glitchspx talon; secpro 252. Skip files stay in the inbox.
+- **Sources:** arXiv 25447 conduct-under-pressure; 25518 matryoshka-attribution (**attribution method only** — no code release, finetune case study not described); 25686 task-state-influence; 26499 local-coding-agent-manipulation; 26606 option-rebate-design; 26760 grow-the-harness; 26779 cliffcompaction; 26781 agensh. Newsletters: LS John Platt; LS Opus 5.5 (**TENTATIVE**); LS bio-security (citation only — not Atto, not HTR); PE windows-ai; PE appleton (**LIKELY flag = shared sponsor URLs only**); SparkToro algorithms; Substack: Capital Flows KOSPI; EH CFTC mention markets; Klement who-forecasts (Thesmar/Verner); WuBlock bStocks; Sterling Sky GBP batch.
+- **Concepts:** 5 k270-* hubs (harness-evolution, vol-quant, newsletter-macro, gambling-pm, ood-stub). Matching k269 hubs backlinked both ways; `updated:` bumped to 2026-09-23.
+- **Entities:** cliffcompaction **MIT REFERENCE** clone `.local/adopts/cliffcompaction` (1005 KB, depth 1); modelun SPDX null ~21MB **NO-CLONE** `wont_wire`; agensh GitHub **404 on 2026-09-23** **NO-CLONE** `wont_wire`.
+- **Phase-0:** one REFERENCE clone only. SKIP list includes modelun, agensh, airo-mono, pi, Kimi-K3. **No weight download. 0 product Integrate GO.**
+- **Routing:** Atto unchanged (bio-security is not Atto). GW/KOSPI/who-forecasts/bStocks FILE; **no level to arm; never auto-arm; never watches.json**. DFS/Parlays FILE; CFTC staff advisory; **no pm scp**; no sizing change. CCC harness FILE; **do not swap `/route`**; never auto-evolve `.cursor/skills`. SEO SparkToro + Sterling FILE; no ranking claim. **No xsp scp. No LIVE Discord.**
+- **Rule:** `## OSINT K270 — 2026-09-23` inserted above `## OSINT K269` in `.cursor/rules/osint-phase1-adopt-wires.mdc`. **FILE only.**
+- **Briefs:** `briefs/2026-09-23_k270-*` (8: atto, guruwatcher, ceminidfs, ceminiparlays, ccc-harness, cyber-lab, gambling, seo).
+- **Index / ROADMAP / hot.md:** K270 sections added above K269.
+- **Archive:** **BLOCKED — SSH failed.** `ssh cemini-egress-fi` returned `Permission denied (publickey,password)` (exit 255) on 2026-09-23. No file was archived and no inbox file was deleted. Source page `Location` fields point at the local inbox until archive succeeds. Re-run `bash scripts/archive_raw_to_egress.sh --wiki-id osint "<file>"` for each new file with a source page once egress SSH auth is restored. **Do not delete the skip files.**
+- **gate:** `wiki_lint.py` (no commit).
+
 ## [2026-09-22] wire | Jev workflow gates
 
 - **Trial:** Redacted classify on live mcp-jev (jev-latest) — `jev_find` / `jev_verify` / `jev_screen`; catalog verify 0.53 stays HITL; screen blocked synthetic override targeting `watches.json`.

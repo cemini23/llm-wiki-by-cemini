@@ -10,9 +10,10 @@ related:
   - sources/arxiv-2609.24974-harness-zero-2026-09-22.md
   - sources/arxiv-2609.24983-onpanda-2026-09-22.md
   - entities/tools/harness-zero.md
+  - concepts/k270-harness-evolution-wave.md
 maturity: draft
 created: 2026-09-22
-updated: 2026-09-22
+updated: 2026-09-23
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -25,6 +26,7 @@ wire_status: policy_wired
 - @sources/arxiv-2609.24974-harness-zero-2026-09-22.md
 - @sources/arxiv-2609.24983-onpanda-2026-09-22.md
 - @entities/tools/harness-zero.md
+- @concepts/k270-harness-evolution-wave.md
 
 ## Raw Concept
 

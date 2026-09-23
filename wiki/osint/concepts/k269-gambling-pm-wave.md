@@ -7,9 +7,10 @@ related:
   - concepts/k268-gambling-pm-wave.md
   - sources/substack-rss-event-horizon-2026-09-22-free-bets-2026-09-22.md
   - sources/substack-rss-moontower-2026-09-22-kelly-cheatsheet-2026-09-22.md
+  - concepts/k270-gambling-pm-wave.md
 maturity: draft
 created: 2026-09-22
-updated: 2026-09-22
+updated: 2026-09-23
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -19,6 +20,7 @@ wire_status: policy_wired
 - @concepts/k268-gambling-pm-wave.md
 - @sources/substack-rss-event-horizon-2026-09-22-free-bets-2026-09-22.md
 - @sources/substack-rss-moontower-2026-09-22-kelly-cheatsheet-2026-09-22.md
+- @concepts/k270-gambling-pm-wave.md
 
 ## Raw Concept
 

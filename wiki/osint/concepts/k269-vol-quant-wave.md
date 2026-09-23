@@ -8,9 +8,10 @@ related:
   - sources/arxiv-2609.22893-universal-iv-diffusion-2026-09-22.md
   - sources/arxiv-2609.24658-investornerd-2026-09-22.md
   - sources/substack-rss-moontower-2026-09-22-kelly-cheatsheet-2026-09-22.md
+  - concepts/k270-vol-quant-wave.md
 maturity: draft
 created: 2026-09-22
-updated: 2026-09-22
+updated: 2026-09-23
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -21,6 +22,7 @@ wire_status: policy_wired
 - @sources/arxiv-2609.22893-universal-iv-diffusion-2026-09-22.md
 - @sources/arxiv-2609.24658-investornerd-2026-09-22.md
 - @sources/substack-rss-moontower-2026-09-22-kelly-cheatsheet-2026-09-22.md
+- @concepts/k270-vol-quant-wave.md
 
 ## Raw Concept
 

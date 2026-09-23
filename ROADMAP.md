@@ -30,6 +30,19 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-23 — K270 ingest)
+
+- **K270 ingest** — 19 source pages + 5 hubs + 3 entities. Phase-0 **one REFERENCE clone**: cliffcompaction MIT 1005 KB. **NO-CLONE**: modelun SPDX null ~21MB; agensh GitHub 404 on 2026-09-23; airo-mono / pi / Kimi-K3 no clone. Skips: Jev paper (K268) / capital-flows 2026-09-20 / glitchspx talon / secpro 252. **0 product Integrate GO. FILE only. Do not swap `/route`. No skill evolve. No weight download. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. jev-mcp WIRE unchanged.**
+- **Matryoshka (25518)** — attribution method only; **no code release**; do not describe the finetune case study.
+- **Harness (CCC)** — Growing Harness / CliffCompaction / Agensh / task-state / Matryoshka / local coding agent FILE; **do not swap `/route`**; never auto-evolve `.cursor/skills`; no install of the CliffCompaction API proxy.
+- **Atto** — unchanged this wave. Bio-security item is **not Atto and not HTR**; citation only. Transkribus sole HTR. Never auto-merge truth.ged.
+- **GuruWatcher** — KOSPI / who-forecasts / bStocks FILE; **no level to arm**; **never auto-arm**; never watches.json.
+- **CeminiDFS / CeminiParlays** — FILE; CFTC staff advisory on mention markets; **no pm scp**; no book submit; no sizing change.
+- **Cyber** — no new clone; no PoC to build.
+- **SEO** — SparkToro + Sterling Sky GBP batch (14 posts) FILE; no ranking claim; no how-to steps.
+- **Rule** — `## OSINT K270 — 2026-09-23` above `## OSINT K269` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs** — `briefs/2026-09-23_k270-*` (8).
+
 ## Current state (2026-09-22 — K269 ingest)
 
 - **K269 ingest** — 18 source pages + 7 hubs + 5 entities (REFERENCE jev-lexer/test-filter/search + open-jev-typed-decision-engine; harness-zero SIZE-SKIP). Skips: Jev paper / capital-flows / glitchspx / secpro source pages. **0 product Integrate GO. FILE/HITL only. Transkribus sole HTR. Do not swap `/route`. No xsp/pm scp. No skill evolve. No LIVE Discord. Never `npx github:`. Never auto-arm. jev-mcp WIRE unchanged.**

@@ -7,9 +7,10 @@ related:
   - concepts/k268-newsletter-macro-wave.md
   - sources/substack-rss-klement-2026-09-22-chip-ban-2026-09-22.md
   - sources/substack-rss-wublock-2026-09-22-btc-bottomed-2026-09-22.md
+  - concepts/k270-newsletter-macro-wave.md
 maturity: draft
 created: 2026-09-22
-updated: 2026-09-22
+updated: 2026-09-23
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -19,6 +20,7 @@ wire_status: policy_wired
 - @concepts/k268-newsletter-macro-wave.md
 - @sources/substack-rss-klement-2026-09-22-chip-ban-2026-09-22.md
 - @sources/substack-rss-wublock-2026-09-22-btc-bottomed-2026-09-22.md
+- @concepts/k270-newsletter-macro-wave.md
 
 ## Raw Concept
 
