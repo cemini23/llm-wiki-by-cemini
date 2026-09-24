@@ -20,9 +20,11 @@ related:
   - entities/projects/castle-sim.md
   - concepts/tycho-arc-agi-active-abstraction-stub.md
   - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
+  - entities/tools/gamelogicbench.md
+  - sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md
 maturity: validated
 created: 2026-06-21
-updated: 2026-08-15
+updated: 2026-09-24
 ---
 
 ## Relations

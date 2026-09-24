@@ -4,6 +4,20 @@ Append-only chronological log.
 
 ---
 
+## [2026-09-24] ingest | 11 arXiv inbox (6 ingests + 5 rejects) + Phase-0/1 eval bench ladder
+
+- Inbox: 11 PDFs → @sources/inbox-arxiv-reject-batch-2026-09-24.md + 6 source pages; archived; inbox cleared
+- **Ingest:** GameLogicBench (tick asserts), CraftBench-UE (MIT UE), narrative reliability, PersonaWeaver, Unity Insight shelf, State-Grounded Conditioning
+- **Reject:** MIRAGE, astro-ph WFSS mis-route, robot HRI, LLM social norms, opinion games
+- Phase-0: GameLogicBench **NO-GO clone** (no LICENSE); CraftBench-UE **MIT extract-only**
+- Phase-1: eval bench ladder + GameLogicBench policy_wired in agent-harness; SGC/epistemic pacing in guardrails
+- Entities: gamelogicbench, craftbench-ue
+- Brief: `briefs/research/gamelogicbench-tick-assertions-shelf.md`
+- Config: `llm-agent-game-paper` ANDNOT astro-ph
+- Sweeps: @sweeps/2026-09-19-daily.md … @sweeps/2026-09-24-daily.md
+
+---
+
 ## [2026-09-19] ingest | 4 arXiv inbox (1 NPC memory ingest + 3 rejects) + sweep backlog + Phase-1 W2 MCP
 
 - Inbox: 4 PDFs → @sources/inbox-arxiv-reject-batch-2026-09-19.md + @sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md; archived; inbox cleared

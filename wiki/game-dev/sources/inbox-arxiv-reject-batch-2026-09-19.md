@@ -4,6 +4,7 @@ type: source
 tags: [source, triage, reject, arxiv, ingest]
 keywords: [arxiv, triage, reject, digest, llm-agent, uav, clue, logn-questions]
 related:
+  - sources/inbox-arxiv-reject-batch-2026-09-24.md
   - sources/inbox-arxiv-reject-batch-2026-08-15.md
   - sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md
   - concepts/llm-npc-runtime-ai-shelf.md

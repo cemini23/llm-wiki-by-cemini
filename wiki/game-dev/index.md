@@ -94,6 +94,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [stronghold2-analyse-hub](entities/tools/stronghold2-analyse-hub.md) | draft | SH2 DX9 research overlay — MIT |
 | [gamedev-resources](entities/tools/gamedev-resources.md) | validated | CC0 asset link index |
 | [gamedevbench](entities/tools/gamedevbench.md) | validated | Godot agent benchmark — **STEAL-FROM** (Apache-2.0) |
+| [gamelogicbench](entities/tools/gamelogicbench.md) | validated | Tick-level runtime logic eval — **STEAL-FROM** (no LICENSE) |
+| [craftbench-ue](entities/tools/craftbench-ue.md) | validated | UE deterministic agent bench — **extract-only** (MIT) |
 | [ziva-godot-agent](entities/tools/ziva-godot-agent.md) | validated | In-editor Godot agent — **CONDITIONAL-GO** (proprietary) |
 | [hera-agent-godot](entities/tools/hera-agent-godot.md) | validated | Low-token CLI editor control — **CONDITIONAL-GO** W2 (4.7+) |
 | [vrexplorer](entities/tools/vrexplorer.md) | validated | Unity VR testing — **NO-GO adopt** / STEAL-FROM |
@@ -279,3 +281,10 @@ Catalog of all wiki pages. Updated on each ingest.
 | [unity-sentis-practical-shelf-2026-06-23](sources/unity-sentis-practical-shelf-2026-06-23.md) | read |
 | [inbox-arxiv-reject-batch-2026-09-19](sources/inbox-arxiv-reject-batch-2026-09-19.md) | read |
 | [arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19](sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md) | read |
+| [inbox-arxiv-reject-batch-2026-09-24](sources/inbox-arxiv-reject-batch-2026-09-24.md) | read |
+| [arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24](sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md) | read |
+| [arxiv-2609.23043-narrative-reliability-detective-games-2026-09-24](sources/arxiv-2609.23043-narrative-reliability-detective-games-2026-09-24.md) | read |
+| [arxiv-2609.23142-craftbench-ue-deterministic-eval-2026-09-24](sources/arxiv-2609.23142-craftbench-ue-deterministic-eval-2026-09-24.md) | read |
+| [arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24](sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md) | read |
+| [arxiv-2609.27585-unity-insight-code-asset-index-2026-09-24](sources/arxiv-2609.27585-unity-insight-code-asset-index-2026-09-24.md) | read |
+| [arxiv-2609.27606-state-grounded-conditioning-2026-09-24](sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md) | read |

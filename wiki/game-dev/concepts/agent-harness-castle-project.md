@@ -34,9 +34,14 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-09-19.md
   - concepts/twin-test-time-world-model-stub.md
   - concepts/vibeworlding-3d-agent-stub.md
+  - sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md
+  - entities/tools/gamelogicbench.md
+  - sources/arxiv-2609.23142-craftbench-ue-deterministic-eval-2026-09-24.md
+  - sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md
+  - sources/inbox-arxiv-reject-batch-2026-09-24.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-09-19
+updated: 2026-09-24
 wire_status: policy_wired
 wire_target: briefs/W2-harness-kickoff.md
 ---
@@ -100,8 +105,19 @@ GameDevBench (Godot task zips) vs GameEngineBench (UE5 paper rubric, no pin): @e
 | hera-agent-godot | policy_wired | Godot 4.7+ pin gate; low-token CLI adjunct — not default executor |
 | ziva-godot-agent | deferred | Proprietary Asset Store — eval only |
 | SerpentAI / CCGS full | wont_wire | STEAL-FROM patterns in WORKFLOW.md — no install |
+| GameLogicBench | policy_wired | Tick-level runtime assertions — steal pattern; **NO-GO clone** (no LICENSE) |
+| CraftBench-UE | wont_wire | MIT UE reference only — deterministic eval shape for Godot stories |
 
 Canon table: `briefs/W2-harness-kickoff.md` § MCP admission.
+
+### Eval bench ladder (2026-09-24) [CONFIRMED]
+
+| Bench | Engine | Verdict | castle-sim use |
+|-------|--------|---------|----------------|
+| GameDevBench | Godot | STEAL-FROM | Task zips + validate_tasks |
+| GameLogicBench | Agnostic | STEAL-FROM (no SPDX) | Mid-run rule asserts |
+| CraftBench-UE | UE | extract-only MIT | Fresh-project deterministic checks |
+| GameEngineBench | UE paper | citation only | Taxonomy tags for `*_3d_test` |
 
 ## Snippets
 

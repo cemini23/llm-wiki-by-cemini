@@ -35,9 +35,13 @@ related:
   - sources/phaser-game-agent-shelf-2026-06-30.md
   - sources/phaser-game-agent-mcp-update-2026-07-08.md
   - sources/ziva-godot-asset-store-listing-2026-06-27.md
+  - entities/tools/gamelogicbench.md
+  - entities/tools/craftbench-ue.md
+  - sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md
+  - sources/arxiv-2609.27585-unity-insight-code-asset-index-2026-09-24.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-07-02
+updated: 2026-09-24
 ---
 
 ## Relations

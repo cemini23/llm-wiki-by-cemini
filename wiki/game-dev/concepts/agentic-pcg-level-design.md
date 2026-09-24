@@ -12,9 +12,10 @@ related:
   - sources/unreal-engine-58-mcp-shelf-2026-06-24.md
   - entities/tools/pcgodot.md
   - sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md
+  - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-07-12
+updated: 2026-09-24
 ---
 
 ## Relations

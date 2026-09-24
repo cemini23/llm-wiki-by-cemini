@@ -11,9 +11,14 @@ related:
   - sources/morganpage-local-npc-dialogue-2026.md
   - sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md
   - sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md
+  - sources/arxiv-2609.23043-narrative-reliability-detective-games-2026-09-24.md
+  - sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md
+  - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
 maturity: validated
 created: 2026-06-13
-updated: 2026-09-19
+updated: 2026-09-24
+wire_status: policy_wired
+wire_target: concepts/agentic-npc-design-guardrails.md
 ---
 
 ## Relations
@@ -62,6 +67,14 @@ Writers set personality + lore boundaries; NPCs **improvise inside fences**, not
 **4b. Incremental inference state** [CONFIRMED — arXiv 2609.18935]
 
 For **local** LLM NPCs, memory is not only text — KV prefix + recurrent state are maintained resources. Patch at **true sequence tail** when facts change; do not replay the character's full life before every line. Dialogue that contradicts authoritative game state (ownership, transfers, stockpile) must be blocked **before** it reaches deterministic rules (@sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md).
+
+**4c. State-Grounded Conditioning (SGC)** [CONFIRMED — arXiv 2609.27606]
+
+**Direction drift** — fluent replies that ignore live session/game state. Use rule kernels + structured state slices (perception / grounding / interaction wrappers) so NPC-facing agents cannot pick valid-sounding but state-wrong actions.
+
+**4d. Epistemic pacing (narrative)** [CONFIRMED — arXiv 2609.23043]
+
+For story-heavy modes, gate what NPCs may reveal via structured knowledge trees — detective-game pattern; prevents premature clues and fabricated facts in open dialogue.
 
 Do **not** remember:
 - Exact phrasing, petty crimes, misclick experiments
