@@ -7,6 +7,32 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K271 ingest (2026-09-24)
+OSINT K271: 13 new source pages (1 eval docx + 8 arXiv + 4 newsletter/substack). Skips (no new source pages): Jev Trading Research Paper.pdf (K268); Multi-Repo Revenue Evaluation Plan.docx (duplicate); eight arXiv PDFs 25447–26781 (K270); Opus 5.5; biosecurity note; SparkToro; SecPro 252; WuBlock bStocks; KOSPI; CFTC mention markets; who-forecasts; Appleton; Windows; John Platt; 14 Sterling Sky files (K270 batch page). Phase-0 **REFERENCE clones**: jev-curate MIT 504 KB; canny MIT 266 KB. **NO-CLONE**: hindsight, univer, Model-Optimizer, harness-sdk, jev-chat-jarvis, treg, google/ax, axe, learn-harness-engineering, ai-memory, apple-corelocation, agent-desktop, typesafe-mario, jev-drone, OneVOneJev, neo4jev (prior FILE), killmyidea, FluidUse (already SIZE-SKIP), deleting-the-trace, SkillGym, InGuard, Echo-Chamber 404. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill auto-evolve. No weight download. No product install. Live jev path unchanged. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. World-cup bot stays retired. Control-token paper is a name and an impact. One Klement file is on egress. The other new files stay in the local inbox. Archive pending for those twelve.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k271-harness-evolution-wave](concepts/k271-harness-evolution-wave.md) | K271 Harness Evolution Wave | draft |
+| [k271-vol-quant-wave](concepts/k271-vol-quant-wave.md) | K271 Vol Quant Wave | draft |
+| [k271-newsletter-macro-wave](concepts/k271-newsletter-macro-wave.md) | K271 Newsletter Macro Wave | draft |
+| [k271-gambling-pm-wave](concepts/k271-gambling-pm-wave.md) | K271 Gambling / PM Wave | draft |
+| [k271-ood-stub-wave](concepts/k271-ood-stub-wave.md) | K271 OOD Stub Wave | draft |
+| [jev-curate](entities/tools/jev-curate.md) | jev-curate MIT REFERENCE FILE | draft |
+| [canny](entities/tools/canny.md) | Canny MIT REFERENCE FILE | draft |
+| [eval-multi-wiki-url-revenue-k271](sources/eval-multi-wiki-url-revenue-2026-09-24.md) | Multi-Wiki URL Revenue Evaluation (gh api overrides) | draft |
+| [arxiv-2609.27138-commodity-sv](sources/arxiv-2609.27138-commodity-sv-2026-09-24.md) | Soybean option surface | draft |
+| [arxiv-2609.27542-control-token](sources/arxiv-2609.27542-control-token-2026-09-24.md) | Control-token paper (name and impact only) | draft |
+| [arxiv-2609.27606-state-grounded-conditioning](sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md) | Live-state wrappers | draft |
+| [arxiv-2609.27612-regenharness](sources/arxiv-2609.27612-regenharness-2026-09-24.md) | Evidence-gated robot loop | draft |
+| [arxiv-2609.27620-inguard](sources/arxiv-2609.27620-inguard-2026-09-24.md) | InGuard text-to-image safety name | draft |
+| [arxiv-2609.27639-echo-chambers](sources/arxiv-2609.27639-echo-chambers-2026-09-24.md) | Opinion game (GitHub 404) | draft |
+| [arxiv-2609.27717-skillgym](sources/arxiv-2609.27717-skillgym-2026-09-24.md) | SkillGym SIZE-SKIP | draft |
+| [arxiv-2609.27720-corelnav](sources/arxiv-2609.27720-corelnav-2026-09-24.md) | CoRelNav multi-robot navigation | draft |
+| [ls-meta-connect](sources/newsletter-rss-latent-space-2026-09-24-meta-connect.md) | LS Muse glasses teaser (TENTATIVE) | draft |
+| [eh-wc-broadcasts](sources/substack-rss-event-horizon-2026-09-24-wc-broadcasts.md) | EH World Cup logo study | draft |
+| [klement-ai-debt](sources/substack-rss-klement-2026-09-24-ai-debt.md) | Klement AI and public debt (opinion) | draft |
+| [klement-acquisitions](sources/substack-rss-klement-2026-09-24-acquisitions.md) | Klement acquisitions (not a trade signal) | draft |
+
 ### K270 ingest (2026-09-23)
 OSINT K270: 19 new source pages (8 arXiv/PDF + 10 newsletter/substack + 1 Sterling Sky GBP batch page covering 14 posts). Skips (no source pages): Jev Trading Research Paper.pdf (already K268); capital-flows 2026-09-20 credit-fueled; glitchspx talon; secpro 252. Phase-0 **REFERENCE clone**: cliffcompaction MIT 1005 KB. **NO-CLONE**: modelun SPDX null ~21MB; agensh GitHub 404. **0 product Integrate GO. FILE only. Do not swap `/route`. No skill auto-evolve. No weight download. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. jev-mcp WIRE unchanged. Matryoshka = attribution method only.**
 

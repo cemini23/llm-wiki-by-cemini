@@ -5,10 +5,11 @@ tags: [prediction-markets, gambling, k270]
 keywords: [CFTC, mention-markets, staff-advisory]
 related:
   - concepts/k269-gambling-pm-wave.md
+  - concepts/k271-gambling-pm-wave.md
   - sources/substack-rss-event-horizon-2026-09-23-cftc-mention-markets.md
 maturity: draft
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-24
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -16,6 +17,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k269-gambling-pm-wave.md
+- @concepts/k271-gambling-pm-wave.md
 - @sources/substack-rss-event-horizon-2026-09-23-cftc-mention-markets.md
 
 ## Raw Concept

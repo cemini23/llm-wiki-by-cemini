@@ -5,12 +5,13 @@ tags: [macro, newsletter, k270, guruwatcher]
 keywords: [KOSPI, Korea, forecasting, bStocks, perps]
 related:
   - concepts/k269-newsletter-macro-wave.md
+  - concepts/k271-newsletter-macro-wave.md
   - sources/substack-rss-capital-flows-2026-09-22-kospi.md
   - sources/substack-rss-klement-2026-09-23-who-forecasts.md
   - sources/substack-rss-wublock-2026-09-23-bstocks.md
 maturity: draft
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-24
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -18,6 +19,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k269-newsletter-macro-wave.md
+- @concepts/k271-newsletter-macro-wave.md
 - @sources/substack-rss-capital-flows-2026-09-22-kospi.md
 - @sources/substack-rss-klement-2026-09-23-who-forecasts.md
 - @sources/substack-rss-wublock-2026-09-23-bstocks.md

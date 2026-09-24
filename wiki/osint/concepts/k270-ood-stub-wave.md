@@ -5,6 +5,7 @@ tags: [ood, stub, k270]
 keywords: [conduct-under-pressure, John-Platt, biosecurity, SparkToro, Sterling-Sky]
 related:
   - concepts/k269-ood-stub-wave.md
+  - concepts/k271-ood-stub-wave.md
   - sources/arxiv-2609.25447-conduct-under-pressure-2026-09-23.md
   - sources/newsletter-rss-latent-space-2026-09-22-john-platt.md
   - sources/newsletter-rss-latent-space-2026-09-23-bio-security.md
@@ -12,7 +13,7 @@ related:
   - sources/newsletter-rss-sterling-sky-2026-09-22-gbp-batch.md
 maturity: draft
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-24
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -20,6 +21,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k269-ood-stub-wave.md
+- @concepts/k271-ood-stub-wave.md
 - @sources/arxiv-2609.25447-conduct-under-pressure-2026-09-23.md
 - @sources/newsletter-rss-latent-space-2026-09-22-john-platt.md
 - @sources/newsletter-rss-latent-space-2026-09-23-bio-security.md

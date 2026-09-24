@@ -30,6 +30,21 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-24 — K271 ingest)
+
+- **K271 ingest** — 13 source pages + 5 hubs + 2 entities. Phase-0 **two REFERENCE clones**: jev-curate MIT 504 KB; canny MIT 266 KB. **NO-CLONE**: hindsight / univer / Model-Optimizer / harness-sdk / jev-chat-jarvis / treg / google/ax / axe / learn-harness-engineering / ai-memory / apple-corelocation / agent-desktop / typesafe-mario / jev-drone / OneVOneJev / neo4jev (prior FILE) / killmyidea / FluidUse (already SIZE-SKIP) / deleting-the-trace / SkillGym / InGuard / Echo-Chamber 404. Skips stay in the inbox (K268 Jev PDF, duplicate multi-repo plan, K270 arXiv and newsletters, Sterling Sky batch). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill evolve. No weight download. No product install. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. Live jev path unchanged.**
+- **Harness (CCC)** — jev-curate is a dataset sifter (`wont_wire`). Canny is an evidence gate. **Do not install Canny.** Never auto-evolve skills. SkillGym is SIZE-SKIP. RegenHarness is FILE.
+- **Control-token paper** — name and impact only. No reproduction. No clone.
+- **Atto** — jev-curate is **not genealogy and not HTR**. No vault data. Transkribus sole HTR.
+- **GuruWatcher** — Klement AI-debt and acquisitions FILE; **no level to arm**; **never auto-arm**.
+- **CeminiDFS** — thin FILE. Soybean surface is not a lineup. No sizing change.
+- **CeminiParlays / Gambling** — World Cup broadcast study (~0.9 prediction-market logos per minute). **No submit. No pm scp.** World-cup bot stays retired.
+- **Cyber** — no reproduction. InGuard is a name and an impact. No image-gen install.
+- **SEO** — no new SEO item this wave.
+- **Rule** — `## OSINT K271 — 2026-09-24` above `## OSINT K270` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs** — `briefs/2026-09-24_k271-*` (8).
+- **Archive** — one file on egress (Klement AI-debt note). The other 12 new files stay in the inbox. Do not delete skip files.
+
 ## Current state (2026-09-23 — K270 ingest)
 
 - **K270 ingest** — 19 source pages + 5 hubs + 3 entities. Phase-0 **one REFERENCE clone**: cliffcompaction MIT 1005 KB. **NO-CLONE**: modelun SPDX null ~21MB; agensh GitHub 404 on 2026-09-23; airo-mono / pi / Kimi-K3 no clone. Skips: Jev paper (K268) / capital-flows 2026-09-20 / glitchspx talon / secpro 252. **0 product Integrate GO. FILE only. Do not swap `/route`. No skill evolve. No weight download. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. jev-mcp WIRE unchanged.**

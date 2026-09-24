@@ -383,6 +383,20 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K271 — 2026-09-24
+Dual-ID: **OSINT K271**. FILE and HITL only. **0 product Integrate GO.**
+- REFERENCE clones: `.local/adopts/jev-curate` MIT, 504 KB, depth 1 (dataset sifter, `wont_wire`); `.local/adopts/canny` MIT, 266 KB, depth 1 (evidence gate, `wont_wire`). Do not install Canny. Do not replace the live jev path. No vault data. jev-curate is not genealogy and not HTR.
+- NO-CLONE: hindsight MIT 758046 KB; univer Apache 174006 KB; Model-Optimizer Apache 149776 KB; harness-sdk Apache 212322 KB; jev-chat-jarvis MIT 20698 KB; treg NOASSERTION 88763 KB; google/ax Apache 44743 KB; axe Apache 6086 KB; learn-harness-engineering MIT 7254 KB (skill text, no auto-evolve); ai-memory MIT 17776 KB; apple-corelocation GPL-3.0 extract-only; agent-desktop Apache 54976 KB; typesafe-mario SPDX null; jev-drone MIT 6842 KB; OneVOneJev SPDX null; neo4jev prior FILE; killmyidea SPDX null; FluidUse Apache 48961 KB already SIZE-SKIP; deleting-the-trace MIT 59 KB (no clone); SkillGym MIT 221581 KB SIZE-SKIP; InGuard Apache 804 KB (no image-gen install); Echo-Chamber 404 on 2026-09-24.
+- 13 source pages, 5 hubs (`k271-harness-evolution-wave`, `k271-vol-quant-wave`, `k271-newsletter-macro-wave`, `k271-gambling-pm-wave`, `k271-ood-stub-wave`), 2 entities.
+- **Do not swap `/route`.** Never auto-evolve skills. Never `npx github:`. No product install. No weight download. No Harbor install.
+- Control-token paper (27542): **name and impact only**. A paper claims a control token can skip the reasoning channel while a tool call still runs. Do not quote the token. Do not reproduce the method.
+- InGuard: text-to-image safety name and impact only. No embedding-edit steps.
+- GW: Klement notes FILE; **no level to arm**; **never auto-arm**.
+- DFS: thin FILE. Parlays/gambling: World Cup logo study; **no pm scp**; **no submit**; world-cup bot stays retired.
+- Muse glasses teaser: vendor claims are **[TENTATIVE]**.
+- Docx license claims are not authority. gh api 2026-09-24 overrides them. Docx Integrate rows stay FILE.
+- Verify: `bash scripts/adopt_k271_phase0.sh` then `bash scripts/adopt_k271_phase1.sh`. **No LIVE Discord. No xsp/pm scp.**
+
 ## OSINT K270 — 2026-09-23
 Dual-ID: **OSINT K270**. FILE wiki. **0 product Integrate GO.**
 - REFERENCE clone: `.local/adopts/cliffcompaction` MIT, 1005 KB, depth 1. Data only — do not vendor the tree, do not install the API proxy.

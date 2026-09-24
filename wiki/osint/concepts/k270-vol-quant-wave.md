@@ -5,10 +5,11 @@ tags: [vol, options, quant, k270]
 keywords: [market-making, rebates, HJB, make-take]
 related:
   - concepts/k269-vol-quant-wave.md
+  - concepts/k271-vol-quant-wave.md
   - sources/arxiv-2609.26606-option-rebate-design-2026-09-23.md
 maturity: draft
 created: 2026-09-23
-updated: 2026-09-23
+updated: 2026-09-24
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -16,6 +17,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k269-vol-quant-wave.md
+- @concepts/k271-vol-quant-wave.md
 - @sources/arxiv-2609.26606-option-rebate-design-2026-09-23.md
 
 ## Raw Concept
