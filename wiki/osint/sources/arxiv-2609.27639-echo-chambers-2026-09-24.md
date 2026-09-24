@@ -19,8 +19,8 @@ read_status: skimmed
 
 | Paper | arXiv:2609.27639 |
 | File | `arxiv-2609.27639-agent-based-modeling-equilibrium-echo-chambers-a.pdf` |
-| Location | `research to be indexed/arxiv-2609.27639-agent-based-modeling-equilibrium-echo-chambers-a.pdf` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.27639-agent-based-modeling-equilibrium-echo-chambers-a.pdf` |
+| Archive | egress-fi 2026-09-24 |
 | Authors | Ming-Zhi Jiang, An-Tzi Teng, Jun-En Liu, Po-An Chen, Yung-Ming Li |
 | Retrieved | 2026-09-24 |
 | Pages | 24 |

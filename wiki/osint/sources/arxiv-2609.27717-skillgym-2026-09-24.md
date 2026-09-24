@@ -19,8 +19,8 @@ read_status: skimmed
 
 | Paper | arXiv:2609.27717 |
 | File | `arxiv-2609.27717-skillgym-internalizing-human-skills-into-llms-fo.pdf` |
-| Location | `research to be indexed/arxiv-2609.27717-skillgym-internalizing-human-skills-into-llms-fo.pdf` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.27717-skillgym-internalizing-human-skills-into-llms-fo.pdf` |
+| Archive | egress-fi 2026-09-24 |
 | Authors | Zhilong Ge, Yuting Shao, Yutao Yang, Yuxuan Cai, Jie Zhou, Kai Chen, Bo Zhang, Qin Chen, Liang He |
 | Retrieved | 2026-09-24 |
 | Pages | 22 |

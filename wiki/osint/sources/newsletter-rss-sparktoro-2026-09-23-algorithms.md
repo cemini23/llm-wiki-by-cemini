@@ -18,7 +18,7 @@ read_status: skimmed
 ## Raw Concept
 
 | File | `newsletter-rss-sparktoro-2026-09-23-algorithms-dont-just-happen-to-us-we-train-them.md` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/newsletter-rss-sparktoro-2026-09-23-algorithms-dont-just-happen-to-us-we-train-them.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-sparktoro-2026-09-23-algorithms-dont-just-happen-to-us-we-train-them.md` |
 | Title | Algorithms Don't Just Happen to Us — We Train Them. |
 | URL | https://sparktoro.com/blog/algorithms-dont-just-happen-to-us-we-train-them/ |
 | Feed | sparktoro |

@@ -18,7 +18,7 @@ read_status: skimmed
 ## Raw Concept
 
 | File | `newsletter-rss-latent-space-2026-09-23-bio-security-is-an-ai-arms-race---eric-nguyen-ce.md` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/newsletter-rss-latent-space-2026-09-23-bio-security-is-an-ai-arms-race---eric-nguyen-ce.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-latent-space-2026-09-23-bio-security-is-an-ai-arms-race---eric-nguyen-ce.md` |
 | Title | 🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics) |
 | Author | Eric Nguyen (CEO, Radical Numerics) |
 | URL | https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric |

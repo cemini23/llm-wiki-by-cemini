@@ -19,8 +19,8 @@ read_status: skimmed
 
 | Paper | arXiv:2609.27612 |
 | File | `arxiv-2609.27612-regenharness-a-robot-agent-harness-with-evidence.pdf` |
-| Location | `research to be indexed/arxiv-2609.27612-regenharness-a-robot-agent-harness-with-evidence.pdf` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.27612-regenharness-a-robot-agent-harness-with-evidence.pdf` |
+| Archive | egress-fi 2026-09-24 |
 | Authors | Kailin Wang, Haoxiang Jie, Yaoyuan Yan, Zhiyou Heng, Zhaosong Li |
 | Retrieved | 2026-09-24 |
 | Pages | 18 |

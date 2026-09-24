@@ -19,7 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.25518 |
 | File | `arxiv-2609.25518-matryoshka-attribution-learning-to-attribute-lan.pdf` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/arxiv-2609.25518-matryoshka-attribution-learning-to-attribute-lan.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.25518-matryoshka-attribution-learning-to-attribute-lan.pdf` |
 | Authors | Aryaman Arora, Kirill Acharya, Nathan Hu, Yanzhe Zhang, Noah Goodman, Dan Jurafsky, Christopher Potts (Stanford University) |
 | Retrieved | 2026-09-23 |
 | Pages | 58 |

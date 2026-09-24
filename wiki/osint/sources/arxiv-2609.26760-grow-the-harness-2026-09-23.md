@@ -19,7 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.26760 |
 | File | `arxiv-2609.26760-grow-the-harness-not-the-context-from-strategy-f.pdf` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/arxiv-2609.26760-grow-the-harness-not-the-context-from-strategy-f.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.26760-grow-the-harness-not-the-context-from-strategy-f.pdf` |
 | Authors | Laizhen Li, Jiarui Li, Juanjuan Zhao, Kejiang Ye, Ye Li, Cheng-zhong Xu, Xitong Gao (Shenzhen Institutes of Advanced Technology, CAS; University of Chinese Academy of Sciences; Shenzhen University of Advanced Technology; University of Macau) |
 | Retrieved | 2026-09-23 |
 | Pages | 16 |

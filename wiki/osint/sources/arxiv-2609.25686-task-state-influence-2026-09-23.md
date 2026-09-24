@@ -19,7 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.25686 |
 | File | `arxiv-2609.25686-how-strongly-should-task-state-influence-an-llm.pdf` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/arxiv-2609.25686-how-strongly-should-task-state-influence-an-llm.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.25686-how-strongly-should-task-state-influence-an-llm.pdf` |
 | Authors | Chenyu Zhang (University of Waterloo), Wonbin Kweon (Sungkyunkwan University), Jiawei Han (University of Illinois Urbana-Champaign) |
 | Retrieved | 2026-09-23 |
 | Pages | 43 |

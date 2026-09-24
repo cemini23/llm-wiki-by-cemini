@@ -18,7 +18,7 @@ read_status: read
 ## Raw Concept
 
 | File | `newsletter-rss-latent-space-2026-09-22-an-oscar-two-asteroids-and-the-algorithm-in-your.md` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/newsletter-rss-latent-space-2026-09-22-an-oscar-two-asteroids-and-the-algorithm-in-your.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-latent-space-2026-09-22-an-oscar-two-asteroids-and-the-algorithm-in-your.md` |
 | Title | 🔬 An Oscar, Two Asteroids, and the Algorithm in Your sklearn: John Platt on AI for Science |
 | URL | https://www.latent.space/p/john-platt |
 | Feed | latent-space |

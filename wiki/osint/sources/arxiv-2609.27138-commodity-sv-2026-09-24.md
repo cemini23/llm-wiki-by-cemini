@@ -19,8 +19,8 @@ read_status: skimmed
 
 | Paper | arXiv:2609.27138 |
 | File | `arxiv-2609.27138-surface-driven-stochastic-volatility-for-commodi.pdf` |
-| Location | `research to be indexed/arxiv-2609.27138-surface-driven-stochastic-volatility-for-commodi.pdf` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.27138-surface-driven-stochastic-volatility-for-commodi.pdf` |
+| Archive | egress-fi 2026-09-24 |
 | Authors | Arthur Steve Tchoneteck, Tingjia Zhang, Frederi Viens (Rice University; ENSTA Paris) |
 | Retrieved | 2026-09-24 |
 | Pages | 43 |

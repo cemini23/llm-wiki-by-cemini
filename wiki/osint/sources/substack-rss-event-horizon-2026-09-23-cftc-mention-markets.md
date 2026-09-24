@@ -18,7 +18,7 @@ read_status: read
 ## Raw Concept
 
 | File | `substack-rss-event-horizon-2026-09-23-cftc-puts-mention-markets-under-the-microscope.md` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/substack-rss-event-horizon-2026-09-23-cftc-puts-mention-markets-under-the-microscope.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-09-23-cftc-puts-mention-markets-under-the-microscope.md` |
 | Title | CFTC Puts Mention Markets Under The Microscope |
 | URL | https://nexteventhorizon.substack.com/p/cftc-puts-mention-markets-under-microscope |
 | Feed | event-horizon (RSS teaser) |

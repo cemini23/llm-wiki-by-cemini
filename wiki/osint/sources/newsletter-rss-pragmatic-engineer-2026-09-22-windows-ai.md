@@ -18,7 +18,7 @@ read_status: read
 ## Raw Concept
 
 | File | `newsletter-rss-pragmatic-engineer-2026-09-22-how-will-ai-change-operating-systems-part-2-wind.md` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/newsletter-rss-pragmatic-engineer-2026-09-22-how-will-ai-change-operating-systems-part-2-wind.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-pragmatic-engineer-2026-09-22-how-will-ai-change-operating-systems-part-2-wind.md` |
 | Title | How will AI change operating systems? Part 2: Windows |
 | URL | https://newsletter.pragmaticengineer.com/p/windows-and-ai |
 | Feed | pragmatic-engineer (RSS teaser) |

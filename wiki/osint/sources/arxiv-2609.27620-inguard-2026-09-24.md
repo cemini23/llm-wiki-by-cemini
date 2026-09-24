@@ -19,8 +19,8 @@ read_status: skimmed
 
 | Paper | arXiv:2609.27620 |
 | File | `arxiv-2609.27620-inguard-towards-generalized-inner-guardrail-for.pdf` |
-| Location | `research to be indexed/arxiv-2609.27620-inguard-towards-generalized-inner-guardrail-for.pdf` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.27620-inguard-towards-generalized-inner-guardrail-for.pdf` |
+| Archive | egress-fi 2026-09-24 |
 | Authors | Alibaba AAIG |
 | Retrieved | 2026-09-24 |
 | Pages | 28 |

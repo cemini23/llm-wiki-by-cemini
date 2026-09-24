@@ -18,7 +18,7 @@ read_status: read
 ## Raw Concept
 
 | File | `newsletter-rss-pragmatic-engineer-2026-09-23-design-engineering-with-maggie-appleton.md` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/newsletter-rss-pragmatic-engineer-2026-09-23-design-engineering-with-maggie-appleton.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-pragmatic-engineer-2026-09-23-design-engineering-with-maggie-appleton.md` |
 | Title | Design Engineering with Maggie Appleton |
 | URL | https://newsletter.pragmaticengineer.com/p/design-engineering-with-maggie-appleton |
 | Feed | pragmatic-engineer (RSS teaser) |

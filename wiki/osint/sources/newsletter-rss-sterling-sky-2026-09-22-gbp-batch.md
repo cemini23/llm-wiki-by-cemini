@@ -23,7 +23,7 @@ read_status: skimmed
 | Retrieved | 2026-09-23 (published 2026-09-22) |
 | Posts in batch | 14 |
 | Dual-ID | **OSINT K270** |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/` (one file per row below) |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/` (one file per row below) |
 
 ## Narrative
 

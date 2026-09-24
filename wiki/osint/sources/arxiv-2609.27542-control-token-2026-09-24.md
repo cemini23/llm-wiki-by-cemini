@@ -19,8 +19,8 @@ read_status: skimmed
 
 | Paper | arXiv:2609.27542 |
 | File | `arxiv-2609.27542-control-token-injection-suppresses-chain-of-thou.pdf` |
-| Location | `research to be indexed/arxiv-2609.27542-control-token-injection-suppresses-chain-of-thou.pdf` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.27542-control-token-injection-suppresses-chain-of-thou.pdf` |
+| Archive | egress-fi 2026-09-24 |
 | Authors | Muhammad Usama, Khair Un Nisa, Summer Yeoreum Jung |
 | Retrieved | 2026-09-24 |
 | Pages | 17 |

@@ -1,3 +1,9 @@
+## [2026-09-24] archive | inbox to egress-fi
+
+- **49/49** inbox files copied to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Size check passed. Local copies removed. Inbox has no files left.
+- Includes the K270 set, the K271 remainder, the Sterling Sky batch, duplicate re-copies, and the Jev PDF.
+- Source `Location` fields for those pages now name the egress-fi path.
+
 ## [2026-09-24] ingest | K271 wave
 
 - **Inbox:** 13 sources written (1 eval docx + 8 arXiv + 4 newsletter/substack). **Skipped source pages:** Jev Trading Research Paper.pdf (K268); Multi-Repo Revenue Evaluation Plan.docx (duplicate); arXiv 25447–26781 (K270); Opus 5.5; biosecurity; SparkToro; SecPro 252; WuBlock bStocks; KOSPI; CFTC; who-forecasts; Appleton; Windows; John Platt; Sterling Sky batch (K270). Skip files stay in the inbox.

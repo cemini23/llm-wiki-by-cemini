@@ -18,7 +18,7 @@ read_status: read
 ## Raw Concept
 
 | File | `substack-rss-capital-flows-2026-09-22-the-kospi-is-where-policy-meets-the-ai-trade.md` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/substack-rss-capital-flows-2026-09-22-the-kospi-is-where-policy-meets-the-ai-trade.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-capital-flows-2026-09-22-the-kospi-is-where-policy-meets-the-ai-trade.md` |
 | Title | The KOSPI Is Where Policy Meets The AI Trade |
 | URL | https://www.capitalflowsresearch.com/p/the-kospi-is-where-policy-meets-the |
 | Feed | capital-flows (RSS teaser) |

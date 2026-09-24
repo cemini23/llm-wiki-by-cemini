@@ -19,8 +19,8 @@ read_status: skimmed
 
 | Paper | arXiv:2609.27720 |
 | File | `arxiv-2609.27720-corelnav-collaborative-relational-navigation-for.pdf` |
-| Location | `research to be indexed/arxiv-2609.27720-corelnav-collaborative-relational-navigation-for.pdf` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.27720-corelnav-collaborative-relational-navigation-for.pdf` |
+| Archive | egress-fi 2026-09-24 |
 | Authors | Jinyu He, Zihao Mao, Haonan Jin, Mengyin Fu, Wenjie Song |
 | Retrieved | 2026-09-24 |
 | Pages | 8 |

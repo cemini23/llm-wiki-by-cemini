@@ -19,8 +19,8 @@ read_status: skimmed
 
 | Paper | arXiv:2609.27606 |
 | File | `arxiv-2609.27606-state-grounded-conditioning-wrapping-user-facing.pdf` |
-| Location | `research to be indexed/arxiv-2609.27606-state-grounded-conditioning-wrapping-user-facing.pdf` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.27606-state-grounded-conditioning-wrapping-user-facing.pdf` |
+| Archive | egress-fi 2026-09-24 |
 | Authors | Qi Liu and co-authors (Tencent) |
 | Retrieved | 2026-09-24 |
 | Pages | 18 |

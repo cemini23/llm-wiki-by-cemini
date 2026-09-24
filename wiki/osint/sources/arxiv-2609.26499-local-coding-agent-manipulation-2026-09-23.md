@@ -19,7 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.26499 |
 | File | `arxiv-2609.26499-generalizing-manipulation-skills-with-a-local-co.pdf` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/arxiv-2609.26499-generalizing-manipulation-skills-with-a-local-co.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.26499-generalizing-manipulation-skills-with-a-local-co.pdf` |
 | Authors | Raman Talwar, Elias Nijs, Andreas Verleysen, Francis wyffels |
 | Retrieved | 2026-09-23 |
 | Pages | 8 |

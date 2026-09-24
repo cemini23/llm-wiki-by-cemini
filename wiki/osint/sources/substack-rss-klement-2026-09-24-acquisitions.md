@@ -18,8 +18,8 @@ read_status: read
 ## Raw Concept
 
 | File | `substack-rss-klement-2026-09-24-the-impact-of-acquisitions-on-stock-returns.md` |
-| Location | `research to be indexed/substack-rss-klement-2026-09-24-the-impact-of-acquisitions-on-stock-returns.md` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-klement-2026-09-24-the-impact-of-acquisitions-on-stock-returns.md` |
+| Archive | egress-fi 2026-09-24 |
 | Title | The impact of acquisitions on stock returns |
 | URL | https://klementoninvesting.substack.com/p/the-impact-of-acquisitions-on-stock |
 | Feed | klement |

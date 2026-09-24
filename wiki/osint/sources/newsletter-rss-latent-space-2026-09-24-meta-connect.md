@@ -18,8 +18,8 @@ read_status: read
 ## Raw Concept
 
 | File | `newsletter-rss-latent-space-2026-09-24-ainews-meta-connect-2026-muse-glasses-voice-vide.md` |
-| Location | `research to be indexed/newsletter-rss-latent-space-2026-09-24-ainews-meta-connect-2026-muse-glasses-voice-vide.md` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-latent-space-2026-09-24-ainews-meta-connect-2026-muse-glasses-voice-vide.md` |
+| Archive | egress-fi 2026-09-24 |
 | Title | [AINews] Meta Connect 2026: Muse glasses, voice, video, and Charm |
 | URL | https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses |
 | Feed | latent-space (RSS teaser) |

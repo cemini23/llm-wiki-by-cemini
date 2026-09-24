@@ -21,7 +21,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.26779 |
 | File | `arxiv-2609.26779-cliffcompaction-cost-efficient-compaction-for-lo.pdf` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/arxiv-2609.26779-cliffcompaction-cost-efficient-compaction-for-lo.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.26779-cliffcompaction-cost-efficient-compaction-for-lo.pdf` |
 | Authors | Trang Nguyen, Eulrang Cho, Bingqing Chen, Tim Dettmers (Carnegie Mellon University; Bosch Center for AI) |
 | Retrieved | 2026-09-23 |
 | Pages | 25 |

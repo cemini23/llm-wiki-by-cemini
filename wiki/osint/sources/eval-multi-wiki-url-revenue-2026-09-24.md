@@ -22,8 +22,8 @@ read_status: skimmed
 ## Raw Concept
 
 | File | `Multi-Wiki URL Revenue Evaluation.docx` |
-| Location | `research to be indexed/Multi-Wiki URL Revenue Evaluation.docx` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/Multi-Wiki URL Revenue Evaluation.docx` |
+| Archive | egress-fi 2026-09-24 |
 | Retrieved | 2026-09-24 |
 | Dual-ID | **OSINT K271** |
 | sha256 | `97dcc91ae4e3c2cbf5405abf27295ae193385355ca0021419011f7807c95de9b` |

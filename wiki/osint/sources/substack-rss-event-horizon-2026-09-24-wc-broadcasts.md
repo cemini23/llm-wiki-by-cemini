@@ -18,8 +18,8 @@ read_status: read
 ## Raw Concept
 
 | File | `substack-rss-event-horizon-2026-09-24-report-world-cup-broadcasts-averaged-almost-one.md` |
-| Location | `research to be indexed/substack-rss-event-horizon-2026-09-24-report-world-cup-broadcasts-averaged-almost-one.md` |
-| Archive | pending |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-event-horizon-2026-09-24-report-world-cup-broadcasts-averaged-almost-one.md` |
+| Archive | egress-fi 2026-09-24 |
 | Title | Report: World Cup Broadcasts Averaged Almost One Prediction Market Logo Per Minute |
 | URL | https://nexteventhorizon.substack.com/p/report-world-cup-broadcasts-prediction-markets |
 | Feed | event-horizon (RSS teaser) |

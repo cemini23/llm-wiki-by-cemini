@@ -19,7 +19,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.25447 |
 | File | `arxiv-2609.25447-conduct-under-pressure-what-sixty-language-model.pdf` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/arxiv-2609.25447-conduct-under-pressure-what-sixty-language-model.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.25447-conduct-under-pressure-what-sixty-language-model.pdf` |
 | Author | Tapan Parikh (Cornell Tech) |
 | Retrieved | 2026-09-23 |
 | Pages | 12 |

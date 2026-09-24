@@ -18,7 +18,7 @@ read_status: read
 ## Raw Concept
 
 | File | `substack-rss-wublock-2026-09-23-the-other-side-of-bstocks-not-building-a-better.md` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/substack-rss-wublock-2026-09-23-the-other-side-of-bstocks-not-building-a-better.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/substack-rss-wublock-2026-09-23-the-other-side-of-bstocks-not-building-a-better.md` |
 | Title | The Other Side of bStocks: Not Building a Better Nasdaq, but Using Perps to Forge a Path to Pricing Power |
 | URL | https://wublock.substack.com/p/the-other-side-of-bstocks-not-building |
 | Feed | wublock |

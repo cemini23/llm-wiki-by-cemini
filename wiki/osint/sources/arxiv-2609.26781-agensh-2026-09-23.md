@@ -21,7 +21,7 @@ read_status: skimmed
 
 | Paper | arXiv:2609.26781 |
 | File | `arxiv-2609.26781-agensh-scaling-organizational-intelligence-to-1.pdf` |
-| Location | `local inbox (archive blocked 2026-09-23): research to be indexed/arxiv-2609.26781-agensh-scaling-organizational-intelligence-to-1.pdf` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/arxiv-2609.26781-agensh-scaling-organizational-intelligence-to-1.pdf` |
 | Authors | Zhihao Zhan, Ting Song, Li Dong, Shaohan Huang, Jianxun Lian, Yan Xia, Furu Wei (Microsoft Research) |
 | Retrieved | 2026-09-23 |
 | Pages | 13 |
