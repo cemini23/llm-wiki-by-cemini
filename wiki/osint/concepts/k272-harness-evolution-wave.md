@@ -50,7 +50,7 @@ K272 harness cluster. Zero clones. An external gate holds release authority. An 
 |--------|--------------|---------|
 | GitHub revenue eval | gh api 2026-09-25 table | **FILE.** Zero clones. Do not install a browser |
 | EvoTreeNAD (29016) | Architecture tree, not civil genealogy | **Not Atto. Not HTR.** No repo |
-| LLM graders (29333) | A short preamble can push graders out of band | **404.** No clone |
+| LLM graders (29333) | Best MAE 1.64/35. Humans differ by 2.61/35. A short preamble pushes 14 of 17 open-weight models out of band. | **404.** No clone |
 | Behavior assays (30012) | Cheap cross-vendor studies | coding-atlas SPDX null. modelun **SIZE-SKIP** |
 | Verified commissioning (30219) | External gate holds release authority | **Do not rewrite Verify.** No repo |
 | Trace paper (30266) | One sentence on the source page | Independent log. **Do not describe the deletion** |

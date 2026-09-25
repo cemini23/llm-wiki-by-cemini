@@ -4,7 +4,7 @@
 - **Eval page:** moved from skimmed to read; gh api table noted as verified content; docx on egress.
 - **Newsletters (10):** LS foundries vs navigators deep-read; LS future deep-read; LS WorldPrompt deep-read (no local image-gen install); PE Pulse paywall teaser-only; Capital Flows rates paywall teaser-only (no level to arm); EH Kalshi Curry deep-read (no pm scp, no submit); Klement artist deep-read (not advice); WuBlock Bitget deep-read (public loss figure, containment only); WuBlock Vitalik deep-read (not advice); WuBlock weekly deep-read (Bitget figure stays TENTATIVE).
 - **Hold pages (3, unchanged, still skimmed):** arXiv 30266 trace tamper; Sterling Sky GMB suspension; tl;dr sec #347.
-- **Hubs:** harness and OOD hubs already listed all numbers; no new bullets added.
+- **Hubs:** Harness hub now records the grader MAE.
 - **Index:** seven paper rows updated from draft to validated.
 
 ## [2026-09-25] ingest | K272 wave

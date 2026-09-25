@@ -42,6 +42,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **SEO** — Sterling Sky title and URL only. No fix steps.
 - **Rule** — `## OSINT K272 — 2026-09-25` above `## OSINT K271` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
 - **Briefs** — `briefs/2026-09-25_k272-*` (8). skill_audit PASS. Sibling copies landed. Further implementation: none.
+- **Deep-read** — seven papers are deep-read; the trace paper, Sterling Sky, and tl;dr sec stay skimmed; further implementation is none.
 - **Archive** — 21/21 on `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Inbox empty.
 
 ## Current state (2026-09-24 — K271 ingest)
