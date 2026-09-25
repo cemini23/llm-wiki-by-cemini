@@ -5,10 +5,10 @@ tags: [substack, source, k272, macro]
 keywords: [k272, Vitalik, speech, not-advice]
 related:
   - concepts/k272-newsletter-macro-wave.md
-maturity: draft
+maturity: validated
 created: 2026-09-25
 updated: 2026-09-25
-read_status: read
+read_status: deep-read
 ---
 
 ## Relations
@@ -29,6 +29,12 @@ read_status: read
 
 ## Narrative
 
-The note reports a Shanghai speech by Vitalik Buterin. The speech says blockchains need new cryptographic tools. The shift he names is from "who can send" to "who can see." This is a speech note. It is **not advice**.
+The note reports a Shanghai speech by Vitalik Buterin at the 12th Global Blockchain Summit. The speech says blockchains need new cryptographic tools. The shift he names is from "who can send what" to "who can see what." He highlights SNARKs, STARKs, fully homomorphic encryption (FHE), and formal verification. He argues zero-knowledge proofs are moving from long-term roadmaps into real protocols, while programmable cryptography could expand blockchain systems from determining "who can send" to determining "who can see." AI accelerates the development, verification, and understanding of complex cryptographic systems. This is a speech note. It is **not advice**.
 
 **Cemini posture:** speech note. **Never auto-arm.** No sizing change. FILE. **0 product Integrate GO.**
+
+## Snippets
+
+> "We're entering this era of programmable cryptography, where the code decides who can see what. Who is allowed to see what pieces of information? Not just who can send, but who can see." [Source: https://wublock.substack.com/p/vitalik-shanghai-speech-blockchain (retrieved 2026-09-25)]
+
+> "Every single hard fork after H-Star — so every single hard fork that's after about one year from now — is going to involve very advanced cryptographic features." [Source: https://wublock.substack.com/p/vitalik-shanghai-speech-blockchain (retrieved 2026-09-25)]

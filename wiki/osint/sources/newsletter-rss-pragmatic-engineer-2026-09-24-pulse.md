@@ -9,6 +9,7 @@ maturity: draft
 created: 2026-09-25
 updated: 2026-09-25
 read_status: read
+paywall: teaser-only
 ---
 
 ## Relations
@@ -20,7 +21,7 @@ read_status: read
 | File | `newsletter-rss-pragmatic-engineer-2026-09-24-the-pulse-ror-creator-sparks-new-death-of-coding.md` |
 | Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-pragmatic-engineer-2026-09-24-the-pulse-ror-creator-sparks-new-death-of-coding.md` |
 | Archive | egress-fi 2026-09-25 |
-| Title | The Pulse: RoR creator sparks new “death of coding by hand” debate |
+| Title | The Pulse: RoR creator sparks new "death of coding by hand" debate |
 | URL | https://newsletter.pragmaticengineer.com/p/the-pulse-end-of-coding-by-hand |
 | Feed | pragmatic-engineer (RSS teaser) |
 | Retrieved | 2026-09-25 |

@@ -18,13 +18,13 @@ OSINT K272: 21 new source pages (1 eval docx + 8 arXiv + 12 newsletter/substack)
 | [k272-gambling-pm-wave](concepts/k272-gambling-pm-wave.md) | K272 Gambling / PM Wave | draft |
 | [k272-ood-stub-wave](concepts/k272-ood-stub-wave.md) | K272 OOD Stub Wave | draft |
 | [eval-github-repo-revenue-k272](sources/eval-github-repo-revenue-2026-09-25.md) | GitHub Repository Revenue Evaluation (gh api overrides) | draft |
-| [arxiv-2609.29016-evotreenad](sources/arxiv-2609.29016-evotreenad-2026-09-25.md) | Architecture tree (not Atto, not HTR) | draft |
-| [arxiv-2609.29035-bounded-coalescent](sources/arxiv-2609.29035-bounded-coalescent-2026-09-25.md) | Bounded coalescent (not Atto) | draft |
-| [arxiv-2609.29333-llm-graders](sources/arxiv-2609.29333-llm-graders-2026-09-25.md) | Exam graders (repo 404) | draft |
-| [arxiv-2609.29964-world-action-agent](sources/arxiv-2609.29964-world-action-agent-2026-09-25.md) | Robot VLM harness (not a product) | draft |
-| [arxiv-2609.30012-behavior-assays](sources/arxiv-2609.30012-behavior-assays-2026-09-25.md) | Cheap cross-vendor behavior assays | draft |
-| [arxiv-2609.30219-verified-commissioning](sources/arxiv-2609.30219-verified-commissioning-2026-09-25.md) | External gate holds release authority | draft |
-| [arxiv-2609.30249-rapid](sources/arxiv-2609.30249-rapid-2026-09-25.md) | Robot program from one demonstration | draft |
+| [arxiv-2609.29016-evotreenad](sources/arxiv-2609.29016-evotreenad-2026-09-25.md) | Architecture tree (not Atto, not HTR) | validated |
+| [arxiv-2609.29035-bounded-coalescent](sources/arxiv-2609.29035-bounded-coalescent-2026-09-25.md) | Bounded coalescent (not Atto) | validated |
+| [arxiv-2609.29333-llm-graders](sources/arxiv-2609.29333-llm-graders-2026-09-25.md) | Exam graders (repo 404) | validated |
+| [arxiv-2609.29964-world-action-agent](sources/arxiv-2609.29964-world-action-agent-2026-09-25.md) | Robot VLM harness (not a product) | validated |
+| [arxiv-2609.30012-behavior-assays](sources/arxiv-2609.30012-behavior-assays-2026-09-25.md) | Cheap cross-vendor behavior assays | validated |
+| [arxiv-2609.30219-verified-commissioning](sources/arxiv-2609.30219-verified-commissioning-2026-09-25.md) | External gate holds release authority | validated |
+| [arxiv-2609.30249-rapid](sources/arxiv-2609.30249-rapid-2026-09-25.md) | Robot program from one demonstration | validated |
 | [arxiv-2609.30266-trace-tamper](sources/arxiv-2609.30266-trace-tamper-2026-09-25.md) | Independent log (one sentence) | draft |
 | [ls-foundries-navigators](sources/newsletter-rss-latent-space-2026-09-24-foundries-navigators.md) | Science-cost interview (FILE) | draft |
 | [ls-future](sources/newsletter-rss-latent-space-2026-09-25-future.md) | Latent Space publication note | draft |

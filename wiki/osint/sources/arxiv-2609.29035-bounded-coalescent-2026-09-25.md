@@ -5,10 +5,10 @@ tags: [arxiv, source, k272, ood]
 keywords: [k272, bounded-coalescent, phylodyn, not-Atto]
 related:
   - concepts/k272-ood-stub-wave.md
-maturity: draft
+maturity: validated
 created: 2026-09-25
 updated: 2026-09-25
-read_status: skimmed
+read_status: deep-read
 ---
 
 ## Relations
@@ -30,9 +30,7 @@ read_status: skimmed
 
 ## Narrative
 
-The bounded coalescent is a statistical model of population size. It keeps the time to the most recent common ancestor under a fixed upper bound. The paper treats that estimation problem as an intensity function of an inhomogeneous point process. The stated settings are infectious-disease timing and synthetic barcoding.
-
-This paper is **not Atto**. It is not civil records. It is not HTR. No lab steps are recorded.
+The bounded coalescent is a statistical model of population size. It keeps the time to the most recent common ancestor under a fixed upper bound. The paper treats that estimation problem as an intensity function of an inhomogeneous point process. The stated settings are infectious-disease timing and synthetic barcoding. A transformed Gaussian process prior is placed on the effective population size trajectory. A Markov chain Monte Carlo procedure is developed for posterior inference that avoids discretization of the likelihood integrals. An efficient simulation algorithm combines time transformation and thinning to propose events via a time-varying upper bound on the coalescent intensity. The method is illustrated using SARS-CoV-2 sequence data from Washington State. This paper is **not Atto**. It is not civil records. It is not HTR. No lab steps are recorded. Phylodynamic inference is not Atto and not HTR.
 
 | Repo | gh api 2026-09-25 | Verdict |
 |------|-------------------|---------|
@@ -40,3 +38,9 @@ This paper is **not Atto**. It is not civil records. It is not HTR. No lab steps
 | bingjingle/boundedcoal | 404 | **NO-CLONE** |
 
 **Cemini posture:** FILE. No clone. **0 product Integrate GO.** Transkribus stays the only product HTR.
+
+## Snippets
+
+> "The bounded coalescent conditions genealogies on the time to the most recent common ancestor being bounded above by a fixed time." [Source: https://arxiv.org/html/2609.29035 (retrieved 2026-09-25)]
+
+> "We provide an efficient algorithm for coalescent simulation under the bounded coalescent using point process methods, retaining the exactness of naive rejection sampling while substantially reducing computational cost." [Source: https://arxiv.org/html/2609.29035 (retrieved 2026-09-25)]

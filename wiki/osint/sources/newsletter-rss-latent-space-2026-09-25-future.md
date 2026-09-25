@@ -5,10 +5,10 @@ tags: [newsletter, source, k272, harness]
 keywords: [k272, AINews, publication, route]
 related:
   - concepts/k272-harness-evolution-wave.md
-maturity: draft
+maturity: validated
 created: 2026-09-25
 updated: 2026-09-25
-read_status: read
+read_status: deep-read
 ---
 
 ## Relations
@@ -29,6 +29,12 @@ read_status: read
 
 ## Narrative
 
-This issue is a publication note. It describes plans for AINews v3, a possible new home for the multi-show network, and a reopening of sponsorships. The same issue also recaps a frontier-model week. Those model claims are **[TENTATIVE]**.
+This issue is a publication note. It describes plans for AINews v3, a possible new home for the multi-show network, and a reopening of sponsorships. The same issue also recaps a frontier-model week. Those model claims are **[TENTATIVE]**. The post announces a migration to Beehiiv and a new homepage, a new Business/Ops Manager and Head of Editorial, and reopening for sponsorships. It references the upcoming Supabase Select event in SF.
 
 **Cemini posture:** publication note only. **Do not change `/route`.** FILE. **0 product Integrate GO.** Never auto-evolve skills.
+
+## Snippets
+
+> "Plans for AINews v3: This op-ed you are reading has always been human-authored by swyx every weekday for the last 3 years, and what started as a simple way to solve Discord fatigue eventually became LS's newspaper." [Source: https://www.latent.space/p/ainews-the-future-of-latent-space (retrieved 2026-09-25)]
+
+> "We'll be exploring a migration to Beehiiv and a new homepage." [Source: https://www.latent.space/p/ainews-the-future-of-latent-space (retrieved 2026-09-25)]

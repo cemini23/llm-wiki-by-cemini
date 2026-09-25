@@ -5,10 +5,10 @@ tags: [newsletter, source, k272, harness]
 keywords: [k272, foundries, navigators, science-cost, FILE]
 related:
   - concepts/k272-harness-evolution-wave.md
-maturity: draft
+maturity: validated
 created: 2026-09-25
 updated: 2026-09-25
-read_status: read
+read_status: deep-read
 ---
 
 ## Relations
@@ -30,6 +30,12 @@ read_status: read
 
 ## Narrative
 
-The guest post contrasts two uses of models in science. Foundries cut the cost of measurement. Navigators place models inside ordinary decisions about tools and which experiment is worth running. The post is an interview about cost. It is not a product and not a lab protocol.
+The guest post contrasts two uses of models in science. Foundries cut the cost of measurement. They industrialize the measurement, using new technology to generate data an order of magnitude faster than before. Navigators spend the surplus of thinking. The AI models sit in the ordinary machinery of the company, driving better decisions and faster processes. They increasingly govern how the work is conducted, what tools get built, and which questions are worth an experiment. A proprietary model or a massive dataset are not required, only a willingness to evolve how the company works. Building a foundry is a genuine strategic commitment that takes capital, years, and a bet on a particular technology. Navigators are invisible by comparison because the gains are operational and nobody issues a press release about a path they decided against. Navigation runs fastest at early-stage startups, which have no legacy to shed. The post describes Endura's two-stage triage using LLM research agents across 500 disease targets, then 100 remaining targets with thirty-page reports each. The post is an interview about cost. It is not a product and not a lab protocol.
 
 **Cemini posture:** FILE. No lab steps. **0 product Integrate GO.** Never auto-evolve skills. Do not swap `/route`.
+
+## Snippets
+
+> "Foundries shrink the cost of doing. They industrialize the measurement, using new technology to generate data an order of magnitude faster than before." [Source: https://www.latent.space/p/foundries-vs-navigators-lowering (retrieved 2026-09-25)]
+
+> "Navigators spend the surplus of thinking. The AI models sit in the ordinary machinery of the company, driving better decisions and faster processes." [Source: https://www.latent.space/p/foundries-vs-navigators-lowering (retrieved 2026-09-25)]

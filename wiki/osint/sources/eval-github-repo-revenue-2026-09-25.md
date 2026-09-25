@@ -10,7 +10,7 @@ related:
 maturity: draft
 created: 2026-09-25
 updated: 2026-09-25
-read_status: skimmed
+read_status: read
 ---
 
 ## Relations
@@ -29,7 +29,7 @@ read_status: skimmed
 | sha256 | `c8d46938a4aa74e4be509ba3b5717d9c7eeb59b64f1f6e26c43070bff20726a6` |
 | Theme | Agent memory, collaborative office harnesses, userland hardware security, and media pipelines |
 
-Never trust a license claim inside the docx. **gh api 2026-09-25 overrides it.** **0 product Integrate GO.** Zero clones.
+Never trust a license claim inside the docx. **gh api 2026-09-25 overrides it.** **0 product Integrate GO.** Zero clones. The docx is on egress and the gh api table is the verified content.
 
 ## Narrative
 

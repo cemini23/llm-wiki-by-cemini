@@ -5,10 +5,10 @@ tags: [substack, source, k272, macro]
 keywords: [k272, Klement, artist, Laliotis, Makridis, opinion]
 related:
   - concepts/k272-newsletter-macro-wave.md
-maturity: draft
+maturity: validated
 created: 2026-09-25
 updated: 2026-09-25
-read_status: read
+read_status: deep-read
 ---
 
 ## Relations
@@ -29,8 +29,12 @@ read_status: read
 
 ## Narrative
 
-Klement reads a study by Ioannis Laliotis and Christos Makridis on artist income in the EU and the UK. The note says artists earn less than similar workers. The UK gap in the note is about 5 percent. The driver he names is unsteady work, not a traded factor. Income losses were larger when the 2023 downturn followed the 2022 inflation spike.
-
-This is an opinion. It is not a sizing input.
+Klement reads a study by Ioannis Laliotis and Christos Makridis on artist income in the EU and the UK. The note says artists earn less than similar workers. The UK gap in the note is about 5 percent. The driver he names is unsteady work, not a traded factor. Income losses were larger when the 2023 downturn followed the 2022 inflation spike. This is an opinion. It is not a sizing input.
 
 **Cemini posture:** **No sizing change.** Never auto-arm. FILE. **0 product Integrate GO.**
+
+## Snippets
+
+> "In the UK, for example, artists typically earn about 5% less than a similar worker." [Source: https://klementoninvesting.substack.com/p/the-economics-of-being-an-artist (retrieved 2026-09-25)]
+
+> "The driver behind this wage difference is that artists generally don't have steady employment." [Source: https://klementoninvesting.substack.com/p/the-economics-of-being-an-artist (retrieved 2026-09-25)]
