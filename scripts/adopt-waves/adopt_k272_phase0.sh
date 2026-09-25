@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# OSINT K272 Phase-0 — clones nothing.
+# Dual-ID: OSINT K272 = 25 Sep 2026 inbox. gh api 2026-09-25.
+# 0 product Integrate GO. FILE and HITL only.
+set -euo pipefail
+echo "=== K272 Phase-0 — no clone ==="
+echo "=== SKIP (documented) — no product Integrate GO ==="
+echo "Search MIT 1140 KB macOS browser NO-CLONE; jev-browser already exists"
+echo "hindsight already SIZE-SKIP from K271 NO-CLONE"
+echo "univer already SIZE-SKIP from K271 NO-CLONE"
+echo "starnet MIT 1733104 KB SIZE-SKIP"
+echo "wifit3 wireless-tool URL class NO-CLONE no steps"
+echo "wifite2 wireless-tool URL class NO-CLONE no steps"
+echo "kubernetes-the-hard-way Apache 711 KB tutorial NO-CLONE"
+echo "tick-stock-panel MIT 25615 KB NO-CLONE no live orders"
+echo "impeccable Apache 377515 KB SIZE-SKIP"
+echo "openbao MPL-2.0 319427 KB SIZE-SKIP"
+echo "TikTokDownloader TikTok-Api scraper URL class NO-CLONE; GPL and AGPL stay extract-only"
+echo "Pixelle-Video VideoLingo video-use video2x VideoCaptioner video.js NO-CLONE no image-gen install"
+echo "TikTok-Unlock Zefoy-TikTok-Automator TikTok-ViewBot engagement-automation URL class NO-CLONE no steps"
+echo "phylodyn SPDX null 1986 KB NO-CLONE"
+echo "boundedcoal 404 NO-CLONE"
+echo "KAUST graders repo 404 NO-CLONE"
+echo "coding-atlas SPDX null 7401 KB NO-CLONE"
+echo "modelun MIT 21956 KB SIZE-SKIP wont_wire"
+echo "=== DONE ==="
+echo "0 clones. 0 product Integrate GO. FILE and HITL only. Do not swap /route."
+echo "No product install. No image-gen install. Never auto-evolve skills."
+echo "Keep the live jev path. Do not install a browser."
+echo "No xsp/pm scp. No LIVE Discord. Never npx github:. Never auto-arm."

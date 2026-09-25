@@ -5,6 +5,7 @@ tags: [agents, harness, k271, ccc]
 keywords: [jev-curate, Canny, RegenHarness, SkillGym, SGC]
 related:
   - concepts/k270-harness-evolution-wave.md
+  - concepts/k272-harness-evolution-wave.md
   - sources/eval-multi-wiki-url-revenue-2026-09-24.md
   - sources/arxiv-2609.27542-control-token-2026-09-24.md
   - sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md
@@ -15,7 +16,7 @@ related:
   - entities/tools/canny.md
 maturity: draft
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -23,6 +24,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k270-harness-evolution-wave.md
+- @concepts/k272-harness-evolution-wave.md
 - @sources/eval-multi-wiki-url-revenue-2026-09-24.md
 - @sources/arxiv-2609.27542-control-token-2026-09-24.md
 - @sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md

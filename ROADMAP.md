@@ -30,6 +30,20 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-25 — K272 ingest)
+
+- **K272 ingest** — 21 source pages + 5 hubs. modelun updated: license **MIT**, size **21956 KB** still blocks the clone, `wont_wire` stays. Phase-0 **clones nothing**. **NO-CLONE / SIZE-SKIP:** Search MIT 1140 KB; hindsight and univer already SIZE-SKIP from K271; starnet MIT 1733104 KB; kubernetes-the-hard-way Apache 711 KB; tick-stock-panel MIT 25615 KB; impeccable Apache 377515 KB; openbao MPL-2.0 319427 KB; phylodyn SPDX null 1986 KB; boundedcoal 404; KAUST graders 404; coding-atlas SPDX null 7401 KB; modelun MIT 21956 KB. Wireless-tool URL class and engagement-automation URL class: no steps. Media pipelines: no image-gen install. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill evolve. No product install. Do not install a browser. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. Live jev path unchanged.**
+- **Harness (CCC)** — external gate holds release authority. Independent log outside the agent. Do not rewrite Verify. Do not describe the deletion. Never auto-evolve skills. Do not install a browser.
+- **Atto** — EvoTreeNAD is **not genealogy and not HTR**. Phylodynamic inference is **not Atto**. Transkribus sole HTR.
+- **GuruWatcher** — rates, Klement, and WuBlock FILE; **no level to arm**; Bitget figure is a news claim; **never auto-arm**.
+- **CeminiDFS** — thin FILE. tick-stock-panel is not a live order. No sizing change.
+- **CeminiParlays / Gambling** — Kalshi self-certified Steph Curry markets. **No submit. No pm scp.**
+- **Cyber** — tl;dr sec #347 is a headline list. No procedure.
+- **SEO** — Sterling Sky title and URL only. No fix steps.
+- **Rule** — `## OSINT K272 — 2026-09-25` above `## OSINT K271` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs** — `briefs/2026-09-25_k272-*` (8). skill_audit PASS. Sibling copies landed. Further implementation: none.
+- **Archive** — 21/21 on `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Inbox empty.
+
 ## Current state (2026-09-24 — K271 ingest)
 
 - **K271 ingest** — 13 source pages + 5 hubs + 2 entities. Phase-0 **two REFERENCE clones**: jev-curate MIT 504 KB; canny MIT 266 KB. **NO-CLONE**: hindsight / univer / Model-Optimizer / harness-sdk / jev-chat-jarvis / treg / google/ax / axe / learn-harness-engineering / ai-memory / apple-corelocation / agent-desktop / typesafe-mario / jev-drone / OneVOneJev / neo4jev (prior FILE) / killmyidea / FluidUse (already SIZE-SKIP) / deleting-the-trace / SkillGym / InGuard / Echo-Chamber 404. Skips stay in the inbox (K268 Jev PDF, duplicate multi-repo plan, K270 arXiv and newsletters, Sterling Sky batch). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill evolve. No weight download. No product install. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. Live jev path unchanged.**

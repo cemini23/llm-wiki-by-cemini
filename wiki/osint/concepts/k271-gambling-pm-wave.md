@@ -5,10 +5,11 @@ tags: [prediction-markets, gambling, k271]
 keywords: [World-Cup, Bristol, logos, Kalshi, broadcast]
 related:
   - concepts/k270-gambling-pm-wave.md
+  - concepts/k272-gambling-pm-wave.md
   - sources/substack-rss-event-horizon-2026-09-24-wc-broadcasts.md
 maturity: draft
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -16,6 +17,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k270-gambling-pm-wave.md
+- @concepts/k272-gambling-pm-wave.md
 - @sources/substack-rss-event-horizon-2026-09-24-wc-broadcasts.md
 
 ## Raw Concept

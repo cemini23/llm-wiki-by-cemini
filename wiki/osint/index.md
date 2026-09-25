@@ -7,6 +7,38 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K272 ingest (2026-09-25)
+OSINT K272: 21 new source pages (1 eval docx + 8 arXiv + 12 newsletter/substack) + 5 hubs. Entity update: modelun license is now MIT (gh api 2026-09-25); size 21956 KB still blocks the clone; `wont_wire` stays. Phase-0 **clones nothing**. **NO-CLONE / SIZE-SKIP:** Search MIT 1140 KB (macOS browser; jev-browser already exists); hindsight and univer already SIZE-SKIP from K271; starnet MIT 1733104 KB; kubernetes-the-hard-way Apache 711 KB; tick-stock-panel MIT 25615 KB (no live orders); impeccable Apache 377515 KB; openbao MPL-2.0 319427 KB; phylodyn SPDX null 1986 KB; boundedcoal 404; KAUST graders repo 404; coding-atlas SPDX null 7401 KB; modelun MIT 21956 KB SIZE-SKIP. Wireless-tool URL class and engagement-automation URL class: no steps, no clone. Media pipelines: no image-gen install. GPL and AGPL stay extract-only. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill auto-evolve. No product install. Do not install a browser. Live jev path unchanged. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. Transkribus stays the only product HTR. 21/21 files are at cemini-egress-fi:/opt/cemini-bulk/research/osint/. The inbox is empty.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k272-harness-evolution-wave](concepts/k272-harness-evolution-wave.md) | K272 Harness Evolution Wave | draft |
+| [k272-vol-quant-wave](concepts/k272-vol-quant-wave.md) | K272 Vol Quant Wave | draft |
+| [k272-newsletter-macro-wave](concepts/k272-newsletter-macro-wave.md) | K272 Newsletter Macro Wave | draft |
+| [k272-gambling-pm-wave](concepts/k272-gambling-pm-wave.md) | K272 Gambling / PM Wave | draft |
+| [k272-ood-stub-wave](concepts/k272-ood-stub-wave.md) | K272 OOD Stub Wave | draft |
+| [eval-github-repo-revenue-k272](sources/eval-github-repo-revenue-2026-09-25.md) | GitHub Repository Revenue Evaluation (gh api overrides) | draft |
+| [arxiv-2609.29016-evotreenad](sources/arxiv-2609.29016-evotreenad-2026-09-25.md) | Architecture tree (not Atto, not HTR) | draft |
+| [arxiv-2609.29035-bounded-coalescent](sources/arxiv-2609.29035-bounded-coalescent-2026-09-25.md) | Bounded coalescent (not Atto) | draft |
+| [arxiv-2609.29333-llm-graders](sources/arxiv-2609.29333-llm-graders-2026-09-25.md) | Exam graders (repo 404) | draft |
+| [arxiv-2609.29964-world-action-agent](sources/arxiv-2609.29964-world-action-agent-2026-09-25.md) | Robot VLM harness (not a product) | draft |
+| [arxiv-2609.30012-behavior-assays](sources/arxiv-2609.30012-behavior-assays-2026-09-25.md) | Cheap cross-vendor behavior assays | draft |
+| [arxiv-2609.30219-verified-commissioning](sources/arxiv-2609.30219-verified-commissioning-2026-09-25.md) | External gate holds release authority | draft |
+| [arxiv-2609.30249-rapid](sources/arxiv-2609.30249-rapid-2026-09-25.md) | Robot program from one demonstration | draft |
+| [arxiv-2609.30266-trace-tamper](sources/arxiv-2609.30266-trace-tamper-2026-09-25.md) | Independent log (one sentence) | draft |
+| [ls-foundries-navigators](sources/newsletter-rss-latent-space-2026-09-24-foundries-navigators.md) | Science-cost interview (FILE) | draft |
+| [ls-future](sources/newsletter-rss-latent-space-2026-09-25-future.md) | Latent Space publication note | draft |
+| [ls-worldprompt](sources/newsletter-rss-latent-space-2026-09-25-worldprompt.md) | WorldPrompt teaser (TENTATIVE) | draft |
+| [pe-pulse](sources/newsletter-rss-pragmatic-engineer-2026-09-24-pulse.md) | Coding-jobs teaser (FILE) | draft |
+| [sterling-gmb-suspension](sources/newsletter-rss-sterling-sky-2026-09-23-gmb-suspension.md) | Sterling title and URL only | draft |
+| [tldrsec-347](sources/newsletter-rss-tldrsec-2026-09-24-347.md) | Headline list only | draft |
+| [cf-rates](sources/substack-rss-capital-flows-2026-09-24-rates.md) | Rates teaser (no level) | draft |
+| [eh-kalshi-curry](sources/substack-rss-event-horizon-2026-09-25-kalshi-curry.md) | Kalshi Curry self-certification news | draft |
+| [klement-artist](sources/substack-rss-klement-2026-09-25-artist.md) | Artist-wage opinion | draft |
+| [wublock-bitget](sources/substack-rss-wublock-2026-09-24-bitget.md) | Bitget public loss figure | draft |
+| [wublock-vitalik](sources/substack-rss-wublock-2026-09-24-vitalik.md) | Vitalik speech note (not advice) | draft |
+| [wublock-weekly](sources/substack-rss-wublock-2026-09-25-weekly.md) | Weekly news list (Bitget figure TENTATIVE) | draft |
+
 ### K271 ingest (2026-09-24)
 OSINT K271: 13 new source pages (1 eval docx + 8 arXiv + 4 newsletter/substack). Skips (no new source pages): Jev Trading Research Paper.pdf (K268); Multi-Repo Revenue Evaluation Plan.docx (duplicate); eight arXiv PDFs 25447–26781 (K270); Opus 5.5; biosecurity note; SparkToro; SecPro 252; WuBlock bStocks; KOSPI; CFTC mention markets; who-forecasts; Appleton; Windows; John Platt; 14 Sterling Sky files (K270 batch page). Phase-0 **REFERENCE clones**: jev-curate MIT 504 KB; canny MIT 266 KB. **NO-CLONE**: hindsight, univer, Model-Optimizer, harness-sdk, jev-chat-jarvis, treg, google/ax, axe, learn-harness-engineering, ai-memory, apple-corelocation, agent-desktop, typesafe-mario, jev-drone, OneVOneJev, neo4jev (prior FILE), killmyidea, FluidUse (already SIZE-SKIP), deleting-the-trace, SkillGym, InGuard, Echo-Chamber 404. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill auto-evolve. No weight download. No product install. Live jev path unchanged. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. World-cup bot stays retired. Control-token paper is a name and an impact. One Klement file is on egress. The other new files stay in the local inbox. Archive pending for those twelve.**
 
@@ -44,7 +76,7 @@ OSINT K270: 19 new source pages (8 arXiv/PDF + 10 newsletter/substack + 1 Sterli
 | [k270-gambling-pm-wave](concepts/k270-gambling-pm-wave.md) | K270 Gambling / PM Wave | draft |
 | [k270-ood-stub-wave](concepts/k270-ood-stub-wave.md) | K270 OOD Stub Wave | draft |
 | [cliffcompaction](entities/tools/cliffcompaction.md) | cliffcompaction MIT REFERENCE FILE | draft |
-| [modelun](entities/tools/modelun.md) | modelun SPDX null NO-CLONE | draft |
+| [modelun](entities/tools/modelun.md) | modelun MIT SIZE-SKIP; wont_wire (K272) | draft |
 | [agensh](entities/tools/agensh.md) | agensh GitHub 404 NO-CLONE | draft |
 | [arxiv-2609.25447-conduct-under-pressure](sources/arxiv-2609.25447-conduct-under-pressure-2026-09-23.md) | 60 models under user pressure | draft |
 | [arxiv-2609.25518-matryoshka-attribution](sources/arxiv-2609.25518-matryoshka-attribution-2026-09-23.md) | Matryoshka Attribution (method only) | draft |

@@ -5,10 +5,11 @@ tags: [vol, options, quant, k271]
 keywords: [soybean, CVOL, stochastic-volatility, surface]
 related:
   - concepts/k270-vol-quant-wave.md
+  - concepts/k272-vol-quant-wave.md
   - sources/arxiv-2609.27138-commodity-sv-2026-09-24.md
 maturity: draft
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -16,6 +17,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k270-vol-quant-wave.md
+- @concepts/k272-vol-quant-wave.md
 - @sources/arxiv-2609.27138-commodity-sv-2026-09-24.md
 
 ## Raw Concept

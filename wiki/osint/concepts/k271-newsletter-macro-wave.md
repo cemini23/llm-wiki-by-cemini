@@ -5,11 +5,12 @@ tags: [macro, newsletter, k271, guruwatcher]
 keywords: [Klement, acquisitions, Fillat, Garetto]
 related:
   - concepts/k270-newsletter-macro-wave.md
+  - concepts/k272-newsletter-macro-wave.md
   - sources/substack-rss-klement-2026-09-24-ai-debt.md
   - sources/substack-rss-klement-2026-09-24-acquisitions.md
 maturity: draft
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -17,6 +18,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k270-newsletter-macro-wave.md
+- @concepts/k272-newsletter-macro-wave.md
 - @sources/substack-rss-klement-2026-09-24-ai-debt.md
 - @sources/substack-rss-klement-2026-09-24-acquisitions.md
 

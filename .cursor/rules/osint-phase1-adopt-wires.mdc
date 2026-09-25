@@ -383,6 +383,24 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K272 — 2026-09-25
+Dual-ID: **OSINT K272**. FILE and HITL only. **0 product Integrate GO.**
+- Phase-0 clones nothing. No new directory under `.local/adopts/` for modelun, phylodyn, wifite2, or search.
+- NO-CLONE / SIZE-SKIP: Search MIT 1140 KB (macOS browser; jev-browser already exists; do not install a browser; live jev path stays); hindsight and univer already SIZE-SKIP from K271; starnet MIT 1733104 KB; kubernetes-the-hard-way Apache 711 KB (tutorial); tick-stock-panel MIT 25615 KB (no live orders); impeccable Apache 377515 KB; openbao MPL-2.0 319427 KB; phylodyn SPDX null 1986 KB; boundedcoal 404; KAUST graders repo 404; coding-atlas SPDX null 7401 KB; modelun MIT 21956 KB SIZE-SKIP (`wont_wire` stays).
+- URL class only, no steps, no clone: wifit3 and wifite2 (wireless-tool); TikTok-Unlock, Zefoy automator, and TikTok-ViewBot (engagement-automation). TikTok downloaders: no scraper. Pixelle-Video, VideoLingo, video-use, video2x, VideoCaptioner, video.js: no image-gen install. GPL and AGPL stay extract-only.
+- 21 source pages, 5 hubs (`k272-harness-evolution-wave`, `k272-vol-quant-wave`, `k272-newsletter-macro-wave`, `k272-gambling-pm-wave`, `k272-ood-stub-wave`). modelun entity updated. `harness_verb: FILE`. Hubs `wire_status: policy_wired`.
+- **Do not swap `/route`.** Never auto-evolve skills. Never `npx github:`. No product install. Do not install a browser. Keep the live jev path.
+- Verified commissioning: the external gate holds release authority. Do not rewrite Verify.
+- Trace paper: tested harnesses let an agent delete its own trace. Advice is an independent log outside the agent. Do not describe the deletion.
+- EvoTreeNAD is not genealogy, not civil records, and not HTR. Phylodynamic inference is not Atto. Transkribus stays the only product HTR. No lab steps.
+- GW: rates, Klement, and WuBlock FILE; **no level to arm**; Bitget figure is a news claim; the weekly figure is **[TENTATIVE]**; **never auto-arm**. Vitalik note is not advice.
+- DFS: thin FILE. No live orders. Parlays/gambling: Kalshi Curry self-certification news; **no pm scp**; **no submit**.
+- Cyber: tl;dr sec #347 is a headline list. No procedure.
+- SEO: Sterling Sky title and URL only. No fix steps.
+- WorldPrompt is an image-gen teaser and **[TENTATIVE]**. No local image-gen install.
+- Docx license claims are not authority. gh api 2026-09-25 overrides them.
+- Verify: `bash scripts/adopt_k272_phase0.sh` then `bash scripts/adopt_k272_phase1.sh`. **No LIVE Discord. No xsp/pm scp.** Archive pending for the parent.
+
 ## OSINT K271 — 2026-09-24
 Dual-ID: **OSINT K271**. FILE and HITL only. **0 product Integrate GO.**
 - REFERENCE clones: `.local/adopts/jev-curate` MIT, 504 KB, depth 1 (dataset sifter, `wont_wire`); `.local/adopts/canny` MIT, 266 KB, depth 1 (evidence gate, `wont_wire`). Do not install Canny. Do not replace the live jev path. No vault data. jev-curate is not genealogy and not HTR.

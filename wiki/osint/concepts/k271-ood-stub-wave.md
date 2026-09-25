@@ -5,12 +5,13 @@ tags: [ood, stub, k271]
 keywords: [InGuard, echo-chambers, CoRelNav]
 related:
   - concepts/k270-ood-stub-wave.md
+  - concepts/k272-ood-stub-wave.md
   - sources/arxiv-2609.27620-inguard-2026-09-24.md
   - sources/arxiv-2609.27639-echo-chambers-2026-09-24.md
   - sources/arxiv-2609.27720-corelnav-2026-09-24.md
 maturity: draft
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -18,6 +19,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k270-ood-stub-wave.md
+- @concepts/k272-ood-stub-wave.md
 - @sources/arxiv-2609.27620-inguard-2026-09-24.md
 - @sources/arxiv-2609.27639-echo-chambers-2026-09-24.md
 - @sources/arxiv-2609.27720-corelnav-2026-09-24.md

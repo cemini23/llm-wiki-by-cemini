@@ -1,0 +1,34 @@
+---
+title: "Latent Space AINews — The Future of Latent Space"
+type: source
+tags: [newsletter, source, k272, harness]
+keywords: [k272, AINews, publication, route]
+related:
+  - concepts/k272-harness-evolution-wave.md
+maturity: draft
+created: 2026-09-25
+updated: 2026-09-25
+read_status: read
+---
+
+## Relations
+
+- @concepts/k272-harness-evolution-wave.md
+
+## Raw Concept
+
+| File | `newsletter-rss-latent-space-2026-09-25-ainews-the-future-of-latent-space.md` |
+| Location | `cemini-egress-fi:/opt/cemini-bulk/research/osint/newsletter-rss-latent-space-2026-09-25-ainews-the-future-of-latent-space.md` |
+| Archive | egress-fi 2026-09-25 |
+| Title | [AINews] The Future of Latent Space |
+| URL | https://www.latent.space/p/ainews-the-future-of-latent-space |
+| Feed | latent-space |
+| Retrieved | 2026-09-25 |
+| Dual-ID | **OSINT K272** |
+| sha256 | `aba55918151fb7e401d11c1d137a4ce7933b0c7ef2ea4aaaff13be23402f366d` |
+
+## Narrative
+
+This issue is a publication note. It describes plans for AINews v3, a possible new home for the multi-show network, and a reopening of sponsorships. The same issue also recaps a frontier-model week. Those model claims are **[TENTATIVE]**.
+
+**Cemini posture:** publication note only. **Do not change `/route`.** FILE. **0 product Integrate GO.** Never auto-evolve skills.
