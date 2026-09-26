@@ -5,10 +5,11 @@ tags: [vol, options, quant, k272]
 keywords: [k272, tick-stock-panel, no-live-orders]
 related:
   - concepts/k271-vol-quant-wave.md
+  - concepts/k273-vol-quant-wave.md
   - sources/eval-github-repo-revenue-2026-09-25.md
 maturity: draft
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -16,6 +17,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k271-vol-quant-wave.md
+- @concepts/k273-vol-quant-wave.md
 - @sources/eval-github-repo-revenue-2026-09-25.md
 
 ## Raw Concept

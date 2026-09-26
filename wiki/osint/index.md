@@ -7,6 +7,27 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K273 ingest (2026-09-26)
+OSINT K273: 10 new source pages (2 eval docx + 2 arXiv + 6 newsletter/substack) + 5 hubs. Phase-0 **clones nothing**. Sports, DFS, and parlay rows keep a pattern extract when SPDX is null or NOASSERTION. **NO-CLONE:** draftfast null 2198 KB; Odds-Search null 215 KB; mlb-prop-optimizer null 1074178 KB; weathernfl null 12187 KB; nfl-forecast-model null 519245 KB; nuke-dfs-hub null 7381 KB; fanduel api-evangelist null 478 KB; nfl-ngs-raw null 962762 KB; fanduel-bot null 8469 KB; dfsOptimizer NOASSERTION 504 KB; cfb-dfs-data null 11991 KB; aegis-audio-defense MIT 6618 KB. Agent-runtime rows over about 2 MB are SIZE-SKIP. The cyclomatic-complexity skill stays uninstalled. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Transkribus stays the only product HTR. 10/10 files are at cemini-egress-fi:/opt/cemini-bulk/research/osint/. The inbox is empty.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k273-harness-evolution-wave](concepts/k273-harness-evolution-wave.md) | K273 Harness Evolution Wave | draft |
+| [k273-vol-quant-wave](concepts/k273-vol-quant-wave.md) | K273 Vol Quant Wave | draft |
+| [k273-newsletter-macro-wave](concepts/k273-newsletter-macro-wave.md) | K273 Newsletter Macro Wave | draft |
+| [k273-gambling-pm-wave](concepts/k273-gambling-pm-wave.md) | K273 Gambling / PM Wave | draft |
+| [k273-ood-stub-wave](concepts/k273-ood-stub-wave.md) | K273 OOD Stub Wave | draft |
+| [eval-nfl-dfs-revenue-k273](sources/eval-nfl-dfs-revenue-2026-09-26.md) | NFL DFS pattern extracts (null SPDX kept) | draft |
+| [eval-agent-runtime-revenue-k273](sources/eval-agent-runtime-revenue-2026-09-26.md) | Agent runtime eval (normal license gate) | draft |
+| [arxiv-2609.29167-indicbankbench](sources/arxiv-2609.29167-indicbankbench-2026-09-26.md) | Banking assistant reliability (not Atto) | draft |
+| [arxiv-2609.29287-aegis-audio](sources/arxiv-2609.29287-aegis-audio-2026-09-26.md) | AEGIS name and impact (no clone) | draft |
+| [ls-openrouter](sources/newsletter-rss-latent-space-2026-09-25-openrouter.md) | OpenRouter interview teaser | draft |
+| [sterling-virtual-office](sources/newsletter-rss-sterling-sky-2026-09-24-sterling-virtual-office.md) | Sterling title and URL only | draft |
+| [sterling-review-gating](sources/newsletter-rss-sterling-sky-2026-09-24-sterling-review-gating.md) | Sterling title and URL only | draft |
+| [sterling-title-length](sources/newsletter-rss-sterling-sky-2026-09-24-sterling-title-length.md) | Sterling title and URL only | draft |
+| [seceng-fundamentals](sources/substack-rss-seceng-weekly-2026-09-25-fundamentals.md) | Headline only | draft |
+| [secpro-253-teamcity](sources/substack-rss-secpro-2026-09-25-253-teamcity.md) | TeamCity headline; CI/CD target class | draft |
+
 ### K272 ingest (2026-09-25)
 OSINT K272: 21 new source pages (1 eval docx + 8 arXiv + 12 newsletter/substack) + 5 hubs. Entity update: modelun license is now MIT (gh api 2026-09-25); size 21956 KB still blocks the clone; `wont_wire` stays. Phase-0 **clones nothing**. **NO-CLONE / SIZE-SKIP:** Search MIT 1140 KB (macOS browser; jev-browser already exists); hindsight and univer already SIZE-SKIP from K271; starnet MIT 1733104 KB; kubernetes-the-hard-way Apache 711 KB; tick-stock-panel MIT 25615 KB (no live orders); impeccable Apache 377515 KB; openbao MPL-2.0 319427 KB; phylodyn SPDX null 1986 KB; boundedcoal 404; KAUST graders repo 404; coding-atlas SPDX null 7401 KB; modelun MIT 21956 KB SIZE-SKIP. Wireless-tool URL class and engagement-automation URL class: no steps, no clone. Media pipelines: no image-gen install. GPL and AGPL stay extract-only. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill auto-evolve. No product install. Do not install a browser. Live jev path unchanged. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. Transkribus stays the only product HTR. 21/21 files are at cemini-egress-fi:/opt/cemini-bulk/research/osint/. The inbox is empty.**
 

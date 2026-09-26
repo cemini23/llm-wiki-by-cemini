@@ -30,6 +30,20 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-26 — K273 ingest)
+
+- **K273 ingest** — 10 source pages + 5 hubs. Phase-0 **clones nothing**. Sports, DFS, and parlay rows keep a pattern extract when SPDX is null or NOASSERTION. **NO-CLONE / SIZE-SKIP:** draftfast null 2198 KB; Odds-Search null 215 KB; mlb-prop-optimizer null 1074178 KB; weathernfl null 12187 KB; nfl-forecast-model null 519245 KB; nuke-dfs-hub null 7381 KB; fanduel api-evangelist null 478 KB; nfl-ngs-raw null 962762 KB; fanduel-bot null 8469 KB; dfsOptimizer NOASSERTION 504 KB; cfb-dfs-data null 11991 KB; aegis-audio-defense MIT 6618 KB; block/buzz, llvm/llvm-project, runner-images, Soup, axonhub, nakama, code_puppy, plannotator, starkclaw, FluidAudio SIZE-SKIP. FluidAudio is not product HTR. The cyclomatic-complexity skill stays uninstalled. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Transkribus stays the only product HTR.**
+- **Harness (CCC)** — do not install the complexity skill. Do not change `/route`. AEGIS is a name and an impact. OpenRouter is an interview teaser. Never auto-evolve skills.
+- **Atto** — IndicBankBench is **not genealogy and not HTR**. AEGIS is **not HTR**. Transkribus sole HTR. No lab steps.
+- **GuruWatcher** — this wave has **no level to arm**. **Never auto-arm.**
+- **CeminiDFS** — roster rules for classic, showdown, and captain, plus a lineup exposure cap, are pattern extracts. No live order. No clone.
+- **CeminiParlays / Gambling** — devig, pick'em gap, weather discount, and own score marginals. A human still types the Hard Rock or FanDuel ticket. **No submit. No pm scp.**
+- **Cyber** — SecPro #253 and AEGIS are headlines only. The TeamCity target class is CI/CD. No intrusion steps.
+- **SEO** — three Sterling Sky titles and URLs only. No workaround, no review-gating steps, and no ranking recipe.
+- **Rule** — `## OSINT K273 — 2026-09-26` above `## OSINT K272` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs** — `briefs/2026-09-26_k273-*` (8). `skill_audit.py` PASS. Sibling copies landed. Further implementation for DFS and parlays is recorded and not built. None for Atto product code.
+- **Archive** — 10/10 on egress-fi. Inbox empty.
+
 ## Current state (2026-09-25 — K272 ingest)
 
 - **K272 ingest** — 21 source pages + 5 hubs. modelun updated: license **MIT**, size **21956 KB** still blocks the clone, `wont_wire` stays. Phase-0 **clones nothing**. **NO-CLONE / SIZE-SKIP:** Search MIT 1140 KB; hindsight and univer already SIZE-SKIP from K271; starnet MIT 1733104 KB; kubernetes-the-hard-way Apache 711 KB; tick-stock-panel MIT 25615 KB; impeccable Apache 377515 KB; openbao MPL-2.0 319427 KB; phylodyn SPDX null 1986 KB; boundedcoal 404; KAUST graders 404; coding-atlas SPDX null 7401 KB; modelun MIT 21956 KB. Wireless-tool URL class and engagement-automation URL class: no steps. Media pipelines: no image-gen install. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill evolve. No product install. Do not install a browser. No xsp/pm scp. No LIVE Discord. Never `npx github:`. Never auto-arm. Live jev path unchanged.**

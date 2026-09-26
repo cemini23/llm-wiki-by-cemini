@@ -5,6 +5,7 @@ tags: [agents, harness, k272, ccc]
 keywords: [EvoTreeNAD, external-gate, modelun, FILE]
 related:
   - concepts/k271-harness-evolution-wave.md
+  - concepts/k273-harness-evolution-wave.md
   - sources/eval-github-repo-revenue-2026-09-25.md
   - sources/arxiv-2609.29016-evotreenad-2026-09-25.md
   - sources/arxiv-2609.29333-llm-graders-2026-09-25.md
@@ -18,7 +19,7 @@ related:
   - entities/tools/modelun.md
 maturity: draft
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -26,6 +27,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k271-harness-evolution-wave.md
+- @concepts/k273-harness-evolution-wave.md
 - @sources/eval-github-repo-revenue-2026-09-25.md
 - @sources/arxiv-2609.29016-evotreenad-2026-09-25.md
 - @sources/arxiv-2609.29333-llm-graders-2026-09-25.md

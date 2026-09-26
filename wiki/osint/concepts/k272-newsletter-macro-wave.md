@@ -5,6 +5,7 @@ tags: [macro, newsletter, k272, guruwatcher]
 keywords: [k272, rates, Bitget, Klement, Vitalik]
 related:
   - concepts/k271-newsletter-macro-wave.md
+  - concepts/k273-newsletter-macro-wave.md
   - sources/substack-rss-capital-flows-2026-09-24-rates.md
   - sources/substack-rss-klement-2026-09-25-artist.md
   - sources/substack-rss-wublock-2026-09-24-bitget.md
@@ -12,7 +13,7 @@ related:
   - sources/substack-rss-wublock-2026-09-25-weekly.md
 maturity: draft
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -20,6 +21,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k271-newsletter-macro-wave.md
+- @concepts/k273-newsletter-macro-wave.md
 - @sources/substack-rss-capital-flows-2026-09-24-rates.md
 - @sources/substack-rss-klement-2026-09-25-artist.md
 - @sources/substack-rss-wublock-2026-09-24-bitget.md

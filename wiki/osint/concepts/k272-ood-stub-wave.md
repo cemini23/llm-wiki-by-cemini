@@ -5,6 +5,7 @@ tags: [ood, stub, k272]
 keywords: [k272, phylodynamic, WorldPrompt, RAPID, Sterling]
 related:
   - concepts/k271-ood-stub-wave.md
+  - concepts/k273-ood-stub-wave.md
   - sources/arxiv-2609.29035-bounded-coalescent-2026-09-25.md
   - sources/arxiv-2609.29964-world-action-agent-2026-09-25.md
   - sources/arxiv-2609.30249-rapid-2026-09-25.md
@@ -12,7 +13,7 @@ related:
   - sources/newsletter-rss-sterling-sky-2026-09-23-gmb-suspension.md
 maturity: draft
 created: 2026-09-25
-updated: 2026-09-25
+updated: 2026-09-26
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -20,6 +21,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k271-ood-stub-wave.md
+- @concepts/k273-ood-stub-wave.md
 - @sources/arxiv-2609.29035-bounded-coalescent-2026-09-25.md
 - @sources/arxiv-2609.29964-world-action-agent-2026-09-25.md
 - @sources/arxiv-2609.30249-rapid-2026-09-25.md

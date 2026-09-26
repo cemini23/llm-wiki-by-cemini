@@ -383,6 +383,25 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K273 — 2026-09-26
+Dual-ID: **OSINT K273**. FILE and HITL only. **0 product Integrate GO.**
+- Phase-0 clones nothing. No new directory under `.local/adopts/` for draftfast, dfsOptimizer, or aegis-audio-defense.
+- Sports, DFS, and parlay rows keep a pattern extract when SPDX is null or NOASSERTION. A small star count does not drop the pattern. AGPL and GPL stay out of product code. The trees stay uncloned.
+- Sports NO-CLONE: draftfast null 2198 KB (classic, showdown, and captain roster rules); Odds-Search null 215 KB (remove the two-way margin); mlb-prop-optimizer null 1074178 KB (de-juiced price versus a fixed pick'em multiplier); weathernfl null 12187 KB (stadium weather discount); nfl-forecast-model null 519245 KB (own score marginals); nuke-dfs-hub null 7381 KB (lineup exposure caps); fanduel api-evangelist null 478 KB (no public REST API; manual ticket entry); nfl-ngs-raw null 962762 KB (field note only); fanduel-bot null 8469 KB (alert-only); dfsOptimizer NOASSERTION 504 KB (pattern name only); cfb-dfs-data null 11991 KB (college schema note); Fanable and the other null-SPDX names have no product steal.
+- Hard Rock and FanDuel stay a book a human types into. No auto-submit. No login bot.
+- Agent-runtime normal gate: no clone without SPDX, no clone over about 2 MB, no skill install. SIZE-SKIP includes block/buzz, llvm/llvm-project, actions/runner-images, Soup, axonhub, nakama, code_puppy, plannotator, starkclaw, and FluidAudio. FluidAudio is not product HTR. cyclomatic-complexity-skill stays uninstalled. openmed is not Atto and takes no vault PII. hindsight stays SIZE-SKIP. microsoft/MarS is a FILE name only.
+- 10 source pages, 5 hubs (`k273-harness-evolution-wave`, `k273-vol-quant-wave`, `k273-newsletter-macro-wave`, `k273-gambling-pm-wave`, `k273-ood-stub-wave`). `harness_verb: FILE`. Hubs `wire_status: policy_wired`.
+- **Do not swap `/route`.** Never auto-evolve skills. Never `npx github:`. No product install.
+- AEGIS is a name and an impact. Internal risk is still decodable when the model does not refuse. aegis-audio-defense is MIT and 6618 KB. No clone. Do not describe a jailbreak. AEGIS is not HTR.
+- IndicBankBench is banking-assistant reliability. Strict pass3 is lower than at-least-once success. Not genealogy. Not Atto. Not HTR. No lab steps. Transkribus stays the only product HTR.
+- OpenRouter note is an interview teaser. Do not change `/route`.
+- SecEng Weekly is a headline only. SecPro #253 is a headline only. The target class is a CI/CD server (TeamCity). No intrusion steps.
+- GW: this wave has no level to arm. **Never auto-arm.**
+- DFS: roster-rule and exposure extracts. No live order. Parlays/gambling: devig, pick'em gap, weather, and own marginals. **No pm scp. No submit.**
+- SEO: three Sterling Sky titles and URLs only. No virtual-office workaround. No review-gating steps. No ranking recipe.
+- Docx license claims are not authority. gh api 2026-09-26 overrides them.
+- Verify: `bash scripts/adopt_k273_phase0.sh` then `bash scripts/adopt_k273_phase1.sh`. **No LIVE Discord. No xsp/pm scp.** 10/10 archived to egress-fi. Inbox empty.
+
 ## OSINT K272 — 2026-09-25
 Dual-ID: **OSINT K272**. FILE and HITL only. **0 product Integrate GO.**
 - Phase-0 clones nothing. No new directory under `.local/adopts/` for modelun, phylodyn, wifite2, or search.

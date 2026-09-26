@@ -1,3 +1,22 @@
+## [2026-09-26] ingest | K273 wave
+
+- **Inbox:** 10 sources written (2 eval docx + 2 arXiv + 6 newsletter/substack). **10/10 archived** to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Size check passed. Local copies removed. Inbox is empty. Location fields name the egress path. No clone.
+- **Sources:** NFL DFS revenue eval (sha256 `0148b0cc…`). gh api 2026-09-26 overrides the docx. A null SPDX still records the pattern extract. Patterns: classic, showdown, and captain roster rules; two-way margin removal; de-juiced price versus a fixed pick'em multiplier; stadium weather discount; own score marginals; lineup exposure caps. dfsOptimizer is NOASSERTION and stays a pattern name. FanDuel has no public REST API on this row. Hard Rock and FanDuel stay a human ticket. Agent runtime eval (sha256 `ab41a7f0…`) uses the normal license gate. Zero clones. No skill install. arXiv 29167 IndicBankBench (**not genealogy, not Atto, not HTR**; strict pass3 is lower than at-least-once success; no lab steps). arXiv 29287 AEGIS (**one sentence**; aegis-audio-defense MIT 6618 KB; no clone). OpenRouter interview teaser (**do not change `/route`**). Three Sterling pages are title and URL only (filename dates stay 2026-09-24). SecEng Weekly is a headline only. SecPro #253 is a headline only. The target class is a CI/CD server (TeamCity). No intrusion steps.
+- **Concepts:** 5 k273-* hubs (harness-evolution, vol-quant, newsletter-macro, gambling-pm, ood-stub). Matching k272 hubs backlinked both ways; `updated:` bumped to 2026-09-26. `harness_verb: FILE`. `wire_status: policy_wired`. Sports extracts live on the gambling hub. Bank bench and Sterling live on the ood hub. The macro hub says this wave has no level to arm.
+- **Phase-0:** clones nothing. Skip list covers the sports rows and the agent-runtime SIZE-SKIP rows. **No product install. 0 product Integrate GO.** `.local/adopts/draftfast`, `.local/adopts/dfsOptimizer`, and `.local/adopts/aegis-audio-defense` stay absent.
+- **Routing:** Atto — bank bench is not genealogy; AEGIS is not HTR; Transkribus stays the only product HTR. GW — **no level to arm**; **never auto-arm**. DFS — roster-rule and exposure extracts; no live order. Parlays — devig, pick'em gap, weather, own marginals; **no submit**. CCC — do not install the complexity skill; **do not swap `/route`**; AEGIS is a name and an impact. Cyber — TeamCity and AEGIS headlines only. Gambling — same parlay extracts; **no pm scp**. SEO — three Sterling titles and URLs only. **No xsp scp. No LIVE Discord.**
+- **Rule:** `## OSINT K273 — 2026-09-26` inserted above `## OSINT K272` in `.cursor/rules/osint-phase1-adopt-wires.mdc`. **FILE and HITL only.**
+- **Briefs:** `briefs/2026-09-26_k273-*` (8: atto, guruwatcher, ceminidfs, ceminiparlays, ccc-harness, cyber-lab, gambling, seo). `skill_audit.py` PASS on all eight. Sibling copies landed in Atto, GuruWatcher, CeminiDFS, CeminiParlays, CCC, cybersecurity, gambling, and SEO brief dirs.
+- **Index / ROADMAP / hot.md:** K273 sections added above K272.
+- **Archive:** 10/10 on egress-fi. Inbox empty.
+- **gate:** `adopt_k273_phase0.sh` + `adopt_k273_phase1.sh` (no commit).
+- **Next actions (not done):**
+  1. CeminiDFS: add classic, showdown, and captain roster constraints in our own optimizer code.
+  2. CeminiDFS: add a lineup exposure cap.
+  3. CeminiParlays: compare a de-juiced price with a fixed pick'em multiplier.
+  4. CeminiParlays: use own score marginals plus a weather discount for SGP. A human still types the Hard Rock or FanDuel ticket.
+  5. No auto-submit. No clone of the large sports trees.
+
 ## [2026-09-25] deep-read | K272 deep-read
 
 - **Papers deep-read (7):** arXiv 29016 EvoTreeNAD (neural-architecture search, not genealogy, not HTR); 29035 bounded coalescent (statistical population-size inference, not Atto, no lab steps); 29333 LLM graders (exam graders, preamble failure mode recorded, no prompt recipe); 29964 World Action Agent (robot VLM harness, not a product); 30012 behavior assays (cheap cross-vendor behavior studies, no clone, modelun SIZE-SKIP); 30219 verified commissioning (external gate holds release authority, do not rewrite Verify); 30249 RAPID (robot programs from one demonstration, not a product).
