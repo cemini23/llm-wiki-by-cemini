@@ -30,6 +30,20 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-27 — K274 ingest)
+
+- **K274 ingest** — 6 source pages + 5 hubs. Phase-0 **clones nothing**. A null SPDX on a sports row still records the pattern. **NO-CLONE:** cfbfastR-cfb-data null 5574235 KB; cfbfastR-data null 30483559 KB; nfl-closing-speed-csoe MIT 6704 KB; weathernfl null 12248 KB; nfldata null 8258438 KB (Integrate overridden); nfl-betting-data null 1211 KB; porra-mundial-nanos-2026 null 48825 KB; google-research/football Apache-2.0; hudl/open-data NOASSERTION; football-odds-scanner null; on3-recruit-scraper null; Real-Time-NFL-Stats null. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Transkribus stays the only product HTR.**
+- **Harness (CCC)** — do not swap `/route`. No skill install. WuBlock items are headlines.
+- **Atto** — this wave is not genealogy. Game-sim and StatsBomb are names. Transkribus sole HTR.
+- **GuruWatcher** — this wave has **no level to arm**. **Never auto-arm.** Do not copy Glitch strikes.
+- **CeminiDFS** — parquet pattern, CSOE name, and wind penalty are pattern extracts. No live order. No clone.
+- **CeminiParlays / Gambling** — closing-line calibration and wind on totals. A human still types the Hard Rock or FanDuel ticket. World Cup scorer is a name. Do not revive world-cup-bot. **No submit. No pm scp.**
+- **Cyber** — WuBlock headlines only. No exploit steps.
+- **SEO** — no ranking recipe.
+- **Rule** — `## OSINT K274 — 2026-09-27` above `## OSINT K273` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs** — `briefs/2026-09-27_k274-*` (8). `skill_audit.py` PASS. Sibling copies landed. Further implementation for DFS and parlays is recorded and not built. None for Atto product code.
+- **Archive** — 6/6 on egress-fi. Inbox empty.
+
 ## Current state (2026-09-26 — K273 ingest)
 
 - **K273 ingest** — 10 source pages + 5 hubs. Phase-0 **clones nothing**. Sports, DFS, and parlay rows keep a pattern extract when SPDX is null or NOASSERTION. **NO-CLONE / SIZE-SKIP:** draftfast null 2198 KB; Odds-Search null 215 KB; mlb-prop-optimizer null 1074178 KB; weathernfl null 12187 KB; nfl-forecast-model null 519245 KB; nuke-dfs-hub null 7381 KB; fanduel api-evangelist null 478 KB; nfl-ngs-raw null 962762 KB; fanduel-bot null 8469 KB; dfsOptimizer NOASSERTION 504 KB; cfb-dfs-data null 11991 KB; aegis-audio-defense MIT 6618 KB; block/buzz, llvm/llvm-project, runner-images, Soup, axonhub, nakama, code_puppy, plannotator, starkclaw, FluidAudio SIZE-SKIP. FluidAudio is not product HTR. The cyclomatic-complexity skill stays uninstalled. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Transkribus stays the only product HTR.**

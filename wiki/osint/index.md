@@ -7,6 +7,23 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K274 ingest (2026-09-27)
+OSINT K274: 6 new source pages (2 eval docx + 1 discussion PDF + 3 substack) + 5 hubs. Phase-0 **clones nothing**. A null SPDX on a sports row still records the pattern. **NO-CLONE:** cfbfastR-cfb-data null 5574235 KB; cfbfastR-data null 30483559 KB; nfl-closing-speed-csoe MIT 6704 KB; weathernfl null 12248 KB; nfldata null 8258438 KB (Integrate overridden); nfl-betting-data null 1211 KB; porra-mundial-nanos-2026 null 48825 KB; google-research/football Apache-2.0 27761 KB; hudl/open-data NOASSERTION 7403076 KB; football-odds-scanner null 14403 KB; on3-recruit-scraper null 1941 KB; Real-Time-NFL-Stats null 2057 KB. Pass rows with a null SPDX have no product steal. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Transkribus stays the only product HTR.** 6/6 files are at cemini-egress-fi:/opt/cemini-bulk/research/osint/. The inbox is empty.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k274-harness-evolution-wave](concepts/k274-harness-evolution-wave.md) | K274 Harness Evolution Wave | draft |
+| [k274-vol-quant-wave](concepts/k274-vol-quant-wave.md) | K274 Vol Quant Wave | draft |
+| [k274-newsletter-macro-wave](concepts/k274-newsletter-macro-wave.md) | K274 Newsletter Macro Wave | draft |
+| [k274-gambling-pm-wave](concepts/k274-gambling-pm-wave.md) | K274 Gambling / PM Wave | draft |
+| [k274-ood-stub-wave](concepts/k274-ood-stub-wave.md) | K274 OOD Stub Wave | draft |
+| [eval-sports-analytics-revenue-k274](sources/eval-sports-analytics-revenue-2026-09-27.md) | Sports parquet pattern (null SPDX kept) | draft |
+| [eval-nfl-data-revenue-k274](sources/eval-nfl-data-revenue-2026-09-27.md) | CSOE, wind penalty, closing lines | draft |
+| [outlier-voyg-profit-paper](sources/outlier-voyg-profit-paper-2026-09-27.md) | VOYG discussion (not advice) | draft |
+| [glitch-talon-sep28](sources/substack-rss-glitchspx-2026-09-27-talon-weekly.md) | Title and URL only | draft |
+| [wublock-magic-eden](sources/substack-rss-wublock-2026-09-26-magic-eden.md) | Headlines only | draft |
+| [wublock-asia-top10](sources/substack-rss-wublock-2026-09-27-asia-top10.md) | Headlines only | draft |
+
 ### K273 ingest (2026-09-26)
 OSINT K273: 10 new source pages (2 eval docx + 2 arXiv + 6 newsletter/substack) + 5 hubs. Phase-0 **clones nothing**. Sports, DFS, and parlay rows keep a pattern extract when SPDX is null or NOASSERTION. **NO-CLONE:** draftfast null 2198 KB; Odds-Search null 215 KB; mlb-prop-optimizer null 1074178 KB; weathernfl null 12187 KB; nfl-forecast-model null 519245 KB; nuke-dfs-hub null 7381 KB; fanduel api-evangelist null 478 KB; nfl-ngs-raw null 962762 KB; fanduel-bot null 8469 KB; dfsOptimizer NOASSERTION 504 KB; cfb-dfs-data null 11991 KB; aegis-audio-defense MIT 6618 KB. Agent-runtime rows over about 2 MB are SIZE-SKIP. The cyclomatic-complexity skill stays uninstalled. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Transkribus stays the only product HTR. 10/10 files are at cemini-egress-fi:/opt/cemini-bulk/research/osint/. The inbox is empty.**
 

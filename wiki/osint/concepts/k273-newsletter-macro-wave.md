@@ -5,9 +5,10 @@ tags: [macro, newsletter, k273, guruwatcher]
 keywords: [k273, no-level, never-auto-arm]
 related:
   - concepts/k272-newsletter-macro-wave.md
+  - concepts/k274-newsletter-macro-wave.md
 maturity: draft
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-09-27
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -15,6 +16,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k272-newsletter-macro-wave.md
+- @concepts/k274-newsletter-macro-wave.md
 
 ## Raw Concept
 

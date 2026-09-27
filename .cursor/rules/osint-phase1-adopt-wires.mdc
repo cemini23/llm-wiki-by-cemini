@@ -383,6 +383,25 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K274 — 2026-09-27
+Dual-ID: **OSINT K274**. FILE and HITL only. **0 product Integrate GO.**
+- Phase-0 clones nothing. No new directory under `.local/adopts/` for cfbfastR-cfb-data, cfbfastR-data, nfl-closing-speed-csoe, weathernfl, nfldata, nfl-betting-data, porra-mundial-nanos-2026, football, open-data, football-odds-scanner, on3-recruit-scraper, or Real-Time-NFL-Stats.
+- A null SPDX on a sports row still records the pattern. No tree is cloned. gh api 2026-09-27 is the license source. The docx is not.
+- Sports NO-CLONE: cfbfastR-cfb-data null 5574235 KB (partitioned parquet as our own artifact); cfbfastR-data null 30483559 KB (same pattern; do not download the dump); porra-mundial-nanos-2026 null 48825 KB (scoring-rule name only; world-cup-bot stays retired); football-odds-scanner null (name only; no DOM steps); on3-recruit-scraper null (name only; no scrape steps); Real-Time-NFL-Stats null (already K273; name only).
+- NFL NO-CLONE: nfl-closing-speed-csoe MIT 6704 KB (CSOE name; formula unverified; size blocks the clone); weathernfl null 12248 KB (wind penalty on passing and totals; skip indoor and closed retractable); nfldata null 8258438 KB (Integrate overridden; pattern is schedule, games, closing spread, total); nfl-betting-data null 1211 KB (historical closing spreads and totals).
+- Name only: google-research/football Apache-2.0 is a game-sim name. hudl/open-data NOASSERTION is a StatsBomb name. Do not vendor StatsBomb data. Not Atto. Not HTR.
+- Pass rows with a null SPDX and no product steal stay one table on the sports eval page. No entity farm. Context names only, no steps: bet-aggregator, nfl-news-hub, ncaaf-predictions, nfl_case_site.
+- Hard Rock and FanDuel stay a ticket a human types. No auto-submit. No odds scraper. No recruit scraper.
+- 6 source pages, 5 hubs (`k274-harness-evolution-wave`, `k274-vol-quant-wave`, `k274-newsletter-macro-wave`, `k274-gambling-pm-wave`, `k274-ood-stub-wave`). `harness_verb: FILE`. Hubs `wire_status: policy_wired`.
+- **Do not swap `/route`.** No skill install. Never auto-evolve skills. Never `npx github:`. No product install.
+- VOYG is a discussion piece. Not advice. CFTC Rule 4.41. Cite only the June 2025 sale at $31, the 23 September 2026 convert print at $31.40, June quarter gross profit of $4.5 million, operating loss of $51.4 million, and Starlab sales of zero. Do not add a trade. No level to arm.
+- Glitch 28 Sep–2 Oct is a new week. Title and URL only. Do not copy strike prices. Do not fold it into the September 8 page. No level to arm. Never auto-arm.
+- WuBlock headlines only. New York sued Polymarket. Magic Eden is a headline only. No exploit steps. No pm scp.
+- Atto: this wave is not genealogy. Transkribus stays the only product HTR.
+- SEO: no ranking recipe.
+- 6/6 archived to egress-fi. Inbox empty.
+- Verify: `bash scripts/adopt_k274_phase0.sh` then `bash scripts/adopt_k274_phase1.sh`. **No LIVE Discord. No xsp/pm scp.**
+
 ## OSINT K273 — 2026-09-26
 Dual-ID: **OSINT K273**. FILE and HITL only. **0 product Integrate GO.**
 - Phase-0 clones nothing. No new directory under `.local/adopts/` for draftfast, dfsOptimizer, or aegis-audio-defense.

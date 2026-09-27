@@ -5,6 +5,7 @@ tags: [agents, harness, k273, ccc]
 keywords: [k273, AEGIS, OpenRouter, SIZE-SKIP, FILE]
 related:
   - concepts/k272-harness-evolution-wave.md
+  - concepts/k274-harness-evolution-wave.md
   - sources/eval-agent-runtime-revenue-2026-09-26.md
   - sources/arxiv-2609.29287-aegis-audio-2026-09-26.md
   - sources/newsletter-rss-latent-space-2026-09-25-openrouter.md
@@ -12,7 +13,7 @@ related:
   - sources/substack-rss-secpro-2026-09-25-253-teamcity.md
 maturity: draft
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-09-27
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -20,6 +21,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k272-harness-evolution-wave.md
+- @concepts/k274-harness-evolution-wave.md
 - @sources/eval-agent-runtime-revenue-2026-09-26.md
 - @sources/arxiv-2609.29287-aegis-audio-2026-09-26.md
 - @sources/newsletter-rss-latent-space-2026-09-25-openrouter.md

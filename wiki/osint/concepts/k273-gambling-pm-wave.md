@@ -5,10 +5,11 @@ tags: [prediction-markets, gambling, dfs, k273]
 keywords: [k273, draftfast, exposure-cap, devig, Hard-Rock, FILE]
 related:
   - concepts/k272-gambling-pm-wave.md
+  - concepts/k274-gambling-pm-wave.md
   - sources/eval-nfl-dfs-revenue-2026-09-26.md
 maturity: draft
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-09-27
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -16,6 +17,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k272-gambling-pm-wave.md
+- @concepts/k274-gambling-pm-wave.md
 - @sources/eval-nfl-dfs-revenue-2026-09-26.md
 
 ## Raw Concept

@@ -1,3 +1,22 @@
+## [2026-09-27] ingest | K274 wave
+
+- **Inbox:** 6 sources written (2 eval docx + 1 discussion PDF + 3 substack). **6/6 archived** to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Size check passed. Local copies removed. Inbox is empty. Location fields name the egress path. No clone.
+- **Sources:** Sports analytics eval (sha256 `dcfb4e35…`). gh api 2026-09-27 overrides the docx. A null SPDX still records the pattern. Pattern: partitioned parquet as our own artifact. World Cup scorer is a name only. NFL data eval (sha256 `8b5ba323…`). CSOE name. Wind penalty. Closing lines. nflverse Integrate is overridden. VOYG discussion (sha256 `01a3ba35…`). Not advice. CFTC Rule 4.41. Cite only the June 2025 sale at $31, the 23 September 2026 convert print at $31.40, June quarter gross profit of $4.5 million, operating loss of $51.4 million, and Starlab sales of zero. No trade. Glitch new week is title and URL only (sha256 `e2640718…`). No strike prices. It stays off the September 8 page. WuBlock 2026-09-26 headlines (sha256 `43a53d74…`). New York sued Polymarket. Magic Eden headline only. No exploit steps. WuBlock 2026-09-27 Asia top 10 headlines (sha256 `0ff55d35…`). No level to arm.
+- **Concepts:** 5 k274-* hubs (harness-evolution, vol-quant, newsletter-macro, gambling-pm, ood-stub). Matching k273 hubs backlinked both ways; `updated:` bumped to 2026-09-27. `harness_verb: FILE`. `wire_status: policy_wired`. Sports extracts live on the gambling hub. Game-sim and StatsBomb names live on the ood hub. The macro hub says this wave has no level to arm.
+- **Phase-0:** clones nothing. Skip list covers the sports rows. A null SPDX still records the pattern. **No product install. 0 product Integrate GO.** `.local/adopts/cfbfastR-cfb-data`, `.local/adopts/cfbfastR-data`, `.local/adopts/nfl-closing-speed-csoe`, `.local/adopts/nfldata`, and `.local/adopts/nfl-betting-data` stay absent.
+- **Routing:** Atto — this wave is not genealogy; Transkribus stays the only product HTR. GW — **no level to arm**; **never auto-arm**; do not copy Glitch strikes. DFS — parquet, CSOE name, and wind penalty; no live order; no clone. Parlays — closing-line calibration and wind on totals; a human types the ticket; **no submit**. CCC — **do not swap `/route`**; no skill install. Cyber — WuBlock headlines only; no exploit steps. Gambling — same sports patterns; **no pm scp**; World Cup scorer is a name; do not revive world-cup-bot. SEO — no ranking recipe. **No xsp scp. No LIVE Discord.**
+- **Rule:** `## OSINT K274 — 2026-09-27` inserted above `## OSINT K273` in `.cursor/rules/osint-phase1-adopt-wires.mdc`. **FILE and HITL only.**
+- **Briefs:** `briefs/2026-09-27_k274-*` (8: atto, guruwatcher, ceminidfs, ceminiparlays, ccc-harness, cyber-lab, gambling, seo). `skill_audit.py` PASS on all eight. Sibling copies landed in Atto, GuruWatcher, CeminiDFS, CeminiParlays, CCC, cybersecurity, gambling, and SEO brief dirs.
+- **Index / ROADMAP / hot.md:** K274 sections added above K273.
+- **Archive:** 6/6 on egress-fi. Inbox empty.
+- **gate:** `adopt_k274_phase0.sh` + `adopt_k274_phase1.sh` (no commit).
+- **Next actions (not done):**
+  1. CeminiDFS: publish our own projection artifacts as partitioned parquet. Do not download the college dump.
+  2. CeminiDFS: add a closing-speed or separation adjustment in our own code. The upstream formula is unverified. Do not clone the 6704 KB MIT tree.
+  3. CeminiDFS and CeminiParlays: apply a wind penalty to passing projections and game totals. Skip indoor and closed retractable games.
+  4. CeminiParlays: keep a local table of historical closing spreads and totals for copula calibration. Do not clone nflverse/nfldata or nfl-betting-data.
+  5. No odds scraper. No recruit scraper. No auto-submit. A human still types the Hard Rock or FanDuel ticket.
+
 ## [2026-09-26] ingest | K273 wave
 
 - **Inbox:** 10 sources written (2 eval docx + 2 arXiv + 6 newsletter/substack). **10/10 archived** to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Size check passed. Local copies removed. Inbox is empty. Location fields name the egress path. No clone.

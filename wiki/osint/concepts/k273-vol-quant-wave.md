@@ -5,9 +5,10 @@ tags: [vol, options, quant, k273]
 keywords: [k273, no-level, no-sizing]
 related:
   - concepts/k272-vol-quant-wave.md
+  - concepts/k274-vol-quant-wave.md
 maturity: draft
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-09-27
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -15,6 +16,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k272-vol-quant-wave.md
+- @concepts/k274-vol-quant-wave.md
 
 ## Raw Concept
 
