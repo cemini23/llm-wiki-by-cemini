@@ -1,3 +1,11 @@
+## [2026-09-28] ingest | K275 wave
+
+- **Inbox:** 16 new source pages plus a VOYG RSS fold into the 27 Sep page. Phase-0 clones nothing. gh api 2026-09-28 overrides the docx. Page-diff Integrate line overridden on size. **0 product Integrate GO.**
+- **Papers:** DynBranch names a branch-resolution barrier. Commit authority stays outside the agent. Option factors are not a trade. Rough-vol posterior is a note. PIA is not Atto. Robot map, voice platform, and checklist-label paper are headlines.
+- **Newsletters:** Apricitas, KfW survey, Moontower 329 / soulcraft / Taylor URL, WuBlock calendar with no level, Event Horizon episode 34 headlines. No auto-trade. No pm scp.
+- **Concepts:** 5 k275 hubs. Matching k274 hubs backlinked. `harness_verb: FILE`. `wire_status: policy_wired`.
+- **Next actions (not done):** do not install the page-diff app; do not arm a URL watch; do not swap `/route`; option factors are not a coefficient; no Public auto-trade agent; WuBlock calendar is not a level. K274 projection actions stay open.
+
 ## [2026-09-27] ingest | K274 wave
 
 - **Inbox:** 6 sources written (2 eval docx + 1 discussion PDF + 3 substack). **6/6 archived** to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Size check passed. Local copies removed. Inbox is empty. Location fields name the egress path. No clone.

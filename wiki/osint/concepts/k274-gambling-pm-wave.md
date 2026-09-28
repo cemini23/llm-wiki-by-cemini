@@ -7,9 +7,10 @@ related:
   - concepts/k273-gambling-pm-wave.md
   - sources/eval-sports-analytics-revenue-2026-09-27.md
   - sources/eval-nfl-data-revenue-2026-09-27.md
+  - concepts/k275-gambling-pm-wave.md
 maturity: draft
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-28
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -17,8 +18,10 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k273-gambling-pm-wave.md
+- @concepts/k275-gambling-pm-wave.md
 - @sources/eval-sports-analytics-revenue-2026-09-27.md
 - @sources/eval-nfl-data-revenue-2026-09-27.md
+- @gambling-wiki/concepts/nfl-dfs-field-edge-priors.md — durable field-edge and rookie-prior page
 
 ## Raw Concept
 
@@ -38,5 +41,7 @@ K274 gambling / sports cluster. A null SPDX still records the pattern. No tree i
 | Scoring-rule name only | Name on this hub | porra-mundial-nanos-2026. SPDX null. World-cup-bot is retired. No /opt/cemini |
 
 FanDuel and Hard Rock stay a ticket a human types. No odds scraper. No recruit scraper. No auto-submit. No pm scp.
+
+The field-edge ranking, the rookie prior, and the 2026-09-27 socials pass live on @gambling-wiki/concepts/nfl-dfs-field-edge-priors.md CPOE stays a residual. Volume, air yards, goal line, implied total, pace, and outdoor wind set the mean.
 
 **Cemini posture:** FILE and HITL only. **0 product Integrate GO.**

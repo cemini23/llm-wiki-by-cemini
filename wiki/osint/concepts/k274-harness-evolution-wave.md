@@ -7,9 +7,10 @@ related:
   - concepts/k273-harness-evolution-wave.md
   - sources/substack-rss-wublock-2026-09-26-magic-eden.md
   - sources/substack-rss-wublock-2026-09-27-asia-top10.md
+  - concepts/k275-harness-evolution-wave.md
 maturity: draft
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-28
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -19,6 +20,7 @@ wire_status: policy_wired
 - @concepts/k273-harness-evolution-wave.md
 - @sources/substack-rss-wublock-2026-09-26-magic-eden.md
 - @sources/substack-rss-wublock-2026-09-27-asia-top10.md
+- @concepts/k275-harness-evolution-wave.md
 
 ## Raw Concept
 

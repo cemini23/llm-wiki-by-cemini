@@ -8,9 +8,10 @@ related:
   - sources/substack-rss-glitchspx-2026-09-27-talon-weekly.md
   - sources/substack-rss-wublock-2026-09-26-magic-eden.md
   - sources/substack-rss-wublock-2026-09-27-asia-top10.md
+  - concepts/k275-newsletter-macro-wave.md
 maturity: draft
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-28
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -18,6 +19,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k273-newsletter-macro-wave.md
+- @concepts/k275-newsletter-macro-wave.md
 - @sources/substack-rss-glitchspx-2026-09-27-talon-weekly.md
 - @sources/substack-rss-wublock-2026-09-26-magic-eden.md
 - @sources/substack-rss-wublock-2026-09-27-asia-top10.md

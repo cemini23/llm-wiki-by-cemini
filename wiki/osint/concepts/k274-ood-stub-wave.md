@@ -6,9 +6,10 @@ keywords: [k274, game-sim, StatsBomb, not-Atto, not-HTR]
 related:
   - concepts/k273-ood-stub-wave.md
   - sources/eval-sports-analytics-revenue-2026-09-27.md
+  - concepts/k275-ood-stub-wave.md
 maturity: draft
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-28
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -16,6 +17,7 @@ wire_status: policy_wired
 ## Relations
 
 - @concepts/k273-ood-stub-wave.md
+- @concepts/k275-ood-stub-wave.md
 - @sources/eval-sports-analytics-revenue-2026-09-27.md
 
 ## Raw Concept

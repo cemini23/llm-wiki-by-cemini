@@ -6,9 +6,10 @@ keywords: [k274, VOYG, not-advice, no-level]
 related:
   - concepts/k273-vol-quant-wave.md
   - sources/outlier-voyg-profit-paper-2026-09-27.md
+  - concepts/k275-vol-quant-wave.md
 maturity: draft
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-28
 harness_verb: FILE
 wire_status: policy_wired
 ---
@@ -17,6 +18,7 @@ wire_status: policy_wired
 
 - @concepts/k273-vol-quant-wave.md
 - @sources/outlier-voyg-profit-paper-2026-09-27.md
+- @concepts/k275-vol-quant-wave.md
 
 ## Raw Concept
 

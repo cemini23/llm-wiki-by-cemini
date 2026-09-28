@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# OSINT K275 Phase-0 — clones nothing.
+# Dual-ID: OSINT K275 = 28 Sep 2026 inbox. gh api 2026-09-28.
+# Docx license lines are not trusted. 0 product Integrate GO. FILE and HITL only.
+set -euo pipefail
+echo "=== K275 Phase-0 — no clone ==="
+echo "=== SKIP (documented) — no product Integrate GO ==="
+echo "NawfalMotii79/PLFM_RADAR SPDX NOASSERTION 135534 KB 25644 stars NO-CLONE name only"
+echo "zackees/mimalloc-pprof SPDX MIT 17802 KB 37 stars NO-CLONE heap-profile name only"
+echo "byoungd/up SPDX NOASSERTION 125174 KB 64447 stars NO-CLONE pass"
+echo "mvschwarz/openrig SPDX Apache-2.0 27862 KB 1442 stars NO-CLONE size do not swap route"
+echo "teng-lin/notebooklm-py SPDX MIT 47587 KB 19520 stars NO-CLONE size existing notebooklm skill stays"
+echo "unxed/f4 SPDX BSD-3-Clause 34951 KB 207 stars NO-CLONE pass"
+echo "tobi/disktree SPDX MIT 1982 KB 1771 stars NO-CLONE context"
+echo "abrignoni/iLEAPP SPDX MIT 255712 KB 1321 stars NO-CLONE name only"
+echo "fzyzcjy/flutter_rust_bridge SPDX MIT 489915 KB 5426 stars NO-CLONE context"
+echo "jankeesvw/omarchy-meeting-recorder SPDX MIT 19298 KB 308 stars NO-CLONE pass"
+echo "weblate/traefik-manager SPDX GPL-3.0 428769 KB 4 stars NO-CLONE extract-only name"
+echo "dgtlmoon/changedetection.io SPDX Apache-2.0 48192 KB 34628 stars NO-CLONE Integrate overridden page-diff name do not arm"
+echo "dalathegreat/Battery-Emulator SPDX GPL-3.0 38311 KB 2936 stars NO-CLONE pass"
+echo "StefanMaron/BusinessCentral.AL.Runner SPDX MIT 29632 KB 39 stars NO-CLONE pass"
+echo "Scottcjn/Rustchain SPDX Apache-2.0 43967 KB 835 stars NO-CLONE pass"
+echo "andymac4182/mount-rs SPDX Apache-2.0 21374 KB 2 stars NO-CLONE pass"
+echo "MakazhanAlpamys/Soup SPDX Apache-2.0 20059 KB 7459 stars NO-CLONE pass"
+echo "tfausak/pawl SPDX 0BSD 31179 KB 10 stars NO-CLONE pass"
+echo "slavakurilyak/awesome-ai-agents SPDX MIT 1041 KB 2256 stars NO-CLONE list"
+echo "danielhanchen/llama.cpp SPDX MIT 444677 KB 16 stars NO-CLONE no weights"
+echo "=== DONE ==="
+echo "0 clones. 0 product Integrate GO. FILE and HITL only. Do not swap /route."
+echo "No product install. No skill install. Never auto-evolve skills."
+echo "No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm."

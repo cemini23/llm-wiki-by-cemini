@@ -7,6 +7,33 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K275 ingest (2026-09-28)
+OSINT K275. Phase-0 clones nothing. 0 product Integrate GO. FILE and HITL only.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k275-harness](concepts/k275-harness-evolution-wave.md) | Branch barrier and commit authority | draft |
+| [k275-vol](concepts/k275-vol-quant-wave.md) | Option factors, no trade | draft |
+| [k275-macro](concepts/k275-newsletter-macro-wave.md) | No level to arm | draft |
+| [k275-pm](concepts/k275-gambling-pm-wave.md) | Headlines only | draft |
+| [k275-ood](concepts/k275-ood-stub-wave.md) | Names only | draft |
+| [eval-systems-k275](sources/eval-systems-revenue-stack-2026-09-28.md) | Twenty rows, zero clones | draft |
+| [dynbranch](sources/arxiv-2609.31047-dynbranch-2026-09-28.md) | Branch-resolution barrier | draft |
+| [pia](sources/arxiv-2609.31255-pia-2026-09-28.md) | Health records, not Atto | draft |
+| [option-factor-zoo](sources/arxiv-2609.31263-option-factor-zoo-2026-09-28.md) | Not a trade | draft |
+| [cognitivereality](sources/arxiv-2609.31418-cognitivereality-2026-09-28.md) | Robot map name | draft |
+| [authority-commit](sources/arxiv-2609.31490-authority-commit-2026-09-28.md) | Accept or reject at commit | draft |
+| [voice-platform](sources/arxiv-2609.31511-muslim-voice-2026-09-28.md) | Headline only | draft |
+| [checklist-label](sources/arxiv-2609.31524-cvs-assessment-2026-09-28.md) | Name only | draft |
+| [rough-vol](sources/arxiv-2609.31570-rough-vol-2026-09-28.md) | Posterior note | draft |
+| [apricitas](sources/substack-rss-apricitas-2026-09-27-creative-class.md) | Labor headline | draft |
+| [eh-34](sources/substack-rss-event-horizon-2026-09-28-episode-34.md) | Headlines only | draft |
+| [kfw](sources/substack-rss-klement-2026-09-28-kfw-climate.md) | Firm survey | draft |
+| [moontower-329](sources/substack-rss-moontower-2026-09-27-329.md) | New issue | draft |
+| [soulcraft](sources/substack-rss-moontower-2026-09-27-soulcraft.md) | Culture note | draft |
+| [taylor-url](sources/substack-rss-moontower-2026-09-27-taylor-cheatsheet.md) | URL only | draft |
+| [wublock-week](sources/substack-rss-wublock-2026-09-28-payrolls-outlook.md) | Calendar, no level | draft |
+
 ### K274 ingest (2026-09-27)
 OSINT K274: 6 new source pages (2 eval docx + 1 discussion PDF + 3 substack) + 5 hubs. Phase-0 **clones nothing**. A null SPDX on a sports row still records the pattern. **NO-CLONE:** cfbfastR-cfb-data null 5574235 KB; cfbfastR-data null 30483559 KB; nfl-closing-speed-csoe MIT 6704 KB; weathernfl null 12248 KB; nfldata null 8258438 KB (Integrate overridden); nfl-betting-data null 1211 KB; porra-mundial-nanos-2026 null 48825 KB; google-research/football Apache-2.0 27761 KB; hudl/open-data NOASSERTION 7403076 KB; football-odds-scanner null 14403 KB; on3-recruit-scraper null 1941 KB; Real-Time-NFL-Stats null 2057 KB. Pass rows with a null SPDX have no product steal. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Transkribus stays the only product HTR.** 6/6 files are at cemini-egress-fi:/opt/cemini-bulk/research/osint/. The inbox is empty.
 

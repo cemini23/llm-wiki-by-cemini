@@ -30,6 +30,11 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-28 — K275 ingest)
+
+- **K275 ingest** — 16 source pages + 5 hubs. VOYG RSS folded into the 27 Sep page. Phase-0 clones nothing. Page-diff Integrate line overridden on size. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-arm. No pm scp.**
+- Option factors are not a DFS coefficient. K274 projection work stays open. A human types the ticket.
+
 ## Current state (2026-09-27 — K274 ingest)
 
 - **K274 ingest** — 6 source pages + 5 hubs. Phase-0 **clones nothing**. A null SPDX on a sports row still records the pattern. **NO-CLONE:** cfbfastR-cfb-data null 5574235 KB; cfbfastR-data null 30483559 KB; nfl-closing-speed-csoe MIT 6704 KB; weathernfl null 12248 KB; nfldata null 8258438 KB (Integrate overridden); nfl-betting-data null 1211 KB; porra-mundial-nanos-2026 null 48825 KB; google-research/football Apache-2.0; hudl/open-data NOASSERTION; football-odds-scanner null; on3-recruit-scraper null; Real-Time-NFL-Stats null. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Transkribus stays the only product HTR.**
