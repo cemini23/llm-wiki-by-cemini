@@ -62,5 +62,6 @@ Ten PDFs from `2026-09-30-daily.md` and earlier sweeps. **8 ingest** (game AI, a
 
 ## Dead Ends
 
-- Re-fetching the two rejects next digest — add `ANDNOT cs.CL` / market-design terms to the `llm-agent-game-paper` query.
+- Adding `ANDNOT cat:cs.CL.*` to the `llm-agent-game-paper` query. **Rejected 2026-09-30** — most wanted NPC and agent papers are cs.CL, so this would starve the feed. Accept the two rejects instead; the query already excludes astro-ph and UAV terms.
+- Adding market-design / matching terms as exclusions — too narrow to be worth a config edit.
 - Treating the FSM2BT / SAGE repos as adopted before a licence check.
