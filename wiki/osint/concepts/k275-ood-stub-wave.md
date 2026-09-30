@@ -4,6 +4,8 @@ type: concept
 tags: [ood, k275]
 keywords: [k275, pia, robot-map, name-only]
 related:
+  - concepts/k276-atto-htr-wave.md
+  - concepts/k276-ood-stub-wave.md
   - concepts/k274-ood-stub-wave.md
   - sources/arxiv-2609.31255-pia-2026-09-28.md
   - sources/arxiv-2609.31418-cognitivereality-2026-09-28.md
@@ -12,13 +14,15 @@ related:
   - sources/eval-systems-revenue-stack-2026-09-28.md
 maturity: draft
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-09-30
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k276-atto-htr-wave.md
+- @concepts/k276-ood-stub-wave.md
 - @concepts/k274-ood-stub-wave.md
 - @sources/arxiv-2609.31255-pia-2026-09-28.md
 - @sources/arxiv-2609.31418-cognitivereality-2026-09-28.md

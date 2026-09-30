@@ -30,6 +30,13 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-09-30 — K276 ingest)
+
+- **K276 ingest** — 38 source pages + **6 hubs**. The strongest harness cluster so far: trace validity, the plan-declaration-execution gap, harness learning, meta-skills, bounded controller context, and Game Arena. Phase-0 **clones nothing**. Five repo URLs verified with `gh api` 2026-09-30 (game_arena Apache-2.0; igsm-trace-validity MIT; **MetaSkill-AI4AI SPDX null**; good_enough_papyrus_htr MIT; resight-smc MIT). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR.**
+- Three reusable findings: a visible trace is weak evidence (31.6% of correct answers have invalid traces on hard cases); declare the pattern and route to an executor that enforces it; keep the controller context bounded.
+- Atto: set a per-task character-error budget before choosing a transcription source. Few-shot VLM transcription is an option for one-off hands only.
+- K274 projection actions stay open. A human types the ticket.
+
 ## Current state (2026-09-28 — K275 ingest)
 
 - **K275 ingest** — 16 source pages + 5 hubs. VOYG RSS folded into the 27 Sep page. Phase-0 clones nothing. Page-diff Integrate line overridden on size. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-arm. No pm scp.**

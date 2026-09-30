@@ -1,3 +1,36 @@
+## [2026-09-30] ops | Claude desktop DeepSeek window
+
+- Cursor quota is out until about 2026-10-14. The orchestrator for that window is Claude desktop in 3p mode on DeepSeek `deepseek-v4-flash`.
+- Gateway base is `https://api.deepseek.com/anthropic`. Backup model is `deepseek-v4-pro`.
+- Desktop MCP entries `stash`, `ssh-prod`, and `ssh-librarian` are removed. Project MCP starts `lazy-tool` only. Definitions in `.mcp.json` stay.
+- Claude `/route` is `~/.claude/skills/route/SKILL.md`. The Cursor skill file is unchanged.
+- Exa plugin 3.3.8 is enabled on the main Claude config by a symlink to the existing cache.
+- Claude Desktop 2.110 dropped raw `deepseek-*` ids, so the picker was empty. A local proxy on `127.0.0.1:8791` rewrites `claude-haiku-4-5` to `deepseek-v4-flash` and `claude-sonnet-4-5` to `deepseek-v4-pro`. Picker labels are DeepSeek V4 Flash and DeepSeek V4 Pro.
+- Operator step left: quit Claude with Cmd-Q, reopen Claude.app, and confirm those two labels.
+
+## [2026-09-30] ingest | K276 wave
+
+- **Inbox:** 38 sources written (16 arXiv + 6 newsletter + 8 substack + 8 Sterling stubs). **38/38 archived** to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Location fields name the egress path. Local copies removed. Inbox is empty. No clone.
+- **Harness (strongest cluster so far):** harness learning trains a proposer to rewrite its harness (2609.35738); correct answers carry invalid traces, 31.6% on the hardest instances, over half passing arithmetic checks but failing a dependency check (2609.38107); most runs lose the declared plan under a generic loop, while pattern executors lift ALFWorld 0.48 to 0.92 (2609.38108); meta-skills lift a Builder by 8.95 points (2609.38143); meta-reasoning bounds the controller context (2609.38147); Game Arena resists benchmark saturation (2609.31473). **Do not swap `/route`. No skill install. Never auto-evolve.**
+- **HTR (Atto):** pixel-reconstruction pretraining wins on Latin historical sets, 4.5% against TrOCR-B 4.7%, no released weights (2609.35473); few-shot VLM transcription reaches 5.36% on IAM, about 18-21% on historical sets (2609.37195); per-task error budgets run 3% to 20%, and retraining on noisy text removes the collapse above 15% error (2609.37755). **Transkribus stays the only product HTR.**
+- **Vol quant:** a finance-informed carrier in the representation, not the loss (2609.33213); a Greek penalty in the training loss (2609.33767); price impact shifts the effective strike to K minus lambda-N and the hedger's own trading moved 9 of 1,000 simulated paths into the money (2609.36257); Dyson-Schwinger closure matches PDE references and gives bucketed vega at about 70-80x lower cost, model-to-model only (2609.37741). **No trade. No sizing change.**
+- **PM / macro:** Event Horizon argues the CFTC can reach offshore venues; Kalshi set a record daily volume near $3.04B. One claim for the ledger: the Kalshi Anthropic-IPO-announcement market near 54% before 1 December. Klement on passive flow pressure and on tax-driven creative destruction. Capital Flows is a paywalled teaser. **No level to arm. Never auto-arm. Never `watches.json`. No pm scp.**
+- **Cyber:** the Bitget hack headline, about $387.5M on 24 September, with the reported failure in a signing path that trusted manipulated transaction data. **No exploit steps. No address list. No PoC.**
+- **SEO:** eight Sterling Sky titles and URLs. Two are test reports: the local-pack URL test and the review-posting-block data. **No ranking recipe.**
+- **Concepts:** 6 k276 hubs (harness-evolution, vol-quant, newsletter-macro, gambling-pm, ood-stub, atto-htr). Matching k275 hubs backlinked both ways; `updated:` bumped to 2026-09-30. `harness_verb: FILE`. `wire_status: policy_wired`.
+- **Phase-0:** clones nothing. Five repo URLs checked with `gh api` 2026-09-30: game_arena Apache-2.0 8494 KB; igsm-trace-validity MIT 95 KB; MetaSkill-AI4AI **SPDX null** 466 KB; good_enough_papyrus_htr MIT 23 KB; resight-smc MIT 954 KB. **No product install. 0 product Integrate GO.**
+- **Routing:** Atto — error-budget rule and few-shot signal; **no HTR swap**. GW — **no level to arm**; **never auto-arm**. DFS — no DFS extract; the seal order is a process note. Parlays — Kalshi volume mix is context; **no submit**. CCC — trace-validity gate, declare-then-route pattern; **do not swap `/route`**. Cyber — two defender notes; no PoC. Gambling — regulation and volumes; **no pm scp**. SEO — titles and URLs. **No xsp scp. No LIVE Discord.**
+- **Rule:** `## OSINT K276 — 2026-09-30` inserted above `## OSINT K275` in `.cursor/rules/osint-phase1-adopt-wires.mdc`. **FILE and HITL only.**
+- **Briefs:** `briefs/2026-09-30_k276-*` (8: atto, guruwatcher, ceminidfs, ceminiparlays, ccc-harness, cyber-lab, gambling, seo). Sibling copies staged in Atto, GuruWatcher, CeminiDFS, CeminiParlays, CCC, cybersecurity, gambling, and SEO brief dirs.
+- **Index / ROADMAP / hot.md:** K276 sections added above K275.
+- **gate:** `adopt_k276_phase0.sh` + `adopt_k276_phase1.sh` (no commit).
+- **Next actions (not done):**
+  1. Add a trace-validity check to the harness gate: re-run the check, do not read the trace.
+  2. Atto: write a per-task acceptable error band before choosing a transcription source.
+  3. Atto: keep the few-shot VLM path as an option for one-off hands only.
+  4. CeminiDFS: keep the freeze-bank-then-label seal order for slate validation.
+  5. No clone. No HTR swap. No auto-arm. A human still types the ticket.
+
 ## [2026-09-28] ingest | K275 wave
 
 - **Inbox:** 16 new source pages plus a VOYG RSS fold into the 27 Sep page. Phase-0 clones nothing. gh api 2026-09-28 overrides the docx. Page-diff Integrate line overridden on size. **0 product Integrate GO.**

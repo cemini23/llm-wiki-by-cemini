@@ -4,19 +4,21 @@ type: concept
 tags: [agents, harness, k275, ccc]
 keywords: [k275, dynbranch, commit-authority, FILE]
 related:
+  - concepts/k276-harness-evolution-wave.md
   - concepts/k274-harness-evolution-wave.md
   - sources/arxiv-2609.31047-dynbranch-2026-09-28.md
   - sources/arxiv-2609.31490-authority-commit-2026-09-28.md
   - sources/eval-systems-revenue-stack-2026-09-28.md
 maturity: draft
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-09-30
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k276-harness-evolution-wave.md
 - @concepts/k274-harness-evolution-wave.md
 - @sources/arxiv-2609.31047-dynbranch-2026-09-28.md
 - @sources/arxiv-2609.31490-authority-commit-2026-09-28.md

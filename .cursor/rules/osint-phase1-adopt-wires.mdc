@@ -383,6 +383,21 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K276 — 2026-09-30
+Dual-ID: **OSINT K276**. FILE and HITL only. **0 product Integrate GO.**
+- Phase-0 clones nothing. Five repo URLs verified with `gh api` 2026-09-30: google-deepmind/game_arena Apache-2.0 8494 KB 116 stars; ratishsp/igsm-trace-validity MIT 95 KB 1 star; **qiancheng-apodex/MetaSkill-AI4AI SPDX null** 466 KB 1 star (pattern only); repushko/good_enough_papyrus_htr MIT 23 KB 0 stars; yaowenzhang1/resight-smc MIT 954 KB 0 stars. No new directory under `.local/adopts/`.
+- **Trace validity gate:** a visible chain-of-thought trace is weak evidence. 31.6% of correct answers carry invalid traces on the hardest iGSM instances; over half pass arithmetic checks and fail a dependency check. Any gate must re-run the check, not read the trace.
+- **Declare-then-route:** most runs lose the declared plan under a generic loop (22-45% preserved); pattern-specific executors lift ALFWorld from 0.48 to 0.92. This is the `/route` shape. **Do not swap `/route`. No skill install. Never auto-evolve skills or rules from a paper.**
+- **Bounded controller context** and an artifact graph beat replaying history (+3.6 to +4.2 points).
+- **Atto:** pixel-reconstruction pretraining wins on Latin historical sets (no released weights); few-shot VLM transcription reaches 5.36% on IAM, about 18-21% on historical sets; per-task error budgets run 3% to 20%. **Transkribus stays the only product HTR.** Write the error budget before choosing a transcription source. No `truth.ged` merge. No Barone PII.
+- **Vol quant:** carrier in the representation (not the loss); Greek penalty in the loss; price impact shifts the effective strike to K minus lambda-N. **No trade. No sizing change.**
+- **GW:** **no level to arm**; the Kalshi Anthropic-IPO market near 54% is a claim, not a watch. **Never auto-arm. Never `watches.json`.** Macro FILE only.
+- **DFS / Parlays:** no DFS extract; keep the freeze-bank-then-label seal order for slate validation. Kalshi volume mix is context. **No auto-submit.** A human types the ticket.
+- **Cyber:** Bitget headline only. The reported failure was a signing path that trusted manipulated transaction data. **No exploit steps. No address list. No PoC.**
+- **SEO:** eight Sterling Sky titles and URLs; two are test reports. **No ranking recipe.** Routed to `@seo-wiki`.
+- **Gambling / PM:** CFTC reach and record Kalshi volume. **No pm scp. No LIVE Discord.**
+- **Verify:** `bash scripts/adopt_k276_phase1.sh`.
+
 ## OSINT K275 — 2026-09-28
 
 - Phase-0 clones nothing. gh api 2026-09-28 overrides the docx. The page-diff Integrate line is overridden on size. Do not install it. Do not arm a watch.

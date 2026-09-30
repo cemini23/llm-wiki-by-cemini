@@ -4,19 +4,21 @@ type: concept
 tags: [macro, newsletter, k275]
 keywords: [k275, apricitas, kfw, wublock, no-level]
 related:
+  - concepts/k276-newsletter-macro-wave.md
   - concepts/k274-newsletter-macro-wave.md
   - sources/substack-rss-apricitas-2026-09-27-creative-class.md
   - sources/substack-rss-klement-2026-09-28-kfw-climate.md
   - sources/substack-rss-wublock-2026-09-28-payrolls-outlook.md
 maturity: draft
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-09-30
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k276-newsletter-macro-wave.md
 - @concepts/k274-newsletter-macro-wave.md
 - @sources/substack-rss-apricitas-2026-09-27-creative-class.md
 - @sources/substack-rss-klement-2026-09-28-kfw-climate.md

@@ -7,6 +7,56 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K276 ingest (2026-09-30)
+OSINT K276: 38 new source pages (16 arXiv + 6 newsletter + 8 substack + 8 Sterling stubs) + **6 hubs**. Phase-0 **clones nothing**. Five repo URLs were checked with `gh api` 2026-09-30: game_arena Apache-2.0 8494 KB; igsm-trace-validity MIT 95 KB; **MetaSkill-AI4AI SPDX null 466 KB** (pattern only); good_enough_papyrus_htr MIT 23 KB; resight-smc MIT 954 KB. **NO-CLONE** all five. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Never write `watches.json`. Transkribus stays the only product HTR.** 38/38 files move to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k276-harness](concepts/k276-harness-evolution-wave.md) | Trace validity, plan-execution gap, bounded control | draft |
+| [k276-vol](concepts/k276-vol-quant-wave.md) | Four method notes, no trade | draft |
+| [k276-macro](concepts/k276-newsletter-macro-wave.md) | No level to arm | draft |
+| [k276-pm](concepts/k276-gambling-pm-wave.md) | Volumes plus one claim | draft |
+| [k276-ood](concepts/k276-ood-stub-wave.md) | Names, one reusable seal order | draft |
+| [k276-atto-htr](concepts/k276-atto-htr-wave.md) | Three HTR papers, no swap | draft |
+| [game-arena](sources/arxiv-2609.31473-game-arena-2026-09-30.md) | Competitive eval resists saturation | draft |
+| [fi-operator](sources/arxiv-2609.33213-fi-operator-2026-09-30.md) | Carrier in the representation | draft |
+| [rsd-poker](sources/arxiv-2609.33669-rsd-poker-2026-09-30.md) | Freeze bank and split, label last | draft |
+| [taming-greeks](sources/arxiv-2609.33767-taming-greeks-2026-09-30.md) | Greek penalty in the loss | draft |
+| [e-wave](sources/arxiv-2609.34346-e-wave-2026-09-30.md) | Event-camera flow, name only | draft |
+| [resight-smc](sources/arxiv-2609.34905-resight-smc-2026-09-30.md) | LVLM sampler, no clone | draft |
+| [htr-high-variance](sources/arxiv-2609.35473-htr-high-variance-2026-09-30.md) | Pixel reconstruction wins on Latin | draft |
+| [harness-learning](sources/arxiv-2609.35738-harness-learning-2026-09-30.md) | A proposer rewrites the harness | draft |
+| [hedging-price-impact](sources/arxiv-2609.36257-hedging-price-impact-2026-09-30.md) | Effective strike K minus lambda-N | draft |
+| [htr-icl](sources/arxiv-2609.37195-htr-icl-2026-09-30.md) | Few-shot VLM transcription | draft |
+| [dyson-schwinger](sources/arxiv-2609.37741-dyson-schwinger-2026-09-30.md) | Fast bucketed vega, no live test | draft |
+| [papyrus-htr](sources/arxiv-2609.37755-papyrus-htr-tolerance-2026-09-30.md) | Per-task error budgets | draft |
+| [invalid-traces](sources/arxiv-2609.38107-invalid-traces-2026-09-30.md) | Correct answers, invalid traces | draft |
+| [plan-execution-gap](sources/arxiv-2609.38108-plan-execution-gap-2026-09-30.md) | Declared plan lost in most runs | draft |
+| [meta-skills](sources/arxiv-2609.38143-meta-skills-harness-2026-09-30.md) | Builder learns support principles | draft |
+| [meta-reasoning](sources/arxiv-2609.38147-meta-reasoning-2026-09-30.md) | Bounded controller context | draft |
+| [ls-amd-world-labs](sources/newsletter-rss-latent-space-2026-09-29-ainews-amd-buys-world-labs-for-82b-as-atlas-solv.md) | $8.2B headline | draft |
+| [ls-opus-55](sources/newsletter-rss-latent-space-2026-09-29-ainews-opus-55-is-good-at-explainer-videos.md) | Model-release recap | draft |
+| [ls-thariq](sources/newsletter-rss-latent-space-2026-09-29-claude-codes-next-era-thariq-shihipar-anthropic.md) | Harness doctrine; no route swap | draft |
+| [ls-devday](sources/newsletter-rss-latent-space-2026-09-30-ainews-openai-devday-2026-dots-61-sol-ultrafast.md) | DevDay headline | draft |
+| [pe-shopify-rn](sources/newsletter-rss-pragmatic-engineer-2026-09-29-why-has-shopify-dropped-react-native.md) | Agents flipped a platform call | draft |
+| [pe-databases](sources/newsletter-rss-pragmatic-engineer-2026-09-30-distributed-databases-with-peter-mattis.md) | Review-fading context | draft |
+| [addy-code-nobody-reads](sources/substack-rss-addy-osmani-2026-09-28-the-code-nobody-reads.md) | The check carries authority | draft |
+| [capital-flows](sources/substack-rss-capital-flows-2026-09-29-what-no-one-sees-right-now.md) | Regime-capture teaser | draft |
+| [eh-offshore](sources/substack-rss-event-horizon-2026-09-29-you-definitely-can-stop-offshore-prediction-mark.md) | CFTC reach, volumes | draft |
+| [eh-hedge](sources/substack-rss-event-horizon-2026-09-30-prediction-markets-need-to-let-us-trade-on-the-f.md) | One claim: about 54% before Dec 1 | draft |
+| [klement-passive](sources/substack-rss-klement-2026-09-29-index-funds-make-active-managers-worse.md) | Flow pressure on active alpha | draft |
+| [klement-tax](sources/substack-rss-klement-2026-09-30-corporate-taxes-and-creative-destruction.md) | Tax selects for productivity | draft |
+| [wublock-bitget](sources/substack-rss-wublock-2026-09-29-after-the-bitget-hack-thorchains-role-in-launder.md) | Hack headline, no PoC | draft |
+| [wublock-cz](sources/substack-rss-wublock-2026-09-30-cz-hong-kong-ama-young-people-shouldnt-blindly-g.md) | Sizing rule, no level | draft |
+| [sterling-turn-off-reviews](sources/newsletter-rss-sterling-sky-2026-09-27-can-you-turn-off-google-reviews-on-a-business-pr.md) | Title and URL only | draft |
+| [sterling-gbp-performance](sources/newsletter-rss-sterling-sky-2026-09-27-google-business-profile-performance-report-how-t.md) | Title and URL only | draft |
+| [sterling-remove-reviews](sources/newsletter-rss-sterling-sky-2026-09-27-how-to-remove-bad-reviews-from-google-business-p.md) | Title and URL only | draft |
+| [sterling-scam-call](sources/newsletter-rss-sterling-sky-2026-09-28-is-google-calling-me-or-is-it-a-scam-how-to-tell.md) | Title and URL only | draft |
+| [sterling-review-blocks](sources/newsletter-rss-sterling-sky-2026-09-28-why-is-posting-currently-turned-off-on-google-re.md) | Title and URL only; test data | draft |
+| [sterling-gbp-url](sources/newsletter-rss-sterling-sky-2026-09-29-does-the-url-you-link-to-in-google-my-business-i.md) | Title and URL only; test report | draft |
+| [sterling-gbp-managers](sources/newsletter-rss-sterling-sky-2026-09-29-how-to-add-remove-managers-from-your-google-busi.md) | Title and URL only | draft |
+| [sterling-core-updates](sources/newsletter-rss-sterling-sky-2026-09-30-googles-2025-2026-core-updates-are-destroying-lo.md) | Title and URL only | draft |
+
 ### K275 ingest (2026-09-28)
 OSINT K275. Phase-0 clones nothing. 0 product Integrate GO. FILE and HITL only.
 

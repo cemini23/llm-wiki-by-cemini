@@ -4,6 +4,7 @@ type: concept
 tags: [options, volatility, k275]
 keywords: [k275, option-factors, rough-vol, voyg]
 related:
+  - concepts/k276-vol-quant-wave.md
   - concepts/k274-vol-quant-wave.md
   - sources/arxiv-2609.31263-option-factor-zoo-2026-09-28.md
   - sources/arxiv-2609.31570-rough-vol-2026-09-28.md
@@ -13,13 +14,14 @@ related:
   - sources/outlier-voyg-profit-paper-2026-09-27.md
 maturity: draft
 created: 2026-09-28
-updated: 2026-09-28
+updated: 2026-09-30
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k276-vol-quant-wave.md
 - @concepts/k274-vol-quant-wave.md
 - @sources/arxiv-2609.31263-option-factor-zoo-2026-09-28.md
 - @sources/arxiv-2609.31570-rough-vol-2026-09-28.md
