@@ -1,3 +1,11 @@
+## [2026-09-30] wire | K276 trace-validity gate
+
+- Added the `trace_recheck` key to `scripts/harness_eval_checklist.py` (K334 harness eval gate). The gate now has six keys; all must be true for SHIP.
+- `.cursor/skills/harness-eval-gate/SKILL.md` records the rule and the numbers from arXiv 2609.38107. Rule: score the re-run, not the trace.
+- Source: @sources/arxiv-2609.38107-invalid-traces-2026-09-30.md.
+- Verify: `python3 scripts/harness_eval_checklist.py selftest` (2 pass, 0 fail). The new key forces HOLD when false.
+- Archive check: all 38 K276 raw files are on `cemini-egress-fi:/opt/cemini-bulk/research/osint/` (16/16 arXiv PDFs confirmed). Inbox empty.
+
 ## [2026-09-30] ops | Claude desktop DeepSeek window
 
 - Cursor quota is out until about 2026-10-14. The orchestrator for that window is Claude desktop in 3p mode on DeepSeek `deepseek-v4-flash`.
