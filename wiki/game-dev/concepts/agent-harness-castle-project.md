@@ -39,9 +39,15 @@ related:
   - sources/arxiv-2609.23142-craftbench-ue-deterministic-eval-2026-09-24.md
   - sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md
   - sources/inbox-arxiv-reject-batch-2026-09-24.md
+  - sources/arxiv-2609.31076-abstraction-ladder-code-skills-2026-09-30.md
+  - sources/arxiv-2609.34214-glyphbench-rl-playground-2026-09-30.md
+  - sources/arxiv-2609.35928-prompted-identity-factionalism-2026-09-30.md
+  - sources/arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30.md
+  - entities/tools/codehack.md
+  - entities/tools/firmbench.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-09-24
+updated: 2026-09-30
 wire_status: policy_wired
 wire_target: briefs/W2-harness-kickoff.md
 ---
@@ -118,6 +124,21 @@ Canon table: `briefs/W2-harness-kickoff.md` § MCP admission.
 | GameLogicBench | Agnostic | STEAL-FROM (no SPDX) | Mid-run rule asserts |
 | CraftBench-UE | UE | extract-only MIT | Fresh-project deterministic checks |
 | GameEngineBench | UE paper | citation only | Taxonomy tags for `*_3d_test` |
+| FirmBench / EnterpriseBench | Agnostic | **CONDITIONAL-GO** Apache-2.0 | Beer-Game delayed-feedback lens — deferred |
+| GlyphBench | Agnostic | citation only (no repo pinned) | Unicode-grid state rendering hint |
+| CodeHack | NetHack | **CONDITIONAL-GO** MIT | Skill-vs-primitive design pattern |
+
+### Phase-1 wires (2026-09-30)
+
+Two new policy rules for the W2 swarm, from this batch.
+
+**Rule H1 — name high-level operations, keep primitive fallback** [CONFIRMED — arXiv 2609.31076]
+
+Give executor agents named operations (build wall segment, place granary, run smoke scene) instead of raw editor calls. Measured effect in NetHack: ~3x progression and 86% lower inference cost per episode. Keep a primitive path for cases the skill library does not cover. See @entities/tools/codehack.md.
+
+**Rule H2 — withhold model-family identity from cooperative agents** [CONFIRMED — arXiv 2609.35928]
+
+Do not put "you are model X" metadata into shared multi-agent context. In cooperative tasks, visible family labels split the group into factions and cost 55% more tokens and 30% more rounds, with success falling from 96% to 81%. See @sources/arxiv-2609.35928-prompted-identity-factionalism-2026-09-30.md.
 
 ## Snippets
 

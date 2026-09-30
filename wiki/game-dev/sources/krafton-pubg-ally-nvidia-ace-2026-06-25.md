@@ -9,6 +9,7 @@ related:
   - concepts/agentic-npc-design-guardrails.md
   - sources/inbox-arxiv-reject-batch-2026-06-28.md
   - meta/cross-wiki-routing.md
+  - sources/arxiv-2609.29837-pubg-ally-embodied-teammate-2026-09-30.md
 read_status: read
 source_type: news-digest
 source_url: https://gamedev.net/news/how-krafton-built-pubg-ally-a-co-playable-character-powered-by-nvidia-ace-r4114/

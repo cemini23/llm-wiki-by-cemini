@@ -14,6 +14,10 @@ related:
   - sources/inbox-arxiv-reject-batch-2026-06-29.md
   - sources/arxiv-2606.30092-starcraft-hrl-influence-maps-2026-06-30.md
   - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
+  - sources/arxiv-2609.29228-bt-fsm-llm-conversion-2026-09-30.md
+  - sources/arxiv-2609.34214-glyphbench-rl-playground-2026-09-30.md
+  - sources/arxiv-2609.34342-sage-strategic-reasoning-2026-09-30.md
+  - sources/arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30.md
 maturity: validated
 created: 2026-06-20
 updated: 2026-06-30

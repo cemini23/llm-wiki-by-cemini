@@ -20,6 +20,8 @@ related:
   - sources/exa-ai-gamedev-tools-batch-2026-06-13.md
   - concepts/agentic-pcg-level-design.md
   - concepts/ccgs-workflow-extraction.md
+  - sources/arxiv-2609.31076-abstraction-ladder-code-skills-2026-09-30.md
+  - sources/arxiv-2609.35928-prompted-identity-factionalism-2026-09-30.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-07-03

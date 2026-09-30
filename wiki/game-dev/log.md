@@ -4,6 +4,21 @@ Append-only chronological log.
 
 ---
 
+## [2026-09-30] ingest | 10 arXiv inbox (8 ingests + 2 rejects) + Phase-0/1 harness rules
+
+- Inbox: 10 PDFs → @sources/inbox-arxiv-reject-batch-2026-09-30.md + 8 source pages
+- **Ingest:** BT↔FSM LLM conversion (2609.29228), PUBG Ally full paper (2609.29837), abstraction ladder / code skills (2609.31076), GlyphBench (2609.34214), SAGE strategic reasoning (2609.34342), prompted identity factionalism (2609.35928), EnterpriseBench (2609.37658), AnthroDial (2609.37853)
+- **Reject:** 2609.28673 political ad-hominem debate → CCC; 2609.34679 decentralized matching / market design → OSINT
+- Phase-0: SAGE / FSM2BT / PartoPrey-BT-RL **NO-GO clone** (no LICENSE); FirmBench **Apache-2.0**; CodeHack **MIT**
+- Phase-1: rules **H1** (name high-level ops, keep primitive fallback) + **H2** (withhold model-family identity) wired in @concepts/agent-harness-castle-project.md; eval bench ladder extended
+- Entities: firmbench, codehack
+- Concepts updated: agent-harness, llm-npc-runtime-ai-shelf, agentic-npc-design-guardrails, game-ai-rl-augmentation-shelf, stronghold-2-ai-lords, rts-siege-ai-reference, ai-assisted-game-dev-workflows
+- Brief: `briefs/research/agent-harness-transform-rules-2026-09-30.md`; SAGA shelf extended with SAGE
+- Sweep: @sweeps/2026-09-30-daily.md
+- Note: external cheap-executor routing (route-task / grok / opencode) **blocked by session sandbox**; pages drafted by in-session Haiku subagents
+
+---
+
 ## [2026-09-24] ingest | 11 arXiv inbox (6 ingests + 5 rejects) + Phase-0/1 eval bench ladder
 
 - Inbox: 11 PDFs → @sources/inbox-arxiv-reject-batch-2026-09-24.md + 6 source pages; archived; inbox cleared

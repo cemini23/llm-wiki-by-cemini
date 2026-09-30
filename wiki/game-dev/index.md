@@ -99,6 +99,8 @@ Catalog of all wiki pages. Updated on each ingest.
 | [ziva-godot-agent](entities/tools/ziva-godot-agent.md) | validated | In-editor Godot agent — **CONDITIONAL-GO** (proprietary) |
 | [hera-agent-godot](entities/tools/hera-agent-godot.md) | validated | Low-token CLI editor control — **CONDITIONAL-GO** W2 (4.7+) |
 | [vrexplorer](entities/tools/vrexplorer.md) | validated | Unity VR testing — **NO-GO adopt** / STEAL-FROM |
+| [firmbench](entities/tools/firmbench.md) | validated | EnterpriseBench bench — **CONDITIONAL-GO** (Apache-2.0), deferred |
+| [codehack](entities/tools/codehack.md) | validated | Code-based agent skills — **CONDITIONAL-GO** (MIT), STEAL-FROM pattern |
 
 ## Entities — Games (reference)
 
@@ -288,3 +290,12 @@ Catalog of all wiki pages. Updated on each ingest.
 | [arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24](sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md) | read |
 | [arxiv-2609.27585-unity-insight-code-asset-index-2026-09-24](sources/arxiv-2609.27585-unity-insight-code-asset-index-2026-09-24.md) | read |
 | [arxiv-2609.27606-state-grounded-conditioning-2026-09-24](sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md) | read |
+| [arxiv-2609.29228-bt-fsm-llm-conversion-2026-09-30](sources/arxiv-2609.29228-bt-fsm-llm-conversion-2026-09-30.md) | read |
+| [arxiv-2609.29837-pubg-ally-embodied-teammate-2026-09-30](sources/arxiv-2609.29837-pubg-ally-embodied-teammate-2026-09-30.md) | read |
+| [arxiv-2609.31076-abstraction-ladder-code-skills-2026-09-30](sources/arxiv-2609.31076-abstraction-ladder-code-skills-2026-09-30.md) | read |
+| [arxiv-2609.34214-glyphbench-rl-playground-2026-09-30](sources/arxiv-2609.34214-glyphbench-rl-playground-2026-09-30.md) | read |
+| [arxiv-2609.34342-sage-strategic-reasoning-2026-09-30](sources/arxiv-2609.34342-sage-strategic-reasoning-2026-09-30.md) | read |
+| [arxiv-2609.35928-prompted-identity-factionalism-2026-09-30](sources/arxiv-2609.35928-prompted-identity-factionalism-2026-09-30.md) | read |
+| [arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30](sources/arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30.md) | read |
+| [arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30](sources/arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30.md) | read |
+| [inbox-arxiv-reject-batch-2026-09-30](sources/inbox-arxiv-reject-batch-2026-09-30.md) | read |

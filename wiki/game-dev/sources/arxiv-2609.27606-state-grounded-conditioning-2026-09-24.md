@@ -8,6 +8,7 @@ related:
   - sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md
   - concepts/agent-harness-castle-project.md
   - sources/inbox-arxiv-reject-batch-2026-09-24.md
+  - sources/arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2609.27606

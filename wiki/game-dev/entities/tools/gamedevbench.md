@@ -22,6 +22,8 @@ related:
   - sources/arxiv-2607.03525-gameenginebench-harness-2026-08-15.md
   - entities/tools/gamelogicbench.md
   - sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md
+  - sources/arxiv-2609.34214-glyphbench-rl-playground-2026-09-30.md
+  - sources/arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30.md
 maturity: validated
 created: 2026-06-21
 updated: 2026-09-24

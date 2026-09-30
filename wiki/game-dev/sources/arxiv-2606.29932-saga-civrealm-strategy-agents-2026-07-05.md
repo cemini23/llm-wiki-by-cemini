@@ -15,6 +15,7 @@ related:
   - sources/protocolbench-llm-multiagent-protocol-shelf-2026-06-24.md
   - sources/inbox-arxiv-reject-batch-2026-07-05.md
   - meta/cross-wiki-routing.md
+  - sources/arxiv-2609.34342-sage-strategic-reasoning-2026-09-30.md
 read_status: read
 source_type: research-paper
 source_url: https://arxiv.org/abs/2606.29932

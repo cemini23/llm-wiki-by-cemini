@@ -14,6 +14,8 @@ related:
   - sources/arxiv-2609.23043-narrative-reliability-detective-games-2026-09-24.md
   - sources/arxiv-2609.27606-state-grounded-conditioning-2026-09-24.md
   - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
+  - sources/arxiv-2609.29837-pubg-ally-embodied-teammate-2026-09-30.md
+  - sources/arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-09-24

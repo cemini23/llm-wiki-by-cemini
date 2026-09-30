@@ -19,6 +19,8 @@ related:
   - sources/36kr-ai-game-story-gameplay-guardrails-2026-06-30.md
   - sources/arxiv-2606.29932-saga-civrealm-strategy-agents-2026-07-05.md
   - sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md
+  - sources/arxiv-2609.29837-pubg-ally-embodied-teammate-2026-09-30.md
+  - sources/arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-09-19
