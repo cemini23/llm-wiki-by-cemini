@@ -58,7 +58,9 @@ Ten PDFs from `2026-09-30-daily.md` and earlier sweeps. **8 ingest** (game AI, a
 | `github.com/sduyangmin/FirmBench` | 2609.37658 | Apache-2.0 | **CONDITIONAL-GO** — see @entities/tools/firmbench.md |
 | `github.com/BartekCupial/codehack` | 2609.31076 | MIT | **CONDITIONAL-GO** — see @entities/tools/codehack.md |
 
-**Action:** Archive 10 PDFs to egress; clear inbox.
+**Action:** Archived 10 PDFs; inbox cleared 2026-09-30.
+
+**Location:** `cemini-egress-fi:/opt/cemini-bulk/research/game-dev/` — remote sizes match the originals.
 
 ## Dead Ends
 
