@@ -4,6 +4,7 @@ type: concept
 tags: [quant, options, volatility, k276]
 keywords: [k276, greeks, rough-vol, price-impact, FILE]
 related:
+  - concepts/k277-vol-quant-wave.md
   - concepts/k275-vol-quant-wave.md
   - sources/arxiv-2609.33213-fi-operator-2026-09-30.md
   - sources/arxiv-2609.33767-taming-greeks-2026-09-30.md
@@ -11,13 +12,14 @@ related:
   - sources/arxiv-2609.37741-dyson-schwinger-2026-09-30.md
 maturity: draft
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-01
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k277-vol-quant-wave.md
 - @concepts/k275-vol-quant-wave.md
 - @sources/arxiv-2609.33213-fi-operator-2026-09-30.md
 - @sources/arxiv-2609.33767-taming-greeks-2026-09-30.md

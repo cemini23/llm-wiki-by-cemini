@@ -4,18 +4,20 @@ type: concept
 tags: [prediction-markets, gambling, k276]
 keywords: [k276, kalshi, polymarket, cftc, claim-ledger]
 related:
+  - concepts/k277-gambling-pm-wave.md
   - concepts/k275-gambling-pm-wave.md
   - sources/substack-rss-event-horizon-2026-09-29-you-definitely-can-stop-offshore-prediction-mark.md
   - sources/substack-rss-event-horizon-2026-09-30-prediction-markets-need-to-let-us-trade-on-the-f.md
 maturity: draft
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-01
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k277-gambling-pm-wave.md
 - @concepts/k275-gambling-pm-wave.md
 - @sources/substack-rss-event-horizon-2026-09-29-you-definitely-can-stop-offshore-prediction-mark.md
 - @sources/substack-rss-event-horizon-2026-09-30-prediction-markets-need-to-let-us-trade-on-the-f.md

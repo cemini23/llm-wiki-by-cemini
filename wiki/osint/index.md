@@ -7,6 +7,33 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K277 ingest (2026-10-01)
+OSINT K277: 15 new source pages (8 arXiv + 2 latent-space + 1 tl;dr sec + 1 Sterling stub + 3 substack) + **6 hubs**. Phase-0 **clones nothing**. Three repo URLs checked with `gh api` 2026-10-01: turbo-harness MIT 7783 KB; **ScholarEvolve SPDX null 0 KB**; **CodeMimicry SPDX null 580 KB**. **NO-CLONE** all three. Strongest finding: agent summaries flipped a buy/sell call in one case in four to one in three. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve skills or rules from a paper. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Never write `watches.json`. Transkribus stays the only product HTR. No PoC on the security pages.** 15/15 files move to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k277-harness](concepts/k277-harness-evolution-wave.md) | Minimal harness wins; gate every self-revision | draft |
+| [k277-security](concepts/k277-security-wave.md) | Code-domain safety lag; confirm then report | draft |
+| [k277-vol](concepts/k277-vol-quant-wave.md) | SLV calibration at 0.273s vs 25.778s | draft |
+| [k277-atto-htr](concepts/k277-atto-htr-wave.md) | Merged archives beat pooled data on OOD | draft |
+| [k277-pm](concepts/k277-gambling-pm-wave.md) | Polymarket safety tools; $21B valuation | draft |
+| [k277-ood](concepts/k277-ood-stub-wave.md) | Sterling title and URL only | draft |
+| [minimal-harness](sources/arxiv-2609.40303-minimal-harness-2026-10-01.md) | Environment is the big effect | draft |
+| [dynaharness](sources/arxiv-2609.40306-dynaharness-2026-10-01.md) | Paired regression gate on revisions | draft |
+| [turbo-harness](sources/arxiv-2609.40330-turbo-harness-2026-10-01.md) | Per-instance harness editing | draft |
+| [scholarevolve](sources/arxiv-2609.40169-scholarevolve-2026-10-01.md) | Literature-guided harness evolution | draft |
+| [cogentic](sources/arxiv-2609.40324-cogentic-2026-10-01.md) | Adversarial verifiers plus a ledger | draft |
+| [codemimicry](sources/arxiv-2609.39902-codemimicry-2026-10-01.md) | Safety lag in the code domain | draft |
+| [sk-calibration](sources/arxiv-2609.39256-sk-calibration-2026-10-01.md) | Fast SLV calibration | draft |
+| [distributed-doc-analysis](sources/arxiv-2609.39684-distributed-document-analysis-2026-10-01.md) | Model merging, HTR x1.62 | draft |
+| [klement-flip](sources/substack-rss-klement-2026-10-01-flippin-heck.md) | Summaries flip buy/sell calls | draft |
+| [eh-polymarket-safety](sources/substack-rss-event-horizon-2026-10-01-polymarket-adds-responsible-trading-tools.md) | Self-exclusion and deposit limits | draft |
+| [wublock-vc-sept](sources/substack-rss-wublock-2026-10-01-september-vc-report-crypto-vc-funding-rises-more.md) | Crypto VC +71.1% MoM | draft |
+| [tldrsec-348](sources/newsletter-rss-tldrsec-2026-10-01-tldr-sec-348---googles-pagebreak-scanner-perplex.md) | PageBreak, Numbat | draft |
+| [ls-devday-2026](sources/newsletter-rss-latent-space-2026-09-30-why-dwarkesh-is-wrong-about-computer-use-how-ope.md) | Computer use, Dots, Decisions API | draft |
+| [ls-gemini-4-argon](sources/newsletter-rss-latent-space-2026-10-01-ainews-gemini-4-argon-gdms-answer-to-astrafable.md) | Model release plus a security item | draft |
+| [sterling-gbp-checklist](sources/newsletter-rss-sterling-sky-2026-09-29-the-1-checklist-to-optimize-your-google-business.md) | Title and URL only | draft |
+
 ### K276 ingest (2026-09-30)
 OSINT K276: 38 new source pages (16 arXiv + 6 newsletter + 8 substack + 8 Sterling stubs) + **6 hubs**. Phase-0 **clones nothing**. Five repo URLs were checked with `gh api` 2026-09-30: game_arena Apache-2.0 8494 KB; igsm-trace-validity MIT 95 KB; **MetaSkill-AI4AI SPDX null 466 KB** (pattern only); good_enough_papyrus_htr MIT 23 KB; resight-smc MIT 954 KB. **NO-CLONE** all five. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Never write `watches.json`. Transkribus stays the only product HTR.** 38/38 files move to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
 

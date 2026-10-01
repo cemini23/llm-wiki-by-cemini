@@ -1,3 +1,27 @@
+## [2026-10-01] ingest | K277 wave
+
+- **Inbox:** 15 sources written (8 arXiv + 2 latent-space + 1 tl;dr sec + 1 Sterling stub + 3 substack). **15/15 archived** to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Location fields name the egress path. Inbox is empty. No clone.
+- **Harness:** the minimal-harness paper found the coding environment is the single largest effect and that search, autonomy, and multi-agent scaffolding added nothing significant under an equal budget (2609.40303); self-selection trailed an oracle by 6.832 percentage points; DynaHarness admits a revision only after a paired regression check (2609.40306); Turbo Harness edits the harness per instance from a playbook (2609.40330); ScholarEvolve evolves it from the literature (2609.40169); Cogentic runs adversarial verifiers over drafts and keeps a ledger of only-confirmed work (2609.40324). **Never auto-evolve skills or rules from a paper. Do not swap `/route`.**
+- **Verifier theme (three appearances):** a summary is not the document. Klement reports agent summaries flipped a buy or sell call in one case in four to one in three (2026-10-01). PageBreak validates a suspected bug against a running environment before it reports. This repeats the K276 trace-validity finding.
+- **Security:** CodeMimicry names safety generalization lag, a code-domain blind spot where prompt-level guards left 76% to 100% residual success while hidden-layer interventions cut it to 4% to 14% (2609.39902). Threat class and mitigation table only. **No PoC.** A reported hidden-reasoning extraction campaign is a headline.
+- **Atto:** decentralized document analysis reports handwriting transfer improving by a best case of x1.62 when separate archives are trained apart and merged, against pooled training (2609.39684). Method candidate for a future M-phase. **Transkribus stays the only product HTR.** No `truth.ged` merge. No Barone PII.
+- **Vol quant:** stochastic Knothe-Rosenblatt calibration at 0.273s against 25.778s for a standard SLV calibration, with close prices (2609.39256). **No trade. No sizing change.**
+- **PM / crypto:** Polymarket launched self-exclusion and deposit limits, and partnered with a national telehealth provider. Polymarket raised at a $21B post-money valuation; Kalshi is reported raising toward $40B. Crypto VC funding rose 71.1% month over month to about $1.269B. **No level to arm. Never auto-arm. No pm scp.**
+- **SEO:** one Sterling Sky capture arrived as a truncated teaser, so it is a title and a URL only. **No ranking recipe.**
+- **Concepts:** 6 k277 hubs (harness-evolution, security, vol-quant, atto-htr, gambling-pm, ood-stub). Matching k276 hubs backlinked both ways; `updated:` bumped to 2026-10-01. `harness_verb: FILE`. `wire_status: policy_wired`.
+- **Phase-0:** clones nothing. Three repo URLs checked with `gh api` 2026-10-01: turbo-harness MIT 7783 KB; **ScholarEvolve SPDX null**; **CodeMimicry SPDX null**. **No product install. 0 product Integrate GO.**
+- **Routing:** Atto — merged-archive method signal; **no HTR swap**. GW — **no level to arm**; **never auto-arm**. DFS — no DFS extract. Parlays — no new method; **no submit**. CCC — keep the paired regression gate and the adversarial-verifier split; **do not swap `/route`**. Cyber — code-domain safety lag; **no PoC**. Gambling — venue maturity and capital; **no pm scp**. SEO — title and URL. **No xsp scp. No LIVE Discord.**
+- **Rule:** `## OSINT K277 — 2026-10-01` inserted above `## OSINT K276` in `.cursor/rules/osint-phase1-adopt-wires.mdc`. **FILE and HITL only.**
+- **Briefs:** `briefs/2026-10-01_k277-*` (8: atto, guruwatcher, ceminidfs, ceminiparlays, ccc-harness, cyber-lab, gambling, seo). Sibling copies staged in Atto, GuruWatcher, CeminiDFS, CeminiParlays, CCC, cybersecurity, gambling, and SEO.
+- **Index / ROADMAP / hot.md:** K277 sections added above K276.
+- **gate:** `adopt_k277_phase0.sh` + `adopt_k277_phase1.sh` (no commit).
+- **Next actions (not done):**
+  1. Check the execution environment before adding harness machinery. It carried the largest measured effect.
+  2. Add a summary-fidelity check: a summary is not the document. Score the source, not the summary.
+  3. Keep the paired regression gate on any self-revision, and keep only confirmed work in the ledger.
+  4. Atto: evaluate merged small-archive training for a future M-phase.
+  5. No clone. No HTR swap. No auto-arm. A human still types the ticket.
+
 ## [2026-09-30] wire | K276 trace-validity gate
 
 - Added the `trace_recheck` key to `scripts/harness_eval_checklist.py` (K334 harness eval gate). The gate now has six keys; all must be true for SHIP.

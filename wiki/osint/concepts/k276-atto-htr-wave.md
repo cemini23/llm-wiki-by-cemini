@@ -4,19 +4,21 @@ type: concept
 tags: [atto, htr, genealogy, k276]
 keywords: [k276, transkribus, character-error, few-shot, FILE]
 related:
+  - concepts/k277-atto-htr-wave.md
   - concepts/k275-ood-stub-wave.md
   - sources/arxiv-2609.35473-htr-high-variance-2026-09-30.md
   - sources/arxiv-2609.37195-htr-icl-2026-09-30.md
   - sources/arxiv-2609.37755-papyrus-htr-tolerance-2026-09-30.md
 maturity: draft
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-01
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k277-atto-htr-wave.md
 - @concepts/k275-ood-stub-wave.md
 - @sources/arxiv-2609.35473-htr-high-variance-2026-09-30.md
 - @sources/arxiv-2609.37195-htr-icl-2026-09-30.md

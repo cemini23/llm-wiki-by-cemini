@@ -4,6 +4,7 @@ type: concept
 tags: [agents, harness, k276, ccc]
 keywords: [k276, harness-learning, trace-validity, plan-gap, FILE]
 related:
+  - concepts/k277-harness-evolution-wave.md
   - concepts/k275-harness-evolution-wave.md
   - sources/arxiv-2609.35738-harness-learning-2026-09-30.md
   - sources/arxiv-2609.38107-invalid-traces-2026-09-30.md
@@ -18,13 +19,14 @@ related:
   - sources/newsletter-rss-latent-space-2026-09-30-ainews-openai-devday-2026-dots-61-sol-ultrafast.md
 maturity: draft
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-01
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k277-harness-evolution-wave.md
 - @sources/newsletter-rss-latent-space-2026-09-29-ainews-amd-buys-world-labs-for-82b-as-atlas-solv.md
 - @sources/newsletter-rss-latent-space-2026-09-29-ainews-opus-55-is-good-at-explainer-videos.md
 - @sources/newsletter-rss-latent-space-2026-09-30-ainews-openai-devday-2026-dots-61-sol-ultrafast.md

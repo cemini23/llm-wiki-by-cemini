@@ -4,6 +4,8 @@ type: concept
 tags: [ood, k276]
 keywords: [k276, vision, engineering, crypto, name-only]
 related:
+  - concepts/k277-security-wave.md
+  - concepts/k277-ood-stub-wave.md
   - concepts/k275-ood-stub-wave.md
   - sources/arxiv-2609.34346-e-wave-2026-09-30.md
   - sources/arxiv-2609.34905-resight-smc-2026-09-30.md
@@ -22,13 +24,15 @@ related:
   - sources/newsletter-rss-sterling-sky-2026-09-30-googles-2025-2026-core-updates-are-destroying-lo.md
 maturity: draft
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-01
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k277-security-wave.md
+- @concepts/k277-ood-stub-wave.md
 - @sources/newsletter-rss-sterling-sky-2026-09-27-can-you-turn-off-google-reviews-on-a-business-pr.md
 - @sources/newsletter-rss-sterling-sky-2026-09-27-google-business-profile-performance-report-how-t.md
 - @sources/newsletter-rss-sterling-sky-2026-09-27-how-to-remove-bad-reviews-from-google-business-p.md

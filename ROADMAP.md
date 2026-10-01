@@ -30,6 +30,14 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-01 — K277 ingest)
+
+- **K277 ingest** — 15 source pages + **6 hubs**. Phase-0 **clones nothing**. Three repo URLs verified with `gh api` 2026-10-01 (turbo-harness MIT 7783 KB; **ScholarEvolve SPDX null**; **CodeMimicry SPDX null**). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve skills or rules from a paper. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC on the security pages.**
+- Four reusable findings: the execution environment carried the largest harness effect, and extra machinery was not significant under an equal budget; self-selection trailed an oracle by 6.832 points; every self-revision needs a paired regression gate; keep only confirmed work in a ledger.
+- **A summary is not the document.** Agent summaries flipped a buy or sell call in one case in four to one in three. This is the third form of the K276 trace-validity finding, after PageBreak's confirm-before-report design.
+- Atto: decentralized model merging improved out-of-distribution handwriting transfer by a best case of x1.62. Evaluate for a future M-phase. No HTR swap.
+- K274 projection actions stay open. A human types the ticket.
+
 ## Current state (2026-09-30 — K276 ingest)
 
 - **K276 ingest** — 38 source pages + **6 hubs**. The strongest harness cluster so far: trace validity, the plan-declaration-execution gap, harness learning, meta-skills, bounded controller context, and Game Arena. Phase-0 **clones nothing**. Five repo URLs verified with `gh api` 2026-09-30 (game_arena Apache-2.0; igsm-trace-validity MIT; **MetaSkill-AI4AI SPDX null**; good_enough_papyrus_htr MIT; resight-smc MIT). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR.**
