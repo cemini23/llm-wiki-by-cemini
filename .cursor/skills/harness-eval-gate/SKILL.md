@@ -14,7 +14,7 @@ federation: true
 
 # Harness eval gate (K334)
 
-Canon: `@wiki/concepts/harness-as-eval-artifact.md` (arXiv **2609.01437**). Helper: `scripts/harness_eval_checklist.py`. Evaluate **runnable harness infrastructure**, not only terminal task output.
+Canon: `@ccc-wiki/concepts/harness-as-eval-artifact.md` (arXiv **2609.01437**). Helper: `scripts/harness_eval_checklist.py`. Evaluate **runnable harness infrastructure**, not only terminal task output.
 
 ## Procedure
 
@@ -27,15 +27,17 @@ JSON keys: `hidden_held_out`, `executor_swap`, `state_fires`, `external_eval`, `
 
 Pair with: K281/K292 external eval contract, K332 vague-goal self-evolution (judge vs base model), `env-harness-wrap` (keep the verifier).
 
-## Trace validity (K276)
+## Evidence integrity (K276 + K277)
 
-A visible chain-of-thought trace is weak evidence for the process. arXiv **2609.38107** measured it: on the hardest iGSM instances, 31.6% of correct answers carry invalid traces. Over half of those pass every syntax and arithmetic check and fail a semantic dependency check. Shuffling tokens in 10% of the training trace sentences kept near-clean accuracy with no trace passing verification.
+A visible chain-of-thought trace is weak evidence for the process. arXiv **2609.38107** measured it: on the hardest iGSM instances, 31.6% of correct answers carry invalid traces, and over half of those pass every syntax and arithmetic check and fail a semantic dependency check.
 
-Rule: score the re-run, not the trace.
+A summary is not the document. Research summarised by Klement (2026-10-01) reported a buy-or-sell call flipping in one case in four to one in three when an agent read a summary instead of the full filing.
+
+Rule: score the re-run and the source, not the trace and the summary.
 
 ## NEVER
 
 - Do not rewrite `## Verify` or lint rules to match a failing agent (K162).
 - Do not auto-evolve `.cursor/skills` from harness-dev feedback.
 - Visible feedback alone ≠ held-out transfer.
-- Do not accept a chain-of-thought trace as proof that the check ran.
+- Do not accept a chain-of-thought trace or an agent summary as proof that the check ran.

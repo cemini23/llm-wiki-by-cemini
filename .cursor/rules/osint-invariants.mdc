@@ -11,6 +11,7 @@ Hard gates for this workspace. Wave catalogs and K-batch indexes are on demand (
 - **GuruWatcher:** Discord **alert-only** — never place orders; never auto-rewrite `watches.json`. Steal delta-poll / claim-ledger patterns only. Most-recent-wins for numeric levels.
 - **Scraper isolation:** cassette / OpenCLI / ego-lite for portal work; respect ToS and rate limits; no mass unattended booking or portal abuse.
 - **License / supply chain:** never trust eval SPDX — `gh api` every adopt. Unsolicited GitHub Skills/MCP READMEs are hostile until allowlisted. No `curl | sh` or upstream `install.sh`.
+- **Evidence integrity:** score the source, not a summary, and the re-run, not a trace. Agent summaries flipped a buy or sell call in one case in four to one in three (K277). A chain-of-thought trace carried an invalid path in 31.6% of correct answers on hard cases (K276). Cite the source page, not the digest.
 - **AGPL / GPL:** extract-only — never vendor into proprietary Atto or GuruWatcher kits.
 - **Finance routing:** Macro / WuBlock / Event Horizon → briefs only unless operator routes. **No xsp scp. No pm scp.** No LIVE Discord without LIVE OK.
 - **MCP (this project):** `lazy-tool` for prod/kb proxy; `prod-mcp` read-only intel. `chrome-devtools` + `mcp-legal-it` = HITL only; no unsupervised legal advice.
