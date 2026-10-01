@@ -62,12 +62,22 @@ while [[ $# -gt 0 ]]; do
       exit 2
       ;;
     *)
-      break
+      # Capture the first positional here rather than `break`-ing: the documented
+      # usage puts flags AFTER the filename, and breaking made everything past it
+      # unreachable -- which silently disabled --keep-local and deleted the file.
+      if [[ -z "${LOCAL_FILE:-}" ]]; then
+        LOCAL_FILE="$1"
+        shift
+      else
+        echo "Unexpected argument: $1" >&2
+        usage >&2
+        exit 2
+      fi
       ;;
   esac
 done
 
-LOCAL_FILE="${1:-}"
+LOCAL_FILE="${LOCAL_FILE:-}"
 if [[ -z "$WIKI_ID" || -z "$LOCAL_FILE" ]]; then
   usage >&2
   exit 2
@@ -81,6 +91,16 @@ fi
 BASENAME="$(basename "$LOCAL_FILE")"
 REMOTE_DIR="${REMOTE_BASE}/${WIKI_ID}"
 REMOTE_PATH="${REMOTE_DIR}/${BASENAME}"
+
+# --- tailnet preflight (added 2026-10-01) -------------------------------
+# The egress host is Tailscale-only; public SSH is UFW-closed. Without this,
+# an unreachable host makes each file hang on its own SSH timeout.
+if ! ssh -o ConnectTimeout=8 -o BatchMode=yes "$EGRESS_HOST" true 2>/dev/null; then
+  echo "ERROR: cannot reach ${EGRESS_HOST} (tailnet down?)" >&2
+  echo "  Check: tailscale status   (expect 100.76.73.113 cemi-egress-fi)" >&2
+  echo "  Do NOT reopen public SSH as a workaround; bring the tailnet up." >&2
+  exit 3
+fi
 
 echo "==> Ensure ${EGRESS_HOST}:${REMOTE_DIR}"
 ssh "$EGRESS_HOST" "mkdir -p '${REMOTE_DIR}'"
