@@ -427,7 +427,7 @@ Historical sync/rsync instructions are archived in `@meta/librarian-decommission
 
 ## Agent orchestration (laptop — K159)
 
-**Window override (2026-09-30 to about 2026-10-14).** Cursor quota is out. Use the Claude desktop app in 3p mode on DeepSeek for this window. The picker labels are DeepSeek V4.1 Flash (default) and DeepSeek V4.1 Flash (Pro slot). A local proxy at `http://127.0.0.1:8791` rewrites both routes to `deepseek-flash`. **There is no Pro tier since 2026-09-14** — DeepSeek retired `deepseek-v4-flash` and phased out `deepseek-v4-pro`, so both entries serve V4.1-Flash. Claude Desktop 2.110 drops a raw `deepseek-*` id, so leave those ids off the picker. Then run `route-task` so Grok CLI implements. The window skill is `~/.claude/skills/route/SKILL.md`. Fable and Opus run on Anthropic. When Cursor quota returns, use the bullets below.
+**Window override (2026-09-30 to about 2026-10-14).** Cursor quota is out. Use the Claude desktop app in 3p mode on DeepSeek for this window. The picker offers one label, **DeepSeek V4.1 Flash**. A local proxy at `http://127.0.0.1:8791` serves it as `deepseek-flash`. **There is no Pro tier since 2026-09-14** — DeepSeek retired `deepseek-v4-flash` and phased out `deepseek-v4-pro`. Claude Desktop 2.110 drops a raw `deepseek-*` id, so leave those ids off the picker. Then run `route-task` so Grok CLI implements. The window skill is `~/.claude/skills/route/SKILL.md`. Fable and Opus run on Anthropic. When Cursor quota returns, use the bullets below.
 
 Claude Code plugin **fable-advisor** is installed (user scope). In Claude Code sessions on this workspace:
 

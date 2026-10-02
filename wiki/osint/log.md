@@ -2,10 +2,10 @@
 
 - DeepSeek retired the model id `deepseek-v4-flash` on 2026-09-10 and phased out `deepseek-v4-pro` on 2026-09-14. Both aliases now serve **V4.1-Flash**, whose API id is `deepseek-flash`.
 - The gateway had pinned both old ids since 2026-09-30, so both picker entries served the same model while the labels read "V4 Flash" and "V4 Pro".
-- Repointed `~/.local/bin/cemini-deepseek-anthropic-proxy.py` so every route maps to `deepseek-flash`; display names are now "DeepSeek V4.1 Flash" and "DeepSeek V4.1 Flash (Pro slot)". The LaunchAgent was restarted.
+- Repointed `~/.local/bin/cemini-deepseek-anthropic-proxy.py` so every route maps to `deepseek-flash`. The picker was then cut to **one entry**, "DeepSeek V4.1 Flash"; the `claude-sonnet-4-5` route stays routable so a stale selection still resolves. The LaunchAgent was restarted.
 - Repointed `DEEPSEEK_MODEL=deepseek-flash` in `~/.cemini/llm-routing.env`. Backup: `llm-routing.env.bak-20261001`.
 - `CLAUDE.md` window override and `~/.claude/skills/route/SKILL.md` updated. The route skill no longer claims a Pro tier.
-- Verify: `claude-haiku-4-5` and `claude-sonnet-4-5` both returned `"model":"deepseek-flash"` through `http://127.0.0.1:8791`. `deepseek-flash` returned HTTP 200 on `api.deepseek.com/anthropic` before the change.
+- Verify: the model list returns one entry; `claude-haiku-4-5` and `claude-sonnet-4-5` both returned `"model":"deepseek-flash"` through `http://127.0.0.1:8791`. `deepseek-flash` returned HTTP 200 on `api.deepseek.com/anthropic` before the change.
 - Carry forward risk: `deepseek-flash` is a moving alias. The model behind it can change inside the window without notice.
 
 ## [2026-10-01] ingest | K277 wave
