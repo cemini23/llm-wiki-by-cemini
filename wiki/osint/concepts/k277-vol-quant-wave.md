@@ -4,17 +4,19 @@ type: concept
 tags: [quant, volatility, k277]
 keywords: [k277, slv, sinkhorn, calibration, no-trade]
 related:
+  - concepts/k278-vol-quant-wave.md
   - concepts/k276-vol-quant-wave.md
   - sources/arxiv-2609.39256-sk-calibration-2026-10-01.md
 maturity: draft
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k278-vol-quant-wave.md
 - @concepts/k276-vol-quant-wave.md
 - @sources/arxiv-2609.39256-sk-calibration-2026-10-01.md
 

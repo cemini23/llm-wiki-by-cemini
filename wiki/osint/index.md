@@ -7,6 +7,31 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K278 ingest (2026-10-02)
+OSINT K278: 13 new source pages (8 arXiv + 1 eval docx + 2 latent-space + 2 substack) + **6 hubs**. Phase-0 **clones nothing**. The eval docx listed 20 repos; every license was checked with `gh api` 2026-10-02 and **four docx claims failed** (SimdPaddleOCR claimed MIT, is Apache-2.0; context-mode claimed ELv2, is NOASSERTION; sentry claimed FSL, is NOASSERTION; cursor/plugins claimed MIT/Apache, is null). Four repos size-skipped at 379-954 MB. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC on the security page.** 13/13 files move to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k278-harness](concepts/k278-harness-wave.md) | The harness owns state; visibility is not enforcement | draft |
+| [k278-vol](concepts/k278-vol-quant-wave.md) | Barrier and American, two method notes | draft |
+| [k278-atto-htr](concepts/k278-atto-htr-wave.md) | PyPottery few-shot curve; constraint split | draft |
+| [k278-pm](concepts/k278-gambling-pm-wave.md) | Sponsored data; a forecaster is not an edge | draft |
+| [k278-security](concepts/k278-security-wave.md) | Tool choice is not the bottleneck; arguments are | draft |
+| [k278-ood](concepts/k278-ood-stub-wave.md) | Four license claims failed; a p-hacked study | draft |
+| [eval-repo-revenue](sources/eval-repo-revenue-2026-10-02.md) | Twenty rows, four license mismatches | draft |
+| [vista](sources/arxiv-2610.02200-vista-2026-10-02.md) | Visual memory; open-weight 1.89 to 66.93 | draft |
+| [global-coherence](sources/arxiv-2610.02036-global-coherence-2026-10-02.md) | One restoring sentence: chance to 40 of 40 | draft |
+| [pypottery](sources/arxiv-2610.02072-pypottery-2026-10-02.md) | 6.2% CER on cursive, few-shot parsing curve | draft |
+| [kalibench](sources/arxiv-2610.02206-kalibench-2026-10-02.md) | Runtime-free verifiable reward | draft |
+| [dyor-forecasting](sources/arxiv-2610.01955-dyor-forecasting-2026-10-02.md) | Brier 0.254 at 5% of cost; no edge | draft |
+| [barrier-option](sources/arxiv-2610.00340-barrier-option-2026-10-02.md) | Error 0.09426 to 0.01248 | draft |
+| [american-slsv](sources/arxiv-2610.01187-american-slsv-2026-10-02.md) | 35s against 639s | draft |
+| [genealogy-db-constraints](sources/arxiv-2610.00633-genealogy-db-constraints-2026-10-02.md) | 19 of 210 rules do not fit the schema | draft |
+| [rlm-zhang](sources/newsletter-rss-latent-space-2026-10-02-rlm-zhang-2026-10-02.md) | Harness whose only tool is code | draft |
+| [pi-durable](sources/newsletter-rss-latent-space-2026-10-02-pi-durable-2026-10-02.md) | Externalised state, checkpoints | draft |
+| [eh-sponsored-pm](sources/substack-rss-event-horizon-2026-10-02-sponsored-pm-data-2026-10-02.md) | Kalshi-CBS; 79% of users lost money | draft |
+| [klement-smoke](sources/substack-rss-klement-2026-10-02-smoke-this-study-2026-10-02.md) | How a weak study is built | draft |
+
 ### K277 ingest (2026-10-01)
 OSINT K277: 15 new source pages (8 arXiv + 2 latent-space + 1 tl;dr sec + 1 Sterling stub + 3 substack) + **6 hubs**. Phase-0 **clones nothing**. Three repo URLs checked with `gh api` 2026-10-01: turbo-harness MIT 7783 KB; **ScholarEvolve SPDX null 0 KB**; **CodeMimicry SPDX null 580 KB**. **NO-CLONE** all three. Strongest finding: agent summaries flipped a buy/sell call in one case in four to one in three. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve skills or rules from a paper. No auto-submit. No xsp/pm scp. No LIVE Discord. Never auto-arm. Never write `watches.json`. Transkribus stays the only product HTR. No PoC on the security pages.** 15/15 files move to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
 

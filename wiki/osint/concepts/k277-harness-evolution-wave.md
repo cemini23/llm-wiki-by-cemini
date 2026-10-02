@@ -4,6 +4,7 @@ type: concept
 tags: [agents, harness, k277, ccc]
 keywords: [k277, minimal-harness, turbo-harness, scholarevolve, FILE]
 related:
+  - concepts/k278-harness-wave.md
   - concepts/k276-harness-evolution-wave.md
   - sources/arxiv-2609.40303-minimal-harness-2026-10-01.md
   - sources/arxiv-2609.40306-dynaharness-2026-10-01.md
@@ -15,13 +16,14 @@ related:
   - sources/newsletter-rss-latent-space-2026-10-01-ainews-gemini-4-argon-gdms-answer-to-astrafable.md
 maturity: draft
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k278-harness-wave.md
 - @concepts/k276-harness-evolution-wave.md
 - @sources/arxiv-2609.40303-minimal-harness-2026-10-01.md
 - @sources/arxiv-2609.40306-dynaharness-2026-10-01.md

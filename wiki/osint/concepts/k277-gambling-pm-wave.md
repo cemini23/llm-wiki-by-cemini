@@ -4,18 +4,20 @@ type: concept
 tags: [prediction-markets, gambling, k277]
 keywords: [k277, polymarket, kalshi, self-exclusion, no-level]
 related:
+  - concepts/k278-gambling-pm-wave.md
   - concepts/k276-gambling-pm-wave.md
   - sources/substack-rss-event-horizon-2026-10-01-polymarket-adds-responsible-trading-tools.md
   - sources/substack-rss-wublock-2026-10-01-september-vc-report-crypto-vc-funding-rises-more.md
 maturity: draft
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k278-gambling-pm-wave.md
 - @concepts/k276-gambling-pm-wave.md
 - @sources/substack-rss-event-horizon-2026-10-01-polymarket-adds-responsible-trading-tools.md
 - @sources/substack-rss-wublock-2026-10-01-september-vc-report-crypto-vc-funding-rises-more.md

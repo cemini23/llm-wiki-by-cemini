@@ -383,6 +383,21 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K278 — 2026-10-02
+Dual-ID: **OSINT K278**. FILE and HITL only. **0 product Integrate GO.**
+- Phase-0 clones nothing. The eval docx listed 20 repos; every license was checked with `gh api` 2026-10-02 and **four docx claims failed**: sdcb/SimdPaddleOCR claimed MIT is **Apache-2.0**; mksglu/context-mode claimed ELv2 is **NOASSERTION**; getsentry/sentry claimed FSL-1.1 is **NOASSERTION**; cursor/plugins claimed MIT/Apache is **null**. Size-skip: impeccable 379 MB, hyperframes 488 MB, sentry 952 MB, three-gpu-pathtracer 954 MB. No new directory under `.local/adopts/`.
+- **The harness owns state.** When every step looks locally correct and the run still fails, look for missing or unowned state before blaming the model. VISTA's harness alone took an open-weight model from 1.89 to 66.93 with no model change. One restoring sentence moved a model from chance to 40 of 40.
+- **Visibility is not enforcement.** A live budget counter did not stop a team overspending in 4 of 5 runs; commit enforcement took it to 0 of 5. A counter an agent can ignore is not a gate.
+- **A calibrated forecaster is not an edge.** The forecasting paper's own authors state no scaffold reliably beats the market without non-public information. The reusable parts are the leak filter and the Brier reward, not a trade.
+- **Tool choice is not the bottleneck; arguments are.** KaliBench: tool selection resolves 72.0% to 95.2% with hints, while exactness only reaches 73.1%. The reusable idea is the runtime-free verifiable reward. **No PoC. No exploit steps. No command list.**
+- **Atto:** PyPottery's few-shot curve — 13.56% at one example, 52.63% at three, 67.60% at ten — is the planning number for any parsing work. The 2023 genealogy DB paper measured 19 of 210 rules outside the schema. **Transkribus stays the only product HTR.** No `truth.ged` merge. No Barone PII.
+- **Vol quant:** barrier error 0.09426 to 0.01248; American SCLV at 35s against 639s. **No trade. No sizing change.**
+- **GW:** **no level to arm.** **Never auto-arm. Never `watches.json`.** Macro FILE only.
+- **DFS / Parlays:** no DFS extract; **no submit.** A human types the ticket.
+- **PM:** a Kalshi-CBS sponsorship drew criticism; a survey reported 79% of users lost money. **No pm scp. No LIVE Discord.**
+- **Evidence integrity:** Klement documents a p-hacked study — 10% significance, a break dated from the same data, then 5% after controls. **A significance level chosen after the fact is not evidence.**
+- **Verify:** `bash scripts/adopt_k278_phase1.sh`.
+
 ## OSINT K277 — 2026-10-01
 Dual-ID: **OSINT K277**. FILE and HITL only. **0 product Integrate GO.**
 - Phase-0 clones nothing. Three repo URLs verified with `gh api` 2026-10-01: Tyrion58/turbo-harness MIT 7783 KB 3 stars; **UCSB-NLP-Chang/ScholarEvolve SPDX null** 0 KB 0 stars; **lzzzr123/CodeMimicry SPDX null** 580 KB 1 star. No new directory under `.local/adopts/`.

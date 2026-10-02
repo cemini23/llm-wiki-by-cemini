@@ -4,17 +4,19 @@ type: concept
 tags: [ood, k277]
 keywords: [k277, sterling, gbp, title-url-only]
 related:
+  - concepts/k278-ood-stub-wave.md
   - concepts/k276-ood-stub-wave.md
   - sources/newsletter-rss-sterling-sky-2026-09-29-the-1-checklist-to-optimize-your-google-business.md
 maturity: draft
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k278-ood-stub-wave.md
 - @concepts/k276-ood-stub-wave.md
 - @sources/newsletter-rss-sterling-sky-2026-09-29-the-1-checklist-to-optimize-your-google-business.md
 

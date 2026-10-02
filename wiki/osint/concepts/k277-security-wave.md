@@ -4,19 +4,21 @@ type: concept
 tags: [security, safety, k277, agents]
 keywords: [k277, codemimicry, pagebreak, numbat, no-poc]
 related:
+  - concepts/k278-security-wave.md
   - concepts/k276-ood-stub-wave.md
   - sources/arxiv-2609.39902-codemimicry-2026-10-01.md
   - sources/newsletter-rss-tldrsec-2026-10-01-tldr-sec-348---googles-pagebreak-scanner-perplex.md
   - sources/newsletter-rss-latent-space-2026-10-01-ainews-gemini-4-argon-gdms-answer-to-astrafable.md
 maturity: draft
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k278-security-wave.md
 - @concepts/k276-ood-stub-wave.md
 - @sources/arxiv-2609.39902-codemimicry-2026-10-01.md
 - @sources/newsletter-rss-tldrsec-2026-10-01-tldr-sec-348---googles-pagebreak-scanner-perplex.md

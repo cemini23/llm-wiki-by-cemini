@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# OSINT K278 Phase-0 — clones nothing.
+# Dual-ID: OSINT K278 = 2 Oct 2026 inbox. gh api 2026-10-02.
+# Every license below comes from gh api, not from the eval docx.
+# Four docx claims failed the check. 0 product Integrate GO. FILE and HITL only.
+set -euo pipefail
+echo "=== K278 Phase-0 — no clone ==="
+echo "=== DOCX CLAIM MISMATCHES (gh api 2026-10-02) ==="
+echo "sdcb/SimdPaddleOCR   docx MIT      -> real Apache-2.0   131687 KB 385 stars NO-CLONE"
+echo "mksglu/context-mode  docx ELv2     -> real NOASSERTION  31909 KB 24915 stars NO-CLONE"
+echo "getsentry/sentry     docx FSL-1.1  -> real NOASSERTION  952938 KB 44921 stars SIZE-SKIP"
+echo "cursor/plugins       docx MIT/Apach -> real null        10006 KB 9399 stars NO-CLONE"
+echo "=== SIZE-SKIP (over 350 MB) ==="
+echo "pbakaus/impeccable Apache-2.0 379873 KB NO-CLONE size"
+echo "heygen-com/hyperframes Apache-2.0 488380 KB NO-CLONE size"
+echo "gkjohnson/three-gpu-pathtracer MIT 954910 KB NO-CLONE size"
+echo "=== OTHER ROWS — no product Integrate GO ==="
+echo "JuliusBrussee/caveman Apache-2.0 14966 KB NO-CLONE pattern only"
+echo "DietrichGebert/ponytail MIT 2666 KB NO-CLONE do not swap route"
+echo "NVIDIA/OpenShell Apache-2.0 77669 KB NO-CLONE cyber FILE"
+echo "coreyhaines31/marketingskills MIT 3417 KB NO-CLONE seo FILE"
+echo "google/skills Apache-2.0 4303 KB NO-CLONE context"
+echo "colbymchenry/codegraph MIT 35096 KB NO-CLONE name only"
+echo "mvschwarz/openrig Apache-2.0 31654 KB NO-CLONE do not swap route"
+echo "Effect-TS/effect MIT 136214 KB NO-CLONE context"
+echo "pablostanley/yoinks MIT 342 KB NO-CLONE name only"
+echo "kentcdodds/kody NOASSERTION 69638 KB NO-CLONE watch"
+echo "unxed/f4 BSD-3-Clause 34752 KB NO-CLONE context"
+echo "yetone/magpie MIT 41259 KB NO-CLONE name only"
+echo "mpfaffenberger/code_puppy MIT 16116 KB NO-CLONE name only"
+echo "=== DONE ==="
+echo "0 clones. 0 product Integrate GO. FILE and HITL only. Do not swap /route."
+echo "Never trust eval SPDX. No skill install. Never auto-evolve. No install."
+echo "Transkribus stays the only product HTR. No auto-submit. No PoC."
+echo "No xsp/pm scp. No LIVE Discord. Never auto-arm. No watches.json."

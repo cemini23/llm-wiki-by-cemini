@@ -4,17 +4,19 @@ type: concept
 tags: [atto, htr, genealogy, k277]
 keywords: [k277, model-merging, federated, transkribus, FILE]
 related:
+  - concepts/k278-atto-htr-wave.md
   - concepts/k276-atto-htr-wave.md
   - sources/arxiv-2609.39684-distributed-document-analysis-2026-10-01.md
 maturity: draft
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k278-atto-htr-wave.md
 - @concepts/k276-atto-htr-wave.md
 - @sources/arxiv-2609.39684-distributed-document-analysis-2026-10-01.md
 

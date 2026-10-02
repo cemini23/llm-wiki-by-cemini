@@ -1,3 +1,26 @@
+## [2026-10-02] ingest | K278 wave
+
+- **Inbox:** 13 sources written (8 arXiv + 1 eval docx + 2 latent-space + 2 substack). **13/13 archived** to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Location fields name the egress path. Inbox is empty. No clone.
+- **License check (the wave's headline):** the eval docx listed 20 repos. Every license was checked with `gh api` 2026-10-02. **Four docx claims failed**: sdcb/SimdPaddleOCR claimed "MIT via dependency chain" is **Apache-2.0**; mksglu/context-mode claimed ELv2 is **NOASSERTION**; getsentry/sentry claimed FSL-1.1 is **NOASSERTION**; cursor/plugins claimed MIT/Apache is **null**. Four repos were also size-skipped: impeccable 379 MB, hyperframes 488 MB, sentry 952 MB, three-gpu-pathtracer 954 MB. **Never trust eval SPDX.**
+- **Harness:** VISTA is a mechanical harness with visual memory and no trained model; it took an open-weight model from 1.89 to 66.93 on ARC-AGI-3, and a frontier model to a perfect 100.00 relative human action efficiency in 7,302 actions against a human 17,135 (2610.02200). Image observations used 30.7M tokens against 71.9M for text grids. The coherence paper names a state failure class: when the deciding event was hidden, model accuracy was compatible with chance, and **one restoring sentence returned it to 40 of 40** (2610.02036). **A live budget counter did not stop overspend in 4 of 5 runs; commit enforcement did, 0 of 5.** Pi Durable externalises state (checkpoints, hot-swap, shared sync). An RLM interview is opinion, not measurement. **Do not swap `/route`.**
+- **Atto:** PyPottery runs OCR then few-shot parsing on cursive archaeological records, at a 6.2% character error rate; parsing exact-match runs 13.56% at one example, 52.63% at three, 67.60% at ten (2610.02072). The 2023 genealogy DB paper measured that **19 of 210** business rules do not fit the schema, with a validated front end carrying 55 (2610.00633). **Transkribus stays the only product HTR.** No `truth.ged` merge. No Barone PII.
+- **PM / macro:** a Kalshi-CBS News sponsorship drew criticism; Kalshi did about $2.065B on 30 September. A consumer survey reported **79% of prediction-market users lost money** in the past year. The forecasting paper reached soft-Brier 0.254 against 0.256 for a frontier model at 5% of cost, and its authors state plainly that **no scaffold reliably beats the market without non-public information** (2610.01955). Klement documents a p-hacked study: 10% significance, a break dated 1991 from the same data, then 5% after controls.
+- **Vol quant:** a barrier-option expansion cuts mean absolute error from 0.09426 to 0.01248 on a 21-strike CEV case (2610.00340); an American-option SCLV solver runs in about 35 seconds against 639 seconds for a benchmark (2610.01187). **No trade. No sizing change.**
+- **Security:** KaliBench reports that tool selection resolves with hints (72.0% to 95.2%) while argument construction is the bottleneck; an 8B tuned model reaches a 79.2 average total score (2610.02206). The reusable idea is the runtime-free verifiable reward. **No PoC. No exploit steps. No command list.**
+- **Concepts:** 6 k278 hubs (harness, vol-quant, atto-htr, gambling-pm, security, ood-stub). Matching k277 hubs backlinked both ways; `updated:` bumped to 2026-10-02. `harness_verb: FILE`. `wire_status: policy_wired`.
+- **Phase-0:** clones nothing. **No product install. 0 product Integrate GO.**
+- **Routing:** Atto — PyPottery few-shot curve and the constraint split; **no HTR swap**. GW — **no level to arm**. DFS — no DFS extract. Parlays — the survey harm figure is context; **no submit**. CCC — the harness owns state; visibility is not enforcement; **do not swap `/route`**. Cyber — KaliBench scoring design; **no PoC**. Gambling — sponsorship and harm figures; **no pm scp**. SEO — nothing this wave. **No xsp scp. No LIVE Discord.**
+- **Rule:** `## OSINT K278 — 2026-10-02` inserted above `## OSINT K277` in `.cursor/rules/osint-phase1-adopt-wires.mdc`. **FILE and HITL only.**
+- **Briefs:** `briefs/2026-10-02_k278-*` (8: atto, guruwatcher, ceminidfs, ceminiparlays, ccc-harness, cyber-lab, gambling, seo). Sibling copies staged.
+- **Index / ROADMAP / hot.md:** K278 sections added above K277.
+- **gate:** `adopt_k278_phase0.sh` + `adopt_k278_phase1.sh` (no commit).
+- **Next actions (not done):**
+  1. Check state ownership before blaming a model when every step looks locally correct.
+  2. Add a commit-enforcement gate, not a visible counter, for any shared budget.
+  3. Atto: use the PyPottery few-shot curve (about 10 examples) to scope any parsing work.
+  4. Borrow the runtime-free verifiable reward design for our own tool-invocation gates.
+  5. No clone. No HTR swap. No auto-arm. A human still types the ticket.
+
 ## [2026-10-01] ops | DeepSeek model repoint
 
 - DeepSeek retired the model id `deepseek-v4-flash` on 2026-09-10 and phased out `deepseek-v4-pro` on 2026-09-14. Both aliases now serve **V4.1-Flash**, whose API id is `deepseek-flash`.

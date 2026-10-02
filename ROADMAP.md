@@ -30,6 +30,14 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-02 — K278 ingest)
+
+- **K278 ingest** — 13 source pages + **6 hubs**. Phase-0 **clones nothing**. The eval docx's 20 license claims were checked with `gh api` 2026-10-02 and **four failed**. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC.**
+- Three reusable findings: **the harness owns state** (one restoring sentence moved a model from chance to 40 of 40); **visibility is not enforcement** (a live budget counter did not stop overspend in 4 of 5 runs, commit enforcement took it to 0 of 5); **a calibrated forecaster is not an edge** (the forecasting paper's own authors say so).
+- Atto: PyPottery gives a concrete few-shot planning curve for parsing — 13.56% at one example, 52.63% at three, 67.60% at ten. Use it to scope any parsing work.
+- License discipline: the eval overstated 4 of 20. **Never trust eval SPDX — `gh api` every adopt.**
+- K274 projection actions stay open. A human types the ticket.
+
 ## Current state (2026-10-01 — K277 ingest)
 
 - **K277 ingest** — 15 source pages + **6 hubs**. Phase-0 **clones nothing**. Three repo URLs verified with `gh api` 2026-10-01 (turbo-harness MIT 7783 KB; **ScholarEvolve SPDX null**; **CodeMimicry SPDX null**). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve skills or rules from a paper. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC on the security pages.**
