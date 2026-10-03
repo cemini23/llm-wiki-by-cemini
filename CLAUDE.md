@@ -128,8 +128,8 @@ updated: 2026-04-23
 **Briefs copied to sibling wikis** — a brief staged here is often copied **verbatim** into a
 sibling's `briefs/` (the daily cyber-lab brief goes to `../Cybersecurity wiki/briefs/`). Those
 siblings have their own `wiki/`, so a bare `wiki/...` citation resolves here and dangles there.
-Grep found a live backlog on 2026-10-03: nine cyber-lab briefs in the Cybersecurity wiki citing
-pages that only exist here.
+An audit on 2026-10-03 found **152 dead references across 327 briefs** in the Cybersecurity wiki —
+every one pointing at a page that already exists here, so none needed recreating, only qualifying.
 
 - When copying a brief to a sibling, rewrite its `## Sources` block for **that copy** to the
   cross-wiki form: `[Source: @osint-wiki/concepts/...]`. Keep the sibling's own paths unqualified.
