@@ -299,3 +299,6 @@ Catalog of all wiki pages. Updated on each ingest.
 | [arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30](sources/arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30.md) | read |
 | [arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30](sources/arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30.md) | read |
 | [inbox-arxiv-reject-batch-2026-09-30](sources/inbox-arxiv-reject-batch-2026-09-30.md) | read |
+| [arxiv-2609.40324-cogentic-proof-harness-2026-10-03](sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md) | read |
+| [arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03](sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md) | read |
+| [inbox-arxiv-reject-batch-2026-10-03](sources/inbox-arxiv-reject-batch-2026-10-03.md) | read |

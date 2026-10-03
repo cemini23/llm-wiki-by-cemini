@@ -17,6 +17,7 @@ related:
   - concepts/game-dev-wiki-scope.md
   - entities/tools/firmbench.md
   - entities/tools/codehack.md
+  - sources/inbox-arxiv-reject-batch-2026-10-03.md
 read_status: read
 source_type: operator-triage
 maturity: validated

@@ -13,6 +13,7 @@ related:
   - sources/exa-npc-pcg-ccgs-batch-2026-06-13.md
   - sources/claude-code-game-studios-phase-0-audit-2026-06-13.md
   - sources/protocolbench-llm-multiagent-protocol-shelf-2026-06-24.md
+  - sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-07-01

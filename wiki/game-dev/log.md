@@ -4,6 +4,19 @@ Append-only chronological log.
 
 ---
 
+## [2026-10-03] ingest | 3 arXiv inbox (2 ingests + 1 reject) + Phase-1 harness rules H3/H4
+
+- Inbox: 3 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-03.md + 2 source pages
+- **Ingest:** Cogentic multi-agent proof harness (2609.40324) — orchestrator/prover/verifier loop, verified ledger; audit rule shapes faithful factor explanations (2610.01514) — report-dependent audit creates a suppression incentive
+- **Reject:** 2609.40070 Inference Auctions — LLM serving economics → @ccc-wiki
+- Phase-0: no artifact for either ingest (Cogentic ships no repo; the audit-rule paper ships none) → **STEAL-FROM** pattern only
+- Phase-1: rules **H3** (promote only confirmed results into a durable ledger) + **H4** (audit something the executor did not nominate) wired in @concepts/agent-harness-castle-project.md
+- Brief: `briefs/research/agent-harness-transform-rules-2026-09-30.md` extended
+- Sweeps: @sweeps/2026-10-01-daily.md (empty) · @sweeps/2026-10-02-daily.md committed
+- Note: external cheap-executor routing still **blocked by session sandbox**; pages drafted by in-session Haiku subagents
+
+---
+
 ## [2026-09-30] ingest | 10 arXiv inbox (8 ingests + 2 rejects) + Phase-0/1 harness rules
 
 - Inbox: 10 PDFs → @sources/inbox-arxiv-reject-batch-2026-09-30.md + 8 source pages

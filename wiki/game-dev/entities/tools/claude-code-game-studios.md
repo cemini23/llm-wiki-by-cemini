@@ -13,6 +13,7 @@ related:
   - sources/ccgs-workflow-catalog-2026.md
   - sources/starlog-ccgs-49-agents-2026.md
   - sources/claude-code-game-studios-phase-0-audit-2026-06-13.md
+  - sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-13

@@ -45,9 +45,12 @@ related:
   - sources/arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30.md
   - entities/tools/codehack.md
   - entities/tools/firmbench.md
+  - sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md
+  - sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md
+  - sources/inbox-arxiv-reject-batch-2026-10-03.md
 maturity: draft
 created: 2026-06-13
-updated: 2026-09-30
+updated: 2026-10-03
 wire_status: policy_wired
 wire_target: briefs/W2-harness-kickoff.md
 ---
@@ -139,6 +142,18 @@ Give executor agents named operations (build wall segment, place granary, run sm
 **Rule H2 — withhold model-family identity from cooperative agents** [CONFIRMED — arXiv 2609.35928]
 
 Do not put "you are model X" metadata into shared multi-agent context. In cooperative tasks, visible family labels split the group into factions and cost 55% more tokens and 30% more rounds, with success falling from 96% to 81%. See @sources/arxiv-2609.35928-prompted-identity-factionalism-2026-09-30.md.
+
+### Phase-1 wires (2026-10-03)
+
+Two more policy rules, from the Cogentic and audit-rule papers.
+
+**Rule H3 — promote only confirmed results into a durable ledger** [CONFIRMED — arXiv 2609.40324]
+
+Cogentic's strongest transferable idea. Each round writes two artifacts: a **record** of attempts and why they failed, and a **verified ledger** of confirmed intermediate results that the next round starts from. Map to castle-sim: a broken build or failed story writes the failure reason to the record; only playtest-passed state is promoted into the durable artifact later stories build on. This stops each session re-deriving state. Verifiers act adversarially — they assume the work is wrong until it survives. See @sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md.
+
+**Rule H4 — audit something the executor did not nominate** [CONFIRMED — arXiv 2610.01514]
+
+Report-dependent verification creates a suppression incentive: what the worker reports as important is what gets checked, so under-reporting escapes scrutiny. The fix is a report-independent audit floor. In the W2 verify gate this means the verifier must sample checks the executor did not flag, not only the items the executor listed as risky. See @sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md.
 
 ## Snippets
 

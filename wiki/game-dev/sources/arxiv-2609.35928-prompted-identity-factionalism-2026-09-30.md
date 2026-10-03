@@ -8,6 +8,7 @@ related:
   - concepts/ai-assisted-game-dev-workflows.md
   - sources/arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30.md
   - sources/inbox-arxiv-reject-batch-2026-09-30.md
+  - sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2609.35928
