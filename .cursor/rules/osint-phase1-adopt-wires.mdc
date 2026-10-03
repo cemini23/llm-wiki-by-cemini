@@ -383,6 +383,21 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K279 — 2026-10-03
+Dual-ID: **OSINT K279**. FILE and HITL only. **0 product Integrate GO.**
+- **Operator directive: stop auditing licenses row by row; extract the technique.** Judge a row on what is usable, not on its SPDX field. Keep one exception: note the licence when something is **vendored verbatim into shipped product code**, because that lands on the buyer's diligence. Pattern extraction needs no note.
+- **Extract first, then build our own.** The two useful rows in this wave were a payout structure and a testing technique — neither needed the repo's code.
+- **CeminiParlays — pick'em breakeven table.** A fixed-multiplier card is a payout structure, not a price. Build breakeven hit rates by card size (2-pick to 6-pick), flex variant, and platform settlement rule. For a flat multiplier `m`, breakeven is `1/m`; the work is enumerating the variants.
+- **CeminiParlays — property-based tests over the maths.** De-vigged probabilities sum to 1.0; raising one leg's price cannot lower its de-vigged probability; the Gaussian copula joint sits between the product of marginals and the minimum marginal; the Student-t case converges to Gaussian as degrees of freedom grow; any correlation matrix is positive semi-definite. This is where a silent numeric bug becomes a mispriced ticket.
+- **Score the trajectory, not only the outcome.** A process-evaluation study found **162 of 175 runs that passed every final check still had a process deviation (92.6%)**. Get ground truth from an independent call, not from the agent's account: a plugin review found **44.3% of an agent's decisions were absent from its own report**.
+- **Admission review is not enforcement.** A safe tool variant and a leaking variant can produce identical admission evidence, so a gate cannot relax call-time mediation because the schema passed review. Enforce at the boundary.
+- **Metric design:** a safety score can be inflated by refusing more. Keep a middle label, and report safety and accuracy separately.
+- **Cyber:** TeamCity flaw — patch **and rotate credentials**, or the attacker's access survives the patch. **No PoC. No exploit steps. No payloads.**
+- **GW:** **no level to arm.** **Never auto-arm. Never `watches.json`.** Macro FILE only.
+- **DFS:** the DFS optimizer rows were Context — the existing stack already covers multi-lineup and late swap. Two repos were Pass because a naive score model cannot beat a market-implied closing line. **No auto-submit.** A human types the ticket.
+- **Tooling:** `preingest_check.py` flagged a recurring-title newsletter as DUPLICATE on title alone. Match such a feed on URL or date.
+- **Verify:** `bash scripts/adopt_k279_phase1.sh`.
+
 ## OSINT K278 — 2026-10-02
 Dual-ID: **OSINT K278**. FILE and HITL only. **0 product Integrate GO.**
 - Phase-0 clones nothing. The eval docx listed 20 repos; every license was checked with `gh api` 2026-10-02 and **four docx claims failed**: sdcb/SimdPaddleOCR claimed MIT is **Apache-2.0**; mksglu/context-mode claimed ELv2 is **NOASSERTION**; getsentry/sentry claimed FSL-1.1 is **NOASSERTION**; cursor/plugins claimed MIT/Apache is **null**. Size-skip: impeccable 379 MB, hyperframes 488 MB, sentry 952 MB, three-gpu-pathtracer 954 MB. No new directory under `.local/adopts/`.

@@ -1,3 +1,24 @@
+## [2026-10-03] ingest | K279 wave
+
+- **Operator directive (this wave and forward):** stop auditing licenses row by row; extract the technique. The judgement is now "what is usable", not what the SPDX field says. This did not cost anything in practice — the useful rows in both eval docs were technique, not code. **One exception kept:** anything vendored verbatim into shipped product code still gets a licence note, because that lands on the buyer's diligence, not on us.
+- **Inbox:** 11 sources written (5 arXiv + 2 eval docx + 4 newsletter/substack). **11/11 archived** to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Inbox is empty. Zero clones.
+- **Preingest false positive:** the checker flagged a Latent Space item as DUPLICATE on **title alone**. Latent Space recycles "[AINews] not much happened today" for every slow news day, colliding with the June 30 and July 2 pages. It is **not** a duplicate; the content is new. **Fix the checker: match a recurring-title feed on URL or date, not title.**
+- **Harness (strongest finding of the wave):** an enterprise process-evaluation pipeline found that of **175 runs passing every final numerical check, 162 (92.6%) still had at least one process deviation**; overall 227 of 240 runs failed at least one check (2610.01833). Separately, a coding-agent plugin review found **116 of 262 reported decisions (44.3%) were absent from the agent's own report** (2610.01769). A clinical audit found models failed to keep the middle "partially supported" label in **83.3% to 100%** of deserving cases while posting high safety scores — label collapse inflating a safety metric (2610.01497). PACE shows a safe tool variant and a leaking variant produce **identical admission evidence**, so admission review is not enforcement (2610.01349). TRACE contributes discounted-return credit assignment (2610.01323).
+- **DFS / Parlays — two techniques worth building.** (1) A **pick'em breakeven table**: a fixed-multiplier card is a payout structure, not a price, so it needs the breakeven hit rate per card size (2-pick to 6-pick), per flex variant, and per platform settlement rule. (2) **Property-based testing of the de-vig and copula maths** — assert that de-vigged probabilities sum to 1.0, that the Gaussian copula joint sits between the product of marginals and the minimum marginal, and that any correlation matrix is positive semi-definite. This is where a silent numerical bug becomes a mispriced ticket. Two repos were Pass for the same reason: a naive score-regression model cannot beat a market-implied closing line. That is a standing argument for keeping the stack on de-vigged market lines.
+- **Security:** the TeamCity flaw story is ransomware-relevant because a CI/CD server holds trusted access to repos, agents, credentials, artefacts, and deploy targets. The step teams skip is **credential rotation** — patching without rotating leaves the attacker's access intact. **No PoC. No exploit steps. No payloads.**
+- **PM / crypto:** Kalshi reported in a roughly $1B round at about a **$40B valuation**. Ethereum 2030 roadmap, SEC and ESMA rulemaking, institutional tokenised-deposit launches. **No level to arm.**
+- **Concepts:** 6 k279 hubs (harness, dfs-parlays, security, gambling-pm, ood-stub). Matching k278 hubs backlinked both ways; `updated:` bumped to 2026-10-03. `harness_verb: FILE`. `wire_status: policy_wired`.
+- **Phase-0:** clones nothing. **No installs. 0 product Integrate GO.**
+- **Routing:** DFS — the breakeven table and the property tests. Parlays — same, plus no automated board scraping. CCC — process-level evaluation, the self-report gap, and the admission-vs-enforcement split. Cyber — patch and rotate; **no PoC**. GW — **no level to arm**. **No xsp scp. No LIVE Discord.**
+- **Rule:** `## OSINT K279 — 2026-10-03` inserted above `## OSINT K278` in `.cursor/rules/osint-phase1-adopt-wires.mdc`.
+- **Briefs:** `briefs/2026-10-03_k279-*` (8). Sibling copies staged.
+- **Next actions (not done):**
+  1. CeminiParlays: build the pick'em breakeven table.
+  2. CeminiParlays: add property-based tests over the de-vig and copula functions.
+  3. Fix `preingest_check.py` to match recurring-title feeds on URL or date.
+  4. Add a process-level check to our own gate: score the trajectory, not only the final output.
+  5. No clone. No install. No auto-arm. A human still types the ticket.
+
 ## [2026-10-02] ingest | K278 wave
 
 - **Inbox:** 13 sources written (8 arXiv + 1 eval docx + 2 latent-space + 2 substack). **13/13 archived** to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Location fields name the egress path. Inbox is empty. No clone.

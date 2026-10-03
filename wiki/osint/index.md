@@ -7,6 +7,28 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K279 ingest (2026-10-03)
+OSINT K279: 11 new source pages (5 arXiv + 2 eval docx + 4 newsletter/substack) + **5 hubs**. **Operator directive this wave: stop auditing licenses row by row; extract the technique.** Judgement is now "what is usable", not what the SPDX field says — with one exception kept: anything vendored verbatim into shipped product code still gets noted. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No installs. Zero clones. Transkribus stays the only product HTR. No PoC on the security pages. No automated board scraping.** Two techniques worth building: the pick'em breakeven table and property-based testing of the de-vig and copula maths. 11/11 files move to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k279-harness](concepts/k279-harness-wave.md) | 92.6% of passing runs had a process deviation | draft |
+| [k279-dfs-parlays](concepts/k279-dfs-parlays-wave.md) | Breakeven table; property-test the copulas | draft |
+| [k279-security](concepts/k279-security-wave.md) | Admission review is not enforcement | draft |
+| [k279-pm](concepts/k279-gambling-pm-wave.md) | Kalshi ~$40B valuation; no level | draft |
+| [k279-ood](concepts/k279-ood-stub-wave.md) | False-positive duplicate found in the checker | draft |
+| [process-eval](sources/arxiv-2610.01833-process-eval-2026-10-03.md) | 162 of 175 passing runs still deviated | draft |
+| [contra](sources/arxiv-2610.01769-contra-2026-10-03.md) | 44.3% of decisions absent from the agent's report | draft |
+| [openmtb](sources/arxiv-2610.01497-openmtb-2026-10-03.md) | Safety score inflated by refusing more | draft |
+| [pace](sources/arxiv-2610.01349-pace-2026-10-03.md) | Safe and leaking variants admit identically | draft |
+| [trace](sources/arxiv-2610.01323-trace-2026-10-03.md) | Discounted-return credit assignment | draft |
+| [eval-multi-repo](sources/eval-multi-repo-revenue-2026-10-03.md) | Pick'em breakeven; DFS rows are noise | draft |
+| [eval-opportunity](sources/eval-repo-opportunity-2026-10-03.md) | Property-based testing for de-vig and copulas | draft |
+| [ls-airbnb](sources/newsletter-rss-latent-space-2026-10-02-airbnb-2026-10-03.md) | Prototypes as the artifact, not specs | draft |
+| [ls-ainews](sources/newsletter-rss-latent-space-2026-10-03-ainews-not-much-happened-today.md) | 62.8% long-context accuracy drop | draft |
+| [secpro-teamcity](sources/substack-rss-secpro-2026-10-02-teamcity-2026-10-03.md) | Patch and rotate, or the access stays | draft |
+| [wublock-weekly](sources/substack-rss-wublock-2026-10-02-weekly-2026-10-03.md) | Crypto and macro headlines | draft |
+
 ### K278 ingest (2026-10-02)
 OSINT K278: 13 new source pages (8 arXiv + 1 eval docx + 2 latent-space + 2 substack) + **6 hubs**. Phase-0 **clones nothing**. The eval docx listed 20 repos; every license was checked with `gh api` 2026-10-02 and **four docx claims failed** (SimdPaddleOCR claimed MIT, is Apache-2.0; context-mode claimed ELv2, is NOASSERTION; sentry claimed FSL, is NOASSERTION; cursor/plugins claimed MIT/Apache, is null). Four repos size-skipped at 379-954 MB. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC on the security page.** 13/13 files move to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
 

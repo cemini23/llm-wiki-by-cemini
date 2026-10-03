@@ -4,17 +4,19 @@ type: concept
 tags: [security, benchmark, k278, agents]
 keywords: [k278, kalibench, cli, verifiable-reward, no-poc]
 related:
+  - concepts/k279-security-wave.md
   - concepts/k277-security-wave.md
   - sources/arxiv-2610.02206-kalibench-2026-10-02.md
 maturity: draft
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k279-security-wave.md
 - @concepts/k277-security-wave.md
 - @sources/arxiv-2610.02206-kalibench-2026-10-02.md
 

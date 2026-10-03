@@ -4,18 +4,20 @@ type: concept
 tags: [prediction-markets, gambling, k278]
 keywords: [k278, kalshi, cbs, forecasting, no-level]
 related:
+  - concepts/k279-gambling-pm-wave.md
   - concepts/k277-gambling-pm-wave.md
   - sources/substack-rss-event-horizon-2026-10-02-sponsored-pm-data-2026-10-02.md
   - sources/arxiv-2610.01955-dyor-forecasting-2026-10-02.md
 maturity: draft
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k279-gambling-pm-wave.md
 - @concepts/k277-gambling-pm-wave.md
 - @sources/substack-rss-event-horizon-2026-10-02-sponsored-pm-data-2026-10-02.md
 - @sources/arxiv-2610.01955-dyor-forecasting-2026-10-02.md

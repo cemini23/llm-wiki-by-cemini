@@ -30,9 +30,17 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-03 — K279 ingest)
+
+- **K279 ingest** — 11 source pages + **5 hubs**. **Operator directive: stop auditing licenses row by row; extract the technique.** Judgement is now "what is usable", not the SPDX field. Nothing was vendored, so nothing changed in practice. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No installs. Zero clones. Transkribus stays the only product HTR. No PoC.**
+- **Two techniques to build for CeminiParlays.** (1) A **pick'em breakeven table** by card size, flex variant, and platform settlement rule — a fixed-multiplier card is a payout structure, not a price. (2) **Property-based tests over the de-vig and copula maths** — de-vigged probabilities sum to 1.0, copula joint bounded by the marginals, correlation matrix positive semi-definite. That is where a silent numerical bug becomes a mispriced ticket.
+- **Strongest finding:** of 175 runs passing every final numerical check, **162 (92.6%) still had a process deviation**. Score the trajectory, not only the outcome.
+- **Tooling bug found:** `preingest_check.py` flags a recurring-title newsletter as DUPLICATE on title alone. Match on URL or date instead.
+- K274 projection actions stay open. A human types the ticket.
+
 ## Current state (2026-10-02 — K278 ingest)
 
-- **K278 ingest** — 13 source pages + **6 hubs**. Phase-0 **clones nothing**. The eval docx's 20 license claims were checked with `gh api` 2026-10-02 and **four failed**. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC.**
+- **K278 ingest** — 13 source pages + **5 hubs**. Phase-0 **clones nothing**. The eval docx's 20 license claims were checked with `gh api` 2026-10-02 and **four failed**. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC.**
 - Three reusable findings: **the harness owns state** (one restoring sentence moved a model from chance to 40 of 40); **visibility is not enforcement** (a live budget counter did not stop overspend in 4 of 5 runs, commit enforcement took it to 0 of 5); **a calibrated forecaster is not an edge** (the forecasting paper's own authors say so).
 - Atto: PyPottery gives a concrete few-shot planning curve for parsing — 13.56% at one example, 52.63% at three, 67.60% at ten. Use it to scope any parsing work.
 - License discipline: the eval overstated 4 of 20. **Never trust eval SPDX — `gh api` every adopt.**
@@ -40,7 +48,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ## Current state (2026-10-01 — K277 ingest)
 
-- **K277 ingest** — 15 source pages + **6 hubs**. Phase-0 **clones nothing**. Three repo URLs verified with `gh api` 2026-10-01 (turbo-harness MIT 7783 KB; **ScholarEvolve SPDX null**; **CodeMimicry SPDX null**). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve skills or rules from a paper. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC on the security pages.**
+- **K277 ingest** — 15 source pages + **5 hubs**. Phase-0 **clones nothing**. Three repo URLs verified with `gh api` 2026-10-01 (turbo-harness MIT 7783 KB; **ScholarEvolve SPDX null**; **CodeMimicry SPDX null**). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve skills or rules from a paper. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR. No PoC on the security pages.**
 - Four reusable findings: the execution environment carried the largest harness effect, and extra machinery was not significant under an equal budget; self-selection trailed an oracle by 6.832 points; every self-revision needs a paired regression gate; keep only confirmed work in a ledger.
 - **A summary is not the document.** Agent summaries flipped a buy or sell call in one case in four to one in three. This is the third form of the K276 trace-validity finding, after PageBreak's confirm-before-report design.
 - Atto: decentralized model merging improved out-of-distribution handwriting transfer by a best case of x1.62. Evaluate for a future M-phase. No HTR swap.
@@ -48,7 +56,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ## Current state (2026-09-30 — K276 ingest)
 
-- **K276 ingest** — 38 source pages + **6 hubs**. The strongest harness cluster so far: trace validity, the plan-declaration-execution gap, harness learning, meta-skills, bounded controller context, and Game Arena. Phase-0 **clones nothing**. Five repo URLs verified with `gh api` 2026-09-30 (game_arena Apache-2.0; igsm-trace-validity MIT; **MetaSkill-AI4AI SPDX null**; good_enough_papyrus_htr MIT; resight-smc MIT). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR.**
+- **K276 ingest** — 38 source pages + **5 hubs**. The strongest harness cluster so far: trace validity, the plan-declaration-execution gap, harness learning, meta-skills, bounded controller context, and Game Arena. Phase-0 **clones nothing**. Five repo URLs verified with `gh api` 2026-09-30 (game_arena Apache-2.0; igsm-trace-validity MIT; **MetaSkill-AI4AI SPDX null**; good_enough_papyrus_htr MIT; resight-smc MIT). **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No skill install. Never auto-evolve. Never auto-arm. Never `watches.json`. No pm scp. Transkribus stays the only product HTR.**
 - Three reusable findings: a visible trace is weak evidence (31.6% of correct answers have invalid traces on hard cases); declare the pattern and route to an executor that enforces it; keep the controller context bounded.
 - Atto: set a per-task character-error budget before choosing a transcription source. Few-shot VLM transcription is an option for one-off hands only.
 - K274 projection actions stay open. A human types the ticket.

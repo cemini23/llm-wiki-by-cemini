@@ -4,6 +4,7 @@ type: concept
 tags: [agents, harness, k278, ccc]
 keywords: [k278, vista, coherence, rlm, durable-state, FILE]
 related:
+  - concepts/k279-harness-wave.md
   - concepts/k277-harness-evolution-wave.md
   - sources/arxiv-2610.02200-vista-2026-10-02.md
   - sources/arxiv-2610.02036-global-coherence-2026-10-02.md
@@ -11,13 +12,14 @@ related:
   - sources/newsletter-rss-latent-space-2026-10-02-pi-durable-2026-10-02.md
 maturity: draft
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k279-harness-wave.md
 - @concepts/k277-harness-evolution-wave.md
 - @sources/arxiv-2610.02200-vista-2026-10-02.md
 - @sources/arxiv-2610.02036-global-coherence-2026-10-02.md

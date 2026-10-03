@@ -4,18 +4,22 @@ type: concept
 tags: [ood, k278, eval]
 keywords: [k278, eval-docx, license-drift, methodology, no-clone]
 related:
+  - concepts/k279-dfs-parlays-wave.md
+  - concepts/k279-ood-stub-wave.md
   - concepts/k277-ood-stub-wave.md
   - sources/eval-repo-revenue-2026-10-02.md
   - sources/substack-rss-klement-2026-10-02-smoke-this-study-2026-10-02.md
 maturity: draft
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-10-03
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k279-dfs-parlays-wave.md
+- @concepts/k279-ood-stub-wave.md
 - @concepts/k277-ood-stub-wave.md
 - @sources/eval-repo-revenue-2026-10-02.md
 - @sources/substack-rss-klement-2026-10-02-smoke-this-study-2026-10-02.md
