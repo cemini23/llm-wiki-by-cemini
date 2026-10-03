@@ -19,8 +19,9 @@ Match signals, in confidence order:
 
 Each candidate file gets a verdict:
   - NEW       — no matches above any threshold
-  - LIKELY    — fuzzy title match, or filename in a Location field
-  - DUPLICATE — exact arXiv ID / DOI / URL / title match
+  - LIKELY    — fuzzy title match, a bare title match, or filename in a Location field
+  - DUPLICATE — exact arXiv ID / DOI / URL match, or a title match corroborated
+                by a filename in a Location field
 
 Exit codes:
   0 — ran cleanly (any number of duplicates is fine; this is informational)
@@ -361,9 +362,14 @@ def diagnose(cand: dict, basename: str, idx) -> tuple[str, list[str]]:
             notes.append(f"  Filename in another page's Location field → {p}")
     title_norm = normalize_title(cand["title"])
     if title_norm and title_norm in idx["title_norm"]:
-        verdict = "DUPLICATE"
+        # A title is not a unique identifier. Recurring-title feeds (for example
+        # a daily newsletter that reuses one headline) collide on title alone.
+        # Soften a bare title hit to LIKELY; a title plus any strong signal
+        # (arXiv ID, DOI, URL, or a filename in a Location field) stays DUPLICATE.
+        if verdict == "NEW":
+            verdict = "LIKELY"
         for p in sorted(set(idx["title_norm"][title_norm])):
-            notes.append(f"  Title EXACT match → {p}")
+            notes.append(f"  Title EXACT match (title alone is not an identity) → {p}")
 
     if verdict == "NEW" and cand["title"]:
         cts = title_token_set(cand["title"])
