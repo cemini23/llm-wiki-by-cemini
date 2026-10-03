@@ -4,6 +4,7 @@ type: concept
 tags: [ood, k280, eval]
 keywords: [k280, monte-carlo, context-only, no-clone]
 related:
+  - sources/substack-rss-wublock-2026-10-03-weekly-project-updates-2026-10-03.md
   - concepts/k279-ood-stub-wave.md
   - sources/eval-monte-carlo-repos-2026-10-03.md
 maturity: draft
@@ -15,6 +16,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @sources/substack-rss-wublock-2026-10-03-weekly-project-updates-2026-10-03.md
 - @concepts/k279-ood-stub-wave.md
 - @sources/eval-monte-carlo-repos-2026-10-03.md
 
