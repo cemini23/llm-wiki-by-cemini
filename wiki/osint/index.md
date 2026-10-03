@@ -7,6 +7,17 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K280 ingest (2026-10-03)
+OSINT K280: 1 eval docx, 20 rows → **2 source pages + 2 hubs**. **Posture change on Atto HTR: Transkribus is no longer the fixed answer.** A Phase-0 audit found `mittagessen/kraken` (Apache-2.0, maintained, CPU-capable) with the **CATMuS Medieval** model, which names **Italian and Latin** — the first released historical model in any wave to do so. Domain fine-tuning is still required, and **no Kraken-versus-Transkribus head-to-head number exists**. Measure before switching. **The eval docx recommended vendoring `HTRPipeline` as MIT; the live API returns `spdx_id: null` — no licence at all.** **This wave DOES apply to CeminiDFS:** particle filtering for live late-swap updating. **0 product Integrate GO. FILE and HITL only. No clone. Nothing vendored.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k280-atto-htr](concepts/k280-atto-htr-wave.md) | Kraken is the challenger; measure before switching | draft |
+| [k280-dfs](concepts/k280-dfs-wave.md) | Particle filter for late swap; permutation tests | draft |
+| [k280-ood](concepts/k280-ood-stub-wave.md) | Nine Pass rows; no domain hook | draft |
+| [eval-htr-repos](sources/eval-htr-repos-2026-10-03.md) | Kraken and CATMuS; HTRPipeline has no licence | draft |
+| [eval-monte-carlo-repos](sources/eval-monte-carlo-repos-2026-10-03.md) | Particle filter and permutation tests | draft |
+
 ### K279 ingest (2026-10-03)
 OSINT K279: 11 new source pages (5 arXiv + 2 eval docx + 4 newsletter/substack) + **5 hubs**. **Operator directive this wave: stop auditing licenses row by row; extract the technique.** Judgement is now "what is usable", not what the SPDX field says — with one exception kept: anything vendored verbatim into shipped product code still gets noted. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No installs. Zero clones. Transkribus stays the only product HTR. No PoC on the security pages. No automated board scraping.** Two techniques worth building: the pick'em breakeven table and property-based testing of the de-vig and copula maths. 11/11 files move to `cemini-egress-fi:/opt/cemini-bulk/research/osint/`.
 

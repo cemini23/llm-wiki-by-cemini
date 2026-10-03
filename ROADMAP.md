@@ -30,6 +30,15 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-03 — K280 ingest)
+
+- **K280 ingest** — 1 eval docx, 20 rows → 2 source pages + 2 hubs. **Zero clones. Nothing vendored. 0 product Integrate GO.**
+- **POSTURE CHANGE — Atto HTR.** Operator directive: **do not stay on Transkribus by precedent.** Transkribus is now the incumbent with a challenger. Prior waves carried "Transkribus stays the only product HTR"; that line is retired as a *rule* and kept as a *finding* — nothing had beaten it yet.
+- **The challenger is `mittagessen/kraken`** (Apache-2.0, maintained, CPU-capable) with the **CATMuS Medieval** model, which names **Italian and Latin**. First released historical model in any wave to name Italian.
+- **Two blockers:** CATMuS is medieval bookscript, not 19th-c Italian cursive, so fine-tuning is required; and **no Kraken-versus-Transkribus head-to-head CER exists**. **Run the head-to-head first — that number decides.**
+- **This wave DOES apply to CeminiDFS.** `nchopin/particles` — particle filtering to update projections live during a slate (the late-swap gap). `neurotrader888/mcpt` — permutation tests for overfitting, applicable to DFS projection models.
+- **A docx error caught:** it rated `HTRPipeline` Integrate and claimed MIT. Live API: **`spdx_id: null`, no licence at all**, stale since 2023. It recommended vendoring an unlicensed repo.
+
 ## Current state (2026-10-03 — K279 ingest)
 
 - **K279 ingest** — 11 source pages + **5 hubs**. **Operator directive: stop auditing licenses row by row; extract the technique.** Judgement is now "what is usable", not the SPDX field. Nothing was vendored, so nothing changed in practice. **0 product Integrate GO. FILE and HITL only. Do not swap `/route`. No installs. Zero clones. Transkribus stays the only product HTR. No PoC.**

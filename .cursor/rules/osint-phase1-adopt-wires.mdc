@@ -383,6 +383,19 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K280 — 2026-10-03
+Dual-ID: **OSINT K280**. FILE and HITL only. **0 product Integrate GO** — with an open evaluation, not a closed one.
+- **ATTO HTR POSTURE CHANGE.** Do **not** stay on Transkribus by precedent. The operator directive: if a candidate wins on a measured task, adopt it. **Transkribus is the incumbent with a challenger, not the fixed answer.** Prior waves' line "Transkribus stays the only product HTR" is retired as a rule and kept as a finding.
+- **The challenger is `mittagessen/kraken`** — Apache-2.0, 1,079 stars, last push 2026-09-24, a real engine (layout, reading order, recognition), **CPU-capable, ~16 MB models**, ALTO/PageXML export. Its partner model **CATMuS Medieval** names **Latin, Old French, Middle French, Old Spanish, and Italian** (Zenodo 10.5281/zenodo.15030337, CC-BY-4.0) — the first released historical model in any wave to name Italian.
+- **Two blockers. Respect both.** (1) CATMuS is medieval bookscript; our records are 19th-c Italian cursive, so **fine-tuning on our own labelled pages is required**, and no off-the-shelf Kraken model exists for Italian civil registers. (2) **No Kraken-versus-Transkribus head-to-head CER exists.** The relevant papers sit behind a publisher anti-bot block.
+- **The decision procedure: measure, do not enthuse and do not refuse.** (1) Run Transkribus against Kraken+CATMuS on the **same** pages, same ground truth, line CER each — that number decides. (2) If Kraken is within a few points before fine-tuning, label a few thousand lines from one comune and fine-tune. (3) Re-measure. Adopt only on a win.
+- **The operational argument already favours Kraken** — permissive, local-only, CPU-capable, which fits the no-cloud-HTR constraint rather than merely tolerating it. But an operational advantage is not an accuracy result.
+- **The docx recommended vendoring an UNLICENSED repo.** It rated `githubharald/HTRPipeline` **Integrate** and claimed MIT; the live API returns **`spdx_id: null` — no licence at all**, all rights reserved, stale since July 2023. **This is the one narrow case where the licence check still earns its place.** It is not a reason to resume the full sweep.
+- **Did not qualify:** SimpleHTR (MIT, English IAM toy, no historical/Romance evidence); PreprocessingHTR (preprocessing only, no model); cremma-medieval (Old French only, no Latin or Italian); HTR-VT / DTLR / Transformer-ocr (no licence found). Three of eight rows have no licence.
+- **CEMINIDFS — THIS WAVE APPLIES.** `nchopin/particles` (Extract): particle filtering, stated use is converting **static pre-game projections into dynamic state-space distributions that update on live drive results, snap counts, and game scripts** — the late-swap gap. `neurotrader888/mcpt` (Extract): Monte Carlo permutation tests for overfitting, applicable to any strategy including DFS projection models. **High complexity on the particle filter — build only if the late-swap lane carries the margin.**
+- **GW:** no level to arm. **Never auto-arm. Never `watches.json`.** **DFS / Parlays: no auto-submit.** A human types the ticket.
+- **Verify:** `bash scripts/adopt_k280_phase1.sh`.
+
 ## OSINT K279 — 2026-10-03
 Dual-ID: **OSINT K279**. FILE and HITL only. **0 product Integrate GO.**
 - **Operator directive: stop auditing licenses row by row; extract the technique.** Judge a row on what is usable, not on its SPDX field. Keep one exception: note the licence when something is **vendored verbatim into shipped product code**, because that lands on the buyer's diligence. Pattern extraction needs no note.

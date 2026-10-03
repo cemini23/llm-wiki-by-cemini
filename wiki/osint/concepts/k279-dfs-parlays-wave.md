@@ -4,6 +4,7 @@ type: concept
 tags: [dfs, parlays, gambling, k279]
 keywords: [k279, breakeven, pickem, property-testing, extract]
 related:
+  - concepts/k280-dfs-wave.md
   - concepts/k278-ood-stub-wave.md
   - sources/eval-multi-repo-revenue-2026-10-03.md
   - sources/eval-repo-opportunity-2026-10-03.md
@@ -16,6 +17,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/k280-dfs-wave.md
 - @concepts/k278-ood-stub-wave.md
 - @sources/eval-multi-repo-revenue-2026-10-03.md
 - @sources/eval-repo-opportunity-2026-10-03.md

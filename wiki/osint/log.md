@@ -1,3 +1,23 @@
+## [2026-10-03] ingest | K280 wave
+
+- **Inbox:** one eval docx, 20 rows. Written as **2 source pages + 2 hubs** (the rows split cleanly into HTR and Monte Carlo). Archived to egress. **Zero clones. Nothing vendored.**
+- **POSTURE CHANGE — Atto HTR.** The operator directive: *do not stay on Transkribus by precedent; if there is a better solution, adopt it.* Recorded. Across every prior wave this wiki carried "Transkribus stays the only product HTR". **Transkribus is now the incumbent with a challenger, not the fixed answer.**
+- **The challenger is `mittagessen/kraken`.** Apache-2.0, 1,079 stars, last push 2026-09-24, a real engine (layout analysis, reading order, recognition), **CPU-capable, no GPU needed**, ~16 MB per model. Its partner model **CATMuS Medieval** names **Latin, Old French, Middle French, Old Spanish, and Italian** — the first released historical-script model in any wave to name Italian. 160k+ training lines, CC-BY-4.0.
+- **Two blockers, both real.** (1) CATMuS is medieval bookscript; our records are 19th-century Italian cursive, so domain fine-tuning is required and **no off-the-shelf Kraken model exists for Italian civil registers**. (2) **No direct Kraken-versus-Transkribus head-to-head CER was found** — the two relevant papers sit behind a publisher anti-bot block. **Close that gap first.**
+- **Accuracy evidence located:** Kraken on medieval French reports 6.0% line CER, 15.2% unseen, against 15.3% for a TrOCR+LoRA baseline. CATMuS-Medieval on unseen 17th-c Spanish/Hokkien reports about 10.0-11.4% CER against about 7.7-8.1% for PyLaia.
+- **A real docx error caught.** The eval rated `githubharald/HTRPipeline` **Integrate** and claimed **MIT**. The live API returns **`spdx_id: null` — no licence at all**, all rights reserved, stale since July 2023. **It recommended vendoring an unlicensed repo.** This is the narrow case where the licence check still earns its place; it is not a reason to resume the full sweep.
+- **Did not qualify:** SimpleHTR (MIT but English IAM toy), PreprocessingHTR (preprocessing only, no model), cremma-medieval (Old French, no Latin or Italian). Three of eight rows have no licence at all.
+- **CEMINIDFS — this wave DOES apply.** Answering the operator's question directly. `nchopin/particles` (Extract) is a particle-filtering framework whose stated use is converting **static pre-game projections into dynamic state-space distributions that update on live drive results, snap counts, and game scripts** — that is the late-swap gap. `neurotrader888/mcpt` (Extract) is Monte Carlo permutation testing for overfitting, which applies to any strategy we test including DFS projection models. Prior K279/K280 rows had no DFS extract; these two do.
+- **Honest note for future waves:** K279 and K280 carried 40 eval rows between them. The first 20 had no DFS item; the two real ones were in the second 20. When a batch has DFS-shaped rows but no extract, record **what class of thing would have qualified**, so the next wave has a target.
+- **Concepts:** 2 k280 hubs (atto-htr, dfs, ood — see index). K279 hubs backlinked both ways.
+- **Phase-0:** the audit agent cloned nothing (session network policy blocked git and gh directly); findings come from the live GitHub REST API and cited publisher records. **No clone. 0 product Integrate GO** — with an open evaluation, not a closed one.
+- **Next actions (not done):**
+  1. **Atto: run the head-to-head.** Transkribus against Kraken+CATMuS on the same pages, same ground truth, line CER each. This number decides the HTR question.
+  2. If Kraken is within a few points before fine-tuning, label a few thousand lines from one comune and fine-tune CATMuS.
+  3. CeminiDFS: evaluate particle filtering for the late-swap lane. High complexity; build only if that lane carries the margin.
+  4. CeminiDFS and XSP: add a permutation test for overfitting.
+  5. No clone. Nothing vendored. A human types the ticket.
+
 ## [2026-10-03] ingest | K279 wave
 
 - **Operator directive (this wave and forward):** stop auditing licenses row by row; extract the technique. The judgement is now "what is usable", not what the SPDX field says. This did not cost anything in practice — the useful rows in both eval docs were technique, not code. **One exception kept:** anything vendored verbatim into shipped product code still gets a licence note, because that lands on the buyer's diligence, not on us.

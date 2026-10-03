@@ -4,6 +4,7 @@ type: concept
 tags: [atto, htr, genealogy, k278]
 keywords: [k278, pypottery, constraint-split, transkribus, FILE]
 related:
+  - concepts/k280-atto-htr-wave.md
   - concepts/k277-atto-htr-wave.md
   - sources/arxiv-2610.02072-pypottery-2026-10-02.md
   - sources/arxiv-2610.00633-genealogy-db-constraints-2026-10-02.md
@@ -16,6 +17,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/k280-atto-htr-wave.md
 - @concepts/k277-atto-htr-wave.md
 - @sources/arxiv-2610.02072-pypottery-2026-10-02.md
 - @sources/arxiv-2610.00633-genealogy-db-constraints-2026-10-02.md
