@@ -125,6 +125,19 @@ updated: 2026-04-23
 - External URL: `[Source: https://... (retrieved YYYY-MM-DD)]`
 - Multiple: `[Sources: filename.pdf p.5, filename2.pdf p.12]`
 
+**Briefs copied to sibling wikis** — a brief staged here is often copied **verbatim** into a
+sibling's `briefs/` (the daily cyber-lab brief goes to `../Cybersecurity wiki/briefs/`). Those
+siblings have their own `wiki/`, so a bare `wiki/...` citation resolves here and dangles there.
+Grep found a live backlog on 2026-10-03: nine cyber-lab briefs in the Cybersecurity wiki citing
+pages that only exist here.
+
+- When copying a brief to a sibling, rewrite its `## Sources` block for **that copy** to the
+  cross-wiki form: `[Source: @osint-wiki/concepts/...]`. Keep the sibling's own paths unqualified.
+- Prefer building the body with a per-sibling sources parameter over a single shared string — a
+  shared body cannot be correct in two wikis at once.
+- A sibling may keep the brief and qualify the citation; it should **not** create a local page to
+  satisfy a copied brief. That splits the source of truth.
+
 **Claim confidence tags**:
 - `[CONFIRMED]` — ≥2 independent sources
 - `[TENTATIVE]` — single source or circumstantial
