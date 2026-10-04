@@ -30,6 +30,16 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-04 — K281 ingest)
+
+- **NEW PROJECT — Basgiath.** The operator registered a second co-primary workstream beside GuruWatcher: **Basgiath**, a Minecraft **Bedrock** addition in the Empyrean series. Repo `Projects/dragon-rider-map/`. Target MCPEDL and CurseForge, non-monetized. The priority stack is now **#1 Atto · #2 GuruWatcher + Basgiath · #3 CeminiDFS · #4 CeminiParlays**.
+- **K281 ingest** — 6 inbox files → 9 source pages + 4 hubs. Both eval docx are Minecraft (modding 20 rows, Bedrock protocol 19 rows). **Zero clones. No install. 0 product Integrate GO.**
+- **`rehan-remade/universal-modder`** (operator-named): MIT, 2,919 stars, pushed the day it was checked. **Adopt the layout, not the pipeline** — one canonical skill tree with symlinked agent entry points, one `AGENTS.md`, and a field-notes knowledge base. Its asset path is a paid third-party service we have not agreed to.
+- **Highest-leverage pairing:** `bedrock-mc/mcpelauncher-agent` (drive a Bedrock client) plus `itzg/docker-minecraft-server` (headless) plus `MCBE_Inventory_Editor` (LevelDB NBT) is the shape of an unattended test bench for Basgiath.
+- **Eval-quality signal:** 7 of 20 modding URLs do not resolve. That list looks partly generated.
+- **A named structure appeared:** INTC Oct 16 130 calls, with a proposed fade. **Claim only, not armed. No xsp scp.**
+- **Ingest note:** Moontower #330 is a superset of two other captures in the same inbox. Ingested once; the others are pointer pages.
+
 ## Current state (2026-10-03 — K280 ingest)
 
 - **K280 ingest** — 1 eval docx, 20 rows → 2 source pages + 2 hubs. **Zero clones. Nothing vendored. 0 product Integrate GO.**

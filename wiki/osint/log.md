@@ -1,3 +1,24 @@
+## [2026-10-04] ingest | K281 wave
+
+- **NEW PROJECT REGISTERED — Basgiath.** The operator named a second co-primary workstream alongside GuruWatcher: **Basgiath**, a Minecraft **Bedrock** addition in the Empyrean series (dragon riders, a war college). Repo is `Projects/dragon-rider-map/` — its README opens `# Basgiath` with an ASCII dragon. Distribution target is MCPEDL and CurseForge, non-monetized fan project. The eval docx carries `basgiath` as its own overlap key beside atto, guruwatcher, ceminidfs, ceminiparlays.
+- **Inbox:** 6 files → 9 source pages + 4 hubs. **Both eval docx are Minecraft** — one modding (20 rows), one Bedrock protocol (19 rows). 6/6 archived to egress. Zero clones.
+- **The named repo — `rehan-remade/universal-modder`.** Operator asked for this one specifically. `gh api` 2026-10-04: **MIT, 2,919 stars, 22,365 KB, pushed the same day, not archived.** It is a skills-plus-knowledge-base library that lets any coding agent mod PC games. **Two patterns worth copying:** (1) one canonical `skills/` tree with `.agents/skills`, `.claude/skills`, `.gemini/skills`, `.github/skills` all symlinked to it, and a single canonical `AGENTS.md` that `CLAUDE.md` and `GEMINI.md` point at — cleaner than our post-commit sync, which is the mechanism that reverted a skill edit in K276; (2) a `knowledge/INDEX.md` field-notes base where the agent must write down what it learned for the next agent. **Adopt the layout, not the pipeline** — its asset path routes through a paid third-party service, a new spend line we have not agreed to. No install.
+- **Seven unreachable rows.** The modding batch had 7 of 20 URLs that do not resolve — the highest unavailable rate this month. Worth noting as an eval-quality signal: that URL list looks partly generated rather than verified.
+- **The two Integrate rows.** `thejacedev/McHeads-API` (MIT) renders player heads and skins from **Bedrock XUIDs as well as Java UUIDs** — most skin renderers are Java-only, so this solves a real gap for flight scoreboards and rider profiles. `bedrock-mc/mcpelauncher-agent` is an MCP layer over the Bedrock launcher; paired with the modding batch's headless container and LevelDB inventory tooling, that is the shape of an unattended test bench.
+- **A named structure appears.** Moontower #330 reports **notable size buying in INTC October 16 130 calls** on 28 September, ahead of Intel's 23 October earnings, with a proposed fade of selling INTC straddles or writing covered calls. **Recorded as a claim with a date and a strike. Not armed. No xsp scp.**
+- **Ingest dedup insight.** Moontower #330 is a **superset**: two other captures in the same inbox are near-verbatim sections of it. Ingested #330 once; the other two became pointer pages. Triplicating would have been the lazy path.
+- **Moontower preingest false positive.** The checker flagged #330 as LIKELY on a fuzzy title match against earlier numbered issues. Numbered newsletters collide on title. Same class as the K279 false positive.
+- **Distribution signal.** Robinhood's new platform exposes third-party data providers as subscribable modules inside its own trading agent. First time a brokerage appears as a channel rather than a counterparty. Noted, not integrated.
+- **Korea/Japan split.** South Korea's market cap fell 33% in six months while its FSC proposed extending tokenized securities to stocks, bonds and funds. Japan launched a tax-detection system and formed a group to study on-chain settlement of **government bonds**. Retail shrinking while the product widens.
+- **Boundary:** no install. Zero clones. **No client-modification code recorded** — the eval's Java anticheat-evasion and hacked-client rows were Pass, and nothing from them is on any page. **No XSP/PM scp. Never auto-arm.**
+- **Concepts:** 4 k281 hubs (basgiath, harness, vol-quant, ood-stub). K278/K279/K280 hubs backlinked.
+- **Next actions (not done):**
+  1. Basgiath: evaluate `mcpelauncher-agent` plus the headless container as a test bench. That is the highest-leverage pairing in the wave.
+  2. Basgiath: adopt the one-tree-plus-symlinks skill layout incrementally, starting with one repo.
+  3. Fix `preingest_check.py` to also match numbered newsletters on URL, not title.
+  4. Atto: the Kraken head-to-head is still unrun.
+  5. CeminiParlays: the pick'em work is done and passing but uncommitted.
+
 ## [2026-10-03] ingest | K280 wave
 
 - **Inbox:** one eval docx, 20 rows — plus **one wublock weekly that arrived mid-session and was swept to egress by the archive loop before it had a page**. That page is now written. **Watch this: the archive loop moves anything in the inbox, including a file that arrived after preingest.** Written as **2 source pages + 2 hubs** (the rows split cleanly into HTR and Monte Carlo). Archived to egress. **Zero clones. Nothing vendored.**

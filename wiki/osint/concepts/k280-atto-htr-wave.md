@@ -4,17 +4,19 @@ type: concept
 tags: [atto, htr, genealogy, k280]
 keywords: [k280, kraken, catmus, transkribus, posture-change]
 related:
+  - concepts/k281-basgiath-wave.md
   - concepts/k278-atto-htr-wave.md
   - sources/eval-htr-repos-2026-10-03.md
 maturity: draft
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-04
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k281-basgiath-wave.md
 - @concepts/k278-atto-htr-wave.md
 - @sources/eval-htr-repos-2026-10-03.md
 

@@ -4,18 +4,22 @@ type: concept
 tags: [ood, k280, eval]
 keywords: [k280, monte-carlo, context-only, no-clone]
 related:
+  - concepts/k281-ood-stub-wave.md
+  - concepts/k281-basgiath-wave.md
   - sources/substack-rss-wublock-2026-10-03-weekly-project-updates-2026-10-03.md
   - concepts/k279-ood-stub-wave.md
   - sources/eval-monte-carlo-repos-2026-10-03.md
 maturity: draft
 created: 2026-10-03
-updated: 2026-10-03
+updated: 2026-10-04
 harness_verb: FILE
 wire_status: policy_wired
 ---
 
 ## Relations
 
+- @concepts/k281-ood-stub-wave.md
+- @concepts/k281-basgiath-wave.md
 - @sources/substack-rss-wublock-2026-10-03-weekly-project-updates-2026-10-03.md
 - @concepts/k279-ood-stub-wave.md
 - @sources/eval-monte-carlo-repos-2026-10-03.md

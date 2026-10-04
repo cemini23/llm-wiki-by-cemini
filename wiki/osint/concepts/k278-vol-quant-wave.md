@@ -4,6 +4,7 @@ type: concept
 tags: [quant, options, volatility, k278]
 keywords: [k278, barrier, american, rbsde, no-trade]
 related:
+  - concepts/k281-vol-quant-wave.md
   - concepts/k277-vol-quant-wave.md
   - sources/arxiv-2610.00340-barrier-option-2026-10-02.md
   - sources/arxiv-2610.01187-american-slsv-2026-10-02.md
@@ -16,6 +17,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/k281-vol-quant-wave.md
 - @concepts/k277-vol-quant-wave.md
 - @sources/arxiv-2610.00340-barrier-option-2026-10-02.md
 - @sources/arxiv-2610.01187-american-slsv-2026-10-02.md

@@ -7,6 +7,23 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K281 ingest (2026-10-04)
+OSINT K281: 6 inbox files → **7 source pages + 4 hubs**. **New project registered: Basgiath** (Minecraft Bedrock, Empyrean/dragon-rider theme), repo `Projects/dragon-rider-map/`, priority #2 alongside GuruWatcher. Both eval docx are Minecraft — one modding (20 rows), one Bedrock protocol (19 rows). **Seven rows in the modding batch were unreachable URLs** — the highest unavailable rate this month. **The named repo `rehan-remade/universal-modder` is MIT, 2,919 stars, pushed the same day**: one canonical skill tree with symlinked agent entry points and a single `AGENTS.md` — a cleaner federation shape than ours. **Adopt the layout, not the pipeline** (its asset path routes through a paid third-party service). A named structure appears: **INTC Oct 16 130 calls**, with a proposed fade — recorded as a claim, not armed. **0 product Integrate GO. FILE and HITL only. No install. Zero clones. No client-modification code recorded.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k281-basgiath](concepts/k281-basgiath-wave.md) | New project; two Integrate rows | draft |
+| [k281-harness](concepts/k281-harness-wave.md) | One skill tree, many entry points | draft |
+| [k281-vol](concepts/k281-vol-quant-wave.md) | INTC 130 calls — claim, not armed | draft |
+| [k281-ood](concepts/k281-ood-stub-wave.md) | Japan tightens, Korea widens | draft |
+| [universal-modder](sources/universal-modder-2026-10-04.md) | Agent skill library for game modding | draft |
+| [eval-mc-modding](sources/eval-minecraft-modding-2026-10-04.md) | 20 rows; 7 unreachable | draft |
+| [eval-mc-protocol](sources/eval-minecraft-bedrock-protocol-2026-10-04.md) | 19 rows; the MCP launcher agent | draft |
+| [moontower-330](sources/substack-rss-moontower-2026-10-04-330.md) | INTC flow, Kelly wrap, RH agentic platform | draft |
+| [moontower-option-ideas](sources/substack-rss-moontower-2026-10-04-option-ideas.md) | Pointer — section of #330 | draft |
+| [moontower-academic](sources/substack-rss-moontower-2026-10-04-academic-acceleration.md) | Pointer — section of #330; OOD | draft |
+| [wublock-asia-top10](sources/substack-rss-wublock-2026-10-04-asia-top10.md) | Japan tax system, Korea tokenization | draft |
+
 ### K280 ingest (2026-10-03)
 OSINT K280: 1 eval docx, 20 rows → **2 source pages + 2 hubs**. **Posture change on Atto HTR: Transkribus is no longer the fixed answer.** A Phase-0 audit found `mittagessen/kraken` (Apache-2.0, maintained, CPU-capable) with the **CATMuS Medieval** model, which names **Italian and Latin** — the first released historical model in any wave to do so. Domain fine-tuning is still required, and **no Kraken-versus-Transkribus head-to-head number exists**. Measure before switching. **The eval docx recommended vendoring `HTRPipeline` as MIT; the live API returns `spdx_id: null` — no licence at all.** **This wave DOES apply to CeminiDFS:** particle filtering for live late-swap updating. **0 product Integrate GO. FILE and HITL only. No clone. Nothing vendored.**
 

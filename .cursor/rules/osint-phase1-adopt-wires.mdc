@@ -383,6 +383,19 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K281 — 2026-10-04
+Dual-ID: **OSINT K281**. FILE and HITL only. **0 product Integrate GO.**
+- **NEW PROJECT — Basgiath.** Minecraft **Bedrock** addition, Empyrean/dragon-rider theme. Repo `Projects/dragon-rider-map/`. Fan-facing distribution (MCPEDL, CurseForge), non-monetized. Priority stack is now **#1 Atto · #2 GuruWatcher + Basgiath · #3 CeminiDFS · #4 CeminiParlays**.
+- **`rehan-remade/universal-modder`** (operator-named, checked 2026-10-04): **MIT, 2,919 stars, pushed the same day.** **Adopt the layout, not the pipeline.** Two patterns worth copying: (1) one canonical `skills/` tree with `.agents/skills`, `.claude/skills`, `.gemini/skills`, `.github/skills` symlinked to it, and a single canonical `AGENTS.md` that `CLAUDE.md`/`GEMINI.md` point at — this removes the post-commit sync that reverted a skill edit in K276; (2) a field-notes `knowledge/INDEX.md` where the agent must write down what it learned for the next agent. **Its asset pipeline routes through a paid third-party service — do not adopt that without an agreed spend line.**
+- **Highest-leverage pairing for Basgiath:** `bedrock-mc/mcpelauncher-agent` (drive a Bedrock client) + `itzg/docker-minecraft-server` (headless) + `MCBE_Inventory_Editor` (LevelDB NBT) = the shape of an unattended test bench.
+- **The two Integrate rows:** `thejacedev/McHeads-API` (MIT) — renders heads and skins from **Bedrock XUIDs as well as Java UUIDs**; most renderers are Java-only. `bedrock-mc/mcpelauncher-agent` — MCP layer over the Bedrock launcher.
+- **Eval-quality signal:** 7 of 20 modding URLs do not resolve. Treat that URL list as partly generated.
+- **No client-modification code.** The eval's Java anticheat-evasion client and hacked-client rows were Pass, and **nothing from them is recorded anywhere in this wiki** — no technique, no config, no code.
+- **Claim, not a trade:** Moontower #330 reports notable size buying in **INTC October 16 130 calls** with a proposed fade (sell straddles, or write covered calls). Recorded with a date and a strike. **No xsp scp. Never auto-arm.**
+- **Ingest note:** Moontower #330 is a **superset** of two other captures in the same inbox. Ingest #330 once; the others are pointer pages.
+- **Tooling:** `preingest_check.py` false-positived #330 as LIKELY on a fuzzy title match. **Numbered newsletters collide on title — match them on URL.**
+- **Verify:** `bash scripts/adopt_k281_phase1.sh`.
+
 ## OSINT K280 — 2026-10-03
 Dual-ID: **OSINT K280**. FILE and HITL only. **0 product Integrate GO** — with an open evaluation, not a closed one.
 - **ATTO HTR POSTURE CHANGE.** Do **not** stay on Transkribus by precedent. The operator directive: if a candidate wins on a measured task, adopt it. **Transkribus is the incumbent with a challenger, not the fixed answer.** Prior waves' line "Transkribus stays the only product HTR" is retired as a rule and kept as a finding.

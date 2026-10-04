@@ -4,6 +4,7 @@ type: concept
 tags: [agents, harness, k279, ccc]
 keywords: [k279, process-eval, over-refusal, contra, FILE]
 related:
+  - concepts/k281-harness-wave.md
   - concepts/k278-harness-wave.md
   - sources/eval-repo-opportunity-2026-10-03.md
   - sources/arxiv-2610.01833-process-eval-2026-10-03.md
@@ -21,6 +22,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/k281-harness-wave.md
 - @concepts/k278-harness-wave.md
 - @sources/eval-repo-opportunity-2026-10-03.md
 - @sources/arxiv-2610.01833-process-eval-2026-10-03.md
