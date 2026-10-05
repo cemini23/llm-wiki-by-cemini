@@ -50,10 +50,10 @@ A 20-row eval batch. The theme is wide: 2D level editors, modding infrastructure
 | URL | Technique | Route |
 |-----|-----------|-------|
 | `ProblemFactory/vibespace` | Multi-agent CLI orchestration with **detachable background workers** (`vibespace-job`), long-task cron, telemetry reconnects across daemon restarts | CCC harness |
-| `rehan-remade/universal-modder` | Claude Code modding skill tree + **fal MCP** generative asset pipeline + in-game agent verification + promo-clip generation | Basgiath + CCC |
+| `rehan-remade/universal-modder` | Claude Code modding skill tree (free — adopt) + **fal MCP** generative asset pipeline (**paid — rejected**) + in-game agent verification + promo-clip generation | Basgiath + CCC |
 | `xentropaff` Bedrock add-on guide | **Manifest.json UUID pairing**, behavior-pack / resource-pack split, `.mcaddon` packaging for one-click import | Basgiath packaging |
 
-**The Basgiath pair is the headline.** The packaging guide closes a real churn source: a manifest UUID mismatch breaks the Bedrock import dialog and the player leaves. The `universal-modder` layout was already named in K281 — this batch scores it `basgiath overlap 0.75` and adds the **fal MCP asset pipeline** as the new item.
+**The Basgiath pair is the headline.** The packaging guide closes a real churn source: a manifest UUID mismatch breaks the Bedrock import dialog and the player leaves. The `universal-modder` layout was already named in K281 — this batch scores it `basgiath overlap 0.75`. Its **fal MCP asset pipeline is rejected: it is paid, and we will not pay.** Extract the free layout and the asset-iteration loop only.
 
 ### The Context rows
 
@@ -79,7 +79,7 @@ Seven Pass rows are legacy or stack-mismatched (Tiled2Unity, Unity TileEditor, r
 - Basgiath rows → `Projects/dragon-rider-map/briefs/2026-10-05_k282-basgiath-packaging.md`
 - CCC harness row → `Cemini claude code CCC/briefs/2026-10-05_k282-ccc-harness.md`
 - Level-editor / tile rows (11) → Game Dev wiki `briefs/2026-10-05_k282-level-editors-from-osint.md`
-- `universal-modder` was already ingested in K281 (@sources/universal-modder-2026-10-04.md) — this wave adds its `basgiath overlap 0.75` score and the fal MCP pipeline note.
+- `universal-modder` was already ingested in K281 (@sources/universal-modder-2026-10-04.md) — this wave adds its `basgiath overlap 0.75` score. Its fal MCP pipeline is **rejected (paid; we will not pay)**.
 
 ## Snippets
 

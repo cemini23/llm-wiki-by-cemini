@@ -65,7 +65,7 @@ That last instruction is the one to steal. It is this workspace's own ingest dis
 
 ### What does not transfer
 
-It targets PC games; Basgiath is Bedrock. Its asset pipeline routes through a paid third-party generation service — a new spend line and a new dependency. **Adopt the layout, not the pipeline.**
+It targets PC games; Basgiath is Bedrock. Its asset pipeline routes through a paid third-party generation service. **Adopt the layout, not the pipeline.** Operator decision (2026-10-05): we will not pay for it, so we do not use it — extract the free parts only.
 
 ### Boundary
 

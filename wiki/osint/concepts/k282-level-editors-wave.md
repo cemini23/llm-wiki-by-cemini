@@ -48,7 +48,7 @@ K282 cluster hub. One eval docx, 20 URLs. Dual-ID **OSINT K282**.
 
 **1. Bedrock add-on packaging (Basgiath).** The `xentropaff` guide scores `basgiath overlap 0.85` — the highest of the wave. It names the exact failure mode: a **manifest.json UUID mismatch breaks the Bedrock import dialog**, and the player churns before they see the world. The fix is mechanical — Behavior Pack and Resource Pack split, matched UUID pairs, one-click `.mcaddon`. This is the distribution analogue of the K281 test-bench idea: it removes a manual, error-prone step.
 
-**2. `rehan-remade/universal-modder` (Basgiath + CCC).** Scored `0.75`. Already named in K281 for its skill layout; this wave adds the **fal MCP generative asset pipeline** (textures, sound, promo clips). Its layout is the one to copy; its asset pipeline routes through a paid third-party service we have not agreed to.
+**2. `rehan-remade/universal-modder` (Basgiath + CCC).** Scored `0.75`. Already named in K281 for its skill layout; this wave adds the **fal MCP generative asset pipeline** (textures, sound, promo clips). Its layout is the one to copy. **Operator decision (2026-10-05): do not adopt the pipeline — it is a paid third-party service and we will not pay for it.** Extract the free layout and the asset-iteration loop only.
 
 **3. `ProblemFactory/vibespace` (CCC).** Scored `local-abliterated-lab 0.45`, `atto 0.35`. A multi-agent CLI orchestrator with **detachable background workers** that survive daemon restarts, long-task cron, and tiled views. The gap it closes: our harness has no native background session detachment for multi-hour batch jobs.
 
