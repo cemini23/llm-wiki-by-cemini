@@ -17,6 +17,7 @@ related:
   - sources/sh2-exa-youtube-deep-research-2026-06-17.md
   - sources/sh2-heaven-resources-luxury-deep-read-2026-06-19.md
   - concepts/stronghold-2-lord-feasts-luxury-chains.md
+  - concepts/minecraft-data-driven-content-patterns.md
 maturity: validated
 created: 2026-06-18
 updated: 2026-06-19

@@ -56,6 +56,10 @@ Catalog of all wiki pages. Updated on each ingest.
 | [tycho-arc-agi-active-abstraction-stub](concepts/tycho-arc-agi-active-abstraction-stub.md) | draft | Tycho / ARC-AGI-3 world-models — CCC-primary stub |
 | [twin-test-time-world-model-stub](concepts/twin-test-time-world-model-stub.md) | draft | Twin validate-before-act — CCC-primary stub (K283) |
 | [vibeworlding-3d-agent-stub](concepts/vibeworlding-3d-agent-stub.md) | draft | VibeWorlding 3D agents — CCC-primary stub (K286) |
+| [minecraft-modding-ecosystem](concepts/minecraft-modding-ecosystem.md) | validated | Java + Bedrock ecosystem, loaders, deobfuscation break, churn lessons |
+| [minecraft-bedrock-addons-scripting](concepts/minecraft-bedrock-addons-scripting.md) | validated | Bedrock packs, Script API, Editor, Marketplace |
+| [minecraft-data-driven-content-patterns](concepts/minecraft-data-driven-content-patterns.md) | validated | Data components, datagen, jigsaw worldgen → castle-sim |
+| [minecraft-agent-harness-shelf](concepts/minecraft-agent-harness-shelf.md) | validated | Mineflayer, Voyager, MCP, benchmarks, harness lessons |
 
 ## Entities — Engines
 
@@ -101,6 +105,9 @@ Catalog of all wiki pages. Updated on each ingest.
 | [vrexplorer](entities/tools/vrexplorer.md) | validated | Unity VR testing — **NO-GO adopt** / STEAL-FROM |
 | [firmbench](entities/tools/firmbench.md) | validated | EnterpriseBench bench — **CONDITIONAL-GO** (Apache-2.0), deferred |
 | [codehack](entities/tools/codehack.md) | validated | Code-based agent skills — **CONDITIONAL-GO** (MIT), STEAL-FROM pattern |
+| [blockbench](entities/tools/blockbench.md) | validated | 3D model/animation editor — **CONDITIONAL-GO** (GPL-3.0), deferred |
+| [mineflayer](entities/tools/mineflayer.md) | validated | Minecraft bot API — **STEAL-FROM** (MIT), wont_wire |
+| [minecraft-agent-mcp-shelf](entities/tools/minecraft-agent-mcp-shelf.md) | validated | Minecraft MCP servers + agent skills — shelf, deferred |
 
 ## Entities — Games (reference)
 
@@ -302,3 +309,5 @@ Catalog of all wiki pages. Updated on each ingest.
 | [arxiv-2609.40324-cogentic-proof-harness-2026-10-03](sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md) | read |
 | [arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03](sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md) | read |
 | [inbox-arxiv-reject-batch-2026-10-03](sources/inbox-arxiv-reject-batch-2026-10-03.md) | read |
+| [minecraft-modding-deep-research-2026-10-05](sources/minecraft-modding-deep-research-2026-10-05.md) | read |
+| [minecraft-social-scan-2026-10-05](sources/minecraft-social-scan-2026-10-05.md) | read |

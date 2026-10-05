@@ -14,6 +14,8 @@ related:
   - concepts/stronghold-2-mod-ecosystem-shelf.md
   - concepts/stronghold-2-visual-qol-presets.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
+  - entities/tools/blockbench.md
+  - concepts/minecraft-modding-ecosystem.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-06-17
@@ -65,6 +67,10 @@ Route to @image-gen-wiki for:
 ### Sibling pages to read first
 
 See @meta/sibling-wiki-inventory.md § image-gen-wiki.
+
+### 3D lane (Fork B) — Blockbench candidate [TENTATIVE]
+
+D4 locked **Fork B (Godot 3D)**, so the 2D isometric lane above is the placeholder path only. For 3D buildings, walls, towers, and props, **Blockbench** is a candidate: GPL-3.0, actively maintained, exports **glTF**, and is the community's standard low-poly tool. It is a box modeler, so terrain and organic shapes stay out of scope. Verdict **CONDITIONAL-GO**, deferred until the art milestone — see @entities/tools/blockbench.md. Ecosystem context: @concepts/minecraft-modding-ecosystem.md.
 
 ## Snippets
 

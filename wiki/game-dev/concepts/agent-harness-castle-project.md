@@ -48,6 +48,10 @@ related:
   - sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md
   - sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md
   - sources/inbox-arxiv-reject-batch-2026-10-03.md
+  - concepts/minecraft-agent-harness-shelf.md
+  - entities/tools/mineflayer.md
+  - entities/tools/minecraft-agent-mcp-shelf.md
+  - sources/minecraft-modding-deep-research-2026-10-05.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-10-03
@@ -154,6 +158,17 @@ Cogentic's strongest transferable idea. Each round writes two artifacts: a **rec
 **Rule H4 — audit something the executor did not nominate** [CONFIRMED — arXiv 2610.01514]
 
 Report-dependent verification creates a suppression incentive: what the worker reports as important is what gets checked, so under-reporting escapes scrutiny. The fix is a report-independent audit floor. In the W2 verify gate this means the verifier must sample checks the executor did not flag, not only the items the executor listed as risky. See @sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md.
+
+### Minecraft agent literature (2026-10-05) [CONFIRMED]
+
+The Minecraft ecosystem is the largest live agent-tooling laboratory, and its mechanisms match rules H1–H4 above. Mineflayer (MIT, active) exposes small composable verbs with machine-checkable results; Voyager's skill library is executable code indexed for reuse, not prompt text; and its verifier feeds back execution errors rather than prose.
+
+Two additions worth carrying forward:
+
+- **Version-pin before generating.** One Minecraft tool reads the pack format file first, because models "get Minecraft syntax wrong confidently." Pin the Godot version and API in context before any agent writes code.
+- **Human judgment for fuzzy goals.** The BASALT benchmark's four "fuzzy" tasks were never solved robustly by any team — scalar rewards fail on aesthetic goals. Keep a person or a rubric in the loop.
+
+Full detail: @concepts/minecraft-agent-harness-shelf.md · @entities/tools/mineflayer.md · @entities/tools/minecraft-agent-mcp-shelf.md
 
 ## Snippets
 

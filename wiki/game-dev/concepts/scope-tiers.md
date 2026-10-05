@@ -26,6 +26,7 @@ related:
   - sources/gdc-kingdoms-and-castles-postmortem-2019.md
   - sources/leiden-medieval-city-builder-accuracy-2020.md
   - sources/northgard-economy-case-study-2018.md
+  - concepts/minecraft-modding-ecosystem.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-06-15

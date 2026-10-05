@@ -4,6 +4,20 @@ Append-only chronological log.
 
 ---
 
+## [2026-10-05] research | Minecraft modding ecosystem — deep dive, both editions
+
+- Operator-directed deep research. 4 parallel research agents (Java loaders/toolchain, Bedrock add-ons/Script API, AI agents, tooling/infra) + `opencli` social pass (YouTube search/transcript, X search, Reddit)
+- **Concepts:** minecraft-modding-ecosystem, minecraft-bedrock-addons-scripting, minecraft-data-driven-content-patterns, minecraft-agent-harness-shelf
+- **Entities:** blockbench (GPL-3.0, CONDITIONAL-GO art, deferred), mineflayer (MIT, STEAL-FROM, wont_wire), minecraft-agent-mcp-shelf (deferred)
+- **Sources:** minecraft-modding-deep-research-2026-10-05, minecraft-social-scan-2026-10-05
+- **Headline:** Java dropped obfuscation (announced 2025-10-31); Yarn deprecated, Intermediary gone; no mod for ≤1.21.11 works on 26.1 without recompilation — verified at fabricmc.net
+- **Headline:** data components (1.20.5+) — typed, registry-backed, default-valued — is the most reusable pattern for castle-sim; plus datagen, jigsaw worldgen, weighted loot
+- Harness: Minecraft agent literature (Mineflayer/Voyager/MCP/BASALT) mapped to rules H1–H4; new rules — version-pin before generating, human rubric for fuzzy goals
+- Social: AI-modding is now a visible community theme; 26.1 tutorials already shipping; most r/feedthebeast activity is datapacks and structures, not code
+- Note: external cheap-executor routing still sandbox-blocked; `opencli` required the user's terminal (daemon on port 19825)
+
+---
+
 ## [2026-10-03] ingest | 3 arXiv inbox (2 ingests + 1 reject) + Phase-1 harness rules H3/H4
 
 - Inbox: 3 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-03.md + 2 source pages

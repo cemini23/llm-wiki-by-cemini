@@ -66,6 +66,8 @@ related:
   - sources/gamedevbench-phase-0-audit-2026-06-21.md
   - sources/stronghold-franchise-research-pass2-2026-06-18.md
   - sources/arxiv-2609.29228-bt-fsm-llm-conversion-2026-09-30.md
+  - concepts/minecraft-modding-ecosystem.md
+  - concepts/minecraft-data-driven-content-patterns.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-08-15
