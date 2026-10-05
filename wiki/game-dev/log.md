@@ -4,6 +4,18 @@ Append-only chronological log.
 
 ---
 
+## [2026-10-05] ingest | 3 arXiv inbox + 4 cross-wiki briefs + Basgiath port brief
+
+- Inbox: 3 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-05.md + 2 source pages
+- **Ingest:** QUEEN chess model that explains its moves (2610.03695) — silent expert encoder + LM explainer; prompt framing governs default following (2610.03253) — pre-filled defaults bias agent choices
+- **Reject:** 2610.03136 reasoning-language alignment in monolingual German RAG → @ccc-wiki
+- Phase-0: no artifact for QUEEN (Code/Website are icons; no repo URL resolves) → **STEAL-FROM**
+- Phase-1: rules **H5** (do not pre-fill a value where neutrality is wanted) + **H6** (expert decides, LM explains) → @concepts/agent-harness-castle-project.md; guardrail § 8 choice architecture; game-AI shelf expert-plus-explainer note
+- **Briefs processed:** 4 cross-wiki briefs routed 2026-08-17…09-09 and never landed → @sources/cross-wiki-routed-briefs-2026-10-05.md (VLM narration SKIP, AnyTalk WATCH, Hydra-0 SKIP, Modern C++ Context), all `wont_wire`
+- **Basgiath:** wrote `dragon-rider-map/briefs/2026-10-05_java-port-and-tooling.md` — Bedrock Script API facts, editing ergonomics (bridge./Blockbench/Snowstorm/Editor), and the Bedrock→Java port path with a per-artifact mapping table
+
+---
+
 ## [2026-10-05] research | Minecraft modding ecosystem — deep dive, both editions
 
 - Operator-directed deep research. 4 parallel research agents (Java loaders/toolchain, Bedrock add-ons/Script API, AI agents, tooling/infra) + `opencli` social pass (YouTube search/transcript, X search, Reddit)

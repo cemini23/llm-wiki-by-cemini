@@ -18,6 +18,7 @@ related:
   - sources/arxiv-2609.34214-glyphbench-rl-playground-2026-09-30.md
   - sources/arxiv-2609.34342-sage-strategic-reasoning-2026-09-30.md
   - sources/arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30.md
+  - sources/arxiv-2610.03695-queen-chess-explains-moves-2026-10-05.md
 maturity: validated
 created: 2026-06-20
 updated: 2026-06-30
@@ -68,6 +69,12 @@ Hand-coded director (FSM/BT/GOAP)
 | Crusader `.aic` + UCP | Weight categories for director |
 | SH2 Fandom lord tables | `@concepts/stronghold-2-ai-lords.md` |
 | TW GDC siege roles | `@concepts/rts-siege-ai-reference.md` |
+
+### Expert-plus-explainer split (2026-10-05) [TENTATIVE]
+
+QUEEN pairs a **silent expert encoder** (a chess network) with a language model trained only to interpret the expert's state and explain it — reaching grandmaster play and fluent explanations with a 4B model. The transferable shape for castle-sim is the **split**: the hand-coded director stays the decision-maker, and any language model is an explainer over the director's state. That gives readable play plus readable reasons without handing decisions to an LLM.
+
+The prerequisite is a strong expert to interpret, which the JSON lord director is not yet. Phase E+ note, not a W2 action. See @sources/arxiv-2610.03695-queen-chess-explains-moves-2026-10-05.md.
 
 ## Dead Ends
 

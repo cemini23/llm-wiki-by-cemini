@@ -16,6 +16,8 @@ related:
   - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
   - sources/arxiv-2609.29837-pubg-ally-embodied-teammate-2026-09-30.md
   - sources/arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30.md
+  - sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md
+  - concepts/minecraft-agent-harness-shelf.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-09-24
@@ -111,6 +113,10 @@ May improvise: ration advice, morale quips, siege rumors
 Must never: change tax rates, spawn units, alter wall rules
 Memory: last 3 player decisions (decay after session)
 ```
+
+### 8. Choice architecture is part of the guardrail [CONFIRMED — arXiv 2610.03253]
+
+A pre-filled default pulls an LLM's choice toward that value, and the pull depends on wording and on how coarse the action list is. For an advisor or lord prompt, do not pre-fill a recommended action where the design wants neutrality, and prefer permission-style wording. A fine-grained option list is more swayable than a short list of high-level choices. See @sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md.
 
 ## Dead Ends
 

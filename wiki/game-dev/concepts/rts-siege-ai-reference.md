@@ -18,6 +18,7 @@ related:
   - concepts/stronghold-crusader-ai-modding-shelf.md
   - sources/arxiv-2609.29228-bt-fsm-llm-conversion-2026-09-30.md
   - sources/arxiv-2609.34342-sage-strategic-reasoning-2026-09-30.md
+  - sources/arxiv-2610.03695-queen-chess-explains-moves-2026-10-05.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-07-05

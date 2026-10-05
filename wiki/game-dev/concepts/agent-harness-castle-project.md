@@ -52,6 +52,10 @@ related:
   - entities/tools/mineflayer.md
   - entities/tools/minecraft-agent-mcp-shelf.md
   - sources/minecraft-modding-deep-research-2026-10-05.md
+  - sources/arxiv-2610.03695-queen-chess-explains-moves-2026-10-05.md
+  - sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md
+  - sources/inbox-arxiv-reject-batch-2026-10-05.md
+  - sources/cross-wiki-routed-briefs-2026-10-05.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-10-03
@@ -158,6 +162,16 @@ Cogentic's strongest transferable idea. Each round writes two artifacts: a **rec
 **Rule H4 — audit something the executor did not nominate** [CONFIRMED — arXiv 2610.01514]
 
 Report-dependent verification creates a suppression incentive: what the worker reports as important is what gets checked, so under-reporting escapes scrutiny. The fix is a report-independent audit floor. In the W2 verify gate this means the verifier must sample checks the executor did not flag, not only the items the executor listed as risky. See @sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md.
+
+### Phase-1 wires (2026-10-05)
+
+**Rule H5 — do not pre-fill a value where the design wants a neutral choice** [CONFIRMED — arXiv 2610.03253]
+
+Pre-filled defaults pull an LLM's choice toward the default, and the pull depends on wording — permission-style wording cuts it, and coarse action spaces reduce it. For any handoff or in-game advisor prompt, do not pre-fill a recommended action. This also reinforces **H1**: an agent given a few high-level verbs is less swayed by a supplied default than one given a fine-grained list. See @sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md.
+
+**Rule H6 — let the expert policy decide, and a language model explain** [TENTATIVE — arXiv 2610.03695]
+
+QUEEN pairs a silent expert encoder with a language model that is trained only to interpret the expert's state and explain it. Applied to castle-sim: keep the JSON-weighted lord director authoritative, and treat any language model as an **explainer** over the director's state, not a decision-maker. The missing piece is that the recipe needs a strong expert to exist first — so this is a Phase E+ note, not a W2 action. See @sources/arxiv-2610.03695-queen-chess-explains-moves-2026-10-05.md.
 
 ### Minecraft agent literature (2026-10-05) [CONFIRMED]
 

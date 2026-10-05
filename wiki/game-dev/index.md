@@ -311,3 +311,7 @@ Catalog of all wiki pages. Updated on each ingest.
 | [inbox-arxiv-reject-batch-2026-10-03](sources/inbox-arxiv-reject-batch-2026-10-03.md) | read |
 | [minecraft-modding-deep-research-2026-10-05](sources/minecraft-modding-deep-research-2026-10-05.md) | read |
 | [minecraft-social-scan-2026-10-05](sources/minecraft-social-scan-2026-10-05.md) | read |
+| [arxiv-2610.03695-queen-chess-explains-moves-2026-10-05](sources/arxiv-2610.03695-queen-chess-explains-moves-2026-10-05.md) | read |
+| [arxiv-2610.03253-default-following-collective-action-2026-10-05](sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md) | read |
+| [inbox-arxiv-reject-batch-2026-10-05](sources/inbox-arxiv-reject-batch-2026-10-05.md) | read |
+| [cross-wiki-routed-briefs-2026-10-05](sources/cross-wiki-routed-briefs-2026-10-05.md) | read |
