@@ -19,7 +19,9 @@ Match signals, in confidence order:
 
 Each candidate file gets a verdict:
   - NEW       — no matches above any threshold
-  - LIKELY    — fuzzy title match, a bare title match, or filename in a Location field
+  - LIKELY    — fuzzy title match, a bare title match, or filename in a Location field.
+                Consecutive issues of a numbered newsletter do NOT match:
+                'Moontower #329' and 'Moontower #330' are separate documents
   - DUPLICATE — exact arXiv ID / DOI / URL match, or a title match corroborated
                 by a filename in a Location field
 
@@ -123,6 +125,32 @@ def title_token_set(t: str) -> set:
     if not norm:
         return set()
     return {w for w in norm.split() if w not in STOPWORDS and len(w) > 1}
+
+
+def edition_tokens(tokens: set) -> tuple:
+    """Split a title's tokens into (non-digit words, digit words).
+
+    Used to tell two editions of one series apart: 'moontower 330 meta' and
+    'moontower 329 meta' share every word and differ only in the number.
+    """
+    words = {w for w in tokens if not w.isdigit()}
+    nums = {w for w in tokens if w.isdigit()}
+    return words, nums
+
+
+def same_series_different_edition(a: set, b: set) -> bool:
+    """True when two titles differ ONLY by a number.
+
+    Consecutive issues of a numbered newsletter look near-identical to a fuzzy
+    matcher. They are separate documents, so this must not count as a match.
+    """
+    aw, an = edition_tokens(a)
+    bw, bn = edition_tokens(b)
+    if not an or not bn:
+        return False          # one side carries no issue number
+    if an == bn:
+        return False          # same number: a genuine repeat, not a sibling
+    return aw == bw
 
 
 def jaccard(a: set, b: set) -> float:
@@ -376,6 +404,11 @@ def diagnose(cand: dict, basename: str, idx) -> tuple[str, list[str]]:
         if cts:
             scored = []
             for norm, toks, p, raw in idx["all_titles"]:
+                # Two issues of one numbered newsletter differ only by the
+                # number. They are separate documents, so skip the match
+                # rather than reporting a duplicate.
+                if same_series_different_edition(cts, toks):
+                    continue
                 j = jaccard(cts, toks)
                 if j >= args.fuzzy_threshold:
                     scored.append((j, raw, p))
