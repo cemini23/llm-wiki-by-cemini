@@ -35,12 +35,13 @@ exa:
     - arxiv.org
   search_type: auto  # never deep / deep-reasoning for digest
 
-# Priority stack (2026-07-27) — morning ingest for active codebases.
-# Atto = Priority #1 · GuruWatcher = Priority #2 · everything else behind.
+# Priority stack (2026-10-05) — morning ingest for active codebases.
+# Atto = Priority #1 · GuruWatcher + Basgiath = Priority #2 (co-primary) · everything else behind.
 # Route briefs per scripts/active_project_brief_targets.yaml; wiki always.
 active_topics:
   - "Atto — genealogy agent kit Priority #1 (vault/truth/FIND/portals/share/MCP) (→ ../atto/briefs/ + @osint-wiki methodology)"
   - "GuruWatcher — Priority #2 alert-only newsletter parameter watches → Discord (→ ../GuruWatcher/briefs/ + Macro Charts inbox hook)"
+  - "Basgiath — Priority #2 co-primary Minecraft Bedrock map + add-on, Empyrean/dragon-rider fan project; MCPEDL + CurseForge, non-monetized (→ ../dragon-rider-map/briefs/)"
   - "CeminiDFS — Priority #3 NFL projection pipeline, nflverse calibration, ownership sim, pydfs MME, BBM (→ @gambling-wiki + ../CeminiDFS/briefs/)"
   - "CeminiParlays — Priority #4 NFL sportsbook parlay / SGP EV + pick'em (→ @gambling-wiki + ../CeminiParlays/briefs/)"
   - "XSP killer bot — Lane A overnight exits + Lane B LEAPS hedge monitor on Robinhood (→ briefs/xsp-* → cemini-prod)"
@@ -52,17 +53,18 @@ active_topics:
   - "/route + agent-toolkit — lane failover, SIP/verify, Grok/claude-ds hang recovery, harness evolution from _route_runs (→ CCC briefs + @ccc-wiki/entities/skills/route.md backlog)"
 
 brief_routing_note: |
-  Priority #1: atto (../atto/briefs/). Priority #2: guruwatcher (../GuruWatcher/briefs/).
+  Priority #1: atto (../atto/briefs/). Priority #2: guruwatcher (../GuruWatcher/briefs/) + basgiath (../dragon-rider-map/briefs/; free, non-monetized).
   Priority #3: ceminidfs (../CeminiDFS/briefs/). Priority #4: ceminiparlays (../CeminiParlays/briefs/). Then wikis.
   Behind #1–#4 (route when source matches): xsp-killer · family-tree (dogfood) · local-abliterated-lab · pm-kalshi-bot · wc-ticket-monitor · castle-sim (legacy).
   Poker arena retired 2026-09-13 — do not route to agents/devfun-poker-arena/briefs/.
   Full ingest briefs route per `scripts/active_project_brief_targets.yaml`.
   Genealogy split: productizable (HTR/GEDCOM/vault/share/MCP/portal) → Atto dedicated brief; private pedigree → Desktop/family only.
   Newsletter / Macro Charts price-level watches → GuruWatcher (alert-only; never order routing).
+  Minecraft Bedrock / MCPEDL / CurseForge / fan map tooling → Basgiath (../dragon-rider-map/briefs/; free only — never monetize, never Marketplace).
   NFL DFS projection / lineup / BBM → CeminiDFS. Sportsbook parlay / SGP / pick'em EV → CeminiParlays (do not merge stacks).
   Local abliterated / operator-lab: ../Cybersecurity wiki/briefs/ (never tipdrop-workspace-kit — TipDrop/David retired 2026-08-05).
   Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers.
-  atto → ../atto/briefs/ · guruwatcher → ../GuruWatcher/briefs/ · ceminidfs → ../CeminiDFS/briefs/ · ceminiparlays → ../CeminiParlays/briefs/
+  atto → ../atto/briefs/ · guruwatcher → ../GuruWatcher/briefs/ · basgiath → ../dragon-rider-map/briefs/ · ceminidfs → ../CeminiDFS/briefs/ · ceminiparlays → ../CeminiParlays/briefs/
   xsp-killer → briefs/xsp-* → cemini-prod · family-tree → ~/Desktop/family/research/ (private; wiki methodology only)
   local-abliterated-lab → ../Cybersecurity wiki/briefs/
   wc-ticket-monitor → ../projects/wc-ticket-monitor/briefs/ (wiki-only unless ticket-resale hook).

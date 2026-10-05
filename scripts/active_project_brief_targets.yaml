@@ -6,7 +6,8 @@
 # Sync with ROADMAP.md "Active workstreams" and scripts/daily_research_config.yaml
 # Eval: CCC prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md (v10.6)
 #
-# Operator priority (2026-09-13): Atto = #1 · GuruWatcher = #2 · CeminiDFS = #3 · CeminiParlays = #4 · then wikis.
+# Operator priority (2026-10-05): Atto = #1 · GuruWatcher + Basgiath = #2 (co-primary) · CeminiDFS = #3 · CeminiParlays = #4 · then wikis.
+# Basgiath registered 2026-10-04: Minecraft Bedrock add-on, fan project, MCPEDL + CurseForge.
 # Poker arena retired 2026-09-13. TipDrop / David kit briefs retired 2026-08-05.
 
 default_posture: wiki-only
@@ -34,6 +35,7 @@ projects:
     skip_brief_if:
       - "Private Barone / living-person pedigree or DNA (→ Desktop/family/research only; never Atto fixtures)"
       - "Generic genealogy affiliate content with no reproducible archive or product module gap"
+      - "Minecraft / Bedrock content (→ basgiath briefs)"
       - "Godot/RTS/game-dev content unless castle-sim explicitly reopened"
 
   guruwatcher:
@@ -55,6 +57,27 @@ projects:
       - "Order-routing / live execution bots (GuruWatcher is alert-only)"
       - "Generic Discord SaaS onboarding without price-watch or newsletter-claim hook"
       - "Genealogy / Atto product content"
+      - "Minecraft / Bedrock content (→ basgiath briefs)"
+
+  basgiath:
+    label: "Basgiath — Minecraft Bedrock add-on, Empyrean/dragon-rider theme (fan project)"
+    code_root: "../dragon-rider-map"
+    wiki: "@osint-wiki/concepts/k281-basgiath-wave.md"
+    brief_dir: "../dragon-rider-map/briefs"
+    scp_target: null
+    co_primary: true
+    priority_rank: 2
+    primary_goal: "Ship the Basgiath world and add-on to MCPEDL and CurseForge; build an unattended test bench so a release validates without a human clicking through Minecraft"
+    steal_from:
+      - "Bedrock LevelDB NBT read/write for offline inventory and player-state assertions"
+      - "Headless container lifecycle for world-gen, behavior-pack load, and spawn assertions"
+      - "MCP automation over a running Bedrock client for checks a container cannot make"
+      - "Bedrock XUID and Java UUID player-identity rendering for scoreboards and Discord embeds"
+      - "Blockbench 3D typography and isometric tile pipelines for promotional art"
+    skip_brief_if:
+      - "Monetization of the add-on (this is a non-monetized fan project)"
+      - "Client-modification code, anticheat evasion, or hacked-client tooling — out of scope at every priority"
+      - "Generic Bedrock or Mojang platform news with no test-bench, distribution, or content hook"
 
   ceminidfs:
     label: "CeminiDFS — DIY NFL projection pipeline (FanDuel-primary)"

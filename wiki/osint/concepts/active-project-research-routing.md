@@ -1,8 +1,8 @@
 ---
 title: Active project research routing — brief targets vs legacy CeminiSuite
 type: concept
-tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher, local-abliterated-lab]
-keywords: [brief-routing, atto, guruwatcher, ceminidfs, ceminiparlays, wc-ticket-monitor, family-tree, genealogy, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
+tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher, basgiath, local-abliterated-lab]
+keywords: [brief-routing, atto, guruwatcher, basgiath, ceminidfs, ceminiparlays, wc-ticket-monitor, family-tree, genealogy, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
 related:
   - entities/tools/qwen-mm-plugins.md
   - entities/tools/ruview.md
@@ -58,6 +58,7 @@ related:
   - concepts/computational-genealogy-archival-automation.md
   - concepts/italian-regional-genealogy-archive-playbook.md
   - concepts/game-dev-wiki-federation.md
+  - concepts/k281-basgiath-wave.md
   - concepts/gambling-wiki-federation.md
   - concepts/devfun-poker-agent-challenge-2026.md
   - sources/devfun-poker-agent-challenge-onepager-2026-06-18.md
@@ -96,7 +97,7 @@ related:
   - sources/eval-url-revenue-opportunity-2026-08-15.md
 maturity: core
 created: 2026-06-17
-updated: 2026-09-13
+updated: 2026-10-05
 ---
 
 ## Relations
@@ -196,6 +197,7 @@ updated: 2026-09-13
 - @concepts/computational-genealogy-archival-automation.md — K153 family-tree methodology
 - @concepts/italian-regional-genealogy-archive-playbook.md — K154 regional archive playbook
 - @concepts/game-dev-wiki-federation.md — castle-sim legacy wiki sibling
+- @concepts/k281-basgiath-wave.md — Basgiath (Minecraft Bedrock fan map, Priority #2 co-primary)
 - @concepts/gambling-wiki-federation.md — gambling sibling federation
 - @gambling-wiki/concepts/diy-nfl-dfs-model-architecture.md — CeminiDFS architecture (brief home)
 - @gambling-wiki/entities/tools/ceminidfs.md — CeminiDFS entity
@@ -224,6 +226,8 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 
 **v10.6 stack (2026-09-13):** **#3 CeminiDFS** + **#4 CeminiParlays** sit after Atto and GuruWatcher. **Poker arena retired** — do not route to `devfun-poker-arena`. Eval: CCC v10.6 (`CeminiDFS overlap` · `ceminiparlays overlap`).
 
+**v10.7 stack (2026-10-05, K281):** **Basgiath** (`~/Projects/dragon-rider-map`, GitHub `cemini23/basgiath`) joins as co-primary **Priority #2 alongside GuruWatcher** — a free Minecraft **Bedrock** map + add-on, Empyrean / dragon-rider fan project (MCPEDL + CurseForge). **Non-monetized** — value is fan reach + follower growth. Eval: CCC v10.7 (`basgiath overlap`). See @concepts/k281-basgiath-wave.md.
+
 ## Narrative
 
 ### Priority stack (morning ingest)
@@ -232,6 +236,7 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 |------|---------|-------------------|-------------|
 | **#1** | **Atto** (genealogy product) | `../atto/briefs/` · GitHub `cemini23/atto` · vault `~/AttoVault/` | No — laptop kit; never Barone PII |
 | **#2** | **GuruWatcher** (newsletter watches → Discord) | `../GuruWatcher/briefs/` · GitHub `cemini23/GuruWatcher` · prod `/opt/guru-watcher/` | No — deploy via `GuruWatcher/scripts/deploy_prod.sh` |
+| **#2** | **Basgiath** (Minecraft Bedrock fan map + add-on; Empyrean/dragon-rider; non-monetized) | `../dragon-rider-map/briefs/` · GitHub `cemini23/basgiath` | No — free fan project; never Marketplace |
 | **#3** | **CeminiDFS** (NFL DIY + BBM) | `../CeminiDFS/briefs/` + `@gambling-wiki` | No — laptop pipeline repo |
 | **#4** | **CeminiParlays** (sportsbook parlay / SGP + pick'em) | `../CeminiParlays/briefs/` + `@gambling-wiki` | No — laptop CLI; operator types ticket |
 
@@ -254,7 +259,7 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 ### Default ingest rule
 
 1. **Wiki always** — source + concept updates in `wiki/` (or cross-wiki route).
-2. **Brief only if** steal-from maps to a row above (`scripts/active_project_brief_targets.yaml`). Prefer **Atto (#1)** then **GuruWatcher (#2)** then **CeminiDFS (#3)** / **CeminiParlays (#4)** on ties.
+2. **Brief only if** steal-from maps to a row above (`scripts/active_project_brief_targets.yaml`). Prefer **Atto (#1)** then **GuruWatcher + Basgiath (#2)** then **CeminiDFS (#3)** / **CeminiParlays (#4)** on ties.
 3. **Prod scp only if** `scp_target` is set for that project **and** `skill_audit.py` PASS.
 4. **Genealogy split** — productizable capability (HTR/GEDCOM/vault/share/MCP/portal) → **Atto dedicated brief**; private pedigree/DNA/living names → `~/Desktop/family/` only; methodology stubs on OSINT wiki.
 5. **Newsletter / Macro Charts price watches** → **GuruWatcher** briefs (alert-only; never order routing). Inbox hook: `scripts/guru_watcher_inbox_hook.sh`.
@@ -268,12 +273,13 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 | `scripts/daily_research_config.yaml` | Exa queries + `active_topics` in daily sweep |
 | `scripts/active_project_brief_targets.yaml` | Brief destination + scp gates per project |
 | `ROADMAP.md` | Human-readable workstream list (sync on pivot) |
-| `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` | Bulk URL eval — revenue-first + `atto` / `guruwatcher` / `CeminiDFS` / `ceminiparlays` / `genealogy` / `local-abliterated-lab` overlaps (v10.6) |
+| `@ccc-wiki/prompts/deep-research-multi-wiki-eval-v10-2026-07-06.md` | Bulk URL eval — revenue-first + `atto` / `guruwatcher` / `basgiath` / `CeminiDFS` / `ceminiparlays` / `genealogy` / `local-abliterated-lab` overlaps (v10.7) |
 
 ### Cross-wiki
 
 - **Atto** deep ingest → `../atto/briefs/` (synthetic fixtures only); OSINT methodology stubs; CCC for MCP/skill harness pieces.
 - **GuruWatcher** deep ingest → `../GuruWatcher/briefs/`; Macro Charts inbox → `scripts/guru_watcher_inbox_hook.sh` → prod claim reconcile.
+- **Basgiath** deep ingest → `../dragon-rider-map/briefs/` + Game Dev wiki for hobby-game technique; free Bedrock fan map (never monetize; no official art / book text / series name in the title). Hub: @concepts/k281-basgiath-wave.md.
 - **Family-tree** private digs → `Desktop/family/research/`; never into Atto fixtures/marketing.
 - **Local abliterated AI lab** → Cybersecurity wiki briefs + `@concepts/local-abliterated-llm-pentest-stack.md` / `@concepts/operator-lab-playbook.md`.
 - **CeminiDFS** deep ingest → `../CeminiDFS/briefs/` + Gambling wiki; OSINT may stub-route methodology via `cross_wiki_route.py`.
@@ -285,6 +291,6 @@ Operator pivot (2026-06-17): research discovery and ingest briefs should serve *
 
 ## Snippets
 
-> "Priority #1: atto. #2: guruwatcher. #3: ceminidfs. #4: ceminiparlays. Then wikis. Poker + TipDrop retired." [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-09-13]
+> "Priority #1: atto. #2: guruwatcher + basgiath. #3: ceminidfs. #4: ceminiparlays. Then wikis. Poker + TipDrop retired." [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-10-05]
 
 > "Do NOT default prod scp to cemini-prod for generic quant-finance / MAPPO / Riskfolio papers." [Source: scripts/daily_research_config.yaml brief_routing_note, 2026-06-17]

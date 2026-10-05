@@ -4,6 +4,7 @@ type: concept
 tags: [basgiath, minecraft, k281, gamedev]
 keywords: [k281, basgiath, bedrock, dragon-rider, mcpedl]
 related:
+  - concepts/active-project-research-routing.md
   - concepts/k280-atto-htr-wave.md
   - concepts/k280-ood-stub-wave.md
   - sources/eval-minecraft-modding-2026-10-04.md
@@ -18,6 +19,7 @@ wire_status: policy_wired
 
 ## Relations
 
+- @concepts/active-project-research-routing.md
 - @concepts/k280-atto-htr-wave.md
 - @concepts/k280-ood-stub-wave.md
 - @sources/eval-minecraft-modding-2026-10-04.md
