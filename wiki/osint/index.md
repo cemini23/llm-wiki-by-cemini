@@ -7,6 +7,27 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K282 ingest (2026-10-05)
+OSINT K282: **13 inbox files → 12 source pages + 3 hubs**. One eval docx (level editors, modding infra, Minecraft Bedrock tooling; 20 rows — **0 Integrate · 3 Extract · 4 Context · 7 Pass · 6 UNAVAILABLE**), 8 arXiv agent-eval/safety papers, 4 feeds. **Six eval URLs return 404** — the second high dead-link wave in two days. The Basgiath-facing Extract rows: a Bedrock **packaging standard** (manifest UUID pairing, `.mcaddon`, no import-dialog failures) and the **fal MCP asset pipeline** from `universal-modder`. CCC gets the **detachable background-worker** pattern from `vibespace`. The arXiv batch measures agent harnesses — **EvoRiskBench** puts injection through MCP tools, skills and subagents at aggregate ASR **37.46%**. **FrugalEvo was already ingested by CCC (K425)** — not duplicated here. **FILE only. No install. Zero clones. 0 product Integrate GO.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k282-level-editors](concepts/k282-level-editors-wave.md) | Level editors + Bedrock packaging; 6/20 dead links | draft |
+| [k282-agent-eval](concepts/k282-agent-eval-wave.md) | Agent safety, refusal, skill-gate, browsing evals | draft |
+| [k282-feeds](concepts/k282-feeds-wave.md) | PM volume, Kalshi court win, Fed/ECB macro | draft |
+| [eval-project-stack](sources/eval-project-stack-revenue-2026-10-05.md) | 20 rows; Bedrock packaging + vibespace | draft |
+| [evoriskbench](sources/arxiv-2610.03153-evoriskbench-runtime-2026-10-05.md) | Harness injection ASR 37.46%; model ≫ harness | draft |
+| [powerbench](sources/arxiv-2610.02303-powerbench-bias-2026-10-05.md) | Refusal bias vs framing and requester | draft |
+| [mlcommons-jailbreak](sources/arxiv-2610.02827-mlcommons-jailbreak-2026-10-05.md) | Resilience Gap 7.57 pp; paired metric | draft |
+| [moe-router](sources/arxiv-2610.02910-moe-router-gradient-2026-10-05.md) | Router-gradient expert selection | draft |
+| [kinetic-gated](sources/arxiv-2610.03243-kinetic-gated-evolution-2026-10-05.md) | Dynamics of a validation gate; separation | draft |
+| [finskillsbench](sources/arxiv-2610.03564-finskillsbench-2026-10-05.md) | Curated skills +16.2; silent competence | draft |
+| [hyperbrowsecomp](sources/arxiv-2610.03574-hyperbrowsecomp-2026-10-05.md) | Browsing-agent eval; Exa path | draft |
+| [eh-ep35](sources/substack-rss-event-horizon-2026-10-05-episode-35-prediction-market-data-tickertracker.md) | Kalshi/Polymarket volume; Illinois win | draft |
+| [klement-manager](sources/substack-rss-klement-2026-10-05-who-is-the-best-manager.md) | Manager selection lab experiment | draft |
+| [lily-ray](sources/substack-rss-lily-ray-2026-10-04-prediction-next-massive-google-update.md) | Predicted Google update (→ SEO wiki) | draft |
+| [wublock-weekly](sources/substack-rss-wublock-2026-10-05-weekly-outlook-fed-ecb-minutes.md) | Fed/ECB minutes; Brent > $100 | draft |
+
 ### K281 ingest (2026-10-04)
 OSINT K281: 6 inbox files → **7 source pages + 4 hubs**. **New project registered: Basgiath** (Minecraft Bedrock, Empyrean/dragon-rider theme), repo `Projects/dragon-rider-map/`, priority #2 alongside GuruWatcher. Both eval docx are Minecraft — one modding (20 rows), one Bedrock protocol (19 rows). **Seven rows in the modding batch were unreachable URLs** — the highest unavailable rate this month. **The named repo `rehan-remade/universal-modder` is MIT, 2,919 stars, pushed the same day**: one canonical skill tree with symlinked agent entry points and a single `AGENTS.md` — a cleaner federation shape than ours. **Adopt the layout, not the pipeline** (its asset path routes through a paid third-party service). A named structure appears: **INTC Oct 16 130 calls**, with a proposed fade — recorded as a claim, not armed. **0 product Integrate GO. FILE and HITL only. No install. Zero clones. No client-modification code recorded.**
 

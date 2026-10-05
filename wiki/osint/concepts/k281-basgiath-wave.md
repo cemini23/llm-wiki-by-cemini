@@ -7,8 +7,10 @@ related:
   - concepts/active-project-research-routing.md
   - concepts/k280-atto-htr-wave.md
   - concepts/k280-ood-stub-wave.md
+  - concepts/k282-level-editors-wave.md
   - sources/eval-minecraft-modding-2026-10-04.md
   - sources/eval-minecraft-bedrock-protocol-2026-10-04.md
+  - sources/eval-project-stack-revenue-2026-10-05.md
   - sources/universal-modder-2026-10-04.md
 maturity: draft
 created: 2026-10-04
@@ -22,8 +24,10 @@ wire_status: policy_wired
 - @concepts/active-project-research-routing.md
 - @concepts/k280-atto-htr-wave.md
 - @concepts/k280-ood-stub-wave.md
+- @concepts/k282-level-editors-wave.md
 - @sources/eval-minecraft-modding-2026-10-04.md
 - @sources/eval-minecraft-bedrock-protocol-2026-10-04.md
+- @sources/eval-project-stack-revenue-2026-10-05.md
 - @sources/universal-modder-2026-10-04.md
 
 ## Raw Concept
