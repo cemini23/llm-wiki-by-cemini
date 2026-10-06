@@ -30,6 +30,19 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-06 — K283 ingest)
+
+- **K283 ingest** — 16 inbox files → 16 source pages + 3 hubs. Two eval docx (40 rows), 8 arXiv papers, 6 feeds. **Zero clones. No install. 1 product Integrate GO (human-gated).**
+- **First product Integrate in four waves — `lfnovo/open-notebook` (Atto).** MIT, self-hosted multi-modal RAG (a private NotebookLM), **verified 2026-10-06 at ~39.9k stars**. Use for page-cited Q&A over municipal registry PDFs with **local-only inference**. The K39 "Reference-only" verdict rested on **deleted `cemini-prod`** constraints; re-scored now that the target is the laptop. **Human-gated. No install. No `truth.ged` write.**
+- **Basgiath (Minecraft) is 13 of 20 rows in the second docx.** Extracts: in-game roleplay currency (`simple-money`), JSON UI easing (`bedrock-ui-animations`, overlap 0.85), readable lore items, schema migration (`mc-mod-migrator`), HUD timer. **In-game tokens only. No Marketplace. Fan-made labels.** The docx's proxy row (`Void`) is **Java-Edition** — goal match / stack mismatch, same as K282.
+- **Atto → open-notebook (Integrate) + Italian telephony intake (Extract).** `centralino-ai-studio-medico` gives Italian voice/intent routing for *stato civile* triage — **PII gate: no client genealogical data to a third-party telephony model without a human gate.**
+- **GuruWatcher concurrency pair:** `background-agents` (detached workers) + `keyed-lock` (per-key mutex). **Never auto-arm. Never `watches.json`.**
+- **Vol signal:** `arXiv 2610.03849` splits the VIX into **probability × severity** — severity is **91.5%** of the recession premium. **No trade. No sizing change. No xsp scp.**
+- **Cyber:** CLIFT conformal self-verification (**+11.3 pp at K=4, zero training**) and the **MemTensor agent-memory supply-chain** compromise.
+- **Eval-quality signal:** `NOT FOUND` metadata on **34 of 40 rows**; docx B lists a duplicate URL. Third generated-looking URL list in four days (K281 7/20, K282 6/20). Score the technique, not the row metrics.
+- **Open (not started):** Basgiath next-actions prompt still not run; Java port prompt not written; K283 briefs staged but sibling copies pending; cadences due (wiki gap detect, HL funding, Kalshi LP, cross-venue, equity signal).
+- **Boundary:** no xsp/pm scp, no LIVE Discord, no `/route` swap.
+
 ## Current state (2026-10-04 — K281 ingest)
 
 - **NEW PROJECT — Basgiath.** The operator registered a second co-primary workstream beside GuruWatcher: **Basgiath**, a Minecraft **Bedrock** addition in the Empyrean series. Repo `Projects/dragon-rider-map/`. Target MCPEDL and CurseForge, non-monetized. The priority stack is now **#1 Atto · #2 GuruWatcher + Basgiath · #3 CeminiDFS · #4 CeminiParlays**.

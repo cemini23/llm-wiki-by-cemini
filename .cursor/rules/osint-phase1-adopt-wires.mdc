@@ -383,6 +383,21 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K283 — 2026-10-06
+Dual-ID: **OSINT K283**. FILE and HITL only. **1 product Integrate GO (`open-notebook`), human-gated.**
+- **Two eval docx, 40 URLs** — dev tools / agent harnesses / local RAG (docx A) + Bedrock ecosystem / server tooling (docx B). `NOT FOUND` metadata on **34 of 40 rows**; docx B lists a duplicate URL. Third generated-looking URL list in four days (K281 7/20 dead, K282 6/20 dead). **Score the technique the row names; do not trust the row's metrics.**
+- **`open-notebook` — Integrate GO (Atto).** `lfnovo/open-notebook`, **MIT**, self-hosted multi-modal RAG (a private NotebookLM). **Verified 2026-10-06 (WebFetch): repo exists, MIT, ~39.9k stars.** Use for municipal-registry PDF Q&A with page-level citations. **Local-only Ollama; no client PII to cloud models; no `truth.ged` write. Human-gated. No install this session.** The K39 "Reference-only" verdict was a *deleted prod host* RAM constraint — see @entities/tools/open-notebook.md.
+- **Atto telephony extract.** `albeSavvy/centralino-ai-studio-medico` — Italian voice/intent routing for *stato civile* / comune inquiry triage. **PII gate: no client genealogical data to a third-party telephony model without a human gate.**
+- **GuruWatcher concurrency pair (Extract).** `ColeMurray/background-agents` (detached async workers) + `ldm0/keyed-lock` (per-key mutex). Together they close the race-condition gap on parallel newsletter ingest. **Never auto-arm. Never `watches.json`.** No order routing.
+- **CCC harness extracts.** `tester-army/e2e` (cached agentic replay — spend tokens on discovery, not every CI run), `msitarzewski/agency-agents` (persona library; must not override invariants), `frankbria/ralph-claude-code` (Ralph loop — **mandatory cost caps**), `kim-em/hex-dev` (hexagonal scaffolding). **Do not swap `/route`.**
+- **CeminiParlays extract.** `pawurb/hotpath-rs` — Rust hot-path profiler for the copula engine. **No scrape. No auto-submit.** A human types the line.
+- **Basgiath (Bedrock, free / non-monetized).** Extracts: `simple-money` (in-game roleplay currency — **tokens only, no real money**), `bedrock-ui-animations` (JSON UI easing), `books-minecraft-bedrock-addon` (lore items), `mc-mod-migrator` (schema migration), `just-clock` (HUD). **No Marketplace. No official novel text. Fan-made labels.**
+- **Goal-match / stack-mismatch.** The docx names `void-community/Void`; the real repo is `caunt/Void` — a **Java-edition** proxy. Bedrock has no equivalent BungeeCord-style proxy in this batch. Same pattern as K282's `FabricModdingConventions`. **Do not wire.**
+- **Watch:** `deepseek-ai/DeepGEMM` (needs Hopper/Blackwell FP8 — laptop cannot run it); `lalalune/outreachr` (blocked on SPF/DKIM/DMARC warmup, not code).
+- **arXiv (8).** Vol: **DPP decomposition** (severity = 91.5% of the recession premium — **no trade, no sizing change**); UVM a-posteriori bounds. Agents: **CLIFT** (conformal self-verification, **+11.3 pp at K=4 with zero policy training**), **T-Search** (**Apache-2.0** retriever), **Wikidata RLM** (persistent interpreter beats stateless tool calls), **BTTF** (SQLite over terabyte waveform dumps). **No xsp scp.**
+- **Feeds.** Ohio cease-and-desist ×10 + CFTC perpetuals no-action (**no pm scp**); Hyperliquid funding-cap **4%/h → 0.5%** + HIP-4 capacity (awareness); **MemTensor** PyPI/npm compromise = **agent-memory supply chain** (see @concepts/agent-setup-instruction-supply-chain.md); **Reflection Beam** 501B open model (**no `/route` swap**).
+- **Verify:** `bash scripts/adopt_k283_phase1.sh`. **No LIVE Discord. No xsp/pm scp. No install.**
+
 ## OSINT K281 — 2026-10-04
 Dual-ID: **OSINT K281**. FILE and HITL only. **0 product Integrate GO.**
 - **NEW PROJECT — Basgiath.** Minecraft **Bedrock** addition, Empyrean/dragon-rider theme. Repo `Projects/dragon-rider-map/`. Fan-facing distribution (MCPEDL, CurseForge), non-monetized. Priority stack is now **#1 Atto · #2 GuruWatcher + Basgiath · #3 CeminiDFS · #4 CeminiParlays**.

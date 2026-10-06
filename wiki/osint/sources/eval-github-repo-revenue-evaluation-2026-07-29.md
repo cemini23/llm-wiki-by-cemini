@@ -10,6 +10,7 @@ related:
   - concepts/italian-citizenship-latam-audience-systems.md
   - sources/brazil-jure-sanguinis-deepening-2026-07-29.md
   - concepts/cemini-license-posture.md
+  - entities/tools/bettercap.md
 maturity: draft
 created: 2026-07-29
 updated: 2026-07-29

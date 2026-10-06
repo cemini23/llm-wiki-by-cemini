@@ -7,6 +7,31 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K283 ingest (2026-10-06)
+OSINT K283: **16 inbox files → 16 source pages + 3 hubs**. Two eval docx (40 URLs — dev tools/agent harnesses/local RAG, and the Bedrock ecosystem; **1 Integrate · 15 Extract · 2 Watch · 13 Context · 9 Pass**), 8 arXiv papers (4 quant/math, 4 agent-tooling), 6 feeds. **First product Integrate GO in four waves: `lfnovo/open-notebook`** — MIT, self-hosted multi-modal RAG (a private NotebookLM), verified 2026-10-06 at ~39.9k stars; the Atto-side play is page-cited Q&A over municipal registry PDFs with **local-only** inference. **Eval-quality: `NOT FOUND` metadata on 34 of 40 rows**, and the Bedrock docx names a Java-Edition proxy (`Void`) for a Bedrock target — the recurring goal-match/stack-mismatch. Basgiath row: in-game roleplay currency, JSON UI easing, lore items, schema migration. CCC: cached agentic test replay (`tester-army/e2e`) + the Ralph loop. GuruWatcher: detached workers + per-key locks. Vol: **VIX splits into probability × severity; severity is 91.5% of the recession premium**. Cyber: **CLIFT** self-verification (**+11.3 pp at K=4, zero training**) + the **MemTensor agent-memory supply-chain** compromise. **FILE only. No install. Zero clones.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k283-eval](concepts/k283-eval-wave.md) | 2 docx, 40 rows; open-notebook Integrate | draft |
+| [k283-arxiv](concepts/k283-arxiv-wave.md) | VIX decomposition, UVM bounds, 4 agent papers | draft |
+| [k283-feeds](concepts/k283-feeds-wave.md) | Ohio C&D, CFTC perps, HL funding cap, MemTensor | draft |
+| [eval-github-repos](sources/eval-github-repos-dev-tools-2026-10-06.md) | 20 rows; 1 Integrate, 6 Extract, 2 Watch | draft |
+| [eval-bedrock](sources/eval-bedrock-ecosystem-2026-10-06.md) | 20 rows; 9 Extract, 13 Basgiath-facing | draft |
+| [beneath-the-vix](sources/arxiv-2610.03849-beneath-the-vix-2026-10-06.md) | DPP = probability × severity; severity 91.5% | draft |
+| [broadcast-voter](sources/arxiv-2610.04530-broadcast-voter-model-2026-10-06.md) | Λ-broadcast voter model stationary measures | draft |
+| [mf-fictitious-play](sources/arxiv-2610.06292-mean-field-fictitious-play-2026-10-06.md) | MFG control learning convergence | draft |
+| [uvm-error-bounds](sources/arxiv-2610.06495-uncertain-vol-error-bounds-2026-10-06.md) | A-posteriori UVM bounds; cash-gamma dual | draft |
+| [wikidata-traces](sources/arxiv-2610.06650-wikidata-search-traces-2026-10-06.md) | RLM persistent interpreter > tool calls | draft |
+| [t-search](sources/arxiv-2610.06782-t-search-agentic-retriever-2026-10-06.md) | Apache-2.0 agentic retriever; 61.3 Recall@10 | draft |
+| [bttf-eda](sources/arxiv-2610.06790-bttf-eda-agentic-2026-10-06.md) | SQLite over waveform dumps; multi-agent +17.3% | draft |
+| [clift](sources/arxiv-2610.06829-clift-web-agent-verification-2026-10-06.md) | Conformal self-verify; +11.3 pp, zero training | draft |
+| [latent-space-beam](sources/substack-rss-latent-space-2026-10-06-reflection-beam.md) | Reflection Beam 501B open model | draft |
+| [eh-religion-pm](sources/substack-rss-event-horizon-2026-10-06-religion-prediction-markets.md) | Ohio C&D ×10; CFTC perpetuals no-action | draft |
+| [klement-nationalisations](sources/substack-rss-klement-2026-10-06-nationalisations.md) | Chile 1967–73; ROA −11–13% | draft |
+| [secpro-ciso-ep1](sources/substack-rss-secpro-2026-10-05-ciso-update-ep1.md) | NetScaler patch≠recover; AI in security review | draft |
+| [secpro-authors](sources/substack-rss-secpro-2026-10-05-associated-authors.md) | OWASP agentic standards people | draft |
+| [wublock-sept](sources/substack-rss-wublock-2026-10-06-september-blockchain-tech.md) | HL funding cap cut; Liquid exploit; MemTensor | draft |
+
 ### K282 ingest (2026-10-05)
 OSINT K282: **13 inbox files → 12 source pages + 3 hubs**. One eval docx (level editors, modding infra, Minecraft Bedrock tooling; 20 rows — **0 Integrate · 3 Extract · 4 Context · 7 Pass · 6 UNAVAILABLE**), 8 arXiv agent-eval/safety papers, 4 feeds. **Six eval URLs return 404** — the second high dead-link wave in two days. The Basgiath-facing Extract rows: a Bedrock **packaging standard** (manifest UUID pairing, `.mcaddon`, no import-dialog failures) and the **fal MCP asset pipeline** from `universal-modder`. CCC gets the **detachable background-worker** pattern from `vibespace`. The arXiv batch measures agent harnesses — **EvoRiskBench** puts injection through MCP tools, skills and subagents at aggregate ASR **37.46%**. **FrugalEvo was already ingested by CCC (K425)** — not duplicated here. **FILE only. No install. Zero clones. 0 product Integrate GO.**
 

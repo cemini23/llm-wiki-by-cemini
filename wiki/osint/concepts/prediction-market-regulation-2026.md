@@ -20,9 +20,11 @@ related:
   - sources/ttwo-gta6-cashout-desk-2026-08-20.md
   - sources/gemini-dr-ttwo-gta6-cashout-2026-08-20.md
   - sources/substack-rss-event-horizon-2026-08-21-johnson-prediction-markets.md
+  - sources/substack-rss-event-horizon-2026-10-06-religion-prediction-markets.md
+  - concepts/k283-feeds-wave.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-08-21
+updated: 2026-10-06
 ---
 
 ## Relations
@@ -72,3 +74,5 @@ Net for pm-bot ops: retail-facing incentive/marketing programs are now a regulat
 **K243 — midterm-commss risk if GOP underdogs (2026-08-20).** Event Horizon frames a commss tail risk: if Republicans go into the midterms as underdogs, party-aligned commss could turn on prediction markets (and Polymarket's GOP skew) as an attack surface — analogous to how the wildfire/cartel narratives gave lawmakers a cudgel. Ops: monitor for GOP-underdog commss as a demand/regulatory risk; **awareness only, no pm scp**. [TENTATIVE] single-author scenario. [Source: Event Horizon 2026-08-20]
 
 **Adjacent (not event contracts):** GTA 6 cashout rumors are a FinCEN CVC / money-transmitter question, not a Kalshi/Polymarket DCM product. Licensed event contracts do not repeal FIN-2013-G001. See `@concepts/gta6-convertible-currency-thesis.md`.
+
+**K283 — Ohio cease-and-desist ×10, CFTC perpetuals no-action (2026-10-06).** Two hard regulatory events. (1) **Ohio** sent cease-and-desist letters to **10 prediction platforms** — Coinbase, Gemini Titan, MooMoo Financial, Novig, Plus500US, Polymarket, Prophet X, Robinhood Derivatives, Underdog Predict, WeBull Financial — giving 14 days to respond and shutter, one week after the **Sixth Circuit** let Ohio enforce its gambling rules against Kalshi. The Ohio letter to Polymarket explicitly calls its event contracts "online sports gaming." (2) The **CFTC** Division of Market Oversight issued a **no-action letter** letting DCMs convert perpetual-*style* broad-based security index futures into **true perpetuals** (remove expiry), subject to customer-protection conditions; the position **expires 2026-10-20**. Kalshi separately won approval for **S&P 500 perpetual futures**. Also: a House bill would bar federal candidates from trading markets on their own elections; Kalshi argues in the Second Circuit that the CEA pre-empted state law in a 1981 "Potato War" case. Kalshi set a record **$3.68 B** Sunday volume, ~76% of the weekend's $9.37 B across venues. **Awareness only — no pm scp.** [Source: @sources/substack-rss-event-horizon-2026-10-06-religion-prediction-markets.md]
