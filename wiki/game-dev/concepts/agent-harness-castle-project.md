@@ -56,6 +56,12 @@ related:
   - sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md
   - sources/inbox-arxiv-reject-batch-2026-10-05.md
   - sources/cross-wiki-routed-briefs-2026-10-05.md
+  - sources/arxiv-2610.04672-masbench-partial-observability-2026-10-07.md
+  - sources/arxiv-2610.08215-learn2play-bench-experience-2026-10-07.md
+  - sources/arxiv-2610.05041-mafia-communication-collective-inference-2026-10-07.md
+  - sources/arxiv-2610.08076-speedrunbench-strategy-formation-2026-10-07.md
+  - sources/arxiv-2610.08720-worldsolver-visual-fidelity-2026-10-07.md
+  - sources/inbox-arxiv-reject-batch-2026-10-07.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-10-03
@@ -138,6 +144,10 @@ Canon table: `briefs/W2-harness-kickoff.md` § MCP admission.
 | FirmBench / EnterpriseBench | Agnostic | **CONDITIONAL-GO** Apache-2.0 | Beer-Game delayed-feedback lens — deferred |
 | GlyphBench | Agnostic | citation only (no repo pinned) | Unicode-grid state rendering hint |
 | CodeHack | NetHack | **CONDITIONAL-GO** MIT | Skill-vs-primitive design pattern |
+| MASBench | Agnostic | CONDITIONAL-GO MIT (1★) | Collaboration taxonomy: Protocol / Memory / Routing + **communication cost** |
+| Learn2Play | Text games | citation only | **Complete records beat summaries** — learning substrate |
+| SpeedrunBench | 9 games | citation only | Self-improvement measurement shape |
+| WorldSolver | Graphics sim | citation only | **Visual fidelity** as a verification axis |
 
 ### Phase-1 wires (2026-09-30)
 
@@ -172,6 +182,24 @@ Pre-filled defaults pull an LLM's choice toward the default, and the pull depend
 **Rule H6 — let the expert policy decide, and a language model explain** [TENTATIVE — arXiv 2610.03695]
 
 QUEEN pairs a silent expert encoder with a language model that is trained only to interpret the expert's state and explain it. Applied to castle-sim: keep the JSON-weighted lord director authoritative, and treat any language model as an **explainer** over the director's state, not a decision-maker. The missing piece is that the recipe needs a strong expert to exist first — so this is a Phase E+ note, not a W2 action. See @sources/arxiv-2610.03695-queen-chess-explains-moves-2026-10-05.md.
+
+### Phase-1 wires (2026-10-07)
+
+**Rule H7 — keep the complete raw record; do not compress history into rules too early** [CONFIRMED — arXiv 2610.08215]
+
+Learn2Play Bench finds that retaining **complete records of actions and feedback** supports better learning than summarizing them into rules or strategies. For the W2 harness this argues for keeping the raw action-and-feedback log retrievable, and against handing the next agent only a tidy rule list. Note the pairing with **H3**: H3 governs what gets *promoted* into the verified ledger; H7 says the underlying raw record must still be kept. Also from the same bench: with the backbone model fixed, changing the **harness** can improve performance while lowering estimated inference cost. See @sources/arxiv-2610.08215-learn2play-bench-experience-2026-10-07.md.
+
+**Rule H8 — re-validate inherited notes; an accumulating corpus can harm** [CONFIRMED — arXiv 2610.05041]
+
+The strongest counterweight to H3 in this wiki. In the Mafia study, societies that carried **sixty generations of their own inherited strategy notes scored below societies with none**, and adaptation destroyed the signalling it depended on. A durable ledger is not automatically an asset — it can encode a stale or self-defeating convention. Practical rule for castle-sim: keep the ledger **small and verified**, and treat inherited derived notes as a **re-validation risk** rather than accumulated wisdom. See @sources/arxiv-2610.05041-mafia-communication-collective-inference-2026-10-07.md.
+
+**Rule H9 — measure coordination cost, not just outcome** [CONFIRMED — arXiv 2610.04672]
+
+MASBench scores multi-agent collaboration on performance **and** on communication cost and efficiency. The castle-sim harness currently measures outcomes only. A planner-plus-swarm plus verifiers spends real tokens on coordination, and that overhead is invisible today. Add a token-cost column to the per-milestone record. See @sources/arxiv-2610.04672-masbench-partial-observability-2026-10-07.md.
+
+**Rule H10 — add a visual-fidelity check for 3D acceptance** [TENTATIVE — arXiv 2610.08720]
+
+Every bench in the ladder above checks logic, ticks, or task completion. None verifies that rendered output *looks* right — which for a 3D castle sim is a real acceptance axis. WorldSolver scores visual fidelity as one of three evaluation dimensions. The cheap version for this project: render the scene headlessly and judge with an image diff or a VLM. See @sources/arxiv-2610.08720-worldsolver-visual-fidelity-2026-10-07.md.
 
 ### Minecraft agent literature (2026-10-05) [CONFIRMED]
 

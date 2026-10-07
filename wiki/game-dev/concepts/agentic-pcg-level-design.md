@@ -13,6 +13,7 @@ related:
   - entities/tools/pcgodot.md
   - sources/ugenlah-unity-agentic-pcg-shelf-2026-07-10.md
   - sources/arxiv-2609.26629-personaweaver-procedural-characters-2026-09-24.md
+  - sources/arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-09-24

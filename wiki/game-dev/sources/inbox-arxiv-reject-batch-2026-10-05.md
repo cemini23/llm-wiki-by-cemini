@@ -10,6 +10,7 @@ related:
   - sources/cross-wiki-routed-briefs-2026-10-05.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-10-07.md
 read_status: read
 source_type: operator-triage
 maturity: validated

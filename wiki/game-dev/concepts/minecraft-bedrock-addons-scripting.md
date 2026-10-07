@@ -9,6 +9,7 @@ related:
   - entities/tools/blockbench.md
   - sources/minecraft-modding-deep-research-2026-10-05.md
   - entities/projects/castle-sim.md
+  - sources/k283-bedrock-addon-extracts-2026-10-06.md
 maturity: validated
 created: 2026-10-05
 updated: 2026-10-05

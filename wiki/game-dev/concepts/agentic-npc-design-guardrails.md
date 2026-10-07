@@ -18,6 +18,7 @@ related:
   - sources/arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30.md
   - sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md
   - concepts/minecraft-agent-harness-shelf.md
+  - sources/arxiv-2610.04261-social-deduction-rft-2026-10-07.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-09-24

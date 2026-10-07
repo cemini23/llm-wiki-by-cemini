@@ -24,6 +24,8 @@ related:
   - sources/arxiv-2609.21562-gamelogicbench-runtime-logic-2026-09-24.md
   - sources/arxiv-2609.34214-glyphbench-rl-playground-2026-09-30.md
   - sources/arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30.md
+  - sources/arxiv-2610.08215-learn2play-bench-experience-2026-10-07.md
+  - sources/arxiv-2610.08720-worldsolver-visual-fidelity-2026-10-07.md
 maturity: validated
 created: 2026-06-21
 updated: 2026-09-24

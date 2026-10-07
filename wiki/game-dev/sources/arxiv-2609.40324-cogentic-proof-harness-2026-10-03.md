@@ -10,6 +10,9 @@ related:
   - sources/arxiv-2609.31076-abstraction-ladder-code-skills-2026-09-30.md
   - sources/inbox-arxiv-reject-batch-2026-10-03.md
   - sources/arxiv-2610.01514-audit-rule-faithful-explanations-2026-10-03.md
+  - sources/arxiv-2610.04672-masbench-partial-observability-2026-10-07.md
+  - sources/arxiv-2610.08215-learn2play-bench-experience-2026-10-07.md
+  - sources/arxiv-2610.05041-mafia-communication-collective-inference-2026-10-07.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2609.40324

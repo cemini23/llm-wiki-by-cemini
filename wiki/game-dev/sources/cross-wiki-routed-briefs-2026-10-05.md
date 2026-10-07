@@ -10,6 +10,9 @@ related:
   - concepts/agent-harness-castle-project.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/k282-level-editors-tile-tooling-2026-10-05.md
+  - sources/k283-bedrock-addon-extracts-2026-10-06.md
+  - sources/arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06.md
 read_status: read
 source_type: operator-triage
 maturity: validated

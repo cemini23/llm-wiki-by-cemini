@@ -68,6 +68,7 @@ related:
   - sources/arxiv-2609.29228-bt-fsm-llm-conversion-2026-09-30.md
   - concepts/minecraft-modding-ecosystem.md
   - concepts/minecraft-data-driven-content-patterns.md
+  - sources/k282-level-editors-tile-tooling-2026-10-05.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-08-15

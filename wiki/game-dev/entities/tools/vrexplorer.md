@@ -9,6 +9,7 @@ related:
   - concepts/ai-game-dev-tool-stack-2026.md
   - entities/tools/godot-stagehand.md
   - entities/tools/godot-ai-playtest.md
+  - sources/arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06.md
 maturity: validated
 created: 2026-07-14
 updated: 2026-07-14

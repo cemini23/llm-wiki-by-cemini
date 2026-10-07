@@ -315,3 +315,13 @@ Catalog of all wiki pages. Updated on each ingest.
 | [arxiv-2610.03253-default-following-collective-action-2026-10-05](sources/arxiv-2610.03253-default-following-collective-action-2026-10-05.md) | read |
 | [inbox-arxiv-reject-batch-2026-10-05](sources/inbox-arxiv-reject-batch-2026-10-05.md) | read |
 | [cross-wiki-routed-briefs-2026-10-05](sources/cross-wiki-routed-briefs-2026-10-05.md) | read |
+| [arxiv-2610.04672-masbench-partial-observability-2026-10-07](sources/arxiv-2610.04672-masbench-partial-observability-2026-10-07.md) | read |
+| [arxiv-2610.08215-learn2play-bench-experience-2026-10-07](sources/arxiv-2610.08215-learn2play-bench-experience-2026-10-07.md) | read |
+| [arxiv-2610.05041-mafia-communication-collective-inference-2026-10-07](sources/arxiv-2610.05041-mafia-communication-collective-inference-2026-10-07.md) | read |
+| [arxiv-2610.08076-speedrunbench-strategy-formation-2026-10-07](sources/arxiv-2610.08076-speedrunbench-strategy-formation-2026-10-07.md) | read |
+| [arxiv-2610.04261-social-deduction-rft-2026-10-07](sources/arxiv-2610.04261-social-deduction-rft-2026-10-07.md) | read |
+| [arxiv-2610.08720-worldsolver-visual-fidelity-2026-10-07](sources/arxiv-2610.08720-worldsolver-visual-fidelity-2026-10-07.md) | read |
+| [inbox-arxiv-reject-batch-2026-10-07](sources/inbox-arxiv-reject-batch-2026-10-07.md) | read |
+| [k282-level-editors-tile-tooling-2026-10-05](sources/k282-level-editors-tile-tooling-2026-10-05.md) | read |
+| [k283-bedrock-addon-extracts-2026-10-06](sources/k283-bedrock-addon-extracts-2026-10-06.md) | read |
+| [arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06](sources/arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06.md) | read |

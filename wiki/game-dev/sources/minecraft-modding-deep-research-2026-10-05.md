@@ -12,6 +12,7 @@ related:
   - entities/tools/mineflayer.md
   - entities/tools/minecraft-agent-mcp-shelf.md
   - sources/minecraft-social-scan-2026-10-05.md
+  - sources/k283-bedrock-addon-extracts-2026-10-06.md
 read_status: read
 source_type: web-research-batch
 source_url: https://fabricmc.net/2025/10/31/obfuscation.html

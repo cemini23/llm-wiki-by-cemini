@@ -4,6 +4,20 @@ Append-only chronological log.
 
 ---
 
+## [2026-10-07] ingest | 6 arXiv PDFs (all ingested) + 3 incoming briefs + Phase-1 H7–H10
+
+- Inbox: 6 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-07.md + 6 source pages. **First all-ingest batch — 0 rejects.**
+- **Ingest:** MASBench (multi-agent collab under partial observability), Learn2Play (learning from experience), Mafia communication (collective inference), SpeedrunBench (strategy formation), social-deduction RFT (hidden-role fine-tuning), WorldSolver (solver generation + visual fidelity)
+- Phase-0: `BUPT-GAMMA/MASBench` **MIT** → CONDITIONAL-GO (STEAL-FROM in practice); no other repo resolves
+- Phase-1: **H7** keep the complete raw record (summaries underperform); **H8** re-validate inherited notes — 60 generations of notes scored below none (counterweight to H3); **H9** measure coordination cost; **H10** visual-fidelity check for 3D acceptance
+- Eval bench ladder extended with MASBench, Learn2Play, SpeedrunBench, WorldSolver
+- **Incoming briefs landed:** K282 level editors/tile tooling (`better-tile-editor` targets Godot 4.6+), K283 Bedrock add-on extracts (5 techniques + boundary gates), SPHERE VR scene routing (Ark 2610.02023, from image-gen)
+- Concepts touched: agent-harness, minecraft-agent-harness-shelf, minecraft-bedrock-addons-scripting, minecraft-data-driven-content-patterns, minecraft-modding-ecosystem, agentic-npc-design-guardrails, llm-npc-runtime-ai-shelf, game-ai-rl-augmentation-shelf, agentic-pcg-level-design, rts-pathfinding-approaches, godot-pathfinding-patterns
+- Entities touched: gamedevbench, vrexplorer, blockbench, castle-sim
+- Sweeps: @sweeps/2026-10-06-daily.md · @sweeps/2026-10-07-daily.md
+
+---
+
 ## [2026-10-05] ingest | 3 arXiv inbox + 4 cross-wiki briefs + Basgiath port brief
 
 - Inbox: 3 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-05.md + 2 source pages

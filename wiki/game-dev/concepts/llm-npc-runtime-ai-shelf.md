@@ -21,6 +21,7 @@ related:
   - sources/arxiv-2609.18935-long-lived-characters-local-inference-2026-09-19.md
   - sources/arxiv-2609.29837-pubg-ally-embodied-teammate-2026-09-30.md
   - sources/arxiv-2609.37853-anthrodial-social-npc-harness-2026-09-30.md
+  - sources/arxiv-2610.04261-social-deduction-rft-2026-10-07.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-09-19

@@ -22,6 +22,7 @@ related:
   - sources/arxiv-2607.15182-stigmergic-graph-memory-mapd-2026-08-15.md
   - entities/tools/binarytracking.md
   - concepts/godot-castle-sim-tool-gap-shelf.md
+  - sources/k282-level-editors-tile-tooling-2026-10-05.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-08-15

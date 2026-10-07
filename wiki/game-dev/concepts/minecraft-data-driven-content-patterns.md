@@ -10,6 +10,8 @@ related:
   - concepts/stronghold-2-production-buildings.md
   - entities/projects/castle-sim.md
   - sources/minecraft-modding-deep-research-2026-10-05.md
+  - sources/k282-level-editors-tile-tooling-2026-10-05.md
+  - sources/arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06.md
 maturity: validated
 created: 2026-10-05
 updated: 2026-10-05

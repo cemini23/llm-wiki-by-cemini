@@ -19,6 +19,8 @@ related:
   - sources/arxiv-2609.34342-sage-strategic-reasoning-2026-09-30.md
   - sources/arxiv-2609.37658-enterprisebench-strategic-agents-2026-09-30.md
   - sources/arxiv-2610.03695-queen-chess-explains-moves-2026-10-05.md
+  - sources/arxiv-2610.08076-speedrunbench-strategy-formation-2026-10-07.md
+  - sources/arxiv-2610.04261-social-deduction-rft-2026-10-07.md
 maturity: validated
 created: 2026-06-20
 updated: 2026-06-30

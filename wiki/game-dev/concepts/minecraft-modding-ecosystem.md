@@ -12,6 +12,7 @@ related:
   - sources/minecraft-social-scan-2026-10-05.md
   - entities/projects/castle-sim.md
   - concepts/scope-tiers.md
+  - sources/k283-bedrock-addon-extracts-2026-10-06.md
 maturity: validated
 created: 2026-10-05
 updated: 2026-10-05
