@@ -7,6 +7,32 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K284 ingest (2026-10-07)
+OSINT K284: **17 inbox files → 17 source pages + 3 hubs**. Two eval docx (39 URLs — design/UI registries, and agent tooling / local inference / creative suites; **7 Integrate · 13 Extract · 3 Watch · 10 Context · 5 Pass**), 8 arXiv papers (1 quant, 2 game-theory, 5 agent), 7 feeds. **Zero dead links this batch** — unlike K281–K283 (6–7 each); the one docx error is a **false negative** (`pingdotgg/ts-rust` rated 404, actually alive at 159★/MIT). Headline: the **`storytold` "ArtCraft" suite** — seven active **Apache-2.0** pure-Rust clean-room Adobe replacements → an **offline Atto document pipeline** (enhance scans → typeset monograph → bind PDF), client PII local. **`Niko1221/Strata`** (MIT, 16.5k★) runs a **125B-MoE locally**. Design registries (Refero Styles, 21st.dev) hand coding agents a **design contract** via MCP. arXiv: **BluffJAX** (MIT CFR, ~2e7 samples/s), **VeriFine** (judge–human 0.53→0.82). Feeds: **agent PRs exceeded human PRs on GitHub in Aug 2026**; **CFTC proposes CTX/CAM**; WuBlock miner-to-AI pivot. **FILE only. No install. Zero clones. No Integrate GO requiring install.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k284-eval](concepts/k284-eval-wave.md) | 2 docx, 39 rows; design registries + creative suite | draft |
+| [k284-arxiv](concepts/k284-arxiv-wave.md) | CGMY solver, poker CFR, agent memory/verification | draft |
+| [k284-feeds](concepts/k284-feeds-wave.md) | Agent PRs > human; CFTC crypto; miner-to-AI | draft |
+| [eval-developer-resource](sources/eval-developer-resource-2026-10-07.md) | 20 rows; design registries; ts-rust false negative | draft |
+| [eval-url-revenue](sources/eval-url-revenue-opportunity-2026-10-07.md) | 19 rows; ArtCraft suite + Strata | draft |
+| [cgmy-bspline](sources/arxiv-2610.07554-bspline-galerkin-cgmy-2026-10-07.md) | B-spline Galerkin CGMY pricing; IV RMSE 2.47 vp | draft |
+| [bluffjax](sources/arxiv-2610.07686-bluffjax-2026-10-07.md) | JAX imperfect-info games; CFR; ~2e7 samples/s | draft |
+| [recursive-game-creator](sources/arxiv-2610.08621-recursive-game-creator-2026-10-07.md) | Coding-native player; GameCraft-Bench +5.19 | draft |
+| [in-parameter-memory](sources/arxiv-2610.08630-in-parameter-memory-survey-2026-10-07.md) | IPM survey; taxonomy + scope rule | draft |
+| [worldsolver](sources/arxiv-2610.08720-worldsolver-2026-10-07.md) | Physics-solver benchmark; GPT-5.6-Sol 48.7% | draft |
+| [compaction-harm](sources/arxiv-2610.08722-compaction-harm-prediction-2026-10-07.md) | History weakly predicts compaction harm | draft |
+| [verifine](sources/arxiv-2610.08761-verifine-2026-10-07.md) | Judge co-evolves; judge–human 0.53→0.82 | draft |
+| [slow-fictitious-play](sources/arxiv-2610.08768-slow-fictitious-play-2026-10-07.md) | FP converges arbitrarily slowly; vs Karlin | draft |
+| [latent-space-math](sources/substack-rss-latent-space-2026-10-07-quasi-riemann-openai-math.md) | OpenAI 722 math papers; CIAware; METR | draft |
+| [pragmatic-engineer](sources/substack-rss-pragmatic-engineer-2026-10-06-state-of-tech-2026.md) | Agent PRs > human; code-review theater | draft |
+| [eh-kalshi-election](sources/substack-rss-event-horizon-2026-10-07-kalshi-election-push.md) | CFTC CTX/CAM; Connecticut withdrawals | draft |
+| [klement-ai-profit](sources/substack-rss-klement-2026-10-07-ai-labs-profit.md) | Anthropic: rev $4.6B, compute $7.3B | draft |
+| [klement-europe-war](sources/substack-rss-klement-2026-10-07-europe-war-readiness.md) | Europe defence-readiness index | draft |
+| [secpro-cyber-ai](sources/substack-rss-secpro-2026-10-07-cyber-ai-newsletter.md) | Cyber_AI newsletter launch (no content) | draft |
+| [wublock-mining](sources/substack-rss-wublock-2026-10-07-september-mining.md) | Miner-to-AI pivot; hashprice record low | draft |
+
 ### K283 ingest (2026-10-06)
 OSINT K283: **16 inbox files → 16 source pages + 3 hubs**. Two eval docx (40 URLs — dev tools/agent harnesses/local RAG, and the Bedrock ecosystem; **1 Integrate · 15 Extract · 2 Watch · 13 Context · 9 Pass**), 8 arXiv papers (4 quant/math, 4 agent-tooling), 6 feeds. **First product Integrate GO in four waves: `lfnovo/open-notebook`** — MIT, self-hosted multi-modal RAG (a private NotebookLM), verified 2026-10-06 at ~39.9k stars; the Atto-side play is page-cited Q&A over municipal registry PDFs with **local-only** inference. **Eval-quality: `NOT FOUND` metadata on 34 of 40 rows**, and the Bedrock docx names a Java-Edition proxy (`Void`) for a Bedrock target — the recurring goal-match/stack-mismatch. Basgiath row: in-game roleplay currency, JSON UI easing, lore items, schema migration. CCC: cached agentic test replay (`tester-army/e2e`) + the Ralph loop. GuruWatcher: detached workers + per-key locks. Vol: **VIX splits into probability × severity; severity is 91.5% of the recession premium**. Cyber: **CLIFT** self-verification (**+11.3 pp at K=4, zero training**) + the **MemTensor agent-memory supply-chain** compromise. **FILE only. No install. Zero clones.**
 

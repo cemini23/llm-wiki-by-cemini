@@ -11,9 +11,12 @@ related:
   - concepts/k283-arxiv-wave.md
   - entities/tools/t-search.md
   - entities/tools/tester-army-e2e.md
+  - sources/arxiv-2610.08761-verifine-2026-10-07.md
+  - sources/arxiv-2610.08720-worldsolver-2026-10-07.md
+  - concepts/k284-arxiv-wave.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-06
+updated: 2026-10-07
 ---
 
 ## Relations
@@ -39,3 +42,9 @@ Three K283 papers extend this thread:
 - **T-Search (@sources/arxiv-2610.06782-t-search-agentic-retriever-2026-10-06.md).** Return **ranked evidence chunks with reasons, not answers** — so the verifier and the generator stay swappable. Apache-2.0.
 
 Pattern across all three: **verification is cheaper and more reliable when it is external, certified, and separate from the generator.**
+
+## K284 additions — a judge that co-evolves (2026-10-07)
+
+**VeriFine (@sources/arxiv-2610.08761-verifine-2026-10-07.md).** A reference-free **rubric judge** `Jϕt` diagnoses failures; an adaptive curriculum selects what to train on; GRPO optimises `R(θ) = E[sᵢ − β·D_KL(πθ‖πref)]`. The new part is the **Judge Improvement Loop** — on a plateau (detected by `G_t = |ΔRjudge_t − ΔP_t|`) it **coactively calibrates the judge on informative failures**. Results: driving reasoning **60.56→71.61**, and **judge–human Pearson 0.53→0.82**.
+
+The contrast with CLIFT is instructive: CLIFT makes the verifier **judge-free and certified**; VeriFine makes the judge **better with scale**. Both agree that the verifier is a **first-class object**, not a fixed oracle.

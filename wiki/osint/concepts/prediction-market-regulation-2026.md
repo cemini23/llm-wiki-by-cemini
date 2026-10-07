@@ -22,9 +22,11 @@ related:
   - sources/substack-rss-event-horizon-2026-08-21-johnson-prediction-markets.md
   - sources/substack-rss-event-horizon-2026-10-06-religion-prediction-markets.md
   - concepts/k283-feeds-wave.md
+  - sources/substack-rss-event-horizon-2026-10-07-kalshi-election-push.md
+  - concepts/k284-feeds-wave.md
 maturity: draft
 created: 2026-08-12
-updated: 2026-10-06
+updated: 2026-10-07
 ---
 
 ## Relations
@@ -76,3 +78,5 @@ Net for pm-bot ops: retail-facing incentive/marketing programs are now a regulat
 **Adjacent (not event contracts):** GTA 6 cashout rumors are a FinCEN CVC / money-transmitter question, not a Kalshi/Polymarket DCM product. Licensed event contracts do not repeal FIN-2013-G001. See `@concepts/gta6-convertible-currency-thesis.md`.
 
 **K283 — Ohio cease-and-desist ×10, CFTC perpetuals no-action (2026-10-06).** Two hard regulatory events. (1) **Ohio** sent cease-and-desist letters to **10 prediction platforms** — Coinbase, Gemini Titan, MooMoo Financial, Novig, Plus500US, Polymarket, Prophet X, Robinhood Derivatives, Underdog Predict, WeBull Financial — giving 14 days to respond and shutter, one week after the **Sixth Circuit** let Ohio enforce its gambling rules against Kalshi. The Ohio letter to Polymarket explicitly calls its event contracts "online sports gaming." (2) The **CFTC** Division of Market Oversight issued a **no-action letter** letting DCMs convert perpetual-*style* broad-based security index futures into **true perpetuals** (remove expiry), subject to customer-protection conditions; the position **expires 2026-10-20**. Kalshi separately won approval for **S&P 500 perpetual futures**. Also: a House bill would bar federal candidates from trading markets on their own elections; Kalshi argues in the Second Circuit that the CEA pre-empted state law in a 1981 "Potato War" case. Kalshi set a record **$3.68 B** Sunday volume, ~76% of the weekend's $9.37 B across venues. **Awareness only — no pm scp.** [Source: @sources/substack-rss-event-horizon-2026-10-06-religion-prediction-markets.md]
+
+**K284 — CFTC proposes CTX/CAM; Connecticut withdrawals (2026-10-07).** After the Senate failed to advance the CLARITY Act, the **CFTC proposed Regulation Crypto Asset Transactions (CTX)** and **Regulation Crypto Asset Markets (CAM)** via an **ANPRM** (comments due within 60 days). Registration is **optional** — the CFTC cannot compel it without Congress — but registered venues may offer **retail margin/leverage**, which state-licensed venues cannot. Separately, **Connecticut** saw **ProphetX, Gemini, and Webull withdraw**; the DCP is in contact with six more (Polymarket, Coinbase, Crypto.com, Robinhood, Novig, Underdog). Also: **Kalshi US 500 index perpetual futures** launched; **Kalshi offered to cap its affiliate desk at 5% of quarterly volume** during the CFTC conflict-of-interest comment period; **Polymarket Protocol V2** (smart-contract rebuild); **EDGE Markets** announced **agentic capital allocation** — pre-authorised agents with capital limits. **Awareness only — no pm scp.** [Source: @sources/substack-rss-event-horizon-2026-10-07-kalshi-election-push.md]

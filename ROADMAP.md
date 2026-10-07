@@ -30,6 +30,18 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-07 — K284 ingest)
+
+- **K284 ingest** — 17 inbox files → 17 source pages + 3 hubs. Two eval docx (39 rows), 8 arXiv papers, 7 feeds. **Zero clones. No install. 0 install-required Integrate GO.**
+- **Design registries (docx A).** `Refero Styles` + `21st.dev` + `uiverse.io` — MCP connectors that give coding agents a **design contract** (`DESIGN.md` tokens + a shadcn registry). **MCP install = human-gated.**
+- **The `storytold` ArtCraft suite (docx B) — the headline.** Seven active, **Apache-2.0**, pure-Rust clean-room Adobe replacements. **Offline Atto document pipeline** (enhance scans → typeset monograph → bind PDF), client PII local. Plus **`Strata`** (MIT, 16.5k★) for local **125B-MoE** inference.
+- **Phase-0 inverted the recent pattern.** **All 19 repos alive — zero dead links** (K281–K283 each had 6–7). One docx **false negative**: `ts-rust` rated 404, actually alive. Two licence corrections: **`treg` NOASSERTION**; `storytold` Apache-2.0.
+- **Industry signal.** **Agent-authored PRs exceeded human-authored on GitHub in Aug 2026**, and human code review has degraded to **LGTM theater** — the empirical case for the **audit-the-change-set** doctrine. **No `/route` swap.**
+- **PM:** **CFTC proposes CTX/CAM** (optional registration, but retail margin); **Connecticut: ProphetX/Gemini/Webull withdrew**. **No pm scp.**
+- **Poker lane:** **BluffJAX** (MIT, JIT-CFR, ~2e7 samples/s) — a usable GPU-accelerated imperfect-information RL environment.
+- **Open (not started):** K284 briefs staged, sibling copies pending (Terminal panel); Basgiath bug-fix/GameTest/bench track (separate repo); Java-port prompt written (Basgiath, public release). Cadences still due: wiki gap detect, HL funding, Kalshi LP, cross-venue, equity signal.
+- **Boundary:** no xsp/pm scp, no LIVE Discord, no `/route` swap.
+
 ## Current state (2026-10-06 — K283 ingest)
 
 - **K283 ingest** — 16 inbox files → 16 source pages + 3 hubs. Two eval docx (40 rows), 8 arXiv papers, 6 feeds. **Zero clones. No install. 1 product Integrate GO (human-gated).**

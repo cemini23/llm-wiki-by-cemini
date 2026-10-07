@@ -10,9 +10,11 @@ related:
   - sources/substack-rss-addy-osmani-2026-08-08-agentic-code-quality.md
   - concepts/code-as-agent-harness.md
   - entities/tools/pi-earendil.md
+  - sources/substack-rss-pragmatic-engineer-2026-10-06-state-of-tech-2026.md
+  - concepts/k284-feeds-wave.md
 maturity: draft
 created: 2026-08-08
-updated: 2026-08-10
+updated: 2026-10-07
 ---
 
 ## Relations
@@ -33,3 +35,7 @@ Osmani 2026-08-08: agent throughput forces quality into harness constraints.
 Prefer deterministic gates (tests, mutation, lint, security, architecture rules) with continuous back-pressure; escalate humans only when gates break. Aligns with Cemini skill-audit / pre-commit / CI as production boundary.
 
 [Source: https://addyo.substack.com/p/agentic-code-quality]
+
+## K284 — code-review theater is the failure this page guards against (2026-10-07)
+
+The Pragmatic Engineer's 2026 snapshot reports the mechanism this page exists to prevent: **"everyone is playing the theater of doing reviews … just stamp everything with LGTM."** Volume of agent PRs rose ~9× in eight months and **exceeded human PRs in August 2026**; humans cannot read that much, so human review degrades to a stamp. The response is not "review harder" — it is the **deterministic gate**: tests, mutation, lint, security, architecture rules, with continuous back-pressure. It also reports **quality/reliability down** and **agent-only PR reviews rising**. [Source: @sources/substack-rss-pragmatic-engineer-2026-10-06-state-of-tech-2026.md]

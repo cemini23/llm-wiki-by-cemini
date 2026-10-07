@@ -383,6 +383,19 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K284 — 2026-10-07
+Dual-ID: **OSINT K284**. FILE and HITL only. **0 product Integrate GO — design/tooling leads only.**
+- **Two eval docx, 39 URLs** — design/UI registries (docx A) + agent tooling / local inference / creative suite (docx B). **Zero dead links this batch** (K281–K283 each had 6–7). The one docx error is a **false negative**: `pingdotgg/ts-rust` was rated UNAVAILABLE/404 but is alive (159★, MIT).
+- **Design-registry MCPs (docx A Integrate).** `styles.refero.design` (DESIGN.md tokens) + `21st.dev` (shadcn registry) + `uiverse.io` (CSS controls). Gap they close: agent-written frontends drift without a design contract. **MCP install = human-gated. No install.**
+- **`storytold` ArtCraft suite (docx B Integrate).** Seven active, **Apache-2.0**, pure-Rust clean-room Adobe replacements (photocraft 12.7k★, filmcraft, lightcraft, printcraft, vectorcraft, effectcraft, designcraft). Atto document pipeline: enhance scans → typeset monograph → bind PDF. **Client PII stays local (`~/AttoVault/`); use `--automation-read-root`/`--automation-write-root` boundaries; no client data to cloud.**
+- **`Niko1221/Strata` (Integrate).** **MIT**, 16.5k★, local **125B-MoE** on consumer hardware, localhost OpenAI/Anthropic endpoint. Local abliterated lab + Atto air-gapped parsing. **35–55 GB RAM lock; NVMe required. No client PII to cloud.**
+- **Extract.** `monid` (MIT — GuruWatcher metering), `upleft` (**6★ — read the idea, not a dependency**), `vectorcraft`, `lightcraft`, `treg` (**NOASSERTION — read the additional terms before any Basgiath wiring**).
+- **Watch.** `incredible.one` (desktop computer-use), `effectcraft`/`filmcraft` (Basgiath trailers/clips).
+- **Pass (no code recorded):** `omarchy-apple-dev` + four **PS5 homebrew emulators** (`PS5_RetroArch`, `ProsperoEden`, `PS5X360`, `PS5SX2`). Legal/scope.
+- **arXiv (8).** Quant: CGMY B-spline Galerkin (**no trade, no scp**). Poker: **BluffJAX (MIT, CFR, ~2e7 samples/s)**, slow fictitious play. Agents: Recursive Game Creator (coding-native player), WorldSolver, compaction (modest/bounded), **VeriFine** (judge co-evolves; judge–human 0.53→0.82), IPM survey.
+- **Feeds.** Pragmatic Engineer — **agent PRs > human PRs Aug 2026; code-review theater** (see @concepts/agentic-code-quality-gates.md). Latent Space — OpenAI 722 math papers; **CIAware** monitor-awareness + **METR** transcript-as-untrusted. Event Horizon — **CFTC CTX/CAM** + Connecticut withdrawals (**no pm scp**). WuBlock — miner-to-AI pivot (**no xsp scp**).
+- **Verify:** `bash scripts/adopt_k284_phase1.sh`. **No install. No LIVE Discord. No xsp/pm scp.**
+
 ## OSINT K283 — 2026-10-06
 Dual-ID: **OSINT K283**. FILE and HITL only. **1 product Integrate GO (`open-notebook`), human-gated.**
 - **Two eval docx, 40 URLs** — dev tools / agent harnesses / local RAG (docx A) + Bedrock ecosystem / server tooling (docx B). `NOT FOUND` metadata on **34 of 40 rows**; docx B lists a duplicate URL. Third generated-looking URL list in four days (K281 7/20 dead, K282 6/20 dead). **Score the technique the row names; do not trust the row's metrics.**
