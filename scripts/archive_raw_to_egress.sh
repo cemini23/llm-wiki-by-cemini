@@ -24,6 +24,13 @@ REMOTE_BASE="${CEMINI_EGRESS_BULK:-/opt/cemini-bulk/research}"
 KEEP_LOCAL=0
 WIKI_ID=""
 
+# Tailnet keepalive (added 2026-10-08). The egress host is reached over
+# Tailscale, and an idle link can go quiet mid-transfer — which makes scp sit
+# on a dead connection until the TCP timeout, so the caller's loop dies with no
+# FAILED line and a half-written remote file. 15s x 4 = fail in ~60s instead.
+# Applied to every ssh/scp here, not just the transfer.
+SSH_OPTS=(-o ServerAliveInterval=15 -o ServerAliveCountMax=4)
+
 usage() {
   cat <<'EOF'
 Usage: archive_raw_to_egress.sh --wiki-id <id> <local-file> [--keep-local]
@@ -95,7 +102,7 @@ REMOTE_PATH="${REMOTE_DIR}/${BASENAME}"
 # --- tailnet preflight (added 2026-10-01) -------------------------------
 # The egress host is Tailscale-only; public SSH is UFW-closed. Without this,
 # an unreachable host makes each file hang on its own SSH timeout.
-if ! ssh -o ConnectTimeout=8 -o BatchMode=yes "$EGRESS_HOST" true 2>/dev/null; then
+if ! ssh "${SSH_OPTS[@]}" -o ConnectTimeout=8 -o BatchMode=yes "$EGRESS_HOST" true 2>/dev/null; then
   echo "ERROR: cannot reach ${EGRESS_HOST} (tailnet down?)" >&2
   echo "  Check: tailscale status   (expect 100.76.73.113 cemi-egress-fi)" >&2
   echo "  Do NOT reopen public SSH as a workaround; bring the tailnet up." >&2
@@ -103,13 +110,13 @@ if ! ssh -o ConnectTimeout=8 -o BatchMode=yes "$EGRESS_HOST" true 2>/dev/null; t
 fi
 
 echo "==> Ensure ${EGRESS_HOST}:${REMOTE_DIR}"
-ssh "$EGRESS_HOST" "mkdir -p '${REMOTE_DIR}'"
+ssh "${SSH_OPTS[@]}" "$EGRESS_HOST" "mkdir -p '${REMOTE_DIR}'"
 
 echo "==> scp ${LOCAL_FILE} → ${EGRESS_HOST}:${REMOTE_PATH}"
-scp "$LOCAL_FILE" "${EGRESS_HOST}:${REMOTE_PATH}"
+scp "${SSH_OPTS[@]}" "$LOCAL_FILE" "${EGRESS_HOST}:${REMOTE_PATH}"
 
 echo "==> verify remote size"
-REMOTE_SIZE="$(ssh "$EGRESS_HOST" "stat -c%s '${REMOTE_PATH}' 2>/dev/null || stat -f%z '${REMOTE_PATH}'")"
+REMOTE_SIZE="$(ssh "${SSH_OPTS[@]}" "$EGRESS_HOST" "stat -c%s '${REMOTE_PATH}' 2>/dev/null || stat -f%z '${REMOTE_PATH}'")"
 LOCAL_SIZE="$(stat -c%s "$LOCAL_FILE" 2>/dev/null || stat -f%z "$LOCAL_FILE")"
 if [[ "$REMOTE_SIZE" != "$LOCAL_SIZE" ]]; then
   echo "archive_raw_to_egress: size mismatch local=${LOCAL_SIZE} remote=${REMOTE_SIZE}" >&2
