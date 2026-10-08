@@ -1,3 +1,11 @@
+## [2026-10-08] report | War Is Coming. Here Is How to Profit. (rearmament defense growth)
+
+- **Pack:** `reports/research/pack-rearmament-war-profit-20261008/` (untracked). Desk note `thesis.md`, PDF on the Desktop. SEO handoff `../SEO:GEO B&M Business/briefs/2026-10-08_rearmament-war-profit-outlier.md` + `wiki/concepts/rearmament-war-profit-outlier-notes.md`.
+- **Trigger:** Marco Rubio Athens speech 7 Oct 2026 (`@SecRubio` 2107934022286385228) + the quote tweet by `@crypto_condom` framing it as an investment strategy.
+- **Thesis:** FY2027 request $1.45T; missile and munitions pool about $95B (CRS: about $52.9B to the named programs); Patriot stockpile down about 65 to 67 percent; a reported 2027 Russia Article 5 window. Eight growth names: LHX, MRCY, MP (inputs) and AVAV, KTOS, RCAT, ONDS, UMAC (drones). Hold the floor, LEAPS on the larger names, speculative equity on the micro-caps.
+- **Audit:** independent fact-check + nine-model OpenRouter audit, about $1.27. Corrections applied to the munitions percentage, market caps, an award qualification, a probe description, and causality.
+- **Wiki:** `concepts/rearmament-defense-growth-thesis.md` + `sources/rearmament-war-profit-desk-2026-10-08.md`. Outlier article pending operator GO.
+
 ## [2026-10-08] ingest | K286 — X post @savipww (typed-judgement desk)
 
 - **Source:** X Article `@savipww` — *"Megabrain (Jev) & Six Grok Bots That Already Made Me Six Figures (Setup Guide)"* (2026-09-23), read with **`opencli twitter article 2102720919185617314`**.

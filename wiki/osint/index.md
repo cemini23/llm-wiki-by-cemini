@@ -7,6 +7,12 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### Report (2026-10-08) — rearmament defense growth
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [rearmament-war-profit-desk-2026-10-08](sources/rearmament-war-profit-desk-2026-10-08.md) | Rubio Athens signal; FY2027 budget; depleted Patriot stockpile; eight growth names | draft |
+
 ### K286 ingest (2026-10-08) — X post @savipww
 OSINT K286: **1 X post → 1 source page + 1 concept**. `@savipww` *"Megabrain (Jev) & Six Grok Bots That Already Made Me Six Figures"* — a **typed-judgement desk**: a typed decision engine (**Jev**) answers `noul` / `choice` / `score` questions, so the agent seats stop judging in prose and only fill. "Code fetches, the model judges, code decides." ~**6¢/day**. The reusable pattern is [typed-judgement-desk](concepts/typed-judgement-desk-pattern.md). **Key finding: we hold both halves — Jev live on the laptop and 19 Grok Bot charters — and they are not connected; no charter mentions Jev.** The trading half is out of bounds (no trading egress from the Bot VM). **FILE only.** Also confirms **Rapid-MLX is Apache-2.0** (K285 licence flag resolved).
 
@@ -4055,6 +4061,10 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 ## Concepts
 
 Topics, theses, methodologies, strategies — ideas the research examines.
+
+### Desk pack (2026-10-08) — rearmament defense growth
+
+- [Rearmament defense growth thesis](concepts/rearmament-defense-growth-thesis.md) — FY2027 rebuild funds interceptors and drones; growth in the sub-tier and drone complex; eight names — concept, defense, rearmament, munitions, drones
 
 ### Desk pack ingest (2026-09-04)
 
