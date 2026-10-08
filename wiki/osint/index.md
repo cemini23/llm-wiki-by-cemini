@@ -7,6 +7,27 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K285 ingest (2026-10-08)
+OSINT K285: **12 inbox files → 12 source pages + 3 hubs**. One eval docx (20 URLs — reverse engineering, local inference, agent orchestration, graphics pipelines, toolchain; **1 Integrate · 5 Extract · 1 Watch · 10 Context · 3 Pass**), 8 arXiv papers (1 quant, 3 safety/eval, 3 agent-harness, 1 robotics), 3 feeds. **Zero dead links — the second consecutive all-real batch.** Integrate lead: **`Rapid-MLX`** — local Apple Silicon MLX inference (**licence NOASSERTION**, confirm). Extract: **`rea`** (MCP Hopper decompilation; was Pass in K283 → Extract), **`artcraft`** (3D staging before generative video → Basgiath), **`syntaqlite`**, `validate-pyproject-schema-store`, `background-agents`. arXiv through-line: **the harness and the local metric beat the headline number** — CoTrace (harness-tuned agents do not transfer), **PatchBench** (MMLU flat while local regression is severe), Before-They-Can-Solve (bounded benchmarks anti-correlate, HumanEval ρ=−0.394), **SLDR** (repair two layers; HS 11.54→0.08). Feeds: **Sam Newman — "LLMs are not world models," so guardrails are not the long-term answer**; Stacklok/Mecatl cloud-native harness; Moontower Kelly worked example. **FILE only. No install. No clone. No `/route` swap.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k285-eval](concepts/k285-eval-wave.md) | 20 rows; Rapid-MLX Integrate; rea Extract | draft |
+| [k285-arxiv](concepts/k285-arxiv-wave.md) | Harness co-evolution, safety repair, OCR | draft |
+| [k285-feeds](concepts/k285-feeds-wave.md) | Cloud harness, resilience, options sizing | draft |
+| [eval-github-repository](sources/eval-github-repository-revenue-2026-10-08.md) | 20 rows; all-real; licence flags | draft |
+| [moontower-vibey](sources/substack-rss-moontower-2026-10-07-vibey-vs-discrete-trades.md) | Options-as-surgical-tools; Kelly worked example | draft |
+| [stacklok-mecatl](sources/newsletter-rss-latent-space-2026-10-07-cloud-native-harness.md) | Cloud-native harness; loop separated from execution | draft |
+| [sam-newman-resilience](sources/newsletter-rss-pragmatic-engineer-2026-10-07-sam-newman-resilience.md) | Resilience; LLMs are not world models | draft |
+| [risk-averse-mfg](sources/arxiv-2610.09244-risk-averse-mp-mfg-2026-10-08.md) | Risk-averse multi-population mean-field games | draft |
+| [inscriptionocr](sources/arxiv-2610.09439-inscriptionocr-2026-10-08.md) | Brahmi OCR + Prakrit NMT; CC BY-NC | draft |
+| [patchbench](sources/arxiv-2610.10276-patchbench-2026-10-08.md) | Patching collateral damage; MMLU blind | draft |
+| [tpd](sources/arxiv-2610.10332-task-progress-distillation-2026-10-08.md) | Stage-scored small agents; +19.7 pp | draft |
+| [sldr](sources/arxiv-2610.10345-sldr-2026-10-08.md) | Malicious fine-tuning repair; HS 11.54→0.08 | draft |
+| [cotrace](sources/arxiv-2610.10426-cotrace-2026-10-08.md) | Harness–model co-evolution; no transfer | draft |
+| [base-model-screening](sources/arxiv-2610.10478-base-model-screening-2026-10-08.md) | Decisive-step screening; ρ 0.964 | draft |
+| [embodiedrsi](sources/arxiv-2610.10498-embodiedrsi-2026-10-08.md) | Value-of-Information active learning | draft |
+
 ### K284 ingest (2026-10-07)
 OSINT K284: **17 inbox files → 17 source pages + 3 hubs**. Two eval docx (39 URLs — design/UI registries, and agent tooling / local inference / creative suites; **7 Integrate · 13 Extract · 3 Watch · 10 Context · 5 Pass**), 8 arXiv papers (1 quant, 2 game-theory, 5 agent), 7 feeds. **Zero dead links this batch** — unlike K281–K283 (6–7 each); the one docx error is a **false negative** (`pingdotgg/ts-rust` rated 404, actually alive at 159★/MIT). Headline: the **`storytold` "ArtCraft" suite** — seven active **Apache-2.0** pure-Rust clean-room Adobe replacements → an **offline Atto document pipeline** (enhance scans → typeset monograph → bind PDF), client PII local. **`Niko1221/Strata`** (MIT, 16.5k★) runs a **125B-MoE locally**. Design registries (Refero Styles, 21st.dev) hand coding agents a **design contract** via MCP. arXiv: **BluffJAX** (MIT CFR, ~2e7 samples/s), **VeriFine** (judge–human 0.53→0.82). Feeds: **agent PRs exceeded human PRs on GitHub in Aug 2026**; **CFTC proposes CTX/CAM**; WuBlock miner-to-AI pivot. **FILE only. No install. Zero clones. No Integrate GO requiring install.**
 

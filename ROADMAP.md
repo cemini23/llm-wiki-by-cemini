@@ -30,6 +30,18 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-08 — K285 ingest)
+
+- **K285 ingest** — 12 inbox files → 12 source pages + 3 hubs. One eval docx (20 rows), 8 arXiv papers, 3 feeds. **Zero clones. No install. 1 Integrate lead.**
+- **Local inference is now a two-wave pattern.** `Strata` (K284) and **`Rapid-MLX`** (K285) — the wiki's most consistently-recurring Integrate lane. Rapid-MLX gives an OpenAI/Anthropic-shaped **localhost endpoint on Apple Silicon**. ⚠ **Licence NOASSERTION — confirm.**
+- **`rea`** (MCP Hopper decompilation, **MIT**, 19,363★) — **Pass in K283 → Extract**. Authorized-lab only.
+- **Basgiath row:** `artcraft` 3D staging before generative video → promo clips. Delivered as a **brief** in `dragon-rider-map/briefs/` (prompts are one-shot — LESSONS 2026-10-08).
+- **Phase-0, second consecutive clean batch.** All 20 repos alive, **zero 404** (K284 clean too; K281–K283 had 6–7 each). Licence flags on Rapid-MLX, artcraft, worldmonitor (AGPL), AnyPS5 (GPL).
+- **The arXiv through-line:** the harness and the local metric beat the headline number — CoTrace (no cross-harness transfer), PatchBench (MMLU blind to local damage), Before-They-Can-Solve (bounded benchmarks anti-correlate), SLDR (two-layer repair).
+- **Sam Newman (the sharpest framing yet):** **LLMs are not world models, so guardrails are not the long-term answer** — mechanism-level support for the deterministic-gate doctrine.
+- **Open (not started):** K285 briefs staged, sibling copies pending (Terminal panel); Basgiath bug-fix/GameTest/bench track; Java-port built and published (done by operator). Cadences still due: wiki gap detect, HL funding, Kalshi LP, cross-venue, equity signal.
+- **Boundary:** no xsp/pm scp, no LIVE Discord, no `/route` swap.
+
 ## Current state (2026-10-07 — K284 ingest)
 
 - **K284 ingest** — 17 inbox files → 17 source pages + 3 hubs. Two eval docx (39 rows), 8 arXiv papers, 7 feeds. **Zero clones. No install. 0 install-required Integrate GO.**

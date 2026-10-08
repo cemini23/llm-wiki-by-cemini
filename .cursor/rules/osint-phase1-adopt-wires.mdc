@@ -383,6 +383,19 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K285 — 2026-10-08
+Dual-ID: **OSINT K285**. FILE and HITL only. **1 Integrate lead (Rapid-MLX), licence unconfirmed.**
+- **One eval docx, 20 URLs** (reverse engineering, local inference, agent orchestration, graphics pipelines, toolchain). **1 Integrate · 5 Extract · 1 Watch · 10 Context · 3 Pass.** **Zero dead links — second consecutive all-real batch** (K284 also clean; K281–K283 had 6–7 each).
+- **`raullenchai/Rapid-MLX` (Integrate)** — local **Apple Silicon MLX** inference server, OpenAI/Anthropic-compatible endpoint, 3,941★. Atto zero-PII parsing + local lab. ⚠ **Licence NOASSERTION** at the API though the description claims Apache-2.0 — **confirm before wiring.** Needs Apple Silicon + MLX weights. Pairs with K284 `Strata` (two local-inference Integrates in two waves).
+- **`morluto/rea` (Extract, 19,363★, MIT)** — MCP-based **Hopper decompilation + tracing**. **Was Pass in K283 → Extract now.** **Authorized scope only. No PoC.**
+- **`storytold/artcraft` (Extract)** — 3D staging before generative video → **Basgiath clips**. ⚠ **NOASSERTION** (the K284 `storytold` apps were Apache-2.0). RunPod only.
+- **`LalitMaganti/syntaqlite` (Extract, Apache-2.0)** — SQLite static linting for Atto vault tables / GuruWatcher ledgers. **`henryiii/validate-pyproject-schema-store` (Extract, 8★)** — daily SchemaStore mirror. **`ColeMurray/background-agents` (Extract, MIT)** — sandboxed sub-tasks; single-tenant.
+- **Watch:** `koala73/worldmonitor` (**88,036★, AGPL-3.0**) — headless path only, as a Polymarket-LP circuit-breaker. **No pm scp.**
+- **Pass:** `fluffychat` (AGPL), `pi-extensions`, `react-native-skia`. **`AnyPS5` is GPL-2.0** — Pass in K283, Context now; do not adopt.
+- **arXiv (8).** Quant: risk-averse multi-population MFG (**no trade, no scp**). OCR: `InscriptionOCR` (Brahmi, **CC BY-NC** — research only). Safety: **PatchBench** (MMLU flat while BNPS −26.3), **SLDR** (repair 2 layers; HS 11.54→0.08). Agents: **CoTrace** (harness-tuned agents do not transfer; **no `/route` swap**), **TPD** (stage-scoring, +19.7 pp at 200 demos), **Before-They-Can-Solve** (HumanEval ρ=−0.394), **EmbodiedRSI** (Value-of-Information).
+- **Feeds.** Stacklok/Mecatl — separate the agent loop from execution and state (**no `/route` swap**). Sam Newman — **LLMs are not world models → guardrails are not the long-term answer**; module boundaries first. Moontower — options-as-surgical-tools Kelly worked example (**no xsp scp**).
+- **Verify:** `bash scripts/adopt_k285_phase1.sh`. **No install. No LIVE Discord. No xsp/pm scp. No `/route` swap.**
+
 ## OSINT K284 — 2026-10-07
 Dual-ID: **OSINT K284**. FILE and HITL only. **0 product Integrate GO — design/tooling leads only.**
 - **Two eval docx, 39 URLs** — design/UI registries (docx A) + agent tooling / local inference / creative suite (docx B). **Zero dead links this batch** (K281–K283 each had 6–7). The one docx error is a **false negative**: `pingdotgg/ts-rust` was rated UNAVAILABLE/404 but is alive (159★, MIT).
