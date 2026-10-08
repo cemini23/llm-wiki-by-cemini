@@ -17,13 +17,14 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    # Pinned, not ubuntu-latest: the label migrates to Ubuntu 26 on 2026-10-19.
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
