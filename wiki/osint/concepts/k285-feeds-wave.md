@@ -7,9 +7,13 @@ related:
   - concepts/k285-eval-wave.md
   - concepts/k285-arxiv-wave.md
   - concepts/agentic-code-quality-gates.md
+  - concepts/prediction-market-regulation-2026.md
   - sources/substack-rss-moontower-2026-10-07-vibey-vs-discrete-trades.md
   - sources/newsletter-rss-latent-space-2026-10-07-cloud-native-harness.md
   - sources/newsletter-rss-pragmatic-engineer-2026-10-07-sam-newman-resilience.md
+  - sources/substack-rss-latent-space-2026-10-08-claude-haiku-55.md
+  - sources/substack-rss-event-horizon-2026-10-08-39-states-scotus-brief.md
+  - sources/substack-rss-klement-2026-10-08-government-debt-monetary-policy.md
 maturity: draft
 created: 2026-10-08
 updated: 2026-10-08

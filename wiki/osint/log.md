@@ -14,6 +14,7 @@
 - **Briefs staged (7):** `briefs/2026-10-08_k285-atto-local-inference-lint.md`, `..._rea-background-agents.md`, `..._artcraft-clips.md`, `..._worldmonitor-canary.md`, `..._ccc-harness-resilience.md`, `..._ccc-harness-coevolution.md`, `..._cyber-model-repair.md`.
 - **Process note:** the Basgiath row ships as a **brief** (`dragon-rider-map/briefs/`), per the LESSONS entry of 2026-10-08 — prompts are one-shot.
 - **Phase-1 wires:** K285 section in `.cursor/rules/osint-phase1-adopt-wires.mdc`; `scripts/adopt_k285_phase1.sh`. FILE only — no wire-ledger rows.
+- **Late feeds (+3, ingested after the main pass).** Three feeds landed mid-ingest and were archived before processing; pulled back from egress and ingested. `substack-rss-latent-space-2026-10-08-claude-haiku-55.md` — **Claude Haiku 5.5**, the cheap-worker tier, tiered pricing, but ~**3× Luna tokens** at max effort; `substack-rss-event-horizon-2026-10-08-39-states-scotus-brief.md` — **39 states + the NFL file at SCOTUS** against prediction markets; Michigan halts Coinbase by 2026-10-10; `substack-rss-klement-2026-10-08-government-debt-monetary-policy.md` — BIS: the debt level changes a rate shock's effect. **No `/route` swap. No pm scp.**
 - **Boundary:** zero clones (bash has no network). **No xsp scp, no pm scp, no LIVE Discord, no `/route` swap.**
 
 ## [2026-10-07] ingest | K284 wave
