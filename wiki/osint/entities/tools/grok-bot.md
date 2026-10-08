@@ -16,6 +16,8 @@ related:
   - entities/people/antpalkin-cvxv666.md
   - sources/newsletter-rss-latent-space-2026-09-05-grok-bot-openclaw-2026-09-07.md
   - concepts/k256-ccc-models-wave.md
+  - concepts/typed-judgement-desk-pattern.md
+  - sources/x-post-savipww-megabrain-jev-grok-bots-2026-09-23.md
 maturity: validated
 created: 2026-09-02
 updated: 2026-09-14
@@ -54,6 +56,14 @@ SpaceXAI beta product: named persistent agents on a **user-scoped cloud VM** (br
 **Primitives:** Description (profile) · **Skills** (saved task workflows) · **Routines** (scheduled or event-triggered re-runs) · **Plugins** (connectors/MCP; `@` in chat) · **Templates** (Aug 2026: share identity/skills/routines/plugins via `x.ai/bot/<id>` — recipient gets a **copy**, not creator logins or history).
 
 **Cemini posture:** HITL on send/publish/delete/purchase; no Equifax/banks/1Password/Stripe/Discord/Atto on shared Bot VM; wiki ingest stays on laptop Cursor; Bot = discovery desk only for Drive Wiki Scout. DFS/Parlays desks (§8, §17–19) are research and recap only — no sportsbook submit, no Odds API key on the VM, no FanDuel Enter.
+
+### The Jev gap (2026-10-08)
+
+**No charter mentions Jev.** Verified: `grep -i jev briefs/2026-09-01_grok-bot-charters.md` returns nothing. So every seat still takes **the model's prose opinion** as its judgement.
+
+The `@savipww` desk inverts that: a **typed decision engine** (Jev) answers `noul` / `choice` / `score` questions, and the Bot seats only **fill** — SIZE, FILLS, RISK. "Code fetches, the model judges, code decides." See @concepts/typed-judgement-desk-pattern.md.
+
+We already hold both halves — Jev live on the laptop (@entities/tools/jev-mcp.md) and 19 charters. **Connecting them is the single biggest capability increase available to the desk**, and it is safe: Jev is a **judgement service**, not trading egress. The charter rule stands — **no trading egress from the Bot VM.**
 
 ## Snippets
 

@@ -112,7 +112,7 @@ Verified via WebFetch (bash has no network). **All 20 repos exist; zero 404.** T
 
 **Licence flags for the Integrate/Extract rows:**
 
-- **`Rapid-MLX` shows NOASSERTION** at the API level though its description claims Apache-2.0. **Confirm the licence before wiring** the Integrate row.
+- **`Rapid-MLX` licence RESOLVED 2026-10-08: Apache-2.0.** The API reports NOASSERTION only because GitHub's detector could not match the file; the `LICENSE` file itself reads "Licensed under the Apache License, Version 2.0". **Clean to wire.**
 - **`storytold/artcraft` is NOASSERTION** (the K284 `storytold` apps were cleanly Apache-2.0 — the umbrella repo differs).
 - **`worldmonitor` is AGPL-3.0** — copyleft; reference only, never vendor.
 - **`validate-pyproject-schema-store` has only 8 stars** — tiny, but it is a **daily mirror** of SchemaStore, so low stars are expected.

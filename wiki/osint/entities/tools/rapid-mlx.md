@@ -22,7 +22,7 @@ updated: 2026-10-08
 
 - **Repo:** `github.com/raullenchai/Rapid-MLX`
 - **Tier (K285):** **Integrate** (route: Atto; local lab)
-- **License:** ⚠ **NOASSERTION** at the API level; the description claims **Apache-2.0**. Treat as unverified.
+- **License:** **Apache-2.0** `[CONFIRMED]` 2026-10-08. The `LICENSE` file reads "Licensed under the Apache License, Version 2.0". GitHub's API reports the `license` field as `NOASSERTION` / `other` only because its detector could not match the file (a `NOTICE` file is present). **The licence itself is Apache-2.0.**
 - **Stars:** 3,941 (verified 2026-10-08), active
 - **Description:** "OpenAI/Anthropic-compatible LLM inference server for Apple Silicon on MLX"
 
@@ -39,7 +39,7 @@ Same lane as **`Strata`** (K284): keep at-risk work **entirely local** — no cl
 ### Constraints
 
 - **Apple Silicon + MLX-quantized weights** required.
-- ⚠ **Confirm the licence** before wiring — the API reports NOASSERTION.
+- ✅ **Licence confirmed Apache-2.0** (2026-10-08) — clean to wire.
 
 ### Boundary
 

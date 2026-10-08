@@ -1,3 +1,12 @@
+## [2026-10-08] ingest | K286 — X post @savipww (typed-judgement desk)
+
+- **Source:** X Article `@savipww` — *"Megabrain (Jev) & Six Grok Bots That Already Made Me Six Figures (Setup Guide)"* (2026-09-23), read with **`opencli twitter article 2102720919185617314`**.
+- **The pattern:** a **typed decision engine** (Jev / TypeSafe) answers `noul` (if) / `choice` (switch) / `score` (sort) questions with probabilities in **70–500 ms**, so the agent seats stop judging in prose. "**Code fetches, the model judges, code decides.**" Filter is a **kill order** — facts kill before judgements. Question **sets** (not single questions) because state is charged once per call → **3–4× cheaper**. **Shadow mode** logs disagreement rows; a **rejection bench** with variable expiry; a **one-position guard**. Cost ~**6¢/day**.
+- **The finding:** we hold **both halves** — Jev live on the laptop (@entities/tools/jev-mcp.md) and **19 Grok Bot charters** — and **they are not connected**. Verified 2026-10-08: `grep -i jev briefs/2026-09-01_grok-bot-charters.md` returns **nothing**. Every seat uses the model's prose judgement. **This is the single biggest capability increase available to the desk.**
+- **Boundary:** the **trading egress** is out of bounds — no trading egress from the Grok Bot VM (@concepts/grok-bot-operator-patterns.md). Jev is a **judgement service**, not egress, so wiring the judge is safe. **File only. No `/route` swap.**
+- **New pages:** `concepts/typed-judgement-desk-pattern.md` + `sources/x-post-savipww-megabrain-jev-grok-bots-2026-09-23.md`. **Updated:** `entities/tools/grok-bot.md` (Jev gap), `entities/tools/rapid-mlx.md` + `sources/eval-github-repository-revenue-2026-10-08.md` (**Rapid-MLX licence CONFIRMED Apache-2.0**).
+- **Brief:** `briefs/2026-10-08_jev-typed-judgement-desk.md`.
+
 ## [2026-10-08] ingest | K285 wave
 
 - **Inbox:** 12 files → **12 source pages + 3 hubs**. One eval docx (20 rows), 8 arXiv papers, 3 feeds. **Zero clones. No install. 1 Integrate lead (licence unconfirmed).**

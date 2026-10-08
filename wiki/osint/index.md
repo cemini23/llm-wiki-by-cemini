@@ -7,6 +7,14 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### K286 ingest (2026-10-08) — X post @savipww
+OSINT K286: **1 X post → 1 source page + 1 concept**. `@savipww` *"Megabrain (Jev) & Six Grok Bots That Already Made Me Six Figures"* — a **typed-judgement desk**: a typed decision engine (**Jev**) answers `noul` / `choice` / `score` questions, so the agent seats stop judging in prose and only fill. "Code fetches, the model judges, code decides." ~**6¢/day**. The reusable pattern is [typed-judgement-desk](concepts/typed-judgement-desk-pattern.md). **Key finding: we hold both halves — Jev live on the laptop and 19 Grok Bot charters — and they are not connected; no charter mentions Jev.** The trading half is out of bounds (no trading egress from the Bot VM). **FILE only.** Also confirms **Rapid-MLX is Apache-2.0** (K285 licence flag resolved).
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [typed-judgement-desk](concepts/typed-judgement-desk-pattern.md) | Typed engine judges; code decides; kill-order | draft |
+| [x-savipww-jev-desk](sources/x-post-savipww-megabrain-jev-grok-bots-2026-09-23.md) | Jev + 6 Grok Bots; shadow mode; ~6¢/day | draft |
+
 ### K285 ingest (2026-10-08)
 OSINT K285: **12 inbox files → 12 source pages + 3 hubs**. One eval docx (20 URLs — reverse engineering, local inference, agent orchestration, graphics pipelines, toolchain; **1 Integrate · 5 Extract · 1 Watch · 10 Context · 3 Pass**), 8 arXiv papers (1 quant, 3 safety/eval, 3 agent-harness, 1 robotics), 3 feeds. **Zero dead links — the second consecutive all-real batch.** Integrate lead: **`Rapid-MLX`** — local Apple Silicon MLX inference (**licence NOASSERTION**, confirm). Extract: **`rea`** (MCP Hopper decompilation; was Pass in K283 → Extract), **`artcraft`** (3D staging before generative video → Basgiath), **`syntaqlite`**, `validate-pyproject-schema-store`, `background-agents`. arXiv through-line: **the harness and the local metric beat the headline number** — CoTrace (harness-tuned agents do not transfer), **PatchBench** (MMLU flat while local regression is severe), Before-They-Can-Solve (bounded benchmarks anti-correlate, HumanEval ρ=−0.394), **SLDR** (repair two layers; HS 11.54→0.08). Feeds: **Sam Newman — "LLMs are not world models," so guardrails are not the long-term answer**; Stacklok/Mecatl cloud-native harness; Moontower Kelly worked example. **FILE only. No install. No clone. No `/route` swap.**
 
