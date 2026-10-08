@@ -6,6 +6,19 @@ Newest entries on top.
 
 ---
 
+## 2026-10-08 — A one-shot prompt is consumed when it is written; send new work as a brief
+
+**What happened.** For Basgiath (`Projects/dragon-rider-map/`), new work was folded into `docs/NEXT-ACTIONS-PROMPT.md` and `docs/JAVA-PORT-PROMPT.md` after those prompts had already been run. The operator ran the prompt as soon as it was written. Later edits to the file are **inert** — nobody re-runs a consumed prompt.
+
+**Rule.**
+- A **prompt** is a one-shot handoff. It is consumed when the operator runs it. Do not add new work to a prompt that has already been delivered.
+- Ongoing work goes out as a **brief** in the project's own `briefs/` directory — the same way Atto, GuruWatcher, CCC, the Cybersecurity wiki, Game Dev, and the Gambling wiki are served. Basgiath is a project like the rest, not an exception.
+- When a prompt does need a revision **before** it runs (still unspent), edit it. Once it is spent, write a brief.
+
+**Apply.** For Basgiath: drop a dated brief into `Projects/dragon-rider-map/briefs/` and mirror it into `../Game Dev wiki/briefs/` (and OSINT `briefs/` staging). Do not reopen `NEXT-ACTIONS-PROMPT*.md` or `JAVA-PORT-PROMPT.md`.
+
+---
+
 ## 2026-08-25 — New workspace setup: always add ASD-STE100 to CLAUDE.md
 
 When scaffolding a new wiki, repo, or helping someone fork `wiki-template`, add **`## Writing style (ASD-STE100)`** to the root `CLAUDE.md` before first commit. Federation roots already have it (2026-08-25 pass); **new** repos and CeminiSuite submodules still need manual paste.
