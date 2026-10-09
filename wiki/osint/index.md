@@ -7,6 +7,12 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+### Report (2026-10-09) — Swarmer long thesis
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [swarmer-long-thesis-2026-10-09](sources/swarmer-long-thesis-2026-10-09.md) | Prince roll-up on Ukraine combat-proven drone tech; revenue round-trip; Ratel earnouts; equity-only long | draft |
+
 ### Report (2026-10-08) — rearmament defense growth
 
 | Page | Summary | Maturity |
@@ -4061,6 +4067,10 @@ Authors, researchers, traders, pseudonymous handles referenced by the wiki.
 ## Concepts
 
 Topics, theses, methodologies, strategies — ideas the research examines.
+
+### Desk pack (2026-10-09) — Swarmer
+
+- [Swarmer Prince roll-up thesis](concepts/swarmer-prince-rollup-thesis.md) — Prince consolidates Ukraine's drone base; revenue round-trip; equity-only long — concept, defense, drones, ukraine, roll-up
 
 ### Desk pack (2026-10-08) — rearmament defense growth
 

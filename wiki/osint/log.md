@@ -1,3 +1,12 @@
+## [2026-10-09] report | Swarmer long thesis (Prince roll-up)
+
+- **Pack:** `reports/research/pack-swmr-long-thesis-20261009/` (untracked). Desk note `SWMR_long_thesis_2026-10-09.md`.
+- **Thesis:** long Swarmer (NASDAQ: SWMR) as a speculative special situation. The bet is Prince consolidating Ukraine's combat-proven drone and robot makers. The software is real but small, and the revenue has a round-trip problem.
+- **Key numbers:** price $13.13, market cap about $218M, TTM revenue $298K. Ratel Robotics: audited FY2025 net sales $18.6M, $86.6M of customer advances, FY2026 earnout target $77M. Prince holds zero shares, only unvested options. No listed options, so equity only.
+- **Verification:** a Grok dossier plus two verification rounds corrected the Prince holding (zero, not 1,774,725 shares) and the Ratel dilution split (91.6/8.4 at closing, not 74.9/25.1).
+- **Wiki:** `concepts/swarmer-prince-rollup-thesis.md` + `sources/swarmer-long-thesis-2026-10-09.md`.
+- **Pending:** the multi-model audit and the Outlier handoff when grok cli access returns.
+
 ## [2026-10-08] report | War Is Coming. Here Is How to Profit. (rearmament defense growth)
 
 - **Pack:** `reports/research/pack-rearmament-war-profit-20261008/` (untracked). Desk note `thesis.md`, PDF on the Desktop. SEO handoff `../SEO:GEO B&M Business/briefs/2026-10-08_rearmament-war-profit-outlier.md` + `wiki/concepts/rearmament-war-profit-outlier-notes.md`.
