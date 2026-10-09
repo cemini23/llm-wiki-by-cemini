@@ -1,3 +1,19 @@
+## [2026-10-09] ingest | K287 wave
+
+- **Inbox:** 20 files pinned with `ls` before archive. Preingest: 15 NEW, 5 LIKELY, 0 DUPLICATE. LIKELY title and same-feed letters fold onto `concepts/k287-feeds-wave.md`. No second source page for the repeated Latent Space title. Archive: 20 of 20 files on `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Local copies removed.
+- **Eval:** `Multi-Repo Revenue Evaluation.docx` (sha256 `b36632927d25ce3f…`). 1 Integrate, 6 Extract, 1 Watch, 6 Context, 6 Pass. Pass rows stay on `sources/eval-multi-repo-revenue-2026-10-09.md`.
+- **gh api:** 18 of 18 repos exist. Docx licence column not used. LiteLLM API id **NOASSERTION**; file is MIT outside `enterprise/`. sogen **GPL-2.0**. daily_stock_analysis **MIT**. blessed-rs licence field empty. open-code-review **Apache-2.0**, 45,129 stars.
+- **Phase-0** under `/tmp/k287-phase0/` (no install): open-code-review **GO REFERENCE** (pattern not new, no brief); litellm **NO-GO** (proxy already on 127.0.0.1:8791); sogen **NO-GO** (not permissive, no lab brief); daily_stock_analysis **CONDITIONAL-GO** (alert-only, not started, no orders).
+- **Folds:** artcraft umbrella still NOASSERTION; rea MIT, owned-lab boundary stays; treg Pass, still NOASSERTION.
+- **Hosted model:** `platform.experientiallabs.ai` GLM-5.3-flash-abliterated recorded as a hosted model. No key. No install. GPU repo `nullmoth/nvidia-macos-driver` is Pass. Do not build it.
+- **arXiv (8):** constitutional gating confirms deterministic recovery and does not change the rule. HarnessSQL and Embodied Turing Machines get **no training wire**. HANS licence does not allow a genealogy brief. TestPrism joint success 28.00 percent vs single-reference 59.67 percent.
+- **Feeds:** war-profit letter links `concepts/rearmament-defense-growth-thesis.md` (no second thesis). Sports letter does not change a ticket rule. Macro teaser states no numeric level. Security letters are summary only. Crypto letters are short notes.
+- **Swarmer:** concept page verdict **UNSOUND**. Original sentences kept and marked. Vesting is 60 percent time and 40 percent milestone. The earnout needs both revenue and operating income. Audit file `reports/research/pack-swmr-long-thesis-20261009/qa/audit-final.md`. Desk note not rewritten.
+- **Phase-1:** `scripts/phase1_adopt_inventory.py` is not in this repo. No settings edit. No ADOPT. NO-GO rows are `wont_wire`. The stock-digest CONDITIONAL-GO is `deferred`.
+- **Gate:** `ingest_session_gate.py` skips stale verification tags inside `wiki/log.md`. Those lines quote older batches.
+- **Briefs:** `briefs/2026-10-09_k287-guruwatcher-stock-digest-alert.md`, `briefs/2026-10-09_k287-illo-skill-no-wire.md`. No scp. Sibling copy to `../GuruWatcher/briefs/` blocked (operation not permitted). Local brief kept.
+- **Boundary:** no install, no Ashburn copy, no image or print local wire.
+
 ## [2026-10-09] report | Swarmer long thesis (Prince roll-up)
 
 - **Pack:** `reports/research/pack-swmr-long-thesis-20261009/` (untracked). Desk note `SWMR_long_thesis_2026-10-09.md`.

@@ -101,6 +101,9 @@ def main() -> int:
 
     stale_nv = []
     for wf in wiki_files:
+        # The log quotes old verification tags. Those lines are the record.
+        if wf.name == "log.md":
+            continue
         for m in re.finditer(r"\[NEEDS VERIFICATION (\d{4}-\d{2}-\d{2})\]", read(wf)):
             tag_date = date.fromisoformat(m.group(1))
             age = (date.today() - tag_date).days

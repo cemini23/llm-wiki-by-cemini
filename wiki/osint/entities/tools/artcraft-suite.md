@@ -6,15 +6,17 @@ keywords: [artcraft, storytold, photocraft, printcraft, designcraft, vectorcraft
 related:
   - sources/eval-url-revenue-opportunity-2026-10-07.md
   - concepts/k284-eval-wave.md
+  - sources/eval-multi-repo-revenue-2026-10-09.md
 maturity: draft
 created: 2026-10-07
-updated: 2026-10-07
+updated: 2026-10-09
 ---
 
 ## Relations
 
 - @sources/eval-url-revenue-opportunity-2026-10-07.md — K284 eval (tier: **Integrate**, three apps)
 - @concepts/k284-eval-wave.md — K284 cluster hub
+- @sources/eval-multi-repo-revenue-2026-10-09.md — K287 fold. Umbrella repo stays NOASSERTION.
 
 ## Raw Concept
 
@@ -50,6 +52,10 @@ The **Atto document pipeline**: **enhance archive scans (photocraft) → typeset
 ### Boundary
 
 FILE only — no install. Human-gated. Client PII stays in `~/AttoVault/`.
+
+### K287 fold (2026-10-09)
+
+The docx names `storytold/artcraft` again as Extract. Already audited. `gh api` on 2026-10-09: umbrella repo licence **NOASSERTION**, 11,194 stars, last push 2026-10-09. The seven app repos on this page stay Apache-2.0 from K284. No new brief. No install. No image-generation wire.
 
 ## Snippets
 

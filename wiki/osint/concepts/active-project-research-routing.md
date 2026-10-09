@@ -4,6 +4,7 @@ type: concept
 tags: [concept, meta, workflow, briefs, k121, k156, genealogy, atto, guruwatcher, basgiath, local-abliterated-lab]
 keywords: [brief-routing, atto, guruwatcher, basgiath, ceminidfs, ceminiparlays, wc-ticket-monitor, family-tree, genealogy, xsp-killer, polymarket, kalshi, local-abliterated-lab, ingest, daily-digest]
 related:
+  - sources/eval-multi-repo-revenue-2026-10-09.md
   - entities/tools/qwen-mm-plugins.md
   - entities/tools/ruview.md
   - entities/tools/ileapp.md

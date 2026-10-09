@@ -7,6 +7,32 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 ---
 
 ## Sources
+
+### K287 ingest (2026-10-09)
+OSINT K287: **20 inbox files**. One eval source page (20 rows, pass rows stay on that page), eight arXiv source pages, one feeds hub. **18 of 18 GitHub repos exist.** Integrate row `BerriAI/litellm` is Phase-0 **NO-GO** (second gateway; local proxy on 127.0.0.1:8791). `open-code-review` stays GO REFERENCE (pattern not new). `sogen` is GPL-2.0 NO-GO. `daily_stock_analysis` is MIT CONDITIONAL-GO, alert-only, not started. Swarmer concept verdict **UNSOUND**.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [eval-multi-repo-revenue-2026-10-09](sources/eval-multi-repo-revenue-2026-10-09.md) | 20 rows; litellm NO-GO; pass rows on this page | draft |
+| [k287-arxiv-wave](concepts/k287-arxiv-wave.md) | Eight papers; no training wire; no rule change | draft |
+| [k287-feeds-wave](concepts/k287-feeds-wave.md) | Eleven letters; war letter links rearmament | draft |
+| [litellm](entities/tools/litellm.md) | Gateway Phase-0 NO-GO; wont_wire | draft |
+| [sogen](entities/tools/sogen.md) | GPL-2.0 NO-GO; no lab brief | draft |
+| [lingbot-map](entities/tools/lingbot-map.md) | Watch stub; heavy GPU stack; no laptop wire | draft |
+| [magpie](entities/tools/magpie.md) | Context stub; menu-bar model switcher | draft |
+| [aleapp](entities/tools/aleapp.md) | Context stub; Android parser; no install | draft |
+| [cc-switch-cli](entities/tools/cc-switch-cli.md) | Context stub; separate from cc-switch | draft |
+| [blessed-rs](entities/tools/blessed-rs.md) | Context stub; licence field empty | draft |
+| [rakazo](entities/tools/rakazo.md) | Context stub; do not swap the desk bot | draft |
+| [constitutional-gating](sources/arxiv-2610.11542-constitutional-gating-2026-10-09.md) | Deterministic recovery 5/5; LLM steering 0/5 | draft |
+| [intent-recovery](sources/arxiv-2610.11766-intent-recovery-2026-10-09.md) | Pair understanding rate with attack success | draft |
+| [harnesssql](sources/arxiv-2610.12274-harnesssql-2026-10-09.md) | Harness-native SQL training; no training wire | draft |
+| [testprism](sources/arxiv-2610.12289-testprism-2026-10-09.md) | Joint success 28% vs single reference 59.67% | draft |
+| [aaarena](sources/arxiv-2610.12341-aaarena-heuristic-learning-2026-10-09.md) | Weights fixed; 6 gold of 12 games | draft |
+| [epistemic-humility](sources/arxiv-2610.12360-epistemic-humility-2026-10-09.md) | Accuracy is not humility | draft |
+| [hans](sources/arxiv-2610.12363-hans-2026-10-09.md) | Noisy handwriting; no genealogy brief | draft |
+| [embodied-turing](sources/arxiv-2610.12369-embodied-turing-machines-2026-10-09.md) | Code-only policy; no training wire | draft |
+
 ### Report (2026-10-09) — Swarmer long thesis
 
 | Page | Summary | Maturity |

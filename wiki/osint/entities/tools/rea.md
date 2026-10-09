@@ -7,9 +7,10 @@ related:
   - sources/eval-github-repository-revenue-2026-10-08.md
   - concepts/k285-eval-wave.md
   - entities/tools/agent-security-lab.md
+  - sources/eval-multi-repo-revenue-2026-10-09.md
 maturity: draft
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-09
 ---
 
 ## Relations
@@ -17,6 +18,7 @@ updated: 2026-10-08
 - @sources/eval-github-repository-revenue-2026-10-08.md — K285 eval (tier: **Extract**)
 - @concepts/k285-eval-wave.md — K285 cluster hub
 - @entities/tools/agent-security-lab.md — authorized-lab context
+- @sources/eval-multi-repo-revenue-2026-10-09.md — K287 fold. Owned-lab boundary stays.
 
 ## Raw Concept
 
@@ -45,6 +47,10 @@ The **reusable pattern is MCP-mediated decompilation**: an agent drives a disass
 ### Boundary
 
 FILE the pattern only. No clone this session.
+
+### K287 fold (2026-10-09)
+
+Already audited. The docx scores Extract again. `gh api` on 2026-10-09: **MIT**, 43,530 stars, last push 2026-10-09. The owned-lab boundary stays. No new lab brief. No install. No exploit text.
 
 ## Snippets
 

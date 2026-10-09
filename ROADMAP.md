@@ -30,6 +30,16 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-09 — K287 ingest)
+
+- **K287 ingest** — 20 inbox files. One eval source page, eight arXiv pages, one feeds hub. **18 of 18 GitHub repos exist.** No install.
+- **Gateway:** `BerriAI/litellm` is Phase-0 **NO-GO**. A local proxy already listens on 127.0.0.1 port 8791. Do not add a second gateway. `wire_status: wont_wire`.
+- **Other Phase-0:** `open-code-review` stays GO REFERENCE (pattern not new). `sogen` is GPL-2.0 **NO-GO** (no lab brief). `daily_stock_analysis` is MIT **CONDITIONAL-GO**, alert-only, not started, no orders.
+- **Swarmer audit:** concept verdict **UNSOUND**. Vesting is 60 percent time and 40 percent milestone. The earnout needs both revenue and operating income. A zero share count is a design choice. The contract does not pay for a roll-up.
+- **Papers:** no training wire on 2610.12369 or on HarnessSQL. HANS does not get a genealogy brief. No harness rule change, so no agent-wiki brief.
+- **Open (named, not started):** weekly gap detect, HL funding backtest, Kalshi LP spread backtest, PM LP spread backtest if due, cross-venue backtest, equity signal backtest, the K285 local inference install, the K287 stock-digest CONDITIONAL-GO.
+- **Boundary:** no scp, no Ashburn copy, no settings edit, no image or print local wire.
+
 ## Current state (2026-10-08 — K285 ingest)
 
 - **K285 ingest** — 12 inbox files → 12 source pages + 3 hubs. One eval docx (20 rows), 8 arXiv papers, 3 feeds. **Zero clones. No install. 1 Integrate lead.**

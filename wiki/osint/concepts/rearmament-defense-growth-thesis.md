@@ -5,14 +5,16 @@ tags: [concept, thesis, defense, rearmament, munitions, drones, rare-earths]
 keywords: [LHX, MRCY, MP, AVAV, KTOS, RCAT, ONDS, UMAC, interceptors, Patriot, THAAD, drones, LEAPS]
 related:
   - sources/rearmament-war-profit-desk-2026-10-08.md
+  - concepts/k287-feeds-wave.md
 maturity: draft
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-09
 ---
 
 ## Relations
 
 - @sources/rearmament-war-profit-desk-2026-10-08.md — locked pack
+- @concepts/k287-feeds-wave.md — Outlier letter of 2026-10-08 links here. No second thesis.
 
 ## Raw Concept
 

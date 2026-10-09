@@ -8,9 +8,10 @@ related:
   - concepts/cemini-license-posture.md
   - concepts/wiki-tooling-evaluation.md
   - concepts/active-project-research-routing.md
+  - entities/tools/aleapp.md
 maturity: draft
 created: 2026-08-10
-updated: 2026-08-10
+updated: 2026-10-09
 ---
 
 ## Relations
@@ -19,6 +20,7 @@ updated: 2026-08-10
 - @concepts/cemini-license-posture.md
 - @concepts/wiki-tooling-evaluation.md
 - @concepts/active-project-research-routing.md
+- @entities/tools/aleapp.md — Android sibling. K287 context stub. No install.
 
 ## Raw Concept
 
