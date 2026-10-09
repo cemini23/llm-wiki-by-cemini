@@ -4,6 +4,18 @@ Append-only chronological log.
 
 ---
 
+## [2026-10-09] ingest | 4 arXiv PDFs (all ingested) + 2 clip-tooling briefs + Phase-1 H11–H14
+
+- Inbox: 4 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-09.md + 4 source pages. **Second consecutive all-ingest batch — 0 rejects.**
+- **Cluster:** all four are about verification and self-improvement in agent loops — Who Verifies the Verifier (grader evolution), Confidence Game (strategic miscalibration), System Switch (fast/slow gate), MEMENTO 3 (reflective rulebooks)
+- Phase-0: **no resolvable repos** in any of the four → STEAL-FROM (pattern only)
+- Phase-1 **verification doctrine**: **H11** certify a verifier with an external anchored set, never the task score; **H12** do not trust self-reported confidence when the reporter has a stake; **H13** escalate on sensitivity (AUROC), not accuracy; **H14** revisable rulebook + deterministic replay gate
+- Headline finding: a verifier can collapse to always-pass **while still training skills just as well** — downstream score cannot certify a self-evolved verifier
+- **Incoming briefs landed:** K284/K285 Basgiath clip tooling (artcraft, filmcraft, effectcraft, treg) → @sources/k284-k285-basgiath-clip-tooling-2026-10-08.md. **Two licence flags the originating eval missed** — `artcraft` and `treg` both NOASSERTION
+- Sweeps: @sweeps/2026-10-08-daily.md · @sweeps/2026-10-09-daily.md
+
+---
+
 ## [2026-10-07] ingest | 6 arXiv PDFs (all ingested) + 3 incoming briefs + Phase-1 H7–H10
 
 - Inbox: 6 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-07.md + 6 source pages. **First all-ingest batch — 0 rejects.**

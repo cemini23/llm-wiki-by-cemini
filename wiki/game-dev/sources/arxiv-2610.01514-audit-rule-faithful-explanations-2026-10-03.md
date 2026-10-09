@@ -8,6 +8,8 @@ related:
   - sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md
   - sources/arxiv-2609.35928-prompted-identity-factionalism-2026-09-30.md
   - sources/inbox-arxiv-reject-batch-2026-10-03.md
+  - sources/arxiv-2610.11464-who-verifies-the-verifier-2026-10-09.md
+  - sources/arxiv-2610.09371-confidence-game-delegation-2026-10-09.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2610.01514

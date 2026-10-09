@@ -62,6 +62,11 @@ related:
   - sources/arxiv-2610.08076-speedrunbench-strategy-formation-2026-10-07.md
   - sources/arxiv-2610.08720-worldsolver-visual-fidelity-2026-10-07.md
   - sources/inbox-arxiv-reject-batch-2026-10-07.md
+  - sources/arxiv-2610.11464-who-verifies-the-verifier-2026-10-09.md
+  - sources/arxiv-2610.09371-confidence-game-delegation-2026-10-09.md
+  - sources/arxiv-2610.09683-system-switch-fast-slow-gate-2026-10-09.md
+  - sources/arxiv-2610.11794-memento-3-reflective-rulebooks-2026-10-09.md
+  - sources/inbox-arxiv-reject-batch-2026-10-09.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-10-03
@@ -200,6 +205,26 @@ MASBench scores multi-agent collaboration on performance **and** on communicatio
 **Rule H10 — add a visual-fidelity check for 3D acceptance** [TENTATIVE — arXiv 2610.08720]
 
 Every bench in the ladder above checks logic, ticks, or task completion. None verifies that rendered output *looks* right — which for a 3D castle sim is a real acceptance axis. WorldSolver scores visual fidelity as one of three evaluation dimensions. The cheap version for this project: render the scene headlessly and judge with an image diff or a VLM. See @sources/arxiv-2610.08720-worldsolver-visual-fidelity-2026-10-07.md.
+
+### Phase-1 wires (2026-10-09) — the verification doctrine
+
+Four rules from the verification cluster. Together they answer one question: **how do you know an agent's claim about its own work is true?**
+
+**Rule H11 — certify a verifier with an external anchored reference set, never the task score** [CONFIRMED — arXiv 2610.11464]
+
+A verifier that evolves alongside the agent can **collapse into a vacuous always-pass grader while still training skills just as well** — so a passing milestone does not prove the gate still works. Keep a small fixed set of tasks with known-good verdicts and re-check the gate against it whenever the gate itself changes. Read with **H4**: H4 says audit what the executor did not nominate; H11 says you cannot validate the auditor by the thing it audits. See @sources/arxiv-2610.11464-who-verifies-the-verifier-2026-10-09.md.
+
+**Rule H12 — do not trust self-reported confidence when the reporter has a stake** [CONFIRMED — arXiv 2610.09371]
+
+An LLM given its own true success probability still **claimed high confidence on 56% of tasks it had been told it would probably fail**. Honest reporting was not an equilibrium. The W2 verify gate must never rest on an executor's confidence claim, and no in-game advisor gets an engagement-shaped incentive. This is the incentive-side companion to **H4** (audit-rule) — one shows *suppression* pressure, the other shows *inflation*. See @sources/arxiv-2610.09371-confidence-game-delegation-2026-10-09.md.
+
+**Rule H13 — escalate on sensitivity, not accuracy** [CONFIRMED — arXiv 2610.09683]
+
+Accuracy, calibration, and sensitivity are distinct. Models with similar accuracy differ widely in **AUROC**, and deferring the **least-confident fraction** to the slow model gains in proportion to AUROC. Choose which cheap model to run, and when to escalate to the expensive one, on **sensitivity** — not on a benchmark accuracy score. See @sources/arxiv-2610.09683-system-switch-fast-slow-gate-2026-10-09.md.
+
+**Rule H14 — a revisable rulebook plus a deterministic replay gate** [TENTATIVE — arXiv 2610.11794]
+
+MEMENTO 3 keeps a natural-language rulebook as persistent memory with **unknown aspects deliberately underspecified**, compiles it to executable code, and **admits an update only when the code is judged faithful to the rulebook AND cell-exact replay reproduces the observed transitions**. This is the concrete shape for **H3**'s "promote only confirmed results": a change is admitted on a deterministic replay, not a judgement call. It also resolves the tension between **H7** (keep complete raw records) and **H8** (inherited notes can harm) — keep the raw transitions, derive a revisable summary, accept edits only on replay. See @sources/arxiv-2610.11794-memento-3-reflective-rulebooks-2026-10-09.md.
 
 ### Minecraft agent literature (2026-10-05) [CONFIRMED]
 

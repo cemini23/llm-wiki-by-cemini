@@ -9,6 +9,7 @@ related:
   - entities/tools/blockbench.md
   - sources/cross-wiki-routed-briefs-2026-10-05.md
   - meta/cross-wiki-routing.md
+  - sources/k284-k285-basgiath-clip-tooling-2026-10-08.md
 read_status: read
 source_type: operator-triage
 maturity: validated

@@ -325,3 +325,9 @@ Catalog of all wiki pages. Updated on each ingest.
 | [k282-level-editors-tile-tooling-2026-10-05](sources/k282-level-editors-tile-tooling-2026-10-05.md) | read |
 | [k283-bedrock-addon-extracts-2026-10-06](sources/k283-bedrock-addon-extracts-2026-10-06.md) | read |
 | [arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06](sources/arxiv-2610.02023-sphere-vr-scene-routing-2026-10-06.md) | read |
+| [arxiv-2610.11464-who-verifies-the-verifier-2026-10-09](sources/arxiv-2610.11464-who-verifies-the-verifier-2026-10-09.md) | read |
+| [arxiv-2610.09371-confidence-game-delegation-2026-10-09](sources/arxiv-2610.09371-confidence-game-delegation-2026-10-09.md) | read |
+| [arxiv-2610.09683-system-switch-fast-slow-gate-2026-10-09](sources/arxiv-2610.09683-system-switch-fast-slow-gate-2026-10-09.md) | read |
+| [arxiv-2610.11794-memento-3-reflective-rulebooks-2026-10-09](sources/arxiv-2610.11794-memento-3-reflective-rulebooks-2026-10-09.md) | read |
+| [inbox-arxiv-reject-batch-2026-10-09](sources/inbox-arxiv-reject-batch-2026-10-09.md) | read |
+| [k284-k285-basgiath-clip-tooling-2026-10-08](sources/k284-k285-basgiath-clip-tooling-2026-10-08.md) | read |

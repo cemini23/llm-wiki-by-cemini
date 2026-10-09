@@ -13,6 +13,7 @@ related:
   - sources/arxiv-2610.04672-masbench-partial-observability-2026-10-07.md
   - sources/arxiv-2610.08215-learn2play-bench-experience-2026-10-07.md
   - sources/arxiv-2610.05041-mafia-communication-collective-inference-2026-10-07.md
+  - sources/arxiv-2610.11464-who-verifies-the-verifier-2026-10-09.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2609.40324

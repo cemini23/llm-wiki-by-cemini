@@ -9,6 +9,7 @@ related:
   - concepts/rts-siege-ai-reference.md
   - concepts/agent-harness-castle-project.md
   - sources/inbox-arxiv-reject-batch-2026-10-05.md
+  - sources/arxiv-2610.09683-system-switch-fast-slow-gate-2026-10-09.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2610.03695
