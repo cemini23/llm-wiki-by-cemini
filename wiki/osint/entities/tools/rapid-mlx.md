@@ -9,7 +9,10 @@ related:
   - entities/tools/strata.md
 maturity: draft
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-09
+wire_status: runtime_wired
+wire_target: wiki-only
+wire_note: "CLI rapid-mlx 0.16.0. Venv .local/tools/rapid-mlx/.venv. Symlink ~/.local/bin/rapid-mlx. Telemetry off. No model pull (13 GB free). No settings edit. No serve."
 ---
 
 ## Relations
@@ -43,7 +46,7 @@ Same lane as **`Strata`** (K284): keep at-risk work **entirely local** — no cl
 
 ### Boundary
 
-FILE only. **No client PII to any cloud endpoint.** Human-gated; no install.
+The CLI is installed. Package `rapid-mlx` 0.16.0 (Apache-2.0). The venv is `.local/tools/rapid-mlx/.venv`. The symlink is `~/.local/bin/rapid-mlx`. Doctor on 2026-10-09: Apple M4, 16 GB RAM, 13 GB free disk. That is too low for a model pull. Telemetry was on by default and is now off. No model was pulled. No settings file was edited. `rapid-mlx launch` was not run. The server is not running. **No client PII to any cloud endpoint.** GitHub's API still reports the licence field as NOASSERTION. The LICENSE file is Apache-2.0.
 
 ## Snippets
 

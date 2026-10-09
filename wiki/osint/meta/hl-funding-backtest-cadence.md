@@ -7,7 +7,7 @@ related:
   - concepts/cemini-backtest-report-kit.md
   - meta/internal-benchmark-deployment-map.md
   - meta/pm-lp-backtest-cadence.md
-updated: 2026-05-29
+updated: 2026-10-09
 ---
 
 ## Schedule
@@ -15,8 +15,8 @@ updated: 2026-05-29
 | Field | Value |
 |-------|-------|
 | Cadence | **Quarterly** (~90 days) |
-| Last run | **2026-05-27** |
-| Next due | **2026-08-27** |
+| Last run | **2026-10-09** |
+| Next due | **2027-01-07** |
 | Owner | Laptop only (Dune credits); agent runs on request or when due |
 | Prod/egress | **Never** run upstream `main.py` |
 

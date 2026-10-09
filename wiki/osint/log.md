@@ -1,3 +1,13 @@
+## [2026-10-09] cadence | gap detect and quarterly backtests
+
+- **Gap detect:** 3789 pages. 36 type A, 137 type D, 246 type E. Report `.local/reports/wiki-gap-detect-2026-10-09.txt`. Tier 1 only. No Exa. Next due 2026-10-16.
+- **Kalshi LP:** best Sharpe -24.66, PnL -$1.76, 16 trades, 1 market, 2026-09-19 to 2026-10-07. 0 of 80 configs with PnL above 0. Spread lab only. Do not promote. Report `.local/reports/kalshi-lp-backtest-2026-10-09.html`.
+- **Cross-venue:** 0 trades. The matcher paired a bad BTC market and returned 4 bars on 2026-05-27. This run does not measure edge. Report `.local/reports/cross-venue-backtest-2026-10-09.html`.
+- **Equity signal:** cache through 2026-06-12. No SSH. Best Sharpe 4.56 (lookback 30d, z 2.0, stop 3%). MCPT p=0.0005. Window 2021-06-14 to 2026-06-12. Sanity lab. Do not promote. Report `.local/reports/equity-signal-backtest-2026-10-09.html`.
+- **HL funding:** Dune SQL returned 400 on tier medium/large and 402 (datapoint limit) on free/small. Fallback is the public Hyperliquid API. 10 coins, OI fixed at $50M, spread fixed at 2 bps, hours only 2026-08-10 to 2026-08-30. Best Sharpe 12.66 on 14 trades with PnL -$57.66. Directional lab. Do not change the steal-from posture. Report `.local/tools/hl-funding-sniper-reference/data/reports/backtest_report.html`.
+- **PM LP:** not due. Not run.
+- **Rapid-MLX:** CLI 0.16.0 installed. Telemetry off. No model pull. Free disk is 13 GB. `wire_status` is `runtime_wired`.
+
 ## [2026-10-09] ingest | K287 wave
 
 - **Inbox:** 20 files pinned with `ls` before archive. Preingest: 15 NEW, 5 LIKELY, 0 DUPLICATE. LIKELY title and same-feed letters fold onto `concepts/k287-feeds-wave.md`. No second source page for the repeated Latent Space title. Archive: 20 of 20 files on `cemini-egress-fi:/opt/cemini-bulk/research/osint/`. Local copies removed.
@@ -21,7 +31,7 @@
 - **Key numbers:** price $13.13, market cap about $218M, TTM revenue $298K. Ratel Robotics: audited FY2025 net sales $18.6M, $86.6M of customer advances, FY2026 earnout target $77M. Prince holds zero shares, only unvested options. No listed options, so equity only.
 - **Verification:** a Grok dossier plus two verification rounds corrected the Prince holding (zero, not 1,774,725 shares) and the Ratel dilution split (91.6/8.4 at closing, not 74.9/25.1).
 - **Wiki:** `concepts/swarmer-prince-rollup-thesis.md` + `sources/swarmer-long-thesis-2026-10-09.md`.
-- **Pending:** the multi-model audit and the Outlier handoff when grok cli access returns.
+- **Audit:** done 2026-10-09. Verdict UNSOUND. File `reports/research/pack-swmr-long-thesis-20261009/qa/audit-final.md`. The desk note was not rewritten. The Outlier handoff for this pack was not requested.
 
 ## [2026-10-08] report | War Is Coming. Here Is How to Profit. (rearmament defense growth)
 

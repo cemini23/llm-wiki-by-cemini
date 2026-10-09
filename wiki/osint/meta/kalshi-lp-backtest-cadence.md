@@ -10,7 +10,7 @@ related:
   - entities/platforms/kalshi.md
 maturity: core
 created: 2026-05-27
-updated: 2026-05-29
+updated: 2026-10-09
 ---
 
 ## Relations
@@ -23,8 +23,8 @@ updated: 2026-05-29
 
 | Field | Value |
 |-------|-------|
-| **Last run** | 2026-05-27 |
-| **Next due** | 2026-08-27 |
+| **Last run** | 2026-10-09 |
+| **Next due** | 2027-01-07 |
 | **Command** | `bash scripts/run_kalshi_lp_backtest.sh` |
 | **Check** | `scripts/check_kalshi_lp_backtest_due.sh` |
 

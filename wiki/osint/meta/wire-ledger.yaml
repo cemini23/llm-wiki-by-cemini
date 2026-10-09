@@ -1,7 +1,7 @@
 # WIRE ledger — every executable harness change. Key by slug; arXiv id optional.
 # Check: python3 scripts/wire_ledger_check.py
 version: 1
-updated: 2026-09-18
+updated: 2026-10-09
 repos:
   osint: /Users/claudiobarone/Projects/OSINT WORKSPACE
   ccc: /Users/claudiobarone/Projects/Cemini claude code CCC
@@ -79,3 +79,11 @@ wires:
     wiki_page: entities/tools/jev-mcp.md
     since: 2026-09-18
     verify: "rg -c '\"jev\"' .cursor/mcp.json && test -x scripts/mcp_jev.sh && test -f .local/adopts/jev-mcp/dist/index.js"
+  - id: rapid-mlx-cli
+    verb: WIRE
+    kind: script
+    repo: osint
+    path: wiki-only
+    wiki_page: entities/tools/rapid-mlx.md
+    since: 2026-10-09
+    verify: "wiki-only laptop CLI ~/.local/bin/rapid-mlx 0.16.0"

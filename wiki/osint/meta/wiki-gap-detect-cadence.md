@@ -12,7 +12,7 @@ related:
   - concepts/hermes-laptop-operator-playbook.md
 maturity: core
 created: 2026-05-30
-updated: 2026-08-20
+updated: 2026-10-09
 ---
 
 ## Relations
@@ -25,8 +25,8 @@ updated: 2026-08-20
 | Field | Value |
 |-------|-------|
 | **Cadence** | Weekly (descriptive only — no auto Exa) |
-| **Last run** | 2026-09-07 |
-| **Next due** | 2026-09-14 |
+| **Last run** | 2026-10-09 |
+| **Next due** | 2026-10-16 |
 | **Script** | `python3 scripts/wiki_gap_detect.py` |
 | **Report** | `.local/reports/wiki-gap-detect-YYYY-MM-DD.txt` |
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# OSINT K285 Phase-1 verify. FILE and HITL only. 1 Integrate lead (Rapid-MLX), licence unconfirmed.
+# OSINT K285 Phase-1 verify. Rapid-MLX CLI is installed. API licence field stays NOASSERTION.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT"
@@ -40,5 +40,5 @@ grep -q "NOASSERTION" wiki/entities/tools/rapid-mlx.md
 grep -q "OSINT K285" wiki/index.md
 grep -q "K285" wiki/log.md
 grep -q "K285" ROADMAP.md
-echo "1 Integrate lead (Rapid-MLX, licence unconfirmed). FILE and HITL only. No install."
+echo "Rapid-MLX CLI installed (Apache-2.0 file). API field still NOASSERTION. No model pull."
 echo "=== DONE ==="

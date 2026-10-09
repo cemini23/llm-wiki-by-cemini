@@ -13,15 +13,15 @@ related:
   - meta/pta-backtest-cadence.md
 maturity: core
 created: 2026-05-27
-updated: 2026-06-15
+updated: 2026-10-09
 ---
 
 ## Narrative
 
 | Field | Value |
 |-------|-------|
-| **Last run** | 2026-05-27 |
-| **Next due** | 2026-08-27 |
+| **Last run** | 2026-10-09 |
+| **Next due** | 2027-01-07 |
 | **Command** | `bash scripts/run_equity_signal_backtest.sh` |
 | **Requires** | Laptop Arctic `.local/arctic-market-dataset/` or `scripts/refresh_arctic_equity_bars.py` — **not** `ssh cemini-librarian` (deleted 2026-06-14) |
 
