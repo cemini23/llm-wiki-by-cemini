@@ -383,6 +383,16 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K288 — 2026-10-10
+Dual-ID: **OSINT K288**. FILE and HITL only. **0 Integrate GO.**
+- **The eval docx is inverted.** `Evaluating DFS and Betting Repositories.docx` marks **20/20 rows UNAVAILABLE** with "HTTP 404". **`gh api` found all 19 GitHub repos live** — several pushed weeks before the docx ran. **The reachability layer is broken**, and the docx's works-cited is **confabulated from username substrings** (`atlantahouseplants/…` → an Atlanta plant shop). Do not trust this docx's sources.
+- **DFS / parlay repos route to CeminiDFS + CeminiParlays as briefs. Operator guidance (2026-10-10): licence weight is lowered for DFS and parlay evaluations** — judge on fit and technique. **Never scrape sportsbook boards. Never auto-submit.** A human types every line. (`louaih/bonus-hedge` is MIT; the rest carry no licence.)
+- **Recap zips are desk output, not sources.** `dfsrecapweek4.zip` / `week4parlaysrecap.zip` → briefs (all `do_not_auto_apply`). Recurring defects: **ticket-capture completeness (three weeks running)** and **off-card bleed**. No repo edit from a recap desk.
+- **War / Swarmer.** The 2 PDFs are **revisions of one note** → `REARM_War_Profit_2026-10-08.pdf` is **canonical**; `How to profit off war.pdf` superseded. New evidence: the **sourced dossier** and the **Ratel revenue check**. ⚠ **Correction: Ratel's FY2024/25 statements are AUDITED**, not unaudited. The FY2026 earnout needs **7× H1 deliveries** — only the **$86.6M of advances** converting in H2 gets there.
+- **arXiv (2).** **NOMOS** — a written policy compiled into a **deterministic, LLM-free tool-call gate**; violations **66.3% → 2.6%**, AgentDojo banking **ASR 0.0%**. **RESOLVE repairs 37% / rejects 13%** → policy extraction **must be statically verified**. Implementation **not released**. Gesture benchmark — **SC, a common metric, correlates with no perceptual dimension**; semantic scoring (SGP) is the right one.
+- **Feeds (4).** **TypeSafe/Jev >$100M ARR, $7.5B valuation, 3 weeks after launch**; decision models became a category (OpenAI Decisions, MS Decision-1, Perplexity decider, Cloudflare clef, vLLM). **Unsloth turns Qwen3.5-4B into a decision model on 8GB VRAM**; **routing cut median Open SWE cost 64%**. **Standard Bots** — perception learned, motion conventional, inference on-prem. **AlphaFold** — the right scaling law beats scale. **Polymarket Protocol V2 → migration Nov 2** (**no pm scp**). Pyth partners with **Exa for agent market data via MCP**.
+- **Verify:** `bash scripts/adopt_k288_phase1.sh`. **No install. No scrape. No auto-submit. No xsp/pm scp. No `/route` swap.**
+
 ## OSINT K285 — 2026-10-08
 Dual-ID: **OSINT K285**. FILE and HITL only. **1 Integrate lead (Rapid-MLX), licence unconfirmed.**
 - **One eval docx, 20 URLs** (reverse engineering, local inference, agent orchestration, graphics pipelines, toolchain). **1 Integrate · 5 Extract · 1 Watch · 10 Context · 3 Pass.** **Zero dead links — second consecutive all-real batch** (K284 also clean; K281–K283 had 6–7 each).

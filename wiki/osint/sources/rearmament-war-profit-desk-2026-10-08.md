@@ -5,9 +5,11 @@ tags: [source, defense, rearmament, munitions, drones, desk-note]
 keywords: [LHX, MRCY, MP, AVAV, KTOS, RCAT, ONDS, UMAC, Rubio, Athens, FY2027, Patriot]
 related:
   - concepts/rearmament-defense-growth-thesis.md
+  - sources/x-post-rubio-trade-framing-2026-10-08.md
+  - sources/x-post-russia-escalation-2026-10-08.md
 maturity: draft
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-10
 ---
 
 ## Relations
@@ -33,6 +35,19 @@ The note ties a policy signal to an appropriations fact. Rubio's 7 October 2026 
 Eight growth names carry the theme, not the mega-cap primes. See the concept page for the list and the trade structure.
 
 The note passed an independent fact-check and a nine-model OpenRouter audit (about $1.27 total). Corrections applied: the munitions percentage, several market caps, an award qualification, a probe description, and loose causality. The SEO/GEO handoff for the Outlier article lives in the sibling workspace.
+
+## K288 — the published PDF pair, and the evidence layer (2026-10-10)
+
+**Two PDFs of this note arrived in the inbox, and they are two revisions of one document:**
+`How to profit off war.pdf` (created 2026-10-08 14:14 UTC) and `REARM_War_Profit_2026-10-08.pdf` (19:16 UTC). Both 7 pages, same title, same eight names, same numbers, byte-identical except **one paragraph** in the escalation leg.
+
+**The revision changed:** the Latvia incursion date ("7 October" → "**5 and 6 October**"), "substation perimeter" → "distribution cabinet", "surveillance cameras" → "border cameras", "Latvia's official line" → "Latvia's border chief"; **added Lithuania's ~100 troops to its Kaliningrad border and Russia's 48 missiles + 130 drones on Ukraine (≥28 killed)**; dropped the Gomel-drone / Black-Sea cargo-ship sentences.
+
+**→ `REARM_War_Profit_2026-10-08.pdf` is canonical. `How to profit off war.pdf` is superseded.** Both archived to egress.
+
+**Companion evidence layers:**
+- @sources/x-post-rubio-trade-framing-2026-10-08.md — **negative result: no X post framed the Athens speech as a trade.** The thesis is the arithmetic, not the speech.
+- @sources/x-post-russia-escalation-2026-10-08.md — the escalation posts, recording the **pre-correction** Oct 7 framing.
 
 ## Snippets
 

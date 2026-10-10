@@ -30,6 +30,17 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-10 — K288 ingest)
+
+- **K288 ingest** — 15 inbox files → 11 source pages + 3 hubs, plus the Swarmer/rearmament evidence and recap briefs. **Zero clones. No install. 0 Integrate GO.**
+- **The eval pipeline's reachability layer is broken.** The DFS eval docx marked **20/20 rows UNAVAILABLE (404); all 19 GitHub repos are live.** Its works-cited is confabulated from username substrings. **Add a gate: verify a UNAVAILABLE verdict with `gh api` before trusting it.**
+- **DFS / parlays got the week's material.** 19 live repos (devig machine, odds search, VIP console, DFS optimizers, bonus hedge) + Week-4 recap **tool-gaps**. Routed to **CeminiDFS** and **CeminiParlays**. **Operator guidance: licence weight is lowered for DFS/parlay evals.** Recurring defects: **ticket-capture completeness (3 weeks)** and **off-card bleed**.
+- **Swarmer thesis corrected.** Ratel's **FY2024/25 statements are AUDITED**, not unaudited. The FY2026 earnout needs **7× H1 deliveries** — only the $86.6M of advances converting gets there; Ratel reports **going-concern doubt**. The war note's 2 PDFs are revisions → **file 2 canonical**.
+- **The K286 typed-judgement pattern became an industry category.** **TypeSafe/Jev >$100M ARR at $7.5B, three weeks after launch**; every major vendor shipped a decision model the same week; **Unsloth runs a 4B decision model on 8GB VRAM**; **routing cut SWE cost 64%**.
+- **NOMOS** — compile a written policy into a **deterministic tool-call gate**: violations **66.3% → 2.6%**, banking **ASR 0.0%**. **37% of extracted rules needed repair** → extraction must be validated.
+- **Open (not started):** sibling brief copies pending (Terminal panel); **Basgiath** track continues in its own repo. Cadences ran on Oct 9 (gap detect + quarterly backtests).
+- **Boundary:** no install, no scrape, no auto-submit, no xsp/pm scp, no `/route` swap.
+
 ## Current state (2026-10-09 — K287 ingest)
 
 - **K287 ingest** — 20 inbox files. One eval source page, eight arXiv pages, one feeds hub. **18 of 18 GitHub repos exist.** No install.

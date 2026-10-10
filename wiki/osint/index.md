@@ -8,6 +8,26 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K288 ingest (2026-10-10)
+OSINT K288: **15 inbox files → 11 source pages + 3 hubs**, plus the Swarmer/rearmament evidence layer and two recap briefs. One eval docx (20 rows), 2 arXiv, 4 feeds, plus the war/Swarmer cluster. **The eval docx is inverted:** it marks **20/20 rows UNAVAILABLE (404)**, but `gh api` found **all 19 GitHub repos live** — several pushed weeks earlier. **The eval's reachability layer is broken**, and its works-cited is **confabulated from username substrings**. DFS/parlay rows route to CeminiDFS/CeminiParlays (**licence weight lowered per operator**). The 2 recap zips are **desk output**, not sources → briefs. War: the 2 PDFs are **revisions of one note** (**file 2 canonical**); the **Ratel revenue check corrects the Swarmer note — FY24/25 are AUDITED**. **NOMOS**: a written policy compiled into a **deterministic, LLM-free tool-call gate** (violations 66.3%→2.6%, AgentDojo ASR 0.0%). **TypeSafe/Jev >$100M ARR, $7.5B valuation; decision models became a category** — the K286 pattern, validated. **FILE only. No install. No scrape. No auto-submit.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k288-eval](concepts/k288-eval-wave.md) | DFS eval's mass false negative; recap tool-gaps | draft |
+| [k288-arxiv](concepts/k288-arxiv-wave.md) | NOMOS deterministic gates; gesture eval | draft |
+| [k288-feeds](concepts/k288-feeds-wave.md) | Decision models a category; Polymarket V2 | draft |
+| [eval-dfs-betting](sources/eval-dfs-betting-repositories-2026-10-10.md) | 20 rows "dead" — 19 live | draft |
+| [swarmer-dossier](sources/swarmer-sourced-dossier-2026-10-08.md) | Sourced dossier; CONFIRMED/CLAIMED labels | draft |
+| [swarmer-ratel-check](sources/swarmer-ratel-revenue-check-2026-10-08.md) | Earnout math; FY24/25 **audited** | draft |
+| [x-rubio-trade](sources/x-post-rubio-trade-framing-2026-10-08.md) | No X post framed the speech as a trade | draft |
+| [x-russia-escalation](sources/x-post-russia-escalation-2026-10-08.md) | Escalation posts; pre-correction framing | draft |
+| [nomos](sources/arxiv-2610.11030-nomos-2026-10-10.md) | Policy → static tool-call gate | draft |
+| [gesture-bench](sources/arxiv-2610.11669-co-speech-gesture-benchmark-2026-10-10.md) | A metric that correlates with nothing | draft |
+| [jev-100m-arr](sources/substack-rss-latent-space-2026-10-10-typesafe-jev-100m-arr.md) | TypeSafe/Jev $7.5B; decision models | draft |
+| [standard-bots](sources/newsletter-rss-latent-space-2026-10-10-standard-bots-reliable-execution.md) | Perception learned; motion conventional | draft |
+| [alphafold-bitterness](sources/newsletter-rss-latent-space-2026-10-10-alphafold-bitter-lesson.md) | Right scaling law > scale | draft |
+| [wublock-weekly](sources/substack-rss-wublock-2026-10-10-weekly-project-updates.md) | Polymarket V2; Pyth 100% buyback | draft |
+
 ### K287 ingest (2026-10-09)
 OSINT K287: **20 inbox files**. One eval source page (20 rows, pass rows stay on that page), eight arXiv source pages, one feeds hub. **18 of 18 GitHub repos exist.** Integrate row `BerriAI/litellm` is Phase-0 **NO-GO** (second gateway; local proxy on 127.0.0.1:8791). `open-code-review` stays GO REFERENCE (pattern not new). `sogen` is GPL-2.0 NO-GO. `daily_stock_analysis` is MIT CONDITIONAL-GO, alert-only, not started. Swarmer concept verdict **UNSOUND**.
 

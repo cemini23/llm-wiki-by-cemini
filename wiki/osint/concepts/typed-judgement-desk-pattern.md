@@ -10,6 +10,8 @@ related:
   - concepts/grok-bot-operator-patterns.md
   - concepts/agent-tool-use-verification.md
   - concepts/agent-harness-verification-bottleneck.md
+  - sources/substack-rss-latent-space-2026-10-10-typesafe-jev-100m-arr.md
+  - concepts/k288-feeds-wave.md
 maturity: draft
 created: 2026-10-08
 updated: 2026-10-08
@@ -95,3 +97,17 @@ All four are **advisory**. The engine advises; code decides; a human submits.
 ### Boundary
 
 FILE only. **No trading egress from any agent VM.** **No `/route` swap** — the engine is a judgement service, not a model router. No key in git.
+
+## K288 — the pattern became an industry category (2026-10-10)
+
+Two days after this page was written, the pattern became a **product category**.
+
+**TypeSafe/Jev: >$100M ARR, $7.5B valuation, three weeks after launch.** In the same week: an **OpenAI Decisions API** (probability / pick / score, $0.10/M input, no output charge), **Microsoft-Decision-1**, **Perplexity `pplx-decider-v1.1-27b`** (94.5% Decision Bench, $0.017/1K), **Cloudflare `clef`** (`clef-flash` cheaper than Jev), **Liquid `d1`**, and **vLLM Semantic Router Decision 2.0** (multiple questions, per-option probabilities, one pass).
+
+**The recipe is now portable.** **Unsloth** turns **Qwen3.5-4B into a decision model on 8GB VRAM**; a Qwen3.5-0.8B walkthrough reports **37% → 65% in 60 steps (~10 min on 4GB)**. You do not need the vendor API to run the desk.
+
+**The economics are now measured.** LangChain reports that **routing each task to the cheapest adequate model cut median Open SWE cost per task by 64%.** The `noul`/`choice`/`score` split is exactly that routing, moved inside the desk.
+
+**Two cautions from the same wave.** Decision models **still struggle on consistency and complex decisions** (early Microsoft-Decision-1 evaluation). And **agent teams cost 1.8–5.1× more** for little gain (Vals AI: only Sol at medium effort improved, +7.3; Opus's sequential waves showed no significant gain). **The judge is worth it; a bigger team of judges is not.**
+
+[Source: @sources/substack-rss-latent-space-2026-10-10-typesafe-jev-100m-arr.md]

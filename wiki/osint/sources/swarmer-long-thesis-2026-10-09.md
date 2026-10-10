@@ -5,9 +5,11 @@ tags: [source, defense, drones, ukraine, roll-up, small-cap, speculative]
 keywords: [SWMR, Swarmer, Erik Prince, Ratel Robotics, Vectus, drone swarm, Ukraine, Trident OS]
 related:
   - concepts/swarmer-prince-rollup-thesis.md
+  - sources/swarmer-sourced-dossier-2026-10-08.md
+  - sources/swarmer-ratel-revenue-check-2026-10-08.md
 maturity: draft
 created: 2026-10-09
-updated: 2026-10-09
+updated: 2026-10-10
 ---
 
 ## Relations
@@ -37,6 +39,18 @@ The first acquisition, Ratel Robotics, has audited FY2025 net sales of $18.6M an
 Research relied on SEC filings (10-Q, DEFM14A, POS AM, PREM14A, 8-K), the WSJ via Ukrainska Pravda, Defense One, Auterion, and New York Magazine. A Grok bot dossier and two rounds of verification corrected several claims: Prince holds zero shares (the 1,774,725 figure is an option), and the Ratel dilution split is 91.6 / 8.4 at closing, not 74.9 / 25.1.
 
 Pending: the multi-model audit and the Outlier handoff, both scheduled for when grok cli access returns.
+
+## K288 — the evidence layer, and one correction (2026-10-10)
+
+Two primary-source documents landed for this note:
+
+- @sources/swarmer-sourced-dossier-2026-10-08.md — the full sourced dossier. FY2025 revenue **$309,920**; Q2 2026 **$216,413**; **~99% of Q2 from one counterparty group**; Prince holds **no SWMR shares**; close **$13.13** on Oct 8 after a $5 IPO and an $83.30 peak (≈84% drawdown).
+- @sources/swarmer-ratel-revenue-check-2026-10-08.md — the Ratel earnout fact-check.
+
+**⚠ Correction to this note: the Ratel FY2024 and FY2025 statements are AUDITED**, not unaudited (US GAAS, unmodified opinion with a going-concern paragraph, dated 2026-09-11). Only the H1 interims are unaudited, and those were **reviewed** (AU-C 930). The "unaudited" framing is wrong.
+
+**The earnout is the crux, and it is a stretch.** H1 2026 Ratel revenue $9.60M is **12.5% of the $77M FY2026 target**; H2 needs **$67.4M** — **7.0× H1**, **3.6× all of FY2025 in six months**. It is achievable only by converting the **$86.6M of advances** already received into delivered product in H2. **Ratel separately reports substantial doubt about going concern.**
+
 
 ## Snippets
 
