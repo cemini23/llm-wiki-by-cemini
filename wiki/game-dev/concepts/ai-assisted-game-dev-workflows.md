@@ -22,6 +22,7 @@ related:
   - concepts/ccgs-workflow-extraction.md
   - sources/arxiv-2609.31076-abstraction-ladder-code-skills-2026-09-30.md
   - sources/arxiv-2609.35928-prompted-identity-factionalism-2026-09-30.md
+  - sources/arxiv-2610.13022-reqclarifybench-clarification-2026-10-12.md
 maturity: validated
 created: 2026-06-13
 updated: 2026-07-03

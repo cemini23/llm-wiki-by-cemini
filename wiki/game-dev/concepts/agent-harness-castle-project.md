@@ -67,6 +67,9 @@ related:
   - sources/arxiv-2610.09683-system-switch-fast-slow-gate-2026-10-09.md
   - sources/arxiv-2610.11794-memento-3-reflective-rulebooks-2026-10-09.md
   - sources/inbox-arxiv-reject-batch-2026-10-09.md
+  - sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md
+  - sources/arxiv-2610.13022-reqclarifybench-clarification-2026-10-12.md
+  - sources/inbox-arxiv-reject-batch-2026-10-12.md
 maturity: draft
 created: 2026-06-13
 updated: 2026-10-03
@@ -153,6 +156,8 @@ Canon table: `briefs/W2-harness-kickoff.md` § MCP admission.
 | Learn2Play | Text games | citation only | **Complete records beat summaries** — learning substrate |
 | SpeedrunBench | 9 games | citation only | Self-improvement measurement shape |
 | WorldSolver | Graphics sim | citation only | **Visual fidelity** as a verification axis |
+| SpireBench | Slay the Spire | citation only | Long-horizon gap widens; cross-run memory fails |
+| ReqClarifyBench | Repo-level SWE | citation only | **Clarify vague intent before generating** |
 
 ### Phase-1 wires (2026-09-30)
 
@@ -196,7 +201,13 @@ Learn2Play Bench finds that retaining **complete records of actions and feedback
 
 **Rule H8 — re-validate inherited notes; an accumulating corpus can harm** [CONFIRMED — arXiv 2610.05041]
 
-The strongest counterweight to H3 in this wiki. In the Mafia study, societies that carried **sixty generations of their own inherited strategy notes scored below societies with none**, and adaptation destroyed the signalling it depended on. A durable ledger is not automatically an asset — it can encode a stale or self-defeating convention. Practical rule for castle-sim: keep the ledger **small and verified**, and treat inherited derived notes as a **re-validation risk** rather than accumulated wisdom. See @sources/arxiv-2610.05041-mafia-communication-collective-inference-2026-10-07.md.
+The strongest counterweight to H3 in this wiki, and now backed by **three independent studies**:
+
+1. **Mafia** — societies carrying **sixty generations of their own inherited strategy notes scored below societies with none**, and adaptation destroyed the signalling it depended on. See @sources/arxiv-2610.05041-mafia-communication-collective-inference-2026-10-07.md.
+2. **Learn2Play** — **complete raw records beat summarised ones** as a learning substrate. See @sources/arxiv-2610.08215-learn2play-bench-experience-2026-10-07.md.
+3. **SpireBench** — models **did not improve from the memories they write across runs**, and those memories were **often wrong and overly cautious**. See @sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md.
+
+A durable ledger is not automatically an asset — it can encode a stale or self-defeating convention. Practical rule for castle-sim: keep the ledger **small and verified**, keep the **raw record** alongside it, and treat inherited derived notes as a **re-validation risk** rather than accumulated wisdom.
 
 **Rule H9 — measure coordination cost, not just outcome** [CONFIRMED — arXiv 2610.04672]
 
@@ -225,6 +236,20 @@ Accuracy, calibration, and sensitivity are distinct. Models with similar accurac
 **Rule H14 — a revisable rulebook plus a deterministic replay gate** [TENTATIVE — arXiv 2610.11794]
 
 MEMENTO 3 keeps a natural-language rulebook as persistent memory with **unknown aspects deliberately underspecified**, compiles it to executable code, and **admits an update only when the code is judged faithful to the rulebook AND cell-exact replay reproduces the observed transitions**. This is the concrete shape for **H3**'s "promote only confirmed results": a change is admitted on a deterministic replay, not a judgement call. It also resolves the tension between **H7** (keep complete raw records) and **H8** (inherited notes can harm) — keep the raw transitions, derive a revisable summary, accept edits only on replay. See @sources/arxiv-2610.11794-memento-3-reflective-rulebooks-2026-10-09.md.
+
+### Phase-1 wire (2026-10-12)
+
+**Rule H15 — clarify a vague intent before writing the spec, and judge the spec not the questions** [CONFIRMED — arXiv 2610.13022]
+
+ReqClarifyBench measures how well models turn **vague user intent into clear requirements through interaction**, and why it matters: an incorrect guess about intent **propagates through later phases and causes costly rework** in long-horizon work. The castle-sim planner receives exactly this kind of input — a solo operator's vague milestone intent — and everything downstream inherits the planner's reading.
+
+The measured effect is large: clarification lifted requirement-document alignment from **0.212 to 0.494 (+133.1%)**, and downstream game-task scores rose **0.012 → 0.273 → 0.418** across intent-only, direct-document, and clarified-document, which is the strongest evidence in the wiki that the spec quality drives the build.
+
+**Two cautions the paper adds, and they matter.** First, **clarification skill and document quality are different things** — the model with the best documents (GPT-5.6-Sol) had the *weakest* clarification score, and the best clarifier had weak document alignment. Second, and more pointedly: **coding-agent harnesses raised clarification effectiveness but did not raise document quality** (ReqAlign fell 15.2% and 24.0% under a nitpicking persona). Asking more questions is not the goal.
+
+Practical rule: the planner asks when it cannot state the acceptance test unambiguously, and the gate is the **spec**, not the number of questions asked. See @sources/arxiv-2610.13022-reqclarifybench-clarification-2026-10-12.md.
+
+Two supporting observations from the same window: SpireBench shows the long-horizon gap **widens as a run lengthens** — the strongest models match experts in act one and fall behind after — so early planner errors compound. And its risk finding is a concrete failure mode to watch in an AI lord: agents **preserve resources rather than investing them to grow stronger**. See @sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md.
 
 ### Minecraft agent literature (2026-10-05) [CONFIRMED]
 

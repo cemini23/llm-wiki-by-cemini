@@ -331,3 +331,6 @@ Catalog of all wiki pages. Updated on each ingest.
 | [arxiv-2610.11794-memento-3-reflective-rulebooks-2026-10-09](sources/arxiv-2610.11794-memento-3-reflective-rulebooks-2026-10-09.md) | read |
 | [inbox-arxiv-reject-batch-2026-10-09](sources/inbox-arxiv-reject-batch-2026-10-09.md) | read |
 | [k284-k285-basgiath-clip-tooling-2026-10-08](sources/k284-k285-basgiath-clip-tooling-2026-10-08.md) | read |
+| [arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12](sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md) | read |
+| [arxiv-2610.13022-reqclarifybench-clarification-2026-10-12](sources/arxiv-2610.13022-reqclarifybench-clarification-2026-10-12.md) | read |
+| [inbox-arxiv-reject-batch-2026-10-12](sources/inbox-arxiv-reject-batch-2026-10-12.md) | read |

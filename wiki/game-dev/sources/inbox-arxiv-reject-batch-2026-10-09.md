@@ -12,6 +12,7 @@ related:
   - sources/k284-k285-basgiath-clip-tooling-2026-10-08.md
   - meta/cross-wiki-routing.md
   - concepts/game-dev-wiki-scope.md
+  - sources/inbox-arxiv-reject-batch-2026-10-12.md
 read_status: read
 source_type: operator-triage
 maturity: validated

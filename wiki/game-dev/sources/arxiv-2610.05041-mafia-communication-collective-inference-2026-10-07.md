@@ -10,6 +10,7 @@ related:
   - sources/arxiv-2609.40324-cogentic-proof-harness-2026-10-03.md
   - sources/inbox-arxiv-reject-batch-2026-10-07.md
   - sources/arxiv-2610.11794-memento-3-reflective-rulebooks-2026-10-09.md
+  - sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2610.05041

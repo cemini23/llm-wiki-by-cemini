@@ -9,6 +9,7 @@ related:
   - sources/arxiv-2610.08215-learn2play-bench-experience-2026-10-07.md
   - sources/arxiv-2610.05041-mafia-communication-collective-inference-2026-10-07.md
   - sources/inbox-arxiv-reject-batch-2026-10-09.md
+  - sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md
 read_status: read
 source_type: arxiv-paper
 source_url: https://arxiv.org/abs/2610.11794

@@ -22,6 +22,7 @@ related:
   - sources/arxiv-2610.08076-speedrunbench-strategy-formation-2026-10-07.md
   - sources/arxiv-2610.04261-social-deduction-rft-2026-10-07.md
   - sources/arxiv-2610.09683-system-switch-fast-slow-gate-2026-10-09.md
+  - sources/arxiv-2610.12596-spirebench-long-horizon-memory-2026-10-12.md
 maturity: validated
 created: 2026-06-20
 updated: 2026-06-30

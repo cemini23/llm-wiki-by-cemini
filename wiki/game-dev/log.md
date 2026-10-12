@@ -4,6 +4,18 @@ Append-only chronological log.
 
 ---
 
+## [2026-10-12] ingest | 2 arXiv PDFs (all ingested) + Phase-1 H15
+
+- Inbox: 2 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-12.md + 2 source pages. **Third consecutive all-ingest batch.**
+- **Ingest:** SpireBench (long-horizon strategic play in Slay the Spire; cross-run memory), ReqClarifyBench (interactive requirement clarification for repository-level work)
+- Phase-0: no resolvable repos → both STEAL-FROM
+- **H8 strengthened to three independent sources:** Mafia (60 generations of notes scored below none) + Learn2Play (raw records beat summaries) + SpireBench (models did not improve from their own memories, which were often wrong and overly cautious)
+- Phase-1: **H15** clarify a vague intent before writing the spec — ReqClarifyBench measured ReqAlign 0.212 → 0.494 (+133.1%) and downstream game scores 0.012 → 0.273 → 0.418; but coding-agent harnesses raised *clarification* while **lowering** document quality (−15.2% / −24.0%), so the gate is the spec, not the question count
+- Eval bench ladder extended with SpireBench and ReqClarifyBench
+- Sweeps: @sweeps/2026-10-10-daily.md · @sweeps/2026-10-11-daily.md · @sweeps/2026-10-12-daily.md
+
+---
+
 ## [2026-10-09] ingest | 4 arXiv PDFs (all ingested) + 2 clip-tooling briefs + Phase-1 H11–H14
 
 - Inbox: 4 PDFs → @sources/inbox-arxiv-reject-batch-2026-10-09.md + 4 source pages. **Second consecutive all-ingest batch — 0 rejects.**
