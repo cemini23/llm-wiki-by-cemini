@@ -12,6 +12,8 @@ related:
   - concepts/agent-harness-verification-bottleneck.md
   - sources/substack-rss-latent-space-2026-10-10-typesafe-jev-100m-arr.md
   - concepts/k288-feeds-wave.md
+  - sources/newsletter-rss-latent-space-2026-10-12-anthropic-dynamic-workflows.md
+  - concepts/k289-feeds-wave.md
 maturity: draft
 created: 2026-10-08
 updated: 2026-10-08
@@ -111,3 +113,20 @@ Two days after this page was written, the pattern became a **product category**.
 **Two cautions from the same wave.** Decision models **still struggle on consistency and complex decisions** (early Microsoft-Decision-1 evaluation). And **agent teams cost 1.8–5.1× more** for little gain (Vals AI: only Sol at medium effort improved, +7.3; Opus's sequential waves showed no significant gain). **The judge is worth it; a bigger team of judges is not.**
 
 [Source: @sources/substack-rss-latent-space-2026-10-10-typesafe-jev-100m-arr.md]
+
+## K289 — the orchestration layer, from the vendor's own mouth (2026-10-12)
+
+Anthropic presented **dynamic workflows ("flows")** at AI Engineer NYC. A lead agent writes a plan, then **Claude writes an orchestration program** that launches agents, collects results, and manages information flow — **Claude chooses the topology**.
+
+**The candid Q&A confirms what this page already holds:**
+
+- **How many agents?** "The answer really is **evals and lower defaults**." Parallelism must be *explicitly* encouraged.
+- **Does the lead agent know its budget?** **No** — developers set a session budget; the model does not see it. Informing models of budgets "could make the agents a little bit anxious."
+- **Cost:** flows cost **"much more"** than a single agent.
+- **Self-improvement:** not built in; the presenters suggested **hill-climbing and dreaming**.
+
+**Paired finding from the arXiv batch:** **POrchestra** (@sources/arxiv-2610.13485-proactive-agentic-orchestration-2026-10-12.md) supplies the missing feedback loop — **sub-agents proactively request harness adjustments**, and hindsight attributes each request to the orchestrator decision that caused it.
+
+**And the failure mode to hold:** **harness staleness** — a tuned harness decays as base models improve (@sources/arxiv-2610.13494-humanize-mle-agents-2026-10-12.md). The judge is worth building; the harness is the part that ages.
+
+[Source: @sources/newsletter-rss-latent-space-2026-10-12-anthropic-dynamic-workflows.md]

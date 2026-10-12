@@ -8,6 +8,34 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K289 ingest (2026-10-12)
+OSINT K289: **21 inbox files → 20 source pages + 2 hubs** (one Latent Space meetups note has no research content). **No eval docx this wave** — 8 arXiv papers, 13 feeds. **ToFu** is the headline: tool arguments from an LLM are **untrusted**, and the **Repeat-After-Me** attack (echo tool-call-shaped text) makes the orchestrator execute it — **253 verified bugs across 343 tools in 118 MCP servers** of 273 scanned. **Anthropic shipped dynamic workflows**: the lead agent writes a plan, **Claude writes the orchestration program**, and the model **does not know its budget**. Quant: **FLEX options** are a marker of institutional vol demand, not a directional predictor; **three static vanillas cut rough-Heston variance-swap hedging error >95%**. **CFTC: casino products are not swaps; a proposed rule writes event contracts into the swap definition** — a preemption play. **FILE only. No install. No scrape. No auto-submit. No xsp/pm scp.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k289-arxiv](concepts/k289-arxiv-wave.md) | Vol hedging, orchestration, MCP fuzzing | draft |
+| [k289-feeds](concepts/k289-feeds-wave.md) | CFTC swap rules, dynamic workflows, xsp week | draft |
+| [fomo-flex](sources/arxiv-2610.13044-fomo-flex-options-2026-10-12.md) | FLEX = institutional vol marker | draft |
+| [three-options](sources/arxiv-2610.13543-three-options-rough-heston-2026-10-12.md) | 3 vanillas cut hedging error >95% | draft |
+| [attention-mlp](sources/arxiv-2610.13078-attention-mlp-refusal-2026-10-12.md) | Recognition ≠ refusal | draft |
+| [tofu](sources/arxiv-2610.13651-tofu-orchestrator-fuzzing-2026-10-12.md) | 253 bugs in 118 MCP servers | draft |
+| [porchestra](sources/arxiv-2610.13485-proactive-agentic-orchestration-2026-10-12.md) | Sub-agents request re-orchestration | draft |
+| [hma](sources/arxiv-2610.13494-humanize-mle-agents-2026-10-12.md) | Harness staleness; context-reset | draft |
+| [a-saw](sources/arxiv-2610.13647-a-saw-agentic-software-architecture-2026-10-12.md) | Docs behind a review gate | draft |
+| [margos](sources/arxiv-2610.13772-margos-2026-10-12.md) | Reproducibility checklist | draft |
+| [talon-weekly](sources/substack-rss-glitchspx-2026-10-11-talon-weekly-oct-12-16.md) | QQQ $760 structural invalidation | draft |
+| [iron-condor](sources/substack-rss-moontower-2026-10-11-iron-condor-destroyer.md) | Compare in standard deviations | draft |
+| [almanac](sources/substack-rss-moontower-2026-10-11-farmers-almanac-for-investing.md) | 100 years; ERP gap ~0 vs 4.7% | draft |
+| [moontower-331](sources/substack-rss-moontower-2026-10-11-moontower-331.md) | Roundup (superset of the almanac) | draft |
+| [eh-ep36](sources/substack-rss-event-horizon-2026-10-12-ep36-verifact.md) | CFTC carves casinos, claims contracts | draft |
+| [dynamic-workflows](sources/newsletter-rss-latent-space-2026-10-12-anthropic-dynamic-workflows.md) | Claude writes the orchestration program | draft |
+| [capital-flows-debt](sources/substack-rss-capital-flows-2026-10-11-sovereign-debt-volatility.md) | France-vs-Bund stress read | draft |
+| [outlier-swarmer](sources/substack-rss-outlier-weekly-2026-10-12-swarmer-revenue.md) | The published Swarmer letter | draft |
+| [klement-ets](sources/substack-rss-klement-2026-10-12-emissions-trading-schemes.md) | ETS raised intra-EU imports | draft |
+| [wublock-asia](sources/substack-rss-wublock-2026-10-11-asia-top10.md) | USDKG shutdown; VARA 100% reserves | draft |
+| [wublock-outlook](sources/substack-rss-wublock-2026-10-12-weekly-outlook.md) | CPI, ASML, OCP, Warsh | draft |
+| [sparktoro-human](sources/newsletter-rss-sparktoro-2026-10-12-pokemon-pokopia.md) | "Made by humans" as premium | draft |
+
 ### K288 ingest (2026-10-10)
 OSINT K288: **15 inbox files → 11 source pages + 3 hubs**, plus the Swarmer/rearmament evidence layer and two recap briefs. One eval docx (20 rows), 2 arXiv, 4 feeds, plus the war/Swarmer cluster. **The eval docx is inverted:** it marks **20/20 rows UNAVAILABLE (404)**, but `gh api` found **all 19 GitHub repos live** — several pushed weeks earlier. **The eval's reachability layer is broken**, and its works-cited is **confabulated from username substrings**. DFS/parlay rows route to CeminiDFS/CeminiParlays (**licence weight lowered per operator**). The 2 recap zips are **desk output**, not sources → briefs. War: the 2 PDFs are **revisions of one note** (**file 2 canonical**); the **Ratel revenue check corrects the Swarmer note — FY24/25 are AUDITED**. **NOMOS**: a written policy compiled into a **deterministic, LLM-free tool-call gate** (violations 66.3%→2.6%, AgentDojo ASR 0.0%). **TypeSafe/Jev >$100M ARR, $7.5B valuation; decision models became a category** — the K286 pattern, validated. **FILE only. No install. No scrape. No auto-submit.**
 

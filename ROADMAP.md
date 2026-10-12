@@ -30,6 +30,17 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-12 — K289 ingest)
+
+- **K289 ingest** — 21 inbox files → 20 source pages + 2 hubs. **No eval docx this wave.** Zero clones. No install. 0 Integrate GO.
+- **MCP security is now the top cyber item.** **ToFu**: tool arguments from an LLM are **untrusted**, and **"repeat this" is an attack** — echo tool-call-shaped text and the orchestrator executes it. **253 verified bugs across 343 tools in 118 MCP servers** of 273 scanned. The oracle is the tool's semantics, not a model.
+- **Anthropic dynamic workflows shipped.** Lead agent plans; **Claude writes the orchestration program** and picks the topology. **The model does not know its budget**; flows cost much more; **"evals and lower defaults"** decide agent count.
+- **Quant signals.** FLEX options = **institutional vol marker, not a directional predictor**; rough-Heston hedging needs **three vanillas** for >95% error reduction. Both desk-relevant; **no trade, no scp**.
+- **Prediction markets.** The CFTC **excluded casino products from "swap"** and **proposed including event contracts** — a preemption play. Kalshi sought a Sixth Circuit rehearing. SCOTUS briefs now include the NFL, 145 tribes, 39 states, Dodd, Gensler.
+- **Basgiath** continues in its own repo. **Outlier Weekly published the Swarmer letter** (2026-10-12).
+- **Open (not started):** sibling brief copies pending (Terminal panel). Cadences ran 2026-10-09; next gap-detect due 2026-10-16. Daily digests current.
+- **Boundary:** no install, no scrape, no auto-submit, no xsp/pm scp, no `/route` swap.
+
 ## Current state (2026-10-10 — K288 ingest)
 
 - **K288 ingest** — 15 inbox files → 11 source pages + 3 hubs, plus the Swarmer/rearmament evidence and recap briefs. **Zero clones. No install. 0 Integrate GO.**
