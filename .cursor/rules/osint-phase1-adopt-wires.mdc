@@ -384,7 +384,7 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
 ## OSINT K290 — 2026-10-13
-Dual-ID: **OSINT K290**. FILE and HITL only. **0 Integrate GO until Phase-0 runs.**
+Dual-ID: **OSINT K290**. FILE and HITL only. **Phase-0 ran 2026-10-13** — `gh api` verified all licences and 9 clones landed at `.local/adopts/k290/` (411 MB). **0 Integrate GO; the clones are REFERENCE only.**
 - **One eval docx (20 URLs) + 3 arXiv + 5 feeds.** One inbox file was a **byte-identical duplicate** (`2609.20804`, ingested 2026-09-18) — **not re-ingested**.
 - **VEPA (the headline).** Agent guardrails as **typed symbolic rules** with deterministic pre-action allow/refuse. Three stages: **LLM proposes patches → a deterministic verifier admits only well-formed, conflict-free rules → a Beta-posterior evidence gate activates a rule only when its risk quantile clears tolerance.** **No-Verifier ablation = −0.13 F1.** Rule eval **≈0.25 ms**. **Its own limit: the upstream neural parser sits OUTSIDE the guarantee — post-parse determinism is not end-to-end determinism.** No PoC.
 - **DistressBench.** Scores **care delivered, not refusal**. **35.3% recognition–action gap** across 25 models. **An eval that scores what a system withholds mistakes silence for safety.** FILE.

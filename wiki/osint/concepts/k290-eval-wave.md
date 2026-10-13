@@ -32,7 +32,7 @@ wire_status: policy_wired
 
 ## Raw Concept
 
-**OSINT K290 eval batch, 2026-10-13.** One .docx, **20 URLs**, batch theme *Developer Agent Tooling, Local Inference Engines, High-Performance Systems, Media Generation Stack*. **Phase-0 not run in-session** — the Bash sandbox denies `api.github.com`. Run `bash scripts/adopt_k290_phase0.sh` in the **Terminal panel**.
+**OSINT K290 eval batch, 2026-10-13.** One .docx, **20 URLs**, batch theme *Developer Agent Tooling, Local Inference Engines, High-Performance Systems, Media Generation Stack*. **Phase-0 ran 2026-10-13** (`bash scripts/adopt_k290_phase0.sh`, Terminal panel): **`gh api` confirmed every licence and 9 candidates were shallow-cloned to `.local/adopts/k290/` (411 MB of a 500 MB budget).** Still **0 Integrate GO** — the clones are REFERENCE only, and a product decision needs its own brief.
 
 ## Narrative
 

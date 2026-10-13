@@ -96,8 +96,20 @@ read_status: read
 - **CCC:** `vercel-labs/skills`, `mksglu/context-mode`, `SaladDay/cc-switch-cli`.
 - **Image-gen / Basgiath:** `storytold/artcraft`, `debpalash/VoiceStudio`, `wheresryan22/anatomy`.
 
-### Phase-0 status
-**Not run in this session.** The Bash sandbox denies outbound network for `api.github.com`, so neither `gh api` license confirmation nor clones can run here. Both must run in the **Terminal panel**: `bash scripts/adopt_k290_phase0.sh`. Until that runs, **every license value above stays `[NEEDS VERIFICATION 2026-10-13]`** and no entry is Integrate-tier.
+### Phase-0 status — RUN 2026-10-13
+`bash scripts/adopt_k290_phase0.sh` ran in the Terminal panel. **`gh api` confirmed every licence against the live repo, and all 9 Integrate/Extract candidates were shallow-cloned** to `.local/adopts/k290/` — **411 MB of a 500 MB budget**. No clone failed.
+
+**The docx licence errors are confirmed:**
+
+| Repo | Docx said | `gh api` says |
+|------|-----------|---------------|
+| `noonghunna/club-3090` | AGPL-3.0 | **Apache-2.0** |
+| `momo5502/sogen` | NOT FOUND | **GPL-2.0** |
+| `krishhgg/Insomnia` | NOT FOUND | MIT |
+
+**Two rows return `NOASSERTION`, and neither is a red flag.** `xxHash` carries a dual **BSD-2-Clause + GPL-2.0** split that GitHub's detector cannot express — the docx's split claim is substantively right. `context-mode` runs the **Elastic Licence 2.0**, which is not a licence GitHub recognises; that is the same reason it stays **Extract only**. `takumi` resolves to **Apache-2.0** from its dual, as expected.
+
+**What this does and does not change.** Licence verification no longer blocks the six Integrate candidates, and `club-3090`'s copyleft caution is void — the repo is permissive. But **the workspace still holds 0 Integrate GO**: the clones are REFERENCE data under gitignored `.local/`, and adopting any of them into a product still needs its own brief.
 
 ## Snippets
 

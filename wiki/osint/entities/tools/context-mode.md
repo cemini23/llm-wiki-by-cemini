@@ -33,7 +33,7 @@ A tool that **sandboxes tool output** — the docx claims **~98% context reducti
 
 **Claimed fit:** cut token and engineering cost across **Atto, CeminiDFS, CeminiParlays**.
 
-**Phase-0 status:** not run (sandbox network denied). Verify licence with `gh api` and clone before any use.
+**Phase-0 status:** ran 2026-10-13. Cloned to `.local/adopts/k290/context-mode` (19.6 MB). **`gh api` returns `NOASSERTION`** — the Elastic Licence 2.0 is not a licence GitHub recognises, which is consistent with it being non-OSI and with the Extract-only tier.
 
 **Related prior art in this wiki:** `@concepts/agentic-context-management.md` covers the staging/elision findings from the harness-design paper (`@sources/arxiv-2609.20804-harness-design-coding-2026-09-18.md`), which found that **staging rule-based elision before LLM summarisation is the strongest efficiency path**. `context-mode` implements the "keep it out of context, query it locally" variant of the same idea.
 

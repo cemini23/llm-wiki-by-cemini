@@ -33,7 +33,7 @@ wire_status: extract_only
 
 **Why it matters here:** this fits the **existing workspace rule** that **PII is stripped before any LLM sees civil documents**, with the established pattern set (`@concepts/atto-local-first-threat-model.md`, plus the `pii-redaction`, `privacy-filter` and `openredaction` tool pages). `openmed` is a **local NER-and-redaction** option in that chain: **neither the document nor the extracted entities leave the machine.**
 
-**Caveats to verify before use:** the docx lists **issues NOT FOUND** — thread health is unverified. And a clinical-NER model is tuned on **health records**, not on **Italian civil-registry, citizenship or genealogy documents**, which are this workspace's actual PII classes. **Do not assume transfer without testing.** **Phase-0 not run.**
+**Caveats to verify before use:** the docx lists **issues NOT FOUND** — thread health is unverified. And a clinical-NER model is tuned on **health records**, not on **Italian civil-registry, citizenship or genealogy documents**, which are this workspace's actual PII classes. **Do not assume transfer without testing.** **Phase-0 ran 2026-10-13** — **Apache-2.0** confirmed by `gh api`; cloned to `.local/adopts/k290/openmed` (151 MB). The transfer caveat above is still untested.
 
 ## Snippets
 

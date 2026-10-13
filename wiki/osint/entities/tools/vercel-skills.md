@@ -33,7 +33,7 @@ An **`npx skills`** CLI that **installs, symlinks and updates `SKILL.md`** direc
 
 **Overlap:** `@entities/tools/agent-skill-manager.md` and `@entities/tools/agent-skills.md` already cover skill packaging in this wiki. `vercel-labs/skills` is the **distribution/symlink** layer rather than the authoring layer.
 
-**Caution that applies here:** this workspace's rule is that **unsolicited third-party skill/MCP repositories are treated as hostile until allowlisted** (AgentBaiting). A symlink installer makes it **easier to point every runtime at one source** — which is exactly the supply-chain shape to review before adopting. **Phase-0 not run.**
+**Caution that applies here:** this workspace's rule is that **unsolicited third-party skill/MCP repositories are treated as hostile until allowlisted** (AgentBaiting). A symlink installer makes it **easier to point every runtime at one source** — which is exactly the supply-chain shape to review before adopting. **Phase-0 ran 2026-10-13** — MIT confirmed by `gh api`; cloned to `.local/adopts/k290/skills` (1.9 MB). The allowlist caution above still applies before adoption.
 
 ## Snippets
 

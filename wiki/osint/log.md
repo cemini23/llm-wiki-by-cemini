@@ -1,3 +1,12 @@
+## [2026-10-13] phase0 | K290 tool eval — licences verified, 9 clones
+
+- **Ran `bash scripts/adopt_k290_phase0.sh`** in the Terminal panel (the Bash sandbox denies `api.github.com`).
+- **`gh api` verified all 13 listed repos.** The docx's known errors are confirmed: **`club-3090` is Apache-2.0** (docx said AGPL-3.0 — the copyleft caution was unfounded, Integrate holds) and **`sogen` is GPL-2.0** (docx said NOT FOUND). `Insomnia` is MIT, `hydra` GPL-3.0. **`xxHash` and `context-mode` return `NOASSERTION`** — expected, not a red flag: xxHash's dual BSD-2-Clause + GPL-2.0 split is not expressible by GitHub's detector, and Elastic Licence 2.0 is not a licence GitHub recognises (the same fact that keeps context-mode at Extract-only).
+- **9 shallow clones → `.local/adopts/k290/` (411 MB of a 500 MB budget).** No clone failed. Integrate: skills (1.9 MB), xxHash (6.9 MB), cc-switch-cli (58.8 MB), club-3090 (46.8 MB), takumi (105.8 MB), anatomy (14.5 MB). Extract: context-mode (19.6 MB), openmed (150.9 MB), DigUp (15.8 MB). Skipped by design: artcraft, VoiceStudio, Unlimited-OCR, strip, dx-ball, and the Context rows.
+- **Still 0 Integrate GO.** The clones are REFERENCE data under gitignored `.local/`; product adoption needs its own brief.
+- **Pages updated:** `sources/eval-url-revenue-opportunity-2026-10-13` (Phase-0 status + verified-licence table), `concepts/k290-eval-wave`, entity pages `takumi` / `context-mode` / `vercel-skills` / `openmed`, the K290 wires header, and the Atto + Basgiath briefs. **The Basgiath brief now records that Phase-0 skipped both of its rows** — neither licence is confirmed.
+- **Boundary unchanged:** no install, no scrape, no auto-submit, no xsp/pm scp, never auto-arm.
+
 ## [2026-10-13] ingest | K290 — VEPA guardrails + DistressBench + 20-URL tool eval + 5 feeds
 
 - **9 inbox files → 8 source pages + 3 hubs + 9 entity/concept pages + 6 briefs.** One file was a **byte-identical duplicate**: `2609.20804v1.pdf` (harness design for coding agents, sha256 `a39a9e03…`) matches `sources/arxiv-2609.20804-harness-design-coding-2026-09-18.md` exactly — **not re-ingested**, raw not archived.

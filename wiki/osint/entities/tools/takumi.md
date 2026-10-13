@@ -33,7 +33,7 @@ Renders **JSX / HTML / CSS** to **OG (Open Graph) images** and **paged PDF**, in
 
 **Why it matters here:** the workspace already treats **HTML as the output medium** for client-facing artifacts (`@entities/tools/html-effectiveness-pattern.md`). `takumi` is a **rendering primitive** for that pipeline: HTML in, **print-ready PDF or share card** out, deterministic and dependency-light. Pairs with the existing `@entities/tools/typst.md` and `@entities/tools/stirling-pdf.md` pages as an alternative PDF path.
 
-**Phase-0 status:** not run — licence confirmation and clone require the **Terminal panel**.
+**Phase-0 status:** ran 2026-10-13. `gh api` confirms **Apache-2.0** (GitHub resolves the dual to Apache-2.0; the docx said MIT OR Apache-2.0). Cloned to `.local/adopts/k290/takumi` (106 MB).
 
 ## Snippets
 
