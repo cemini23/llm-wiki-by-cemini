@@ -45,7 +45,7 @@ Rule: do not assume kb-server, stash, or librarian SSH paths exist. Query wikis 
 ## Folder layout
 
 ```
-LAPTOP (~/Desktop/OSINT WORKSPACE/):
+LAPTOP (~/Projects/OSINT WORKSPACE/):
   CLAUDE.md                    # this file — the schema
   LESSONS.md                   # meta-lessons (how we work, not what we did)
   ROADMAP.md                   # active workstream / decisions / done log
