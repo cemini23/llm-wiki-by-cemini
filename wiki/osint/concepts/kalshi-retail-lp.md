@@ -15,6 +15,8 @@ related:
   - sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md
   - sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md
   - sources/substack-rss-event-horizon-2026-08-20-pm-republican-comms.md
+  - sources/substack-rss-event-horizon-2026-10-13-gambling-redefinition.md
+  - concepts/k290-feeds-wave.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-20
@@ -30,6 +32,8 @@ updated: 2026-08-20
 - @concepts/polymarket-bot-architecture.md
 - @sources/substack-rss-event-horizon-2026-08-18-cartel-pm.md — K241 cartel + WA geofence; **no pm scp**
 - @sources/substack-rss-event-horizon-2026-08-19-pm-ban-onshore.md — K242 onshore thesis; **no pm scp**
+- @sources/substack-rss-event-horizon-2026-10-13-gambling-redefinition.md
+- @concepts/k290-feeds-wave.md
 
 ## Raw Concept
 

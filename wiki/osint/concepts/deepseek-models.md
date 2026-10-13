@@ -16,6 +16,9 @@ related:
   - concepts/reviewer-agent-inference-time-feedback.md
   - concepts/verbalized-sampling-llm-diversity.md
   - entities/tools/deepseek-tui.md
+  - sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md
+  - concepts/k290-feeds-wave.md
+  - concepts/ai-vendor-multimodel-resilience.md
 maturity: draft
 created: 2026-05-02
 updated: 2026-05-11
@@ -31,6 +34,9 @@ updated: 2026-05-11
 - @entities/infrastructure/deepseek-r1-14b.md — Local R1-14B attempt (retracted); cloud API is the operative path.
 - @concepts/verbalized-sampling-llm-diversity.md — VS is model-agnostic, but VS paper measured DeepSeek as one of the receiving-strongest-benefit families (K39).
 - @entities/tools/deepseek-tui.md — K39 Adopt-tier TUI candidate for DeepSeek API (phase_0_audit: PENDING).
+- @sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md
+- @concepts/k290-feeds-wave.md
+- @concepts/ai-vendor-multimodel-resilience.md
 
 ## Raw Concept
 

@@ -12,6 +12,9 @@ related:
   - sources/substack-rss-wublock-2026-08-15-weekly-robinhood-ens.md
   - sources/substack-rss-wublock-2026-10-06-september-blockchain-tech.md
   - concepts/k283-feeds-wave.md
+  - sources/substack-rss-wublock-2026-10-13-september-spot-volume.md
+  - concepts/crypto-exchange-spot-volume.md
+  - concepts/k290-feeds-wave.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-10-06
@@ -24,6 +27,9 @@ updated: 2026-10-06
 - @sources/substack-rss-wublock-2026-08-13-july-2026-exchange-website-traffic-report-total.md — K236 website-traffic companion (Deribit −44.7% confirms −44.4% volume)
 - @concepts/crypto-venue-website-traffic.md — venue-retail-traffic series (K236)
 - @sources/substack-rss-wublock-2026-08-15-weekly-robinhood-ens.md — K239 HLP auto-earn / Robinhood Chain; wiki-only
+- @sources/substack-rss-wublock-2026-10-13-september-spot-volume.md
+- @concepts/crypto-exchange-spot-volume.md
+- @concepts/k290-feeds-wave.md
 
 ## Raw Concept
 

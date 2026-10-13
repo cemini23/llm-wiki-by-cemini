@@ -33,6 +33,9 @@ related:
   - concepts/reviewer-passive-injection-corpus.md
   - sources/macro-charts-paid-forwards-vincent-2026-06-22-07-05.md
   - sources/trading-posts-compilation-16-2026-05-31.md
+  - sources/substack-rss-klement-2026-10-13-ai-productivity-lower-debt.md
+  - concepts/ai-productivity-fiscal-debt.md
+  - concepts/k290-feeds-wave.md
 maturity: validated
 created: 2026-04-23
 updated: 2026-07-13
@@ -59,6 +62,9 @@ updated: 2026-07-13
 - @concepts/markov-regime-switching-models.md — sibling regime concept: Markov/HMM detects the regime statistically; Macro Weather is the macro-state framing
 - @concepts/gmm-factor-lens-regime-modeling.md — K58 reference taxonomy (Crisis / Steady State / Inflation / WOI); not wired to prod Macro Weather without validation
 - @sources/two-sigma-gmm-regime-modeling-street-view-2021.md — K58 source
+- @sources/substack-rss-klement-2026-10-13-ai-productivity-lower-debt.md
+- @concepts/ai-productivity-fiscal-debt.md
+- @concepts/k290-feeds-wave.md
 
 ## Raw Concept
 

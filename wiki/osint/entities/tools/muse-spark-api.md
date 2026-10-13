@@ -8,6 +8,8 @@ related:
   - sources/newsletter-rss-latent-space-2026-07-11-ainews-not-much-happened-today.md
   - entities/tickers/meta.md
   - concepts/xsp-lane-trading-framework.md
+  - entities/models/muse-wonder.md
+  - sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md
 maturity: draft
 created: 2026-07-10
 updated: 2026-07-10
@@ -18,6 +20,8 @@ updated: 2026-07-10
 - @sources/eval-multi-wiki-link-evaluation-genealogy-agent-2026-07-10.md — K157 Integrate → xsp brief
 - @entities/tickers/meta.md — parent issuer context
 - @concepts/xsp-lane-trading-framework.md — orchestration spike for Lane A research loops
+- @entities/models/muse-wonder.md
+- @sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md
 
 ## Narrative
 

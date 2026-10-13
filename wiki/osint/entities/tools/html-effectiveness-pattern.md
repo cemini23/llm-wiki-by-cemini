@@ -6,6 +6,7 @@ keywords: [HTML artifacts, Claude Code, Thariq, interactive deliverables, design
 related:
   - sources/project-link-evaluation-brief.md
   - concepts/tool-evaluation-framework.md
+  - entities/tools/takumi.md
 maturity: draft
 created: 2026-05-10
 updated: 2026-05-10
@@ -13,6 +14,7 @@ updated: 2026-05-10
 
 ## Relations
 - `@sources/project-link-evaluation-brief.md` — source evaluation brief (URL 3)
+- @entities/tools/takumi.md
 
 ## Raw Concept
 

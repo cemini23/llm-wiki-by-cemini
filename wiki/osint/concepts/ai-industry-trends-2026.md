@@ -11,6 +11,10 @@ related:
   - sources/substack-rss-klement-2026-10-07-ai-labs-profit.md
   - sources/substack-rss-pragmatic-engineer-2026-10-06-state-of-tech-2026.md
   - concepts/k284-feeds-wave.md
+  - sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md
+  - concepts/k290-feeds-wave.md
+  - entities/models/muse-wonder.md
+  - concepts/ai-vendor-multimodel-resilience.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-10-07
@@ -20,6 +24,10 @@ updated: 2026-10-07
 
 - @sources/newsletter-latent-space-bioai-phase-shift-2026-08-11.md
 - @sources/newsletter-latent-space-ainews-reasoning-trace-2026-08-12.md
+- @sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md
+- @concepts/k290-feeds-wave.md
+- @entities/models/muse-wonder.md
+- @concepts/ai-vendor-multimodel-resilience.md
 
 ## Raw Concept
 

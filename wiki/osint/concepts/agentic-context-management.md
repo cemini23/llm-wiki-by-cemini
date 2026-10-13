@@ -11,6 +11,7 @@ related:
   - concepts/context-compression-resume-pattern.md
   - entities/tools/openforgerl.md
   - sources/arxiv-2607.21557-openforgerl.md
+  - entities/tools/context-mode.md
 maturity: draft
 created: 2026-07-24
 updated: 2026-07-25
@@ -19,6 +20,7 @@ updated: 2026-07-25
 ## Relations
 
 - @sources/newsletter-rss-latent-space-2026-07-25-opus5.md — Opus 5
+- @entities/tools/context-mode.md
 
 - @entities/tools/ecc.md — K195 harness
 

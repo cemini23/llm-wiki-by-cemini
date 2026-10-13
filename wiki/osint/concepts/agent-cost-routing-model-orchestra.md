@@ -18,6 +18,9 @@ related:
   - entities/tools/awesome-ai-agents-2026-zijian.md
   - sources/substack-rss-outlier-weekly-2026-08-18-cursor-route.md
   - entities/tools/cursor-route.md
+  - sources/newsletter-rss-pragmatic-engineer-2026-10-13-resilient-ai-systems.md
+  - concepts/ai-vendor-multimodel-resilience.md
+  - concepts/k290-feeds-wave.md
 maturity: draft
 created: 2026-05-12
 updated: 2026-05-29
@@ -31,6 +34,9 @@ updated: 2026-05-29
 - `@entities/tools/awesome-ai-agents-2026-zijian.md` — curated AI agent tool list (Zijian 2026)
 - `@entities/tools/kimi-agent-swarm.md` — K65 Moonshot swarm product (K2.6 coordinator)
 - `@sources/x-kirillk-kimi-agent-swarm-guide-2026-05-24.md` — K65 comparison source
+- @sources/newsletter-rss-pragmatic-engineer-2026-10-13-resilient-ai-systems.md
+- @concepts/ai-vendor-multimodel-resilience.md
+- @concepts/k290-feeds-wave.md
 
 ## Raw Concept
 

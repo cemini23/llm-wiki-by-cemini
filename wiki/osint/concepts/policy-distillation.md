@@ -14,6 +14,7 @@ related:
   - concepts/recursive-multi-agent-systems.md
   - sources/recursive-multi-agent-systems-2604.25917.md
   - sources/arxiv-deep-hedging-delta-corrections-2605.21696.md
+  - sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md
 maturity: draft
 created: 2026-05-02
 updated: 2026-05-30

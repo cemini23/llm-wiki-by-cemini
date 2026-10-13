@@ -23,6 +23,7 @@ related:
   - entities/tools/ente.md
   - concepts/e2ee-vault-share.md
   - sources/atto-production-readiness-audit-2026-09-02.md
+  - entities/tools/openmed.md
 maturity: draft
 created: 2026-07-22
 updated: 2026-09-04
@@ -32,6 +33,7 @@ updated: 2026-09-04
 
 - @sources/atto-production-readiness-audit-2026-09-02.md — 2 Sep Windows audit; ATTO-007 raw `--file` can leave loopback
 - @entities/tools/opencli.md — K197 backlink
+- @entities/tools/openmed.md
 
 - @sources/substack-rss-secpro-2026-07-24-244-uk-cyber.md — identity lesson
 

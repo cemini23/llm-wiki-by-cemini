@@ -8,6 +8,7 @@ related:
   - sources/substack-rss-capital-flows-2026-08-12-interest-rates.md
   - concepts/carry-trade.md
   - concepts/macro-weather-regime.md
+  - concepts/ai-productivity-fiscal-debt.md
 maturity: draft
 created: 2026-08-13
 updated: 2026-08-13
@@ -19,6 +20,7 @@ updated: 2026-08-13
 - @sources/substack-rss-capital-flows-2026-08-12-interest-rates.md — rates/FX same-trade mechanics (K235)
 - @concepts/carry-trade.md — funding-currency mechanics + unwind risk
 - @concepts/macro-weather-regime.md — regime-gating that would govern any carry/equity sizing
+- @concepts/ai-productivity-fiscal-debt.md
 
 ## Raw Concept
 

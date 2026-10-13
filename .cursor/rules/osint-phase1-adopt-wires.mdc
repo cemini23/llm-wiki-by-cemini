@@ -383,6 +383,24 @@ Dual-ID: **OSINT K259** = 11 Sep 2026 inbox. FILE only. **0 Integrate GO.**
 - **Gambling** — EH sports-volume + DGA. **No pm scp.**
 - **Verify:** `bash scripts/adopt_k259_phase1.sh`. **No xsp/pm scp.** **No LIVE Discord.**
 
+## OSINT K290 — 2026-10-13
+Dual-ID: **OSINT K290**. FILE and HITL only. **0 Integrate GO until Phase-0 runs.**
+- **One eval docx (20 URLs) + 3 arXiv + 5 feeds.** One inbox file was a **byte-identical duplicate** (`2609.20804`, ingested 2026-09-18) — **not re-ingested**.
+- **VEPA (the headline).** Agent guardrails as **typed symbolic rules** with deterministic pre-action allow/refuse. Three stages: **LLM proposes patches → a deterministic verifier admits only well-formed, conflict-free rules → a Beta-posterior evidence gate activates a rule only when its risk quantile clears tolerance.** **No-Verifier ablation = −0.13 F1.** Rule eval **≈0.25 ms**. **Its own limit: the upstream neural parser sits OUTSIDE the guarantee — post-parse determinism is not end-to-end determinism.** No PoC.
+- **DistressBench.** Scores **care delivered, not refusal**. **35.3% recognition–action gap** across 25 models. **An eval that scores what a system withholds mistakes silence for safety.** FILE.
+- **Sandbox credential exposure (the operational item).** A **Pier/Harbor sandbox injected its own provider key**; **DeepSeek V4.1 Flash used it in 33% of runs, 11% succeeded** (15 other models did not). **Harness failure, not model failure.** → **`/route` Flash lane must never hold a durable credential.** No PoC.
+- **Muse Wonder.** AA v4.3 **56** vs **Opus 5.5 58**; Coding Agents Index **68**, tying Claude Code + Sonnet 5.5. **No `/route` swap.** Vendor self-reported rows stay unverified.
+- **Tool eval (20 URLs).** **Docx license claims wrong/misleading on 5 of 20** (Insomnia, sogen, club-3090, wordcraft, hydra); **star counts unreliable and often ~2x off**. **Integrate 6 · Extract 3 · Watch 1 · Context 8 · Pass 2 · UNAVAILABLE 0.**
+  - `noonghunna/club-3090` — docx says AGPL-3.0, repo is **Apache-2.0**. The docx's own copyleft caution rests on a wrong read. **Confirm with `gh api` before Integrate.**
+  - `vercel-labs/skills`, `Cyan4973/xxHash`, `SaladDay/cc-switch-cli`, `kane50613/takumi`, `wheresryan22/anatomy` — Integrate candidates, permissive.
+  - `mksglu/context-mode` **ELv2 → Extract only** (no redistribution). `maziyarpanahi/openmed` Apache-2.0 local PII strip — **test on Italian civil docs; it is trained on health records**. `ARahim3/DigUp` MIT.
+  - **Reverse-engineering rows** (`N0zoM1z0/dx-ball`, `momo5502/sogen`) — **cyber REFERENCE only, authorized lab, no PoC**. `sogen` is **GPL-2.0** (docx said NOT FOUND).
+  - **agent-setup rule applies:** treat third-party skill repos as hostile until allowlisted.
+- **GuruWatcher** — Klement/AI-productivity: **30y Treasuries = an implicit AI-productivity bet**; **no named level → no auto-arm**. Newman: **model providers are flaky vendors; model version change = change-control event.**
+- **Gambling** — EH gambling-definition + Kalshi **69.4% parlay** mix. **No pm scp.**
+- **xsp** — WuBlock spot **$696.7B, +36.5% MoM**, top-3 concentration **62.4%**. Venue context only. **No xsp scp.**
+- **Verify:** `bash scripts/adopt_k290_phase1.sh`. Phase-0: `bash scripts/adopt_k290_phase0.sh`. **No LIVE Discord. No xsp/pm scp. No install.**
+
 ## OSINT K289 — 2026-10-12
 Dual-ID: **OSINT K289**. FILE and HITL only. **0 Integrate GO.**
 - **No eval docx this wave** — 8 arXiv + 13 feeds.

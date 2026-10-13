@@ -14,6 +14,9 @@ related:
   - sources/arxiv-2610.08761-verifine-2026-10-07.md
   - sources/arxiv-2610.08720-worldsolver-2026-10-07.md
   - concepts/k284-arxiv-wave.md
+  - sources/arxiv-2610.12813-vepa-verified-evolving-guardrails-2026-10-13.md
+  - concepts/k290-arxiv-wave.md
+  - entities/tools/claude-show-your-work.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-10-07
@@ -22,6 +25,9 @@ updated: 2026-10-07
 ## Relations
 
 - @sources/arxiv-2608.10827-mira-2026-08-12.md
+- @sources/arxiv-2610.12813-vepa-verified-evolving-guardrails-2026-10-13.md
+- @concepts/k290-arxiv-wave.md
+- @entities/tools/claude-show-your-work.md
 
 ## Raw Concept
 

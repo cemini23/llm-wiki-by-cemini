@@ -5,6 +5,7 @@ tags: [tool, context, k287, cli]
 keywords: [cc-switch-cli, SaladDay, claude-code, codex, k287]
 related:
   - sources/eval-multi-repo-revenue-2026-10-09.md
+  - sources/eval-url-revenue-opportunity-2026-10-13.md
 maturity: draft
 created: 2026-10-09
 updated: 2026-10-09
@@ -14,6 +15,7 @@ wire_status: wont_wire
 ## Relations
 
 - @sources/eval-multi-repo-revenue-2026-10-09.md — K287 Context row
+- @sources/eval-url-revenue-opportunity-2026-10-13.md
 
 ## Raw Concept
 

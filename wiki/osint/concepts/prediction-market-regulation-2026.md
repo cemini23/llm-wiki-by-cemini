@@ -28,6 +28,8 @@ related:
   - concepts/k285-feeds-wave.md
   - sources/substack-rss-event-horizon-2026-10-12-ep36-verifact.md
   - concepts/k289-feeds-wave.md
+  - sources/substack-rss-event-horizon-2026-10-13-gambling-redefinition.md
+  - concepts/k290-feeds-wave.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-10-07
@@ -48,6 +50,8 @@ updated: 2026-10-07
 - @concepts/gta6-convertible-currency-thesis.md — GTA$ cashout is FinCEN CVC/MSB, not a CFTC event-contract product; Kalshi/PM licenses do not repeal money-transmitter rules
 - @sources/ttwo-gta6-cashout-desk-2026-08-20.md — TTWO desk pull that keeps event contracts in the wrong bucket
 - @sources/gemini-dr-ttwo-gta6-cashout-2026-08-20.md — Gemini FinCEN section; same wrong-bucket call
+- @sources/substack-rss-event-horizon-2026-10-13-gambling-redefinition.md
+- @concepts/k290-feeds-wave.md
 
 ## Raw Concept
 

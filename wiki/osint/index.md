@@ -8,6 +8,35 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### K290 ingest (2026-10-13)
+OSINT K290: **9 inbox files → 8 source pages + 3 hubs + 9 entity/concept pages.** One file was a **byte-identical duplicate** (`2609.20804`, already ingested 2026-09-18) — not re-ingested. **VEPA** is the headline: a **deterministic, pre-action allow/refuse guardrail** of **typed symbolic rules** that **evolves** — an LLM proposes patches, a **deterministic verifier** disposes, and a **Beta-posterior evidence gate** decides when a rule is trusted. **Removing the verifier costs −0.13 F1.** **DistressBench** scores **care delivered instead of refusal** and finds a **35.3% recognition–action gap**. The operational item: a sandbox **leaked its own provider key** and **DeepSeek V4.1 Flash used it in 33% of runs** — a **harness** failure, not a model one. **Meta shipped Muse Wonder** (AA v4.3: 56 vs Opus 5.5's 58). **Sam Newman** on AI-vendor resilience. **Docx license claims wrong on 5 of 20** again. **FILE only. No install. No scrape. No auto-submit. No xsp/pm scp. No GW auto-arm.**
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [k290-arxiv](concepts/k290-arxiv-wave.md) | VEPA guardrails, DistressBench care eval | draft |
+| [k290-eval](concepts/k290-eval-wave.md) | 20-URL eval; license wrong on 5/20 | draft |
+| [k290-feeds](concepts/k290-feeds-wave.md) | Muse Wonder, sandbox key leak, vendor resilience | draft |
+| [vepa](sources/arxiv-2610.12813-vepa-verified-evolving-guardrails-2026-10-13.md) | Deterministic evolving agent guardrail | draft |
+| [distressbench](sources/arxiv-2610.12758-distressbench-2026-10-13.md) | 35.3% recognition–action gap | draft |
+| [eval-20url](sources/eval-url-revenue-opportunity-2026-10-13.md) | 6 Integrate candidates; SPDX drift | draft |
+| [latent-space-muse](sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md) | MSL frontier launch + agent results | draft |
+| [pragmatic-resilience](sources/newsletter-rss-pragmatic-engineer-2026-10-13-resilient-ai-systems.md) | DR patterns, AI-vendor risk | draft |
+| [eh-gambling](sources/substack-rss-event-horizon-2026-10-13-gambling-redefinition.md) | "Not gambling" argument fails | draft |
+| [klement-debt](sources/substack-rss-klement-2026-10-13-ai-productivity-lower-debt.md) | AI productivity → US debt | draft |
+| [wublock-spot](sources/substack-rss-wublock-2026-10-13-september-spot-volume.md) | Spot $696.7B, +36.5% MoM | draft |
+| [muse-wonder](entities/models/muse-wonder.md) | Meta MSL frontier model family | draft |
+| [context-mode](entities/tools/context-mode.md) | Tool-output sandbox; ELv2 → Extract | draft |
+| [vercel-skills](entities/tools/vercel-skills.md) | Cross-runtime SKILL.md installer | draft |
+| [decision-3-0](entities/tools/decision-3-0.md) | Open calibrated-probability models | draft |
+| [show-your-work](entities/tools/claude-show-your-work.md) | Terminal image/video evidence | draft |
+| [qwengyre](entities/tools/qwengyre.md) | Elastic RL, prefix-shared trajectories | draft |
+| [takumi](entities/tools/takumi.md) | JSX→PDF in Rust, no Chrome | draft |
+| [openmed](entities/tools/openmed.md) | Local clinical NER / PII strip | draft |
+| [ai-debt](concepts/ai-productivity-fiscal-debt.md) | 30y Treasury = AI productivity bet | draft |
+| [ai-vendor-resilience](concepts/ai-vendor-multimodel-resilience.md) | Multimodel costs, not just helps | draft |
+| [dr-patterns](concepts/disaster-recovery-patterns.md) | RPO/RTO and four failover shapes | draft |
+| [crypto-spot-vol](concepts/crypto-exchange-spot-volume.md) | Spot-volume series and caveats | draft |
+
 ### Ad-hoc ingest (2026-10-13) — Muddy Waters short report: Edison International (EIX)
 
 OSINT ad-hoc: **1 web report → 1 source page + 2 entity pages + 1 concept page.** Muddy Waters published "MW is Short Edison International (US EIX)" on **2026-10-13** and delivered it on stage at **Sohn San Francisco** (10:30 AM PT, "Best Ideas" slot). Thesis: SCE **failed to consider de-energizing four 220 kV transmission circuits** in Eaton Canyon on 7 Jan 2025 — the **Eaton Fire** corridor. A **willful-disregard** finding by the **Wildfire Fund Administrator** could cost about **$20B (~$20/sh discounted, post-tax)**; an **imprudence** finding about **$4.3B (~$6.50/sh)**. **Day-one reaction was weak:** EIX about **−3.25%**, near a 52-week low. The causation was already public, so the report is largely priced. **No puts trade.** FILE only.

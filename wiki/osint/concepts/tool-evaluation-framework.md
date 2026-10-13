@@ -14,6 +14,8 @@ related:
   - sources/multi-wiki-gemini-eval-prompt-2026-05-12.md
   - sources/arxiv-context-aware-temporal-planning-2607.04689-2026-07-12.md
   - entities/tools/finance-skills.md
+  - sources/eval-url-revenue-opportunity-2026-10-13.md
+  - concepts/k290-eval-wave.md
 maturity: validated
 hub: true
 created: 2026-05-10
@@ -29,6 +31,8 @@ updated: 2026-09-18
 - `@sources/multi-wiki-gemini-eval-prompt-2026-05-12.md` — v2 prompt archive (7 surfaces, pre-gambling-wiki)
 - `@ccc-wiki/concepts/deep-research-evaluation-prompt.md` — v1→v9 lineage; canonical copy-paste at `prompts/deep-research-multi-wiki-eval-v9-2026-06-28.md`
 - `@entities/tools/finance-skills.md` — K36 steal+adopt instance; Cursor TV MCP live 2026-09-18
+- @sources/eval-url-revenue-opportunity-2026-10-13.md
+- @concepts/k290-eval-wave.md
 
 ## Raw Concept
 

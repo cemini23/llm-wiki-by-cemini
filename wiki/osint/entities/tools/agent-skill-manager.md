@@ -8,6 +8,7 @@ related:
   - concepts/cemini-license-posture.md
   - "@ccc-wiki/entities/tools/agent-skill-manager.md"
   - concepts/claude-code-skills-md-workflow.md
+  - entities/tools/vercel-skills.md
 maturity: draft
 created: 2026-06-07
 updated: 2026-06-07
@@ -18,6 +19,7 @@ phase_0_verdict: "CONDITIONAL-GO 2026-06-07 — MIT verified; path defaults (~/.
 
 - @sources/multi-wiki-tool-eval-v8-k103-2026-06-07.md — K103 eval Adopt
 - @concepts/cemini-license-posture.md — MIT clears IP perimeter
+- @entities/tools/vercel-skills.md
 
 ## Raw Concept
 

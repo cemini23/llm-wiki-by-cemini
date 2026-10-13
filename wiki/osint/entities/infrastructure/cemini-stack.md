@@ -27,6 +27,7 @@ related:
   - projects/cemini-financial-suite/Architecture/OPEN-GAPS.md
   - projects/cemini-financial-suite/Architecture/Architecture - Overview.md
   - projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md
+  - concepts/disaster-recovery-patterns.md
 maturity: core
 created: 2026-05-03
 updated: 2026-09-18
@@ -57,6 +58,7 @@ updated: 2026-09-18
 - @projects/cemini-financial-suite/Architecture/OPEN-GAPS.md — runtime-matrix gap (compose profiles actually up)
 - @projects/cemini-financial-suite/Architecture/Architecture - Overview.md — prod compose map @ 8faf94e
 - @projects/cemini-financial-suite/Architecture/Architecture - prod-snapshot-2026-06-01.md — live compose ps 2026-06-01
+- @concepts/disaster-recovery-patterns.md
 
 ## Raw Concept
 

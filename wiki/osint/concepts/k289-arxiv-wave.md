@@ -15,6 +15,9 @@ related:
   - sources/arxiv-2610.13647-a-saw-agentic-software-architecture-2026-10-12.md
   - sources/arxiv-2610.13651-tofu-orchestrator-fuzzing-2026-10-12.md
   - sources/arxiv-2610.13772-margos-2026-10-12.md
+  - concepts/k290-arxiv-wave.md
+  - sources/arxiv-2610.12813-vepa-verified-evolving-guardrails-2026-10-13.md
+  - sources/arxiv-2610.12758-distressbench-2026-10-13.md
 maturity: draft
 created: 2026-10-12
 updated: 2026-10-12
@@ -35,6 +38,9 @@ wire_status: policy_wired
 - @sources/arxiv-2610.13647-a-saw-agentic-software-architecture-2026-10-12.md
 - @sources/arxiv-2610.13651-tofu-orchestrator-fuzzing-2026-10-12.md
 - @sources/arxiv-2610.13772-margos-2026-10-12.md
+- @concepts/k290-arxiv-wave.md
+- @sources/arxiv-2610.12813-vepa-verified-evolving-guardrails-2026-10-13.md
+- @sources/arxiv-2610.12758-distressbench-2026-10-13.md
 
 ## Raw Concept
 

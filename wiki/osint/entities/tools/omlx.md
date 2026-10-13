@@ -11,6 +11,7 @@ related:
   - concepts/wiki-tooling-evaluation.md
   - sources/eval-url-revenue-opportunity-analysis-2026-07-22.md
   - sources/eval-local-agent-infra-2026-08-19.md
+  - entities/tools/decision-3-0.md
 maturity: draft
 created: 2026-07-22
 updated: 2026-08-19
@@ -21,6 +22,7 @@ wire_note: local LLM stack REFERENCE; no runtime wire
 ## Relations
 
 - @concepts/polymarket-bot-architecture.md — K195 PM local shadow
+- @entities/tools/decision-3-0.md
 
 - @sources/eval-revenue-opportunity-analysis-2026-07-25.md — K195 Extract refresh
 

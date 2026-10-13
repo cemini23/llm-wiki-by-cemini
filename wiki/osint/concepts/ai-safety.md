@@ -7,6 +7,8 @@ related:
   - concepts/emergent-misalignment.md
   - sources/qwen-scope.md
   - concepts/mechanistic-interpretability.md
+  - sources/arxiv-2610.12758-distressbench-2026-10-13.md
+  - concepts/k290-arxiv-wave.md
 maturity: draft
 created: 2026-05-13
 updated: 2026-05-13
@@ -16,6 +18,8 @@ updated: 2026-05-13
 
 - `@concepts/emergent-misalignment.md` — specific failure mode covered under the AI-safety umbrella
 - `@sources/qwen-scope.md` — Qwen SAE-Scope work touching safety post-training + alignment-relevant steering
+- @sources/arxiv-2610.12758-distressbench-2026-10-13.md
+- @concepts/k290-arxiv-wave.md
 
 ## Raw Concept
 

@@ -132,6 +132,9 @@ related:
   - sources/arxiv-2608.16749-rough-volatility-across-assets-2026-08-18.md
   - sources/substack-rss-glitchspx-2026-09-08-talon-weekly-2026-09-08.md
   - concepts/k257-newsletter-macro-wave.md
+  - concepts/crypto-exchange-spot-volume.md
+  - sources/substack-rss-wublock-2026-10-13-september-spot-volume.md
+  - entities/tools/muse-spark-api.md
 maturity: draft
 created: 2026-06-14
 updated: 2026-09-08
@@ -147,6 +150,9 @@ updated: 2026-09-08
 - @sources/substack-rss-capital-flows-2026-08-10-fx-volatility.md
 - @sources/donny-nl-meta-rea-2026-08-11.md
 - @sources/substack-rss-wublock-2026-08-09-asia-top10-russia-japan.md — K229 Wu Asia TOP10
+- @concepts/crypto-exchange-spot-volume.md
+- @entities/tools/muse-spark-api.md — Muse Spark API (Meta); sibling model page — K290 spot-volume series (venue-concentration companion)
+- @sources/substack-rss-wublock-2026-10-13-september-spot-volume.md — K290 September spot $696.7B, +36.5% MoM
 
 - @sources/substack-rss-capital-flows-2026-08-08-eow-teaser.md — K228 teaser
 

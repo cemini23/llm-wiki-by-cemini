@@ -18,6 +18,10 @@ related:
   - sources/arxiv-2608.19047-eureka-2026-08-20.md
   - sources/eval-multi-repo-revenue-2026-08-20.md
   - sources/newsletter-rss-latent-space-2026-08-20-glm53-harness.md
+  - sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md
+  - sources/arxiv-2610.12813-vepa-verified-evolving-guardrails-2026-10-13.md
+  - concepts/k290-feeds-wave.md
+  - sources/arxiv-2610.12758-distressbench-2026-10-13.md
 maturity: draft
 created: 2026-08-12
 updated: 2026-08-20
@@ -33,6 +37,10 @@ updated: 2026-08-20
 - @concepts/agent-toolkit-routing-research-backlog.md
 - @sources/eval-project-revenue-url-2026-08-19.md — Dual-ID: **OSINT K242** inbox evals are not this page
 - @sources/eval-local-agent-infra-2026-08-19.md — Dual-ID: **OSINT K242** ≠ Trajectory Sentinel K242
+- @sources/newsletter-rss-latent-space-2026-10-13-ainews-meta-muse-wonder.md
+- @sources/arxiv-2610.12813-vepa-verified-evolving-guardrails-2026-10-13.md
+- @concepts/k290-feeds-wave.md
+- @sources/arxiv-2610.12758-distressbench-2026-10-13.md
 
 ## Raw Concept
 

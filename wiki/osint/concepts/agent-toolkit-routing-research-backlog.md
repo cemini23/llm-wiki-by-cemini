@@ -26,6 +26,7 @@ related:
   - entities/tools/claude-task-viewer.md
   - sources/arxiv-2608.12282-vakra-tool-policies-2026-08-13.md
   - sources/arxiv-2608.12311-rsm-role-specialization-2026-08-13.md
+  - entities/tools/qwengyre.md
 tags: [concept, routing, llm, infra, backlog, k233, k234]
 updated: 2026-08-12
 ---
@@ -54,6 +55,7 @@ updated: 2026-08-12
 - @entities/tools/claude-task-viewer.md — observability surface (K235)
 - @sources/arxiv-2608.12282-vakra-tool-policies-2026-08-13.md
 - @sources/arxiv-2608.12311-rsm-role-specialization-2026-08-13.md
+- @entities/tools/qwengyre.md
 
 ## Raw Concept
 

@@ -20,6 +20,8 @@ related:
   - sources/substack-rss-wublock-2026-10-11-asia-top10.md
   - sources/substack-rss-wublock-2026-10-12-weekly-outlook.md
   - sources/newsletter-rss-sparktoro-2026-10-12-pokemon-pokopia.md
+  - concepts/k290-feeds-wave.md
+  - concepts/k290-eval-wave.md
 maturity: draft
 created: 2026-10-12
 updated: 2026-10-12
@@ -45,6 +47,8 @@ wire_status: policy_wired
 - @sources/substack-rss-wublock-2026-10-11-asia-top10.md
 - @sources/substack-rss-wublock-2026-10-12-weekly-outlook.md
 - @sources/newsletter-rss-sparktoro-2026-10-12-pokemon-pokopia.md
+- @concepts/k290-feeds-wave.md
+- @concepts/k290-eval-wave.md
 
 ## Raw Concept
 
