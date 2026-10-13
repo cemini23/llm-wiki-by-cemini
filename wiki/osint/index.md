@@ -8,6 +8,17 @@ Format: each row is `[title](path) — one-line summary — tags`. A ⚠ marker 
 
 ## Sources
 
+### Ad-hoc ingest (2026-10-13) — Muddy Waters short report: Edison International (EIX)
+
+OSINT ad-hoc: **1 web report → 1 source page + 2 entity pages + 1 concept page.** Muddy Waters published "MW is Short Edison International (US EIX)" on **2026-10-13** and delivered it on stage at **Sohn San Francisco** (10:30 AM PT, "Best Ideas" slot). Thesis: SCE **failed to consider de-energizing four 220 kV transmission circuits** in Eaton Canyon on 7 Jan 2025 — the **Eaton Fire** corridor. A **willful-disregard** finding by the **Wildfire Fund Administrator** could cost about **$20B (~$20/sh discounted, post-tax)**; an **imprudence** finding about **$4.3B (~$6.50/sh)**. **Day-one reaction was weak:** EIX about **−3.25%**, near a 52-week low. The causation was already public, so the report is largely priced. **No puts trade.** FILE only.
+
+| Page | Summary | Maturity |
+|------|---------|----------|
+| [mw-eix](sources/muddy-waters-edison-international-eix-2026-10-13.md) | MW short EIX; Eaton Canyon de-energization | draft |
+| [eix](entities/tickers/eix.md) | Edison International; wildfire liability | draft |
+| [muddy-waters](entities/companies/muddy-waters-research.md) | Activist short-seller; 2026 targets | draft |
+| [ca-wildfire-liability](concepts/california-wildfire-utility-liability.md) | Wildfire Fund; willful disregard vs imprudence | draft |
+
 ### K289 ingest (2026-10-12)
 OSINT K289: **21 inbox files → 20 source pages + 2 hubs** (one Latent Space meetups note has no research content). **No eval docx this wave** — 8 arXiv papers, 13 feeds. **ToFu** is the headline: tool arguments from an LLM are **untrusted**, and the **Repeat-After-Me** attack (echo tool-call-shaped text) makes the orchestrator execute it — **253 verified bugs across 343 tools in 118 MCP servers** of 273 scanned. **Anthropic shipped dynamic workflows**: the lead agent writes a plan, **Claude writes the orchestration program**, and the model **does not know its budget**. Quant: **FLEX options** are a marker of institutional vol demand, not a directional predictor; **three static vanillas cut rough-Heston variance-swap hedging error >95%**. **CFTC: casino products are not swaps; a proposed rule writes event contracts into the swap definition** — a preemption play. **FILE only. No install. No scrape. No auto-submit. No xsp/pm scp.**
 

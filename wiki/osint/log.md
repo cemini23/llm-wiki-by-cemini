@@ -1,3 +1,12 @@
+## [2026-10-13] ingest | Muddy Waters short report — Edison International (EIX)
+
+- **Target: Edison International (NYSE: EIX)**, parent of Southern California Edison. Report "MW is Short Edison International (US EIX)" published 2026-10-13 and delivered on stage at **Sohn San Francisco**, 10:30 AM PT ("Best Ideas: Carson Block & Peter S. Park"). URL: `muddywatersresearch.com/research/2026/oct-13/`.
+- **Thesis:** SCE **failed to consider de-energizing four 220 kV transmission circuits** in Eaton Canyon on 7 Jan 2025 — the Eaton Fire corridor. Fire investigators concluded those circuits started the fire. A **willful-disregard** finding by the Wildfire Fund Administrator could trigger about **$20B (~$20/sh discounted, post-tax)**; an **imprudence** finding about **$4.3B (~$6.50/sh)**.
+- **Reaction weak:** EIX about **$53.83, −3.25%**, near a 52-week low ($51.10–$81.62). The causation was already public, so the report is largely priced. **No puts trade.** Compare day-one moves: DLO −50% (2022), APP −20% (2025), ELF −8% (2024).
+- **Pages:** `sources/muddy-waters-edison-international-eix-2026-10-13.md`; entities `entities/tickers/eix.md`, `entities/companies/muddy-waters-research.md`; concept `concepts/california-wildfire-utility-liability.md`.
+- **Dead end (recorded):** the pre-reveal prediction attempt used Block's AI commentary (Economist "How to short AI", the "AI pretenders" line) and produced AI names (APLD, SMCI, CRWV) — all wrong. The reliable signal was the report URL pattern on MW's own site. Lesson: a short-seller's commentary is context, not a prior.
+- **Source type:** web report (no egress archive). Retrieved 2026-10-13.
+
 ## [2026-10-09] cadence | gap detect and quarterly backtests
 
 - **Gap detect:** 3789 pages. 36 type A, 137 type D, 246 type E. Report `.local/reports/wiki-gap-detect-2026-10-09.txt`. Tier 1 only. No Exa. Next due 2026-10-16.
