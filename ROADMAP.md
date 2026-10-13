@@ -42,7 +42,7 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 - **Feeds.** Sam Newman (DR patterns; **model providers are flaky vendors**; **mixing vendors in one flow raises the failure surface**); the gambling-definition argument (Kalshi **69.4% parlays**); KfW/Bales (**debt-to-GDP 185% → 143%** at +0.2%/yr AI productivity; **30y Treasuries = an implicit AI bet**); WuBlock (**spot $696.7B, +36.5% MoM**).
 - **Briefs staged + copied.** Cyber, CCC, GuruWatcher, Gambling, Atto, Basgiath; pm/xsp local (**no scp**).
 - **Sibling refs audit:** 0 genuinely missing OSINT pages. Two GuruWatcher citations pointed at raw feed filenames instead of wiki slugs — **fixed**. Remaining sibling defects are citation-form (`@osint-wiki/briefs/...`, `@osint-wiki/wiki/log.md`) where the alias maps to `wiki/`.
-- **Open (named, not started):** `2609.20804v1.pdf` left in the inbox as a known duplicate — delete or re-archive on operator call; next gap-detect due **2026-10-16**; six Integrate candidates at `.local/adopts/k290/` await a product decision.
+- **Open (named, not started):** next gap-detect due **2026-10-16**; six Integrate candidates at `.local/adopts/k290/` await a product decision. (The inbox duplicate was deleted 2026-10-13 after sha256 confirmation.)
 - **Boundary:** no install, no scrape, no auto-submit, no xsp/pm scp, no `/route` swap, never auto-arm.
 
 ## Current state (2026-10-12 — K289 ingest)

@@ -1,3 +1,7 @@
+## [2026-10-13] cleanup | inbox duplicate deleted
+
+- **Deleted `research to be indexed/2609.20804v1.pdf`** on operator instruction. **sha256 `a39a9e03aaaa877b294a4b702ff07ae09110dcb1a2b0c0196a72ea46e0ec390e` re-confirmed byte-identical** to the raw already ingested on 2026-09-18, and already at `cemini-egress-fi` under a different filename. Nothing was lost. **Inbox is now empty.**
+
 ## [2026-10-13] phase0 | K290 tool eval — licences verified, 9 clones
 
 - **Ran `bash scripts/adopt_k290_phase0.sh`** in the Terminal panel (the Bash sandbox denies `api.github.com`).
