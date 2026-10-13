@@ -14,6 +14,8 @@ data_cutoff: 2026-09-01
 
 Friends / discussion. Observational note. **Not investment advice.** CFTC Rule 4.41.
 
+Public Outlier handoff (no last print, no $7 put): `@seo-wiki/concepts/crml-tanbreez-outlier-notes.md` · gitignored paste `~/Projects/SEO:GEO B&M Business/briefs/2026-09-01_crml-tanbreez-outlier.md`. Do not paste this desk note into Substack.
+
 ## Summary
 
 At **$7.21**, Critical Metals (NASDAQ: CRML) is a **$1.06 billion** company with four employees, no mining revenue, and a Greenland rare-earth licence. The classified resource is **44.87 million tonnes at 0.38% TREO**. Booked exploration on Tanbreez is **$36.1 million**. First concentrate, on current management speech, is 2028–29. Thirteen months ago they said commercial production in **2026**.
@@ -23,6 +25,8 @@ The tape is paying for Greenland geopolitics and the chance Washington writes a 
 The funding plan is an all-stock takeover of European Lithium (ASX: EUR) — the parent that still holds **45.5 million** CRML shares, chaired by the same man who runs CRML. That deal issues more CRML paper. It is not a reverse split. At today’s price the exchange ratio is indicated at the **maximum** 0.045 CRML per EUR share.
 
 I would not short the stock. The name is already **22.3 million** shares short, and it printed two +20% sessions in late August (25 Aug ran on USA Rare Earth headlines; neither day printed a CRML contract). The listed **2 October 2026 $7 put** (CRML261002P00007000) is the cleaner way to hold it. Last **$0.78**, open interest **42**, volume **3** on 1 Sep. Bids on this chain are often **0** — treat last as a print, not a live market. That expiry covers the **15 September** Western Australia court hearing and the start of the deal’s VWAP window. It dies before the mid-October shareholder meetings and before implementation. If the bet is Australian holders dumping Nasdaq paper after the deal closes, you need a later expiry.
+
+If the stock keeps falling, the listed **2 October 2026 $6 put** (CRML261002P00006000) is viable as well. Last **$0.34**, open interest **44**, volume **1** (Yahoo delayed, **31 Aug 2026** — a different clock from the $7 last). Same 0-bid chain. Use a limit. Size so a total loss of premium is boring.
 
 **Facts that have to stay attached:**
 
@@ -165,9 +169,11 @@ Off-exchange was **53.5%** of 31 Aug volume. Slightly high versus a typical US n
 
 Listed options: bids are often **0**. Do not trust printed implied vol on this chain. The 16 Oct $10 call and $10 put printed almost the same size (~2,700 contracts) — treat that as a combo until proven otherwise. Monster November $15 call open interest is leftover from the run toward **$32**.
 
-### 10. The 2 October $7 puts
+### 10. The 2 October $7 and $6 puts
 
-Buy the listed weekly.
+Buy the listed weekly. Two strikes.
+
+**$7 (next to spot)**
 
 | | |
 |---|---|
@@ -180,15 +186,30 @@ Buy the listed weekly.
 | Max loss if you buy the put | Premium paid, plus friction |
 | Rough expiry breakeven if last were the fill | $7.00 − $0.78 = **$6.22** |
 
-**Why this contract.** It is listed. Loss is capped. You do not locate 22 million shares of borrow. You do not sit through a +40% Washington headline with unlimited stock risk. The next hard date **inside** this life is the **15 September** first court hearing. The deal’s 20-day VWAP window also starts to matter in this window.
+**$6 (if it keeps falling)**
 
-**Calendar.** Scheme meetings are **mid-October**. Implementation is later. This put expires before those. If the thesis is Australian holders dumping Nasdaq paper after implementation, 2 Oct is the wrong expiry. The 16 Oct monthly and November dates cover more calendar and cost more time.
+| | |
+|---|---|
+| Contract | CRML261002P00006000 |
+| Expiry | Same Friday 2 Oct 2026 |
+| Strike | $6.00 |
+| Last | **$0.34** (Yahoo delayed, **31 Aug 2026** 11:21 AM EDT) |
+| Open interest / volume | **44** / **1** |
+| Bid / ask | **0 / 0** — last is a print, not a two-sided market |
+| Max loss if you buy the put | Premium paid, plus friction |
+| Rough expiry breakeven if last were the fill | $6.00 − $0.34 = **$5.66** |
+
+**Why these contracts.** They are listed. Loss is capped. You do not locate 22 million shares of borrow. You do not sit through a +40% Washington headline with unlimited stock risk. The next hard date **inside** this life is the **15 September** first court hearing. The deal’s 20-day VWAP window also starts to matter in this window.
+
+**Why $6 as well.** If the name keeps dropping, the $7 is no longer next to the stock. The $6 is the next round listed strike that stays a defined-risk put instead of a stock substitute. Cheaper premium, more out of the money, needs a further drop to pay. Do not mix the $0.34 last with the 1 Sep $7 clock.
+
+**Calendar.** Scheme meetings are **mid-October**. Implementation is later. These puts expire before those. If the thesis is Australian holders dumping Nasdaq paper after implementation, 2 Oct is the wrong expiry. The 16 Oct monthly and November dates cover more calendar and cost more time. $6 strikes on those later dates are the same idea with more time.
 
 **Why $7, not $10.** At $7.21 spot the $7 weekly sits next to the stock. The $10 puts are already in the money and priced more like stock. Illiquid. Use a limit. Do not market-order a 0-bid chain. Getting out of a winner on a 0/0 chain is just as hard as getting in — plan to hold toward expiry or use exercise mechanics, not a market sell. Size so a total loss of premium is boring.
 
-**What would make me not use it.** No two-sided market when you go to fill. Borrow already exploding *and* you were about to short stock instead — still prefer the put, but the premium will not be $0.78. A committed EXIM or US government cheque **before** 2 Oct — that is a thesis-ender; do not pick up the put into that headline.
+**What would make me not use them.** No two-sided market when you go to fill. Borrow already exploding *and* you were about to short stock instead — still prefer the put, but the premium will not be $0.78 or $0.34. A committed EXIM or US government cheque **before** 2 Oct — that is a thesis-ender; do not pick up the put into that headline.
 
-Pairing CRML risk against a funded rare-earth name (MP, or USAR after the federal package) is a separate construction. It strips “Washington bids rare earths” and leaves the funding gap. It is not required to buy the $7 puts.
+Pairing CRML risk against a funded rare-earth name (MP, or USAR after the federal package) is a separate construction. It strips “Washington bids rare earths” and leaves the funding gap. It is not required to buy the $7 or $6 puts.
 
 ### 11. Kill criteria — what breaks the short
 
@@ -209,7 +230,7 @@ Pairing CRML risk against a funded rare-earth name (MP, or USAR after the federa
 5. **15% Phase 1, 25% life-of-mine term sheet, and “75% pre-sold” are not the same sentence.**
 6. **44% short interest is one float definition.** Yahoo float gives ~33%. The share count of shorts is 22.3 million either way.
 7. **Cantor $18 is an initiation**, not proof Cantor is a top holder.
-8. **Last $0.78 on the $7 put is not a bid.** Fill risk is part of the sleeve.
+8. **Last $0.78 on the $7 put and last $0.34 on the $6 put are not bids.** Different Yahoo clocks (1 Sep vs 31 Aug delayed). Fill risk is part of the sleeve.
 9. **October implementation is more shares.** Listed options do not mechanically re-strike.
 10. Equal geopolitical headlines do not prove a CRML contract. USA Rare Earth can run this tape without CRML getting paid.
 
@@ -227,7 +248,7 @@ Pairing CRML risk against a funded rare-earth name (MP, or USAR after the federa
 - Reuters, 31 Dec 2025 — Sage on 2027/2028 and offtake speech
 - EUR Appendix 5B — cash A$296.3 million at 30 Jun 2026
 - Freedom Broker, 11 Aug 2026 — Hold, PT $8
-- Yahoo Finance CRML last $7.21 (31 Aug 2026); options chain 1 Sep 2026 including 2 Oct $7 put last $0.78
+- Yahoo Finance CRML last $7.21 (31 Aug 2026); options chain 1 Sep 2026 including 2 Oct $7 put last $0.78; 2 Oct $6 put last $0.34 (Yahoo delayed 31 Aug 2026)
 - FINRA short interest 22,315,102, settlement 14 Aug 2026
 - ChartExchange off-exchange 31 Aug 2026 (53.53%)
 
