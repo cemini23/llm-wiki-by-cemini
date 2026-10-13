@@ -7,7 +7,6 @@ Creates wiki/sweeps/YYYY-MM-DD-daily.md stub if the morning digest has not run y
 
 from __future__ import annotations
 
-import re
 import subprocess
 import sys
 from datetime import date, datetime
@@ -60,14 +59,50 @@ def render_inbox_section(files: list[Path], preingest: str, ts: str) -> str:
     return "\n".join(lines)
 
 
+INBOX_HEADING = "## Inbox (`research to be indexed/`)"
+
+
+def section_span(lines: list[str]) -> tuple[int, int] | None:
+    """Line span [start, end) of the inbox section, or None when absent.
+
+    The section ends at the next top-level `## ` heading, not at the next `---`
+    separator. The section embeds the raw preingest log, and that log has `---`
+    lines of its own; treating one of those as the end truncated the replacement
+    and stranded the old tail, which duplicated the summary block on every run.
+    Ending at the next heading also swallows any tail an earlier run stranded.
+
+    Fence tracking is deliberately not used: a already-damaged file can hold an
+    odd number of fence lines in this region, which would leave a scanner stuck
+    inside a fence and consume the rest of the file. The embedded log never emits
+    a `## ` line (verified across all sweep files), so a heading is unambiguous.
+    """
+    start = next((i for i, line in enumerate(lines) if line.rstrip() == INBOX_HEADING), None)
+    if start is None:
+        return None
+    end = next(
+        (i for i in range(start + 1, len(lines)) if lines[i].startswith("## ")),
+        len(lines),
+    )
+    return start, end
+
+
 def replace_section(text: str, section: str) -> str:
-    pattern = r"## Inbox \(`research to be indexed/`\)[\s\S]*?(?=\n---\n|\n## |\Z)"
-    if re.search(pattern, text):
-        return re.sub(pattern, section.rstrip() + "\n\n", text, count=1)
-    marker = "---\n\n## Exa candidates"
-    if marker in text:
-        return text.replace(marker, "---\n\n" + section + "\n---\n\n## Exa candidates", 1)
-    return text.rstrip() + "\n\n---\n\n" + section + "\n"
+    lines = text.split("\n")
+    span = section_span(lines)
+    if span is None:
+        marker = "---\n\n## Exa candidates"
+        if marker in text:
+            return text.replace(marker, "---\n\n" + section + "\n---\n\n## Exa candidates", 1)
+        return text.rstrip() + "\n\n---\n\n" + section + "\n"
+
+    start, end = span
+    body = section.rstrip("\n").split("\n")
+    if end >= len(lines):
+        # Section runs to EOF. Normalise the tail so a second pass is a no-op:
+        # the incoming text already ends in a newline, which splits to a trailing
+        # empty element and would otherwise accumulate a blank line per run.
+        return "\n".join(lines[:start] + body).rstrip("\n") + "\n"
+    return "\n".join(lines[:start] + body + ["", "---", ""] + lines[end:])
 
 
 def minimal_daily_stub(today: date) -> str:
