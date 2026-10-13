@@ -74,6 +74,43 @@ ROOT = Path(__file__).resolve().parent.parent
 WIKI = Path(os.environ.get("WIKI_DIR", ROOT / "wiki"))
 TODAY = date.today()
 
+
+def load_wiki_aliases() -> dict[str, tuple[Path, ...]]:
+    """Parse the CLAUDE.md 'Related Wikis' table into alias -> candidate bases.
+
+    Briefs copied into a sibling wiki cite this wiki as `@osint-wiki/<path>`, which
+    the alias resolves to this repo's `wiki/`. Some cite files outside `wiki/`
+    (`LESSONS.md`, `scripts/...`, `briefs/...`), so each alias yields two ordered
+    bases: the wiki directory, then the directory that owns it. Mirrors
+    `load_wiki_aliases` in the `vet` package (src/vet/config.py).
+    """
+    claude_md = ROOT / "CLAUDE.md"
+    aliases: dict[str, tuple[Path, ...]] = {}
+    if not claude_md.is_file():
+        return aliases
+    try:
+        text = claude_md.read_text(errors="replace")
+    except OSError:
+        return aliases
+    table_re = re.compile(
+        r"^\|\s*`([a-z0-9_-]+)`\s*\|\s*`?([^`\n\|]+)`?\s*\|",
+        re.MULTILINE,
+    )
+    for m in table_re.finditer(text):
+        alias = m.group(1).strip()
+        path_str = m.group(2).strip().rstrip("/")
+        if not alias or not path_str:
+            continue
+        base = (ROOT / path_str).resolve()
+        if not base.is_dir() and (base / "wiki").is_dir():
+            base = base / "wiki"
+        if base.is_dir():
+            aliases[alias] = (base, base.parent)
+    return aliases
+
+
+WIKI_ALIASES = load_wiki_aliases()
+
 # -------------------------------------------------------------- data classes --
 
 Severity = Literal["pass", "warn", "veto"]
@@ -233,15 +270,22 @@ def check_crosslinks(text: str) -> CheckResult:
             detail="No @path cross-links to validate",
         )
 
-    # Two valid forms: `@concepts/foo.md` (wiki-relative, used inside wiki pages)
-    # and `@wiki/concepts/foo.md` (repo-relative, used in briefs that sit outside wiki/).
-    # Try both; only flag dangling if neither resolves.
+    # Three valid forms:
+    #   `@concepts/foo.md`            wiki-relative (used inside wiki pages)
+    #   `@wiki/concepts/foo.md`       repo-relative (briefs that sit outside wiki/)
+    #   `@osint-wiki/concepts/foo.md` cross-wiki alias, one row per entry in the
+    #                                 CLAUDE.md 'Related Wikis' table.
+    # Resolve aliases against that table; only flag dangling if none resolves.
     dangling = []
     for m in matches:
-        wiki_relative = WIKI / m
-        repo_relative = ROOT / m
-        if not (wiki_relative.exists() or repo_relative.exists()):
-            dangling.append(m)
+        if (WIKI / m).is_file() or (ROOT / m).is_file():
+            continue
+        alias, sep, rest = m.partition("/")
+        if sep and rest and any(
+            (base / rest).is_file() for base in WIKI_ALIASES.get(alias, ())
+        ):
+            continue
+        dangling.append(m)
 
     if dangling:
         return CheckResult(
