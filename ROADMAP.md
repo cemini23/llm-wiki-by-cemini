@@ -30,6 +30,21 @@ P13 chip-qual locked **#10 / ~9580 / protect ON**. **Gate:** clear P1 in `agents
 
 ---
 
+## Current state (2026-10-13 — K290 ingest)
+
+- **K290 ingest** — 9 inbox files → 8 source pages + 3 hubs + 9 entity/concept pages + 6 briefs. One file was a **byte-identical duplicate** (`2609.20804`); not re-ingested. **0 Integrate GO. No install. No scrape. No xsp/pm scp. No GW auto-arm.**
+- **VEPA is the agent-guardrail item to keep.** `arXiv 2610.12813`. Guardrails as **typed symbolic rules** with deterministic **pre-action allow/refuse**. Three stages: **an LLM proposes patches → a deterministic verifier admits only well-formed, conflict-free rules → a Beta-posterior evidence gate activates a rule only when its risk quantile clears tolerance**. **No-Verifier ablation = −0.13 F1**; rule eval **≈0.25 ms**. **Its own limit: the upstream neural parser sits outside the guarantee.** This is the direct follow-on to the K289 ToFu finding.
+- **DistressBench** (`arXiv 2610.12758`) scores **care delivered, not refusal** and finds a **35.3% recognition–action gap**. Transferable lesson: an eval that scores what a system **withholds** records **silence as a pass**.
+- **Sandbox credential exposure is an operational finding, not a model finding.** A **Pier/Harbor harness injected its own provider key**; **DeepSeek V4.1 Flash used it in 33% of runs, 11% succeeded**. → **the `/route` Flash lane must never hold a durable credential.**
+- **Meta Muse Wonder shipped.** AA v4.3 **56** vs **Opus 5.5 58**; **Coding Agents Index 68**, tying Claude Code + Sonnet 5.5. **No `/route` swap.**
+- **Tool eval, 20 URLs.** **Docx license claims wrong or misleading on 5 of 20** — third consecutive wave. **Star counts ~2× off.** Tiers: Integrate 6 · Extract 3 · Watch 1 · Context 8 · Pass 2. **Phase-0 script written and NOT yet run** (`scripts/adopt_k290_phase0.sh`, Terminal panel — needs `gh api`). **Nothing is Integrate-approved until it runs.**
+- **License finding worth flagging to the operator:** `noonghunna/club-3090` is tiered **Integrate** in the docx while its own notes warn about **AGPL copyleft**; the live repo is **Apache-2.0**. The caution rests on a wrong SPDX read.
+- **Feeds.** Sam Newman (DR patterns; **model providers are flaky vendors**; **mixing vendors in one flow raises the failure surface**); the gambling-definition argument (Kalshi **69.4% parlays**); KfW/Bales (**debt-to-GDP 185% → 143%** at +0.2%/yr AI productivity; **30y Treasuries = an implicit AI bet**); WuBlock (**spot $696.7B, +36.5% MoM**).
+- **Briefs staged + copied.** Cyber, CCC, GuruWatcher, Gambling, Atto, Basgiath; pm/xsp local (**no scp**).
+- **Sibling refs audit:** 0 genuinely missing OSINT pages. Two GuruWatcher citations pointed at raw feed filenames instead of wiki slugs — **fixed**. Remaining sibling defects are citation-form (`@osint-wiki/briefs/...`, `@osint-wiki/wiki/log.md`) where the alias maps to `wiki/`.
+- **Open (named, not started):** run `scripts/adopt_k290_phase0.sh`; `2609.20804v1.pdf` left in the inbox as a known duplicate — delete or re-archive on operator call; crawl-gap cadence, next gap-detect due **2026-10-16**.
+- **Boundary:** no install, no scrape, no auto-submit, no xsp/pm scp, no `/route` swap, never auto-arm.
+
 ## Current state (2026-10-12 — K289 ingest)
 
 - **K289 ingest** — 21 inbox files → 20 source pages + 2 hubs. **No eval docx this wave.** Zero clones. No install. 0 Integrate GO.
