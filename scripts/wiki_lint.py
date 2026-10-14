@@ -563,6 +563,32 @@ if args.fix_bidirectional:
         print(f"  Dry-run complete. Re-run with --apply to write {sum(len(b) for _,b in proposed)} "
               f"backlinks. Adjust --hub-threshold to include/exclude hub targets.")
 
+# -- exit code summary ---------------------------------------------------
+# Hard errors fail the build; informational findings (orphans, stale tags,
+# cited-unread stubs, missing optional frontmatter) report but pass.
+# Folded in from the Image gen fork during the 2026-10-14 linter reconciliation —
+# it was the only one of the eight forks carrying a summary, and the other seven
+# had no equivalent.
+
+hard_errors = {
+    "bidirectional gaps":        len(gaps),
+    "dangling related: links":   len(dangling),
+    "ambiguous references":      len(ambiguous_refs),
+    "missing @path mentions":    len(missing_mentions),
+    "cross-wiki dangling":       len(cross_wiki_dangling),
+    "pages without frontmatter": len(no_frontmatter),
+}
+total_hard = sum(hard_errors.values())
+
+header(f"Summary — {total_hard} hard error(s)")
+for label, n in hard_errors.items():
+    marker = "FAIL" if n else "ok  "
+    print(f"  [{marker}] {label}: {n}")
+if total_hard:
+    print()
+    print("Hard errors found. Fix the issues above, or bypass locally with "
+          "`git commit --no-verify`.")
+
 # Every dangling class, as (source, target) pairs. Check 4 (body @path mentions)
 # and Check 8 (cross-wiki links) were reported but never gated: --fail-on-graph
 # looked only at related: bidirectionality and related: targets.
