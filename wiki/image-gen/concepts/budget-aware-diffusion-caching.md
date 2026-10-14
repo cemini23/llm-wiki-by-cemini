@@ -1,0 +1,120 @@
+---
+title: Budget-aware diffusion feature caching (ReCache)
+type: concept
+tags: [concept, inference, optimization, caching, diffusion, hardware]
+keywords: [ReCache, feature caching, caching schedule, REINFORCE, TaylorSeer, HiCache, compute budget, inference acceleration]
+related:
+  - concepts/brownian-bridge-medical-image-translation.md
+  - concepts/dit-template-token-semantic-registers.md
+  - concepts/ditango-parallel-diffusion-attention.md
+  - concepts/input-stable-sparse-attention-video.md
+  - entities/models/sparsepr.md
+  - sources/arxiv-2608-18484-sparsepr.md
+  - entities/models/squad.md
+  - sources/arxiv-2608-16585-squad-attention-distillation.md
+  - concepts/magnitude-direction-decoupling.md
+  - sources/arxiv-2608-17695-magnitude-direction-decoupling.md
+  - entities/models/linca.md
+  - entities/models/chebbooster.md
+  - sources/arxiv-2608-23429-chebbooster.md
+  - sources/arxiv-2608-17973-linca.md
+  - concepts/tuned-diffusion-sampling-oys.md
+  - sources/arxiv-2608-18040-oys-tuned-sampling.md
+  - concepts/multimodal-diffusion-mamba-efficient-t2v.md
+  - concepts/navicache-navigation-guided-video-caching.md
+  - concepts/one-step-autoregressive-video-distillation.md
+  - concepts/score-gradient-matching-video-distillation.md
+  - concepts/synthetic-media-compute-economics.md
+  - concepts/topology-aware-dit-parallel-inference.md
+  - concepts/video-generation-energy-scaling-laws.md
+  - entities/hardware/gpu-guide.md
+  - entities/inference/chitu-diffusion.md
+  - entities/models/flux-1-dev.md
+  - entities/models/hunyuanvideo-1-5.md
+  - entities/models/progressive-seed-pruning.md
+  - entities/models/wan-2-2.md
+  - entities/uis/comfyui.md
+  - sources/arxiv-2603-18636-svoo-input-stable-sparse-attention-video.md
+  - sources/arxiv-2605-30116-sgmd-score-gradient-matching-distillation.md
+  - sources/arxiv-2606-03972-aad-1-one-step-ar-video.md
+  - sources/arxiv-2606-06060-recache-diffusion-caching.md
+  - sources/arxiv-2606-13496-budcache-diffusion-caching.md
+  - sources/arxiv-2606-17566-aoizora-topology-aware-dit-parallel.md
+  - sources/arxiv-2606-24313-prob-bbdm-mri-sequence-translation.md
+  - sources/arxiv-2606-26795-navicache-test-time-self-calibration-caching.md
+  - sources/arxiv-2607-15650-ditango-chitudiffusion.md
+  - sources/arxiv-2607-15846-dstar-dit-accelerator.md
+  - sources/arxiv-2607-19139-dit-template-token-registers.md
+  - sources/arxiv-2607-20048-importance-aware-obs-pruning.md
+  - sources/arxiv-2607-21591-progressive-seed-pruning.md
+  - sources/video-generation-survey-2026.md
+  - sweeps/2026-07-20-daily.md
+  - sweeps/2026-07-23-daily.md
+  - sweeps/2026-07-24-daily.md
+  - sources/arxiv-2608-02474-echocache.md
+  - entities/models/echocache.md
+  - sources/arxiv-2608-02504-token-radius-attention.md
+  - entities/models/token-radius-attention.md
+  - sources/arxiv-2608-03335-spade.md
+  - entities/models/spade.md
+  - entities/models/avatar-forever.md
+  - sources/arxiv-2608-12107-avatar-forever.md
+  - entities/models/xyzflow.md
+  - sources/arxiv-2608-12276-xyzflow.md
+  - sources/arxiv-2609-30884-cachereforge.md
+  - concepts/sparse-attention-without-custom-kernels.md
+  - sources/arxiv-2610-10457-morca-cache-scheduling.md
+maturity: draft
+created: 2026-06-07
+updated: 2026-08-25
+---
+
+## Relations
+
+@sources/arxiv-2606-06060-recache-diffusion-caching.md @concepts/magnitude-direction-decoupling.md @sources/arxiv-2608-17695-magnitude-direction-decoupling.md @entities/models/linca.md @sources/arxiv-2608-17973-linca.md @concepts/tuned-diffusion-sampling-oys.md @sources/arxiv-2608-18040-oys-tuned-sampling.md @entities/hardware/gpu-guide.md @entities/models/flux-1-dev.md @entities/models/wan-2-2.md @concepts/multimodal-diffusion-mamba-efficient-t2v.md @sources/arxiv-2608-02474-echocache.md @entities/models/echocache.md @sources/arxiv-2608-02504-token-radius-attention.md @entities/models/token-radius-attention.md @sources/arxiv-2608-03335-spade.md @entities/models/spade.md @concepts/sparse-attention-without-custom-kernels.md @sources/arxiv-2610-10457-morca-cache-scheduling.md
+
+## Raw Concept
+
+Concept from 2026-06-07 ingest — arXiv:2606.06060 ReCache.
+
+## Narrative
+
+**Two-axis caching problem:**
+
+| Axis | Question | Scope |
+|------|----------|-------|
+| **Mechanism** | Reuse vs forecast activations? | Agnostic — stacks on TaylorSeer, HiCache, FORA, Δ-DiT |
+| **Schedule** | Which k of N steps fully recompute? | **Learned or searched** under fixed budget |
+
+**2026-08-18 — SQuad is the other axis.** Caching *reuses* activations. @entities/models/squad.md *replaces* Wan 2.2 5B softmax with O(n√n) + 6 NFE (paper-only). Complementary, not a cache schedule.
+
+### ReCache (RL policy)
+
+**User-facing knob:** specify budget **k** → MLP outputs step importance logits → top-k full passes, rest cached. Trained with REINFORCE against full-inference targets (no labels). See @sources/arxiv-2606-06060-recache-diffusion-caching.md.
+
+### BudCache (combinatorial search)
+
+**User-facing knob:** fix **NFE = B** upfront → offline SA+HC finds static cache mask maximizing teacher fidelity; optional Stage 2 schedule alignment under aggressive caching. **Strict latency** — exactly B evaluations per sample. See @sources/arxiv-2606-13496-budcache-diffusion-caching.md. Apache-2.0 reference impl: `Westlake-AGI-Lab/BudCache` (FLUX + Wan2.1).
+
+| | ReCache | BudCache |
+|---|---------|----------|
+| Search cost | Train RL policy once | Minutes offline per (model, B) |
+| Latency guarantee | Budget-conditioned | Exact B NFE |
+| ComfyUI | `[NEEDS VERIFICATION 2026-06-07]` | `[NEEDS VERIFICATION 2026-06-15]` |
+
+**vs other speed axes:**
+
+- **Quantization** (FP8/GGUF) — shrinks per-step cost
+- **Step distillation** (AAD-1) — fewer steps architecturally
+- **Budget-aware caching** — same nominal step count, skip recompute on non-critical steps
+- **Sparse attention** (SVOO) — training-free 3D attention pruning; orthogonal to step cache — see @concepts/input-stable-sparse-attention-video.md
+
+Build-track: evaluate BudCache Stage-1 on local FLUX persona workflow before ReCache RL training investment.
+
+## Snippets
+
+(See @sources/arxiv-2606-06060-recache-diffusion-caching.md)
+
+## Dead Ends
+
+Per-model policy training required. Quality tradeoffs at extreme budgets — not a free lunch vs full inference.
